@@ -1,0 +1,835 @@
+{
+ "topic": "yoga",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hatha yoga",
+     "g": "Get to know hatha, a broad and often slower-paced style of yoga.",
+     "p": [
+      "Hatha is an umbrella term, but classes with this name usually hold basic poses for several breaths.",
+      "There is often time between poses to rest, adjust and notice how you feel.",
+      "It is a friendly style for beginners because it builds on the poses you learned last month."
+     ],
+     "q": "Do you prefer taking your time with each movement, or do you enjoy a quicker pace?",
+     "c": "Hold three of your favourite poses for five slow breaths each, hatha style, resting between them."
+    },
+    "de": {
+     "t": "Hatha Yoga",
+     "g": "Lerne Hatha kennen, einen breiten und oft ruhigeren Yogastil.",
+     "p": [
+      "Hatha ist ein Oberbegriff, doch Kurse mit diesem Namen halten Grundhaltungen meist mehrere Atemzüge lang.",
+      "Zwischen den Haltungen bleibt oft Zeit zum Ausruhen, Anpassen und Nachspüren.",
+      "Der Stil ist einsteigerfreundlich, weil er auf den Haltungen aus dem letzten Monat aufbaut."
+     ],
+     "q": "Lässt du dir bei jeder Bewegung lieber Zeit, oder magst du ein schnelleres Tempo?",
+     "c": "Halte drei deiner Lieblingshaltungen im Hatha-Stil je fünf langsame Atemzüge und ruh dich dazwischen aus."
+    },
+    "es": {
+     "t": "Hatha yoga",
+     "g": "Conoce el hatha, un estilo amplio y a menudo de ritmo más pausado.",
+     "p": [
+      "Hatha es un término general, pero las clases con este nombre suelen mantener posturas básicas varias respiraciones.",
+      "Suele haber tiempo entre posturas para descansar, ajustar y notar cómo te sientes.",
+      "Es un estilo amable para principiantes porque se apoya en las posturas que aprendiste el mes pasado."
+     ],
+     "q": "¿Prefieres tomarte tu tiempo en cada movimiento o disfrutas de un ritmo más rápido?",
+     "c": "Mantén tres de tus posturas favoritas cinco respiraciones lentas cada una, al estilo hatha, descansando entre ellas."
+    },
+    "fr": {
+     "t": "Le hatha yoga",
+     "g": "Découvrir le hatha, un style large et souvent plus lent.",
+     "p": [
+      "Hatha est un terme général, mais les cours qui portent ce nom tiennent souvent les postures de base plusieurs respirations.",
+      "Il y a souvent du temps entre les postures pour se reposer, s'ajuster et ressentir.",
+      "C'est un style accueillant pour débuter, car il s'appuie sur les postures apprises le mois dernier."
+     ],
+     "q": "Préfères-tu prendre ton temps dans chaque mouvement, ou aimes-tu un rythme plus rapide ?",
+     "c": "Tiens trois de tes postures préférées cinq respirations lentes chacune, façon hatha, avec du repos entre elles."
+    },
+    "it": {
+     "t": "Hatha yoga",
+     "g": "Conoscere l'hatha, uno stile ampio e spesso dal ritmo più lento.",
+     "p": [
+      "Hatha è un termine generale, ma le lezioni con questo nome di solito tengono le posizioni base per vari respiri.",
+      "Spesso c'è tempo tra le posizioni per riposare, sistemarsi e ascoltarsi.",
+      "È uno stile adatto ai principianti perché si basa sulle posizioni imparate il mese scorso."
+     ],
+     "q": "Preferisci prenderti il tuo tempo in ogni movimento o ti piace un ritmo più veloce?",
+     "c": "Tieni tre delle tue posizioni preferite per cinque respiri lenti ciascuna, in stile hatha, riposando tra l'una e l'altra."
+    },
+    "pt": {
+     "t": "Hatha yoga",
+     "g": "Conhecer o hatha, um estilo amplo e muitas vezes mais pausado.",
+     "p": [
+      "Hatha é um termo geral, mas as aulas com este nome costumam manter posturas básicas durante várias respirações.",
+      "Costuma haver tempo entre posturas para descansar, ajustar e sentir como estás.",
+      "É um estilo simpático para iniciantes porque se baseia nas posturas que aprendeste no mês passado."
+     ],
+     "q": "Preferes dar tempo a cada movimento ou gostas de um ritmo mais rápido?",
+     "c": "Mantém três das tuas posturas preferidas cinco respirações lentas cada, ao estilo hatha, descansando entre elas."
+    },
+    "pt_BR": {
+     "t": "Hatha ioga",
+     "g": "Conhecer o hatha, um estilo amplo e muitas vezes mais tranquilo.",
+     "p": [
+      "Hatha é um termo geral, mas as aulas com esse nome costumam manter posturas básicas por várias respirações.",
+      "Geralmente há tempo entre as posturas para descansar, ajustar e perceber como você está.",
+      "É um estilo acolhedor para iniciantes porque se apoia nas posturas que você aprendeu no mês passado."
+     ],
+     "q": "Você prefere ir com calma em cada movimento ou gosta de um ritmo mais rápido?",
+     "c": "Mantenha três das suas posturas favoritas por cinco respirações lentas cada, no estilo hatha, descansando entre elas."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vinyasa flow",
+     "g": "Discover vinyasa flow, a dynamic style where poses flow into each other.",
+     "p": [
+      "Vinyasa classes link poses with the breath, the way you practised one breath per movement.",
+      "Sequences are often creative and change from class to class, which keeps things fresh.",
+      "The pace can be lively, so it is fine to pause in child's pose whenever you need."
+     ],
+     "q": "Would you enjoy a class that feels a bit like a moving dance, or does that sound like a lot?",
+     "c": "Create a tiny flow: cat-cow, downward dog and child's pose, moving with your breath for three rounds."
+    },
+    "de": {
+     "t": "Vinyasa Flow",
+     "g": "Entdecke Vinyasa Flow, einen dynamischen Stil, in dem Haltungen ineinanderfließen.",
+     "p": [
+      "Vinyasa-Stunden verbinden Haltungen mit dem Atem, so wie du es mit einem Atemzug pro Bewegung geübt hast.",
+      "Die Abfolgen sind oft kreativ und ändern sich von Stunde zu Stunde, das hält es frisch.",
+      "Das Tempo kann lebhaft sein, also ist es völlig in Ordnung, jederzeit in der Kindhaltung zu pausieren."
+     ],
+     "q": "Würde dir eine Stunde gefallen, die sich wie ein bewegter Tanz anfühlt, oder klingt das nach viel?",
+     "c": "Bau einen kleinen Flow: Katze-Kuh, Hund und Kindhaltung, drei Runden im Atemrhythmus."
+    },
+    "es": {
+     "t": "Vinyasa flow",
+     "g": "Descubre el vinyasa flow, un estilo dinámico en el que las posturas fluyen unas hacia otras.",
+     "p": [
+      "Las clases de vinyasa unen posturas con la respiración, como cuando practicaste una respiración por movimiento.",
+      "Las secuencias suelen ser creativas y cambian de una clase a otra, lo que lo hace variado.",
+      "El ritmo puede ser animado, así que puedes parar en la postura del niño siempre que lo necesites."
+     ],
+     "q": "¿Te gustaría una clase que se parezca a un baile en movimiento o te parece demasiado?",
+     "c": "Crea un mini flujo: gato-vaca, perro boca abajo y niño, moviéndote con la respiración tres rondas."
+    },
+    "fr": {
+     "t": "Le vinyasa flow",
+     "g": "Découvrir le vinyasa flow, un style dynamique où les postures s'enchaînent.",
+     "p": [
+      "Les cours de vinyasa relient les postures au souffle, comme tu l'as fait avec une respiration par mouvement.",
+      "Les enchaînements sont souvent créatifs et changent d'un cours à l'autre, ce qui garde le plaisir intact.",
+      "Le rythme peut être soutenu : tu peux faire une pause dans l'enfant dès que tu en as besoin."
+     ],
+     "q": "Aimerais-tu un cours qui ressemble à une danse en mouvement, ou cela te paraît-il beaucoup ?",
+     "c": "Crée un petit flow : chat-vache, chien tête en bas et enfant, trois tours au rythme du souffle."
+    },
+    "it": {
+     "t": "Vinyasa flow",
+     "g": "Scoprire il vinyasa flow, uno stile dinamico in cui le posizioni scorrono l'una nell'altra.",
+     "p": [
+      "Le lezioni di vinyasa uniscono le posizioni al respiro, come quando hai praticato un respiro per movimento.",
+      "Le sequenze sono spesso creative e cambiano da una lezione all'altra, e questo le rende sempre nuove.",
+      "Il ritmo può essere vivace, quindi puoi fermarti nella posizione del bambino quando vuoi."
+     ],
+     "q": "Ti piacerebbe una lezione simile a una danza in movimento, o ti sembra tanto?",
+     "c": "Crea un piccolo flow: gatto-mucca, cane a testa in giù e bambino, seguendo il respiro per tre giri."
+    },
+    "pt": {
+     "t": "Vinyasa flow",
+     "g": "Descobrir o vinyasa flow, um estilo dinâmico em que as posturas fluem umas para as outras.",
+     "p": [
+      "As aulas de vinyasa ligam as posturas à respiração, como praticaste com uma respiração por movimento.",
+      "As sequências costumam ser criativas e mudam de aula para aula, o que torna tudo variado.",
+      "O ritmo pode ser animado, por isso podes parar na postura da criança sempre que precisares."
+     ],
+     "q": "Gostavas de uma aula que parece uma dança em movimento, ou isso parece-te demasiado?",
+     "c": "Cria um mini flow: gato-vaca, cão olhando para baixo e criança, três rondas ao ritmo da respiração."
+    },
+    "pt_BR": {
+     "t": "Vinyasa flow",
+     "g": "Descobrir o vinyasa flow, um estilo dinâmico em que as posturas fluem umas para as outras.",
+     "p": [
+      "As aulas de vinyasa unem as posturas à respiração, como você praticou com uma respiração por movimento.",
+      "As sequências costumam ser criativas e mudam de aula para aula, o que deixa tudo variado.",
+      "O ritmo pode ser animado, então tudo bem pausar na postura da criança sempre que precisar."
+     ],
+     "q": "Você curtiria uma aula que parece uma dança em movimento, ou isso parece demais?",
+     "c": "Crie um mini flow: gato-vaca, cachorro olhando para baixo e criança, três rodadas no ritmo da respiração."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ashtanga yoga",
+     "g": "Learn about ashtanga, a style with a set sequence practised in the same order.",
+     "p": [
+      "Ashtanga follows a fixed series of poses, linked by breath, that stays the same each time.",
+      "It was popularised by K. Pattabhi Jois in Mysore, India, and spread worldwide.",
+      "The repetition lets you notice your progress, but beginners usually learn the series bit by bit."
+     ],
+     "q": "Do you enjoy routines that stay the same, or do you prefer variety?",
+     "c": "Pick three poses you know and repeat them in the same order today and tomorrow to feel the effect."
+    },
+    "de": {
+     "t": "Ashtanga Yoga",
+     "g": "Lerne Ashtanga kennen, einen Stil mit fester Abfolge in immer gleicher Reihenfolge.",
+     "p": [
+      "Ashtanga folgt einer festen, durch den Atem verbundenen Serie von Haltungen, die jedes Mal gleich bleibt.",
+      "Bekannt gemacht hat ihn K. Pattabhi Jois in Mysore, Indien, von wo er sich weltweit verbreitete.",
+      "Die Wiederholung macht Fortschritte spürbar, doch Anfänger lernen die Serie meist Stück für Stück."
+     ],
+     "q": "Magst du Routinen, die gleich bleiben, oder lieber Abwechslung?",
+     "c": "Wähl drei bekannte Haltungen und wiederhole sie heute und morgen in derselben Reihenfolge."
+    },
+    "es": {
+     "t": "Ashtanga yoga",
+     "g": "Conoce el ashtanga, un estilo con una secuencia fija practicada siempre en el mismo orden.",
+     "p": [
+      "El ashtanga sigue una serie fija de posturas, unidas por la respiración, que es igual cada vez.",
+      "Lo popularizó K. Pattabhi Jois en Mysore, India, y desde allí se extendió por el mundo.",
+      "La repetición te permite notar tu progreso, pero los principiantes suelen aprender la serie poco a poco."
+     ],
+     "q": "¿Disfrutas de las rutinas que se repiten o prefieres la variedad?",
+     "c": "Elige tres posturas que conozcas y repítelas en el mismo orden hoy y mañana para sentir el efecto."
+    },
+    "fr": {
+     "t": "L'ashtanga yoga",
+     "g": "Découvrir l'ashtanga, un style à séquence fixe pratiquée toujours dans le même ordre.",
+     "p": [
+      "L'ashtanga suit une série fixe de postures, reliées par le souffle, qui reste identique à chaque fois.",
+      "Il a été popularisé par K. Pattabhi Jois à Mysore, en Inde, puis s'est répandu dans le monde.",
+      "La répétition permet de voir ses progrès, mais les débutants apprennent souvent la série petit à petit."
+     ],
+     "q": "Aimes-tu les routines qui restent les mêmes, ou préfères-tu la variété ?",
+     "c": "Choisis trois postures connues et répète-les dans le même ordre aujourd'hui et demain."
+    },
+    "it": {
+     "t": "Ashtanga yoga",
+     "g": "Conoscere l'ashtanga, uno stile con una sequenza fissa praticata sempre nello stesso ordine.",
+     "p": [
+      "L'ashtanga segue una serie fissa di posizioni, unite dal respiro, che resta uguale ogni volta.",
+      "È stato reso popolare da K. Pattabhi Jois a Mysore, in India, e poi si è diffuso nel mondo.",
+      "La ripetizione ti fa notare i progressi, ma i principianti di solito imparano la serie a poco a poco."
+     ],
+     "q": "Ti piacciono le routine sempre uguali o preferisci la varietà?",
+     "c": "Scegli tre posizioni che conosci e ripetile nello stesso ordine oggi e domani per sentirne l'effetto."
+    },
+    "pt": {
+     "t": "Ashtanga yoga",
+     "g": "Conhecer o ashtanga, um estilo com uma sequência fixa praticada sempre pela mesma ordem.",
+     "p": [
+      "O ashtanga segue uma série fixa de posturas, ligadas pela respiração, que é sempre igual.",
+      "Foi popularizado por K. Pattabhi Jois em Mysore, na Índia, e daí espalhou-se pelo mundo.",
+      "A repetição deixa-te notar o progresso, mas os iniciantes costumam aprender a série aos poucos."
+     ],
+     "q": "Gostas de rotinas que se mantêm iguais, ou preferes variedade?",
+     "c": "Escolhe três posturas que conheças e repete-as pela mesma ordem hoje e amanhã para sentir o efeito."
+    },
+    "pt_BR": {
+     "t": "Ashtanga ioga",
+     "g": "Conhecer o ashtanga, um estilo com uma sequência fixa praticada sempre na mesma ordem.",
+     "p": [
+      "O ashtanga segue uma série fixa de posturas, unidas pela respiração, que é sempre igual.",
+      "Foi popularizado por K. Pattabhi Jois em Mysore, na Índia, e de lá se espalhou pelo mundo.",
+      "A repetição deixa você notar seu progresso, mas iniciantes costumam aprender a série aos poucos."
+     ],
+     "q": "Você gosta de rotinas que se repetem ou prefere variedade?",
+     "c": "Escolha três posturas que você conhece e repita na mesma ordem hoje e amanhã para sentir o efeito."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Iyengar yoga",
+     "g": "Discover Iyengar yoga, known for precise alignment and generous use of props.",
+     "p": [
+      "It was developed by B. K. S. Iyengar, whose book Light on Yoga became famous worldwide.",
+      "Poses are often held longer with careful attention to how each part of the body is placed.",
+      "Blocks, straps, blankets, chairs and even walls help every student find a version that works."
+     ],
+     "q": "Do you like getting detailed instructions, or do you prefer to explore on your own?",
+     "c": "Practise mountain pose with full detail today: feet, knees, hips, shoulders and head, one at a time."
+    },
+    "de": {
+     "t": "Iyengar Yoga",
+     "g": "Entdecke Iyengar Yoga, bekannt für präzise Ausrichtung und großzügigen Einsatz von Hilfsmitteln.",
+     "p": [
+      "Entwickelt hat ihn B. K. S. Iyengar, dessen Buch Licht auf Yoga weltweit bekannt wurde.",
+      "Haltungen werden oft länger gehalten, mit genauer Aufmerksamkeit für die Position jedes Körperteils.",
+      "Blöcke, Gurte, Decken, Stühle und sogar Wände helfen allen, eine passende Variante zu finden."
+     ],
+     "q": "Bekommst du gern genaue Anleitungen, oder probierst du lieber selbst aus?",
+     "c": "Übe heute die Berghaltung ganz genau: Füße, Knie, Hüften, Schultern und Kopf, eins nach dem anderen."
+    },
+    "es": {
+     "t": "Iyengar yoga",
+     "g": "Descubre el yoga Iyengar, conocido por la alineación precisa y el uso generoso de accesorios.",
+     "p": [
+      "Lo desarrolló B. K. S. Iyengar, cuyo libro Luz sobre el yoga se hizo famoso en todo el mundo.",
+      "Las posturas se mantienen a menudo más tiempo, con atención a cómo se coloca cada parte del cuerpo.",
+      "Bloques, correas, mantas, sillas e incluso la pared ayudan a cada alumno a encontrar su versión."
+     ],
+     "q": "¿Te gusta recibir instrucciones detalladas o prefieres explorar por tu cuenta?",
+     "c": "Practica hoy la montaña con todo detalle: pies, rodillas, caderas, hombros y cabeza, uno a uno."
+    },
+    "fr": {
+     "t": "Le yoga Iyengar",
+     "g": "Découvrir le yoga Iyengar, connu pour son alignement précis et son usage généreux des accessoires.",
+     "p": [
+      "Il a été développé par B. K. S. Iyengar, dont le livre Lumière sur le yoga est devenu célèbre dans le monde entier.",
+      "Les postures sont souvent tenues plus longtemps, avec une attention précise au placement de chaque partie du corps.",
+      "Briques, sangles, couvertures, chaises et même murs aident chacun à trouver une version adaptée."
+     ],
+     "q": "Aimes-tu recevoir des consignes détaillées, ou préfères-tu explorer par toi-même ?",
+     "c": "Pratique aujourd'hui la montagne en détail : pieds, genoux, hanches, épaules et tête, un par un."
+    },
+    "it": {
+     "t": "Iyengar yoga",
+     "g": "Scoprire lo yoga Iyengar, noto per l'allineamento preciso e l'uso generoso dei supporti.",
+     "p": [
+      "È stato sviluppato da B. K. S. Iyengar, il cui libro Teoria e pratica dello yoga è diventato famoso nel mondo.",
+      "Le posizioni vengono spesso tenute più a lungo, con attenzione a come si colloca ogni parte del corpo.",
+      "Mattoncini, cinghie, coperte, sedie e perfino il muro aiutano ognuno a trovare la sua versione."
+     ],
+     "q": "Ti piace ricevere istruzioni dettagliate o preferisci esplorare da solo?",
+     "c": "Pratica oggi la montagna nei dettagli: piedi, ginocchia, anche, spalle e testa, uno alla volta."
+    },
+    "pt": {
+     "t": "Iyengar yoga",
+     "g": "Descobrir o yoga Iyengar, conhecido pelo alinhamento preciso e pelo uso generoso de acessórios.",
+     "p": [
+      "Foi desenvolvido por B. K. S. Iyengar, cujo livro Light on Yoga ficou famoso em todo o mundo.",
+      "As posturas são muitas vezes mantidas mais tempo, com atenção à colocação de cada parte do corpo.",
+      "Blocos, correias, mantas, cadeiras e até a parede ajudam cada aluno a encontrar a sua versão."
+     ],
+     "q": "Gostas de receber instruções detalhadas, ou preferes explorar sozinho?",
+     "c": "Pratica hoje a montanha com todo o detalhe: pés, joelhos, ancas, ombros e cabeça, um de cada vez."
+    },
+    "pt_BR": {
+     "t": "Iyengar ioga",
+     "g": "Descobrir a ioga Iyengar, conhecida pelo alinhamento preciso e pelo uso generoso de acessórios.",
+     "p": [
+      "Foi desenvolvida por B. K. S. Iyengar, cujo livro Light on Yoga ficou famoso no mundo todo.",
+      "As posturas costumam ser mantidas por mais tempo, com atenção a como cada parte do corpo se posiciona.",
+      "Blocos, faixas, mantas, cadeiras e até a parede ajudam cada aluno a encontrar sua versão."
+     ],
+     "q": "Você gosta de receber instruções detalhadas ou prefere explorar sozinho?",
+     "c": "Pratique hoje a montanha com todos os detalhes: pés, joelhos, quadril, ombros e cabeça, um de cada vez."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yin yoga",
+     "g": "Explore yin yoga, with long, passive holds in seated and lying poses.",
+     "p": [
+      "Yin poses are usually held for a few minutes while the muscles stay as relaxed as possible.",
+      "Go only to a mild sensation and use plenty of props so you can stay comfortably.",
+      "It offers a slow, quiet contrast to more active styles and suits calm evenings."
+     ],
+     "q": "How do you feel about staying still in one position for a few minutes?",
+     "c": "Rest in a supported child's pose for three minutes tonight, with a cushion under your chest."
+    },
+    "de": {
+     "t": "Yin Yoga",
+     "g": "Erkunde Yin Yoga mit langen, passiven Haltungen im Sitzen und Liegen.",
+     "p": [
+      "Yin-Haltungen werden meist einige Minuten gehalten, während die Muskeln so entspannt wie möglich bleiben.",
+      "Geh nur bis zu einer milden Empfindung und nutze viele Hilfsmittel, damit du bequem bleiben kannst.",
+      "Der Stil ist ein ruhiger Gegenpol zu aktiveren Stilen und passt gut zu entspannten Abenden."
+     ],
+     "q": "Wie geht es dir mit dem Gedanken, ein paar Minuten still in einer Position zu bleiben?",
+     "c": "Ruh heute Abend drei Minuten in einer gestützten Kindhaltung mit einem Kissen unter der Brust."
+    },
+    "es": {
+     "t": "Yin yoga",
+     "g": "Explora el yin yoga, con posturas sentadas y tumbadas mantenidas mucho tiempo de forma pasiva.",
+     "p": [
+      "Las posturas yin suelen mantenerse unos minutos con los músculos lo más relajados posible.",
+      "Ve solo hasta una sensación leve y usa muchos accesorios para poder quedarte con comodidad.",
+      "Ofrece un contraste lento y tranquilo frente a estilos más activos y encaja en tardes calmadas."
+     ],
+     "q": "¿Qué te parece quedarte quieto en una postura durante unos minutos?",
+     "c": "Descansa esta noche tres minutos en la postura del niño con apoyo, con un cojín bajo el pecho."
+    },
+    "fr": {
+     "t": "Le yin yoga",
+     "g": "Explorer le yin yoga, avec de longues postures passives assises et allongées.",
+     "p": [
+      "Les postures yin se tiennent en général quelques minutes, les muscles aussi détendus que possible.",
+      "Va seulement jusqu'à une sensation légère et utilise beaucoup d'accessoires pour rester confortable.",
+      "C'est un contraste lent et calme face aux styles plus actifs, idéal pour les soirées tranquilles."
+     ],
+     "q": "Que penses-tu de l'idée de rester immobile quelques minutes dans une même posture ?",
+     "c": "Repose-toi ce soir trois minutes dans un enfant soutenu, avec un coussin sous la poitrine."
+    },
+    "it": {
+     "t": "Yin yoga",
+     "g": "Esplorare lo yin yoga, con lunghe tenute passive in posizioni sedute e sdraiate.",
+     "p": [
+      "Le posizioni yin si tengono di solito per qualche minuto, con i muscoli il più rilassati possibile.",
+      "Arriva solo a una sensazione lieve e usa molti supporti per restare comodo.",
+      "Offre un contrasto lento e silenzioso rispetto agli stili più attivi ed è adatto alle serate tranquille."
+     ],
+     "q": "Come ti senti all'idea di restare fermo in una posizione per qualche minuto?",
+     "c": "Stasera riposa tre minuti nella posizione del bambino sostenuta, con un cuscino sotto il petto."
+    },
+    "pt": {
+     "t": "Yin yoga",
+     "g": "Explorar o yin yoga, com posturas sentadas e deitadas mantidas muito tempo de forma passiva.",
+     "p": [
+      "As posturas yin costumam ser mantidas alguns minutos, com os músculos o mais relaxados possível.",
+      "Vai só até uma sensação ligeira e usa muitos acessórios para conseguires ficar confortável.",
+      "É um contraste lento e calmo face a estilos mais ativos e combina com noites tranquilas."
+     ],
+     "q": "Como te sentes com a ideia de ficar quieto numa posição durante alguns minutos?",
+     "c": "Descansa esta noite três minutos na postura da criança apoiada, com uma almofada debaixo do peito."
+    },
+    "pt_BR": {
+     "t": "Yin ioga",
+     "g": "Explorar a yin ioga, com posturas sentadas e deitadas mantidas por bastante tempo de forma passiva.",
+     "p": [
+      "As posturas yin costumam ser mantidas por alguns minutos, com os músculos o mais relaxados possível.",
+      "Vá só até uma sensação leve e use bastante acessório para conseguir ficar confortável.",
+      "É um contraste lento e silencioso aos estilos mais ativos e combina com noites tranquilas."
+     ],
+     "q": "Como você se sente com a ideia de ficar parado numa posição por alguns minutos?",
+     "c": "Descanse hoje à noite três minutos na postura da criança apoiada, com uma almofada embaixo do peito."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Restorative yoga",
+     "g": "Discover restorative yoga, with fully supported poses made for deep rest.",
+     "p": [
+      "Bolsters, blankets and cushions hold the body so that almost no effort is needed.",
+      "A class may include only a handful of poses, each held for several minutes.",
+      "Warmth, dim light and slow breathing are part of the experience."
+     ],
+     "q": "What makes you feel most rested: sleep, quiet time, nature or something else?",
+     "c": "Build a cosy supported savasana with a cushion under your knees and a blanket, and rest for five minutes."
+    },
+    "de": {
+     "t": "Restoratives Yoga",
+     "g": "Entdecke restoratives Yoga mit voll gestützten Haltungen für tiefe Erholung.",
+     "p": [
+      "Bolster, Decken und Kissen tragen den Körper, sodass kaum Anstrengung nötig ist.",
+      "Eine Stunde kann nur eine Handvoll Haltungen enthalten, die jeweils mehrere Minuten dauern.",
+      "Wärme, gedämpftes Licht und langsames Atmen gehören zum Erlebnis dazu."
+     ],
+     "q": "Was lässt dich am meisten zur Ruhe kommen: Schlaf, stille Zeit, Natur oder etwas anderes?",
+     "c": "Bau dir ein gemütliches gestütztes Savasana mit Kissen unter den Knien und Decke und ruh fünf Minuten."
+    },
+    "es": {
+     "t": "Yoga restaurativo",
+     "g": "Descubre el yoga restaurativo, con posturas totalmente apoyadas pensadas para el descanso profundo.",
+     "p": [
+      "Bolsters, mantas y cojines sostienen el cuerpo para que casi no haga falta esfuerzo.",
+      "Una clase puede incluir solo unas pocas posturas, cada una mantenida varios minutos.",
+      "El calor, la luz tenue y la respiración lenta forman parte de la experiencia."
+     ],
+     "q": "¿Qué te hace sentir más descansado: dormir, el silencio, la naturaleza u otra cosa?",
+     "c": "Prepara un savasana acogedor con un cojín bajo las rodillas y una manta, y descansa cinco minutos."
+    },
+    "fr": {
+     "t": "Le yoga restauratif",
+     "g": "Découvrir le yoga restauratif, avec des postures entièrement soutenues pour un repos profond.",
+     "p": [
+      "Bolsters, couvertures et coussins portent le corps pour qu'il n'y ait presque aucun effort.",
+      "Un cours peut ne compter que quelques postures, chacune tenue plusieurs minutes.",
+      "La chaleur, une lumière douce et une respiration lente font partie de l'expérience."
+     ],
+     "q": "Qu'est-ce qui te repose le plus : le sommeil, le calme, la nature ou autre chose ?",
+     "c": "Installe un savasana douillet avec un coussin sous les genoux et une couverture, et repose-toi cinq minutes."
+    },
+    "it": {
+     "t": "Yoga restorative",
+     "g": "Scoprire lo yoga restorative, con posizioni completamente sostenute pensate per il riposo profondo.",
+     "p": [
+      "Bolster, coperte e cuscini sostengono il corpo così che quasi non serve sforzo.",
+      "Una lezione può includere solo poche posizioni, ognuna tenuta per diversi minuti.",
+      "Calore, luce soffusa e respiro lento fanno parte dell'esperienza."
+     ],
+     "q": "Cosa ti fa sentire più riposato: il sonno, il silenzio, la natura o altro?",
+     "c": "Prepara un savasana accogliente con un cuscino sotto le ginocchia e una coperta, e riposa cinque minuti."
+    },
+    "pt": {
+     "t": "Yoga restaurativo",
+     "g": "Descobrir o yoga restaurativo, com posturas totalmente apoiadas para um descanso profundo.",
+     "p": [
+      "Bolsters, mantas e almofadas sustentam o corpo para que quase não seja preciso esforço.",
+      "Uma aula pode ter apenas meia dúzia de posturas, cada uma mantida vários minutos.",
+      "O calor, a luz suave e a respiração lenta fazem parte da experiência."
+     ],
+     "q": "O que te faz sentir mais descansado: dormir, silêncio, natureza ou outra coisa?",
+     "c": "Prepara um savasana aconchegante com uma almofada debaixo dos joelhos e uma manta, e descansa cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Ioga restaurativa",
+     "g": "Descobrir a ioga restaurativa, com posturas totalmente apoiadas feitas para um descanso profundo.",
+     "p": [
+      "Bolsters, mantas e almofadas sustentam o corpo, então quase não é preciso esforço.",
+      "Uma aula pode ter só algumas posturas, cada uma mantida por vários minutos.",
+      "Calor, luz baixa e respiração lenta fazem parte da experiência."
+     ],
+     "q": "O que faz você se sentir mais descansado: dormir, silêncio, natureza ou outra coisa?",
+     "c": "Monte um savasana aconchegante com almofada embaixo dos joelhos e uma manta, e descanse cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kundalini yoga",
+     "g": "Get to know kundalini yoga, a style mixing breath work, movement, chanting and meditation.",
+     "p": [
+      "Classes often combine breathing exercises with simple movements repeated for a set time.",
+      "Chanting and meditation are part of its cultural background; you can simply listen if you prefer.",
+      "Some breathing techniques are quite intense, so beginners should always go gently and rest when needed."
+     ],
+     "q": "How do you feel about singing, chanting or humming in a group?",
+     "c": "Sit tall and gently hum on each exhale for one minute, noticing how the sound feels."
+    },
+    "de": {
+     "t": "Kundalini Yoga",
+     "g": "Lerne Kundalini Yoga kennen, eine Mischung aus Atemarbeit, Bewegung, Gesang und Meditation.",
+     "p": [
+      "Stunden kombinieren oft Atemübungen mit einfachen Bewegungen, die eine bestimmte Zeit wiederholt werden.",
+      "Gesang und Meditation gehören zum kulturellen Hintergrund; du kannst auch einfach zuhören.",
+      "Manche Atemtechniken sind recht intensiv, daher sollten Anfänger immer sanft bleiben und bei Bedarf pausieren."
+     ],
+     "q": "Wie geht es dir damit, in einer Gruppe zu singen, zu tönen oder zu summen?",
+     "c": "Sitz aufrecht und summe eine Minute lang bei jedem Ausatmen sanft, und spür den Klang."
+    },
+    "es": {
+     "t": "Kundalini yoga",
+     "g": "Conoce el kundalini yoga, un estilo que mezcla respiración, movimiento, cantos y meditación.",
+     "p": [
+      "Las clases suelen combinar ejercicios de respiración con movimientos sencillos repetidos durante un tiempo.",
+      "Los cantos y la meditación forman parte de su trasfondo cultural; si lo prefieres, puedes solo escuchar.",
+      "Algunas técnicas de respiración son intensas, así que los principiantes deben ir con suavidad y descansar si lo necesitan."
+     ],
+     "q": "¿Qué te parece cantar, entonar o tararear en grupo?",
+     "c": "Siéntate erguido y tararea suavemente en cada exhalación durante un minuto, notando el sonido."
+    },
+    "fr": {
+     "t": "Le kundalini yoga",
+     "g": "Découvrir le kundalini yoga, qui mêle respiration, mouvement, chants et méditation.",
+     "p": [
+      "Les cours associent souvent des exercices de respiration à des mouvements simples répétés un certain temps.",
+      "Chants et méditation font partie de son contexte culturel ; tu peux simplement écouter si tu préfères.",
+      "Certaines techniques de respiration sont intenses : les débutants vont toujours en douceur et se reposent si besoin."
+     ],
+     "q": "Que penses-tu de chanter, psalmodier ou fredonner en groupe ?",
+     "c": "Assieds-toi droit et fredonne doucement à chaque expiration pendant une minute, en sentant le son."
+    },
+    "it": {
+     "t": "Kundalini yoga",
+     "g": "Conoscere il kundalini yoga, uno stile che unisce respiro, movimento, canto e meditazione.",
+     "p": [
+      "Le lezioni spesso abbinano esercizi di respirazione a movimenti semplici ripetuti per un certo tempo.",
+      "Canto e meditazione fanno parte del suo contesto culturale; se preferisci puoi semplicemente ascoltare.",
+      "Alcune tecniche di respirazione sono intense, quindi i principianti vanno sempre con dolcezza e riposano se serve."
+     ],
+     "q": "Come ti senti all'idea di cantare, intonare o canticchiare in gruppo?",
+     "c": "Siediti dritto e canticchia piano a ogni espirazione per un minuto, notando il suono."
+    },
+    "pt": {
+     "t": "Kundalini yoga",
+     "g": "Conhecer o kundalini yoga, um estilo que junta respiração, movimento, cânticos e meditação.",
+     "p": [
+      "As aulas combinam muitas vezes exercícios de respiração com movimentos simples repetidos durante algum tempo.",
+      "Os cânticos e a meditação fazem parte do seu contexto cultural; se preferires, podes só ouvir.",
+      "Algumas técnicas de respiração são intensas, por isso os iniciantes devem ir com calma e descansar quando precisarem."
+     ],
+     "q": "Como te sentes a cantar, entoar ou trautear em grupo?",
+     "c": "Senta-te direito e trauteia suavemente em cada expiração durante um minuto, sentindo o som."
+    },
+    "pt_BR": {
+     "t": "Kundalini ioga",
+     "g": "Conhecer a kundalini ioga, um estilo que mistura respiração, movimento, cantos e meditação.",
+     "p": [
+      "As aulas costumam combinar exercícios de respiração com movimentos simples repetidos por um tempo.",
+      "Os cantos e a meditação fazem parte do seu contexto cultural; se preferir, você pode só ouvir.",
+      "Algumas técnicas de respiração são intensas, então iniciantes devem ir com calma e descansar quando precisar."
+     ],
+     "q": "Como você se sente cantando, entoando ou cantarolando em grupo?",
+     "c": "Sente ereto e cantarole suavemente a cada expiração por um minuto, percebendo o som."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power yoga",
+     "g": "Discover power yoga, an energetic, fitness-oriented take on flowing yoga.",
+     "p": [
+      "Power yoga builds on vinyasa flow with a stronger pace and more strength-building poses.",
+      "Classes can feel like a workout, so warming up and resting when needed are especially important.",
+      "Easier options, like knees down in plank, keep it accessible while you build strength."
+     ],
+     "q": "What kind of exercise makes you feel energised and strong?",
+     "c": "Hold tabletop and then downward dog for five breaths each, three times, feeling your arms work."
+    },
+    "de": {
+     "t": "Power Yoga",
+     "g": "Entdecke Power Yoga, eine energiegeladene, fitnessorientierte Form des fließenden Yoga.",
+     "p": [
+      "Power Yoga baut auf Vinyasa Flow auf, mit höherem Tempo und mehr kräftigenden Haltungen.",
+      "Stunden fühlen sich oft wie ein Training an, deshalb sind Aufwärmen und Pausen bei Bedarf besonders wichtig.",
+      "Leichtere Varianten, etwa Knie am Boden im Brett, halten es zugänglich, während du Kraft aufbaust."
+     ],
+     "q": "Welche Art von Bewegung gibt dir Energie und das Gefühl, stark zu sein?",
+     "c": "Halte den Vierfüßlerstand und dann den Hund je fünf Atemzüge, dreimal, und spür die Arme arbeiten."
+    },
+    "es": {
+     "t": "Power yoga",
+     "g": "Descubre el power yoga, una versión enérgica y orientada al fitness del yoga fluido.",
+     "p": [
+      "El power yoga parte del vinyasa con un ritmo más intenso y más posturas que fortalecen.",
+      "Las clases pueden parecer un entrenamiento, así que calentar y descansar cuando haga falta es especialmente importante.",
+      "Las opciones más fáciles, como apoyar las rodillas en la plancha, lo hacen accesible mientras ganas fuerza."
+     ],
+     "q": "¿Qué tipo de ejercicio te hace sentir con energía y fuerte?",
+     "c": "Mantén la mesa y luego el perro boca abajo cinco respiraciones cada uno, tres veces, sintiendo los brazos."
+    },
+    "fr": {
+     "t": "Le power yoga",
+     "g": "Découvrir le power yoga, une version énergique et sportive du yoga dynamique.",
+     "p": [
+      "Le power yoga s'appuie sur le vinyasa avec un rythme plus soutenu et davantage de postures de renforcement.",
+      "Les cours ressemblent parfois à un entraînement : s'échauffer et se reposer si besoin est d'autant plus important.",
+      "Des options plus faciles, comme les genoux au sol en planche, le rendent accessible pendant que tu te renforces."
+     ],
+     "q": "Quel type d'activité physique te donne de l'énergie et te fait te sentir fort ?",
+     "c": "Tiens la table puis le chien cinq respirations chacun, trois fois, en sentant tes bras travailler."
+    },
+    "it": {
+     "t": "Power yoga",
+     "g": "Scoprire il power yoga, una versione energica e orientata al fitness dello yoga dinamico.",
+     "p": [
+      "Il power yoga parte dal vinyasa con un ritmo più deciso e più posizioni di rinforzo.",
+      "Le lezioni possono sembrare un allenamento, quindi riscaldarsi e riposare quando serve è ancora più importante.",
+      "Le opzioni più semplici, come le ginocchia a terra nel plank, lo rendono accessibile mentre costruisci forza."
+     ],
+     "q": "Che tipo di attività fisica ti fa sentire carico e forte?",
+     "c": "Tieni il tavolo e poi il cane per cinque respiri ciascuno, tre volte, sentendo lavorare le braccia."
+    },
+    "pt": {
+     "t": "Power yoga",
+     "g": "Descobrir o power yoga, uma versão energética e mais desportiva do yoga dinâmico.",
+     "p": [
+      "O power yoga parte do vinyasa, com um ritmo mais forte e mais posturas de fortalecimento.",
+      "As aulas podem parecer um treino, por isso aquecer e descansar quando for preciso é ainda mais importante.",
+      "Opções mais fáceis, como os joelhos no chão na prancha, tornam-no acessível enquanto ganhas força."
+     ],
+     "q": "Que tipo de exercício te faz sentir com energia e forte?",
+     "c": "Fica na mesa e depois no cão cinco respirações cada, três vezes, sentindo os braços a trabalhar."
+    },
+    "pt_BR": {
+     "t": "Power ioga",
+     "g": "Descobrir a power ioga, uma versão energética e voltada para o condicionamento da ioga dinâmica.",
+     "p": [
+      "A power ioga parte do vinyasa, com ritmo mais forte e mais posturas de fortalecimento.",
+      "As aulas podem parecer um treino, então aquecer e descansar quando precisar é ainda mais importante.",
+      "Opções mais fáceis, como joelhos no chão na prancha, deixam tudo acessível enquanto você ganha força."
+     ],
+     "q": "Que tipo de exercício faz você se sentir com energia e forte?",
+     "c": "Fique na mesa e depois no cachorro por cinco respirações cada, três vezes, sentindo os braços trabalharem."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hot yoga",
+     "g": "Learn what hot yoga is and how to approach it sensibly.",
+     "p": [
+      "Hot yoga is practised in a heated room, which many people find makes them sweat a lot.",
+      "Drink water before and after class, bring a towel and take breaks whenever you feel too warm.",
+      "Heat can make you feel more flexible than usual, so stay gentle and avoid pushing further."
+     ],
+     "q": "Do you enjoy warm environments like saunas or sunny days, or do you prefer cooler air?",
+     "c": "If you are curious about hot yoga, write down three things you would pack for a first class."
+    },
+    "de": {
+     "t": "Hot Yoga",
+     "g": "Erfahre, was Hot Yoga ist und wie du es vernünftig angehst.",
+     "p": [
+      "Hot Yoga wird in einem beheizten Raum geübt, in dem viele Menschen stark schwitzen.",
+      "Trink vor und nach der Stunde Wasser, nimm ein Handtuch mit und mach Pausen, wenn es dir zu warm wird.",
+      "Wärme kann dich beweglicher wirken lassen als sonst, also bleib sanft und geh nicht weiter als nötig."
+     ],
+     "q": "Magst du warme Umgebungen wie Sauna oder sonnige Tage, oder eher kühle Luft?",
+     "c": "Wenn dich Hot Yoga reizt, schreib drei Dinge auf, die du für eine erste Stunde einpacken würdest."
+    },
+    "es": {
+     "t": "Hot yoga",
+     "g": "Aprende qué es el hot yoga y cómo practicarlo con sensatez.",
+     "p": [
+      "El hot yoga se practica en una sala caldeada, donde mucha gente suda bastante.",
+      "Bebe agua antes y después de clase, lleva una toalla y haz pausas siempre que sientas demasiado calor.",
+      "El calor puede hacerte sentir más flexible de lo habitual, así que mantente suave y no fuerces más."
+     ],
+     "q": "¿Disfrutas de los ambientes cálidos, como la sauna o los días de sol, o prefieres el aire fresco?",
+     "c": "Si te despierta curiosidad, apunta tres cosas que llevarías a tu primera clase de hot yoga."
+    },
+    "fr": {
+     "t": "Le hot yoga",
+     "g": "Comprendre ce qu'est le hot yoga et comment l'aborder avec bon sens.",
+     "p": [
+      "Le hot yoga se pratique dans une salle chauffée, où beaucoup de gens transpirent abondamment.",
+      "Bois de l'eau avant et après le cours, apporte une serviette et fais des pauses dès que tu as trop chaud.",
+      "La chaleur peut donner une impression de souplesse inhabituelle : reste doux et ne force pas davantage."
+     ],
+     "q": "Aimes-tu les ambiances chaudes, comme le sauna ou les journées ensoleillées, ou préfères-tu la fraîcheur ?",
+     "c": "Si le hot yoga te tente, note trois choses que tu emporterais pour un premier cours."
+    },
+    "it": {
+     "t": "Hot yoga",
+     "g": "Capire cos'è l'hot yoga e come affrontarlo con buon senso.",
+     "p": [
+      "L'hot yoga si pratica in una sala riscaldata, dove molte persone sudano parecchio.",
+      "Bevi acqua prima e dopo la lezione, porta un asciugamano e fai pause quando senti troppo caldo.",
+      "Il calore può farti sentire più flessibile del solito, quindi resta delicato ed evita di spingerti oltre."
+     ],
+     "q": "Ti piacciono gli ambienti caldi come la sauna o le giornate di sole, o preferisci l'aria fresca?",
+     "c": "Se l'hot yoga ti incuriosisce, scrivi tre cose che porteresti a una prima lezione."
+    },
+    "pt": {
+     "t": "Hot yoga",
+     "g": "Perceber o que é o hot yoga e como abordá-lo com bom senso.",
+     "p": [
+      "O hot yoga pratica-se numa sala aquecida, onde muitas pessoas transpiram bastante.",
+      "Bebe água antes e depois da aula, leva uma toalha e faz pausas sempre que sentires demasiado calor.",
+      "O calor pode fazer-te sentir mais flexível do que o habitual, por isso mantém-te suave e não forces mais."
+     ],
+     "q": "Gostas de ambientes quentes, como a sauna ou dias de sol, ou preferes ar mais fresco?",
+     "c": "Se tens curiosidade pelo hot yoga, escreve três coisas que levarias para uma primeira aula."
+    },
+    "pt_BR": {
+     "t": "Hot ioga",
+     "g": "Entender o que é a hot ioga e como praticar com bom senso.",
+     "p": [
+      "A hot ioga é praticada numa sala aquecida, onde muita gente transpira bastante.",
+      "Beba água antes e depois da aula, leve uma toalha e faça pausas sempre que sentir calor demais.",
+      "O calor pode fazer você se sentir mais flexível que o normal, então vá com suavidade e não force além."
+     ],
+     "q": "Você curte ambientes quentes, como sauna ou dias de sol, ou prefere um ar mais fresco?",
+     "c": "Se tiver curiosidade pela hot ioga, anote três coisas que levaria para uma primeira aula."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a style",
+     "g": "Match a yoga style to your mood, energy and goals.",
+     "p": [
+      "For calm and rest, try yin or restorative; for steady basics, hatha or Iyengar are good choices.",
+      "For energy and movement, vinyasa or power yoga may suit you; ashtanga suits lovers of routine.",
+      "Trying a few styles and comparing how you feel afterwards is the best guide."
+     ],
+     "q": "After this tour of styles, which one would you like to try first, and why?",
+     "c": "Write down two styles you would like to try and one thing you hope to feel in each."
+    },
+    "de": {
+     "t": "Einen Stil wählen",
+     "g": "Finde einen Yogastil, der zu deiner Stimmung, Energie und deinen Zielen passt.",
+     "p": [
+      "Für Ruhe und Erholung eignen sich Yin oder restoratives Yoga, für solide Grundlagen Hatha oder Iyengar.",
+      "Für Energie und Bewegung passen Vinyasa oder Power Yoga; Ashtanga liegt Menschen, die Routine lieben.",
+      "Mehrere Stile auszuprobieren und zu vergleichen, wie du dich danach fühlst, ist der beste Wegweiser."
+     ],
+     "q": "Welchen Stil möchtest du nach dieser Tour als Erstes ausprobieren, und warum?",
+     "c": "Schreib zwei Stile auf, die du testen willst, und je eine Sache, die du dabei spüren möchtest."
+    },
+    "es": {
+     "t": "Elegir un estilo",
+     "g": "Encuentra un estilo de yoga que encaje con tu ánimo, tu energía y tus objetivos.",
+     "p": [
+      "Para calma y descanso, prueba yin o restaurativo; para bases sólidas, hatha o Iyengar son buenas opciones.",
+      "Para energía y movimiento, vinyasa o power yoga; el ashtanga va bien a quien ama la rutina.",
+      "Probar varios estilos y comparar cómo te sientes después es la mejor guía."
+     ],
+     "q": "Después de este recorrido, ¿qué estilo te gustaría probar primero y por qué?",
+     "c": "Apunta dos estilos que quieras probar y una cosa que esperas sentir en cada uno."
+    },
+    "fr": {
+     "t": "Choisir un style",
+     "g": "Trouver un style de yoga adapté à ton humeur, ton énergie et tes objectifs.",
+     "p": [
+      "Pour le calme et le repos, essaie le yin ou le restauratif ; pour des bases solides, le hatha ou l'Iyengar.",
+      "Pour l'énergie et le mouvement, le vinyasa ou le power yoga ; l'ashtanga plaît aux amateurs de routine.",
+      "Essayer plusieurs styles et comparer ce que tu ressens ensuite reste le meilleur guide."
+     ],
+     "q": "Après ce tour des styles, lequel aimerais-tu essayer en premier, et pourquoi ?",
+     "c": "Note deux styles que tu aimerais essayer et une chose que tu espères ressentir dans chacun."
+    },
+    "it": {
+     "t": "Scegliere uno stile",
+     "g": "Trovare uno stile di yoga adatto al tuo umore, alla tua energia e ai tuoi obiettivi.",
+     "p": [
+      "Per calma e riposo prova yin o restorative; per basi solide, hatha o Iyengar sono buone scelte.",
+      "Per energia e movimento, vinyasa o power yoga; l'ashtanga piace a chi ama la routine.",
+      "Provare qualche stile e confrontare come ti senti dopo è la guida migliore."
+     ],
+     "q": "Dopo questo giro tra gli stili, quale vorresti provare per primo, e perché?",
+     "c": "Scrivi due stili che vorresti provare e una cosa che speri di sentire in ciascuno."
+    },
+    "pt": {
+     "t": "Escolher um estilo",
+     "g": "Encontrar um estilo de yoga que combine com o teu humor, energia e objetivos.",
+     "p": [
+      "Para calma e descanso, experimenta yin ou restaurativo; para bases sólidas, hatha ou Iyengar são boas escolhas.",
+      "Para energia e movimento, vinyasa ou power yoga; o ashtanga agrada a quem gosta de rotina.",
+      "Experimentar alguns estilos e comparar como te sentes depois é o melhor guia."
+     ],
+     "q": "Depois desta volta pelos estilos, qual gostavas de experimentar primeiro, e porquê?",
+     "c": "Escreve dois estilos que queres experimentar e uma coisa que esperas sentir em cada um."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um estilo",
+     "g": "Encontrar um estilo de ioga que combine com seu humor, sua energia e seus objetivos.",
+     "p": [
+      "Para calma e descanso, experimente yin ou restaurativa; para bases sólidas, hatha ou Iyengar são boas escolhas.",
+      "Para energia e movimento, vinyasa ou power ioga; o ashtanga agrada quem gosta de rotina.",
+      "Experimentar alguns estilos e comparar como você se sente depois é o melhor guia."
+     ],
+     "q": "Depois desse passeio pelos estilos, qual você gostaria de experimentar primeiro, e por quê?",
+     "c": "Anote dois estilos que quer experimentar e uma coisa que espera sentir em cada um."
+    }
+   }
+  }
+ ]
+}

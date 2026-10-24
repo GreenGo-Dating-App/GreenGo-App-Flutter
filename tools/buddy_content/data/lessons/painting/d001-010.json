@@ -1,0 +1,835 @@
+{
+ "topic": "painting",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to painting",
+     "g": "Discover why people paint and how one small lesson a day will grow real skill over 365 days.",
+     "p": [
+      "People have painted for over 40,000 years, from cave walls to canvases: it is one of the oldest ways humans share what they see.",
+      "The path goes from tools and colour basics to techniques, styles, art history and your own personal voice.",
+      "Skill comes from small daily practice, not talent alone: ten focused minutes a day beats one long session a month."
+     ],
+     "q": "What made you curious about painting, and is there a painting you have always loved?",
+     "c": "Find a scrap of paper and make any five marks with whatever you have: pen, pencil or a brush. Just start!"
+    },
+    "de": {
+     "t": "Willkommen in der Malerei",
+     "g": "Entdecke, warum Menschen malen und wie eine kleine Lektion pro Tag in 365 Tagen echtes Können aufbaut.",
+     "p": [
+      "Seit über 40.000 Jahren malen Menschen, von Höhlenwänden bis zur Leinwand: eine der ältesten Arten, Gesehenes zu teilen.",
+      "Der Weg führt von Werkzeugen und Farbgrundlagen über Techniken, Stile und Kunstgeschichte bis zu deiner eigenen Handschrift.",
+      "Können entsteht durch kleine tägliche Übung: zehn konzentrierte Minuten am Tag schlagen eine lange Sitzung im Monat."
+     ],
+     "q": "Was hat dich neugierig aufs Malen gemacht, und gibt es ein Gemälde, das du schon immer liebst?",
+     "c": "Nimm ein Stück Papier und setze fünf beliebige Spuren mit dem, was du hast: Stift, Bleistift oder Pinsel. Fang einfach an!"
+    },
+    "es": {
+     "t": "Bienvenida a la pintura",
+     "g": "Descubre por qué pintamos y cómo una pequeña lección diaria construye una habilidad real en 365 días.",
+     "p": [
+      "Los humanos pintan desde hace más de 40.000 años, de las cuevas al lienzo: una de las formas más antiguas de compartir lo que vemos.",
+      "El camino va de materiales y color básico a técnicas, estilos, historia del arte y tu propia voz personal.",
+      "La habilidad nace de la práctica diaria: diez minutos concentrados al día valen más que una sesión larga al mes."
+     ],
+     "q": "¿Qué te despertó la curiosidad por pintar? ¿Hay algún cuadro que siempre te haya encantado?",
+     "c": "Toma un papel y haz cinco trazos con lo que tengas a mano: bolígrafo, lápiz o pincel. ¡Empieza ya!"
+    },
+    "fr": {
+     "t": "Bienvenue en peinture",
+     "g": "Découvre pourquoi on peint et comment une petite leçon par jour construit un vrai savoir-faire en 365 jours.",
+     "p": [
+      "On peint depuis plus de 40 000 ans, des parois des grottes aux toiles : l'une des plus anciennes façons de partager ce qu'on voit.",
+      "Le parcours va des outils et bases de la couleur aux techniques, styles, histoire de l'art et à ta propre voix.",
+      "Le talent se construit par la pratique : dix minutes concentrées chaque jour valent mieux qu'une longue séance par mois."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de peindre, et y a-t-il un tableau que tu as toujours aimé ?",
+     "c": "Prends un bout de papier et fais cinq traces avec ce que tu as : stylo, crayon ou pinceau. Lance-toi !"
+    },
+    "it": {
+     "t": "Benvenuto nella pittura",
+     "g": "Scopri perché si dipinge e come una piccola lezione al giorno costruisce vera abilità in 365 giorni.",
+     "p": [
+      "L'uomo dipinge da oltre 40.000 anni, dalle pareti delle grotte alle tele: uno dei modi più antichi di condividere ciò che vede.",
+      "Il percorso va da strumenti e basi del colore a tecniche, stili, storia dell'arte e alla tua voce personale.",
+      "L'abilità nasce dalla pratica quotidiana: dieci minuti concentrati al giorno valgono più di una lunga sessione al mese."
+     ],
+     "q": "Cosa ti ha incuriosito della pittura, e c'è un quadro che hai sempre amato?",
+     "c": "Prendi un foglio e fai cinque segni con ciò che hai: penna, matita o pennello. Inizia e basta!"
+    },
+    "pt": {
+     "t": "Bem-vindo à pintura",
+     "g": "Descobre porque pintamos e como uma pequena lição por dia constrói verdadeira habilidade em 365 dias.",
+     "p": [
+      "O ser humano pinta há mais de 40 000 anos, das grutas às telas: uma das formas mais antigas de partilhar o que vê.",
+      "O percurso vai dos materiais e bases da cor às técnicas, estilos, história da arte e à tua própria voz.",
+      "A habilidade nasce da prática diária: dez minutos concentrados por dia valem mais do que uma sessão longa por mês."
+     ],
+     "q": "O que te despertou a curiosidade pela pintura, e há algum quadro de que sempre gostaste?",
+     "c": "Pega num papel e faz cinco marcas com o que tiveres: caneta, lápis ou pincel. Começa já!"
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à pintura",
+     "g": "Descubra por que pintamos e como uma pequena lição por dia constrói habilidade de verdade em 365 dias.",
+     "p": [
+      "O ser humano pinta há mais de 40 mil anos, das cavernas às telas: uma das formas mais antigas de compartilhar o que vê.",
+      "A trilha vai dos materiais e noções de cor às técnicas, estilos, história da arte e à sua própria voz.",
+      "Habilidade vem da prática diária: dez minutos focados por dia valem mais que uma sessão longa por mês."
+     ],
+     "q": "O que despertou sua curiosidade pela pintura, e tem algum quadro que você sempre amou?",
+     "c": "Pegue um papel e faça cinco marcas com o que tiver: caneta, lápis ou pincel. Comece agora!"
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The main paint families",
+     "g": "Meet watercolour, gouache, acrylic and oil, and learn what holds each one together.",
+     "p": [
+      "Watercolour and gouache use gum arabic as binder: watercolour is transparent, gouache has more pigment and filler, so it is opaque.",
+      "Acrylic binds pigment in an acrylic polymer emulsion: it thins with water but dries into a flexible, water-resistant film.",
+      "Oil paint binds pigment in drying oils like linseed: it stays wet for days and allows slow, smooth blending."
+     ],
+     "q": "Which of the four families have you already tried, even as a child at school?",
+     "c": "Look around your home or online for one painting and guess which paint family it was made with."
+    },
+    "de": {
+     "t": "Die großen Farbfamilien",
+     "g": "Lerne Aquarell, Gouache, Acryl und Öl kennen und was jede dieser Farben zusammenhält.",
+     "p": [
+      "Aquarell und Gouache nutzen Gummiarabikum als Bindemittel: Aquarell ist lasierend, Gouache hat mehr Pigment und deckt.",
+      "Acryl bindet Pigment in einer Polymer-Dispersion: Es lässt sich mit Wasser verdünnen, trocknet aber wasserfest und elastisch.",
+      "Ölfarbe bindet Pigment in trocknenden Ölen wie Leinöl: Sie bleibt tagelang nass und erlaubt weiches, langsames Vermalen."
+     ],
+     "q": "Welche der vier Farbfamilien hast du schon einmal benutzt, vielleicht in der Schule?",
+     "c": "Such dir ein Gemälde zu Hause oder online und rate, mit welcher Farbfamilie es gemalt wurde."
+    },
+    "es": {
+     "t": "Las grandes familias de pintura",
+     "g": "Conoce la acuarela, el gouache, el acrílico y el óleo, y qué mantiene unida a cada una.",
+     "p": [
+      "Acuarela y gouache usan goma arábiga como aglutinante: la acuarela es transparente; el gouache, con más pigmento, es opaco.",
+      "El acrílico une el pigmento en una emulsión de polímero: se diluye con agua pero seca en una película flexible y resistente al agua.",
+      "El óleo une el pigmento con aceites secantes como el de linaza: sigue húmedo días y permite fundidos suaves y lentos."
+     ],
+     "q": "¿Cuál de las cuatro familias has probado ya, aunque sea de niño en el colegio?",
+     "c": "Busca un cuadro en casa o en internet e intenta adivinar con qué familia de pintura se hizo."
+    },
+    "fr": {
+     "t": "Les grandes familles de peinture",
+     "g": "Fais connaissance avec l'aquarelle, la gouache, l'acrylique et l'huile, et ce qui lie chacune.",
+     "p": [
+      "Aquarelle et gouache utilisent la gomme arabique : l'aquarelle est transparente, la gouache, plus chargée, est couvrante.",
+      "L'acrylique lie le pigment dans une émulsion de polymère : elle se dilue à l'eau mais sèche en un film souple et résistant à l'eau.",
+      "L'huile lie le pigment dans des huiles siccatives comme le lin : elle reste fraîche des jours et permet des fondus lents."
+     ],
+     "q": "Laquelle de ces quatre familles as-tu déjà essayée, même enfant à l'école ?",
+     "c": "Trouve un tableau chez toi ou en ligne et devine avec quelle famille de peinture il a été fait."
+    },
+    "it": {
+     "t": "Le grandi famiglie di colori",
+     "g": "Conosci acquerello, gouache, acrilico e olio, e cosa tiene insieme ciascuno di essi.",
+     "p": [
+      "Acquerello e gouache usano gomma arabica come legante: l'acquerello è trasparente, la gouache, più carica, è coprente.",
+      "L'acrilico lega il pigmento in un'emulsione polimerica: si diluisce con acqua ma asciuga in un film elastico e resistente all'acqua.",
+      "L'olio lega il pigmento con oli siccativi come quello di lino: resta fresco per giorni e permette sfumature lente e morbide."
+     ],
+     "q": "Quale di queste quattro famiglie hai già provato, magari da bambino a scuola?",
+     "c": "Cerca un dipinto in casa o online e prova a indovinare con quale famiglia di colori è stato fatto."
+    },
+    "pt": {
+     "t": "As grandes famílias de tinta",
+     "g": "Conhece a aguarela, o guache, o acrílico e o óleo, e o que mantém cada um unido.",
+     "p": [
+      "Aguarela e guache usam goma-arábica como aglutinante: a aguarela é transparente, o guache, com mais pigmento, é opaco.",
+      "O acrílico liga o pigmento numa emulsão de polímero: dilui-se com água mas seca numa película flexível e resistente à água.",
+      "O óleo liga o pigmento com óleos secativos como o de linhaça: fica fresco durante dias e permite esbatidos lentos."
+     ],
+     "q": "Qual destas quatro famílias já experimentaste, mesmo em criança na escola?",
+     "c": "Procura um quadro em casa ou online e tenta adivinhar com que família de tinta foi feito."
+    },
+    "pt_BR": {
+     "t": "As grandes famílias de tinta",
+     "g": "Conheça aquarela, guache, acrílica e óleo, e o que mantém cada uma unida.",
+     "p": [
+      "Aquarela e guache usam goma arábica como aglutinante: a aquarela é transparente, o guache, com mais pigmento, é opaco.",
+      "A acrílica une o pigmento numa emulsão de polímero: dilui com água, mas seca como uma película flexível e resistente à água.",
+      "A tinta a óleo une o pigmento com óleos secativos como o de linhaça: fica molhada por dias e permite misturas lentas e suaves."
+     ],
+     "q": "Qual dessas quatro famílias você já experimentou, nem que seja na escola?",
+     "c": "Procure um quadro em casa ou na internet e tente adivinhar com qual família de tinta ele foi feito."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is inside a tube of paint",
+     "g": "Understand that every paint is pigment plus binder, and why that changes how it looks and feels.",
+     "p": [
+      "Pigment is the coloured powder; binder is the glue that holds it to the surface. The same pigment can go into every paint family.",
+      "Ultramarine in oil looks deep and glossy, in watercolour luminous and transparent: the binder changes how light passes through.",
+      "Many tubes also hold small extras like fillers, wetting agents or preservatives that adjust texture and shelf life."
+     ],
+     "q": "If you could pick one pigment to try in every paint family, which colour would you choose?",
+     "c": "Read the label of any paint, ink or even nail polish you own and look for the pigment name or code, like PB29 or PY35."
+    },
+    "de": {
+     "t": "Was steckt in einer Farbtube?",
+     "g": "Verstehe, dass jede Farbe aus Pigment und Bindemittel besteht und warum das Aussehen und Gefühl verändert.",
+     "p": [
+      "Pigment ist das farbige Pulver, Bindemittel der Kleber, der es am Malgrund hält. Dasselbe Pigment steckt in jeder Farbfamilie.",
+      "Ultramarin wirkt in Öl tief und glänzend, im Aquarell leuchtend und durchscheinend: Das Bindemittel lenkt das Licht anders.",
+      "Viele Tuben enthalten kleine Zusätze wie Füllstoffe, Netzmittel oder Konservierer für Konsistenz und Haltbarkeit."
+     ],
+     "q": "Wenn du ein Pigment in allen Farbfamilien testen könntest, welche Farbe würdest du wählen?",
+     "c": "Lies das Etikett einer Farbe oder Tinte bei dir und suche den Pigmentnamen oder Code, etwa PB29 oder PY35."
+    },
+    "es": {
+     "t": "Qué hay dentro de un tubo",
+     "g": "Entiende que toda pintura es pigmento más aglutinante, y por qué eso cambia su aspecto y su tacto.",
+     "p": [
+      "El pigmento es el polvo de color; el aglutinante, la cola que lo fija al soporte. El mismo pigmento puede ir en cualquier familia.",
+      "El ultramar en óleo se ve profundo y brillante; en acuarela, luminoso y transparente: el aglutinante cambia el paso de la luz.",
+      "Muchos tubos llevan pequeños extras como cargas, humectantes o conservantes que ajustan la textura y la duración."
+     ],
+     "q": "Si pudieras probar un solo pigmento en todas las familias, ¿qué color elegirías?",
+     "c": "Lee la etiqueta de una pintura o tinta que tengas y busca el nombre o código del pigmento, como PB29 o PY35."
+    },
+    "fr": {
+     "t": "Que contient un tube de peinture ?",
+     "g": "Comprends que toute peinture est un pigment plus un liant, et pourquoi cela change son aspect et son toucher.",
+     "p": [
+      "Le pigment est la poudre colorée, le liant la colle qui la fixe au support. Le même pigment peut entrer dans chaque famille.",
+      "L'outremer à l'huile paraît profond et brillant, à l'aquarelle lumineux et transparent : le liant change le trajet de la lumière.",
+      "Beaucoup de tubes contiennent aussi des charges, agents mouillants ou conservateurs qui règlent la texture et la durée."
+     ],
+     "q": "Si tu pouvais tester un seul pigment dans toutes les familles, quelle couleur choisirais-tu ?",
+     "c": "Lis l'étiquette d'une peinture ou encre chez toi et cherche le nom ou code du pigment, comme PB29 ou PY35."
+    },
+    "it": {
+     "t": "Cosa c'è in un tubetto",
+     "g": "Capisci che ogni colore è pigmento più legante, e perché questo cambia aspetto e sensazione.",
+     "p": [
+      "Il pigmento è la polvere colorata, il legante la colla che lo fissa al supporto. Lo stesso pigmento può stare in ogni famiglia.",
+      "Il blu oltremare a olio appare profondo e lucido, ad acquerello luminoso e trasparente: il legante cambia il percorso della luce.",
+      "Molti tubetti contengono anche cariche, bagnanti o conservanti che regolano consistenza e durata."
+     ],
+     "q": "Se potessi provare un solo pigmento in tutte le famiglie, quale colore sceglieresti?",
+     "c": "Leggi l'etichetta di un colore o inchiostro che hai e cerca il nome o il codice del pigmento, come PB29 o PY35."
+    },
+    "pt": {
+     "t": "O que há dentro de um tubo",
+     "g": "Percebe que toda a tinta é pigmento mais aglutinante, e porque isso muda o seu aspeto e toque.",
+     "p": [
+      "O pigmento é o pó colorido; o aglutinante, a cola que o prende ao suporte. O mesmo pigmento pode ir para qualquer família.",
+      "O azul ultramarino a óleo parece profundo e brilhante, em aguarela luminoso e transparente: o aglutinante muda o percurso da luz.",
+      "Muitos tubos têm ainda cargas, molhantes ou conservantes que ajustam a textura e a duração."
+     ],
+     "q": "Se pudesses testar um só pigmento em todas as famílias, que cor escolherias?",
+     "c": "Lê o rótulo de uma tinta ou tinteiro que tenhas e procura o nome ou código do pigmento, como PB29 ou PY35."
+    },
+    "pt_BR": {
+     "t": "O que tem dentro de um tubo",
+     "g": "Entenda que toda tinta é pigmento mais aglutinante, e por que isso muda a aparência e a sensação.",
+     "p": [
+      "O pigmento é o pó colorido; o aglutinante, a cola que o prende ao suporte. O mesmo pigmento pode estar em qualquer família.",
+      "O azul ultramar no óleo parece profundo e brilhante, na aquarela luminoso e transparente: o aglutinante muda o caminho da luz.",
+      "Muitos tubos também têm cargas, umectantes ou conservantes que ajustam a textura e a validade."
+     ],
+     "q": "Se pudesse testar um único pigmento em todas as famílias, qual cor você escolheria?",
+     "c": "Leia o rótulo de uma tinta que você tenha e procure o nome ou código do pigmento, como PB29 ou PY35."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first medium",
+     "g": "Compare cost, drying time, clean-up and forgiveness to pick the medium that fits your life.",
+     "p": [
+      "Watercolour is compact and cheap to start, cleans up with water, but it is hard to cover mistakes once dry.",
+      "Acrylic dries fast, cleans with water and covers errors easily: great for busy people with small spaces.",
+      "Oil is slow and forgiving for blending but needs more time, ventilation and care with solvents or solvent-free mediums."
+     ],
+     "q": "How much time and space do you have for painting in a normal week?",
+     "c": "Write down your top two candidate media and one reason for each. Pick one to explore first."
+    },
+    "de": {
+     "t": "Dein erstes Malmedium wählen",
+     "g": "Vergleiche Kosten, Trockenzeit, Reinigung und Fehlertoleranz, um das passende Medium zu finden.",
+     "p": [
+      "Aquarell ist kompakt, günstig zum Einstieg und mit Wasser zu reinigen, aber Fehler lassen sich trocken schwer überdecken.",
+      "Acryl trocknet schnell, lässt sich mit Wasser reinigen und deckt Fehler gut ab: ideal für wenig Zeit und Platz.",
+      "Öl ist langsam und verzeihend beim Vermalen, braucht aber mehr Zeit, Lüftung und Sorgfalt mit Lösemitteln."
+     ],
+     "q": "Wie viel Zeit und Platz hast du in einer normalen Woche zum Malen?",
+     "c": "Notiere deine zwei Favoriten und je einen Grund dafür. Wähle eines, mit dem du anfängst."
+    },
+    "es": {
+     "t": "Elegir tu primer medio",
+     "g": "Compara coste, secado, limpieza y tolerancia al error para elegir el medio que encaja con tu vida.",
+     "p": [
+      "La acuarela es compacta, barata para empezar y se limpia con agua, pero cuesta tapar errores una vez seca.",
+      "El acrílico seca rápido, se limpia con agua y cubre los errores fácilmente: ideal para poco tiempo y poco espacio.",
+      "El óleo es lento y permisivo al fundir, pero pide más tiempo, ventilación y cuidado con los disolventes."
+     ],
+     "q": "¿Cuánto tiempo y espacio tienes para pintar en una semana normal?",
+     "c": "Apunta tus dos medios favoritos y una razón para cada uno. Elige uno para empezar a explorar."
+    },
+    "fr": {
+     "t": "Choisir ton premier médium",
+     "g": "Compare coût, séchage, nettoyage et tolérance aux erreurs pour choisir le médium adapté à ta vie.",
+     "p": [
+      "L'aquarelle est compacte, peu chère au départ et se nettoie à l'eau, mais une erreur sèche se corrige mal.",
+      "L'acrylique sèche vite, se nettoie à l'eau et couvre facilement les erreurs : idéale avec peu de temps et d'espace.",
+      "L'huile est lente et indulgente pour les fondus, mais demande plus de temps, d'aération et de soin avec les solvants."
+     ],
+     "q": "Combien de temps et d'espace as-tu pour peindre dans une semaine normale ?",
+     "c": "Note tes deux médiums favoris avec une raison pour chacun. Choisis-en un pour commencer."
+    },
+    "it": {
+     "t": "Scegliere il primo medium",
+     "g": "Confronta costo, asciugatura, pulizia e tolleranza agli errori per scegliere il medium adatto a te.",
+     "p": [
+      "L'acquerello è compatto, economico per iniziare e si pulisce con acqua, ma è difficile coprire gli errori da asciutto.",
+      "L'acrilico asciuga in fretta, si pulisce con acqua e copre bene gli errori: ottimo con poco tempo e poco spazio.",
+      "L'olio è lento e indulgente nelle sfumature, ma chiede più tempo, aerazione e attenzione con i solventi."
+     ],
+     "q": "Quanto tempo e spazio hai per dipingere in una settimana normale?",
+     "c": "Scrivi i tuoi due medium preferiti e un motivo per ciascuno. Scegline uno con cui iniziare."
+    },
+    "pt": {
+     "t": "Escolher o primeiro meio",
+     "g": "Compara custo, secagem, limpeza e tolerância ao erro para escolher o meio que combina contigo.",
+     "p": [
+      "A aguarela é compacta, barata para começar e limpa-se com água, mas é difícil tapar erros depois de seca.",
+      "O acrílico seca depressa, limpa-se com água e cobre erros facilmente: ótimo para pouco tempo e pouco espaço.",
+      "O óleo é lento e tolerante nos esbatidos, mas pede mais tempo, ventilação e cuidado com os solventes."
+     ],
+     "q": "Quanto tempo e espaço tens para pintar numa semana normal?",
+     "c": "Escreve os teus dois meios preferidos e uma razão para cada. Escolhe um para começar."
+    },
+    "pt_BR": {
+     "t": "Escolhendo seu primeiro meio",
+     "g": "Compare custo, secagem, limpeza e tolerância a erros para escolher o meio que combina com sua vida.",
+     "p": [
+      "A aquarela é compacta, barata para começar e limpa com água, mas é difícil cobrir erros depois de seca.",
+      "A acrílica seca rápido, limpa com água e cobre erros com facilidade: ótima para pouco tempo e pouco espaço.",
+      "O óleo é lento e tolerante nas misturas, mas pede mais tempo, ventilação e cuidado com solventes."
+     ],
+     "q": "Quanto tempo e espaço você tem para pintar numa semana normal?",
+     "c": "Anote seus dois meios favoritos e um motivo para cada. Escolha um para começar a explorar."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brush shapes explained",
+     "g": "Learn the main brush shapes and the marks each one makes best.",
+     "p": [
+      "Rounds come to a point for lines and details; flats have a square end for broad strokes and crisp edges.",
+      "Filberts are flat with a rounded tip for soft edges and petals; brights are short flats for controlled, thick strokes.",
+      "Fans blend and suggest grass or foliage; riggers are long, thin rounds made for branches, rigging and fine lines."
+     ],
+     "q": "Which brush shape do you think you will reach for most often, and why?",
+     "c": "Draw the six shapes on paper from memory and write one subject each would be perfect for."
+    },
+    "de": {
+     "t": "Pinselformen erklärt",
+     "g": "Lerne die wichtigsten Pinselformen kennen und welche Spuren jede am besten macht.",
+     "p": [
+      "Rundpinsel laufen spitz zu für Linien und Details; Flachpinsel haben eine gerade Kante für breite Striche und klare Ränder.",
+      "Katzenzungen sind flach mit runder Spitze für weiche Kanten und Blüten; Brights sind kurze Flache für kräftige Striche.",
+      "Fächerpinsel verblenden und deuten Gras oder Laub an; Schlepper sind lange, dünne Rundpinsel für Äste und feine Linien."
+     ],
+     "q": "Zu welcher Pinselform wirst du wohl am häufigsten greifen, und warum?",
+     "c": "Zeichne die sechs Formen aus dem Gedächtnis und notiere zu jeder ein ideales Motiv."
+    },
+    "es": {
+     "t": "Las formas de los pinceles",
+     "g": "Aprende las formas principales de pincel y el trazo que mejor hace cada una.",
+     "p": [
+      "Los redondos acaban en punta para líneas y detalles; los planos tienen el borde recto para trazos anchos y bordes nítidos.",
+      "Los lengua de gato son planos de punta redonda para bordes suaves y pétalos; los brights son planos cortos para trazos firmes.",
+      "Los abanicos funden y sugieren hierba o follaje; los riggers son redondos largos y finos para ramas y líneas delicadas."
+     ],
+     "q": "¿Qué forma de pincel crees que usarás más, y por qué?",
+     "c": "Dibuja de memoria las seis formas y escribe un tema perfecto para cada una."
+    },
+    "fr": {
+     "t": "Les formes de pinceaux",
+     "g": "Découvre les principales formes de pinceaux et la trace que chacune fait le mieux.",
+     "p": [
+      "Les ronds finissent en pointe pour lignes et détails ; les plats ont un bout carré pour les larges touches et bords nets.",
+      "Les langues de chat sont plates à bout arrondi pour bords doux et pétales ; les brights sont des plats courts pour touches fermes.",
+      "L'éventail fond et suggère herbe ou feuillage ; le traceur est un rond long et fin pour branches et lignes fines."
+     ],
+     "q": "Quelle forme de pinceau penses-tu utiliser le plus souvent, et pourquoi ?",
+     "c": "Dessine de mémoire les six formes et note un sujet idéal pour chacune."
+    },
+    "it": {
+     "t": "Le forme dei pennelli",
+     "g": "Impara le forme principali dei pennelli e il segno che ciascuna fa meglio.",
+     "p": [
+      "I tondi finiscono a punta per linee e dettagli; i piatti hanno il bordo dritto per pennellate larghe e contorni netti.",
+      "Le lingue di gatto sono piatte a punta arrotondata per bordi morbidi e petali; i bright sono piatti corti per tocchi decisi.",
+      "I ventagli sfumano e suggeriscono erba o fogliame; i rigger sono tondi lunghi e sottili per rami e linee fini."
+     ],
+     "q": "Quale forma di pennello pensi di usare più spesso, e perché?",
+     "c": "Disegna a memoria le sei forme e scrivi per ognuna un soggetto perfetto."
+    },
+    "pt": {
+     "t": "As formas dos pincéis",
+     "g": "Aprende as principais formas de pincel e a marca que cada uma faz melhor.",
+     "p": [
+      "Os redondos terminam em ponta para linhas e detalhes; os chatos têm ponta reta para pinceladas largas e contornos nítidos.",
+      "Os língua de gato são chatos de ponta arredondada para bordas suaves e pétalas; os brights são chatos curtos para toques firmes.",
+      "Os leques esbatem e sugerem relva ou folhagem; os riggers são redondos longos e finos para ramos e linhas finas."
+     ],
+     "q": "Que forma de pincel achas que vais usar mais, e porquê?",
+     "c": "Desenha de memória as seis formas e escreve um tema perfeito para cada uma."
+    },
+    "pt_BR": {
+     "t": "As formas dos pincéis",
+     "g": "Aprenda as principais formas de pincel e a marca que cada uma faz melhor.",
+     "p": [
+      "Os redondos terminam em ponta para linhas e detalhes; os chatos têm ponta reta para pinceladas largas e bordas nítidas.",
+      "Os língua de gato são chatos de ponta arredondada para bordas suaves e pétalas; os brights são chatos curtos para toques firmes.",
+      "Os leques esfumam e sugerem grama ou folhagem; os riggers são redondos longos e finos para galhos e linhas finas."
+     ],
+     "q": "Qual formato de pincel você acha que vai usar mais, e por quê?",
+     "c": "Desenhe de memória os seis formatos e escreva um tema perfeito para cada um."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brush hairs: natural and synthetic",
+     "g": "Learn how soft, springy and stiff hairs behave and which media each suits.",
+     "p": [
+      "Soft hairs like sable or squirrel hold lots of water and suit watercolour; squirrel is a reservoir, sable keeps a fine point.",
+      "Stiff hog bristle grips thick oil and acrylic paint and leaves visible brush marks, perfect for texture.",
+      "Modern synthetics are affordable, durable, easy to clean and cruelty-free, and they handle acrylic very well."
+     ],
+     "q": "Do you prefer the idea of smooth soft strokes or bold textured ones?",
+     "c": "Touch any brush you have and describe its hair in three words: soft, springy, stiff, thick or thin?"
+    },
+    "de": {
+     "t": "Pinselhaare: Natur und Synthetik",
+     "g": "Lerne, wie weiche, federnde und harte Haare sich verhalten und zu welchen Medien sie passen.",
+     "p": [
+      "Weiche Haare wie Rotmarder oder Fehhaar halten viel Wasser fürs Aquarell; Fehhaar speichert, Marder hält eine feine Spitze.",
+      "Harte Schweineborsten greifen dicke Öl- und Acrylfarbe und hinterlassen sichtbare Pinselspuren, ideal für Struktur.",
+      "Moderne Synthetikpinsel sind günstig, langlebig, leicht zu reinigen, tierfrei und passen sehr gut zu Acryl."
+     ],
+     "q": "Magst du eher weiche, glatte Striche oder kräftige, strukturierte?",
+     "c": "Fühle einen Pinsel, den du hast, und beschreibe sein Haar in drei Worten: weich, federnd, hart, dick oder dünn?"
+    },
+    "es": {
+     "t": "Pelo natural y sintético",
+     "g": "Aprende cómo se comportan los pelos suaves, elásticos y duros, y a qué medios se adaptan.",
+     "p": [
+      "Los pelos suaves como marta o ardilla retienen mucha agua para acuarela; la ardilla es depósito, la marta mantiene la punta.",
+      "La cerda dura de cerdo agarra el óleo y el acrílico espesos y deja marcas visibles, perfecta para texturas.",
+      "Los sintéticos modernos son económicos, duraderos, fáciles de limpiar, sin origen animal y funcionan muy bien con acrílico."
+     ],
+     "q": "¿Te atrae más la idea de trazos suaves y lisos o de trazos con textura?",
+     "c": "Toca un pincel que tengas y describe su pelo en tres palabras: suave, elástico, duro, grueso o fino."
+    },
+    "fr": {
+     "t": "Poils naturels et synthétiques",
+     "g": "Apprends comment se comportent les poils doux, nerveux et durs, et à quels médiums ils conviennent.",
+     "p": [
+      "Les poils doux comme la martre ou le petit-gris retiennent beaucoup d'eau : le petit-gris stocke, la martre garde la pointe.",
+      "La soie de porc, raide, accroche l'huile et l'acrylique épaisses et laisse des traces visibles, idéale pour la matière.",
+      "Les synthétiques modernes sont abordables, solides, faciles à nettoyer, sans origine animale et parfaits pour l'acrylique."
+     ],
+     "q": "Préfères-tu l'idée de touches douces et lisses ou de touches pleines de texture ?",
+     "c": "Touche un pinceau que tu as et décris ses poils en trois mots : doux, nerveux, raides, épais ou fins ?"
+    },
+    "it": {
+     "t": "Peli naturali e sintetici",
+     "g": "Scopri come si comportano i peli morbidi, elastici e rigidi, e a quali medium sono adatti.",
+     "p": [
+      "I peli morbidi come martora o scoiattolo trattengono molta acqua: lo scoiattolo fa da serbatoio, la martora tiene la punta.",
+      "La setola di maiale, rigida, aggrappa olio e acrilico densi e lascia segni visibili, perfetta per la materia.",
+      "I sintetici moderni sono economici, resistenti, facili da pulire, senza origine animale e ottimi con l'acrilico."
+     ],
+     "q": "Ti attirano di più pennellate morbide e lisce o pennellate ricche di texture?",
+     "c": "Tocca un pennello che hai e descrivi il pelo con tre parole: morbido, elastico, rigido, spesso o sottile?"
+    },
+    "pt": {
+     "t": "Pelo natural e sintético",
+     "g": "Aprende como se comportam os pelos macios, elásticos e duros, e a que meios se adaptam.",
+     "p": [
+      "Pelos macios como marta ou esquilo retêm muita água para aguarela; o esquilo é reservatório, a marta mantém a ponta.",
+      "A cerda dura de porco agarra óleo e acrílico espessos e deixa marcas visíveis, perfeita para texturas.",
+      "Os sintéticos modernos são acessíveis, duráveis, fáceis de limpar, sem origem animal e ótimos com acrílico."
+     ],
+     "q": "Atrai-te mais a ideia de pinceladas suaves e lisas ou de pinceladas com textura?",
+     "c": "Toca num pincel que tenhas e descreve o pelo em três palavras: macio, elástico, duro, grosso ou fino?"
+    },
+    "pt_BR": {
+     "t": "Pelo natural e sintético",
+     "g": "Aprenda como se comportam os pelos macios, elásticos e duros, e a quais meios eles servem.",
+     "p": [
+      "Pelos macios como marta ou esquilo seguram muita água para aquarela; o esquilo é reservatório, a marta mantém a ponta.",
+      "A cerda dura de porco agarra óleo e acrílica grossos e deixa marcas visíveis, perfeita para texturas.",
+      "Os sintéticos modernos são baratos, duráveis, fáceis de limpar, sem origem animal e ótimos com acrílica."
+     ],
+     "q": "Você curte mais a ideia de pinceladas suaves e lisas ou pinceladas cheias de textura?",
+     "c": "Toque num pincel que você tem e descreva o pelo em três palavras: macio, elástico, duro, grosso ou fino?"
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caring for your brushes",
+     "g": "Learn simple habits that keep your brushes pointed and healthy for years.",
+     "p": [
+      "Never leave a brush standing on its tip in water: it bends the hairs for good. Rinse often while painting.",
+      "Wash with mild soap and lukewarm water, working it gently into the base until the water runs clear.",
+      "Reshape the tip with your fingers and dry brushes flat or hanging head down so water does not loosen the glue."
+     ],
+     "q": "Have you ever ruined a brush by accident? What happened?",
+     "c": "Wash every brush you own today, reshape the tips and lay them flat to dry."
+    },
+    "de": {
+     "t": "Pinselpflege",
+     "g": "Lerne einfache Gewohnheiten, die deine Pinsel jahrelang spitz und gesund halten.",
+     "p": [
+      "Lass einen Pinsel nie auf der Spitze im Wasser stehen: Das verbiegt die Haare dauerhaft. Spüle beim Malen oft aus.",
+      "Wasche mit milder Seife und lauwarmem Wasser und massiere sanft bis zur Zwinge, bis das Wasser klar bleibt.",
+      "Forme die Spitze mit den Fingern nach und trockne flach oder hängend, damit kein Wasser den Leim in der Zwinge löst."
+     ],
+     "q": "Hast du schon einmal aus Versehen einen Pinsel ruiniert? Was ist passiert?",
+     "c": "Wasche heute alle deine Pinsel, forme die Spitzen und lege sie flach zum Trocknen."
+    },
+    "es": {
+     "t": "Cuidar tus pinceles",
+     "g": "Aprende hábitos sencillos que mantienen tus pinceles en punta y sanos durante años.",
+     "p": [
+      "Nunca dejes un pincel apoyado en la punta dentro del agua: dobla el pelo para siempre. Enjuágalo a menudo mientras pintas.",
+      "Lávalo con jabón suave y agua tibia, masajeando con cuidado hasta la virola, hasta que el agua salga limpia.",
+      "Dale forma a la punta con los dedos y sécalo en horizontal o colgado boca abajo para que el agua no afloje la cola."
+     ],
+     "q": "¿Alguna vez arruinaste un pincel sin querer? ¿Qué pasó?",
+     "c": "Lava hoy todos tus pinceles, dales forma a las puntas y déjalos secar en horizontal."
+    },
+    "fr": {
+     "t": "Entretenir tes pinceaux",
+     "g": "Adopte des gestes simples qui gardent tes pinceaux pointus et en forme pendant des années.",
+     "p": [
+      "Ne laisse jamais un pinceau debout sur sa pointe dans l'eau : les poils se tordent pour toujours. Rince souvent en peignant.",
+      "Lave au savon doux et à l'eau tiède en massant doucement jusqu'à la virole, jusqu'à ce que l'eau soit claire.",
+      "Reforme la pointe avec les doigts et sèche à plat ou tête en bas pour que l'eau n'abîme pas la colle de la virole."
+     ],
+     "q": "As-tu déjà abîmé un pinceau par accident ? Que s'est-il passé ?",
+     "c": "Lave aujourd'hui tous tes pinceaux, reforme leur pointe et laisse-les sécher à plat."
+    },
+    "it": {
+     "t": "Curare i pennelli",
+     "g": "Impara abitudini semplici che mantengono i pennelli appuntiti e sani per anni.",
+     "p": [
+      "Non lasciare mai un pennello in piedi sulla punta nell'acqua: i peli si piegano per sempre. Sciacqua spesso mentre dipingi.",
+      "Lava con sapone delicato e acqua tiepida, massaggiando piano fino alla ghiera, finché l'acqua esce pulita.",
+      "Riforma la punta con le dita e asciuga in orizzontale o a testa in giù, così l'acqua non scioglie la colla della ghiera."
+     ],
+     "q": "Ti è mai capitato di rovinare un pennello per sbaglio? Cosa è successo?",
+     "c": "Lava oggi tutti i tuoi pennelli, riforma le punte e lasciali asciugare in orizzontale."
+    },
+    "pt": {
+     "t": "Cuidar dos pincéis",
+     "g": "Aprende hábitos simples que mantêm os teus pincéis em ponta e saudáveis durante anos.",
+     "p": [
+      "Nunca deixes um pincel apoiado na ponta dentro de água: os pelos dobram para sempre. Enxagua muitas vezes enquanto pintas.",
+      "Lava com sabão suave e água morna, massajando com cuidado até à virola, até a água sair limpa.",
+      "Molda a ponta com os dedos e seca na horizontal ou pendurado de cabeça para baixo para a água não soltar a cola."
+     ],
+     "q": "Já estragaste algum pincel sem querer? O que aconteceu?",
+     "c": "Lava hoje todos os teus pincéis, molda as pontas e deixa-os secar deitados."
+    },
+    "pt_BR": {
+     "t": "Cuidando dos pincéis",
+     "g": "Aprenda hábitos simples que mantêm seus pincéis com ponta e saudáveis por anos.",
+     "p": [
+      "Nunca deixe um pincel apoiado na ponta dentro da água: os pelos entortam para sempre. Enxágue sempre enquanto pinta.",
+      "Lave com sabão neutro e água morna, massageando com cuidado até a virola, até a água sair limpa.",
+      "Modele a ponta com os dedos e seque deitado ou pendurado de cabeça para baixo para a água não soltar a cola."
+     ],
+     "q": "Você já estragou um pincel sem querer? O que aconteceu?",
+     "c": "Lave hoje todos os seus pincéis, modele as pontas e deixe secar deitados."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting surfaces",
+     "g": "Get to know paper, canvas, panels and boards, and which paint works best on each.",
+     "p": [
+      "Paper suits watercolour and gouache; heavy watercolour paper resists buckling when it gets very wet.",
+      "Stretched canvas is light and springy, loved for oil and acrylic since the Renaissance, when it gradually replaced wood.",
+      "Wooden panels and boards are rigid and smooth, great for fine detail; most need priming before painting."
+     ],
+     "q": "Which surface sounds most exciting to you: paper, canvas or a wooden panel?",
+     "c": "Collect three different surfaces at home, like printer paper, cardboard and a wood scrap, and feel their texture."
+    },
+    "de": {
+     "t": "Malgründe",
+     "g": "Lerne Papier, Leinwand, Tafeln und Malplatten kennen und welche Farbe wohin passt.",
+     "p": [
+      "Papier passt zu Aquarell und Gouache; schweres Aquarellpapier wellt sich kaum, auch wenn es sehr nass wird.",
+      "Gespannte Leinwand ist leicht und federnd und seit der Renaissance beliebt für Öl, als sie nach und nach Holz ablöste.",
+      "Holztafeln und Malplatten sind starr und glatt, ideal für feine Details; meist müssen sie grundiert werden."
+     ],
+     "q": "Welcher Malgrund reizt dich am meisten: Papier, Leinwand oder Holz?",
+     "c": "Sammle drei verschiedene Untergründe zu Hause, etwa Druckerpapier, Karton und ein Holzstück, und fühle ihre Struktur."
+    },
+    "es": {
+     "t": "Soportes para pintar",
+     "g": "Conoce el papel, el lienzo, las tablas y los cartones, y qué pintura va mejor en cada uno.",
+     "p": [
+      "El papel es para acuarela y gouache; el papel de acuarela grueso se ondula menos aunque se moje mucho.",
+      "El lienzo tensado es ligero y elástico, querido para el óleo desde el Renacimiento, cuando fue sustituyendo a la madera.",
+      "Las tablas de madera y cartones son rígidos y lisos, ideales para el detalle; casi todos necesitan imprimación."
+     ],
+     "q": "¿Qué soporte te emociona más: papel, lienzo o tabla de madera?",
+     "c": "Reúne tres soportes de casa, como papel de impresora, cartón y un trozo de madera, y nota su textura."
+    },
+    "fr": {
+     "t": "Les supports de peinture",
+     "g": "Découvre le papier, la toile, les panneaux et cartons, et quelle peinture convient à chacun.",
+     "p": [
+      "Le papier va à l'aquarelle et à la gouache ; un papier aquarelle épais gondole moins, même très mouillé.",
+      "La toile tendue, légère et souple, est aimée pour l'huile depuis la Renaissance, où elle a peu à peu remplacé le bois.",
+      "Les panneaux de bois et cartons sont rigides et lisses, parfaits pour le détail ; la plupart doivent être apprêtés."
+     ],
+     "q": "Quel support te tente le plus : papier, toile ou panneau de bois ?",
+     "c": "Rassemble trois supports chez toi, comme papier d'imprimante, carton et chute de bois, et sens leur texture."
+    },
+    "it": {
+     "t": "I supporti pittorici",
+     "g": "Conosci carta, tela, tavole e cartoni, e quale colore funziona meglio su ciascuno.",
+     "p": [
+      "La carta è per acquerello e gouache; la carta da acquerello pesante si imbarca meno anche se molto bagnata.",
+      "La tela tesa è leggera ed elastica, amata per l'olio dal Rinascimento, quando sostituì gradualmente la tavola di legno.",
+      "Tavole di legno e cartoni sono rigidi e lisci, ottimi per i dettagli; quasi sempre vanno preparati con un fondo."
+     ],
+     "q": "Quale supporto ti ispira di più: carta, tela o tavola di legno?",
+     "c": "Raccogli tre supporti di casa, come carta da stampante, cartone e un pezzo di legno, e senti la loro texture."
+    },
+    "pt": {
+     "t": "Suportes de pintura",
+     "g": "Conhece o papel, a tela, os painéis e cartões, e que tinta funciona melhor em cada um.",
+     "p": [
+      "O papel serve a aguarela e o guache; o papel de aguarela grosso enruga menos mesmo muito molhado.",
+      "A tela esticada é leve e elástica, adorada para o óleo desde o Renascimento, quando foi substituindo a madeira.",
+      "Painéis de madeira e cartões são rígidos e lisos, ótimos para detalhe; quase todos precisam de preparação."
+     ],
+     "q": "Que suporte te entusiasma mais: papel, tela ou painel de madeira?",
+     "c": "Junta três suportes de casa, como papel de impressora, cartão e um pedaço de madeira, e sente a textura."
+    },
+    "pt_BR": {
+     "t": "Superfícies de pintura",
+     "g": "Conheça papel, tela, painéis e placas, e qual tinta funciona melhor em cada um.",
+     "p": [
+      "O papel serve para aquarela e guache; papel de aquarela grosso enruga menos mesmo bem molhado.",
+      "A tela esticada é leve e elástica, queridinha do óleo desde o Renascimento, quando foi substituindo a madeira.",
+      "Painéis de madeira e placas são rígidos e lisos, ótimos para detalhes; quase todos precisam de preparação."
+     ],
+     "q": "Qual superfície te anima mais: papel, tela ou painel de madeira?",
+     "c": "Junte três superfícies de casa, como papel sulfite, papelão e um pedaço de madeira, e sinta a textura."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watercolour paper basics",
+     "g": "Understand paper weight, cotton content and the three classic surface textures.",
+     "p": [
+      "Weight is given in gsm or lb: 300 gsm (140 lb) is a sturdy favourite that handles washes without much buckling.",
+      "100% cotton paper absorbs evenly and forgives reworking; cellulose paper is cheaper and fine for practice.",
+      "Hot-pressed is smooth for detail, cold-pressed has a gentle tooth for all-round use, rough has strong texture for sparkle."
+     ],
+     "q": "Would you rather paint fine details or loose, textured landscapes?",
+     "c": "Look at any paper you own under a lamp at a low angle and describe its texture: smooth, toothy or rough?"
+    },
+    "de": {
+     "t": "Grundlagen Aquarellpapier",
+     "g": "Verstehe Papiergewicht, Baumwollanteil und die drei klassischen Oberflächen.",
+     "p": [
+      "Das Gewicht wird in g/m² angegeben: 300 g/m² ist ein robuster Favorit, der Lavierungen ohne starkes Wellen verträgt.",
+      "100 % Baumwolle saugt gleichmäßig und verzeiht Korrekturen; Zellulosepapier ist günstiger und gut zum Üben.",
+      "Satiniert ist glatt für Details, matt (cold-pressed) leicht körnig für alles, rau stark strukturiert für Glitzereffekte."
+     ],
+     "q": "Malst du lieber feine Details oder lockere, strukturierte Landschaften?",
+     "c": "Halte ein Papier schräg unter eine Lampe und beschreibe seine Oberfläche: glatt, körnig oder rau?"
+    },
+    "es": {
+     "t": "Papel de acuarela básico",
+     "g": "Entiende el gramaje, el contenido de algodón y las tres texturas clásicas de superficie.",
+     "p": [
+      "El gramaje se da en g/m²: 300 g/m² es un favorito resistente que aguanta aguadas sin ondularse mucho.",
+      "El papel 100 % algodón absorbe de forma pareja y perdona retoques; el de celulosa es más barato y sirve para practicar.",
+      "El satinado es liso para detalle, el grano fino tiene algo de diente para todo, el grano grueso da textura y destellos."
+     ],
+     "q": "¿Prefieres pintar detalles finos o paisajes sueltos y con textura?",
+     "c": "Mira un papel bajo una lámpara con luz rasante y describe su textura: lisa, con diente o rugosa."
+    },
+    "fr": {
+     "t": "Le papier aquarelle",
+     "g": "Comprends le grammage, la teneur en coton et les trois textures classiques.",
+     "p": [
+      "Le grammage s'exprime en g/m² : 300 g/m² est un favori solide qui supporte les lavis sans trop gondoler.",
+      "Le papier 100 % coton absorbe régulièrement et pardonne les reprises ; la cellulose coûte moins cher pour s'exercer.",
+      "Le satiné est lisse pour le détail, le grain fin polyvalent, le grain torchon très texturé pour des effets scintillants."
+     ],
+     "q": "Préfères-tu peindre des détails fins ou des paysages libres et texturés ?",
+     "c": "Regarde un papier sous une lampe en lumière rasante et décris sa texture : lisse, grenue ou rugueuse ?"
+    },
+    "it": {
+     "t": "Carta da acquerello",
+     "g": "Capisci grammatura, percentuale di cotone e le tre texture classiche.",
+     "p": [
+      "La grammatura si indica in g/m²: 300 g/m² è un classico robusto che regge le velature senza imbarcarsi troppo.",
+      "La carta 100% cotone assorbe in modo uniforme e perdona le correzioni; quella di cellulosa costa meno ed è utile per esercitarsi.",
+      "La pressata a caldo è liscia per i dettagli, la grana fine è versatile, la grana grossa dà texture e luccichii."
+     ],
+     "q": "Preferisci dipingere dettagli fini o paesaggi sciolti e materici?",
+     "c": "Guarda un foglio sotto una lampada con luce radente e descrivi la sua superficie: liscia, granulosa o ruvida?"
+    },
+    "pt": {
+     "t": "Papel de aguarela",
+     "g": "Percebe a gramagem, o teor de algodão e as três texturas clássicas.",
+     "p": [
+      "A gramagem indica-se em g/m²: 300 g/m² é um favorito resistente que aguenta aguadas sem enrugar muito.",
+      "Papel 100% algodão absorve de forma uniforme e perdoa retoques; o de celulose é mais barato e bom para praticar.",
+      "O acetinado é liso para detalhe, o grão fino serve para tudo, o grão grosso tem textura forte e dá brilhos."
+     ],
+     "q": "Preferes pintar detalhes finos ou paisagens soltas e com textura?",
+     "c": "Olha para um papel sob um candeeiro com luz rasante e descreve a textura: lisa, granulada ou rugosa?"
+    },
+    "pt_BR": {
+     "t": "Papel de aquarela",
+     "g": "Entenda gramatura, porcentagem de algodão e as três texturas clássicas.",
+     "p": [
+      "A gramatura vem em g/m²: 300 g/m² é um favorito resistente que aguenta aguadas sem enrugar muito.",
+      "Papel 100% algodão absorve por igual e perdoa retoques; o de celulose é mais barato e ótimo para treinar.",
+      "O satinado é liso para detalhes, o grão fino serve para tudo, o grão grosso tem textura forte e dá brilhos."
+     ],
+     "q": "Você prefere pintar detalhes finos ou paisagens soltas e texturizadas?",
+     "c": "Olhe um papel sob uma luminária com luz rasante e descreva a textura: lisa, granulada ou áspera?"
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Canvas and gesso",
+     "g": "Learn what gesso does, why surfaces are primed and how canvas differs from a panel.",
+     "p": [
+      "Primer seals the surface so paint sits on top instead of soaking in, and gives it a gentle tooth to grip.",
+      "Traditional gesso was chalk and animal glue on rigid panels; modern acrylic gesso is flexible and works on canvas too.",
+      "Canvas flexes and has a woven texture; a panel stays rigid and can be sanded smooth for very fine detail."
+     ],
+     "q": "Do you like the idea of visible canvas texture or a perfectly smooth surface?",
+     "c": "Touch a primed canvas or a piece of fabric and a smooth board, and note how a brush might move on each."
+    },
+    "de": {
+     "t": "Leinwand und Gesso",
+     "g": "Lerne, was Gesso bewirkt, warum Malgründe grundiert werden und wie Leinwand sich von einer Tafel unterscheidet.",
+     "p": [
+      "Die Grundierung versiegelt den Malgrund, damit Farbe obenauf bleibt statt einzusinken, und gibt ihm leichten Griff.",
+      "Traditionelles Gesso war Kreide mit Leim auf starren Tafeln; modernes Acryl-Gesso ist elastisch und eignet sich für Leinwand.",
+      "Leinwand federt und hat eine Webstruktur; eine Tafel bleibt starr und lässt sich für feinste Details glatt schleifen."
+     ],
+     "q": "Magst du sichtbare Leinwandstruktur oder eine ganz glatte Fläche lieber?",
+     "c": "Fühle eine grundierte Leinwand oder einen Stoff und eine glatte Platte und überlege, wie ein Pinsel darauf gleiten würde."
+    },
+    "es": {
+     "t": "Lienzo y gesso",
+     "g": "Aprende qué hace el gesso, por qué se imprima el soporte y en qué se diferencia el lienzo de la tabla.",
+     "p": [
+      "La imprimación sella el soporte para que la pintura quede encima y no se hunda, y le da algo de agarre.",
+      "El gesso tradicional era yeso o creta con cola animal sobre tabla; el gesso acrílico moderno es flexible y sirve para lienzo.",
+      "El lienzo se flexiona y tiene trama; la tabla es rígida y puede lijarse lisa para detalles muy finos."
+     ],
+     "q": "¿Te gusta más ver la textura del lienzo o una superficie perfectamente lisa?",
+     "c": "Toca un lienzo imprimado o una tela y una tabla lisa, y piensa cómo se movería un pincel en cada uno."
+    },
+    "fr": {
+     "t": "Toile et gesso",
+     "g": "Apprends à quoi sert le gesso, pourquoi on apprête un support et ce qui distingue la toile du panneau.",
+     "p": [
+      "L'apprêt scelle le support pour que la peinture reste en surface au lieu d'être bue, et lui donne un léger grain.",
+      "Le gesso traditionnel était craie et colle animale sur panneau rigide ; le gesso acrylique moderne est souple, idéal sur toile.",
+      "La toile fléchit et a une trame tissée ; le panneau reste rigide et se ponce très lisse pour le détail fin."
+     ],
+     "q": "Préfères-tu voir la texture de la toile ou une surface parfaitement lisse ?",
+     "c": "Touche une toile apprêtée ou un tissu et une planche lisse, et imagine comment le pinceau glisserait sur chacun."
+    },
+    "it": {
+     "t": "Tela e gesso",
+     "g": "Scopri a cosa serve il gesso, perché si prepara il supporto e come la tela differisce dalla tavola.",
+     "p": [
+      "La preparazione sigilla il supporto così il colore resta in superficie invece di assorbirsi, e gli dà un leggero grip.",
+      "Il gesso tradizionale era gesso e colla animale su tavola rigida; il gesso acrilico moderno è elastico e va bene sulla tela.",
+      "La tela flette e ha una trama; la tavola resta rigida e si può carteggiare liscissima per dettagli finissimi."
+     ],
+     "q": "Ti piace di più vedere la trama della tela o una superficie perfettamente liscia?",
+     "c": "Tocca una tela preparata o un tessuto e una tavoletta liscia, e immagina come scorrerebbe il pennello su ciascuno."
+    },
+    "pt": {
+     "t": "Tela e gesso",
+     "g": "Aprende o que faz o gesso, porque se prepara o suporte e como a tela difere do painel.",
+     "p": [
+      "A preparação sela o suporte para a tinta ficar à superfície em vez de ser absorvida, e dá-lhe alguma aderência.",
+      "O gesso tradicional era cré e cola animal sobre painel rígido; o gesso acrílico moderno é flexível e serve para tela.",
+      "A tela flete e tem trama; o painel mantém-se rígido e pode ser lixado bem liso para detalhes finos."
+     ],
+     "q": "Gostas mais de ver a textura da tela ou de uma superfície perfeitamente lisa?",
+     "c": "Toca numa tela preparada ou num tecido e numa tábua lisa, e imagina como o pincel deslizaria em cada um."
+    },
+    "pt_BR": {
+     "t": "Tela e gesso",
+     "g": "Aprenda o que o gesso faz, por que se prepara a superfície e como a tela difere do painel.",
+     "p": [
+      "A base sela a superfície para a tinta ficar por cima em vez de ser absorvida, e dá uma leve aderência.",
+      "O gesso tradicional era giz e cola animal sobre painel rígido; o gesso acrílico moderno é flexível e serve para tela.",
+      "A tela flexiona e tem trama; o painel fica rígido e pode ser lixado bem liso para detalhes finíssimos."
+     ],
+     "q": "Você prefere ver a textura da tela ou uma superfície perfeitamente lisa?",
+     "c": "Toque numa tela preparada ou num tecido e numa tábua lisa, e imagine como o pincel deslizaria em cada um."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "tennis",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Davis Cup",
+     "g": "Discover the men's national team competition founded in 1900.",
+     "p": [
+      "It began when American student Dwight Davis donated a silver trophy for a match between the USA and the British Isles.",
+      "Players represent their country instead of themselves, so team spirit and home crowds matter a lot.",
+      "Its big silver bowl is affectionately nicknamed the Salad Bowl."
+     ],
+     "q": "Would you feel more pressure playing for yourself or for your country?",
+     "c": "Find out which country won the very first Davis Cup tie in 1900."
+    },
+    "de": {
+     "t": "Der Davis Cup",
+     "g": "Entdecke den 1900 gegründeten Nationenwettbewerb der Herren.",
+     "p": [
+      "Er begann, als der US-Student Dwight Davis einen Silberpokal für ein Duell zwischen den USA und den Britischen Inseln stiftete.",
+      "Die Spieler vertreten ihr Land statt sich selbst, daher zählen Teamgeist und Heimpublikum sehr.",
+      "Die große Silberschale trägt liebevoll den Spitznamen Salatschüssel."
+     ],
+     "q": "Würdest du mehr Druck spüren, wenn du für dich oder für dein Land spielst?",
+     "c": "Finde heraus, welches Land 1900 das allererste Davis-Cup-Duell gewann."
+    },
+    "es": {
+     "t": "La Copa Davis",
+     "g": "Descubre la competición masculina por naciones fundada en 1900.",
+     "p": [
+      "Empezó cuando el estudiante estadounidense Dwight Davis donó un trofeo de plata para un duelo entre EE. UU. y las Islas Británicas.",
+      "Los jugadores representan a su país y no a sí mismos, así que el espíritu de equipo y el público local pesan mucho.",
+      "Su gran ensaladera de plata es conocida cariñosamente como la Ensaladera."
+     ],
+     "q": "¿Sentirías más presión jugando para ti o para tu país?",
+     "c": "Averigua qué país ganó la primerísima eliminatoria de Copa Davis en 1900."
+    },
+    "fr": {
+     "t": "La Coupe Davis",
+     "g": "Découvre la compétition masculine par équipes nationales fondée en 1900.",
+     "p": [
+      "Elle est née quand l'étudiant américain Dwight Davis a offert un trophée pour un duel États-Unis contre îles Britanniques.",
+      "Les joueurs représentent leur pays et non eux-mêmes : esprit d'équipe et public à domicile comptent énormément.",
+      "Son grand trophée en argent est surnommé affectueusement le Saladier d'argent."
+     ],
+     "q": "Ressentirais-tu plus de pression en jouant pour toi ou pour ton pays ?",
+     "c": "Cherche quel pays a remporté la toute première rencontre de Coupe Davis en 1900."
+    },
+    "it": {
+     "t": "La Coppa Davis",
+     "g": "Scopri la competizione maschile a squadre nazionali nata nel 1900.",
+     "p": [
+      "Nacque quando lo studente americano Dwight Davis donò un trofeo d'argento per una sfida tra Stati Uniti e Isole Britanniche.",
+      "I giocatori rappresentano il loro paese e non sé stessi, quindi spirito di squadra e pubblico di casa contano molto.",
+      "La grande coppa d'argento è soprannominata affettuosamente l'Insalatiera."
+     ],
+     "q": "Sentiresti più pressione giocando per te stesso o per il tuo paese?",
+     "c": "Scopri quale paese vinse la primissima sfida di Coppa Davis nel 1900."
+    },
+    "pt": {
+     "t": "A Taça Davis",
+     "g": "Descobre a competição masculina por seleções criada em 1900.",
+     "p": [
+      "Começou quando o estudante norte-americano Dwight Davis ofereceu um troféu de prata para um duelo entre os EUA e as Ilhas Britânicas.",
+      "Os jogadores representam o seu país e não a si próprios, por isso o espírito de equipa e o público da casa contam muito.",
+      "A grande taça de prata tem a alcunha carinhosa de Saladeira."
+     ],
+     "q": "Sentirias mais pressão a jogar por ti ou pelo teu país?",
+     "c": "Descobre que país ganhou a primeiríssima eliminatória da Taça Davis em 1900."
+    },
+    "pt_BR": {
+     "t": "A Copa Davis",
+     "g": "Descubra a competição masculina entre seleções criada em 1900.",
+     "p": [
+      "Começou quando o estudante americano Dwight Davis doou um troféu de prata para um duelo entre os EUA e as Ilhas Britânicas.",
+      "Os jogadores representam o país e não a si mesmos, então espírito de equipe e torcida da casa contam muito.",
+      "A grande taça de prata tem o apelido carinhoso de Saladeira."
+     ],
+     "q": "Você sentiria mais pressão jogando por você ou pelo seu país?",
+     "c": "Descubra qual país venceu o primeiríssimo confronto da Copa Davis em 1900."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Billie Jean King Cup",
+     "g": "Meet the women's national team competition, formerly the Fed Cup.",
+     "p": [
+      "It was founded in 1963 as the Federation Cup, and the USA won the first edition.",
+      "It was renamed the Billie Jean King Cup in 2020, honouring the champion and pioneer of equality in sport.",
+      "Like the Davis Cup, it mixes singles and doubles, so a strong doubles pair can decide everything."
+     ],
+     "q": "Why do you think the competition was named after Billie Jean King?",
+     "c": "Find one fact about Billie Jean King's career that you did not know and share it with someone."
+    },
+    "de": {
+     "t": "Der Billie Jean King Cup",
+     "g": "Lerne den Nationenwettbewerb der Damen kennen, früher Fed Cup genannt.",
+     "p": [
+      "Er wurde 1963 als Federation Cup gegründet, die erste Ausgabe gewannen die USA.",
+      "2020 wurde er in Billie Jean King Cup umbenannt, zu Ehren der Championne und Vorkämpferin für Gleichberechtigung.",
+      "Wie im Davis Cup gibt es Einzel und Doppel, ein starkes Doppel kann also alles entscheiden."
+     ],
+     "q": "Warum wurde der Wettbewerb wohl nach Billie Jean King benannt?",
+     "c": "Finde eine Tatsache über Billie Jean Kings Karriere, die du nicht kanntest, und erzähl sie jemandem."
+    },
+    "es": {
+     "t": "La Billie Jean King Cup",
+     "g": "Conoce la competición femenina por naciones, antes llamada Fed Cup.",
+     "p": [
+      "Se fundó en 1963 como Federation Cup, y Estados Unidos ganó la primera edición.",
+      "En 2020 pasó a llamarse Billie Jean King Cup, en honor a la campeona y pionera de la igualdad en el deporte.",
+      "Como la Davis, combina individuales y dobles, así que una buena pareja de dobles puede decidirlo todo."
+     ],
+     "q": "¿Por qué crees que la competición lleva el nombre de Billie Jean King?",
+     "c": "Busca un dato de la carrera de Billie Jean King que no conocieras y compártelo con alguien."
+    },
+    "fr": {
+     "t": "La Billie Jean King Cup",
+     "g": "Découvre la compétition féminine par équipes nationales, autrefois la Fed Cup.",
+     "p": [
+      "Elle a été fondée en 1963 sous le nom de Federation Cup, et les États-Unis ont gagné la première édition.",
+      "Elle a été rebaptisée Billie Jean King Cup en 2020, en hommage à la championne pionnière de l'égalité dans le sport.",
+      "Comme la Coupe Davis, elle mêle simples et double : une bonne paire de double peut tout décider."
+     ],
+     "q": "Pourquoi, à ton avis, la compétition porte-t-elle le nom de Billie Jean King ?",
+     "c": "Trouve un fait sur la carrière de Billie Jean King que tu ignorais et partage-le avec quelqu'un."
+    },
+    "it": {
+     "t": "La Billie Jean King Cup",
+     "g": "Conosci la competizione femminile a squadre nazionali, un tempo Fed Cup.",
+     "p": [
+      "Fu fondata nel 1963 come Federation Cup, e gli Stati Uniti vinsero la prima edizione.",
+      "Nel 2020 è stata rinominata Billie Jean King Cup, in onore della campionessa pioniera della parità nello sport.",
+      "Come la Davis, unisce singolari e doppio, quindi una buona coppia di doppio può decidere tutto."
+     ],
+     "q": "Perché secondo te la competizione porta il nome di Billie Jean King?",
+     "c": "Trova un fatto sulla carriera di Billie Jean King che non conoscevi e condividilo con qualcuno."
+    },
+    "pt": {
+     "t": "A Billie Jean King Cup",
+     "g": "Conhece a competição feminina por seleções, antes chamada Fed Cup.",
+     "p": [
+      "Foi criada em 1963 como Federation Cup, e os EUA ganharam a primeira edição.",
+      "Em 2020 passou a chamar-se Billie Jean King Cup, em honra da campeã e pioneira da igualdade no desporto.",
+      "Tal como a Taça Davis, junta singulares e pares, por isso uma boa dupla pode decidir tudo."
+     ],
+     "q": "Porque achas que a competição tem o nome de Billie Jean King?",
+     "c": "Procura um facto da carreira de Billie Jean King que não conhecias e partilha-o com alguém."
+    },
+    "pt_BR": {
+     "t": "A Billie Jean King Cup",
+     "g": "Conheça a competição feminina entre seleções, antes chamada Fed Cup.",
+     "p": [
+      "Foi criada em 1963 como Federation Cup, e os EUA venceram a primeira edição.",
+      "Em 2020 passou a se chamar Billie Jean King Cup, em homenagem à campeã e pioneira da igualdade no esporte.",
+      "Como a Copa Davis, mistura simples e duplas, então uma boa dupla pode decidir tudo."
+     ],
+     "q": "Por que você acha que a competição leva o nome de Billie Jean King?",
+     "c": "Procure um fato da carreira de Billie Jean King que você não conhecia e compartilhe com alguém."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tennis at the Olympics",
+     "g": "Learn how tennis returned as a full medal sport at Seoul 1988.",
+     "p": [
+      "Tennis was part of the first modern Games in 1896, then disappeared after 1924.",
+      "After demonstration events in 1968 and 1984, it came back with full medals at Seoul 1988.",
+      "Steffi Graf won gold that year, and Andy Murray, now retired, became the first to win two Olympic singles golds."
+     ],
+     "q": "Would an Olympic gold or a Grand Slam title mean more to you?",
+     "c": "Find out which events are played at the Olympic tennis tournament besides singles."
+    },
+    "de": {
+     "t": "Tennis bei Olympia",
+     "g": "Erfahre, wie Tennis 1988 in Seoul als volle Medaillensportart zurückkehrte.",
+     "p": [
+      "Tennis war 1896 bei den ersten modernen Spielen dabei und verschwand nach 1924.",
+      "Nach Demonstrationswettbewerben 1968 und 1984 kehrte es 1988 in Seoul mit vollen Medaillen zurück.",
+      "Steffi Graf gewann damals Gold, und Andy Murray, heute im Ruhestand, holte als Erster zweimal Einzelgold."
+     ],
+     "q": "Was würde dir mehr bedeuten: Olympiagold oder ein Grand-Slam-Titel?",
+     "c": "Finde heraus, welche Wettbewerbe außer dem Einzel beim olympischen Tennisturnier gespielt werden."
+    },
+    "es": {
+     "t": "El tenis en los Juegos Olímpicos",
+     "g": "Descubre cómo el tenis volvió como deporte con medallas en Seúl 1988.",
+     "p": [
+      "El tenis estuvo en los primeros Juegos modernos de 1896 y desapareció después de 1924.",
+      "Tras ser deporte de exhibición en 1968 y 1984, regresó con medallas en Seúl 1988.",
+      "Steffi Graf ganó el oro ese año, y Andy Murray, ya retirado, fue el primero en ganar dos oros olímpicos individuales."
+     ],
+     "q": "¿Qué significaría más para ti, un oro olímpico o un Grand Slam?",
+     "c": "Averigua qué otras pruebas, además del individual, se juegan en el torneo olímpico de tenis."
+    },
+    "fr": {
+     "t": "Le tennis aux Jeux olympiques",
+     "g": "Découvre comment le tennis est revenu comme sport à médailles à Séoul en 1988.",
+     "p": [
+      "Le tennis faisait partie des premiers Jeux modernes en 1896, puis a disparu après 1924.",
+      "Après des démonstrations en 1968 et 1984, il est revenu avec de vraies médailles à Séoul en 1988.",
+      "Steffi Graf a gagné l'or cette année-là, et Andy Murray, aujourd'hui retraité, a été le premier double champion olympique en simple."
+     ],
+     "q": "Une médaille d'or olympique ou un titre du Grand Chelem : qu'est-ce qui compterait le plus pour toi ?",
+     "c": "Cherche quelles épreuves, en plus du simple, se jouent au tournoi olympique de tennis."
+    },
+    "it": {
+     "t": "Il tennis alle Olimpiadi",
+     "g": "Scopri come il tennis tornò sport con medaglie a Seul 1988.",
+     "p": [
+      "Il tennis era nei primi Giochi moderni del 1896, poi sparì dopo il 1924.",
+      "Dopo le esibizioni del 1968 e del 1984, tornò con medaglie vere a Seul 1988.",
+      "Steffi Graf vinse l'oro quell'anno, e Andy Murray, ora ritirato, fu il primo a vincere due ori olimpici in singolare."
+     ],
+     "q": "Conterebbe di più per te un oro olimpico o un titolo dello Slam?",
+     "c": "Scopri quali gare, oltre al singolare, si giocano nel torneo olimpico di tennis."
+    },
+    "pt": {
+     "t": "O ténis nos Jogos Olímpicos",
+     "g": "Descobre como o ténis voltou como modalidade com medalhas em Seul 1988.",
+     "p": [
+      "O ténis esteve nos primeiros Jogos modernos, em 1896, e desapareceu depois de 1924.",
+      "Depois de ser demonstração em 1968 e 1984, voltou com medalhas em Seul 1988.",
+      "Steffi Graf ganhou o ouro nesse ano, e Andy Murray, já retirado, foi o primeiro a ganhar dois ouros olímpicos em singulares."
+     ],
+     "q": "O que significaria mais para ti: um ouro olímpico ou um Grand Slam?",
+     "c": "Descobre que outras provas, além de singulares, se jogam no torneio olímpico de ténis."
+    },
+    "pt_BR": {
+     "t": "O tênis nas Olimpíadas",
+     "g": "Descubra como o tênis voltou a valer medalha em Seul 1988.",
+     "p": [
+      "O tênis fez parte dos primeiros Jogos modernos, em 1896, e sumiu depois de 1924.",
+      "Depois de ser esporte de demonstração em 1968 e 1984, voltou com medalhas em Seul 1988.",
+      "Steffi Graf ganhou o ouro naquele ano, e Andy Murray, já aposentado, foi o primeiro a ganhar dois ouros olímpicos nas simples."
+     ],
+     "q": "O que significaria mais para você: um ouro olímpico ou um Grand Slam?",
+     "c": "Descubra que outras provas, além das simples, são disputadas no torneio olímpico de tênis."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wheelchair tennis",
+     "g": "Discover wheelchair tennis, its two-bounce rule and its great champions.",
+     "p": [
+      "The ball may bounce twice, and the second bounce may even land outside the court lines.",
+      "The sport was developed in 1976 by Brad Parks and has been a full Paralympic sport since Barcelona 1992.",
+      "Esther Vergeer, now retired, won 470 matches in a row, one of the greatest streaks in all of sport."
+     ],
+     "q": "What skills do you think are hardest to master in wheelchair tennis?",
+     "c": "Watch a short wheelchair tennis rally and notice how players combine pushing and hitting."
+    },
+    "de": {
+     "t": "Rollstuhltennis",
+     "g": "Entdecke Rollstuhltennis, seine Zwei-Aufsprung-Regel und seine großen Champions.",
+     "p": [
+      "Der Ball darf zweimal aufspringen, der zweite Aufsprung darf sogar außerhalb des Feldes sein.",
+      "Der Sport wurde 1976 von Brad Parks entwickelt und ist seit Barcelona 1992 volle paralympische Sportart.",
+      "Esther Vergeer, heute im Ruhestand, gewann 470 Matches in Folge, eine der größten Serien im ganzen Sport."
+     ],
+     "q": "Welche Fähigkeiten sind im Rollstuhltennis wohl am schwersten zu meistern?",
+     "c": "Schau einen kurzen Ballwechsel im Rollstuhltennis an und achte darauf, wie Antreiben und Schlagen zusammenspielen."
+    },
+    "es": {
+     "t": "Tenis en silla de ruedas",
+     "g": "Descubre el tenis en silla de ruedas, su regla de los dos botes y sus grandes campeones.",
+     "p": [
+      "La pelota puede botar dos veces, y el segundo bote puede caer incluso fuera de la pista.",
+      "Lo impulsó Brad Parks en 1976 y es deporte paralímpico con medallas desde Barcelona 1992.",
+      "Esther Vergeer, ya retirada, ganó 470 partidos seguidos, una de las mayores rachas de todo el deporte."
+     ],
+     "q": "¿Qué habilidades crees que son más difíciles en el tenis en silla de ruedas?",
+     "c": "Mira un peloteo corto de tenis en silla y fíjate en cómo combinan empujar la silla y golpear."
+    },
+    "fr": {
+     "t": "Le tennis fauteuil",
+     "g": "Découvre le tennis fauteuil, sa règle des deux rebonds et ses grands champions.",
+     "p": [
+      "La balle peut rebondir deux fois, et le second rebond peut même avoir lieu hors des lignes.",
+      "Le sport a été développé en 1976 par Brad Parks et il est paralympique à part entière depuis Barcelone 1992.",
+      "Esther Vergeer, aujourd'hui retraitée, a gagné 470 matchs d'affilée, l'une des plus grandes séries du sport."
+     ],
+     "q": "Quelles compétences sont, selon toi, les plus difficiles à maîtriser en tennis fauteuil ?",
+     "c": "Regarde un court échange de tennis fauteuil et observe comment les joueurs combinent poussée et frappe."
+    },
+    "it": {
+     "t": "Il tennis in carrozzina",
+     "g": "Scopri il tennis in carrozzina, la regola dei due rimbalzi e i suoi grandi campioni.",
+     "p": [
+      "La palla può rimbalzare due volte, e il secondo rimbalzo può essere anche fuori dalle righe.",
+      "Lo sport fu sviluppato nel 1976 da Brad Parks ed è disciplina paralimpica a pieno titolo da Barcellona 1992.",
+      "Esther Vergeer, ora ritirata, vinse 470 partite di fila, una delle più grandi serie di tutto lo sport."
+     ],
+     "q": "Quali abilità pensi siano le più difficili da padroneggiare nel tennis in carrozzina?",
+     "c": "Guarda un breve scambio di tennis in carrozzina e osserva come si combinano spinta e colpo."
+    },
+    "pt": {
+     "t": "Ténis em cadeira de rodas",
+     "g": "Descobre o ténis em cadeira de rodas, a regra dos dois ressaltos e os seus grandes campeões.",
+     "p": [
+      "A bola pode ressaltar duas vezes, e o segundo ressalto pode até ser fora das linhas.",
+      "A modalidade foi desenvolvida em 1976 por Brad Parks e é paralímpica de pleno direito desde Barcelona 1992.",
+      "Esther Vergeer, já retirada, ganhou 470 jogos seguidos, uma das maiores séries de todo o desporto."
+     ],
+     "q": "Que capacidades achas mais difíceis de dominar no ténis em cadeira de rodas?",
+     "c": "Vê uma troca curta de ténis em cadeira de rodas e repara como os jogadores combinam empurrar e bater."
+    },
+    "pt_BR": {
+     "t": "Tênis em cadeira de rodas",
+     "g": "Descubra o tênis em cadeira de rodas, a regra dos dois quiques e seus grandes campeões.",
+     "p": [
+      "A bola pode quicar duas vezes, e o segundo quique pode até cair fora das linhas.",
+      "O esporte foi desenvolvido em 1976 por Brad Parks e é paralímpico com medalhas desde Barcelona 1992.",
+      "Esther Vergeer, já aposentada, venceu 470 partidas seguidas, uma das maiores sequências de todo o esporte."
+     ],
+     "q": "Quais habilidades você acha mais difíceis de dominar no tênis em cadeira de rodas?",
+     "c": "Assista a um rali curto de tênis em cadeira de rodas e repare como os jogadores combinam empurrar e bater."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Umpires and line judges",
+     "g": "Meet the officials: the chair umpire, line calls and electronic line calling.",
+     "p": [
+      "The chair umpire sits high beside the net, announces the score and enforces the rules.",
+      "Line judges traditionally call balls out on their lines, and the umpire can overrule a clear mistake.",
+      "Many events now use fully electronic line calling, with a recorded voice shouting out instantly."
+     ],
+     "q": "Would you enjoy being a chair umpire for a big final? Why or why not?",
+     "c": "Watch a point with an umpire and listen for the exact words they use to announce the score."
+    },
+    "de": {
+     "t": "Schiedsrichter und Linienrichter",
+     "g": "Lerne die Offiziellen kennen: Stuhlschiedsrichter, Linienentscheidungen und elektronische Linienüberwachung.",
+     "p": [
+      "Der Stuhlschiedsrichter sitzt erhöht am Netz, sagt den Stand an und setzt die Regeln durch.",
+      "Linienrichter rufen traditionell Bälle auf ihren Linien aus, der Schiedsrichter kann klare Fehler korrigieren.",
+      "Viele Turniere nutzen heute vollelektronische Linienüberwachung, eine aufgezeichnete Stimme ruft sofort aus."
+     ],
+     "q": "Würdest du gern ein großes Finale als Stuhlschiedsrichter leiten? Warum oder warum nicht?",
+     "c": "Schau einen Punkt mit Schiedsrichter und achte auf die genauen Worte, mit denen er den Stand ansagt."
+    },
+    "es": {
+     "t": "Jueces de silla y de línea",
+     "g": "Conoce a los oficiales: el juez de silla, las líneas y el arbitraje electrónico.",
+     "p": [
+      "El juez de silla se sienta en alto junto a la red, canta el marcador y hace cumplir las reglas.",
+      "Los jueces de línea cantan tradicionalmente las bolas fuera en su línea, y el juez de silla puede corregir un error claro.",
+      "Muchos torneos usan ya el cantado electrónico de líneas, con una voz grabada que canta al instante."
+     ],
+     "q": "¿Te gustaría ser juez de silla en una gran final? ¿Por qué?",
+     "c": "Mira un punto con juez de silla y escucha las palabras exactas con las que canta el marcador."
+    },
+    "fr": {
+     "t": "Arbitres et juges de ligne",
+     "g": "Rencontre les officiels : l'arbitre de chaise, les juges de ligne et l'arbitrage électronique.",
+     "p": [
+      "L'arbitre de chaise est assis en hauteur près du filet, annonce le score et fait respecter les règles.",
+      "Les juges de ligne annoncent traditionnellement les fautes sur leur ligne, et l'arbitre peut corriger une erreur évidente.",
+      "Beaucoup de tournois utilisent désormais un système électronique, avec une voix enregistrée qui annonce aussitôt."
+     ],
+     "q": "Aimerais-tu arbitrer une grande finale ? Pourquoi ?",
+     "c": "Regarde un point avec arbitre et écoute les mots exacts utilisés pour annoncer le score."
+    },
+    "it": {
+     "t": "Arbitri e giudici di linea",
+     "g": "Conosci gli ufficiali: l'arbitro di sedia, i giudici di linea e la chiamata elettronica.",
+     "p": [
+      "L'arbitro di sedia siede in alto accanto alla rete, annuncia il punteggio e fa rispettare le regole.",
+      "I giudici di linea chiamano tradizionalmente le palle fuori sulle loro righe, e l'arbitro può correggere un errore evidente.",
+      "Molti tornei usano ormai la chiamata elettronica delle righe, con una voce registrata che chiama subito."
+     ],
+     "q": "Ti piacerebbe arbitrare una grande finale? Perché sì o perché no?",
+     "c": "Guarda un punto con l'arbitro e ascolta le parole esatte che usa per annunciare il punteggio."
+    },
+    "pt": {
+     "t": "Árbitros e juízes de linha",
+     "g": "Conhece os oficiais: o árbitro de cadeira, os juízes de linha e a arbitragem eletrónica.",
+     "p": [
+      "O árbitro de cadeira senta-se no alto junto à rede, anuncia o resultado e faz cumprir as regras.",
+      "Os juízes de linha anunciam tradicionalmente as bolas fora na sua linha, e o árbitro pode corrigir um erro claro.",
+      "Muitos torneios usam agora a marcação eletrónica das linhas, com uma voz gravada que anuncia na hora."
+     ],
+     "q": "Gostavas de ser árbitro de cadeira numa grande final? Porquê?",
+     "c": "Vê um ponto com árbitro e ouve as palavras exatas que usa para anunciar o resultado."
+    },
+    "pt_BR": {
+     "t": "Árbitros e juízes de linha",
+     "g": "Conheça os oficiais: o árbitro de cadeira, os juízes de linha e a marcação eletrônica.",
+     "p": [
+      "O árbitro de cadeira fica no alto ao lado da rede, anuncia o placar e faz cumprir as regras.",
+      "Os juízes de linha tradicionalmente marcam as bolas fora na sua linha, e o árbitro pode corrigir um erro claro.",
+      "Muitos torneios já usam marcação eletrônica das linhas, com uma voz gravada que anuncia na hora."
+     ],
+     "q": "Você gostaria de ser árbitro de cadeira numa grande final? Por quê?",
+     "c": "Assista a um ponto com árbitro e ouça as palavras exatas que ele usa para anunciar o placar."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hawk-Eye and challenges",
+     "g": "See how ball-tracking technology settles close calls.",
+     "p": [
+      "Several high-speed cameras track the ball and rebuild its path in 3D to show exactly where it landed.",
+      "At top events it arrived in 2006, letting players challenge a call, usually three wrong challenges per set plus one in a tiebreak.",
+      "The replay on the big screen, with the crowd clapping in rhythm, became one of the fun rituals of modern tennis."
+     ],
+     "q": "Do you think technology makes tennis fairer, or does it remove some human charm?",
+     "c": "Next time you watch a match, count how many challenges each player uses."
+    },
+    "de": {
+     "t": "Hawk-Eye und Challenges",
+     "g": "Sieh, wie Ballverfolgung knappe Entscheidungen klärt.",
+     "p": [
+      "Mehrere Hochgeschwindigkeitskameras verfolgen den Ball und rekonstruieren seine Bahn in 3D, um den Aufsprung zu zeigen.",
+      "Bei Topturnieren kam es 2006; Spieler dürfen Entscheidungen anfechten, meist drei falsche Challenges pro Satz plus eine im Tiebreak.",
+      "Die Wiederholung auf der Leinwand mit rhythmisch klatschendem Publikum wurde zu einem lustigen Ritual des modernen Tennis."
+     ],
+     "q": "Macht Technik Tennis fairer oder nimmt sie ihm etwas menschlichen Charme?",
+     "c": "Zähl beim nächsten Match, wie viele Challenges jeder Spieler nutzt."
+    },
+    "es": {
+     "t": "Ojo de halcón y challenges",
+     "g": "Descubre cómo la tecnología de seguimiento resuelve las bolas dudosas.",
+     "p": [
+      "Varias cámaras de alta velocidad siguen la pelota y reconstruyen su trayectoria en 3D para mostrar dónde botó.",
+      "Llegó a los grandes torneos en 2006: los jugadores pueden pedir revisión, normalmente tres fallidas por set y una más en el tie-break.",
+      "La repetición en la pantalla gigante, con el público aplaudiendo a ritmo, se volvió un divertido ritual del tenis moderno."
+     ],
+     "q": "¿Crees que la tecnología hace el tenis más justo o le quita encanto humano?",
+     "c": "La próxima vez que veas un partido, cuenta cuántos challenges usa cada jugador."
+    },
+    "fr": {
+     "t": "Hawk-Eye et challenges",
+     "g": "Vois comment la technologie de suivi de balle tranche les balles litigieuses.",
+     "p": [
+      "Plusieurs caméras rapides suivent la balle et reconstruisent sa trajectoire en 3D pour montrer son point d'impact.",
+      "Arrivé sur les grands tournois en 2006, il permet de contester, en général trois challenges ratés par set plus un au tie-break.",
+      "Le replay sur écran géant, avec le public qui tape des mains en rythme, est devenu un rituel amusant du tennis moderne."
+     ],
+     "q": "Penses-tu que la technologie rend le tennis plus juste, ou qu'elle lui retire du charme humain ?",
+     "c": "La prochaine fois que tu regardes un match, compte les challenges utilisés par chaque joueur."
+    },
+    "it": {
+     "t": "Occhio di falco e challenge",
+     "g": "Scopri come la tecnologia di tracciamento risolve le chiamate dubbie.",
+     "p": [
+      "Diverse telecamere ad alta velocità seguono la palla e ricostruiscono la traiettoria in 3D per mostrare dove è rimbalzata.",
+      "Arrivato nei grandi tornei nel 2006, permette di chiedere la verifica, di solito tre challenge sbagliati per set più uno al tie-break.",
+      "Il replay sul maxischermo, con il pubblico che batte le mani a ritmo, è diventato un rito divertente del tennis moderno."
+     ],
+     "q": "Pensi che la tecnologia renda il tennis più giusto o che gli tolga un po' di fascino umano?",
+     "c": "La prossima volta che guardi una partita, conta quanti challenge usa ogni giocatore."
+    },
+    "pt": {
+     "t": "Hawk-Eye e challenges",
+     "g": "Vê como a tecnologia de seguimento da bola resolve as decisões apertadas.",
+     "p": [
+      "Várias câmaras de alta velocidade seguem a bola e reconstroem a trajetória em 3D para mostrar onde ela caiu.",
+      "Chegou aos grandes torneios em 2006: os jogadores podem contestar, normalmente três challenges errados por set mais um no tie-break.",
+      "A repetição no ecrã gigante, com o público a bater palmas em ritmo, tornou-se um ritual divertido do ténis moderno."
+     ],
+     "q": "Achas que a tecnologia torna o ténis mais justo ou tira-lhe algum encanto humano?",
+     "c": "Da próxima vez que vires uma partida, conta quantos challenges usa cada jogador."
+    },
+    "pt_BR": {
+     "t": "Hawk-Eye e desafios",
+     "g": "Veja como a tecnologia de rastreamento resolve as bolas duvidosas.",
+     "p": [
+      "Várias câmeras de alta velocidade seguem a bola e reconstroem a trajetória em 3D para mostrar onde ela caiu.",
+      "Chegou aos grandes torneios em 2006: os jogadores podem desafiar, em geral três desafios errados por set mais um no tie-break.",
+      "O replay no telão, com a torcida batendo palmas no ritmo, virou um ritual divertido do tênis moderno."
+     ],
+     "q": "Você acha que a tecnologia deixa o tênis mais justo ou tira um pouco do charme humano?",
+     "c": "Da próxima vez que assistir a uma partida, conte quantos desafios cada jogador usa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Topspin explained",
+     "g": "Understand topspin: brushing up the back of the ball to make it dip and kick up.",
+     "p": [
+      "Swinging from low to high brushes the strings up the back of the ball, making it spin forward.",
+      "Forward spin pulls the ball down sooner, so you can hit hard and high over the net and still land in.",
+      "After the bounce, topspin jumps up and forward, pushing your opponent back."
+     ],
+     "q": "Have you noticed balls that seem to dive down suddenly? That is topspin at work.",
+     "c": "Shadow 15 forehands with a low-to-high swing, imagining you are brushing up a window."
+    },
+    "de": {
+     "t": "Topspin erklärt",
+     "g": "Verstehe Topspin: Die Saiten bürsten an der Ballrückseite hoch, damit er abtaucht und hoch abspringt.",
+     "p": [
+      "Ein Schwung von unten nach oben bürstet die Saiten über die Rückseite des Balls, er dreht sich nach vorn.",
+      "Der Vorwärtsdrall zieht den Ball früher nach unten, du kannst hart und hoch übers Netz spielen und triffst trotzdem.",
+      "Nach dem Aufsprung schnellt Topspin hoch und nach vorn und drängt den Gegner zurück."
+     ],
+     "q": "Ist dir schon aufgefallen, dass manche Bälle plötzlich abtauchen? Das ist Topspin.",
+     "c": "Mach 15 Schattenvorhände von unten nach oben, als würdest du ein Fenster hochwischen."
+    },
+    "es": {
+     "t": "El liftado explicado",
+     "g": "Entiende el liftado: cepillar la parte trasera de la pelota hacia arriba para que caiga y salte.",
+     "p": [
+      "Golpear de abajo arriba hace que las cuerdas cepillen la pelota por detrás, haciéndola girar hacia delante.",
+      "Ese giro hace que la pelota baje antes, así que puedes pegar fuerte y alto sobre la red y que entre.",
+      "Tras el bote, el liftado salta alto y hacia delante, echando atrás al rival."
+     ],
+     "q": "¿Has visto pelotas que de repente caen en picado? Eso es el liftado.",
+     "c": "Haz 15 derechas en sombra de abajo arriba, como si limpiaras una ventana hacia arriba."
+    },
+    "fr": {
+     "t": "Le lift expliqué",
+     "g": "Comprends le lift : brosser l'arrière de la balle vers le haut pour qu'elle plonge et rebondisse haut.",
+     "p": [
+      "Un geste de bas en haut fait brosser le cordage sur l'arrière de la balle, qui tourne vers l'avant.",
+      "Cette rotation fait redescendre la balle plus tôt : tu peux frapper fort et haut au-dessus du filet et rester dans le court.",
+      "Après le rebond, la balle liftée saute haut et vers l'avant, repoussant l'adversaire."
+     ],
+     "q": "As-tu déjà vu des balles plonger soudainement ? C'est le lift en action.",
+     "c": "Fais 15 coups droits à vide de bas en haut, comme si tu essuyais une vitre vers le haut."
+    },
+    "it": {
+     "t": "Il topspin spiegato",
+     "g": "Capisci il topspin: spazzolare il retro della palla verso l'alto perché cada e rimbalzi alta.",
+     "p": [
+      "Colpire dal basso verso l'alto fa spazzolare le corde sul retro della palla, che ruota in avanti.",
+      "Questa rotazione fa scendere prima la palla, così puoi colpire forte e alto sopra la rete restando in campo.",
+      "Dopo il rimbalzo il topspin schizza in alto e in avanti, spingendo indietro l'avversario."
+     ],
+     "q": "Hai notato palle che sembrano tuffarsi all'improvviso? È il topspin all'opera.",
+     "c": "Fai 15 dritti a vuoto dal basso verso l'alto, come se pulissi un vetro verso l'alto."
+    },
+    "pt": {
+     "t": "O topspin explicado",
+     "g": "Percebe o topspin: escovar a parte de trás da bola para cima para que ela mergulhe e salte.",
+     "p": [
+      "Bater de baixo para cima faz as cordas escovarem a parte de trás da bola, que roda para a frente.",
+      "Essa rotação faz a bola descer mais cedo, por isso podes bater forte e alto por cima da rede e acertar no campo.",
+      "Depois do ressalto, o topspin salta para cima e para a frente, empurrando o adversário para trás."
+     ],
+     "q": "Já reparaste em bolas que parecem mergulhar de repente? É o topspin a funcionar.",
+     "c": "Faz 15 direitas no ar de baixo para cima, como se limpasses uma janela para cima."
+    },
+    "pt_BR": {
+     "t": "O topspin explicado",
+     "g": "Entenda o topspin: escovar a parte de trás da bola para cima para que ela mergulhe e salte.",
+     "p": [
+      "Bater de baixo para cima faz as cordas escovarem a parte de trás da bola, que gira para a frente.",
+      "Esse giro faz a bola descer mais cedo, então você pode bater forte e alto sobre a rede e ainda acertar a quadra.",
+      "Depois do quique, o topspin salta para cima e para a frente, empurrando o adversário para trás."
+     ],
+     "q": "Você já reparou em bolas que parecem mergulhar de repente? É o topspin trabalhando.",
+     "c": "Faça 15 forehands no ar de baixo para cima, como se limpasse uma janela para cima."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slice explained",
+     "g": "Learn the slice: hitting under the ball for a low, skidding backspin shot.",
+     "p": [
+      "Swing from high to low with an open racket face, brushing under the ball so it spins backward.",
+      "Backspin makes the ball float, then stay low and skid after the bounce, which is awkward to attack.",
+      "The slice is great for defending, changing pace and approaching the net, often with the continental grip."
+     ],
+     "q": "Do you prefer the idea of hitting with heavy spin or with sneaky slice?",
+     "c": "Shadow 15 backhand slices, starting high and finishing low and forward, like slicing bread."
+    },
+    "de": {
+     "t": "Slice erklärt",
+     "g": "Lerne den Slice: unter den Ball schlagen für einen flachen, rutschenden Rückwärtsdrall.",
+     "p": [
+      "Schwinge von oben nach unten mit offener Schlagfläche und bürste unter den Ball, damit er rückwärts dreht.",
+      "Rückwärtsdrall lässt den Ball schweben und nach dem Aufsprung flach rutschen, schwer anzugreifen.",
+      "Der Slice eignet sich zum Verteidigen, für Tempowechsel und Netzangriffe, oft mit Kontinentalgriff."
+     ],
+     "q": "Magst du die Idee von schwerem Topspin oder von raffiniertem Slice lieber?",
+     "c": "Mach 15 Schatten-Rückhandslices, beginne oben und ende tief und vorn, wie beim Brotschneiden."
+    },
+    "es": {
+     "t": "El cortado explicado",
+     "g": "Aprende el cortado: golpear por debajo de la pelota para un efecto bajo y resbaladizo.",
+     "p": [
+      "Golpea de arriba abajo con la cara de la raqueta abierta, cepillando por debajo para que gire hacia atrás.",
+      "El efecto hace que la pelota flote y luego bote bajo y resbale, muy incómodo de atacar.",
+      "El cortado es ideal para defender, cambiar el ritmo y subir a la red, a menudo con empuñadura continental."
+     ],
+     "q": "¿Te atrae más pegar con mucho liftado o con un cortado astuto?",
+     "c": "Haz 15 reveses cortados en sombra, empezando arriba y terminando abajo y adelante, como cortar pan."
+    },
+    "fr": {
+     "t": "Le slice expliqué",
+     "g": "Apprends le slice : frapper sous la balle pour un coup bas et fuyant, avec effet rétro.",
+     "p": [
+      "Frappe de haut en bas, tamis ouvert, en brossant sous la balle pour qu'elle tourne vers l'arrière.",
+      "L'effet rétro fait flotter la balle, puis elle reste basse et fuse après le rebond, difficile à attaquer.",
+      "Le slice est idéal pour défendre, changer de rythme et monter au filet, souvent en prise continentale."
+     ],
+     "q": "Tu préfères l'idée de frapper avec beaucoup de lift ou avec un slice malin ?",
+     "c": "Fais 15 revers slicés à vide, en partant haut et en finissant bas et devant, comme pour couper du pain."
+    },
+    "it": {
+     "t": "Lo slice spiegato",
+     "g": "Impara lo slice: colpire sotto la palla per un colpo basso e radente con rotazione all'indietro.",
+     "p": [
+      "Colpisci dall'alto verso il basso con il piatto aperto, spazzolando sotto la palla perché ruoti all'indietro.",
+      "Il backspin fa galleggiare la palla, poi la tiene bassa e radente dopo il rimbalzo, difficile da attaccare.",
+      "Lo slice è ottimo per difendersi, cambiare ritmo e attaccare la rete, spesso con presa continentale."
+     ],
+     "q": "Ti piace di più l'idea di colpire con tanto top o con uno slice furbo?",
+     "c": "Fai 15 rovesci in slice a vuoto, partendo in alto e finendo in basso e avanti, come tagliare il pane."
+    },
+    "pt": {
+     "t": "A batida cortada explicada",
+     "g": "Aprende o slice: bater por baixo da bola para uma pancada baixa e deslizante, com efeito para trás.",
+     "p": [
+      "Bate de cima para baixo com a cara da raqueta aberta, escovando por baixo da bola para que rode para trás.",
+      "O efeito faz a bola flutuar e depois ficar baixa e deslizar após o ressalto, difícil de atacar.",
+      "O slice é ótimo para defender, mudar o ritmo e subir à rede, muitas vezes com pega continental."
+     ],
+     "q": "Gostas mais da ideia de bater com muito topspin ou com um slice matreiro?",
+     "c": "Faz 15 esquerdas cortadas no ar, começando em cima e acabando em baixo e à frente, como a cortar pão."
+    },
+    "pt_BR": {
+     "t": "O slice explicado",
+     "g": "Aprenda o slice: bater por baixo da bola para um golpe baixo e deslizante, com efeito para trás.",
+     "p": [
+      "Bata de cima para baixo com a face da raquete aberta, escovando por baixo da bola para ela girar para trás.",
+      "O efeito faz a bola flutuar e depois ficar baixa e deslizar após o quique, difícil de atacar.",
+      "O slice é ótimo para defender, mudar o ritmo e subir à rede, muitas vezes com empunhadura continental."
+     ],
+     "q": "Você curte mais a ideia de bater com muito topspin ou com um slice esperto?",
+     "c": "Faça 15 backhands de slice no ar, começando no alto e terminando embaixo e à frente, como quem corta pão."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flat shots",
+     "g": "Discover the flat shot: hitting through the ball with little spin for speed.",
+     "p": [
+      "With a flatter swing path the racket drives straight through the ball, so most energy becomes speed.",
+      "Flat shots skim low over the net and leave less margin for error, so they are riskier.",
+      "They shine on fast courts, on big first serves and when you finish a point from a comfortable ball."
+     ],
+     "q": "When would you choose speed over safety on a tennis court?",
+     "c": "Watch a few first serves and guess which ones were hit flat by how fast and low they travel."
+    },
+    "de": {
+     "t": "Flache Schläge",
+     "g": "Entdecke den flachen Schlag: durch den Ball schlagen, mit wenig Spin, für Tempo.",
+     "p": [
+      "Bei einer flacheren Schwungbahn geht der Schläger gerade durch den Ball, fast alle Energie wird zu Tempo.",
+      "Flache Schläge fliegen knapp übers Netz und lassen weniger Spielraum, sie sind also riskanter.",
+      "Sie glänzen auf schnellen Belägen, beim harten ersten Aufschlag und zum Abschluss bei einem bequemen Ball."
+     ],
+     "q": "Wann würdest du auf dem Platz Tempo statt Sicherheit wählen?",
+     "c": "Schau dir ein paar erste Aufschläge an und rate anhand von Tempo und Höhe, welche flach waren."
+    },
+    "es": {
+     "t": "Golpes planos",
+     "g": "Descubre el golpe plano: atravesar la pelota con poco efecto para ganar velocidad.",
+     "p": [
+      "Con un recorrido más plano, la raqueta atraviesa la pelota y casi toda la energía se convierte en velocidad.",
+      "El golpe plano pasa rozando la red y deja menos margen de error, así que es más arriesgado.",
+      "Brilla en pistas rápidas, en primeros saques potentes y para cerrar el punto con una bola cómoda."
+     ],
+     "q": "¿Cuándo elegirías velocidad en vez de seguridad en la pista?",
+     "c": "Mira algunos primeros saques y adivina cuáles fueron planos por lo rápido y bajo que viajan."
+    },
+    "fr": {
+     "t": "Les coups à plat",
+     "g": "Découvre la frappe à plat : traverser la balle avec peu d'effet pour la vitesse.",
+     "p": [
+      "Avec une trajectoire de raquette plus plate, tu traverses la balle et presque toute l'énergie devient vitesse.",
+      "Les frappes à plat rasent le filet et laissent moins de marge d'erreur : elles sont plus risquées.",
+      "Elles brillent sur surface rapide, sur les grosses premières balles et pour conclure sur une balle facile."
+     ],
+     "q": "Quand choisirais-tu la vitesse plutôt que la sécurité sur un court ?",
+     "c": "Regarde quelques premières balles et devine lesquelles sont à plat selon leur vitesse et leur hauteur."
+    },
+    "it": {
+     "t": "I colpi piatti",
+     "g": "Scopri il colpo piatto: attraversare la palla con poca rotazione per avere velocità.",
+     "p": [
+      "Con una traiettoria più piatta la racchetta attraversa la palla e quasi tutta l'energia diventa velocità.",
+      "I colpi piatti passano radenti alla rete e lasciano meno margine d'errore, quindi sono più rischiosi.",
+      "Danno il meglio sui campi veloci, sulle prime di servizio potenti e per chiudere il punto su una palla comoda."
+     ],
+     "q": "Quando sceglieresti la velocità invece della sicurezza in campo?",
+     "c": "Guarda qualche prima di servizio e indovina quali erano piatte da quanto viaggiano veloci e basse."
+    },
+    "pt": {
+     "t": "Pancadas planas",
+     "g": "Descobre a pancada plana: atravessar a bola com pouco efeito para ganhar velocidade.",
+     "p": [
+      "Com uma trajetória mais plana, a raqueta atravessa a bola e quase toda a energia vira velocidade.",
+      "As pancadas planas passam rentes à rede e deixam menos margem de erro, por isso são mais arriscadas.",
+      "Brilham em pisos rápidos, em primeiros serviços fortes e para fechar o ponto numa bola confortável."
+     ],
+     "q": "Quando escolherias velocidade em vez de segurança no campo?",
+     "c": "Vê alguns primeiros serviços e adivinha quais foram planos pela velocidade e altura a que passam."
+    },
+    "pt_BR": {
+     "t": "Golpes chapados",
+     "g": "Descubra o golpe chapado: atravessar a bola com pouco efeito para ganhar velocidade.",
+     "p": [
+      "Com uma trajetória mais reta, a raquete atravessa a bola e quase toda a energia vira velocidade.",
+      "Golpes chapados passam raspando a rede e deixam menos margem de erro, então são mais arriscados.",
+      "Eles brilham em quadras rápidas, em primeiros saques fortes e para fechar o ponto numa bola confortável."
+     ],
+     "q": "Quando você escolheria velocidade em vez de segurança na quadra?",
+     "c": "Assista a alguns primeiros saques e adivinhe quais foram chapados pela velocidade e altura da bola."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Net clearance and depth",
+     "g": "Learn why aiming higher over the net makes your shots deeper and safer.",
+     "p": [
+      "Most rally errors go into the net, so aiming one to two metres above the tape is a smart default.",
+      "A higher arc, especially with topspin, lands the ball deep near the baseline, keeping your opponent back.",
+      "Deep balls give your opponent less time and fewer angles, while short balls invite an attack."
+     ],
+     "q": "Do your mistakes usually go into the net or long? What does that tell you?",
+     "c": "In your next rally or shadow session, imagine a target window two metres above the net."
+    },
+    "de": {
+     "t": "Netzhöhe und Länge",
+     "g": "Lerne, warum höher übers Netz zielen deine Schläge länger und sicherer macht.",
+     "p": [
+      "Die meisten Fehler im Ballwechsel landen im Netz, ein bis zwei Meter über der Netzkante sind ein kluger Standard.",
+      "Ein höherer Bogen, besonders mit Topspin, bringt den Ball tief an die Grundlinie und hält den Gegner hinten.",
+      "Lange Bälle geben dem Gegner weniger Zeit und Winkel, kurze Bälle laden zum Angriff ein."
+     ],
+     "q": "Landen deine Fehler meist im Netz oder im Aus? Was sagt dir das?",
+     "c": "Stell dir im nächsten Ballwechsel oder Schattentraining ein Zielfenster zwei Meter über dem Netz vor."
+    },
+    "es": {
+     "t": "Altura sobre la red y profundidad",
+     "g": "Aprende por qué apuntar más alto sobre la red hace tus golpes más profundos y seguros.",
+     "p": [
+      "La mayoría de errores van a la red, así que apuntar uno o dos metros por encima de la cinta es una buena base.",
+      "Una parábola más alta, sobre todo con liftado, deja la pelota profunda junto al fondo y mantiene atrás al rival.",
+      "Las bolas profundas dan al rival menos tiempo y ángulos; las cortas invitan a atacar."
+     ],
+     "q": "¿Tus errores suelen ir a la red o largos? ¿Qué te dice eso?",
+     "c": "En tu próximo peloteo o sesión en sombra, imagina una ventana objetivo dos metros sobre la red."
+    },
+    "fr": {
+     "t": "Hauteur au-dessus du filet et profondeur",
+     "g": "Apprends pourquoi viser plus haut au-dessus du filet rend tes coups plus profonds et plus sûrs.",
+     "p": [
+      "La plupart des fautes en échange finissent dans le filet : viser un à deux mètres au-dessus de la bande est un bon réflexe.",
+      "Une trajectoire plus haute, surtout liftée, envoie la balle profond près de la ligne de fond et repousse l'adversaire.",
+      "Les balles profondes laissent moins de temps et d'angles à l'adversaire, les courtes invitent à l'attaque."
+     ],
+     "q": "Tes fautes vont plutôt dans le filet ou trop long ? Qu'est-ce que ça t'apprend ?",
+     "c": "Lors de ton prochain échange ou exercice à vide, imagine une fenêtre cible deux mètres au-dessus du filet."
+    },
+    "it": {
+     "t": "Altezza sulla rete e profondità",
+     "g": "Impara perché mirare più alto sopra la rete rende i colpi più profondi e sicuri.",
+     "p": [
+      "La maggior parte degli errori finisce in rete, quindi mirare uno o due metri sopra il nastro è un'ottima base.",
+      "Una parabola più alta, soprattutto con il top, porta la palla profonda vicino al fondo e tiene indietro l'avversario.",
+      "Le palle profonde danno all'avversario meno tempo e angoli, quelle corte invitano all'attacco."
+     ],
+     "q": "I tuoi errori finiscono più spesso in rete o lunghi? Cosa ti dice questo?",
+     "c": "Nel prossimo palleggio o allenamento a vuoto, immagina una finestra bersaglio due metri sopra la rete."
+    },
+    "pt": {
+     "t": "Altura sobre a rede e profundidade",
+     "g": "Aprende porque apontar mais alto sobre a rede torna as pancadas mais profundas e seguras.",
+     "p": [
+      "A maioria dos erros vai à rede, por isso apontar um a dois metros acima da fita é uma boa regra.",
+      "Uma parábola mais alta, sobretudo com topspin, faz a bola cair funda junto ao fundo e mantém o adversário atrás.",
+      "Bolas fundas dão ao adversário menos tempo e ângulos; bolas curtas convidam ao ataque."
+     ],
+     "q": "Os teus erros costumam ir à rede ou para fora, compridos? O que é que isso te diz?",
+     "c": "Na próxima troca de bolas ou treino no ar, imagina uma janela-alvo dois metros acima da rede."
+    },
+    "pt_BR": {
+     "t": "Altura sobre a rede e profundidade",
+     "g": "Aprenda por que mirar mais alto sobre a rede deixa seus golpes mais profundos e seguros.",
+     "p": [
+      "A maioria dos erros vai na rede, então mirar um a dois metros acima da fita é uma ótima regra.",
+      "Uma parábola mais alta, principalmente com topspin, faz a bola cair funda perto da linha de base e mantém o adversário atrás.",
+      "Bolas fundas dão ao adversário menos tempo e ângulos; bolas curtas convidam ao ataque."
+     ],
+     "q": "Seus erros costumam ir na rede ou para fora, longos? O que isso diz a você?",
+     "c": "No próximo rali ou treino no ar, imagine uma janela-alvo dois metros acima da rede."
+    }
+   }
+  }
+ ]
+}

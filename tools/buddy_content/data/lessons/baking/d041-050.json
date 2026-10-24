@@ -1,0 +1,835 @@
+{
+ "topic": "baking",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soft dinner rolls",
+     "g": "Bake soft dinner rolls by dividing dough evenly, shaping tight rounds and baking them snug together.",
+     "p": [
+      "Weigh the dough and divide it into equal pieces, so every roll bakes in the same time.",
+      "Cup your hand over each piece and roll it on the bench in small circles until it forms a smooth, tight ball.",
+      "Placed close together, the rolls rise into each other and bake with soft, pull-apart sides."
+     ],
+     "q": "Do you prefer rolls with a soft crust or a crisp one?",
+     "c": "Divide a small dough into eight equal pieces using your scale, shape them and bake them side by side."
+    },
+    "de": {
+     "t": "Weiche Brötchen",
+     "g": "Back weiche Brötchen: Teig gleichmäßig teilen, straffe Kugeln formen und dicht nebeneinander backen.",
+     "p": [
+      "Den Teig wiegen und in gleich schwere Stücke teilen, damit alle Brötchen gleich schnell garen.",
+      "Die hohle Hand über ein Stück legen und es in kleinen Kreisen auf der Arbeitsfläche zu einer glatten, straffen Kugel rollen.",
+      "Dicht beieinander gehen die Brötchen ineinander und bekommen weiche Seiten zum Auseinanderzupfen."
+     ],
+     "q": "Magst du Brötchen lieber mit weicher oder mit knuspriger Kruste?",
+     "c": "Teile einen kleinen Teig mit der Waage in acht gleiche Stücke, forme sie und back sie dicht nebeneinander."
+    },
+    "es": {
+     "t": "Panecillos tiernos",
+     "g": "Hornea panecillos tiernos dividiendo la masa por igual, formando bolas tensas y horneándolos juntos.",
+     "p": [
+      "Pesa la masa y divídela en porciones iguales, para que todos los panecillos se horneen al mismo tiempo.",
+      "Pon la mano en forma de cúpula sobre cada porción y gírala en círculos sobre la mesa hasta formar una bola lisa y tensa.",
+      "Colocados muy juntos, crecen unos contra otros y salen con lados tiernos que se separan con la mano."
+     ],
+     "q": "¿Prefieres los panecillos de corteza blanda o crujiente?",
+     "c": "Divide una masa pequeña en ocho porciones iguales con la báscula, bolea y hornéalas juntas."
+    },
+    "fr": {
+     "t": "Petits pains moelleux",
+     "g": "Réalise des petits pains moelleux en divisant la pâte également, en boulant serré et en les cuisant collés.",
+     "p": [
+      "Pèse la pâte et divise-la en pâtons égaux, pour que tous les pains cuisent dans le même temps.",
+      "Place ta main en coupole sur chaque pâton et fais-le rouler en petits cercles sur le plan pour obtenir une boule lisse.",
+      "Disposés serrés, ils poussent les uns contre les autres et cuisent avec des côtés tendres à détacher."
+     ],
+     "q": "Tu préfères les petits pains à croûte tendre ou croustillante ?",
+     "c": "Divise une petite pâte en huit pâtons égaux avec ta balance, boule-les et fais-les cuire côte à côte."
+    },
+    "it": {
+     "t": "Panini morbidi",
+     "g": "Prepara panini morbidi dividendo l'impasto in parti uguali, formando palline tese e cuocendoli vicini.",
+     "p": [
+      "Pesa l'impasto e dividilo in pezzi uguali, così tutti i panini cuociono nello stesso tempo.",
+      "Metti la mano a coppa su ogni pezzo e ruotalo sul piano con piccoli cerchi fino a ottenere una pallina liscia e tesa.",
+      "Messi vicini, crescono l'uno contro l'altro e cuociono con lati morbidi da staccare con le mani."
+     ],
+     "q": "Preferisci i panini con la crosta morbida o croccante?",
+     "c": "Dividi un piccolo impasto in otto pezzi uguali con la bilancia, formali e cuocili uno accanto all'altro."
+    },
+    "pt": {
+     "t": "Pãezinhos macios",
+     "g": "Faz pãezinhos macios dividindo a massa por igual, boleando bem e cozendo-os encostados.",
+     "p": [
+      "Pesa a massa e divide-a em porções iguais, para todos os pãezinhos cozerem ao mesmo tempo.",
+      "Põe a mão em concha sobre cada porção e rola-a em pequenos círculos na bancada até formar uma bola lisa e tensa.",
+      "Colocados juntos, crescem uns contra os outros e saem com lados macios que se separam à mão."
+     ],
+     "q": "Preferes pãezinhos de côdea macia ou estaladiça?",
+     "c": "Divide uma massa pequena em oito porções iguais com a balança, boleia-as e coze-as lado a lado."
+    },
+    "pt_BR": {
+     "t": "Pãezinhos macios",
+     "g": "Asse pãezinhos macios dividindo a massa por igual, boleando bem e assando todos juntinhos.",
+     "p": [
+      "Pese a massa e divida em porções iguais, para todos os pãezinhos assarem no mesmo tempo.",
+      "Coloque a mão em concha sobre cada porção e gire em pequenos círculos na bancada até formar uma bolinha lisa e firme.",
+      "Juntinhos, eles crescem um contra o outro e saem com laterais macias de puxar com a mão."
+     ],
+     "q": "Você prefere pãezinhos de casca macia ou crocante?",
+     "c": "Divida uma massa pequena em oito porções iguais com a balança, boleie e asse lado a lado."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flatbreads without an oven",
+     "g": "Make simple pan flatbreads and see how direct heat on a dry skillet makes them puff up.",
+     "p": [
+      "A basic dough of flour, water, salt and sometimes yoghurt or a little yeast is enough.",
+      "Roll thin and even, then cook on a very hot dry pan; steam inside the dough makes it puff.",
+      "Use a dry, heavy pan, keep the handle turned inwards and never leave a hot pan unattended."
+     ],
+     "q": "Which flatbreads do you know, like naan, pita, tortilla or chapati, and which is your favourite?",
+     "c": "Make four small flatbreads in a hot pan and count how many puff up into a balloon."
+    },
+    "de": {
+     "t": "Fladenbrot ohne Ofen",
+     "g": "Back einfache Pfannenfladen und sieh, wie direkte Hitze in einer trockenen Pfanne sie aufblähen lässt.",
+     "p": [
+      "Ein einfacher Teig aus Mehl, Wasser, Salz und manchmal Joghurt oder etwas Hefe genügt.",
+      "Dünn und gleichmäßig ausrollen und in einer sehr heißen, trockenen Pfanne backen; Dampf im Teig bläht ihn auf.",
+      "Nimm eine schwere, trockene Pfanne, dreh den Griff nach innen und lass eine heiße Pfanne nie unbeaufsichtigt."
+     ],
+     "q": "Welche Fladenbrote kennst du, etwa Naan, Pita, Tortilla oder Chapati, und welches magst du am liebsten?",
+     "c": "Back vier kleine Fladen in einer heißen Pfanne und zähle, wie viele sich zu einem Ballon aufblähen."
+    },
+    "es": {
+     "t": "Panes planos sin horno",
+     "g": "Haz panes planos en sartén y descubre cómo el calor directo de una sartén seca los hace inflarse.",
+     "p": [
+      "Basta una masa sencilla de harina, agua, sal y a veces yogur o un poco de levadura.",
+      "Estírala fina y pareja y cuécela en una sartén seca muy caliente; el vapor interior la hace inflarse.",
+      "Usa una sartén pesada y seca, gira el mango hacia dentro y nunca dejes una sartén caliente sin vigilar."
+     ],
+     "q": "¿Qué panes planos conoces, como naan, pita, tortilla o chapati, y cuál es tu favorito?",
+     "c": "Haz cuatro panes planos pequeños en una sartén caliente y cuenta cuántos se inflan como un globo."
+    },
+    "fr": {
+     "t": "Pains plats sans four",
+     "g": "Prépare des pains plats à la poêle et découvre comment la chaleur directe d'une poêle sèche les fait gonfler.",
+     "p": [
+      "Une pâte simple de farine, eau, sel et parfois yaourt ou un peu de levure suffit.",
+      "Étale finement et régulièrement, puis cuis dans une poêle sèche très chaude ; la vapeur intérieure fait gonfler.",
+      "Utilise une poêle épaisse et sèche, tourne le manche vers l'intérieur et ne laisse jamais une poêle chaude sans surveillance."
+     ],
+     "q": "Quels pains plats connais-tu, comme naan, pita, tortilla ou chapati, et lequel préfères-tu ?",
+     "c": "Fais quatre petits pains plats dans une poêle chaude et compte combien gonflent comme un ballon."
+    },
+    "it": {
+     "t": "Pani piatti senza forno",
+     "g": "Prepara pani piatti in padella e scopri come il calore diretto di una padella asciutta li fa gonfiare.",
+     "p": [
+      "Basta un impasto semplice di farina, acqua, sale e talvolta yogurt o un po' di lievito.",
+      "Stendilo sottile e uniforme e cuocilo in una padella asciutta molto calda; il vapore interno lo fa gonfiare.",
+      "Usa una padella pesante e asciutta, gira il manico verso l'interno e non lasciare mai incustodita una padella calda."
+     ],
+     "q": "Quali pani piatti conosci, come naan, pita, tortilla o piadina, e qual è il tuo preferito?",
+     "c": "Prepara quattro piccoli pani piatti in padella calda e conta quanti si gonfiano come un palloncino."
+    },
+    "pt": {
+     "t": "Pães achatados sem forno",
+     "g": "Faz pães achatados na frigideira e vê como o calor direto de uma frigideira seca os faz inchar.",
+     "p": [
+      "Basta uma massa simples de farinha, água, sal e às vezes iogurte ou um pouco de fermento.",
+      "Estende fino e por igual e coze numa frigideira seca muito quente; o vapor no interior faz inchar.",
+      "Usa uma frigideira pesada e seca, vira o cabo para dentro e nunca deixes uma frigideira quente sem vigilância."
+     ],
+     "q": "Que pães achatados conheces, como naan, pita, tortilha ou chapati, e qual é o teu preferido?",
+     "c": "Faz quatro pães achatados pequenos numa frigideira quente e conta quantos incham como um balão."
+    },
+    "pt_BR": {
+     "t": "Pães achatados sem forno",
+     "g": "Faça pães achatados na frigideira e veja como o calor direto de uma frigideira seca faz eles estufarem.",
+     "p": [
+      "Basta uma massa simples de farinha, água, sal e às vezes iogurte ou um pouco de fermento.",
+      "Abra fino e por igual e asse numa frigideira seca bem quente; o vapor dentro da massa faz ela estufar.",
+      "Use uma frigideira pesada e seca, vire o cabo para dentro e nunca deixe uma frigideira quente sem supervisão."
+     ],
+     "q": "Quais pães achatados você conhece, como naan, pita, tortilha ou chapati, e qual é o seu favorito?",
+     "c": "Faça quatro pães achatados pequenos numa frigideira quente e conte quantos estufam como um balão."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pizza dough basics",
+     "g": "Make a soft pizza dough, stretch it by hand and bake it in an oven as hot as it will go.",
+     "p": [
+      "A simple dough of strong flour, water, yeast, salt and a little olive oil gives a chewy, bubbly crust.",
+      "Stretch from the centre outwards with your fingertips, leaving the rim thicker; rolling squeezes out the air.",
+      "Preheat the oven at its maximum with a tray or stone inside, and use a peel or gloves to slide pizza in and out."
+     ],
+     "q": "What is your all-time favourite pizza topping?",
+     "c": "Make one small pizza, stretch it by hand without a rolling pin and keep the toppings light."
+    },
+    "de": {
+     "t": "Pizzateig-Grundlagen",
+     "g": "Mach einen weichen Pizzateig, zieh ihn von Hand aus und back ihn so heiß, wie dein Ofen kann.",
+     "p": [
+      "Ein einfacher Teig aus kräftigem Mehl, Wasser, Hefe, Salz und etwas Olivenöl ergibt einen luftigen Rand.",
+      "Mit den Fingerspitzen von der Mitte nach außen ausziehen, den Rand dicker lassen; das Nudelholz drückt die Luft heraus.",
+      "Den Ofen auf Höchststufe mit Blech oder Stein vorheizen und die Pizza mit Schieber oder Handschuhen bewegen."
+     ],
+     "q": "Was ist dein absoluter Lieblingsbelag auf Pizza?",
+     "c": "Mach eine kleine Pizza, zieh sie ohne Nudelholz von Hand aus und beleg sie nur sparsam."
+    },
+    "es": {
+     "t": "Masa de pizza básica",
+     "g": "Haz una masa de pizza suave, estírala a mano y hornéala con el horno lo más caliente posible.",
+     "p": [
+      "Una masa sencilla de harina de fuerza, agua, levadura, sal y un poco de aceite de oliva da un borde aireado.",
+      "Estira desde el centro hacia fuera con las yemas, dejando el borde más grueso; el rodillo expulsa el aire.",
+      "Precalienta al máximo con una bandeja o piedra dentro, y usa pala o manoplas para meter y sacar la pizza."
+     ],
+     "q": "¿Cuál es tu ingrediente favorito de todos los tiempos en una pizza?",
+     "c": "Haz una pizza pequeña, estírala a mano sin rodillo y pon pocos ingredientes encima."
+    },
+    "fr": {
+     "t": "Les bases de la pâte à pizza",
+     "g": "Prépare une pâte à pizza souple, étire-la à la main et cuis-la dans un four aussi chaud que possible.",
+     "p": [
+      "Une pâte simple de farine de force, eau, levure, sel et un filet d'huile d'olive donne une croûte alvéolée.",
+      "Étire du centre vers l'extérieur du bout des doigts, en gardant le bord plus épais ; le rouleau chasse l'air.",
+      "Préchauffe au maximum avec une plaque ou une pierre, et utilise une pelle ou des maniques pour enfourner."
+     ],
+     "q": "Quelle est ta garniture de pizza préférée de tous les temps ?",
+     "c": "Fais une petite pizza, étire-la à la main sans rouleau et garde une garniture légère."
+    },
+    "it": {
+     "t": "Le basi dell'impasto per pizza",
+     "g": "Prepara un impasto morbido per pizza, stendilo a mano e cuocilo col forno più caldo possibile.",
+     "p": [
+      "Un impasto semplice di farina forte, acqua, lievito, sale e un filo d'olio dà un cornicione arioso.",
+      "Stendi dal centro verso l'esterno con i polpastrelli, lasciando il bordo più spesso; il mattarello schiaccia l'aria.",
+      "Preriscalda al massimo con una teglia o pietra dentro e usa una pala o le presine per infornare e sfornare."
+     ],
+     "q": "Qual è in assoluto il tuo condimento preferito sulla pizza?",
+     "c": "Prepara una piccola pizza, stendila a mano senza mattarello e condiscila con leggerezza."
+    },
+    "pt": {
+     "t": "O básico da massa de pizza",
+     "g": "Faz uma massa de pizza macia, estica-a à mão e coze-a com o forno o mais quente possível.",
+     "p": [
+      "Uma massa simples de farinha forte, água, fermento, sal e um fio de azeite dá uma borda arejada.",
+      "Estica do centro para fora com as pontas dos dedos, deixando a borda mais grossa; o rolo expulsa o ar.",
+      "Pré-aquece no máximo com um tabuleiro ou pedra lá dentro e usa uma pá ou luvas para pôr e tirar a pizza."
+     ],
+     "q": "Qual é o teu ingrediente preferido de sempre numa pizza?",
+     "c": "Faz uma pizza pequena, estica-a à mão sem rolo e põe poucos ingredientes por cima."
+    },
+    "pt_BR": {
+     "t": "O básico da massa de pizza",
+     "g": "Faça uma massa de pizza macia, abra com as mãos e asse com o forno o mais quente possível.",
+     "p": [
+      "Uma massa simples de farinha forte, água, fermento, sal e um fio de azeite dá uma borda aerada.",
+      "Abra do centro para fora com a ponta dos dedos, deixando a borda mais grossa; o rolo expulsa o ar.",
+      "Preaqueça no máximo com uma assadeira ou pedra dentro e use pá ou luvas para colocar e tirar a pizza."
+     ],
+     "q": "Qual é a sua cobertura favorita de pizza de todos os tempos?",
+     "c": "Faça uma pizza pequena, abra com as mãos sem rolo e use pouca cobertura."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focaccia",
+     "g": "Bake a crisp, airy focaccia with plenty of olive oil, finger dimples and a slow rise.",
+     "p": [
+      "Focaccia uses a wet, sticky dough; stretch and fold it a few times instead of kneading hard.",
+      "Let it rise in an oiled tin, then press deep dimples with oiled fingers all the way to the bottom.",
+      "Drizzle oil into the dimples, add flaky salt or rosemary and bake hot until the base is crisp and golden."
+     ],
+     "q": "What toppings would you put on your focaccia: herbs, tomatoes, olives or something else?",
+     "c": "Bake a small focaccia and press at least 20 deep dimples before it goes into the oven."
+    },
+    "de": {
+     "t": "Focaccia",
+     "g": "Back eine knusprige, luftige Focaccia mit reichlich Olivenöl, Fingerdellen und langsamer Gare.",
+     "p": [
+      "Focaccia nutzt einen weichen, klebrigen Teig; dehne und falte ihn ein paar Mal, statt kräftig zu kneten.",
+      "In einer geölten Form gehen lassen, dann mit geölten Fingern tiefe Dellen bis zum Boden drücken.",
+      "Öl in die Dellen träufeln, Flockensalz oder Rosmarin darauf und heiß backen, bis der Boden knusprig und golden ist."
+     ],
+     "q": "Was würdest du auf deine Focaccia geben: Kräuter, Tomaten, Oliven oder etwas anderes?",
+     "c": "Back eine kleine Focaccia und drück mindestens 20 tiefe Dellen hinein, bevor sie in den Ofen kommt."
+    },
+    "es": {
+     "t": "Focaccia",
+     "g": "Hornea una focaccia crujiente y aireada con mucho aceite de oliva, hoyuelos con los dedos y un levado lento.",
+     "p": [
+      "La focaccia usa una masa húmeda y pegajosa; estírala y dóblala varias veces en lugar de amasar fuerte.",
+      "Déjala levar en un molde aceitado y hunde los dedos aceitados hasta el fondo para hacer hoyuelos.",
+      "Rocía aceite en los hoyuelos, añade sal en escamas o romero y hornea fuerte hasta que la base esté crujiente."
+     ],
+     "q": "¿Qué le pondrías a tu focaccia: hierbas, tomates, aceitunas u otra cosa?",
+     "c": "Hornea una focaccia pequeña y hazle al menos 20 hoyuelos profundos antes de meterla al horno."
+    },
+    "fr": {
+     "t": "La focaccia",
+     "g": "Réalise une focaccia croustillante et aérée, avec beaucoup d'huile d'olive, des alvéoles au doigt et une pousse lente.",
+     "p": [
+      "La focaccia utilise une pâte très hydratée et collante ; étire et rabats-la plusieurs fois au lieu de pétrir fort.",
+      "Laisse-la pousser dans un moule huilé, puis enfonce tes doigts huilés jusqu'au fond pour former des alvéoles.",
+      "Verse de l'huile dans les creux, ajoute fleur de sel ou romarin et cuis à four chaud jusqu'à une base dorée."
+     ],
+     "q": "Que mettrais-tu sur ta focaccia : herbes, tomates, olives ou autre chose ?",
+     "c": "Fais une petite focaccia et creuse au moins 20 alvéoles profondes avant de l'enfourner."
+    },
+    "it": {
+     "t": "Focaccia",
+     "g": "Sforna una focaccia croccante e ariosa, con tanto olio d'oliva, i buchi fatti con le dita e una lievitazione lenta.",
+     "p": [
+      "La focaccia usa un impasto molto idratato e appiccicoso; fai delle pieghe invece di impastare con forza.",
+      "Falla lievitare in una teglia unta, poi premi con le dita unte fino al fondo per creare i buchi.",
+      "Versa olio nei buchi, aggiungi sale grosso o rosmarino e cuoci in forno caldo finché la base è croccante e dorata."
+     ],
+     "q": "Cosa metteresti sulla tua focaccia: erbe, pomodorini, olive o altro?",
+     "c": "Prepara una piccola focaccia e fai almeno 20 buchi profondi prima di infornarla."
+    },
+    "pt": {
+     "t": "Focaccia",
+     "g": "Faz uma focaccia estaladiça e arejada, com muito azeite, covinhas feitas com os dedos e levedação lenta.",
+     "p": [
+      "A focaccia usa uma massa húmida e pegajosa; estica e dobra algumas vezes em vez de amassar com força.",
+      "Deixa levedar numa forma untada com azeite e carrega com os dedos untados até ao fundo para fazer covinhas.",
+      "Rega as covinhas com azeite, junta flor de sal ou alecrim e coze em forno quente até a base ficar estaladiça."
+     ],
+     "q": "O que porias na tua focaccia: ervas, tomate, azeitonas ou outra coisa?",
+     "c": "Faz uma focaccia pequena e faz-lhe pelo menos 20 covinhas fundas antes de ir ao forno."
+    },
+    "pt_BR": {
+     "t": "Focaccia",
+     "g": "Asse uma focaccia crocante e aerada, com bastante azeite, furinhos feitos com os dedos e fermentação lenta.",
+     "p": [
+      "A focaccia usa uma massa úmida e grudenta; estique e dobre algumas vezes em vez de sovar com força.",
+      "Deixe crescer numa forma untada com azeite e afunde os dedos untados até o fundo para fazer os furinhos.",
+      "Regue os furinhos com azeite, junte flor de sal ou alecrim e asse em forno quente até a base ficar crocante."
+     ],
+     "q": "O que você colocaria na sua focaccia: ervas, tomate, azeitonas ou outra coisa?",
+     "c": "Asse uma focaccia pequena e faça pelo menos 20 furinhos fundos antes de levar ao forno."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steam and crust",
+     "g": "Learn why steam in the first minutes of baking gives bread a shiny, crackly crust and a better rise.",
+     "p": [
+      "Steam keeps the surface soft at first, so the loaf can expand fully before the crust sets.",
+      "It also helps starch on the surface turn glossy, giving a thin, crackly, shiny crust.",
+      "Safe method: put an empty tray on the lowest rack while preheating, then pour in a cup of hot water and close the door fast."
+     ],
+     "q": "Do you like bread with a thin, crackly crust or a soft one?",
+     "c": "Bake two small rolls, one with steam and one without, and compare their crust, colour and height."
+    },
+    "de": {
+     "t": "Dampf und Kruste",
+     "g": "Lerne, warum Dampf in den ersten Backminuten Brot eine glänzende, knackige Kruste und besseren Ofentrieb gibt.",
+     "p": [
+      "Dampf hält die Oberfläche anfangs weich, damit sich der Laib voll ausdehnen kann, bevor die Kruste fest wird.",
+      "Er lässt außerdem die Stärke an der Oberfläche glänzen und sorgt für eine dünne, knackige Kruste.",
+      "Sicher gemacht: Beim Vorheizen ein leeres Blech unten einschieben, eine Tasse heißes Wasser hineingießen, Tür schnell schließen."
+     ],
+     "q": "Magst du Brot lieber mit dünner, knackiger oder mit weicher Kruste?",
+     "c": "Back zwei kleine Brötchen, eins mit und eins ohne Dampf, und vergleiche Kruste, Farbe und Höhe."
+    },
+    "es": {
+     "t": "Vapor y corteza",
+     "g": "Aprende por qué el vapor en los primeros minutos da al pan una corteza brillante y crujiente y más volumen.",
+     "p": [
+      "El vapor mantiene blanda la superficie al principio, así el pan se expande del todo antes de que la corteza cuaje.",
+      "También ayuda a que el almidón de la superficie brille, dando una corteza fina, crujiente y lustrosa.",
+      "Método seguro: pon una bandeja vacía abajo al precalentar, vierte una taza de agua caliente y cierra la puerta rápido."
+     ],
+     "q": "¿Te gusta el pan de corteza fina y crujiente o blanda?",
+     "c": "Hornea dos panecillos, uno con vapor y otro sin él, y compara corteza, color y altura."
+    },
+    "fr": {
+     "t": "Vapeur et croûte",
+     "g": "Apprends pourquoi la vapeur des premières minutes donne au pain une croûte brillante et craquante, et plus de volume.",
+     "p": [
+      "La vapeur garde la surface souple au début, pour que le pain se développe bien avant que la croûte ne fige.",
+      "Elle fait aussi briller l'amidon en surface et donne une croûte fine, craquante et brillante.",
+      "Méthode sûre : glisse une plaque vide en bas au préchauffage, verse une tasse d'eau chaude et referme vite la porte."
+     ],
+     "q": "Tu aimes le pain à croûte fine et craquante, ou plutôt tendre ?",
+     "c": "Cuis deux petits pains, l'un avec vapeur et l'autre sans, et compare croûte, couleur et hauteur."
+    },
+    "it": {
+     "t": "Vapore e crosta",
+     "g": "Impara perché il vapore nei primi minuti dà al pane una crosta lucida e croccante e una crescita migliore.",
+     "p": [
+      "Il vapore mantiene morbida la superficie all'inizio, così il pane si espande del tutto prima che la crosta si fissi.",
+      "Aiuta anche l'amido in superficie a diventare lucido, dando una crosta sottile e croccante.",
+      "Metodo sicuro: metti una teglia vuota in basso mentre preriscaldi, versa una tazza d'acqua calda e chiudi subito."
+     ],
+     "q": "Ti piace il pane con la crosta sottile e croccante o morbida?",
+     "c": "Cuoci due panini, uno con vapore e uno senza, e confronta crosta, colore e altezza."
+    },
+    "pt": {
+     "t": "Vapor e côdea",
+     "g": "Aprende porque o vapor nos primeiros minutos dá ao pão uma côdea brilhante e estaladiça e mais volume.",
+     "p": [
+      "O vapor mantém a superfície macia no início, para o pão crescer totalmente antes de a côdea firmar.",
+      "Também ajuda o amido da superfície a ganhar brilho, dando uma côdea fina e estaladiça.",
+      "Método seguro: põe um tabuleiro vazio em baixo ao pré-aquecer, deita uma chávena de água quente e fecha logo a porta."
+     ],
+     "q": "Gostas de pão com côdea fina e estaladiça, ou macia?",
+     "c": "Coze dois pãezinhos, um com vapor e outro sem, e compara côdea, cor e altura."
+    },
+    "pt_BR": {
+     "t": "Vapor e casca",
+     "g": "Aprenda por que o vapor nos primeiros minutos dá ao pão uma casca brilhante e crocante e mais crescimento.",
+     "p": [
+      "O vapor mantém a superfície macia no começo, para o pão crescer totalmente antes de a casca firmar.",
+      "Ele também ajuda o amido da superfície a ficar brilhante, dando uma casca fina e crocante.",
+      "Jeito seguro: coloque uma assadeira vazia embaixo ao preaquecer, despeje uma xícara de água quente e feche logo a porta."
+     ],
+     "q": "Você gosta de pão com casca fina e crocante ou macia?",
+     "c": "Asse dois pãezinhos, um com vapor e outro sem, e compare casca, cor e altura."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling bread before slicing",
+     "g": "Learn why bread keeps setting as it cools, and why slicing too early leaves it gummy.",
+     "p": [
+      "Inside a fresh loaf, steam is still escaping and the starches are still firming up.",
+      "Cutting too soon lets that moisture rush out and squashes the soft crumb into a sticky texture.",
+      "Cool tin loaves out of the tin on a rack for at least an hour, larger loaves even longer."
+     ],
+     "q": "Is it hard for you to resist warm bread straight from the oven?",
+     "c": "Next time you bake bread, set a one-hour timer and only slice it when it rings."
+    },
+    "de": {
+     "t": "Brot vor dem Anschneiden abkühlen",
+     "g": "Lerne, warum Brot beim Abkühlen noch fester wird und zu frühes Anschneiden es klitschig macht.",
+     "p": [
+      "In einem frischen Laib entweicht noch Dampf, und die Stärke wird gerade erst fest.",
+      "Zu frühes Schneiden lässt die Feuchtigkeit entweichen und drückt die weiche Krume klebrig zusammen.",
+      "Kastenbrote aus der Form nehmen und mindestens eine Stunde auf einem Gitter abkühlen lassen, große Laibe länger."
+     ],
+     "q": "Fällt es dir schwer, warmem Brot direkt aus dem Ofen zu widerstehen?",
+     "c": "Stell beim nächsten Brot einen Timer auf eine Stunde und schneide es erst an, wenn er klingelt."
+    },
+    "es": {
+     "t": "Enfriar el pan antes de cortarlo",
+     "g": "Aprende por qué el pan sigue asentándose al enfriarse y cortarlo antes de tiempo lo deja gomoso.",
+     "p": [
+      "Dentro de un pan recién hecho todavía sale vapor y los almidones siguen afirmándose.",
+      "Cortarlo pronto deja escapar esa humedad de golpe y aplasta la miga blanda hasta volverla pegajosa.",
+      "Saca los panes de molde y enfríalos en una rejilla al menos una hora; los grandes, aún más."
+     ],
+     "q": "¿Te cuesta resistirte al pan caliente recién salido del horno?",
+     "c": "La próxima vez que hornees pan, pon un temporizador de una hora y córtalo solo cuando suene."
+    },
+    "fr": {
+     "t": "Laisser refroidir avant de trancher",
+     "g": "Apprends pourquoi le pain continue de se former en refroidissant et pourquoi le couper trop tôt le rend pâteux.",
+     "p": [
+      "Dans un pain sorti du four, la vapeur s'échappe encore et l'amidon est en train de se raffermir.",
+      "Trancher trop tôt laisse fuir cette humidité et écrase la mie tendre en une texture collante.",
+      "Démoule les pains de mie et laisse-les refroidir sur une grille au moins une heure, les gros pains plus longtemps."
+     ],
+     "q": "As-tu du mal à résister au pain chaud tout juste sorti du four ?",
+     "c": "À ton prochain pain, règle un minuteur d'une heure et ne le tranche qu'à la sonnerie."
+    },
+    "it": {
+     "t": "Far raffreddare il pane prima di tagliarlo",
+     "g": "Impara perché il pane continua ad assestarsi raffreddando e tagliarlo presto lo rende gommoso.",
+     "p": [
+      "Dentro un pane appena sfornato il vapore sta ancora uscendo e gli amidi si stanno ancora rassodando.",
+      "Tagliarlo troppo presto fa uscire l'umidità tutta insieme e schiaccia la mollica in una consistenza collosa.",
+      "Togli i pani dallo stampo e lasciali raffreddare su una gratella almeno un'ora, quelli grandi anche di più."
+     ],
+     "q": "Ti è difficile resistere al pane caldo appena sfornato?",
+     "c": "La prossima volta che fai il pane, imposta un timer di un'ora e taglialo solo quando suona."
+    },
+    "pt": {
+     "t": "Arrefecer o pão antes de cortar",
+     "g": "Aprende porque o pão continua a firmar enquanto arrefece e porque cortá-lo cedo o deixa pastoso.",
+     "p": [
+      "Dentro de um pão acabado de sair, o vapor ainda está a sair e os amidos ainda estão a firmar.",
+      "Cortar cedo demais deixa a humidade fugir de repente e esmaga o miolo macio numa textura pegajosa.",
+      "Tira os pães de forma e deixa-os arrefecer numa grelha pelo menos uma hora; os grandes, ainda mais."
+     ],
+     "q": "Custa-te resistir ao pão quente acabado de sair do forno?",
+     "c": "Da próxima vez que fizeres pão, põe um temporizador de uma hora e só o cortes quando tocar."
+    },
+    "pt_BR": {
+     "t": "Esfriando o pão antes de cortar",
+     "g": "Aprenda por que o pão continua firmando enquanto esfria e por que cortar cedo deixa o miolo grudento.",
+     "p": [
+      "Dentro de um pão recém-assado, o vapor ainda está saindo e os amidos ainda estão firmando.",
+      "Cortar cedo demais deixa a umidade escapar de uma vez e amassa o miolo macio, deixando-o pegajoso.",
+      "Tire os pães da forma e deixe esfriar na grade por pelo menos uma hora; os grandes, ainda mais."
+     ],
+     "q": "É difícil para você resistir a um pão quentinho saído do forno?",
+     "c": "Da próxima vez que assar pão, coloque um timer de uma hora e só corte quando ele tocar."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storing bread well",
+     "g": "Learn how to store bread so it stays good longer, and how to revive a stale loaf in a hot oven.",
+     "p": [
+      "Keep bread in a paper or cloth bag at room temperature; the fridge actually makes it stale faster.",
+      "For longer storage, slice and freeze it, then toast slices straight from the freezer.",
+      "Revive a stale loaf by sprinkling it with water and warming it in a hot oven for a few minutes."
+     ],
+     "q": "How do you usually store bread at home, and does it go stale quickly?",
+     "c": "Freeze a few slices of your bread today and toast one straight from frozen later this week."
+    },
+    "de": {
+     "t": "Brot richtig aufbewahren",
+     "g": "Lerne, wie Brot länger gut bleibt und wie du einen altbackenen Laib im heißen Ofen wiederbelebst.",
+     "p": [
+      "Brot in einer Papier- oder Stofftüte bei Zimmertemperatur lagern; im Kühlschrank wird es sogar schneller altbacken.",
+      "Für längere Lagerung in Scheiben schneiden und einfrieren, dann direkt aus dem Gefrierfach toasten.",
+      "Altbackenes Brot mit Wasser besprenkeln und ein paar Minuten im heißen Ofen aufbacken."
+     ],
+     "q": "Wie bewahrst du Brot zu Hause auf, und wird es schnell altbacken?",
+     "c": "Friere heute ein paar Scheiben Brot ein und toaste später in der Woche eine direkt gefroren."
+    },
+    "es": {
+     "t": "Guardar bien el pan",
+     "g": "Aprende a guardar el pan para que dure más y a revivir un pan duro en el horno caliente.",
+     "p": [
+      "Guarda el pan en una bolsa de papel o tela a temperatura ambiente; la nevera lo endurece antes.",
+      "Para más tiempo, córtalo en rebanadas y congélalo; luego tuéstalas directamente desde el congelador.",
+      "Revive un pan duro rociándolo con agua y calentándolo unos minutos en el horno caliente."
+     ],
+     "q": "¿Cómo guardas el pan en casa y se te pone duro rápido?",
+     "c": "Congela hoy unas rebanadas de pan y tuesta una directamente congelada más adelante esta semana."
+    },
+    "fr": {
+     "t": "Bien conserver le pain",
+     "g": "Apprends à conserver ton pain plus longtemps et à ranimer un pain rassis dans un four chaud.",
+     "p": [
+      "Garde le pain dans un sac en papier ou en tissu à température ambiante ; le réfrigérateur le fait rassir plus vite.",
+      "Pour plus longtemps, tranche-le et congèle-le, puis grille les tranches directement sorties du congélateur.",
+      "Ranime un pain rassis en l'aspergeant d'eau et en le réchauffant quelques minutes dans un four chaud."
+     ],
+     "q": "Comment conserves-tu le pain chez toi, et rassit-il vite ?",
+     "c": "Congèle aujourd'hui quelques tranches de pain et grilles-en une encore congelée plus tard dans la semaine."
+    },
+    "it": {
+     "t": "Conservare bene il pane",
+     "g": "Impara a conservare il pane perché duri di più e a far rivivere un pane raffermo in forno caldo.",
+     "p": [
+      "Tieni il pane in un sacchetto di carta o di stoffa a temperatura ambiente; il frigo lo fa raffermare prima.",
+      "Per tempi più lunghi, affettalo e congelalo, poi tosta le fette direttamente dal congelatore.",
+      "Fai rivivere un pane raffermo spruzzandolo d'acqua e scaldandolo qualche minuto in forno caldo."
+     ],
+     "q": "Come conservi il pane a casa, e diventa raffermo in fretta?",
+     "c": "Congela oggi qualche fetta di pane e tostane una ancora congelata più avanti in settimana."
+    },
+    "pt": {
+     "t": "Guardar bem o pão",
+     "g": "Aprende a guardar o pão para durar mais e a recuperar um pão duro no forno quente.",
+     "p": [
+      "Guarda o pão num saco de papel ou pano à temperatura ambiente; o frigorífico fá-lo endurecer mais depressa.",
+      "Para mais tempo, fatia e congela, e depois torra as fatias diretamente do congelador.",
+      "Recupera um pão duro salpicando-o com água e aquecendo-o uns minutos no forno quente."
+     ],
+     "q": "Como guardas o pão em casa, e ele endurece depressa?",
+     "c": "Congela hoje algumas fatias de pão e torra uma diretamente congelada mais para o fim da semana."
+    },
+    "pt_BR": {
+     "t": "Guardando bem o pão",
+     "g": "Aprenda a guardar o pão para durar mais e a recuperar um pão amanhecido no forno quente.",
+     "p": [
+      "Guarde o pão em saco de papel ou pano em temperatura ambiente; a geladeira faz ele endurecer mais rápido.",
+      "Para durar mais, fatie e congele, e depois toste as fatias direto do freezer.",
+      "Recupere um pão amanhecido borrifando água e aquecendo alguns minutos no forno quente."
+     ],
+     "q": "Como você guarda o pão em casa, e ele endurece rápido?",
+     "c": "Congele hoje algumas fatias de pão e toste uma direto do freezer mais para o fim da semana."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shortcrust pastry",
+     "g": "Make tender, crisp shortcrust pastry with cold butter, a little water and minimal handling.",
+     "p": [
+      "The classic ratio is about half as much fat as flour, rubbed in until it looks like breadcrumbs.",
+      "Add ice-cold water a spoonful at a time, just until the dough holds together when squeezed.",
+      "Wrap and chill for at least 30 minutes, so the gluten relaxes and the pastry does not shrink in the oven."
+     ],
+     "q": "Do you prefer sweet pies and tarts or savoury ones like quiche?",
+     "c": "Make a small batch of shortcrust with 100 g flour and 50 g cold butter, then wrap and chill it."
+    },
+    "de": {
+     "t": "Mürbeteig",
+     "g": "Mach zarten, knusprigen Mürbeteig mit kalter Butter, wenig Wasser und so wenig Kneten wie möglich.",
+     "p": [
+      "Das klassische Verhältnis ist etwa halb so viel Fett wie Mehl, eingerieben, bis es wie Brösel aussieht.",
+      "Eiskaltes Wasser löffelweise zugeben, nur bis der Teig beim Zusammendrücken hält.",
+      "Einwickeln und mindestens 30 Minuten kühlen, damit das Gluten entspannt und der Teig im Ofen nicht schrumpft."
+     ],
+     "q": "Magst du lieber süße Kuchen und Tartes oder herzhafte wie Quiche?",
+     "c": "Mach eine kleine Portion Mürbeteig aus 100 g Mehl und 50 g kalter Butter, wickle ihn ein und kühle ihn."
+    },
+    "es": {
+     "t": "Masa quebrada",
+     "g": "Prepara una masa quebrada tierna y crujiente con mantequilla fría, poca agua y mínimo amasado.",
+     "p": [
+      "La proporción clásica es la mitad de grasa que de harina, arenada hasta que parezca pan rallado.",
+      "Añade agua helada cucharada a cucharada, solo hasta que la masa se una al apretarla.",
+      "Envuélvela y enfríala al menos 30 minutos, para que el gluten se relaje y no encoja en el horno."
+     ],
+     "q": "¿Prefieres tartas dulces o saladas como la quiche?",
+     "c": "Haz una tanda pequeña de masa quebrada con 100 g de harina y 50 g de mantequilla fría, envuélvela y enfríala."
+    },
+    "fr": {
+     "t": "La pâte brisée",
+     "g": "Réalise une pâte brisée tendre et croustillante avec du beurre froid, un peu d'eau et un minimum de manipulation.",
+     "p": [
+      "Le ratio classique est d'environ moitié moins de beurre que de farine, sablé jusqu'à la chapelure.",
+      "Ajoute de l'eau glacée cuillère par cuillère, juste jusqu'à ce que la pâte se tienne quand on la presse.",
+      "Filme-la et mets-la au frais au moins 30 minutes : le gluten se détend et la pâte ne rétrécit pas au four."
+     ],
+     "q": "Tu préfères les tartes sucrées ou salées, comme la quiche ?",
+     "c": "Fais une petite pâte brisée avec 100 g de farine et 50 g de beurre froid, puis filme-la et mets-la au frais."
+    },
+    "it": {
+     "t": "Pasta brisée",
+     "g": "Prepara una pasta brisée tenera e croccante con burro freddo, poca acqua e lavorandola il meno possibile.",
+     "p": [
+      "La proporzione classica è circa metà grasso rispetto alla farina, sabbiato fino a sembrare pangrattato.",
+      "Aggiungi acqua ghiacciata un cucchiaio alla volta, solo finché l'impasto sta insieme se lo stringi.",
+      "Avvolgila e mettila in frigo almeno 30 minuti, così il glutine si rilassa e non si ritira in forno."
+     ],
+     "q": "Preferisci torte e crostate dolci o salate come la quiche?",
+     "c": "Prepara una piccola dose di brisée con 100 g di farina e 50 g di burro freddo, avvolgila e mettila in frigo."
+    },
+    "pt": {
+     "t": "Massa quebrada",
+     "g": "Faz uma massa quebrada tenra e estaladiça com manteiga fria, pouca água e o mínimo de manuseamento.",
+     "p": [
+      "A proporção clássica é cerca de metade de gordura em relação à farinha, esfarelada até parecer pão ralado.",
+      "Junta água gelada colher a colher, só até a massa ligar quando a apertas.",
+      "Embrulha e leva ao frio pelo menos 30 minutos, para o glúten relaxar e a massa não encolher no forno."
+     ],
+     "q": "Preferes tartes doces ou salgadas, como a quiche?",
+     "c": "Faz uma pequena dose de massa quebrada com 100 g de farinha e 50 g de manteiga fria, embrulha e leva ao frio."
+    },
+    "pt_BR": {
+     "t": "Massa podre",
+     "g": "Faça uma massa podre macia e crocante com manteiga gelada, pouca água e o mínimo de manuseio.",
+     "p": [
+      "A proporção clássica é cerca de metade de gordura em relação à farinha, esfarelada até parecer farofa.",
+      "Junte água gelada uma colher por vez, só até a massa dar liga quando você aperta.",
+      "Embrulhe e leve à geladeira por pelo menos 30 minutos, para o glúten relaxar e a massa não encolher no forno."
+     ],
+     "q": "Você prefere tortas doces ou salgadas, como a quiche?",
+     "c": "Faça uma pequena porção de massa podre com 100 g de farinha e 50 g de manteiga gelada, embrulhe e gele."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rolling pastry evenly",
+     "g": "Learn to roll pastry to an even thickness without sticking, tearing or overworking it.",
+     "p": [
+      "Dust the surface and pin lightly, and roll from the centre outwards in short, gentle strokes.",
+      "Give the pastry a quarter turn every few rolls; if it sticks, lift it and add a tiny dusting of flour.",
+      "Aim for about 3 to 4 mm thick; rolling between two sheets of baking paper helps if it is very soft."
+     ],
+     "q": "What feels harder to you: rolling pastry thin or keeping it round?",
+     "c": "Roll your chilled shortcrust into a circle 3 to 4 mm thick, turning it a quarter turn every few rolls."
+    },
+    "de": {
+     "t": "Teig gleichmäßig ausrollen",
+     "g": "Lerne, Mürbeteig gleichmäßig dick auszurollen, ohne dass er klebt, reißt oder überarbeitet wird.",
+     "p": [
+      "Arbeitsfläche und Nudelholz leicht bemehlen und von der Mitte nach außen in kurzen, sanften Zügen rollen.",
+      "Den Teig alle paar Züge eine Vierteldrehung drehen; klebt er, anheben und ganz wenig Mehl darunterstreuen.",
+      "Ziel sind etwa 3 bis 4 mm Dicke; ist der Teig sehr weich, hilft Ausrollen zwischen zwei Lagen Backpapier."
+     ],
+     "q": "Was findest du schwieriger: den Teig dünn auszurollen oder ihn rund zu halten?",
+     "c": "Roll deinen gekühlten Mürbeteig zu einem Kreis von 3 bis 4 mm aus und dreh ihn alle paar Züge um ein Viertel."
+    },
+    "es": {
+     "t": "Estirar la masa de forma pareja",
+     "g": "Aprende a estirar la masa con un grosor uniforme sin que se pegue, se rompa ni se trabaje de más.",
+     "p": [
+      "Enharina un poco la mesa y el rodillo, y estira del centro hacia fuera con pasadas cortas y suaves.",
+      "Gira la masa un cuarto cada pocas pasadas; si se pega, levántala y espolvorea un poquito de harina.",
+      "Busca unos 3 a 4 mm de grosor; si está muy blanda, estírala entre dos hojas de papel de horno."
+     ],
+     "q": "¿Qué te parece más difícil: estirar la masa fina o mantenerla redonda?",
+     "c": "Estira tu masa quebrada fría en un círculo de 3 a 4 mm, girándola un cuarto cada pocas pasadas."
+    },
+    "fr": {
+     "t": "Abaisser la pâte régulièrement",
+     "g": "Apprends à étaler la pâte sur une épaisseur régulière sans qu'elle colle, se déchire ou soit trop travaillée.",
+     "p": [
+      "Farine légèrement le plan et le rouleau, et abaisse du centre vers l'extérieur par petits gestes doux.",
+      "Fais pivoter la pâte d'un quart de tour régulièrement ; si elle colle, soulève-la et ajoute un voile de farine.",
+      "Vise environ 3 à 4 mm d'épaisseur ; si la pâte est très molle, étale-la entre deux feuilles de papier cuisson."
+     ],
+     "q": "Qu'est-ce qui te semble le plus difficile : étaler finement ou garder une forme ronde ?",
+     "c": "Abaisse ta pâte brisée froide en un disque de 3 à 4 mm, en la tournant d'un quart de tour régulièrement."
+    },
+    "it": {
+     "t": "Stendere la pasta in modo uniforme",
+     "g": "Impara a stendere la pasta con uno spessore uniforme senza che si attacchi, si rompa o si lavori troppo.",
+     "p": [
+      "Infarina leggermente piano e mattarello e stendi dal centro verso l'esterno con passate brevi e delicate.",
+      "Ruota la pasta di un quarto ogni poche passate; se si attacca, sollevala e aggiungi un velo di farina.",
+      "Punta a circa 3-4 mm di spessore; se è molto morbida, stendila tra due fogli di carta forno."
+     ],
+     "q": "Cosa ti sembra più difficile: stendere la pasta sottile o mantenerla rotonda?",
+     "c": "Stendi la tua brisée fredda in un disco di 3-4 mm, ruotandola di un quarto ogni poche passate."
+    },
+    "pt": {
+     "t": "Estender a massa por igual",
+     "g": "Aprende a estender a massa com espessura uniforme sem colar, rasgar ou ser trabalhada demais.",
+     "p": [
+      "Enfarinha levemente a bancada e o rolo e estende do centro para fora com movimentos curtos e suaves.",
+      "Roda a massa um quarto de volta a cada poucas passagens; se colar, levanta-a e polvilha um pouco de farinha.",
+      "Procura uns 3 a 4 mm de espessura; se estiver muito mole, estende entre duas folhas de papel vegetal."
+     ],
+     "q": "O que te parece mais difícil: estender a massa fina ou mantê-la redonda?",
+     "c": "Estende a tua massa quebrada fria num círculo de 3 a 4 mm, rodando-a um quarto de volta a cada poucas passagens."
+    },
+    "pt_BR": {
+     "t": "Abrindo a massa por igual",
+     "g": "Aprenda a abrir a massa com espessura uniforme sem grudar, rasgar ou trabalhar demais.",
+     "p": [
+      "Enfarinhe levemente a bancada e o rolo e abra do centro para fora com movimentos curtos e suaves.",
+      "Gire a massa um quarto de volta a cada poucas passadas; se grudar, levante e polvilhe um pouquinho de farinha.",
+      "Busque uns 3 a 4 mm de espessura; se estiver muito mole, abra entre duas folhas de papel-manteiga."
+     ],
+     "q": "O que parece mais difícil para você: abrir a massa fina ou mantê-la redonda?",
+     "c": "Abra sua massa podre gelada num círculo de 3 a 4 mm, girando um quarto de volta a cada poucas passadas."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blind baking",
+     "g": "Learn to blind bake a tart case with weights so the base is crisp and never soggy.",
+     "p": [
+      "Line the tin with pastry, prick the base with a fork and chill it again for 15 minutes before baking.",
+      "Cover with baking paper and fill with baking beans, dry rice or lentils to stop the base puffing up.",
+      "Bake around 190 °C until the edges set, lift out the hot weights carefully, then bake until the base is dry and golden."
+     ],
+     "q": "Have you ever eaten a tart with a soggy bottom? What would you do differently now?",
+     "c": "Blind bake a small tart case using dried beans or rice as weights and check that the base is dry and golden."
+    },
+    "de": {
+     "t": "Blindbacken",
+     "g": "Lerne, einen Tarteboden mit Gewichten blindzubacken, damit er knusprig und nie durchgeweicht ist.",
+     "p": [
+      "Die Form mit Teig auslegen, den Boden mit einer Gabel einstechen und vor dem Backen noch 15 Minuten kühlen.",
+      "Mit Backpapier abdecken und mit Backbohnen, trockenem Reis oder Linsen füllen, damit der Boden nicht aufgeht.",
+      "Bei etwa 190 °C backen, bis der Rand fest ist, heiße Gewichte vorsichtig herausheben, dann backen, bis der Boden trocken und golden ist."
+     ],
+     "q": "Hattest du schon mal eine Tarte mit durchgeweichtem Boden? Was würdest du jetzt anders machen?",
+     "c": "Back einen kleinen Tarteboden mit getrockneten Bohnen oder Reis blind und prüfe, ob der Boden trocken und golden ist."
+    },
+    "es": {
+     "t": "Hornear en blanco",
+     "g": "Aprende a hornear en blanco una base de tarta con peso para que quede crujiente y nunca húmeda.",
+     "p": [
+      "Forra el molde con la masa, pincha la base con un tenedor y enfríala otros 15 minutos antes de hornear.",
+      "Cúbrela con papel de horno y rellena con legumbres secas, arroz o bolas de cerámica para que no se infle.",
+      "Hornea a unos 190 °C hasta que los bordes cuajen, retira con cuidado el peso caliente y hornea hasta que la base se dore."
+     ],
+     "q": "¿Has comido alguna vez una tarta con la base húmeda? ¿Qué harías diferente ahora?",
+     "c": "Hornea en blanco una base pequeña usando legumbres secas o arroz como peso y comprueba que la base quede seca y dorada."
+    },
+    "fr": {
+     "t": "La cuisson à blanc",
+     "g": "Apprends à cuire à blanc un fond de tarte lesté pour qu'il soit croustillant et jamais détrempé.",
+     "p": [
+      "Fonce le moule, pique le fond à la fourchette et remets au frais 15 minutes avant d'enfourner.",
+      "Couvre de papier cuisson et remplis de billes de cuisson, riz ou lentilles secs pour empêcher le fond de gonfler.",
+      "Cuis vers 190 °C jusqu'à ce que les bords soient pris, retire les poids chauds avec soin, puis cuis jusqu'à un fond sec et doré."
+     ],
+     "q": "As-tu déjà mangé une tarte au fond détrempé ? Que ferais-tu autrement maintenant ?",
+     "c": "Cuis à blanc un petit fond de tarte avec des haricots secs ou du riz et vérifie qu'il est sec et doré."
+    },
+    "it": {
+     "t": "Cottura in bianco",
+     "g": "Impara a cuocere in bianco un guscio di frolla con dei pesi perché la base sia croccante e mai umida.",
+     "p": [
+      "Fodera lo stampo con la pasta, bucherella il fondo con una forchetta e rimetti in frigo 15 minuti prima di cuocere.",
+      "Copri con carta forno e riempi con legumi secchi, riso o sfere di ceramica per evitare che il fondo si gonfi.",
+      "Cuoci a circa 190 °C finché i bordi si fissano, togli con cura i pesi caldi, poi cuoci finché il fondo è asciutto e dorato."
+     ],
+     "q": "Hai mai mangiato una crostata con il fondo molle? Cosa faresti di diverso ora?",
+     "c": "Cuoci in bianco un piccolo guscio usando legumi secchi o riso come pesi e controlla che il fondo sia asciutto e dorato."
+    },
+    "pt": {
+     "t": "Cozer em branco",
+     "g": "Aprende a cozer em branco uma base de tarte com pesos para ficar estaladiça e nunca encharcada.",
+     "p": [
+      "Forra a forma com a massa, pica o fundo com um garfo e leva de novo ao frio 15 minutos antes de cozer.",
+      "Cobre com papel vegetal e enche com feijão seco, arroz ou bolinhas de cerâmica para o fundo não inchar.",
+      "Coze a cerca de 190 °C até as bordas firmarem, tira os pesos quentes com cuidado e coze até o fundo ficar seco e dourado."
+     ],
+     "q": "Já comeste uma tarte com o fundo encharcado? O que farias de diferente agora?",
+     "c": "Coze em branco uma base pequena com feijão seco ou arroz como peso e confirma que o fundo fica seco e dourado."
+    },
+    "pt_BR": {
+     "t": "Assar às cegas",
+     "g": "Aprenda a pré-assar uma base de torta com peso para ela ficar crocante e nunca encharcada.",
+     "p": [
+      "Forre a forma com a massa, fure o fundo com um garfo e leve de novo à geladeira por 15 minutos antes de assar.",
+      "Cubra com papel-manteiga e encha com feijão seco, arroz ou bolinhas de cerâmica para o fundo não estufar.",
+      "Asse a cerca de 190 °C até as bordas firmarem, tire os pesos quentes com cuidado e asse até o fundo ficar seco e dourado."
+     ],
+     "q": "Você já comeu uma torta com o fundo encharcado? O que faria diferente agora?",
+     "c": "Asse às cegas uma base pequena usando feijão seco ou arroz como peso e confira se o fundo fica seco e dourado."
+    }
+   }
+  }
+ ]
+}

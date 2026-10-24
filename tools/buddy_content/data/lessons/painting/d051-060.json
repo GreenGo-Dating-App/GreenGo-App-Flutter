@@ -1,0 +1,835 @@
+{
+ "topic": "painting",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Highlights",
+     "g": "Add small bright accents that make surfaces look shiny, wet or polished.",
+     "p": [
+      "A highlight is the mirror-like reflection of the light source itself, so it is the brightest, smallest spot on the form.",
+      "Shiny objects have small, sharp highlights; matte ones like cloth or bread have soft, wide ones or none at all.",
+      "Place highlights last and sparingly: one confident touch looks wet and glossy, many look busy."
+     ],
+     "q": "Which objects around you have the brightest highlights right now?",
+     "c": "Paint a simple dark cherry or grape, then add one tiny sharp highlight and see it suddenly shine."
+    },
+    "de": {
+     "t": "Glanzlichter",
+     "g": "Setze kleine helle Akzente, die Oberflächen glänzend, nass oder poliert wirken lassen.",
+     "p": [
+      "Ein Glanzlicht ist die spiegelnde Reflexion der Lichtquelle selbst, also der hellste und kleinste Fleck auf der Form.",
+      "Glänzende Dinge haben kleine, scharfe Glanzlichter; matte wie Stoff oder Brot weiche, breite oder gar keine.",
+      "Setze Glanzlichter zuletzt und sparsam: Ein sicherer Tupfer wirkt nass und glänzend, viele wirken unruhig."
+     ],
+     "q": "Welche Gegenstände um dich haben gerade die hellsten Glanzlichter?",
+     "c": "Male eine einfache dunkle Kirsche oder Traube und setze ein winziges, scharfes Glanzlicht: Plötzlich glänzt sie."
+    },
+    "es": {
+     "t": "Brillos",
+     "g": "Añade pequeños toques luminosos que hacen que las superficies parezcan brillantes, mojadas o pulidas.",
+     "p": [
+      "El brillo es el reflejo especular de la propia fuente de luz, así que es el punto más claro y pequeño de la forma.",
+      "Los objetos brillantes tienen brillos pequeños y nítidos; los mates, como la tela o el pan, suaves y amplios, o ninguno.",
+      "Pon los brillos al final y con moderación: un toque seguro parece húmedo y brillante; muchos, recargado."
+     ],
+     "q": "¿Qué objetos a tu alrededor tienen ahora mismo los brillos más intensos?",
+     "c": "Pinta una cereza o una uva oscura sencilla y añade un brillo diminuto y nítido: verás cómo de pronto reluce."
+    },
+    "fr": {
+     "t": "Les rehauts",
+     "g": "Ajoute de petites touches claires qui rendent une surface brillante, mouillée ou polie.",
+     "p": [
+      "Un rehaut est le reflet en miroir de la source de lumière elle-même : c'est le point le plus clair et le plus petit.",
+      "Les objets brillants ont des rehauts petits et nets ; les mats, comme le tissu ou le pain, doux et larges, ou aucun.",
+      "Pose les rehauts en dernier et avec parcimonie : une touche sûre paraît mouillée et brillante, trop en fait du bruit."
+     ],
+     "q": "Quels objets autour de toi ont en ce moment les rehauts les plus éclatants ?",
+     "c": "Peins une cerise ou un grain de raisin foncé, puis ajoute un minuscule rehaut net et regarde-le briller."
+    },
+    "it": {
+     "t": "I lumi",
+     "g": "Aggiungi piccoli tocchi chiari che rendono le superfici lucide, bagnate o levigate.",
+     "p": [
+      "Il lume è il riflesso speculare della fonte di luce stessa: per questo è il punto più chiaro e piccolo della forma.",
+      "Gli oggetti lucidi hanno lumi piccoli e netti; quelli opachi, come stoffa o pane, morbidi e ampi, o nessuno.",
+      "Metti i lumi per ultimi e con parsimonia: un tocco sicuro sembra bagnato e lucido, troppi creano confusione."
+     ],
+     "q": "Quali oggetti intorno a te hanno in questo momento i lumi più brillanti?",
+     "c": "Dipingi una ciliegia o un acino scuro, poi aggiungi un lume minuscolo e netto e guardalo brillare."
+    },
+    "pt": {
+     "t": "Brilhos",
+     "g": "Junta pequenos toques luminosos que fazem as superfícies parecer brilhantes, molhadas ou polidas.",
+     "p": [
+      "O brilho é o reflexo espelhado da própria fonte de luz, por isso é o ponto mais claro e mais pequeno da forma.",
+      "Objetos brilhantes têm brilhos pequenos e nítidos; os mates, como tecido ou pão, suaves e largos, ou nenhum.",
+      "Põe os brilhos no fim e com moderação: um toque seguro parece molhado e brilhante; muitos ficam confusos."
+     ],
+     "q": "Que objetos à tua volta têm agora os brilhos mais intensos?",
+     "c": "Pinta uma cereja ou uva escura simples e junta um brilho minúsculo e nítido: vais vê-la a reluzir."
+    },
+    "pt_BR": {
+     "t": "Brilhos",
+     "g": "Adicione pequenos toques luminosos que fazem as superfícies parecerem brilhantes, molhadas ou polidas.",
+     "p": [
+      "O brilho é o reflexo espelhado da própria fonte de luz, por isso é o ponto mais claro e menor da forma.",
+      "Objetos brilhantes têm brilhos pequenos e nítidos; os foscos, como tecido ou pão, suaves e largos, ou nenhum.",
+      "Coloque os brilhos no fim e com moderação: um toque seguro parece molhado e brilhante; muitos poluem."
+     ],
+     "q": "Quais objetos ao seu redor têm agora os brilhos mais fortes?",
+     "c": "Pinte uma cereja ou uva escura simples e adicione um brilho minúsculo e nítido: veja como ela passa a reluzir."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hard and soft edges",
+     "g": "Decide which shapes need crisp borders and which should melt into their surroundings.",
+     "p": [
+      "Hard edges grab attention and say solid, close or important; soft edges suggest turning forms, distance or movement.",
+      "Lost edges disappear completely where two similar values meet, letting the eye fill in the gap.",
+      "A mix of edges looks natural; keep your hardest edges near your focal point and soften the rest."
+     ],
+     "q": "Look at a photo you like: where are the sharpest edges, and do they lead your eye?",
+     "c": "Paint the same leaf twice: once with all hard edges, once with one side softened into the background. Compare."
+    },
+    "de": {
+     "t": "Harte und weiche Kanten",
+     "g": "Entscheide, welche Formen scharfe Ränder brauchen und welche in die Umgebung übergehen sollen.",
+     "p": [
+      "Harte Kanten ziehen Blicke an und sagen fest, nah oder wichtig; weiche Kanten deuten Rundung, Ferne oder Bewegung an.",
+      "Verlorene Kanten verschwinden ganz, wo zwei ähnliche Tonwerte aufeinandertreffen; das Auge ergänzt die Lücke.",
+      "Eine Mischung wirkt natürlich: Die härtesten Kanten gehören in die Nähe des Blickpunkts, der Rest wird weicher."
+     ],
+     "q": "Schau dir ein Foto an, das du magst: Wo sind die schärfsten Kanten, und lenken sie deinen Blick?",
+     "c": "Male dasselbe Blatt zweimal: einmal nur mit harten Kanten, einmal mit einer weich verlaufenden Seite. Vergleiche."
+    },
+    "es": {
+     "t": "Bordes duros y suaves",
+     "g": "Decide qué formas necesitan bordes nítidos y cuáles deben fundirse con su entorno.",
+     "p": [
+      "Los bordes duros atraen la mirada y dicen sólido, cercano o importante; los suaves sugieren giro, distancia o movimiento.",
+      "Los bordes perdidos desaparecen donde se juntan dos valores parecidos, y el ojo completa el hueco.",
+      "Una mezcla de bordes resulta natural: deja los más duros cerca del punto focal y suaviza el resto."
+     ],
+     "q": "Mira una foto que te guste: ¿dónde están los bordes más nítidos y te guían la mirada?",
+     "c": "Pinta la misma hoja dos veces: una con todos los bordes duros y otra con un lado fundido con el fondo. Compara."
+    },
+    "fr": {
+     "t": "Bords nets et bords doux",
+     "g": "Décide quelles formes demandent des bords nets et lesquelles doivent se fondre dans leur entourage.",
+     "p": [
+      "Les bords nets attirent l'œil et disent solide, proche ou important ; les bords doux suggèrent volume, distance ou mouvement.",
+      "Les bords perdus disparaissent là où deux valeurs proches se touchent, et l'œil complète de lui-même.",
+      "Un mélange de bords paraît naturel : garde les plus nets près du point focal et adoucis le reste."
+     ],
+     "q": "Regarde une photo que tu aimes : où sont les bords les plus nets, et guident-ils ton regard ?",
+     "c": "Peins deux fois la même feuille : une fois tout en bords nets, une fois avec un côté fondu dans le fond. Compare."
+    },
+    "it": {
+     "t": "Bordi netti e morbidi",
+     "g": "Decidi quali forme richiedono bordi netti e quali devono fondersi con ciò che le circonda.",
+     "p": [
+      "I bordi netti attirano lo sguardo e dicono solido, vicino o importante; quelli morbidi suggeriscono volume, distanza o movimento.",
+      "I bordi perduti spariscono dove due valori simili si incontrano, e l'occhio completa da solo.",
+      "Un mix di bordi appare naturale: tieni i più netti vicino al punto focale e ammorbidisci il resto."
+     ],
+     "q": "Guarda una foto che ti piace: dove sono i bordi più netti, e guidano il tuo sguardo?",
+     "c": "Dipingi la stessa foglia due volte: una con tutti i bordi netti, una con un lato sfumato nello sfondo. Confronta."
+    },
+    "pt": {
+     "t": "Bordas duras e suaves",
+     "g": "Decide que formas precisam de bordas nítidas e quais se devem fundir com o que as rodeia.",
+     "p": [
+      "Bordas duras chamam a atenção e dizem sólido, perto ou importante; as suaves sugerem volume, distância ou movimento.",
+      "Bordas perdidas desaparecem onde dois valores parecidos se encontram, e o olho completa o resto.",
+      "Uma mistura de bordas parece natural: deixa as mais duras perto do ponto focal e suaviza o resto."
+     ],
+     "q": "Olha para uma foto de que gostes: onde estão as bordas mais nítidas, e guiam o teu olhar?",
+     "c": "Pinta a mesma folha duas vezes: uma só com bordas duras, outra com um lado fundido no fundo. Compara."
+    },
+    "pt_BR": {
+     "t": "Bordas duras e suaves",
+     "g": "Decida quais formas precisam de bordas nítidas e quais devem se fundir com o entorno.",
+     "p": [
+      "Bordas duras chamam a atenção e dizem sólido, perto ou importante; as suaves sugerem volume, distância ou movimento.",
+      "Bordas perdidas somem onde dois valores parecidos se encontram, e o olho completa o espaço.",
+      "Uma mistura de bordas parece natural: deixe as mais duras perto do ponto focal e suavize o resto."
+     ],
+     "q": "Olhe uma foto de que você gosta: onde estão as bordas mais nítidas, e elas guiam seu olhar?",
+     "c": "Pinte a mesma folha duas vezes: uma só com bordas duras, outra com um lado fundido no fundo. Compare."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first still life",
+     "g": "Arrange two or three simple objects and paint them big shapes first.",
+     "p": [
+      "Choose objects of different heights and sizes, overlap them a little and light them from one side.",
+      "Squint and block in the large shapes and shadow masses before thinking about any small details.",
+      "Work from general to specific: big shapes, then middle values, then edges and only a few final details."
+     ],
+     "q": "Which two or three objects from your kitchen would make a charming still life?",
+     "c": "Set up a cup, a piece of fruit and a spoon under one light and paint them in 20 minutes, big shapes only."
+    },
+    "de": {
+     "t": "Dein erstes Stillleben",
+     "g": "Arrangiere zwei oder drei einfache Gegenstände und male zuerst die großen Formen.",
+     "p": [
+      "Wähle Dinge verschiedener Höhe und Größe, lass sie sich leicht überlappen und beleuchte sie von einer Seite.",
+      "Kneif die Augen zu und lege die großen Formen und Schattenmassen an, bevor du an Details denkst.",
+      "Arbeite vom Groben zum Feinen: große Formen, dann Mitteltöne, dann Kanten und nur wenige letzte Details."
+     ],
+     "q": "Welche zwei oder drei Dinge aus deiner Küche ergäben ein charmantes Stillleben?",
+     "c": "Stell eine Tasse, ein Obststück und einen Löffel unter ein Licht und male sie in 20 Minuten, nur große Formen."
+    },
+    "es": {
+     "t": "Tu primer bodegón",
+     "g": "Coloca dos o tres objetos sencillos y píntalos empezando por las formas grandes.",
+     "p": [
+      "Elige objetos de distintas alturas y tamaños, solápalos un poco e ilumínalos desde un lado.",
+      "Entrecierra los ojos y encaja las formas grandes y las masas de sombra antes de pensar en detalles.",
+      "Trabaja de lo general a lo concreto: formas grandes, luego valores medios, después bordes y solo unos pocos detalles."
+     ],
+     "q": "¿Qué dos o tres objetos de tu cocina formarían un bodegón encantador?",
+     "c": "Coloca una taza, una fruta y una cuchara bajo una luz y píntalos en 20 minutos, solo formas grandes."
+    },
+    "fr": {
+     "t": "Ta première nature morte",
+     "g": "Dispose deux ou trois objets simples et peins d'abord les grandes formes.",
+     "p": [
+      "Choisis des objets de hauteurs et tailles différentes, fais-les se chevaucher un peu et éclaire-les d'un côté.",
+      "Plisse les yeux et pose les grandes formes et masses d'ombre avant de penser au moindre détail.",
+      "Va du général au particulier : grandes formes, valeurs moyennes, puis bords et seulement quelques derniers détails."
+     ],
+     "q": "Quels deux ou trois objets de ta cuisine feraient une jolie nature morte ?",
+     "c": "Installe une tasse, un fruit et une cuillère sous une lumière et peins-les en 20 minutes, grandes formes seulement."
+    },
+    "it": {
+     "t": "La tua prima natura morta",
+     "g": "Disponi due o tre oggetti semplici e dipingili partendo dalle forme grandi.",
+     "p": [
+      "Scegli oggetti di altezze e dimensioni diverse, sovrapponili un po' e illuminali da un lato.",
+      "Socchiudi gli occhi e imposta le forme grandi e le masse d'ombra prima di pensare a qualsiasi dettaglio.",
+      "Lavora dal generale al particolare: forme grandi, poi valori medi, poi bordi e solo pochi dettagli finali."
+     ],
+     "q": "Quali due o tre oggetti della tua cucina formerebbero una natura morta deliziosa?",
+     "c": "Disponi una tazza, un frutto e un cucchiaio sotto una luce e dipingili in 20 minuti, solo forme grandi."
+    },
+    "pt": {
+     "t": "A tua primeira natureza-morta",
+     "g": "Dispõe dois ou três objetos simples e pinta-os começando pelas formas grandes.",
+     "p": [
+      "Escolhe objetos de alturas e tamanhos diferentes, sobrepõe-nos um pouco e ilumina-os de um lado.",
+      "Semicerra os olhos e marca as formas grandes e as massas de sombra antes de pensar em detalhes.",
+      "Trabalha do geral para o particular: formas grandes, depois valores médios, depois bordas e só alguns detalhes finais."
+     ],
+     "q": "Que dois ou três objetos da tua cozinha dariam uma natureza-morta encantadora?",
+     "c": "Põe uma chávena, uma peça de fruta e uma colher sob uma luz e pinta-os em 20 minutos, só formas grandes."
+    },
+    "pt_BR": {
+     "t": "Sua primeira natureza-morta",
+     "g": "Arrume dois ou três objetos simples e pinte começando pelas formas grandes.",
+     "p": [
+      "Escolha objetos de alturas e tamanhos diferentes, sobreponha um pouco e ilumine de um lado só.",
+      "Aperte os olhos e marque as formas grandes e as massas de sombra antes de pensar em detalhes.",
+      "Vá do geral para o específico: formas grandes, depois valores médios, depois bordas e só alguns detalhes finais."
+     ],
+     "q": "Quais dois ou três objetos da sua cozinha dariam uma natureza-morta encantadora?",
+     "c": "Coloque uma xícara, uma fruta e uma colher sob uma luz e pinte em 20 minutos, só formas grandes."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting fruit",
+     "g": "Paint rounded forms with subtle colour shifts, like an apple or a lemon.",
+     "p": [
+      "Treat each fruit as a sphere first: light side, core shadow, reflected light, cast shadow, then the local colour.",
+      "Look for colour shifts: an apple can move from yellow-green to deep red, and the shadow side often turns cooler.",
+      "Small touches like a stem, a dimple or a speckled texture add character; Cézanne built whole careers on apples."
+     ],
+     "q": "What is your favourite fruit, and what colours do you think it really has?",
+     "c": "Paint one apple or lemon from life, spotting at least three different colours inside its skin."
+    },
+    "de": {
+     "t": "Obst malen",
+     "g": "Male runde Formen mit feinen Farbwechseln, etwa einen Apfel oder eine Zitrone.",
+     "p": [
+      "Behandle jede Frucht zuerst als Kugel: Lichtseite, Kernschatten, Reflexlicht, Schlagschatten, dann die Eigenfarbe.",
+      "Achte auf Farbwechsel: Ein Apfel kann von Gelbgrün zu tiefem Rot gehen, die Schattenseite wird oft kühler.",
+      "Kleinigkeiten wie Stiel, Mulde oder gesprenkelte Haut geben Charakter; Cézanne malte Äpfel sein Leben lang."
+     ],
+     "q": "Was ist dein Lieblingsobst, und welche Farben hat es wirklich?",
+     "c": "Male einen Apfel oder eine Zitrone nach der Natur und finde mindestens drei verschiedene Farben in der Schale."
+    },
+    "es": {
+     "t": "Pintar fruta",
+     "g": "Pinta formas redondeadas con cambios de color sutiles, como una manzana o un limón.",
+     "p": [
+      "Trata cada fruta primero como una esfera: luz, sombra central, luz reflejada, sombra proyectada y luego el color local.",
+      "Busca los cambios de color: una manzana puede ir del verde amarillento al rojo intenso, y el lado en sombra suele enfriarse.",
+      "Detalles como el rabito, el hoyuelo o la piel moteada dan carácter; Cézanne pintó manzanas durante décadas."
+     ],
+     "q": "¿Cuál es tu fruta favorita y qué colores crees que tiene en realidad?",
+     "c": "Pinta del natural una manzana o un limón y descubre al menos tres colores distintos en su piel."
+    },
+    "fr": {
+     "t": "Peindre des fruits",
+     "g": "Peins des formes rondes aux subtiles variations de couleur, comme une pomme ou un citron.",
+     "p": [
+      "Traite chaque fruit d'abord comme une sphère : lumière, cœur d'ombre, reflet, ombre portée, puis la couleur locale.",
+      "Cherche les variations : une pomme peut passer du jaune-vert au rouge profond, et le côté ombré se refroidit souvent.",
+      "Des détails comme la queue, le creux ou la peau tachetée donnent du caractère ; Cézanne a peint des pommes toute sa vie."
+     ],
+     "q": "Quel est ton fruit préféré, et quelles couleurs a-t-il vraiment selon toi ?",
+     "c": "Peins d'après nature une pomme ou un citron et repère au moins trois couleurs différentes dans sa peau."
+    },
+    "it": {
+     "t": "Dipingere la frutta",
+     "g": "Dipingi forme rotonde con sottili variazioni di colore, come una mela o un limone.",
+     "p": [
+      "Tratta ogni frutto prima come una sfera: luce, nucleo d'ombra, riflesso, ombra portata e poi il colore locale.",
+      "Cerca le variazioni: una mela può passare dal giallo-verde al rosso intenso, e il lato in ombra spesso si raffredda.",
+      "Dettagli come il picciolo, la fossetta o la buccia puntinata danno carattere; Cézanne dipinse mele per decenni."
+     ],
+     "q": "Qual è il tuo frutto preferito, e quali colori ha davvero secondo te?",
+     "c": "Dipingi dal vero una mela o un limone e trova almeno tre colori diversi nella buccia."
+    },
+    "pt": {
+     "t": "Pintar fruta",
+     "g": "Pinta formas redondas com mudanças de cor subtis, como uma maçã ou um limão.",
+     "p": [
+      "Trata cada fruto primeiro como uma esfera: luz, núcleo da sombra, luz refletida, sombra projetada e depois a cor local.",
+      "Procura as mudanças de cor: uma maçã pode ir do verde-amarelado ao vermelho intenso, e o lado da sombra fica mais frio.",
+      "Detalhes como o pé, a covinha ou a casca pintalgada dão carácter; Cézanne pintou maçãs durante décadas."
+     ],
+     "q": "Qual é a tua fruta preferida e que cores achas que ela tem realmente?",
+     "c": "Pinta do natural uma maçã ou um limão e descobre pelo menos três cores diferentes na casca."
+    },
+    "pt_BR": {
+     "t": "Pintando frutas",
+     "g": "Pinte formas redondas com mudanças sutis de cor, como uma maçã ou um limão.",
+     "p": [
+      "Trate cada fruta primeiro como uma esfera: luz, núcleo da sombra, luz refletida, sombra projetada e depois a cor local.",
+      "Procure as mudanças de cor: uma maçã pode ir do verde-amarelado ao vermelho intenso, e o lado da sombra fica mais frio.",
+      "Detalhes como o cabinho, a covinha ou a casca pintadinha dão personalidade; Cézanne pintou maçãs por décadas."
+     ],
+     "q": "Qual é sua fruta favorita e que cores você acha que ela tem de verdade?",
+     "c": "Pinte ao vivo uma maçã ou um limão e descubra pelo menos três cores diferentes na casca."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting glass and shine",
+     "g": "See reflections and transparency as simple shapes of light and dark.",
+     "p": [
+      "Glass has little colour of its own: it shows the background through it, bent and distorted, plus reflections on top.",
+      "Paint what you see, not what you know: dark shapes, light shapes and a few crisp edges and highlights.",
+      "Strong contrasts sell the effect: a bright highlight right next to a dark accent instantly says glass or metal."
+     ],
+     "q": "Which glass or shiny object at home looks the most magical to you?",
+     "c": "Paint a clear glass of water using only the shapes you see through it, then add one bright highlight."
+    },
+    "de": {
+     "t": "Glas und Glanz malen",
+     "g": "Sieh Spiegelungen und Transparenz als einfache helle und dunkle Formen.",
+     "p": [
+      "Glas hat kaum eigene Farbe: Es zeigt den Hintergrund verzerrt hindurch, dazu Spiegelungen an der Oberfläche.",
+      "Male, was du siehst, nicht was du weißt: dunkle Formen, helle Formen und ein paar scharfe Kanten und Glanzlichter.",
+      "Starke Kontraste machen die Wirkung: Ein helles Glanzlicht direkt neben einem dunklen Akzent sagt sofort Glas oder Metall."
+     ],
+     "q": "Welcher gläserne oder glänzende Gegenstand bei dir wirkt am magischsten?",
+     "c": "Male ein klares Glas Wasser nur mit den Formen, die du hindurch siehst, und setze dann ein helles Glanzlicht."
+    },
+    "es": {
+     "t": "Pintar cristal y brillo",
+     "g": "Ve los reflejos y la transparencia como formas simples de luz y oscuridad.",
+     "p": [
+      "El cristal tiene poco color propio: muestra el fondo a través, curvado y deformado, más los reflejos encima.",
+      "Pinta lo que ves, no lo que sabes: formas oscuras, formas claras y unos pocos bordes nítidos y brillos.",
+      "Los contrastes fuertes crean el efecto: un brillo intenso junto a un acento oscuro dice al instante cristal o metal."
+     ],
+     "q": "¿Qué objeto de cristal o brillante de tu casa te parece más mágico?",
+     "c": "Pinta un vaso de agua transparente usando solo las formas que ves a través de él y añade un brillo intenso."
+    },
+    "fr": {
+     "t": "Peindre le verre et la brillance",
+     "g": "Vois reflets et transparence comme de simples formes claires et sombres.",
+     "p": [
+      "Le verre a peu de couleur propre : il montre le fond à travers lui, courbé et déformé, plus des reflets en surface.",
+      "Peins ce que tu vois, pas ce que tu sais : formes sombres, formes claires, quelques bords nets et rehauts.",
+      "Des contrastes forts font l'effet : un rehaut éclatant juste à côté d'un accent sombre dit aussitôt verre ou métal."
+     ],
+     "q": "Quel objet en verre ou brillant chez toi te paraît le plus magique ?",
+     "c": "Peins un verre d'eau transparent avec seulement les formes vues à travers, puis ajoute un rehaut éclatant."
+    },
+    "it": {
+     "t": "Dipingere vetro e lucentezza",
+     "g": "Vedi riflessi e trasparenze come semplici forme di chiaro e scuro.",
+     "p": [
+      "Il vetro ha poco colore proprio: mostra lo sfondo attraverso, curvato e deformato, più i riflessi sopra.",
+      "Dipingi ciò che vedi, non ciò che sai: forme scure, forme chiare e pochi bordi netti e lumi.",
+      "I contrasti forti creano l'effetto: un lume brillante accanto a un accento scuro dice subito vetro o metallo."
+     ],
+     "q": "Quale oggetto di vetro o lucido in casa ti sembra più magico?",
+     "c": "Dipingi un bicchiere d'acqua trasparente usando solo le forme che vedi attraverso, poi aggiungi un lume brillante."
+    },
+    "pt": {
+     "t": "Pintar vidro e brilho",
+     "g": "Vê os reflexos e a transparência como formas simples de claro e escuro.",
+     "p": [
+      "O vidro tem pouca cor própria: mostra o fundo através dele, curvado e deformado, mais os reflexos por cima.",
+      "Pinta o que vês, não o que sabes: formas escuras, formas claras e algumas bordas nítidas e brilhos.",
+      "Contrastes fortes criam o efeito: um brilho intenso mesmo ao lado de um acento escuro diz logo vidro ou metal."
+     ],
+     "q": "Que objeto de vidro ou brilhante em tua casa te parece mais mágico?",
+     "c": "Pinta um copo de água transparente usando só as formas que vês através dele e junta um brilho intenso."
+    },
+    "pt_BR": {
+     "t": "Pintando vidro e brilho",
+     "g": "Veja reflexos e transparência como formas simples de claro e escuro.",
+     "p": [
+      "O vidro tem pouca cor própria: mostra o fundo através dele, curvado e distorcido, mais os reflexos por cima.",
+      "Pinte o que você vê, não o que sabe: formas escuras, formas claras e algumas bordas nítidas e brilhos.",
+      "Contrastes fortes criam o efeito: um brilho intenso bem ao lado de um acento escuro diz na hora vidro ou metal."
+     ],
+     "q": "Qual objeto de vidro ou brilhante na sua casa parece mais mágico para você?",
+     "c": "Pinte um copo de água transparente usando só as formas que vê através dele e adicione um brilho intenso."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting fabric folds",
+     "g": "Simplify drapery into light planes, shadow planes and soft turns.",
+     "p": [
+      "Folds radiate from points of tension, where cloth hangs from a nail, wraps a corner or gathers in a knot.",
+      "Simplify each fold into a lit plane, a soft half-tone turn and a shadow plane, like small cylinders.",
+      "Thin fabric like silk makes many sharp folds; thick fabric like wool makes fewer, broader and rounder ones."
+     ],
+     "q": "What fabric in your home has the most interesting folds: a curtain, a towel or a shirt?",
+     "c": "Drape a towel over a chair, squint, and paint only the three or four biggest folds as light and shadow planes."
+    },
+    "de": {
+     "t": "Stofffalten malen",
+     "g": "Vereinfache Faltenwurf in Lichtflächen, Schattenflächen und weiche Übergänge.",
+     "p": [
+      "Falten strahlen von Spannungspunkten aus, wo Stoff an einem Nagel hängt, eine Ecke umhüllt oder sich zum Knoten rafft.",
+      "Vereinfache jede Falte in eine Lichtfläche, einen weichen Halbton und eine Schattenfläche, wie kleine Zylinder.",
+      "Dünner Stoff wie Seide wirft viele scharfe Falten; dicker wie Wolle weniger, breitere und rundere."
+     ],
+     "q": "Welcher Stoff bei dir hat die interessantesten Falten: Vorhang, Handtuch oder Hemd?",
+     "c": "Leg ein Handtuch über einen Stuhl, kneif die Augen zu und male nur die drei oder vier größten Falten als Licht- und Schattenflächen."
+    },
+    "es": {
+     "t": "Pintar pliegues de tela",
+     "g": "Simplifica los paños en planos de luz, planos de sombra y giros suaves.",
+     "p": [
+      "Los pliegues irradian desde puntos de tensión: donde la tela cuelga de un clavo, envuelve una esquina o se recoge en un nudo.",
+      "Simplifica cada pliegue en un plano iluminado, un giro suave de medio tono y un plano de sombra, como pequeños cilindros.",
+      "Las telas finas como la seda forman muchos pliegues nítidos; las gruesas como la lana, menos, más anchos y redondeados."
+     ],
+     "q": "¿Qué tela de tu casa tiene los pliegues más interesantes: una cortina, una toalla o una camisa?",
+     "c": "Cuelga una toalla en una silla, entrecierra los ojos y pinta solo los tres o cuatro pliegues mayores como planos de luz y sombra."
+    },
+    "fr": {
+     "t": "Peindre les plis du tissu",
+     "g": "Simplifie les drapés en plans éclairés, plans d'ombre et passages doux.",
+     "p": [
+      "Les plis rayonnent depuis des points de tension : où le tissu pend à un clou, enveloppe un coin ou se noue.",
+      "Simplifie chaque pli en un plan éclairé, une demi-teinte douce et un plan d'ombre, comme de petits cylindres.",
+      "Un tissu fin comme la soie fait beaucoup de plis nets ; un tissu épais comme la laine, moins de plis, plus larges et ronds."
+     ],
+     "q": "Quel tissu chez toi a les plis les plus intéressants : un rideau, une serviette ou une chemise ?",
+     "c": "Pose une serviette sur une chaise, plisse les yeux et peins seulement les trois ou quatre plus grands plis en plans clairs et sombres."
+    },
+    "it": {
+     "t": "Dipingere le pieghe",
+     "g": "Semplifica i panneggi in piani di luce, piani d'ombra e passaggi morbidi.",
+     "p": [
+      "Le pieghe si irradiano dai punti di tensione: dove la stoffa pende da un chiodo, avvolge un angolo o si raccoglie in un nodo.",
+      "Semplifica ogni piega in un piano in luce, una mezzatinta morbida e un piano d'ombra, come piccoli cilindri.",
+      "Le stoffe sottili come la seta fanno molte pieghe nette; quelle spesse come la lana meno pieghe, più larghe e rotonde."
+     ],
+     "q": "Quale tessuto di casa tua ha le pieghe più interessanti: una tenda, un asciugamano o una camicia?",
+     "c": "Appoggia un asciugamano su una sedia, socchiudi gli occhi e dipingi solo le tre o quattro pieghe più grandi come piani di luce e ombra."
+    },
+    "pt": {
+     "t": "Pintar pregas de tecido",
+     "g": "Simplifica os panejamentos em planos de luz, planos de sombra e viragens suaves.",
+     "p": [
+      "As pregas irradiam de pontos de tensão: onde o tecido pende de um prego, envolve um canto ou se junta num nó.",
+      "Simplifica cada prega num plano iluminado, uma viragem suave de meio-tom e um plano de sombra, como pequenos cilindros.",
+      "Tecidos finos como a seda fazem muitas pregas nítidas; grossos como a lã fazem menos, mais largas e redondas."
+     ],
+     "q": "Que tecido em tua casa tem as pregas mais interessantes: uma cortina, uma toalha ou uma camisa?",
+     "c": "Pousa uma toalha numa cadeira, semicerra os olhos e pinta só as três ou quatro pregas maiores como planos de luz e sombra."
+    },
+    "pt_BR": {
+     "t": "Pintando dobras de tecido",
+     "g": "Simplifique os panejamentos em planos de luz, planos de sombra e viradas suaves.",
+     "p": [
+      "As dobras irradiam de pontos de tensão: onde o tecido pende de um prego, envolve um canto ou se junta num nó.",
+      "Simplifique cada dobra num plano iluminado, uma virada suave de meio-tom e um plano de sombra, como pequenos cilindros.",
+      "Tecidos finos como a seda fazem muitas dobras nítidas; grossos como a lã fazem menos, mais largas e redondas."
+     ],
+     "q": "Qual tecido na sua casa tem as dobras mais interessantes: uma cortina, uma toalha ou uma camisa?",
+     "c": "Jogue uma toalha numa cadeira, aperte os olhos e pinte só as três ou quatro maiores dobras como planos de luz e sombra."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting from photos",
+     "g": "Use reference photos wisely without copying every tiny detail.",
+     "p": [
+      "Cameras flatten depth, darken shadows and blow out lights, so trust your eye and adjust values and colours.",
+      "Simplify: crop to the strongest part, squint to find big shapes and leave out details that do not help.",
+      "Use your own photos when you can; you remember the place and the light, and you avoid copyright worries."
+     ],
+     "q": "Do you have a favourite photo, maybe from a trip, that you would love to turn into a painting?",
+     "c": "Choose one of your own photos, crop it to a small strong area and paint it with no more than ten shapes."
+    },
+    "de": {
+     "t": "Nach Fotos malen",
+     "g": "Nutze Fotovorlagen klug, ohne jedes winzige Detail abzumalen.",
+     "p": [
+      "Kameras verflachen die Tiefe, verdunkeln Schatten und lassen Lichter ausbrennen: Vertrau deinem Auge und passe an.",
+      "Vereinfache: Beschneide auf den stärksten Teil, kneif die Augen für große Formen zu und lass unnötige Details weg.",
+      "Nutze möglichst eigene Fotos: Du erinnerst dich an Ort und Licht und hast keine Urheberrechtssorgen."
+     ],
+     "q": "Hast du ein Lieblingsfoto, vielleicht von einer Reise, das du gern in ein Bild verwandeln würdest?",
+     "c": "Wähle ein eigenes Foto, beschneide es auf einen kleinen starken Ausschnitt und male es mit höchstens zehn Formen."
+    },
+    "es": {
+     "t": "Pintar a partir de fotos",
+     "g": "Usa las fotos de referencia con criterio, sin copiar cada pequeño detalle.",
+     "p": [
+      "La cámara aplana la profundidad, oscurece las sombras y quema las luces: confía en tu ojo y ajusta valores y colores.",
+      "Simplifica: encuadra la parte más fuerte, entrecierra los ojos para ver las formas grandes y omite lo que no ayude.",
+      "Usa tus propias fotos cuando puedas: recuerdas el lugar y la luz, y evitas problemas de derechos de autor."
+     ],
+     "q": "¿Tienes una foto favorita, quizá de un viaje, que te encantaría convertir en cuadro?",
+     "c": "Elige una foto tuya, recórtala a una zona pequeña y potente y píntala con no más de diez formas."
+    },
+    "fr": {
+     "t": "Peindre d'après photo",
+     "g": "Utilise les photos de référence avec intelligence, sans copier chaque petit détail.",
+     "p": [
+      "L'appareil aplatit la profondeur, assombrit les ombres et brûle les lumières : fais confiance à ton œil et ajuste.",
+      "Simplifie : recadre sur la partie la plus forte, plisse les yeux pour voir les grandes formes et oublie l'inutile.",
+      "Utilise tes propres photos si possible : tu te souviens du lieu et de la lumière, et pas de souci de droits d'auteur."
+     ],
+     "q": "As-tu une photo préférée, peut-être de voyage, que tu aimerais transformer en tableau ?",
+     "c": "Choisis une de tes photos, recadre-la sur une petite zone forte et peins-la avec dix formes au maximum."
+    },
+    "it": {
+     "t": "Dipingere da foto",
+     "g": "Usa le foto di riferimento con intelligenza, senza copiare ogni minimo dettaglio.",
+     "p": [
+      "La fotocamera appiattisce la profondità, scurisce le ombre e brucia le luci: fidati del tuo occhio e correggi.",
+      "Semplifica: ritaglia la parte più forte, socchiudi gli occhi per le forme grandi e tralascia i dettagli inutili.",
+      "Usa le tue foto quando puoi: ricordi il luogo e la luce, ed eviti problemi di diritto d'autore."
+     ],
+     "q": "Hai una foto preferita, magari di un viaggio, che ti piacerebbe trasformare in un dipinto?",
+     "c": "Scegli una tua foto, ritagliala su una piccola zona forte e dipingila con non più di dieci forme."
+    },
+    "pt": {
+     "t": "Pintar a partir de fotos",
+     "g": "Usa fotos de referência com inteligência, sem copiar cada pequeno detalhe.",
+     "p": [
+      "A câmara achata a profundidade, escurece as sombras e queima as luzes: confia no teu olho e ajusta.",
+      "Simplifica: corta para a parte mais forte, semicerra os olhos para ver as formas grandes e deixa de fora o que não ajuda.",
+      "Usa fotos tuas sempre que possível: lembras-te do lugar e da luz, e evitas problemas de direitos de autor."
+     ],
+     "q": "Tens uma foto preferida, talvez de uma viagem, que adorarias transformar num quadro?",
+     "c": "Escolhe uma foto tua, corta-a para uma zona pequena e forte e pinta-a com no máximo dez formas."
+    },
+    "pt_BR": {
+     "t": "Pintando a partir de fotos",
+     "g": "Use fotos de referência com inteligência, sem copiar cada detalhezinho.",
+     "p": [
+      "A câmera achata a profundidade, escurece as sombras e estoura as luzes: confie no seu olho e ajuste.",
+      "Simplifique: recorte a parte mais forte, aperte os olhos para ver as formas grandes e deixe de fora o que não ajuda.",
+      "Use suas próprias fotos quando puder: você lembra do lugar e da luz, e evita problemas de direitos autorais."
+     ],
+     "q": "Você tem uma foto favorita, talvez de uma viagem, que adoraria transformar num quadro?",
+     "c": "Escolha uma foto sua, recorte numa área pequena e forte e pinte com no máximo dez formas."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting from life",
+     "g": "Discover why observing real objects trains your eye in ways a photo cannot.",
+     "p": [
+      "Your two eyes see real depth, subtle colour shifts in shadows and a wider range of lights and darks than a camera.",
+      "Life forces you to simplify and decide, because light changes and you cannot zoom in endlessly.",
+      "Painting outdoors from life, en plein air, became popular with the Impressionists thanks to portable paint tubes."
+     ],
+     "q": "Where near you could you sit and paint from life for half an hour?",
+     "c": "Paint one real object on your table for 15 minutes without using a phone or photo at all."
+    },
+    "de": {
+     "t": "Nach der Natur malen",
+     "g": "Entdecke, warum das Beobachten echter Dinge dein Auge anders schult als ein Foto.",
+     "p": [
+      "Deine zwei Augen sehen echte Tiefe, feine Farbwechsel im Schatten und mehr Hell-Dunkel-Umfang als eine Kamera.",
+      "Die Natur zwingt dich zu vereinfachen und zu entscheiden, weil sich das Licht ändert und du nicht endlos zoomen kannst.",
+      "Das Malen im Freien, en plein air, wurde bei den Impressionisten beliebt, auch dank tragbarer Farbtuben."
+     ],
+     "q": "Wo in deiner Nähe könntest du eine halbe Stunde sitzen und nach der Natur malen?",
+     "c": "Male 15 Minuten lang einen echten Gegenstand auf deinem Tisch, ganz ohne Handy oder Foto."
+    },
+    "es": {
+     "t": "Pintar del natural",
+     "g": "Descubre por qué observar objetos reales entrena tu ojo como no puede hacerlo una foto.",
+     "p": [
+      "Tus dos ojos ven profundidad real, sutiles cambios de color en las sombras y más gama de luces y oscuros que una cámara.",
+      "El natural te obliga a simplificar y decidir, porque la luz cambia y no puedes hacer zoom sin fin.",
+      "Pintar al aire libre del natural, en plein air, se popularizó con los impresionistas gracias a los tubos de pintura portátiles."
+     ],
+     "q": "¿Dónde cerca de ti podrías sentarte a pintar del natural durante media hora?",
+     "c": "Pinta un objeto real de tu mesa durante 15 minutos sin usar el móvil ni ninguna foto."
+    },
+    "fr": {
+     "t": "Peindre d'après nature",
+     "g": "Découvre pourquoi observer de vrais objets entraîne ton œil comme aucune photo ne le peut.",
+     "p": [
+      "Tes deux yeux voient la vraie profondeur, de subtiles variations de couleur dans l'ombre et plus de nuances qu'un appareil.",
+      "Le motif t'oblige à simplifier et à choisir, car la lumière change et tu ne peux pas zoomer sans fin.",
+      "Peindre dehors sur le motif, en plein air, s'est répandu avec les impressionnistes grâce aux tubes de peinture portables."
+     ],
+     "q": "Où près de chez toi pourrais-tu t'asseoir pour peindre d'après nature une demi-heure ?",
+     "c": "Peins un vrai objet sur ta table pendant 15 minutes sans utiliser de téléphone ni de photo."
+    },
+    "it": {
+     "t": "Dipingere dal vero",
+     "g": "Scopri perché osservare oggetti reali allena l'occhio come nessuna foto può fare.",
+     "p": [
+      "I tuoi due occhi vedono la vera profondità, sottili variazioni di colore nelle ombre e più gamma di luci e scuri di una fotocamera.",
+      "Il vero ti obbliga a semplificare e decidere, perché la luce cambia e non puoi zoomare all'infinito.",
+      "Dipingere all'aperto dal vero, en plein air, si diffuse con gli impressionisti grazie ai tubetti di colore portatili."
+     ],
+     "q": "Dove vicino a te potresti sederti a dipingere dal vero per mezz'ora?",
+     "c": "Dipingi per 15 minuti un oggetto reale sul tuo tavolo, senza usare telefono né foto."
+    },
+    "pt": {
+     "t": "Pintar do natural",
+     "g": "Descobre porque observar objetos reais treina o teu olho como nenhuma foto consegue.",
+     "p": [
+      "Os teus dois olhos veem profundidade real, mudanças subtis de cor nas sombras e mais gama de claros e escuros do que uma câmara.",
+      "O natural obriga-te a simplificar e decidir, porque a luz muda e não podes fazer zoom sem fim.",
+      "Pintar ao ar livre do natural, en plein air, popularizou-se com os impressionistas graças aos tubos de tinta portáteis."
+     ],
+     "q": "Onde perto de ti te podias sentar a pintar do natural durante meia hora?",
+     "c": "Pinta durante 15 minutos um objeto real da tua mesa, sem usar telemóvel nem fotos."
+    },
+    "pt_BR": {
+     "t": "Pintando ao vivo",
+     "g": "Descubra por que observar objetos reais treina seu olho de um jeito que nenhuma foto consegue.",
+     "p": [
+      "Seus dois olhos veem profundidade real, mudanças sutis de cor nas sombras e mais gama de claros e escuros que uma câmera.",
+      "O modelo real obriga você a simplificar e decidir, porque a luz muda e não dá para dar zoom sem fim.",
+      "Pintar ao ar livre, en plein air, ficou popular com os impressionistas graças aos tubos de tinta portáteis."
+     ],
+     "q": "Onde perto de você daria para sentar e pintar ao vivo por meia hora?",
+     "c": "Pinte por 15 minutos um objeto real da sua mesa, sem usar celular nem fotos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thumbnail sketches",
+     "g": "Make tiny planning sketches to test composition and values before you paint.",
+     "p": [
+      "Thumbnails are small, about the size of a stamp or a business card, so you think in big shapes, not details.",
+      "Use just three values, light, middle and dark, to check that the picture reads clearly at a glance.",
+      "Try three or four quick versions with different crops and placements, then paint the one that works best."
+     ],
+     "q": "Do you usually jump straight in, or do you like to plan before you start?",
+     "c": "Make four thumbnails of the same still life, each with a different layout, and circle your favourite."
+    },
+    "de": {
+     "t": "Thumbnail-Skizzen",
+     "g": "Fertige winzige Planungsskizzen an, um Komposition und Tonwerte vor dem Malen zu testen.",
+     "p": [
+      "Thumbnails sind klein, etwa briefmarken- oder visitenkartengroß, damit du in großen Formen statt Details denkst.",
+      "Nutze nur drei Tonwerte, hell, mittel und dunkel, um zu prüfen, ob das Bild auf einen Blick klar wirkt.",
+      "Probiere drei oder vier schnelle Versionen mit anderem Ausschnitt und Aufbau und male dann die beste."
+     ],
+     "q": "Legst du meist sofort los oder planst du gern vorher?",
+     "c": "Fertige vier Thumbnails desselben Stilllebens mit verschiedenem Aufbau an und kreise deinen Favoriten ein."
+    },
+    "es": {
+     "t": "Bocetos en miniatura",
+     "g": "Haz pequeños bocetos de planificación para probar composición y valores antes de pintar.",
+     "p": [
+      "Las miniaturas son pequeñas, del tamaño de un sello o una tarjeta, para pensar en formas grandes y no en detalles.",
+      "Usa solo tres valores, claro, medio y oscuro, para comprobar que la imagen se lee de un vistazo.",
+      "Prueba tres o cuatro versiones rápidas con encuadres y posiciones distintas y pinta la que mejor funcione."
+     ],
+     "q": "¿Sueles lanzarte directamente o te gusta planificar antes de empezar?",
+     "c": "Haz cuatro miniaturas del mismo bodegón, cada una con una composición distinta, y rodea tu favorita."
+    },
+    "fr": {
+     "t": "Croquis vignettes",
+     "g": "Fais de minuscules croquis préparatoires pour tester composition et valeurs avant de peindre.",
+     "p": [
+      "Les vignettes sont petites, de la taille d'un timbre ou d'une carte de visite, pour penser en grandes formes.",
+      "Utilise seulement trois valeurs, clair, moyen et foncé, pour vérifier que l'image se lit d'un coup d'œil.",
+      "Essaie trois ou quatre versions rapides avec différents cadrages et placements, puis peins la meilleure."
+     ],
+     "q": "Te lances-tu en général directement, ou aimes-tu planifier avant de commencer ?",
+     "c": "Fais quatre vignettes de la même nature morte, chacune avec une mise en page différente, et entoure ta préférée."
+    },
+    "it": {
+     "t": "Schizzi in miniatura",
+     "g": "Fai piccoli schizzi di progetto per testare composizione e valori prima di dipingere.",
+     "p": [
+      "Le miniature sono piccole, grandi come un francobollo o un biglietto da visita, così pensi per forme grandi.",
+      "Usa solo tre valori, chiaro, medio e scuro, per verificare che l'immagine si legga a colpo d'occhio.",
+      "Prova tre o quattro versioni veloci con tagli e posizioni diversi, poi dipingi quella che funziona meglio."
+     ],
+     "q": "Di solito ti butti subito o ti piace pianificare prima di iniziare?",
+     "c": "Fai quattro miniature della stessa natura morta, ognuna con una composizione diversa, e cerchia la tua preferita."
+    },
+    "pt": {
+     "t": "Esboços em miniatura",
+     "g": "Faz pequenos esboços de planeamento para testar composição e valores antes de pintar.",
+     "p": [
+      "As miniaturas são pequenas, do tamanho de um selo ou cartão de visita, para pensares em formas grandes.",
+      "Usa só três valores, claro, médio e escuro, para confirmar que a imagem se lê num relance.",
+      "Experimenta três ou quatro versões rápidas com enquadramentos diferentes e pinta a que resultar melhor."
+     ],
+     "q": "Costumas atirar-te logo ou gostas de planear antes de começar?",
+     "c": "Faz quatro miniaturas da mesma natureza-morta, cada uma com uma composição diferente, e assinala a preferida."
+    },
+    "pt_BR": {
+     "t": "Esboços em miniatura",
+     "g": "Faça pequenos esboços de planejamento para testar composição e valores antes de pintar.",
+     "p": [
+      "As miniaturas são pequenas, do tamanho de um selo ou cartão de visita, para você pensar em formas grandes.",
+      "Use só três valores, claro, médio e escuro, para conferir se a imagem funciona num relance.",
+      "Teste três ou quatro versões rápidas com enquadramentos diferentes e pinte a que funcionar melhor."
+     ],
+     "q": "Você costuma ir direto ou gosta de planejar antes de começar?",
+     "c": "Faça quatro miniaturas da mesma natureza-morta, cada uma com uma composição diferente, e circule sua favorita."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: techniques and form",
+     "g": "Look back at washes, opaque layers and simple forms with a mini still life.",
+     "p": [
+      "You can lay flat, graded and variegated washes, paint wet-on-wet and wet-on-dry, lift colour and save whites.",
+      "You know how acrylic, gouache and oil behave, the fat over lean rule and safe studio habits.",
+      "You can model spheres, cubes and cylinders with light, shadow, highlights and edges, and plan with thumbnails."
+     ],
+     "q": "Which technique from this month do you want to practise more, and why?",
+     "c": "Make one thumbnail, then paint a mini still life of two objects using a wash, clear values and one highlight."
+    },
+    "de": {
+     "t": "Rückblick: Techniken und Form",
+     "g": "Schau auf Lasuren, deckende Schichten und einfache Formen zurück, mit einem Mini-Stillleben.",
+     "p": [
+      "Du kannst flache, verlaufende und mehrfarbige Lasuren legen, nass in nass und auf trocken malen, Farbe abheben, Weiß aussparen.",
+      "Du weißt, wie sich Acryl, Gouache und Öl verhalten, kennst Fett auf Mager und sichere Atelierregeln.",
+      "Du modellierst Kugel, Würfel und Zylinder mit Licht, Schatten, Glanzlichtern und Kanten und planst mit Thumbnails."
+     ],
+     "q": "Welche Technik dieses Monats möchtest du mehr üben, und warum?",
+     "c": "Mach ein Thumbnail und male dann ein Mini-Stillleben aus zwei Dingen mit einer Lasur, klaren Tonwerten und einem Glanzlicht."
+    },
+    "es": {
+     "t": "Repaso: técnicas y forma",
+     "g": "Repasa aguadas, capas opacas y formas simples con un mini bodegón.",
+     "p": [
+      "Sabes hacer aguadas planas, degradadas y variadas, pintar húmedo sobre húmedo y sobre seco, levantar color y reservar blancos.",
+      "Conoces cómo se comportan el acrílico, el gouache y el óleo, la regla graso sobre magro y los hábitos seguros.",
+      "Modelas esferas, cubos y cilindros con luz, sombra, brillos y bordes, y planificas con miniaturas."
+     ],
+     "q": "¿Qué técnica de este mes quieres practicar más, y por qué?",
+     "c": "Haz una miniatura y luego pinta un mini bodegón de dos objetos con una aguada, valores claros y un brillo."
+    },
+    "fr": {
+     "t": "Bilan : techniques et volumes",
+     "g": "Revois lavis, couches couvrantes et formes simples avec une mini nature morte.",
+     "p": [
+      "Tu sais poser des lavis uniformes, dégradés et variés, peindre mouillé sur mouillé et sur sec, enlever la couleur et réserver les blancs.",
+      "Tu connais le comportement de l'acrylique, de la gouache et de l'huile, la règle du gras sur maigre et un atelier sûr.",
+      "Tu modèles sphères, cubes et cylindres avec lumière, ombre, rehauts et bords, et tu prépares avec des vignettes."
+     ],
+     "q": "Quelle technique de ce mois veux-tu travailler davantage, et pourquoi ?",
+     "c": "Fais une vignette, puis peins une mini nature morte de deux objets avec un lavis, des valeurs nettes et un rehaut."
+    },
+    "it": {
+     "t": "Ripasso: tecniche e forma",
+     "g": "Ripassa velature, strati coprenti e forme semplici con una mini natura morta.",
+     "p": [
+      "Sai stendere velature piatte, sfumate e variegate, dipingere bagnato su bagnato e su asciutto, sollevare colore e risparmiare i bianchi.",
+      "Conosci il comportamento di acrilico, gouache e olio, la regola grasso su magro e le abitudini sicure.",
+      "Modelli sfere, cubi e cilindri con luce, ombra, lumi e bordi, e progetti con le miniature."
+     ],
+     "q": "Quale tecnica di questo mese vuoi esercitare di più, e perché?",
+     "c": "Fai una miniatura, poi dipingi una mini natura morta di due oggetti con una velatura, valori chiari e un lume."
+    },
+    "pt": {
+     "t": "Revisão: técnicas e forma",
+     "g": "Revê aguadas, camadas opacas e formas simples com uma mini natureza-morta.",
+     "p": [
+      "Sabes fazer aguadas lisas, degradês e variadas, pintar molhado sobre molhado e sobre seco, levantar cor e reservar brancos.",
+      "Conheces o comportamento do acrílico, do guache e do óleo, a regra gordo sobre magro e os hábitos seguros.",
+      "Modelas esferas, cubos e cilindros com luz, sombra, brilhos e bordas, e planeias com miniaturas."
+     ],
+     "q": "Que técnica deste mês queres praticar mais, e porquê?",
+     "c": "Faz uma miniatura e depois pinta uma mini natureza-morta de dois objetos com uma aguada, valores claros e um brilho."
+    },
+    "pt_BR": {
+     "t": "Revisão: técnicas e forma",
+     "g": "Relembre aguadas, camadas opacas e formas simples com uma mini natureza-morta.",
+     "p": [
+      "Você sabe fazer aguadas lisas, degradês e variadas, pintar molhado sobre molhado e sobre seco, levantar cor e reservar brancos.",
+      "Você conhece o comportamento da acrílica, do guache e do óleo, a regra gordo sobre magro e os hábitos seguros.",
+      "Você modela esferas, cubos e cilindros com luz, sombra, brilhos e bordas, e planeja com miniaturas."
+     ],
+     "q": "Qual técnica deste mês você quer praticar mais, e por quê?",
+     "c": "Faça uma miniatura e depois pinte uma mini natureza-morta de dois objetos com uma aguada, valores claros e um brilho."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "drawing",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Combining forms",
+     "g": "Build everyday objects by stacking and joining simple forms.",
+     "p": [
+      "A lamp can be a cone on a cylinder on a flat box; a bottle is cylinders of different widths.",
+      "Draw the forms lightly and see-through so you can check how they connect.",
+      "Once the forms are right, refine the outline and erase the extra construction lines."
+     ],
+     "q": "Which object at home do you think would be fun to build from forms?",
+     "c": "Pick a lamp, bottle or teapot and draw it first as simple stacked forms, then refine it."
+    },
+    "de": {
+     "t": "Körper kombinieren",
+     "g": "Alltagsgegenstände aus gestapelten und verbundenen einfachen Körpern aufbauen.",
+     "p": [
+      "Eine Lampe ist ein Kegel auf einem Zylinder auf einer flachen Box, eine Flasche sind Zylinder in verschiedenen Breiten.",
+      "Zeichne die Körper leicht und durchsichtig, um zu prüfen, wie sie sich verbinden.",
+      "Sitzen die Körper, verfeinere den Umriss und radiere die Hilfslinien weg."
+     ],
+     "q": "Welchen Gegenstand zu Hause würdest du gern aus Körpern aufbauen?",
+     "c": "Nimm Lampe, Flasche oder Teekanne, zeichne sie erst als gestapelte Körper und verfeinere sie dann."
+    },
+    "es": {
+     "t": "Combinar volúmenes",
+     "g": "Construir objetos cotidianos apilando y uniendo volúmenes simples.",
+     "p": [
+      "Una lámpara puede ser un cono sobre un cilindro sobre una caja plana; una botella, cilindros de distinto ancho.",
+      "Dibuja los volúmenes suaves y transparentes para ver cómo se unen.",
+      "Cuando estén bien, define el contorno y borra las líneas de construcción sobrantes."
+     ],
+     "q": "¿Qué objeto de tu casa sería divertido construir con volúmenes?",
+     "c": "Elige una lámpara, botella o tetera, dibújala primero como volúmenes apilados y luego defínela."
+    },
+    "fr": {
+     "t": "Combiner les volumes",
+     "g": "Construire des objets du quotidien en empilant et assemblant des volumes simples.",
+     "p": [
+      "Une lampe peut être un cône sur un cylindre sur une boîte plate ; une bouteille, des cylindres de largeurs variées.",
+      "Dessine les volumes légers et transparents pour vérifier comment ils s'assemblent.",
+      "Une fois les volumes justes, affine le contour et gomme les traits de construction."
+     ],
+     "q": "Quel objet de chez toi serait amusant à construire avec des volumes ?",
+     "c": "Choisis une lampe, bouteille ou théière, dessine-la d'abord en volumes empilés, puis affine-la."
+    },
+    "it": {
+     "t": "Combinare i volumi",
+     "g": "Costruire oggetti quotidiani impilando e unendo volumi semplici.",
+     "p": [
+      "Una lampada può essere un cono su un cilindro su una scatola piatta; una bottiglia cilindri di larghezze diverse.",
+      "Disegna i volumi leggeri e trasparenti per vedere come si collegano.",
+      "Quando i volumi sono giusti, definisci il contorno e cancella le linee di costruzione."
+     ],
+     "q": "Quale oggetto di casa sarebbe divertente costruire con i volumi?",
+     "c": "Scegli una lampada, bottiglia o teiera, disegnala prima come volumi impilati e poi definiscila."
+    },
+    "pt": {
+     "t": "Combinar volumes",
+     "g": "Construir objetos do dia a dia empilhando e juntando volumes simples.",
+     "p": [
+      "Um candeeiro pode ser um cone sobre um cilindro sobre uma caixa plana; uma garrafa, cilindros de larguras diferentes.",
+      "Desenha os volumes leves e transparentes para ver como se ligam.",
+      "Quando estiverem certos, define o contorno e apaga as linhas de construção a mais."
+     ],
+     "q": "Que objeto em casa seria divertido construir com volumes?",
+     "c": "Escolhe um candeeiro, garrafa ou bule, desenha-o primeiro em volumes empilhados e depois define-o."
+    },
+    "pt_BR": {
+     "t": "Combinando volumes",
+     "g": "Construir objetos do dia a dia empilhando e juntando volumes simples.",
+     "p": [
+      "Um abajur pode ser um cone sobre um cilindro sobre uma caixa achatada; uma garrafa, cilindros de larguras diferentes.",
+      "Desenhe os volumes leves e transparentes para ver como eles se encaixam.",
+      "Quando estiverem certos, defina o contorno e apague as linhas de construção que sobram."
+     ],
+     "q": "Que objeto da sua casa seria divertido construir com volumes?",
+     "c": "Escolha um abajur, garrafa ou bule, desenhe primeiro como volumes empilhados e depois defina."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contour drawing",
+     "g": "Follow an object's edges slowly with one continuous line.",
+     "p": [
+      "Move your eye and pencil together at the same slow speed, like an ant walking the edge.",
+      "Include inner edges too, like folds, overlaps and changes of direction.",
+      "Wobbly lines are fine: the goal is careful observation, not a perfect result."
+     ],
+     "q": "Which would you like to try first: your hand, a shoe or a plant?",
+     "c": "Spend five minutes on a slow contour drawing of your non-drawing hand."
+    },
+    "de": {
+     "t": "Konturzeichnen",
+     "g": "Die Kanten eines Objekts langsam mit einer durchgehenden Linie nachfahren.",
+     "p": [
+      "Beweg Auge und Stift gleich langsam, wie eine Ameise, die an der Kante entlangläuft.",
+      "Nimm auch innere Kanten mit, etwa Falten, Überschneidungen und Richtungswechsel.",
+      "Wackelige Linien sind okay: Ziel ist genaues Beobachten, kein perfektes Ergebnis."
+     ],
+     "q": "Was möchtest du zuerst probieren: deine Hand, einen Schuh oder eine Pflanze?",
+     "c": "Zeichne fünf Minuten lang langsam die Kontur deiner freien Hand."
+    },
+    "es": {
+     "t": "Dibujo de contorno",
+     "g": "Seguir lentamente los bordes de un objeto con una sola línea continua.",
+     "p": [
+      "Mueve el ojo y el lápiz a la vez y despacio, como una hormiga recorriendo el borde.",
+      "Incluye también bordes interiores: pliegues, solapamientos y cambios de dirección.",
+      "Las líneas temblorosas están bien: el objetivo es observar con cuidado, no un dibujo perfecto."
+     ],
+     "q": "¿Con qué te gustaría probar primero: tu mano, un zapato o una planta?",
+     "c": "Dedica cinco minutos a un contorno lento de la mano con la que no dibujas."
+    },
+    "fr": {
+     "t": "Le dessin de contour",
+     "g": "Suivre lentement les bords d'un objet d'une seule ligne continue.",
+     "p": [
+      "Bouge l'œil et le crayon ensemble, lentement, comme une fourmi qui longe le bord.",
+      "Inclus aussi les contours intérieurs : plis, chevauchements et changements de direction.",
+      "Les traits tremblés sont permis : le but est d'observer avec soin, pas la perfection."
+     ],
+     "q": "Que veux-tu essayer en premier : ta main, une chaussure ou une plante ?",
+     "c": "Passe cinq minutes sur un contour lent de ta main qui ne dessine pas."
+    },
+    "it": {
+     "t": "Disegno a contorno",
+     "g": "Seguire lentamente i bordi di un oggetto con un'unica linea continua.",
+     "p": [
+      "Muovi occhio e matita insieme alla stessa lentezza, come una formica che percorre il bordo.",
+      "Includi anche i contorni interni: pieghe, sovrapposizioni e cambi di direzione.",
+      "Le linee tremolanti vanno bene: lo scopo è osservare con cura, non la perfezione."
+     ],
+     "q": "Con cosa vorresti provare per primo: la tua mano, una scarpa o una pianta?",
+     "c": "Dedica cinque minuti a un contorno lento della mano con cui non disegni."
+    },
+    "pt": {
+     "t": "Desenho de contorno",
+     "g": "Seguir devagar os contornos de um objeto com uma única linha contínua.",
+     "p": [
+      "Move o olho e o lápis juntos, devagar, como uma formiga a percorrer a borda.",
+      "Inclui também contornos interiores: pregas, sobreposições e mudanças de direção.",
+      "Linhas tremidas não faz mal: o objetivo é observar com cuidado, não a perfeição."
+     ],
+     "q": "Com o que gostavas de experimentar primeiro: a tua mão, um sapato ou uma planta?",
+     "c": "Passa cinco minutos num contorno lento da mão com que não desenhas."
+    },
+    "pt_BR": {
+     "t": "Desenho de contorno",
+     "g": "Seguir devagar as bordas de um objeto com uma única linha contínua.",
+     "p": [
+      "Mova o olho e o lápis juntos, devagar, como uma formiga andando pela borda.",
+      "Inclua também as bordas internas: dobras, sobreposições e mudanças de direção.",
+      "Linhas tremidas tudo bem: o objetivo é observar com cuidado, não a perfeição."
+     ],
+     "q": "Com o que você quer testar primeiro: sua mão, um tênis ou uma planta?",
+     "c": "Passe cinco minutos num contorno lento da mão com que você não desenha."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blind contour drawing",
+     "g": "Train hand-eye coordination by drawing without looking at the paper.",
+     "p": [
+      "Look only at the object and let your pencil follow your eyes on the paper.",
+      "The results look funny and distorted, and that is perfectly normal.",
+      "This exercise teaches your hand to trust your eyes and breaks the habit of drawing symbols."
+     ],
+     "q": "Are you ready to laugh at your drawings a little today?",
+     "c": "Do three blind contour drawings of a friend's face, a plant or your shoe, one minute each."
+    },
+    "de": {
+     "t": "Blindes Konturzeichnen",
+     "g": "Die Hand-Auge-Koordination trainieren, indem du zeichnest, ohne aufs Papier zu schauen.",
+     "p": [
+      "Schau nur auf das Objekt und lass den Stift deinen Augen auf dem Papier folgen.",
+      "Die Ergebnisse sehen lustig und verzerrt aus, und das ist völlig normal.",
+      "Die Übung lehrt die Hand, den Augen zu vertrauen, und bricht die Gewohnheit, Symbole zu zeichnen."
+     ],
+     "q": "Bist du bereit, heute ein bisschen über deine Zeichnungen zu lachen?",
+     "c": "Mach drei blinde Konturzeichnungen von einem Gesicht, einer Pflanze oder deinem Schuh, je eine Minute."
+    },
+    "es": {
+     "t": "Contorno a ciegas",
+     "g": "Entrenar la coordinación ojo-mano dibujando sin mirar el papel.",
+     "p": [
+      "Mira solo el objeto y deja que el lápiz siga a tus ojos sobre el papel.",
+      "Los resultados salen graciosos y deformados, y es totalmente normal.",
+      "Este ejercicio enseña a la mano a confiar en los ojos y rompe el hábito de dibujar símbolos."
+     ],
+     "q": "¿Estás listo para reírte un poco de tus dibujos hoy?",
+     "c": "Haz tres contornos a ciegas de una cara, una planta o tu zapato, un minuto cada uno."
+    },
+    "fr": {
+     "t": "Le contour à l'aveugle",
+     "g": "Entraîner la coordination œil-main en dessinant sans regarder la feuille.",
+     "p": [
+      "Regarde seulement l'objet et laisse le crayon suivre tes yeux sur la feuille.",
+      "Les résultats sont drôles et déformés, et c'est tout à fait normal.",
+      "Cet exercice apprend à la main à faire confiance aux yeux et casse l'habitude des symboles."
+     ],
+     "q": "Es-tu prêt à rire un peu de tes dessins aujourd'hui ?",
+     "c": "Fais trois contours à l'aveugle d'un visage, d'une plante ou de ta chaussure, une minute chacun."
+    },
+    "it": {
+     "t": "Contorno cieco",
+     "g": "Allenare la coordinazione occhio-mano disegnando senza guardare il foglio.",
+     "p": [
+      "Guarda solo l'oggetto e lascia che la matita segua i tuoi occhi sul foglio.",
+      "I risultati sono buffi e deformati, ed è del tutto normale.",
+      "L'esercizio insegna alla mano a fidarsi degli occhi e rompe l'abitudine di disegnare simboli."
+     ],
+     "q": "Sei pronto a ridere un po' dei tuoi disegni oggi?",
+     "c": "Fai tre contorni ciechi di un viso, una pianta o la tua scarpa, un minuto ciascuno."
+    },
+    "pt": {
+     "t": "Contorno às cegas",
+     "g": "Treinar a coordenação olho-mão desenhando sem olhar para o papel.",
+     "p": [
+      "Olha só para o objeto e deixa o lápis seguir os teus olhos no papel.",
+      "Os resultados ficam engraçados e distorcidos, e isso é perfeitamente normal.",
+      "O exercício ensina a mão a confiar nos olhos e quebra o hábito de desenhar símbolos."
+     ],
+     "q": "Estás pronto para te rires um pouco dos teus desenhos hoje?",
+     "c": "Faz três contornos às cegas de uma cara, uma planta ou o teu sapato, um minuto cada."
+    },
+    "pt_BR": {
+     "t": "Contorno cego",
+     "g": "Treinar a coordenação olho-mão desenhando sem olhar para o papel.",
+     "p": [
+      "Olhe só para o objeto e deixe o lápis seguir seus olhos no papel.",
+      "Os resultados ficam engraçados e tortos, e isso é totalmente normal.",
+      "O exercício ensina a mão a confiar nos olhos e quebra o hábito de desenhar símbolos."
+     ],
+     "q": "Topa rir um pouco dos seus desenhos hoje?",
+     "c": "Faça três contornos cegos de um rosto, uma planta ou seu tênis, um minuto cada."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cross-contour lines",
+     "g": "Draw lines that wrap around a form to show its volume and direction.",
+     "p": [
+      "Imagine rubber bands or stripes wrapped around the object and draw them.",
+      "On a cylinder they curve like ellipses; on a sphere they bend like lines of latitude.",
+      "A few well-placed cross-contours can make a flat outline instantly look round."
+     ],
+     "q": "Have you seen striped clothing or a striped ball that shows its shape this way?",
+     "c": "Draw a banana, a vase and a sphere covered in cross-contour lines."
+    },
+    "de": {
+     "t": "Querkonturlinien",
+     "g": "Linien zeichnen, die sich um einen Körper legen und Volumen und Richtung zeigen.",
+     "p": [
+      "Stell dir Gummibänder oder Streifen um das Objekt vor und zeichne sie.",
+      "Auf einem Zylinder biegen sie sich wie Ellipsen, auf einer Kugel wie Breitengrade.",
+      "Ein paar gut gesetzte Querkonturen lassen einen flachen Umriss sofort rund wirken."
+     ],
+     "q": "Hast du schon gestreifte Kleidung oder einen gestreiften Ball gesehen, der so seine Form zeigt?",
+     "c": "Zeichne eine Banane, eine Vase und eine Kugel voller Querkonturlinien."
+    },
+    "es": {
+     "t": "Líneas de contorno transversal",
+     "g": "Trazar líneas que envuelven la forma para mostrar su volumen y dirección.",
+     "p": [
+      "Imagina gomas elásticas o rayas alrededor del objeto y dibújalas.",
+      "En un cilindro se curvan como elipses; en una esfera, como paralelos de un globo.",
+      "Unas pocas líneas bien colocadas hacen que un contorno plano parezca redondo al instante."
+     ],
+     "q": "¿Has visto ropa a rayas o una pelota a rayas que muestre así su forma?",
+     "c": "Dibuja un plátano, un jarrón y una esfera cubiertos de líneas transversales."
+    },
+    "fr": {
+     "t": "Les lignes de contour croisé",
+     "g": "Tracer des lignes qui s'enroulent autour d'un volume pour montrer sa forme et sa direction.",
+     "p": [
+      "Imagine des élastiques ou des rayures autour de l'objet et dessine-les.",
+      "Sur un cylindre, elles se courbent en ellipses ; sur une sphère, comme des parallèles.",
+      "Quelques lignes bien placées rendent un contour plat immédiatement rond."
+     ],
+     "q": "As-tu déjà vu un vêtement ou un ballon rayé qui montre ainsi sa forme ?",
+     "c": "Dessine une banane, un vase et une sphère couverts de lignes de contour croisé."
+    },
+    "it": {
+     "t": "Linee trasversali",
+     "g": "Tracciare linee che avvolgono la forma per mostrare volume e direzione.",
+     "p": [
+      "Immagina elastici o righe attorno all'oggetto e disegnali.",
+      "Su un cilindro si curvano come ellissi; su una sfera come i paralleli di un mappamondo.",
+      "Poche linee ben messe rendono subito rotondo un contorno piatto."
+     ],
+     "q": "Hai mai visto un vestito o un pallone a righe che mostra così la sua forma?",
+     "c": "Disegna una banana, un vaso e una sfera ricoperti di linee trasversali."
+    },
+    "pt": {
+     "t": "Linhas de contorno transversal",
+     "g": "Traçar linhas que envolvem a forma para mostrar volume e direção.",
+     "p": [
+      "Imagina elásticos ou riscas à volta do objeto e desenha-os.",
+      "Num cilindro curvam como elipses; numa esfera, como os paralelos de um globo.",
+      "Algumas linhas bem colocadas tornam logo redondo um contorno plano."
+     ],
+     "q": "Já viste roupa ou uma bola às riscas que mostra a forma assim?",
+     "c": "Desenha uma banana, uma jarra e uma esfera cobertas de linhas transversais."
+    },
+    "pt_BR": {
+     "t": "Linhas de contorno transversal",
+     "g": "Traçar linhas que abraçam a forma para mostrar volume e direção.",
+     "p": [
+      "Imagine elásticos ou listras em volta do objeto e desenhe-os.",
+      "Num cilindro elas curvam como elipses; numa esfera, como os paralelos de um globo.",
+      "Algumas linhas bem colocadas deixam um contorno plano redondo na hora."
+     ],
+     "q": "Você já viu roupa ou bola listrada que mostra a forma desse jeito?",
+     "c": "Desenhe uma banana, um vaso e uma esfera cobertos de linhas transversais."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Negative space drawing",
+     "g": "Draw the shapes between and around objects to see them more accurately.",
+     "p": [
+      "Negative space is the empty area around and between things, like the gap inside a mug handle.",
+      "Your brain has no preconceptions about these shapes, so you draw them more truthfully.",
+      "Chairs, plants and bicycles are perfect subjects because they are full of gaps."
+     ],
+     "q": "What object near you has interesting gaps or holes in it?",
+     "c": "Draw only the empty shapes between the legs and bars of a chair, then shade them in."
+    },
+    "de": {
+     "t": "Negativraum zeichnen",
+     "g": "Die Formen zwischen und um Objekte zeichnen, um sie genauer zu sehen.",
+     "p": [
+      "Negativraum ist die leere Fläche um und zwischen Dingen, etwa die Lücke im Tassenhenkel.",
+      "Dein Gehirn hat zu diesen Formen keine Vorurteile, also zeichnest du sie ehrlicher.",
+      "Stühle, Pflanzen und Fahrräder sind ideale Motive, weil sie voller Lücken sind."
+     ],
+     "q": "Welcher Gegenstand in deiner Nähe hat interessante Lücken oder Löcher?",
+     "c": "Zeichne nur die leeren Formen zwischen Beinen und Streben eines Stuhls und füll sie aus."
+    },
+    "es": {
+     "t": "Dibujar el espacio negativo",
+     "g": "Dibujar las formas entre y alrededor de los objetos para verlos con más precisión.",
+     "p": [
+      "El espacio negativo es el hueco alrededor y entre las cosas, como el interior del asa de una taza.",
+      "Tu cerebro no tiene ideas previas sobre esas formas, así que las dibujas con más verdad.",
+      "Sillas, plantas y bicicletas son ideales porque están llenas de huecos."
+     ],
+     "q": "¿Qué objeto cercano tiene huecos o agujeros interesantes?",
+     "c": "Dibuja solo los huecos entre las patas y barras de una silla y luego rellénalos de sombra."
+    },
+    "fr": {
+     "t": "Dessiner l'espace négatif",
+     "g": "Dessiner les formes entre et autour des objets pour les voir plus justement.",
+     "p": [
+      "L'espace négatif est le vide autour et entre les choses, comme le trou de l'anse d'une tasse.",
+      "Ton cerveau n'a pas d'idée toute faite sur ces formes, donc tu les dessines plus fidèlement.",
+      "Chaises, plantes et vélos sont parfaits car pleins de vides."
+     ],
+     "q": "Quel objet près de toi a des vides ou des trous intéressants ?",
+     "c": "Dessine seulement les vides entre les pieds et barreaux d'une chaise, puis remplis-les."
+    },
+    "it": {
+     "t": "Disegnare lo spazio negativo",
+     "g": "Disegnare le forme tra e intorno agli oggetti per vederli con più precisione.",
+     "p": [
+      "Lo spazio negativo è il vuoto attorno e tra le cose, come il buco nel manico di una tazza.",
+      "Il cervello non ha preconcetti su queste forme, quindi le disegni in modo più fedele.",
+      "Sedie, piante e biciclette sono perfette perché piene di vuoti."
+     ],
+     "q": "Quale oggetto vicino a te ha vuoti o buchi interessanti?",
+     "c": "Disegna solo i vuoti tra gambe e traverse di una sedia, poi riempili di tono."
+    },
+    "pt": {
+     "t": "Desenhar o espaço negativo",
+     "g": "Desenhar as formas entre e à volta dos objetos para os ver com mais rigor.",
+     "p": [
+      "O espaço negativo é o vazio à volta e entre as coisas, como o buraco da asa de uma chávena.",
+      "O cérebro não tem ideias feitas sobre estas formas, por isso desenha-las com mais verdade.",
+      "Cadeiras, plantas e bicicletas são ótimas porque estão cheias de vazios."
+     ],
+     "q": "Que objeto perto de ti tem vazios ou buracos interessantes?",
+     "c": "Desenha só os vazios entre as pernas e travessas de uma cadeira e depois preenche-os."
+    },
+    "pt_BR": {
+     "t": "Desenhando o espaço negativo",
+     "g": "Desenhar as formas entre e ao redor dos objetos para enxergá-los com mais precisão.",
+     "p": [
+      "Espaço negativo é o vazio em volta e entre as coisas, como o buraco da alça de uma caneca.",
+      "O cérebro não tem ideias prontas sobre essas formas, então você desenha com mais verdade.",
+      "Cadeiras, plantas e bicicletas são ótimas porque estão cheias de vazios."
+     ],
+     "q": "Que objeto perto de você tem vazios ou buracos interessantes?",
+     "c": "Desenhe só os vazios entre as pernas e travessas de uma cadeira e depois preencha-os."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Upside-down drawing",
+     "g": "Copy an image upside down to stop guessing and see pure shapes and lines.",
+     "p": [
+      "Turned upside down, a picture stops being a face or a hand and becomes lines and angles.",
+      "Work slowly from one edge, relating each line to its neighbours.",
+      "Turn it right way up only at the end, and enjoy the surprise."
+     ],
+     "q": "Do you think you will draw better or worse upside down?",
+     "c": "Copy a simple line drawing or photo upside down for 15 minutes, then flip both and compare."
+    },
+    "de": {
+     "t": "Kopfüber zeichnen",
+     "g": "Ein Bild kopfüber abzeichnen, um nicht zu raten und reine Formen und Linien zu sehen.",
+     "p": [
+      "Auf den Kopf gestellt ist ein Bild kein Gesicht oder keine Hand mehr, sondern Linien und Winkel.",
+      "Arbeite langsam von einem Rand aus und setz jede Linie in Bezug zu ihren Nachbarn.",
+      "Dreh es erst am Ende richtig herum und genieß die Überraschung."
+     ],
+     "q": "Glaubst du, dass du kopfüber besser oder schlechter zeichnest?",
+     "c": "Zeichne 15 Minuten eine einfache Strichzeichnung oder ein Foto kopfüber ab, dann umdrehen und vergleichen."
+    },
+    "es": {
+     "t": "Dibujar al revés",
+     "g": "Copiar una imagen boca abajo para dejar de adivinar y ver formas y líneas puras.",
+     "p": [
+      "Boca abajo, una imagen deja de ser una cara o una mano y se vuelve líneas y ángulos.",
+      "Trabaja despacio desde un borde, relacionando cada línea con sus vecinas.",
+      "Dale la vuelta solo al final y disfruta la sorpresa."
+     ],
+     "q": "¿Crees que dibujarás mejor o peor al revés?",
+     "c": "Copia boca abajo un dibujo lineal o una foto sencilla durante 15 minutos, luego gira ambos y compara."
+    },
+    "fr": {
+     "t": "Dessiner à l'envers",
+     "g": "Copier une image à l'envers pour cesser de deviner et voir des formes et lignes pures.",
+     "p": [
+      "À l'envers, une image n'est plus un visage ou une main mais des lignes et des angles.",
+      "Travaille lentement depuis un bord, en reliant chaque ligne à ses voisines.",
+      "Retourne-la seulement à la fin et savoure la surprise."
+     ],
+     "q": "Penses-tu dessiner mieux ou moins bien à l'envers ?",
+     "c": "Copie à l'envers un dessin au trait ou une photo simple pendant 15 minutes, puis retourne et compare."
+    },
+    "it": {
+     "t": "Disegnare capovolto",
+     "g": "Copiare un'immagine capovolta per smettere di indovinare e vedere forme e linee pure.",
+     "p": [
+      "Capovolta, un'immagine non è più un volto o una mano ma linee e angoli.",
+      "Lavora lentamente da un bordo, mettendo ogni linea in relazione con le vicine.",
+      "Girala nel verso giusto solo alla fine e goditi la sorpresa."
+     ],
+     "q": "Pensi che disegnerai meglio o peggio al contrario?",
+     "c": "Copia capovolto un disegno al tratto o una foto semplice per 15 minuti, poi gira tutto e confronta."
+    },
+    "pt": {
+     "t": "Desenhar de pernas para o ar",
+     "g": "Copiar uma imagem invertida para deixar de adivinhar e ver formas e linhas puras.",
+     "p": [
+      "Invertida, uma imagem deixa de ser uma cara ou uma mão e passa a ser linhas e ângulos.",
+      "Trabalha devagar a partir de uma borda, relacionando cada linha com as vizinhas.",
+      "Só vira o desenho no fim e aproveita a surpresa."
+     ],
+     "q": "Achas que vais desenhar melhor ou pior ao contrário?",
+     "c": "Copia invertido um desenho de linha ou uma foto simples durante 15 minutos, depois vira tudo e compara."
+    },
+    "pt_BR": {
+     "t": "Desenhando de cabeça para baixo",
+     "g": "Copiar uma imagem invertida para parar de adivinhar e ver formas e linhas puras.",
+     "p": [
+      "De cabeça para baixo, uma imagem deixa de ser rosto ou mão e vira linhas e ângulos.",
+      "Trabalhe devagar a partir de uma borda, relacionando cada linha com as vizinhas.",
+      "Só desvire no final e curta a surpresa."
+     ],
+     "q": "Você acha que vai desenhar melhor ou pior de cabeça para baixo?",
+     "c": "Copie invertido um desenho de linha ou foto simples por 15 minutos, depois desvire tudo e compare."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing everyday objects",
+     "g": "Practise observation with simple things from your table, like a mug, key or spoon.",
+     "p": [
+      "Everyday objects are free, patient models that never move or get tired.",
+      "Start with the big shape, then the main parts, then small details like a key's teeth.",
+      "Notice what makes the object unique: a chip in the mug, a scratch on the spoon."
+     ],
+     "q": "What small object on your desk has a story or meaning for you?",
+     "c": "Draw a mug, a key and a spoon on one page, about five minutes each."
+    },
+    "de": {
+     "t": "Alltagsgegenstände",
+     "g": "Beobachten üben mit einfachen Dingen vom Tisch wie Tasse, Schlüssel oder Löffel.",
+     "p": [
+      "Alltagsgegenstände sind kostenlose, geduldige Modelle, die sich nie bewegen und nie müde werden.",
+      "Beginn mit der großen Form, dann den Hauptteilen, dann Details wie den Zähnen eines Schlüssels.",
+      "Achte darauf, was das Objekt einzigartig macht: eine Macke in der Tasse, ein Kratzer am Löffel."
+     ],
+     "q": "Welcher kleine Gegenstand auf deinem Tisch hat für dich eine Geschichte?",
+     "c": "Zeichne Tasse, Schlüssel und Löffel auf eine Seite, je etwa fünf Minuten."
+    },
+    "es": {
+     "t": "Dibujar objetos cotidianos",
+     "g": "Practicar la observación con cosas sencillas de tu mesa, como una taza, una llave o una cuchara.",
+     "p": [
+      "Los objetos cotidianos son modelos gratis y pacientes que nunca se mueven ni se cansan.",
+      "Empieza por la forma grande, luego las partes principales y al final detalles como los dientes de la llave.",
+      "Fíjate en lo que hace único al objeto: un desconchón en la taza, un arañazo en la cuchara."
+     ],
+     "q": "¿Qué objeto pequeño de tu mesa tiene una historia para ti?",
+     "c": "Dibuja una taza, una llave y una cuchara en una página, unos cinco minutos cada una."
+    },
+    "fr": {
+     "t": "Dessiner les objets du quotidien",
+     "g": "S'entraîner à observer avec des choses simples de ta table : tasse, clé ou cuillère.",
+     "p": [
+      "Les objets du quotidien sont des modèles gratuits et patients qui ne bougent jamais.",
+      "Commence par la grande forme, puis les parties principales, puis les détails comme les dents de la clé.",
+      "Remarque ce qui rend l'objet unique : un éclat sur la tasse, une rayure sur la cuillère."
+     ],
+     "q": "Quel petit objet sur ton bureau a une histoire pour toi ?",
+     "c": "Dessine une tasse, une clé et une cuillère sur une page, environ cinq minutes chacune."
+    },
+    "it": {
+     "t": "Disegnare oggetti quotidiani",
+     "g": "Allenare l'osservazione con cose semplici del tavolo, come una tazza, una chiave o un cucchiaio.",
+     "p": [
+      "Gli oggetti quotidiani sono modelli gratuiti e pazienti che non si muovono mai.",
+      "Parti dalla forma grande, poi le parti principali, infine i dettagli come i denti della chiave.",
+      "Nota cosa rende unico l'oggetto: una sbeccatura sulla tazza, un graffio sul cucchiaio."
+     ],
+     "q": "Quale piccolo oggetto sulla tua scrivania ha una storia per te?",
+     "c": "Disegna una tazza, una chiave e un cucchiaio su una pagina, circa cinque minuti ciascuno."
+    },
+    "pt": {
+     "t": "Desenhar objetos do dia a dia",
+     "g": "Treinar a observação com coisas simples da mesa, como uma chávena, uma chave ou uma colher.",
+     "p": [
+      "Os objetos do dia a dia são modelos gratuitos e pacientes que nunca se mexem.",
+      "Começa pela forma grande, depois as partes principais e por fim detalhes como os dentes da chave.",
+      "Repara no que torna o objeto único: uma lasca na chávena, um risco na colher."
+     ],
+     "q": "Que objeto pequeno na tua secretária tem uma história para ti?",
+     "c": "Desenha uma chávena, uma chave e uma colher numa página, cerca de cinco minutos cada."
+    },
+    "pt_BR": {
+     "t": "Desenhando objetos do dia a dia",
+     "g": "Treinar a observação com coisas simples da mesa, como uma caneca, uma chave ou uma colher.",
+     "p": [
+      "Objetos do dia a dia são modelos grátis e pacientes que nunca se mexem nem cansam.",
+      "Comece pela forma grande, depois as partes principais e por fim detalhes como os dentes da chave.",
+      "Repare no que deixa o objeto único: um lascado na caneca, um risco na colher."
+     ],
+     "q": "Que objeto pequeno na sua mesa tem uma história para você?",
+     "c": "Desenhe uma caneca, uma chave e uma colher numa página, uns cinco minutos cada."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing at different speeds",
+     "g": "Draw the same object in 30 seconds, 2 minutes and 10 minutes to learn what each speed teaches.",
+     "p": [
+      "Thirty-second drawings capture the big shape and energy; there is no time for details.",
+      "Two minutes lets you add main proportions; ten minutes allows value and details.",
+      "Quick drawings often look more alive, while slow ones train patience and accuracy."
+     ],
+     "q": "Do you enjoy working fast and loose, or slow and careful?",
+     "c": "Draw one object three times with a timer: 30 seconds, 2 minutes and 10 minutes."
+    },
+    "de": {
+     "t": "In verschiedenen Tempi",
+     "g": "Dasselbe Objekt in 30 Sekunden, 2 und 10 Minuten zeichnen und lernen, was jedes Tempo lehrt.",
+     "p": [
+      "30-Sekunden-Zeichnungen fangen große Form und Energie ein, für Details bleibt keine Zeit.",
+      "Zwei Minuten reichen für die Hauptproportionen, zehn Minuten für Tonwerte und Details.",
+      "Schnelle Zeichnungen wirken oft lebendiger, langsame trainieren Geduld und Genauigkeit."
+     ],
+     "q": "Arbeitest du lieber schnell und locker oder langsam und sorgfältig?",
+     "c": "Zeichne ein Objekt dreimal mit Timer: 30 Sekunden, 2 Minuten und 10 Minuten."
+    },
+    "es": {
+     "t": "Dibujar a distintas velocidades",
+     "g": "Dibujar el mismo objeto en 30 segundos, 2 y 10 minutos para ver qué enseña cada ritmo.",
+     "p": [
+      "En 30 segundos captas la forma grande y la energía; no hay tiempo para detalles.",
+      "Dos minutos permiten las proporciones principales; diez minutos, valores y detalles.",
+      "Los dibujos rápidos suelen tener más vida; los lentos entrenan paciencia y precisión."
+     ],
+     "q": "¿Disfrutas más trabajando rápido y suelto o despacio y con cuidado?",
+     "c": "Dibuja un objeto tres veces con temporizador: 30 segundos, 2 minutos y 10 minutos."
+    },
+    "fr": {
+     "t": "Dessiner à différentes vitesses",
+     "g": "Dessiner le même objet en 30 secondes, 2 et 10 minutes pour voir ce qu'apporte chaque rythme.",
+     "p": [
+      "En 30 secondes, on saisit la grande forme et l'énergie ; pas de temps pour les détails.",
+      "Deux minutes permettent les proportions principales ; dix minutes, les valeurs et détails.",
+      "Les dessins rapides ont souvent plus de vie ; les lents entraînent patience et précision."
+     ],
+     "q": "Préfères-tu travailler vite et librement, ou lentement et avec soin ?",
+     "c": "Dessine un objet trois fois avec un minuteur : 30 secondes, 2 minutes et 10 minutes."
+    },
+    "it": {
+     "t": "Disegnare a velocità diverse",
+     "g": "Disegnare lo stesso oggetto in 30 secondi, 2 e 10 minuti per capire cosa insegna ogni ritmo.",
+     "p": [
+      "In 30 secondi cogli la forma grande e l'energia; non c'è tempo per i dettagli.",
+      "Due minuti bastano per le proporzioni principali; dieci per toni e dettagli.",
+      "I disegni veloci spesso sono più vivi; quelli lenti allenano pazienza e precisione."
+     ],
+     "q": "Ti piace di più lavorare veloce e sciolto o lento e preciso?",
+     "c": "Disegna un oggetto tre volte col timer: 30 secondi, 2 minuti e 10 minuti."
+    },
+    "pt": {
+     "t": "Desenhar a várias velocidades",
+     "g": "Desenhar o mesmo objeto em 30 segundos, 2 e 10 minutos para ver o que cada ritmo ensina.",
+     "p": [
+      "Em 30 segundos apanhas a forma grande e a energia; não há tempo para detalhes.",
+      "Dois minutos dão para as proporções principais; dez, para valores e detalhes.",
+      "Desenhos rápidos costumam ter mais vida; os lentos treinam paciência e rigor."
+     ],
+     "q": "Gostas mais de trabalhar rápido e solto ou devagar e com cuidado?",
+     "c": "Desenha um objeto três vezes com temporizador: 30 segundos, 2 minutos e 10 minutos."
+    },
+    "pt_BR": {
+     "t": "Desenhando em velocidades diferentes",
+     "g": "Desenhar o mesmo objeto em 30 segundos, 2 e 10 minutos para ver o que cada ritmo ensina.",
+     "p": [
+      "Em 30 segundos você pega a forma grande e a energia; não dá tempo para detalhes.",
+      "Dois minutos dão para as proporções principais; dez, para valores e detalhes.",
+      "Desenhos rápidos costumam ter mais vida; os lentos treinam paciência e precisão."
+     ],
+     "q": "Você curte mais trabalhar rápido e solto ou devagar e com cuidado?",
+     "c": "Desenhe um objeto três vezes com timer: 30 segundos, 2 minutos e 10 minutos."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A drawing a day habit",
+     "g": "Build a daily drawing habit with small drawings, a fixed time and a sketchbook always ready.",
+     "p": [
+      "Link drawing to something you already do daily, like your morning coffee.",
+      "Keep the bar low: one small sketch counts, even on busy days.",
+      "Leave your sketchbook and pencil where you will see them, not in a drawer."
+     ],
+     "q": "When in your day could you find five quiet minutes to draw?",
+     "c": "Choose your daily drawing time, write it on the inside cover and do today's sketch right now."
+    },
+    "de": {
+     "t": "Jeden Tag eine Zeichnung",
+     "g": "Eine tägliche Zeichengewohnheit aufbauen: kleine Zeichnungen, feste Zeit, Skizzenbuch griffbereit.",
+     "p": [
+      "Verknüpf das Zeichnen mit etwas, das du täglich tust, etwa dem Morgenkaffee.",
+      "Halt die Hürde niedrig: Eine kleine Skizze zählt, auch an vollen Tagen.",
+      "Leg Skizzenbuch und Stift sichtbar hin, nicht in eine Schublade."
+     ],
+     "q": "Wann am Tag findest du fünf ruhige Minuten zum Zeichnen?",
+     "c": "Wähl deine tägliche Zeichenzeit, schreib sie innen auf den Umschlag und mach jetzt die heutige Skizze."
+    },
+    "es": {
+     "t": "El hábito de dibujar a diario",
+     "g": "Crear el hábito con dibujos pequeños, una hora fija y el cuaderno siempre a mano.",
+     "p": [
+      "Asocia el dibujo a algo que ya haces cada día, como el café de la mañana.",
+      "Pon el listón bajo: un boceto pequeño cuenta, incluso en días ocupados.",
+      "Deja el cuaderno y el lápiz a la vista, no en un cajón."
+     ],
+     "q": "¿En qué momento del día podrías encontrar cinco minutos tranquilos para dibujar?",
+     "c": "Elige tu hora diaria de dibujo, escríbela en la portada interior y haz ahora el boceto de hoy."
+    },
+    "fr": {
+     "t": "L'habitude d'un dessin par jour",
+     "g": "Créer l'habitude avec de petits dessins, une heure fixe et un carnet toujours prêt.",
+     "p": [
+      "Associe le dessin à une chose que tu fais déjà chaque jour, comme le café du matin.",
+      "Place la barre bas : un petit croquis compte, même les jours chargés.",
+      "Laisse carnet et crayon bien en vue, pas dans un tiroir."
+     ],
+     "q": "À quel moment de ta journée pourrais-tu trouver cinq minutes calmes pour dessiner ?",
+     "c": "Choisis ton heure de dessin, écris-la à l'intérieur de la couverture et fais le croquis du jour maintenant."
+    },
+    "it": {
+     "t": "L'abitudine di un disegno al giorno",
+     "g": "Creare l'abitudine con piccoli disegni, un orario fisso e lo sketchbook sempre pronto.",
+     "p": [
+      "Collega il disegno a qualcosa che fai già ogni giorno, come il caffè del mattino.",
+      "Tieni l'asticella bassa: anche un piccolo schizzo conta, pure nei giorni pieni.",
+      "Lascia sketchbook e matita in vista, non in un cassetto."
+     ],
+     "q": "In quale momento della giornata potresti trovare cinque minuti tranquilli per disegnare?",
+     "c": "Scegli il tuo orario di disegno, scrivilo nella copertina interna e fai subito lo schizzo di oggi."
+    },
+    "pt": {
+     "t": "O hábito de desenhar todos os dias",
+     "g": "Criar o hábito com desenhos pequenos, uma hora fixa e o caderno sempre à mão.",
+     "p": [
+      "Liga o desenho a algo que já fazes todos os dias, como o café da manhã.",
+      "Mantém a fasquia baixa: um esboço pequeno conta, mesmo em dias cheios.",
+      "Deixa o caderno e o lápis à vista, não numa gaveta."
+     ],
+     "q": "Em que altura do dia podias encontrar cinco minutos calmos para desenhar?",
+     "c": "Escolhe a tua hora diária de desenho, escreve-a na capa interior e faz já o esboço de hoje."
+    },
+    "pt_BR": {
+     "t": "O hábito de desenhar todo dia",
+     "g": "Criar o hábito com desenhos pequenos, um horário fixo e o caderno sempre à mão.",
+     "p": [
+      "Ligue o desenho a algo que você já faz todo dia, como o café da manhã.",
+      "Deixe a meta baixa: um esboço pequeno conta, mesmo em dias corridos.",
+      "Deixe o caderno e o lápis à vista, não numa gaveta."
+     ],
+     "q": "Em que momento do dia você conseguiria cinco minutos tranquilos para desenhar?",
+     "c": "Escolha seu horário diário de desenho, anote na contracapa e faça agora o esboço de hoje."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: lines, shapes and seeing",
+     "g": "Recap materials, lines and basic forms with a relaxed small object study.",
+     "p": [
+      "Light construction lines, simple forms, then refined contours: that is your basic workflow.",
+      "Contour, blind contour and negative space all train you to see instead of guess.",
+      "Look back at your day 1 drawing: you have already practised more than most people ever do."
+     ],
+     "q": "What has surprised you most in your first month of drawing?",
+     "c": "Draw a small object using everything so far: warm-up, basic forms, contour and line weight."
+    },
+    "de": {
+     "t": "Rückblick: Linien, Formen, Sehen",
+     "g": "Material, Linien und Grundkörper entspannt mit einer kleinen Objektstudie wiederholen.",
+     "p": [
+      "Leichte Hilfslinien, einfache Körper, dann verfeinerte Konturen: das ist dein Grundablauf.",
+      "Kontur, blinde Kontur und Negativraum trainieren dich, zu sehen statt zu raten.",
+      "Schau dir deine Zeichnung von Tag 1 an: Du hast schon mehr geübt als die meisten Menschen je."
+     ],
+     "q": "Was hat dich in deinem ersten Zeichenmonat am meisten überrascht?",
+     "c": "Zeichne ein kleines Objekt mit allem bisher: Aufwärmen, Grundkörper, Kontur und Linienstärke."
+    },
+    "es": {
+     "t": "Repaso: líneas, formas y mirar",
+     "g": "Repasar materiales, líneas y volúmenes básicos con un pequeño estudio de objeto relajado.",
+     "p": [
+      "Líneas de construcción suaves, volúmenes simples y luego contornos definidos: ese es tu método.",
+      "Contorno, contorno a ciegas y espacio negativo te enseñan a ver en vez de adivinar.",
+      "Mira tu dibujo del día 1: ya has practicado más que mucha gente en toda su vida."
+     ],
+     "q": "¿Qué te ha sorprendido más en tu primer mes dibujando?",
+     "c": "Dibuja un objeto pequeño usando todo: calentamiento, volúmenes, contorno y grosor de línea."
+    },
+    "fr": {
+     "t": "Révision : lignes, formes et regard",
+     "g": "Revoir matériel, lignes et volumes de base avec une petite étude d'objet détendue.",
+     "p": [
+      "Traits de construction légers, volumes simples, puis contours affinés : voilà ta méthode de base.",
+      "Contour, contour à l'aveugle et espace négatif t'apprennent à voir au lieu de deviner.",
+      "Regarde ton dessin du jour 1 : tu as déjà plus pratiqué que beaucoup de gens."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris pendant ton premier mois de dessin ?",
+     "c": "Dessine un petit objet avec tout ce que tu sais : échauffement, volumes, contour et épaisseur du trait."
+    },
+    "it": {
+     "t": "Ripasso: linee, forme e sguardo",
+     "g": "Ripassare materiali, linee e volumi base con un piccolo studio di oggetto rilassato.",
+     "p": [
+      "Linee di costruzione leggere, volumi semplici e poi contorni definiti: ecco il tuo metodo base.",
+      "Contorno, contorno cieco e spazio negativo ti allenano a vedere invece di indovinare.",
+      "Guarda il disegno del giorno 1: hai già praticato più di tante persone in tutta la vita."
+     ],
+     "q": "Cosa ti ha sorpreso di più nel primo mese di disegno?",
+     "c": "Disegna un piccolo oggetto usando tutto: riscaldamento, volumi, contorno e spessore della linea."
+    },
+    "pt": {
+     "t": "Revisão: linhas, formas e olhar",
+     "g": "Rever materiais, linhas e volumes básicos com um pequeno estudo de objeto descontraído.",
+     "p": [
+      "Linhas de construção leves, volumes simples e depois contornos definidos: é o teu método base.",
+      "Contorno, contorno às cegas e espaço negativo ensinam-te a ver em vez de adivinhar.",
+      "Olha para o teu desenho do dia 1: já praticaste mais do que muita gente alguma vez praticou."
+     ],
+     "q": "O que mais te surpreendeu no primeiro mês de desenho?",
+     "c": "Desenha um objeto pequeno com tudo o que aprendeste: aquecimento, volumes, contorno e espessura."
+    },
+    "pt_BR": {
+     "t": "Revisão: linhas, formas e olhar",
+     "g": "Revisar materiais, linhas e volumes básicos com um pequeno estudo de objeto, sem pressão.",
+     "p": [
+      "Linhas de construção leves, volumes simples e depois contornos definidos: esse é seu método base.",
+      "Contorno, contorno cego e espaço negativo ensinam você a enxergar em vez de adivinhar.",
+      "Olhe seu desenho do dia 1: você já praticou mais do que muita gente pratica na vida toda."
+     ],
+     "q": "O que mais surpreendeu você no primeiro mês desenhando?",
+     "c": "Desenhe um objeto pequeno com tudo até agora: aquecimento, volumes, contorno e peso da linha."
+    }
+   }
+  }
+ ]
+}

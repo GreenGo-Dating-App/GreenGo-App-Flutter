@@ -1,0 +1,835 @@
+{
+ "topic": "meal_prep",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Prepping garlic and ginger",
+     "g": "Learn to peel, mince and grate garlic and ginger, and freeze extras for later.",
+     "p": [
+      "Crush a garlic clove lightly with the flat of the knife and the skin slips off.",
+      "Scrape ginger skin off with a teaspoon, then grate it finely.",
+      "Freeze minced garlic or grated ginger in small portions, like in an ice cube tray."
+     ],
+     "q": "Do you use fresh garlic and ginger, or ready-made pastes?",
+     "c": "Peel and mince one whole head of garlic and freeze it in small portions."
+    },
+    "de": {
+     "t": "Knoblauch und Ingwer vorbereiten",
+     "g": "Lerne, Knoblauch und Ingwer zu schälen, zu hacken und zu reiben, und Reste einzufrieren.",
+     "p": [
+      "Drück eine Zehe leicht mit der flachen Klinge an, dann löst sich die Schale.",
+      "Kratz die Ingwerschale mit einem Teelöffel ab und reib ihn dann fein.",
+      "Gehackten Knoblauch oder geriebenen Ingwer portionsweise einfrieren, etwa im Eiswürfelbehälter."
+     ],
+     "q": "Nutzt du frischen Knoblauch und Ingwer oder fertige Pasten?",
+     "c": "Schäl und hack eine ganze Knolle Knoblauch und friere sie in kleinen Portionen ein."
+    },
+    "es": {
+     "t": "Preparar ajo y jengibre",
+     "g": "Aprender a pelar, picar y rallar ajo y jengibre, y congelar lo que sobre.",
+     "p": [
+      "Aplasta un diente de ajo con la parte plana del cuchillo y la piel se suelta sola.",
+      "Raspa la piel del jengibre con una cucharita y rállalo fino.",
+      "Congela el ajo picado o el jengibre rallado en porciones, por ejemplo en cubiteras."
+     ],
+     "q": "¿Usas ajo y jengibre frescos o pastas ya hechas?",
+     "c": "Pela y pica una cabeza de ajo entera y congélala en porciones pequeñas."
+    },
+    "fr": {
+     "t": "Préparer l'ail et le gingembre",
+     "g": "Apprendre à éplucher, hacher et râper l'ail et le gingembre, et congeler le surplus.",
+     "p": [
+      "Écrase une gousse avec le plat de la lame et la peau se retire toute seule.",
+      "Gratte la peau du gingembre avec une petite cuillère, puis râpe-le finement.",
+      "Congèle l'ail haché ou le gingembre râpé en petites portions, dans un bac à glaçons."
+     ],
+     "q": "Utilises-tu de l'ail et du gingembre frais ou des pâtes toutes prêtes ?",
+     "c": "Épluche et hache une tête d'ail entière et congèle-la en petites portions."
+    },
+    "it": {
+     "t": "Preparare aglio e zenzero",
+     "g": "Imparare a sbucciare, tritare e grattugiare aglio e zenzero, e congelare il resto.",
+     "p": [
+      "Schiaccia lo spicchio con il piatto della lama e la buccia si stacca da sola.",
+      "Gratta la buccia dello zenzero con un cucchiaino, poi grattugialo fine.",
+      "Congela aglio tritato o zenzero grattugiato in piccole porzioni, come in una vaschetta del ghiaccio."
+     ],
+     "q": "Usi aglio e zenzero freschi o paste già pronte?",
+     "c": "Sbuccia e trita una testa d'aglio intera e congelala in piccole porzioni."
+    },
+    "pt": {
+     "t": "Preparar alho e gengibre",
+     "g": "Aprender a descascar, picar e ralar alho e gengibre, e congelar o que sobra.",
+     "p": [
+      "Esmaga um dente de alho com o lado da faca e a pele sai sozinha.",
+      "Raspa a pele do gengibre com uma colher de chá e depois rala-o fino.",
+      "Congela alho picado ou gengibre ralado em pequenas porções, como numa cuvete de gelo."
+     ],
+     "q": "Usas alho e gengibre frescos ou pastas já feitas?",
+     "c": "Descasca e pica uma cabeça de alho inteira e congela-a em pequenas porções."
+    },
+    "pt_BR": {
+     "t": "Preparando alho e gengibre",
+     "g": "Aprender a descascar, picar e ralar alho e gengibre, e congelar o que sobrar.",
+     "p": [
+      "Amasse o dente de alho com a lateral da faca e a casca sai fácil.",
+      "Raspe a casca do gengibre com uma colher de chá e depois rale fino.",
+      "Congele alho picado ou gengibre ralado em porções pequenas, como numa forminha de gelo."
+     ],
+     "q": "Você usa alho e gengibre frescos ou pastas prontas?",
+     "c": "Descasque e pique uma cabeça de alho inteira e congele em porções pequenas."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Washing and storing leafy greens",
+     "g": "Keep salad leaves crisp all week by washing, drying and storing them well.",
+     "p": [
+      "Rinse leaves in cold water and lift them out so grit stays at the bottom.",
+      "Dry them really well with a salad spinner or a clean towel; water makes them wilt.",
+      "Store them in a box lined with a paper towel to soak up extra moisture."
+     ],
+     "q": "Do your salad greens usually last the week, or wilt early?",
+     "c": "Wash, dry and store one bag or head of greens with a paper towel and check it in three days."
+    },
+    "de": {
+     "t": "Blattsalat waschen und lagern",
+     "g": "Halte Salatblätter die ganze Woche knackig, indem du sie richtig wäschst, trocknest und lagerst.",
+     "p": [
+      "Spül die Blätter in kaltem Wasser und heb sie heraus, damit Sand unten bleibt.",
+      "Trockne sie gründlich mit Salatschleuder oder sauberem Tuch; Nässe macht sie welk.",
+      "Bewahre sie in einer Dose mit Küchenpapier auf, das Feuchtigkeit aufnimmt."
+     ],
+     "q": "Hält dein Salat meist die ganze Woche oder wird er früh welk?",
+     "c": "Wasch, trockne und lagere einen Salat mit Küchenpapier und prüfe ihn nach drei Tagen."
+    },
+    "es": {
+     "t": "Lavar y guardar hojas verdes",
+     "g": "Mantener las hojas de ensalada crujientes toda la semana lavándolas, secándolas y guardándolas bien.",
+     "p": [
+      "Enjuaga las hojas en agua fría y sácalas para que la tierra quede en el fondo.",
+      "Sécalas muy bien con un centrifugador o un paño limpio; el agua las marchita.",
+      "Guárdalas en un recipiente con papel de cocina que absorba la humedad."
+     ],
+     "q": "¿Tus hojas de ensalada suelen durar la semana o se marchitan pronto?",
+     "c": "Lava, seca y guarda una lechuga con papel de cocina y revísala en tres días."
+    },
+    "fr": {
+     "t": "Laver et conserver la salade",
+     "g": "Garder les feuilles de salade croquantes toute la semaine en les lavant, séchant et rangeant bien.",
+     "p": [
+      "Rince les feuilles à l'eau froide et sors-les pour laisser la terre au fond.",
+      "Sèche-les très bien à l'essoreuse ou dans un torchon propre ; l'eau les fait flétrir.",
+      "Range-les dans une boîte tapissée d'essuie-tout pour absorber l'humidité."
+     ],
+     "q": "Ta salade tient-elle toute la semaine ou flétrit-elle vite ?",
+     "c": "Lave, sèche et range une salade avec de l'essuie-tout et vérifie-la dans trois jours."
+    },
+    "it": {
+     "t": "Lavare e conservare l'insalata",
+     "g": "Mantenere l'insalata croccante tutta la settimana lavandola, asciugandola e conservandola bene.",
+     "p": [
+      "Sciacqua le foglie in acqua fredda e sollevale così la terra resta sul fondo.",
+      "Asciugale benissimo con la centrifuga o un canovaccio pulito; l'acqua le fa appassire.",
+      "Conservale in un contenitore con carta da cucina che assorbe l'umidità."
+     ],
+     "q": "La tua insalata di solito dura tutta la settimana o appassisce presto?",
+     "c": "Lava, asciuga e conserva un cespo con carta da cucina e controllalo dopo tre giorni."
+    },
+    "pt": {
+     "t": "Lavar e guardar folhas verdes",
+     "g": "Manter as folhas de salada estaladiças toda a semana lavando, secando e guardando-as bem.",
+     "p": [
+      "Passa as folhas por água fria e retira-as para a terra ficar no fundo.",
+      "Seca-as muito bem com uma centrifugadora ou um pano limpo; a água fá-las murchar.",
+      "Guarda-as numa caixa forrada com papel de cozinha para absorver a humidade."
+     ],
+     "q": "A tua salada costuma durar a semana ou murcha cedo?",
+     "c": "Lava, seca e guarda uma alface com papel de cozinha e vê como está daqui a três dias."
+    },
+    "pt_BR": {
+     "t": "Lavando e guardando folhas verdes",
+     "g": "Manter as folhas de salada crocantes a semana toda lavando, secando e guardando direito.",
+     "p": [
+      "Lave as folhas em água fria e retire para a terra ficar no fundo.",
+      "Seque muito bem com uma centrífuga ou um pano limpo; a água faz murchar.",
+      "Guarde em um pote forrado com papel-toalha para absorver a umidade."
+     ],
+     "q": "Sua salada costuma durar a semana ou murcha logo?",
+     "c": "Lave, seque e guarde um pé de alface com papel-toalha e confira em três dias."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cutting vegetables for the week",
+     "g": "Cut vegetables into handy shapes so snacks, salads and cooking are ready to go.",
+     "p": [
+      "Sticks of carrot, cucumber and pepper make easy snacks.",
+      "Slices and dice of onion, peppers or courgette are ready for the pan.",
+      "Store cut vegetables in airtight boxes; hard ones last longer than soft ones."
+     ],
+     "q": "Which vegetable would you snack on more if it were already cut?",
+     "c": "Cut two vegetables into sticks or dice and pack them in boxes for the next days."
+    },
+    "de": {
+     "t": "Gemüse für die Woche schneiden",
+     "g": "Schneide Gemüse in praktische Formen, damit Snacks, Salate und Kochen sofort bereit sind.",
+     "p": [
+      "Sticks aus Karotte, Gurke und Paprika sind einfache Snacks.",
+      "Scheiben und Würfel von Zwiebel, Paprika oder Zucchini sind bereit für die Pfanne.",
+      "In luftdichten Dosen lagern; festes Gemüse hält länger als weiches."
+     ],
+     "q": "Welches Gemüse würdest du öfter snacken, wenn es schon geschnitten wäre?",
+     "c": "Schneide zwei Gemüsesorten in Sticks oder Würfel und pack sie für die nächsten Tage ein."
+    },
+    "es": {
+     "t": "Cortar verduras para la semana",
+     "g": "Cortar las verduras en formas prácticas para tener listos tentempiés, ensaladas y guisos.",
+     "p": [
+      "Bastones de zanahoria, pepino y pimiento son tentempiés fáciles.",
+      "Rodajas y dados de cebolla, pimiento o calabacín quedan listos para la sartén.",
+      "Guárdalas en recipientes herméticos; las duras duran más que las blandas."
+     ],
+     "q": "¿Qué verdura picotearías más si ya estuviera cortada?",
+     "c": "Corta dos verduras en bastones o dados y guárdalas en recipientes para los próximos días."
+    },
+    "fr": {
+     "t": "Couper les légumes pour la semaine",
+     "g": "Couper les légumes en formes pratiques pour avoir encas, salades et cuisson prêts.",
+     "p": [
+      "Des bâtonnets de carotte, concombre et poivron font des encas faciles.",
+      "Rondelles et dés d'oignon, poivron ou courgette sont prêts pour la poêle.",
+      "Conserve-les en boîtes hermétiques ; les légumes fermes tiennent plus longtemps."
+     ],
+     "q": "Quel légume grignoterais-tu plus souvent s'il était déjà coupé ?",
+     "c": "Coupe deux légumes en bâtonnets ou en dés et range-les en boîtes pour les jours suivants."
+    },
+    "it": {
+     "t": "Tagliare le verdure per la settimana",
+     "g": "Tagliare le verdure in forme pratiche così spuntini, insalate e cottura sono già pronti.",
+     "p": [
+      "Bastoncini di carota, cetriolo e peperone sono spuntini facili.",
+      "Fette e dadini di cipolla, peperone o zucchina sono pronti per la padella.",
+      "Conservale in contenitori ermetici; quelle dure durano più di quelle morbide."
+     ],
+     "q": "Quale verdura sgranoccheresti di più se fosse già tagliata?",
+     "c": "Taglia due verdure a bastoncini o dadini e mettile nei contenitori per i prossimi giorni."
+    },
+    "pt": {
+     "t": "Cortar legumes para a semana",
+     "g": "Cortar os legumes em formatos práticos para teres snacks, saladas e cozinhados prontos.",
+     "p": [
+      "Palitos de cenoura, pepino e pimento são snacks fáceis.",
+      "Rodelas e cubos de cebola, pimento ou curgete ficam prontos para a frigideira.",
+      "Guarda-os em caixas herméticas; os rijos duram mais do que os moles."
+     ],
+     "q": "Que legume petiscarias mais se já estivesse cortado?",
+     "c": "Corta dois legumes em palitos ou cubos e guarda-os em caixas para os próximos dias."
+    },
+    "pt_BR": {
+     "t": "Cortando legumes para a semana",
+     "g": "Cortar os legumes em formatos práticos para deixar lanches, saladas e preparos prontos.",
+     "p": [
+      "Palitos de cenoura, pepino e pimentão são lanches fáceis.",
+      "Rodelas e cubos de cebola, pimentão ou abobrinha ficam prontos para a panela.",
+      "Guarde em potes bem fechados; os mais firmes duram mais que os macios."
+     ],
+     "q": "Que legume você beliscaria mais se já estivesse cortado?",
+     "c": "Corte dois legumes em palitos ou cubos e guarde em potes para os próximos dias."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking perfect rice in batches",
+     "g": "Cook a big batch of fluffy rice and store it safely for the week.",
+     "p": [
+      "Rinse the rice until the water runs almost clear to remove extra starch.",
+      "For many white rices, about 1.5 to 2 parts water to 1 part rice works; check the pack.",
+      "Spread cooked rice out to cool fast, refrigerate within an hour, eat it soon or freeze it."
+     ],
+     "q": "How do you cook rice now: pot, rice cooker or microwave?",
+     "c": "Cook a batch of rice, cool it quickly on a tray and pack it into portions."
+    },
+    "de": {
+     "t": "Reis perfekt auf Vorrat kochen",
+     "g": "Koche eine große Portion lockeren Reis und lagere ihn sicher für die Woche.",
+     "p": [
+      "Wasch den Reis, bis das Wasser fast klar ist, um überschüssige Stärke zu entfernen.",
+      "Bei vielen weißen Reissorten passt etwa 1,5 bis 2 Teile Wasser auf 1 Teil Reis; siehe Packung.",
+      "Reis flach verteilen, schnell abkühlen, binnen einer Stunde kühlen, bald essen oder einfrieren."
+     ],
+     "q": "Wie kochst du Reis jetzt: im Topf, im Reiskocher oder in der Mikrowelle?",
+     "c": "Koche eine Portion Reis, kühl sie schnell auf einem Blech ab und teile sie auf."
+    },
+    "es": {
+     "t": "Arroz perfecto en grandes cantidades",
+     "g": "Cocinar una buena tanda de arroz suelto y guardarlo de forma segura para la semana.",
+     "p": [
+      "Lava el arroz hasta que el agua salga casi clara para quitar el almidón sobrante.",
+      "Para muchos arroces blancos sirven 1,5 a 2 partes de agua por 1 de arroz; mira el paquete.",
+      "Extiende el arroz para que se enfríe rápido, a la nevera en una hora; cómelo pronto o congélalo."
+     ],
+     "q": "¿Cómo cocinas el arroz ahora: en olla, arrocera o microondas?",
+     "c": "Cocina una tanda de arroz, enfríala rápido en una bandeja y repártela en raciones."
+    },
+    "fr": {
+     "t": "Du riz parfait en grande quantité",
+     "g": "Cuire une bonne quantité de riz bien détaché et le conserver en sécurité pour la semaine.",
+     "p": [
+      "Rince le riz jusqu'à ce que l'eau soit presque claire pour enlever l'excès d'amidon.",
+      "Pour beaucoup de riz blancs, 1,5 à 2 volumes d'eau pour 1 de riz ; vérifie le paquet.",
+      "Étale le riz pour qu'il refroidisse vite, au frigo dans l'heure ; mange-le vite ou congèle-le."
+     ],
+     "q": "Comment cuis-tu le riz : casserole, cuiseur à riz ou micro-ondes ?",
+     "c": "Cuis une fournée de riz, refroidis-la vite sur une plaque et répartis-la en portions."
+    },
+    "it": {
+     "t": "Riso perfetto in grandi quantità",
+     "g": "Cuocere una bella quantità di riso sgranato e conservarlo in sicurezza per la settimana.",
+     "p": [
+      "Sciacqua il riso finché l'acqua è quasi limpida per togliere l'amido in eccesso.",
+      "Per molti risi bianchi vanno bene da 1,5 a 2 parti d'acqua per 1 di riso; guarda la confezione.",
+      "Stendi il riso per raffreddarlo in fretta, in frigo entro un'ora; mangialo presto o congelalo."
+     ],
+     "q": "Come cuoci il riso adesso: pentola, cuociriso o microonde?",
+     "c": "Cuoci una porzione di riso, raffreddala in fretta su una teglia e dividila in porzioni."
+    },
+    "pt": {
+     "t": "Arroz perfeito em quantidade",
+     "g": "Cozinhar uma boa quantidade de arroz soltinho e guardá-lo em segurança para a semana.",
+     "p": [
+      "Lava o arroz até a água sair quase limpa para tirar o excesso de amido.",
+      "Para muitos arrozes brancos, 1,5 a 2 partes de água para 1 de arroz; vê a embalagem.",
+      "Espalha o arroz para arrefecer depressa, ao frigorífico numa hora; come cedo ou congela."
+     ],
+     "q": "Como cozinhas o arroz agora: tacho, panela elétrica ou micro-ondas?",
+     "c": "Cozinha uma dose de arroz, arrefece-a depressa num tabuleiro e divide-a em porções."
+    },
+    "pt_BR": {
+     "t": "Arroz perfeito em grande quantidade",
+     "g": "Cozinhar bastante arroz soltinho e guardar com segurança para a semana.",
+     "p": [
+      "Lave o arroz até a água sair quase limpa para tirar o excesso de amido.",
+      "Para muitos arrozes brancos, 1,5 a 2 partes de água para 1 de arroz; veja a embalagem.",
+      "Espalhe o arroz para esfriar rápido, geladeira em até uma hora; coma logo ou congele."
+     ],
+     "q": "Como você faz arroz hoje: panela, panela elétrica ou micro-ondas?",
+     "c": "Cozinhe uma leva de arroz, esfrie rápido numa assadeira e divida em porções."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking quinoa and other grains",
+     "g": "Discover quick grains with different textures to vary your weekly bases.",
+     "p": [
+      "Rinse quinoa well, then simmer it for about 15 minutes until little tails appear.",
+      "Couscous and fine bulgur just soak in hot water; barley takes longer and stays chewy.",
+      "Cook one grain in a batch and use it in salads, bowls and soups all week."
+     ],
+     "q": "Which of these grains have you tried, and which sounds new to you?",
+     "c": "Cook one grain you rarely eat and use it in two different meals this week."
+    },
+    "de": {
+     "t": "Quinoa und andere Getreide kochen",
+     "g": "Entdecke schnelle Getreidesorten mit verschiedenen Texturen für abwechslungsreiche Basics.",
+     "p": [
+      "Quinoa gut waschen und etwa 15 Minuten köcheln, bis kleine Schwänzchen erscheinen.",
+      "Couscous und feiner Bulgur quellen in heißem Wasser; Graupen brauchen länger und bleiben bissfest.",
+      "Koch ein Getreide auf Vorrat und nutze es die Woche über in Salaten, Bowls und Suppen."
+     ],
+     "q": "Welche dieser Getreide kennst du schon, und welches ist neu für dich?",
+     "c": "Koche ein Getreide, das du selten isst, und nutze es diese Woche in zwei Gerichten."
+    },
+    "es": {
+     "t": "Quinoa y otros cereales",
+     "g": "Descubrir cereales rápidos con texturas distintas para variar tus bases de la semana.",
+     "p": [
+      "Lava bien la quinoa y cuécela unos 15 minutos hasta que asomen unos rabitos.",
+      "El cuscús y el bulgur fino solo se hidratan en agua caliente; la cebada tarda más y queda firme.",
+      "Cocina un cereal en cantidad y úsalo en ensaladas, bowls y sopas toda la semana."
+     ],
+     "q": "¿Cuáles de estos cereales has probado y cuál te suena nuevo?",
+     "c": "Cocina un cereal que casi nunca comes y úsalo en dos comidas distintas esta semana."
+    },
+    "fr": {
+     "t": "Quinoa et autres céréales",
+     "g": "Découvrir des céréales rapides aux textures variées pour changer tes bases de la semaine.",
+     "p": [
+      "Rince bien le quinoa, puis fais-le mijoter environ 15 minutes jusqu'à voir de petits germes.",
+      "Couscous et boulgour fin gonflent dans l'eau chaude ; l'orge cuit plus longtemps et reste ferme.",
+      "Cuis une céréale en quantité et utilise-la dans salades, bols et soupes toute la semaine."
+     ],
+     "q": "Lesquelles de ces céréales as-tu goûtées, et laquelle est nouvelle pour toi ?",
+     "c": "Cuis une céréale que tu manges rarement et utilise-la dans deux repas cette semaine."
+    },
+    "it": {
+     "t": "Quinoa e altri cereali",
+     "g": "Scoprire cereali veloci con consistenze diverse per variare le basi della settimana.",
+     "p": [
+      "Sciacqua bene la quinoa e cuocila circa 15 minuti finché spuntano dei codini.",
+      "Couscous e bulgur fine si reidratano in acqua calda; l'orzo cuoce di più e resta al dente.",
+      "Cuoci un cereale in quantità e usalo in insalate, bowl e zuppe per tutta la settimana."
+     ],
+     "q": "Quali di questi cereali hai provato e quale ti suona nuovo?",
+     "c": "Cuoci un cereale che mangi di rado e usalo in due pasti diversi questa settimana."
+    },
+    "pt": {
+     "t": "Quinoa e outros cereais",
+     "g": "Descobrir cereais rápidos com texturas diferentes para variar as bases da semana.",
+     "p": [
+      "Lava bem a quinoa e coze-a cerca de 15 minutos até aparecerem uns rabinhos.",
+      "O cuscuz e o bulgur fino só hidratam em água quente; a cevada demora mais e fica firme.",
+      "Coze um cereal em quantidade e usa-o em saladas, taças e sopas durante a semana."
+     ],
+     "q": "Quais destes cereais já provaste, e qual é novo para ti?",
+     "c": "Coze um cereal que comes pouco e usa-o em duas refeições diferentes esta semana."
+    },
+    "pt_BR": {
+     "t": "Quinoa e outros grãos",
+     "g": "Descobrir grãos rápidos com texturas diferentes para variar as bases da semana.",
+     "p": [
+      "Lave bem a quinoa e cozinhe por uns 15 minutos até aparecerem uns rabinhos.",
+      "Cuscuz marroquino e triguilho fino só hidratam em água quente; a cevada demora mais e fica firme.",
+      "Cozinhe um grão em quantidade e use em saladas, bowls e sopas a semana toda."
+     ],
+     "q": "Quais desses grãos você já provou, e qual é novidade?",
+     "c": "Cozinhe um grão que você quase não come e use em duas refeições nesta semana."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pasta for meal prep",
+     "g": "Cook pasta so it stays pleasant and not mushy when you reheat it later.",
+     "p": [
+      "Cook it a minute or two less than the pack says, so it stays slightly firm.",
+      "Rinse briefly or toss with a little oil so it does not stick together as it cools.",
+      "Store sauce separately when you can and mix just before eating."
+     ],
+     "q": "Do you prefer pasta with sauce mixed in, or kept apart?",
+     "c": "Cook one batch of pasta slightly firm and pack it with the sauce on the side."
+    },
+    "de": {
+     "t": "Nudeln fürs Meal Prep",
+     "g": "Koche Nudeln so, dass sie beim Aufwärmen angenehm und nicht matschig sind.",
+     "p": [
+      "Koche sie ein bis zwei Minuten kürzer als angegeben, damit sie bissfest bleiben.",
+      "Kurz abspülen oder mit etwas Öl mischen, damit sie beim Abkühlen nicht kleben.",
+      "Soße möglichst getrennt lagern und erst vor dem Essen mischen."
+     ],
+     "q": "Magst du Nudeln lieber mit untergemischter Soße oder getrennt?",
+     "c": "Koche eine Portion Nudeln bissfest und pack die Soße separat dazu."
+    },
+    "es": {
+     "t": "Pasta para meal prep",
+     "g": "Cocinar la pasta para que siga rica y no quede blanda al recalentarla.",
+     "p": [
+      "Cuécela uno o dos minutos menos de lo que indica el paquete para que quede firme.",
+      "Aclárala un poco o mézclala con algo de aceite para que no se pegue al enfriarse.",
+      "Guarda la salsa aparte cuando puedas y mezcla justo antes de comer."
+     ],
+     "q": "¿Prefieres la pasta con la salsa mezclada o por separado?",
+     "c": "Cuece una tanda de pasta un poco firme y guárdala con la salsa aparte."
+    },
+    "fr": {
+     "t": "Les pâtes en meal prep",
+     "g": "Cuire les pâtes pour qu'elles restent agréables et pas molles au réchauffage.",
+     "p": [
+      "Fais-les cuire une ou deux minutes de moins qu'indiqué pour qu'elles restent fermes.",
+      "Rince-les vite ou ajoute un filet d'huile pour qu'elles ne collent pas en refroidissant.",
+      "Garde la sauce à part si possible et mélange juste avant de manger."
+     ],
+     "q": "Tu préfères les pâtes déjà mélangées à la sauce ou à part ?",
+     "c": "Cuis une fournée de pâtes un peu fermes et range-les avec la sauce à part."
+    },
+    "it": {
+     "t": "La pasta nel meal prep",
+     "g": "Cuocere la pasta in modo che resti buona e non scotta quando la riscaldi.",
+     "p": [
+      "Cuocila uno o due minuti meno di quanto indicato, così resta al dente.",
+      "Sciacquala appena o condiscila con un filo d'olio perché non si attacchi raffreddandosi.",
+      "Tieni il sugo a parte quando puoi e mescola poco prima di mangiare."
+     ],
+     "q": "Preferisci la pasta già condita o con il sugo a parte?",
+     "c": "Cuoci una porzione di pasta al dente e conservala con il sugo a parte."
+    },
+    "pt": {
+     "t": "Massa para meal prep",
+     "g": "Cozer a massa para que continue boa e não fique empapada ao reaquecer.",
+     "p": [
+      "Coze-a um ou dois minutos menos do que diz a embalagem, para ficar firme.",
+      "Passa-a rapidamente por água ou envolve num fio de azeite para não colar ao arrefecer.",
+      "Guarda o molho à parte quando puderes e mistura só antes de comer."
+     ],
+     "q": "Preferes a massa já misturada com o molho ou à parte?",
+     "c": "Coze uma dose de massa al dente e guarda-a com o molho à parte."
+    },
+    "pt_BR": {
+     "t": "Macarrão para marmita",
+     "g": "Cozinhar o macarrão para ele continuar gostoso e não ficar mole ao esquentar.",
+     "p": [
+      "Cozinhe um ou dois minutos a menos que o indicado, para ficar al dente.",
+      "Passe rápido na água ou misture um fio de azeite para não grudar ao esfriar.",
+      "Guarde o molho separado quando puder e misture só na hora de comer."
+     ],
+     "q": "Você prefere o macarrão já misturado com o molho ou separado?",
+     "c": "Cozinhe uma leva de macarrão al dente e guarde com o molho separado."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Potatoes and sweet potatoes",
+     "g": "Cook potatoes and sweet potatoes in batches so they become the base of several meals.",
+     "p": [
+      "Baked whole, they become quick stuffed potatoes or mash later in the week.",
+      "Roasted in cubes with oil and salt, they add crisp bites to bowls and salads.",
+      "Boiled potatoes are great for potato salad; cool them fast and keep them in the fridge."
+     ],
+     "q": "Do you prefer potatoes roasted, baked, boiled or mashed?",
+     "c": "Roast one tray of potato or sweet potato cubes and use them in two meals."
+    },
+    "de": {
+     "t": "Kartoffeln und Süßkartoffeln",
+     "g": "Koche Kartoffeln und Süßkartoffeln auf Vorrat, damit sie die Basis mehrerer Mahlzeiten werden.",
+     "p": [
+      "Ganz gebacken werden sie später schnell zu gefüllten Kartoffeln oder Püree.",
+      "Gewürfelt mit Öl und Salz geröstet, bringen sie Knusper in Bowls und Salate.",
+      "Gekochte Kartoffeln sind ideal für Kartoffelsalat; schnell abkühlen und kühl lagern."
+     ],
+     "q": "Magst du Kartoffeln lieber geröstet, gebacken, gekocht oder als Püree?",
+     "c": "Röste ein Blech Kartoffel- oder Süßkartoffelwürfel und nutze sie für zwei Mahlzeiten."
+    },
+    "es": {
+     "t": "Patatas y boniatos",
+     "g": "Cocinar patatas y boniatos en cantidad para que sean la base de varias comidas.",
+     "p": [
+      "Asados enteros, luego se convierten en patatas rellenas o puré en un momento.",
+      "En dados al horno con aceite y sal, dan un toque crujiente a bowls y ensaladas.",
+      "Las patatas cocidas son ideales para ensaladilla; enfríalas rápido y guárdalas en la nevera."
+     ],
+     "q": "¿Prefieres las patatas asadas, al horno, cocidas o en puré?",
+     "c": "Asa una bandeja de dados de patata o boniato y úsalos en dos comidas."
+    },
+    "fr": {
+     "t": "Pommes de terre et patates douces",
+     "g": "Cuire pommes de terre et patates douces en quantité pour en faire la base de plusieurs repas.",
+     "p": [
+      "Cuites entières au four, elles deviennent vite pommes de terre farcies ou purée.",
+      "Rôties en cubes avec huile et sel, elles apportent du croustillant aux bols et salades.",
+      "Bouillies, elles sont parfaites en salade ; refroidis-les vite et garde-les au frigo."
+     ],
+     "q": "Tu préfères les pommes de terre rôties, au four, bouillies ou en purée ?",
+     "c": "Rôtis une plaque de cubes de pomme de terre ou de patate douce pour deux repas."
+    },
+    "it": {
+     "t": "Patate e patate dolci",
+     "g": "Cuocere patate e patate dolci in quantità perché diventino la base di più pasti.",
+     "p": [
+      "Cotte intere al forno, diventano in fretta patate ripiene o purè.",
+      "Arrosto a cubetti con olio e sale, danno croccantezza a bowl e insalate.",
+      "Lesse sono perfette per l'insalata di patate; raffreddale in fretta e tienile in frigo."
+     ],
+     "q": "Preferisci le patate arrosto, al forno, lesse o in purè?",
+     "c": "Arrostisci una teglia di cubetti di patate o patate dolci e usali in due pasti."
+    },
+    "pt": {
+     "t": "Batatas e batatas-doces",
+     "g": "Cozinhar batatas e batatas-doces em quantidade para servirem de base a várias refeições.",
+     "p": [
+      "Assadas inteiras, viram depois batatas recheadas ou puré num instante.",
+      "Assadas aos cubos com azeite e sal, dão crocância a taças e saladas.",
+      "Cozidas são ótimas para salada de batata; arrefece-as depressa e guarda no frigorífico."
+     ],
+     "q": "Preferes batatas assadas, no forno, cozidas ou em puré?",
+     "c": "Assa um tabuleiro de cubos de batata ou batata-doce e usa-os em duas refeições."
+    },
+    "pt_BR": {
+     "t": "Batata e batata-doce",
+     "g": "Cozinhar batata e batata-doce em quantidade para virarem base de várias refeições.",
+     "p": [
+      "Assadas inteiras, depois viram batata recheada ou purê num instante.",
+      "Assadas em cubos com azeite e sal, dão crocância a bowls e saladas.",
+      "Cozidas são ótimas para salada de batata; esfrie rápido e guarde na geladeira."
+     ],
+     "q": "Você prefere batata assada, cozida, frita no forno ou em purê?",
+     "c": "Asse uma assadeira de cubos de batata ou batata-doce e use em duas refeições."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Oats beyond porridge",
+     "g": "Use oats in overnight oats, baked oats and simple snack bars for easy prep.",
+     "p": [
+      "Overnight oats soak in milk or yoghurt in the fridge and are ready by morning.",
+      "Baked oats are like a soft cake you can slice into portions for the week.",
+      "Oats, mashed banana and nuts pressed into a tray make simple snack bars."
+     ],
+     "q": "How do you usually eat oats, if at all?",
+     "c": "Make one tray of baked oats or snack bars and cut it into portions."
+    },
+    "de": {
+     "t": "Haferflocken jenseits von Porridge",
+     "g": "Nutze Haferflocken für Overnight Oats, Baked Oats und einfache Riegel zum Vorbereiten.",
+     "p": [
+      "Overnight Oats weichen über Nacht in Milch oder Joghurt ein und sind morgens fertig.",
+      "Baked Oats sind wie ein weicher Kuchen, den du für die Woche in Stücke schneidest.",
+      "Haferflocken, zerdrückte Banane und Nüsse in eine Form gedrückt ergeben einfache Riegel."
+     ],
+     "q": "Wie isst du Haferflocken normalerweise, wenn überhaupt?",
+     "c": "Mach eine Form Baked Oats oder Riegel und schneide sie in Portionen."
+    },
+    "es": {
+     "t": "La avena más allá de las gachas",
+     "g": "Usar la avena en overnight oats, avena al horno y barritas sencillas para preparar fácil.",
+     "p": [
+      "La avena nocturna se remoja en leche o yogur en la nevera y está lista por la mañana.",
+      "La avena al horno es como un bizcocho blando que cortas en raciones para la semana.",
+      "Avena, plátano chafado y frutos secos prensados en una bandeja dan barritas sencillas."
+     ],
+     "q": "¿Cómo sueles comer la avena, si es que la comes?",
+     "c": "Haz una bandeja de avena al horno o de barritas y córtala en raciones."
+    },
+    "fr": {
+     "t": "L'avoine au-delà du porridge",
+     "g": "Utiliser l'avoine en overnight oats, en avoine au four et en barres simples.",
+     "p": [
+      "Les overnight oats trempent dans du lait ou du yaourt au frigo et sont prêts le matin.",
+      "L'avoine au four ressemble à un gâteau moelleux à découper en portions.",
+      "Avoine, banane écrasée et noix tassées dans un plat font des barres toutes simples."
+     ],
+     "q": "Comment manges-tu l'avoine d'habitude, si tu en manges ?",
+     "c": "Prépare un plat d'avoine au four ou de barres et coupe-le en portions."
+    },
+    "it": {
+     "t": "L'avena oltre il porridge",
+     "g": "Usare l'avena negli overnight oats, nell'avena al forno e in barrette semplici.",
+     "p": [
+      "Gli overnight oats riposano in latte o yogurt in frigo e sono pronti al mattino.",
+      "L'avena al forno è come una torta morbida da tagliare in porzioni per la settimana.",
+      "Avena, banana schiacciata e frutta secca pressate in una teglia fanno barrette semplici."
+     ],
+     "q": "Come mangi di solito l'avena, se la mangi?",
+     "c": "Prepara una teglia di avena al forno o di barrette e tagliala in porzioni."
+    },
+    "pt": {
+     "t": "A aveia além das papas",
+     "g": "Usar aveia em overnight oats, aveia no forno e barras simples para preparar com facilidade.",
+     "p": [
+      "A aveia de véspera fica de molho em leite ou iogurte no frigorífico e está pronta de manhã.",
+      "A aveia no forno parece um bolo fofo que se corta em porções para a semana.",
+      "Aveia, banana esmagada e frutos secos calcados num tabuleiro dão barras simples."
+     ],
+     "q": "Como costumas comer aveia, se comes?",
+     "c": "Faz um tabuleiro de aveia no forno ou de barras e corta-o em porções."
+    },
+    "pt_BR": {
+     "t": "Aveia além do mingau",
+     "g": "Usar aveia em overnight oats, aveia assada e barrinhas simples para preparar fácil.",
+     "p": [
+      "A aveia dormida fica de molho no leite ou iogurte na geladeira e está pronta de manhã.",
+      "A aveia assada parece um bolo macio que você corta em porções para a semana.",
+      "Aveia, banana amassada e castanhas prensadas numa forma viram barrinhas simples."
+     ],
+     "q": "Como você costuma comer aveia, se come?",
+     "c": "Faça uma forma de aveia assada ou de barrinhas e corte em porções."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: your meal prep foundations",
+     "g": "Look back at your first weeks and celebrate the foundations you have built.",
+     "p": [
+      "You set a goal, chose containers and built safe fridge and freezer habits.",
+      "You planned a menu, wrote a smart list and checked your pantry first.",
+      "You practised knife skills and batch-cooked grains, potatoes and oats."
+     ],
+     "q": "Which lesson so far has changed your kitchen habits the most?",
+     "c": "Write down your three favourite tips from this month and plan one prep session using them."
+    },
+    "de": {
+     "t": "Rückblick: deine Meal-Prep-Grundlagen",
+     "g": "Schau auf deine ersten Wochen zurück und feiere die Grundlagen, die du aufgebaut hast.",
+     "p": [
+      "Du hast ein Ziel gesetzt, Behälter gewählt und sichere Kühl- und Gefriergewohnheiten aufgebaut.",
+      "Du hast einen Plan gemacht, eine kluge Liste geschrieben und erst den Vorrat geprüft.",
+      "Du hast Messertechnik geübt und Getreide, Kartoffeln und Hafer vorgekocht."
+     ],
+     "q": "Welche Lektion hat deine Küchengewohnheiten bisher am meisten verändert?",
+     "c": "Schreib deine drei Lieblingstipps des Monats auf und plane damit eine Prep-Einheit."
+    },
+    "es": {
+     "t": "Repaso: tus bases de meal prep",
+     "g": "Mirar atrás a tus primeras semanas y celebrar las bases que has construido.",
+     "p": [
+      "Fijaste un objetivo, elegiste recipientes y creaste hábitos seguros de nevera y congelador.",
+      "Planificaste un menú, hiciste una lista inteligente y revisaste la despensa primero.",
+      "Practicaste con el cuchillo y cocinaste en cantidad cereales, patatas y avena."
+     ],
+     "q": "¿Qué lección te ha cambiado más los hábitos en la cocina hasta ahora?",
+     "c": "Apunta tus tres consejos favoritos del mes y planifica una sesión de preparación con ellos."
+    },
+    "fr": {
+     "t": "Bilan : les bases de ton meal prep",
+     "g": "Revenir sur tes premières semaines et célébrer les bases que tu as posées.",
+     "p": [
+      "Tu as fixé un objectif, choisi tes boîtes et pris de bonnes habitudes frigo et congélateur.",
+      "Tu as planifié un menu, écrit une liste maligne et vérifié tes placards d'abord.",
+      "Tu as travaillé le couteau et cuit en quantité céréales, pommes de terre et avoine."
+     ],
+     "q": "Quelle leçon a le plus changé tes habitudes en cuisine jusqu'ici ?",
+     "c": "Note tes trois astuces préférées du mois et prévois une séance de préparation avec elles."
+    },
+    "it": {
+     "t": "Ripasso: le basi del tuo meal prep",
+     "g": "Guardare indietro alle prime settimane e festeggiare le basi che hai costruito.",
+     "p": [
+      "Hai scelto un obiettivo, dei contenitori e creato abitudini sicure per frigo e freezer.",
+      "Hai pianificato un menù, scritto una lista furba e controllato prima la dispensa.",
+      "Hai fatto pratica col coltello e cucinato in quantità cereali, patate e avena."
+     ],
+     "q": "Quale lezione finora ha cambiato di più le tue abitudini in cucina?",
+     "c": "Scrivi i tuoi tre consigli preferiti del mese e pianifica una sessione di prep con quelli."
+    },
+    "pt": {
+     "t": "Revisão: as bases do teu meal prep",
+     "g": "Olhar para as primeiras semanas e celebrar as bases que construíste.",
+     "p": [
+      "Definiste um objetivo, escolheste caixas e criaste hábitos seguros de frigorífico e congelador.",
+      "Planeaste um menu, fizeste uma lista inteligente e viste primeiro a despensa.",
+      "Praticaste com a faca e cozinhaste em quantidade cereais, batatas e aveia."
+     ],
+     "q": "Que lição mudou mais os teus hábitos na cozinha até agora?",
+     "c": "Escreve as tuas três dicas favoritas do mês e planeia uma sessão de preparação com elas."
+    },
+    "pt_BR": {
+     "t": "Revisão: suas bases de meal prep",
+     "g": "Olhar para as primeiras semanas e comemorar as bases que você construiu.",
+     "p": [
+      "Você definiu um objetivo, escolheu potes e criou hábitos seguros de geladeira e freezer.",
+      "Você planejou um cardápio, fez uma lista esperta e conferiu a despensa antes.",
+      "Você praticou com a faca e cozinhou em quantidade grãos, batatas e aveia."
+     ],
+     "q": "Qual lição mais mudou seus hábitos na cozinha até agora?",
+     "c": "Anote suas três dicas favoritas do mês e planeje uma sessão de preparo com elas."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hard-boiled eggs for the week",
+     "g": "Cook, cool and peel eggs easily so you have quick snacks and salad toppings.",
+     "p": [
+      "Lower eggs into simmering water and cook about 9 to 12 minutes, depending on size.",
+      "Move them straight into cold or iced water to stop cooking and ease peeling.",
+      "Hard-boiled eggs keep about a week in the fridge; unpeeled lasts best."
+     ],
+     "q": "How do you like your eggs: soft, jammy or fully set?",
+     "c": "Boil six eggs, cool them in cold water and store them in the fridge for the week."
+    },
+    "de": {
+     "t": "Hartgekochte Eier für die Woche",
+     "g": "Koche, kühle und schäle Eier leicht, damit du schnelle Snacks und Salat-Toppings hast.",
+     "p": [
+      "Eier in siedendes Wasser legen und je nach Größe etwa 9 bis 12 Minuten kochen.",
+      "Danach sofort in kaltes oder Eiswasser legen, das stoppt das Garen und erleichtert das Schälen.",
+      "Hartgekochte Eier halten im Kühlschrank etwa eine Woche, ungeschält am besten."
+     ],
+     "q": "Wie magst du Eier: weich, wachsweich oder ganz hart?",
+     "c": "Koche sechs Eier, kühl sie in kaltem Wasser ab und stell sie für die Woche kalt."
+    },
+    "es": {
+     "t": "Huevos duros para la semana",
+     "g": "Cocer, enfriar y pelar huevos fácilmente para tener tentempiés y toppings rápidos.",
+     "p": [
+      "Mete los huevos en agua que hierva suave y cuécelos unos 9 a 12 minutos según tamaño.",
+      "Pásalos enseguida a agua fría o con hielo para cortar la cocción y pelarlos mejor.",
+      "Los huevos duros duran una semana aprox. en la nevera; mejor sin pelar."
+     ],
+     "q": "¿Cómo te gustan los huevos: pasados por agua, a medio cuajar o bien hechos?",
+     "c": "Cuece seis huevos, enfríalos en agua fría y guárdalos en la nevera para la semana."
+    },
+    "fr": {
+     "t": "Œufs durs pour la semaine",
+     "g": "Cuire, refroidir et écaler les œufs facilement pour avoir encas et garnitures prêts.",
+     "p": [
+      "Plonge les œufs dans l'eau frémissante et cuis-les environ 9 à 12 minutes selon la taille.",
+      "Mets-les tout de suite dans l'eau froide ou glacée pour stopper la cuisson et mieux écaler.",
+      "Les œufs durs se gardent environ une semaine au frigo, de préférence avec la coquille."
+     ],
+     "q": "Tu aimes les œufs comment : à la coque, mollets ou durs ?",
+     "c": "Fais cuire six œufs, refroidis-les dans l'eau froide et garde-les au frigo pour la semaine."
+    },
+    "it": {
+     "t": "Uova sode per la settimana",
+     "g": "Cuocere, raffreddare e sgusciare le uova facilmente per avere spuntini e condimenti pronti.",
+     "p": [
+      "Metti le uova in acqua che sobbolle e cuocile circa 9-12 minuti secondo la grandezza.",
+      "Passale subito in acqua fredda o con ghiaccio per fermare la cottura e sgusciarle meglio.",
+      "Le uova sode durano circa una settimana in frigo, meglio con il guscio."
+     ],
+     "q": "Come ti piacciono le uova: alla coque, morbide o sode?",
+     "c": "Cuoci sei uova, raffreddale in acqua fredda e conservale in frigo per la settimana."
+    },
+    "pt": {
+     "t": "Ovos cozidos para a semana",
+     "g": "Cozer, arrefecer e descascar ovos com facilidade para teres snacks e saladas rápidos.",
+     "p": [
+      "Põe os ovos em água a ferver em lume brando e coze cerca de 9 a 12 minutos, conforme o tamanho.",
+      "Passa-os logo para água fria ou com gelo para parar a cozedura e descascar melhor.",
+      "Os ovos cozidos duram cerca de uma semana no frigorífico, de preferência com casca."
+     ],
+     "q": "Como gostas dos ovos: de gema mole, cremosa ou bem cozidos?",
+     "c": "Coze seis ovos, arrefece-os em água fria e guarda-os no frigorífico para a semana."
+    },
+    "pt_BR": {
+     "t": "Ovos cozidos para a semana",
+     "g": "Cozinhar, esfriar e descascar ovos com facilidade para ter lanches e saladas rápidos.",
+     "p": [
+      "Coloque os ovos em água fervendo baixo e cozinhe uns 9 a 12 minutos, conforme o tamanho.",
+      "Passe logo para água fria ou com gelo para parar o cozimento e descascar melhor.",
+      "Ovos cozidos duram cerca de uma semana na geladeira, de preferência com casca."
+     ],
+     "q": "Como você gosta do ovo: mole, com gema cremosa ou bem cozido?",
+     "c": "Cozinhe seis ovos, esfrie em água fria e guarde na geladeira para a semana."
+    }
+   }
+  }
+ ]
+}

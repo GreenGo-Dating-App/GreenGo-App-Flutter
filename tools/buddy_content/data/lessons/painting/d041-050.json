@@ -1,0 +1,835 @@
+{
+ "topic": "painting",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gouache: matte and bold",
+     "g": "Discover what makes gouache special, from posters to illustration and quick studies.",
+     "p": [
+      "Gouache is opaque watercolour: more pigment, often with a white filler, giving flat, velvety matte colour.",
+      "It was loved for posters, animation backgrounds and illustration, because it dries fast and reproduces evenly.",
+      "Dry gouache can be reactivated with water, so layer with light strokes and avoid scrubbing lower layers."
+     ],
+     "q": "Can you think of a poster or illustration style with flat, bold areas of colour that you like?",
+     "c": "Paint three overlapping flat shapes in gouache, like a sun, a hill and a house, each in a single even colour."
+    },
+    "de": {
+     "t": "Gouache: matt und kräftig",
+     "g": "Entdecke, was Gouache besonders macht, von Plakaten über Illustration bis zu schnellen Studien.",
+     "p": [
+      "Gouache ist deckendes Aquarell: mehr Pigment, oft mit weißem Füllstoff, für flache, samtig matte Farbe.",
+      "Sie war beliebt für Plakate, Animationshintergründe und Illustration, weil sie schnell trocknet und gleichmäßig wirkt.",
+      "Trockene Gouache löst sich mit Wasser wieder an: Schichte mit leichten Strichen und schrubbe untere Lagen nicht."
+     ],
+     "q": "Fällt dir ein Plakat- oder Illustrationsstil mit flachen, kräftigen Farbflächen ein, den du magst?",
+     "c": "Male mit Gouache drei sich überlappende flache Formen wie Sonne, Hügel und Haus, jede in einer gleichmäßigen Farbe."
+    },
+    "es": {
+     "t": "Gouache: mate y potente",
+     "g": "Descubre qué hace especial al gouache, de los carteles a la ilustración y los estudios rápidos.",
+     "p": [
+      "El gouache es acuarela opaca: más pigmento, a menudo con carga blanca, que da un color plano y mate aterciopelado.",
+      "Fue muy usado en carteles, fondos de animación e ilustración, porque seca rápido y se reproduce de forma uniforme.",
+      "El gouache seco se reactiva con agua, así que superpón capas con trazos ligeros y no frotes las de abajo."
+     ],
+     "q": "¿Recuerdas algún estilo de cartel o ilustración con zonas de color planas y potentes que te guste?",
+     "c": "Pinta en gouache tres formas planas superpuestas, como un sol, una colina y una casa, cada una de un color uniforme."
+    },
+    "fr": {
+     "t": "Gouache : mate et franche",
+     "g": "Découvre ce qui rend la gouache unique, des affiches à l'illustration et aux études rapides.",
+     "p": [
+      "La gouache est une aquarelle opaque : plus de pigment, souvent avec une charge blanche, pour une couleur mate et veloutée.",
+      "Elle a été très utilisée pour les affiches, décors d'animation et illustrations, car elle sèche vite et se reproduit bien.",
+      "La gouache sèche se réhumecte : superpose avec des touches légères et ne frotte pas les couches du dessous."
+     ],
+     "q": "Connais-tu un style d'affiche ou d'illustration aux aplats de couleur francs que tu aimes ?",
+     "c": "Peins à la gouache trois formes plates qui se chevauchent, comme un soleil, une colline et une maison, chacune en aplat."
+    },
+    "it": {
+     "t": "Gouache: opaca e decisa",
+     "g": "Scopri cosa rende speciale la gouache, dai manifesti all'illustrazione agli studi veloci.",
+     "p": [
+      "La gouache è un acquerello coprente: più pigmento, spesso con una carica bianca, per un colore piatto e vellutato.",
+      "Era amatissima per manifesti, fondali d'animazione e illustrazione, perché asciuga in fretta e si riproduce bene.",
+      "La gouache asciutta si riattiva con l'acqua: sovrapponi con tocchi leggeri e non strofinare gli strati sotto."
+     ],
+     "q": "Ti viene in mente uno stile di manifesto o illustrazione a campiture piatte e decise che ti piace?",
+     "c": "Dipingi a gouache tre forme piatte sovrapposte, come un sole, una collina e una casa, ognuna di un colore uniforme."
+    },
+    "pt": {
+     "t": "Guache: mate e intenso",
+     "g": "Descobre o que torna o guache especial, dos cartazes à ilustração e aos estudos rápidos.",
+     "p": [
+      "O guache é aguarela opaca: mais pigmento, muitas vezes com carga branca, que dá uma cor lisa e mate aveludada.",
+      "Foi muito usado em cartazes, fundos de animação e ilustração, porque seca depressa e se reproduz de forma uniforme.",
+      "O guache seco reativa-se com água, por isso sobrepõe camadas com toques leves e não esfregues as de baixo."
+     ],
+     "q": "Lembras-te de um estilo de cartaz ou ilustração com áreas de cor lisas e fortes de que gostes?",
+     "c": "Pinta em guache três formas lisas sobrepostas, como um sol, uma colina e uma casa, cada uma numa cor uniforme."
+    },
+    "pt_BR": {
+     "t": "Guache: fosco e marcante",
+     "g": "Descubra o que torna o guache especial, dos cartazes à ilustração e aos estudos rápidos.",
+     "p": [
+      "Guache é aquarela opaca: mais pigmento, muitas vezes com carga branca, que dá cor chapada e fosca aveludada.",
+      "Foi muito usado em cartazes, cenários de animação e ilustração, porque seca rápido e reproduz de forma uniforme.",
+      "O guache seco reativa com água, então sobreponha camadas com toques leves e não esfregue as de baixo."
+     ],
+     "q": "Você lembra de algum estilo de cartaz ou ilustração com áreas de cor chapadas e fortes que você curte?",
+     "c": "Pinte em guache três formas chapadas sobrepostas, como um sol, um morro e uma casa, cada uma numa cor uniforme."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introducing oil paint",
+     "g": "Know what to expect from your first oil session: slow drying, rich colour and blending.",
+     "p": [
+      "Oil paint stays workable for hours or days, so you can blend softly and change your mind on the canvas.",
+      "Jan van Eyck and other Flemish painters refined oil in the 15th century, and its glowing depth spread across Europe.",
+      "Start with a few colours, a palette knife, stiff brushes and either odourless solvent or a solvent-free method."
+     ],
+     "q": "What would you love to paint first in oils: a landscape, a portrait or something else?",
+     "c": "Look closely at an oil painting in a book, museum or online and find one spot where colours blend softly."
+    },
+    "de": {
+     "t": "Ölfarbe kennenlernen",
+     "g": "Erfahre, was dich bei deiner ersten Ölsitzung erwartet: langsames Trocknen, satte Farbe, weiches Vermalen.",
+     "p": [
+      "Ölfarbe bleibt Stunden oder Tage verarbeitbar: Du kannst weich vermalen und auf der Leinwand umentscheiden.",
+      "Jan van Eyck und andere flämische Maler verfeinerten im 15. Jahrhundert die Ölmalerei, die sich dann über Europa verbreitete.",
+      "Beginne mit wenigen Farben, einem Malmesser, festen Pinseln und geruchsarmem Lösemittel oder einer lösemittelfreien Methode."
+     ],
+     "q": "Was würdest du am liebsten zuerst in Öl malen: Landschaft, Porträt oder etwas anderes?",
+     "c": "Betrachte ein Ölgemälde in einem Buch, Museum oder online genau und finde eine Stelle, an der Farben weich ineinanderfließen."
+    },
+    "es": {
+     "t": "Presentando el óleo",
+     "g": "Descubre qué esperar de tu primera sesión de óleo: secado lento, color rico y fundidos.",
+     "p": [
+      "El óleo sigue trabajable durante horas o días, así que puedes fundir suavemente y cambiar de idea sobre el lienzo.",
+      "Jan van Eyck y otros pintores flamencos perfeccionaron el óleo en el siglo XV, y su brillo profundo se extendió por Europa.",
+      "Empieza con pocos colores, una espátula, pinceles duros y disolvente sin olor o un método sin disolventes."
+     ],
+     "q": "¿Qué te encantaría pintar primero al óleo: un paisaje, un retrato u otra cosa?",
+     "c": "Observa de cerca un óleo en un libro, museo o internet y busca una zona donde los colores se fundan suavemente."
+    },
+    "fr": {
+     "t": "Découvrir la peinture à l'huile",
+     "g": "Sache à quoi t'attendre pour ta première séance à l'huile : séchage lent, couleur riche et fondus.",
+     "p": [
+      "L'huile reste travaillable des heures ou des jours : tu peux fondre en douceur et changer d'avis sur la toile.",
+      "Jan van Eyck et d'autres peintres flamands ont perfectionné l'huile au XVe siècle, et sa profondeur lumineuse a gagné l'Europe.",
+      "Commence avec peu de couleurs, un couteau à peindre, des brosses raides et un solvant inodore ou une méthode sans solvant."
+     ],
+     "q": "Que rêverais-tu de peindre en premier à l'huile : un paysage, un portrait ou autre chose ?",
+     "c": "Observe de près une peinture à l'huile dans un livre, un musée ou en ligne et trouve un endroit où les couleurs se fondent."
+    },
+    "it": {
+     "t": "Scoprire la pittura a olio",
+     "g": "Scopri cosa aspettarti dalla prima sessione a olio: asciugatura lenta, colore ricco e sfumature.",
+     "p": [
+      "L'olio resta lavorabile per ore o giorni, così puoi sfumare con dolcezza e cambiare idea sulla tela.",
+      "Jan van Eyck e altri pittori fiamminghi perfezionarono l'olio nel Quattrocento, e la sua profondità luminosa si diffuse in Europa.",
+      "Inizia con pochi colori, una spatola, pennelli rigidi e un solvente inodore o un metodo senza solventi."
+     ],
+     "q": "Cosa ti piacerebbe dipingere per primo a olio: un paesaggio, un ritratto o altro?",
+     "c": "Osserva da vicino un dipinto a olio in un libro, museo o online e trova un punto dove i colori sfumano dolcemente."
+    },
+    "pt": {
+     "t": "Conhecer a tinta a óleo",
+     "g": "Sabe o que esperar da tua primeira sessão a óleo: secagem lenta, cor rica e esbatidos.",
+     "p": [
+      "O óleo continua trabalhável durante horas ou dias, por isso podes esbater com suavidade e mudar de ideia na tela.",
+      "Jan van Eyck e outros pintores flamengos aperfeiçoaram o óleo no século XV, e a sua profundidade luminosa espalhou-se pela Europa.",
+      "Começa com poucas cores, uma espátula, pincéis duros e solvente inodoro ou um método sem solventes."
+     ],
+     "q": "O que adorarias pintar primeiro a óleo: uma paisagem, um retrato ou outra coisa?",
+     "c": "Observa de perto uma pintura a óleo num livro, museu ou online e encontra um ponto onde as cores se esbatem suavemente."
+    },
+    "pt_BR": {
+     "t": "Conhecendo a tinta a óleo",
+     "g": "Saiba o que esperar da sua primeira sessão a óleo: secagem lenta, cor rica e misturas suaves.",
+     "p": [
+      "O óleo continua trabalhável por horas ou dias, então você pode esfumar com calma e mudar de ideia na tela.",
+      "Jan van Eyck e outros pintores flamengos aperfeiçoaram o óleo no século XV, e seu brilho profundo se espalhou pela Europa.",
+      "Comece com poucas cores, uma espátula, pincéis duros e solvente sem cheiro ou um método sem solventes."
+     ],
+     "q": "O que você adoraria pintar primeiro a óleo: uma paisagem, um retrato ou outra coisa?",
+     "c": "Observe de perto uma pintura a óleo num livro, museu ou na internet e ache um ponto onde as cores se fundem suavemente."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fat over lean",
+     "g": "Learn the classic oil rule: each layer should be a bit more flexible than the one below.",
+     "p": [
+      "Lean layers have little oil and more solvent; fat layers have more oil, so they stay flexible and dry more slowly.",
+      "If a lean, fast-drying layer sits on top of a fat, slow one, it can crack as the layer beneath keeps moving.",
+      "In practice: thin first layers with solvent, then use paint straight from the tube or add a little oil as you build up."
+     ],
+     "q": "Why do you think old paintings sometimes show a web of fine cracks?",
+     "c": "Write the three stages of an oil painting on a card, lean, medium and fat, and note what you would mix in each."
+    },
+    "de": {
+     "t": "Fett auf Mager",
+     "g": "Lerne die klassische Ölregel: Jede Schicht sollte etwas elastischer sein als die darunter.",
+     "p": [
+      "Magere Schichten enthalten wenig Öl und mehr Lösemittel; fette mehr Öl, sie bleiben elastischer und trocknen langsamer.",
+      "Liegt eine magere, schnell trocknende Schicht auf einer fetten, langsamen, kann sie reißen, weil die untere arbeitet.",
+      "Praktisch: erste Schichten mit Lösemittel verdünnen, später Farbe pur aus der Tube oder mit etwas Öl auftragen."
+     ],
+     "q": "Warum zeigen alte Gemälde wohl manchmal ein Netz feiner Risse?",
+     "c": "Schreib die drei Stufen eines Ölbildes auf eine Karte, mager, mittel und fett, und notiere, was du jeweils beimischen würdest."
+    },
+    "es": {
+     "t": "Graso sobre magro",
+     "g": "Aprende la regla clásica del óleo: cada capa debe ser algo más flexible que la de abajo.",
+     "p": [
+      "Las capas magras llevan poco aceite y más disolvente; las grasas más aceite, así que siguen flexibles y secan más despacio.",
+      "Si una capa magra y rápida queda encima de una grasa y lenta, puede agrietarse porque la de abajo sigue moviéndose.",
+      "En la práctica: primeras capas diluidas con disolvente, luego pintura directa del tubo o con un poco de aceite."
+     ],
+     "q": "¿Por qué crees que algunos cuadros antiguos muestran una red de grietas finas?",
+     "c": "Escribe en una tarjeta las tres etapas de un óleo, magra, media y grasa, y anota qué mezclarías en cada una."
+    },
+    "fr": {
+     "t": "Gras sur maigre",
+     "g": "Apprends la règle classique de l'huile : chaque couche doit être un peu plus souple que celle du dessous.",
+     "p": [
+      "Les couches maigres ont peu d'huile et plus de solvant ; les grasses plus d'huile, elles restent souples et sèchent lentement.",
+      "Une couche maigre à séchage rapide posée sur une grasse et lente peut craqueler, car celle du dessous continue de bouger.",
+      "En pratique : premières couches diluées au solvant, puis peinture pure du tube ou avec un peu d'huile en montant."
+     ],
+     "q": "À ton avis, pourquoi certains tableaux anciens montrent-ils un réseau de fines craquelures ?",
+     "c": "Écris sur une carte les trois étapes d'une huile, maigre, moyenne et grasse, et note ce que tu y mélangerais."
+    },
+    "it": {
+     "t": "Grasso su magro",
+     "g": "Impara la regola classica dell'olio: ogni strato deve essere un po' più elastico di quello sotto.",
+     "p": [
+      "Gli strati magri hanno poco olio e più solvente; quelli grassi più olio, restano elastici e asciugano più lentamente.",
+      "Se uno strato magro e rapido sta sopra uno grasso e lento, può creparsi perché quello sotto continua a muoversi.",
+      "In pratica: primi strati diluiti con solvente, poi colore puro dal tubetto o con un po' d'olio salendo."
+     ],
+     "q": "Perché secondo te alcuni dipinti antichi mostrano una rete di sottili crepe?",
+     "c": "Scrivi su un cartoncino le tre fasi di un dipinto a olio, magra, media e grassa, e annota cosa mescoleresti in ognuna."
+    },
+    "pt": {
+     "t": "Gordo sobre magro",
+     "g": "Aprende a regra clássica do óleo: cada camada deve ser um pouco mais flexível do que a de baixo.",
+     "p": [
+      "As camadas magras têm pouco óleo e mais solvente; as gordas mais óleo, por isso ficam flexíveis e secam mais devagar.",
+      "Se uma camada magra e rápida ficar sobre uma gorda e lenta, pode estalar porque a de baixo continua a mexer.",
+      "Na prática: primeiras camadas diluídas com solvente, depois tinta direta do tubo ou com um pouco de óleo."
+     ],
+     "q": "Porque achas que alguns quadros antigos mostram uma rede de finas fissuras?",
+     "c": "Escreve num cartão as três fases de um óleo, magra, média e gorda, e anota o que misturarias em cada uma."
+    },
+    "pt_BR": {
+     "t": "Gordo sobre magro",
+     "g": "Aprenda a regra clássica do óleo: cada camada deve ser um pouco mais flexível que a de baixo.",
+     "p": [
+      "Camadas magras têm pouco óleo e mais solvente; as gordas têm mais óleo, ficam flexíveis e secam mais devagar.",
+      "Se uma camada magra e rápida ficar sobre uma gorda e lenta, ela pode rachar porque a de baixo continua se mexendo.",
+      "Na prática: primeiras camadas diluídas com solvente, depois tinta direto do tubo ou com um pouco de óleo."
+     ],
+     "q": "Por que você acha que alguns quadros antigos mostram uma rede de rachaduras finas?",
+     "c": "Escreva num cartão as três etapas de um óleo, magra, média e gorda, e anote o que misturaria em cada uma."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe and tidy studio habits",
+     "g": "Build habits that keep you healthy and your space clean while painting.",
+     "p": [
+      "Paint in a ventilated room, keep solvent jars closed, and never eat, drink or rest a brush in your mouth while painting.",
+      "Some pigments, like cadmium or cobalt, are harmful if swallowed or inhaled as dust, so wash hands and avoid sanding dry paint.",
+      "Oily rags can self-heat and ignite: dry them flat or keep them in water in a sealed metal can. Never pour solvent down the drain."
+     ],
+     "q": "Which of these habits do you already follow, and which one is new for you?",
+     "c": "Set up a rag routine today: a lidded jar for used solvent and a place to dry or seal oily rags safely."
+    },
+    "de": {
+     "t": "Sichere, ordentliche Atelierregeln",
+     "g": "Bau Gewohnheiten auf, die dich gesund und deinen Platz beim Malen sauber halten.",
+     "p": [
+      "Male in einem gelüfteten Raum, halte Lösemittelgläser geschlossen und iss, trink oder nimm keinen Pinsel in den Mund beim Malen.",
+      "Manche Pigmente wie Kadmium oder Kobalt schaden beim Verschlucken oder als Staub: Hände waschen, getrocknete Farbe nicht schleifen.",
+      "Öllappen können sich selbst entzünden: flach trocknen oder in Wasser in dichter Metalldose lagern. Lösemittel nie in den Abfluss."
+     ],
+     "q": "Welche dieser Gewohnheiten pflegst du schon, und welche ist neu für dich?",
+     "c": "Richte heute eine Lappenroutine ein: ein Glas mit Deckel für benutztes Lösemittel und einen sicheren Platz für Öllappen."
+    },
+    "es": {
+     "t": "Hábitos seguros y ordenados",
+     "g": "Crea hábitos que te mantengan sano y tu espacio limpio mientras pintas.",
+     "p": [
+      "Pinta en una habitación ventilada, cierra los botes de disolvente y nunca comas, bebas ni te lleves un pincel a la boca al pintar.",
+      "Algunos pigmentos, como el cadmio o el cobalto, son nocivos si se ingieren o se inhala su polvo: lávate las manos y no lijes pintura seca.",
+      "Los trapos con aceite pueden arder solos: sécalos extendidos o guárdalos en agua en una lata cerrada. Nunca tires disolvente al desagüe."
+     ],
+     "q": "¿Cuáles de estos hábitos ya sigues y cuál es nuevo para ti?",
+     "c": "Organiza hoy tu rutina: un bote con tapa para el disolvente usado y un lugar seguro para secar o guardar los trapos."
+    },
+    "fr": {
+     "t": "Un atelier sûr et rangé",
+     "g": "Prends des habitudes qui te gardent en bonne santé et ton espace propre pendant que tu peins.",
+     "p": [
+      "Peins dans une pièce aérée, ferme les pots de solvant et ne mange, ne bois ni ne mets un pinceau à la bouche en peignant.",
+      "Certains pigments, comme le cadmium ou le cobalt, sont nocifs avalés ou inhalés : lave-toi les mains et ne ponce pas la peinture sèche.",
+      "Les chiffons huileux peuvent s'enflammer seuls : sèche-les à plat ou garde-les dans l'eau en boîte fermée. Jamais de solvant à l'évier."
+     ],
+     "q": "Lesquelles de ces habitudes as-tu déjà, et laquelle est nouvelle pour toi ?",
+     "c": "Mets en place ta routine : un pot fermé pour le solvant usagé et un endroit sûr pour sécher ou ranger les chiffons."
+    },
+    "it": {
+     "t": "Abitudini sicure e ordinate",
+     "g": "Crea abitudini che ti mantengono in salute e il tuo spazio pulito mentre dipingi.",
+     "p": [
+      "Dipingi in una stanza aerata, chiudi i barattoli di solvente e non mangiare, bere o mettere il pennello in bocca mentre dipingi.",
+      "Alcuni pigmenti, come cadmio o cobalto, sono nocivi se ingeriti o inalati come polvere: lavati le mani e non carteggiare il colore secco.",
+      "Gli stracci unti d'olio possono incendiarsi da soli: asciugali stesi o tienili in acqua in una latta chiusa. Mai solvente nello scarico."
+     ],
+     "q": "Quali di queste abitudini segui già, e quale è nuova per te?",
+     "c": "Organizza oggi la tua routine: un barattolo chiuso per il solvente usato e un posto sicuro per asciugare o chiudere gli stracci."
+    },
+    "pt": {
+     "t": "Hábitos seguros e arrumados",
+     "g": "Cria hábitos que te mantêm saudável e o teu espaço limpo enquanto pintas.",
+     "p": [
+      "Pinta numa divisão arejada, fecha os frascos de solvente e nunca comas, bebas ou leves um pincel à boca enquanto pintas.",
+      "Alguns pigmentos, como o cádmio ou o cobalto, são nocivos se ingeridos ou inalados em pó: lava as mãos e não lixes tinta seca.",
+      "Panos com óleo podem pegar fogo sozinhos: seca-os estendidos ou guarda-os em água numa lata fechada. Nunca deites solvente no ralo."
+     ],
+     "q": "Quais destes hábitos já segues e qual é novo para ti?",
+     "c": "Organiza hoje a tua rotina: um frasco com tampa para o solvente usado e um lugar seguro para secar ou guardar os panos."
+    },
+    "pt_BR": {
+     "t": "Hábitos seguros e organizados",
+     "g": "Crie hábitos que mantêm você saudável e seu espaço limpo enquanto pinta.",
+     "p": [
+      "Pinte num cômodo ventilado, mantenha os potes de solvente fechados e nunca coma, beba ou coloque o pincel na boca enquanto pinta.",
+      "Alguns pigmentos, como cádmio ou cobalto, fazem mal se ingeridos ou inalados como pó: lave as mãos e não lixe tinta seca.",
+      "Panos com óleo podem pegar fogo sozinhos: seque estendidos ou guarde em água numa lata fechada. Nunca jogue solvente no ralo."
+     ],
+     "q": "Quais desses hábitos você já segue e qual é novo para você?",
+     "c": "Monte hoje sua rotina: um pote com tampa para o solvente usado e um lugar seguro para secar ou guardar os panos."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic shapes in paint",
+     "g": "See objects as spheres, cubes, cylinders and cones before adding any detail.",
+     "p": [
+      "Almost everything can be simplified: an apple is a sphere, a book a box, a cup a cylinder, a tree top a cone or ball.",
+      "Paul Cézanne famously advised treating nature through the cylinder, the sphere and the cone.",
+      "Getting the big shape right first makes detail easy later, while detail on a wrong shape never looks right."
+     ],
+     "q": "Look around you now: which simple shape hides inside the object closest to you?",
+     "c": "Pick five objects at home and paint each as its simple shape in one quick block of colour."
+    },
+    "de": {
+     "t": "Grundformen in Farbe",
+     "g": "Sieh Gegenstände als Kugeln, Würfel, Zylinder und Kegel, bevor du Details hinzufügst.",
+     "p": [
+      "Fast alles lässt sich vereinfachen: Ein Apfel ist eine Kugel, ein Buch ein Quader, eine Tasse ein Zylinder.",
+      "Paul Cézanne riet bekanntlich, die Natur durch Zylinder, Kugel und Kegel zu behandeln.",
+      "Stimmt zuerst die große Form, sind Details später leicht; Details auf einer falschen Form wirken nie richtig."
+     ],
+     "q": "Schau dich um: Welche einfache Form steckt im Gegenstand, der dir am nächsten ist?",
+     "c": "Wähle fünf Gegenstände und male jeden als seine Grundform in einem schnellen Farbblock."
+    },
+    "es": {
+     "t": "Formas básicas en pintura",
+     "g": "Ve los objetos como esferas, cubos, cilindros y conos antes de añadir detalles.",
+     "p": [
+      "Casi todo se puede simplificar: una manzana es una esfera, un libro una caja, una taza un cilindro, una copa de árbol un cono.",
+      "Paul Cézanne aconsejó tratar la naturaleza mediante el cilindro, la esfera y el cono.",
+      "Acertar primero con la forma grande facilita el detalle; el detalle sobre una forma equivocada nunca convence."
+     ],
+     "q": "Mira a tu alrededor: ¿qué forma simple se esconde en el objeto más cercano?",
+     "c": "Elige cinco objetos de casa y pinta cada uno como su forma simple con una mancha rápida de color."
+    },
+    "fr": {
+     "t": "Formes de base en peinture",
+     "g": "Vois les objets comme des sphères, cubes, cylindres et cônes avant d'ajouter des détails.",
+     "p": [
+      "Presque tout se simplifie : une pomme est une sphère, un livre une boîte, une tasse un cylindre, un arbre un cône.",
+      "Paul Cézanne conseillait de traiter la nature par le cylindre, la sphère et le cône.",
+      "Réussir d'abord la grande forme rend le détail facile ; un détail sur une forme fausse ne sonne jamais juste."
+     ],
+     "q": "Regarde autour de toi : quelle forme simple se cache dans l'objet le plus proche ?",
+     "c": "Choisis cinq objets chez toi et peins chacun sous sa forme simple, en une tache de couleur rapide."
+    },
+    "it": {
+     "t": "Forme base in pittura",
+     "g": "Vedi gli oggetti come sfere, cubi, cilindri e coni prima di aggiungere dettagli.",
+     "p": [
+      "Quasi tutto si semplifica: una mela è una sfera, un libro una scatola, una tazza un cilindro, una chioma un cono.",
+      "Paul Cézanne consigliava di trattare la natura secondo il cilindro, la sfera e il cono.",
+      "Azzeccare prima la forma grande rende facile il dettaglio; un dettaglio su una forma sbagliata non convince mai."
+     ],
+     "q": "Guardati intorno: quale forma semplice si nasconde nell'oggetto più vicino a te?",
+     "c": "Scegli cinque oggetti di casa e dipingi ciascuno come la sua forma semplice con una macchia rapida di colore."
+    },
+    "pt": {
+     "t": "Formas básicas em pintura",
+     "g": "Vê os objetos como esferas, cubos, cilindros e cones antes de juntar detalhes.",
+     "p": [
+      "Quase tudo se simplifica: uma maçã é uma esfera, um livro uma caixa, uma chávena um cilindro, uma copa de árvore um cone.",
+      "Paul Cézanne aconselhava tratar a natureza pelo cilindro, pela esfera e pelo cone.",
+      "Acertar primeiro na forma grande facilita o detalhe; detalhe numa forma errada nunca convence."
+     ],
+     "q": "Olha à tua volta: que forma simples se esconde no objeto mais perto de ti?",
+     "c": "Escolhe cinco objetos de casa e pinta cada um como a sua forma simples, numa mancha rápida de cor."
+    },
+    "pt_BR": {
+     "t": "Formas básicas na pintura",
+     "g": "Veja os objetos como esferas, cubos, cilindros e cones antes de colocar detalhes.",
+     "p": [
+      "Quase tudo pode ser simplificado: uma maçã é uma esfera, um livro uma caixa, uma xícara um cilindro, uma copa de árvore um cone.",
+      "Paul Cézanne aconselhava tratar a natureza pelo cilindro, pela esfera e pelo cone.",
+      "Acertar primeiro a forma grande facilita os detalhes; detalhe numa forma errada nunca convence."
+     ],
+     "q": "Olhe ao redor: que forma simples se esconde no objeto mais perto de você?",
+     "c": "Escolha cinco objetos de casa e pinte cada um como sua forma simples, numa mancha rápida de cor."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting a sphere",
+     "g": "Paint a ball with light side, core shadow, reflected light and cast shadow.",
+     "p": [
+      "The light side faces the lamp; the core shadow is the darkest band where the form turns away from the light.",
+      "Reflected light is a gentle glow in the shadow bounced from the table, always darker than the light side.",
+      "The cast shadow sits on the ground; it is darkest and sharpest right where the ball touches the surface."
+     ],
+     "q": "Have you ever noticed reflected light on a real object, like a glow under a chin?",
+     "c": "Place a ball or an orange under one lamp and paint it with all five parts: light, core shadow, reflected light, cast shadow, highlight."
+    },
+    "de": {
+     "t": "Eine Kugel malen",
+     "g": "Male eine Kugel mit Lichtseite, Kernschatten, Reflexlicht und Schlagschatten.",
+     "p": [
+      "Die Lichtseite zeigt zur Lampe; der Kernschatten ist das dunkelste Band, wo sich die Form vom Licht abwendet.",
+      "Reflexlicht ist ein sanftes Leuchten im Schatten, vom Tisch zurückgeworfen, immer dunkler als die Lichtseite.",
+      "Der Schlagschatten liegt auf dem Boden; direkt am Berührungspunkt der Kugel ist er am dunkelsten und schärfsten."
+     ],
+     "q": "Hast du Reflexlicht schon einmal an einem echten Gegenstand bemerkt, etwa als Schimmer unterm Kinn?",
+     "c": "Stell einen Ball oder eine Orange unter eine Lampe und male alle fünf Teile: Licht, Kernschatten, Reflexlicht, Schlagschatten, Glanzlicht."
+    },
+    "es": {
+     "t": "Pintar una esfera",
+     "g": "Pinta una bola con lado iluminado, sombra central, luz reflejada y sombra proyectada.",
+     "p": [
+      "El lado iluminado mira a la lámpara; la sombra central es la franja más oscura donde la forma se aparta de la luz.",
+      "La luz reflejada es un brillo suave en la sombra que rebota de la mesa, siempre más oscuro que el lado iluminado.",
+      "La sombra proyectada está en el suelo; es más oscura y nítida justo donde la bola toca la superficie."
+     ],
+     "q": "¿Has notado alguna vez luz reflejada en un objeto real, como un brillo bajo la barbilla?",
+     "c": "Pon una pelota o naranja bajo una lámpara y pinta sus cinco partes: luz, sombra central, luz reflejada, sombra proyectada y brillo."
+    },
+    "fr": {
+     "t": "Peindre une sphère",
+     "g": "Peins une boule avec côté éclairé, ombre propre, lumière réfléchie et ombre portée.",
+     "p": [
+      "Le côté éclairé fait face à la lampe ; le cœur d'ombre est la bande la plus sombre, là où la forme tourne.",
+      "La lumière réfléchie est une douce lueur dans l'ombre, renvoyée par la table, toujours plus sombre que le côté éclairé.",
+      "L'ombre portée est au sol ; elle est la plus sombre et la plus nette juste là où la boule touche la surface."
+     ],
+     "q": "As-tu déjà remarqué la lumière réfléchie sur un objet réel, comme une lueur sous le menton ?",
+     "c": "Place une balle ou une orange sous une lampe et peins ses cinq parties : lumière, cœur d'ombre, reflet, ombre portée, éclat."
+    },
+    "it": {
+     "t": "Dipingere una sfera",
+     "g": "Dipingi una palla con lato in luce, ombra propria, luce riflessa e ombra portata.",
+     "p": [
+      "Il lato in luce guarda la lampada; il nucleo d'ombra è la fascia più scura dove la forma si allontana dalla luce.",
+      "La luce riflessa è un bagliore tenue nell'ombra rimbalzato dal tavolo, sempre più scuro del lato in luce.",
+      "L'ombra portata sta sul piano; è più scura e netta proprio dove la palla tocca la superficie."
+     ],
+     "q": "Hai mai notato la luce riflessa su un oggetto reale, come un bagliore sotto il mento?",
+     "c": "Metti una palla o un'arancia sotto una lampada e dipingila con tutte e cinque le parti: luce, nucleo d'ombra, riflesso, ombra portata, lume."
+    },
+    "pt": {
+     "t": "Pintar uma esfera",
+     "g": "Pinta uma bola com lado iluminado, sombra própria, luz refletida e sombra projetada.",
+     "p": [
+      "O lado iluminado fica virado para a luz; o núcleo da sombra é a faixa mais escura onde a forma se afasta da luz.",
+      "A luz refletida é um brilho suave na sombra devolvido pela mesa, sempre mais escuro do que o lado iluminado.",
+      "A sombra projetada fica no chão; é mais escura e nítida mesmo onde a bola toca a superfície."
+     ],
+     "q": "Já reparaste em luz refletida num objeto real, como um brilho debaixo do queixo?",
+     "c": "Põe uma bola ou laranja sob um candeeiro e pinta as cinco partes: luz, núcleo da sombra, luz refletida, sombra projetada e brilho."
+    },
+    "pt_BR": {
+     "t": "Pintando uma esfera",
+     "g": "Pinte uma bola com lado iluminado, sombra própria, luz refletida e sombra projetada.",
+     "p": [
+      "O lado iluminado fica virado para a luz; o núcleo da sombra é a faixa mais escura onde a forma se afasta da luz.",
+      "A luz refletida é um brilho suave na sombra rebatido pela mesa, sempre mais escuro que o lado iluminado.",
+      "A sombra projetada fica no chão; é mais escura e nítida bem onde a bola toca a superfície."
+     ],
+     "q": "Você já reparou em luz refletida num objeto real, como um brilho embaixo do queixo?",
+     "c": "Coloque uma bola ou laranja sob uma luminária e pinte as cinco partes: luz, núcleo da sombra, luz refletida, sombra projetada e brilho."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting a cube",
+     "g": "Show three planes with three clear values to create a solid form.",
+     "p": [
+      "With one light source, a cube usually shows a light top, a middle-value side and a dark side.",
+      "Keep each plane fairly flat in value; the clean jumps between planes are what make the cube feel solid.",
+      "Sharp edges between planes separate them; the cast shadow follows the cube's base and points away from the light."
+     ],
+     "q": "What box-shaped objects around you could you use as models?",
+     "c": "Paint a box or a book lit by one lamp using only three values, then add its cast shadow."
+    },
+    "de": {
+     "t": "Einen Würfel malen",
+     "g": "Zeige drei Flächen mit drei klaren Tonwerten, um eine feste Form zu erzeugen.",
+     "p": [
+      "Bei einer Lichtquelle zeigt ein Würfel meist eine helle Oberseite, eine mittlere Seite und eine dunkle Seite.",
+      "Halte jede Fläche im Tonwert recht gleichmäßig; die klaren Sprünge zwischen den Flächen machen den Würfel fest.",
+      "Scharfe Kanten trennen die Flächen; der Schlagschatten folgt der Grundfläche und zeigt vom Licht weg."
+     ],
+     "q": "Welche kastenförmigen Gegenstände um dich könntest du als Modell nutzen?",
+     "c": "Male eine Schachtel oder ein Buch unter einer Lampe mit nur drei Tonwerten und füge den Schlagschatten hinzu."
+    },
+    "es": {
+     "t": "Pintar un cubo",
+     "g": "Muestra tres planos con tres valores claros para crear una forma sólida.",
+     "p": [
+      "Con una sola fuente de luz, un cubo suele mostrar una cara superior clara, un lado de valor medio y un lado oscuro.",
+      "Mantén cada plano bastante uniforme de valor; los saltos limpios entre planos hacen que el cubo parezca sólido.",
+      "Los bordes nítidos separan los planos; la sombra proyectada sigue la base del cubo y se aleja de la luz."
+     ],
+     "q": "¿Qué objetos con forma de caja tienes cerca para usar como modelo?",
+     "c": "Pinta una caja o un libro iluminado por una lámpara usando solo tres valores y añade su sombra proyectada."
+    },
+    "fr": {
+     "t": "Peindre un cube",
+     "g": "Montre trois plans avec trois valeurs nettes pour créer une forme solide.",
+     "p": [
+      "Avec une seule source de lumière, un cube montre souvent un dessus clair, une face moyenne et une face sombre.",
+      "Garde chaque plan assez uniforme en valeur ; ce sont les sauts nets entre plans qui rendent le cube solide.",
+      "Des arêtes nettes séparent les plans ; l'ombre portée suit la base du cube et part à l'opposé de la lumière."
+     ],
+     "q": "Quels objets en forme de boîte autour de toi pourraient te servir de modèle ?",
+     "c": "Peins une boîte ou un livre éclairé par une lampe avec seulement trois valeurs, puis ajoute son ombre portée."
+    },
+    "it": {
+     "t": "Dipingere un cubo",
+     "g": "Mostra tre piani con tre valori chiari per creare una forma solida.",
+     "p": [
+      "Con una sola fonte di luce, un cubo mostra di solito un piano superiore chiaro, un lato medio e un lato scuro.",
+      "Tieni ogni piano abbastanza uniforme di valore: sono i salti netti tra i piani a rendere solido il cubo.",
+      "Spigoli netti separano i piani; l'ombra portata segue la base del cubo e va nella direzione opposta alla luce."
+     ],
+     "q": "Quali oggetti a forma di scatola hai intorno da usare come modello?",
+     "c": "Dipingi una scatola o un libro illuminato da una lampada usando solo tre valori, poi aggiungi l'ombra portata."
+    },
+    "pt": {
+     "t": "Pintar um cubo",
+     "g": "Mostra três planos com três valores claros para criar uma forma sólida.",
+     "p": [
+      "Com uma só fonte de luz, um cubo mostra em geral um topo claro, um lado de valor médio e um lado escuro.",
+      "Mantém cada plano bastante uniforme no valor; os saltos limpos entre planos fazem o cubo parecer sólido.",
+      "Arestas nítidas separam os planos; a sombra projetada segue a base do cubo e afasta-se da luz."
+     ],
+     "q": "Que objetos em forma de caixa tens por perto para usar como modelo?",
+     "c": "Pinta uma caixa ou um livro iluminado por um candeeiro com apenas três valores e junta a sombra projetada."
+    },
+    "pt_BR": {
+     "t": "Pintando um cubo",
+     "g": "Mostre três planos com três valores claros para criar uma forma sólida.",
+     "p": [
+      "Com uma só fonte de luz, um cubo costuma mostrar um topo claro, um lado de valor médio e um lado escuro.",
+      "Mantenha cada plano bem uniforme no valor; os saltos limpos entre os planos deixam o cubo sólido.",
+      "Arestas nítidas separam os planos; a sombra projetada segue a base do cubo e vai na direção oposta à luz."
+     ],
+     "q": "Quais objetos em formato de caixa você tem por perto para usar como modelo?",
+     "c": "Pinte uma caixa ou um livro iluminado por uma luminária usando só três valores e adicione a sombra projetada."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting a cylinder",
+     "g": "Paint smooth value changes around a curved form, like a cup or a bottle.",
+     "p": [
+      "A cylinder's values run in vertical bands: light, half-tone, core shadow and a touch of reflected light at the edge.",
+      "Blend the bands softly along the curve; a hard line would make the side look folded, like a box.",
+      "The top and bottom are ellipses: keep them rounded at the sides, never pointed like a lemon."
+     ],
+     "q": "Which cylinder-shaped object do you use every day?",
+     "c": "Paint a mug or a can in vertical value bands, blending them smoothly, and check that the ellipses look round."
+    },
+    "de": {
+     "t": "Einen Zylinder malen",
+     "g": "Male weiche Tonwertübergänge um eine runde Form wie eine Tasse oder Flasche.",
+     "p": [
+      "Die Tonwerte eines Zylinders verlaufen in senkrechten Bändern: Licht, Halbton, Kernschatten und am Rand etwas Reflexlicht.",
+      "Verblende die Bänder weich entlang der Rundung; eine harte Linie ließe die Seite geknickt wirken wie bei einer Schachtel.",
+      "Ober- und Unterseite sind Ellipsen: An den Seiten rund halten, nie spitz wie eine Zitrone."
+     ],
+     "q": "Welchen zylinderförmigen Gegenstand benutzt du jeden Tag?",
+     "c": "Male einen Becher oder eine Dose in senkrechten Tonwertbändern, weich verblendet, und prüfe, ob die Ellipsen rund wirken."
+    },
+    "es": {
+     "t": "Pintar un cilindro",
+     "g": "Pinta cambios suaves de valor alrededor de una forma curva, como una taza o una botella.",
+     "p": [
+      "Los valores de un cilindro van en bandas verticales: luz, medio tono, sombra central y un toque de luz reflejada en el borde.",
+      "Funde las bandas suavemente siguiendo la curva; una línea dura haría que el lado pareciera doblado, como una caja.",
+      "La parte superior e inferior son elipses: mantenlas redondeadas en los lados, nunca en punta como un limón."
+     ],
+     "q": "¿Qué objeto cilíndrico usas todos los días?",
+     "c": "Pinta una taza o una lata en bandas verticales de valor, fundiéndolas con suavidad, y comprueba que las elipses se vean redondas."
+    },
+    "fr": {
+     "t": "Peindre un cylindre",
+     "g": "Peins des passages de valeur doux autour d'une forme courbe, comme une tasse ou une bouteille.",
+     "p": [
+      "Les valeurs d'un cylindre forment des bandes verticales : lumière, demi-teinte, cœur d'ombre et un peu de reflet au bord.",
+      "Fonds les bandes en douceur le long de la courbe ; une ligne dure ferait paraître le côté plié comme une boîte.",
+      "Le haut et le bas sont des ellipses : garde-les arrondies sur les côtés, jamais pointues comme un citron."
+     ],
+     "q": "Quel objet cylindrique utilises-tu tous les jours ?",
+     "c": "Peins une tasse ou une canette en bandes verticales de valeur bien fondues, et vérifie que les ellipses sont rondes."
+    },
+    "it": {
+     "t": "Dipingere un cilindro",
+     "g": "Dipingi passaggi di valore morbidi intorno a una forma curva, come una tazza o una bottiglia.",
+     "p": [
+      "I valori di un cilindro corrono in fasce verticali: luce, mezzatinta, nucleo d'ombra e un po' di luce riflessa sul bordo.",
+      "Sfuma le fasce dolcemente lungo la curva; una linea netta farebbe sembrare il lato piegato, come una scatola.",
+      "Sopra e sotto ci sono ellissi: tienile arrotondate ai lati, mai a punta come un limone."
+     ],
+     "q": "Quale oggetto cilindrico usi ogni giorno?",
+     "c": "Dipingi una tazza o una lattina in fasce verticali di valore ben sfumate, e controlla che le ellissi siano rotonde."
+    },
+    "pt": {
+     "t": "Pintar um cilindro",
+     "g": "Pinta passagens de valor suaves à volta de uma forma curva, como uma chávena ou garrafa.",
+     "p": [
+      "Os valores de um cilindro correm em faixas verticais: luz, meio-tom, núcleo da sombra e um toque de luz refletida na borda.",
+      "Esbate as faixas com suavidade ao longo da curva; uma linha dura faria o lado parecer dobrado, como uma caixa.",
+      "O topo e a base são elipses: mantém-nas arredondadas nos lados, nunca em bico como um limão."
+     ],
+     "q": "Que objeto cilíndrico usas todos os dias?",
+     "c": "Pinta uma caneca ou lata em faixas verticais de valor bem esbatidas e confirma que as elipses parecem redondas."
+    },
+    "pt_BR": {
+     "t": "Pintando um cilindro",
+     "g": "Pinte passagens suaves de valor ao redor de uma forma curva, como uma xícara ou garrafa.",
+     "p": [
+      "Os valores de um cilindro correm em faixas verticais: luz, meio-tom, núcleo da sombra e um toque de luz refletida na borda.",
+      "Esfume as faixas suavemente ao longo da curva; uma linha dura faria o lado parecer dobrado, como uma caixa.",
+      "O topo e a base são elipses: mantenha as laterais arredondadas, nunca pontudas como um limão."
+     ],
+     "q": "Qual objeto cilíndrico você usa todo dia?",
+     "c": "Pinte uma caneca ou lata em faixas verticais de valor bem esfumadas e confira se as elipses parecem redondas."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light and shadow",
+     "g": "Understand where light comes from, how it falls and why one light source makes forms read clearly.",
+     "p": [
+      "A single strong light gives clear light and shadow shapes, which is why many painters work with one window or one lamp.",
+      "Caravaggio made this famous with chiaroscuro: strong light against deep darkness for drama.",
+      "Keep lights and shadows as two separate families: no shadow value should be as light as anything in the light."
+     ],
+     "q": "Do you prefer soft, cloudy-day light or strong sunlight with crisp shadows?",
+     "c": "Light one object with a single lamp in a dark room, then squint and sketch only two shapes: light and shadow."
+    },
+    "de": {
+     "t": "Licht und Schatten",
+     "g": "Verstehe, woher Licht kommt, wie es fällt und warum eine Lichtquelle Formen klar lesbar macht.",
+     "p": [
+      "Ein einzelnes starkes Licht gibt klare Licht- und Schattenformen; deshalb malen viele bei einem Fenster oder einer Lampe.",
+      "Caravaggio machte das mit dem Chiaroscuro berühmt: starkes Licht gegen tiefes Dunkel für Dramatik.",
+      "Halte Licht und Schatten als zwei getrennte Familien: Kein Schattenwert darf so hell sein wie etwas im Licht."
+     ],
+     "q": "Magst du lieber weiches Licht wie an bewölkten Tagen oder starke Sonne mit scharfen Schatten?",
+     "c": "Beleuchte einen Gegenstand mit einer Lampe im dunklen Raum, kneif die Augen zu und skizziere nur zwei Formen: Licht und Schatten."
+    },
+    "es": {
+     "t": "Luz y sombra",
+     "g": "Entiende de dónde viene la luz, cómo cae y por qué una sola fuente hace que las formas se lean bien.",
+     "p": [
+      "Una sola luz fuerte da formas claras de luz y sombra; por eso muchos pintores trabajan con una ventana o una lámpara.",
+      "Caravaggio lo hizo famoso con el claroscuro: luz intensa frente a oscuridad profunda para crear drama.",
+      "Mantén luces y sombras como dos familias separadas: ningún valor de sombra debe ser tan claro como algo en la luz."
+     ],
+     "q": "¿Prefieres la luz suave de un día nublado o el sol fuerte con sombras nítidas?",
+     "c": "Ilumina un objeto con una sola lámpara en un cuarto oscuro, entrecierra los ojos y bocétalo solo con dos formas: luz y sombra."
+    },
+    "fr": {
+     "t": "Lumière et ombre",
+     "g": "Comprends d'où vient la lumière, comment elle tombe et pourquoi une seule source rend les formes lisibles.",
+     "p": [
+      "Une seule lumière forte donne des formes nettes de lumière et d'ombre ; c'est pourquoi beaucoup peignent près d'une fenêtre ou d'une lampe.",
+      "Caravage l'a rendu célèbre avec le clair-obscur : une lumière forte contre une ombre profonde, pour le drame.",
+      "Garde lumières et ombres en deux familles séparées : aucune valeur d'ombre ne doit être aussi claire qu'une zone éclairée."
+     ],
+     "q": "Préfères-tu la lumière douce d'un jour nuageux ou le plein soleil aux ombres nettes ?",
+     "c": "Éclaire un objet avec une seule lampe dans une pièce sombre, plisse les yeux et esquisse deux formes seulement : lumière et ombre."
+    },
+    "it": {
+     "t": "Luce e ombra",
+     "g": "Capisci da dove viene la luce, come cade e perché una sola fonte rende le forme leggibili.",
+     "p": [
+      "Una sola luce forte crea forme nette di luce e ombra; per questo molti pittori lavorano con una finestra o una lampada.",
+      "Caravaggio lo rese celebre con il chiaroscuro: luce intensa contro buio profondo per creare dramma.",
+      "Tieni luci e ombre come due famiglie separate: nessun valore d'ombra deve essere chiaro quanto qualcosa in luce."
+     ],
+     "q": "Preferisci la luce morbida di una giornata nuvolosa o il sole forte con ombre nette?",
+     "c": "Illumina un oggetto con una sola lampada in una stanza buia, socchiudi gli occhi e abbozza solo due forme: luce e ombra."
+    },
+    "pt": {
+     "t": "Luz e sombra",
+     "g": "Percebe de onde vem a luz, como cai e porque uma só fonte torna as formas legíveis.",
+     "p": [
+      "Uma única luz forte dá formas claras de luz e sombra; por isso muitos pintores trabalham com uma janela ou um candeeiro.",
+      "Caravaggio tornou isto famoso com o claro-escuro: luz intensa contra escuridão profunda para criar drama.",
+      "Mantém luzes e sombras como duas famílias separadas: nenhum valor de sombra deve ser tão claro como algo na luz."
+     ],
+     "q": "Preferes a luz suave de um dia nublado ou sol forte com sombras nítidas?",
+     "c": "Ilumina um objeto com um só candeeiro num quarto escuro, semicerra os olhos e esboça só duas formas: luz e sombra."
+    },
+    "pt_BR": {
+     "t": "Luz e sombra",
+     "g": "Entenda de onde vem a luz, como ela cai e por que uma única fonte deixa as formas legíveis.",
+     "p": [
+      "Uma única luz forte cria formas claras de luz e sombra; por isso muitos pintores trabalham com uma janela ou uma luminária.",
+      "Caravaggio deixou isso famoso com o claro-escuro: luz intensa contra escuridão profunda para criar drama.",
+      "Mantenha luzes e sombras como duas famílias separadas: nenhum valor de sombra deve ser tão claro quanto algo na luz."
+     ],
+     "q": "Você prefere a luz suave de um dia nublado ou sol forte com sombras nítidas?",
+     "c": "Ilumine um objeto com uma só luminária num quarto escuro, aperte os olhos e esboce só duas formas: luz e sombra."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cast shadows",
+     "g": "Paint shadow shapes on the ground with the right edges and colour.",
+     "p": [
+      "A cast shadow takes the shape of the object, stretched or squashed depending on the angle of the light.",
+      "It is darkest and sharpest near the object, and grows lighter and softer as it moves away.",
+      "Shadows are rarely pure grey: outdoors they often look cool and bluish from the sky, and they carry the surface colour."
+     ],
+     "q": "Next time you are outside on a sunny day, what colour do you think the shadows will be?",
+     "c": "Paint an object's cast shadow on a coloured surface, making it sharp near the object and softer at the far end."
+    },
+    "de": {
+     "t": "Schlagschatten",
+     "g": "Male Schattenformen am Boden mit den richtigen Kanten und Farben.",
+     "p": [
+      "Ein Schlagschatten hat die Form des Gegenstands, je nach Lichtwinkel gestreckt oder gestaucht.",
+      "Nah am Gegenstand ist er am dunkelsten und schärfsten, mit Abstand wird er heller und weicher.",
+      "Schatten sind selten reines Grau: Draußen wirken sie durch den Himmel oft kühl und bläulich und tragen die Farbe des Untergrunds."
+     ],
+     "q": "Welche Farbe werden die Schatten wohl haben, wenn du das nächste Mal an einem sonnigen Tag draußen bist?",
+     "c": "Male den Schlagschatten eines Gegenstands auf einer farbigen Fläche, scharf nah am Objekt und weich am fernen Ende."
+    },
+    "es": {
+     "t": "Sombras proyectadas",
+     "g": "Pinta las sombras en el suelo con los bordes y el color adecuados.",
+     "p": [
+      "Una sombra proyectada toma la forma del objeto, estirada o aplastada según el ángulo de la luz.",
+      "Es más oscura y nítida cerca del objeto, y se aclara y suaviza a medida que se aleja.",
+      "Las sombras rara vez son gris puro: al aire libre suelen verse frías y azuladas por el cielo y llevan el color de la superficie."
+     ],
+     "q": "La próxima vez que salgas en un día soleado, ¿de qué color crees que serán las sombras?",
+     "c": "Pinta la sombra proyectada de un objeto sobre una superficie de color, nítida junto al objeto y más suave al final."
+    },
+    "fr": {
+     "t": "Ombres portées",
+     "g": "Peins les ombres au sol avec les bons bords et la bonne couleur.",
+     "p": [
+      "Une ombre portée prend la forme de l'objet, étirée ou écrasée selon l'angle de la lumière.",
+      "Elle est la plus sombre et la plus nette près de l'objet, puis s'éclaircit et s'adoucit en s'éloignant.",
+      "Les ombres sont rarement gris pur : dehors elles paraissent souvent froides et bleutées par le ciel et prennent la couleur du sol."
+     ],
+     "q": "La prochaine fois que tu sortiras par une journée ensoleillée, de quelle couleur seront les ombres selon toi ?",
+     "c": "Peins l'ombre portée d'un objet sur une surface colorée, nette près de l'objet et plus douce au bout."
+    },
+    "it": {
+     "t": "Ombre portate",
+     "g": "Dipingi le ombre sul piano con i bordi e il colore giusti.",
+     "p": [
+      "Un'ombra portata prende la forma dell'oggetto, allungata o schiacciata a seconda dell'angolo della luce.",
+      "È più scura e netta vicino all'oggetto e diventa più chiara e morbida allontanandosi.",
+      "Le ombre raramente sono grigio puro: all'aperto appaiono spesso fredde e bluastre per il cielo e prendono il colore del piano."
+     ],
+     "q": "La prossima volta che esci in una giornata di sole, di che colore pensi saranno le ombre?",
+     "c": "Dipingi l'ombra portata di un oggetto su una superficie colorata, netta vicino all'oggetto e più morbida in fondo."
+    },
+    "pt": {
+     "t": "Sombras projetadas",
+     "g": "Pinta as sombras no chão com as bordas e a cor certas.",
+     "p": [
+      "Uma sombra projetada tem a forma do objeto, esticada ou achatada conforme o ângulo da luz.",
+      "É mais escura e nítida junto ao objeto e fica mais clara e suave à medida que se afasta.",
+      "As sombras raramente são cinzento puro: ao ar livre parecem muitas vezes frias e azuladas pelo céu e têm a cor da superfície."
+     ],
+     "q": "Da próxima vez que saíres num dia de sol, de que cor achas que serão as sombras?",
+     "c": "Pinta a sombra projetada de um objeto numa superfície colorida, nítida junto ao objeto e mais suave no fim."
+    },
+    "pt_BR": {
+     "t": "Sombras projetadas",
+     "g": "Pinte as sombras no chão com as bordas e a cor certas.",
+     "p": [
+      "Uma sombra projetada tem a forma do objeto, esticada ou achatada conforme o ângulo da luz.",
+      "Ela é mais escura e nítida perto do objeto e fica mais clara e suave conforme se afasta.",
+      "Sombras raramente são cinza puro: ao ar livre parecem frias e azuladas por causa do céu e carregam a cor da superfície."
+     ],
+     "q": "Na próxima vez que sair num dia de sol, de que cor você acha que as sombras vão ser?",
+     "c": "Pinte a sombra projetada de um objeto numa superfície colorida, nítida perto do objeto e mais suave no final."
+    }
+   }
+  }
+ ]
+}

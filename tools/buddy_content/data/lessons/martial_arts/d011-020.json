@@ -1,0 +1,835 @@
+{
+ "topic": "martial_arts",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taekwondo at a glance",
+     "g": "Discover taekwondo, the Korean art famous for its dynamic kicks.",
+     "p": [
+      "The name taekwondo was adopted in 1955 and roughly means the way of the foot and the fist.",
+      "It is known for high, spinning kicks and for forms called poomsae.",
+      "Taekwondo has been an official Olympic sport since the Sydney Games in 2000."
+     ],
+     "q": "What do you think makes kicking techniques so impressive to watch?",
+     "c": "Stand tall and slowly lift one knee to hip height five times on each side, holding a wall if needed."
+    },
+    "de": {
+     "t": "Taekwondo auf einen Blick",
+     "g": "Entdecke Taekwondo, die koreanische Kunst, berühmt für dynamische Fußtechniken.",
+     "p": [
+      "Der Name Taekwondo wurde 1955 gewählt und bedeutet etwa Weg des Fußes und der Faust.",
+      "Bekannt ist es für hohe, gedrehte Tritte und für Formen namens Poomsae.",
+      "Seit den Spielen von Sydney 2000 ist Taekwondo offiziell olympisch."
+     ],
+     "q": "Was macht Fußtechniken deiner Meinung nach so beeindruckend zum Zuschauen?",
+     "c": "Steh aufrecht und heb langsam ein Knie fünfmal pro Seite auf Hüfthöhe, notfalls mit Hand an der Wand."
+    },
+    "es": {
+     "t": "El taekwondo de un vistazo",
+     "g": "Descubre el taekwondo, el arte coreano famoso por sus patadas dinámicas.",
+     "p": [
+      "El nombre taekwondo se adoptó en 1955 y significa más o menos el camino del pie y del puño.",
+      "Es conocido por sus patadas altas y giratorias y por las formas llamadas poomsae.",
+      "El taekwondo es deporte olímpico oficial desde los Juegos de Sídney 2000."
+     ],
+     "q": "¿Qué crees que hace que las técnicas de pierna sean tan impresionantes de ver?",
+     "c": "De pie y erguido, sube despacio una rodilla a la altura de la cadera cinco veces por lado, apoyándote en la pared si hace falta."
+    },
+    "fr": {
+     "t": "Le taekwondo en un coup d'œil",
+     "g": "Découvre le taekwondo, l'art coréen célèbre pour ses coups de pied dynamiques.",
+     "p": [
+      "Le nom taekwondo a été adopté en 1955 et signifie à peu près la voie du pied et du poing.",
+      "Il est connu pour ses coups de pied hauts et tournants et pour ses formes appelées poomsae.",
+      "Le taekwondo est un sport olympique officiel depuis les Jeux de Sydney en 2000."
+     ],
+     "q": "Selon toi, qu'est-ce qui rend les techniques de jambes si impressionnantes à regarder ?",
+     "c": "Debout bien droit, monte lentement un genou à hauteur de hanche cinq fois de chaque côté, en t'aidant d'un mur si besoin."
+    },
+    "it": {
+     "t": "Il taekwondo in breve",
+     "g": "Scopri il taekwondo, l'arte coreana famosa per i suoi calci dinamici.",
+     "p": [
+      "Il nome taekwondo fu adottato nel 1955 e significa all'incirca la via del piede e del pugno.",
+      "È noto per i calci alti e girati e per le forme chiamate poomsae.",
+      "Il taekwondo è sport olimpico ufficiale dai Giochi di Sydney del 2000."
+     ],
+     "q": "Secondo te, cosa rende le tecniche di gamba così spettacolari da guardare?",
+     "c": "In piedi e dritto, solleva piano un ginocchio all'altezza dell'anca cinque volte per lato, appoggiandoti al muro se serve."
+    },
+    "pt": {
+     "t": "O taekwondo num relance",
+     "g": "Descobre o taekwondo, a arte coreana famosa pelos seus pontapés dinâmicos.",
+     "p": [
+      "O nome taekwondo foi adotado em 1955 e significa mais ou menos o caminho do pé e do punho.",
+      "É conhecido pelos pontapés altos e rodados e pelas formas chamadas poomsae.",
+      "O taekwondo é modalidade olímpica oficial desde os Jogos de Sydney, em 2000."
+     ],
+     "q": "O que achas que torna as técnicas de pernas tão impressionantes de ver?",
+     "c": "De pé e direito, sobe devagar um joelho à altura da anca cinco vezes de cada lado, apoiado na parede se precisares."
+    },
+    "pt_BR": {
+     "t": "O taekwondo num relance",
+     "g": "Descubra o taekwondo, a arte coreana famosa pelos seus chutes dinâmicos.",
+     "p": [
+      "O nome taekwondo foi adotado em 1955 e significa mais ou menos o caminho do pé e do punho.",
+      "É conhecido pelos chutes altos e giratórios e pelas formas chamadas poomsae.",
+      "O taekwondo é esporte olímpico oficial desde os Jogos de Sydney, em 2000."
+     ],
+     "q": "O que você acha que torna as técnicas de chute tão impressionantes de assistir?",
+     "c": "Em pé e ereto, suba devagar um joelho até a altura do quadril cinco vezes de cada lado, apoiado na parede se precisar."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kung fu at a glance",
+     "g": "Explore kung fu, an umbrella term for hundreds of Chinese styles.",
+     "p": [
+      "Kung fu, or gongfu, originally means skill gained through long effort and patience.",
+      "Famous styles include Shaolin, wing chun, praying mantis and many inspired by animals.",
+      "In China the martial arts are also called wushu, which is today a modern sport too."
+     ],
+     "q": "Which animal would you pick if you could study an animal-inspired style?",
+     "c": "Think of one skill you built through long practice: that is kung fu in its original sense."
+    },
+    "de": {
+     "t": "Kung Fu auf einen Blick",
+     "g": "Erkunde Kung Fu, den Sammelbegriff für Hunderte chinesischer Stile.",
+     "p": [
+      "Kung Fu, oder Gongfu, bedeutet ursprünglich eine durch lange Mühe und Geduld erworbene Fähigkeit.",
+      "Bekannte Stile sind Shaolin, Wing Chun, Gottesanbeterin und viele von Tieren inspirierte Stile.",
+      "In China heißen die Kampfkünste auch Wushu, heute zugleich eine moderne Sportart."
+     ],
+     "q": "Welches Tier würdest du wählen, wenn du einen Tierstil lernen könntest?",
+     "c": "Denk an eine Fähigkeit, die du durch lange Übung aufgebaut hast: Das ist Kung Fu im ursprünglichen Sinn."
+    },
+    "es": {
+     "t": "El kung fu de un vistazo",
+     "g": "Explora el kung fu, un término que abarca cientos de estilos chinos.",
+     "p": [
+      "Kung fu, o gongfu, significa en origen una habilidad lograda con largo esfuerzo y paciencia.",
+      "Entre los estilos famosos están Shaolin, wing chun, la mantis religiosa y muchos inspirados en animales.",
+      "En China las artes marciales también se llaman wushu, que hoy es además un deporte moderno."
+     ],
+     "q": "¿Qué animal elegirías si pudieras estudiar un estilo inspirado en animales?",
+     "c": "Piensa en una habilidad que lograste con mucha práctica: eso es kung fu en su sentido original."
+    },
+    "fr": {
+     "t": "Le kung-fu en un coup d'œil",
+     "g": "Explore le kung-fu, terme qui regroupe des centaines de styles chinois.",
+     "p": [
+      "Kung-fu, ou gongfu, désigne à l'origine une compétence acquise par un long effort patient.",
+      "Parmi les styles célèbres : Shaolin, wing chun, la mante religieuse et bien des styles inspirés des animaux.",
+      "En Chine, les arts martiaux s'appellent aussi wushu, qui est aujourd'hui un sport moderne."
+     ],
+     "q": "Quel animal choisirais-tu si tu pouvais étudier un style inspiré des animaux ?",
+     "c": "Pense à une compétence acquise par une longue pratique : c'est du kung-fu au sens d'origine."
+    },
+    "it": {
+     "t": "Il kung fu in breve",
+     "g": "Esplora il kung fu, termine che raccoglie centinaia di stili cinesi.",
+     "p": [
+      "Kung fu, o gongfu, in origine indica un'abilità ottenuta con lungo impegno e pazienza.",
+      "Tra gli stili famosi ci sono Shaolin, wing chun, la mantide religiosa e molti ispirati agli animali.",
+      "In Cina le arti marziali si chiamano anche wushu, oggi anche uno sport moderno."
+     ],
+     "q": "Quale animale sceglieresti se potessi studiare uno stile ispirato agli animali?",
+     "c": "Pensa a un'abilità costruita con lunga pratica: è kung fu nel suo senso originale."
+    },
+    "pt": {
+     "t": "O kung fu num relance",
+     "g": "Explora o kung fu, um termo que abrange centenas de estilos chineses.",
+     "p": [
+      "Kung fu, ou gongfu, significa originalmente uma habilidade conquistada com longo esforço e paciência.",
+      "Entre os estilos famosos estão Shaolin, wing chun, louva-a-deus e muitos inspirados em animais.",
+      "Na China, as artes marciais também se chamam wushu, hoje também um desporto moderno."
+     ],
+     "q": "Que animal escolherias se pudesses estudar um estilo inspirado em animais?",
+     "c": "Pensa numa habilidade que construíste com muita prática: isso é kung fu no sentido original."
+    },
+    "pt_BR": {
+     "t": "O kung fu num relance",
+     "g": "Explore o kung fu, um termo que reúne centenas de estilos chineses.",
+     "p": [
+      "Kung fu, ou gongfu, significa originalmente uma habilidade conquistada com longo esforço e paciência.",
+      "Entre os estilos famosos estão Shaolin, wing chun, louva-a-deus e muitos inspirados em animais.",
+      "Na China, as artes marciais também se chamam wushu, hoje também um esporte moderno."
+     ],
+     "q": "Que animal você escolheria se pudesse estudar um estilo inspirado em animais?",
+     "c": "Pense numa habilidade que você construiu com muita prática: isso é kung fu no sentido original."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aikido at a glance",
+     "g": "Meet aikido, the Japanese art of circular movement and harmony.",
+     "p": [
+      "Morihei Ueshiba developed aikido in the early twentieth century in Japan.",
+      "Practitioners blend with a partner's movement using circles, timing and balance.",
+      "Most aikido styles have no competitions; partners take turns helping each other learn."
+     ],
+     "q": "Where in daily life could blending instead of pushing back make things easier?",
+     "c": "Next time someone disagrees with you, listen fully first before answering, in the spirit of aikido."
+    },
+    "de": {
+     "t": "Aikido auf einen Blick",
+     "g": "Lerne Aikido kennen, die japanische Kunst der Kreisbewegung und Harmonie.",
+     "p": [
+      "Morihei Ueshiba entwickelte Aikido im frühen 20. Jahrhundert in Japan.",
+      "Man verbindet sich mit der Bewegung des Partners durch Kreise, Timing und Gleichgewicht.",
+      "Die meisten Aikido-Stile kennen keine Wettkämpfe; Partner helfen sich abwechselnd beim Lernen."
+     ],
+     "q": "Wo im Alltag könnte Mitgehen statt Dagegendrücken die Dinge leichter machen?",
+     "c": "Wenn dir das nächste Mal jemand widerspricht, hör erst ganz zu, bevor du antwortest, im Geist des Aikido."
+    },
+    "es": {
+     "t": "El aikido de un vistazo",
+     "g": "Conoce el aikido, el arte japonés del movimiento circular y la armonía.",
+     "p": [
+      "Morihei Ueshiba desarrolló el aikido a comienzos del siglo XX en Japón.",
+      "Se acompaña el movimiento del compañero con círculos, sincronía y equilibrio.",
+      "La mayoría de estilos de aikido no tiene competiciones; los compañeros se turnan para ayudarse."
+     ],
+     "q": "¿En qué momento de tu vida diaria acompañar en lugar de resistir haría las cosas más fáciles?",
+     "c": "La próxima vez que alguien no esté de acuerdo contigo, escucha del todo antes de responder, con espíritu de aikido."
+    },
+    "fr": {
+     "t": "L'aïkido en un coup d'œil",
+     "g": "Découvre l'aïkido, l'art japonais du mouvement circulaire et de l'harmonie.",
+     "p": [
+      "Morihei Ueshiba a développé l'aïkido au début du XXe siècle au Japon.",
+      "On s'harmonise avec le mouvement du partenaire grâce aux cercles, au timing et à l'équilibre.",
+      "La plupart des styles d'aïkido n'ont pas de compétition ; les partenaires s'aident à tour de rôle."
+     ],
+     "q": "Dans ta vie quotidienne, où accompagner plutôt que résister rendrait les choses plus simples ?",
+     "c": "La prochaine fois qu'on te contredit, écoute jusqu'au bout avant de répondre, dans l'esprit de l'aïkido."
+    },
+    "it": {
+     "t": "L'aikido in breve",
+     "g": "Conosci l'aikido, l'arte giapponese del movimento circolare e dell'armonia.",
+     "p": [
+      "Morihei Ueshiba sviluppò l'aikido all'inizio del Novecento in Giappone.",
+      "Si accompagna il movimento del partner con cerchi, tempismo ed equilibrio.",
+      "Gran parte degli stili di aikido non prevede gare; i partner si aiutano a turno a imparare."
+     ],
+     "q": "Dove, nella vita di tutti i giorni, accompagnare invece di opporsi renderebbe tutto più facile?",
+     "c": "La prossima volta che qualcuno non è d'accordo con te, ascolta fino in fondo prima di rispondere, nello spirito dell'aikido."
+    },
+    "pt": {
+     "t": "O aikido num relance",
+     "g": "Conhece o aikido, a arte japonesa do movimento circular e da harmonia.",
+     "p": [
+      "Morihei Ueshiba desenvolveu o aikido no início do século XX, no Japão.",
+      "Acompanha-se o movimento do parceiro com círculos, sincronia e equilíbrio.",
+      "A maioria dos estilos de aikido não tem competições; os parceiros ajudam-se à vez a aprender."
+     ],
+     "q": "Em que momento do dia a dia acompanhar em vez de resistir tornaria tudo mais fácil?",
+     "c": "Da próxima vez que alguém discordar de ti, ouve tudo antes de responder, no espírito do aikido."
+    },
+    "pt_BR": {
+     "t": "O aikidô num relance",
+     "g": "Conheça o aikidô, a arte japonesa do movimento circular e da harmonia.",
+     "p": [
+      "Morihei Ueshiba desenvolveu o aikidô no início do século XX, no Japão.",
+      "O praticante acompanha o movimento do parceiro com círculos, sincronia e equilíbrio.",
+      "A maioria dos estilos de aikidô não tem competições; os parceiros se revezam para ajudar um ao outro."
+     ],
+     "q": "Em que momento do dia a dia acompanhar em vez de resistir deixaria tudo mais fácil?",
+     "c": "Da próxima vez que alguém discordar de você, escute tudo antes de responder, no espírito do aikidô."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brazilian jiu-jitsu at a glance",
+     "g": "Explore Brazilian jiu-jitsu, a grappling art built on leverage and technique.",
+     "p": [
+      "Japanese judoka Mitsuyo Maeda taught in Brazil in the early twentieth century.",
+      "The Gracie family and others refined the art, focusing on ground technique and leverage.",
+      "Its central idea is that good technique lets a smaller person move a larger partner safely."
+     ],
+     "q": "Why do you think leverage and technique can matter more than size?",
+     "c": "Try moving a heavy box with a lever, like a broom handle, and feel how technique helps."
+    },
+    "de": {
+     "t": "Brazilian Jiu-Jitsu auf einen Blick",
+     "g": "Erkunde Brazilian Jiu-Jitsu, eine Griffkunst, die auf Hebelwirkung und Technik beruht.",
+     "p": [
+      "Der japanische Judoka Mitsuyo Maeda unterrichtete im frühen 20. Jahrhundert in Brasilien.",
+      "Die Familie Gracie und andere verfeinerten die Kunst mit Fokus auf Bodentechnik und Hebel.",
+      "Die Kernidee: Gute Technik lässt eine kleinere Person einen größeren Partner sicher bewegen."
+     ],
+     "q": "Warum können Hebel und Technik deiner Meinung nach wichtiger sein als Größe?",
+     "c": "Versuch, eine schwere Kiste mit einem Hebel wie einem Besenstiel zu bewegen, und spür, wie Technik hilft."
+    },
+    "es": {
+     "t": "El jiu-jitsu brasileño de un vistazo",
+     "g": "Explora el jiu-jitsu brasileño, un arte de agarre basado en la palanca y la técnica.",
+     "p": [
+      "El judoca japonés Mitsuyo Maeda enseñó en Brasil a comienzos del siglo XX.",
+      "La familia Gracie y otros perfeccionaron el arte, centrándose en el suelo y la palanca.",
+      "Su idea central: una buena técnica permite a alguien pequeño mover con seguridad a un compañero grande."
+     ],
+     "q": "¿Por qué crees que la palanca y la técnica pueden importar más que el tamaño?",
+     "c": "Intenta mover una caja pesada con una palanca, como el palo de una escoba, y nota cómo ayuda la técnica."
+    },
+    "fr": {
+     "t": "Le jiu-jitsu brésilien en un coup d'œil",
+     "g": "Explore le jiu-jitsu brésilien, un art de saisie fondé sur le levier et la technique.",
+     "p": [
+      "Le judoka japonais Mitsuyo Maeda a enseigné au Brésil au début du XXe siècle.",
+      "La famille Gracie et d'autres ont affiné l'art, en misant sur le travail au sol et le levier.",
+      "Son idée centrale : une bonne technique permet à une personne plus petite de déplacer un partenaire plus grand."
+     ],
+     "q": "Pourquoi le levier et la technique peuvent-ils compter plus que la taille, selon toi ?",
+     "c": "Essaie de déplacer une caisse lourde avec un levier, comme un manche à balai, et sens l'aide de la technique."
+    },
+    "it": {
+     "t": "Il jiu-jitsu brasiliano in breve",
+     "g": "Esplora il jiu-jitsu brasiliano, un'arte di presa basata su leva e tecnica.",
+     "p": [
+      "Il judoka giapponese Mitsuyo Maeda insegnò in Brasile all'inizio del Novecento.",
+      "La famiglia Gracie e altri perfezionarono l'arte, puntando sul lavoro a terra e sulla leva.",
+      "L'idea centrale: una buona tecnica permette a una persona più piccola di muovere un partner più grande in sicurezza."
+     ],
+     "q": "Perché secondo te leva e tecnica possono contare più della stazza?",
+     "c": "Prova a spostare una scatola pesante con una leva, come il manico di una scopa, e senti come aiuta la tecnica."
+    },
+    "pt": {
+     "t": "O jiu-jitsu brasileiro num relance",
+     "g": "Explora o jiu-jitsu brasileiro, uma arte de agarre assente na alavanca e na técnica.",
+     "p": [
+      "O judoca japonês Mitsuyo Maeda ensinou no Brasil no início do século XX.",
+      "A família Gracie e outros aperfeiçoaram a arte, apostando no solo e na alavanca.",
+      "A ideia central: uma boa técnica permite a alguém mais pequeno mover em segurança um parceiro maior."
+     ],
+     "q": "Porque achas que a alavanca e a técnica podem contar mais do que o tamanho?",
+     "c": "Tenta mover uma caixa pesada com uma alavanca, como o cabo de uma vassoura, e sente como a técnica ajuda."
+    },
+    "pt_BR": {
+     "t": "O jiu-jítsu brasileiro num relance",
+     "g": "Explore o jiu-jítsu brasileiro, uma arte de agarramento baseada em alavanca e técnica.",
+     "p": [
+      "O judoca japonês Mitsuyo Maeda ensinou no Brasil no início do século XX.",
+      "A família Gracie e outros aperfeiçoaram a arte, com foco no chão e na alavanca.",
+      "A ideia central: boa técnica permite que alguém menor mova com segurança um parceiro maior."
+     ],
+     "q": "Por que você acha que alavanca e técnica podem importar mais que o tamanho?",
+     "c": "Tente mover uma caixa pesada com uma alavanca, como um cabo de vassoura, e sinta como a técnica ajuda."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Capoeira at a glance",
+     "g": "Discover capoeira, the Afro-Brazilian art of movement, music and play.",
+     "p": [
+      "Capoeira was created in Brazil by enslaved Africans and their descendants.",
+      "It is played in a circle called the roda, with the berimbau, songs and clapping.",
+      "The capoeira circle is recognised by UNESCO as Intangible Cultural Heritage of Humanity."
+     ],
+     "q": "Why do you think music is so important in capoeira?",
+     "c": "Listen to a berimbau recording and try to clap along with the rhythm."
+    },
+    "de": {
+     "t": "Capoeira auf einen Blick",
+     "g": "Entdecke Capoeira, die afrobrasilianische Kunst aus Bewegung, Musik und Spiel.",
+     "p": [
+      "Capoeira entstand in Brasilien bei versklavten Afrikanern und ihren Nachfahren.",
+      "Gespielt wird im Kreis, der Roda, mit Berimbau, Gesang und Klatschen.",
+      "Der Capoeira-Kreis ist von der UNESCO als immaterielles Kulturerbe der Menschheit anerkannt."
+     ],
+     "q": "Warum ist Musik deiner Meinung nach so wichtig in der Capoeira?",
+     "c": "Hör dir eine Berimbau-Aufnahme an und versuch, im Rhythmus mitzuklatschen."
+    },
+    "es": {
+     "t": "La capoeira de un vistazo",
+     "g": "Descubre la capoeira, el arte afrobrasileño de movimiento, música y juego.",
+     "p": [
+      "La capoeira nació en Brasil entre africanos esclavizados y sus descendientes.",
+      "Se juega en un círculo llamado roda, con el berimbau, cantos y palmas.",
+      "La roda de capoeira está reconocida por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad."
+     ],
+     "q": "¿Por qué crees que la música es tan importante en la capoeira?",
+     "c": "Escucha una grabación de berimbau e intenta seguir el ritmo con palmas."
+    },
+    "fr": {
+     "t": "La capoeira en un coup d'œil",
+     "g": "Découvre la capoeira, l'art afro-brésilien du mouvement, de la musique et du jeu.",
+     "p": [
+      "La capoeira est née au Brésil parmi les Africains réduits en esclavage et leurs descendants.",
+      "Elle se joue dans un cercle appelé roda, avec le berimbau, des chants et des claquements de mains.",
+      "La roda de capoeira est inscrite par l'UNESCO au patrimoine culturel immatériel de l'humanité."
+     ],
+     "q": "Pourquoi la musique est-elle si importante dans la capoeira, selon toi ?",
+     "c": "Écoute un enregistrement de berimbau et essaie de frapper des mains en rythme."
+    },
+    "it": {
+     "t": "La capoeira in breve",
+     "g": "Scopri la capoeira, l'arte afro-brasiliana di movimento, musica e gioco.",
+     "p": [
+      "La capoeira nacque in Brasile tra gli africani ridotti in schiavitù e i loro discendenti.",
+      "Si gioca in un cerchio chiamato roda, con il berimbau, canti e battiti di mani.",
+      "La roda di capoeira è riconosciuta dall'UNESCO come Patrimonio culturale immateriale dell'umanità."
+     ],
+     "q": "Perché secondo te la musica è così importante nella capoeira?",
+     "c": "Ascolta una registrazione di berimbau e prova a battere le mani a ritmo."
+    },
+    "pt": {
+     "t": "A capoeira num relance",
+     "g": "Descobre a capoeira, a arte afro-brasileira de movimento, música e jogo.",
+     "p": [
+      "A capoeira nasceu no Brasil entre africanos escravizados e os seus descendentes.",
+      "Joga-se numa roda, com o berimbau, cânticos e palmas.",
+      "A roda de capoeira é reconhecida pela UNESCO como Património Cultural Imaterial da Humanidade."
+     ],
+     "q": "Porque achas que a música é tão importante na capoeira?",
+     "c": "Ouve uma gravação de berimbau e tenta bater palmas ao ritmo."
+    },
+    "pt_BR": {
+     "t": "A capoeira num relance",
+     "g": "Descubra a capoeira, a arte afro-brasileira de movimento, música e jogo.",
+     "p": [
+      "A capoeira nasceu no Brasil entre africanos escravizados e seus descendentes.",
+      "É jogada numa roda, com berimbau, cantigas e palmas.",
+      "A roda de capoeira é reconhecida pela UNESCO como Patrimônio Cultural Imaterial da Humanidade."
+     ],
+     "q": "Por que você acha que a música é tão importante na capoeira?",
+     "c": "Ouça uma gravação de berimbau e tente bater palmas no ritmo."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tai chi at a glance",
+     "g": "Meet tai chi, the slow and flowing Chinese practice loved for balance and calm.",
+     "p": [
+      "Tai chi has roots in Chen village in Henan, China, and famous family styles like Yang and Wu.",
+      "Its slow, continuous movements train balance, posture, breathing and relaxed focus.",
+      "In many cities people practise tai chi together outdoors in parks early in the morning."
+     ],
+     "q": "Can you imagine starting your day with slow movement in a park? How would it feel?",
+     "c": "Take ten slow breaths while shifting your weight gently from one foot to the other."
+    },
+    "de": {
+     "t": "Tai Chi auf einen Blick",
+     "g": "Lerne Tai Chi kennen, die langsame, fließende chinesische Praxis für Gleichgewicht und Ruhe.",
+     "p": [
+      "Tai Chi wurzelt im Dorf Chen in der Provinz Henan; bekannte Familienstile sind Yang und Wu.",
+      "Die langsamen, fließenden Bewegungen schulen Gleichgewicht, Haltung, Atmung und ruhige Konzentration.",
+      "In vielen Städten üben Menschen frühmorgens gemeinsam Tai Chi in Parks."
+     ],
+     "q": "Kannst du dir vorstellen, den Tag mit langsamer Bewegung im Park zu beginnen? Wie wäre das?",
+     "c": "Atme zehnmal langsam und verlagere dabei dein Gewicht sanft von einem Fuß auf den anderen."
+    },
+    "es": {
+     "t": "El taichí de un vistazo",
+     "g": "Conoce el taichí, la práctica china lenta y fluida apreciada por el equilibrio y la calma.",
+     "p": [
+      "El taichí tiene raíces en la aldea de Chen, en Henan, y estilos familiares famosos como Yang y Wu.",
+      "Sus movimientos lentos y continuos entrenan equilibrio, postura, respiración y concentración serena.",
+      "En muchas ciudades la gente practica taichí junta al aire libre en parques, temprano por la mañana."
+     ],
+     "q": "¿Te imaginas empezar el día con movimiento lento en un parque? ¿Cómo te sentirías?",
+     "c": "Haz diez respiraciones lentas mientras pasas el peso suavemente de un pie al otro."
+    },
+    "fr": {
+     "t": "Le tai-chi en un coup d'œil",
+     "g": "Découvre le tai-chi, pratique chinoise lente et fluide appréciée pour l'équilibre et le calme.",
+     "p": [
+      "Le tai-chi a ses racines au village de Chen, dans le Henan, avec des styles familiaux célèbres comme Yang et Wu.",
+      "Ses mouvements lents et continus travaillent équilibre, posture, respiration et concentration sereine.",
+      "Dans de nombreuses villes, on pratique le tai-chi ensemble dans les parcs, tôt le matin."
+     ],
+     "q": "Peux-tu imaginer commencer ta journée par des mouvements lents dans un parc ? Qu'en penses-tu ?",
+     "c": "Prends dix respirations lentes en transférant doucement ton poids d'un pied à l'autre."
+    },
+    "it": {
+     "t": "Il tai chi in breve",
+     "g": "Conosci il tai chi, la pratica cinese lenta e fluida amata per equilibrio e calma.",
+     "p": [
+      "Il tai chi ha radici nel villaggio di Chen, nello Henan, e stili di famiglia famosi come Yang e Wu.",
+      "I suoi movimenti lenti e continui allenano equilibrio, postura, respiro e concentrazione serena.",
+      "In molte città le persone praticano tai chi insieme nei parchi, di primo mattino."
+     ],
+     "q": "Ti immagini di iniziare la giornata con movimenti lenti in un parco? Come ti sentiresti?",
+     "c": "Fai dieci respiri lenti spostando dolcemente il peso da un piede all'altro."
+    },
+    "pt": {
+     "t": "O tai chi num relance",
+     "g": "Conhece o tai chi, a prática chinesa lenta e fluida apreciada pelo equilíbrio e pela calma.",
+     "p": [
+      "O tai chi tem raízes na aldeia de Chen, em Henan, e estilos de família famosos como Yang e Wu.",
+      "Os seus movimentos lentos e contínuos treinam equilíbrio, postura, respiração e concentração serena.",
+      "Em muitas cidades, as pessoas praticam tai chi juntas nos parques, logo de manhã cedo."
+     ],
+     "q": "Consegues imaginar começar o dia com movimento lento num parque? Como te sentirias?",
+     "c": "Faz dez respirações lentas enquanto passas o peso suavemente de um pé para o outro."
+    },
+    "pt_BR": {
+     "t": "O tai chi num relance",
+     "g": "Conheça o tai chi, a prática chinesa lenta e fluida apreciada pelo equilíbrio e pela calma.",
+     "p": [
+      "O tai chi tem raízes na vila de Chen, em Henan, e estilos de família famosos como Yang e Wu.",
+      "Seus movimentos lentos e contínuos treinam equilíbrio, postura, respiração e foco tranquilo.",
+      "Em muitas cidades, as pessoas praticam tai chi juntas em parques, bem cedo pela manhã."
+     ],
+     "q": "Você consegue imaginar começar o dia com movimentos lentos num parque? Como se sentiria?",
+     "c": "Faça dez respirações lentas enquanto passa o peso suavemente de um pé para o outro."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kendo at a glance",
+     "g": "Discover kendo, Japanese fencing with bamboo swords, armour and deep etiquette.",
+     "p": [
+      "Kendo grew from the sword training of Japan's samurai into a modern way of practice.",
+      "Practitioners use a bamboo sword called a shinai and protective armour called bogu.",
+      "Bowing, posture and a strong spirit matter as much as technique in kendo."
+     ],
+     "q": "What do you think armour and bamboo swords allow kendo practitioners to do safely?",
+     "c": "Stand straight, hold a rolled newspaper with both hands in front of you and keep a calm, focused gaze for one minute."
+    },
+    "de": {
+     "t": "Kendo auf einen Blick",
+     "g": "Entdecke Kendo, japanisches Fechten mit Bambusschwertern, Rüstung und tiefer Etikette.",
+     "p": [
+      "Kendo entwickelte sich aus dem Schwerttraining der Samurai zu einer modernen Übungsform.",
+      "Man übt mit einem Bambusschwert namens Shinai und einer Schutzrüstung namens Bogu.",
+      "Verbeugung, Haltung und ein starker Geist zählen im Kendo so viel wie die Technik."
+     ],
+     "q": "Was ermöglichen Rüstung und Bambusschwert den Kendo-Übenden deiner Meinung nach sicher zu tun?",
+     "c": "Steh aufrecht, halte eine gerollte Zeitung mit beiden Händen vor dir und schau eine Minute ruhig und konzentriert."
+    },
+    "es": {
+     "t": "El kendo de un vistazo",
+     "g": "Descubre el kendo, la esgrima japonesa con espadas de bambú, armadura y una etiqueta profunda.",
+     "p": [
+      "El kendo nació del entrenamiento con espada de los samuráis y se convirtió en una práctica moderna.",
+      "Se usa una espada de bambú llamada shinai y una armadura protectora llamada bogu.",
+      "Las reverencias, la postura y un espíritu firme importan tanto como la técnica."
+     ],
+     "q": "¿Qué crees que permiten hacer con seguridad la armadura y la espada de bambú?",
+     "c": "De pie y erguido, sujeta un periódico enrollado con ambas manos delante de ti y mantén una mirada tranquila y concentrada un minuto."
+    },
+    "fr": {
+     "t": "Le kendo en un coup d'œil",
+     "g": "Découvre le kendo, l'escrime japonaise au sabre de bambou, avec armure et étiquette profonde.",
+     "p": [
+      "Le kendo est issu de l'entraînement au sabre des samouraïs et est devenu une pratique moderne.",
+      "On utilise un sabre en bambou appelé shinai et une armure de protection appelée bogu.",
+      "Le salut, la posture et un esprit fort comptent autant que la technique en kendo."
+     ],
+     "q": "Selon toi, que permettent de faire en sécurité l'armure et le sabre en bambou ?",
+     "c": "Debout bien droit, tiens un journal roulé à deux mains devant toi et garde un regard calme et concentré pendant une minute."
+    },
+    "it": {
+     "t": "Il kendo in breve",
+     "g": "Scopri il kendo, la scherma giapponese con spade di bambù, armatura e un'etichetta profonda.",
+     "p": [
+      "Il kendo nasce dall'allenamento con la spada dei samurai ed è diventato una pratica moderna.",
+      "Si usano una spada di bambù chiamata shinai e un'armatura protettiva chiamata bogu.",
+      "Inchino, postura e spirito forte contano quanto la tecnica nel kendo."
+     ],
+     "q": "Secondo te, cosa permettono di fare in sicurezza armatura e spada di bambù?",
+     "c": "In piedi e dritto, tieni un giornale arrotolato con entrambe le mani davanti a te e mantieni uno sguardo calmo e concentrato per un minuto."
+    },
+    "pt": {
+     "t": "O kendo num relance",
+     "g": "Descobre o kendo, a esgrima japonesa com espadas de bambu, armadura e uma etiqueta profunda.",
+     "p": [
+      "O kendo nasceu do treino de espada dos samurais e tornou-se uma prática moderna.",
+      "Usa-se uma espada de bambu chamada shinai e uma armadura de proteção chamada bogu.",
+      "As vénias, a postura e um espírito firme contam tanto como a técnica no kendo."
+     ],
+     "q": "O que achas que a armadura e a espada de bambu permitem fazer em segurança?",
+     "c": "De pé e direito, segura um jornal enrolado com as duas mãos à tua frente e mantém um olhar calmo e concentrado durante um minuto."
+    },
+    "pt_BR": {
+     "t": "O kendô num relance",
+     "g": "Descubra o kendô, a esgrima japonesa com espadas de bambu, armadura e uma etiqueta profunda.",
+     "p": [
+      "O kendô nasceu do treino de espada dos samurais e virou uma prática moderna.",
+      "Usa-se uma espada de bambu chamada shinai e uma armadura de proteção chamada bogu.",
+      "Reverências, postura e espírito firme importam tanto quanto a técnica no kendô."
+     ],
+     "q": "O que você acha que a armadura e a espada de bambu permitem fazer com segurança?",
+     "c": "Em pé e ereto, segure um jornal enrolado com as duas mãos à sua frente e mantenha um olhar calmo e focado por um minuto."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Muay Thai at a glance",
+     "g": "Explore Muay Thai, Thailand's national sport, and its rich rituals and music.",
+     "p": [
+      "Muay Thai is called the art of eight limbs because it uses hands, elbows, knees and shins.",
+      "Before a bout, athletes perform the wai kru ram muay, a dance that honours their teachers.",
+      "Live music with drums, cymbals and a Javanese oboe accompanies the traditional ceremony."
+     ],
+     "q": "Why do you think honouring teachers before competing is such an important tradition?",
+     "c": "Think of a teacher who helped you and send them a short thank-you message or note."
+    },
+    "de": {
+     "t": "Muay Thai auf einen Blick",
+     "g": "Erkunde Muay Thai, Thailands Nationalsport, mit seinen reichen Ritualen und seiner Musik.",
+     "p": [
+      "Muay Thai heißt Kunst der acht Gliedmaßen, weil Hände, Ellbogen, Knie und Schienbeine eingesetzt werden.",
+      "Vor einem Wettkampf tanzen die Sportler den Wai Kru Ram Muay, der ihre Lehrer ehrt.",
+      "Livemusik mit Trommeln, Becken und einer javanischen Oboe begleitet die traditionelle Zeremonie."
+     ],
+     "q": "Warum ist es wohl eine so wichtige Tradition, vor dem Wettkampf die Lehrer zu ehren?",
+     "c": "Denk an einen Lehrer, der dir geholfen hat, und schick ihm eine kurze Dankesnachricht."
+    },
+    "es": {
+     "t": "El muay thai de un vistazo",
+     "g": "Explora el muay thai, el deporte nacional de Tailandia, con sus ricos rituales y su música.",
+     "p": [
+      "Se le llama el arte de las ocho extremidades porque usa manos, codos, rodillas y espinillas.",
+      "Antes de un combate, los deportistas bailan el wai kru ram muay, que honra a sus maestros.",
+      "Música en vivo con tambores, címbalos y un oboe javanés acompaña la ceremonia tradicional."
+     ],
+     "q": "¿Por qué crees que honrar a los maestros antes de competir es una tradición tan importante?",
+     "c": "Piensa en un profesor que te ayudó y mándale un mensaje corto de agradecimiento."
+    },
+    "fr": {
+     "t": "La boxe thaïe en un coup d'œil",
+     "g": "Explore le muay-thaï, sport national de Thaïlande, avec ses riches rituels et sa musique.",
+     "p": [
+      "On l'appelle l'art des huit membres, car il utilise poings, coudes, genoux et tibias.",
+      "Avant un combat, les athlètes exécutent le wai kru ram muay, une danse qui honore leurs maîtres.",
+      "Une musique jouée en direct, avec tambours, cymbales et hautbois javanais, accompagne la cérémonie."
+     ],
+     "q": "Pourquoi honorer ses maîtres avant de concourir est-il, selon toi, une tradition si importante ?",
+     "c": "Pense à un enseignant qui t'a aidé et envoie-lui un petit message de remerciement."
+    },
+    "it": {
+     "t": "La muay thai in breve",
+     "g": "Esplora la muay thai, sport nazionale della Thailandia, con i suoi ricchi rituali e la sua musica.",
+     "p": [
+      "È chiamata l'arte degli otto arti perché usa mani, gomiti, ginocchia e tibie.",
+      "Prima di un incontro, gli atleti eseguono il wai kru ram muay, una danza che onora i maestri.",
+      "Musica dal vivo con tamburi, cembali e un oboe giavanese accompagna la cerimonia tradizionale."
+     ],
+     "q": "Perché secondo te onorare i maestri prima di gareggiare è una tradizione così importante?",
+     "c": "Pensa a un insegnante che ti ha aiutato e mandagli un breve messaggio di ringraziamento."
+    },
+    "pt": {
+     "t": "O muay thai num relance",
+     "g": "Explora o muay thai, o desporto nacional da Tailândia, com os seus ricos rituais e música.",
+     "p": [
+      "Chama-se a arte dos oito membros porque usa mãos, cotovelos, joelhos e canelas.",
+      "Antes de um combate, os atletas dançam o wai kru ram muay, que homenageia os seus mestres.",
+      "Música ao vivo com tambores, címbalos e um oboé javanês acompanha a cerimónia tradicional."
+     ],
+     "q": "Porque achas que homenagear os mestres antes de competir é uma tradição tão importante?",
+     "c": "Pensa num professor que te ajudou e envia-lhe uma mensagem curta de agradecimento."
+    },
+    "pt_BR": {
+     "t": "O muay thai num relance",
+     "g": "Explore o muay thai, o esporte nacional da Tailândia, com seus ricos rituais e sua música.",
+     "p": [
+      "É chamado de arte das oito armas porque usa mãos, cotovelos, joelhos e canelas.",
+      "Antes de uma luta, os atletas dançam o wai kru ram muay, que homenageia seus mestres.",
+      "Música ao vivo com tambores, címbalos e um oboé javanês acompanha a cerimônia tradicional."
+     ],
+     "q": "Por que você acha que homenagear os mestres antes de competir é uma tradição tão importante?",
+     "c": "Pense num professor que ajudou você e mande uma mensagem curta de agradecimento."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The training hall",
+     "g": "Learn the names and the spirit of the places where martial arts are practised.",
+     "p": [
+      "Dojo is Japanese for place of the way, and dojang carries a similar meaning in Korean.",
+      "Kwoon is the Cantonese word for a kung fu training hall; many BJJ clubs say academy.",
+      "Whatever the name, it is treated as a place of learning, respect and shared effort."
+     ],
+     "q": "Is there a place in your life that feels special because of what you learn there?",
+     "c": "Choose a corner of your home and keep it tidy as your own small practice space this week."
+    },
+    "de": {
+     "t": "Der Trainingsraum",
+     "g": "Lerne die Namen und den Geist der Orte kennen, an denen Kampfkünste geübt werden.",
+     "p": [
+      "Dojo heißt auf Japanisch Ort des Weges, und Dojang hat auf Koreanisch eine ähnliche Bedeutung.",
+      "Kwoon ist das kantonesische Wort für eine Kung-Fu-Halle; viele BJJ-Vereine sagen Akademie.",
+      "Wie auch immer er heißt: Er gilt als Ort des Lernens, des Respekts und der gemeinsamen Mühe."
+     ],
+     "q": "Gibt es in deinem Leben einen Ort, der sich durch das, was du dort lernst, besonders anfühlt?",
+     "c": "Wähl eine Ecke deiner Wohnung und halte sie diese Woche als kleinen Übungsplatz ordentlich."
+    },
+    "es": {
+     "t": "La sala de entrenamiento",
+     "g": "Aprende los nombres y el espíritu de los lugares donde se practican las artes marciales.",
+     "p": [
+      "Dojo significa en japonés lugar del camino, y dojang tiene un sentido parecido en coreano.",
+      "Kwoon es la palabra cantonesa para una sala de kung fu; muchos clubes de BJJ dicen academia.",
+      "Se llame como se llame, es un lugar de aprendizaje, respeto y esfuerzo compartido."
+     ],
+     "q": "¿Hay algún lugar en tu vida que sientas especial por lo que aprendes allí?",
+     "c": "Elige un rincón de tu casa y mantenlo ordenado esta semana como tu pequeño espacio de práctica."
+    },
+    "fr": {
+     "t": "La salle d'entraînement",
+     "g": "Apprends les noms et l'esprit des lieux où l'on pratique les arts martiaux.",
+     "p": [
+      "Dojo signifie en japonais lieu de la voie, et dojang a un sens proche en coréen.",
+      "Kwoon est le mot cantonais pour une salle de kung-fu ; beaucoup de clubs de JJB disent académie.",
+      "Quel que soit son nom, c'est un lieu d'apprentissage, de respect et d'effort partagé."
+     ],
+     "q": "Y a-t-il un lieu dans ta vie qui te semble spécial grâce à ce que tu y apprends ?",
+     "c": "Choisis un coin de chez toi et garde-le rangé cette semaine comme ton petit espace de pratique."
+    },
+    "it": {
+     "t": "La sala di allenamento",
+     "g": "Impara i nomi e lo spirito dei luoghi dove si praticano le arti marziali.",
+     "p": [
+      "Dojo in giapponese significa luogo della via, e dojang ha un senso simile in coreano.",
+      "Kwoon è la parola cantonese per una sala di kung fu; molti club di BJJ dicono accademia.",
+      "Comunque si chiami, è un luogo di apprendimento, rispetto e impegno condiviso."
+     ],
+     "q": "C'è un luogo nella tua vita che senti speciale per ciò che vi impari?",
+     "c": "Scegli un angolo di casa e tienilo in ordine questa settimana come tuo piccolo spazio di pratica."
+    },
+    "pt": {
+     "t": "A sala de treino",
+     "g": "Aprende os nomes e o espírito dos lugares onde se praticam artes marciais.",
+     "p": [
+      "Dojo significa em japonês lugar do caminho, e dojang tem um sentido parecido em coreano.",
+      "Kwoon é a palavra cantonesa para uma sala de kung fu; muitos clubes de BJJ dizem academia.",
+      "Seja qual for o nome, é um lugar de aprendizagem, respeito e esforço partilhado."
+     ],
+     "q": "Há algum lugar na tua vida que sentes especial pelo que lá aprendes?",
+     "c": "Escolhe um canto da tua casa e mantém-no arrumado esta semana como o teu pequeno espaço de prática."
+    },
+    "pt_BR": {
+     "t": "O espaço de treino",
+     "g": "Aprenda os nomes e o espírito dos lugares onde se praticam artes marciais.",
+     "p": [
+      "Dojo significa em japonês lugar do caminho, e dojang tem um sentido parecido em coreano.",
+      "Kwoon é a palavra cantonesa para uma sala de kung fu; no jiu-jítsu muitos dizem academia.",
+      "Seja qual for o nome, é um lugar de aprendizado, respeito e esforço compartilhado."
+     ],
+     "q": "Existe algum lugar na sua vida que você sente especial pelo que aprende lá?",
+     "c": "Escolha um canto da sua casa e mantenha arrumado esta semana como seu pequeno espaço de prática."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bowing and showing respect",
+     "g": "Understand why bows open and close training and what they express.",
+     "p": [
+      "A bow, called rei in Japanese, expresses respect, gratitude and readiness to learn.",
+      "Students bow when entering the hall, to the teacher and to each partner before and after practice.",
+      "A bow is not about being lower than others; it is a shared sign of mutual respect."
+     ],
+     "q": "How do people show respect and greeting in your own culture?",
+     "c": "Practise a calm standing bow: feet together, hands at your sides, bend gently from the hips and pause."
+    },
+    "de": {
+     "t": "Verbeugen und Respekt zeigen",
+     "g": "Verstehe, warum Verbeugungen das Training eröffnen und beenden und was sie ausdrücken.",
+     "p": [
+      "Eine Verbeugung, japanisch Rei, drückt Respekt, Dankbarkeit und Lernbereitschaft aus.",
+      "Man verbeugt sich beim Betreten der Halle, vor dem Lehrer und vor jedem Partner vor und nach der Übung.",
+      "Es geht nicht darum, niedriger zu stehen: Es ist ein gemeinsames Zeichen gegenseitiger Achtung."
+     ],
+     "q": "Wie zeigen Menschen in deiner Kultur Respekt und begrüßen sich?",
+     "c": "Übe eine ruhige Verbeugung im Stehen: Füße zusammen, Hände seitlich, sanft aus der Hüfte beugen, kurz innehalten."
+    },
+    "es": {
+     "t": "Las reverencias y el respeto",
+     "g": "Entiende por qué las reverencias abren y cierran el entrenamiento y qué expresan.",
+     "p": [
+      "La reverencia, rei en japonés, expresa respeto, gratitud y disposición a aprender.",
+      "Se saluda al entrar en la sala, al maestro y a cada compañero antes y después de practicar.",
+      "No se trata de ser menos que nadie: es una señal compartida de respeto mutuo."
+     ],
+     "q": "¿Cómo se muestra respeto y se saluda en tu propia cultura?",
+     "c": "Practica una reverencia tranquila de pie: pies juntos, manos a los lados, inclínate suave desde la cadera y haz una pausa."
+    },
+    "fr": {
+     "t": "Le salut et le respect",
+     "g": "Comprends pourquoi le salut ouvre et clôt l'entraînement et ce qu'il exprime.",
+     "p": [
+      "Le salut, rei en japonais, exprime respect, gratitude et disponibilité pour apprendre.",
+      "On salue en entrant dans la salle, envers le professeur et chaque partenaire avant et après l'exercice.",
+      "Saluer n'est pas se rabaisser : c'est un signe partagé de respect mutuel."
+     ],
+     "q": "Comment montre-t-on le respect et se salue-t-on dans ta culture ?",
+     "c": "Entraîne-toi à un salut debout calme : pieds joints, mains le long du corps, penche-toi doucement depuis les hanches et marque une pause."
+    },
+    "it": {
+     "t": "Il saluto e il rispetto",
+     "g": "Capisci perché il saluto apre e chiude l'allenamento e cosa esprime.",
+     "p": [
+      "Il saluto, rei in giapponese, esprime rispetto, gratitudine e disponibilità a imparare.",
+      "Si saluta entrando in sala, verso il maestro e ogni partner prima e dopo la pratica.",
+      "Inchinarsi non significa essere inferiori: è un segno condiviso di rispetto reciproco."
+     ],
+     "q": "Come si mostra rispetto e ci si saluta nella tua cultura?",
+     "c": "Prova un saluto calmo in piedi: piedi uniti, mani lungo i fianchi, piegati dolcemente dalle anche e fai una pausa."
+    },
+    "pt": {
+     "t": "A vénia e o respeito",
+     "g": "Percebe porque é que as vénias abrem e fecham o treino e o que exprimem.",
+     "p": [
+      "A vénia, rei em japonês, exprime respeito, gratidão e vontade de aprender.",
+      "Faz-se a vénia ao entrar na sala, ao professor e a cada parceiro antes e depois de praticar.",
+      "Não se trata de ficar abaixo de ninguém: é um sinal partilhado de respeito mútuo."
+     ],
+     "q": "Como se mostra respeito e se cumprimenta na tua cultura?",
+     "c": "Pratica uma vénia calma de pé: pés juntos, mãos ao lado do corpo, inclina-te suavemente a partir da anca e faz uma pausa."
+    },
+    "pt_BR": {
+     "t": "A reverência e o respeito",
+     "g": "Entenda por que as reverências abrem e fecham o treino e o que elas expressam.",
+     "p": [
+      "A reverência, rei em japonês, expressa respeito, gratidão e vontade de aprender.",
+      "Faz-se a reverência ao entrar no espaço, ao professor e a cada parceiro antes e depois de treinar.",
+      "Não é ficar abaixo de ninguém: é um sinal compartilhado de respeito mútuo."
+     ],
+     "q": "Como as pessoas mostram respeito e se cumprimentam na sua cultura?",
+     "c": "Pratique uma reverência calma em pé: pés juntos, mãos ao lado do corpo, incline-se suavemente a partir do quadril e faça uma pausa."
+    }
+   }
+  }
+ ]
+}

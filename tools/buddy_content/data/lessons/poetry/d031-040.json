@@ -1,0 +1,835 @@
+{
+ "topic": "poetry",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Consonance",
+     "g": "Repeat consonant sounds within and at the ends of words.",
+     "p": [
+      "Consonance repeats consonants anywhere in words, often at the end: pitter-patter, odds and ends.",
+      "Soft consonants like l, m and n soothe; hard ones like k, t and d add snap.",
+      "Pair it with assonance to give a line rich, layered music."
+     ],
+     "q": "Which consonant sounds most like rain to you?",
+     "c": "Write a line about a busy kitchen full of hard k and t sounds, then a calm one with l and m."
+    },
+    "de": {
+     "t": "Konsonanz",
+     "g": "Wiederhole Konsonanten im Wort und am Wortende.",
+     "p": [
+      "Konsonanz wiederholt Mitlaute überall im Wort, oft am Ende: Hand und Rand und Sand.",
+      "Weiche Laute wie l, m und n beruhigen; harte wie k, t und d geben Biss.",
+      "Kombiniere sie mit Assonanz für eine reiche, vielschichtige Zeilenmusik."
+     ],
+     "q": "Welcher Konsonant klingt für dich am meisten nach Regen?",
+     "c": "Schreibe eine Zeile über eine lebhafte Küche voller k- und t-Laute und eine ruhige mit l und m."
+    },
+    "es": {
+     "t": "La consonancia",
+     "g": "Repite sonidos consonánticos dentro y al final de las palabras.",
+     "p": [
+      "Aquí hablamos de repetir consonantes en cualquier parte de la palabra: tic tac, tris tras.",
+      "Las suaves como l, m y n calman; las duras como k, t y d dan chispa.",
+      "Combínala con la asonancia para un verso de música rica y en capas."
+     ],
+     "q": "¿Qué consonante te suena más a lluvia?",
+     "c": "Escribe un verso sobre una cocina ajetreada lleno de c y t, y otro tranquilo con l y m."
+    },
+    "fr": {
+     "t": "La consonance",
+     "g": "Répéter des sons consonantiques à l'intérieur et à la fin des mots.",
+     "p": [
+      "Il s'agit de répéter des consonnes partout dans les mots, souvent à la fin : tic-tac, bric-à-brac.",
+      "Les douces comme l, m et n apaisent ; les dures comme k, t et d claquent.",
+      "Associe-la à l'assonance pour une musique riche et en couches."
+     ],
+     "q": "Quelle consonne évoque le plus la pluie pour toi ?",
+     "c": "Écris un vers sur une cuisine animée plein de k et de t, puis un vers calme avec l et m."
+    },
+    "it": {
+     "t": "La consonanza",
+     "g": "Ripeti suoni consonantici dentro e alla fine delle parole.",
+     "p": [
+      "Si tratta di ripetere consonanti in qualsiasi punto della parola: tic tac, patatrac.",
+      "Le morbide come l, m e n calmano; le dure come c, t e d danno scatto.",
+      "Abbinala all'assonanza per una musica ricca e a strati."
+     ],
+     "q": "Quale consonante ti ricorda di più la pioggia?",
+     "c": "Scrivi un verso su una cucina indaffarata pieno di c e t, poi uno calmo con l e m."
+    },
+    "pt": {
+     "t": "A consonância",
+     "g": "Repete sons consonânticos dentro e no fim das palavras.",
+     "p": [
+      "Aqui falamos de repetir consoantes em qualquer parte da palavra: tique-taque, trique-traque.",
+      "As suaves como l, m e n acalmam; as duras como c, t e d dão estalo.",
+      "Junta-a à assonância para uma música rica e em camadas."
+     ],
+     "q": "Que consoante te soa mais a chuva?",
+     "c": "Escreve um verso sobre uma cozinha agitada cheio de c e t, e outro calmo com l e m."
+    },
+    "pt_BR": {
+     "t": "A consonância",
+     "g": "Repita sons consonantais dentro e no fim das palavras.",
+     "p": [
+      "Aqui falamos de repetir consoantes em qualquer parte da palavra: tique-taque, trique-trique.",
+      "As suaves como l, m e n acalmam; as duras como c, t e d dão estalo.",
+      "Junte com a assonância para uma música rica e em camadas."
+     ],
+     "q": "Que consoante soa mais como chuva para você?",
+     "c": "Escreva um verso sobre uma cozinha agitada cheio de c e t, e outro calmo com l e m."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Onomatopoeia",
+     "g": "Use words that sound like what they mean, like buzz, splash and crunch.",
+     "p": [
+      "Onomatopoeia imitates sounds: buzz, splash, crunch, sizzle.",
+      "Every language has its own versions; a dog says woof in English and wau in German.",
+      "It puts the reader right inside the scene, ears first."
+     ],
+     "q": "How do animals sound in your language compared with English?",
+     "c": "Write a short poem about a rainy street using at least four sound words."
+    },
+    "de": {
+     "t": "Lautmalerei",
+     "g": "Nutze Wörter, die klingen wie das, was sie bedeuten: summen, platsch, knirschen.",
+     "p": [
+      "Lautmalerei ahmt Geräusche nach: summen, platsch, knirschen, brutzeln.",
+      "Jede Sprache hat eigene Formen; ein Hund macht wau, auf Englisch woof.",
+      "Sie versetzt den Leser mitten in die Szene, mit den Ohren zuerst."
+     ],
+     "q": "Wie klingen Tiere in deiner Sprache im Vergleich zu anderen Sprachen?",
+     "c": "Schreibe ein kurzes Gedicht über eine verregnete Straße mit mindestens vier Klangwörtern."
+    },
+    "es": {
+     "t": "La onomatopeya",
+     "g": "Usa palabras que suenan como lo que significan: zumbido, chapuzón, crujido.",
+     "p": [
+      "La onomatopeya imita sonidos: bzzz, plaf, crac, chisporroteo.",
+      "Cada idioma tiene las suyas; el perro dice guau en español y woof en inglés.",
+      "Mete al lector en la escena, empezando por los oídos."
+     ],
+     "q": "¿Cómo suenan los animales en tu idioma comparado con otros?",
+     "c": "Escribe un poema breve sobre una calle lluviosa con al menos cuatro palabras sonoras."
+    },
+    "fr": {
+     "t": "L'onomatopée",
+     "g": "Utiliser des mots qui sonnent comme ce qu'ils disent : bzz, plouf, crac.",
+     "p": [
+      "L'onomatopée imite les sons : bzz, plouf, crac, grésiller.",
+      "Chaque langue a les siennes ; le chien fait ouaf en français et woof en anglais.",
+      "Elle place le lecteur dans la scène, par les oreilles d'abord."
+     ],
+     "q": "Comment font les animaux dans ta langue, comparé à d'autres langues ?",
+     "c": "Écris un court poème sur une rue sous la pluie avec au moins quatre mots sonores."
+    },
+    "it": {
+     "t": "L'onomatopea",
+     "g": "Usa parole che suonano come ciò che significano: ronzio, splash, crunch.",
+     "p": [
+      "L'onomatopea imita i suoni: bzz, splash, crac, sfrigolare.",
+      "Ogni lingua ha le sue: il cane fa bau in italiano e woof in inglese.",
+      "Porta il lettore dentro la scena, partendo dalle orecchie."
+     ],
+     "q": "Come fanno gli animali nella tua lingua rispetto ad altre lingue?",
+     "c": "Scrivi una breve poesia su una strada sotto la pioggia con almeno quattro parole sonore."
+    },
+    "pt": {
+     "t": "A onomatopeia",
+     "g": "Usa palavras que soam como aquilo que significam: zumbido, chape, crec.",
+     "p": [
+      "A onomatopeia imita sons: bzz, chape, crec, chiar.",
+      "Cada língua tem as suas; o cão faz ão-ão em português e woof em inglês.",
+      "Põe o leitor dentro da cena, a começar pelos ouvidos."
+     ],
+     "q": "Como fazem os animais na tua língua, comparando com outras?",
+     "c": "Escreve um poema curto sobre uma rua à chuva com pelo menos quatro palavras sonoras."
+    },
+    "pt_BR": {
+     "t": "A onomatopeia",
+     "g": "Use palavras que soam como o que significam: zum, splash, crec.",
+     "p": [
+      "A onomatopeia imita sons: bzz, tchibum, crec, chiado.",
+      "Cada língua tem as suas; o cachorro faz au-au em português e woof em inglês.",
+      "Ela coloca o leitor dentro da cena, começando pelos ouvidos."
+     ],
+     "q": "Como os animais fazem na sua língua comparado com outras?",
+     "c": "Escreva um poema curto sobre uma rua na chuva com pelo menos quatro palavras sonoras."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Repetition",
+     "g": "Repeat words and lines to build rhythm, emphasis and feeling.",
+     "p": [
+      "Repeating a word or phrase creates a beat, like a drum in the poem.",
+      "Anaphora repeats the start of lines: I remember the..., I remember the...",
+      "Change one small thing in each repeat so the poem keeps moving."
+     ],
+     "q": "Is there a phrase you say so often it could start a poem?",
+     "c": "Write five lines that each begin with I remember and end with a concrete image."
+    },
+    "de": {
+     "t": "Wiederholung",
+     "g": "Wiederhole Wörter und Zeilen für Rhythmus, Betonung und Gefühl.",
+     "p": [
+      "Ein wiederholtes Wort oder eine Wendung schafft einen Takt, wie eine Trommel.",
+      "Die Anapher wiederholt Zeilenanfänge: Ich erinnere mich an..., ich erinnere mich an...",
+      "Ändere bei jeder Wiederholung eine Kleinigkeit, damit das Gedicht weitergeht."
+     ],
+     "q": "Gibt es eine Wendung, die du so oft sagst, dass sie ein Gedicht beginnen könnte?",
+     "c": "Schreibe fünf Zeilen, die mit Ich erinnere mich beginnen und mit einem konkreten Bild enden."
+    },
+    "es": {
+     "t": "La repetición",
+     "g": "Repite palabras y versos para crear ritmo, énfasis y emoción.",
+     "p": [
+      "Repetir una palabra o frase marca un pulso, como un tambor en el poema.",
+      "La anáfora repite el inicio de los versos: Recuerdo el..., recuerdo el...",
+      "Cambia algo pequeño en cada repetición para que el poema avance."
+     ],
+     "q": "¿Hay alguna frase que dices tanto que podría empezar un poema?",
+     "c": "Escribe cinco versos que empiecen con Recuerdo y terminen en una imagen concreta."
+    },
+    "fr": {
+     "t": "La répétition",
+     "g": "Répéter mots et vers pour créer rythme, insistance et émotion.",
+     "p": [
+      "Répéter un mot ou une phrase crée une pulsation, comme un tambour.",
+      "L'anaphore répète le début des vers : Je me souviens de..., je me souviens de...",
+      "Change un petit détail à chaque reprise pour que le poème avance."
+     ],
+     "q": "Y a-t-il une phrase que tu dis si souvent qu'elle pourrait ouvrir un poème ?",
+     "c": "Écris cinq vers qui commencent par Je me souviens et finissent sur une image concrète."
+    },
+    "it": {
+     "t": "La ripetizione",
+     "g": "Ripeti parole e versi per creare ritmo, enfasi ed emozione.",
+     "p": [
+      "Ripetere una parola o una frase crea un battito, come un tamburo.",
+      "L'anafora ripete l'inizio dei versi: Ricordo il..., ricordo il...",
+      "Cambia un piccolo dettaglio a ogni ripresa perché la poesia vada avanti."
+     ],
+     "q": "C'è una frase che dici così spesso da poter aprire una poesia?",
+     "c": "Scrivi cinque versi che inizino con Ricordo e finiscano con un'immagine concreta."
+    },
+    "pt": {
+     "t": "A repetição",
+     "g": "Repete palavras e versos para criar ritmo, ênfase e emoção.",
+     "p": [
+      "Repetir uma palavra ou frase cria um pulso, como um tambor no poema.",
+      "A anáfora repete o início dos versos: Lembro-me do..., lembro-me do...",
+      "Muda um pormenor em cada repetição para o poema avançar."
+     ],
+     "q": "Há alguma frase que dizes tanto que podia começar um poema?",
+     "c": "Escreve cinco versos que comecem com Lembro-me e acabem numa imagem concreta."
+    },
+    "pt_BR": {
+     "t": "A repetição",
+     "g": "Repita palavras e versos para criar ritmo, ênfase e emoção.",
+     "p": [
+      "Repetir uma palavra ou frase cria um pulso, como um tambor no poema.",
+      "A anáfora repete o início dos versos: Eu lembro do..., eu lembro do...",
+      "Mude um detalhe a cada repetição para o poema seguir em frente."
+     ],
+     "q": "Tem alguma frase que você fala tanto que poderia abrir um poema?",
+     "c": "Escreva cinco versos que comecem com Eu lembro e terminem numa imagem concreta."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm without rules",
+     "g": "Feel the beat of natural speech in your lines.",
+     "p": [
+      "Every sentence has a natural beat of stressed and unstressed syllables.",
+      "Clap or tap as you read a line aloud to hear where the weight falls.",
+      "Short words and pauses quicken a line; long words make it glide."
+     ],
+     "q": "Do you notice rhythm more in songs, speeches or everyday talk?",
+     "c": "Tap out the rhythm of your own name, then write a line about your day with a similar beat."
+    },
+    "de": {
+     "t": "Rhythmus ohne Regeln",
+     "g": "Spüre den Takt natürlicher Sprache in deinen Zeilen.",
+     "p": [
+      "Jeder Satz hat einen natürlichen Takt aus betonten und unbetonten Silben.",
+      "Klatsche oder tippe beim lauten Lesen, um zu hören, wo das Gewicht liegt.",
+      "Kurze Wörter und Pausen beschleunigen, lange Wörter lassen die Zeile gleiten."
+     ],
+     "q": "Bemerkst du Rhythmus eher in Liedern, Reden oder im Alltagsgespräch?",
+     "c": "Klopfe den Rhythmus deines Namens und schreibe eine Zeile über deinen Tag mit ähnlichem Takt."
+    },
+    "es": {
+     "t": "Ritmo sin reglas",
+     "g": "Siente el pulso del habla natural en tus versos.",
+     "p": [
+      "Toda frase tiene un pulso natural de sílabas tónicas y átonas.",
+      "Da palmadas mientras lees en voz alta para oír dónde cae el peso.",
+      "Palabras cortas y pausas aceleran el verso; las largas lo hacen deslizarse."
+     ],
+     "q": "¿Notas más el ritmo en canciones, discursos o conversaciones?",
+     "c": "Marca con palmadas el ritmo de tu nombre y escribe un verso sobre tu día con un pulso parecido."
+    },
+    "fr": {
+     "t": "Le rythme sans règles",
+     "g": "Sentir la pulsation de la parole naturelle dans tes vers.",
+     "p": [
+      "Chaque phrase a une pulsation naturelle, faite d'accents et de syllabes plus légères.",
+      "Tape dans tes mains en lisant à voix haute pour entendre où tombe le poids.",
+      "Mots courts et pauses accélèrent le vers ; les mots longs le font glisser."
+     ],
+     "q": "Remarques-tu plutôt le rythme dans les chansons, les discours ou la conversation ?",
+     "c": "Tape le rythme de ton prénom, puis écris un vers sur ta journée avec une pulsation proche."
+    },
+    "it": {
+     "t": "Ritmo senza regole",
+     "g": "Senti il battito del parlato naturale nei tuoi versi.",
+     "p": [
+      "Ogni frase ha un battito naturale di sillabe accentate e atone.",
+      "Batti le mani mentre leggi ad alta voce per sentire dove cade il peso.",
+      "Parole brevi e pause accelerano il verso; parole lunghe lo fanno scivolare."
+     ],
+     "q": "Noti il ritmo più nelle canzoni, nei discorsi o nelle chiacchiere?",
+     "c": "Batti il ritmo del tuo nome e scrivi un verso sulla tua giornata con un battito simile."
+    },
+    "pt": {
+     "t": "Ritmo sem regras",
+     "g": "Sente a batida da fala natural nos teus versos.",
+     "p": [
+      "Cada frase tem uma batida natural de sílabas tónicas e átonas.",
+      "Bate palmas ao ler em voz alta para ouvir onde cai o peso.",
+      "Palavras curtas e pausas aceleram o verso; palavras longas fazem-no deslizar."
+     ],
+     "q": "Notas mais o ritmo nas canções, nos discursos ou na conversa do dia a dia?",
+     "c": "Marca com palmas o ritmo do teu nome e escreve um verso sobre o teu dia com batida parecida."
+    },
+    "pt_BR": {
+     "t": "Ritmo sem regras",
+     "g": "Sinta a batida da fala natural nos seus versos.",
+     "p": [
+      "Toda frase tem uma batida natural de sílabas tônicas e átonas.",
+      "Bata palmas ao ler em voz alta para ouvir onde cai o peso.",
+      "Palavras curtas e pausas aceleram o verso; palavras longas fazem ele deslizar."
+     ],
+     "q": "Você nota mais o ritmo em músicas, discursos ou na conversa do dia a dia?",
+     "c": "Marque com palmas o ritmo do seu nome e escreva um verso sobre o seu dia com batida parecida."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting syllables",
+     "g": "Learn to count syllables, a skill for many poetic forms.",
+     "p": [
+      "A syllable is one beat of sound, usually built around a vowel: but-ter-fly has three.",
+      "Clap each beat or put a hand under your chin; it drops once per syllable.",
+      "Counting matters for haiku, cinquains, limericks and many traditional forms."
+     ],
+     "q": "How many syllables are in your full name?",
+     "c": "Count the syllables in five words around you, then write a 7-syllable line about tea or coffee."
+    },
+    "de": {
+     "t": "Silben zählen",
+     "g": "Lerne Silben zu zählen, eine Fähigkeit für viele Gedichtformen.",
+     "p": [
+      "Eine Silbe ist ein Klangschlag, meist um einen Vokal: Schmet-ter-ling hat drei.",
+      "Klatsche jeden Schlag oder leg die Hand unters Kinn; es sinkt einmal pro Silbe.",
+      "Zählen ist wichtig für Haiku, Cinquain, Limerick und viele klassische Formen."
+     ],
+     "q": "Wie viele Silben hat dein vollständiger Name?",
+     "c": "Zähle die Silben von fünf Wörtern um dich und schreibe eine Zeile mit 7 Silben über Tee oder Kaffee."
+    },
+    "es": {
+     "t": "Contar sílabas",
+     "g": "Aprende a contar sílabas, una habilidad para muchas formas poéticas.",
+     "p": [
+      "Una sílaba es un golpe de voz, casi siempre con una vocal: ma-ri-po-sa tiene cuatro.",
+      "Da una palmada por golpe o pon la mano bajo la barbilla; baja una vez por sílaba.",
+      "Contar importa para el haiku, el cinquain, el limerick y muchas formas clásicas."
+     ],
+     "q": "¿Cuántas sílabas tiene tu nombre completo?",
+     "c": "Cuenta las sílabas de cinco palabras cercanas y escribe un verso de 7 sílabas sobre el té o el café."
+    },
+    "fr": {
+     "t": "Compter les syllabes",
+     "g": "Apprendre à compter les syllabes, utile pour de nombreuses formes poétiques.",
+     "p": [
+      "Une syllabe est un battement de voix, autour d'une voyelle : pa-pil-lon en a trois.",
+      "Tape chaque battement ou pose la main sous le menton ; il descend à chaque syllabe.",
+      "Compter sert pour le haïku, le cinquain, le limerick et bien des formes classiques."
+     ],
+     "q": "Combien de syllabes compte ton nom complet ?",
+     "c": "Compte les syllabes de cinq mots autour de toi, puis écris un vers de 7 syllabes sur le thé ou le café."
+    },
+    "it": {
+     "t": "Contare le sillabe",
+     "g": "Impara a contare le sillabe, un'abilità utile per molte forme poetiche.",
+     "p": [
+      "Una sillaba è un battito di voce, di solito intorno a una vocale: far-fal-la ne ha tre.",
+      "Batti le mani a ogni battito o metti la mano sotto il mento: scende una volta per sillaba.",
+      "Contare serve per haiku, cinquain, limerick e molte forme classiche."
+     ],
+     "q": "Quante sillabe ha il tuo nome completo?",
+     "c": "Conta le sillabe di cinque parole intorno a te e scrivi un verso di 7 sillabe sul tè o sul caffè."
+    },
+    "pt": {
+     "t": "Contar sílabas",
+     "g": "Aprende a contar sílabas, uma competência para muitas formas poéticas.",
+     "p": [
+      "Uma sílaba é uma batida de voz, quase sempre com uma vogal: bor-bo-le-ta tem quatro.",
+      "Bate uma palma por batida ou põe a mão sob o queixo; desce uma vez por sílaba.",
+      "Contar é importante no haiku, no cinquain, no limerique e em muitas formas clássicas."
+     ],
+     "q": "Quantas sílabas tem o teu nome completo?",
+     "c": "Conta as sílabas de cinco palavras à tua volta e escreve um verso de 7 sílabas sobre chá ou café."
+    },
+    "pt_BR": {
+     "t": "Contar sílabas",
+     "g": "Aprenda a contar sílabas, uma habilidade para muitas formas poéticas.",
+     "p": [
+      "Uma sílaba é uma batida de voz, quase sempre com uma vogal: bor-bo-le-ta tem quatro.",
+      "Bata uma palma por batida ou ponha a mão sob o queixo; ele desce uma vez por sílaba.",
+      "Contar é importante no haicai, no cinquain, no limerique e em muitas formas clássicas."
+     ],
+     "q": "Quantas sílabas tem o seu nome completo?",
+     "c": "Conte as sílabas de cinco palavras ao seu redor e escreva um verso de 7 sílabas sobre chá ou café."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: sound and rhythm",
+     "g": "Lightly review rhyme, sound devices, repetition and rhythm.",
+     "p": [
+      "Full, slant and internal rhyme each create a different kind of music.",
+      "Alliteration, assonance, consonance and onomatopoeia shape how lines sound.",
+      "Repetition and natural rhythm give a poem its heartbeat."
+     ],
+     "q": "Which sound device surprised you the most these past days?",
+     "c": "Write a four-line poem about music using at least two sound devices, then read it aloud."
+    },
+    "de": {
+     "t": "Rückblick: Klang und Rhythmus",
+     "g": "Wiederhole locker Reim, Klangmittel, Wiederholung und Rhythmus.",
+     "p": [
+      "Reiner, unreiner und Binnenreim erzeugen jeweils eine andere Musik.",
+      "Alliteration, Assonanz, Konsonanz und Lautmalerei prägen den Klang der Zeilen.",
+      "Wiederholung und natürlicher Rhythmus geben dem Gedicht seinen Herzschlag."
+     ],
+     "q": "Welches Klangmittel hat dich in den letzten Tagen am meisten überrascht?",
+     "c": "Schreibe einen Vierzeiler über Musik mit mindestens zwei Klangmitteln und lies ihn laut."
+    },
+    "es": {
+     "t": "Repaso: sonido y ritmo",
+     "g": "Repasa sin prisa la rima, los recursos sonoros, la repetición y el ritmo.",
+     "p": [
+      "Las rimas consonante, asonante e interna crean músicas distintas.",
+      "Aliteración, asonancia, consonancia y onomatopeya moldean el sonido del verso.",
+      "La repetición y el ritmo natural son el latido del poema."
+     ],
+     "q": "¿Qué recurso sonoro te sorprendió más en estos días?",
+     "c": "Escribe un poema de cuatro versos sobre la música con al menos dos recursos sonoros y léelo en voz alta."
+    },
+    "fr": {
+     "t": "Révision : son et rythme",
+     "g": "Réviser en douceur la rime, les effets sonores, la répétition et le rythme.",
+     "p": [
+      "Rime parfaite, approximative ou intérieure créent chacune une musique différente.",
+      "Allitération, assonance, consonance et onomatopée façonnent le son des vers.",
+      "Répétition et rythme naturel donnent au poème son battement de cœur."
+     ],
+     "q": "Quel effet sonore t'a le plus surpris ces derniers jours ?",
+     "c": "Écris un quatrain sur la musique avec au moins deux effets sonores, puis lis-le à voix haute."
+    },
+    "it": {
+     "t": "Ripasso: suono e ritmo",
+     "g": "Ripassa con calma rima, figure di suono, ripetizione e ritmo.",
+     "p": [
+      "Rima perfetta, imperfetta e interna creano musiche diverse.",
+      "Allitterazione, assonanza, consonanza e onomatopea modellano il suono del verso.",
+      "Ripetizione e ritmo naturale sono il battito del cuore della poesia."
+     ],
+     "q": "Quale figura di suono ti ha sorpreso di più in questi giorni?",
+     "c": "Scrivi una quartina sulla musica con almeno due figure di suono e leggila ad alta voce."
+    },
+    "pt": {
+     "t": "Revisão: som e ritmo",
+     "g": "Revê com calma a rima, os recursos sonoros, a repetição e o ritmo.",
+     "p": [
+      "Rima perfeita, toante e interna criam músicas diferentes.",
+      "Aliteração, assonância, consonância e onomatopeia moldam o som do verso.",
+      "A repetição e o ritmo natural são o batimento do poema."
+     ],
+     "q": "Que recurso sonoro te surpreendeu mais nestes dias?",
+     "c": "Escreve uma quadra sobre música com pelo menos dois recursos sonoros e lê-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Revisão: som e ritmo",
+     "g": "Revise com calma a rima, os recursos sonoros, a repetição e o ritmo.",
+     "p": [
+      "Rima perfeita, toante e interna criam músicas diferentes.",
+      "Aliteração, assonância, consonância e onomatopeia moldam o som do verso.",
+      "A repetição e o ritmo natural são o coração batendo no poema."
+     ],
+     "q": "Que recurso sonoro mais surpreendeu você nestes dias?",
+     "c": "Escreva uma quadra sobre música com pelo menos dois recursos sonoros e leia em voz alta."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Haiku: the basics",
+     "g": "Meet the Japanese three-line form, its 5-7-5 pattern and its focus on one moment.",
+     "p": [
+      "A traditional haiku has three lines of 5, 7 and 5 sound units.",
+      "Japanese counts sound units called on; in other languages many poets simply keep it short.",
+      "A haiku captures one clear moment in the present, with images, not explanations."
+     ],
+     "q": "What small moment from today could fit into three short lines?",
+     "c": "Write one haiku about something you saw this morning, counting 5-7-5."
+    },
+    "de": {
+     "t": "Haiku: die Grundlagen",
+     "g": "Lerne die japanische Dreizeilenform kennen, ihr 5-7-5-Muster und ihren Blick auf einen Moment.",
+     "p": [
+      "Ein traditionelles Haiku hat drei Zeilen mit 5, 7 und 5 Lauteinheiten.",
+      "Im Japanischen zählt man Moren, sogenannte On; in anderen Sprachen bleibt es oft einfach kurz.",
+      "Ein Haiku fängt einen klaren Moment in der Gegenwart ein, mit Bildern statt Erklärungen."
+     ],
+     "q": "Welcher kleine Moment von heute würde in drei kurze Zeilen passen?",
+     "c": "Schreibe ein Haiku über etwas, das du heute Morgen gesehen hast, mit 5-7-5 Silben."
+    },
+    "es": {
+     "t": "Haiku: lo básico",
+     "g": "Conoce la forma japonesa de tres versos, su patrón 5-7-5 y su atención a un instante.",
+     "p": [
+      "Un haiku tradicional tiene tres versos de 5, 7 y 5 unidades sonoras.",
+      "En japonés se cuentan unidades llamadas on; en otras lenguas muchos poetas solo lo mantienen breve.",
+      "Un haiku atrapa un instante claro en presente, con imágenes y sin explicaciones."
+     ],
+     "q": "¿Qué pequeño momento de hoy cabría en tres versos cortos?",
+     "c": "Escribe un haiku sobre algo que viste esta mañana, contando 5-7-5 sílabas."
+    },
+    "fr": {
+     "t": "Le haïku : les bases",
+     "g": "Découvrir la forme japonaise en trois vers, son schéma 5-7-5 et son attention à un instant.",
+     "p": [
+      "Un haïku traditionnel compte trois vers de 5, 7 et 5 unités sonores.",
+      "Le japonais compte des unités appelées on ; ailleurs, beaucoup de poètes restent simplement brefs.",
+      "Le haïku saisit un instant net au présent, par des images et non des explications."
+     ],
+     "q": "Quel petit instant d'aujourd'hui tiendrait en trois vers courts ?",
+     "c": "Écris un haïku sur une chose vue ce matin, en comptant 5-7-5 syllabes."
+    },
+    "it": {
+     "t": "Haiku: le basi",
+     "g": "Scopri la forma giapponese in tre versi, lo schema 5-7-5 e l'attenzione a un istante.",
+     "p": [
+      "Un haiku tradizionale ha tre versi di 5, 7 e 5 unità sonore.",
+      "Il giapponese conta unità dette on; in altre lingue molti poeti lo tengono semplicemente breve.",
+      "Un haiku coglie un istante chiaro al presente, con immagini e non spiegazioni."
+     ],
+     "q": "Quale piccolo momento di oggi starebbe in tre versi brevi?",
+     "c": "Scrivi un haiku su qualcosa che hai visto stamattina, contando 5-7-5 sillabe."
+    },
+    "pt": {
+     "t": "Haiku: o essencial",
+     "g": "Conhece a forma japonesa de três versos, o padrão 5-7-5 e a atenção a um instante.",
+     "p": [
+      "Um haiku tradicional tem três versos de 5, 7 e 5 unidades sonoras.",
+      "Em japonês contam-se unidades chamadas on; noutras línguas muitos poetas mantêm-no apenas breve.",
+      "Um haiku capta um instante nítido no presente, com imagens e sem explicações."
+     ],
+     "q": "Que pequeno momento de hoje caberia em três versos curtos?",
+     "c": "Escreve um haiku sobre algo que viste esta manhã, contando 5-7-5 sílabas."
+    },
+    "pt_BR": {
+     "t": "Haicai: o essencial",
+     "g": "Conheça a forma japonesa de três versos, o padrão 5-7-5 e a atenção a um instante.",
+     "p": [
+      "Um haicai tradicional tem três versos de 5, 7 e 5 unidades sonoras.",
+      "Em japonês se contam unidades chamadas on; em outras línguas muitos poetas só mantêm ele breve.",
+      "Um haicai capta um instante nítido no presente, com imagens e sem explicações."
+     ],
+     "q": "Que pequeno momento de hoje caberia em três versos curtos?",
+     "c": "Escreva um haicai sobre algo que você viu hoje de manhã, contando 5-7-5 sílabas."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Haiku and the seasons",
+     "g": "Learn the season word, or kigo, and how it anchors a haiku in time.",
+     "p": [
+      "A kigo is a word that signals a season: cherry blossoms for spring, falling leaves for autumn.",
+      "It gives a tiny poem a whole background of weather, light and mood.",
+      "Use season words from your own region; snow and mangoes both work."
+     ],
+     "q": "What image tells you most clearly that a season is changing where you live?",
+     "c": "Write one haiku for the current season with a clear season word."
+    },
+    "de": {
+     "t": "Haiku und die Jahreszeiten",
+     "g": "Lerne das Jahreszeitenwort, das Kigo, kennen und wie es ein Haiku in der Zeit verankert.",
+     "p": [
+      "Ein Kigo zeigt eine Jahreszeit an: Kirschblüten für Frühling, fallende Blätter für Herbst.",
+      "Es gibt dem kleinen Gedicht einen ganzen Hintergrund aus Wetter, Licht und Stimmung.",
+      "Nutze Jahreszeitenwörter aus deiner Region; Schnee und Mangos passen beide."
+     ],
+     "q": "Welches Bild zeigt dir am klarsten, dass sich bei dir die Jahreszeit ändert?",
+     "c": "Schreibe ein Haiku über die aktuelle Jahreszeit mit einem klaren Jahreszeitenwort."
+    },
+    "es": {
+     "t": "El haiku y las estaciones",
+     "g": "Aprende la palabra de estación, o kigo, y cómo sitúa el haiku en el tiempo.",
+     "p": [
+      "El kigo señala una estación: cerezos en flor para la primavera, hojas que caen para el otoño.",
+      "Da al poema diminuto todo un fondo de clima, luz y ánimo.",
+      "Usa palabras de estación de tu región; la nieve y los mangos sirven igual."
+     ],
+     "q": "¿Qué imagen te dice con más claridad que cambia la estación donde vives?",
+     "c": "Escribe un haiku sobre la estación actual con una palabra de estación clara."
+    },
+    "fr": {
+     "t": "Le haïku et les saisons",
+     "g": "Découvrir le mot de saison, ou kigo, et comment il ancre le haïku dans le temps.",
+     "p": [
+      "Le kigo signale une saison : cerisiers en fleurs pour le printemps, feuilles mortes pour l'automne.",
+      "Il offre au petit poème tout un décor de météo, de lumière et d'humeur.",
+      "Utilise des mots de saison de ta région ; la neige comme les mangues conviennent."
+     ],
+     "q": "Quelle image te montre le plus clairement que la saison change chez toi ?",
+     "c": "Écris un haïku sur la saison actuelle avec un mot de saison bien clair."
+    },
+    "it": {
+     "t": "L'haiku e le stagioni",
+     "g": "Scopri la parola stagionale, o kigo, e come ancora l'haiku nel tempo.",
+     "p": [
+      "Il kigo indica una stagione: ciliegi in fiore per la primavera, foglie che cadono per l'autunno.",
+      "Dà alla piccola poesia un intero sfondo di clima, luce e atmosfera.",
+      "Usa parole stagionali della tua regione: neve e manghi vanno bene allo stesso modo."
+     ],
+     "q": "Quale immagine ti dice più chiaramente che la stagione sta cambiando dove vivi?",
+     "c": "Scrivi un haiku sulla stagione attuale con una parola stagionale chiara."
+    },
+    "pt": {
+     "t": "O haiku e as estações",
+     "g": "Aprende a palavra de estação, ou kigo, e como situa o haiku no tempo.",
+     "p": [
+      "O kigo assinala uma estação: cerejeiras em flor para a primavera, folhas a cair para o outono.",
+      "Dá ao pequeno poema todo um fundo de tempo, luz e ambiente.",
+      "Usa palavras de estação da tua região; a neve e as mangas servem igualmente."
+     ],
+     "q": "Que imagem te diz com mais clareza que a estação está a mudar onde vives?",
+     "c": "Escreve um haiku sobre a estação atual com uma palavra de estação clara."
+    },
+    "pt_BR": {
+     "t": "O haicai e as estações",
+     "g": "Aprenda a palavra de estação, ou kigo, e como ela situa o haicai no tempo.",
+     "p": [
+      "O kigo indica uma estação: cerejeiras em flor para a primavera, folhas caindo para o outono.",
+      "Ele dá ao pequeno poema todo um fundo de clima, luz e atmosfera.",
+      "Use palavras de estação da sua região; neve e manga funcionam igualmente."
+     ],
+     "q": "Que imagem mostra para você com mais clareza que a estação está mudando onde você mora?",
+     "c": "Escreva um haicai sobre a estação atual com uma palavra de estação clara."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Matsuo Bashō",
+     "g": "Meet the celebrated haiku master and his famous poem about the old pond.",
+     "p": [
+      "Matsuo Bashō lived in 17th-century Japan and travelled widely, writing as he walked.",
+      "His most famous haiku: an old pond, a frog jumps in, the sound of water.",
+      "Notice how stillness, one quick action and a sound make a whole world."
+     ],
+     "q": "Why do you think such a simple poem has been loved for centuries?",
+     "c": "Write your own haiku in Bashō's pattern: a still scene, a small action, a sound."
+    },
+    "de": {
+     "t": "Matsuo Bashō",
+     "g": "Lerne den berühmten Haiku-Meister und sein Gedicht über den alten Teich kennen.",
+     "p": [
+      "Matsuo Bashō lebte im Japan des 17. Jahrhunderts, reiste viel und schrieb unterwegs.",
+      "Sein berühmtestes Haiku: der alte Teich, ein Frosch springt hinein, das Geräusch des Wassers.",
+      "Sieh, wie Stille, eine schnelle Bewegung und ein Klang eine ganze Welt erschaffen."
+     ],
+     "q": "Warum wird so ein einfaches Gedicht wohl seit Jahrhunderten geliebt?",
+     "c": "Schreibe ein Haiku nach Bashōs Muster: stille Szene, kleine Bewegung, ein Klang."
+    },
+    "es": {
+     "t": "Matsuo Bashō",
+     "g": "Conoce al célebre maestro del haiku y su famoso poema del viejo estanque.",
+     "p": [
+      "Matsuo Bashō vivió en el Japón del siglo XVII y viajó mucho, escribiendo por el camino.",
+      "Su haiku más famoso: un viejo estanque, se zambulle una rana, el sonido del agua.",
+      "Fíjate en cómo la quietud, una acción rápida y un sonido crean un mundo entero."
+     ],
+     "q": "¿Por qué crees que un poema tan sencillo se ha amado durante siglos?",
+     "c": "Escribe tu propio haiku al estilo de Bashō: escena quieta, pequeña acción, un sonido."
+    },
+    "fr": {
+     "t": "Matsuo Bashō",
+     "g": "Découvrir le célèbre maître du haïku et son poème de la vieille mare.",
+     "p": [
+      "Matsuo Bashō a vécu au Japon au XVIIe siècle et a beaucoup voyagé, écrivant en chemin.",
+      "Son haïku le plus célèbre : une vieille mare, une grenouille plonge, le bruit de l'eau.",
+      "Vois comment le calme, une action rapide et un son créent tout un monde."
+     ],
+     "q": "Pourquoi un poème si simple est-il aimé depuis des siècles, selon toi ?",
+     "c": "Écris ton haïku sur le modèle de Bashō : une scène calme, une petite action, un son."
+    },
+    "it": {
+     "t": "Matsuo Bashō",
+     "g": "Scopri il celebre maestro dell'haiku e la sua famosa poesia del vecchio stagno.",
+     "p": [
+      "Matsuo Bashō visse nel Giappone del XVII secolo e viaggiò molto, scrivendo lungo la strada.",
+      "Il suo haiku più famoso: un vecchio stagno, una rana si tuffa, il suono dell'acqua.",
+      "Nota come quiete, un'azione rapida e un suono creino un mondo intero."
+     ],
+     "q": "Perché pensi che una poesia così semplice sia amata da secoli?",
+     "c": "Scrivi un haiku sul modello di Bashō: una scena immobile, una piccola azione, un suono."
+    },
+    "pt": {
+     "t": "Matsuo Bashō",
+     "g": "Conhece o célebre mestre do haiku e o seu famoso poema do velho tanque.",
+     "p": [
+      "Matsuo Bashō viveu no Japão do século XVII e viajou muito, escrevendo pelo caminho.",
+      "O seu haiku mais famoso: um velho tanque, uma rã salta, o som da água.",
+      "Repara como a quietude, uma ação rápida e um som criam um mundo inteiro."
+     ],
+     "q": "Porque achas que um poema tão simples é amado há séculos?",
+     "c": "Escreve o teu haiku ao estilo de Bashō: cena parada, pequena ação, um som."
+    },
+    "pt_BR": {
+     "t": "Matsuo Bashō",
+     "g": "Conheça o célebre mestre do haicai e seu famoso poema do velho tanque.",
+     "p": [
+      "Matsuo Bashō viveu no Japão do século XVII e viajou muito, escrevendo pelo caminho.",
+      "Seu haicai mais famoso: um velho tanque, uma rã pula, o som da água.",
+      "Perceba como a quietude, uma ação rápida e um som criam um mundo inteiro."
+     ],
+     "q": "Por que você acha que um poema tão simples é amado há séculos?",
+     "c": "Escreva seu próprio haicai ao estilo de Bashō: cena parada, pequena ação, um som."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a haiku walk",
+     "g": "Take a short walk and write three haiku about what you notice.",
+     "p": [
+      "Walk slowly for ten minutes with no goal except noticing.",
+      "Stop when something catches your eye or ear and note it in a few words.",
+      "Back home, shape your three best notes into haiku."
+     ],
+     "q": "Where would you go for a haiku walk if you could choose anywhere?",
+     "c": "Take a short walk today and come back with three haiku about what you noticed."
+    },
+    "de": {
+     "t": "Ein Haiku-Spaziergang",
+     "g": "Mach einen kurzen Spaziergang und schreibe drei Haiku über das, was du bemerkst.",
+     "p": [
+      "Geh zehn Minuten langsam, ohne Ziel außer dem Wahrnehmen.",
+      "Bleib stehen, wenn dir etwas auffällt, und notiere es in wenigen Worten.",
+      "Forme zu Hause deine drei besten Notizen zu Haiku."
+     ],
+     "q": "Wohin würdest du für einen Haiku-Spaziergang gehen, wenn du frei wählen könntest?",
+     "c": "Mach heute einen kurzen Spaziergang und bring drei Haiku über deine Beobachtungen mit."
+    },
+    "es": {
+     "t": "Un paseo de haikus",
+     "g": "Da un paseo corto y escribe tres haikus sobre lo que observes.",
+     "p": [
+      "Camina despacio diez minutos sin más meta que observar.",
+      "Detente cuando algo atraiga tu vista u oído y anótalo en pocas palabras.",
+      "En casa, da forma de haiku a tus tres mejores notas."
+     ],
+     "q": "¿Adónde irías a dar un paseo de haikus si pudieras elegir cualquier lugar?",
+     "c": "Da hoy un paseo corto y vuelve con tres haikus sobre lo que observaste."
+    },
+    "fr": {
+     "t": "Une promenade haïku",
+     "g": "Faire une courte promenade et écrire trois haïkus sur ce que tu remarques.",
+     "p": [
+      "Marche lentement dix minutes, sans autre but que remarquer.",
+      "Arrête-toi quand quelque chose attire ton œil ou ton oreille et note-le en quelques mots.",
+      "À la maison, transforme tes trois meilleures notes en haïkus."
+     ],
+     "q": "Où irais-tu faire une promenade haïku si tu pouvais choisir n'importe quel lieu ?",
+     "c": "Fais une courte promenade aujourd'hui et reviens avec trois haïkus sur ce que tu as vu."
+    },
+    "it": {
+     "t": "Una passeggiata haiku",
+     "g": "Fai una breve passeggiata e scrivi tre haiku su ciò che noti.",
+     "p": [
+      "Cammina piano per dieci minuti senza altro scopo che osservare.",
+      "Fermati quando qualcosa colpisce occhi o orecchie e annotalo in poche parole.",
+      "A casa, trasforma i tuoi tre appunti migliori in haiku."
+     ],
+     "q": "Dove andresti per una passeggiata haiku, potendo scegliere qualsiasi luogo?",
+     "c": "Fai oggi una breve passeggiata e torna con tre haiku su ciò che hai notato."
+    },
+    "pt": {
+     "t": "Um passeio de haikus",
+     "g": "Dá um passeio curto e escreve três haikus sobre o que notares.",
+     "p": [
+      "Caminha devagar dez minutos sem outro objetivo além de reparar.",
+      "Para quando algo te chamar a atenção e anota-o em poucas palavras.",
+      "Em casa, transforma as tuas três melhores notas em haikus."
+     ],
+     "q": "Onde irias dar um passeio de haikus se pudesses escolher qualquer lugar?",
+     "c": "Dá hoje um passeio curto e volta com três haikus sobre o que notaste."
+    },
+    "pt_BR": {
+     "t": "Um passeio de haicais",
+     "g": "Faça uma caminhada curta e escreva três haicais sobre o que você notar.",
+     "p": [
+      "Caminhe devagar por dez minutos sem outro objetivo além de observar.",
+      "Pare quando algo chamar sua atenção e anote em poucas palavras.",
+      "Em casa, transforme suas três melhores anotações em haicais."
+     ],
+     "q": "Onde você faria um passeio de haicais se pudesse escolher qualquer lugar?",
+     "c": "Faça hoje uma caminhada curta e volte com três haicais sobre o que você notou."
+    }
+   }
+  }
+ ]
+}

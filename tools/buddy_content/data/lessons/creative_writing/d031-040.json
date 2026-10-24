@@ -1,0 +1,835 @@
+{
+ "topic": "creative_writing",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a character",
+     "g": "Discover how wants, habits, quirks and contradictions make a character feel real.",
+     "p": [
+      "Real characters want something, even something small like a quiet cup of tea.",
+      "Habits and quirks, like always humming the same song, make them memorable.",
+      "A contradiction adds depth: a shy person who sings loudly in the car."
+     ],
+     "q": "Which fictional character feels so real to you that you could imagine meeting them?",
+     "c": "Invent a character and write one want, two habits, one quirk and one contradiction."
+    },
+    "de": {
+     "t": "Was eine Figur ausmacht",
+     "g": "Entdecke, wie Wünsche, Gewohnheiten, Eigenheiten und Widersprüche eine Figur echt wirken lassen.",
+     "p": [
+      "Echte Figuren wollen etwas, sei es nur eine ruhige Tasse Tee.",
+      "Gewohnheiten und Eigenheiten, etwa immer dasselbe Lied summen, machen sie unvergesslich.",
+      "Ein Widerspruch schafft Tiefe: ein schüchterner Mensch, der im Auto laut singt."
+     ],
+     "q": "Welche erfundene Figur wirkt auf dich so echt, dass du dir vorstellen kannst, sie zu treffen?",
+     "c": "Erfinde eine Figur und notiere einen Wunsch, zwei Gewohnheiten, eine Eigenheit und einen Widerspruch."
+    },
+    "es": {
+     "t": "Qué hace a un personaje",
+     "g": "Descubre cómo deseos, hábitos, manías y contradicciones hacen que un personaje parezca real.",
+     "p": [
+      "Los personajes reales quieren algo, aunque sea pequeño, como un té tranquilo.",
+      "Hábitos y manías, como tararear siempre la misma canción, los hacen memorables.",
+      "Una contradicción da profundidad: alguien tímido que canta a gritos en el coche."
+     ],
+     "q": "¿Qué personaje de ficción te parece tan real que podrías imaginar conocerlo?",
+     "c": "Inventa un personaje y escribe un deseo, dos hábitos, una manía y una contradicción."
+    },
+    "fr": {
+     "t": "Ce qui fait un personnage",
+     "g": "Découvre comment désirs, habitudes, manies et contradictions rendent un personnage réel.",
+     "p": [
+      "Les personnages réels veulent quelque chose, même petit, comme un thé au calme.",
+      "Habitudes et manies, comme fredonner toujours la même chanson, les rendent mémorables.",
+      "Une contradiction donne de la profondeur : un timide qui chante à tue-tête en voiture."
+     ],
+     "q": "Quel personnage de fiction te semble si réel que tu pourrais imaginer le rencontrer ?",
+     "c": "Invente un personnage et note un désir, deux habitudes, une manie et une contradiction."
+    },
+    "it": {
+     "t": "Cosa rende un personaggio",
+     "g": "Scopri come desideri, abitudini, manie e contraddizioni rendono vero un personaggio.",
+     "p": [
+      "I personaggi veri vogliono qualcosa, anche di piccolo, come un tè in pace.",
+      "Abitudini e manie, come canticchiare sempre la stessa canzone, li rendono memorabili.",
+      "Una contraddizione dà profondità: una persona timida che canta a squarciagola in auto."
+     ],
+     "q": "Quale personaggio di finzione ti sembra così vero da poterlo immaginare dal vivo?",
+     "c": "Inventa un personaggio e scrivi un desiderio, due abitudini, una mania e una contraddizione."
+    },
+    "pt": {
+     "t": "O que faz uma personagem",
+     "g": "Descobre como desejos, hábitos, manias e contradições tornam uma personagem real.",
+     "p": [
+      "As personagens reais querem algo, nem que seja pequeno, como um chá em sossego.",
+      "Hábitos e manias, como trautear sempre a mesma canção, tornam-nas memoráveis.",
+      "Uma contradição dá profundidade: alguém tímido que canta alto no carro."
+     ],
+     "q": "Que personagem de ficção te parece tão real que conseguias imaginar conhecê-la?",
+     "c": "Inventa uma personagem e escreve um desejo, dois hábitos, uma mania e uma contradição."
+    },
+    "pt_BR": {
+     "t": "O que faz um personagem",
+     "g": "Descubra como desejos, hábitos, manias e contradições deixam um personagem real.",
+     "p": [
+      "Personagens reais querem algo, mesmo pequeno, como um chá em paz.",
+      "Hábitos e manias, como cantarolar sempre a mesma música, tornam o personagem marcante.",
+      "Uma contradição dá profundidade: alguém tímido que canta alto no carro."
+     ],
+     "q": "Que personagem de ficção parece tão real que você conseguiria imaginar conhecer?",
+     "c": "Invente um personagem e escreva um desejo, dois hábitos, uma mania e uma contradição."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Character wants",
+     "g": "Give every character a clear desire that pushes the story forward.",
+     "p": [
+      "A want is the engine of a story: no desire, no movement.",
+      "Make the want concrete: not 'happiness' but 'to win the village baking contest'.",
+      "Readers follow characters who want something, even if they disagree with them."
+     ],
+     "q": "What is one thing you really wanted as a child, and did you get it?",
+     "c": "Write a short paragraph where a character's want becomes clear within the first two sentences."
+    },
+    "de": {
+     "t": "Was Figuren wollen",
+     "g": "Gib jeder Figur einen klaren Wunsch, der die Geschichte vorantreibt.",
+     "p": [
+      "Ein Wunsch ist der Motor einer Geschichte: Ohne Verlangen keine Bewegung.",
+      "Mach den Wunsch konkret: nicht ‚Glück‘, sondern ‚den Backwettbewerb im Dorf gewinnen‘.",
+      "Lesende folgen Figuren, die etwas wollen, auch wenn sie nicht ihrer Meinung sind."
+     ],
+     "q": "Was hast du dir als Kind sehr gewünscht, und hast du es bekommen?",
+     "c": "Schreib einen kurzen Absatz, in dem der Wunsch einer Figur in den ersten zwei Sätzen klar wird."
+    },
+    "es": {
+     "t": "Lo que quiere el personaje",
+     "g": "Dale a cada personaje un deseo claro que empuje la historia hacia delante.",
+     "p": [
+      "El deseo es el motor de la historia: sin deseo no hay movimiento.",
+      "Hazlo concreto: no «ser feliz», sino «ganar el concurso de repostería del pueblo».",
+      "El lector sigue a quien quiere algo, aunque no esté de acuerdo con él."
+     ],
+     "q": "¿Qué deseabas mucho de niño, y lo conseguiste?",
+     "c": "Escribe un párrafo corto donde el deseo de un personaje quede claro en las dos primeras frases."
+    },
+    "fr": {
+     "t": "Ce que veut le personnage",
+     "g": "Donne à chaque personnage un désir clair qui fait avancer l'histoire.",
+     "p": [
+      "Le désir est le moteur de l'histoire : sans envie, pas de mouvement.",
+      "Rends-le concret : pas « être heureux », mais « gagner le concours de pâtisserie du village ».",
+      "Le lecteur suit ceux qui veulent quelque chose, même s'il n'est pas d'accord avec eux."
+     ],
+     "q": "Qu'as-tu vraiment désiré enfant, et l'as-tu obtenu ?",
+     "c": "Écris un court paragraphe où le désir d'un personnage devient clair dès les deux premières phrases."
+    },
+    "it": {
+     "t": "Cosa vuole il personaggio",
+     "g": "Dai a ogni personaggio un desiderio chiaro che spinga avanti la storia.",
+     "p": [
+      "Il desiderio è il motore della storia: senza desiderio non c'è movimento.",
+      "Rendilo concreto: non «essere felice», ma «vincere la gara di dolci del paese».",
+      "Il lettore segue chi vuole qualcosa, anche se non è d'accordo con lui."
+     ],
+     "q": "Cosa desideravi tanto da bambino, e l'hai ottenuto?",
+     "c": "Scrivi un breve paragrafo in cui il desiderio di un personaggio è chiaro entro le prime due frasi."
+    },
+    "pt": {
+     "t": "O que a personagem quer",
+     "g": "Dá a cada personagem um desejo claro que empurre a história para a frente.",
+     "p": [
+      "O desejo é o motor da história: sem desejo, não há movimento.",
+      "Torna-o concreto: não «ser feliz», mas «ganhar o concurso de doces da aldeia».",
+      "O leitor segue quem quer alguma coisa, mesmo que não concorde com essa pessoa."
+     ],
+     "q": "O que querias muito em criança, e conseguiste?",
+     "c": "Escreve um parágrafo curto em que o desejo de uma personagem fique claro nas duas primeiras frases."
+    },
+    "pt_BR": {
+     "t": "O que o personagem quer",
+     "g": "Dê a cada personagem um desejo claro que empurre a história para a frente.",
+     "p": [
+      "O desejo é o motor da história: sem desejo, não há movimento.",
+      "Deixe concreto: não «ser feliz», mas «ganhar o concurso de bolos da cidadezinha».",
+      "O leitor acompanha quem quer alguma coisa, mesmo que não concorde com ele."
+     ],
+     "q": "O que você queria muito quando era criança, e conseguiu?",
+     "c": "Escreva um parágrafo curto em que o desejo de um personagem fique claro nas duas primeiras frases."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Character obstacles",
+     "g": "Find what stands in the way of a character's goal and why that creates interest.",
+     "p": [
+      "Without an obstacle, a want is just a wish; the struggle makes the story.",
+      "Obstacles can be outside, like a storm, or inside, like shyness or doubt.",
+      "Make the obstacle a little bigger than the character seems ready for."
+     ],
+     "q": "What obstacle have you overcome that you are proud of?",
+     "c": "Take yesterday's character and write three obstacles: one person, one place and one inner fear."
+    },
+    "de": {
+     "t": "Hindernisse für Figuren",
+     "g": "Finde heraus, was dem Ziel einer Figur im Weg steht und warum das Spannung erzeugt.",
+     "p": [
+      "Ohne Hindernis bleibt ein Wunsch nur ein Traum, erst das Ringen macht die Geschichte.",
+      "Hindernisse können äußerlich sein, wie ein Sturm, oder innerlich, wie Schüchternheit oder Zweifel.",
+      "Mach das Hindernis etwas größer, als die Figur sich zutraut."
+     ],
+     "q": "Welches Hindernis hast du überwunden, auf das du stolz bist?",
+     "c": "Nimm die Figur von gestern und schreib drei Hindernisse auf: eine Person, einen Ort und eine innere Angst."
+    },
+    "es": {
+     "t": "Los obstáculos del personaje",
+     "g": "Descubre qué se interpone en el objetivo de un personaje y por qué eso genera interés.",
+     "p": [
+      "Sin obstáculo, un deseo es solo un sueño; la lucha hace la historia.",
+      "Los obstáculos pueden ser externos, como una tormenta, o internos, como la timidez o la duda.",
+      "Haz el obstáculo un poco más grande de lo que el personaje parece capaz de afrontar."
+     ],
+     "q": "¿Qué obstáculo has superado del que te sientas orgulloso?",
+     "c": "Toma el personaje de ayer y escribe tres obstáculos: una persona, un lugar y un miedo interior."
+    },
+    "fr": {
+     "t": "Les obstacles du personnage",
+     "g": "Trouve ce qui barre la route du personnage et pourquoi cela crée de l'intérêt.",
+     "p": [
+      "Sans obstacle, un désir n'est qu'un souhait ; c'est la lutte qui fait l'histoire.",
+      "Les obstacles peuvent être extérieurs, comme une tempête, ou intérieurs, comme la timidité ou le doute.",
+      "Rends l'obstacle un peu plus grand que ce que le personnage semble prêt à affronter."
+     ],
+     "q": "Quel obstacle as-tu surmonté dont tu es fier ?",
+     "c": "Reprends le personnage d'hier et écris trois obstacles : une personne, un lieu et une peur intérieure."
+    },
+    "it": {
+     "t": "Gli ostacoli del personaggio",
+     "g": "Scopri cosa ostacola l'obiettivo di un personaggio e perché questo crea interesse.",
+     "p": [
+      "Senza ostacolo, un desiderio è solo un sogno: è la lotta a fare la storia.",
+      "Gli ostacoli possono essere esterni, come una tempesta, o interni, come timidezza o dubbio.",
+      "Rendi l'ostacolo un po' più grande di quanto il personaggio sembri pronto ad affrontare."
+     ],
+     "q": "Quale ostacolo hai superato di cui sei orgoglioso?",
+     "c": "Riprendi il personaggio di ieri e scrivi tre ostacoli: una persona, un luogo e una paura interiore."
+    },
+    "pt": {
+     "t": "Os obstáculos da personagem",
+     "g": "Descobre o que se põe no caminho do objetivo de uma personagem e porque isso cria interesse.",
+     "p": [
+      "Sem obstáculo, um desejo é só um sonho; é a luta que faz a história.",
+      "Os obstáculos podem ser externos, como uma tempestade, ou internos, como timidez ou dúvida.",
+      "Faz o obstáculo um pouco maior do que a personagem parece preparada para enfrentar."
+     ],
+     "q": "Que obstáculo já superaste de que te orgulhas?",
+     "c": "Pega na personagem de ontem e escreve três obstáculos: uma pessoa, um lugar e um medo interior."
+    },
+    "pt_BR": {
+     "t": "Os obstáculos do personagem",
+     "g": "Descubra o que fica no caminho do objetivo de um personagem e por que isso gera interesse.",
+     "p": [
+      "Sem obstáculo, um desejo é só um sonho; é a luta que faz a história.",
+      "Obstáculos podem ser externos, como uma tempestade, ou internos, como timidez ou dúvida.",
+      "Faça o obstáculo um pouco maior do que o personagem parece pronto para encarar."
+     ],
+     "q": "Que obstáculo você já superou e do qual se orgulha?",
+     "c": "Pegue o personagem de ontem e escreva três obstáculos: uma pessoa, um lugar e um medo interior."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a character profile",
+     "g": "Create a short profile with name, age, history, goals, fears and favourite things.",
+     "p": [
+      "A profile is a private toolbox: most of it never appears in the story, but it guides you.",
+      "Include the basics, a key moment from their past, a goal and a gentle fear.",
+      "Favourite things, like a song or a snack, make characters feel lived-in."
+     ],
+     "q": "What are three favourite things that would appear in your own profile?",
+     "c": "Write a one-page profile for a new character: name, age, past, goal, fear and five favourite things."
+    },
+    "de": {
+     "t": "Ein Figurenprofil erstellen",
+     "g": "Leg ein kurzes Profil mit Name, Alter, Vorgeschichte, Zielen, Ängsten und Lieblingsdingen an.",
+     "p": [
+      "Ein Profil ist ein privater Werkzeugkasten: Das meiste landet nie im Text, leitet dich aber.",
+      "Nimm die Grunddaten, einen wichtigen Moment der Vergangenheit, ein Ziel und eine sanfte Angst auf.",
+      "Lieblingsdinge wie ein Lied oder ein Snack lassen Figuren lebendig wirken."
+     ],
+     "q": "Welche drei Lieblingsdinge würden in deinem eigenen Profil stehen?",
+     "c": "Schreib ein einseitiges Profil für eine neue Figur: Name, Alter, Vergangenheit, Ziel, Angst und fünf Lieblingsdinge."
+    },
+    "es": {
+     "t": "Crear la ficha del personaje",
+     "g": "Crea una ficha breve con nombre, edad, historia, metas, miedos y cosas favoritas.",
+     "p": [
+      "La ficha es una caja de herramientas privada: casi nada aparece en la historia, pero te guía.",
+      "Incluye lo básico, un momento clave de su pasado, una meta y un miedo suave.",
+      "Las cosas favoritas, como una canción o un tentempié, hacen que el personaje parezca vivido."
+     ],
+     "q": "¿Qué tres cosas favoritas aparecerían en tu propia ficha?",
+     "c": "Escribe una ficha de una página para un personaje nuevo: nombre, edad, pasado, meta, miedo y cinco favoritos."
+    },
+    "fr": {
+     "t": "Construire une fiche personnage",
+     "g": "Crée une courte fiche avec nom, âge, passé, objectifs, peurs et choses préférées.",
+     "p": [
+      "La fiche est une boîte à outils privée : presque rien n'apparaît dans l'histoire, mais elle te guide.",
+      "Mets l'essentiel, un moment clé du passé, un objectif et une peur douce.",
+      "Les choses préférées, comme une chanson ou un goûter, rendent le personnage habité."
+     ],
+     "q": "Quelles trois choses préférées figureraient sur ta propre fiche ?",
+     "c": "Écris une fiche d'une page pour un nouveau personnage : nom, âge, passé, objectif, peur et cinq préférences."
+    },
+    "it": {
+     "t": "Costruire la scheda del personaggio",
+     "g": "Crea una breve scheda con nome, età, storia, obiettivi, paure e cose preferite.",
+     "p": [
+      "La scheda è una cassetta degli attrezzi privata: quasi nulla finisce nella storia, ma ti guida.",
+      "Inserisci i dati base, un momento chiave del passato, un obiettivo e una paura lieve.",
+      "Le cose preferite, come una canzone o uno spuntino, rendono vissuto il personaggio."
+     ],
+     "q": "Quali tre cose preferite comparirebbero nella tua scheda?",
+     "c": "Scrivi una scheda di una pagina per un nuovo personaggio: nome, età, passato, obiettivo, paura e cinque preferiti."
+    },
+    "pt": {
+     "t": "Criar a ficha da personagem",
+     "g": "Cria uma ficha curta com nome, idade, passado, objetivos, medos e coisas preferidas.",
+     "p": [
+      "A ficha é uma caixa de ferramentas privada: quase nada aparece na história, mas guia-te.",
+      "Inclui o essencial, um momento-chave do passado, um objetivo e um medo suave.",
+      "As coisas preferidas, como uma canção ou um lanche, fazem a personagem parecer vivida."
+     ],
+     "q": "Que três coisas preferidas apareceriam na tua própria ficha?",
+     "c": "Escreve uma ficha de uma página para uma nova personagem: nome, idade, passado, objetivo, medo e cinco preferidos."
+    },
+    "pt_BR": {
+     "t": "Montar a ficha do personagem",
+     "g": "Crie uma ficha curta com nome, idade, passado, objetivos, medos e coisas favoritas.",
+     "p": [
+      "A ficha é uma caixa de ferramentas particular: quase nada entra na história, mas ela guia você.",
+      "Inclua o básico, um momento-chave do passado, um objetivo e um medo leve.",
+      "Coisas favoritas, como uma música ou um lanche, fazem o personagem parecer vivo."
+     ],
+     "q": "Quais três coisas favoritas apareceriam na sua própria ficha?",
+     "c": "Escreva uma ficha de uma página para um personagem novo: nome, idade, passado, objetivo, medo e cinco favoritos."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Names that fit",
+     "g": "Choose character names that suit their age, culture, era and personality.",
+     "p": [
+      "Names carry age and era: popular names change with every generation.",
+      "A name can hint at culture, region and family traditions.",
+      "Say the name aloud: its sound, short or long, soft or sharp, colours the character."
+     ],
+     "q": "Do you know the story behind your own name?",
+     "c": "Pick names for three characters: a grandmother in a seaside town, a young inventor and a cheerful baker."
+    },
+    "de": {
+     "t": "Passende Namen",
+     "g": "Wähle Figurennamen, die zu Alter, Kultur, Epoche und Persönlichkeit passen.",
+     "p": [
+      "Namen tragen Alter und Epoche in sich, beliebte Namen ändern sich mit jeder Generation.",
+      "Ein Name kann auf Kultur, Region und Familientraditionen hinweisen.",
+      "Sprich den Namen laut aus: Ob kurz oder lang, weich oder hart, sein Klang färbt die Figur."
+     ],
+     "q": "Kennst du die Geschichte hinter deinem eigenen Namen?",
+     "c": "Wähle Namen für drei Figuren: eine Großmutter in einem Küstenort, eine junge Erfinderin und einen fröhlichen Bäcker."
+    },
+    "es": {
+     "t": "Nombres que encajan",
+     "g": "Elige nombres que encajen con la edad, la cultura, la época y la personalidad del personaje.",
+     "p": [
+      "Los nombres llevan edad y época: los nombres de moda cambian con cada generación.",
+      "Un nombre puede insinuar cultura, región y tradiciones familiares.",
+      "Dilo en voz alta: su sonido, corto o largo, suave o seco, tiñe al personaje."
+     ],
+     "q": "¿Conoces la historia detrás de tu propio nombre?",
+     "c": "Elige nombres para tres personajes: una abuela de un pueblo costero, una joven inventora y un panadero alegre."
+    },
+    "fr": {
+     "t": "Des noms qui collent",
+     "g": "Choisis des noms adaptés à l'âge, la culture, l'époque et la personnalité du personnage.",
+     "p": [
+      "Les prénoms portent un âge et une époque : les prénoms à la mode changent à chaque génération.",
+      "Un nom peut évoquer une culture, une région et des traditions familiales.",
+      "Dis-le à voix haute : sa sonorité, courte ou longue, douce ou vive, colore le personnage."
+     ],
+     "q": "Connais-tu l'histoire de ton propre prénom ?",
+     "c": "Choisis des noms pour trois personnages : une grand-mère d'un village côtier, une jeune inventrice et un boulanger joyeux."
+    },
+    "it": {
+     "t": "Nomi che calzano",
+     "g": "Scegli nomi adatti all'età, alla cultura, all'epoca e alla personalità del personaggio.",
+     "p": [
+      "I nomi portano con sé età ed epoca: quelli di moda cambiano a ogni generazione.",
+      "Un nome può suggerire cultura, regione e tradizioni di famiglia.",
+      "Pronuncialo ad alta voce: il suono, breve o lungo, dolce o secco, colora il personaggio."
+     ],
+     "q": "Conosci la storia dietro al tuo nome?",
+     "c": "Scegli i nomi di tre personaggi: una nonna di un paese di mare, una giovane inventrice e un fornaio allegro."
+    },
+    "pt": {
+     "t": "Nomes que assentam bem",
+     "g": "Escolhe nomes que combinem com a idade, a cultura, a época e a personalidade da personagem.",
+     "p": [
+      "Os nomes trazem idade e época: os nomes da moda mudam a cada geração.",
+      "Um nome pode sugerir cultura, região e tradições de família.",
+      "Di-lo em voz alta: o som, curto ou longo, suave ou seco, dá cor à personagem."
+     ],
+     "q": "Conheces a história por trás do teu próprio nome?",
+     "c": "Escolhe nomes para três personagens: uma avó de uma vila à beira-mar, uma jovem inventora e um padeiro alegre."
+    },
+    "pt_BR": {
+     "t": "Nomes que combinam",
+     "g": "Escolha nomes que combinem com a idade, a cultura, a época e a personalidade do personagem.",
+     "p": [
+      "Nomes carregam idade e época: os nomes da moda mudam a cada geração.",
+      "Um nome pode sugerir cultura, região e tradições de família.",
+      "Fale em voz alta: o som, curto ou longo, suave ou seco, dá cor ao personagem."
+     ],
+     "q": "Você conhece a história por trás do seu próprio nome?",
+     "c": "Escolha nomes para três personagens: uma avó de uma cidade litorânea, uma jovem inventora e um padeiro alegre."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Characters from your culture",
+     "g": "Draw on traditions, food and everyday life you know to build authentic characters.",
+     "p": [
+      "You are an expert in your own culture: its foods, sayings, festivals and routines.",
+      "Small everyday details, like how people greet each other, make characters ring true.",
+      "Things that feel ordinary to you can feel fresh and fascinating to readers elsewhere."
+     ],
+     "q": "Which tradition from your culture would you love readers around the world to discover?",
+     "c": "Write a short scene where a character prepares a traditional dish from your culture for a friend."
+    },
+    "de": {
+     "t": "Figuren aus deiner Kultur",
+     "g": "Schöpfe aus Traditionen, Essen und Alltag, die du kennst, um glaubwürdige Figuren zu bauen.",
+     "p": [
+      "Du bist Expertin oder Experte deiner Kultur: ihrer Speisen, Sprichwörter, Feste und Routinen.",
+      "Kleine Alltagsdetails, etwa wie man sich begrüßt, machen Figuren glaubwürdig.",
+      "Was dir gewöhnlich vorkommt, wirkt auf Lesende anderswo frisch und faszinierend."
+     ],
+     "q": "Welche Tradition deiner Kultur sollten Lesende auf der ganzen Welt unbedingt entdecken?",
+     "c": "Schreib eine kurze Szene, in der eine Figur für einen Freund ein traditionelles Gericht deiner Kultur zubereitet."
+    },
+    "es": {
+     "t": "Personajes de tu cultura",
+     "g": "Aprovecha las tradiciones, la comida y la vida diaria que conoces para crear personajes auténticos.",
+     "p": [
+      "Eres experto en tu propia cultura: sus comidas, refranes, fiestas y rutinas.",
+      "Los pequeños detalles cotidianos, como la forma de saludarse, hacen creíbles a los personajes.",
+      "Lo que a ti te parece normal puede resultar fresco y fascinante para lectores de otros lugares."
+     ],
+     "q": "¿Qué tradición de tu cultura te encantaría que descubrieran lectores de todo el mundo?",
+     "c": "Escribe una escena corta en la que un personaje prepara un plato tradicional de tu cultura para un amigo."
+    },
+    "fr": {
+     "t": "Des personnages de ta culture",
+     "g": "Puise dans les traditions, la cuisine et le quotidien que tu connais pour créer des personnages authentiques.",
+     "p": [
+      "Tu es expert de ta propre culture : ses plats, ses dictons, ses fêtes et ses routines.",
+      "Les petits détails du quotidien, comme la façon de se saluer, rendent les personnages crédibles.",
+      "Ce qui te semble banal peut paraître neuf et fascinant à des lecteurs d'ailleurs."
+     ],
+     "q": "Quelle tradition de ta culture aimerais-tu faire découvrir aux lecteurs du monde entier ?",
+     "c": "Écris une courte scène où un personnage prépare un plat traditionnel de ta culture pour un ami."
+    },
+    "it": {
+     "t": "Personaggi della tua cultura",
+     "g": "Attingi a tradizioni, cibo e vita quotidiana che conosci per creare personaggi autentici.",
+     "p": [
+      "Sei esperto della tua cultura: i suoi piatti, i modi di dire, le feste e le abitudini.",
+      "I piccoli dettagli quotidiani, come il modo di salutarsi, rendono credibili i personaggi.",
+      "Ciò che a te sembra normale può risultare fresco e affascinante per lettori altrove."
+     ],
+     "q": "Quale tradizione della tua cultura ti piacerebbe far scoprire ai lettori di tutto il mondo?",
+     "c": "Scrivi una breve scena in cui un personaggio prepara un piatto tradizionale della tua cultura per un amico."
+    },
+    "pt": {
+     "t": "Personagens da tua cultura",
+     "g": "Usa as tradições, a comida e o dia a dia que conheces para criar personagens autênticas.",
+     "p": [
+      "És especialista na tua própria cultura: os pratos, os ditados, as festas e as rotinas.",
+      "Pequenos detalhes do dia a dia, como a forma de cumprimentar, tornam as personagens credíveis.",
+      "O que te parece banal pode ser fresco e fascinante para leitores de outros lugares."
+     ],
+     "q": "Que tradição da tua cultura gostavas que leitores de todo o mundo descobrissem?",
+     "c": "Escreve uma cena curta em que uma personagem prepara um prato tradicional da tua cultura para um amigo."
+    },
+    "pt_BR": {
+     "t": "Personagens da sua cultura",
+     "g": "Use as tradições, a comida e o dia a dia que você conhece para criar personagens autênticos.",
+     "p": [
+      "Você é especialista na sua própria cultura: pratos, ditados, festas e rotinas.",
+      "Pequenos detalhes do cotidiano, como o jeito de cumprimentar, deixam os personagens críveis.",
+      "O que parece banal para você pode ser fresco e fascinante para leitores de outros lugares."
+     ],
+     "q": "Que tradição da sua cultura você adoraria que leitores do mundo todo descobrissem?",
+     "c": "Escreva uma cena curta em que um personagem prepara um prato típico da sua cultura para um amigo."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Characters from other cultures",
+     "g": "Write respectfully about people from other places through research and empathy.",
+     "p": [
+      "Research everyday life, not just festivals: meals, homes, work, humour.",
+      "Avoid stereotypes: give the character personal dreams and quirks beyond their culture.",
+      "If possible, ask someone from that culture to read your work and share their view."
+     ],
+     "q": "Which culture would you love to learn more about through stories?",
+     "c": "Choose a country you'd like to visit, research three everyday customs and write a short scene using one."
+    },
+    "de": {
+     "t": "Figuren aus anderen Kulturen",
+     "g": "Schreib respektvoll über Menschen von anderswo, mit Recherche und Einfühlungsvermögen.",
+     "p": [
+      "Recherchiere den Alltag, nicht nur Feste: Essen, Wohnen, Arbeit, Humor.",
+      "Meide Stereotype: Gib der Figur eigene Träume und Eigenheiten jenseits ihrer Kultur.",
+      "Bitte wenn möglich jemanden aus dieser Kultur, deinen Text zu lesen und seine Sicht zu teilen."
+     ],
+     "q": "Über welche Kultur würdest du gern durch Geschichten mehr erfahren?",
+     "c": "Wähle ein Land, das du gern besuchen würdest, recherchiere drei Alltagsbräuche und schreib eine kurze Szene mit einem."
+    },
+    "es": {
+     "t": "Personajes de otras culturas",
+     "g": "Escribe con respeto sobre personas de otros lugares gracias a la investigación y la empatía.",
+     "p": [
+      "Investiga la vida diaria, no solo las fiestas: comidas, casas, trabajo, humor.",
+      "Evita estereotipos: dale al personaje sueños y manías propios, más allá de su cultura.",
+      "Si puedes, pide a alguien de esa cultura que lea tu texto y te dé su opinión."
+     ],
+     "q": "¿Qué cultura te encantaría conocer mejor a través de historias?",
+     "c": "Elige un país que te gustaría visitar, investiga tres costumbres cotidianas y escribe una escena breve con una."
+    },
+    "fr": {
+     "t": "Des personnages d'autres cultures",
+     "g": "Écris avec respect sur des personnes d'ailleurs, grâce à la recherche et à l'empathie.",
+     "p": [
+      "Renseigne-toi sur le quotidien, pas seulement les fêtes : repas, maisons, travail, humour.",
+      "Évite les stéréotypes : donne au personnage des rêves et des manies à lui, au-delà de sa culture.",
+      "Si possible, demande à quelqu'un de cette culture de te lire et de donner son avis."
+     ],
+     "q": "Quelle culture aimerais-tu mieux connaître à travers des histoires ?",
+     "c": "Choisis un pays que tu aimerais visiter, cherche trois coutumes du quotidien et écris une courte scène avec l'une d'elles."
+    },
+    "it": {
+     "t": "Personaggi di altre culture",
+     "g": "Scrivi con rispetto di persone di altri luoghi grazie alla ricerca e all'empatia.",
+     "p": [
+      "Informati sulla vita quotidiana, non solo sulle feste: pasti, case, lavoro, umorismo.",
+      "Evita gli stereotipi: dai al personaggio sogni e manie personali, oltre la sua cultura.",
+      "Se puoi, chiedi a qualcuno di quella cultura di leggere il testo e dirti cosa ne pensa."
+     ],
+     "q": "Quale cultura ti piacerebbe conoscere meglio attraverso le storie?",
+     "c": "Scegli un paese che vorresti visitare, studia tre usanze quotidiane e scrivi una breve scena con una di esse."
+    },
+    "pt": {
+     "t": "Personagens de outras culturas",
+     "g": "Escreve com respeito sobre pessoas de outros lugares, com pesquisa e empatia.",
+     "p": [
+      "Pesquisa o dia a dia, não só as festas: refeições, casas, trabalho, humor.",
+      "Evita estereótipos: dá à personagem sonhos e manias próprios, para lá da sua cultura.",
+      "Se puderes, pede a alguém dessa cultura que leia o teu texto e partilhe a sua opinião."
+     ],
+     "q": "Que cultura gostavas de conhecer melhor através de histórias?",
+     "c": "Escolhe um país que gostavas de visitar, pesquisa três costumes do dia a dia e escreve uma cena curta com um deles."
+    },
+    "pt_BR": {
+     "t": "Personagens de outras culturas",
+     "g": "Escreva com respeito sobre pessoas de outros lugares, com pesquisa e empatia.",
+     "p": [
+      "Pesquise o cotidiano, não só as festas: refeições, casas, trabalho, humor.",
+      "Evite estereótipos: dê ao personagem sonhos e manias próprios, além da cultura dele.",
+      "Se puder, peça para alguém dessa cultura ler seu texto e dar a opinião."
+     ],
+     "q": "Que cultura você adoraria conhecer melhor por meio de histórias?",
+     "c": "Escolha um país que gostaria de visitar, pesquise três costumes do dia a dia e escreva uma cena curta com um deles."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Revealing character through action",
+     "g": "Let what characters do show who they are more than any description.",
+     "p": [
+      "Actions are proof: a character who shares the last biscuit shows kindness without a word.",
+      "Small, everyday actions reveal as much as big heroic ones.",
+      "Ask what your character would do in an ordinary moment, like waiting in a queue."
+     ],
+     "q": "What small action of a stranger once made your day better?",
+     "c": "Write a short scene of a character waiting at a bus stop whose actions show they are generous."
+    },
+    "de": {
+     "t": "Charakter durch Handlung zeigen",
+     "g": "Lass das Handeln der Figuren mehr über sie verraten als jede Beschreibung.",
+     "p": [
+      "Taten sind Beweise: Wer den letzten Keks teilt, zeigt Güte ohne ein Wort.",
+      "Kleine Alltagshandlungen verraten so viel wie große Heldentaten.",
+      "Frag dich, was deine Figur in einem gewöhnlichen Moment tut, etwa beim Warten in einer Schlange."
+     ],
+     "q": "Welche kleine Geste eines Fremden hat dir einmal den Tag verschönert?",
+     "c": "Schreib eine kurze Szene über eine Figur an einer Bushaltestelle, deren Handeln zeigt, dass sie großzügig ist."
+    },
+    "es": {
+     "t": "Revelar el carácter con acciones",
+     "g": "Deja que lo que hacen los personajes muestre quiénes son mejor que cualquier descripción.",
+     "p": [
+      "Las acciones son pruebas: quien comparte la última galleta muestra bondad sin decir nada.",
+      "Las pequeñas acciones cotidianas revelan tanto como las grandes hazañas.",
+      "Pregúntate qué haría tu personaje en un momento corriente, como al hacer cola."
+     ],
+     "q": "¿Qué pequeño gesto de un desconocido te alegró el día alguna vez?",
+     "c": "Escribe una escena corta de un personaje en una parada de autobús cuyas acciones muestran que es generoso."
+    },
+    "fr": {
+     "t": "Révéler le caractère par l'action",
+     "g": "Laisse les actes des personnages montrer qui ils sont, mieux que toute description.",
+     "p": [
+      "Les actes sont des preuves : partager le dernier biscuit montre la gentillesse sans un mot.",
+      "Les petits gestes du quotidien en disent autant que les grands exploits.",
+      "Demande-toi ce que ferait ton personnage dans un moment banal, comme une file d'attente."
+     ],
+     "q": "Quel petit geste d'un inconnu a un jour embelli ta journée ?",
+     "c": "Écris une courte scène d'un personnage à un arrêt de bus dont les gestes montrent qu'il est généreux."
+    },
+    "it": {
+     "t": "Rivelare il carattere con le azioni",
+     "g": "Lascia che ciò che i personaggi fanno mostri chi sono più di qualsiasi descrizione.",
+     "p": [
+      "Le azioni sono prove: chi divide l'ultimo biscotto mostra gentilezza senza parlare.",
+      "Le piccole azioni quotidiane rivelano quanto le grandi imprese.",
+      "Chiediti cosa farebbe il tuo personaggio in un momento comune, come in fila alla cassa."
+     ],
+     "q": "Quale piccolo gesto di uno sconosciuto ti ha migliorato la giornata?",
+     "c": "Scrivi una breve scena di un personaggio alla fermata dell'autobus le cui azioni mostrano che è generoso."
+    },
+    "pt": {
+     "t": "Revelar o carácter pela ação",
+     "g": "Deixa o que as personagens fazem mostrar quem são, melhor do que qualquer descrição.",
+     "p": [
+      "As ações são provas: quem partilha a última bolacha mostra bondade sem dizer nada.",
+      "Pequenas ações do dia a dia revelam tanto como grandes feitos.",
+      "Pergunta o que a tua personagem faria num momento banal, como numa fila."
+     ],
+     "q": "Que pequeno gesto de um desconhecido já te alegrou o dia?",
+     "c": "Escreve uma cena curta de uma personagem numa paragem de autocarro cujas ações mostram que é generosa."
+    },
+    "pt_BR": {
+     "t": "Revelar o caráter pela ação",
+     "g": "Deixe o que os personagens fazem mostrar quem eles são, melhor que qualquer descrição.",
+     "p": [
+      "Ações são provas: quem divide o último biscoito mostra bondade sem dizer nada.",
+      "Pequenas ações do cotidiano revelam tanto quanto grandes feitos.",
+      "Pergunte o que seu personagem faria num momento comum, como numa fila."
+     ],
+     "q": "Que pequeno gesto de um desconhecido já alegrou o seu dia?",
+     "c": "Escreva uma cena curta de um personagem num ponto de ônibus cujas ações mostram que ele é generoso."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Revealing character through choices",
+     "g": "See how a decision under pressure shows a character's true values.",
+     "p": [
+      "Choices reveal values: what a character gives up shows what matters most.",
+      "The best choices are hard: two good options, or a cost either way.",
+      "Build up to the decision so readers feel the weight before the choice is made."
+     ],
+     "q": "What is a choice you made that showed you what you truly value?",
+     "c": "Write a scene where a character must choose between winning a race and helping a friend who has fallen."
+    },
+    "de": {
+     "t": "Charakter durch Entscheidungen",
+     "g": "Erkenne, wie eine Entscheidung unter Druck die wahren Werte einer Figur zeigt.",
+     "p": [
+      "Entscheidungen zeigen Werte: Worauf eine Figur verzichtet, verrät, was ihr am wichtigsten ist.",
+      "Die besten Entscheidungen sind schwer: zwei gute Optionen oder ein Preis in jedem Fall.",
+      "Bau auf die Entscheidung hin, damit Lesende ihr Gewicht spüren, bevor sie fällt."
+     ],
+     "q": "Welche Entscheidung hat dir gezeigt, was dir wirklich wichtig ist?",
+     "c": "Schreib eine Szene, in der eine Figur wählen muss: das Rennen gewinnen oder einem gestürzten Freund helfen."
+    },
+    "es": {
+     "t": "Revelar el carácter con decisiones",
+     "g": "Descubre cómo una decisión bajo presión muestra los verdaderos valores de un personaje.",
+     "p": [
+      "Las decisiones revelan valores: lo que el personaje sacrifica muestra lo que más le importa.",
+      "Las mejores decisiones son difíciles: dos opciones buenas o un precio en ambos casos.",
+      "Prepara la decisión para que el lector sienta su peso antes de que se tome."
+     ],
+     "q": "¿Qué decisión tuya te mostró lo que de verdad valoras?",
+     "c": "Escribe una escena en la que un personaje debe elegir entre ganar una carrera o ayudar a un amigo que se ha caído."
+    },
+    "fr": {
+     "t": "Révéler le caractère par les choix",
+     "g": "Vois comment une décision sous pression révèle les vraies valeurs d'un personnage.",
+     "p": [
+      "Les choix révèlent les valeurs : ce à quoi le personnage renonce montre ce qui compte le plus.",
+      "Les meilleurs choix sont difficiles : deux bonnes options, ou un prix à payer de toute façon.",
+      "Prépare la décision pour que le lecteur en sente le poids avant qu'elle ne tombe."
+     ],
+     "q": "Quel choix t'a montré ce qui compte vraiment pour toi ?",
+     "c": "Écris une scène où un personnage doit choisir entre gagner une course et aider un ami qui est tombé."
+    },
+    "it": {
+     "t": "Rivelare il carattere con le scelte",
+     "g": "Scopri come una decisione sotto pressione mostra i veri valori di un personaggio.",
+     "p": [
+      "Le scelte rivelano i valori: ciò a cui il personaggio rinuncia mostra cosa conta di più.",
+      "Le scelte migliori sono difficili: due opzioni buone, o un prezzo in ogni caso.",
+      "Prepara la decisione perché il lettore ne senta il peso prima che venga presa."
+     ],
+     "q": "Quale scelta ti ha mostrato ciò a cui tieni davvero?",
+     "c": "Scrivi una scena in cui un personaggio deve scegliere tra vincere una corsa e aiutare un amico caduto."
+    },
+    "pt": {
+     "t": "Revelar o carácter pelas escolhas",
+     "g": "Vê como uma decisão sob pressão mostra os verdadeiros valores de uma personagem.",
+     "p": [
+      "As escolhas revelam valores: aquilo de que a personagem abdica mostra o que mais importa.",
+      "As melhores escolhas são difíceis: duas boas opções, ou um preço em qualquer caso.",
+      "Prepara a decisão para que o leitor sinta o seu peso antes de ela ser tomada."
+     ],
+     "q": "Que escolha tua te mostrou aquilo que realmente valorizas?",
+     "c": "Escreve uma cena em que uma personagem tem de escolher entre ganhar uma corrida e ajudar um amigo que caiu."
+    },
+    "pt_BR": {
+     "t": "Revelar o caráter pelas escolhas",
+     "g": "Veja como uma decisão sob pressão mostra os verdadeiros valores de um personagem.",
+     "p": [
+      "Escolhas revelam valores: aquilo de que o personagem abre mão mostra o que mais importa.",
+      "As melhores escolhas são difíceis: duas boas opções, ou um preço de qualquer jeito.",
+      "Prepare a decisão para o leitor sentir o peso dela antes de ela acontecer."
+     ],
+     "q": "Que escolha sua mostrou o que você realmente valoriza?",
+     "c": "Escreva uma cena em que um personagem precisa escolher entre ganhar uma corrida e ajudar um amigo que caiu."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inner thoughts",
+     "g": "Share a character's private thoughts to create closeness with the reader.",
+     "p": [
+      "Inner thoughts let readers hear what a character would never say aloud.",
+      "The gap between what they think and what they say can be funny or touching.",
+      "Use thoughts sparingly: a single line can be more powerful than a long paragraph."
+     ],
+     "q": "Do you enjoy books that let you inside a character's head?",
+     "c": "Write a short scene where a character politely praises a gift while their thoughts reveal a funny surprise."
+    },
+    "de": {
+     "t": "Innere Gedanken",
+     "g": "Teile die privaten Gedanken einer Figur, um Nähe zu den Lesenden zu schaffen.",
+     "p": [
+      "Innere Gedanken lassen Lesende hören, was eine Figur nie laut sagen würde.",
+      "Die Lücke zwischen Denken und Sagen kann komisch oder berührend sein.",
+      "Setz Gedanken sparsam ein: Eine einzige Zeile wirkt oft stärker als ein langer Absatz."
+     ],
+     "q": "Magst du Bücher, die dich in den Kopf einer Figur blicken lassen?",
+     "c": "Schreib eine kurze Szene, in der eine Figur höflich ein Geschenk lobt, während ihre Gedanken eine lustige Überraschung verraten."
+    },
+    "es": {
+     "t": "Pensamientos íntimos",
+     "g": "Comparte los pensamientos privados de un personaje para crear cercanía con el lector.",
+     "p": [
+      "Los pensamientos dejan oír lo que el personaje nunca diría en voz alta.",
+      "La distancia entre lo que piensa y lo que dice puede ser divertida o conmovedora.",
+      "Úsalos con medida: una sola línea puede ser más poderosa que un párrafo largo."
+     ],
+     "q": "¿Te gustan los libros que te dejan entrar en la cabeza de un personaje?",
+     "c": "Escribe una escena corta donde un personaje elogia con cortesía un regalo mientras sus pensamientos revelan una sorpresa divertida."
+    },
+    "fr": {
+     "t": "Les pensées intérieures",
+     "g": "Partage les pensées secrètes d'un personnage pour créer de la proximité avec le lecteur.",
+     "p": [
+      "Les pensées laissent entendre ce que le personnage ne dirait jamais à voix haute.",
+      "L'écart entre ce qu'il pense et ce qu'il dit peut être drôle ou touchant.",
+      "Dose-les : une seule ligne peut être plus forte qu'un long paragraphe."
+     ],
+     "q": "Aimes-tu les livres qui te font entrer dans la tête d'un personnage ?",
+     "c": "Écris une courte scène où un personnage complimente poliment un cadeau tandis que ses pensées révèlent une surprise amusante."
+    },
+    "it": {
+     "t": "Pensieri interiori",
+     "g": "Condividi i pensieri privati di un personaggio per creare vicinanza con il lettore.",
+     "p": [
+      "I pensieri lasciano sentire ciò che il personaggio non direbbe mai ad alta voce.",
+      "Lo scarto tra ciò che pensa e ciò che dice può essere buffo o commovente.",
+      "Usali con misura: una sola riga può essere più forte di un lungo paragrafo."
+     ],
+     "q": "Ti piacciono i libri che ti fanno entrare nella testa di un personaggio?",
+     "c": "Scrivi una breve scena in cui un personaggio loda gentilmente un regalo mentre i suoi pensieri rivelano una sorpresa buffa."
+    },
+    "pt": {
+     "t": "Pensamentos íntimos",
+     "g": "Partilha os pensamentos privados de uma personagem para criar proximidade com o leitor.",
+     "p": [
+      "Os pensamentos deixam ouvir o que a personagem nunca diria em voz alta.",
+      "A distância entre o que pensa e o que diz pode ser divertida ou comovente.",
+      "Usa-os com moderação: uma só linha pode ser mais forte do que um parágrafo longo."
+     ],
+     "q": "Gostas de livros que te deixam entrar na cabeça de uma personagem?",
+     "c": "Escreve uma cena curta em que uma personagem elogia com delicadeza uma prenda enquanto os pensamentos revelam uma surpresa divertida."
+    },
+    "pt_BR": {
+     "t": "Pensamentos íntimos",
+     "g": "Compartilhe os pensamentos particulares de um personagem para criar proximidade com o leitor.",
+     "p": [
+      "Os pensamentos deixam ouvir o que o personagem nunca diria em voz alta.",
+      "A distância entre o que ele pensa e o que fala pode ser engraçada ou tocante.",
+      "Use com moderação: uma única linha pode ser mais forte que um parágrafo longo."
+     ],
+     "q": "Você gosta de livros que deixam você entrar na cabeça de um personagem?",
+     "c": "Escreva uma cena curta em que um personagem elogia um presente com educação enquanto os pensamentos revelam uma surpresa engraçada."
+    }
+   }
+  }
+ ]
+}

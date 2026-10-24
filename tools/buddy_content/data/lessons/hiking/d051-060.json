@@ -1,0 +1,835 @@
+{
+ "topic": "hiking",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introduction to the compass",
+     "g": "Get to know the parts of a baseplate compass: needle, baseplate, bezel and direction of travel arrow.",
+     "p": [
+      "The magnetic needle, usually red at one end, points to magnetic north when held flat and still.",
+      "The clear baseplate has a direction of travel arrow and edges for lining up routes on a map.",
+      "The rotating bezel shows degrees from 0 to 360 and has an orienting arrow and lines inside."
+     ],
+     "q": "Have you ever held a compass, maybe as a child or on a school trip?",
+     "c": "Hold a compass flat, let the needle settle and turn until you face north."
+    },
+    "de": {
+     "t": "Einführung in den Kompass",
+     "g": "Lerne die Teile eines Plattenkompasses kennen: Nadel, Grundplatte, Drehring und Marschrichtungspfeil.",
+     "p": [
+      "Die Magnetnadel, meist an einem Ende rot, zeigt nach magnetisch Nord, wenn du den Kompass flach und ruhig hältst.",
+      "Die durchsichtige Grundplatte hat einen Marschrichtungspfeil und Kanten zum Anlegen an Routen auf der Karte.",
+      "Der Drehring zeigt Grad von 0 bis 360 und hat innen einen Nordpfeil und Linien."
+     ],
+     "q": "Hattest du schon einmal einen Kompass in der Hand, vielleicht als Kind oder auf einem Schulausflug?",
+     "c": "Halte einen Kompass flach, lass die Nadel ruhig werden und dreh dich, bis du nach Norden schaust."
+    },
+    "es": {
+     "t": "Introducción a la brújula",
+     "g": "Conoce las partes de una brújula de placa: aguja, placa base, limbo giratorio y flecha de dirección.",
+     "p": [
+      "La aguja magnética, normalmente roja en un extremo, apunta al norte magnético si la sostienes plana y quieta.",
+      "La placa transparente tiene una flecha de dirección de marcha y bordes para alinear rutas en el mapa.",
+      "El limbo giratorio marca grados de 0 a 360 y tiene dentro una flecha de orientación y líneas."
+     ],
+     "q": "¿Has sostenido alguna vez una brújula, quizá de niño o en una excursión del colegio?",
+     "c": "Sostén una brújula plana, deja que la aguja se quede quieta y gira hasta mirar al norte."
+    },
+    "fr": {
+     "t": "Découvrir la boussole",
+     "g": "Découvre les parties d'une boussole à plaquette : aiguille, plaquette, cadran mobile et flèche de direction.",
+     "p": [
+      "L'aiguille aimantée, souvent rouge d'un côté, indique le nord magnétique quand on tient la boussole à plat et immobile.",
+      "La plaquette transparente porte une flèche de direction et des bords pour aligner un itinéraire sur la carte.",
+      "Le cadran mobile indique les degrés de 0 à 360 et contient une flèche d'orientation et des lignes."
+     ],
+     "q": "As-tu déjà tenu une boussole, peut-être enfant ou lors d'une sortie scolaire ?",
+     "c": "Tiens une boussole à plat, laisse l'aiguille se stabiliser et tourne-toi vers le nord."
+    },
+    "it": {
+     "t": "Introduzione alla bussola",
+     "g": "Conosci le parti di una bussola a basetta: ago, basetta, ghiera girevole e freccia di direzione.",
+     "p": [
+      "L'ago magnetico, di solito rosso da un lato, indica il nord magnetico se tieni la bussola piatta e ferma.",
+      "La basetta trasparente ha una freccia di direzione di marcia e bordi per allineare i percorsi sulla carta.",
+      "La ghiera girevole indica i gradi da 0 a 360 e ha all'interno una freccia di orientamento e linee."
+     ],
+     "q": "Hai mai tenuto in mano una bussola, magari da bambino o in gita scolastica?",
+     "c": "Tieni una bussola piatta, lascia fermare l'ago e girati finché guardi verso nord."
+    },
+    "pt": {
+     "t": "Introdução à bússola",
+     "g": "Conhece as partes de uma bússola de placa: agulha, placa base, limbo rotativo e seta de direção.",
+     "p": [
+      "A agulha magnética, normalmente vermelha numa ponta, aponta para o norte magnético se a seguras plana e parada.",
+      "A placa transparente tem uma seta de direção de marcha e bordas para alinhar percursos no mapa.",
+      "O limbo rotativo mostra graus de 0 a 360 e tem lá dentro uma seta de orientação e linhas."
+     ],
+     "q": "Já seguraste numa bússola, talvez em criança ou numa visita de estudo?",
+     "c": "Segura uma bússola plana, deixa a agulha estabilizar e roda até ficares virado para norte."
+    },
+    "pt_BR": {
+     "t": "Introdução à bússola",
+     "g": "Conheça as partes de uma bússola de placa: agulha, placa base, limbo giratório e seta de direção.",
+     "p": [
+      "A agulha magnética, geralmente vermelha numa ponta, aponta para o norte magnético quando a bússola fica plana e parada.",
+      "A placa transparente tem uma seta de direção de marcha e bordas para alinhar rotas no mapa.",
+      "O limbo giratório mostra graus de 0 a 360 e tem por dentro uma seta de orientação e linhas."
+     ],
+     "q": "Você já segurou uma bússola, talvez quando criança ou num passeio da escola?",
+     "c": "Segure uma bússola plana, deixe a agulha parar e gire até ficar de frente para o norte."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding north",
+     "g": "Learn to find north with a compass and to use the sun as a rough guide.",
+     "p": [
+      "With a compass, keep it flat, away from phones and metal, and the red needle shows magnetic north.",
+      "The sun rises roughly in the east and sets roughly in the west, which gives you a quick clue.",
+      "Around midday the sun is roughly south in the northern hemisphere and roughly north in the southern."
+     ],
+     "q": "Do you usually know which way is north where you live?",
+     "c": "Today, find north at home with a compass or phone, then notice where the sun is."
+    },
+    "de": {
+     "t": "Norden finden",
+     "g": "Lerne, Norden mit dem Kompass zu finden und die Sonne als grobe Orientierung zu nutzen.",
+     "p": [
+      "Halte den Kompass flach, weg von Handy und Metall, dann zeigt die rote Nadel nach magnetisch Nord.",
+      "Die Sonne geht ungefähr im Osten auf und ungefähr im Westen unter, das ist ein schneller Hinweis.",
+      "Um die Mittagszeit steht die Sonne auf der Nordhalbkugel etwa im Süden, auf der Südhalbkugel etwa im Norden."
+     ],
+     "q": "Weißt du normalerweise, wo bei dir zu Hause Norden ist?",
+     "c": "Finde heute zu Hause Norden mit Kompass oder Handy und achte dann darauf, wo die Sonne steht."
+    },
+    "es": {
+     "t": "Encontrar el norte",
+     "g": "Aprende a encontrar el norte con una brújula y a usar el sol como guía aproximada.",
+     "p": [
+      "Con la brújula plana y lejos del móvil y de objetos metálicos, la aguja roja marca el norte magnético.",
+      "El sol sale más o menos por el este y se pone más o menos por el oeste, lo que da una pista rápida.",
+      "Hacia mediodía, el sol está más o menos al sur en el hemisferio norte y más o menos al norte en el sur."
+     ],
+     "q": "¿Sueles saber hacia dónde queda el norte donde vives?",
+     "c": "Hoy, encuentra el norte en casa con una brújula o el móvil y fíjate dónde está el sol."
+    },
+    "fr": {
+     "t": "Trouver le nord",
+     "g": "Apprends à trouver le nord avec une boussole et à utiliser le soleil comme repère approximatif.",
+     "p": [
+      "Tiens la boussole à plat, loin du téléphone et du métal : l'aiguille rouge indique le nord magnétique.",
+      "Le soleil se lève à peu près à l'est et se couche à peu près à l'ouest, un indice rapide.",
+      "Vers midi, le soleil est à peu près au sud dans l'hémisphère Nord et à peu près au nord dans l'hémisphère Sud."
+     ],
+     "q": "Sais-tu en général où se trouve le nord là où tu vis ?",
+     "c": "Aujourd'hui, trouve le nord chez toi avec une boussole ou ton téléphone, puis observe où est le soleil."
+    },
+    "it": {
+     "t": "Trovare il nord",
+     "g": "Impara a trovare il nord con la bussola e a usare il sole come guida approssimativa.",
+     "p": [
+      "Tieni la bussola piatta, lontana da telefono e metallo, e l'ago rosso indica il nord magnetico.",
+      "Il sole sorge più o meno a est e tramonta più o meno a ovest, un indizio rapido.",
+      "Verso mezzogiorno il sole è circa a sud nell'emisfero nord e circa a nord nell'emisfero sud."
+     ],
+     "q": "Di solito sai da che parte è il nord dove vivi?",
+     "c": "Oggi trova il nord a casa con una bussola o il telefono, poi guarda dov'è il sole."
+    },
+    "pt": {
+     "t": "Encontrar o norte",
+     "g": "Aprende a encontrar o norte com uma bússola e a usar o sol como guia aproximado.",
+     "p": [
+      "Com a bússola plana e longe do telemóvel e de metais, a agulha vermelha indica o norte magnético.",
+      "O sol nasce mais ou menos a leste e põe-se mais ou menos a oeste, o que dá uma pista rápida.",
+      "Por volta do meio-dia, o sol está mais ou menos a sul no hemisfério norte e mais ou menos a norte no sul."
+     ],
+     "q": "Costumas saber para que lado fica o norte onde vives?",
+     "c": "Hoje, encontra o norte em casa com uma bússola ou o telemóvel e repara onde está o sol."
+    },
+    "pt_BR": {
+     "t": "Encontrando o norte",
+     "g": "Aprenda a encontrar o norte com uma bússola e a usar o sol como guia aproximado.",
+     "p": [
+      "Com a bússola plana e longe do celular e de metais, a agulha vermelha indica o norte magnético.",
+      "O sol nasce mais ou menos a leste e se põe mais ou menos a oeste, o que dá uma pista rápida.",
+      "Perto do meio-dia, o sol fica mais ou menos ao sul no hemisfério norte e mais ou menos ao norte no sul."
+     ],
+     "q": "Você costuma saber para que lado fica o norte onde mora?",
+     "c": "Hoje, encontre o norte em casa com uma bússola ou o celular e repare onde está o sol."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hiking apps in general terms",
+     "g": "Understand how digital maps and GPS help on the trail and why you should not rely on them alone.",
+     "p": [
+      "GPS uses satellites to show your position on a digital map, even where there is no phone signal.",
+      "Download offline maps before you go, since mobile data often disappears in valleys and forests.",
+      "Screens, cold and constant tracking drain batteries, so keep a paper map and compass as backup."
+     ],
+     "q": "Do you already use any map app on walks, and what do you like about it?",
+     "c": "Download an offline map of an area you would like to hike in."
+    },
+    "de": {
+     "t": "Wander-Apps im Überblick",
+     "g": "Verstehe, wie digitale Karten und GPS unterwegs helfen und warum du dich nicht allein darauf verlassen solltest.",
+     "p": [
+      "GPS zeigt per Satellit deine Position auf einer digitalen Karte, auch ohne Handynetz.",
+      "Lade Offline-Karten vorher herunter, denn mobile Daten fehlen in Tälern und Wäldern oft.",
+      "Bildschirm, Kälte und ständiges Aufzeichnen leeren den Akku, nimm also Papierkarte und Kompass als Reserve mit."
+     ],
+     "q": "Nutzt du schon eine Karten-App beim Gehen, und was gefällt dir daran?",
+     "c": "Lade eine Offline-Karte für ein Gebiet herunter, in dem du gern wandern würdest."
+    },
+    "es": {
+     "t": "Apps de senderismo en general",
+     "g": "Entiende cómo ayudan los mapas digitales y el GPS en el sendero y por qué no conviene depender solo de ellos.",
+     "p": [
+      "El GPS usa satélites para mostrar tu posición en un mapa digital, incluso sin cobertura móvil.",
+      "Descarga mapas sin conexión antes de salir, porque los datos móviles suelen desaparecer en valles y bosques.",
+      "La pantalla, el frío y el seguimiento constante gastan batería, así que lleva mapa y brújula de reserva."
+     ],
+     "q": "¿Ya usas alguna app de mapas al caminar y qué te gusta de ella?",
+     "c": "Descarga un mapa sin conexión de una zona donde te gustaría caminar."
+    },
+    "fr": {
+     "t": "Les applis de rando en général",
+     "g": "Comprends comment les cartes numériques et le GPS aident sur le sentier et pourquoi ne pas s'y fier seul.",
+     "p": [
+      "Le GPS utilise des satellites pour afficher ta position sur une carte numérique, même sans réseau.",
+      "Télécharge des cartes hors ligne avant de partir, car les données mobiles disparaissent souvent en vallée et en forêt.",
+      "L'écran, le froid et le suivi permanent vident la batterie, alors garde carte papier et boussole en secours."
+     ],
+     "q": "Utilises-tu déjà une appli de cartes en balade, et qu'est-ce qui te plaît ?",
+     "c": "Télécharge une carte hors ligne d'un secteur où tu aimerais randonner."
+    },
+    "it": {
+     "t": "Le app per escursioni in generale",
+     "g": "Capisci come mappe digitali e GPS aiutano sul sentiero e perché non conviene affidarsi solo a loro.",
+     "p": [
+      "Il GPS usa i satelliti per mostrare la tua posizione su una mappa digitale, anche senza campo.",
+      "Scarica le mappe offline prima di partire, perché i dati mobili spesso spariscono in valli e boschi.",
+      "Schermo, freddo e tracciamento continuo scaricano la batteria, quindi porta carta e bussola di riserva."
+     ],
+     "q": "Usi già un'app di mappe quando cammini, e cosa ti piace?",
+     "c": "Scarica una mappa offline di una zona in cui vorresti fare un'escursione."
+    },
+    "pt": {
+     "t": "Apps de caminhada em geral",
+     "g": "Percebe como os mapas digitais e o GPS ajudam no trilho e porque não deves depender só deles.",
+     "p": [
+      "O GPS usa satélites para mostrar a tua posição num mapa digital, mesmo sem rede de telemóvel.",
+      "Descarrega mapas offline antes de sair, porque os dados móveis desaparecem muitas vezes em vales e florestas.",
+      "O ecrã, o frio e o registo constante gastam a bateria, por isso leva mapa e bússola de reserva."
+     ],
+     "q": "Já usas alguma app de mapas nas caminhadas, e de que gostas nela?",
+     "c": "Descarrega um mapa offline de uma zona onde gostarias de caminhar."
+    },
+    "pt_BR": {
+     "t": "Apps de trilha em geral",
+     "g": "Entenda como mapas digitais e GPS ajudam na trilha e por que não depender só deles.",
+     "p": [
+      "O GPS usa satélites para mostrar sua posição num mapa digital, mesmo sem sinal de celular.",
+      "Baixe mapas offline antes de sair, porque os dados móveis costumam sumir em vales e matas.",
+      "Tela, frio e rastreamento constante gastam bateria, então leve mapa de papel e bússola de reserva."
+     ],
+     "q": "Você já usa algum app de mapas nas caminhadas, e do que gosta nele?",
+     "c": "Baixe um mapa offline de uma região onde você gostaria de fazer trilha."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping your phone charged",
+     "g": "Learn simple ways to make your phone battery last through a full day outdoors.",
+     "p": [
+      "Airplane mode or battery saver stops the phone searching for signal, which uses lots of power.",
+      "Carry a small power bank and cable, and start the day with everything fully charged.",
+      "Cold drains batteries fast, so keep the phone in an inside pocket close to your body."
+     ],
+     "q": "How long does your phone battery usually last on a busy day?",
+     "c": "Charge a power bank tonight and add it, with a cable, to your daypack."
+    },
+    "de": {
+     "t": "Das Handy geladen halten",
+     "g": "Lerne einfache Wege, damit dein Akku einen ganzen Tag draußen durchhält.",
+     "p": [
+      "Flugmodus oder Energiesparmodus verhindern die ständige Netzsuche, die viel Strom kostet.",
+      "Nimm eine kleine Powerbank und ein Kabel mit und starte den Tag mit allem voll geladen.",
+      "Kälte leert Akkus schnell, also steck das Handy in eine Innentasche nah am Körper."
+     ],
+     "q": "Wie lange hält dein Akku an einem vollen Tag normalerweise?",
+     "c": "Lade heute Abend eine Powerbank und pack sie mit Kabel in deinen Rucksack."
+    },
+    "es": {
+     "t": "Mantener el móvil con batería",
+     "g": "Aprende formas sencillas de que la batería del móvil aguante todo un día al aire libre.",
+     "p": [
+      "El modo avión o el ahorro de batería evitan que el móvil busque señal, algo que gasta mucha energía.",
+      "Lleva una batería externa pequeña y un cable, y empieza el día con todo bien cargado.",
+      "El frío agota la batería rápido, así que guarda el móvil en un bolsillo interior, cerca del cuerpo."
+     ],
+     "q": "¿Cuánto te suele durar la batería del móvil en un día ajetreado?",
+     "c": "Carga esta noche una batería externa y métela con un cable en tu mochila."
+    },
+    "fr": {
+     "t": "Garder son téléphone chargé",
+     "g": "Apprends des astuces simples pour que la batterie de ton téléphone tienne toute une journée dehors.",
+     "p": [
+      "Le mode avion ou l'économie d'énergie évitent que le téléphone cherche du réseau, ce qui consomme beaucoup.",
+      "Emporte une petite batterie externe et un câble, et commence la journée avec tout chargé à fond.",
+      "Le froid vide vite les batteries, alors garde le téléphone dans une poche intérieure, près du corps."
+     ],
+     "q": "Combien de temps tient ta batterie lors d'une journée chargée ?",
+     "c": "Recharge une batterie externe ce soir et range-la avec un câble dans ton sac de rando."
+    },
+    "it": {
+     "t": "Tenere carico il telefono",
+     "g": "Impara modi semplici per far durare la batteria del telefono per un'intera giornata all'aperto.",
+     "p": [
+      "La modalità aereo o il risparmio energetico evitano che il telefono cerchi rete, cosa che consuma molto.",
+      "Porta un piccolo power bank e un cavo, e inizia la giornata con tutto carico.",
+      "Il freddo scarica in fretta le batterie, quindi tieni il telefono in una tasca interna vicino al corpo."
+     ],
+     "q": "Quanto dura di solito la batteria del telefono in una giornata piena?",
+     "c": "Carica stasera un power bank e mettilo nello zaino con un cavo."
+    },
+    "pt": {
+     "t": "Manter o telemóvel com bateria",
+     "g": "Aprende formas simples de fazer a bateria do telemóvel durar um dia inteiro ao ar livre.",
+     "p": [
+      "O modo de voo ou a poupança de bateria evitam que o telemóvel procure rede, o que gasta muita energia.",
+      "Leva uma pequena powerbank e um cabo, e começa o dia com tudo carregado.",
+      "O frio gasta as baterias depressa, por isso guarda o telemóvel num bolso interior, junto ao corpo."
+     ],
+     "q": "Quanto tempo costuma durar a bateria do teu telemóvel num dia cheio?",
+     "c": "Carrega esta noite uma powerbank e põe-na com um cabo na tua mochila."
+    },
+    "pt_BR": {
+     "t": "Mantendo o celular carregado",
+     "g": "Aprenda jeitos simples de fazer a bateria do celular durar um dia inteiro ao ar livre.",
+     "p": [
+      "Modo avião ou economia de bateria evitam que o celular fique procurando sinal, o que gasta muita energia.",
+      "Leve um carregador portátil pequeno e um cabo, e comece o dia com tudo carregado.",
+      "O frio drena a bateria rápido, então guarde o celular num bolso interno, perto do corpo."
+     ],
+     "q": "Quanto tempo a bateria do seu celular costuma durar num dia cheio?",
+     "c": "Carregue hoje à noite um carregador portátil e coloque na mochila com um cabo."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handrails and landmarks",
+     "g": "Learn to follow natural lines like rivers, ridges and walls to stay on track without constant map checks.",
+     "p": [
+      "A handrail is a long, clear feature running along your route, such as a stream, fence, wall or ridge.",
+      "Landmarks are distinct points, like a hut, a bridge or a lone tree, that confirm where you are.",
+      "A catching feature, such as a road or lake beyond your goal, tells you when you have gone too far."
+     ],
+     "q": "What natural feature do you think would be easiest to follow: a river, a wall or a ridge?",
+     "c": "On a map, find a route and list one handrail, two landmarks and one catching feature."
+    },
+    "de": {
+     "t": "Leitlinien und Landmarken",
+     "g": "Lerne, natürlichen Linien wie Flüssen, Graten und Mauern zu folgen, um ohne ständigen Kartenblick auf Kurs zu bleiben.",
+     "p": [
+      "Eine Leitlinie ist ein langes, klares Merkmal entlang der Route, etwa Bach, Zaun, Mauer oder Grat.",
+      "Landmarken sind markante Punkte wie Hütte, Brücke oder einzelner Baum, die deine Position bestätigen.",
+      "Eine Auffanglinie, etwa Straße oder See hinter dem Ziel, zeigt dir, wenn du zu weit gegangen bist."
+     ],
+     "q": "Welchem natürlichen Merkmal könntest du am leichtesten folgen: Fluss, Mauer oder Grat?",
+     "c": "Such auf einer Karte eine Route und notiere eine Leitlinie, zwei Landmarken und eine Auffanglinie."
+    },
+    "es": {
+     "t": "Pasamanos y referencias",
+     "g": "Aprende a seguir líneas naturales como ríos, crestas y muros para no perderte sin mirar el mapa a cada rato.",
+     "p": [
+      "Un pasamanos es un elemento largo y claro que acompaña tu ruta, como un arroyo, una valla, un muro o una cresta.",
+      "Las referencias son puntos claros, como un refugio, un puente o un árbol solitario, que confirman dónde estás.",
+      "Un elemento de parada, como una carretera o un lago pasado tu destino, te avisa de que te has pasado."
+     ],
+     "q": "¿Qué elemento natural crees que sería más fácil de seguir: un río, un muro o una cresta?",
+     "c": "En un mapa, elige una ruta y anota un pasamanos, dos referencias y un elemento de parada."
+    },
+    "fr": {
+     "t": "Lignes directrices et repères",
+     "g": "Apprends à suivre des lignes naturelles comme rivières, crêtes et murs pour rester sur ta route sans regarder sans cesse la carte.",
+     "p": [
+      "Une ligne directrice est un élément long et net le long de ton itinéraire : ruisseau, clôture, mur ou crête.",
+      "Les repères sont des points marquants, comme un refuge, un pont ou un arbre isolé, qui confirment ta position.",
+      "Une ligne d'arrêt, comme une route ou un lac au-delà de ton but, te signale que tu es allé trop loin."
+     ],
+     "q": "Quel élément naturel te semblerait le plus facile à suivre : une rivière, un mur ou une crête ?",
+     "c": "Sur une carte, choisis un itinéraire et note une ligne directrice, deux repères et une ligne d'arrêt."
+    },
+    "it": {
+     "t": "Linee guida e punti di riferimento",
+     "g": "Impara a seguire linee naturali come fiumi, creste e muri per restare sulla via senza guardare sempre la carta.",
+     "p": [
+      "Una linea guida è un elemento lungo e chiaro lungo il percorso, come un torrente, una recinzione, un muro o una cresta.",
+      "I punti di riferimento sono luoghi riconoscibili, come un rifugio, un ponte o un albero isolato, che confermano dove sei.",
+      "Un elemento di arresto, come una strada o un lago oltre la meta, ti dice che sei andato troppo avanti."
+     ],
+     "q": "Quale elemento naturale pensi sia più facile da seguire: un fiume, un muro o una cresta?",
+     "c": "Su una carta scegli un percorso e annota una linea guida, due punti di riferimento e un elemento di arresto."
+    },
+    "pt": {
+     "t": "Linhas de condução e referências",
+     "g": "Aprende a seguir linhas naturais como rios, cumeadas e muros para não te perderes sem olhar sempre para o mapa.",
+     "p": [
+      "Uma linha de condução é um elemento longo e claro ao longo do percurso, como um ribeiro, vedação, muro ou cumeada.",
+      "As referências são pontos marcantes, como um refúgio, uma ponte ou uma árvore isolada, que confirmam onde estás.",
+      "Um elemento de paragem, como uma estrada ou lago depois do destino, avisa-te que foste longe demais."
+     ],
+     "q": "Que elemento natural achas mais fácil de seguir: um rio, um muro ou uma cumeada?",
+     "c": "Num mapa, escolhe um percurso e aponta uma linha de condução, duas referências e um elemento de paragem."
+    },
+    "pt_BR": {
+     "t": "Corrimãos e pontos de referência",
+     "g": "Aprenda a seguir linhas naturais como rios, cristas e muros para não se perder sem olhar o mapa toda hora.",
+     "p": [
+      "Um corrimão é um elemento longo e claro ao longo da rota, como um riacho, cerca, muro ou crista.",
+      "Pontos de referência são lugares marcantes, como um abrigo, uma ponte ou uma árvore isolada, que confirmam onde você está.",
+      "Um limite de segurança, como uma estrada ou lago depois do destino, avisa que você passou do ponto."
+     ],
+     "q": "Qual elemento natural você acha mais fácil de seguir: um rio, um muro ou uma crista?",
+     "c": "Num mapa, escolha uma rota e anote um corrimão, dois pontos de referência e um limite de segurança."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to do if you feel lost",
+     "g": "Learn the calm STOP method: stop, think, observe and plan before you move on.",
+     "p": [
+      "Stop as soon as you feel unsure, have a drink and a snack, and take a few slow breaths.",
+      "Think about the last place you were sure of, and observe the map, markers and landmarks around you.",
+      "Plan your next step: often the best choice is to go back to the last known point; call for help if needed."
+     ],
+     "q": "How do you usually react when you take a wrong turn, even in a city?",
+     "c": "Write STOP on a small card with the four words and keep it with your map."
+    },
+    "de": {
+     "t": "Was tun, wenn du dich verlaufen hast",
+     "g": "Lerne die ruhige STOP-Methode: anhalten, nachdenken, beobachten und planen, bevor du weitergehst.",
+     "p": [
+      "Halt an, sobald du unsicher bist, trink, iss etwas und atme ein paar Mal langsam durch.",
+      "Denk an den letzten Ort, an dem du sicher warst, und schau dir Karte, Markierungen und Landmarken an.",
+      "Plane den nächsten Schritt: Oft ist es am besten, zum letzten bekannten Punkt zurückzugehen; ruf bei Bedarf Hilfe."
+     ],
+     "q": "Wie reagierst du normalerweise, wenn du falsch abbiegst, selbst in der Stadt?",
+     "c": "Schreib STOP mit den vier Wörtern auf eine kleine Karte und leg sie zu deiner Wanderkarte."
+    },
+    "es": {
+     "t": "Qué hacer si te sientes perdido",
+     "g": "Aprende el método tranquilo PARA: parar, pensar, observar y planificar antes de seguir.",
+     "p": [
+      "Para en cuanto dudes, bebe, come algo y respira despacio unas cuantas veces.",
+      "Piensa en el último lugar donde estabas seguro y observa el mapa, las marcas y las referencias a tu alrededor.",
+      "Planifica el siguiente paso: a menudo lo mejor es volver al último punto conocido; pide ayuda si hace falta."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando te equivocas de camino, incluso en una ciudad?",
+     "c": "Escribe en una tarjeta las cuatro palabras parar, pensar, observar y planificar, y guárdala con tu mapa."
+    },
+    "fr": {
+     "t": "Que faire si tu te sens perdu",
+     "g": "Apprends la méthode calme STOP : s'arrêter, réfléchir, observer et planifier avant de repartir.",
+     "p": [
+      "Arrête-toi dès que tu as un doute, bois, mange un peu et respire lentement plusieurs fois.",
+      "Repense au dernier endroit où tu étais sûr, et observe carte, balisage et repères autour de toi.",
+      "Planifie la suite : souvent, le mieux est de revenir au dernier point connu ; appelle à l'aide si besoin."
+     ],
+     "q": "Comment réagis-tu d'habitude quand tu te trompes de chemin, même en ville ?",
+     "c": "Écris sur une petite carte les quatre mots s'arrêter, réfléchir, observer, planifier et garde-la avec ta carte."
+    },
+    "it": {
+     "t": "Cosa fare se ti senti perso",
+     "g": "Impara il metodo tranquillo STOP: fermarsi, pensare, osservare e pianificare prima di ripartire.",
+     "p": [
+      "Fermati appena hai un dubbio, bevi, mangia qualcosa e fai qualche respiro lento.",
+      "Pensa all'ultimo punto in cui eri sicuro e osserva carta, segnavia e punti di riferimento intorno a te.",
+      "Pianifica il passo successivo: spesso la scelta migliore è tornare all'ultimo punto noto; chiedi aiuto se serve."
+     ],
+     "q": "Come reagisci di solito quando sbagli strada, anche in città?",
+     "c": "Scrivi su un cartoncino le quattro parole fermarsi, pensare, osservare, pianificare e tienilo con la carta."
+    },
+    "pt": {
+     "t": "O que fazer se te sentires perdido",
+     "g": "Aprende o método calmo PARA: parar, pensar, observar e planear antes de seguir.",
+     "p": [
+      "Para logo que tenhas dúvidas, bebe, come algo e respira devagar algumas vezes.",
+      "Pensa no último sítio onde tinhas a certeza e observa o mapa, as marcas e as referências à tua volta.",
+      "Planeia o passo seguinte: muitas vezes o melhor é voltar ao último ponto conhecido; pede ajuda se for preciso."
+     ],
+     "q": "Como costumas reagir quando te enganas no caminho, mesmo na cidade?",
+     "c": "Escreve num cartão as quatro palavras parar, pensar, observar e planear, e guarda-o com o mapa."
+    },
+    "pt_BR": {
+     "t": "O que fazer se sentir que se perdeu",
+     "g": "Aprenda o método calmo PARE: parar, pensar, observar e planejar antes de seguir.",
+     "p": [
+      "Pare assim que bater a dúvida, beba água, coma algo e respire devagar algumas vezes.",
+      "Pense no último lugar onde tinha certeza e observe o mapa, as marcações e as referências ao redor.",
+      "Planeje o próximo passo: muitas vezes o melhor é voltar ao último ponto conhecido; peça ajuda se precisar."
+     ],
+     "q": "Como você costuma reagir quando erra o caminho, mesmo na cidade?",
+     "c": "Escreva num cartão as quatro palavras parar, pensar, observar e planejar, e guarde junto com o mapa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hiking with friends",
+     "g": "Learn how to choose a pace that suits the group and keep everyone together and happy.",
+     "p": [
+      "Let the slowest person set the pace, or walk near the front, so nobody feels rushed or left behind.",
+      "Agree on regrouping points, like junctions and summits, and wait there until everyone arrives.",
+      "Share the plan, snacks and jokes, and check in with each other about energy, feet and mood."
+     ],
+     "q": "Who would you love to take on a hike, and where would you go?",
+     "c": "Invite one friend to join you for a short walk this week."
+    },
+    "de": {
+     "t": "Wandern mit Freunden",
+     "g": "Lerne, ein Tempo zu wählen, das zur Gruppe passt, und alle zusammen und gut gelaunt zu halten.",
+     "p": [
+      "Lass die langsamste Person das Tempo bestimmen oder vorne gehen, damit sich niemand gehetzt oder abgehängt fühlt.",
+      "Vereinbart Sammelpunkte wie Abzweigungen und Gipfel und wartet dort, bis alle da sind.",
+      "Teilt Plan, Snacks und Witze, und fragt einander nach Energie, Füßen und Stimmung."
+     ],
+     "q": "Wen würdest du gern auf eine Wanderung mitnehmen, und wohin würdet ihr gehen?",
+     "c": "Lade diese Woche eine Freundin oder einen Freund zu einem kurzen Spaziergang ein."
+    },
+    "es": {
+     "t": "Caminar con amigos",
+     "g": "Aprende a elegir un ritmo que vaya bien al grupo y a mantener a todos juntos y contentos.",
+     "p": [
+      "Deja que la persona más lenta marque el ritmo o vaya delante, para que nadie se sienta presionado o rezagado.",
+      "Acordad puntos de reagrupamiento, como cruces y cimas, y esperad allí hasta que lleguen todos.",
+      "Compartid el plan, los snacks y las risas, y preguntaos por la energía, los pies y el ánimo."
+     ],
+     "q": "¿A quién te encantaría llevar de ruta y adónde iríais?",
+     "c": "Invita a un amigo a dar un paseo corto contigo esta semana."
+    },
+    "fr": {
+     "t": "Randonner entre amis",
+     "g": "Apprends à choisir une allure qui convient au groupe et à garder tout le monde ensemble et de bonne humeur.",
+     "p": [
+      "Laisse la personne la plus lente donner le rythme ou marcher devant, pour que personne ne soit pressé ou distancé.",
+      "Convenez de points de regroupement, comme les intersections et les sommets, et attendez-y tout le monde.",
+      "Partagez le plan, les en-cas et les blagues, et prenez des nouvelles de l'énergie, des pieds et du moral."
+     ],
+     "q": "Qui aimerais-tu emmener en rando, et où iriez-vous ?",
+     "c": "Invite un ami à faire une petite marche avec toi cette semaine."
+    },
+    "it": {
+     "t": "Camminare con gli amici",
+     "g": "Impara a scegliere un ritmo adatto al gruppo e a tenere tutti insieme e di buon umore.",
+     "p": [
+      "Lascia che la persona più lenta detti il ritmo o cammini davanti, così nessuno si sente spinto o lasciato indietro.",
+      "Concordate punti di ritrovo, come bivi e vette, e aspettate lì finché arrivano tutti.",
+      "Condividete il piano, gli snack e le battute, e chiedetevi come vanno energia, piedi e umore."
+     ],
+     "q": "Chi ti piacerebbe portare in escursione, e dove andreste?",
+     "c": "Invita un amico a fare una breve camminata con te questa settimana."
+    },
+    "pt": {
+     "t": "Caminhar com amigos",
+     "g": "Aprende a escolher um ritmo que sirva ao grupo e a manter todos juntos e bem-dispostos.",
+     "p": [
+      "Deixa a pessoa mais lenta marcar o ritmo ou ir à frente, para ninguém se sentir apressado ou para trás.",
+      "Combinem pontos de reagrupamento, como cruzamentos e cumes, e esperem lá até todos chegarem.",
+      "Partilhem o plano, os snacks e as piadas, e perguntem uns aos outros pela energia, pelos pés e pela disposição."
+     ],
+     "q": "Quem adorarias levar numa caminhada, e para onde iriam?",
+     "c": "Convida um amigo para uma caminhada curta contigo esta semana."
+    },
+    "pt_BR": {
+     "t": "Fazendo trilha com amigos",
+     "g": "Aprenda a escolher um ritmo que sirva para o grupo e a manter todo mundo junto e feliz.",
+     "p": [
+      "Deixe a pessoa mais lenta ditar o ritmo ou ir na frente, para ninguém se sentir apressado ou deixado para trás.",
+      "Combinem pontos de reagrupamento, como bifurcações e topos, e esperem ali até todos chegarem.",
+      "Dividam o plano, os lanches e as risadas, e perguntem uns aos outros sobre energia, pés e humor."
+     ],
+     "q": "Quem você adoraria levar para uma trilha, e para onde iriam?",
+     "c": "Convide um amigo para uma caminhada curta com você nesta semana."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hiking with children",
+     "g": "Learn how short routes, games, snacks and small goals make hiking a joy for kids.",
+     "p": [
+      "Choose short, varied routes with streams, rocks to climb or a playground at the end.",
+      "Turn the walk into a game: spot trail markers, find five kinds of leaves or follow animal tracks.",
+      "Bring plenty of snacks and celebrate small goals like the next bridge, letting kids set the pace."
+     ],
+     "q": "What did you love exploring outdoors as a child?",
+     "c": "Plan a mini-adventure for a child you know, with a route, a game and a snack."
+    },
+    "de": {
+     "t": "Wandern mit Kindern",
+     "g": "Lerne, wie kurze Routen, Spiele, Snacks und kleine Ziele das Wandern für Kinder zur Freude machen.",
+     "p": [
+      "Wähl kurze, abwechslungsreiche Wege mit Bächen, Kletterfelsen oder einem Spielplatz am Ende.",
+      "Mach den Weg zum Spiel: Markierungen entdecken, fünf Blattarten finden oder Tierspuren folgen.",
+      "Nimm viele Snacks mit und feiere kleine Ziele wie die nächste Brücke, und lass Kinder das Tempo bestimmen."
+     ],
+     "q": "Was hast du als Kind draußen am liebsten erkundet?",
+     "c": "Plane ein Mini-Abenteuer für ein Kind, das du kennst, mit Route, Spiel und Snack."
+    },
+    "es": {
+     "t": "Caminar con niños",
+     "g": "Aprende cómo rutas cortas, juegos, snacks y metas pequeñas hacen del senderismo una alegría para los niños.",
+     "p": [
+      "Elige rutas cortas y variadas, con arroyos, rocas para trepar o un parque infantil al final.",
+      "Convierte el paseo en un juego: buscar marcas, encontrar cinco tipos de hojas o seguir huellas de animales.",
+      "Lleva muchos snacks y celebra metas pequeñas como el próximo puente, dejando que los niños marquen el ritmo."
+     ],
+     "q": "¿Qué te encantaba explorar al aire libre cuando eras niño?",
+     "c": "Planea una miniaventura para un niño que conozcas, con ruta, juego y merienda."
+    },
+    "fr": {
+     "t": "Randonner avec des enfants",
+     "g": "Apprends comment des itinéraires courts, des jeux, des en-cas et de petits objectifs rendent la rando joyeuse pour les enfants.",
+     "p": [
+      "Choisis des parcours courts et variés, avec ruisseaux, rochers à escalader ou une aire de jeux à l'arrivée.",
+      "Transforme la marche en jeu : repérer les balises, trouver cinq sortes de feuilles ou suivre des traces d'animaux.",
+      "Prévois beaucoup d'en-cas et fête les petits objectifs, comme le prochain pont, en laissant les enfants donner le rythme."
+     ],
+     "q": "Qu'aimais-tu explorer dehors quand tu étais enfant ?",
+     "c": "Prépare une mini-aventure pour un enfant que tu connais, avec un parcours, un jeu et un goûter."
+    },
+    "it": {
+     "t": "Camminare con i bambini",
+     "g": "Impara come percorsi brevi, giochi, snack e piccoli obiettivi rendono l'escursione una gioia per i bambini.",
+     "p": [
+      "Scegli percorsi brevi e vari, con ruscelli, rocce da scalare o un parco giochi all'arrivo.",
+      "Trasforma la camminata in un gioco: trovare i segnavia, cinque tipi di foglie o seguire tracce di animali.",
+      "Porta tanti snack e festeggia piccoli traguardi come il prossimo ponte, lasciando che i bambini dettino il ritmo."
+     ],
+     "q": "Cosa ti piaceva esplorare all'aperto da bambino?",
+     "c": "Pianifica una mini avventura per un bambino che conosci, con percorso, gioco e merenda."
+    },
+    "pt": {
+     "t": "Caminhar com crianças",
+     "g": "Aprende como percursos curtos, jogos, snacks e pequenas metas tornam as caminhadas uma alegria para as crianças.",
+     "p": [
+      "Escolhe percursos curtos e variados, com ribeiros, rochas para trepar ou um parque infantil no fim.",
+      "Transforma a caminhada num jogo: encontrar marcas, descobrir cinco tipos de folhas ou seguir pegadas de animais.",
+      "Leva muitos snacks e celebra pequenas metas como a próxima ponte, deixando as crianças marcar o ritmo."
+     ],
+     "q": "O que adoravas explorar ao ar livre quando eras criança?",
+     "c": "Planeia uma mini-aventura para uma criança que conheças, com percurso, jogo e lanche."
+    },
+    "pt_BR": {
+     "t": "Fazendo trilha com crianças",
+     "g": "Aprenda como trilhas curtas, brincadeiras, lanches e pequenas metas deixam a trilha divertida para as crianças.",
+     "p": [
+      "Escolha rotas curtas e variadas, com riachos, pedras para escalar ou um parquinho no final.",
+      "Transforme a caminhada numa brincadeira: achar marcações, encontrar cinco tipos de folhas ou seguir pegadas de bichos.",
+      "Leve muitos lanches e comemore pequenas metas como a próxima ponte, deixando as crianças ditarem o ritmo."
+     ],
+     "q": "O que você adorava explorar ao ar livre quando era criança?",
+     "c": "Planeje uma miniaventura para uma criança que você conhece, com rota, brincadeira e lanche."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hiking with dogs",
+     "g": "Learn how to hike happily with a dog while respecting local rules, other people and wildlife.",
+     "p": [
+      "Check the rules first: some parks and reserves require leads or do not allow dogs at all.",
+      "Keep your dog on a lead near livestock, wildlife and other people, especially in nesting season.",
+      "Bring water and a bowl for your dog, bag and carry out its poo, and watch for hot or sharp ground."
+     ],
+     "q": "Do you have a dog, or would you love to hike with one?",
+     "c": "Look up whether dogs are allowed on a trail you would like to visit."
+    },
+    "de": {
+     "t": "Wandern mit Hund",
+     "g": "Lerne, entspannt mit Hund zu wandern und dabei Regeln, andere Menschen und Wildtiere zu respektieren.",
+     "p": [
+      "Prüf zuerst die Regeln: In manchen Parks und Schutzgebieten gilt Leinenpflicht oder Hundeverbot.",
+      "Halte deinen Hund nahe Weidetieren, Wildtieren und anderen Menschen an der Leine, besonders in der Brutzeit.",
+      "Nimm Wasser und einen Napf für den Hund mit, sammle seinen Kot im Beutel ein und achte auf heißen oder spitzen Boden."
+     ],
+     "q": "Hast du einen Hund, oder würdest du gern mit einem wandern?",
+     "c": "Informiere dich, ob Hunde auf einem Weg erlaubt sind, den du besuchen möchtest."
+    },
+    "es": {
+     "t": "Caminar con perros",
+     "g": "Aprende a disfrutar de la ruta con tu perro respetando las normas, a otras personas y a la fauna.",
+     "p": [
+      "Mira primero las normas: algunos parques y reservas exigen correa o no permiten perros.",
+      "Lleva al perro con correa cerca del ganado, la fauna y otras personas, sobre todo en época de cría.",
+      "Lleva agua y un cuenco para tu perro, recoge sus cacas en una bolsa y vigila el suelo caliente o cortante."
+     ],
+     "q": "¿Tienes perro o te encantaría caminar con uno?",
+     "c": "Averigua si se admiten perros en una ruta que te gustaría hacer."
+    },
+    "fr": {
+     "t": "Randonner avec son chien",
+     "g": "Apprends à randonner avec ton chien en respectant les règles, les autres promeneurs et la faune.",
+     "p": [
+      "Vérifie d'abord les règles : certains parcs et réserves imposent la laisse ou interdisent les chiens.",
+      "Garde ton chien en laisse près des troupeaux, de la faune et des gens, surtout en période de nidification.",
+      "Prévois de l'eau et une gamelle, ramasse ses crottes dans un sac et fais attention au sol brûlant ou coupant."
+     ],
+     "q": "As-tu un chien, ou aimerais-tu randonner avec un chien ?",
+     "c": "Vérifie si les chiens sont autorisés sur un sentier que tu aimerais découvrir."
+    },
+    "it": {
+     "t": "Camminare con il cane",
+     "g": "Impara a fare escursioni sereno con il cane rispettando regole, altre persone e fauna selvatica.",
+     "p": [
+      "Controlla prima le regole: alcuni parchi e riserve richiedono il guinzaglio o non ammettono cani.",
+      "Tieni il cane al guinzaglio vicino a bestiame, fauna e altre persone, soprattutto nel periodo di nidificazione.",
+      "Porta acqua e una ciotola per il cane, raccogli i suoi bisogni in un sacchetto e attento al terreno caldo o tagliente."
+     ],
+     "q": "Hai un cane, o ti piacerebbe camminare con uno?",
+     "c": "Verifica se i cani sono ammessi su un sentiero che vorresti visitare."
+    },
+    "pt": {
+     "t": "Caminhar com cães",
+     "g": "Aprende a caminhar com o teu cão respeitando as regras locais, as outras pessoas e os animais selvagens.",
+     "p": [
+      "Vê primeiro as regras: alguns parques e reservas exigem trela ou não permitem cães.",
+      "Mantém o cão de trela perto de gado, animais selvagens e outras pessoas, sobretudo na época de nidificação.",
+      "Leva água e uma tigela para o cão, apanha os dejetos num saco e cuidado com chão quente ou cortante."
+     ],
+     "q": "Tens cão, ou adorarias caminhar com um?",
+     "c": "Verifica se os cães são permitidos num trilho que gostarias de visitar."
+    },
+    "pt_BR": {
+     "t": "Fazendo trilha com cachorro",
+     "g": "Aprenda a curtir a trilha com seu cachorro respeitando as regras, as outras pessoas e os animais silvestres.",
+     "p": [
+      "Veja as regras antes: alguns parques e reservas exigem guia ou não permitem cachorros.",
+      "Mantenha o cachorro na guia perto de gado, animais silvestres e outras pessoas, principalmente na época de ninhos.",
+      "Leve água e uma tigela para o cachorro, recolha o cocô num saquinho e cuidado com chão quente ou cortante."
+     ],
+     "q": "Você tem cachorro, ou adoraria fazer trilha com um?",
+     "c": "Pesquise se cachorros são permitidos numa trilha que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: moving well on the trail",
+     "g": "Look back at the technique, navigation and care skills you built in your second month.",
+     "p": [
+      "Technique: short uphill steps, the rest step, soft knees downhill, steady breathing and good breaks.",
+      "Navigation: map scale, symbols, contours, orienting the map, the compass, handrails and STOP.",
+      "Care: Leave No Trace, feet and blisters, sun, warmth, rain, heat, and hiking with others and dogs."
+     ],
+     "q": "Which new skill from this month are you most proud of?",
+     "c": "Plan a hike that uses a map, a handrail and regular breaks, and share it with a friend."
+    },
+    "de": {
+     "t": "Rückblick: gut unterwegs auf dem Weg",
+     "g": "Blick zurück auf Technik, Navigation und Fürsorge, die du im zweiten Monat gelernt hast.",
+     "p": [
+      "Technik: kurze Schritte bergauf, Rastschritt, lockere Knie bergab, ruhiger Atem und gute Pausen.",
+      "Navigation: Maßstab, Kartenzeichen, Höhenlinien, Karte einnorden, Kompass, Leitlinien und STOP.",
+      "Fürsorge: Leave No Trace, Füße und Blasen, Sonne, Wärme, Regen, Hitze und Wandern mit anderen und Hund."
+     ],
+     "q": "Auf welche neue Fähigkeit aus diesem Monat bist du am meisten stolz?",
+     "c": "Plane eine Tour mit Karte, Leitlinie und regelmäßigen Pausen und teile sie mit einem Freund."
+    },
+    "es": {
+     "t": "Repaso: moverse bien en el sendero",
+     "g": "Repasa la técnica, la orientación y los cuidados que has aprendido en tu segundo mes.",
+     "p": [
+      "Técnica: pasos cortos al subir, paso de descanso, rodillas flexibles al bajar, respiración tranquila y buenos descansos.",
+      "Orientación: escala, símbolos, curvas de nivel, orientar el mapa, brújula, pasamanos y el método PARA.",
+      "Cuidados: No Dejar Rastro, pies y ampollas, sol, abrigo, lluvia, calor y caminar con otros y con perros."
+     ],
+     "q": "¿De qué nueva habilidad de este mes estás más orgulloso?",
+     "c": "Planifica una ruta con mapa, un pasamanos y descansos regulares, y compártela con un amigo."
+    },
+    "fr": {
+     "t": "Bilan : bien se déplacer sur le sentier",
+     "g": "Fais le point sur la technique, l'orientation et les bons soins appris pendant ton deuxième mois.",
+     "p": [
+      "Technique : petits pas en montée, pas de repos, genoux souples en descente, respiration calme et bonnes pauses.",
+      "Orientation : échelle, symboles, courbes de niveau, orienter la carte, boussole, lignes directrices et STOP.",
+      "Soins : Sans Trace, pieds et ampoules, soleil, chaleur du corps, pluie, canicule, et randonner à plusieurs ou avec un chien."
+     ],
+     "q": "De quelle nouvelle compétence de ce mois es-tu le plus fier ?",
+     "c": "Prépare une rando avec carte, ligne directrice et pauses régulières, et partage-la avec un ami."
+    },
+    "it": {
+     "t": "Ripasso: muoversi bene sul sentiero",
+     "g": "Ripassa tecnica, orientamento e cura che hai imparato nel tuo secondo mese.",
+     "p": [
+      "Tecnica: passi brevi in salita, passo di riposo, ginocchia morbide in discesa, respiro regolare e buone pause.",
+      "Orientamento: scala, simboli, curve di livello, orientare la carta, bussola, linee guida e STOP.",
+      "Cura: Leave No Trace, piedi e vesciche, sole, calore, pioggia, caldo e camminare con altri e con il cane."
+     ],
+     "q": "Di quale nuova abilità di questo mese sei più orgoglioso?",
+     "c": "Pianifica un'escursione con carta, una linea guida e pause regolari, e condividila con un amico."
+    },
+    "pt": {
+     "t": "Revisão: mover-se bem no trilho",
+     "g": "Revê a técnica, a orientação e os cuidados que aprendeste no segundo mês.",
+     "p": [
+      "Técnica: passos curtos a subir, passo de descanso, joelhos soltos a descer, respiração calma e boas pausas.",
+      "Orientação: escala, símbolos, curvas de nível, orientar o mapa, bússola, linhas de condução e o método PARA.",
+      "Cuidados: Não Deixar Rasto, pés e bolhas, sol, agasalho, chuva, calor e caminhar com outros e com cães."
+     ],
+     "q": "De que nova competência deste mês te orgulhas mais?",
+     "c": "Planeia uma caminhada com mapa, uma linha de condução e pausas regulares, e partilha-a com um amigo."
+    },
+    "pt_BR": {
+     "t": "Revisão: andando bem na trilha",
+     "g": "Revise a técnica, a navegação e os cuidados que você aprendeu no segundo mês.",
+     "p": [
+      "Técnica: passos curtos na subida, passo de descanso, joelhos soltos na descida, respiração calma e boas pausas.",
+      "Navegação: escala, símbolos, curvas de nível, orientar o mapa, bússola, corrimãos e o método PARE.",
+      "Cuidados: Não Deixe Rastros, pés e bolhas, sol, agasalho, chuva, calor e trilhas com outras pessoas e cachorros."
+     ],
+     "q": "De qual nova habilidade deste mês você mais se orgulha?",
+     "c": "Planeje uma trilha com mapa, um corrimão e pausas regulares, e compartilhe com um amigo."
+    }
+   }
+  }
+ ]
+}

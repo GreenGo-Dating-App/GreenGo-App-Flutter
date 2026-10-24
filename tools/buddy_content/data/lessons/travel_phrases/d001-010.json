@@ -1,0 +1,835 @@
+{
+ "topic": "travel_phrases",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why travel phrases matter",
+     "g": "See how a few local words open doors, earn smiles and make every trip smoother.",
+     "p": [
+      "Even a simple «Ciao» or «Bonjour» shows respect, and people often answer with extra warmth and patience.",
+      "You do not need to be fluent: ten to twenty key phrases cover greetings, food, directions, transport and help.",
+      "Locals happily forgive mistakes; trying with a smile works better than perfect grammar or silence."
+     ],
+     "q": "Which country or language would you most like to try a few phrases in, and why?",
+     "c": "Pick one dream destination and write down how to say hello in its language."
+    },
+    "de": {
+     "t": "Warum Reisesätze wichtig sind",
+     "g": "Entdecke, wie ein paar Worte der Landessprache Türen öffnen, Lächeln schenken und Reisen leichter machen.",
+     "p": [
+      "Schon ein einfaches «Ciao» oder «Bonjour» zeigt Respekt, und viele reagieren mit mehr Herzlichkeit und Geduld.",
+      "Du musst nicht fließend sprechen: zehn bis zwanzig Sätze decken Gruß, Essen, Wege, Verkehr und Hilfe ab.",
+      "Fehler verzeiht man gern; ein Versuch mit Lächeln wirkt besser als perfekte Grammatik oder Schweigen."
+     ],
+     "q": "In welchem Land oder welcher Sprache möchtest du am liebsten ein paar Sätze ausprobieren, und warum?",
+     "c": "Wähle ein Traumziel und schreib auf, wie man dort Hallo sagt."
+    },
+    "es": {
+     "t": "Por qué importan las frases de viaje",
+     "g": "Descubre cómo unas pocas palabras locales abren puertas, sacan sonrisas y hacen cada viaje más fácil.",
+     "p": [
+      "Un simple «Ciao» o «Bonjour» muestra respeto, y la gente suele responder con más calidez y paciencia.",
+      "No necesitas fluidez: diez o veinte frases clave cubren saludos, comida, direcciones, transporte y ayuda.",
+      "La gente perdona los errores con gusto; intentarlo con una sonrisa funciona mejor que la gramática perfecta."
+     ],
+     "q": "¿En qué país o idioma te gustaría más probar unas frases, y por qué?",
+     "c": "Elige un destino soñado y escribe cómo se dice hola en su idioma."
+    },
+    "fr": {
+     "t": "Pourquoi les phrases de voyage comptent",
+     "g": "Découvre comment quelques mots locaux ouvrent des portes, font sourire et rendent chaque voyage plus simple.",
+     "p": [
+      "Un simple «Ciao» ou «Hola» montre du respect, et les gens répondent souvent avec plus de chaleur et de patience.",
+      "Pas besoin de parler couramment : dix à vingt phrases clés couvrent salut, repas, chemin, transports et aide.",
+      "On pardonne volontiers les erreurs ; essayer avec le sourire vaut mieux qu'une grammaire parfaite."
+     ],
+     "q": "Dans quel pays ou quelle langue aimerais-tu le plus essayer quelques phrases, et pourquoi ?",
+     "c": "Choisis une destination de rêve et note comment on dit bonjour dans sa langue."
+    },
+    "it": {
+     "t": "Perché le frasi di viaggio contano",
+     "g": "Scopri come poche parole locali aprono porte, regalano sorrisi e rendono ogni viaggio più semplice.",
+     "p": [
+      "Un semplice «Hola» o «Bonjour» mostra rispetto, e la gente spesso risponde con più calore e pazienza.",
+      "Non serve essere fluenti: dieci o venti frasi chiave coprono saluti, cibo, indicazioni, trasporti e aiuto.",
+      "Gli errori si perdonano volentieri; provarci con un sorriso funziona meglio della grammatica perfetta."
+     ],
+     "q": "In quale paese o lingua ti piacerebbe di più provare qualche frase, e perché?",
+     "c": "Scegli una meta dei sogni e scrivi come si dice ciao nella sua lingua."
+    },
+    "pt": {
+     "t": "Porque é que as frases de viagem importam",
+     "g": "Descobre como algumas palavras locais abrem portas, arrancam sorrisos e tornam cada viagem mais fácil.",
+     "p": [
+      "Um simples «Ciao» ou «Bonjour» mostra respeito, e as pessoas costumam responder com mais simpatia e paciência.",
+      "Não precisas de fluência: dez a vinte frases-chave cobrem cumprimentos, comida, caminhos, transportes e ajuda.",
+      "Os erros perdoam-se de bom grado; tentar com um sorriso resulta melhor do que gramática perfeita."
+     ],
+     "q": "Em que país ou língua gostavas mais de experimentar algumas frases, e porquê?",
+     "c": "Escolhe um destino de sonho e escreve como se diz olá na língua de lá."
+    },
+    "pt_BR": {
+     "t": "Por que as frases de viagem importam",
+     "g": "Descubra como algumas palavras locais abrem portas, arrancam sorrisos e deixam cada viagem mais fácil.",
+     "p": [
+      "Um simples «Ciao» ou «Bonjour» mostra respeito, e as pessoas costumam responder com mais carinho e paciência.",
+      "Você não precisa de fluência: dez a vinte frases-chave cobrem cumprimentos, comida, caminhos, transporte e ajuda.",
+      "As pessoas perdoam erros numa boa; tentar com um sorriso funciona melhor que gramática perfeita."
+     ],
+     "q": "Em que país ou idioma você mais gostaria de testar algumas frases, e por quê?",
+     "c": "Escolha um destino dos sonhos e anote como se diz oi no idioma de lá."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hello and goodbye",
+     "g": "Greet people politely at any time of day and say goodbye warmly.",
+     "p": [
+      "Spanish: «Buenos días» (BWEH-nos DEE-as) in the morning, «Buenas tardes» in the afternoon, «Adiós» (a-DYOS) for bye.",
+      "French: «Bonjour» (bon-ZHOOR) during the day, «Bonsoir» (bon-SWAHR) in the evening, «Au revoir» (oh ruh-VWAHR) to leave.",
+      "Italian: «Buongiorno» (bwon-JOR-no) by day, «Buonasera» (bwo-na-SEH-ra) later on, «Arrivederci» (ar-ree-veh-DER-chee)."
+     ],
+     "q": "How do people usually greet each other where you live: a word, a handshake or a wave?",
+     "c": "Greet three people today in a language you are learning, even if only in your head."
+    },
+    "de": {
+     "t": "Hallo und Auf Wiedersehen",
+     "g": "Begrüße Menschen zu jeder Tageszeit höflich und verabschiede dich herzlich.",
+     "p": [
+      "Spanisch: «Buenos días» (BUE-nos DI-as) morgens, «Buenas tardes» nachmittags, «Adiós» (a-DJOS) zum Abschied.",
+      "Französisch: «Bonjour» (bon-SCHUR) tagsüber, «Bonsoir» (bon-SSUAR) abends, «Au revoir» (o rö-WUAR) beim Gehen.",
+      "Italienisch: «Buongiorno» (buon-DSCHOR-no) tagsüber, «Buonasera» (buo-na-SE-ra) später, «Arrivederci» zum Abschied."
+     ],
+     "q": "Wie begrüßt man sich bei dir zu Hause meistens: mit einem Wort, einem Händedruck oder einem Winken?",
+     "c": "Begrüße heute drei Menschen in einer Sprache, die du lernst, und sei es nur im Kopf."
+    },
+    "es": {
+     "t": "Hola y adiós",
+     "g": "Saluda con cortesía a cualquier hora del día y despídete con calidez.",
+     "p": [
+      "Inglés: «Good morning» (gud MOR-ning) por la mañana, «Good evening» por la tarde-noche y «Goodbye» (gud-BAI) al irte.",
+      "Francés: «Bonjour» (bon-YUR) de día, «Bonsoir» (bon-SUAR) por la noche, «Au revoir» (o re-VUAR) para despedirte.",
+      "Italiano: «Buongiorno» (buon-YOR-no) de día, «Buonasera» (buo-na-SE-ra) más tarde, «Arrivederci» (a-rri-ve-DER-chi)."
+     ],
+     "q": "¿Cómo se saluda normalmente la gente donde vives: con una palabra, un apretón de manos o un gesto?",
+     "c": "Saluda hoy a tres personas en un idioma que estés aprendiendo, aunque sea solo mentalmente."
+    },
+    "fr": {
+     "t": "Bonjour et au revoir",
+     "g": "Saluer poliment à toute heure de la journée et dire au revoir chaleureusement.",
+     "p": [
+      "Espagnol : «Buenos días» (bou-é-noss DI-ass) le matin, «Buenas tardes» l'après-midi, «Adiós» (a-DIOSS) pour partir.",
+      "Anglais : «Good morning» (goud MOR-nigne) le matin, «Good evening» le soir et «Goodbye» (goud-BAÏ) pour partir.",
+      "Italien : «Buongiorno» (bouone-DJOR-no) le jour, «Buonasera» (bouo-na-SÉ-ra) plus tard, «Arrivederci» pour partir."
+     ],
+     "q": "Comment se salue-t-on d'habitude chez toi : un mot, une poignée de main ou un signe de la main ?",
+     "c": "Salue trois personnes aujourd'hui dans une langue que tu apprends, même seulement dans ta tête."
+    },
+    "it": {
+     "t": "Ciao e arrivederci",
+     "g": "Salutare con garbo a ogni ora del giorno e congedarsi con calore.",
+     "p": [
+      "Spagnolo: «Buenos días» (BUE-nos DI-as) di mattina, «Buenas tardes» di pomeriggio, «Adiós» (a-DIOS) per salutare.",
+      "Francese: «Bonjour» (bon-JUR) di giorno, «Bonsoir» (bon-SUAR) di sera, «Au revoir» (o re-VUAR) quando te ne vai.",
+      "Inglese: «Good morning» (gud MOR-ning) di mattina, «Good evening» di sera e «Goodbye» (gud-BAI) per congedarsi."
+     ],
+     "q": "Come ci si saluta di solito dove vivi: con una parola, una stretta di mano o un cenno?",
+     "c": "Saluta oggi tre persone in una lingua che stai imparando, anche solo nella tua testa."
+    },
+    "pt": {
+     "t": "Olá e adeus",
+     "g": "Cumprimentar com educação a qualquer hora do dia e despedir-se com simpatia.",
+     "p": [
+      "Espanhol: «Buenos días» (BUE-nos DI-as) de manhã, «Buenas tardes» à tarde, «Adiós» (a-DIÓS) para te despedires.",
+      "Francês: «Bonjour» (bon-JUR) durante o dia, «Bonsoir» (bon-SUAR) à noite, «Au revoir» (ô re-VUAR) ao saíres.",
+      "Italiano: «Buongiorno» (buon-DJOR-no) de dia, «Buonasera» (buo-na-SÉ-ra) mais tarde, «Arrivederci» para sair."
+     ],
+     "q": "Como é que as pessoas se cumprimentam onde vives: com uma palavra, um aperto de mão ou um aceno?",
+     "c": "Cumprimenta hoje três pessoas numa língua que estejas a aprender, nem que seja só na tua cabeça."
+    },
+    "pt_BR": {
+     "t": "Olá e tchau",
+     "g": "Cumprimentar com educação a qualquer hora do dia e se despedir com carinho.",
+     "p": [
+      "Espanhol: «Buenos días» (BUE-nos DI-as) de manhã, «Buenas tardes» à tarde, «Adiós» (a-DIÓS) para se despedir.",
+      "Francês: «Bonjour» (bon-JUR) durante o dia, «Bonsoir» (bon-SUAR) à noite, «Au revoir» (ô re-VUAR) ao sair.",
+      "Italiano: «Buongiorno» (buon-DJOR-no) de dia, «Buonasera» (buo-na-SÉ-ra) mais tarde, «Arrivederci» para sair."
+     ],
+     "q": "Como as pessoas se cumprimentam onde você mora: com uma palavra, um aperto de mão ou um aceno?",
+     "c": "Cumprimente hoje três pessoas num idioma que você está aprendendo, nem que seja só na cabeça."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Please and thank you",
+     "g": "Learn the two magic words in several languages and say them with a smile.",
+     "p": [
+      "Spanish: «Por favor» (por fa-VOR) and «Gracias» (GRA-syas). French: «S'il vous plaît» (seel voo PLEH) and «Merci» (mehr-SEE).",
+      "Italian: «Per favore» (per fa-VO-reh) and «Grazie» (GRAT-tsyeh). German: «Bitte» (BIT-teh) and «Danke» (DAHN-keh).",
+      "Portuguese: men say «Obrigado» (o-bree-GAH-doo), women say «Obrigada». Japanese: «Arigatō» (a-ree-GAH-toh)."
+     ],
+     "q": "In your own language, do people say please and thank you a lot, or is it more in the tone of voice?",
+     "c": "Say thank you in a new language to someone today, maybe the person who makes your coffee."
+    },
+    "de": {
+     "t": "Bitte und danke",
+     "g": "Lerne die zwei Zauberwörter in mehreren Sprachen und sag sie mit einem Lächeln.",
+     "p": [
+      "Spanisch: «Por favor» (por fa-WOR) und «Gracias» (GRA-ssjas). Französisch: «S'il vous plaît» (ssil wu PLÄ) und «Merci».",
+      "Italienisch: «Per favore» (per fa-WO-re) und «Grazie» (GRA-tsje). Englisch: «Please» (pliis) und «Thank you» (thänk ju).",
+      "Portugiesisch: Männer sagen «Obrigado» (o-bri-GA-du), Frauen «Obrigada». Japanisch: «Arigatō» (a-ri-GA-to)."
+     ],
+     "q": "Sagt man in deiner Sprache oft bitte und danke, oder steckt die Höflichkeit eher im Tonfall?",
+     "c": "Bedanke dich heute bei jemandem in einer neuen Sprache, vielleicht bei der Person, die deinen Kaffee macht."
+    },
+    "es": {
+     "t": "Por favor y gracias",
+     "g": "Aprende las dos palabras mágicas en varios idiomas y dilas con una sonrisa.",
+     "p": [
+      "Inglés: «Please» (pliis) y «Thank you» (zenk yu). Francés: «S'il vous plaît» (sil vu PLE) y «Merci» (mer-SÍ).",
+      "Italiano: «Per favore» (per fa-VO-re) y «Grazie» (GRA-tsie). Alemán: «Bitte» (BI-te) y «Danke» (DAN-ke).",
+      "Portugués: los hombres dicen «Obrigado» (o-bri-GA-du), las mujeres «Obrigada». Japonés: «Arigatō» (a-ri-GA-to)."
+     ],
+     "q": "En tu idioma, ¿la gente dice mucho por favor y gracias, o la cortesía va más en el tono?",
+     "c": "Da las gracias hoy en un idioma nuevo a alguien, quizá a quien te prepara el café."
+    },
+    "fr": {
+     "t": "S'il vous plaît et merci",
+     "g": "Apprendre les deux mots magiques dans plusieurs langues et les dire avec le sourire.",
+     "p": [
+      "Espagnol : «Por favor» (por fa-VOR) et «Gracias» (GRA-ssiass). Anglais : «Please» (pliz) et «Thank you» (sank you).",
+      "Italien : «Per favore» (pèr fa-VO-ré) et «Grazie» (GRA-tsié). Allemand : «Bitte» (BI-te) et «Danke» (DAN-ke).",
+      "Portugais : les hommes disent «Obrigado» (o-bri-GA-dou), les femmes «Obrigada». Japonais : «Arigatō» (a-ri-GA-to)."
+     ],
+     "q": "Dans ta langue, dit-on souvent s'il te plaît et merci, ou la politesse passe-t-elle surtout par le ton ?",
+     "c": "Dis merci aujourd'hui dans une nouvelle langue à quelqu'un, peut-être à la personne qui te sert ton café."
+    },
+    "it": {
+     "t": "Per favore e grazie",
+     "g": "Impara le due parole magiche in varie lingue e dille con un sorriso.",
+     "p": [
+      "Spagnolo: «Por favor» (por fa-VOR) e «Gracias» (GRA-sias). Francese: «S'il vous plaît» (sil vu PLÈ) e «Merci» (mer-SÌ).",
+      "Inglese: «Please» (pliis) e «Thank you» (thenk iu). Tedesco: «Bitte» (BI-te) e «Danke» (DAN-ke).",
+      "Portoghese: gli uomini dicono «Obrigado» (o-bri-GA-du), le donne «Obrigada». Giapponese: «Arigatō» (a-ri-GA-to)."
+     ],
+     "q": "Nella tua lingua si dice spesso per favore e grazie, o la cortesia passa più dal tono di voce?",
+     "c": "Ringrazia oggi qualcuno in una lingua nuova, magari chi ti prepara il caffè."
+    },
+    "pt": {
+     "t": "Por favor e obrigado",
+     "g": "Aprender as duas palavras mágicas em várias línguas e dizê-las com um sorriso.",
+     "p": [
+      "Espanhol: «Por favor» (por fa-VÔR) e «Gracias» (GRA-ssias). Francês: «S'il vous plaît» (sil vu PLÉ) e «Merci» (mer-SI).",
+      "Italiano: «Per favore» (per fa-VÔ-re) e «Grazie» (GRA-tsie). Alemão: «Bitte» (BI-te) e «Danke» (DAN-ke).",
+      "Inglês: «Please» (pliz) e «Thank you» (fénk iu). Japonês: «Arigatō» (a-ri-GA-tô)."
+     ],
+     "q": "Na tua língua diz-se muito por favor e obrigado, ou a delicadeza está mais no tom de voz?",
+     "c": "Agradece hoje a alguém numa língua nova, talvez a quem te serve o café."
+    },
+    "pt_BR": {
+     "t": "Por favor e obrigado",
+     "g": "Aprender as duas palavras mágicas em vários idiomas e dizê-las com um sorriso.",
+     "p": [
+      "Espanhol: «Por favor» (por fa-VÔR) e «Gracias» (GRA-ssias). Francês: «S'il vous plaît» (sil vu PLÉ) e «Merci» (mer-SI).",
+      "Italiano: «Per favore» (per fa-VÔ-re) e «Grazie» (GRA-tsie). Alemão: «Bitte» (BI-te) e «Danke» (DAN-ke).",
+      "Inglês: «Please» (pliz) e «Thank you» (fênk iu). Japonês: «Arigatō» (a-ri-GA-tô)."
+     ],
+     "q": "No seu idioma as pessoas dizem muito por favor e obrigado, ou a educação está mais no tom de voz?",
+     "c": "Agradeça hoje a alguém num idioma novo, talvez a quem prepara o seu café."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Excuse me and sorry",
+     "g": "Get someone's attention politely and apologise when you bump into someone.",
+     "p": [
+      "To get attention: Spanish «Disculpe» (dees-KOOL-peh), French «Excusez-moi» (ex-kew-zay MWAH), Italian «Scusi» (SKOO-zee).",
+      "To apologise: Spanish «Lo siento» (lo SYEN-toh), French «Pardon» (par-DON), German «Entschuldigung» (ent-SHOOL-di-goong).",
+      "To pass through a crowd: Spanish «Con permiso» (kon per-MEE-so) or Italian «Permesso» (per-MES-so), with a small nod."
+     ],
+     "q": "Do you find it easy to ask strangers for attention, or do you usually wait until someone notices you?",
+     "c": "Practise saying «Excusez-moi» and «Lo siento» out loud five times each until they feel natural."
+    },
+    "de": {
+     "t": "Entschuldigung und sorry",
+     "g": "Mach höflich auf dich aufmerksam und entschuldige dich, wenn du jemanden anrempelst.",
+     "p": [
+      "Aufmerksamkeit: Spanisch «Disculpe» (dis-KUL-pe), Französisch «Excusez-moi» (ex-kü-se MUA), Italienisch «Scusi» (SKU-si).",
+      "Sich entschuldigen: Spanisch «Lo siento» (lo SJEN-to), Französisch «Pardon» (par-DON), Englisch «Sorry» (SSO-ri).",
+      "Durch eine Menge gehen: Spanisch «Con permiso» (kon per-MI-sso) oder Italienisch «Permesso» (per-MES-so), mit kurzem Nicken."
+     ],
+     "q": "Fällt es dir leicht, Fremde anzusprechen, oder wartest du lieber, bis dich jemand bemerkt?",
+     "c": "Sprich «Excusez-moi» und «Lo siento» je fünfmal laut, bis sie sich natürlich anfühlen."
+    },
+    "es": {
+     "t": "Disculpe y lo siento",
+     "g": "Llama la atención con educación y pide perdón si chocas con alguien.",
+     "p": [
+      "Para llamar la atención: inglés «Excuse me» (ex-KIUS mi), francés «Excusez-moi» (ex-ku-se MUA), italiano «Scusi» (SKU-si).",
+      "Para disculparte: inglés «Sorry» (SO-ri), francés «Pardon» (par-DÓN), alemán «Entschuldigung» (ent-SHUL-di-gung).",
+      "Para pasar entre la gente: italiano «Permesso» (per-MES-so) o inglés «Excuse me», con un pequeño gesto de cabeza."
+     ],
+     "q": "¿Te resulta fácil pedir atención a desconocidos, o sueles esperar a que alguien se fije en ti?",
+     "c": "Practica decir «Excusez-moi» y «Sorry» en voz alta cinco veces cada una hasta que salgan solas."
+    },
+    "fr": {
+     "t": "Excusez-moi et pardon",
+     "g": "Attirer l'attention poliment et s'excuser quand on bouscule quelqu'un.",
+     "p": [
+      "Pour interpeller : espagnol «Disculpe» (diss-KOUL-pé), anglais «Excuse me» (ex-KIOUZ mi), italien «Scusi» (SKOU-zi).",
+      "Pour s'excuser : espagnol «Lo siento» (lo SSIÈNE-to), anglais «Sorry» (SO-ri), allemand «Entschuldigung».",
+      "Pour passer dans la foule : espagnol «Con permiso» (kone pèr-MI-sso) ou italien «Permesso» (pèr-MÈS-so), avec un signe de tête."
+     ],
+     "q": "Est-ce facile pour toi d'interpeller un inconnu, ou attends-tu plutôt qu'on te remarque ?",
+     "c": "Répète à voix haute «Disculpe» et «Sorry» cinq fois chacun jusqu'à ce qu'ils sortent tout seuls."
+    },
+    "it": {
+     "t": "Scusi e mi dispiace",
+     "g": "Attirare l'attenzione con garbo e scusarsi quando urti qualcuno.",
+     "p": [
+      "Per attirare l'attenzione: spagnolo «Disculpe» (dis-KUL-pe), francese «Excusez-moi» (ex-kü-ze MUA), inglese «Excuse me».",
+      "Per scusarsi: spagnolo «Lo siento» (lo SIEN-to), francese «Pardon» (par-DON), tedesco «Entschuldigung» (ent-SCIUL-di-gung).",
+      "Per passare tra la folla: spagnolo «Con permiso» (kon per-MI-so) o inglese «Excuse me», con un piccolo cenno del capo."
+     ],
+     "q": "Ti viene facile attirare l'attenzione di uno sconosciuto, o di solito aspetti che qualcuno ti noti?",
+     "c": "Ripeti ad alta voce «Excusez-moi» e «Lo siento» cinque volte ciascuno finché ti vengono naturali."
+    },
+    "pt": {
+     "t": "Com licença e desculpe",
+     "g": "Chamar a atenção com educação e pedir desculpa quando esbarras em alguém.",
+     "p": [
+      "Para chamar: espanhol «Disculpe» (dis-KUL-pe), francês «Excusez-moi» (ex-ku-zê MUÁ), italiano «Scusi» (SKU-zi).",
+      "Para pedir desculpa: espanhol «Lo siento» (lo SSIEN-to), francês «Pardon» (par-DÕ), alemão «Entschuldigung».",
+      "Para passar entre as pessoas: espanhol «Con permiso» (kon per-MI-sso) ou italiano «Permesso» (per-MÉS-so), com um aceno."
+     ],
+     "q": "Achas fácil chamar a atenção de um desconhecido, ou costumas esperar que alguém repare em ti?",
+     "c": "Diz em voz alta «Excusez-moi» e «Lo siento» cinco vezes cada até soarem naturais."
+    },
+    "pt_BR": {
+     "t": "Com licença e desculpa",
+     "g": "Chamar a atenção com educação e pedir desculpa quando esbarrar em alguém.",
+     "p": [
+      "Para chamar: espanhol «Disculpe» (dis-KUL-pe), francês «Excusez-moi» (ex-ku-zê MUÁ), italiano «Scusi» (SKU-zi).",
+      "Para pedir desculpa: espanhol «Lo siento» (lo SSIEN-to), francês «Pardon» (par-DÕ), alemão «Entschuldigung».",
+      "Para passar entre as pessoas: espanhol «Con permiso» (kon per-MI-sso) ou italiano «Permesso» (per-MÉS-so), com um aceno."
+     ],
+     "q": "Você acha fácil chamar a atenção de um desconhecido, ou costuma esperar alguém notar você?",
+     "c": "Fale em voz alta «Excusez-moi» e «Lo siento» cinco vezes cada até soarem naturais."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yes, no and maybe",
+     "g": "Give simple answers and decline an offer politely without sounding rude.",
+     "p": [
+      "Spanish: «Sí», «No», «Quizás» (kee-SAS). French: «Oui» (wee), «Non» (non), «Peut-être» (puh-TETR).",
+      "Italian: «Sì», «No», «Forse» (FOR-seh). German: «Ja» (yah), «Nein» (nine), «Vielleicht» (fee-LIGHT).",
+      "To decline gently, add thanks: Spanish «No, gracias», French «Non merci» or Italian «No, grazie», plus a smile."
+     ],
+     "q": "Is it easy for you to say no to a friendly street seller or waiter, or do you feel awkward?",
+     "c": "Imagine three offers today and answer each one politely in a different language."
+    },
+    "de": {
+     "t": "Ja, nein und vielleicht",
+     "g": "Gib einfache Antworten und lehne ein Angebot höflich ab, ohne unfreundlich zu wirken.",
+     "p": [
+      "Spanisch: «Sí», «No», «Quizás» (ki-SSAS). Französisch: «Oui» (ui), «Non» (non), «Peut-être» (pö-TÄTR).",
+      "Italienisch: «Sì», «No», «Forse» (FOR-se). Englisch: «Yes» (jess), «No» (nou), «Maybe» (MEI-bi).",
+      "Sanft ablehnen mit Dank: Spanisch «No, gracias», Französisch «Non merci», Italienisch «No, grazie», dazu ein Lächeln."
+     ],
+     "q": "Fällt es dir leicht, einem freundlichen Straßenverkäufer oder Kellner Nein zu sagen, oder ist es dir unangenehm?",
+     "c": "Stell dir heute drei Angebote vor und antworte auf jedes höflich in einer anderen Sprache."
+    },
+    "es": {
+     "t": "Sí, no y quizás",
+     "g": "Da respuestas sencillas y rechaza una oferta con educación sin sonar brusco.",
+     "p": [
+      "Inglés: «Yes» (yes), «No» (nou), «Maybe» (MEI-bi). Francés: «Oui» (uí), «Non» (non), «Peut-être» (pe-TETR).",
+      "Italiano: «Sì», «No», «Forse» (FOR-se). Alemán: «Ja» (ya), «Nein» (nain), «Vielleicht» (fi-LAIJT).",
+      "Para rechazar con suavidad, agradece: inglés «No, thank you», francés «Non merci», italiano «No, grazie», y sonríe."
+     ],
+     "q": "¿Te cuesta decir que no a un vendedor callejero o a un camarero amable, o te sale fácil?",
+     "c": "Imagina hoy tres ofertas y responde a cada una con educación en un idioma distinto."
+    },
+    "fr": {
+     "t": "Oui, non et peut-être",
+     "g": "Donner des réponses simples et refuser une offre poliment sans paraître brusque.",
+     "p": [
+      "Espagnol : «Sí», «No», «Quizás» (ki-SSASS). Anglais : «Yes» (yèss), «No» (nôou), «Maybe» (MÉ-bi).",
+      "Italien : «Sì», «No», «Forse» (FOR-sé). Allemand : «Ja» (ya), «Nein» (naïne), «Vielleicht» (fi-LAÏCHT).",
+      "Pour refuser en douceur, remercie : espagnol «No, gracias», anglais «No, thank you», italien «No, grazie», et souris."
+     ],
+     "q": "As-tu du mal à dire non à un vendeur de rue ou à un serveur aimable, ou est-ce facile pour toi ?",
+     "c": "Imagine trois offres aujourd'hui et réponds poliment à chacune dans une langue différente."
+    },
+    "it": {
+     "t": "Sì, no e forse",
+     "g": "Dare risposte semplici e rifiutare un'offerta con garbo senza sembrare scortese.",
+     "p": [
+      "Spagnolo: «Sí», «No», «Quizás» (ki-SAS). Francese: «Oui» (uì), «Non» (non), «Peut-être» (pö-TÈTR).",
+      "Inglese: «Yes» (ies), «No» (nou), «Maybe» (MEI-bi). Tedesco: «Ja» (ia), «Nein» (nain), «Vielleicht» (fi-LAIHT).",
+      "Per rifiutare con dolcezza ringrazia: spagnolo «No, gracias», francese «Non merci», inglese «No, thank you», e sorridi."
+     ],
+     "q": "Ti viene facile dire di no a un venditore ambulante o a un cameriere gentile, o ti senti a disagio?",
+     "c": "Immagina oggi tre offerte e rispondi a ognuna con garbo in una lingua diversa."
+    },
+    "pt": {
+     "t": "Sim, não e talvez",
+     "g": "Dar respostas simples e recusar uma oferta com educação, sem parecer brusco.",
+     "p": [
+      "Espanhol: «Sí», «No», «Quizás» (ki-SSÁS). Francês: «Oui» (uí), «Non» (nõ), «Peut-être» (pe-TÉTR).",
+      "Italiano: «Sì», «No», «Forse» (FÔR-se). Alemão: «Ja» (iá), «Nein» (nain), «Vielleicht» (fi-LAIHT).",
+      "Para recusar com suavidade, agradece: espanhol «No, gracias», francês «Non merci», italiano «No, grazie», e sorri."
+     ],
+     "q": "Custa-te dizer não a um vendedor de rua ou a um empregado simpático, ou fazes isso com facilidade?",
+     "c": "Imagina hoje três ofertas e responde a cada uma com educação numa língua diferente."
+    },
+    "pt_BR": {
+     "t": "Sim, não e talvez",
+     "g": "Dar respostas simples e recusar uma oferta com educação, sem parecer grosseiro.",
+     "p": [
+      "Espanhol: «Sí», «No», «Quizás» (ki-SSÁS). Francês: «Oui» (uí), «Non» (nõ), «Peut-être» (pe-TÉTR).",
+      "Italiano: «Sì», «No», «Forse» (FÔR-se). Alemão: «Ja» (iá), «Nein» (nain), «Vielleicht» (fi-LAIHT).",
+      "Para recusar com jeito, agradeça: espanhol «No, gracias», francês «Non merci», italiano «No, grazie», e sorria."
+     ],
+     "q": "É difícil para você dizer não a um vendedor de rua ou a um garçom simpático, ou sai fácil?",
+     "c": "Imagine hoje três ofertas e responda a cada uma com educação num idioma diferente."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Do you speak English?",
+     "g": "Ask which language someone speaks and say that you only speak a little.",
+     "p": [
+      "Spanish: «¿Habla inglés?» (AH-bla een-GLES). French: «Parlez-vous anglais ?» (par-lay voo ahn-GLEH).",
+      "Italian: «Parla inglese?» (PAR-la een-GLEH-zeh). German: «Sprechen Sie Englisch?» (SHPREH-khen zee ENG-lish).",
+      "Say you know a bit: Spanish «Hablo un poco de español» or French «Je parle un peu français» (zhuh parl uhn puh frahn-SEH)."
+     ],
+     "q": "Which languages do you speak, even just a little, and which one would you love to add next?",
+     "c": "Start one conversation today by asking in the local language if the person speaks English."
+    },
+    "de": {
+     "t": "Sprechen Sie Englisch?",
+     "g": "Frag, welche Sprache jemand spricht, und sag, dass du nur ein wenig sprichst.",
+     "p": [
+      "Spanisch: «¿Habla inglés?» (A-bla in-GLESS). Französisch: «Parlez-vous anglais ?» (par-le wu an-GLÄ).",
+      "Italienisch: «Parla inglese?» (PAR-la in-GLE-se). Englisch: «Do you speak German?» (du ju spiik DSCHÖR-män).",
+      "Sag, dass du ein bisschen kannst: Spanisch «Hablo un poco de español», Französisch «Je parle un peu français»."
+     ],
+     "q": "Welche Sprachen sprichst du, auch nur ein bisschen, und welche möchtest du als Nächstes lernen?",
+     "c": "Beginne heute ein Gespräch, indem du in der Landessprache fragst, ob die Person Englisch spricht."
+    },
+    "es": {
+     "t": "¿Habla inglés?",
+     "g": "Pregunta qué idioma habla alguien y di que tú solo hablas un poco.",
+     "p": [
+      "Inglés: «Do you speak Spanish?» (du yu spik SPA-nish). Francés: «Parlez-vous anglais ?» (par-le vu an-GLE).",
+      "Italiano: «Parla inglese?» (PAR-la in-GLE-se). Alemán: «Sprechen Sie Englisch?» (SHPRE-jen si ENG-lish).",
+      "Di que sabes un poco: inglés «I speak a little English» o francés «Je parle un peu français» (yə parl an pə fran-SE)."
+     ],
+     "q": "¿Qué idiomas hablas, aunque sea un poco, y cuál te encantaría añadir después?",
+     "c": "Empieza hoy una conversación preguntando en el idioma local si la persona habla inglés."
+    },
+    "fr": {
+     "t": "Parlez-vous anglais ?",
+     "g": "Demander quelle langue parle quelqu'un et dire qu'on ne parle qu'un peu.",
+     "p": [
+      "Espagnol : «¿Habla inglés?» (A-bla inn-GLÈSS). Anglais : «Do you speak French?» (dou you spik FRÈNCH).",
+      "Italien : «Parla inglese?» (PAR-la inn-GLÉ-zé). Allemand : «Sprechen Sie Englisch?» (CHPRÈ-khen zi ÈNG-lich).",
+      "Dire qu'on parle un peu : espagnol «Hablo un poco de español» ou anglais «I speak a little English»."
+     ],
+     "q": "Quelles langues parles-tu, même un peu, et laquelle aimerais-tu ajouter ensuite ?",
+     "c": "Commence une conversation aujourd'hui en demandant dans la langue locale si la personne parle anglais."
+    },
+    "it": {
+     "t": "Parla inglese?",
+     "g": "Chiedere che lingua parla qualcuno e dire che tu ne parli solo un po'.",
+     "p": [
+      "Spagnolo: «¿Habla inglés?» (A-bla in-GLES). Francese: «Parlez-vous anglais ?» (par-le vu an-GLÈ).",
+      "Inglese: «Do you speak Italian?» (du iu spiik i-TA-lian). Tedesco: «Sprechen Sie Englisch?» (SCPRE-hen si ENG-lisc).",
+      "Di' che sai un po': spagnolo «Hablo un poco de español» o francese «Je parle un peu français» (jə parl ẽ pö fran-SÈ)."
+     ],
+     "q": "Quali lingue parli, anche solo un po', e quale ti piacerebbe aggiungere dopo?",
+     "c": "Inizia oggi una conversazione chiedendo nella lingua locale se la persona parla inglese."
+    },
+    "pt": {
+     "t": "Fala inglês?",
+     "g": "Perguntar que língua alguém fala e dizer que só falas um pouco.",
+     "p": [
+      "Espanhol: «¿Habla inglés?» (A-bla in-GLÊS). Francês: «Parlez-vous anglais ?» (par-lê vu ã-GLÉ).",
+      "Italiano: «Parla inglese?» (PAR-la in-GLÊ-ze). Alemão: «Sprechen Sie Englisch?» (CHPRÉ-rren zi ÊNG-lich).",
+      "Diz que sabes um pouco: espanhol «Hablo un poco de español» ou francês «Je parle un peu français»."
+     ],
+     "q": "Que línguas falas, nem que seja um pouco, e qual gostavas de acrescentar a seguir?",
+     "c": "Começa hoje uma conversa a perguntar na língua local se a pessoa fala inglês."
+    },
+    "pt_BR": {
+     "t": "Você fala inglês?",
+     "g": "Perguntar que idioma alguém fala e dizer que você só fala um pouco.",
+     "p": [
+      "Espanhol: «¿Habla inglés?» (A-bla in-GLÊS). Francês: «Parlez-vous anglais ?» (par-lê vu ã-GLÉ).",
+      "Italiano: «Parla inglese?» (PAR-la in-GLÊ-ze). Alemão: «Sprechen Sie Englisch?» (CHPRÉ-rren zi ÊNG-lich).",
+      "Diga que sabe um pouco: espanhol «Hablo un poco de español» ou francês «Je parle un peu français»."
+     ],
+     "q": "Que idiomas você fala, mesmo que só um pouco, e qual adoraria acrescentar depois?",
+     "c": "Comece hoje uma conversa perguntando no idioma local se a pessoa fala inglês."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "I don't understand",
+     "g": "Ask people to repeat, slow down or write something down for you.",
+     "p": [
+      "Say it honestly: Spanish «No entiendo» (no en-TYEN-doh), French «Je ne comprends pas» (zhuh nuh kom-PRAHN pah).",
+      "Ask to slow down: Spanish «Más despacio, por favor» (mas des-PA-syo), Italian «Più piano, per favore» (pyoo PYA-no).",
+      "Ask to repeat or write: French «Vous pouvez répéter ?» (voo poo-vay ray-pay-TAY), Spanish «¿Me lo escribe?» (meh lo es-KREE-beh)."
+     ],
+     "q": "When you do not understand someone, do you ask again, nod and smile, or reach for your phone?",
+     "c": "Pick one phrase from today and use it the next time anyone talks too fast, even in your own language."
+    },
+    "de": {
+     "t": "Ich verstehe nicht",
+     "g": "Bitte Menschen, etwas zu wiederholen, langsamer zu sprechen oder es aufzuschreiben.",
+     "p": [
+      "Ehrlich sagen: Spanisch «No entiendo» (no en-TJEN-do), Französisch «Je ne comprends pas» (schö nö kom-PRAN pa).",
+      "Langsamer bitte: Spanisch «Más despacio, por favor» (mas des-PA-ssjo), Italienisch «Più piano, per favore» (pju PJA-no).",
+      "Wiederholen oder schreiben: Französisch «Vous pouvez répéter ?» (wu pu-we re-pe-TE), Spanisch «¿Me lo escribe?»."
+     ],
+     "q": "Was machst du, wenn du jemanden nicht verstehst: nachfragen, nicken und lächeln oder zum Handy greifen?",
+     "c": "Wähle einen Satz von heute und nutze ihn, wenn das nächste Mal jemand zu schnell spricht."
+    },
+    "es": {
+     "t": "No entiendo",
+     "g": "Pide que te repitan, que hablen más despacio o que te lo escriban.",
+     "p": [
+      "Dilo con sinceridad: inglés «I don't understand» (ai dount an-der-STAND), francés «Je ne comprends pas» (yə nə kom-PRAN pa).",
+      "Pide más calma: inglés «Slower, please» (SLOU-er pliis), italiano «Più piano, per favore» (piu PIA-no).",
+      "Pide que repitan o escriban: francés «Vous pouvez répéter ?» (vu pu-ve re-pe-TÉ), inglés «Can you write it down?»."
+     ],
+     "q": "Cuando no entiendes a alguien, ¿vuelves a preguntar, asientes sonriendo o sacas el móvil?",
+     "c": "Elige una frase de hoy y úsala la próxima vez que alguien hable demasiado rápido."
+    },
+    "fr": {
+     "t": "Je ne comprends pas",
+     "g": "Demander de répéter, de parler plus lentement ou d'écrire quelque chose.",
+     "p": [
+      "Le dire franchement : espagnol «No entiendo» (no ène-TIÈNE-do), anglais «I don't understand» (aï dônt eun-deur-STAND).",
+      "Demander de ralentir : espagnol «Más despacio, por favor» (mass dèss-PA-ssio), italien «Più piano, per favore».",
+      "Faire répéter ou écrire : anglais «Can you repeat?» (kène you ri-PIT), espagnol «¿Me lo escribe?» (mé lo èss-KRI-bé)."
+     ],
+     "q": "Quand tu ne comprends pas quelqu'un, tu redemandes, tu hoches la tête en souriant ou tu sors ton téléphone ?",
+     "c": "Choisis une phrase d'aujourd'hui et utilise-la la prochaine fois que quelqu'un parle trop vite."
+    },
+    "it": {
+     "t": "Non capisco",
+     "g": "Chiedere di ripetere, di parlare più piano o di scrivere qualcosa.",
+     "p": [
+      "Dillo con sincerità: spagnolo «No entiendo» (no en-TIEN-do), francese «Je ne comprends pas» (jə nə kom-PRAN pa).",
+      "Chiedi di rallentare: spagnolo «Más despacio, por favor» (mas des-PA-sio), inglese «Slower, please» (SLOU-er pliis).",
+      "Fai ripetere o scrivere: francese «Vous pouvez répéter ?» (vu pu-ve re-pe-TÉ), spagnolo «¿Me lo escribe?»."
+     ],
+     "q": "Quando non capisci qualcuno, richiedi, annuisci sorridendo o prendi il telefono?",
+     "c": "Scegli una frase di oggi e usala la prossima volta che qualcuno parla troppo veloce."
+    },
+    "pt": {
+     "t": "Não percebo",
+     "g": "Pedir às pessoas que repitam, falem mais devagar ou escrevam algo para ti.",
+     "p": [
+      "Diz com franqueza: espanhol «No entiendo» (no en-TIEN-do), francês «Je ne comprends pas» (je ne kõ-PRÃ pá).",
+      "Pede mais devagar: espanhol «Más despacio, por favor» (más des-PÁ-ssio), italiano «Più piano, per favore».",
+      "Pede para repetir ou escrever: francês «Vous pouvez répéter ?» (vu pu-vê re-pê-TÊ), espanhol «¿Me lo escribe?»."
+     ],
+     "q": "Quando não percebes alguém, voltas a perguntar, acenas a sorrir ou pegas no telemóvel?",
+     "c": "Escolhe uma frase de hoje e usa-a da próxima vez que alguém falar depressa demais."
+    },
+    "pt_BR": {
+     "t": "Não entendo",
+     "g": "Pedir para as pessoas repetirem, falarem mais devagar ou escreverem algo para você.",
+     "p": [
+      "Diga com sinceridade: espanhol «No entiendo» (no en-TIEN-do), francês «Je ne comprends pas» (je ne kõ-PRÃ pá).",
+      "Peça mais devagar: espanhol «Más despacio, por favor» (más des-PÁ-ssio), italiano «Più piano, per favore».",
+      "Peça para repetir ou escrever: francês «Vous pouvez répéter ?» (vu pu-vê re-pê-TÊ), espanhol «¿Me lo escribe?»."
+     ],
+     "q": "Quando você não entende alguém, pergunta de novo, balança a cabeça sorrindo ou pega o celular?",
+     "c": "Escolha uma frase de hoje e use da próxima vez que alguém falar rápido demais."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introducing yourself",
+     "g": "Say your name, where you are from and that you are a visitor.",
+     "p": [
+      "Your name: Spanish «Me llamo Ana» (meh YA-mo), French «Je m'appelle Ana» (zhuh ma-PEL), Italian «Mi chiamo Ana» (mee KYA-mo).",
+      "Where from: Spanish «Soy de Canadá» (soy deh), French «Je viens du Canada» (zhuh vyan dew), Italian «Vengo dal Canada».",
+      "Visitor: Spanish «Estoy de vacaciones» (es-TOY deh va-ka-SYO-nes), French «Je suis touriste» (zhuh swee too-REEST)."
+     ],
+     "q": "If you met a local on your next trip, what three things would you like to tell them about yourself?",
+     "c": "Write your own mini introduction with name, home and visitor phrase in one new language."
+    },
+    "de": {
+     "t": "Sich vorstellen",
+     "g": "Sag deinen Namen, woher du kommst und dass du zu Besuch bist.",
+     "p": [
+      "Name: Spanisch «Me llamo Ana» (me JA-mo), Französisch «Je m'appelle Ana» (schö ma-PELL), Italienisch «Mi chiamo Ana» (mi KJA-mo).",
+      "Herkunft: Spanisch «Soy de Alemania» (ssoi de), Französisch «Je viens d'Allemagne» (schö wjän), Italienisch «Vengo dalla Germania».",
+      "Zu Besuch: Spanisch «Estoy de vacaciones» (es-TOI de wa-ka-SSJO-nes), Französisch «Je suis touriste» (schö ssüi tu-RIST)."
+     ],
+     "q": "Wenn du auf deiner nächsten Reise Einheimische triffst, welche drei Dinge würdest du über dich erzählen?",
+     "c": "Schreib eine Mini-Vorstellung mit Name, Herkunft und Besuchersatz in einer neuen Sprache."
+    },
+    "es": {
+     "t": "Presentarte",
+     "g": "Di tu nombre, de dónde eres y que estás de visita.",
+     "p": [
+      "Tu nombre: inglés «My name is Ana» (mai neim is), francés «Je m'appelle Ana» (yə ma-PEL), italiano «Mi chiamo Ana» (mi KIA-mo).",
+      "De dónde: inglés «I'm from Spain» (aim from), francés «Je viens d'Espagne» (yə vian), italiano «Vengo dalla Spagna».",
+      "De visita: inglés «I'm on holiday» (aim on JO-li-dei), francés «Je suis touriste» (yə sui tu-RIST)."
+     ],
+     "q": "Si conocieras a alguien local en tu próximo viaje, ¿qué tres cosas le contarías de ti?",
+     "c": "Escribe una mini presentación con nombre, origen y frase de visitante en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Se présenter",
+     "g": "Dire son prénom, d'où l'on vient et qu'on est de passage.",
+     "p": [
+      "Prénom : espagnol «Me llamo Ana» (mé YA-mo), anglais «My name is Ana» (maï néïm iz), italien «Mi chiamo Ana» (mi KIA-mo).",
+      "Origine : espagnol «Soy de Francia» (soï dé), anglais «I'm from France» (aïm from), italien «Vengo dalla Francia».",
+      "De passage : espagnol «Estoy de vacaciones» (èss-TOÏ dé va-ka-SSIO-nèss), anglais «I'm on holiday»."
+     ],
+     "q": "Si tu rencontrais quelqu'un du coin lors de ton prochain voyage, quelles trois choses lui dirais-tu sur toi ?",
+     "c": "Écris une mini présentation avec prénom, origine et phrase de visiteur dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Presentarsi",
+     "g": "Dire il tuo nome, da dove vieni e che sei in visita.",
+     "p": [
+      "Nome: spagnolo «Me llamo Ana» (me IA-mo), francese «Je m'appelle Ana» (jə ma-PEL), inglese «My name is Ana» (mai neim is).",
+      "Provenienza: spagnolo «Soy de Italia» (soi de), francese «Je viens d'Italie» (jə viẽ), inglese «I'm from Italy».",
+      "In visita: spagnolo «Estoy de vacaciones» (es-TOI de va-ka-SIO-nes), francese «Je suis touriste» (jə suì tu-RIST)."
+     ],
+     "q": "Se incontrassi qualcuno del posto nel prossimo viaggio, quali tre cose gli racconteresti di te?",
+     "c": "Scrivi una mini presentazione con nome, provenienza e frase da visitatore in una lingua nuova."
+    },
+    "pt": {
+     "t": "Apresentar-se",
+     "g": "Dizer o teu nome, de onde és e que estás de visita.",
+     "p": [
+      "Nome: espanhol «Me llamo Ana» (me LHA-mo), francês «Je m'appelle Ana» (je ma-PÉL), italiano «Mi chiamo Ana» (mi KIA-mo).",
+      "Origem: espanhol «Soy de Portugal» (sói de), francês «Je viens du Portugal» (je viẽ du), italiano «Vengo dal Portogallo».",
+      "De visita: espanhol «Estoy de vacaciones» (es-TÓI de va-ka-SSIÔ-nes), francês «Je suis touriste» (je suí tu-RIST)."
+     ],
+     "q": "Se conhecesses alguém local na próxima viagem, que três coisas lhe contarias sobre ti?",
+     "c": "Escreve uma mini apresentação com nome, origem e frase de visitante numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Se apresentar",
+     "g": "Dizer seu nome, de onde você é e que está de visita.",
+     "p": [
+      "Nome: espanhol «Me llamo Ana» (me JA-mo), francês «Je m'appelle Ana» (je ma-PÉL), italiano «Mi chiamo Ana» (mi KIA-mo).",
+      "Origem: espanhol «Soy de Brasil» (sói de), francês «Je viens du Brésil» (je viẽ du), italiano «Vengo dal Brasile».",
+      "De visita: espanhol «Estoy de vacaciones» (es-TÓI de va-ka-SSIÔ-nes), francês «Je suis touriste» (je suí tu-RIST)."
+     ],
+     "q": "Se você conhecesse alguém local na próxima viagem, que três coisas contaria sobre você?",
+     "c": "Escreva uma mini apresentação com nome, origem e frase de visitante num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Numbers one to ten",
+     "g": "Count the basics you need for prices, rooms, tickets and people.",
+     "p": [
+      "Spanish 1 to 10: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez (dyes).",
+      "French 1 to 10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix (dees).",
+      "Show fingers as you say it: «Dos, por favor» for two tickets or «Deux cafés» (duh ka-FAY) for two coffees."
+     ],
+     "q": "Which numbers do you think you will need most on a trip: for tickets, rooms, prices or people?",
+     "c": "Count the steps of a staircase today in Spanish or French, up to ten and back down."
+    },
+    "de": {
+     "t": "Zahlen von eins bis zehn",
+     "g": "Zähle die Grundzahlen für Preise, Zimmer, Tickets und Personen.",
+     "p": [
+      "Spanisch 1 bis 10: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez (djess).",
+      "Französisch 1 bis 10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix (diss).",
+      "Zeig dabei die Finger: «Dos, por favor» für zwei Tickets oder «Deux cafés» (dö ka-FE) für zwei Kaffee."
+     ],
+     "q": "Welche Zahlen brauchst du auf Reisen wohl am meisten: für Tickets, Zimmer, Preise oder Personen?",
+     "c": "Zähle heute die Stufen einer Treppe auf Spanisch oder Französisch bis zehn und zurück."
+    },
+    "es": {
+     "t": "Números del uno al diez",
+     "g": "Cuenta lo básico que necesitas para precios, habitaciones, billetes y personas.",
+     "p": [
+      "Inglés del 1 al 10: one, two, three, four, five, six, seven, eight, nine, ten (ten).",
+      "Francés del 1 al 10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix (dis).",
+      "Enseña los dedos al decirlo: «Two, please» para dos billetes o «Deux cafés» (de ka-FÉ) para dos cafés."
+     ],
+     "q": "¿Qué números crees que usarás más en un viaje: para billetes, habitaciones, precios o personas?",
+     "c": "Cuenta hoy los escalones de una escalera en inglés o francés, hasta diez y de vuelta."
+    },
+    "fr": {
+     "t": "Les nombres de un à dix",
+     "g": "Compter l'essentiel pour les prix, les chambres, les billets et les personnes.",
+     "p": [
+      "Espagnol de 1 à 10 : uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez (dièss).",
+      "Anglais de 1 à 10 : one, two, three, four, five, six, seven, eight, nine, ten (tène).",
+      "Montre tes doigts en même temps : «Dos, por favor» pour deux billets ou «Two coffees» pour deux cafés."
+     ],
+     "q": "Quels nombres utiliseras-tu le plus en voyage : pour les billets, les chambres, les prix ou les personnes ?",
+     "c": "Compte aujourd'hui les marches d'un escalier en espagnol ou en anglais, jusqu'à dix et retour."
+    },
+    "it": {
+     "t": "I numeri da uno a dieci",
+     "g": "Contare le basi che servono per prezzi, camere, biglietti e persone.",
+     "p": [
+      "Spagnolo da 1 a 10: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez (dies).",
+      "Francese da 1 a 10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix (dis).",
+      "Mostra le dita mentre lo dici: «Dos, por favor» per due biglietti o «Deux cafés» (dö ka-FÉ) per due caffè."
+     ],
+     "q": "Quali numeri pensi che userai di più in viaggio: per biglietti, camere, prezzi o persone?",
+     "c": "Conta oggi i gradini di una scala in spagnolo o francese, fino a dieci e ritorno."
+    },
+    "pt": {
+     "t": "Números de um a dez",
+     "g": "Contar o essencial para preços, quartos, bilhetes e pessoas.",
+     "p": [
+      "Espanhol de 1 a 10: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez (diéss).",
+      "Francês de 1 a 10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix (diss).",
+      "Mostra os dedos ao dizer: «Dos, por favor» para dois bilhetes ou «Deux cafés» (dê ka-FÊ) para dois cafés."
+     ],
+     "q": "Que números achas que vais usar mais numa viagem: para bilhetes, quartos, preços ou pessoas?",
+     "c": "Conta hoje os degraus de uma escada em espanhol ou francês, até dez e de volta."
+    },
+    "pt_BR": {
+     "t": "Números de um a dez",
+     "g": "Contar o básico para preços, quartos, passagens e pessoas.",
+     "p": [
+      "Espanhol de 1 a 10: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez (diéss).",
+      "Francês de 1 a 10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix (diss).",
+      "Mostre os dedos ao falar: «Dos, por favor» para dois ingressos ou «Deux cafés» (dê ka-FÊ) para dois cafés."
+     ],
+     "q": "Que números você acha que vai usar mais numa viagem: para passagens, quartos, preços ou pessoas?",
+     "c": "Conte hoje os degraus de uma escada em espanhol ou francês, até dez e de volta."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Numbers for prices",
+     "g": "Understand bigger numbers so you can follow prices at a counter.",
+     "p": [
+      "Spanish tens: veinte (20), treinta (30), cincuenta (50), cien (100). «Son quince euros» means it is fifteen euros.",
+      "French: vingt (20), trente (30), cinquante (50), cent (100). Watch out: «quatre-vingts» is 80, literally four twenties.",
+      "Ask «¿Cuánto cuesta?» (KWAN-to KWES-ta) or «C'est combien ?» (say kom-BYAN), and ask them to write it if unsure."
+     ],
+     "q": "Do you prefer to hear a price, see it written or check it on a card machine screen?",
+     "c": "Read five prices around you today out loud in Spanish or French."
+    },
+    "de": {
+     "t": "Zahlen für Preise",
+     "g": "Verstehe größere Zahlen, damit du Preisen an der Kasse folgen kannst.",
+     "p": [
+      "Spanische Zehner: veinte (20), treinta (30), cincuenta (50), cien (100). «Son quince euros» heißt: Das macht 15 Euro.",
+      "Französisch: vingt (20), trente (30), cinquante (50), cent (100). Achtung: «quatre-vingts» ist 80, wörtlich vier Zwanziger.",
+      "Frag «¿Cuánto cuesta?» (KUAN-to KUES-ta) oder «C'est combien ?» (ssä kom-BJÄN) und lass es dir notfalls aufschreiben."
+     ],
+     "q": "Hörst du einen Preis lieber, siehst du ihn lieber geschrieben oder prüfst du ihn am Kartenterminal?",
+     "c": "Lies heute fünf Preise in deiner Umgebung laut auf Spanisch oder Französisch."
+    },
+    "es": {
+     "t": "Números para precios",
+     "g": "Entiende números más grandes para seguir los precios en el mostrador.",
+     "p": [
+      "Inglés: twenty (20), thirty (30), fifty (50), a hundred (100). «It's fifteen euros» significa son quince euros.",
+      "Francés: vingt (20), trente (30), cinquante (50), cent (100). Ojo: «quatre-vingts» es 80, literalmente cuatro veintes.",
+      "Pregunta «How much is it?» (jau mach is it) o «C'est combien ?» (se kom-BIAN), y pide que lo escriban si dudas."
+     ],
+     "q": "¿Prefieres oír un precio, verlo escrito o comprobarlo en la pantalla del datáfono?",
+     "c": "Lee hoy en voz alta cinco precios de tu entorno en inglés o francés."
+    },
+    "fr": {
+     "t": "Les nombres pour les prix",
+     "g": "Comprendre les grands nombres pour suivre les prix au comptoir.",
+     "p": [
+      "Espagnol : veinte (20), treinta (30), cincuenta (50), cien (100). «Son quince euros» veut dire ça fait quinze euros.",
+      "Anglais : twenty (20), thirty (30), fifty (50), a hundred (100). Attention : fifteen (15) et fifty (50) se ressemblent.",
+      "Demande «¿Cuánto cuesta?» (KOUANE-to KOUÈSS-ta) ou «How much is it?», et fais écrire le prix en cas de doute."
+     ],
+     "q": "Tu préfères entendre un prix, le voir écrit ou le vérifier sur l'écran du terminal de carte ?",
+     "c": "Lis aujourd'hui à voix haute cinq prix autour de toi en espagnol ou en anglais."
+    },
+    "it": {
+     "t": "I numeri per i prezzi",
+     "g": "Capire i numeri più grandi per seguire i prezzi al banco.",
+     "p": [
+      "Spagnolo: veinte (20), treinta (30), cincuenta (50), cien (100). «Son quince euros» vuol dire sono quindici euro.",
+      "Francese: vingt (20), trente (30), cinquante (50), cent (100). Attenzione: «quatre-vingts» è 80, cioè quattro volte venti.",
+      "Chiedi «¿Cuánto cuesta?» (KUAN-to KUES-ta) o «C'est combien ?» (se kom-BIẼ), e fattelo scrivere se hai dubbi."
+     ],
+     "q": "Preferisci sentire un prezzo, vederlo scritto o controllarlo sullo schermo del POS?",
+     "c": "Leggi oggi ad alta voce cinque prezzi intorno a te in spagnolo o francese."
+    },
+    "pt": {
+     "t": "Números para preços",
+     "g": "Perceber números maiores para acompanhar os preços ao balcão.",
+     "p": [
+      "Dezenas em espanhol: veinte (20), treinta (30), cincuenta (50), cien (100). «Son quince euros» = são quinze euros.",
+      "Francês: vingt (20), trente (30), cinquante (50), cent (100). Atenção: «quatre-vingts» é 80, literalmente quatro vintes.",
+      "Pergunta «¿Cuánto cuesta?» (KUÁN-to KUÉS-ta) ou «C'est combien ?» (sé kõ-BIÃ) e pede que escrevam se tiveres dúvidas."
+     ],
+     "q": "Preferes ouvir um preço, vê-lo escrito ou confirmá-lo no ecrã do terminal multibanco?",
+     "c": "Lê hoje em voz alta cinco preços à tua volta em espanhol ou francês."
+    },
+    "pt_BR": {
+     "t": "Números para preços",
+     "g": "Entender números maiores para acompanhar os preços no balcão.",
+     "p": [
+      "Dezenas em espanhol: veinte (20), treinta (30), cincuenta (50), cien (100). «Son quince euros» = são quinze euros.",
+      "Francês: vingt (20), trente (30), cinquante (50), cent (100). Atenção: «quatre-vingts» é 80, literalmente quatro vintes.",
+      "Pergunte «¿Cuánto cuesta?» (KUÁN-to KUÉS-ta) ou «C'est combien ?» (sé kõ-BIÃ) e peça para escreverem se tiver dúvida."
+     ],
+     "q": "Você prefere ouvir um preço, vê-lo escrito ou conferir na tela da maquininha?",
+     "c": "Leia hoje em voz alta cinco preços ao seu redor em espanhol ou francês."
+    }
+   }
+  }
+ ]
+}

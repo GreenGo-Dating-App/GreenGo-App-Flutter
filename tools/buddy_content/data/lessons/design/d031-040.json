@@ -1,0 +1,835 @@
+{
+ "topic": "design",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour basics",
+     "g": "Learn hue, saturation and value, the three properties that describe every colour.",
+     "p": [
+      "Hue is the colour family itself: red, blue, green, yellow and so on.",
+      "Saturation is intensity: high is vivid and pure, low is muted and greyish.",
+      "Value is lightness or darkness; it matters most for contrast and readability."
+     ],
+     "q": "What colour do you wear most often, and is it vivid or muted?",
+     "c": "Take a photo of something colourful, switch it to black and white, and see which colours share the same value."
+    },
+    "de": {
+     "t": "Farbgrundlagen",
+     "g": "Farbton, Sättigung und Helligkeit kennenlernen, die drei Eigenschaften jeder Farbe.",
+     "p": [
+      "Der Farbton ist die Farbfamilie selbst: Rot, Blau, Grün, Gelb und so weiter.",
+      "Sättigung ist die Intensität: hoch heißt leuchtend und rein, niedrig heißt gedämpft und gräulich.",
+      "Helligkeit beschreibt hell oder dunkel; sie ist am wichtigsten für Kontrast und Lesbarkeit."
+     ],
+     "q": "Welche Farbe trägst du am häufigsten, und ist sie leuchtend oder gedämpft?",
+     "c": "Fotografiere etwas Buntes, stell es auf Schwarzweiß und schau, welche Farben die gleiche Helligkeit haben."
+    },
+    "es": {
+     "t": "Conceptos básicos del color",
+     "g": "Conocer tono, saturación y valor, las tres propiedades que describen cualquier color.",
+     "p": [
+      "El tono es la familia del color: rojo, azul, verde, amarillo, etc.",
+      "La saturación es la intensidad: alta es vivo y puro, baja es apagado y grisáceo.",
+      "El valor es lo claro u oscuro; es lo que más importa para el contraste y la lectura."
+     ],
+     "q": "¿Qué color vistes más a menudo, y es vivo o apagado?",
+     "c": "Haz una foto de algo colorido, pásala a blanco y negro y mira qué colores tienen el mismo valor."
+    },
+    "fr": {
+     "t": "Les bases de la couleur",
+     "g": "Découvrir teinte, saturation et valeur, les trois propriétés qui décrivent toute couleur.",
+     "p": [
+      "La teinte est la famille de couleur elle-même : rouge, bleu, vert, jaune, etc.",
+      "La saturation est l'intensité : élevée, c'est vif et pur ; faible, c'est sourd et grisé.",
+      "La valeur, c'est le clair ou le foncé ; c'est elle qui compte le plus pour le contraste et la lecture."
+     ],
+     "q": "Quelle couleur portes-tu le plus souvent, et est-elle vive ou sourde ?",
+     "c": "Photographie quelque chose de coloré, passe en noir et blanc et regarde quelles couleurs ont la même valeur."
+    },
+    "it": {
+     "t": "Le basi del colore",
+     "g": "Conoscere tinta, saturazione e luminosità, le tre proprietà che descrivono ogni colore.",
+     "p": [
+      "La tinta è la famiglia del colore: rosso, blu, verde, giallo e così via.",
+      "La saturazione è l'intensità: alta è vivace e pura, bassa è spenta e grigiastra.",
+      "La luminosità indica chiaro o scuro; è la più importante per contrasto e leggibilità."
+     ],
+     "q": "Quale colore indossi più spesso, ed è vivace o spento?",
+     "c": "Fotografa qualcosa di colorato, passa al bianco e nero e guarda quali colori hanno la stessa luminosità."
+    },
+    "pt": {
+     "t": "Noções básicas de cor",
+     "g": "Conhecer matiz, saturação e valor, as três propriedades que descrevem qualquer cor.",
+     "p": [
+      "A matiz é a família da cor: vermelho, azul, verde, amarelo e por aí fora.",
+      "A saturação é a intensidade: alta é viva e pura, baixa é sumida e acinzentada.",
+      "O valor é o claro ou escuro; é o que mais conta para o contraste e a leitura."
+     ],
+     "q": "Que cor vestes mais vezes, e é viva ou suave?",
+     "c": "Fotografa algo colorido, passa a preto e branco e vê que cores têm o mesmo valor."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de cor",
+     "g": "Conhecer matiz, saturação e valor, as três propriedades que descrevem qualquer cor.",
+     "p": [
+      "Matiz é a família da cor: vermelho, azul, verde, amarelo e assim por diante.",
+      "Saturação é a intensidade: alta é viva e pura, baixa é apagada e acinzentada.",
+      "Valor é o claro ou escuro; é o que mais importa para contraste e leitura."
+     ],
+     "q": "Que cor você mais usa nas roupas, e ela é viva ou suave?",
+     "c": "Fotografe algo colorido, passe para preto e branco e veja quais cores têm o mesmo valor."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The colour wheel",
+     "g": "Understand primary, secondary and tertiary colours and how they relate to each other.",
+     "p": [
+      "In the traditional painter's wheel the primaries are red, yellow and blue.",
+      "Mixing two primaries gives a secondary: orange, green or purple; mixing neighbours gives tertiaries.",
+      "The wheel is a map: distance between hues predicts whether they clash or harmonise."
+     ],
+     "q": "Which part of the colour wheel do you feel most at home in?",
+     "c": "Draw a twelve-part wheel and colour it in with pencils, paints or cut paper from magazines."
+    },
+    "de": {
+     "t": "Der Farbkreis",
+     "g": "Primär-, Sekundär- und Tertiärfarben verstehen und wie sie zusammenhängen.",
+     "p": [
+      "Im traditionellen Malerfarbkreis sind Rot, Gelb und Blau die Primärfarben.",
+      "Zwei Primärfarben ergeben eine Sekundärfarbe, Orange, Grün oder Violett; Nachbarn gemischt ergeben Tertiärfarben.",
+      "Der Kreis ist eine Landkarte: Der Abstand zwischen Farbtönen zeigt, ob sie sich beißen oder harmonieren."
+     ],
+     "q": "In welchem Bereich des Farbkreises fühlst du dich am wohlsten?",
+     "c": "Zeichne einen zwölfteiligen Farbkreis und fülle ihn mit Stiften, Farben oder ausgeschnittenem Zeitschriftenpapier."
+    },
+    "es": {
+     "t": "El círculo cromático",
+     "g": "Entender los colores primarios, secundarios y terciarios y cómo se relacionan.",
+     "p": [
+      "En el círculo tradicional del pintor, los primarios son rojo, amarillo y azul.",
+      "Mezclar dos primarios da un secundario, naranja, verde o violeta; mezclar vecinos da terciarios.",
+      "El círculo es un mapa: la distancia entre tonos anticipa si chocan o armonizan."
+     ],
+     "q": "¿En qué parte del círculo cromático te sientes más a gusto?",
+     "c": "Dibuja un círculo de doce partes y coloréalo con lápices, pintura o papel recortado de revistas."
+    },
+    "fr": {
+     "t": "Le cercle chromatique",
+     "g": "Comprendre les couleurs primaires, secondaires et tertiaires et leurs relations.",
+     "p": [
+      "Dans le cercle traditionnel du peintre, les primaires sont le rouge, le jaune et le bleu.",
+      "Deux primaires donnent une secondaire, orange, vert ou violet ; deux voisines donnent une tertiaire.",
+      "Le cercle est une carte : la distance entre deux teintes indique si elles s'opposent ou s'accordent."
+     ],
+     "q": "Dans quelle zone du cercle chromatique te sens-tu le plus à l'aise ?",
+     "c": "Dessine un cercle en douze parts et colorie-le avec crayons, peinture ou papiers découpés dans des magazines."
+    },
+    "it": {
+     "t": "Il cerchio cromatico",
+     "g": "Capire i colori primari, secondari e terziari e come si relazionano.",
+     "p": [
+      "Nel cerchio tradizionale dei pittori i primari sono rosso, giallo e blu.",
+      "Due primari danno un secondario, arancio, verde o viola; mescolando colori vicini si ottengono i terziari.",
+      "Il cerchio è una mappa: la distanza tra le tinte anticipa se si scontrano o si accordano."
+     ],
+     "q": "In quale zona del cerchio cromatico ti senti più a tuo agio?",
+     "c": "Disegna un cerchio in dodici parti e coloralo con matite, tempere o carta ritagliata da riviste."
+    },
+    "pt": {
+     "t": "O círculo cromático",
+     "g": "Perceber as cores primárias, secundárias e terciárias e como se relacionam.",
+     "p": [
+      "No círculo tradicional do pintor, as primárias são vermelho, amarelo e azul.",
+      "Duas primárias dão uma secundária, laranja, verde ou roxo; misturar vizinhas dá terciárias.",
+      "O círculo é um mapa: a distância entre matizes indica se chocam ou combinam."
+     ],
+     "q": "Em que zona do círculo cromático te sentes mais em casa?",
+     "c": "Desenha um círculo de doze partes e pinta-o com lápis, tintas ou papel recortado de revistas."
+    },
+    "pt_BR": {
+     "t": "O círculo cromático",
+     "g": "Entender cores primárias, secundárias e terciárias e como elas se relacionam.",
+     "p": [
+      "No círculo tradicional do pintor, as primárias são vermelho, amarelo e azul.",
+      "Duas primárias geram uma secundária, laranja, verde ou roxo; misturar vizinhas gera terciárias.",
+      "O círculo é um mapa: a distância entre as cores indica se elas brigam ou combinam."
+     ],
+     "q": "Em que parte do círculo cromático você se sente mais em casa?",
+     "c": "Desenhe um círculo de doze partes e pinte com lápis, tinta ou papel recortado de revistas."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Complementary colours",
+     "g": "Use opposite colours on the wheel to create strong, energetic contrast.",
+     "p": [
+      "Complementary pairs sit opposite each other: red and green, blue and orange, yellow and purple.",
+      "Side by side they make each other look brighter, which grabs attention fast.",
+      "Use one as the main colour and the other as a small accent so they do not fight."
+     ],
+     "q": "Can you spot a complementary pair in a logo or sports kit you know?",
+     "c": "Make a small badge using blue and orange only: one colour for the background, the other as a small accent."
+    },
+    "de": {
+     "t": "Komplementärfarben",
+     "g": "Gegenüberliegende Farben im Farbkreis für starken, energiegeladenen Kontrast nutzen.",
+     "p": [
+      "Komplementärpaare liegen sich gegenüber: Rot und Grün, Blau und Orange, Gelb und Violett.",
+      "Nebeneinander lassen sie sich gegenseitig leuchtender wirken und ziehen schnell Blicke an.",
+      "Nutze eine als Hauptfarbe und die andere als kleinen Akzent, damit sie nicht kämpfen."
+     ],
+     "q": "Erkennst du ein Komplementärpaar in einem Logo oder Trikot, das du kennst?",
+     "c": "Gestalte einen kleinen Button nur in Blau und Orange: eine Farbe als Fläche, die andere als kleiner Akzent."
+    },
+    "es": {
+     "t": "Colores complementarios",
+     "g": "Usar colores opuestos en el círculo para crear un contraste fuerte y enérgico.",
+     "p": [
+      "Los pares complementarios están enfrentados: rojo y verde, azul y naranja, amarillo y violeta.",
+      "Juntos se hacen parecer más brillantes, lo que capta la atención enseguida.",
+      "Usa uno como color principal y el otro como un pequeño acento para que no compitan."
+     ],
+     "q": "¿Reconoces un par complementario en un logo o una camiseta deportiva?",
+     "c": "Haz una chapa usando solo azul y naranja: uno de fondo y el otro como pequeño acento."
+    },
+    "fr": {
+     "t": "Les couleurs complémentaires",
+     "g": "Utiliser des couleurs opposées sur le cercle pour un contraste fort et énergique.",
+     "p": [
+      "Les paires complémentaires se font face : rouge et vert, bleu et orange, jaune et violet.",
+      "Côte à côte, elles se rendent mutuellement plus éclatantes et captent vite l'attention.",
+      "Prends-en une comme couleur principale et l'autre en petite touche pour qu'elles ne s'affrontent pas."
+     ],
+     "q": "Repères-tu une paire complémentaire dans un logo ou un maillot que tu connais ?",
+     "c": "Crée un petit badge en bleu et orange seulement : une couleur en fond, l'autre en petite touche."
+    },
+    "it": {
+     "t": "Colori complementari",
+     "g": "Usare colori opposti nel cerchio per creare un contrasto forte ed energico.",
+     "p": [
+      "Le coppie complementari stanno una di fronte all'altra: rosso e verde, blu e arancio, giallo e viola.",
+      "Accostate si fanno sembrare a vicenda più brillanti e catturano subito l'attenzione.",
+      "Usane una come colore principale e l'altra come piccolo accento, così non si scontrano."
+     ],
+     "q": "Riconosci una coppia complementare in un logo o in una maglia sportiva?",
+     "c": "Crea una piccola spilla solo in blu e arancio: un colore per lo sfondo, l'altro come piccolo accento."
+    },
+    "pt": {
+     "t": "Cores complementares",
+     "g": "Usar cores opostas no círculo para criar um contraste forte e enérgico.",
+     "p": [
+      "Os pares complementares estão frente a frente: vermelho e verde, azul e laranja, amarelo e roxo.",
+      "Lado a lado fazem-se parecer mais vivas, o que capta logo a atenção.",
+      "Usa uma como cor principal e a outra como pequeno destaque, para não competirem."
+     ],
+     "q": "Consegues ver um par complementar num logótipo ou equipamento desportivo que conheças?",
+     "c": "Faz um pequeno crachá só em azul e laranja: uma cor no fundo e a outra como pequeno destaque."
+    },
+    "pt_BR": {
+     "t": "Cores complementares",
+     "g": "Usar cores opostas no círculo para criar um contraste forte e cheio de energia.",
+     "p": [
+      "Pares complementares ficam frente a frente: vermelho e verde, azul e laranja, amarelo e roxo.",
+      "Lado a lado, uma faz a outra parecer mais viva, o que chama atenção na hora.",
+      "Use uma como cor principal e a outra como pequeno destaque, para não brigarem."
+     ],
+     "q": "Você consegue achar um par complementar em um logo ou uniforme de time?",
+     "c": "Faça um pequeno bóton só em azul e laranja: uma cor no fundo e a outra como pequeno destaque."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Analogous colours",
+     "g": "Build calm, harmonious palettes from neighbouring colours on the wheel.",
+     "p": [
+      "Analogous colours sit next to each other, like yellow, yellow-orange and orange.",
+      "They feel natural and soothing, like a sunset or a forest.",
+      "Because they are similar, add contrast through value: one lighter and one darker shade."
+     ],
+     "q": "Which natural scene comes to mind when you picture a calm palette?",
+     "c": "Choose three neighbouring colours and design a bookmark using only them, with one light and one dark."
+    },
+    "de": {
+     "t": "Analoge Farben",
+     "g": "Ruhige, harmonische Paletten aus benachbarten Farben im Farbkreis bauen.",
+     "p": [
+      "Analoge Farben liegen nebeneinander, etwa Gelb, Gelborange und Orange.",
+      "Sie wirken natürlich und beruhigend, wie ein Sonnenuntergang oder ein Wald.",
+      "Weil sie ähnlich sind, braucht es Kontrast über die Helligkeit: ein hellerer und ein dunklerer Ton."
+     ],
+     "q": "An welche Naturszene denkst du, wenn du dir eine ruhige Palette vorstellst?",
+     "c": "Wähle drei benachbarte Farben und gestalte damit ein Lesezeichen, mit einem hellen und einem dunklen Ton."
+    },
+    "es": {
+     "t": "Colores análogos",
+     "g": "Crear paletas tranquilas y armoniosas con colores vecinos del círculo.",
+     "p": [
+      "Los colores análogos están juntos, como amarillo, amarillo anaranjado y naranja.",
+      "Se sienten naturales y relajantes, como un atardecer o un bosque.",
+      "Como se parecen, añade contraste con el valor: un tono más claro y otro más oscuro."
+     ],
+     "q": "¿Qué paisaje te viene a la mente al imaginar una paleta tranquila?",
+     "c": "Elige tres colores vecinos y diseña un marcapáginas solo con ellos, con uno claro y uno oscuro."
+    },
+    "fr": {
+     "t": "Les couleurs analogues",
+     "g": "Créer des palettes calmes et harmonieuses avec des couleurs voisines du cercle.",
+     "p": [
+      "Les couleurs analogues se suivent, comme le jaune, le jaune orangé et l'orange.",
+      "Elles paraissent naturelles et apaisantes, comme un coucher de soleil ou une forêt.",
+      "Comme elles se ressemblent, crée du contraste par la valeur : une plus claire, une plus foncée."
+     ],
+     "q": "Quel paysage te vient en tête quand tu imagines une palette calme ?",
+     "c": "Choisis trois couleurs voisines et crée un marque-page uniquement avec elles, dont une claire et une foncée."
+    },
+    "it": {
+     "t": "Colori analoghi",
+     "g": "Creare palette calme e armoniose con colori vicini nel cerchio.",
+     "p": [
+      "I colori analoghi stanno accanto, come giallo, giallo arancio e arancio.",
+      "Risultano naturali e rilassanti, come un tramonto o un bosco.",
+      "Essendo simili, serve contrasto di luminosità: una tonalità più chiara e una più scura."
+     ],
+     "q": "Quale paesaggio ti viene in mente se immagini una palette calma?",
+     "c": "Scegli tre colori vicini e progetta un segnalibro solo con quelli, con uno chiaro e uno scuro."
+    },
+    "pt": {
+     "t": "Cores análogas",
+     "g": "Criar paletas calmas e harmoniosas com cores vizinhas no círculo.",
+     "p": [
+      "As cores análogas estão lado a lado, como amarelo, amarelo-alaranjado e laranja.",
+      "Parecem naturais e tranquilas, como um pôr do sol ou uma floresta.",
+      "Como são parecidas, cria contraste pelo valor: um tom mais claro e outro mais escuro."
+     ],
+     "q": "Que paisagem te vem à cabeça quando imaginas uma paleta calma?",
+     "c": "Escolhe três cores vizinhas e desenha um marcador de livros só com elas, com uma clara e uma escura."
+    },
+    "pt_BR": {
+     "t": "Cores análogas",
+     "g": "Criar paletas calmas e harmoniosas com cores vizinhas no círculo.",
+     "p": [
+      "Cores análogas ficam lado a lado, como amarelo, amarelo-alaranjado e laranja.",
+      "Elas parecem naturais e tranquilas, como um pôr do sol ou uma floresta.",
+      "Como são parecidas, crie contraste pelo valor: um tom mais claro e outro mais escuro."
+     ],
+     "q": "Que paisagem vem à sua cabeça quando imagina uma paleta calma?",
+     "c": "Escolha três cores vizinhas e crie um marcador de página só com elas, com uma clara e uma escura."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Triadic and split palettes",
+     "g": "Use balanced three-colour schemes that are lively but still harmonious.",
+     "p": [
+      "A triadic scheme uses three hues evenly spaced on the wheel, like red, yellow and blue.",
+      "A split-complementary scheme takes one hue plus the two neighbours of its opposite.",
+      "Both are bold, so let one colour lead and use the others in smaller amounts."
+     ],
+     "q": "Do you prefer bold, playful palettes or quieter ones?",
+     "c": "Pick a hue, find the two neighbours of its opposite, and colour a simple kite with this split palette."
+    },
+    "de": {
+     "t": "Triaden und Split-Paletten",
+     "g": "Ausgewogene Dreifarbschemata nutzen, die lebendig und trotzdem harmonisch sind.",
+     "p": [
+      "Eine Triade nutzt drei gleichmäßig verteilte Farbtöne im Kreis, etwa Rot, Gelb und Blau.",
+      "Ein Split-Komplementärschema nimmt einen Farbton plus die zwei Nachbarn seines Gegenübers.",
+      "Beide sind kräftig, also lass eine Farbe führen und setz die anderen sparsamer ein."
+     ],
+     "q": "Magst du lieber kräftige, verspielte Paletten oder ruhigere?",
+     "c": "Wähle einen Farbton, such die zwei Nachbarn seines Gegenübers und male einen einfachen Drachen damit aus."
+    },
+    "es": {
+     "t": "Paletas triádicas y divididas",
+     "g": "Usar esquemas de tres colores equilibrados, vivos pero armoniosos.",
+     "p": [
+      "Una tríada usa tres tonos repartidos por igual en el círculo, como rojo, amarillo y azul.",
+      "El complementario dividido toma un tono y los dos vecinos de su opuesto.",
+      "Ambos son llamativos, así que deja que un color mande y usa los otros en menor cantidad."
+     ],
+     "q": "¿Prefieres paletas atrevidas y alegres o más tranquilas?",
+     "c": "Elige un tono, busca los dos vecinos de su opuesto y colorea una cometa sencilla con esa paleta."
+    },
+    "fr": {
+     "t": "Palettes triadiques et divisées",
+     "g": "Utiliser des schémas à trois couleurs équilibrés, vivants mais harmonieux.",
+     "p": [
+      "Une triade utilise trois teintes réparties à égale distance sur le cercle, comme rouge, jaune et bleu.",
+      "Le schéma complémentaire divisé prend une teinte et les deux voisines de son opposée.",
+      "Les deux sont audacieux : laisse une couleur dominer et utilise les autres en plus petites doses."
+     ],
+     "q": "Préfères-tu les palettes audacieuses et joyeuses ou plus discrètes ?",
+     "c": "Choisis une teinte, trouve les deux voisines de son opposée et colorie un cerf-volant simple avec cette palette."
+    },
+    "it": {
+     "t": "Palette triadiche e split",
+     "g": "Usare schemi a tre colori bilanciati, vivaci ma armoniosi.",
+     "p": [
+      "Una triade usa tre tinte equidistanti nel cerchio, come rosso, giallo e blu.",
+      "Lo schema complementare diviso prende una tinta e le due vicine del suo opposto.",
+      "Entrambi sono audaci: lascia che un colore guidi e usa gli altri in quantità minori."
+     ],
+     "q": "Preferisci palette audaci e giocose o più tranquille?",
+     "c": "Scegli una tinta, trova le due vicine del suo opposto e colora un semplice aquilone con questa palette."
+    },
+    "pt": {
+     "t": "Paletas triádicas e divididas",
+     "g": "Usar esquemas de três cores equilibrados, vivos mas harmoniosos.",
+     "p": [
+      "Uma tríade usa três matizes igualmente espaçadas no círculo, como vermelho, amarelo e azul.",
+      "O complementar dividido usa uma matiz e as duas vizinhas da sua oposta.",
+      "Ambos são ousados, por isso deixa uma cor liderar e usa as outras em menor quantidade."
+     ],
+     "q": "Preferes paletas ousadas e divertidas ou mais tranquilas?",
+     "c": "Escolhe uma matiz, encontra as duas vizinhas da oposta e pinta um papagaio de papel simples com essa paleta."
+    },
+    "pt_BR": {
+     "t": "Paletas triádicas e divididas",
+     "g": "Usar esquemas de três cores equilibrados, vivos mas harmoniosos.",
+     "p": [
+      "Uma tríade usa três cores igualmente espaçadas no círculo, como vermelho, amarelo e azul.",
+      "O complementar dividido usa uma cor e as duas vizinhas da sua oposta.",
+      "Os dois são ousados, então deixe uma cor liderar e use as outras em menor quantidade."
+     ],
+     "q": "Você prefere paletas ousadas e divertidas ou mais tranquilas?",
+     "c": "Escolha uma cor, ache as duas vizinhas da oposta e pinte uma pipa simples com essa paleta."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warm and cool colours",
+     "g": "See how warm and cool hues affect mood, depth and attention.",
+     "p": [
+      "Warm colours like red, orange and yellow feel energetic and seem to come forward.",
+      "Cool colours like blue, green and violet feel calm and seem to step back.",
+      "A warm accent on a cool background draws the eye straight to it."
+     ],
+     "q": "Is your favourite room at home warm or cool in colour?",
+     "c": "Draw the same simple landscape twice, once in warm colours and once in cool, and note the change in mood."
+    },
+    "de": {
+     "t": "Warme und kalte Farben",
+     "g": "Verstehen, wie warme und kalte Farbtöne Stimmung, Tiefe und Aufmerksamkeit beeinflussen.",
+     "p": [
+      "Warme Farben wie Rot, Orange und Gelb wirken energisch und scheinen nach vorn zu kommen.",
+      "Kalte Farben wie Blau, Grün und Violett wirken ruhig und scheinen zurückzutreten.",
+      "Ein warmer Akzent auf kaltem Hintergrund zieht den Blick sofort an."
+     ],
+     "q": "Ist dein Lieblingsraum zu Hause eher warm oder kalt gefärbt?",
+     "c": "Zeichne dieselbe einfache Landschaft zweimal, warm und kalt, und notiere, wie sich die Stimmung ändert."
+    },
+    "es": {
+     "t": "Colores cálidos y fríos",
+     "g": "Ver cómo los tonos cálidos y fríos influyen en el ánimo, la profundidad y la atención.",
+     "p": [
+      "Los cálidos, como rojo, naranja y amarillo, transmiten energía y parecen acercarse.",
+      "Los fríos, como azul, verde y violeta, transmiten calma y parecen alejarse.",
+      "Un acento cálido sobre un fondo frío atrae la mirada directamente."
+     ],
+     "q": "¿Tu habitación favorita de casa tiene colores cálidos o fríos?",
+     "c": "Dibuja el mismo paisaje sencillo dos veces, en cálidos y en fríos, y anota cómo cambia el ambiente."
+    },
+    "fr": {
+     "t": "Couleurs chaudes et froides",
+     "g": "Voir comment les teintes chaudes et froides influencent l'humeur, la profondeur et l'attention.",
+     "p": [
+      "Les couleurs chaudes, rouge, orange, jaune, paraissent énergiques et semblent avancer.",
+      "Les couleurs froides, bleu, vert, violet, paraissent calmes et semblent reculer.",
+      "Une touche chaude sur un fond froid attire immédiatement le regard."
+     ],
+     "q": "Ta pièce préférée à la maison est-elle plutôt chaude ou froide en couleurs ?",
+     "c": "Dessine le même paysage simple deux fois, en chaud puis en froid, et note le changement d'ambiance."
+    },
+    "it": {
+     "t": "Colori caldi e freddi",
+     "g": "Vedere come le tinte calde e fredde influenzano umore, profondità e attenzione.",
+     "p": [
+      "I colori caldi come rosso, arancio e giallo trasmettono energia e sembrano avanzare.",
+      "I colori freddi come blu, verde e viola trasmettono calma e sembrano arretrare.",
+      "Un accento caldo su uno sfondo freddo attira subito lo sguardo."
+     ],
+     "q": "La tua stanza preferita di casa ha colori caldi o freddi?",
+     "c": "Disegna lo stesso paesaggio semplice due volte, in colori caldi e freddi, e annota come cambia l'atmosfera."
+    },
+    "pt": {
+     "t": "Cores quentes e frias",
+     "g": "Ver como as cores quentes e frias afetam o ambiente, a profundidade e a atenção.",
+     "p": [
+      "As quentes, como vermelho, laranja e amarelo, parecem enérgicas e parecem avançar.",
+      "As frias, como azul, verde e violeta, parecem calmas e parecem recuar.",
+      "Um destaque quente sobre um fundo frio puxa logo o olhar."
+     ],
+     "q": "A tua divisão preferida em casa tem cores quentes ou frias?",
+     "c": "Desenha a mesma paisagem simples duas vezes, em cores quentes e frias, e anota a mudança de ambiente."
+    },
+    "pt_BR": {
+     "t": "Cores quentes e frias",
+     "g": "Ver como cores quentes e frias afetam o clima, a profundidade e a atenção.",
+     "p": [
+      "As quentes, como vermelho, laranja e amarelo, passam energia e parecem vir para frente.",
+      "As frias, como azul, verde e violeta, passam calma e parecem se afastar.",
+      "Um destaque quente sobre um fundo frio puxa o olhar na hora."
+     ],
+     "q": "O seu cômodo favorito em casa tem cores quentes ou frias?",
+     "c": "Desenhe a mesma paisagem simples duas vezes, em cores quentes e frias, e anote a mudança de clima."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tints, shades and tones",
+     "g": "Add white, black or grey to a colour to build a richer palette.",
+     "p": [
+      "A tint is a colour mixed with white, giving soft, light versions like pastels.",
+      "A shade is a colour mixed with black, giving deep, dramatic versions.",
+      "A tone is a colour mixed with grey, giving subtle, sophisticated versions."
+     ],
+     "q": "Do pastel colours or deep dark colours suit your style better?",
+     "c": "Pick one colour and make a strip of seven steps: three tints, the pure colour and three shades."
+    },
+    "de": {
+     "t": "Aufhellungen, Abdunklungen, Trübungen",
+     "g": "Einer Farbe Weiß, Schwarz oder Grau beimischen, um eine reichere Palette zu bauen.",
+     "p": [
+      "Eine Aufhellung ist eine Farbe mit Weiß gemischt und ergibt weiche, helle Pastelltöne.",
+      "Eine Abdunklung ist eine Farbe mit Schwarz gemischt und ergibt tiefe, dramatische Töne.",
+      "Eine Trübung ist eine Farbe mit Grau gemischt und ergibt dezente, edle Töne."
+     ],
+     "q": "Passen Pastelltöne oder tiefe, dunkle Farben besser zu deinem Stil?",
+     "c": "Wähle eine Farbe und mal eine Leiste mit sieben Stufen: drei Aufhellungen, die reine Farbe und drei Abdunklungen."
+    },
+    "es": {
+     "t": "Tintes, sombras y tonos",
+     "g": "Añadir blanco, negro o gris a un color para crear una paleta más rica.",
+     "p": [
+      "Un tinte es un color mezclado con blanco, que da versiones claras y suaves como los pasteles.",
+      "Una sombra es un color mezclado con negro, que da versiones profundas y dramáticas.",
+      "Un tono es un color mezclado con gris, que da versiones sutiles y elegantes."
+     ],
+     "q": "¿Te van más los colores pastel o los colores oscuros y profundos?",
+     "c": "Elige un color y pinta una tira de siete pasos: tres tintes, el color puro y tres sombras."
+    },
+    "fr": {
+     "t": "Teintes claires, ombres et tons",
+     "g": "Ajouter du blanc, du noir ou du gris à une couleur pour enrichir une palette.",
+     "p": [
+      "Une teinte claire est une couleur mêlée de blanc : des versions douces et légères comme les pastels.",
+      "Une ombre est une couleur mêlée de noir : des versions profondes et dramatiques.",
+      "Un ton est une couleur mêlée de gris : des versions subtiles et raffinées."
+     ],
+     "q": "Les pastels ou les couleurs sombres et profondes te correspondent-ils mieux ?",
+     "c": "Choisis une couleur et peins une bande de sept cases : trois plus claires, la couleur pure et trois plus sombres."
+    },
+    "it": {
+     "t": "Tinte chiare, ombre e toni",
+     "g": "Aggiungere bianco, nero o grigio a un colore per creare una palette più ricca.",
+     "p": [
+      "Una tinta chiara è un colore mescolato al bianco: versioni leggere e morbide come i pastelli.",
+      "Un'ombra è un colore mescolato al nero: versioni profonde e drammatiche.",
+      "Un tono è un colore mescolato al grigio: versioni sottili e raffinate."
+     ],
+     "q": "Ti si addicono di più i colori pastello o quelli scuri e profondi?",
+     "c": "Scegli un colore e dipingi una striscia di sette passi: tre più chiari, il colore puro e tre più scuri."
+    },
+    "pt": {
+     "t": "Tintas, sombras e tons",
+     "g": "Juntar branco, preto ou cinzento a uma cor para criar uma paleta mais rica.",
+     "p": [
+      "Uma tinta é uma cor misturada com branco, dando versões claras e suaves como os pastéis.",
+      "Uma sombra é uma cor misturada com preto, dando versões profundas e dramáticas.",
+      "Um tom é uma cor misturada com cinzento, dando versões subtis e sofisticadas."
+     ],
+     "q": "Os tons pastel ou as cores escuras e profundas combinam mais contigo?",
+     "c": "Escolhe uma cor e pinta uma tira de sete passos: três mais claros, a cor pura e três mais escuros."
+    },
+    "pt_BR": {
+     "t": "Tints, sombras e tons",
+     "g": "Adicionar branco, preto ou cinza a uma cor para montar uma paleta mais rica.",
+     "p": [
+      "Um tint é uma cor misturada com branco, gerando versões claras e suaves como os tons pastel.",
+      "Uma sombra é uma cor misturada com preto, gerando versões profundas e dramáticas.",
+      "Um tom é uma cor misturada com cinza, gerando versões sutis e sofisticadas."
+     ],
+     "q": "Tons pastel ou cores escuras e profundas combinam mais com você?",
+     "c": "Escolha uma cor e pinte uma faixa de sete passos: três mais claros, a cor pura e três mais escuros."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour and contrast for reading",
+     "g": "Choose text and background colours that are easy to read for everyone.",
+     "p": [
+      "Readability depends mostly on value contrast: dark text on light or light text on dark.",
+      "Avoid pairs of similar lightness, like red on green or light grey on white.",
+      "Never use colour alone to carry meaning; add words, icons or patterns for people with colour blindness."
+     ],
+     "q": "Have you ever struggled to read text on a sign or screen because of its colours?",
+     "c": "Write a sentence in five colour pairs, view it in black and white, and keep only the pairs still easy to read."
+    },
+    "de": {
+     "t": "Farbe und Kontrast zum Lesen",
+     "g": "Text- und Hintergrundfarben wählen, die für alle gut lesbar sind.",
+     "p": [
+      "Lesbarkeit hängt vor allem vom Helligkeitskontrast ab: dunkler Text auf hell oder heller Text auf dunkel.",
+      "Vermeide Paare ähnlicher Helligkeit, etwa Rot auf Grün oder Hellgrau auf Weiß.",
+      "Nutze Farbe nie allein als Bedeutungsträger; ergänze Worte, Icons oder Muster für Menschen mit Farbsehschwäche."
+     ],
+     "q": "Hattest du schon Mühe, Text auf einem Schild oder Bildschirm wegen seiner Farben zu lesen?",
+     "c": "Schreib einen Satz in fünf Farbpaaren, betrachte ihn in Schwarzweiß und behalte nur gut lesbare Paare."
+    },
+    "es": {
+     "t": "Color y contraste para leer",
+     "g": "Elegir colores de texto y fondo fáciles de leer para todo el mundo.",
+     "p": [
+      "La legibilidad depende sobre todo del contraste de valor: texto oscuro sobre claro o claro sobre oscuro.",
+      "Evita pares de luminosidad parecida, como rojo sobre verde o gris claro sobre blanco.",
+      "No uses solo el color para transmitir significado; añade palabras, iconos o tramas para el daltonismo."
+     ],
+     "q": "¿Te ha costado leer un letrero o una pantalla por culpa de sus colores?",
+     "c": "Escribe una frase en cinco pares de colores, mírala en blanco y negro y quédate con los que se leen bien."
+    },
+    "fr": {
+     "t": "Couleur et contraste pour lire",
+     "g": "Choisir des couleurs de texte et de fond faciles à lire pour tout le monde.",
+     "p": [
+      "La lisibilité dépend surtout du contraste de valeur : texte foncé sur clair ou clair sur foncé.",
+      "Évite les paires de clarté proche, comme rouge sur vert ou gris clair sur blanc.",
+      "N'utilise jamais la couleur seule pour porter un sens ; ajoute mots, icônes ou motifs pour les daltoniens."
+     ],
+     "q": "As-tu déjà eu du mal à lire un panneau ou un écran à cause de ses couleurs ?",
+     "c": "Écris une phrase dans cinq paires de couleurs, regarde-la en noir et blanc et garde celles qui restent lisibles."
+    },
+    "it": {
+     "t": "Colore e contrasto per leggere",
+     "g": "Scegliere colori di testo e sfondo facili da leggere per tutti.",
+     "p": [
+      "La leggibilità dipende soprattutto dal contrasto di luminosità: testo scuro su chiaro o chiaro su scuro.",
+      "Evita coppie di luminosità simile, come rosso su verde o grigio chiaro su bianco.",
+      "Non affidare mai il significato al solo colore; aggiungi parole, icone o motivi per chi è daltonico."
+     ],
+     "q": "Ti è capitato di faticare a leggere un cartello o uno schermo per colpa dei colori?",
+     "c": "Scrivi una frase in cinque coppie di colori, guardala in bianco e nero e tieni solo quelle ancora leggibili."
+    },
+    "pt": {
+     "t": "Cor e contraste para ler",
+     "g": "Escolher cores de texto e fundo fáceis de ler para toda a gente.",
+     "p": [
+      "A legibilidade depende sobretudo do contraste de valor: texto escuro sobre claro ou claro sobre escuro.",
+      "Evita pares de luminosidade parecida, como vermelho sobre verde ou cinzento-claro sobre branco.",
+      "Nunca uses só a cor para transmitir significado; junta palavras, ícones ou padrões para quem é daltónico."
+     ],
+     "q": "Já tiveste dificuldade em ler um letreiro ou ecrã por causa das cores?",
+     "c": "Escreve uma frase em cinco pares de cores, vê-a a preto e branco e fica só com os que se leem bem."
+    },
+    "pt_BR": {
+     "t": "Cor e contraste para leitura",
+     "g": "Escolher cores de texto e fundo fáceis de ler para todo mundo.",
+     "p": [
+      "A legibilidade depende principalmente do contraste de valor: texto escuro no claro ou claro no escuro.",
+      "Evite pares de luminosidade parecida, como vermelho sobre verde ou cinza-claro sobre branco.",
+      "Nunca use só a cor para passar significado; inclua palavras, ícones ou padrões para quem é daltônico."
+     ],
+     "q": "Você já teve dificuldade para ler uma placa ou tela por causa das cores?",
+     "c": "Escreva uma frase em cinco pares de cores, veja em preto e branco e fique só com os que dá para ler bem."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour meanings across cultures",
+     "g": "Learn how the same colour can mean different things in different countries.",
+     "p": [
+      "White is linked with purity and weddings in many Western countries but with mourning in parts of East Asia.",
+      "Red often means luck and celebration in China, while elsewhere it may signal danger or love.",
+      "Designing for a global audience means checking colour meanings with the people you design for."
+     ],
+     "q": "What does your favourite colour mean where you grew up?",
+     "c": "Ask a friend from another country what three colours mean to them, and compare with your own answers."
+    },
+    "de": {
+     "t": "Farbbedeutungen in Kulturen",
+     "g": "Erfahren, wie dieselbe Farbe in verschiedenen Ländern Verschiedenes bedeuten kann.",
+     "p": [
+      "Weiß steht in vielen westlichen Ländern für Reinheit und Hochzeit, in Teilen Ostasiens für Trauer.",
+      "Rot bedeutet in China oft Glück und Feier, anderswo eher Gefahr oder Liebe.",
+      "Für ein globales Publikum heißt das: Farbbedeutungen mit den Menschen klären, für die du gestaltest."
+     ],
+     "q": "Was bedeutet deine Lieblingsfarbe dort, wo du aufgewachsen bist?",
+     "c": "Frag jemanden aus einem anderen Land, was drei Farben für ihn bedeuten, und vergleiche mit deinen Antworten."
+    },
+    "es": {
+     "t": "El color en distintas culturas",
+     "g": "Saber cómo un mismo color puede significar cosas distintas según el país.",
+     "p": [
+      "El blanco se asocia a pureza y bodas en muchos países occidentales, pero al luto en partes de Asia oriental.",
+      "El rojo suele significar suerte y celebración en China, y en otros lugares peligro o amor.",
+      "Diseñar para un público global implica comprobar los significados con las personas destinatarias."
+     ],
+     "q": "¿Qué significa tu color favorito en el lugar donde creciste?",
+     "c": "Pregunta a alguien de otro país qué significan para él tres colores y compáralo con tus respuestas."
+    },
+    "fr": {
+     "t": "Les couleurs selon les cultures",
+     "g": "Découvrir comment une même couleur peut avoir des sens différents selon les pays.",
+     "p": [
+      "Le blanc évoque la pureté et le mariage dans beaucoup de pays occidentaux, mais le deuil dans une partie de l'Asie de l'Est.",
+      "Le rouge signifie souvent chance et fête en Chine, ailleurs plutôt danger ou amour.",
+      "Concevoir pour un public mondial, c'est vérifier le sens des couleurs avec les personnes concernées."
+     ],
+     "q": "Que signifie ta couleur préférée là où tu as grandi ?",
+     "c": "Demande à quelqu'un d'un autre pays ce que trois couleurs signifient pour lui, et compare avec tes réponses."
+    },
+    "it": {
+     "t": "I colori nelle diverse culture",
+     "g": "Scoprire come lo stesso colore possa significare cose diverse nei vari paesi.",
+     "p": [
+      "Il bianco in molti paesi occidentali è legato a purezza e matrimoni, in parte dell'Asia orientale al lutto.",
+      "Il rosso in Cina spesso significa fortuna e festa, altrove può indicare pericolo o amore.",
+      "Progettare per un pubblico globale vuol dire verificare i significati con le persone a cui ti rivolgi."
+     ],
+     "q": "Cosa significa il tuo colore preferito nel posto in cui sei cresciuto?",
+     "c": "Chiedi a qualcuno di un altro paese cosa significano per lui tre colori e confronta con le tue risposte."
+    },
+    "pt": {
+     "t": "O significado das cores nas culturas",
+     "g": "Perceber como a mesma cor pode significar coisas diferentes em países diferentes.",
+     "p": [
+      "O branco liga-se à pureza e aos casamentos em muitos países ocidentais, mas ao luto em partes da Ásia Oriental.",
+      "O vermelho significa muitas vezes sorte e festa na China, e noutros sítios perigo ou amor.",
+      "Desenhar para um público global implica confirmar os significados com as pessoas a quem te diriges."
+     ],
+     "q": "O que significa a tua cor preferida no sítio onde cresceste?",
+     "c": "Pergunta a alguém de outro país o que três cores significam para essa pessoa e compara com as tuas respostas."
+    },
+    "pt_BR": {
+     "t": "Significado das cores nas culturas",
+     "g": "Entender como a mesma cor pode significar coisas diferentes em cada país.",
+     "p": [
+      "O branco é ligado à pureza e a casamentos em muitos países ocidentais, mas ao luto em partes da Ásia Oriental.",
+      "O vermelho costuma significar sorte e festa na China, e em outros lugares perigo ou amor.",
+      "Criar para um público global exige confirmar os significados com as pessoas para quem você cria."
+     ],
+     "q": "O que sua cor favorita significa no lugar onde você cresceu?",
+     "c": "Pergunte a alguém de outro país o que três cores significam para essa pessoa e compare com suas respostas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a colour palette",
+     "g": "Choose a main colour, supporting colours and accents for a project.",
+     "p": [
+      "Start from the feeling you want, then pick one main colour that carries it.",
+      "Add one or two supporting colours, plus neutrals like off-white, grey or near-black for text and space.",
+      "Keep one bright accent for the things that must stand out, like buttons or key words."
+     ],
+     "q": "If your personality were a palette, what would the main colour be?",
+     "c": "Build a five-colour palette for a small cafe: one main, two supporting, one neutral and one accent."
+    },
+    "de": {
+     "t": "Eine Farbpalette aufbauen",
+     "g": "Hauptfarbe, unterstützende Farben und Akzente für ein Projekt auswählen.",
+     "p": [
+      "Beginne mit dem gewünschten Gefühl und wähle eine Hauptfarbe, die es trägt.",
+      "Füge ein oder zwei unterstützende Farben hinzu, dazu Neutrale wie gebrochenes Weiß, Grau oder Fast-Schwarz.",
+      "Behalte einen leuchtenden Akzent für das, was herausstechen muss, etwa Buttons oder Schlüsselwörter."
+     ],
+     "q": "Wenn deine Persönlichkeit eine Palette wäre, welche Hauptfarbe hätte sie?",
+     "c": "Stell eine Palette mit fünf Farben für ein kleines Café zusammen: Haupt-, zwei Neben-, eine Neutral- und eine Akzentfarbe."
+    },
+    "es": {
+     "t": "Crear una paleta de color",
+     "g": "Elegir un color principal, colores de apoyo y acentos para un proyecto.",
+     "p": [
+      "Parte de la sensación que quieres y elige un color principal que la transmita.",
+      "Añade uno o dos colores de apoyo y neutros como blanco roto, gris o casi negro para texto y espacio.",
+      "Reserva un acento vivo para lo que debe destacar, como botones o palabras clave."
+     ],
+     "q": "Si tu personalidad fuera una paleta, ¿cuál sería el color principal?",
+     "c": "Crea una paleta de cinco colores para una cafetería: uno principal, dos de apoyo, un neutro y un acento."
+    },
+    "fr": {
+     "t": "Construire une palette",
+     "g": "Choisir une couleur principale, des couleurs d'appui et des accents pour un projet.",
+     "p": [
+      "Pars de l'émotion voulue, puis choisis une couleur principale qui la porte.",
+      "Ajoute une ou deux couleurs d'appui, plus des neutres comme blanc cassé, gris ou presque noir.",
+      "Garde un accent vif pour ce qui doit ressortir, comme les boutons ou les mots clés."
+     ],
+     "q": "Si ta personnalité était une palette, quelle serait sa couleur principale ?",
+     "c": "Compose une palette de cinq couleurs pour un petit café : une principale, deux d'appui, un neutre et un accent."
+    },
+    "it": {
+     "t": "Costruire una palette",
+     "g": "Scegliere un colore principale, colori di supporto e accenti per un progetto.",
+     "p": [
+      "Parti dalla sensazione che vuoi e scegli un colore principale che la trasmetta.",
+      "Aggiungi uno o due colori di supporto e dei neutri come bianco sporco, grigio o quasi nero.",
+      "Tieni un accento vivace per ciò che deve risaltare, come pulsanti o parole chiave."
+     ],
+     "q": "Se la tua personalità fosse una palette, quale sarebbe il colore principale?",
+     "c": "Crea una palette di cinque colori per un piccolo bar: uno principale, due di supporto, un neutro e un accento."
+    },
+    "pt": {
+     "t": "Criar uma paleta de cores",
+     "g": "Escolher uma cor principal, cores de apoio e destaques para um projeto.",
+     "p": [
+      "Parte da sensação que queres e escolhe uma cor principal que a transmita.",
+      "Junta uma ou duas cores de apoio e neutros como branco-sujo, cinzento ou quase preto.",
+      "Guarda um destaque vivo para o que tem de sobressair, como botões ou palavras-chave."
+     ],
+     "q": "Se a tua personalidade fosse uma paleta, qual seria a cor principal?",
+     "c": "Cria uma paleta de cinco cores para um pequeno café: uma principal, duas de apoio, um neutro e um destaque."
+    },
+    "pt_BR": {
+     "t": "Montando uma paleta de cores",
+     "g": "Escolher uma cor principal, cores de apoio e destaques para um projeto.",
+     "p": [
+      "Parta da sensação que você quer e escolha uma cor principal que a transmita.",
+      "Adicione uma ou duas cores de apoio e neutros como off-white, cinza ou quase preto.",
+      "Guarde um destaque vivo para o que precisa aparecer, como botões ou palavras-chave."
+     ],
+     "q": "Se sua personalidade fosse uma paleta, qual seria a cor principal?",
+     "c": "Monte uma paleta de cinco cores para uma cafeteria: uma principal, duas de apoio, um neutro e um destaque."
+    }
+   }
+  }
+ ]
+}

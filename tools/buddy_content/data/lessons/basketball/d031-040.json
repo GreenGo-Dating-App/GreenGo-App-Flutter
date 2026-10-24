@@ -1,0 +1,835 @@
+{
+ "topic": "basketball",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Birth of basketball, 1891",
+     "g": "Discover how basketball was invented in a single winter.",
+     "p": [
+      "In December 1891, Canadian teacher James Naismith created a new indoor game in Springfield, Massachusetts.",
+      "He nailed two peach baskets to a balcony, and someone climbed a ladder to get the ball after each score.",
+      "His original 13 rules banned running with the ball, and the first game ended 1-0."
+     ],
+     "q": "What would you have thought, playing that very first game with peach baskets?",
+     "c": "Find one of Naismith's original 13 rules and compare it with today's game."
+    },
+    "de": {
+     "t": "Die Geburt des Basketballs, 1891",
+     "g": "Entdecke, wie Basketball in einem einzigen Winter erfunden wurde.",
+     "p": [
+      "Im Dezember 1891 erfand der kanadische Lehrer James Naismith in Springfield, Massachusetts, ein neues Hallenspiel.",
+      "Er nagelte zwei Pfirsichkörbe an eine Galerie, und nach jedem Treffer holte jemand den Ball mit einer Leiter.",
+      "Seine 13 Originalregeln verboten das Laufen mit dem Ball, und das erste Spiel endete 1:0."
+     ],
+     "q": "Was hättest du wohl gedacht, beim allerersten Spiel mit Pfirsichkörben dabei zu sein?",
+     "c": "Such eine der 13 Originalregeln von Naismith und vergleich sie mit dem heutigen Spiel."
+    },
+    "es": {
+     "t": "El nacimiento del baloncesto, 1891",
+     "g": "Descubre cómo se inventó el baloncesto en un solo invierno.",
+     "p": [
+      "En diciembre de 1891, el profesor canadiense James Naismith creó un juego de interior en Springfield, Massachusetts.",
+      "Clavó dos cestas de melocotones a una galería, y tras cada canasta alguien subía con una escalera a por el balón.",
+      "Sus 13 reglas originales prohibían correr con el balón, y el primer partido acabó 1-0."
+     ],
+     "q": "¿Qué habrías pensado jugando aquel primer partido con cestas de melocotones?",
+     "c": "Busca una de las 13 reglas originales de Naismith y compárala con el juego actual."
+    },
+    "fr": {
+     "t": "La naissance du basket, 1891",
+     "g": "Découvrir comment le basket a été inventé en un seul hiver.",
+     "p": [
+      "En décembre 1891, le professeur canadien James Naismith crée un nouveau jeu d'intérieur à Springfield, Massachusetts.",
+      "Il cloue deux paniers à pêches à un balcon, et après chaque panier quelqu'un monte à l'échelle chercher le ballon.",
+      "Ses 13 règles d'origine interdisaient de courir avec le ballon, et le premier match s'est terminé 1-0."
+     ],
+     "q": "Qu'aurais-tu pensé en jouant ce tout premier match avec des paniers à pêches ?",
+     "c": "Trouve une des 13 règles d'origine de Naismith et compare-la au jeu d'aujourd'hui."
+    },
+    "it": {
+     "t": "La nascita del basket, 1891",
+     "g": "Scopri come il basket fu inventato in un solo inverno.",
+     "p": [
+      "Nel dicembre 1891 l'insegnante canadese James Naismith creò un nuovo gioco al coperto a Springfield, Massachusetts.",
+      "Inchiodò due cesti per le pesche a una balconata, e dopo ogni canestro qualcuno saliva su una scala a riprendere la palla.",
+      "Le sue 13 regole originali vietavano di correre con la palla, e la prima partita finì 1-0."
+     ],
+     "q": "Cosa avresti pensato giocando quella primissima partita con i cesti per le pesche?",
+     "c": "Trova una delle 13 regole originali di Naismith e confrontala con il gioco di oggi."
+    },
+    "pt": {
+     "t": "O nascimento do basquetebol, 1891",
+     "g": "Descobre como o basquetebol foi inventado num só inverno.",
+     "p": [
+      "Em dezembro de 1891, o professor canadiano James Naismith criou um novo jogo de pavilhão em Springfield, Massachusetts.",
+      "Pregou dois cestos de pêssegos a uma varanda, e após cada cesto alguém subia uma escada para ir buscar a bola.",
+      "As suas 13 regras originais proibiam correr com a bola, e o primeiro jogo acabou 1-0."
+     ],
+     "q": "O que terias pensado a jogar esse primeiro jogo com cestos de pêssegos?",
+     "c": "Procura uma das 13 regras originais de Naismith e compara-a com o jogo de hoje."
+    },
+    "pt_BR": {
+     "t": "O nascimento do basquete, 1891",
+     "g": "Descubra como o basquete foi inventado em um único inverno.",
+     "p": [
+      "Em dezembro de 1891, o professor canadense James Naismith criou um novo jogo de ginásio em Springfield, Massachusetts.",
+      "Ele pregou dois cestos de pêssego num balcão, e após cada cesta alguém subia numa escada para pegar a bola.",
+      "Suas 13 regras originais proibiam correr com a bola, e o primeiro jogo terminou 1 a 0."
+     ],
+     "q": "O que você teria achado de jogar aquele primeiro jogo com cestos de pêssego?",
+     "c": "Procure uma das 13 regras originais de Naismith e compare com o jogo de hoje."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "From college gyms to pros",
+     "g": "Follow how the new game spread across the world.",
+     "p": [
+      "YMCA teachers carried basketball to other cities and countries within just a few years.",
+      "Colleges formed teams, and early professional leagues and touring teams like the Harlem Globetrotters, founded in 1926, followed.",
+      "In 1949 the BAA and the NBL merged to form the NBA."
+     ],
+     "q": "Why do you think the game spread so quickly?",
+     "c": "Look up when basketball first arrived in your own country."
+    },
+    "de": {
+     "t": "Von College-Hallen zu den Profis",
+     "g": "Verfolge, wie sich das neue Spiel in der Welt verbreitete.",
+     "p": [
+      "YMCA-Lehrer brachten Basketball innerhalb weniger Jahre in andere Städte und Länder.",
+      "Colleges gründeten Teams, es folgten frühe Profiligen und Showteams wie die Harlem Globetrotters, gegründet 1926.",
+      "1949 schlossen sich BAA und NBL zur NBA zusammen."
+     ],
+     "q": "Warum hat sich das Spiel wohl so schnell verbreitet?",
+     "c": "Finde heraus, wann Basketball zum ersten Mal in dein Land kam."
+    },
+    "es": {
+     "t": "De los gimnasios universitarios a los profesionales",
+     "g": "Sigue cómo se extendió el nuevo juego por el mundo.",
+     "p": [
+      "Los profesores de la YMCA llevaron el baloncesto a otras ciudades y países en pocos años.",
+      "Las universidades formaron equipos y llegaron las primeras ligas profesionales y equipos de gira como los Harlem Globetrotters, de 1926.",
+      "En 1949 la BAA y la NBL se fusionaron y nació la NBA."
+     ],
+     "q": "¿Por qué crees que el juego se extendió tan rápido?",
+     "c": "Busca cuándo llegó el baloncesto por primera vez a tu país."
+    },
+    "fr": {
+     "t": "Des gymnases universitaires aux pros",
+     "g": "Suivre comment le nouveau jeu s'est répandu dans le monde.",
+     "p": [
+      "Les professeurs de la YMCA ont porté le basket vers d'autres villes et pays en quelques années.",
+      "Puis vinrent les équipes universitaires, les premières ligues pros et des équipes de tournée comme les Harlem Globetrotters, fondés en 1926.",
+      "En 1949, la BAA et la NBL ont fusionné pour former la NBA."
+     ],
+     "q": "Pourquoi le jeu s'est-il répandu si vite, à ton avis ?",
+     "c": "Cherche quand le basket est arrivé pour la première fois dans ton pays."
+    },
+    "it": {
+     "t": "Dalle palestre universitarie ai professionisti",
+     "g": "Segui come il nuovo gioco si diffuse nel mondo.",
+     "p": [
+      "Gli istruttori della YMCA portarono il basket in altre città e Paesi in pochi anni.",
+      "Nacquero squadre universitarie, poi le prime leghe professionistiche e squadre in tournée come gli Harlem Globetrotters, fondati nel 1926.",
+      "Nel 1949 la BAA e la NBL si unirono e nacque la NBA."
+     ],
+     "q": "Perché pensi che il gioco si sia diffuso così in fretta?",
+     "c": "Scopri quando il basket arrivò per la prima volta nel tuo Paese."
+    },
+    "pt": {
+     "t": "Dos pavilhões universitários aos profissionais",
+     "g": "Acompanha como o novo jogo se espalhou pelo mundo.",
+     "p": [
+      "Os professores da YMCA levaram o basquetebol a outras cidades e países em poucos anos.",
+      "Vieram equipas universitárias, ligas profissionais e equipas em digressão como os Harlem Globetrotters, fundados em 1926.",
+      "Em 1949 a BAA e a NBL fundiram-se e nasceu a NBA."
+     ],
+     "q": "Porque achas que o jogo se espalhou tão depressa?",
+     "c": "Descobre quando o basquetebol chegou pela primeira vez ao teu país."
+    },
+    "pt_BR": {
+     "t": "Dos ginásios universitários aos profissionais",
+     "g": "Acompanhe como o novo jogo se espalhou pelo mundo.",
+     "p": [
+      "Professores da ACM levaram o basquete para outras cidades e países em poucos anos.",
+      "Faculdades criaram times, e vieram as primeiras ligas profissionais e times de exibição como os Harlem Globetrotters, fundados em 1926.",
+      "Em 1949 a BAA e a NBL se fundiram e nasceu a NBA."
+     ],
+     "q": "Por que você acha que o jogo se espalhou tão rápido?",
+     "c": "Descubra quando o basquete chegou pela primeira vez ao seu país."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basketball at the Olympics",
+     "g": "Learn how basketball became an Olympic sport.",
+     "p": [
+      "Men's basketball debuted at Berlin 1936, played outdoors, with James Naismith watching.",
+      "The rainy final on a muddy court ended USA 19, Canada 8.",
+      "Women's basketball joined at Montreal 1976, and the 1992 Dream Team brought NBA stars to Barcelona."
+     ],
+     "q": "Which Olympic basketball moment would you most like to have seen?",
+     "c": "Find out how your country has done in Olympic basketball."
+    },
+    "de": {
+     "t": "Basketball bei Olympia",
+     "g": "Lerne, wie Basketball olympisch wurde.",
+     "p": [
+      "Männer-Basketball feierte 1936 in Berlin Premiere, im Freien und mit James Naismith als Zuschauer.",
+      "Das verregnete Finale auf schlammigem Platz endete USA 19, Kanada 8.",
+      "Frauen-Basketball kam 1976 in Montreal dazu, und 1992 brachte das Dream Team NBA-Stars nach Barcelona."
+     ],
+     "q": "Welchen olympischen Basketballmoment hättest du am liebsten erlebt?",
+     "c": "Finde heraus, wie dein Land im olympischen Basketball abgeschnitten hat."
+    },
+    "es": {
+     "t": "El baloncesto en los Juegos Olímpicos",
+     "g": "Aprende cómo el baloncesto llegó a ser olímpico.",
+     "p": [
+      "El baloncesto masculino debutó en Berlín 1936, al aire libre y con James Naismith en la grada.",
+      "La final, bajo la lluvia y en pista embarrada, acabó Estados Unidos 19, Canadá 8.",
+      "El femenino llegó en Montreal 1976, y en 1992 el Dream Team llevó a las estrellas NBA a Barcelona."
+     ],
+     "q": "¿Qué momento olímpico del baloncesto te habría gustado ver?",
+     "c": "Averigua cómo le ha ido a tu país en el baloncesto olímpico."
+    },
+    "fr": {
+     "t": "Le basket aux Jeux olympiques",
+     "g": "Apprendre comment le basket est devenu olympique.",
+     "p": [
+      "Le basket masculin a fait ses débuts à Berlin en 1936, en plein air, sous les yeux de James Naismith.",
+      "La finale, sous la pluie sur un terrain boueux, s'est terminée États-Unis 19, Canada 8.",
+      "Le basket féminin est arrivé à Montréal en 1976, et en 1992 la Dream Team a amené les stars NBA à Barcelone."
+     ],
+     "q": "Quel moment olympique du basket aurais-tu aimé voir ?",
+     "c": "Découvre les résultats de ton pays en basket aux Jeux olympiques."
+    },
+    "it": {
+     "t": "Il basket alle Olimpiadi",
+     "g": "Impara come il basket è diventato olimpico.",
+     "p": [
+      "Il basket maschile debuttò a Berlino 1936, all'aperto, con James Naismith tra gli spettatori.",
+      "La finale sotto la pioggia, su un campo fangoso, finì Stati Uniti 19, Canada 8.",
+      "Il femminile arrivò a Montréal 1976, e nel 1992 il Dream Team portò le stelle NBA a Barcellona."
+     ],
+     "q": "Quale momento olimpico del basket ti sarebbe piaciuto vedere?",
+     "c": "Scopri com'è andato il tuo Paese nel basket olimpico."
+    },
+    "pt": {
+     "t": "O basquetebol nos Jogos Olímpicos",
+     "g": "Aprende como o basquetebol se tornou olímpico.",
+     "p": [
+      "O basquetebol masculino estreou-se em Berlim 1936, ao ar livre, com James Naismith a assistir.",
+      "A final, à chuva e num campo enlameado, acabou EUA 19, Canadá 8.",
+      "O feminino chegou em Montreal 1976, e em 1992 o Dream Team levou as estrelas da NBA a Barcelona."
+     ],
+     "q": "Que momento olímpico do basquetebol gostavas de ter visto?",
+     "c": "Descobre como o teu país se tem saído no basquetebol olímpico."
+    },
+    "pt_BR": {
+     "t": "O basquete nas Olimpíadas",
+     "g": "Aprenda como o basquete virou esporte olímpico.",
+     "p": [
+      "O basquete masculino estreou em Berlim 1936, ao ar livre, com James Naismith assistindo.",
+      "A final, debaixo de chuva e numa quadra enlameada, terminou EUA 19, Canadá 8.",
+      "O feminino chegou em Montreal 1976, e em 1992 o Dream Team levou as estrelas da NBA a Barcelona."
+     ],
+     "q": "Que momento olímpico do basquete você gostaria de ter visto?",
+     "c": "Descubra como o seu país se saiu no basquete olímpico."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What FIBA does",
+     "g": "Understand the role of the international basketball federation.",
+     "p": [
+      "FIBA was founded in 1932 in Geneva by eight national federations.",
+      "It writes the international rules used in most countries and runs national team competitions.",
+      "Its Basketball World Cup began in 1950 for men and 1953 for women."
+     ],
+     "q": "Have you ever watched a national team play in a big tournament?",
+     "c": "Name three countries you think are strong in international basketball."
+    },
+    "de": {
+     "t": "Was die FIBA macht",
+     "g": "Verstehe die Rolle des Basketball-Weltverbands.",
+     "p": [
+      "Die FIBA wurde 1932 in Genf von acht nationalen Verbänden gegründet.",
+      "Sie schreibt die internationalen Regeln, die in den meisten Ländern gelten, und organisiert Nationalmannschaftsturniere.",
+      "Ihre Weltmeisterschaft begann 1950 für Männer und 1953 für Frauen."
+     ],
+     "q": "Hast du schon einmal eine Nationalmannschaft bei einem großen Turnier gesehen?",
+     "c": "Nenne drei Länder, die du im internationalen Basketball für stark hältst."
+    },
+    "es": {
+     "t": "Qué hace la FIBA",
+     "g": "Entiende el papel de la federación internacional de baloncesto.",
+     "p": [
+      "La FIBA se fundó en 1932 en Ginebra con ocho federaciones nacionales.",
+      "Redacta las reglas internacionales usadas en la mayoría de países y organiza torneos de selecciones.",
+      "Su Copa del Mundo empezó en 1950 para hombres y en 1953 para mujeres."
+     ],
+     "q": "¿Has visto alguna vez a una selección en un gran torneo?",
+     "c": "Nombra tres países que creas fuertes en el baloncesto internacional."
+    },
+    "fr": {
+     "t": "Le rôle de la FIBA",
+     "g": "Comprendre le rôle de la fédération internationale de basket.",
+     "p": [
+      "La FIBA a été fondée en 1932 à Genève par huit fédérations nationales.",
+      "Elle écrit les règles internationales utilisées dans la plupart des pays et organise les compétitions de sélections.",
+      "Sa Coupe du monde a commencé en 1950 pour les hommes et en 1953 pour les femmes."
+     ],
+     "q": "As-tu déjà regardé une équipe nationale dans un grand tournoi ?",
+     "c": "Cite trois pays que tu trouves forts au basket international."
+    },
+    "it": {
+     "t": "Cosa fa la FIBA",
+     "g": "Capisci il ruolo della federazione internazionale di basket.",
+     "p": [
+      "La FIBA fu fondata nel 1932 a Ginevra da otto federazioni nazionali.",
+      "Scrive le regole internazionali usate nella maggior parte dei Paesi e organizza i tornei delle nazionali.",
+      "La sua Coppa del Mondo è nata nel 1950 per gli uomini e nel 1953 per le donne."
+     ],
+     "q": "Hai mai visto una nazionale in un grande torneo?",
+     "c": "Nomina tre Paesi che secondo te sono forti nel basket internazionale."
+    },
+    "pt": {
+     "t": "O que faz a FIBA",
+     "g": "Percebe o papel da federação internacional de basquetebol.",
+     "p": [
+      "A FIBA foi fundada em 1932 em Genebra por oito federações nacionais.",
+      "Escreve as regras internacionais usadas na maioria dos países e organiza as provas de seleções.",
+      "O seu Campeonato do Mundo começou em 1950 para homens e em 1953 para mulheres."
+     ],
+     "q": "Já viste uma seleção num grande torneio?",
+     "c": "Diz três países que consideras fortes no basquetebol internacional."
+    },
+    "pt_BR": {
+     "t": "O que a FIBA faz",
+     "g": "Entenda o papel da federação internacional de basquete.",
+     "p": [
+      "A FIBA foi fundada em 1932 em Genebra por oito federações nacionais.",
+      "Ela escreve as regras internacionais usadas na maioria dos países e organiza torneios de seleções.",
+      "Sua Copa do Mundo começou em 1950 para homens e em 1953 para mulheres."
+     ],
+     "q": "Você já assistiu a uma seleção num grande torneio?",
+     "c": "Cite três países que você acha fortes no basquete internacional."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The NBA in a nutshell",
+     "g": "Get a quick overview of the world's best-known league.",
+     "p": [
+      "The NBA has 30 teams split into an Eastern and a Western Conference.",
+      "Each team plays 82 regular-season games before the playoffs.",
+      "Playoff series are best-of-seven, and the champion lifts the Larry O'Brien Trophy."
+     ],
+     "q": "Is there an NBA team you already like or are curious about?",
+     "c": "Pick one Eastern and one Western team and find their home city."
+    },
+    "de": {
+     "t": "Die NBA in Kürze",
+     "g": "Verschaff dir einen schnellen Überblick über die bekannteste Liga der Welt.",
+     "p": [
+      "Die NBA hat 30 Teams, aufgeteilt in eine Eastern und eine Western Conference.",
+      "Jedes Team bestreitet 82 Spiele in der regulären Saison vor den Playoffs.",
+      "Playoff-Serien gehen über maximal sieben Spiele, der Meister bekommt die Larry O'Brien Trophy."
+     ],
+     "q": "Gibt es ein NBA-Team, das du schon magst oder spannend findest?",
+     "c": "Wähl je ein Team aus Osten und Westen und finde ihre Heimatstadt."
+    },
+    "es": {
+     "t": "La NBA en pocas palabras",
+     "g": "Haz un repaso rápido de la liga más famosa del mundo.",
+     "p": [
+      "La NBA tiene 30 equipos divididos en Conferencia Este y Conferencia Oeste.",
+      "Cada equipo juega 82 partidos de temporada regular antes de los playoffs.",
+      "Las series de playoffs son al mejor de siete, y el campeón levanta el Trofeo Larry O'Brien."
+     ],
+     "q": "¿Hay algún equipo de la NBA que ya te guste o te despierte curiosidad?",
+     "c": "Elige un equipo del Este y otro del Oeste y busca su ciudad."
+    },
+    "fr": {
+     "t": "La NBA en bref",
+     "g": "Avoir un aperçu rapide de la ligue la plus célèbre du monde.",
+     "p": [
+      "La NBA compte 30 équipes réparties entre Conférence Est et Conférence Ouest.",
+      "Chaque équipe dispute 82 matchs de saison régulière avant les playoffs.",
+      "Les séries de playoffs se jouent au meilleur des sept matchs, et le champion soulève le trophée Larry O'Brien."
+     ],
+     "q": "Y a-t-il une équipe NBA que tu aimes déjà ou qui t'intrigue ?",
+     "c": "Choisis une équipe de l'Est et une de l'Ouest et trouve leur ville."
+    },
+    "it": {
+     "t": "La NBA in breve",
+     "g": "Fai una rapida panoramica della lega più famosa del mondo.",
+     "p": [
+      "La NBA ha 30 squadre divise tra Eastern e Western Conference.",
+      "Ogni squadra gioca 82 partite di stagione regolare prima dei playoff.",
+      "Le serie playoff sono al meglio delle sette, e la campione alza il Larry O'Brien Trophy."
+     ],
+     "q": "C'è una squadra NBA che ti piace già o ti incuriosisce?",
+     "c": "Scegli una squadra dell'Est e una dell'Ovest e trova la loro città."
+    },
+    "pt": {
+     "t": "A NBA em resumo",
+     "g": "Faz uma visão rápida da liga mais famosa do mundo.",
+     "p": [
+      "A NBA tem 30 equipas divididas em Conferência Este e Conferência Oeste.",
+      "Cada equipa joga 82 jogos na fase regular antes dos playoffs.",
+      "As séries dos playoffs são à melhor de sete, e o campeão levanta o Troféu Larry O'Brien."
+     ],
+     "q": "Há alguma equipa da NBA de que já gostes ou que te desperte curiosidade?",
+     "c": "Escolhe uma equipa do Este e uma do Oeste e descobre a cidade de cada uma."
+    },
+    "pt_BR": {
+     "t": "A NBA em resumo",
+     "g": "Tenha uma visão rápida da liga mais famosa do mundo.",
+     "p": [
+      "A NBA tem 30 times divididos em Conferência Leste e Conferência Oeste.",
+      "Cada time joga 82 partidas na temporada regular antes dos playoffs.",
+      "As séries de playoffs são em melhor de sete, e o campeão levanta o Troféu Larry O'Brien."
+     ],
+     "q": "Tem algum time da NBA de que você já gosta ou tem curiosidade?",
+     "c": "Escolha um time do Leste e um do Oeste e descubra a cidade de cada um."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The WNBA",
+     "g": "Meet the top women's professional league in the US.",
+     "p": [
+      "The WNBA was founded in 1996 and played its first season in 1997.",
+      "The Houston Comets won the first four championships, led by Cynthia Cooper and Sheryl Swoopes.",
+      "In 2002 Lisa Leslie made history with the league's first dunk."
+     ],
+     "q": "Which women's basketball player would you like to learn more about?",
+     "c": "Look up one WNBA legend and note two facts about her career."
+    },
+    "de": {
+     "t": "Die WNBA",
+     "g": "Lerne die wichtigste Frauen-Profiliga der USA kennen.",
+     "p": [
+      "Die WNBA wurde 1996 gegründet und spielte 1997 ihre erste Saison.",
+      "Die Houston Comets gewannen die ersten vier Titel, angeführt von Cynthia Cooper und Sheryl Swoopes.",
+      "2002 schrieb Lisa Leslie Geschichte mit dem ersten Dunk der Liga."
+     ],
+     "q": "Über welche Basketballerin würdest du gern mehr erfahren?",
+     "c": "Such eine WNBA-Legende und notiere zwei Fakten zu ihrer Karriere."
+    },
+    "es": {
+     "t": "La WNBA",
+     "g": "Conoce la principal liga profesional femenina de Estados Unidos.",
+     "p": [
+      "La WNBA se fundó en 1996 y jugó su primera temporada en 1997.",
+      "Las Houston Comets ganaron los cuatro primeros títulos, con Cynthia Cooper y Sheryl Swoopes.",
+      "En 2002 Lisa Leslie hizo historia con el primer mate de la liga."
+     ],
+     "q": "¿Sobre qué jugadora te gustaría saber más?",
+     "c": "Busca a una leyenda de la WNBA y apunta dos datos de su carrera."
+    },
+    "fr": {
+     "t": "La WNBA",
+     "g": "Découvrir la grande ligue professionnelle féminine des États-Unis.",
+     "p": [
+      "La WNBA a été fondée en 1996 et a joué sa première saison en 1997.",
+      "Les Houston Comets ont remporté les quatre premiers titres, menées par Cynthia Cooper et Sheryl Swoopes.",
+      "En 2002, Lisa Leslie est entrée dans l'histoire avec le premier dunk de la ligue."
+     ],
+     "q": "Sur quelle joueuse aimerais-tu en savoir plus ?",
+     "c": "Cherche une légende de la WNBA et note deux faits sur sa carrière."
+    },
+    "it": {
+     "t": "La WNBA",
+     "g": "Conosci la principale lega professionistica femminile degli USA.",
+     "p": [
+      "La WNBA è stata fondata nel 1996 e ha giocato la prima stagione nel 1997.",
+      "Le Houston Comets vinsero i primi quattro titoli, guidate da Cynthia Cooper e Sheryl Swoopes.",
+      "Nel 2002 Lisa Leslie fece la storia con la prima schiacciata della lega."
+     ],
+     "q": "Di quale giocatrice ti piacerebbe sapere di più?",
+     "c": "Cerca una leggenda della WNBA e annota due fatti sulla sua carriera."
+    },
+    "pt": {
+     "t": "A WNBA",
+     "g": "Conhece a principal liga profissional feminina dos EUA.",
+     "p": [
+      "A WNBA foi fundada em 1996 e jogou a primeira época em 1997.",
+      "As Houston Comets ganharam os quatro primeiros títulos, lideradas por Cynthia Cooper e Sheryl Swoopes.",
+      "Em 2002 Lisa Leslie fez história com o primeiro afundanço da liga."
+     ],
+     "q": "Sobre que jogadora gostavas de saber mais?",
+     "c": "Procura uma lenda da WNBA e aponta dois factos sobre a carreira dela."
+    },
+    "pt_BR": {
+     "t": "A WNBA",
+     "g": "Conheça a principal liga profissional feminina dos EUA.",
+     "p": [
+      "A WNBA foi fundada em 1996 e jogou sua primeira temporada em 1997.",
+      "O Houston Comets ganhou os quatro primeiros títulos, liderado por Cynthia Cooper e Sheryl Swoopes.",
+      "Em 2002 Lisa Leslie fez história com a primeira enterrada da liga."
+     ],
+     "q": "Sobre qual jogadora você gostaria de saber mais?",
+     "c": "Procure uma lenda da WNBA e anote dois fatos sobre a carreira dela."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "European club basketball",
+     "g": "Discover the passion of club basketball in Europe.",
+     "p": [
+      "Domestic leagues like Spain's Liga ACB, Italy's Serie A and Greece's league fill arenas every week.",
+      "The best clubs also meet in the EuroLeague, which crowns its champion at a Final Four weekend.",
+      "Clubs like Real Madrid, Panathinaikos and CSKA Moscow built famous European dynasties."
+     ],
+     "q": "Have you ever been to, or watched, a European club game?",
+     "c": "Find the top basketball league in a European country you would love to visit."
+    },
+    "de": {
+     "t": "Europäischer Klubbasketball",
+     "g": "Entdecke die Leidenschaft des Klubbasketballs in Europa.",
+     "p": [
+      "Ligen wie die spanische Liga ACB, die italienische Serie A oder die griechische Liga füllen jede Woche die Hallen.",
+      "Die besten Klubs treffen sich in der EuroLeague, deren Sieger bei einem Final-Four-Wochenende gekürt wird.",
+      "Klubs wie Real Madrid, Panathinaikos und ZSKA Moskau bauten berühmte europäische Dynastien auf."
+     ],
+     "q": "Warst du schon bei einem europäischen Klubspiel oder hast eines gesehen?",
+     "c": "Finde die höchste Basketballliga eines europäischen Landes, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "El baloncesto de clubes en Europa",
+     "g": "Descubre la pasión del baloncesto de clubes europeo.",
+     "p": [
+      "Ligas como la ACB española, la Serie A italiana o la liga griega llenan pabellones cada semana.",
+      "Los mejores clubes se miden en la Euroliga, que corona a su campeón en una Final Four.",
+      "Clubes como el Real Madrid, el Panathinaikos o el CSKA de Moscú forjaron grandes dinastías europeas."
+     ],
+     "q": "¿Has visto alguna vez un partido de clubes europeo, en directo o por televisión?",
+     "c": "Busca la principal liga de baloncesto de un país europeo que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Le basket de clubs en Europe",
+     "g": "Découvrir la passion du basket de clubs européen.",
+     "p": [
+      "Des championnats comme la Liga ACB espagnole, la Serie A italienne ou la ligue grecque remplissent les salles chaque semaine.",
+      "Les meilleurs clubs s'affrontent en EuroLigue, dont le champion est sacré lors d'un Final Four.",
+      "Des clubs comme le Real Madrid, le Panathinaïkos ou le CSKA Moscou ont bâti de grandes dynasties européennes."
+     ],
+     "q": "As-tu déjà vu un match de club européen, sur place ou à l'écran ?",
+     "c": "Trouve le championnat de basket principal d'un pays européen que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Il basket europeo di club",
+     "g": "Scopri la passione del basket di club in Europa.",
+     "p": [
+      "Campionati come la Liga ACB spagnola, la Serie A italiana o la lega greca riempiono i palazzetti ogni settimana.",
+      "I migliori club si sfidano in EuroLega, che incorona la campione in una Final Four.",
+      "Club come Real Madrid, Panathinaikos e CSKA Mosca hanno costruito grandi dinastie europee."
+     ],
+     "q": "Hai mai visto una partita di club europea, dal vivo o in TV?",
+     "c": "Trova il campionato principale di basket di un Paese europeo che vorresti visitare."
+    },
+    "pt": {
+     "t": "O basquetebol de clubes na Europa",
+     "g": "Descobre a paixão do basquetebol de clubes europeu.",
+     "p": [
+      "Ligas como a Liga ACB espanhola, a Serie A italiana ou a liga grega enchem pavilhões todas as semanas.",
+      "Os melhores clubes defrontam-se na Euroliga, cujo campeão é coroado numa Final Four.",
+      "Clubes como o Real Madrid, o Panathinaikos e o CSKA Moscovo construíram grandes dinastias europeias."
+     ],
+     "q": "Já viste algum jogo de clubes europeu, ao vivo ou na televisão?",
+     "c": "Descobre a principal liga de basquetebol de um país europeu que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "O basquete de clubes na Europa",
+     "g": "Descubra a paixão do basquete de clubes europeu.",
+     "p": [
+      "Ligas como a ACB espanhola, a Serie A italiana e a liga grega lotam ginásios toda semana.",
+      "Os melhores clubes se enfrentam na Euroliga, que coroa o campeão num Final Four.",
+      "Clubes como Real Madrid, Panathinaikos e CSKA Moscou construíram grandes dinastias europeias."
+     ],
+     "q": "Você já viu algum jogo de clubes europeu, ao vivo ou na TV?",
+     "c": "Descubra a principal liga de basquete de um país europeu que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "College basketball",
+     "g": "Learn why college basketball fans go wild every March.",
+     "p": [
+      "The NCAA tournament, held since 1939, decides the US college champion in a knockout format.",
+      "Fans fill in brackets predicting every game of March Madness, and almost nobody gets them all right.",
+      "Underdogs called Cinderellas love to upset favorites, and UCLA once won ten titles in twelve years."
+     ],
+     "q": "Would you enjoy filling in a bracket, even just for fun?",
+     "c": "Draw a small eight-team bracket and predict a winner with any teams you like."
+    },
+    "de": {
+     "t": "College-Basketball",
+     "g": "Lerne, warum College-Fans jeden März ausflippen.",
+     "p": [
+      "Das NCAA-Turnier, ausgetragen seit 1939, ermittelt den US-College-Meister im K.-o.-System.",
+      "Fans füllen Turnierbäume aus und tippen jedes Spiel der March Madness, kaum jemand liegt überall richtig.",
+      "Außenseiter, Cinderellas genannt, lieben Überraschungen, und UCLA gewann einmal zehn Titel in zwölf Jahren."
+     ],
+     "q": "Hättest du Spaß daran, einen Turnierbaum auszufüllen, einfach so?",
+     "c": "Zeichne einen Turnierbaum mit acht Teams und tippe einen Sieger."
+    },
+    "es": {
+     "t": "El baloncesto universitario",
+     "g": "Aprende por qué los aficionados universitarios enloquecen cada marzo.",
+     "p": [
+      "El torneo de la NCAA, que se juega desde 1939, decide el campeón universitario de EE. UU. por eliminatorias.",
+      "Los aficionados rellenan cuadros prediciendo cada partido de la March Madness, y casi nadie acierta todos.",
+      "Los equipos sorpresa, llamados Cenicientas, adoran tumbar favoritos, y UCLA llegó a ganar diez títulos en doce años."
+     ],
+     "q": "¿Te divertiría rellenar un cuadro, aunque sea por jugar?",
+     "c": "Dibuja un cuadro de ocho equipos y predice un ganador con los equipos que quieras."
+    },
+    "fr": {
+     "t": "Le basket universitaire",
+     "g": "Apprendre pourquoi les fans universitaires s'enflamment chaque mois de mars.",
+     "p": [
+      "Le tournoi NCAA, disputé depuis 1939, désigne le champion universitaire américain par élimination directe.",
+      "Les fans remplissent des tableaux pour prédire chaque match de la March Madness, et presque personne ne trouve tout.",
+      "Les outsiders, appelés Cendrillons, adorent créer la surprise, et UCLA a gagné dix titres en douze ans."
+     ],
+     "q": "Aimerais-tu remplir un tableau de pronostics, juste pour le plaisir ?",
+     "c": "Dessine un tableau à huit équipes et prédis un vainqueur avec les équipes de ton choix."
+    },
+    "it": {
+     "t": "Il basket universitario",
+     "g": "Impara perché i tifosi universitari impazziscono ogni marzo.",
+     "p": [
+      "Il torneo NCAA, giocato dal 1939, decide il campione universitario USA a eliminazione diretta.",
+      "I tifosi compilano tabelloni per prevedere ogni partita della March Madness, e quasi nessuno li indovina tutti.",
+      "Le sorprese, chiamate Cenerentole, adorano battere le favorite, e UCLA vinse dieci titoli in dodici anni."
+     ],
+     "q": "Ti divertirebbe compilare un tabellone, anche solo per gioco?",
+     "c": "Disegna un tabellone a otto squadre e prevedi una vincitrice con le squadre che vuoi."
+    },
+    "pt": {
+     "t": "O basquetebol universitário",
+     "g": "Aprende porque é que os fãs universitários enlouquecem todos os meses de março.",
+     "p": [
+      "O torneio da NCAA, disputado desde 1939, decide o campeão universitário dos EUA por eliminatórias.",
+      "Os fãs preenchem quadros a prever cada jogo da March Madness, e quase ninguém acerta em todos.",
+      "As equipas surpresa, chamadas Cinderelas, adoram derrubar favoritos, e a UCLA ganhou dez títulos em doze anos."
+     ],
+     "q": "Gostavas de preencher um quadro de previsões, só por diversão?",
+     "c": "Desenha um quadro com oito equipas e prevê um vencedor com as equipas que quiseres."
+    },
+    "pt_BR": {
+     "t": "O basquete universitário",
+     "g": "Aprenda por que os fãs universitários ficam loucos todo mês de março.",
+     "p": [
+      "O torneio da NCAA, disputado desde 1939, decide o campeão universitário dos EUA em mata-mata.",
+      "Os fãs preenchem chaves prevendo cada jogo da March Madness, e quase ninguém acerta todos.",
+      "Os azarões, chamados de Cinderelas, adoram derrubar favoritos, e a UCLA ganhou dez títulos em doze anos."
+     ],
+     "q": "Você curtiria preencher uma chave, só por diversão?",
+     "c": "Desenhe uma chave com oito times e preveja um campeão com os times que quiser."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Streetball culture",
+     "g": "Explore the outdoor side of basketball.",
+     "p": [
+      "Streetball is played on outdoor courts, often in pickup games where whoever wins stays on.",
+      "Rucker Park in Harlem, New York, has hosted a famous summer tournament since 1950.",
+      "Players often call their own fouls, and flashy dribbling and creativity are celebrated."
+     ],
+     "q": "Is there an outdoor court where you live, and who plays there?",
+     "c": "Visit or find an outdoor court nearby and notice how people organize games."
+    },
+    "de": {
+     "t": "Streetball-Kultur",
+     "g": "Entdecke die Outdoor-Seite des Basketballs.",
+     "p": [
+      "Streetball wird auf Freiplätzen gespielt, oft spontan, und wer gewinnt, bleibt auf dem Platz.",
+      "Der Rucker Park in Harlem, New York, ist seit 1950 Schauplatz eines berühmten Sommerturniers.",
+      "Spieler pfeifen Fouls oft selbst, und kreatives, spektakuläres Dribbling wird gefeiert."
+     ],
+     "q": "Gibt es bei dir einen Freiplatz, und wer spielt dort?",
+     "c": "Besuch oder finde einen Freiplatz in der Nähe und beobachte, wie Spiele organisiert werden."
+    },
+    "es": {
+     "t": "La cultura del streetball",
+     "g": "Explora el lado callejero del baloncesto.",
+     "p": [
+      "El streetball se juega en canchas al aire libre, a menudo en partidillos donde el que gana se queda.",
+      "Rucker Park, en Harlem, Nueva York, acoge un famoso torneo de verano desde 1950.",
+      "Los jugadores suelen pitarse sus propias faltas, y se celebran el bote espectacular y la creatividad."
+     ],
+     "q": "¿Hay una cancha al aire libre donde vives? ¿Quién juega allí?",
+     "c": "Visita o busca una cancha exterior cercana y fíjate en cómo se organizan los partidos."
+    },
+    "fr": {
+     "t": "La culture streetball",
+     "g": "Explorer le côté plein air du basket.",
+     "p": [
+      "Le streetball se joue sur des terrains extérieurs, souvent en matchs improvisés où le gagnant reste.",
+      "Rucker Park, à Harlem, New York, accueille un célèbre tournoi d'été depuis 1950.",
+      "Les joueurs sifflent souvent eux-mêmes les fautes, et le dribble spectaculaire et la créativité sont rois."
+     ],
+     "q": "Y a-t-il un terrain extérieur près de chez toi, et qui y joue ?",
+     "c": "Va voir ou trouve un terrain extérieur proche et observe comment les matchs s'organisent."
+    },
+    "it": {
+     "t": "La cultura dello streetball",
+     "g": "Esplora il lato all'aperto del basket.",
+     "p": [
+      "Lo streetball si gioca nei campetti all'aperto, spesso in partitelle dove chi vince resta in campo.",
+      "Rucker Park, ad Harlem, New York, ospita un famoso torneo estivo dal 1950.",
+      "Spesso i giocatori si chiamano i falli da soli, e palleggio spettacolare e creatività sono celebrati."
+     ],
+     "q": "C'è un campetto all'aperto dove vivi, e chi ci gioca?",
+     "c": "Visita o trova un campetto vicino e osserva come si organizzano le partite."
+    },
+    "pt": {
+     "t": "A cultura do streetball",
+     "g": "Explora o lado de rua do basquetebol.",
+     "p": [
+      "O streetball joga-se em campos ao ar livre, muitas vezes em jogos improvisados onde quem ganha fica.",
+      "O Rucker Park, no Harlem, em Nova Iorque, recebe um famoso torneio de verão desde 1950.",
+      "Os jogadores muitas vezes marcam as próprias faltas, e o drible vistoso e a criatividade são celebrados."
+     ],
+     "q": "Há algum campo ao ar livre onde vives, e quem joga lá?",
+     "c": "Visita ou procura um campo exterior perto de ti e repara como se organizam os jogos."
+    },
+    "pt_BR": {
+     "t": "A cultura do streetball",
+     "g": "Explore o lado de rua do basquete.",
+     "p": [
+      "O streetball é jogado em quadras abertas, muitas vezes em rachas onde quem vence fica.",
+      "O Rucker Park, no Harlem, em Nova York, recebe um famoso torneio de verão desde 1950.",
+      "Os jogadores costumam marcar as próprias faltas, e o drible vistoso e a criatividade são celebrados."
+     ],
+     "q": "Tem alguma quadra aberta onde você mora, e quem joga lá?",
+     "c": "Visite ou procure uma quadra aberta perto de você e repare como os jogos são organizados."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "3x3 basketball",
+     "g": "Learn the fast, fun half-court format.",
+     "p": [
+      "3x3 is played on one hoop with three players per team, and it became Olympic at Tokyo 2020.",
+      "A game lasts 10 minutes or ends when a team reaches 21 points, with a 12-second shot clock.",
+      "Baskets inside the arc count one point and shots from beyond it count two."
+     ],
+     "q": "Would you rather play classic five-on-five or quick 3x3?",
+     "c": "Gather two friends, or imagine it, and sketch your team's 3x3 lineup."
+    },
+    "de": {
+     "t": "3x3-Basketball",
+     "g": "Lerne das schnelle, lustige Format auf einen Korb kennen.",
+     "p": [
+      "3x3 wird auf einen Korb mit drei Spielern pro Team gespielt und ist seit Tokio 2020 olympisch.",
+      "Ein Spiel dauert 10 Minuten oder endet bei 21 Punkten, die Wurfuhr läuft nur 12 Sekunden.",
+      "Treffer innerhalb des Bogens zählen einen Punkt, von außerhalb zwei."
+     ],
+     "q": "Würdest du lieber klassisch Fünf gegen Fünf oder schnelles 3x3 spielen?",
+     "c": "Such dir zwei Freunde, oder stell sie dir vor, und plane eure 3x3-Aufstellung."
+    },
+    "es": {
+     "t": "Baloncesto 3x3",
+     "g": "Aprende el formato rápido y divertido a media cancha.",
+     "p": [
+      "El 3x3 se juega a una canasta con tres jugadores por equipo, y es olímpico desde Tokio 2020.",
+      "Un partido dura 10 minutos o termina cuando un equipo llega a 21 puntos, con 12 segundos de posesión.",
+      "Las canastas dentro del arco valen un punto y desde fuera valen dos."
+     ],
+     "q": "¿Preferirías jugar el clásico cinco contra cinco o el rápido 3x3?",
+     "c": "Reúne a dos amigos, o imagínalos, y planea la alineación de tu equipo de 3x3."
+    },
+    "fr": {
+     "t": "Le basket 3x3",
+     "g": "Apprendre le format rapide et fun sur demi-terrain.",
+     "p": [
+      "Le 3x3 se joue sur un seul panier à trois par équipe, et il est olympique depuis Tokyo 2020.",
+      "Un match dure 10 minutes ou s'arrête quand une équipe atteint 21 points, avec 12 secondes pour tirer.",
+      "Un panier à l'intérieur de l'arc vaut un point, derrière l'arc il en vaut deux."
+     ],
+     "q": "Tu préfères le classique cinq contre cinq ou le 3x3 rapide ?",
+     "c": "Réunis deux amis, ou imagine-les, et prépare la composition de ton équipe de 3x3."
+    },
+    "it": {
+     "t": "Il basket 3x3",
+     "g": "Impara il formato veloce e divertente a metà campo.",
+     "p": [
+      "Il 3x3 si gioca su un solo canestro con tre giocatori per squadra, ed è olimpico da Tokyo 2020.",
+      "Una partita dura 10 minuti o finisce quando una squadra arriva a 21 punti, con 12 secondi per tirare.",
+      "I canestri dentro l'arco valgono un punto, quelli da fuori due."
+     ],
+     "q": "Preferiresti il classico cinque contro cinque o il veloce 3x3?",
+     "c": "Riunisci due amici, o immaginali, e prepara il quintetto, anzi il terzetto, del tuo 3x3."
+    },
+    "pt": {
+     "t": "Basquetebol 3x3",
+     "g": "Aprende o formato rápido e divertido em meio-campo.",
+     "p": [
+      "O 3x3 joga-se num só cesto com três jogadores por equipa, e é olímpico desde Tóquio 2020.",
+      "Um jogo dura 10 minutos ou acaba quando uma equipa chega aos 21 pontos, com 12 segundos de posse.",
+      "Os cestos dentro do arco valem um ponto e os de fora valem dois."
+     ],
+     "q": "Preferias jogar o clássico cinco contra cinco ou o rápido 3x3?",
+     "c": "Junta dois amigos, ou imagina-os, e planeia a formação da tua equipa de 3x3."
+    },
+    "pt_BR": {
+     "t": "Basquete 3x3",
+     "g": "Aprenda o formato rápido e divertido de meia quadra.",
+     "p": [
+      "O 3x3 é jogado numa só cesta com três jogadores por time, e é olímpico desde Tóquio 2020.",
+      "Um jogo dura 10 minutos ou termina quando um time chega a 21 pontos, com 12 segundos de posse.",
+      "Cestas dentro do arco valem um ponto e as de fora valem dois."
+     ],
+     "q": "Você prefere o clássico cinco contra cinco ou o rápido 3x3?",
+     "c": "Junte dois amigos, ou imagine-os, e monte a escalação do seu time de 3x3."
+    }
+   }
+  }
+ ]
+}

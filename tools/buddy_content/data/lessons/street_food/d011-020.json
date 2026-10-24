@@ -1,0 +1,835 @@
+{
+ "topic": "street_food",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tacos al pastor",
+     "g": "Meet one of Mexico's most loved tacos and its surprising roots.",
+     "p": [
+      "Pork is marinated with dried chiles and achiote, then stacked on a vertical spit called a trompo.",
+      "The idea came from Lebanese immigrants in Mexico, whose shawarma inspired this new dish.",
+      "Thin slices go onto small corn tortillas, often with a piece of pineapple from the top of the spit."
+     ],
+     "q": "Do you like sweet and savoury flavours together, like pork with pineapple?",
+     "c": "Try adding a few pieces of pineapple to a savoury snack or sandwich today and note how it tastes."
+    },
+    "de": {
+     "t": "Tacos al pastor",
+     "g": "Einen der beliebtesten Tacos Mexikos und seine überraschenden Wurzeln kennenlernen.",
+     "p": [
+      "Schweinefleisch wird mit getrockneten Chilis und Achiote mariniert und auf einen senkrechten Spieß, den Trompo, geschichtet.",
+      "Die Idee stammt von libanesischen Einwanderern in Mexiko, deren Schawarma das Gericht inspirierte.",
+      "Dünne Scheiben kommen auf kleine Maistortillas, oft mit einem Stück Ananas von der Spießspitze."
+     ],
+     "q": "Magst du süße und herzhafte Aromen zusammen, wie Schwein mit Ananas?",
+     "c": "Gib heute ein paar Ananasstücke zu einem herzhaften Snack oder Sandwich und notiere den Geschmack."
+    },
+    "es": {
+     "t": "Tacos al pastor",
+     "g": "Conocer uno de los tacos más queridos de México y sus raíces sorprendentes.",
+     "p": [
+      "La carne de cerdo se adoba con chiles secos y achiote y se apila en un asador vertical, el trompo.",
+      "La idea llegó de inmigrantes libaneses en México, cuyo shawarma inspiró este nuevo plato.",
+      "Las láminas finas van en tortillas de maíz pequeñas, a menudo con un trozo de piña de lo alto del trompo."
+     ],
+     "q": "¿Te gustan juntos los sabores dulces y salados, como el cerdo con piña?",
+     "c": "Añade hoy unos trozos de piña a un bocado salado o sándwich y anota cómo sabe."
+    },
+    "fr": {
+     "t": "Les tacos al pastor",
+     "g": "Découvrir l'un des tacos préférés du Mexique et ses racines étonnantes.",
+     "p": [
+      "Le porc est mariné aux piments séchés et à l'achiote, puis empilé sur une broche verticale, le trompo.",
+      "L'idée vient d'immigrés libanais au Mexique, dont le shawarma a inspiré ce nouveau plat.",
+      "De fines tranches garnissent de petites tortillas de maïs, souvent avec un morceau d'ananas du haut de la broche."
+     ],
+     "q": "Aimes-tu le mélange sucré-salé, comme le porc à l'ananas ?",
+     "c": "Ajoute aujourd'hui quelques morceaux d'ananas à un en-cas salé ou un sandwich et note le goût."
+    },
+    "it": {
+     "t": "Tacos al pastor",
+     "g": "Conoscere uno dei tacos più amati del Messico e le sue radici sorprendenti.",
+     "p": [
+      "Il maiale viene marinato con peperoncini secchi e achiote e impilato su uno spiedo verticale, il trompo.",
+      "L'idea arriva da immigrati libanesi in Messico, il cui shawarma ha ispirato questo piatto.",
+      "Fettine sottili finiscono su piccole tortillas di mais, spesso con un pezzo d'ananas dalla cima dello spiedo."
+     ],
+     "q": "Ti piacciono insieme i sapori dolci e salati, come maiale e ananas?",
+     "c": "Aggiungi oggi qualche pezzo d'ananas a uno spuntino salato o a un panino e annota il sapore."
+    },
+    "pt": {
+     "t": "Tacos al pastor",
+     "g": "Conhecer um dos tacos mais adorados do México e as suas raízes surpreendentes.",
+     "p": [
+      "A carne de porco é marinada com malaguetas secas e achiote e empilhada num espeto vertical, o trompo.",
+      "A ideia veio de imigrantes libaneses no México, cujo shawarma inspirou este novo prato.",
+      "Fatias finas vão para pequenas tortilhas de milho, muitas vezes com um pedaço de ananás do topo do espeto."
+     ],
+     "q": "Gostas de sabores doces e salgados juntos, como porco com ananás?",
+     "c": "Junta hoje uns pedaços de ananás a um petisco salgado ou sanduíche e aponta o sabor."
+    },
+    "pt_BR": {
+     "t": "Tacos al pastor",
+     "g": "Conhecer um dos tacos mais amados do México e suas raízes surpreendentes.",
+     "p": [
+      "A carne de porco é marinada com pimentas secas e urucum e empilhada num espeto vertical, o trompo.",
+      "A ideia veio de imigrantes libaneses no México, cujo shawarma inspirou esse novo prato.",
+      "Fatias finas vão em pequenas tortilhas de milho, muitas vezes com um pedaço de abacaxi do alto do espeto."
+     ],
+     "q": "Você gosta de doce e salgado juntos, como porco com abacaxi?",
+     "c": "Coloque hoje uns pedaços de abacaxi num lanche salgado ou sanduíche e anote o sabor."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The world of tacos",
+     "g": "Explore the wide family of Mexican street tacos beyond al pastor.",
+     "p": [
+      "Most street tacos use small soft corn tortillas, often two stacked so they hold the filling.",
+      "Carnitas is slow-cooked pork, barbacoa is slow-cooked meat, and suadero is a tender beef cut.",
+      "In Baja California, fish tacos bring battered fried fish with cabbage and creamy sauce."
+     ],
+     "q": "Which taco filling sounds most tempting to you, and why?",
+     "c": "Make a mini taco today with any tortilla or flatbread and a filling you have at home."
+    },
+    "de": {
+     "t": "Die Welt der Tacos",
+     "g": "Die große Familie mexikanischer Straßentacos jenseits von al pastor erkunden.",
+     "p": [
+      "Die meisten Straßentacos haben kleine weiche Maistortillas, oft doppelt, damit sie die Füllung halten.",
+      "Carnitas ist langsam gegartes Schwein, Barbacoa geschmortes Fleisch, Suadero ein zartes Rindstück.",
+      "In Baja California gibt es Fischtacos mit frittiertem Fisch im Teigmantel, Kohl und cremiger Soße."
+     ],
+     "q": "Welche Tacofüllung klingt für dich am verlockendsten und warum?",
+     "c": "Mach heute einen Mini-Taco aus einer Tortilla oder einem Fladenbrot und einer Füllung, die du daheim hast."
+    },
+    "es": {
+     "t": "El mundo de los tacos",
+     "g": "Explorar la gran familia de tacos callejeros mexicanos más allá del pastor.",
+     "p": [
+      "La mayoría usa tortillas de maíz pequeñas y suaves, a menudo dos juntas para sostener el relleno.",
+      "Las carnitas son cerdo cocinado lento, la barbacoa carne cocida lentamente y el suadero un corte tierno de res.",
+      "En Baja California, los tacos de pescado llevan pescado rebozado, col y una salsa cremosa."
+     ],
+     "q": "¿Qué relleno de taco te tienta más y por qué?",
+     "c": "Prepara hoy un mini taco con cualquier tortilla o pan plano y un relleno que tengas en casa."
+    },
+    "fr": {
+     "t": "L'univers des tacos",
+     "g": "Explorer la grande famille des tacos de rue mexicains au-delà de l'al pastor.",
+     "p": [
+      "La plupart utilisent de petites tortillas de maïs souples, souvent doublées pour tenir la garniture.",
+      "Les carnitas sont du porc mijoté, la barbacoa une viande cuite lentement, le suadero un morceau de bœuf fondant.",
+      "En Basse-Californie, les tacos de poisson associent poisson pané frit, chou et sauce crémeuse."
+     ],
+     "q": "Quelle garniture de taco te tente le plus, et pourquoi ?",
+     "c": "Fais aujourd'hui un mini taco avec une tortilla ou un pain plat et une garniture que tu as chez toi."
+    },
+    "it": {
+     "t": "Il mondo dei tacos",
+     "g": "Esplorare la grande famiglia dei tacos di strada messicani oltre l'al pastor.",
+     "p": [
+      "Quasi tutti usano piccole tortillas di mais morbide, spesso due sovrapposte per reggere il ripieno.",
+      "Le carnitas sono maiale cotto a lungo, la barbacoa carne cotta lentamente, il suadero un taglio tenero di manzo.",
+      "In Bassa California i tacos di pesce uniscono pesce fritto in pastella, cavolo e salsa cremosa."
+     ],
+     "q": "Quale ripieno di taco ti tenta di più e perché?",
+     "c": "Prepara oggi un mini taco con una tortilla o un pane piatto e un ripieno che hai in casa."
+    },
+    "pt": {
+     "t": "O mundo dos tacos",
+     "g": "Explorar a grande família dos tacos de rua mexicanos além do al pastor.",
+     "p": [
+      "A maioria usa pequenas tortilhas de milho macias, muitas vezes duas juntas para aguentar o recheio.",
+      "As carnitas são porco cozinhado lentamente, a barbacoa carne estufada e o suadero um corte tenro de vaca.",
+      "Na Baixa Califórnia, os tacos de peixe levam peixe frito em polme, couve e molho cremoso."
+     ],
+     "q": "Que recheio de taco te tenta mais e porquê?",
+     "c": "Faz hoje um mini taco com uma tortilha ou pão achatado e um recheio que tenhas em casa."
+    },
+    "pt_BR": {
+     "t": "O mundo dos tacos",
+     "g": "Explorar a grande família dos tacos de rua mexicanos além do al pastor.",
+     "p": [
+      "A maioria usa tortilhas de milho pequenas e macias, muitas vezes duas juntas para segurar o recheio.",
+      "Carnitas é porco cozido lentamente, barbacoa é carne cozida devagar e suadero é um corte macio de boi.",
+      "Na Baixa Califórnia, os tacos de peixe trazem peixe empanado frito, repolho e molho cremoso."
+     ],
+     "q": "Qual recheio de taco parece mais tentador para você e por quê?",
+     "c": "Faça hoje um mini taco com uma tortilha ou pão sírio e um recheio que tiver em casa."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salsas and toppings",
+     "g": "Learn how fresh toppings turn a simple taco into something special.",
+     "p": [
+      "Salsa verde is usually made with green tomatillos, while salsa roja uses red tomatoes or dried chiles.",
+      "Chopped white onion and fresh cilantro add crunch and a bright, herby smell.",
+      "A squeeze of lime at the end wakes up all the flavours."
+     ],
+     "q": "Do you prefer mild, medium or really spicy salsa?",
+     "c": "Mix a quick salsa today with chopped tomato, onion, a herb and lime, and taste it on bread or a snack."
+    },
+    "de": {
+     "t": "Salsas und Toppings",
+     "g": "Lernen, wie frische Toppings einen einfachen Taco besonders machen.",
+     "p": [
+      "Salsa verde wird meist aus grünen Tomatillos gemacht, Salsa roja aus roten Tomaten oder getrockneten Chilis.",
+      "Gehackte weiße Zwiebel und frischer Koriander bringen Biss und einen frischen Kräuterduft.",
+      "Ein Spritzer Limette zum Schluss weckt alle Aromen."
+     ],
+     "q": "Magst du Salsa lieber mild, mittel oder richtig scharf?",
+     "c": "Misch heute eine schnelle Salsa aus Tomate, Zwiebel, einem Kraut und Limette und probier sie auf Brot."
+    },
+    "es": {
+     "t": "Salsas y complementos",
+     "g": "Aprender cómo los complementos frescos convierten un taco sencillo en algo especial.",
+     "p": [
+      "La salsa verde suele llevar tomatillos verdes y la salsa roja jitomate o chiles secos.",
+      "La cebolla blanca picada y el cilantro fresco dan textura y un aroma fresco.",
+      "Un chorrito de limón al final despierta todos los sabores."
+     ],
+     "q": "¿Prefieres la salsa suave, media o muy picante?",
+     "c": "Prepara hoy una salsa rápida con tomate, cebolla, una hierba y limón, y pruébala sobre pan."
+    },
+    "fr": {
+     "t": "Salsas et garnitures",
+     "g": "Apprendre comment des garnitures fraîches rendent un taco simple vraiment spécial.",
+     "p": [
+      "La salsa verde se fait souvent avec des tomatillos verts, la salsa roja avec des tomates ou des piments séchés.",
+      "L'oignon blanc haché et la coriandre fraîche apportent du croquant et un parfum vif.",
+      "Un filet de citron vert à la fin réveille toutes les saveurs."
+     ],
+     "q": "Préfères-tu la salsa douce, moyenne ou vraiment piquante ?",
+     "c": "Prépare aujourd'hui une salsa express avec tomate, oignon, une herbe et citron vert, et goûte-la sur du pain."
+    },
+    "it": {
+     "t": "Salse e condimenti",
+     "g": "Imparare come i condimenti freschi rendono speciale un semplice taco.",
+     "p": [
+      "La salsa verde si fa di solito con tomatillos verdi, la salsa roja con pomodori o peperoncini secchi.",
+      "Cipolla bianca tritata e coriandolo fresco danno croccantezza e un profumo vivace.",
+      "Una spruzzata di lime alla fine risveglia tutti i sapori."
+     ],
+     "q": "Preferisci la salsa delicata, media o molto piccante?",
+     "c": "Prepara oggi una salsa veloce con pomodoro, cipolla, un'erba e lime, e assaggiala sul pane."
+    },
+    "pt": {
+     "t": "Salsas e acompanhamentos",
+     "g": "Aprender como acompanhamentos frescos tornam especial um taco simples.",
+     "p": [
+      "A salsa verde costuma levar tomatillos verdes e a salsa roja tomate ou malaguetas secas.",
+      "Cebola branca picada e coentros frescos dão textura e um aroma fresco.",
+      "Um pouco de lima no fim desperta todos os sabores."
+     ],
+     "q": "Preferes a salsa suave, média ou bem picante?",
+     "c": "Faz hoje uma salsa rápida com tomate, cebola, uma erva e lima, e prova-a com pão."
+    },
+    "pt_BR": {
+     "t": "Salsas e coberturas",
+     "g": "Aprender como coberturas frescas deixam um taco simples especial.",
+     "p": [
+      "A salsa verde costuma levar tomatillos verdes, e a salsa roja tomate ou pimentas secas.",
+      "Cebola branca picada e coentro fresco trazem crocância e um aroma fresco.",
+      "Um pouco de limão no final desperta todos os sabores."
+     ],
+     "q": "Você prefere salsa suave, média ou bem apimentada?",
+     "c": "Faça hoje uma salsa rápida com tomate, cebola, uma erva e limão, e prove com pão."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Elote and esquites",
+     "g": "Discover two of Mexico's favourite corn snacks from street carts.",
+     "p": [
+      "Elote is a whole cob of corn, grilled or boiled, then spread with mayo and sprinkled with cheese.",
+      "Esquites is corn cut off the cob and served warm in a cup, eaten with a spoon.",
+      "Both are finished with chili powder and a squeeze of lime for a creamy, tangy, spicy bite."
+     ],
+     "q": "Would you choose corn on the cob or corn in a cup? Why?",
+     "c": "Cook some corn today and top it the elote way: a little mayo or butter, cheese, chili and lime."
+    },
+    "de": {
+     "t": "Elote und Esquites",
+     "g": "Zwei der liebsten Mais-Snacks von Mexikos Straßenwagen entdecken.",
+     "p": [
+      "Elote ist ein ganzer Maiskolben, gegrillt oder gekocht, mit Mayo bestrichen und Käse bestreut.",
+      "Esquites sind abgeschnittene Maiskörner, warm im Becher serviert und mit dem Löffel gegessen.",
+      "Beide bekommen Chilipulver und Limette: cremig, säuerlich und scharf zugleich."
+     ],
+     "q": "Würdest du den Kolben oder den Becher wählen? Warum?",
+     "c": "Koch heute etwas Mais und toppe ihn wie Elote: etwas Mayo oder Butter, Käse, Chili und Limette."
+    },
+    "es": {
+     "t": "Elote y esquites",
+     "g": "Descubrir dos de los antojitos de maíz favoritos de los carritos mexicanos.",
+     "p": [
+      "El elote es una mazorca entera, asada o hervida, untada con mayonesa y espolvoreada con queso.",
+      "Los esquites son granos de maíz desgranados servidos calientes en un vaso, con cuchara.",
+      "Ambos llevan chile en polvo y limón: cremosos, ácidos y picantes a la vez."
+     ],
+     "q": "¿Elegirías la mazorca o el vasito? ¿Por qué?",
+     "c": "Cocina hoy un poco de maíz y prepáralo como elote: algo de mayonesa o mantequilla, queso, chile y limón."
+    },
+    "fr": {
+     "t": "Elote et esquites",
+     "g": "Découvrir deux en-cas de maïs adorés des charrettes mexicaines.",
+     "p": [
+      "L'elote est un épi entier, grillé ou bouilli, tartiné de mayonnaise et saupoudré de fromage.",
+      "Les esquites sont des grains égrenés servis chauds dans un gobelet, à la cuillère.",
+      "Les deux finissent avec du piment en poudre et du citron vert : crémeux, acidulé et relevé."
+     ],
+     "q": "Choisirais-tu l'épi ou le gobelet ? Pourquoi ?",
+     "c": "Cuis un peu de maïs aujourd'hui et garnis-le façon elote : mayo ou beurre, fromage, piment et citron vert."
+    },
+    "it": {
+     "t": "Elote ed esquites",
+     "g": "Scoprire due amati snack di mais dei carretti messicani.",
+     "p": [
+      "L'elote è una pannocchia intera, grigliata o bollita, spalmata di maionese e cosparsa di formaggio.",
+      "Gli esquites sono chicchi sgranati serviti caldi in un bicchiere, da mangiare col cucchiaio.",
+      "Entrambi finiscono con peperoncino in polvere e lime: cremosi, aspri e piccanti."
+     ],
+     "q": "Sceglieresti la pannocchia o il bicchiere? Perché?",
+     "c": "Cuoci oggi un po' di mais e condiscilo come l'elote: maionese o burro, formaggio, peperoncino e lime."
+    },
+    "pt": {
+     "t": "Elote e esquites",
+     "g": "Descobrir dois petiscos de milho adorados das carrinhas mexicanas.",
+     "p": [
+      "O elote é uma maçaroca inteira, grelhada ou cozida, barrada com maionese e polvilhada com queijo.",
+      "Os esquites são grãos de milho servidos quentes num copo, comidos à colher.",
+      "Ambos levam malagueta em pó e lima: cremosos, ácidos e picantes ao mesmo tempo."
+     ],
+     "q": "Escolhias a maçaroca ou o copo? Porquê?",
+     "c": "Coze hoje um pouco de milho e tempera-o como elote: maionese ou manteiga, queijo, malagueta e lima."
+    },
+    "pt_BR": {
+     "t": "Elote e esquites",
+     "g": "Descobrir dois petiscos de milho queridos dos carrinhos mexicanos.",
+     "p": [
+      "O elote é uma espiga inteira, grelhada ou cozida, coberta de maionese e polvilhada com queijo.",
+      "Os esquites são grãos de milho servidos quentes num copinho, comidos de colher.",
+      "Os dois levam pimenta em pó e limão: cremosos, azedinhos e picantes ao mesmo tempo."
+     ],
+     "q": "Você escolheria a espiga ou o copinho? Por quê?",
+     "c": "Cozinhe hoje um pouco de milho e finalize como elote: maionese ou manteiga, queijo, pimenta e limão."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tamales",
+     "g": "Learn about tamales, a dish with deep roots in Mexico and Central America.",
+     "p": [
+      "Tamales are made of masa, a corn dough, spread on corn husks or banana leaves and steamed.",
+      "Fillings change by region: chicken in green salsa, pork in red sauce, cheese with chiles or sweet ones.",
+      "Before eating, unwrap the husk or leaf: it is a wrapper, not part of the meal."
+     ],
+     "q": "Have you ever eaten a food that came wrapped in a leaf?",
+     "c": "Wrap a small snack in baking paper or a leaf today, steam or warm it, and enjoy the unwrapping."
+    },
+    "de": {
+     "t": "Tamales",
+     "g": "Tamales kennenlernen, ein Gericht mit tiefen Wurzeln in Mexiko und Mittelamerika.",
+     "p": [
+      "Tamales bestehen aus Masa, einem Maisteig, der auf Maisblätter oder Bananenblätter gestrichen und gedämpft wird.",
+      "Die Füllung wechselt je nach Region: Huhn in grüner Salsa, Schwein in roter Soße, Käse mit Chili oder süß.",
+      "Vor dem Essen das Blatt öffnen: Es ist eine Hülle und wird nicht mitgegessen."
+     ],
+     "q": "Hast du schon einmal etwas gegessen, das in ein Blatt gewickelt war?",
+     "c": "Wickle heute einen kleinen Snack in Backpapier oder ein Blatt, dämpfe oder wärme ihn und genieße das Auspacken."
+    },
+    "es": {
+     "t": "Tamales",
+     "g": "Conocer los tamales, un plato de raíces profundas en México y Centroamérica.",
+     "p": [
+      "Se hacen con masa de maíz extendida sobre hojas de maíz o de plátano y cocida al vapor.",
+      "El relleno cambia según la región: pollo en salsa verde, cerdo en salsa roja, rajas con queso o dulces.",
+      "Antes de comer, quita la hoja: es la envoltura, no forma parte del plato."
+     ],
+     "q": "¿Alguna vez comiste algo envuelto en una hoja?",
+     "c": "Envuelve hoy un pequeño bocado en papel de horno o una hoja, caliéntalo al vapor y disfruta al abrirlo."
+    },
+    "fr": {
+     "t": "Les tamales",
+     "g": "Découvrir les tamales, un plat aux racines profondes au Mexique et en Amérique centrale.",
+     "p": [
+      "On les fait avec la masa, une pâte de maïs étalée sur des feuilles de maïs ou de bananier, puis cuite à la vapeur.",
+      "La farce varie selon la région : poulet en salsa verde, porc en sauce rouge, fromage aux piments ou version sucrée.",
+      "Avant de manger, retire la feuille : c'est un emballage, pas un ingrédient."
+     ],
+     "q": "As-tu déjà mangé un plat enveloppé dans une feuille ?",
+     "c": "Enveloppe aujourd'hui un petit en-cas dans du papier cuisson ou une feuille, réchauffe-le et savoure le déballage."
+    },
+    "it": {
+     "t": "Tamales",
+     "g": "Conoscere i tamales, un piatto dalle radici profonde in Messico e America Centrale.",
+     "p": [
+      "Si fanno con la masa, un impasto di mais steso su foglie di mais o di banano e cotto al vapore.",
+      "Il ripieno cambia per regione: pollo in salsa verde, maiale in salsa rossa, formaggio e peperoncino o dolce.",
+      "Prima di mangiare togli la foglia: è l'involucro, non fa parte del piatto."
+     ],
+     "q": "Hai mai mangiato qualcosa avvolto in una foglia?",
+     "c": "Avvolgi oggi un piccolo spuntino in carta forno o in una foglia, scaldalo e goditi il momento di aprirlo."
+    },
+    "pt": {
+     "t": "Tamales",
+     "g": "Conhecer os tamales, um prato com raízes profundas no México e na América Central.",
+     "p": [
+      "Fazem-se com masa, uma massa de milho espalhada em folhas de milho ou de bananeira e cozida a vapor.",
+      "O recheio muda com a região: frango em salsa verde, porco em molho vermelho, queijo com malagueta ou doce.",
+      "Antes de comer, tira a folha: é o invólucro, não faz parte do prato."
+     ],
+     "q": "Já comeste alguma coisa embrulhada numa folha?",
+     "c": "Embrulha hoje um pequeno petisco em papel vegetal ou numa folha, aquece-o e aproveita o momento de abrir."
+    },
+    "pt_BR": {
+     "t": "Tamales",
+     "g": "Conhecer os tamales, um prato com raízes profundas no México e na América Central.",
+     "p": [
+      "São feitos de masa, uma massa de milho espalhada em palha de milho ou folha de bananeira e cozida no vapor.",
+      "O recheio muda conforme a região: frango em salsa verde, porco em molho vermelho, queijo com pimenta ou doce.",
+      "Antes de comer, tire a palha: ela é a embalagem, não faz parte do prato."
+     ],
+     "q": "Você já comeu alguma coisa embrulhada numa folha?",
+     "c": "Embrulhe hoje um petisco em papel-manteiga ou numa folha, aqueça e curta o momento de abrir."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pad thai at the wok stall",
+     "g": "Watch a Thai street classic come together in a hot wok.",
+     "p": [
+      "Pad thai is stir-fried rice noodles with egg, tofu or shrimp, bean sprouts and garlic chives.",
+      "Tamarind gives a sweet and sour taste, balanced with fish sauce and a little palm sugar.",
+      "It is served with crushed peanuts, lime and chili flakes so each person can season it."
+     ],
+     "q": "Do you like to season your food yourself at the table? What do you add?",
+     "c": "Stir-fry any noodles today with an egg and finish them with lime and a few crushed nuts."
+    },
+    "de": {
+     "t": "Pad Thai vom Wok-Stand",
+     "g": "Zusehen, wie ein thailändischer Straßenklassiker im heißen Wok entsteht.",
+     "p": [
+      "Pad Thai sind gebratene Reisnudeln mit Ei, Tofu oder Garnelen, Sojasprossen und Schnittknoblauch.",
+      "Tamarinde bringt Süße und Säure, ausgeglichen mit Fischsoße und etwas Palmzucker.",
+      "Dazu gibt es gehackte Erdnüsse, Limette und Chiliflocken, damit jeder selbst würzt."
+     ],
+     "q": "Würzt du dein Essen gern selbst am Tisch nach? Womit?",
+     "c": "Brate heute beliebige Nudeln mit einem Ei und vollende sie mit Limette und ein paar gehackten Nüssen."
+    },
+    "es": {
+     "t": "Pad thai en el puesto del wok",
+     "g": "Ver cómo se hace un clásico callejero tailandés en un wok bien caliente.",
+     "p": [
+      "El pad thai son fideos de arroz salteados con huevo, tofu o gambas, brotes de soja y cebollino chino.",
+      "El tamarindo aporta un sabor agridulce, equilibrado con salsa de pescado y algo de azúcar de palma.",
+      "Se sirve con cacahuetes picados, lima y chile en escamas para que cada uno lo aliñe."
+     ],
+     "q": "¿Te gusta sazonar tu comida en la mesa? ¿Qué le añades?",
+     "c": "Saltea hoy unos fideos cualquiera con un huevo y termínalos con lima y frutos secos picados."
+    },
+    "fr": {
+     "t": "Le pad thaï au stand du wok",
+     "g": "Voir un classique de rue thaïlandais naître dans un wok brûlant.",
+     "p": [
+      "Le pad thaï, ce sont des nouilles de riz sautées avec œuf, tofu ou crevettes, pousses de soja et ciboule chinoise.",
+      "Le tamarin donne un goût aigre-doux, équilibré par la sauce poisson et un peu de sucre de palme.",
+      "On le sert avec cacahuètes concassées, citron vert et piment pour que chacun l'assaisonne."
+     ],
+     "q": "Aimes-tu assaisonner toi-même ton plat à table ? Avec quoi ?",
+     "c": "Fais sauter des nouilles aujourd'hui avec un œuf et termine avec du citron vert et quelques noix concassées."
+    },
+    "it": {
+     "t": "Pad thai al chiosco del wok",
+     "g": "Vedere nascere un classico di strada thailandese in un wok rovente.",
+     "p": [
+      "Il pad thai è fatto di spaghetti di riso saltati con uovo, tofu o gamberi, germogli di soia ed erba cipollina cinese.",
+      "Il tamarindo dà un gusto agrodolce, bilanciato da salsa di pesce e un po' di zucchero di palma.",
+      "Si serve con arachidi tritate, lime e peperoncino perché ognuno lo condisca a piacere."
+     ],
+     "q": "Ti piace condire da solo il cibo a tavola? Cosa aggiungi?",
+     "c": "Salta oggi degli spaghetti qualsiasi con un uovo e finiscili con lime e qualche frutta secca tritata."
+    },
+    "pt": {
+     "t": "Pad thai na banca do wok",
+     "g": "Ver um clássico de rua tailandês ganhar forma num wok bem quente.",
+     "p": [
+      "O pad thai é massa de arroz salteada com ovo, tofu ou camarão, rebentos de soja e cebolinho chinês.",
+      "O tamarindo dá um sabor agridoce, equilibrado com molho de peixe e um pouco de açúcar de palma.",
+      "Serve-se com amendoim picado, lima e malagueta para cada um temperar a gosto."
+     ],
+     "q": "Gostas de temperar a comida tu mesmo à mesa? O que juntas?",
+     "c": "Salteia hoje uma massa qualquer com um ovo e termina com lima e alguns frutos secos picados."
+    },
+    "pt_BR": {
+     "t": "Pad thai na barraca do wok",
+     "g": "Ver um clássico de rua tailandês ganhar forma num wok bem quente.",
+     "p": [
+      "O pad thai é macarrão de arroz salteado com ovo, tofu ou camarão, broto de feijão e cebolinha chinesa.",
+      "O tamarindo dá um sabor agridoce, equilibrado com molho de peixe e um pouco de açúcar de palma.",
+      "Ele vem com amendoim picado, limão e pimenta em flocos para cada um temperar."
+     ],
+     "q": "Você gosta de temperar a comida na mesa? O que acrescenta?",
+     "c": "Salteie hoje qualquer macarrão com um ovo e finalize com limão e um pouco de castanha picada."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Som tam",
+     "g": "Discover the bright, pounded papaya salad loved across Thailand.",
+     "p": [
+      "Som tam comes from the Isan region in the northeast and is also loved in neighbouring Laos.",
+      "Shredded green, unripe papaya is pounded in a mortar with chili, garlic, lime and fish sauce.",
+      "Tomatoes, long beans and peanuts add crunch; ask for less chili if you prefer it mild."
+     ],
+     "q": "How do you feel about salads that are sour, salty and spicy at the same time?",
+     "c": "Make a mini crunchy salad today with grated carrot or cucumber, lime, a pinch of salt and chili if you like."
+    },
+    "de": {
+     "t": "Som Tam",
+     "g": "Den frischen, gestampften Papayasalat entdecken, den ganz Thailand liebt.",
+     "p": [
+      "Som Tam stammt aus der Region Isan im Nordosten und ist auch im Nachbarland Laos beliebt.",
+      "Geraspelte grüne, unreife Papaya wird im Mörser mit Chili, Knoblauch, Limette und Fischsoße gestampft.",
+      "Tomaten, lange Bohnen und Erdnüsse geben Biss; bitte um weniger Chili, wenn du es mild magst."
+     ],
+     "q": "Wie findest du Salate, die gleichzeitig sauer, salzig und scharf sind?",
+     "c": "Mach heute einen kleinen knackigen Salat aus geraspelter Karotte oder Gurke, Limette, Salz und nach Wunsch Chili."
+    },
+    "es": {
+     "t": "Som tam",
+     "g": "Descubrir la vibrante ensalada de papaya machacada que adora Tailandia.",
+     "p": [
+      "El som tam viene de la región de Isan, en el noreste, y también es muy querido en el vecino Laos.",
+      "La papaya verde rallada se machaca en un mortero con chile, ajo, lima y salsa de pescado.",
+      "Tomate, judías largas y cacahuetes aportan textura; pide menos chile si lo prefieres suave."
+     ],
+     "q": "¿Qué te parecen las ensaladas ácidas, saladas y picantes a la vez?",
+     "c": "Prepara hoy una mini ensalada crujiente con zanahoria o pepino rallado, lima, sal y chile si te gusta."
+    },
+    "fr": {
+     "t": "Le som tam",
+     "g": "Découvrir la salade de papaye pilée, vive et fraîche, adorée en Thaïlande.",
+     "p": [
+      "Le som tam vient de l'Isan, au nord-est, et il est aussi très aimé au Laos voisin.",
+      "La papaye verte râpée est pilée au mortier avec piment, ail, citron vert et sauce poisson.",
+      "Tomates, haricots kilomètre et cacahuètes donnent du croquant ; demande moins de piment si tu veux."
+     ],
+     "q": "Que penses-tu des salades à la fois acides, salées et piquantes ?",
+     "c": "Fais aujourd'hui une mini salade croquante avec carotte ou concombre râpé, citron vert, sel et piment si tu aimes."
+    },
+    "it": {
+     "t": "Som tam",
+     "g": "Scoprire la vivace insalata di papaya pestata amata in tutta la Thailandia.",
+     "p": [
+      "Il som tam viene dalla regione dell'Isan, nel nord-est, ed è amato anche nel vicino Laos.",
+      "La papaya verde grattugiata si pesta nel mortaio con peperoncino, aglio, lime e salsa di pesce.",
+      "Pomodori, fagiolini lunghi e arachidi danno croccantezza; chiedi meno peperoncino se lo vuoi delicato."
+     ],
+     "q": "Cosa pensi delle insalate aspre, salate e piccanti allo stesso tempo?",
+     "c": "Prepara oggi una mini insalata croccante con carota o cetriolo grattugiato, lime, sale e peperoncino se ti va."
+    },
+    "pt": {
+     "t": "Som tam",
+     "g": "Descobrir a vibrante salada de papaia pisada adorada na Tailândia.",
+     "p": [
+      "O som tam vem da região de Isan, no nordeste, e também é muito apreciado no vizinho Laos.",
+      "Papaia verde ralada é pisada num almofariz com malagueta, alho, lima e molho de peixe.",
+      "Tomate, feijão-verde comprido e amendoim dão textura; pede menos malagueta se gostares suave."
+     ],
+     "q": "O que achas de saladas ácidas, salgadas e picantes ao mesmo tempo?",
+     "c": "Faz hoje uma mini salada estaladiça com cenoura ou pepino ralado, lima, sal e malagueta se quiseres."
+    },
+    "pt_BR": {
+     "t": "Som tam",
+     "g": "Descobrir a vibrante salada de mamão verde socado adorada na Tailândia.",
+     "p": [
+      "O som tam vem da região de Isan, no nordeste, e também é muito querido no vizinho Laos.",
+      "Mamão verde ralado é socado num pilão com pimenta, alho, limão e molho de peixe.",
+      "Tomate, vagem comprida e amendoim dão crocância; peça menos pimenta se preferir suave."
+     ],
+     "q": "O que você acha de saladas azedas, salgadas e picantes ao mesmo tempo?",
+     "c": "Faça hoje uma mini salada crocante com cenoura ou pepino ralado, limão, sal e pimenta se quiser."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thai grilled skewers",
+     "g": "Smell the smoke of Thailand's favourite grilled street skewers.",
+     "p": [
+      "Moo ping is pork marinated with garlic, coriander root and a little sugar, grilled on bamboo sticks.",
+      "Gai yang is marinated grilled chicken, a classic from Isan served with a dipping sauce.",
+      "Both are often eaten with sticky rice, rolled into a small ball with your fingers."
+     ],
+     "q": "What is your favourite food cooked on a grill?",
+     "c": "Thread a few pieces of vegetable, tofu or meat on a stick today and grill or pan-fry your own skewer."
+    },
+    "de": {
+     "t": "Thailändische Grillspieße",
+     "g": "Den Rauch der beliebtesten Grillspieße Thailands riechen.",
+     "p": [
+      "Moo Ping ist Schweinefleisch mit Knoblauch, Korianderwurzel und etwas Zucker, auf Bambusspießen gegrillt.",
+      "Gai Yang ist mariniertes Grillhähnchen, ein Klassiker aus dem Isan mit Dip-Soße.",
+      "Beide isst man oft mit Klebreis, den man mit den Fingern zu kleinen Bällchen formt."
+     ],
+     "q": "Was ist dein Lieblingsessen vom Grill?",
+     "c": "Steck heute ein paar Stücke Gemüse, Tofu oder Fleisch auf einen Spieß und grill oder brate ihn selbst."
+    },
+    "es": {
+     "t": "Brochetas a la parrilla tailandesas",
+     "g": "Oler el humo de las brochetas callejeras favoritas de Tailandia.",
+     "p": [
+      "El moo ping es cerdo adobado con ajo, raíz de cilantro y algo de azúcar, asado en palitos de bambú.",
+      "El gai yang es pollo adobado a la parrilla, un clásico de Isan servido con salsa para mojar.",
+      "Ambos se comen a menudo con arroz glutinoso, hecho bolitas con los dedos."
+     ],
+     "q": "¿Cuál es tu comida favorita hecha a la parrilla?",
+     "c": "Ensarta hoy trozos de verdura, tofu o carne en un palito y ásalos o hazlos a la plancha."
+    },
+    "fr": {
+     "t": "Les brochettes grillées thaïes",
+     "g": "Sentir la fumée des brochettes de rue préférées de la Thaïlande.",
+     "p": [
+      "Le moo ping est du porc mariné à l'ail, à la racine de coriandre et un peu de sucre, grillé sur bambou.",
+      "Le gai yang est un poulet mariné grillé, classique de l'Isan servi avec une sauce à tremper.",
+      "On les mange souvent avec du riz gluant, roulé en petite boule avec les doigts."
+     ],
+     "q": "Quel est ton plat préféré cuit au grill ?",
+     "c": "Enfile aujourd'hui quelques morceaux de légumes, tofu ou viande sur une pique et fais griller ta brochette."
+    },
+    "it": {
+     "t": "Spiedini grigliati thailandesi",
+     "g": "Sentire il fumo degli spiedini di strada preferiti della Thailandia.",
+     "p": [
+      "Il moo ping è maiale marinato con aglio, radice di coriandolo e un po' di zucchero, grigliato su bambù.",
+      "Il gai yang è pollo marinato alla griglia, un classico dell'Isan servito con salsa da intingere.",
+      "Spesso si mangiano con riso glutinoso, appallottolato con le dita."
+     ],
+     "q": "Qual è il tuo cibo preferito cotto alla griglia?",
+     "c": "Infila oggi qualche pezzo di verdura, tofu o carne su uno stecco e griglia o cuoci in padella il tuo spiedino."
+    },
+    "pt": {
+     "t": "Espetadas grelhadas tailandesas",
+     "g": "Sentir o fumo das espetadas de rua favoritas da Tailândia.",
+     "p": [
+      "O moo ping é porco marinado com alho, raiz de coentros e um pouco de açúcar, grelhado em pauzinhos de bambu.",
+      "O gai yang é frango marinado grelhado, um clássico de Isan servido com molho para molhar.",
+      "Comem-se muitas vezes com arroz glutinoso, feito em bolinhas com os dedos."
+     ],
+     "q": "Qual é a tua comida preferida feita na grelha?",
+     "c": "Enfia hoje uns pedaços de legumes, tofu ou carne num pau e grelha ou salteia a tua espetada."
+    },
+    "pt_BR": {
+     "t": "Espetinhos grelhados tailandeses",
+     "g": "Sentir a fumaça dos espetinhos de rua favoritos da Tailândia.",
+     "p": [
+      "O moo ping é porco marinado com alho, raiz de coentro e um pouco de açúcar, grelhado em palitos de bambu.",
+      "O gai yang é frango marinado grelhado, um clássico de Isan servido com molho para mergulhar.",
+      "Os dois costumam vir com arroz glutinoso, enrolado em bolinhas com os dedos."
+     ],
+     "q": "Qual é a sua comida favorita feita na grelha?",
+     "c": "Coloque hoje pedaços de legumes, tofu ou carne num palito e grelhe ou doure seu espetinho na frigideira."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mango sticky rice",
+     "g": "Meet one of Thailand's most beloved sweets.",
+     "p": [
+      "Glutinous sticky rice is steamed, then soaked in warm, lightly salted and sweetened coconut milk.",
+      "It is served with slices of ripe, sweet mango and often a drizzle of thick coconut cream.",
+      "Some stalls sprinkle toasted mung beans or sesame seeds on top for crunch."
+     ],
+     "q": "What is your favourite fruit dessert?",
+     "c": "Pair a ripe fruit today with something creamy, like yogurt or coconut milk, and rate the combination."
+    },
+    "de": {
+     "t": "Mango mit Klebreis",
+     "g": "Eine der beliebtesten Süßspeisen Thailands kennenlernen.",
+     "p": [
+      "Klebreis wird gedämpft und dann in warmer, leicht gesalzener und gesüßter Kokosmilch eingeweicht.",
+      "Dazu gibt es Scheiben reifer, süßer Mango und oft etwas dicke Kokoscreme.",
+      "Manche Stände streuen geröstete Mungbohnen oder Sesam für mehr Biss darüber."
+     ],
+     "q": "Was ist dein liebstes Obstdessert?",
+     "c": "Kombiniere heute reifes Obst mit etwas Cremigem wie Joghurt oder Kokosmilch und bewerte die Mischung."
+    },
+    "es": {
+     "t": "Arroz glutinoso con mango",
+     "g": "Conocer uno de los dulces más queridos de Tailandia.",
+     "p": [
+      "El arroz glutinoso se cuece al vapor y luego se empapa en leche de coco tibia, dulce y con un toque de sal.",
+      "Se sirve con rodajas de mango maduro y dulce y, a menudo, un hilo de crema de coco espesa.",
+      "Algunos puestos añaden por encima judías mungo tostadas o sésamo para dar textura."
+     ],
+     "q": "¿Cuál es tu postre de fruta favorito?",
+     "c": "Combina hoy una fruta madura con algo cremoso, como yogur o leche de coco, y puntúa la mezcla."
+    },
+    "fr": {
+     "t": "Le riz gluant à la mangue",
+     "g": "Découvrir l'un des desserts les plus aimés de Thaïlande.",
+     "p": [
+      "Le riz gluant est cuit à la vapeur puis imbibé de lait de coco tiède, sucré et légèrement salé.",
+      "Il est servi avec des tranches de mangue bien mûre et souvent un filet de crème de coco épaisse.",
+      "Certains stands ajoutent des haricots mungo grillés ou du sésame pour le croquant."
+     ],
+     "q": "Quel est ton dessert aux fruits préféré ?",
+     "c": "Associe aujourd'hui un fruit mûr à quelque chose de crémeux, comme un yaourt ou du lait de coco, et note le mariage."
+    },
+    "it": {
+     "t": "Riso glutinoso al mango",
+     "g": "Conoscere uno dei dolci più amati della Thailandia.",
+     "p": [
+      "Il riso glutinoso viene cotto al vapore e poi bagnato con latte di cocco tiepido, dolce e appena salato.",
+      "Si serve con fette di mango maturo e dolce e spesso un filo di crema di cocco densa.",
+      "Alcuni chioschi aggiungono fagioli mung tostati o sesamo per dare croccantezza."
+     ],
+     "q": "Qual è il tuo dessert alla frutta preferito?",
+     "c": "Abbina oggi un frutto maturo a qualcosa di cremoso, come yogurt o latte di cocco, e dai un voto."
+    },
+    "pt": {
+     "t": "Arroz glutinoso com manga",
+     "g": "Conhecer um dos doces mais adorados da Tailândia.",
+     "p": [
+      "O arroz glutinoso é cozido a vapor e depois embebido em leite de coco morno, doce e levemente salgado.",
+      "Serve-se com fatias de manga madura e muitas vezes um fio de creme de coco espesso.",
+      "Algumas bancas polvilham feijão-mungo torrado ou sésamo por cima para dar textura."
+     ],
+     "q": "Qual é a tua sobremesa de fruta preferida?",
+     "c": "Junta hoje uma fruta madura a algo cremoso, como iogurte ou leite de coco, e dá uma nota à combinação."
+    },
+    "pt_BR": {
+     "t": "Arroz doce de coco com manga",
+     "g": "Conhecer um dos doces mais amados da Tailândia.",
+     "p": [
+      "O arroz glutinoso é cozido no vapor e depois embebido em leite de coco morno, doce e levemente salgado.",
+      "É servido com fatias de manga madura e muitas vezes um fio de creme de coco grosso.",
+      "Algumas barracas jogam feijão-mungo torrado ou gergelim por cima para dar crocância."
+     ],
+     "q": "Qual é a sua sobremesa de fruta favorita?",
+     "c": "Junte hoje uma fruta madura a algo cremoso, como iogurte ou leite de coco, e dê uma nota à combinação."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Banh mi",
+     "g": "Discover the Vietnamese sandwich that blends French bread with local flavours.",
+     "p": [
+      "Banh mi uses a light, crispy baguette, a legacy of French influence in Vietnam.",
+      "Classic fillings include pâté, cold cuts or grilled pork, plus pickled carrot and daikon.",
+      "Fresh cilantro, cucumber, chili and a splash of soy sauce make every bite bright."
+     ],
+     "q": "What would you put in your perfect sandwich?",
+     "c": "Build a banh mi-style sandwich today with crusty bread, a quick pickle, fresh herbs and your favourite filling."
+    },
+    "de": {
+     "t": "Banh Mi",
+     "g": "Das vietnamesische Sandwich entdecken, das französisches Brot mit lokalen Aromen verbindet.",
+     "p": [
+      "Banh Mi nutzt ein leichtes, knuspriges Baguette, ein Erbe des französischen Einflusses in Vietnam.",
+      "Klassisch sind Pastete, Aufschnitt oder gegrilltes Schwein, dazu eingelegte Karotte und Rettich.",
+      "Frischer Koriander, Gurke, Chili und ein Spritzer Sojasoße machen jeden Bissen lebendig."
+     ],
+     "q": "Was würdest du in dein perfektes Sandwich packen?",
+     "c": "Bau heute ein Sandwich im Banh-Mi-Stil: knuspriges Brot, schnell Eingelegtes, frische Kräuter und deine Lieblingsfüllung."
+    },
+    "es": {
+     "t": "Banh mi",
+     "g": "Descubrir el bocadillo vietnamita que une pan francés con sabores locales.",
+     "p": [
+      "El banh mi usa una baguette ligera y crujiente, herencia de la influencia francesa en Vietnam.",
+      "Lleva paté, fiambres o cerdo a la parrilla, además de zanahoria y rábano daikon encurtidos.",
+      "Cilantro fresco, pepino, chile y un chorrito de salsa de soja dan frescura a cada bocado."
+     ],
+     "q": "¿Qué pondrías en tu bocadillo perfecto?",
+     "c": "Prepara hoy un bocadillo estilo banh mi con pan crujiente, un encurtido rápido, hierbas frescas y tu relleno favorito."
+    },
+    "fr": {
+     "t": "Le banh mi",
+     "g": "Découvrir le sandwich vietnamien qui marie pain français et saveurs locales.",
+     "p": [
+      "Le banh mi utilise une baguette légère et croustillante, héritage de l'influence française au Vietnam.",
+      "On y trouve pâté, charcuterie ou porc grillé, avec carotte et radis daikon marinés.",
+      "Coriandre fraîche, concombre, piment et un trait de sauce soja rendent chaque bouchée vive."
+     ],
+     "q": "Que mettrais-tu dans ton sandwich parfait ?",
+     "c": "Compose aujourd'hui un sandwich façon banh mi : pain croustillant, pickles express, herbes fraîches et ta garniture favorite."
+    },
+    "it": {
+     "t": "Banh mi",
+     "g": "Scoprire il panino vietnamita che unisce pane francese e sapori locali.",
+     "p": [
+      "Il banh mi usa una baguette leggera e croccante, eredità dell'influenza francese in Vietnam.",
+      "Si farcisce con paté, salumi o maiale grigliato, più carota e ravanello daikon in agrodolce.",
+      "Coriandolo fresco, cetriolo, peperoncino e un goccio di salsa di soia rendono vivace ogni morso."
+     ],
+     "q": "Cosa metteresti nel tuo panino perfetto?",
+     "c": "Prepara oggi un panino in stile banh mi: pane croccante, verdure in agrodolce veloci, erbe fresche e il tuo ripieno preferito."
+    },
+    "pt": {
+     "t": "Banh mi",
+     "g": "Descobrir a sanduíche vietnamita que junta pão francês e sabores locais.",
+     "p": [
+      "O banh mi usa uma baguete leve e estaladiça, herança da influência francesa no Vietname.",
+      "Leva patê, charcutaria ou porco grelhado, além de cenoura e rabanete daikon em pickle.",
+      "Coentros frescos, pepino, malagueta e um pouco de molho de soja dão vida a cada dentada."
+     ],
+     "q": "O que porias na tua sanduíche perfeita?",
+     "c": "Faz hoje uma sanduíche estilo banh mi: pão estaladiço, pickle rápido, ervas frescas e o teu recheio favorito."
+    },
+    "pt_BR": {
+     "t": "Banh mi",
+     "g": "Descobrir o sanduíche vietnamita que une pão francês e sabores locais.",
+     "p": [
+      "O banh mi usa uma baguete leve e crocante, herança da influência francesa no Vietnã.",
+      "Leva patê, frios ou porco grelhado, além de cenoura e rabanete daikon em conserva.",
+      "Coentro fresco, pepino, pimenta e um pouco de shoyu deixam cada mordida viva."
+     ],
+     "q": "O que você colocaria no seu sanduíche perfeito?",
+     "c": "Monte hoje um sanduíche estilo banh mi: pão crocante, conserva rápida, ervas frescas e seu recheio favorito."
+    }
+   }
+  }
+ ]
+}

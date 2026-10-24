@@ -1,0 +1,835 @@
+{
+ "topic": "crafts",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of crafts",
+     "g": "Discover what handmade crafts are and how this 365-day path grows your skills one small step at a time.",
+     "p": [
+      "Crafts are things made by hand: knitting, paper art, pottery, embroidery, woodwork, jewellery and much more.",
+      "You need no talent to start, just curiosity, a few simple materials and a little time each day.",
+      "Each day brings one small lesson and a tiny project, so skills build up gently over the year."
+     ],
+     "q": "Have you ever made something by hand, even as a child? What was it?",
+     "c": "Find one handmade object at home and look closely at how it was put together."
+    },
+    "de": {
+     "t": "Willkommen in der Welt des Handwerks",
+     "g": "Entdecke, was Handarbeit ist und wie dieser 365-Tage-Weg deine Fähigkeiten Schritt für Schritt wachsen lässt.",
+     "p": [
+      "Handarbeit heißt, Dinge selbst zu machen: Stricken, Papierkunst, Töpfern, Sticken, Holzarbeit, Schmuck und mehr.",
+      "Du brauchst kein Talent, nur Neugier, ein paar einfache Materialien und jeden Tag etwas Zeit.",
+      "Jeder Tag bringt eine kleine Lektion und ein Mini-Projekt, so wächst dein Können übers Jahr ganz sanft."
+     ],
+     "q": "Hast du schon einmal etwas mit den Händen gemacht, vielleicht als Kind? Was war es?",
+     "c": "Such zu Hause einen handgemachten Gegenstand und schau genau, wie er gemacht wurde."
+    },
+    "es": {
+     "t": "Bienvenido al mundo de las manualidades",
+     "g": "Descubre qué son las manualidades y cómo este camino de 365 días hace crecer tus habilidades paso a paso.",
+     "p": [
+      "Las manualidades son cosas hechas a mano: tejido, papel, cerámica, bordado, madera, bisutería y mucho más.",
+      "No necesitas talento para empezar, solo curiosidad, algunos materiales sencillos y un poco de tiempo al día.",
+      "Cada día trae una pequeña lección y un mini proyecto, así tus habilidades crecen poco a poco durante el año."
+     ],
+     "q": "¿Alguna vez hiciste algo a mano, aunque fuera de niño? ¿Qué era?",
+     "c": "Busca en casa un objeto hecho a mano y observa con atención cómo está hecho."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde du fait main",
+     "g": "Découvre ce que sont les loisirs créatifs et comment ce parcours de 365 jours fait grandir tes compétences.",
+     "p": [
+      "Le fait main, c'est créer avec ses mains : tricot, papier, poterie, broderie, bois, bijoux et bien plus.",
+      "Pas besoin de talent pour commencer : un peu de curiosité, quelques matériaux simples et du temps chaque jour.",
+      "Chaque jour apporte une petite leçon et un mini-projet, pour progresser en douceur tout au long de l'année."
+     ],
+     "q": "As-tu déjà fabriqué quelque chose de tes mains, même enfant ? C'était quoi ?",
+     "c": "Trouve chez toi un objet fait main et observe de près comment il a été réalisé."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo del fai da te",
+     "g": "Scopri cosa sono i lavori manuali e come questo percorso di 365 giorni fa crescere le tue abilità passo dopo passo.",
+     "p": [
+      "L'artigianato è creare con le mani: maglia, carta, ceramica, ricamo, legno, bigiotteria e molto altro.",
+      "Non serve talento per iniziare: bastano curiosità, pochi materiali semplici e un po' di tempo ogni giorno.",
+      "Ogni giorno c'è una piccola lezione e un mini progetto, così le abilità crescono con calma durante l'anno."
+     ],
+     "q": "Hai mai fatto qualcosa con le tue mani, anche da bambino? Che cos'era?",
+     "c": "Trova in casa un oggetto fatto a mano e osserva bene come è stato realizzato."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo do artesanato",
+     "g": "Descobre o que são os trabalhos manuais e como este percurso de 365 dias faz crescer as tuas competências.",
+     "p": [
+      "Artesanato é fazer coisas à mão: tricô, papel, cerâmica, bordado, madeira, bijuteria e muito mais.",
+      "Não precisas de talento para começar, só de curiosidade, alguns materiais simples e um pouco de tempo por dia.",
+      "Cada dia traz uma pequena lição e um mini projeto, para as tuas competências crescerem com calma ao longo do ano."
+     ],
+     "q": "Já fizeste alguma coisa à mão, mesmo em criança? O que era?",
+     "c": "Procura em casa um objeto feito à mão e observa com atenção como foi feito."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo do artesanato",
+     "g": "Descubra o que é artesanato e como esta trilha de 365 dias faz suas habilidades crescerem passo a passo.",
+     "p": [
+      "Artesanato é fazer coisas à mão: tricô, papel, cerâmica, bordado, madeira, bijuteria e muito mais.",
+      "Você não precisa de talento para começar, só de curiosidade, alguns materiais simples e um pouco de tempo por dia.",
+      "Cada dia traz uma pequena lição e um mini projeto, para suas habilidades crescerem com calma ao longo do ano."
+     ],
+     "q": "Você já fez alguma coisa à mão, mesmo quando criança? O que era?",
+     "c": "Procure em casa um objeto feito à mão e observe com atenção como ele foi feito."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The big craft families",
+     "g": "Take a quick tour of the main craft families and what each one involves.",
+     "p": [
+      "Fibre crafts use yarn, thread and fabric; paper crafts fold, cut and glue; clay crafts shape and fire earth.",
+      "Wood crafts carve and join timber; jewellery crafts work with beads, wire and metal into wearable pieces.",
+      "Mixed media combines materials freely, so it is a playground for trying ideas from every family."
+     ],
+     "q": "Which craft family sounds most exciting to you right now, and why?",
+     "c": "Write down the six families and put a star next to the two you want to try first."
+    },
+    "de": {
+     "t": "Die großen Handwerksfamilien",
+     "g": "Mach einen kurzen Rundgang durch die wichtigsten Handwerksfamilien und was zu jeder gehört.",
+     "p": [
+      "Faserhandwerk nutzt Garn, Faden und Stoff; Papierhandwerk faltet, schneidet und klebt; Ton wird geformt und gebrannt.",
+      "Holzhandwerk schnitzt und verbindet Holz; Schmuckhandwerk macht aus Perlen, Draht und Metall tragbare Stücke.",
+      "Mixed Media kombiniert Materialien frei und ist ein Spielplatz für Ideen aus allen Familien."
+     ],
+     "q": "Welche Handwerksfamilie reizt dich gerade am meisten, und warum?",
+     "c": "Schreib die sechs Familien auf und markiere die zwei, die du zuerst ausprobieren willst."
+    },
+    "es": {
+     "t": "Las grandes familias de manualidades",
+     "g": "Haz un recorrido rápido por las principales familias de manualidades y lo que implica cada una.",
+     "p": [
+      "Las de fibra usan lana, hilo y tela; las de papel doblan, cortan y pegan; la arcilla se modela y se cuece.",
+      "La madera se talla y se ensambla; la bisutería convierte cuentas, alambre y metal en piezas para llevar.",
+      "La técnica mixta combina materiales con libertad: es un patio de juegos para ideas de todas las familias."
+     ],
+     "q": "¿Qué familia de manualidades te emociona más ahora mismo y por qué?",
+     "c": "Anota las seis familias y marca con una estrella las dos que quieres probar primero."
+    },
+    "fr": {
+     "t": "Les grandes familles créatives",
+     "g": "Fais un petit tour des grandes familles du fait main et de ce que chacune demande.",
+     "p": [
+      "Les fibres utilisent laine, fil et tissu ; le papier se plie, se coupe, se colle ; l'argile se modèle et se cuit.",
+      "Le bois se sculpte et s'assemble ; les bijoux transforment perles, fil métallique et métal en pièces à porter.",
+      "Les techniques mixtes mélangent librement les matériaux : un terrain de jeu pour des idées de toutes les familles."
+     ],
+     "q": "Quelle famille créative te tente le plus en ce moment, et pourquoi ?",
+     "c": "Note les six familles et mets une étoile à côté des deux que tu veux essayer en premier."
+    },
+    "it": {
+     "t": "Le grandi famiglie dell'artigianato",
+     "g": "Fai un breve giro tra le principali famiglie dell'artigianato e scopri cosa comporta ognuna.",
+     "p": [
+      "Le fibre usano filato, filo e tessuto; la carta si piega, taglia e incolla; l'argilla si modella e si cuoce.",
+      "Il legno si intaglia e si unisce; la bigiotteria trasforma perline, filo e metallo in pezzi da indossare.",
+      "La tecnica mista combina i materiali liberamente: un parco giochi per idee di tutte le famiglie."
+     ],
+     "q": "Quale famiglia dell'artigianato ti incuriosisce di più adesso, e perché?",
+     "c": "Scrivi le sei famiglie e metti una stella accanto alle due che vuoi provare per prime."
+    },
+    "pt": {
+     "t": "As grandes famílias do artesanato",
+     "g": "Faz uma visita rápida às principais famílias do artesanato e ao que cada uma envolve.",
+     "p": [
+      "As fibras usam fio, linha e tecido; o papel dobra-se, corta-se e cola-se; o barro molda-se e coze-se.",
+      "A madeira esculpe-se e junta-se; a bijuteria transforma contas, arame e metal em peças para usar.",
+      "A técnica mista combina materiais livremente, um recreio para ideias de todas as famílias."
+     ],
+     "q": "Que família do artesanato te entusiasma mais agora, e porquê?",
+     "c": "Escreve as seis famílias e põe uma estrela ao lado das duas que queres experimentar primeiro."
+    },
+    "pt_BR": {
+     "t": "As grandes famílias do artesanato",
+     "g": "Faça um tour rápido pelas principais famílias do artesanato e pelo que cada uma envolve.",
+     "p": [
+      "As de fibra usam fio, linha e tecido; o papel é dobrado, cortado e colado; a argila é modelada e queimada.",
+      "A madeira é entalhada e unida; a bijuteria transforma miçangas, arame e metal em peças para usar.",
+      "A técnica mista combina materiais livremente, um parquinho para ideias de todas as famílias."
+     ],
+     "q": "Qual família do artesanato mais te empolga agora, e por quê?",
+     "c": "Anote as seis famílias e marque com uma estrela as duas que você quer testar primeiro."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why making by hand feels good",
+     "g": "Explore what makers around the world say crafting gives them: focus, patience and joy.",
+     "p": [
+      "Repetitive hand work like knitting can calm the mind and help you focus on just one thing at a time.",
+      "Crafts teach patience: mistakes are part of the process, and fixing them is a skill in itself.",
+      "Finishing something real with your own hands gives a special feeling of pride you can see and touch."
+     ],
+     "q": "What do you hope crafting will bring you: calm, fun, gifts for others or something else?",
+     "c": "Spend five quiet minutes doodling or folding paper, and notice how your mind feels afterwards."
+    },
+    "de": {
+     "t": "Warum Handarbeit guttut",
+     "g": "Entdecke, was Menschen weltweit am Handwerk schätzen: Konzentration, Geduld und Freude.",
+     "p": [
+      "Wiederholende Handarbeit wie Stricken kann den Kopf beruhigen und hilft, sich auf eine Sache zu konzentrieren.",
+      "Handwerk lehrt Geduld: Fehler gehören dazu, und sie zu beheben ist selbst eine Fähigkeit.",
+      "Etwas Echtes mit eigenen Händen fertigzustellen, macht stolz, und zwar sichtbar und greifbar."
+     ],
+     "q": "Was erhoffst du dir vom Handwerk: Ruhe, Spaß, Geschenke für andere oder etwas anderes?",
+     "c": "Kritzle oder falte fünf ruhige Minuten lang Papier und spür danach, wie sich dein Kopf anfühlt."
+    },
+    "es": {
+     "t": "Por qué hacer cosas a mano sienta bien",
+     "g": "Descubre lo que los artesanos del mundo dicen que les aporta: concentración, paciencia y alegría.",
+     "p": [
+      "El trabajo manual repetitivo, como tejer, puede calmar la mente y ayudarte a centrarte en una sola cosa.",
+      "Las manualidades enseñan paciencia: los errores forman parte del proceso y arreglarlos ya es una habilidad.",
+      "Terminar algo real con tus propias manos da un orgullo especial que puedes ver y tocar."
+     ],
+     "q": "¿Qué esperas que te aporten las manualidades: calma, diversión, regalos u otra cosa?",
+     "c": "Dedica cinco minutos tranquilos a garabatear o doblar papel y observa cómo se siente tu mente después."
+    },
+    "fr": {
+     "t": "Pourquoi créer de ses mains fait du bien",
+     "g": "Découvre ce que les créateurs du monde entier y trouvent : concentration, patience et joie.",
+     "p": [
+      "Un geste répétitif comme le tricot peut apaiser l'esprit et aider à se concentrer sur une seule chose.",
+      "Le fait main apprend la patience : les erreurs font partie du chemin, et les réparer est déjà un savoir-faire.",
+      "Terminer un objet réel de ses mains donne une fierté particulière, qu'on peut voir et toucher."
+     ],
+     "q": "Qu'espères-tu trouver dans le fait main : du calme, du plaisir, des cadeaux ou autre chose ?",
+     "c": "Passe cinq minutes au calme à gribouiller ou plier du papier, puis observe ce que tu ressens."
+    },
+    "it": {
+     "t": "Perché creare a mano fa stare bene",
+     "g": "Scopri cosa dicono gli artigiani di tutto il mondo: concentrazione, pazienza e gioia.",
+     "p": [
+      "Un lavoro ripetitivo come la maglia può calmare la mente e aiutarti a concentrarti su una cosa sola.",
+      "L'artigianato insegna la pazienza: gli errori fanno parte del processo e correggerli è già un'abilità.",
+      "Finire qualcosa di reale con le tue mani dà un orgoglio speciale, che puoi vedere e toccare."
+     ],
+     "q": "Cosa speri che ti dia l'artigianato: calma, divertimento, regali per altri o altro?",
+     "c": "Passa cinque minuti tranquilli a scarabocchiare o piegare carta e nota come si sente la tua mente dopo."
+    },
+    "pt": {
+     "t": "Porque é que fazer à mão faz bem",
+     "g": "Descobre o que os artesãos do mundo dizem ganhar com isso: concentração, paciência e alegria.",
+     "p": [
+      "Trabalhos repetitivos como o tricô podem acalmar a mente e ajudar-te a focar numa só coisa.",
+      "O artesanato ensina paciência: os erros fazem parte do processo e corrigi-los já é uma competência.",
+      "Terminar algo real com as tuas mãos dá um orgulho especial, que podes ver e tocar."
+     ],
+     "q": "O que esperas que o artesanato te traga: calma, diversão, presentes para outros ou outra coisa?",
+     "c": "Passa cinco minutos tranquilos a rabiscar ou dobrar papel e repara como sentes a mente depois."
+    },
+    "pt_BR": {
+     "t": "Por que fazer à mão faz bem",
+     "g": "Descubra o que artesãos do mundo todo dizem ganhar com isso: foco, paciência e alegria.",
+     "p": [
+      "Trabalhos repetitivos como o tricô podem acalmar a mente e ajudar você a focar em uma coisa só.",
+      "O artesanato ensina paciência: os erros fazem parte do processo, e corrigi-los já é uma habilidade.",
+      "Terminar algo real com as próprias mãos dá um orgulho especial, que dá para ver e tocar."
+     ],
+     "q": "O que você espera que o artesanato traga: calma, diversão, presentes para os outros ou outra coisa?",
+     "c": "Passe cinco minutos tranquilos rabiscando ou dobrando papel e repare como a mente fica depois."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up a small craft corner",
+     "g": "Create a simple, safe craft corner where you can work and leave projects to rest.",
+     "p": [
+      "A steady table and good light, ideally daylight or a bright lamp, make every craft easier on your eyes.",
+      "Clear boxes or jars keep supplies sorted, so you spend time making instead of searching.",
+      "Choose a safe spot, out of reach of kids and pets, where unfinished projects can rest undisturbed."
+     ],
+     "q": "Where at home could your craft corner be, even if it is just one shelf or a box?",
+     "c": "Gather three boxes or jars and label them: paper, tools and bits and pieces."
+    },
+    "de": {
+     "t": "Eine kleine Bastelecke einrichten",
+     "g": "Richte eine einfache, sichere Bastelecke ein, in der du arbeiten und Projekte ruhen lassen kannst.",
+     "p": [
+      "Ein stabiler Tisch und gutes Licht, am besten Tageslicht oder eine helle Lampe, schonen deine Augen.",
+      "Durchsichtige Boxen oder Gläser halten Material sortiert, so bastelst du mehr und suchst weniger.",
+      "Wähle einen sicheren Platz außer Reichweite von Kindern und Haustieren, wo Unfertiges ruhen kann."
+     ],
+     "q": "Wo könnte bei dir die Bastelecke sein, auch wenn es nur ein Regalbrett oder eine Kiste ist?",
+     "c": "Sammle drei Boxen oder Gläser und beschrifte sie: Papier, Werkzeug und Kleinkram."
+    },
+    "es": {
+     "t": "Prepara un pequeño rincón creativo",
+     "g": "Crea un rincón sencillo y seguro donde trabajar y dejar reposar tus proyectos.",
+     "p": [
+      "Una mesa firme y buena luz, mejor natural o una lámpara potente, hacen que cualquier manualidad canse menos la vista.",
+      "Las cajas o frascos transparentes mantienen el material ordenado: pasas más tiempo creando y menos buscando.",
+      "Elige un lugar seguro, fuera del alcance de niños y mascotas, donde los proyectos a medias puedan descansar."
+     ],
+     "q": "¿Dónde podría estar tu rincón creativo en casa, aunque sea solo una balda o una caja?",
+     "c": "Reúne tres cajas o frascos y etiquétalos: papel, herramientas y cositas."
+    },
+    "fr": {
+     "t": "Installer un petit coin créatif",
+     "g": "Crée un coin créatif simple et sûr pour travailler et laisser reposer tes projets.",
+     "p": [
+      "Une table stable et une bonne lumière, naturelle ou une lampe vive, ménagent tes yeux pendant que tu crées.",
+      "Des boîtes ou bocaux transparents gardent le matériel trié : tu crées plus et tu cherches moins.",
+      "Choisis un endroit sûr, hors de portée des enfants et des animaux, où les projets en cours peuvent attendre."
+     ],
+     "q": "Où pourrait se trouver ton coin créatif, même si ce n'est qu'une étagère ou une boîte ?",
+     "c": "Rassemble trois boîtes ou bocaux et étiquette-les : papier, outils et petites choses."
+    },
+    "it": {
+     "t": "Allestire un piccolo angolo creativo",
+     "g": "Crea un angolo creativo semplice e sicuro dove lavorare e lasciare riposare i progetti.",
+     "p": [
+      "Un tavolo stabile e una buona luce, naturale o una lampada luminosa, rendono ogni lavoro più facile per gli occhi.",
+      "Scatole o barattoli trasparenti tengono in ordine i materiali: crei di più e cerchi di meno.",
+      "Scegli un posto sicuro, lontano da bambini e animali, dove i progetti a metà possano riposare."
+     ],
+     "q": "Dove potrebbe essere il tuo angolo creativo, anche solo una mensola o una scatola?",
+     "c": "Prendi tre scatole o barattoli ed etichettali: carta, attrezzi e minuterie."
+    },
+    "pt": {
+     "t": "Montar um pequeno canto criativo",
+     "g": "Cria um canto criativo simples e seguro onde trabalhar e deixar os projetos a descansar.",
+     "p": [
+      "Uma mesa firme e boa luz, de preferência natural ou um candeeiro forte, poupam os teus olhos.",
+      "Caixas ou frascos transparentes mantêm o material arrumado: crias mais e procuras menos.",
+      "Escolhe um sítio seguro, longe de crianças e animais, onde os projetos inacabados possam esperar."
+     ],
+     "q": "Onde poderia ficar o teu canto criativo em casa, mesmo que seja só uma prateleira ou uma caixa?",
+     "c": "Junta três caixas ou frascos e põe-lhes etiquetas: papel, ferramentas e miudezas."
+    },
+    "pt_BR": {
+     "t": "Montando um cantinho de artesanato",
+     "g": "Crie um cantinho simples e seguro onde trabalhar e deixar os projetos descansando.",
+     "p": [
+      "Uma mesa firme e boa luz, de preferência natural ou uma luminária forte, poupam seus olhos.",
+      "Caixas ou potes transparentes deixam o material organizado: você cria mais e procura menos.",
+      "Escolha um lugar seguro, longe de crianças e pets, onde projetos inacabados possam esperar."
+     ],
+     "q": "Onde poderia ficar seu cantinho em casa, mesmo que seja só uma prateleira ou uma caixa?",
+     "c": "Separe três caixas ou potes e coloque etiquetas: papel, ferramentas e miudezas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your basic craft tool kit",
+     "g": "Get to know the handful of tools almost every craft uses.",
+     "p": [
+      "Sharp scissors, a craft knife and a self-healing cutting mat handle most cutting jobs cleanly.",
+      "A metal ruler, pencils and an eraser help you measure and mark before you cut or glue.",
+      "Glue, a few hand-sewing needles and pins complete a kit that covers paper and fabric projects."
+     ],
+     "q": "Which of these tools do you already have at home, and which would you like to add?",
+     "c": "Check your home for each tool on today's list and put the ones you find in your tool box."
+    },
+    "de": {
+     "t": "Deine Grundausstattung",
+     "g": "Lerne die wenigen Werkzeuge kennen, die fast jedes Handwerk braucht.",
+     "p": [
+      "Eine scharfe Schere, ein Cuttermesser und eine selbstheilende Schneidematte erledigen die meisten Schnitte sauber.",
+      "Ein Metalllineal, Bleistifte und ein Radiergummi helfen beim Messen und Anzeichnen vor dem Schneiden.",
+      "Kleber, ein paar Nähnadeln und Stecknadeln ergänzen ein Set für Papier- und Stoffprojekte."
+     ],
+     "q": "Welche dieser Werkzeuge hast du schon zu Hause, und welche möchtest du ergänzen?",
+     "c": "Such zu Hause jedes Werkzeug von heute und lege die gefundenen in deine Werkzeugkiste."
+    },
+    "es": {
+     "t": "Tu kit básico de herramientas",
+     "g": "Conoce el puñado de herramientas que usa casi cualquier manualidad.",
+     "p": [
+      "Unas tijeras afiladas, un cúter y una base de corte autorregenerable resuelven casi todos los cortes.",
+      "Una regla metálica, lápices y una goma te ayudan a medir y marcar antes de cortar o pegar.",
+      "Pegamento, unas agujas de coser a mano y alfileres completan un kit para papel y tela."
+     ],
+     "q": "¿Cuáles de estas herramientas ya tienes en casa y cuáles te gustaría añadir?",
+     "c": "Busca en casa cada herramienta de la lista de hoy y guarda las que encuentres en tu caja."
+    },
+    "fr": {
+     "t": "Ta trousse à outils de base",
+     "g": "Fais connaissance avec les quelques outils que presque tous les loisirs créatifs utilisent.",
+     "p": [
+      "Des ciseaux bien affûtés, un cutter et un tapis de coupe autocicatrisant suffisent pour la plupart des découpes.",
+      "Une règle en métal, des crayons et une gomme aident à mesurer et tracer avant de couper ou coller.",
+      "De la colle, quelques aiguilles à coudre et des épingles complètent un kit pour papier et tissu."
+     ],
+     "q": "Lesquels de ces outils as-tu déjà chez toi, et lesquels aimerais-tu ajouter ?",
+     "c": "Cherche chez toi chaque outil de la liste du jour et range ceux que tu trouves dans ta boîte."
+    },
+    "it": {
+     "t": "Il tuo kit di base",
+     "g": "Conosci i pochi attrezzi che servono in quasi ogni lavoro manuale.",
+     "p": [
+      "Forbici affilate, un taglierino e un tappetino da taglio autorigenerante coprono quasi tutti i tagli.",
+      "Un righello di metallo, matite e una gomma aiutano a misurare e segnare prima di tagliare o incollare.",
+      "Colla, qualche ago da cucito e degli spilli completano un kit per carta e tessuto."
+     ],
+     "q": "Quali di questi attrezzi hai già in casa e quali vorresti aggiungere?",
+     "c": "Cerca in casa ogni attrezzo della lista di oggi e metti quelli che trovi nella tua scatola."
+    },
+    "pt": {
+     "t": "O teu kit básico de ferramentas",
+     "g": "Conhece as poucas ferramentas que quase todos os trabalhos manuais usam.",
+     "p": [
+      "Uma tesoura afiada, um x-ato e uma base de corte autorregenerável fazem quase todos os cortes.",
+      "Uma régua de metal, lápis e uma borracha ajudam a medir e marcar antes de cortar ou colar.",
+      "Cola, algumas agulhas de coser e alfinetes completam um kit para papel e tecido."
+     ],
+     "q": "Quais destas ferramentas já tens em casa e quais gostavas de juntar?",
+     "c": "Procura em casa cada ferramenta da lista de hoje e guarda as que encontrares na tua caixa."
+    },
+    "pt_BR": {
+     "t": "Seu kit básico de ferramentas",
+     "g": "Conheça as poucas ferramentas que quase todo artesanato usa.",
+     "p": [
+      "Uma tesoura afiada, um estilete e uma base de corte autorregenerativa resolvem quase todos os cortes.",
+      "Uma régua de metal, lápis e borracha ajudam a medir e marcar antes de cortar ou colar.",
+      "Cola, algumas agulhas de costura à mão e alfinetes completam um kit para papel e tecido."
+     ],
+     "q": "Quais dessas ferramentas você já tem em casa e quais gostaria de adicionar?",
+     "c": "Procure em casa cada ferramenta da lista de hoje e guarde as que achar na sua caixa."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Craft safety basics",
+     "g": "Learn the simple habits that keep crafting safe for you and everyone around you.",
+     "p": [
+      "Always cut away from your body and fingers, and use a fresh blade: dull blades slip more easily.",
+      "Cap or retract blades after use, and work with glues, paints and sprays in a well-ventilated room.",
+      "With kids or pets nearby, keep sharp tools, small parts and hot tools out of reach at all times."
+     ],
+     "q": "Which safety habit do you think you will need to remind yourself about most often?",
+     "c": "Find a safe place or cover for your blades and pins, and make it their permanent home."
+    },
+    "de": {
+     "t": "Sicherheit beim Basteln",
+     "g": "Lerne einfache Gewohnheiten, die das Basteln für dich und andere sicher machen.",
+     "p": [
+      "Schneide immer vom Körper und den Fingern weg und nutze eine frische Klinge: Stumpfe Klingen rutschen leichter ab.",
+      "Klingen nach Gebrauch abdecken oder einfahren, und mit Kleber, Farben und Sprays in gut gelüfteten Räumen arbeiten.",
+      "Sind Kinder oder Tiere in der Nähe, gehören scharfe und heiße Werkzeuge und Kleinteile immer außer Reichweite."
+     ],
+     "q": "An welche Sicherheitsregel musst du dich wohl am häufigsten erinnern?",
+     "c": "Gib deinen Klingen und Nadeln einen sicheren Platz oder eine Hülle als festes Zuhause."
+    },
+    "es": {
+     "t": "Seguridad básica en manualidades",
+     "g": "Aprende hábitos sencillos que hacen las manualidades seguras para ti y para quienes te rodean.",
+     "p": [
+      "Corta siempre alejando la hoja del cuerpo y los dedos, y usa una cuchilla nueva: las romas resbalan más.",
+      "Tapa o retrae las cuchillas tras usarlas y trabaja con pegamentos, pinturas y sprays en un lugar ventilado.",
+      "Si hay niños o mascotas cerca, guarda siempre fuera de su alcance lo afilado, lo caliente y las piezas pequeñas."
+     ],
+     "q": "¿Qué hábito de seguridad crees que tendrás que recordarte más a menudo?",
+     "c": "Busca un lugar o funda segura para tus cuchillas y alfileres y conviértelo en su sitio fijo."
+    },
+    "fr": {
+     "t": "Les bases de la sécurité",
+     "g": "Apprends les gestes simples qui rendent le fait main sûr pour toi et ton entourage.",
+     "p": [
+      "Coupe toujours en éloignant la lame de ton corps et de tes doigts, avec une lame neuve : une lame usée dérape plus.",
+      "Rentre ou protège les lames après usage, et utilise colles, peintures et sprays dans une pièce bien aérée.",
+      "Avec des enfants ou des animaux, garde toujours hors de portée lames, outils chauds et petites pièces."
+     ],
+     "q": "Quel geste de sécurité devras-tu te rappeler le plus souvent, à ton avis ?",
+     "c": "Trouve un endroit ou un étui sûr pour tes lames et épingles, et fais-en leur place attitrée."
+    },
+    "it": {
+     "t": "Le basi della sicurezza",
+     "g": "Impara le semplici abitudini che rendono i lavori manuali sicuri per te e per chi ti sta intorno.",
+     "p": [
+      "Taglia sempre allontanando la lama dal corpo e dalle dita, con una lama nuova: quelle consumate scivolano di più.",
+      "Copri o ritira le lame dopo l'uso e lavora con colle, colori e spray in una stanza ben aerata.",
+      "Con bambini o animali vicino, tieni sempre fuori portata lame, attrezzi caldi e pezzi piccoli."
+     ],
+     "q": "Quale abitudine di sicurezza pensi di doverti ricordare più spesso?",
+     "c": "Trova un posto o una custodia sicura per lame e spilli e rendila la loro casa fissa."
+    },
+    "pt": {
+     "t": "Segurança básica no artesanato",
+     "g": "Aprende hábitos simples que tornam o artesanato seguro para ti e para quem está à tua volta.",
+     "p": [
+      "Corta sempre afastando a lâmina do corpo e dos dedos, com uma lâmina nova: as gastas escorregam mais.",
+      "Tapa ou recolhe as lâminas depois de usar e trabalha com colas, tintas e sprays num espaço arejado.",
+      "Com crianças ou animais por perto, guarda sempre fora do alcance lâminas, ferramentas quentes e peças pequenas."
+     ],
+     "q": "Que hábito de segurança achas que vais ter de lembrar mais vezes?",
+     "c": "Arranja um sítio ou estojo seguro para lâminas e alfinetes e faz dele o lugar fixo deles."
+    },
+    "pt_BR": {
+     "t": "Segurança básica no artesanato",
+     "g": "Aprenda hábitos simples que deixam o artesanato seguro para você e para quem está por perto.",
+     "p": [
+      "Corte sempre afastando a lâmina do corpo e dos dedos, com lâmina nova: as cegas escorregam mais.",
+      "Tampe ou recolha as lâminas depois do uso e trabalhe com colas, tintas e sprays em lugar ventilado.",
+      "Com crianças ou pets por perto, deixe sempre fora do alcance lâminas, ferramentas quentes e peças pequenas."
+     ],
+     "q": "Qual hábito de segurança você acha que vai precisar lembrar com mais frequência?",
+     "c": "Arrume um lugar ou estojo seguro para lâminas e alfinetes e faça dele o cantinho fixo deles."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing glues and adhesives",
+     "g": "Learn which glue holds what best, so your projects stay together.",
+     "p": [
+      "PVA white glue is great for paper, card and wood; it dries clear but needs time and light pressure.",
+      "Glue sticks suit paper and kids; tacky glue grabs fast on felt and fabric; tape is quick for temporary holds.",
+      "Hot glue bonds many materials in seconds, but it gets very hot: keep fingers clear and unplug when done."
+     ],
+     "q": "Which glue have you used most so far, and did it ever let you down?",
+     "c": "Glue two strips of paper with two different glues and compare which holds better tomorrow."
+    },
+    "de": {
+     "t": "Den richtigen Kleber wählen",
+     "g": "Lerne, welcher Kleber was am besten hält, damit deine Projekte zusammenbleiben.",
+     "p": [
+      "Weißleim (PVA) ist ideal für Papier, Karton und Holz; er trocknet klar, braucht aber Zeit und leichten Druck.",
+      "Klebestifte passen zu Papier und Kindern, Bastelkleber haftet schnell auf Filz und Stoff, Klebeband hält vorläufig.",
+      "Heißkleber verbindet vieles in Sekunden, wird aber sehr heiß: Finger fernhalten und danach den Stecker ziehen."
+     ],
+     "q": "Welchen Kleber hast du bisher am meisten benutzt, und hat er dich je enttäuscht?",
+     "c": "Klebe zwei Papierstreifen mit zwei verschiedenen Klebern und vergleiche morgen, was besser hält."
+    },
+    "es": {
+     "t": "Elegir pegamentos y adhesivos",
+     "g": "Aprende qué pegamento sujeta mejor cada cosa para que tus proyectos no se despeguen.",
+     "p": [
+      "La cola blanca (PVA) va genial para papel, cartón y madera; seca transparente, pero necesita tiempo y algo de presión.",
+      "La barra va bien con papel y niños; la cola tacky agarra rápido en fieltro y tela; la cinta sirve para sujetar un rato.",
+      "La silicona caliente une muchos materiales en segundos, pero quema: aparta los dedos y desenchufa al terminar."
+     ],
+     "q": "¿Qué pegamento has usado más hasta ahora? ¿Alguna vez te falló?",
+     "c": "Pega dos tiras de papel con dos pegamentos distintos y compara mañana cuál aguanta mejor."
+    },
+    "fr": {
+     "t": "Choisir colles et adhésifs",
+     "g": "Apprends quelle colle tient le mieux quoi, pour que tes projets restent bien assemblés.",
+     "p": [
+      "La colle blanche vinylique est parfaite pour papier, carton et bois ; elle sèche transparente mais demande du temps.",
+      "Le bâton convient au papier et aux enfants, la colle tacky tient vite sur feutrine et tissu, le ruban dépanne.",
+      "Le pistolet à colle chaude assemble beaucoup de matières en secondes, mais il brûle : doigts à distance, et débranche-le."
+     ],
+     "q": "Quelle colle as-tu le plus utilisée jusqu'ici, et t'a-t-elle déjà déçu ?",
+     "c": "Colle deux bandes de papier avec deux colles différentes et compare demain laquelle tient le mieux."
+    },
+    "it": {
+     "t": "Scegliere colle e adesivi",
+     "g": "Impara quale colla tiene meglio cosa, così i tuoi progetti restano uniti.",
+     "p": [
+      "La colla vinilica è ottima per carta, cartoncino e legno; asciuga trasparente ma richiede tempo e un po' di pressione.",
+      "La colla stick va bene per carta e bambini, la colla tacky fa presa veloce su feltro e stoffa, il nastro tiene per poco.",
+      "La colla a caldo unisce tanti materiali in pochi secondi, ma scotta: tieni lontane le dita e staccala a fine lavoro."
+     ],
+     "q": "Quale colla hai usato di più finora, e ti ha mai deluso?",
+     "c": "Incolla due strisce di carta con due colle diverse e confronta domani quale tiene meglio."
+    },
+    "pt": {
+     "t": "Escolher colas e adesivos",
+     "g": "Aprende que cola segura melhor cada coisa, para os teus projetos não se descolarem.",
+     "p": [
+      "A cola branca (PVA) é ótima para papel, cartão e madeira; seca transparente, mas precisa de tempo e alguma pressão.",
+      "O stick serve para papel e crianças, a cola tacky agarra depressa em feltro e tecido, a fita segura temporariamente.",
+      "A cola quente une muitos materiais em segundos, mas queima: afasta os dedos e desliga a pistola no fim."
+     ],
+     "q": "Que cola usaste mais até agora, e alguma vez te deixou ficar mal?",
+     "c": "Cola duas tiras de papel com duas colas diferentes e compara amanhã qual aguenta melhor."
+    },
+    "pt_BR": {
+     "t": "Escolhendo colas e adesivos",
+     "g": "Aprenda qual cola segura melhor cada coisa, para seus projetos não descolarem.",
+     "p": [
+      "A cola branca (PVA) é ótima para papel, papelão e madeira; seca transparente, mas pede tempo e uma leve pressão.",
+      "A cola bastão serve para papel e crianças, a cola de silicone líquida agarra rápido em feltro e tecido, a fita segura por pouco tempo.",
+      "A cola quente une muitos materiais em segundos, mas queima: mantenha os dedos longe e desligue a pistola no fim."
+     ],
+     "q": "Qual cola você mais usou até agora, e ela já te deixou na mão?",
+     "c": "Cole duas tiras de papel com duas colas diferentes e compare amanhã qual segura melhor."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper types for crafting",
+     "g": "Learn how different papers behave and which one suits each project.",
+     "p": [
+      "Copy paper is light and cheap for practice; cardstock is thick and sturdy for cards and boxes.",
+      "Kraft paper is strong and brown, tissue paper is thin and see-through, watercolour paper takes wet paint.",
+      "Paper weight (gsm) tells thickness, and paper has a grain: it folds and tears more easily along it."
+     ],
+     "q": "Which paper do you have most of at home right now?",
+     "c": "Tear a sheet in both directions and feel which way tears straighter: that is the grain."
+    },
+    "de": {
+     "t": "Papiersorten zum Basteln",
+     "g": "Lerne, wie sich verschiedene Papiere verhalten und welches zu welchem Projekt passt.",
+     "p": [
+      "Kopierpapier ist leicht und gut zum Üben; Karton ist dick und stabil für Karten und Schachteln.",
+      "Kraftpapier ist fest und braun, Seidenpapier dünn und durchscheinend, Aquarellpapier verträgt nasse Farbe.",
+      "Das Gewicht (g/m²) zeigt die Dicke, und Papier hat eine Laufrichtung: Entlang der Faser faltet und reißt es leichter."
+     ],
+     "q": "Von welchem Papier hast du gerade am meisten zu Hause?",
+     "c": "Reiß ein Blatt in beide Richtungen und fühle, welche Richtung gerader reißt: Das ist die Laufrichtung."
+    },
+    "es": {
+     "t": "Tipos de papel para manualidades",
+     "g": "Aprende cómo se comportan los distintos papeles y cuál va mejor en cada proyecto.",
+     "p": [
+      "El papel de impresora es ligero y barato para practicar; la cartulina es gruesa y firme para tarjetas y cajas.",
+      "El papel kraft es fuerte y marrón, el de seda es fino y translúcido, el de acuarela aguanta la pintura húmeda.",
+      "El gramaje (g/m²) indica el grosor, y el papel tiene fibra: se dobla y se rasga más fácil en su dirección."
+     ],
+     "q": "¿Qué tipo de papel tienes más en casa ahora mismo?",
+     "c": "Rasga una hoja en ambas direcciones y nota cuál se rasga más recta: esa es la dirección de la fibra."
+    },
+    "fr": {
+     "t": "Les types de papier",
+     "g": "Apprends comment se comportent les différents papiers et lequel convient à chaque projet.",
+     "p": [
+      "Le papier d'imprimante est léger et idéal pour s'entraîner ; le papier cartonné est épais pour cartes et boîtes.",
+      "Le kraft est solide et brun, le papier de soie fin et translucide, le papier aquarelle accepte la peinture humide.",
+      "Le grammage (g/m²) indique l'épaisseur, et le papier a un sens des fibres : il se plie et se déchire mieux dans ce sens."
+     ],
+     "q": "Quel papier as-tu le plus chez toi en ce moment ?",
+     "c": "Déchire une feuille dans les deux sens et sens lequel se déchire le plus droit : c'est le sens des fibres."
+    },
+    "it": {
+     "t": "Tipi di carta per il fai da te",
+     "g": "Impara come si comportano le diverse carte e quale si adatta a ogni progetto.",
+     "p": [
+      "La carta da stampante è leggera ed economica per esercitarsi; il cartoncino è spesso e robusto per biglietti e scatole.",
+      "La carta kraft è forte e marrone, la velina sottile e trasparente, la carta da acquerello regge il colore bagnato.",
+      "La grammatura (g/m²) indica lo spessore e la carta ha una fibra: si piega e si strappa meglio nel suo verso."
+     ],
+     "q": "Quale carta hai di più in casa in questo momento?",
+     "c": "Strappa un foglio nei due sensi e senti quale si strappa più dritto: quello è il verso della fibra."
+    },
+    "pt": {
+     "t": "Tipos de papel para artesanato",
+     "g": "Aprende como se comportam os diferentes papéis e qual serve para cada projeto.",
+     "p": [
+      "O papel de impressora é leve e barato para treinar; a cartolina é grossa e firme para postais e caixas.",
+      "O papel kraft é forte e castanho, o papel de seda é fino e translúcido, o de aguarela aguenta tinta molhada.",
+      "A gramagem (g/m²) indica a espessura, e o papel tem fibra: dobra e rasga melhor no sentido dela."
+     ],
+     "q": "Que tipo de papel tens mais em casa neste momento?",
+     "c": "Rasga uma folha nos dois sentidos e sente qual rasga mais direito: esse é o sentido da fibra."
+    },
+    "pt_BR": {
+     "t": "Tipos de papel para artesanato",
+     "g": "Aprenda como os diferentes papéis se comportam e qual combina com cada projeto.",
+     "p": [
+      "O sulfite é leve e barato para treinar; o cartão (cardstock) é grosso e firme para cartões e caixas.",
+      "O papel kraft é forte e marrom, o papel de seda é fino e translúcido, o de aquarela aguenta tinta molhada.",
+      "A gramatura (g/m²) indica a espessura, e o papel tem fibra: dobra e rasga melhor no sentido dela."
+     ],
+     "q": "Qual tipo de papel você mais tem em casa agora?",
+     "c": "Rasgue uma folha nos dois sentidos e sinta qual rasga mais reto: esse é o sentido da fibra."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folding paper cleanly",
+     "g": "Learn the habits that turn wobbly folds into crisp, clean edges.",
+     "p": [
+      "Line up corners and edges exactly before you press; a tiny gap at the start grows into a big one.",
+      "Crease firmly from the centre outwards with a fingernail, a bone folder or the back of a spoon.",
+      "Fold with the paper grain whenever you can: the fold will be sharper and the paper will not crack."
+     ],
+     "q": "Do you prefer quick, rough folding or slow, careful folding? Why?",
+     "c": "Fold one sheet in half four times, as neatly as you can, and check how well the corners meet."
+    },
+    "de": {
+     "t": "Papier sauber falten",
+     "g": "Lerne die Gewohnheiten, die aus wackeligen Falten scharfe, saubere Kanten machen.",
+     "p": [
+      "Lege Ecken und Kanten genau aufeinander, bevor du drückst; ein kleiner Spalt am Anfang wird später groß.",
+      "Falze kräftig von der Mitte nach außen, mit dem Fingernagel, einem Falzbein oder einem Löffelrücken.",
+      "Falte möglichst mit der Laufrichtung: Die Kante wird schärfer, und das Papier bricht nicht."
+     ],
+     "q": "Faltest du lieber schnell und grob oder langsam und sorgfältig? Warum?",
+     "c": "Falte ein Blatt viermal in der Mitte, so ordentlich wie möglich, und prüfe, wie gut die Ecken passen."
+    },
+    "es": {
+     "t": "Doblar papel con limpieza",
+     "g": "Aprende los hábitos que convierten dobleces torcidos en bordes nítidos y limpios.",
+     "p": [
+      "Alinea esquinas y bordes con exactitud antes de presionar: un pequeño hueco al inicio crece mucho al final.",
+      "Marca el pliegue con firmeza del centro hacia fuera con la uña, una plegadera o el dorso de una cuchara.",
+      "Dobla a favor de la fibra siempre que puedas: el pliegue sale más nítido y el papel no se agrieta."
+     ],
+     "q": "¿Prefieres doblar rápido y a ojo o despacio y con cuidado? ¿Por qué?",
+     "c": "Dobla una hoja por la mitad cuatro veces, lo más limpio posible, y mira cómo coinciden las esquinas."
+    },
+    "fr": {
+     "t": "Plier le papier proprement",
+     "g": "Apprends les gestes qui transforment des plis hésitants en arêtes nettes et propres.",
+     "p": [
+      "Aligne coins et bords exactement avant d'appuyer : un petit écart au départ devient grand à la fin.",
+      "Marque le pli fermement du centre vers l'extérieur, avec l'ongle, un plioir en os ou le dos d'une cuillère.",
+      "Plie dans le sens des fibres dès que possible : le pli sera plus net et le papier ne craquera pas."
+     ],
+     "q": "Préfères-tu plier vite et à l'œil, ou lentement et avec soin ? Pourquoi ?",
+     "c": "Plie une feuille en deux quatre fois, le plus proprement possible, et regarde si les coins se rejoignent."
+    },
+    "it": {
+     "t": "Piegare la carta con precisione",
+     "g": "Impara le abitudini che trasformano pieghe incerte in bordi netti e puliti.",
+     "p": [
+      "Allinea angoli e bordi con esattezza prima di premere: un piccolo spazio all'inizio diventa grande alla fine.",
+      "Segna la piega con decisione dal centro verso l'esterno con l'unghia, una stecca d'osso o il dorso di un cucchiaio.",
+      "Piega nel verso della fibra quando puoi: la piega viene più netta e la carta non si crepa."
+     ],
+     "q": "Preferisci piegare in fretta e a occhio, o piano e con cura? Perché?",
+     "c": "Piega un foglio a metà quattro volte, il più ordinatamente possibile, e guarda come combaciano gli angoli."
+    },
+    "pt": {
+     "t": "Dobrar papel com perfeição",
+     "g": "Aprende os hábitos que transformam dobras tortas em vincos nítidos e limpos.",
+     "p": [
+      "Alinha cantos e bordas com exatidão antes de pressionar: uma pequena folga no início fica grande no fim.",
+      "Vinca com firmeza do centro para fora, com a unha, uma dobradeira de osso ou as costas de uma colher.",
+      "Dobra no sentido da fibra sempre que puderes: o vinco fica mais nítido e o papel não estala."
+     ],
+     "q": "Preferes dobrar depressa e a olho, ou devagar e com cuidado? Porquê?",
+     "c": "Dobra uma folha ao meio quatro vezes, com o máximo cuidado, e vê se os cantos coincidem."
+    },
+    "pt_BR": {
+     "t": "Dobrando papel com capricho",
+     "g": "Aprenda os hábitos que transformam dobras tortas em vincos nítidos e limpos.",
+     "p": [
+      "Alinhe cantos e bordas com exatidão antes de pressionar: uma pequena folga no início vira uma grande no fim.",
+      "Vinque com firmeza do centro para fora, com a unha, uma dobradeira de osso ou as costas de uma colher.",
+      "Dobre no sentido da fibra sempre que puder: o vinco fica mais nítido e o papel não racha."
+     ],
+     "q": "Você prefere dobrar rápido e no olho, ou devagar e com cuidado? Por quê?",
+     "c": "Dobre uma folha ao meio quatro vezes, com o máximo capricho, e veja se os cantos batem."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first origami models",
+     "g": "Fold your first simple origami models and learn to read basic diagrams.",
+     "p": [
+      "Origami is the art of folding paper, usually a square, into shapes without cutting or gluing.",
+      "The paper cup and the boat are classic first models: few steps, quick results and actually useful.",
+      "Diagrams use lines: a dashed line usually means valley fold (towards you), dash-dot means mountain fold."
+     ],
+     "q": "Have you ever folded a paper plane, boat or hat? Who taught you?",
+     "c": "Fold a paper cup from a square sheet and see if it can hold a few paper clips."
+    },
+    "de": {
+     "t": "Deine ersten Origami-Modelle",
+     "g": "Falte deine ersten einfachen Origami-Modelle und lerne, einfache Anleitungen zu lesen.",
+     "p": [
+      "Origami ist die Kunst, Papier, meist ein Quadrat, ohne Schneiden oder Kleben zu Formen zu falten.",
+      "Becher und Boot sind klassische erste Modelle: wenige Schritte, schnelle Ergebnisse und sogar nützlich.",
+      "Diagramme nutzen Linien: gestrichelt heißt meist Talfalte (zu dir hin), Strich-Punkt heißt Bergfalte."
+     ],
+     "q": "Hast du schon einmal einen Papierflieger, ein Boot oder einen Hut gefaltet? Wer hat es dir gezeigt?",
+     "c": "Falte aus einem quadratischen Blatt einen Becher und teste, ob er ein paar Büroklammern hält."
+    },
+    "es": {
+     "t": "Tus primeros modelos de origami",
+     "g": "Dobla tus primeros modelos sencillos de origami y aprende a leer diagramas básicos.",
+     "p": [
+      "El origami es el arte de doblar papel, normalmente un cuadrado, sin cortar ni pegar.",
+      "El vaso y el barco son modelos clásicos para empezar: pocos pasos, resultado rápido y además útiles.",
+      "Los diagramas usan líneas: la discontinua suele ser pliegue valle (hacia ti) y raya-punto, pliegue montaña."
+     ],
+     "q": "¿Alguna vez doblaste un avión, un barco o un sombrero de papel? ¿Quién te enseñó?",
+     "c": "Dobla un vaso con una hoja cuadrada y comprueba si aguanta unos cuantos clips."
+    },
+    "fr": {
+     "t": "Tes premiers modèles d'origami",
+     "g": "Plie tes premiers modèles d'origami simples et apprends à lire des diagrammes de base.",
+     "p": [
+      "L'origami est l'art de plier le papier, souvent un carré, sans couper ni coller.",
+      "Le gobelet et le bateau sont des classiques pour débuter : peu d'étapes, résultat rapide et même utile.",
+      "Les diagrammes utilisent des lignes : tirets pour un pli vallée (vers toi), tiret-point pour un pli montagne."
+     ],
+     "q": "As-tu déjà plié un avion, un bateau ou un chapeau en papier ? Qui te l'a appris ?",
+     "c": "Plie un gobelet dans une feuille carrée et vérifie s'il peut contenir quelques trombones."
+    },
+    "it": {
+     "t": "I tuoi primi modelli di origami",
+     "g": "Piega i tuoi primi semplici modelli di origami e impara a leggere i diagrammi di base.",
+     "p": [
+      "L'origami è l'arte di piegare la carta, di solito un quadrato, senza tagliare né incollare.",
+      "Il bicchiere e la barchetta sono classici per iniziare: pochi passaggi, risultato veloce e perfino utili.",
+      "I diagrammi usano linee: il tratteggio indica di solito la piega a valle (verso di te), tratto-punto quella a monte."
+     ],
+     "q": "Hai mai piegato un aeroplanino, una barchetta o un cappello di carta? Chi te l'ha insegnato?",
+     "c": "Piega un bicchiere da un foglio quadrato e prova se regge qualche graffetta."
+    },
+    "pt": {
+     "t": "Os teus primeiros modelos de origami",
+     "g": "Dobra os teus primeiros modelos simples de origami e aprende a ler diagramas básicos.",
+     "p": [
+      "O origami é a arte de dobrar papel, normalmente um quadrado, sem cortar nem colar.",
+      "O copo e o barco são modelos clássicos para começar: poucos passos, resultado rápido e até úteis.",
+      "Os diagramas usam linhas: tracejado costuma ser dobra em vale (para ti), traço-ponto é dobra em montanha."
+     ],
+     "q": "Já dobraste um avião, um barco ou um chapéu de papel? Quem te ensinou?",
+     "c": "Dobra um copo a partir de uma folha quadrada e vê se aguenta alguns clipes."
+    },
+    "pt_BR": {
+     "t": "Seus primeiros modelos de origami",
+     "g": "Dobre seus primeiros modelos simples de origami e aprenda a ler diagramas básicos.",
+     "p": [
+      "Origami é a arte de dobrar papel, geralmente um quadrado, sem cortar nem colar.",
+      "O copo e o barquinho são clássicos para começar: poucos passos, resultado rápido e ainda úteis.",
+      "Os diagramas usam linhas: tracejado costuma ser dobra vale (para você), traço-ponto é dobra montanha."
+     ],
+     "q": "Você já dobrou um aviãozinho, um barquinho ou um chapéu de papel? Quem te ensinou?",
+     "c": "Dobre um copo com uma folha quadrada e veja se ele aguenta alguns clipes."
+    }
+   }
+  }
+ ]
+}

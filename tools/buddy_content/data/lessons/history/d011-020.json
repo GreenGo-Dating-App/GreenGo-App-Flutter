@@ -1,0 +1,835 @@
+{
+ "topic": "history",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Our earliest ancestors",
+     "g": "Learn how modern humans first appeared in Africa and then spread across the planet.",
+     "p": [
+      "Fossils and DNA show that modern humans, Homo sapiens, first appeared in Africa around 300,000 years ago.",
+      "Small groups later left Africa and, over tens of thousands of years, reached Asia, Europe and Australia.",
+      "The Americas were reached last, probably more than 15,000 years ago, crossing from Asia."
+     ],
+     "q": "If you could watch one moment of this great human journey, which would you choose?",
+     "c": "Find your region on a world map and guess roughly when the first people arrived there, then check it."
+    },
+    "de": {
+     "t": "Unsere frühesten Vorfahren",
+     "g": "Erfahre, wie der moderne Mensch in Afrika entstand und sich über die Erde verbreitete.",
+     "p": [
+      "Fossilien und DNA zeigen, dass der moderne Mensch, Homo sapiens, vor etwa 300.000 Jahren in Afrika auftrat.",
+      "Kleine Gruppen verließen später Afrika und erreichten über Zehntausende Jahre Asien, Europa und Australien.",
+      "Amerika wurde zuletzt erreicht, wohl vor mehr als 15.000 Jahren, von Asien aus."
+     ],
+     "q": "Welchen Moment dieser großen Menschheitsreise würdest du gern miterleben?",
+     "c": "Such deine Region auf einer Weltkarte, schätze, wann dort die ersten Menschen ankamen, und prüfe es nach."
+    },
+    "es": {
+     "t": "Nuestros primeros antepasados",
+     "g": "Descubre cómo los humanos modernos aparecieron en África y se extendieron por el planeta.",
+     "p": [
+      "Los fósiles y el ADN muestran que el Homo sapiens apareció en África hace unos 300.000 años.",
+      "Pequeños grupos salieron después de África y, en decenas de miles de años, llegaron a Asia, Europa y Australia.",
+      "América fue lo último en poblarse, probablemente hace más de 15.000 años, desde Asia."
+     ],
+     "q": "Si pudieras presenciar un momento de este gran viaje humano, ¿cuál elegirías?",
+     "c": "Busca tu región en un mapa y adivina cuándo llegaron allí las primeras personas; luego compruébalo."
+    },
+    "fr": {
+     "t": "Nos premiers ancêtres",
+     "g": "Découvrir comment l'humain moderne est apparu en Afrique puis s'est répandu sur la planète.",
+     "p": [
+      "Fossiles et ADN montrent que l'Homo sapiens est apparu en Afrique il y a environ 300 000 ans.",
+      "De petits groupes ont ensuite quitté l'Afrique et atteint l'Asie, l'Europe et l'Australie en des dizaines de milliers d'années.",
+      "Les Amériques ont été atteintes en dernier, sans doute il y a plus de 15 000 ans, depuis l'Asie."
+     ],
+     "q": "Si tu pouvais assister à un moment de ce grand voyage humain, lequel choisirais-tu ?",
+     "c": "Trouve ta région sur une carte et devine quand les premiers humains y sont arrivés, puis vérifie."
+    },
+    "it": {
+     "t": "I nostri primi antenati",
+     "g": "Scopri come gli esseri umani moderni comparvero in Africa e poi si diffusero nel mondo.",
+     "p": [
+      "Fossili e DNA mostrano che l'Homo sapiens comparve in Africa circa 300.000 anni fa.",
+      "Piccoli gruppi lasciarono poi l'Africa e, in decine di migliaia di anni, raggiunsero Asia, Europa e Australia.",
+      "Le Americhe furono raggiunte per ultime, probabilmente oltre 15.000 anni fa, partendo dall'Asia."
+     ],
+     "q": "Se potessi assistere a un momento di questo grande viaggio umano, quale sceglieresti?",
+     "c": "Trova la tua regione su una mappa e indovina quando arrivarono i primi esseri umani, poi verifica."
+    },
+    "pt": {
+     "t": "Os nossos primeiros antepassados",
+     "g": "Descobrir como os humanos modernos surgiram em África e depois se espalharam pelo planeta.",
+     "p": [
+      "Fósseis e ADN mostram que o Homo sapiens surgiu em África há cerca de 300 000 anos.",
+      "Pequenos grupos saíram depois de África e, em dezenas de milhares de anos, chegaram à Ásia, Europa e Austrália.",
+      "As Américas foram alcançadas por último, provavelmente há mais de 15 000 anos, a partir da Ásia."
+     ],
+     "q": "Se pudesses assistir a um momento desta grande viagem humana, qual escolherias?",
+     "c": "Procura a tua região num mapa e adivinha quando lá chegaram as primeiras pessoas; depois confirma."
+    },
+    "pt_BR": {
+     "t": "Nossos primeiros ancestrais",
+     "g": "Descobrir como os humanos modernos surgiram na África e depois se espalharam pelo planeta.",
+     "p": [
+      "Fósseis e DNA mostram que o Homo sapiens surgiu na África há cerca de 300 mil anos.",
+      "Pequenos grupos saíram depois da África e, em dezenas de milhares de anos, chegaram à Ásia, Europa e Austrália.",
+      "As Américas foram alcançadas por último, provavelmente há mais de 15 mil anos, a partir da Ásia."
+     ],
+     "q": "Se você pudesse assistir a um momento dessa grande jornada humana, qual escolheria?",
+     "c": "Procure sua região num mapa e adivinhe quando chegaram as primeiras pessoas; depois confira."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fire and stone tools",
+     "g": "See how controlling fire and shaping stone changed the daily life of early humans.",
+     "p": [
+      "The oldest known stone tools are over 3 million years old, made by striking one stone against another.",
+      "Controlled fire gave warmth, light and protection, and cooking made food easier to digest.",
+      "Around the fire, people gathered at night: a perfect place for sharing stories and skills."
+     ],
+     "q": "Which do you think changed human life more: fire or tools?",
+     "c": "Tonight, notice how many things in your home still depend on heat or cutting edges."
+    },
+    "de": {
+     "t": "Feuer und Steinwerkzeuge",
+     "g": "Sieh, wie die Beherrschung des Feuers und behauene Steine das Leben früher Menschen veränderten.",
+     "p": [
+      "Die ältesten bekannten Steinwerkzeuge sind über 3 Millionen Jahre alt, hergestellt durch Schlagen von Stein auf Stein.",
+      "Gezähmtes Feuer brachte Wärme, Licht und Schutz, und gekochtes Essen war leichter verdaulich.",
+      "Abends versammelte man sich ums Feuer: ein idealer Ort, um Geschichten und Wissen zu teilen."
+     ],
+     "q": "Was hat das Leben der Menschen deiner Meinung nach stärker verändert: Feuer oder Werkzeuge?",
+     "c": "Achte heute Abend darauf, wie viele Dinge bei dir zu Hause noch von Hitze oder Klingen abhängen."
+    },
+    "es": {
+     "t": "El fuego y la piedra",
+     "g": "Descubre cómo dominar el fuego y tallar piedra cambió la vida diaria de los primeros humanos.",
+     "p": [
+      "Las herramientas de piedra más antiguas conocidas tienen más de 3 millones de años y se hacían golpeando piedras.",
+      "El fuego controlado daba calor, luz y protección, y cocinar hacía la comida más fácil de digerir.",
+      "Por la noche la gente se reunía junto al fuego: el lugar perfecto para compartir historias y saberes."
+     ],
+     "q": "¿Qué crees que cambió más la vida humana: el fuego o las herramientas?",
+     "c": "Esta noche, fíjate en cuántas cosas de tu casa siguen dependiendo del calor o de un filo."
+    },
+    "fr": {
+     "t": "Le feu et la pierre",
+     "g": "Voir comment la maîtrise du feu et la taille de la pierre ont changé la vie des premiers humains.",
+     "p": [
+      "Les plus vieux outils de pierre connus ont plus de 3 millions d'années, obtenus en frappant une pierre sur une autre.",
+      "Le feu maîtrisé apportait chaleur, lumière et protection, et la cuisson rendait les aliments plus digestes.",
+      "Le soir, on se réunissait autour du feu : l'endroit idéal pour partager récits et savoir-faire."
+     ],
+     "q": "À ton avis, qu'est-ce qui a le plus changé la vie humaine : le feu ou les outils ?",
+     "c": "Ce soir, remarque combien d'objets chez toi dépendent encore de la chaleur ou d'un tranchant."
+    },
+    "it": {
+     "t": "Il fuoco e la pietra",
+     "g": "Scopri come il controllo del fuoco e la lavorazione della pietra cambiarono la vita dei primi umani.",
+     "p": [
+      "I più antichi strumenti di pietra conosciuti hanno oltre 3 milioni di anni, ottenuti battendo una pietra sull'altra.",
+      "Il fuoco controllato dava calore, luce e protezione, e la cottura rendeva il cibo più digeribile.",
+      "La sera ci si riuniva attorno al fuoco: il posto perfetto per condividere storie e abilità."
+     ],
+     "q": "Secondo te che cosa ha cambiato di più la vita umana: il fuoco o gli strumenti?",
+     "c": "Stasera nota quante cose in casa tua dipendono ancora dal calore o da una lama."
+    },
+    "pt": {
+     "t": "O fogo e a pedra",
+     "g": "Ver como dominar o fogo e talhar a pedra mudou o dia a dia dos primeiros humanos.",
+     "p": [
+      "As ferramentas de pedra mais antigas conhecidas têm mais de 3 milhões de anos, feitas batendo pedra contra pedra.",
+      "O fogo controlado dava calor, luz e proteção, e cozinhar tornava a comida mais fácil de digerir.",
+      "À noite, as pessoas juntavam-se à volta do fogo: o sítio perfeito para partilhar histórias e saberes."
+     ],
+     "q": "O que achas que mudou mais a vida humana: o fogo ou as ferramentas?",
+     "c": "Esta noite, repara em quantas coisas em tua casa ainda dependem do calor ou de um gume."
+    },
+    "pt_BR": {
+     "t": "O fogo e a pedra",
+     "g": "Ver como dominar o fogo e lascar a pedra mudou o dia a dia dos primeiros humanos.",
+     "p": [
+      "As ferramentas de pedra mais antigas conhecidas têm mais de 3 milhões de anos, feitas batendo pedra contra pedra.",
+      "O fogo controlado dava calor, luz e proteção, e cozinhar deixava a comida mais fácil de digerir.",
+      "À noite, as pessoas se reuniam em volta do fogo: o lugar perfeito para compartilhar histórias e saberes."
+     ],
+     "q": "Na sua opinião, o que mudou mais a vida humana: o fogo ou as ferramentas?",
+     "c": "Hoje à noite, repare em quantas coisas na sua casa ainda dependem de calor ou de um corte."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cave art",
+     "g": "Discover the oldest paintings made by humans and what they tell us about creativity.",
+     "p": [
+      "In Indonesia, cave paintings of animals are over 40,000 years old, among the oldest known art.",
+      "Chauvet in France has lions and horses about 36,000 years old; Lascaux's famous bulls are about 17,000.",
+      "Artists used charcoal and coloured earth, and even blew paint around their hands to leave handprints."
+     ],
+     "q": "If you left one picture on a cave wall for people 30,000 years from now, what would you paint?",
+     "c": "Draw an animal using only three colours and simple lines, the way cave artists did."
+    },
+    "de": {
+     "t": "Höhlenmalerei",
+     "g": "Entdecke die ältesten Bilder der Menschheit und was sie über Kreativität verraten.",
+     "p": [
+      "In Indonesien sind Höhlenbilder von Tieren über 40.000 Jahre alt, sie gehören zur ältesten bekannten Kunst.",
+      "Chauvet in Frankreich zeigt etwa 36.000 Jahre alte Löwen und Pferde; die Stiere von Lascaux sind rund 17.000.",
+      "Die Künstler nutzten Holzkohle und farbige Erde und sprühten sogar Farbe um ihre Hände für Handabdrücke."
+     ],
+     "q": "Welches Bild würdest du für Menschen in 30.000 Jahren an eine Höhlenwand malen?",
+     "c": "Zeichne ein Tier mit nur drei Farben und einfachen Linien, so wie die Höhlenkünstler."
+    },
+    "es": {
+     "t": "El arte rupestre",
+     "g": "Descubre las pinturas más antiguas hechas por humanos y lo que cuentan sobre la creatividad.",
+     "p": [
+      "En Indonesia hay pinturas de animales de más de 40.000 años, de las obras de arte más antiguas conocidas.",
+      "Chauvet, en Francia, tiene leones y caballos de unos 36.000 años; los toros de Lascaux tienen unos 17.000.",
+      "Usaban carbón y tierras de color, e incluso soplaban pintura alrededor de la mano para dejar su huella."
+     ],
+     "q": "Si dejaras un dibujo en una cueva para la gente de dentro de 30.000 años, ¿qué pintarías?",
+     "c": "Dibuja un animal con solo tres colores y líneas sencillas, como hacían los artistas de las cuevas."
+    },
+    "fr": {
+     "t": "L'art des cavernes",
+     "g": "Découvrir les plus anciennes peintures humaines et ce qu'elles disent de notre créativité.",
+     "p": [
+      "En Indonésie, des peintures d'animaux ont plus de 40 000 ans, parmi les plus anciennes œuvres connues.",
+      "Chauvet, en France, montre des lions et des chevaux d'environ 36 000 ans ; les taureaux de Lascaux en ont 17 000.",
+      "Les artistes utilisaient charbon et terres colorées, et soufflaient même la peinture autour de leurs mains."
+     ],
+     "q": "Si tu laissais une image sur une paroi pour les humains dans 30 000 ans, que peindrais-tu ?",
+     "c": "Dessine un animal avec seulement trois couleurs et des traits simples, comme les artistes des grottes."
+    },
+    "it": {
+     "t": "L'arte delle caverne",
+     "g": "Scopri le pitture più antiche create dall'uomo e che cosa raccontano della creatività.",
+     "p": [
+      "In Indonesia ci sono pitture di animali con oltre 40.000 anni, tra le opere d'arte più antiche conosciute.",
+      "Chauvet, in Francia, ha leoni e cavalli di circa 36.000 anni; i tori di Lascaux ne hanno circa 17.000.",
+      "Gli artisti usavano carbone e terre colorate, e soffiavano il colore intorno alla mano per lasciarne l'impronta."
+     ],
+     "q": "Se lasciassi un disegno su una parete per le persone tra 30.000 anni, che cosa dipingeresti?",
+     "c": "Disegna un animale usando solo tre colori e linee semplici, come facevano gli artisti delle grotte."
+    },
+    "pt": {
+     "t": "A arte rupestre",
+     "g": "Descobrir as pinturas mais antigas feitas por humanos e o que dizem sobre a criatividade.",
+     "p": [
+      "Na Indonésia há pinturas de animais com mais de 40 000 anos, das obras de arte mais antigas que se conhecem.",
+      "Chauvet, em França, tem leões e cavalos com cerca de 36 000 anos; os touros de Lascaux têm cerca de 17 000.",
+      "Usavam carvão e terras coloridas, e chegavam a soprar tinta à volta da mão para deixar a sua marca."
+     ],
+     "q": "Se deixasses um desenho numa gruta para as pessoas daqui a 30 000 anos, o que pintarias?",
+     "c": "Desenha um animal só com três cores e linhas simples, como faziam os artistas das grutas."
+    },
+    "pt_BR": {
+     "t": "Arte rupestre",
+     "g": "Descobrir as pinturas mais antigas feitas por humanos e o que elas dizem sobre a criatividade.",
+     "p": [
+      "Na Indonésia há pinturas de animais com mais de 40 mil anos, entre as obras de arte mais antigas conhecidas.",
+      "Chauvet, na França, tem leões e cavalos de cerca de 36 mil anos; os touros de Lascaux têm cerca de 17 mil.",
+      "Usavam carvão e terras coloridas, e até sopravam tinta em volta da mão para deixar sua marca."
+     ],
+     "q": "Se você deixasse um desenho numa caverna para as pessoas daqui a 30 mil anos, o que pintaria?",
+     "c": "Desenhe um animal usando só três cores e linhas simples, como faziam os artistas das cavernas."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hunter-gatherer life",
+     "g": "Explore how people lived for most of human history by moving with the seasons.",
+     "p": [
+      "For most of our history, people lived by gathering plants and hunting, moving with the seasons.",
+      "Groups were small and food was usually shared, so cooperation mattered a lot.",
+      "They knew their land deeply: which plants healed, when fruit ripened and where water could be found."
+     ],
+     "q": "Which skill of a hunter-gatherer would you most like to have?",
+     "c": "Name five wild plants, berries or mushrooms from your region; can you say when each one is in season?"
+    },
+    "de": {
+     "t": "Leben als Jäger und Sammler",
+     "g": "Erkunde, wie Menschen den Großteil der Geschichte mit den Jahreszeiten unterwegs waren.",
+     "p": [
+      "Die längste Zeit lebten Menschen vom Sammeln von Pflanzen und von der Jagd und zogen mit den Jahreszeiten.",
+      "Die Gruppen waren klein, Nahrung wurde meist geteilt, deshalb war Zusammenarbeit sehr wichtig.",
+      "Sie kannten ihr Land genau: welche Pflanzen heilten, wann Früchte reiften und wo es Wasser gab."
+     ],
+     "q": "Welche Fähigkeit eines Jägers und Sammlers hättest du am liebsten?",
+     "c": "Nenne fünf wilde Pflanzen, Beeren oder Pilze deiner Region. Weißt du, wann sie jeweils Saison haben?"
+    },
+    "es": {
+     "t": "La vida de cazadores y recolectores",
+     "g": "Explora cómo vivió la gente durante casi toda la historia, moviéndose con las estaciones.",
+     "p": [
+      "Durante la mayor parte de nuestra historia se vivió recolectando plantas y cazando, al ritmo de las estaciones.",
+      "Los grupos eran pequeños y la comida solía compartirse, así que cooperar era fundamental.",
+      "Conocían su tierra a fondo: qué plantas curaban, cuándo maduraba la fruta y dónde había agua."
+     ],
+     "q": "¿Qué habilidad de un cazador-recolector te gustaría tener?",
+     "c": "Nombra cinco plantas, bayas o setas silvestres de tu región. ¿Sabes en qué época se encuentra cada una?"
+    },
+    "fr": {
+     "t": "La vie des chasseurs-cueilleurs",
+     "g": "Découvrir comment les humains ont vécu la plupart de leur histoire, au rythme des saisons.",
+     "p": [
+      "Pendant l'essentiel de notre histoire, on vivait de cueillette et de chasse, en se déplaçant selon les saisons.",
+      "Les groupes étaient petits et la nourriture souvent partagée : la coopération comptait énormément.",
+      "Ils connaissaient leur territoire à fond : plantes qui soignent, saison des fruits, points d'eau."
+     ],
+     "q": "Quel savoir-faire de chasseur-cueilleur aimerais-tu le plus avoir ?",
+     "c": "Cite cinq plantes, baies ou champignons sauvages de ta région. Sais-tu à quelle saison on les trouve ?"
+    },
+    "it": {
+     "t": "La vita dei cacciatori-raccoglitori",
+     "g": "Esplora come si è vissuto per quasi tutta la storia umana, spostandosi con le stagioni.",
+     "p": [
+      "Per gran parte della nostra storia si viveva raccogliendo piante e cacciando, spostandosi con le stagioni.",
+      "I gruppi erano piccoli e il cibo di solito si condivideva, quindi la cooperazione contava molto.",
+      "Conoscevano a fondo il territorio: quali piante curavano, quando maturava la frutta e dove trovare acqua."
+     ],
+     "q": "Quale abilità di un cacciatore-raccoglitore ti piacerebbe avere di più?",
+     "c": "Nomina cinque piante, bacche o funghi selvatici della tua regione. Sai in che stagione si trovano?"
+    },
+    "pt": {
+     "t": "A vida dos caçadores-recoletores",
+     "g": "Explorar como as pessoas viveram durante quase toda a história, ao ritmo das estações.",
+     "p": [
+      "Durante a maior parte da nossa história vivia-se da recolha de plantas e da caça, ao ritmo das estações.",
+      "Os grupos eram pequenos e a comida era geralmente partilhada, por isso cooperar era essencial.",
+      "Conheciam a terra a fundo: que plantas curavam, quando a fruta amadurecia e onde havia água."
+     ],
+     "q": "Que capacidade de um caçador-recoletor gostarias mais de ter?",
+     "c": "Diz cinco plantas, bagas ou cogumelos silvestres da tua região. Sabes em que época aparece cada um?"
+    },
+    "pt_BR": {
+     "t": "A vida dos caçadores-coletores",
+     "g": "Explorar como as pessoas viveram durante quase toda a história, no ritmo das estações.",
+     "p": [
+      "Durante a maior parte da nossa história, vivia-se da coleta de plantas e da caça, no ritmo das estações.",
+      "Os grupos eram pequenos e a comida costumava ser dividida, então cooperar era essencial.",
+      "Conheciam a terra a fundo: quais plantas curavam, quando as frutas amadureciam e onde havia água."
+     ],
+     "q": "Qual habilidade de um caçador-coletor você mais gostaria de ter?",
+     "c": "Cite cinco plantas, frutas ou cogumelos silvestres da sua região. Sabe em que época aparece cada um?"
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first farmers",
+     "g": "Learn how farming began and why it was one of the biggest changes in human history.",
+     "p": [
+      "Farming began about 12,000 years ago in the Fertile Crescent, with wheat, barley, lentils and peas.",
+      "It also started separately in other places: rice in China, maize in Mexico, potatoes in the Andes.",
+      "Farming meant more food from less land, so people could settle down and populations grew."
+     ],
+     "q": "Which crop do you think has shaped your country's food the most?",
+     "c": "At your next meal, find one ingredient and look up where it was first grown."
+    },
+    "de": {
+     "t": "Die ersten Bauern",
+     "g": "Erfahre, wie die Landwirtschaft begann und warum sie zu den größten Umbrüchen zählt.",
+     "p": [
+      "Ackerbau begann vor etwa 12.000 Jahren im Fruchtbaren Halbmond, mit Weizen, Gerste, Linsen und Erbsen.",
+      "Er entstand auch unabhängig anderswo: Reis in China, Mais in Mexiko, Kartoffeln in den Anden.",
+      "Landwirtschaft brachte mehr Nahrung auf weniger Fläche, Menschen wurden sesshaft und die Bevölkerung wuchs."
+     ],
+     "q": "Welche Pflanze hat die Küche deines Landes deiner Meinung nach am meisten geprägt?",
+     "c": "Nimm bei deiner nächsten Mahlzeit eine Zutat und finde heraus, wo sie zuerst angebaut wurde."
+    },
+    "es": {
+     "t": "Los primeros agricultores",
+     "g": "Aprende cómo empezó la agricultura y por qué fue uno de los grandes cambios de la historia.",
+     "p": [
+      "La agricultura nació hace unos 12.000 años en el Creciente Fértil, con trigo, cebada, lentejas y guisantes.",
+      "También surgió por separado en otros lugares: arroz en China, maíz en México, patatas en los Andes.",
+      "Cultivar daba más comida con menos tierra, así que la gente se asentó y la población creció."
+     ],
+     "q": "¿Qué cultivo crees que ha marcado más la comida de tu país?",
+     "c": "En tu próxima comida, elige un ingrediente y averigua dónde se cultivó por primera vez."
+    },
+    "fr": {
+     "t": "Les premiers agriculteurs",
+     "g": "Comprendre comment l'agriculture est née et pourquoi ce fut un immense changement.",
+     "p": [
+      "L'agriculture est née il y a environ 12 000 ans dans le Croissant fertile, avec blé, orge, lentilles et pois.",
+      "Elle est aussi apparue ailleurs de façon indépendante : riz en Chine, maïs au Mexique, pomme de terre dans les Andes.",
+      "Cultiver donnait plus de nourriture sur moins de terre : les gens se sont fixés et la population a augmenté."
+     ],
+     "q": "Selon toi, quelle plante a le plus marqué la cuisine de ton pays ?",
+     "c": "À ton prochain repas, choisis un ingrédient et cherche où il a été cultivé pour la première fois."
+    },
+    "it": {
+     "t": "I primi agricoltori",
+     "g": "Scopri come nacque l'agricoltura e perché fu uno dei più grandi cambiamenti della storia.",
+     "p": [
+      "L'agricoltura nacque circa 12.000 anni fa nella Mezzaluna Fertile, con grano, orzo, lenticchie e piselli.",
+      "Nacque anche in modo indipendente altrove: riso in Cina, mais in Messico, patate nelle Ande.",
+      "Coltivare dava più cibo con meno terra, così le persone si stabilirono e la popolazione crebbe."
+     ],
+     "q": "Quale coltura secondo te ha segnato di più la cucina del tuo paese?",
+     "c": "Al prossimo pasto scegli un ingrediente e scopri dove è stato coltivato per la prima volta."
+    },
+    "pt": {
+     "t": "Os primeiros agricultores",
+     "g": "Aprender como começou a agricultura e porque foi uma das maiores mudanças da história.",
+     "p": [
+      "A agricultura começou há cerca de 12 000 anos no Crescente Fértil, com trigo, cevada, lentilhas e ervilhas.",
+      "Também surgiu de forma independente noutros sítios: arroz na China, milho no México, batata nos Andes.",
+      "Cultivar dava mais comida com menos terra, por isso as pessoas fixaram-se e a população cresceu."
+     ],
+     "q": "Que cultura agrícola achas que mais marcou a comida do teu país?",
+     "c": "Na tua próxima refeição, escolhe um ingrediente e descobre onde foi cultivado pela primeira vez."
+    },
+    "pt_BR": {
+     "t": "Os primeiros agricultores",
+     "g": "Aprender como a agricultura começou e por que foi uma das maiores mudanças da história.",
+     "p": [
+      "A agricultura começou há cerca de 12 mil anos no Crescente Fértil, com trigo, cevada, lentilha e ervilha.",
+      "Ela também surgiu de forma independente em outros lugares: arroz na China, milho no México, batata nos Andes.",
+      "Plantar dava mais comida com menos terra, então as pessoas se fixaram e a população cresceu."
+     ],
+     "q": "Qual cultivo você acha que mais marcou a comida do seu país?",
+     "c": "Na sua próxima refeição, escolha um ingrediente e descubra onde ele foi cultivado pela primeira vez."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Domesticating animals",
+     "g": "Discover how dogs, sheep, cattle and horses became partners of human societies.",
+     "p": [
+      "Dogs came first, descended from wolves and living with humans well over 15,000 years ago.",
+      "Sheep, goats and cattle were tamed in the Near East, giving milk, wool, leather and pulling power.",
+      "Horses, tamed on the steppes of Central Asia around 5,500 years ago, changed travel and trade."
+     ],
+     "q": "Which domesticated animal do you think has helped humans the most?",
+     "c": "Pick an animal you see often and find out where and roughly when it was first domesticated."
+    },
+    "de": {
+     "t": "Haustiere zähmen",
+     "g": "Entdecke, wie Hunde, Schafe, Rinder und Pferde zu Partnern des Menschen wurden.",
+     "p": [
+      "Der Hund kam zuerst: Er stammt vom Wolf ab und lebte schon vor weit über 15.000 Jahren mit Menschen.",
+      "Schafe, Ziegen und Rinder wurden im Nahen Osten gezähmt und lieferten Milch, Wolle, Leder und Zugkraft.",
+      "Pferde, vor etwa 5.500 Jahren in den Steppen Zentralasiens gezähmt, veränderten Reisen und Handel."
+     ],
+     "q": "Welches Haustier hat den Menschen deiner Meinung nach am meisten geholfen?",
+     "c": "Wähl ein Tier, das du oft siehst, und finde heraus, wo und wann es zuerst domestiziert wurde."
+    },
+    "es": {
+     "t": "La domesticación de animales",
+     "g": "Descubre cómo perros, ovejas, vacas y caballos se convirtieron en compañeros de los humanos.",
+     "p": [
+      "El perro fue el primero: desciende del lobo y convivía con humanos hace bastante más de 15.000 años.",
+      "Ovejas, cabras y vacas se domesticaron en Oriente Próximo y dieron leche, lana, cuero y fuerza de tiro.",
+      "El caballo, domesticado en las estepas de Asia central hace unos 5.500 años, cambió viajes y comercio."
+     ],
+     "q": "¿Qué animal domesticado crees que más ha ayudado a los humanos?",
+     "c": "Elige un animal que veas a menudo y averigua dónde y cuándo se domesticó por primera vez."
+    },
+    "fr": {
+     "t": "La domestication des animaux",
+     "g": "Découvrir comment chiens, moutons, bovins et chevaux sont devenus les partenaires des humains.",
+     "p": [
+      "Le chien fut le premier : descendant du loup, il vivait avec les humains il y a bien plus de 15 000 ans.",
+      "Moutons, chèvres et bovins ont été domestiqués au Proche-Orient : lait, laine, cuir et force de traction.",
+      "Le cheval, domestiqué dans les steppes d'Asie centrale il y a environ 5 500 ans, a changé voyages et commerce."
+     ],
+     "q": "Selon toi, quel animal domestique a le plus aidé les humains ?",
+     "c": "Choisis un animal que tu vois souvent et cherche où et quand il a été domestiqué pour la première fois."
+    },
+    "it": {
+     "t": "L'addomesticamento degli animali",
+     "g": "Scopri come cani, pecore, bovini e cavalli diventarono compagni delle società umane.",
+     "p": [
+      "Il cane fu il primo: discende dal lupo e viveva con gli esseri umani già ben oltre 15.000 anni fa.",
+      "Pecore, capre e bovini furono addomesticati nel Vicino Oriente: latte, lana, cuoio e forza da traino.",
+      "Il cavallo, addomesticato nelle steppe dell'Asia centrale circa 5.500 anni fa, cambiò viaggi e commerci."
+     ],
+     "q": "Quale animale domestico secondo te ha aiutato di più gli esseri umani?",
+     "c": "Scegli un animale che vedi spesso e scopri dove e quando fu addomesticato per la prima volta."
+    },
+    "pt": {
+     "t": "A domesticação dos animais",
+     "g": "Descobrir como cães, ovelhas, bovinos e cavalos se tornaram parceiros das sociedades humanas.",
+     "p": [
+      "O cão foi o primeiro: descende do lobo e vivia com humanos há bem mais de 15 000 anos.",
+      "Ovelhas, cabras e bovinos foram domesticados no Médio Oriente e deram leite, lã, couro e força de tração.",
+      "O cavalo, domesticado nas estepes da Ásia Central há cerca de 5500 anos, mudou as viagens e o comércio."
+     ],
+     "q": "Que animal domesticado achas que mais ajudou os humanos?",
+     "c": "Escolhe um animal que vês muitas vezes e descobre onde e quando foi domesticado pela primeira vez."
+    },
+    "pt_BR": {
+     "t": "A domesticação dos animais",
+     "g": "Descobrir como cães, ovelhas, bois e cavalos viraram parceiros das sociedades humanas.",
+     "p": [
+      "O cão foi o primeiro: descende do lobo e já vivia com humanos há bem mais de 15 mil anos.",
+      "Ovelhas, cabras e bois foram domesticados no Oriente Médio e deram leite, lã, couro e força de tração.",
+      "O cavalo, domesticado nas estepes da Ásia Central há cerca de 5.500 anos, mudou as viagens e o comércio."
+     ],
+     "q": "Qual animal domesticado você acha que mais ajudou os humanos?",
+     "c": "Escolha um animal que você vê com frequência e descubra onde e quando ele foi domesticado."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First villages",
+     "g": "Visit Çatalhöyük and Jericho, two of the earliest places where people settled together.",
+     "p": [
+      "Jericho, near the Jordan River, was settled over 10,000 years ago and had a stone wall and tower.",
+      "Çatalhöyük in Turkey, about 9,000 years old, had houses packed so close there were no streets.",
+      "People walked across the rooftops and entered their homes through holes in the roof using ladders."
+     ],
+     "q": "Would you enjoy living in a village where you walk on rooftops instead of streets?",
+     "c": "Sketch a simple plan of your home and compare it with a one-room house at Çatalhöyük."
+    },
+    "de": {
+     "t": "Die ersten Dörfer",
+     "g": "Besuche Çatalhöyük und Jericho, zwei der frühesten Orte, an denen Menschen sesshaft wurden.",
+     "p": [
+      "Jericho am Jordan war vor über 10.000 Jahren besiedelt und hatte eine Steinmauer und einen Turm.",
+      "Im türkischen Çatalhöyük, etwa 9.000 Jahre alt, standen die Häuser so dicht, dass es keine Straßen gab.",
+      "Man lief über die Dächer und stieg durch Öffnungen im Dach über Leitern in die Häuser."
+     ],
+     "q": "Würde es dir gefallen, in einem Dorf zu leben, in dem man über Dächer statt über Straßen geht?",
+     "c": "Skizziere den Grundriss deiner Wohnung und vergleiche ihn mit einem Einraumhaus in Çatalhöyük."
+    },
+    "es": {
+     "t": "Las primeras aldeas",
+     "g": "Visita Çatalhöyük y Jericó, dos de los primeros lugares donde la gente vivió en comunidad.",
+     "p": [
+      "Jericó, junto al río Jordán, estaba habitada hace más de 10.000 años y tenía una muralla y una torre de piedra.",
+      "Çatalhöyük, en Turquía, de unos 9.000 años, tenía casas tan juntas que no había calles.",
+      "La gente caminaba por los tejados y entraba en casa por un agujero del techo con una escalera."
+     ],
+     "q": "¿Te gustaría vivir en una aldea donde se camina por los tejados en lugar de por las calles?",
+     "c": "Dibuja un plano sencillo de tu casa y compáralo con una casa de una sola sala de Çatalhöyük."
+    },
+    "fr": {
+     "t": "Les premiers villages",
+     "g": "Visiter Çatalhöyük et Jéricho, parmi les premiers lieux où les humains se sont installés ensemble.",
+     "p": [
+      "Jéricho, près du Jourdain, était habitée il y a plus de 10 000 ans et possédait un mur et une tour de pierre.",
+      "À Çatalhöyük, en Turquie, il y a environ 9 000 ans, les maisons étaient si serrées qu'il n'y avait pas de rues.",
+      "On marchait sur les toits et on entrait chez soi par une ouverture dans le toit, à l'aide d'une échelle."
+     ],
+     "q": "Aimerais-tu vivre dans un village où l'on circule sur les toits plutôt que dans les rues ?",
+     "c": "Dessine un plan simple de ton logement et compare-le à une maison d'une pièce de Çatalhöyük."
+    },
+    "it": {
+     "t": "I primi villaggi",
+     "g": "Visita Çatalhöyük e Gerico, tra i primi luoghi in cui le persone vissero insieme stabilmente.",
+     "p": [
+      "Gerico, vicino al fiume Giordano, era abitata oltre 10.000 anni fa e aveva un muro e una torre di pietra.",
+      "A Çatalhöyük, in Turchia, circa 9.000 anni fa, le case erano così vicine che non c'erano strade.",
+      "Si camminava sui tetti e si entrava in casa da un'apertura nel tetto usando una scala."
+     ],
+     "q": "Ti piacerebbe vivere in un villaggio dove si cammina sui tetti invece che per strada?",
+     "c": "Disegna una pianta semplice di casa tua e confrontala con una casa a stanza unica di Çatalhöyük."
+    },
+    "pt": {
+     "t": "As primeiras aldeias",
+     "g": "Visitar Çatalhöyük e Jericó, dois dos primeiros lugares onde as pessoas viveram em comunidade.",
+     "p": [
+      "Jericó, junto ao rio Jordão, era habitada há mais de 10 000 anos e tinha uma muralha e uma torre de pedra.",
+      "Em Çatalhöyük, na Turquia, com cerca de 9000 anos, as casas eram tão juntas que não havia ruas.",
+      "As pessoas andavam pelos telhados e entravam em casa por uma abertura no teto, com uma escada."
+     ],
+     "q": "Gostarias de viver numa aldeia onde se anda pelos telhados em vez de pelas ruas?",
+     "c": "Desenha uma planta simples da tua casa e compara-a com uma casa de uma só divisão de Çatalhöyük."
+    },
+    "pt_BR": {
+     "t": "As primeiras aldeias",
+     "g": "Visitar Çatalhöyük e Jericó, dois dos primeiros lugares onde as pessoas viveram em comunidade.",
+     "p": [
+      "Jericó, perto do rio Jordão, era habitada há mais de 10 mil anos e tinha uma muralha e uma torre de pedra.",
+      "Em Çatalhöyük, na Turquia, com cerca de 9 mil anos, as casas eram tão juntas que não havia ruas.",
+      "As pessoas andavam pelos telhados e entravam em casa por uma abertura no teto, usando uma escada."
+     ],
+     "q": "Você gostaria de morar numa aldeia onde se anda pelos telhados em vez das ruas?",
+     "c": "Desenhe uma planta simples da sua casa e compare com uma casa de um só cômodo de Çatalhöyük."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stonehenge and megaliths",
+     "g": "Explore monuments built with giant stones and the ideas about why people built them.",
+     "p": [
+      "Stonehenge in England was built in stages from about 5,000 years ago, some stones weighing over 20 tonnes.",
+      "Its smaller bluestones came from Wales, around 200 km away, a huge effort without wheels or metal tools.",
+      "It lines up with the sunrise at midsummer and the sunset at midwinter, so it was likely a seasonal gathering place."
+     ],
+     "q": "How do you think people moved such huge stones without machines?",
+     "c": "Watch where the sun sets this evening and mark the spot; check again in two weeks to see it move."
+    },
+    "de": {
+     "t": "Stonehenge und Megalithen",
+     "g": "Erkunde Bauwerke aus riesigen Steinen und die Ideen, warum Menschen sie errichteten.",
+     "p": [
+      "Stonehenge in England entstand ab etwa 5.000 Jahren in Etappen, manche Steine wiegen über 20 Tonnen.",
+      "Die kleineren Blausteine stammen aus Wales, rund 200 km entfernt, eine riesige Leistung ohne Räder oder Metall.",
+      "Es ist auf den Sonnenaufgang zur Sommer- und den Untergang zur Wintersonnenwende ausgerichtet, wohl ein Festort."
+     ],
+     "q": "Wie haben Menschen deiner Meinung nach so riesige Steine ohne Maschinen bewegt?",
+     "c": "Beobachte heute, wo die Sonne untergeht, und merk dir die Stelle; schau in zwei Wochen wieder."
+    },
+    "es": {
+     "t": "Stonehenge y los megalitos",
+     "g": "Explora monumentos hechos con piedras gigantes y las ideas sobre por qué se construyeron.",
+     "p": [
+      "Stonehenge, en Inglaterra, se levantó por fases desde hace unos 5.000 años; algunas piedras superan las 20 toneladas.",
+      "Sus piedras azules vinieron de Gales, a unos 200 km, un esfuerzo enorme sin ruedas ni metal.",
+      "Se alinea con el amanecer del solsticio de verano y el ocaso del de invierno: quizá era un lugar de reunión."
+     ],
+     "q": "¿Cómo crees que movían piedras tan enormes sin máquinas?",
+     "c": "Mira hoy por dónde se pone el sol y marca el punto; vuelve a mirarlo en dos semanas para ver el cambio."
+    },
+    "fr": {
+     "t": "Stonehenge et les mégalithes",
+     "g": "Explorer des monuments de pierres géantes et les hypothèses sur leur raison d'être.",
+     "p": [
+      "Stonehenge, en Angleterre, a été bâti par étapes dès il y a environ 5 000 ans ; certaines pierres dépassent 20 tonnes.",
+      "Ses pierres bleues viennent du pays de Galles, à environ 200 km : un effort immense sans roue ni métal.",
+      "Il s'aligne sur le lever du soleil au solstice d'été et son coucher en hiver : sans doute un lieu de rassemblement."
+     ],
+     "q": "Comment penses-tu qu'on déplaçait des pierres aussi énormes sans machines ?",
+     "c": "Observe ce soir où le soleil se couche et note le repère ; regarde à nouveau dans deux semaines."
+    },
+    "it": {
+     "t": "Stonehenge e i megaliti",
+     "g": "Esplora i monumenti costruiti con pietre giganti e le ipotesi sul perché furono eretti.",
+     "p": [
+      "Stonehenge, in Inghilterra, fu costruito a fasi da circa 5.000 anni fa; alcune pietre superano le 20 tonnellate.",
+      "Le pietre blu più piccole vennero dal Galles, a circa 200 km: uno sforzo enorme senza ruote né metallo.",
+      "È allineato con l'alba del solstizio d'estate e il tramonto d'inverno: forse un luogo di raduno stagionale."
+     ],
+     "q": "Come pensi che spostassero pietre così enormi senza macchine?",
+     "c": "Guarda stasera dove tramonta il sole e segna il punto; ricontrolla tra due settimane per vederlo spostarsi."
+    },
+    "pt": {
+     "t": "Stonehenge e os megálitos",
+     "g": "Explorar monumentos feitos de pedras gigantes e as ideias sobre porque foram construídos.",
+     "p": [
+      "Stonehenge, em Inglaterra, foi erguido por fases há cerca de 5000 anos; algumas pedras pesam mais de 20 toneladas.",
+      "As pedras azuis mais pequenas vieram do País de Gales, a uns 200 km, um esforço enorme sem rodas nem metal.",
+      "Alinha-se com o nascer do sol no solstício de verão e o pôr do sol no de inverno: talvez um local de encontro."
+     ],
+     "q": "Como achas que se moviam pedras tão enormes sem máquinas?",
+     "c": "Repara hoje onde o sol se põe e marca o ponto; volta a ver daqui a duas semanas para notar a mudança."
+    },
+    "pt_BR": {
+     "t": "Stonehenge e os megálitos",
+     "g": "Explorar monumentos feitos de pedras gigantes e as ideias sobre por que foram construídos.",
+     "p": [
+      "Stonehenge, na Inglaterra, foi erguido em fases há cerca de 5 mil anos; algumas pedras pesam mais de 20 toneladas.",
+      "As pedras azuis menores vieram do País de Gales, a uns 200 km, um esforço enorme sem rodas nem metal.",
+      "Ele se alinha ao nascer do sol no solstício de verão e ao pôr do sol no de inverno: talvez um local de encontro."
+     ],
+     "q": "Como você acha que moviam pedras tão enormes sem máquinas?",
+     "c": "Observe hoje onde o sol se põe e marque o ponto; olhe de novo em duas semanas para ver a mudança."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Göbekli Tepe",
+     "g": "Discover a stone site in Turkey so old it changed what we thought about early humans.",
+     "p": [
+      "Göbekli Tepe has huge carved stone pillars set up more than 11,000 years ago, before farming took hold there.",
+      "The pillars show foxes, boars, snakes and birds carved in detail, some over 5 metres tall.",
+      "It suggests that hunter-gatherers could organise big group projects, maybe even before villages."
+     ],
+     "q": "Why do you think people would gather to build something so big before they had farms?",
+     "c": "Draw a T-shaped pillar and decorate it with three animals that matter to you."
+    },
+    "de": {
+     "t": "Göbekli Tepe",
+     "g": "Entdecke eine Steinanlage in der Türkei, so alt, dass sie unser Bild der frühen Menschen veränderte.",
+     "p": [
+      "In Göbekli Tepe wurden vor über 11.000 Jahren riesige verzierte Steinpfeiler aufgestellt, noch vor dem Ackerbau dort.",
+      "Die Pfeiler zeigen detailreich Füchse, Wildschweine, Schlangen und Vögel, manche über 5 Meter hoch.",
+      "Sie zeigen, dass Jäger und Sammler große Gemeinschaftsprojekte planen konnten, vielleicht schon vor Dörfern."
+     ],
+     "q": "Warum kamen Menschen wohl zusammen, um so etwas Großes zu bauen, noch bevor es Felder gab?",
+     "c": "Zeichne einen T-förmigen Pfeiler und verziere ihn mit drei Tieren, die dir wichtig sind."
+    },
+    "es": {
+     "t": "Göbekli Tepe",
+     "g": "Descubre un lugar de piedra en Turquía tan antiguo que cambió lo que creíamos de los primeros humanos.",
+     "p": [
+      "Göbekli Tepe tiene enormes pilares de piedra tallada levantados hace más de 11.000 años, antes de la agricultura allí.",
+      "Los pilares muestran zorros, jabalíes, serpientes y aves tallados con detalle; algunos superan los 5 metros.",
+      "Sugiere que los cazadores-recolectores podían organizar grandes proyectos comunes, quizá antes que las aldeas."
+     ],
+     "q": "¿Por qué crees que la gente se reunía para construir algo tan grande antes de tener campos?",
+     "c": "Dibuja un pilar en forma de T y decóralo con tres animales que sean importantes para ti."
+    },
+    "fr": {
+     "t": "Göbekli Tepe",
+     "g": "Découvrir un site de pierre en Turquie si ancien qu'il a changé notre vision des premiers humains.",
+     "p": [
+      "À Göbekli Tepe, d'énormes piliers sculptés ont été dressés il y a plus de 11 000 ans, avant l'agriculture sur place.",
+      "Les piliers montrent renards, sangliers, serpents et oiseaux sculptés avec soin, certains de plus de 5 mètres.",
+      "Il montre que des chasseurs-cueilleurs savaient mener de grands projets collectifs, peut-être avant les villages."
+     ],
+     "q": "Pourquoi, selon toi, se réunissait-on pour bâtir quelque chose d'aussi grand avant d'avoir des champs ?",
+     "c": "Dessine un pilier en forme de T et décore-le avec trois animaux qui comptent pour toi."
+    },
+    "it": {
+     "t": "Göbekli Tepe",
+     "g": "Scopri un sito di pietra in Turchia così antico da cambiare ciò che pensavamo dei primi umani.",
+     "p": [
+      "A Göbekli Tepe enormi pilastri di pietra scolpita furono eretti oltre 11.000 anni fa, prima dell'agricoltura sul posto.",
+      "I pilastri mostrano volpi, cinghiali, serpenti e uccelli scolpiti nel dettaglio, alcuni alti oltre 5 metri.",
+      "Suggerisce che i cacciatori-raccoglitori sapevano organizzare grandi progetti comuni, forse prima dei villaggi."
+     ],
+     "q": "Perché secondo te le persone si riunivano per costruire qualcosa di così grande prima di avere campi?",
+     "c": "Disegna un pilastro a forma di T e decoralo con tre animali che contano per te."
+    },
+    "pt": {
+     "t": "Göbekli Tepe",
+     "g": "Descobrir um local de pedra na Turquia tão antigo que mudou o que pensávamos dos primeiros humanos.",
+     "p": [
+      "Em Göbekli Tepe ergueram-se enormes pilares de pedra esculpida há mais de 11 000 anos, antes da agricultura no local.",
+      "Os pilares mostram raposas, javalis, serpentes e aves esculpidos ao pormenor, alguns com mais de 5 metros.",
+      "Sugere que caçadores-recoletores conseguiam organizar grandes projetos comuns, talvez antes das aldeias."
+     ],
+     "q": "Porque achas que as pessoas se juntavam para construir algo tão grande antes de terem campos?",
+     "c": "Desenha um pilar em forma de T e decora-o com três animais que sejam importantes para ti."
+    },
+    "pt_BR": {
+     "t": "Göbekli Tepe",
+     "g": "Descobrir um sítio de pedra na Turquia tão antigo que mudou o que pensávamos dos primeiros humanos.",
+     "p": [
+      "Em Göbekli Tepe foram erguidos enormes pilares de pedra esculpida há mais de 11 mil anos, antes da agricultura no local.",
+      "Os pilares mostram raposas, javalis, serpentes e aves esculpidos em detalhe, alguns com mais de 5 metros.",
+      "Isso sugere que caçadores-coletores conseguiam organizar grandes projetos coletivos, talvez antes das aldeias."
+     ],
+     "q": "Por que você acha que as pessoas se reuniam para construir algo tão grande antes de ter plantações?",
+     "c": "Desenhe um pilar em forma de T e decore com três animais que sejam importantes para você."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pottery and weaving",
+     "g": "See how two everyday crafts helped people store food and make clothing.",
+     "p": [
+      "Fired clay pots let people cook, store grain and carry water, keeping food safe from damp and pests.",
+      "Some of the oldest pottery, from China and Japan, is around 20,000 and 16,000 years old.",
+      "Weaving turned plant fibres like flax, and later wool and cotton, into cloth for clothes and baskets."
+     ],
+     "q": "Do you have a favourite handmade object, like a mug, bowl or scarf?",
+     "c": "Look at a piece of fabric closely and try to spot the over-and-under pattern of the threads."
+    },
+    "de": {
+     "t": "Töpfern und Weben",
+     "g": "Sieh, wie zwei Alltagshandwerke halfen, Nahrung aufzubewahren und Kleidung herzustellen.",
+     "p": [
+      "Gebrannte Tontöpfe dienten zum Kochen, Lagern von Getreide und Wassertragen, geschützt vor Feuchtigkeit und Schädlingen.",
+      "Zu der ältesten Keramik gehören Funde aus China und Japan, rund 20.000 und 16.000 Jahre alt.",
+      "Weben verwandelte Pflanzenfasern wie Flachs, später Wolle und Baumwolle, in Stoff für Kleidung und Körbe."
+     ],
+     "q": "Hast du einen handgemachten Lieblingsgegenstand, etwa eine Tasse, Schale oder einen Schal?",
+     "c": "Betrachte ein Stück Stoff genau und versuche, das Über-und-unter-Muster der Fäden zu erkennen."
+    },
+    "es": {
+     "t": "Cerámica y tejido",
+     "g": "Descubre cómo dos oficios cotidianos ayudaron a guardar comida y hacer ropa.",
+     "p": [
+      "Las vasijas de barro cocido servían para cocinar, guardar grano y llevar agua, a salvo de humedad y plagas.",
+      "Parte de la cerámica más antigua, de China y Japón, tiene unos 20.000 y 16.000 años.",
+      "Tejer convertía fibras vegetales como el lino, y luego la lana y el algodón, en tela para ropa y cestos."
+     ],
+     "q": "¿Tienes algún objeto hecho a mano favorito, como una taza, un cuenco o una bufanda?",
+     "c": "Mira de cerca un trozo de tela e intenta ver el patrón de hilos que pasan por encima y por debajo."
+    },
+    "fr": {
+     "t": "Poterie et tissage",
+     "g": "Voir comment deux artisanats du quotidien ont permis de conserver la nourriture et de s'habiller.",
+     "p": [
+      "Les pots en argile cuite servaient à cuire, stocker le grain et porter l'eau, à l'abri de l'humidité et des nuisibles.",
+      "Parmi les plus anciennes poteries, celles de Chine et du Japon ont environ 20 000 et 16 000 ans.",
+      "Le tissage transformait des fibres comme le lin, puis la laine et le coton, en étoffe pour vêtements et paniers."
+     ],
+     "q": "As-tu un objet fait main préféré, comme une tasse, un bol ou une écharpe ?",
+     "c": "Observe un morceau de tissu de près et essaie de repérer le motif dessus-dessous des fils."
+    },
+    "it": {
+     "t": "Ceramica e tessitura",
+     "g": "Scopri come due mestieri quotidiani aiutarono a conservare il cibo e a fare vestiti.",
+     "p": [
+      "I vasi di argilla cotta servivano a cucinare, conservare il grano e trasportare acqua, al riparo da umidità e parassiti.",
+      "Tra le ceramiche più antiche ci sono quelle di Cina e Giappone, di circa 20.000 e 16.000 anni.",
+      "La tessitura trasformava fibre come il lino, poi lana e cotone, in stoffa per vestiti e cesti."
+     ],
+     "q": "Hai un oggetto fatto a mano preferito, come una tazza, una ciotola o una sciarpa?",
+     "c": "Osserva da vicino un pezzo di stoffa e prova a riconoscere l'intreccio sopra-sotto dei fili."
+    },
+    "pt": {
+     "t": "Olaria e tecelagem",
+     "g": "Ver como dois ofícios do dia a dia ajudaram a guardar comida e a fazer roupa.",
+     "p": [
+      "Os potes de barro cozido serviam para cozinhar, guardar cereais e transportar água, a salvo da humidade e das pragas.",
+      "Alguma da cerâmica mais antiga, da China e do Japão, tem cerca de 20 000 e 16 000 anos.",
+      "Tecer transformava fibras como o linho, e depois a lã e o algodão, em pano para roupa e cestos."
+     ],
+     "q": "Tens algum objeto feito à mão preferido, como uma caneca, uma tigela ou um cachecol?",
+     "c": "Observa de perto um pedaço de tecido e tenta ver o padrão dos fios que passam por cima e por baixo."
+    },
+    "pt_BR": {
+     "t": "Cerâmica e tecelagem",
+     "g": "Ver como dois ofícios do dia a dia ajudaram a guardar comida e fazer roupas.",
+     "p": [
+      "Os potes de barro cozido serviam para cozinhar, guardar grãos e carregar água, protegidos da umidade e das pragas.",
+      "Parte da cerâmica mais antiga, da China e do Japão, tem cerca de 20 mil e 16 mil anos.",
+      "Tecer transformava fibras como o linho, e depois a lã e o algodão, em tecido para roupas e cestos."
+     ],
+     "q": "Você tem algum objeto feito à mão favorito, como uma caneca, uma tigela ou um cachecol?",
+     "c": "Observe de perto um pedaço de tecido e tente ver o padrão dos fios passando por cima e por baixo."
+    }
+   }
+  }
+ ]
+}

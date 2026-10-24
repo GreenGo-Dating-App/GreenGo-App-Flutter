@@ -1,0 +1,835 @@
+{
+ "topic": "cycling",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning a first route",
+     "g": "Choose quiet roads and a short distance so your first planned ride is a joy.",
+     "p": [
+      "Start small: a loop of a few kilometres on quiet streets, paths or parks is perfect for a first outing.",
+      "Avoid big roads and steep hills, and look for places to stop, like a café, bench or viewpoint along the way.",
+      "Tell someone your plan, and carry water, your phone and a little cash or a card."
+     ],
+     "q": "Where would your perfect first planned ride take you?",
+     "c": "Sketch a short route of a few kilometres from your home using quiet streets or paths."
+    },
+    "de": {
+     "t": "Die erste Route planen",
+     "g": "Wähle ruhige Straßen und eine kurze Strecke, damit deine erste geplante Tour Freude macht.",
+     "p": [
+      "Fang klein an: eine Runde von wenigen Kilometern auf ruhigen Straßen, Wegen oder durch Parks ist perfekt.",
+      "Meide große Straßen und steile Hügel und such Haltepunkte wie ein Café, eine Bank oder einen Aussichtspunkt.",
+      "Erzähl jemandem von deinem Plan und nimm Wasser, Handy und etwas Geld oder eine Karte mit."
+     ],
+     "q": "Wohin würde deine perfekte erste geplante Tour dich führen?",
+     "c": "Skizziere von zu Hause aus eine kurze Runde von wenigen Kilometern über ruhige Straßen oder Wege."
+    },
+    "es": {
+     "t": "Planear tu primera ruta",
+     "g": "Elige calles tranquilas y una distancia corta para que tu primera ruta planeada sea un placer.",
+     "p": [
+      "Empieza poco a poco: un circuito de pocos kilómetros por calles tranquilas, caminos o parques es perfecto.",
+      "Evita avenidas y cuestas fuertes, y busca sitios para parar, como un café, un banco o un mirador.",
+      "Cuéntale a alguien tu plan y lleva agua, el móvil y algo de dinero o una tarjeta."
+     ],
+     "q": "¿Adónde te llevaría tu primera ruta planeada ideal?",
+     "c": "Dibuja una ruta corta de pocos kilómetros desde tu casa por calles o caminos tranquilos."
+    },
+    "fr": {
+     "t": "Préparer un premier itinéraire",
+     "g": "Choisis des routes calmes et une courte distance pour que ta première sortie prévue soit un plaisir.",
+     "p": [
+      "Commence petit : une boucle de quelques kilomètres dans des rues calmes, sur des chemins ou dans des parcs, c'est parfait.",
+      "Évite les grands axes et les côtes raides, et repère des pauses possibles : café, banc ou point de vue.",
+      "Préviens quelqu'un de ton plan et emporte de l'eau, ton téléphone et un peu d'argent ou une carte."
+     ],
+     "q": "Où te mènerait ta première sortie idéale ?",
+     "c": "Dessine un court itinéraire de quelques kilomètres depuis chez toi par des rues ou chemins calmes."
+    },
+    "it": {
+     "t": "Pianificare il primo percorso",
+     "g": "Scegli strade tranquille e una distanza breve perché la tua prima uscita pianificata sia un piacere.",
+     "p": [
+      "Inizia in piccolo: un anello di pochi chilometri su strade tranquille, ciclabili o parchi è perfetto.",
+      "Evita le strade grandi e le salite ripide e cerca posti dove fermarti, come un bar, una panchina o un belvedere.",
+      "Racconta a qualcuno il tuo piano e porta acqua, telefono e un po' di contanti o una carta."
+     ],
+     "q": "Dove ti porterebbe la tua prima uscita pianificata ideale?",
+     "c": "Disegna un breve percorso di pochi chilometri da casa tua su strade o vialetti tranquilli."
+    },
+    "pt": {
+     "t": "Planear um primeiro percurso",
+     "g": "Escolhe ruas calmas e uma distância curta para que o teu primeiro passeio planeado seja um prazer.",
+     "p": [
+      "Começa devagar: uma volta de poucos quilómetros por ruas calmas, caminhos ou parques é perfeita.",
+      "Evita estradas grandes e subidas íngremes e procura sítios para parar, como um café, um banco ou um miradouro.",
+      "Conta a alguém o teu plano e leva água, o telemóvel e algum dinheiro ou um cartão."
+     ],
+     "q": "Para onde te levaria o teu primeiro passeio planeado ideal?",
+     "c": "Desenha um percurso curto de poucos quilómetros a partir de casa por ruas ou caminhos calmos."
+    },
+    "pt_BR": {
+     "t": "Planejando a primeira rota",
+     "g": "Escolha ruas tranquilas e uma distância curta para que seu primeiro pedal planejado seja um prazer.",
+     "p": [
+      "Comece pequeno: uma volta de poucos quilômetros por ruas tranquilas, ciclovias ou parques é perfeita.",
+      "Evite avenidas e subidas íngremes e procure lugares para parar, como uma padaria, um banco ou um mirante.",
+      "Conte a alguém seu plano e leve água, o celular e um pouco de dinheiro ou um cartão."
+     ],
+     "q": "Para onde seu primeiro pedal planejado ideal levaria você?",
+     "c": "Desenhe uma rota curta de poucos quilômetros saindo de casa por ruas ou caminhos tranquilos."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a cycling map",
+     "g": "Understand the symbols that show paths, surfaces and hills on a cycling map.",
+     "p": [
+      "A map legend explains every symbol: different lines and colours mark cycle paths, quiet roads and busy roads.",
+      "Contour lines show height: lines close together mean steep ground, lines far apart mean gentle slopes.",
+      "Many maps also mark surfaces like tarmac or gravel, plus useful extras such as water, toilets and bike shops."
+     ],
+     "q": "Do you enjoy looking at maps, or do you prefer just to follow directions?",
+     "c": "Open a map of your area and find a cycle path, a steep slope and a flat stretch."
+    },
+    "de": {
+     "t": "Eine Radkarte lesen",
+     "g": "Verstehe die Symbole, die auf einer Radkarte Wege, Beläge und Hügel zeigen.",
+     "p": [
+      "Die Legende erklärt jedes Symbol: Linien und Farben kennzeichnen Radwege, ruhige und stark befahrene Straßen.",
+      "Höhenlinien zeigen das Gelände: eng beieinander heißt steil, weit auseinander heißt sanft.",
+      "Viele Karten zeigen auch Beläge wie Asphalt oder Schotter und Extras wie Wasser, Toiletten und Radläden."
+     ],
+     "q": "Schaust du gern auf Karten, oder folgst du lieber einfach Anweisungen?",
+     "c": "Öffne eine Karte deiner Gegend und finde einen Radweg, einen steilen Hang und ein flaches Stück."
+    },
+    "es": {
+     "t": "Leer un mapa ciclista",
+     "g": "Entiende los símbolos que muestran caminos, superficies y cuestas en un mapa para bici.",
+     "p": [
+      "La leyenda explica cada símbolo: líneas y colores distintos marcan vías ciclistas, calles tranquilas y carreteras con tráfico.",
+      "Las curvas de nivel muestran la altura: líneas juntas significan pendiente fuerte; separadas, pendiente suave.",
+      "Muchos mapas marcan también el firme, como asfalto o tierra, y extras como agua, aseos y talleres de bicis."
+     ],
+     "q": "¿Te gusta mirar mapas o prefieres simplemente seguir indicaciones?",
+     "c": "Abre un mapa de tu zona y encuentra un carril bici, una cuesta fuerte y un tramo llano."
+    },
+    "fr": {
+     "t": "Lire une carte vélo",
+     "g": "Comprends les symboles qui indiquent chemins, revêtements et reliefs sur une carte vélo.",
+     "p": [
+      "La légende explique chaque symbole : lignes et couleurs distinguent pistes cyclables, routes calmes et routes fréquentées.",
+      "Les courbes de niveau montrent le relief : serrées, la pente est raide ; espacées, elle est douce.",
+      "Beaucoup de cartes indiquent aussi le revêtement, bitume ou gravier, et des points utiles comme l'eau, les toilettes ou les vélocistes."
+     ],
+     "q": "Aimes-tu regarder des cartes, ou préfères-tu suivre des indications ?",
+     "c": "Ouvre une carte de ta région et trouve une piste cyclable, une pente raide et un passage plat."
+    },
+    "it": {
+     "t": "Leggere una mappa ciclabile",
+     "g": "Capisci i simboli che mostrano percorsi, fondi e salite su una mappa per bici.",
+     "p": [
+      "La legenda spiega ogni simbolo: linee e colori diversi indicano ciclabili, strade tranquille e strade trafficate.",
+      "Le curve di livello mostrano l'altitudine: linee vicine indicano pendenza ripida, linee distanti pendenza dolce.",
+      "Molte mappe indicano anche il fondo, come asfalto o sterrato, e utili extra come acqua, bagni e ciclofficine."
+     ],
+     "q": "Ti piace guardare le mappe o preferisci seguire le indicazioni?",
+     "c": "Apri una mappa della tua zona e trova una ciclabile, una salita ripida e un tratto pianeggiante."
+    },
+    "pt": {
+     "t": "Ler um mapa para bicicleta",
+     "g": "Percebe os símbolos que mostram caminhos, pisos e subidas num mapa para bicicleta.",
+     "p": [
+      "A legenda explica cada símbolo: linhas e cores diferentes marcam ciclovias, ruas calmas e estradas movimentadas.",
+      "As curvas de nível mostram a altitude: linhas juntas indicam declive forte, linhas afastadas declive suave.",
+      "Muitos mapas marcam também o piso, como asfalto ou terra, e extras úteis como água, casas de banho e lojas de bicicletas."
+     ],
+     "q": "Gostas de olhar para mapas ou preferes seguir indicações?",
+     "c": "Abre um mapa da tua zona e encontra uma ciclovia, uma subida íngreme e um troço plano."
+    },
+    "pt_BR": {
+     "t": "Lendo um mapa para bike",
+     "g": "Entenda os símbolos que mostram caminhos, pisos e subidas num mapa para bike.",
+     "p": [
+      "A legenda explica cada símbolo: linhas e cores diferentes marcam ciclovias, ruas tranquilas e vias movimentadas.",
+      "As curvas de nível mostram a altitude: linhas juntas indicam subida forte, linhas afastadas subida suave.",
+      "Muitos mapas marcam também o piso, como asfalto ou terra, e extras úteis como água, banheiros e bicicletarias."
+     ],
+     "q": "Você gosta de olhar mapas ou prefere só seguir as indicações?",
+     "c": "Abra um mapa da sua região e encontre uma ciclovia, uma ladeira íngreme e um trecho plano."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Route planning apps",
+     "g": "See how route apps help you find bike-friendly roads and estimate the climbing.",
+     "p": [
+      "Most route apps let you choose a cycling profile that favours bike lanes, quiet streets or certain surfaces.",
+      "They show total distance and an elevation profile, so you can see where the climbs are before you leave.",
+      "You can save routes, follow turn-by-turn directions and download maps in case you lose signal."
+     ],
+     "q": "Have you ever used an app to plan a walk, run or ride?",
+     "c": "Plan the route you sketched earlier in a route app and compare its distance with your guess."
+    },
+    "de": {
+     "t": "Apps zur Routenplanung",
+     "g": "Sieh, wie Routen-Apps dir fahrradfreundliche Straßen zeigen und Höhenmeter abschätzen.",
+     "p": [
+      "Die meisten Routen-Apps bieten ein Radprofil, das Radwege, ruhige Straßen oder bestimmte Beläge bevorzugt.",
+      "Sie zeigen Gesamtdistanz und Höhenprofil, sodass du die Anstiege schon vor dem Start siehst.",
+      "Du kannst Routen speichern, der Navigation Abzweig für Abzweig folgen und Karten für Funklöcher herunterladen."
+     ],
+     "q": "Hast du schon einmal eine App genutzt, um einen Spaziergang, Lauf oder eine Radtour zu planen?",
+     "c": "Plane deine skizzierte Runde in einer Routen-App und vergleiche die Distanz mit deiner Schätzung."
+    },
+    "es": {
+     "t": "Apps para planear rutas",
+     "g": "Descubre cómo las apps de rutas te ayudan a encontrar calles aptas para bici y calcular el desnivel.",
+     "p": [
+      "La mayoría permite elegir un perfil ciclista que prioriza carriles bici, calles tranquilas o ciertos firmes.",
+      "Muestran la distancia total y un perfil de altitud, así ves dónde están las subidas antes de salir.",
+      "Puedes guardar rutas, seguir indicaciones paso a paso y descargar mapas por si pierdes la cobertura."
+     ],
+     "q": "¿Alguna vez usaste una app para planear un paseo, una carrera o una ruta en bici?",
+     "c": "Planea en una app la ruta que dibujaste antes y compara su distancia con tu estimación."
+    },
+    "fr": {
+     "t": "Les applis d'itinéraires",
+     "g": "Découvre comment les applis t'aident à trouver des routes adaptées au vélo et à estimer le dénivelé.",
+     "p": [
+      "La plupart proposent un profil vélo qui privilégie les pistes cyclables, les rues calmes ou certains revêtements.",
+      "Elles affichent la distance totale et un profil d'altitude : tu vois les montées avant de partir.",
+      "Tu peux enregistrer des itinéraires, suivre un guidage pas à pas et télécharger des cartes en cas de perte de réseau."
+     ],
+     "q": "As-tu déjà utilisé une appli pour préparer une balade, une course ou une sortie vélo ?",
+     "c": "Prépare dans une appli l'itinéraire dessiné plus tôt et compare sa distance avec ton estimation."
+    },
+    "it": {
+     "t": "App per pianificare percorsi",
+     "g": "Scopri come le app ti aiutano a trovare strade adatte alla bici e a stimare il dislivello.",
+     "p": [
+      "Quasi tutte permettono di scegliere un profilo bici che privilegia ciclabili, strade tranquille o certi fondi.",
+      "Mostrano distanza totale e profilo altimetrico, così vedi dove sono le salite prima di partire.",
+      "Puoi salvare percorsi, seguire indicazioni passo passo e scaricare mappe nel caso in cui perdessi il segnale."
+     ],
+     "q": "Hai mai usato un'app per pianificare una passeggiata, una corsa o un giro in bici?",
+     "c": "Pianifica in un'app il percorso che hai disegnato e confronta la distanza con la tua stima."
+    },
+    "pt": {
+     "t": "Apps para planear percursos",
+     "g": "Vê como as apps te ajudam a encontrar ruas boas para bicicleta e a estimar o desnível.",
+     "p": [
+      "A maioria permite escolher um perfil de bicicleta que privilegia ciclovias, ruas calmas ou certos pisos.",
+      "Mostram a distância total e um perfil de altimetria, para veres onde estão as subidas antes de saíres.",
+      "Podes guardar percursos, seguir indicações passo a passo e descarregar mapas para o caso de perderes rede."
+     ],
+     "q": "Já usaste uma app para planear uma caminhada, corrida ou passeio de bicicleta?",
+     "c": "Planeia numa app o percurso que desenhaste e compara a distância com o que tinhas estimado."
+    },
+    "pt_BR": {
+     "t": "Apps para planejar rotas",
+     "g": "Veja como os apps ajudam você a encontrar ruas boas para bike e estimar a altimetria.",
+     "p": [
+      "A maioria deixa escolher um perfil de bike que prioriza ciclovias, ruas tranquilas ou certos pisos.",
+      "Eles mostram a distância total e o perfil de altimetria, então você vê onde estão as subidas antes de sair.",
+      "Dá para salvar rotas, seguir instruções passo a passo e baixar mapas caso fique sem sinal."
+     ],
+     "q": "Você já usou um app para planejar uma caminhada, corrida ou pedal?",
+     "c": "Planeje num app a rota que você desenhou e compare a distância com o que você tinha estimado."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding elevation",
+     "g": "Learn what metres of climbing mean for your effort and your riding time.",
+     "p": [
+      "Elevation gain is the total height you climb on a route, added up from every uphill section.",
+      "A flat 20 km and a hilly 20 km feel very different: climbing slows you down and uses more energy.",
+      "Gradient is shown as a percentage: 5 percent means rising 5 metres for every 100 metres forward."
+     ],
+     "q": "Would you choose a flat route or one with a few hills for your next ride?",
+     "c": "Compare the elevation gain of two possible routes near you and pick one for a future ride."
+    },
+    "de": {
+     "t": "Höhenmeter verstehen",
+     "g": "Lerne, was Höhenmeter für deine Anstrengung und Fahrzeit bedeuten.",
+     "p": [
+      "Die Höhenmeter sind die gesamte Höhe, die du auf einer Route kletterst, zusammengezählt aus allen Anstiegen.",
+      "20 flache und 20 hügelige Kilometer fühlen sich ganz anders an: Klettern bremst und kostet mehr Energie.",
+      "Steigung wird in Prozent angegeben: 5 Prozent heißt 5 Meter höher auf 100 Meter Strecke."
+     ],
+     "q": "Würdest du für deine nächste Fahrt eine flache Strecke oder eine mit ein paar Hügeln wählen?",
+     "c": "Vergleich die Höhenmeter zweier möglicher Routen in deiner Nähe und wähl eine für später."
+    },
+    "es": {
+     "t": "Entender el desnivel",
+     "g": "Aprende qué significan los metros de subida para tu esfuerzo y tu tiempo de ruta.",
+     "p": [
+      "El desnivel positivo es la altura total que subes en una ruta, sumando cada tramo de subida.",
+      "20 km llanos y 20 km con cuestas se sienten muy distintos: subir te frena y gasta más energía.",
+      "La pendiente se expresa en porcentaje: un 5 % significa subir 5 metros por cada 100 metros de avance."
+     ],
+     "q": "¿Elegirías una ruta llana o una con algunas cuestas para tu próxima salida?",
+     "c": "Compara el desnivel de dos rutas posibles cerca de ti y elige una para otro día."
+    },
+    "fr": {
+     "t": "Comprendre le dénivelé",
+     "g": "Apprends ce que les mètres de montée signifient pour ton effort et ton temps de sortie.",
+     "p": [
+      "Le dénivelé positif est la hauteur totale grimpée sur un parcours, en additionnant chaque montée.",
+      "20 km plats et 20 km vallonnés n'ont rien à voir : grimper te ralentit et demande plus d'énergie.",
+      "La pente s'exprime en pourcentage : 5 % signifie monter de 5 mètres tous les 100 mètres parcourus."
+     ],
+     "q": "Pour ta prochaine sortie, choisirais-tu un parcours plat ou avec quelques côtes ?",
+     "c": "Compare le dénivelé de deux parcours possibles près de chez toi et choisis-en un pour plus tard."
+    },
+    "it": {
+     "t": "Capire il dislivello",
+     "g": "Impara cosa significano i metri di salita per il tuo sforzo e il tempo dell'uscita.",
+     "p": [
+      "Il dislivello positivo è l'altezza totale che sali su un percorso, sommando ogni tratto in salita.",
+      "20 km in piano e 20 km collinari sono molto diversi: salire ti rallenta e consuma più energia.",
+      "La pendenza si indica in percentuale: 5 per cento significa salire di 5 metri ogni 100 metri di strada."
+     ],
+     "q": "Per la prossima uscita sceglieresti un percorso piatto o con qualche salita?",
+     "c": "Confronta il dislivello di due percorsi possibili vicino a te e scegline uno per un'altra volta."
+    },
+    "pt": {
+     "t": "Perceber a altimetria",
+     "g": "Aprende o que os metros de subida significam para o teu esforço e o tempo de passeio.",
+     "p": [
+      "O desnível positivo é a altura total que sobes num percurso, somando cada troço a subir.",
+      "20 km planos e 20 km com subidas são muito diferentes: subir abranda-te e gasta mais energia.",
+      "A inclinação mostra-se em percentagem: 5 por cento significa subir 5 metros por cada 100 metros percorridos."
+     ],
+     "q": "Para o próximo passeio escolherias um percurso plano ou com algumas subidas?",
+     "c": "Compara o desnível de dois percursos possíveis perto de ti e escolhe um para outro dia."
+    },
+    "pt_BR": {
+     "t": "Entendendo a altimetria",
+     "g": "Aprenda o que os metros de subida significam para o seu esforço e o tempo do pedal.",
+     "p": [
+      "O ganho de elevação é a altura total que você sobe numa rota, somando cada trecho de subida.",
+      "20 km planos e 20 km com subidas são bem diferentes: subir deixa você mais lento e gasta mais energia.",
+      "A inclinação aparece em porcentagem: 5 por cento significa subir 5 metros a cada 100 metros percorridos."
+     ],
+     "q": "No próximo pedal você escolheria uma rota plana ou uma com algumas subidas?",
+     "c": "Compare a altimetria de duas rotas possíveis perto de você e escolha uma para outro dia."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loop routes vs out-and-back",
+     "g": "Compare the two classic route shapes and know when each one shines.",
+     "p": [
+      "A loop brings you back home by a different way, so you see something new on every stretch.",
+      "An out-and-back follows the same road there and back, which makes it easy to turn around whenever you feel tired.",
+      "Out-and-back routes are great for beginners and windy days; loops are perfect once you know the area."
+     ],
+     "q": "Which do you think you would enjoy more: a loop or an out-and-back?",
+     "c": "Find one loop and one out-and-back route near you of a similar distance."
+    },
+    "de": {
+     "t": "Rundkurs oder hin und zurück",
+     "g": "Vergleiche die zwei klassischen Routenformen und erfahre, wann welche glänzt.",
+     "p": [
+      "Ein Rundkurs bringt dich auf anderem Weg nach Hause, so siehst du auf jedem Abschnitt etwas Neues.",
+      "Bei hin und zurück fährst du dieselbe Strecke zweimal und kannst jederzeit umdrehen, wenn du müde wirst.",
+      "Hin und zurück ist ideal für Einsteiger und windige Tage; Rundkurse sind perfekt, wenn du die Gegend kennst."
+     ],
+     "q": "Was würde dir wohl mehr Spaß machen: ein Rundkurs oder hin und zurück?",
+     "c": "Finde in deiner Nähe einen Rundkurs und eine Hin-und-zurück-Strecke mit ähnlicher Länge."
+    },
+    "es": {
+     "t": "Ruta circular o de ida y vuelta",
+     "g": "Compara las dos formas clásicas de ruta y descubre cuándo brilla cada una.",
+     "p": [
+      "Una ruta circular te devuelve a casa por otro camino, así ves algo nuevo en cada tramo.",
+      "Una de ida y vuelta sigue la misma vía en ambos sentidos, y puedes darte la vuelta en cuanto te canses.",
+      "Las de ida y vuelta van genial para empezar y en días de viento; las circulares, cuando ya conoces la zona."
+     ],
+     "q": "¿Qué crees que disfrutarías más: una ruta circular o una de ida y vuelta?",
+     "c": "Busca cerca de ti una ruta circular y otra de ida y vuelta de distancia parecida."
+    },
+    "fr": {
+     "t": "Boucle ou aller-retour",
+     "g": "Compare les deux formes classiques d'itinéraire et découvre quand chacune brille.",
+     "p": [
+      "Une boucle te ramène chez toi par un autre chemin : tu découvres du nouveau à chaque tronçon.",
+      "Un aller-retour suit la même route dans les deux sens, et tu peux faire demi-tour dès que tu te sens fatigué.",
+      "L'aller-retour est idéal pour débuter et les jours de vent ; la boucle est parfaite quand tu connais le coin."
+     ],
+     "q": "Que préférerais-tu, à ton avis : une boucle ou un aller-retour ?",
+     "c": "Trouve près de chez toi une boucle et un aller-retour de distance similaire."
+    },
+    "it": {
+     "t": "Anello o andata e ritorno",
+     "g": "Confronta le due forme classiche di percorso e scopri quando ognuna dà il meglio.",
+     "p": [
+      "Un anello ti riporta a casa per un'altra strada, così vedi qualcosa di nuovo in ogni tratto.",
+      "L'andata e ritorno segue la stessa strada nei due sensi, e puoi tornare indietro appena ti senti stanco.",
+      "L'andata e ritorno è ottima per chi inizia e nei giorni di vento; l'anello è perfetto quando conosci la zona."
+     ],
+     "q": "Cosa pensi che ti piacerebbe di più: un anello o un'andata e ritorno?",
+     "c": "Trova vicino a te un anello e un'andata e ritorno di distanza simile."
+    },
+    "pt": {
+     "t": "Percurso circular ou ida e volta",
+     "g": "Compara as duas formas clássicas de percurso e descobre quando cada uma brilha.",
+     "p": [
+      "Um percurso circular traz-te de volta a casa por outro caminho, por isso vês algo novo em cada troço.",
+      "Um de ida e volta segue a mesma estrada nos dois sentidos, e podes voltar para trás quando te sentires cansado.",
+      "Ida e volta é ótimo para principiantes e dias de vento; o circular é perfeito quando já conheces a zona."
+     ],
+     "q": "O que achas que gostarias mais: um percurso circular ou de ida e volta?",
+     "c": "Encontra perto de ti um percurso circular e outro de ida e volta com distância parecida."
+    },
+    "pt_BR": {
+     "t": "Rota circular ou ida e volta",
+     "g": "Compare os dois formatos clássicos de rota e descubra quando cada um brilha.",
+     "p": [
+      "Uma rota circular traz você de volta para casa por outro caminho, então você vê algo novo em cada trecho.",
+      "Uma de ida e volta segue a mesma via nos dois sentidos, e você pode voltar quando se sentir cansado.",
+      "Ida e volta é ótima para iniciantes e dias de vento; a circular é perfeita quando você já conhece a região."
+     ],
+     "q": "O que você acha que curtiria mais: uma rota circular ou de ida e volta?",
+     "c": "Encontre perto de você uma rota circular e outra de ida e volta com distância parecida."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first 10 km ride",
+     "g": "Enjoy a first 10 km ride with easy pacing, short breaks and time for the view.",
+     "p": [
+      "At a relaxed pace, 10 km often takes around 40 minutes to an hour, so there is no need to rush.",
+      "Start gently for the first few minutes, keep a pace where you can chat, and stop whenever you want a break.",
+      "Bring water, do the ABC check before leaving and pick a nice spot halfway for a pause."
+     ],
+     "q": "What would make your first 10 km ride feel like a little adventure?",
+     "c": "Plan a 10 km route with one scenic stop and pick a day to ride it."
+    },
+    "de": {
+     "t": "Deine erste 10-km-Tour",
+     "g": "Genieße deine ersten 10 km mit lockerem Tempo, kurzen Pausen und Zeit für die Aussicht.",
+     "p": [
+      "Bei gemütlichem Tempo dauern 10 km oft etwa 40 Minuten bis eine Stunde, also kein Grund zur Eile.",
+      "Starte die ersten Minuten sanft, halte ein Plaudertempo und mach Pause, wann immer du möchtest.",
+      "Nimm Wasser mit, mach vor dem Start den ABC-Check und such dir auf halber Strecke einen schönen Pausenplatz."
+     ],
+     "q": "Was würde deine ersten 10 km zu einem kleinen Abenteuer machen?",
+     "c": "Plane eine 10-km-Runde mit einem schönen Halt und such dir einen Tag dafür aus."
+    },
+    "es": {
+     "t": "Tu primera ruta de 10 km",
+     "g": "Disfruta tus primeros 10 km con un ritmo tranquilo, paradas cortas y tiempo para el paisaje.",
+     "p": [
+      "A ritmo relajado, 10 km suelen llevar entre unos 40 minutos y una hora, así que no hay prisa.",
+      "Empieza suave los primeros minutos, mantén un ritmo que te deje charlar y para cuando quieras.",
+      "Lleva agua, haz la revisión ABC antes de salir y elige un sitio bonito a mitad de camino para descansar."
+     ],
+     "q": "¿Qué haría que tus primeros 10 km se sintieran como una pequeña aventura?",
+     "c": "Planea una ruta de 10 km con una parada con buenas vistas y elige un día para hacerla."
+    },
+    "fr": {
+     "t": "Ta première sortie de 10 km",
+     "g": "Profite de tes premiers 10 km avec une allure facile, de courtes pauses et du temps pour le paysage.",
+     "p": [
+      "À allure tranquille, 10 km prennent souvent entre 40 minutes et une heure environ : inutile de te presser.",
+      "Démarre doucement les premières minutes, garde une allure où tu peux discuter et arrête-toi quand tu veux.",
+      "Prends de l'eau, fais le contrôle ABC avant de partir et choisis un joli coin à mi-parcours pour une pause."
+     ],
+     "q": "Qu'est-ce qui ferait de tes premiers 10 km une petite aventure ?",
+     "c": "Prépare un parcours de 10 km avec un arrêt panoramique et choisis un jour pour le faire."
+    },
+    "it": {
+     "t": "La tua prima uscita di 10 km",
+     "g": "Goditi i primi 10 km con un ritmo facile, brevi pause e tempo per il panorama.",
+     "p": [
+      "A ritmo rilassato, 10 km richiedono spesso tra 40 minuti e un'ora circa, quindi niente fretta.",
+      "Parti piano per i primi minuti, tieni un ritmo da chiacchierata e fermati quando vuoi.",
+      "Porta acqua, fai il controllo ABC prima di partire e scegli un bel posto a metà strada per una pausa."
+     ],
+     "q": "Cosa renderebbe i tuoi primi 10 km una piccola avventura?",
+     "c": "Pianifica un percorso di 10 km con una sosta panoramica e scegli un giorno per farlo."
+    },
+    "pt": {
+     "t": "O teu primeiro passeio de 10 km",
+     "g": "Aproveita os primeiros 10 km com um ritmo calmo, pausas curtas e tempo para a paisagem.",
+     "p": [
+      "A um ritmo descontraído, 10 km levam muitas vezes entre uns 40 minutos e uma hora, por isso não há pressa.",
+      "Começa devagar nos primeiros minutos, mantém um ritmo em que consigas conversar e para quando quiseres.",
+      "Leva água, faz a verificação ABC antes de sair e escolhe um sítio bonito a meio para uma pausa."
+     ],
+     "q": "O que faria dos teus primeiros 10 km uma pequena aventura?",
+     "c": "Planeia um percurso de 10 km com uma paragem com vista e escolhe um dia para o fazer."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro pedal de 10 km",
+     "g": "Curta seus primeiros 10 km com ritmo tranquilo, pausas curtas e tempo para a paisagem.",
+     "p": [
+      "Num ritmo relaxado, 10 km costumam levar de uns 40 minutos a uma hora, então não precisa ter pressa.",
+      "Comece devagar nos primeiros minutos, mantenha um ritmo em que dê para conversar e pare quando quiser.",
+      "Leve água, faça o check ABC antes de sair e escolha um lugar bonito no meio do caminho para uma pausa."
+     ],
+     "q": "O que faria seus primeiros 10 km parecerem uma pequena aventura?",
+     "c": "Planeje uma rota de 10 km com uma parada com vista e escolha um dia para fazê-la."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first 20 km ride",
+     "g": "Build up to 20 km gradually, with snacks, water and a relaxed attitude.",
+     "p": [
+      "Increase distance step by step: a few rides of 10 to 15 km first make 20 km feel comfortable.",
+      "Drink small sips regularly and eat a light snack, like a banana or a cereal bar, before you feel hungry.",
+      "Bring a spare tube or repair kit and a pump, and plan a short-cut home in case you get tired."
+     ],
+     "q": "What snack would you pack for a 20 km ride?",
+     "c": "Pack a small ride bag with water, a snack, a pump and a repair kit for your next longer ride."
+    },
+    "de": {
+     "t": "Deine erste 20-km-Tour",
+     "g": "Steiger dich langsam auf 20 km, mit Snacks, Wasser und entspannter Einstellung.",
+     "p": [
+      "Erhöhe die Distanz Schritt für Schritt: Ein paar Fahrten mit 10 bis 15 km machen 20 km später angenehm.",
+      "Trink regelmäßig kleine Schlucke und iss einen leichten Snack wie Banane oder Müsliriegel, bevor der Hunger kommt.",
+      "Nimm Ersatzschlauch oder Flickzeug und Pumpe mit und plane eine Abkürzung nach Hause, falls du müde wirst."
+     ],
+     "q": "Welchen Snack würdest du für eine 20-km-Tour einpacken?",
+     "c": "Pack eine kleine Tasche mit Wasser, Snack, Pumpe und Flickzeug für deine nächste längere Fahrt."
+    },
+    "es": {
+     "t": "Tu primera ruta de 20 km",
+     "g": "Llega poco a poco a los 20 km con algo de comer, agua y una actitud relajada.",
+     "p": [
+      "Aumenta la distancia paso a paso: unas cuantas salidas de 10 a 15 km harán que 20 km resulten cómodos.",
+      "Bebe sorbos pequeños con frecuencia y toma algo ligero, como un plátano o una barrita, antes de tener hambre.",
+      "Lleva una cámara de repuesto o un kit de reparación y una bomba, y planea un atajo a casa por si te cansas."
+     ],
+     "q": "¿Qué tentempié llevarías para una ruta de 20 km?",
+     "c": "Prepara una bolsita con agua, un tentempié, bomba y kit de reparación para tu próxima salida larga."
+    },
+    "fr": {
+     "t": "Ta première sortie de 20 km",
+     "g": "Monte progressivement jusqu'à 20 km, avec un en-cas, de l'eau et l'esprit détendu.",
+     "p": [
+      "Augmente la distance pas à pas : quelques sorties de 10 à 15 km rendront ensuite 20 km confortables.",
+      "Bois de petites gorgées régulièrement et mange un en-cas léger, banane ou barre de céréales, avant d'avoir faim.",
+      "Emporte une chambre à air ou un kit de réparation et une pompe, et prévois un raccourci au cas où tu serais fatigué."
+     ],
+     "q": "Quel en-cas emporterais-tu pour une sortie de 20 km ?",
+     "c": "Prépare une petite sacoche avec eau, en-cas, pompe et kit de réparation pour ta prochaine longue sortie."
+    },
+    "it": {
+     "t": "La tua prima uscita di 20 km",
+     "g": "Arriva gradualmente a 20 km con uno spuntino, acqua e un atteggiamento rilassato.",
+     "p": [
+      "Aumenta la distanza passo dopo passo: qualche uscita da 10 a 15 km renderà poi comodi i 20 km.",
+      "Bevi piccoli sorsi spesso e mangia uno spuntino leggero, come una banana o una barretta, prima di avere fame.",
+      "Porta una camera d'aria di scorta o un kit di riparazione e una pompa, e prevedi una scorciatoia se ti stanchi."
+     ],
+     "q": "Che spuntino porteresti per un'uscita di 20 km?",
+     "c": "Prepara una piccola borsa con acqua, spuntino, pompa e kit di riparazione per la prossima uscita lunga."
+    },
+    "pt": {
+     "t": "O teu primeiro passeio de 20 km",
+     "g": "Chega aos 20 km aos poucos, com um lanche, água e uma atitude descontraída.",
+     "p": [
+      "Aumenta a distância passo a passo: alguns passeios de 10 a 15 km tornam depois os 20 km confortáveis.",
+      "Bebe pequenos goles com frequência e come algo leve, como uma banana ou uma barra de cereais, antes de teres fome.",
+      "Leva uma câmara de ar suplente ou um kit de reparação e uma bomba, e planeia um atalho para casa se te cansares."
+     ],
+     "q": "Que lanche levarias para um passeio de 20 km?",
+     "c": "Prepara uma pequena bolsa com água, um lanche, bomba e kit de reparação para o próximo passeio longo."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro pedal de 20 km",
+     "g": "Chegue aos 20 km aos poucos, com um lanche, água e uma atitude tranquila.",
+     "p": [
+      "Aumente a distância passo a passo: alguns pedais de 10 a 15 km deixam os 20 km confortáveis depois.",
+      "Beba pequenos goles com frequência e coma algo leve, como uma banana ou uma barrinha de cereal, antes de sentir fome.",
+      "Leve uma câmara reserva ou um kit de reparo e uma bomba, e planeje um atalho para casa caso fique cansado."
+     ],
+     "q": "Que lanche você levaria para um pedal de 20 km?",
+     "c": "Monte uma bolsinha com água, lanche, bomba e kit de reparo para seu próximo pedal mais longo."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cycling in parks",
+     "g": "Find traffic-free green spaces where you can practise skills and simply relax.",
+     "p": [
+      "Many parks have paths where cycling is allowed, ideal for practising turns, braking and signals without cars.",
+      "Check the signs at the entrance: some paths are for walking only, and some parks set times or speed limits.",
+      "Ride gently, give way to people on foot and enjoy the trees, lakes and birdsong around you."
+     ],
+     "q": "Is there a park near you where bikes are welcome?",
+     "c": "Visit a nearby park, check where bikes may ride and practise one skill there."
+    },
+    "de": {
+     "t": "Radfahren im Park",
+     "g": "Finde verkehrsfreie Grünflächen, wo du üben und einfach entspannen kannst.",
+     "p": [
+      "Viele Parks haben Wege, auf denen Radfahren erlaubt ist, ideal zum Üben von Kurven, Bremsen und Zeichen ohne Autos.",
+      "Achte auf die Schilder am Eingang: Manche Wege sind nur für Fußgänger, manche Parks haben Zeiten oder Tempolimits.",
+      "Fahr gemächlich, lass Fußgängern den Vortritt und genieß Bäume, Seen und Vogelgesang."
+     ],
+     "q": "Gibt es in deiner Nähe einen Park, in dem Räder willkommen sind?",
+     "c": "Besuch einen nahen Park, prüf, wo Räder fahren dürfen, und übe dort eine Fähigkeit."
+    },
+    "es": {
+     "t": "Pedalear en parques",
+     "g": "Encuentra espacios verdes sin tráfico donde practicar y simplemente relajarte.",
+     "p": [
+      "Muchos parques tienen caminos donde se permite la bici, ideales para practicar curvas, frenadas y señales sin coches.",
+      "Mira las señales de la entrada: algunos caminos son solo para peatones y algunos parques fijan horarios o límites de velocidad.",
+      "Pedalea suave, cede el paso a los peatones y disfruta de los árboles, los lagos y el canto de los pájaros."
+     ],
+     "q": "¿Hay algún parque cerca de ti donde las bicis sean bienvenidas?",
+     "c": "Visita un parque cercano, comprueba por dónde pueden ir las bicis y practica allí una habilidad."
+    },
+    "fr": {
+     "t": "Le vélo dans les parcs",
+     "g": "Trouve des espaces verts sans voitures pour t'entraîner et simplement te détendre.",
+     "p": [
+      "Beaucoup de parcs ont des allées où le vélo est autorisé, idéales pour travailler virages, freinage et signes sans voitures.",
+      "Lis les panneaux à l'entrée : certaines allées sont réservées aux piétons et certains parcs fixent des horaires ou des limites de vitesse.",
+      "Roule tranquillement, laisse la priorité aux piétons et profite des arbres, des lacs et du chant des oiseaux."
+     ],
+     "q": "Y a-t-il un parc près de chez toi où les vélos sont les bienvenus ?",
+     "c": "Va dans un parc proche, vérifie où les vélos peuvent rouler et entraîne-toi sur une compétence."
+    },
+    "it": {
+     "t": "Pedalare nei parchi",
+     "g": "Trova spazi verdi senza traffico dove esercitarti e semplicemente rilassarti.",
+     "p": [
+      "Molti parchi hanno viali dove la bici è ammessa, ideali per allenare curve, frenate e segnali senza auto.",
+      "Leggi i cartelli all'ingresso: alcuni viali sono solo pedonali e alcuni parchi hanno orari o limiti di velocità.",
+      "Pedala piano, dai la precedenza ai pedoni e goditi alberi, laghetti e canto degli uccelli."
+     ],
+     "q": "C'è un parco vicino a te dove le bici sono benvenute?",
+     "c": "Visita un parco vicino, controlla dove possono andare le bici ed esercita lì un'abilità."
+    },
+    "pt": {
+     "t": "Pedalar em parques",
+     "g": "Encontra espaços verdes sem trânsito onde praticar e simplesmente relaxar.",
+     "p": [
+      "Muitos parques têm caminhos onde a bicicleta é permitida, ideais para treinar curvas, travagens e sinais sem carros.",
+      "Lê os sinais à entrada: alguns caminhos são só para peões e alguns parques têm horários ou limites de velocidade.",
+      "Pedala com calma, dá prioridade aos peões e aproveita as árvores, os lagos e o canto dos pássaros."
+     ],
+     "q": "Há algum parque perto de ti onde as bicicletas sejam bem-vindas?",
+     "c": "Visita um parque próximo, vê por onde as bicicletas podem andar e pratica lá uma técnica."
+    },
+    "pt_BR": {
+     "t": "Pedalando em parques",
+     "g": "Encontre áreas verdes sem trânsito onde praticar e simplesmente relaxar.",
+     "p": [
+      "Muitos parques têm caminhos onde a bike é permitida, ideais para treinar curvas, freadas e sinais sem carros.",
+      "Leia as placas na entrada: alguns caminhos são só para pedestres e alguns parques têm horários ou limites de velocidade.",
+      "Pedale com calma, dê preferência aos pedestres e curta as árvores, os lagos e o canto dos pássaros."
+     ],
+     "q": "Tem algum parque perto de você onde as bikes são bem-vindas?",
+     "c": "Visite um parque próximo, veja por onde as bikes podem andar e pratique lá uma habilidade."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riverside and canal paths",
+     "g": "Discover flat, scenic waterside routes that cyclists love in many countries.",
+     "p": [
+      "Paths along rivers and canals are often flat and traffic-free, because towpaths were built for horses pulling boats.",
+      "Many famous long routes follow rivers, such as the Danube Cycle Path through several European countries.",
+      "Surfaces can be gravel or narrow in places, so ride slowly near the water and share the space with walkers and anglers."
+     ],
+     "q": "Is there a river, canal or lake near you with a path alongside?",
+     "c": "Look on a map for a waterside path near you and plan a short ride along it."
+    },
+    "de": {
+     "t": "Wege an Flüssen und Kanälen",
+     "g": "Entdecke flache, malerische Wege am Wasser, die Radfahrende in vielen Ländern lieben.",
+     "p": [
+      "Wege an Flüssen und Kanälen sind oft flach und autofrei, denn Treidelpfade wurden für Pferde gebaut, die Boote zogen.",
+      "Viele berühmte Fernradwege folgen Flüssen, etwa der Donauradweg durch mehrere europäische Länder.",
+      "Der Belag kann stellenweise Schotter oder schmal sein, also fahr am Wasser langsam und teil den Weg mit Spaziergängern und Anglern."
+     ],
+     "q": "Gibt es in deiner Nähe einen Fluss, Kanal oder See mit einem Weg am Ufer?",
+     "c": "Such auf einer Karte einen Uferweg in deiner Nähe und plane eine kurze Fahrt darauf."
+    },
+    "es": {
+     "t": "Caminos junto a ríos y canales",
+     "g": "Descubre rutas llanas y bonitas junto al agua que encantan a ciclistas de muchos países.",
+     "p": [
+      "Los caminos junto a ríos y canales suelen ser llanos y sin tráfico, pues los caminos de sirga eran para caballos que tiraban de barcas.",
+      "Muchas rutas largas famosas siguen ríos, como la vía ciclista del Danubio, que cruza varios países europeos.",
+      "El firme puede ser de tierra o estrecho en tramos, así que ve despacio junto al agua y comparte el espacio con paseantes y pescadores."
+     ],
+     "q": "¿Hay algún río, canal o lago cerca de ti con un camino al lado?",
+     "c": "Busca en un mapa un camino junto al agua cerca de ti y planea un paseo corto por él."
+    },
+    "fr": {
+     "t": "Chemins au bord des rivières et canaux",
+     "g": "Découvre des itinéraires plats et pittoresques au bord de l'eau, adorés des cyclistes de nombreux pays.",
+     "p": [
+      "Les chemins le long des rivières et canaux sont souvent plats et sans autos, car le halage se faisait avec des chevaux tirant les bateaux.",
+      "Beaucoup de grands itinéraires suivent des fleuves, comme la véloroute du Danube qui traverse plusieurs pays européens.",
+      "Le revêtement peut être en gravier ou étroit par endroits : roule doucement près de l'eau et partage l'espace avec promeneurs et pêcheurs."
+     ],
+     "q": "Y a-t-il une rivière, un canal ou un lac près de chez toi avec un chemin le long ?",
+     "c": "Cherche sur une carte un chemin au bord de l'eau près de chez toi et prévois une courte balade."
+    },
+    "it": {
+     "t": "Percorsi lungo fiumi e canali",
+     "g": "Scopri percorsi pianeggianti e panoramici lungo l'acqua, amati dai ciclisti in tanti paesi.",
+     "p": [
+      "Le strade lungo fiumi e canali sono spesso piane e senza traffico, perché le alzaie erano fatte per i cavalli che trainavano le barche.",
+      "Molti famosi percorsi lunghi seguono i fiumi, come la ciclabile del Danubio che attraversa diversi paesi europei.",
+      "Il fondo può essere sterrato o stretto in alcuni punti, quindi vai piano vicino all'acqua e condividi lo spazio con pedoni e pescatori."
+     ],
+     "q": "C'è un fiume, un canale o un lago vicino a te con un percorso lungo la riva?",
+     "c": "Cerca su una mappa un percorso lungo l'acqua vicino a te e pianifica un breve giro."
+    },
+    "pt": {
+     "t": "Caminhos junto a rios e canais",
+     "g": "Descobre percursos planos e bonitos junto à água, adorados por ciclistas em muitos países.",
+     "p": [
+      "Os caminhos junto a rios e canais são muitas vezes planos e sem trânsito, porque os caminhos de sirga eram para cavalos que puxavam barcos.",
+      "Muitos percursos longos famosos seguem rios, como a ciclovia do Danúbio, que atravessa vários países europeus.",
+      "O piso pode ser de terra ou estreito em alguns troços, por isso vai devagar junto à água e partilha o espaço com peões e pescadores."
+     ],
+     "q": "Há algum rio, canal ou lago perto de ti com um caminho ao lado?",
+     "c": "Procura num mapa um caminho junto à água perto de ti e planeia um passeio curto por ele."
+    },
+    "pt_BR": {
+     "t": "Caminhos à beira de rios e canais",
+     "g": "Descubra rotas planas e bonitas à beira d'água, queridas por ciclistas em muitos países.",
+     "p": [
+      "Caminhos à beira de rios e canais costumam ser planos e sem trânsito, pois os caminhos de sirga eram para cavalos que puxavam barcos.",
+      "Muitas rotas longas famosas seguem rios, como a ciclovia do Danúbio, que atravessa vários países europeus.",
+      "O piso pode ser de terra ou estreito em alguns trechos, então vá devagar perto da água e divida o espaço com pedestres e pescadores."
+     ],
+     "q": "Tem algum rio, canal, lago ou orla perto de você com um caminho ao lado?",
+     "c": "Procure num mapa um caminho à beira d'água perto de você e planeje um pedal curto por ele."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exploring your city by bike",
+     "g": "Discover neighbourhoods, markets and viewpoints with fresh eyes from the saddle.",
+     "p": [
+      "A bike is the perfect speed for exploring: faster than walking, yet slow enough to notice small details.",
+      "Plan a route linking a few highlights, like a market, a historic street and a park or viewpoint.",
+      "Lock up properly at each stop, use bike lanes and quiet streets, and take breaks to enjoy the local food."
+     ],
+     "q": "Which part of your city would you love to explore by bike?",
+     "c": "Pick three places in your city you have never visited and plan a bike route that links them."
+    },
+    "de": {
+     "t": "Deine Stadt mit dem Rad erkunden",
+     "g": "Entdecke Viertel, Märkte und Aussichtspunkte vom Sattel aus mit neuen Augen.",
+     "p": [
+      "Das Rad hat das perfekte Tempo zum Erkunden: schneller als zu Fuß, aber langsam genug für kleine Details.",
+      "Plane eine Route, die ein paar Highlights verbindet, etwa einen Markt, eine historische Straße und einen Aussichtspunkt.",
+      "Schließ an jedem Halt richtig ab, nutze Radwege und ruhige Straßen und mach Pausen für lokale Spezialitäten."
+     ],
+     "q": "Welchen Teil deiner Stadt würdest du gern mit dem Rad erkunden?",
+     "c": "Wähl drei Orte in deiner Stadt, an denen du noch nie warst, und plane eine Radroute, die sie verbindet."
+    },
+    "es": {
+     "t": "Explorar tu ciudad en bici",
+     "g": "Descubre barrios, mercados y miradores con otros ojos desde el sillín.",
+     "p": [
+      "La bici tiene la velocidad perfecta para explorar: más rápida que a pie, pero lo bastante lenta para ver detalles.",
+      "Planea una ruta que una algunos puntos destacados, como un mercado, una calle histórica y un parque o mirador.",
+      "Ata bien la bici en cada parada, usa carriles bici y calles tranquilas, y haz pausas para probar la comida local."
+     ],
+     "q": "¿Qué parte de tu ciudad te encantaría explorar en bici?",
+     "c": "Elige tres lugares de tu ciudad que nunca hayas visitado y planea una ruta en bici que los una."
+    },
+    "fr": {
+     "t": "Explorer ta ville à vélo",
+     "g": "Découvre quartiers, marchés et points de vue d'un œil neuf depuis la selle.",
+     "p": [
+      "Le vélo a la vitesse idéale pour explorer : plus rapide qu'à pied, mais assez lent pour remarquer les détails.",
+      "Prépare un itinéraire qui relie quelques temps forts : un marché, une rue historique et un parc ou un belvédère.",
+      "Attache bien ton vélo à chaque arrêt, emprunte pistes et rues calmes, et fais des pauses pour goûter la cuisine locale."
+     ],
+     "q": "Quel quartier de ta ville aimerais-tu explorer à vélo ?",
+     "c": "Choisis trois lieux de ta ville que tu ne connais pas et prépare un itinéraire vélo qui les relie."
+    },
+    "it": {
+     "t": "Esplorare la tua città in bici",
+     "g": "Scopri quartieri, mercati e belvedere con occhi nuovi dalla sella.",
+     "p": [
+      "La bici ha la velocità perfetta per esplorare: più veloce che a piedi, ma abbastanza lenta per notare i dettagli.",
+      "Pianifica un percorso che colleghi alcune tappe, come un mercato, una via storica e un parco o un belvedere.",
+      "Lega bene la bici a ogni sosta, usa ciclabili e strade tranquille e fai pause per assaggiare il cibo locale."
+     ],
+     "q": "Quale parte della tua città ti piacerebbe esplorare in bici?",
+     "c": "Scegli tre posti della tua città che non hai mai visitato e pianifica un percorso in bici che li colleghi."
+    },
+    "pt": {
+     "t": "Explorar a tua cidade de bicicleta",
+     "g": "Descobre bairros, mercados e miradouros com outros olhos a partir do selim.",
+     "p": [
+      "A bicicleta tem a velocidade perfeita para explorar: mais rápida do que a pé, mas lenta o bastante para ver detalhes.",
+      "Planeia um percurso que ligue alguns destaques, como um mercado, uma rua histórica e um parque ou miradouro.",
+      "Prende bem a bicicleta em cada paragem, usa ciclovias e ruas calmas e faz pausas para provar a comida local."
+     ],
+     "q": "Que parte da tua cidade adorarias explorar de bicicleta?",
+     "c": "Escolhe três sítios da tua cidade onde nunca foste e planeia um percurso de bicicleta que os ligue."
+    },
+    "pt_BR": {
+     "t": "Explorando sua cidade de bike",
+     "g": "Descubra bairros, feiras e mirantes com outros olhos de cima do selim.",
+     "p": [
+      "A bike tem a velocidade perfeita para explorar: mais rápida que a pé, mas lenta o bastante para notar detalhes.",
+      "Planeje uma rota que ligue alguns destaques, como uma feira, uma rua histórica e um parque ou mirante.",
+      "Prenda bem a bike em cada parada, use ciclovias e ruas tranquilas e faça pausas para provar a comida local."
+     ],
+     "q": "Que parte da sua cidade você adoraria explorar de bike?",
+     "c": "Escolha três lugares da sua cidade que você nunca visitou e planeje uma rota de bike que os ligue."
+    }
+   }
+  }
+ ]
+}

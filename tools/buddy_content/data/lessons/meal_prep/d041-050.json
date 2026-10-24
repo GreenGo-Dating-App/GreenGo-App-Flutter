@@ -1,0 +1,835 @@
+{
+ "topic": "meal_prep",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Canned fish ideas",
+     "g": "Use canned tuna, sardines and salmon from the pantry for quick, easy lunches.",
+     "p": [
+      "Canned fish keeps a long time unopened and needs no cooking.",
+      "Mix tuna or salmon with beans, corn or pasta for a fast salad.",
+      "Once opened, move leftovers to a closed box in the fridge and use within two days."
+     ],
+     "q": "Which canned fish do you like, or which would you try?",
+     "c": "Make one quick lunch with canned fish and two vegetables or a grain."
+    },
+    "de": {
+     "t": "Ideen mit Dosenfisch",
+     "g": "Nutze Thunfisch, Sardinen und Lachs aus der Dose für schnelle, einfache Mittagessen.",
+     "p": [
+      "Ungeöffneter Dosenfisch hält lange und muss nicht gekocht werden.",
+      "Thunfisch oder Lachs mit Bohnen, Mais oder Nudeln ergibt schnell einen Salat.",
+      "Reste nach dem Öffnen in eine geschlossene Dose umfüllen und binnen zwei Tagen essen."
+     ],
+     "q": "Welchen Dosenfisch magst du, oder welchen würdest du probieren?",
+     "c": "Mach ein schnelles Mittagessen mit Dosenfisch und zwei Gemüsen oder einem Getreide."
+    },
+    "es": {
+     "t": "Ideas con pescado en lata",
+     "g": "Usar atún, sardinas y salmón en lata de la despensa para almuerzos rápidos y fáciles.",
+     "p": [
+      "El pescado en lata cerrado dura mucho y no necesita cocinarse.",
+      "Mezcla atún o salmón con alubias, maíz o pasta para una ensalada rápida.",
+      "Una vez abierto, pasa lo que sobre a un recipiente cerrado en la nevera y úsalo en dos días."
+     ],
+     "q": "¿Qué pescado en lata te gusta o cuál probarías?",
+     "c": "Prepara un almuerzo rápido con pescado en lata y dos verduras o un cereal."
+    },
+    "fr": {
+     "t": "Idées avec du poisson en conserve",
+     "g": "Utiliser thon, sardines et saumon en conserve pour des déjeuners rapides et faciles.",
+     "p": [
+      "Le poisson en conserve se garde longtemps fermé et ne demande aucune cuisson.",
+      "Mélange thon ou saumon avec haricots, maïs ou pâtes pour une salade express.",
+      "Une fois ouvert, transfère le reste dans une boîte fermée au frigo et consomme sous deux jours."
+     ],
+     "q": "Quel poisson en conserve aimes-tu, ou lequel goûterais-tu ?",
+     "c": "Prépare un déjeuner rapide avec du poisson en conserve et deux légumes ou une céréale."
+    },
+    "it": {
+     "t": "Idee con il pesce in scatola",
+     "g": "Usare tonno, sardine e salmone in scatola della dispensa per pranzi veloci e facili.",
+     "p": [
+      "Il pesce in scatola chiuso dura a lungo e non va cucinato.",
+      "Mescola tonno o salmone con fagioli, mais o pasta per un'insalata veloce.",
+      "Una volta aperto, metti il resto in un contenitore chiuso in frigo e usalo entro due giorni."
+     ],
+     "q": "Quale pesce in scatola ti piace, o quale proveresti?",
+     "c": "Prepara un pranzo veloce con pesce in scatola e due verdure o un cereale."
+    },
+    "pt": {
+     "t": "Ideias com peixe em lata",
+     "g": "Usar atum, sardinhas e salmão em lata da despensa para almoços rápidos e fáceis.",
+     "p": [
+      "O peixe em lata fechado dura muito tempo e não precisa de ser cozinhado.",
+      "Mistura atum ou salmão com feijão, milho ou massa para uma salada rápida.",
+      "Depois de aberto, passa o resto para uma caixa fechada no frigorífico e usa em dois dias."
+     ],
+     "q": "De que peixe em lata gostas, ou qual experimentavas?",
+     "c": "Faz um almoço rápido com peixe em lata e dois legumes ou um cereal."
+    },
+    "pt_BR": {
+     "t": "Ideias com peixe em lata",
+     "g": "Usar atum, sardinha e salmão em lata da despensa para almoços rápidos e fáceis.",
+     "p": [
+      "Peixe em lata fechado dura bastante e não precisa ser cozido.",
+      "Misture atum ou salmão com feijão, milho ou macarrão para uma salada rápida.",
+      "Depois de aberto, passe o resto para um pote fechado na geladeira e use em dois dias."
+     ],
+     "q": "Qual peixe em lata você gosta, ou qual experimentaria?",
+     "c": "Faça um almoço rápido com peixe em lata e dois legumes ou um grão."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roasting vegetables in batches",
+     "g": "Roast big trays of vegetables that come out golden and full of flavour.",
+     "p": [
+      "Use high heat, around 200 to 220 °C, so vegetables caramelise instead of steaming.",
+      "Give them space on the pan; crowded vegetables turn soft and pale.",
+      "Cut pieces to a similar size so everything is ready at the same time."
+     ],
+     "q": "Which vegetable do you love most when it is roasted?",
+     "c": "Roast two trays of mixed vegetables and use them in meals over the next three days."
+    },
+    "de": {
+     "t": "Gemüse auf Vorrat rösten",
+     "g": "Röste große Bleche Gemüse, die goldbraun und voller Geschmack herauskommen.",
+     "p": [
+      "Hohe Hitze, etwa 200 bis 220 °C, lässt Gemüse karamellisieren statt dünsten.",
+      "Gib ihm Platz auf dem Blech; zu eng liegendes Gemüse wird weich und blass.",
+      "Schneide alles ähnlich groß, damit es gleichzeitig fertig ist."
+     ],
+     "q": "Welches Gemüse magst du geröstet am liebsten?",
+     "c": "Röste zwei Bleche gemischtes Gemüse und nutze es in den nächsten drei Tagen."
+    },
+    "es": {
+     "t": "Asar verduras en cantidad",
+     "g": "Asar grandes bandejas de verduras que salgan doradas y llenas de sabor.",
+     "p": [
+      "Usa el horno fuerte, unos 200 a 220 °C, para que se caramelicen en vez de cocerse.",
+      "Dales espacio en la bandeja; amontonadas quedan blandas y pálidas.",
+      "Corta los trozos de tamaño parecido para que todo esté listo a la vez."
+     ],
+     "q": "¿Qué verdura te gusta más asada?",
+     "c": "Asa dos bandejas de verduras variadas y úsalas en comidas durante los próximos tres días."
+    },
+    "fr": {
+     "t": "Rôtir des légumes en quantité",
+     "g": "Rôtir de grandes plaques de légumes bien dorés et pleins de saveur.",
+     "p": [
+      "Utilise une chaleur élevée, vers 200 à 220 °C, pour caraméliser plutôt que cuire à la vapeur.",
+      "Laisse-leur de la place sur la plaque ; serrés, ils deviennent mous et pâles.",
+      "Coupe des morceaux de taille similaire pour que tout cuise en même temps."
+     ],
+     "q": "Quel légume préfères-tu rôti ?",
+     "c": "Rôtis deux plaques de légumes variés et utilise-les dans tes repas des trois prochains jours."
+    },
+    "it": {
+     "t": "Arrostire verdure in quantità",
+     "g": "Arrostire grandi teglie di verdure che escono dorate e piene di sapore.",
+     "p": [
+      "Usa una temperatura alta, circa 200-220 °C, così si caramellano invece di cuocere al vapore.",
+      "Lascia spazio nella teglia; se ammassate diventano molli e pallide.",
+      "Taglia pezzi di misura simile perché tutto sia pronto insieme."
+     ],
+     "q": "Quale verdura ami di più arrosto?",
+     "c": "Arrostisci due teglie di verdure miste e usale nei pasti dei prossimi tre giorni."
+    },
+    "pt": {
+     "t": "Assar legumes em quantidade",
+     "g": "Assar grandes tabuleiros de legumes que saiam dourados e cheios de sabor.",
+     "p": [
+      "Usa forno quente, cerca de 200 a 220 °C, para caramelizarem em vez de cozerem a vapor.",
+      "Dá-lhes espaço no tabuleiro; amontoados ficam moles e pálidos.",
+      "Corta os pedaços de tamanho parecido para ficar tudo pronto ao mesmo tempo."
+     ],
+     "q": "Que legume preferes assado?",
+     "c": "Assa dois tabuleiros de legumes variados e usa-os nas refeições dos próximos três dias."
+    },
+    "pt_BR": {
+     "t": "Assando legumes em quantidade",
+     "g": "Assar grandes assadeiras de legumes que saiam dourados e cheios de sabor.",
+     "p": [
+      "Use forno alto, cerca de 200 a 220 °C, para caramelizarem em vez de cozinharem no vapor.",
+      "Deixe espaço na assadeira; amontoados ficam moles e pálidos.",
+      "Corte os pedaços de tamanho parecido para tudo ficar pronto junto."
+     ],
+     "q": "Qual legume você mais gosta assado?",
+     "c": "Asse duas assadeiras de legumes variados e use nas refeições dos próximos três dias."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steaming vegetables",
+     "g": "Steam vegetables quickly so they stay bright, crisp and good for several days.",
+     "p": [
+      "Steam over simmering water with a lid, just until vegetables are tender but still firm.",
+      "Broccoli, green beans and carrots take only a few minutes.",
+      "Cool them quickly, even in cold water, so they keep their colour and crunch."
+     ],
+     "q": "Do you prefer your vegetables soft or with a little bite?",
+     "c": "Steam one green vegetable, cool it fast and pack it for the next two days."
+    },
+    "de": {
+     "t": "Gemüse dämpfen",
+     "g": "Dämpfe Gemüse kurz, damit es leuchtend, knackig und mehrere Tage gut bleibt.",
+     "p": [
+      "Mit Deckel über siedendem Wasser dämpfen, nur bis es zart, aber noch fest ist.",
+      "Brokkoli, grüne Bohnen und Karotten brauchen nur wenige Minuten.",
+      "Schnell abkühlen, gern in kaltem Wasser, damit Farbe und Biss bleiben."
+     ],
+     "q": "Magst du Gemüse lieber weich oder mit etwas Biss?",
+     "c": "Dämpfe ein grünes Gemüse, kühl es schnell ab und pack es für die nächsten zwei Tage ein."
+    },
+    "es": {
+     "t": "Verduras al vapor",
+     "g": "Cocinar verduras al vapor rápido para que sigan vivas, crujientes y buenas varios días.",
+     "p": [
+      "Cuécelas al vapor tapadas sobre agua hirviendo, solo hasta que estén tiernas pero firmes.",
+      "El brócoli, las judías verdes y las zanahorias tardan solo unos minutos.",
+      "Enfríalas rápido, incluso en agua fría, para que conserven color y textura."
+     ],
+     "q": "¿Prefieres las verduras blandas o un poco crujientes?",
+     "c": "Cuece al vapor una verdura verde, enfríala rápido y guárdala para los próximos dos días."
+    },
+    "fr": {
+     "t": "Cuire les légumes à la vapeur",
+     "g": "Cuire les légumes à la vapeur rapidement pour qu'ils restent vifs, croquants et bons plusieurs jours.",
+     "p": [
+      "Cuis-les à couvert au-dessus de l'eau frémissante, juste tendres mais encore fermes.",
+      "Brocoli, haricots verts et carottes ne demandent que quelques minutes.",
+      "Refroidis-les vite, même dans l'eau froide, pour garder couleur et croquant."
+     ],
+     "q": "Tu préfères les légumes fondants ou un peu croquants ?",
+     "c": "Cuis un légume vert à la vapeur, refroidis-le vite et range-le pour les deux jours suivants."
+    },
+    "it": {
+     "t": "Cuocere le verdure al vapore",
+     "g": "Cuocere le verdure al vapore in fretta perché restino vivaci, croccanti e buone per giorni.",
+     "p": [
+      "Cuocile coperte sopra l'acqua che sobbolle, solo finché sono tenere ma ancora sode.",
+      "Broccoli, fagiolini e carote richiedono pochi minuti.",
+      "Raffreddale subito, anche in acqua fredda, per mantenere colore e croccantezza."
+     ],
+     "q": "Preferisci le verdure morbide o un po' croccanti?",
+     "c": "Cuoci al vapore una verdura verde, raffreddala in fretta e conservala per i prossimi due giorni."
+    },
+    "pt": {
+     "t": "Legumes a vapor",
+     "g": "Cozer legumes a vapor depressa para ficarem vivos, estaladiços e bons durante dias.",
+     "p": [
+      "Coze-os tapados sobre água a ferver, só até estarem tenros mas ainda firmes.",
+      "Brócolos, feijão-verde e cenouras demoram poucos minutos.",
+      "Arrefece-os depressa, até em água fria, para manterem a cor e a textura."
+     ],
+     "q": "Preferes os legumes macios ou com alguma firmeza?",
+     "c": "Coze a vapor um legume verde, arrefece-o depressa e guarda-o para os próximos dois dias."
+    },
+    "pt_BR": {
+     "t": "Legumes no vapor",
+     "g": "Cozinhar legumes no vapor rapidinho para ficarem vivos, crocantes e bons por dias.",
+     "p": [
+      "Cozinhe tampado sobre água fervendo, só até ficarem macios mas ainda firmes.",
+      "Brócolis, vagem e cenoura levam só alguns minutos.",
+      "Esfrie rápido, até em água fria, para manter a cor e a crocância."
+     ],
+     "q": "Você prefere legumes macios ou mais firmes?",
+     "c": "Cozinhe no vapor um legume verde, esfrie rápido e guarde para os próximos dois dias."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sheet-pan meals",
+     "g": "Cook protein and vegetables together on one tray for easy, low-mess prep.",
+     "p": [
+      "Pair foods with similar cooking times, or add quick ones later in the bake.",
+      "Toss everything in oil and one seasoning blend for a complete meal.",
+      "Divide the tray into boxes and you have several lunches with one pan to wash."
+     ],
+     "q": "Which protein and vegetables would you put together on one tray?",
+     "c": "Make one sheet-pan meal and divide it into at least three portions."
+    },
+    "de": {
+     "t": "Blechgerichte",
+     "g": "Gare Eiweiß und Gemüse zusammen auf einem Blech für einfaches Vorkochen mit wenig Abwasch.",
+     "p": [
+      "Kombiniere Zutaten mit ähnlicher Garzeit oder gib schnelle später dazu.",
+      "Alles mit Öl und einer Gewürzmischung vermengen, fertig ist eine ganze Mahlzeit.",
+      "Blech auf Dosen verteilen: mehrere Mittagessen, nur ein Blech zum Spülen."
+     ],
+     "q": "Welches Eiweiß und welches Gemüse würdest du auf ein Blech legen?",
+     "c": "Mach ein Blechgericht und teile es in mindestens drei Portionen."
+    },
+    "es": {
+     "t": "Comidas en una sola bandeja",
+     "g": "Cocinar proteína y verduras juntas en una bandeja para una preparación fácil y con poco desorden.",
+     "p": [
+      "Combina alimentos con tiempos de cocción parecidos o añade los rápidos más tarde.",
+      "Mezcla todo con aceite y una mezcla de especias para una comida completa.",
+      "Reparte la bandeja en recipientes: varios almuerzos y solo una bandeja que fregar."
+     ],
+     "q": "¿Qué proteína y verduras juntarías en una bandeja?",
+     "c": "Haz una comida en bandeja y repártela en al menos tres raciones."
+    },
+    "fr": {
+     "t": "Repas sur une plaque",
+     "g": "Cuire protéines et légumes ensemble sur une seule plaque pour une préparation simple.",
+     "p": [
+      "Associe des aliments au temps de cuisson proche, ou ajoute les plus rapides en cours de route.",
+      "Mélange tout avec de l'huile et un mélange d'épices pour un repas complet.",
+      "Répartis la plaque en boîtes : plusieurs déjeuners et une seule plaque à laver."
+     ],
+     "q": "Quelles protéines et quels légumes mettrais-tu ensemble sur une plaque ?",
+     "c": "Prépare un repas sur plaque et divise-le en au moins trois portions."
+    },
+    "it": {
+     "t": "Pasti in una sola teglia",
+     "g": "Cuocere proteine e verdure insieme in una teglia per un meal prep facile e con pochi piatti.",
+     "p": [
+      "Abbina cibi con tempi di cottura simili, o aggiungi quelli veloci più tardi.",
+      "Condisci tutto con olio e un mix di spezie per un pasto completo.",
+      "Dividi la teglia nei contenitori: più pranzi e una sola teglia da lavare."
+     ],
+     "q": "Quali proteine e verdure metteresti insieme in una teglia?",
+     "c": "Prepara un pasto in teglia e dividilo in almeno tre porzioni."
+    },
+    "pt": {
+     "t": "Refeições num só tabuleiro",
+     "g": "Cozinhar proteína e legumes juntos num tabuleiro para uma preparação fácil e com pouca loiça.",
+     "p": [
+      "Junta alimentos com tempos de cozedura parecidos ou acrescenta os rápidos mais tarde.",
+      "Envolve tudo em azeite e numa mistura de especiarias para uma refeição completa.",
+      "Divide o tabuleiro por caixas: vários almoços e só um tabuleiro para lavar."
+     ],
+     "q": "Que proteína e legumes juntavas num tabuleiro?",
+     "c": "Faz uma refeição de tabuleiro e divide-a em pelo menos três porções."
+    },
+    "pt_BR": {
+     "t": "Refeições numa assadeira só",
+     "g": "Cozinhar proteína e legumes juntos numa assadeira para um preparo fácil e com pouca louça.",
+     "p": [
+      "Junte alimentos com tempo de forno parecido ou coloque os rápidos depois.",
+      "Misture tudo com azeite e um mix de temperos para uma refeição completa.",
+      "Divida a assadeira em potes: várias marmitas e só uma assadeira para lavar."
+     ],
+     "q": "Que proteína e legumes você juntaria numa assadeira?",
+     "c": "Faça uma refeição de assadeira e divida em pelo menos três porções."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One-pot meals",
+     "g": "Make stews, pilafs and pasta dishes that cook in a single pot.",
+     "p": [
+      "Start by softening onion and garlic, then add spices for a flavour base.",
+      "Add grains or pasta with liquid and vegetables, and let it all simmer together.",
+      "One pot means less washing up and a whole batch of meals in one go."
+     ],
+     "q": "What is your favourite dish that could be made in just one pot?",
+     "c": "Cook one one-pot meal and pack it into portions for the next days."
+    },
+    "de": {
+     "t": "Eintopfgerichte",
+     "g": "Koche Eintöpfe, Pilaws und Nudelgerichte, die in nur einem Topf garen.",
+     "p": [
+      "Zuerst Zwiebel und Knoblauch andünsten, dann Gewürze als Geschmacksbasis dazugeben.",
+      "Getreide oder Nudeln mit Flüssigkeit und Gemüse zugeben und alles zusammen köcheln.",
+      "Ein Topf heißt weniger Abwasch und viele Mahlzeiten auf einmal."
+     ],
+     "q": "Welches Lieblingsgericht ließe sich in nur einem Topf kochen?",
+     "c": "Koch ein Ein-Topf-Gericht und teile es für die nächsten Tage in Portionen."
+    },
+    "es": {
+     "t": "Comidas en una sola olla",
+     "g": "Preparar guisos, pilafs y platos de pasta que se cocinan en una sola olla.",
+     "p": [
+      "Empieza pochando cebolla y ajo y añade especias como base de sabor.",
+      "Agrega cereal o pasta con líquido y verduras, y deja que todo se cueza junto.",
+      "Una olla significa menos platos y muchas comidas de una vez."
+     ],
+     "q": "¿Cuál es tu plato favorito que podría hacerse en una sola olla?",
+     "c": "Cocina un plato en una sola olla y repártelo en raciones para los próximos días."
+    },
+    "fr": {
+     "t": "Repas en une seule casserole",
+     "g": "Préparer ragoûts, pilafs et plats de pâtes qui cuisent dans une seule marmite.",
+     "p": [
+      "Commence par faire revenir oignon et ail, puis ajoute les épices comme base de goût.",
+      "Ajoute céréales ou pâtes avec du liquide et des légumes, et laisse mijoter ensemble.",
+      "Une seule marmite, c'est moins de vaisselle et plein de repas d'un coup."
+     ],
+     "q": "Quel est ton plat préféré qui pourrait se faire dans une seule marmite ?",
+     "c": "Cuisine un plat en une seule marmite et répartis-le en portions pour les jours suivants."
+    },
+    "it": {
+     "t": "Piatti unici in una pentola",
+     "g": "Preparare stufati, pilaf e primi che cuociono in una sola pentola.",
+     "p": [
+      "Inizia facendo appassire cipolla e aglio, poi aggiungi le spezie come base di sapore.",
+      "Unisci cereali o pasta con liquido e verdure e lascia cuocere tutto insieme.",
+      "Una sola pentola vuol dire meno piatti da lavare e tanti pasti in una volta."
+     ],
+     "q": "Qual è il tuo piatto preferito che si potrebbe fare in una sola pentola?",
+     "c": "Cucina un piatto in una sola pentola e dividilo in porzioni per i prossimi giorni."
+    },
+    "pt": {
+     "t": "Refeições numa só panela",
+     "g": "Fazer guisados, pilafs e pratos de massa que cozinham numa única panela.",
+     "p": [
+      "Começa por alourar cebola e alho e junta especiarias como base de sabor.",
+      "Acrescenta cereal ou massa com líquido e legumes e deixa cozinhar tudo junto.",
+      "Uma panela só significa menos loiça e muitas refeições de uma vez."
+     ],
+     "q": "Qual é o teu prato preferido que dava para fazer numa só panela?",
+     "c": "Cozinha uma refeição numa só panela e divide-a em porções para os próximos dias."
+    },
+    "pt_BR": {
+     "t": "Refeições de panela única",
+     "g": "Fazer ensopados, arroz pilaf e macarrões que cozinham numa só panela.",
+     "p": [
+      "Comece refogando cebola e alho e junte temperos como base de sabor.",
+      "Acrescente grão ou macarrão com líquido e legumes e deixe tudo cozinhar junto.",
+      "Uma panela só significa menos louça e várias refeições de uma vez."
+     ],
+     "q": "Qual seu prato favorito que daria para fazer numa panela só?",
+     "c": "Faça uma refeição de panela única e divida em porções para os próximos dias."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple soups for the week",
+     "g": "Learn one basic vegetable soup method you can change endlessly.",
+     "p": [
+      "Soften onion and other vegetables in a little oil, then add stock or water.",
+      "Simmer until tender, season and blend smooth or leave it chunky.",
+      "Change the vegetables, spices or add beans to make a new soup every week."
+     ],
+     "q": "What soup reminds you of home or makes you feel good?",
+     "c": "Make one pot of vegetable soup with what you have and freeze two portions."
+    },
+    "de": {
+     "t": "Einfache Suppen für die Woche",
+     "g": "Lerne eine Grundmethode für Gemüsesuppe, die du endlos abwandeln kannst.",
+     "p": [
+      "Zwiebel und anderes Gemüse in etwas Öl andünsten, dann Brühe oder Wasser zugeben.",
+      "Weich köcheln, würzen und glatt pürieren oder stückig lassen.",
+      "Wechsle Gemüse oder Gewürze oder gib Bohnen dazu, und jede Woche gibt es eine neue Suppe."
+     ],
+     "q": "Welche Suppe erinnert dich an zu Hause oder tut dir gut?",
+     "c": "Koch einen Topf Gemüsesuppe mit dem, was da ist, und friere zwei Portionen ein."
+    },
+    "es": {
+     "t": "Sopas sencillas para la semana",
+     "g": "Aprender un método básico de sopa de verduras que puedes variar sin fin.",
+     "p": [
+      "Rehoga cebolla y otras verduras con un poco de aceite y añade caldo o agua.",
+      "Cuece hasta que estén tiernas, sazona y tritura fino o déjala con tropezones.",
+      "Cambia las verduras, las especias o añade legumbres para una sopa nueva cada semana."
+     ],
+     "q": "¿Qué sopa te recuerda a casa o te hace sentir bien?",
+     "c": "Haz una olla de sopa de verduras con lo que tengas y congela dos raciones."
+    },
+    "fr": {
+     "t": "Des soupes simples pour la semaine",
+     "g": "Apprendre une méthode de base de soupe de légumes à varier à l'infini.",
+     "p": [
+      "Fais revenir l'oignon et d'autres légumes dans un peu d'huile, puis ajoute bouillon ou eau.",
+      "Laisse mijoter jusqu'à tendreté, assaisonne et mixe, ou garde des morceaux.",
+      "Change les légumes, les épices ou ajoute des légumineuses pour une nouvelle soupe chaque semaine."
+     ],
+     "q": "Quelle soupe te rappelle la maison ou te fait du bien ?",
+     "c": "Prépare une marmite de soupe de légumes avec ce que tu as et congèle deux portions."
+    },
+    "it": {
+     "t": "Zuppe semplici per la settimana",
+     "g": "Imparare un metodo base per la zuppa di verdure da variare all'infinito.",
+     "p": [
+      "Fai appassire cipolla e altre verdure in poco olio, poi aggiungi brodo o acqua.",
+      "Cuoci finché sono tenere, aggiusta di sale e frulla o lasciala a pezzi.",
+      "Cambia verdure, spezie o aggiungi legumi per una zuppa nuova ogni settimana."
+     ],
+     "q": "Quale zuppa ti ricorda casa o ti fa stare bene?",
+     "c": "Prepara una pentola di zuppa di verdure con quello che hai e congela due porzioni."
+    },
+    "pt": {
+     "t": "Sopas simples para a semana",
+     "g": "Aprender um método básico de sopa de legumes que podes variar sem fim.",
+     "p": [
+      "Aloura a cebola e outros legumes num pouco de azeite e junta caldo ou água.",
+      "Coze até ficarem macios, tempera e tritura bem ou deixa aos pedaços.",
+      "Muda os legumes, as especiarias ou junta leguminosas para uma sopa nova cada semana."
+     ],
+     "q": "Que sopa te lembra casa ou te faz sentir bem?",
+     "c": "Faz uma panela de sopa de legumes com o que tens e congela duas porções."
+    },
+    "pt_BR": {
+     "t": "Sopas simples para a semana",
+     "g": "Aprender um método básico de sopa de legumes que você pode variar sem fim.",
+     "p": [
+      "Refogue cebola e outros legumes num pouco de óleo e junte caldo ou água.",
+      "Cozinhe até amaciar, tempere e bata no liquidificador ou deixe em pedaços.",
+      "Troque os legumes, os temperos ou junte feijão para uma sopa nova toda semana."
+     ],
+     "q": "Que sopa lembra sua casa ou faz você se sentir bem?",
+     "c": "Faça uma panela de sopa de legumes com o que tiver e congele duas porções."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Batch-cooked stews",
+     "g": "Cook hearty stews that taste even better on the second and third day.",
+     "p": [
+      "Brown meat or vegetables first for deeper flavour, then add liquid and simmer slowly.",
+      "Flavours keep blending as the stew rests in the fridge overnight.",
+      "Stews freeze very well, so make a big pot and save some for later weeks."
+     ],
+     "q": "Which stew or slow-cooked dish do you enjoy most?",
+     "c": "Cook a big pot of stew and freeze at least two portions for another week."
+    },
+    "de": {
+     "t": "Eintöpfe auf Vorrat",
+     "g": "Koche herzhafte Eintöpfe, die am zweiten und dritten Tag sogar noch besser schmecken.",
+     "p": [
+      "Fleisch oder Gemüse zuerst anbraten für mehr Geschmack, dann Flüssigkeit zugeben und sanft schmoren.",
+      "Über Nacht im Kühlschrank verbinden sich die Aromen noch weiter.",
+      "Eintöpfe lassen sich super einfrieren, also koch viel und heb etwas für später auf."
+     ],
+     "q": "Welcher Eintopf oder welches Schmorgericht schmeckt dir am besten?",
+     "c": "Koch einen großen Topf Eintopf und friere mindestens zwei Portionen für eine andere Woche ein."
+    },
+    "es": {
+     "t": "Guisos cocinados en cantidad",
+     "g": "Cocinar guisos contundentes que saben aún mejor el segundo y el tercer día.",
+     "p": [
+      "Dora primero la carne o las verduras para más sabor, luego añade líquido y cuece lento.",
+      "Los sabores siguen mezclándose mientras el guiso reposa en la nevera.",
+      "Los guisos se congelan muy bien: haz una olla grande y guarda para otras semanas."
+     ],
+     "q": "¿Qué guiso o plato de cocción lenta te gusta más?",
+     "c": "Cocina una olla grande de guiso y congela al menos dos raciones para otra semana."
+    },
+    "fr": {
+     "t": "Ragoûts en grande quantité",
+     "g": "Cuisiner des ragoûts copieux qui sont encore meilleurs le deuxième et le troisième jour.",
+     "p": [
+      "Fais d'abord dorer viande ou légumes pour plus de goût, puis ajoute du liquide et mijote doucement.",
+      "Les saveurs continuent de se mêler pendant la nuit au frigo.",
+      "Les ragoûts se congèlent très bien : fais-en une grosse marmite et garde-en pour plus tard."
+     ],
+     "q": "Quel ragoût ou plat mijoté préfères-tu ?",
+     "c": "Cuisine une grande marmite de ragoût et congèle au moins deux portions pour une autre semaine."
+    },
+    "it": {
+     "t": "Stufati in grandi quantità",
+     "g": "Cucinare stufati sostanziosi che sono ancora più buoni il secondo e il terzo giorno.",
+     "p": [
+      "Rosola prima carne o verdure per più sapore, poi aggiungi liquido e cuoci piano.",
+      "I sapori continuano a fondersi mentre lo stufato riposa in frigo.",
+      "Gli stufati si congelano benissimo: fanne una pentola grande e tienine per le prossime settimane."
+     ],
+     "q": "Quale stufato o piatto a cottura lenta ti piace di più?",
+     "c": "Cucina una pentola grande di stufato e congela almeno due porzioni per un'altra settimana."
+    },
+    "pt": {
+     "t": "Guisados em quantidade",
+     "g": "Cozinhar guisados reconfortantes que ficam ainda melhores no segundo e terceiro dia.",
+     "p": [
+      "Aloura primeiro a carne ou os legumes para mais sabor, depois junta líquido e coze devagar.",
+      "Os sabores continuam a apurar enquanto o guisado repousa no frigorífico.",
+      "Os guisados congelam muito bem: faz uma panela grande e guarda para outras semanas."
+     ],
+     "q": "De que guisado ou prato de cozedura lenta gostas mais?",
+     "c": "Cozinha uma panela grande de guisado e congela pelo menos duas porções para outra semana."
+    },
+    "pt_BR": {
+     "t": "Ensopados em quantidade",
+     "g": "Cozinhar ensopados caprichados que ficam ainda melhores no segundo e terceiro dia.",
+     "p": [
+      "Doure antes a carne ou os legumes para mais sabor, depois junte líquido e cozinhe devagar.",
+      "Os sabores continuam se misturando enquanto o ensopado descansa na geladeira.",
+      "Ensopados congelam muito bem: faça uma panela grande e guarde para outras semanas."
+     ],
+     "q": "Qual ensopado ou prato de cozimento lento você mais gosta?",
+     "c": "Cozinhe uma panela grande de ensopado e congele pelo menos duas porções para outra semana."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chilli for meal prep",
+     "g": "Make a classic batch chilli with beans, spices and many topping options.",
+     "p": [
+      "Brown onion and mince or extra beans, then add tomatoes, beans and spices.",
+      "Simmer gently so it thickens and the flavours come together.",
+      "Change toppings each day: yoghurt, cheese, herbs, avocado or tortilla chips."
+     ],
+     "q": "What toppings would make chilli exciting for you?",
+     "c": "Cook one pot of chilli and plan a different topping for each day you eat it."
+    },
+    "de": {
+     "t": "Chili fürs Meal Prep",
+     "g": "Koche ein klassisches Chili auf Vorrat mit Bohnen, Gewürzen und vielen Topping-Ideen.",
+     "p": [
+      "Zwiebel und Hack oder extra Bohnen anbraten, dann Tomaten, Bohnen und Gewürze zugeben.",
+      "Sanft köcheln lassen, damit es eindickt und die Aromen sich verbinden.",
+      "Wechsle täglich das Topping: Joghurt, Käse, Kräuter, Avocado oder Tortillachips."
+     ],
+     "q": "Welche Toppings würden Chili für dich spannend machen?",
+     "c": "Koch einen Topf Chili und plane für jeden Tag ein anderes Topping."
+    },
+    "es": {
+     "t": "Chili para meal prep",
+     "g": "Preparar un chili clásico en cantidad con alubias, especias y muchas opciones de topping.",
+     "p": [
+      "Dora cebolla y carne picada o más legumbres, luego añade tomate, alubias y especias.",
+      "Cuécelo a fuego suave para que espese y los sabores se unan.",
+      "Cambia el topping cada día: yogur, queso, hierbas, aguacate o totopos."
+     ],
+     "q": "¿Qué toppings harían el chili más emocionante para ti?",
+     "c": "Cocina una olla de chili y planifica un topping diferente para cada día."
+    },
+    "fr": {
+     "t": "Le chili en meal prep",
+     "g": "Préparer un chili classique en grande quantité, avec haricots, épices et plein de garnitures.",
+     "p": [
+      "Fais revenir oignon et viande hachée ou plus de haricots, puis ajoute tomates, haricots et épices.",
+      "Laisse mijoter doucement pour qu'il épaississe et que les saveurs se mêlent.",
+      "Change de garniture chaque jour : yaourt, fromage, herbes, avocat ou chips de maïs."
+     ],
+     "q": "Quelles garnitures rendraient le chili plus excitant pour toi ?",
+     "c": "Cuisine une marmite de chili et prévois une garniture différente pour chaque jour."
+    },
+    "it": {
+     "t": "Il chili per il meal prep",
+     "g": "Preparare un chili classico in quantità con fagioli, spezie e tante guarnizioni.",
+     "p": [
+      "Rosola cipolla e macinato o più fagioli, poi aggiungi pomodori, fagioli e spezie.",
+      "Cuoci piano perché si addensi e i sapori si uniscano.",
+      "Cambia guarnizione ogni giorno: yogurt, formaggio, erbe, avocado o tortilla chips."
+     ],
+     "q": "Quali guarnizioni renderebbero il chili più interessante per te?",
+     "c": "Cucina una pentola di chili e pianifica una guarnizione diversa per ogni giorno."
+    },
+    "pt": {
+     "t": "Chili para meal prep",
+     "g": "Fazer um chili clássico em quantidade com feijão, especiarias e muitas guarnições.",
+     "p": [
+      "Aloura cebola e carne picada ou mais feijão, depois junta tomate, feijão e especiarias.",
+      "Deixa cozinhar em lume brando para engrossar e os sabores se juntarem.",
+      "Muda a guarnição todos os dias: iogurte, queijo, ervas, abacate ou tortilhas."
+     ],
+     "q": "Que guarnições tornariam o chili mais interessante para ti?",
+     "c": "Cozinha uma panela de chili e planeia uma guarnição diferente para cada dia."
+    },
+    "pt_BR": {
+     "t": "Chili para marmita",
+     "g": "Fazer um chili clássico em quantidade com feijão, temperos e muitas coberturas.",
+     "p": [
+      "Doure cebola e carne moída ou mais feijão, depois junte tomate, feijão e temperos.",
+      "Cozinhe em fogo baixo para engrossar e os sabores se misturarem.",
+      "Troque a cobertura todo dia: iogurte, queijo, ervas, abacate ou nachos."
+     ],
+     "q": "Que coberturas deixariam o chili mais animado para você?",
+     "c": "Cozinhe uma panela de chili e planeje uma cobertura diferente para cada dia."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tomato sauce in big batches",
+     "g": "Make one basic tomato sauce to use for pasta, pizza, shakshuka and more.",
+     "p": [
+      "Soften onion and garlic in olive oil, then add canned or fresh tomatoes.",
+      "Simmer gently until thick, season and add herbs like basil or oregano.",
+      "Freeze it in small portions so you always have a sauce ready to go."
+     ],
+     "q": "Which dish would you make first with a jar of homemade tomato sauce?",
+     "c": "Make a big batch of tomato sauce and freeze it in at least three small portions."
+    },
+    "de": {
+     "t": "Tomatensoße in großen Mengen",
+     "g": "Koche eine Grund-Tomatensoße für Pasta, Pizza, Shakshuka und mehr.",
+     "p": [
+      "Zwiebel und Knoblauch in Olivenöl andünsten, dann Dosen- oder frische Tomaten zugeben.",
+      "Sanft köcheln, bis sie dick ist, würzen und Kräuter wie Basilikum oder Oregano zufügen.",
+      "Portionsweise einfrieren, dann hast du immer eine Soße parat."
+     ],
+     "q": "Welches Gericht würdest du zuerst mit selbst gemachter Tomatensoße kochen?",
+     "c": "Koch eine große Menge Tomatensoße und friere sie in mindestens drei kleinen Portionen ein."
+    },
+    "es": {
+     "t": "Salsa de tomate en grandes cantidades",
+     "g": "Preparar una salsa de tomate básica para pasta, pizza, shakshuka y mucho más.",
+     "p": [
+      "Pocha cebolla y ajo en aceite de oliva y añade tomate en conserva o fresco.",
+      "Cuece a fuego suave hasta que espese, sazona y añade hierbas como albahaca u orégano.",
+      "Congélala en raciones pequeñas para tener siempre salsa a mano."
+     ],
+     "q": "¿Qué plato harías primero con un bote de salsa de tomate casera?",
+     "c": "Haz una buena tanda de salsa de tomate y congélala en al menos tres raciones pequeñas."
+    },
+    "fr": {
+     "t": "Sauce tomate en grande quantité",
+     "g": "Préparer une sauce tomate de base pour pâtes, pizza, chakchouka et bien plus.",
+     "p": [
+      "Fais revenir oignon et ail dans l'huile d'olive, puis ajoute des tomates en conserve ou fraîches.",
+      "Laisse mijoter jusqu'à ce qu'elle épaississe, assaisonne et ajoute basilic ou origan.",
+      "Congèle-la en petites portions pour avoir toujours une sauce prête."
+     ],
+     "q": "Quel plat ferais-tu en premier avec un bocal de sauce tomate maison ?",
+     "c": "Prépare une grande quantité de sauce tomate et congèle-la en au moins trois petites portions."
+    },
+    "it": {
+     "t": "Sugo di pomodoro in grandi quantità",
+     "g": "Preparare un sugo di pomodoro base per pasta, pizza, shakshuka e tanto altro.",
+     "p": [
+      "Fai appassire cipolla e aglio nell'olio d'oliva, poi aggiungi pomodori pelati o freschi.",
+      "Cuoci piano finché si addensa, aggiusta di sale e aggiungi basilico o origano.",
+      "Congelalo in piccole porzioni così hai sempre un sugo pronto."
+     ],
+     "q": "Quale piatto prepareresti per primo con un barattolo di sugo fatto in casa?",
+     "c": "Prepara tanto sugo di pomodoro e congelalo in almeno tre piccole porzioni."
+    },
+    "pt": {
+     "t": "Molho de tomate em grande quantidade",
+     "g": "Fazer um molho de tomate básico para massa, pizza, shakshuka e muito mais.",
+     "p": [
+      "Aloura cebola e alho em azeite e junta tomate em lata ou fresco.",
+      "Deixa cozinhar em lume brando até engrossar, tempera e junta manjericão ou orégãos.",
+      "Congela-o em pequenas porções para teres sempre molho pronto."
+     ],
+     "q": "Que prato fazias primeiro com um frasco de molho de tomate caseiro?",
+     "c": "Faz uma boa quantidade de molho de tomate e congela-o em pelo menos três pequenas porções."
+    },
+    "pt_BR": {
+     "t": "Molho de tomate em grande quantidade",
+     "g": "Fazer um molho de tomate básico para macarrão, pizza, shakshuka e muito mais.",
+     "p": [
+      "Refogue cebola e alho no azeite e junte tomate pelado em lata ou fresco.",
+      "Cozinhe em fogo baixo até engrossar, tempere e junte manjericão ou orégano.",
+      "Congele em porções pequenas para ter sempre molho pronto."
+     ],
+     "q": "Que prato você faria primeiro com um pote de molho de tomate caseiro?",
+     "c": "Faça bastante molho de tomate e congele em pelo menos três porções pequenas."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dressings to keep in the fridge",
+     "g": "Make simple dressings that keep in the fridge and make salads exciting.",
+     "p": [
+      "A basic vinaigrette is about three parts oil to one part vinegar or lemon, plus salt.",
+      "Creamy dressings use yoghurt, tahini or mustard as a base.",
+      "Shake them in a clean jar; most keep several days in the fridge."
+     ],
+     "q": "What dressing do you usually reach for, and what would you like to try?",
+     "c": "Shake up one vinaigrette in a jar and use it on two salads this week."
+    },
+    "de": {
+     "t": "Dressings für den Kühlschrank",
+     "g": "Mach einfache Dressings, die im Kühlschrank halten und Salate spannend machen.",
+     "p": [
+      "Eine Grund-Vinaigrette sind etwa drei Teile Öl auf einen Teil Essig oder Zitrone, plus Salz.",
+      "Cremige Dressings haben Joghurt, Tahin oder Senf als Basis.",
+      "In einem sauberen Glas schütteln; die meisten halten im Kühlschrank mehrere Tage."
+     ],
+     "q": "Zu welchem Dressing greifst du meist, und was würdest du gern probieren?",
+     "c": "Schüttle eine Vinaigrette im Glas und nutze sie diese Woche für zwei Salate."
+    },
+    "es": {
+     "t": "Aliños para tener en la nevera",
+     "g": "Preparar aliños sencillos que duran en la nevera y hacen las ensaladas más apetecibles.",
+     "p": [
+      "Una vinagreta básica lleva unas tres partes de aceite por una de vinagre o limón, más sal.",
+      "Los aliños cremosos usan yogur, tahini o mostaza como base.",
+      "Agítalos en un tarro limpio; la mayoría aguantan varios días en la nevera."
+     ],
+     "q": "¿Qué aliño usas normalmente y cuál te gustaría probar?",
+     "c": "Agita una vinagreta en un tarro y úsala en dos ensaladas esta semana."
+    },
+    "fr": {
+     "t": "Des sauces salade à garder au frigo",
+     "g": "Préparer des sauces simples qui se gardent au frigo et rendent les salades plus gourmandes.",
+     "p": [
+      "Une vinaigrette de base, c'est environ trois parts d'huile pour une de vinaigre ou citron, et du sel.",
+      "Les sauces crémeuses ont pour base yaourt, tahini ou moutarde.",
+      "Secoue-les dans un bocal propre ; la plupart se gardent plusieurs jours au frigo."
+     ],
+     "q": "Quelle sauce utilises-tu d'habitude, et laquelle aimerais-tu essayer ?",
+     "c": "Secoue une vinaigrette dans un bocal et utilise-la pour deux salades cette semaine."
+    },
+    "it": {
+     "t": "Condimenti da tenere in frigo",
+     "g": "Preparare condimenti semplici che durano in frigo e rendono le insalate più gustose.",
+     "p": [
+      "Una vinaigrette base è circa tre parti d'olio per una di aceto o limone, più sale.",
+      "I condimenti cremosi hanno come base yogurt, tahina o senape.",
+      "Agitali in un barattolo pulito; la maggior parte dura diversi giorni in frigo."
+     ],
+     "q": "Quale condimento usi di solito e quale vorresti provare?",
+     "c": "Agita una vinaigrette in un barattolo e usala per due insalate questa settimana."
+    },
+    "pt": {
+     "t": "Molhos para ter no frigorífico",
+     "g": "Fazer molhos simples que aguentam no frigorífico e tornam as saladas mais apetitosas.",
+     "p": [
+      "Um vinagrete básico leva cerca de três partes de azeite para uma de vinagre ou limão, e sal.",
+      "Os molhos cremosos usam iogurte, tahini ou mostarda como base.",
+      "Agita-os num frasco limpo; a maioria dura vários dias no frigorífico."
+     ],
+     "q": "Que molho costumas usar, e qual gostavas de experimentar?",
+     "c": "Agita um vinagrete num frasco e usa-o em duas saladas esta semana."
+    },
+    "pt_BR": {
+     "t": "Molhos para deixar na geladeira",
+     "g": "Fazer molhos simples que duram na geladeira e deixam as saladas mais gostosas.",
+     "p": [
+      "Um vinagrete básico leva cerca de três partes de azeite para uma de vinagre ou limão, e sal.",
+      "Molhos cremosos usam iogurte, tahine ou mostarda como base.",
+      "Agite num pote limpo; a maioria dura vários dias na geladeira."
+     ],
+     "q": "Que molho você costuma usar, e qual gostaria de experimentar?",
+     "c": "Agite um vinagrete num pote e use em duas saladas nesta semana."
+    }
+   }
+  }
+ ]
+}

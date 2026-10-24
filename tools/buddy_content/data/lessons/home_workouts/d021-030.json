@@ -1,0 +1,835 @@
+{
+ "topic": "home_workouts",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The plank basics",
+     "g": "Learn to hold a strong, straight line with steady breathing.",
+     "p": [
+      "Rest on forearms and toes, elbows under shoulders.",
+      "Keep a straight line from head to heels, hips not sagging or high.",
+      "Breathe calmly; a short hold with good form beats a long wobbly one."
+     ],
+     "q": "How long do you think you could hold a plank with good form?",
+     "c": "Hold a forearm plank for 3 rounds of 10 to 20 seconds, resting in between."
+    },
+    "de": {
+     "t": "Grundlagen des Unterarmstützes",
+     "g": "Lerne, eine stabile, gerade Linie mit ruhigem Atem zu halten.",
+     "p": [
+      "Stütz dich auf Unterarme und Zehen, Ellbogen unter den Schultern.",
+      "Halte eine gerade Linie von Kopf bis Ferse, Hüfte weder hängend noch hoch.",
+      "Atme ruhig; kurz und sauber ist besser als lang und wackelig."
+     ],
+     "q": "Wie lange könntest du einen sauberen Unterarmstütz wohl halten?",
+     "c": "Halte 3 Runden je 10 bis 20 Sekunden im Unterarmstütz, mit Pausen dazwischen."
+    },
+    "es": {
+     "t": "La plancha básica",
+     "g": "Aprende a mantener una línea recta y firme respirando con calma.",
+     "p": [
+      "Apóyate en antebrazos y puntas de los pies, codos bajo los hombros.",
+      "Mantén una línea recta de la cabeza a los talones, sin hundir ni subir la cadera.",
+      "Respira tranquilo; poco tiempo con buena técnica vale más que mucho tambaleándote."
+     ],
+     "q": "¿Cuánto tiempo crees que aguantarías una plancha con buena técnica?",
+     "c": "Haz 3 rondas de plancha de 10 a 20 segundos, descansando entre ellas."
+    },
+    "fr": {
+     "t": "Les bases de la planche",
+     "g": "Apprends à tenir une ligne droite et solide en respirant calmement.",
+     "p": [
+      "Appuie-toi sur les avant-bras et les orteils, coudes sous les épaules.",
+      "Garde une ligne droite de la tête aux talons, hanches ni basses ni hautes.",
+      "Respire calmement ; un court maintien propre vaut mieux qu'un long qui tremble."
+     ],
+     "q": "Combien de temps penses-tu tenir une planche bien placée ?",
+     "c": "Tiens la planche 3 fois 10 à 20 secondes, avec du repos entre chaque fois."
+    },
+    "it": {
+     "t": "Le basi del plank",
+     "g": "Impara a mantenere una linea dritta e solida con un respiro tranquillo.",
+     "p": [
+      "Appoggiati su avambracci e punte dei piedi, gomiti sotto le spalle.",
+      "Mantieni una linea dritta dalla testa ai talloni, bacino né basso né alto.",
+      "Respira con calma; poco tempo fatto bene vale più di tanto tempo traballante."
+     ],
+     "q": "Quanto pensi di riuscire a tenere un plank fatto bene?",
+     "c": "Tieni il plank per 3 round da 10 a 20 secondi, recuperando tra uno e l'altro."
+    },
+    "pt": {
+     "t": "O básico da prancha",
+     "g": "Aprende a manter uma linha reta e firme com a respiração calma.",
+     "p": [
+      "Apoia-te nos antebraços e nas pontas dos pés, cotovelos por baixo dos ombros.",
+      "Mantém uma linha reta da cabeça aos calcanhares, sem a anca descair ou subir.",
+      "Respira com calma; pouco tempo bem feito vale mais do que muito a tremer."
+     ],
+     "q": "Quanto tempo achas que aguentas uma prancha bem feita?",
+     "c": "Faz 3 rondas de prancha de 10 a 20 segundos, descansando entre elas."
+    },
+    "pt_BR": {
+     "t": "O básico da prancha",
+     "g": "Aprenda a manter uma linha reta e firme com a respiração calma.",
+     "p": [
+      "Apoie-se nos antebraços e nas pontas dos pés, cotovelos embaixo dos ombros.",
+      "Mantenha uma linha reta da cabeça aos calcanhares, sem o quadril cair ou subir.",
+      "Respire com calma; pouco tempo bem feito vale mais do que muito tempo tremendo."
+     ],
+     "q": "Quanto tempo você acha que aguenta uma prancha bem feita?",
+     "c": "Faça 3 rodadas de prancha de 10 a 20 segundos, descansando entre elas."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knee plank",
+     "g": "Build plank strength with a shorter, friendlier lever.",
+     "p": [
+      "Start like a plank but rest on your knees instead of your toes.",
+      "Keep a straight line from head to knees and gently tighten your belly.",
+      "When it feels easy, try a few seconds on your toes and return to knees."
+     ],
+     "q": "Does the knee plank let you focus better on your form?",
+     "c": "Hold a knee plank for 3 rounds of 20 seconds with calm breathing."
+    },
+    "de": {
+     "t": "Unterarmstütz auf den Knien",
+     "g": "Bau Stützkraft mit einem kürzeren, freundlicheren Hebel auf.",
+     "p": [
+      "Starte wie beim Unterarmstütz, aber stütz dich auf die Knie statt auf die Zehen.",
+      "Halte eine gerade Linie von Kopf bis Knie und spann den Bauch sanft an.",
+      "Wenn es leicht wird, probier ein paar Sekunden auf den Zehen und geh zurück auf die Knie."
+     ],
+     "q": "Kannst du dich auf den Knien besser auf die Technik konzentrieren?",
+     "c": "Halte 3 Runden je 20 Sekunden auf den Knien mit ruhigem Atem."
+    },
+    "es": {
+     "t": "Plancha con rodillas",
+     "g": "Gana fuerza en la plancha con una palanca más corta y amable.",
+     "p": [
+      "Empieza como en la plancha, pero apoya las rodillas en lugar de los pies.",
+      "Mantén una línea recta de la cabeza a las rodillas y activa suave el abdomen.",
+      "Cuando sea fácil, prueba unos segundos sobre los pies y vuelve a las rodillas."
+     ],
+     "q": "¿Con la plancha de rodillas te concentras mejor en la técnica?",
+     "c": "Haz 3 rondas de 20 segundos de plancha con rodillas, respirando con calma."
+    },
+    "fr": {
+     "t": "La planche sur les genoux",
+     "g": "Gagne en force de gainage avec un levier plus court et plus doux.",
+     "p": [
+      "Mets-toi comme pour la planche, mais en appui sur les genoux au lieu des orteils.",
+      "Garde une ligne droite de la tête aux genoux et rentre doucement le ventre.",
+      "Quand c'est facile, essaie quelques secondes sur les orteils puis reviens aux genoux."
+     ],
+     "q": "La planche sur les genoux t'aide-t-elle à mieux te concentrer sur ta posture ?",
+     "c": "Tiens la planche sur les genoux 3 fois 20 secondes en respirant calmement."
+    },
+    "it": {
+     "t": "Plank sulle ginocchia",
+     "g": "Costruisci forza nel plank con una leva più corta e gentile.",
+     "p": [
+      "Mettiti come nel plank, ma in appoggio sulle ginocchia invece che sulle punte.",
+      "Mantieni una linea dritta dalla testa alle ginocchia e attiva dolcemente l'addome.",
+      "Quando diventa facile, prova qualche secondo sulle punte e torna alle ginocchia."
+     ],
+     "q": "Sulle ginocchia riesci a concentrarti meglio sulla tecnica?",
+     "c": "Tieni il plank sulle ginocchia per 3 round da 20 secondi, respirando con calma."
+    },
+    "pt": {
+     "t": "Prancha de joelhos",
+     "g": "Ganha força na prancha com uma alavanca mais curta e simpática.",
+     "p": [
+      "Começa como na prancha, mas apoia os joelhos em vez das pontas dos pés.",
+      "Mantém uma linha reta da cabeça aos joelhos e contrai suavemente a barriga.",
+      "Quando ficar fácil, tenta uns segundos nas pontas dos pés e volta aos joelhos."
+     ],
+     "q": "Com a prancha de joelhos consegues concentrar-te melhor na técnica?",
+     "c": "Faz 3 rondas de 20 segundos de prancha de joelhos, a respirar com calma."
+    },
+    "pt_BR": {
+     "t": "Prancha com joelhos",
+     "g": "Ganhe força na prancha com uma alavanca mais curta e gentil.",
+     "p": [
+      "Comece como na prancha, mas apoie os joelhos em vez das pontas dos pés.",
+      "Mantenha uma linha reta da cabeça aos joelhos e contraia o abdômen de leve.",
+      "Quando ficar fácil, tente alguns segundos nas pontas dos pés e volte aos joelhos."
+     ],
+     "q": "Na prancha com joelhos você consegue focar melhor na técnica?",
+     "c": "Faça 3 rodadas de 20 segundos de prancha com joelhos, respirando com calma."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bird dog",
+     "g": "Train balance and core control with opposite arm and leg reaches.",
+     "p": [
+      "Start on hands and knees, hands under shoulders, knees under hips.",
+      "Slowly reach one arm forward and the opposite leg back, keeping hips level.",
+      "Pause, return with control and switch sides; slow beats fast here."
+     ],
+     "q": "Which side felt steadier during the bird dog?",
+     "c": "Do 2 sets of 6 bird dogs per side, pausing two seconds at full reach."
+    },
+    "de": {
+     "t": "Der Vierfüßlerstand mit Strecken",
+     "g": "Trainiere Gleichgewicht und Rumpfkontrolle mit diagonalem Arm- und Beinstrecken.",
+     "p": [
+      "Geh in den Vierfüßlerstand, Hände unter den Schultern, Knie unter der Hüfte.",
+      "Streck langsam einen Arm nach vorn und das andere Bein nach hinten, Hüfte bleibt gerade.",
+      "Halten, kontrolliert zurück und Seite wechseln; langsam schlägt schnell."
+     ],
+     "q": "Welche Seite war beim Strecken stabiler?",
+     "c": "Mach 2 Sätze à 6 pro Seite und halte die Streckung jeweils zwei Sekunden."
+    },
+    "es": {
+     "t": "El bird dog",
+     "g": "Entrena equilibrio y control del core con alcances de brazo y pierna opuestos.",
+     "p": [
+      "Ponte a cuatro patas, manos bajo los hombros y rodillas bajo la cadera.",
+      "Estira despacio un brazo al frente y la pierna contraria atrás, cadera nivelada.",
+      "Pausa, vuelve con control y cambia de lado; aquí lento es mejor que rápido."
+     ],
+     "q": "¿Qué lado se sintió más estable en el bird dog?",
+     "c": "Haz 2 series de 6 por lado, con una pausa de dos segundos en máxima extensión."
+    },
+    "fr": {
+     "t": "Le bird dog",
+     "g": "Travaille l'équilibre et le gainage en tendant le bras et la jambe opposés.",
+     "p": [
+      "Mets-toi à quatre pattes, mains sous les épaules, genoux sous les hanches.",
+      "Tends lentement un bras devant et la jambe opposée derrière, bassin bien droit.",
+      "Marque une pause, reviens en contrôle et change de côté ; lent vaut mieux que rapide."
+     ],
+     "q": "Quel côté était le plus stable pendant le bird dog ?",
+     "c": "Fais 2 séries de 6 par côté avec une pause de deux secondes en extension."
+    },
+    "it": {
+     "t": "Il bird dog",
+     "g": "Allena equilibrio e controllo del core allungando braccio e gamba opposti.",
+     "p": [
+      "Mettiti a quattro zampe, mani sotto le spalle e ginocchia sotto le anche.",
+      "Allunga piano un braccio in avanti e la gamba opposta indietro, bacino fermo.",
+      "Pausa, torna con controllo e cambia lato; qui lento è meglio di veloce."
+     ],
+     "q": "Quale lato ti è sembrato più stabile nel bird dog?",
+     "c": "Fai 2 serie da 6 per lato, con una pausa di due secondi in massima estensione."
+    },
+    "pt": {
+     "t": "O bird dog",
+     "g": "Treina equilíbrio e controlo do core esticando braço e perna opostos.",
+     "p": [
+      "Fica de quatro, mãos por baixo dos ombros e joelhos por baixo da anca.",
+      "Estica devagar um braço à frente e a perna oposta para trás, com a anca nivelada.",
+      "Pausa, volta com controlo e troca de lado; aqui devagar é melhor que depressa."
+     ],
+     "q": "Que lado te pareceu mais estável no bird dog?",
+     "c": "Faz 2 séries de 6 por lado, com uma pausa de dois segundos na extensão máxima."
+    },
+    "pt_BR": {
+     "t": "O bird dog",
+     "g": "Treine equilíbrio e controle do core esticando braço e perna opostos.",
+     "p": [
+      "Fique em quatro apoios, mãos embaixo dos ombros e joelhos embaixo do quadril.",
+      "Estique devagar um braço à frente e a perna oposta para trás, quadril nivelado.",
+      "Pause, volte com controle e troque de lado; aqui devagar é melhor que rápido."
+     ],
+     "q": "Qual lado pareceu mais estável no bird dog?",
+     "c": "Faça 2 séries de 6 por lado, com uma pausa de dois segundos na extensão máxima."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The dead bug",
+     "g": "Learn a calm core exercise you do lying on your back.",
+     "p": [
+      "Lie on your back with arms up and knees bent above your hips.",
+      "Slowly lower one arm and the opposite leg towards the floor, back staying gently down.",
+      "Return and switch sides, breathing out as you reach away."
+     ],
+     "q": "Did the dead bug feel calm or surprisingly challenging?",
+     "c": "Do 2 sets of 6 dead bugs per side, moving as slowly as you can."
+    },
+    "de": {
+     "t": "Der Dead Bug",
+     "g": "Lerne eine ruhige Rumpfübung in Rückenlage.",
+     "p": [
+      "Leg dich auf den Rücken, Arme nach oben, Knie gebeugt über der Hüfte.",
+      "Senk langsam einen Arm und das andere Bein Richtung Boden, der Rücken bleibt sanft unten.",
+      "Zurück und Seite wechseln, beim Wegstrecken ausatmen."
+     ],
+     "q": "War der Dead Bug ruhig oder überraschend fordernd?",
+     "c": "Mach 2 Sätze à 6 pro Seite und beweg dich so langsam wie möglich."
+    },
+    "es": {
+     "t": "El dead bug",
+     "g": "Aprende un ejercicio de core tranquilo que se hace boca arriba.",
+     "p": [
+      "Túmbate boca arriba, brazos hacia el techo y rodillas dobladas sobre la cadera.",
+      "Baja despacio un brazo y la pierna contraria hacia el suelo, con la espalda apoyada.",
+      "Vuelve y cambia de lado, soltando el aire al alejar brazo y pierna."
+     ],
+     "q": "¿El dead bug te pareció tranquilo o sorprendentemente exigente?",
+     "c": "Haz 2 series de 6 dead bugs por lado, moviéndote lo más lento que puedas."
+    },
+    "fr": {
+     "t": "Le dead bug",
+     "g": "Apprends un exercice de gainage calme à faire sur le dos.",
+     "p": [
+      "Allonge-toi sur le dos, bras vers le plafond, genoux pliés au-dessus des hanches.",
+      "Descends lentement un bras et la jambe opposée vers le sol, dos gardé au sol.",
+      "Reviens et change de côté, en expirant quand tu t'allonges."
+     ],
+     "q": "Le dead bug t'a-t-il semblé calme ou étonnamment difficile ?",
+     "c": "Fais 2 séries de 6 dead bugs par côté, aussi lentement que possible."
+    },
+    "it": {
+     "t": "Il dead bug",
+     "g": "Impara un esercizio per il core tranquillo da fare sulla schiena.",
+     "p": [
+      "Sdraiati sulla schiena, braccia verso il soffitto e ginocchia piegate sopra le anche.",
+      "Abbassa piano un braccio e la gamba opposta verso terra, con la schiena appoggiata.",
+      "Torna e cambia lato, espirando mentre ti allunghi."
+     ],
+     "q": "Il dead bug ti è sembrato tranquillo o sorprendentemente impegnativo?",
+     "c": "Fai 2 serie da 6 dead bug per lato, muovendoti il più lentamente possibile."
+    },
+    "pt": {
+     "t": "O dead bug",
+     "g": "Aprende um exercício de core calmo que se faz deitado de costas.",
+     "p": [
+      "Deita-te de costas, braços para o teto e joelhos dobrados por cima da anca.",
+      "Desce devagar um braço e a perna oposta em direção ao chão, com as costas apoiadas.",
+      "Volta e troca de lado, expirando quando te esticas."
+     ],
+     "q": "O dead bug pareceu-te calmo ou surpreendentemente difícil?",
+     "c": "Faz 2 séries de 6 dead bugs por lado, o mais devagar que conseguires."
+    },
+    "pt_BR": {
+     "t": "O dead bug",
+     "g": "Aprenda um exercício de core tranquilo feito deitado de costas.",
+     "p": [
+      "Deite de costas, braços para o teto e joelhos dobrados acima do quadril.",
+      "Desça devagar um braço e a perna oposta em direção ao chão, com as costas apoiadas.",
+      "Volte e troque de lado, soltando o ar ao esticar."
+     ],
+     "q": "O dead bug pareceu tranquilo ou surpreendentemente difícil?",
+     "c": "Faça 2 séries de 6 dead bugs por lado, o mais devagar que conseguir."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calf raises",
+     "g": "Strengthen your lower legs and improve balance by rising onto your toes.",
+     "p": [
+      "Stand tall near a wall or chair you can touch for balance.",
+      "Rise slowly onto the balls of your feet, pause, then lower with control.",
+      "Try them on a stair edge later for a bigger range of motion."
+     ],
+     "q": "Do you spend a lot of time standing or walking each day?",
+     "c": "Do 2 sets of 15 slow calf raises while brushing your teeth or waiting for the kettle."
+    },
+    "de": {
+     "t": "Wadenheben",
+     "g": "Stärke deine Unterschenkel und dein Gleichgewicht, indem du dich auf die Zehen hebst.",
+     "p": [
+      "Stell dich aufrecht neben eine Wand oder einen Stuhl zum Festhalten.",
+      "Heb dich langsam auf die Fußballen, halte kurz und senk kontrolliert ab.",
+      "Später kannst du es an einer Treppenkante für mehr Bewegungsumfang probieren."
+     ],
+     "q": "Stehst oder gehst du jeden Tag viel?",
+     "c": "Mach 2 Sätze à 15 langsame Wadenheber beim Zähneputzen oder während der Wasserkocher läuft."
+    },
+    "es": {
+     "t": "Elevaciones de talones",
+     "g": "Fortalece la parte baja de las piernas y mejora el equilibrio subiendo de puntillas.",
+     "p": [
+      "Ponte erguido cerca de una pared o silla donde apoyarte.",
+      "Sube despacio sobre la parte delantera de los pies, pausa y baja con control.",
+      "Más adelante, pruébalas en el borde de un escalón para más recorrido."
+     ],
+     "q": "¿Pasas mucho tiempo de pie o caminando cada día?",
+     "c": "Haz 2 series de 15 elevaciones lentas mientras te cepillas los dientes o hierve el agua."
+    },
+    "fr": {
+     "t": "Les montées sur pointes",
+     "g": "Renforce le bas des jambes et ton équilibre en montant sur la pointe des pieds.",
+     "p": [
+      "Tiens-toi droit près d'un mur ou d'une chaise pour l'équilibre.",
+      "Monte lentement sur l'avant des pieds, marque une pause puis redescends en contrôle.",
+      "Plus tard, essaie au bord d'une marche pour plus d'amplitude."
+     ],
+     "q": "Passes-tu beaucoup de temps debout ou à marcher chaque jour ?",
+     "c": "Fais 2 séries de 15 montées lentes en te brossant les dents ou en attendant la bouilloire."
+    },
+    "it": {
+     "t": "Sollevamenti sulle punte",
+     "g": "Rinforza la parte bassa delle gambe e migliora l'equilibrio salendo sulle punte.",
+     "p": [
+      "Stai dritto vicino a un muro o a una sedia per l'equilibrio.",
+      "Sali piano sull'avampiede, fai una pausa e scendi con controllo.",
+      "Più avanti provale sul bordo di un gradino per un movimento più ampio."
+     ],
+     "q": "Passi molto tempo in piedi o a camminare ogni giorno?",
+     "c": "Fai 2 serie da 15 sollevamenti lenti mentre ti lavi i denti o aspetti il bollitore."
+    },
+    "pt": {
+     "t": "Elevações de gémeos",
+     "g": "Fortalece a parte de baixo das pernas e melhora o equilíbrio subindo em bicos de pés.",
+     "p": [
+      "Fica direito perto de uma parede ou cadeira onde te possas apoiar.",
+      "Sobe devagar para a parte da frente dos pés, pausa e desce com controlo.",
+      "Mais tarde experimenta na beira de um degrau para mais amplitude."
+     ],
+     "q": "Passas muito tempo de pé ou a andar todos os dias?",
+     "c": "Faz 2 séries de 15 elevações lentas enquanto lavas os dentes ou esperas pela chaleira."
+    },
+    "pt_BR": {
+     "t": "Elevação de panturrilha",
+     "g": "Fortaleça a parte de baixo das pernas e melhore o equilíbrio subindo na ponta dos pés.",
+     "p": [
+      "Fique em pé perto de uma parede ou cadeira para se apoiar.",
+      "Suba devagar na ponta dos pés, faça uma pausa e desça com controle.",
+      "Mais para frente, tente na beirada de um degrau para ter mais amplitude."
+     ],
+     "q": "Você passa muito tempo em pé ou andando todo dia?",
+     "c": "Faça 2 séries de 15 elevações lentas enquanto escova os dentes ou espera a água ferver."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marching and stepping",
+     "g": "Get your heart going quietly with low-impact cardio.",
+     "p": [
+      "March on the spot, swinging your arms and lifting knees comfortably.",
+      "Add side steps or step-touches to move in different directions.",
+      "Low impact means no jumping, so it is kind to joints and neighbours."
+     ],
+     "q": "Do you prefer calm cardio or more energetic moves?",
+     "c": "March and step-touch for three minutes to one song you like."
+    },
+    "de": {
+     "t": "Marschieren und Steppen",
+     "g": "Bring deinen Puls leise in Schwung mit gelenkschonendem Cardio.",
+     "p": [
+      "Marschier auf der Stelle, schwing die Arme und heb die Knie angenehm hoch.",
+      "Füg Seitschritte oder Step-Touches hinzu, um dich in alle Richtungen zu bewegen.",
+      "Ohne Springen ist es schonend für Gelenke und Nachbarn."
+     ],
+     "q": "Magst du lieber ruhiges Cardio oder energiegeladene Bewegungen?",
+     "c": "Marschier und mach Step-Touches drei Minuten lang zu einem Lied, das du magst."
+    },
+    "es": {
+     "t": "Marchar y dar pasos",
+     "g": "Activa el corazón en silencio con cardio de bajo impacto.",
+     "p": [
+      "Marcha en el sitio, balanceando los brazos y subiendo las rodillas con comodidad.",
+      "Añade pasos laterales o step-touch para moverte en varias direcciones.",
+      "Bajo impacto significa sin saltos: amable con articulaciones y vecinos."
+     ],
+     "q": "¿Prefieres un cardio tranquilo o movimientos más enérgicos?",
+     "c": "Marcha y haz step-touch durante tres minutos con una canción que te guste."
+    },
+    "fr": {
+     "t": "Marcher et faire des pas",
+     "g": "Fais monter ton cœur en douceur avec un cardio sans impact.",
+     "p": [
+      "Marche sur place en balançant les bras et en montant les genoux confortablement.",
+      "Ajoute des pas chassés ou des step-touch pour bouger dans plusieurs directions.",
+      "Sans sauts, c'est doux pour les articulations et pour les voisins."
+     ],
+     "q": "Tu préfères un cardio calme ou des mouvements plus énergiques ?",
+     "c": "Marche et fais des step-touch pendant trois minutes sur une chanson que tu aimes."
+    },
+    "it": {
+     "t": "Marciare e fare passi",
+     "g": "Fai lavorare il cuore in silenzio con un cardio a basso impatto.",
+     "p": [
+      "Marcia sul posto oscillando le braccia e alzando le ginocchia con comodità.",
+      "Aggiungi passi laterali o step-touch per muoverti in più direzioni.",
+      "Basso impatto vuol dire niente salti: gentile con articolazioni e vicini."
+     ],
+     "q": "Preferisci un cardio tranquillo o movimenti più energici?",
+     "c": "Marcia e fai step-touch per tre minuti su una canzone che ti piace."
+    },
+    "pt": {
+     "t": "Marchar e dar passos",
+     "g": "Põe o coração a trabalhar em silêncio com cardio de baixo impacto.",
+     "p": [
+      "Marcha no lugar, balançando os braços e subindo os joelhos com conforto.",
+      "Junta passos laterais ou step-touch para te mexeres em várias direções.",
+      "Baixo impacto quer dizer sem saltos: simpático para as articulações e os vizinhos."
+     ],
+     "q": "Preferes cardio calmo ou movimentos mais enérgicos?",
+     "c": "Marcha e faz step-touch durante três minutos com uma música de que gostes."
+    },
+    "pt_BR": {
+     "t": "Marchar e dar passos",
+     "g": "Acelere o coração em silêncio com cardio de baixo impacto.",
+     "p": [
+      "Marche no lugar, balançando os braços e subindo os joelhos com conforto.",
+      "Inclua passos laterais ou step-touch para se mover em várias direções.",
+      "Baixo impacto significa sem pulos: gentil com as articulações e os vizinhos."
+     ],
+     "q": "Você prefere cardio tranquilo ou movimentos mais animados?",
+     "c": "Marche e faça step-touch por três minutos ao som de uma música de que você gosta."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first full-body routine",
+     "g": "Put squats, push-ups, bridges and planks together in one short session.",
+     "p": [
+      "Warm up for five minutes, then do each exercise for one set.",
+      "Try 8 chair squats, 8 wall or incline push-ups, 10 bridges and a 15-second plank.",
+      "Repeat the round once or twice, then cool down for a few minutes."
+     ],
+     "q": "How did it feel to combine everything into one workout?",
+     "c": "Complete one or two rounds of this routine today and note your effort from 1 to 10."
+    },
+    "de": {
+     "t": "Dein erstes Ganzkörpertraining",
+     "g": "Kombiniere Kniebeugen, Liegestütze, Brücken und Stütz in einer kurzen Einheit.",
+     "p": [
+      "Wärm dich fünf Minuten auf und mach dann von jeder Übung einen Satz.",
+      "Probier 8 Stuhlkniebeugen, 8 Wand- oder erhöhte Liegestütze, 10 Brücken und 15 Sekunden Stütz.",
+      "Wiederhol die Runde ein- oder zweimal und wärm dich danach ein paar Minuten ab."
+     ],
+     "q": "Wie hat es sich angefühlt, alles in einem Training zu verbinden?",
+     "c": "Mach heute ein bis zwei Runden dieser Routine und notier deine Anstrengung von 1 bis 10."
+    },
+    "es": {
+     "t": "Tu primera rutina de cuerpo completo",
+     "g": "Une sentadillas, flexiones, puentes y planchas en una sesión corta.",
+     "p": [
+      "Calienta cinco minutos y luego haz una serie de cada ejercicio.",
+      "Prueba 8 sentadillas a la silla, 8 flexiones en pared o inclinadas, 10 puentes y 15 segundos de plancha.",
+      "Repite la ronda una o dos veces y termina con unos minutos de vuelta a la calma."
+     ],
+     "q": "¿Qué tal fue combinarlo todo en un solo entreno?",
+     "c": "Completa hoy una o dos rondas de esta rutina y anota tu esfuerzo del 1 al 10."
+    },
+    "fr": {
+     "t": "Ta première séance complète",
+     "g": "Réunis squats, pompes, ponts et planche en une courte séance.",
+     "p": [
+      "Échauffe-toi cinq minutes, puis fais une série de chaque exercice.",
+      "Essaie 8 squats vers la chaise, 8 pompes au mur ou inclinées, 10 ponts et 15 secondes de planche.",
+      "Répète le tour une ou deux fois, puis fais quelques minutes de retour au calme."
+     ],
+     "q": "Qu'as-tu ressenti en enchaînant tout dans une seule séance ?",
+     "c": "Fais un ou deux tours de cette séance aujourd'hui et note ton effort de 1 à 10."
+    },
+    "it": {
+     "t": "La tua prima routine total body",
+     "g": "Metti insieme squat, piegamenti, ponti e plank in una breve sessione.",
+     "p": [
+      "Scaldati per cinque minuti, poi fai una serie per ogni esercizio.",
+      "Prova 8 squat alla sedia, 8 piegamenti al muro o inclinati, 10 ponti e 15 secondi di plank.",
+      "Ripeti il giro una o due volte, poi fai qualche minuto di defaticamento."
+     ],
+     "q": "Come ti sei sentito a unire tutto in un solo allenamento?",
+     "c": "Completa oggi uno o due giri di questa routine e annota lo sforzo da 1 a 10."
+    },
+    "pt": {
+     "t": "A tua primeira rotina de corpo inteiro",
+     "g": "Junta agachamentos, flexões, pontes e prancha numa sessão curta.",
+     "p": [
+      "Aquece cinco minutos e depois faz uma série de cada exercício.",
+      "Experimenta 8 agachamentos à cadeira, 8 flexões na parede ou inclinadas, 10 pontes e 15 segundos de prancha.",
+      "Repete a volta uma ou duas vezes e acaba com uns minutos de retorno à calma."
+     ],
+     "q": "Como foi juntar tudo num só treino?",
+     "c": "Completa hoje uma ou duas voltas desta rotina e regista o esforço de 1 a 10."
+    },
+    "pt_BR": {
+     "t": "Sua primeira rotina de corpo inteiro",
+     "g": "Junte agachamento, flexão, ponte e prancha em uma sessão curta.",
+     "p": [
+      "Aqueça por cinco minutos e depois faça uma série de cada exercício.",
+      "Tente 8 agachamentos na cadeira, 8 flexões na parede ou inclinadas, 10 pontes e 15 segundos de prancha.",
+      "Repita a rodada uma ou duas vezes e termine com alguns minutos de desaquecimento."
+     ],
+     "q": "Como foi juntar tudo em um só treino?",
+     "c": "Complete hoje uma ou duas rodadas dessa rotina e anote seu esforço de 1 a 10."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing during exercise",
+     "g": "Learn simple breathing habits that make every exercise feel smoother.",
+     "p": [
+      "Breathe out during the effort, like standing up from a squat.",
+      "Breathe in during the easier part, like lowering down.",
+      "Never hold your breath for long; steady breathing keeps you calm and safe."
+     ],
+     "q": "Do you notice your breathing when you exercise?",
+     "c": "Do 8 squats today, saying out loud when to breathe in and when to breathe out."
+    },
+    "de": {
+     "t": "Atmen beim Training",
+     "g": "Lerne einfache Atemgewohnheiten, die jede Übung geschmeidiger machen.",
+     "p": [
+      "Atme bei der Anstrengung aus, etwa beim Aufstehen aus der Kniebeuge.",
+      "Atme im leichteren Teil ein, etwa beim Absenken.",
+      "Halte nie lange die Luft an; ruhiges Atmen hält dich gelassen und sicher."
+     ],
+     "q": "Achtest du beim Training auf deinen Atem?",
+     "c": "Mach heute 8 Kniebeugen und sag laut, wann du ein- und wann du ausatmest."
+    },
+    "es": {
+     "t": "Respirar al hacer ejercicio",
+     "g": "Aprende hábitos de respiración sencillos que hacen todo más fluido.",
+     "p": [
+      "Suelta el aire durante el esfuerzo, como al subir de una sentadilla.",
+      "Toma aire en la parte más fácil, como al bajar.",
+      "Nunca aguantes la respiración mucho rato; respirar con ritmo te da calma y seguridad."
+     ],
+     "q": "¿Te fijas en tu respiración cuando haces ejercicio?",
+     "c": "Haz hoy 8 sentadillas diciendo en voz alta cuándo tomas y cuándo sueltas el aire."
+    },
+    "fr": {
+     "t": "Respirer pendant l'effort",
+     "g": "Apprends des habitudes de respiration simples pour des mouvements plus fluides.",
+     "p": [
+      "Expire pendant l'effort, par exemple en remontant d'un squat.",
+      "Inspire pendant la phase facile, par exemple en descendant.",
+      "Ne bloque jamais longtemps ta respiration ; respirer régulièrement te garde calme et en sécurité."
+     ],
+     "q": "Fais-tu attention à ta respiration quand tu fais du sport ?",
+     "c": "Fais 8 squats aujourd'hui en disant à voix haute quand tu inspires et quand tu expires."
+    },
+    "it": {
+     "t": "Respirare durante l'esercizio",
+     "g": "Impara semplici abitudini di respiro che rendono ogni esercizio più fluido.",
+     "p": [
+      "Espira durante lo sforzo, per esempio risalendo dallo squat.",
+      "Inspira nella parte più facile, per esempio scendendo.",
+      "Non trattenere mai il respiro a lungo; respirare con regolarità ti tiene calmo e sicuro."
+     ],
+     "q": "Fai caso al tuo respiro quando ti alleni?",
+     "c": "Fai oggi 8 squat dicendo ad alta voce quando inspiri e quando espiri."
+    },
+    "pt": {
+     "t": "Respirar durante o exercício",
+     "g": "Aprende hábitos de respiração simples que tornam cada exercício mais fluido.",
+     "p": [
+      "Expira durante o esforço, como ao subir do agachamento.",
+      "Inspira na parte mais fácil, como ao descer.",
+      "Nunca sustenhas a respiração muito tempo; respirar com ritmo dá-te calma e segurança."
+     ],
+     "q": "Reparas na tua respiração quando fazes exercício?",
+     "c": "Faz hoje 8 agachamentos dizendo em voz alta quando inspiras e quando expiras."
+    },
+    "pt_BR": {
+     "t": "Respiração no exercício",
+     "g": "Aprenda hábitos simples de respiração que deixam cada exercício mais fluido.",
+     "p": [
+      "Solte o ar durante o esforço, como ao subir do agachamento.",
+      "Puxe o ar na parte mais fácil, como ao descer.",
+      "Nunca prenda a respiração por muito tempo; respirar com ritmo traz calma e segurança."
+     ],
+     "q": "Você presta atenção na sua respiração quando se exercita?",
+     "c": "Faça hoje 8 agachamentos dizendo em voz alta quando puxa e quando solta o ar."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest days in general terms",
+     "g": "Understand why recovery days are a real part of your plan.",
+     "p": [
+      "Your body adapts and gets stronger during rest, not only during effort.",
+      "Rest days can still include gentle walks or light stretching.",
+      "Feeling extra tired or sore for days is a sign to rest more."
+     ],
+     "q": "How do you usually spend a relaxing day?",
+     "c": "Plan your next rest day and choose one gentle activity you enjoy for it."
+    },
+    "de": {
+     "t": "Ruhetage im Allgemeinen",
+     "g": "Verstehe, warum Erholungstage ein echter Teil deines Plans sind.",
+     "p": [
+      "Dein Körper passt sich in der Ruhe an und wird stärker, nicht nur bei der Anstrengung.",
+      "Ruhetage können trotzdem sanfte Spaziergänge oder leichtes Dehnen enthalten.",
+      "Wenn du tagelang sehr müde oder verspannt bist, gönn dir mehr Ruhe."
+     ],
+     "q": "Wie verbringst du normalerweise einen entspannten Tag?",
+     "c": "Plane deinen nächsten Ruhetag und such dir eine sanfte Aktivität dafür aus."
+    },
+    "es": {
+     "t": "Días de descanso en general",
+     "g": "Entiende por qué los días de recuperación son parte real de tu plan.",
+     "p": [
+      "El cuerpo se adapta y se fortalece durante el descanso, no solo durante el esfuerzo.",
+      "Los días de descanso pueden incluir paseos suaves o estiramientos ligeros.",
+      "Sentirte muy cansado o con agujetas durante días es señal de descansar más."
+     ],
+     "q": "¿Cómo sueles pasar un día de relax?",
+     "c": "Planea tu próximo día de descanso y elige una actividad suave que te guste."
+    },
+    "fr": {
+     "t": "Les jours de repos, en général",
+     "g": "Comprends pourquoi les jours de récupération font vraiment partie du plan.",
+     "p": [
+      "Ton corps s'adapte et se renforce pendant le repos, pas seulement pendant l'effort.",
+      "Un jour de repos peut inclure une balade tranquille ou des étirements légers.",
+      "Être très fatigué ou courbaturé plusieurs jours signale qu'il faut plus de repos."
+     ],
+     "q": "Comment passes-tu d'habitude une journée détente ?",
+     "c": "Planifie ton prochain jour de repos et choisis une activité douce que tu aimes."
+    },
+    "it": {
+     "t": "I giorni di riposo in generale",
+     "g": "Capisci perché i giorni di recupero sono una parte vera del tuo piano.",
+     "p": [
+      "Il corpo si adatta e si rafforza durante il riposo, non solo durante lo sforzo.",
+      "I giorni di riposo possono includere passeggiate tranquille o allungamenti leggeri.",
+      "Sentirti molto stanco o indolenzito per giorni è un segnale per riposare di più."
+     ],
+     "q": "Come passi di solito una giornata rilassante?",
+     "c": "Pianifica il tuo prossimo giorno di riposo e scegli un'attività dolce che ti piace."
+    },
+    "pt": {
+     "t": "Dias de descanso, em geral",
+     "g": "Percebe porque é que os dias de recuperação fazem mesmo parte do plano.",
+     "p": [
+      "O corpo adapta-se e fica mais forte durante o descanso, não só no esforço.",
+      "Os dias de descanso podem ter passeios calmos ou alongamentos leves.",
+      "Sentires-te muito cansado ou dorido durante dias é sinal para descansar mais."
+     ],
+     "q": "Como costumas passar um dia relaxado?",
+     "c": "Planeia o teu próximo dia de descanso e escolhe uma atividade calma de que gostes."
+    },
+    "pt_BR": {
+     "t": "Dias de descanso, em geral",
+     "g": "Entenda por que os dias de recuperação são parte de verdade do seu plano.",
+     "p": [
+      "O corpo se adapta e fica mais forte durante o descanso, não só no esforço.",
+      "Dias de descanso podem ter caminhadas leves ou alongamentos suaves.",
+      "Sentir muito cansaço ou dor muscular por dias é sinal para descansar mais."
+     ],
+     "q": "Como você costuma passar um dia tranquilo?",
+     "c": "Planeje seu próximo dia de descanso e escolha uma atividade leve de que você goste."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first home toolkit",
+     "g": "Look back at your space, warm-up and first exercises from month one.",
+     "p": [
+      "You set up a safe space, a friendly goal and a five-minute warm-up.",
+      "You learned squats, bridges, push-up versions, planks, bird dogs and dead bugs.",
+      "You know reps, sets, rest, the effort scale and how to breathe."
+     ],
+     "q": "Which exercise from this month has become your favourite?",
+     "c": "Do your full-body routine once more and notice what feels easier than on day 27."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Werkzeugkasten",
+     "g": "Schau auf Platz, Aufwärmen und erste Übungen aus Monat eins zurück.",
+     "p": [
+      "Du hast einen sicheren Platz, ein freundliches Ziel und ein Fünf-Minuten-Aufwärmen.",
+      "Du kennst Kniebeugen, Brücken, Liegestütz-Varianten, Stütz, Vierfüßlerstand und Dead Bug.",
+      "Du verstehst Wiederholungen, Sätze, Pausen, die Anstrengungsskala und das Atmen."
+     ],
+     "q": "Welche Übung aus diesem Monat ist dein Favorit geworden?",
+     "c": "Mach noch einmal dein Ganzkörpertraining und achte darauf, was leichter ist als an Tag 27."
+    },
+    "es": {
+     "t": "Repaso: tu primer kit en casa",
+     "g": "Repasa tu espacio, el calentamiento y los primeros ejercicios del primer mes.",
+     "p": [
+      "Preparaste un espacio seguro, una meta amable y un calentamiento de cinco minutos.",
+      "Aprendiste sentadillas, puentes, tipos de flexiones, planchas, bird dog y dead bug.",
+      "Conoces las repeticiones, series, descansos, la escala de esfuerzo y la respiración."
+     ],
+     "q": "¿Qué ejercicio de este mes se ha convertido en tu favorito?",
+     "c": "Haz otra vez tu rutina de cuerpo completo y nota qué te resulta más fácil que el día 27."
+    },
+    "fr": {
+     "t": "Bilan : ta première boîte à outils",
+     "g": "Reviens sur ton espace, ton échauffement et tes premiers exercices du mois un.",
+     "p": [
+      "Tu as préparé un espace sûr, un objectif bienveillant et un échauffement de cinq minutes.",
+      "Tu as appris squats, ponts, variantes de pompes, planche, bird dog et dead bug.",
+      "Tu connais répétitions, séries, repos, l'échelle d'effort et la respiration."
+     ],
+     "q": "Quel exercice de ce mois est devenu ton préféré ?",
+     "c": "Refais ta séance complète et observe ce qui est plus facile qu'au jour 27."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo kit a casa",
+     "g": "Ripensa allo spazio, al riscaldamento e ai primi esercizi del primo mese.",
+     "p": [
+      "Hai preparato uno spazio sicuro, un obiettivo gentile e un riscaldamento di cinque minuti.",
+      "Hai imparato squat, ponti, varianti di piegamenti, plank, bird dog e dead bug.",
+      "Conosci ripetizioni, serie, recuperi, la scala dello sforzo e il respiro."
+     ],
+     "q": "Quale esercizio di questo mese è diventato il tuo preferito?",
+     "c": "Rifai la tua routine total body e nota cosa è più facile rispetto al giorno 27."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro kit em casa",
+     "g": "Revê o teu espaço, o aquecimento e os primeiros exercícios do primeiro mês.",
+     "p": [
+      "Preparaste um espaço seguro, um objetivo simpático e um aquecimento de cinco minutos.",
+      "Aprendeste agachamentos, pontes, tipos de flexões, prancha, bird dog e dead bug.",
+      "Conheces repetições, séries, descansos, a escala de esforço e a respiração."
+     ],
+     "q": "Que exercício deste mês se tornou o teu favorito?",
+     "c": "Faz outra vez a rotina de corpo inteiro e repara no que está mais fácil do que no dia 27."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro kit em casa",
+     "g": "Relembre seu espaço, o aquecimento e os primeiros exercícios do primeiro mês.",
+     "p": [
+      "Você montou um espaço seguro, uma meta gentil e um aquecimento de cinco minutos.",
+      "Aprendeu agachamento, ponte, tipos de flexão, prancha, bird dog e dead bug.",
+      "Conhece repetições, séries, descanso, a escala de esforço e a respiração."
+     ],
+     "q": "Qual exercício deste mês virou o seu favorito?",
+     "c": "Faça de novo a rotina de corpo inteiro e perceba o que está mais fácil do que no dia 27."
+    }
+   }
+  }
+ ]
+}

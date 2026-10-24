@@ -1,0 +1,835 @@
+{
+ "topic": "home_workouts",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ankle mobility",
+     "g": "Free up your ankles with knee-to-wall drills and ankle circles.",
+     "p": [
+      "Ankle circles: lift one foot and draw slow circles in both directions.",
+      "Knee-to-wall: foot a few centimetres from a wall, gently move your knee forward to touch it.",
+      "Keep your heel down; move the foot back a little as your ankle loosens."
+     ],
+     "q": "Have you noticed whether your ankles feel stiff in squats?",
+     "c": "Do 10 ankle circles each way per foot and 8 knee-to-wall reps per side."
+    },
+    "de": {
+     "t": "Mobilität der Sprunggelenke",
+     "g": "Mach deine Sprunggelenke frei mit Knie-zur-Wand-Übungen und Fußkreisen.",
+     "p": [
+      "Fußkreise: einen Fuß anheben und langsame Kreise in beide Richtungen zeichnen.",
+      "Knie zur Wand: Fuß ein paar Zentimeter vor der Wand, Knie sanft nach vorn zur Wand führen.",
+      "Die Ferse bleibt unten; geh mit dem Fuß etwas zurück, wenn das Gelenk lockerer wird."
+     ],
+     "q": "Hast du bemerkt, ob deine Sprunggelenke bei Kniebeugen steif sind?",
+     "c": "Mach 10 Fußkreise pro Richtung und Fuß und 8 Knie-zur-Wand-Wiederholungen pro Seite."
+    },
+    "es": {
+     "t": "Movilidad de tobillos",
+     "g": "Libera los tobillos con ejercicios de rodilla a la pared y círculos.",
+     "p": [
+      "Círculos: levanta un pie y dibuja círculos lentos en ambos sentidos.",
+      "Rodilla a la pared: pie a unos centímetros de la pared, lleva la rodilla suave hasta tocarla.",
+      "Mantén el talón apoyado; aleja un poco el pie según se suelte el tobillo."
+     ],
+     "q": "¿Has notado si tus tobillos están rígidos en las sentadillas?",
+     "c": "Haz 10 círculos por sentido con cada pie y 8 repeticiones de rodilla a la pared por lado."
+    },
+    "fr": {
+     "t": "Mobilité des chevilles",
+     "g": "Libère tes chevilles avec l'exercice genou au mur et des cercles.",
+     "p": [
+      "Cercles : lève un pied et dessine des cercles lents dans les deux sens.",
+      "Genou au mur : pied à quelques centimètres du mur, avance doucement le genou pour le toucher.",
+      "Garde le talon au sol ; recule un peu le pied quand la cheville se délie."
+     ],
+     "q": "As-tu remarqué si tes chevilles sont raides pendant les squats ?",
+     "c": "Fais 10 cercles dans chaque sens par pied et 8 répétitions genou au mur par côté."
+    },
+    "it": {
+     "t": "Mobilità delle caviglie",
+     "g": "Libera le caviglie con l'esercizio ginocchio al muro e i cerchi.",
+     "p": [
+      "Cerchi: solleva un piede e disegna cerchi lenti in entrambe le direzioni.",
+      "Ginocchio al muro: piede a pochi centimetri dal muro, porta piano il ginocchio a toccarlo.",
+      "Tieni il tallone a terra; allontana un po' il piede man mano che la caviglia si scioglie."
+     ],
+     "q": "Hai notato se le caviglie sono rigide durante lo squat?",
+     "c": "Fai 10 cerchi per verso con ogni piede e 8 ripetizioni ginocchio al muro per lato."
+    },
+    "pt": {
+     "t": "Mobilidade dos tornozelos",
+     "g": "Solta os tornozelos com o exercício joelho à parede e círculos.",
+     "p": [
+      "Círculos: levanta um pé e desenha círculos lentos nos dois sentidos.",
+      "Joelho à parede: pé a poucos centímetros da parede, leva suavemente o joelho até lhe tocar.",
+      "Mantém o calcanhar no chão; afasta um pouco o pé à medida que o tornozelo solta."
+     ],
+     "q": "Já reparaste se os tornozelos ficam rígidos nos agachamentos?",
+     "c": "Faz 10 círculos para cada lado com cada pé e 8 repetições de joelho à parede por lado."
+    },
+    "pt_BR": {
+     "t": "Mobilidade de tornozelo",
+     "g": "Solte os tornozelos com o exercício joelho na parede e círculos.",
+     "p": [
+      "Círculos: tire um pé do chão e desenhe círculos lentos nos dois sentidos.",
+      "Joelho na parede: pé a poucos centímetros da parede, leve o joelho de leve até encostar.",
+      "Mantenha o calcanhar no chão; afaste um pouco o pé conforme o tornozelo solta."
+     ],
+     "q": "Você já percebeu se seus tornozelos ficam rígidos no agachamento?",
+     "c": "Faça 10 círculos para cada lado com cada pé e 8 repetições de joelho na parede por lado."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stretching after workouts",
+     "g": "Learn simple post-workout stretches for calves, thighs, hips and chest.",
+     "p": [
+      "Calves: hands on a wall, one leg back with heel down, lean gently forward.",
+      "Thighs and hips: a gentle standing quad stretch or a kneeling hip stretch.",
+      "Chest: hand on a door frame, turn your body slightly away; hold 20 to 30 seconds."
+     ],
+     "q": "Which muscles feel tightest after you exercise?",
+     "c": "After your next workout, hold four stretches for 20 seconds each while breathing slowly."
+    },
+    "de": {
+     "t": "Dehnen nach dem Training",
+     "g": "Lerne einfache Dehnungen für Waden, Oberschenkel, Hüfte und Brust nach dem Training.",
+     "p": [
+      "Waden: Hände an die Wand, ein Bein zurück mit Ferse unten, sanft nach vorn lehnen.",
+      "Oberschenkel und Hüfte: sanfte Dehnung im Stand oder eine kniende Hüftdehnung.",
+      "Brust: Hand an den Türrahmen, Körper leicht wegdrehen; 20 bis 30 Sekunden halten."
+     ],
+     "q": "Welche Muskeln fühlen sich nach dem Training am festesten an?",
+     "c": "Halte nach deinem nächsten Training vier Dehnungen je 20 Sekunden mit ruhigem Atem."
+    },
+    "es": {
+     "t": "Estirar después de entrenar",
+     "g": "Aprende estiramientos sencillos de gemelos, muslos, cadera y pecho para después.",
+     "p": [
+      "Gemelos: manos en la pared, una pierna atrás con el talón apoyado, inclínate suave.",
+      "Muslos y cadera: un estiramiento suave de cuádriceps de pie o de cadera de rodillas.",
+      "Pecho: mano en el marco de una puerta y gira un poco el cuerpo; mantén de 20 a 30 segundos."
+     ],
+     "q": "¿Qué músculos notas más tensos después de hacer ejercicio?",
+     "c": "Tras tu próximo entreno, mantén cuatro estiramientos 20 segundos cada uno respirando lento."
+    },
+    "fr": {
+     "t": "S'étirer après la séance",
+     "g": "Apprends des étirements simples des mollets, cuisses, hanches et pectoraux après l'effort.",
+     "p": [
+      "Mollets : mains au mur, une jambe en arrière talon au sol, penche-toi doucement.",
+      "Cuisses et hanches : un étirement doux du quadriceps debout ou de la hanche à genou.",
+      "Poitrine : main sur un encadrement de porte, tourne un peu le corps ; tiens 20 à 30 secondes."
+     ],
+     "q": "Quels muscles sont les plus tendus après ta séance ?",
+     "c": "Après ta prochaine séance, tiens quatre étirements 20 secondes chacun en respirant lentement."
+    },
+    "it": {
+     "t": "Allungarsi dopo l'allenamento",
+     "g": "Impara allungamenti semplici per polpacci, cosce, anche e petto dopo l'allenamento.",
+     "p": [
+      "Polpacci: mani al muro, una gamba indietro con il tallone giù, inclinati dolcemente.",
+      "Cosce e anche: un allungamento dolce del quadricipite in piedi o dell'anca in ginocchio.",
+      "Petto: mano sullo stipite di una porta, ruota un po' il corpo; tieni da 20 a 30 secondi."
+     ],
+     "q": "Quali muscoli senti più tesi dopo esserti allenato?",
+     "c": "Dopo il prossimo allenamento, tieni quattro allungamenti per 20 secondi ciascuno respirando piano."
+    },
+    "pt": {
+     "t": "Alongar depois do treino",
+     "g": "Aprende alongamentos simples para gémeos, coxas, anca e peito depois do treino.",
+     "p": [
+      "Gémeos: mãos na parede, uma perna atrás com o calcanhar no chão, inclina-te suavemente.",
+      "Coxas e anca: um alongamento suave do quadríceps de pé ou da anca de joelhos.",
+      "Peito: mão na ombreira de uma porta, roda um pouco o corpo; mantém 20 a 30 segundos."
+     ],
+     "q": "Que músculos sentes mais tensos depois do exercício?",
+     "c": "Depois do próximo treino, mantém quatro alongamentos durante 20 segundos cada, a respirar devagar."
+    },
+    "pt_BR": {
+     "t": "Alongamento pós-treino",
+     "g": "Aprenda alongamentos simples de panturrilha, coxas, quadril e peito para depois do treino.",
+     "p": [
+      "Panturrilha: mãos na parede, uma perna atrás com o calcanhar no chão, incline de leve.",
+      "Coxas e quadril: um alongamento suave de quadríceps em pé ou de quadril ajoelhado.",
+      "Peito: mão no batente de uma porta, gire um pouco o corpo; segure de 20 a 30 segundos."
+     ],
+     "q": "Quais músculos você sente mais tensos depois de se exercitar?",
+     "c": "Depois do próximo treino, segure quatro alongamentos por 20 segundos cada, respirando devagar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Desk break exercises",
+     "g": "Break up long periods of sitting with quick, easy moves.",
+     "p": [
+      "Every hour or so, stand up and move for one or two minutes.",
+      "Try sit-to-stands, shoulder rolls, calf raises or a short walk around the room.",
+      "Small breaks keep you fresher and add movement to your day."
+     ],
+     "q": "How many hours do you usually sit in a row?",
+     "c": "Set a reminder and do a two-minute movement break three times today."
+    },
+    "de": {
+     "t": "Übungen für die Schreibtischpause",
+     "g": "Unterbrich langes Sitzen mit schnellen, einfachen Bewegungen.",
+     "p": [
+      "Steh etwa jede Stunde auf und beweg dich ein bis zwei Minuten.",
+      "Probier Aufstehen vom Stuhl, Schulterrollen, Wadenheben oder eine kurze Runde durch den Raum.",
+      "Kleine Pausen halten dich frischer und bringen mehr Bewegung in deinen Tag."
+     ],
+     "q": "Wie viele Stunden sitzt du normalerweise am Stück?",
+     "c": "Stell dir eine Erinnerung und mach heute dreimal eine Bewegungspause von zwei Minuten."
+    },
+    "es": {
+     "t": "Ejercicios para pausas en la mesa",
+     "g": "Interrumpe los ratos largos sentado con movimientos rápidos y sencillos.",
+     "p": [
+      "Más o menos cada hora, levántate y muévete uno o dos minutos.",
+      "Prueba levantarte de la silla, girar hombros, subir talones o dar una vuelta por la habitación.",
+      "Las pausas cortas te mantienen más fresco y suman movimiento a tu día."
+     ],
+     "q": "¿Cuántas horas seguidas sueles pasar sentado?",
+     "c": "Pon un recordatorio y haz hoy tres pausas activas de dos minutos."
+    },
+    "fr": {
+     "t": "Exercices pour les pauses bureau",
+     "g": "Interromps les longues périodes assis avec des mouvements rapides et simples.",
+     "p": [
+      "Environ toutes les heures, lève-toi et bouge une ou deux minutes.",
+      "Essaie des levers de chaise, rotations d'épaules, montées sur pointes ou un petit tour de la pièce.",
+      "Les petites pauses te gardent plus frais et ajoutent du mouvement à ta journée."
+     ],
+     "q": "Combien d'heures restes-tu assis d'affilée en général ?",
+     "c": "Mets un rappel et fais trois pauses actives de deux minutes aujourd'hui."
+    },
+    "it": {
+     "t": "Esercizi per le pause dalla scrivania",
+     "g": "Interrompi i lunghi periodi da seduto con movimenti veloci e semplici.",
+     "p": [
+      "Circa ogni ora, alzati e muoviti per uno o due minuti.",
+      "Prova alzate dalla sedia, rotazioni delle spalle, sollevamenti sulle punte o un giro della stanza.",
+      "Le piccole pause ti tengono più fresco e aggiungono movimento alla giornata."
+     ],
+     "q": "Quante ore di fila passi di solito seduto?",
+     "c": "Imposta un promemoria e fai oggi tre pause attive di due minuti."
+    },
+    "pt": {
+     "t": "Exercícios para pausas na secretária",
+     "g": "Interrompe longos períodos sentado com movimentos rápidos e simples.",
+     "p": [
+      "Mais ou menos de hora a hora, levanta-te e mexe-te um ou dois minutos.",
+      "Experimenta levantar da cadeira, rodar os ombros, subir em bicos de pés ou dar uma volta à sala.",
+      "Pequenas pausas mantêm-te mais fresco e juntam movimento ao teu dia."
+     ],
+     "q": "Quantas horas seguidas costumas passar sentado?",
+     "c": "Põe um lembrete e faz hoje três pausas ativas de dois minutos."
+    },
+    "pt_BR": {
+     "t": "Exercícios para pausas no trabalho",
+     "g": "Quebre longos períodos sentado com movimentos rápidos e simples.",
+     "p": [
+      "Mais ou menos a cada hora, levante e se movimente por um ou dois minutos.",
+      "Tente levantar da cadeira, girar os ombros, subir na ponta dos pés ou dar uma volta pela sala.",
+      "Pausas curtas deixam você mais disposto e somam movimento ao seu dia."
+     ],
+     "q": "Quantas horas seguidas você costuma ficar sentado?",
+     "c": "Coloque um lembrete e faça hoje três pausas ativas de dois minutos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning wake-up routine",
+     "g": "Start the day with a gentle five-minute movement sequence.",
+     "p": [
+      "Begin with a few deep breaths and a big overhead stretch.",
+      "Add cat-cows, hip circles and slow shoulder rolls to loosen up.",
+      "Finish with 10 easy squats and a short march to feel awake."
+     ],
+     "q": "How do you usually feel in the first hour after waking up?",
+     "c": "Try this five-minute wake-up routine tomorrow morning before checking your phone."
+    },
+    "de": {
+     "t": "Morgenroutine zum Wachwerden",
+     "g": "Starte den Tag mit einer sanften Bewegungsfolge von fünf Minuten.",
+     "p": [
+      "Beginn mit ein paar tiefen Atemzügen und einer großen Streckung über Kopf.",
+      "Füg Katze-Kuh, Hüftkreise und langsame Schulterrollen zum Lockern hinzu.",
+      "Zum Schluss 10 leichte Kniebeugen und kurzes Marschieren, um wach zu werden."
+     ],
+     "q": "Wie fühlst du dich meist in der ersten Stunde nach dem Aufwachen?",
+     "c": "Probier diese Fünf-Minuten-Routine morgen früh, bevor du aufs Handy schaust."
+    },
+    "es": {
+     "t": "Rutina para despertar",
+     "g": "Empieza el día con una secuencia suave de cinco minutos.",
+     "p": [
+      "Comienza con unas respiraciones profundas y un gran estiramiento hacia arriba.",
+      "Añade gato-vaca, círculos de cadera y giros lentos de hombros para soltarte.",
+      "Termina con 10 sentadillas fáciles y una marcha corta para despejarte."
+     ],
+     "q": "¿Cómo te sueles sentir en la primera hora después de despertar?",
+     "c": "Prueba mañana esta rutina de cinco minutos antes de mirar el móvil."
+    },
+    "fr": {
+     "t": "Routine du réveil",
+     "g": "Commence la journée par un enchaînement doux de cinq minutes.",
+     "p": [
+      "Démarre par quelques respirations profondes et un grand étirement vers le haut.",
+      "Ajoute chat-vache, cercles de hanches et rotations lentes d'épaules pour te dérouiller.",
+      "Termine par 10 squats faciles et un peu de marche sur place pour te réveiller."
+     ],
+     "q": "Comment te sens-tu en général dans la première heure après le réveil ?",
+     "c": "Essaie cette routine de cinq minutes demain matin avant de regarder ton téléphone."
+    },
+    "it": {
+     "t": "Routine del risveglio",
+     "g": "Inizia la giornata con una sequenza dolce di cinque minuti.",
+     "p": [
+      "Comincia con qualche respiro profondo e un grande allungamento verso l'alto.",
+      "Aggiungi gatto-mucca, cerchi con il bacino e rotazioni lente delle spalle.",
+      "Chiudi con 10 squat facili e una breve marcia per svegliarti."
+     ],
+     "q": "Come ti senti di solito nella prima ora dopo il risveglio?",
+     "c": "Prova questa routine di cinque minuti domattina prima di guardare il telefono."
+    },
+    "pt": {
+     "t": "Rotina para acordar",
+     "g": "Começa o dia com uma sequência suave de cinco minutos.",
+     "p": [
+      "Começa com umas respirações profundas e um grande alongamento para cima.",
+      "Junta gato-vaca, círculos de anca e rotações lentas de ombros para soltar.",
+      "Acaba com 10 agachamentos fáceis e uma marcha curta para despertar."
+     ],
+     "q": "Como te costumas sentir na primeira hora depois de acordar?",
+     "c": "Experimenta amanhã de manhã esta rotina de cinco minutos antes de olhar para o telemóvel."
+    },
+    "pt_BR": {
+     "t": "Rotina para despertar",
+     "g": "Comece o dia com uma sequência suave de cinco minutos.",
+     "p": [
+      "Comece com algumas respirações profundas e um grande alongamento para cima.",
+      "Inclua gato-vaca, círculos de quadril e rotações lentas de ombros para soltar.",
+      "Termine com 10 agachamentos leves e uma marcha curta para despertar."
+     ],
+     "q": "Como você costuma se sentir na primeira hora depois de acordar?",
+     "c": "Teste essa rotina de cinco minutos amanhã de manhã antes de olhar o celular."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evening wind-down stretches",
+     "g": "Relax before bed with calm, slow movements.",
+     "p": [
+      "Choose quiet moves like gentle twists, a child's pose and slow neck stretches.",
+      "Breathe slowly, making each exhale a little longer than the inhale.",
+      "Keep it easy and soft; this is about relaxing, not working hard."
+     ],
+     "q": "What helps you relax at the end of a long day?",
+     "c": "Tonight, spend five minutes on gentle stretches with slow breathing before bed."
+    },
+    "de": {
+     "t": "Dehnungen zum Abschalten am Abend",
+     "g": "Entspann dich vor dem Schlafen mit ruhigen, langsamen Bewegungen.",
+     "p": [
+      "Wähl ruhige Übungen wie sanfte Drehungen, die Kindhaltung und langsame Nackendehnungen.",
+      "Atme langsam und mach jede Ausatmung etwas länger als die Einatmung.",
+      "Bleib leicht und sanft; es geht ums Entspannen, nicht ums Anstrengen."
+     ],
+     "q": "Was hilft dir, am Ende eines langen Tages zu entspannen?",
+     "c": "Nimm dir heute Abend fünf Minuten für sanfte Dehnungen mit langsamem Atem vor dem Schlafen."
+    },
+    "es": {
+     "t": "Estiramientos para relajarte de noche",
+     "g": "Relájate antes de dormir con movimientos lentos y tranquilos.",
+     "p": [
+      "Elige movimientos suaves como torsiones, la postura del niño y estiramientos de cuello.",
+      "Respira despacio, haciendo cada exhalación un poco más larga que la inhalación.",
+      "Hazlo fácil y suave; se trata de relajarte, no de esforzarte."
+     ],
+     "q": "¿Qué te ayuda a relajarte al final de un día largo?",
+     "c": "Esta noche, dedica cinco minutos a estiramientos suaves respirando lento antes de dormir."
+    },
+    "fr": {
+     "t": "Étirements du soir pour se détendre",
+     "g": "Détends-toi avant le coucher avec des mouvements calmes et lents.",
+     "p": [
+      "Choisis des mouvements doux comme des torsions, la posture de l'enfant et des étirements du cou.",
+      "Respire lentement en rendant chaque expiration un peu plus longue que l'inspiration.",
+      "Reste facile et doux ; le but est de te détendre, pas de forcer."
+     ],
+     "q": "Qu'est-ce qui t'aide à te détendre après une longue journée ?",
+     "c": "Ce soir, prends cinq minutes d'étirements doux avec une respiration lente avant de dormir."
+    },
+    "it": {
+     "t": "Allungamenti serali per rilassarsi",
+     "g": "Rilassati prima di dormire con movimenti calmi e lenti.",
+     "p": [
+      "Scegli movimenti dolci come torsioni, la posizione del bambino e allungamenti del collo.",
+      "Respira piano, rendendo ogni espirazione un po' più lunga dell'inspirazione.",
+      "Tienilo facile e morbido; l'obiettivo è rilassarsi, non faticare."
+     ],
+     "q": "Cosa ti aiuta a rilassarti alla fine di una lunga giornata?",
+     "c": "Stasera dedica cinque minuti ad allungamenti dolci con respiro lento prima di dormire."
+    },
+    "pt": {
+     "t": "Alongamentos da noite para relaxar",
+     "g": "Relaxa antes de dormir com movimentos calmos e lentos.",
+     "p": [
+      "Escolhe movimentos suaves como torções, a posição da criança e alongamentos do pescoço.",
+      "Respira devagar, tornando cada expiração um pouco mais longa do que a inspiração.",
+      "Mantém tudo fácil e suave; o objetivo é relaxar, não fazer esforço."
+     ],
+     "q": "O que te ajuda a relaxar no fim de um dia longo?",
+     "c": "Hoje à noite, passa cinco minutos em alongamentos suaves a respirar devagar antes de dormir."
+    },
+    "pt_BR": {
+     "t": "Alongamentos noturnos para relaxar",
+     "g": "Relaxe antes de dormir com movimentos calmos e lentos.",
+     "p": [
+      "Escolha movimentos suaves como torções, a postura da criança e alongamentos de pescoço.",
+      "Respire devagar, deixando cada expiração um pouco mais longa que a inspiração.",
+      "Mantenha tudo leve e suave; a ideia é relaxar, não se esforçar."
+     ],
+     "q": "O que ajuda você a relaxar no fim de um dia longo?",
+     "c": "Hoje à noite, passe cinco minutos em alongamentos suaves respirando devagar antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quiet apartment workouts",
+     "g": "Train well without jumping, so your neighbours stay happy.",
+     "p": [
+      "Slow tempo squats, lunges and push-ups are quiet but still challenging.",
+      "Swap jumps for steps: step jacks, marching and step-back lunges.",
+      "A folded mat or rug under you softens any footsteps."
+     ],
+     "q": "Do you live in an apartment or share walls with others?",
+     "c": "Do a 10-minute workout today with zero jumps: squats, lunges, push-ups, bridges and marching."
+    },
+    "de": {
+     "t": "Leises Training in der Wohnung",
+     "g": "Trainier gut ohne Springen, damit deine Nachbarn zufrieden bleiben.",
+     "p": [
+      "Langsame Kniebeugen, Ausfallschritte und Liegestütze sind leise und trotzdem fordernd.",
+      "Ersetz Sprünge durch Schritte: leise Hampelmänner, Marschieren und Ausfallschritte nach hinten.",
+      "Eine gefaltete Matte oder ein Teppich dämpft deine Schritte."
+     ],
+     "q": "Wohnst du in einer Wohnung oder teilst du Wände mit anderen?",
+     "c": "Mach heute ein 10-Minuten-Training ohne Sprünge: Kniebeugen, Ausfallschritte, Liegestütze, Brücken, Marschieren."
+    },
+    "es": {
+     "t": "Entrenos silenciosos en un piso",
+     "g": "Entrena bien sin saltar, para que tus vecinos sigan contentos.",
+     "p": [
+      "Sentadillas, zancadas y flexiones a ritmo lento son silenciosas pero exigentes.",
+      "Cambia saltos por pasos: tijeras sin salto, marcha y zancadas atrás.",
+      "Una esterilla doblada o una alfombra suaviza las pisadas."
+     ],
+     "q": "¿Vives en un piso o compartes paredes con otras personas?",
+     "c": "Haz hoy un entreno de 10 minutos sin saltos: sentadillas, zancadas, flexiones, puentes y marcha."
+    },
+    "fr": {
+     "t": "Séances silencieuses en appartement",
+     "g": "Entraîne-toi bien sans sauter, pour garder des voisins contents.",
+     "p": [
+      "Squats, fentes et pompes lents sont silencieux mais restent exigeants.",
+      "Remplace les sauts par des pas : jacks sans saut, marche et fentes arrière.",
+      "Un tapis plié ou un tapis de sol amortit les bruits de pas."
+     ],
+     "q": "Vis-tu en appartement ou partages-tu des murs avec d'autres ?",
+     "c": "Fais une séance de 10 minutes sans aucun saut : squats, fentes, pompes, ponts et marche."
+    },
+    "it": {
+     "t": "Allenamenti silenziosi in appartamento",
+     "g": "Allenati bene senza saltare, così i vicini restano contenti.",
+     "p": [
+      "Squat, affondi e piegamenti lenti sono silenziosi ma comunque impegnativi.",
+      "Sostituisci i salti con i passi: jack senza salto, marcia e affondi indietro.",
+      "Un tappetino piegato o un tappeto attutisce i passi."
+     ],
+     "q": "Vivi in un appartamento o condividi le pareti con altri?",
+     "c": "Fai oggi un allenamento di 10 minuti senza salti: squat, affondi, piegamenti, ponti e marcia."
+    },
+    "pt": {
+     "t": "Treinos silenciosos num apartamento",
+     "g": "Treina bem sem saltar, para os vizinhos continuarem contentes.",
+     "p": [
+      "Agachamentos, afundos e flexões lentos são silenciosos mas exigentes.",
+      "Troca saltos por passos: polichinelos sem salto, marcha e afundos para trás.",
+      "Um tapete dobrado por baixo suaviza os passos."
+     ],
+     "q": "Vives num apartamento ou partilhas paredes com outras pessoas?",
+     "c": "Faz hoje um treino de 10 minutos sem saltos: agachamentos, afundos, flexões, pontes e marcha."
+    },
+    "pt_BR": {
+     "t": "Treino silencioso no apartamento",
+     "g": "Treine bem sem pular, para os vizinhos continuarem felizes.",
+     "p": [
+      "Agachamento, afundo e flexão em ritmo lento são silenciosos e ainda desafiadores.",
+      "Troque pulos por passos: polichinelo sem pulo, marcha e afundo para trás.",
+      "Um tapete dobrado embaixo de você suaviza os passos."
+     ],
+     "q": "Você mora em apartamento ou divide paredes com outras pessoas?",
+     "c": "Faça hoje um treino de 10 minutos sem pulos: agachamento, afundo, flexão, ponte e marcha."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Training in a small space",
+     "g": "Build routines that need only the size of a mat.",
+     "p": [
+      "Most strength moves, like squats, bridges and planks, stay in one spot.",
+      "Choose exercises that move up and down, not across the room.",
+      "Rotate moves in a circuit so a tiny space still feels varied."
+     ],
+     "q": "What is the smallest space you could train in at home?",
+     "c": "Mark out a mat-sized area and do a 2-round circuit without stepping outside it."
+    },
+    "de": {
+     "t": "Training auf kleinem Raum",
+     "g": "Bau Routinen, die nur so viel Platz wie eine Matte brauchen.",
+     "p": [
+      "Die meisten Kraftübungen wie Kniebeugen, Brücken und Stütz bleiben an einer Stelle.",
+      "Wähl Übungen, die nach oben und unten gehen, nicht quer durch den Raum.",
+      "Wechsle die Übungen im Zirkel, damit auch wenig Platz abwechslungsreich bleibt."
+     ],
+     "q": "Was ist der kleinste Platz, auf dem du zu Hause trainieren könntest?",
+     "c": "Steck dir eine Fläche in Mattengröße ab und mach 2 Zirkelrunden, ohne sie zu verlassen."
+    },
+    "es": {
+     "t": "Entrenar en poco espacio",
+     "g": "Crea rutinas que solo necesitan el tamaño de una esterilla.",
+     "p": [
+      "La mayoría de ejercicios de fuerza, como sentadillas, puentes y planchas, no se mueven del sitio.",
+      "Elige ejercicios que suben y bajan, no que cruzan la habitación.",
+      "Alterna ejercicios en un circuito para que un espacio pequeño se sienta variado."
+     ],
+     "q": "¿Cuál es el espacio más pequeño en el que podrías entrenar en casa?",
+     "c": "Marca un área del tamaño de una esterilla y haz 2 rondas de circuito sin salir de ella."
+    },
+    "fr": {
+     "t": "S'entraîner dans un petit espace",
+     "g": "Crée des routines qui ne demandent que la taille d'un tapis.",
+     "p": [
+      "La plupart des exercices de force, comme squats, ponts et planche, restent sur place.",
+      "Choisis des mouvements qui montent et descendent, pas qui traversent la pièce.",
+      "Fais tourner les exercices en circuit pour varier, même dans un petit coin."
+     ],
+     "q": "Quel est le plus petit espace où tu pourrais t'entraîner chez toi ?",
+     "c": "Délimite une zone de la taille d'un tapis et fais 2 tours de circuit sans en sortir."
+    },
+    "it": {
+     "t": "Allenarsi in poco spazio",
+     "g": "Crea routine che richiedono solo lo spazio di un tappetino.",
+     "p": [
+      "La maggior parte degli esercizi di forza, come squat, ponti e plank, resta sul posto.",
+      "Scegli esercizi che vanno su e giù, non da un lato all'altro della stanza.",
+      "Alterna gli esercizi in circuito per avere varietà anche in poco spazio."
+     ],
+     "q": "Qual è lo spazio più piccolo in cui potresti allenarti a casa?",
+     "c": "Delimita un'area grande quanto un tappetino e fai 2 giri di circuito senza uscirne."
+    },
+    "pt": {
+     "t": "Treinar num espaço pequeno",
+     "g": "Cria rotinas que só precisam do tamanho de um tapete.",
+     "p": [
+      "A maioria dos exercícios de força, como agachamentos, pontes e prancha, fica no mesmo sítio.",
+      "Escolhe exercícios que sobem e descem, não que atravessam a sala.",
+      "Alterna exercícios num circuito para que um espaço pequeno pareça variado."
+     ],
+     "q": "Qual é o espaço mais pequeno onde podias treinar em casa?",
+     "c": "Marca uma área do tamanho de um tapete e faz 2 voltas de circuito sem sair dela."
+    },
+    "pt_BR": {
+     "t": "Treino em espaço pequeno",
+     "g": "Crie rotinas que precisam só do tamanho de um tapetinho.",
+     "p": [
+      "A maioria dos exercícios de força, como agachamento, ponte e prancha, fica no mesmo lugar.",
+      "Escolha exercícios que sobem e descem, não que atravessam a sala.",
+      "Alterne exercícios em um circuito para um espaço pequeno parecer variado."
+     ],
+     "q": "Qual é o menor espaço em que você poderia treinar em casa?",
+     "c": "Marque uma área do tamanho de um tapetinho e faça 2 rodadas de circuito sem sair dela."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Workout music and motivation",
+     "g": "Build playlists that match and lift your effort.",
+     "p": [
+      "Calm songs suit warm-ups, mobility and cool-downs.",
+      "Upbeat songs with a steady beat help during circuits and cardio.",
+      "A favourite song can be your signal that it is time to start."
+     ],
+     "q": "Which song would be the first on your workout playlist?",
+     "c": "Create a short workout playlist with one calm, three upbeat and one relaxing song."
+    },
+    "de": {
+     "t": "Trainingsmusik und Motivation",
+     "g": "Stell Playlists zusammen, die zu deiner Anstrengung passen und sie beflügeln.",
+     "p": [
+      "Ruhige Lieder passen zu Aufwärmen, Mobilität und Abwärmen.",
+      "Schwungvolle Lieder mit gleichmäßigem Beat helfen bei Zirkeln und Cardio.",
+      "Ein Lieblingslied kann dein Signal sein, dass es jetzt losgeht."
+     ],
+     "q": "Welches Lied wäre das erste auf deiner Trainings-Playlist?",
+     "c": "Erstell eine kurze Playlist mit einem ruhigen, drei schwungvollen und einem entspannenden Lied."
+    },
+    "es": {
+     "t": "Música y motivación para entrenar",
+     "g": "Crea listas de reproducción que acompañen y animen tu esfuerzo.",
+     "p": [
+      "Las canciones tranquilas van bien para calentar, movilidad y vuelta a la calma.",
+      "Las canciones animadas con ritmo constante ayudan en circuitos y cardio.",
+      "Una canción favorita puede ser tu señal de que toca empezar."
+     ],
+     "q": "¿Qué canción sería la primera de tu lista para entrenar?",
+     "c": "Crea una lista corta con una canción tranquila, tres animadas y una relajante."
+    },
+    "fr": {
+     "t": "Musique et motivation",
+     "g": "Crée des playlists qui accompagnent et boostent ton effort.",
+     "p": [
+      "Les chansons calmes conviennent à l'échauffement, la mobilité et le retour au calme.",
+      "Les morceaux entraînants au rythme régulier aident pendant les circuits et le cardio.",
+      "Une chanson préférée peut être ton signal pour commencer."
+     ],
+     "q": "Quelle chanson serait la première de ta playlist sport ?",
+     "c": "Crée une courte playlist avec une chanson calme, trois rythmées et une relaxante."
+    },
+    "it": {
+     "t": "Musica e motivazione",
+     "g": "Crea playlist che accompagnano e danno slancio al tuo sforzo.",
+     "p": [
+      "Le canzoni tranquille sono adatte a riscaldamento, mobilità e defaticamento.",
+      "Le canzoni ritmate con un battito costante aiutano nei circuiti e nel cardio.",
+      "Una canzone preferita può essere il tuo segnale per iniziare."
+     ],
+     "q": "Quale canzone sarebbe la prima della tua playlist per allenarti?",
+     "c": "Crea una breve playlist con una canzone calma, tre ritmate e una rilassante."
+    },
+    "pt": {
+     "t": "Música e motivação para treinar",
+     "g": "Cria playlists que acompanhem e puxem pelo teu esforço.",
+     "p": [
+      "Músicas calmas combinam com aquecimento, mobilidade e retorno à calma.",
+      "Músicas animadas com batida constante ajudam nos circuitos e no cardio.",
+      "Uma música favorita pode ser o teu sinal de que está na hora de começar."
+     ],
+     "q": "Que música seria a primeira da tua playlist de treino?",
+     "c": "Cria uma playlist curta com uma música calma, três animadas e uma relaxante."
+    },
+    "pt_BR": {
+     "t": "Música e motivação no treino",
+     "g": "Monte playlists que acompanhem e animem seu esforço.",
+     "p": [
+      "Músicas calmas combinam com aquecimento, mobilidade e desaquecimento.",
+      "Músicas animadas com batida constante ajudam nos circuitos e no cardio.",
+      "Uma música favorita pode ser seu sinal de que é hora de começar."
+     ],
+     "q": "Qual música seria a primeira da sua playlist de treino?",
+     "c": "Monte uma playlist curta com uma música calma, três animadas e uma relaxante."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exercising with family",
+     "g": "Find fun ways to move together with kids, partners or housemates.",
+     "p": [
+      "Turn moves into games, like squat challenges or a dance-off.",
+      "Let everyone choose one exercise for a shared mini circuit.",
+      "Keep it playful and safe, with enough space for everyone."
+     ],
+     "q": "Who at home might enjoy moving with you?",
+     "c": "Invite someone at home to do a five-minute fun workout or dance with you today."
+    },
+    "de": {
+     "t": "Training mit der Familie",
+     "g": "Finde lustige Wege, dich mit Kindern, Partner oder Mitbewohnern gemeinsam zu bewegen.",
+     "p": [
+      "Mach aus Übungen Spiele, etwa Kniebeugen-Challenges oder ein Tanzduell.",
+      "Lass jeden eine Übung für einen gemeinsamen Mini-Zirkel aussuchen.",
+      "Bleib verspielt und sicher, mit genug Platz für alle."
+     ],
+     "q": "Wer bei dir zu Hause hätte Lust, sich mit dir zu bewegen?",
+     "c": "Lad heute jemanden zu Hause zu einem lustigen Fünf-Minuten-Training oder Tanz ein."
+    },
+    "es": {
+     "t": "Hacer ejercicio en familia",
+     "g": "Encuentra formas divertidas de moverte con niños, pareja o compañeros de piso.",
+     "p": [
+      "Convierte los ejercicios en juegos, como retos de sentadillas o un duelo de baile.",
+      "Deja que cada persona elija un ejercicio para un mini circuito compartido.",
+      "Mantenlo divertido y seguro, con espacio suficiente para todos."
+     ],
+     "q": "¿Quién en casa podría disfrutar moviéndose contigo?",
+     "c": "Invita hoy a alguien de casa a un entreno divertido o un baile de cinco minutos."
+    },
+    "fr": {
+     "t": "Faire du sport en famille",
+     "g": "Trouve des façons ludiques de bouger avec les enfants, ton ou ta partenaire ou tes colocs.",
+     "p": [
+      "Transforme les exercices en jeux, comme des défis de squats ou un battle de danse.",
+      "Laisse chacun choisir un exercice pour un mini-circuit commun.",
+      "Reste ludique et en sécurité, avec assez de place pour tout le monde."
+     ],
+     "q": "Qui chez toi aimerait bouger avec toi ?",
+     "c": "Invite quelqu'un chez toi à une séance amusante ou une danse de cinq minutes aujourd'hui."
+    },
+    "it": {
+     "t": "Allenarsi in famiglia",
+     "g": "Trova modi divertenti per muoverti insieme a bambini, partner o coinquilini.",
+     "p": [
+      "Trasforma gli esercizi in giochi, come sfide di squat o una gara di ballo.",
+      "Lascia che ognuno scelga un esercizio per un mini circuito di gruppo.",
+      "Rendilo giocoso e sicuro, con spazio a sufficienza per tutti."
+     ],
+     "q": "Chi in casa potrebbe divertirsi a muoversi con te?",
+     "c": "Invita oggi qualcuno di casa a un allenamento divertente o un ballo di cinque minuti."
+    },
+    "pt": {
+     "t": "Fazer exercício em família",
+     "g": "Encontra formas divertidas de te mexeres com crianças, cara-metade ou colegas de casa.",
+     "p": [
+      "Transforma os exercícios em jogos, como desafios de agachamentos ou uma batalha de dança.",
+      "Deixa cada pessoa escolher um exercício para um mini circuito em conjunto.",
+      "Mantém tudo divertido e seguro, com espaço suficiente para todos."
+     ],
+     "q": "Quem em casa poderia gostar de se mexer contigo?",
+     "c": "Convida hoje alguém de casa para um treino divertido ou uma dança de cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Exercício em família",
+     "g": "Encontre jeitos divertidos de se mexer junto com crianças, parceiro ou quem mora com você.",
+     "p": [
+      "Transforme os exercícios em brincadeiras, como desafios de agachamento ou uma batalha de dança.",
+      "Deixe cada pessoa escolher um exercício para um mini circuito em grupo.",
+      "Mantenha tudo divertido e seguro, com espaço suficiente para todos."
+     ],
+     "q": "Quem na sua casa poderia curtir se mexer com você?",
+     "c": "Convide hoje alguém de casa para um treino divertido ou uma dança de cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: moving well at home",
+     "g": "Look back at the technique, mobility and routines from month two.",
+     "p": [
+      "You built a weekly habit, tracked workouts and learned that tiny sessions count.",
+      "You added lunges, step-ups, hip work, balance, cardio moves, circuits and intervals.",
+      "You learned mobility, stretching and routines for mornings, evenings and small spaces."
+     ],
+     "q": "What change have you noticed in your body or mood over these two months?",
+     "c": "Write down your three favourite moves from month two and do them as a mini session."
+    },
+    "de": {
+     "t": "Rückblick: gut bewegen zu Hause",
+     "g": "Schau auf Technik, Mobilität und Routinen aus Monat zwei zurück.",
+     "p": [
+      "Du hast eine Wochengewohnheit aufgebaut, Trainings festgehalten und gelernt, dass Mini-Einheiten zählen.",
+      "Neu dabei: Ausfallschritte, Step-ups, Hüftübungen, Gleichgewicht, Cardio, Zirkel und Intervalle.",
+      "Du kennst Mobilität, Dehnen und Routinen für morgens, abends und kleine Räume."
+     ],
+     "q": "Welche Veränderung hast du in diesen zwei Monaten an Körper oder Stimmung bemerkt?",
+     "c": "Schreib deine drei Lieblingsübungen aus Monat zwei auf und mach sie als Mini-Einheit."
+    },
+    "es": {
+     "t": "Repaso: moverse bien en casa",
+     "g": "Repasa la técnica, la movilidad y las rutinas del segundo mes.",
+     "p": [
+      "Creaste un hábito semanal, registraste entrenos y aprendiste que lo poco también cuenta.",
+      "Sumaste zancadas, escalones, trabajo de cadera, equilibrio, cardio, circuitos e intervalos.",
+      "Aprendiste movilidad, estiramientos y rutinas para la mañana, la noche y espacios pequeños."
+     ],
+     "q": "¿Qué cambio has notado en tu cuerpo o tu ánimo en estos dos meses?",
+     "c": "Anota tus tres ejercicios favoritos del segundo mes y hazlos como mini sesión."
+    },
+    "fr": {
+     "t": "Bilan : bien bouger à la maison",
+     "g": "Reviens sur la technique, la mobilité et les routines du mois deux.",
+     "p": [
+      "Tu as créé une habitude hebdomadaire, suivi tes séances et compris que les mini-séances comptent.",
+      "Tu as ajouté fentes, montées de marche, travail des hanches, équilibre, cardio, circuits et intervalles.",
+      "Tu connais la mobilité, les étirements et des routines pour le matin, le soir et les petits espaces."
+     ],
+     "q": "Quel changement as-tu remarqué dans ton corps ou ton humeur en deux mois ?",
+     "c": "Note tes trois exercices préférés du mois deux et fais-les en mini-séance."
+    },
+    "it": {
+     "t": "Ripasso: muoversi bene a casa",
+     "g": "Ripensa a tecnica, mobilità e routine del secondo mese.",
+     "p": [
+      "Hai creato un'abitudine settimanale, annotato gli allenamenti e capito che anche il poco conta.",
+      "Hai aggiunto affondi, step-up, lavoro sulle anche, equilibrio, cardio, circuiti e intervalli.",
+      "Hai imparato mobilità, allungamenti e routine per mattina, sera e spazi piccoli."
+     ],
+     "q": "Che cambiamento hai notato nel corpo o nell'umore in questi due mesi?",
+     "c": "Scrivi i tuoi tre esercizi preferiti del secondo mese e falli come mini sessione."
+    },
+    "pt": {
+     "t": "Revisão: mexer-se bem em casa",
+     "g": "Revê a técnica, a mobilidade e as rotinas do segundo mês.",
+     "p": [
+      "Criaste um hábito semanal, registaste treinos e aprendeste que os mini treinos contam.",
+      "Juntaste afundos, subidas ao degrau, trabalho de anca, equilíbrio, cardio, circuitos e intervalos.",
+      "Aprendeste mobilidade, alongamentos e rotinas para a manhã, a noite e espaços pequenos."
+     ],
+     "q": "Que mudança notaste no corpo ou no humor nestes dois meses?",
+     "c": "Escreve os teus três exercícios favoritos do segundo mês e faz uma mini sessão com eles."
+    },
+    "pt_BR": {
+     "t": "Revisão: se movendo bem em casa",
+     "g": "Relembre a técnica, a mobilidade e as rotinas do segundo mês.",
+     "p": [
+      "Você criou um hábito semanal, registrou treinos e aprendeu que mini treinos contam.",
+      "Incluiu afundo, subida no degrau, trabalho de quadril, equilíbrio, cardio, circuitos e intervalos.",
+      "Aprendeu mobilidade, alongamento e rotinas para a manhã, a noite e espaços pequenos."
+     ],
+     "q": "Que mudança você notou no corpo ou no humor nesses dois meses?",
+     "c": "Anote seus três exercícios favoritos do segundo mês e faça uma mini sessão com eles."
+    }
+   }
+  }
+ ]
+}

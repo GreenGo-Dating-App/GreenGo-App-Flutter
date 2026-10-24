@@ -1,0 +1,835 @@
+{
+ "topic": "cycling",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Locks",
+     "g": "Choose a good lock and learn how to lock your bike so it stays yours.",
+     "p": [
+      "U-locks are strong and compact, chain locks are flexible, and folding locks balance both.",
+      "Lock the frame, not just a wheel, to a solid fixed object such as a proper bike stand.",
+      "Pick busy, well-lit spots, keep the lock off the ground and take quick-release items like lights with you."
+     ],
+     "q": "Where do you usually leave your bike, or where would you need to park it?",
+     "c": "Practise locking a bike so the frame and one wheel are attached to a stand."
+    },
+    "de": {
+     "t": "Schlösser",
+     "g": "Wähle ein gutes Schloss und lerne, dein Rad so abzuschließen, dass es deins bleibt.",
+     "p": [
+      "Bügelschlösser sind stabil und kompakt, Kettenschlösser flexibel, Faltschlösser liegen dazwischen.",
+      "Schließ den Rahmen, nicht nur ein Rad, an einen festen Gegenstand wie einen soliden Radständer.",
+      "Wähle belebte, helle Orte, halte das Schloss vom Boden fern und nimm abnehmbare Teile wie Lichter mit."
+     ],
+     "q": "Wo stellst du dein Rad meistens ab, oder wo müsstest du es parken?",
+     "c": "Übe, ein Rad so abzuschließen, dass Rahmen und ein Laufrad am Ständer hängen."
+    },
+    "es": {
+     "t": "Candados",
+     "g": "Elige un buen candado y aprende a atar la bici para que siga siendo tuya.",
+     "p": [
+      "Los candados en U son fuertes y compactos, los de cadena flexibles y los plegables un término medio.",
+      "Ata el cuadro, no solo una rueda, a un objeto fijo y sólido, como un buen aparcabicis.",
+      "Elige sitios concurridos y bien iluminados, deja el candado lejos del suelo y llévate las luces desmontables."
+     ],
+     "q": "¿Dónde sueles dejar la bici o dónde necesitarías aparcarla?",
+     "c": "Practica atar una bici con el cuadro y una rueda sujetos al aparcabicis."
+    },
+    "fr": {
+     "t": "Les antivols",
+     "g": "Choisis un bon antivol et apprends à attacher ton vélo pour qu'il reste à toi.",
+     "p": [
+      "Les U sont solides et compacts, les chaînes souples, et les antivols pliants entre les deux.",
+      "Attache le cadre, pas seulement une roue, à un point fixe et solide comme un vrai arceau.",
+      "Choisis des lieux fréquentés et éclairés, garde l'antivol loin du sol et emporte les éléments amovibles comme les lumières."
+     ],
+     "q": "Où laisses-tu ton vélo d'habitude, ou où devrais-tu le garer ?",
+     "c": "Entraîne-toi à attacher un vélo avec le cadre et une roue fixés à un arceau."
+    },
+    "it": {
+     "t": "I lucchetti",
+     "g": "Scegli un buon lucchetto e impara a legare la bici perché resti tua.",
+     "p": [
+      "I lucchetti a U sono robusti e compatti, le catene flessibili e i pieghevoli una via di mezzo.",
+      "Lega il telaio, non solo una ruota, a un oggetto fisso e solido come una vera rastrelliera.",
+      "Scegli luoghi frequentati e illuminati, tieni il lucchetto lontano da terra e porta via gli accessori sganciabili."
+     ],
+     "q": "Dove lasci di solito la bici, o dove avresti bisogno di parcheggiarla?",
+     "c": "Esercitati a legare una bici con telaio e una ruota fissati alla rastrelliera."
+    },
+    "pt": {
+     "t": "Cadeados",
+     "g": "Escolhe um bom cadeado e aprende a prender a bicicleta para que continue a ser tua.",
+     "p": [
+      "Os cadeados em U são fortes e compactos, os de corrente flexíveis e os dobráveis ficam no meio.",
+      "Prende o quadro, não só uma roda, a um objeto fixo e sólido, como um bom suporte para bicicletas.",
+      "Escolhe locais movimentados e iluminados, mantém o cadeado longe do chão e leva contigo as luzes amovíveis."
+     ],
+     "q": "Onde costumas deixar a bicicleta, ou onde precisarias de a estacionar?",
+     "c": "Pratica prender uma bicicleta com o quadro e uma roda presos ao suporte."
+    },
+    "pt_BR": {
+     "t": "Cadeados",
+     "g": "Escolha um bom cadeado e aprenda a prender a bike para que ela continue sendo sua.",
+     "p": [
+      "Os cadeados em U são fortes e compactos, os de corrente flexíveis e os dobráveis ficam no meio-termo.",
+      "Prenda o quadro, não só uma roda, a um objeto fixo e firme, como um bom paraciclo.",
+      "Escolha lugares movimentados e iluminados, deixe o cadeado longe do chão e leve as luzes removíveis com você."
+     ],
+     "q": "Onde você costuma deixar a bike, ou onde precisaria estacioná-la?",
+     "c": "Pratique prender uma bike com o quadro e uma roda presos ao paraciclo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cycling clothing basics",
+     "g": "Dress for comfort on the bike without needing anything fancy.",
+     "p": [
+      "Layers work best: a breathable base, a warm middle layer when it is cool and a light windproof jacket.",
+      "Padded cycling shorts reduce saddle soreness on longer rides; they are worn without underwear.",
+      "Bright colours and reflective details help others spot you, and close-fitting legs stay clear of the chain."
+     ],
+     "q": "What do you usually wear for a bike ride today?",
+     "c": "Put together a simple riding outfit from clothes you already own."
+    },
+    "de": {
+     "t": "Grundlagen der Radkleidung",
+     "g": "Kleide dich bequem fürs Rad, ganz ohne teure Spezialausrüstung.",
+     "p": [
+      "Schichten funktionieren am besten: atmungsaktive Basis, bei Kühle eine wärmende Lage und eine leichte Windjacke.",
+      "Radhosen mit Polster verhindern auf längeren Touren Sitzbeschwerden; man trägt sie ohne Unterwäsche.",
+      "Helle Farben und Reflexdetails machen dich sichtbar, und enge Hosenbeine bleiben weg von der Kette."
+     ],
+     "q": "Was trägst du heute normalerweise beim Radfahren?",
+     "c": "Stell aus Kleidung, die du schon hast, ein einfaches Rad-Outfit zusammen."
+    },
+    "es": {
+     "t": "Ropa básica para ciclismo",
+     "g": "Vístete cómodo para la bici sin necesitar nada sofisticado.",
+     "p": [
+      "Las capas funcionan mejor: una base transpirable, una capa de abrigo si hace fresco y un cortavientos ligero.",
+      "El culotte con badana reduce las molestias del sillín en salidas largas; se usa sin ropa interior.",
+      "Los colores vivos y los detalles reflectantes te hacen visible, y las perneras ajustadas no se enganchan en la cadena."
+     ],
+     "q": "¿Qué sueles ponerte ahora para salir en bici?",
+     "c": "Arma un conjunto sencillo para pedalear con ropa que ya tienes."
+    },
+    "fr": {
+     "t": "Les bases de la tenue vélo",
+     "g": "Habille-toi confortablement pour rouler, sans rien de compliqué.",
+     "p": [
+      "Le système de couches marche le mieux : une base respirante, une couche chaude s'il fait frais et un coupe-vent léger.",
+      "Le cuissard avec peau de chamois limite les douleurs de selle sur les longues sorties ; il se porte sans sous-vêtement.",
+      "Les couleurs vives et les détails réfléchissants te rendent visible, et les jambes ajustées restent loin de la chaîne."
+     ],
+     "q": "Que portes-tu d'habitude pour faire du vélo ?",
+     "c": "Compose une tenue vélo simple avec des vêtements que tu as déjà."
+    },
+    "it": {
+     "t": "Le basi dell'abbigliamento da bici",
+     "g": "Vestiti comodo per la bici senza bisogno di nulla di speciale.",
+     "p": [
+      "Gli strati funzionano meglio: una base traspirante, uno strato caldo se fa fresco e una giacca antivento leggera.",
+      "I pantaloncini con fondello riducono i fastidi da sella nelle uscite lunghe; si indossano senza biancheria.",
+      "Colori vivaci e dettagli riflettenti ti rendono visibile, e gambe aderenti restano lontane dalla catena."
+     ],
+     "q": "Cosa indossi di solito oggi per andare in bici?",
+     "c": "Componi un semplice outfit da bici con vestiti che hai già."
+    },
+    "pt": {
+     "t": "Básico da roupa para pedalar",
+     "g": "Veste-te com conforto para a bicicleta sem precisares de nada sofisticado.",
+     "p": [
+      "As camadas funcionam melhor: uma base respirável, uma camada quente se estiver fresco e um corta-vento leve.",
+      "Os calções com almofada reduzem o desconforto do selim em passeios longos; usam-se sem roupa interior.",
+      "Cores vivas e detalhes refletores tornam-te visível, e pernas justas ficam longe da corrente."
+     ],
+     "q": "O que costumas vestir para andar de bicicleta?",
+     "c": "Monta um conjunto simples para pedalar com roupa que já tens."
+    },
+    "pt_BR": {
+     "t": "Básico da roupa para pedalar",
+     "g": "Vista-se com conforto para a bike sem precisar de nada sofisticado.",
+     "p": [
+      "Camadas funcionam melhor: uma base que respira, uma camada quente se estiver frio e um corta-vento leve.",
+      "A bermuda com forro acolchoado reduz o incômodo do selim em pedais longos; é usada sem roupa íntima.",
+      "Cores vivas e detalhes refletivos deixam você visível, e calças justas ficam longe da corrente."
+     ],
+     "q": "O que você costuma vestir para pedalar hoje?",
+     "c": "Monte um look simples para pedalar com roupas que você já tem."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shoes and pedals",
+     "g": "Compare flat pedals and clipless pedals and find what suits you as a beginner.",
+     "p": [
+      "Flat pedals work with everyday shoes and let you put a foot down instantly, which builds confidence.",
+      "Clipless pedals lock a cleat on a special shoe to the pedal; you twist your heel outwards to release.",
+      "Start on flats with grippy, stiff-soled shoes; if you try clipless later, practise unclipping somewhere quiet."
+     ],
+     "q": "Would you feel comfortable being clipped to your pedals, or do you prefer flats?",
+     "c": "Check the soles of the shoes you ride in: are they grippy and fairly stiff?"
+    },
+    "de": {
+     "t": "Schuhe und Pedale",
+     "g": "Vergleiche Plattform- und Klickpedale und finde heraus, was zu dir als Einsteiger passt.",
+     "p": [
+      "Plattformpedale funktionieren mit Alltagsschuhen und du kannst sofort einen Fuß absetzen, das gibt Sicherheit.",
+      "Klickpedale verbinden eine Platte am Spezialschuh mit dem Pedal; zum Lösen drehst du die Ferse nach außen.",
+      "Starte mit Plattformpedalen und griffigen, festen Sohlen; Klickpedale später erst an einem ruhigen Ort üben."
+     ],
+     "q": "Würdest du dich mit Klickpedalen wohlfühlen, oder magst du lieber Plattformpedale?",
+     "c": "Schau dir die Sohlen deiner Radschuhe an: Sind sie griffig und eher steif?"
+    },
+    "es": {
+     "t": "Zapatillas y pedales",
+     "g": "Compara pedales de plataforma y automáticos y descubre qué te conviene al empezar.",
+     "p": [
+      "Los de plataforma sirven con calzado normal y te dejan apoyar el pie al instante, lo que da confianza.",
+      "Los automáticos enganchan una cala de una zapatilla especial al pedal; giras el talón hacia fuera para soltarte.",
+      "Empieza con plataformas y suelas firmes con agarre; si pruebas los automáticos, practica soltarte en un lugar tranquilo."
+     ],
+     "q": "¿Te sentirías cómodo enganchado a los pedales o prefieres plataformas?",
+     "c": "Mira las suelas del calzado con el que pedaleas: ¿agarran y son algo rígidas?"
+    },
+    "fr": {
+     "t": "Chaussures et pédales",
+     "g": "Compare pédales plates et automatiques et trouve ce qui te convient pour débuter.",
+     "p": [
+      "Les pédales plates s'utilisent avec des chaussures normales et permettent de poser le pied tout de suite.",
+      "Les pédales automatiques fixent une cale sous une chaussure spéciale ; on tourne le talon vers l'extérieur pour se libérer.",
+      "Commence avec des plates et des semelles rigides qui accrochent ; pour les automatiques, entraîne-toi dans un endroit calme."
+     ],
+     "q": "Te sentirais-tu à l'aise attaché à tes pédales, ou préfères-tu les plates ?",
+     "c": "Regarde les semelles de tes chaussures de vélo : accrochent-elles et sont-elles assez rigides ?"
+    },
+    "it": {
+     "t": "Scarpe e pedali",
+     "g": "Confronta pedali flat e pedali a sgancio e scopri cosa fa per te da principiante.",
+     "p": [
+      "I pedali flat funzionano con scarpe normali e ti fanno appoggiare il piede subito, dando sicurezza.",
+      "I pedali a sgancio agganciano una tacchetta della scarpa speciale; per sganciarti ruoti il tallone verso l'esterno.",
+      "Inizia con i flat e suole rigide e aderenti; se proverai lo sgancio, esercitati prima in un posto tranquillo."
+     ],
+     "q": "Ti sentiresti a tuo agio agganciato ai pedali o preferisci i flat?",
+     "c": "Guarda le suole delle scarpe con cui pedali: sono aderenti e abbastanza rigide?"
+    },
+    "pt": {
+     "t": "Sapatos e pedais",
+     "g": "Compara pedais planos e de encaixe e descobre o que te serve como principiante.",
+     "p": [
+      "Os pedais planos funcionam com sapatos normais e deixam-te pôr o pé no chão logo, o que dá confiança.",
+      "Os pedais de encaixe prendem um taco de um sapato especial ao pedal; rodas o calcanhar para fora para soltar.",
+      "Começa com planos e solas firmes e aderentes; se experimentares encaixe, treina soltar o pé num sítio calmo."
+     ],
+     "q": "Sentir-te-ias à vontade preso aos pedais ou preferes pedais planos?",
+     "c": "Vê as solas dos sapatos com que pedalas: agarram bem e são firmes?"
+    },
+    "pt_BR": {
+     "t": "Sapatilhas e pedais",
+     "g": "Compare pedais plataforma e de clipe e descubra o que serve para você como iniciante.",
+     "p": [
+      "Os pedais plataforma funcionam com tênis comum e deixam você pôr o pé no chão na hora, o que dá confiança.",
+      "Os pedais de clipe prendem um taquinho da sapatilha ao pedal; você gira o calcanhar para fora para soltar.",
+      "Comece com plataforma e solados firmes e aderentes; se testar o clipe, treine soltar o pé num lugar tranquilo."
+     ],
+     "q": "Você ficaria à vontade preso aos pedais ou prefere plataforma?",
+     "c": "Olhe o solado do calçado com que você pedala: ele tem aderência e é firme?"
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gloves and glasses",
+     "g": "Protect your hands and eyes from sun, wind, grit and vibration.",
+     "p": [
+      "Gloves cushion your palms against road buzz, keep hands warm and add protection if you ever fall.",
+      "Cycling glasses stop wind, dust and insects from reaching your eyes and cut glare on sunny days.",
+      "Clear or light-tinted lenses are great for cloudy days and dusk, when dark lenses would hide details."
+     ],
+     "q": "Have your eyes ever watered from the wind or a bug while riding?",
+     "c": "Try any sunglasses or clear glasses you own on a short ride and notice the difference."
+    },
+    "de": {
+     "t": "Handschuhe und Brille",
+     "g": "Schütze Hände und Augen vor Sonne, Wind, Staub und Vibrationen.",
+     "p": [
+      "Handschuhe polstern die Handflächen gegen Vibrationen, halten warm und schützen, falls du stürzt.",
+      "Eine Radbrille hält Wind, Staub und Insekten von den Augen fern und mindert Blendung bei Sonne.",
+      "Klare oder leicht getönte Gläser sind ideal bei Wolken und Dämmerung, wenn dunkle Gläser Details verbergen."
+     ],
+     "q": "Haben deine Augen beim Fahren schon einmal durch Wind oder ein Insekt getränt?",
+     "c": "Teste auf einer kurzen Fahrt eine Sonnen- oder klare Brille und achte auf den Unterschied."
+    },
+    "es": {
+     "t": "Guantes y gafas",
+     "g": "Protege manos y ojos del sol, el viento, la gravilla y las vibraciones.",
+     "p": [
+      "Los guantes amortiguan las vibraciones en las palmas, abrigan y protegen si alguna vez te caes.",
+      "Las gafas de ciclismo frenan viento, polvo e insectos y reducen el deslumbramiento en días de sol.",
+      "Las lentes claras o poco tintadas van genial en días nublados y al atardecer, cuando las oscuras ocultan detalles."
+     ],
+     "q": "¿Alguna vez te lloraron los ojos por el viento o un bicho mientras pedaleabas?",
+     "c": "Prueba unas gafas de sol o transparentes en una salida corta y nota la diferencia."
+    },
+    "fr": {
+     "t": "Gants et lunettes",
+     "g": "Protège tes mains et tes yeux du soleil, du vent, des gravillons et des vibrations.",
+     "p": [
+      "Les gants amortissent les vibrations dans les paumes, gardent les mains au chaud et protègent en cas de chute.",
+      "Les lunettes de vélo arrêtent vent, poussière et insectes et réduisent l'éblouissement au soleil.",
+      "Les verres clairs ou peu teintés sont parfaits par temps gris et au crépuscule, quand des verres foncés cachent les détails."
+     ],
+     "q": "As-tu déjà eu les yeux qui pleurent à cause du vent ou d'un insecte à vélo ?",
+     "c": "Essaie des lunettes de soleil ou claires lors d'une courte sortie et note la différence."
+    },
+    "it": {
+     "t": "Guanti e occhiali",
+     "g": "Proteggi mani e occhi da sole, vento, polvere e vibrazioni.",
+     "p": [
+      "I guanti attutiscono le vibrazioni sui palmi, tengono caldo e proteggono in caso di caduta.",
+      "Gli occhiali da bici fermano vento, polvere e insetti e riducono il riverbero nelle giornate di sole.",
+      "Lenti chiare o poco colorate sono ottime con le nuvole e al tramonto, quando quelle scure nascondono i dettagli."
+     ],
+     "q": "Ti è mai capitato di lacrimare per il vento o un insetto mentre pedalavi?",
+     "c": "Prova occhiali da sole o trasparenti in una breve uscita e nota la differenza."
+    },
+    "pt": {
+     "t": "Luvas e óculos",
+     "g": "Protege as mãos e os olhos do sol, do vento, da gravilha e das vibrações.",
+     "p": [
+      "As luvas amortecem as vibrações nas palmas, aquecem as mãos e protegem se alguma vez caíres.",
+      "Os óculos de ciclismo travam vento, pó e insetos e reduzem o encandeamento em dias de sol.",
+      "Lentes claras ou pouco escuras são ótimas em dias nublados e ao anoitecer, quando as escuras escondem detalhes."
+     ],
+     "q": "Já te lacrimejaram os olhos por causa do vento ou de um inseto a pedalar?",
+     "c": "Experimenta uns óculos de sol ou transparentes num passeio curto e nota a diferença."
+    },
+    "pt_BR": {
+     "t": "Luvas e óculos",
+     "g": "Proteja mãos e olhos do sol, do vento, da poeira e das vibrações.",
+     "p": [
+      "As luvas amortecem as vibrações nas palmas, aquecem as mãos e protegem se você cair.",
+      "Os óculos de ciclismo barram vento, poeira e insetos e reduzem o ofuscamento em dias de sol.",
+      "Lentes claras ou pouco escuras são ótimas em dias nublados e no fim da tarde, quando as escuras escondem detalhes."
+     ],
+     "q": "Seus olhos já lacrimejaram por causa do vento ou de um inseto pedalando?",
+     "c": "Teste óculos de sol ou transparentes num pedal curto e repare na diferença."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking your bike before a ride",
+     "g": "Learn the quick ABC check that takes a minute and prevents most surprises.",
+     "p": [
+      "A is for air: squeeze the tyres and top them up to the pressure printed on the sidewall.",
+      "B is for brakes: squeeze both levers; they should feel firm and stop the bike before touching the bar.",
+      "C is for chain: it should run smoothly and look clean and lightly oiled; also check wheels and quick releases are tight."
+     ],
+     "q": "Which part of the ABC check do you think people forget most often?",
+     "c": "Do a full ABC check on a bike today and note anything that needs attention."
+    },
+    "de": {
+     "t": "Rad-Check vor der Fahrt",
+     "g": "Lerne den schnellen ABC-Check, der eine Minute dauert und die meisten Überraschungen verhindert.",
+     "p": [
+      "A wie Luft: Drück die Reifen und pump sie auf den Druck, der auf der Flanke steht.",
+      "B wie Bremsen: Zieh beide Hebel; sie sollen fest wirken und bremsen, bevor sie den Lenker berühren.",
+      "C wie Kette: Sie läuft leicht, ist sauber und leicht geölt; prüf auch, ob Laufräder und Schnellspanner fest sitzen."
+     ],
+     "q": "Welchen Teil des ABC-Checks vergessen Leute wohl am häufigsten?",
+     "c": "Mach heute an einem Rad den kompletten ABC-Check und notiere, was Pflege braucht."
+    },
+    "es": {
+     "t": "Revisar la bici antes de salir",
+     "g": "Aprende la revisión ABC, que dura un minuto y evita la mayoría de sorpresas.",
+     "p": [
+      "A de aire: aprieta las ruedas e ínflalas a la presión indicada en el flanco.",
+      "B de frenos: aprieta ambas manetas; deben sentirse firmes y frenar antes de tocar el manillar.",
+      "C de cadena: debe girar suave, limpia y algo engrasada; revisa también que ruedas y cierres rápidos estén apretados."
+     ],
+     "q": "¿Qué parte de la revisión ABC crees que la gente olvida más?",
+     "c": "Haz hoy la revisión ABC completa a una bici y anota lo que necesite atención."
+    },
+    "fr": {
+     "t": "Vérifier son vélo avant de partir",
+     "g": "Apprends le contrôle ABC : une minute qui évite la plupart des mauvaises surprises.",
+     "p": [
+      "A comme air : pince les pneus et gonfle-les à la pression indiquée sur le flanc.",
+      "B comme brakes, les freins : serre les deux leviers ; ils doivent être fermes et freiner avant de toucher le guidon.",
+      "C comme chaîne : elle tourne sans à-coups, propre et légèrement huilée ; vérifie aussi que roues et blocages sont serrés."
+     ],
+     "q": "Quelle partie du contrôle ABC les gens oublient-ils le plus souvent, à ton avis ?",
+     "c": "Fais aujourd'hui un contrôle ABC complet d'un vélo et note ce qui demande de l'attention."
+    },
+    "it": {
+     "t": "Controllare la bici prima di uscire",
+     "g": "Impara il controllo ABC: un minuto che evita la maggior parte delle sorprese.",
+     "p": [
+      "A come aria: stringi le gomme e gonfiale alla pressione indicata sul fianco.",
+      "B come brakes, i freni: stringi le due leve; devono essere decise e frenare prima di toccare il manubrio.",
+      "C come catena: deve girare fluida, pulita e leggermente lubrificata; controlla anche ruote e sganci rapidi ben chiusi."
+     ],
+     "q": "Quale parte del controllo ABC secondo te si dimentica più spesso?",
+     "c": "Fai oggi un controllo ABC completo su una bici e annota cosa va sistemato."
+    },
+    "pt": {
+     "t": "Verificar a bicicleta antes de sair",
+     "g": "Aprende a verificação ABC, que leva um minuto e evita a maioria das surpresas.",
+     "p": [
+      "A de ar: aperta os pneus e enche-os até à pressão indicada no flanco.",
+      "B de brakes, os travões: aperta as duas manetes; devem estar firmes e travar antes de tocar no guiador.",
+      "C de corrente: deve rodar suave, limpa e levemente oleada; vê também se rodas e apertos rápidos estão bem fechados."
+     ],
+     "q": "Que parte da verificação ABC achas que as pessoas esquecem mais?",
+     "c": "Faz hoje a verificação ABC completa a uma bicicleta e anota o que precisa de atenção."
+    },
+    "pt_BR": {
+     "t": "Checando a bike antes de sair",
+     "g": "Aprenda o check ABC, que leva um minuto e evita a maioria das surpresas.",
+     "p": [
+      "A de ar: aperte os pneus e calibre na pressão indicada na lateral.",
+      "B de brakes, os freios: aperte os dois manetes; eles devem estar firmes e frear antes de encostar no guidão.",
+      "C de corrente: deve girar macia, limpa e levemente lubrificada; veja também se rodas e blocagens estão bem fechadas."
+     ],
+     "q": "Que parte do check ABC você acha que as pessoas mais esquecem?",
+     "c": "Faça hoje o check ABC completo numa bike e anote o que precisa de atenção."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting on and off smoothly",
+     "g": "Mount, start and stop calmly so every ride begins and ends without a wobble.",
+     "p": [
+      "Lean the bike towards you, swing your leg over the back or step through the frame, and stand over it first.",
+      "To start, raise one pedal to about two o'clock, push down and sit as the bike begins to roll.",
+      "To stop, brake gently, slide forward off the saddle and put one foot down as the bike comes to rest."
+     ],
+     "q": "Which part feels trickiest for you: starting, stopping or getting on?",
+     "c": "Practise five calm starts and stops in a quiet, open space."
+    },
+    "de": {
+     "t": "Sanft auf- und absteigen",
+     "g": "Steig ruhig auf, fahr los und halte an, damit jede Fahrt ohne Wackeln beginnt und endet.",
+     "p": [
+      "Neig das Rad zu dir, schwing das Bein über das Heck oder steig durch den Rahmen und stell dich zuerst darüber.",
+      "Zum Anfahren hebst du ein Pedal auf etwa zwei Uhr, trittst hinein und setzt dich, sobald das Rad rollt.",
+      "Zum Anhalten bremst du sanft, rutschst vom Sattel nach vorn und stellst einen Fuß ab, wenn das Rad steht."
+     ],
+     "q": "Was fällt dir am schwersten: Anfahren, Anhalten oder Aufsteigen?",
+     "c": "Übe an einem ruhigen, freien Ort fünf entspannte Starts und Stopps."
+    },
+    "es": {
+     "t": "Subir y bajar con suavidad",
+     "g": "Sube, arranca y para con calma para que cada salida empiece y acabe sin tambaleos.",
+     "p": [
+      "Inclina la bici hacia ti, pasa la pierna por detrás o por el hueco del cuadro y quédate primero de pie sobre ella.",
+      "Para arrancar, sube un pedal a la posición de las dos en punto, empuja y siéntate cuando la bici empiece a rodar.",
+      "Para parar, frena suave, deslízate hacia delante del sillín y apoya un pie cuando la bici se detenga."
+     ],
+     "q": "¿Qué te parece más difícil: arrancar, parar o subirte?",
+     "c": "Practica cinco arranques y paradas tranquilos en un espacio abierto y sin tráfico."
+    },
+    "fr": {
+     "t": "Monter et descendre en douceur",
+     "g": "Monte, démarre et arrête-toi calmement pour commencer et finir chaque sortie sans zigzaguer.",
+     "p": [
+      "Incline le vélo vers toi, passe la jambe par-dessus l'arrière ou à travers le cadre et tiens-toi d'abord debout au-dessus.",
+      "Pour démarrer, place une pédale vers deux heures, appuie et assieds-toi quand le vélo commence à rouler.",
+      "Pour t'arrêter, freine doucement, glisse vers l'avant de la selle et pose un pied quand le vélo s'immobilise."
+     ],
+     "q": "Qu'est-ce qui te semble le plus délicat : démarrer, t'arrêter ou monter ?",
+     "c": "Entraîne-toi à cinq démarrages et arrêts calmes dans un endroit dégagé et tranquille."
+    },
+    "it": {
+     "t": "Salire e scendere con fluidità",
+     "g": "Sali, parti e fermati con calma perché ogni uscita inizi e finisca senza sbandamenti.",
+     "p": [
+      "Inclina la bici verso di te, passa la gamba dietro o dentro il telaio e mettiti prima in piedi sopra.",
+      "Per partire porta un pedale verso le due, spingi e siediti quando la bici comincia a muoversi.",
+      "Per fermarti frena dolcemente, scivola in avanti dalla sella e appoggia un piede quando la bici si ferma."
+     ],
+     "q": "Cosa ti sembra più difficile: partire, fermarti o salire?",
+     "c": "Esercitati con cinque partenze e fermate tranquille in uno spazio aperto e calmo."
+    },
+    "pt": {
+     "t": "Subir e descer com suavidade",
+     "g": "Sobe, arranca e para com calma para que cada passeio comece e acabe sem oscilar.",
+     "p": [
+      "Inclina a bicicleta para ti, passa a perna por trás ou pelo meio do quadro e fica primeiro de pé sobre ela.",
+      "Para arrancar, põe um pedal mais ou menos nas duas horas, empurra e senta-te quando a bicicleta começar a andar.",
+      "Para parar, trava com suavidade, desliza para a frente do selim e pousa um pé quando a bicicleta parar."
+     ],
+     "q": "O que te parece mais difícil: arrancar, parar ou subir para a bicicleta?",
+     "c": "Pratica cinco arranques e paragens calmos num espaço aberto e tranquilo."
+    },
+    "pt_BR": {
+     "t": "Subir e descer com suavidade",
+     "g": "Suba, arranque e pare com calma para que cada pedal comece e termine sem balançar.",
+     "p": [
+      "Incline a bike para você, passe a perna por trás ou pelo vão do quadro e fique primeiro em pé sobre ela.",
+      "Para arrancar, posicione um pedal mais ou menos nas duas horas, empurre e sente quando a bike começar a andar.",
+      "Para parar, freie de leve, deslize para frente do selim e apoie um pé quando a bike parar."
+     ],
+     "q": "O que parece mais difícil para você: arrancar, parar ou subir na bike?",
+     "c": "Pratique cinco arrancadas e paradas tranquilas num espaço aberto e sem trânsito."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pedalling efficiently",
+     "g": "Swap stomping for smooth circles and a steady rhythm that saves energy.",
+     "p": [
+      "Think of pedalling as drawing circles: push forward over the top and sweep back at the bottom.",
+      "Cadence is pedal turns per minute; many riders feel good around 70 to 90, but comfort matters most.",
+      "If your legs burn, shift to an easier gear and spin a little faster rather than pushing harder."
+     ],
+     "q": "Do you tend to pedal fast and light or slow and heavy?",
+     "c": "On your next ride, count pedal turns for 30 seconds and double it to find your cadence."
+    },
+    "de": {
+     "t": "Effizient treten",
+     "g": "Ersetze Stampfen durch runde Kreise und einen gleichmäßigen Rhythmus, der Kraft spart.",
+     "p": [
+      "Stell dir Treten als Kreise vor: oben nach vorn schieben, unten nach hinten ziehen.",
+      "Die Trittfrequenz sind Kurbelumdrehungen pro Minute; viele mögen 70 bis 90, wichtig ist aber dein Wohlgefühl.",
+      "Brennen die Beine, schalte leichter und tritt etwas schneller, statt mehr Kraft einzusetzen."
+     ],
+     "q": "Trittst du eher schnell und leicht oder langsam und schwer?",
+     "c": "Zähl bei der nächsten Fahrt 30 Sekunden lang die Kurbelumdrehungen und verdopple sie."
+    },
+    "es": {
+     "t": "Pedalear con eficiencia",
+     "g": "Cambia los pisotones por círculos suaves y un ritmo constante que ahorra energía.",
+     "p": [
+      "Piensa en pedalear como dibujar círculos: empuja hacia delante arriba y arrastra hacia atrás abajo.",
+      "La cadencia son las vueltas de pedal por minuto; muchos se sienten bien entre 70 y 90, pero manda la comodidad.",
+      "Si te arden las piernas, pon una marcha más suave y pedalea algo más rápido en vez de apretar más."
+     ],
+     "q": "¿Sueles pedalear rápido y ligero o lento y duro?",
+     "c": "En tu próxima salida, cuenta las pedaladas durante 30 segundos y multiplica por dos."
+    },
+    "fr": {
+     "t": "Pédaler efficacement",
+     "g": "Remplace les coups de pédale brusques par des cercles fluides et un rythme régulier.",
+     "p": [
+      "Imagine que tu dessines des cercles : pousse vers l'avant en haut et ramène vers l'arrière en bas.",
+      "La cadence, c'est le nombre de tours de pédale par minute ; beaucoup aiment 70 à 90, mais ton confort prime.",
+      "Si tes jambes brûlent, passe un braquet plus facile et tourne un peu plus vite au lieu de forcer."
+     ],
+     "q": "Tu pédales plutôt vite et léger ou lentement et en force ?",
+     "c": "Lors de ta prochaine sortie, compte tes tours de pédale pendant 30 secondes et double le chiffre."
+    },
+    "it": {
+     "t": "Pedalare in modo efficiente",
+     "g": "Sostituisci le spinte brusche con cerchi fluidi e un ritmo costante che fa risparmiare energia.",
+     "p": [
+      "Immagina di disegnare cerchi: spingi in avanti in alto e tira indietro in basso.",
+      "La cadenza è il numero di pedalate al minuto; molti stanno bene tra 70 e 90, ma conta soprattutto il comfort.",
+      "Se le gambe bruciano, metti un rapporto più agile e pedala un po' più veloce invece di spingere di più."
+     ],
+     "q": "Tendi a pedalare veloce e leggero o lento e duro?",
+     "c": "Nella prossima uscita conta le pedalate per 30 secondi e raddoppia il numero."
+    },
+    "pt": {
+     "t": "Pedalar com eficiência",
+     "g": "Troca as pisadelas por círculos suaves e um ritmo constante que poupa energia.",
+     "p": [
+      "Pensa em pedalar como desenhar círculos: empurra para a frente em cima e puxa para trás em baixo.",
+      "A cadência é o número de pedaladas por minuto; muitos sentem-se bem entre 70 e 90, mas o conforto é o que conta.",
+      "Se as pernas arderem, mete uma mudança mais leve e pedala um pouco mais depressa em vez de fazer mais força."
+     ],
+     "q": "Costumas pedalar rápido e leve ou devagar e pesado?",
+     "c": "No próximo passeio, conta as pedaladas durante 30 segundos e multiplica por dois."
+    },
+    "pt_BR": {
+     "t": "Pedalando com eficiência",
+     "g": "Troque as pisadas fortes por círculos suaves e um ritmo constante que economiza energia.",
+     "p": [
+      "Pense em pedalar como desenhar círculos: empurre para frente em cima e puxe para trás embaixo.",
+      "Cadência é o número de pedaladas por minuto; muita gente se sente bem entre 70 e 90, mas o conforto vem primeiro.",
+      "Se as pernas queimarem, passe para uma marcha mais leve e gire um pouco mais rápido em vez de fazer mais força."
+     ],
+     "q": "Você costuma pedalar rápido e leve ou devagar e pesado?",
+     "c": "No próximo pedal, conte as pedaladas por 30 segundos e multiplique por dois."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shifting gears with confidence",
+     "g": "Learn when and how to shift so hills and stops feel easy.",
+     "p": [
+      "Shift before you need it: change to an easier gear just before a climb or as you slow for a stop.",
+      "Keep pedalling lightly while you shift and ease off the pressure so the chain moves smoothly.",
+      "Use the rear gears for small changes and the front ones for big jumps, one click at a time."
+     ],
+     "q": "Have you ever been stuck in a hard gear at the bottom of a hill?",
+     "c": "On a short ride, shift down before every stop so you can start off easily."
+    },
+    "de": {
+     "t": "Sicher schalten",
+     "g": "Lerne, wann und wie du schaltest, damit Hügel und Stopps leicht werden.",
+     "p": [
+      "Schalte vorausschauend: in einen leichteren Gang kurz vor dem Anstieg oder beim Abbremsen vor einem Stopp.",
+      "Tritt beim Schalten weiter, aber mit wenig Druck, damit die Kette sauber wechselt.",
+      "Nutze hinten die Gänge für kleine Schritte und vorn für große Sprünge, immer Klick für Klick."
+     ],
+     "q": "Bist du schon einmal am Fuß eines Hügels in einem zu schweren Gang stecken geblieben?",
+     "c": "Schalte bei einer kurzen Fahrt vor jedem Stopp herunter, damit du leicht anfahren kannst."
+    },
+    "es": {
+     "t": "Cambiar de marcha con confianza",
+     "g": "Aprende cuándo y cómo cambiar para que cuestas y paradas sean fáciles.",
+     "p": [
+      "Cambia antes de necesitarlo: pon una marcha más suave justo antes de una subida o al frenar para parar.",
+      "Sigue pedaleando suave mientras cambias y quita presión para que la cadena se mueva bien.",
+      "Usa los piñones traseros para cambios pequeños y los platos para saltos grandes, de clic en clic."
+     ],
+     "q": "¿Alguna vez te quedaste atascado en una marcha dura al pie de una cuesta?",
+     "c": "En una salida corta, baja de marcha antes de cada parada para arrancar con facilidad."
+    },
+    "fr": {
+     "t": "Changer de vitesse avec assurance",
+     "g": "Apprends quand et comment changer de vitesse pour que côtes et arrêts deviennent faciles.",
+     "p": [
+      "Anticipe : passe un braquet plus facile juste avant une montée ou en ralentissant avant un arrêt.",
+      "Continue à pédaler légèrement pendant le changement en relâchant la pression pour que la chaîne passe bien.",
+      "Utilise l'arrière pour les petits écarts et l'avant pour les grands sauts, un cran à la fois."
+     ],
+     "q": "T'es-tu déjà retrouvé bloqué sur un gros braquet au pied d'une côte ?",
+     "c": "Lors d'une courte sortie, rétrograde avant chaque arrêt pour redémarrer facilement."
+    },
+    "it": {
+     "t": "Cambiare marcia con sicurezza",
+     "g": "Impara quando e come cambiare perché salite e fermate diventino facili.",
+     "p": [
+      "Cambia in anticipo: metti un rapporto più agile appena prima di una salita o mentre rallenti per fermarti.",
+      "Continua a pedalare leggero mentre cambi e alleggerisci la spinta perché la catena si sposti bene.",
+      "Usa il posteriore per piccoli passi e l'anteriore per grandi salti, uno scatto alla volta."
+     ],
+     "q": "Ti è mai capitato di restare con un rapporto duro ai piedi di una salita?",
+     "c": "In una breve uscita, scala marcia prima di ogni fermata per ripartire facilmente."
+    },
+    "pt": {
+     "t": "Mudar de mudança com confiança",
+     "g": "Aprende quando e como mudar para que subidas e paragens sejam fáceis.",
+     "p": [
+      "Muda antes de precisares: mete uma mudança mais leve mesmo antes de uma subida ou ao abrandar para parar.",
+      "Continua a pedalar levemente enquanto mudas e alivia a força para a corrente passar bem.",
+      "Usa as mudanças de trás para ajustes pequenos e as da frente para saltos grandes, um clique de cada vez."
+     ],
+     "q": "Já ficaste preso numa mudança pesada no início de uma subida?",
+     "c": "Num passeio curto, mete uma mudança mais leve antes de cada paragem para arrancar com facilidade."
+    },
+    "pt_BR": {
+     "t": "Trocando de marcha com confiança",
+     "g": "Aprenda quando e como trocar de marcha para que subidas e paradas fiquem fáceis.",
+     "p": [
+      "Troque antes de precisar: passe para uma marcha mais leve logo antes de uma subida ou ao reduzir para parar.",
+      "Continue pedalando de leve enquanto troca e alivie a força para a corrente passar bem.",
+      "Use as marchas de trás para ajustes pequenos e as da frente para saltos grandes, um clique por vez."
+     ],
+     "q": "Você já ficou preso numa marcha pesada no começo de uma subida?",
+     "c": "Num pedal curto, alivie a marcha antes de cada parada para arrancar com facilidade."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Braking well",
+     "g": "Use both brakes smoothly so you can slow down and stop with control.",
+     "p": [
+      "The front brake does most of the stopping, but squeeze it progressively, never grab it suddenly.",
+      "Use both brakes together, a little more front than rear on dry ground, and ease off if a wheel starts to skid.",
+      "Brake before a corner while the bike is upright, then roll through the bend with loose arms."
+     ],
+     "q": "Do you know which lever controls your front brake?",
+     "c": "Practise smooth stops from walking pace using both brakes in a safe, empty area."
+    },
+    "de": {
+     "t": "Richtig bremsen",
+     "g": "Nutze beide Bremsen gefühlvoll, damit du kontrolliert langsamer wirst und anhältst.",
+     "p": [
+      "Die Vorderbremse leistet den Großteil, zieh sie aber dosiert und nie ruckartig.",
+      "Bremse mit beiden zusammen, auf trockenem Boden etwas mehr vorn, und lass nach, wenn ein Rad rutscht.",
+      "Bremse vor der Kurve, solange das Rad aufrecht ist, und roll dann mit lockeren Armen hindurch."
+     ],
+     "q": "Weißt du, welcher Hebel deine Vorderbremse bedient?",
+     "c": "Übe an einem sicheren, leeren Ort sanfte Stopps aus Schritttempo mit beiden Bremsen."
+    },
+    "es": {
+     "t": "Frenar bien",
+     "g": "Usa ambos frenos con suavidad para reducir velocidad y parar con control.",
+     "p": [
+      "El freno delantero hace la mayor parte del trabajo, pero apriétalo de forma progresiva, nunca de golpe.",
+      "Usa los dos a la vez, algo más el delantero en seco, y suelta un poco si una rueda empieza a derrapar.",
+      "Frena antes de la curva con la bici recta y luego traza la curva con los brazos relajados."
+     ],
+     "q": "¿Sabes qué maneta controla tu freno delantero?",
+     "c": "Practica paradas suaves a paso de peatón con los dos frenos en una zona segura y vacía."
+    },
+    "fr": {
+     "t": "Bien freiner",
+     "g": "Utilise les deux freins en douceur pour ralentir et t'arrêter en gardant le contrôle.",
+     "p": [
+      "Le frein avant fait l'essentiel du travail, mais serre-le progressivement, jamais d'un coup.",
+      "Utilise les deux ensemble, un peu plus l'avant sur sol sec, et relâche si une roue commence à glisser.",
+      "Freine avant le virage, vélo bien droit, puis passe la courbe avec les bras souples."
+     ],
+     "q": "Sais-tu quel levier commande ton frein avant ?",
+     "c": "Entraîne-toi à des arrêts doux depuis l'allure du pas avec les deux freins dans un endroit sûr et vide."
+    },
+    "it": {
+     "t": "Frenare bene",
+     "g": "Usa entrambi i freni con dolcezza per rallentare e fermarti con controllo.",
+     "p": [
+      "Il freno anteriore fa gran parte del lavoro, ma azionalo in modo progressivo, mai di colpo.",
+      "Usa i due freni insieme, un po' più l'anteriore sull'asciutto, e molla se una ruota inizia a slittare.",
+      "Frena prima della curva con la bici dritta, poi percorrila con le braccia morbide."
+     ],
+     "q": "Sai quale leva comanda il tuo freno anteriore?",
+     "c": "Esercitati a fermarti dolcemente a passo d'uomo con entrambi i freni in un'area sicura e vuota."
+    },
+    "pt": {
+     "t": "Travar bem",
+     "g": "Usa os dois travões com suavidade para abrandar e parar com controlo.",
+     "p": [
+      "O travão da frente faz a maior parte do trabalho, mas aperta-o de forma progressiva, nunca de repente.",
+      "Usa os dois em conjunto, um pouco mais o da frente em piso seco, e alivia se uma roda começar a derrapar.",
+      "Trava antes da curva com a bicicleta direita e depois faz a curva com os braços soltos."
+     ],
+     "q": "Sabes qual é a manete do teu travão da frente?",
+     "c": "Pratica paragens suaves a passo de caminhada com os dois travões num local seguro e vazio."
+    },
+    "pt_BR": {
+     "t": "Freando bem",
+     "g": "Use os dois freios com suavidade para reduzir e parar com controle.",
+     "p": [
+      "O freio dianteiro faz a maior parte do trabalho, mas aperte de forma progressiva, nunca de uma vez.",
+      "Use os dois juntos, um pouco mais o dianteiro no seco, e alivie se uma roda começar a derrapar.",
+      "Freie antes da curva com a bike reta e depois faça a curva com os braços soltos."
+     ],
+     "q": "Você sabe qual manete controla seu freio dianteiro?",
+     "c": "Pratique paradas suaves em ritmo de caminhada com os dois freios num lugar seguro e vazio."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at everything you learned about bikes, fit, gear and first skills.",
+     "p": [
+      "You now know the main bike types, their parts and how gears and brakes work together.",
+      "You can set saddle height and position, choose a helmet, lights and lock, and dress for the ride.",
+      "You have practised the ABC check, smooth starts, efficient pedalling, shifting and braking."
+     ],
+     "q": "Which lesson from this first month surprised or helped you most?",
+     "c": "Go for a short, easy ride and use at least three skills from this month."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Schau zurück auf alles, was du über Räder, Einstellung, Ausrüstung und erste Fahrtechnik gelernt hast.",
+     "p": [
+      "Du kennst jetzt die wichtigsten Radtypen, ihre Teile und wie Schaltung und Bremsen zusammenarbeiten.",
+      "Du kannst Sattelhöhe und -position einstellen, Helm, Licht und Schloss wählen und dich passend kleiden.",
+      "Du hast den ABC-Check, sanftes Anfahren, effizientes Treten, Schalten und Bremsen geübt."
+     ],
+     "q": "Welche Lektion aus diesem ersten Monat hat dich am meisten überrascht oder dir geholfen?",
+     "c": "Mach eine kurze, lockere Fahrt und nutze mindestens drei Fähigkeiten aus diesem Monat."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa todo lo que aprendiste sobre bicis, ajuste, equipo y primeras habilidades.",
+     "p": [
+      "Ya conoces los tipos de bici, sus partes y cómo funcionan juntos cambios y frenos.",
+      "Sabes ajustar altura y posición del sillín, elegir casco, luces y candado y vestirte para pedalear.",
+      "Has practicado la revisión ABC, arranques suaves, pedaleo eficiente, cambios y frenada."
+     ],
+     "q": "¿Qué lección de este primer mes te sorprendió o te ayudó más?",
+     "c": "Sal a dar una vuelta corta y fácil y usa al menos tres habilidades de este mes."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Reviens sur tout ce que tu as appris sur les vélos, les réglages, l'équipement et les premières techniques.",
+     "p": [
+      "Tu connais maintenant les grands types de vélos, leurs pièces et le fonctionnement des vitesses et des freins.",
+      "Tu sais régler la hauteur et la position de la selle, choisir casque, éclairage et antivol, et t'habiller pour rouler.",
+      "Tu t'es entraîné au contrôle ABC, aux démarrages en douceur, au pédalage efficace, aux vitesses et au freinage."
+     ],
+     "q": "Quelle leçon de ce premier mois t'a le plus surpris ou aidé ?",
+     "c": "Fais une courte sortie facile et utilise au moins trois compétences de ce mois."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripercorri tutto ciò che hai imparato su bici, regolazioni, attrezzatura e prime abilità.",
+     "p": [
+      "Ora conosci i principali tipi di bici, le loro parti e come lavorano insieme marce e freni.",
+      "Sai regolare altezza e posizione della sella, scegliere casco, luci e lucchetto e vestirti per pedalare.",
+      "Hai praticato il controllo ABC, partenze morbide, pedalata efficiente, cambi di marcia e frenata."
+     ],
+     "q": "Quale lezione di questo primo mese ti ha sorpreso o aiutato di più?",
+     "c": "Fai un giro breve e facile e usa almeno tre abilità di questo mese."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê tudo o que aprendeste sobre bicicletas, ajuste, equipamento e primeiras técnicas.",
+     "p": [
+      "Já conheces os principais tipos de bicicleta, as peças e como mudanças e travões trabalham juntos.",
+      "Sabes ajustar a altura e a posição do selim, escolher capacete, luzes e cadeado e vestir-te para pedalar.",
+      "Praticaste a verificação ABC, arranques suaves, pedalada eficiente, mudanças e travagem."
+     ],
+     "q": "Que lição deste primeiro mês te surpreendeu ou ajudou mais?",
+     "c": "Dá um passeio curto e fácil e usa pelo menos três técnicas deste mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Relembre tudo o que você aprendeu sobre bikes, ajuste, equipamentos e primeiras habilidades.",
+     "p": [
+      "Você já conhece os principais tipos de bike, as peças e como marchas e freios trabalham juntos.",
+      "Você sabe ajustar altura e posição do selim, escolher capacete, luzes e cadeado e se vestir para pedalar.",
+      "Você praticou o check ABC, arrancadas suaves, pedalada eficiente, troca de marchas e frenagem."
+     ],
+     "q": "Qual lição deste primeiro mês mais surpreendeu ou ajudou você?",
+     "c": "Faça um pedal curto e tranquilo e use pelo menos três habilidades deste mês."
+    }
+   }
+  }
+ ]
+}

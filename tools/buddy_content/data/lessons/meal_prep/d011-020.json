@@ -1,0 +1,835 @@
+{
+ "topic": "meal_prep",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food safety while prepping",
+     "g": "Build simple safety habits so your prepped food stays healthy all week.",
+     "p": [
+      "Wash your hands well before cooking and after touching raw meat or eggs.",
+      "Use a separate board and knife for raw meat, or wash them well between uses.",
+      "Cool cooked food quickly and get it into the fridge within about two hours."
+     ],
+     "q": "Which of these safety habits do you already do without thinking?",
+     "c": "Mark one cutting board for raw meat only, with a sticker or a different colour."
+    },
+    "de": {
+     "t": "Lebensmittelsicherheit beim Vorkochen",
+     "g": "Baue einfache Hygiene-Gewohnheiten auf, damit dein Essen die ganze Woche sicher bleibt.",
+     "p": [
+      "Wasch dir vor dem Kochen und nach rohem Fleisch oder Eiern gründlich die Hände.",
+      "Nimm für rohes Fleisch ein eigenes Brett und Messer oder wasch sie gut zwischendurch.",
+      "Kühle Gekochtes schnell ab und stell es innerhalb von etwa zwei Stunden kalt."
+     ],
+     "q": "Welche dieser Gewohnheiten machst du schon ganz automatisch?",
+     "c": "Markiere ein Schneidebrett nur für rohes Fleisch, mit Aufkleber oder anderer Farbe."
+    },
+    "es": {
+     "t": "Seguridad alimentaria al preparar",
+     "g": "Crear hábitos de seguridad sencillos para que tu comida siga sana toda la semana.",
+     "p": [
+      "Lávate bien las manos antes de cocinar y después de tocar carne cruda o huevos.",
+      "Usa una tabla y un cuchillo aparte para la carne cruda, o lávalos bien entre usos.",
+      "Enfría rápido lo cocinado y mételo en la nevera en unas dos horas como máximo."
+     ],
+     "q": "¿Cuáles de estos hábitos ya haces sin pensarlo?",
+     "c": "Marca una tabla solo para carne cruda, con una pegatina o un color distinto."
+    },
+    "fr": {
+     "t": "L'hygiène pendant la préparation",
+     "g": "Prendre des habitudes simples d'hygiène pour que tes plats restent sains toute la semaine.",
+     "p": [
+      "Lave-toi bien les mains avant de cuisiner et après avoir touché viande crue ou œufs.",
+      "Utilise une planche et un couteau à part pour la viande crue, ou lave-les bien.",
+      "Refroidis vite les plats cuits et mets-les au frigo dans les deux heures environ."
+     ],
+     "q": "Laquelle de ces habitudes as-tu déjà sans y penser ?",
+     "c": "Réserve une planche à la viande crue, avec un autocollant ou une autre couleur."
+    },
+    "it": {
+     "t": "Sicurezza alimentare nel meal prep",
+     "g": "Creare semplici abitudini di sicurezza perché il cibo preparato resti sano tutta la settimana.",
+     "p": [
+      "Lavati bene le mani prima di cucinare e dopo aver toccato carne cruda o uova.",
+      "Usa un tagliere e un coltello a parte per la carne cruda, o lavali bene tra un uso e l'altro.",
+      "Raffredda in fretta il cibo cotto e mettilo in frigo entro circa due ore."
+     ],
+     "q": "Quali di queste abitudini hai già senza pensarci?",
+     "c": "Dedica un tagliere solo alla carne cruda, con un adesivo o un colore diverso."
+    },
+    "pt": {
+     "t": "Segurança alimentar na preparação",
+     "g": "Criar hábitos simples de segurança para a comida preparada se manter saudável toda a semana.",
+     "p": [
+      "Lava bem as mãos antes de cozinhar e depois de mexer em carne crua ou ovos.",
+      "Usa uma tábua e uma faca à parte para a carne crua, ou lava-as bem entre usos.",
+      "Arrefece depressa a comida cozinhada e põe-na no frigorífico em cerca de duas horas."
+     ],
+     "q": "Quais destes hábitos já fazes sem pensar?",
+     "c": "Marca uma tábua só para carne crua, com um autocolante ou uma cor diferente."
+    },
+    "pt_BR": {
+     "t": "Segurança dos alimentos no preparo",
+     "g": "Criar hábitos simples de segurança para a comida preparada continuar saudável a semana toda.",
+     "p": [
+      "Lave bem as mãos antes de cozinhar e depois de mexer em carne crua ou ovos.",
+      "Use uma tábua e uma faca separadas para carne crua, ou lave bem entre um uso e outro.",
+      "Esfrie rápido a comida cozida e coloque na geladeira em até cerca de duas horas."
+     ],
+     "q": "Quais desses hábitos você já faz sem pensar?",
+     "c": "Separe uma tábua só para carne crua, com um adesivo ou uma cor diferente."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Labelling and dating your food",
+     "g": "Use simple labels so you always know what is in each box and when you made it.",
+     "p": [
+      "Write the dish name and the date it was cooked on every container.",
+      "Masking tape and a marker work perfectly; no fancy labels needed.",
+      "Put the oldest food at the front so it gets eaten first."
+     ],
+     "q": "Have you ever found a mystery box in your fridge or freezer?",
+     "c": "Label every container in your fridge today with its name and date."
+    },
+    "de": {
+     "t": "Beschriften und datieren",
+     "g": "Nutze einfache Etiketten, damit du immer weißt, was in jeder Dose ist und wann du es gekocht hast.",
+     "p": [
+      "Schreib auf jeden Behälter den Namen des Gerichts und das Kochdatum.",
+      "Malerkrepp und ein Stift reichen völlig, schicke Etiketten braucht es nicht.",
+      "Stell das Älteste nach vorne, damit es zuerst gegessen wird."
+     ],
+     "q": "Hast du schon mal eine geheimnisvolle Dose im Kühlschrank gefunden?",
+     "c": "Beschrifte heute jeden Behälter im Kühlschrank mit Name und Datum."
+    },
+    "es": {
+     "t": "Etiquetar y fechar tu comida",
+     "g": "Usar etiquetas sencillas para saber siempre qué hay en cada recipiente y cuándo lo hiciste.",
+     "p": [
+      "Escribe en cada recipiente el nombre del plato y la fecha en que lo cocinaste.",
+      "Cinta de carrocero y un rotulador bastan; no hacen falta etiquetas especiales.",
+      "Pon lo más antiguo delante para comerlo primero."
+     ],
+     "q": "¿Alguna vez has encontrado un táper misterioso en tu nevera o congelador?",
+     "c": "Etiqueta hoy cada recipiente de tu nevera con nombre y fecha."
+    },
+    "fr": {
+     "t": "Étiqueter et dater",
+     "g": "Utiliser des étiquettes simples pour toujours savoir ce que contient chaque boîte et de quand elle date.",
+     "p": [
+      "Écris sur chaque boîte le nom du plat et la date de préparation.",
+      "Du ruban de masquage et un feutre suffisent, pas besoin d'étiquettes sophistiquées.",
+      "Place le plus ancien devant pour le manger en premier."
+     ],
+     "q": "As-tu déjà trouvé une boîte mystère dans ton frigo ou ton congélateur ?",
+     "c": "Étiquette aujourd'hui chaque boîte de ton frigo avec son nom et sa date."
+    },
+    "it": {
+     "t": "Etichettare e datare il cibo",
+     "g": "Usare etichette semplici per sapere sempre cosa c'è in ogni contenitore e quando l'hai fatto.",
+     "p": [
+      "Scrivi su ogni contenitore il nome del piatto e la data di preparazione.",
+      "Bastano nastro di carta e un pennarello, niente etichette speciali.",
+      "Metti davanti il cibo più vecchio così lo mangi per primo."
+     ],
+     "q": "Ti è mai capitato di trovare un contenitore misterioso in frigo o in freezer?",
+     "c": "Etichetta oggi ogni contenitore del frigo con nome e data."
+    },
+    "pt": {
+     "t": "Etiquetar e datar a comida",
+     "g": "Usar etiquetas simples para saberes sempre o que está em cada caixa e quando a fizeste.",
+     "p": [
+      "Escreve em cada caixa o nome do prato e a data em que o cozinhaste.",
+      "Fita de papel e um marcador chegam, não precisas de etiquetas especiais.",
+      "Põe a comida mais antiga à frente para ser comida primeiro."
+     ],
+     "q": "Já encontraste uma caixa mistério no frigorífico ou no congelador?",
+     "c": "Etiqueta hoje todas as caixas do frigorífico com nome e data."
+    },
+    "pt_BR": {
+     "t": "Etiquetando e datando a comida",
+     "g": "Usar etiquetas simples para saber sempre o que tem em cada pote e quando você fez.",
+     "p": [
+      "Escreva em cada pote o nome do prato e a data em que cozinhou.",
+      "Fita crepe e uma caneta bastam, não precisa de etiqueta especial.",
+      "Coloque a comida mais antiga na frente para comer primeiro."
+     ],
+     "q": "Você já achou um pote misterioso na geladeira ou no freezer?",
+     "c": "Etiquete hoje todos os potes da sua geladeira com nome e data."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning your first menu",
+     "g": "Pick two or three simple recipes for your first week of meal prep.",
+     "p": [
+      "Choose dishes you already know and like; this is not the week for experiments.",
+      "Look for recipes that share ingredients, like rice or one vegetable.",
+      "Two or three dishes give variety without too much work."
+     ],
+     "q": "What is one dish you can cook confidently without a recipe?",
+     "c": "Write your first menu: two or three recipes and the days you will eat them."
+    },
+    "de": {
+     "t": "Dein erster Speiseplan",
+     "g": "Wähle zwei oder drei einfache Rezepte für deine erste Meal-Prep-Woche.",
+     "p": [
+      "Nimm Gerichte, die du kennst und magst; diese Woche ist nicht für Experimente.",
+      "Such Rezepte mit gemeinsamen Zutaten, etwa Reis oder ein Gemüse.",
+      "Zwei oder drei Gerichte bringen Abwechslung ohne zu viel Arbeit."
+     ],
+     "q": "Welches Gericht kannst du sicher ohne Rezept kochen?",
+     "c": "Schreib deinen ersten Plan: zwei oder drei Rezepte und die Tage dafür."
+    },
+    "es": {
+     "t": "Planear tu primer menú",
+     "g": "Elegir dos o tres recetas sencillas para tu primera semana de meal prep.",
+     "p": [
+      "Elige platos que ya conoces y te gustan; no es la semana para experimentar.",
+      "Busca recetas que compartan ingredientes, como arroz o una verdura.",
+      "Dos o tres platos dan variedad sin demasiado trabajo."
+     ],
+     "q": "¿Qué plato sabes cocinar con seguridad sin receta?",
+     "c": "Escribe tu primer menú: dos o tres recetas y los días en que las comerás."
+    },
+    "fr": {
+     "t": "Planifier ton premier menu",
+     "g": "Choisir deux ou trois recettes simples pour ta première semaine de meal prep.",
+     "p": [
+      "Prends des plats que tu connais et aimes ; ce n'est pas la semaine pour tester.",
+      "Cherche des recettes avec des ingrédients communs, comme le riz ou un légume.",
+      "Deux ou trois plats apportent de la variété sans trop de travail."
+     ],
+     "q": "Quel plat sais-tu cuisiner sans recette, en toute confiance ?",
+     "c": "Écris ton premier menu : deux ou trois recettes et les jours prévus."
+    },
+    "it": {
+     "t": "Pianificare il primo menù",
+     "g": "Scegliere due o tre ricette semplici per la tua prima settimana di meal prep.",
+     "p": [
+      "Scegli piatti che conosci e ti piacciono; non è la settimana degli esperimenti.",
+      "Cerca ricette con ingredienti in comune, come il riso o una verdura.",
+      "Due o tre piatti danno varietà senza troppo lavoro."
+     ],
+     "q": "Quale piatto sai cucinare con sicurezza senza ricetta?",
+     "c": "Scrivi il tuo primo menù: due o tre ricette e i giorni in cui le mangerai."
+    },
+    "pt": {
+     "t": "Planear o primeiro menu",
+     "g": "Escolher duas ou três receitas simples para a tua primeira semana de meal prep.",
+     "p": [
+      "Escolhe pratos que já conheces e de que gostas; não é semana para experiências.",
+      "Procura receitas com ingredientes em comum, como arroz ou um legume.",
+      "Dois ou três pratos dão variedade sem demasiado trabalho."
+     ],
+     "q": "Que prato consegues cozinhar com confiança sem receita?",
+     "c": "Escreve o teu primeiro menu: duas ou três receitas e os dias em que as comes."
+    },
+    "pt_BR": {
+     "t": "Planejando seu primeiro cardápio",
+     "g": "Escolher duas ou três receitas simples para sua primeira semana de meal prep.",
+     "p": [
+      "Escolha pratos que você já conhece e gosta; não é semana de testar.",
+      "Procure receitas com ingredientes em comum, como arroz ou um legume.",
+      "Dois ou três pratos dão variedade sem trabalho demais."
+     ],
+     "q": "Que prato você sabe fazer com segurança sem receita?",
+     "c": "Escreva seu primeiro cardápio: duas ou três receitas e os dias de cada uma."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a smart shopping list",
+     "g": "Turn your menu into a shopping list that makes the store trip quick and easy.",
+     "p": [
+      "List every ingredient from your recipes, then cross off what you already have.",
+      "Group items by store section: produce, dairy, meat, dry goods.",
+      "A clear list saves time and stops impulse buys."
+     ],
+     "q": "Do you usually shop with a list, from memory or just by feel?",
+     "c": "Write a shopping list for your first menu, grouped by store section."
+    },
+    "de": {
+     "t": "Eine kluge Einkaufsliste",
+     "g": "Mach aus deinem Speiseplan eine Einkaufsliste, die den Einkauf schnell und leicht macht.",
+     "p": [
+      "Schreib alle Zutaten auf und streich, was du schon zu Hause hast.",
+      "Sortiere nach Bereichen im Laden: Obst und Gemüse, Milchprodukte, Fleisch, Trockenware.",
+      "Eine klare Liste spart Zeit und verhindert Spontankäufe."
+     ],
+     "q": "Kaufst du meist mit Liste, aus dem Kopf oder nach Gefühl ein?",
+     "c": "Schreib eine Einkaufsliste für deinen ersten Plan, nach Ladenbereichen sortiert."
+    },
+    "es": {
+     "t": "Hacer una lista de la compra inteligente",
+     "g": "Convertir tu menú en una lista de la compra que haga la visita al súper rápida y fácil.",
+     "p": [
+      "Apunta todos los ingredientes de tus recetas y tacha lo que ya tienes.",
+      "Agrupa por secciones: frutas y verduras, lácteos, carne, despensa.",
+      "Una lista clara ahorra tiempo y evita compras impulsivas."
+     ],
+     "q": "¿Sueles comprar con lista, de memoria o a ojo?",
+     "c": "Escribe la lista de la compra de tu primer menú, agrupada por secciones."
+    },
+    "fr": {
+     "t": "Une liste de courses maligne",
+     "g": "Transformer ton menu en liste de courses pour des achats rapides et faciles.",
+     "p": [
+      "Note tous les ingrédients de tes recettes, puis raye ce que tu as déjà.",
+      "Regroupe par rayon : fruits et légumes, produits laitiers, viande, épicerie.",
+      "Une liste claire fait gagner du temps et évite les achats impulsifs."
+     ],
+     "q": "Fais-tu tes courses avec une liste, de mémoire ou au feeling ?",
+     "c": "Écris la liste de courses de ton premier menu, classée par rayon."
+    },
+    "it": {
+     "t": "Una lista della spesa intelligente",
+     "g": "Trasformare il menù in una lista della spesa che renda la spesa veloce e facile.",
+     "p": [
+      "Scrivi tutti gli ingredienti delle ricette e cancella quelli che hai già.",
+      "Raggruppa per reparto: frutta e verdura, latticini, carne, dispensa.",
+      "Una lista chiara fa risparmiare tempo ed evita acquisti d'impulso."
+     ],
+     "q": "Di solito fai la spesa con una lista, a memoria o a sensazione?",
+     "c": "Scrivi la lista della spesa del tuo primo menù, divisa per reparti."
+    },
+    "pt": {
+     "t": "Uma lista de compras inteligente",
+     "g": "Transformar o menu numa lista de compras que torne a ida ao supermercado rápida e fácil.",
+     "p": [
+      "Escreve todos os ingredientes das receitas e risca o que já tens.",
+      "Agrupa por secção: fruta e legumes, lacticínios, carne, mercearia.",
+      "Uma lista clara poupa tempo e evita compras por impulso."
+     ],
+     "q": "Costumas fazer compras com lista, de memória ou a olho?",
+     "c": "Escreve a lista de compras do teu primeiro menu, agrupada por secções."
+    },
+    "pt_BR": {
+     "t": "Uma lista de compras esperta",
+     "g": "Transformar seu cardápio em uma lista de compras que deixe a ida ao mercado rápida e fácil.",
+     "p": [
+      "Anote todos os ingredientes das receitas e risque o que você já tem.",
+      "Agrupe por setor: hortifrúti, laticínios, carnes, mercearia.",
+      "Uma lista clara economiza tempo e evita compras por impulso."
+     ],
+     "q": "Você costuma comprar com lista, de cabeça ou no improviso?",
+     "c": "Escreva a lista de compras do seu primeiro cardápio, separada por setores."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking the pantry first",
+     "g": "Take stock of your cupboard, fridge and freezer before you go shopping.",
+     "p": [
+      "A quick look stops you from buying things you already own.",
+      "Food that needs using soon can become part of this week's menu.",
+      "Checking also shows gaps, like running out of oil or spices."
+     ],
+     "q": "What do you think you would find hiding at the back of your cupboard?",
+     "c": "Do a five-minute check of cupboard, fridge and freezer and list three foods to use soon."
+    },
+    "de": {
+     "t": "Erst den Vorrat prüfen",
+     "g": "Mach eine Bestandsaufnahme von Schrank, Kühlschrank und Gefrierfach, bevor du einkaufst.",
+     "p": [
+      "Ein kurzer Blick verhindert, dass du Dinge doppelt kaufst.",
+      "Was bald weg muss, kann Teil des Speiseplans dieser Woche werden.",
+      "Du siehst auch Lücken, etwa wenn Öl oder Gewürze fast leer sind."
+     ],
+     "q": "Was würdest du wohl ganz hinten in deinem Vorratsschrank finden?",
+     "c": "Prüfe fünf Minuten lang Schrank, Kühlschrank und Gefrierfach und notiere drei Dinge, die bald weg müssen."
+    },
+    "es": {
+     "t": "Revisar la despensa primero",
+     "g": "Hacer inventario de armarios, nevera y congelador antes de ir a comprar.",
+     "p": [
+      "Un vistazo rápido evita comprar lo que ya tienes.",
+      "Lo que hay que gastar pronto puede entrar en el menú de esta semana.",
+      "Revisar también muestra lo que falta, como aceite o especias."
+     ],
+     "q": "¿Qué crees que encontrarías escondido al fondo de tu despensa?",
+     "c": "Revisa cinco minutos armarios, nevera y congelador y anota tres alimentos para usar pronto."
+    },
+    "fr": {
+     "t": "Vérifier d'abord les placards",
+     "g": "Faire le point sur placards, frigo et congélateur avant d'aller faire les courses.",
+     "p": [
+      "Un coup d'œil évite d'acheter ce que tu as déjà.",
+      "Ce qui doit être utilisé vite peut entrer dans le menu de la semaine.",
+      "Tu repères aussi ce qui manque, comme l'huile ou les épices."
+     ],
+     "q": "À ton avis, que trouverais-tu caché au fond de tes placards ?",
+     "c": "Inspecte cinq minutes placards, frigo et congélateur et note trois aliments à utiliser vite."
+    },
+    "it": {
+     "t": "Controllare prima la dispensa",
+     "g": "Fare l'inventario di dispensa, frigo e freezer prima di andare a fare la spesa.",
+     "p": [
+      "Un'occhiata veloce evita di comprare ciò che hai già.",
+      "Ciò che va consumato presto può entrare nel menù della settimana.",
+      "Controllare mostra anche cosa manca, come olio o spezie."
+     ],
+     "q": "Cosa pensi di trovare nascosto in fondo alla tua dispensa?",
+     "c": "Controlla per cinque minuti dispensa, frigo e freezer e annota tre cibi da usare presto."
+    },
+    "pt": {
+     "t": "Ver primeiro a despensa",
+     "g": "Fazer o inventário de armários, frigorífico e congelador antes de ir às compras.",
+     "p": [
+      "Uma olhadela evita comprares o que já tens.",
+      "O que tem de ser gasto em breve pode entrar no menu desta semana.",
+      "Também vês o que falta, como azeite ou especiarias."
+     ],
+     "q": "O que achas que encontrarias escondido no fundo do teu armário?",
+     "c": "Faz uma verificação de cinco minutos e anota três alimentos para gastar em breve."
+    },
+    "pt_BR": {
+     "t": "Conferindo a despensa primeiro",
+     "g": "Fazer um inventário de armários, geladeira e freezer antes de ir às compras.",
+     "p": [
+      "Uma olhada rápida evita comprar o que você já tem.",
+      "O que precisa ser usado logo pode entrar no cardápio desta semana.",
+      "Conferir também mostra o que falta, como óleo ou temperos."
+     ],
+     "q": "O que você acha que encontraria escondido no fundo do seu armário?",
+     "c": "Faça uma checagem de cinco minutos e anote três alimentos para usar logo."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pantry staples for meal prep",
+     "g": "Know which long-lasting staples to keep at home so a meal is always within reach.",
+     "p": [
+      "Rice, pasta and oats are cheap, filling bases that keep for months.",
+      "Canned beans and tomatoes turn into quick soups, stews and sauces.",
+      "A few spices and a good oil add flavour to almost anything."
+     ],
+     "q": "Which staple do you run out of most often?",
+     "c": "Check your pantry against this list and add one missing staple to your shopping list."
+    },
+    "de": {
+     "t": "Vorratsbasics fürs Vorkochen",
+     "g": "Wisse, welche haltbaren Basics du zu Hause haben solltest, damit immer ein Essen möglich ist.",
+     "p": [
+      "Reis, Nudeln und Haferflocken sind günstige, sättigende Basics, die Monate halten.",
+      "Dosenbohnen und Dosentomaten werden schnell zu Suppen, Eintöpfen und Soßen.",
+      "Ein paar Gewürze und ein gutes Öl geben fast allem Geschmack."
+     ],
+     "q": "Welches Basic geht dir am häufigsten aus?",
+     "c": "Vergleiche deinen Vorrat mit dieser Liste und setz ein fehlendes Basic auf die Einkaufsliste."
+    },
+    "es": {
+     "t": "Básicos de despensa para meal prep",
+     "g": "Saber qué básicos duraderos tener en casa para que siempre haya una comida al alcance.",
+     "p": [
+      "Arroz, pasta y avena son bases baratas y saciantes que duran meses.",
+      "Legumbres y tomate en conserva se convierten en sopas, guisos y salsas rápidas.",
+      "Unas especias y un buen aceite dan sabor a casi todo."
+     ],
+     "q": "¿Qué básico se te acaba más a menudo?",
+     "c": "Compara tu despensa con esta lista y añade un básico que falte a tu lista de la compra."
+    },
+    "fr": {
+     "t": "Les essentiels du placard",
+     "g": "Savoir quels produits de base garder chez toi pour avoir toujours un repas à portée de main.",
+     "p": [
+      "Riz, pâtes et flocons d'avoine sont des bases rassasiantes qui se gardent des mois.",
+      "Haricots et tomates en conserve deviennent vite soupes, ragoûts et sauces.",
+      "Quelques épices et une bonne huile donnent du goût à presque tout."
+     ],
+     "q": "Quel produit de base te manque le plus souvent ?",
+     "c": "Compare ton placard à cette liste et ajoute un essentiel manquant à ta liste de courses."
+    },
+    "it": {
+     "t": "I basilari della dispensa",
+     "g": "Sapere quali basi a lunga conservazione tenere in casa per avere sempre un pasto a portata di mano.",
+     "p": [
+      "Riso, pasta e fiocchi d'avena sono basi economiche e sazianti che durano mesi.",
+      "Legumi e pomodori in scatola diventano zuppe, stufati e sughi veloci.",
+      "Qualche spezia e un buon olio danno sapore a quasi tutto."
+     ],
+     "q": "Quale prodotto base ti finisce più spesso?",
+     "c": "Confronta la tua dispensa con questa lista e aggiungi una base mancante alla lista della spesa."
+    },
+    "pt": {
+     "t": "Básicos da despensa",
+     "g": "Saber que básicos de longa duração ter em casa para teres sempre uma refeição à mão.",
+     "p": [
+      "Arroz, massa e aveia são bases baratas e saciantes que duram meses.",
+      "Feijão e tomate em lata transformam-se em sopas, guisados e molhos rápidos.",
+      "Algumas especiarias e um bom azeite dão sabor a quase tudo."
+     ],
+     "q": "Que básico te falta mais vezes?",
+     "c": "Compara a tua despensa com esta lista e junta um básico em falta à lista de compras."
+    },
+    "pt_BR": {
+     "t": "Básicos da despensa",
+     "g": "Saber quais básicos duráveis ter em casa para sempre ter uma refeição à mão.",
+     "p": [
+      "Arroz, macarrão e aveia são bases baratas e que sustentam, e duram meses.",
+      "Feijão e tomate em lata viram sopas, ensopados e molhos rápidos.",
+      "Alguns temperos e um bom óleo ou azeite dão sabor a quase tudo."
+     ],
+     "q": "Qual básico mais acaba na sua casa?",
+     "c": "Compare sua despensa com esta lista e coloque um básico que falta na lista de compras."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping on a budget",
+     "g": "Learn simple habits that make your meal prep shopping go further.",
+     "p": [
+      "Seasonal fruit and vegetables are often fresher, tastier and better value.",
+      "Store brands of basics like rice, oats and canned goods are usually fine.",
+      "Versatile ingredients, like carrots or eggs, work in many dishes all week."
+     ],
+     "q": "Which ingredient do you buy that you could use in more meals?",
+     "c": "Pick one versatile ingredient and plan two different dishes that use it."
+    },
+    "de": {
+     "t": "Sparsam einkaufen",
+     "g": "Lerne einfache Gewohnheiten, mit denen dein Meal-Prep-Einkauf weiter reicht.",
+     "p": [
+      "Obst und Gemüse der Saison sind oft frischer, leckerer und günstiger.",
+      "Eigenmarken bei Basics wie Reis, Haferflocken und Konserven sind meist völlig okay.",
+      "Vielseitige Zutaten wie Karotten oder Eier passen die ganze Woche in viele Gerichte."
+     ],
+     "q": "Welche Zutat kaufst du, die du in mehr Gerichten nutzen könntest?",
+     "c": "Wähle eine vielseitige Zutat und plane zwei verschiedene Gerichte damit."
+    },
+    "es": {
+     "t": "Comprar con poco presupuesto",
+     "g": "Aprender hábitos sencillos para que tu compra de meal prep rinda más.",
+     "p": [
+      "La fruta y verdura de temporada suele ser más fresca, sabrosa y económica.",
+      "Las marcas blancas de básicos como arroz, avena o conservas suelen estar bien.",
+      "Ingredientes versátiles, como zanahorias o huevos, sirven para muchos platos."
+     ],
+     "q": "¿Qué ingrediente compras que podrías usar en más comidas?",
+     "c": "Elige un ingrediente versátil y planifica dos platos distintos con él."
+    },
+    "fr": {
+     "t": "Faire ses courses malin",
+     "g": "Prendre des habitudes simples pour que tes courses de meal prep aillent plus loin.",
+     "p": [
+      "Les fruits et légumes de saison sont souvent plus frais, savoureux et avantageux.",
+      "Les marques de distributeur pour le riz, l'avoine ou les conserves conviennent souvent.",
+      "Les ingrédients polyvalents, comme carottes ou œufs, servent dans plein de plats."
+     ],
+     "q": "Quel ingrédient achètes-tu que tu pourrais utiliser dans plus de repas ?",
+     "c": "Choisis un ingrédient polyvalent et prévois deux plats différents avec lui."
+    },
+    "it": {
+     "t": "Fare la spesa con un budget",
+     "g": "Imparare abitudini semplici per far rendere di più la spesa del meal prep.",
+     "p": [
+      "Frutta e verdura di stagione sono spesso più fresche, gustose e convenienti.",
+      "Le marche del supermercato per riso, avena o scatolame di solito vanno benissimo.",
+      "Ingredienti versatili, come carote o uova, servono in tanti piatti della settimana."
+     ],
+     "q": "Quale ingrediente compri che potresti usare in più pasti?",
+     "c": "Scegli un ingrediente versatile e pianifica due piatti diversi con quello."
+    },
+    "pt": {
+     "t": "Fazer compras com orçamento",
+     "g": "Aprender hábitos simples para as compras de meal prep renderem mais.",
+     "p": [
+      "Fruta e legumes da época costumam ser mais frescos, saborosos e em conta.",
+      "As marcas brancas de básicos como arroz, aveia ou enlatados costumam servir bem.",
+      "Ingredientes versáteis, como cenouras ou ovos, entram em muitos pratos da semana."
+     ],
+     "q": "Que ingrediente compras que podias usar em mais refeições?",
+     "c": "Escolhe um ingrediente versátil e planeia dois pratos diferentes com ele."
+    },
+    "pt_BR": {
+     "t": "Comprando com orçamento",
+     "g": "Aprender hábitos simples para suas compras de meal prep renderem mais.",
+     "p": [
+      "Frutas e legumes da estação costumam ser mais frescos, gostosos e em conta.",
+      "Marcas próprias de básicos como arroz, aveia e enlatados costumam ser ótimas.",
+      "Ingredientes versáteis, como cenoura ou ovo, entram em vários pratos da semana."
+     ],
+     "q": "Que ingrediente você compra que poderia usar em mais refeições?",
+     "c": "Escolha um ingrediente versátil e planeje dois pratos diferentes com ele."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading food labels",
+     "g": "Understand the key parts of a food label so you can shop and store with confidence.",
+     "p": [
+      "The ingredient list starts with what the product contains most of.",
+      "Serving size tells you what the nutrition numbers refer to.",
+      "Use-by is about safety; best-before is about quality and taste."
+     ],
+     "q": "Which part of a food label do you usually look at first?",
+     "c": "Pick one item from your fridge and find its ingredient list, serving size and date type."
+    },
+    "de": {
+     "t": "Lebensmitteletiketten lesen",
+     "g": "Verstehe die wichtigsten Teile eines Etiketts, um sicher einzukaufen und zu lagern.",
+     "p": [
+      "Die Zutatenliste beginnt mit dem, wovon am meisten im Produkt steckt.",
+      "Die Portionsgröße zeigt, worauf sich die Nährwerte beziehen.",
+      "Verbrauchsdatum betrifft die Sicherheit, Mindesthaltbarkeit die Qualität."
+     ],
+     "q": "Auf welchen Teil eines Etiketts schaust du meistens zuerst?",
+     "c": "Nimm ein Produkt aus dem Kühlschrank und finde Zutaten, Portionsgröße und Datumsart."
+    },
+    "es": {
+     "t": "Leer etiquetas de alimentos",
+     "g": "Entender las partes clave de una etiqueta para comprar y guardar con confianza.",
+     "p": [
+      "La lista de ingredientes empieza por lo que el producto contiene en mayor cantidad.",
+      "El tamaño de ración indica a qué se refieren los datos nutricionales.",
+      "La fecha de caducidad es de seguridad; el consumo preferente, de calidad."
+     ],
+     "q": "¿Qué parte de una etiqueta sueles mirar primero?",
+     "c": "Toma un producto de la nevera y busca ingredientes, tamaño de ración y tipo de fecha."
+    },
+    "fr": {
+     "t": "Lire les étiquettes",
+     "g": "Comprendre les éléments clés d'une étiquette pour acheter et conserver en confiance.",
+     "p": [
+      "La liste des ingrédients commence par ce que le produit contient le plus.",
+      "La portion indique à quoi correspondent les valeurs nutritionnelles.",
+      "La DLC concerne la sécurité ; la DDM concerne la qualité et le goût."
+     ],
+     "q": "Quelle partie d'une étiquette regardes-tu en premier ?",
+     "c": "Prends un produit du frigo et trouve ses ingrédients, sa portion et son type de date."
+    },
+    "it": {
+     "t": "Leggere le etichette",
+     "g": "Capire le parti principali di un'etichetta per fare la spesa e conservare con sicurezza.",
+     "p": [
+      "L'elenco ingredienti parte da ciò che il prodotto contiene in quantità maggiore.",
+      "La porzione indica a cosa si riferiscono i valori nutrizionali.",
+      "Da consumarsi entro riguarda la sicurezza; preferibilmente entro, la qualità."
+     ],
+     "q": "Quale parte dell'etichetta guardi di solito per prima?",
+     "c": "Prendi un prodotto dal frigo e trova ingredienti, porzione e tipo di data."
+    },
+    "pt": {
+     "t": "Ler rótulos dos alimentos",
+     "g": "Perceber as partes principais de um rótulo para comprar e guardar com confiança.",
+     "p": [
+      "A lista de ingredientes começa pelo que o produto tem em maior quantidade.",
+      "A porção indica a que se referem os valores nutricionais.",
+      "Consumir até é sobre segurança; consumir de preferência antes de, sobre qualidade."
+     ],
+     "q": "Que parte de um rótulo costumas ver primeiro?",
+     "c": "Pega num produto do frigorífico e encontra ingredientes, porção e tipo de data."
+    },
+    "pt_BR": {
+     "t": "Lendo rótulos de alimentos",
+     "g": "Entender as partes principais de um rótulo para comprar e guardar com confiança.",
+     "p": [
+      "A lista de ingredientes começa pelo que o produto tem em maior quantidade.",
+      "A porção mostra a que se referem as informações nutricionais.",
+      "A data de validade é sobre segurança; consumir de preferência antes, sobre qualidade."
+     ],
+     "q": "Qual parte do rótulo você costuma olhar primeiro?",
+     "c": "Pegue um produto da geladeira e encontre ingredientes, porção e tipo de data."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic knife skills",
+     "g": "Learn to hold a knife safely and use the claw grip for steady, quick cutting.",
+     "p": [
+      "Grip the handle firmly, with your thumb and finger pinching the base of the blade.",
+      "Curl the fingertips of your other hand into a claw and guide the knife with your knuckles.",
+      "A sharp knife is safer than a dull one because it slips less."
+     ],
+     "q": "How comfortable do you feel with a kitchen knife, from 1 to 10?",
+     "c": "Practise the claw grip by slowly slicing one carrot or cucumber into even rounds."
+    },
+    "de": {
+     "t": "Grundlagen der Messertechnik",
+     "g": "Lerne, ein Messer sicher zu halten und mit dem Krallengriff ruhig und schnell zu schneiden.",
+     "p": [
+      "Fass den Griff fest und halte die Klinge am Ansatz zwischen Daumen und Zeigefinger.",
+      "Krümme die Finger der anderen Hand zur Kralle und führe das Messer an den Knöcheln.",
+      "Ein scharfes Messer ist sicherer als ein stumpfes, weil es weniger abrutscht."
+     ],
+     "q": "Wie sicher fühlst du dich mit einem Küchenmesser, von 1 bis 10?",
+     "c": "Übe den Krallengriff, indem du eine Karotte oder Gurke langsam in gleiche Scheiben schneidest."
+    },
+    "es": {
+     "t": "Técnicas básicas de cuchillo",
+     "g": "Aprender a sujetar el cuchillo con seguridad y usar el agarre en garra para cortar firme y rápido.",
+     "p": [
+      "Sujeta bien el mango y pinza la base de la hoja con el pulgar y el índice.",
+      "Dobla las yemas de la otra mano en forma de garra y guía el cuchillo con los nudillos.",
+      "Un cuchillo afilado es más seguro que uno sin filo porque resbala menos."
+     ],
+     "q": "Del 1 al 10, ¿cuánta confianza tienes con un cuchillo de cocina?",
+     "c": "Practica la garra cortando despacio una zanahoria o un pepino en rodajas iguales."
+    },
+    "fr": {
+     "t": "Les bases du couteau",
+     "g": "Apprendre à tenir un couteau en sécurité et à utiliser la griffe pour couper vite et bien.",
+     "p": [
+      "Tiens fermement le manche en pinçant la base de la lame entre pouce et index.",
+      "Replie les doigts de l'autre main en griffe et guide la lame avec tes phalanges.",
+      "Un couteau bien aiguisé est plus sûr qu'un couteau émoussé car il glisse moins."
+     ],
+     "q": "De 1 à 10, à quel point es-tu à l'aise avec un couteau de cuisine ?",
+     "c": "Entraîne-toi à la griffe en coupant lentement une carotte ou un concombre en rondelles égales."
+    },
+    "it": {
+     "t": "Le basi del coltello",
+     "g": "Imparare a tenere il coltello in sicurezza e usare la presa ad artiglio per tagliare veloce e preciso.",
+     "p": [
+      "Impugna bene il manico e pizzica la base della lama tra pollice e indice.",
+      "Piega le dita dell'altra mano ad artiglio e guida la lama con le nocche.",
+      "Un coltello affilato è più sicuro di uno spuntato perché scivola meno."
+     ],
+     "q": "Da 1 a 10, quanto ti senti a tuo agio con un coltello da cucina?",
+     "c": "Esercita la presa ad artiglio tagliando piano una carota o un cetriolo a rondelle uguali."
+    },
+    "pt": {
+     "t": "Técnicas básicas de faca",
+     "g": "Aprender a segurar a faca com segurança e usar a garra para cortar com firmeza e rapidez.",
+     "p": [
+      "Segura bem o cabo e prende a base da lâmina entre o polegar e o indicador.",
+      "Dobra as pontas dos dedos da outra mão em garra e guia a faca com os nós dos dedos.",
+      "Uma faca afiada é mais segura do que uma romba, porque escorrega menos."
+     ],
+     "q": "De 1 a 10, quão à vontade te sentes com uma faca de cozinha?",
+     "c": "Pratica a garra cortando devagar uma cenoura ou um pepino em rodelas iguais."
+    },
+    "pt_BR": {
+     "t": "Técnicas básicas de faca",
+     "g": "Aprender a segurar a faca com segurança e usar a garra para cortar com firmeza e rapidez.",
+     "p": [
+      "Segure firme o cabo e prenda a base da lâmina entre o polegar e o indicador.",
+      "Dobre as pontas dos dedos da outra mão em garra e guie a faca com os nós dos dedos.",
+      "Uma faca afiada é mais segura que uma cega, porque escorrega menos."
+     ],
+     "q": "De 1 a 10, quanto você se sente à vontade com uma faca de cozinha?",
+     "c": "Pratique a garra cortando devagar uma cenoura ou um pepino em rodelas iguais."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chopping onions efficiently",
+     "g": "Learn a simple method to dice onions quickly and with fewer tears.",
+     "p": [
+      "Cut the onion in half through the root, peel it and lay it flat side down.",
+      "Make vertical cuts, then a few horizontal ones, leaving the root end whole.",
+      "Slice across to get even dice; a sharp knife and a cold onion mean fewer tears."
+     ],
+     "q": "How do you usually deal with onion tears?",
+     "c": "Dice two onions with this method and store the extra in a sealed box in the fridge."
+    },
+    "de": {
+     "t": "Zwiebeln effizient schneiden",
+     "g": "Lerne eine einfache Methode, Zwiebeln schnell und mit weniger Tränen zu würfeln.",
+     "p": [
+      "Halbiere die Zwiebel durch die Wurzel, schäle sie und leg sie flach hin.",
+      "Schneide senkrecht ein, dann ein paar Mal waagerecht, die Wurzel bleibt ganz.",
+      "Quer schneiden ergibt gleiche Würfel; scharfes Messer und kalte Zwiebel heißt weniger Tränen."
+     ],
+     "q": "Wie gehst du sonst mit Zwiebeltränen um?",
+     "c": "Würfle zwei Zwiebeln so und bewahre den Rest in einer dichten Dose im Kühlschrank auf."
+    },
+    "es": {
+     "t": "Picar cebolla con eficacia",
+     "g": "Aprender un método sencillo para picar cebolla rápido y con menos lágrimas.",
+     "p": [
+      "Corta la cebolla por la mitad atravesando la raíz, pélala y apóyala por la parte plana.",
+      "Haz cortes verticales y luego algunos horizontales, sin cortar la raíz.",
+      "Corta en transversal para dados iguales; cuchillo afilado y cebolla fría, menos lágrimas."
+     ],
+     "q": "¿Cómo sueles lidiar con las lágrimas de la cebolla?",
+     "c": "Pica dos cebollas así y guarda lo que sobre en un recipiente cerrado en la nevera."
+    },
+    "fr": {
+     "t": "Émincer les oignons efficacement",
+     "g": "Apprendre une méthode simple pour couper les oignons en dés vite et avec moins de larmes.",
+     "p": [
+      "Coupe l'oignon en deux en passant par la racine, épluche-le et pose-le à plat.",
+      "Fais des entailles verticales puis quelques horizontales, sans couper la racine.",
+      "Tranche en travers pour des dés réguliers ; lame affûtée et oignon froid, moins de larmes."
+     ],
+     "q": "Comment fais-tu d'habitude face aux larmes d'oignon ?",
+     "c": "Coupe deux oignons ainsi et garde le surplus dans une boîte fermée au frigo."
+    },
+    "it": {
+     "t": "Tritare la cipolla in modo efficace",
+     "g": "Imparare un metodo semplice per tagliare la cipolla a dadini in fretta e con meno lacrime.",
+     "p": [
+      "Taglia la cipolla a metà passando per la radice, sbucciala e appoggiala sul lato piatto.",
+      "Fai tagli verticali e poi qualcuno orizzontale, lasciando intera la radice.",
+      "Taglia di traverso per dadini regolari; lama affilata e cipolla fredda, meno lacrime."
+     ],
+     "q": "Come affronti di solito le lacrime da cipolla?",
+     "c": "Taglia due cipolle così e conserva il resto in un contenitore chiuso in frigo."
+    },
+    "pt": {
+     "t": "Picar cebola com eficácia",
+     "g": "Aprender um método simples para picar cebola depressa e com menos lágrimas.",
+     "p": [
+      "Corta a cebola ao meio pela raiz, descasca-a e pousa-a com o lado plano para baixo.",
+      "Faz cortes verticais e depois alguns horizontais, sem cortar a raiz.",
+      "Corta na transversal para cubos iguais; faca afiada e cebola fria, menos lágrimas."
+     ],
+     "q": "Como costumas lidar com as lágrimas da cebola?",
+     "c": "Pica duas cebolas assim e guarda o resto numa caixa fechada no frigorífico."
+    },
+    "pt_BR": {
+     "t": "Picando cebola com eficiência",
+     "g": "Aprender um método simples para picar cebola rápido e com menos lágrimas.",
+     "p": [
+      "Corte a cebola ao meio pela raiz, descasque e apoie com o lado reto para baixo.",
+      "Faça cortes verticais e depois alguns horizontais, sem cortar a raiz.",
+      "Corte na transversal para cubinhos iguais; faca afiada e cebola gelada, menos lágrimas."
+     ],
+     "q": "Como você costuma lidar com as lágrimas da cebola?",
+     "c": "Pique duas cebolas assim e guarde o resto em um pote fechado na geladeira."
+    }
+   }
+  }
+ ]
+}

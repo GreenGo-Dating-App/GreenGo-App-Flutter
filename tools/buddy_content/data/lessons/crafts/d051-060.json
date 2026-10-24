@@ -1,0 +1,835 @@
+{
+ "topic": "crafts",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Transferring a design to fabric",
+     "g": "Learn easy ways to transfer a drawing onto fabric before you stitch.",
+     "p": [
+      "Tracing: tape the design and fabric to a sunny window or light pad and trace the lines that show through.",
+      "Water-soluble pens wash out after stitching; test on a scrap first, and avoid heat before rinsing, as it can set the ink.",
+      "For dark or thick fabrics, use transfer (carbon) paper for fabric, or stitch through tissue paper and tear it away."
+     ],
+     "q": "Would you rather stitch your own drawing or a design made by someone else?",
+     "c": "Draw a small design of your own and transfer it onto fabric using a window or a light."
+    },
+    "de": {
+     "t": "Ein Motiv auf Stoff übertragen",
+     "g": "Lerne einfache Wege, eine Zeichnung vor dem Sticken auf Stoff zu übertragen.",
+     "p": [
+      "Abpausen: Motiv und Stoff an ein helles Fenster oder Leuchtpad kleben und die durchscheinenden Linien nachziehen.",
+      "Wasserlösliche Stifte gehen nach dem Sticken heraus; teste vorher an einem Rest und meide Hitze vor dem Ausspülen.",
+      "Bei dunklen oder dicken Stoffen hilft Kopierpapier für Stoff, oder du stickst durch Seidenpapier und reißt es weg."
+     ],
+     "q": "Stickst du lieber eine eigene Zeichnung oder ein Motiv von jemand anderem?",
+     "c": "Zeichne ein kleines eigenes Motiv und übertrage es mithilfe eines Fensters oder einer Lampe auf Stoff."
+    },
+    "es": {
+     "t": "Transferir un diseño a la tela",
+     "g": "Aprende formas fáciles de pasar un dibujo a la tela antes de bordar.",
+     "p": [
+      "Calcar: pega el diseño y la tela en una ventana luminosa o una caja de luz y repasa las líneas que se transparentan.",
+      "Los rotuladores hidrosolubles se van al lavar; pruébalos antes en un retal y evita el calor antes de aclarar.",
+      "En telas oscuras o gruesas usa papel de calco para tela, o borda sobre papel de seda y luego arráncalo."
+     ],
+     "q": "¿Preferirías bordar tu propio dibujo o un diseño hecho por otra persona?",
+     "c": "Dibuja un pequeño diseño propio y pásalo a la tela usando una ventana o una luz."
+    },
+    "fr": {
+     "t": "Reporter un motif sur tissu",
+     "g": "Apprends des façons simples de reporter un dessin sur tissu avant de broder.",
+     "p": [
+      "Décalquer : scotche motif et tissu sur une fenêtre lumineuse ou une tablette lumineuse et trace les lignes visibles.",
+      "Les feutres effaçables à l'eau partent après la broderie ; teste sur une chute et évite la chaleur avant le rinçage.",
+      "Pour les tissus sombres ou épais, utilise du papier carbone pour tissu, ou brode à travers du papier de soie à arracher."
+     ],
+     "q": "Préférerais-tu broder ton propre dessin ou un motif créé par quelqu'un d'autre ?",
+     "c": "Dessine un petit motif à toi et reporte-le sur tissu à l'aide d'une fenêtre ou d'une lampe."
+    },
+    "it": {
+     "t": "Trasferire un disegno sul tessuto",
+     "g": "Impara modi semplici per riportare un disegno sul tessuto prima di ricamare.",
+     "p": [
+      "Ricalco: fissa disegno e tessuto a una finestra luminosa o a una tavoletta luminosa e ripassa le linee che si vedono.",
+      "Le penne idrosolubili vanno via lavando; provale prima su un ritaglio ed evita il calore prima di sciacquare.",
+      "Per tessuti scuri o spessi usa carta carbone da sarta, o ricama attraverso carta velina e poi strappala via."
+     ],
+     "q": "Preferiresti ricamare un tuo disegno o un motivo creato da qualcun altro?",
+     "c": "Disegna un piccolo motivo tuo e riportalo sul tessuto usando una finestra o una luce."
+    },
+    "pt": {
+     "t": "Transferir um desenho para o tecido",
+     "g": "Aprende formas fáceis de passar um desenho para o tecido antes de bordar.",
+     "p": [
+      "Decalcar: prende o desenho e o tecido a uma janela com luz ou a uma mesa de luz e passa as linhas que se veem.",
+      "As canetas solúveis em água saem ao lavar; testa num retalho e evita calor antes de enxaguar.",
+      "Em tecidos escuros ou grossos usa papel químico para tecido, ou borda através de papel de seda e depois rasga-o."
+     ],
+     "q": "Preferias bordar um desenho teu ou um feito por outra pessoa?",
+     "c": "Desenha um pequeno motivo teu e passa-o para o tecido com a ajuda de uma janela ou de uma luz."
+    },
+    "pt_BR": {
+     "t": "Transferindo um desenho para o tecido",
+     "g": "Aprenda jeitos fáceis de passar um desenho para o tecido antes de bordar.",
+     "p": [
+      "Decalque: prenda o desenho e o tecido numa janela clara ou mesa de luz e cubra as linhas que aparecem.",
+      "Canetas que saem com água somem ao lavar; teste num retalho e evite calor antes de enxaguar.",
+      "Em tecidos escuros ou grossos use papel carbono para tecido, ou borde sobre papel de seda e depois rasgue."
+     ],
+     "q": "Você preferiria bordar um desenho seu ou um criado por outra pessoa?",
+     "c": "Desenhe um pequeno motivo seu e passe para o tecido usando uma janela ou uma luz."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A small embroidery sampler",
+     "g": "Combine every stitch learned so far into one hoop you can proudly display.",
+     "p": [
+      "A sampler is a practice piece showing many stitches together; makers have stitched them for centuries.",
+      "Plan a simple design: backstitch lettering, stem stitch vines, satin leaves and lazy daisy flowers with French knots.",
+      "To finish, trim the fabric to about 3 cm beyond the hoop, gather it at the back with running stitch and pull tight."
+     ],
+     "q": "Where would you hang your sampler, or who would you give it to?",
+     "c": "Sketch your sampler plan today and stitch the first element, perhaps your initial or a vine."
+    },
+    "de": {
+     "t": "Ein kleines Stickmustertuch",
+     "g": "Vereine alle bisher gelernten Stiche in einem Rahmen, den du stolz zeigen kannst.",
+     "p": [
+      "Ein Mustertuch ist ein Übungsstück mit vielen Stichen zusammen; es wird seit Jahrhunderten gestickt.",
+      "Plane ein einfaches Motiv: Schrift im Rückstich, Ranken im Stielstich, Blätter im Plattstich, Margeriten mit Knötchen.",
+      "Zum Abschluss den Stoff etwa 3 cm über dem Rahmen abschneiden, hinten mit Vorstichen einreihen und festziehen."
+     ],
+     "q": "Wo würdest du dein Mustertuch aufhängen, oder wem würdest du es schenken?",
+     "c": "Skizziere heute deinen Plan und sticke das erste Element, vielleicht deine Initiale oder eine Ranke."
+    },
+    "es": {
+     "t": "Un pequeño dechado de bordado",
+     "g": "Combina todas las puntadas aprendidas en un bastidor que puedas mostrar con orgullo.",
+     "p": [
+      "Un dechado es una pieza de práctica que reúne muchas puntadas; se bordan desde hace siglos.",
+      "Planea un diseño sencillo: letras en pespunte, tallos en punto tallo, hojas en satén y margaritas con nudos franceses.",
+      "Para terminar, recorta la tela a unos 3 cm del bastidor, frúncela por detrás con hilván y tira bien."
+     ],
+     "q": "¿Dónde colgarías tu dechado o a quién se lo regalarías?",
+     "c": "Haz hoy el boceto de tu dechado y borda el primer elemento, quizá tu inicial o un tallo."
+    },
+    "fr": {
+     "t": "Un petit abécédaire brodé",
+     "g": "Réunis tous les points appris jusqu'ici dans un tambour à exposer fièrement.",
+     "p": [
+      "Un abécédaire ou échantillonnier rassemble de nombreux points sur une même pièce ; on en brode depuis des siècles.",
+      "Prévois un motif simple : lettres au point arrière, tiges au point de tige, feuilles au passé plat, marguerites et nœuds.",
+      "Pour finir, coupe le tissu à environ 3 cm du tambour, fronce-le au dos au point avant et serre bien."
+     ],
+     "q": "Où accrocherais-tu ton échantillonnier, ou à qui l'offrirais-tu ?",
+     "c": "Esquisse aujourd'hui ton plan et brode le premier élément, peut-être ton initiale ou une tige."
+    },
+    "it": {
+     "t": "Un piccolo campionario di ricamo",
+     "g": "Unisci tutti i punti imparati finora in un telaio da esporre con orgoglio.",
+     "p": [
+      "Un campionario è un pezzo di prova che raccoglie tanti punti insieme; si ricamano da secoli.",
+      "Progetta un disegno semplice: lettere a punto indietro, steli a punto erba, foglie a punto pieno, margherite e nodi.",
+      "Per finire, rifila il tessuto a circa 3 cm dal telaio, arriccialo sul retro con un punto filza e tira bene."
+     ],
+     "q": "Dove appenderesti il tuo campionario, o a chi lo regaleresti?",
+     "c": "Fai oggi lo schizzo del campionario e ricama il primo elemento, magari la tua iniziale o uno stelo."
+    },
+    "pt": {
+     "t": "Um pequeno mostruário de bordado",
+     "g": "Junta todos os pontos aprendidos até agora num bastidor que possas mostrar com orgulho.",
+     "p": [
+      "Um mostruário é uma peça de treino que reúne muitos pontos; bordam-se há séculos.",
+      "Planeia um desenho simples: letras em ponto atrás, caules em pé de flor, folhas em ponto cheio, margaridas e nós.",
+      "Para terminar, apara o tecido a uns 3 cm do bastidor, franze-o atrás com alinhavo e puxa bem."
+     ],
+     "q": "Onde penduravas o teu mostruário, ou a quem o oferecias?",
+     "c": "Faz hoje o esboço do mostruário e borda o primeiro elemento, talvez a tua inicial ou um caule."
+    },
+    "pt_BR": {
+     "t": "Um pequeno mostruário de bordado",
+     "g": "Junte todos os pontos aprendidos até agora num bastidor para mostrar com orgulho.",
+     "p": [
+      "Um mostruário é uma peça de treino que reúne muitos pontos; eles são bordados há séculos.",
+      "Planeje um desenho simples: letras em ponto atrás, caules em ponto haste, folhas em ponto cheio, margaridas e nós.",
+      "Para finalizar, apare o tecido a uns 3 cm do bastidor, franza por trás com alinhavo e puxe bem."
+     ],
+     "q": "Onde você penduraria seu mostruário, ou para quem daria de presente?",
+     "c": "Faça hoje o rascunho do mostruário e borde o primeiro elemento, talvez sua inicial ou um caule."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hand sewing essentials",
+     "g": "Thread a needle, tie a knot and choose the right thread for different fabrics.",
+     "p": [
+      "Cut thread about the length of your forearm to elbow plus a bit; longer pieces tangle and fray.",
+      "Cut the end at an angle to thread it easily, then wrap the tail around your finger and roll it off to form a knot.",
+      "All-purpose polyester thread suits most fabrics; cotton thread suits cotton; match the colour or go one shade darker."
+     ],
+     "q": "Is there something at home waiting to be sewn or mended right now?",
+     "c": "Thread a needle and tie a knot five times in a row until it feels quick and easy."
+    },
+    "de": {
+     "t": "Grundlagen des Handnähens",
+     "g": "Fädle eine Nadel ein, mach einen Knoten und wähl das passende Garn für verschiedene Stoffe.",
+     "p": [
+      "Schneide den Faden etwa so lang wie vom Handgelenk bis über den Ellbogen; längere Fäden verheddern und fransen.",
+      "Schneide das Ende schräg zum leichten Einfädeln, wickle es um den Finger und roll es zu einem Knoten ab.",
+      "Allzweck-Polyestergarn passt zu den meisten Stoffen, Baumwollgarn zu Baumwolle; Farbe gleich oder eine Spur dunkler."
+     ],
+     "q": "Wartet bei dir gerade etwas darauf, genäht oder geflickt zu werden?",
+     "c": "Fädle fünfmal hintereinander eine Nadel ein und mach einen Knoten, bis es schnell und leicht geht."
+    },
+    "es": {
+     "t": "Lo esencial de coser a mano",
+     "g": "Enhebra una aguja, haz un nudo y elige el hilo adecuado para cada tela.",
+     "p": [
+      "Corta un hilo del largo de tu antebrazo hasta el codo y un poco más; los hilos más largos se enredan y se deshilachan.",
+      "Corta la punta en diagonal para enhebrar fácil, enrolla la cola en el dedo y hazla rodar para formar un nudo.",
+      "El hilo de poliéster multiuso sirve para casi todo y el de algodón para el algodón; mismo color o un tono más oscuro."
+     ],
+     "q": "¿Hay en casa algo esperando a que lo cosas o lo arregles ahora mismo?",
+     "c": "Enhebra una aguja y haz un nudo cinco veces seguidas hasta que te salga rápido y fácil."
+    },
+    "fr": {
+     "t": "Les bases de la couture main",
+     "g": "Enfile une aiguille, fais un nœud et choisis le bon fil selon le tissu.",
+     "p": [
+      "Coupe un fil d'environ la longueur de ton avant-bras jusqu'au coude, un peu plus ; trop long, il s'emmêle et s'effiloche.",
+      "Coupe le bout en biais pour l'enfiler facilement, enroule-le autour du doigt et roule-le pour former un nœud.",
+      "Le fil polyester tout usage convient à la plupart des tissus, le coton au coton ; même couleur ou une nuance plus foncée."
+     ],
+     "q": "Y a-t-il chez toi quelque chose qui attend d'être cousu ou réparé ?",
+     "c": "Enfile une aiguille et fais un nœud cinq fois de suite jusqu'à ce que ce soit rapide et facile."
+    },
+    "it": {
+     "t": "Le basi del cucito a mano",
+     "g": "Infila un ago, fai un nodo e scegli il filo giusto per i diversi tessuti.",
+     "p": [
+      "Taglia il filo lungo circa quanto l'avambraccio fino al gomito, poco più; i fili più lunghi si aggrovigliano e si sfilacciano.",
+      "Taglia la punta in diagonale per infilarla facilmente, avvolgi la coda sul dito e falla rotolare per fare il nodo.",
+      "Il filo di poliestere multiuso va bene quasi per tutto, quello di cotone per il cotone; stesso colore o un tono più scuro."
+     ],
+     "q": "C'è qualcosa in casa che aspetta di essere cucito o riparato?",
+     "c": "Infila un ago e fai un nodo cinque volte di fila, finché non diventa veloce e facile."
+    },
+    "pt": {
+     "t": "O essencial de coser à mão",
+     "g": "Enfia uma agulha, faz um nó e escolhe a linha certa para cada tecido.",
+     "p": [
+      "Corta a linha mais ou menos do tamanho do antebraço até ao cotovelo, um pouco mais; linhas compridas embaraçam-se.",
+      "Corta a ponta na diagonal para enfiar com facilidade, enrola-a no dedo e rola-a para formar um nó.",
+      "A linha de poliéster multiusos serve para quase tudo e a de algodão para algodão; mesma cor ou um tom mais escuro."
+     ],
+     "q": "Há em casa alguma coisa à espera de ser cosida ou arranjada?",
+     "c": "Enfia uma agulha e faz um nó cinco vezes seguidas até ficar rápido e fácil."
+    },
+    "pt_BR": {
+     "t": "O essencial da costura à mão",
+     "g": "Passe a linha na agulha, dê um nó e escolha a linha certa para cada tecido.",
+     "p": [
+      "Corte a linha mais ou menos do tamanho do antebraço até o cotovelo, um pouco mais; linhas longas embolam e desfiam.",
+      "Corte a ponta na diagonal para passar fácil, enrole no dedo e role para formar um nó.",
+      "A linha de poliéster multiuso serve para quase tudo e a de algodão para algodão; mesma cor ou um tom mais escuro."
+     ],
+     "q": "Tem alguma coisa em casa esperando para ser costurada ou consertada agora?",
+     "c": "Passe a linha na agulha e dê um nó cinco vezes seguidas até ficar rápido e fácil."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sewing on a button",
+     "g": "Attach buttons firmly with a thread shank so they last for years.",
+     "p": [
+      "Use doubled thread with a knot, and start from the back of the fabric so the knot hides under the button.",
+      "Place a pin or toothpick across the button and sew over it, going up and down through the holes four to six times.",
+      "Remove the pin, wind the thread around the stitches under the button to form a shank, then knot it at the back."
+     ],
+     "q": "Have you ever lost a button at the worst possible moment?",
+     "c": "Sew a button onto a scrap of fabric or a shirt that needs one, using the thread shank method."
+    },
+    "de": {
+     "t": "Einen Knopf annähen",
+     "g": "Näh Knöpfe mit einem Fadenstiel fest an, damit sie jahrelang halten.",
+     "p": [
+      "Nimm doppelten Faden mit Knoten und beginne auf der Stoffrückseite, damit der Knoten unter dem Knopf verschwindet.",
+      "Leg eine Stecknadel oder einen Zahnstocher quer über den Knopf und nähe vier- bis sechsmal darüber durch die Löcher.",
+      "Zieh die Nadel heraus, wickle den Faden unter dem Knopf um die Stiche zu einem Stiel und vernähe ihn hinten."
+     ],
+     "q": "Hast du schon einmal im ungünstigsten Moment einen Knopf verloren?",
+     "c": "Näh mit der Fadenstiel-Methode einen Knopf auf einen Stoffrest oder ein Hemd, dem einer fehlt."
+    },
+    "es": {
+     "t": "Coser un botón",
+     "g": "Cose botones con firmeza y con un tallo de hilo para que duren años.",
+     "p": [
+      "Usa hilo doble con nudo y empieza por el revés de la tela para que el nudo quede escondido bajo el botón.",
+      "Coloca un alfiler o palillo sobre el botón y cose por encima, subiendo y bajando por los agujeros de cuatro a seis veces.",
+      "Quita el alfiler, enrolla el hilo bajo el botón alrededor de las puntadas para formar el tallo y anúdalo detrás."
+     ],
+     "q": "¿Alguna vez perdiste un botón en el peor momento posible?",
+     "c": "Cose un botón en un retal o en una camisa que lo necesite usando el método del tallo de hilo."
+    },
+    "fr": {
+     "t": "Coudre un bouton",
+     "g": "Fixe solidement un bouton avec une tige de fil pour qu'il tienne des années.",
+     "p": [
+      "Prends un fil double avec un nœud et commence par l'envers du tissu pour que le nœud se cache sous le bouton.",
+      "Pose une épingle ou un cure-dent sur le bouton et couds par-dessus, en passant dans les trous quatre à six fois.",
+      "Retire l'épingle, enroule le fil autour des points sous le bouton pour former une tige, puis fais un nœud au dos."
+     ],
+     "q": "As-tu déjà perdu un bouton au pire moment possible ?",
+     "c": "Couds un bouton sur une chute de tissu ou une chemise qui en a besoin, avec la méthode de la tige de fil."
+    },
+    "it": {
+     "t": "Attaccare un bottone",
+     "g": "Attacca i bottoni in modo saldo con un gambo di filo, così durano anni.",
+     "p": [
+      "Usa filo doppio con un nodo e parti dal rovescio del tessuto, così il nodo si nasconde sotto il bottone.",
+      "Metti uno spillo o uno stuzzicadenti sopra il bottone e cuci passandoci sopra, nei fori, da quattro a sei volte.",
+      "Togli lo spillo, avvolgi il filo intorno ai punti sotto il bottone per formare il gambo e fai il nodo sul retro."
+     ],
+     "q": "Ti è mai capitato di perdere un bottone nel momento peggiore?",
+     "c": "Attacca un bottone su un ritaglio di stoffa o su una camicia che ne ha bisogno, con il metodo del gambo."
+    },
+    "pt": {
+     "t": "Pregar um botão",
+     "g": "Prega botões com firmeza e com um pé de linha para durarem anos.",
+     "p": [
+      "Usa linha dobrada com nó e começa pelo avesso do tecido, para o nó ficar escondido debaixo do botão.",
+      "Põe um alfinete ou palito sobre o botão e cose por cima, passando pelos furos quatro a seis vezes.",
+      "Tira o alfinete, enrola a linha à volta dos pontos debaixo do botão para formar o pé e dá um nó atrás."
+     ],
+     "q": "Já perdeste um botão no pior momento possível?",
+     "c": "Prega um botão num retalho ou numa camisa que precise, com o método do pé de linha."
+    },
+    "pt_BR": {
+     "t": "Pregando um botão",
+     "g": "Pregue botões com firmeza e com uma haste de linha para durarem anos.",
+     "p": [
+      "Use linha dupla com nó e comece pelo avesso do tecido, para o nó ficar escondido embaixo do botão.",
+      "Coloque um alfinete ou palito sobre o botão e costure por cima, passando pelos furos de quatro a seis vezes.",
+      "Tire o alfinete, enrole a linha em volta dos pontos embaixo do botão para formar a haste e dê um nó atrás."
+     ],
+     "q": "Você já perdeu um botão no pior momento possível?",
+     "c": "Pregue um botão num retalho ou numa camisa que precise, usando o método da haste de linha."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic hand stitches for mending",
+     "g": "Use whip stitch, slip stitch and ladder stitch for seams and nearly invisible repairs.",
+     "p": [
+      "Whip stitch wraps over two edges with small diagonal stitches: quick and strong for felt and edges.",
+      "Slip stitch hides the thread inside a folded edge, perfect for hems that should not show on the front.",
+      "Ladder stitch closes a seam from the right side: stitch into each fold in turn, then pull and the seam disappears."
+     ],
+     "q": "Which stitch do you think will be most useful in your daily life?",
+     "c": "Find a small open seam or loose hem at home and close it with ladder or slip stitch."
+    },
+    "de": {
+     "t": "Handstiche zum Flicken",
+     "g": "Nutze überwendliche Stiche, Blindstich und Leiterstich für Nähte und fast unsichtbare Reparaturen.",
+     "p": [
+      "Überwendliche Stiche umfassen zwei Kanten mit kleinen schrägen Stichen: schnell und fest für Filz und Ränder.",
+      "Der Blindstich versteckt den Faden in einer umgeschlagenen Kante, ideal für Säume, die vorn nicht sichtbar sein sollen.",
+      "Der Leiterstich schließt eine Naht von rechts: abwechselnd in jeden Bruch stechen, festziehen, und die Naht verschwindet."
+     ],
+     "q": "Welcher Stich wird dir im Alltag wohl am meisten nützen?",
+     "c": "Such zu Hause eine kleine offene Naht oder einen losen Saum und schließe sie mit Leiter- oder Blindstich."
+    },
+    "es": {
+     "t": "Puntadas básicas para arreglar",
+     "g": "Usa punto por encima, punto invisible y punto escalera para costuras y arreglos casi invisibles.",
+     "p": [
+      "El punto por encima abraza dos bordes con puntaditas diagonales: rápido y fuerte para fieltro y orillas.",
+      "El punto invisible esconde el hilo dentro de un doblez, perfecto para dobladillos que no deben verse por delante.",
+      "El punto escalera cierra una costura por el derecho: entra en cada doblez por turnos, tira y la costura desaparece."
+     ],
+     "q": "¿Qué puntada crees que te será más útil en tu día a día?",
+     "c": "Busca en casa una costura abierta o un dobladillo suelto y ciérralo con punto escalera o invisible."
+    },
+    "fr": {
+     "t": "Points de base pour réparer",
+     "g": "Utilise le point de surjet, le point glissé et le point échelle pour coutures et réparations quasi invisibles.",
+     "p": [
+      "Le surjet enveloppe deux bords de petits points en biais : rapide et solide pour la feutrine et les bordures.",
+      "Le point glissé cache le fil dans un bord replié, parfait pour les ourlets qui ne doivent pas se voir devant.",
+      "Le point échelle ferme une couture côté endroit : pique tour à tour dans chaque pli, tire et la couture disparaît."
+     ],
+     "q": "Quel point te sera le plus utile au quotidien, à ton avis ?",
+     "c": "Trouve chez toi une petite couture ouverte ou un ourlet défait et ferme-le au point échelle ou glissé."
+    },
+    "it": {
+     "t": "Punti base per rammendare",
+     "g": "Usa sopraggitto, punto invisibile e punto scala per cuciture e riparazioni quasi invisibili.",
+     "p": [
+      "Il sopraggitto avvolge due bordi con piccoli punti obliqui: veloce e robusto per feltro e bordi.",
+      "Il punto invisibile nasconde il filo dentro un bordo ripiegato, perfetto per orli che non devono vedersi davanti.",
+      "Il punto scala chiude una cucitura dal diritto: entra a turno in ogni piega, tira e la cucitura scompare."
+     ],
+     "q": "Quale punto pensi che ti sarà più utile nella vita di tutti i giorni?",
+     "c": "Trova in casa una piccola cucitura aperta o un orlo scucito e chiudilo a punto scala o invisibile."
+    },
+    "pt": {
+     "t": "Pontos básicos para arranjos",
+     "g": "Usa o ponto por cima, o ponto invisível e o ponto escada para costuras e arranjos quase invisíveis.",
+     "p": [
+      "O ponto por cima envolve duas bordas com pontinhos na diagonal: rápido e forte para feltro e orlas.",
+      "O ponto invisível esconde a linha dentro de uma dobra, perfeito para bainhas que não devem aparecer à frente.",
+      "O ponto escada fecha uma costura pelo direito: entra à vez em cada dobra, puxa e a costura desaparece."
+     ],
+     "q": "Que ponto achas que te vai ser mais útil no dia a dia?",
+     "c": "Procura em casa uma costura aberta ou uma bainha solta e fecha-a com ponto escada ou invisível."
+    },
+    "pt_BR": {
+     "t": "Pontos básicos para consertos",
+     "g": "Use o ponto por cima, o ponto invisível e o ponto escada para costuras e consertos quase invisíveis.",
+     "p": [
+      "O ponto por cima envolve duas bordas com pontinhos na diagonal: rápido e forte para feltro e beiradas.",
+      "O ponto invisível esconde a linha dentro de uma dobra, perfeito para barras que não devem aparecer na frente.",
+      "O ponto escada fecha uma costura pelo direito: entre em cada dobra alternadamente, puxe e a costura some."
+     ],
+     "q": "Qual ponto você acha que vai ser mais útil no seu dia a dia?",
+     "c": "Procure em casa uma costura aberta ou uma barra solta e feche com ponto escada ou invisível."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visible mending",
+     "g": "Turn repairs into decoration with patches and darning, a growing craft movement.",
+     "p": [
+      "Visible mending celebrates repairs instead of hiding them, giving clothes a longer, more personal life.",
+      "Darning weaves new threads over a hole: first parallel lines across, then weave over and under them the other way.",
+      "Sashiko, a Japanese running stitch tradition, decorates and strengthens patches with simple geometric patterns."
+     ],
+     "q": "Is there a piece of clothing you love too much to throw away?",
+     "c": "Sew a small patch over a worn spot or practise darning a 2 cm square on scrap fabric."
+    },
+    "de": {
+     "t": "Sichtbares Flicken",
+     "g": "Mach Reparaturen mit Flicken und Stopfen zur Verzierung, ein wachsender Handwerkstrend.",
+     "p": [
+      "Sichtbares Flicken feiert Reparaturen, statt sie zu verstecken, und schenkt Kleidung ein längeres, persönlicheres Leben.",
+      "Beim Stopfen webst du neue Fäden über ein Loch: erst parallele Fäden, dann quer darüber im Wechsel drüber und drunter.",
+      "Sashiko, eine japanische Vorstich-Tradition, verziert und stärkt Flicken mit einfachen geometrischen Mustern."
+     ],
+     "q": "Gibt es ein Kleidungsstück, das du zu sehr liebst, um es wegzuwerfen?",
+     "c": "Näh einen kleinen Flicken auf eine dünne Stelle oder übe das Stopfen eines 2-cm-Quadrats auf einem Stoffrest."
+    },
+    "es": {
+     "t": "Remiendo visible",
+     "g": "Convierte los arreglos en decoración con parches y zurcidos, un movimiento artesanal en auge.",
+     "p": [
+      "El remiendo visible celebra los arreglos en vez de esconderlos y da a la ropa una vida más larga y personal.",
+      "Zurcir es tejer hilos nuevos sobre un agujero: primero líneas paralelas y luego pasando por encima y por debajo en cruz.",
+      "El sashiko, tradición japonesa de puntada de hilván, decora y refuerza parches con dibujos geométricos sencillos."
+     ],
+     "q": "¿Hay alguna prenda que quieras demasiado como para tirarla?",
+     "c": "Cose un parchecito sobre una zona gastada o practica zurcir un cuadrado de 2 cm en un retal."
+    },
+    "fr": {
+     "t": "Le raccommodage visible",
+     "g": "Transforme tes réparations en décor avec pièces et reprises, un mouvement créatif en plein essor.",
+     "p": [
+      "Le raccommodage visible célèbre les réparations au lieu de les cacher, et donne aux vêtements une vie plus longue et personnelle.",
+      "Repriser, c'est tisser de nouveaux fils sur un trou : d'abord des lignes parallèles, puis dessus-dessous dans l'autre sens.",
+      "Le sashiko, tradition japonaise de point avant, décore et renforce les pièces avec des motifs géométriques simples."
+     ],
+     "q": "As-tu un vêtement que tu aimes trop pour le jeter ?",
+     "c": "Couds une petite pièce sur un endroit usé ou entraîne-toi à repriser un carré de 2 cm sur une chute."
+    },
+    "it": {
+     "t": "Il rammendo visibile",
+     "g": "Trasforma le riparazioni in decorazione con toppe e rammendi, un movimento artigianale in crescita.",
+     "p": [
+      "Il rammendo visibile celebra le riparazioni invece di nasconderle e dà ai vestiti una vita più lunga e personale.",
+      "Rammendare è tessere fili nuovi sopra un buco: prima linee parallele, poi sopra e sotto nell'altro verso.",
+      "Il sashiko, tradizione giapponese a punto filza, decora e rinforza le toppe con semplici motivi geometrici."
+     ],
+     "q": "C'è un capo che ami troppo per buttarlo via?",
+     "c": "Cuci una piccola toppa su un punto consumato o esercitati a rammendare un quadrato di 2 cm su un ritaglio."
+    },
+    "pt": {
+     "t": "Remendo visível",
+     "g": "Transforma arranjos em decoração com remendos e passajas, um movimento artesanal em crescimento.",
+     "p": [
+      "O remendo visível celebra os arranjos em vez de os esconder e dá à roupa uma vida mais longa e pessoal.",
+      "Passajar é tecer linhas novas sobre um buraco: primeiro linhas paralelas, depois por cima e por baixo no outro sentido.",
+      "O sashiko, tradição japonesa de ponto alinhavo, decora e reforça remendos com padrões geométricos simples."
+     ],
+     "q": "Há alguma peça de roupa de que gostes demasiado para deitar fora?",
+     "c": "Cose um pequeno remendo numa zona gasta ou treina passajar um quadrado de 2 cm num retalho."
+    },
+    "pt_BR": {
+     "t": "Remendo aparente",
+     "g": "Transforme consertos em decoração com remendos e cerzidos, um movimento artesanal em alta.",
+     "p": [
+      "O remendo aparente celebra os consertos em vez de escondê-los e dá à roupa uma vida mais longa e pessoal.",
+      "Cerzir é tecer fios novos sobre um furo: primeiro linhas paralelas, depois por cima e por baixo no outro sentido.",
+      "O sashiko, tradição japonesa de pontos corridos, decora e reforça remendos com padrões geométricos simples."
+     ],
+     "q": "Existe alguma roupa que você ama demais para jogar fora?",
+     "c": "Costure um pequeno remendo numa área gasta ou treine cerzir um quadrado de 2 cm num retalho."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple hand-sewn tote bag",
+     "g": "Cut, pin and stitch a sturdy everyday bag from one piece of fabric.",
+     "p": [
+      "Choose a firm fabric like canvas or denim; one long rectangle folded in half gives the front, back and bottom.",
+      "Pin the side seams right sides together and backstitch them about 1.5 cm from the edge, then turn it right side out.",
+      "Fold the top edge over twice and slip stitch it, then sew on two straps with extra backstitch boxes for strength."
+     ],
+     "q": "What would you carry in a tote bag you made yourself?",
+     "c": "Cut the rectangle and straps for your tote today and pin the side seams ready to sew."
+    },
+    "de": {
+     "t": "Eine handgenähte Stofftasche",
+     "g": "Schneide, stecke und nähe aus einem Stück Stoff eine stabile Alltagstasche.",
+     "p": [
+      "Wähl festen Stoff wie Canvas oder Jeans; ein langes, mittig gefaltetes Rechteck ergibt Vorder-, Rückseite und Boden.",
+      "Steck die Seitennähte rechts auf rechts und nähe sie im Rückstich etwa 1,5 cm vom Rand, dann wende die Tasche.",
+      "Schlag die Oberkante doppelt um, nähe sie im Blindstich fest und setz zwei Henkel mit extra Rückstich-Kästchen an."
+     ],
+     "q": "Was würdest du in einer selbstgenähten Stofftasche tragen?",
+     "c": "Schneide heute Rechteck und Henkel zu und steck die Seitennähte fertig zum Nähen."
+    },
+    "es": {
+     "t": "Una bolsa de tela cosida a mano",
+     "g": "Corta, prende con alfileres y cose una bolsa resistente para el día a día con una sola pieza de tela.",
+     "p": [
+      "Elige una tela firme como lona o vaquero; un rectángulo largo doblado por la mitad da delante, detrás y fondo.",
+      "Prende las costuras laterales derecho con derecho y cóselas en pespunte a 1,5 cm del borde; luego dale la vuelta.",
+      "Dobla dos veces el borde superior y cóselo con punto invisible; luego cose dos asas reforzadas con un cuadrado de pespunte."
+     ],
+     "q": "¿Qué llevarías en una bolsa de tela hecha por ti?",
+     "c": "Corta hoy el rectángulo y las asas de tu bolsa y prende las costuras laterales listas para coser."
+    },
+    "fr": {
+     "t": "Un tote bag cousu main",
+     "g": "Coupe, épingle et couds un sac solide du quotidien dans une seule pièce de tissu.",
+     "p": [
+      "Choisis un tissu ferme comme la toile ou le denim ; un long rectangle plié en deux donne devant, dos et fond.",
+      "Épingle les coutures latérales endroit contre endroit et couds-les au point arrière à 1,5 cm du bord, puis retourne.",
+      "Replie deux fois le bord du haut et couds-le au point glissé, puis fixe deux anses renforcées par un carré de points arrière."
+     ],
+     "q": "Que transporterais-tu dans un tote bag fait de tes mains ?",
+     "c": "Coupe aujourd'hui le rectangle et les anses de ton sac et épingle les côtés, prêts à coudre."
+    },
+    "it": {
+     "t": "Una borsa di stoffa cucita a mano",
+     "g": "Taglia, appunta e cuci una borsa robusta per tutti i giorni da un solo pezzo di stoffa.",
+     "p": [
+      "Scegli un tessuto compatto come tela o jeans; un lungo rettangolo piegato a metà forma davanti, dietro e fondo.",
+      "Appunta le cuciture laterali diritto contro diritto e cucile a punto indietro a 1,5 cm dal bordo, poi rivolta.",
+      "Ripiega due volte il bordo superiore e cucilo a punto invisibile, poi attacca due manici rinforzati con un quadrato di punti."
+     ],
+     "q": "Cosa porteresti in una borsa di stoffa fatta da te?",
+     "c": "Taglia oggi il rettangolo e i manici della borsa e appunta le cuciture laterali, pronte da cucire."
+    },
+    "pt": {
+     "t": "Um saco de pano cosido à mão",
+     "g": "Corta, prende com alfinetes e cose um saco resistente para o dia a dia a partir de uma só peça de tecido.",
+     "p": [
+      "Escolhe um tecido firme como lona ou ganga; um retângulo comprido dobrado ao meio dá a frente, as costas e o fundo.",
+      "Prende as costuras laterais direito com direito e cose-as em ponto atrás a 1,5 cm da borda; depois vira do direito.",
+      "Dobra duas vezes a borda de cima e cose em ponto invisível; depois prega duas alças reforçadas com um quadrado de pontos."
+     ],
+     "q": "O que levarias num saco de pano feito por ti?",
+     "c": "Corta hoje o retângulo e as alças do teu saco e prende as costuras laterais, prontas a coser."
+    },
+    "pt_BR": {
+     "t": "Uma ecobag costurada à mão",
+     "g": "Corte, alfinete e costure uma bolsa resistente para o dia a dia com uma só peça de tecido.",
+     "p": [
+      "Escolha um tecido firme como lona ou jeans; um retângulo comprido dobrado ao meio forma a frente, as costas e o fundo.",
+      "Alfinete as laterais direito com direito e costure em ponto atrás a 1,5 cm da borda; depois desvire.",
+      "Dobre duas vezes a borda de cima e costure em ponto invisível; depois prenda duas alças reforçadas com um quadrado de pontos."
+     ],
+     "q": "O que você levaria numa ecobag feita por você?",
+     "c": "Corte hoje o retângulo e as alças da sua bolsa e alfinete as laterais, prontas para costurar."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Felt crafts",
+     "g": "Learn why felt does not fray and sew simple felt ornaments, shapes and badges.",
+     "p": [
+      "Felt is made of matted fibres instead of woven threads, so cut edges stay clean and need no hemming.",
+      "Trace a shape onto paper, pin it to two layers of felt, cut them out together and join them with whip or blanket stitch.",
+      "Leave a small gap, add a little stuffing for a soft 3D shape, then close it; keep small parts away from young kids."
+     ],
+     "q": "What felt shape would you make first: a star, a heart, an animal or a badge?",
+     "c": "Sew a small felt ornament with two layers, a little stuffing and a loop to hang it."
+    },
+    "de": {
+     "t": "Basteln mit Filz",
+     "g": "Erfahre, warum Filz nicht franst, und nähe einfache Filzanhänger, Formen und Abzeichen.",
+     "p": [
+      "Filz besteht aus verdichteten Fasern statt gewebten Fäden, darum bleiben Schnittkanten sauber und brauchen keinen Saum.",
+      "Zeichne eine Form auf Papier, steck sie auf zwei Lagen Filz, schneide beide aus und verbinde sie überwendlich oder mit Festonstich.",
+      "Lass eine kleine Öffnung, stopf etwas Füllwatte hinein und schließe sie; Kleinteile von kleinen Kindern fernhalten."
+     ],
+     "q": "Welche Filzform würdest du zuerst nähen: einen Stern, ein Herz, ein Tier oder ein Abzeichen?",
+     "c": "Näh einen kleinen Filzanhänger aus zwei Lagen, mit etwas Füllung und einer Schlaufe zum Aufhängen."
+    },
+    "es": {
+     "t": "Manualidades con fieltro",
+     "g": "Descubre por qué el fieltro no se deshilacha y cose adornos, formas y chapas sencillas.",
+     "p": [
+      "El fieltro está hecho de fibras prensadas, no de hilos tejidos, así que los bordes cortados quedan limpios sin dobladillo.",
+      "Calca una forma en papel, prende dos capas de fieltro, córtalas juntas y únelas con punto por encima o punto de festón.",
+      "Deja una abertura, añade un poco de relleno para darle volumen y ciérrala; aleja las piezas pequeñas de los niños pequeños."
+     ],
+     "q": "¿Qué forma de fieltro harías primero: una estrella, un corazón, un animal o una chapa?",
+     "c": "Cose un pequeño adorno de fieltro con dos capas, algo de relleno y una presilla para colgarlo."
+    },
+    "fr": {
+     "t": "Créations en feutrine",
+     "g": "Découvre pourquoi la feutrine ne s'effiloche pas et couds de simples décorations, formes et badges.",
+     "p": [
+      "La feutrine est faite de fibres compactées et non tissées, donc les bords coupés restent nets, sans ourlet.",
+      "Trace une forme sur papier, épingle-la sur deux couches de feutrine, coupe-les ensemble et assemble-les au surjet ou au point de feston.",
+      "Laisse une petite ouverture, ajoute un peu de rembourrage pour du volume, puis ferme ; petites pièces hors de portée des petits."
+     ],
+     "q": "Quelle forme en feutrine ferais-tu d'abord : une étoile, un cœur, un animal ou un badge ?",
+     "c": "Couds une petite décoration en feutrine à deux couches, un peu rembourrée, avec une boucle pour la suspendre."
+    },
+    "it": {
+     "t": "Lavoretti in feltro",
+     "g": "Scopri perché il feltro non si sfilaccia e cuci semplici decorazioni, forme e spille.",
+     "p": [
+      "Il feltro è fatto di fibre compattate, non di fili tessuti, quindi i bordi tagliati restano puliti senza orlo.",
+      "Ricalca una forma su carta, appuntala su due strati di feltro, tagliali insieme e uniscili a sopraggitto o a punto festone.",
+      "Lascia una piccola apertura, aggiungi un po' di imbottitura per dare volume e chiudi; pezzi piccoli lontani dai bimbi."
+     ],
+     "q": "Quale forma in feltro faresti per prima: una stella, un cuore, un animale o una spilla?",
+     "c": "Cuci una piccola decorazione in feltro a due strati, con un po' di imbottitura e un'asola per appenderla."
+    },
+    "pt": {
+     "t": "Trabalhos em feltro",
+     "g": "Descobre porque é que o feltro não desfia e cose enfeites, formas e crachás simples.",
+     "p": [
+      "O feltro é feito de fibras prensadas e não de fios tecidos, por isso as bordas cortadas ficam limpas, sem bainha.",
+      "Decalca uma forma em papel, prende-a a duas camadas de feltro, corta-as juntas e une-as com ponto por cima ou ponto caseado.",
+      "Deixa uma pequena abertura, junta um pouco de enchimento para dar volume e fecha; peças pequenas longe de crianças pequenas."
+     ],
+     "q": "Que forma em feltro farias primeiro: uma estrela, um coração, um animal ou um crachá?",
+     "c": "Cose um pequeno enfeite de feltro com duas camadas, um pouco de enchimento e uma alça para pendurar."
+    },
+    "pt_BR": {
+     "t": "Artesanato com feltro",
+     "g": "Descubra por que o feltro não desfia e costure enfeites, formas e broches simples.",
+     "p": [
+      "O feltro é feito de fibras prensadas, e não de fios tecidos, então as bordas cortadas ficam limpas, sem barra.",
+      "Decalque uma forma no papel, alfinete em duas camadas de feltro, corte juntas e una com ponto por cima ou ponto caseado.",
+      "Deixe uma pequena abertura, coloque um pouco de enchimento para dar volume e feche; peças pequenas longe de crianças pequenas."
+     ],
+     "q": "Que forma de feltro você faria primeiro: uma estrela, um coração, um bichinho ou um broche?",
+     "c": "Costure um pequeno enfeite de feltro com duas camadas, um pouco de enchimento e uma alcinha para pendurar."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pompoms and tassels",
+     "g": "Make fluffy pompoms and tidy tassels to decorate hats, bags and gifts.",
+     "p": [
+      "Pompom: wrap yarn many times around a fork, a pompom maker or two cardboard rings, tie tightly through the middle, cut the loops.",
+      "Trim the pompom into a round, even ball with sharp scissors; the more yarn you wrap, the fuller it gets.",
+      "Tassel: wrap yarn around a piece of card, tie the top, cut the bottom, then wrap and knot a few turns below the top."
+     ],
+     "q": "Which item at home could use a pompom or a tassel to make it more fun?",
+     "c": "Make one pompom with a fork and one tassel with a piece of card, then tie them to a gift or bag."
+    },
+    "de": {
+     "t": "Pompons und Quasten",
+     "g": "Mach flauschige Pompons und ordentliche Quasten als Deko für Mützen, Taschen und Geschenke.",
+     "p": [
+      "Pompon: Garn oft um eine Gabel, einen Pomponmacher oder zwei Pappringe wickeln, in der Mitte fest abbinden, Schlaufen aufschneiden.",
+      "Schneide den Pompon mit einer scharfen Schere zu einer runden, gleichmäßigen Kugel; je mehr Garn, desto voller.",
+      "Quaste: Garn um ein Stück Karton wickeln, oben abbinden, unten aufschneiden, dann knapp unter dem Kopf umwickeln und verknoten."
+     ],
+     "q": "Welcher Gegenstand bei dir könnte einen Pompon oder eine Quaste vertragen?",
+     "c": "Mach einen Pompon mit einer Gabel und eine Quaste mit Karton und binde beide an ein Geschenk oder eine Tasche."
+    },
+    "es": {
+     "t": "Pompones y borlas",
+     "g": "Haz pompones esponjosos y borlas ordenadas para decorar gorros, bolsos y regalos.",
+     "p": [
+      "Pompón: enrolla lana muchas veces en un tenedor, un hacedor de pompones o dos aros de cartón, ata fuerte por el centro y corta los lazos.",
+      "Recorta el pompón con tijeras afiladas hasta dejar una bola redonda y pareja; cuanta más lana, más lleno.",
+      "Borla: enrolla lana en un cartón, átala arriba, corta abajo y luego enrolla y anuda unas vueltas bajo la cabeza."
+     ],
+     "q": "¿Qué objeto de tu casa sería más divertido con un pompón o una borla?",
+     "c": "Haz un pompón con un tenedor y una borla con un cartón, y átalos a un regalo o un bolso."
+    },
+    "fr": {
+     "t": "Pompons et glands",
+     "g": "Fabrique des pompons duveteux et des glands nets pour décorer bonnets, sacs et cadeaux.",
+     "p": [
+      "Pompon : enroule beaucoup de fil sur une fourchette ou deux anneaux en carton, noue bien au centre, puis coupe les boucles.",
+      "Égalise le pompon aux ciseaux bien affûtés pour obtenir une boule ronde ; plus tu enroules de fil, plus il est fourni.",
+      "Gland : enroule du fil autour d'un carton, noue le haut, coupe le bas, puis enroule et noue quelques tours sous la tête."
+     ],
+     "q": "Quel objet chez toi serait plus amusant avec un pompon ou un gland ?",
+     "c": "Fais un pompon avec une fourchette et un gland avec un carton, puis attache-les à un cadeau ou un sac."
+    },
+    "it": {
+     "t": "Pompon e nappine",
+     "g": "Crea pompon soffici e nappine ordinate per decorare cappelli, borse e regali.",
+     "p": [
+      "Pompon: avvolgi molte volte il filato su una forchetta o due anelli di cartone, lega stretto al centro e taglia gli anelli.",
+      "Rifila il pompon con forbici affilate fino a una palla tonda e regolare; più filato avvolgi, più sarà pieno.",
+      "Nappina: avvolgi il filato su un cartoncino, lega in alto, taglia in basso, poi avvolgi e annoda qualche giro sotto la testa."
+     ],
+     "q": "Quale oggetto di casa tua sarebbe più allegro con un pompon o una nappina?",
+     "c": "Fai un pompon con una forchetta e una nappina con un cartoncino, poi legali a un regalo o a una borsa."
+    },
+    "pt": {
+     "t": "Pompons e borlas",
+     "g": "Faz pompons fofos e borlas certinhas para decorar gorros, sacos e presentes.",
+     "p": [
+      "Pompom: enrola fio muitas vezes num garfo, num fazedor de pompons ou em dois aros de cartão, ata bem ao meio e corta as laçadas.",
+      "Apara o pompom com uma tesoura afiada até ficar uma bola redonda e uniforme; quanto mais fio, mais cheio fica.",
+      "Borla: enrola fio num cartão, ata em cima, corta em baixo e depois enrola e dá um nó umas voltas abaixo da cabeça."
+     ],
+     "q": "Que objeto da tua casa ficava mais divertido com um pompom ou uma borla?",
+     "c": "Faz um pompom com um garfo e uma borla com um cartão, e ata-os a um presente ou a um saco."
+    },
+    "pt_BR": {
+     "t": "Pompons e pingentes de fio",
+     "g": "Faça pompons fofinhos e pingentes caprichados para decorar gorros, bolsas e presentes.",
+     "p": [
+      "Pompom: enrole fio muitas vezes num garfo, num aparelho de pompom ou em dois aros de papelão, amarre firme no meio e corte as laçadas.",
+      "Apare o pompom com tesoura afiada até virar uma bola redonda e uniforme; quanto mais fio, mais cheio ele fica.",
+      "Pingente: enrole fio num papelão, amarre em cima, corte embaixo e depois enrole e dê um nó algumas voltas abaixo da cabeça."
+     ],
+     "q": "Que objeto da sua casa ficaria mais divertido com um pompom ou um pingente de fio?",
+     "c": "Faça um pompom com um garfo e um pingente com um papelão, e amarre num presente ou numa bolsa."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: yarn, thread and needle",
+     "g": "Look back at knitting, crochet, embroidery and sewing basics with a combined mini challenge.",
+     "p": [
+      "Knitting gave you purl, stockinette, binding off, fixing mistakes, gauge and your first scarf.",
+      "Crochet brought chains, single and double crochet and granny squares; embroidery added outlines, fills and flowers.",
+      "Sewing taught buttons, mending stitches, visible mending, a tote bag, felt, pompoms and tassels."
+     ],
+     "q": "Which of the four, knitting, crochet, embroidery or sewing, would you like to explore further?",
+     "c": "Decorate your tote bag or a felt piece with one embroidered flower and a pompom or tassel."
+    },
+    "de": {
+     "t": "Rückblick: Garn, Faden und Nadel",
+     "g": "Blick zurück auf Stricken, Häkeln, Sticken und Nähen und meistere eine kombinierte Mini-Aufgabe.",
+     "p": [
+      "Beim Stricken hast du linke Maschen, glatt rechts, Abketten, Fehlerkorrektur, Maschenprobe und deinen ersten Schal gelernt.",
+      "Häkeln brachte Luftmaschen, feste Maschen, Stäbchen und Granny Squares; Sticken brachte Linien, Füllungen und Blumen.",
+      "Nähen lehrte Knöpfe, Flickstiche, sichtbares Flicken, eine Stofftasche, Filz, Pompons und Quasten."
+     ],
+     "q": "Welches der vier, Stricken, Häkeln, Sticken oder Nähen, möchtest du weiter erkunden?",
+     "c": "Verziere deine Stofftasche oder ein Filzstück mit einer gestickten Blume und einem Pompon oder einer Quaste."
+    },
+    "es": {
+     "t": "Repaso: lana, hilo y aguja",
+     "g": "Repasa lo básico de punto, ganchillo, bordado y costura con un mini reto combinado.",
+     "p": [
+      "En punto aprendiste el revés, el jersey, cerrar puntos, arreglar errores, la muestra y tu primera bufanda.",
+      "El ganchillo trajo cadenetas, punto bajo, punto alto y granny squares; el bordado, líneas, rellenos y flores.",
+      "La costura te enseñó botones, puntadas de arreglo, remiendo visible, una bolsa de tela, fieltro, pompones y borlas."
+     ],
+     "q": "¿Cuál de los cuatro, punto, ganchillo, bordado o costura, te gustaría explorar más?",
+     "c": "Decora tu bolsa de tela o una pieza de fieltro con una flor bordada y un pompón o una borla."
+    },
+    "fr": {
+     "t": "Bilan : fil, aiguille et crochet",
+     "g": "Reviens sur les bases du tricot, du crochet, de la broderie et de la couture avec un mini-défi combiné.",
+     "p": [
+      "Le tricot t'a appris l'envers, le jersey, le rabattage, les réparations, l'échantillon et ta première écharpe.",
+      "Le crochet a apporté mailles en l'air, mailles serrées, brides et granny squares ; la broderie, lignes, remplissages et fleurs.",
+      "La couture t'a appris les boutons, les points de réparation, le raccommodage visible, un tote bag, la feutrine, pompons et glands."
+     ],
+     "q": "Lequel des quatre, tricot, crochet, broderie ou couture, aimerais-tu explorer davantage ?",
+     "c": "Décore ton tote bag ou une pièce en feutrine d'une fleur brodée et d'un pompon ou d'un gland."
+    },
+    "it": {
+     "t": "Ripasso: filato, filo e ago",
+     "g": "Ripercorri le basi di maglia, uncinetto, ricamo e cucito con una mini sfida combinata.",
+     "p": [
+      "Con la maglia hai imparato il rovescio, la maglia rasata, la chiusura, le correzioni, il campione e la prima sciarpa.",
+      "L'uncinetto ha portato catenelle, punto basso, maglia alta e granny square; il ricamo linee, riempimenti e fiori.",
+      "Il cucito ti ha insegnato bottoni, punti di rammendo, rammendo visibile, una borsa di stoffa, feltro, pompon e nappine."
+     ],
+     "q": "Quale dei quattro, maglia, uncinetto, ricamo o cucito, ti piacerebbe approfondire?",
+     "c": "Decora la tua borsa di stoffa o un pezzo di feltro con un fiore ricamato e un pompon o una nappina."
+    },
+    "pt": {
+     "t": "Revisão: fio, linha e agulha",
+     "g": "Revê o básico de tricô, croché, bordado e costura com um mini desafio combinado.",
+     "p": [
+      "No tricô aprendeste a liga, o jersey, arrematar, corrigir erros, a amostra e o teu primeiro cachecol.",
+      "O croché trouxe correntinhas, ponto baixo, ponto alto e granny squares; o bordado, linhas, preenchimentos e flores.",
+      "A costura ensinou botões, pontos de arranjo, remendo visível, um saco de pano, feltro, pompons e borlas."
+     ],
+     "q": "Qual dos quatro, tricô, croché, bordado ou costura, gostavas de explorar mais?",
+     "c": "Decora o teu saco de pano ou uma peça de feltro com uma flor bordada e um pompom ou uma borla."
+    },
+    "pt_BR": {
+     "t": "Revisão: fio, linha e agulha",
+     "g": "Relembre o básico de tricô, crochê, bordado e costura com um mini desafio combinado.",
+     "p": [
+      "No tricô você aprendeu o ponto tricô, o jersey, arrematar, corrigir erros, a amostra e seu primeiro cachecol.",
+      "O crochê trouxe correntinhas, ponto baixo, ponto alto e quadradinhos; o bordado, linhas, preenchimentos e flores.",
+      "A costura ensinou botões, pontos de conserto, remendo aparente, uma ecobag, feltro, pompons e pingentes."
+     ],
+     "q": "Qual dos quatro, tricô, crochê, bordado ou costura, você gostaria de explorar mais?",
+     "c": "Decore sua ecobag ou uma peça de feltro com uma flor bordada e um pompom ou um pingente de fio."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "meal_prep",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Egg muffins",
+     "g": "Bake egg cups with vegetables and cheese for easy grab-and-go breakfasts.",
+     "p": [
+      "Whisk eggs with a splash of milk, salt and pepper, then pour into a greased muffin tin.",
+      "Add small pieces of vegetables, cheese or leftover cooked meat to each cup.",
+      "Bake until set, cool fully, then keep in the fridge for a few days or freeze."
+     ],
+     "q": "Which fillings would you put in your perfect egg muffin?",
+     "c": "Bake a tray of egg muffins with two vegetables you already have at home."
+    },
+    "de": {
+     "t": "Ei-Muffins",
+     "g": "Backe Eier-Muffins mit Gemüse und Käse für ein schnelles Frühstück zum Mitnehmen.",
+     "p": [
+      "Eier mit etwas Milch, Salz und Pfeffer verquirlen und in ein gefettetes Muffinblech gießen.",
+      "Kleine Stücke Gemüse, Käse oder Reste von gegartem Fleisch in jede Mulde geben.",
+      "Backen, bis sie fest sind, ganz abkühlen lassen, dann ein paar Tage kühlen oder einfrieren."
+     ],
+     "q": "Welche Füllung käme in deinen perfekten Ei-Muffin?",
+     "c": "Backe ein Blech Ei-Muffins mit zwei Gemüsesorten, die du schon zu Hause hast."
+    },
+    "es": {
+     "t": "Muffins de huevo",
+     "g": "Hornear vasitos de huevo con verduras y queso para desayunos fáciles para llevar.",
+     "p": [
+      "Bate huevos con un chorrito de leche, sal y pimienta y viértelos en un molde engrasado.",
+      "Añade a cada hueco trocitos de verdura, queso o restos de carne cocinada.",
+      "Hornea hasta que cuajen, deja enfriar del todo y guárdalos unos días en la nevera o congélalos."
+     ],
+     "q": "¿Qué relleno pondrías en tu muffin de huevo perfecto?",
+     "c": "Hornea una bandeja de muffins de huevo con dos verduras que ya tengas en casa."
+    },
+    "fr": {
+     "t": "Muffins aux œufs",
+     "g": "Cuire au four des petits flans aux œufs, légumes et fromage pour des petits-déjeuners à emporter.",
+     "p": [
+      "Bats les œufs avec un peu de lait, sel et poivre, puis verse dans un moule à muffins graissé.",
+      "Ajoute dans chaque alvéole des petits morceaux de légumes, de fromage ou un reste de viande cuite.",
+      "Cuis jusqu'à ce qu'ils soient pris, laisse refroidir, puis garde-les quelques jours au frigo ou congèle."
+     ],
+     "q": "Quelle garniture mettrais-tu dans ton muffin aux œufs idéal ?",
+     "c": "Prépare une fournée de muffins aux œufs avec deux légumes que tu as déjà."
+    },
+    "it": {
+     "t": "Muffin di uova",
+     "g": "Cuocere al forno tortine di uova con verdure e formaggio per colazioni pronte da portare via.",
+     "p": [
+      "Sbatti le uova con un goccio di latte, sale e pepe e versale in uno stampo da muffin unto.",
+      "Aggiungi in ogni incavo pezzetti di verdura, formaggio o avanzi di carne cotta.",
+      "Cuoci finché si rapprendono, lascia raffreddare e conservali in frigo pochi giorni o congelali."
+     ],
+     "q": "Quale ripieno metteresti nel tuo muffin di uova perfetto?",
+     "c": "Prepara una teglia di muffin di uova con due verdure che hai già in casa."
+    },
+    "pt": {
+     "t": "Muffins de ovo",
+     "g": "Fazer no forno queques de ovo com legumes e queijo para pequenos-almoços fáceis de levar.",
+     "p": [
+      "Bate ovos com um pouco de leite, sal e pimenta e deita numa forma de queques untada.",
+      "Junta a cada cavidade pedacinhos de legumes, queijo ou restos de carne cozinhada.",
+      "Coze até ficarem firmes, deixa arrefecer e guarda alguns dias no frigorífico ou congela."
+     ],
+     "q": "Que recheio punhas no teu muffin de ovo perfeito?",
+     "c": "Faz um tabuleiro de muffins de ovo com dois legumes que já tens em casa."
+    },
+    "pt_BR": {
+     "t": "Muffins de ovo",
+     "g": "Assar muffins de ovo com legumes e queijo para cafés da manhã fáceis de levar.",
+     "p": [
+      "Bata ovos com um pouco de leite, sal e pimenta e despeje numa forma de muffin untada.",
+      "Coloque em cada cavidade pedacinhos de legumes, queijo ou sobras de carne cozida.",
+      "Asse até firmar, deixe esfriar bem e guarde alguns dias na geladeira ou congele."
+     ],
+     "q": "Que recheio você colocaria no seu muffin de ovo perfeito?",
+     "c": "Asse uma forma de muffins de ovo com dois legumes que você já tem em casa."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baked chicken breasts",
+     "g": "Season and bake chicken breasts so they stay juicy for several days.",
+     "p": [
+      "Flatten thicker parts a little so the breast cooks evenly.",
+      "Season well, bake until fully cooked through with no pink in the centre.",
+      "Let it rest a few minutes, then slice only when you eat it so it stays moist."
+     ],
+     "q": "What seasoning do you love most on chicken?",
+     "c": "Bake two chicken breasts with a new seasoning and taste how it holds up on day two."
+    },
+    "de": {
+     "t": "Gebackene Hähnchenbrust",
+     "g": "Würze und backe Hähnchenbrust so, dass sie mehrere Tage saftig bleibt.",
+     "p": [
+      "Drück dickere Stellen etwas flach, damit die Brust gleichmäßig gart.",
+      "Gut würzen und backen, bis sie ganz durchgegart ist, ohne Rosa in der Mitte.",
+      "Ein paar Minuten ruhen lassen und erst beim Essen aufschneiden, so bleibt sie saftig."
+     ],
+     "q": "Welche Würzung magst du am liebsten zu Hähnchen?",
+     "c": "Backe zwei Hähnchenbrüste mit einer neuen Würzung und probiere sie am zweiten Tag."
+    },
+    "es": {
+     "t": "Pechugas de pollo al horno",
+     "g": "Sazonar y hornear pechugas de pollo para que sigan jugosas durante varios días.",
+     "p": [
+      "Aplana un poco las partes gruesas para que la pechuga se haga por igual.",
+      "Sazona bien y hornea hasta que esté hecha por completo, sin rosa en el centro.",
+      "Déjala reposar unos minutos y córtala solo al comerla para que siga jugosa."
+     ],
+     "q": "¿Qué condimento te gusta más en el pollo?",
+     "c": "Hornea dos pechugas con un condimento nuevo y prueba cómo están al segundo día."
+    },
+    "fr": {
+     "t": "Blancs de poulet au four",
+     "g": "Assaisonner et cuire des blancs de poulet au four pour qu'ils restent juteux plusieurs jours.",
+     "p": [
+      "Aplatis un peu les parties épaisses pour une cuisson homogène.",
+      "Assaisonne bien et fais cuire jusqu'à ce que ce soit cuit à cœur, sans rose au centre.",
+      "Laisse reposer quelques minutes et ne tranche qu'au moment de manger pour garder le moelleux."
+     ],
+     "q": "Quel assaisonnement préfères-tu sur le poulet ?",
+     "c": "Cuis deux blancs de poulet avec un nouvel assaisonnement et goûte-les le deuxième jour."
+    },
+    "it": {
+     "t": "Petto di pollo al forno",
+     "g": "Insaporire e cuocere al forno il petto di pollo perché resti succoso per più giorni.",
+     "p": [
+      "Appiattisci un po' le parti più spesse perché cuocia in modo uniforme.",
+      "Condisci bene e cuoci finché è cotto del tutto, senza rosa al centro.",
+      "Lascialo riposare qualche minuto e taglialo solo quando lo mangi, così resta morbido."
+     ],
+     "q": "Quale condimento ami di più sul pollo?",
+     "c": "Cuoci due petti di pollo con un condimento nuovo e assaggiali il secondo giorno."
+    },
+    "pt": {
+     "t": "Peitos de frango no forno",
+     "g": "Temperar e assar peitos de frango para se manterem suculentos vários dias.",
+     "p": [
+      "Achata um pouco as partes mais grossas para o peito cozinhar por igual.",
+      "Tempera bem e assa até estar totalmente cozinhado, sem rosa no centro.",
+      "Deixa repousar uns minutos e corta só na altura de comer para ficar suculento."
+     ],
+     "q": "Que tempero gostas mais no frango?",
+     "c": "Assa dois peitos de frango com um tempero novo e prova como estão no segundo dia."
+    },
+    "pt_BR": {
+     "t": "Peito de frango assado",
+     "g": "Temperar e assar peito de frango para continuar suculento por vários dias.",
+     "p": [
+      "Achate um pouco as partes mais grossas para o peito assar por igual.",
+      "Tempere bem e asse até estar totalmente cozido, sem rosado no meio.",
+      "Deixe descansar alguns minutos e fatie só na hora de comer para ficar suculento."
+     ],
+     "q": "Qual tempero você mais gosta no frango?",
+     "c": "Asse dois peitos de frango com um tempero novo e prove como estão no segundo dia."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chicken thighs for meal prep",
+     "g": "Discover why chicken thighs are a forgiving cut that stays moist when reheated.",
+     "p": [
+      "Thighs have a little more fat, so they stay tender even if cooked a bit longer.",
+      "Roast, grill or pan-fry them; boneless thighs cook quickly and evenly.",
+      "They reheat well in bowls, wraps and stews without drying out."
+     ],
+     "q": "Have you cooked chicken thighs before, or mostly breast?",
+     "c": "Roast a tray of chicken thighs and use them in two different meals this week."
+    },
+    "de": {
+     "t": "Hähnchenschenkel fürs Meal Prep",
+     "g": "Entdecke, warum Hähnchenschenkel ein verzeihendes Stück sind, das aufgewärmt saftig bleibt.",
+     "p": [
+      "Schenkel haben etwas mehr Fett und bleiben zart, auch wenn sie länger garen.",
+      "Braten, grillen oder in der Pfanne; ohne Knochen garen sie schnell und gleichmäßig.",
+      "Sie lassen sich in Bowls, Wraps und Eintöpfen gut aufwärmen, ohne trocken zu werden."
+     ],
+     "q": "Hast du schon Hähnchenschenkel gekocht oder meist Brust?",
+     "c": "Brate ein Blech Hähnchenschenkel und nutze sie diese Woche für zwei Gerichte."
+    },
+    "es": {
+     "t": "Muslos de pollo para meal prep",
+     "g": "Descubrir por qué los muslos son un corte agradecido que sigue jugoso al recalentar.",
+     "p": [
+      "Los muslos tienen algo más de grasa y siguen tiernos aunque se cocinen un poco más.",
+      "Ásalos, a la plancha o a la sartén; deshuesados se hacen rápido y por igual.",
+      "Se recalientan bien en bowls, wraps y guisos sin secarse."
+     ],
+     "q": "¿Has cocinado muslos de pollo o sobre todo pechuga?",
+     "c": "Asa una bandeja de muslos y úsalos en dos comidas distintas esta semana."
+    },
+    "fr": {
+     "t": "Hauts de cuisse de poulet",
+     "g": "Découvrir pourquoi les hauts de cuisse sont un morceau indulgent qui reste moelleux réchauffé.",
+     "p": [
+      "Ils ont un peu plus de gras et restent tendres même cuits un peu plus longtemps.",
+      "Rôtis, grillés ou poêlés ; désossés, ils cuisent vite et uniformément.",
+      "Ils se réchauffent bien dans les bols, wraps et ragoûts sans se dessécher."
+     ],
+     "q": "As-tu déjà cuisiné des hauts de cuisse, ou surtout du blanc ?",
+     "c": "Rôtis une plaque de hauts de cuisse et utilise-les dans deux repas cette semaine."
+    },
+    "it": {
+     "t": "Sovracosce di pollo",
+     "g": "Scoprire perché le sovracosce sono un taglio che perdona e resta morbido quando lo riscaldi.",
+     "p": [
+      "Hanno un po' più di grasso, quindi restano tenere anche se cuociono un po' di più.",
+      "Al forno, alla griglia o in padella; disossate cuociono in fretta e in modo uniforme.",
+      "Si riscaldano bene in bowl, wrap e stufati senza seccarsi."
+     ],
+     "q": "Hai mai cucinato le sovracosce o di solito il petto?",
+     "c": "Cuoci al forno una teglia di sovracosce e usale in due pasti diversi questa settimana."
+    },
+    "pt": {
+     "t": "Coxas de frango para meal prep",
+     "g": "Descobrir porque as coxas são um corte que perdoa e fica suculento ao reaquecer.",
+     "p": [
+      "As coxas têm um pouco mais de gordura e ficam tenras mesmo cozinhadas mais tempo.",
+      "Assa, grelha ou salteia; desossadas cozinham depressa e por igual.",
+      "Reaquecem bem em taças, wraps e guisados sem secar."
+     ],
+     "q": "Já cozinhaste coxas de frango ou sobretudo peito?",
+     "c": "Assa um tabuleiro de coxas e usa-as em duas refeições diferentes esta semana."
+    },
+    "pt_BR": {
+     "t": "Sobrecoxa de frango para marmita",
+     "g": "Descobrir por que a sobrecoxa é um corte que perdoa e continua suculenta ao esquentar.",
+     "p": [
+      "A sobrecoxa tem um pouco mais de gordura e fica macia mesmo cozinhando um pouco mais.",
+      "Asse, grelhe ou faça na frigideira; sem osso ela cozinha rápido e por igual.",
+      "Esquenta bem em bowls, wraps e ensopados sem ressecar."
+     ],
+     "q": "Você já fez sobrecoxa ou costuma fazer peito?",
+     "c": "Asse uma assadeira de sobrecoxas e use em duas refeições diferentes nesta semana."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shredded chicken many ways",
+     "g": "Poach or slow cook chicken and shred it for wraps, bowls and soups.",
+     "p": [
+      "Gently simmer chicken in water or stock with herbs until fully cooked.",
+      "Shred it with two forks while warm, then cool it quickly.",
+      "Keep it plain so it can become tacos, salads, soup or pasta during the week."
+     ],
+     "q": "What three meals could you make from one batch of shredded chicken?",
+     "c": "Poach and shred one batch of chicken and plan three meals that use it."
+    },
+    "de": {
+     "t": "Zupfhähnchen auf viele Arten",
+     "g": "Gare Hähnchen sanft oder im Schongarer und zupfe es für Wraps, Bowls und Suppen.",
+     "p": [
+      "Hähnchen sanft in Wasser oder Brühe mit Kräutern köcheln, bis es ganz gar ist.",
+      "Noch warm mit zwei Gabeln zerzupfen und dann schnell abkühlen lassen.",
+      "Neutral lassen, damit es unter der Woche zu Tacos, Salat, Suppe oder Pasta wird."
+     ],
+     "q": "Welche drei Gerichte könntest du aus einer Portion Zupfhähnchen machen?",
+     "c": "Gare und zupfe eine Portion Hähnchen und plane drei Gerichte damit."
+    },
+    "es": {
+     "t": "Pollo desmechado de mil formas",
+     "g": "Escalfar o cocinar lento el pollo y desmecharlo para wraps, bowls y sopas.",
+     "p": [
+      "Cuece el pollo a fuego suave en agua o caldo con hierbas hasta que esté bien hecho.",
+      "Desmenúzalo con dos tenedores aún templado y luego enfríalo rápido.",
+      "Déjalo neutro para convertirlo en tacos, ensaladas, sopa o pasta durante la semana."
+     ],
+     "q": "¿Qué tres comidas podrías hacer con una tanda de pollo desmechado?",
+     "c": "Cuece y desmecha una tanda de pollo y planifica tres comidas con él."
+    },
+    "fr": {
+     "t": "Poulet effiloché de mille façons",
+     "g": "Pocher ou cuire lentement du poulet et l'effilocher pour wraps, bols et soupes.",
+     "p": [
+      "Fais frémir le poulet dans de l'eau ou du bouillon avec des herbes jusqu'à cuisson complète.",
+      "Effiloche-le à la fourchette encore tiède, puis refroidis-le rapidement.",
+      "Garde-le nature pour en faire tacos, salades, soupe ou pâtes dans la semaine."
+     ],
+     "q": "Quels trois repas pourrais-tu faire avec une fournée de poulet effiloché ?",
+     "c": "Poche et effiloche une fournée de poulet et prévois trois repas avec."
+    },
+    "it": {
+     "t": "Pollo sfilacciato in tanti modi",
+     "g": "Cuocere il pollo in camicia o a lungo e sfilacciarlo per wrap, bowl e zuppe.",
+     "p": [
+      "Fai sobbollire il pollo in acqua o brodo con erbe finché è cotto del tutto.",
+      "Sfilaccialo con due forchette ancora tiepido, poi raffreddalo in fretta.",
+      "Lascialo semplice così diventa tacos, insalate, zuppa o pasta durante la settimana."
+     ],
+     "q": "Quali tre pasti potresti fare con una porzione di pollo sfilacciato?",
+     "c": "Cuoci e sfilaccia una porzione di pollo e pianifica tre pasti con quello."
+    },
+    "pt": {
+     "t": "Frango desfiado de muitas formas",
+     "g": "Escalfar ou cozinhar lentamente o frango e desfiá-lo para wraps, taças e sopas.",
+     "p": [
+      "Coze o frango em lume brando em água ou caldo com ervas até estar bem cozinhado.",
+      "Desfia-o com dois garfos ainda morno e depois arrefece-o depressa.",
+      "Deixa-o simples para virar tacos, saladas, sopa ou massa durante a semana."
+     ],
+     "q": "Que três refeições podias fazer com uma dose de frango desfiado?",
+     "c": "Coze e desfia uma dose de frango e planeia três refeições com ele."
+    },
+    "pt_BR": {
+     "t": "Frango desfiado de vários jeitos",
+     "g": "Cozinhar o frango em fogo baixo ou na panela lenta e desfiar para wraps, bowls e sopas.",
+     "p": [
+      "Cozinhe o frango em fogo baixo em água ou caldo com ervas até ficar bem cozido.",
+      "Desfie com dois garfos ainda morno e depois esfrie rápido.",
+      "Deixe simples para virar taco, salada, sopa ou macarrão durante a semana."
+     ],
+     "q": "Que três refeições você faria com uma leva de frango desfiado?",
+     "c": "Cozinhe e desfie uma leva de frango e planeje três refeições com ele."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking minced meat in batches",
+     "g": "Brown beef, pork or turkey mince in a batch for tacos, sauces and bowls.",
+     "p": [
+      "Use a hot, wide pan and do not crowd it, so the meat browns instead of steaming.",
+      "Break it up as it cooks and make sure no pink remains.",
+      "Season lightly, cool quickly and split into portions for different dishes."
+     ],
+     "q": "Which dish do you most often make with minced meat?",
+     "c": "Brown one batch of mince and turn half into tacos and half into a pasta sauce."
+    },
+    "de": {
+     "t": "Hackfleisch auf Vorrat braten",
+     "g": "Brate Rind-, Schweine- oder Putenhack auf Vorrat für Tacos, Soßen und Bowls an.",
+     "p": [
+      "Nimm eine heiße, breite Pfanne und überfüll sie nicht, damit das Fleisch bräunt statt dünstet.",
+      "Beim Braten zerkleinern und darauf achten, dass nichts mehr rosa ist.",
+      "Leicht würzen, schnell abkühlen und für verschiedene Gerichte portionieren."
+     ],
+     "q": "Welches Gericht machst du am häufigsten mit Hackfleisch?",
+     "c": "Brate eine Portion Hack an und mach aus einer Hälfte Tacos, aus der anderen Nudelsoße."
+    },
+    "es": {
+     "t": "Carne picada en grandes cantidades",
+     "g": "Dorar carne picada de ternera, cerdo o pavo en cantidad para tacos, salsas y bowls.",
+     "p": [
+      "Usa una sartén amplia y bien caliente sin llenarla, para que la carne se dore y no se cueza.",
+      "Desmenúzala mientras se hace y asegúrate de que no quede nada rosa.",
+      "Sazona ligero, enfría rápido y reparte en raciones para distintos platos."
+     ],
+     "q": "¿Qué plato haces más a menudo con carne picada?",
+     "c": "Dora una tanda de carne picada y convierte la mitad en tacos y la otra en salsa para pasta."
+    },
+    "fr": {
+     "t": "Viande hachée en grande quantité",
+     "g": "Faire revenir du bœuf, du porc ou de la dinde hachés en quantité pour tacos, sauces et bols.",
+     "p": [
+      "Utilise une grande poêle bien chaude sans la surcharger, pour dorer la viande et non la bouillir.",
+      "Émiette-la pendant la cuisson et vérifie qu'il ne reste rien de rose.",
+      "Assaisonne légèrement, refroidis vite et répartis en portions pour divers plats."
+     ],
+     "q": "Quel plat prépares-tu le plus souvent avec de la viande hachée ?",
+     "c": "Fais revenir une fournée de haché : une moitié en tacos, l'autre en sauce pour pâtes."
+    },
+    "it": {
+     "t": "Macinato in grandi quantità",
+     "g": "Rosolare macinato di manzo, maiale o tacchino in quantità per tacos, sughi e bowl.",
+     "p": [
+      "Usa una padella larga e ben calda senza riempirla troppo, così la carne rosola e non bolle.",
+      "Sgranala durante la cottura e assicurati che non resti nulla di rosa.",
+      "Condisci poco, raffredda in fretta e dividi in porzioni per piatti diversi."
+     ],
+     "q": "Quale piatto prepari più spesso con il macinato?",
+     "c": "Rosola una porzione di macinato: metà in tacos e metà in un sugo per la pasta."
+    },
+    "pt": {
+     "t": "Carne picada em quantidade",
+     "g": "Alourar carne picada de vaca, porco ou peru em quantidade para tacos, molhos e taças.",
+     "p": [
+      "Usa uma frigideira larga e bem quente sem a encher, para a carne alourar e não cozer.",
+      "Desfaz a carne enquanto cozinha e garante que não fica nada rosado.",
+      "Tempera pouco, arrefece depressa e divide em porções para pratos diferentes."
+     ],
+     "q": "Que prato fazes mais vezes com carne picada?",
+     "c": "Aloura uma dose de carne picada: metade para tacos e metade para molho de massa."
+    },
+    "pt_BR": {
+     "t": "Carne moída em grande quantidade",
+     "g": "Dourar carne moída de boi, porco ou peru em quantidade para tacos, molhos e bowls.",
+     "p": [
+      "Use uma frigideira larga e bem quente sem lotar, para a carne dourar e não cozinhar no vapor.",
+      "Solte a carne enquanto cozinha e garanta que não fique nada rosado.",
+      "Tempere pouco, esfrie rápido e divida em porções para pratos diferentes."
+     ],
+     "q": "Que prato você mais faz com carne moída?",
+     "c": "Doure uma leva de carne moída: metade vira taco e metade vira molho de macarrão."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking dried beans",
+     "g": "Soak, simmer and freeze dried beans as an affordable, filling protein.",
+     "p": [
+      "Soak beans overnight in plenty of water, then drain and rinse them.",
+      "Simmer in fresh water until tender; red kidney beans need a hard boil for 10 minutes first.",
+      "Freeze cooked beans in portions with a little cooking liquid for later."
+     ],
+     "q": "Do you usually buy beans dried or canned?",
+     "c": "Soak a bag of dried beans tonight and cook them tomorrow in a big pot."
+    },
+    "de": {
+     "t": "Getrocknete Bohnen kochen",
+     "g": "Weiche getrocknete Bohnen ein, koche und friere sie als günstiges, sättigendes Eiweiß ein.",
+     "p": [
+      "Bohnen über Nacht in viel Wasser einweichen, dann abgießen und abspülen.",
+      "In frischem Wasser weich köcheln; rote Kidneybohnen erst 10 Minuten sprudelnd kochen.",
+      "Gekochte Bohnen portionsweise mit etwas Kochwasser einfrieren."
+     ],
+     "q": "Kaufst du Bohnen meist getrocknet oder aus der Dose?",
+     "c": "Weiche heute Abend eine Packung Bohnen ein und koch sie morgen in einem großen Topf."
+    },
+    "es": {
+     "t": "Cocinar legumbres secas",
+     "g": "Remojar, cocer y congelar legumbres secas como una proteína económica y saciante.",
+     "p": [
+      "Pon las alubias en remojo toda la noche en mucha agua, luego escúrrelas y enjuágalas.",
+      "Cuécelas en agua nueva hasta que estén tiernas; las alubias rojas necesitan 10 minutos de hervor fuerte antes.",
+      "Congela las legumbres cocidas en raciones con algo de su caldo."
+     ],
+     "q": "¿Sueles comprar las legumbres secas o en bote?",
+     "c": "Pon en remojo un paquete de legumbres esta noche y cuécelas mañana en una olla grande."
+    },
+    "fr": {
+     "t": "Cuire les légumineuses sèches",
+     "g": "Faire tremper, cuire et congeler des haricots secs, une protéine économique et rassasiante.",
+     "p": [
+      "Fais tremper les haricots toute une nuit dans beaucoup d'eau, puis égoutte et rince.",
+      "Cuis-les dans de l'eau neuve jusqu'à tendreté ; les haricots rouges doivent d'abord bouillir 10 minutes.",
+      "Congèle les haricots cuits en portions avec un peu de jus de cuisson."
+     ],
+     "q": "Achètes-tu plutôt les haricots secs ou en conserve ?",
+     "c": "Fais tremper un paquet de haricots secs ce soir et cuis-les demain dans une grande marmite."
+    },
+    "it": {
+     "t": "Cuocere i legumi secchi",
+     "g": "Mettere in ammollo, cuocere e congelare i legumi secchi, una proteina economica e saziante.",
+     "p": [
+      "Metti i fagioli in ammollo per una notte in tanta acqua, poi scolali e sciacquali.",
+      "Cuocili in acqua nuova finché sono teneri; i fagioli rossi vanno prima bolliti forte 10 minuti.",
+      "Congela i legumi cotti in porzioni con un po' della loro acqua."
+     ],
+     "q": "Di solito compri i legumi secchi o in scatola?",
+     "c": "Metti in ammollo un pacco di legumi stasera e cuocili domani in una pentola grande."
+    },
+    "pt": {
+     "t": "Cozinhar feijão seco",
+     "g": "Demolhar, cozer e congelar feijão seco, uma proteína económica e saciante.",
+     "p": [
+      "Põe o feijão de molho durante a noite em bastante água, depois escorre e passa por água.",
+      "Coze em água nova até ficar macio; o feijão encarnado precisa primeiro de 10 minutos a ferver bem.",
+      "Congela o feijão cozido em porções com um pouco do caldo."
+     ],
+     "q": "Costumas comprar feijão seco ou em lata?",
+     "c": "Põe de molho um pacote de feijão hoje à noite e coze-o amanhã numa panela grande."
+    },
+    "pt_BR": {
+     "t": "Cozinhando feijão seco",
+     "g": "Deixar de molho, cozinhar e congelar feijão seco, uma proteína barata e que sustenta.",
+     "p": [
+      "Deixe o feijão de molho durante a noite em bastante água, depois escorra e lave.",
+      "Cozinhe em água nova até ficar macio; o feijão vermelho precisa antes ferver forte por 10 minutos.",
+      "Congele o feijão cozido em porções com um pouco do caldo."
+     ],
+     "q": "Você costuma comprar feijão seco ou em lata?",
+     "c": "Deixe um pacote de feijão de molho hoje à noite e cozinhe amanhã numa panela grande."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lentils, quick and versatile",
+     "g": "Get to know red, green and brown lentils and how to use each in prepped meals.",
+     "p": [
+      "Lentils need no soaking and cook in about 15 to 30 minutes.",
+      "Red lentils turn soft and creamy, perfect for soups and dals.",
+      "Green and brown lentils hold their shape, great for salads and bowls."
+     ],
+     "q": "Have you cooked lentils before, and which colour did you use?",
+     "c": "Cook one pot of lentils and use them in a soup or a salad this week."
+    },
+    "de": {
+     "t": "Linsen, schnell und vielseitig",
+     "g": "Lerne rote, grüne und braune Linsen kennen und wie du sie im Meal Prep nutzt.",
+     "p": [
+      "Linsen müssen nicht eingeweicht werden und garen in etwa 15 bis 30 Minuten.",
+      "Rote Linsen werden weich und cremig, perfekt für Suppen und Dal.",
+      "Grüne und braune Linsen bleiben in Form, ideal für Salate und Bowls."
+     ],
+     "q": "Hast du schon Linsen gekocht, und welche Farbe war es?",
+     "c": "Koche einen Topf Linsen und nutze sie diese Woche in einer Suppe oder einem Salat."
+    },
+    "es": {
+     "t": "Lentejas, rápidas y versátiles",
+     "g": "Conocer las lentejas rojas, verdes y pardinas y cómo usar cada una en tus comidas.",
+     "p": [
+      "Las lentejas no necesitan remojo y se cuecen en unos 15 a 30 minutos.",
+      "Las rojas quedan blandas y cremosas, perfectas para sopas y dal.",
+      "Las verdes y pardinas mantienen la forma, ideales para ensaladas y bowls."
+     ],
+     "q": "¿Has cocinado lentejas alguna vez? ¿De qué color eran?",
+     "c": "Cuece una olla de lentejas y úsalas en una sopa o una ensalada esta semana."
+    },
+    "fr": {
+     "t": "Les lentilles, rapides et polyvalentes",
+     "g": "Découvrir les lentilles corail, vertes et brunes et comment utiliser chacune.",
+     "p": [
+      "Les lentilles n'ont pas besoin de trempage et cuisent en 15 à 30 minutes environ.",
+      "Les lentilles corail deviennent fondantes, parfaites pour soupes et dahls.",
+      "Les vertes et brunes gardent leur forme, idéales en salades et en bols."
+     ],
+     "q": "As-tu déjà cuisiné des lentilles, et de quelle couleur ?",
+     "c": "Cuis une casserole de lentilles et utilise-les dans une soupe ou une salade cette semaine."
+    },
+    "it": {
+     "t": "Lenticchie, veloci e versatili",
+     "g": "Conoscere le lenticchie rosse, verdi e marroni e come usarle nei pasti preparati.",
+     "p": [
+      "Le lenticchie non vanno messe in ammollo e cuociono in circa 15-30 minuti.",
+      "Le rosse diventano morbide e cremose, perfette per zuppe e dal.",
+      "Le verdi e marroni mantengono la forma, ottime per insalate e bowl."
+     ],
+     "q": "Hai mai cucinato le lenticchie, e di che colore erano?",
+     "c": "Cuoci una pentola di lenticchie e usale in una zuppa o un'insalata questa settimana."
+    },
+    "pt": {
+     "t": "Lentilhas, rápidas e versáteis",
+     "g": "Conhecer as lentilhas vermelhas, verdes e castanhas e como usar cada uma.",
+     "p": [
+      "As lentilhas não precisam de demolhar e cozem em cerca de 15 a 30 minutos.",
+      "As vermelhas ficam macias e cremosas, perfeitas para sopas e dhal.",
+      "As verdes e castanhas mantêm a forma, ótimas para saladas e taças."
+     ],
+     "q": "Já cozinhaste lentilhas, e de que cor eram?",
+     "c": "Coze uma panela de lentilhas e usa-as numa sopa ou salada esta semana."
+    },
+    "pt_BR": {
+     "t": "Lentilha, rápida e versátil",
+     "g": "Conhecer as lentilhas vermelha, verde e marrom e como usar cada uma nas marmitas.",
+     "p": [
+      "A lentilha não precisa ficar de molho e cozinha em cerca de 15 a 30 minutos.",
+      "A vermelha fica macia e cremosa, perfeita para sopas e dal.",
+      "A verde e a marrom mantêm a forma, ótimas para saladas e bowls."
+     ],
+     "q": "Você já cozinhou lentilha, e de que cor era?",
+     "c": "Cozinhe uma panela de lentilha e use numa sopa ou salada nesta semana."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chickpeas in many forms",
+     "g": "Turn chickpeas into roasted snacks, hummus and salads for the week.",
+     "p": [
+      "Roast dried, oiled chickpeas until crunchy for a snack or salad topping.",
+      "Blend chickpeas with tahini, lemon, garlic and a little water for hummus.",
+      "Mix them with chopped vegetables, herbs and dressing for a sturdy salad."
+     ],
+     "q": "Which way of eating chickpeas sounds best to you?",
+     "c": "Make one chickpea dish today: roasted chickpeas, hummus or a chickpea salad."
+    },
+    "de": {
+     "t": "Kichererbsen in vielen Formen",
+     "g": "Mach aus Kichererbsen geröstete Snacks, Hummus und Salate für die Woche.",
+     "p": [
+      "Trockene, geölte Kichererbsen knusprig rösten, als Snack oder Salat-Topping.",
+      "Mit Tahin, Zitrone, Knoblauch und etwas Wasser zu Hummus pürieren.",
+      "Mit gehacktem Gemüse, Kräutern und Dressing ergibt sich ein robuster Salat."
+     ],
+     "q": "Welche Art, Kichererbsen zu essen, klingt für dich am besten?",
+     "c": "Mach heute ein Kichererbsen-Gericht: geröstete Kichererbsen, Hummus oder Salat."
+    },
+    "es": {
+     "t": "Garbanzos de muchas formas",
+     "g": "Convertir los garbanzos en snacks tostados, hummus y ensaladas para la semana.",
+     "p": [
+      "Hornea garbanzos secos y untados en aceite hasta que crujan, para picar o como topping.",
+      "Tritura garbanzos con tahini, limón, ajo y un poco de agua para hacer hummus.",
+      "Mézclalos con verduras picadas, hierbas y aliño para una ensalada que aguanta."
+     ],
+     "q": "¿Qué forma de comer garbanzos te apetece más?",
+     "c": "Haz hoy un plato de garbanzos: tostados, hummus o en ensalada."
+    },
+    "fr": {
+     "t": "Les pois chiches sous toutes les formes",
+     "g": "Transformer les pois chiches en encas grillés, houmous et salades pour la semaine.",
+     "p": [
+      "Rôtis des pois chiches bien secs et huilés jusqu'à ce qu'ils croustillent.",
+      "Mixe-les avec tahini, citron, ail et un peu d'eau pour un houmous.",
+      "Mélange-les à des légumes coupés, des herbes et une sauce pour une salade qui tient."
+     ],
+     "q": "Quelle façon de manger les pois chiches te tente le plus ?",
+     "c": "Prépare aujourd'hui un plat de pois chiches : grillés, en houmous ou en salade."
+    },
+    "it": {
+     "t": "Ceci in tante forme",
+     "g": "Trasformare i ceci in snack tostati, hummus e insalate per la settimana.",
+     "p": [
+      "Tosta in forno ceci asciutti e unti d'olio finché diventano croccanti.",
+      "Frulla i ceci con tahina, limone, aglio e un po' d'acqua per fare l'hummus.",
+      "Mescolali con verdure tagliate, erbe e condimento per un'insalata che dura."
+     ],
+     "q": "Quale modo di mangiare i ceci ti ispira di più?",
+     "c": "Prepara oggi un piatto di ceci: tostati, hummus o insalata."
+    },
+    "pt": {
+     "t": "Grão-de-bico de muitas formas",
+     "g": "Transformar grão-de-bico em snacks tostados, húmus e saladas para a semana.",
+     "p": [
+      "Assa grão bem seco e com um fio de azeite até ficar estaladiço.",
+      "Tritura grão com tahini, limão, alho e um pouco de água para fazer húmus.",
+      "Mistura-o com legumes picados, ervas e molho para uma salada que aguenta."
+     ],
+     "q": "Que forma de comer grão-de-bico te apetece mais?",
+     "c": "Faz hoje um prato de grão: tostado, húmus ou salada."
+    },
+    "pt_BR": {
+     "t": "Grão-de-bico de vários jeitos",
+     "g": "Transformar grão-de-bico em petiscos assados, homus e saladas para a semana.",
+     "p": [
+      "Asse grão-de-bico bem seco com um fio de azeite até ficar crocante.",
+      "Bata o grão com tahine, limão, alho e um pouco de água para fazer homus.",
+      "Misture com legumes picados, ervas e molho para uma salada que dura."
+     ],
+     "q": "Qual jeito de comer grão-de-bico parece mais gostoso para você?",
+     "c": "Faça hoje um prato de grão-de-bico: assado, homus ou salada."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tofu for meal prep",
+     "g": "Press, bake and season tofu so it stays firm and full of flavour all week.",
+     "p": [
+      "Choose firm or extra-firm tofu and press out water with a towel and a weight.",
+      "Cut into cubes, toss with oil, soy sauce and starch, then bake until golden.",
+      "Baked tofu keeps well in the fridge and soaks up sauces in bowls and stir-fries."
+     ],
+     "q": "Have you ever tried tofu, and what did you think?",
+     "c": "Press and bake one block of tofu and add it to a bowl or salad this week."
+    },
+    "de": {
+     "t": "Tofu fürs Meal Prep",
+     "g": "Presse, backe und würze Tofu, damit er die ganze Woche fest und aromatisch bleibt.",
+     "p": [
+      "Nimm festen Tofu und drück das Wasser mit einem Tuch und etwas Schwerem heraus.",
+      "In Würfel schneiden, mit Öl, Sojasoße und Stärke mischen und goldbraun backen.",
+      "Gebackener Tofu hält gut im Kühlschrank und nimmt in Bowls und Pfannen Soßen auf."
+     ],
+     "q": "Hast du schon mal Tofu probiert, und wie fandest du ihn?",
+     "c": "Presse und backe einen Block Tofu und gib ihn diese Woche in eine Bowl oder einen Salat."
+    },
+    "es": {
+     "t": "Tofu para meal prep",
+     "g": "Prensar, hornear y sazonar el tofu para que siga firme y sabroso toda la semana.",
+     "p": [
+      "Elige tofu firme y sácale el agua con un paño y algo de peso encima.",
+      "Córtalo en dados, mézclalo con aceite, salsa de soja y almidón y hornéalo hasta dorar.",
+      "El tofu horneado aguanta bien en la nevera y absorbe salsas en bowls y salteados."
+     ],
+     "q": "¿Has probado el tofu alguna vez? ¿Qué te pareció?",
+     "c": "Prensa y hornea un bloque de tofu y añádelo a un bowl o ensalada esta semana."
+    },
+    "fr": {
+     "t": "Le tofu en meal prep",
+     "g": "Presser, cuire et assaisonner le tofu pour qu'il reste ferme et savoureux toute la semaine.",
+     "p": [
+      "Choisis un tofu ferme et presse-le dans un torchon sous un poids pour retirer l'eau.",
+      "Coupe-le en dés, mélange avec huile, sauce soja et fécule, puis fais dorer au four.",
+      "Le tofu cuit se garde bien au frigo et absorbe les sauces dans les bols et sautés."
+     ],
+     "q": "As-tu déjà goûté le tofu, et qu'en as-tu pensé ?",
+     "c": "Presse et cuis un bloc de tofu et ajoute-le à un bol ou une salade cette semaine."
+    },
+    "it": {
+     "t": "Il tofu nel meal prep",
+     "g": "Pressare, cuocere e insaporire il tofu perché resti sodo e gustoso tutta la settimana.",
+     "p": [
+      "Scegli tofu compatto e pressalo con un canovaccio e un peso per togliere l'acqua.",
+      "Taglialo a cubetti, condiscilo con olio, salsa di soia e amido e cuocilo in forno finché dorato.",
+      "Il tofu al forno si conserva bene in frigo e assorbe i sughi in bowl e saltati."
+     ],
+     "q": "Hai mai provato il tofu, e cosa ne pensi?",
+     "c": "Pressa e cuoci un panetto di tofu e aggiungilo a una bowl o un'insalata questa settimana."
+    },
+    "pt": {
+     "t": "Tofu para meal prep",
+     "g": "Prensar, assar e temperar o tofu para se manter firme e saboroso toda a semana.",
+     "p": [
+      "Escolhe tofu firme e tira-lhe a água com um pano e um peso por cima.",
+      "Corta em cubos, envolve em azeite, molho de soja e amido e assa até dourar.",
+      "O tofu assado aguenta bem no frigorífico e absorve molhos em taças e salteados."
+     ],
+     "q": "Já provaste tofu, e o que achaste?",
+     "c": "Prensa e assa um bloco de tofu e junta-o a uma taça ou salada esta semana."
+    },
+    "pt_BR": {
+     "t": "Tofu para marmita",
+     "g": "Prensar, assar e temperar o tofu para ele ficar firme e saboroso a semana toda.",
+     "p": [
+      "Escolha tofu firme e tire a água com um pano e um peso por cima.",
+      "Corte em cubos, misture com azeite, shoyu e amido e asse até dourar.",
+      "O tofu assado dura bem na geladeira e absorve molhos em bowls e refogados."
+     ],
+     "q": "Você já provou tofu, e o que achou?",
+     "c": "Prense e asse um bloco de tofu e coloque num bowl ou salada nesta semana."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fish in meal prep",
+     "g": "Learn which fish reheats well and how to bake simple salmon and white fish.",
+     "p": [
+      "Oily fish like salmon stays moist and reheats gently better than lean fish.",
+      "Bake fillets with oil, lemon and herbs until the flesh flakes easily.",
+      "Eat cooked fish within a couple of days, or enjoy it cold in salads and wraps."
+     ],
+     "q": "Do you prefer fish warm or cold in salads?",
+     "c": "Bake one fish fillet and eat it in a salad or bowl within the next two days."
+    },
+    "de": {
+     "t": "Fisch im Meal Prep",
+     "g": "Erfahre, welcher Fisch sich gut aufwärmen lässt und wie du Lachs und Weißfisch einfach backst.",
+     "p": [
+      "Fetter Fisch wie Lachs bleibt saftig und verträgt sanftes Aufwärmen besser als magerer.",
+      "Filets mit Öl, Zitrone und Kräutern backen, bis sich das Fleisch leicht zerteilen lässt.",
+      "Gegarten Fisch innerhalb von etwa zwei Tagen essen oder kalt in Salaten und Wraps genießen."
+     ],
+     "q": "Isst du Fisch lieber warm oder kalt im Salat?",
+     "c": "Backe ein Fischfilet und iss es in den nächsten zwei Tagen im Salat oder in einer Bowl."
+    },
+    "es": {
+     "t": "El pescado en el meal prep",
+     "g": "Saber qué pescado se recalienta bien y cómo hornear salmón y pescado blanco sencillos.",
+     "p": [
+      "El pescado azul como el salmón queda jugoso y se recalienta mejor que el blanco.",
+      "Hornea los filetes con aceite, limón y hierbas hasta que la carne se separe fácil.",
+      "Come el pescado cocinado en un par de días, o disfrútalo frío en ensaladas y wraps."
+     ],
+     "q": "¿Prefieres el pescado caliente o frío en ensalada?",
+     "c": "Hornea un filete de pescado y cómelo en una ensalada o bowl en los próximos dos días."
+    },
+    "fr": {
+     "t": "Le poisson en meal prep",
+     "g": "Savoir quel poisson se réchauffe bien et cuire simplement saumon et poisson blanc au four.",
+     "p": [
+      "Les poissons gras comme le saumon restent moelleux et se réchauffent mieux que les maigres.",
+      "Cuis les filets au four avec huile, citron et herbes jusqu'à ce que la chair s'effeuille.",
+      "Mange le poisson cuit sous deux jours environ, ou froid en salade et en wrap."
+     ],
+     "q": "Tu préfères le poisson chaud ou froid en salade ?",
+     "c": "Cuis un filet de poisson et mange-le en salade ou en bol dans les deux jours."
+    },
+    "it": {
+     "t": "Il pesce nel meal prep",
+     "g": "Sapere quale pesce si riscalda bene e come cuocere al forno salmone e pesce bianco.",
+     "p": [
+      "Il pesce grasso come il salmone resta morbido e si riscalda meglio di quello magro.",
+      "Cuoci i filetti con olio, limone ed erbe finché la polpa si sfalda facilmente.",
+      "Mangia il pesce cotto entro un paio di giorni, o freddo in insalate e wrap."
+     ],
+     "q": "Preferisci il pesce caldo o freddo nelle insalate?",
+     "c": "Cuoci un filetto di pesce e mangialo in un'insalata o una bowl entro due giorni."
+    },
+    "pt": {
+     "t": "O peixe no meal prep",
+     "g": "Saber que peixe reaquece bem e como assar salmão e peixe branco de forma simples.",
+     "p": [
+      "Peixes gordos como o salmão ficam suculentos e reaquecem melhor do que os magros.",
+      "Assa os filetes com azeite, limão e ervas até a carne lascar com facilidade.",
+      "Come o peixe cozinhado em cerca de dois dias, ou frio em saladas e wraps."
+     ],
+     "q": "Preferes o peixe quente ou frio em saladas?",
+     "c": "Assa um filete de peixe e come-o numa salada ou taça nos próximos dois dias."
+    },
+    "pt_BR": {
+     "t": "Peixe na marmita",
+     "g": "Saber qual peixe esquenta bem e como assar salmão e peixe branco de forma simples.",
+     "p": [
+      "Peixes gordos como o salmão ficam suculentos e esquentam melhor que os magros.",
+      "Asse os filés com azeite, limão e ervas até a carne soltar em lascas fácil.",
+      "Coma o peixe cozido em uns dois dias, ou frio em saladas e wraps."
+     ],
+     "q": "Você prefere peixe quente ou frio na salada?",
+     "c": "Asse um filé de peixe e coma numa salada ou bowl nos próximos dois dias."
+    }
+   }
+  }
+ ]
+}

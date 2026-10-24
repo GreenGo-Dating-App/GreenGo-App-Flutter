@@ -1,0 +1,835 @@
+{
+ "topic": "martial_arts",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a school",
+     "g": "Learn how to find a friendly, safe place to start training.",
+     "p": [
+      "Ask to watch a class first and notice how the teacher speaks to students.",
+      "A good school is clean, welcoming and puts safety and respect before anything else.",
+      "Students who look focused, smile and help each other are a great sign."
+     ],
+     "q": "What would make you feel welcome when walking into a new club for the first time?",
+     "c": "Make a short list of three things your ideal school would have."
+    },
+    "de": {
+     "t": "Eine Schule wählen",
+     "g": "Erfahre, wie du einen freundlichen, sicheren Ort für den Trainingsbeginn findest.",
+     "p": [
+      "Frag, ob du zuerst eine Stunde zuschauen darfst, und achte darauf, wie der Lehrer mit Schülern spricht.",
+      "Eine gute Schule ist sauber, einladend und stellt Sicherheit und Respekt an erste Stelle.",
+      "Schüler, die konzentriert sind, lächeln und einander helfen, sind ein tolles Zeichen."
+     ],
+     "q": "Was würde dir das Gefühl geben, willkommen zu sein, wenn du zum ersten Mal einen Verein betrittst?",
+     "c": "Schreib eine kurze Liste mit drei Dingen, die deine ideale Schule hätte."
+    },
+    "es": {
+     "t": "Elegir una escuela",
+     "g": "Aprende a encontrar un lugar amable y seguro para empezar a entrenar.",
+     "p": [
+      "Pide ver una clase primero y fíjate en cómo habla el maestro a los alumnos.",
+      "Una buena escuela es limpia, acogedora y pone la seguridad y el respeto por delante de todo.",
+      "Alumnos concentrados, sonrientes y que se ayudan entre sí son una gran señal."
+     ],
+     "q": "¿Qué te haría sentir bienvenido al entrar por primera vez en un club nuevo?",
+     "c": "Haz una lista corta con tres cosas que tendría tu escuela ideal."
+    },
+    "fr": {
+     "t": "Choisir une école",
+     "g": "Apprends à trouver un lieu accueillant et sûr pour commencer à t'entraîner.",
+     "p": [
+      "Demande à regarder un cours d'abord et observe comment le professeur parle aux élèves.",
+      "Une bonne école est propre, accueillante et place la sécurité et le respect avant tout.",
+      "Des élèves concentrés, souriants et qui s'entraident sont un excellent signe."
+     ],
+     "q": "Qu'est-ce qui te ferait sentir bienvenu en entrant pour la première fois dans un club ?",
+     "c": "Fais une courte liste de trois choses que ton école idéale aurait."
+    },
+    "it": {
+     "t": "Scegliere una scuola",
+     "g": "Impara a trovare un luogo accogliente e sicuro per iniziare ad allenarti.",
+     "p": [
+      "Chiedi di assistere prima a una lezione e osserva come il maestro parla agli allievi.",
+      "Una buona scuola è pulita, accogliente e mette sicurezza e rispetto prima di tutto.",
+      "Allievi concentrati, sorridenti e che si aiutano a vicenda sono un ottimo segno."
+     ],
+     "q": "Cosa ti farebbe sentire benvenuto entrando per la prima volta in un nuovo club?",
+     "c": "Fai una breve lista di tre cose che avrebbe la tua scuola ideale."
+    },
+    "pt": {
+     "t": "Escolher uma escola",
+     "g": "Aprende a encontrar um lugar simpático e seguro para começar a treinar.",
+     "p": [
+      "Pede para assistir primeiro a uma aula e repara em como o professor fala com os alunos.",
+      "Uma boa escola é limpa, acolhedora e põe a segurança e o respeito à frente de tudo.",
+      "Alunos concentrados, sorridentes e que se ajudam uns aos outros são um ótimo sinal."
+     ],
+     "q": "O que te faria sentir bem-vindo ao entrar pela primeira vez num clube novo?",
+     "c": "Faz uma lista curta com três coisas que a tua escola ideal teria."
+    },
+    "pt_BR": {
+     "t": "Escolhendo uma escola",
+     "g": "Aprenda a encontrar um lugar acolhedor e seguro para começar a treinar.",
+     "p": [
+      "Peça para assistir primeiro a uma aula e repare em como o professor fala com os alunos.",
+      "Uma boa escola é limpa, acolhedora e coloca a segurança e o respeito à frente de tudo.",
+      "Alunos focados, sorridentes e que se ajudam são um ótimo sinal."
+     ],
+     "q": "O que faria você se sentir bem-vindo ao entrar pela primeira vez numa academia nova?",
+     "c": "Faça uma lista curta com três coisas que sua escola ideal teria."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first class",
+     "g": "Know what usually happens in a first lesson and how to prepare.",
+     "p": [
+      "Most classes start with a bow, then a warm-up, basic techniques and a calm cool-down.",
+      "Wear comfortable sports clothes, bring water and arrive a little early to meet the teacher.",
+      "Nobody expects you to know anything: watching, listening and trying is perfect."
+     ],
+     "q": "How do you usually feel before trying something completely new?",
+     "c": "Picture your first class step by step, from arriving to the final bow, and smile at the thought."
+    },
+    "de": {
+     "t": "Deine erste Stunde",
+     "g": "Erfahre, was in einer ersten Stunde meist passiert und wie du dich vorbereitest.",
+     "p": [
+      "Die meisten Stunden beginnen mit einer Verbeugung, dann Aufwärmen, Grundtechniken und ruhigem Ausklang.",
+      "Trag bequeme Sportkleidung, nimm Wasser mit und komm etwas früher, um den Lehrer kennenzulernen.",
+      "Niemand erwartet, dass du etwas kannst: Zuschauen, Zuhören und Ausprobieren ist perfekt."
+     ],
+     "q": "Wie fühlst du dich normalerweise, bevor du etwas völlig Neues ausprobierst?",
+     "c": "Stell dir deine erste Stunde Schritt für Schritt vor, vom Ankommen bis zur letzten Verbeugung."
+    },
+    "es": {
+     "t": "Tu primera clase",
+     "g": "Conoce lo que suele pasar en una primera clase y cómo prepararte.",
+     "p": [
+      "La mayoría empieza con un saludo, sigue con calentamiento y técnica básica y acaba con una vuelta a la calma.",
+      "Lleva ropa deportiva cómoda, agua y llega un poco antes para conocer al maestro.",
+      "Nadie espera que sepas nada: mirar, escuchar e intentarlo es perfecto."
+     ],
+     "q": "¿Cómo te sientes normalmente antes de probar algo totalmente nuevo?",
+     "c": "Imagina tu primera clase paso a paso, desde que llegas hasta el saludo final, y sonríe al pensarlo."
+    },
+    "fr": {
+     "t": "Ton premier cours",
+     "g": "Sache ce qui se passe en général lors d'un premier cours et comment te préparer.",
+     "p": [
+      "La plupart des cours commencent par un salut, puis échauffement, techniques de base et retour au calme.",
+      "Porte une tenue de sport confortable, prends de l'eau et arrive un peu en avance pour rencontrer le prof.",
+      "Personne n'attend que tu saches quoi que ce soit : regarder, écouter et essayer, c'est parfait."
+     ],
+     "q": "Comment te sens-tu d'habitude avant d'essayer quelque chose de totalement nouveau ?",
+     "c": "Imagine ton premier cours étape par étape, de l'arrivée au salut final, et souris à cette idée."
+    },
+    "it": {
+     "t": "La tua prima lezione",
+     "g": "Scopri cosa succede di solito in una prima lezione e come prepararti.",
+     "p": [
+      "Quasi tutte le lezioni iniziano con un saluto, poi riscaldamento, tecniche di base e defaticamento.",
+      "Indossa abiti sportivi comodi, porta dell'acqua e arriva un po' prima per conoscere il maestro.",
+      "Nessuno si aspetta che tu sappia qualcosa: guardare, ascoltare e provare va benissimo."
+     ],
+     "q": "Come ti senti di solito prima di provare qualcosa di completamente nuovo?",
+     "c": "Immagina la tua prima lezione passo dopo passo, dall'arrivo al saluto finale, e sorridi al pensiero."
+    },
+    "pt": {
+     "t": "A tua primeira aula",
+     "g": "Fica a saber o que costuma acontecer numa primeira aula e como te preparares.",
+     "p": [
+      "A maioria das aulas começa com uma vénia, depois aquecimento, técnica básica e retorno à calma.",
+      "Usa roupa desportiva confortável, leva água e chega um pouco mais cedo para conhecer o professor.",
+      "Ninguém espera que saibas nada: observar, ouvir e experimentar é perfeito."
+     ],
+     "q": "Como te sentes normalmente antes de experimentar algo completamente novo?",
+     "c": "Imagina a tua primeira aula passo a passo, desde a chegada até à vénia final, e sorri ao pensar nisso."
+    },
+    "pt_BR": {
+     "t": "Sua primeira aula",
+     "g": "Saiba o que costuma acontecer numa primeira aula e como se preparar.",
+     "p": [
+      "A maioria das aulas começa com uma reverência, depois aquecimento, técnica básica e volta à calma.",
+      "Use roupa esportiva confortável, leve água e chegue um pouco antes para conhecer o professor.",
+      "Ninguém espera que você saiba nada: observar, ouvir e tentar é perfeito."
+     ],
+     "q": "Como você costuma se sentir antes de experimentar algo totalmente novo?",
+     "c": "Imagine sua primeira aula passo a passo, da chegada até a reverência final, e sorria ao pensar nisso."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions to ask a teacher",
+     "g": "Prepare friendly questions that help you choose the right class.",
+     "p": [
+      "Ask about the schedule, beginner classes and how new students are introduced.",
+      "Ask how safety is handled and how partner work is kept controlled and respectful.",
+      "Ask in general about fees and equipment, and what values the school cares about."
+     ],
+     "q": "Which question would matter most to you when visiting a school?",
+     "c": "Write your top five questions on a card or in your phone for a future visit."
+    },
+    "de": {
+     "t": "Fragen an einen Lehrer",
+     "g": "Bereite freundliche Fragen vor, die dir helfen, den richtigen Kurs zu wählen.",
+     "p": [
+      "Frag nach dem Stundenplan, Anfängerkursen und wie neue Schüler eingeführt werden.",
+      "Frag, wie auf Sicherheit geachtet wird und wie Partnerübungen kontrolliert und respektvoll bleiben.",
+      "Frag allgemein nach Beiträgen und Ausrüstung und welche Werte der Schule wichtig sind."
+     ],
+     "q": "Welche Frage wäre dir beim Besuch einer Schule am wichtigsten?",
+     "c": "Schreib deine fünf wichtigsten Fragen auf eine Karte oder ins Handy für einen späteren Besuch."
+    },
+    "es": {
+     "t": "Preguntas para un maestro",
+     "g": "Prepara preguntas amables que te ayuden a elegir la clase adecuada.",
+     "p": [
+      "Pregunta por el horario, las clases de iniciación y cómo se integra a los nuevos alumnos.",
+      "Pregunta cómo se cuida la seguridad y cómo el trabajo en pareja se mantiene controlado y respetuoso.",
+      "Pregunta en general por cuotas y material, y qué valores le importan a la escuela."
+     ],
+     "q": "¿Qué pregunta sería la más importante para ti al visitar una escuela?",
+     "c": "Escribe tus cinco preguntas principales en una tarjeta o en el móvil para una futura visita."
+    },
+    "fr": {
+     "t": "Questions à poser à un enseignant",
+     "g": "Prépare des questions aimables pour t'aider à choisir le bon cours.",
+     "p": [
+      "Renseigne-toi sur les horaires, les cours débutants et l'accueil des nouveaux élèves.",
+      "Demande comment la sécurité est assurée et comment le travail à deux reste contrôlé et respectueux.",
+      "Demande de façon générale les cotisations, l'équipement et les valeurs qui comptent pour l'école."
+     ],
+     "q": "Quelle question compterait le plus pour toi en visitant une école ?",
+     "c": "Note tes cinq questions principales sur une carte ou dans ton téléphone pour une prochaine visite."
+    },
+    "it": {
+     "t": "Domande da fare a un maestro",
+     "g": "Prepara domande gentili che ti aiutino a scegliere il corso giusto.",
+     "p": [
+      "Chiedi degli orari, dei corsi per principianti e di come vengono inseriti i nuovi allievi.",
+      "Chiedi come si cura la sicurezza e come il lavoro in coppia resta controllato e rispettoso.",
+      "Chiedi in generale di quote e attrezzatura e quali valori contano per la scuola."
+     ],
+     "q": "Quale domanda sarebbe più importante per te visitando una scuola?",
+     "c": "Scrivi le tue cinque domande principali su un foglietto o sul telefono per una prossima visita."
+    },
+    "pt": {
+     "t": "Perguntas para fazer a um professor",
+     "g": "Prepara perguntas simpáticas que te ajudem a escolher a aula certa.",
+     "p": [
+      "Pergunta pelos horários, pelas aulas para principiantes e por como os novos alunos são integrados.",
+      "Pergunta como se cuida da segurança e como o trabalho a pares se mantém controlado e respeitoso.",
+      "Pergunta em geral pelas quotas e pelo equipamento, e que valores a escola defende."
+     ],
+     "q": "Que pergunta seria a mais importante para ti ao visitar uma escola?",
+     "c": "Escreve as tuas cinco perguntas principais num cartão ou no telemóvel para uma visita futura."
+    },
+    "pt_BR": {
+     "t": "Perguntas para fazer a um professor",
+     "g": "Prepare perguntas gentis que ajudem você a escolher a aula certa.",
+     "p": [
+      "Pergunte sobre os horários, as turmas para iniciantes e como os novos alunos são recebidos.",
+      "Pergunte como a segurança é cuidada e como o trabalho em dupla se mantém controlado e respeitoso.",
+      "Pergunte de forma geral sobre mensalidade e equipamento, e quais valores a escola defende."
+     ],
+     "q": "Qual pergunta seria a mais importante para você ao visitar uma escola?",
+     "c": "Anote suas cinco perguntas principais num cartão ou no celular para uma visita futura."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warm-up routines",
+     "g": "Discover the joint rotations, light cardio and dynamic stretches common in class.",
+     "p": [
+      "Gentle circles of neck, shoulders, wrists, hips, knees and ankles prepare the joints.",
+      "Light jogging, skipping or jumping jacks raise the heart rate and warm the muscles.",
+      "Dynamic stretches, like leg swings, prepare the body for movement without forcing it."
+     ],
+     "q": "How do you usually warm up before exercise, if at all?",
+     "c": "Do a five-minute warm-up today: joint circles from head to ankles, then one minute of light jogging on the spot."
+    },
+    "de": {
+     "t": "Aufwärmroutinen",
+     "g": "Entdecke Gelenkkreisen, leichtes Ausdauertraining und dynamisches Dehnen, wie im Unterricht üblich.",
+     "p": [
+      "Sanftes Kreisen von Nacken, Schultern, Handgelenken, Hüften, Knien und Knöcheln bereitet die Gelenke vor.",
+      "Leichtes Joggen, Hopserlauf oder Hampelmänner erhöhen den Puls und wärmen die Muskeln.",
+      "Dynamisches Dehnen wie Beinschwingen bereitet den Körper auf Bewegung vor, ohne etwas zu erzwingen."
+     ],
+     "q": "Wie wärmst du dich normalerweise vor dem Sport auf, wenn überhaupt?",
+     "c": "Mach heute fünf Minuten Aufwärmen: Gelenkkreisen vom Kopf bis zu den Knöcheln, dann eine Minute Joggen auf der Stelle."
+    },
+    "es": {
+     "t": "Rutinas de calentamiento",
+     "g": "Descubre las rotaciones articulares, el cardio suave y los estiramientos dinámicos habituales en clase.",
+     "p": [
+      "Círculos suaves de cuello, hombros, muñecas, caderas, rodillas y tobillos preparan las articulaciones.",
+      "Trotar suave, saltar o hacer saltos de tijera eleva el pulso y calienta los músculos.",
+      "Los estiramientos dinámicos, como los balanceos de pierna, preparan el cuerpo sin forzarlo."
+     ],
+     "q": "¿Cómo sueles calentar antes de hacer ejercicio, si es que calientas?",
+     "c": "Haz hoy cinco minutos de calentamiento: círculos articulares de la cabeza a los tobillos y luego un minuto de trote en el sitio."
+    },
+    "fr": {
+     "t": "Routines d'échauffement",
+     "g": "Découvre les rotations articulaires, le cardio léger et les étirements dynamiques courants en cours.",
+     "p": [
+      "De doux cercles du cou, des épaules, des poignets, des hanches, des genoux et des chevilles préparent les articulations.",
+      "Un footing léger, des pas chassés ou des jumping jacks font monter le cœur et chauffent les muscles.",
+      "Les étirements dynamiques, comme les balancés de jambe, préparent le corps sans le forcer."
+     ],
+     "q": "Comment t'échauffes-tu d'habitude avant le sport, si tu le fais ?",
+     "c": "Fais cinq minutes d'échauffement aujourd'hui : cercles articulaires de la tête aux chevilles, puis une minute de course sur place."
+    },
+    "it": {
+     "t": "Routine di riscaldamento",
+     "g": "Scopri rotazioni articolari, cardio leggero e allungamenti dinamici tipici della lezione.",
+     "p": [
+      "Cerchi morbidi di collo, spalle, polsi, anche, ginocchia e caviglie preparano le articolazioni.",
+      "Corsa leggera, saltelli o jumping jack alzano il battito e scaldano i muscoli.",
+      "Gli allungamenti dinamici, come gli slanci delle gambe, preparano il corpo senza forzarlo."
+     ],
+     "q": "Come ti riscaldi di solito prima di fare sport, se lo fai?",
+     "c": "Fai oggi cinque minuti di riscaldamento: cerchi articolari dalla testa alle caviglie, poi un minuto di corsa sul posto."
+    },
+    "pt": {
+     "t": "Rotinas de aquecimento",
+     "g": "Descobre as rotações articulares, o cardio leve e os alongamentos dinâmicos comuns nas aulas.",
+     "p": [
+      "Círculos suaves de pescoço, ombros, pulsos, ancas, joelhos e tornozelos preparam as articulações.",
+      "Corrida leve, saltitos ou polichinelos aumentam o ritmo cardíaco e aquecem os músculos.",
+      "Os alongamentos dinâmicos, como balanços de perna, preparam o corpo sem o forçar."
+     ],
+     "q": "Como costumas aquecer antes de fazer exercício, se é que aqueces?",
+     "c": "Faz hoje cinco minutos de aquecimento: círculos articulares da cabeça aos tornozelos e depois um minuto de corrida no lugar."
+    },
+    "pt_BR": {
+     "t": "Rotinas de aquecimento",
+     "g": "Descubra as rotações articulares, o cardio leve e os alongamentos dinâmicos comuns nas aulas.",
+     "p": [
+      "Círculos suaves de pescoço, ombros, punhos, quadris, joelhos e tornozelos preparam as articulações.",
+      "Corrida leve, saltitos ou polichinelos aumentam os batimentos e aquecem os músculos.",
+      "Alongamentos dinâmicos, como balanços de perna, preparam o corpo sem forçar."
+     ],
+     "q": "Como você costuma aquecer antes de fazer exercício, se é que aquece?",
+     "c": "Faça hoje cinco minutos de aquecimento: círculos articulares da cabeça aos tornozelos e depois um minuto de corrida no lugar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling down",
+     "g": "Learn how gentle stretching and calm breathing close a session well.",
+     "p": [
+      "Slowing down gradually helps your heart rate and breathing return to normal.",
+      "Gentle, held stretches for legs, hips and back feel good after training; never bounce or force.",
+      "Many classes end with a moment of quiet sitting and a final bow."
+     ],
+     "q": "How do you usually unwind after a busy or active day?",
+     "c": "Spend three minutes today stretching gently and taking slow, deep breaths before bed."
+    },
+    "de": {
+     "t": "Abwärmen",
+     "g": "Lerne, wie sanftes Dehnen und ruhiges Atmen eine Einheit gut abschließen.",
+     "p": [
+      "Langsames Herunterfahren hilft Puls und Atmung, wieder normal zu werden.",
+      "Sanft gehaltene Dehnungen für Beine, Hüfte und Rücken tun nach dem Training gut; nie wippen oder zwingen.",
+      "Viele Stunden enden mit einem Moment stillen Sitzens und einer letzten Verbeugung."
+     ],
+     "q": "Wie entspannst du dich normalerweise nach einem vollen oder aktiven Tag?",
+     "c": "Nimm dir heute vor dem Schlafen drei Minuten, um sanft zu dehnen und langsam und tief zu atmen."
+    },
+    "es": {
+     "t": "Vuelta a la calma",
+     "g": "Aprende cómo los estiramientos suaves y la respiración tranquila cierran bien una sesión.",
+     "p": [
+      "Bajar el ritmo poco a poco ayuda a que el pulso y la respiración vuelvan a la normalidad.",
+      "Estiramientos suaves y mantenidos de piernas, caderas y espalda sientan bien; nunca rebotes ni fuerces.",
+      "Muchas clases terminan con un momento de silencio sentados y un saludo final."
+     ],
+     "q": "¿Cómo sueles relajarte después de un día ajetreado o activo?",
+     "c": "Dedica hoy tres minutos a estirar suavemente y respirar lento y profundo antes de dormir."
+    },
+    "fr": {
+     "t": "Le retour au calme",
+     "g": "Apprends comment des étirements doux et une respiration calme terminent bien une séance.",
+     "p": [
+      "Ralentir progressivement aide le cœur et la respiration à revenir à la normale.",
+      "Des étirements doux et tenus des jambes, des hanches et du dos font du bien ; sans à-coups ni forcer.",
+      "Beaucoup de cours se terminent par un moment assis en silence et un dernier salut."
+     ],
+     "q": "Comment te détends-tu d'habitude après une journée chargée ou active ?",
+     "c": "Prends trois minutes ce soir pour t'étirer doucement et respirer lentement et profondément avant de dormir."
+    },
+    "it": {
+     "t": "Il defaticamento",
+     "g": "Impara come allungamenti dolci e respiro calmo chiudono bene una sessione.",
+     "p": [
+      "Rallentare gradualmente aiuta battito e respiro a tornare normali.",
+      "Allungamenti dolci e mantenuti per gambe, anche e schiena fanno bene; mai molleggiare o forzare.",
+      "Molte lezioni finiscono con un momento seduti in silenzio e un saluto finale."
+     ],
+     "q": "Come ti rilassi di solito dopo una giornata piena o attiva?",
+     "c": "Dedica oggi tre minuti ad allungarti dolcemente e a respirare lento e profondo prima di dormire."
+    },
+    "pt": {
+     "t": "O retorno à calma",
+     "g": "Aprende como alongamentos suaves e respiração calma fecham bem uma sessão.",
+     "p": [
+      "Abrandar aos poucos ajuda o ritmo cardíaco e a respiração a voltarem ao normal.",
+      "Alongamentos suaves e mantidos de pernas, ancas e costas sabem bem; nunca dês balanços nem forces.",
+      "Muitas aulas terminam com um momento sentado em silêncio e uma vénia final."
+     ],
+     "q": "Como costumas descontrair depois de um dia cheio ou ativo?",
+     "c": "Dedica hoje três minutos a alongar suavemente e a respirar devagar e fundo antes de dormir."
+    },
+    "pt_BR": {
+     "t": "Volta à calma",
+     "g": "Aprenda como alongamentos suaves e respiração calma encerram bem uma sessão.",
+     "p": [
+      "Diminuir o ritmo aos poucos ajuda os batimentos e a respiração a voltarem ao normal.",
+      "Alongamentos suaves e mantidos de pernas, quadris e costas fazem bem; nunca balance nem force.",
+      "Muitas aulas terminam com um momento sentado em silêncio e uma reverência final."
+     ],
+     "q": "Como você costuma relaxar depois de um dia cheio ou ativo?",
+     "c": "Reserve hoje três minutos para alongar suavemente e respirar devagar e fundo antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing with movement",
+     "g": "Learn to exhale on effort and keep a steady, relaxed breath.",
+     "p": [
+      "A common rule is to breathe out during the effort of a movement and in as you return.",
+      "Holding your breath makes you tense; steady breathing keeps you relaxed and strong.",
+      "Breathing through the nose when calm helps keep a smooth, even rhythm."
+     ],
+     "q": "Do you notice your breathing when you exercise or feel stressed?",
+     "c": "Do ten slow squats or arm raises, breathing out on the way up and in on the way down."
+    },
+    "de": {
+     "t": "Atmen mit der Bewegung",
+     "g": "Lerne, bei Anstrengung auszuatmen und ruhig und entspannt weiterzuatmen.",
+     "p": [
+      "Eine gängige Regel: bei der Anstrengung ausatmen, beim Zurückkehren einatmen.",
+      "Luftanhalten macht verspannt; gleichmäßiges Atmen hält dich locker und kraftvoll.",
+      "In ruhigen Momenten durch die Nase zu atmen hilft, einen gleichmäßigen Rhythmus zu halten."
+     ],
+     "q": "Achtest du auf deine Atmung, wenn du Sport machst oder gestresst bist?",
+     "c": "Mach zehn langsame Kniebeugen oder Armheber: beim Hochgehen ausatmen, beim Senken einatmen."
+    },
+    "es": {
+     "t": "Respirar con el movimiento",
+     "g": "Aprende a exhalar en el esfuerzo y a mantener una respiración estable y relajada.",
+     "p": [
+      "Una regla común es soltar el aire durante el esfuerzo y tomarlo al volver.",
+      "Contener la respiración te tensa; respirar con regularidad te mantiene relajado y fuerte.",
+      "Respirar por la nariz en calma ayuda a mantener un ritmo suave y uniforme."
+     ],
+     "q": "¿Te fijas en tu respiración cuando haces ejercicio o estás estresado?",
+     "c": "Haz diez sentadillas lentas o elevaciones de brazos: suelta el aire al subir y tómalo al bajar."
+    },
+    "fr": {
+     "t": "Respirer avec le mouvement",
+     "g": "Apprends à expirer dans l'effort et à garder un souffle régulier et détendu.",
+     "p": [
+      "Une règle courante : expirer pendant l'effort et inspirer en revenant.",
+      "Retenir son souffle crée des tensions ; respirer régulièrement garde détendu et fort.",
+      "Respirer par le nez au calme aide à garder un rythme fluide et régulier."
+     ],
+     "q": "Fais-tu attention à ta respiration quand tu fais du sport ou que tu es stressé ?",
+     "c": "Fais dix squats lents ou montées de bras : expire en montant, inspire en descendant."
+    },
+    "it": {
+     "t": "Respirare con il movimento",
+     "g": "Impara a espirare nello sforzo e a mantenere un respiro regolare e rilassato.",
+     "p": [
+      "Una regola comune è espirare durante lo sforzo e inspirare tornando indietro.",
+      "Trattenere il fiato ti irrigidisce; respirare con regolarità ti mantiene rilassato e forte.",
+      "Respirare dal naso nei momenti calmi aiuta a tenere un ritmo fluido e uniforme."
+     ],
+     "q": "Fai caso al tuo respiro quando fai sport o sei sotto stress?",
+     "c": "Fai dieci squat lenti o sollevamenti delle braccia: espira salendo e inspira scendendo."
+    },
+    "pt": {
+     "t": "Respirar com o movimento",
+     "g": "Aprende a expirar no esforço e a manter uma respiração estável e relaxada.",
+     "p": [
+      "Uma regra comum é expirar durante o esforço do movimento e inspirar ao regressar.",
+      "Suster a respiração deixa-te tenso; respirar com regularidade mantém-te relaxado e forte.",
+      "Respirar pelo nariz em calma ajuda a manter um ritmo suave e regular."
+     ],
+     "q": "Reparas na tua respiração quando fazes exercício ou estás stressado?",
+     "c": "Faz dez agachamentos lentos ou elevações de braços: expira a subir e inspira a descer."
+    },
+    "pt_BR": {
+     "t": "Respirando com o movimento",
+     "g": "Aprenda a soltar o ar no esforço e a manter uma respiração estável e relaxada.",
+     "p": [
+      "Uma regra comum é soltar o ar durante o esforço do movimento e puxar ao voltar.",
+      "Prender a respiração deixa você tenso; respirar com regularidade mantém você relaxado e forte.",
+      "Respirar pelo nariz nos momentos calmos ajuda a manter um ritmo suave e regular."
+     ],
+     "q": "Você presta atenção na sua respiração quando faz exercício ou fica estressado?",
+     "c": "Faça dez agachamentos lentos ou elevações de braços: solte o ar ao subir e puxe ao descer."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kiai and the voice",
+     "g": "Discover the short shout in Japanese arts and what it is said to express.",
+     "p": [
+      "Kiai combines ki, energy or spirit, and ai, meeting or union.",
+      "It is a short, strong sound from the belly that tightens the core and focuses the mind.",
+      "It also expresses spirit and confidence, and helps students exhale fully on effort."
+     ],
+     "q": "Have you ever used your voice to give yourself energy or courage?",
+     "c": "In a private place, try one strong breath out from the belly with a short sound, feeling your core engage."
+    },
+    "de": {
+     "t": "Kiai und die Stimme",
+     "g": "Entdecke den kurzen Ruf in japanischen Künsten und was er ausdrücken soll.",
+     "p": [
+      "Kiai verbindet Ki, Energie oder Geist, und Ai, Begegnung oder Einheit.",
+      "Es ist ein kurzer, kräftiger Laut aus dem Bauch, der die Körpermitte spannt und den Geist sammelt.",
+      "Er drückt auch Entschlossenheit aus und hilft, bei Anstrengung vollständig auszuatmen."
+     ],
+     "q": "Hast du schon einmal deine Stimme genutzt, um dir Energie oder Mut zu geben?",
+     "c": "Probier an einem ruhigen Ort einen kräftigen Atemstoß aus dem Bauch mit kurzem Laut und spür die Körpermitte."
+    },
+    "es": {
+     "t": "El kiai y la voz",
+     "g": "Descubre el grito corto de las artes japonesas y lo que se dice que expresa.",
+     "p": [
+      "Kiai une ki, energía o espíritu, y ai, encuentro o unión.",
+      "Es un sonido corto y fuerte desde el vientre que activa el abdomen y concentra la mente.",
+      "También expresa espíritu y confianza, y ayuda a soltar todo el aire en el esfuerzo."
+     ],
+     "q": "¿Alguna vez usaste tu voz para darte energía o valor?",
+     "c": "En un lugar tranquilo, prueba a soltar el aire con fuerza desde el vientre con un sonido corto y nota cómo se activa el abdomen."
+    },
+    "fr": {
+     "t": "Le kiai et la voix",
+     "g": "Découvre le cri bref des arts japonais et ce qu'il est censé exprimer.",
+     "p": [
+      "Kiai réunit ki, énergie ou esprit, et ai, rencontre ou union.",
+      "C'est un son bref et fort venu du ventre, qui gaine le centre du corps et concentre l'esprit.",
+      "Il exprime aussi la détermination et aide à expirer complètement dans l'effort."
+     ],
+     "q": "As-tu déjà utilisé ta voix pour te donner de l'énergie ou du courage ?",
+     "c": "Dans un endroit tranquille, essaie une expiration forte depuis le ventre avec un son bref, en sentant ton centre se gainer."
+    },
+    "it": {
+     "t": "Il kiai e la voce",
+     "g": "Scopri il breve grido delle arti giapponesi e cosa si dice esprima.",
+     "p": [
+      "Kiai unisce ki, energia o spirito, e ai, incontro o unione.",
+      "È un suono breve e forte dalla pancia che attiva il centro del corpo e concentra la mente.",
+      "Esprime anche determinazione e aiuta a espirare completamente nello sforzo."
+     ],
+     "q": "Hai mai usato la voce per darti energia o coraggio?",
+     "c": "In un posto tranquillo, prova una forte espirazione dalla pancia con un suono breve, sentendo il centro del corpo attivarsi."
+    },
+    "pt": {
+     "t": "O kiai e a voz",
+     "g": "Descobre o grito curto das artes japonesas e o que se diz que exprime.",
+     "p": [
+      "Kiai junta ki, energia ou espírito, e ai, encontro ou união.",
+      "É um som curto e forte vindo da barriga, que ativa o abdómen e concentra a mente.",
+      "Também exprime determinação e ajuda a expirar por completo no esforço."
+     ],
+     "q": "Já alguma vez usaste a voz para te dar energia ou coragem?",
+     "c": "Num sítio tranquilo, experimenta uma expiração forte a partir da barriga com um som curto e sente o abdómen a ativar-se."
+    },
+    "pt_BR": {
+     "t": "O kiai e a voz",
+     "g": "Descubra o grito curto das artes japonesas e o que se diz que ele expressa.",
+     "p": [
+      "Kiai une ki, energia ou espírito, e ai, encontro ou união.",
+      "É um som curto e forte vindo da barriga, que ativa o abdômen e concentra a mente.",
+      "Também expressa determinação e ajuda a soltar todo o ar no esforço."
+     ],
+     "q": "Você já usou a voz para se dar energia ou coragem?",
+     "c": "Num lugar tranquilo, experimente soltar o ar com força a partir da barriga com um som curto e sinta o abdômen ativar."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic posture",
+     "g": "Learn the upright spine, relaxed shoulders and balanced base behind all technique.",
+     "p": [
+      "Imagine a thread gently lifting the top of your head so your spine stays long.",
+      "Keep shoulders relaxed and down, chest open and chin slightly tucked.",
+      "Feel your weight spread evenly through both feet, with knees soft, not locked."
+     ],
+     "q": "Where in your day could you check and improve your posture?",
+     "c": "Set three reminders today to check your posture: long spine, soft shoulders, even feet."
+    },
+    "de": {
+     "t": "Grundhaltung",
+     "g": "Lerne die aufrechte Wirbelsäule, lockere Schultern und stabile Basis hinter jeder Technik.",
+     "p": [
+      "Stell dir einen Faden vor, der deinen Scheitel sanft nach oben zieht, damit die Wirbelsäule lang bleibt.",
+      "Halte die Schultern locker und unten, die Brust offen und das Kinn leicht eingezogen.",
+      "Spür dein Gewicht gleichmäßig auf beiden Füßen, die Knie weich und nicht durchgestreckt."
+     ],
+     "q": "Wo in deinem Alltag könntest du deine Haltung überprüfen und verbessern?",
+     "c": "Stell dir heute drei Erinnerungen: lange Wirbelsäule, lockere Schultern, gleichmäßige Füße."
+    },
+    "es": {
+     "t": "La postura básica",
+     "g": "Aprende la columna erguida, los hombros relajados y la base equilibrada que sostienen toda técnica.",
+     "p": [
+      "Imagina un hilo que tira suavemente de la coronilla para que la columna se alargue.",
+      "Mantén los hombros relajados y bajos, el pecho abierto y la barbilla un poco recogida.",
+      "Siente el peso repartido por igual en ambos pies, con las rodillas flexibles, sin bloquear."
+     ],
+     "q": "¿En qué momento de tu día podrías revisar y mejorar tu postura?",
+     "c": "Pon hoy tres recordatorios para revisar tu postura: columna larga, hombros sueltos, pies parejos."
+    },
+    "fr": {
+     "t": "La posture de base",
+     "g": "Apprends la colonne droite, les épaules détendues et la base équilibrée qui soutiennent toute technique.",
+     "p": [
+      "Imagine un fil qui tire doucement le sommet de ta tête pour allonger la colonne.",
+      "Garde les épaules détendues et basses, la poitrine ouverte et le menton légèrement rentré.",
+      "Sens ton poids réparti sur les deux pieds, genoux souples et non verrouillés."
+     ],
+     "q": "À quel moment de ta journée pourrais-tu vérifier et améliorer ta posture ?",
+     "c": "Programme trois rappels aujourd'hui pour vérifier ta posture : dos long, épaules souples, pieds équilibrés."
+    },
+    "it": {
+     "t": "La postura di base",
+     "g": "Impara schiena dritta, spalle rilassate e base equilibrata alla base di ogni tecnica.",
+     "p": [
+      "Immagina un filo che tira dolcemente in alto la sommità della testa, così la colonna resta lunga.",
+      "Tieni le spalle rilassate e basse, il petto aperto e il mento leggermente rientrato.",
+      "Senti il peso distribuito su entrambi i piedi, con le ginocchia morbide, non bloccate."
+     ],
+     "q": "In quale momento della giornata potresti controllare e migliorare la tua postura?",
+     "c": "Metti oggi tre promemoria per controllare la postura: schiena lunga, spalle morbide, piedi equilibrati."
+    },
+    "pt": {
+     "t": "A postura básica",
+     "g": "Aprende a coluna direita, os ombros relaxados e a base equilibrada que sustentam toda a técnica.",
+     "p": [
+      "Imagina um fio a puxar suavemente o topo da cabeça para a coluna ficar comprida.",
+      "Mantém os ombros relaxados e em baixo, o peito aberto e o queixo ligeiramente recolhido.",
+      "Sente o peso distribuído pelos dois pés, com os joelhos soltos e não bloqueados."
+     ],
+     "q": "Em que momento do teu dia poderias verificar e melhorar a tua postura?",
+     "c": "Põe hoje três lembretes para verificar a postura: coluna comprida, ombros soltos, pés equilibrados."
+    },
+    "pt_BR": {
+     "t": "A postura básica",
+     "g": "Aprenda a coluna ereta, os ombros relaxados e a base equilibrada que sustentam toda técnica.",
+     "p": [
+      "Imagine um fio puxando suavemente o topo da cabeça para a coluna ficar alongada.",
+      "Mantenha os ombros relaxados e baixos, o peito aberto e o queixo levemente recolhido.",
+      "Sinta o peso distribuído nos dois pés, com os joelhos soltos e não travados."
+     ],
+     "q": "Em que momento do seu dia você poderia conferir e melhorar sua postura?",
+     "c": "Coloque hoje três lembretes para conferir a postura: coluna alongada, ombros soltos, pés equilibrados."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ready stance",
+     "g": "Learn to stand calmly at attention, ready to begin practice.",
+     "p": [
+      "In karate the ready position is called yoi, and in taekwondo it is called junbi.",
+      "Feet are about shoulder-width apart, fists or hands relaxed in front of the body.",
+      "The ready stance is as much mental as physical: calm, alert and focused."
+     ],
+     "q": "What helps you switch from a busy mind to a calm, ready state?",
+     "c": "Stand in a ready stance for one minute, breathing slowly, before starting a task today."
+    },
+    "de": {
+     "t": "Die Bereitschaftsstellung",
+     "g": "Lerne, ruhig und aufmerksam zu stehen, bereit für den Übungsbeginn.",
+     "p": [
+      "Im Karate heißt die Bereitschaftsstellung Yoi, im Taekwondo Junbi.",
+      "Die Füße stehen etwa schulterbreit, Fäuste oder Hände locker vor dem Körper.",
+      "Die Bereitschaftsstellung ist ebenso geistig wie körperlich: ruhig, wach und konzentriert."
+     ],
+     "q": "Was hilft dir, von einem vollen Kopf in einen ruhigen, bereiten Zustand zu wechseln?",
+     "c": "Steh vor einer Aufgabe heute eine Minute in der Bereitschaftsstellung und atme langsam."
+    },
+    "es": {
+     "t": "La posición de preparado",
+     "g": "Aprende a estar de pie con calma y atención, listo para empezar a practicar.",
+     "p": [
+      "En kárate la posición de preparado se llama yoi y en taekwondo, junbi.",
+      "Los pies quedan más o menos a la anchura de los hombros, con puños o manos relajados delante del cuerpo.",
+      "La posición de preparado es tan mental como física: calma, alerta y concentración."
+     ],
+     "q": "¿Qué te ayuda a pasar de una mente ajetreada a un estado tranquilo y preparado?",
+     "c": "Quédate un minuto en posición de preparado, respirando despacio, antes de empezar una tarea hoy."
+    },
+    "fr": {
+     "t": "La position de préparation",
+     "g": "Apprends à te tenir calmement attentif, prêt à commencer la pratique.",
+     "p": [
+      "En karaté, la position de préparation s'appelle yoi ; en taekwondo, junbi.",
+      "Les pieds sont à peu près à la largeur des épaules, poings ou mains détendus devant le corps.",
+      "Cette position est autant mentale que physique : calme, vigilant et concentré."
+     ],
+     "q": "Qu'est-ce qui t'aide à passer d'un esprit agité à un état calme et prêt ?",
+     "c": "Tiens-toi une minute en position de préparation, en respirant lentement, avant une tâche aujourd'hui."
+    },
+    "it": {
+     "t": "La posizione di pronti",
+     "g": "Impara a stare in piedi con calma e attenzione, pronto a iniziare la pratica.",
+     "p": [
+      "Nel karate la posizione di pronti si chiama yoi, nel taekwondo junbi.",
+      "I piedi sono circa alla larghezza delle spalle, pugni o mani rilassati davanti al corpo.",
+      "La posizione di pronti è mentale quanto fisica: calma, attenta e concentrata."
+     ],
+     "q": "Cosa ti aiuta a passare da una mente affollata a uno stato calmo e pronto?",
+     "c": "Resta un minuto nella posizione di pronti, respirando piano, prima di iniziare un compito oggi."
+    },
+    "pt": {
+     "t": "A posição de pronto",
+     "g": "Aprende a ficar de pé com calma e atenção, pronto para começar a praticar.",
+     "p": [
+      "No karaté a posição de pronto chama-se yoi e no taekwondo, junbi.",
+      "Os pés ficam mais ou menos à largura dos ombros, com punhos ou mãos relaxados à frente do corpo.",
+      "A posição de pronto é tão mental como física: calma, atenta e concentrada."
+     ],
+     "q": "O que te ajuda a passar de uma mente agitada para um estado calmo e pronto?",
+     "c": "Fica um minuto na posição de pronto, a respirar devagar, antes de começares uma tarefa hoje."
+    },
+    "pt_BR": {
+     "t": "A posição de pronto",
+     "g": "Aprenda a ficar em pé com calma e atenção, pronto para começar a praticar.",
+     "p": [
+      "No caratê a posição de pronto se chama yoi e no taekwondo, junbi.",
+      "Os pés ficam mais ou menos na largura dos ombros, com punhos ou mãos relaxados à frente do corpo.",
+      "A posição de pronto é tão mental quanto física: calma, alerta e focada."
+     ],
+     "q": "O que ajuda você a passar de uma mente agitada para um estado calmo e pronto?",
+     "c": "Fique um minuto na posição de pronto, respirando devagar, antes de começar uma tarefa hoje."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The natural stance",
+     "g": "Learn the relaxed, shoulder-width stance used in many arts.",
+     "p": [
+      "In Japanese arts the natural stance is often called shizentai, meaning natural body.",
+      "Feet are about shoulder-width apart, toes forward, knees soft and weight centred.",
+      "It is a relaxed starting point from which you can move easily in any direction."
+     ],
+     "q": "Do you stand balanced in daily life, or do you often lean on one leg?",
+     "c": "While brushing your teeth today, stand in a natural stance with your weight even on both feet."
+    },
+    "de": {
+     "t": "Der natürliche Stand",
+     "g": "Lerne den lockeren, schulterbreiten Stand, der in vielen Künsten genutzt wird.",
+     "p": [
+      "In japanischen Künsten heißt der natürliche Stand oft Shizentai, natürlicher Körper.",
+      "Die Füße stehen etwa schulterbreit, Zehen nach vorn, Knie weich, Gewicht in der Mitte.",
+      "Er ist ein entspannter Ausgangspunkt, von dem aus du dich leicht in jede Richtung bewegst."
+     ],
+     "q": "Stehst du im Alltag ausgeglichen, oder lehnst du dich oft auf ein Bein?",
+     "c": "Steh heute beim Zähneputzen im natürlichen Stand, das Gewicht gleichmäßig auf beiden Füßen."
+    },
+    "es": {
+     "t": "La posición natural",
+     "g": "Aprende la posición relajada, a la anchura de los hombros, que usan muchas artes.",
+     "p": [
+      "En las artes japonesas la posición natural se suele llamar shizentai, que significa cuerpo natural.",
+      "Pies a la anchura de los hombros, puntas al frente, rodillas flexibles y peso centrado.",
+      "Es un punto de partida relajado desde el que puedes moverte fácilmente en cualquier dirección."
+     ],
+     "q": "¿Te mantienes equilibrado en tu día a día o sueles apoyarte en una sola pierna?",
+     "c": "Mientras te lavas los dientes hoy, quédate en posición natural con el peso igual en ambos pies."
+    },
+    "fr": {
+     "t": "La position naturelle",
+     "g": "Apprends la position détendue, pieds à largeur d'épaules, utilisée dans beaucoup d'arts.",
+     "p": [
+      "Dans les arts japonais, la position naturelle s'appelle souvent shizentai, le corps naturel.",
+      "Pieds à largeur d'épaules, orteils vers l'avant, genoux souples et poids centré.",
+      "C'est un point de départ détendu d'où l'on peut bouger facilement dans toutes les directions."
+     ],
+     "q": "Dans la vie courante, te tiens-tu équilibré ou t'appuies-tu souvent sur une jambe ?",
+     "c": "En te brossant les dents aujourd'hui, tiens-toi en position naturelle, poids réparti sur les deux pieds."
+    },
+    "it": {
+     "t": "La posizione naturale",
+     "g": "Impara la posizione rilassata, alla larghezza delle spalle, usata in molte arti.",
+     "p": [
+      "Nelle arti giapponesi la posizione naturale si chiama spesso shizentai, corpo naturale.",
+      "Piedi alla larghezza delle spalle, punte in avanti, ginocchia morbide e peso al centro.",
+      "È un punto di partenza rilassato da cui puoi muoverti facilmente in ogni direzione."
+     ],
+     "q": "Nella vita quotidiana stai in equilibrio o ti appoggi spesso su una gamba sola?",
+     "c": "Mentre ti lavi i denti oggi, resta nella posizione naturale con il peso uguale su entrambi i piedi."
+    },
+    "pt": {
+     "t": "A posição natural",
+     "g": "Aprende a posição relaxada, à largura dos ombros, usada em muitas artes.",
+     "p": [
+      "Nas artes japonesas a posição natural chama-se muitas vezes shizentai, que significa corpo natural.",
+      "Pés à largura dos ombros, pontas para a frente, joelhos soltos e peso ao centro.",
+      "É um ponto de partida relaxado de onde te podes mover facilmente em qualquer direção."
+     ],
+     "q": "No dia a dia ficas equilibrado ou costumas apoiar-te só numa perna?",
+     "c": "Enquanto lavas os dentes hoje, fica na posição natural com o peso igual nos dois pés."
+    },
+    "pt_BR": {
+     "t": "A base natural",
+     "g": "Aprenda a base relaxada, na largura dos ombros, usada em muitas artes.",
+     "p": [
+      "Nas artes japonesas a base natural costuma se chamar shizentai, que significa corpo natural.",
+      "Pés na largura dos ombros, pontas para a frente, joelhos soltos e peso no centro.",
+      "É um ponto de partida relaxado de onde você pode se mover facilmente em qualquer direção."
+     ],
+     "q": "No dia a dia você fica equilibrado ou costuma se apoiar numa perna só?",
+     "c": "Enquanto escova os dentes hoje, fique na base natural com o peso igual nos dois pés."
+    }
+   }
+  }
+ ]
+}

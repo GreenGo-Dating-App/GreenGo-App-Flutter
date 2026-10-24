@@ -1,0 +1,835 @@
+{
+ "topic": "tennis",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Origins of tennis",
+     "g": "Travel from the French jeu de paume to lawn tennis in 19th-century England.",
+     "p": [
+      "Centuries ago in France, people played jeu de paume, the game of the palm, hitting the ball with their hand.",
+      "Rackets came later, and the word tennis probably comes from the French tenez, meaning here, take it.",
+      "In 1874 Major Walter Clopton Wingfield patented a lawn version, helped by new bouncy rubber balls and lawn mowers."
+     ],
+     "q": "Which do you find more surprising: the hand-hitting origins or the role of lawn mowers?",
+     "c": "Try saying tenez like a medieval player before your next serve or shadow swing."
+    },
+    "de": {
+     "t": "Ursprünge des Tennis",
+     "g": "Reise vom französischen Jeu de Paume zum Rasentennis im England des 19. Jahrhunderts.",
+     "p": [
+      "Vor Jahrhunderten spielte man in Frankreich Jeu de Paume, das Spiel mit der Handfläche.",
+      "Schläger kamen später, und das Wort Tennis stammt wohl vom französischen tenez, also: Hier, nimm!",
+      "1874 ließ Major Walter Clopton Wingfield eine Rasenversion patentieren, begünstigt durch Gummibälle und Rasenmäher."
+     ],
+     "q": "Was überrascht dich mehr: das Spiel mit der Hand oder die Rolle der Rasenmäher?",
+     "c": "Sag vor deinem nächsten Aufschlag oder Schattenschlag tenez wie ein Spieler aus dem Mittelalter."
+    },
+    "es": {
+     "t": "Los orígenes del tenis",
+     "g": "Viaja del jeu de paume francés al tenis sobre hierba de la Inglaterra del siglo XIX.",
+     "p": [
+      "Hace siglos, en Francia se jugaba al jeu de paume, el juego de la palma, golpeando la pelota con la mano.",
+      "Las raquetas llegaron después, y la palabra tenis viene probablemente del francés tenez, es decir, toma.",
+      "En 1874 el mayor Walter Clopton Wingfield patentó una versión sobre césped, gracias a pelotas de goma y cortacéspedes."
+     ],
+     "q": "¿Qué te sorprende más: que se jugara con la mano o el papel del cortacésped?",
+     "c": "Di tenez como un jugador medieval antes de tu próximo saque o golpe en sombra."
+    },
+    "fr": {
+     "t": "Les origines du tennis",
+     "g": "Voyage du jeu de paume français au tennis sur gazon de l'Angleterre du XIXe siècle.",
+     "p": [
+      "Il y a des siècles, en France, on jouait au jeu de paume, en frappant la balle avec la main.",
+      "Les raquettes sont venues ensuite, et le mot tennis viendrait du français « tenez ! », lancé avant de servir.",
+      "En 1874, le major Walter Clopton Wingfield brevète une version sur gazon, aidée par la balle en caoutchouc et la tondeuse."
+     ],
+     "q": "Qu'est-ce qui te surprend le plus : le jeu à main nue ou le rôle de la tondeuse ?",
+     "c": "Dis « tenez ! » comme un joueur d'antan avant ton prochain service ou geste à vide."
+    },
+    "it": {
+     "t": "Le origini del tennis",
+     "g": "Viaggia dalla jeu de paume francese al tennis su prato dell'Inghilterra dell'Ottocento.",
+     "p": [
+      "Secoli fa in Francia si giocava alla jeu de paume, il gioco del palmo, colpendo la palla con la mano.",
+      "Le racchette arrivarono dopo, e la parola tennis viene probabilmente dal francese tenez, cioè: tieni!",
+      "Nel 1874 il maggiore Walter Clopton Wingfield brevettò una versione su prato, grazie a palle di gomma e tosaerba."
+     ],
+     "q": "Cosa ti sorprende di più: il gioco a mani nude o il ruolo del tosaerba?",
+     "c": "Prima del prossimo servizio o colpo a vuoto, di' tenez come un giocatore d'altri tempi."
+    },
+    "pt": {
+     "t": "As origens do ténis",
+     "g": "Viaja do jeu de paume francês até ao ténis na relva da Inglaterra do século XIX.",
+     "p": [
+      "Há séculos, em França, jogava-se o jeu de paume, o jogo da palma, batendo a bola com a mão.",
+      "As raquetas vieram depois, e a palavra ténis vem provavelmente do francês tenez, ou seja: toma!",
+      "Em 1874 o major Walter Clopton Wingfield patenteou uma versão na relva, graças a bolas de borracha e corta-relvas."
+     ],
+     "q": "O que te surpreende mais: jogar com a mão ou o papel do corta-relva?",
+     "c": "Diz tenez como um jogador de antigamente antes do teu próximo serviço ou pancada no ar."
+    },
+    "pt_BR": {
+     "t": "As origens do tênis",
+     "g": "Viaje do jeu de paume francês até o tênis na grama da Inglaterra do século XIX.",
+     "p": [
+      "Há séculos, na França, jogava-se o jeu de paume, o jogo da palma, batendo na bola com a mão.",
+      "As raquetes vieram depois, e a palavra tênis provavelmente vem do francês tenez, ou seja: tome!",
+      "Em 1874 o major Walter Clopton Wingfield patenteou uma versão na grama, graças a bolas de borracha e cortadores de grama."
+     ],
+     "q": "O que surpreende mais você: jogar com a mão ou o papel do cortador de grama?",
+     "c": "Diga tenez como um jogador de antigamente antes do seu próximo saque ou golpe no ar."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wimbledon's beginning",
+     "g": "Meet the first Championships, held in 1877 at the All England Club.",
+     "p": [
+      "The All England Croquet Club added lawn tennis and held its first Championships in 1877 to pay for a roller.",
+      "Only men's singles was played that first year, and Spencer Gore won the title.",
+      "Women's singles followed in 1884, and Wimbledon is today the oldest tennis tournament in the world."
+     ],
+     "q": "Can you imagine a world-famous event starting to fund a lawn roller?",
+     "c": "Find out who your favourite retired player beat in their first Wimbledon final."
+    },
+    "de": {
+     "t": "Wimbledons Anfänge",
+     "g": "Lerne die ersten Championships kennen, ausgetragen 1877 im All England Club.",
+     "p": [
+      "Der All England Croquet Club nahm Rasentennis auf und veranstaltete 1877 die ersten Championships, um eine Walze zu finanzieren.",
+      "Im ersten Jahr gab es nur das Herreneinzel, Sieger war Spencer Gore.",
+      "1884 kam das Dameneinzel hinzu, und Wimbledon ist heute das älteste Tennisturnier der Welt."
+     ],
+     "q": "Kannst du dir vorstellen, dass ein Weltereignis begann, um eine Rasenwalze zu bezahlen?",
+     "c": "Finde heraus, wen dein Lieblingsspieler im Ruhestand in seinem ersten Wimbledon-Finale besiegt hat."
+    },
+    "es": {
+     "t": "Los inicios de Wimbledon",
+     "g": "Conoce los primeros Championships, celebrados en 1877 en el All England Club.",
+     "p": [
+      "El All England Croquet Club añadió el tenis sobre hierba y organizó su primer torneo en 1877 para pagar un rodillo.",
+      "Ese primer año solo se jugó el individual masculino, y lo ganó Spencer Gore.",
+      "El individual femenino llegó en 1884, y Wimbledon es hoy el torneo de tenis más antiguo del mundo."
+     ],
+     "q": "¿Te imaginas que un evento mundial empezara para pagar un rodillo de césped?",
+     "c": "Averigua a quién venció tu jugador retirado favorito en su primera final de Wimbledon."
+    },
+    "fr": {
+     "t": "Les débuts de Wimbledon",
+     "g": "Découvre les premiers Championships, disputés en 1877 à l'All England Club.",
+     "p": [
+      "L'All England Croquet Club ajoute le tennis sur gazon et organise ses premiers Championships en 1877 pour payer un rouleau.",
+      "Cette première année, seul le simple messieurs est disputé, et Spencer Gore l'emporte.",
+      "Le simple dames arrive en 1884, et Wimbledon est aujourd'hui le plus ancien tournoi de tennis du monde."
+     ],
+     "q": "Imagines-tu qu'un événement mondial soit né pour financer un rouleau à gazon ?",
+     "c": "Cherche qui ton joueur retraité préféré a battu lors de sa première finale à Wimbledon."
+    },
+    "it": {
+     "t": "Gli inizi di Wimbledon",
+     "g": "Scopri i primi Championships, disputati nel 1877 all'All England Club.",
+     "p": [
+      "L'All England Croquet Club aggiunse il tennis su prato e organizzò i primi Championships nel 1877 per pagare un rullo.",
+      "Il primo anno si giocò solo il singolare maschile, vinto da Spencer Gore.",
+      "Il singolare femminile arrivò nel 1884, e Wimbledon è oggi il torneo di tennis più antico del mondo."
+     ],
+     "q": "Ti immagini un evento mondiale nato per pagare un rullo da prato?",
+     "c": "Scopri chi ha battuto il tuo giocatore ritirato preferito nella sua prima finale a Wimbledon."
+    },
+    "pt": {
+     "t": "O início de Wimbledon",
+     "g": "Conhece os primeiros Championships, disputados em 1877 no All England Club.",
+     "p": [
+      "O All England Croquet Club juntou o ténis na relva e organizou o primeiro torneio em 1877 para pagar um rolo.",
+      "Nesse primeiro ano só houve singulares masculinos, e quem venceu foi Spencer Gore.",
+      "Os singulares femininos chegaram em 1884, e Wimbledon é hoje o torneio de ténis mais antigo do mundo."
+     ],
+     "q": "Consegues imaginar um evento mundial que começou para pagar um rolo de relva?",
+     "c": "Descobre quem o teu jogador retirado favorito venceu na sua primeira final de Wimbledon."
+    },
+    "pt_BR": {
+     "t": "O início de Wimbledon",
+     "g": "Conheça os primeiros Championships, disputados em 1877 no All England Club.",
+     "p": [
+      "O All England Croquet Club incluiu o tênis na grama e fez o primeiro torneio em 1877 para pagar um rolo compressor.",
+      "Naquele primeiro ano só houve simples masculino, e quem venceu foi Spencer Gore.",
+      "As simples femininas chegaram em 1884, e Wimbledon é hoje o torneio de tênis mais antigo do mundo."
+     ],
+     "q": "Dá para imaginar um evento mundial que começou para pagar um rolo de grama?",
+     "c": "Descubra quem seu jogador aposentado favorito venceu na primeira final dele em Wimbledon."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The four Grand Slams",
+     "g": "Get to know the four majors: Australian Open, Roland-Garros, Wimbledon and US Open.",
+     "p": [
+      "The Australian Open in January and the US Open in late summer are played on hard courts.",
+      "Roland-Garros in Paris is played on clay, from late May into June.",
+      "Wimbledon, on grass in London, follows a few weeks later, so players must adapt quickly between surfaces."
+     ],
+     "q": "Which Grand Slam would you most like to watch in person?",
+     "c": "Write the four Slams in calendar order with their surface, from memory."
+    },
+    "de": {
+     "t": "Die vier Grand Slams",
+     "g": "Lerne die vier Majors kennen: Australian Open, Roland-Garros, Wimbledon und US Open.",
+     "p": [
+      "Die Australian Open im Januar und die US Open im Spätsommer werden auf Hartplatz gespielt.",
+      "Roland-Garros in Paris wird auf Sand gespielt, von Ende Mai bis in den Juni.",
+      "Wimbledon auf Rasen in London folgt wenige Wochen später, die Spieler müssen sich also schnell umstellen."
+     ],
+     "q": "Welches Grand-Slam-Turnier würdest du am liebsten live sehen?",
+     "c": "Schreib die vier Slams aus dem Gedächtnis in Kalenderreihenfolge mit ihrem Belag auf."
+    },
+    "es": {
+     "t": "Los cuatro Grand Slams",
+     "g": "Conoce los cuatro grandes: Open de Australia, Roland Garros, Wimbledon y US Open.",
+     "p": [
+      "El Open de Australia, en enero, y el US Open, a finales del verano boreal, se juegan en pista dura.",
+      "Roland Garros, en París, se juega en tierra batida, de finales de mayo a junio.",
+      "Wimbledon, sobre hierba en Londres, llega pocas semanas después: hay que adaptarse rápido."
+     ],
+     "q": "¿Qué Grand Slam te gustaría más ver en directo?",
+     "c": "Escribe de memoria los cuatro Slams en orden del calendario con su superficie."
+    },
+    "fr": {
+     "t": "Les quatre Grands Chelems",
+     "g": "Découvre les quatre majeurs : Open d'Australie, Roland-Garros, Wimbledon et US Open.",
+     "p": [
+      "L'Open d'Australie en janvier et l'US Open en fin d'été se jouent sur dur.",
+      "Roland-Garros, à Paris, se joue sur terre battue, de fin mai à juin.",
+      "Wimbledon, sur gazon à Londres, suit quelques semaines plus tard : il faut s'adapter vite."
+     ],
+     "q": "Quel Grand Chelem aimerais-tu le plus voir en vrai ?",
+     "c": "Écris de mémoire les quatre tournois du Grand Chelem dans l'ordre du calendrier avec leur surface."
+    },
+    "it": {
+     "t": "I quattro Slam",
+     "g": "Conosci i quattro major: Australian Open, Roland Garros, Wimbledon e US Open.",
+     "p": [
+      "L'Australian Open a gennaio e lo US Open a fine estate si giocano sul cemento.",
+      "Il Roland Garros, a Parigi, si gioca sulla terra rossa, da fine maggio a giugno.",
+      "Wimbledon, sull'erba di Londra, arriva poche settimane dopo: bisogna adattarsi in fretta."
+     ],
+     "q": "Quale Slam ti piacerebbe di più vedere dal vivo?",
+     "c": "Scrivi a memoria i quattro Slam in ordine di calendario con la loro superficie."
+    },
+    "pt": {
+     "t": "Os quatro Grand Slams",
+     "g": "Conhece os quatro majors: Open da Austrália, Roland Garros, Wimbledon e US Open.",
+     "p": [
+      "O Open da Austrália, em janeiro, e o US Open, no fim do verão, jogam-se em piso rápido.",
+      "Roland Garros, em Paris, joga-se em terra batida, do fim de maio a junho.",
+      "Wimbledon, na relva de Londres, vem poucas semanas depois: é preciso adaptar-se depressa."
+     ],
+     "q": "Que Grand Slam gostavas mais de ver ao vivo?",
+     "c": "Escreve de memória os quatro Slams por ordem do calendário, com o respetivo piso."
+    },
+    "pt_BR": {
+     "t": "Os quatro Grand Slams",
+     "g": "Conheça os quatro majors: Australian Open, Roland Garros, Wimbledon e US Open.",
+     "p": [
+      "O Australian Open, em janeiro, e o US Open, no fim do verão americano, são em quadra dura.",
+      "Roland Garros, em Paris, é disputado no saibro, do fim de maio a junho.",
+      "Wimbledon, na grama de Londres, vem poucas semanas depois: é preciso se adaptar rápido."
+     ],
+     "q": "Qual Grand Slam você mais gostaria de ver ao vivo?",
+     "c": "Escreva de memória os quatro Slams na ordem do calendário, com o piso de cada um."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Australian Open",
+     "g": "Discover Melbourne's hard-court Slam that opens the season in January.",
+     "p": [
+      "First held in 1905, it has been played at Melbourne Park on hard courts since 1988, after years on grass.",
+      "The main stadium is Rod Laver Arena, named after the Australian who won two calendar Grand Slams.",
+      "Its relaxed, sunny atmosphere earned it the nickname the Happy Slam."
+     ],
+     "q": "Would you enjoy watching tennis in the heat of an Australian summer?",
+     "c": "Guess in which two years Rod Laver won his calendar Grand Slams; we will check soon."
+    },
+    "de": {
+     "t": "Die Australian Open",
+     "g": "Entdecke das Hartplatz-Slam in Melbourne, das im Januar die Saison eröffnet.",
+     "p": [
+      "Erstmals 1905 ausgetragen, wird es seit 1988 im Melbourne Park auf Hartplatz gespielt, nach Jahren auf Rasen.",
+      "Das Hauptstadion ist die Rod Laver Arena, benannt nach dem Australier mit zwei Kalender-Grand-Slams.",
+      "Wegen der lockeren, sonnigen Stimmung nennt man es auch das Happy Slam."
+     ],
+     "q": "Würde es dir gefallen, Tennis in der Hitze des australischen Sommers zu schauen?",
+     "c": "Rate, in welchen zwei Jahren Rod Laver seine Kalender-Grand-Slams gewann; wir prüfen es bald."
+    },
+    "es": {
+     "t": "El Open de Australia",
+     "g": "Descubre el Slam en pista dura de Melbourne que abre la temporada en enero.",
+     "p": [
+      "Se disputó por primera vez en 1905 y se juega en Melbourne Park, en pista dura, desde 1988, tras años sobre hierba.",
+      "La pista central es la Rod Laver Arena, en honor al australiano que ganó dos Grand Slams en un año natural.",
+      "Su ambiente relajado y soleado le dio el apodo de Happy Slam."
+     ],
+     "q": "¿Te gustaría ver tenis en pleno calor del verano australiano?",
+     "c": "Adivina en qué dos años ganó Rod Laver sus Grand Slams en año natural; pronto lo comprobaremos."
+    },
+    "fr": {
+     "t": "L'Open d'Australie",
+     "g": "Découvre le Grand Chelem sur dur de Melbourne, qui ouvre la saison en janvier.",
+     "p": [
+      "Créé en 1905, il se joue à Melbourne Park sur dur depuis 1988, après des années sur gazon.",
+      "Le court central est la Rod Laver Arena, du nom de l'Australien auteur de deux Grands Chelems calendaires.",
+      "Son ambiance détendue et ensoleillée lui vaut le surnom de « Happy Slam »."
+     ],
+     "q": "Aimerais-tu regarder du tennis dans la chaleur de l'été australien ?",
+     "c": "Devine en quelles deux années Rod Laver a réussi ses Grands Chelems calendaires ; on vérifiera bientôt."
+    },
+    "it": {
+     "t": "L'Australian Open",
+     "g": "Scopri lo Slam sul cemento di Melbourne che apre la stagione a gennaio.",
+     "p": [
+      "Nato nel 1905, si gioca a Melbourne Park sul cemento dal 1988, dopo anni sull'erba.",
+      "Il campo principale è la Rod Laver Arena, intitolata all'australiano che vinse due Grande Slam nello stesso anno.",
+      "L'atmosfera rilassata e solare gli è valsa il soprannome di Happy Slam."
+     ],
+     "q": "Ti piacerebbe guardare tennis nel caldo dell'estate australiana?",
+     "c": "Indovina in quali due anni Rod Laver vinse i suoi Grande Slam; lo verificheremo presto."
+    },
+    "pt": {
+     "t": "O Open da Austrália",
+     "g": "Descobre o Slam em piso rápido de Melbourne que abre a época em janeiro.",
+     "p": [
+      "Disputado pela primeira vez em 1905, joga-se em Melbourne Park, em piso rápido, desde 1988, depois de anos na relva.",
+      "O court principal é a Rod Laver Arena, em honra do australiano que ganhou dois Grand Slams num só ano.",
+      "O ambiente descontraído e soalheiro valeu-lhe a alcunha de Happy Slam."
+     ],
+     "q": "Gostavas de ver ténis no calor do verão australiano?",
+     "c": "Adivinha em que dois anos Rod Laver ganhou os seus Grand Slams num só ano; vamos confirmar em breve."
+    },
+    "pt_BR": {
+     "t": "O Australian Open",
+     "g": "Descubra o Slam em quadra dura de Melbourne que abre a temporada em janeiro.",
+     "p": [
+      "Disputado pela primeira vez em 1905, é jogado no Melbourne Park, em quadra dura, desde 1988, depois de anos na grama.",
+      "A quadra principal é a Rod Laver Arena, em homenagem ao australiano que ganhou dois Grand Slams no mesmo ano.",
+      "O clima descontraído e ensolarado rendeu o apelido de Happy Slam."
+     ],
+     "q": "Você gostaria de ver tênis no calor do verão australiano?",
+     "c": "Tente adivinhar em quais dois anos Rod Laver ganhou seus Grand Slams no mesmo ano; vamos conferir em breve."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roland-Garros",
+     "g": "Explore the French Open, played on red clay in Paris.",
+     "p": [
+      "The stadium, built in 1928, is named after Roland Garros, a pioneering aviator who first flew across the Mediterranean.",
+      "The red surface is a thin layer of crushed brick over limestone, which slows the ball and lifts the bounce.",
+      "Rafael Nadal, now retired, won the men's title a record 14 times, a feat many call the greatest in tennis."
+     ],
+     "q": "Would you have the patience for the long clay-court rallies of Paris?",
+     "c": "Watch a clay-court point and notice how players slide into their shots."
+    },
+    "de": {
+     "t": "Roland-Garros",
+     "g": "Entdecke die French Open, gespielt auf rotem Sand in Paris.",
+     "p": [
+      "Das 1928 erbaute Stadion ist nach Roland Garros benannt, einem Flugpionier, der als Erster das Mittelmeer überflog.",
+      "Der rote Belag ist eine dünne Schicht Ziegelmehl auf Kalkstein; er bremst den Ball und lässt ihn hoch springen.",
+      "Rafael Nadal, inzwischen im Ruhestand, gewann den Herrentitel rekordverdächtige 14-mal, für viele die größte Leistung im Tennis."
+     ],
+     "q": "Hättest du die Geduld für die langen Sandplatz-Ballwechsel von Paris?",
+     "c": "Schau einen Sandplatzpunkt an und achte darauf, wie die Spieler in ihre Schläge rutschen."
+    },
+    "es": {
+     "t": "Roland Garros",
+     "g": "Explora el Abierto de Francia, jugado sobre tierra batida roja en París.",
+     "p": [
+      "El estadio, de 1928, lleva el nombre de Roland Garros, aviador pionero que cruzó por primera vez el Mediterráneo.",
+      "La superficie roja es una fina capa de ladrillo triturado sobre piedra caliza, que frena la bola y eleva el bote.",
+      "Rafael Nadal, ya retirado, ganó el título masculino un récord de 14 veces, para muchos la mayor hazaña del tenis."
+     ],
+     "q": "¿Tendrías paciencia para los largos peloteos sobre tierra batida de París?",
+     "c": "Mira un punto en tierra batida y fíjate en cómo los jugadores se deslizan al golpear."
+    },
+    "fr": {
+     "t": "Roland-Garros",
+     "g": "Explore les Internationaux de France, joués sur terre battue rouge à Paris.",
+     "p": [
+      "Le stade, construit en 1928, porte le nom de Roland Garros, aviateur pionnier qui traversa le premier la Méditerranée.",
+      "La surface rouge est une fine couche de brique pilée sur du calcaire, qui ralentit la balle et la fait rebondir haut.",
+      "Rafael Nadal, aujourd'hui retraité, a remporté le titre messieurs à 14 reprises, un record souvent jugé le plus grand du tennis."
+     ],
+     "q": "Aurais-tu la patience pour les longs échanges sur la terre battue parisienne ?",
+     "c": "Regarde un point sur terre battue et observe comment les joueurs glissent sur leurs frappes."
+    },
+    "it": {
+     "t": "Il Roland Garros",
+     "g": "Esplora gli Open di Francia, giocati sulla terra rossa di Parigi.",
+     "p": [
+      "Lo stadio, del 1928, porta il nome di Roland Garros, aviatore pioniere che per primo sorvolò il Mediterraneo.",
+      "La superficie rossa è un sottile strato di mattone tritato su calcare, che rallenta la palla e alza il rimbalzo.",
+      "Rafael Nadal, ora ritirato, vinse il titolo maschile per il record di 14 volte, impresa che molti ritengono la più grande del tennis."
+     ],
+     "q": "Avresti la pazienza per i lunghi scambi sulla terra di Parigi?",
+     "c": "Guarda un punto sulla terra rossa e osserva come i giocatori scivolano sui colpi."
+    },
+    "pt": {
+     "t": "Roland Garros",
+     "g": "Explora o Open de França, disputado em terra batida vermelha em Paris.",
+     "p": [
+      "O estádio, de 1928, tem o nome de Roland Garros, aviador pioneiro que foi o primeiro a atravessar o Mediterrâneo.",
+      "O piso vermelho é uma camada fina de tijolo moído sobre calcário, que trava a bola e eleva o ressalto.",
+      "Rafael Nadal, já retirado, ganhou o título masculino um recorde de 14 vezes, para muitos o maior feito do ténis."
+     ],
+     "q": "Terias paciência para as longas trocas de bola na terra batida de Paris?",
+     "c": "Vê um ponto em terra batida e repara como os jogadores deslizam ao bater."
+    },
+    "pt_BR": {
+     "t": "Roland Garros",
+     "g": "Explore o Aberto da França, disputado no saibro vermelho de Paris.",
+     "p": [
+      "O estádio, de 1928, leva o nome de Roland Garros, aviador pioneiro que foi o primeiro a cruzar o Mediterrâneo.",
+      "O piso vermelho é uma fina camada de tijolo moído sobre calcário, que freia a bola e aumenta o quique.",
+      "Rafael Nadal, já aposentado, ganhou o título masculino um recorde de 14 vezes, para muitos o maior feito do tênis."
+     ],
+     "q": "Você teria paciência para os longos ralis no saibro de Paris?",
+     "c": "Assista a um ponto no saibro e repare como os jogadores deslizam ao bater."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wimbledon traditions",
+     "g": "Enjoy the traditions of Wimbledon: grass, white clothing and strawberries and cream.",
+     "p": [
+      "Players must dress almost entirely in white, a rule that goes back to the 19th century.",
+      "Strawberries and cream are the classic snack, enjoyed by fans by the tens of thousands of portions.",
+      "The grass courts are cut short for the event and slowly wear to brown patches near the baselines."
+     ],
+     "q": "Which Wimbledon tradition would you most like to experience?",
+     "c": "Plan your perfect Wimbledon day: which court, which snack and which outfit?"
+    },
+    "de": {
+     "t": "Wimbledon-Traditionen",
+     "g": "Genieße die Traditionen von Wimbledon: Rasen, weiße Kleidung und Erdbeeren mit Sahne.",
+     "p": [
+      "Die Spieler müssen fast komplett in Weiß spielen, eine Regel, die aufs 19. Jahrhundert zurückgeht.",
+      "Erdbeeren mit Sahne sind der klassische Snack, den die Fans in Zehntausenden Portionen genießen.",
+      "Der Rasen wird für das Turnier kurz geschnitten und nutzt sich an den Grundlinien zu braunen Flecken ab."
+     ],
+     "q": "Welche Wimbledon-Tradition würdest du am liebsten erleben?",
+     "c": "Plane deinen perfekten Wimbledon-Tag: welcher Platz, welcher Snack, welches Outfit?"
+    },
+    "es": {
+     "t": "Tradiciones de Wimbledon",
+     "g": "Disfruta de las tradiciones de Wimbledon: hierba, ropa blanca y fresas con nata.",
+     "p": [
+      "Los jugadores deben vestir casi por completo de blanco, una norma que viene del siglo XIX.",
+      "Las fresas con nata son el tentempié clásico, y los aficionados consumen decenas de miles de raciones.",
+      "La hierba se corta muy corta para el torneo y se va gastando hasta dejar manchas marrones junto al fondo."
+     ],
+     "q": "¿Qué tradición de Wimbledon te gustaría vivir más?",
+     "c": "Planea tu día perfecto en Wimbledon: ¿qué pista, qué tentempié y qué ropa?"
+    },
+    "fr": {
+     "t": "Les traditions de Wimbledon",
+     "g": "Savoure les traditions de Wimbledon : gazon, tenue blanche et fraises à la crème.",
+     "p": [
+      "Les joueurs doivent s'habiller presque entièrement en blanc, une règle qui remonte au XIXe siècle.",
+      "Les fraises à la crème sont l'en-cas classique, dégustées par dizaines de milliers de portions.",
+      "Le gazon est tondu court pour le tournoi et s'use jusqu'à laisser des plaques brunes près des lignes de fond."
+     ],
+     "q": "Quelle tradition de Wimbledon aimerais-tu le plus vivre ?",
+     "c": "Imagine ta journée parfaite à Wimbledon : quel court, quel en-cas et quelle tenue ?"
+    },
+    "it": {
+     "t": "Le tradizioni di Wimbledon",
+     "g": "Goditi le tradizioni di Wimbledon: erba, abbigliamento bianco e fragole con panna.",
+     "p": [
+      "I giocatori devono vestire quasi interamente di bianco, una regola che risale all'Ottocento.",
+      "Fragole e panna sono lo spuntino classico, gustato dai tifosi in decine di migliaia di porzioni.",
+      "L'erba viene tagliata corta per il torneo e si consuma fino a lasciare chiazze marroni vicino al fondo campo."
+     ],
+     "q": "Quale tradizione di Wimbledon ti piacerebbe vivere di più?",
+     "c": "Progetta la tua giornata perfetta a Wimbledon: quale campo, quale spuntino e quale outfit?"
+    },
+    "pt": {
+     "t": "As tradições de Wimbledon",
+     "g": "Aproveita as tradições de Wimbledon: relva, roupa branca e morangos com natas.",
+     "p": [
+      "Os jogadores têm de vestir quase tudo de branco, uma regra que vem do século XIX.",
+      "Os morangos com natas são o lanche clássico, consumidos pelos adeptos às dezenas de milhares de doses.",
+      "A relva é cortada curta para o torneio e vai-se gastando até deixar manchas castanhas junto ao fundo."
+     ],
+     "q": "Que tradição de Wimbledon gostavas mais de viver?",
+     "c": "Planeia o teu dia perfeito em Wimbledon: que court, que lanche e que roupa?"
+    },
+    "pt_BR": {
+     "t": "As tradições de Wimbledon",
+     "g": "Aproveite as tradições de Wimbledon: grama, roupa branca e morangos com creme.",
+     "p": [
+      "Os jogadores precisam vestir quase tudo branco, uma regra que vem do século XIX.",
+      "Morangos com creme são o lanche clássico, consumidos pelos fãs às dezenas de milhares de porções.",
+      "A grama é cortada bem baixa para o torneio e vai se desgastando até deixar manchas marrons perto do fundo."
+     ],
+     "q": "Qual tradição de Wimbledon você mais gostaria de viver?",
+     "c": "Planeje seu dia perfeito em Wimbledon: qual quadra, qual lanche e qual roupa?"
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The US Open",
+     "g": "Explore New York's hard-court Slam and its famous night sessions.",
+     "p": [
+      "It began in 1881 and is played at Flushing Meadows, home of Arthur Ashe Stadium, the world's largest tennis stadium.",
+      "It is the only Slam played on grass, clay and hard courts in its history; it moved to hard courts in 1978.",
+      "Night sessions under the lights bring loud crowds and a party atmosphere to the last Slam of the year."
+     ],
+     "q": "Would you rather watch a day session or a buzzing night session?",
+     "c": "Find out who Arthur Ashe was and share one fact about him with a friend."
+    },
+    "de": {
+     "t": "Die US Open",
+     "g": "Entdecke das Hartplatz-Slam in New York und seine berühmten Night Sessions.",
+     "p": [
+      "Es begann 1881 und wird in Flushing Meadows gespielt, Heimat des Arthur Ashe Stadium, des größten Tennisstadions der Welt.",
+      "Als einziges Slam wurde es in seiner Geschichte auf Rasen, Sand und Hartplatz gespielt; seit 1978 auf Hartplatz.",
+      "Die Night Sessions unter Flutlicht bringen laute Fans und Partystimmung zum letzten Slam des Jahres."
+     ],
+     "q": "Lieber eine Day Session oder eine brodelnde Night Session?",
+     "c": "Finde heraus, wer Arthur Ashe war, und erzähl einem Freund eine Tatsache über ihn."
+    },
+    "es": {
+     "t": "El US Open",
+     "g": "Explora el Slam en pista dura de Nueva York y sus famosas sesiones nocturnas.",
+     "p": [
+      "Empezó en 1881 y se juega en Flushing Meadows, sede del Arthur Ashe Stadium, el mayor estadio de tenis del mundo.",
+      "Es el único Slam que se ha jugado en hierba, tierra batida y pista dura; usa pista dura desde 1978.",
+      "Las sesiones nocturnas bajo los focos llenan de ruido y fiesta el último Slam del año."
+     ],
+     "q": "¿Prefieres una sesión de día o una animada sesión nocturna?",
+     "c": "Averigua quién fue Arthur Ashe y cuéntale un dato sobre él a un amigo."
+    },
+    "fr": {
+     "t": "L'US Open",
+     "g": "Explore le Grand Chelem sur dur de New York et ses célèbres sessions de nuit.",
+     "p": [
+      "Né en 1881, il se joue à Flushing Meadows, où se trouve l'Arthur Ashe Stadium, le plus grand stade de tennis du monde.",
+      "C'est le seul Grand Chelem disputé sur gazon, terre battue et dur au cours de son histoire ; sur dur depuis 1978.",
+      "Les sessions de nuit sous les projecteurs apportent un public bruyant et une ambiance de fête."
+     ],
+     "q": "Tu préfères une session de jour ou une session de nuit bouillante ?",
+     "c": "Découvre qui était Arthur Ashe et partage un fait sur lui avec un ami."
+    },
+    "it": {
+     "t": "Lo US Open",
+     "g": "Esplora lo Slam sul cemento di New York e le sue famose sessioni serali.",
+     "p": [
+      "Nato nel 1881, si gioca a Flushing Meadows, sede dell'Arthur Ashe Stadium, il più grande stadio di tennis al mondo.",
+      "È l'unico Slam giocato nella sua storia su erba, terra e cemento; sul cemento dal 1978.",
+      "Le sessioni serali sotto i riflettori portano pubblico rumoroso e aria di festa nell'ultimo Slam dell'anno."
+     ],
+     "q": "Preferiresti una sessione diurna o una vivace sessione serale?",
+     "c": "Scopri chi era Arthur Ashe e racconta a un amico un fatto su di lui."
+    },
+    "pt": {
+     "t": "O US Open",
+     "g": "Explora o Slam em piso rápido de Nova Iorque e as suas famosas sessões noturnas.",
+     "p": [
+      "Começou em 1881 e joga-se em Flushing Meadows, casa do Arthur Ashe Stadium, o maior estádio de ténis do mundo.",
+      "É o único Slam disputado em relva, terra batida e piso rápido ao longo da história; em piso rápido desde 1978.",
+      "As sessões noturnas sob os holofotes trazem público barulhento e ambiente de festa ao último Slam do ano."
+     ],
+     "q": "Preferes uma sessão de dia ou uma sessão noturna animada?",
+     "c": "Descobre quem foi Arthur Ashe e conta a um amigo um facto sobre ele."
+    },
+    "pt_BR": {
+     "t": "O US Open",
+     "g": "Explore o Slam em quadra dura de Nova York e suas famosas sessões noturnas.",
+     "p": [
+      "Começou em 1881 e é disputado em Flushing Meadows, casa do Arthur Ashe Stadium, o maior estádio de tênis do mundo.",
+      "É o único Slam já disputado em grama, saibro e quadra dura; está na quadra dura desde 1978.",
+      "As sessões noturnas sob os refletores trazem torcida barulhenta e clima de festa ao último Slam do ano."
+     ],
+     "q": "Você prefere uma sessão de dia ou uma sessão noturna agitada?",
+     "c": "Descubra quem foi Arthur Ashe e conte um fato sobre ele para um amigo."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The calendar Grand Slam",
+     "g": "Learn what it takes to win all four majors in the same calendar year.",
+     "p": [
+      "Don Budge was the first to do it, in 1938; Rod Laver remains the only player to achieve it twice, in 1962 and 1969.",
+      "Among women, Maureen Connolly (1953), Margaret Court (1970) and Steffi Graf (1988) completed it.",
+      "Graf also won Olympic gold in 1988, a unique feat known as the Golden Slam."
+     ],
+     "q": "Why do you think winning all four Slams in one year is so rare?",
+     "c": "Without looking back, name the five players in today's lesson who won a calendar Grand Slam."
+    },
+    "de": {
+     "t": "Der Kalender-Grand-Slam",
+     "g": "Lerne, was es heißt, alle vier Majors im selben Kalenderjahr zu gewinnen.",
+     "p": [
+      "Don Budge schaffte es 1938 als Erster; Rod Laver ist bis heute der Einzige, dem es zweimal gelang, 1962 und 1969.",
+      "Bei den Frauen schafften es Maureen Connolly (1953), Margaret Court (1970) und Steffi Graf (1988).",
+      "Graf holte 1988 zudem Olympiagold, ein einzigartiger Erfolg namens Golden Slam."
+     ],
+     "q": "Warum ist es wohl so selten, alle vier Slams in einem Jahr zu gewinnen?",
+     "c": "Nenne, ohne nachzuschauen, die fünf Spieler aus der heutigen Lektion mit Kalender-Grand-Slam."
+    },
+    "es": {
+     "t": "El Grand Slam en año natural",
+     "g": "Descubre lo que supone ganar los cuatro grandes en el mismo año natural.",
+     "p": [
+      "Don Budge fue el primero, en 1938; Rod Laver sigue siendo el único que lo logró dos veces, en 1962 y 1969.",
+      "Entre las mujeres lo completaron Maureen Connolly (1953), Margaret Court (1970) y Steffi Graf (1988).",
+      "Graf también ganó el oro olímpico en 1988, una hazaña única llamada Golden Slam."
+     ],
+     "q": "¿Por qué crees que ganar los cuatro Slams en un año es tan raro?",
+     "c": "Sin mirar, nombra a los cinco jugadores de la lección de hoy que ganaron el Grand Slam en un año."
+    },
+    "fr": {
+     "t": "Le Grand Chelem calendaire",
+     "g": "Découvre ce que représente gagner les quatre majeurs la même année civile.",
+     "p": [
+      "Don Budge fut le premier, en 1938 ; Rod Laver reste le seul à l'avoir réussi deux fois, en 1962 et 1969.",
+      "Chez les femmes, Maureen Connolly (1953), Margaret Court (1970) et Steffi Graf (1988) l'ont accompli.",
+      "Graf a aussi remporté l'or olympique en 1988, un exploit unique appelé Golden Slam."
+     ],
+     "q": "Pourquoi, selon toi, gagner les quatre tournois la même année est-il si rare ?",
+     "c": "Sans regarder, cite les cinq joueurs de la leçon du jour qui ont réussi le Grand Chelem calendaire."
+    },
+    "it": {
+     "t": "Il Grande Slam nell'anno solare",
+     "g": "Scopri cosa significa vincere i quattro major nello stesso anno solare.",
+     "p": [
+      "Don Budge fu il primo, nel 1938; Rod Laver resta l'unico ad esserci riuscito due volte, nel 1962 e nel 1969.",
+      "Tra le donne ci riuscirono Maureen Connolly (1953), Margaret Court (1970) e Steffi Graf (1988).",
+      "Graf vinse anche l'oro olimpico nel 1988, un'impresa unica chiamata Golden Slam."
+     ],
+     "q": "Perché secondo te vincere i quattro Slam in un anno è così raro?",
+     "c": "Senza guardare, nomina i cinque giocatori della lezione di oggi che hanno vinto il Grande Slam."
+    },
+    "pt": {
+     "t": "O Grand Slam no mesmo ano",
+     "g": "Descobre o que é preciso para ganhar os quatro majors no mesmo ano civil.",
+     "p": [
+      "Don Budge foi o primeiro, em 1938; Rod Laver continua a ser o único a consegui-lo duas vezes, em 1962 e 1969.",
+      "Entre as mulheres, conseguiram-no Maureen Connolly (1953), Margaret Court (1970) e Steffi Graf (1988).",
+      "Graf ganhou ainda o ouro olímpico em 1988, um feito único chamado Golden Slam."
+     ],
+     "q": "Porque achas que ganhar os quatro Slams num ano é tão raro?",
+     "c": "Sem olhar, diz os nomes dos cinco jogadores da lição de hoje que ganharam o Grand Slam num ano."
+    },
+    "pt_BR": {
+     "t": "O Grand Slam no mesmo ano",
+     "g": "Descubra o que é preciso para vencer os quatro majors no mesmo ano.",
+     "p": [
+      "Don Budge foi o primeiro, em 1938; Rod Laver segue sendo o único a conseguir duas vezes, em 1962 e 1969.",
+      "Entre as mulheres, conseguiram Maureen Connolly (1953), Margaret Court (1970) e Steffi Graf (1988).",
+      "Graf também ganhou o ouro olímpico em 1988, um feito único chamado Golden Slam."
+     ],
+     "q": "Por que você acha que vencer os quatro Slams num ano é tão raro?",
+     "c": "Sem olhar, diga os nomes dos cinco jogadores da lição de hoje que venceram o Grand Slam no mesmo ano."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "ATP and WTA tours",
+     "g": "See how the men's and women's professional tours are organised.",
+     "p": [
+      "The Open Era began in 1968, when professionals were finally allowed to play the big tournaments.",
+      "The ATP, the men's tour, was founded in 1972; the WTA, the women's tour, in 1973, led by Billie Jean King.",
+      "Below the Slams, events are tiered as 1000, 500 and 250, and the best eight players meet at the season finals."
+     ],
+     "q": "Do you think it matters that the women's tour was founded by a player?",
+     "c": "Look at a tour calendar and find one 1000-level event played in a country you would love to visit."
+    },
+    "de": {
+     "t": "ATP- und WTA-Tour",
+     "g": "Sieh, wie die Profi-Touren der Männer und Frauen organisiert sind.",
+     "p": [
+      "Die Open Era begann 1968, als Profis endlich bei den großen Turnieren antreten durften.",
+      "Die ATP, die Männertour, wurde 1972 gegründet; die WTA, die Frauentour, 1973 unter Führung von Billie Jean King.",
+      "Unter den Slams gibt es die Stufen 1000, 500 und 250, und die besten acht treffen sich zum Saisonfinale."
+     ],
+     "q": "Findest du es wichtig, dass die Frauentour von einer Spielerin gegründet wurde?",
+     "c": "Schau in einen Turnierkalender und finde ein 1000er-Turnier in einem Land, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "Los circuitos ATP y WTA",
+     "g": "Descubre cómo se organizan los circuitos profesionales masculino y femenino.",
+     "p": [
+      "La Era Abierta empezó en 1968, cuando por fin se permitió a los profesionales jugar los grandes torneos.",
+      "La ATP, el circuito masculino, nació en 1972; la WTA, el femenino, en 1973, impulsada por Billie Jean King.",
+      "Por debajo de los Slams, los torneos son de categoría 1000, 500 y 250, y los ocho mejores juegan las Finales."
+     ],
+     "q": "¿Crees que importa que el circuito femenino lo fundara una jugadora?",
+     "c": "Mira un calendario del circuito y busca un torneo 1000 en un país que te encantaría visitar."
+    },
+    "fr": {
+     "t": "Les circuits ATP et WTA",
+     "g": "Découvre comment sont organisés les circuits professionnels masculin et féminin.",
+     "p": [
+      "L'ère Open a commencé en 1968, quand les professionnels ont enfin pu disputer les grands tournois.",
+      "L'ATP, le circuit masculin, est née en 1972 ; la WTA, le circuit féminin, en 1973, sous l'impulsion de Billie Jean King.",
+      "Sous les Grands Chelems, les tournois sont classés 1000, 500 et 250, et les huit meilleurs se retrouvent aux Finales."
+     ],
+     "q": "Penses-tu qu'il est important que le circuit féminin ait été fondé par une joueuse ?",
+     "c": "Regarde un calendrier du circuit et trouve un tournoi 1000 dans un pays que tu rêves de visiter."
+    },
+    "it": {
+     "t": "I circuiti ATP e WTA",
+     "g": "Scopri come sono organizzati i circuiti professionistici maschile e femminile.",
+     "p": [
+      "L'Era Open iniziò nel 1968, quando i professionisti poterono finalmente giocare i grandi tornei.",
+      "L'ATP, circuito maschile, nacque nel 1972; la WTA, circuito femminile, nel 1973, guidata da Billie Jean King.",
+      "Sotto gli Slam i tornei sono di categoria 1000, 500 e 250, e i migliori otto si sfidano alle Finals."
+     ],
+     "q": "Pensi che conti che il circuito femminile sia stato fondato da una giocatrice?",
+     "c": "Guarda un calendario del circuito e trova un torneo 1000 in un paese che ti piacerebbe visitare."
+    },
+    "pt": {
+     "t": "Os circuitos ATP e WTA",
+     "g": "Vê como estão organizados os circuitos profissionais masculino e feminino.",
+     "p": [
+      "A Era Open começou em 1968, quando os profissionais puderam finalmente jogar os grandes torneios.",
+      "A ATP, circuito masculino, nasceu em 1972; a WTA, circuito feminino, em 1973, liderada por Billie Jean King.",
+      "Abaixo dos Slams, os torneios são de categoria 1000, 500 e 250, e os oito melhores jogam as Finals."
+     ],
+     "q": "Achas importante que o circuito feminino tenha sido fundado por uma jogadora?",
+     "c": "Vê um calendário do circuito e encontra um torneio 1000 num país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Os circuitos ATP e WTA",
+     "g": "Veja como são organizados os circuitos profissionais masculino e feminino.",
+     "p": [
+      "A Era Aberta começou em 1968, quando os profissionais finalmente puderam jogar os grandes torneios.",
+      "A ATP, circuito masculino, foi fundada em 1972; a WTA, circuito feminino, em 1973, liderada por Billie Jean King.",
+      "Abaixo dos Slams, os torneios são das categorias 1000, 500 e 250, e os oito melhores jogam o Finals."
+     ],
+     "q": "Você acha importante que o circuito feminino tenha sido fundado por uma jogadora?",
+     "c": "Olhe um calendário do circuito e encontre um torneio 1000 num país que você adoraria visitar."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rankings explained",
+     "g": "Understand how tournament points create the world rankings.",
+     "p": [
+      "Players earn points for each round they win; the deeper the run and the bigger the event, the more points.",
+      "Rankings count results from roughly the last 12 months, so points must be defended a year later.",
+      "Computer rankings began in 1973 for men and 1975 for women; the first number ones were Ilie Nastase and Chris Evert."
+     ],
+     "q": "If you had a ranking, which tournament would you most want to earn points at?",
+     "c": "Explain to someone in your own words why a player can drop in the rankings while not even playing."
+    },
+    "de": {
+     "t": "Ranglisten erklärt",
+     "g": "Verstehe, wie Turnierpunkte die Weltrangliste ergeben.",
+     "p": [
+      "Spieler sammeln Punkte für jede gewonnene Runde; je weiter und je größer das Turnier, desto mehr Punkte.",
+      "Gezählt werden die Ergebnisse der letzten rund 12 Monate, Punkte müssen also ein Jahr später verteidigt werden.",
+      "Computerranglisten gibt es seit 1973 (Herren) und 1975 (Damen); die ersten Nummer eins waren Ilie Nastase und Chris Evert."
+     ],
+     "q": "Wenn du eine Ranglistenposition hättest, bei welchem Turnier würdest du am liebsten punkten?",
+     "c": "Erklär jemandem mit eigenen Worten, warum ein Spieler in der Rangliste fallen kann, ohne zu spielen."
+    },
+    "es": {
+     "t": "El ranking explicado",
+     "g": "Entiende cómo los puntos de los torneos forman el ranking mundial.",
+     "p": [
+      "Los jugadores suman puntos por cada ronda ganada; cuanto más avanzan y mayor es el torneo, más puntos.",
+      "El ranking cuenta los resultados de aproximadamente los últimos 12 meses, así que los puntos se defienden un año después.",
+      "El ranking informático nació en 1973 para hombres y en 1975 para mujeres; los primeros números uno fueron Ilie Nastase y Chris Evert."
+     ],
+     "q": "Si tuvieras ranking, ¿en qué torneo te gustaría más sumar puntos?",
+     "c": "Explica con tus palabras por qué un jugador puede bajar en el ranking sin siquiera jugar."
+    },
+    "fr": {
+     "t": "Le classement expliqué",
+     "g": "Comprends comment les points des tournois forment le classement mondial.",
+     "p": [
+      "Les joueurs gagnent des points à chaque tour passé ; plus le parcours est long et le tournoi grand, plus il y en a.",
+      "Le classement compte les résultats des 12 derniers mois environ : les points se défendent l'année suivante.",
+      "Le classement informatique date de 1973 chez les hommes et 1975 chez les femmes ; premiers numéros un : Ilie Nastase et Chris Evert."
+     ],
+     "q": "Si tu avais un classement, dans quel tournoi voudrais-tu le plus marquer des points ?",
+     "c": "Explique avec tes mots pourquoi un joueur peut reculer au classement sans même jouer."
+    },
+    "it": {
+     "t": "La classifica spiegata",
+     "g": "Capisci come i punti dei tornei formano la classifica mondiale.",
+     "p": [
+      "I giocatori guadagnano punti per ogni turno vinto; più lungo il cammino e più grande il torneo, più punti.",
+      "La classifica conta i risultati degli ultimi 12 mesi circa, quindi i punti vanno difesi un anno dopo.",
+      "La classifica computerizzata nacque nel 1973 per gli uomini e nel 1975 per le donne; i primi numeri uno furono Ilie Nastase e Chris Evert."
+     ],
+     "q": "Se avessi una classifica, in quale torneo vorresti di più guadagnare punti?",
+     "c": "Spiega con parole tue perché un giocatore può scendere in classifica anche senza giocare."
+    },
+    "pt": {
+     "t": "O ranking explicado",
+     "g": "Percebe como os pontos dos torneios formam o ranking mundial.",
+     "p": [
+      "Os jogadores somam pontos por cada ronda que ganham; quanto mais longe vão e maior o torneio, mais pontos.",
+      "O ranking conta os resultados dos últimos 12 meses, aproximadamente, por isso os pontos defendem-se um ano depois.",
+      "O ranking por computador começou em 1973 nos homens e em 1975 nas mulheres; os primeiros números um foram Ilie Nastase e Chris Evert."
+     ],
+     "q": "Se tivesses ranking, em que torneio gostavas mais de somar pontos?",
+     "c": "Explica por palavras tuas porque é que um jogador pode descer no ranking sem sequer jogar."
+    },
+    "pt_BR": {
+     "t": "O ranking explicado",
+     "g": "Entenda como os pontos dos torneios formam o ranking mundial.",
+     "p": [
+      "Os jogadores somam pontos a cada rodada vencida; quanto mais longe vão e maior o torneio, mais pontos.",
+      "O ranking conta os resultados de cerca dos últimos 12 meses, então os pontos precisam ser defendidos um ano depois.",
+      "O ranking por computador começou em 1973 no masculino e em 1975 no feminino; os primeiros números um foram Ilie Nastase e Chris Evert."
+     ],
+     "q": "Se você tivesse ranking, em qual torneio mais gostaria de somar pontos?",
+     "c": "Explique com suas palavras por que um jogador pode cair no ranking mesmo sem jogar."
+    }
+   }
+  }
+ ]
+}

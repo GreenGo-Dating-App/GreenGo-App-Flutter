@@ -1,0 +1,835 @@
+{
+ "topic": "tennis",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cross-court rallies",
+     "g": "Learn why cross-court is the safer, longer shot in a rally.",
+     "p": [
+      "A diagonal shot travels over a longer stretch of court, about 25 m instead of 23.77 m, so you have more room.",
+      "It also crosses the net at its lowest point, the middle, which gives you extra margin.",
+      "After a cross-court shot you need fewer steps to recover to a good position."
+     ],
+     "q": "In a long rally, would you rather play safe cross-court or go for a surprise?",
+     "c": "Draw a court on paper and sketch the diagonal path of a cross-court forehand."
+    },
+    "de": {
+     "t": "Cross-Ballwechsel",
+     "g": "Lerne, warum der Cross-Schlag im Ballwechsel der sicherere und längere ist.",
+     "p": [
+      "Ein diagonaler Ball fliegt über eine längere Strecke, etwa 25 m statt 23,77 m, du hast also mehr Platz.",
+      "Er überquert das Netz zudem an der niedrigsten Stelle, der Mitte, was zusätzlichen Spielraum gibt.",
+      "Nach einem Cross-Schlag brauchst du weniger Schritte, um wieder gut zu stehen."
+     ],
+     "q": "Würdest du im langen Ballwechsel lieber sicher cross spielen oder eine Überraschung wagen?",
+     "c": "Zeichne einen Platz auf Papier und skizziere den diagonalen Weg einer Cross-Vorhand."
+    },
+    "es": {
+     "t": "Peloteos cruzados",
+     "g": "Aprende por qué el golpe cruzado es el más seguro y largo en un peloteo.",
+     "p": [
+      "Una bola en diagonal recorre más pista, unos 25 m en lugar de 23,77 m, así que tienes más espacio.",
+      "Además cruza la red por su punto más bajo, el centro, lo que te da más margen.",
+      "Después de un cruzado necesitas menos pasos para volver a una buena posición."
+     ],
+     "q": "En un peloteo largo, ¿prefieres ir seguro con el cruzado o buscar la sorpresa?",
+     "c": "Dibuja una pista en papel y traza el recorrido diagonal de una derecha cruzada."
+    },
+    "fr": {
+     "t": "Les échanges croisés",
+     "g": "Apprends pourquoi le croisé est le coup le plus sûr et le plus long en échange.",
+     "p": [
+      "Une balle en diagonale parcourt plus de distance, environ 25 m au lieu de 23,77 m : tu as plus de place.",
+      "Elle passe aussi le filet à son point le plus bas, au centre, ce qui donne une marge supplémentaire.",
+      "Après un croisé, il te faut moins de pas pour revenir en bonne position."
+     ],
+     "q": "Dans un long échange, tu préfères jouer croisé en sécurité ou tenter la surprise ?",
+     "c": "Dessine un court sur papier et trace le chemin diagonal d'un coup droit croisé."
+    },
+    "it": {
+     "t": "Scambi incrociati",
+     "g": "Impara perché il colpo incrociato è il più sicuro e lungo in uno scambio.",
+     "p": [
+      "Una palla in diagonale percorre più campo, circa 25 m invece di 23,77 m, quindi hai più spazio.",
+      "Inoltre passa la rete nel punto più basso, il centro, il che ti dà margine in più.",
+      "Dopo un incrociato servono meno passi per tornare in una buona posizione."
+     ],
+     "q": "In uno scambio lungo preferisci giocare sicuro incrociato o tentare la sorpresa?",
+     "c": "Disegna un campo su carta e traccia il percorso diagonale di un dritto incrociato."
+    },
+    "pt": {
+     "t": "Trocas cruzadas",
+     "g": "Aprende porque a pancada cruzada é a mais segura e longa numa troca de bolas.",
+     "p": [
+      "Uma bola na diagonal percorre mais campo, cerca de 25 m em vez de 23,77 m, por isso tens mais espaço.",
+      "Além disso, passa a rede no ponto mais baixo, o meio, o que te dá mais margem.",
+      "Depois de uma cruzada precisas de menos passos para voltar a uma boa posição."
+     ],
+     "q": "Numa troca longa, preferes jogar seguro na cruzada ou tentar a surpresa?",
+     "c": "Desenha um campo em papel e traça o caminho diagonal de uma direita cruzada."
+    },
+    "pt_BR": {
+     "t": "Ralis cruzados",
+     "g": "Aprenda por que a bola cruzada é a mais segura e longa num rali.",
+     "p": [
+      "Uma bola na diagonal percorre mais quadra, cerca de 25 m em vez de 23,77 m, então você tem mais espaço.",
+      "Além disso, ela passa a rede no ponto mais baixo, o meio, o que dá mais margem.",
+      "Depois de uma cruzada, você precisa de menos passos para voltar a uma boa posição."
+     ],
+     "q": "Num rali longo, você prefere jogar seguro na cruzada ou tentar a surpresa?",
+     "c": "Desenhe uma quadra no papel e trace o caminho diagonal de um forehand cruzado."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Down-the-line shots",
+     "g": "Learn when to change direction down the line and when the risk is worth it.",
+     "p": [
+      "A down-the-line shot is shorter and crosses the net at a higher part, near the posts, so it is riskier.",
+      "It is perfect for surprising an opponent who expects cross-court, or for passing a net player.",
+      "A good rule: change direction when the ball is comfortable, not when you are stretched or off balance."
+     ],
+     "q": "Can you remember a moment, in any sport, when a surprise move won the point?",
+     "c": "In a rally or game today, try one planned change of direction on an easy ball."
+    },
+    "de": {
+     "t": "Longline-Schläge",
+     "g": "Lerne, wann du die Richtung longline wechselst und wann sich das Risiko lohnt.",
+     "p": [
+      "Ein Longline-Ball ist kürzer und überquert das Netz an einer höheren Stelle, nahe den Pfosten, also riskanter.",
+      "Er ist ideal, um einen Gegner zu überraschen, der cross erwartet, oder um einen Netzspieler zu passieren.",
+      "Gute Regel: Richtung wechseln, wenn der Ball bequem kommt, nicht wenn du gestreckt oder aus dem Gleichgewicht bist."
+     ],
+     "q": "Erinnerst du dich an einen Moment in irgendeinem Sport, in dem eine Überraschung den Punkt brachte?",
+     "c": "Versuch heute im Ballwechsel einen geplanten Richtungswechsel bei einem leichten Ball."
+    },
+    "es": {
+     "t": "Golpes paralelos",
+     "g": "Aprende cuándo cambiar la dirección en paralelo y cuándo merece la pena el riesgo.",
+     "p": [
+      "El paralelo es más corto y cruza la red por una zona más alta, cerca de los postes, así que es más arriesgado.",
+      "Es perfecto para sorprender a un rival que espera el cruzado o para pasar a quien está en la red.",
+      "Buena regla: cambia de dirección con una bola cómoda, no cuando vas estirado o desequilibrado."
+     ],
+     "q": "¿Recuerdas algún momento, en cualquier deporte, en que una sorpresa ganó el punto?",
+     "c": "Hoy, en un peloteo o partido, prueba un cambio de dirección planeado con una bola fácil."
+    },
+    "fr": {
+     "t": "Les coups le long de la ligne",
+     "g": "Apprends quand changer de direction le long de la ligne et quand le risque en vaut la peine.",
+     "p": [
+      "Le long de la ligne, la balle a moins de distance et passe le filet plus haut, près des poteaux : c'est plus risqué.",
+      "C'est parfait pour surprendre un adversaire qui attend le croisé ou pour passer un joueur au filet.",
+      "Bonne règle : change de direction sur une balle confortable, pas quand tu es débordé ou déséquilibré."
+     ],
+     "q": "Te souviens-tu d'un moment, dans n'importe quel sport, où une surprise a fait gagner le point ?",
+     "c": "Aujourd'hui, en échange ou en match, tente un changement de direction prévu sur une balle facile."
+    },
+    "it": {
+     "t": "Colpi lungolinea",
+     "g": "Impara quando cambiare direzione lungolinea e quando il rischio vale la pena.",
+     "p": [
+      "Il lungolinea è più corto e passa la rete in un punto più alto, vicino ai paletti, quindi è più rischioso.",
+      "È perfetto per sorprendere chi si aspetta l'incrociato o per passare un giocatore a rete.",
+      "Buona regola: cambia direzione su una palla comoda, non quando sei in allungo o fuori equilibrio."
+     ],
+     "q": "Ricordi un momento, in qualsiasi sport, in cui una sorpresa ha fatto vincere il punto?",
+     "c": "Oggi, in uno scambio o in partita, prova un cambio di direzione pianificato su una palla facile."
+    },
+    "pt": {
+     "t": "Pancadas paralelas",
+     "g": "Aprende quando mudar a direção em paralelo e quando o risco compensa.",
+     "p": [
+      "A paralela é mais curta e passa a rede numa zona mais alta, junto aos postes, por isso é mais arriscada.",
+      "É perfeita para surpreender um adversário que espera a cruzada ou para passar quem está na rede.",
+      "Boa regra: muda de direção numa bola confortável, não quando estás esticado ou desequilibrado."
+     ],
+     "q": "Lembras-te de um momento, em qualquer desporto, em que uma surpresa ganhou o ponto?",
+     "c": "Hoje, numa troca de bolas ou jogo, tenta uma mudança de direção planeada numa bola fácil."
+    },
+    "pt_BR": {
+     "t": "Bolas na paralela",
+     "g": "Aprenda quando mudar a direção na paralela e quando o risco vale a pena.",
+     "p": [
+      "A paralela é mais curta e passa a rede numa parte mais alta, perto dos postes, então é mais arriscada.",
+      "É perfeita para surpreender um adversário que espera a cruzada ou para passar quem está na rede.",
+      "Boa regra: mude a direção numa bola confortável, não quando estiver esticado ou desequilibrado."
+     ],
+     "q": "Você lembra de um momento, em qualquer esporte, em que uma surpresa ganhou o ponto?",
+     "c": "Hoje, num rali ou jogo, tente uma mudança de direção planejada numa bola fácil."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recovery footwork",
+     "g": "Learn how to get back into position after every shot.",
+     "p": [
+      "Recover to the middle of your opponent's possible angles, which is often slightly off the centre mark.",
+      "Use side shuffles for short distances and a crossover step to start a longer recovery.",
+      "Time it so you are back and doing your split step just as your opponent hits."
+     ],
+     "q": "After you hit, do you tend to watch your shot or move straight away?",
+     "c": "Shadow 10 forehands and after each one shuffle back to an imaginary centre and split step."
+    },
+    "de": {
+     "t": "Rückkehr-Beinarbeit",
+     "g": "Lerne, wie du nach jedem Schlag wieder in Position kommst.",
+     "p": [
+      "Kehre in die Mitte der möglichen Winkel deines Gegners zurück, oft etwas neben dem Mittelzeichen.",
+      "Nutze Seitschritte für kurze Wege und einen Kreuzschritt, um eine längere Rückkehr zu starten.",
+      "Timing: Du solltest zurück sein und deinen Split-Step machen, genau wenn der Gegner trifft."
+     ],
+     "q": "Schaust du nach dem Schlag eher deinem Ball nach oder bewegst du dich sofort?",
+     "c": "Mach 10 Schattenvorhände und kehre nach jeder mit Seitschritten zu einer gedachten Mitte zurück, dann Split-Step."
+    },
+    "es": {
+     "t": "Recuperación con los pies",
+     "g": "Aprende a volver a tu posición después de cada golpe.",
+     "p": [
+      "Recupera hacia el centro de los ángulos posibles del rival, que suele estar algo desplazado de la marca central.",
+      "Usa pasos laterales para distancias cortas y un paso cruzado para empezar una recuperación larga.",
+      "Calcula para estar de vuelta y hacer el split step justo cuando el rival golpea."
+     ],
+     "q": "Después de golpear, ¿sueles mirar tu bola o te mueves enseguida?",
+     "c": "Haz 10 derechas en sombra y tras cada una vuelve con pasos laterales a un centro imaginario y haz split step."
+    },
+    "fr": {
+     "t": "Le replacement",
+     "g": "Apprends à revenir en position après chaque coup.",
+     "p": [
+      "Replace-toi au milieu des angles possibles de l'adversaire, souvent un peu à côté de la marque centrale.",
+      "Utilise des pas chassés pour les courtes distances et un pas croisé pour lancer un replacement plus long.",
+      "Calcule pour être revenu et faire ton pas d'allègement juste au moment où l'adversaire frappe."
+     ],
+     "q": "Après ta frappe, tu as tendance à regarder ta balle ou à bouger tout de suite ?",
+     "c": "Fais 10 coups droits à vide et après chacun reviens en pas chassés vers un centre imaginaire, puis split step."
+    },
+    "it": {
+     "t": "Il recupero della posizione",
+     "g": "Impara a tornare in posizione dopo ogni colpo.",
+     "p": [
+      "Recupera verso il centro degli angoli possibili dell'avversario, spesso un po' spostato rispetto al segno centrale.",
+      "Usa passi laterali per le brevi distanze e un passo incrociato per iniziare un recupero più lungo.",
+      "Calcola i tempi per essere tornato e fare lo split step proprio quando l'avversario colpisce."
+     ],
+     "q": "Dopo il colpo tendi a guardare la palla o ti muovi subito?",
+     "c": "Fai 10 dritti a vuoto e dopo ognuno torna con passi laterali a un centro immaginario, poi split step."
+    },
+    "pt": {
+     "t": "Recuperação com os pés",
+     "g": "Aprende a voltar à posição depois de cada pancada.",
+     "p": [
+      "Recupera para o meio dos ângulos possíveis do adversário, muitas vezes um pouco ao lado da marca central.",
+      "Usa passos laterais para distâncias curtas e um passo cruzado para iniciar uma recuperação mais longa.",
+      "Calcula o tempo para estares de volta e fazeres o split step quando o adversário bate."
+     ],
+     "q": "Depois de bater, costumas ficar a ver a bola ou mexes-te logo?",
+     "c": "Faz 10 direitas no ar e, depois de cada uma, volta com passos laterais a um centro imaginário e faz split step."
+    },
+    "pt_BR": {
+     "t": "Recuperação com os pés",
+     "g": "Aprenda a voltar para a posição depois de cada golpe.",
+     "p": [
+      "Recupere para o meio dos ângulos possíveis do adversário, muitas vezes um pouco ao lado da marca central.",
+      "Use passos laterais para distâncias curtas e um passo cruzado para começar uma recuperação mais longa.",
+      "Calcule o tempo para estar de volta e fazer o split step bem quando o adversário bate."
+     ],
+     "q": "Depois de bater, você costuma ficar olhando a bola ou se mexe na hora?",
+     "c": "Faça 10 forehands no ar e, depois de cada um, volte com passos laterais a um centro imaginário e faça o split step."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving to wide balls",
+     "g": "Learn the crossover step and open-stance hitting for balls on the run.",
+     "p": [
+      "For a wide ball, pivot and cross the outside leg over the inside one to cover ground fast.",
+      "On the last step, plant your outside foot and hit with an open stance, chest facing the net.",
+      "Push off that loaded outside leg to start recovering as soon as the swing is done."
+     ],
+     "q": "What do you think is harder: reaching a wide ball or getting back afterwards?",
+     "c": "Practise 10 crossover starts to each side, then 10 shadow forehands from an open stance."
+    },
+    "de": {
+     "t": "Zu weiten Bällen laufen",
+     "g": "Lerne Kreuzschritt und offene Schlagstellung für Bälle im Laufen.",
+     "p": [
+      "Bei einem weiten Ball drehst du dich und führst das äußere Bein über das innere, um schnell Raum zu gewinnen.",
+      "Beim letzten Schritt setzt du den äußeren Fuß auf und schlägst offen, die Brust zum Netz.",
+      "Drück dich von diesem geladenen Bein ab, um gleich nach dem Schwung zurückzulaufen."
+     ],
+     "q": "Was ist für dich schwerer: einen weiten Ball zu erreichen oder danach zurückzukommen?",
+     "c": "Übe 10 Kreuzschritt-Starts zu jeder Seite und danach 10 Schattenvorhände aus offener Stellung."
+    },
+    "es": {
+     "t": "Desplazarse a bolas abiertas",
+     "g": "Aprende el paso cruzado y el golpe con apoyo abierto para bolas en carrera.",
+     "p": [
+      "Ante una bola abierta, pivota y cruza la pierna exterior por delante de la interior para avanzar rápido.",
+      "En el último paso apoya el pie exterior y golpea con apoyo abierto, con el pecho hacia la red.",
+      "Empuja desde esa pierna exterior cargada para empezar a recuperar en cuanto termines el golpe."
+     ],
+     "q": "¿Qué te parece más difícil: llegar a una bola abierta o volver después?",
+     "c": "Practica 10 salidas con paso cruzado a cada lado y luego 10 derechas en sombra con apoyo abierto."
+    },
+    "fr": {
+     "t": "Se déplacer sur les balles larges",
+     "g": "Apprends le pas croisé et la frappe en appui ouvert pour les balles en course.",
+     "p": [
+      "Sur une balle large, pivote et croise la jambe extérieure devant l'intérieure pour avancer vite.",
+      "Au dernier pas, plante le pied extérieur et frappe en appui ouvert, poitrine face au filet.",
+      "Pousse sur cette jambe extérieure chargée pour te replacer dès la fin du geste."
+     ],
+     "q": "Qu'est-ce qui est le plus dur : atteindre une balle large ou revenir ensuite ?",
+     "c": "Fais 10 départs en pas croisé de chaque côté, puis 10 coups droits à vide en appui ouvert."
+    },
+    "it": {
+     "t": "Spostarsi sulle palle larghe",
+     "g": "Impara il passo incrociato e il colpo in open stance per le palle in corsa.",
+     "p": [
+      "Su una palla larga, ruota e incrocia la gamba esterna davanti a quella interna per coprire spazio in fretta.",
+      "All'ultimo passo pianta il piede esterno e colpisci in open stance, petto verso la rete.",
+      "Spingi su quella gamba esterna carica per iniziare a recuperare appena finito il colpo."
+     ],
+     "q": "Cosa ti sembra più difficile: arrivare su una palla larga o tornare dopo?",
+     "c": "Fai 10 partenze con passo incrociato per lato, poi 10 dritti a vuoto in open stance."
+    },
+    "pt": {
+     "t": "Chegar às bolas abertas",
+     "g": "Aprende o passo cruzado e a pancada com apoio aberto para bolas em corrida.",
+     "p": [
+      "Numa bola aberta, roda e cruza a perna de fora à frente da de dentro para ganhar terreno depressa.",
+      "No último passo, apoia o pé de fora e bate com apoio aberto, peito virado para a rede.",
+      "Empurra a partir dessa perna de fora carregada para começar a recuperar assim que acabas a pancada."
+     ],
+     "q": "O que te parece mais difícil: chegar a uma bola aberta ou voltar depois?",
+     "c": "Pratica 10 arranques com passo cruzado para cada lado e depois 10 direitas no ar com apoio aberto."
+    },
+    "pt_BR": {
+     "t": "Chegar nas bolas abertas",
+     "g": "Aprenda o passo cruzado e a batida com base aberta para bolas em corrida.",
+     "p": [
+      "Numa bola aberta, gire e cruze a perna de fora na frente da de dentro para ganhar terreno rápido.",
+      "No último passo, firme o pé de fora e bata com base aberta, peito virado para a rede.",
+      "Empurre a partir dessa perna de fora carregada para começar a recuperar assim que terminar o golpe."
+     ],
+     "q": "O que parece mais difícil: alcançar uma bola aberta ou voltar depois?",
+     "c": "Pratique 10 saídas com passo cruzado para cada lado e depois 10 forehands no ar com base aberta."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Attacking short balls",
+     "g": "Learn to move forward and take advantage of a short ball.",
+     "p": [
+      "A ball landing around the service line is a chance: move in early instead of waiting for it to come to you.",
+      "Take it at waist height or higher if you can, so you can hit through it with control.",
+      "Aim deep or into the open court rather than going for a risky winner every time."
+     ],
+     "q": "When you see an easy ball, do you get excited and rush, or stay calm?",
+     "c": "Watch a match and spot three short balls: did the player attack them or stay back?"
+    },
+    "de": {
+     "t": "Kurze Bälle angreifen",
+     "g": "Lerne, nach vorn zu gehen und einen kurzen Ball zu nutzen.",
+     "p": [
+      "Ein Ball um die Aufschlaglinie ist eine Chance: früh vorrücken statt warten, bis er zu dir kommt.",
+      "Nimm ihn möglichst auf Hüfthöhe oder höher, damit du kontrolliert durchschlagen kannst.",
+      "Ziele tief oder ins offene Feld, statt jedes Mal einen riskanten Winner zu suchen."
+     ],
+     "q": "Wenn ein leichter Ball kommt: Wirst du hektisch oder bleibst du ruhig?",
+     "c": "Schau ein Match und finde drei kurze Bälle: Hat der Spieler angegriffen oder ist er hinten geblieben?"
+    },
+    "es": {
+     "t": "Atacar bolas cortas",
+     "g": "Aprende a ir hacia delante para aprovechar una bola corta.",
+     "p": [
+      "Una bola que cae cerca de la línea de saque es una oportunidad: avanza pronto en vez de esperar a que llegue.",
+      "Tómala a la altura de la cintura o más alta si puedes, para golpearla con control.",
+      "Apunta profundo o a la zona libre en lugar de buscar siempre un golpe ganador arriesgado."
+     ],
+     "q": "Cuando ves una bola fácil, ¿te aceleras o mantienes la calma?",
+     "c": "Mira un partido y detecta tres bolas cortas: ¿el jugador atacó o se quedó atrás?"
+    },
+    "fr": {
+     "t": "Attaquer les balles courtes",
+     "g": "Apprends à avancer pour profiter d'une balle courte.",
+     "p": [
+      "Une balle qui tombe vers la ligne de service est une occasion : avance tôt au lieu d'attendre qu'elle vienne à toi.",
+      "Prends-la à hauteur de taille ou plus haut si possible, pour frapper à travers avec contrôle.",
+      "Vise en profondeur ou dans le côté ouvert plutôt que de tenter à chaque fois un coup gagnant risqué."
+     ],
+     "q": "Face à une balle facile, tu t'excites et te précipites, ou tu restes calme ?",
+     "c": "Regarde un match et repère trois balles courtes : le joueur a-t-il attaqué ou est-il resté au fond ?"
+    },
+    "it": {
+     "t": "Attaccare le palle corte",
+     "g": "Impara ad avanzare per sfruttare una palla corta.",
+     "p": [
+      "Una palla che cade vicino alla linea del servizio è un'occasione: avanza presto invece di aspettare che arrivi.",
+      "Prendila all'altezza della vita o più in alto se puoi, così la colpisci con controllo.",
+      "Mira profondo o nel campo libero invece di cercare ogni volta un vincente rischioso."
+     ],
+     "q": "Quando vedi una palla facile, ti agiti e corri o resti calmo?",
+     "c": "Guarda una partita e individua tre palle corte: il giocatore ha attaccato o è rimasto dietro?"
+    },
+    "pt": {
+     "t": "Atacar bolas curtas",
+     "g": "Aprende a avançar para aproveitar uma bola curta.",
+     "p": [
+      "Uma bola que cai perto da linha de serviço é uma oportunidade: avança cedo em vez de esperar que ela chegue.",
+      "Apanha-a à altura da cintura ou mais acima se puderes, para bateres com controlo.",
+      "Aponta fundo ou para o lado aberto em vez de tentar sempre um winner arriscado."
+     ],
+     "q": "Quando vês uma bola fácil, ficas ansioso e precipitas-te ou manténs a calma?",
+     "c": "Vê uma partida e encontra três bolas curtas: o jogador atacou ou ficou atrás?"
+    },
+    "pt_BR": {
+     "t": "Atacar bolas curtas",
+     "g": "Aprenda a avançar para aproveitar uma bola curta.",
+     "p": [
+      "Uma bola que cai perto da linha de saque é uma chance: avance cedo em vez de esperar que ela chegue.",
+      "Pegue a bola na altura da cintura ou mais alto, se puder, para bater com controle.",
+      "Mire fundo ou no lado aberto em vez de tentar sempre um winner arriscado."
+     ],
+     "q": "Quando vê uma bola fácil, você se afoba ou mantém a calma?",
+     "c": "Assista a uma partida e encontre três bolas curtas: o jogador atacou ou ficou atrás?"
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The approach shot",
+     "g": "Learn to hit deep and follow the ball to the net.",
+     "p": [
+      "An approach shot is hit while moving forward, aiming deep, often down the line, to set up a volley.",
+      "Many players use a slice approach because it stays low and makes the passing shot harder.",
+      "After hitting, keep moving forward and split step as your opponent hits, ready to volley."
+     ],
+     "q": "Would you enjoy finishing points at the net, or does the baseline feel safer?",
+     "c": "Shadow 5 approach shots, each followed by three steps forward and a split step."
+    },
+    "de": {
+     "t": "Der Angriffsball",
+     "g": "Lerne, tief zu spielen und dem Ball ans Netz zu folgen.",
+     "p": [
+      "Einen Angriffsball spielst du im Vorwärtsgehen, tief und oft longline, um einen Volley vorzubereiten.",
+      "Viele spielen ihn mit Slice, weil er flach bleibt und den Passierschlag erschwert.",
+      "Lauf danach weiter nach vorn und mach den Split-Step, wenn der Gegner trifft, bereit zum Volley."
+     ],
+     "q": "Würde es dir Spaß machen, Punkte am Netz zu beenden, oder fühlt sich die Grundlinie sicherer an?",
+     "c": "Mach 5 Schatten-Angriffsbälle, jeweils gefolgt von drei Schritten nach vorn und einem Split-Step."
+    },
+    "es": {
+     "t": "El golpe de aproximación",
+     "g": "Aprende a golpear profundo y seguir la pelota hasta la red.",
+     "p": [
+      "El golpe de aproximación se da avanzando, profundo y a menudo paralelo, para preparar la volea.",
+      "Muchos lo hacen cortado, porque la bola bota baja y dificulta el passing.",
+      "Tras golpear, sigue avanzando y haz split step cuando el rival golpea, listo para volear."
+     ],
+     "q": "¿Te gustaría cerrar puntos en la red o te sientes más seguro en el fondo?",
+     "c": "Haz 5 aproximaciones en sombra, cada una seguida de tres pasos adelante y un split step."
+    },
+    "fr": {
+     "t": "La montée au filet",
+     "g": "Apprends à frapper long et à suivre la balle jusqu'au filet.",
+     "p": [
+      "La balle d'approche se joue en avançant, en profondeur, souvent le long de la ligne, pour préparer la volée.",
+      "Beaucoup la jouent en slice, car la balle reste basse et complique le passing.",
+      "Après la frappe, continue d'avancer et fais ton pas d'allègement quand l'adversaire frappe, prêt à volleyer."
+     ],
+     "q": "Aimerais-tu finir les points au filet, ou le fond de court te semble-t-il plus sûr ?",
+     "c": "Fais 5 approches à vide, chacune suivie de trois pas en avant et d'un pas d'allègement."
+    },
+    "it": {
+     "t": "Il colpo d'approccio",
+     "g": "Impara a colpire profondo e seguire la palla a rete.",
+     "p": [
+      "Il colpo d'approccio si gioca avanzando, profondo e spesso lungolinea, per preparare la volée.",
+      "Molti lo giocano in slice, perché la palla resta bassa e rende più difficile il passante.",
+      "Dopo il colpo continua ad avanzare e fai lo split step quando l'avversario colpisce, pronto alla volée."
+     ],
+     "q": "Ti piacerebbe chiudere i punti a rete o il fondo campo ti sembra più sicuro?",
+     "c": "Fai 5 approcci a vuoto, ognuno seguito da tre passi avanti e uno split step."
+    },
+    "pt": {
+     "t": "A pancada de aproximação",
+     "g": "Aprende a bater fundo e seguir a bola até à rede.",
+     "p": [
+      "A aproximação bate-se a avançar, funda e muitas vezes em paralelo, para preparar o vólei.",
+      "Muitos jogadores fazem-na em slice, porque a bola fica baixa e dificulta a passagem.",
+      "Depois de bater, continua a avançar e faz split step quando o adversário bate, pronto para o vólei."
+     ],
+     "q": "Gostavas de fechar pontos na rede ou o fundo do campo parece-te mais seguro?",
+     "c": "Faz 5 aproximações no ar, cada uma seguida de três passos em frente e um split step."
+    },
+    "pt_BR": {
+     "t": "A bola de aproximação",
+     "g": "Aprenda a bater fundo e seguir a bola até a rede.",
+     "p": [
+      "A aproximação é batida avançando, funda e muitas vezes na paralela, para preparar o voleio.",
+      "Muitos jogadores fazem com slice, porque a bola fica baixa e dificulta a passada.",
+      "Depois de bater, continue avançando e faça o split step quando o adversário bater, pronto para volear."
+     ],
+     "q": "Você curtiria fechar pontos na rede ou o fundo da quadra parece mais seguro?",
+     "c": "Faça 5 aproximações no ar, cada uma seguida de três passos à frente e um split step."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hitting a lob",
+     "g": "Learn defensive and offensive lobs over a net player.",
+     "p": [
+      "A defensive lob goes very high and deep, buying you time to recover when you are under pressure.",
+      "An offensive lob is lower and faster, often with topspin, aimed just over the net player's reach.",
+      "Open the racket face and swing up smoothly; aim to land the ball near the baseline, not mid-court."
+     ],
+     "q": "Have you ever seen a lob land perfectly on the baseline? How did the crowd react?",
+     "c": "Toss and hit 10 gentle lobs, aiming for a spot near the baseline, or shadow them if no court."
+    },
+    "de": {
+     "t": "Der Lob",
+     "g": "Lerne defensive und offensive Lobs über einen Netzspieler.",
+     "p": [
+      "Ein defensiver Lob fliegt sehr hoch und tief und verschafft dir Zeit, wenn du unter Druck stehst.",
+      "Ein offensiver Lob ist flacher und schneller, oft mit Topspin, knapp über die Reichweite des Netzspielers.",
+      "Öffne die Schlagfläche und schwinge ruhig nach oben; der Ball soll nahe der Grundlinie landen, nicht im Mittelfeld."
+     ],
+     "q": "Hast du schon einen Lob perfekt auf der Grundlinie landen sehen? Wie reagierte das Publikum?",
+     "c": "Wirf und spiel 10 sanfte Lobs Richtung Grundlinie, oder übe sie als Schattenschläge ohne Platz."
+    },
+    "es": {
+     "t": "El globo",
+     "g": "Aprende el globo defensivo y el ofensivo por encima de quien está en la red.",
+     "p": [
+      "El globo defensivo va muy alto y profundo y te da tiempo para recuperar cuando estás presionado.",
+      "El ofensivo es más bajo y rápido, a menudo liftado, justo por encima del alcance del rival en la red.",
+      "Abre la cara de la raqueta y sube con suavidad; busca que caiga cerca del fondo, no en mitad de pista."
+     ],
+     "q": "¿Has visto alguna vez un globo caer justo en la línea de fondo? ¿Cómo reaccionó el público?",
+     "c": "Lanza y golpea 10 globos suaves buscando caer cerca del fondo, o hazlos en sombra si no tienes pista."
+    },
+    "fr": {
+     "t": "Le lob",
+     "g": "Apprends le lob défensif et le lob offensif au-dessus d'un joueur au filet.",
+     "p": [
+      "Le lob défensif monte très haut et loin, pour gagner du temps quand tu es sous pression.",
+      "Le lob offensif est plus bas et plus rapide, souvent lifté, juste au-dessus de la portée du joueur au filet.",
+      "Ouvre le tamis et monte en douceur ; vise près de la ligne de fond, pas le milieu du court."
+     ],
+     "q": "As-tu déjà vu un lob retomber pile sur la ligne de fond ? Comment a réagi le public ?",
+     "c": "Lance et frappe 10 lobs doux en visant près de la ligne de fond, ou fais-les à vide sans court."
+    },
+    "it": {
+     "t": "Il pallonetto",
+     "g": "Impara il pallonetto difensivo e quello offensivo sopra un giocatore a rete.",
+     "p": [
+      "Il pallonetto difensivo va molto alto e profondo e ti dà tempo per recuperare quando sei sotto pressione.",
+      "Quello offensivo è più basso e veloce, spesso in top, appena oltre la portata del giocatore a rete.",
+      "Apri il piatto e sali in modo fluido; punta a far cadere la palla vicino al fondo, non a metà campo."
+     ],
+     "q": "Hai mai visto un pallonetto cadere perfetto sulla riga di fondo? Come ha reagito il pubblico?",
+     "c": "Lancia e colpisci 10 pallonetti morbidi mirando vicino al fondo, o falli a vuoto se non hai un campo."
+    },
+    "pt": {
+     "t": "O balão",
+     "g": "Aprende o balão defensivo e o ofensivo por cima de quem está na rede.",
+     "p": [
+      "O balão defensivo vai muito alto e fundo e dá-te tempo para recuperar quando estás sob pressão.",
+      "O ofensivo é mais baixo e rápido, muitas vezes com topspin, logo acima do alcance de quem está na rede.",
+      "Abre a cara da raqueta e sobe com suavidade; procura que a bola caia perto do fundo, não a meio do campo."
+     ],
+     "q": "Já viste um balão cair mesmo em cima da linha de fundo? Como reagiu o público?",
+     "c": "Lança e bate 10 balões suaves a apontar para perto do fundo, ou faz no ar se não tiveres campo."
+    },
+    "pt_BR": {
+     "t": "O lob",
+     "g": "Aprenda o lob defensivo e o ofensivo por cima de quem está na rede.",
+     "p": [
+      "O lob defensivo vai bem alto e fundo e dá tempo para você se recuperar quando está sob pressão.",
+      "O ofensivo é mais baixo e rápido, muitas vezes com topspin, logo acima do alcance de quem está na rede.",
+      "Abra a face da raquete e suba suavemente; mire para a bola cair perto do fundo, não no meio da quadra."
+     ],
+     "q": "Você já viu um lob cair bem em cima da linha de base? Como a torcida reagiu?",
+     "c": "Lance e bata 10 lobs suaves mirando perto do fundo, ou faça no ar se não tiver quadra."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The drop shot",
+     "g": "Learn the drop shot, a soft shot that lands just over the net.",
+     "p": [
+      "Disguise it by preparing as if for a normal groundstroke, then slow the racket and slice softly under the ball.",
+      "Backspin makes the ball die after the bounce, ideally bouncing several times before the service line.",
+      "Use it when your opponent is far behind the baseline, and expect to move forward right after."
+     ],
+     "q": "Do you enjoy sneaky shots, or do you prefer power?",
+     "c": "Shadow 10 drop shots with the same preparation as your forehand, softening only at the last moment."
+    },
+    "de": {
+     "t": "Der Stopp",
+     "g": "Lerne den Stopp, einen weichen Ball, der knapp hinter dem Netz landet.",
+     "p": [
+      "Tarne ihn: Hol aus wie für einen normalen Grundschlag, bremse dann den Schläger und schneide sanft unter den Ball.",
+      "Rückwärtsdrall lässt den Ball nach dem Aufsprung sterben, idealerweise springt er mehrmals vor der Aufschlaglinie.",
+      "Spiel ihn, wenn dein Gegner weit hinter der Grundlinie steht, und rücke danach gleich vor."
+     ],
+     "q": "Magst du raffinierte Schläge oder lieber Power?",
+     "c": "Mach 10 Schatten-Stopps mit derselben Ausholbewegung wie deine Vorhand und werde erst im letzten Moment weich."
+    },
+    "es": {
+     "t": "La dejada",
+     "g": "Aprende la dejada, un golpe suave que cae justo detrás de la red.",
+     "p": [
+      "Disimúlala preparando como para un golpe normal; luego frena la raqueta y corta suave por debajo de la pelota.",
+      "El efecto hace que la pelota muera tras el bote, idealmente botando varias veces antes de la línea de saque.",
+      "Úsala cuando el rival esté muy detrás del fondo, y prepárate para avanzar justo después."
+     ],
+     "q": "¿Disfrutas con los golpes astutos o prefieres la potencia?",
+     "c": "Haz 10 dejadas en sombra con la misma preparación que tu derecha, suavizando solo en el último momento."
+    },
+    "fr": {
+     "t": "L'amortie",
+     "g": "Apprends l'amortie, un coup tout en douceur qui tombe juste derrière le filet.",
+     "p": [
+      "Masque-la en préparant comme un coup normal, puis freine la raquette et coupe doucement sous la balle.",
+      "L'effet rétro fait mourir la balle après le rebond, idéalement plusieurs rebonds avant la ligne de service.",
+      "Joue-la quand l'adversaire est loin derrière sa ligne de fond, et prépare-toi à avancer juste après."
+     ],
+     "q": "Tu aimes les coups malins ou tu préfères la puissance ?",
+     "c": "Fais 10 amorties à vide avec la même préparation que ton coup droit, en adoucissant au dernier moment."
+    },
+    "it": {
+     "t": "La palla corta",
+     "g": "Impara la palla corta, un colpo morbido che cade appena oltre la rete.",
+     "p": [
+      "Mascherala preparando come per un colpo normale, poi rallenta la racchetta e taglia piano sotto la palla.",
+      "Il backspin fa morire la palla dopo il rimbalzo, che idealmente rimbalza più volte prima della linea del servizio.",
+      "Usala quando l'avversario è molto dietro la linea di fondo, e preparati ad avanzare subito dopo."
+     ],
+     "q": "Ti piacciono i colpi furbi o preferisci la potenza?",
+     "c": "Fai 10 palle corte a vuoto con la stessa preparazione del dritto, ammorbidendo solo all'ultimo momento."
+    },
+    "pt": {
+     "t": "O amortie",
+     "g": "Aprende o amortie, uma pancada suave que cai logo a seguir à rede.",
+     "p": [
+      "Disfarça-o preparando como para uma pancada normal; depois trava a raqueta e corta suavemente por baixo da bola.",
+      "O efeito faz a bola morrer depois do ressalto, idealmente ressaltando várias vezes antes da linha de serviço.",
+      "Usa-o quando o adversário está muito atrás da linha de fundo, e prepara-te para avançar logo a seguir."
+     ],
+     "q": "Gostas de pancadas matreiras ou preferes potência?",
+     "c": "Faz 10 amorties no ar com a mesma preparação da tua direita, suavizando só no último momento."
+    },
+    "pt_BR": {
+     "t": "A deixadinha",
+     "g": "Aprenda a deixadinha, um golpe suave que cai logo depois da rede.",
+     "p": [
+      "Disfarce preparando como para um golpe normal; depois freie a raquete e corte suavemente por baixo da bola.",
+      "O efeito faz a bola morrer depois do quique, de preferência quicando várias vezes antes da linha de saque.",
+      "Use quando o adversário estiver bem atrás da linha de base, e prepare-se para avançar logo em seguida."
+     ],
+     "q": "Você curte golpes espertos ou prefere potência?",
+     "c": "Faça 10 deixadinhas no ar com a mesma preparação do seu forehand, suavizando só no último momento."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Second serve basics",
+     "g": "Learn a safer second serve with more spin and fewer double faults.",
+     "p": [
+      "On the second serve, add spin instead of speed: brushing up and across the ball makes it dip into the box.",
+      "Aim higher over the net and toward a big target, such as the middle of the box.",
+      "Keep the same full, relaxed swing; slowing your arm down out of fear often causes the double fault."
+     ],
+     "q": "How do you usually feel when you have only one serve left?",
+     "c": "Shadow 10 second serves, brushing up the back of an imaginary ball, and say spin, not speed."
+    },
+    "de": {
+     "t": "Grundlagen des zweiten Aufschlags",
+     "g": "Lerne einen sichereren zweiten Aufschlag mit mehr Spin und weniger Doppelfehlern.",
+     "p": [
+      "Beim zweiten Aufschlag mehr Spin statt Tempo: Bürste nach oben und quer über den Ball, damit er ins Feld abtaucht.",
+      "Ziele höher übers Netz und auf ein großes Ziel, etwa die Mitte des Aufschlagfelds.",
+      "Behalte den vollen, lockeren Schwung; den Arm aus Angst zu bremsen, führt oft zum Doppelfehler."
+     ],
+     "q": "Wie fühlst du dich meistens, wenn du nur noch einen Aufschlag hast?",
+     "c": "Mach 10 Schatten-Zweitaufschläge, bürste über einen gedachten Ball und sag: Spin, nicht Tempo."
+    },
+    "es": {
+     "t": "Fundamentos del segundo saque",
+     "g": "Aprende un segundo saque más seguro, con más efecto y menos dobles faltas.",
+     "p": [
+      "En el segundo saque, más efecto que velocidad: cepillar la pelota hacia arriba y de lado la hace caer en el cuadro.",
+      "Apunta más alto sobre la red y a un objetivo grande, como el centro del cuadro.",
+      "Mantén el mismo golpe completo y suelto; frenar el brazo por miedo suele provocar la doble falta."
+     ],
+     "q": "¿Cómo te sientes normalmente cuando solo te queda un saque?",
+     "c": "Haz 10 segundos saques en sombra, cepillando una pelota imaginaria, y repite: efecto, no velocidad."
+    },
+    "fr": {
+     "t": "Les bases de la seconde balle",
+     "g": "Apprends une seconde balle plus sûre, avec plus d'effet et moins de doubles fautes.",
+     "p": [
+      "En seconde balle, de l'effet plutôt que de la vitesse : brosser la balle vers le haut et de côté la fait plonger dans le carré.",
+      "Vise plus haut au-dessus du filet et une grande cible, comme le milieu du carré.",
+      "Garde le même geste ample et relâché ; freiner le bras par peur provoque souvent la double faute."
+     ],
+     "q": "Comment te sens-tu d'habitude quand il ne te reste qu'une balle de service ?",
+     "c": "Fais 10 secondes balles à vide en brossant une balle imaginaire, et répète : effet, pas vitesse."
+    },
+    "it": {
+     "t": "Basi della seconda di servizio",
+     "g": "Impara una seconda più sicura, con più rotazione e meno doppi falli.",
+     "p": [
+      "Sulla seconda, rotazione invece di velocità: spazzolare la palla verso l'alto e di lato la fa scendere nel riquadro.",
+      "Mira più alto sopra la rete e verso un bersaglio ampio, come il centro del riquadro.",
+      "Mantieni lo stesso gesto completo e rilassato; rallentare il braccio per paura spesso causa il doppio fallo."
+     ],
+     "q": "Come ti senti di solito quando ti resta solo un servizio?",
+     "c": "Fai 10 seconde a vuoto spazzolando una palla immaginaria, e ripeti: rotazione, non velocità."
+    },
+    "pt": {
+     "t": "Bases do segundo serviço",
+     "g": "Aprende um segundo serviço mais seguro, com mais efeito e menos duplas faltas.",
+     "p": [
+      "No segundo serviço, efeito em vez de velocidade: escovar a bola para cima e de lado fá-la cair no quadrado.",
+      "Aponta mais alto sobre a rede e para um alvo grande, como o meio do quadrado.",
+      "Mantém o mesmo gesto completo e solto; travar o braço por medo causa muitas vezes a dupla falta."
+     ],
+     "q": "Como te costumas sentir quando só te resta um serviço?",
+     "c": "Faz 10 segundos serviços no ar, escovando uma bola imaginária, e repete: efeito, não velocidade."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do segundo saque",
+     "g": "Aprenda um segundo saque mais seguro, com mais efeito e menos duplas faltas.",
+     "p": [
+      "No segundo saque, efeito em vez de velocidade: escovar a bola para cima e de lado faz ela cair na área.",
+      "Mire mais alto sobre a rede e num alvo grande, como o meio da área de saque.",
+      "Mantenha o mesmo movimento completo e solto; frear o braço por medo costuma causar a dupla falta."
+     ],
+     "q": "Como você costuma se sentir quando só resta um saque?",
+     "c": "Faça 10 segundos saques no ar, escovando uma bola imaginária, e repita: efeito, não velocidade."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: spin and placement",
+     "g": "Recap the spin types, shot directions and court movement from this month.",
+     "p": [
+      "Spin: topspin dips and kicks up, slice stays low and skids, flat shots are fast but leave less margin.",
+      "Placement: cross-court is longer and safer, down the line surprises, and depth plus net clearance keep you safe.",
+      "Movement: recover after each shot, use crossover steps for wide balls and move in on short balls."
+     ],
+     "q": "Which new shot from this month do you most want to try on court?",
+     "c": "Without notes, list one situation where you would use a lob, a drop shot and an approach shot."
+    },
+    "de": {
+     "t": "Rückblick: Spin und Platzierung",
+     "g": "Wiederhole die Spinarten, Schlagrichtungen und Laufwege dieses Monats.",
+     "p": [
+      "Spin: Topspin taucht ab und springt hoch, Slice bleibt flach und rutscht, flache Bälle sind schnell, aber riskanter.",
+      "Platzierung: Cross ist länger und sicherer, longline überrascht, Länge und Netzhöhe geben Sicherheit.",
+      "Bewegung: Nach jedem Schlag zurück, Kreuzschritt zu weiten Bällen, bei kurzen Bällen vorrücken."
+     ],
+     "q": "Welchen neuen Schlag dieses Monats möchtest du am liebsten auf dem Platz ausprobieren?",
+     "c": "Nenne ohne Notizen je eine Situation für Lob, Stopp und Angriffsball."
+    },
+    "es": {
+     "t": "Repaso: efectos y colocación",
+     "g": "Repasa los efectos, las direcciones y el movimiento en pista de este mes.",
+     "p": [
+      "Efectos: el liftado cae y salta, el cortado bota bajo y resbala, el plano es rápido pero con menos margen.",
+      "Colocación: el cruzado es más largo y seguro, el paralelo sorprende, y profundidad y altura dan seguridad.",
+      "Movimiento: recupera tras cada golpe, usa el paso cruzado en bolas abiertas y avanza en las cortas."
+     ],
+     "q": "¿Qué golpe nuevo de este mes te apetece más probar en la pista?",
+     "c": "Sin apuntes, di una situación en la que usarías un globo, una dejada y un golpe de aproximación."
+    },
+    "fr": {
+     "t": "Bilan : effets et placement",
+     "g": "Révise les effets, les directions de frappe et les déplacements du mois.",
+     "p": [
+      "Effets : le lift plonge et rebondit haut, le slice reste bas et fuse, le coup à plat est rapide mais plus risqué.",
+      "Placement : le croisé est plus long et plus sûr, le long de la ligne surprend, profondeur et hauteur sécurisent.",
+      "Déplacement : replace-toi après chaque coup, pas croisé sur les balles larges, avance sur les balles courtes."
+     ],
+     "q": "Quel nouveau coup du mois as-tu le plus envie d'essayer sur le court ?",
+     "c": "Sans notes, cite une situation pour un lob, une amortie et une montée au filet."
+    },
+    "it": {
+     "t": "Ripasso: rotazioni e piazzamento",
+     "g": "Ripassa le rotazioni, le direzioni dei colpi e gli spostamenti di questo mese.",
+     "p": [
+      "Rotazioni: il top scende e schizza, lo slice resta basso e radente, il piatto è veloce ma con meno margine.",
+      "Piazzamento: l'incrociato è più lungo e sicuro, il lungolinea sorprende, profondità e altezza danno sicurezza.",
+      "Movimento: recupera dopo ogni colpo, passo incrociato sulle palle larghe, avanza sulle palle corte."
+     ],
+     "q": "Quale nuovo colpo di questo mese vorresti di più provare in campo?",
+     "c": "Senza appunti, indica una situazione per un pallonetto, una palla corta e un colpo d'approccio."
+    },
+    "pt": {
+     "t": "Revisão: efeitos e colocação",
+     "g": "Revê os efeitos, as direções das pancadas e o movimento em campo deste mês.",
+     "p": [
+      "Efeitos: o topspin mergulha e salta, o slice fica baixo e desliza, a pancada plana é rápida mas com menos margem.",
+      "Colocação: a cruzada é mais longa e segura, a paralela surpreende, e profundidade e altura dão segurança.",
+      "Movimento: recupera depois de cada pancada, usa o passo cruzado em bolas abertas e avança nas curtas."
+     ],
+     "q": "Que nova pancada deste mês tens mais vontade de experimentar no campo?",
+     "c": "Sem apontamentos, diz uma situação para usar um balão, um amortie e uma aproximação."
+    },
+    "pt_BR": {
+     "t": "Revisão: efeitos e colocação",
+     "g": "Revise os efeitos, as direções dos golpes e a movimentação deste mês.",
+     "p": [
+      "Efeitos: o topspin mergulha e salta, o slice fica baixo e desliza, o chapado é rápido mas com menos margem.",
+      "Colocação: a cruzada é mais longa e segura, a paralela surpreende, e profundidade e altura dão segurança.",
+      "Movimento: recupere depois de cada golpe, use o passo cruzado nas bolas abertas e avance nas curtas."
+     ],
+     "q": "Qual golpe novo deste mês você mais quer testar na quadra?",
+     "c": "Sem anotações, diga uma situação para usar um lob, uma deixadinha e uma aproximação."
+    }
+   }
+  }
+ ]
+}

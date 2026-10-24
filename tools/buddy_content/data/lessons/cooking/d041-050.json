@@ -1,0 +1,835 @@
+{
+ "topic": "cooking",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking other grains",
+     "g": "Learn to cook couscous, quinoa, bulgur and barley with simple water ratios.",
+     "p": [
+      "Couscous just needs boiling water poured over, about equal volume, covered for five minutes.",
+      "Rinse quinoa first, then simmer with about twice its volume of water for around 15 minutes.",
+      "Bulgur cooks quickly like couscous, while barley needs longer simmering in plenty of water."
+     ],
+     "q": "Which grain have you never tried but are curious about?",
+     "c": "Cook a small batch of couscous or quinoa and season it with olive oil, lemon and herbs."
+    },
+    "de": {
+     "t": "Weitere Getreidesorten",
+     "g": "Lerne Couscous, Quinoa, Bulgur und Gerste mit einfachen Wassermengen zu kochen.",
+     "p": [
+      "Für Couscous gießt du etwa gleich viel kochendes Wasser darüber und lässt ihn fünf Minuten zugedeckt quellen.",
+      "Spül Quinoa zuerst ab und köchle sie mit etwa doppelter Menge Wasser rund 15 Minuten.",
+      "Bulgur gart schnell wie Couscous, Gerste braucht länger in reichlich Wasser."
+     ],
+     "q": "Welches Getreide hast du noch nie probiert, findest es aber spannend?",
+     "c": "Koch eine kleine Portion Couscous oder Quinoa und würz sie mit Olivenöl, Zitrone und Kräutern."
+    },
+    "es": {
+     "t": "Otros cereales",
+     "g": "Aprende a cocinar cuscús, quinoa, bulgur y cebada con proporciones de agua sencillas.",
+     "p": [
+      "El cuscús solo necesita agua hirviendo por encima, más o menos el mismo volumen, tapado cinco minutos.",
+      "Lava la quinoa primero y cuécela con unas dos veces su volumen de agua unos 15 minutos.",
+      "El bulgur se hace rápido como el cuscús; la cebada necesita más tiempo en abundante agua."
+     ],
+     "q": "¿Qué cereal no has probado nunca pero te da curiosidad?",
+     "c": "Cocina una pequeña cantidad de cuscús o quinoa y alíñala con aceite de oliva, limón y hierbas."
+    },
+    "fr": {
+     "t": "Cuire d'autres céréales",
+     "g": "Apprends à cuire semoule de couscous, quinoa, boulgour et orge avec des proportions d'eau simples.",
+     "p": [
+      "La semoule demande juste de l'eau bouillante versée dessus, à volume à peu près égal, cinq minutes à couvert.",
+      "Rince le quinoa puis fais-le mijoter avec environ deux fois son volume d'eau pendant 15 minutes.",
+      "Le boulgour cuit vite comme la semoule ; l'orge demande plus longtemps dans beaucoup d'eau."
+     ],
+     "q": "Quelle céréale n'as-tu jamais goûtée mais te rend curieux ?",
+     "c": "Cuis un peu de semoule ou de quinoa et assaisonne avec huile d'olive, citron et herbes."
+    },
+    "it": {
+     "t": "Altri cereali",
+     "g": "Impara a cuocere cous cous, quinoa, bulgur e orzo con dosi d'acqua semplici.",
+     "p": [
+      "Il cous cous vuole solo acqua bollente versata sopra, circa lo stesso volume, coperto per cinque minuti.",
+      "Sciacqua prima la quinoa e cuocila con circa il doppio del suo volume d'acqua per 15 minuti.",
+      "Il bulgur cuoce in fretta come il cous cous, l'orzo invece richiede più tempo in tanta acqua."
+     ],
+     "q": "Quale cereale non hai mai provato ma ti incuriosisce?",
+     "c": "Cuoci un po' di cous cous o quinoa e condiscilo con olio d'oliva, limone ed erbe."
+    },
+    "pt": {
+     "t": "Outros cereais",
+     "g": "Aprende a cozinhar cuscuz, quinoa, bulgur e cevada com proporções de água simples.",
+     "p": [
+      "O cuscuz só precisa de água a ferver por cima, mais ou menos o mesmo volume, tapado cinco minutos.",
+      "Lava primeiro a quinoa e coze-a com cerca do dobro do volume de água uns 15 minutos.",
+      "O bulgur faz-se depressa como o cuscuz; a cevada precisa de mais tempo em bastante água."
+     ],
+     "q": "Que cereal nunca provaste mas te deixa curioso?",
+     "c": "Cozinha uma pequena porção de cuscuz ou quinoa e tempera com azeite, limão e ervas."
+    },
+    "pt_BR": {
+     "t": "Outros grãos",
+     "g": "Aprenda a cozinhar cuscuz marroquino, quinoa, trigo para quibe e cevada com proporções simples de água.",
+     "p": [
+      "O cuscuz marroquino só pede água fervente por cima, mais ou menos o mesmo volume, tampado por cinco minutos.",
+      "Lave a quinoa antes e cozinhe com cerca do dobro do volume de água por uns 15 minutos.",
+      "O trigo para quibe fica pronto rápido como o cuscuz; a cevada precisa de mais tempo em bastante água."
+     ],
+     "q": "Qual grão você nunca provou mas tem curiosidade?",
+     "c": "Prepare uma pequena porção de cuscuz marroquino ou quinoa e tempere com azeite, limão e ervas."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stir-frying basics",
+     "g": "Learn high heat, full prep in advance and adding ingredients in the right order.",
+     "p": [
+      "Stir-frying is fast, so chop everything and mix your sauce before you turn on the heat.",
+      "Use a very hot wok or large pan with a neutral oil, and cook in small batches to keep the heat up.",
+      "Add ingredients from longest to shortest cooking: protein, hard vegetables, soft ones, then sauce."
+     ],
+     "q": "Which stir-fry ingredients do you like best?",
+     "c": "Prep all ingredients for a small stir-fry first, then cook them in order in a very hot pan."
+    },
+    "de": {
+     "t": "Grundlagen des Pfannenrührens",
+     "g": "Lerne hohe Hitze, komplette Vorbereitung und die richtige Reihenfolge der Zutaten.",
+     "p": [
+      "Pfannenrühren geht schnell, also alles schneiden und die Sauce mischen, bevor du den Herd anschaltest.",
+      "Nimm einen sehr heißen Wok oder große Pfanne mit neutralem Öl und brate in kleinen Portionen.",
+      "Gib Zutaten von lang zu kurz garend hinein: Protein, festes Gemüse, weiches Gemüse, dann Sauce."
+     ],
+     "q": "Welche Zutaten magst du im Wokgericht am liebsten?",
+     "c": "Bereite alle Zutaten für ein kleines Wokgericht vor und brate sie dann der Reihe nach in sehr heißer Pfanne."
+    },
+    "es": {
+     "t": "Salteado al wok",
+     "g": "Aprende a usar fuego alto, tener todo preparado y añadir los ingredientes en el orden correcto.",
+     "p": [
+      "Saltear es rápido, así que corta todo y mezcla la salsa antes de encender el fuego.",
+      "Usa un wok o sartén grande muy caliente con aceite neutro, y cocina en tandas pequeñas para no perder calor.",
+      "Añade del más largo al más corto: proteína, verduras duras, verduras blandas y luego la salsa."
+     ],
+     "q": "¿Qué ingredientes te gustan más en un salteado?",
+     "c": "Prepara todo para un salteado pequeño y cocínalo por orden en una sartén muy caliente."
+    },
+    "fr": {
+     "t": "Les bases du sauté au wok",
+     "g": "Apprends le feu vif, une préparation complète à l'avance et le bon ordre des ingrédients.",
+     "p": [
+      "Le sauté va très vite : coupe tout et mélange ta sauce avant d'allumer le feu.",
+      "Utilise un wok ou une grande poêle très chaude avec une huile neutre, et cuis par petites quantités.",
+      "Ajoute du plus long au plus court : protéine, légumes durs, légumes tendres, puis la sauce."
+     ],
+     "q": "Quels ingrédients préfères-tu dans un sauté ?",
+     "c": "Prépare tous les ingrédients d'un petit sauté, puis cuis-les dans l'ordre dans une poêle très chaude."
+    },
+    "it": {
+     "t": "Le basi del saltato",
+     "g": "Impara fiamma alta, tutto pronto in anticipo e ingredienti aggiunti nell'ordine giusto.",
+     "p": [
+      "Il saltato è velocissimo: taglia tutto e prepara la salsa prima di accendere il fuoco.",
+      "Usa un wok o una padella grande molto calda con olio neutro, e cuoci in piccole quantità.",
+      "Aggiungi dal più lungo al più rapido: proteine, verdure dure, verdure tenere, poi la salsa."
+     ],
+     "q": "Quali ingredienti preferisci in un saltato?",
+     "c": "Prepara tutti gli ingredienti di un piccolo saltato, poi cuocili in ordine in una padella molto calda."
+    },
+    "pt": {
+     "t": "O básico do salteado",
+     "g": "Aprende lume forte, tudo preparado antes e a ordem certa dos ingredientes.",
+     "p": [
+      "O salteado é rápido, por isso corta tudo e mistura o molho antes de ligar o lume.",
+      "Usa um wok ou frigideira grande muito quente com óleo neutro, e cozinha em pequenas quantidades.",
+      "Junta do mais demorado ao mais rápido: proteína, legumes duros, legumes macios e depois o molho."
+     ],
+     "q": "Que ingredientes preferes num salteado?",
+     "c": "Prepara todos os ingredientes de um pequeno salteado e cozinha-os por ordem numa frigideira muito quente."
+    },
+    "pt_BR": {
+     "t": "O básico do stir-fry",
+     "g": "Aprenda fogo alto, tudo preparado antes e a ordem certa de colocar os ingredientes.",
+     "p": [
+      "O stir-fry é rápido, então corte tudo e misture o molho antes de acender o fogo.",
+      "Use um wok ou frigideira grande bem quente com óleo neutro, e cozinhe em pequenas levas.",
+      "Coloque do mais demorado ao mais rápido: proteína, legumes duros, legumes macios e depois o molho."
+     ],
+     "q": "Quais ingredientes você mais gosta num stir-fry?",
+     "c": "Prepare todos os ingredientes de um pequeno stir-fry e cozinhe na ordem numa frigideira bem quente."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple fried rice",
+     "g": "Learn why cold leftover rice works best for this quick, flexible dish.",
+     "p": [
+      "Day-old rice from the fridge is drier, so the grains separate and fry instead of turning mushy.",
+      "Fry aromatics, add the rice and press it into the hot pan, then add vegetables, egg and soy sauce.",
+      "Store leftover rice in the fridge quickly after cooking and use it within a day for safety."
+     ],
+     "q": "What would you add to your perfect fried rice?",
+     "c": "Turn leftover rice into fried rice with an egg, a vegetable and a splash of soy sauce."
+    },
+    "de": {
+     "t": "Einfacher gebratener Reis",
+     "g": "Lerne, warum kalter Reis vom Vortag für dieses schnelle, flexible Gericht am besten ist.",
+     "p": [
+      "Reis vom Vortag aus dem Kühlschrank ist trockener, die Körner trennen sich und braten statt zu matschen.",
+      "Brate Aromaten an, gib den Reis dazu und drück ihn in die heiße Pfanne, dann Gemüse, Ei und Sojasauce.",
+      "Kühle übrig gebliebenen Reis nach dem Kochen schnell und verwende ihn sicherheitshalber innerhalb eines Tages."
+     ],
+     "q": "Was gehört für dich in den perfekten gebratenen Reis?",
+     "c": "Mach aus Reis vom Vortag gebratenen Reis mit Ei, einem Gemüse und einem Schuss Sojasauce."
+    },
+    "es": {
+     "t": "Arroz frito sencillo",
+     "g": "Aprende por qué el arroz frío del día anterior es el mejor para este plato rápido y flexible.",
+     "p": [
+      "El arroz de la nevera está más seco, así que los granos se separan y se fríen en vez de empastarse.",
+      "Sofríe los aromáticos, añade el arroz y presiónalo en la sartén caliente, luego verduras, huevo y soja.",
+      "Guarda el arroz sobrante en la nevera enseguida tras cocinarlo y úsalo en un día por seguridad."
+     ],
+     "q": "¿Qué le pondrías a tu arroz frito perfecto?",
+     "c": "Convierte arroz sobrante en arroz frito con un huevo, una verdura y un chorrito de salsa de soja."
+    },
+    "fr": {
+     "t": "Riz sauté simple",
+     "g": "Apprends pourquoi le riz froid de la veille est idéal pour ce plat rapide et flexible.",
+     "p": [
+      "Le riz de la veille sorti du frigo est plus sec : les grains se séparent et sautent au lieu de coller.",
+      "Fais revenir les aromates, ajoute le riz en l'écrasant dans la poêle chaude, puis légumes, œuf et sauce soja.",
+      "Mets vite le riz restant au frigo après cuisson et utilise-le dans la journée par sécurité."
+     ],
+     "q": "Que mettrais-tu dans ton riz sauté idéal ?",
+     "c": "Transforme un reste de riz en riz sauté avec un œuf, un légume et un trait de sauce soja."
+    },
+    "it": {
+     "t": "Riso saltato semplice",
+     "g": "Impara perché il riso freddo del giorno prima è il migliore per questo piatto veloce e versatile.",
+     "p": [
+      "Il riso avanzato in frigo è più asciutto: i chicchi restano separati e si saltano invece di impastarsi.",
+      "Soffriggi gli aromi, aggiungi il riso premendolo nella padella calda, poi verdure, uovo e salsa di soia.",
+      "Metti subito in frigo il riso avanzato dopo la cottura e consumalo entro un giorno per sicurezza."
+     ],
+     "q": "Cosa metteresti nel tuo riso saltato perfetto?",
+     "c": "Trasforma il riso avanzato in riso saltato con un uovo, una verdura e un goccio di salsa di soia."
+    },
+    "pt": {
+     "t": "Arroz frito simples",
+     "g": "Aprende porque o arroz frio do dia anterior é o melhor para este prato rápido e versátil.",
+     "p": [
+      "O arroz do frigorífico está mais seco, por isso os bagos separam-se e fritam em vez de empapar.",
+      "Refoga os aromáticos, junta o arroz e pressiona-o na frigideira quente, depois legumes, ovo e molho de soja.",
+      "Guarda o arroz que sobra no frigorífico logo após cozinhar e usa-o num dia por segurança."
+     ],
+     "q": "O que punhas no teu arroz frito perfeito?",
+     "c": "Transforma arroz que sobrou em arroz frito com um ovo, um legume e um pouco de molho de soja."
+    },
+    "pt_BR": {
+     "t": "Arroz frito simples",
+     "g": "Aprenda por que o arroz frio do dia anterior é o melhor para este prato rápido e versátil.",
+     "p": [
+      "O arroz da geladeira está mais seco, então os grãos se soltam e fritam em vez de empapar.",
+      "Refogue os aromáticos, junte o arroz e pressione na frigideira quente, depois legumes, ovo e shoyu.",
+      "Guarde o arroz que sobrou na geladeira logo após cozinhar e use em até um dia por segurança."
+     ],
+     "q": "O que você colocaria no seu arroz frito perfeito?",
+     "c": "Transforme arroz que sobrou em arroz frito com um ovo, um legume e um pouco de shoyu."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One-pan meals",
+     "g": "Learn sheet-pan and one-pot dinners that save time and washing up.",
+     "p": [
+      "Group ingredients by cooking time: dense items start first, quick ones join later in the same pan.",
+      "Cut everything to a similar size and season generously so every part of the dish has flavour.",
+      "One-pot pasta, tray-baked chicken with vegetables or a simple curry all use just one pan."
+     ],
+     "q": "Which one-pan dinner would make your week easier?",
+     "c": "Make a sheet-pan dinner with one protein and two vegetables, adding the faster ones later."
+    },
+    "de": {
+     "t": "Gerichte aus einer Pfanne",
+     "g": "Lerne Blech- und Eintopfgerichte, die Zeit und Abwasch sparen.",
+     "p": [
+      "Gruppier Zutaten nach Garzeit: Festes kommt zuerst, Schnelles später in dieselbe Form.",
+      "Schneide alles ähnlich groß und würz großzügig, damit jeder Teil des Gerichts Geschmack hat.",
+      "One-Pot-Pasta, Hähnchen mit Gemüse vom Blech oder ein einfaches Curry brauchen nur ein Gefäß."
+     ],
+     "q": "Welches Ein-Pfannen-Gericht würde deine Woche leichter machen?",
+     "c": "Mach ein Blechgericht mit einem Protein und zwei Gemüsen und gib die schnelleren später dazu."
+    },
+    "es": {
+     "t": "Comidas en una sola sartén",
+     "g": "Aprende cenas en bandeja u olla única que ahorran tiempo y fregado.",
+     "p": [
+      "Agrupa los ingredientes por tiempo de cocción: lo duro primero y lo rápido después, en el mismo recipiente.",
+      "Corta todo de tamaño parecido y sazona con generosidad para que cada parte tenga sabor.",
+      "Pasta en una olla, pollo al horno con verduras o un curry sencillo usan un solo recipiente."
+     ],
+     "q": "¿Qué cena en un solo recipiente te facilitaría la semana?",
+     "c": "Haz una cena en bandeja con una proteína y dos verduras, añadiendo después las más rápidas."
+    },
+    "fr": {
+     "t": "Les plats tout-en-un",
+     "g": "Apprends les dîners sur plaque ou en une seule casserole qui font gagner du temps et de la vaisselle.",
+     "p": [
+      "Regroupe les ingrédients par temps de cuisson : les plus denses d'abord, les rapides ensuite dans le même plat.",
+      "Coupe tout à taille similaire et assaisonne généreusement pour que chaque élément ait du goût.",
+      "Pâtes one pot, poulet et légumes sur plaque ou curry simple n'utilisent qu'un seul ustensile."
+     ],
+     "q": "Quel plat tout-en-un simplifierait ta semaine ?",
+     "c": "Prépare un dîner sur plaque avec une protéine et deux légumes, en ajoutant les plus rapides plus tard."
+    },
+    "it": {
+     "t": "Piatti unici in una pentola",
+     "g": "Impara cene in teglia o in una sola pentola che fanno risparmiare tempo e piatti da lavare.",
+     "p": [
+      "Raggruppa gli ingredienti per tempo di cottura: prima quelli duri, poi quelli rapidi nella stessa teglia.",
+      "Taglia tutto di dimensioni simili e condisci con generosità perché ogni parte sia saporita.",
+      "Pasta in una pentola, pollo al forno con verdure o un curry semplice usano un solo recipiente."
+     ],
+     "q": "Quale piatto unico renderebbe più facile la tua settimana?",
+     "c": "Prepara una cena in teglia con una proteina e due verdure, aggiungendo dopo quelle più veloci."
+    },
+    "pt": {
+     "t": "Refeições num só tacho",
+     "g": "Aprende jantares num tabuleiro ou num só tacho que poupam tempo e loiça.",
+     "p": [
+      "Agrupa os ingredientes por tempo de cozedura: os mais duros primeiro, os rápidos depois, no mesmo recipiente.",
+      "Corta tudo do mesmo tamanho e tempera bem para cada parte do prato ter sabor.",
+      "Massa num tacho, frango no forno com legumes ou um caril simples usam um só recipiente."
+     ],
+     "q": "Que jantar num só tacho tornaria a tua semana mais fácil?",
+     "c": "Faz um jantar no tabuleiro com uma proteína e dois legumes, juntando os mais rápidos depois."
+    },
+    "pt_BR": {
+     "t": "Refeições de uma panela só",
+     "g": "Aprenda jantares numa assadeira ou numa panela só que poupam tempo e louça.",
+     "p": [
+      "Agrupe os ingredientes por tempo de cozimento: os mais duros primeiro, os rápidos depois, no mesmo recipiente.",
+      "Corte tudo do mesmo tamanho e tempere bem para cada parte do prato ter sabor.",
+      "Macarrão numa panela só, frango assado com legumes ou um curry simples usam um único recipiente."
+     ],
+     "q": "Qual jantar de uma panela só deixaria sua semana mais fácil?",
+     "c": "Faça um jantar na assadeira com uma proteína e dois legumes, colocando os mais rápidos depois."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh versus dried herbs",
+     "g": "Learn when to add fresh and dried herbs and how to swap one for the other.",
+     "p": [
+      "Dried herbs like oregano and thyme release flavour slowly, so add them early in cooking.",
+      "Soft fresh herbs such as basil, parsley and coriander are best added at the end or raw.",
+      "As a rough guide, one teaspoon of dried herb replaces about one tablespoon of fresh."
+     ],
+     "q": "Which herbs do you keep at home, fresh or dried?",
+     "c": "Make one dish with dried herbs added early and finish it with a few fresh herbs on top."
+    },
+    "de": {
+     "t": "Frische und getrocknete Kräuter",
+     "g": "Lerne, wann frische und getrocknete Kräuter dazukommen und wie du sie austauschst.",
+     "p": [
+      "Getrocknete Kräuter wie Oregano und Thymian geben ihr Aroma langsam ab, also früh dazugeben.",
+      "Zarte frische Kräuter wie Basilikum, Petersilie und Koriander am besten zum Schluss oder roh verwenden.",
+      "Als Faustregel ersetzt ein Teelöffel getrocknete Kräuter etwa einen Esslöffel frische."
+     ],
+     "q": "Welche Kräuter hast du zu Hause, frisch oder getrocknet?",
+     "c": "Koch ein Gericht mit früh zugegebenen getrockneten Kräutern und vollende es mit frischen Kräutern."
+    },
+    "es": {
+     "t": "Hierbas frescas o secas",
+     "g": "Aprende cuándo añadir hierbas frescas y secas y cómo sustituir unas por otras.",
+     "p": [
+      "Las hierbas secas como orégano y tomillo sueltan sabor despacio, así que añádelas al principio.",
+      "Las hierbas frescas delicadas como albahaca, perejil y cilantro van mejor al final o en crudo.",
+      "Como guía, una cucharadita de hierba seca equivale a una cucharada de fresca."
+     ],
+     "q": "¿Qué hierbas tienes en casa, frescas o secas?",
+     "c": "Prepara un plato con hierbas secas al principio y termínalo con unas hierbas frescas por encima."
+    },
+    "fr": {
+     "t": "Herbes fraîches ou séchées",
+     "g": "Apprends quand ajouter herbes fraîches et séchées et comment remplacer les unes par les autres.",
+     "p": [
+      "Les herbes séchées comme origan et thym libèrent leur goût lentement : ajoute-les en début de cuisson.",
+      "Les herbes fraîches tendres comme basilic, persil et coriandre s'ajoutent à la fin ou crues.",
+      "En gros, une cuillère à café d'herbe séchée remplace environ une cuillère à soupe de fraîche."
+     ],
+     "q": "Quelles herbes as-tu chez toi, fraîches ou séchées ?",
+     "c": "Cuisine un plat avec des herbes séchées au début et termine-le avec quelques herbes fraîches."
+    },
+    "it": {
+     "t": "Erbe fresche o secche",
+     "g": "Impara quando aggiungere erbe fresche e secche e come sostituirle tra loro.",
+     "p": [
+      "Le erbe secche come origano e timo rilasciano sapore lentamente, quindi aggiungile all'inizio.",
+      "Le erbe fresche delicate come basilico, prezzemolo e coriandolo vanno alla fine o a crudo.",
+      "In linea di massima, un cucchiaino di erba secca sostituisce circa un cucchiaio di fresca."
+     ],
+     "q": "Quali erbe tieni in casa, fresche o secche?",
+     "c": "Cucina un piatto con erbe secche all'inizio e completalo con qualche erba fresca sopra."
+    },
+    "pt": {
+     "t": "Ervas frescas ou secas",
+     "g": "Aprende quando juntar ervas frescas e secas e como trocar umas pelas outras.",
+     "p": [
+      "As ervas secas como orégãos e tomilho libertam sabor devagar, por isso junta-as no início.",
+      "As ervas frescas delicadas como manjericão, salsa e coentros ficam melhor no fim ou cruas.",
+      "Como regra geral, uma colher de chá de erva seca substitui cerca de uma colher de sopa de fresca."
+     ],
+     "q": "Que ervas tens em casa, frescas ou secas?",
+     "c": "Faz um prato com ervas secas no início e termina-o com algumas ervas frescas por cima."
+    },
+    "pt_BR": {
+     "t": "Ervas frescas ou secas",
+     "g": "Aprenda quando usar ervas frescas e secas e como trocar uma pela outra.",
+     "p": [
+      "Ervas secas como orégano e tomilho soltam sabor devagar, então coloque no começo.",
+      "Ervas frescas delicadas como manjericão, salsinha e coentro ficam melhor no fim ou cruas.",
+      "Como regra geral, uma colher de chá de erva seca substitui cerca de uma colher de sopa de fresca."
+     ],
+     "q": "Quais ervas você tem em casa, frescas ou secas?",
+     "c": "Faça um prato com ervas secas no começo e finalize com algumas ervas frescas por cima."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spices for beginners",
+     "g": "Learn to build a small spice collection and toast spices to wake up their aroma.",
+     "p": [
+      "Start with a few versatile spices: cumin, paprika, chilli flakes, cinnamon and a curry blend.",
+      "Toast whole or ground spices briefly in a dry pan or warm oil until fragrant, never until smoking.",
+      "Store spices in closed jars away from heat and light, and replace them when their smell fades."
+     ],
+     "q": "Which spice do you love, or would like to learn to use?",
+     "c": "Toast a spoon of cumin seeds in a dry pan until fragrant and add them to rice, soup or yogurt."
+    },
+    "de": {
+     "t": "Gewürze für Anfänger",
+     "g": "Lerne eine kleine Gewürzsammlung aufzubauen und Gewürze zu rösten, um ihr Aroma zu wecken.",
+     "p": [
+      "Beginn mit vielseitigen Gewürzen: Kreuzkümmel, Paprika, Chiliflocken, Zimt und eine Currymischung.",
+      "Röste ganze oder gemahlene Gewürze kurz in trockener Pfanne oder warmem Öl, bis sie duften, nie bis sie rauchen.",
+      "Bewahr Gewürze verschlossen, dunkel und kühl auf und ersetze sie, wenn ihr Duft nachlässt."
+     ],
+     "q": "Welches Gewürz liebst du, oder möchtest du verwenden lernen?",
+     "c": "Röste einen Löffel Kreuzkümmelsamen trocken, bis er duftet, und gib ihn zu Reis, Suppe oder Joghurt."
+    },
+    "es": {
+     "t": "Especias para principiantes",
+     "g": "Aprende a reunir una pequeña colección de especias y a tostarlas para despertar su aroma.",
+     "p": [
+      "Empieza con unas pocas versátiles: comino, pimentón, chile en escamas, canela y una mezcla de curry.",
+      "Tuesta especias enteras o molidas un momento en sartén seca o aceite templado hasta que huelan, nunca hasta humear.",
+      "Guárdalas en tarros cerrados lejos del calor y la luz, y cámbialas cuando pierdan el aroma."
+     ],
+     "q": "¿Qué especia te encanta o te gustaría aprender a usar?",
+     "c": "Tuesta una cucharada de comino en grano en sartén seca hasta que huela y añádelo a arroz, sopa o yogur."
+    },
+    "fr": {
+     "t": "Les épices pour débuter",
+     "g": "Apprends à constituer une petite collection d'épices et à les torréfier pour réveiller leur arôme.",
+     "p": [
+      "Commence avec quelques épices polyvalentes : cumin, paprika, piment en flocons, cannelle et un mélange curry.",
+      "Torréfie les épices entières ou moulues brièvement à sec ou dans l'huile tiède jusqu'à ce qu'elles embaument.",
+      "Range-les dans des bocaux fermés à l'abri de la chaleur et de la lumière, et remplace-les quand l'odeur faiblit."
+     ],
+     "q": "Quelle épice adores-tu, ou aimerais-tu apprendre à utiliser ?",
+     "c": "Torréfie une cuillère de graines de cumin à sec jusqu'à ce qu'elles embaument, puis ajoute-les au riz, à une soupe ou un yaourt."
+    },
+    "it": {
+     "t": "Spezie per iniziare",
+     "g": "Impara a creare una piccola collezione di spezie e a tostarle per risvegliarne l'aroma.",
+     "p": [
+      "Inizia con poche spezie versatili: cumino, paprika, peperoncino in fiocchi, cannella e un mix di curry.",
+      "Tosta spezie intere o macinate per poco in padella asciutta o olio tiepido finché profumano, mai fino al fumo.",
+      "Conservale in barattoli chiusi lontano da calore e luce, e sostituiscile quando perdono profumo."
+     ],
+     "q": "Quale spezia ami o vorresti imparare a usare?",
+     "c": "Tosta un cucchiaio di semi di cumino in padella asciutta finché profumano e aggiungili a riso, zuppa o yogurt."
+    },
+    "pt": {
+     "t": "Especiarias para principiantes",
+     "g": "Aprende a criar uma pequena coleção de especiarias e a tostá-las para despertar o aroma.",
+     "p": [
+      "Começa com poucas e versáteis: cominhos, colorau, malagueta em flocos, canela e uma mistura de caril.",
+      "Tosta especiarias inteiras ou moídas por instantes numa frigideira seca ou óleo morno até cheirarem, nunca até fumegar.",
+      "Guarda-as em frascos fechados longe do calor e da luz, e troca-as quando perderem o aroma."
+     ],
+     "q": "Que especiaria adoras ou gostavas de aprender a usar?",
+     "c": "Tosta uma colher de cominhos em grão numa frigideira seca até cheirarem e junta-os a arroz, sopa ou iogurte."
+    },
+    "pt_BR": {
+     "t": "Especiarias para iniciantes",
+     "g": "Aprenda a montar uma pequena coleção de especiarias e a tostá-las para despertar o aroma.",
+     "p": [
+      "Comece com poucas e versáteis: cominho, páprica, pimenta calabresa, canela e um mix de curry.",
+      "Toste especiarias inteiras ou moídas por instantes em frigideira seca ou óleo morno até perfumar, nunca até soltar fumaça.",
+      "Guarde em potes fechados longe do calor e da luz, e troque quando perderem o aroma."
+     ],
+     "q": "Qual especiaria você adora ou gostaria de aprender a usar?",
+     "c": "Toste uma colher de cominho em grão em frigideira seca até perfumar e junte a arroz, sopa ou iogurte."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A quick pickle",
+     "g": "Learn fast vinegar pickles that add crunch and brightness to any plate.",
+     "p": [
+      "Thinly slice vegetables such as red onion, cucumber or carrot and pack them into a clean jar.",
+      "Warm vinegar and water with a little salt and sugar until dissolved, then pour it over the vegetables.",
+      "Let them sit for at least 30 minutes, then keep them in the fridge and eat them within a couple of weeks."
+     ],
+     "q": "What would you love to top with quick pickles?",
+     "c": "Make a small jar of quick pickled red onions and add them to a sandwich, salad or tacos."
+    },
+    "de": {
+     "t": "Schnell eingelegtes Gemüse",
+     "g": "Lerne schnelle Essig-Pickles, die jedem Teller Biss und Frische geben.",
+     "p": [
+      "Schneide Gemüse wie rote Zwiebel, Gurke oder Möhre dünn und füll es in ein sauberes Glas.",
+      "Erwärm Essig und Wasser mit etwas Salz und Zucker, bis sich alles löst, und gieß es über das Gemüse.",
+      "Lass es mindestens 30 Minuten ziehen, bewahr es im Kühlschrank auf und iss es innerhalb von zwei Wochen."
+     ],
+     "q": "Was würdest du gern mit schnellen Pickles toppen?",
+     "c": "Leg ein kleines Glas rote Zwiebeln schnell ein und gib sie auf ein Sandwich, einen Salat oder Tacos."
+    },
+    "es": {
+     "t": "Encurtido rápido",
+     "g": "Aprende encurtidos rápidos en vinagre que dan crujiente y frescura a cualquier plato.",
+     "p": [
+      "Corta en láminas finas verduras como cebolla morada, pepino o zanahoria y ponlas en un tarro limpio.",
+      "Calienta vinagre y agua con un poco de sal y azúcar hasta disolver, y viértelo sobre las verduras.",
+      "Déjalas al menos 30 minutos, guárdalas en la nevera y cómelas en un par de semanas."
+     ],
+     "q": "¿Sobre qué te encantaría poner encurtidos rápidos?",
+     "c": "Prepara un tarrito de cebolla morada encurtida y añádela a un sándwich, ensalada o tacos."
+    },
+    "fr": {
+     "t": "Pickles express",
+     "g": "Apprends des pickles rapides au vinaigre qui apportent croquant et peps à toute assiette.",
+     "p": [
+      "Émince finement des légumes comme oignon rouge, concombre ou carotte et tasse-les dans un bocal propre.",
+      "Chauffe vinaigre et eau avec un peu de sel et de sucre jusqu'à dissolution, puis verse sur les légumes.",
+      "Laisse reposer au moins 30 minutes, garde au frigo et consomme dans les deux semaines environ."
+     ],
+     "q": "Sur quoi aimerais-tu ajouter des pickles express ?",
+     "c": "Prépare un petit bocal d'oignons rouges en pickles et ajoute-les à un sandwich, une salade ou des tacos."
+    },
+    "it": {
+     "t": "Sottaceti veloci",
+     "g": "Impara sottaceti rapidi all'aceto che danno croccantezza e freschezza a ogni piatto.",
+     "p": [
+      "Affetta sottili verdure come cipolla rossa, cetriolo o carota e mettile in un barattolo pulito.",
+      "Scalda aceto e acqua con un po' di sale e zucchero finché si sciolgono, poi versa sulle verdure.",
+      "Lasciale almeno 30 minuti, conservale in frigo e consumale entro un paio di settimane."
+     ],
+     "q": "Su cosa ti piacerebbe mettere dei sottaceti veloci?",
+     "c": "Prepara un barattolino di cipolle rosse sottaceto veloci e aggiungile a un panino, un'insalata o dei tacos."
+    },
+    "pt": {
+     "t": "Pickles rápidos",
+     "g": "Aprende pickles rápidos em vinagre que dão crocância e frescura a qualquer prato.",
+     "p": [
+      "Corta fino legumes como cebola roxa, pepino ou cenoura e põe-nos num frasco limpo.",
+      "Aquece vinagre e água com um pouco de sal e açúcar até dissolver, e verte sobre os legumes.",
+      "Deixa repousar pelo menos 30 minutos, guarda no frigorífico e come em cerca de duas semanas."
+     ],
+     "q": "Em que é que adoravas pôr pickles rápidos?",
+     "c": "Faz um frasquinho de cebola roxa em pickle rápido e junta-a a uma sandes, salada ou tacos."
+    },
+    "pt_BR": {
+     "t": "Picles rápido",
+     "g": "Aprenda picles rápidos no vinagre que trazem crocância e frescor a qualquer prato.",
+     "p": [
+      "Fatie fino legumes como cebola roxa, pepino ou cenoura e coloque num pote limpo.",
+      "Aqueça vinagre e água com um pouco de sal e açúcar até dissolver, e despeje sobre os legumes.",
+      "Deixe descansar pelo menos 30 minutos, guarde na geladeira e consuma em umas duas semanas."
+     ],
+     "q": "Em que você adoraria colocar picles rápido?",
+     "c": "Faça um potinho de cebola roxa em conserva rápida e use num sanduíche, salada ou tacos."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple pan flatbread",
+     "g": "Learn a quick dough cooked in a dry pan in just a few minutes.",
+     "p": [
+      "Mix flour, a pinch of salt, a little oil and yogurt or water into a soft dough and knead briefly.",
+      "Rest the dough for 15 minutes, divide it into balls and roll each one out thinly.",
+      "Cook in a hot dry pan for a minute or two per side until puffed with golden spots."
+     ],
+     "q": "What would you eat with warm homemade flatbread?",
+     "c": "Make two or three flatbreads in a dry pan and serve them with a dip or soup."
+    },
+    "de": {
+     "t": "Einfaches Pfannenbrot",
+     "g": "Lerne einen schnellen Teig, der in wenigen Minuten in der trockenen Pfanne gart.",
+     "p": [
+      "Misch Mehl, eine Prise Salz, etwas Öl und Joghurt oder Wasser zu einem weichen Teig und knete kurz.",
+      "Lass den Teig 15 Minuten ruhen, teile ihn in Kugeln und roll jede dünn aus.",
+      "Back sie in heißer, trockener Pfanne ein bis zwei Minuten pro Seite, bis sie aufgehen und goldene Flecken haben."
+     ],
+     "q": "Was würdest du zu warmem, selbst gemachtem Fladenbrot essen?",
+     "c": "Back zwei oder drei Fladen in der trockenen Pfanne und serviere sie mit einem Dip oder einer Suppe."
+    },
+    "es": {
+     "t": "Pan plano a la sartén",
+     "g": "Aprende una masa rápida que se cocina en sartén seca en pocos minutos.",
+     "p": [
+      "Mezcla harina, una pizca de sal, un poco de aceite y yogur o agua hasta una masa suave, y amasa un poco.",
+      "Deja reposar 15 minutos, divide en bolitas y estira cada una bien fina.",
+      "Cuécelas en sartén seca y caliente uno o dos minutos por lado, hasta que se inflen con manchas doradas."
+     ],
+     "q": "¿Con qué comerías un pan plano casero calentito?",
+     "c": "Haz dos o tres panes planos en sartén seca y sírvelos con una salsa para mojar o una sopa."
+    },
+    "fr": {
+     "t": "Galette à la poêle",
+     "g": "Apprends une pâte rapide cuite dans une poêle sèche en quelques minutes.",
+     "p": [
+      "Mélange farine, une pincée de sel, un peu d'huile et du yaourt ou de l'eau en une pâte souple, et pétris brièvement.",
+      "Laisse reposer 15 minutes, divise en boules et étale chacune finement.",
+      "Cuis-les dans une poêle chaude et sèche une à deux minutes par face, jusqu'à ce qu'elles gonflent et dorent par endroits."
+     ],
+     "q": "Avec quoi mangerais-tu une galette maison bien chaude ?",
+     "c": "Fais deux ou trois galettes à la poêle sèche et sers-les avec une sauce à tremper ou une soupe."
+    },
+    "it": {
+     "t": "Piadina in padella",
+     "g": "Impara un impasto veloce che si cuoce in padella asciutta in pochi minuti.",
+     "p": [
+      "Mescola farina, un pizzico di sale, un filo d'olio e yogurt o acqua fino a un impasto morbido, e impasta poco.",
+      "Fai riposare 15 minuti, dividi in palline e stendi ognuna sottile.",
+      "Cuocile in padella calda e asciutta uno o due minuti per lato, finché si gonfiano con macchie dorate."
+     ],
+     "q": "Con cosa mangeresti un pane piatto fatto in casa ancora caldo?",
+     "c": "Prepara due o tre pani piatti in padella asciutta e servili con una salsa o una zuppa."
+    },
+    "pt": {
+     "t": "Pão achatado na frigideira",
+     "g": "Aprende uma massa rápida cozinhada numa frigideira seca em poucos minutos.",
+     "p": [
+      "Mistura farinha, uma pitada de sal, um pouco de azeite e iogurte ou água até uma massa macia, e amassa pouco.",
+      "Deixa repousar 15 minutos, divide em bolas e estende cada uma bem fina.",
+      "Coze numa frigideira quente e seca um ou dois minutos de cada lado, até inchar com manchas douradas."
+     ],
+     "q": "Com que comias um pão achatado caseiro quentinho?",
+     "c": "Faz dois ou três pães achatados numa frigideira seca e serve-os com um molho ou sopa."
+    },
+    "pt_BR": {
+     "t": "Pão de frigideira",
+     "g": "Aprenda uma massa rápida que cozinha em frigideira seca em poucos minutos.",
+     "p": [
+      "Misture farinha, uma pitada de sal, um pouco de óleo e iogurte ou água até virar massa macia, e sove rapidinho.",
+      "Deixe descansar 15 minutos, divida em bolinhas e abra cada uma bem fina.",
+      "Cozinhe em frigideira quente e seca um ou dois minutos de cada lado, até estufar com manchas douradas."
+     ],
+     "q": "Com o que você comeria um pão caseiro de frigideira quentinho?",
+     "c": "Faça dois ou três pães na frigideira seca e sirva com uma pastinha ou sopa."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pancakes",
+     "g": "Learn to mix batter gently, heat the pan well and flip with confidence.",
+     "p": [
+      "Mix wet into dry ingredients just until combined; a few lumps are fine and keep pancakes tender.",
+      "Heat the pan over medium heat and test it with a drop of batter before cooking the first pancake.",
+      "Flip when bubbles appear on top and the edges look set, then cook briefly on the other side."
+     ],
+     "q": "What do you like to put on your pancakes?",
+     "c": "Make a small batch of pancakes, mixing gently and flipping each one only once."
+    },
+    "de": {
+     "t": "Pfannkuchen",
+     "g": "Lerne Teig sanft zu rühren, die Pfanne gut zu erhitzen und mutig zu wenden.",
+     "p": [
+      "Rühr die flüssigen in die trockenen Zutaten, nur bis alles verbunden ist; kleine Klümpchen machen sie zart.",
+      "Erhitze die Pfanne bei mittlerer Hitze und teste sie mit einem Tropfen Teig vor dem ersten Pfannkuchen.",
+      "Wende, wenn sich oben Blasen bilden und die Ränder fest aussehen, dann kurz die andere Seite backen."
+     ],
+     "q": "Was gibst du am liebsten auf deine Pfannkuchen?",
+     "c": "Back eine kleine Portion Pfannkuchen, rühr den Teig sanft und wende jeden nur einmal."
+    },
+    "es": {
+     "t": "Tortitas",
+     "g": "Aprende a mezclar la masa con suavidad, calentar bien la sartén y darles la vuelta con confianza.",
+     "p": [
+      "Une lo líquido con lo seco solo hasta mezclar; unos grumos están bien y las dejan tiernas.",
+      "Calienta la sartén a fuego medio y pruébala con una gota de masa antes de la primera tortita.",
+      "Dales la vuelta cuando salgan burbujas arriba y los bordes estén cuajados, y cocina un poco el otro lado."
+     ],
+     "q": "¿Qué te gusta poner sobre tus tortitas?",
+     "c": "Haz unas pocas tortitas, mezclando con suavidad y girando cada una solo una vez."
+    },
+    "fr": {
+     "t": "Les pancakes",
+     "g": "Apprends à mélanger la pâte délicatement, bien chauffer la poêle et retourner avec assurance.",
+     "p": [
+      "Mélange les liquides aux ingrédients secs juste assez ; quelques grumeaux gardent les pancakes moelleux.",
+      "Chauffe la poêle à feu moyen et teste avec une goutte de pâte avant le premier pancake.",
+      "Retourne quand des bulles apparaissent et que les bords sont pris, puis cuis brièvement l'autre face."
+     ],
+     "q": "Qu'aimes-tu mettre sur tes pancakes ?",
+     "c": "Prépare quelques pancakes en mélangeant doucement et en retournant chacun une seule fois."
+    },
+    "it": {
+     "t": "Pancake",
+     "g": "Impara a mescolare la pastella con delicatezza, scaldare bene la padella e girarli con sicurezza.",
+     "p": [
+      "Unisci i liquidi ai secchi solo finché si amalgamano; qualche grumo va bene e li tiene soffici.",
+      "Scalda la padella a fuoco medio e provala con una goccia di pastella prima del primo pancake.",
+      "Girali quando in superficie compaiono bolle e i bordi sono rappresi, poi cuoci poco l'altro lato."
+     ],
+     "q": "Cosa ti piace mettere sui pancake?",
+     "c": "Prepara qualche pancake mescolando piano e girando ciascuno una sola volta."
+    },
+    "pt": {
+     "t": "Panquecas",
+     "g": "Aprende a misturar a massa com cuidado, aquecer bem a frigideira e virar com confiança.",
+     "p": [
+      "Junta os líquidos aos secos só até misturar; alguns grumos não fazem mal e deixam-nas fofas.",
+      "Aquece a frigideira em lume médio e testa com uma gota de massa antes da primeira panqueca.",
+      "Vira quando aparecerem bolhas em cima e as bordas estiverem firmes, e cozinha pouco o outro lado."
+     ],
+     "q": "O que gostas de pôr nas panquecas?",
+     "c": "Faz algumas panquecas, misturando com cuidado e virando cada uma só uma vez."
+    },
+    "pt_BR": {
+     "t": "Panquecas americanas",
+     "g": "Aprenda a misturar a massa com delicadeza, aquecer bem a frigideira e virar com confiança.",
+     "p": [
+      "Junte os líquidos aos secos só até misturar; alguns grumos são normais e deixam a massa fofinha.",
+      "Aqueça a frigideira em fogo médio e teste com uma gota de massa antes da primeira panqueca.",
+      "Vire quando surgirem bolhas em cima e as bordas estiverem firmes, e doure rapidinho o outro lado."
+     ],
+     "q": "O que você gosta de colocar nas panquecas?",
+     "c": "Faça algumas panquecas, misturando com delicadeza e virando cada uma só uma vez."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast bowls",
+     "g": "Learn to build bowls with oats, yogurt, fruit and crunchy toppings for a good start.",
+     "p": [
+      "Start with a base such as yogurt, overnight oats or warm porridge cooked in milk or water.",
+      "Add fresh or frozen fruit for colour and natural sweetness, plus something creamy like nut butter.",
+      "Finish with crunch: toasted nuts, seeds or a spoon of granola, and a drizzle of honey if you like."
+     ],
+     "q": "What does your ideal breakfast look like?",
+     "c": "Prepare overnight oats tonight with oats, milk or yogurt and fruit, and top them tomorrow morning."
+    },
+    "de": {
+     "t": "Frühstücksbowls",
+     "g": "Lerne Bowls mit Haferflocken, Joghurt, Obst und knusprigen Toppings für einen guten Start.",
+     "p": [
+      "Beginn mit einer Basis wie Joghurt, Overnight Oats oder warmem Porridge mit Milch oder Wasser.",
+      "Gib frisches oder gefrorenes Obst für Farbe und Süße dazu, dazu etwas Cremiges wie Nussmus.",
+      "Zum Schluss Knusper: geröstete Nüsse, Samen oder ein Löffel Granola, nach Wunsch etwas Honig."
+     ],
+     "q": "Wie sieht dein ideales Frühstück aus?",
+     "c": "Bereite heute Abend Overnight Oats mit Haferflocken, Milch oder Joghurt und Obst vor und toppe sie morgen früh."
+    },
+    "es": {
+     "t": "Bowls de desayuno",
+     "g": "Aprende a montar bowls con avena, yogur, fruta y toppings crujientes para empezar bien el día.",
+     "p": [
+      "Empieza con una base: yogur, avena remojada en la nevera o gachas calientes con leche o agua.",
+      "Añade fruta fresca o congelada para color y dulzor natural, y algo cremoso como crema de frutos secos.",
+      "Termina con algo crujiente: frutos secos tostados, semillas o granola, y un hilo de miel si quieres."
+     ],
+     "q": "¿Cómo es tu desayuno ideal?",
+     "c": "Prepara esta noche avena remojada con leche o yogur y fruta, y ponle toppings mañana por la mañana."
+    },
+    "fr": {
+     "t": "Les bols du petit-déjeuner",
+     "g": "Apprends à composer des bols avec flocons d'avoine, yaourt, fruits et toppings croquants.",
+     "p": [
+      "Commence par une base : yaourt, overnight oats ou porridge chaud au lait ou à l'eau.",
+      "Ajoute des fruits frais ou surgelés pour la couleur et la douceur, et un peu de purée d'oléagineux.",
+      "Termine par du croquant : noix grillées, graines ou granola, et un filet de miel si tu veux."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner idéal ?",
+     "c": "Prépare ce soir des overnight oats avec avoine, lait ou yaourt et fruits, et garnis-les demain matin."
+    },
+    "it": {
+     "t": "Bowl per la colazione",
+     "g": "Impara a comporre bowl con avena, yogurt, frutta e topping croccanti per iniziare bene la giornata.",
+     "p": [
+      "Parti da una base: yogurt, avena ammollata in frigo o porridge caldo con latte o acqua.",
+      "Aggiungi frutta fresca o surgelata per colore e dolcezza naturale, e qualcosa di cremoso come burro di frutta secca.",
+      "Finisci con il croccante: frutta secca tostata, semi o granola, e un filo di miele se ti va."
+     ],
+     "q": "Com'è la tua colazione ideale?",
+     "c": "Prepara stasera l'avena ammollata con latte o yogurt e frutta, e aggiungi i topping domattina."
+    },
+    "pt": {
+     "t": "Taças de pequeno-almoço",
+     "g": "Aprende a montar taças com aveia, iogurte, fruta e toppings estaladiços para começar bem o dia.",
+     "p": [
+      "Começa com uma base: iogurte, aveia demolhada no frigorífico ou papas de aveia quentes com leite ou água.",
+      "Junta fruta fresca ou congelada para cor e doçura natural, e algo cremoso como manteiga de frutos secos.",
+      "Termina com crocância: frutos secos tostados, sementes ou granola, e um fio de mel se quiseres."
+     ],
+     "q": "Como é o teu pequeno-almoço ideal?",
+     "c": "Prepara hoje à noite aveia demolhada com leite ou iogurte e fruta, e põe os toppings amanhã de manhã."
+    },
+    "pt_BR": {
+     "t": "Bowls de café da manhã",
+     "g": "Aprenda a montar bowls com aveia, iogurte, frutas e coberturas crocantes para começar bem o dia.",
+     "p": [
+      "Comece com uma base: iogurte, overnight oats ou mingau quente de aveia com leite ou água.",
+      "Junte frutas frescas ou congeladas para cor e doçura natural, e algo cremoso como pasta de amendoim.",
+      "Finalize com crocância: castanhas tostadas, sementes ou granola, e um fio de mel se quiser."
+     ],
+     "q": "Como é seu café da manhã ideal?",
+     "c": "Prepare hoje à noite overnight oats com aveia, leite ou iogurte e fruta, e cubra amanhã de manhã."
+    }
+   }
+  }
+ ]
+}

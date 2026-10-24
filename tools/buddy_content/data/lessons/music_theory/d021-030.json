@@ -1,0 +1,835 @@
+{
+ "topic": "music_theory",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Middle C",
+     "g": "Find middle C, the note that connects the treble and bass clefs.",
+     "p": [
+      "Middle C is the C closest to the centre of the piano keyboard, often called C4.",
+      "In treble clef it sits on one short line below the staff, in bass clef on one short line above.",
+      "Treble and bass together form the grand staff that pianists read, joined by middle C."
+     ],
+     "q": "Can you find middle C on a keyboard or piano app?",
+     "c": "Find middle C, play it, then play the C one octave higher and the C one octave lower."
+    },
+    "de": {
+     "t": "Das eingestrichene c",
+     "g": "Das mittlere C finden, den Ton, der Violin- und Bassschlüssel verbindet.",
+     "p": [
+      "Das mittlere C, im Deutschen eingestrichenes c genannt, liegt nahe der Mitte der Klaviatur.",
+      "Im Violinschlüssel steht es auf einer kurzen Linie unter dem System, im Bassschlüssel auf einer darüber.",
+      "Beide Schlüssel bilden zusammen das Klaviersystem, verbunden durch dieses c."
+     ],
+     "q": "Findest du das mittlere C auf einem Keyboard oder in einer Klavier-App?",
+     "c": "Spiel das mittlere C, dann das C eine Oktave höher und das C eine Oktave tiefer."
+    },
+    "es": {
+     "t": "El do central",
+     "g": "Encontrar el do central, la nota que une la clave de sol y la clave de fa.",
+     "p": [
+      "El do central es el do más cercano al centro del teclado del piano.",
+      "En clave de sol va en una línea corta debajo del pentagrama; en clave de fa, en una línea encima.",
+      "Las dos claves juntas forman el sistema del piano, unidas por el do central."
+     ],
+     "q": "¿Puedes encontrar el do central en un teclado o una app de piano?",
+     "c": "Toca el do central, luego el do una octava más aguda y el do una octava más grave."
+    },
+    "fr": {
+     "t": "Le do central",
+     "g": "Trouver le do central, la note qui relie la clé de sol et la clé de fa.",
+     "p": [
+      "Le do central est le do le plus proche du milieu du clavier, appelé do3 en France.",
+      "En clé de sol, il est sur une petite ligne sous la portée ; en clé de fa, sur une petite ligne au-dessus.",
+      "Les deux clés réunies forment la double portée du piano, reliée par ce do."
+     ],
+     "q": "Peux-tu trouver le do central sur un clavier ou une appli de piano ?",
+     "c": "Joue le do central, puis le do une octave au-dessus et le do une octave en dessous."
+    },
+    "it": {
+     "t": "Il do centrale",
+     "g": "Trovare il do centrale, la nota che collega chiave di violino e chiave di basso.",
+     "p": [
+      "Il do centrale è il do più vicino al centro della tastiera del pianoforte.",
+      "In chiave di violino sta su un taglio sotto il pentagramma, in chiave di basso su un taglio sopra.",
+      "Le due chiavi insieme formano il doppio pentagramma del pianoforte, unito dal do centrale."
+     ],
+     "q": "Riesci a trovare il do centrale su una tastiera o un'app di pianoforte?",
+     "c": "Suona il do centrale, poi il do un'ottava sopra e il do un'ottava sotto."
+    },
+    "pt": {
+     "t": "O dó central",
+     "g": "Encontrar o dó central, a nota que liga a clave de sol e a clave de fá.",
+     "p": [
+      "O dó central é o dó mais próximo do meio do teclado do piano.",
+      "Na clave de sol fica numa linha curta abaixo da pauta; na clave de fá, numa linha curta acima.",
+      "As duas claves juntas formam a pauta dupla do piano, ligada pelo dó central."
+     ],
+     "q": "Consegues encontrar o dó central num teclado ou numa aplicação de piano?",
+     "c": "Toca o dó central, depois o dó uma oitava acima e o dó uma oitava abaixo."
+    },
+    "pt_BR": {
+     "t": "O dó central",
+     "g": "Encontrar o dó central, a nota que liga a clave de sol e a clave de fá.",
+     "p": [
+      "O dó central é o dó mais perto do meio do teclado do piano.",
+      "Na clave de sol ele fica numa linha curta abaixo do pentagrama; na clave de fá, numa linha acima.",
+      "As duas claves juntas formam o sistema do piano, ligado pelo dó central."
+     ],
+     "q": "Você consegue achar o dó central num teclado ou num app de piano?",
+     "c": "Toque o dó central, depois o dó uma oitava acima e o dó uma oitava abaixo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ledger lines",
+     "g": "Use short extra lines for notes above or below the staff.",
+     "p": [
+      "Ledger lines are short lines that extend the staff upward or downward.",
+      "They follow the same pattern: line, space, line, so you keep counting note names.",
+      "Middle C on one ledger line is the most common example."
+     ],
+     "q": "Which do you find easier to read: notes inside the staff or on ledger lines?",
+     "c": "Write the treble clef notes going up from the top line F to the C two ledger lines above."
+    },
+    "de": {
+     "t": "Hilfslinien",
+     "g": "Kurze Zusatzlinien für Noten über oder unter dem System nutzen.",
+     "p": [
+      "Hilfslinien sind kurze Linien, die das Notensystem nach oben oder unten verlängern.",
+      "Sie folgen demselben Muster: Linie, Zwischenraum, Linie, du zählst die Tonnamen einfach weiter.",
+      "Das mittlere C auf einer Hilfslinie ist das bekannteste Beispiel."
+     ],
+     "q": "Was liest du leichter: Noten im System oder auf Hilfslinien?",
+     "c": "Schreib im Violinschlüssel die Töne von der obersten Linie f aufwärts bis zum c auf zwei Hilfslinien."
+    },
+    "es": {
+     "t": "Líneas adicionales",
+     "g": "Usar líneas cortas extra para notas por encima o por debajo del pentagrama.",
+     "p": [
+      "Las líneas adicionales son líneas cortas que alargan el pentagrama hacia arriba o hacia abajo.",
+      "Siguen el mismo patrón: línea, espacio, línea, así que solo sigues contando las notas.",
+      "El do central sobre una línea adicional es el ejemplo más común."
+     ],
+     "q": "¿Qué te resulta más fácil leer: notas dentro del pentagrama o en líneas adicionales?",
+     "c": "En clave de sol, escribe las notas desde el fa de la quinta línea hasta el do en dos líneas adicionales."
+    },
+    "fr": {
+     "t": "Les lignes supplémentaires",
+     "g": "Utiliser de petites lignes en plus pour les notes au-dessus ou en dessous de la portée.",
+     "p": [
+      "Les lignes supplémentaires sont de courtes lignes qui prolongent la portée vers le haut ou le bas.",
+      "Elles suivent le même motif : ligne, interligne, ligne, tu continues simplement à compter.",
+      "Le do central sur une ligne supplémentaire en est l'exemple le plus courant."
+     ],
+     "q": "Qu'est-ce qui est plus facile à lire pour toi : les notes dans la portée ou sur les lignes en plus ?",
+     "c": "En clé de sol, écris les notes du fa de la 5e ligne jusqu'au do sur deux lignes supplémentaires."
+    },
+    "it": {
+     "t": "I tagli addizionali",
+     "g": "Usare piccole linee in più per le note sopra o sotto il pentagramma.",
+     "p": [
+      "I tagli addizionali sono brevi linee che allungano il pentagramma verso l'alto o il basso.",
+      "Seguono lo stesso schema: linea, spazio, linea, quindi continui semplicemente a contare.",
+      "Il do centrale su un taglio è l'esempio più comune."
+     ],
+     "q": "Cosa leggi più facilmente: note dentro il pentagramma o sui tagli addizionali?",
+     "c": "In chiave di violino scrivi le note dal fa della quinta linea fino al do su due tagli sopra."
+    },
+    "pt": {
+     "t": "Linhas suplementares",
+     "g": "Usar linhas curtas extra para notas acima ou abaixo da pauta.",
+     "p": [
+      "As linhas suplementares são linhas curtas que prolongam a pauta para cima ou para baixo.",
+      "Seguem o mesmo padrão: linha, espaço, linha, por isso basta continuares a contar as notas.",
+      "O dó central numa linha suplementar é o exemplo mais comum."
+     ],
+     "q": "O que achas mais fácil de ler: notas dentro da pauta ou em linhas suplementares?",
+     "c": "Na clave de sol, escreve as notas desde o fá da quinta linha até ao dó em duas linhas suplementares."
+    },
+    "pt_BR": {
+     "t": "Linhas suplementares",
+     "g": "Usar linhas curtas extras para notas acima ou abaixo do pentagrama.",
+     "p": [
+      "Linhas suplementares são linhas curtas que estendem o pentagrama para cima ou para baixo.",
+      "Elas seguem o mesmo padrão: linha, espaço, linha, então você só continua contando as notas.",
+      "O dó central numa linha suplementar é o exemplo mais comum."
+     ],
+     "q": "O que é mais fácil para você ler: notas dentro do pentagrama ou nas linhas suplementares?",
+     "c": "Na clave de sol, escreva as notas do fá da quinta linha até o dó em duas linhas suplementares."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memory tricks for notes",
+     "g": "Use easy phrases to remember the lines and spaces.",
+     "p": [
+      "Treble lines E G B D F: Every Good Boy Does Fine. Treble spaces spell FACE.",
+      "Bass lines G B D F A: Good Boys Do Fine Always. Bass spaces A C E G: All Cows Eat Grass.",
+      "Tricks help at first, but landmark notes and practice will make reading automatic."
+     ],
+     "q": "Can you invent your own funny phrase for the treble lines?",
+     "c": "Write your own sentence for E G B D F, then use it to name five random notes on a staff."
+    },
+    "de": {
+     "t": "Merksätze für Noten",
+     "g": "Mit einfachen Sätzen Linien und Zwischenräume behalten.",
+     "p": [
+      "Violinschlüssel-Linien e g h d f: Ein großer Hund drückt Fleisch. Die Zwischenräume ergeben FACE.",
+      "Bassschlüssel-Linien G H D F A: Geh, hol die Flasche Apfelsaft. Zwischenräume A C E G.",
+      "Merksätze helfen am Anfang, mit Übung und Orientierungstönen wird das Lesen automatisch."
+     ],
+     "q": "Fällt dir ein eigener lustiger Satz für die Violinschlüssel-Linien ein?",
+     "c": "Erfinde einen Satz für e g h d f und benenne damit fünf zufällige Noten im System."
+    },
+    "es": {
+     "t": "Trucos para recordar notas",
+     "g": "Usar frases fáciles para recordar líneas y espacios.",
+     "p": [
+      "En clave de sol, las líneas mi sol si re fa van saltando una nota cada vez.",
+      "Los espacios fa la do mi siguen la misma idea, y puedes crear una frase con esas sílabas.",
+      "Los trucos ayudan al principio, pero las notas de referencia y la práctica harán la lectura automática."
+     ],
+     "q": "¿Puedes inventar una frase divertida para mi sol si re fa?",
+     "c": "Inventa tu propia frase para mi sol si re fa y úsala para nombrar cinco notas al azar."
+    },
+    "fr": {
+     "t": "Astuces pour retenir les notes",
+     "g": "Utiliser des phrases simples pour retenir lignes et interlignes.",
+     "p": [
+      "En clé de sol, les lignes mi sol si ré fa sautent toujours une note.",
+      "Les interlignes fa la do mi suivent la même logique : chaque interligne saute une note aussi.",
+      "Les astuces aident au début, mais les notes repères et la pratique rendent la lecture automatique."
+     ],
+     "q": "Peux-tu inventer une phrase rigolote pour mi sol si ré fa ?",
+     "c": "Invente ta phrase pour mi sol si ré fa, puis utilise-la pour nommer cinq notes au hasard."
+    },
+    "it": {
+     "t": "Trucchi per ricordare le note",
+     "g": "Usare frasi semplici per ricordare linee e spazi.",
+     "p": [
+      "In chiave di violino le linee mi sol si re fa saltano sempre una nota.",
+      "Gli spazi fa la do mi seguono la stessa logica: anche qui si salta una nota ogni volta.",
+      "I trucchi aiutano all'inizio, ma note di riferimento e pratica renderanno la lettura automatica."
+     ],
+     "q": "Riesci a inventare una frase buffa per mi sol si re fa?",
+     "c": "Inventa una frase tua per mi sol si re fa e usala per nominare cinque note a caso."
+    },
+    "pt": {
+     "t": "Truques para decorar notas",
+     "g": "Usar frases fáceis para decorar linhas e espaços.",
+     "p": [
+      "Na clave de sol, as linhas mi sol si ré fá saltam sempre uma nota.",
+      "Os espaços fá lá dó mi seguem a mesma lógica: também saltam uma nota de cada vez.",
+      "Os truques ajudam ao início, mas as notas de referência e a prática tornam a leitura automática."
+     ],
+     "q": "Consegues inventar uma frase engraçada para mi sol si ré fá?",
+     "c": "Inventa a tua frase para mi sol si ré fá e usa-a para dizer o nome de cinco notas ao acaso."
+    },
+    "pt_BR": {
+     "t": "Truques para lembrar as notas",
+     "g": "Usar frases fáceis para lembrar linhas e espaços.",
+     "p": [
+      "Na clave de sol, as linhas mi sol si ré fá sempre pulam uma nota.",
+      "Os espaços fá lá dó mi seguem a mesma lógica: também pulam uma nota de cada vez.",
+      "Truques ajudam no começo, mas notas de referência e prática deixam a leitura automática."
+     ],
+     "q": "Você consegue inventar uma frase engraçada para mi sol si ré fá?",
+     "c": "Invente sua frase para mi sol si ré fá e use para dar nome a cinco notas aleatórias."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notes on a guitar",
+     "g": "See how frets and strings map to note names.",
+     "p": [
+      "In standard tuning the six open strings are E A D G B E, from the thickest to the thinnest.",
+      "Each fret raises the note by one half step, so fret 1 on the low E string is F.",
+      "At the 12th fret you reach the same note an octave higher than the open string."
+     ],
+     "q": "Do you play guitar, or would you like to try it one day?",
+     "c": "Name the notes on the low E string from the open string up to the 5th fret: E F F♯ G G♯ A."
+    },
+    "de": {
+     "t": "Töne auf der Gitarre",
+     "g": "Sehen, wie Bünde und Saiten zu Tonnamen werden.",
+     "p": [
+      "In Standardstimmung heißen die leeren Saiten von der dicksten zur dünnsten E A D G H E.",
+      "Jeder Bund erhöht um einen Halbton, Bund 1 auf der tiefen E-Saite ist also F.",
+      "Am 12. Bund erreichst du denselben Ton wie die leere Saite, eine Oktave höher."
+     ],
+     "q": "Spielst du Gitarre oder würdest du es gern einmal ausprobieren?",
+     "c": "Nenne die Töne auf der tiefen E-Saite von leer bis zum 5. Bund: E F Fis G Gis A."
+    },
+    "es": {
+     "t": "Las notas en la guitarra",
+     "g": "Ver cómo trastes y cuerdas se convierten en nombres de notas.",
+     "p": [
+      "Con la afinación estándar, las seis cuerdas al aire son mi la re sol si mi, de la más gruesa a la más fina.",
+      "Cada traste sube la nota un semitono, así que el traste 1 de la sexta cuerda es fa.",
+      "En el traste 12 llegas a la misma nota que la cuerda al aire, una octava más aguda."
+     ],
+     "q": "¿Tocas la guitarra o te gustaría probar algún día?",
+     "c": "Nombra las notas de la sexta cuerda desde el aire hasta el traste 5: mi fa fa♯ sol sol♯ la."
+    },
+    "fr": {
+     "t": "Les notes sur la guitare",
+     "g": "Voir comment cases et cordes correspondent aux noms des notes.",
+     "p": [
+      "En accordage standard, les six cordes à vide sont mi la ré sol si mi, de la plus grave à la plus aiguë.",
+      "Chaque case monte la note d'un demi-ton : la case 1 de la corde de mi grave donne fa.",
+      "À la 12e case, tu retrouves la note de la corde à vide, une octave plus haut."
+     ],
+     "q": "Joues-tu de la guitare, ou aimerais-tu essayer un jour ?",
+     "c": "Nomme les notes de la corde de mi grave, de la corde à vide à la case 5 : mi fa fa♯ sol sol♯ la."
+    },
+    "it": {
+     "t": "Le note sulla chitarra",
+     "g": "Vedere come tasti e corde corrispondono ai nomi delle note.",
+     "p": [
+      "Con l'accordatura standard le sei corde a vuoto sono mi la re sol si mi, dalla più grossa alla più sottile.",
+      "Ogni tasto alza la nota di un semitono, quindi il primo tasto sul mi basso è fa.",
+      "Al 12° tasto ritrovi la nota della corda a vuoto, un'ottava sopra."
+     ],
+     "q": "Suoni la chitarra o ti piacerebbe provarci un giorno?",
+     "c": "Nomina le note sul mi basso dalla corda a vuoto al 5° tasto: mi fa fa♯ sol sol♯ la."
+    },
+    "pt": {
+     "t": "As notas na guitarra",
+     "g": "Ver como trastos e cordas correspondem aos nomes das notas.",
+     "p": [
+      "Na afinação padrão, as seis cordas soltas são mi lá ré sol si mi, da mais grossa à mais fina.",
+      "Cada trasto sobe a nota meio-tom, por isso o trasto 1 da corda mi grave é fá.",
+      "No 12.º trasto chegas à mesma nota da corda solta, uma oitava acima."
+     ],
+     "q": "Tocas guitarra ou gostavas de experimentar um dia?",
+     "c": "Diz as notas da corda mi grave, da corda solta até ao 5.º trasto: mi fá fá♯ sol sol♯ lá."
+    },
+    "pt_BR": {
+     "t": "As notas no violão",
+     "g": "Ver como trastes e cordas viram nomes de notas.",
+     "p": [
+      "Na afinação padrão, as seis cordas soltas são mi lá ré sol si mi, da mais grossa à mais fina.",
+      "Cada traste sobe a nota um semitom, então a casa 1 da corda mi grave é fá.",
+      "Na casa 12 você chega à mesma nota da corda solta, uma oitava acima."
+     ],
+     "q": "Você toca violão ou guitarra, ou gostaria de experimentar um dia?",
+     "c": "Diga as notas da corda mi grave, da solta até a casa 5: mi fá fá♯ sol sol♯ lá."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your voice as an instrument",
+     "g": "Find comfortable notes to sing and learn to match a pitch.",
+     "p": [
+      "Everyone has a range: the notes from the lowest to the highest you can sing comfortably.",
+      "Matching a pitch means hearing a note and singing exactly the same one.",
+      "Hum softly first, and slide slowly towards the note until it feels locked in."
+     ],
+     "q": "Do you sing in the shower, in the car or never at all?",
+     "c": "Play one note on a piano app or tuner, hum it back, and check if your note matches."
+    },
+    "de": {
+     "t": "Deine Stimme als Instrument",
+     "g": "Bequeme Töne zum Singen finden und lernen, einen Ton zu treffen.",
+     "p": [
+      "Jeder hat einen Stimmumfang: die Töne vom tiefsten bis zum höchsten, die du bequem singst.",
+      "Einen Ton treffen heißt, ihn zu hören und genau denselben zu singen.",
+      "Summ zuerst leise und gleite langsam zum Ton, bis er sich eingerastet anfühlt."
+     ],
+     "q": "Singst du unter der Dusche, im Auto oder lieber gar nicht?",
+     "c": "Spiel einen Ton in einer Klavier- oder Stimm-App, summ ihn nach und prüf, ob er passt."
+    },
+    "es": {
+     "t": "Tu voz como instrumento",
+     "g": "Encontrar notas cómodas para cantar y aprender a afinar una nota.",
+     "p": [
+      "Todos tenemos una tesitura: las notas de la más grave a la más aguda que cantas cómodamente.",
+      "Afinar una nota es oírla y cantar exactamente la misma.",
+      "Tararea suave primero y deslízate despacio hacia la nota hasta que encaje."
+     ],
+     "q": "¿Cantas en la ducha, en el coche o nunca?",
+     "c": "Toca una nota en una app de piano o afinador, tararéala y comprueba si coincide."
+    },
+    "fr": {
+     "t": "Ta voix, un instrument",
+     "g": "Trouver des notes confortables à chanter et apprendre à reproduire une note.",
+     "p": [
+      "Chacun a une tessiture : les notes de la plus grave à la plus aiguë que tu chantes sans effort.",
+      "Reproduire une note, c'est l'entendre puis chanter exactement la même.",
+      "Fredonne doucement d'abord, puis glisse lentement vers la note jusqu'à ce qu'elle se cale."
+     ],
+     "q": "Tu chantes sous la douche, en voiture ou jamais ?",
+     "c": "Joue une note sur une appli de piano ou d'accordeur, fredonne-la et vérifie si elle correspond."
+    },
+    "it": {
+     "t": "La voce come strumento",
+     "g": "Trovare note comode da cantare e imparare a intonare una nota.",
+     "p": [
+      "Ognuno ha un'estensione: le note dalla più grave alla più acuta che canti comodamente.",
+      "Intonare una nota vuol dire sentirla e cantare esattamente la stessa.",
+      "Canticchia piano all'inizio e scivola lentamente verso la nota finché non si aggancia."
+     ],
+     "q": "Canti sotto la doccia, in macchina o mai?",
+     "c": "Suona una nota su un'app di pianoforte o un accordatore, canticchiala e verifica se coincide."
+    },
+    "pt": {
+     "t": "A tua voz como instrumento",
+     "g": "Encontrar notas confortáveis para cantar e aprender a afinar uma nota.",
+     "p": [
+      "Todos temos uma extensão: as notas da mais grave à mais aguda que cantas com conforto.",
+      "Afinar uma nota é ouvi-la e cantar exatamente a mesma.",
+      "Cantarola baixinho primeiro e desliza devagar até à nota, até sentires que encaixa."
+     ],
+     "q": "Cantas no duche, no carro ou nunca?",
+     "c": "Toca uma nota numa aplicação de piano ou afinador, cantarola-a e verifica se coincide."
+    },
+    "pt_BR": {
+     "t": "Sua voz como instrumento",
+     "g": "Encontrar notas confortáveis para cantar e aprender a afinar uma nota.",
+     "p": [
+      "Todo mundo tem uma extensão: as notas da mais grave à mais aguda que você canta com conforto.",
+      "Afinar uma nota é ouvir e cantar exatamente a mesma.",
+      "Cantarole baixinho primeiro e deslize devagar até a nota, até sentir que encaixou."
+     ],
+     "q": "Você canta no chuveiro, no carro ou nunca?",
+     "c": "Toque uma nota num app de piano ou afinador, cantarole e confira se bateu."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Note-reading practice",
+     "g": "Name notes quickly on both clefs using landmark notes.",
+     "p": [
+      "Landmark notes help: G on the treble clef curl, F between the bass clef dots, and middle C.",
+      "From a landmark, count up or down: line to space to line is always the next letter.",
+      "Short daily drills of one or two minutes build speed faster than long sessions."
+     ],
+     "q": "Which clef feels easier for you so far, treble or bass?",
+     "c": "Write eight random notes on each clef, then name all sixteen as fast as you can."
+    },
+    "de": {
+     "t": "Notenlesen üben",
+     "g": "Noten in beiden Schlüsseln mit Orientierungstönen schnell benennen.",
+     "p": [
+      "Orientierungstöne helfen: g im Kringel des Violinschlüssels, f zwischen den Bassschlüssel-Punkten, mittleres C.",
+      "Von dort zählst du auf- oder abwärts: Linie, Zwischenraum, Linie ist immer der nächste Ton.",
+      "Kurze tägliche Übungen von ein, zwei Minuten bringen mehr Tempo als lange Sitzungen."
+     ],
+     "q": "Welcher Schlüssel fällt dir bisher leichter, Violin- oder Bassschlüssel?",
+     "c": "Schreib je acht zufällige Noten in beide Schlüssel und benenne alle sechzehn so schnell du kannst."
+    },
+    "es": {
+     "t": "Práctica de lectura",
+     "g": "Nombrar notas rápido en ambas claves usando notas de referencia.",
+     "p": [
+      "Las notas de referencia ayudan: sol en la clave de sol, fa entre los puntos de la clave de fa y el do central.",
+      "Desde una referencia, cuenta arriba o abajo: de línea a espacio siempre es la nota siguiente.",
+      "Ejercicios diarios de uno o dos minutos dan más velocidad que sesiones largas."
+     ],
+     "q": "¿Qué clave te resulta más fácil hasta ahora, la de sol o la de fa?",
+     "c": "Escribe ocho notas al azar en cada clave y nombra las dieciséis lo más rápido que puedas."
+    },
+    "fr": {
+     "t": "S'entraîner à lire les notes",
+     "g": "Nommer vite les notes dans les deux clés grâce aux notes repères.",
+     "p": [
+      "Les notes repères aident : sol sur la boucle de la clé de sol, fa entre les points de la clé de fa, do central.",
+      "À partir d'un repère, compte vers le haut ou le bas : ligne puis interligne, c'est la note suivante.",
+      "De courts exercices quotidiens d'une ou deux minutes donnent plus de vitesse que de longues séances."
+     ],
+     "q": "Quelle clé te semble la plus facile pour l'instant, sol ou fa ?",
+     "c": "Écris huit notes au hasard dans chaque clé et nomme les seize le plus vite possible."
+    },
+    "it": {
+     "t": "Esercizio di lettura",
+     "g": "Nominare velocemente le note in entrambe le chiavi con le note di riferimento.",
+     "p": [
+      "Le note di riferimento aiutano: sol sul ricciolo della chiave di violino, fa tra i punti della chiave di basso, do centrale.",
+      "Da un riferimento conta su o giù: linea, spazio, linea è sempre la nota successiva.",
+      "Brevi esercizi quotidiani di uno o due minuti danno più velocità di lunghe sessioni."
+     ],
+     "q": "Quale chiave ti sembra più facile finora, violino o basso?",
+     "c": "Scrivi otto note a caso in ogni chiave e nomina tutte e sedici il più velocemente possibile."
+    },
+    "pt": {
+     "t": "Prática de leitura",
+     "g": "Dizer depressa o nome das notas nas duas claves com notas de referência.",
+     "p": [
+      "As notas de referência ajudam: sol na clave de sol, fá entre os pontos da clave de fá e o dó central.",
+      "A partir de uma referência, conta para cima ou para baixo: linha, espaço, linha é sempre a nota seguinte.",
+      "Exercícios diários de um ou dois minutos dão mais rapidez do que sessões longas."
+     ],
+     "q": "Que clave te parece mais fácil até agora, a de sol ou a de fá?",
+     "c": "Escreve oito notas ao acaso em cada clave e diz o nome das dezasseis o mais depressa possível."
+    },
+    "pt_BR": {
+     "t": "Prática de leitura",
+     "g": "Dizer rápido o nome das notas nas duas claves usando notas de referência.",
+     "p": [
+      "Notas de referência ajudam: sol na clave de sol, fá entre os pontos da clave de fá e o dó central.",
+      "A partir de uma referência, conte para cima ou para baixo: linha, espaço, linha é sempre a próxima nota.",
+      "Exercícios diários de um ou dois minutos dão mais velocidade do que sessões longas."
+     ],
+     "q": "Qual clave parece mais fácil para você até agora, a de sol ou a de fá?",
+     "c": "Escreva oito notas aleatórias em cada clave e diga o nome das dezesseis o mais rápido que puder."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Letters or syllables",
+     "g": "Understand why some countries say C D E while others say do re mi.",
+     "p": [
+      "English- and German-speaking countries mostly name notes with letters: C D E F G A B (or H).",
+      "Italy, France, Spain, Portugal, Brazil and many others use do re mi fa sol la si as note names.",
+      "Both systems name the same sounds: C is do, D is re, A is la, and so on."
+     ],
+     "q": "Which system did you grow up with, letters or syllables?",
+     "c": "Translate a short melody, C C G G A A G, into syllables and sing it. Do you recognise it?"
+    },
+    "de": {
+     "t": "Buchstaben oder Silben",
+     "g": "Verstehen, warum manche Länder C D E sagen und andere do re mi.",
+     "p": [
+      "Im deutsch- und englischsprachigen Raum benennt man Töne meist mit Buchstaben: C D E F G A H.",
+      "Italien, Frankreich, Spanien, Portugal, Brasilien und viele andere sagen do re mi fa sol la si.",
+      "Beide Systeme meinen dieselben Klänge: C ist do, D ist re, A ist la und so weiter."
+     ],
+     "q": "Mit welchem System bist du aufgewachsen, Buchstaben oder Silben?",
+     "c": "Übersetze C C G G A A G in Silben und sing es. Erkennst du das Lied?"
+    },
+    "es": {
+     "t": "Letras o sílabas",
+     "g": "Entender por qué unos países dicen C D E y otros do re mi.",
+     "p": [
+      "Los países de habla inglesa y alemana suelen nombrar las notas con letras: C D E F G A B (o H).",
+      "España, Latinoamérica, Italia, Francia y Portugal usan do re mi fa sol la si como nombres.",
+      "Los dos sistemas nombran los mismos sonidos: C es do, D es re, A es la, etc."
+     ],
+     "q": "¿Con qué sistema creciste, letras o sílabas?",
+     "c": "Traduce la melodía C C G G A A G a sílabas y cántala. ¿La reconoces?"
+    },
+    "fr": {
+     "t": "Lettres ou syllabes",
+     "g": "Comprendre pourquoi certains pays disent C D E et d'autres do ré mi.",
+     "p": [
+      "Les pays anglophones et germanophones nomment souvent les notes par des lettres : C D E F G A B (ou H).",
+      "La France, l'Italie, l'Espagne, le Portugal, le Brésil et d'autres disent do ré mi fa sol la si.",
+      "Les deux systèmes désignent les mêmes sons : C est do, D est ré, A est la, etc."
+     ],
+     "q": "Avec quel système as-tu grandi, lettres ou syllabes ?",
+     "c": "Traduis la mélodie C C G G A A G en syllabes et chante-la. La reconnais-tu ?"
+    },
+    "it": {
+     "t": "Lettere o sillabe",
+     "g": "Capire perché alcuni paesi dicono C D E e altri do re mi.",
+     "p": [
+      "I paesi di lingua inglese e tedesca chiamano di solito le note con lettere: C D E F G A B (o H).",
+      "Italia, Francia, Spagna, Portogallo, Brasile e altri usano do re mi fa sol la si come nomi.",
+      "I due sistemi indicano gli stessi suoni: C è do, D è re, A è la e così via."
+     ],
+     "q": "Con quale sistema sei cresciuto, lettere o sillabe?",
+     "c": "Traduci la melodia C C G G A A G in sillabe e cantala. La riconosci?"
+    },
+    "pt": {
+     "t": "Letras ou sílabas",
+     "g": "Perceber porque alguns países dizem C D E e outros dó ré mi.",
+     "p": [
+      "Os países de língua inglesa e alemã costumam usar letras: C D E F G A B (ou H).",
+      "Portugal, Brasil, Espanha, Itália, França e outros usam dó ré mi fá sol lá si como nomes.",
+      "Os dois sistemas indicam os mesmos sons: C é dó, D é ré, A é lá, e assim por diante."
+     ],
+     "q": "Com que sistema cresceste, letras ou sílabas?",
+     "c": "Traduz a melodia C C G G A A G para sílabas e canta-a. Reconheces?"
+    },
+    "pt_BR": {
+     "t": "Letras ou sílabas",
+     "g": "Entender por que alguns países dizem C D E e outros dó ré mi.",
+     "p": [
+      "Países de língua inglesa e alemã costumam usar letras: C D E F G A B (ou H).",
+      "No Brasil as duas coisas convivem: dó ré mi na teoria e letras nas cifras de violão.",
+      "Os dois sistemas indicam os mesmos sons: C é dó, D é ré, A é lá, e assim por diante."
+     ],
+     "q": "Você aprendeu primeiro com letras das cifras ou com dó ré mi?",
+     "c": "Traduza a melodia C C G G A A G para sílabas e cante. Você reconhece?"
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixed do and movable do",
+     "g": "Compare two ways to use solfège: fixed to C or moving with the key.",
+     "p": [
+      "In fixed do, do is always C, re is always D, and so on, like note names.",
+      "In movable do, do is the home note of the song, so do can be any note.",
+      "Movable do helps you hear how notes relate; fixed do helps you name exact pitches."
+     ],
+     "q": "Which system sounds more useful to you, and why?",
+     "c": "Sing do re mi starting on C, then start on G and call that G do. Same tune, new home."
+    },
+    "de": {
+     "t": "Feste und relative Solmisation",
+     "g": "Zwei Arten vergleichen, Silben zu nutzen: fest auf C oder mit der Tonart wandernd.",
+     "p": [
+      "Beim festen Do ist do immer C, re immer D und so weiter, wie Tonnamen.",
+      "Bei der relativen Solmisation ist do der Grundton des Liedes, also kann do jeder Ton sein.",
+      "Das wandernde Do schult das Hören von Beziehungen, das feste Do das Benennen genauer Töne."
+     ],
+     "q": "Welches System findest du nützlicher, und warum?",
+     "c": "Sing do re mi ab C, dann ab G und nenne dieses G do. Gleiche Melodie, neues Zuhause."
+    },
+    "es": {
+     "t": "Do fijo y do móvil",
+     "g": "Comparar dos formas de usar el solfeo: fijo en do o moviéndose con la tonalidad.",
+     "p": [
+      "En el do fijo, do es siempre la nota do, re siempre re, como en el idioma español.",
+      "En el do móvil, do es la nota de reposo de la canción, así que puede ser cualquier nota.",
+      "El do móvil ayuda a oír cómo se relacionan las notas; el fijo, a nombrar alturas exactas."
+     ],
+     "q": "¿Qué sistema te parece más útil y por qué?",
+     "c": "Canta do re mi empezando en do, luego empieza en sol y llama do a ese sol. Misma melodía, otra casa."
+    },
+    "fr": {
+     "t": "Do fixe et do mobile",
+     "g": "Comparer deux façons d'utiliser le solfège : fixé sur do ou mobile selon la tonalité.",
+     "p": [
+      "Avec le do fixe, utilisé en France, do est toujours la même note, comme un nom de note.",
+      "Avec le do mobile, do est la note de repos du morceau, il peut donc être n'importe quelle note.",
+      "Le do mobile aide à entendre les relations entre notes ; le do fixe à nommer les hauteurs exactes."
+     ],
+     "q": "Quel système te paraît le plus utile, et pourquoi ?",
+     "c": "Chante do ré mi en partant de do, puis pars de sol et appelle ce sol do. Même air, nouvelle maison."
+    },
+    "it": {
+     "t": "Do fisso e do mobile",
+     "g": "Confrontare due modi di usare il solfeggio: fisso sul do o mobile con la tonalità.",
+     "p": [
+      "Con il do fisso, usato in Italia, do è sempre la stessa nota, come un nome di nota.",
+      "Con il do mobile, do è la nota di riposo del brano, quindi può essere qualsiasi nota.",
+      "Il do mobile aiuta a sentire i rapporti tra le note; quello fisso a nominare altezze esatte."
+     ],
+     "q": "Quale sistema ti sembra più utile, e perché?",
+     "c": "Canta do re mi partendo dal do, poi parti dal sol e chiama do quel sol. Stessa melodia, nuova casa."
+    },
+    "pt": {
+     "t": "Dó fixo e dó móvel",
+     "g": "Comparar duas formas de usar o solfejo: fixo no dó ou móvel com a tonalidade.",
+     "p": [
+      "No dó fixo, usado em Portugal, dó é sempre a mesma nota, como um nome de nota.",
+      "No dó móvel, dó é a nota de repouso da música, por isso pode ser qualquer nota.",
+      "O dó móvel ajuda a ouvir a relação entre notas; o fixo ajuda a nomear alturas exatas."
+     ],
+     "q": "Que sistema te parece mais útil, e porquê?",
+     "c": "Canta dó ré mi a começar em dó, depois começa em sol e chama dó a esse sol. Mesma melodia, nova casa."
+    },
+    "pt_BR": {
+     "t": "Dó fixo e dó móvel",
+     "g": "Comparar dois jeitos de usar o solfejo: fixo no dó ou móvel com a tonalidade.",
+     "p": [
+      "No dó fixo, comum no Brasil, dó é sempre a mesma nota, como um nome de nota.",
+      "No dó móvel, dó é a nota de repouso da música, então pode ser qualquer nota.",
+      "O dó móvel ajuda a ouvir a relação entre as notas; o fixo ajuda a nomear alturas exatas."
+     ],
+     "q": "Qual sistema parece mais útil para você, e por quê?",
+     "c": "Cante dó ré mi começando em dó, depois comece em sol e chame esse sol de dó. Mesma melodia, nova casa."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hearing high and low",
+     "g": "Play ear games to tell which of two notes is higher.",
+     "p": [
+      "Training your ear starts with simple comparisons: higher, lower or the same.",
+      "Wide distances are easy to hear; close notes take a little more practice.",
+      "Singing both notes quietly helps your ear decide which one is higher."
+     ],
+     "q": "Do you find it easy to tell when a note goes up or down?",
+     "c": "Ask a friend to play two notes on a piano app, or use random keys yourself, and guess which is higher."
+    },
+    "de": {
+     "t": "Hoch und tief hören",
+     "g": "Mit Hörspielen erkennen, welcher von zwei Tönen höher ist.",
+     "p": [
+      "Gehörbildung beginnt mit einfachen Vergleichen: höher, tiefer oder gleich.",
+      "Große Abstände hört man leicht, nahe beieinander liegende Töne brauchen etwas Übung.",
+      "Beide Töne leise mitzusingen hilft dem Ohr zu entscheiden, welcher höher ist."
+     ],
+     "q": "Fällt es dir leicht zu hören, ob ein Ton nach oben oder unten geht?",
+     "c": "Lass jemanden zwei Töne in einer Klavier-App spielen, oder drück selbst zufällig, und rate, welcher höher ist."
+    },
+    "es": {
+     "t": "Oír agudo y grave",
+     "g": "Jugar con el oído para saber cuál de dos notas es más aguda.",
+     "p": [
+      "Entrenar el oído empieza con comparaciones simples: más aguda, más grave o igual.",
+      "Las distancias grandes se oyen fácil; las notas cercanas piden un poco más de práctica.",
+      "Cantar suavemente las dos notas ayuda al oído a decidir cuál es más aguda."
+     ],
+     "q": "¿Te resulta fácil saber si una nota sube o baja?",
+     "c": "Pide a alguien que toque dos notas en una app de piano, o toca al azar, y adivina cuál es más aguda."
+    },
+    "fr": {
+     "t": "Entendre aigu et grave",
+     "g": "Jouer avec ton oreille pour savoir laquelle de deux notes est la plus aiguë.",
+     "p": [
+      "Éduquer l'oreille commence par des comparaisons simples : plus aigu, plus grave ou pareil.",
+      "Les grands écarts s'entendent facilement ; les notes proches demandent un peu de pratique.",
+      "Chanter doucement les deux notes aide l'oreille à décider laquelle est la plus aiguë."
+     ],
+     "q": "As-tu facilement l'impression qu'une note monte ou descend ?",
+     "c": "Demande à quelqu'un de jouer deux notes sur une appli de piano, ou joue au hasard, et devine la plus aiguë."
+    },
+    "it": {
+     "t": "Sentire acuto e grave",
+     "g": "Giocare con l'orecchio per capire quale di due note è più acuta.",
+     "p": [
+      "Allenare l'orecchio comincia da confronti semplici: più acuta, più grave o uguale.",
+      "Le grandi distanze si sentono facilmente; le note vicine richiedono un po' di pratica.",
+      "Cantare piano entrambe le note aiuta l'orecchio a decidere quale è più acuta."
+     ],
+     "q": "Ti viene facile capire se una nota sale o scende?",
+     "c": "Chiedi a qualcuno di suonare due note su un'app di pianoforte, o premi a caso, e indovina la più acuta."
+    },
+    "pt": {
+     "t": "Ouvir agudo e grave",
+     "g": "Jogar com o ouvido para perceber qual de duas notas é mais aguda.",
+     "p": [
+      "Treinar o ouvido começa com comparações simples: mais aguda, mais grave ou igual.",
+      "Distâncias grandes ouvem-se facilmente; notas próximas pedem um pouco mais de prática.",
+      "Cantar baixinho as duas notas ajuda o ouvido a decidir qual é mais aguda."
+     ],
+     "q": "Achas fácil perceber se uma nota sobe ou desce?",
+     "c": "Pede a alguém para tocar duas notas numa aplicação de piano, ou toca ao acaso, e adivinha a mais aguda."
+    },
+    "pt_BR": {
+     "t": "Ouvindo agudo e grave",
+     "g": "Brincar com o ouvido para saber qual de duas notas é mais aguda.",
+     "p": [
+      "Treinar o ouvido começa com comparações simples: mais aguda, mais grave ou igual.",
+      "Distâncias grandes são fáceis de ouvir; notas próximas pedem um pouco mais de prática.",
+      "Cantar baixinho as duas notas ajuda o ouvido a decidir qual é mais aguda."
+     ],
+     "q": "Para você é fácil perceber se uma nota sobe ou desce?",
+     "c": "Peça para alguém tocar duas notas num app de piano, ou toque aleatoriamente, e adivinhe a mais aguda."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: notes and pitch",
+     "g": "Recap note names, the staff and the keyboard with a fun naming quiz.",
+     "p": [
+      "Seven note names repeat in octaves, with sharps and flats on the black keys in between.",
+      "Half steps and whole steps measure distance, and E–F and B–C are natural half steps.",
+      "The treble and bass clefs place notes on the staff, joined by middle C."
+     ],
+     "q": "Which idea from this month clicked best for you?",
+     "c": "Quiz yourself: find on a keyboard F, B flat, middle C and E, then write each one on a staff."
+    },
+    "de": {
+     "t": "Wiederholung: Töne und Tonhöhe",
+     "g": "Tonnamen, Notensystem und Tastatur mit einem lustigen Quiz wiederholen.",
+     "p": [
+      "Sieben Tonnamen wiederholen sich in Oktaven, mit Kreuz- und b-Tönen auf den schwarzen Tasten.",
+      "Halb- und Ganztöne messen Abstände, E–F und H–C sind natürliche Halbtöne.",
+      "Violin- und Bassschlüssel ordnen die Noten im System, verbunden durch das mittlere C."
+     ],
+     "q": "Welche Idee aus diesem Monat hat bei dir am besten klick gemacht?",
+     "c": "Quiz: Finde auf der Tastatur F, B, das mittlere C und E und schreib jeden Ton ins Notensystem."
+    },
+    "es": {
+     "t": "Repaso: notas y altura",
+     "g": "Repasar nombres de notas, pentagrama y teclado con un divertido juego.",
+     "p": [
+      "Siete notas se repiten en octavas, con sostenidos y bemoles en las teclas negras.",
+      "Tonos y semitonos miden distancias, y mi–fa y si–do son semitonos naturales.",
+      "Las claves de sol y fa sitúan las notas en el pentagrama, unidas por el do central."
+     ],
+     "q": "¿Qué idea de este mes te quedó más clara?",
+     "c": "Ponte a prueba: busca en el teclado fa, si bemol, el do central y mi, y escribe cada uno en el pentagrama."
+    },
+    "fr": {
+     "t": "Révision : notes et hauteur",
+     "g": "Revoir noms des notes, portée et clavier avec un petit quiz amusant.",
+     "p": [
+      "Sept noms de notes se répètent en octaves, avec dièses et bémols sur les touches noires.",
+      "Tons et demi-tons mesurent les distances, et mi–fa et si–do sont des demi-tons naturels.",
+      "Les clés de sol et de fa placent les notes sur la portée, reliées par le do central."
+     ],
+     "q": "Quelle idée de ce mois t'a le plus parlé ?",
+     "c": "Quiz : trouve sur un clavier fa, si bémol, le do central et mi, puis écris chacun sur une portée."
+    },
+    "it": {
+     "t": "Ripasso: note e altezza",
+     "g": "Ripassare nomi delle note, pentagramma e tastiera con un quiz divertente.",
+     "p": [
+      "Sette nomi di note si ripetono in ottave, con diesis e bemolle sui tasti neri.",
+      "Toni e semitoni misurano le distanze, e mi–fa e si–do sono semitoni naturali.",
+      "Le chiavi di violino e di basso collocano le note sul pentagramma, unite dal do centrale."
+     ],
+     "q": "Quale idea di questo mese ti è entrata meglio in testa?",
+     "c": "Quiz: trova sulla tastiera fa, si bemolle, il do centrale e mi, poi scrivi ognuno sul pentagramma."
+    },
+    "pt": {
+     "t": "Revisão: notas e altura",
+     "g": "Rever nomes das notas, pauta e teclado com um questionário divertido.",
+     "p": [
+      "Sete nomes de notas repetem-se em oitavas, com sustenidos e bemóis nas teclas pretas.",
+      "Tons e meios-tons medem distâncias, e mi–fá e si–dó são meios-tons naturais.",
+      "As claves de sol e de fá colocam as notas na pauta, ligadas pelo dó central."
+     ],
+     "q": "Que ideia deste mês fez mais sentido para ti?",
+     "c": "Desafio: encontra no teclado fá, si bemol, o dó central e mi, e escreve cada um na pauta."
+    },
+    "pt_BR": {
+     "t": "Revisão: notas e altura",
+     "g": "Revisar nomes das notas, pentagrama e teclado com um quiz divertido.",
+     "p": [
+      "Sete nomes de notas se repetem em oitavas, com sustenidos e bemóis nas teclas pretas.",
+      "Tons e semitons medem distâncias, e mi–fá e si–dó são semitons naturais.",
+      "As claves de sol e de fá colocam as notas no pentagrama, ligadas pelo dó central."
+     ],
+     "q": "Qual ideia deste mês fez mais sentido para você?",
+     "c": "Desafio: ache no teclado fá, si bemol, o dó central e mi, e escreva cada um no pentagrama."
+    }
+   }
+  }
+ ]
+}

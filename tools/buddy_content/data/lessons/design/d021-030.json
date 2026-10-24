@@ -1,0 +1,835 @@
+{
+ "topic": "design",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm and movement",
+     "g": "Lead the eye through a design with repeated or progressing elements.",
+     "p": [
+      "Rhythm comes from repeating elements with regular gaps, like beats in music.",
+      "Progression, such as shapes growing larger or colours getting darker, creates a sense of movement.",
+      "Lines, arrows and the direction a person looks in a photo all steer the viewer's eye."
+     ],
+     "q": "Which pattern around you, like tiles or fence posts, has a strong rhythm?",
+     "c": "Draw a row of seven circles that grow in size from left to right, then try a version that breaks the beat once."
+    },
+    "de": {
+     "t": "Rhythmus und Bewegung",
+     "g": "Den Blick mit wiederholten oder sich steigernden Elementen durch ein Design führen.",
+     "p": [
+      "Rhythmus entsteht durch Wiederholung mit regelmäßigen Abständen, wie Schläge in der Musik.",
+      "Steigerung, etwa wachsende Formen oder dunkler werdende Farben, erzeugt ein Gefühl von Bewegung.",
+      "Linien, Pfeile und die Blickrichtung einer Person auf einem Foto lenken das Auge."
+     ],
+     "q": "Welches Muster um dich herum, etwa Fliesen oder Zaunpfähle, hat einen starken Rhythmus?",
+     "c": "Zeichne eine Reihe von sieben Kreisen, die nach rechts wachsen, und dann eine Version, die den Takt einmal bricht."
+    },
+    "es": {
+     "t": "Ritmo y movimiento",
+     "g": "Guiar la mirada por un diseño con elementos repetidos o en progresión.",
+     "p": [
+      "El ritmo nace de repetir elementos con espacios regulares, como los compases en la música.",
+      "La progresión, como formas que crecen o colores que oscurecen, crea sensación de movimiento.",
+      "Líneas, flechas y la dirección en que mira una persona en una foto guían la vista."
+     ],
+     "q": "¿Qué patrón a tu alrededor, como azulejos o una valla, tiene un ritmo marcado?",
+     "c": "Dibuja una fila de siete círculos que crecen de izquierda a derecha y luego una versión que rompa el ritmo una vez."
+    },
+    "fr": {
+     "t": "Rythme et mouvement",
+     "g": "Guider l'œil à travers un design avec des éléments répétés ou en progression.",
+     "p": [
+      "Le rythme naît de la répétition d'éléments à intervalles réguliers, comme les temps en musique.",
+      "La progression, des formes qui grandissent ou des couleurs qui foncent, donne une impression de mouvement.",
+      "Lignes, flèches et direction du regard d'une personne sur une photo orientent l'œil."
+     ],
+     "q": "Quel motif autour de toi, comme un carrelage ou une clôture, a un rythme marqué ?",
+     "c": "Dessine une rangée de sept cercles qui grandissent vers la droite, puis une version qui casse le rythme une fois."
+    },
+    "it": {
+     "t": "Ritmo e movimento",
+     "g": "Guidare l'occhio attraverso un progetto con elementi ripetuti o in progressione.",
+     "p": [
+      "Il ritmo nasce dalla ripetizione di elementi a intervalli regolari, come i battiti in musica.",
+      "La progressione, forme che crescono o colori che si scuriscono, crea senso di movimento.",
+      "Linee, frecce e la direzione dello sguardo di una persona in foto guidano l'occhio."
+     ],
+     "q": "Quale motivo intorno a te, come piastrelle o una staccionata, ha un ritmo forte?",
+     "c": "Disegna una fila di sette cerchi che crescono da sinistra a destra, poi una versione che rompe il ritmo una volta."
+    },
+    "pt": {
+     "t": "Ritmo e movimento",
+     "g": "Guiar o olhar através de um design com elementos repetidos ou em progressão.",
+     "p": [
+      "O ritmo nasce da repetição de elementos com intervalos regulares, como os tempos na música.",
+      "A progressão, formas que crescem ou cores que escurecem, cria sensação de movimento.",
+      "Linhas, setas e a direção do olhar de uma pessoa numa foto conduzem o olhar."
+     ],
+     "q": "Que padrão à tua volta, como azulejos ou uma vedação, tem um ritmo forte?",
+     "c": "Desenha uma fila de sete círculos que crescem da esquerda para a direita e depois uma versão que quebra o ritmo uma vez."
+    },
+    "pt_BR": {
+     "t": "Ritmo e movimento",
+     "g": "Guiar o olhar pelo design com elementos repetidos ou em progressão.",
+     "p": [
+      "O ritmo nasce da repetição de elementos com intervalos regulares, como as batidas da música.",
+      "A progressão, formas que crescem ou cores que escurecem, cria sensação de movimento.",
+      "Linhas, setas e a direção do olhar de uma pessoa na foto conduzem a vista."
+     ],
+     "q": "Que padrão ao seu redor, como azulejos ou uma cerca, tem um ritmo forte?",
+     "c": "Desenhe uma fileira de sete círculos que crescem da esquerda para a direita e depois uma versão que quebra o ritmo uma vez."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gestalt principles intro",
+     "g": "Discover how our brains group shapes through closure, similarity, continuity and figure-ground.",
+     "p": [
+      "Closure: we complete missing parts, so a broken circle still reads as a circle.",
+      "Similarity and continuity: alike items feel related, and the eye follows smooth paths.",
+      "Figure-ground: we split every image into a subject and a background, sometimes in two ways."
+     ],
+     "q": "Have you seen the famous image that can be a vase or two faces?",
+     "c": "Draw a circle using only eight short dashes and ask someone what they see."
+    },
+    "de": {
+     "t": "Einführung in die Gestaltgesetze",
+     "g": "Entdecken, wie unser Gehirn Formen gruppiert: Geschlossenheit, Ähnlichkeit, Kontinuität, Figur und Grund.",
+     "p": [
+      "Geschlossenheit: Wir ergänzen fehlende Teile, ein unterbrochener Kreis bleibt ein Kreis.",
+      "Ähnlichkeit und Kontinuität: Gleiches wirkt verwandt, und das Auge folgt fließenden Bahnen.",
+      "Figur und Grund: Wir teilen jedes Bild in Motiv und Hintergrund, manchmal auf zwei Arten."
+     ],
+     "q": "Kennst du das berühmte Bild, das eine Vase oder zwei Gesichter zeigt?",
+     "c": "Zeichne einen Kreis nur aus acht kurzen Strichen und frag jemanden, was er sieht."
+    },
+    "es": {
+     "t": "Introducción a la Gestalt",
+     "g": "Descubrir cómo el cerebro agrupa formas por cierre, semejanza, continuidad y figura-fondo.",
+     "p": [
+      "Cierre: completamos lo que falta, así que un círculo roto se sigue leyendo como círculo.",
+      "Semejanza y continuidad: lo parecido se siente relacionado y la vista sigue trayectorias suaves.",
+      "Figura-fondo: dividimos cada imagen en sujeto y fondo, a veces de dos maneras."
+     ],
+     "q": "¿Has visto la famosa imagen que puede ser un jarrón o dos caras?",
+     "c": "Dibuja un círculo solo con ocho trazos cortos y pregunta a alguien qué ve."
+    },
+    "fr": {
+     "t": "Introduction à la Gestalt",
+     "g": "Découvrir comment le cerveau regroupe les formes : clôture, similarité, continuité, figure et fond.",
+     "p": [
+      "Clôture : on complète ce qui manque, un cercle interrompu se lit encore comme un cercle.",
+      "Similarité et continuité : ce qui se ressemble paraît lié, et l'œil suit les tracés fluides.",
+      "Figure et fond : on sépare chaque image en sujet et fond, parfois de deux façons."
+     ],
+     "q": "Connais-tu la célèbre image qui montre un vase ou deux visages ?",
+     "c": "Dessine un cercle avec seulement huit petits tirets et demande à quelqu'un ce qu'il voit."
+    },
+    "it": {
+     "t": "Introduzione alla Gestalt",
+     "g": "Scoprire come il cervello raggruppa le forme: chiusura, somiglianza, continuità, figura e sfondo.",
+     "p": [
+      "Chiusura: completiamo le parti mancanti, un cerchio interrotto resta un cerchio.",
+      "Somiglianza e continuità: ciò che è simile sembra collegato e l'occhio segue percorsi fluidi.",
+      "Figura e sfondo: dividiamo ogni immagine in soggetto e sfondo, a volte in due modi."
+     ],
+     "q": "Hai mai visto la famosa immagine che può essere un vaso o due volti?",
+     "c": "Disegna un cerchio usando solo otto trattini corti e chiedi a qualcuno cosa vede."
+    },
+    "pt": {
+     "t": "Introdução à Gestalt",
+     "g": "Descobrir como o cérebro agrupa formas: fecho, semelhança, continuidade e figura-fundo.",
+     "p": [
+      "Fecho: completamos o que falta, por isso um círculo interrompido continua a ler-se como círculo.",
+      "Semelhança e continuidade: o que é parecido parece ligado, e o olhar segue percursos suaves.",
+      "Figura-fundo: dividimos cada imagem em sujeito e fundo, às vezes de duas formas."
+     ],
+     "q": "Já viste a famosa imagem que pode ser um vaso ou dois rostos?",
+     "c": "Desenha um círculo só com oito traços curtos e pergunta a alguém o que vê."
+    },
+    "pt_BR": {
+     "t": "Introdução à Gestalt",
+     "g": "Descobrir como o cérebro agrupa formas: fechamento, semelhança, continuidade e figura-fundo.",
+     "p": [
+      "Fechamento: completamos o que falta, então um círculo interrompido ainda parece um círculo.",
+      "Semelhança e continuidade: o que é parecido parece ligado, e o olho segue caminhos suaves.",
+      "Figura-fundo: dividimos toda imagem em objeto e fundo, às vezes de dois jeitos."
+     ],
+     "q": "Você já viu a famosa imagem que pode ser um vaso ou dois rostos?",
+     "c": "Desenhe um círculo só com oito tracinhos curtos e pergunte a alguém o que vê."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unity and variety",
+     "g": "Balance consistency with enough variety to keep a design interesting.",
+     "p": [
+      "Unity makes a design feel like one whole; too much of it becomes boring.",
+      "Variety adds surprise and energy; too much of it becomes chaos.",
+      "A good rule: keep most things consistent and change one thing with intention."
+     ],
+     "q": "Do you like your clothes to match perfectly, or with one surprising detail?",
+     "c": "Draw a row of six identical squares, then change only one of them so it stands out without breaking the set."
+    },
+    "de": {
+     "t": "Einheit und Vielfalt",
+     "g": "Einheitlichkeit mit genug Abwechslung verbinden, damit ein Design spannend bleibt.",
+     "p": [
+      "Einheit lässt ein Design wie ein Ganzes wirken; zu viel davon wird langweilig.",
+      "Vielfalt bringt Überraschung und Energie; zu viel davon wird Chaos.",
+      "Eine gute Regel: das meiste einheitlich halten und eine Sache bewusst ändern."
+     ],
+     "q": "Magst du Kleidung perfekt abgestimmt oder mit einem überraschenden Detail?",
+     "c": "Zeichne sechs gleiche Quadrate in einer Reihe und ändere nur eines, sodass es auffällt, ohne die Reihe zu sprengen."
+    },
+    "es": {
+     "t": "Unidad y variedad",
+     "g": "Equilibrar coherencia con suficiente variedad para que el diseño siga siendo interesante.",
+     "p": [
+      "La unidad hace que un diseño se sienta como un todo; en exceso resulta aburrida.",
+      "La variedad aporta sorpresa y energía; en exceso se vuelve caos.",
+      "Una buena regla: mantén casi todo coherente y cambia una sola cosa con intención."
+     ],
+     "q": "¿Te gusta que tu ropa combine a la perfección o con un detalle sorprendente?",
+     "c": "Dibuja seis cuadrados iguales en fila y cambia solo uno para que destaque sin romper el conjunto."
+    },
+    "fr": {
+     "t": "Unité et variété",
+     "g": "Équilibrer cohérence et variété pour qu'un design reste intéressant.",
+     "p": [
+      "L'unité fait d'un design un tout ; en excès, elle devient ennuyeuse.",
+      "La variété apporte surprise et énergie ; en excès, elle devient chaos.",
+      "Une bonne règle : garder presque tout cohérent et changer une seule chose volontairement."
+     ],
+     "q": "Aimes-tu que tes vêtements soient parfaitement assortis ou avec un détail surprenant ?",
+     "c": "Dessine six carrés identiques en ligne, puis change-en un seul pour qu'il ressorte sans casser l'ensemble."
+    },
+    "it": {
+     "t": "Unità e varietà",
+     "g": "Bilanciare coerenza e varietà perché un progetto resti interessante.",
+     "p": [
+      "L'unità fa sembrare un progetto un tutto unico; in eccesso diventa noiosa.",
+      "La varietà porta sorpresa ed energia; in eccesso diventa caos.",
+      "Una buona regola: tieni quasi tutto coerente e cambia una sola cosa con intenzione."
+     ],
+     "q": "Ti piace che i vestiti siano perfettamente abbinati o con un dettaglio a sorpresa?",
+     "c": "Disegna sei quadrati uguali in fila e cambiane solo uno perché risalti senza rompere l'insieme."
+    },
+    "pt": {
+     "t": "Unidade e variedade",
+     "g": "Equilibrar coerência com variedade suficiente para o design continuar interessante.",
+     "p": [
+      "A unidade faz o design parecer um todo; em excesso, torna-se aborrecida.",
+      "A variedade traz surpresa e energia; em excesso, vira caos.",
+      "Uma boa regra: manter quase tudo coerente e mudar uma só coisa com intenção."
+     ],
+     "q": "Gostas da roupa perfeitamente combinada ou com um pormenor surpreendente?",
+     "c": "Desenha seis quadrados iguais em fila e muda só um para se destacar sem quebrar o conjunto."
+    },
+    "pt_BR": {
+     "t": "Unidade e variedade",
+     "g": "Equilibrar coerência com variedade suficiente para o design continuar interessante.",
+     "p": [
+      "A unidade faz o design parecer um todo; em excesso, fica chata.",
+      "A variedade traz surpresa e energia; em excesso, vira bagunça.",
+      "Uma boa regra: manter quase tudo coerente e mudar uma coisa só, com intenção."
+     ],
+     "q": "Você gosta da roupa toda combinando ou com um detalhe surpreendente?",
+     "c": "Desenhe seis quadrados iguais em fileira e mude só um para se destacar sem quebrar o conjunto."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simplicity as a skill",
+     "g": "Practise removing the unnecessary until only what matters remains.",
+     "p": [
+      "Simple is not the same as easy; it takes effort to decide what to leave out.",
+      "Start with the one message or task that matters most and cut anything that distracts from it.",
+      "Simplifying often means fewer colours, fewer fonts, fewer words and more space."
+     ],
+     "q": "What is one thing in your life you would like to simplify?",
+     "c": "Take a sentence-long sign, like a shop notice, and rewrite and redesign it using half the words."
+    },
+    "de": {
+     "t": "Einfachheit als Können",
+     "g": "Üben, Unnötiges wegzulassen, bis nur das Wichtige bleibt.",
+     "p": [
+      "Einfach ist nicht dasselbe wie leicht; es kostet Mühe zu entscheiden, was wegkommt.",
+      "Beginne mit der einen Botschaft oder Aufgabe, die am meisten zählt, und streiche alles, was ablenkt.",
+      "Vereinfachen heißt oft weniger Farben, weniger Schriften, weniger Worte und mehr Raum."
+     ],
+     "q": "Was würdest du in deinem Leben gern vereinfachen?",
+     "c": "Nimm einen Aushang, etwa einen Ladenhinweis, und gestalte ihn mit halb so vielen Worten neu."
+    },
+    "es": {
+     "t": "La sencillez como habilidad",
+     "g": "Practicar quitar lo innecesario hasta que solo quede lo importante.",
+     "p": [
+      "Sencillo no es lo mismo que fácil; cuesta esfuerzo decidir qué dejar fuera.",
+      "Empieza por el mensaje o la tarea que más importa y elimina lo que distraiga de ello.",
+      "Simplificar suele significar menos colores, menos tipografías, menos palabras y más espacio."
+     ],
+     "q": "¿Qué te gustaría simplificar en tu vida?",
+     "c": "Toma un aviso, como el cartel de una tienda, y reescríbelo y rediséñalo con la mitad de palabras."
+    },
+    "fr": {
+     "t": "La simplicité, une compétence",
+     "g": "S'exercer à retirer l'inutile jusqu'à ce qu'il ne reste que l'essentiel.",
+     "p": [
+      "Simple ne veut pas dire facile ; décider quoi enlever demande un vrai effort.",
+      "Pars du message ou de la tâche qui compte le plus et supprime ce qui en détourne.",
+      "Simplifier, c'est souvent moins de couleurs, de polices et de mots, et plus d'espace."
+     ],
+     "q": "Qu'aimerais-tu simplifier dans ta vie ?",
+     "c": "Prends un avis, comme celui d'une boutique, et réécris-le et remets-le en page avec moitié moins de mots."
+    },
+    "it": {
+     "t": "La semplicità come abilità",
+     "g": "Esercitarsi a togliere il superfluo finché resta solo ciò che conta.",
+     "p": [
+      "Semplice non vuol dire facile; decidere cosa togliere richiede impegno.",
+      "Parti dal messaggio o dal compito più importante ed elimina ciò che distrae.",
+      "Semplificare spesso significa meno colori, meno caratteri, meno parole e più spazio."
+     ],
+     "q": "C'è qualcosa nella tua vita che vorresti semplificare?",
+     "c": "Prendi un avviso, come il cartello di un negozio, e riscrivilo e reimpaginalo con metà delle parole."
+    },
+    "pt": {
+     "t": "A simplicidade como competência",
+     "g": "Praticar tirar o que não é preciso até ficar só o que importa.",
+     "p": [
+      "Simples não é o mesmo que fácil; decidir o que deixar de fora dá trabalho.",
+      "Começa pela mensagem ou tarefa mais importante e corta o que distrai dela.",
+      "Simplificar costuma significar menos cores, menos letras, menos palavras e mais espaço."
+     ],
+     "q": "Que coisa na tua vida gostavas de simplificar?",
+     "c": "Pega num aviso, como o de uma loja, e reescreve-o e redesenha-o com metade das palavras."
+    },
+    "pt_BR": {
+     "t": "Simplicidade como habilidade",
+     "g": "Praticar tirar o desnecessário até sobrar só o que importa.",
+     "p": [
+      "Simples não é o mesmo que fácil; decidir o que deixar de fora dá trabalho.",
+      "Comece pela mensagem ou tarefa mais importante e corte tudo que distrai dela.",
+      "Simplificar costuma significar menos cores, menos fontes, menos palavras e mais espaço."
+     ],
+     "q": "O que você gostaria de simplificar na sua vida?",
+     "c": "Pegue um aviso, como o de uma loja, e reescreva e redesenhe usando metade das palavras."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Analysing a poster",
+     "g": "Apply the principles you learned to break down a poster you admire.",
+     "p": [
+      "Start with your first impression: where did your eye land, and what feeling did you get?",
+      "Then name the tools: hierarchy, contrast, alignment, white space, balance and repetition.",
+      "Ask what you would change; analysing others' work is one of the fastest ways to learn."
+     ],
+     "q": "Which poster, album cover or book cover has stuck in your memory?",
+     "c": "Choose a poster you like and write one line each on its focal point, hierarchy, alignment and colours."
+    },
+    "de": {
+     "t": "Ein Plakat analysieren",
+     "g": "Die gelernten Prinzipien anwenden, um ein Plakat zu zerlegen, das du bewunderst.",
+     "p": [
+      "Beginne mit dem ersten Eindruck: Wo landete dein Blick, und welches Gefühl hattest du?",
+      "Benenne dann die Werkzeuge: Hierarchie, Kontrast, Ausrichtung, Weißraum, Balance und Wiederholung.",
+      "Frag dich, was du ändern würdest; fremde Arbeiten zu analysieren ist ein schneller Lernweg."
+     ],
+     "q": "Welches Plakat, Albumcover oder Buchcover ist dir im Gedächtnis geblieben?",
+     "c": "Wähle ein Plakat, das dir gefällt, und schreib je eine Zeile zu Blickfang, Hierarchie, Ausrichtung und Farben."
+    },
+    "es": {
+     "t": "Analizar un cartel",
+     "g": "Aplicar los principios aprendidos para desmontar un cartel que admiras.",
+     "p": [
+      "Empieza por tu primera impresión: ¿dónde se posó tu vista y qué sentiste?",
+      "Luego nombra las herramientas: jerarquía, contraste, alineación, espacio en blanco, equilibrio y repetición.",
+      "Pregúntate qué cambiarías; analizar el trabajo ajeno es de las formas más rápidas de aprender."
+     ],
+     "q": "¿Qué cartel, portada de disco o de libro se te ha quedado grabado?",
+     "c": "Elige un cartel que te guste y escribe una línea sobre su punto focal, jerarquía, alineación y colores."
+    },
+    "fr": {
+     "t": "Analyser une affiche",
+     "g": "Appliquer les principes appris pour décortiquer une affiche que tu admires.",
+     "p": [
+      "Commence par ta première impression : où ton œil s'est-il posé, et qu'as-tu ressenti ?",
+      "Nomme ensuite les outils : hiérarchie, contraste, alignement, espace blanc, équilibre et répétition.",
+      "Demande-toi ce que tu changerais ; analyser le travail des autres fait progresser très vite."
+     ],
+     "q": "Quelle affiche, pochette d'album ou couverture de livre t'est restée en mémoire ?",
+     "c": "Choisis une affiche que tu aimes et écris une ligne sur son point focal, sa hiérarchie, son alignement et ses couleurs."
+    },
+    "it": {
+     "t": "Analizzare un manifesto",
+     "g": "Applicare i principi imparati per scomporre un manifesto che ammiri.",
+     "p": [
+      "Parti dalla prima impressione: dove si è posato lo sguardo e cosa hai provato?",
+      "Poi nomina gli strumenti: gerarchia, contrasto, allineamento, spazio bianco, equilibrio e ripetizione.",
+      "Chiediti cosa cambieresti; analizzare il lavoro altrui è uno dei modi più rapidi per imparare."
+     ],
+     "q": "Quale manifesto, copertina di disco o di libro ti è rimasto in mente?",
+     "c": "Scegli un manifesto che ti piace e scrivi una riga su punto focale, gerarchia, allineamento e colori."
+    },
+    "pt": {
+     "t": "Analisar um cartaz",
+     "g": "Aplicar os princípios aprendidos para decompor um cartaz que admiras.",
+     "p": [
+      "Começa pela primeira impressão: onde pousou o teu olhar e o que sentiste?",
+      "Depois nomeia as ferramentas: hierarquia, contraste, alinhamento, espaço em branco, equilíbrio e repetição.",
+      "Pergunta-te o que mudarias; analisar o trabalho dos outros é das formas mais rápidas de aprender."
+     ],
+     "q": "Que cartaz, capa de disco ou de livro te ficou na memória?",
+     "c": "Escolhe um cartaz de que gostes e escreve uma linha sobre o ponto focal, a hierarquia, o alinhamento e as cores."
+    },
+    "pt_BR": {
+     "t": "Analisando um cartaz",
+     "g": "Aplicar os princípios aprendidos para destrinchar um cartaz que você admira.",
+     "p": [
+      "Comece pela primeira impressão: onde seu olhar pousou e o que você sentiu?",
+      "Depois nomeie as ferramentas: hierarquia, contraste, alinhamento, espaço em branco, equilíbrio e repetição.",
+      "Pergunte o que você mudaria; analisar o trabalho dos outros é um dos jeitos mais rápidos de aprender."
+     ],
+     "q": "Que cartaz, capa de disco ou de livro ficou na sua memória?",
+     "c": "Escolha um cartaz que você curte e escreva uma linha sobre ponto focal, hierarquia, alinhamento e cores."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Redesigning a simple flyer",
+     "g": "Improve a messy flyer using alignment, hierarchy and white space.",
+     "p": [
+      "First list the content and rank it: what, when, where, and how to join usually lead.",
+      "Strip extras: one or two fonts, a limited palette, and no decorations that compete with the message.",
+      "Rebuild on one clear alignment with generous margins, then check the reading order."
+     ],
+     "q": "Have you ever ignored a flyer because it was too hard to read?",
+     "c": "Find a cluttered flyer or menu and sketch a cleaner version with one headline, one alignment and more space."
+    },
+    "de": {
+     "t": "Einen Flyer neu gestalten",
+     "g": "Einen unordentlichen Flyer mit Ausrichtung, Hierarchie und Weißraum verbessern.",
+     "p": [
+      "Liste zuerst den Inhalt auf und ordne ihn: Was, wann, wo und wie mitmachen stehen meist vorn.",
+      "Entferne Überflüssiges: ein oder zwei Schriften, wenige Farben, keine Deko, die mit der Botschaft konkurriert.",
+      "Baue neu auf einer klaren Ausrichtung mit großzügigen Rändern und prüfe dann die Lesereihenfolge."
+     ],
+     "q": "Hast du schon mal einen Flyer ignoriert, weil er zu schwer zu lesen war?",
+     "c": "Such einen überladenen Flyer und skizziere eine klarere Version mit einer Schlagzeile, einer Ausrichtung und mehr Raum."
+    },
+    "es": {
+     "t": "Rediseñar un folleto sencillo",
+     "g": "Mejorar un folleto desordenado con alineación, jerarquía y espacio en blanco.",
+     "p": [
+      "Primero haz una lista del contenido y ordénala: qué, cuándo, dónde y cómo participar suelen ir primero.",
+      "Quita lo sobrante: una o dos tipografías, pocos colores y ningún adorno que compita con el mensaje.",
+      "Reconstrúyelo sobre una alineación clara con márgenes generosos y revisa el orden de lectura."
+     ],
+     "q": "¿Alguna vez ignoraste un folleto porque costaba leerlo?",
+     "c": "Busca un folleto recargado y dibuja una versión más limpia con un titular, una alineación y más espacio."
+    },
+    "fr": {
+     "t": "Refaire un simple flyer",
+     "g": "Améliorer un flyer brouillon grâce à l'alignement, la hiérarchie et l'espace blanc.",
+     "p": [
+      "Liste d'abord le contenu et classe-le : quoi, quand, où et comment participer passent souvent en tête.",
+      "Retire le superflu : une ou deux polices, peu de couleurs, aucun décor qui concurrence le message.",
+      "Reconstruis sur un alignement net avec des marges généreuses, puis vérifie l'ordre de lecture."
+     ],
+     "q": "As-tu déjà ignoré un flyer parce qu'il était trop difficile à lire ?",
+     "c": "Trouve un flyer chargé et esquisse une version plus claire avec un titre, un alignement et plus d'espace."
+    },
+    "it": {
+     "t": "Riprogettare un volantino",
+     "g": "Migliorare un volantino disordinato con allineamento, gerarchia e spazio bianco.",
+     "p": [
+      "Prima elenca i contenuti e ordinali: cosa, quando, dove e come partecipare di solito vengono prima.",
+      "Togli il superfluo: uno o due caratteri, pochi colori e nessuna decorazione in competizione con il messaggio.",
+      "Ricostruisci su un allineamento chiaro con margini generosi, poi controlla l'ordine di lettura."
+     ],
+     "q": "Ti è mai capitato di ignorare un volantino perché era troppo difficile da leggere?",
+     "c": "Trova un volantino affollato e abbozza una versione più pulita con un titolo, un allineamento e più spazio."
+    },
+    "pt": {
+     "t": "Redesenhar um folheto simples",
+     "g": "Melhorar um folheto confuso com alinhamento, hierarquia e espaço em branco.",
+     "p": [
+      "Primeiro lista o conteúdo e ordena-o: o quê, quando, onde e como participar costumam vir à frente.",
+      "Tira o que sobra: uma ou duas letras, poucas cores e nenhuma decoração que concorra com a mensagem.",
+      "Reconstrói sobre um alinhamento claro com margens generosas e verifica a ordem de leitura."
+     ],
+     "q": "Já ignoraste um folheto por ser demasiado difícil de ler?",
+     "c": "Procura um folheto carregado e esboça uma versão mais limpa com um título, um alinhamento e mais espaço."
+    },
+    "pt_BR": {
+     "t": "Redesenhando um panfleto simples",
+     "g": "Melhorar um panfleto bagunçado com alinhamento, hierarquia e espaço em branco.",
+     "p": [
+      "Primeiro liste o conteúdo e ordene: o quê, quando, onde e como participar costumam vir na frente.",
+      "Tire o excesso: uma ou duas fontes, poucas cores e nenhum enfeite competindo com a mensagem.",
+      "Reconstrua em um alinhamento claro com margens generosas e confira a ordem de leitura."
+     ],
+     "q": "Você já ignorou um panfleto porque era difícil demais de ler?",
+     "c": "Ache um panfleto carregado e esboce uma versão mais limpa com um título, um alinhamento e mais espaço."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thumbnail sketches",
+     "g": "Explore many layout ideas with small, quick sketches before choosing one.",
+     "p": [
+      "Thumbnails are tiny drawings, often stamp-sized, that show only big shapes and placement.",
+      "Small size stops you from fussing over details and keeps you focused on composition.",
+      "Keep the right proportions: a tall poster thumbnail should also be tall."
+     ],
+     "q": "How long do you usually spend on a first idea before trying another?",
+     "c": "Draw a grid of eight small boxes and fill each with a different layout for a concert poster in one minute each."
+    },
+    "de": {
+     "t": "Thumbnail-Skizzen",
+     "g": "Mit kleinen, schnellen Skizzen viele Layoutideen erkunden, bevor du eine auswählst.",
+     "p": [
+      "Thumbnails sind winzige Zeichnungen, oft briefmarkengroß, die nur große Formen und ihre Lage zeigen.",
+      "Die kleine Größe verhindert Detailverliebtheit und hält dich bei der Komposition.",
+      "Halte die Proportionen: Ein hohes Plakat braucht auch ein hohes Thumbnail."
+     ],
+     "q": "Wie lange bleibst du meist bei einer ersten Idee, bevor du eine andere probierst?",
+     "c": "Zeichne acht kleine Kästchen und füll jedes in je einer Minute mit einem anderen Layout für ein Konzertplakat."
+    },
+    "es": {
+     "t": "Bocetos en miniatura",
+     "g": "Explorar muchas ideas de composición con bocetos pequeños y rápidos antes de elegir una.",
+     "p": [
+      "Las miniaturas son dibujos diminutos, a veces del tamaño de un sello, que solo muestran grandes formas.",
+      "El tamaño pequeño evita obsesionarse con detalles y te centra en la composición.",
+      "Respeta las proporciones: la miniatura de un cartel vertical también debe ser vertical."
+     ],
+     "q": "¿Cuánto tiempo sueles dedicar a una primera idea antes de probar otra?",
+     "c": "Dibuja ocho recuadros pequeños y llena cada uno con una composición distinta de un cartel de concierto, un minuto cada uno."
+    },
+    "fr": {
+     "t": "Les croquis vignettes",
+     "g": "Explorer beaucoup d'idées de mise en page avec de petits croquis rapides avant d'en choisir une.",
+     "p": [
+      "Les vignettes sont de minuscules dessins, souvent de la taille d'un timbre, qui montrent seulement les grandes masses.",
+      "La petite taille empêche de s'attarder sur les détails et garde l'attention sur la composition.",
+      "Garde les proportions : la vignette d'une affiche verticale doit aussi être verticale."
+     ],
+     "q": "Combien de temps passes-tu sur une première idée avant d'en essayer une autre ?",
+     "c": "Trace huit petites cases et remplis chacune d'une mise en page d'affiche de concert, une minute par case."
+    },
+    "it": {
+     "t": "Schizzi in miniatura",
+     "g": "Esplorare molte idee di impaginazione con schizzi piccoli e veloci prima di sceglierne una.",
+     "p": [
+      "Le miniature sono disegni minuscoli, spesso grandi come un francobollo, che mostrano solo le masse principali.",
+      "La dimensione ridotta ti impedisce di perderti nei dettagli e ti tiene sulla composizione.",
+      "Rispetta le proporzioni: la miniatura di un manifesto verticale deve essere verticale."
+     ],
+     "q": "Quanto tempo passi di solito su una prima idea prima di provarne un'altra?",
+     "c": "Disegna otto riquadri piccoli e riempi ognuno con un layout diverso per un manifesto di concerto, un minuto ciascuno."
+    },
+    "pt": {
+     "t": "Esboços em miniatura",
+     "g": "Explorar muitas ideias de layout com esboços pequenos e rápidos antes de escolher uma.",
+     "p": [
+      "As miniaturas são desenhos minúsculos, muitas vezes do tamanho de um selo, que mostram só as grandes massas.",
+      "O tamanho pequeno impede-te de te perderes em pormenores e foca-te na composição.",
+      "Mantém as proporções: a miniatura de um cartaz vertical também deve ser vertical."
+     ],
+     "q": "Quanto tempo costumas passar numa primeira ideia antes de tentar outra?",
+     "c": "Desenha oito quadradinhos e preenche cada um com um layout diferente para um cartaz de concerto, um minuto cada."
+    },
+    "pt_BR": {
+     "t": "Esboços em miniatura",
+     "g": "Explorar muitas ideias de layout com esboços pequenos e rápidos antes de escolher uma.",
+     "p": [
+      "Miniaturas são desenhos minúsculos, às vezes do tamanho de um selo, que mostram só as grandes massas.",
+      "O tamanho pequeno impede você de travar nos detalhes e mantém o foco na composição.",
+      "Mantenha as proporções: a miniatura de um cartaz vertical também deve ser vertical."
+     ],
+     "q": "Quanto tempo você costuma ficar em uma primeira ideia antes de tentar outra?",
+     "c": "Desenhe oito quadradinhos e preencha cada um com um layout diferente de cartaz de show, um minuto cada."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quantity before quality",
+     "g": "Learn why generating many ideas first leads to better final designs.",
+     "p": [
+      "Your first idea is usually the most obvious one; better ideas tend to appear after you push past it.",
+      "Separate generating from judging: first collect freely, then pick and refine.",
+      "Even weak ideas help, because they show you what not to do and spark new directions."
+     ],
+     "q": "Do you usually go with your first idea or keep exploring?",
+     "c": "Set a timer for ten minutes and sketch twenty different icons for the word home, without erasing any."
+    },
+    "de": {
+     "t": "Menge vor Qualität",
+     "g": "Verstehen, warum viele Ideen am Anfang zu besseren Endergebnissen führen.",
+     "p": [
+      "Die erste Idee ist meist die naheliegendste; bessere Ideen kommen oft erst, wenn du darüber hinausgehst.",
+      "Trenne Erzeugen und Bewerten: erst frei sammeln, dann auswählen und verfeinern.",
+      "Auch schwache Ideen helfen, denn sie zeigen, was nicht geht, und öffnen neue Richtungen."
+     ],
+     "q": "Nimmst du meist deine erste Idee, oder suchst du weiter?",
+     "c": "Stell einen Timer auf zehn Minuten und skizziere zwanzig verschiedene Icons für das Wort Zuhause, ohne zu radieren."
+    },
+    "es": {
+     "t": "Cantidad antes que calidad",
+     "g": "Saber por qué generar muchas ideas al principio lleva a mejores diseños finales.",
+     "p": [
+      "La primera idea suele ser la más obvia; las mejores aparecen cuando vas más allá de ella.",
+      "Separa generar de juzgar: primero reúne libremente y después elige y pule.",
+      "Incluso las ideas flojas ayudan, porque muestran qué evitar y abren nuevas direcciones."
+     ],
+     "q": "¿Sueles quedarte con tu primera idea o sigues explorando?",
+     "c": "Pon un temporizador de diez minutos y dibuja veinte iconos distintos para la palabra casa, sin borrar ninguno."
+    },
+    "fr": {
+     "t": "La quantité avant la qualité",
+     "g": "Comprendre pourquoi produire beaucoup d'idées au départ mène à de meilleurs designs.",
+     "p": [
+      "La première idée est souvent la plus évidente ; les meilleures arrivent quand on va au-delà.",
+      "Sépare la production du jugement : d'abord récolter librement, ensuite choisir et affiner.",
+      "Même les idées faibles aident : elles montrent quoi éviter et ouvrent de nouvelles pistes."
+     ],
+     "q": "Gardes-tu en général ta première idée ou continues-tu à explorer ?",
+     "c": "Mets un minuteur de dix minutes et esquisse vingt icônes différentes pour le mot maison, sans rien effacer."
+    },
+    "it": {
+     "t": "Prima la quantità, poi la qualità",
+     "g": "Capire perché generare molte idee all'inizio porta a progetti finali migliori.",
+     "p": [
+      "La prima idea di solito è la più ovvia; quelle migliori arrivano quando vai oltre.",
+      "Separa il generare dal giudicare: prima raccogli liberamente, poi scegli e rifinisci.",
+      "Anche le idee deboli aiutano, perché mostrano cosa evitare e aprono nuove strade."
+     ],
+     "q": "Di solito scegli la prima idea o continui a esplorare?",
+     "c": "Imposta un timer di dieci minuti e abbozza venti icone diverse per la parola casa, senza cancellare nulla."
+    },
+    "pt": {
+     "t": "Quantidade antes de qualidade",
+     "g": "Perceber porque gerar muitas ideias primeiro leva a designs finais melhores.",
+     "p": [
+      "A primeira ideia costuma ser a mais óbvia; as melhores aparecem quando vais além dela.",
+      "Separa gerar de julgar: primeiro recolhe à vontade, depois escolhe e afina.",
+      "Até as ideias fracas ajudam, porque mostram o que evitar e abrem novos caminhos."
+     ],
+     "q": "Costumas ficar com a primeira ideia ou continuas a explorar?",
+     "c": "Põe um temporizador de dez minutos e esboça vinte ícones diferentes para a palavra casa, sem apagar nenhum."
+    },
+    "pt_BR": {
+     "t": "Quantidade antes da qualidade",
+     "g": "Entender por que gerar muitas ideias primeiro leva a designs finais melhores.",
+     "p": [
+      "A primeira ideia costuma ser a mais óbvia; as melhores surgem quando você vai além dela.",
+      "Separe gerar de julgar: primeiro junte tudo à vontade, depois escolha e refine.",
+      "Até ideias fracas ajudam, porque mostram o que evitar e abrem novos caminhos."
+     ],
+     "q": "Você costuma ficar com a primeira ideia ou continua explorando?",
+     "c": "Coloque um timer de dez minutos e esboce vinte ícones diferentes para a palavra casa, sem apagar nenhum."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving and receiving critique",
+     "g": "Learn to give and take kind, specific and useful feedback on design work.",
+     "p": [
+      "Good critique talks about the work and its goal, not about the person.",
+      "Be specific: say what works, what is unclear and why, then suggest one possible step.",
+      "When receiving feedback, listen first, ask questions, and decide later what to use."
+     ],
+     "q": "How do you usually feel when someone comments on something you made?",
+     "c": "Look at a design you admire and write one thing that works, one question and one suggestion, all kindly."
+    },
+    "de": {
+     "t": "Kritik geben und annehmen",
+     "g": "Lernen, freundliches, konkretes und hilfreiches Feedback zu Designarbeiten zu geben und anzunehmen.",
+     "p": [
+      "Gute Kritik spricht über die Arbeit und ihr Ziel, nicht über die Person.",
+      "Sei konkret: Sag, was funktioniert, was unklar ist und warum, und schlag einen möglichen Schritt vor.",
+      "Beim Annehmen von Feedback erst zuhören, Fragen stellen und später entscheiden, was du nutzt."
+     ],
+     "q": "Wie fühlst du dich meist, wenn jemand etwas kommentiert, das du gemacht hast?",
+     "c": "Betrachte ein Design, das du magst, und schreib freundlich eine Stärke, eine Frage und einen Vorschlag auf."
+    },
+    "es": {
+     "t": "Dar y recibir críticas",
+     "g": "Aprender a dar y recibir comentarios amables, concretos y útiles sobre un diseño.",
+     "p": [
+      "Una buena crítica habla del trabajo y de su objetivo, no de la persona.",
+      "Sé concreto: di qué funciona, qué no queda claro y por qué, y sugiere un posible paso.",
+      "Al recibir comentarios, escucha primero, pregunta y decide después qué aprovechar."
+     ],
+     "q": "¿Cómo te sientes normalmente cuando alguien comenta algo que has hecho?",
+     "c": "Mira un diseño que admires y escribe con amabilidad algo que funciona, una pregunta y una sugerencia."
+    },
+    "fr": {
+     "t": "Donner et recevoir une critique",
+     "g": "Apprendre à donner et recevoir des retours bienveillants, précis et utiles sur un design.",
+     "p": [
+      "Une bonne critique parle du travail et de son objectif, pas de la personne.",
+      "Sois précis : dis ce qui marche, ce qui est flou et pourquoi, puis propose une piste.",
+      "Quand tu reçois un retour, écoute d'abord, pose des questions et décide ensuite quoi garder."
+     ],
+     "q": "Que ressens-tu d'habitude quand quelqu'un commente ce que tu as fait ?",
+     "c": "Regarde un design que tu admires et écris avec bienveillance un point fort, une question et une suggestion."
+    },
+    "it": {
+     "t": "Dare e ricevere critiche",
+     "g": "Imparare a dare e ricevere commenti gentili, precisi e utili su un progetto.",
+     "p": [
+      "Una buona critica parla del lavoro e del suo obiettivo, non della persona.",
+      "Sii preciso: di' cosa funziona, cosa non è chiaro e perché, poi suggerisci un possibile passo.",
+      "Quando ricevi un commento, ascolta prima, fai domande e decidi poi cosa usare."
+     ],
+     "q": "Come ti senti di solito quando qualcuno commenta qualcosa che hai fatto?",
+     "c": "Guarda un progetto che ammiri e scrivi con gentilezza un punto forte, una domanda e un suggerimento."
+    },
+    "pt": {
+     "t": "Dar e receber críticas",
+     "g": "Aprender a dar e receber comentários simpáticos, concretos e úteis sobre design.",
+     "p": [
+      "Uma boa crítica fala do trabalho e do seu objetivo, não da pessoa.",
+      "Sê concreto: diz o que funciona, o que não está claro e porquê, e sugere um passo possível.",
+      "Ao receber comentários, ouve primeiro, faz perguntas e decide depois o que aproveitar."
+     ],
+     "q": "Como te sentes normalmente quando alguém comenta algo que fizeste?",
+     "c": "Olha para um design que admiras e escreve com simpatia algo que funciona, uma pergunta e uma sugestão."
+    },
+    "pt_BR": {
+     "t": "Dar e receber críticas",
+     "g": "Aprender a dar e receber feedback gentil, específico e útil sobre design.",
+     "p": [
+      "Uma boa crítica fala do trabalho e do objetivo dele, não da pessoa.",
+      "Seja específico: diga o que funciona, o que não está claro e por quê, e sugira um passo possível.",
+      "Ao receber feedback, escute primeiro, faça perguntas e decida depois o que aproveitar."
+     ],
+     "q": "Como você costuma se sentir quando alguém comenta algo que você fez?",
+     "c": "Olhe um design que você admira e escreva com gentileza algo que funciona, uma pergunta e uma sugestão."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: principles of design",
+     "g": "Recap balance, contrast, alignment, proximity, repetition and hierarchy in one project.",
+     "p": [
+      "Balance and contrast set the overall feel; alignment and proximity create order.",
+      "Repetition ties things together, and hierarchy tells the eye where to go first.",
+      "These principles work together: changing one usually affects the others."
+     ],
+     "q": "Which principle so far has changed the way you look at things the most?",
+     "c": "Design a simple recipe card and label in the margin where you used each of the six principles."
+    },
+    "de": {
+     "t": "Rückblick: Gestaltungsprinzipien",
+     "g": "Balance, Kontrast, Ausrichtung, Nähe, Wiederholung und Hierarchie in einem Projekt wiederholen.",
+     "p": [
+      "Balance und Kontrast bestimmen die Gesamtwirkung; Ausrichtung und Nähe schaffen Ordnung.",
+      "Wiederholung hält alles zusammen, und Hierarchie zeigt dem Auge, wohin es zuerst soll.",
+      "Diese Prinzipien wirken zusammen: Änderst du eines, beeinflusst das meist die anderen."
+     ],
+     "q": "Welches Prinzip hat bisher am meisten verändert, wie du Dinge siehst?",
+     "c": "Gestalte eine einfache Rezeptkarte und notiere am Rand, wo du jedes der sechs Prinzipien eingesetzt hast."
+    },
+    "es": {
+     "t": "Repaso: principios del diseño",
+     "g": "Repasar equilibrio, contraste, alineación, proximidad, repetición y jerarquía en un proyecto.",
+     "p": [
+      "El equilibrio y el contraste marcan la sensación general; la alineación y la proximidad crean orden.",
+      "La repetición lo une todo, y la jerarquía dice a la vista adónde ir primero.",
+      "Estos principios trabajan juntos: cambiar uno suele afectar a los demás."
+     ],
+     "q": "¿Qué principio ha cambiado más tu forma de mirar las cosas hasta ahora?",
+     "c": "Diseña una ficha de receta sencilla y anota en el margen dónde usaste cada uno de los seis principios."
+    },
+    "fr": {
+     "t": "Révision : principes du design",
+     "g": "Revoir équilibre, contraste, alignement, proximité, répétition et hiérarchie dans un projet.",
+     "p": [
+      "L'équilibre et le contraste donnent l'ambiance générale ; l'alignement et la proximité créent l'ordre.",
+      "La répétition relie le tout, et la hiérarchie dit à l'œil où aller d'abord.",
+      "Ces principes agissent ensemble : en modifier un change souvent les autres."
+     ],
+     "q": "Quel principe a le plus changé ta façon de regarder les choses jusqu'ici ?",
+     "c": "Crée une fiche recette simple et note dans la marge où tu as utilisé chacun des six principes."
+    },
+    "it": {
+     "t": "Ripasso: principi del design",
+     "g": "Ripassare equilibrio, contrasto, allineamento, vicinanza, ripetizione e gerarchia in un progetto.",
+     "p": [
+      "Equilibrio e contrasto danno la sensazione generale; allineamento e vicinanza creano ordine.",
+      "La ripetizione tiene tutto insieme, e la gerarchia dice all'occhio dove andare prima.",
+      "Questi principi lavorano insieme: cambiarne uno di solito influisce sugli altri."
+     ],
+     "q": "Quale principio finora ha cambiato di più il tuo modo di guardare le cose?",
+     "c": "Progetta una semplice scheda ricetta e annota a margine dove hai usato ciascuno dei sei principi."
+    },
+    "pt": {
+     "t": "Revisão: princípios do design",
+     "g": "Rever equilíbrio, contraste, alinhamento, proximidade, repetição e hierarquia num projeto.",
+     "p": [
+      "Equilíbrio e contraste definem o ambiente geral; alinhamento e proximidade criam ordem.",
+      "A repetição une tudo, e a hierarquia diz ao olhar para onde ir primeiro.",
+      "Estes princípios trabalham juntos: mudar um costuma afetar os outros."
+     ],
+     "q": "Que princípio mudou mais a tua forma de olhar para as coisas até agora?",
+     "c": "Desenha um cartão de receita simples e anota na margem onde usaste cada um dos seis princípios."
+    },
+    "pt_BR": {
+     "t": "Revisão: princípios do design",
+     "g": "Revisar equilíbrio, contraste, alinhamento, proximidade, repetição e hierarquia em um projeto.",
+     "p": [
+      "Equilíbrio e contraste definem o clima geral; alinhamento e proximidade criam ordem.",
+      "A repetição une tudo, e a hierarquia diz ao olhar para onde ir primeiro.",
+      "Esses princípios trabalham juntos: mudar um costuma afetar os outros."
+     ],
+     "q": "Qual princípio mais mudou seu jeito de olhar as coisas até agora?",
+     "c": "Crie um cartão de receita simples e anote na margem onde usou cada um dos seis princípios."
+    }
+   }
+  }
+ ]
+}

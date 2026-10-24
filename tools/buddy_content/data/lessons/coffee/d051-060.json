@@ -1,0 +1,835 @@
+{
+ "topic": "coffee",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Milk basics for coffee",
+     "g": "Learn how milk proteins and fats create foam and sweetness in coffee drinks.",
+     "p": [
+      "Milk proteins wrap around air bubbles and hold them in place, which is what makes foam stable.",
+      "Milk fat adds a rich, creamy feel; whole milk gives silky foam, while skimmed milk makes lighter, stiffer foam.",
+      "Warming milk to around 55 to 65 °C makes it taste sweeter; much hotter and it can taste cooked and lose its sweetness."
+     ],
+     "q": "What kind of milk do you usually put in your coffee, if any?",
+     "c": "Taste a spoon of cold milk and a spoon of gently warmed milk, then describe which tastes sweeter."
+    },
+    "de": {
+     "t": "Milch-Grundlagen für Kaffee",
+     "g": "Erfahre, wie Eiweiß und Fett der Milch Schaum und Süße in Kaffeegetränken erzeugen.",
+     "p": [
+      "Milcheiweiß umhüllt Luftbläschen und hält sie fest; das macht den Schaum stabil.",
+      "Milchfett sorgt für ein volles, cremiges Gefühl; Vollmilch ergibt seidigen Schaum, Magermilch leichteren, festeren.",
+      "Auf etwa 55 bis 65 °C erwärmt schmeckt Milch süßer; viel heißer schmeckt sie gekocht und verliert Süße."
+     ],
+     "q": "Welche Milch gibst du normalerweise in deinen Kaffee, wenn überhaupt?",
+     "c": "Probiere einen Löffel kalte und einen Löffel sanft erwärmte Milch und beschreibe, welche süßer schmeckt."
+    },
+    "es": {
+     "t": "La leche en el café: lo básico",
+     "g": "Aprende cómo las proteínas y las grasas de la leche crean espuma y dulzor en las bebidas de café.",
+     "p": [
+      "Las proteínas de la leche envuelven las burbujas de aire y las sujetan, y eso hace que la espuma sea estable.",
+      "La grasa aporta una sensación rica y cremosa; la leche entera da espuma sedosa y la desnatada, una más ligera y firme.",
+      "Calentar la leche a unos 55 a 65 °C la hace más dulce; mucho más caliente sabe a cocida y pierde dulzor."
+     ],
+     "q": "¿Qué leche sueles poner en tu café, si es que le pones?",
+     "c": "Prueba una cucharada de leche fría y otra de leche templada y describe cuál sabe más dulce."
+    },
+    "fr": {
+     "t": "Les bases du lait pour le café",
+     "g": "Découvre comment les protéines et les graisses du lait créent mousse et douceur dans les boissons au café.",
+     "p": [
+      "Les protéines du lait entourent les bulles d'air et les maintiennent : c'est ce qui rend la mousse stable.",
+      "La matière grasse apporte rondeur et onctuosité ; le lait entier donne une mousse soyeuse, l'écrémé une mousse plus ferme.",
+      "Chauffé vers 55 à 65 °C, le lait paraît plus sucré ; bien plus chaud, il prend un goût de cuit et perd sa douceur."
+     ],
+     "q": "Quel lait mets-tu d'habitude dans ton café, si tu en mets ?",
+     "c": "Goûte une cuillère de lait froid et une de lait tiédi, puis dis lequel te paraît le plus sucré."
+    },
+    "it": {
+     "t": "Le basi del latte per il caffè",
+     "g": "Scopri come proteine e grassi del latte creano schiuma e dolcezza nelle bevande al caffè.",
+     "p": [
+      "Le proteine del latte avvolgono le bolle d'aria e le tengono ferme: è questo che rende stabile la schiuma.",
+      "Il grasso dà una sensazione ricca e cremosa; il latte intero fa una schiuma setosa, lo scremato una più leggera e rigida.",
+      "Scaldato a circa 55-65 °C il latte sembra più dolce; molto più caldo sa di cotto e perde dolcezza."
+     ],
+     "q": "Che latte metti di solito nel caffè, se lo metti?",
+     "c": "Assaggia un cucchiaio di latte freddo e uno di latte appena tiepido, poi descrivi quale sembra più dolce."
+    },
+    "pt": {
+     "t": "O básico do leite no café",
+     "g": "Aprende como as proteínas e a gordura do leite criam espuma e doçura nas bebidas de café.",
+     "p": [
+      "As proteínas do leite envolvem as bolhas de ar e seguram-nas, e é isso que torna a espuma estável.",
+      "A gordura dá uma sensação rica e cremosa; o leite gordo faz espuma sedosa e o magro uma espuma mais leve e firme.",
+      "Aquecer o leite a cerca de 55 a 65 °C torna-o mais doce; muito mais quente sabe a cozido e perde doçura."
+     ],
+     "q": "Que leite costumas pôr no café, se puseres?",
+     "c": "Prova uma colher de leite frio e uma de leite morno e descreve qual te sabe mais doce."
+    },
+    "pt_BR": {
+     "t": "O básico do leite no café",
+     "g": "Aprenda como as proteínas e a gordura do leite criam espuma e doçura nas bebidas com café.",
+     "p": [
+      "As proteínas do leite envolvem as bolhas de ar e as seguram no lugar, e é isso que deixa a espuma estável.",
+      "A gordura dá uma sensação rica e cremosa; o leite integral faz espuma sedosa e o desnatado, uma mais leve e firme.",
+      "Aquecer o leite a uns 55 a 65 °C deixa ele mais doce; muito mais quente, fica com gosto de fervido e perde doçura."
+     ],
+     "q": "Que leite você costuma colocar no café, se coloca?",
+     "c": "Prove uma colher de leite frio e uma de leite morno e descreva qual parece mais doce."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steaming milk",
+     "g": "Stretch and texture milk with a steam wand for smooth, warm milk drinks.",
+     "p": [
+      "Start with cold milk in a cold jug, filled to just below the spout, and purge the wand to clear any water.",
+      "Stretching: keep the tip just under the surface so it makes a soft tearing sound as air is drawn in.",
+      "Texturing: lower the tip a little to spin the milk in a whirlpool, and stop when the jug is just too hot to hold."
+     ],
+     "q": "Have you ever tried steaming milk, or does the hissing machine seem a bit scary?",
+     "c": "Steam milk once with a short stretch and once with a long one, and compare how thick the foam becomes."
+    },
+    "de": {
+     "t": "Milch aufschäumen",
+     "g": "Zieh Luft in die Milch und gib ihr mit der Dampflanze eine feine Textur für cremige Milchgetränke.",
+     "p": [
+      "Beginne mit kalter Milch in einem kalten Kännchen bis knapp unter die Tülle und lass die Lanze kurz ab.",
+      "Lufteinzug: Halte die Spitze knapp unter der Oberfläche, bis ein leises Zischen und Reißen zu hören ist.",
+      "Texturieren: Senk die Spitze etwas, lass die Milch wirbeln und stopp, wenn das Kännchen gerade zu heiß zum Halten ist."
+     ],
+     "q": "Hast du schon einmal Milch aufgeschäumt, oder wirkt die zischende Maschine etwas einschüchternd?",
+     "c": "Schäum Milch einmal mit kurzem und einmal mit langem Lufteinzug und vergleiche, wie dick der Schaum wird."
+    },
+    "es": {
+     "t": "Vaporizar la leche",
+     "g": "Airea y texturiza la leche con el vaporizador para bebidas suaves y calientes.",
+     "p": [
+      "Empieza con leche fría en una jarra fría, llena justo por debajo del pico, y purga el vaporizador para sacar el agua.",
+      "Aireado: mantén la punta justo bajo la superficie para que suene un suave rasgueo al entrar aire.",
+      "Texturizado: baja un poco la punta para que la leche gire en remolino y para cuando la jarra queme un poco al tocarla."
+     ],
+     "q": "¿Has probado alguna vez a vaporizar leche, o la máquina silbando te impone un poco?",
+     "c": "Vaporiza leche una vez con poco aireado y otra con mucho, y compara lo espesa que queda la espuma."
+    },
+    "fr": {
+     "t": "Chauffer le lait à la vapeur",
+     "g": "Aère puis texture le lait avec la buse vapeur pour des boissons lactées douces et chaudes.",
+     "p": [
+      "Commence avec du lait froid dans un pichet froid, rempli juste sous le bec, et purge la buse pour chasser l'eau.",
+      "Aération : garde l'embout juste sous la surface, pour entendre un léger bruit de papier déchiré.",
+      "Texture : enfonce un peu l'embout pour faire tourner le lait en tourbillon, et arrête quand le pichet devient trop chaud à tenir."
+     ],
+     "q": "As-tu déjà essayé de mousser du lait, ou la machine qui siffle t'impressionne-t-elle un peu ?",
+     "c": "Mousse du lait une fois avec une courte aération et une fois avec une longue, et compare l'épaisseur de la mousse."
+    },
+    "it": {
+     "t": "Montare il latte",
+     "g": "Incorpora aria e dai consistenza al latte con la lancia vapore per bevande morbide e calde.",
+     "p": [
+      "Parti da latte freddo in una lattiera fredda, riempita appena sotto il beccuccio, e spurga la lancia dall'acqua.",
+      "Incorporare aria: tieni la punta appena sotto la superficie, finché senti un leggero sfrigolio.",
+      "Dare consistenza: abbassa un po' la punta per far girare il latte a vortice e fermati quando la lattiera scotta appena."
+     ],
+     "q": "Hai mai provato a montare il latte, o la macchina che sibila ti mette un po' in soggezione?",
+     "c": "Monta il latte una volta incorporando poca aria e una volta molta, e confronta quanto diventa densa la schiuma."
+    },
+    "pt": {
+     "t": "Vaporizar o leite",
+     "g": "Areja e texturiza o leite com o vaporizador para bebidas suaves e quentes.",
+     "p": [
+      "Começa com leite frio num jarro frio, cheio até logo abaixo do bico, e purga o vaporizador para tirar a água.",
+      "Arejar: mantém a ponta logo abaixo da superfície, para ouvires um leve som de papel a rasgar.",
+      "Texturizar: baixa um pouco a ponta para o leite rodar em remoinho e para quando o jarro já estiver quente demais para segurar."
+     ],
+     "q": "Já experimentaste vaporizar leite, ou a máquina a assobiar intimida-te um pouco?",
+     "c": "Vaporiza leite uma vez com pouco arejamento e outra com muito, e compara a espessura da espuma."
+    },
+    "pt_BR": {
+     "t": "Vaporizando o leite",
+     "g": "Incorpore ar e dê textura ao leite com o bico vaporizador para bebidas suaves e quentes.",
+     "p": [
+      "Comece com leite gelado numa jarra fria, cheia até logo abaixo do bico, e purgue o vaporizador para tirar a água.",
+      "Aerar: mantenha a ponta logo abaixo da superfície, até ouvir um chiado suave de papel rasgando.",
+      "Texturizar: abaixe um pouco a ponta para o leite girar como um redemoinho e pare quando a jarra ficar quente demais para segurar."
+     ],
+     "q": "Você já tentou vaporizar leite, ou a máquina chiando assusta um pouco?",
+     "c": "Vaporize leite uma vez com pouca aeração e outra com bastante, e compare a espessura da espuma."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Microfoam",
+     "g": "Learn to make silky, glossy milk that pours smoothly into coffee.",
+     "p": [
+      "Microfoam is milk full of bubbles so tiny you cannot see them, giving a smooth, velvety texture.",
+      "Good microfoam looks shiny, like wet paint, and moves as one liquid instead of separating into milk and foam.",
+      "Tap the jug to pop big bubbles and swirl it until the milk is glossy, then pour right away before it separates."
+     ],
+     "q": "Have you noticed the difference between bubbly foam and silky milk in café drinks?",
+     "c": "After steaming or frothing milk, tap and swirl the jug for 20 seconds and check if the surface turns glossy."
+    },
+    "de": {
+     "t": "Mikroschaum",
+     "g": "Lerne, seidige, glänzende Milch zu machen, die sich weich in den Kaffee gießen lässt.",
+     "p": [
+      "Mikroschaum ist Milch voller Bläschen, die so winzig sind, dass man sie nicht sieht: samtig und glatt.",
+      "Guter Mikroschaum glänzt wie nasse Farbe und fließt als eine Flüssigkeit, statt sich in Milch und Schaum zu trennen.",
+      "Klopf das Kännchen auf, um große Blasen zu lösen, schwenk die Milch bis sie glänzt und gieß sofort ein."
+     ],
+     "q": "Ist dir der Unterschied zwischen blasigem Schaum und seidiger Milch in Café-Getränken schon aufgefallen?",
+     "c": "Klopf und schwenk das Kännchen nach dem Aufschäumen 20 Sekunden lang und prüf, ob die Oberfläche glänzt."
+    },
+    "es": {
+     "t": "La microespuma",
+     "g": "Aprende a lograr una leche sedosa y brillante que se vierte suave sobre el café.",
+     "p": [
+      "La microespuma es leche llena de burbujas tan diminutas que no se ven, con una textura lisa y aterciopelada.",
+      "Una buena microespuma brilla como pintura fresca y se mueve como un solo líquido, sin separarse en leche y espuma.",
+      "Golpea la jarra para romper las burbujas grandes, hazla girar hasta que brille y viértela enseguida."
+     ],
+     "q": "¿Has notado la diferencia entre la espuma con burbujas y la leche sedosa en las bebidas de cafetería?",
+     "c": "Tras espumar la leche, golpea y gira la jarra 20 segundos y comprueba si la superficie se vuelve brillante."
+    },
+    "fr": {
+     "t": "La microfoam",
+     "g": "Apprends à obtenir un lait soyeux et brillant qui se verse en douceur dans le café.",
+     "p": [
+      "La microfoam est un lait plein de bulles si fines qu'on ne les voit pas, à la texture lisse et veloutée.",
+      "Une bonne microfoam brille comme de la peinture fraîche et coule d'un seul tenant, sans se séparer en lait et mousse.",
+      "Tapote le pichet pour éclater les grosses bulles, fais tourner le lait jusqu'à ce qu'il brille et verse aussitôt."
+     ],
+     "q": "As-tu remarqué la différence entre une mousse pleine de bulles et un lait soyeux dans les boissons de café ?",
+     "c": "Après avoir moussé le lait, tapote et fais tourner le pichet 20 secondes, puis vérifie si la surface devient brillante."
+    },
+    "it": {
+     "t": "La microschiuma",
+     "g": "Impara a ottenere un latte setoso e lucido che si versa morbido nel caffè.",
+     "p": [
+      "La microschiuma è latte pieno di bollicine così piccole da non vedersi, dalla consistenza liscia e vellutata.",
+      "Una buona microschiuma è lucida come vernice fresca e si muove come un unico liquido, senza separarsi in latte e schiuma.",
+      "Batti la lattiera per eliminare le bolle grandi, ruotala finché il latte è lucido e versalo subito."
+     ],
+     "q": "Hai notato la differenza tra una schiuma piena di bolle e un latte setoso nelle bevande del bar?",
+     "c": "Dopo aver montato il latte, batti e ruota la lattiera per 20 secondi e controlla se la superficie diventa lucida."
+    },
+    "pt": {
+     "t": "A microespuma",
+     "g": "Aprende a fazer leite sedoso e brilhante que se verte suavemente no café.",
+     "p": [
+      "A microespuma é leite cheio de bolhas tão pequenas que não se veem, com textura lisa e aveludada.",
+      "Uma boa microespuma brilha como tinta fresca e move-se como um só líquido, sem se separar em leite e espuma.",
+      "Bate o jarro para rebentar as bolhas grandes, roda-o até o leite brilhar e verte logo."
+     ],
+     "q": "Já reparaste na diferença entre espuma cheia de bolhas e leite sedoso nas bebidas de café?",
+     "c": "Depois de espumar o leite, bate e roda o jarro durante 20 segundos e vê se a superfície fica brilhante."
+    },
+    "pt_BR": {
+     "t": "A microespuma",
+     "g": "Aprenda a fazer um leite sedoso e brilhante que escorre suave no café.",
+     "p": [
+      "A microespuma é leite cheio de bolhas tão pequenas que nem dá para ver, com textura lisa e aveludada.",
+      "Uma boa microespuma brilha como tinta fresca e se move como um líquido só, sem separar em leite e espuma.",
+      "Bata a jarra na bancada para estourar as bolhas grandes, gire até o leite brilhar e despeje logo."
+     ],
+     "q": "Você já percebeu a diferença entre espuma cheia de bolhas e leite sedoso nas bebidas de cafeteria?",
+     "c": "Depois de espumar o leite, bata e gire a jarra por 20 segundos e veja se a superfície fica brilhante."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cappuccino",
+     "g": "Get to know the cappuccino: espresso, steamed milk and foam in balanced proportions.",
+     "p": [
+      "A classic cappuccino is a single espresso with steamed milk and a generous cap of foam, often around 150 to 180 ml.",
+      "Its name is linked to the Capuchin friars, whose brown robes match the colour of the drink.",
+      "In Italy it is mostly a breakfast drink, enjoyed with a pastry rather than after a big meal."
+     ],
+     "q": "Is the cappuccino one of your favourites, and how do you like its foam?",
+     "c": "Make or order a cappuccino and notice the three layers: espresso, silky milk and foam on top."
+    },
+    "de": {
+     "t": "Der Cappuccino",
+     "g": "Lerne den Cappuccino kennen: Espresso, aufgeschäumte Milch und Schaum in ausgewogenem Verhältnis.",
+     "p": [
+      "Ein klassischer Cappuccino ist ein einfacher Espresso mit geschäumter Milch und großzügiger Schaumhaube, oft 150 bis 180 ml.",
+      "Sein Name geht auf die Kapuzinermönche zurück, deren braune Kutten der Farbe des Getränks ähneln.",
+      "In Italien trinkt man ihn vor allem zum Frühstück, gern mit einem Gebäck, nicht nach einer großen Mahlzeit."
+     ],
+     "q": "Gehört der Cappuccino zu deinen Favoriten, und wie magst du seinen Schaum?",
+     "c": "Mach oder bestell einen Cappuccino und achte auf die drei Schichten: Espresso, seidige Milch und Schaum."
+    },
+    "es": {
+     "t": "El capuchino",
+     "g": "Conoce el capuchino: espresso, leche vaporizada y espuma en proporciones equilibradas.",
+     "p": [
+      "Un capuchino clásico es un espresso con leche vaporizada y una generosa capa de espuma, a menudo de unos 150 a 180 ml.",
+      "Su nombre se asocia a los frailes capuchinos, cuyos hábitos marrones recuerdan el color de la bebida.",
+      "En Italia se toma sobre todo en el desayuno, con un bollo, y no después de una comida copiosa."
+     ],
+     "q": "¿El capuchino es uno de tus favoritos y cómo te gusta su espuma?",
+     "c": "Prepara o pide un capuchino y fíjate en sus tres capas: espresso, leche sedosa y espuma arriba."
+    },
+    "fr": {
+     "t": "Le cappuccino",
+     "g": "Découvre le cappuccino : espresso, lait chauffé et mousse dans des proportions équilibrées.",
+     "p": [
+      "Un cappuccino classique est un espresso avec du lait chauffé et un beau chapeau de mousse, souvent autour de 150 à 180 ml.",
+      "Son nom est lié aux frères capucins, dont la robe brune rappelle la couleur de la boisson.",
+      "En Italie, c'est surtout une boisson du petit-déjeuner, avec une viennoiserie, plutôt qu'après un grand repas."
+     ],
+     "q": "Le cappuccino fait-il partie de tes préférés, et comment aimes-tu sa mousse ?",
+     "c": "Prépare ou commande un cappuccino et repère les trois couches : espresso, lait soyeux et mousse."
+    },
+    "it": {
+     "t": "Il cappuccino",
+     "g": "Conosci il cappuccino: espresso, latte montato e schiuma in proporzioni equilibrate.",
+     "p": [
+      "Un cappuccino classico è un espresso con latte montato e un generoso cappello di schiuma, spesso intorno ai 150-180 ml.",
+      "Il nome è legato ai frati cappuccini, il cui saio marrone ricorda il colore della bevanda.",
+      "In Italia si beve soprattutto a colazione, con un cornetto, e di solito non dopo un pasto abbondante."
+     ],
+     "q": "Il cappuccino è uno dei tuoi preferiti, e come ti piace la sua schiuma?",
+     "c": "Prepara o ordina un cappuccino e osserva i tre strati: espresso, latte setoso e schiuma in superficie."
+    },
+    "pt": {
+     "t": "O cappuccino",
+     "g": "Conhece o cappuccino: espresso, leite vaporizado e espuma em proporções equilibradas.",
+     "p": [
+      "Um cappuccino clássico é um espresso com leite vaporizado e uma generosa camada de espuma, muitas vezes com 150 a 180 ml.",
+      "O nome está ligado aos frades capuchinhos, cujo hábito castanho lembra a cor da bebida.",
+      "Em Itália bebe-se sobretudo ao pequeno-almoço, com um bolo, e não depois de uma grande refeição."
+     ],
+     "q": "O cappuccino é um dos teus preferidos, e como gostas da espuma dele?",
+     "c": "Faz ou pede um cappuccino e repara nas três camadas: espresso, leite sedoso e espuma por cima."
+    },
+    "pt_BR": {
+     "t": "O cappuccino",
+     "g": "Conheça o cappuccino: espresso, leite vaporizado e espuma em proporções equilibradas.",
+     "p": [
+      "Um cappuccino clássico é um espresso com leite vaporizado e uma bela camada de espuma, muitas vezes com 150 a 180 ml.",
+      "O nome está ligado aos frades capuchinhos, cujo hábito marrom lembra a cor da bebida.",
+      "No Brasil, cappuccino também pode ser uma mistura doce com chocolate; o italiano leva só café e leite."
+     ],
+     "q": "O cappuccino é um dos seus favoritos, e como você gosta da espuma dele?",
+     "c": "Faça ou peça um cappuccino e repare nas três camadas: espresso, leite sedoso e espuma por cima."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The latte",
+     "g": "Discover the latte: a larger, milkier drink with a thin layer of foam.",
+     "p": [
+      "A caffè latte is espresso with plenty of steamed milk and only about a centimetre of microfoam on top.",
+      "It tastes softer and milkier than a cappuccino, which makes it a good base for latte art and flavours.",
+      "Careful in Italy: ordering just 'latte' will get you a glass of milk, so ask for a caffè latte."
+     ],
+     "q": "Do you prefer milky, gentle coffee drinks or ones where the espresso stands out?",
+     "c": "Make or order a latte and a cappuccino, or compare from memory, and describe how milk and foam differ."
+    },
+    "de": {
+     "t": "Der Latte",
+     "g": "Entdecke den Latte: ein größeres, milchigeres Getränk mit einer dünnen Schaumschicht.",
+     "p": [
+      "Ein Caffè Latte ist Espresso mit viel geschäumter Milch und nur etwa einem Zentimeter Mikroschaum obendrauf.",
+      "Er schmeckt weicher und milchiger als ein Cappuccino und ist eine gute Basis für Latte Art und Aromen.",
+      "Vorsicht in Italien: Wer nur ‚latte‘ bestellt, bekommt ein Glas Milch; bestell also einen Caffè Latte."
+     ],
+     "q": "Magst du milchige, sanfte Kaffeegetränke lieber oder solche, bei denen der Espresso hervorsticht?",
+     "c": "Mach oder bestell einen Latte und einen Cappuccino, oder vergleiche aus der Erinnerung: Wie unterscheiden sich Milch und Schaum?"
+    },
+    "es": {
+     "t": "El latte",
+     "g": "Descubre el latte: una bebida más grande y lechosa con una fina capa de espuma.",
+     "p": [
+      "Un caffè latte es un espresso con mucha leche vaporizada y solo un centímetro, más o menos, de microespuma arriba.",
+      "Sabe más suave y lechoso que un capuchino, por eso es buena base para el arte latte y los sabores añadidos.",
+      "Cuidado en Italia: si pides solo «latte» te darán un vaso de leche, así que pide un caffè latte."
+     ],
+     "q": "¿Prefieres bebidas suaves y con mucha leche o aquellas en las que destaca el espresso?",
+     "c": "Prepara o pide un latte y un capuchino, o compáralos de memoria, y describe en qué difieren la leche y la espuma."
+    },
+    "fr": {
+     "t": "Le latte",
+     "g": "Découvre le latte : une boisson plus grande et plus lactée, avec une fine couche de mousse.",
+     "p": [
+      "Un caffè latte est un espresso avec beaucoup de lait chauffé et seulement un centimètre environ de microfoam.",
+      "Il est plus doux et plus lacté qu'un cappuccino, ce qui en fait une bonne base pour le latte art et les arômes.",
+      "Attention en Italie : commander juste « latte » t'apportera un verre de lait, demande plutôt un caffè latte."
+     ],
+     "q": "Préfères-tu les boissons douces et lactées ou celles où l'espresso ressort ?",
+     "c": "Prépare ou commande un latte et un cappuccino, ou compare de mémoire, et décris la différence de lait et de mousse."
+    },
+    "it": {
+     "t": "Il caffè latte",
+     "g": "Scopri il caffè latte: una bevanda più grande e lattosa, con un sottile strato di schiuma.",
+     "p": [
+      "Il caffè latte è un espresso con molto latte montato e solo circa un centimetro di microschiuma in superficie.",
+      "È più morbido e lattoso del cappuccino, ed è una buona base per la latte art e gli aromi.",
+      "Curiosità: in Italia chiedere solo «un latte» porta un bicchiere di latte; all'estero «latte» indica questa bevanda."
+     ],
+     "q": "Preferisci bevande morbide e ricche di latte o quelle in cui l'espresso si sente di più?",
+     "c": "Prepara o ordina un caffè latte e un cappuccino, o confrontali a memoria, e descrivi come cambiano latte e schiuma."
+    },
+    "pt": {
+     "t": "O latte",
+     "g": "Descobre o latte: uma bebida maior e com mais leite, com uma camada fina de espuma.",
+     "p": [
+      "Um caffè latte é um espresso com bastante leite vaporizado e só cerca de um centímetro de microespuma por cima.",
+      "Sabe mais suave e leitoso do que um cappuccino, por isso é uma boa base para latte art e sabores; lembra o galão português.",
+      "Cuidado em Itália: pedir só «latte» dá-te um copo de leite, por isso pede um caffè latte."
+     ],
+     "q": "Preferes bebidas suaves e com muito leite ou aquelas em que o espresso se destaca?",
+     "c": "Faz ou pede um latte e um cappuccino, ou compara de memória, e descreve como diferem o leite e a espuma."
+    },
+    "pt_BR": {
+     "t": "O latte",
+     "g": "Descubra o latte: uma bebida maior e mais leitosa, com uma camada fina de espuma.",
+     "p": [
+      "Um caffè latte é um espresso com bastante leite vaporizado e só cerca de um centímetro de microespuma por cima.",
+      "Ele é mais suave e leitoso que um cappuccino, por isso é uma ótima base para latte art e sabores.",
+      "Cuidado na Itália: pedir só 'latte' traz um copo de leite, então peça um caffè latte."
+     ],
+     "q": "Você prefere bebidas suaves e cheias de leite ou aquelas em que o espresso se destaca?",
+     "c": "Faça ou peça um latte e um cappuccino, ou compare de memória, e descreva como diferem o leite e a espuma."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The flat white",
+     "g": "Meet the flat white: a small, strong milk drink with velvety microfoam.",
+     "p": [
+      "The flat white is usually linked to Australia and New Zealand, where it became popular from the 1980s.",
+      "It is smaller than a latte, often around 150 to 160 ml, so the espresso flavour comes through more clearly.",
+      "It uses a thin, glossy layer of microfoam instead of a tall cap, giving a smooth, velvety sip."
+     ],
+     "q": "If you like milk in coffee but still want to taste the espresso, does a flat white sound right for you?",
+     "c": "Order or make a flat white and compare its size, foam and coffee strength with a latte."
+    },
+    "de": {
+     "t": "Der Flat White",
+     "g": "Lerne den Flat White kennen: ein kleines, kräftiges Milchgetränk mit samtigem Mikroschaum.",
+     "p": [
+      "Der Flat White wird meist mit Australien und Neuseeland verbunden, wo er ab den 1980ern populär wurde.",
+      "Er ist kleiner als ein Latte, oft etwa 150 bis 160 ml, sodass der Espresso deutlicher durchkommt.",
+      "Statt einer hohen Haube hat er eine dünne, glänzende Mikroschaumschicht, die ihn samtig macht."
+     ],
+     "q": "Wenn du Milch im Kaffee magst, aber den Espresso noch schmecken willst, klingt ein Flat White passend?",
+     "c": "Bestell oder mach einen Flat White und vergleiche Größe, Schaum und Kaffeestärke mit einem Latte."
+    },
+    "es": {
+     "t": "El flat white",
+     "g": "Conoce el flat white: una bebida pequeña e intensa con leche y microespuma aterciopelada.",
+     "p": [
+      "El flat white suele asociarse con Australia y Nueva Zelanda, donde se hizo popular a partir de los años 80.",
+      "Es más pequeño que un latte, a menudo de unos 150 a 160 ml, así que el sabor del espresso se nota más.",
+      "Lleva una capa fina y brillante de microespuma en lugar de una gran corona, y resulta suave y aterciopelado."
+     ],
+     "q": "Si te gusta el café con leche pero quieres notar el espresso, ¿te encaja un flat white?",
+     "c": "Pide o prepara un flat white y compara su tamaño, espuma e intensidad con un latte."
+    },
+    "fr": {
+     "t": "Le flat white",
+     "g": "Découvre le flat white : une petite boisson lactée corsée à la microfoam veloutée.",
+     "p": [
+      "Le flat white est souvent associé à l'Australie et à la Nouvelle-Zélande, où il est devenu populaire dès les années 1980.",
+      "Il est plus petit qu'un latte, souvent 150 à 160 ml, donc le goût de l'espresso ressort davantage.",
+      "Il a une fine couche brillante de microfoam au lieu d'un grand chapeau de mousse, pour une gorgée veloutée."
+     ],
+     "q": "Si tu aimes le lait dans le café mais veux sentir l'espresso, le flat white te semble-t-il fait pour toi ?",
+     "c": "Commande ou prépare un flat white et compare sa taille, sa mousse et son intensité avec un latte."
+    },
+    "it": {
+     "t": "Il flat white",
+     "g": "Conosci il flat white: una piccola bevanda al latte, intensa, con microschiuma vellutata.",
+     "p": [
+      "Il flat white è legato soprattutto ad Australia e Nuova Zelanda, dove è diventato popolare dagli anni Ottanta.",
+      "È più piccolo di un caffè latte, spesso 150-160 ml, quindi il sapore dell'espresso si sente di più.",
+      "Ha uno strato sottile e lucido di microschiuma invece di un alto cappello, per un sorso vellutato."
+     ],
+     "q": "Se ti piace il latte nel caffè ma vuoi sentire l'espresso, il flat white fa per te?",
+     "c": "Ordina o prepara un flat white e confronta dimensione, schiuma e intensità con un caffè latte."
+    },
+    "pt": {
+     "t": "O flat white",
+     "g": "Conhece o flat white: uma bebida pequena e intensa com leite e microespuma aveludada.",
+     "p": [
+      "O flat white costuma ser associado à Austrália e à Nova Zelândia, onde se tornou popular a partir dos anos 80.",
+      "É mais pequeno do que um latte, muitas vezes com 150 a 160 ml, por isso o sabor do espresso nota-se mais.",
+      "Leva uma camada fina e brilhante de microespuma em vez de uma espuma alta, e fica suave e aveludado."
+     ],
+     "q": "Se gostas de leite no café mas queres sentir o espresso, o flat white parece-te ideal?",
+     "c": "Pede ou faz um flat white e compara o tamanho, a espuma e a intensidade com um latte."
+    },
+    "pt_BR": {
+     "t": "O flat white",
+     "g": "Conheça o flat white: uma bebida pequena e intensa com leite e microespuma aveludada.",
+     "p": [
+      "O flat white costuma ser associado à Austrália e à Nova Zelândia, onde ficou popular a partir dos anos 80.",
+      "Ele é menor que um latte, muitas vezes com 150 a 160 ml, então o sabor do espresso aparece mais.",
+      "Leva uma camada fina e brilhante de microespuma em vez de uma espuma alta, e fica suave e aveludado."
+     ],
+     "q": "Se você gosta de leite no café mas quer sentir o espresso, o flat white parece ideal?",
+     "c": "Peça ou faça um flat white e compare o tamanho, a espuma e a intensidade com um latte."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The macchiato and cortado",
+     "g": "Explore small drinks with just a touch of milk: the macchiato and the cortado.",
+     "p": [
+      "Macchiato means 'stained' or 'marked' in Italian: an espresso marked with a spoonful of milk foam.",
+      "The cortado, from Spain, means 'cut': espresso cut with a similar amount of warm milk, with little or no foam.",
+      "In Portugal a pingado is a similar small coffee with a drop of milk, showing how many cultures love this style."
+     ],
+     "q": "Would you enjoy a coffee that is mostly espresso with just a little milk?",
+     "c": "Make or order a macchiato or cortado, then taste the espresso alone and describe what the milk changed."
+    },
+    "de": {
+     "t": "Macchiato und Cortado",
+     "g": "Entdecke kleine Getränke mit nur einem Hauch Milch: Macchiato und Cortado.",
+     "p": [
+      "Macchiato heißt auf Italienisch ‚befleckt‘ oder ‚markiert‘: ein Espresso mit einem Löffel Milchschaum.",
+      "Der Cortado aus Spanien heißt ‚geschnitten‘: Espresso mit etwa gleich viel warmer Milch, kaum oder ohne Schaum.",
+      "In Portugal ist der Pingado ein ähnlicher kleiner Kaffee mit einem Tropfen Milch; viele Kulturen lieben diesen Stil."
+     ],
+     "q": "Würde dir ein Kaffee gefallen, der fast nur Espresso ist, mit einem kleinen Schuss Milch?",
+     "c": "Mach oder bestell einen Macchiato oder Cortado, probiere dann den Espresso pur und beschreibe, was die Milch verändert."
+    },
+    "es": {
+     "t": "El macchiato y el cortado",
+     "g": "Descubre bebidas pequeñas con solo un toque de leche: el macchiato y el cortado.",
+     "p": [
+      "Macchiato significa 'manchado' en italiano: un espresso marcado con una cucharada de espuma de leche.",
+      "El cortado, de origen español, es un espresso cortado con una cantidad parecida de leche caliente, con poca o ninguna espuma.",
+      "En Portugal, el pingado es un café pequeño con una gota de leche: muchas culturas adoran este estilo."
+     ],
+     "q": "¿Te gustaría un café que es casi todo espresso con solo un poco de leche?",
+     "c": "Prepara o pide un macchiato o un cortado, prueba luego el espresso solo y describe qué cambió la leche."
+    },
+    "fr": {
+     "t": "Le macchiato et le cortado",
+     "g": "Découvre de petites boissons avec juste une touche de lait : le macchiato et le cortado.",
+     "p": [
+      "Macchiato signifie « taché » en italien : un espresso marqué d'une cuillerée de mousse de lait.",
+      "Le cortado, venu d'Espagne, signifie « coupé » : un espresso coupé d'autant de lait chaud, avec peu ou pas de mousse.",
+      "Au Portugal, le pingado est un petit café avec une goutte de lait : de nombreuses cultures aiment ce style."
+     ],
+     "q": "Aimerais-tu un café presque entièrement espresso, avec juste un peu de lait ?",
+     "c": "Prépare ou commande un macchiato ou un cortado, goûte ensuite l'espresso seul et décris ce que le lait a changé."
+    },
+    "it": {
+     "t": "Il macchiato e il cortado",
+     "g": "Scopri bevande piccole con solo un tocco di latte: il macchiato e il cortado.",
+     "p": [
+      "Il caffè macchiato è un espresso 'macchiato' con un cucchiaio di schiuma di latte, caldo o, a richiesta, freddo.",
+      "Il cortado, spagnolo, significa 'tagliato': espresso tagliato con una quantità simile di latte caldo, con poca schiuma.",
+      "In Portogallo il pingado è un caffè piccolo con una goccia di latte: tante culture amano questo stile."
+     ],
+     "q": "Ti piacerebbe un caffè quasi tutto espresso con solo un po' di latte?",
+     "c": "Prepara o ordina un macchiato o un cortado, poi assaggia l'espresso da solo e descrivi cosa cambia il latte."
+    },
+    "pt": {
+     "t": "O macchiato e o cortado",
+     "g": "Descobre bebidas pequenas com só um toque de leite: o macchiato e o cortado.",
+     "p": [
+      "Macchiato quer dizer 'manchado' em italiano: um espresso marcado com uma colher de espuma de leite.",
+      "O cortado, de Espanha, é um espresso 'cortado' com uma quantidade parecida de leite quente, com pouca ou nenhuma espuma.",
+      "Em Portugal, o pingado é o primo próximo: uma bica com uma gota de leite, prova de que muitas culturas adoram este estilo."
+     ],
+     "q": "Gostavas de um café que é quase só espresso com um pouco de leite?",
+     "c": "Faz ou pede um macchiato, um cortado ou um pingado, prova depois o espresso sozinho e descreve o que o leite mudou."
+    },
+    "pt_BR": {
+     "t": "O macchiato e o cortado",
+     "g": "Descubra bebidas pequenas com só um toque de leite: o macchiato e o cortado.",
+     "p": [
+      "Macchiato quer dizer 'manchado' em italiano: um espresso marcado com uma colher de espuma de leite.",
+      "O cortado, da Espanha, é um espresso 'cortado' com uma quantidade parecida de leite quente, com pouca ou nenhuma espuma.",
+      "Em Portugal, o pingado é um cafezinho com uma gota de leite: muitas culturas adoram esse estilo."
+     ],
+     "q": "Você gostaria de um café que é quase só espresso com um pouquinho de leite?",
+     "c": "Faça ou peça um macchiato ou um cortado, prove depois o espresso puro e descreva o que o leite mudou."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plant milks in coffee",
+     "g": "See how oat, soy, almond and other plant milks foam and taste in coffee.",
+     "p": [
+      "Oat milk foams well and tastes gently sweet, which is why it has become a café favourite.",
+      "Soy milk makes good foam too, but it can split in very hot or acidic coffee; warming the milk first helps.",
+      "Almond and coconut milks are thinner with nutty or tropical notes; barista versions are made to foam better."
+     ],
+     "q": "Have you tried coffee with a plant milk, and which one did you like most?",
+     "c": "Taste coffee with two different milks, dairy or plant, and compare sweetness, texture and how well each foams."
+    },
+    "de": {
+     "t": "Pflanzendrinks im Kaffee",
+     "g": "Sieh, wie Hafer-, Soja-, Mandel- und andere Pflanzendrinks im Kaffee schäumen und schmecken.",
+     "p": [
+      "Haferdrink schäumt gut und schmeckt leicht süß, deshalb ist er in Cafés so beliebt geworden.",
+      "Sojadrink schäumt ebenfalls gut, kann aber in sehr heißem oder saurem Kaffee ausflocken; vorher erwärmen hilft.",
+      "Mandel- und Kokosdrinks sind dünner, mit nussigen oder tropischen Noten; Barista-Varianten schäumen besser."
+     ],
+     "q": "Hast du schon Kaffee mit Pflanzendrink probiert, und welcher hat dir am besten geschmeckt?",
+     "c": "Probiere Kaffee mit zwei verschiedenen Milchsorten und vergleiche Süße, Textur und wie gut sie schäumen."
+    },
+    "es": {
+     "t": "Bebidas vegetales en el café",
+     "g": "Descubre cómo espuman y saben en el café las bebidas de avena, soja, almendra y otras.",
+     "p": [
+      "La bebida de avena espuma bien y es ligeramente dulce, por eso se ha vuelto una favorita en las cafeterías.",
+      "La de soja también espuma bien, pero puede cortarse en café muy caliente o ácido; calentarla antes ayuda.",
+      "Las de almendra y coco son más ligeras, con notas a fruto seco o tropicales; las versiones barista espuman mejor."
+     ],
+     "q": "¿Has probado el café con una bebida vegetal y cuál te gustó más?",
+     "c": "Prueba el café con dos leches distintas, animal o vegetal, y compara dulzor, textura y cómo espuma cada una."
+    },
+    "fr": {
+     "t": "Les laits végétaux dans le café",
+     "g": "Vois comment les boissons à l'avoine, au soja, à l'amande et d'autres moussent et se goûtent dans le café.",
+     "p": [
+      "La boisson à l'avoine mousse bien et a un goût légèrement sucré : elle est devenue une favorite des cafés.",
+      "Le soja mousse bien aussi, mais peut trancher dans un café très chaud ou acide ; le chauffer d'abord aide.",
+      "L'amande et la noix de coco sont plus légères, aux notes de fruits secs ou tropicales ; les versions barista moussent mieux."
+     ],
+     "q": "As-tu déjà goûté un café avec une boisson végétale, et laquelle as-tu préférée ?",
+     "c": "Goûte un café avec deux laits différents, animal ou végétal, et compare douceur, texture et tenue de la mousse."
+    },
+    "it": {
+     "t": "Bevande vegetali nel caffè",
+     "g": "Scopri come montano e che sapore hanno nel caffè le bevande di avena, soia, mandorla e altre.",
+     "p": [
+      "La bevanda d'avena monta bene e ha un gusto leggermente dolce, per questo è diventata una preferita nei bar.",
+      "Quella di soia monta bene, ma può separarsi nel caffè molto caldo o acido; scaldarla prima aiuta.",
+      "Mandorla e cocco sono più leggere, con note di frutta secca o tropicali; le versioni barista montano meglio."
+     ],
+     "q": "Hai provato il caffè con una bevanda vegetale, e quale ti è piaciuta di più?",
+     "c": "Assaggia il caffè con due latti diversi, vaccino o vegetale, e confronta dolcezza, consistenza e tenuta della schiuma."
+    },
+    "pt": {
+     "t": "Bebidas vegetais no café",
+     "g": "Vê como as bebidas de aveia, soja, amêndoa e outras fazem espuma e sabem no café.",
+     "p": [
+      "A bebida de aveia faz boa espuma e é ligeiramente doce, por isso tornou-se uma favorita nos cafés.",
+      "A de soja também faz boa espuma, mas pode talhar em café muito quente ou ácido; aquecê-la antes ajuda.",
+      "As de amêndoa e coco são mais leves, com notas a frutos secos ou tropicais; as versões barista espumam melhor."
+     ],
+     "q": "Já provaste café com uma bebida vegetal, e de qual gostaste mais?",
+     "c": "Prova café com dois leites diferentes, de vaca ou vegetal, e compara doçura, textura e a espuma de cada um."
+    },
+    "pt_BR": {
+     "t": "Leites vegetais no café",
+     "g": "Veja como os leites de aveia, soja, amêndoa e outros espumam e ficam no café.",
+     "p": [
+      "O leite de aveia espuma bem e é levemente doce, por isso virou um queridinho das cafeterias.",
+      "O de soja também espuma bem, mas pode talhar em café muito quente ou ácido; aquecer o leite antes ajuda.",
+      "Os de amêndoa e coco são mais ralos, com notas de castanhas ou tropicais; as versões barista espumam melhor."
+     ],
+     "q": "Você já provou café com leite vegetal, e de qual gostou mais?",
+     "c": "Prove café com dois leites diferentes, animal ou vegetal, e compare doçura, textura e como cada um espuma."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Frothing without a machine",
+     "g": "Froth milk at home with a jar, a whisk or a French press, no espresso machine needed.",
+     "p": [
+      "Jar method: fill a jar a third full with milk, close it tightly, shake hard for about 30 to 60 seconds, then warm it gently.",
+      "French press method: pump the plunger quickly up and down in warm milk until it doubles in volume.",
+      "A whisk or small handheld frother also works; tap and swirl afterwards to make the foam smoother."
+     ],
+     "q": "Which tool in your kitchen could you use to froth milk tonight?",
+     "c": "Froth warm milk with a French press, jar or whisk and pour it onto a strong coffee to make your own café-style drink."
+    },
+    "de": {
+     "t": "Milch schäumen ohne Maschine",
+     "g": "Schäum Milch zu Hause mit einem Glas, einem Schneebesen oder einer French Press, ganz ohne Espressomaschine.",
+     "p": [
+      "Glas-Methode: Glas zu einem Drittel mit Milch füllen, fest verschließen, 30 bis 60 Sekunden kräftig schütteln, dann sanft erwärmen.",
+      "French-Press-Methode: Den Stempel in warmer Milch schnell auf und ab bewegen, bis sich das Volumen verdoppelt.",
+      "Auch ein Schneebesen oder kleiner Handaufschäumer geht; danach klopfen und schwenken für feineren Schaum."
+     ],
+     "q": "Welches Werkzeug in deiner Küche könntest du heute Abend zum Milchschäumen nutzen?",
+     "c": "Schäum warme Milch mit French Press, Glas oder Schneebesen und gieß sie auf einen starken Kaffee: dein eigenes Café-Getränk."
+    },
+    "es": {
+     "t": "Espumar sin máquina",
+     "g": "Espuma la leche en casa con un tarro, unas varillas o una prensa francesa, sin máquina de espresso.",
+     "p": [
+      "Con un tarro: llénalo de leche hasta un tercio, ciérralo bien, agítalo con fuerza 30 a 60 segundos y luego caliéntala con suavidad.",
+      "Con prensa francesa: sube y baja el émbolo rápido en leche caliente hasta que doble su volumen.",
+      "Unas varillas o un espumador de mano también sirven; después golpea y gira para afinar la espuma."
+     ],
+     "q": "¿Qué utensilio de tu cocina podrías usar esta noche para espumar leche?",
+     "c": "Espuma leche caliente con una prensa francesa, un tarro o unas varillas y viértela sobre un café fuerte, como en una cafetería."
+    },
+    "fr": {
+     "t": "Mousser le lait sans machine",
+     "g": "Fais mousser le lait chez toi avec un bocal, un fouet ou une cafetière à piston, sans machine à espresso.",
+     "p": [
+      "Bocal : remplis-le de lait au tiers, ferme bien, secoue fort 30 à 60 secondes, puis réchauffe doucement.",
+      "Cafetière à piston : actionne vite le piston de haut en bas dans du lait chaud jusqu'à ce qu'il double de volume.",
+      "Un fouet ou un petit mousseur à main marche aussi ; tapote et fais tourner ensuite pour une mousse plus fine."
+     ],
+     "q": "Quel ustensile de ta cuisine pourrais-tu utiliser ce soir pour mousser du lait ?",
+     "c": "Mousse du lait chaud au piston, au bocal ou au fouet et verse-le sur un café corsé, comme au café."
+    },
+    "it": {
+     "t": "Montare il latte senza macchina",
+     "g": "Monta il latte a casa con un barattolo, una frusta o una French press, senza macchina da espresso.",
+     "p": [
+      "Barattolo: riempilo di latte per un terzo, chiudilo bene, scuotilo forte per 30-60 secondi, poi scaldalo piano.",
+      "French press: muovi lo stantuffo su e giù velocemente nel latte caldo finché raddoppia di volume.",
+      "Va bene anche una frusta o un piccolo montalatte a mano; poi batti e ruota per una schiuma più fine."
+     ],
+     "q": "Quale attrezzo della tua cucina potresti usare stasera per montare il latte?",
+     "c": "Monta latte caldo con French press, barattolo o frusta e versalo su un caffè forte, come al bar."
+    },
+    "pt": {
+     "t": "Espumar leite sem máquina",
+     "g": "Espuma leite em casa com um frasco, uma vara de arames ou uma prensa francesa, sem máquina de espresso.",
+     "p": [
+      "Frasco: enche um terço com leite, fecha bem, agita com força 30 a 60 segundos e depois aquece com cuidado.",
+      "Prensa francesa: sobe e desce o êmbolo depressa em leite quente até o volume dobrar.",
+      "Uma vara de arames ou um pequeno espumador manual também servem; depois bate e roda para afinar a espuma."
+     ],
+     "q": "Que utensílio da tua cozinha podias usar esta noite para espumar leite?",
+     "c": "Espuma leite quente com prensa francesa, frasco ou vara e verte-o sobre um café forte, como num café."
+    },
+    "pt_BR": {
+     "t": "Espumando leite sem máquina",
+     "g": "Espume leite em casa com um pote, um fouet ou uma prensa francesa, sem máquina de espresso.",
+     "p": [
+      "Pote: encha um terço com leite, feche bem, chacoalhe com força por 30 a 60 segundos e depois aqueça com cuidado.",
+      "Prensa francesa: suba e desça o êmbolo rápido no leite quente até o volume dobrar.",
+      "Um fouet ou um mixer de leite pequeno também funcionam; depois bata e gire para deixar a espuma mais fina."
+     ],
+     "q": "Que utensílio da sua cozinha você poderia usar hoje à noite para espumar leite?",
+     "c": "Espume leite quente com prensa francesa, pote ou fouet e despeje sobre um café forte, como numa cafeteria."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: espresso and milk",
+     "g": "Look back on espresso and milk drinks, then make two drinks and compare texture and taste.",
+     "p": [
+      "You now know how espresso works: pressure, grind, dose, yield and time, and how to spot sour or bitter shots.",
+      "You have learned to steam and froth milk and to tell a cappuccino, latte, flat white, macchiato and cortado apart.",
+      "Milk, dairy or plant, adds sweetness and texture, while proportions decide how much the espresso shines."
+     ],
+     "q": "Which espresso or milk drink from these days would you order on a perfect morning?",
+     "c": "Make or order two milk drinks, like a cappuccino and a flat white, and compare foam, sweetness and coffee strength."
+    },
+    "de": {
+     "t": "Rückblick: Espresso und Milch",
+     "g": "Blick auf Espresso und Milchgetränke zurück, mach zwei Getränke und vergleiche Textur und Geschmack.",
+     "p": [
+      "Du weißt jetzt, wie Espresso funktioniert: Druck, Mahlgrad, Dosis, Ausbeute und Zeit, und erkennst saure oder bittere Shots.",
+      "Du kannst Milch schäumen und Cappuccino, Latte, Flat White, Macchiato und Cortado unterscheiden.",
+      "Milch, tierisch oder pflanzlich, bringt Süße und Textur, und die Proportionen entscheiden, wie stark der Espresso glänzt."
+     ],
+     "q": "Welches Espresso- oder Milchgetränk aus diesen Tagen würdest du an einem perfekten Morgen bestellen?",
+     "c": "Mach oder bestell zwei Milchgetränke, etwa Cappuccino und Flat White, und vergleiche Schaum, Süße und Kaffeestärke."
+    },
+    "es": {
+     "t": "Repaso: espresso y leche",
+     "g": "Repasa el espresso y las bebidas con leche, y prepara dos para comparar textura y sabor.",
+     "p": [
+      "Ya sabes cómo funciona el espresso: presión, molienda, dosis, rendimiento y tiempo, y cómo detectar uno ácido o amargo.",
+      "Has aprendido a vaporizar y espumar la leche y a distinguir capuchino, latte, flat white, macchiato y cortado.",
+      "La leche, animal o vegetal, aporta dulzor y textura, y las proporciones deciden cuánto brilla el espresso."
+     ],
+     "q": "¿Qué bebida de espresso o con leche de estos días pedirías en una mañana perfecta?",
+     "c": "Prepara o pide dos bebidas con leche, como un capuchino y un flat white, y compara espuma, dulzor e intensidad."
+    },
+    "fr": {
+     "t": "Bilan : espresso et lait",
+     "g": "Fais le point sur l'espresso et les boissons lactées, puis prépare-en deux pour comparer texture et goût.",
+     "p": [
+      "Tu sais maintenant comment marche l'espresso : pression, mouture, dose, rendement et temps, et repérer un espresso acide ou amer.",
+      "Tu as appris à mousser le lait et à distinguer cappuccino, latte, flat white, macchiato et cortado.",
+      "Le lait, animal ou végétal, apporte douceur et texture, et les proportions décident de la place de l'espresso."
+     ],
+     "q": "Quelle boisson à l'espresso ou au lait de ces derniers jours commanderais-tu un matin parfait ?",
+     "c": "Prépare ou commande deux boissons lactées, comme un cappuccino et un flat white, et compare mousse, douceur et intensité."
+    },
+    "it": {
+     "t": "Ripasso: espresso e latte",
+     "g": "Ripassa l'espresso e le bevande al latte, poi preparane due e confronta consistenza e gusto.",
+     "p": [
+      "Ora sai come funziona l'espresso: pressione, macinatura, dose, resa e tempo, e come riconoscere un espresso acido o amaro.",
+      "Hai imparato a montare il latte e a distinguere cappuccino, caffè latte, flat white, macchiato e cortado.",
+      "Il latte, vaccino o vegetale, aggiunge dolcezza e consistenza, e le proporzioni decidono quanto risalta l'espresso."
+     ],
+     "q": "Quale bevanda all'espresso o al latte di questi giorni ordineresti in una mattina perfetta?",
+     "c": "Prepara o ordina due bevande al latte, come un cappuccino e un flat white, e confronta schiuma, dolcezza e intensità."
+    },
+    "pt": {
+     "t": "Revisão: espresso e leite",
+     "g": "Revê o espresso e as bebidas com leite, e faz duas para comparar textura e sabor.",
+     "p": [
+      "Já sabes como funciona o espresso: pressão, moagem, dose, rendimento e tempo, e como detetar um espresso ácido ou amargo.",
+      "Aprendeste a vaporizar e espumar leite e a distinguir cappuccino, latte, flat white, macchiato e cortado.",
+      "O leite, de vaca ou vegetal, dá doçura e textura, e as proporções decidem quanto o espresso se destaca."
+     ],
+     "q": "Que bebida de espresso ou com leite destes dias pedirias numa manhã perfeita?",
+     "c": "Faz ou pede duas bebidas com leite, como um cappuccino e um flat white, e compara espuma, doçura e intensidade."
+    },
+    "pt_BR": {
+     "t": "Revisão: espresso e leite",
+     "g": "Relembre o espresso e as bebidas com leite, e faça duas para comparar textura e sabor.",
+     "p": [
+      "Você já sabe como funciona o espresso: pressão, moagem, dose, rendimento e tempo, e como notar uma dose azeda ou amarga.",
+      "Aprendeu a vaporizar e espumar leite e a diferenciar cappuccino, latte, flat white, macchiato e cortado.",
+      "O leite, animal ou vegetal, traz doçura e textura, e as proporções decidem quanto o espresso aparece."
+     ],
+     "q": "Qual bebida de espresso ou com leite destes dias você pediria numa manhã perfeita?",
+     "c": "Faça ou peça duas bebidas com leite, como um cappuccino e um flat white, e compare espuma, doçura e intensidade."
+    }
+   }
+  }
+ ]
+}

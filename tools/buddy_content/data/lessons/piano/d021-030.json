@@ -1,0 +1,835 @@
+{
+ "topic": "piano",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steps and skips",
+     "g": "See at a glance whether notes move by step or by skip, so you read shapes instead of single notes.",
+     "p": [
+      "A step goes from a line to the next space or a space to the next line: the next key, the next finger.",
+      "A skip goes line to line or space to space: you skip one key and one finger.",
+      "Reading the direction and distance between notes is faster than naming every single note."
+     ],
+     "q": "Do you read notes one by one, or do you already notice their shapes?",
+     "c": "In C position, play C E G E C (skips) then C D E D C (steps), saying step or skip for each move."
+    },
+    "de": {
+     "t": "Schritte und Sprünge",
+     "g": "Auf einen Blick sehen, ob Noten schrittweise oder sprungweise gehen, und Formen statt Einzeltöne lesen.",
+     "p": [
+      "Ein Schritt geht von einer Linie zum nächsten Zwischenraum oder umgekehrt: nächste Taste, nächster Finger.",
+      "Ein Sprung (Terz) geht von Linie zu Linie oder Raum zu Raum: eine Taste und ein Finger werden übersprungen.",
+      "Richtung und Abstand zu lesen geht schneller, als jede einzelne Note zu benennen."
+     ],
+     "q": "Liest du Note für Note, oder siehst du schon ihre Formen?",
+     "c": "Spiel in der C-Lage C E G E C (Sprünge), dann C D E D C (Schritte) und sag bei jedem Wechsel Schritt oder Sprung."
+    },
+    "es": {
+     "t": "Grados conjuntos y saltos",
+     "g": "Ver de un vistazo si las notas avanzan por grado o por salto y leer formas en vez de notas sueltas.",
+     "p": [
+      "Un grado va de una línea al espacio siguiente o al revés: la tecla de al lado, el dedo de al lado.",
+      "Un salto va de línea a línea o de espacio a espacio: te saltas una tecla y un dedo.",
+      "Leer la dirección y la distancia entre notas es más rápido que nombrar cada nota."
+     ],
+     "q": "¿Lees nota por nota o ya te fijas en las formas?",
+     "c": "En posición de Do, toca Do Mi Sol Mi Do (saltos) y Do Re Mi Re Do (grados), diciendo grado o salto en cada paso."
+    },
+    "fr": {
+     "t": "Conjoint et disjoint",
+     "g": "Voir d'un coup d'œil si les notes avancent par degré ou par saut, et lire des formes plutôt que des notes isolées.",
+     "p": [
+      "Un degré va d'une ligne à l'interligne suivant ou l'inverse : la touche voisine, le doigt voisin.",
+      "Un saut de tierce va de ligne à ligne ou d'interligne à interligne : on saute une touche et un doigt.",
+      "Lire la direction et la distance entre les notes est plus rapide que nommer chaque note."
+     ],
+     "q": "Lis-tu note par note, ou remarques-tu déjà les formes ?",
+     "c": "En position de do, joue do mi sol mi do (sauts) puis do ré mi ré do (degrés), en disant degré ou saut."
+    },
+    "it": {
+     "t": "Gradi congiunti e salti",
+     "g": "Vedere a colpo d'occhio se le note procedono per grado o per salto e leggere figure invece di note singole.",
+     "p": [
+      "Un grado va da una linea allo spazio successivo o viceversa: il tasto vicino, il dito vicino.",
+      "Un salto va da linea a linea o da spazio a spazio: salti un tasto e un dito.",
+      "Leggere direzione e distanza tra le note è più veloce che dare il nome a ogni nota."
+     ],
+     "q": "Leggi nota per nota o noti già le figure?",
+     "c": "In posizione di Do suona Do Mi Sol Mi Do (salti) e Do Re Mi Re Do (gradi), dicendo grado o salto a ogni passo."
+    },
+    "pt": {
+     "t": "Graus conjuntos e saltos",
+     "g": "Ver logo se as notas andam por grau ou por salto e ler formas em vez de notas soltas.",
+     "p": [
+      "Um grau vai de uma linha para o espaço seguinte ou ao contrário: a tecla ao lado, o dedo ao lado.",
+      "Um salto vai de linha para linha ou de espaço para espaço: saltas uma tecla e um dedo.",
+      "Ler a direção e a distância entre notas é mais rápido do que dar nome a cada nota."
+     ],
+     "q": "Lês nota a nota ou já reparas nas formas?",
+     "c": "Na posição de dó, toca dó mi sol mi dó (saltos) e dó ré mi ré dó (graus), dizendo grau ou salto a cada passo."
+    },
+    "pt_BR": {
+     "t": "Graus conjuntos e saltos",
+     "g": "Ver de relance se as notas andam por grau ou por salto e ler formas em vez de notas soltas.",
+     "p": [
+      "Um grau vai de uma linha para o espaço seguinte ou o contrário: a tecla vizinha, o dedo vizinho.",
+      "Um salto vai de linha para linha ou de espaço para espaço: você pula uma tecla e um dedo.",
+      "Ler a direção e a distância entre as notas é mais rápido do que nomear cada nota."
+     ],
+     "q": "Você lê nota por nota ou já percebe os desenhos?",
+     "c": "Na posição de dó, toque dó mi sol mi dó (saltos) e dó ré mi ré dó (graus), dizendo grau ou salto a cada passo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time signatures 4/4 and 3/4",
+     "g": "Read time signatures and count bars of four beats and of three beats.",
+     "p": [
+      "The two numbers at the start show the metre: the top number tells how many beats are in each bar.",
+      "In 4/4 count 1 2 3 4, a feel heard in most pop songs; in 3/4 count 1 2 3, the feel of a waltz.",
+      "The first beat of each bar is naturally a little stronger, which gives the music its swing."
+     ],
+     "q": "Can you think of a song that feels like a waltz in three?",
+     "c": "Play C on every beat for four bars of 4/4, then four bars of 3/4, leaning a little on each beat 1."
+    },
+    "de": {
+     "t": "Taktarten 4/4 und 3/4",
+     "g": "Taktangaben lesen und Takte mit vier und mit drei Schlägen zählen.",
+     "p": [
+      "Die zwei Zahlen am Anfang zeigen die Taktart: Die obere sagt, wie viele Schläge ein Takt hat.",
+      "Im 4/4-Takt zählst du 1 2 3 4, wie in den meisten Popsongs; im 3/4-Takt 1 2 3, wie im Walzer.",
+      "Der erste Schlag jedes Taktes ist natürlich etwas betonter, das gibt der Musik ihren Schwung."
+     ],
+     "q": "Fällt dir ein Lied ein, das sich wie ein Walzer im Dreiertakt anfühlt?",
+     "c": "Spiel C auf jeden Schlag, vier Takte im 4/4- und vier im 3/4-Takt, und betone jede 1 ein wenig."
+    },
+    "es": {
+     "t": "Compases de 4/4 y 3/4",
+     "g": "Leer la indicación de compás y contar compases de cuatro y de tres pulsos.",
+     "p": [
+      "Los dos números del principio indican el compás: el de arriba dice cuántos pulsos tiene cada compás.",
+      "En 4/4 se cuenta 1 2 3 4, como en casi todo el pop; en 3/4 se cuenta 1 2 3, como en un vals.",
+      "El primer pulso de cada compás es de forma natural algo más fuerte, y eso da vida a la música."
+     ],
+     "q": "¿Se te ocurre alguna canción que suene a vals, en tres?",
+     "c": "Toca Do en cada pulso durante cuatro compases de 4/4 y cuatro de 3/4, apoyando un poco cada 1."
+    },
+    "fr": {
+     "t": "Les mesures à 4/4 et 3/4",
+     "g": "Lire le chiffrage de la mesure et compter des mesures à quatre et à trois temps.",
+     "p": [
+      "Les deux chiffres du début indiquent la mesure : celui du haut donne le nombre de temps par mesure.",
+      "En 4/4 on compte 1 2 3 4, comme dans la plupart des chansons pop ; en 3/4 on compte 1 2 3, comme une valse.",
+      "Le premier temps de chaque mesure est naturellement un peu plus appuyé, ce qui donne l'élan à la musique."
+     ],
+     "q": "Connais-tu une chanson qui sonne comme une valse à trois temps ?",
+     "c": "Joue do sur chaque temps pendant quatre mesures à 4/4, puis quatre à 3/4, en appuyant un peu chaque 1."
+    },
+    "it": {
+     "t": "I tempi 4/4 e 3/4",
+     "g": "Leggere l'indicazione di tempo e contare battute di quattro e di tre movimenti.",
+     "p": [
+      "I due numeri all'inizio indicano il tempo: quello in alto dice quanti movimenti ci sono in ogni battuta.",
+      "In 4/4 si conta 1 2 3 4, come in gran parte del pop; in 3/4 si conta 1 2 3, come in un valzer.",
+      "Il primo movimento di ogni battuta è naturalmente un po' più forte, ed è ciò che dà slancio alla musica."
+     ],
+     "q": "Ti viene in mente una canzone che suona come un valzer in tre?",
+     "c": "Suona Do su ogni movimento per quattro battute in 4/4 e quattro in 3/4, accentando un po' ogni 1."
+    },
+    "pt": {
+     "t": "Compassos 4/4 e 3/4",
+     "g": "Ler a indicação de compasso e contar compassos de quatro e de três tempos.",
+     "p": [
+      "Os dois números do início indicam o compasso: o de cima diz quantos tempos há em cada compasso.",
+      "Em 4/4 conta-se 1 2 3 4, como na maioria das canções pop; em 3/4 conta-se 1 2 3, como numa valsa.",
+      "O primeiro tempo de cada compasso é naturalmente um pouco mais forte, e isso dá balanço à música."
+     ],
+     "q": "Lembras-te de alguma música que soe a valsa, em três?",
+     "c": "Toca dó em cada tempo durante quatro compassos de 4/4 e quatro de 3/4, apoiando um pouco cada 1."
+    },
+    "pt_BR": {
+     "t": "Compassos 4/4 e 3/4",
+     "g": "Ler a fórmula de compasso e contar compassos de quatro e de três tempos.",
+     "p": [
+      "Os dois números do começo indicam o compasso: o de cima diz quantos tempos cada compasso tem.",
+      "Em 4/4 conta-se 1 2 3 4, como na maioria das músicas pop; em 3/4 conta-se 1 2 3, como numa valsa.",
+      "O primeiro tempo de cada compasso é naturalmente um pouco mais forte, e isso dá balanço à música."
+     ],
+     "q": "Você lembra de alguma música que soa como valsa, em três?",
+     "c": "Toque dó em cada tempo por quatro compassos de 4/4 e quatro de 3/4, apoiando um pouco cada 1."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rests",
+     "g": "Read quarter, half and whole rests and count silence as carefully as sound.",
+     "p": [
+      "A quarter rest looks like a zigzag and lasts 1 beat; a half rest sits on line 3 like a hat and lasts 2.",
+      "A whole rest hangs below line 4 like a hole and fills a whole bar of silence.",
+      "Lift your hand on the rest but keep counting, so the next note comes in exactly on time."
+     ],
+     "q": "Do you tend to rush through rests, or wait too long?",
+     "c": "Play C on beats 1 and 3 and rest on beats 2 and 4 for four bars, lifting the hand and counting aloud."
+    },
+    "de": {
+     "t": "Pausen",
+     "g": "Viertel-, halbe und ganze Pausen lesen und Stille genauso sorgfältig zählen wie Töne.",
+     "p": [
+      "Die Viertelpause sieht aus wie ein Zickzack und dauert 1 Schlag; die halbe Pause sitzt wie ein Hut auf der 3. Linie, 2 Schläge.",
+      "Die ganze Pause hängt wie ein Loch unter der 4. Linie und füllt einen ganzen Takt Stille.",
+      "Heb in der Pause die Hand, aber zähl weiter, damit der nächste Ton genau rechtzeitig kommt."
+     ],
+     "q": "Neigst du dazu, über Pausen hinwegzueilen oder zu lange zu warten?",
+     "c": "Spiel vier Takte lang C auf 1 und 3 und pausiere auf 2 und 4, heb die Hand und zähl laut."
+    },
+    "es": {
+     "t": "Silencios",
+     "g": "Leer silencios de negra, blanca y redonda y contar el silencio con el mismo cuidado que el sonido.",
+     "p": [
+      "El silencio de negra parece un zigzag y dura 1 pulso; el de blanca se apoya sobre la 3.ª línea y dura 2.",
+      "El silencio de redonda cuelga bajo la 4.ª línea y llena un compás entero de silencio.",
+      "Levanta la mano en el silencio pero sigue contando, para que la siguiente nota entre justo a tiempo."
+     ],
+     "q": "¿Sueles correr en los silencios o esperar demasiado?",
+     "c": "Toca Do en los pulsos 1 y 3 y haz silencio en 2 y 4 durante cuatro compases, levantando la mano y contando."
+    },
+    "fr": {
+     "t": "Les silences",
+     "g": "Lire le soupir, la demi-pause et la pause, et compter le silence aussi soigneusement que le son.",
+     "p": [
+      "Le soupir ressemble à un zigzag et dure 1 temps ; la demi-pause est posée sur la 3e ligne et dure 2 temps.",
+      "La pause est suspendue sous la 4e ligne et remplit une mesure entière de silence.",
+      "Lève la main pendant le silence mais continue de compter, pour que la note suivante arrive pile à l'heure."
+     ],
+     "q": "As-tu tendance à précipiter les silences ou à attendre trop longtemps ?",
+     "c": "Joue do sur les temps 1 et 3 et fais silence sur 2 et 4 pendant quatre mesures, main levée, en comptant."
+    },
+    "it": {
+     "t": "Le pause",
+     "g": "Leggere le pause di semiminima, minima e semibreve e contare il silenzio con la stessa cura del suono.",
+     "p": [
+      "La pausa di semiminima sembra uno zigzag e dura 1 movimento; quella di minima poggia sulla 3ª linea e dura 2.",
+      "La pausa di semibreve pende sotto la 4ª linea e riempie un'intera battuta di silenzio.",
+      "Alza la mano durante la pausa ma continua a contare, così la nota successiva entra esattamente a tempo."
+     ],
+     "q": "Tendi a correre durante le pause o ad aspettare troppo?",
+     "c": "Suona Do sui movimenti 1 e 3 e fai pausa su 2 e 4 per quattro battute, alzando la mano e contando."
+    },
+    "pt": {
+     "t": "Pausas",
+     "g": "Ler pausas de semínima, mínima e semibreve e contar o silêncio com o mesmo cuidado que o som.",
+     "p": [
+      "A pausa de semínima parece um ziguezague e dura 1 tempo; a de mínima assenta na 3.ª linha e dura 2.",
+      "A pausa de semibreve fica pendurada por baixo da 4.ª linha e enche um compasso inteiro de silêncio.",
+      "Levanta a mão na pausa mas continua a contar, para a nota seguinte entrar mesmo a tempo."
+     ],
+     "q": "Costumas apressar as pausas ou esperar demasiado?",
+     "c": "Toca dó nos tempos 1 e 3 e faz pausa no 2 e no 4 durante quatro compassos, levantando a mão e contando."
+    },
+    "pt_BR": {
+     "t": "Pausas",
+     "g": "Ler pausas de semínima, mínima e semibreve e contar o silêncio com o mesmo cuidado que o som.",
+     "p": [
+      "A pausa de semínima parece um zigue-zague e dura 1 tempo; a de mínima fica sobre a 3ª linha e dura 2.",
+      "A pausa de semibreve fica pendurada embaixo da 4ª linha e preenche um compasso inteiro de silêncio.",
+      "Levante a mão na pausa, mas continue contando, para a próxima nota entrar bem no tempo."
+     ],
+     "q": "Você costuma correr nas pausas ou esperar demais?",
+     "c": "Toque dó nos tempos 1 e 3 e faça pausa no 2 e no 4 por quatro compassos, levantando a mão e contando."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dynamics: piano and forte",
+     "g": "Play softly and loudly on purpose and read the symbols for both.",
+     "p": [
+      "Dynamics are written in Italian: p means piano, soft, and f means forte, loud.",
+      "Volume comes from speed, not force: a slower key press is softer, a faster one is louder.",
+      "For forte use the weight of the arm, never a stiff push from the fingers or shoulders."
+     ],
+     "q": "Is it harder for you to play really softly or really loudly?",
+     "c": "Play Ode to Joy once p and once f, keeping the rhythm identical and your shoulders relaxed."
+    },
+    "de": {
+     "t": "Dynamik: piano und forte",
+     "g": "Bewusst leise und laut spielen und die Zeichen dafür lesen.",
+     "p": [
+      "Die Dynamik steht auf Italienisch: p heißt piano, leise, und f heißt forte, laut.",
+      "Lautstärke kommt von der Geschwindigkeit, nicht von Kraft: langsamer Anschlag ist leiser, schneller lauter.",
+      "Für forte nutzt du das Armgewicht, nie steifen Druck aus Fingern oder Schultern."
+     ],
+     "q": "Fällt dir richtig leise oder richtig laut spielen schwerer?",
+     "c": "Spiel die Ode an die Freude einmal p und einmal f, mit genau gleichem Rhythmus und lockeren Schultern."
+    },
+    "es": {
+     "t": "Dinámica: piano y forte",
+     "g": "Tocar suave y fuerte a propósito y leer sus símbolos.",
+     "p": [
+      "La dinámica se escribe en italiano: p significa piano, suave, y f significa forte, fuerte.",
+      "El volumen depende de la velocidad, no de la fuerza: bajar la tecla más lento suena suave, más rápido, fuerte.",
+      "Para el forte usa el peso del brazo, nunca un empuje rígido de dedos u hombros."
+     ],
+     "q": "¿Qué te cuesta más, tocar muy suave o muy fuerte?",
+     "c": "Toca el Himno a la alegría una vez en p y otra en f, con el mismo ritmo y los hombros sueltos."
+    },
+    "fr": {
+     "t": "Nuances : piano et forte",
+     "g": "Jouer doux et fort volontairement et lire les signes correspondants.",
+     "p": [
+      "Les nuances s'écrivent en italien : p veut dire piano, doux, et f veut dire forte, fort.",
+      "Le volume vient de la vitesse, pas de la force : une touche enfoncée lentement sonne doux, vite sonne fort.",
+      "Pour le forte, utilise le poids du bras, jamais une poussée raide des doigts ou des épaules."
+     ],
+     "q": "Qu'est-ce qui est le plus dur pour toi : jouer très doux ou très fort ?",
+     "c": "Joue l'Hymne à la joie une fois p et une fois f, avec exactement le même rythme et les épaules détendues."
+    },
+    "it": {
+     "t": "Dinamica: piano e forte",
+     "g": "Suonare piano e forte di proposito e leggerne i simboli.",
+     "p": [
+      "Le dinamiche si scrivono in italiano: p significa piano, e f significa forte.",
+      "Il volume dipende dalla velocità, non dalla forza: abbassare il tasto lentamente dà piano, velocemente dà forte.",
+      "Per il forte usa il peso del braccio, mai una spinta rigida di dita o spalle."
+     ],
+     "q": "Ti riesce più difficile suonare pianissimo o fortissimo?",
+     "c": "Suona l'Inno alla gioia una volta p e una volta f, con lo stesso identico ritmo e le spalle rilassate."
+    },
+    "pt": {
+     "t": "Dinâmica: piano e forte",
+     "g": "Tocar suave e forte de propósito e ler os respetivos símbolos.",
+     "p": [
+      "A dinâmica escreve-se em italiano: p quer dizer piano, suave, e f quer dizer forte.",
+      "O volume vem da velocidade, não da força: carregar a tecla devagar soa suave, depressa soa forte.",
+      "Para o forte usa o peso do braço, nunca um empurrão rígido dos dedos ou dos ombros."
+     ],
+     "q": "O que te custa mais, tocar muito suave ou muito forte?",
+     "c": "Toca o Hino da Alegria uma vez em p e outra em f, com o mesmo ritmo e os ombros descontraídos."
+    },
+    "pt_BR": {
+     "t": "Dinâmica: piano e forte",
+     "g": "Tocar suave e forte de propósito e ler os símbolos de cada um.",
+     "p": [
+      "A dinâmica é escrita em italiano: p quer dizer piano, suave, e f quer dizer forte.",
+      "O volume vem da velocidade, não da força: apertar a tecla devagar soa suave, rápido soa forte.",
+      "Para o forte use o peso do braço, nunca um empurrão rígido dos dedos ou dos ombros."
+     ],
+     "q": "O que é mais difícil para você, tocar bem suave ou bem forte?",
+     "c": "Toque a Ode à Alegria uma vez em p e outra em f, com o mesmo ritmo e os ombros relaxados."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Legato playing",
+     "g": "Connect notes smoothly from one finger to the next, like a singing line.",
+     "p": [
+      "Legato means bound together: each note lasts until the very moment the next one sounds.",
+      "Think of walking: one finger goes down as the previous one comes up, with no gap and no overlap.",
+      "In sheet music a curved line called a slur over a group of notes asks for legato."
+     ],
+     "q": "Can you hear the gaps when your notes are not quite connected?",
+     "c": "Play C D E F G and back slowly, listening only for seamless joins, then try the same with the left hand."
+    },
+    "de": {
+     "t": "Legato spielen",
+     "g": "Töne weich von Finger zu Finger verbinden, wie eine gesungene Linie.",
+     "p": [
+      "Legato heißt gebunden: Jeder Ton klingt genau bis zu dem Moment, in dem der nächste erklingt.",
+      "Denk ans Gehen: Ein Finger geht runter, während der vorige hochkommt, ohne Lücke und ohne Überlappung.",
+      "In den Noten verlangt ein Bogen über einer Notengruppe, der Legatobogen, gebundenes Spiel."
+     ],
+     "q": "Hörst du die Lücken, wenn deine Töne nicht ganz verbunden sind?",
+     "c": "Spiel C D E F G und zurück langsam, hör nur auf nahtlose Übergänge, dann dasselbe mit links."
+    },
+    "es": {
+     "t": "Tocar legato",
+     "g": "Unir las notas con suavidad de un dedo a otro, como una línea cantada.",
+     "p": [
+      "Legato significa ligado: cada nota dura justo hasta el instante en que suena la siguiente.",
+      "Piensa en caminar: un dedo baja mientras el anterior sube, sin hueco y sin solaparse.",
+      "En la partitura, una línea curva sobre un grupo de notas, la ligadura de expresión, pide legato."
+     ],
+     "q": "¿Oyes los huecos cuando tus notas no están del todo unidas?",
+     "c": "Toca Do Re Mi Fa Sol y vuelve despacio escuchando solo que las uniones no se noten; luego con la izquierda."
+    },
+    "fr": {
+     "t": "Jouer legato",
+     "g": "Relier les notes en douceur d'un doigt à l'autre, comme une ligne chantée.",
+     "p": [
+      "Legato veut dire lié : chaque note dure jusqu'au moment précis où la suivante sonne.",
+      "Pense à la marche : un doigt descend pendant que le précédent remonte, sans trou ni chevauchement.",
+      "Sur la partition, une ligne courbe au-dessus d'un groupe de notes, la liaison, demande le legato."
+     ],
+     "q": "Entends-tu les trous quand tes notes ne sont pas tout à fait liées ?",
+     "c": "Joue do ré mi fa sol et retour lentement en n'écoutant que la liaison, puis pareil à la main gauche."
+    },
+    "it": {
+     "t": "Suonare legato",
+     "g": "Collegare le note in modo morbido da un dito all'altro, come una linea cantata.",
+     "p": [
+      "Legato significa unito: ogni nota dura esattamente fino al momento in cui suona la successiva.",
+      "Pensa al camminare: un dito scende mentre il precedente sale, senza buchi e senza sovrapposizioni.",
+      "Nello spartito una linea curva sopra un gruppo di note, la legatura di portamento, chiede il legato."
+     ],
+     "q": "Senti i buchi quando le tue note non sono ben collegate?",
+     "c": "Suona Do Re Mi Fa Sol e ritorno lentamente ascoltando solo i passaggi senza buchi, poi con la sinistra."
+    },
+    "pt": {
+     "t": "Tocar legato",
+     "g": "Ligar as notas suavemente de um dedo para o outro, como uma linha cantada.",
+     "p": [
+      "Legato quer dizer ligado: cada nota dura exatamente até ao momento em que a seguinte soa.",
+      "Pensa em caminhar: um dedo desce enquanto o anterior sobe, sem espaço e sem sobreposição.",
+      "Na partitura, uma linha curva por cima de um grupo de notas, a ligadura de expressão, pede legato."
+     ],
+     "q": "Ouves os espaços quando as tuas notas não estão bem ligadas?",
+     "c": "Toca dó ré mi fá sol e volta devagar, ouvindo só se as ligações são perfeitas; depois com a esquerda."
+    },
+    "pt_BR": {
+     "t": "Tocando legato",
+     "g": "Ligar as notas suavemente de um dedo para o outro, como uma linha cantada.",
+     "p": [
+      "Legato quer dizer ligado: cada nota dura exatamente até o momento em que a próxima soa.",
+      "Pense em caminhar: um dedo desce enquanto o anterior sobe, sem buraco e sem sobreposição.",
+      "Na partitura, uma linha curva sobre um grupo de notas, a ligadura de expressão, pede legato."
+     ],
+     "q": "Você ouve os buracos quando suas notas não estão bem ligadas?",
+     "c": "Toque dó ré mi fá sol e volte devagar, ouvindo só se as ligações ficam perfeitas; depois com a esquerda."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staccato playing",
+     "g": "Play short, detached notes with a light bounce from the wrist.",
+     "p": [
+      "Staccato is shown by a dot above or below the note head and means short and separated.",
+      "Release the key quickly with a small, light bounce, as if the key were hot, but keep the beat steady.",
+      "Staccato shortens the sound, not the beat: a staccato quarter note still takes a full beat of time."
+     ],
+     "q": "Which do you enjoy more, smooth legato or bouncy staccato?",
+     "c": "Play C D E F G legato, then staccato, then alternate one bar of each, keeping the same tempo."
+    },
+    "de": {
+     "t": "Staccato spielen",
+     "g": "Kurze, abgesetzte Töne mit einem leichten Federn aus dem Handgelenk spielen.",
+     "p": [
+      "Staccato wird durch einen Punkt über oder unter dem Notenkopf angezeigt und heißt kurz und abgesetzt.",
+      "Lass die Taste schnell mit einem kleinen, leichten Federn los, als wäre sie heiß, aber halt den Puls.",
+      "Staccato verkürzt den Klang, nicht den Schlag: Eine Staccato-Viertel dauert trotzdem einen ganzen Schlag."
+     ],
+     "q": "Was magst du lieber, weiches Legato oder federndes Staccato?",
+     "c": "Spiel C D E F G legato, dann staccato, dann abwechselnd je einen Takt, im gleichen Tempo."
+    },
+    "es": {
+     "t": "Tocar staccato",
+     "g": "Tocar notas cortas y separadas con un ligero rebote de muñeca.",
+     "p": [
+      "El staccato se indica con un punto encima o debajo de la cabeza de la nota y significa corto y separado.",
+      "Suelta la tecla rápido con un rebote pequeño y ligero, como si quemara, pero mantén el pulso.",
+      "El staccato acorta el sonido, no el pulso: una negra en staccato sigue ocupando un pulso entero."
+     ],
+     "q": "¿Qué te gusta más, el legato suave o el staccato saltarín?",
+     "c": "Toca Do Re Mi Fa Sol legato, luego staccato, y luego alterna un compás de cada, sin cambiar el tempo."
+    },
+    "fr": {
+     "t": "Jouer staccato",
+     "g": "Jouer des notes courtes et détachées avec un léger rebond du poignet.",
+     "p": [
+      "Le staccato s'indique par un point au-dessus ou au-dessous de la tête de note : court et détaché.",
+      "Relâche la touche vite avec un petit rebond léger, comme si elle était brûlante, en gardant la pulsation.",
+      "Le staccato raccourcit le son, pas le temps : une noire staccato occupe toujours un temps entier."
+     ],
+     "q": "Que préfères-tu, le legato fluide ou le staccato rebondissant ?",
+     "c": "Joue do ré mi fa sol legato, puis staccato, puis alterne une mesure de chaque, au même tempo."
+    },
+    "it": {
+     "t": "Suonare staccato",
+     "g": "Suonare note brevi e staccate con un leggero rimbalzo del polso.",
+     "p": [
+      "Lo staccato si indica con un punto sopra o sotto la testa della nota e significa breve e separato.",
+      "Rilascia il tasto subito con un piccolo rimbalzo leggero, come se scottasse, ma tieni la pulsazione.",
+      "Lo staccato accorcia il suono, non il movimento: una semiminima staccata occupa comunque un movimento."
+     ],
+     "q": "Ti piace di più il legato morbido o lo staccato saltellante?",
+     "c": "Suona Do Re Mi Fa Sol legato, poi staccato, poi alterna una battuta per tipo, sempre allo stesso tempo."
+    },
+    "pt": {
+     "t": "Tocar staccato",
+     "g": "Tocar notas curtas e destacadas com um leve ressalto do pulso.",
+     "p": [
+      "O staccato indica-se com um ponto por cima ou por baixo da cabeça da nota e quer dizer curto e separado.",
+      "Larga a tecla depressa com um ressalto pequeno e leve, como se estivesse quente, mas mantém a pulsação.",
+      "O staccato encurta o som, não o tempo: uma semínima em staccato continua a ocupar um tempo inteiro."
+     ],
+     "q": "De que gostas mais, do legato suave ou do staccato saltitante?",
+     "c": "Toca dó ré mi fá sol em legato, depois em staccato, e depois alterna um compasso de cada, no mesmo andamento."
+    },
+    "pt_BR": {
+     "t": "Tocando staccato",
+     "g": "Tocar notas curtas e destacadas com um leve quique do punho.",
+     "p": [
+      "O staccato é indicado por um ponto acima ou abaixo da cabeça da nota e quer dizer curto e separado.",
+      "Solte a tecla rápido com um quique pequeno e leve, como se estivesse quente, mas mantenha a pulsação.",
+      "O staccato encurta o som, não o tempo: uma semínima em staccato continua ocupando um tempo inteiro."
+     ],
+     "q": "Do que você gosta mais, do legato suave ou do staccato saltitante?",
+     "c": "Toque dó ré mi fá sol em legato, depois em staccato, e depois alterne um compasso de cada, no mesmo andamento."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a metronome",
+     "g": "Practise slowly and steadily with a metronome click as your honest partner.",
+     "p": [
+      "A metronome clicks a steady beat; the number shows beats per minute, so 60 means one click per second.",
+      "Start at a tempo where you can play without mistakes, often 60 or slower, and play on each click.",
+      "Raise the speed only a few clicks at a time, and only after several clean repetitions."
+     ],
+     "q": "Have you ever practised with a metronome or a drum loop?",
+     "c": "Set a metronome or free app to 60 and play C D E F G and back on the clicks; then try 66."
+    },
+    "de": {
+     "t": "Mit dem Metronom üben",
+     "g": "Langsam und gleichmäßig üben, mit dem Metronomklick als ehrlichem Partner.",
+     "p": [
+      "Ein Metronom klickt einen gleichmäßigen Puls; die Zahl zeigt Schläge pro Minute, 60 ist ein Klick pro Sekunde.",
+      "Beginne in einem Tempo, in dem du fehlerfrei spielst, oft 60 oder langsamer, und spiel auf jeden Klick.",
+      "Erhöhe das Tempo nur um wenige Schläge und erst nach mehreren sauberen Durchgängen."
+     ],
+     "q": "Hast du schon mal mit Metronom oder Drumloop geübt?",
+     "c": "Stell ein Metronom oder eine App auf 60 und spiel C D E F G und zurück auf die Klicks, dann auf 66."
+    },
+    "es": {
+     "t": "Usar el metrónomo",
+     "g": "Practicar despacio y con regularidad con el clic del metrónomo como compañero sincero.",
+     "p": [
+      "El metrónomo marca un pulso regular; el número indica pulsos por minuto: 60 es un clic por segundo.",
+      "Empieza a un tempo en el que no fallas, a menudo 60 o menos, y toca en cada clic.",
+      "Sube la velocidad solo unos pocos clics cada vez y tras varias repeticiones limpias."
+     ],
+     "q": "¿Has practicado alguna vez con metrónomo o con una base de batería?",
+     "c": "Pon un metrónomo o una app a 60 y toca Do Re Mi Fa Sol y vuelta con los clics; después prueba a 66."
+    },
+    "fr": {
+     "t": "Utiliser un métronome",
+     "g": "Travailler lentement et régulièrement avec le clic du métronome comme partenaire honnête.",
+     "p": [
+      "Le métronome donne une pulsation régulière ; le chiffre indique les battements par minute, 60 = un clic par seconde.",
+      "Commence à un tempo où tu ne fais pas d'erreurs, souvent 60 ou moins, et joue sur chaque clic.",
+      "N'augmente la vitesse que de quelques crans à la fois, et après plusieurs passages propres."
+     ],
+     "q": "As-tu déjà travaillé avec un métronome ou une boucle de batterie ?",
+     "c": "Règle un métronome ou une appli sur 60 et joue do ré mi fa sol et retour sur les clics, puis essaie 66."
+    },
+    "it": {
+     "t": "Usare il metronomo",
+     "g": "Esercitarsi piano e con regolarità con il clic del metronomo come compagno sincero.",
+     "p": [
+      "Il metronomo batte un tempo regolare; il numero indica i battiti al minuto: 60 è un clic al secondo.",
+      "Inizia a un tempo in cui non sbagli, spesso 60 o meno, e suona su ogni clic.",
+      "Aumenta la velocità di pochi battiti alla volta e solo dopo varie ripetizioni pulite."
+     ],
+     "q": "Ti sei mai esercitato con un metronomo o una base di batteria?",
+     "c": "Imposta un metronomo o un'app a 60 e suona Do Re Mi Fa Sol e ritorno sui clic, poi prova a 66."
+    },
+    "pt": {
+     "t": "Usar o metrónomo",
+     "g": "Praticar devagar e com regularidade com o clique do metrónomo como parceiro honesto.",
+     "p": [
+      "O metrónomo marca uma pulsação regular; o número indica batidas por minuto: 60 é um clique por segundo.",
+      "Começa num andamento em que não falhas, muitas vezes 60 ou menos, e toca em cada clique.",
+      "Sobe a velocidade só uns poucos valores de cada vez e depois de várias repetições limpas."
+     ],
+     "q": "Já alguma vez praticaste com metrónomo ou com uma base de bateria?",
+     "c": "Põe um metrónomo ou uma app a 60 e toca dó ré mi fá sol e volta nos cliques; depois experimenta 66."
+    },
+    "pt_BR": {
+     "t": "Usando o metrônomo",
+     "g": "Praticar devagar e com regularidade com o clique do metrônomo como parceiro sincero.",
+     "p": [
+      "O metrônomo marca uma pulsação regular; o número indica batidas por minuto: 60 é um clique por segundo.",
+      "Comece num andamento em que você não erra, muitas vezes 60 ou menos, e toque em cada clique.",
+      "Aumente a velocidade só alguns pontos por vez e depois de várias repetições limpas."
+     ],
+     "q": "Você já praticou com metrônomo ou com uma base de bateria?",
+     "c": "Coloque um metrônomo ou app em 60 e toque dó ré mi fá sol e volta nos cliques; depois tente 66."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hands together for the first time",
+     "g": "Play simple pieces with one note at a time in each hand, both hands together.",
+     "p": [
+      "Start with the hands in parallel: both play C D E F G at the same time, an octave apart.",
+      "Then try contrary motion: both thumbs on middle C, moving outward and back, a mirror image.",
+      "Practise each hand alone first, then together very slowly; watch the music, not your hands."
+     ],
+     "q": "Does playing hands together feel like patting your head and rubbing your tummy?",
+     "c": "Play C to G and back in parallel motion, then in contrary motion, three times each at a slow tempo."
+    },
+    "de": {
+     "t": "Zum ersten Mal beidhändig",
+     "g": "Einfache Stücke mit je einem Ton pro Hand beidhändig zusammen spielen.",
+     "p": [
+      "Beginne parallel: Beide Hände spielen gleichzeitig C D E F G, eine Oktave auseinander.",
+      "Dann Gegenbewegung: Beide Daumen aufs mittlere C, die Hände gehen nach außen und zurück, wie ein Spiegelbild.",
+      "Übe jede Hand erst allein, dann zusammen ganz langsam; schau in die Noten, nicht auf die Hände."
+     ],
+     "q": "Fühlt sich beidhändig spielen an, wie gleichzeitig Kopf tätscheln und Bauch reiben?",
+     "c": "Spiel C bis G und zurück parallel, dann in Gegenbewegung, je dreimal in langsamem Tempo."
+    },
+    "es": {
+     "t": "Manos juntas por primera vez",
+     "g": "Tocar piezas sencillas con una nota cada vez en cada mano, las dos a la vez.",
+     "p": [
+      "Empieza en paralelo: las dos manos tocan Do Re Mi Fa Sol a la vez, a una octava de distancia.",
+      "Luego movimiento contrario: los dos pulgares en el Do central, abriéndose y volviendo como un espejo.",
+      "Practica primero cada mano sola y luego juntas muy despacio; mira la partitura, no las manos."
+     ],
+     "q": "¿Tocar con las dos manos te parece como darte palmaditas en la cabeza y frotarte la barriga a la vez?",
+     "c": "Toca de Do a Sol y vuelta en movimiento paralelo y luego contrario, tres veces cada uno, despacio."
+    },
+    "fr": {
+     "t": "Mains ensemble pour la première fois",
+     "g": "Jouer des pièces simples avec une note à la fois dans chaque main, mains ensemble.",
+     "p": [
+      "Commence en mouvement parallèle : les deux mains jouent do ré mi fa sol en même temps, à l'octave.",
+      "Puis en mouvement contraire : les deux pouces sur le do central, les mains s'écartent et reviennent en miroir.",
+      "Travaille d'abord chaque main seule, puis ensemble très lentement ; regarde la partition, pas tes mains."
+     ],
+     "q": "Jouer mains ensemble, c'est un peu comme se tapoter la tête en se frottant le ventre ?",
+     "c": "Joue de do à sol et retour en mouvement parallèle, puis contraire, trois fois chacun, lentement."
+    },
+    "it": {
+     "t": "Mani insieme per la prima volta",
+     "g": "Suonare brani semplici con una nota alla volta per mano, a mani unite.",
+     "p": [
+      "Inizia per moto parallelo: entrambe le mani suonano Do Re Mi Fa Sol insieme, a un'ottava di distanza.",
+      "Poi moto contrario: entrambi i pollici sul Do centrale, le mani si allontanano e tornano come allo specchio.",
+      "Studia prima ogni mano da sola, poi insieme molto lentamente; guarda lo spartito, non le mani."
+     ],
+     "q": "Suonare a mani unite ti sembra come darsi colpetti in testa e massaggiarsi la pancia insieme?",
+     "c": "Suona da Do a Sol e ritorno per moto parallelo e poi contrario, tre volte ciascuno, lentamente."
+    },
+    "pt": {
+     "t": "Mãos juntas pela primeira vez",
+     "g": "Tocar peças simples com uma nota de cada vez em cada mão, as duas ao mesmo tempo.",
+     "p": [
+      "Começa em movimento paralelo: as duas mãos tocam dó ré mi fá sol ao mesmo tempo, à distância de uma oitava.",
+      "Depois movimento contrário: os dois polegares no dó central, as mãos afastam-se e voltam como num espelho.",
+      "Pratica primeiro cada mão sozinha e depois juntas muito devagar; olha para a partitura, não para as mãos."
+     ],
+     "q": "Tocar com as duas mãos parece-te como dar palmadinhas na cabeça e esfregar a barriga ao mesmo tempo?",
+     "c": "Toca de dó a sol e volta em movimento paralelo e depois contrário, três vezes cada, devagar."
+    },
+    "pt_BR": {
+     "t": "Mãos juntas pela primeira vez",
+     "g": "Tocar peças simples com uma nota por vez em cada mão, as duas ao mesmo tempo.",
+     "p": [
+      "Comece em movimento paralelo: as duas mãos tocam dó ré mi fá sol juntas, a uma oitava de distância.",
+      "Depois movimento contrário: os dois polegares no dó central, as mãos se afastam e voltam como num espelho.",
+      "Pratique primeiro cada mão sozinha e depois juntas bem devagar; olhe a partitura, não as mãos."
+     ],
+     "q": "Tocar com as duas mãos parece bater na cabeça e esfregar a barriga ao mesmo tempo?",
+     "c": "Toque de dó a sol e volte em movimento paralelo e depois contrário, três vezes cada, devagar."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good practice habits",
+     "g": "Build a practice routine of short daily sessions, slow work and small, clear goals.",
+     "p": [
+      "Fifteen to twenty focused minutes every day help more than one long session once a week.",
+      "Practise slowly enough to play correctly; repeating mistakes at speed only trains the mistakes.",
+      "Give each session one small goal, like two clean bars, and fix hard spots instead of always starting over."
+     ],
+     "q": "What time of day could you set aside for the piano?",
+     "c": "Plan tomorrow's session: write its length, one warm-up, one goal and one piece to play just for fun."
+    },
+    "de": {
+     "t": "Gute Übegewohnheiten",
+     "g": "Eine Übe-Routine mit kurzen täglichen Einheiten, langsamem Üben und kleinen, klaren Zielen aufbauen.",
+     "p": [
+      "Fünfzehn bis zwanzig konzentrierte Minuten täglich bringen mehr als eine lange Einheit pro Woche.",
+      "Übe so langsam, dass du richtig spielst; Fehler im Tempo zu wiederholen trainiert nur die Fehler.",
+      "Gib jeder Einheit ein kleines Ziel, etwa zwei saubere Takte, und übe schwere Stellen gezielt statt immer von vorn."
+     ],
+     "q": "Welche Tageszeit könntest du fürs Klavier reservieren?",
+     "c": "Plane deine Übezeit für morgen: Dauer, eine Aufwärmübung, ein Ziel und ein Stück nur zum Spaß."
+    },
+    "es": {
+     "t": "Buenos hábitos de práctica",
+     "g": "Crear una rutina con sesiones diarias cortas, trabajo lento y metas pequeñas y claras.",
+     "p": [
+      "De quince a veinte minutos concentrados cada día ayudan más que una sesión larga a la semana.",
+      "Practica lo bastante lento para tocar bien; repetir errores a velocidad solo entrena los errores.",
+      "Da a cada sesión una meta pequeña, como dos compases limpios, y trabaja los pasajes difíciles sin empezar siempre desde el principio."
+     ],
+     "q": "¿A qué hora del día podrías reservar un rato para el piano?",
+     "c": "Planifica la sesión de mañana: duración, un calentamiento, una meta y una pieza solo por diversión."
+    },
+    "fr": {
+     "t": "De bonnes habitudes de travail",
+     "g": "Construire une routine de courtes séances quotidiennes, de travail lent et de petits objectifs clairs.",
+     "p": [
+      "Quinze à vingt minutes concentrées chaque jour valent plus qu'une longue séance par semaine.",
+      "Joue assez lentement pour jouer juste ; répéter des erreurs à vitesse ne fait qu'entraîner les erreurs.",
+      "Donne à chaque séance un petit but, comme deux mesures propres, et travaille les passages durs au lieu de tout reprendre."
+     ],
+     "q": "À quel moment de la journée pourrais-tu réserver du temps au piano ?",
+     "c": "Prépare ta séance de demain : durée, un échauffement, un objectif et un morceau juste pour le plaisir."
+    },
+    "it": {
+     "t": "Buone abitudini di studio",
+     "g": "Costruire una routine di brevi sessioni quotidiane, lavoro lento e obiettivi piccoli e chiari.",
+     "p": [
+      "Quindici-venti minuti concentrati ogni giorno aiutano più di una lunga sessione alla settimana.",
+      "Studia abbastanza lentamente da suonare giusto; ripetere errori a velocità allena solo gli errori.",
+      "Dai a ogni sessione un piccolo obiettivo, come due battute pulite, e lavora sui punti difficili invece di ricominciare."
+     ],
+     "q": "In quale momento della giornata potresti dedicare del tempo al pianoforte?",
+     "c": "Pianifica la sessione di domani: durata, un riscaldamento, un obiettivo e un brano solo per divertimento."
+    },
+    "pt": {
+     "t": "Bons hábitos de estudo",
+     "g": "Criar uma rotina de sessões diárias curtas, trabalho lento e objetivos pequenos e claros.",
+     "p": [
+      "Quinze a vinte minutos concentrados todos os dias ajudam mais do que uma sessão longa por semana.",
+      "Pratica devagar o suficiente para tocar certo; repetir erros depressa só treina os erros.",
+      "Dá a cada sessão um objetivo pequeno, como dois compassos limpos, e trabalha as partes difíceis em vez de recomeçar."
+     ],
+     "q": "A que hora do dia podias reservar tempo para o piano?",
+     "c": "Planeia a sessão de amanhã: duração, um aquecimento, um objetivo e uma peça só por diversão."
+    },
+    "pt_BR": {
+     "t": "Bons hábitos de estudo",
+     "g": "Criar uma rotina de sessões diárias curtas, trabalho lento e metas pequenas e claras.",
+     "p": [
+      "Quinze a vinte minutos concentrados todo dia ajudam mais do que uma sessão longa por semana.",
+      "Pratique devagar o bastante para tocar certo; repetir erros na velocidade só treina os erros.",
+      "Dê a cada sessão uma meta pequena, como dois compassos limpos, e trabalhe os trechos difíceis em vez de recomeçar."
+     ],
+     "q": "Em que horário do dia você poderia reservar um tempo para o piano?",
+     "c": "Planeje a sessão de amanhã: duração, um aquecimento, uma meta e uma peça só por diversão."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: your first month",
+     "g": "Look back at your first month: note names, reading and a hands-together piece.",
+     "p": [
+      "You can now find every white key, read notes around middle C in both clefs and count simple rhythms.",
+      "You know legato, staccato, p and f, and how to practise slowly with a metronome.",
+      "Reviewing is not going backwards: it turns what you learned into something you can do without thinking."
+     ],
+     "q": "What are you most proud of after your first month at the piano?",
+     "c": "Name 10 random white keys fast, then play Ode to Joy hands together in parallel, slowly, from start to end."
+    },
+    "de": {
+     "t": "Wiederholung: dein erster Monat",
+     "g": "Auf den ersten Monat zurückblicken: Tonnamen, Notenlesen und ein beidhändiges Stück.",
+     "p": [
+      "Du findest jetzt jede weiße Taste, liest Noten rund ums mittlere C in beiden Schlüsseln und zählst einfache Rhythmen.",
+      "Du kennst Legato, Staccato, p und f und weißt, wie man langsam mit Metronom übt.",
+      "Wiederholen ist kein Rückschritt: Es macht Gelerntes zu etwas, das du ohne Nachdenken kannst."
+     ],
+     "q": "Worauf bist du nach deinem ersten Monat am Klavier am stolzesten?",
+     "c": "Benenne schnell 10 zufällige weiße Tasten, dann spiel die Ode an die Freude beidhändig parallel, langsam, ganz durch."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasar tu primer mes: nombres de notas, lectura y una pieza con las dos manos.",
+     "p": [
+      "Ya encuentras todas las teclas blancas, lees notas alrededor del Do central en ambas claves y cuentas ritmos sencillos.",
+      "Conoces el legato, el staccato, p y f, y sabes practicar despacio con metrónomo.",
+      "Repasar no es retroceder: convierte lo aprendido en algo que haces sin pensar."
+     ],
+     "q": "¿De qué te sientes más orgulloso tras tu primer mes al piano?",
+     "c": "Nombra rápido 10 teclas blancas al azar y toca el Himno a la alegría con las dos manos en paralelo, despacio y entero."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois",
+     "g": "Faire le point sur ton premier mois : noms des notes, lecture et une pièce mains ensemble.",
+     "p": [
+      "Tu trouves toutes les touches blanches, tu lis les notes autour du do central dans les deux clés et comptes des rythmes simples.",
+      "Tu connais le legato, le staccato, p et f, et tu sais travailler lentement avec un métronome.",
+      "Réviser n'est pas reculer : cela transforme ce que tu as appris en gestes qui viennent tout seuls."
+     ],
+     "q": "De quoi es-tu le plus fier après ton premier mois de piano ?",
+     "c": "Nomme vite 10 touches blanches au hasard, puis joue l'Hymne à la joie mains ensemble en parallèle, lentement, en entier."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassare il primo mese: nomi delle note, lettura e un brano a mani unite.",
+     "p": [
+      "Ora trovi ogni tasto bianco, leggi le note intorno al Do centrale in entrambe le chiavi e conti ritmi semplici.",
+      "Conosci legato, staccato, p e f, e sai studiare lentamente con il metronomo.",
+      "Ripassare non è tornare indietro: trasforma ciò che hai imparato in qualcosa che fai senza pensarci."
+     ],
+     "q": "Di cosa sei più orgoglioso dopo il tuo primo mese al pianoforte?",
+     "c": "Nomina in fretta 10 tasti bianchi a caso, poi suona l'Inno alla gioia a mani unite per moto parallelo, piano, tutto intero."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Rever o primeiro mês: nomes das notas, leitura e uma peça a duas mãos.",
+     "p": [
+      "Já encontras todas as teclas brancas, lês notas à volta do dó central nas duas claves e contas ritmos simples.",
+      "Conheces o legato, o staccato, p e f, e sabes praticar devagar com metrónomo.",
+      "Rever não é andar para trás: transforma o que aprendeste em algo que fazes sem pensar."
+     ],
+     "q": "Do que tens mais orgulho depois do teu primeiro mês ao piano?",
+     "c": "Diz depressa o nome de 10 teclas brancas ao acaso e toca o Hino da Alegria a duas mãos em paralelo, devagar, do início ao fim."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Revisar o primeiro mês: nomes das notas, leitura e uma peça com as duas mãos.",
+     "p": [
+      "Você já acha todas as teclas brancas, lê notas em volta do dó central nas duas claves e conta ritmos simples.",
+      "Você conhece legato, staccato, p e f, e sabe praticar devagar com metrônomo.",
+      "Revisar não é voltar atrás: transforma o que você aprendeu em algo que faz sem pensar."
+     ],
+     "q": "Do que você mais se orgulha depois do seu primeiro mês ao piano?",
+     "c": "Diga rápido o nome de 10 teclas brancas aleatórias e toque a Ode à Alegria com as duas mãos em paralelo, devagar, até o fim."
+    }
+   }
+  }
+ ]
+}

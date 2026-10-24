@@ -1,0 +1,835 @@
+{
+ "topic": "creative_writing",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strong verbs, fewer adverbs",
+     "g": "Swap weak verb-plus-adverb pairs for one strong verb that adds energy and precision.",
+     "p": [
+      "'Walked slowly' becomes 'shuffled', 'strolled' or 'ambled', each with its own mood.",
+      "A strong verb shows how something happens, so the adverb is often not needed.",
+      "Hunt for words ending in -ly and ask if a better verb can replace them."
+     ],
+     "q": "Which verb do you think is the most fun word in your language?",
+     "c": "Write five sentences with 'went quickly' or 'said loudly', then rewrite each with one strong verb."
+    },
+    "de": {
+     "t": "Starke Verben, weniger Adverbien",
+     "g": "Ersetze schwache Verb-Adverb-Paare durch ein starkes Verb, das Energie und Genauigkeit bringt.",
+     "p": [
+      "Aus ‚langsam gehen‘ wird ‚schlurfen‘, ‚schlendern‘ oder ‚bummeln‘, jedes mit eigener Stimmung.",
+      "Ein starkes Verb zeigt das Wie schon selbst, das Adverb wird oft überflüssig.",
+      "Such nach Wörtern wie ‚schnell‘ oder ‚laut‘ und frag, ob ein besseres Verb sie ersetzt."
+     ],
+     "q": "Welches Verb ist für dich das schönste Wort deiner Sprache?",
+     "c": "Schreib fünf Sätze mit ‚ging schnell‘ oder ‚sagte laut‘ und ersetze jedes Paar durch ein starkes Verb."
+    },
+    "es": {
+     "t": "Verbos fuertes, menos adverbios",
+     "g": "Cambia parejas de verbo débil y adverbio por un verbo fuerte que aporte energía y precisión.",
+     "p": [
+      "«Caminar despacio» se vuelve «arrastrar los pies», «pasear» o «deambular», cada uno con su tono.",
+      "Un verbo fuerte ya muestra el cómo, así que el adverbio suele sobrar.",
+      "Busca palabras en -mente y pregúntate si un verbo mejor puede sustituirlas."
+     ],
+     "q": "¿Qué verbo te parece la palabra más divertida de tu idioma?",
+     "c": "Escribe cinco frases con «fue rápidamente» o «dijo en voz alta» y reescribe cada una con un verbo fuerte."
+    },
+    "fr": {
+     "t": "Des verbes forts, moins d'adverbes",
+     "g": "Remplace les paires verbe faible plus adverbe par un verbe fort, plus précis et énergique.",
+     "p": [
+      "« Marcher lentement » devient « traîner », « flâner » ou « déambuler », chacun avec son ambiance.",
+      "Un verbe fort montre déjà le comment, l'adverbe devient souvent inutile.",
+      "Traque les mots en -ment et demande-toi si un meilleur verbe peut les remplacer."
+     ],
+     "q": "Quel verbe est pour toi le mot le plus amusant de ta langue ?",
+     "c": "Écris cinq phrases avec « alla rapidement » ou « dit fort », puis réécris chacune avec un seul verbe fort."
+    },
+    "it": {
+     "t": "Verbi forti, meno avverbi",
+     "g": "Sostituisci le coppie verbo debole più avverbio con un verbo forte, più preciso ed energico.",
+     "p": [
+      "«Camminare lentamente» diventa «trascinarsi», «passeggiare» o «gironzolare», ognuno col suo tono.",
+      "Un verbo forte mostra già il come, quindi l'avverbio spesso non serve.",
+      "Cerca le parole in -mente e chiediti se un verbo migliore può sostituirle."
+     ],
+     "q": "Qual è secondo te il verbo più divertente della tua lingua?",
+     "c": "Scrivi cinque frasi con «andò velocemente» o «disse ad alta voce» e riscrivile con un verbo forte."
+    },
+    "pt": {
+     "t": "Verbos fortes, menos advérbios",
+     "g": "Troca pares de verbo fraco e advérbio por um verbo forte que traga energia e precisão.",
+     "p": [
+      "«Andar devagar» passa a «arrastar-se», «passear» ou «vaguear», cada um com o seu tom.",
+      "Um verbo forte já mostra o como, por isso o advérbio muitas vezes sobra.",
+      "Procura palavras terminadas em -mente e pergunta se um verbo melhor as substitui."
+     ],
+     "q": "Que verbo achas ser a palavra mais divertida da tua língua?",
+     "c": "Escreve cinco frases com «foi rapidamente» ou «disse alto» e reescreve cada uma com um verbo forte."
+    },
+    "pt_BR": {
+     "t": "Verbos fortes, menos advérbios",
+     "g": "Troque pares de verbo fraco e advérbio por um verbo forte que traga energia e precisão.",
+     "p": [
+      "«Andar devagar» vira «arrastar os pés», «passear» ou «perambular», cada um com seu clima.",
+      "Um verbo forte já mostra o como, então o advérbio muitas vezes sobra.",
+      "Procure palavras terminadas em -mente e pergunte se um verbo melhor pode substituí-las."
+     ],
+     "q": "Qual verbo você acha a palavra mais divertida do seu idioma?",
+     "c": "Escreva cinco frases com «foi rapidamente» ou «falou alto» e reescreva cada uma com um verbo forte."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Concrete nouns",
+     "g": "Replace vague words like 'thing' or 'stuff' with nouns readers can picture.",
+     "p": [
+      "'Stuff on the shelf' says little; 'jars of buttons and old postcards' paints a picture.",
+      "Concrete nouns are things you could touch, photograph or point to.",
+      "Specific names, like 'oak' instead of 'tree', add colour and trust."
+     ],
+     "q": "What would someone find in your bag right now, named exactly?",
+     "c": "Find every 'thing' or 'stuff' in a paragraph you wrote and swap each for a concrete noun."
+    },
+    "de": {
+     "t": "Konkrete Substantive",
+     "g": "Ersetze vage Wörter wie ‚Ding‘ oder ‚Zeug‘ durch Substantive, die man sich vorstellen kann.",
+     "p": [
+      "‚Zeug im Regal‘ sagt wenig, ‚Gläser voller Knöpfe und alte Postkarten‘ malt ein Bild.",
+      "Konkrete Substantive sind Dinge, die man anfassen, fotografieren oder zeigen kann.",
+      "Genaue Namen wie ‚Eiche‘ statt ‚Baum‘ bringen Farbe und Glaubwürdigkeit."
+     ],
+     "q": "Was würde man jetzt genau in deiner Tasche finden?",
+     "c": "Such in einem eigenen Absatz jedes ‚Ding‘ oder ‚Zeug‘ und ersetze es durch ein konkretes Substantiv."
+    },
+    "es": {
+     "t": "Sustantivos concretos",
+     "g": "Cambia palabras vagas como «cosa» o «cosas» por sustantivos que el lector pueda imaginar.",
+     "p": [
+      "«Cosas en la estantería» dice poco; «tarros de botones y postales viejas» pinta una imagen.",
+      "Los sustantivos concretos nombran lo que podrías tocar, fotografiar o señalar.",
+      "Los nombres específicos, como «roble» en vez de «árbol», dan color y confianza."
+     ],
+     "q": "¿Qué encontraría alguien ahora mismo en tu bolso, nombrado con exactitud?",
+     "c": "Busca cada «cosa» en un párrafo tuyo y cámbiala por un sustantivo concreto."
+    },
+    "fr": {
+     "t": "Des noms concrets",
+     "g": "Remplace les mots vagues comme « truc » ou « chose » par des noms que le lecteur peut se représenter.",
+     "p": [
+      "« Des trucs sur l'étagère » dit peu ; « des bocaux de boutons et de vieilles cartes postales » fait image.",
+      "Les noms concrets désignent ce qu'on peut toucher, photographier ou montrer du doigt.",
+      "Les noms précis, comme « chêne » au lieu d'« arbre », apportent couleur et crédibilité."
+     ],
+     "q": "Que trouverait-on dans ton sac en ce moment, nommé précisément ?",
+     "c": "Repère chaque « truc » ou « chose » dans un de tes paragraphes et remplace-le par un nom concret."
+    },
+    "it": {
+     "t": "Nomi concreti",
+     "g": "Sostituisci parole vaghe come «cosa» o «roba» con nomi che il lettore può immaginare.",
+     "p": [
+      "«Roba sulla mensola» dice poco; «barattoli di bottoni e vecchie cartoline» crea un'immagine.",
+      "I nomi concreti indicano ciò che potresti toccare, fotografare o indicare.",
+      "I nomi specifici, come «quercia» invece di «albero», danno colore e credibilità."
+     ],
+     "q": "Cosa si troverebbe adesso nella tua borsa, chiamato con precisione?",
+     "c": "Trova ogni «cosa» o «roba» in un tuo paragrafo e sostituiscila con un nome concreto."
+    },
+    "pt": {
+     "t": "Substantivos concretos",
+     "g": "Troca palavras vagas como «coisa» ou «cena» por substantivos que o leitor consiga imaginar.",
+     "p": [
+      "«Coisas na prateleira» diz pouco; «frascos de botões e postais antigos» cria uma imagem.",
+      "Substantivos concretos nomeiam o que poderias tocar, fotografar ou apontar.",
+      "Nomes específicos, como «carvalho» em vez de «árvore», dão cor e credibilidade."
+     ],
+     "q": "O que alguém encontraria agora na tua mala, dito com exatidão?",
+     "c": "Procura cada «coisa» num parágrafo teu e troca-a por um substantivo concreto."
+    },
+    "pt_BR": {
+     "t": "Substantivos concretos",
+     "g": "Troque palavras vagas como «coisa» ou «troço» por substantivos que o leitor consiga imaginar.",
+     "p": [
+      "«Coisas na estante» diz pouco; «potes de botões e cartões-postais antigos» cria uma imagem.",
+      "Substantivos concretos nomeiam o que você poderia tocar, fotografar ou apontar.",
+      "Nomes específicos, como «ipê» em vez de «árvore», dão cor e credibilidade."
+     ],
+     "q": "O que alguém encontraria agora na sua bolsa ou mochila, dito com exatidão?",
+     "c": "Procure cada «coisa» em um parágrafo seu e troque por um substantivo concreto."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Show, don't tell: the basics",
+     "g": "Turn named feelings into actions, gestures and details that let readers feel them.",
+     "p": [
+      "'She was nervous' tells; 'she twisted her ring and checked the clock again' shows.",
+      "Showing lets readers discover the feeling themselves, which feels more alive.",
+      "Telling is still useful for quick links between scenes; use both on purpose."
+     ],
+     "q": "How do you show you are happy without saying a word?",
+     "c": "Show 'He was excited' in three to four sentences of action and detail, without using the word excited."
+    },
+    "de": {
+     "t": "Zeigen statt sagen: die Grundlagen",
+     "g": "Verwandle benannte Gefühle in Handlungen, Gesten und Details, die Lesende selbst spüren.",
+     "p": [
+      "‚Sie war nervös‘ sagt es, ‚sie drehte an ihrem Ring und sah wieder zur Uhr‘ zeigt es.",
+      "Beim Zeigen entdecken Lesende das Gefühl selbst, das wirkt lebendiger.",
+      "Sagen bleibt nützlich für schnelle Übergänge, setz beides bewusst ein."
+     ],
+     "q": "Wie zeigst du, dass du glücklich bist, ohne ein Wort zu sagen?",
+     "c": "Zeig ‚Er war aufgeregt‘ in drei bis vier Sätzen voller Handlung und Details, ohne das Wort aufgeregt."
+    },
+    "es": {
+     "t": "Mostrar, no contar: lo básico",
+     "g": "Convierte los sentimientos nombrados en acciones, gestos y detalles que el lector pueda sentir.",
+     "p": [
+      "«Estaba nerviosa» cuenta; «giraba su anillo y miraba otra vez el reloj» muestra.",
+      "Al mostrar, el lector descubre la emoción por sí mismo y todo se siente más vivo.",
+      "Contar sigue siendo útil para enlazar escenas rápido; usa ambos con intención."
+     ],
+     "q": "¿Cómo muestras que estás feliz sin decir una palabra?",
+     "c": "Muestra «Estaba emocionado» en tres o cuatro frases de acción y detalle, sin usar la palabra emocionado."
+    },
+    "fr": {
+     "t": "Montrer plutôt que dire : les bases",
+     "g": "Transforme les émotions nommées en actions, gestes et détails que le lecteur ressent lui-même.",
+     "p": [
+      "« Elle était nerveuse » dit ; « elle tournait sa bague et regardait encore l'horloge » montre.",
+      "En montrant, le lecteur découvre l'émotion seul, et la scène paraît plus vivante.",
+      "Dire reste utile pour les transitions rapides ; utilise les deux exprès."
+     ],
+     "q": "Comment montres-tu que tu es heureux sans dire un mot ?",
+     "c": "Montre « Il était impatient » en trois ou quatre phrases d'actions et de détails, sans employer ce mot."
+    },
+    "it": {
+     "t": "Mostrare, non dire: le basi",
+     "g": "Trasforma le emozioni nominate in azioni, gesti e dettagli che il lettore possa sentire.",
+     "p": [
+      "«Era nervosa» dice; «girava l'anello e guardava di nuovo l'orologio» mostra.",
+      "Mostrando, il lettore scopre l'emozione da solo e la scena è più viva.",
+      "Dire resta utile per i passaggi rapidi tra scene; usa entrambi con intenzione."
+     ],
+     "q": "Come mostri di essere felice senza dire una parola?",
+     "c": "Mostra «Era emozionato» in tre o quattro frasi di azioni e dettagli, senza usare la parola emozionato."
+    },
+    "pt": {
+     "t": "Mostrar, não contar: o básico",
+     "g": "Transforma sentimentos nomeados em ações, gestos e detalhes que o leitor possa sentir.",
+     "p": [
+      "«Ela estava nervosa» conta; «rodava o anel e olhava outra vez para o relógio» mostra.",
+      "Ao mostrar, o leitor descobre a emoção sozinho, e tudo parece mais vivo.",
+      "Contar continua útil para ligar cenas depressa; usa os dois de propósito."
+     ],
+     "q": "Como mostras que estás feliz sem dizer uma palavra?",
+     "c": "Mostra «Ele estava entusiasmado» em três ou quatro frases de ação e detalhe, sem usar a palavra entusiasmado."
+    },
+    "pt_BR": {
+     "t": "Mostrar, não contar: o básico",
+     "g": "Transforme sentimentos nomeados em ações, gestos e detalhes que o leitor possa sentir.",
+     "p": [
+      "«Ela estava nervosa» conta; «girava o anel e olhava de novo para o relógio» mostra.",
+      "Ao mostrar, o leitor descobre a emoção sozinho, e tudo fica mais vivo.",
+      "Contar ainda serve para ligar cenas rapidinho; use os dois de propósito."
+     ],
+     "q": "Como você mostra que está feliz sem dizer uma palavra?",
+     "c": "Mostre «Ele estava empolgado» em três ou quatro frases de ação e detalhe, sem usar a palavra empolgado."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Similes that surprise",
+     "g": "Write comparisons with 'like' or 'as' that feel fresh instead of worn out.",
+     "p": [
+      "'As white as snow' is tired; look for a comparison only you would think of.",
+      "A good simile links two things that share one clear quality, like sound or shape.",
+      "Match the simile to the mood and the character: a baker might see clouds as dough."
+     ],
+     "q": "What is the most beautiful or funny comparison you have ever heard?",
+     "c": "Write five fresh similes for the moon, then pick your favourite and build one sentence around it."
+    },
+    "de": {
+     "t": "Überraschende Vergleiche",
+     "g": "Schreib Vergleiche mit ‚wie‘, die frisch wirken statt abgenutzt.",
+     "p": [
+      "‚Weiß wie Schnee‘ ist müde, such einen Vergleich, auf den nur du kommst.",
+      "Ein guter Vergleich verbindet zwei Dinge über eine klare Eigenschaft wie Klang oder Form.",
+      "Pass ihn an Stimmung und Figur an: Ein Bäcker sieht Wolken vielleicht als Teig."
+     ],
+     "q": "Was ist der schönste oder lustigste Vergleich, den du je gehört hast?",
+     "c": "Schreib fünf frische Vergleiche für den Mond, wähle deinen liebsten und bau einen Satz darum."
+    },
+    "es": {
+     "t": "Símiles que sorprenden",
+     "g": "Escribe comparaciones con «como» que suenen frescas y no gastadas.",
+     "p": [
+      "«Blanco como la nieve» está gastado; busca una comparación que solo se te ocurra a ti.",
+      "Un buen símil une dos cosas que comparten una cualidad clara, como el sonido o la forma.",
+      "Ajusta el símil al tono y al personaje: una panadera vería las nubes como masa."
+     ],
+     "q": "¿Cuál es la comparación más bonita o divertida que has oído?",
+     "c": "Escribe cinco símiles nuevos para la luna, elige tu favorito y construye una frase con él."
+    },
+    "fr": {
+     "t": "Des comparaisons qui surprennent",
+     "g": "Écris des comparaisons avec « comme » qui sonnent neuves plutôt qu'usées.",
+     "p": [
+      "« Blanc comme neige » est usé ; cherche une comparaison à laquelle toi seul penserais.",
+      "Une bonne comparaison relie deux choses par une qualité claire, comme le son ou la forme.",
+      "Accorde-la à l'ambiance et au personnage : un boulanger verrait les nuages comme de la pâte."
+     ],
+     "q": "Quelle est la plus belle ou la plus drôle comparaison que tu aies entendue ?",
+     "c": "Écris cinq comparaisons neuves pour la lune, choisis ta préférée et construis une phrase autour."
+    },
+    "it": {
+     "t": "Similitudini che sorprendono",
+     "g": "Scrivi paragoni con «come» che suonino freschi e non consumati.",
+     "p": [
+      "«Bianco come la neve» è logoro; cerca un paragone che verrebbe in mente solo a te.",
+      "Una buona similitudine unisce due cose con una qualità chiara, come il suono o la forma.",
+      "Adattala al tono e al personaggio: un fornaio vedrebbe le nuvole come impasto."
+     ],
+     "q": "Qual è il paragone più bello o divertente che hai mai sentito?",
+     "c": "Scrivi cinque similitudini nuove per la luna, scegli la tua preferita e costruisci una frase intorno."
+    },
+    "pt": {
+     "t": "Comparações que surpreendem",
+     "g": "Escreve comparações com «como» que soem frescas e não gastas.",
+     "p": [
+      "«Branco como a neve» está gasto; procura uma comparação que só tu farias.",
+      "Uma boa comparação liga duas coisas por uma qualidade clara, como o som ou a forma.",
+      "Ajusta-a ao tom e à personagem: um padeiro veria as nuvens como massa."
+     ],
+     "q": "Qual é a comparação mais bonita ou divertida que já ouviste?",
+     "c": "Escreve cinco comparações novas para a lua, escolhe a tua preferida e constrói uma frase à volta dela."
+    },
+    "pt_BR": {
+     "t": "Comparações que surpreendem",
+     "g": "Escreva comparações com «como» que soem frescas, e não gastas.",
+     "p": [
+      "«Branco como a neve» está gasto; procure uma comparação que só você faria.",
+      "Uma boa comparação liga duas coisas por uma qualidade clara, como o som ou a forma.",
+      "Ajuste ao clima e ao personagem: um padeiro veria as nuvens como massa."
+     ],
+     "q": "Qual é a comparação mais bonita ou engraçada que você já ouviu?",
+     "c": "Escreva cinco comparações novas para a lua, escolha a sua favorita e monte uma frase em volta dela."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Metaphors in prose",
+     "g": "Use metaphor to give readers a new way of seeing something familiar.",
+     "p": [
+      "A metaphor says one thing is another: 'the city was a beehive at dawn'.",
+      "It works best when the image adds meaning, not just decoration.",
+      "Keep one metaphor going for a few lines instead of mixing many at once."
+     ],
+     "q": "If your week were a kind of weather, what would it be?",
+     "c": "Write a short paragraph about your morning using one metaphor and develop it for at least three sentences."
+    },
+    "de": {
+     "t": "Metaphern in der Prosa",
+     "g": "Nutze Metaphern, um Lesenden einen neuen Blick auf Vertrautes zu schenken.",
+     "p": [
+      "Eine Metapher sagt, dass etwas etwas anderes ist: ‚Die Stadt war im Morgengrauen ein Bienenstock.‘",
+      "Sie wirkt am besten, wenn das Bild Bedeutung hinzufügt und nicht nur schmückt.",
+      "Führe eine Metapher ein paar Zeilen weiter, statt viele zu mischen."
+     ],
+     "q": "Wenn deine Woche ein Wetter wäre, welches wäre es?",
+     "c": "Schreib einen kurzen Absatz über deinen Morgen mit einer Metapher und führe sie mindestens drei Sätze fort."
+    },
+    "es": {
+     "t": "Metáforas en prosa",
+     "g": "Usa la metáfora para ofrecer al lector una nueva forma de ver algo conocido.",
+     "p": [
+      "La metáfora dice que una cosa es otra: «al amanecer, la ciudad era una colmena».",
+      "Funciona mejor cuando la imagen añade sentido, no solo adorno.",
+      "Mantén una metáfora durante varias líneas en vez de mezclar muchas a la vez."
+     ],
+     "q": "Si tu semana fuera un tipo de clima, ¿cuál sería?",
+     "c": "Escribe un párrafo corto sobre tu mañana con una sola metáfora y desarróllala al menos en tres frases."
+    },
+    "fr": {
+     "t": "La métaphore en prose",
+     "g": "Utilise la métaphore pour offrir au lecteur une nouvelle façon de voir le familier.",
+     "p": [
+      "La métaphore dit qu'une chose en est une autre : « à l'aube, la ville était une ruche ».",
+      "Elle fonctionne mieux quand l'image ajoute du sens, pas seulement un ornement.",
+      "File une seule métaphore sur quelques lignes plutôt que d'en mélanger plusieurs."
+     ],
+     "q": "Si ta semaine était une météo, laquelle serait-elle ?",
+     "c": "Écris un court paragraphe sur ta matinée avec une seule métaphore, filée sur au moins trois phrases."
+    },
+    "it": {
+     "t": "Metafore in prosa",
+     "g": "Usa la metafora per offrire al lettore un modo nuovo di vedere qualcosa di familiare.",
+     "p": [
+      "La metafora dice che una cosa è un'altra: «all'alba la città era un alveare».",
+      "Funziona meglio quando l'immagine aggiunge significato, non solo decorazione.",
+      "Porta avanti una metafora per qualche riga invece di mescolarne tante."
+     ],
+     "q": "Se la tua settimana fosse un tipo di tempo atmosferico, quale sarebbe?",
+     "c": "Scrivi un breve paragrafo sulla tua mattina con una sola metafora e sviluppala per almeno tre frasi."
+    },
+    "pt": {
+     "t": "Metáforas em prosa",
+     "g": "Usa a metáfora para dar ao leitor uma nova forma de ver algo familiar.",
+     "p": [
+      "A metáfora diz que uma coisa é outra: «de madrugada, a cidade era uma colmeia».",
+      "Funciona melhor quando a imagem acrescenta sentido, não só enfeite.",
+      "Mantém uma metáfora durante algumas linhas em vez de misturar várias."
+     ],
+     "q": "Se a tua semana fosse um estado do tempo, qual seria?",
+     "c": "Escreve um parágrafo curto sobre a tua manhã com uma só metáfora e desenvolve-a em pelo menos três frases."
+    },
+    "pt_BR": {
+     "t": "Metáforas na prosa",
+     "g": "Use a metáfora para dar ao leitor um jeito novo de ver algo familiar.",
+     "p": [
+      "A metáfora diz que uma coisa é outra: «de madrugada, a cidade era uma colmeia».",
+      "Ela funciona melhor quando a imagem acrescenta sentido, não só enfeite.",
+      "Mantenha uma metáfora por algumas linhas em vez de misturar várias."
+     ],
+     "q": "Se a sua semana fosse um tipo de clima, qual seria?",
+     "c": "Escreva um parágrafo curto sobre a sua manhã com uma única metáfora e desenvolva por pelo menos três frases."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding clichés",
+     "g": "Spot overused phrases and replace them with your own fresh observations.",
+     "p": [
+      "Clichés like 'heart of gold' or 'crystal clear' slide past readers without effect.",
+      "If a phrase comes too easily, ask what you really see, hear or feel.",
+      "Your own small observation will always sound more alive than a borrowed one."
+     ],
+     "q": "Which overused phrase do you hear all the time?",
+     "c": "List five clichés you know, then rewrite each one with a fresh image of your own."
+    },
+    "de": {
+     "t": "Klischees vermeiden",
+     "g": "Erkenne abgenutzte Wendungen und ersetze sie durch eigene, frische Beobachtungen.",
+     "p": [
+      "Klischees wie ‚Herz aus Gold‘ oder ‚glasklar‘ rutschen ohne Wirkung an Lesenden vorbei.",
+      "Kommt eine Wendung zu leicht, frag dich, was du wirklich siehst, hörst oder fühlst.",
+      "Deine eigene kleine Beobachtung klingt immer lebendiger als eine geliehene."
+     ],
+     "q": "Welche abgenutzte Redewendung hörst du ständig?",
+     "c": "Notiere fünf Klischees, die du kennst, und schreib jedes mit einem eigenen frischen Bild neu."
+    },
+    "es": {
+     "t": "Evitar los clichés",
+     "g": "Detecta frases gastadas y cámbialas por observaciones propias y frescas.",
+     "p": [
+      "Clichés como «corazón de oro» o «claro como el agua» pasan sin dejar huella.",
+      "Si una frase sale demasiado fácil, pregúntate qué ves, oyes o sientes de verdad.",
+      "Tu propia pequeña observación siempre sonará más viva que una prestada."
+     ],
+     "q": "¿Qué frase hecha oyes todo el tiempo?",
+     "c": "Haz una lista de cinco clichés y reescribe cada uno con una imagen fresca tuya."
+    },
+    "fr": {
+     "t": "Éviter les clichés",
+     "g": "Repère les expressions usées et remplace-les par tes propres observations neuves.",
+     "p": [
+      "Des clichés comme « un cœur d'or » ou « clair comme de l'eau de roche » glissent sans effet.",
+      "Si une formule vient trop facilement, demande-toi ce que tu vois, entends ou ressens vraiment.",
+      "Ta petite observation personnelle sonnera toujours plus vivante qu'une phrase empruntée."
+     ],
+     "q": "Quelle expression toute faite entends-tu sans arrêt ?",
+     "c": "Liste cinq clichés que tu connais, puis réécris chacun avec une image neuve à toi."
+    },
+    "it": {
+     "t": "Evitare i cliché",
+     "g": "Riconosci le frasi fatte e sostituiscile con osservazioni tue e fresche.",
+     "p": [
+      "Cliché come «cuore d'oro» o «chiaro come il sole» scivolano via senza effetto.",
+      "Se una frase arriva troppo facilmente, chiediti cosa vedi, senti o provi davvero.",
+      "Una tua piccola osservazione suonerà sempre più viva di una presa in prestito."
+     ],
+     "q": "Quale frase fatta senti di continuo?",
+     "c": "Elenca cinque cliché che conosci e riscrivili ciascuno con un'immagine fresca tua."
+    },
+    "pt": {
+     "t": "Evitar clichés",
+     "g": "Identifica expressões gastas e troca-as por observações tuas e frescas.",
+     "p": [
+      "Clichés como «coração de ouro» ou «claro como água» passam pelo leitor sem efeito.",
+      "Se uma frase sai fácil demais, pergunta o que realmente vês, ouves ou sentes.",
+      "A tua pequena observação vai soar sempre mais viva do que uma emprestada."
+     ],
+     "q": "Que frase feita ouves a toda a hora?",
+     "c": "Faz uma lista de cinco clichés e reescreve cada um com uma imagem fresca tua."
+    },
+    "pt_BR": {
+     "t": "Evitar clichês",
+     "g": "Identifique expressões gastas e troque por observações suas e frescas.",
+     "p": [
+      "Clichês como «coração de ouro» ou «claro como água» passam pelo leitor sem efeito.",
+      "Se uma frase sai fácil demais, pergunte o que você realmente vê, ouve ou sente.",
+      "Sua pequena observação vai soar sempre mais viva do que uma emprestada."
+     ],
+     "q": "Que frase feita você ouve o tempo todo?",
+     "c": "Faça uma lista de cinco clichês e reescreva cada um com uma imagem fresca sua."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a vivid memory",
+     "g": "Turn a small, happy personal memory into a short scene full of sensory detail.",
+     "p": [
+      "Choose a small moment, not a whole holiday: one afternoon, one meal, one laugh.",
+      "Write it in the present tense to make it feel like it is happening now.",
+      "Use at least three senses and one specific detail you still remember clearly."
+     ],
+     "q": "What small, happy memory comes to mind first right now?",
+     "c": "Write a 150-word scene of a happy memory in the present tense, using three senses."
+    },
+    "de": {
+     "t": "Eine lebendige Erinnerung schreiben",
+     "g": "Verwandle eine kleine, schöne Erinnerung in eine kurze Szene voller Sinneseindrücke.",
+     "p": [
+      "Wähle einen kleinen Moment statt eines ganzen Urlaubs: einen Nachmittag, ein Essen, ein Lachen.",
+      "Schreib im Präsens, damit es wirkt, als passiere es gerade jetzt.",
+      "Nutze mindestens drei Sinne und ein genaues Detail, an das du dich klar erinnerst."
+     ],
+     "q": "Welche kleine, schöne Erinnerung fällt dir gerade als Erstes ein?",
+     "c": "Schreib eine Szene von 150 Wörtern über eine schöne Erinnerung im Präsens, mit drei Sinnen."
+    },
+    "es": {
+     "t": "Escribir un recuerdo vivo",
+     "g": "Convierte un pequeño recuerdo feliz en una escena breve llena de detalles sensoriales.",
+     "p": [
+      "Elige un momento pequeño, no unas vacaciones enteras: una tarde, una comida, una risa.",
+      "Escríbelo en presente para que parezca que ocurre ahora mismo.",
+      "Usa al menos tres sentidos y un detalle concreto que aún recuerdes con claridad."
+     ],
+     "q": "¿Qué pequeño recuerdo feliz te viene primero a la mente ahora?",
+     "c": "Escribe una escena de 150 palabras sobre un recuerdo feliz, en presente y con tres sentidos."
+    },
+    "fr": {
+     "t": "Écrire un souvenir vivant",
+     "g": "Transforme un petit souvenir heureux en une courte scène pleine de détails sensoriels.",
+     "p": [
+      "Choisis un petit moment, pas des vacances entières : un après-midi, un repas, un fou rire.",
+      "Écris-le au présent pour donner l'impression qu'il se passe maintenant.",
+      "Utilise au moins trois sens et un détail précis dont tu te souviens nettement."
+     ],
+     "q": "Quel petit souvenir heureux te vient en premier à l'esprit ?",
+     "c": "Écris une scène de 150 mots sur un souvenir heureux, au présent, avec trois sens."
+    },
+    "it": {
+     "t": "Scrivere un ricordo vivido",
+     "g": "Trasforma un piccolo ricordo felice in una breve scena piena di dettagli sensoriali.",
+     "p": [
+      "Scegli un momento piccolo, non un'intera vacanza: un pomeriggio, un pasto, una risata.",
+      "Scrivilo al presente perché sembri accadere proprio ora.",
+      "Usa almeno tre sensi e un dettaglio preciso che ricordi ancora chiaramente."
+     ],
+     "q": "Quale piccolo ricordo felice ti viene in mente per primo adesso?",
+     "c": "Scrivi una scena di 150 parole su un ricordo felice, al presente e con tre sensi."
+    },
+    "pt": {
+     "t": "Escrever uma memória viva",
+     "g": "Transforma uma pequena memória feliz numa cena curta cheia de detalhes sensoriais.",
+     "p": [
+      "Escolhe um momento pequeno, não umas férias inteiras: uma tarde, uma refeição, uma gargalhada.",
+      "Escreve no presente para parecer que está a acontecer agora.",
+      "Usa pelo menos três sentidos e um detalhe concreto de que ainda te lembras bem."
+     ],
+     "q": "Que pequena memória feliz te vem primeiro à cabeça agora?",
+     "c": "Escreve uma cena de 150 palavras sobre uma memória feliz, no presente e com três sentidos."
+    },
+    "pt_BR": {
+     "t": "Escrever uma memória viva",
+     "g": "Transforme uma pequena memória feliz em uma cena curta cheia de detalhes sensoriais.",
+     "p": [
+      "Escolha um momento pequeno, não as férias inteiras: uma tarde, uma refeição, uma risada.",
+      "Escreva no presente para parecer que está acontecendo agora.",
+      "Use pelo menos três sentidos e um detalhe concreto que você ainda lembra bem."
+     ],
+     "q": "Que pequena memória feliz vem primeiro à sua cabeça agora?",
+     "c": "Escreva uma cena de 150 palavras sobre uma memória feliz, no presente e com três sentidos."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing a room",
+     "g": "Use the objects in a room to hint at who lives there without saying it directly.",
+     "p": [
+      "Objects are clues: a stack of travel guides suggests a dreamer of journeys.",
+      "Choose three or four telling details instead of describing everything.",
+      "Let the reader guess the person; that small discovery is part of the pleasure."
+     ],
+     "q": "What three objects in your room say the most about you?",
+     "c": "Describe a room belonging to an imaginary keen gardener in one paragraph, never using the word garden."
+    },
+    "de": {
+     "t": "Einen Raum beschreiben",
+     "g": "Nutze die Gegenstände eines Raumes, um anzudeuten, wer dort wohnt, ohne es direkt zu sagen.",
+     "p": [
+      "Gegenstände sind Hinweise: Ein Stapel Reiseführer verrät jemanden, der vom Reisen träumt.",
+      "Wähle drei oder vier vielsagende Details, statt alles zu beschreiben.",
+      "Lass die Lesenden die Person erraten, diese kleine Entdeckung macht Freude."
+     ],
+     "q": "Welche drei Gegenstände in deinem Zimmer sagen am meisten über dich?",
+     "c": "Beschreib in einem Absatz das Zimmer einer erfundenen begeisterten Gärtnerin, ohne das Wort Garten."
+    },
+    "es": {
+     "t": "Describir una habitación",
+     "g": "Usa los objetos de una habitación para insinuar quién vive allí sin decirlo directamente.",
+     "p": [
+      "Los objetos son pistas: una pila de guías de viaje sugiere a alguien que sueña con viajar.",
+      "Elige tres o cuatro detalles reveladores en lugar de describirlo todo.",
+      "Deja que el lector adivine a la persona; ese pequeño descubrimiento es parte del placer."
+     ],
+     "q": "¿Qué tres objetos de tu habitación dicen más de ti?",
+     "c": "Describe en un párrafo la habitación de una jardinera imaginaria apasionada, sin usar la palabra jardín."
+    },
+    "fr": {
+     "t": "Décrire une pièce",
+     "g": "Utilise les objets d'une pièce pour suggérer qui y vit, sans le dire directement.",
+     "p": [
+      "Les objets sont des indices : une pile de guides de voyage trahit un rêveur de départs.",
+      "Choisis trois ou quatre détails parlants au lieu de tout décrire.",
+      "Laisse le lecteur deviner la personne ; cette petite découverte fait partie du plaisir."
+     ],
+     "q": "Quels trois objets de ta chambre en disent le plus sur toi ?",
+     "c": "Décris en un paragraphe la pièce d'une jardinière passionnée imaginaire, sans jamais écrire le mot jardin."
+    },
+    "it": {
+     "t": "Descrivere una stanza",
+     "g": "Usa gli oggetti di una stanza per suggerire chi ci vive, senza dirlo direttamente.",
+     "p": [
+      "Gli oggetti sono indizi: una pila di guide di viaggio rivela chi sogna di partire.",
+      "Scegli tre o quattro dettagli eloquenti invece di descrivere tutto.",
+      "Lascia che il lettore indovini la persona: quella piccola scoperta fa parte del piacere."
+     ],
+     "q": "Quali tre oggetti della tua stanza dicono di più su di te?",
+     "c": "Descrivi in un paragrafo la stanza di un'appassionata giardiniera immaginaria, senza usare la parola giardino."
+    },
+    "pt": {
+     "t": "Descrever um quarto",
+     "g": "Usa os objetos de um quarto para sugerir quem lá vive, sem o dizer diretamente.",
+     "p": [
+      "Os objetos são pistas: uma pilha de guias de viagem sugere alguém que sonha partir.",
+      "Escolhe três ou quatro detalhes reveladores em vez de descrever tudo.",
+      "Deixa o leitor adivinhar a pessoa; essa pequena descoberta faz parte do prazer."
+     ],
+     "q": "Que três objetos do teu quarto dizem mais sobre ti?",
+     "c": "Descreve num parágrafo o quarto de uma jardineira imaginária apaixonada, sem usar a palavra jardim."
+    },
+    "pt_BR": {
+     "t": "Descrever um quarto",
+     "g": "Use os objetos de um quarto para sugerir quem mora ali, sem dizer diretamente.",
+     "p": [
+      "Objetos são pistas: uma pilha de guias de viagem sugere alguém que sonha em viajar.",
+      "Escolha três ou quatro detalhes reveladores em vez de descrever tudo.",
+      "Deixe o leitor adivinhar a pessoa; essa pequena descoberta faz parte do prazer."
+     ],
+     "q": "Quais três objetos do seu quarto dizem mais sobre você?",
+     "c": "Descreva em um parágrafo o quarto de uma jardineira imaginária apaixonada, sem usar a palavra jardim."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing a person",
+     "g": "Capture someone through posture, habits and one memorable feature.",
+     "p": [
+      "Posture speaks: someone who walks on tiptoe feels different from someone who strides.",
+      "Habits reveal character: humming while cooking, tapping a pen, collecting stamps.",
+      "One memorable feature beats a full list: a laugh, a hat, a way of tilting the head."
+     ],
+     "q": "Who is someone you admire, and what small habit makes them unique?",
+     "c": "Describe a kind person you know in five sentences: one about posture, one habit and one memorable feature."
+    },
+    "de": {
+     "t": "Eine Person beschreiben",
+     "g": "Fang einen Menschen über Haltung, Gewohnheiten und ein einprägsames Merkmal ein.",
+     "p": [
+      "Haltung spricht: Wer auf Zehenspitzen geht, wirkt anders als jemand, der ausschreitet.",
+      "Gewohnheiten verraten Charakter: beim Kochen summen, mit dem Stift tippen, Briefmarken sammeln.",
+      "Ein einprägsames Merkmal schlägt jede Liste: ein Lachen, ein Hut, eine Kopfneigung."
+     ],
+     "q": "Wen bewunderst du, und welche kleine Gewohnheit macht diese Person einzigartig?",
+     "c": "Beschreib einen freundlichen Menschen in fünf Sätzen: einer zur Haltung, eine Gewohnheit, ein besonderes Merkmal."
+    },
+    "es": {
+     "t": "Describir a una persona",
+     "g": "Retrata a alguien a través de su postura, sus costumbres y un rasgo memorable.",
+     "p": [
+      "La postura habla: quien camina de puntillas no se parece a quien avanza a zancadas.",
+      "Las costumbres revelan carácter: tararear al cocinar, golpear un bolígrafo, coleccionar sellos.",
+      "Un rasgo memorable vale más que una lista: una risa, un sombrero, cómo inclina la cabeza."
+     ],
+     "q": "¿A quién admiras y qué pequeña costumbre lo hace único?",
+     "c": "Describe a una persona amable que conozcas en cinco frases: postura, una costumbre y un rasgo memorable."
+    },
+    "fr": {
+     "t": "Décrire une personne",
+     "g": "Saisis quelqu'un par sa posture, ses habitudes et un trait mémorable.",
+     "p": [
+      "La posture parle : qui marche sur la pointe des pieds n'est pas celui qui avance à grands pas.",
+      "Les habitudes révèlent le caractère : fredonner en cuisinant, tapoter un stylo, collectionner les timbres.",
+      "Un trait mémorable vaut mieux qu'une liste : un rire, un chapeau, une façon de pencher la tête."
+     ],
+     "q": "Qui admires-tu, et quelle petite habitude rend cette personne unique ?",
+     "c": "Décris une personne bienveillante en cinq phrases : sa posture, une habitude et un trait mémorable."
+    },
+    "it": {
+     "t": "Descrivere una persona",
+     "g": "Ritrai qualcuno attraverso la postura, le abitudini e un tratto memorabile.",
+     "p": [
+      "La postura parla: chi cammina in punta di piedi è diverso da chi avanza a grandi passi.",
+      "Le abitudini rivelano il carattere: canticchiare cucinando, picchiettare la penna, collezionare francobolli.",
+      "Un tratto memorabile vale più di un elenco: una risata, un cappello, un modo di inclinare la testa."
+     ],
+     "q": "Chi ammiri, e quale piccola abitudine rende quella persona unica?",
+     "c": "Descrivi una persona gentile che conosci in cinque frasi: postura, un'abitudine e un tratto memorabile."
+    },
+    "pt": {
+     "t": "Descrever uma pessoa",
+     "g": "Retrata alguém através da postura, dos hábitos e de um traço memorável.",
+     "p": [
+      "A postura fala: quem anda em bicos de pés não é igual a quem avança em passadas largas.",
+      "Os hábitos revelam carácter: trautear a cozinhar, tamborilar com a caneta, colecionar selos.",
+      "Um traço memorável vale mais do que uma lista: um riso, um chapéu, um jeito de inclinar a cabeça."
+     ],
+     "q": "Quem admiras, e que pequeno hábito torna essa pessoa única?",
+     "c": "Descreve uma pessoa gentil que conheças em cinco frases: postura, um hábito e um traço memorável."
+    },
+    "pt_BR": {
+     "t": "Descrever uma pessoa",
+     "g": "Retrate alguém pela postura, pelos hábitos e por um traço marcante.",
+     "p": [
+      "A postura fala: quem anda na ponta dos pés é diferente de quem avança a passos largos.",
+      "Hábitos revelam o caráter: cantarolar cozinhando, batucar com a caneta, colecionar selos.",
+      "Um traço marcante vale mais que uma lista: uma risada, um chapéu, um jeito de inclinar a cabeça."
+     ],
+     "q": "Quem você admira, e que pequeno hábito torna essa pessoa única?",
+     "c": "Descreva uma pessoa gentil que você conhece em cinco frases: postura, um hábito e um traço marcante."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Observation walk",
+     "g": "Collect ten real details on a short walk and turn them into a lively paragraph.",
+     "p": [
+      "Walk slowly and look up, down and close: rooftops, cracks, tiny flowers.",
+      "Note details with your senses, not just your eyes: smells, sounds, the air.",
+      "Back home, choose the best four details and weave them into one paragraph."
+     ],
+     "q": "What is your favourite place to walk, and what do you usually notice there?",
+     "c": "Take a ten-minute walk, note ten details, then write a paragraph using your four favourite."
+    },
+    "de": {
+     "t": "Beobachtungsspaziergang",
+     "g": "Sammle auf einem kurzen Spaziergang zehn echte Details und mach daraus einen lebendigen Absatz.",
+     "p": [
+      "Geh langsam und schau nach oben, unten und ganz nah: Dächer, Risse, winzige Blumen.",
+      "Notiere mit allen Sinnen, nicht nur mit den Augen: Gerüche, Geräusche, die Luft.",
+      "Wähle zu Hause die vier besten Details und verwebe sie zu einem Absatz."
+     ],
+     "q": "Wo gehst du am liebsten spazieren, und was fällt dir dort meistens auf?",
+     "c": "Mach einen zehnminütigen Spaziergang, notiere zehn Details und schreib einen Absatz mit deinen vier liebsten."
+    },
+    "es": {
+     "t": "Paseo de observación",
+     "g": "Recoge diez detalles reales en un paseo corto y conviértelos en un párrafo vivo.",
+     "p": [
+      "Camina despacio y mira arriba, abajo y de cerca: tejados, grietas, flores diminutas.",
+      "Anota con todos los sentidos, no solo con los ojos: olores, sonidos, el aire.",
+      "En casa, elige los cuatro mejores detalles y entrelázalos en un párrafo."
+     ],
+     "q": "¿Cuál es tu lugar favorito para pasear y qué sueles notar allí?",
+     "c": "Da un paseo de diez minutos, anota diez detalles y escribe un párrafo con tus cuatro favoritos."
+    },
+    "fr": {
+     "t": "La promenade d'observation",
+     "g": "Récolte dix détails réels lors d'une courte balade et transforme-les en un paragraphe vivant.",
+     "p": [
+      "Marche lentement et regarde en haut, en bas et de près : toits, fissures, fleurs minuscules.",
+      "Note avec tous tes sens, pas seulement les yeux : odeurs, sons, l'air.",
+      "Chez toi, choisis les quatre meilleurs détails et tisse-les en un paragraphe."
+     ],
+     "q": "Où aimes-tu le plus te promener, et que remarques-tu souvent là-bas ?",
+     "c": "Fais une balade de dix minutes, note dix détails, puis écris un paragraphe avec tes quatre préférés."
+    },
+    "it": {
+     "t": "Passeggiata di osservazione",
+     "g": "Raccogli dieci dettagli veri in una breve passeggiata e trasformali in un paragrafo vivace.",
+     "p": [
+      "Cammina piano e guarda in alto, in basso e da vicino: tetti, crepe, fiori minuscoli.",
+      "Annota con tutti i sensi, non solo con gli occhi: odori, suoni, l'aria.",
+      "A casa scegli i quattro dettagli migliori e intrecciali in un paragrafo."
+     ],
+     "q": "Qual è il tuo posto preferito per passeggiare, e cosa noti di solito lì?",
+     "c": "Fai una passeggiata di dieci minuti, annota dieci dettagli e scrivi un paragrafo con i tuoi quattro preferiti."
+    },
+    "pt": {
+     "t": "Passeio de observação",
+     "g": "Recolhe dez detalhes reais num passeio curto e transforma-os num parágrafo vivo.",
+     "p": [
+      "Anda devagar e olha para cima, para baixo e de perto: telhados, fendas, flores minúsculas.",
+      "Anota com todos os sentidos, não só com os olhos: cheiros, sons, o ar.",
+      "Em casa, escolhe os quatro melhores detalhes e entrelaça-os num parágrafo."
+     ],
+     "q": "Qual é o teu sítio preferido para passear, e o que costumas notar lá?",
+     "c": "Faz um passeio de dez minutos, anota dez detalhes e escreve um parágrafo com os teus quatro preferidos."
+    },
+    "pt_BR": {
+     "t": "Passeio de observação",
+     "g": "Colete dez detalhes reais em uma caminhada curta e transforme tudo em um parágrafo vivo.",
+     "p": [
+      "Ande devagar e olhe para cima, para baixo e de perto: telhados, rachaduras, florzinhas.",
+      "Anote com todos os sentidos, não só com os olhos: cheiros, sons, o ar.",
+      "Em casa, escolha os quatro melhores detalhes e costure tudo em um parágrafo."
+     ],
+     "q": "Qual é seu lugar favorito para caminhar, e o que você costuma notar por lá?",
+     "c": "Faça uma caminhada de dez minutos, anote dez detalhes e escreva um parágrafo com seus quatro favoritos."
+    }
+   }
+  }
+ ]
+}

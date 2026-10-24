@@ -1,0 +1,835 @@
+{
+ "topic": "travel_phrases",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Telling the time",
+     "g": "Ask what time it is and understand opening and departure times.",
+     "p": [
+      "Spanish: «¿Qué hora es?» (keh O-ra es) and the answer «Son las tres» (son las TRES) = it is three o'clock.",
+      "French: «Quelle heure est-il ?» (kel uhr eh-TEEL) and «Il est trois heures» (eel eh trwa ZUHR) = it is three o'clock.",
+      "Opening times: Spanish «¿A qué hora abre?» (a keh O-ra A-breh). Signs often use the 24-hour clock, so 18:00 means 6 pm."
+     ],
+     "q": "Are you an early bird who loves morning sights, or do you prefer exploring late into the evening?",
+     "c": "Each time you check the clock today, say the hour in Spanish or French."
+    },
+    "de": {
+     "t": "Die Uhrzeit sagen",
+     "g": "Frag nach der Uhrzeit und verstehe Öffnungs- und Abfahrtszeiten.",
+     "p": [
+      "Spanisch: «¿Qué hora es?» (ke O-ra es) und die Antwort «Son las tres» (sson las TRESS) = Es ist drei Uhr.",
+      "Französisch: «Quelle heure est-il ?» (käl ör ä-TIL) und «Il est trois heures» (il ä trua SÖR) = Es ist drei Uhr.",
+      "Öffnungszeiten: Spanisch «¿A qué hora abre?» (a ke O-ra A-bre) = Wann öffnet es? Schilder nutzen oft 24 Stunden."
+     ],
+     "q": "Bist du ein Frühaufsteher, der morgens Sehenswürdigkeiten liebt, oder erkundest du lieber bis spät abends?",
+     "c": "Sag heute bei jedem Blick auf die Uhr die Stunde auf Spanisch oder Französisch."
+    },
+    "es": {
+     "t": "Decir la hora",
+     "g": "Pregunta qué hora es y entiende horarios de apertura y de salida.",
+     "p": [
+      "Inglés: «What time is it?» (uot taim is it) y la respuesta «It's three o'clock» (its zri o-KLOK) = son las tres.",
+      "Francés: «Quelle heure est-il ?» (kel er e-TIL) y «Il est trois heures» (il e trua SER) = son las tres.",
+      "Horarios: inglés «What time does it open?» (uot taim das it OU-pen). En Europa los carteles usan el reloj de 24 horas."
+     ],
+     "q": "¿Eres de madrugar para ver lugares por la mañana, o prefieres explorar hasta tarde por la noche?",
+     "c": "Cada vez que mires el reloj hoy, di la hora en inglés o francés."
+    },
+    "fr": {
+     "t": "Dire l'heure",
+     "g": "Demander l'heure et comprendre les horaires d'ouverture et de départ.",
+     "p": [
+      "Espagnol : «¿Qué hora es?» (ké O-ra èss) et la réponse «Son las tres» (sone lass TRÈSS) = il est trois heures.",
+      "Anglais : «What time is it?» (ouate taïm iz it) et «It's three o'clock» (its sri o-KLOK) = il est trois heures.",
+      "Horaires : espagnol «¿A qué hora abre?» (a ké O-ra A-bré) = ça ouvre à quelle heure ? En anglais, pm = après-midi."
+     ],
+     "q": "Es-tu du matin pour visiter tôt, ou préfères-tu explorer tard dans la soirée ?",
+     "c": "Chaque fois que tu regardes l'heure aujourd'hui, dis-la en espagnol ou en anglais."
+    },
+    "it": {
+     "t": "Dire l'ora",
+     "g": "Chiedere che ore sono e capire gli orari di apertura e di partenza.",
+     "p": [
+      "Spagnolo: «¿Qué hora es?» (ke O-ra es) e la risposta «Son las tres» (son las TRES) = sono le tre.",
+      "Francese: «Quelle heure est-il ?» (kel ör è-TIL) e «Il est trois heures» (il è trua SÖR) = sono le tre.",
+      "Orari: spagnolo «¿A qué hora abre?» (a ke O-ra A-bre) = a che ora apre? In inglese pm indica il pomeriggio e la sera."
+     ],
+     "q": "Sei mattiniero e ami le visite al mattino, o preferisci esplorare fino a tarda sera?",
+     "c": "Ogni volta che guardi l'orologio oggi, di' l'ora in spagnolo o francese."
+    },
+    "pt": {
+     "t": "Dizer as horas",
+     "g": "Perguntar que horas são e perceber horários de abertura e de partida.",
+     "p": [
+      "Espanhol: «¿Qué hora es?» (ke Ô-ra és) e a resposta «Son las tres» (son las TRÉS) = são três horas.",
+      "Francês: «Quelle heure est-il ?» (kél êr é-TIL) e «Il est trois heures» (il é truá ZÊR) = são três horas.",
+      "Horários: espanhol «¿A qué hora abre?» (a ke Ô-ra Á-bre) = a que horas abre? Em inglês, pm indica tarde e noite."
+     ],
+     "q": "És madrugador e gostas de visitar logo de manhã, ou preferes explorar até tarde?",
+     "c": "Sempre que olhares para o relógio hoje, diz a hora em espanhol ou francês."
+    },
+    "pt_BR": {
+     "t": "Dizer as horas",
+     "g": "Perguntar que horas são e entender horários de abertura e de partida.",
+     "p": [
+      "Espanhol: «¿Qué hora es?» (ke Ô-ra és) e a resposta «Son las tres» (son las TRÉS) = são três horas.",
+      "Francês: «Quelle heure est-il ?» (kél êr é-TIL) e «Il est trois heures» (il é truá ZÊR) = são três horas.",
+      "Horários: espanhol «¿A qué hora abre?» (a ke Ô-ra Á-bre) = que horas abre? Em inglês, pm indica tarde e noite."
+     ],
+     "q": "Você é de acordar cedo e passear de manhã, ou prefere explorar até tarde da noite?",
+     "c": "Toda vez que olhar o relógio hoje, diga a hora em espanhol ou francês."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the days so you can book tours, check schedules and make plans.",
+     "p": [
+      "Spanish: lunes, martes, miércoles, jueves, viernes, sábado, domingo. «Hoy» (oy) = today, «mañana» (ma-NYA-na) = tomorrow.",
+      "French: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. «Aujourd'hui» (oh-zhoor-DWEE) = today, «demain» = tomorrow.",
+      "Useful check: Spanish «¿Abren el domingo?» (A-bren el do-MEEN-go) = are you open on Sunday? Many shops close on Sundays."
+     ],
+     "q": "Which day of the week do you like to start a trip on, and why?",
+     "c": "Say today's and tomorrow's day out loud in Spanish and in French."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Benenne die Tage, um Touren zu buchen, Fahrpläne zu prüfen und zu planen.",
+     "p": [
+      "Spanisch: lunes, martes, miércoles, jueves, viernes, sábado, domingo. «Hoy» (oi) = heute, «mañana» (ma-NJA-na) = morgen.",
+      "Französisch: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. «Aujourd'hui» = heute, «demain» (dö-MÄN) = morgen.",
+      "Praktisch: Spanisch «¿Abren el domingo?» (A-bren el do-MIN-go) = Haben Sie sonntags offen? Viele Läden schließen sonntags."
+     ],
+     "q": "An welchem Wochentag beginnst du am liebsten eine Reise, und warum?",
+     "c": "Sag den heutigen und den morgigen Tag laut auf Spanisch und Französisch."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Nombra los días para reservar excursiones, revisar horarios y hacer planes.",
+     "p": [
+      "Inglés: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. «Today» (tu-DEI) = hoy, «tomorrow» = mañana.",
+      "Francés: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. «Aujourd'hui» = hoy, «demain» (de-MAN) = mañana.",
+      "Para comprobar: inglés «Are you open on Sunday?» (ar yu OU-pen on SAN-dei). En muchos países las tiendas cierran el domingo."
+     ],
+     "q": "¿Qué día de la semana prefieres para empezar un viaje, y por qué?",
+     "c": "Di en voz alta el día de hoy y el de mañana en inglés y en francés."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les jours pour réserver des visites, vérifier les horaires et faire des projets.",
+     "p": [
+      "Espagnol : lunes, martes, miércoles, jueves, viernes, sábado, domingo. «Hoy» (oï) = aujourd'hui, «mañana» = demain.",
+      "Anglais : Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. «Today» = aujourd'hui, «tomorrow» = demain.",
+      "À vérifier : espagnol «¿Abren el domingo?» (A-brène él do-MINE-go) = vous ouvrez le dimanche ? Beaucoup de magasins ferment."
+     ],
+     "q": "Quel jour de la semaine préfères-tu pour commencer un voyage, et pourquoi ?",
+     "c": "Dis à voix haute le jour d'aujourd'hui et de demain en espagnol et en anglais."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Nominare i giorni per prenotare tour, controllare orari e fare programmi.",
+     "p": [
+      "Spagnolo: lunes, martes, miércoles, jueves, viernes, sábado, domingo. «Hoy» (oi) = oggi, «mañana» (ma-NIA-na) = domani.",
+      "Francese: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. «Aujourd'hui» = oggi, «demain» (dö-MẼ) = domani.",
+      "Utile: spagnolo «¿Abren el domingo?» (A-bren el do-MIN-go) = siete aperti la domenica? Molti negozi la domenica chiudono."
+     ],
+     "q": "In quale giorno della settimana preferisci iniziare un viaggio, e perché?",
+     "c": "Di' ad alta voce il giorno di oggi e di domani in spagnolo e in francese."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Dizer os dias para reservar passeios, ver horários e fazer planos.",
+     "p": [
+      "Espanhol: lunes, martes, miércoles, jueves, viernes, sábado, domingo. «Hoy» (ói) = hoje, «mañana» (ma-NHA-na) = amanhã.",
+      "Francês: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. «Aujourd'hui» = hoje, «demain» (de-MÃ) = amanhã.",
+      "Útil: espanhol «¿Abren el domingo?» (Á-bren el do-MIN-go) = abrem ao domingo? Muitas lojas fecham ao domingo."
+     ],
+     "q": "Em que dia da semana preferes começar uma viagem, e porquê?",
+     "c": "Diz em voz alta o dia de hoje e o de amanhã em espanhol e em francês."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Dizer os dias para reservar passeios, conferir horários e fazer planos.",
+     "p": [
+      "Espanhol: lunes, martes, miércoles, jueves, viernes, sábado, domingo. «Hoy» (ói) = hoje, «mañana» (ma-NHA-na) = amanhã.",
+      "Francês: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. «Aujourd'hui» = hoje, «demain» (de-MÃ) = amanhã.",
+      "Útil: espanhol «¿Abren el domingo?» (Á-bren el do-MIN-go) = abrem no domingo? Muitas lojas fecham aos domingos."
+     ],
+     "q": "Em que dia da semana você prefere começar uma viagem, e por quê?",
+     "c": "Diga em voz alta o dia de hoje e o de amanhã em espanhol e em francês."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking where something is",
+     "g": "Learn the key question pattern for finding toilets, stations and exits.",
+     "p": [
+      "Spanish «¿Dónde está...?» (DON-deh es-TA), French «Où est... ?» (oo eh), Italian «Dov'è...?» (do-VEH) all mean where is...?",
+      "Add a place: «¿Dónde está la estación?» (the station), «Où est la sortie ?» (the exit), «Dov'è il museo?» (the museum).",
+      "Start with excuse me and end with thanks: «Disculpe, ¿dónde está el metro? Gracias.» Short and friendly works best."
+     ],
+     "q": "Which place do you usually have to search for first when you arrive in a new city?",
+     "c": "Make three where-is questions today for places near you, in any language from this path."
+    },
+    "de": {
+     "t": "Fragen, wo etwas ist",
+     "g": "Lerne das wichtigste Fragemuster, um Toiletten, Bahnhöfe und Ausgänge zu finden.",
+     "p": [
+      "Spanisch «¿Dónde está...?» (DON-de es-TA), Französisch «Où est... ?» (u ä), Italienisch «Dov'è...?» (do-WÄ) = Wo ist...?",
+      "Mit Ort: «¿Dónde está la estación?» (der Bahnhof), «Où est la sortie ?» (der Ausgang), «Dov'è il museo?» (das Museum).",
+      "Mit Entschuldigung anfangen, mit Dank enden: «Disculpe, ¿dónde está el metro? Gracias.» Kurz und freundlich wirkt am besten."
+     ],
+     "q": "Welchen Ort musst du in einer neuen Stadt meistens als Erstes suchen?",
+     "c": "Bilde heute drei Wo-ist-Fragen zu Orten in deiner Nähe, in einer Sprache aus diesem Kurs."
+    },
+    "es": {
+     "t": "Preguntar dónde está algo",
+     "g": "Aprende el patrón clave para encontrar baños, estaciones y salidas.",
+     "p": [
+      "Inglés «Where is...?» (uer is), francés «Où est... ?» (u e), italiano «Dov'è...?» (do-VÉ): todos significan dónde está...",
+      "Con lugar: «Where is the station?» (la estación), «Où est la sortie ?» (la salida), «Dov'è il museo?» (el museo).",
+      "Empieza con perdón y acaba con gracias: «Excuse me, where is the metro? Thank you.» Lo breve y amable funciona mejor."
+     ],
+     "q": "¿Qué lugar sueles buscar primero cuando llegas a una ciudad nueva?",
+     "c": "Haz hoy tres preguntas de dónde está sobre lugares cercanos, en cualquier idioma de este camino."
+    },
+    "fr": {
+     "t": "Demander où se trouve quelque chose",
+     "g": "Apprendre la question clé pour trouver les toilettes, les gares et les sorties.",
+     "p": [
+      "Espagnol «¿Dónde está...?» (DONE-dé èss-TA), anglais «Where is...?» (ouèr iz), italien «Dov'è...?» (do-VÈ) = où est... ?",
+      "Avec un lieu : «¿Dónde está la estación?» (la gare), «Where is the exit?» (la sortie), «Dov'è il museo?» (le musée).",
+      "Commence par excusez-moi, finis par merci : «Disculpe, ¿dónde está el metro? Gracias.» Court et aimable, c'est l'idéal."
+     ],
+     "q": "Quel endroit cherches-tu en premier quand tu arrives dans une nouvelle ville ?",
+     "c": "Formule aujourd'hui trois questions où est pour des lieux proches, dans une langue de ce parcours."
+    },
+    "it": {
+     "t": "Chiedere dov'è qualcosa",
+     "g": "Imparare la domanda chiave per trovare bagni, stazioni e uscite.",
+     "p": [
+      "Spagnolo «¿Dónde está...?» (DON-de es-TA), francese «Où est... ?» (u è), inglese «Where is...?» (uer is) = dov'è...?",
+      "Con un luogo: «¿Dónde está la estación?» (la stazione), «Où est la sortie ?» (l'uscita), «Where is the museum?» (il museo).",
+      "Inizia con scusi e chiudi con grazie: «Disculpe, ¿dónde está el metro? Gracias.» Breve e gentile funziona meglio."
+     ],
+     "q": "Quale posto cerchi di solito per primo quando arrivi in una città nuova?",
+     "c": "Fai oggi tre domande dov'è su luoghi vicini a te, in una lingua di questo percorso."
+    },
+    "pt": {
+     "t": "Perguntar onde fica algo",
+     "g": "Aprender a pergunta-chave para encontrar casas de banho, estações e saídas.",
+     "p": [
+      "Espanhol «¿Dónde está...?» (DÔN-de es-TÁ), francês «Où est... ?» (u é), italiano «Dov'è...?» (do-VÉ) = onde fica...?",
+      "Com um lugar: «¿Dónde está la estación?» (a estação), «Où est la sortie ?» (a saída), «Dov'è il museo?» (o museu).",
+      "Começa com desculpe e acaba com obrigado: «Disculpe, ¿dónde está el metro? Gracias.» Curto e simpático resulta melhor."
+     ],
+     "q": "Que lugar costumas procurar primeiro quando chegas a uma cidade nova?",
+     "c": "Faz hoje três perguntas de onde fica sobre lugares perto de ti, numa língua deste percurso."
+    },
+    "pt_BR": {
+     "t": "Perguntar onde fica algo",
+     "g": "Aprender a pergunta-chave para achar banheiros, estações e saídas.",
+     "p": [
+      "Espanhol «¿Dónde está...?» (DÔN-de es-TÁ), francês «Où est... ?» (u é), italiano «Dov'è...?» (do-VÉ) = onde fica...?",
+      "Com um lugar: «¿Dónde está la estación?» (a estação), «Où est la sortie ?» (a saída), «Dov'è il museo?» (o museu).",
+      "Comece com com licença e termine com obrigado: «Disculpe, ¿dónde está el metro? Gracias.» Curto e simpático funciona melhor."
+     ],
+     "q": "Que lugar você costuma procurar primeiro quando chega a uma cidade nova?",
+     "c": "Faça hoje três perguntas de onde fica sobre lugares perto de você, num idioma deste caminho."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Left, right, straight on",
+     "g": "Understand simple directions when someone points the way.",
+     "p": [
+      "Spanish: «a la izquierda» (ees-KYER-da) = left, «a la derecha» (deh-REH-cha) = right, «todo recto» (TO-do REK-to) = straight on.",
+      "French: «à gauche» (a GOHSH) = left, «à droite» (a DRWAT) = right, «tout droit» (too DRWAH) = straight on. Easy to mix up!",
+      "Italian: «a sinistra» = left, «a destra» = right, «sempre dritto» (SEM-preh DREET-to) = straight on. Watch their hands too."
+     ],
+     "q": "Are you good at following spoken directions, or do you always need to see a map?",
+     "c": "On your next walk, name every turn you take in Spanish, French or Italian."
+    },
+    "de": {
+     "t": "Links, rechts, geradeaus",
+     "g": "Verstehe einfache Wegbeschreibungen, wenn jemand dir die Richtung zeigt.",
+     "p": [
+      "Spanisch: «a la izquierda» (is-KJER-da) = links, «a la derecha» (de-RE-tscha) = rechts, «todo recto» (TO-do REK-to) = geradeaus.",
+      "Französisch: «à gauche» (a GOSCH) = links, «à droite» (a DRUAT) = rechts, «tout droit» (tu DRUA) = geradeaus. Leicht zu verwechseln!",
+      "Italienisch: «a sinistra» = links, «a destra» = rechts, «sempre dritto» (SEM-pre DRIT-to) = geradeaus. Achte auch auf die Hände."
+     ],
+     "q": "Kannst du mündlichen Wegbeschreibungen gut folgen, oder brauchst du immer eine Karte?",
+     "c": "Benenne beim nächsten Spaziergang jede Abbiegung auf Spanisch, Französisch oder Italienisch."
+    },
+    "es": {
+     "t": "Izquierda, derecha, todo recto",
+     "g": "Entiende indicaciones sencillas cuando alguien te señala el camino.",
+     "p": [
+      "Inglés: «on the left» (on de LEFT) = a la izquierda, «on the right» (on de RAIT) = a la derecha, «straight on» = todo recto.",
+      "Francés: «à gauche» (a GOSH) = izquierda, «à droite» (a DRUAT) = derecha, «tout droit» (tu DRUA) = todo recto. ¡Fácil confundirlos!",
+      "Italiano: «a sinistra» = izquierda, «a destra» = derecha, «sempre dritto» (SEM-pre DRIT-to) = todo recto. Mira también sus manos."
+     ],
+     "q": "¿Se te da bien seguir indicaciones habladas, o siempre necesitas ver un mapa?",
+     "c": "En tu próximo paseo, nombra cada giro en inglés, francés o italiano."
+    },
+    "fr": {
+     "t": "Gauche, droite, tout droit",
+     "g": "Comprendre des indications simples quand quelqu'un montre le chemin.",
+     "p": [
+      "Espagnol : «a la izquierda» (iss-KIÈR-da) = à gauche, «a la derecha» (dé-RÉ-tcha) = à droite, «todo recto» = tout droit.",
+      "Anglais : «on the left» (one ze LÈFT) = à gauche, «on the right» (one ze RAÏT) = à droite, «straight on» (strèt one) = tout droit.",
+      "Italien : «a sinistra» = à gauche, «a destra» = à droite, «sempre dritto» (SÈM-pré DRIT-to) = tout droit. Regarde aussi les mains."
+     ],
+     "q": "Es-tu doué pour suivre des indications à l'oral, ou as-tu toujours besoin d'une carte ?",
+     "c": "Lors de ta prochaine balade, nomme chaque virage en espagnol, en anglais ou en italien."
+    },
+    "it": {
+     "t": "Sinistra, destra, dritto",
+     "g": "Capire indicazioni semplici quando qualcuno ti mostra la strada.",
+     "p": [
+      "Spagnolo: «a la izquierda» (is-KIER-da) = a sinistra, «a la derecha» (de-RE-cia) = a destra, «todo recto» = sempre dritto.",
+      "Francese: «à gauche» (a GOSC) = a sinistra, «à droite» (a DRUAT) = a destra, «tout droit» (tu DRUA) = dritto. Facile confonderli!",
+      "Inglese: «on the left» = a sinistra, «on the right» (on de RAIT) = a destra, «straight on» (streit on) = dritto. Guarda anche le mani."
+     ],
+     "q": "Sei bravo a seguire indicazioni a voce, o hai sempre bisogno di vedere una mappa?",
+     "c": "Nella prossima passeggiata, nomina ogni svolta in spagnolo, francese o inglese."
+    },
+    "pt": {
+     "t": "Esquerda, direita, sempre em frente",
+     "g": "Perceber indicações simples quando alguém aponta o caminho.",
+     "p": [
+      "Espanhol: «a la izquierda» (is-KIÉR-da) = à esquerda, «a la derecha» (de-RÉ-tcha) = à direita, «todo recto» = sempre em frente.",
+      "Francês: «à gauche» (a GÔCH) = esquerda, «à droite» (a DRUÁT) = direita, «tout droit» (tu DRUÁ) = em frente. Fácil de confundir!",
+      "Italiano: «a sinistra» = esquerda, «a destra» = direita, «sempre dritto» (SÉM-pre DRI-to) = em frente. Repara também nas mãos."
+     ],
+     "q": "Tens jeito para seguir indicações faladas, ou precisas sempre de ver um mapa?",
+     "c": "No próximo passeio, diz cada viragem em espanhol, francês ou italiano."
+    },
+    "pt_BR": {
+     "t": "Esquerda, direita, reto",
+     "g": "Entender indicações simples quando alguém aponta o caminho.",
+     "p": [
+      "Espanhol: «a la izquierda» (is-KIÉR-da) = à esquerda, «a la derecha» (de-RÉ-tcha) = à direita, «todo recto» = sempre reto.",
+      "Francês: «à gauche» (a GÔCH) = esquerda, «à droite» (a DRUÁT) = direita, «tout droit» (tu DRUÁ) = reto. Fácil de confundir!",
+      "Italiano: «a sinistra» = esquerda, «a destra» = direita, «sempre dritto» (SÉM-pre DRI-to) = reto. Repare também nas mãos."
+     ],
+     "q": "Você é bom em seguir indicações faladas, ou sempre precisa ver um mapa?",
+     "c": "No próximo passeio, diga cada curva em espanhol, francês ou italiano."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Near or far?",
+     "g": "Ask about distance and whether you can walk somewhere.",
+     "p": [
+      "Spanish: «¿Está cerca?» (es-TA SER-ka) = is it near? «Está lejos» (LEH-hos) = it is far. French: «C'est loin ?» (say LWAN).",
+      "Can I walk? Spanish «¿Se puede ir a pie?» (seh PWEH-deh eer a PYEH), Italian «Ci si arriva a piedi?» (chee see ar-REE-va a PYEH-dee).",
+      "Answers often come in minutes: «a cinco minutos» or «à dix minutes à pied» (ten minutes on foot). Ask them to show fingers."
+     ],
+     "q": "How far are you happy to walk on holiday before you look for a bus or taxi?",
+     "c": "Ask someone today, in any language, whether a place is near or far, and listen to the answer."
+    },
+    "de": {
+     "t": "Nah oder weit?",
+     "g": "Frag nach der Entfernung und ob man zu Fuß hingehen kann.",
+     "p": [
+      "Spanisch: «¿Está cerca?» (es-TA SSER-ka) = Ist es nah? «Está lejos» (LE-chos) = Es ist weit. Französisch: «C'est loin ?» (ssä LUÄN).",
+      "Zu Fuß? Spanisch «¿Se puede ir a pie?» (sse PUE-de ir a PJE), Italienisch «Ci si arriva a piedi?» (tschi si ar-RI-wa a PJE-di).",
+      "Antworten kommen oft in Minuten: «a cinco minutos» oder «à dix minutes à pied» (zehn Minuten zu Fuß). Lass dir Finger zeigen."
+     ],
+     "q": "Wie weit gehst du im Urlaub gern zu Fuß, bevor du einen Bus oder ein Taxi suchst?",
+     "c": "Frag heute jemanden in irgendeiner Sprache, ob ein Ort nah oder weit ist, und hör gut zu."
+    },
+    "es": {
+     "t": "¿Cerca o lejos?",
+     "g": "Pregunta por la distancia y si se puede ir andando.",
+     "p": [
+      "Inglés: «Is it near?» (is it NIR) = ¿está cerca? «It's far» (its FAR) = está lejos. Francés: «C'est loin ?» (se LUAN).",
+      "¿Andando? Inglés «Can I walk there?» (ken ai UOK der), italiano «Ci si arriva a piedi?» (chi si a-RRI-va a PIE-di).",
+      "Las respuestas suelen ir en minutos: «five minutes away» o «à dix minutes à pied» (diez minutos a pie). Pide que lo marquen con dedos."
+     ],
+     "q": "¿Cuánto te gusta caminar en vacaciones antes de buscar un autobús o un taxi?",
+     "c": "Pregunta hoy a alguien, en cualquier idioma, si un sitio está cerca o lejos, y escucha la respuesta."
+    },
+    "fr": {
+     "t": "Près ou loin ?",
+     "g": "Demander la distance et si l'on peut y aller à pied.",
+     "p": [
+      "Espagnol : «¿Está cerca?» (èss-TA SSÈR-ka) = c'est près ? «Está lejos» (LÉ-khoss) = c'est loin. Anglais : «Is it far?» (iz it FAR).",
+      "À pied ? Espagnol «¿Se puede ir a pie?» (sé POUÉ-dé ir a PIÉ), italien «Ci si arriva a piedi?» (tchi si ar-RI-va a PIÉ-di).",
+      "Les réponses sont souvent en minutes : «a cinco minutos» ou «ten minutes on foot» (dix minutes à pied). Fais montrer avec les doigts."
+     ],
+     "q": "Jusqu'où aimes-tu marcher en vacances avant de chercher un bus ou un taxi ?",
+     "c": "Demande aujourd'hui à quelqu'un, dans n'importe quelle langue, si un lieu est près ou loin, et écoute."
+    },
+    "it": {
+     "t": "Vicino o lontano?",
+     "g": "Chiedere la distanza e se ci si può andare a piedi.",
+     "p": [
+      "Spagnolo: «¿Está cerca?» (es-TA SER-ka) = è vicino? «Está lejos» (LE-hos) = è lontano. Francese: «C'est loin ?» (se LUẼ).",
+      "A piedi? Spagnolo «¿Se puede ir a pie?» (se PUE-de ir a PIE), inglese «Can I walk there?» (ken ai uok dear).",
+      "Le risposte arrivano spesso in minuti: «a cinco minutos» o «à dix minutes à pied» (dieci minuti a piedi). Fatti mostrare le dita."
+     ],
+     "q": "Quanto ti piace camminare in vacanza prima di cercare un autobus o un taxi?",
+     "c": "Chiedi oggi a qualcuno, in qualsiasi lingua, se un posto è vicino o lontano, e ascolta la risposta."
+    },
+    "pt": {
+     "t": "Perto ou longe?",
+     "g": "Perguntar a distância e se dá para ir a pé.",
+     "p": [
+      "Espanhol: «¿Está cerca?» (es-TÁ SSÉR-ka) = é perto? «Está lejos» (LÉ-rros) = é longe. Francês: «C'est loin ?» (sé LUÃ).",
+      "A pé? Espanhol «¿Se puede ir a pie?» (se PUÉ-de ir a PIÉ), italiano «Ci si arriva a piedi?» (tchi si ar-RI-va a PIÉ-di).",
+      "As respostas vêm muitas vezes em minutos: «a cinco minutos» ou «à dix minutes à pied» (dez minutos a pé). Pede para mostrarem."
+     ],
+     "q": "Quanto gostas de caminhar nas férias antes de procurares um autocarro ou um táxi?",
+     "c": "Pergunta hoje a alguém, em qualquer língua, se um sítio é perto ou longe, e ouve a resposta."
+    },
+    "pt_BR": {
+     "t": "Perto ou longe?",
+     "g": "Perguntar a distância e se dá para ir a pé.",
+     "p": [
+      "Espanhol: «¿Está cerca?» (es-TÁ SSÉR-ka) = é perto? «Está lejos» (LÉ-rros) = é longe. Francês: «C'est loin ?» (sé LUÃ).",
+      "A pé? Espanhol «¿Se puede ir a pie?» (se PUÉ-de ir a PIÉ), italiano «Ci si arriva a piedi?» (tchi si ar-RI-va a PIÉ-di).",
+      "As respostas costumam vir em minutos: «a cinco minutos» ou «à dix minutes à pied» (dez minutos a pé). Peça para mostrarem."
+     ],
+     "q": "Quanto você gosta de caminhar nas férias antes de procurar um ônibus ou um táxi?",
+     "c": "Pergunte hoje a alguém, em qualquer idioma, se um lugar é perto ou longe, e escute a resposta."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading common signs",
+     "g": "Recognise entrance, exit, open, closed, push, pull and other daily signs.",
+     "p": [
+      "Spanish: «Entrada» = entrance, «Salida» = exit, «Abierto» = open, «Cerrado» = closed, «Empuje» = push, «Tire» = pull.",
+      "French: «Entrée», «Sortie», «Ouvert», «Fermé», «Poussez» = push, «Tirez» = pull. German: «Eingang», «Ausgang», «Drücken», «Ziehen».",
+      "Tricky one: Italian «Tirare» means pull, not push, and «Spingere» means push. Glance at the handle before you try."
+     ],
+     "q": "Have you ever been confused by a sign abroad? What happened?",
+     "c": "Spot five signs around you today and translate them into Spanish, French or German."
+    },
+    "de": {
+     "t": "Häufige Schilder lesen",
+     "g": "Erkenne Eingang, Ausgang, offen, geschlossen, drücken, ziehen und andere Alltagsschilder.",
+     "p": [
+      "Spanisch: «Entrada» = Eingang, «Salida» = Ausgang, «Abierto» = offen, «Cerrado» = geschlossen, «Empuje» = drücken, «Tire» = ziehen.",
+      "Französisch: «Entrée», «Sortie», «Ouvert», «Fermé», «Poussez» = drücken, «Tirez» = ziehen. Englisch: «Push» und «Pull».",
+      "Vorsicht: Italienisch «Tirare» heißt ziehen, nicht drücken, und «Spingere» heißt drücken. Schau kurz auf den Griff."
+     ],
+     "q": "Hat dich ein Schild im Ausland schon einmal verwirrt? Was ist passiert?",
+     "c": "Entdecke heute fünf Schilder um dich herum und übersetze sie ins Spanische, Französische oder Englische."
+    },
+    "es": {
+     "t": "Leer carteles comunes",
+     "g": "Reconoce entrada, salida, abierto, cerrado, empujar, tirar y otros carteles diarios.",
+     "p": [
+      "Inglés: «Entrance» = entrada, «Exit» = salida, «Open» = abierto, «Closed» = cerrado, «Push» = empujar, «Pull» = tirar.",
+      "Francés: «Entrée», «Sortie», «Ouvert», «Fermé», «Poussez» = empuje, «Tirez» = tire. Alemán: «Eingang», «Ausgang», «Drücken», «Ziehen».",
+      "Ojo: en italiano «Tirare» es tirar, y «Spingere» es empujar. El inglés «Pull» parece «empujar» pero es tirar. Mira el tirador."
+     ],
+     "q": "¿Alguna vez te confundió un cartel en el extranjero? ¿Qué pasó?",
+     "c": "Busca hoy cinco carteles a tu alrededor y tradúcelos al inglés, francés o alemán."
+    },
+    "fr": {
+     "t": "Lire les panneaux courants",
+     "g": "Reconnaître entrée, sortie, ouvert, fermé, poussez, tirez et d'autres panneaux du quotidien.",
+     "p": [
+      "Espagnol : «Entrada» = entrée, «Salida» = sortie, «Abierto» = ouvert, «Cerrado» = fermé, «Empuje» = poussez, «Tire» = tirez.",
+      "Anglais : «Entrance», «Exit», «Open», «Closed», «Push» = poussez, «Pull» = tirez. Allemand : «Eingang», «Ausgang», «Drücken», «Ziehen».",
+      "Piège : en italien «Tirare» veut dire tirer et «Spingere» pousser. En anglais, «Pull» veut dire tirer. Regarde la poignée."
+     ],
+     "q": "Un panneau t'a-t-il déjà embrouillé à l'étranger ? Que s'est-il passé ?",
+     "c": "Repère aujourd'hui cinq panneaux autour de toi et traduis-les en espagnol, en anglais ou en allemand."
+    },
+    "it": {
+     "t": "Leggere i cartelli comuni",
+     "g": "Riconoscere entrata, uscita, aperto, chiuso, spingere, tirare e altri cartelli quotidiani.",
+     "p": [
+      "Spagnolo: «Entrada» = entrata, «Salida» = uscita, «Abierto» = aperto, «Cerrado» = chiuso, «Empuje» = spingere, «Tire» = tirare.",
+      "Francese: «Entrée», «Sortie», «Ouvert», «Fermé», «Poussez» = spingere, «Tirez» = tirare. Tedesco: «Eingang», «Ausgang», «Drücken», «Ziehen».",
+      "Attenzione: l'inglese «Pull» sembra spingere ma vuol dire tirare, e «Push» vuol dire spingere. Guarda la maniglia."
+     ],
+     "q": "Ti è mai capitato di confonderti con un cartello all'estero? Cosa è successo?",
+     "c": "Trova oggi cinque cartelli intorno a te e traducili in spagnolo, francese o tedesco."
+    },
+    "pt": {
+     "t": "Ler sinais comuns",
+     "g": "Reconhecer entrada, saída, aberto, fechado, empurre, puxe e outros sinais do dia a dia.",
+     "p": [
+      "Espanhol: «Entrada» = entrada, «Salida» = saída, «Abierto» = aberto, «Cerrado» = fechado, «Empuje» = empurre, «Tire» = puxe.",
+      "Francês: «Entrée», «Sortie», «Ouvert», «Fermé», «Poussez» = empurre, «Tirez» = puxe. Alemão: «Eingang», «Ausgang», «Drücken», «Ziehen».",
+      "Armadilha: o espanhol «Tire» e o italiano «Tirare» querem dizer puxar, e o inglês «Push» quer dizer empurrar. Olha para o puxador."
+     ],
+     "q": "Já te confundiste com algum sinal no estrangeiro? O que aconteceu?",
+     "c": "Encontra hoje cinco sinais à tua volta e traduz para espanhol, francês ou alemão."
+    },
+    "pt_BR": {
+     "t": "Ler placas comuns",
+     "g": "Reconhecer entrada, saída, aberto, fechado, empurre, puxe e outras placas do dia a dia.",
+     "p": [
+      "Espanhol: «Entrada» = entrada, «Salida» = saída, «Abierto» = aberto, «Cerrado» = fechado, «Empuje» = empurre, «Tire» = puxe.",
+      "Francês: «Entrée», «Sortie», «Ouvert», «Fermé», «Poussez» = empurre, «Tirez» = puxe. Alemão: «Eingang», «Ausgang», «Drücken», «Ziehen».",
+      "Pegadinha: o espanhol «Tire» e o italiano «Tirare» significam puxar, e o inglês «Push» significa empurrar. Olhe a maçaneta."
+     ],
+     "q": "Alguma placa já te confundiu no exterior? O que aconteceu?",
+     "c": "Encontre hoje cinco placas ao seu redor e traduza para espanhol, francês ou alemão."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding the toilet",
+     "g": "Ask politely for the restroom and recognise the words on the doors.",
+     "p": [
+      "Spanish: «¿Dónde está el baño?» (DON-deh es-TA el BA-nyo). In Spain you may also see «Aseos» or «Servicios».",
+      "French: «Où sont les toilettes ?» (oo son lay twa-LET). Italian: «Dov'è il bagno?» (do-VEH eel BA-nyo).",
+      "Doors: «Damas / Caballeros», «Dames / Hommes», «Damen / Herren». Careful in Italian: «Signore» = women, «Signori» = men."
+     ],
+     "q": "What is the funniest or most surprising toilet sign you have ever seen while travelling?",
+     "c": "Say the toilet question in Spanish, French and Italian without looking, three times in a row."
+    },
+    "de": {
+     "t": "Die Toilette finden",
+     "g": "Frag höflich nach der Toilette und erkenne die Wörter an den Türen.",
+     "p": [
+      "Spanisch: «¿Dónde está el baño?» (DON-de es-TA el BA-njo). In Spanien siehst du auch «Aseos» oder «Servicios».",
+      "Französisch: «Où sont les toilettes ?» (u ssõ le tua-LÄT). Italienisch: «Dov'è il bagno?» (do-WÄ il BA-njo).",
+      "Türen: «Damas / Caballeros», «Dames / Hommes», «Ladies / Gents». Vorsicht Italienisch: «Signore» = Damen, «Signori» = Herren."
+     ],
+     "q": "Was war das lustigste oder überraschendste Toilettenschild, das du auf Reisen gesehen hast?",
+     "c": "Sag die Toilettenfrage auf Spanisch, Französisch und Italienisch ohne Hinschauen, dreimal hintereinander."
+    },
+    "es": {
+     "t": "Encontrar el baño",
+     "g": "Pregunta con educación por el baño y reconoce las palabras de las puertas.",
+     "p": [
+      "Inglés: «Where is the toilet?» (uer is de TOI-let). En EE. UU. se dice más «restroom» (REST-rum), y en el Reino Unido «loo».",
+      "Francés: «Où sont les toilettes ?» (u son le tua-LET). Italiano: «Dov'è il bagno?» (do-VÉ il BA-ño).",
+      "Puertas: «Ladies / Gents», «Dames / Hommes», «Damen / Herren». Cuidado en italiano: «Signore» = mujeres, «Signori» = hombres."
+     ],
+     "q": "¿Cuál es el cartel de baño más curioso o divertido que has visto viajando?",
+     "c": "Di la pregunta del baño en inglés, francés e italiano sin mirar, tres veces seguidas."
+    },
+    "fr": {
+     "t": "Trouver les toilettes",
+     "g": "Demander poliment les toilettes et reconnaître les mots sur les portes.",
+     "p": [
+      "Espagnol : «¿Dónde está el baño?» (DONE-dé èss-TA él BA-gno). En Espagne, on voit aussi «Aseos» ou «Servicios».",
+      "Anglais : «Where is the toilet?» (ouèr iz ze TOÏ-lète), aux États-Unis «restroom». Italien : «Dov'è il bagno?» (do-VÈ il BA-gno).",
+      "Portes : «Damas / Caballeros», «Ladies / Gents», «Damen / Herren». Attention en italien : «Signore» = femmes, «Signori» = hommes."
+     ],
+     "q": "Quel est le panneau de toilettes le plus drôle ou surprenant que tu aies vu en voyage ?",
+     "c": "Dis la question des toilettes en espagnol, en anglais et en italien sans regarder, trois fois de suite."
+    },
+    "it": {
+     "t": "Trovare il bagno",
+     "g": "Chiedere con garbo del bagno e riconoscere le parole sulle porte.",
+     "p": [
+      "Spagnolo: «¿Dónde está el baño?» (DON-de es-TA el BA-gnio). In Spagna si vede anche «Aseos» o «Servicios».",
+      "Francese: «Où sont les toilettes ?» (u son le tua-LÈT). Inglese: «Where is the toilet?» (uer is de TOI-let), negli USA «restroom».",
+      "Porte: «Damas / Caballeros», «Dames / Hommes», «Damen / Herren». In tedesco «Damen» = donne e «Herren» = uomini."
+     ],
+     "q": "Qual è il cartello del bagno più buffo o sorprendente che hai visto in viaggio?",
+     "c": "Di' la domanda sul bagno in spagnolo, francese e inglese senza guardare, tre volte di fila."
+    },
+    "pt": {
+     "t": "Encontrar a casa de banho",
+     "g": "Perguntar com educação pela casa de banho e reconhecer as palavras nas portas.",
+     "p": [
+      "Espanhol: «¿Dónde está el baño?» (DÔN-de es-TÁ el BÁ-nho). Em Espanha também vês «Aseos» ou «Servicios».",
+      "Francês: «Où sont les toilettes ?» (u sõ lê tuá-LÉT). Italiano: «Dov'è il bagno?» (do-VÉ il BÁ-nho).",
+      "Portas: «Damas / Caballeros», «Dames / Hommes», «Damen / Herren». Cuidado no italiano: «Signore» = senhoras, «Signori» = homens."
+     ],
+     "q": "Qual foi o sinal de casa de banho mais engraçado ou surpreendente que já viste em viagem?",
+     "c": "Diz a pergunta da casa de banho em espanhol, francês e italiano sem olhar, três vezes seguidas."
+    },
+    "pt_BR": {
+     "t": "Encontrar o banheiro",
+     "g": "Perguntar com educação pelo banheiro e reconhecer as palavras nas portas.",
+     "p": [
+      "Espanhol: «¿Dónde está el baño?» (DÔN-de es-TÁ el BÁ-nho). Na Espanha você também vê «Aseos» ou «Servicios».",
+      "Francês: «Où sont les toilettes ?» (u sõ lê tuá-LÉT). Italiano: «Dov'è il bagno?» (do-VÉ il BÁ-nho).",
+      "Portas: «Damas / Caballeros», «Dames / Hommes», «Damen / Herren». Cuidado no italiano: «Signore» = mulheres, «Signori» = homens."
+     ],
+     "q": "Qual foi a placa de banheiro mais engraçada ou surpreendente que você já viu viajando?",
+     "c": "Diga a pergunta do banheiro em espanhol, francês e italiano sem olhar, três vezes seguidas."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for help",
+     "g": "Use short phrases to ask a stranger for a hand in a friendly way.",
+     "p": [
+      "Spanish: «¿Me puede ayudar?» (meh PWEH-deh a-yoo-DAR). French: «Vous pouvez m'aider ?» (voo poo-vay meh-DAY).",
+      "Italian: «Mi può aiutare?» (mee pwo a-yoo-TA-reh). Begin with excuse me from day 4 and finish with a warm thank you.",
+      "Lost? Spanish «Estoy perdido» (men) or «Estoy perdida» (women); French «Je suis perdu» or «Je suis perdue» (zhuh swee per-DEW)."
+     ],
+     "q": "Do you find it easy to ask strangers for help when you travel, or do you prefer to sort things out alone?",
+     "c": "Combine excuse me, can you help me and thank you into one smooth sentence in a new language."
+    },
+    "de": {
+     "t": "Um Hilfe bitten",
+     "g": "Nutze kurze Sätze, um Fremde freundlich um Hilfe zu bitten.",
+     "p": [
+      "Spanisch: «¿Me puede ayudar?» (me PUE-de a-ju-DAR). Französisch: «Vous pouvez m'aider ?» (wu pu-we mä-DE).",
+      "Italienisch: «Mi può aiutare?» (mi puo a-ju-TA-re). Beginne mit der Entschuldigung von Tag 4 und ende mit einem herzlichen Dank.",
+      "Verlaufen? Spanisch «Estoy perdido» (Männer) oder «Estoy perdida» (Frauen); Französisch «Je suis perdu» oder «perdue» (pär-DÜ)."
+     ],
+     "q": "Fällt es dir auf Reisen leicht, Fremde um Hilfe zu bitten, oder regelst du lieber alles allein?",
+     "c": "Verbinde Entschuldigung, Können Sie mir helfen und Danke zu einem flüssigen Satz in einer neuen Sprache."
+    },
+    "es": {
+     "t": "Pedir ayuda",
+     "g": "Usa frases cortas para pedir una mano a un desconocido con amabilidad.",
+     "p": [
+      "Inglés: «Can you help me?» (ken yu JELP mi). Francés: «Vous pouvez m'aider ?» (vu pu-ve me-DÉ).",
+      "Italiano: «Mi può aiutare?» (mi puó a-iu-TA-re). Empieza con el perdón del día 4 y termina con un gracias cálido.",
+      "¿Perdido? Inglés «I'm lost» (aim LOST); francés «Je suis perdu» (hombres) o «Je suis perdue» (mujeres), dicho yə sui per-DÜ."
+     ],
+     "q": "¿Te resulta fácil pedir ayuda a desconocidos cuando viajas, o prefieres resolverlo todo solo?",
+     "c": "Une perdón, ¿me puede ayudar? y gracias en una sola frase fluida en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Demander de l'aide",
+     "g": "Utiliser des phrases courtes pour demander un coup de main à un inconnu avec gentillesse.",
+     "p": [
+      "Espagnol : «¿Me puede ayudar?» (mé POUÉ-dé a-you-DAR). Anglais : «Can you help me?» (kène you HÈLP mi).",
+      "Italien : «Mi può aiutare?» (mi pouo a-iou-TA-ré). Commence par l'excusez-moi du jour 4 et finis par un merci chaleureux.",
+      "Perdu ? Espagnol «Estoy perdido» (hommes) ou «Estoy perdida» (femmes) ; anglais «I'm lost» (aïm LOST)."
+     ],
+     "q": "Est-ce facile pour toi de demander de l'aide à des inconnus en voyage, ou préfères-tu te débrouiller seul ?",
+     "c": "Enchaîne excusez-moi, vous pouvez m'aider et merci en une phrase fluide dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Chiedere aiuto",
+     "g": "Usare frasi brevi per chiedere una mano a uno sconosciuto con gentilezza.",
+     "p": [
+      "Spagnolo: «¿Me puede ayudar?» (me PUE-de a-iu-DAR). Francese: «Vous pouvez m'aider ?» (vu pu-ve mè-DÉ).",
+      "Inglese: «Can you help me?» (ken iu HELP mi). Inizia con lo scusi del giorno 4 e chiudi con un grazie caloroso.",
+      "Ti sei perso? Spagnolo «Estoy perdido» (uomini) o «Estoy perdida» (donne); francese «Je suis perdu» o «perdue» (per-DÜ)."
+     ],
+     "q": "Ti viene facile chiedere aiuto a sconosciuti in viaggio, o preferisci cavartela da solo?",
+     "c": "Unisci scusi, mi può aiutare e grazie in un'unica frase fluida in una lingua nuova."
+    },
+    "pt": {
+     "t": "Pedir ajuda",
+     "g": "Usar frases curtas para pedir uma mão a um desconhecido com simpatia.",
+     "p": [
+      "Espanhol: «¿Me puede ayudar?» (me PUÉ-de a-iu-DÁR). Francês: «Vous pouvez m'aider ?» (vu pu-vê mé-DÊ).",
+      "Italiano: «Mi può aiutare?» (mi puó a-iu-TÁ-re). Começa com o desculpe do dia 4 e acaba com um obrigado caloroso.",
+      "Perdido? Espanhol «Estoy perdido» (homens) ou «Estoy perdida» (mulheres); francês «Je suis perdu» ou «perdue» (per-DÜ)."
+     ],
+     "q": "Achas fácil pedir ajuda a desconhecidos quando viajas, ou preferes resolver tudo sozinho?",
+     "c": "Junta desculpe, pode ajudar-me e obrigado numa só frase fluida numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Pedir ajuda",
+     "g": "Usar frases curtas para pedir uma mão a um desconhecido com simpatia.",
+     "p": [
+      "Espanhol: «¿Me puede ayudar?» (me PUÉ-de a-iu-DÁR). Francês: «Vous pouvez m'aider ?» (vu pu-vê mé-DÊ).",
+      "Italiano: «Mi può aiutare?» (mi puó a-iu-TÁ-re). Comece com o com licença do dia 4 e termine com um obrigado caloroso.",
+      "Perdido? Espanhol «Estoy perdido» (homens) ou «Estoy perdida» (mulheres); francês «Je suis perdu» ou «perdue» (per-DÜ)."
+     ],
+     "q": "Você acha fácil pedir ajuda a desconhecidos quando viaja, ou prefere resolver tudo sozinho?",
+     "c": "Junte com licença, pode me ajudar e obrigado numa frase só, fluida, num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pointing and gestures",
+     "g": "Combine a few words with gestures, and know which gestures to avoid in some places.",
+     "p": [
+      "Point and say this one: Spanish «Este, por favor» (ES-teh), French «Celui-ci» (suh-lwee-SEE), Italian «Questo» (KWES-to).",
+      "Point at things, not people: in many cultures pointing at someone with one finger is impolite, so use an open hand.",
+      "Thumbs-up and the OK hand sign are friendly in many places but rude in some countries, so a smile and nod are safer."
+     ],
+     "q": "Which gestures do people use a lot where you live that a visitor might not understand?",
+     "c": "Order or ask for one thing today using only a few words plus a pointing gesture."
+    },
+    "de": {
+     "t": "Zeigen und Gesten",
+     "g": "Kombiniere ein paar Wörter mit Gesten und kenne Gesten, die man vielerorts meiden sollte.",
+     "p": [
+      "Zeig und sag dieses hier: Spanisch «Este, por favor» (ES-te), Französisch «Celui-ci» (ssö-lüi-SSI), Italienisch «Questo» (KUES-to).",
+      "Zeig auf Dinge, nicht auf Menschen: In vielen Kulturen ist es unhöflich, mit einem Finger auf jemanden zu zeigen. Nimm die offene Hand.",
+      "Daumen hoch und das OK-Zeichen sind vielerorts freundlich, in manchen Ländern aber unhöflich. Lächeln und Nicken sind sicherer."
+     ],
+     "q": "Welche Gesten nutzt man bei dir oft, die ein Besucher vielleicht nicht versteht?",
+     "c": "Bestell oder erfrage heute etwas nur mit ein paar Wörtern und einer Zeigegeste."
+    },
+    "es": {
+     "t": "Señalar y gestos",
+     "g": "Combina pocas palabras con gestos y conoce los gestos que conviene evitar en algunos lugares.",
+     "p": [
+      "Señala y di este: inglés «This one, please» (dis UAN pliis), francés «Celui-ci» (se-lui-SI), italiano «Questo» (KUES-to).",
+      "Señala cosas, no personas: en muchas culturas apuntar a alguien con un dedo es de mala educación; usa la mano abierta.",
+      "El pulgar arriba y el gesto de OK son amables en muchos sitios pero groseros en algunos países; sonreír y asentir es más seguro."
+     ],
+     "q": "¿Qué gestos se usan mucho donde vives que un visitante quizá no entendería?",
+     "c": "Pide hoy una cosa usando solo unas pocas palabras y un gesto de señalar."
+    },
+    "fr": {
+     "t": "Montrer du doigt et gestes",
+     "g": "Associer quelques mots à des gestes et connaître les gestes à éviter dans certains pays.",
+     "p": [
+      "Montre et dis celui-ci : espagnol «Este, por favor» (ÈSS-té), anglais «This one, please» (ziss OUANE pliz), italien «Questo».",
+      "Montre les objets, pas les gens : dans beaucoup de cultures, pointer quelqu'un du doigt est impoli ; utilise la main ouverte.",
+      "Le pouce levé et le signe OK sont sympathiques dans bien des pays mais grossiers dans d'autres ; sourire et hocher la tête, c'est plus sûr."
+     ],
+     "q": "Quels gestes utilise-t-on beaucoup chez toi qu'un visiteur pourrait ne pas comprendre ?",
+     "c": "Commande ou demande une chose aujourd'hui avec juste quelques mots et un geste pour montrer."
+    },
+    "it": {
+     "t": "Indicare e gesti",
+     "g": "Unire poche parole ai gesti e sapere quali gesti evitare in alcuni paesi.",
+     "p": [
+      "Indica e di' questo: spagnolo «Este, por favor» (ES-te), francese «Celui-ci» (sö-lüi-SÌ), inglese «This one, please».",
+      "Indica le cose, non le persone: in molte culture puntare il dito contro qualcuno è scortese; usa la mano aperta.",
+      "Il pollice in su e il segno OK sono amichevoli in tanti posti ma offensivi in alcuni paesi; sorridere e annuire è più sicuro."
+     ],
+     "q": "Quali gesti si usano molto dove vivi che un visitatore potrebbe non capire?",
+     "c": "Ordina o chiedi oggi una cosa usando solo poche parole e un gesto per indicare."
+    },
+    "pt": {
+     "t": "Apontar e gestos",
+     "g": "Juntar poucas palavras a gestos e saber que gestos evitar em alguns lugares.",
+     "p": [
+      "Aponta e diz este: espanhol «Este, por favor» (ÉS-te), francês «Celui-ci» (se-lüi-SSI), italiano «Questo» (KUÉS-to).",
+      "Aponta para coisas, não para pessoas: em muitas culturas apontar o dedo a alguém é falta de educação; usa a mão aberta.",
+      "O polegar para cima e o sinal de OK são simpáticos em muitos sítios mas ofensivos em alguns países; sorrir e acenar é mais seguro."
+     ],
+     "q": "Que gestos se usam muito onde vives que um visitante talvez não percebesse?",
+     "c": "Pede hoje uma coisa usando só algumas palavras e um gesto de apontar."
+    },
+    "pt_BR": {
+     "t": "Apontar e gestos",
+     "g": "Juntar poucas palavras a gestos e saber quais gestos evitar em alguns lugares.",
+     "p": [
+      "Aponte e diga este: espanhol «Este, por favor» (ÉS-te), francês «Celui-ci» (se-lüi-SSI), italiano «Questo» (KUÉS-to).",
+      "Aponte para coisas, não para pessoas: em muitas culturas apontar o dedo para alguém é falta de educação; use a mão aberta.",
+      "O sinal de OK com os dedos é ofensivo no Brasil e em outros países, e o joinha também pode ser; sorrir e acenar é mais seguro."
+     ],
+     "q": "Que gestos se usam muito onde você mora que um visitante talvez não entendesse?",
+     "c": "Peça hoje uma coisa usando só algumas palavras e um gesto de apontar."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first phrases",
+     "g": "Recap greetings, politeness, numbers and asking the way in one mini trip.",
+     "p": [
+      "Greet and ask: «Buenos días. Disculpe, ¿dónde está la estación?» Answer: «Todo recto y a la izquierda.» Then «¡Gracias!»",
+      "Buy and count: «Bonjour ! Deux billets, s'il vous plaît. C'est combien ?» Listen for the number and say «Merci, au revoir !»",
+      "Rescue lines: «No entiendo», «Più piano, per favore» and «¿Habla inglés?». Mistakes are fine, a smile does the rest."
+     ],
+     "q": "Which phrase from the last twenty days do you feel most confident with, and which one still feels tricky?",
+     "c": "Act out today's mini trip aloud, playing both the traveller and the local."
+    },
+    "de": {
+     "t": "Wiederholung: deine ersten Sätze",
+     "g": "Wiederhole Gruß, Höflichkeit, Zahlen und Wegfragen in einer Mini-Reise.",
+     "p": [
+      "Grüßen und fragen: «Buenos días. Disculpe, ¿dónde está la estación?» Antwort: «Todo recto y a la izquierda.» Dann «¡Gracias!»",
+      "Kaufen und zählen: «Bonjour ! Deux billets, s'il vous plaît. C'est combien ?» Hör auf die Zahl und sag «Merci, au revoir !»",
+      "Rettungssätze: «No entiendo», «Più piano, per favore» und «¿Habla inglés?». Fehler sind okay, ein Lächeln erledigt den Rest."
+     ],
+     "q": "Bei welchem Satz der letzten zwanzig Tage fühlst du dich am sichersten, und welcher ist noch knifflig?",
+     "c": "Spiel die heutige Mini-Reise laut nach, als Reisender und als Einheimischer."
+    },
+    "es": {
+     "t": "Repaso: tus primeras frases",
+     "g": "Repasa saludos, cortesía, números y preguntar el camino en un mini viaje.",
+     "p": [
+      "Saluda y pregunta: «Good morning. Excuse me, where is the station?» Respuesta: «Straight on and left.» Luego «Thank you!»",
+      "Compra y cuenta: «Bonjour ! Deux billets, s'il vous plaît. C'est combien ?» Escucha el número y di «Merci, au revoir !»",
+      "Frases salvavidas: «I don't understand», «Più piano, per favore» y «Parlez-vous anglais ?». Los errores no importan; sonríe."
+     ],
+     "q": "¿Con qué frase de estos veinte días te sientes más seguro, y cuál te sigue costando?",
+     "c": "Representa en voz alta el mini viaje de hoy, haciendo de viajero y de persona local."
+    },
+    "fr": {
+     "t": "Révision : tes premières phrases",
+     "g": "Réviser salutations, politesse, nombres et demander son chemin dans un mini voyage.",
+     "p": [
+      "Saluer et demander : «Buenos días. Disculpe, ¿dónde está la estación?» Réponse : «Todo recto y a la izquierda.» Puis «¡Gracias!»",
+      "Acheter et compter : «Hello! Two tickets, please. How much is it?» Écoute le nombre et dis «Thank you, goodbye!»",
+      "Phrases de secours : «No entiendo», «Più piano, per favore» et «Do you speak French?». Les erreurs, ce n'est rien ; souris."
+     ],
+     "q": "Avec quelle phrase de ces vingt jours te sens-tu le plus à l'aise, et laquelle reste difficile ?",
+     "c": "Joue à voix haute le mini voyage du jour, en étant le voyageur puis l'habitant."
+    },
+    "it": {
+     "t": "Ripasso: le tue prime frasi",
+     "g": "Ripassare saluti, cortesia, numeri e chiedere la strada in un mini viaggio.",
+     "p": [
+      "Saluta e chiedi: «Buenos días. Disculpe, ¿dónde está la estación?» Risposta: «Todo recto y a la izquierda.» Poi «¡Gracias!»",
+      "Compra e conta: «Bonjour ! Deux billets, s'il vous plaît. C'est combien ?» Ascolta il numero e di' «Merci, au revoir !»",
+      "Frasi di salvataggio: «No entiendo», «Slower, please» e «¿Habla inglés?». Gli errori vanno bene, un sorriso fa il resto."
+     ],
+     "q": "Con quale frase di questi venti giorni ti senti più sicuro, e quale ti sembra ancora difficile?",
+     "c": "Recita ad alta voce il mini viaggio di oggi, facendo sia il viaggiatore sia la persona del posto."
+    },
+    "pt": {
+     "t": "Revisão: as tuas primeiras frases",
+     "g": "Rever cumprimentos, delicadeza, números e perguntar o caminho numa mini viagem.",
+     "p": [
+      "Cumprimenta e pergunta: «Buenos días. Disculpe, ¿dónde está la estación?» Resposta: «Todo recto y a la izquierda.» E «¡Gracias!»",
+      "Compra e conta: «Bonjour ! Deux billets, s'il vous plaît. C'est combien ?» Ouve o número e diz «Merci, au revoir !»",
+      "Frases de socorro: «No entiendo», «Più piano, per favore» e «¿Habla inglés?». Errar não faz mal, um sorriso faz o resto."
+     ],
+     "q": "Com que frase destes vinte dias te sentes mais seguro, e qual ainda te parece difícil?",
+     "c": "Encena em voz alta a mini viagem de hoje, fazendo de viajante e de pessoa local."
+    },
+    "pt_BR": {
+     "t": "Revisão: suas primeiras frases",
+     "g": "Revisar cumprimentos, educação, números e perguntar o caminho numa mini viagem.",
+     "p": [
+      "Cumprimente e pergunte: «Buenos días. Disculpe, ¿dónde está la estación?» Resposta: «Todo recto y a la izquierda.» E «¡Gracias!»",
+      "Compre e conte: «Bonjour ! Deux billets, s'il vous plaît. C'est combien ?» Ouça o número e diga «Merci, au revoir !»",
+      "Frases de socorro: «No entiendo», «Più piano, per favore» e «¿Habla inglés?». Errar não tem problema, um sorriso faz o resto."
+     ],
+     "q": "Com qual frase destes vinte dias você se sente mais seguro, e qual ainda parece difícil?",
+     "c": "Encene em voz alta a mini viagem de hoje, fazendo o viajante e a pessoa local."
+    }
+   }
+  }
+ ]
+}

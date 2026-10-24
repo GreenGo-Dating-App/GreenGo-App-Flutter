@@ -1,0 +1,835 @@
+{
+ "topic": "vegan",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pasta, the plant-based way",
+     "g": "Know that many dried pastas are egg-free and build easy sauces on vegetables.",
+     "p": [
+      "Most dried durum wheat pasta is just semolina and water; fresh pasta often contains egg, so check the label.",
+      "Classic sauces like aglio e olio, arrabbiata and marinara are naturally plant-based.",
+      "Save a cup of starchy pasta water to make any vegetable sauce silky and help it cling."
+     ],
+     "q": "What is your go-to pasta sauce, and could it be made plant-based?",
+     "c": "Cook pasta with a simple tomato and garlic sauce, adding a splash of pasta water at the end."
+    },
+    "de": {
+     "t": "Pasta auf pflanzliche Art",
+     "g": "Wisse, dass viele getrocknete Nudeln eifrei sind, und baue einfache Saucen aus Gemüse.",
+     "p": [
+      "Die meisten getrockneten Hartweizennudeln bestehen nur aus Grieß und Wasser; frische enthalten oft Ei, Etikett prüfen.",
+      "Klassiker wie Aglio e Olio, Arrabbiata und Marinara sind von Natur aus pflanzlich.",
+      "Heb eine Tasse stärkehaltiges Nudelwasser auf, es macht jede Gemüsesauce seidig und haftend."
+     ],
+     "q": "Was ist deine Lieblingssauce zu Pasta, und ginge sie auch pflanzlich?",
+     "c": "Koche Pasta mit einfacher Tomaten-Knoblauch-Sauce und gib zum Schluss einen Schuss Nudelwasser dazu."
+    },
+    "es": {
+     "t": "Pasta al estilo vegetal",
+     "g": "Saber que mucha pasta seca no lleva huevo y preparar salsas fáciles con verduras.",
+     "p": [
+      "La mayoría de la pasta seca de trigo duro es solo sémola y agua; la fresca suele llevar huevo, mira la etiqueta.",
+      "Salsas clásicas como aglio e olio, arrabbiata y marinara son vegetales por naturaleza.",
+      "Guarda una taza del agua de cocción: su almidón deja cualquier salsa de verduras sedosa y bien ligada."
+     ],
+     "q": "¿Cuál es tu salsa de pasta favorita y podría hacerse vegetal?",
+     "c": "Cocina pasta con una salsa sencilla de tomate y ajo y añade un chorrito del agua de cocción al final."
+    },
+    "fr": {
+     "t": "Les pâtes, version végétale",
+     "g": "Savoir que beaucoup de pâtes sèches sont sans œuf et préparer des sauces faciles aux légumes.",
+     "p": [
+      "La plupart des pâtes sèches de blé dur ne contiennent que semoule et eau ; les fraîches ont souvent des œufs, lis l’étiquette.",
+      "Des sauces classiques comme aglio e olio, arrabbiata et marinara sont naturellement végétales.",
+      "Garde une tasse d’eau de cuisson amidonnée pour rendre toute sauce aux légumes soyeuse et bien liée."
+     ],
+     "q": "Quelle est ta sauce pour pâtes préférée, et pourrait-elle être végétale ?",
+     "c": "Cuis des pâtes avec une sauce simple tomate et ail, et ajoute un peu d’eau de cuisson à la fin."
+    },
+    "it": {
+     "t": "La pasta in versione vegetale",
+     "g": "Sapere che molta pasta secca è senza uova e preparare sughi facili a base di verdure.",
+     "p": [
+      "Quasi tutta la pasta secca di grano duro è solo semola e acqua; quella fresca spesso ha le uova, leggi l’etichetta.",
+      "Sughi classici come aglio e olio, arrabbiata e marinara sono naturalmente vegetali.",
+      "Tieni da parte una tazza d’acqua di cottura: il suo amido rende ogni sugo di verdure vellutato."
+     ],
+     "q": "Qual è il tuo sugo preferito e potrebbe diventare vegetale?",
+     "c": "Cuoci la pasta con un semplice sugo di pomodoro e aglio, aggiungendo un goccio d’acqua di cottura alla fine."
+    },
+    "pt": {
+     "t": "Massa à maneira vegetal",
+     "g": "Saber que muita massa seca não leva ovo e fazer molhos fáceis com legumes.",
+     "p": [
+      "A maioria da massa seca de trigo duro é só sêmola e água; a fresca costuma ter ovo, vê o rótulo.",
+      "Molhos clássicos como aglio e olio, arrabbiata e marinara são vegetais por natureza.",
+      "Guarda uma chávena da água de cozer: o amido torna qualquer molho de legumes sedoso e envolvente."
+     ],
+     "q": "Qual é o teu molho de massa preferido e podia ser feito em versão vegetal?",
+     "c": "Coze massa com um molho simples de tomate e alho e junta um pouco da água de cozer no fim."
+    },
+    "pt_BR": {
+     "t": "Macarrão do jeito vegetal",
+     "g": "Saber que muito macarrão seco não leva ovo e fazer molhos fáceis com legumes.",
+     "p": [
+      "A maioria do macarrão seco de grano duro é só sêmola e água; o fresco costuma ter ovo, confira o rótulo.",
+      "Molhos clássicos como aglio e olio, arrabbiata e marinara já são vegetais.",
+      "Guarde uma xícara da água do cozimento: o amido deixa qualquer molho de legumes sedoso e encorpado."
+     ],
+     "q": "Qual seu molho de macarrão preferido e ele poderia ser vegetal?",
+     "c": "Cozinhe macarrão com um molho simples de tomate e alho e junte um pouco da água do cozimento no fim."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bread and toast toppings",
+     "g": "Choose breads without milk or egg and top them with plant-based spreads.",
+     "p": [
+      "Many crusty breads like baguette and sourdough are just flour, water, salt and yeast; soft breads may add milk or egg.",
+      "Spreads like hummus, mashed avocado, nut butter or white bean purée turn toast into a meal.",
+      "Add contrast on top: sliced tomato, cucumber, herbs, seeds or a drizzle of olive oil."
+     ],
+     "q": "What is your favourite thing to put on toast?",
+     "c": "Make a toast with a plant-based spread and two toppings you have never combined before."
+    },
+    "de": {
+     "t": "Brot und Toast belegen",
+     "g": "Wähle Brot ohne Milch und Ei und belege es mit pflanzlichen Aufstrichen.",
+     "p": [
+      "Viele knusprige Brote wie Baguette und Sauerteigbrot sind nur Mehl, Wasser, Salz und Hefe; weiche Brote haben oft Milch oder Ei.",
+      "Aufstriche wie Hummus, zerdrückte Avocado, Nussmus oder weißes Bohnenpüree machen Toast zur Mahlzeit.",
+      "Setze Kontraste obendrauf: Tomatenscheiben, Gurke, Kräuter, Samen oder ein Schuss Olivenöl."
+     ],
+     "q": "Was legst du am liebsten auf Toast?",
+     "c": "Mach einen Toast mit pflanzlichem Aufstrich und zwei Toppings, die du noch nie kombiniert hast."
+    },
+    "es": {
+     "t": "Pan y tostadas con toppings",
+     "g": "Elegir panes sin leche ni huevo y cubrirlos con cremas vegetales.",
+     "p": [
+      "Muchos panes de corteza como la baguette o la masa madre son solo harina, agua, sal y levadura; los blandos pueden llevar leche o huevo.",
+      "Cremas como hummus, aguacate machacado, crema de frutos secos o puré de alubias convierten la tostada en comida.",
+      "Añade contraste encima: tomate en rodajas, pepino, hierbas, semillas o un chorrito de aceite de oliva."
+     ],
+     "q": "¿Qué es lo que más te gusta poner en una tostada?",
+     "c": "Prepara una tostada con una crema vegetal y dos toppings que nunca hayas combinado."
+    },
+    "fr": {
+     "t": "Pain et tartines garnies",
+     "g": "Choisir des pains sans lait ni œuf et les garnir de tartinades végétales.",
+     "p": [
+      "Baguette et pain au levain, c’est souvent juste farine, eau, sel et levure ; les pains mous ont parfois lait ou œuf.",
+      "Houmous, avocat écrasé, purée d’oléagineux ou purée de haricots blancs font d’une tartine un repas.",
+      "Ajoute du contraste : tomate en tranches, concombre, herbes, graines ou un filet d’huile d’olive."
+     ],
+     "q": "Qu’aimes-tu le plus mettre sur une tartine ?",
+     "c": "Prépare une tartine avec une tartinade végétale et deux garnitures que tu n’as jamais associées."
+    },
+    "it": {
+     "t": "Pane e bruschette farcite",
+     "g": "Scegliere pani senza latte né uova e condirli con creme vegetali.",
+     "p": [
+      "Baguette e pane a lievitazione naturale sono spesso solo farina, acqua, sale e lievito; i pani morbidi a volte hanno latte o uova.",
+      "Creme come hummus, avocado schiacciato, burro di frutta secca o purè di fagioli bianchi trasformano il pane in un pasto.",
+      "Aggiungi contrasto sopra: pomodoro a fette, cetriolo, erbe, semi o un filo d’olio d’oliva."
+     ],
+     "q": "Qual è la cosa che preferisci mettere sul pane tostato?",
+     "c": "Prepara una fetta tostata con una crema vegetale e due condimenti che non hai mai abbinato."
+    },
+    "pt": {
+     "t": "Pão e torradas com coberturas",
+     "g": "Escolher pães sem leite nem ovo e cobri-los com pastas vegetais.",
+     "p": [
+      "A baguete e o pão de fermentação natural são muitas vezes só farinha, água, sal e fermento; os pães moles podem ter leite ou ovo.",
+      "Pastas como húmus, abacate esmagado, manteiga de frutos secos ou puré de feijão branco fazem da torrada uma refeição.",
+      "Junta contraste por cima: tomate às rodelas, pepino, ervas, sementes ou um fio de azeite."
+     ],
+     "q": "O que mais gostas de pôr numa torrada?",
+     "c": "Faz uma torrada com uma pasta vegetal e duas coberturas que nunca tenhas combinado."
+    },
+    "pt_BR": {
+     "t": "Pão e torradas com coberturas",
+     "g": "Escolher pães sem leite nem ovo e cobrir com pastinhas vegetais.",
+     "p": [
+      "Baguete e pão de fermentação natural costumam ser só farinha, água, sal e fermento; pães macios podem ter leite ou ovo.",
+      "Pastinhas como homus, abacate amassado, pasta de amendoim ou purê de feijão branco transformam a torrada em refeição.",
+      "Coloque contraste por cima: tomate em rodelas, pepino, ervas, sementes ou um fio de azeite."
+     ],
+     "q": "O que você mais gosta de colocar na torrada?",
+     "c": "Faça uma torrada com uma pastinha vegetal e duas coberturas que você nunca combinou."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: pantry and basics",
+     "g": "Recap pantry, knife skills, legumes and grains, then cook a simple bowl.",
+     "p": [
+      "Your pantry of beans, grains, spices and sauces plus a few tools already makes dozens of meals possible.",
+      "Knife skills, onion dicing and garlic prep are the first step of most savoury recipes.",
+      "A grain plus a legume plus vegetables plus a sauce is a reliable formula for a filling bowl."
+     ],
+     "q": "Which skill from the last three weeks has made the biggest difference in your kitchen?",
+     "c": "Build a bowl today with one grain, one legume, one raw and one cooked vegetable, and a simple sauce."
+    },
+    "de": {
+     "t": "Wiederholung: Vorrat und Grundlagen",
+     "g": "Wiederhole Vorrat, Messertechnik, Hülsenfrüchte und Getreide und koche eine einfache Bowl.",
+     "p": [
+      "Dein Vorrat aus Bohnen, Getreide, Gewürzen und Saucen plus ein paar Werkzeuge macht schon Dutzende Gerichte möglich.",
+      "Messertechnik, Zwiebelwürfel und Knoblauch sind der erste Schritt fast jedes herzhaften Rezepts.",
+      "Getreide plus Hülsenfrucht plus Gemüse plus Sauce ist eine verlässliche Formel für eine sättigende Bowl."
+     ],
+     "q": "Welche Fähigkeit der letzten drei Wochen hat in deiner Küche am meisten verändert?",
+     "c": "Bau heute eine Bowl aus einem Getreide, einer Hülsenfrucht, einem rohen und einem gegarten Gemüse und einer Sauce."
+    },
+    "es": {
+     "t": "Repaso: despensa y básicos",
+     "g": "Repasar despensa, técnica de cuchillo, legumbres y cereales, y cocinar un bowl sencillo.",
+     "p": [
+      "Tu despensa de legumbres, cereales, especias y salsas, más unos pocos utensilios, ya permite decenas de comidas.",
+      "La técnica de cuchillo, la cebolla picada y el ajo son el primer paso de casi toda receta salada.",
+      "Cereal más legumbre más verduras más salsa es una fórmula fiable para un bowl que llena."
+     ],
+     "q": "¿Qué habilidad de estas tres semanas ha cambiado más tu cocina?",
+     "c": "Monta hoy un bowl con un cereal, una legumbre, una verdura cruda y otra cocinada, y una salsa sencilla."
+    },
+    "fr": {
+     "t": "Révision : garde-manger et bases",
+     "g": "Revoir garde-manger, couteau, légumineuses et céréales, puis cuisiner un bol simple.",
+     "p": [
+      "Ton stock de légumineuses, céréales, épices et sauces, plus quelques ustensiles, permet déjà des dizaines de repas.",
+      "La découpe, l’oignon ciselé et l’ail préparé sont la première étape de presque toute recette salée.",
+      "Céréale plus légumineuse plus légumes plus sauce : une formule fiable pour un bol rassasiant."
+     ],
+     "q": "Quelle compétence de ces trois semaines a le plus changé ta cuisine ?",
+     "c": "Compose aujourd’hui un bol avec une céréale, une légumineuse, un légume cru, un légume cuit et une sauce simple."
+    },
+    "it": {
+     "t": "Ripasso: dispensa e basi",
+     "g": "Ripassare dispensa, coltello, legumi e cereali, poi cucinare una bowl semplice.",
+     "p": [
+      "La tua dispensa di legumi, cereali, spezie e salse, più pochi attrezzi, rende già possibili decine di pasti.",
+      "Tecnica del coltello, cipolla tritata e aglio sono il primo passo di quasi ogni ricetta salata.",
+      "Cereale più legume più verdure più salsa è una formula affidabile per una bowl che sazia."
+     ],
+     "q": "Quale abilità di queste tre settimane ha cambiato di più la tua cucina?",
+     "c": "Componi oggi una bowl con un cereale, un legume, una verdura cruda e una cotta, e una salsa semplice."
+    },
+    "pt": {
+     "t": "Revisão: despensa e básicos",
+     "g": "Rever despensa, técnica de faca, leguminosas e cereais, e cozinhar uma taça simples.",
+     "p": [
+      "A tua despensa de leguminosas, cereais, especiarias e molhos, mais alguns utensílios, já permite dezenas de refeições.",
+      "A técnica de faca, a cebola picada e o alho são o primeiro passo de quase todas as receitas salgadas.",
+      "Cereal mais leguminosa mais legumes mais molho é uma fórmula fiável para uma taça que sacia."
+     ],
+     "q": "Que competência destas três semanas mais mudou a tua cozinha?",
+     "c": "Monta hoje uma taça com um cereal, uma leguminosa, um legume cru e um cozinhado, e um molho simples."
+    },
+    "pt_BR": {
+     "t": "Revisão: despensa e básicos",
+     "g": "Revisar despensa, técnica de faca, leguminosas e grãos, e montar um bowl simples.",
+     "p": [
+      "Sua despensa de leguminosas, grãos, temperos e molhos, mais alguns utensílios, já rende dezenas de refeições.",
+      "Técnica de faca, cebola picada e alho são o primeiro passo de quase toda receita salgada.",
+      "Grão mais leguminosa mais legumes mais molho é uma fórmula certeira para um bowl que sustenta."
+     ],
+     "q": "Qual habilidade dessas três semanas mais mudou sua cozinha?",
+     "c": "Monte hoje um bowl com um grão, uma leguminosa, um legume cru e um cozido, e um molho simples."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet tofu",
+     "g": "Learn silken, soft, firm and extra firm tofu and what each is best for.",
+     "p": [
+      "Tofu is made by curdling soy milk and pressing the curds, a process that began in China long ago.",
+      "Silken and soft tofu are smooth and great for blending into sauces, desserts and soups like miso soup.",
+      "Firm and extra firm tofu hold their shape for frying, baking, grilling and stir-fries."
+     ],
+     "q": "Have you tried tofu before, and what did you think of it?",
+     "c": "Look at the tofu available near you and note which types they have and what you would cook with each."
+    },
+    "de": {
+     "t": "Tofu kennenlernen",
+     "g": "Lerne Seiden-, weichen, festen und extrafesten Tofu kennen und wofür sie sich eignen.",
+     "p": [
+      "Tofu entsteht, indem Sojamilch gerinnt und der Bruch gepresst wird, ein Verfahren, das vor langer Zeit in China entstand.",
+      "Seiden- und weicher Tofu sind glatt und ideal zum Pürieren in Saucen, Desserts und Suppen wie Misosuppe.",
+      "Fester und extrafester Tofu behalten ihre Form beim Braten, Backen, Grillen und im Wok."
+     ],
+     "q": "Hast du schon Tofu probiert, und wie fandest du ihn?",
+     "c": "Schau, welche Tofusorten es bei dir gibt, und notiere, was du mit jeder kochen würdest."
+    },
+    "es": {
+     "t": "Conoce el tofu",
+     "g": "Conocer el tofu sedoso, blando, firme y extrafirme y para qué sirve cada uno.",
+     "p": [
+      "El tofu se hace cuajando bebida de soja y prensando la cuajada, un proceso que nació en China hace mucho.",
+      "El sedoso y el blando son suaves, ideales para triturar en salsas, postres y sopas como la de miso.",
+      "El firme y el extrafirme mantienen la forma al freír, hornear, asar o saltear."
+     ],
+     "q": "¿Has probado el tofu? ¿Qué te pareció?",
+     "c": "Mira qué tipos de tofu hay cerca de ti y apunta qué cocinarías con cada uno."
+    },
+    "fr": {
+     "t": "Découvrir le tofu",
+     "g": "Connaître le tofu soyeux, tendre, ferme et extra-ferme et l’usage de chacun.",
+     "p": [
+      "Le tofu se fait en caillant du lait de soja puis en pressant le caillé, une méthode née en Chine il y a longtemps.",
+      "Le soyeux et le tendre sont lisses, parfaits mixés dans sauces, desserts et soupes comme la soupe miso.",
+      "Le ferme et l’extra-ferme gardent leur forme à la poêle, au four, au gril et au wok."
+     ],
+     "q": "As-tu déjà goûté le tofu, et qu’en as-tu pensé ?",
+     "c": "Regarde quels tofus on trouve près de chez toi et note ce que tu cuisinerais avec chacun."
+    },
+    "it": {
+     "t": "Conoscere il tofu",
+     "g": "Conoscere il tofu vellutato, morbido, compatto ed extra compatto e a cosa serve ognuno.",
+     "p": [
+      "Il tofu si ottiene cagliando la bevanda di soia e pressando la cagliata, un metodo nato in Cina tanto tempo fa.",
+      "Quello vellutato e morbido è liscio, perfetto da frullare in salse, dolci e zuppe come la zuppa di miso.",
+      "Quello compatto ed extra compatto tiene la forma in padella, al forno, alla griglia e saltato."
+     ],
+     "q": "Hai mai provato il tofu? Cosa ne pensi?",
+     "c": "Guarda che tipi di tofu trovi vicino a te e annota cosa cucineresti con ciascuno."
+    },
+    "pt": {
+     "t": "Conhecer o tofu",
+     "g": "Conhecer o tofu sedoso, macio, firme e extrafirme e para que serve cada um.",
+     "p": [
+      "O tofu faz-se coalhando bebida de soja e prensando a coalhada, um processo que nasceu na China há muito tempo.",
+      "O sedoso e o macio são lisos, ótimos para triturar em molhos, sobremesas e sopas como a sopa miso.",
+      "O firme e o extrafirme mantêm a forma ao fritar, assar, grelhar e saltear."
+     ],
+     "q": "Já provaste tofu? O que achaste?",
+     "c": "Vê que tipos de tofu há perto de ti e anota o que cozinharias com cada um."
+    },
+    "pt_BR": {
+     "t": "Conheça o tofu",
+     "g": "Conhecer o tofu silken, macio, firme e extrafirme e para que serve cada um.",
+     "p": [
+      "O tofu é feito coalhando o leite de soja e prensando a coalhada, um processo que surgiu na China há muito tempo.",
+      "O silken e o macio são lisinhos, ótimos para bater em molhos, sobremesas e sopas como a de missô.",
+      "O firme e o extrafirme seguram o formato ao fritar, assar, grelhar e saltear."
+     ],
+     "q": "Você já provou tofu? O que achou?",
+     "c": "Veja quais tipos de tofu existem perto de você e anote o que cozinharia com cada um."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pressing and preparing tofu",
+     "g": "Remove water so tofu can soak up flavour and turn crispy.",
+     "p": [
+      "Wrap a block of firm tofu in a clean towel and put something heavy, like a pan with cans, on top for 15 to 30 minutes.",
+      "Pressed tofu absorbs marinades better and browns instead of steaming in the pan.",
+      "Cut it into cubes, slabs or tear it by hand for rough edges that crisp up beautifully."
+     ],
+     "q": "What flavours would you like to try marinating tofu in?",
+     "c": "Press a block of firm tofu today, then cut half into cubes and tear the other half to compare the edges."
+    },
+    "de": {
+     "t": "Tofu pressen und vorbereiten",
+     "g": "Entziehe dem Tofu Wasser, damit er Aroma aufnimmt und knusprig wird.",
+     "p": [
+      "Wickle festen Tofu in ein sauberes Tuch und lege 15 bis 30 Minuten etwas Schweres darauf, etwa eine Pfanne mit Dosen.",
+      "Gepresster Tofu nimmt Marinaden besser auf und bräunt, statt in der Pfanne zu dämpfen.",
+      "Schneide ihn in Würfel, Scheiben oder zupfe ihn mit der Hand, raue Kanten werden besonders knusprig."
+     ],
+     "q": "Mit welchen Aromen würdest du Tofu gern marinieren?",
+     "c": "Presse heute einen Block festen Tofu, schneide die Hälfte in Würfel, zupfe den Rest und vergleiche die Kanten."
+    },
+    "es": {
+     "t": "Prensar y preparar el tofu",
+     "g": "Quitar agua al tofu para que absorba sabor y quede crujiente.",
+     "p": [
+      "Envuelve un bloque de tofu firme en un paño limpio y pon algo pesado encima, como una sartén con latas, de 15 a 30 minutos.",
+      "El tofu prensado absorbe mejor los adobos y se dora en vez de cocerse al vapor en la sartén.",
+      "Córtalo en dados, lonchas o desmenúzalo con la mano: los bordes irregulares quedan muy crujientes."
+     ],
+     "q": "¿Con qué sabores te gustaría marinar el tofu?",
+     "c": "Prensa hoy un bloque de tofu firme, corta la mitad en dados y desmenuza la otra mitad para comparar los bordes."
+    },
+    "fr": {
+     "t": "Presser et préparer le tofu",
+     "g": "Retirer l’eau du tofu pour qu’il absorbe les saveurs et devienne croustillant.",
+     "p": [
+      "Enveloppe un bloc de tofu ferme dans un torchon propre et pose dessus un poids, comme une poêle avec des boîtes, 15 à 30 minutes.",
+      "Le tofu pressé absorbe mieux les marinades et dore au lieu de cuire à la vapeur dans la poêle.",
+      "Coupe-le en dés, en tranches ou déchire-le à la main : les bords irréguliers deviennent très croustillants."
+     ],
+     "q": "Dans quelles saveurs aimerais-tu faire mariner du tofu ?",
+     "c": "Presse un bloc de tofu ferme aujourd’hui, coupe la moitié en dés, déchire l’autre et compare les bords."
+    },
+    "it": {
+     "t": "Pressare e preparare il tofu",
+     "g": "Togliere acqua al tofu perché assorba sapore e diventi croccante.",
+     "p": [
+      "Avvolgi un panetto di tofu compatto in un panno pulito e mettici sopra un peso, come una padella con barattoli, per 15-30 minuti.",
+      "Il tofu pressato assorbe meglio le marinature e si dora invece di cuocere a vapore in padella.",
+      "Taglialo a cubetti, a fette o sbriciolalo a mano: i bordi irregolari diventano molto croccanti."
+     ],
+     "q": "Con quali sapori vorresti marinare il tofu?",
+     "c": "Pressa oggi un panetto di tofu compatto, taglia metà a cubetti e strappa l’altra metà per confrontare i bordi."
+    },
+    "pt": {
+     "t": "Prensar e preparar o tofu",
+     "g": "Tirar água ao tofu para absorver sabor e ficar estaladiço.",
+     "p": [
+      "Embrulha um bloco de tofu firme num pano limpo e põe algo pesado por cima, como uma frigideira com latas, 15 a 30 minutos.",
+      "O tofu prensado absorve melhor as marinadas e aloura em vez de cozer a vapor na frigideira.",
+      "Corta-o em cubos, fatias ou desfia-o à mão: as bordas irregulares ficam muito estaladiças."
+     ],
+     "q": "Com que sabores gostavas de marinar tofu?",
+     "c": "Prensa hoje um bloco de tofu firme, corta metade em cubos e desfia a outra metade para comparar as bordas."
+    },
+    "pt_BR": {
+     "t": "Prensando e preparando o tofu",
+     "g": "Tirar a água do tofu para ele pegar sabor e ficar crocante.",
+     "p": [
+      "Enrole um bloco de tofu firme num pano limpo e coloque algo pesado em cima, como uma frigideira com latas, por 15 a 30 minutos.",
+      "Tofu prensado absorve melhor a marinada e doura em vez de cozinhar no vapor na frigideira.",
+      "Corte em cubos, fatias ou rasgue com a mão: as bordas irregulares ficam bem crocantes."
+     ],
+     "q": "Com quais sabores você gostaria de marinar tofu?",
+     "c": "Prense hoje um bloco de tofu firme, corte metade em cubos e rasgue a outra metade para comparar as bordas."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crispy pan-fried tofu",
+     "g": "Make golden tofu cubes with a simple soy glaze.",
+     "p": [
+      "Toss pressed tofu cubes in a spoon of cornstarch with a pinch of salt for an extra crisp coating.",
+      "Fry them in a hot pan with oil, turning only when each side releases easily and is golden.",
+      "Add a glaze of soy sauce, a little sugar or maple syrup and garlic at the end, and toss until sticky."
+     ],
+     "q": "What would you serve crispy tofu with: rice, noodles, salad or something else?",
+     "c": "Pan-fry a batch of pressed tofu cubes with cornstarch, finish with the soy glaze and serve with rice."
+    },
+    "de": {
+     "t": "Knusprig gebratener Tofu",
+     "g": "Brate goldene Tofuwürfel mit einer einfachen Sojaglasur.",
+     "p": [
+      "Wende gepresste Tofuwürfel in einem Löffel Speisestärke mit etwas Salz für eine extra knusprige Hülle.",
+      "Brate sie in heißem Öl und wende sie erst, wenn sich jede Seite leicht löst und goldbraun ist.",
+      "Gib am Ende eine Glasur aus Sojasauce, etwas Zucker oder Ahornsirup und Knoblauch dazu und schwenke, bis sie glänzt."
+     ],
+     "q": "Wozu würdest du knusprigen Tofu servieren: Reis, Nudeln, Salat oder etwas anderes?",
+     "c": "Brate eine Portion gepresste Tofuwürfel mit Stärke, glasiere sie mit Soja und serviere sie mit Reis."
+    },
+    "es": {
+     "t": "Tofu crujiente a la sartén",
+     "g": "Dorar dados de tofu con un glaseado sencillo de soja.",
+     "p": [
+      "Reboza los dados de tofu prensado en una cucharada de maicena con una pizca de sal para una capa más crujiente.",
+      "Fríelos en una sartén caliente con aceite y dales la vuelta solo cuando cada lado se suelte fácil y esté dorado.",
+      "Al final añade un glaseado de salsa de soja, un poco de azúcar o sirope de arce y ajo, y saltea hasta que brille."
+     ],
+     "q": "¿Con qué servirías el tofu crujiente: arroz, fideos, ensalada u otra cosa?",
+     "c": "Fríe una tanda de tofu prensado con maicena, termina con el glaseado de soja y sírvelo con arroz."
+    },
+    "fr": {
+     "t": "Tofu croustillant à la poêle",
+     "g": "Faire dorer des dés de tofu avec un glaçage simple à la sauce soja.",
+     "p": [
+      "Enrobe les dés de tofu pressé d’une cuillère de fécule de maïs et d’une pincée de sel pour plus de croustillant.",
+      "Fais-les frire dans une poêle chaude huilée et retourne-les seulement quand chaque face se détache, bien dorée.",
+      "Ajoute à la fin un glaçage de sauce soja, un peu de sucre ou de sirop d’érable et d’ail, et remue jusqu’à ce qu’il nappe."
+     ],
+     "q": "Avec quoi servirais-tu ce tofu croustillant : riz, nouilles, salade ou autre ?",
+     "c": "Fais dorer des dés de tofu pressé avec de la fécule, finis avec le glaçage soja et sers avec du riz."
+    },
+    "it": {
+     "t": "Tofu croccante in padella",
+     "g": "Dorare cubetti di tofu con una semplice glassa di soia.",
+     "p": [
+      "Passa i cubetti di tofu pressato in un cucchiaio di amido di mais con un pizzico di sale per una crosta extra croccante.",
+      "Friggili in padella calda con olio e girali solo quando ogni lato si stacca facilmente ed è dorato.",
+      "Alla fine aggiungi una glassa di salsa di soia, un po’ di zucchero o sciroppo d’acero e aglio, e salta finché è lucida."
+     ],
+     "q": "Con cosa serviresti il tofu croccante: riso, noodles, insalata o altro?",
+     "c": "Friggi in padella cubetti di tofu pressato con amido, completa con la glassa di soia e servi con riso."
+    },
+    "pt": {
+     "t": "Tofu estaladiço na frigideira",
+     "g": "Alourar cubos de tofu com um glaceado simples de soja.",
+     "p": [
+      "Envolve os cubos de tofu prensado numa colher de amido de milho com uma pitada de sal para ficarem mais estaladiços.",
+      "Frita-os numa frigideira quente com óleo e vira-os só quando cada lado se soltar facilmente e estiver dourado.",
+      "No fim junta um glaceado de molho de soja, um pouco de açúcar ou xarope de ácer e alho, e envolve até brilhar."
+     ],
+     "q": "Com que servirias o tofu estaladiço: arroz, noodles, salada ou outra coisa?",
+     "c": "Frita uma dose de tofu prensado com amido, termina com o glaceado de soja e serve com arroz."
+    },
+    "pt_BR": {
+     "t": "Tofu crocante na frigideira",
+     "g": "Dourar cubos de tofu com uma calda simples de shoyu.",
+     "p": [
+      "Passe os cubos de tofu prensado numa colher de amido de milho com uma pitada de sal para uma casquinha mais crocante.",
+      "Frite numa frigideira quente com óleo e só vire quando cada lado soltar fácil e estiver dourado.",
+      "No fim, junte uma calda de shoyu, um pouco de açúcar ou melado e alho, e mexa até ficar brilhante."
+     ],
+     "q": "Com o que você serviria o tofu crocante: arroz, macarrão oriental, salada ou outra coisa?",
+     "c": "Frite uma porção de tofu prensado com amido, finalize com a calda de shoyu e sirva com arroz."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scrambled tofu",
+     "g": "Cook a savoury breakfast scramble with turmeric, vegetables and herbs.",
+     "p": [
+      "Crumble firm tofu with your hands into a pan with a little oil and onion or peppers already softened.",
+      "A pinch of turmeric adds a sunny colour, and black salt, called kala namak, gives an eggy aroma if you like it.",
+      "Finish with spinach, herbs, pepper and a splash of plant milk for a creamier texture."
+     ],
+     "q": "What vegetables would you put in your perfect breakfast scramble?",
+     "c": "Make a tofu scramble for breakfast or lunch with turmeric and at least two vegetables."
+    },
+    "de": {
+     "t": "Rührtofu",
+     "g": "Koche ein herzhaftes Frühstücksrührei aus Tofu mit Kurkuma, Gemüse und Kräutern.",
+     "p": [
+      "Zerbrösele festen Tofu mit den Händen in eine Pfanne mit etwas Öl und bereits weicher Zwiebel oder Paprika.",
+      "Eine Prise Kurkuma gibt sonnige Farbe, und Schwarzsalz, Kala Namak, sorgt bei Wunsch für ein eiähnliches Aroma.",
+      "Zum Schluss Spinat, Kräuter, Pfeffer und einen Schuss Pflanzenmilch für mehr Cremigkeit dazugeben."
+     ],
+     "q": "Welches Gemüse käme in dein perfektes Frühstücks-Rührtofu?",
+     "c": "Mach Rührtofu zum Frühstück oder Mittagessen mit Kurkuma und mindestens zwei Gemüsesorten."
+    },
+    "es": {
+     "t": "Revuelto de tofu",
+     "g": "Preparar un revuelto salado para el desayuno con cúrcuma, verduras y hierbas.",
+     "p": [
+      "Desmenuza tofu firme con las manos en una sartén con un poco de aceite y cebolla o pimiento ya pochados.",
+      "Una pizca de cúrcuma da un color dorado, y la sal negra, kala namak, aporta aroma a huevo si te gusta.",
+      "Termina con espinacas, hierbas, pimienta y un chorrito de bebida vegetal para una textura más cremosa."
+     ],
+     "q": "¿Qué verduras pondrías en tu revuelto de desayuno perfecto?",
+     "c": "Prepara un revuelto de tofu para desayunar o comer con cúrcuma y al menos dos verduras."
+    },
+    "fr": {
+     "t": "Tofu brouillé",
+     "g": "Cuisiner un brouillé salé pour le petit-déjeuner avec curcuma, légumes et herbes.",
+     "p": [
+      "Émiette du tofu ferme à la main dans une poêle avec un peu d’huile et de l’oignon ou du poivron déjà fondus.",
+      "Une pincée de curcuma donne une couleur ensoleillée, et le sel noir, kala namak, un arôme d’œuf si tu aimes.",
+      "Termine avec épinards, herbes, poivre et un trait de boisson végétale pour plus d’onctuosité."
+     ],
+     "q": "Quels légumes mettrais-tu dans ton brouillé du matin idéal ?",
+     "c": "Prépare un tofu brouillé au petit-déjeuner ou au déjeuner avec du curcuma et au moins deux légumes."
+    },
+    "it": {
+     "t": "Tofu strapazzato",
+     "g": "Cucinare uno strapazzato salato per colazione con curcuma, verdure ed erbe.",
+     "p": [
+      "Sbriciola il tofu compatto con le mani in una padella con un filo d’olio e cipolla o peperoni già appassiti.",
+      "Un pizzico di curcuma dà un colore solare, e il sale nero, kala namak, un aroma simile all’uovo se ti piace.",
+      "Completa con spinaci, erbe, pepe e un goccio di bevanda vegetale per una consistenza più cremosa."
+     ],
+     "q": "Quali verdure metteresti nel tuo strapazzato perfetto per la colazione?",
+     "c": "Prepara un tofu strapazzato a colazione o pranzo con curcuma e almeno due verdure."
+    },
+    "pt": {
+     "t": "Tofu mexido",
+     "g": "Fazer um mexido salgado ao pequeno-almoço com curcuma, legumes e ervas.",
+     "p": [
+      "Esfarela tofu firme com as mãos numa frigideira com um fio de azeite e cebola ou pimento já alourados.",
+      "Uma pitada de curcuma dá uma cor solar, e o sal negro, kala namak, um aroma a ovo se gostares.",
+      "Termina com espinafres, ervas, pimenta e um pouco de bebida vegetal para ficar mais cremoso."
+     ],
+     "q": "Que legumes punhas no teu mexido perfeito ao pequeno-almoço?",
+     "c": "Faz um tofu mexido ao pequeno-almoço ou almoço com curcuma e pelo menos dois legumes."
+    },
+    "pt_BR": {
+     "t": "Tofu mexido",
+     "g": "Fazer um mexido salgado de café da manhã com cúrcuma, legumes e ervas.",
+     "p": [
+      "Esfarele tofu firme com as mãos numa frigideira com um fio de azeite e cebola ou pimentão já refogados.",
+      "Uma pitada de cúrcuma dá cor dourada, e o sal negro, kala namak, dá aroma de ovo se você gostar.",
+      "Finalize com espinafre, ervas, pimenta e um pouco de bebida vegetal para ficar mais cremoso."
+     ],
+     "q": "Quais legumes você colocaria no seu mexido perfeito de café da manhã?",
+     "c": "Faça um tofu mexido no café da manhã ou almoço com cúrcuma e pelo menos dois legumes."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet tempeh",
+     "g": "Discover tempeh, a fermented soybean cake from Indonesia with a nutty taste and firm bite.",
+     "p": [
+      "Tempeh is made by fermenting whole cooked soybeans with a culture that binds them into a firm cake.",
+      "It comes from Java in Indonesia, where it has been a daily food for centuries.",
+      "Its taste is nutty and earthy, and its texture is firmer and more textured than tofu."
+     ],
+     "q": "Have you ever seen or tasted tempeh, and how would you describe it?",
+     "c": "Find out if tempeh is available near you and look up one Indonesian tempeh dish to try later."
+    },
+    "de": {
+     "t": "Tempeh kennenlernen",
+     "g": "Entdecke Tempeh, einen fermentierten Sojabohnenkuchen aus Indonesien mit nussigem Geschmack.",
+     "p": [
+      "Tempeh entsteht, wenn ganze gekochte Sojabohnen mit einer Kultur fermentiert werden, die sie zu einem festen Block bindet.",
+      "Er stammt von Java in Indonesien, wo er seit Jahrhunderten ein Alltagsessen ist.",
+      "Er schmeckt nussig und erdig und ist fester und körniger als Tofu."
+     ],
+     "q": "Hast du Tempeh schon gesehen oder probiert, und wie würdest du ihn beschreiben?",
+     "c": "Finde heraus, ob es bei dir Tempeh gibt, und suche dir ein indonesisches Tempeh-Gericht zum späteren Ausprobieren."
+    },
+    "es": {
+     "t": "Conoce el tempeh",
+     "g": "Descubrir el tempeh, un bloque de soja fermentada de Indonesia con sabor a fruto seco.",
+     "p": [
+      "El tempeh se hace fermentando soja cocida entera con un cultivo que la une en un bloque firme.",
+      "Viene de Java, en Indonesia, donde es comida diaria desde hace siglos.",
+      "Su sabor es a nuez y tierra, y su textura es más firme y granulada que la del tofu."
+     ],
+     "q": "¿Has visto o probado alguna vez el tempeh? ¿Cómo lo describirías?",
+     "c": "Averigua si hay tempeh cerca de ti y busca un plato indonesio con tempeh para probar más adelante."
+    },
+    "fr": {
+     "t": "Découvrir le tempeh",
+     "g": "Découvrir le tempeh, un bloc de soja fermenté d’Indonésie au goût de noisette et à la mâche ferme.",
+     "p": [
+      "Le tempeh se fait en fermentant des graines de soja cuites entières avec une culture qui les lie en un bloc ferme.",
+      "Il vient de Java, en Indonésie, où il est un aliment quotidien depuis des siècles.",
+      "Son goût est de noisette et de sous-bois, et sa texture est plus ferme et granuleuse que celle du tofu."
+     ],
+     "q": "As-tu déjà vu ou goûté du tempeh, et comment le décrirais-tu ?",
+     "c": "Vérifie si on trouve du tempeh près de chez toi et cherche un plat indonésien au tempeh à essayer plus tard."
+    },
+    "it": {
+     "t": "Conoscere il tempeh",
+     "g": "Scoprire il tempeh, un panetto di soia fermentata dall’Indonesia dal gusto di nocciola.",
+     "p": [
+      "Il tempeh si fa fermentando semi di soia interi cotti con una coltura che li lega in un panetto compatto.",
+      "Viene da Giava, in Indonesia, dove è un cibo quotidiano da secoli.",
+      "Ha un sapore di nocciola e terroso, e una consistenza più soda e granulosa del tofu."
+     ],
+     "q": "Hai mai visto o assaggiato il tempeh? Come lo descriveresti?",
+     "c": "Scopri se trovi il tempeh vicino a te e cerca un piatto indonesiano con tempeh da provare più avanti."
+    },
+    "pt": {
+     "t": "Conhecer o tempeh",
+     "g": "Descobrir o tempeh, um bloco de soja fermentada da Indonésia com sabor a fruto seco.",
+     "p": [
+      "O tempeh faz-se fermentando grãos de soja cozidos inteiros com uma cultura que os une num bloco firme.",
+      "Vem de Java, na Indonésia, onde é comida do dia a dia há séculos.",
+      "Tem sabor a noz e a terra, e uma textura mais firme e granulada do que o tofu."
+     ],
+     "q": "Já viste ou provaste tempeh? Como o descreverias?",
+     "c": "Descobre se há tempeh perto de ti e procura um prato indonésio com tempeh para experimentar depois."
+    },
+    "pt_BR": {
+     "t": "Conheça o tempeh",
+     "g": "Descobrir o tempeh, um bloco de soja fermentada da Indonésia com sabor de castanha.",
+     "p": [
+      "O tempeh é feito fermentando grãos de soja cozidos inteiros com uma cultura que une tudo num bloco firme.",
+      "Ele vem de Java, na Indonésia, onde é comida do dia a dia há séculos.",
+      "Tem sabor de castanha e terroso, e textura mais firme e granulada que o tofu."
+     ],
+     "q": "Você já viu ou provou tempeh? Como descreveria?",
+     "c": "Descubra se tem tempeh perto de você e procure um prato indonésio com tempeh para provar depois."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking with tempeh",
+     "g": "Steam, marinate and pan-fry tempeh for great flavour.",
+     "p": [
+      "Steaming or simmering tempeh for about ten minutes softens any bitter note and opens it up to marinades.",
+      "Marinate thin slices in soy sauce, garlic, lime and a little sweetness for at least fifteen minutes.",
+      "Pan-fry until golden on both sides, then use it in bowls, sandwiches or with peanut sauce."
+     ],
+     "q": "Which marinade would you choose for your first tempeh dish?",
+     "c": "Steam, marinate and pan-fry a few slices of tempeh, or plan exactly how you would if you cannot find it yet."
+    },
+    "de": {
+     "t": "Kochen mit Tempeh",
+     "g": "Dämpfen, marinieren und braten für vollen Geschmack.",
+     "p": [
+      "Etwa zehn Minuten Dämpfen oder Köcheln mildert eine leicht bittere Note und öffnet Tempeh für Marinaden.",
+      "Mariniere dünne Scheiben mindestens fünfzehn Minuten in Sojasauce, Knoblauch, Limette und etwas Süße.",
+      "Brate sie beidseitig goldbraun und nutze sie in Bowls, Sandwiches oder mit Erdnusssauce."
+     ],
+     "q": "Welche Marinade würdest du für dein erstes Tempeh-Gericht wählen?",
+     "c": "Dämpfe, mariniere und brate ein paar Scheiben Tempeh, oder plane genau, wie du es tun würdest."
+    },
+    "es": {
+     "t": "Cocinar con tempeh",
+     "g": "Cocer al vapor, marinar y dorar el tempeh para un gran sabor.",
+     "p": [
+      "Cocer el tempeh al vapor o hervirlo unos diez minutos suaviza el amargor y lo abre a los adobos.",
+      "Marina lonchas finas en salsa de soja, ajo, lima y algo dulce durante al menos quince minutos.",
+      "Dóralas por ambos lados y úsalas en bowls, bocadillos o con salsa de cacahuete."
+     ],
+     "q": "¿Qué marinada elegirías para tu primer plato con tempeh?",
+     "c": "Cuece al vapor, marina y dora unas lonchas de tempeh, o planea exactamente cómo lo harías si aún no lo encuentras."
+    },
+    "fr": {
+     "t": "Cuisiner le tempeh",
+     "g": "Cuire à la vapeur, mariner et poêler le tempeh pour un maximum de goût.",
+     "p": [
+      "Cuire le tempeh à la vapeur ou le frémir une dizaine de minutes adoucit l’amertume et l’ouvre aux marinades.",
+      "Fais mariner de fines tranches dans sauce soja, ail, citron vert et un peu de sucré au moins quinze minutes.",
+      "Poêle-les jusqu’à ce qu’elles soient dorées des deux côtés, puis sers-les en bol, en sandwich ou avec sauce cacahuète."
+     ],
+     "q": "Quelle marinade choisirais-tu pour ton premier plat de tempeh ?",
+     "c": "Cuis à la vapeur, marine et poêle quelques tranches de tempeh, ou prévois précisément comment tu le ferais."
+    },
+    "it": {
+     "t": "Cucinare il tempeh",
+     "g": "Cuocere al vapore, marinare e saltare il tempeh per un gran sapore.",
+     "p": [
+      "Cuocere il tempeh al vapore o sobbollirlo per una decina di minuti ammorbidisce l’amaro e lo apre alle marinature.",
+      "Marina fette sottili in salsa di soia, aglio, lime e un tocco dolce per almeno quindici minuti.",
+      "Rosolale finché sono dorate su entrambi i lati e usale in bowl, panini o con salsa di arachidi."
+     ],
+     "q": "Quale marinatura sceglieresti per il tuo primo piatto di tempeh?",
+     "c": "Cuoci al vapore, marina e rosola qualche fetta di tempeh, o pianifica esattamente come lo faresti."
+    },
+    "pt": {
+     "t": "Cozinhar com tempeh",
+     "g": "Cozer a vapor, marinar e alourar o tempeh para um ótimo sabor.",
+     "p": [
+      "Cozer o tempeh a vapor ou em água cerca de dez minutos suaviza o amargor e abre-o às marinadas.",
+      "Marina fatias finas em molho de soja, alho, lima e um toque doce durante pelo menos quinze minutos.",
+      "Aloura dos dois lados e usa em taças, sandes ou com molho de amendoim."
+     ],
+     "q": "Que marinada escolherias para o teu primeiro prato com tempeh?",
+     "c": "Coze a vapor, marina e aloura algumas fatias de tempeh, ou planeia exatamente como o farias se ainda não o encontrares."
+    },
+    "pt_BR": {
+     "t": "Cozinhando com tempeh",
+     "g": "Cozinhar no vapor, marinar e dourar o tempeh para um ótimo sabor.",
+     "p": [
+      "Cozinhar o tempeh no vapor ou em água por uns dez minutos suaviza o amargor e abre para a marinada.",
+      "Marine fatias finas em shoyu, alho, limão e um toque doce por pelo menos quinze minutos.",
+      "Doure dos dois lados e use em bowls, sanduíches ou com molho de amendoim."
+     ],
+     "q": "Qual marinada você escolheria para seu primeiro prato com tempeh?",
+     "c": "Cozinhe no vapor, marine e doure algumas fatias de tempeh, ou planeje direitinho como faria se ainda não achar."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet seitan",
+     "g": "Discover seitan, wheat gluten with a chewy texture used in many Asian and Western dishes.",
+     "p": [
+      "Seitan is made from wheat gluten, the protein left when starch is washed out of a wheat dough.",
+      "It has been used for centuries in Chinese and Japanese vegetarian cooking, often called wheat meat.",
+      "Its chewy, dense texture is great sliced and pan-fried, in stews, kebabs or stir-fries."
+     ],
+     "q": "Does the texture of seitan sound interesting to you, and what dish would you put it in?",
+     "c": "Look for seitan or vital wheat gluten in a shop near you, or write down a stir-fry you would make with it."
+    },
+    "de": {
+     "t": "Seitan kennenlernen",
+     "g": "Entdecke Seitan, Weizengluten mit kerniger Textur aus vielen asiatischen und westlichen Gerichten.",
+     "p": [
+      "Seitan besteht aus Weizengluten, dem Eiweiß, das bleibt, wenn man die Stärke aus einem Weizenteig wäscht.",
+      "Er wird seit Jahrhunderten in der vegetarischen Küche Chinas und Japans verwendet, oft Weizenfleisch genannt.",
+      "Seine kernige, dichte Textur ist toll in Scheiben gebraten, in Eintöpfen, Spießen oder im Wok."
+     ],
+     "q": "Klingt die Textur von Seitan spannend für dich, und in welches Gericht würdest du ihn geben?",
+     "c": "Suche Seitan oder Glutenpulver in einem Laden in deiner Nähe, oder notiere ein Wokgericht, das du damit machen würdest."
+    },
+    "es": {
+     "t": "Conoce el seitán",
+     "g": "Descubrir el seitán, gluten de trigo de textura masticable usado en muchos platos asiáticos y occidentales.",
+     "p": [
+      "El seitán se hace con gluten de trigo, la proteína que queda al lavar el almidón de una masa de harina.",
+      "Se usa desde hace siglos en la cocina vegetariana china y japonesa, a menudo llamado carne de trigo.",
+      "Su textura densa y masticable va genial en filetes a la plancha, guisos, brochetas o salteados."
+     ],
+     "q": "¿Te parece interesante la textura del seitán? ¿En qué plato lo pondrías?",
+     "c": "Busca seitán o gluten de trigo en una tienda cercana, o apunta un salteado que harías con él."
+    },
+    "fr": {
+     "t": "Découvrir le seitan",
+     "g": "Découvrir le seitan, du gluten de blé à la texture ferme, présent dans des plats asiatiques et occidentaux.",
+     "p": [
+      "Le seitan est fait de gluten de blé, la protéine qui reste quand on lave l’amidon d’une pâte de farine.",
+      "On l’utilise depuis des siècles dans la cuisine végétarienne chinoise et japonaise, souvent appelé viande de blé.",
+      "Sa texture dense et élastique est parfaite en tranches poêlées, en ragoût, en brochettes ou au wok."
+     ],
+     "q": "La texture du seitan t’intrigue-t-elle, et dans quel plat le mettrais-tu ?",
+     "c": "Cherche du seitan ou du gluten de blé près de chez toi, ou note un sauté au wok que tu ferais avec."
+    },
+    "it": {
+     "t": "Conoscere il seitan",
+     "g": "Scoprire il seitan, glutine di grano dalla consistenza masticabile usato in molti piatti asiatici e occidentali.",
+     "p": [
+      "Il seitan si fa con il glutine di grano, la proteina che resta lavando via l’amido da un impasto di farina.",
+      "Si usa da secoli nella cucina vegetariana cinese e giapponese, spesso chiamato carne di grano.",
+      "La sua consistenza densa e masticabile è ottima a fette in padella, in umido, negli spiedini o saltato."
+     ],
+     "q": "La consistenza del seitan ti incuriosisce? In quale piatto lo metteresti?",
+     "c": "Cerca seitan o glutine di frumento in un negozio vicino, o annota un saltato che faresti con esso."
+    },
+    "pt": {
+     "t": "Conhecer o seitan",
+     "g": "Descobrir o seitan, glúten de trigo de textura mastigável usado em muitos pratos asiáticos e ocidentais.",
+     "p": [
+      "O seitan faz-se com glúten de trigo, a proteína que fica quando se lava o amido de uma massa de farinha.",
+      "É usado há séculos na cozinha vegetariana chinesa e japonesa, muitas vezes chamado carne de trigo.",
+      "A textura densa e mastigável fica ótima em fatias salteadas, guisados, espetadas ou salteados."
+     ],
+     "q": "A textura do seitan parece-te interessante? Em que prato o porias?",
+     "c": "Procura seitan ou glúten de trigo numa loja perto de ti, ou anota um salteado que farias com ele."
+    },
+    "pt_BR": {
+     "t": "Conheça o seitan",
+     "g": "Descobrir o seitan, glúten de trigo com textura mastigável usado em muitos pratos asiáticos e ocidentais.",
+     "p": [
+      "O seitan é feito de glúten de trigo, a proteína que sobra quando se lava o amido de uma massa de farinha.",
+      "É usado há séculos na cozinha vegetariana chinesa e japonesa, muitas vezes chamado de carne de trigo.",
+      "A textura densa e mastigável fica ótima em fatias grelhadas, ensopados, espetinhos ou salteados."
+     ],
+     "q": "A textura do seitan parece interessante para você? Em qual prato colocaria?",
+     "c": "Procure seitan ou glúten de trigo numa loja perto de você, ou anote um salteado que faria com ele."
+    }
+   }
+  }
+ ]
+}

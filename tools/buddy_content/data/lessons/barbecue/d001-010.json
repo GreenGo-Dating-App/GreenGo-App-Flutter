@@ -1,0 +1,835 @@
+{
+ "topic": "barbecue",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of grilling",
+     "g": "Discover what barbecue means around the world and the two big cooking styles.",
+     "p": [
+      "Grilling usually means fast cooking over direct heat, while barbecue often means slow cooking with smoke.",
+      "Hot-and-fast suits steaks, burgers and vegetables; low-and-slow turns tough cuts like brisket tender.",
+      "From Argentine asado to Korean barbecue and South African braai, every culture has its own fire tradition."
+     ],
+     "q": "Which grilling tradition from another country would you love to try, and why?",
+     "c": "Write down three foods you would like to grill this month and mark each one hot-and-fast or low-and-slow."
+    },
+    "de": {
+     "t": "Willkommen in der Welt des Grillens",
+     "g": "Entdecke, was Barbecue weltweit bedeutet, und lerne die zwei großen Garstile kennen.",
+     "p": [
+      "Grillen heißt meist schnelles Garen über direkter Hitze, Barbecue dagegen oft langsames Garen mit Rauch.",
+      "Heiß und schnell passt zu Steaks, Burgern und Gemüse; niedrig und langsam macht zähe Stücke wie Brisket zart.",
+      "Ob argentinisches Asado, koreanisches Barbecue oder südafrikanisches Braai: Jede Kultur hat ihre Feuertradition."
+     ],
+     "q": "Welche Grilltradition aus einem anderen Land würdest du gern ausprobieren und warum?",
+     "c": "Schreib drei Lebensmittel auf, die du diesen Monat grillen willst, und markiere: heiß und schnell oder langsam?"
+    },
+    "es": {
+     "t": "Bienvenido al mundo de la parrilla",
+     "g": "Descubre qué significa la barbacoa en el mundo y los dos grandes estilos de cocción.",
+     "p": [
+      "Asar a la parrilla suele ser cocinar rápido a fuego directo; la barbacoa suele ser lenta y con humo.",
+      "Fuerte y rápido va con filetes, hamburguesas y verduras; bajo y lento ablanda cortes duros como el brisket.",
+      "Del asado argentino a la barbacoa coreana o el braai sudafricano, cada cultura tiene su tradición de fuego."
+     ],
+     "q": "¿Qué tradición de parrilla de otro país te encantaría probar y por qué?",
+     "c": "Anota tres alimentos que quieras asar este mes y marca cada uno como fuerte y rápido o bajo y lento."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde du grill",
+     "g": "Découvre ce que signifie le barbecue dans le monde et les deux grands styles de cuisson.",
+     "p": [
+      "Griller, c'est souvent cuire vite sur chaleur directe ; le barbecue à l'américaine cuit lentement avec de la fumée.",
+      "Fort et rapide pour steaks, burgers et légumes ; doux et lent pour attendrir des pièces dures comme la poitrine.",
+      "De l'asado argentin au barbecue coréen en passant par le braai sud-africain, chaque culture a son feu."
+     ],
+     "q": "Quelle tradition de grillade d'un autre pays aimerais-tu essayer, et pourquoi ?",
+     "c": "Note trois aliments à griller ce mois-ci et indique pour chacun : fort et rapide ou doux et lent."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo della griglia",
+     "g": "Scopri cosa significa barbecue nel mondo e i due grandi stili di cottura.",
+     "p": [
+      "Grigliare di solito vuol dire cuocere in fretta su calore diretto; il barbecue spesso è lento e affumicato.",
+      "Caldo e veloce per bistecche, hamburger e verdure; basso e lento per rendere tenere carni dure come il brisket.",
+      "Dall'asado argentino al barbecue coreano al braai sudafricano, ogni cultura ha la sua tradizione del fuoco."
+     ],
+     "q": "Quale tradizione di grigliata di un altro paese ti piacerebbe provare, e perché?",
+     "c": "Scrivi tre cibi che vuoi grigliare questo mese e segna per ognuno: caldo e veloce o basso e lento."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo da grelha",
+     "g": "Descobre o que significa barbecue pelo mundo e os dois grandes estilos de cozedura.",
+     "p": [
+      "Grelhar costuma ser cozinhar depressa sobre calor direto; o barbecue americano é muitas vezes lento e com fumo.",
+      "Forte e rápido serve para bifes, hambúrgueres e legumes; baixo e lento amacia peças duras como o peito de vaca.",
+      "Do asado argentino ao churrasco brasileiro e ao braai sul-africano, cada cultura tem a sua tradição de fogo."
+     ],
+     "q": "Que tradição de grelhados de outro país gostavas de experimentar, e porquê?",
+     "c": "Escreve três alimentos que queres grelhar este mês e marca cada um como forte e rápido ou baixo e lento."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo do churrasco",
+     "g": "Descubra o que churrasco e barbecue significam pelo mundo e os dois grandes estilos de preparo.",
+     "p": [
+      "Grelhar costuma ser cozinhar rápido no calor direto; o barbecue americano geralmente é lento e defumado.",
+      "Forte e rápido serve para bifes, hambúrgueres e legumes; baixo e lento amacia cortes duros como o peito bovino.",
+      "Do churrasco gaúcho ao asado argentino e ao barbecue coreano, cada cultura tem sua tradição de fogo."
+     ],
+     "q": "Qual tradição de churrasco de outro país você adoraria experimentar, e por quê?",
+     "c": "Anote três alimentos que quer grelhar este mês e marque cada um como forte e rápido ou baixo e lento."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the grill family",
+     "g": "Get to know the main grill types and what each one does best.",
+     "p": [
+      "Charcoal kettles are versatile and affordable; gas grills light fast and give easy temperature control.",
+      "Kamados are thick ceramic eggs that hold heat for hours, great for both searing and slow smoking.",
+      "Pellet grills feed wood pellets automatically, and offset smokers use a side firebox for classic low-and-slow."
+     ],
+     "q": "Which type of grill do you have or would you choose first, and what would you cook on it?",
+     "c": "Look at a grill near you, in a shop or online, and name its type and one food it would suit perfectly."
+    },
+    "de": {
+     "t": "Die Grillfamilie kennenlernen",
+     "g": "Lerne die wichtigsten Grilltypen kennen und wofür sich jeder am besten eignet.",
+     "p": [
+      "Kugelgrills mit Holzkohle sind vielseitig und günstig; Gasgrills zünden schnell und lassen sich leicht regeln.",
+      "Kamados sind dicke Keramik-Eier, die stundenlang Hitze halten: ideal zum Scharfanbraten und langsamen Räuchern.",
+      "Pelletgrills fördern Holzpellets automatisch, Offset-Smoker nutzen eine seitliche Brennkammer für Low and Slow."
+     ],
+     "q": "Welchen Grill hast du oder würdest du zuerst wählen, und was würdest du darauf zubereiten?",
+     "c": "Schau dir einen Grill an, im Laden oder online, nenne seinen Typ und ein Gericht, das perfekt dazu passt."
+    },
+    "es": {
+     "t": "Conoce la familia de las parrillas",
+     "g": "Conoce los principales tipos de parrilla y en qué destaca cada uno.",
+     "p": [
+      "La barbacoa de carbón tipo kettle es versátil y económica; la de gas enciende rápido y se regula fácilmente.",
+      "El kamado es un huevo de cerámica gruesa que mantiene el calor horas: ideal para sellar y para ahumar despacio.",
+      "La de pellets alimenta la leña sola, y el ahumador offset usa una caja de fuego lateral para cocinar lento."
+     ],
+     "q": "¿Qué tipo de parrilla tienes o elegirías primero, y qué cocinarías en ella?",
+     "c": "Observa una parrilla cercana, en tienda o en internet, di de qué tipo es y un alimento que le iría perfecto."
+    },
+    "fr": {
+     "t": "Découvre la famille des barbecues",
+     "g": "Fais connaissance avec les grands types de barbecue et ce que chacun fait le mieux.",
+     "p": [
+      "Le barbecue bouilloire au charbon est polyvalent et abordable ; le gaz s'allume vite et se règle facilement.",
+      "Le kamado, un œuf en céramique épaisse, garde la chaleur des heures : parfait pour saisir comme pour fumer.",
+      "Le grill à pellets dose le bois tout seul, et le fumoir offset a un foyer latéral pour la cuisson lente."
+     ],
+     "q": "Quel type de barbecue as-tu ou choisirais-tu en premier, et qu'y cuisinerais-tu ?",
+     "c": "Observe un barbecue près de toi, en magasin ou en ligne, nomme son type et un aliment qui lui irait parfaitement."
+    },
+    "it": {
+     "t": "Conosci la famiglia dei barbecue",
+     "g": "Scopri i principali tipi di barbecue e in cosa eccelle ciascuno.",
+     "p": [
+      "Il barbecue a carbone a kettle è versatile ed economico; quello a gas si accende subito e si regola facilmente.",
+      "Il kamado è un uovo di ceramica spessa che tiene il calore per ore: ottimo per scottare e per affumicare piano.",
+      "Il barbecue a pellet si alimenta da solo, mentre l'affumicatore offset ha un focolare laterale per il basso e lento."
+     ],
+     "q": "Che tipo di barbecue hai o sceglieresti per primo, e cosa ci cucineresti?",
+     "c": "Guarda un barbecue vicino a te, in negozio o online, dì di che tipo è e un cibo a cui sarebbe perfetto."
+    },
+    "pt": {
+     "t": "Conhece a família dos grelhadores",
+     "g": "Fica a conhecer os principais tipos de grelhador e no que cada um é melhor.",
+     "p": [
+      "O grelhador a carvão tipo kettle é versátil e acessível; o a gás acende depressa e regula-se com facilidade.",
+      "O kamado é um ovo de cerâmica grossa que guarda o calor durante horas: ótimo para selar e para fumar devagar.",
+      "O grelhador a pellets alimenta-se sozinho e o fumador offset usa uma fornalha lateral para cozinhar lentamente."
+     ],
+     "q": "Que tipo de grelhador tens ou escolherias primeiro, e o que cozinharias nele?",
+     "c": "Observa um grelhador perto de ti, numa loja ou online, diz o tipo e um alimento que lhe ficaria perfeito."
+    },
+    "pt_BR": {
+     "t": "Conheça a família das churrasqueiras",
+     "g": "Conheça os principais tipos de churrasqueira e no que cada um é melhor.",
+     "p": [
+      "A churrasqueira a carvão tipo bola é versátil e acessível; a gás acende rápido e é fácil de regular.",
+      "O kamado é um ovo de cerâmica grossa que segura o calor por horas: ótimo para selar e para defumar devagar.",
+      "A grelha a pellets se alimenta sozinha, e o defumador offset usa uma fornalha lateral para o preparo lento."
+     ],
+     "q": "Que tipo de churrasqueira você tem ou escolheria primeiro, e o que prepararia nela?",
+     "c": "Observe uma churrasqueira perto de você, na loja ou online, diga o tipo e um alimento que combinaria com ela."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Charcoal or gas: choosing your fuel",
+     "g": "Compare charcoal and gas so you can pick the fuel that fits your style.",
+     "p": [
+      "Charcoal reaches very high heat and adds a smoky, classic flavour, but takes longer to light and clean.",
+      "Gas is quick, precise and tidy, perfect for weeknights; wood chips in a smoker box add some smoke flavour.",
+      "There is no wrong choice: the best fuel is the one that gets you grilling often and happily."
+     ],
+     "q": "Do you value flavour or convenience more when you cook outdoors?",
+     "c": "List two pros and one con of the fuel you use or plan to use, then share them with me."
+    },
+    "de": {
+     "t": "Holzkohle oder Gas: der richtige Brennstoff",
+     "g": "Vergleiche Holzkohle und Gas, um den Brennstoff zu finden, der zu deinem Stil passt.",
+     "p": [
+      "Holzkohle wird sehr heiß und bringt klassisches Raucharoma, braucht aber länger zum Anzünden und Reinigen.",
+      "Gas ist schnell, präzise und sauber, ideal unter der Woche; Räucherchips in einer Box bringen etwas Rauch.",
+      "Es gibt keine falsche Wahl: Der beste Brennstoff ist der, mit dem du oft und gern grillst."
+     ],
+     "q": "Ist dir beim Kochen draußen der Geschmack oder die Bequemlichkeit wichtiger?",
+     "c": "Notiere zwei Vorteile und einen Nachteil deines Brennstoffs und erzähl mir davon."
+    },
+    "es": {
+     "t": "Carbón o gas: elige tu combustible",
+     "g": "Compara el carbón y el gas para elegir el combustible que va con tu estilo.",
+     "p": [
+      "El carbón alcanza mucho calor y aporta un sabor ahumado clásico, pero tarda más en encenderse y limpiarse.",
+      "El gas es rápido, preciso y limpio, ideal entre semana; las astillas en una caja ahumadora dan algo de humo.",
+      "No hay elección equivocada: el mejor combustible es el que te hace cocinar a la parrilla a menudo y feliz."
+     ],
+     "q": "¿Valoras más el sabor o la comodidad cuando cocinas al aire libre?",
+     "c": "Escribe dos ventajas y una desventaja del combustible que usas o piensas usar y compártelas conmigo."
+    },
+    "fr": {
+     "t": "Charbon ou gaz : choisir son combustible",
+     "g": "Compare charbon et gaz pour choisir le combustible qui correspond à ton style.",
+     "p": [
+      "Le charbon monte très haut en chaleur et donne un goût fumé classique, mais s'allume et se nettoie plus lentement.",
+      "Le gaz est rapide, précis et propre, idéal en semaine ; des copeaux dans une boîte à fumer ajoutent du fumé.",
+      "Il n'y a pas de mauvais choix : le meilleur combustible est celui qui te donne envie de griller souvent."
+     ],
+     "q": "Quand tu cuisines dehors, tu privilégies plutôt le goût ou la praticité ?",
+     "c": "Note deux avantages et un inconvénient du combustible que tu utilises ou comptes utiliser, puis partage-les."
+    },
+    "it": {
+     "t": "Carbone o gas: scegli il combustibile",
+     "g": "Confronta carbone e gas per scegliere il combustibile più adatto al tuo stile.",
+     "p": [
+      "Il carbone raggiunge temperature altissime e dà un gusto affumicato classico, ma è più lento da accendere e pulire.",
+      "Il gas è rapido, preciso e pulito, perfetto in settimana; chips di legno in una scatola danno un po' di fumo.",
+      "Non esiste una scelta sbagliata: il combustibile migliore è quello che ti fa grigliare spesso e volentieri."
+     ],
+     "q": "Quando cucini all'aperto, conta di più il sapore o la comodità?",
+     "c": "Scrivi due pro e un contro del combustibile che usi o vuoi usare, poi raccontameli."
+    },
+    "pt": {
+     "t": "Carvão ou gás: escolher o combustível",
+     "g": "Compara carvão e gás para escolheres o combustível que combina com o teu estilo.",
+     "p": [
+      "O carvão atinge calor muito alto e dá um sabor fumado clássico, mas demora mais a acender e a limpar.",
+      "O gás é rápido, preciso e limpo, ideal durante a semana; aparas de madeira numa caixa dão algum fumo.",
+      "Não há escolha errada: o melhor combustível é aquele que te faz grelhar muitas vezes e com prazer."
+     ],
+     "q": "Quando cozinhas ao ar livre, dás mais valor ao sabor ou à comodidade?",
+     "c": "Escreve duas vantagens e uma desvantagem do combustível que usas ou queres usar e partilha-as comigo."
+    },
+    "pt_BR": {
+     "t": "Carvão ou gás: escolhendo o combustível",
+     "g": "Compare carvão e gás para escolher o combustível que combina com o seu estilo.",
+     "p": [
+      "O carvão chega a um calor muito alto e dá aquele sabor defumado clássico, mas demora mais para acender e limpar.",
+      "O gás é rápido, preciso e limpo, ótimo no dia a dia; lascas de madeira numa caixinha dão um toque defumado.",
+      "Não existe escolha errada: o melhor combustível é aquele que faz você grelhar sempre e com prazer."
+     ],
+     "q": "Quando cozinha ao ar livre, você valoriza mais o sabor ou a praticidade?",
+     "c": "Escreva duas vantagens e uma desvantagem do combustível que usa ou pretende usar e compartilhe comigo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lump charcoal versus briquettes",
+     "g": "Learn how lump charcoal and briquettes burn so you can choose the right one.",
+     "p": [
+      "Lump charcoal is pure carbonised wood: it lights fast, burns hot and leaves little ash, but burns unevenly.",
+      "Briquettes are pressed and uniform: they burn steadier and longer, ideal for long, even cooks.",
+      "Use lump for quick hot searing and briquettes for long sessions; store both dry so they light easily."
+     ],
+     "q": "Have you ever noticed a difference between charcoal brands or types?",
+     "c": "Check the bag of charcoal you have or would buy and find out whether it is lump or briquettes."
+    },
+    "de": {
+     "t": "Holzkohle oder Briketts",
+     "g": "Lerne, wie Holzkohle und Briketts brennen, damit du die richtige Wahl triffst.",
+     "p": [
+      "Holzkohle ist reines verkohltes Holz: Sie zündet schnell, brennt heiß und macht wenig Asche, aber ungleichmäßig.",
+      "Briketts sind gepresst und einheitlich: Sie brennen gleichmäßiger und länger, ideal für lange Garzeiten.",
+      "Nimm Holzkohle zum schnellen Scharfgrillen und Briketts für lange Sessions; lagere beides trocken."
+     ],
+     "q": "Ist dir schon einmal ein Unterschied zwischen Kohlesorten oder Marken aufgefallen?",
+     "c": "Prüf den Kohlesack, den du hast oder kaufen würdest: Ist es Holzkohle oder sind es Briketts?"
+    },
+    "es": {
+     "t": "Carbón vegetal en trozos o briquetas",
+     "g": "Aprende cómo arden el carbón en trozos y las briquetas para elegir bien.",
+     "p": [
+      "El carbón en trozos es madera carbonizada pura: prende rápido, da mucho calor y poca ceniza, pero arde irregular.",
+      "Las briquetas son prensadas y uniformes: arden de forma más estable y duran más, ideales para cocciones largas.",
+      "Usa trozos para sellar rápido y fuerte, y briquetas para sesiones largas; guarda ambos en un lugar seco."
+     ],
+     "q": "¿Has notado alguna vez diferencias entre marcas o tipos de carbón?",
+     "c": "Mira la bolsa de carbón que tienes o comprarías y averigua si es carbón en trozos o briquetas."
+    },
+    "fr": {
+     "t": "Charbon de bois ou briquettes",
+     "g": "Apprends comment brûlent le charbon de bois et les briquettes pour bien choisir.",
+     "p": [
+      "Le charbon de bois est du bois carbonisé pur : il prend vite, chauffe fort et fait peu de cendre, mais irrégulièrement.",
+      "Les briquettes sont pressées et régulières : elles brûlent plus longtemps et plus stablement, idéal pour les longues cuissons.",
+      "Charbon de bois pour saisir vite et fort, briquettes pour les longues sessions ; stocke les deux au sec."
+     ],
+     "q": "As-tu déjà remarqué une différence entre des marques ou types de charbon ?",
+     "c": "Regarde le sac de charbon que tu as ou achèterais et vérifie s'il s'agit de charbon de bois ou de briquettes."
+    },
+    "it": {
+     "t": "Carbonella o bricchetti",
+     "g": "Scopri come bruciano carbonella e bricchetti per scegliere quello giusto.",
+     "p": [
+      "La carbonella è legno carbonizzato puro: si accende presto, scalda molto e fa poca cenere, ma brucia irregolare.",
+      "I bricchetti sono pressati e uniformi: bruciano in modo più stabile e più a lungo, ideali per cotture lunghe.",
+      "Usa la carbonella per scottature rapide e i bricchetti per sessioni lunghe; conservali sempre all'asciutto."
+     ],
+     "q": "Hai mai notato differenze tra marche o tipi di carbone?",
+     "c": "Controlla il sacco di carbone che hai o compreresti e scopri se è carbonella o bricchetti."
+    },
+    "pt": {
+     "t": "Carvão vegetal ou briquetes",
+     "g": "Aprende como ardem o carvão vegetal e os briquetes para escolheres bem.",
+     "p": [
+      "O carvão vegetal é madeira carbonizada pura: acende depressa, aquece muito e faz pouca cinza, mas arde irregular.",
+      "Os briquetes são prensados e uniformes: ardem de forma mais estável e durante mais tempo, ideais para cozeduras longas.",
+      "Usa carvão vegetal para selar depressa e briquetes para sessões longas; guarda ambos em local seco."
+     ],
+     "q": "Já notaste alguma diferença entre marcas ou tipos de carvão?",
+     "c": "Vê o saco de carvão que tens ou comprarias e descobre se é carvão vegetal ou briquetes."
+    },
+    "pt_BR": {
+     "t": "Carvão vegetal ou briquete",
+     "g": "Aprenda como queimam o carvão vegetal e o briquete para escolher o certo.",
+     "p": [
+      "O carvão vegetal é madeira carbonizada pura: acende rápido, esquenta muito e faz pouca cinza, mas queima irregular.",
+      "O briquete é prensado e uniforme: queima de forma mais estável e por mais tempo, ideal para preparos longos.",
+      "Use carvão vegetal para selar rápido e briquete para sessões longas; guarde os dois em lugar seco."
+     ],
+     "q": "Você já percebeu diferença entre marcas ou tipos de carvão?",
+     "c": "Olhe o saco de carvão que você tem ou compraria e descubra se é carvão vegetal ou briquete."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Essential grilling tools",
+     "g": "Build a simple starter kit of tools that make grilling safer and easier.",
+     "p": [
+      "Long tongs and a sturdy spatula keep your hands away from the heat and let you turn food gently.",
+      "A grill brush keeps grates clean, and heat-proof gloves protect you when moving grates or chimneys.",
+      "A digital thermometer is the most important tool of all: it tells you exactly when food is safely done."
+     ],
+     "q": "Which grilling tool do you use most, or which one would you buy first?",
+     "c": "Gather your tools in one place next to the grill and note anything missing from the starter kit."
+    },
+    "de": {
+     "t": "Unverzichtbares Grillwerkzeug",
+     "g": "Stell dir ein einfaches Starterset zusammen, das Grillen sicherer und leichter macht.",
+     "p": [
+      "Lange Zangen und ein stabiler Wender halten die Hände fern von der Hitze und wenden das Grillgut sanft.",
+      "Eine Grillbürste hält den Rost sauber, hitzefeste Handschuhe schützen beim Hantieren mit Rost oder Anzündkamin.",
+      "Ein digitales Thermometer ist das wichtigste Werkzeug: Es zeigt genau, wann das Essen sicher gar ist."
+     ],
+     "q": "Welches Grillwerkzeug nutzt du am meisten oder welches würdest du zuerst kaufen?",
+     "c": "Leg deine Werkzeuge an einem Platz beim Grill bereit und notiere, was dir vom Starterset noch fehlt."
+    },
+    "es": {
+     "t": "Utensilios esenciales para la parrilla",
+     "g": "Arma un kit básico de utensilios que hacen la parrilla más segura y fácil.",
+     "p": [
+      "Unas pinzas largas y una espátula firme alejan tus manos del calor y te permiten girar la comida con cuidado.",
+      "Un cepillo mantiene limpia la rejilla y unos guantes resistentes al calor te protegen al mover rejillas o chimeneas.",
+      "Un termómetro digital es la herramienta más importante: te dice exactamente cuándo la comida está lista y segura."
+     ],
+     "q": "¿Qué utensilio de parrilla usas más, o cuál comprarías primero?",
+     "c": "Reúne tus utensilios en un solo lugar junto a la parrilla y anota lo que le falta a tu kit básico."
+    },
+    "fr": {
+     "t": "Les outils indispensables du grill",
+     "g": "Constitue un kit de base qui rend la grillade plus sûre et plus facile.",
+     "p": [
+      "De longues pinces et une spatule solide gardent tes mains loin de la chaleur et retournent les aliments en douceur.",
+      "Une brosse garde la grille propre, et des gants résistants à la chaleur te protègent pour manipuler grille ou cheminée.",
+      "Un thermomètre numérique est l'outil le plus important : il indique exactement quand c'est cuit en toute sécurité."
+     ],
+     "q": "Quel ustensile de grill utilises-tu le plus, ou lequel achèterais-tu en premier ?",
+     "c": "Rassemble tes outils au même endroit près du barbecue et note ce qui manque à ton kit de base."
+    },
+    "it": {
+     "t": "Gli attrezzi essenziali per grigliare",
+     "g": "Crea un kit base di attrezzi che rende la grigliata più sicura e semplice.",
+     "p": [
+      "Pinze lunghe e una spatola robusta tengono le mani lontane dal calore e permettono di girare il cibo con delicatezza.",
+      "Una spazzola tiene pulita la griglia e i guanti resistenti al calore ti proteggono quando sposti griglie o ciminiere.",
+      "Un termometro digitale è l'attrezzo più importante: ti dice esattamente quando il cibo è cotto in sicurezza."
+     ],
+     "q": "Quale attrezzo da barbecue usi di più, o quale compreresti per primo?",
+     "c": "Riunisci i tuoi attrezzi in un unico posto vicino al barbecue e annota cosa manca al tuo kit base."
+    },
+    "pt": {
+     "t": "Utensílios essenciais para grelhar",
+     "g": "Monta um kit básico de utensílios que torna o grelhar mais seguro e fácil.",
+     "p": [
+      "Pinças compridas e uma espátula firme mantêm as mãos longe do calor e permitem virar a comida com cuidado.",
+      "Uma escova mantém a grelha limpa e luvas resistentes ao calor protegem-te ao mexer na grelha ou na chaminé.",
+      "Um termómetro digital é o utensílio mais importante: diz-te exatamente quando a comida está cozinhada em segurança."
+     ],
+     "q": "Que utensílio de grelha usas mais, ou qual comprarias primeiro?",
+     "c": "Junta os teus utensílios num só sítio ao pé do grelhador e anota o que falta no teu kit básico."
+    },
+    "pt_BR": {
+     "t": "Utensílios essenciais do churrasco",
+     "g": "Monte um kit básico de utensílios que deixa o churrasco mais seguro e fácil.",
+     "p": [
+      "Pegadores longos e uma espátula firme mantêm suas mãos longe do calor e ajudam a virar a comida com cuidado.",
+      "Uma escova mantém a grelha limpa, e luvas resistentes ao calor protegem você ao mexer na grelha ou na chaminé.",
+      "Um termômetro digital é o utensílio mais importante: ele mostra exatamente quando a comida está pronta e segura."
+     ],
+     "q": "Qual utensílio de churrasco você mais usa, ou qual compraria primeiro?",
+     "c": "Reúna seus utensílios num só lugar perto da churrasqueira e anote o que falta no seu kit básico."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grill safety basics",
+     "g": "Set up your grill in a safe spot and keep everyone around it out of harm's way.",
+     "p": [
+      "Place the grill outdoors on flat, stable ground, well away from walls, fences, plants and overhanging branches.",
+      "Never grill indoors or in a closed garage: burning fuel releases carbon monoxide, which you cannot see or smell.",
+      "Keep children and pets clear of the hot zone, never leave a lit grill alone and keep water or an extinguisher near."
+     ],
+     "q": "Where do you usually grill, and is there anything you would move to make it safer?",
+     "c": "Walk around your grill spot and check three things: stable ground, clear space and a safe zone for kids and pets."
+    },
+    "de": {
+     "t": "Grundregeln der Grillsicherheit",
+     "g": "Stell deinen Grill an einen sicheren Platz und halte alle rundherum aus der Gefahrenzone.",
+     "p": [
+      "Stell den Grill im Freien auf ebenen, festen Boden, weit weg von Wänden, Zäunen, Pflanzen und tiefen Ästen.",
+      "Grill nie drinnen oder in einer geschlossenen Garage: Brennstoff setzt Kohlenmonoxid frei, unsichtbar und geruchlos.",
+      "Halte Kinder und Haustiere fern, lass einen brennenden Grill nie allein und halte Wasser oder einen Löscher bereit."
+     ],
+     "q": "Wo grillst du meistens, und würdest du etwas umstellen, um es sicherer zu machen?",
+     "c": "Geh um deinen Grillplatz herum und prüfe drei Dinge: fester Boden, freier Raum und eine Schutzzone für Kinder und Tiere."
+    },
+    "es": {
+     "t": "Seguridad básica en la parrilla",
+     "g": "Coloca tu parrilla en un lugar seguro y mantén a salvo a todos los que estén cerca.",
+     "p": [
+      "Pon la parrilla al aire libre, en suelo plano y estable, lejos de paredes, vallas, plantas y ramas bajas.",
+      "Nunca cocines a la parrilla dentro de casa ni en un garaje cerrado: el combustible libera monóxido de carbono invisible.",
+      "Mantén a niños y mascotas lejos del calor, no dejes nunca la parrilla encendida sola y ten agua o un extintor cerca."
+     ],
+     "q": "¿Dónde sueles hacer parrilla y moverías algo para que fuera más seguro?",
+     "c": "Recorre tu zona de parrilla y revisa tres cosas: suelo estable, espacio libre y una zona segura para niños y mascotas."
+    },
+    "fr": {
+     "t": "Les bases de la sécurité au barbecue",
+     "g": "Installe ton barbecue dans un endroit sûr et protège tout le monde autour.",
+     "p": [
+      "Place le barbecue dehors, sur un sol plat et stable, loin des murs, clôtures, plantes et branches basses.",
+      "Ne grille jamais à l'intérieur ni dans un garage fermé : la combustion dégage du monoxyde de carbone, invisible et inodore.",
+      "Éloigne enfants et animaux, ne laisse jamais un barbecue allumé sans surveillance et garde de l'eau ou un extincteur à portée."
+     ],
+     "q": "Où grilles-tu d'habitude, et déplacerais-tu quelque chose pour plus de sécurité ?",
+     "c": "Fais le tour de ton coin barbecue et vérifie trois choses : sol stable, espace dégagé et zone sûre pour enfants et animaux."
+    },
+    "it": {
+     "t": "Le basi della sicurezza al barbecue",
+     "g": "Sistema il barbecue in un posto sicuro e tieni al riparo tutti quelli intorno.",
+     "p": [
+      "Metti il barbecue all'aperto, su un terreno piano e stabile, lontano da muri, recinzioni, piante e rami bassi.",
+      "Non grigliare mai in casa o in un garage chiuso: la combustione libera monossido di carbonio, invisibile e inodore.",
+      "Tieni lontani bambini e animali, non lasciare mai il barbecue acceso da solo e tieni a portata acqua o un estintore."
+     ],
+     "q": "Dove fai di solito il barbecue, e sposteresti qualcosa per renderlo più sicuro?",
+     "c": "Fai un giro intorno al tuo angolo barbecue e controlla tre cose: terreno stabile, spazio libero e zona sicura per bimbi e animali."
+    },
+    "pt": {
+     "t": "Segurança básica no grelhador",
+     "g": "Instala o grelhador num local seguro e mantém protegidos todos os que estão por perto.",
+     "p": [
+      "Coloca o grelhador ao ar livre, em chão plano e estável, longe de paredes, sebes, plantas e ramos baixos.",
+      "Nunca grelhes dentro de casa nem numa garagem fechada: a combustão liberta monóxido de carbono, invisível e sem cheiro.",
+      "Mantém crianças e animais afastados, nunca deixes o grelhador aceso sozinho e tem água ou um extintor por perto."
+     ],
+     "q": "Onde costumas grelhar, e mudarias alguma coisa para ficar mais seguro?",
+     "c": "Dá uma volta ao teu espaço de grelha e verifica três coisas: chão estável, espaço livre e zona segura para crianças e animais."
+    },
+    "pt_BR": {
+     "t": "Segurança básica no churrasco",
+     "g": "Coloque sua churrasqueira num lugar seguro e mantenha protegidos todos ao redor.",
+     "p": [
+      "Deixe a churrasqueira ao ar livre, em piso plano e firme, longe de paredes, cercas, plantas e galhos baixos.",
+      "Nunca faça churrasco em ambiente fechado: a queima libera monóxido de carbono, que não tem cor nem cheiro.",
+      "Mantenha crianças e pets longe do calor, nunca deixe a churrasqueira acesa sozinha e tenha água ou extintor por perto."
+     ],
+     "q": "Onde você costuma fazer churrasco, e mudaria algo para deixar o lugar mais seguro?",
+     "c": "Dê uma volta no seu espaço de churrasco e confira três coisas: piso firme, espaço livre e área segura para crianças e pets."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lighting charcoal with a chimney starter",
+     "g": "Learn the cleanest, easiest way to light charcoal without lighter fluid.",
+     "p": [
+      "Fill the top of the chimney with charcoal and put a few firelighters or crumpled newspaper underneath.",
+      "Light the starters, then wait about 15 to 20 minutes until the top coals are covered in light grey ash.",
+      "Wearing heat-proof gloves, pour the coals carefully into the grill and spread them where you need the heat."
+     ],
+     "q": "Have you ever had trouble lighting charcoal, and what happened?",
+     "c": "Practise the chimney steps in your head or for real, and time how long your coals take to turn ashy grey."
+    },
+    "de": {
+     "t": "Holzkohle mit dem Anzündkamin anzünden",
+     "g": "Lerne die sauberste und einfachste Art, Kohle ohne Grillanzünder-Flüssigkeit zu entzünden.",
+     "p": [
+      "Füll den oberen Teil des Kamins mit Kohle und leg ein paar Anzündwürfel oder zerknülltes Papier darunter.",
+      "Zünde sie an und warte etwa 15 bis 20 Minuten, bis die oberen Kohlen mit hellgrauer Asche bedeckt sind.",
+      "Schütte die Kohlen mit hitzefesten Handschuhen vorsichtig in den Grill und verteile sie dort, wo du Hitze brauchst."
+     ],
+     "q": "Hattest du schon einmal Probleme beim Anzünden von Kohle, und was ist passiert?",
+     "c": "Geh die Kamin-Schritte im Kopf oder echt durch und stopp, wie lange deine Kohlen bis zur grauen Asche brauchen."
+    },
+    "es": {
+     "t": "Encender carbón con chimenea de encendido",
+     "g": "Aprende la forma más limpia y fácil de encender carbón sin líquido encendedor.",
+     "p": [
+      "Llena la parte superior de la chimenea con carbón y pon debajo unas pastillas de encendido o papel arrugado.",
+      "Enciéndelas y espera unos 15 a 20 minutos, hasta que el carbón de arriba esté cubierto de ceniza gris clara.",
+      "Con guantes resistentes al calor, vierte las brasas con cuidado en la parrilla y repártelas donde necesites calor."
+     ],
+     "q": "¿Alguna vez te ha costado encender el carbón? ¿Qué pasó?",
+     "c": "Repasa los pasos de la chimenea en tu mente o de verdad y mide cuánto tardan tus brasas en volverse grises."
+    },
+    "fr": {
+     "t": "Allumer le charbon avec une cheminée",
+     "g": "Apprends la façon la plus propre et la plus simple d'allumer le charbon sans allume-feu liquide.",
+     "p": [
+      "Remplis le haut de la cheminée de charbon et place quelques allume-feux ou du papier froissé en dessous.",
+      "Allume-les et attends environ 15 à 20 minutes, jusqu'à ce que les braises du haut soient couvertes de cendre grise.",
+      "Avec des gants résistants à la chaleur, verse les braises avec soin dans le barbecue et répartis-les là où il faut."
+     ],
+     "q": "As-tu déjà eu du mal à allumer du charbon ? Que s'est-il passé ?",
+     "c": "Révise les étapes de la cheminée en pensée ou en vrai, et chronomètre le temps que tes braises mettent à grisonner."
+    },
+    "it": {
+     "t": "Accendere il carbone con la ciminiera",
+     "g": "Impara il modo più pulito e semplice per accendere il carbone senza liquido accendifuoco.",
+     "p": [
+      "Riempi la parte alta della ciminiera di carbone e metti sotto qualche cubetto accendifuoco o carta appallottolata.",
+      "Accendili e aspetta circa 15-20 minuti, finché il carbone in cima non è coperto di cenere grigio chiaro.",
+      "Con guanti resistenti al calore, versa le braci con attenzione nel barbecue e distribuiscile dove serve il calore."
+     ],
+     "q": "Hai mai avuto difficoltà ad accendere il carbone? Cos'è successo?",
+     "c": "Ripassa i passaggi della ciminiera a mente o dal vivo e cronometra quanto ci mettono le braci a diventare grigie."
+    },
+    "pt": {
+     "t": "Acender carvão com a chaminé de acendimento",
+     "g": "Aprende a forma mais limpa e fácil de acender carvão sem líquido acendedor.",
+     "p": [
+      "Enche a parte de cima da chaminé com carvão e põe por baixo umas acendalhas ou papel amarrotado.",
+      "Acende-as e espera cerca de 15 a 20 minutos, até o carvão de cima estar coberto de cinza cinzenta clara.",
+      "Com luvas resistentes ao calor, despeja as brasas com cuidado no grelhador e espalha-as onde precisas de calor."
+     ],
+     "q": "Já tiveste dificuldade em acender carvão? O que aconteceu?",
+     "c": "Revê os passos da chaminé de cabeça ou na prática e cronometra quanto tempo as brasas levam a ficar cinzentas."
+    },
+    "pt_BR": {
+     "t": "Acendendo carvão com a chaminé",
+     "g": "Aprenda o jeito mais limpo e fácil de acender carvão sem álcool ou fluido acendedor.",
+     "p": [
+      "Encha a parte de cima da chaminé com carvão e coloque embaixo alguns acendedores ou jornal amassado.",
+      "Acenda e espere uns 15 a 20 minutos, até o carvão de cima ficar coberto de cinza cinza-clara.",
+      "Com luvas resistentes ao calor, despeje as brasas com cuidado na churrasqueira e espalhe onde precisar de calor."
+     ],
+     "q": "Você já teve dificuldade para acender carvão? O que aconteceu?",
+     "c": "Repasse os passos da chaminé de cabeça ou na prática e cronometre quanto tempo as brasas levam para ficar cinzentas."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a gas grill the right way",
+     "g": "Light a gas grill safely and preheat it properly every time.",
+     "p": [
+      "Always open the lid before lighting, so gas cannot build up under it and flare when it ignites.",
+      "Check that hoses and connections are secure; a soapy water test shows leaks as small bubbles.",
+      "Turn on and light the burners one at a time as your manual says, then close the lid and preheat 10 to 15 minutes."
+     ],
+     "q": "Have you ever used a gas grill, and did anything about it surprise you?",
+     "c": "Read the lighting section of a gas grill manual, yours or one online, and list its steps in order."
+    },
+    "de": {
+     "t": "Den Gasgrill richtig starten",
+     "g": "Zünde einen Gasgrill sicher an und heize ihn jedes Mal richtig vor.",
+     "p": [
+      "Öffne vor dem Zünden immer den Deckel, damit sich darunter kein Gas sammelt und beim Zünden aufflammt.",
+      "Prüfe, ob Schläuche und Anschlüsse fest sitzen; ein Test mit Seifenwasser zeigt Lecks als kleine Bläschen.",
+      "Zünde die Brenner nacheinander laut Anleitung, schließ dann den Deckel und heize 10 bis 15 Minuten vor."
+     ],
+     "q": "Hast du schon einmal einen Gasgrill benutzt, und hat dich etwas daran überrascht?",
+     "c": "Lies den Abschnitt zum Zünden in einer Gasgrill-Anleitung, deiner oder online, und schreib die Schritte der Reihe nach auf."
+    },
+    "es": {
+     "t": "Encender bien una parrilla de gas",
+     "g": "Enciende una parrilla de gas con seguridad y precaliéntala siempre como se debe.",
+     "p": [
+      "Abre siempre la tapa antes de encender, para que el gas no se acumule debajo y se inflame de golpe.",
+      "Comprueba que mangueras y conexiones estén firmes; una prueba con agua jabonosa revela fugas en forma de burbujas.",
+      "Enciende los quemadores uno a uno según el manual, luego cierra la tapa y precalienta de 10 a 15 minutos."
+     ],
+     "q": "¿Has usado alguna vez una parrilla de gas? ¿Algo te sorprendió?",
+     "c": "Lee la sección de encendido de un manual de parrilla de gas, el tuyo o uno en internet, y anota los pasos en orden."
+    },
+    "fr": {
+     "t": "Bien démarrer un barbecue à gaz",
+     "g": "Allume un barbecue à gaz en sécurité et préchauffe-le correctement à chaque fois.",
+     "p": [
+      "Ouvre toujours le couvercle avant d'allumer, pour que le gaz ne s'accumule pas dessous et ne s'enflamme d'un coup.",
+      "Vérifie que tuyaux et raccords sont bien serrés ; un test à l'eau savonneuse révèle les fuites par des bulles.",
+      "Allume les brûleurs un par un selon la notice, puis ferme le couvercle et préchauffe 10 à 15 minutes."
+     ],
+     "q": "As-tu déjà utilisé un barbecue à gaz ? Quelque chose t'a-t-il surpris ?",
+     "c": "Lis la partie allumage d'une notice de barbecue à gaz, la tienne ou une en ligne, et note les étapes dans l'ordre."
+    },
+    "it": {
+     "t": "Accendere bene un barbecue a gas",
+     "g": "Accendi un barbecue a gas in sicurezza e preriscaldalo sempre nel modo giusto.",
+     "p": [
+      "Apri sempre il coperchio prima di accendere, così il gas non si accumula sotto e non divampa all'accensione.",
+      "Controlla che tubi e raccordi siano ben fissati; una prova con acqua e sapone mostra le perdite come bollicine.",
+      "Accendi i bruciatori uno alla volta come dice il manuale, poi chiudi il coperchio e preriscalda 10-15 minuti."
+     ],
+     "q": "Hai mai usato un barbecue a gas? Qualcosa ti ha sorpreso?",
+     "c": "Leggi la parte sull'accensione del manuale di un barbecue a gas, il tuo o uno online, e scrivi i passaggi in ordine."
+    },
+    "pt": {
+     "t": "Acender bem um grelhador a gás",
+     "g": "Acende um grelhador a gás em segurança e pré-aquece-o corretamente sempre.",
+     "p": [
+      "Abre sempre a tampa antes de acender, para o gás não se acumular por baixo e inflamar de repente.",
+      "Confirma que mangueiras e ligações estão bem apertadas; um teste com água e sabão mostra fugas em bolhinhas.",
+      "Acende os queimadores um a um como diz o manual, depois fecha a tampa e pré-aquece 10 a 15 minutos."
+     ],
+     "q": "Já usaste um grelhador a gás? Houve alguma coisa que te surpreendeu?",
+     "c": "Lê a parte do acendimento num manual de grelhador a gás, o teu ou um online, e escreve os passos por ordem."
+    },
+    "pt_BR": {
+     "t": "Acendendo a churrasqueira a gás do jeito certo",
+     "g": "Acenda uma churrasqueira a gás com segurança e preaqueça direito todas as vezes.",
+     "p": [
+      "Abra sempre a tampa antes de acender, para o gás não acumular embaixo dela e explodir em chama de repente.",
+      "Confira se mangueiras e conexões estão firmes; um teste com água e sabão revela vazamentos em forma de bolhas.",
+      "Acenda os queimadores um de cada vez como diz o manual, depois feche a tampa e preaqueça de 10 a 15 minutos."
+     ],
+     "q": "Você já usou uma churrasqueira a gás? Alguma coisa surpreendeu você?",
+     "c": "Leia a parte de acendimento de um manual de churrasqueira a gás, o seu ou um online, e anote os passos em ordem."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why preheating matters",
+     "g": "Understand how a properly preheated grate stops sticking and creates great sear marks.",
+     "p": [
+      "A cold grate grabs onto proteins; a hot one sears the surface fast so food releases cleanly.",
+      "Preheating with the lid closed for 10 to 15 minutes heats the metal evenly, not just the air.",
+      "Hot grates also burn off old residue, making cleaning easier and flavours fresher."
+     ],
+     "q": "Have you ever had food stick badly to the grill, and what were you cooking?",
+     "c": "Next time you grill, preheat with the lid closed for a full 10 to 15 minutes and notice how food releases."
+    },
+    "de": {
+     "t": "Warum Vorheizen so wichtig ist",
+     "g": "Verstehe, wie ein gut vorgeheizter Rost Ankleben verhindert und schöne Grillstreifen schafft.",
+     "p": [
+      "Ein kalter Rost hält Eiweiß fest; ein heißer bräunt die Oberfläche schnell, sodass sich das Grillgut sauber löst.",
+      "Vorheizen mit geschlossenem Deckel für 10 bis 15 Minuten erhitzt das Metall gleichmäßig, nicht nur die Luft.",
+      "Ein heißer Rost brennt auch alte Reste weg: Das Reinigen wird leichter und der Geschmack frischer."
+     ],
+     "q": "Ist dir schon einmal Grillgut stark am Rost kleben geblieben, und was war es?",
+     "c": "Heiz beim nächsten Grillen volle 10 bis 15 Minuten mit geschlossenem Deckel vor und achte darauf, wie sich das Grillgut löst."
+    },
+    "es": {
+     "t": "Por qué precalentar importa",
+     "g": "Entiende cómo una rejilla bien precalentada evita que se pegue la comida y marca bonito.",
+     "p": [
+      "Una rejilla fría se agarra a las proteínas; una caliente sella rápido la superficie y la comida se suelta limpia.",
+      "Precalentar con la tapa cerrada de 10 a 15 minutos calienta el metal de forma pareja, no solo el aire.",
+      "La rejilla caliente también quema restos viejos, así limpiar es más fácil y los sabores son más frescos."
+     ],
+     "q": "¿Alguna vez se te ha pegado mucho la comida a la parrilla? ¿Qué estabas cocinando?",
+     "c": "La próxima vez, precalienta con la tapa cerrada de 10 a 15 minutos completos y fíjate en cómo se suelta la comida."
+    },
+    "fr": {
+     "t": "Pourquoi préchauffer est essentiel",
+     "g": "Comprends comment une grille bien préchauffée évite que ça colle et donne de belles marques.",
+     "p": [
+      "Une grille froide accroche les protéines ; une grille chaude saisit vite la surface et l'aliment se décolle net.",
+      "Préchauffer couvercle fermé 10 à 15 minutes chauffe le métal uniformément, pas seulement l'air.",
+      "Une grille chaude brûle aussi les vieux résidus : le nettoyage est plus facile et les saveurs plus nettes."
+     ],
+     "q": "Un aliment t'a-t-il déjà collé sur la grille, et que cuisinais-tu ?",
+     "c": "La prochaine fois, préchauffe couvercle fermé pendant 10 à 15 bonnes minutes et observe comment l'aliment se décolle."
+    },
+    "it": {
+     "t": "Perché il preriscaldamento conta",
+     "g": "Capisci come una griglia ben preriscaldata evita che il cibo si attacchi e regala belle rigature.",
+     "p": [
+      "Una griglia fredda trattiene le proteine; una calda sigilla in fretta la superficie e il cibo si stacca pulito.",
+      "Preriscaldare a coperchio chiuso per 10-15 minuti scalda il metallo in modo uniforme, non solo l'aria.",
+      "La griglia calda brucia anche i vecchi residui: pulire è più facile e i sapori più freschi."
+     ],
+     "q": "Ti è mai capitato che il cibo si attaccasse molto alla griglia? Cosa stavi cucinando?",
+     "c": "La prossima volta preriscalda a coperchio chiuso per 10-15 minuti pieni e osserva come si stacca il cibo."
+    },
+    "pt": {
+     "t": "Porque é que pré-aquecer importa",
+     "g": "Percebe como uma grelha bem pré-aquecida evita que a comida pegue e cria belas marcas.",
+     "p": [
+      "Uma grelha fria agarra as proteínas; uma quente sela depressa a superfície e a comida solta-se limpa.",
+      "Pré-aquecer de tampa fechada durante 10 a 15 minutos aquece o metal por igual, não só o ar.",
+      "A grelha quente também queima restos antigos, o que facilita a limpeza e deixa os sabores mais frescos."
+     ],
+     "q": "Já te aconteceu a comida pegar muito à grelha? O que estavas a cozinhar?",
+     "c": "Da próxima vez, pré-aquece de tampa fechada durante 10 a 15 minutos completos e repara como a comida se solta."
+    },
+    "pt_BR": {
+     "t": "Por que preaquecer faz diferença",
+     "g": "Entenda como uma grelha bem preaquecida evita que a comida grude e deixa marcas bonitas.",
+     "p": [
+      "Uma grelha fria agarra as proteínas; uma quente sela rápido a superfície e a comida solta fácil.",
+      "Preaquecer com a tampa fechada por 10 a 15 minutos esquenta o metal por igual, não só o ar.",
+      "A grelha quente também queima resíduos antigos, facilitando a limpeza e deixando o sabor mais limpo."
+     ],
+     "q": "Já aconteceu de a comida grudar feio na grelha? O que você estava preparando?",
+     "c": "Na próxima vez, preaqueça com a tampa fechada por 10 a 15 minutos completos e repare como a comida solta."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cleaning and oiling the grates",
+     "g": "Keep your grates clean and lightly oiled for a non-stick surface every time.",
+     "p": [
+      "Brush the grates while they are hot, right after preheating and again after cooking, when residue comes off easily.",
+      "Then wipe them with a folded paper towel dipped in high smoke point oil, held with long tongs.",
+      "Check your brush for loose bristles, or use a bristle-free scraper, so nothing ends up in your food."
+     ],
+     "q": "What is your least favourite part of cleaning up after a barbecue?",
+     "c": "After your next preheat, brush the grates and oil them with a towel held in tongs, then grill something simple."
+    },
+    "de": {
+     "t": "Roste reinigen und einölen",
+     "g": "Halte deinen Rost sauber und leicht geölt, damit nichts mehr anklebt.",
+     "p": [
+      "Bürste den Rost heiß, direkt nach dem Vorheizen und nach dem Grillen, dann lösen sich Reste ganz leicht.",
+      "Wisch ihn danach mit einem gefalteten Küchenpapier ab, getränkt in hitzestabilem Öl und gehalten mit langer Zange.",
+      "Prüf deine Bürste auf lose Borsten oder nimm einen borstenfreien Schaber, damit nichts im Essen landet."
+     ],
+     "q": "Was magst du am Aufräumen nach dem Grillen am wenigsten?",
+     "c": "Bürste nach dem nächsten Vorheizen den Rost, öle ihn mit Papier in der Zange ein und grill etwas Einfaches."
+    },
+    "es": {
+     "t": "Limpiar y aceitar la rejilla",
+     "g": "Mantén la rejilla limpia y ligeramente aceitada para que nada se pegue nunca.",
+     "p": [
+      "Cepilla la rejilla en caliente, justo tras precalentar y otra vez al terminar, cuando los restos salen fácil.",
+      "Luego pásale un papel de cocina doblado con aceite resistente al calor, sujeto con pinzas largas.",
+      "Revisa que tu cepillo no suelte cerdas, o usa un rascador sin cerdas, para que nada acabe en la comida."
+     ],
+     "q": "¿Qué es lo que menos te gusta de limpiar después de una barbacoa?",
+     "c": "Tras el próximo precalentado, cepilla la rejilla, acéitala con papel sujeto con pinzas y asa algo sencillo."
+    },
+    "fr": {
+     "t": "Nettoyer et huiler la grille",
+     "g": "Garde ta grille propre et légèrement huilée pour une surface antiadhésive à chaque fois.",
+     "p": [
+      "Brosse la grille chaude, juste après le préchauffage et après la cuisson, quand les résidus partent facilement.",
+      "Essuie-la ensuite avec un papier absorbant plié trempé dans une huile qui supporte la chaleur, tenu par des pinces.",
+      "Vérifie que ta brosse ne perd pas de poils, ou prends un grattoir sans poils, pour que rien ne finisse dans l'assiette."
+     ],
+     "q": "Qu'est-ce que tu aimes le moins dans le nettoyage après un barbecue ?",
+     "c": "Après ton prochain préchauffage, brosse la grille, huile-la avec un papier tenu par des pinces et grille un plat simple."
+    },
+    "it": {
+     "t": "Pulire e oliare la griglia",
+     "g": "Mantieni la griglia pulita e leggermente oliata per una superficie antiaderente ogni volta.",
+     "p": [
+      "Spazzola la griglia ancora calda, subito dopo il preriscaldamento e a fine cottura, quando i residui vengono via facili.",
+      "Poi passala con carta da cucina piegata e intinta in un olio resistente al calore, tenuta con pinze lunghe.",
+      "Controlla che la spazzola non perda setole, o usa un raschietto senza setole, così nulla finisce nel cibo."
+     ],
+     "q": "Qual è la parte che ti piace meno del pulire dopo un barbecue?",
+     "c": "Dopo il prossimo preriscaldamento spazzola la griglia, oliala con carta tenuta dalle pinze e griglia qualcosa di semplice."
+    },
+    "pt": {
+     "t": "Limpar e untar a grelha",
+     "g": "Mantém a grelha limpa e levemente untada para uma superfície antiaderente sempre.",
+     "p": [
+      "Escova a grelha ainda quente, logo após pré-aquecer e outra vez no fim, quando os restos saem facilmente.",
+      "Depois passa um papel de cozinha dobrado com óleo resistente ao calor, seguro com pinças compridas.",
+      "Verifica se a escova não larga cerdas, ou usa um raspador sem cerdas, para nada ir parar à comida."
+     ],
+     "q": "Qual é a parte de que menos gostas na limpeza depois de um churrasco?",
+     "c": "Depois do próximo pré-aquecimento, escova a grelha, unta-a com papel seguro nas pinças e grelha algo simples."
+    },
+    "pt_BR": {
+     "t": "Limpando e untando a grelha",
+     "g": "Mantenha a grelha limpa e levemente untada para nada grudar nunca mais.",
+     "p": [
+      "Escove a grelha ainda quente, logo depois de preaquecer e de novo no final, quando os resíduos saem fácil.",
+      "Depois passe um papel-toalha dobrado com óleo resistente ao calor, segurando com um pegador longo.",
+      "Confira se a escova não solta cerdas, ou use um raspador sem cerdas, para nada parar na comida."
+     ],
+     "q": "Qual é a parte de que você menos gosta na limpeza depois de um churrasco?",
+     "c": "Depois do próximo preaquecimento, escove a grelha, unte com papel no pegador e grelhe algo simples."
+    }
+   }
+  }
+ ]
+}

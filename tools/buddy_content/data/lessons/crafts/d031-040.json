@@ -1,0 +1,835 @@
+{
+ "topic": "crafts",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The purl stitch",
+     "g": "Learn purl as the mirror of knit and move the yarn to the front without tangles.",
+     "p": [
+      "Bring the working yarn to the front, between the needles, before you purl a stitch.",
+      "Insert the right needle from right to left into the front of the stitch, wrap anticlockwise, push the loop back through.",
+      "Slip the old stitch off; the bump of a purl stitch faces you, the smooth V of the knit is on the back."
+     ],
+     "q": "Does purling feel awkward at first? Many knitters say it is the knit stitch done backwards.",
+     "c": "Knit one row, then purl one row on your practice piece, and notice the bumps appear."
+    },
+    "de": {
+     "t": "Die linke Masche",
+     "g": "Lerne die linke Masche als Spiegelbild der rechten und leg den Faden ohne Knoten nach vorn.",
+     "p": [
+      "Leg den Arbeitsfaden vor dem Linksstricken zwischen den Nadeln hindurch nach vorn.",
+      "Stich von rechts nach links vorn in die Masche, leg den Faden gegen den Uhrzeigersinn um und schieb die Schlaufe zurück durch.",
+      "Lass die alte Masche abgleiten; das Knötchen der linken Masche zeigt zu dir, das glatte V der rechten liegt hinten."
+     ],
+     "q": "Fühlt sich Linksstricken anfangs komisch an? Viele sagen, es ist die rechte Masche rückwärts.",
+     "c": "Strick eine Reihe rechts, dann eine links an deinem Übungsstück und beobachte, wie Knötchen entstehen."
+    },
+    "es": {
+     "t": "El punto del revés",
+     "g": "Aprende el revés como espejo del derecho y pasa el hilo delante sin enredos.",
+     "p": [
+      "Lleva el hilo de trabajo hacia delante, entre las agujas, antes de tejer un punto del revés.",
+      "Mete la aguja derecha de derecha a izquierda por delante del punto, enrolla en sentido antihorario y saca el lazo hacia atrás.",
+      "Suelta el punto viejo; el bultito del revés queda hacia ti y la V lisa del derecho queda detrás."
+     ],
+     "q": "¿El revés se siente raro al principio? Mucha gente dice que es el derecho hecho al revés.",
+     "c": "Teje una fila del derecho y otra del revés en tu muestra de práctica y mira cómo aparecen los bultitos."
+    },
+    "fr": {
+     "t": "La maille envers",
+     "g": "Apprends la maille envers, miroir de l'endroit, et passe le fil devant sans t'emmêler.",
+     "p": [
+      "Ramène le fil de travail devant, entre les aiguilles, avant de tricoter une maille envers.",
+      "Pique de droite à gauche dans le devant de la maille, enroule dans le sens inverse des aiguilles d'une montre et ramène la boucle.",
+      "Fais glisser l'ancienne maille ; la petite bosse de l'envers est face à toi, le V lisse de l'endroit est derrière."
+     ],
+     "q": "L'envers te paraît maladroit au début ? Beaucoup disent que c'est l'endroit fait à rebours.",
+     "c": "Tricote un rang endroit, puis un rang envers sur ton échantillon, et regarde les petites bosses apparaître."
+    },
+    "it": {
+     "t": "Il punto rovescio",
+     "g": "Impara il rovescio come specchio del diritto e porta il filo davanti senza grovigli.",
+     "p": [
+      "Porta il filo di lavoro davanti, tra i ferri, prima di lavorare una maglia a rovescio.",
+      "Inserisci il ferro destro da destra a sinistra nel davanti della maglia, avvolgi in senso antiorario e riporta indietro l'anello.",
+      "Lascia cadere la vecchia maglia; il nodino del rovescio è verso di te, la V liscia del diritto sta dietro."
+     ],
+     "q": "All'inizio il rovescio ti sembra scomodo? Molti dicono che è il diritto fatto al contrario.",
+     "c": "Lavora un ferro a diritto e uno a rovescio sul tuo campione e guarda comparire i nodini."
+    },
+    "pt": {
+     "t": "A malha liga",
+     "g": "Aprende a malha liga como espelho da meia e passa o fio para a frente sem nós.",
+     "p": [
+      "Traz o fio de trabalho para a frente, entre as agulhas, antes de tricotar uma malha liga.",
+      "Enfia a agulha direita da direita para a esquerda na frente da malha, enrola no sentido contrário aos ponteiros e puxa a laçada para trás.",
+      "Larga a malha velha; o nozinho da liga fica virado para ti e o V liso da meia fica atrás."
+     ],
+     "q": "A liga parece estranha no início? Muita gente diz que é a meia feita ao contrário.",
+     "c": "Tricota uma carreira em meia e outra em liga na tua amostra e vê os nozinhos a aparecer."
+    },
+    "pt_BR": {
+     "t": "O ponto tricô (avesso)",
+     "g": "Aprenda o ponto tricô como espelho do ponto meia e passe o fio para a frente sem embolar.",
+     "p": [
+      "Leve o fio de trabalho para a frente, entre as agulhas, antes de fazer o ponto tricô.",
+      "Enfie a agulha direita da direita para a esquerda na frente do ponto, enrole no sentido anti-horário e puxe a laçada para trás.",
+      "Solte o ponto antigo; o carocinho do tricô fica virado para você e o V liso da meia fica atrás."
+     ],
+     "q": "O ponto tricô parece estranho no começo? Muita gente diz que é o meia feito ao contrário.",
+     "c": "Tricote uma carreira em meia e outra em tricô na sua amostra e veja os carocinhos aparecendo."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stockinette stitch",
+     "g": "Alternate knit and purl rows for the smooth V fabric and learn why its edges curl.",
+     "p": [
+      "Knit the right-side rows and purl the wrong-side rows: the front shows neat Vs, the back shows bumps.",
+      "Stockinette naturally curls at the edges because the front and back stitches pull differently.",
+      "A few garter stitches at each edge, or a border, keeps it flat; blocking helps too."
+     ],
+     "q": "Have you noticed the little Vs on a store-bought sweater before today?",
+     "c": "Knit 10 rows of stockinette with 3 garter stitches at each edge and see if it stays flat."
+    },
+    "de": {
+     "t": "Glatt rechts",
+     "g": "Wechsle rechte und linke Reihen für das glatte V-Gestrick und erfahre, warum sich die Kanten rollen.",
+     "p": [
+      "Hinreihen rechts, Rückreihen links: Vorn sieht man ordentliche Vs, hinten kleine Knötchen.",
+      "Glatt rechts rollt sich an den Kanten ein, weil Vorder- und Rückseite der Maschen unterschiedlich ziehen.",
+      "Ein paar Krausmaschen an jedem Rand oder eine Blende halten es flach; Spannen hilft ebenfalls."
+     ],
+     "q": "Sind dir die kleinen Vs an einem gekauften Pullover schon einmal aufgefallen?",
+     "c": "Strick 10 Reihen glatt rechts mit je 3 Krausmaschen am Rand und schau, ob es flach bleibt."
+    },
+    "es": {
+     "t": "El punto jersey",
+     "g": "Alterna filas del derecho y del revés para el tejido liso de uves y descubre por qué se enrolla.",
+     "p": [
+      "Teje del derecho las filas del lado bueno y del revés las del otro lado: delante, uves ordenadas; detrás, bultitos.",
+      "El jersey se enrolla en los bordes de forma natural porque el derecho y el revés del punto tiran distinto.",
+      "Unos puntos de bobo en cada borde, o un ribete, lo mantienen plano; el bloqueo también ayuda."
+     ],
+     "q": "¿Te habías fijado antes en las uves de un jersey comprado?",
+     "c": "Teje 10 filas de punto jersey con 3 puntos de bobo en cada borde y mira si queda plano."
+    },
+    "fr": {
+     "t": "Le jersey",
+     "g": "Alterne rangs endroit et envers pour le jersey lisse en V et découvre pourquoi ses bords roulent.",
+     "p": [
+      "Tricote l'endroit sur les rangs du dessus et l'envers sur ceux du dessous : devant des V nets, derrière des bosses.",
+      "Le jersey roule naturellement sur les bords, car l'avant et l'arrière des mailles ne tirent pas pareil.",
+      "Quelques mailles au point mousse sur chaque bord, ou une bordure, le gardent plat ; le blocage aide aussi."
+     ],
+     "q": "Avais-tu déjà remarqué les petits V sur un pull acheté en magasin ?",
+     "c": "Tricote 10 rangs de jersey avec 3 mailles mousse sur chaque bord et vois s'il reste plat."
+    },
+    "it": {
+     "t": "La maglia rasata",
+     "g": "Alterna ferri a diritto e a rovescio per il tessuto liscio a V e scopri perché i bordi si arrotolano.",
+     "p": [
+      "Lavora a diritto i ferri sul dritto e a rovescio quelli sul rovescio: davanti V ordinate, dietro nodini.",
+      "La maglia rasata si arrotola sui bordi perché il davanti e il dietro delle maglie tirano in modo diverso.",
+      "Qualche maglia a legaccio su ogni bordo, o un bordo dedicato, la tiene piatta; anche il bloccaggio aiuta."
+     ],
+     "q": "Avevi mai notato le piccole V su un maglione comprato?",
+     "c": "Lavora 10 ferri a maglia rasata con 3 maglie a legaccio su ogni bordo e guarda se resta piatta."
+    },
+    "pt": {
+     "t": "O ponto jersey",
+     "g": "Alterna carreiras em meia e em liga para o tecido liso de Vs e descobre porque enrola nas bordas.",
+     "p": [
+      "Tricota em meia as carreiras do direito e em liga as do avesso: à frente Vs certinhos, atrás nozinhos.",
+      "O jersey enrola naturalmente nas bordas, porque a frente e as costas das malhas puxam de forma diferente.",
+      "Algumas malhas em ponto liga em cada borda, ou um rebordo, mantêm-no plano; bloquear também ajuda."
+     ],
+     "q": "Já tinhas reparado nos pequenos Vs de uma camisola comprada?",
+     "c": "Tricota 10 carreiras de jersey com 3 malhas em ponto liga em cada borda e vê se fica plano."
+    },
+    "pt_BR": {
+     "t": "O ponto jersey (meia)",
+     "g": "Alterne carreiras em meia e em tricô para o tecido liso de Vs e descubra por que as bordas enrolam.",
+     "p": [
+      "Faça meia nas carreiras do direito e tricô nas do avesso: na frente, Vs certinhos; atrás, carocinhos.",
+      "O jersey enrola nas bordas naturalmente, porque a frente e as costas dos pontos puxam de jeitos diferentes.",
+      "Alguns pontos de ponto tricô em cada borda, ou um acabamento, mantêm tudo plano; bloquear também ajuda."
+     ],
+     "q": "Você já tinha reparado nos pequenos Vs de uma blusa de tricô comprada?",
+     "c": "Tricote 10 carreiras de jersey com 3 pontos de ponto tricô em cada borda e veja se fica plano."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Binding off",
+     "g": "Finish a piece with a neat bind-off edge that stretches as much as the fabric.",
+     "p": [
+      "Knit two stitches, then lift the first stitch over the second and off the needle; one stitch is bound off.",
+      "Knit one more and repeat to the end, then cut the yarn and pull the tail through the last loop.",
+      "Keep it loose: a tight bind-off puckers, so try a needle one or two sizes bigger for this row."
+     ],
+     "q": "Is finishing a project something you look forward to, or do you prefer starting new ones?",
+     "c": "Bind off your practice piece and check that the top edge stretches as much as the rest."
+    },
+    "de": {
+     "t": "Maschen abketten",
+     "g": "Schließe ein Teil mit einer ordentlichen Abkettkante ab, die so dehnbar ist wie das Gestrick.",
+     "p": [
+      "Strick zwei Maschen, heb die erste über die zweite und von der Nadel: Eine Masche ist abgekettet.",
+      "Strick eine weitere und wiederhole bis zum Ende, dann schneide den Faden ab und zieh ihn durch die letzte Schlaufe.",
+      "Locker bleiben: Eine feste Kante zieht sich zusammen, nimm also für diese Reihe eine ein, zwei Nummern dickere Nadel."
+     ],
+     "q": "Freust du dich aufs Fertigmachen, oder fängst du lieber Neues an?",
+     "c": "Kette dein Übungsstück ab und prüfe, ob die obere Kante sich so dehnt wie der Rest."
+    },
+    "es": {
+     "t": "Cerrar los puntos",
+     "g": "Termina una pieza con un borde de cierre limpio que estire tanto como el tejido.",
+     "p": [
+      "Teje dos puntos y pasa el primero por encima del segundo hasta sacarlo de la aguja: ya cerraste un punto.",
+      "Teje otro y repite hasta el final; luego corta el hilo y pasa la cola por el último lazo.",
+      "Ciérralo flojo: un cierre apretado frunce el borde, así que prueba una aguja uno o dos números mayor."
+     ],
+     "q": "¿Te gusta terminar proyectos o prefieres empezar otros nuevos?",
+     "c": "Cierra los puntos de tu muestra y comprueba que el borde superior estira tanto como el resto."
+    },
+    "fr": {
+     "t": "Rabattre les mailles",
+     "g": "Termine un ouvrage avec une bordure rabattue nette qui s'étire autant que le tricot.",
+     "p": [
+      "Tricote deux mailles, puis passe la première par-dessus la seconde et hors de l'aiguille : une maille est rabattue.",
+      "Tricote-en une autre et répète jusqu'au bout, puis coupe le fil et passe-le dans la dernière boucle.",
+      "Reste souple : une bordure serrée fronce, essaie donc une aiguille d'une ou deux tailles plus grosse pour ce rang."
+     ],
+     "q": "Aimes-tu terminer un ouvrage, ou préfères-tu en commencer de nouveaux ?",
+     "c": "Rabats les mailles de ton échantillon et vérifie que le bord du haut s'étire autant que le reste."
+    },
+    "it": {
+     "t": "Chiudere le maglie",
+     "g": "Termina un lavoro con una chiusura ordinata, elastica quanto il tessuto.",
+     "p": [
+      "Lavora due maglie, poi accavalla la prima sulla seconda e falla uscire dal ferro: una maglia è chiusa.",
+      "Lavorane un'altra e ripeti fino alla fine, poi taglia il filo e passalo nell'ultimo anello.",
+      "Resta morbido: una chiusura stretta arriccia il bordo, prova un ferro di una o due misure più grande."
+     ],
+     "q": "Ti piace finire un lavoro o preferisci iniziarne di nuovi?",
+     "c": "Chiudi le maglie del tuo campione e controlla che il bordo superiore si allarghi come il resto."
+    },
+    "pt": {
+     "t": "Arrematar as malhas",
+     "g": "Termina uma peça com um remate limpo que estica tanto quanto o tecido.",
+     "p": [
+      "Tricota duas malhas e passa a primeira por cima da segunda e para fora da agulha: uma malha está arrematada.",
+      "Tricota mais uma e repete até ao fim; depois corta o fio e passa a ponta pela última laçada.",
+      "Mantém-no solto: um remate apertado franze, por isso experimenta uma agulha um ou dois números acima."
+     ],
+     "q": "Gostas de terminar projetos ou preferes começar novos?",
+     "c": "Arremata a tua amostra e confirma que a borda de cima estica tanto como o resto."
+    },
+    "pt_BR": {
+     "t": "Arrematando os pontos",
+     "g": "Termine uma peça com um arremate limpo que estica tanto quanto o tecido.",
+     "p": [
+      "Tricote dois pontos e passe o primeiro por cima do segundo e para fora da agulha: um ponto foi arrematado.",
+      "Tricote mais um e repita até o fim; depois corte o fio e passe a ponta pela última laçada.",
+      "Deixe frouxo: um arremate apertado franze, então teste uma agulha um ou dois números maior."
+     ],
+     "q": "Você gosta de terminar projetos ou prefere começar novos?",
+     "c": "Arremate sua amostra e confira se a borda de cima estica tanto quanto o resto."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixing dropped stitches",
+     "g": "Pick up a dropped stitch with a crochet hook and fix mistakes calmly.",
+     "p": [
+      "A dropped stitch leaves a ladder of loose bars; catch the loop quickly with a pin or marker so it stops running.",
+      "From the front of stockinette, insert a crochet hook into the loop and pull each bar through, one by one, up the ladder.",
+      "Put the rescued stitch back on the left needle facing the right way: the right leg sits in front."
+     ],
+     "q": "How do you usually react to mistakes: frustration, laughter or curiosity?",
+     "c": "Drop one stitch on purpose, let it run down three rows and ladder it back up with a hook."
+    },
+    "de": {
+     "t": "Gefallene Maschen retten",
+     "g": "Hol eine gefallene Masche mit einer Häkelnadel zurück und behebe Fehler in Ruhe.",
+     "p": [
+      "Eine gefallene Masche hinterlässt eine Leiter aus losen Querfäden; sichere die Schlaufe schnell mit einer Nadel.",
+      "Von der rechten Seite stichst du mit der Häkelnadel in die Schlaufe und ziehst die Querfäden einzeln hoch.",
+      "Setz die gerettete Masche richtig herum auf die linke Nadel zurück: Das rechte Bein liegt vorn."
+     ],
+     "q": "Wie reagierst du meist auf Fehler: mit Frust, Lachen oder Neugier?",
+     "c": "Lass absichtlich eine Masche drei Reihen tief fallen und häkle sie die Leiter wieder hoch."
+    },
+    "es": {
+     "t": "Recuperar puntos escapados",
+     "g": "Recoge un punto escapado con un ganchillo y arregla errores con calma.",
+     "p": [
+      "Un punto escapado deja una escalera de hebras sueltas; atrapa el lazo rápido con un alfiler o marcador.",
+      "Desde el derecho del jersey, mete el ganchillo en el lazo y sube cada hebra, una a una, por la escalera.",
+      "Devuelve el punto rescatado a la aguja izquierda bien orientado: la pata derecha va delante."
+     ],
+     "q": "¿Cómo sueles reaccionar ante los errores: con frustración, con risa o con curiosidad?",
+     "c": "Suelta un punto a propósito, deja que baje tres filas y súbelo de nuevo con el ganchillo."
+    },
+    "fr": {
+     "t": "Rattraper une maille filée",
+     "g": "Rattrape une maille filée avec un crochet et corrige tes erreurs calmement.",
+     "p": [
+      "Une maille filée laisse une échelle de brins lâches ; bloque vite la boucle avec une épingle ou un marqueur.",
+      "Côté endroit du jersey, glisse un crochet dans la boucle et remonte chaque brin, un par un, le long de l'échelle.",
+      "Remets la maille sauvée sur l'aiguille gauche dans le bon sens : le brin droit se trouve devant."
+     ],
+     "q": "Comment réagis-tu face aux erreurs : agacement, rire ou curiosité ?",
+     "c": "Laisse filer une maille exprès sur trois rangs, puis remonte-la au crochet."
+    },
+    "it": {
+     "t": "Recuperare una maglia caduta",
+     "g": "Recupera una maglia caduta con l'uncinetto e correggi gli errori con calma.",
+     "p": [
+      "Una maglia caduta lascia una scaletta di fili lenti; ferma subito l'anello con uno spillo o un segnapunti.",
+      "Dal diritto della maglia rasata, infila l'uncinetto nell'anello e riprendi ogni filo, uno alla volta, risalendo.",
+      "Rimetti la maglia salvata sul ferro sinistro nel verso giusto: la gamba destra sta davanti."
+     ],
+     "q": "Come reagisci di solito agli errori: frustrazione, risata o curiosità?",
+     "c": "Fai cadere apposta una maglia per tre ferri e riprendila risalendo con l'uncinetto."
+    },
+    "pt": {
+     "t": "Apanhar malhas caídas",
+     "g": "Apanha uma malha caída com uma agulha de croché e corrige erros com calma.",
+     "p": [
+      "Uma malha caída deixa uma escada de fios soltos; prende logo a laçada com um alfinete ou marcador.",
+      "Do lado direito do jersey, enfia a agulha de croché na laçada e puxa cada fio, um a um, pela escada acima.",
+      "Volta a pôr a malha salva na agulha esquerda virada da forma certa: a perna direita fica à frente."
+     ],
+     "q": "Como costumas reagir aos erros: frustração, riso ou curiosidade?",
+     "c": "Deixa cair uma malha de propósito por três carreiras e recupera-a com a agulha de croché."
+    },
+    "pt_BR": {
+     "t": "Recuperando pontos que caíram",
+     "g": "Recupere um ponto que caiu com uma agulha de crochê e corrija erros com calma.",
+     "p": [
+      "Um ponto que cai deixa uma escadinha de fios soltos; prenda logo a laçada com um alfinete ou marcador.",
+      "Pelo direito do jersey, enfie a agulha de crochê na laçada e puxe cada fio, um por um, subindo a escadinha.",
+      "Devolva o ponto salvo à agulha esquerda na posição certa: a perna direita fica na frente."
+     ],
+     "q": "Como você costuma reagir a erros: frustração, risada ou curiosidade?",
+     "c": "Deixe um ponto cair de propósito por três carreiras e suba de volta com a agulha de crochê."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weaving in ends",
+     "g": "Hide yarn tails invisibly so your knitting looks tidy and never unravels.",
+     "p": [
+      "Leave tails of at least 10 to 15 cm when you start or finish, so there is enough length to weave in.",
+      "Thread the tail onto a blunt tapestry needle and run it through the bumps on the wrong side, changing direction once or twice.",
+      "Stretch the fabric gently before trimming, then cut the tail close but not flush, so it cannot slip back out."
+     ],
+     "q": "Do you prefer to weave in ends as you go or all at the end?",
+     "c": "Weave in both tails of your practice piece so they disappear completely from the right side."
+    },
+    "de": {
+     "t": "Fäden vernähen",
+     "g": "Verstecke Fadenenden unsichtbar, damit dein Gestrick ordentlich aussieht und nicht aufgeht.",
+     "p": [
+      "Lass am Anfang und Ende mindestens 10 bis 15 cm Faden stehen, damit genug zum Vernähen bleibt.",
+      "Fädle das Ende in eine stumpfe Wollnadel und zieh es auf der Rückseite durch die Knötchen, mit ein, zwei Richtungswechseln.",
+      "Dehne das Gestrick sanft vor dem Abschneiden und schneide knapp, aber nicht bündig, damit nichts herausrutscht."
+     ],
+     "q": "Vernähst du Fäden lieber zwischendurch oder alle am Schluss?",
+     "c": "Vernähe beide Fäden deines Übungsstücks, bis sie von der Vorderseite völlig verschwunden sind."
+    },
+    "es": {
+     "t": "Rematar las hebras",
+     "g": "Esconde las colas de hilo de forma invisible para que tu tejido quede limpio y no se deshaga.",
+     "p": [
+      "Deja colas de al menos 10 a 15 cm al empezar o terminar, para tener largo suficiente para rematar.",
+      "Enhebra la cola en una aguja lanera de punta roma y pásala por los bultitos del revés, cambiando una o dos veces de dirección.",
+      "Estira suavemente el tejido antes de cortar y corta cerca pero no a ras, para que la cola no se salga."
+     ],
+     "q": "¿Prefieres rematar las hebras sobre la marcha o todas al final?",
+     "c": "Remata las dos colas de tu muestra hasta que desaparezcan por completo del derecho."
+    },
+    "fr": {
+     "t": "Rentrer les fils",
+     "g": "Cache les bouts de fil de façon invisible pour un tricot net qui ne se défait jamais.",
+     "p": [
+      "Laisse des bouts d'au moins 10 à 15 cm au début et à la fin, pour avoir assez de longueur à rentrer.",
+      "Enfile le bout sur une aiguille à laine à bout rond et passe-le dans les bosses de l'envers, en changeant une ou deux fois de sens.",
+      "Étire doucement le tricot avant de couper, puis coupe près sans être à ras, pour que le fil ne ressorte pas."
+     ],
+     "q": "Préfères-tu rentrer les fils au fur et à mesure, ou tous à la fin ?",
+     "c": "Rentre les deux fils de ton échantillon jusqu'à ce qu'ils disparaissent complètement côté endroit."
+    },
+    "it": {
+     "t": "Nascondere le code",
+     "g": "Nascondi le code di filato in modo invisibile, così il lavoro è ordinato e non si disfa.",
+     "p": [
+      "Lascia code di almeno 10-15 cm all'inizio e alla fine, così hai filo sufficiente da nascondere.",
+      "Infila la coda in un ago da lana a punta arrotondata e passala nei nodini sul rovescio, cambiando direzione una o due volte.",
+      "Allarga piano il tessuto prima di tagliare, poi taglia vicino ma non a filo, così la coda non scappa."
+     ],
+     "q": "Preferisci nascondere le code man mano o tutte alla fine?",
+     "c": "Nascondi entrambe le code del tuo campione finché spariscono del tutto dal diritto."
+    },
+    "pt": {
+     "t": "Esconder as pontas",
+     "g": "Esconde as pontas de fio de forma invisível para o tricô ficar arrumado e nunca se desmanchar.",
+     "p": [
+      "Deixa pontas de pelo menos 10 a 15 cm no início e no fim, para teres comprimento para esconder.",
+      "Enfia a ponta numa agulha de tapeçaria de ponta romba e passa-a pelos nozinhos do avesso, mudando de direção uma ou duas vezes.",
+      "Estica levemente o tecido antes de cortar e corta perto, mas não rente, para a ponta não fugir."
+     ],
+     "q": "Preferes esconder as pontas pelo caminho ou todas no fim?",
+     "c": "Esconde as duas pontas da tua amostra até desaparecerem por completo do lado direito."
+    },
+    "pt_BR": {
+     "t": "Escondendo as pontas",
+     "g": "Esconda as pontas de fio de forma invisível para o tricô ficar caprichado e nunca desmanchar.",
+     "p": [
+      "Deixe pontas de pelo menos 10 a 15 cm no início e no fim, para ter comprimento para esconder.",
+      "Passe a ponta numa agulha de tapeçaria sem ponta e costure pelos carocinhos do avesso, mudando de direção uma ou duas vezes.",
+      "Estique o tecido de leve antes de cortar e corte perto, mas não rente, para a ponta não escapar."
+     ],
+     "q": "Você prefere esconder as pontas no caminho ou todas no final?",
+     "c": "Esconda as duas pontas da sua amostra até sumirem por completo do lado direito."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knitting a gauge swatch",
+     "g": "Learn why a small test square tells you whether a project will come out the right size.",
+     "p": [
+      "Gauge is how many stitches and rows fit in 10 cm; patterns list the gauge their sizes are based on.",
+      "Knit a swatch a bit larger than 10 cm, wash or block it as you will the finished piece, then measure the centre.",
+      "Too many stitches per 10 cm? Try bigger needles. Too few? Try smaller ones, until your gauge matches."
+     ],
+     "q": "Have you ever made something that came out much bigger or smaller than expected?",
+     "c": "Knit a swatch with the needles you have, measure it and write down your stitches per 10 cm."
+    },
+    "de": {
+     "t": "Eine Maschenprobe stricken",
+     "g": "Erfahre, warum ein kleines Probestück zeigt, ob ein Projekt die richtige Größe bekommt.",
+     "p": [
+      "Die Maschenprobe sagt, wie viele Maschen und Reihen auf 10 cm passen; Anleitungen nennen ihre Maschenprobe.",
+      "Strick ein Stück etwas größer als 10 cm, wasche oder spanne es wie das fertige Teil und miss in der Mitte.",
+      "Zu viele Maschen pro 10 cm? Nimm dickere Nadeln. Zu wenige? Dünnere, bis deine Maschenprobe passt."
+     ],
+     "q": "Hast du schon einmal etwas gemacht, das viel größer oder kleiner wurde als gedacht?",
+     "c": "Strick mit deinen Nadeln eine Maschenprobe, miss sie und notiere deine Maschen pro 10 cm."
+    },
+    "es": {
+     "t": "Tejer una muestra",
+     "g": "Descubre por qué un pequeño cuadrado de prueba te dice si un proyecto saldrá de la talla correcta.",
+     "p": [
+      "La muestra indica cuántos puntos y filas caben en 10 cm; los patrones dicen en qué muestra se basan sus tallas.",
+      "Teje una muestra algo mayor de 10 cm, lávala o bloquéala como harás con la pieza final y mide en el centro.",
+      "¿Demasiados puntos en 10 cm? Prueba agujas más gruesas. ¿Muy pocos? Más finas, hasta que coincida."
+     ],
+     "q": "¿Alguna vez hiciste algo que salió mucho más grande o más pequeño de lo esperado?",
+     "c": "Teje una muestra con las agujas que tengas, mídela y apunta tus puntos por cada 10 cm."
+    },
+    "fr": {
+     "t": "Tricoter un échantillon",
+     "g": "Découvre pourquoi un petit carré d'essai te dit si un ouvrage aura la bonne taille.",
+     "p": [
+      "L'échantillon indique combien de mailles et de rangs tiennent dans 10 cm ; les modèles donnent le leur.",
+      "Tricote un carré un peu plus grand que 10 cm, lave-le ou bloque-le comme l'ouvrage fini, puis mesure au centre.",
+      "Trop de mailles pour 10 cm ? Prends des aiguilles plus grosses. Trop peu ? Plus fines, jusqu'à obtenir le bon."
+     ],
+     "q": "As-tu déjà fait quelque chose qui est sorti bien plus grand ou plus petit que prévu ?",
+     "c": "Tricote un échantillon avec tes aiguilles, mesure-le et note ton nombre de mailles pour 10 cm."
+    },
+    "it": {
+     "t": "Lavorare un campione",
+     "g": "Scopri perché un piccolo quadrato di prova ti dice se un progetto verrà della misura giusta.",
+     "p": [
+      "Il campione indica quante maglie e ferri stanno in 10 cm; gli schemi indicano su quale campione si basano.",
+      "Lavora un campione un po' più grande di 10 cm, lavalo o bloccalo come farai col capo finito e misura al centro.",
+      "Troppe maglie in 10 cm? Prova ferri più grossi. Troppo poche? Più sottili, finché il campione corrisponde."
+     ],
+     "q": "Ti è mai capitato di fare qualcosa che è venuto molto più grande o più piccolo del previsto?",
+     "c": "Lavora un campione con i ferri che hai, misuralo e annota quante maglie hai in 10 cm."
+    },
+    "pt": {
+     "t": "Tricotar uma amostra",
+     "g": "Descobre porque um pequeno quadrado de teste te diz se um projeto vai sair do tamanho certo.",
+     "p": [
+      "A amostra indica quantas malhas e carreiras cabem em 10 cm; as receitas dizem em que amostra se baseiam.",
+      "Tricota uma amostra um pouco maior do que 10 cm, lava-a ou bloqueia-a como farás à peça final e mede no centro.",
+      "Malhas a mais em 10 cm? Experimenta agulhas mais grossas. A menos? Mais finas, até a amostra bater certo."
+     ],
+     "q": "Já fizeste alguma coisa que saiu muito maior ou mais pequena do que esperavas?",
+     "c": "Tricota uma amostra com as agulhas que tens, mede-a e anota as tuas malhas por 10 cm."
+    },
+    "pt_BR": {
+     "t": "Tricotando uma amostra",
+     "g": "Descubra por que um pequeno quadrado de teste mostra se o projeto vai sair no tamanho certo.",
+     "p": [
+      "A amostra diz quantos pontos e carreiras cabem em 10 cm; as receitas informam em qual amostra se baseiam.",
+      "Tricote uma amostra um pouco maior que 10 cm, lave ou bloqueie como fará com a peça final e meça no centro.",
+      "Pontos demais em 10 cm? Teste agulhas mais grossas. De menos? Mais finas, até a amostra bater."
+     ],
+     "q": "Você já fez algo que ficou muito maior ou menor do que esperava?",
+     "c": "Tricote uma amostra com as agulhas que tem, meça e anote quantos pontos você faz em 10 cm."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first scarf project",
+     "g": "Plan and knit a whole scarf with neat edges from start to finish.",
+     "p": [
+      "Pick a smooth medium-weight yarn and garter stitch, so the scarf lies flat and looks the same on both sides.",
+      "Plan the width with your gauge, for example about 20 cm, and aim for a length roughly as long as you are tall.",
+      "For neat edges, slip the first stitch of every row, and measure your progress every few days."
+     ],
+     "q": "Who would you knit your first scarf for: yourself or someone special?",
+     "c": "Cast on your scarf today and knit the first 10 rows with slipped edge stitches."
+    },
+    "de": {
+     "t": "Dein erstes Schalprojekt",
+     "g": "Plane und stricke einen ganzen Schal mit sauberen Kanten von Anfang bis Ende.",
+     "p": [
+      "Wähl ein glattes, mittelstarkes Garn und kraus rechts, damit der Schal flach liegt und beidseitig gleich aussieht.",
+      "Plane die Breite mit deiner Maschenprobe, etwa 20 cm, und eine Länge ungefähr so lang, wie du groß bist.",
+      "Für saubere Kanten hebst du die erste Masche jeder Reihe ab und misst alle paar Tage deinen Fortschritt."
+     ],
+     "q": "Für wen würdest du deinen ersten Schal stricken: für dich oder für jemand Besonderen?",
+     "c": "Schlag heute deinen Schal an und strick die ersten 10 Reihen mit abgehobenen Randmaschen."
+    },
+    "es": {
+     "t": "Tu primera bufanda",
+     "g": "Planifica y teje una bufanda entera con bordes limpios de principio a fin.",
+     "p": [
+      "Elige un hilo liso de grosor medio y punto bobo, para que la bufanda quede plana e igual por ambos lados.",
+      "Calcula el ancho con tu muestra, por ejemplo unos 20 cm, y apunta a un largo parecido a tu estatura.",
+      "Para bordes limpios, desliza el primer punto de cada fila y mide tu avance cada pocos días."
+     ],
+     "q": "¿Para quién tejerías tu primera bufanda: para ti o para alguien especial?",
+     "c": "Monta hoy tu bufanda y teje las primeras 10 filas deslizando el punto del borde."
+    },
+    "fr": {
+     "t": "Ta première écharpe",
+     "g": "Planifie et tricote une écharpe entière aux bords nets, du début à la fin.",
+     "p": [
+      "Choisis un fil lisse de grosseur moyenne et le point mousse, pour une écharpe plate et identique des deux côtés.",
+      "Calcule la largeur avec ton échantillon, environ 20 cm par exemple, et vise une longueur proche de ta taille.",
+      "Pour des bords nets, glisse la première maille de chaque rang et mesure ton avancée tous les quelques jours."
+     ],
+     "q": "Pour qui tricoterais-tu ta première écharpe : pour toi ou pour quelqu'un de spécial ?",
+     "c": "Monte ton écharpe aujourd'hui et tricote les 10 premiers rangs avec des mailles lisières glissées."
+    },
+    "it": {
+     "t": "La tua prima sciarpa",
+     "g": "Progetta e lavora un'intera sciarpa con bordi ordinati, dall'inizio alla fine.",
+     "p": [
+      "Scegli un filato liscio di spessore medio e il legaccio, così la sciarpa resta piatta e uguale sui due lati.",
+      "Calcola la larghezza col campione, per esempio circa 20 cm, e punta a una lunghezza simile alla tua altezza.",
+      "Per bordi ordinati, passa senza lavorarla la prima maglia di ogni ferro e misura i progressi ogni pochi giorni."
+     ],
+     "q": "Per chi lavoreresti la tua prima sciarpa: per te o per qualcuno di speciale?",
+     "c": "Avvia oggi la tua sciarpa e lavora i primi 10 ferri con le maglie di vivagno passate."
+    },
+    "pt": {
+     "t": "O teu primeiro cachecol",
+     "g": "Planeia e tricota um cachecol inteiro com bordas limpas, do início ao fim.",
+     "p": [
+      "Escolhe um fio liso de espessura média e ponto liga, para o cachecol ficar plano e igual dos dois lados.",
+      "Calcula a largura com a amostra, por exemplo uns 20 cm, e aponta para um comprimento parecido com a tua altura.",
+      "Para bordas limpas, passa sem tricotar a primeira malha de cada carreira e mede o progresso a cada poucos dias."
+     ],
+     "q": "Para quem tricotarias o teu primeiro cachecol: para ti ou para alguém especial?",
+     "c": "Monta hoje o teu cachecol e tricota as primeiras 10 carreiras com as malhas de ourela passadas."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro cachecol",
+     "g": "Planeje e tricote um cachecol inteiro com bordas caprichadas, do começo ao fim.",
+     "p": [
+      "Escolha um fio liso de espessura média e ponto tricô, para o cachecol ficar plano e igual dos dois lados.",
+      "Calcule a largura com a amostra, por exemplo uns 20 cm, e mire num comprimento parecido com a sua altura.",
+      "Para bordas caprichadas, passe sem tricotar o primeiro ponto de cada carreira e meça o progresso a cada poucos dias."
+     ],
+     "q": "Para quem você tricotaria seu primeiro cachecol: para você ou para alguém especial?",
+     "c": "Monte hoje seu cachecol e tricote as primeiras 10 carreiras passando o ponto da borda."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the crochet hook",
+     "g": "Learn hook sizes and shapes and find comfortable ways to hold the hook and yarn.",
+     "p": [
+      "Crochet uses a single hook and one live loop at a time, so a dropped stitch never runs far.",
+      "Hooks are sized in millimetres; inline hooks have a straight throat, tapered hooks a rounded one, and ergonomic handles help.",
+      "Hold the hook like a pencil or like a knife, and wrap the yarn over your other index finger to control tension."
+     ],
+     "q": "Do you think you will feel more at home with two needles or one hook?",
+     "c": "Try holding a hook both ways for a minute each and decide which feels more natural."
+    },
+    "de": {
+     "t": "Die Häkelnadel kennenlernen",
+     "g": "Lerne Größen und Formen von Häkelnadeln und finde bequeme Haltungen für Nadel und Garn.",
+     "p": [
+      "Beim Häkeln gibt es nur eine Nadel und eine offene Schlaufe, darum läuft eine Masche nie weit.",
+      "Größen stehen in Millimetern; manche Nadeln haben einen geraden, andere einen runden Hals, Ergo-Griffe helfen.",
+      "Halte die Nadel wie einen Stift oder wie ein Messer und leg das Garn über den Zeigefinger der anderen Hand."
+     ],
+     "q": "Fühlst du dich wohl eher mit zwei Nadeln oder mit einem Haken zu Hause?",
+     "c": "Halte eine Häkelnadel je eine Minute auf beide Arten und entscheide, was sich natürlicher anfühlt."
+    },
+    "es": {
+     "t": "Conoce el ganchillo",
+     "g": "Aprende tamaños y formas de ganchillo y encuentra formas cómodas de sujetarlo con el hilo.",
+     "p": [
+      "El ganchillo usa una sola aguja y un único lazo activo, así que un punto suelto nunca se escapa mucho.",
+      "Los tamaños van en milímetros; hay ganchos de garganta recta y de garganta redondeada, y mangos ergonómicos.",
+      "Sujétalo como un lápiz o como un cuchillo y pasa el hilo por el índice de la otra mano para controlar la tensión."
+     ],
+     "q": "¿Crees que te sentirás más a gusto con dos agujas o con un ganchillo?",
+     "c": "Prueba a sujetar el ganchillo de las dos maneras un minuto cada una y decide cuál es más natural."
+    },
+    "fr": {
+     "t": "Faire connaissance avec le crochet",
+     "g": "Découvre les tailles et formes de crochets et des façons confortables de tenir crochet et fil.",
+     "p": [
+      "Le crochet n'utilise qu'un outil et une seule boucle active, donc une maille échappée ne file jamais loin.",
+      "Les tailles sont en millimètres ; certains crochets ont une gorge droite, d'autres arrondie, et les manches ergonomiques aident.",
+      "Tiens le crochet comme un crayon ou comme un couteau, et passe le fil sur l'index de l'autre main pour la tension."
+     ],
+     "q": "Penses-tu te sentir plus à l'aise avec deux aiguilles ou avec un crochet ?",
+     "c": "Essaie de tenir le crochet des deux façons une minute chacune et choisis la plus naturelle."
+    },
+    "it": {
+     "t": "Conoscere l'uncinetto",
+     "g": "Scopri misure e forme dell'uncinetto e trova modi comodi per tenere uncinetto e filo.",
+     "p": [
+      "L'uncinetto usa un solo attrezzo e un solo anello attivo, quindi una maglia persa non scappa mai lontano.",
+      "Le misure sono in millimetri; esistono uncinetti a gola dritta o arrotondata, e i manici ergonomici aiutano.",
+      "Tienilo come una matita o come un coltello e passa il filo sull'indice dell'altra mano per controllare la tensione."
+     ],
+     "q": "Pensi che ti troverai meglio con due ferri o con un uncinetto?",
+     "c": "Prova a tenere l'uncinetto nei due modi per un minuto ciascuno e scegli quello più naturale."
+    },
+    "pt": {
+     "t": "Conhecer a agulha de croché",
+     "g": "Aprende tamanhos e formas de agulhas de croché e formas confortáveis de segurar agulha e fio.",
+     "p": [
+      "O croché usa uma só agulha e uma só laçada ativa, por isso uma malha solta nunca foge muito.",
+      "Os tamanhos vêm em milímetros; há agulhas de garganta direita ou arredondada, e os cabos ergonómicos ajudam.",
+      "Segura a agulha como um lápis ou como uma faca e passa o fio pelo indicador da outra mão para controlar a tensão."
+     ],
+     "q": "Achas que te vais sentir mais à vontade com duas agulhas ou com uma agulha de croché?",
+     "c": "Experimenta segurar a agulha das duas maneiras durante um minuto cada e escolhe a mais natural."
+    },
+    "pt_BR": {
+     "t": "Conhecendo a agulha de crochê",
+     "g": "Aprenda tamanhos e formatos de agulha de crochê e jeitos confortáveis de segurar agulha e fio.",
+     "p": [
+      "O crochê usa uma só agulha e uma só laçada ativa, então um ponto solto nunca foge muito.",
+      "Os tamanhos vêm em milímetros; há agulhas de garganta reta ou arredondada, e cabos ergonômicos ajudam.",
+      "Segure a agulha como um lápis ou como uma faca e passe o fio pelo indicador da outra mão para controlar a tensão."
+     ],
+     "q": "Você acha que vai se sentir mais à vontade com duas agulhas ou com uma agulha de crochê?",
+     "c": "Teste segurar a agulha dos dois jeitos por um minuto cada e escolha o mais natural."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crochet chain stitch",
+     "g": "Make an even foundation chain and count the chains correctly.",
+     "p": [
+      "Start with a slip knot on the hook, wrap the yarn over the hook from back to front and pull it through the loop.",
+      "Each pull-through makes one chain; keep them the same size by moving your fingers up close to the hook.",
+      "Count the V shapes on the front, not the loop on the hook and not the slip knot."
+     ],
+     "q": "Can you think of something you could make with just a long chain, like a cord or a bracelet?",
+     "c": "Make a chain of 30, count it twice, and use it as a cord to tie a small gift."
+    },
+    "de": {
+     "t": "Luftmaschen häkeln",
+     "g": "Häkle eine gleichmäßige Luftmaschenkette und zähle die Maschen richtig.",
+     "p": [
+      "Beginne mit einer Anfangsschlinge auf der Nadel, hol den Faden von hinten nach vorn und zieh ihn durch die Schlaufe.",
+      "Jedes Durchziehen ergibt eine Luftmasche; halte sie gleich groß, indem du die Finger nah an der Nadel nachführst.",
+      "Zähl die V-Formen auf der Vorderseite, nicht die Schlaufe auf der Nadel und nicht die Anfangsschlinge."
+     ],
+     "q": "Was könntest du nur aus einer langen Luftmaschenkette machen, etwa eine Kordel oder ein Armband?",
+     "c": "Häkle eine Kette aus 30 Luftmaschen, zähl sie zweimal und binde damit ein kleines Geschenk zu."
+    },
+    "es": {
+     "t": "La cadeneta",
+     "g": "Haz una cadeneta base uniforme y cuenta las cadenetas correctamente.",
+     "p": [
+      "Empieza con un nudo corredizo en el ganchillo, echa hebra de atrás hacia delante y sácala por el lazo.",
+      "Cada vez que sacas la hebra haces una cadeneta; mantenlas iguales subiendo los dedos cerca del ganchillo.",
+      "Cuenta las uves del frente, sin contar el lazo del ganchillo ni el nudo corredizo."
+     ],
+     "q": "¿Se te ocurre algo que hacer solo con una cadeneta larga, como un cordón o una pulsera?",
+     "c": "Haz una cadeneta de 30, cuéntala dos veces y úsala como cordón para atar un regalito."
+    },
+    "fr": {
+     "t": "La maille en l'air",
+     "g": "Fais une chaînette de base régulière et compte correctement les mailles en l'air.",
+     "p": [
+      "Commence par un nœud coulant sur le crochet, fais un jeté de l'arrière vers l'avant et tire-le à travers la boucle.",
+      "Chaque passage donne une maille en l'air ; garde-les égales en remontant tes doigts près du crochet.",
+      "Compte les V sur le devant, sans compter la boucle sur le crochet ni le nœud coulant."
+     ],
+     "q": "Que pourrais-tu faire avec une simple longue chaînette, comme un cordon ou un bracelet ?",
+     "c": "Fais une chaînette de 30 mailles, compte-la deux fois et utilise-la comme cordon pour un petit cadeau."
+    },
+    "it": {
+     "t": "La catenella",
+     "g": "Fai una catenella di base regolare e conta correttamente le catenelle.",
+     "p": [
+      "Parti con un nodo scorsoio sull'uncinetto, getta il filo da dietro in avanti ed estrailo dall'anello.",
+      "Ogni estrazione forma una catenella; tienile uguali spostando le dita vicino all'uncinetto.",
+      "Conta le V sul davanti, senza contare l'anello sull'uncinetto né il nodo scorsoio."
+     ],
+     "q": "Ti viene in mente qualcosa da fare con una lunga catenella, come un cordoncino o un braccialetto?",
+     "c": "Fai una catenella di 30, contala due volte e usala come cordoncino per legare un piccolo regalo."
+    },
+    "pt": {
+     "t": "A correntinha",
+     "g": "Faz uma correntinha de base uniforme e conta as correntinhas corretamente.",
+     "p": [
+      "Começa com um nó corrediço na agulha, laça o fio de trás para a frente e puxa-o pela laçada.",
+      "Cada puxada faz uma correntinha; mantém-nas iguais subindo os dedos para perto da agulha.",
+      "Conta os Vs da frente, sem contar a laçada da agulha nem o nó corrediço."
+     ],
+     "q": "Consegues pensar em algo para fazer só com uma correntinha comprida, como um cordão ou uma pulseira?",
+     "c": "Faz uma correntinha de 30, conta-a duas vezes e usa-a como cordão para atar um presentinho."
+    },
+    "pt_BR": {
+     "t": "A correntinha",
+     "g": "Faça uma correntinha de base uniforme e conte os pontos corretamente.",
+     "p": [
+      "Comece com um nó corrediço na agulha, lace o fio de trás para a frente e puxe pela laçada.",
+      "Cada puxada forma uma correntinha; mantenha todas iguais subindo os dedos para perto da agulha.",
+      "Conte os Vs da frente, sem contar a laçada da agulha nem o nó corrediço."
+     ],
+     "q": "Você consegue pensar em algo para fazer só com uma correntinha comprida, como um cordão ou uma pulseira?",
+     "c": "Faça uma correntinha de 30, conte duas vezes e use como cordão para amarrar um presentinho."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Single crochet",
+     "g": "Work rows of single crochet with turning chains for a dense, sturdy fabric.",
+     "p": [
+      "Insert the hook into the second chain from the hook, yarn over, pull up a loop: two loops are now on the hook.",
+      "Yarn over again and pull through both loops: that is one single crochet. Work one into each chain.",
+      "At the end of the row, chain 1 and turn; that turning chain lifts you to the height of the next row."
+     ],
+     "q": "What sturdy item could single crochet be perfect for in your home?",
+     "c": "Work 6 rows of single crochet on 15 stitches and check that each row still has 15."
+    },
+    "de": {
+     "t": "Feste Maschen",
+     "g": "Häkle Reihen fester Maschen mit Wendeluftmaschen für ein dichtes, stabiles Gehäkel.",
+     "p": [
+      "Stich in die zweite Luftmasche ab der Nadel, hol den Faden und zieh eine Schlaufe durch: zwei Schlaufen auf der Nadel.",
+      "Hol den Faden erneut und zieh ihn durch beide Schlaufen: eine feste Masche. Häkle eine in jede Luftmasche.",
+      "Am Reihenende eine Luftmasche häkeln und wenden; diese Wendeluftmasche bringt dich auf die Höhe der nächsten Reihe."
+     ],
+     "q": "Wofür wäre ein stabiles Gehäkel aus festen Maschen bei dir zu Hause perfekt?",
+     "c": "Häkle 6 Reihen feste Maschen über 15 Maschen und prüfe, ob jede Reihe noch 15 hat."
+    },
+    "es": {
+     "t": "Punto bajo",
+     "g": "Teje filas de punto bajo con cadenetas de vuelta para un tejido denso y resistente.",
+     "p": [
+      "Mete el ganchillo en la segunda cadeneta desde el ganchillo, echa hebra y saca un lazo: tienes dos lazos.",
+      "Echa hebra otra vez y sácala por los dos lazos: es un punto bajo. Haz uno en cada cadeneta.",
+      "Al final de la fila, haz 1 cadeneta y gira; esa cadeneta de vuelta te sube a la altura de la fila siguiente."
+     ],
+     "q": "¿Para qué objeto resistente de tu casa sería perfecto el punto bajo?",
+     "c": "Teje 6 filas de punto bajo sobre 15 puntos y comprueba que cada fila sigue teniendo 15."
+    },
+    "fr": {
+     "t": "La maille serrée",
+     "g": "Crochète des rangs de mailles serrées avec des mailles de tour pour un tissu dense et solide.",
+     "p": [
+      "Pique dans la deuxième maille en l'air depuis le crochet, fais un jeté et tire une boucle : deux boucles sur le crochet.",
+      "Fais un nouveau jeté et passe-le dans les deux boucles : c'est une maille serrée. Fais-en une dans chaque maille.",
+      "En fin de rang, fais 1 maille en l'air et tourne ; cette maille de tour te monte à la hauteur du rang suivant."
+     ],
+     "q": "Pour quel objet solide de ta maison la maille serrée serait-elle parfaite ?",
+     "c": "Crochète 6 rangs de mailles serrées sur 15 mailles et vérifie que chaque rang en a toujours 15."
+    },
+    "it": {
+     "t": "Il punto basso",
+     "g": "Lavora file di punto basso con le catenelle di voltatura per un tessuto fitto e robusto.",
+     "p": [
+      "Inserisci l'uncinetto nella seconda catenella dall'uncinetto, getta il filo ed estrai un anello: due anelli sull'uncinetto.",
+      "Getta di nuovo e passa attraverso entrambi gli anelli: ecco un punto basso. Lavorane uno in ogni catenella.",
+      "A fine giro fai 1 catenella e gira; questa catenella di voltatura ti porta all'altezza della fila seguente."
+     ],
+     "q": "Per quale oggetto robusto di casa tua sarebbe perfetto il punto basso?",
+     "c": "Lavora 6 file di punto basso su 15 maglie e controlla che ogni fila ne abbia ancora 15."
+    },
+    "pt": {
+     "t": "O ponto baixo",
+     "g": "Faz carreiras de ponto baixo com correntinhas de volta para um tecido denso e resistente.",
+     "p": [
+      "Enfia a agulha na segunda correntinha a contar da agulha, laça e puxa uma laçada: ficam duas laçadas na agulha.",
+      "Laça outra vez e puxa pelas duas laçadas: é um ponto baixo. Faz um em cada correntinha.",
+      "No fim da carreira, faz 1 correntinha e vira; essa correntinha de volta leva-te à altura da carreira seguinte."
+     ],
+     "q": "Para que objeto resistente da tua casa seria perfeito o ponto baixo?",
+     "c": "Faz 6 carreiras de ponto baixo sobre 15 pontos e confirma que cada carreira continua com 15."
+    },
+    "pt_BR": {
+     "t": "O ponto baixo",
+     "g": "Faça carreiras de ponto baixo com correntinhas de subida para um tecido denso e resistente.",
+     "p": [
+      "Enfie a agulha na segunda correntinha a partir da agulha, lace e puxe uma laçada: ficam duas laçadas na agulha.",
+      "Laçe de novo e puxe pelas duas laçadas: isso é um ponto baixo. Faça um em cada correntinha.",
+      "No fim da carreira, faça 1 correntinha e vire; essa correntinha de subida leva você à altura da próxima carreira."
+     ],
+     "q": "Para qual objeto resistente da sua casa o ponto baixo seria perfeito?",
+     "c": "Faça 6 carreiras de ponto baixo sobre 15 pontos e confira se cada carreira continua com 15."
+    }
+   }
+  }
+ ]
+}

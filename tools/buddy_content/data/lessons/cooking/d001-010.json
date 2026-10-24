@@ -1,0 +1,835 @@
+{
+ "topic": "cooking",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to everyday cooking",
+     "g": "See where this 365-day path goes, from kitchen basics to confident, creative home cooking.",
+     "p": [
+      "We start with simple skills: a tidy kitchen, safe knife work, heat control and clean hands.",
+      "Then we build real dishes step by step: eggs, pasta, rice, vegetables, sauces and proteins.",
+      "Later you will plan meals, cook for friends and invent your own recipes with confidence."
+     ],
+     "q": "What do you already cook at home, and which dish would you love to master?",
+     "c": "Write down three dishes you enjoy eating and would like to cook yourself one day."
+    },
+    "de": {
+     "t": "Willkommen beim Alltagskochen",
+     "g": "Entdecke, wohin dieser 365-Tage-Weg führt: von den Grundlagen bis zum sicheren, kreativen Kochen.",
+     "p": [
+      "Wir beginnen einfach: eine ordentliche Küche, sicherer Umgang mit dem Messer, Hitze und saubere Hände.",
+      "Dann kochen wir Schritt für Schritt echte Gerichte: Eier, Pasta, Reis, Gemüse, Saucen und Proteine.",
+      "Später planst du Mahlzeiten, kochst für Freunde und erfindest selbstbewusst eigene Rezepte."
+     ],
+     "q": "Was kochst du schon zu Hause, und welches Gericht möchtest du gern beherrschen?",
+     "c": "Schreib drei Gerichte auf, die du gern isst und eines Tages selbst kochen möchtest."
+    },
+    "es": {
+     "t": "Bienvenido a la cocina diaria",
+     "g": "Descubre adónde lleva este camino de 365 días: de lo básico a cocinar en casa con confianza y creatividad.",
+     "p": [
+      "Empezamos con lo sencillo: una cocina ordenada, el cuchillo con seguridad, el control del fuego y manos limpias.",
+      "Luego preparamos platos reales paso a paso: huevos, pasta, arroz, verduras, salsas y proteínas.",
+      "Más adelante planificarás menús, cocinarás para amigos e inventarás tus propias recetas."
+     ],
+     "q": "¿Qué cocinas ya en casa y qué plato te encantaría dominar?",
+     "c": "Apunta tres platos que te gusta comer y que quieres cocinar tú mismo algún día."
+    },
+    "fr": {
+     "t": "Bienvenue en cuisine du quotidien",
+     "g": "Découvre où mène ce parcours de 365 jours : des bases à une cuisine maison sûre et créative.",
+     "p": [
+      "On commence simplement : une cuisine rangée, le couteau en sécurité, la maîtrise du feu et des mains propres.",
+      "Puis on cuisine de vrais plats pas à pas : œufs, pâtes, riz, légumes, sauces et protéines.",
+      "Plus tard, tu planifieras tes repas, cuisineras pour tes amis et créeras tes propres recettes."
+     ],
+     "q": "Que cuisines-tu déjà à la maison, et quel plat aimerais-tu maîtriser ?",
+     "c": "Note trois plats que tu aimes manger et que tu voudrais cuisiner toi-même un jour."
+    },
+    "it": {
+     "t": "Benvenuto nella cucina di ogni giorno",
+     "g": "Scopri dove porta questo percorso di 365 giorni: dalle basi a una cucina di casa sicura e creativa.",
+     "p": [
+      "Si parte dal semplice: cucina in ordine, coltello usato in sicurezza, controllo del fuoco e mani pulite.",
+      "Poi cuciniamo piatti veri passo dopo passo: uova, pasta, riso, verdure, salse e proteine.",
+      "Più avanti pianificherai i pasti, cucinerai per gli amici e inventerai ricette tue."
+     ],
+     "q": "Cosa cucini già a casa e quale piatto ti piacerebbe padroneggiare?",
+     "c": "Scrivi tre piatti che ami mangiare e che vorresti cucinare da solo un giorno."
+    },
+    "pt": {
+     "t": "Bem-vindo à cozinha do dia a dia",
+     "g": "Descobre para onde vai este percurso de 365 dias: do básico a cozinhar em casa com confiança e criatividade.",
+     "p": [
+      "Começamos pelo simples: uma cozinha arrumada, a faca usada com segurança, o controlo do lume e mãos limpas.",
+      "Depois fazemos pratos reais passo a passo: ovos, massa, arroz, legumes, molhos e proteínas.",
+      "Mais tarde vais planear refeições, cozinhar para amigos e inventar as tuas próprias receitas."
+     ],
+     "q": "O que já cozinhas em casa e que prato gostavas de dominar?",
+     "c": "Escreve três pratos que gostas de comer e que queres cozinhar tu mesmo um dia."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à cozinha do dia a dia",
+     "g": "Descubra aonde vai esta jornada de 365 dias: do básico a cozinhar em casa com confiança e criatividade.",
+     "p": [
+      "Começamos pelo simples: cozinha organizada, faca usada com segurança, controle do fogo e mãos limpas.",
+      "Depois fazemos pratos de verdade passo a passo: ovos, macarrão, arroz, legumes, molhos e proteínas.",
+      "Mais para frente você vai planejar refeições, cozinhar para amigos e criar suas próprias receitas."
+     ],
+     "q": "O que você já cozinha em casa e qual prato adoraria dominar?",
+     "c": "Anote três pratos que você adora comer e quer cozinhar sozinho um dia."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up your kitchen",
+     "g": "Organise your kitchen into zones for prep, cooking and cleaning so everything is within reach.",
+     "p": [
+      "The prep zone needs clear counter space, your board and knives, close to the bin or a scraps bowl.",
+      "Keep pans, oils, salt and spatulas next to the stove so you never have to run while food cooks.",
+      "The cleaning zone around the sink holds soap, cloths and a drying spot, kept apart from ready food."
+     ],
+     "q": "Which part of your kitchen feels most crowded or awkward right now?",
+     "c": "Clear one stretch of counter and set up a simple prep station with a board and a scraps bowl."
+    },
+    "de": {
+     "t": "Die Küche einrichten",
+     "g": "Teile deine Küche in Zonen fürs Vorbereiten, Kochen und Spülen, damit alles griffbereit ist.",
+     "p": [
+      "Die Vorbereitungszone braucht freie Arbeitsfläche, Brett und Messer, nahe am Mülleimer oder einer Abfallschale.",
+      "Pfannen, Öl, Salz und Pfannenwender gehören neben den Herd, damit du beim Kochen nicht suchen musst.",
+      "Rund um die Spüle liegen Spülmittel, Tücher und ein Abtropfplatz, getrennt von fertigen Speisen."
+     ],
+     "q": "Welcher Teil deiner Küche wirkt gerade am vollsten oder unpraktischsten?",
+     "c": "Räume ein Stück Arbeitsfläche frei und richte dort Brett und Abfallschale als Vorbereitungsplatz ein."
+    },
+    "es": {
+     "t": "Organiza tu cocina",
+     "g": "Divide la cocina en zonas de preparación, cocción y limpieza para tener todo a mano.",
+     "p": [
+      "La zona de preparación necesita encimera libre, tabla y cuchillos, cerca del cubo o de un bol para restos.",
+      "Ten sartenes, aceite, sal y espátulas junto a los fuegos para no correr mientras algo se cocina.",
+      "La zona del fregadero guarda jabón, paños y un escurridor, lejos de la comida ya lista."
+     ],
+     "q": "¿Qué parte de tu cocina te parece ahora más llena o incómoda?",
+     "c": "Despeja un tramo de encimera y monta un puesto de preparación con tabla y bol para restos."
+    },
+    "fr": {
+     "t": "Organiser sa cuisine",
+     "g": "Divise ta cuisine en zones de préparation, de cuisson et de lavage pour tout avoir sous la main.",
+     "p": [
+      "La zone de préparation demande un plan de travail libre, planche et couteaux, près de la poubelle.",
+      "Garde poêles, huile, sel et spatules près des feux pour ne jamais courir pendant la cuisson.",
+      "Autour de l'évier : savon, torchons et égouttoir, à l'écart des plats déjà prêts."
+     ],
+     "q": "Quelle partie de ta cuisine te semble la plus encombrée ou pratique le moins ?",
+     "c": "Libère un bout de plan de travail et installe un poste de préparation avec planche et bol à déchets."
+    },
+    "it": {
+     "t": "Organizzare la cucina",
+     "g": "Dividi la cucina in zone per preparare, cuocere e lavare, così hai tutto a portata di mano.",
+     "p": [
+      "La zona di preparazione vuole piano libero, tagliere e coltelli, vicino alla pattumiera o a una ciotola scarti.",
+      "Tieni padelle, olio, sale e spatole accanto ai fornelli per non correre mentre il cibo cuoce.",
+      "Vicino al lavello stanno sapone, strofinacci e scolapiatti, lontano dal cibo già pronto."
+     ],
+     "q": "Quale zona della tua cucina ti sembra ora più affollata o scomoda?",
+     "c": "Libera un tratto di piano e prepara una postazione con tagliere e ciotola per gli scarti."
+    },
+    "pt": {
+     "t": "Organizar a cozinha",
+     "g": "Divide a cozinha em zonas de preparação, confeção e limpeza para teres tudo à mão.",
+     "p": [
+      "A zona de preparação precisa de bancada livre, tábua e facas, perto do lixo ou de uma taça para restos.",
+      "Mantém tachos, azeite, sal e espátulas junto ao fogão para nunca andares a correr durante a confeção.",
+      "Junto ao lava-loiça ficam detergente, panos e escorredor, longe da comida já pronta."
+     ],
+     "q": "Que parte da tua cozinha te parece agora mais cheia ou pouco prática?",
+     "c": "Liberta um pedaço de bancada e monta um posto de preparação com tábua e taça para restos."
+    },
+    "pt_BR": {
+     "t": "Organizando sua cozinha",
+     "g": "Divida a cozinha em zonas de preparo, cocção e limpeza para ter tudo ao alcance da mão.",
+     "p": [
+      "A zona de preparo precisa de bancada livre, tábua e facas, perto do lixo ou de uma tigela para restos.",
+      "Deixe panelas, óleo, sal e espátulas perto do fogão para não sair correndo enquanto a comida cozinha.",
+      "Perto da pia ficam detergente, panos e escorredor, longe da comida já pronta."
+     ],
+     "q": "Qual parte da sua cozinha parece mais cheia ou difícil de usar agora?",
+     "c": "Libere um pedaço de bancada e monte um cantinho de preparo com tábua e tigela para restos."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Essential kitchen tools",
+     "g": "Know the core kit: chef's knife, board, pans, pots, spatula and measuring tools.",
+     "p": [
+      "A sharp chef's knife and a large, stable board handle most cutting jobs in a home kitchen.",
+      "One frying pan, one medium pot and one large pot cover almost every everyday recipe.",
+      "Add a spatula, wooden spoon, tongs, measuring spoons and cups, and you are ready to cook."
+     ],
+     "q": "Which of these tools do you already have, and which one is missing?",
+     "c": "Check your kitchen against the core kit and write a short list of what you still need."
+    },
+    "de": {
+     "t": "Wichtige Küchenhelfer",
+     "g": "Lerne die Grundausstattung kennen: Kochmesser, Brett, Pfannen, Töpfe, Wender und Messhelfer.",
+     "p": [
+      "Ein scharfes Kochmesser und ein großes, rutschfestes Brett erledigen fast alle Schneidearbeiten.",
+      "Eine Pfanne, ein mittlerer und ein großer Topf reichen für fast jedes Alltagsrezept.",
+      "Dazu Pfannenwender, Holzlöffel, Zange, Messlöffel und Messbecher, und du bist startklar."
+     ],
+     "q": "Welche dieser Helfer hast du schon, und welcher fehlt dir noch?",
+     "c": "Vergleiche deine Küche mit der Grundausstattung und notiere, was dir noch fehlt."
+    },
+    "es": {
+     "t": "Utensilios esenciales",
+     "g": "Conoce el equipo básico: cuchillo de chef, tabla, sartenes, ollas, espátula y medidores.",
+     "p": [
+      "Un cuchillo de chef afilado y una tabla grande y estable sirven para casi todos los cortes en casa.",
+      "Una sartén, una olla mediana y una grande cubren casi todas las recetas del día a día.",
+      "Suma espátula, cuchara de madera, pinzas, cucharas y tazas medidoras, y ya puedes cocinar."
+     ],
+     "q": "¿Cuáles de estos utensilios ya tienes y cuál te falta?",
+     "c": "Revisa tu cocina con esta lista básica y apunta lo que aún necesitas."
+    },
+    "fr": {
+     "t": "Les ustensiles essentiels",
+     "g": "Connais le kit de base : couteau de chef, planche, poêles, casseroles, spatule et doseurs.",
+     "p": [
+      "Un couteau de chef bien aiguisé et une grande planche stable suffisent pour presque toutes les découpes.",
+      "Une poêle, une casserole moyenne et une grande marmite couvrent presque toutes les recettes du quotidien.",
+      "Ajoute spatule, cuillère en bois, pince, cuillères et verre doseurs, et te voilà prêt à cuisiner."
+     ],
+     "q": "Lesquels de ces ustensiles as-tu déjà, et lequel te manque ?",
+     "c": "Compare ta cuisine au kit de base et note ce qu'il te manque encore."
+    },
+    "it": {
+     "t": "Gli attrezzi essenziali",
+     "g": "Conosci il kit base: coltello da chef, tagliere, padelle, pentole, spatola e misurini.",
+     "p": [
+      "Un coltello da chef affilato e un tagliere grande e stabile bastano per quasi ogni taglio in casa.",
+      "Una padella, una pentola media e una grande coprono quasi tutte le ricette quotidiane.",
+      "Aggiungi spatola, cucchiaio di legno, pinze, cucchiai e tazze dosatrici e sei pronto a cucinare."
+     ],
+     "q": "Quali di questi attrezzi hai già e quale ti manca?",
+     "c": "Confronta la tua cucina con il kit base e scrivi cosa ti serve ancora."
+    },
+    "pt": {
+     "t": "Utensílios essenciais",
+     "g": "Conhece o kit básico: faca de chef, tábua, frigideiras, tachos, espátula e medidores.",
+     "p": [
+      "Uma faca de chef afiada e uma tábua grande e estável fazem quase todos os cortes numa cozinha de casa.",
+      "Uma frigideira, um tacho médio e uma panela grande chegam para quase todas as receitas do dia a dia.",
+      "Junta espátula, colher de pau, pinça, colheres e copos medidores, e estás pronto para cozinhar."
+     ],
+     "q": "Quais destes utensílios já tens e qual te falta?",
+     "c": "Compara a tua cozinha com o kit básico e aponta o que ainda precisas."
+    },
+    "pt_BR": {
+     "t": "Utensílios essenciais",
+     "g": "Conheça o kit básico: faca de chef, tábua, frigideiras, panelas, espátula e medidores.",
+     "p": [
+      "Uma faca de chef afiada e uma tábua grande e firme dão conta de quase todos os cortes em casa.",
+      "Uma frigideira, uma panela média e uma grande resolvem quase toda receita do dia a dia.",
+      "Some espátula, colher de pau, pegador, colheres e xícaras medidoras, e você já pode cozinhar."
+     ],
+     "q": "Quais desses utensílios você já tem e qual está faltando?",
+     "c": "Compare sua cozinha com o kit básico e anote o que ainda falta."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen hygiene basics",
+     "g": "Learn the habits that keep food safe: clean hands, clean surfaces and raw kept apart from cooked.",
+     "p": [
+      "Wash hands with soap for about 20 seconds before cooking and after touching raw meat, fish or eggs.",
+      "Wipe counters and boards with hot soapy water, and change cloths often so they do not spread germs.",
+      "Use separate boards, or wash well between uses, so raw meat never touches ready-to-eat food."
+     ],
+     "q": "Which hygiene habit do you already follow, and which one could you improve?",
+     "c": "Before you cook today, wash your hands properly and clean your board and counter first."
+    },
+    "de": {
+     "t": "Grundlagen der Küchenhygiene",
+     "g": "Lerne die Gewohnheiten für sicheres Essen: saubere Hände, saubere Flächen, Rohes getrennt von Gegartem.",
+     "p": [
+      "Wasch dir vor dem Kochen und nach rohem Fleisch, Fisch oder Ei etwa 20 Sekunden die Hände mit Seife.",
+      "Wisch Flächen und Bretter mit heißem Spülwasser und wechsle Tücher oft, damit sie keine Keime verteilen.",
+      "Nutze getrennte Bretter oder spüle gründlich, damit rohes Fleisch nie verzehrfertiges Essen berührt."
+     ],
+     "q": "Welche Hygieneregel befolgst du schon, und welche könntest du verbessern?",
+     "c": "Wasch dir heute vor dem Kochen gründlich die Hände und reinige zuerst Brett und Arbeitsfläche."
+    },
+    "es": {
+     "t": "Higiene básica en la cocina",
+     "g": "Aprende los hábitos que mantienen la comida segura: manos limpias, superficies limpias y crudo aparte.",
+     "p": [
+      "Lávate las manos con jabón unos 20 segundos antes de cocinar y tras tocar carne, pescado o huevo crudos.",
+      "Limpia encimeras y tablas con agua caliente y jabón, y cambia los paños a menudo para no esparcir gérmenes.",
+      "Usa tablas distintas o lávalas bien, para que la carne cruda nunca toque comida lista para comer."
+     ],
+     "q": "¿Qué hábito de higiene ya sigues y cuál podrías mejorar?",
+     "c": "Antes de cocinar hoy, lávate bien las manos y limpia primero tu tabla y la encimera."
+    },
+    "fr": {
+     "t": "Les bases de l'hygiène",
+     "g": "Apprends les gestes qui protègent : mains propres, surfaces propres et cru séparé du cuit.",
+     "p": [
+      "Lave-toi les mains au savon environ 20 secondes avant de cuisiner et après viande, poisson ou œufs crus.",
+      "Nettoie plan de travail et planches à l'eau chaude savonneuse, et change souvent d'éponge et de torchon.",
+      "Utilise des planches séparées ou lave-les bien, pour que la viande crue ne touche jamais un plat prêt."
+     ],
+     "q": "Quel geste d'hygiène suis-tu déjà, et lequel pourrais-tu améliorer ?",
+     "c": "Avant de cuisiner aujourd'hui, lave-toi bien les mains et nettoie d'abord planche et plan de travail."
+    },
+    "it": {
+     "t": "Igiene di base in cucina",
+     "g": "Impara le abitudini che rendono il cibo sicuro: mani pulite, superfici pulite e crudo separato dal cotto.",
+     "p": [
+      "Lava le mani con sapone per circa 20 secondi prima di cucinare e dopo carne, pesce o uova crude.",
+      "Pulisci piani e taglieri con acqua calda e sapone, e cambia spesso gli strofinacci per non diffondere germi.",
+      "Usa taglieri separati o lavali bene, così la carne cruda non tocca mai cibi pronti da mangiare."
+     ],
+     "q": "Quale abitudine igienica segui già e quale potresti migliorare?",
+     "c": "Prima di cucinare oggi, lavati bene le mani e pulisci prima tagliere e piano di lavoro."
+    },
+    "pt": {
+     "t": "Higiene básica na cozinha",
+     "g": "Aprende os hábitos que tornam a comida segura: mãos limpas, superfícies limpas e cru separado do cozinhado.",
+     "p": [
+      "Lava as mãos com sabão cerca de 20 segundos antes de cozinhar e depois de mexer em carne, peixe ou ovos crus.",
+      "Limpa bancadas e tábuas com água quente e detergente, e troca os panos com frequência para não espalhar germes.",
+      "Usa tábuas separadas ou lava-as bem, para a carne crua nunca tocar em comida pronta a comer."
+     ],
+     "q": "Que hábito de higiene já segues e qual podias melhorar?",
+     "c": "Antes de cozinhares hoje, lava bem as mãos e limpa primeiro a tábua e a bancada."
+    },
+    "pt_BR": {
+     "t": "Higiene básica na cozinha",
+     "g": "Aprenda os hábitos que deixam a comida segura: mãos limpas, superfícies limpas e cru separado do cozido.",
+     "p": [
+      "Lave as mãos com sabão por uns 20 segundos antes de cozinhar e depois de mexer em carne, peixe ou ovo cru.",
+      "Limpe bancada e tábuas com água quente e detergente, e troque os panos sempre para não espalhar germes.",
+      "Use tábuas separadas ou lave bem, para a carne crua nunca encostar em comida pronta para comer."
+     ],
+     "q": "Qual hábito de higiene você já segue e qual poderia melhorar?",
+     "c": "Antes de cozinhar hoje, lave bem as mãos e limpe primeiro a tábua e a bancada."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food storage and the fridge",
+     "g": "Learn where foods belong in the fridge and how to store leftovers safely.",
+     "p": [
+      "Keep the fridge at about 4 °C or colder, and store raw meat and fish on the bottom shelf in a container.",
+      "Ready-to-eat foods and leftovers go higher up, covered, so nothing raw can drip onto them.",
+      "Cool leftovers quickly, refrigerate within about two hours and eat them within a few days."
+     ],
+     "q": "How organised is your fridge right now, from 1 to 10?",
+     "c": "Rearrange one fridge shelf today: raw foods low, ready foods high, everything covered."
+    },
+    "de": {
+     "t": "Lagerung und Kühlschrank",
+     "g": "Lerne, wohin Lebensmittel im Kühlschrank gehören und wie du Reste sicher aufbewahrst.",
+     "p": [
+      "Halte den Kühlschrank bei etwa 4 °C oder kälter und lagere rohes Fleisch und Fisch abgedeckt ganz unten.",
+      "Verzehrfertiges und Reste kommen weiter oben hin, abgedeckt, damit nichts Rohes darauf tropft.",
+      "Kühle Reste schnell ab, stell sie innerhalb von etwa zwei Stunden kalt und iss sie in wenigen Tagen."
+     ],
+     "q": "Wie ordentlich ist dein Kühlschrank gerade, von 1 bis 10?",
+     "c": "Sortiere heute ein Fach neu: Rohes unten, Fertiges oben, alles abgedeckt."
+    },
+    "es": {
+     "t": "Conservación y la nevera",
+     "g": "Aprende dónde va cada alimento en la nevera y cómo guardar las sobras con seguridad.",
+     "p": [
+      "Mantén la nevera a unos 4 °C o menos, y guarda la carne y el pescado crudos abajo, en un recipiente.",
+      "Lo que está listo para comer y las sobras van más arriba, tapados, para que nada crudo gotee encima.",
+      "Enfría las sobras rápido, guárdalas en la nevera antes de unas dos horas y cómelas en pocos días."
+     ],
+     "q": "Del 1 al 10, ¿qué tan ordenada está tu nevera ahora?",
+     "c": "Reorganiza hoy un estante: lo crudo abajo, lo listo arriba y todo tapado."
+    },
+    "fr": {
+     "t": "Conservation et réfrigérateur",
+     "g": "Apprends où ranger chaque aliment au frigo et comment conserver les restes en sécurité.",
+     "p": [
+      "Règle le frigo autour de 4 °C ou moins, et place viande et poisson crus en bas, dans une boîte.",
+      "Les plats prêts et les restes vont plus haut, couverts, pour que rien de cru ne coule dessus.",
+      "Refroidis vite les restes, mets-les au frigo dans les deux heures environ et mange-les en quelques jours."
+     ],
+     "q": "De 1 à 10, à quel point ton frigo est-il bien rangé en ce moment ?",
+     "c": "Réorganise une étagère aujourd'hui : le cru en bas, le prêt en haut, tout couvert."
+    },
+    "it": {
+     "t": "Conservazione e frigorifero",
+     "g": "Impara dove vanno i cibi in frigo e come conservare gli avanzi in sicurezza.",
+     "p": [
+      "Tieni il frigo intorno ai 4 °C o meno, e metti carne e pesce crudi in basso, in un contenitore.",
+      "Cibi pronti e avanzi vanno più in alto, coperti, così niente di crudo può gocciolarci sopra.",
+      "Raffredda presto gli avanzi, mettili in frigo entro circa due ore e consumali in pochi giorni."
+     ],
+     "q": "Da 1 a 10, quanto è in ordine il tuo frigo adesso?",
+     "c": "Riorganizza oggi un ripiano: crudo in basso, pronto in alto, tutto coperto."
+    },
+    "pt": {
+     "t": "Conservação e frigorífico",
+     "g": "Aprende onde fica cada alimento no frigorífico e como guardar restos com segurança.",
+     "p": [
+      "Mantém o frigorífico a cerca de 4 °C ou menos, e guarda carne e peixe crus em baixo, numa caixa.",
+      "Comida pronta e restos ficam mais acima, tapados, para nada cru pingar para cima deles.",
+      "Arrefece os restos depressa, põe-nos no frio em cerca de duas horas e come-os em poucos dias."
+     ],
+     "q": "De 1 a 10, quão arrumado está o teu frigorífico agora?",
+     "c": "Reorganiza hoje uma prateleira: cru em baixo, pronto em cima, tudo tapado."
+    },
+    "pt_BR": {
+     "t": "Armazenamento e geladeira",
+     "g": "Aprenda onde cada alimento fica na geladeira e como guardar sobras com segurança.",
+     "p": [
+      "Mantenha a geladeira a uns 4 °C ou menos, e guarde carne e peixe crus embaixo, num pote.",
+      "Comida pronta e sobras ficam mais em cima, tampadas, para nada cru pingar nelas.",
+      "Esfrie as sobras rápido, leve à geladeira em até duas horas e consuma em poucos dias."
+     ],
+     "q": "De 1 a 10, quão organizada está sua geladeira agora?",
+     "c": "Reorganize hoje uma prateleira: cru embaixo, pronto em cima, tudo tampado."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a recipe",
+     "g": "Learn to read a recipe fully, gather everything first and understand common terms.",
+     "p": [
+      "Read the whole recipe before you start, so there are no surprises like marinating or chilling time.",
+      "Gather and prepare all ingredients first; chefs call this mise en place, everything in its place.",
+      "Learn key words: dice means small cubes, simmer means gentle bubbles, fold means mix very gently."
+     ],
+     "q": "Have you ever started a recipe and found a surprise halfway through?",
+     "c": "Pick a simple recipe, read it twice and list every ingredient and tool before cooking."
+    },
+    "de": {
+     "t": "Ein Rezept lesen",
+     "g": "Lerne, ein Rezept ganz zu lesen, vorher alles bereitzulegen und gängige Begriffe zu verstehen.",
+     "p": [
+      "Lies das ganze Rezept vor dem Start, damit dich keine Marinier- oder Kühlzeit überrascht.",
+      "Leg alle Zutaten vorher bereit und bereite sie vor; Köche nennen das Mise en place.",
+      "Wichtige Begriffe: würfeln heißt kleine Stücke, köcheln heißt sanfte Blasen, unterheben heißt sehr sanft mischen."
+     ],
+     "q": "Hast du schon mal mitten im Rezept eine Überraschung erlebt?",
+     "c": "Wähle ein einfaches Rezept, lies es zweimal und notiere alle Zutaten und Geräte vor dem Kochen."
+    },
+    "es": {
+     "t": "Leer una receta",
+     "g": "Aprende a leer una receta entera, reunir todo antes y entender los términos más comunes.",
+     "p": [
+      "Lee toda la receta antes de empezar, para que no te sorprenda un tiempo de marinado o de frío.",
+      "Reúne y prepara todos los ingredientes primero; los chefs lo llaman mise en place, todo en su sitio.",
+      "Palabras clave: picar en dados son cubos pequeños, hervir suave es burbujeo lento, envolver es mezclar con cuidado."
+     ],
+     "q": "¿Alguna vez empezaste una receta y encontraste una sorpresa a mitad?",
+     "c": "Elige una receta sencilla, léela dos veces y apunta cada ingrediente y utensilio antes de cocinar."
+    },
+    "fr": {
+     "t": "Lire une recette",
+     "g": "Apprends à lire une recette en entier, tout préparer avant et comprendre les termes courants.",
+     "p": [
+      "Lis toute la recette avant de commencer, pour éviter les surprises comme un temps de marinade.",
+      "Rassemble et prépare tous les ingrédients d'abord : c'est la mise en place, chaque chose à sa place.",
+      "Mots clés : couper en dés, frémir pour de petites bulles, incorporer pour mélanger très délicatement."
+     ],
+     "q": "T'est-il déjà arrivé de découvrir une surprise au milieu d'une recette ?",
+     "c": "Choisis une recette simple, lis-la deux fois et note chaque ingrédient et ustensile avant de cuisiner."
+    },
+    "it": {
+     "t": "Leggere una ricetta",
+     "g": "Impara a leggere tutta la ricetta, preparare tutto prima e capire i termini più comuni.",
+     "p": [
+      "Leggi l'intera ricetta prima di iniziare, così niente marinature o riposi a sorpresa.",
+      "Raduna e prepara tutti gli ingredienti prima: i cuochi la chiamano mise en place, ogni cosa al suo posto.",
+      "Parole chiave: a cubetti, sobbollire con bollicine leggere, incorporare mescolando con delicatezza."
+     ],
+     "q": "Ti è mai capitato di trovare una sorpresa a metà ricetta?",
+     "c": "Scegli una ricetta semplice, leggila due volte ed elenca ingredienti e attrezzi prima di cucinare."
+    },
+    "pt": {
+     "t": "Ler uma receita",
+     "g": "Aprende a ler a receita toda, juntar tudo antes e perceber os termos mais comuns.",
+     "p": [
+      "Lê a receita inteira antes de começar, para não teres surpresas como tempo de marinada ou de frio.",
+      "Junta e prepara todos os ingredientes primeiro; os chefs chamam-lhe mise en place, tudo no seu lugar.",
+      "Palavras-chave: cortar em cubos, ferver em lume brando com bolhas suaves, envolver é misturar com cuidado."
+     ],
+     "q": "Já começaste uma receita e encontraste uma surpresa a meio?",
+     "c": "Escolhe uma receita simples, lê-a duas vezes e lista ingredientes e utensílios antes de cozinhar."
+    },
+    "pt_BR": {
+     "t": "Lendo uma receita",
+     "g": "Aprenda a ler a receita toda, separar tudo antes e entender os termos mais comuns.",
+     "p": [
+      "Leia a receita inteira antes de começar, para não ter surpresa com tempo de marinada ou geladeira.",
+      "Separe e prepare todos os ingredientes antes; os chefs chamam isso de mise en place, tudo no lugar.",
+      "Termos-chave: cortar em cubos, fogo baixo com bolhas leves, incorporar é misturar com delicadeza."
+     ],
+     "q": "Você já começou uma receita e teve uma surpresa no meio?",
+     "c": "Escolha uma receita simples, leia duas vezes e liste ingredientes e utensílios antes de cozinhar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measuring ingredients",
+     "g": "Learn to use cups, spoons and scales, and why weighing matters most in baking.",
+     "p": [
+      "Level dry ingredients in cups and spoons with a flat edge, and read liquids at eye level.",
+      "A cup of flour can vary a lot by how you scoop it, so a kitchen scale gives far more reliable results.",
+      "In everyday cooking you can taste and adjust, but baking depends on exact amounts to work."
+     ],
+     "q": "Do you usually measure carefully or cook by feel?",
+     "c": "Weigh one cup of flour scooped loosely and one packed tightly, and compare the numbers."
+    },
+    "de": {
+     "t": "Zutaten abmessen",
+     "g": "Lerne Messbecher, Messlöffel und Waage zu nutzen und warum Wiegen beim Backen am wichtigsten ist.",
+     "p": [
+      "Streich trockene Zutaten in Bechern und Löffeln glatt ab und lies Flüssigkeiten auf Augenhöhe ab.",
+      "Eine Tasse Mehl schwankt je nach Füllen stark, eine Küchenwaage liefert viel verlässlichere Ergebnisse.",
+      "Beim Kochen kannst du abschmecken und anpassen, Backen dagegen braucht genaue Mengen."
+     ],
+     "q": "Misst du meist genau ab oder kochst du nach Gefühl?",
+     "c": "Wiege eine locker und eine fest gefüllte Tasse Mehl und vergleiche die Zahlen."
+    },
+    "es": {
+     "t": "Medir ingredientes",
+     "g": "Aprende a usar tazas, cucharas y báscula, y por qué pesar importa sobre todo en repostería.",
+     "p": [
+      "Enrasa los secos en tazas y cucharas con un borde plano, y lee los líquidos a la altura de los ojos.",
+      "Una taza de harina varía mucho según cómo la llenes, así que una báscula da resultados más fiables.",
+      "Al cocinar puedes probar y ajustar, pero la repostería depende de cantidades exactas."
+     ],
+     "q": "¿Sueles medir con cuidado o cocinas a ojo?",
+     "c": "Pesa una taza de harina llenada suelta y otra bien apretada, y compara los números."
+    },
+    "fr": {
+     "t": "Mesurer les ingrédients",
+     "g": "Apprends à utiliser tasses, cuillères et balance, et pourquoi peser compte surtout en pâtisserie.",
+     "p": [
+      "Arase les ingrédients secs avec un bord plat, et lis les liquides à hauteur des yeux.",
+      "Une tasse de farine varie beaucoup selon la façon de la remplir : une balance est bien plus fiable.",
+      "En cuisine, tu peux goûter et ajuster, mais la pâtisserie dépend de quantités exactes."
+     ],
+     "q": "Mesures-tu en général avec soin ou cuisines-tu au feeling ?",
+     "c": "Pèse une tasse de farine remplie sans tasser et une bien tassée, puis compare les chiffres."
+    },
+    "it": {
+     "t": "Misurare gli ingredienti",
+     "g": "Impara a usare tazze, cucchiai e bilancia, e perché pesare conta soprattutto nei dolci.",
+     "p": [
+      "Livella gli ingredienti secchi con un bordo piatto e leggi i liquidi all'altezza degli occhi.",
+      "Una tazza di farina varia molto a seconda di come la riempi, la bilancia è molto più affidabile.",
+      "In cucina puoi assaggiare e correggere, ma i dolci dipendono da dosi precise."
+     ],
+     "q": "Di solito misuri con cura o cucini a occhio?",
+     "c": "Pesa una tazza di farina riempita morbida e una pressata, poi confronta i numeri."
+    },
+    "pt": {
+     "t": "Medir ingredientes",
+     "g": "Aprende a usar chávenas, colheres e balança, e porque pesar conta sobretudo na pastelaria.",
+     "p": [
+      "Nivela os secos nas chávenas e colheres com uma faca, e lê os líquidos à altura dos olhos.",
+      "Uma chávena de farinha varia muito conforme a enches, por isso a balança dá resultados mais fiáveis.",
+      "Ao cozinhar podes provar e ajustar, mas a pastelaria depende de quantidades exatas."
+     ],
+     "q": "Costumas medir com cuidado ou cozinhar a olho?",
+     "c": "Pesa uma chávena de farinha cheia solta e outra bem calcada, e compara os números."
+    },
+    "pt_BR": {
+     "t": "Medindo ingredientes",
+     "g": "Aprenda a usar xícaras, colheres e balança, e por que pesar importa mais na confeitaria.",
+     "p": [
+      "Nivele os secos nas xícaras e colheres com uma faca, e leia os líquidos na altura dos olhos.",
+      "Uma xícara de farinha varia muito conforme você enche, então a balança dá resultados mais confiáveis.",
+      "Na cozinha dá para provar e ajustar, mas bolos e pães dependem de quantidades exatas."
+     ],
+     "q": "Você costuma medir com cuidado ou cozinha no olho?",
+     "c": "Pese uma xícara de farinha cheia solta e outra bem apertada, e compare os números."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holding a knife safely",
+     "g": "Learn a secure grip, the claw hand and why a sharp knife is safer.",
+     "p": [
+      "Pinch the blade just in front of the handle with thumb and index finger, and wrap the rest around it.",
+      "Curl the fingertips of your other hand into a claw, so your knuckles guide the blade, not your nails.",
+      "A sharp knife cuts with little force and slips less; a dull one needs pressure and can skid."
+     ],
+     "q": "Which hand position feels strange to you when you cut?",
+     "c": "Practise the pinch grip and claw hand slowly on a cucumber or courgette for five minutes."
+    },
+    "de": {
+     "t": "Das Messer sicher halten",
+     "g": "Lerne einen sicheren Griff, die Krallenhand und warum ein scharfes Messer sicherer ist.",
+     "p": [
+      "Fass die Klinge direkt vor dem Griff mit Daumen und Zeigefinger und umschließe den Griff mit den übrigen Fingern.",
+      "Krümme die Fingerspitzen der anderen Hand zur Kralle, sodass die Knöchel die Klinge führen.",
+      "Ein scharfes Messer schneidet mit wenig Kraft und rutscht weniger ab, ein stumpfes braucht Druck."
+     ],
+     "q": "Welche Handhaltung fühlt sich beim Schneiden für dich ungewohnt an?",
+     "c": "Übe fünf Minuten langsam Klingengriff und Krallenhand an einer Gurke oder Zucchini."
+    },
+    "es": {
+     "t": "Sujetar el cuchillo con seguridad",
+     "g": "Aprende un agarre firme, la mano en garra y por qué un cuchillo afilado es más seguro.",
+     "p": [
+      "Pinza la hoja justo delante del mango con pulgar e índice, y rodea el mango con los demás dedos.",
+      "Dobla las yemas de la otra mano en forma de garra, para que los nudillos guíen la hoja.",
+      "Un cuchillo afilado corta con poca fuerza y resbala menos; uno sin filo exige presión y puede patinar."
+     ],
+     "q": "¿Qué posición de la mano te resulta rara al cortar?",
+     "c": "Practica despacio el agarre en pinza y la garra con un pepino o calabacín durante cinco minutos."
+    },
+    "fr": {
+     "t": "Tenir un couteau en sécurité",
+     "g": "Apprends une prise sûre, la main en griffe et pourquoi un couteau aiguisé est plus sûr.",
+     "p": [
+      "Pince la lame juste devant le manche entre pouce et index, et enroule les autres doigts autour.",
+      "Replie le bout des doigts de l'autre main en griffe : les phalanges guident la lame, pas les ongles.",
+      "Un couteau aiguisé coupe sans forcer et glisse moins ; un couteau émoussé demande de la force et dérape."
+     ],
+     "q": "Quelle position de la main te semble bizarre quand tu coupes ?",
+     "c": "Entraîne-toi lentement cinq minutes à la prise pincée et à la griffe sur un concombre ou une courgette."
+    },
+    "it": {
+     "t": "Impugnare il coltello in sicurezza",
+     "g": "Impara una presa sicura, la mano ad artiglio e perché un coltello affilato è più sicuro.",
+     "p": [
+      "Pizzica la lama appena davanti al manico con pollice e indice, e avvolgi il manico con le altre dita.",
+      "Piega i polpastrelli dell'altra mano ad artiglio, così sono le nocche a guidare la lama.",
+      "Un coltello affilato taglia con poca forza e scivola meno; uno smussato richiede pressione e sfugge."
+     ],
+     "q": "Quale posizione della mano ti sembra strana quando tagli?",
+     "c": "Esercitati piano per cinque minuti con presa a pinza e artiglio su un cetriolo o una zucchina."
+    },
+    "pt": {
+     "t": "Segurar a faca com segurança",
+     "g": "Aprende uma pega firme, a mão em garra e porque uma faca afiada é mais segura.",
+     "p": [
+      "Pega na lâmina logo à frente do cabo entre polegar e indicador, e envolve o cabo com os outros dedos.",
+      "Dobra as pontas dos dedos da outra mão em garra, para os nós dos dedos guiarem a lâmina.",
+      "Uma faca afiada corta com pouca força e escorrega menos; uma romba exige pressão e pode fugir."
+     ],
+     "q": "Que posição da mão te parece estranha ao cortar?",
+     "c": "Pratica devagar a pega em pinça e a garra num pepino ou curgete durante cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Segurando a faca com segurança",
+     "g": "Aprenda uma pegada firme, a mão em garra e por que uma faca afiada é mais segura.",
+     "p": [
+      "Pince a lâmina logo à frente do cabo com polegar e indicador, e envolva o cabo com os outros dedos.",
+      "Dobre as pontas dos dedos da outra mão em garra, para os nós dos dedos guiarem a lâmina.",
+      "Faca afiada corta com pouca força e escorrega menos; faca cega exige pressão e pode escapar."
+     ],
+     "q": "Qual posição da mão parece estranha para você ao cortar?",
+     "c": "Pratique devagar a pegada em pinça e a garra num pepino ou abobrinha por cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic knife cuts",
+     "g": "Learn to slice, dice, mince and julienne with everyday vegetables.",
+     "p": [
+      "Slicing makes even rounds or strips; dicing turns them into cubes of the same size for even cooking.",
+      "Mincing means chopping very finely, often for garlic, ginger or herbs, rocking the knife over them.",
+      "Julienne is thin matchsticks, great for carrots in stir-fries, salads and wraps."
+     ],
+     "q": "Which cut do you find hardest to make neat and even?",
+     "c": "Cut one carrot four ways: slices, dice, mince and julienne, and compare the pieces."
+    },
+    "de": {
+     "t": "Grundlegende Schnitttechniken",
+     "g": "Lerne Scheiben, Würfel, Hacken und Julienne an alltäglichem Gemüse.",
+     "p": [
+      "Scheiben sind gleichmäßige Runden oder Streifen, Würfel gleich große Stücke für gleichmäßiges Garen.",
+      "Hacken heißt sehr fein schneiden, oft bei Knoblauch, Ingwer oder Kräutern, mit wiegender Klinge.",
+      "Julienne sind feine Streichholzstreifen, ideal für Möhren im Wok, im Salat oder im Wrap."
+     ],
+     "q": "Welcher Schnitt fällt dir am schwersten, ordentlich und gleichmäßig zu machen?",
+     "c": "Schneide eine Möhre auf vier Arten: Scheiben, Würfel, fein gehackt und Julienne."
+    },
+    "es": {
+     "t": "Cortes básicos con cuchillo",
+     "g": "Aprende a cortar en rodajas, dados, picado fino y juliana con verduras de cada día.",
+     "p": [
+      "Las rodajas son láminas o tiras regulares; los dados, cubos iguales para que todo se cocine a la vez.",
+      "Picar fino es cortar muy menudo, como ajo, jengibre o hierbas, balanceando el cuchillo.",
+      "La juliana son bastoncitos finos, ideales para zanahoria en salteados, ensaladas y wraps."
+     ],
+     "q": "¿Qué corte te cuesta más hacer limpio y regular?",
+     "c": "Corta una zanahoria de cuatro formas: rodajas, dados, picada fina y juliana, y compara."
+    },
+    "fr": {
+     "t": "Les découpes de base",
+     "g": "Apprends à émincer, couper en dés, hacher et tailler en julienne avec des légumes courants.",
+     "p": [
+      "Émincer donne des tranches régulières ; les dés sont des cubes égaux pour une cuisson homogène.",
+      "Hacher, c'est couper très finement l'ail, le gingembre ou les herbes en basculant la lame.",
+      "La julienne, ce sont de fins bâtonnets, parfaits pour les carottes en wok, salade ou wrap."
+     ],
+     "q": "Quelle découpe trouves-tu la plus difficile à réussir de façon nette ?",
+     "c": "Coupe une carotte de quatre façons : rondelles, dés, hachée et julienne, puis compare."
+    },
+    "it": {
+     "t": "I tagli di base",
+     "g": "Impara a tagliare a fette, a cubetti, tritare e a julienne con verdure di tutti i giorni.",
+     "p": [
+      "Le fette sono rondelle o strisce regolari; i cubetti sono pezzi uguali per una cottura uniforme.",
+      "Tritare vuol dire tagliare finissimo aglio, zenzero o erbe, facendo oscillare la lama.",
+      "La julienne sono bastoncini sottili, perfetti per le carote nei saltati, insalate e wrap."
+     ],
+     "q": "Quale taglio ti riesce più difficile da fare preciso e regolare?",
+     "c": "Taglia una carota in quattro modi: fette, cubetti, trito e julienne, poi confrontali."
+    },
+    "pt": {
+     "t": "Cortes básicos",
+     "g": "Aprende a cortar às rodelas, em cubos, picar e em juliana com legumes do dia a dia.",
+     "p": [
+      "As rodelas são fatias ou tiras iguais; os cubos são pedaços do mesmo tamanho para cozinhar por igual.",
+      "Picar é cortar muito fino, como alho, gengibre ou ervas, balançando a faca.",
+      "A juliana são palitos finos, ótimos para cenoura em salteados, saladas e wraps."
+     ],
+     "q": "Que corte achas mais difícil de fazer certinho?",
+     "c": "Corta uma cenoura de quatro formas: rodelas, cubos, picada e juliana, e compara."
+    },
+    "pt_BR": {
+     "t": "Cortes básicos",
+     "g": "Aprenda a cortar em rodelas, cubos, picado fino e à juliana com legumes do dia a dia.",
+     "p": [
+      "Rodelas são fatias ou tiras iguais; cubos são pedaços do mesmo tamanho para cozinhar por igual.",
+      "Picar fino é cortar bem miúdo, como alho, gengibre ou ervas, balançando a faca.",
+      "Juliana são palitinhos finos, ótimos para cenoura em refogados, saladas e wraps."
+     ],
+     "q": "Qual corte você acha mais difícil de deixar certinho?",
+     "c": "Corte uma cenoura de quatro jeitos: rodelas, cubos, picada e juliana, e compare."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chopping an onion",
+     "g": "Learn the classic method for an even onion dice, with fewer tears.",
+     "p": [
+      "Halve the onion through the root, peel it and keep the root on so the layers hold together.",
+      "Make thin cuts towards the root without cutting through it, then slice across for even dice.",
+      "A sharp knife crushes fewer cells, so less irritating vapour reaches your eyes; chilling helps too."
+     ],
+     "q": "How do you usually deal with onion tears?",
+     "c": "Dice one onion with the root-on method and check how even your pieces are."
+    },
+    "de": {
+     "t": "Eine Zwiebel würfeln",
+     "g": "Lerne die klassische Methode für gleichmäßige Zwiebelwürfel und weniger Tränen.",
+     "p": [
+      "Halbiere die Zwiebel durch die Wurzel, schäle sie und lass die Wurzel dran, damit die Schichten halten.",
+      "Schneide dünn Richtung Wurzel, ohne sie zu durchtrennen, und dann quer für gleichmäßige Würfel.",
+      "Ein scharfes Messer zerdrückt weniger Zellen, also weniger reizender Dampf; Kühlen hilft auch."
+     ],
+     "q": "Was machst du normalerweise gegen Zwiebeltränen?",
+     "c": "Würfle eine Zwiebel mit der Wurzelmethode und prüfe, wie gleichmäßig die Stücke sind."
+    },
+    "es": {
+     "t": "Picar una cebolla",
+     "g": "Aprende el método clásico para picar cebolla en dados iguales y con menos lágrimas.",
+     "p": [
+      "Parte la cebolla por la raíz, pélala y deja la raíz puesta para que las capas no se separen.",
+      "Haz cortes finos hacia la raíz sin llegar a ella y luego corta en perpendicular para dados iguales.",
+      "Un cuchillo afilado rompe menos células y suelta menos vapor irritante; enfriarla también ayuda."
+     ],
+     "q": "¿Qué haces normalmente contra las lágrimas de la cebolla?",
+     "c": "Pica una cebolla con el método de la raíz y fíjate en lo iguales que quedan los dados."
+    },
+    "fr": {
+     "t": "Ciseler un oignon",
+     "g": "Apprends la méthode classique pour des dés d'oignon réguliers, avec moins de larmes.",
+     "p": [
+      "Coupe l'oignon en deux par la racine, pèle-le et garde la racine pour que les couches tiennent.",
+      "Fais de fines entailles vers la racine sans la trancher, puis coupe en travers pour des dés réguliers.",
+      "Un couteau aiguisé écrase moins de cellules, donc moins de vapeurs irritantes ; le froid aide aussi."
+     ],
+     "q": "Comment fais-tu d'habitude contre les larmes d'oignon ?",
+     "c": "Cisèle un oignon avec la méthode de la racine et regarde si tes dés sont réguliers."
+    },
+    "it": {
+     "t": "Tritare una cipolla",
+     "g": "Impara il metodo classico per cubetti di cipolla regolari e meno lacrime.",
+     "p": [
+      "Taglia la cipolla a metà passando per la radice, sbucciala e lascia la radice per tenere uniti gli strati.",
+      "Fai tagli sottili verso la radice senza staccarla, poi taglia di traverso per cubetti regolari.",
+      "Un coltello affilato rompe meno cellule e libera meno vapori irritanti; anche il freddo aiuta."
+     ],
+     "q": "Come affronti di solito le lacrime da cipolla?",
+     "c": "Taglia una cipolla a cubetti con il metodo della radice e guarda quanto sono regolari."
+    },
+    "pt": {
+     "t": "Picar uma cebola",
+     "g": "Aprende o método clássico para cubos de cebola iguais e menos lágrimas.",
+     "p": [
+      "Corta a cebola ao meio pela raiz, descasca-a e deixa a raiz para as camadas ficarem unidas.",
+      "Faz cortes finos em direção à raiz sem a cortar, depois corta na transversal para cubos iguais.",
+      "Uma faca afiada esmaga menos células e liberta menos vapor irritante; arrefecer a cebola também ajuda."
+     ],
+     "q": "Como costumas lidar com as lágrimas da cebola?",
+     "c": "Pica uma cebola com o método da raiz e repara como os cubos ficam iguais."
+    },
+    "pt_BR": {
+     "t": "Picando cebola",
+     "g": "Aprenda o método clássico para cubinhos de cebola iguais e menos lágrimas.",
+     "p": [
+      "Corte a cebola ao meio pela raiz, descasque e mantenha a raiz para as camadas ficarem unidas.",
+      "Faça cortes finos em direção à raiz sem cortá-la, depois corte na transversal para cubos iguais.",
+      "Faca afiada esmaga menos células e solta menos vapor irritante; gelar a cebola também ajuda."
+     ],
+     "q": "Como você costuma lidar com as lágrimas da cebola?",
+     "c": "Pique uma cebola com o método da raiz e veja como os cubinhos ficam iguais."
+    }
+   }
+  }
+ ]
+}

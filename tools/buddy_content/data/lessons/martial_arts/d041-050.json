@@ -1,0 +1,835 @@
+{
+ "topic": "martial_arts",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The front stance",
+     "g": "Learn the long, stable front stance common in karate and taekwondo.",
+     "p": [
+      "It is called zenkutsu-dachi in karate and ap kubi in taekwondo.",
+      "The front knee bends over the foot, the back leg is nearly straight and most weight is forward.",
+      "Keep hips square, back upright and the front knee in line with the toes to protect the joint."
+     ],
+     "q": "What feels hardest when you try a long stance: balance, legs or keeping upright?",
+     "c": "Hold a gentle front stance for twenty seconds on each side, three times, keeping your back tall."
+    },
+    "de": {
+     "t": "Der Vorwärtsstand",
+     "g": "Lerne den langen, stabilen Vorwärtsstand, üblich in Karate und Taekwondo.",
+     "p": [
+      "Im Karate heißt er Zenkutsu-dachi, im Taekwondo Ap Kubi.",
+      "Das vordere Knie beugt sich über den Fuß, das hintere Bein ist fast gestreckt, das Gewicht liegt vorn.",
+      "Halte die Hüfte gerade, den Rücken aufrecht und das vordere Knie über den Zehen, um das Gelenk zu schonen."
+     ],
+     "q": "Was fällt dir in einem langen Stand am schwersten: Gleichgewicht, Beine oder Aufrechtbleiben?",
+     "c": "Halte dreimal pro Seite zwanzig Sekunden einen sanften Vorwärtsstand mit aufrechtem Rücken."
+    },
+    "es": {
+     "t": "La posición adelantada",
+     "g": "Aprende la posición adelantada, larga y estable, habitual en kárate y taekwondo.",
+     "p": [
+      "En kárate se llama zenkutsu-dachi y en taekwondo, ap kubi.",
+      "La rodilla delantera se dobla sobre el pie, la pierna de atrás queda casi recta y el peso va adelante.",
+      "Mantén la cadera de frente, la espalda erguida y la rodilla alineada con los dedos para cuidar la articulación."
+     ],
+     "q": "¿Qué te cuesta más en una posición larga: el equilibrio, las piernas o mantenerte erguido?",
+     "c": "Mantén una posición adelantada suave veinte segundos por lado, tres veces, con la espalda bien recta."
+    },
+    "fr": {
+     "t": "La position avant",
+     "g": "Apprends la position avant, longue et stable, courante en karaté et en taekwondo.",
+     "p": [
+      "Elle s'appelle zenkutsu-dachi en karaté et ap kubi en taekwondo.",
+      "Le genou avant se plie au-dessus du pied, la jambe arrière est presque tendue, le poids est vers l'avant.",
+      "Garde les hanches de face, le dos droit et le genou avant dans l'axe des orteils pour protéger l'articulation."
+     ],
+     "q": "Qu'est-ce qui est le plus difficile dans une position longue : l'équilibre, les jambes ou rester droit ?",
+     "c": "Tiens une position avant douce vingt secondes de chaque côté, trois fois, le dos bien droit."
+    },
+    "it": {
+     "t": "La posizione frontale",
+     "g": "Impara la posizione frontale, lunga e stabile, comune in karate e taekwondo.",
+     "p": [
+      "Nel karate si chiama zenkutsu-dachi, nel taekwondo ap kubi.",
+      "Il ginocchio anteriore si piega sopra il piede, la gamba dietro è quasi tesa e il peso va avanti.",
+      "Tieni le anche frontali, la schiena dritta e il ginocchio in linea con le dita per proteggere l'articolazione."
+     ],
+     "q": "Cosa trovi più difficile in una posizione lunga: equilibrio, gambe o restare dritto?",
+     "c": "Mantieni una posizione frontale morbida per venti secondi per lato, tre volte, con la schiena alta."
+    },
+    "pt": {
+     "t": "A posição avançada",
+     "g": "Aprende a posição avançada, longa e estável, comum no karaté e no taekwondo.",
+     "p": [
+      "No karaté chama-se zenkutsu-dachi e no taekwondo, ap kubi.",
+      "O joelho da frente dobra-se sobre o pé, a perna de trás fica quase esticada e o peso vai à frente.",
+      "Mantém a anca de frente, as costas direitas e o joelho alinhado com os dedos para proteger a articulação."
+     ],
+     "q": "O que te custa mais numa posição longa: o equilíbrio, as pernas ou manteres-te direito?",
+     "c": "Mantém uma posição avançada suave vinte segundos de cada lado, três vezes, com as costas direitas."
+    },
+    "pt_BR": {
+     "t": "A base avançada",
+     "g": "Aprenda a base avançada, longa e estável, comum no caratê e no taekwondo.",
+     "p": [
+      "No caratê ela se chama zenkutsu-dachi e no taekwondo, ap kubi.",
+      "O joelho da frente dobra sobre o pé, a perna de trás fica quase esticada e o peso vai para a frente.",
+      "Mantenha o quadril de frente, as costas eretas e o joelho alinhado com os dedos para proteger a articulação."
+     ],
+     "q": "O que é mais difícil para você numa base longa: equilíbrio, pernas ou ficar ereto?",
+     "c": "Mantenha uma base avançada suave por vinte segundos de cada lado, três vezes, com as costas eretas."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The back stance",
+     "g": "Learn the back stance, a defensive base with weight on the rear leg.",
+     "p": [
+      "It is called kokutsu-dachi in karate and dwit kubi in taekwondo.",
+      "Most of the weight sits on the bent rear leg, while the front foot rests lightly forward.",
+      "It appears often in forms and teaches you to keep a calm, stable centre."
+     ],
+     "q": "How does shifting weight backwards feel compared with leaning forward?",
+     "c": "Shift slowly from a front stance to a back stance ten times, keeping your upper body upright."
+    },
+    "de": {
+     "t": "Der Rückwärtsstand",
+     "g": "Lerne den Rückwärtsstand, eine defensive Basis mit Gewicht auf dem hinteren Bein.",
+     "p": [
+      "Im Karate heißt er Kokutsu-dachi, im Taekwondo Dwit Kubi.",
+      "Das meiste Gewicht ruht auf dem gebeugten hinteren Bein, der vordere Fuß steht leicht vorn.",
+      "Er kommt oft in Formen vor und lehrt dich, eine ruhige, stabile Mitte zu halten."
+     ],
+     "q": "Wie fühlt sich das Verlagern nach hinten im Vergleich zum Vorlehnen an?",
+     "c": "Wechsle zehnmal langsam vom Vorwärts- in den Rückwärtsstand und halte den Oberkörper aufrecht."
+    },
+    "es": {
+     "t": "La posición atrasada",
+     "g": "Aprende la posición atrasada, una base defensiva con el peso en la pierna de atrás.",
+     "p": [
+      "En kárate se llama kokutsu-dachi y en taekwondo, dwit kubi.",
+      "Casi todo el peso descansa en la pierna trasera flexionada, y el pie delantero se apoya ligero.",
+      "Aparece a menudo en las formas y enseña a mantener un centro tranquilo y estable."
+     ],
+     "q": "¿Qué sientes al pasar el peso hacia atrás en comparación con inclinarte hacia delante?",
+     "c": "Pasa despacio de la posición adelantada a la atrasada diez veces, con el tronco erguido."
+    },
+    "fr": {
+     "t": "La position arrière",
+     "g": "Apprends la position arrière, une base défensive avec le poids sur la jambe arrière.",
+     "p": [
+      "Elle s'appelle kokutsu-dachi en karaté et dwit kubi en taekwondo.",
+      "La plupart du poids repose sur la jambe arrière fléchie, le pied avant posé légèrement devant.",
+      "On la retrouve souvent dans les formes, et elle apprend à garder un centre calme et stable."
+     ],
+     "q": "Quelle sensation te donne le poids vers l'arrière par rapport au poids vers l'avant ?",
+     "c": "Passe lentement de la position avant à la position arrière dix fois, en gardant le buste droit."
+    },
+    "it": {
+     "t": "La posizione arretrata",
+     "g": "Impara la posizione arretrata, una base difensiva con il peso sulla gamba dietro.",
+     "p": [
+      "Nel karate si chiama kokutsu-dachi, nel taekwondo dwit kubi.",
+      "Gran parte del peso è sulla gamba posteriore piegata, il piede davanti appoggia leggero.",
+      "Compare spesso nelle forme e insegna a mantenere un centro calmo e stabile."
+     ],
+     "q": "Che sensazione ti dà spostare il peso indietro rispetto a sbilanciarti in avanti?",
+     "c": "Passa lentamente dalla posizione frontale a quella arretrata dieci volte, con il busto dritto."
+    },
+    "pt": {
+     "t": "A posição recuada",
+     "g": "Aprende a posição recuada, uma base defensiva com o peso na perna de trás.",
+     "p": [
+      "No karaté chama-se kokutsu-dachi e no taekwondo, dwit kubi.",
+      "A maior parte do peso fica na perna de trás dobrada, e o pé da frente apoia-se levemente.",
+      "Aparece muitas vezes nas formas e ensina a manter um centro calmo e estável."
+     ],
+     "q": "Como te sentes ao passar o peso para trás, em comparação com inclinar para a frente?",
+     "c": "Passa devagar da posição avançada para a recuada dez vezes, com o tronco direito."
+    },
+    "pt_BR": {
+     "t": "A base recuada",
+     "g": "Aprenda a base recuada, uma base defensiva com o peso na perna de trás.",
+     "p": [
+      "No caratê ela se chama kokutsu-dachi e no taekwondo, dwit kubi.",
+      "A maior parte do peso fica na perna de trás dobrada, e o pé da frente apoia de leve.",
+      "Aparece muito nas formas e ensina a manter um centro calmo e estável."
+     ],
+     "q": "Como você se sente ao jogar o peso para trás, comparado a inclinar para a frente?",
+     "c": "Passe devagar da base avançada para a recuada dez vezes, com o tronco ereto."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The horse stance",
+     "g": "Discover the wide, low stance that builds leg strength and patience.",
+     "p": [
+      "It is called kiba-dachi in karate, juchum seogi in taekwondo and ma bu in Chinese arts.",
+      "Feet are wide and parallel, knees bent and pushed gently outwards over the toes, back upright.",
+      "Start high and short; depth and time come gradually and should never cause knee pain."
+     ],
+     "q": "Why do you think so many traditions use the horse stance to build patience?",
+     "c": "Hold a comfortable, fairly high horse stance for three rounds of twenty seconds, breathing calmly."
+    },
+    "de": {
+     "t": "Der Reiterstand",
+     "g": "Entdecke den breiten, tiefen Stand, der Beinkraft und Geduld aufbaut.",
+     "p": [
+      "Im Karate heißt er Kiba-dachi, im Taekwondo Juchum Seogi und in chinesischen Künsten Ma Bu.",
+      "Füße breit und parallel, Knie gebeugt und sanft nach außen über die Zehen, Rücken aufrecht.",
+      "Fang hoch und kurz an; Tiefe und Dauer kommen nach und nach und dürfen nie Knieschmerzen machen."
+     ],
+     "q": "Warum nutzen wohl so viele Traditionen den Reiterstand, um Geduld zu schulen?",
+     "c": "Halte dreimal zwanzig Sekunden einen bequemen, eher hohen Reiterstand und atme ruhig."
+    },
+    "es": {
+     "t": "La posición del jinete",
+     "g": "Descubre la posición ancha y baja que fortalece las piernas y la paciencia.",
+     "p": [
+      "En kárate se llama kiba-dachi, en taekwondo juchum seogi y en las artes chinas ma bu.",
+      "Pies separados y paralelos, rodillas flexionadas y abiertas suavemente sobre los dedos, espalda recta.",
+      "Empieza alto y poco tiempo; la profundidad llega poco a poco y nunca debe doler la rodilla."
+     ],
+     "q": "¿Por qué crees que tantas tradiciones usan esta posición para entrenar la paciencia?",
+     "c": "Mantén una posición del jinete cómoda y bastante alta tres veces durante veinte segundos, respirando con calma."
+    },
+    "fr": {
+     "t": "La position du cavalier",
+     "g": "Découvre la position large et basse qui renforce les jambes et la patience.",
+     "p": [
+      "Elle s'appelle kiba-dachi en karaté, juchum seogi en taekwondo et ma bu dans les arts chinois.",
+      "Pieds écartés et parallèles, genoux fléchis et ouverts doucement au-dessus des orteils, dos droit.",
+      "Commence haut et court ; la profondeur vient peu à peu et ne doit jamais faire mal aux genoux."
+     ],
+     "q": "Pourquoi tant de traditions utilisent-elles cette position pour cultiver la patience, selon toi ?",
+     "c": "Tiens une position du cavalier confortable et assez haute trois fois vingt secondes, en respirant calmement."
+    },
+    "it": {
+     "t": "La posizione del cavaliere",
+     "g": "Scopri la posizione larga e bassa che rinforza gambe e pazienza.",
+     "p": [
+      "Nel karate si chiama kiba-dachi, nel taekwondo juchum seogi e nelle arti cinesi ma bu.",
+      "Piedi larghi e paralleli, ginocchia piegate e aperte dolcemente sopra le dita, schiena dritta.",
+      "Inizia alto e per poco; profondità e durata arrivano piano e non devono mai far male alle ginocchia."
+     ],
+     "q": "Perché secondo te tante tradizioni usano questa posizione per allenare la pazienza?",
+     "c": "Mantieni una posizione del cavaliere comoda e piuttosto alta per tre volte venti secondi, respirando con calma."
+    },
+    "pt": {
+     "t": "A posição do cavaleiro",
+     "g": "Descobre a posição larga e baixa que fortalece as pernas e a paciência.",
+     "p": [
+      "No karaté chama-se kiba-dachi, no taekwondo juchum seogi e nas artes chinesas ma bu.",
+      "Pés afastados e paralelos, joelhos dobrados e abertos suavemente sobre os dedos, costas direitas.",
+      "Começa alto e pouco tempo; a profundidade vem aos poucos e nunca deve doer nos joelhos."
+     ],
+     "q": "Porque achas que tantas tradições usam esta posição para treinar a paciência?",
+     "c": "Mantém uma posição do cavaleiro confortável e bastante alta três vezes vinte segundos, a respirar com calma."
+    },
+    "pt_BR": {
+     "t": "A base do cavaleiro",
+     "g": "Descubra a base larga e baixa que fortalece as pernas e a paciência.",
+     "p": [
+      "No caratê ela se chama kiba-dachi, no taekwondo juchum seogi e nas artes chinesas ma bu.",
+      "Pés afastados e paralelos, joelhos dobrados e abertos suavemente sobre os dedos, costas eretas.",
+      "Comece alto e por pouco tempo; a profundidade vem aos poucos e nunca deve doer no joelho."
+     ],
+     "q": "Por que você acha que tantas tradições usam essa base para treinar a paciência?",
+     "c": "Mantenha uma base do cavaleiro confortável e bem alta três vezes por vinte segundos, respirando com calma."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving in stances",
+     "g": "Learn to step smoothly from one stance to another while keeping balance.",
+     "p": [
+      "Move from your centre: the hips lead and the feet follow without bouncing up and down.",
+      "Keep your head at the same height as you step, like gliding rather than hopping.",
+      "Slow, careful steps build the balance you will later use at normal speed."
+     ],
+     "q": "Which feels more natural to you, stepping forward or stepping backward?",
+     "c": "Walk five slow steps forward and five back in a front stance, keeping your head level."
+    },
+    "de": {
+     "t": "Bewegen in Ständen",
+     "g": "Lerne, fließend von einem Stand in den nächsten zu wechseln und dabei das Gleichgewicht zu halten.",
+     "p": [
+      "Beweg dich aus der Mitte: Die Hüfte führt, die Füße folgen, ohne auf und ab zu wippen.",
+      "Halte den Kopf beim Schritt auf gleicher Höhe, eher gleiten als hüpfen.",
+      "Langsame, sorgfältige Schritte bauen das Gleichgewicht auf, das du später im normalen Tempo nutzt."
+     ],
+     "q": "Was fühlt sich für dich natürlicher an, vorwärts oder rückwärts zu gehen?",
+     "c": "Geh im Vorwärtsstand fünf langsame Schritte vor und fünf zurück und halte den Kopf auf einer Höhe."
+    },
+    "es": {
+     "t": "Moverse en posiciones",
+     "g": "Aprende a pasar con suavidad de una posición a otra sin perder el equilibrio.",
+     "p": [
+      "Muévete desde el centro: la cadera guía y los pies siguen, sin subir y bajar.",
+      "Mantén la cabeza a la misma altura al avanzar, como si te deslizaras en lugar de saltar.",
+      "Los pasos lentos y cuidadosos construyen el equilibrio que luego usarás a velocidad normal."
+     ],
+     "q": "¿Qué te resulta más natural, avanzar o retroceder?",
+     "c": "Da cinco pasos lentos hacia delante y cinco hacia atrás en posición adelantada, con la cabeza a nivel."
+    },
+    "fr": {
+     "t": "Se déplacer en position",
+     "g": "Apprends à passer d'une position à l'autre avec fluidité tout en gardant l'équilibre.",
+     "p": [
+      "Bouge depuis ton centre : les hanches guident, les pieds suivent, sans monter ni descendre.",
+      "Garde la tête à la même hauteur en avançant, comme si tu glissais au lieu de sautiller.",
+      "Des pas lents et soignés construisent l'équilibre que tu utiliseras ensuite à vitesse normale."
+     ],
+     "q": "Qu'est-ce qui te semble le plus naturel : avancer ou reculer ?",
+     "c": "Fais cinq pas lents en avant et cinq en arrière en position avant, la tête toujours à niveau."
+    },
+    "it": {
+     "t": "Muoversi nelle posizioni",
+     "g": "Impara a passare con fluidità da una posizione all'altra mantenendo l'equilibrio.",
+     "p": [
+      "Muoviti dal centro: le anche guidano e i piedi seguono, senza saltellare su e giù.",
+      "Tieni la testa alla stessa altezza mentre avanzi, come se scivolassi invece di saltare.",
+      "Passi lenti e accurati costruiscono l'equilibrio che userai poi a velocità normale."
+     ],
+     "q": "Cosa ti viene più naturale, avanzare o arretrare?",
+     "c": "Fai cinque passi lenti avanti e cinque indietro in posizione frontale, con la testa sempre alla stessa altezza."
+    },
+    "pt": {
+     "t": "Mover-se nas posições",
+     "g": "Aprende a passar suavemente de uma posição para outra mantendo o equilíbrio.",
+     "p": [
+      "Move-te a partir do centro: a anca guia e os pés seguem, sem subir e descer.",
+      "Mantém a cabeça à mesma altura ao avançar, como se deslizasses em vez de saltar.",
+      "Passos lentos e cuidadosos constroem o equilíbrio que mais tarde usarás a velocidade normal."
+     ],
+     "q": "O que te parece mais natural, avançar ou recuar?",
+     "c": "Dá cinco passos lentos para a frente e cinco para trás em posição avançada, com a cabeça sempre à mesma altura."
+    },
+    "pt_BR": {
+     "t": "Movendo-se nas bases",
+     "g": "Aprenda a passar suavemente de uma base para outra mantendo o equilíbrio.",
+     "p": [
+      "Mova-se a partir do centro: o quadril guia e os pés seguem, sem subir e descer.",
+      "Mantenha a cabeça na mesma altura ao avançar, como se deslizasse em vez de pular.",
+      "Passos lentos e cuidadosos constroem o equilíbrio que você depois vai usar em velocidade normal."
+     ],
+     "q": "O que parece mais natural para você, avançar ou recuar?",
+     "c": "Dê cinco passos lentos para a frente e cinco para trás na base avançada, com a cabeça sempre na mesma altura."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Footwork basics",
+     "g": "Learn small steps, sliding feet and staying light on the floor.",
+     "p": [
+      "Small steps keep you balanced; big jumps can leave you unstable.",
+      "Many arts use sliding steps where the feet stay close to the floor.",
+      "Stay light on the balls of the feet with knees soft, ready to move in any direction."
+     ],
+     "q": "In which other activities, like dancing or sports, is good footwork important?",
+     "c": "Practise sliding steps forward, back and to each side for two minutes, staying light and relaxed."
+    },
+    "de": {
+     "t": "Grundlagen der Beinarbeit",
+     "g": "Lerne kleine Schritte, gleitende Füße und Leichtigkeit auf dem Boden.",
+     "p": [
+      "Kleine Schritte halten dich im Gleichgewicht, große Sprünge machen dich instabil.",
+      "Viele Künste nutzen Gleitschritte, bei denen die Füße nah am Boden bleiben.",
+      "Bleib leicht auf den Fußballen, die Knie weich, bereit, dich in jede Richtung zu bewegen."
+     ],
+     "q": "Bei welchen anderen Aktivitäten, etwa Tanz oder Sport, ist gute Beinarbeit wichtig?",
+     "c": "Übe zwei Minuten Gleitschritte vor, zurück und zu jeder Seite, leicht und entspannt."
+    },
+    "es": {
+     "t": "Juego de pies básico",
+     "g": "Aprende pasos pequeños, pies que se deslizan y a moverte ligero sobre el suelo.",
+     "p": [
+      "Los pasos pequeños te mantienen equilibrado; los saltos grandes pueden desestabilizarte.",
+      "Muchas artes usan pasos deslizados en los que los pies van cerca del suelo.",
+      "Mantente ligero sobre la parte delantera del pie, rodillas flexibles, listo para moverte a cualquier lado."
+     ],
+     "q": "¿En qué otras actividades, como el baile o los deportes, es importante un buen juego de pies?",
+     "c": "Practica pasos deslizados adelante, atrás y a cada lado durante dos minutos, ligero y relajado."
+    },
+    "fr": {
+     "t": "Les bases du jeu de jambes",
+     "g": "Apprends les petits pas, les pieds glissés et la légèreté au sol.",
+     "p": [
+      "Les petits pas te gardent en équilibre ; les grands sauts peuvent te déstabiliser.",
+      "Beaucoup d'arts utilisent des pas glissés où les pieds restent près du sol.",
+      "Reste léger sur l'avant des pieds, genoux souples, prêt à bouger dans toutes les directions."
+     ],
+     "q": "Dans quelles autres activités, comme la danse ou le sport, un bon jeu de jambes compte-t-il ?",
+     "c": "Entraîne-toi deux minutes aux pas glissés en avant, en arrière et sur les côtés, léger et détendu."
+    },
+    "it": {
+     "t": "Le basi del gioco di gambe",
+     "g": "Impara passi piccoli, piedi che scivolano e leggerezza sul pavimento.",
+     "p": [
+      "I passi piccoli ti tengono in equilibrio; i salti grandi possono renderti instabile.",
+      "Molte arti usano passi scivolati in cui i piedi restano vicini al suolo.",
+      "Resta leggero sugli avampiedi, ginocchia morbide, pronto a muoverti in ogni direzione."
+     ],
+     "q": "In quali altre attività, come la danza o lo sport, conta un buon gioco di gambe?",
+     "c": "Prova i passi scivolati avanti, indietro e di lato per due minuti, leggero e rilassato."
+    },
+    "pt": {
+     "t": "Bases do trabalho de pés",
+     "g": "Aprende passos pequenos, pés deslizantes e a manteres-te leve no chão.",
+     "p": [
+      "Os passos pequenos mantêm-te equilibrado; os saltos grandes podem desequilibrar-te.",
+      "Muitas artes usam passos deslizados em que os pés ficam perto do chão.",
+      "Fica leve na parte da frente dos pés, joelhos soltos, pronto para te moveres em qualquer direção."
+     ],
+     "q": "Em que outras atividades, como a dança ou o desporto, é importante um bom trabalho de pés?",
+     "c": "Pratica passos deslizados para a frente, para trás e para os lados durante dois minutos, leve e relaxado."
+    },
+    "pt_BR": {
+     "t": "Noções de trabalho de pés",
+     "g": "Aprenda passos curtos, pés que deslizam e a ficar leve no chão.",
+     "p": [
+      "Passos curtos mantêm você equilibrado; saltos grandes podem desequilibrar.",
+      "Muitas artes usam passos deslizados em que os pés ficam perto do chão.",
+      "Fique leve na parte da frente dos pés, joelhos soltos, pronto para se mover em qualquer direção."
+     ],
+     "q": "Em que outras atividades, como dança ou esportes, um bom trabalho de pés é importante?",
+     "c": "Pratique passos deslizados para a frente, para trás e para os lados por dois minutos, leve e relaxado."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Balance training",
+     "g": "Improve balance with one-leg stands, slow kicks and simple drills.",
+     "p": [
+      "Standing on one leg trains the small muscles of the feet, ankles and core.",
+      "Slow, controlled leg raises teach balance far better than fast, wobbly ones.",
+      "Fix your eyes on one point and breathe calmly; practise near a wall for safety."
+     ],
+     "q": "In which moments of everyday life do you notice your balance most?",
+     "c": "Stand on one leg for thirty seconds per side, three times; then try once with your eyes on a single point."
+    },
+    "de": {
+     "t": "Gleichgewichtstraining",
+     "g": "Verbessere dein Gleichgewicht mit Einbeinstand, langsamen Tritten und einfachen Übungen.",
+     "p": [
+      "Auf einem Bein zu stehen trainiert die kleinen Muskeln von Füßen, Knöcheln und Rumpf.",
+      "Langsame, kontrollierte Beinheber schulen das Gleichgewicht viel besser als schnelle, wackelige.",
+      "Fixiere einen Punkt mit den Augen und atme ruhig; übe zur Sicherheit nahe einer Wand."
+     ],
+     "q": "In welchen Momenten des Alltags bemerkst du dein Gleichgewicht am meisten?",
+     "c": "Steh dreimal dreißig Sekunden pro Seite auf einem Bein; probier es dann einmal mit Blick auf einen Punkt."
+    },
+    "es": {
+     "t": "Entrenar el equilibrio",
+     "g": "Mejora el equilibrio con apoyos a una pierna, patadas lentas y ejercicios sencillos.",
+     "p": [
+      "Mantenerse sobre una pierna trabaja los pequeños músculos de pies, tobillos y abdomen.",
+      "Las elevaciones de pierna lentas y controladas enseñan equilibrio mucho mejor que las rápidas y temblorosas.",
+      "Fija la mirada en un punto y respira con calma; practica cerca de una pared por seguridad."
+     ],
+     "q": "¿En qué momentos de tu día a día notas más tu equilibrio?",
+     "c": "Quédate sobre una pierna treinta segundos por lado, tres veces; luego prueba una vez con la mirada fija en un punto."
+    },
+    "fr": {
+     "t": "Travailler l'équilibre",
+     "g": "Améliore ton équilibre avec l'appui sur une jambe, des coups de pied lents et des exercices simples.",
+     "p": [
+      "Tenir sur une jambe sollicite les petits muscles des pieds, des chevilles et du tronc.",
+      "Des montées de jambe lentes et contrôlées apprennent l'équilibre bien mieux que des rapides et hésitantes.",
+      "Fixe un point du regard et respire calmement ; entraîne-toi près d'un mur pour plus de sécurité."
+     ],
+     "q": "À quels moments de ta vie quotidienne remarques-tu le plus ton équilibre ?",
+     "c": "Tiens sur une jambe trente secondes de chaque côté, trois fois ; puis essaie une fois en fixant un point."
+    },
+    "it": {
+     "t": "Allenare l'equilibrio",
+     "g": "Migliora l'equilibrio con appoggi su una gamba, calci lenti ed esercizi semplici.",
+     "p": [
+      "Stare su una gamba allena i piccoli muscoli di piedi, caviglie e addome.",
+      "Sollevamenti lenti e controllati della gamba insegnano l'equilibrio molto meglio di quelli veloci e traballanti.",
+      "Fissa lo sguardo su un punto e respira con calma; allenati vicino a un muro per sicurezza."
+     ],
+     "q": "In quali momenti della vita quotidiana noti di più il tuo equilibrio?",
+     "c": "Stai su una gamba trenta secondi per lato, tre volte; poi prova una volta fissando un punto."
+    },
+    "pt": {
+     "t": "Treino de equilíbrio",
+     "g": "Melhora o equilíbrio com apoios numa perna, pontapés lentos e exercícios simples.",
+     "p": [
+      "Ficar numa perna trabalha os pequenos músculos dos pés, tornozelos e abdómen.",
+      "Elevações de perna lentas e controladas ensinam equilíbrio muito melhor do que rápidas e trémulas.",
+      "Fixa o olhar num ponto e respira com calma; pratica perto de uma parede por segurança."
+     ],
+     "q": "Em que momentos do dia a dia reparas mais no teu equilíbrio?",
+     "c": "Fica numa perna trinta segundos de cada lado, três vezes; depois experimenta uma vez com o olhar fixo num ponto."
+    },
+    "pt_BR": {
+     "t": "Treino de equilíbrio",
+     "g": "Melhore o equilíbrio com apoio numa perna, chutes lentos e exercícios simples.",
+     "p": [
+      "Ficar numa perna trabalha os pequenos músculos dos pés, tornozelos e abdômen.",
+      "Elevações de perna lentas e controladas ensinam equilíbrio muito melhor do que rápidas e tremidas.",
+      "Fixe o olhar num ponto e respire com calma; pratique perto de uma parede por segurança."
+     ],
+     "q": "Em que momentos do dia a dia você mais percebe seu equilíbrio?",
+     "c": "Fique numa perna por trinta segundos de cada lado, três vezes; depois tente uma vez com o olhar fixo num ponto."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flexibility basics",
+     "g": "Learn why gentle, regular stretching beats forcing every time.",
+     "p": [
+      "Flexibility grows slowly through short, frequent sessions rather than one big effort.",
+      "Stretch only when warm, ease into each position and stop at mild tension, never pain.",
+      "Hold relaxed stretches while breathing slowly; the body releases more when it feels safe."
+     ],
+     "q": "How flexible do you feel today, and where would you most like to improve?",
+     "c": "Do a gentle five-minute stretch after a short walk, noting one spot that feels tight."
+    },
+    "de": {
+     "t": "Grundlagen der Beweglichkeit",
+     "g": "Erfahre, warum sanftes, regelmäßiges Dehnen Zwang immer schlägt.",
+     "p": [
+      "Beweglichkeit wächst langsam durch kurze, häufige Einheiten statt durch eine große Anstrengung.",
+      "Dehne nur warm, geh langsam in jede Position und stopp bei leichter Spannung, nie bei Schmerz.",
+      "Halte entspannte Dehnungen mit langsamem Atem; der Körper gibt mehr nach, wenn er sich sicher fühlt."
+     ],
+     "q": "Wie beweglich fühlst du dich heute, und wo möchtest du dich am meisten verbessern?",
+     "c": "Dehn dich nach einem kurzen Spaziergang fünf Minuten sanft und merk dir eine Stelle, die sich fest anfühlt."
+    },
+    "es": {
+     "t": "Flexibilidad básica",
+     "g": "Descubre por qué estirar con suavidad y regularidad siempre gana a forzar.",
+     "p": [
+      "La flexibilidad crece despacio con sesiones cortas y frecuentes, no con un gran esfuerzo puntual.",
+      "Estira solo en caliente, entra poco a poco en cada postura y para en una tensión leve, nunca con dolor.",
+      "Mantén estiramientos relajados respirando despacio; el cuerpo cede más cuando se siente seguro."
+     ],
+     "q": "¿Cómo de flexible te sientes hoy y dónde te gustaría mejorar más?",
+     "c": "Haz cinco minutos de estiramientos suaves después de un paseo corto y fíjate en una zona que notes tensa."
+    },
+    "fr": {
+     "t": "Les bases de la souplesse",
+     "g": "Découvre pourquoi s'étirer doucement et régulièrement vaut toujours mieux que forcer.",
+     "p": [
+      "La souplesse progresse lentement avec des séances courtes et fréquentes plutôt qu'un gros effort.",
+      "Étire-toi seulement échauffé, entre doucement dans chaque position et arrête-toi à une légère tension, jamais à la douleur.",
+      "Garde des étirements détendus en respirant lentement ; le corps relâche davantage en confiance."
+     ],
+     "q": "À quel point te sens-tu souple aujourd'hui, et où aimerais-tu le plus progresser ?",
+     "c": "Fais cinq minutes d'étirements doux après une courte marche et repère une zone raide."
+    },
+    "it": {
+     "t": "Le basi della flessibilità",
+     "g": "Scopri perché allungarsi con dolcezza e regolarità batte sempre il forzare.",
+     "p": [
+      "La flessibilità cresce piano con sessioni brevi e frequenti, non con un unico grande sforzo.",
+      "Allungati solo da caldo, entra piano in ogni posizione e fermati a una tensione leggera, mai al dolore.",
+      "Mantieni allungamenti rilassati respirando piano; il corpo si scioglie di più quando si sente al sicuro."
+     ],
+     "q": "Quanto ti senti flessibile oggi, e dove vorresti migliorare di più?",
+     "c": "Fai cinque minuti di allungamento dolce dopo una breve camminata e nota un punto che senti rigido."
+    },
+    "pt": {
+     "t": "Bases da flexibilidade",
+     "g": "Descobre porque alongar com suavidade e regularidade ganha sempre a forçar.",
+     "p": [
+      "A flexibilidade cresce devagar com sessões curtas e frequentes, e não com um grande esforço pontual.",
+      "Alonga só depois de aquecer, entra aos poucos em cada posição e para numa tensão leve, nunca com dor.",
+      "Mantém alongamentos relaxados a respirar devagar; o corpo cede mais quando se sente seguro."
+     ],
+     "q": "Quão flexível te sentes hoje, e onde gostarias mais de melhorar?",
+     "c": "Faz cinco minutos de alongamentos suaves depois de uma caminhada curta e repara numa zona que sintas presa."
+    },
+    "pt_BR": {
+     "t": "Noções de flexibilidade",
+     "g": "Descubra por que alongar com suavidade e regularidade sempre ganha de forçar.",
+     "p": [
+      "A flexibilidade cresce devagar com sessões curtas e frequentes, e não com um grande esforço de vez.",
+      "Alongue só depois de aquecer, entre aos poucos em cada posição e pare numa tensão leve, nunca com dor.",
+      "Mantenha alongamentos relaxados respirando devagar; o corpo cede mais quando se sente seguro."
+     ],
+     "q": "Quão flexível você se sente hoje, e onde mais gostaria de melhorar?",
+     "c": "Faça cinco minutos de alongamento suave depois de uma caminhada curta e repare numa região que esteja tensa."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hip mobility",
+     "g": "Open the hips gradually for higher kicks and deeper stances.",
+     "p": [
+      "The hips connect upper and lower body, so mobile hips make every movement smoother.",
+      "Gentle hip circles, leg swings and a relaxed butterfly stretch are classic exercises.",
+      "Progress comes over weeks and months; be patient and never push into pain."
+     ],
+     "q": "Do you spend many hours sitting, and how do your hips feel at the end of the day?",
+     "c": "Do ten slow hip circles each way and one minute of a gentle butterfly stretch today."
+    },
+    "de": {
+     "t": "Hüftbeweglichkeit",
+     "g": "Öffne die Hüften nach und nach für höhere Tritte und tiefere Stände.",
+     "p": [
+      "Die Hüften verbinden Ober- und Unterkörper, darum macht eine bewegliche Hüfte jede Bewegung runder.",
+      "Sanftes Hüftkreisen, Beinschwingen und eine entspannte Schmetterlingsdehnung sind Klassiker.",
+      "Fortschritt kommt über Wochen und Monate; sei geduldig und geh nie in den Schmerz."
+     ],
+     "q": "Sitzt du viele Stunden am Tag, und wie fühlen sich deine Hüften abends an?",
+     "c": "Mach heute zehn langsame Hüftkreise in jede Richtung und eine Minute sanfte Schmetterlingsdehnung."
+    },
+    "es": {
+     "t": "Movilidad de cadera",
+     "g": "Abre las caderas poco a poco para patadas más altas y posiciones más profundas.",
+     "p": [
+      "La cadera une la parte superior e inferior del cuerpo, así que una cadera móvil suaviza cada movimiento.",
+      "Círculos de cadera suaves, balanceos de pierna y la postura de la mariposa relajada son ejercicios clásicos.",
+      "El progreso llega en semanas y meses; ten paciencia y nunca fuerces hasta el dolor."
+     ],
+     "q": "¿Pasas muchas horas sentado? ¿Cómo sientes las caderas al final del día?",
+     "c": "Haz hoy diez círculos lentos de cadera hacia cada lado y un minuto de mariposa suave."
+    },
+    "fr": {
+     "t": "La mobilité des hanches",
+     "g": "Ouvre les hanches progressivement pour des coups de pied plus hauts et des positions plus basses.",
+     "p": [
+      "Les hanches relient le haut et le bas du corps : des hanches mobiles rendent chaque geste plus fluide.",
+      "Cercles de hanches doux, balancés de jambe et papillon détendu sont des exercices classiques.",
+      "Les progrès viennent en semaines et en mois ; sois patient et ne force jamais jusqu'à la douleur."
+     ],
+     "q": "Passes-tu de longues heures assis, et comment se sentent tes hanches en fin de journée ?",
+     "c": "Fais aujourd'hui dix cercles de hanches lents dans chaque sens et une minute de papillon en douceur."
+    },
+    "it": {
+     "t": "La mobilità delle anche",
+     "g": "Apri le anche gradualmente per calci più alti e posizioni più profonde.",
+     "p": [
+      "Le anche collegano parte alta e bassa del corpo: anche mobili rendono ogni movimento più fluido.",
+      "Cerchi d'anca morbidi, slanci delle gambe e la farfalla rilassata sono esercizi classici.",
+      "I progressi arrivano in settimane e mesi; sii paziente e non spingere mai fino al dolore."
+     ],
+     "q": "Passi molte ore seduto, e come senti le anche a fine giornata?",
+     "c": "Fai oggi dieci cerchi lenti con le anche per lato e un minuto di farfalla dolce."
+    },
+    "pt": {
+     "t": "Mobilidade da anca",
+     "g": "Abre as ancas aos poucos para pontapés mais altos e posições mais profundas.",
+     "p": [
+      "As ancas ligam a parte de cima e de baixo do corpo, por isso ancas móveis suavizam cada movimento.",
+      "Círculos de anca suaves, balanços de perna e a borboleta relaxada são exercícios clássicos.",
+      "O progresso vem ao longo de semanas e meses; tem paciência e nunca forces até doer."
+     ],
+     "q": "Passas muitas horas sentado? Como sentes as ancas ao fim do dia?",
+     "c": "Faz hoje dez círculos lentos de anca para cada lado e um minuto de borboleta suave."
+    },
+    "pt_BR": {
+     "t": "Mobilidade do quadril",
+     "g": "Abra o quadril aos poucos para chutes mais altos e bases mais profundas.",
+     "p": [
+      "O quadril liga a parte de cima e de baixo do corpo, então um quadril móvel suaviza cada movimento.",
+      "Círculos de quadril suaves, balanços de perna e a borboleta relaxada são exercícios clássicos.",
+      "O progresso vem ao longo de semanas e meses; tenha paciência e nunca force até doer."
+     ],
+     "q": "Você passa muitas horas sentado? Como sente o quadril no fim do dia?",
+     "c": "Faça hoje dez círculos lentos de quadril para cada lado e um minuto de borboleta suave."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Core strength for martial arts",
+     "g": "Learn simple exercises that connect upper and lower body movement.",
+     "p": [
+      "The core includes the belly, back and hip muscles that stabilise the whole body.",
+      "A strong core helps you keep posture in stances and transfer energy smoothly.",
+      "Planks, bird dogs and slow knee raises build strength without any equipment."
+     ],
+     "q": "Which feels easier for you: holding still or moving slowly with control?",
+     "c": "Do a twenty-second plank and five slow bird dogs per side, keeping your back long."
+    },
+    "de": {
+     "t": "Rumpfkraft für Kampfkunst",
+     "g": "Lerne einfache Übungen, die Ober- und Unterkörper miteinander verbinden.",
+     "p": [
+      "Zum Rumpf gehören Bauch-, Rücken- und Hüftmuskeln, die den ganzen Körper stabilisieren.",
+      "Ein starker Rumpf hilft, in Ständen die Haltung zu bewahren und Energie fließend zu übertragen.",
+      "Unterarmstütz, Vierfüßlerstand mit Arm-Bein-Heben und langsames Knieheben brauchen keine Geräte."
+     ],
+     "q": "Was fällt dir leichter: stillhalten oder langsam und kontrolliert bewegen?",
+     "c": "Mach zwanzig Sekunden Unterarmstütz und fünf langsame Arm-Bein-Heber pro Seite, Rücken lang."
+    },
+    "es": {
+     "t": "Fuerza del core para artes marciales",
+     "g": "Aprende ejercicios sencillos que conectan el movimiento del tren superior e inferior.",
+     "p": [
+      "El core incluye los músculos del abdomen, la espalda y la cadera que estabilizan todo el cuerpo.",
+      "Un core fuerte ayuda a mantener la postura en las posiciones y a transmitir la energía con fluidez.",
+      "Planchas, el perro de caza y elevaciones lentas de rodilla dan fuerza sin ningún material."
+     ],
+     "q": "¿Qué te resulta más fácil: quedarte quieto o moverte despacio con control?",
+     "c": "Haz una plancha de veinte segundos y cinco repeticiones lentas del perro de caza por lado, con la espalda larga."
+    },
+    "fr": {
+     "t": "Gainage pour les arts martiaux",
+     "g": "Apprends des exercices simples qui relient le haut et le bas du corps.",
+     "p": [
+      "La sangle abdominale regroupe les muscles du ventre, du dos et des hanches qui stabilisent le corps.",
+      "Un centre solide aide à garder la posture en position et à transmettre l'énergie avec fluidité.",
+      "La planche, le chien d'arrêt et les montées de genou lentes renforcent sans aucun matériel."
+     ],
+     "q": "Qu'est-ce qui est le plus facile pour toi : rester immobile ou bouger lentement avec contrôle ?",
+     "c": "Fais une planche de vingt secondes et cinq chiens d'arrêt lents de chaque côté, le dos bien long."
+    },
+    "it": {
+     "t": "Forza del core per le arti marziali",
+     "g": "Impara esercizi semplici che collegano il movimento di parte alta e bassa del corpo.",
+     "p": [
+      "Il core comprende i muscoli di addome, schiena e anche che stabilizzano tutto il corpo.",
+      "Un core forte aiuta a mantenere la postura nelle posizioni e a trasmettere energia con fluidità.",
+      "Plank, bird dog e sollevamenti lenti delle ginocchia danno forza senza attrezzi."
+     ],
+     "q": "Cosa trovi più facile: restare fermo o muoverti lentamente con controllo?",
+     "c": "Fai un plank di venti secondi e cinque bird dog lenti per lato, con la schiena lunga."
+    },
+    "pt": {
+     "t": "Força do core para artes marciais",
+     "g": "Aprende exercícios simples que ligam o movimento da parte de cima e de baixo do corpo.",
+     "p": [
+      "O core inclui os músculos do abdómen, das costas e da anca que estabilizam todo o corpo.",
+      "Um core forte ajuda a manter a postura nas posições e a transmitir energia com fluidez.",
+      "Pranchas, o exercício cão-pássaro e elevações lentas de joelhos dão força sem equipamento."
+     ],
+     "q": "O que te parece mais fácil: ficar parado ou mover-te devagar com controlo?",
+     "c": "Faz uma prancha de vinte segundos e cinco repetições lentas de cão-pássaro de cada lado, com as costas compridas."
+    },
+    "pt_BR": {
+     "t": "Força do core para artes marciais",
+     "g": "Aprenda exercícios simples que conectam o movimento da parte de cima e de baixo do corpo.",
+     "p": [
+      "O core inclui os músculos do abdômen, das costas e do quadril que estabilizam todo o corpo.",
+      "Um core forte ajuda a manter a postura nas bases e a transmitir energia com fluidez.",
+      "Prancha, perdigueiro e elevações lentas de joelho dão força sem nenhum equipamento."
+     ],
+     "q": "O que é mais fácil para você: ficar parado ou se mover devagar com controle?",
+     "c": "Faça uma prancha de vinte segundos e cinco perdigueiros lentos de cada lado, com as costas alongadas."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hand positions and fists",
+     "g": "Learn how to form a proper fist and other basic hand shapes.",
+     "p": [
+      "To make a fist, roll the fingers tightly into the palm and fold the thumb over the first two fingers.",
+      "Keep the wrist straight in line with the forearm and never tuck the thumb inside the fist.",
+      "Other basic shapes include the open knife hand and the palm heel, each with its own use in forms."
+     ],
+     "q": "Did you know there was a correct way to make a fist before today?",
+     "c": "Practise forming a correct fist ten times with each hand, checking that the wrist stays straight."
+    },
+    "de": {
+     "t": "Handhaltungen und Fäuste",
+     "g": "Lerne, wie man eine korrekte Faust und andere Grundformen der Hand bildet.",
+     "p": [
+      "Für die Faust rollst du die Finger fest in die Handfläche und legst den Daumen über die ersten zwei Finger.",
+      "Halte das Handgelenk gerade in Linie mit dem Unterarm und steck den Daumen nie in die Faust.",
+      "Weitere Grundformen sind die offene Handkante und der Handballen, jede mit eigener Rolle in Formen."
+     ],
+     "q": "Wusstest du vor heute, dass es eine richtige Art gibt, eine Faust zu machen?",
+     "c": "Bilde zehnmal pro Hand eine korrekte Faust und prüfe, ob das Handgelenk gerade bleibt."
+    },
+    "es": {
+     "t": "Posiciones de la mano y puños",
+     "g": "Aprende a formar un puño correcto y otras formas básicas de la mano.",
+     "p": [
+      "Para cerrar el puño, enrolla bien los dedos hacia la palma y dobla el pulgar sobre los dos primeros.",
+      "Mantén la muñeca recta, alineada con el antebrazo, y nunca metas el pulgar dentro del puño.",
+      "Otras formas básicas son la mano de sable abierta y la base de la palma, cada una con su uso en las formas."
+     ],
+     "q": "¿Sabías antes de hoy que había una forma correcta de cerrar el puño?",
+     "c": "Practica cerrar un puño correcto diez veces con cada mano, comprobando que la muñeca queda recta."
+    },
+    "fr": {
+     "t": "Positions des mains et poings",
+     "g": "Apprends à former un poing correct et d'autres formes de main de base.",
+     "p": [
+      "Pour le poing, enroule bien les doigts dans la paume et replie le pouce sur les deux premiers doigts.",
+      "Garde le poignet droit dans l'axe de l'avant-bras et ne mets jamais le pouce à l'intérieur du poing.",
+      "D'autres formes de base sont le tranchant de la main et la paume, chacune avec son rôle dans les formes."
+     ],
+     "q": "Savais-tu avant aujourd'hui qu'il existait une bonne façon de fermer le poing ?",
+     "c": "Forme un poing correct dix fois avec chaque main, en vérifiant que le poignet reste droit."
+    },
+    "it": {
+     "t": "Posizioni della mano e pugni",
+     "g": "Impara a formare un pugno corretto e altre forme di base della mano.",
+     "p": [
+      "Per il pugno, arrotola bene le dita nel palmo e piega il pollice sopra le prime due dita.",
+      "Tieni il polso dritto in linea con l'avambraccio e non mettere mai il pollice dentro il pugno.",
+      "Altre forme di base sono la mano a taglio e la base del palmo, ognuna con il suo uso nelle forme."
+     ],
+     "q": "Sapevi prima di oggi che esiste un modo corretto di chiudere il pugno?",
+     "c": "Prova a formare un pugno corretto dieci volte per mano, controllando che il polso resti dritto."
+    },
+    "pt": {
+     "t": "Posições da mão e punhos",
+     "g": "Aprende a fechar um punho correto e outras formas básicas da mão.",
+     "p": [
+      "Para fechar o punho, enrola bem os dedos na palma e dobra o polegar sobre os dois primeiros dedos.",
+      "Mantém o pulso direito, alinhado com o antebraço, e nunca metas o polegar dentro do punho.",
+      "Outras formas básicas são a mão em espada e a base da palma, cada uma com o seu uso nas formas."
+     ],
+     "q": "Sabias antes de hoje que havia uma forma correta de fechar o punho?",
+     "c": "Pratica fechar um punho correto dez vezes com cada mão, verificando que o pulso fica direito."
+    },
+    "pt_BR": {
+     "t": "Posições da mão e punhos",
+     "g": "Aprenda a fechar um punho correto e outras formas básicas da mão.",
+     "p": [
+      "Para fechar o punho, enrole bem os dedos na palma e dobre o polegar sobre os dois primeiros dedos.",
+      "Mantenha o punho reto, alinhado com o antebraço, e nunca coloque o polegar dentro da mão fechada.",
+      "Outras formas básicas são a mão em faca e a base da palma, cada uma com seu uso nas formas."
+     ],
+     "q": "Você sabia antes de hoje que existia um jeito correto de fechar o punho?",
+     "c": "Pratique fechar a mão corretamente dez vezes com cada mão, conferindo se o punho fica reto."
+    }
+   }
+  }
+ ]
+}

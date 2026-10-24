@@ -1,0 +1,835 @@
+{
+ "topic": "wine_culture",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chardonnay",
+     "g": "Meet Chardonnay, the chameleon white that ranges from crisp Chablis to rich oak-aged styles.",
+     "p": [
+      "Chardonnay has a fairly neutral character, so climate and winemaking shape its style strongly.",
+      "Cool Chablis gives lean wines with green apple, lemon and a mineral feel, often with no oak.",
+      "Warmer regions and oak ageing give riper peach and tropical notes with butter, toast and vanilla."
+     ],
+     "q": "Do you prefer crisp, fresh flavours or rich, creamy ones in your food?",
+     "c": "Compare the smell of a green apple and a ripe peach today: two sides of Chardonnay."
+    },
+    "de": {
+     "t": "Chardonnay",
+     "g": "Lerne Chardonnay kennen, das weiße Chamäleon vom knackigen Chablis bis zum üppigen Holzausbau.",
+     "p": [
+      "Chardonnay ist recht neutral, darum prägen Klima und Kellerarbeit seinen Stil stark.",
+      "Im kühlen Chablis entstehen schlanke Weine mit grünem Apfel, Zitrone und mineralischem Eindruck, oft ohne Holz.",
+      "Wärmere Regionen und Holzfass bringen reife Pfirsich- und Tropennoten mit Butter, Toast und Vanille."
+     ],
+     "q": "Magst du beim Essen lieber frische, knackige oder reichhaltige, cremige Aromen?",
+     "c": "Vergleiche heute den Duft eines grünen Apfels mit dem eines reifen Pfirsichs: zwei Seiten des Chardonnay."
+    },
+    "es": {
+     "t": "Chardonnay",
+     "g": "Conoce la Chardonnay, la blanca camaleónica que va del fresco Chablis a estilos ricos criados en roble.",
+     "p": [
+      "La Chardonnay tiene un carácter bastante neutro, por eso el clima y la elaboración marcan mucho su estilo.",
+      "El fresco Chablis da vinos tensos con manzana verde, limón y sensación mineral, a menudo sin roble.",
+      "Zonas más cálidas y la crianza en roble aportan melocotón y fruta tropical con mantequilla, tostado y vainilla."
+     ],
+     "q": "¿Prefieres sabores frescos y vivos o ricos y cremosos en la comida?",
+     "c": "Compara hoy el olor de una manzana verde y de un melocotón maduro: dos caras de la Chardonnay."
+    },
+    "fr": {
+     "t": "Chardonnay",
+     "g": "Découvre le chardonnay, le blanc caméléon, du Chablis vif aux styles riches élevés en fût.",
+     "p": [
+      "Le chardonnay a un caractère assez neutre : le climat et la vinification façonnent fortement son style.",
+      "Le frais Chablis donne des vins tendus, pomme verte, citron et sensation minérale, souvent sans bois.",
+      "Les régions plus chaudes et l'élevage en fût apportent pêche et fruits exotiques, beurre, brioche et vanille."
+     ],
+     "q": "Préfères-tu les saveurs vives et fraîches ou riches et crémeuses dans tes plats ?",
+     "c": "Compare aujourd'hui l'odeur d'une pomme verte et d'une pêche mûre : deux visages du chardonnay."
+    },
+    "it": {
+     "t": "Chardonnay",
+     "g": "Conosci lo Chardonnay, il bianco camaleonte che va dal teso Chablis agli stili ricchi affinati in legno.",
+     "p": [
+      "Lo Chardonnay ha un carattere piuttosto neutro, quindi clima e vinificazione ne plasmano molto lo stile.",
+      "Il fresco Chablis dà vini snelli con mela verde, limone e sensazione minerale, spesso senza legno.",
+      "Zone più calde e affinamento in legno portano pesca e frutta tropicale con burro, tostatura e vaniglia."
+     ],
+     "q": "Nel cibo preferisci sapori freschi e vivaci o ricchi e cremosi?",
+     "c": "Confronta oggi il profumo di una mela verde e di una pesca matura: due volti dello Chardonnay."
+    },
+    "pt": {
+     "t": "Chardonnay",
+     "g": "Conhece a Chardonnay, a branca camaleão que vai do fresco Chablis a estilos ricos estagiados em madeira.",
+     "p": [
+      "A Chardonnay tem um carácter bastante neutro, por isso o clima e a vinificação moldam muito o seu estilo.",
+      "O fresco Chablis dá vinhos tensos com maçã verde, limão e sensação mineral, muitas vezes sem madeira.",
+      "Zonas mais quentes e a madeira trazem pêssego e fruta tropical com manteiga, tosta e baunilha."
+     ],
+     "q": "Preferes sabores frescos e vivos ou ricos e cremosos na comida?",
+     "c": "Compara hoje o cheiro de uma maçã verde com o de um pêssego maduro: duas faces da Chardonnay."
+    },
+    "pt_BR": {
+     "t": "Chardonnay",
+     "g": "Conheça a Chardonnay, a branca camaleão que vai do fresco Chablis a estilos ricos envelhecidos em carvalho.",
+     "p": [
+      "A Chardonnay tem um caráter bem neutro, por isso o clima e a vinificação moldam muito seu estilo.",
+      "O fresco Chablis dá vinhos tensos com maçã verde, limão e sensação mineral, muitas vezes sem madeira.",
+      "Regiões mais quentes e o carvalho trazem pêssego e frutas tropicais com manteiga, tostado e baunilha."
+     ],
+     "q": "Você prefere sabores frescos e vivos ou ricos e cremosos na comida?",
+     "c": "Compare hoje o cheiro de uma maçã verde com o de um pêssego maduro: duas faces da Chardonnay."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sauvignon Blanc",
+     "g": "Discover Sauvignon Blanc, a zesty, aromatic white from the Loire Valley to New Zealand.",
+     "p": [
+      "Sauvignon Blanc is known for high acidity and intense aromas of citrus, green herbs and cut grass.",
+      "In the Loire, as in Sancerre, it tends to be restrained, with flinty and citrus notes.",
+      "Marlborough in New Zealand made it world-famous with vivid passion fruit and gooseberry aromas."
+     ],
+     "q": "Which fresh herb do you love the smell of: basil, mint, parsley or another?",
+     "c": "Smell freshly cut grass or a lime zest today and link the aroma to Sauvignon Blanc."
+    },
+    "de": {
+     "t": "Sauvignon Blanc",
+     "g": "Entdecke Sauvignon Blanc, einen spritzigen, aromatischen Weißen von der Loire bis Neuseeland.",
+     "p": [
+      "Sauvignon Blanc ist bekannt für hohe Säure und intensive Aromen von Zitrus, grünen Kräutern und Gras.",
+      "An der Loire, etwa in Sancerre, wirkt er eher zurückhaltend, mit Feuerstein- und Zitrusnoten.",
+      "Marlborough in Neuseeland machte ihn mit lebhaften Maracuja- und Stachelbeeraromen weltberühmt."
+     ],
+     "q": "Welches frische Kraut riechst du am liebsten: Basilikum, Minze, Petersilie oder ein anderes?",
+     "c": "Riech heute an frisch gemähtem Gras oder Limettenschale und verbinde den Duft mit Sauvignon Blanc."
+    },
+    "es": {
+     "t": "Sauvignon Blanc",
+     "g": "Descubre la Sauvignon Blanc, una blanca vibrante y aromática, del valle del Loira a Nueva Zelanda.",
+     "p": [
+      "La Sauvignon Blanc destaca por su acidez alta y aromas intensos de cítricos, hierbas verdes y hierba cortada.",
+      "En el Loira, como en Sancerre, suele ser contenida, con notas de pedernal y cítricos.",
+      "Marlborough, en Nueva Zelanda, la hizo famosa con aromas vivos de maracuyá y grosella espinosa."
+     ],
+     "q": "¿Qué hierba fresca te encanta oler: albahaca, menta, perejil u otra?",
+     "c": "Huele hoy césped recién cortado o ralladura de lima y relaciona ese aroma con la Sauvignon Blanc."
+    },
+    "fr": {
+     "t": "Sauvignon blanc",
+     "g": "Découvre le sauvignon blanc, un blanc vif et aromatique, de la vallée de la Loire à la Nouvelle-Zélande.",
+     "p": [
+      "Le sauvignon blanc est connu pour son acidité élevée et ses arômes intenses d'agrumes, d'herbes et d'herbe coupée.",
+      "Dans la Loire, comme à Sancerre, il est plutôt retenu, avec des notes de pierre à fusil et d'agrumes.",
+      "Marlborough, en Nouvelle-Zélande, l'a rendu célèbre avec des arômes éclatants de fruit de la passion."
+     ],
+     "q": "Quelle herbe fraîche aimes-tu sentir : basilic, menthe, persil ou une autre ?",
+     "c": "Sens aujourd'hui de l'herbe fraîchement coupée ou un zeste de citron vert et associe-le au sauvignon."
+    },
+    "it": {
+     "t": "Sauvignon Blanc",
+     "g": "Scopri il Sauvignon Blanc, un bianco vivace e aromatico, dalla Loira alla Nuova Zelanda.",
+     "p": [
+      "Il Sauvignon Blanc è noto per l'acidità alta e i profumi intensi di agrumi, erbe verdi ed erba tagliata.",
+      "Nella Loira, come a Sancerre, è più sobrio, con note di pietra focaia e agrumi.",
+      "Marlborough, in Nuova Zelanda, lo ha reso famoso con vivaci profumi di frutto della passione e uva spina."
+     ],
+     "q": "Quale erba fresca ami annusare: basilico, menta, prezzemolo o un'altra?",
+     "c": "Annusa oggi erba appena tagliata o scorza di lime e collega quel profumo al Sauvignon Blanc."
+    },
+    "pt": {
+     "t": "Sauvignon Blanc",
+     "g": "Descobre a Sauvignon Blanc, uma branca vibrante e aromática, do vale do Loire à Nova Zelândia.",
+     "p": [
+      "A Sauvignon Blanc é conhecida pela acidez alta e aromas intensos de citrinos, ervas verdes e relva cortada.",
+      "No Loire, como em Sancerre, tende a ser contida, com notas de pederneira e citrinos.",
+      "Marlborough, na Nova Zelândia, tornou-a famosa com aromas vivos de maracujá e groselha."
+     ],
+     "q": "Que erva fresca adoras cheirar: manjericão, hortelã, salsa ou outra?",
+     "c": "Cheira hoje relva acabada de cortar ou raspa de lima e liga esse aroma à Sauvignon Blanc."
+    },
+    "pt_BR": {
+     "t": "Sauvignon Blanc",
+     "g": "Descubra a Sauvignon Blanc, uma branca vibrante e aromática, do vale do Loire à Nova Zelândia.",
+     "p": [
+      "A Sauvignon Blanc é conhecida pela acidez alta e aromas intensos de cítricos, ervas verdes e grama cortada.",
+      "No Loire, como em Sancerre, costuma ser mais contida, com notas de pedra e cítricos.",
+      "Marlborough, na Nova Zelândia, a deixou famosa com aromas vivos de maracujá e groselha."
+     ],
+     "q": "Qual erva fresca você adora cheirar: manjericão, hortelã, salsinha ou outra?",
+     "c": "Cheire hoje grama recém-cortada ou raspas de limão e ligue esse aroma à Sauvignon Blanc."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riesling",
+     "g": "Get to know Riesling, Germany's pride, an aromatic white from bone dry to lusciously sweet.",
+     "p": [
+      "Riesling keeps very high acidity, which makes even its sweet versions taste fresh and balanced.",
+      "Young Riesling smells of lime, green apple and white flowers; with age, some show a petrol-like note.",
+      "Germany's Mosel and Rheingau, Alsace in France and Austria's Wachau are classic Riesling regions."
+     ],
+     "q": "Do you like the balance of sweet and sour, like in lemonade or sweet-and-sour dishes?",
+     "c": "Taste a lemon slice with a little honey today and notice how acidity balances sweetness."
+    },
+    "de": {
+     "t": "Riesling",
+     "g": "Lerne Riesling kennen, Deutschlands Stolz, ein aromatischer Weißer von knochentrocken bis edelsüß.",
+     "p": [
+      "Riesling behält eine sehr hohe Säure, darum schmecken selbst süße Versionen frisch und ausgewogen.",
+      "Junger Riesling duftet nach Limette, grünem Apfel und weißen Blüten; gereift zeigt er manchmal eine Petrolnote.",
+      "Mosel und Rheingau, das Elsass und die österreichische Wachau sind klassische Riesling-Regionen."
+     ],
+     "q": "Magst du das Spiel von süß und sauer, wie bei Limonade oder süß-sauren Gerichten?",
+     "c": "Probiere heute eine Zitronenscheibe mit etwas Honig und achte darauf, wie Säure die Süße ausgleicht."
+    },
+    "es": {
+     "t": "Riesling",
+     "g": "Conoce la Riesling, orgullo de Alemania, una blanca aromática que va de muy seca a muy dulce.",
+     "p": [
+      "La Riesling conserva una acidez muy alta, por eso incluso sus versiones dulces resultan frescas y equilibradas.",
+      "De joven huele a lima, manzana verde y flores blancas; con los años, algunas muestran una nota de hidrocarburo.",
+      "El Mosela y el Rheingau en Alemania, Alsacia y la Wachau en Austria son regiones clásicas de Riesling."
+     ],
+     "q": "¿Te gusta el equilibrio entre dulce y ácido, como en la limonada o en platos agridulces?",
+     "c": "Prueba hoy una rodaja de limón con un poco de miel y fíjate en cómo la acidez equilibra el dulzor."
+    },
+    "fr": {
+     "t": "Riesling",
+     "g": "Découvre le riesling, fierté de l'Allemagne, un blanc aromatique du très sec au liquoreux.",
+     "p": [
+      "Le riesling garde une acidité très élevée : même ses versions douces paraissent fraîches et équilibrées.",
+      "Jeune, il sent le citron vert, la pomme verte et les fleurs blanches ; avec l'âge, parfois une note pétrolée.",
+      "La Moselle et le Rheingau, l'Alsace et la Wachau en Autriche sont des régions classiques du riesling."
+     ],
+     "q": "Aimes-tu l'équilibre entre sucré et acidulé, comme dans une citronnade ou un plat aigre-doux ?",
+     "c": "Goûte aujourd'hui une tranche de citron avec un peu de miel et observe comment l'acidité équilibre le sucre."
+    },
+    "it": {
+     "t": "Riesling",
+     "g": "Conosci il Riesling, orgoglio della Germania, un bianco aromatico dal secchissimo al dolce.",
+     "p": [
+      "Il Riesling mantiene un'acidità molto alta, così anche le versioni dolci risultano fresche ed equilibrate.",
+      "Giovane profuma di lime, mela verde e fiori bianchi; con l'età alcuni mostrano una nota di idrocarburo.",
+      "La Mosella e il Rheingau, l'Alsazia e la Wachau in Austria sono zone classiche del Riesling."
+     ],
+     "q": "Ti piace l'equilibrio tra dolce e acido, come nella limonata o nei piatti agrodolci?",
+     "c": "Assaggia oggi una fetta di limone con un po' di miele e nota come l'acidità bilancia la dolcezza."
+    },
+    "pt": {
+     "t": "Riesling",
+     "g": "Conhece a Riesling, orgulho da Alemanha, uma branca aromática que vai do muito seco ao muito doce.",
+     "p": [
+      "A Riesling mantém uma acidez muito alta, por isso até as versões doces parecem frescas e equilibradas.",
+      "Jovem cheira a lima, maçã verde e flores brancas; com a idade, algumas mostram uma nota de petróleo.",
+      "Mosela e Rheingau na Alemanha, a Alsácia e a Wachau na Áustria são regiões clássicas da Riesling."
+     ],
+     "q": "Gostas do equilíbrio entre doce e ácido, como na limonada ou em pratos agridoces?",
+     "c": "Prova hoje uma rodela de limão com um pouco de mel e repara como a acidez equilibra a doçura."
+    },
+    "pt_BR": {
+     "t": "Riesling",
+     "g": "Conheça a Riesling, orgulho da Alemanha, uma branca aromática que vai do muito seco ao muito doce.",
+     "p": [
+      "A Riesling mantém uma acidez muito alta, então até as versões doces parecem frescas e equilibradas.",
+      "Jovem, cheira a limão, maçã verde e flores brancas; com a idade, algumas mostram uma nota de querosene.",
+      "Mosel e Rheingau na Alemanha, a Alsácia e a Wachau na Áustria são regiões clássicas da Riesling."
+     ],
+     "q": "Você gosta do equilíbrio entre doce e azedo, como na limonada ou em pratos agridoces?",
+     "c": "Prove hoje uma rodela de limão com um pouco de mel e repare como a acidez equilibra a doçura."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pinot Grigio and Pinot Gris",
+     "g": "See how one grape becomes light and crisp Pinot Grigio in Italy and richer Pinot Gris in Alsace.",
+     "p": [
+      "Pinot Grigio and Pinot Gris are the same grape, a relative of Pinot Noir with greyish-pink skins.",
+      "Italian Pinot Grigio, from regions like Veneto and Friuli, is usually light, crisp and lemony.",
+      "Alsace Pinot Gris is fuller and rounder, with pear, honey and spice notes, sometimes slightly sweet."
+     ],
+     "q": "Do you prefer light meals in summer and richer dishes in winter?",
+     "c": "Taste a crisp pear and a ripe, soft pear today and note how texture changes flavour."
+    },
+    "de": {
+     "t": "Pinot Grigio und Pinot Gris",
+     "g": "Sieh, wie eine Traube in Italien zum leichten Pinot Grigio und im Elsass zum volleren Pinot Gris wird.",
+     "p": [
+      "Pinot Grigio und Pinot Gris sind dieselbe Sorte, eine Verwandte des Pinot Noir mit graurosa Schalen.",
+      "Italienischer Pinot Grigio aus Venetien oder Friaul ist meist leicht, frisch und zitronig.",
+      "Elsässer Pinot Gris ist voller und runder, mit Birne, Honig und Würze, manchmal leicht süß."
+     ],
+     "q": "Magst du im Sommer lieber leichte Mahlzeiten und im Winter kräftigere?",
+     "c": "Probiere heute eine knackige und eine reife, weiche Birne und achte darauf, wie die Textur den Geschmack ändert."
+    },
+    "es": {
+     "t": "Pinot Grigio y Pinot Gris",
+     "g": "Mira cómo una uva da el ligero Pinot Grigio en Italia y el Pinot Gris más rico en Alsacia.",
+     "p": [
+      "Pinot Grigio y Pinot Gris son la misma uva, pariente de la Pinot Noir, con piel gris rosada.",
+      "El Pinot Grigio italiano, de zonas como Véneto y Friuli, suele ser ligero, fresco y con notas de limón.",
+      "El Pinot Gris de Alsacia es más lleno y redondo, con pera, miel y especias, a veces algo dulce."
+     ],
+     "q": "¿Prefieres comidas ligeras en verano y platos más contundentes en invierno?",
+     "c": "Prueba hoy una pera crujiente y otra madura y blanda, y fíjate en cómo la textura cambia el sabor."
+    },
+    "fr": {
+     "t": "Pinot grigio et pinot gris",
+     "g": "Vois comment un même cépage donne le pinot grigio léger en Italie et le pinot gris plus riche en Alsace.",
+     "p": [
+      "Pinot grigio et pinot gris sont le même cépage, parent du pinot noir, à la peau gris rosé.",
+      "Le pinot grigio italien, de Vénétie ou du Frioul, est souvent léger, vif et citronné.",
+      "Le pinot gris d'Alsace est plus ample et rond, avec poire, miel et épices, parfois légèrement doux."
+     ],
+     "q": "Préfères-tu les repas légers en été et les plats plus riches en hiver ?",
+     "c": "Goûte aujourd'hui une poire croquante et une poire mûre et fondante, et note comment la texture change le goût."
+    },
+    "it": {
+     "t": "Pinot Grigio e Pinot Gris",
+     "g": "Scopri come la stessa uva diventa il leggero Pinot Grigio in Italia e il più ricco Pinot Gris in Alsazia.",
+     "p": [
+      "Pinot Grigio e Pinot Gris sono la stessa uva, parente del Pinot Nero, con buccia grigio rosata.",
+      "Il Pinot Grigio italiano, di zone come Veneto e Friuli, è di solito leggero, fresco e agrumato.",
+      "Il Pinot Gris alsaziano è più pieno e rotondo, con pera, miele e spezie, a volte leggermente dolce."
+     ],
+     "q": "Preferisci pasti leggeri d'estate e piatti più ricchi d'inverno?",
+     "c": "Assaggia oggi una pera croccante e una matura e morbida, e nota come la consistenza cambia il sapore."
+    },
+    "pt": {
+     "t": "Pinot Grigio e Pinot Gris",
+     "g": "Vê como uma casta dá o leve Pinot Grigio em Itália e o Pinot Gris mais rico na Alsácia.",
+     "p": [
+      "Pinot Grigio e Pinot Gris são a mesma casta, parente da Pinot Noir, com película cinzento-rosada.",
+      "O Pinot Grigio italiano, de zonas como Véneto e Friul, é em geral leve, fresco e com notas de limão.",
+      "O Pinot Gris da Alsácia é mais cheio e redondo, com pera, mel e especiarias, por vezes ligeiramente doce."
+     ],
+     "q": "Preferes refeições leves no verão e pratos mais ricos no inverno?",
+     "c": "Prova hoje uma pera estaladiça e outra madura e macia, e repara como a textura muda o sabor."
+    },
+    "pt_BR": {
+     "t": "Pinot Grigio e Pinot Gris",
+     "g": "Veja como uma uva vira o leve Pinot Grigio na Itália e o Pinot Gris mais rico na Alsácia.",
+     "p": [
+      "Pinot Grigio e Pinot Gris são a mesma uva, parente da Pinot Noir, com casca cinza-rosada.",
+      "O Pinot Grigio italiano, de regiões como Vêneto e Friuli, costuma ser leve, fresco e com notas de limão.",
+      "O Pinot Gris da Alsácia é mais cheio e redondo, com pera, mel e especiarias, às vezes levemente doce."
+     ],
+     "q": "Você prefere refeições leves no verão e pratos mais ricos no inverno?",
+     "c": "Prove hoje uma pera crocante e outra madura e macia, e repare como a textura muda o sabor."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chenin Blanc",
+     "g": "Discover Chenin Blanc, a versatile white from the Loire Valley and South Africa.",
+     "p": [
+      "Chenin Blanc can make dry, off-dry, sweet and sparkling wines, all with bright acidity.",
+      "Common aromas are apple, quince, honey and sometimes a note that tasters compare to wet wool or hay.",
+      "In the Loire it shines in Vouvray and Savennières; in South Africa it is the most planted white grape."
+     ],
+     "q": "Which apple variety do you like most, and is it sweet, tart or both?",
+     "c": "Smell a baked apple or a spoon of honey today and connect those aromas to Chenin Blanc."
+    },
+    "de": {
+     "t": "Chenin Blanc",
+     "g": "Entdecke Chenin Blanc, einen vielseitigen Weißen von der Loire und aus Südafrika.",
+     "p": [
+      "Chenin Blanc ergibt trockene, halbtrockene, süße und Schaumweine, alle mit lebendiger Säure.",
+      "Häufige Aromen sind Apfel, Quitte, Honig und manchmal eine Note, die an feuchte Wolle oder Heu erinnert.",
+      "An der Loire glänzt er in Vouvray und Savennières, in Südafrika ist er die meistgepflanzte weiße Sorte."
+     ],
+     "q": "Welche Apfelsorte magst du am liebsten, und ist sie süß, säuerlich oder beides?",
+     "c": "Riech heute an einem Bratapfel oder einem Löffel Honig und verbinde die Düfte mit Chenin Blanc."
+    },
+    "es": {
+     "t": "Chenin Blanc",
+     "g": "Descubre la Chenin Blanc, una blanca versátil del valle del Loira y de Sudáfrica.",
+     "p": [
+      "La Chenin Blanc puede dar vinos secos, semisecos, dulces y espumosos, todos con acidez brillante.",
+      "Sus aromas comunes son manzana, membrillo, miel y a veces una nota que recuerda a lana húmeda o heno.",
+      "En el Loira brilla en Vouvray y Savennières; en Sudáfrica es la uva blanca más plantada."
+     ],
+     "q": "¿Qué variedad de manzana te gusta más, y es dulce, ácida o ambas cosas?",
+     "c": "Huele hoy una manzana asada o una cucharada de miel y relaciona esos aromas con la Chenin Blanc."
+    },
+    "fr": {
+     "t": "Chenin blanc",
+     "g": "Découvre le chenin blanc, un blanc polyvalent de la vallée de la Loire et d'Afrique du Sud.",
+     "p": [
+      "Le chenin peut donner des vins secs, demi-secs, moelleux et effervescents, tous avec une belle acidité.",
+      "On y trouve pomme, coing, miel et parfois une note que les dégustateurs comparent à la laine mouillée ou au foin.",
+      "Dans la Loire, il brille à Vouvray et Savennières ; en Afrique du Sud, c'est le blanc le plus planté."
+     ],
+     "q": "Quelle variété de pomme préfères-tu, et est-elle sucrée, acidulée ou les deux ?",
+     "c": "Sens aujourd'hui une pomme au four ou une cuillère de miel et associe ces arômes au chenin blanc."
+    },
+    "it": {
+     "t": "Chenin Blanc",
+     "g": "Scopri lo Chenin Blanc, un bianco versatile della Loira e del Sudafrica.",
+     "p": [
+      "Lo Chenin Blanc può dare vini secchi, abboccati, dolci e spumanti, tutti con acidità brillante.",
+      "Profumi comuni sono mela, mela cotogna, miele e a volte una nota che ricorda lana bagnata o fieno.",
+      "Nella Loira brilla a Vouvray e Savennières; in Sudafrica è l'uva bianca più coltivata."
+     ],
+     "q": "Quale varietà di mela ti piace di più, ed è dolce, aspra o entrambe le cose?",
+     "c": "Annusa oggi una mela cotta o un cucchiaio di miele e collega quei profumi allo Chenin Blanc."
+    },
+    "pt": {
+     "t": "Chenin Blanc",
+     "g": "Descobre a Chenin Blanc, uma branca versátil do vale do Loire e da África do Sul.",
+     "p": [
+      "A Chenin Blanc pode dar vinhos secos, meio-secos, doces e espumantes, todos com acidez viva.",
+      "Os aromas comuns são maçã, marmelo, mel e por vezes uma nota que lembra lã molhada ou feno.",
+      "No Loire brilha em Vouvray e Savennières; na África do Sul é a casta branca mais plantada."
+     ],
+     "q": "Que variedade de maçã preferes, e é doce, ácida ou as duas coisas?",
+     "c": "Cheira hoje uma maçã assada ou uma colher de mel e liga esses aromas à Chenin Blanc."
+    },
+    "pt_BR": {
+     "t": "Chenin Blanc",
+     "g": "Descubra a Chenin Blanc, uma branca versátil do vale do Loire e da África do Sul.",
+     "p": [
+      "A Chenin Blanc pode dar vinhos secos, meio secos, doces e espumantes, todos com acidez viva.",
+      "Os aromas comuns são maçã, marmelo, mel e às vezes uma nota que lembra lã molhada ou feno.",
+      "No Loire ela brilha em Vouvray e Savennières; na África do Sul é a uva branca mais plantada."
+     ],
+     "q": "Qual variedade de maçã você prefere, e ela é doce, azedinha ou as duas coisas?",
+     "c": "Cheire hoje uma maçã assada ou uma colher de mel e ligue esses aromas à Chenin Blanc."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gewürztraminer",
+     "g": "Meet Gewürztraminer, a white famous for intense lychee and rose petal aromas.",
+     "p": [
+      "Gewürz means spice in German, and the grape has pink skins and a very perfumed character.",
+      "Typical aromas are lychee, rose, ginger and sweet spice, often with soft acidity and a full body.",
+      "Alsace is its most famous home, and it also grows in Germany and in Alto Adige, near the village of Tramin."
+     ],
+     "q": "Is there a perfume, flower or fruit scent that instantly brings back a memory for you?",
+     "c": "Smell rose petals, a lychee or fresh ginger today and describe the scent in three words."
+    },
+    "de": {
+     "t": "Gewürztraminer",
+     "g": "Lerne Gewürztraminer kennen, einen Weißen, berühmt für intensive Litschi- und Rosenaromen.",
+     "p": [
+      "Die Traube hat rosa Schalen und einen sehr parfümierten, würzigen Charakter, daher ihr Name.",
+      "Typische Aromen sind Litschi, Rose, Ingwer und süße Gewürze, oft mit milder Säure und vollem Körper.",
+      "Das Elsass ist ihre bekannteste Heimat; sie wächst auch in Deutschland und in Südtirol nahe dem Ort Tramin."
+     ],
+     "q": "Gibt es ein Parfüm, eine Blume oder einen Fruchtduft, der sofort eine Erinnerung weckt?",
+     "c": "Riech heute an Rosenblättern, einer Litschi oder frischem Ingwer und beschreibe den Duft in drei Wörtern."
+    },
+    "es": {
+     "t": "Gewürztraminer",
+     "g": "Conoce la Gewürztraminer, una blanca famosa por sus intensos aromas a lichi y pétalos de rosa.",
+     "p": [
+      "Gewürz significa especia en alemán, y la uva tiene piel rosada y un carácter muy perfumado.",
+      "Sus aromas típicos son lichi, rosa, jengibre y especias dulces, con acidez suave y cuerpo lleno.",
+      "Alsacia es su casa más famosa, y también crece en Alemania y en el Alto Adigio, cerca del pueblo de Tramin."
+     ],
+     "q": "¿Hay algún perfume, flor o aroma de fruta que te traiga un recuerdo al instante?",
+     "c": "Huele hoy pétalos de rosa, un lichi o jengibre fresco y describe el aroma con tres palabras."
+    },
+    "fr": {
+     "t": "Gewurztraminer",
+     "g": "Découvre le gewurztraminer, un blanc célèbre pour ses arômes intenses de litchi et de rose.",
+     "p": [
+      "Gewürz signifie « épice » en allemand ; le raisin a une peau rose et un caractère très parfumé.",
+      "On y sent litchi, rose, gingembre et épices douces, souvent avec une acidité douce et un corps ample.",
+      "L'Alsace est sa terre la plus célèbre ; on le trouve aussi en Allemagne et au Haut-Adige, près de Tramin."
+     ],
+     "q": "Y a-t-il un parfum, une fleur ou un fruit dont l'odeur te rappelle aussitôt un souvenir ?",
+     "c": "Sens aujourd'hui des pétales de rose, un litchi ou du gingembre frais et décris l'odeur en trois mots."
+    },
+    "it": {
+     "t": "Gewürztraminer",
+     "g": "Conosci il Gewürztraminer, un bianco famoso per gli intensi profumi di litchi e petali di rosa.",
+     "p": [
+      "Gewürz significa spezia in tedesco, e l'uva ha buccia rosata e un carattere molto profumato.",
+      "Profumi tipici sono litchi, rosa, zenzero e spezie dolci, spesso con acidità morbida e corpo pieno.",
+      "L'Alsazia è la sua patria più famosa, e cresce anche in Germania e in Alto Adige, vicino al paese di Termeno."
+     ],
+     "q": "C'è un profumo, un fiore o un frutto il cui odore ti riporta subito a un ricordo?",
+     "c": "Annusa oggi petali di rosa, un litchi o zenzero fresco e descrivi il profumo con tre parole."
+    },
+    "pt": {
+     "t": "Gewürztraminer",
+     "g": "Conhece a Gewürztraminer, uma branca famosa pelos intensos aromas a líchia e pétalas de rosa.",
+     "p": [
+      "Gewürz significa especiaria em alemão, e a casta tem película rosada e um carácter muito perfumado.",
+      "Os aromas típicos são líchia, rosa, gengibre e especiarias doces, com acidez suave e corpo cheio.",
+      "A Alsácia é a sua casa mais famosa, e também cresce na Alemanha e no Alto Ádige, perto da vila de Tramin."
+     ],
+     "q": "Há algum perfume, flor ou fruta cujo cheiro te traga logo uma memória?",
+     "c": "Cheira hoje pétalas de rosa, uma líchia ou gengibre fresco e descreve o aroma em três palavras."
+    },
+    "pt_BR": {
+     "t": "Gewürztraminer",
+     "g": "Conheça a Gewürztraminer, uma branca famosa pelos intensos aromas de lichia e pétalas de rosa.",
+     "p": [
+      "Gewürz significa especiaria em alemão, e a uva tem casca rosada e um caráter muito perfumado.",
+      "Os aromas típicos são lichia, rosa, gengibre e especiarias doces, com acidez suave e corpo cheio.",
+      "A Alsácia é sua casa mais famosa, e ela também cresce na Alemanha e no Alto Ádige, perto da vila de Tramin."
+     ],
+     "q": "Existe algum perfume, flor ou fruta cujo cheiro traz uma lembrança na hora?",
+     "c": "Cheire hoje pétalas de rosa, uma lichia ou gengibre fresco e descreva o aroma em três palavras."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Albariño and Alvarinho",
+     "g": "Discover Albariño and Alvarinho, fresh Atlantic whites from Galicia and northern Portugal.",
+     "p": [
+      "It is one grape with two spellings: Albariño in Spain and Alvarinho in Portugal.",
+      "Rías Baixas in Galicia and Monção e Melgaço in Portugal's Vinho Verde region are its classic homes.",
+      "Expect peach, citrus and a salty, sea-breeze freshness that loves seafood."
+     ],
+     "q": "Do you have a favourite seaside place or seafood dish?",
+     "c": "Squeeze lemon over a pinch of sea salt and smell it: a hint of the Atlantic freshness of Albariño."
+    },
+    "de": {
+     "t": "Albariño und Alvarinho",
+     "g": "Entdecke Albariño und Alvarinho, frische Atlantik-Weißweine aus Galicien und Nordportugal.",
+     "p": [
+      "Es ist eine Traube mit zwei Schreibweisen: Albariño in Spanien und Alvarinho in Portugal.",
+      "Rías Baixas in Galicien und Monção e Melgaço im portugiesischen Vinho Verde sind ihre klassischen Heimaten.",
+      "Erwarte Pfirsich, Zitrus und eine salzige, meeresfrische Note, die perfekt zu Meeresfrüchten passt."
+     ],
+     "q": "Hast du einen Lieblingsort am Meer oder ein liebstes Gericht mit Meeresfrüchten?",
+     "c": "Träufle Zitrone auf eine Prise Meersalz und riech daran: ein Hauch der Atlantikfrische des Albariño."
+    },
+    "es": {
+     "t": "Albariño y Alvarinho",
+     "g": "Descubre el Albariño y el Alvarinho, blancos atlánticos frescos de Galicia y el norte de Portugal.",
+     "p": [
+      "Es una sola uva con dos nombres: Albariño en España y Alvarinho en Portugal.",
+      "Rías Baixas en Galicia y Monção e Melgaço, en la región portuguesa del Vinho Verde, son sus casas clásicas.",
+      "Espera melocotón, cítricos y una frescura salina, de brisa marina, que encanta con el marisco."
+     ],
+     "q": "¿Tienes un lugar de costa favorito o un plato de marisco preferido?",
+     "c": "Exprime limón sobre una pizca de sal marina y huélelo: un guiño a la frescura atlántica del Albariño."
+    },
+    "fr": {
+     "t": "Albariño et alvarinho",
+     "g": "Découvre l'albariño et l'alvarinho, des blancs frais de l'Atlantique, de Galice et du nord du Portugal.",
+     "p": [
+      "C'est un seul cépage aux deux orthographes : albariño en Espagne et alvarinho au Portugal.",
+      "Rías Baixas en Galice et Monção e Melgaço, dans la région du Vinho Verde, sont ses terres classiques.",
+      "Attends-toi à la pêche, aux agrumes et à une fraîcheur saline d'embruns, idéale avec les fruits de mer."
+     ],
+     "q": "As-tu un lieu préféré au bord de la mer ou un plat de fruits de mer favori ?",
+     "c": "Presse du citron sur une pincée de sel marin et sens-le : un clin d'œil à la fraîcheur atlantique de l'albariño."
+    },
+    "it": {
+     "t": "Albariño e Alvarinho",
+     "g": "Scopri l'Albariño e l'Alvarinho, bianchi atlantici freschi della Galizia e del nord del Portogallo.",
+     "p": [
+      "È un'unica uva con due grafie: Albariño in Spagna e Alvarinho in Portogallo.",
+      "Rías Baixas in Galizia e Monção e Melgaço, nella zona portoghese del Vinho Verde, sono le sue terre classiche.",
+      "Aspettati pesca, agrumi e una freschezza salina da brezza marina, perfetta con i frutti di mare."
+     ],
+     "q": "Hai un posto di mare preferito o un piatto di pesce che ami?",
+     "c": "Spremi del limone su un pizzico di sale marino e annusalo: un'idea della freschezza atlantica dell'Albariño."
+    },
+    "pt": {
+     "t": "Alvarinho e Albariño",
+     "g": "Descobre o Alvarinho e o Albariño, brancos atlânticos frescos do norte de Portugal e da Galiza.",
+     "p": [
+      "É uma só casta com dois nomes: Alvarinho em Portugal e Albariño em Espanha.",
+      "Monção e Melgaço, na região dos Vinhos Verdes, e as Rías Baixas, na Galiza, são as suas casas clássicas.",
+      "Espera pêssego, citrinos e uma frescura salina, de brisa do mar, que adora marisco."
+     ],
+     "q": "Tens um sítio de praia preferido ou um prato de marisco favorito?",
+     "c": "Espreme limão sobre uma pitada de sal marinho e cheira: uma ideia da frescura atlântica do Alvarinho."
+    },
+    "pt_BR": {
+     "t": "Alvarinho e Albariño",
+     "g": "Descubra o Alvarinho e o Albariño, brancos atlânticos frescos do norte de Portugal e da Galícia.",
+     "p": [
+      "É uma só uva com dois nomes: Alvarinho em Portugal e Albariño na Espanha.",
+      "Monção e Melgaço, na região dos Vinhos Verdes, e as Rías Baixas, na Galícia, são suas casas clássicas.",
+      "Espere pêssego, cítricos e um frescor salino, de brisa do mar, que combina muito com frutos do mar."
+     ],
+     "q": "Você tem uma praia favorita ou um prato de frutos do mar preferido?",
+     "c": "Esprema limão sobre uma pitada de sal marinho e cheire: uma ideia do frescor atlântico do Alvarinho."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Viognier",
+     "g": "Get to know Viognier, a fragrant white with apricot and blossom notes from the Rhône.",
+     "p": [
+      "Viognier is famous in Condrieu in the northern Rhône, where it nearly disappeared in the past.",
+      "It shows apricot, peach, honeysuckle and violet, usually with soft acidity and a rich texture.",
+      "In Côte-Rôtie, a small amount is sometimes blended with Syrah to lift the aroma of the red wine."
+     ],
+     "q": "Which fruit smells best to you when it is perfectly ripe?",
+     "c": "Smell a ripe apricot or peach today and notice how much of its flavour comes through the nose."
+    },
+    "de": {
+     "t": "Viognier",
+     "g": "Lerne Viognier kennen, einen duftigen Weißen mit Aprikosen- und Blütennoten von der Rhône.",
+     "p": [
+      "Viognier ist berühmt in Condrieu an der nördlichen Rhône, wo die Sorte früher fast verschwunden wäre.",
+      "Sie zeigt Aprikose, Pfirsich, Geißblatt und Veilchen, meist mit milder Säure und reicher Textur.",
+      "In Côte-Rôtie wird manchmal etwas Viognier mit Syrah verschnitten, um den Duft des Rotweins zu heben."
+     ],
+     "q": "Welche Frucht riecht für dich am besten, wenn sie perfekt reif ist?",
+     "c": "Riech heute an einer reifen Aprikose oder einem Pfirsich und merke, wie viel Geschmack über die Nase kommt."
+    },
+    "es": {
+     "t": "Viognier",
+     "g": "Conoce la Viognier, una blanca perfumada con notas de albaricoque y flores, originaria del Ródano.",
+     "p": [
+      "La Viognier es famosa en Condrieu, en el norte del Ródano, donde estuvo a punto de desaparecer.",
+      "Muestra albaricoque, melocotón, madreselva y violeta, con acidez suave y textura rica.",
+      "En Côte-Rôtie a veces se mezcla un poco con Syrah para realzar el aroma del tinto."
+     ],
+     "q": "¿Qué fruta te huele mejor cuando está en su punto perfecto?",
+     "c": "Huele hoy un albaricoque o un melocotón maduro y fíjate en cuánto sabor llega por la nariz."
+    },
+    "fr": {
+     "t": "Viognier",
+     "g": "Découvre le viognier, un blanc parfumé aux notes d'abricot et de fleurs, venu du Rhône.",
+     "p": [
+      "Le viognier est célèbre à Condrieu, dans le Rhône nord, où il a failli disparaître autrefois.",
+      "Il offre abricot, pêche, chèvrefeuille et violette, avec une acidité douce et une texture riche.",
+      "À Côte-Rôtie, on l'assemble parfois en petite quantité à la syrah pour exalter le parfum du rouge."
+     ],
+     "q": "Quel fruit sent le meilleur pour toi quand il est parfaitement mûr ?",
+     "c": "Sens aujourd'hui un abricot ou une pêche bien mûrs et remarque combien de saveur passe par le nez."
+    },
+    "it": {
+     "t": "Viognier",
+     "g": "Conosci il Viognier, un bianco profumato con note di albicocca e fiori, originario del Rodano.",
+     "p": [
+      "Il Viognier è famoso a Condrieu, nel Rodano settentrionale, dove in passato rischiò di scomparire.",
+      "Mostra albicocca, pesca, caprifoglio e violetta, con acidità morbida e consistenza ricca.",
+      "A Côte-Rôtie una piccola quota si unisce talvolta al Syrah per esaltare il profumo del rosso."
+     ],
+     "q": "Quale frutto ha per te il profumo migliore quando è perfettamente maturo?",
+     "c": "Annusa oggi un'albicocca o una pesca matura e nota quanto sapore arriva attraverso il naso."
+    },
+    "pt": {
+     "t": "Viognier",
+     "g": "Conhece a Viognier, uma branca perfumada com notas de damasco e flores, do Ródano.",
+     "p": [
+      "A Viognier é famosa em Condrieu, no norte do Ródano, onde esteve perto de desaparecer no passado.",
+      "Mostra damasco, pêssego, madressilva e violeta, com acidez suave e textura rica.",
+      "Em Côte-Rôtie, por vezes junta-se um pouco à Syrah para realçar o aroma do tinto."
+     ],
+     "q": "Que fruta te cheira melhor quando está perfeitamente madura?",
+     "c": "Cheira hoje um damasco ou um pêssego maduro e repara em quanto sabor chega pelo nariz."
+    },
+    "pt_BR": {
+     "t": "Viognier",
+     "g": "Conheça a Viognier, uma branca perfumada com notas de damasco e flores, do Rhône.",
+     "p": [
+      "A Viognier é famosa em Condrieu, no norte do Rhône, onde quase desapareceu no passado.",
+      "Ela mostra damasco, pêssego, madressilva e violeta, com acidez suave e textura rica.",
+      "Em Côte-Rôtie, às vezes um pouco dela entra no corte com a Syrah para realçar o aroma do tinto."
+     ],
+     "q": "Qual fruta tem o melhor cheiro para você quando está perfeitamente madura?",
+     "c": "Cheire hoje um damasco ou um pêssego maduro e repare em quanto sabor chega pelo nariz."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Local grapes worth knowing",
+     "g": "Meet four distinctive grapes: Assyrtiko, Grüner Veltliner, Touriga Nacional and Carménère.",
+     "p": [
+      "Assyrtiko from the Greek island of Santorini gives crisp, mineral whites from very old vines.",
+      "Grüner Veltliner is Austria's signature white, with citrus and a typical white pepper note.",
+      "Touriga Nacional is a star of Portugal's Douro, and Carménère, once lost in France, became Chile's own red."
+     ],
+     "q": "Is there a local food or product from your region that you are proud of?",
+     "c": "Pick one of these four grapes and find its home region on a map."
+    },
+    "de": {
+     "t": "Lokale Rebsorten zum Kennen",
+     "g": "Lerne vier besondere Sorten kennen: Assyrtiko, Grüner Veltliner, Touriga Nacional und Carménère.",
+     "p": [
+      "Assyrtiko von der griechischen Insel Santorin ergibt frische, mineralische Weißweine von sehr alten Reben.",
+      "Grüner Veltliner ist Österreichs typischer Weißer, mit Zitrus und einer typischen weißen Pfeffernote.",
+      "Touriga Nacional ist ein Star des Douro, und Carménère, in Frankreich fast verloren, wurde Chiles eigene Rotweinsorte."
+     ],
+     "q": "Gibt es ein Lebensmittel oder Produkt aus deiner Region, auf das du stolz bist?",
+     "c": "Wähle eine dieser vier Sorten und finde ihre Heimatregion auf einer Karte."
+    },
+    "es": {
+     "t": "Uvas locales que conocer",
+     "g": "Conoce cuatro uvas singulares: Assyrtiko, Grüner Veltliner, Touriga Nacional y Carménère.",
+     "p": [
+      "La Assyrtiko de la isla griega de Santorini da blancos frescos y minerales de viñas muy viejas.",
+      "La Grüner Veltliner es la blanca emblema de Austria, con cítricos y una típica nota de pimienta blanca.",
+      "La Touriga Nacional brilla en el Duero portugués, y la Carménère, casi perdida en Francia, es hoy la tinta de Chile."
+     ],
+     "q": "¿Hay algún alimento o producto de tu región del que te sientas orgulloso?",
+     "c": "Elige una de estas cuatro uvas y busca su región de origen en un mapa."
+    },
+    "fr": {
+     "t": "Cépages locaux à connaître",
+     "g": "Découvre quatre cépages singuliers : assyrtiko, grüner veltliner, touriga nacional et carménère.",
+     "p": [
+      "L'assyrtiko de l'île grecque de Santorin donne des blancs vifs et minéraux issus de très vieilles vignes.",
+      "Le grüner veltliner est le blanc emblématique de l'Autriche, aux agrumes et à la note de poivre blanc.",
+      "Le touriga nacional brille dans le Douro, et le carménère, presque disparu en France, est devenu le rouge du Chili."
+     ],
+     "q": "Y a-t-il un produit de ta région dont tu es fier ?",
+     "c": "Choisis l'un de ces quatre cépages et trouve sa région d'origine sur une carte."
+    },
+    "it": {
+     "t": "Vitigni locali da conoscere",
+     "g": "Conosci quattro vitigni particolari: Assyrtiko, Grüner Veltliner, Touriga Nacional e Carménère.",
+     "p": [
+      "L'Assyrtiko dell'isola greca di Santorini dà bianchi freschi e minerali da viti molto vecchie.",
+      "Il Grüner Veltliner è il bianco simbolo dell'Austria, con agrumi e una tipica nota di pepe bianco.",
+      "La Touriga Nacional è una stella del Douro, e il Carménère, quasi perduto in Francia, è diventato il rosso del Cile."
+     ],
+     "q": "C'è un cibo o un prodotto della tua zona di cui vai fiero?",
+     "c": "Scegli uno di questi quattro vitigni e trova la sua regione d'origine su una carta."
+    },
+    "pt": {
+     "t": "Castas locais a conhecer",
+     "g": "Conhece quatro castas singulares: Assyrtiko, Grüner Veltliner, Touriga Nacional e Carménère.",
+     "p": [
+      "A Assyrtiko da ilha grega de Santorini dá brancos frescos e minerais de vinhas muito velhas.",
+      "A Grüner Veltliner é a branca emblemática da Áustria, com citrinos e uma típica nota de pimenta branca.",
+      "A Touriga Nacional é uma estrela do Douro, e a Carménère, quase perdida em França, tornou-se a tinta do Chile."
+     ],
+     "q": "Há algum alimento ou produto da tua região de que te orgulhes?",
+     "c": "Escolhe uma destas quatro castas e encontra a sua região de origem num mapa."
+    },
+    "pt_BR": {
+     "t": "Uvas locais para conhecer",
+     "g": "Conheça quatro uvas singulares: Assyrtiko, Grüner Veltliner, Touriga Nacional e Carménère.",
+     "p": [
+      "A Assyrtiko da ilha grega de Santorini dá brancos frescos e minerais de vinhas muito velhas.",
+      "A Grüner Veltliner é a branca símbolo da Áustria, com cítricos e uma típica nota de pimenta-branca.",
+      "A Touriga Nacional é estrela do Douro, e a Carménère, quase perdida na França, virou a tinta do Chile."
+     ],
+     "q": "Existe algum alimento ou produto da sua região de que você se orgulha?",
+     "c": "Escolha uma dessas quatro uvas e encontre a região de origem dela em um mapa."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: grape tour",
+     "g": "Look back at the grapes from days 11 to 29 and choose the ones that intrigue you most.",
+     "p": [
+      "Reds ranged from structured Cabernet and Nebbiolo to softer Merlot and delicate Pinot Noir.",
+      "Whites ranged from crisp Sauvignon Blanc and Riesling to rich Chardonnay and perfumed Viognier.",
+      "Many grapes travel under two names, like Syrah and Shiraz or Albariño and Alvarinho."
+     ],
+     "q": "Which three grapes from this tour would you most like to explore further, and why?",
+     "c": "Make a mini map: write five grapes and next to each one its most famous region and one aroma."
+    },
+    "de": {
+     "t": "Rückblick: Rebsortenreise",
+     "g": "Blicke auf die Rebsorten der Tage 11 bis 29 zurück und wähle die, die dich am meisten reizen.",
+     "p": [
+      "Bei den Roten reichte es vom strukturierten Cabernet und Nebbiolo bis zum weichen Merlot und zarten Pinot Noir.",
+      "Bei den Weißen vom frischen Sauvignon Blanc und Riesling bis zum vollen Chardonnay und duftigen Viognier.",
+      "Viele Sorten tragen zwei Namen, etwa Syrah und Shiraz oder Albariño und Alvarinho."
+     ],
+     "q": "Welche drei Sorten dieser Reise möchtest du am liebsten näher entdecken, und warum?",
+     "c": "Mach eine Mini-Karte: Schreib fünf Sorten auf und daneben jeweils ihre bekannteste Region und ein Aroma."
+    },
+    "es": {
+     "t": "Repaso: viaje por las uvas",
+     "g": "Repasa las uvas de los días 11 a 29 y elige las que más curiosidad te despiertan.",
+     "p": [
+      "Entre las tintas, de la estructurada Cabernet y la Nebbiolo a la suave Merlot y la delicada Pinot Noir.",
+      "Entre las blancas, de la fresca Sauvignon Blanc y la Riesling a la rica Chardonnay y la perfumada Viognier.",
+      "Muchas uvas viajan con dos nombres, como Syrah y Shiraz o Albariño y Alvarinho."
+     ],
+     "q": "¿Qué tres uvas de este viaje te gustaría explorar más, y por qué?",
+     "c": "Haz un minimapa: escribe cinco uvas y junto a cada una su región más famosa y un aroma."
+    },
+    "fr": {
+     "t": "Révision : tour des cépages",
+     "g": "Reviens sur les cépages des jours 11 à 29 et choisis ceux qui t'intriguent le plus.",
+     "p": [
+      "Côté rouges, du cabernet et du nebbiolo structurés au merlot souple et au pinot noir délicat.",
+      "Côté blancs, du sauvignon et du riesling vifs au chardonnay riche et au viognier parfumé.",
+      "Beaucoup de cépages voyagent sous deux noms, comme syrah et shiraz ou albariño et alvarinho."
+     ],
+     "q": "Quels trois cépages de ce tour aimerais-tu le plus explorer, et pourquoi ?",
+     "c": "Fais une mini-carte : écris cinq cépages et, à côté de chacun, sa région la plus célèbre et un arôme."
+    },
+    "it": {
+     "t": "Ripasso: giro dei vitigni",
+     "g": "Ripassa i vitigni dei giorni dall'11 al 29 e scegli quelli che ti incuriosiscono di più.",
+     "p": [
+      "Tra i rossi, dal Cabernet e dal Nebbiolo strutturati al Merlot morbido e al delicato Pinot Nero.",
+      "Tra i bianchi, dal fresco Sauvignon e dal Riesling al ricco Chardonnay e al profumato Viognier.",
+      "Molte uve viaggiano con due nomi, come Syrah e Shiraz o Albariño e Alvarinho."
+     ],
+     "q": "Quali tre vitigni di questo giro ti piacerebbe approfondire, e perché?",
+     "c": "Crea una mini mappa: scrivi cinque vitigni e accanto a ciascuno la zona più famosa e un profumo."
+    },
+    "pt": {
+     "t": "Revisão: viagem pelas castas",
+     "g": "Revê as castas dos dias 11 a 29 e escolhe as que mais te despertam curiosidade.",
+     "p": [
+      "Nos tintos, da estruturada Cabernet e Nebbiolo à macia Merlot e à delicada Pinot Noir.",
+      "Nos brancos, da fresca Sauvignon Blanc e Riesling à rica Chardonnay e à perfumada Viognier.",
+      "Muitas castas viajam com dois nomes, como Syrah e Shiraz ou Alvarinho e Albariño."
+     ],
+     "q": "Que três castas desta viagem gostavas mais de explorar, e porquê?",
+     "c": "Faz um minimapa: escreve cinco castas e, ao lado de cada uma, a região mais famosa e um aroma."
+    },
+    "pt_BR": {
+     "t": "Revisão: viagem pelas uvas",
+     "g": "Revise as uvas dos dias 11 a 29 e escolha as que mais despertam sua curiosidade.",
+     "p": [
+      "Nos tintos, da estruturada Cabernet e da Nebbiolo à macia Merlot e à delicada Pinot Noir.",
+      "Nos brancos, da fresca Sauvignon Blanc e da Riesling à rica Chardonnay e à perfumada Viognier.",
+      "Muitas uvas viajam com dois nomes, como Syrah e Shiraz ou Alvarinho e Albariño."
+     ],
+     "q": "Quais três uvas dessa viagem você mais gostaria de explorar, e por quê?",
+     "c": "Faça um minimapa: escreva cinco uvas e, ao lado de cada uma, a região mais famosa e um aroma."
+    }
+   }
+  }
+ ]
+}

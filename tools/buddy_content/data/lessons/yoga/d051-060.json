@@ -1,0 +1,835 @@
+{
+ "topic": "yoga",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sun salutation A, part 1",
+     "g": "Learn the opening movements of Sun salutation A.",
+     "p": [
+      "Start in mountain pose; breathe in and sweep the arms up overhead.",
+      "Breathe out and fold forward from the hips, bending the knees as much as you like.",
+      "Breathe in to a halfway lift with a long back, then breathe out to fold again."
+     ],
+     "q": "Sun salutations are often done in the morning: when would you most like to practise them?",
+     "c": "Repeat these opening moves five times: arms up, fold, halfway lift, fold, and back up to mountain."
+    },
+    "de": {
+     "t": "Sonnengruß A, Teil 1",
+     "g": "Lerne die ersten Bewegungen des Sonnengrußes A.",
+     "p": [
+      "Beginne in der Berghaltung; atme ein und führ die Arme in einem Bogen über den Kopf.",
+      "Atme aus und beug dich aus der Hüfte nach vorn, die Knie so weit gebeugt wie du magst.",
+      "Atme ein in die halbe Aufrichtung mit langem Rücken, atme aus und beug dich wieder."
+     ],
+     "q": "Sonnengrüße werden oft morgens geübt: Wann würdest du sie am liebsten machen?",
+     "c": "Wiederhole diese Anfangsbewegungen fünfmal: Arme hoch, Vorbeuge, halbe Aufrichtung, Vorbeuge, zurück in den Berg."
+    },
+    "es": {
+     "t": "Saludo al sol A, parte 1",
+     "g": "Aprende los movimientos iniciales del saludo al sol A.",
+     "p": [
+      "Empieza en la montaña; inhala y lleva los brazos por encima de la cabeza.",
+      "Exhala e inclínate desde la cadera, flexionando las rodillas lo que quieras.",
+      "Inhala a la media elevación con la espalda larga y exhala para volver a la flexión."
+     ],
+     "q": "Los saludos al sol se suelen hacer por la mañana: ¿cuándo te gustaría más practicarlos?",
+     "c": "Repite estos movimientos cinco veces: brazos arriba, flexión, media elevación, flexión y de vuelta a la montaña."
+    },
+    "fr": {
+     "t": "La salutation au soleil A, partie 1",
+     "g": "Apprendre les premiers mouvements de la salutation au soleil A.",
+     "p": [
+      "Commence en montagne ; inspire et lève les bras en arc au-dessus de la tête.",
+      "Expire et penche-toi depuis les hanches, en pliant les genoux autant que tu veux.",
+      "Inspire en demi-élévation, dos long, puis expire pour replonger dans la flexion."
+     ],
+     "q": "Les salutations au soleil se font souvent le matin : à quel moment aimerais-tu les pratiquer ?",
+     "c": "Répète ces premiers mouvements cinq fois : bras en haut, flexion, demi-élévation, flexion, retour en montagne."
+    },
+    "it": {
+     "t": "Saluto al sole A, parte 1",
+     "g": "Imparare i movimenti iniziali del saluto al sole A.",
+     "p": [
+      "Parti dalla montagna; inspira e porta le braccia in alto sopra la testa.",
+      "Espira e piegati in avanti dalle anche, flettendo le ginocchia quanto vuoi.",
+      "Inspira nella mezza elevazione a schiena lunga, poi espira e torna nel piegamento."
+     ],
+     "q": "I saluti al sole si fanno spesso al mattino: quando ti piacerebbe di più praticarli?",
+     "c": "Ripeti questi movimenti cinque volte: braccia in alto, piegamento, mezza elevazione, piegamento e ritorno alla montagna."
+    },
+    "pt": {
+     "t": "Saudação ao sol A, parte 1",
+     "g": "Aprender os movimentos iniciais da saudação ao sol A.",
+     "p": [
+      "Começa na montanha; inspira e leva os braços por cima da cabeça.",
+      "Expira e inclina-te a partir das ancas, dobrando os joelhos o quanto quiseres.",
+      "Inspira para a meia elevação com as costas longas e expira para voltar à flexão."
+     ],
+     "q": "As saudações ao sol costumam fazer-se de manhã: quando gostavas mais de as praticar?",
+     "c": "Repete estes movimentos cinco vezes: braços para cima, flexão, meia elevação, flexão e regresso à montanha."
+    },
+    "pt_BR": {
+     "t": "Saudação ao sol A, parte 1",
+     "g": "Aprender os movimentos iniciais da saudação ao sol A.",
+     "p": [
+      "Comece na montanha; inspire e leve os braços para cima da cabeça.",
+      "Expire e incline-se a partir do quadril, dobrando os joelhos o quanto quiser.",
+      "Inspire para a meia elevação com as costas longas e expire para voltar à flexão."
+     ],
+     "q": "As saudações ao sol costumam ser feitas de manhã: quando você gostaria mais de praticar?",
+     "c": "Repita esses movimentos cinco vezes: braços para cima, flexão, meia elevação, flexão e volta à montanha."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sun salutation A, part 2",
+     "g": "Learn the middle of Sun salutation A: plank, lowering, lifting the chest and downward dog.",
+     "p": [
+      "From the halfway lift, place the hands down and step back to plank, knees down if you like.",
+      "Breathe out and lower gently to the floor, then breathe in and lift the chest into a small cobra.",
+      "Breathe out and press back into downward dog, staying for a few calm breaths."
+     ],
+     "q": "Which part of this sequence do you think will be easiest for you, and which the most challenging?",
+     "c": "Practise part 2 three times from tabletop: plank, lower down, small cobra, downward dog."
+    },
+    "de": {
+     "t": "Sonnengruß A, Teil 2",
+     "g": "Lerne die Mitte des Sonnengrußes A: Brett, Absenken, Brust heben und herabschauender Hund.",
+     "p": [
+      "Setz aus der halben Aufrichtung die Hände ab und tritt zurück ins Brett, gern mit Knien am Boden.",
+      "Atme aus und senk dich sanft zum Boden, atme ein und heb die Brust in eine kleine Kobra.",
+      "Atme aus und schieb dich zurück in den Hund, wo du ein paar ruhige Atemzüge bleibst."
+     ],
+     "q": "Welcher Teil dieser Abfolge wird dir wohl am leichtesten fallen und welcher am schwersten?",
+     "c": "Übe Teil 2 dreimal aus dem Vierfüßlerstand: Brett, absenken, kleine Kobra, Hund."
+    },
+    "es": {
+     "t": "Saludo al sol A, parte 2",
+     "g": "Aprende el centro del saludo al sol A: plancha, bajar, elevar el pecho y perro boca abajo.",
+     "p": [
+      "Desde la media elevación, apoya las manos y da un paso atrás a la plancha, con las rodillas apoyadas si quieres.",
+      "Exhala y baja suavemente al suelo; inhala y eleva el pecho en una cobra pequeña.",
+      "Exhala y empuja hacia atrás al perro boca abajo, quedándote unas respiraciones tranquilas."
+     ],
+     "q": "¿Qué parte de esta secuencia crees que te resultará más fácil y cuál más desafiante?",
+     "c": "Practica la parte 2 tres veces desde la mesa: plancha, bajar, cobra pequeña y perro boca abajo."
+    },
+    "fr": {
+     "t": "La salutation au soleil A, partie 2",
+     "g": "Apprendre le milieu de la salutation A : planche, descente, ouverture de la poitrine et chien.",
+     "p": [
+      "Depuis la demi-élévation, pose les mains et recule en planche, genoux au sol si tu veux.",
+      "Expire et descends doucement au sol, puis inspire et soulève la poitrine en petit cobra.",
+      "Expire et repousse-toi en chien tête en bas, et restes-y quelques respirations calmes."
+     ],
+     "q": "Quelle partie de cette séquence sera la plus facile pour toi, selon toi, et laquelle la plus difficile ?",
+     "c": "Pratique la partie 2 trois fois depuis la table : planche, descente, petit cobra, chien tête en bas."
+    },
+    "it": {
+     "t": "Saluto al sole A, parte 2",
+     "g": "Imparare la parte centrale del saluto al sole A: plank, discesa, petto in alto e cane a testa in giù.",
+     "p": [
+      "Dalla mezza elevazione appoggia le mani e fai un passo indietro nel plank, con le ginocchia a terra se vuoi.",
+      "Espira e scendi dolcemente a terra, poi inspira e solleva il petto in un piccolo cobra.",
+      "Espira e spingi indietro nel cane a testa in giù, restando per qualche respiro tranquillo."
+     ],
+     "q": "Quale parte di questa sequenza pensi sarà più facile per te e quale più impegnativa?",
+     "c": "Pratica la parte 2 tre volte partendo dal tavolo: plank, discesa, piccolo cobra e cane."
+    },
+    "pt": {
+     "t": "Saudação ao sol A, parte 2",
+     "g": "Aprender o meio da saudação ao sol A: prancha, descida, elevar o peito e cão olhando para baixo.",
+     "p": [
+      "Da meia elevação, apoia as mãos e dá um passo atrás para a prancha, com os joelhos no chão se quiseres.",
+      "Expira e desce suavemente até ao chão; inspira e levanta o peito numa cobra pequena.",
+      "Expira e empurra para trás para o cão, ficando algumas respirações calmas."
+     ],
+     "q": "Que parte desta sequência achas que vai ser mais fácil para ti e qual a mais desafiante?",
+     "c": "Pratica a parte 2 três vezes a partir da mesa: prancha, descida, cobra pequena e cão."
+    },
+    "pt_BR": {
+     "t": "Saudação ao sol A, parte 2",
+     "g": "Aprender o meio da saudação ao sol A: prancha, descida, elevar o peito e cachorro olhando para baixo.",
+     "p": [
+      "Da meia elevação, apoie as mãos e dê um passo para trás na prancha, com os joelhos no chão se quiser.",
+      "Expire e desça suavemente até o chão; inspire e erga o peito numa cobra pequena.",
+      "Expire e empurre para trás no cachorro, ficando ali por algumas respirações calmas."
+     ],
+     "q": "Qual parte dessa sequência você acha que vai ser mais fácil e qual vai ser mais desafiadora?",
+     "c": "Pratique a parte 2 três vezes a partir da mesa: prancha, descida, cobra pequena e cachorro."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plank pose",
+     "g": "Build strength by holding a straight line from head to heels.",
+     "p": [
+      "Place the hands under the shoulders and step the feet back, making one long line from head to heels.",
+      "Gently draw the belly in and press the floor away so the shoulders do not sink.",
+      "Lowering the knees to the floor is a great option that keeps the same long line from head to knees."
+     ],
+     "q": "How did plank feel in yesterday's sun salutation practice?",
+     "c": "Hold plank for three breaths, rest in child's pose, and repeat three times, knees down if you prefer."
+    },
+    "de": {
+     "t": "Brett",
+     "g": "Bau Kraft auf, indem du eine gerade Linie vom Kopf bis zu den Fersen hältst.",
+     "p": [
+      "Setz die Hände unter die Schultern und tritt mit den Füßen zurück: eine lange Linie vom Kopf bis zu den Fersen.",
+      "Zieh den Bauch sanft ein und drück den Boden weg, damit die Schultern nicht durchhängen.",
+      "Die Knie abzusetzen ist eine tolle Variante, mit derselben langen Linie vom Kopf bis zu den Knien."
+     ],
+     "q": "Wie hat sich das Brett gestern im Sonnengruß angefühlt?",
+     "c": "Halte das Brett drei Atemzüge, ruh in der Kindhaltung und wiederhole das dreimal, gern mit Knien am Boden."
+    },
+    "es": {
+     "t": "La plancha",
+     "g": "Gana fuerza manteniendo una línea recta de la cabeza a los talones.",
+     "p": [
+      "Coloca las manos bajo los hombros y lleva los pies atrás, formando una línea larga de la cabeza a los talones.",
+      "Recoge suavemente el abdomen y empuja el suelo para que los hombros no se hundan.",
+      "Apoyar las rodillas es una gran opción que mantiene la misma línea larga de la cabeza a las rodillas."
+     ],
+     "q": "¿Cómo te sentiste en la plancha durante el saludo al sol de ayer?",
+     "c": "Mantén la plancha tres respiraciones, descansa en la postura del niño y repite tres veces, con rodillas apoyadas si prefieres."
+    },
+    "fr": {
+     "t": "La planche",
+     "g": "Se renforcer en tenant une ligne droite de la tête aux talons.",
+     "p": [
+      "Mains sous les épaules, recule les pieds pour former une longue ligne de la tête aux talons.",
+      "Rentre doucement le ventre et repousse le sol pour que les épaules ne s'affaissent pas.",
+      "Poser les genoux au sol est une très bonne option qui garde la même ligne de la tête aux genoux."
+     ],
+     "q": "Comment as-tu vécu la planche hier dans la salutation au soleil ?",
+     "c": "Tiens la planche trois respirations, repose-toi dans l'enfant et recommence trois fois, genoux au sol si tu préfères."
+    },
+    "it": {
+     "t": "Il plank",
+     "g": "Costruire forza tenendo una linea dritta dalla testa ai talloni.",
+     "p": [
+      "Mani sotto le spalle e piedi indietro, così da formare una linea lunga dalla testa ai talloni.",
+      "Richiama dolcemente la pancia e spingi via il pavimento perché le spalle non cedano.",
+      "Appoggiare le ginocchia è un'ottima opzione che mantiene la stessa linea dalla testa alle ginocchia."
+     ],
+     "q": "Come ti sei sentito nel plank durante il saluto al sole di ieri?",
+     "c": "Tieni il plank per tre respiri, riposa nel bambino e ripeti tre volte, con le ginocchia a terra se preferisci."
+    },
+    "pt": {
+     "t": "A prancha",
+     "g": "Ganhar força mantendo uma linha reta da cabeça aos calcanhares.",
+     "p": [
+      "Mãos debaixo dos ombros e pés atrás, formando uma linha longa da cabeça aos calcanhares.",
+      "Recolhe suavemente a barriga e empurra o chão para que os ombros não afundem.",
+      "Apoiar os joelhos no chão é uma ótima opção que mantém a mesma linha da cabeça aos joelhos."
+     ],
+     "q": "Como te sentiste na prancha durante a saudação ao sol de ontem?",
+     "c": "Fica na prancha três respirações, descansa na criança e repete três vezes, com os joelhos no chão se preferires."
+    },
+    "pt_BR": {
+     "t": "Prancha",
+     "g": "Ganhar força mantendo uma linha reta da cabeça aos calcanhares.",
+     "p": [
+      "Mãos embaixo dos ombros e pés para trás, formando uma linha longa da cabeça aos calcanhares.",
+      "Recolha suavemente a barriga e empurre o chão para os ombros não afundarem.",
+      "Apoiar os joelhos no chão é uma ótima opção que mantém a mesma linha da cabeça aos joelhos."
+     ],
+     "q": "Como você se sentiu na prancha durante a saudação ao sol de ontem?",
+     "c": "Fique na prancha por três respirações, descanse na criança e repita três vezes, com joelhos no chão se preferir."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knees-chest-chin",
+     "g": "Learn a gentle way to lower to the floor that builds strength step by step.",
+     "p": [
+      "From plank, lower the knees to the floor first, keeping the hips lifted.",
+      "Bend the elbows back alongside the ribs and lower the chest and chin between the hands.",
+      "Then lower the rest of the body down: it is a great alternative to a full plank lowering."
+     ],
+     "q": "What helps you be patient when you are learning something new and a bit challenging?",
+     "c": "Practise knees-chest-chin three times, moving slowly and keeping the elbows close to your sides."
+    },
+    "de": {
+     "t": "Knie-Brust-Kinn",
+     "g": "Lerne eine sanfte Art, dich zum Boden zu senken, die Schritt für Schritt Kraft aufbaut.",
+     "p": [
+      "Setz aus dem Brett zuerst die Knie ab und lass das Becken dabei angehoben.",
+      "Beug die Ellbogen nah an den Rippen nach hinten und senk Brust und Kinn zwischen die Hände.",
+      "Leg dann den restlichen Körper ab: eine tolle Alternative zum Absenken aus dem vollen Brett."
+     ],
+     "q": "Was hilft dir, geduldig zu bleiben, wenn du etwas Neues und etwas Forderndes lernst?",
+     "c": "Übe Knie-Brust-Kinn dreimal, langsam und mit den Ellbogen nah am Körper."
+    },
+    "es": {
+     "t": "Rodillas-pecho-barbilla",
+     "g": "Aprende una forma suave de bajar al suelo que construye fuerza paso a paso.",
+     "p": [
+      "Desde la plancha, apoya primero las rodillas en el suelo manteniendo la cadera elevada.",
+      "Flexiona los codos hacia atrás junto a las costillas y baja el pecho y la barbilla entre las manos.",
+      "Después baja el resto del cuerpo: es una gran alternativa a bajar desde la plancha completa."
+     ],
+     "q": "¿Qué te ayuda a ser paciente cuando aprendes algo nuevo y un poco desafiante?",
+     "c": "Practica rodillas-pecho-barbilla tres veces, despacio y con los codos pegados al cuerpo."
+    },
+    "fr": {
+     "t": "Genoux-poitrine-menton",
+     "g": "Apprendre une façon douce de descendre au sol qui renforce pas à pas.",
+     "p": [
+      "Depuis la planche, pose d'abord les genoux au sol en gardant les hanches levées.",
+      "Plie les coudes vers l'arrière, le long des côtes, et descends poitrine et menton entre les mains.",
+      "Pose ensuite le reste du corps : c'est une belle alternative à la descente depuis la planche complète."
+     ],
+     "q": "Qu'est-ce qui t'aide à rester patient quand tu apprends quelque chose de nouveau et un peu difficile ?",
+     "c": "Pratique genoux-poitrine-menton trois fois, lentement, coudes près du corps."
+    },
+    "it": {
+     "t": "Ginocchia-petto-mento",
+     "g": "Imparare un modo dolce di scendere a terra che costruisce forza passo dopo passo.",
+     "p": [
+      "Dal plank appoggia prima le ginocchia a terra, tenendo il bacino sollevato.",
+      "Piega i gomiti indietro lungo le costole e porta petto e mento a terra tra le mani.",
+      "Poi appoggia il resto del corpo: è un'ottima alternativa alla discesa dal plank completo."
+     ],
+     "q": "Cosa ti aiuta a essere paziente quando impari qualcosa di nuovo e un po' impegnativo?",
+     "c": "Pratica ginocchia-petto-mento tre volte, lentamente e con i gomiti vicini al corpo."
+    },
+    "pt": {
+     "t": "Joelhos-peito-queixo",
+     "g": "Aprender uma forma suave de descer até ao chão que constrói força passo a passo.",
+     "p": [
+      "Da prancha, apoia primeiro os joelhos no chão, mantendo as ancas levantadas.",
+      "Dobra os cotovelos para trás junto às costelas e desce o peito e o queixo entre as mãos.",
+      "Depois pousa o resto do corpo: é uma ótima alternativa à descida a partir da prancha completa."
+     ],
+     "q": "O que te ajuda a ser paciente quando aprendes algo novo e um pouco desafiante?",
+     "c": "Pratica joelhos-peito-queixo três vezes, devagar e com os cotovelos junto ao corpo."
+    },
+    "pt_BR": {
+     "t": "Joelhos-peito-queixo",
+     "g": "Aprender um jeito suave de descer até o chão que constrói força passo a passo.",
+     "p": [
+      "Da prancha, apoie primeiro os joelhos no chão, mantendo o quadril elevado.",
+      "Dobre os cotovelos para trás junto às costelas e desça o peito e o queixo entre as mãos.",
+      "Depois apoie o resto do corpo: é uma ótima alternativa à descida a partir da prancha completa."
+     ],
+     "q": "O que ajuda você a ter paciência quando aprende algo novo e um pouco desafiador?",
+     "c": "Pratique joelhos-peito-queixo três vezes, devagar e com os cotovelos junto ao corpo."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cobra pose",
+     "g": "Lift the chest from the floor with bent elbows and relaxed shoulders.",
+     "p": [
+      "Lie on your belly with hands under the shoulders and the tops of the feet resting on the floor.",
+      "Breathe in and gently lift the head and chest, keeping the elbows bent and close to the body.",
+      "Lift only as high as feels easy, using your back more than your arms, with the neck long."
+     ],
+     "q": "How does your back feel after sitting for long periods, and how might cobra help it feel more awake?",
+     "c": "Practise cobra five times after knees-chest-chin, lifting on the inhale and lowering on the exhale."
+    },
+    "de": {
+     "t": "Kobra",
+     "g": "Heb die Brust vom Boden, mit gebeugten Ellbogen und lockeren Schultern.",
+     "p": [
+      "Leg dich auf den Bauch, die Hände unter den Schultern, die Fußrücken liegen auf dem Boden.",
+      "Atme ein und heb Kopf und Brust sanft an, die Ellbogen bleiben gebeugt und nah am Körper.",
+      "Heb dich nur so hoch, wie es leicht geht, eher mit dem Rücken als mit den Armen, der Nacken bleibt lang."
+     ],
+     "q": "Wie fühlt sich dein Rücken nach langem Sitzen an, und wie könnte die Kobra ihn wacher machen?",
+     "c": "Übe die Kobra fünfmal nach Knie-Brust-Kinn: einatmen zum Heben, ausatmen zum Senken."
+    },
+    "es": {
+     "t": "La postura de la cobra",
+     "g": "Eleva el pecho del suelo con los codos flexionados y los hombros relajados.",
+     "p": [
+      "Túmbate boca abajo con las manos bajo los hombros y el empeine apoyado en el suelo.",
+      "Inhala y eleva suavemente la cabeza y el pecho, con los codos flexionados y cerca del cuerpo.",
+      "Sube solo hasta donde resulte fácil, usando más la espalda que los brazos, con el cuello largo."
+     ],
+     "q": "¿Cómo sientes la espalda después de estar mucho tiempo sentado y cómo podría ayudarte la cobra?",
+     "c": "Practica la cobra cinco veces después de rodillas-pecho-barbilla: sube al inhalar y baja al exhalar."
+    },
+    "fr": {
+     "t": "La posture du cobra",
+     "g": "Soulever la poitrine du sol, coudes pliés et épaules détendues.",
+     "p": [
+      "Allonge-toi sur le ventre, mains sous les épaules, le dessus des pieds posé au sol.",
+      "Inspire et soulève doucement la tête et la poitrine, coudes pliés et près du corps.",
+      "Monte seulement aussi haut que c'est facile, avec le dos plus que les bras, nuque longue."
+     ],
+     "q": "Comment se sent ton dos après être resté longtemps assis, et comment le cobra pourrait-il le réveiller ?",
+     "c": "Pratique le cobra cinq fois après genoux-poitrine-menton : monte à l'inspiration, descends à l'expiration."
+    },
+    "it": {
+     "t": "La posizione del cobra",
+     "g": "Sollevare il petto da terra con i gomiti piegati e le spalle rilassate.",
+     "p": [
+      "Sdraiati a pancia in giù con le mani sotto le spalle e il dorso dei piedi appoggiato a terra.",
+      "Inspira e solleva dolcemente testa e petto, con i gomiti piegati e vicini al corpo.",
+      "Sali solo fin dove è facile, usando più la schiena che le braccia, con il collo lungo."
+     ],
+     "q": "Come senti la schiena dopo essere stato seduto a lungo, e come potrebbe aiutarla il cobra?",
+     "c": "Pratica il cobra cinque volte dopo ginocchia-petto-mento: sali inspirando e scendi espirando."
+    },
+    "pt": {
+     "t": "A postura da cobra",
+     "g": "Levantar o peito do chão com os cotovelos dobrados e os ombros relaxados.",
+     "p": [
+      "Deita-te de barriga para baixo, mãos debaixo dos ombros e o peito dos pés apoiado no chão.",
+      "Inspira e levanta suavemente a cabeça e o peito, com os cotovelos dobrados e junto ao corpo.",
+      "Sobe só até onde for fácil, usando mais as costas do que os braços, com o pescoço longo."
+     ],
+     "q": "Como sentes as costas depois de muito tempo sentado e como é que a cobra as poderia despertar?",
+     "c": "Pratica a cobra cinco vezes depois de joelhos-peito-queixo: sobe ao inspirar e desce ao expirar."
+    },
+    "pt_BR": {
+     "t": "Postura da cobra",
+     "g": "Erguer o peito do chão com os cotovelos dobrados e os ombros relaxados.",
+     "p": [
+      "Deite de barriga para baixo, mãos embaixo dos ombros e o peito dos pés apoiado no chão.",
+      "Inspire e erga suavemente a cabeça e o peito, com os cotovelos dobrados e junto ao corpo.",
+      "Suba só até onde for fácil, usando mais as costas que os braços, com o pescoço longo."
+     ],
+     "q": "Como você sente as costas depois de muito tempo sentado, e como a cobra poderia despertá-las?",
+     "c": "Pratique a cobra cinco vezes depois de joelhos-peito-queixo: suba ao inspirar e desça ao expirar."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Upward-facing dog",
+     "g": "Learn upward dog, and when choosing cobra instead is the better option.",
+     "p": [
+      "From lying on your belly, press into straight arms and lift the chest, with thighs off the floor.",
+      "Press the tops of the feet down, roll the shoulders back and keep the neck long.",
+      "If your lower back or wrists feel uncomfortable, cobra is a perfectly good choice in any flow."
+     ],
+     "q": "After trying cobra, are you curious about upward dog, or happy to stay with cobra for now?",
+     "c": "Try upward dog once or twice, then compare it with cobra and note which feels better today."
+    },
+    "de": {
+     "t": "Heraufschauender Hund",
+     "g": "Lerne den heraufschauenden Hund und wann die Kobra die bessere Wahl ist.",
+     "p": [
+      "Drück dich aus der Bauchlage in gestreckte Arme, heb die Brust und auch die Oberschenkel vom Boden.",
+      "Drück die Fußrücken in den Boden, roll die Schultern zurück und halte den Nacken lang.",
+      "Fühlen sich unterer Rücken oder Handgelenke unangenehm an, ist die Kobra in jedem Flow eine gute Wahl."
+     ],
+     "q": "Bist du nach der Kobra neugierig auf den heraufschauenden Hund, oder bleibst du vorerst gern bei ihr?",
+     "c": "Probier den heraufschauenden Hund ein- oder zweimal, vergleich ihn mit der Kobra und notier, was heute besser passt."
+    },
+    "es": {
+     "t": "El perro boca arriba",
+     "g": "Aprende el perro boca arriba y cuándo es mejor elegir la cobra.",
+     "p": [
+      "Desde boca abajo, empuja hasta estirar los brazos y eleva el pecho, con los muslos despegados del suelo.",
+      "Presiona el empeine contra el suelo, lleva los hombros hacia atrás y mantén el cuello largo.",
+      "Si notas molestias en la zona lumbar o las muñecas, la cobra es una opción perfecta en cualquier secuencia."
+     ],
+     "q": "Tras probar la cobra, ¿te da curiosidad el perro boca arriba o prefieres quedarte con la cobra por ahora?",
+     "c": "Prueba el perro boca arriba una o dos veces, compáralo con la cobra y anota cuál te sienta mejor hoy."
+    },
+    "fr": {
+     "t": "Le chien tête en haut",
+     "g": "Apprendre le chien tête en haut, et savoir quand le cobra est un meilleur choix.",
+     "p": [
+      "À plat ventre, pousse jusqu'à tendre les bras et soulève la poitrine, cuisses décollées du sol.",
+      "Appuie le dessus des pieds au sol, ramène les épaules vers l'arrière et garde la nuque longue.",
+      "Si le bas du dos ou les poignets sont inconfortables, le cobra est un excellent choix dans tout enchaînement."
+     ],
+     "q": "Après le cobra, es-tu curieux du chien tête en haut, ou préfères-tu rester au cobra pour l'instant ?",
+     "c": "Essaie le chien tête en haut une ou deux fois, compare-le au cobra et note ce qui te convient le mieux aujourd'hui."
+    },
+    "it": {
+     "t": "Il cane a testa in su",
+     "g": "Imparare il cane a testa in su e quando è meglio scegliere il cobra.",
+     "p": [
+      "Da pancia in giù spingi fino a distendere le braccia e solleva il petto, con le cosce staccate da terra.",
+      "Premi il dorso dei piedi a terra, porta le spalle indietro e tieni il collo lungo.",
+      "Se la zona lombare o i polsi danno fastidio, il cobra è una scelta perfetta in qualsiasi sequenza."
+     ],
+     "q": "Dopo aver provato il cobra, sei curioso del cane a testa in su o preferisci restare sul cobra per ora?",
+     "c": "Prova il cane a testa in su una o due volte, confrontalo con il cobra e annota cosa ti fa stare meglio oggi."
+    },
+    "pt": {
+     "t": "O cão olhando para cima",
+     "g": "Aprender o cão olhando para cima e quando é melhor escolher a cobra.",
+     "p": [
+      "De barriga para baixo, empurra até esticar os braços e levanta o peito, com as coxas fora do chão.",
+      "Pressiona o peito dos pés no chão, leva os ombros para trás e mantém o pescoço longo.",
+      "Se sentires desconforto na lombar ou nos pulsos, a cobra é uma ótima escolha em qualquer sequência."
+     ],
+     "q": "Depois de experimentar a cobra, tens curiosidade pelo cão olhando para cima ou preferes ficar pela cobra?",
+     "c": "Experimenta o cão olhando para cima uma ou duas vezes, compara com a cobra e anota qual te sabe melhor hoje."
+    },
+    "pt_BR": {
+     "t": "Cachorro olhando para cima",
+     "g": "Aprender o cachorro olhando para cima e quando é melhor escolher a cobra.",
+     "p": [
+      "De barriga para baixo, empurre até esticar os braços e erga o peito, com as coxas fora do chão.",
+      "Pressione o peito dos pés no chão, leve os ombros para trás e mantenha o pescoço longo.",
+      "Se sentir desconforto na lombar ou nos punhos, a cobra é uma ótima escolha em qualquer sequência."
+     ],
+     "q": "Depois de experimentar a cobra, você ficou curioso pelo cachorro para cima ou prefere ficar com a cobra?",
+     "c": "Experimente o cachorro olhando para cima uma ou duas vezes, compare com a cobra e anote qual foi melhor hoje."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flowing a full sun salutation",
+     "g": "Link every step of Sun salutation A with steady breathing.",
+     "p": [
+      "Mountain, arms up, fold, halfway lift, plank, lower down, cobra or upward dog, downward dog.",
+      "After a few breaths in downward dog, step forward, halfway lift, fold, sweep up and return to mountain.",
+      "Let one breath guide each movement and pause in child's pose whenever you need."
+     ],
+     "q": "Now that you know every step, how does it feel to put the whole sequence together?",
+     "c": "Flow through three full rounds of Sun salutation A, slowly, finishing with a minute in mountain pose."
+    },
+    "de": {
+     "t": "Ein ganzer Sonnengruß im Fluss",
+     "g": "Verbinde alle Schritte des Sonnengrußes A mit gleichmäßigem Atem.",
+     "p": [
+      "Berg, Arme hoch, Vorbeuge, halbe Aufrichtung, Brett, absenken, Kobra oder heraufschauender Hund, Hund.",
+      "Nach ein paar Atemzügen im Hund trittst du vor: halbe Aufrichtung, Vorbeuge, Arme hoch, zurück in den Berg.",
+      "Lass einen Atemzug jede Bewegung führen und pausier in der Kindhaltung, wann immer du willst."
+     ],
+     "q": "Wie fühlt es sich an, jetzt alle Schritte zur ganzen Abfolge zu verbinden?",
+     "c": "Fließ langsam durch drei ganze Runden Sonnengruß A und beende sie mit einer Minute in der Berghaltung."
+    },
+    "es": {
+     "t": "Un saludo al sol completo",
+     "g": "Une todos los pasos del saludo al sol A con una respiración constante.",
+     "p": [
+      "Montaña, brazos arriba, flexión, media elevación, plancha, bajar, cobra o perro boca arriba, perro boca abajo.",
+      "Tras unas respiraciones en el perro, camina al frente, media elevación, flexión, brazos arriba y montaña.",
+      "Deja que una respiración guíe cada movimiento y para en la postura del niño cuando lo necesites."
+     ],
+     "q": "Ahora que conoces todos los pasos, ¿qué se siente al unir la secuencia completa?",
+     "c": "Haz tres rondas completas y lentas del saludo al sol A y termina con un minuto en la montaña."
+    },
+    "fr": {
+     "t": "Une salutation au soleil complète",
+     "g": "Enchaîner chaque étape de la salutation au soleil A avec un souffle régulier.",
+     "p": [
+      "Montagne, bras en haut, flexion, demi-élévation, planche, descente, cobra ou chien tête en haut, chien tête en bas.",
+      "Après quelques respirations en chien, avance les pieds : demi-élévation, flexion, bras en haut, montagne.",
+      "Laisse une respiration guider chaque mouvement et fais une pause dans l'enfant quand tu veux."
+     ],
+     "q": "Maintenant que tu connais chaque étape, qu'est-ce que ça fait d'enchaîner la séquence entière ?",
+     "c": "Enchaîne lentement trois salutations au soleil A complètes, puis reste une minute en montagne."
+    },
+    "it": {
+     "t": "Un saluto al sole completo",
+     "g": "Unire ogni passo del saluto al sole A con un respiro costante.",
+     "p": [
+      "Montagna, braccia in alto, piegamento, mezza elevazione, plank, discesa, cobra o cane in su, cane in giù.",
+      "Dopo qualche respiro nel cane, porta avanti i piedi: mezza elevazione, piegamento, braccia in alto, montagna.",
+      "Lascia che un respiro guidi ogni movimento e fermati nel bambino quando ne hai bisogno."
+     ],
+     "q": "Ora che conosci ogni passo, che effetto fa mettere insieme tutta la sequenza?",
+     "c": "Fai lentamente tre giri completi del saluto al sole A e concludi con un minuto nella montagna."
+    },
+    "pt": {
+     "t": "Uma saudação ao sol completa",
+     "g": "Ligar todos os passos da saudação ao sol A com uma respiração estável.",
+     "p": [
+      "Montanha, braços para cima, flexão, meia elevação, prancha, descida, cobra ou cão para cima, cão para baixo.",
+      "Depois de algumas respirações no cão, avança os pés: meia elevação, flexão, braços para cima e montanha.",
+      "Deixa uma respiração guiar cada movimento e para na postura da criança sempre que precisares."
+     ],
+     "q": "Agora que conheces todos os passos, como é juntar a sequência inteira?",
+     "c": "Faz três rondas completas e lentas da saudação ao sol A e termina com um minuto na montanha."
+    },
+    "pt_BR": {
+     "t": "Uma saudação ao sol completa",
+     "g": "Unir todos os passos da saudação ao sol A com uma respiração estável.",
+     "p": [
+      "Montanha, braços para cima, flexão, meia elevação, prancha, descida, cobra ou cachorro para cima, cachorro para baixo.",
+      "Depois de algumas respirações no cachorro, leve os pés à frente: meia elevação, flexão, braços para cima e montanha.",
+      "Deixe uma respiração guiar cada movimento e pause na postura da criança sempre que precisar."
+     ],
+     "q": "Agora que você conhece todos os passos, como é juntar a sequência inteira?",
+     "c": "Faça três rodadas completas e lentas da saudação ao sol A e termine com um minuto na montanha."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pacing your salutations",
+     "g": "Learn to move slowly, add pauses and adapt the flow to your energy.",
+     "p": [
+      "You can take extra breaths in any pose: one breath per movement is a guide, not a rule.",
+      "On tired days, try fewer rounds, knees down in plank and cobra instead of upward dog.",
+      "On lively days, keep the flow smooth and steady rather than fast."
+     ],
+     "q": "How is your energy today, and how would you adapt your sun salutations to match it?",
+     "c": "Do two rounds today: one very slow with three breaths in each pose, then one with one breath per move."
+    },
+    "de": {
+     "t": "Das eigene Tempo im Sonnengruß",
+     "g": "Lerne, langsam zu üben, Pausen einzubauen und den Fluss an deine Energie anzupassen.",
+     "p": [
+      "Du kannst in jeder Haltung zusätzliche Atemzüge nehmen: ein Atemzug pro Bewegung ist ein Leitfaden, keine Regel.",
+      "An müden Tagen helfen weniger Runden, Knie am Boden im Brett und Kobra statt heraufschauendem Hund.",
+      "An energiegeladenen Tagen bleib lieber gleichmäßig und fließend statt schnell."
+     ],
+     "q": "Wie ist deine Energie heute, und wie würdest du deine Sonnengrüße daran anpassen?",
+     "c": "Mach heute zwei Runden: eine ganz langsam mit drei Atemzügen pro Haltung, dann eine mit einem Atemzug pro Bewegung."
+    },
+    "es": {
+     "t": "Tu ritmo en los saludos",
+     "g": "Aprende a ir despacio, hacer pausas y adaptar la secuencia a tu energía.",
+     "p": [
+      "Puedes tomar respiraciones extra en cualquier postura: una respiración por movimiento es una guía, no una regla.",
+      "En días de cansancio, haz menos rondas, apoya las rodillas en la plancha y elige la cobra.",
+      "En días con energía, mantén la secuencia fluida y constante en lugar de rápida."
+     ],
+     "q": "¿Cómo está tu energía hoy y cómo adaptarías tus saludos al sol a ella?",
+     "c": "Haz hoy dos rondas: una muy lenta con tres respiraciones en cada postura y otra con una respiración por movimiento."
+    },
+    "fr": {
+     "t": "Trouver ton rythme",
+     "g": "Apprendre à bouger lentement, ajouter des pauses et adapter l'enchaînement à ton énergie.",
+     "p": [
+      "Tu peux prendre des respirations en plus dans chaque posture : une respiration par mouvement est un repère, pas une règle.",
+      "Les jours de fatigue, fais moins de tours, genoux au sol en planche et cobra plutôt que chien tête en haut.",
+      "Les jours pleins d'énergie, garde un enchaînement fluide et régulier plutôt que rapide."
+     ],
+     "q": "Comment est ton énergie aujourd'hui, et comment adapterais-tu tes salutations au soleil ?",
+     "c": "Fais aujourd'hui deux tours : un très lent avec trois respirations par posture, puis un avec une respiration par mouvement."
+    },
+    "it": {
+     "t": "Il tuo ritmo nei saluti",
+     "g": "Imparare a muoversi piano, aggiungere pause e adattare la sequenza alla tua energia.",
+     "p": [
+      "Puoi fare respiri in più in ogni posizione: un respiro per movimento è una guida, non una regola.",
+      "Nei giorni stanchi fai meno giri, ginocchia a terra nel plank e cobra invece del cane in su.",
+      "Nei giorni pieni di energia tieni la sequenza fluida e costante piuttosto che veloce."
+     ],
+     "q": "Com'è la tua energia oggi, e come adatteresti i tuoi saluti al sole?",
+     "c": "Fai oggi due giri: uno lentissimo con tre respiri per posizione, poi uno con un respiro per movimento."
+    },
+    "pt": {
+     "t": "O teu ritmo nas saudações",
+     "g": "Aprender a mexer-te devagar, fazer pausas e adaptar a sequência à tua energia.",
+     "p": [
+      "Podes fazer respirações extra em qualquer postura: uma respiração por movimento é um guia, não uma regra.",
+      "Nos dias de cansaço, faz menos rondas, joelhos no chão na prancha e a cobra em vez do cão para cima.",
+      "Nos dias com energia, mantém a sequência fluida e estável em vez de rápida."
+     ],
+     "q": "Como está a tua energia hoje e como adaptarias as tuas saudações ao sol?",
+     "c": "Faz hoje duas rondas: uma muito lenta com três respirações em cada postura e outra com uma respiração por movimento."
+    },
+    "pt_BR": {
+     "t": "Seu ritmo nas saudações",
+     "g": "Aprender a ir devagar, fazer pausas e adaptar a sequência à sua energia.",
+     "p": [
+      "Você pode fazer respirações extras em qualquer postura: uma respiração por movimento é um guia, não uma regra.",
+      "Em dias cansados, faça menos rodadas, joelhos no chão na prancha e cobra no lugar do cachorro para cima.",
+      "Em dias com energia, mantenha a sequência fluida e estável em vez de rápida."
+     ],
+     "q": "Como está sua energia hoje e como você adaptaria suas saudações ao sol?",
+     "c": "Faça hoje duas rodadas: uma bem lenta com três respirações em cada postura e outra com uma respiração por movimento."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sun salutation B",
+     "g": "Expand the classic sequence by adding chair pose and Warrior I.",
+     "p": [
+      "Sun salutation B begins with chair pose instead of simply sweeping the arms up from mountain.",
+      "After the first downward dog, step into Warrior I on one side, then flow back through plank to downward dog.",
+      "Repeat Warrior I on the second side, flow to downward dog again, then step forward and finish in chair."
+     ],
+     "q": "Sun salutation B is longer and stronger: how do you feel about trying a more challenging flow?",
+     "c": "Practise one slow round of Sun salutation B, resting in child's pose whenever you need."
+    },
+    "de": {
+     "t": "Sonnengruß B",
+     "g": "Erweitere die klassische Abfolge um die Stuhlhaltung und Krieger I.",
+     "p": [
+      "Sonnengruß B beginnt mit der Stuhlhaltung, statt die Arme einfach aus dem Berg nach oben zu führen.",
+      "Tritt nach dem ersten Hund auf einer Seite in Krieger I und fließ dann über das Brett zurück in den Hund.",
+      "Wiederhol Krieger I auf der zweiten Seite, fließ wieder in den Hund, tritt nach vorn und ende im Stuhl."
+     ],
+     "q": "Sonnengruß B ist länger und kraftvoller: Wie geht es dir mit dem Gedanken an einen fordernderen Fluss?",
+     "c": "Übe eine langsame Runde Sonnengruß B und ruh dich in der Kindhaltung aus, wann immer du willst."
+    },
+    "es": {
+     "t": "Saludo al sol B",
+     "g": "Amplía la secuencia clásica añadiendo la silla y el guerrero I.",
+     "p": [
+      "El saludo al sol B empieza con la postura de la silla en lugar de solo subir los brazos desde la montaña.",
+      "Tras el primer perro boca abajo, da un paso al guerrero I de un lado y fluye por la plancha de vuelta al perro.",
+      "Repite el guerrero I del otro lado, vuelve al perro, camina al frente y termina en la silla."
+     ],
+     "q": "El saludo al sol B es más largo e intenso: ¿qué te parece probar una secuencia más desafiante?",
+     "c": "Practica una ronda lenta del saludo al sol B, descansando en la postura del niño cuando lo necesites."
+    },
+    "fr": {
+     "t": "La salutation au soleil B",
+     "g": "Enrichir la séquence classique avec la chaise et le guerrier I.",
+     "p": [
+      "La salutation B commence par la chaise au lieu de simplement lever les bras depuis la montagne.",
+      "Après le premier chien, avance un pied en guerrier I, puis reviens par la planche jusqu'au chien.",
+      "Refais le guerrier I de l'autre côté, reviens en chien, avance et termine dans la chaise."
+     ],
+     "q": "La salutation B est plus longue et plus intense : que penses-tu d'essayer un enchaînement plus exigeant ?",
+     "c": "Pratique un tour lent de salutation au soleil B, en te reposant dans l'enfant dès que tu en as besoin."
+    },
+    "it": {
+     "t": "Saluto al sole B",
+     "g": "Ampliare la sequenza classica aggiungendo la sedia e il guerriero I.",
+     "p": [
+      "Il saluto al sole B inizia con la sedia invece di alzare semplicemente le braccia dalla montagna.",
+      "Dopo il primo cane a testa in giù, entra nel guerriero I da un lato e poi torna al cane passando dal plank.",
+      "Ripeti il guerriero I dall'altro lato, torna al cane, porta avanti i piedi e concludi nella sedia."
+     ],
+     "q": "Il saluto al sole B è più lungo e intenso: come ti senti all'idea di una sequenza più impegnativa?",
+     "c": "Pratica un giro lento del saluto al sole B, riposando nella posizione del bambino quando serve."
+    },
+    "pt": {
+     "t": "Saudação ao sol B",
+     "g": "Alargar a sequência clássica juntando a cadeira e o guerreiro I.",
+     "p": [
+      "A saudação ao sol B começa com a cadeira em vez de apenas levantar os braços a partir da montanha.",
+      "Depois do primeiro cão, dá um passo para o guerreiro I de um lado e flui pela prancha de volta ao cão.",
+      "Repete o guerreiro I do outro lado, volta ao cão, avança os pés e termina na cadeira."
+     ],
+     "q": "A saudação ao sol B é mais longa e intensa: como te sentes a experimentar uma sequência mais desafiante?",
+     "c": "Pratica uma ronda lenta da saudação ao sol B, descansando na postura da criança sempre que precisares."
+    },
+    "pt_BR": {
+     "t": "Saudação ao sol B",
+     "g": "Ampliar a sequência clássica acrescentando a cadeira e o guerreiro I.",
+     "p": [
+      "A saudação ao sol B começa com a cadeira em vez de só levantar os braços a partir da montanha.",
+      "Depois do primeiro cachorro, dê um passo para o guerreiro I de um lado e flua pela prancha de volta ao cachorro.",
+      "Repita o guerreiro I do outro lado, volte ao cachorro, leve os pés à frente e termine na cadeira."
+     ],
+     "q": "A saudação ao sol B é mais longa e intensa: como você se sente experimentando uma sequência mais desafiadora?",
+     "c": "Pratique uma rodada lenta da saudação ao sol B, descansando na postura da criança sempre que precisar."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: second month",
+     "g": "Revisit the styles, standing poses and sun salutations from this month.",
+     "p": [
+      "You toured the main styles, from calm yin and restorative to lively vinyasa and power yoga.",
+      "You built a set of standing poses: warriors, triangle, side angle, tree, chair, goddess and pyramid.",
+      "You learned Sun salutations A and B, with plank, knees-chest-chin, cobra and upward dog."
+     ],
+     "q": "What has changed in your body or mood since you started this path two months ago?",
+     "c": "Practise two rounds of Sun salutation A, your favourite standing pose on each side and five minutes of savasana."
+    },
+    "de": {
+     "t": "Rückblick: zweiter Monat",
+     "g": "Schau zurück auf die Stile, Stehhaltungen und Sonnengrüße dieses Monats.",
+     "p": [
+      "Du hast die wichtigsten Stile kennengelernt, vom ruhigen Yin und restorativen Yoga bis zu Vinyasa und Power Yoga.",
+      "Du kennst jetzt viele Stehhaltungen: Krieger, Dreieck, seitlicher Winkel, Baum, Stuhl, Göttin und Pyramide.",
+      "Du hast Sonnengruß A und B gelernt, mit Brett, Knie-Brust-Kinn, Kobra und heraufschauendem Hund."
+     ],
+     "q": "Was hat sich an deinem Körper oder deiner Stimmung verändert, seit du vor zwei Monaten angefangen hast?",
+     "c": "Übe zwei Runden Sonnengruß A, deine liebste Stehhaltung auf beiden Seiten und fünf Minuten Savasana."
+    },
+    "es": {
+     "t": "Repaso: segundo mes",
+     "g": "Repasa los estilos, las posturas de pie y los saludos al sol de este mes.",
+     "p": [
+      "Recorriste los estilos principales, del tranquilo yin y el restaurativo al dinámico vinyasa y el power yoga.",
+      "Reuniste un buen grupo de posturas de pie: guerreros, triángulo, ángulo lateral, árbol, silla, diosa y pirámide.",
+      "Aprendiste los saludos al sol A y B, con plancha, rodillas-pecho-barbilla, cobra y perro boca arriba."
+     ],
+     "q": "¿Qué ha cambiado en tu cuerpo o en tu ánimo desde que empezaste este camino hace dos meses?",
+     "c": "Practica dos rondas del saludo al sol A, tu postura de pie favorita a cada lado y cinco minutos de savasana."
+    },
+    "fr": {
+     "t": "Bilan : deuxième mois",
+     "g": "Revenir sur les styles, les postures debout et les salutations au soleil du mois.",
+     "p": [
+      "Tu as découvert les grands styles, du yin et du restauratif tout en calme au vinyasa et au power yoga plus dynamiques.",
+      "Tu connais de nombreuses postures debout : guerriers, triangle, angle latéral, arbre, chaise, déesse et pyramide.",
+      "Tu as appris les salutations A et B, avec planche, genoux-poitrine-menton, cobra et chien tête en haut."
+     ],
+     "q": "Qu'est-ce qui a changé dans ton corps ou ton humeur depuis le début de ce parcours il y a deux mois ?",
+     "c": "Pratique deux salutations au soleil A, ta posture debout préférée de chaque côté et cinq minutes de savasana."
+    },
+    "it": {
+     "t": "Ripasso: secondo mese",
+     "g": "Ripercorrere gli stili, le posizioni in piedi e i saluti al sole di questo mese.",
+     "p": [
+      "Hai conosciuto gli stili principali, dal calmo yin e restorative al dinamico vinyasa e power yoga.",
+      "Hai costruito un bel gruppo di posizioni in piedi: guerrieri, triangolo, angolo laterale, albero, sedia, dea e piramide.",
+      "Hai imparato i saluti al sole A e B, con plank, ginocchia-petto-mento, cobra e cane a testa in su."
+     ],
+     "q": "Cosa è cambiato nel tuo corpo o nel tuo umore da quando hai iniziato questo percorso due mesi fa?",
+     "c": "Pratica due giri del saluto al sole A, la tua posizione in piedi preferita su ogni lato e cinque minuti di savasana."
+    },
+    "pt": {
+     "t": "Revisão: segundo mês",
+     "g": "Rever os estilos, as posturas de pé e as saudações ao sol deste mês.",
+     "p": [
+      "Conheceste os principais estilos, do calmo yin e restaurativo ao dinâmico vinyasa e power yoga.",
+      "Juntaste um bom conjunto de posturas de pé: guerreiros, triângulo, ângulo lateral, árvore, cadeira, deusa e pirâmide.",
+      "Aprendeste as saudações ao sol A e B, com prancha, joelhos-peito-queixo, cobra e cão olhando para cima."
+     ],
+     "q": "O que mudou no teu corpo ou no teu humor desde que começaste este caminho há dois meses?",
+     "c": "Pratica duas rondas da saudação ao sol A, a tua postura de pé preferida de cada lado e cinco minutos de savasana."
+    },
+    "pt_BR": {
+     "t": "Revisão: segundo mês",
+     "g": "Relembrar os estilos, as posturas em pé e as saudações ao sol deste mês.",
+     "p": [
+      "Você conheceu os principais estilos, da calma yin e restaurativa à dinâmica vinyasa e power ioga.",
+      "Montou um bom conjunto de posturas em pé: guerreiros, triângulo, ângulo lateral, árvore, cadeira, deusa e pirâmide.",
+      "Aprendeu as saudações ao sol A e B, com prancha, joelhos-peito-queixo, cobra e cachorro olhando para cima."
+     ],
+     "q": "O que mudou no seu corpo ou no seu humor desde que você começou esse caminho há dois meses?",
+     "c": "Pratique duas rodadas da saudação ao sol A, sua postura em pé favorita de cada lado e cinco minutos de savasana."
+    }
+   }
+  }
+ ]
+}

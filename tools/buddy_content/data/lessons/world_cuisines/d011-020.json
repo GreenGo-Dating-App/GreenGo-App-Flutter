@@ -1,0 +1,835 @@
+{
+ "topic": "world_cuisines",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spain: tapas culture",
+     "g": "Discover the joy of sharing small plates at the bar, Spanish style.",
+     "p": [
+      "Tapas are small portions meant for sharing, often enjoyed standing at a bar with friends.",
+      "Patatas bravas are fried potato cubes with a spicy sauce; tortilla is a thick potato omelette.",
+      "Croquetas are creamy béchamel bites, often with ham or chicken, breaded and fried."
+     ],
+     "q": "Would you rather share many small plates or have one big plate all to yourself?",
+     "c": "Make a mini tapas spread at home with three small snacks and share it with someone."
+    },
+    "de": {
+     "t": "Spanien: Tapas-Kultur",
+     "g": "Entdecke die Freude, kleine Teller an der Bar zu teilen, ganz auf spanische Art.",
+     "p": [
+      "Tapas sind kleine Portionen zum Teilen, oft im Stehen an der Bar mit Freunden genossen.",
+      "Patatas bravas sind frittierte Kartoffelwürfel mit scharfer Sauce, Tortilla ein dickes Kartoffelomelett.",
+      "Croquetas sind cremige Béchamel-Happen, oft mit Schinken oder Huhn, paniert und frittiert."
+     ],
+     "q": "Teilst du lieber viele kleine Teller oder hast du einen großen Teller ganz für dich?",
+     "c": "Stell zu Hause eine Mini-Tapas-Runde mit drei kleinen Snacks zusammen und teile sie mit jemandem."
+    },
+    "es": {
+     "t": "España: la cultura de las tapas",
+     "g": "Descubre el placer de compartir platos pequeños en la barra, al estilo español.",
+     "p": [
+      "Las tapas son raciones pequeñas para compartir, a menudo de pie en la barra con amigos.",
+      "Las patatas bravas son dados de patata frita con salsa picante; la tortilla, de patata y bien gruesa.",
+      "Las croquetas son bocados cremosos de bechamel, a menudo de jamón o pollo, rebozados y fritos."
+     ],
+     "q": "¿Prefieres compartir muchos platos pequeños o tener un plato grande solo para ti?",
+     "c": "Monta en casa una mini mesa de tapas con tres aperitivos y compártela con alguien."
+    },
+    "fr": {
+     "t": "Espagne : la culture des tapas",
+     "g": "Découvre le plaisir de partager de petites assiettes au comptoir, à l'espagnole.",
+     "p": [
+      "Les tapas sont de petites portions à partager, souvent dégustées debout au bar entre amis.",
+      "Les patatas bravas sont des pommes de terre frites en dés, sauce piquante ; la tortilla, une omelette épaisse.",
+      "Les croquetas sont des bouchées crémeuses à la béchamel, souvent au jambon ou au poulet, panées et frites."
+     ],
+     "q": "Tu préfères partager plein de petites assiettes ou avoir une grande assiette rien que pour toi ?",
+     "c": "Prépare chez toi un mini apéro tapas avec trois petites bouchées et partage-le avec quelqu'un."
+    },
+    "it": {
+     "t": "Spagna: la cultura delle tapas",
+     "g": "Scopri il piacere di condividere piattini al bancone, alla spagnola.",
+     "p": [
+      "Le tapas sono piccole porzioni da condividere, spesso gustate in piedi al bar con gli amici.",
+      "Le patatas bravas sono cubetti di patate fritte con salsa piccante; la tortilla è una frittata di patate alta.",
+      "Le croquetas sono bocconcini cremosi di besciamella, spesso con prosciutto o pollo, impanati e fritti."
+     ],
+     "q": "Preferisci condividere tanti piattini o avere un piatto grande tutto per te?",
+     "c": "Prepara a casa un mini aperitivo di tapas con tre stuzzichini e condividilo con qualcuno."
+    },
+    "pt": {
+     "t": "Espanha: a cultura das tapas",
+     "g": "Descobre o prazer de partilhar pratinhos ao balcão, à moda espanhola.",
+     "p": [
+      "As tapas são pequenas porções para partilhar, muitas vezes comidas de pé ao balcão com amigos.",
+      "As patatas bravas são cubos de batata frita com molho picante; a tortilla é uma omelete grossa de batata.",
+      "As croquetas são bocadinhos cremosos de bechamel, muitas vezes com fiambre ou frango, panados e fritos."
+     ],
+     "q": "Preferes partilhar muitos pratinhos ou ter um prato grande só para ti?",
+     "c": "Prepara em casa uma mini mesa de tapas com três petiscos e partilha-a com alguém."
+    },
+    "pt_BR": {
+     "t": "Espanha: a cultura das tapas",
+     "g": "Descubra o prazer de dividir pratinhos no balcão, ao estilo espanhol.",
+     "p": [
+      "Tapas são porções pequenas para dividir, muitas vezes comidas de pé no balcão com amigos.",
+      "As patatas bravas são cubos de batata frita com molho picante; a tortilla é uma omelete grossa de batata.",
+      "As croquetas são bolinhos cremosos de bechamel, muitas vezes com presunto ou frango, empanados e fritos."
+     ],
+     "q": "Você prefere dividir vários pratinhos ou ter um prato grande só para você?",
+     "c": "Monte em casa uma mini mesa de tapas com três petiscos e divida com alguém."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spain: paella from Valencia",
+     "g": "Learn the story of Valencia's famous rice dish and its crispy layer.",
+     "p": [
+      "Paella is named after the wide, shallow pan it is cooked in; the dish comes from Valencia.",
+      "The traditional Valencian version uses chicken, rabbit, green beans and white beans.",
+      "Socarrat is the prized, toasted rice crust that forms on the bottom of the pan."
+     ],
+     "q": "Have you ever tried paella, and which version would you love to taste?",
+     "c": "Cook rice in a wide pan without stirring at the end and try to create a little crust."
+    },
+    "de": {
+     "t": "Spanien: Paella aus Valencia",
+     "g": "Lerne die Geschichte des berühmten Reisgerichts aus Valencia und seiner knusprigen Schicht.",
+     "p": [
+      "Paella ist nach der breiten, flachen Pfanne benannt, in der sie gekocht wird, und stammt aus Valencia.",
+      "Die traditionelle valencianische Version enthält Huhn, Kaninchen, grüne und weiße Bohnen.",
+      "Socarrat heißt die begehrte, geröstete Reiskruste am Pfannenboden."
+     ],
+     "q": "Hast du schon einmal Paella probiert, und welche Version würdest du gern kosten?",
+     "c": "Gare Reis in einer breiten Pfanne, rühre am Ende nicht mehr und versuche eine kleine Kruste zu erzeugen."
+    },
+    "es": {
+     "t": "España: la paella valenciana",
+     "g": "Aprende la historia del famoso arroz de Valencia y su capa crujiente.",
+     "p": [
+      "La paella toma su nombre de la sartén ancha y plana en que se cocina, y nace en Valencia.",
+      "La versión valenciana tradicional lleva pollo, conejo, judía verde y garrofó.",
+      "El socarrat es la codiciada costra de arroz tostado que se forma en el fondo de la paella."
+     ],
+     "q": "¿Has probado alguna vez la paella y qué versión te encantaría probar?",
+     "c": "Cocina arroz en una sartén ancha sin remover al final e intenta crear un poco de costra."
+    },
+    "fr": {
+     "t": "Espagne : la paella de Valence",
+     "g": "Découvre l'histoire du célèbre plat de riz de Valence et de sa couche croustillante.",
+     "p": [
+      "La paella doit son nom à la poêle large et plate dans laquelle on la cuit ; elle vient de Valence.",
+      "La version valencienne traditionnelle contient poulet, lapin, haricots verts et haricots blancs.",
+      "Le socarrat est la croûte de riz grillé, très prisée, qui se forme au fond de la poêle."
+     ],
+     "q": "As-tu déjà goûté une paella, et quelle version aimerais-tu essayer ?",
+     "c": "Cuis du riz dans une poêle large sans remuer à la fin et essaie d'obtenir une petite croûte."
+    },
+    "it": {
+     "t": "Spagna: la paella di Valencia",
+     "g": "Scopri la storia del famoso piatto di riso di Valencia e del suo strato croccante.",
+     "p": [
+      "La paella prende il nome dalla padella larga e bassa in cui si cuoce e nasce a Valencia.",
+      "La versione valenciana tradizionale prevede pollo, coniglio, fagiolini e fagioli bianchi.",
+      "Il socarrat è l'ambita crosticina di riso tostato che si forma sul fondo della padella."
+     ],
+     "q": "Hai mai provato la paella, e quale versione ti piacerebbe assaggiare?",
+     "c": "Cuoci il riso in una padella larga senza mescolare alla fine e prova a creare una crosticina."
+    },
+    "pt": {
+     "t": "Espanha: a paella de Valência",
+     "g": "Aprende a história do famoso prato de arroz de Valência e da sua camada estaladiça.",
+     "p": [
+      "A paella deve o nome à frigideira larga e baixa onde é cozinhada e nasceu em Valência.",
+      "A versão valenciana tradicional leva frango, coelho, feijão-verde e feijão branco.",
+      "O socarrat é a cobiçada crosta de arroz tostado que se forma no fundo da frigideira."
+     ],
+     "q": "Já provaste paella, e que versão adorarias provar?",
+     "c": "Cozinha arroz numa frigideira larga sem mexer no fim e tenta criar uma pequena crosta."
+    },
+    "pt_BR": {
+     "t": "Espanha: a paella de Valência",
+     "g": "Conheça a história do famoso prato de arroz de Valência e sua camada crocante.",
+     "p": [
+      "A paella leva o nome da panela larga e rasa onde é feita e nasceu em Valência.",
+      "A versão valenciana tradicional leva frango, coelho, vagem e feijão-branco.",
+      "O socarrat é a cobiçada crosta de arroz tostado que se forma no fundo da panela."
+     ],
+     "q": "Você já provou paella, e qual versão adoraria experimentar?",
+     "c": "Cozinhe arroz numa frigideira larga sem mexer no final e tente formar uma casquinha."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mexico: corn and tortillas",
+     "g": "Discover nixtamalisation, the ancient corn process behind many Mexican classics.",
+     "p": [
+      "Nixtamalisation means cooking dried corn in an alkaline lime solution before grinding it.",
+      "It softens the kernels, adds flavour and makes the corn more nutritious.",
+      "The resulting dough, masa, becomes tortillas, tamales steamed in husks, and pozole soup."
+     ],
+     "q": "Do you prefer corn tortillas or wheat flour tortillas, and why?",
+     "c": "Warm a corn tortilla in a dry pan until it puffs a little and enjoy it with a simple filling."
+    },
+    "de": {
+     "t": "Mexiko: Mais und Tortillas",
+     "g": "Entdecke die Nixtamalisation, das uralte Maisverfahren hinter vielen mexikanischen Klassikern.",
+     "p": [
+      "Bei der Nixtamalisation wird getrockneter Mais in Kalkwasser gekocht, bevor man ihn mahlt.",
+      "Das macht die Körner weich, bringt Geschmack und macht den Mais nahrhafter.",
+      "Der Teig, Masa genannt, wird zu Tortillas, in Blättern gedämpften Tamales und Pozole-Suppe."
+     ],
+     "q": "Magst du lieber Mais- oder Weizentortillas, und warum?",
+     "c": "Erwärme eine Maistortilla in einer trockenen Pfanne, bis sie sich leicht aufbläht, und fülle sie einfach."
+    },
+    "es": {
+     "t": "México: maíz y tortillas",
+     "g": "Descubre la nixtamalización, el antiguo proceso del maíz detrás de muchos clásicos mexicanos.",
+     "p": [
+      "Nixtamalizar es cocer el maíz seco en agua con cal antes de molerlo.",
+      "Así el grano se ablanda, gana sabor y se vuelve más nutritivo.",
+      "La masa resultante se convierte en tortillas, tamales cocidos al vapor en hojas y pozole."
+     ],
+     "q": "¿Prefieres tortillas de maíz o de harina de trigo, y por qué?",
+     "c": "Calienta una tortilla de maíz en un sartén sin aceite hasta que se infle un poco y rellénala sencillo."
+    },
+    "fr": {
+     "t": "Mexique : maïs et tortillas",
+     "g": "Découvre la nixtamalisation, le procédé ancien derrière de nombreux classiques mexicains.",
+     "p": [
+      "La nixtamalisation consiste à cuire le maïs sec dans de l'eau de chaux avant de le moudre.",
+      "Cela ramollit les grains, développe le goût et rend le maïs plus nutritif.",
+      "La pâte obtenue, la masa, devient tortillas, tamales cuits à la vapeur dans des feuilles, et pozole."
+     ],
+     "q": "Tu préfères les tortillas de maïs ou de blé, et pourquoi ?",
+     "c": "Réchauffe une tortilla de maïs dans une poêle sèche jusqu'à ce qu'elle gonfle un peu et garnis-la simplement."
+    },
+    "it": {
+     "t": "Messico: mais e tortillas",
+     "g": "Scopri la nixtamalizzazione, l'antico procedimento del mais dietro molti classici messicani.",
+     "p": [
+      "Nixtamalizzare significa cuocere il mais secco in acqua e calce prima di macinarlo.",
+      "Così i chicchi si ammorbidiscono, prendono sapore e diventano più nutrienti.",
+      "L'impasto ottenuto, la masa, diventa tortillas, tamales cotti al vapore nelle foglie e pozole."
+     ],
+     "q": "Preferisci le tortillas di mais o di farina di frumento, e perché?",
+     "c": "Scalda una tortilla di mais in una padella asciutta finché si gonfia un po' e farciscila in modo semplice."
+    },
+    "pt": {
+     "t": "México: milho e tortilhas",
+     "g": "Descobre a nixtamalização, o antigo processo do milho por trás de muitos clássicos mexicanos.",
+     "p": [
+      "Nixtamalizar é cozer o milho seco em água com cal antes de o moer.",
+      "Assim o grão amolece, ganha sabor e fica mais nutritivo.",
+      "A massa obtida, a masa, dá origem a tortilhas, tamales cozidos a vapor em folhas e pozole."
+     ],
+     "q": "Preferes tortilhas de milho ou de farinha de trigo, e porquê?",
+     "c": "Aquece uma tortilha de milho numa frigideira seca até inchar um pouco e recheia-a de forma simples."
+    },
+    "pt_BR": {
+     "t": "México: milho e tortilhas",
+     "g": "Descubra a nixtamalização, o antigo processo do milho por trás de muitos clássicos mexicanos.",
+     "p": [
+      "Nixtamalizar é cozinhar o milho seco em água com cal antes de moer.",
+      "Assim o grão amolece, ganha sabor e fica mais nutritivo.",
+      "A massa obtida, a masa, vira tortilhas, tamales cozidos no vapor em palha e pozole."
+     ],
+     "q": "Você prefere tortilhas de milho ou de farinha de trigo, e por quê?",
+     "c": "Aqueça uma tortilha de milho numa frigideira seca até estufar um pouco e recheie de um jeito simples."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mexico: tacos and salsas",
+     "g": "See how Mexican food builds flavour in layers with tacos and salsas.",
+     "p": [
+      "Tacos al pastor use pork marinated in chilies and achiote, cooked on a vertical spit.",
+      "This style was inspired by the shawarma that Lebanese immigrants brought to Mexico.",
+      "Salsa verde is based on tangy tomatillos; salsa roja on tomatoes or dried red chilies."
+     ],
+     "q": "Which taco filling would you choose for your first bite in Mexico?",
+     "c": "Make a quick fresh salsa with tomato, onion, coriander, lime and a pinch of salt."
+    },
+    "de": {
+     "t": "Mexiko: Tacos und Salsas",
+     "g": "Sieh, wie die mexikanische Küche mit Tacos und Salsas Geschmack in Schichten aufbaut.",
+     "p": [
+      "Tacos al pastor enthalten Schweinefleisch in Chili und Achiote mariniert, gegart am Drehspieß.",
+      "Dieser Stil wurde vom Schawarma inspiriert, das libanesische Einwanderer nach Mexiko brachten.",
+      "Salsa verde basiert auf säuerlichen Tomatillos, Salsa roja auf Tomaten oder getrockneten roten Chilis."
+     ],
+     "q": "Welche Taco-Füllung würdest du für deinen ersten Bissen in Mexiko wählen?",
+     "c": "Mach eine schnelle frische Salsa aus Tomate, Zwiebel, Koriander, Limette und einer Prise Salz."
+    },
+    "es": {
+     "t": "México: tacos y salsas",
+     "g": "Mira cómo la cocina mexicana construye el sabor por capas con tacos y salsas.",
+     "p": [
+      "Los tacos al pastor llevan cerdo marinado en chiles y achiote, asado en un trompo vertical.",
+      "Este estilo se inspiró en el shawarma que trajeron a México los inmigrantes libaneses.",
+      "La salsa verde se basa en tomatillos ácidos; la salsa roja, en jitomate o chiles rojos secos."
+     ],
+     "q": "¿Qué relleno de taco elegirías para tu primer bocado en México?",
+     "c": "Prepara una salsa fresca rápida con tomate, cebolla, cilantro, limón y una pizca de sal."
+    },
+    "fr": {
+     "t": "Mexique : tacos et salsas",
+     "g": "Vois comment la cuisine mexicaine construit les saveurs par couches avec tacos et salsas.",
+     "p": [
+      "Les tacos al pastor contiennent du porc mariné aux piments et à l'achiote, cuit sur une broche verticale.",
+      "Ce style s'inspire du shawarma apporté au Mexique par des immigrés libanais.",
+      "La salsa verde repose sur des tomatillos acidulés ; la salsa roja, sur des tomates ou des piments rouges secs."
+     ],
+     "q": "Quelle garniture de taco choisirais-tu pour ta première bouchée au Mexique ?",
+     "c": "Prépare une salsa fraîche express avec tomate, oignon, coriandre, citron vert et une pincée de sel."
+    },
+    "it": {
+     "t": "Messico: tacos e salse",
+     "g": "Scopri come la cucina messicana costruisce il sapore a strati con tacos e salse.",
+     "p": [
+      "I tacos al pastor hanno maiale marinato con peperoncini e achiote, cotto su uno spiedo verticale.",
+      "Questo stile si ispira allo shawarma portato in Messico dagli immigrati libanesi.",
+      "La salsa verde si basa sui tomatillos aciduli; la salsa roja su pomodori o peperoncini rossi secchi."
+     ],
+     "q": "Quale ripieno di taco sceglieresti per il tuo primo morso in Messico?",
+     "c": "Prepara una salsa fresca veloce con pomodoro, cipolla, coriandolo, lime e un pizzico di sale."
+    },
+    "pt": {
+     "t": "México: tacos e salsas",
+     "g": "Vê como a cozinha mexicana constrói o sabor por camadas com tacos e salsas.",
+     "p": [
+      "Os tacos al pastor levam porco marinado em malaguetas e achiote, assado num espeto vertical.",
+      "Este estilo inspirou-se no shawarma que imigrantes libaneses levaram para o México.",
+      "A salsa verde baseia-se em tomatilhos ácidos; a salsa roja em tomate ou malaguetas vermelhas secas."
+     ],
+     "q": "Que recheio de taco escolherias para a tua primeira dentada no México?",
+     "c": "Faz uma salsa fresca rápida com tomate, cebola, coentros, lima e uma pitada de sal."
+    },
+    "pt_BR": {
+     "t": "México: tacos e salsas",
+     "g": "Veja como a culinária mexicana constrói o sabor em camadas com tacos e salsas.",
+     "p": [
+      "Os tacos al pastor levam porco marinado em pimentas e urucum, assado num espeto vertical.",
+      "Esse estilo se inspirou no shawarma que imigrantes libaneses levaram ao México.",
+      "A salsa verde é feita de tomatillos azedinhos; a salsa roja, de tomate ou pimentas vermelhas secas."
+     ],
+     "q": "Que recheio de taco você escolheria para sua primeira mordida no México?",
+     "c": "Faça uma salsa fresca rápida com tomate, cebola, coentro, limão e uma pitada de sal."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Japan: washoku basics",
+     "g": "Explore Japan's traditional food culture and its classic meal structure.",
+     "p": [
+      "Washoku, traditional Japanese food culture, was added to UNESCO's heritage list in 2013.",
+      "A classic meal is ichiju sansai: rice, one soup and three side dishes.",
+      "Seasonality matters deeply, and dashi broth gives many dishes their gentle umami."
+     ],
+     "q": "Which do you enjoy more: one big main dish or many small dishes at once?",
+     "c": "Build a mini ichiju sansai meal: a bowl of rice, a simple soup and small sides."
+    },
+    "de": {
+     "t": "Japan: Washoku-Grundlagen",
+     "g": "Entdecke Japans traditionelle Esskultur und ihren klassischen Mahlzeitenaufbau.",
+     "p": [
+      "Washoku, die traditionelle japanische Esskultur, steht seit 2013 auf der UNESCO-Kulturerbeliste.",
+      "Eine klassische Mahlzeit ist Ichiju Sansai: Reis, eine Suppe und drei Beilagen.",
+      "Die Jahreszeiten zählen sehr, und Dashi-Brühe gibt vielen Gerichten ihr sanftes Umami."
+     ],
+     "q": "Was magst du lieber: ein großes Hauptgericht oder viele kleine Gerichte auf einmal?",
+     "c": "Stell ein Mini-Ichiju-Sansai zusammen: eine Schale Reis, eine einfache Suppe und kleine Beilagen."
+    },
+    "es": {
+     "t": "Japón: lo básico del washoku",
+     "g": "Explora la cultura gastronómica tradicional de Japón y su estructura clásica de comida.",
+     "p": [
+      "El washoku, la cultura culinaria tradicional japonesa, es patrimonio de la UNESCO desde 2013.",
+      "Una comida clásica es ichiju sansai: arroz, una sopa y tres acompañamientos.",
+      "La estacionalidad importa mucho, y el caldo dashi da a muchos platos su suave umami."
+     ],
+     "q": "¿Qué disfrutas más: un plato principal grande o muchos platitos a la vez?",
+     "c": "Arma un mini ichiju sansai: un bol de arroz, una sopa sencilla y pequeños acompañamientos."
+    },
+    "fr": {
+     "t": "Japon : les bases du washoku",
+     "g": "Explore la culture culinaire traditionnelle du Japon et la structure classique de ses repas.",
+     "p": [
+      "Le washoku, culture culinaire traditionnelle japonaise, est inscrit au patrimoine de l'UNESCO depuis 2013.",
+      "Un repas classique suit l'ichiju sansai : du riz, une soupe et trois accompagnements.",
+      "Les saisons comptent beaucoup, et le bouillon dashi donne à de nombreux plats leur umami délicat."
+     ],
+     "q": "Tu préfères un grand plat principal ou plein de petits plats en même temps ?",
+     "c": "Compose un mini ichiju sansai : un bol de riz, une soupe simple et de petits accompagnements."
+    },
+    "it": {
+     "t": "Giappone: le basi del washoku",
+     "g": "Esplora la cultura gastronomica tradizionale giapponese e la struttura classica del pasto.",
+     "p": [
+      "Il washoku, la cultura alimentare tradizionale giapponese, è patrimonio UNESCO dal 2013.",
+      "Un pasto classico è l'ichiju sansai: riso, una zuppa e tre contorni.",
+      "La stagionalità conta molto e il brodo dashi dà a tanti piatti il loro delicato umami."
+     ],
+     "q": "Cosa ti piace di più: un grande piatto unico o tanti piattini insieme?",
+     "c": "Componi un mini ichiju sansai: una ciotola di riso, una zuppa semplice e piccoli contorni."
+    },
+    "pt": {
+     "t": "Japão: noções de washoku",
+     "g": "Explora a cultura alimentar tradicional do Japão e a estrutura clássica das refeições.",
+     "p": [
+      "O washoku, a cultura alimentar tradicional japonesa, é património da UNESCO desde 2013.",
+      "Uma refeição clássica é o ichiju sansai: arroz, uma sopa e três acompanhamentos.",
+      "A sazonalidade conta muito, e o caldo dashi dá a muitos pratos o seu umami suave."
+     ],
+     "q": "O que preferes: um grande prato principal ou muitos pratinhos ao mesmo tempo?",
+     "c": "Monta um mini ichiju sansai: uma tigela de arroz, uma sopa simples e pequenos acompanhamentos."
+    },
+    "pt_BR": {
+     "t": "Japão: o básico do washoku",
+     "g": "Explore a cultura alimentar tradicional do Japão e a estrutura clássica das refeições.",
+     "p": [
+      "O washoku, a cultura alimentar tradicional japonesa, é patrimônio da UNESCO desde 2013.",
+      "Uma refeição clássica é o ichiju sansai: arroz, uma sopa e três acompanhamentos.",
+      "A sazonalidade importa muito, e o caldo dashi dá a muitos pratos seu umami suave."
+     ],
+     "q": "O que você prefere: um prato principal grande ou vários pratinhos ao mesmo tempo?",
+     "c": "Monte um mini ichiju sansai: uma tigela de arroz, uma sopa simples e pequenos acompanhamentos."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Japan: sushi essentials",
+     "g": "Learn the main types of sushi and why the rice is the real star.",
+     "p": [
+      "Nigiri is a hand-pressed mound of rice topped with a slice of fish or other topping.",
+      "Maki are rolls wrapped in nori seaweed; sashimi is sliced raw fish served without rice.",
+      "Sushi rice is seasoned with rice vinegar, sugar and salt, and served at body temperature."
+     ],
+     "q": "Do you have a favourite type of sushi, or would you start with a vegetable roll?",
+     "c": "Season a small bowl of warm rice with a little rice vinegar, sugar and salt and taste it."
+    },
+    "de": {
+     "t": "Japan: Sushi-Grundwissen",
+     "g": "Lerne die wichtigsten Sushi-Arten kennen und warum der Reis der eigentliche Star ist.",
+     "p": [
+      "Nigiri ist ein von Hand geformter Reisballen mit einer Scheibe Fisch oder anderem Belag.",
+      "Maki sind in Nori-Algen gerollt; Sashimi ist roher Fisch in Scheiben, ganz ohne Reis.",
+      "Sushireis wird mit Reisessig, Zucker und Salz gewürzt und etwa körperwarm serviert."
+     ],
+     "q": "Hast du eine Lieblingssorte Sushi, oder würdest du mit einer Gemüserolle beginnen?",
+     "c": "Würze eine kleine Schale warmen Reis mit etwas Reisessig, Zucker und Salz und probiere."
+    },
+    "es": {
+     "t": "Japón: lo esencial del sushi",
+     "g": "Aprende los principales tipos de sushi y por qué el arroz es la verdadera estrella.",
+     "p": [
+      "El nigiri es una bolita de arroz prensada a mano con una lámina de pescado u otro ingrediente.",
+      "Los maki son rollos envueltos en alga nori; el sashimi es pescado crudo en láminas sin arroz.",
+      "El arroz de sushi se sazona con vinagre de arroz, azúcar y sal, y se sirve a temperatura corporal."
+     ],
+     "q": "¿Tienes un tipo de sushi favorito o empezarías por un rollo de verduras?",
+     "c": "Sazona un pequeño bol de arroz tibio con un poco de vinagre de arroz, azúcar y sal y pruébalo."
+    },
+    "fr": {
+     "t": "Japon : l'essentiel du sushi",
+     "g": "Découvre les grands types de sushis et pourquoi le riz est la vraie vedette.",
+     "p": [
+      "Le nigiri est une boulette de riz façonnée à la main, surmontée d'une tranche de poisson ou autre.",
+      "Les maki sont roulés dans l'algue nori ; le sashimi, c'est du poisson cru tranché, sans riz.",
+      "Le riz à sushi est assaisonné de vinaigre de riz, de sucre et de sel, et servi tiède."
+     ],
+     "q": "As-tu un sushi préféré, ou commencerais-tu par un maki aux légumes ?",
+     "c": "Assaisonne un petit bol de riz tiède avec un peu de vinaigre de riz, de sucre et de sel, et goûte."
+    },
+    "it": {
+     "t": "Giappone: l'essenziale del sushi",
+     "g": "Scopri i principali tipi di sushi e perché il riso è la vera star.",
+     "p": [
+      "Il nigiri è un bocconcino di riso pressato a mano con sopra una fetta di pesce o altro.",
+      "I maki sono rotoli avvolti nell'alga nori; il sashimi è pesce crudo a fette senza riso.",
+      "Il riso per sushi si condisce con aceto di riso, zucchero e sale e si serve tiepido."
+     ],
+     "q": "Hai un tipo di sushi preferito, o cominceresti con un rotolo di verdure?",
+     "c": "Condisci una ciotolina di riso tiepido con un po' di aceto di riso, zucchero e sale e assaggia."
+    },
+    "pt": {
+     "t": "Japão: o essencial do sushi",
+     "g": "Aprende os principais tipos de sushi e porque o arroz é a verdadeira estrela.",
+     "p": [
+      "O nigiri é uma pequena porção de arroz moldada à mão com uma fatia de peixe ou outro ingrediente.",
+      "Os maki são rolos envoltos em alga nori; o sashimi é peixe cru fatiado servido sem arroz.",
+      "O arroz de sushi é temperado com vinagre de arroz, açúcar e sal e servido morno."
+     ],
+     "q": "Tens um sushi preferido, ou começarias por um rolo de legumes?",
+     "c": "Tempera uma tigelinha de arroz morno com um pouco de vinagre de arroz, açúcar e sal e prova."
+    },
+    "pt_BR": {
+     "t": "Japão: o essencial do sushi",
+     "g": "Aprenda os principais tipos de sushi e por que o arroz é a verdadeira estrela.",
+     "p": [
+      "O niguiri é um bolinho de arroz moldado à mão com uma fatia de peixe ou outra cobertura.",
+      "Os maki são rolinhos envoltos em alga nori; o sashimi é peixe cru fatiado servido sem arroz.",
+      "O arroz do sushi é temperado com vinagre de arroz, açúcar e sal e servido morno."
+     ],
+     "q": "Você tem um sushi favorito, ou começaria por um rolinho de legumes?",
+     "c": "Tempere uma tigelinha de arroz morno com um pouco de vinagre de arroz, açúcar e sal e prove."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "China: the great regional cuisines",
+     "g": "Meet China's famous regional cooking schools and what makes each one special.",
+     "p": [
+      "Chinese cooking is often grouped into eight great cuisines, including Sichuan, Cantonese and Shandong.",
+      "Sichuan food is known for málà: the numbing tingle of Sichuan pepper plus chili heat.",
+      "Cantonese cooking prizes fresh ingredients and light flavours, and gave the world dim sum."
+     ],
+     "q": "Which regional Chinese flavour sounds most exciting to you: numbing, fresh or sweet?",
+     "c": "Look at a Chinese dish you know and try to find out which region it comes from."
+    },
+    "de": {
+     "t": "China: Die großen Regionalküchen",
+     "g": "Lerne Chinas berühmte regionale Kochschulen kennen und was jede besonders macht.",
+     "p": [
+      "Die chinesische Küche wird oft in acht große Küchen eingeteilt, darunter Sichuan, Kanton und Shandong.",
+      "Sichuan steht für Málà: das betäubende Kribbeln des Sichuanpfeffers plus Chilischärfe.",
+      "Die kantonesische Küche schätzt frische Zutaten und leichte Aromen und schenkte der Welt Dim Sum."
+     ],
+     "q": "Welcher regionale chinesische Geschmack reizt dich am meisten: prickelnd, frisch oder süß?",
+     "c": "Nimm ein chinesisches Gericht, das du kennst, und finde heraus, aus welcher Region es stammt."
+    },
+    "es": {
+     "t": "China: las grandes cocinas regionales",
+     "g": "Conoce las famosas escuelas culinarias regionales de China y lo que hace especial a cada una.",
+     "p": [
+      "La cocina china suele dividirse en ocho grandes cocinas, entre ellas Sichuan, cantonesa y Shandong.",
+      "La cocina de Sichuan es famosa por el málà: el hormigueo de la pimienta de Sichuan más el picante.",
+      "La cocina cantonesa valora lo fresco y los sabores ligeros, y regaló al mundo el dim sum."
+     ],
+     "q": "¿Qué sabor regional chino te parece más emocionante: hormigueante, fresco o dulce?",
+     "c": "Toma un plato chino que conozcas e intenta averiguar de qué región viene."
+    },
+    "fr": {
+     "t": "Chine : les grandes cuisines régionales",
+     "g": "Découvre les célèbres écoles culinaires régionales de Chine et ce qui rend chacune unique.",
+     "p": [
+      "La cuisine chinoise est souvent répartie en huit grandes cuisines, dont Sichuan, cantonaise et Shandong.",
+      "Le Sichuan est connu pour le málà : le picotement du poivre du Sichuan allié au piment.",
+      "La cuisine cantonaise privilégie la fraîcheur et la légèreté, et a offert au monde le dim sum."
+     ],
+     "q": "Quelle saveur régionale chinoise te tente le plus : picotante, fraîche ou sucrée ?",
+     "c": "Prends un plat chinois que tu connais et cherche de quelle région il vient."
+    },
+    "it": {
+     "t": "Cina: le grandi cucine regionali",
+     "g": "Conosci le famose scuole culinarie regionali cinesi e cosa rende speciale ognuna.",
+     "p": [
+      "La cucina cinese è spesso divisa in otto grandi cucine, tra cui Sichuan, cantonese e Shandong.",
+      "Il Sichuan è famoso per il málà: il formicolio del pepe di Sichuan unito al piccante.",
+      "La cucina cantonese ama ingredienti freschi e sapori leggeri e ha regalato al mondo il dim sum."
+     ],
+     "q": "Quale sapore regionale cinese ti incuriosisce di più: frizzante, fresco o dolce?",
+     "c": "Prendi un piatto cinese che conosci e prova a scoprire da quale regione viene."
+    },
+    "pt": {
+     "t": "China: as grandes cozinhas regionais",
+     "g": "Conhece as famosas escolas culinárias regionais da China e o que torna cada uma especial.",
+     "p": [
+      "A cozinha chinesa costuma dividir-se em oito grandes cozinhas, entre elas Sichuan, cantonesa e Shandong.",
+      "Sichuan é famosa pelo málà: o formigueiro da pimenta de Sichuan somado ao picante.",
+      "A cozinha cantonesa valoriza ingredientes frescos e sabores leves, e deu ao mundo o dim sum."
+     ],
+     "q": "Que sabor regional chinês te entusiasma mais: formigueiro, fresco ou doce?",
+     "c": "Pega num prato chinês que conheças e tenta descobrir de que região vem."
+    },
+    "pt_BR": {
+     "t": "China: as grandes cozinhas regionais",
+     "g": "Conheça as famosas escolas culinárias regionais da China e o que torna cada uma especial.",
+     "p": [
+      "A culinária chinesa costuma ser dividida em oito grandes cozinhas, entre elas Sichuan, cantonesa e Shandong.",
+      "Sichuan é famosa pelo málà: o formigamento da pimenta de Sichuan somado à ardência.",
+      "A cozinha cantonesa valoriza ingredientes frescos e sabores leves, e deu ao mundo o dim sum."
+     ],
+     "q": "Qual sabor regional chinês empolga mais você: formigante, fresco ou doce?",
+     "c": "Escolha um prato chinês que você conhece e tente descobrir de que região ele vem."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "China: dumplings and noodles",
+     "g": "Explore the wheat-loving north of China through dumplings, buns and noodles.",
+     "p": [
+      "Jiaozi are boiled or pan-fried dumplings, a beloved family tradition at Lunar New Year.",
+      "Baozi are fluffy steamed buns filled with meat, vegetables or sweet bean paste.",
+      "Hand-pulled noodles, like Lanzhou lamian, are stretched and folded by hand into thin strands."
+     ],
+     "q": "Have you ever folded dumplings with friends or family? How did they turn out?",
+     "c": "Fold three simple dumplings using store-bought wrappers and any filling you like."
+    },
+    "de": {
+     "t": "China: Teigtaschen und Nudeln",
+     "g": "Entdecke den weizenliebenden Norden Chinas über Teigtaschen, Dampfbrötchen und Nudeln.",
+     "p": [
+      "Jiaozi sind gekochte oder gebratene Teigtaschen, eine beliebte Familientradition zum Neujahrsfest.",
+      "Baozi sind fluffige Dampfbrötchen mit Fleisch, Gemüse oder süßer Bohnenpaste.",
+      "Handgezogene Nudeln wie Lanzhou Lamian werden von Hand gezogen und gefaltet, bis sie dünn sind."
+     ],
+     "q": "Hast du schon einmal mit Freunden oder Familie Teigtaschen gefaltet? Wie wurden sie?",
+     "c": "Falte drei einfache Teigtaschen mit gekauften Teigblättern und einer Füllung deiner Wahl."
+    },
+    "es": {
+     "t": "China: empanadillas y fideos",
+     "g": "Explora el norte de China, amante del trigo, a través de empanadillas, bollos y fideos.",
+     "p": [
+      "Los jiaozi son empanadillas hervidas o doradas, una querida tradición familiar del Año Nuevo Lunar.",
+      "Los baozi son bollos esponjosos al vapor rellenos de carne, verduras o pasta dulce de judías.",
+      "Los fideos estirados a mano, como el lamian de Lanzhou, se estiran y doblan hasta quedar finos."
+     ],
+     "q": "¿Alguna vez has hecho empanadillas con amigos o familia? ¿Cómo quedaron?",
+     "c": "Cierra tres empanadillas sencillas con obleas compradas y el relleno que más te guste."
+    },
+    "fr": {
+     "t": "Chine : raviolis et nouilles",
+     "g": "Explore le nord de la Chine, amoureux du blé, à travers raviolis, brioches vapeur et nouilles.",
+     "p": [
+      "Les jiaozi sont des raviolis bouillis ou poêlés, tradition familiale chère au Nouvel An lunaire.",
+      "Les baozi sont des petits pains vapeur moelleux garnis de viande, de légumes ou de pâte de haricots.",
+      "Les nouilles étirées à la main, comme le lamian de Lanzhou, sont tirées et pliées jusqu'à être fines."
+     ],
+     "q": "As-tu déjà façonné des raviolis avec des amis ou ta famille ? Comment étaient-ils ?",
+     "c": "Façonne trois raviolis simples avec des feuilles toutes prêtes et la garniture de ton choix."
+    },
+    "it": {
+     "t": "Cina: ravioli e noodles",
+     "g": "Esplora il nord della Cina, amante del grano, tra ravioli, panini al vapore e noodles.",
+     "p": [
+      "I jiaozi sono ravioli bolliti o saltati in padella, amata tradizione di famiglia al Capodanno lunare.",
+      "I baozi sono soffici panini al vapore ripieni di carne, verdure o pasta dolce di fagioli.",
+      "I noodles tirati a mano, come i lamian di Lanzhou, si allungano e piegano fino a renderli sottili."
+     ],
+     "q": "Hai mai chiuso ravioli con amici o familiari? Com'erano venuti?",
+     "c": "Chiudi tre ravioli semplici con sfoglie già pronte e il ripieno che preferisci."
+    },
+    "pt": {
+     "t": "China: pastéis e massas",
+     "g": "Explora o norte da China, amante do trigo, através de pastéis, pãezinhos e massas.",
+     "p": [
+      "Os jiaozi são pastéis cozidos ou fritos, uma tradição familiar muito querida no Ano Novo Lunar.",
+      "Os baozi são pãezinhos fofos cozidos a vapor, recheados com carne, legumes ou pasta doce de feijão.",
+      "As massas puxadas à mão, como o lamian de Lanzhou, são esticadas e dobradas até ficarem finas."
+     ],
+     "q": "Já fechaste pastéis com amigos ou família? Como ficaram?",
+     "c": "Fecha três pastéis simples com folhas compradas e o recheio de que mais gostes."
+    },
+    "pt_BR": {
+     "t": "China: guiozas e macarrão",
+     "g": "Explore o norte da China, amante do trigo, por meio de guiozas, pãezinhos e macarrão.",
+     "p": [
+      "Os jiaozi são guiozas cozidas ou douradas, uma tradição familiar querida no Ano Novo Lunar.",
+      "Os baozi são pãezinhos fofos no vapor, recheados de carne, legumes ou pasta doce de feijão.",
+      "O macarrão puxado à mão, como o lamian de Lanzhou, é esticado e dobrado até ficar fininho."
+     ],
+     "q": "Você já fechou guiozas com amigos ou família? Como ficaram?",
+     "c": "Feche três guiozas simples com massa pronta e o recheio que você preferir."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "India: the spice box",
+     "g": "Open the masala dabba, the spice box found in countless Indian kitchens.",
+     "p": [
+      "A masala dabba is a round tin holding small bowls of the most-used spices.",
+      "Common ones are turmeric, cumin, black mustard seed, coriander and chili powder.",
+      "In a tadka, whole spices sizzle in hot oil or ghee to release their aroma into a dish."
+     ],
+     "q": "If you had your own spice box, which seven spices would you put in it?",
+     "c": "Heat a spoon of oil, add cumin seeds for a few seconds until fragrant, and pour over rice."
+    },
+    "de": {
+     "t": "Indien: Die Gewürzdose",
+     "g": "Öffne die Masala Dabba, die Gewürzdose in unzähligen indischen Küchen.",
+     "p": [
+      "Eine Masala Dabba ist eine runde Dose mit kleinen Schälchen der meistgenutzten Gewürze.",
+      "Typisch sind Kurkuma, Kreuzkümmel, schwarze Senfsaat, Koriander und Chilipulver.",
+      "Beim Tadka brutzeln ganze Gewürze in heißem Öl oder Ghee und geben ihr Aroma ans Gericht ab."
+     ],
+     "q": "Wenn du deine eigene Gewürzdose hättest, welche sieben Gewürze kämen hinein?",
+     "c": "Erhitze einen Löffel Öl, röste Kreuzkümmelsamen einige Sekunden, bis sie duften, und gib sie über Reis."
+    },
+    "es": {
+     "t": "India: la caja de especias",
+     "g": "Abre el masala dabba, la caja de especias presente en innumerables cocinas indias.",
+     "p": [
+      "El masala dabba es una lata redonda con cuencos pequeños de las especias más usadas.",
+      "Las habituales son cúrcuma, comino, semilla de mostaza negra, cilantro y chile en polvo.",
+      "En el tadka, las especias enteras chisporrotean en aceite o ghee caliente y perfuman el plato."
+     ],
+     "q": "Si tuvieras tu propia caja de especias, ¿qué siete especias pondrías?",
+     "c": "Calienta una cucharada de aceite, tuesta comino unos segundos hasta que huela y viértelo sobre arroz."
+    },
+    "fr": {
+     "t": "Inde : la boîte à épices",
+     "g": "Ouvre le masala dabba, la boîte à épices présente dans d'innombrables cuisines indiennes.",
+     "p": [
+      "Le masala dabba est une boîte ronde contenant de petits bols des épices les plus utilisées.",
+      "On y trouve souvent curcuma, cumin, graines de moutarde noire, coriandre et piment en poudre.",
+      "Dans un tadka, les épices entières grésillent dans l'huile ou le ghee chaud pour parfumer le plat."
+     ],
+     "q": "Si tu avais ta propre boîte à épices, quelles sept épices y mettrais-tu ?",
+     "c": "Chauffe une cuillère d'huile, fais grésiller du cumin quelques secondes et verse-le sur du riz."
+    },
+    "it": {
+     "t": "India: la scatola delle spezie",
+     "g": "Apri il masala dabba, la scatola delle spezie presente in tantissime cucine indiane.",
+     "p": [
+      "Il masala dabba è una scatola rotonda con ciotoline delle spezie più usate.",
+      "Le più comuni sono curcuma, cumino, semi di senape nera, coriandolo e peperoncino in polvere.",
+      "Nel tadka le spezie intere sfrigolano in olio o ghee caldo e profumano il piatto."
+     ],
+     "q": "Se avessi la tua scatola delle spezie, quali sette spezie ci metteresti?",
+     "c": "Scalda un cucchiaio d'olio, fai sfrigolare semi di cumino per pochi secondi e versali sul riso."
+    },
+    "pt": {
+     "t": "Índia: a caixa de especiarias",
+     "g": "Abre o masala dabba, a caixa de especiarias presente em inúmeras cozinhas indianas.",
+     "p": [
+      "O masala dabba é uma lata redonda com taças pequenas das especiarias mais usadas.",
+      "As mais comuns são açafrão-das-índias, cominhos, sementes de mostarda preta, coentros e malagueta em pó.",
+      "No tadka, especiarias inteiras crepitam em óleo ou ghee quente e perfumam o prato."
+     ],
+     "q": "Se tivesses a tua própria caixa de especiarias, que sete especiarias lá porias?",
+     "c": "Aquece uma colher de óleo, junta cominhos uns segundos até cheirarem e deita sobre arroz."
+    },
+    "pt_BR": {
+     "t": "Índia: a caixa de especiarias",
+     "g": "Abra o masala dabba, a caixa de especiarias presente em inúmeras cozinhas indianas.",
+     "p": [
+      "O masala dabba é uma lata redonda com potinhos das especiarias mais usadas.",
+      "As mais comuns são cúrcuma, cominho, semente de mostarda preta, coentro e pimenta em pó.",
+      "No tadka, especiarias inteiras chiam no óleo ou ghee quente e perfumam o prato."
+     ],
+     "q": "Se você tivesse sua própria caixa de especiarias, quais sete colocaria nela?",
+     "c": "Aqueça uma colher de óleo, junte sementes de cominho por alguns segundos e despeje sobre o arroz."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "India: dal and rice",
+     "g": "Discover dal, the lentil comfort food enjoyed every day by millions.",
+     "p": [
+      "Dal means split pulses such as lentils, and also the stew made from them.",
+      "Popular types include toor, masoor and moong dal, each with its own colour and texture.",
+      "Dal chawal, lentils with rice, is a simple, nourishing meal across much of India."
+     ],
+     "q": "What is your ultimate comfort food after a long day?",
+     "c": "Simmer red lentils with turmeric and salt until soft, then finish with a quick spice tadka."
+    },
+    "de": {
+     "t": "Indien: Dal und Reis",
+     "g": "Entdecke Dal, das Linsen-Wohlfühlessen, das Millionen Menschen täglich genießen.",
+     "p": [
+      "Dal bezeichnet geschälte Hülsenfrüchte wie Linsen und auch den Eintopf daraus.",
+      "Beliebt sind Toor, Masoor und Moong Dal, jede mit eigener Farbe und Textur.",
+      "Dal Chawal, Linsen mit Reis, ist in weiten Teilen Indiens eine einfache, nahrhafte Mahlzeit."
+     ],
+     "q": "Was ist dein absolutes Wohlfühlessen nach einem langen Tag?",
+     "c": "Köchle rote Linsen mit Kurkuma und Salz weich und vollende sie mit einem schnellen Gewürz-Tadka."
+    },
+    "es": {
+     "t": "India: dal y arroz",
+     "g": "Descubre el dal, el reconfortante plato de lentejas que millones disfrutan cada día.",
+     "p": [
+      "Dal significa legumbres partidas como las lentejas, y también el guiso que se hace con ellas.",
+      "Entre los tipos populares están el toor, masoor y moong dal, cada uno con su color y textura.",
+      "El dal chawal, lentejas con arroz, es una comida sencilla y nutritiva en gran parte de India."
+     ],
+     "q": "¿Cuál es tu comida reconfortante favorita después de un día largo?",
+     "c": "Cuece lentejas rojas con cúrcuma y sal hasta que estén suaves y termina con un tadka rápido."
+    },
+    "fr": {
+     "t": "Inde : dal et riz",
+     "g": "Découvre le dal, le plat réconfortant de lentilles que des millions de gens mangent chaque jour.",
+     "p": [
+      "Dal désigne les légumineuses cassées comme les lentilles, et aussi le plat mijoté qu'on en tire.",
+      "Parmi les plus courants : toor, masoor et moong dal, chacun avec sa couleur et sa texture.",
+      "Le dal chawal, lentilles et riz, est un repas simple et nourrissant dans une grande partie de l'Inde."
+     ],
+     "q": "Quel est ton plat réconfortant préféré après une longue journée ?",
+     "c": "Fais mijoter des lentilles corail avec curcuma et sel, puis termine par un tadka d'épices rapide."
+    },
+    "it": {
+     "t": "India: dal e riso",
+     "g": "Scopri il dal, il piatto di lenticchie che conforta milioni di persone ogni giorno.",
+     "p": [
+      "Dal indica i legumi decorticati come le lenticchie, e anche lo stufato che se ne ricava.",
+      "Tra i più diffusi ci sono toor, masoor e moong dal, ognuno con colore e consistenza propri.",
+      "Il dal chawal, lenticchie con riso, è un pasto semplice e nutriente in gran parte dell'India."
+     ],
+     "q": "Qual è il tuo cibo del conforto preferito dopo una lunga giornata?",
+     "c": "Cuoci lenticchie rosse con curcuma e sale finché sono morbide e completa con un tadka veloce."
+    },
+    "pt": {
+     "t": "Índia: dal e arroz",
+     "g": "Descobre o dal, o prato reconfortante de lentilhas que milhões comem todos os dias.",
+     "p": [
+      "Dal significa leguminosas partidas, como as lentilhas, e também o guisado feito com elas.",
+      "Os tipos mais populares incluem toor, masoor e moong dal, cada um com a sua cor e textura.",
+      "O dal chawal, lentilhas com arroz, é uma refeição simples e nutritiva em grande parte da Índia."
+     ],
+     "q": "Qual é a tua comida reconfortante preferida depois de um dia longo?",
+     "c": "Coze lentilhas vermelhas com açafrão-das-índias e sal até ficarem macias e termina com um tadka rápido."
+    },
+    "pt_BR": {
+     "t": "Índia: dal e arroz",
+     "g": "Descubra o dal, o prato reconfortante de lentilhas que milhões comem todos os dias.",
+     "p": [
+      "Dal significa leguminosas partidas, como lentilhas, e também o ensopado feito com elas.",
+      "Os tipos populares incluem toor, masoor e moong dal, cada um com sua cor e textura.",
+      "O dal chawal, lentilha com arroz, é uma refeição simples e nutritiva em grande parte da Índia."
+     ],
+     "q": "Qual é a sua comida reconfortante favorita depois de um dia longo?",
+     "c": "Cozinhe lentilhas vermelhas com cúrcuma e sal até amaciar e finalize com um tadka rápido."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "tea",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cold brew tea",
+     "g": "Make cold brew tea by steeping leaves in cold water for hours for a smooth, naturally sweet drink.",
+     "p": [
+      "Use about 8 to 10 grams of leaf per litre of cold water, then leave it in the fridge.",
+      "Green teas need around 4 to 6 hours; black teas and oolongs can take 8 to 12 hours.",
+      "Cold water pulls out less bitterness, so the drink tastes rounder; strain it and drink within a day or two."
+     ],
+     "q": "Have you ever tried cold brew tea or cold brew coffee?",
+     "c": "Put a spoon of tea in a jar of cold water in the fridge tonight and taste it tomorrow."
+    },
+    "de": {
+     "t": "Cold-Brew-Tee",
+     "g": "Mach Cold-Brew-Tee, indem du Blätter stundenlang in kaltem Wasser ziehen lässt, für ein weiches, natürlich süßes Getränk.",
+     "p": [
+      "Nimm etwa 8 bis 10 Gramm Blatt pro Liter kaltes Wasser und stell es in den Kühlschrank.",
+      "Grüntee braucht etwa 4 bis 6 Stunden; Schwarztee und Oolong können 8 bis 12 Stunden ziehen.",
+      "Kaltes Wasser löst weniger Bitterstoffe, der Tee schmeckt runder; abseihen und in ein, zwei Tagen trinken."
+     ],
+     "q": "Hast du schon einmal Cold-Brew-Tee oder Cold-Brew-Kaffee probiert?",
+     "c": "Gib heute Abend einen Löffel Tee in ein Glas kaltes Wasser in den Kühlschrank und probiere morgen."
+    },
+    "es": {
+     "t": "Té en infusión fría",
+     "g": "Prepara cold brew de té dejando las hojas en agua fría durante horas para lograr una bebida suave y dulce de forma natural.",
+     "p": [
+      "Usa unos 8-10 gramos de hoja por litro de agua fría y déjalo en la nevera.",
+      "Los tés verdes necesitan unas 4-6 horas; los negros y los oolong, de 8 a 12 horas.",
+      "El agua fría saca menos amargor, así que sabe más redondo; cuélalo y bébelo en uno o dos días."
+     ],
+     "q": "¿Has probado alguna vez el té o el café cold brew?",
+     "c": "Pon esta noche una cucharada de té en un tarro con agua fría en la nevera y pruébalo mañana."
+    },
+    "fr": {
+     "t": "Le thé infusé à froid",
+     "g": "Prépare un thé infusé à froid en laissant les feuilles des heures dans l'eau froide, pour une boisson douce et naturellement sucrée.",
+     "p": [
+      "Compte environ 8 à 10 grammes de feuilles par litre d'eau froide, puis laisse au réfrigérateur.",
+      "Les thés verts demandent environ 4 à 6 heures ; les noirs et les oolongs, 8 à 12 heures.",
+      "L'eau froide extrait moins d'amertume, d'où un goût plus rond ; filtre-le et bois-le sous un ou deux jours."
+     ],
+     "q": "As-tu déjà goûté du thé ou du café infusé à froid ?",
+     "c": "Mets ce soir une cuillère de thé dans un bocal d'eau froide au réfrigérateur et goûte demain."
+    },
+    "it": {
+     "t": "Il tè in infusione a freddo",
+     "g": "Prepara il cold brew di tè lasciando le foglie in acqua fredda per ore, per una bevanda morbida e dolce in modo naturale.",
+     "p": [
+      "Usa circa 8-10 grammi di foglie per litro d'acqua fredda e lascia in frigorifero.",
+      "I tè verdi richiedono circa 4-6 ore; i neri e gli oolong 8-12 ore.",
+      "L'acqua fredda estrae meno amaro, quindi il gusto è più rotondo; filtralo e bevilo entro uno o due giorni."
+     ],
+     "q": "Hai mai provato il tè o il caffè cold brew?",
+     "c": "Stasera metti un cucchiaio di tè in un barattolo d'acqua fredda in frigo e assaggialo domani."
+    },
+    "pt": {
+     "t": "Chá em infusão a frio",
+     "g": "Prepara chá cold brew deixando as folhas em água fria durante horas, para uma bebida suave e naturalmente doce.",
+     "p": [
+      "Usa cerca de 8 a 10 gramas de folha por litro de água fria e deixa no frigorífico.",
+      "Os chás verdes precisam de cerca de 4 a 6 horas; os pretos e os oolongs de 8 a 12 horas.",
+      "A água fria tira menos amargor, por isso sabe mais redondo; coa e bebe em um ou dois dias."
+     ],
+     "q": "Já provaste chá ou café cold brew?",
+     "c": "Põe esta noite uma colher de chá num frasco com água fria no frigorífico e prova amanhã."
+    },
+    "pt_BR": {
+     "t": "Chá cold brew",
+     "g": "Faça chá cold brew deixando as folhas em água fria por horas, para uma bebida suave e naturalmente doce.",
+     "p": [
+      "Use cerca de 8 a 10 gramas de folha por litro de água fria e deixe na geladeira.",
+      "Chás verdes precisam de cerca de 4 a 6 horas; pretos e oolongs, de 8 a 12 horas.",
+      "A água fria puxa menos amargor, então o sabor fica mais redondo; coe e beba em um ou dois dias."
+     ],
+     "q": "Você já provou chá ou café cold brew?",
+     "c": "Coloque hoje à noite uma colher de chá num pote com água fria na geladeira e prove amanhã."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sun tea and summer drinks",
+     "g": "Try easy summer tea ideas with fruit slices, herbs and sparkling water.",
+     "p": [
+      "Classic sun tea steeps in a jar in the sunshine; many people now prefer the fridge, which is cleaner and just as easy.",
+      "Add slices of peach, citrus or berries, or a sprig of mint or basil, to cold tea for fresh aromas.",
+      "Top strong cold tea with sparkling water for a light, fizzy summer drink."
+     ],
+     "q": "What fruit or herb would you love to add to a cold tea?",
+     "c": "Make a jug of cold tea with one fruit and one herb today and give your creation a name."
+    },
+    "de": {
+     "t": "Sonnentee und Sommergetränke",
+     "g": "Probiere einfache Sommer-Tee-Ideen mit Fruchtscheiben, Kräutern und Sprudelwasser.",
+     "p": [
+      "Klassischer Sonnentee zieht im Glas in der Sonne; viele nehmen heute lieber den Kühlschrank, hygienischer und genauso einfach.",
+      "Gib Pfirsich-, Zitrus- oder Beerenscheiben oder einen Zweig Minze oder Basilikum zu kaltem Tee, für frische Aromen.",
+      "Füll starken kalten Tee mit Sprudelwasser auf, für ein leichtes, prickelndes Sommergetränk."
+     ],
+     "q": "Welche Frucht oder welches Kraut würdest du gern in kalten Tee geben?",
+     "c": "Mach heute eine Karaffe kalten Tee mit einer Frucht und einem Kraut und gib deiner Kreation einen Namen."
+    },
+    "es": {
+     "t": "Té al sol y bebidas de verano",
+     "g": "Prueba ideas fáciles de té para el verano con rodajas de fruta, hierbas y agua con gas.",
+     "p": [
+      "El clásico té al sol se infusiona en un tarro bajo el sol; hoy muchos prefieren la nevera, más higiénica e igual de fácil.",
+      "Añade al té frío rodajas de melocotón, cítricos o frutos rojos, o una ramita de menta o albahaca, para aromas frescos.",
+      "Completa un té frío fuerte con agua con gas para una bebida de verano ligera y burbujeante."
+     ],
+     "q": "¿Qué fruta o hierba te encantaría añadir a un té frío?",
+     "c": "Prepara hoy una jarra de té frío con una fruta y una hierba y ponle nombre a tu creación."
+    },
+    "fr": {
+     "t": "Thé au soleil et boissons d'été",
+     "g": "Essaie des idées de thé d'été faciles avec des tranches de fruits, des herbes et de l'eau pétillante.",
+     "p": [
+      "Le sun tea classique infuse en bocal au soleil ; beaucoup préfèrent aujourd'hui le réfrigérateur, plus hygiénique et aussi simple.",
+      "Ajoute au thé froid des tranches de pêche, d'agrumes ou des baies, ou un brin de menthe ou de basilic, pour des arômes frais.",
+      "Allonge un thé froid corsé d'eau pétillante pour une boisson d'été légère et pétillante."
+     ],
+     "q": "Quel fruit ou quelle herbe aimerais-tu ajouter à un thé froid ?",
+     "c": "Prépare aujourd'hui une carafe de thé froid avec un fruit et une herbe, et donne un nom à ta création."
+    },
+    "it": {
+     "t": "Tè al sole e bevande estive",
+     "g": "Prova idee estive facili con fette di frutta, erbe aromatiche e acqua frizzante.",
+     "p": [
+      "Il classico sun tea si infonde in un barattolo al sole; oggi molti preferiscono il frigo, più igienico e altrettanto facile.",
+      "Aggiungi al tè freddo fette di pesca, agrumi o frutti di bosco, o un rametto di menta o basilico, per aromi freschi.",
+      "Allunga un tè freddo forte con acqua frizzante per una bevanda estiva leggera e frizzante."
+     ],
+     "q": "Quale frutta o erba ti piacerebbe aggiungere a un tè freddo?",
+     "c": "Prepara oggi una caraffa di tè freddo con un frutto e un'erba e dai un nome alla tua creazione."
+    },
+    "pt": {
+     "t": "Chá ao sol e bebidas de verão",
+     "g": "Experimenta ideias fáceis de chá para o verão com rodelas de fruta, ervas e água com gás.",
+     "p": [
+      "O clássico chá ao sol infunde num frasco ao sol; hoje muitos preferem o frigorífico, mais higiénico e igualmente fácil.",
+      "Junta ao chá frio rodelas de pêssego, citrinos ou frutos vermelhos, ou um raminho de hortelã ou manjericão, para aromas frescos.",
+      "Completa um chá frio forte com água com gás para uma bebida de verão leve e borbulhante."
+     ],
+     "q": "Que fruta ou erva gostarias de juntar a um chá frio?",
+     "c": "Faz hoje um jarro de chá frio com uma fruta e uma erva e dá um nome à tua criação."
+    },
+    "pt_BR": {
+     "t": "Chá de sol e bebidas de verão",
+     "g": "Experimente ideias fáceis de chá para o verão com rodelas de fruta, ervas e água com gás.",
+     "p": [
+      "O clássico chá de sol fica num pote ao sol; hoje muita gente prefere a geladeira, mais higiênica e igualmente fácil.",
+      "Coloque no chá gelado rodelas de pêssego, cítricos ou frutas vermelhas, ou um raminho de hortelã ou manjericão, para aromas frescos.",
+      "Complete um chá gelado forte com água com gás para uma bebida de verão leve e borbulhante."
+     ],
+     "q": "Que fruta ou erva você adoraria colocar num chá gelado?",
+     "c": "Faça hoje uma jarra de chá gelado com uma fruta e uma erva e dê um nome à sua criação."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a teapot",
+     "g": "Learn what to look for in your first everyday teapot: size, material and spout.",
+     "p": [
+      "Pick a size that matches how many cups you usually make; leaves taste best with room to move.",
+      "Porcelain and glazed ceramic are neutral for any tea; glass lets you watch the leaves dance.",
+      "Check that the lid sits firmly, the spout pours without dripping and there is a strainer or space for an infuser."
+     ],
+     "q": "If you could choose any teapot, what would it look like?",
+     "c": "Measure how much your teapot or favourite mug holds in ml, so you can weigh the right amount of leaf."
+    },
+    "de": {
+     "t": "Eine Teekanne auswählen",
+     "g": "Lerne, worauf es bei deiner ersten Alltagskanne ankommt: Größe, Material und Ausguss.",
+     "p": [
+      "Wähle eine Größe, die zu deiner üblichen Tassenzahl passt; Blätter schmecken am besten mit Platz zum Bewegen.",
+      "Porzellan und glasierte Keramik sind für jeden Tee neutral; in Glas siehst du die Blätter tanzen.",
+      "Prüfe, ob der Deckel fest sitzt, der Ausguss nicht tropft und ein Sieb oder Platz für einen Einsatz da ist."
+     ],
+     "q": "Wenn du jede Teekanne wählen könntest, wie würde sie aussehen?",
+     "c": "Miss, wie viel ml deine Kanne oder Lieblingstasse fasst, damit du die richtige Blattmenge abwiegen kannst."
+    },
+    "es": {
+     "t": "Elegir una tetera",
+     "g": "Aprende qué buscar en tu primera tetera de diario: tamaño, material y pico.",
+     "p": [
+      "Elige un tamaño acorde con las tazas que sueles preparar; la hoja sabe mejor si tiene espacio para moverse.",
+      "La porcelana y la cerámica esmaltada son neutras para cualquier té; el vidrio te deja ver bailar las hojas.",
+      "Comprueba que la tapa encaje bien, que el pico no gotee y que tenga filtro o espacio para un infusor."
+     ],
+     "q": "Si pudieras elegir cualquier tetera, ¿cómo sería?",
+     "c": "Mide cuántos ml caben en tu tetera o taza favorita para poder pesar la cantidad de hoja justa."
+    },
+    "fr": {
+     "t": "Choisir une théière",
+     "g": "Apprends ce qu'il faut regarder pour ta première théière du quotidien : taille, matière et bec.",
+     "p": [
+      "Choisis une taille adaptée au nombre de tasses que tu prépares ; les feuilles sont meilleures avec de la place pour bouger.",
+      "La porcelaine et la céramique émaillée sont neutres pour tout thé ; le verre te laisse voir danser les feuilles.",
+      "Vérifie que le couvercle tient bien, que le bec verse sans goutter et qu'il y a un filtre ou de la place pour un infuseur."
+     ],
+     "q": "Si tu pouvais choisir n'importe quelle théière, à quoi ressemblerait-elle ?",
+     "c": "Mesure combien de ml contient ta théière ou ta tasse préférée, pour peser la bonne dose de feuilles."
+    },
+    "it": {
+     "t": "Scegliere una teiera",
+     "g": "Scopri cosa cercare nella tua prima teiera di tutti i giorni: dimensione, materiale e beccuccio.",
+     "p": [
+      "Scegli una misura adatta alle tazze che prepari di solito; le foglie rendono meglio con spazio per muoversi.",
+      "Porcellana e ceramica smaltata sono neutre per ogni tè; il vetro ti fa vedere le foglie danzare.",
+      "Controlla che il coperchio stia fermo, che il beccuccio non goccioli e che ci sia un filtro o spazio per un infusore."
+     ],
+     "q": "Se potessi scegliere qualsiasi teiera, come sarebbe?",
+     "c": "Misura quanti ml contiene la tua teiera o la tua tazza preferita, così potrai pesare la giusta dose di foglie."
+    },
+    "pt": {
+     "t": "Escolher um bule",
+     "g": "Aprende o que procurar no teu primeiro bule do dia a dia: tamanho, material e bico.",
+     "p": [
+      "Escolhe um tamanho de acordo com as chávenas que costumas fazer; a folha sabe melhor com espaço para se mexer.",
+      "A porcelana e a cerâmica vidrada são neutras para qualquer chá; o vidro deixa-te ver as folhas a dançar.",
+      "Confirma que a tampa assenta bem, que o bico não pinga e que há filtro ou espaço para um infusor."
+     ],
+     "q": "Se pudesses escolher qualquer bule, como seria?",
+     "c": "Mede quantos ml levam o teu bule ou a tua caneca preferida, para pesares a quantidade certa de folha."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um bule",
+     "g": "Aprenda o que procurar no seu primeiro bule do dia a dia: tamanho, material e bico.",
+     "p": [
+      "Escolha um tamanho de acordo com as xícaras que você costuma fazer; a folha fica melhor com espaço para se mexer.",
+      "Porcelana e cerâmica esmaltada são neutras para qualquer chá; o vidro deixa você ver as folhas dançando.",
+      "Confira se a tampa encaixa firme, se o bico não pinga e se há filtro ou espaço para um infusor."
+     ],
+     "q": "Se você pudesse escolher qualquer bule, como ele seria?",
+     "c": "Meça quantos ml cabem no seu bule ou na sua caneca favorita, para pesar a quantidade certa de folha."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The infuser and the strainer",
+     "g": "Compare baskets, balls and mesh strainers and find the ones that give leaves room to open.",
+     "p": [
+      "Small tea balls pack leaves tightly, so they cannot unfold and the tea tastes weaker.",
+      "A wide basket infuser that fills most of the cup or pot lets leaves expand and brew evenly.",
+      "A fine mesh strainer is perfect when you brew leaves loose in a pot and pour through it."
+     ],
+     "q": "What do you currently use to separate leaves from your tea?",
+     "c": "Brew the same tea in a small ball and in a wide basket or loose in a pot, and compare the flavour."
+    },
+    "de": {
+     "t": "Teesieb und Abseiher",
+     "g": "Vergleiche Körbchen, Teeeier und feine Siebe und finde die, die den Blättern Raum zum Öffnen geben.",
+     "p": [
+      "Kleine Teeeier pressen die Blätter eng zusammen, sie können sich nicht entfalten und der Tee schmeckt dünner.",
+      "Ein breites Siebkörbchen, das fast die ganze Tasse oder Kanne füllt, lässt die Blätter aufgehen und gleichmäßig ziehen.",
+      "Ein feines Sieb ist ideal, wenn du die Blätter lose in der Kanne ziehen lässt und hindurchgießt."
+     ],
+     "q": "Womit trennst du die Blätter gerade von deinem Tee?",
+     "c": "Brühe denselben Tee im kleinen Teeei und im breiten Körbchen oder lose in der Kanne und vergleiche."
+    },
+    "es": {
+     "t": "El infusor y el colador",
+     "g": "Compara cestas, bolas y coladores de malla y descubre cuáles dejan espacio a la hoja para abrirse.",
+     "p": [
+      "Las bolas pequeñas aprietan las hojas, que no pueden abrirse, y el té sale más flojo.",
+      "Un infusor de cesta ancho que ocupe casi toda la taza o tetera deja que la hoja se expanda y se infusione por igual.",
+      "Un colador de malla fina es perfecto si infusionas la hoja suelta en la tetera y viertes a través de él."
+     ],
+     "q": "¿Qué usas ahora para separar las hojas de tu té?",
+     "c": "Prepara el mismo té en una bola pequeña y en una cesta ancha o suelto en tetera, y compara el sabor."
+    },
+    "fr": {
+     "t": "L'infuseur et la passoire",
+     "g": "Compare paniers, boules et passoires fines et trouve ceux qui laissent aux feuilles la place de s'ouvrir.",
+     "p": [
+      "Les petites boules serrent les feuilles, qui ne peuvent pas se déplier, et le thé paraît plus faible.",
+      "Un large panier qui occupe presque toute la tasse ou la théière laisse les feuilles s'ouvrir et infuser uniformément.",
+      "Une passoire fine est parfaite quand tu infuses les feuilles libres dans la théière et verses à travers."
+     ],
+     "q": "Qu'utilises-tu en ce moment pour séparer les feuilles de ton thé ?",
+     "c": "Infuse le même thé dans une petite boule et dans un large panier ou en vrac dans la théière, et compare."
+    },
+    "it": {
+     "t": "L'infusore e il colino",
+     "g": "Confronta cestelli, sfere e colini a rete e scopri quali lasciano spazio alle foglie per aprirsi.",
+     "p": [
+      "Le sfere piccole stringono le foglie, che non riescono ad aprirsi, e il tè risulta più debole.",
+      "Un infusore a cestello largo che occupa quasi tutta la tazza o teiera lascia espandere le foglie e infondere in modo uniforme.",
+      "Un colino a rete fine è perfetto quando lasci le foglie libere in teiera e versi attraverso di esso."
+     ],
+     "q": "Cosa usi ora per separare le foglie dal tuo tè?",
+     "c": "Prepara lo stesso tè in una piccola sfera e in un cestello largo o sfuso in teiera, e confronta il gusto."
+    },
+    "pt": {
+     "t": "O infusor e o coador",
+     "g": "Compara cestos, bolas e coadores de rede e descobre quais dão espaço à folha para abrir.",
+     "p": [
+      "As bolas pequenas apertam as folhas, que não conseguem abrir, e o chá fica mais fraco.",
+      "Um infusor de cesto largo que ocupe quase toda a chávena ou bule deixa a folha expandir e infundir por igual.",
+      "Um coador de rede fina é perfeito quando infundes a folha solta no bule e deitas através dele."
+     ],
+     "q": "O que usas agora para separar as folhas do teu chá?",
+     "c": "Prepara o mesmo chá numa bola pequena e num cesto largo ou solto no bule, e compara o sabor."
+    },
+    "pt_BR": {
+     "t": "O infusor e o coador",
+     "g": "Compare cestos, bolinhas e coadores de tela e descubra quais dão espaço para a folha abrir.",
+     "p": [
+      "As bolinhas pequenas apertam as folhas, que não conseguem abrir, e o chá fica mais fraco.",
+      "Um infusor de cesto largo que ocupe quase toda a xícara ou bule deixa a folha se expandir e infusionar por igual.",
+      "Um coador de tela fina é perfeito quando você deixa a folha solta no bule e serve passando por ele."
+     ],
+     "q": "O que você usa agora para separar as folhas do seu chá?",
+     "c": "Prepare o mesmo chá numa bolinha pequena e num cesto largo ou solto no bule, e compare o sabor."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brewing several cups from one leaf",
+     "g": "Discover multiple short infusions and how the flavour shifts from the first to the fifth cup.",
+     "p": [
+      "Good whole-leaf teas, especially oolong, green and pu-erh, can be steeped several times.",
+      "Use short steeps and add a little time to each new infusion as the leaves give up their flavour.",
+      "Early cups are often aromatic, middle cups are full, and later cups turn soft and sweet."
+     ],
+     "q": "Have you ever reused your tea leaves, or do you always start fresh?",
+     "c": "Steep one spoon of whole-leaf tea at least three times and write one word for each cup."
+    },
+    "de": {
+     "t": "Mehrere Tassen aus einem Blatt",
+     "g": "Entdecke mehrere kurze Aufgüsse und wie sich der Geschmack von der ersten bis zur fünften Tasse wandelt.",
+     "p": [
+      "Gute Blatttees, besonders Oolong, Grüntee und Pu-Erh, lassen sich mehrmals aufgießen.",
+      "Nutze kurze Ziehzeiten und verlängere jeden neuen Aufguss etwas, während die Blätter ihr Aroma abgeben.",
+      "Frühe Tassen sind oft aromatisch, mittlere voll, späte werden weich und süß."
+     ],
+     "q": "Hast du deine Teeblätter schon einmal wiederverwendet, oder fängst du immer neu an?",
+     "c": "Gieß einen Löffel Blatttee mindestens dreimal auf und schreib zu jeder Tasse ein Wort."
+    },
+    "es": {
+     "t": "Varias tazas con la misma hoja",
+     "g": "Descubre las infusiones cortas y repetidas y cómo cambia el sabor de la primera a la quinta taza.",
+     "p": [
+      "Los buenos tés de hoja entera, sobre todo oolong, verde y pu-erh, admiten varias infusiones.",
+      "Usa infusiones cortas y añade un poco de tiempo a cada nueva, a medida que la hoja cede su sabor.",
+      "Las primeras tazas suelen ser aromáticas, las intermedias plenas y las últimas suaves y dulces."
+     ],
+     "q": "¿Alguna vez has reutilizado tus hojas de té o siempre empiezas de cero?",
+     "c": "Infusiona una cucharada de té de hoja entera al menos tres veces y escribe una palabra para cada taza."
+    },
+    "fr": {
+     "t": "Plusieurs tasses avec les mêmes feuilles",
+     "g": "Découvre les infusions courtes et répétées, et comment le goût évolue de la première à la cinquième tasse.",
+     "p": [
+      "Les bons thés en feuilles entières, surtout oolong, vert et pu-erh, s'infusent plusieurs fois.",
+      "Fais des infusions courtes et allonge un peu chaque nouvelle infusion à mesure que les feuilles s'épuisent.",
+      "Les premières tasses sont souvent aromatiques, celles du milieu pleines, les dernières douces et sucrées."
+     ],
+     "q": "As-tu déjà réutilisé tes feuilles de thé, ou recommences-tu toujours à neuf ?",
+     "c": "Infuse une cuillère de thé en feuilles entières au moins trois fois et note un mot pour chaque tasse."
+    },
+    "it": {
+     "t": "Più tazze dalle stesse foglie",
+     "g": "Scopri le infusioni brevi e ripetute e come il gusto cambia dalla prima alla quinta tazza.",
+     "p": [
+      "I buoni tè a foglia intera, soprattutto oolong, verde e pu-erh, si possono infondere più volte.",
+      "Usa infusioni brevi e allunga un po' ogni nuova infusione, mentre le foglie cedono il loro sapore.",
+      "Le prime tazze sono spesso aromatiche, quelle centrali piene, le ultime morbide e dolci."
+     ],
+     "q": "Hai mai riutilizzato le foglie di tè o ricominci sempre da capo?",
+     "c": "Infondi un cucchiaio di tè a foglia intera almeno tre volte e scrivi una parola per ogni tazza."
+    },
+    "pt": {
+     "t": "Várias chávenas da mesma folha",
+     "g": "Descobre as infusões curtas e repetidas e como o sabor muda da primeira à quinta chávena.",
+     "p": [
+      "Os bons chás de folha inteira, sobretudo oolong, verde e pu-erh, aguentam várias infusões.",
+      "Usa infusões curtas e acrescenta um pouco de tempo a cada nova, à medida que a folha liberta o sabor.",
+      "As primeiras chávenas costumam ser aromáticas, as do meio cheias e as últimas suaves e doces."
+     ],
+     "q": "Já reaproveitaste as folhas de chá ou começas sempre do zero?",
+     "c": "Infunde uma colher de chá de folha inteira pelo menos três vezes e escreve uma palavra para cada chávena."
+    },
+    "pt_BR": {
+     "t": "Várias xícaras da mesma folha",
+     "g": "Descubra as infusões curtas e repetidas e como o sabor muda da primeira à quinta xícara.",
+     "p": [
+      "Bons chás de folha inteira, principalmente oolong, verde e pu-erh, aguentam várias infusões.",
+      "Use infusões curtas e aumente um pouco o tempo a cada nova, conforme a folha vai soltando o sabor.",
+      "As primeiras xícaras costumam ser aromáticas, as do meio encorpadas e as últimas suaves e doces."
+     ],
+     "q": "Você já reaproveitou as folhas de chá ou sempre começa do zero?",
+     "c": "Faça pelo menos três infusões com uma colher de chá de folha inteira e escreva uma palavra para cada xícara."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea grades explained simply",
+     "g": "Understand whole leaf, broken leaf, fannings and dust, and what the letters on black tea mean.",
+     "p": [
+      "Grades describe leaf size and look, not flavour; whole leaves are graded highest, then broken leaf, fannings and dust.",
+      "OP means Orange Pekoe, a whole-leaf grade; extra letters like F (flowery), G (golden) and T (tippy) mean more buds.",
+      "BOP is broken orange pekoe; fannings and dust are tiny pieces that brew fast and fill most tea bags."
+     ],
+     "q": "Did you think 'orange pekoe' had something to do with oranges?",
+     "c": "Find a grade such as OP, FOP or BOP on any black tea package and work out what it tells you."
+    },
+    "de": {
+     "t": "Teegrade einfach erklärt",
+     "g": "Verstehe Blatt, Bruch, Fannings und Dust und was die Buchstaben auf Schwarztee bedeuten.",
+     "p": [
+      "Grade beschreiben Größe und Aussehen des Blattes, nicht den Geschmack: erst ganzes Blatt, dann Bruch, Fannings und Dust.",
+      "OP heißt Orange Pekoe, ein Blattgrad; Zusatzbuchstaben wie F (flowery), G (golden) und T (tippy) bedeuten mehr Knospen.",
+      "BOP ist Broken Orange Pekoe; Fannings und Dust sind winzige Teilchen, die schnell ziehen und meist in Beuteln stecken."
+     ],
+     "q": "Dachtest du, Orange Pekoe habe etwas mit Orangen zu tun?",
+     "c": "Such auf einer Schwarzteepackung einen Grad wie OP, FOP oder BOP und finde heraus, was er dir sagt."
+    },
+    "es": {
+     "t": "Los grados del té, fácil",
+     "g": "Entiende la hoja entera, la rota, los fannings y el polvo, y qué significan las letras del té negro.",
+     "p": [
+      "Los grados describen tamaño y aspecto de la hoja, no el sabor: primero hoja entera, luego rota, fannings y polvo.",
+      "OP significa Orange Pekoe, un grado de hoja entera; letras extra como F (flowery), G (golden) y T (tippy) indican más brotes.",
+      "BOP es broken orange pekoe; los fannings y el polvo son trocitos que infusionan rápido y llenan casi todas las bolsitas."
+     ],
+     "q": "¿Pensabas que 'orange pekoe' tenía algo que ver con naranjas?",
+     "c": "Busca un grado como OP, FOP o BOP en un paquete de té negro y averigua qué te dice."
+    },
+    "fr": {
+     "t": "Les grades de thé, simplement",
+     "g": "Comprends feuilles entières, brisées, fannings et dust, et ce que signifient les lettres sur le thé noir.",
+     "p": [
+      "Les grades décrivent taille et aspect de la feuille, pas le goût : feuilles entières, puis brisées, fannings et dust.",
+      "OP signifie Orange Pekoe, un grade de feuille entière ; F (flowery), G (golden) et T (tippy) indiquent plus de bourgeons.",
+      "BOP veut dire broken orange pekoe ; fannings et dust sont de fines particules qui infusent vite et remplissent la plupart des sachets."
+     ],
+     "q": "Pensais-tu que « orange pekoe » avait un rapport avec l'orange ?",
+     "c": "Trouve un grade comme OP, FOP ou BOP sur un paquet de thé noir et déchiffre ce qu'il t'apprend."
+    },
+    "it": {
+     "t": "I gradi del tè, in breve",
+     "g": "Capisci foglia intera, spezzata, fannings e dust, e cosa significano le lettere sul tè nero.",
+     "p": [
+      "I gradi descrivono dimensione e aspetto della foglia, non il gusto: prima foglia intera, poi spezzata, fannings e dust.",
+      "OP significa Orange Pekoe, un grado a foglia intera; lettere come F (flowery), G (golden) e T (tippy) indicano più germogli.",
+      "BOP è broken orange pekoe; fannings e dust sono frammenti minuscoli che infondono in fretta e riempiono quasi tutte le bustine."
+     ],
+     "q": "Pensavi che 'orange pekoe' avesse a che fare con le arance?",
+     "c": "Trova un grado come OP, FOP o BOP su una confezione di tè nero e scopri cosa ti dice."
+    },
+    "pt": {
+     "t": "Os graus do chá, de forma simples",
+     "g": "Percebe folha inteira, partida, fannings e pó, e o que significam as letras no chá preto.",
+     "p": [
+      "Os graus descrevem tamanho e aspeto da folha, não o sabor: primeiro folha inteira, depois partida, fannings e pó.",
+      "OP significa Orange Pekoe, um grau de folha inteira; letras extra como F (flowery), G (golden) e T (tippy) indicam mais rebentos.",
+      "BOP é broken orange pekoe; fannings e pó são pedacinhos que infundem depressa e enchem a maioria das saquetas."
+     ],
+     "q": "Pensavas que 'orange pekoe' tinha alguma coisa a ver com laranjas?",
+     "c": "Procura um grau como OP, FOP ou BOP numa embalagem de chá preto e descobre o que te diz."
+    },
+    "pt_BR": {
+     "t": "Os graus do chá, de um jeito simples",
+     "g": "Entenda folha inteira, quebrada, fannings e pó, e o que significam as letras no chá preto.",
+     "p": [
+      "Os graus descrevem tamanho e aparência da folha, não o sabor: primeiro folha inteira, depois quebrada, fannings e pó.",
+      "OP significa Orange Pekoe, um grau de folha inteira; letras extras como F (flowery), G (golden) e T (tippy) indicam mais brotos.",
+      "BOP é broken orange pekoe; fannings e pó são pedacinhos que infusionam rápido e enchem a maioria dos sachês."
+     ],
+     "q": "Você achava que 'orange pekoe' tinha algo a ver com laranja?",
+     "c": "Procure um grau como OP, FOP ou BOP numa embalagem de chá preto e descubra o que ele diz."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast teas",
+     "g": "Find out why breakfast blends are strong and malty and how they are designed to take milk.",
+     "p": [
+      "Breakfast teas are blends, often of Assam, Ceylon and Kenyan black teas, made for a bold, full cup.",
+      "Assam brings malty depth, Ceylon brings bright briskness and Kenyan teas add strength and colour.",
+      "English and Irish Breakfast are the best known; Irish blends are often even stronger and maltier."
+     ],
+     "q": "What do you usually drink first thing in the morning?",
+     "c": "Brew a breakfast tea for 4 minutes and taste it first plain, then with a splash of milk."
+    },
+    "de": {
+     "t": "Frühstückstees",
+     "g": "Erfahre, warum Frühstücksmischungen kräftig und malzig sind und wie sie für Milch gemacht werden.",
+     "p": [
+      "Frühstückstees sind Mischungen, oft aus Assam-, Ceylon- und Kenia-Schwarztee, für eine kräftige, volle Tasse.",
+      "Assam bringt malzige Tiefe, Ceylon frische Spritzigkeit, Kenia-Tees Kraft und Farbe.",
+      "Am bekanntesten sind English und Irish Breakfast; irische Mischungen sind oft noch kräftiger und malziger."
+     ],
+     "q": "Was trinkst du normalerweise als Erstes am Morgen?",
+     "c": "Brühe einen Frühstückstee 4 Minuten und probiere ihn zuerst pur, dann mit einem Schuss Milch."
+    },
+    "es": {
+     "t": "Tés de desayuno",
+     "g": "Descubre por qué las mezclas de desayuno son fuertes y malteadas y cómo se diseñan para llevar leche.",
+     "p": [
+      "Los tés de desayuno son mezclas, a menudo de tés negros de Assam, Ceilán y Kenia, para una taza intensa y plena.",
+      "El Assam aporta profundidad malteada, el Ceilán viveza y los tés de Kenia fuerza y color.",
+      "Los más conocidos son el English y el Irish Breakfast; las mezclas irlandesas suelen ser aún más fuertes y malteadas."
+     ],
+     "q": "¿Qué sueles beber nada más levantarte?",
+     "c": "Prepara un té de desayuno durante 4 minutos y pruébalo primero solo y luego con un chorrito de leche."
+    },
+    "fr": {
+     "t": "Les thés du petit-déjeuner",
+     "g": "Découvre pourquoi les mélanges du matin sont corsés et maltés et comment ils sont pensés pour le lait.",
+     "p": [
+      "Les breakfast teas sont des mélanges, souvent de thés noirs d'Assam, de Ceylan et du Kenya, pour une tasse franche et pleine.",
+      "L'Assam apporte une profondeur maltée, le Ceylan de la vivacité et les thés du Kenya de la force et de la couleur.",
+      "Les plus connus sont l'English et l'Irish Breakfast ; les mélanges irlandais sont souvent encore plus corsés et maltés."
+     ],
+     "q": "Que bois-tu d'habitude en tout premier le matin ?",
+     "c": "Infuse un breakfast tea 4 minutes et goûte-le d'abord nature, puis avec un trait de lait."
+    },
+    "it": {
+     "t": "I tè della colazione",
+     "g": "Scopri perché le miscele per la colazione sono forti e maltate e come sono pensate per il latte.",
+     "p": [
+      "I breakfast tea sono miscele, spesso di tè neri di Assam, Ceylon e Kenya, per una tazza decisa e piena.",
+      "L'Assam porta profondità maltata, il Ceylon vivacità e i tè del Kenya forza e colore.",
+      "I più noti sono l'English e l'Irish Breakfast; le miscele irlandesi sono spesso ancora più forti e maltate."
+     ],
+     "q": "Cosa bevi di solito appena sveglio?",
+     "c": "Prepara un breakfast tea per 4 minuti e assaggialo prima liscio, poi con un goccio di latte."
+    },
+    "pt": {
+     "t": "Chás de pequeno-almoço",
+     "g": "Descobre porque as misturas de pequeno-almoço são fortes e maltadas e como são pensadas para levar leite.",
+     "p": [
+      "Os chás de pequeno-almoço são misturas, muitas vezes de chás pretos de Assam, Ceilão e Quénia, para uma chávena intensa e cheia.",
+      "O Assam traz profundidade maltada, o Ceilão vivacidade e os chás do Quénia força e cor.",
+      "Os mais conhecidos são o English e o Irish Breakfast; as misturas irlandesas costumam ser ainda mais fortes e maltadas."
+     ],
+     "q": "O que costumas beber logo de manhã?",
+     "c": "Prepara um chá de pequeno-almoço durante 4 minutos e prova-o primeiro simples e depois com um pouco de leite."
+    },
+    "pt_BR": {
+     "t": "Chás de café da manhã",
+     "g": "Descubra por que os blends de café da manhã são fortes e maltados e como são pensados para levar leite.",
+     "p": [
+      "Os chás de café da manhã são blends, muitas vezes de chás pretos de Assam, Ceilão e Quênia, para uma xícara intensa e encorpada.",
+      "O Assam traz profundidade maltada, o Ceilão vivacidade e os chás do Quênia força e cor.",
+      "Os mais conhecidos são o English e o Irish Breakfast; os blends irlandeses costumam ser ainda mais fortes e maltados."
+     ],
+     "q": "O que você costuma beber logo de manhã?",
+     "c": "Prepare um chá de café da manhã por 4 minutos e prove primeiro puro e depois com um pouco de leite."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Earl Grey and bergamot",
+     "g": "Meet the famous citrus-scented black tea and learn how flavouring oils are added to leaves.",
+     "p": [
+      "Earl Grey is black tea scented with oil of bergamot, a fragrant citrus fruit grown mainly in Calabria, Italy.",
+      "The oil is sprayed onto or blended with the dry leaves, so the scent rises as soon as hot water hits them.",
+      "It is named after Earl Grey, a 19th-century British prime minister; Lady Grey adds orange and lemon peel."
+     ],
+     "q": "Do you like the citrus scent of Earl Grey, or does it feel too strong for you?",
+     "c": "Smell an Earl Grey dry, then wet, then in the cup, and notice when the bergamot is strongest."
+    },
+    "de": {
+     "t": "Earl Grey und Bergamotte",
+     "g": "Lerne den berühmten zitrusduftenden Schwarztee kennen und wie Aromaöle auf Blätter kommen.",
+     "p": [
+      "Earl Grey ist Schwarztee, aromatisiert mit Bergamotteöl, einer duftenden Zitrusfrucht, die vor allem in Kalabrien wächst.",
+      "Das Öl wird auf die trockenen Blätter gesprüht oder mit ihnen gemischt, der Duft steigt beim Aufgießen sofort auf.",
+      "Benannt ist er nach Earl Grey, britischer Premier im 19. Jahrhundert; Lady Grey enthält zusätzlich Orangen- und Zitronenschale."
+     ],
+     "q": "Magst du den Zitrusduft von Earl Grey, oder ist er dir zu intensiv?",
+     "c": "Riech an Earl Grey trocken, nass und in der Tasse und achte darauf, wann die Bergamotte am stärksten ist."
+    },
+    "es": {
+     "t": "Earl Grey y bergamota",
+     "g": "Conoce el famoso té negro con aroma cítrico y aprende cómo se añaden los aceites aromáticos a la hoja.",
+     "p": [
+      "El Earl Grey es té negro aromatizado con aceite de bergamota, un cítrico fragante cultivado sobre todo en Calabria, Italia.",
+      "El aceite se pulveriza sobre la hoja seca o se mezcla con ella, y el aroma sube en cuanto llega el agua caliente.",
+      "Debe su nombre a Earl Grey, primer ministro británico del siglo XIX; el Lady Grey añade piel de naranja y limón."
+     ],
+     "q": "¿Te gusta el aroma cítrico del Earl Grey o te resulta demasiado intenso?",
+     "c": "Huele un Earl Grey seco, mojado y en la taza, y fíjate en cuándo la bergamota es más intensa."
+    },
+    "fr": {
+     "t": "L'Earl Grey et la bergamote",
+     "g": "Découvre le célèbre thé noir aux notes d'agrumes et comment les huiles aromatiques sont ajoutées aux feuilles.",
+     "p": [
+      "L'Earl Grey est un thé noir parfumé à l'huile de bergamote, un agrume odorant cultivé surtout en Calabre, en Italie.",
+      "L'huile est pulvérisée sur les feuilles sèches ou mélangée avec elles ; le parfum s'élève dès que l'eau chaude les touche.",
+      "Il doit son nom à Earl Grey, Premier ministre britannique du XIXe siècle ; le Lady Grey ajoute des zestes d'orange et de citron."
+     ],
+     "q": "Aimes-tu le parfum d'agrume de l'Earl Grey, ou le trouves-tu trop fort ?",
+     "c": "Sens un Earl Grey sec, mouillé puis en tasse, et note quand la bergamote est la plus présente."
+    },
+    "it": {
+     "t": "Earl Grey e bergamotto",
+     "g": "Conosci il famoso tè nero profumato agli agrumi e scopri come gli oli aromatici vengono aggiunti alle foglie.",
+     "p": [
+      "L'Earl Grey è tè nero aromatizzato con olio di bergamotto, un agrume profumato coltivato soprattutto in Calabria.",
+      "L'olio viene spruzzato sulle foglie secche o mescolato con esse, e il profumo sale appena arriva l'acqua calda.",
+      "Prende il nome da Earl Grey, primo ministro britannico dell'Ottocento; il Lady Grey aggiunge scorza d'arancia e di limone."
+     ],
+     "q": "Ti piace il profumo agrumato dell'Earl Grey o lo trovi troppo intenso?",
+     "c": "Annusa un Earl Grey secco, bagnato e in tazza, e nota quando il bergamotto è più intenso."
+    },
+    "pt": {
+     "t": "Earl Grey e bergamota",
+     "g": "Conhece o famoso chá preto com aroma cítrico e aprende como os óleos aromáticos são juntados às folhas.",
+     "p": [
+      "O Earl Grey é chá preto aromatizado com óleo de bergamota, um citrino perfumado cultivado sobretudo na Calábria, em Itália.",
+      "O óleo é pulverizado sobre as folhas secas ou misturado com elas, e o aroma sobe assim que a água quente lhes toca.",
+      "Deve o nome a Earl Grey, primeiro-ministro britânico do século XIX; o Lady Grey junta casca de laranja e limão."
+     ],
+     "q": "Gostas do aroma cítrico do Earl Grey, ou achas que é forte demais?",
+     "c": "Cheira um Earl Grey seco, molhado e na chávena, e repara quando a bergamota está mais intensa."
+    },
+    "pt_BR": {
+     "t": "Earl Grey e bergamota",
+     "g": "Conheça o famoso chá preto com aroma cítrico e aprenda como os óleos aromáticos são colocados nas folhas.",
+     "p": [
+      "O Earl Grey é chá preto aromatizado com óleo de bergamota, uma fruta cítrica perfumada cultivada principalmente na Calábria, na Itália.",
+      "O óleo é borrifado nas folhas secas ou misturado a elas, e o aroma sobe assim que a água quente chega.",
+      "O nome vem de Earl Grey, primeiro-ministro britânico do século XIX; o Lady Grey leva também casca de laranja e limão."
+     ],
+     "q": "Você gosta do aroma cítrico do Earl Grey ou acha forte demais?",
+     "c": "Cheire um Earl Grey seco, molhado e na xícara, e repare quando a bergamota fica mais intensa."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jasmine tea",
+     "g": "Discover jasmine tea: green or white tea scented with fresh jasmine flowers through a patient layering process.",
+     "p": [
+      "Jasmine blossoms are picked by day and layered with tea at night, when they open and release their scent.",
+      "The tea absorbs the perfume; the spent flowers are removed and fresh ones added, often several times.",
+      "Fujian in China is the classic home; jasmine pearls are young leaves hand-rolled into small balls."
+     ],
+     "q": "Have you tasted jasmine tea, perhaps in a restaurant?",
+     "c": "Brew jasmine tea at about 80 °C for 2 minutes and notice whether you smell flowers or tea first."
+    },
+    "de": {
+     "t": "Jasmintee",
+     "g": "Entdecke Jasmintee: grüner oder weißer Tee, mit frischen Jasminblüten in geduldigen Schichten aromatisiert.",
+     "p": [
+      "Jasminblüten werden tagsüber gepflückt und nachts mit Tee geschichtet, wenn sie sich öffnen und duften.",
+      "Der Tee nimmt den Duft auf; verwelkte Blüten werden entfernt und frische dazugegeben, oft mehrmals.",
+      "Klassische Heimat ist Fujian in China; Jasmin-Perlen sind junge Blätter, von Hand zu kleinen Kugeln gerollt."
+     ],
+     "q": "Hast du schon Jasmintee getrunken, vielleicht in einem Restaurant?",
+     "c": "Brühe Jasmintee bei etwa 80 °C für 2 Minuten und achte darauf, ob du zuerst Blüten oder Tee riechst."
+    },
+    "es": {
+     "t": "Té de jazmín",
+     "g": "Descubre el té de jazmín: té verde o blanco aromatizado con flores frescas de jazmín mediante un paciente proceso por capas.",
+     "p": [
+      "Las flores de jazmín se recogen de día y se colocan en capas con el té por la noche, cuando se abren y liberan su aroma.",
+      "El té absorbe el perfume; se retiran las flores gastadas y se añaden frescas, a menudo varias veces.",
+      "Fujian, en China, es su hogar clásico; las perlas de jazmín son hojas jóvenes enrolladas a mano en bolitas."
+     ],
+     "q": "¿Has probado el té de jazmín, quizá en un restaurante?",
+     "c": "Prepara té de jazmín a unos 80 °C durante 2 minutos y fíjate si hueles primero las flores o el té."
+    },
+    "fr": {
+     "t": "Le thé au jasmin",
+     "g": "Découvre le thé au jasmin : thé vert ou blanc parfumé aux fleurs de jasmin fraîches, par couches successives et patientes.",
+     "p": [
+      "Les fleurs de jasmin sont cueillies le jour et disposées en couches avec le thé la nuit, quand elles s'ouvrent et embaument.",
+      "Le thé absorbe le parfum ; on retire les fleurs fanées et on en ajoute des fraîches, souvent plusieurs fois.",
+      "Le Fujian, en Chine, en est le berceau ; les perles de jasmin sont de jeunes feuilles roulées à la main en petites billes."
+     ],
+     "q": "As-tu déjà goûté du thé au jasmin, peut-être au restaurant ?",
+     "c": "Infuse un thé au jasmin à environ 80 °C pendant 2 minutes et remarque si tu sens d'abord la fleur ou le thé."
+    },
+    "it": {
+     "t": "Il tè al gelsomino",
+     "g": "Scopri il tè al gelsomino: tè verde o bianco profumato con fiori freschi di gelsomino, a strati e con pazienza.",
+     "p": [
+      "I fiori di gelsomino si raccolgono di giorno e si stratificano con il tè di notte, quando si aprono e sprigionano il profumo.",
+      "Il tè assorbe il profumo; i fiori esauriti si tolgono e se ne aggiungono di freschi, spesso più volte.",
+      "Il Fujian, in Cina, è la sua patria classica; le perle di gelsomino sono foglie giovani arrotolate a mano in palline."
+     ],
+     "q": "Hai mai assaggiato il tè al gelsomino, magari al ristorante?",
+     "c": "Prepara un tè al gelsomino a circa 80 °C per 2 minuti e nota se senti prima i fiori o il tè."
+    },
+    "pt": {
+     "t": "Chá de jasmim",
+     "g": "Descobre o chá de jasmim: chá verde ou branco perfumado com flores frescas de jasmim num paciente processo em camadas.",
+     "p": [
+      "As flores de jasmim são apanhadas de dia e postas em camadas com o chá à noite, quando abrem e libertam o perfume.",
+      "O chá absorve o perfume; tiram-se as flores gastas e juntam-se frescas, muitas vezes várias vezes.",
+      "Fujian, na China, é a sua casa clássica; as pérolas de jasmim são folhas jovens enroladas à mão em bolinhas."
+     ],
+     "q": "Já provaste chá de jasmim, talvez num restaurante?",
+     "c": "Prepara chá de jasmim a cerca de 80 °C durante 2 minutos e repara se sentes primeiro as flores ou o chá."
+    },
+    "pt_BR": {
+     "t": "Chá de jasmim",
+     "g": "Descubra o chá de jasmim: chá verde ou branco perfumado com flores frescas de jasmim num paciente processo em camadas.",
+     "p": [
+      "As flores de jasmim são colhidas de dia e colocadas em camadas com o chá à noite, quando abrem e soltam o perfume.",
+      "O chá absorve o perfume; as flores gastas são retiradas e novas são colocadas, muitas vezes várias vezes.",
+      "Fujian, na China, é a casa clássica; as pérolas de jasmim são folhas jovens enroladas à mão em bolinhas."
+     ],
+     "q": "Você já provou chá de jasmim, talvez num restaurante?",
+     "c": "Prepare chá de jasmim a cerca de 80 °C por 2 minutos e repare se sente primeiro as flores ou o chá."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chamomile and calming tisanes",
+     "g": "Explore popular flower infusions, how to brew them and how people enjoy them in the evening.",
+     "p": [
+      "Chamomile uses the dried flower heads of a daisy-like plant and tastes gently sweet, like apple and honey.",
+      "Brew with boiling water for about 5 minutes, covered, so the delicate aroma stays in the cup.",
+      "Being caffeine-free, chamomile, lime blossom and lavender blends are favourite evening rituals for many."
+     ],
+     "q": "Do you have a cosy evening drink ritual?",
+     "c": "Brew a chamomile infusion this evening and try to name two flavours you notice in it."
+    },
+    "de": {
+     "t": "Kamille und sanfte Kräuteraufgüsse",
+     "g": "Entdecke beliebte Blütenaufgüsse, wie man sie zubereitet und wie Menschen sie abends genießen.",
+     "p": [
+      "Kamille nutzt die getrockneten Blütenköpfe einer gänseblümchenartigen Pflanze und schmeckt mild süß, nach Apfel und Honig.",
+      "Mit kochendem Wasser etwa 5 Minuten zugedeckt ziehen lassen, damit das zarte Aroma in der Tasse bleibt.",
+      "Da sie koffeinfrei sind, sind Kamille, Lindenblüten und Lavendelmischungen für viele ein liebes Abendritual."
+     ],
+     "q": "Hast du ein gemütliches Getränkeritual am Abend?",
+     "c": "Brühe heute Abend einen Kamillenaufguss und versuche, zwei Aromen zu benennen, die du schmeckst."
+    },
+    "es": {
+     "t": "Manzanilla e infusiones relajantes",
+     "g": "Explora infusiones de flores populares, cómo prepararlas y cómo la gente las disfruta por la noche.",
+     "p": [
+      "La manzanilla usa las cabezuelas secas de una planta parecida a la margarita y sabe dulce y suave, a manzana y miel.",
+      "Prepárala con agua hirviendo unos 5 minutos, tapada, para que el delicado aroma se quede en la taza.",
+      "Al no tener cafeína, la manzanilla, la tila y las mezclas con lavanda son un ritual nocturno favorito para muchos."
+     ],
+     "q": "¿Tienes algún ritual acogedor con una bebida por la noche?",
+     "c": "Prepara esta noche una manzanilla e intenta nombrar dos sabores que notes en ella."
+    },
+    "fr": {
+     "t": "Camomille et tisanes douces",
+     "g": "Explore les infusions de fleurs populaires, comment les préparer et comment on les apprécie le soir.",
+     "p": [
+      "La camomille utilise les capitules séchés d'une plante proche de la pâquerette et a un goût doux de pomme et de miel.",
+      "Infuse-la à l'eau bouillante environ 5 minutes, à couvert, pour garder son arôme délicat dans la tasse.",
+      "Sans caféine, la camomille, le tilleul et les mélanges à la lavande sont pour beaucoup un rituel du soir."
+     ],
+     "q": "As-tu un petit rituel douillet avec une boisson le soir ?",
+     "c": "Prépare une camomille ce soir et essaie de nommer deux saveurs que tu y perçois."
+    },
+    "it": {
+     "t": "Camomilla e tisane rilassanti",
+     "g": "Esplora le tisane di fiori più amate, come prepararle e come le persone le gustano la sera.",
+     "p": [
+      "La camomilla usa i capolini essiccati di una pianta simile alla margherita e ha un gusto dolce, di mela e miele.",
+      "Preparala con acqua bollente per circa 5 minuti, coperta, così l'aroma delicato resta nella tazza.",
+      "Essendo senza caffeina, camomilla, tiglio e miscele alla lavanda sono per molti un rito serale preferito."
+     ],
+     "q": "Hai un rito accogliente con una bevanda la sera?",
+     "c": "Prepara stasera una camomilla e prova a dare un nome a due sapori che senti."
+    },
+    "pt": {
+     "t": "Camomila e infusões calmantes",
+     "g": "Explora infusões de flores populares, como prepará-las e como as pessoas as apreciam à noite.",
+     "p": [
+      "A camomila usa as flores secas de uma planta parecida com o malmequer e sabe suave e doce, a maçã e mel.",
+      "Prepara-a com água a ferver durante cerca de 5 minutos, tapada, para o aroma delicado ficar na chávena.",
+      "Como não têm cafeína, a camomila, a tília e as misturas com lavanda são um ritual da noite preferido por muitos."
+     ],
+     "q": "Tens algum ritual aconchegante com uma bebida à noite?",
+     "c": "Prepara esta noite uma camomila e tenta dar nome a dois sabores que notes nela."
+    },
+    "pt_BR": {
+     "t": "Camomila e infusões calmantes",
+     "g": "Explore infusões de flores populares, como prepará-las e como as pessoas curtem essas bebidas à noite.",
+     "p": [
+      "A camomila usa as flores secas de uma planta parecida com a margarida e tem sabor suave e doce, de maçã e mel.",
+      "Prepare com água fervente por cerca de 5 minutos, tampada, para o aroma delicado ficar na xícara.",
+      "Por não terem cafeína, camomila, tília e blends com lavanda são um ritual noturno favorito de muita gente."
+     ],
+     "q": "Você tem algum ritual aconchegante com uma bebida à noite?",
+     "c": "Prepare uma camomila hoje à noite e tente dar nome a dois sabores que você percebe nela."
+    }
+   }
+  }
+ ]
+}

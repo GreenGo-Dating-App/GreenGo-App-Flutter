@@ -1,0 +1,835 @@
+{
+ "topic": "guitar",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a chord diagram",
+     "g": "Understand how a chord diagram shows strings, frets, fingers and muted strings.",
+     "p": [
+      "Vertical lines are the strings, low E on the left; horizontal lines are the frets, with the nut at the top.",
+      "Dots show where to press, and the numbers in them tell you which finger to use (1 to 4).",
+      "An O above a string means play it open; an X means do not play it or mute it."
+     ],
+     "q": "Have you seen chord diagrams in songbooks or apps, and did they look confusing at first?",
+     "c": "Draw an empty chord grid on paper from memory and label the low E string, the nut, one O and one X."
+    },
+    "de": {
+     "t": "Ein Griffbild lesen",
+     "g": "Verstehe, wie ein Griffbild Saiten, Bünde, Finger und gedämpfte Saiten zeigt.",
+     "p": [
+      "Senkrechte Linien sind die Saiten, tiefe E-Saite links; waagrechte Linien die Bünde, oben der Sattel.",
+      "Punkte zeigen, wo du drückst, und die Zahl darin sagt dir, welcher Finger (1 bis 4).",
+      "Ein O über einer Saite heißt leer anschlagen, ein X heißt nicht spielen oder abdämpfen."
+     ],
+     "q": "Hast du Griffbilder schon in Songbüchern oder Apps gesehen, und wirkten sie anfangs verwirrend?",
+     "c": "Zeichne aus dem Kopf ein leeres Griffbild auf Papier und beschrifte tiefe E-Saite, Sattel, ein O und ein X."
+    },
+    "es": {
+     "t": "Leer un diagrama de acordes",
+     "g": "Entender cómo un diagrama muestra cuerdas, trastes, dedos y cuerdas que no suenan.",
+     "p": [
+      "Las líneas verticales son las cuerdas, el Mi grave a la izquierda; las horizontales son los trastes y arriba la cejuela.",
+      "Los puntos indican dónde pisar y el número dentro te dice qué dedo usar (del 1 al 4).",
+      "Una O sobre una cuerda significa tocarla al aire; una X, no tocarla o apagarla."
+     ],
+     "q": "¿Has visto diagramas de acordes en cancioneros o apps, y al principio te parecieron confusos?",
+     "c": "Dibuja de memoria una cuadrícula vacía y marca la cuerda Mi grave, la cejuela, una O y una X."
+    },
+    "fr": {
+     "t": "Lire un diagramme d'accord",
+     "g": "Comprendre comment un diagramme montre cordes, cases, doigts et cordes étouffées.",
+     "p": [
+      "Les lignes verticales sont les cordes, Mi grave à gauche ; les horizontales sont les frettes, le sillet en haut.",
+      "Les points montrent où appuyer, et le chiffre dedans indique quel doigt utiliser (1 à 4).",
+      "Un O au-dessus d'une corde veut dire à vide ; un X veut dire ne pas la jouer ou l'étouffer."
+     ],
+     "q": "As-tu déjà vu des diagrammes d'accords dans des recueils ou des applis, et t'ont-ils semblé confus au début ?",
+     "c": "Dessine de mémoire une grille vide sur papier et indique le Mi grave, le sillet, un O et un X."
+    },
+    "it": {
+     "t": "Leggere un diagramma degli accordi",
+     "g": "Capire come un diagramma mostra corde, tasti, dita e corde smorzate.",
+     "p": [
+      "Le linee verticali sono le corde, Mi basso a sinistra; quelle orizzontali sono i tasti, con il capotasto in alto.",
+      "I pallini mostrano dove premere e il numero dentro indica quale dito usare (da 1 a 4).",
+      "Una O sopra una corda vuol dire suonarla a vuoto; una X vuol dire non suonarla o smorzarla."
+     ],
+     "q": "Hai già visto diagrammi di accordi in canzonieri o app, e all'inizio ti sono sembrati confusi?",
+     "c": "Disegna a memoria una griglia vuota su carta e segna il Mi basso, il capotasto, una O e una X."
+    },
+    "pt": {
+     "t": "Ler um diagrama de acordes",
+     "g": "Perceber como um diagrama mostra cordas, trastes, dedos e cordas abafadas.",
+     "p": [
+      "As linhas verticais são as cordas, Mi grave à esquerda; as horizontais são os trastes, com a pestana em cima.",
+      "Os pontos mostram onde pressionar e o número lá dentro diz que dedo usar (de 1 a 4).",
+      "Um O por cima da corda significa tocá-la solta; um X significa não a tocar ou abafá-la."
+     ],
+     "q": "Já viste diagramas de acordes em livros ou apps, e pareceram-te confusos ao início?",
+     "c": "Desenha de memória uma grelha vazia em papel e marca o Mi grave, a pestana, um O e um X."
+    },
+    "pt_BR": {
+     "t": "Lendo um diagrama de acordes",
+     "g": "Entender como o diagrama mostra cordas, casas, dedos e cordas abafadas.",
+     "p": [
+      "As linhas verticais são as cordas, Mi grave à esquerda; as horizontais são os trastes, com a pestana (nut) no alto.",
+      "Os pontos mostram onde apertar e o número dentro diz qual dedo usar (de 1 a 4).",
+      "Um O em cima da corda quer dizer tocar solta; um X quer dizer não tocar ou abafar."
+     ],
+     "q": "Você já viu diagramas de acordes em revistinhas ou apps, e eles pareceram confusos no começo?",
+     "c": "Desenhe de memória um diagrama vazio no papel e marque o Mi grave, a pestana, um O e um X."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first chord: E minor",
+     "g": "Play E minor with two fingers and let all six strings ring.",
+     "p": [
+      "Put finger 2 on the A string, 2nd fret, and finger 3 on the D string, 2nd fret. All other strings stay open.",
+      "Strum all six strings from the low E down. Em has a soft, slightly sad, open sound.",
+      "Check each string one by one: if a note is dull, arch your fingers more so they do not touch nearby strings."
+     ],
+     "q": "How does E minor sound to you: sad, calm, mysterious or something else?",
+     "c": "Make the Em shape, strum it 4 times, lift your hand off and place it again. Repeat 10 times."
+    },
+    "de": {
+     "t": "Dein erster Akkord: e-Moll",
+     "g": "Spiel e-Moll mit zwei Fingern und lass alle sechs Saiten klingen.",
+     "p": [
+      "Finger 2 auf die A-Saite im 2. Bund, Finger 3 auf die D-Saite im 2. Bund. Alle anderen Saiten bleiben leer.",
+      "Schlag alle sechs Saiten ab der tiefen E-Saite an. Em klingt weich, leicht traurig und offen.",
+      "Prüf jede Saite einzeln: Klingt ein Ton dumpf, wölbe die Finger mehr, damit sie keine Nachbarsaite berühren."
+     ],
+     "q": "Wie klingt e-Moll für dich: traurig, ruhig, geheimnisvoll oder ganz anders?",
+     "c": "Greif Em, schlag 4-mal an, nimm die Hand weg und setz sie neu auf. Wiederhole das 10-mal."
+    },
+    "es": {
+     "t": "Tu primer acorde: Mi menor",
+     "g": "Tocar Mi menor con dos dedos y dejar sonar las seis cuerdas.",
+     "p": [
+      "Pon el dedo 2 en la cuerda La, traste 2, y el dedo 3 en la cuerda Re, traste 2. Las demás cuerdas al aire.",
+      "Rasguea las seis cuerdas desde el Mi grave. Em tiene un sonido suave, abierto y algo melancólico.",
+      "Revisa cuerda por cuerda: si una suena apagada, arquea más los dedos para no rozar las cuerdas vecinas."
+     ],
+     "q": "¿Cómo te suena Mi menor: triste, tranquilo, misterioso u otra cosa?",
+     "c": "Forma Em, rasguea 4 veces, levanta la mano y vuelve a colocarla. Repítelo 10 veces."
+    },
+    "fr": {
+     "t": "Ton premier accord : Mi mineur",
+     "g": "Jouer Mi mineur avec deux doigts et faire sonner les six cordes.",
+     "p": [
+      "Doigt 2 sur la corde de La, case 2, et doigt 3 sur la corde de Ré, case 2. Les autres cordes restent à vide.",
+      "Gratte les six cordes depuis le Mi grave. Em a un son doux, ouvert et un peu mélancolique.",
+      "Vérifie corde par corde : si une note est sourde, arrondis plus les doigts pour ne pas toucher les cordes voisines."
+     ],
+     "q": "Comment sonne Mi mineur pour toi : triste, calme, mystérieux ou autre chose ?",
+     "c": "Forme Em, gratte 4 fois, retire la main et replace-la. Répète 10 fois."
+    },
+    "it": {
+     "t": "Il tuo primo accordo: Mi minore",
+     "g": "Suonare Mi minore con due dita e far suonare tutte e sei le corde.",
+     "p": [
+      "Metti il dito 2 sulla corda La al 2° tasto e il dito 3 sulla corda Re al 2° tasto. Le altre corde restano a vuoto.",
+      "Pennella tutte e sei le corde dal Mi basso. Em ha un suono morbido, aperto e un po' malinconico.",
+      "Controlla corda per corda: se una nota è spenta, arcua di più le dita per non toccare le corde vicine."
+     ],
+     "q": "Come ti suona Mi minore: triste, calmo, misterioso o altro?",
+     "c": "Forma Em, pennella 4 volte, stacca la mano e rimettila. Ripeti 10 volte."
+    },
+    "pt": {
+     "t": "O teu primeiro acorde: Mi menor",
+     "g": "Tocar Mi menor com dois dedos e deixar soar as seis cordas.",
+     "p": [
+      "Põe o dedo 2 na corda Lá, 2.ª casa, e o dedo 3 na corda Ré, 2.ª casa. As outras cordas ficam soltas.",
+      "Toca as seis cordas a partir do Mi grave. Em tem um som suave, aberto e um pouco melancólico.",
+      "Verifica corda a corda: se uma nota soar abafada, arqueia mais os dedos para não tocarem nas cordas vizinhas."
+     ],
+     "q": "Como te soa o Mi menor: triste, calmo, misterioso ou outra coisa?",
+     "c": "Faz o Em, toca 4 vezes, levanta a mão e volta a pô-la. Repete 10 vezes."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro acorde: Mi menor",
+     "g": "Tocar Mi menor com dois dedos e deixar as seis cordas soarem.",
+     "p": [
+      "Coloque o dedo 2 na corda Lá, casa 2, e o dedo 3 na corda Ré, casa 2. As outras cordas ficam soltas.",
+      "Toque as seis cordas a partir do Mi grave. Em tem um som suave, aberto e um pouco melancólico.",
+      "Confira corda por corda: se alguma soar abafada, arqueie mais os dedos para não encostar nas cordas vizinhas."
+     ],
+     "q": "Como o Mi menor soa para você: triste, calmo, misterioso ou outra coisa?",
+     "c": "Monte o Em, toque 4 vezes, tire a mão e coloque de novo. Repita 10 vezes."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chord number two: A minor",
+     "g": "Finger A minor, skip the low E string and make every note ring.",
+     "p": [
+      "Finger 1 on the B string, 1st fret; finger 2 on the D string, 2nd fret; finger 3 on the G string, 2nd fret.",
+      "Strum from the A string down and leave the low E silent. Diagrams mark it with an X.",
+      "Notice that fingers 2 and 3 make the same shape as in Em, just moved over by one string."
+     ],
+     "q": "Can you hear how Am and Em are both minor but have a different colour?",
+     "c": "Pick each string of Am one at a time from A to high E; fix any dead note until all five ring clearly."
+    },
+    "de": {
+     "t": "Akkord Nummer zwei: a-Moll",
+     "g": "Greif a-Moll, lass die tiefe E-Saite weg und bring jeden Ton zum Klingen.",
+     "p": [
+      "Finger 1 auf die H-Saite im 1. Bund, Finger 2 auf die D-Saite im 2. Bund, Finger 3 auf die G-Saite im 2. Bund.",
+      "Schlag ab der A-Saite an und lass die tiefe E-Saite still. Im Griffbild steht dort ein X.",
+      "Finger 2 und 3 bilden dieselbe Form wie bei Em, nur eine Saite weiter verschoben."
+     ],
+     "q": "Hörst du, dass Am und Em beide Moll sind, aber eine andere Farbe haben?",
+     "c": "Zupf jede Saite von Am einzeln von A bis hohem E; korrigiere jeden toten Ton, bis alle fünf klar klingen."
+    },
+    "es": {
+     "t": "Segundo acorde: La menor",
+     "g": "Pisar La menor, saltarse la cuerda Mi grave y hacer que cada nota suene.",
+     "p": [
+      "Dedo 1 en la cuerda Si, traste 1; dedo 2 en la cuerda Re, traste 2; dedo 3 en la cuerda Sol, traste 2.",
+      "Rasguea desde la cuerda La y deja el Mi grave en silencio. En el diagrama lleva una X.",
+      "Fíjate: los dedos 2 y 3 forman la misma figura que en Em, solo desplazada una cuerda."
+     ],
+     "q": "¿Notas que Am y Em son menores pero tienen un color distinto?",
+     "c": "Toca cada cuerda de Am por separado, de La a Mi agudo; corrige las notas muertas hasta que suenen las cinco."
+    },
+    "fr": {
+     "t": "Deuxième accord : La mineur",
+     "g": "Placer La mineur, éviter le Mi grave et faire sonner chaque note.",
+     "p": [
+      "Doigt 1 sur la corde de Si, case 1 ; doigt 2 sur la corde de Ré, case 2 ; doigt 3 sur la corde de Sol, case 2.",
+      "Gratte à partir de la corde de La et laisse le Mi grave silencieux. Le diagramme y met un X.",
+      "Remarque : les doigts 2 et 3 forment la même forme que pour Em, simplement décalée d'une corde."
+     ],
+     "q": "Entends-tu qu'Am et Em sont tous deux mineurs mais ont une couleur différente ?",
+     "c": "Joue chaque corde d'Am une à une, du La au Mi aigu ; corrige chaque note morte jusqu'à ce que les cinq sonnent."
+    },
+    "it": {
+     "t": "Secondo accordo: La minore",
+     "g": "Diteggiare La minore, saltare il Mi basso e far suonare ogni nota.",
+     "p": [
+      "Dito 1 sulla corda Si al 1° tasto, dito 2 sulla corda Re al 2° tasto, dito 3 sulla corda Sol al 2° tasto.",
+      "Pennella dalla corda La in giù e lascia muto il Mi basso. Nel diagramma ha una X.",
+      "Nota che le dita 2 e 3 fanno la stessa forma di Em, solo spostata di una corda."
+     ],
+     "q": "Senti che Am ed Em sono entrambi minori ma hanno un colore diverso?",
+     "c": "Pizzica una alla volta le corde di Am, dal La al Mi cantino; correggi ogni nota muta finché suonano tutte e cinque."
+    },
+    "pt": {
+     "t": "Segundo acorde: Lá menor",
+     "g": "Fazer o Lá menor, evitar a corda Mi grave e pôr cada nota a soar.",
+     "p": [
+      "Dedo 1 na corda Si, 1.ª casa; dedo 2 na corda Ré, 2.ª casa; dedo 3 na corda Sol, 2.ª casa.",
+      "Toca a partir da corda Lá e deixa o Mi grave em silêncio. No diagrama tem um X.",
+      "Repara: os dedos 2 e 3 fazem a mesma forma que no Em, só que uma corda ao lado."
+     ],
+     "q": "Ouves que o Am e o Em são ambos menores mas têm uma cor diferente?",
+     "c": "Toca cada corda do Am uma a uma, do Lá ao Mi agudo; corrige as notas mortas até as cinco soarem."
+    },
+    "pt_BR": {
+     "t": "Segundo acorde: Lá menor",
+     "g": "Montar o Lá menor, pular a corda Mi grave e fazer cada nota soar.",
+     "p": [
+      "Dedo 1 na corda Si, casa 1; dedo 2 na corda Ré, casa 2; dedo 3 na corda Sol, casa 2.",
+      "Toque a partir da corda Lá e deixe o Mi grave em silêncio. No diagrama ele tem um X.",
+      "Repare: os dedos 2 e 3 fazem o mesmo desenho do Em, só que uma corda ao lado."
+     ],
+     "q": "Você percebe que Am e Em são menores mas têm cores diferentes?",
+     "c": "Toque cada corda do Am separadamente, do Lá ao Mi agudo; corrija as notas mortas até as cinco soarem."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Switching between Em and Am",
+     "g": "Move between Em and Am smoothly with slow, steady changes.",
+     "p": [
+      "Lift your fingers as a group, keeping the shape in the air, instead of placing one finger at a time.",
+      "From Em to Am, fingers 2 and 3 simply slide down one string each, and finger 1 drops onto the B string.",
+      "Change slowly and on time: 4 strums Em, 4 strums Am, without stopping the rhythm even if it is messy."
+     ],
+     "q": "Which part of the change is hardest: lifting, moving or landing the fingers?",
+     "c": "Switch Em to Am and back 20 times in a row, slowly, looking at your fingers only when you must."
+    },
+    "de": {
+     "t": "Wechsel zwischen Em und Am",
+     "g": "Wechsle flüssig zwischen Em und Am, mit langsamen, gleichmäßigen Wechseln.",
+     "p": [
+      "Heb die Finger als Gruppe ab und halt die Form in der Luft, statt Finger für Finger aufzusetzen.",
+      "Von Em zu Am rutschen Finger 2 und 3 je eine Saite tiefer, und Finger 1 landet auf der H-Saite.",
+      "Wechsle langsam und im Takt: 4 Anschläge Em, 4 Anschläge Am, ohne den Rhythmus anzuhalten."
+     ],
+     "q": "Welcher Teil des Wechsels ist am schwersten: Abheben, Bewegen oder Aufsetzen der Finger?",
+     "c": "Wechsle 20-mal hintereinander langsam von Em zu Am und zurück und schau nur hin, wenn es sein muss."
+    },
+    "es": {
+     "t": "Cambiar entre Em y Am",
+     "g": "Pasar de Em a Am con cambios lentos y constantes.",
+     "p": [
+      "Levanta los dedos en bloque, manteniendo la forma en el aire, en lugar de poner un dedo cada vez.",
+      "De Em a Am, los dedos 2 y 3 bajan una cuerda cada uno y el dedo 1 cae en la cuerda Si.",
+      "Cambia despacio y a tiempo: 4 rasgueos Em, 4 rasgueos Am, sin parar el ritmo aunque quede sucio."
+     ],
+     "q": "¿Qué parte del cambio te cuesta más: levantar, mover o colocar los dedos?",
+     "c": "Cambia de Em a Am y vuelta 20 veces seguidas, despacio, mirando los dedos solo cuando haga falta."
+    },
+    "fr": {
+     "t": "Passer de Em à Am",
+     "g": "Enchaîner Em et Am en douceur, avec des changements lents et réguliers.",
+     "p": [
+      "Lève les doigts en bloc en gardant la forme en l'air, au lieu de poser un doigt après l'autre.",
+      "De Em à Am, les doigts 2 et 3 descendent chacun d'une corde et le doigt 1 se pose sur la corde de Si.",
+      "Change lentement et en rythme : 4 coups Em, 4 coups Am, sans arrêter le rythme même si c'est brouillon."
+     ],
+     "q": "Quelle partie du changement est la plus dure : lever, déplacer ou poser les doigts ?",
+     "c": "Passe d'Em à Am et retour 20 fois de suite, lentement, en ne regardant tes doigts que si nécessaire."
+    },
+    "it": {
+     "t": "Passare da Em ad Am",
+     "g": "Cambiare tra Em e Am in modo fluido, con passaggi lenti e regolari.",
+     "p": [
+      "Alza le dita in blocco mantenendo la forma in aria, invece di appoggiare un dito alla volta.",
+      "Da Em ad Am le dita 2 e 3 scendono di una corda ciascuna e il dito 1 si posa sulla corda Si.",
+      "Cambia piano e a tempo: 4 pennate Em, 4 pennate Am, senza fermare il ritmo anche se è un po' sporco."
+     ],
+     "q": "Quale parte del cambio è più difficile: alzare, spostare o appoggiare le dita?",
+     "c": "Passa da Em ad Am e ritorno 20 volte di fila, piano, guardando le dita solo quando serve."
+    },
+    "pt": {
+     "t": "Mudar entre Em e Am",
+     "g": "Passar de Em para Am com mudanças lentas e regulares.",
+     "p": [
+      "Levanta os dedos em bloco, mantendo a forma no ar, em vez de pousar um dedo de cada vez.",
+      "De Em para Am, os dedos 2 e 3 descem uma corda cada e o dedo 1 pousa na corda Si.",
+      "Muda devagar e a tempo: 4 batidas Em, 4 batidas Am, sem parar o ritmo mesmo que saia sujo."
+     ],
+     "q": "Que parte da mudança é mais difícil: levantar, mover ou pousar os dedos?",
+     "c": "Muda de Em para Am e volta 20 vezes seguidas, devagar, olhando para os dedos só quando precisares."
+    },
+    "pt_BR": {
+     "t": "Trocando entre Em e Am",
+     "g": "Passar de Em para Am com trocas lentas e constantes.",
+     "p": [
+      "Levante os dedos em bloco, mantendo o desenho no ar, em vez de colocar um dedo de cada vez.",
+      "De Em para Am, os dedos 2 e 3 descem uma corda cada e o dedo 1 cai na corda Si.",
+      "Troque devagar e no tempo: 4 batidas Em, 4 batidas Am, sem parar o ritmo mesmo que saia sujo."
+     ],
+     "q": "Qual parte da troca é mais difícil: levantar, mover ou apoiar os dedos?",
+     "c": "Troque de Em para Am e volte 20 vezes seguidas, devagar, olhando para os dedos só quando precisar."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic downstrums",
+     "g": "Strum down on every beat from the wrist while counting one to four.",
+     "p": [
+      "Let the motion come mainly from a loose wrist, like shaking water off your hand, not from a stiff arm.",
+      "Brush across the strings with the pick angled slightly, so it glides instead of catching.",
+      "Count out loud 1, 2, 3, 4 and strum once on each number, keeping the gaps exactly equal."
+     ],
+     "q": "Does counting out loud while strumming feel natural, or does your hand want to rush?",
+     "c": "Strum Em with one downstroke per beat for 8 bars while counting out loud, then do the same with Am."
+    },
+    "de": {
+     "t": "Einfache Abschläge",
+     "g": "Schlag auf jeden Schlag aus dem Handgelenk ab und zähl dabei bis vier.",
+     "p": [
+      "Die Bewegung kommt vor allem aus einem lockeren Handgelenk, wie beim Wasser-Abschütteln, nicht aus steifem Arm.",
+      "Streich mit leicht schräg gehaltenem Plektrum über die Saiten, damit es gleitet statt hängen bleibt.",
+      "Zähl laut 1, 2, 3, 4 und schlag bei jeder Zahl einmal an, mit genau gleichen Abständen."
+     ],
+     "q": "Fühlt sich lautes Zählen beim Schlagen natürlich an, oder will deine Hand davonlaufen?",
+     "c": "Schlag Em 8 Takte lang einmal pro Schlag an und zähl laut, dann dasselbe mit Am."
+    },
+    "es": {
+     "t": "Rasgueos hacia abajo",
+     "g": "Rasguear hacia abajo en cada pulso desde la muñeca mientras cuentas de uno a cuatro.",
+     "p": [
+      "El movimiento sale sobre todo de una muñeca suelta, como al sacudir agua de la mano, no de un brazo rígido.",
+      "Pasa por las cuerdas con la púa algo inclinada para que se deslice y no se enganche.",
+      "Cuenta en voz alta 1, 2, 3, 4 y rasguea una vez en cada número, con espacios exactamente iguales."
+     ],
+     "q": "¿Contar en voz alta mientras rasgueas te sale natural o tu mano quiere correr?",
+     "c": "Rasguea Em una vez por pulso durante 8 compases contando en voz alta, y luego lo mismo con Am."
+    },
+    "fr": {
+     "t": "Les coups descendants",
+     "g": "Gratter vers le bas sur chaque temps depuis le poignet en comptant jusqu'à quatre.",
+     "p": [
+      "Le geste vient surtout d'un poignet souple, comme pour secouer l'eau de la main, pas d'un bras raide.",
+      "Balaye les cordes avec le médiator un peu incliné pour qu'il glisse au lieu d'accrocher.",
+      "Compte à voix haute 1, 2, 3, 4 et gratte une fois sur chaque chiffre, avec des écarts parfaitement égaux."
+     ],
+     "q": "Compter à voix haute en grattant te semble naturel, ou ta main veut-elle accélérer ?",
+     "c": "Gratte Em un coup par temps pendant 8 mesures en comptant à voix haute, puis pareil avec Am."
+    },
+    "it": {
+     "t": "Pennate in giù di base",
+     "g": "Pennellare in giù su ogni battito dal polso, contando da uno a quattro.",
+     "p": [
+      "Il movimento parte soprattutto da un polso sciolto, come quando scuoti l'acqua dalla mano, non da un braccio rigido.",
+      "Sfiora le corde con il plettro un po' inclinato, così scivola invece di impuntarsi.",
+      "Conta ad alta voce 1, 2, 3, 4 e pennella una volta su ogni numero, con spazi esattamente uguali."
+     ],
+     "q": "Contare ad alta voce mentre pennelli ti viene naturale, o la mano vuole correre?",
+     "c": "Pennella Em una volta per battito per 8 battute contando ad alta voce, poi lo stesso con Am."
+    },
+    "pt": {
+     "t": "Batidas para baixo",
+     "g": "Tocar para baixo em cada tempo a partir do pulso, contando de um a quatro.",
+     "p": [
+      "O movimento vem sobretudo de um pulso solto, como quem sacode água da mão, e não de um braço rígido.",
+      "Passa pelas cordas com a palheta ligeiramente inclinada para deslizar em vez de prender.",
+      "Conta em voz alta 1, 2, 3, 4 e toca uma vez em cada número, com intervalos exatamente iguais."
+     ],
+     "q": "Contar em voz alta enquanto tocas parece natural, ou a tua mão quer acelerar?",
+     "c": "Toca Em com uma batida por tempo durante 8 compassos a contar em voz alta, depois o mesmo com Am."
+    },
+    "pt_BR": {
+     "t": "Batidas para baixo",
+     "g": "Tocar para baixo em cada tempo usando o pulso, contando de um a quatro.",
+     "p": [
+      "O movimento vem principalmente de um pulso solto, como quem sacode água da mão, e não de um braço duro.",
+      "Passe pelas cordas com a palheta levemente inclinada para deslizar em vez de enroscar.",
+      "Conte em voz alta 1, 2, 3, 4 e toque uma vez em cada número, com espaços exatamente iguais."
+     ],
+     "q": "Contar em voz alta enquanto toca parece natural, ou sua mão quer correr?",
+     "c": "Toque Em com uma batida por tempo durante 8 compassos contando em voz alta, depois o mesmo com Am."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting beats and bars",
+     "g": "Understand 4/4 time, beats and bars, and keep a steady count.",
+     "p": [
+      "A beat is the steady pulse you tap your foot to; most pop and rock songs group beats in fours.",
+      "In 4/4 time each bar (or measure) has four beats, and you count 1, 2, 3, 4, 1, 2, 3, 4.",
+      "Beat 1 is often the strongest, and chords usually change right on it, at the start of a bar."
+     ],
+     "q": "Next time you hear a song, can you tap your foot and find beat 1 of each bar?",
+     "c": "Put on a favourite song, tap your foot and count 1 to 4 out loud for a whole minute without losing your place."
+    },
+    "de": {
+     "t": "Schläge und Takte zählen",
+     "g": "Verstehe den 4/4-Takt, Schläge und Takte, und halte eine gleichmäßige Zählung.",
+     "p": [
+      "Ein Schlag ist der gleichmäßige Puls, zu dem du mit dem Fuß tippst; die meisten Pop- und Rocksongs zählen in Vierergruppen.",
+      "Im 4/4-Takt hat jeder Takt vier Schläge, und du zählst 1, 2, 3, 4, 1, 2, 3, 4.",
+      "Schlag 1 ist oft der stärkste, und Akkorde wechseln meist genau dort, am Anfang eines Takts."
+     ],
+     "q": "Findest du beim nächsten Song mit dem Fuß die Eins jedes Takts?",
+     "c": "Leg einen Lieblingssong auf, tipp mit dem Fuß und zähl eine Minute lang laut 1 bis 4, ohne dich zu verzählen."
+    },
+    "es": {
+     "t": "Contar pulsos y compases",
+     "g": "Entender el compás de 4/4, los pulsos y los compases, y mantener la cuenta estable.",
+     "p": [
+      "El pulso es el latido constante con el que marcas el pie; casi todo el pop y el rock agrupa los pulsos de cuatro en cuatro.",
+      "En 4/4 cada compás tiene cuatro pulsos y se cuenta 1, 2, 3, 4, 1, 2, 3, 4.",
+      "El pulso 1 suele ser el más fuerte, y los acordes suelen cambiar justo ahí, al empezar el compás."
+     ],
+     "q": "La próxima vez que escuches una canción, ¿puedes marcar con el pie y encontrar el 1 de cada compás?",
+     "c": "Pon una canción favorita, marca con el pie y cuenta de 1 a 4 en voz alta durante un minuto sin perderte."
+    },
+    "fr": {
+     "t": "Compter les temps et les mesures",
+     "g": "Comprendre la mesure à 4/4, les temps et les mesures, et garder un compte régulier.",
+     "p": [
+      "Le temps est la pulsation régulière sur laquelle tu tapes du pied ; la plupart des chansons pop et rock comptent par quatre.",
+      "En 4/4, chaque mesure a quatre temps, et l'on compte 1, 2, 3, 4, 1, 2, 3, 4.",
+      "Le temps 1 est souvent le plus fort, et les accords changent généralement pile dessus, en début de mesure."
+     ],
+     "q": "La prochaine fois que tu écoutes une chanson, sauras-tu taper du pied et trouver le 1 de chaque mesure ?",
+     "c": "Mets une chanson que tu aimes, tape du pied et compte 1 à 4 à voix haute pendant une minute sans te perdre."
+    },
+    "it": {
+     "t": "Contare battiti e battute",
+     "g": "Capire il tempo in 4/4, battiti e battute, e tenere un conteggio regolare.",
+     "p": [
+      "Il battito è la pulsazione costante su cui batti il piede; quasi tutto il pop e il rock raggruppa i battiti a quattro.",
+      "In 4/4 ogni battuta ha quattro battiti e si conta 1, 2, 3, 4, 1, 2, 3, 4.",
+      "Il battito 1 è spesso il più forte, e gli accordi di solito cambiano proprio lì, all'inizio della battuta."
+     ],
+     "q": "La prossima volta che ascolti una canzone, riesci a battere il piede e trovare l'1 di ogni battuta?",
+     "c": "Metti una canzone che ami, batti il piede e conta da 1 a 4 ad alta voce per un minuto senza perderti."
+    },
+    "pt": {
+     "t": "Contar tempos e compassos",
+     "g": "Perceber o compasso 4/4, os tempos e os compassos, e manter a contagem certa.",
+     "p": [
+      "O tempo é a pulsação regular em que bates o pé; a maioria das músicas pop e rock agrupa os tempos de quatro em quatro.",
+      "Em 4/4 cada compasso tem quatro tempos e conta-se 1, 2, 3, 4, 1, 2, 3, 4.",
+      "O tempo 1 costuma ser o mais forte, e os acordes mudam normalmente aí, no início do compasso."
+     ],
+     "q": "Na próxima música que ouvires, consegues bater o pé e encontrar o 1 de cada compasso?",
+     "c": "Põe uma música de que gostes, bate o pé e conta de 1 a 4 em voz alta durante um minuto sem te perderes."
+    },
+    "pt_BR": {
+     "t": "Contando tempos e compassos",
+     "g": "Entender o compasso 4/4, os tempos e os compassos, e manter a contagem firme.",
+     "p": [
+      "O tempo é a pulsação constante em que você bate o pé; quase todo pop e rock agrupa os tempos de quatro em quatro.",
+      "Em 4/4 cada compasso tem quatro tempos e você conta 1, 2, 3, 4, 1, 2, 3, 4.",
+      "O tempo 1 costuma ser o mais forte, e os acordes geralmente mudam bem nele, no começo do compasso."
+     ],
+     "q": "Na próxima música que ouvir, você consegue bater o pé e achar o 1 de cada compasso?",
+     "c": "Coloque uma música favorita, bata o pé e conte de 1 a 4 em voz alta por um minuto sem se perder."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The E major chord",
+     "g": "Turn Em into E major by adding one finger and hear the difference.",
+     "p": [
+      "Make Em with fingers 2 and 3, then add finger 1 on the G string, 1st fret. That is E major.",
+      "Strum all six strings. Major chords sound bright and happy; minor chords sound softer and sadder.",
+      "That one note on the G string is what changes the mood: it is called the third of the chord."
+     ],
+     "q": "If Em were a rainy day, what kind of day would E major be for you?",
+     "c": "Alternate 4 strums of Em and 4 of E, lifting only finger 1, and listen to the mood switch."
+    },
+    "de": {
+     "t": "Der E-Dur-Akkord",
+     "g": "Mach aus Em mit einem zusätzlichen Finger E-Dur und hör den Unterschied.",
+     "p": [
+      "Greif Em mit Finger 2 und 3, dann setz Finger 1 auf die G-Saite im 1. Bund. Das ist E-Dur.",
+      "Schlag alle sechs Saiten an. Dur klingt hell und fröhlich, Moll eher weich und traurig.",
+      "Dieser eine Ton auf der G-Saite verändert die Stimmung: Er heißt die Terz des Akkords."
+     ],
+     "q": "Wenn Em ein Regentag wäre, welcher Tag wäre dann E-Dur für dich?",
+     "c": "Wechsle 4 Anschläge Em und 4 Anschläge E ab, heb dabei nur Finger 1, und hör, wie die Stimmung kippt."
+    },
+    "es": {
+     "t": "El acorde de Mi mayor",
+     "g": "Convertir Em en Mi mayor añadiendo un dedo y escuchar la diferencia.",
+     "p": [
+      "Haz Em con los dedos 2 y 3 y añade el dedo 1 en la cuerda Sol, traste 1. Eso es Mi mayor.",
+      "Rasguea las seis cuerdas. Los acordes mayores suenan brillantes y alegres; los menores, más suaves y tristes.",
+      "Esa nota en la cuerda Sol es la que cambia el carácter: se llama la tercera del acorde."
+     ],
+     "q": "Si Em fuera un día de lluvia, ¿qué tipo de día sería Mi mayor para ti?",
+     "c": "Alterna 4 rasgueos de Em y 4 de E levantando solo el dedo 1, y escucha cómo cambia el ánimo."
+    },
+    "fr": {
+     "t": "L'accord de Mi majeur",
+     "g": "Transformer Em en Mi majeur en ajoutant un doigt et entendre la différence.",
+     "p": [
+      "Forme Em avec les doigts 2 et 3, puis ajoute le doigt 1 sur la corde de Sol, case 1. Voilà Mi majeur.",
+      "Gratte les six cordes. Les accords majeurs sonnent clairs et joyeux ; les mineurs, plus doux et tristes.",
+      "Cette seule note sur la corde de Sol change l'humeur : c'est la tierce de l'accord."
+     ],
+     "q": "Si Em était un jour de pluie, quel genre de journée serait Mi majeur pour toi ?",
+     "c": "Alterne 4 coups d'Em et 4 de E en ne levant que le doigt 1, et écoute l'humeur basculer."
+    },
+    "it": {
+     "t": "L'accordo di Mi maggiore",
+     "g": "Trasformare Em in Mi maggiore aggiungendo un dito e sentire la differenza.",
+     "p": [
+      "Forma Em con le dita 2 e 3, poi aggiungi il dito 1 sulla corda Sol al 1° tasto. Ecco Mi maggiore.",
+      "Pennella tutte e sei le corde. Gli accordi maggiori suonano luminosi e allegri; i minori più morbidi e tristi.",
+      "Quella sola nota sulla corda Sol cambia l'atmosfera: si chiama la terza dell'accordo."
+     ],
+     "q": "Se Em fosse una giornata di pioggia, che giornata sarebbe per te Mi maggiore?",
+     "c": "Alterna 4 pennate di Em e 4 di E alzando solo il dito 1, e ascolta come cambia l'umore."
+    },
+    "pt": {
+     "t": "O acorde de Mi maior",
+     "g": "Transformar o Em em Mi maior com mais um dedo e ouvir a diferença.",
+     "p": [
+      "Faz o Em com os dedos 2 e 3 e junta o dedo 1 na corda Sol, 1.ª casa. É o Mi maior.",
+      "Toca as seis cordas. Os acordes maiores soam brilhantes e alegres; os menores, mais suaves e tristes.",
+      "Essa única nota na corda Sol muda o ambiente: chama-se a terceira do acorde."
+     ],
+     "q": "Se o Em fosse um dia de chuva, que tipo de dia seria o Mi maior para ti?",
+     "c": "Alterna 4 batidas de Em e 4 de E levantando só o dedo 1, e ouve o ambiente mudar."
+    },
+    "pt_BR": {
+     "t": "O acorde de Mi maior",
+     "g": "Transformar o Em em Mi maior com mais um dedo e ouvir a diferença.",
+     "p": [
+      "Monte o Em com os dedos 2 e 3 e acrescente o dedo 1 na corda Sol, casa 1. Isso é Mi maior.",
+      "Toque as seis cordas. Acordes maiores soam brilhantes e alegres; os menores, mais suaves e tristes.",
+      "Essa única nota na corda Sol muda o clima: ela se chama a terça do acorde."
+     ],
+     "q": "Se o Em fosse um dia de chuva, que tipo de dia seria o Mi maior para você?",
+     "c": "Alterne 4 batidas de Em e 4 de E levantando só o dedo 1, e ouça o clima mudar."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The A major chord",
+     "g": "Play A major with three fingers on the 2nd fret without muting the high string.",
+     "p": [
+      "Place fingers 1, 2 and 3 on the D, G and B strings at the 2nd fret. Strum from the A string down.",
+      "The three fingers are crowded, so angle them slightly and keep them on their tips.",
+      "Check the high E string: if it is muted, roll finger 3 a little or try fingers 2, 1, 3 instead."
+     ],
+     "q": "Is the crowded A shape easy for your fingers, or do they feel squeezed?",
+     "c": "Play A, then pick the high E string alone. Adjust until it rings, and repeat the check 10 times."
+    },
+    "de": {
+     "t": "Der A-Dur-Akkord",
+     "g": "Spiel A-Dur mit drei Fingern im 2. Bund, ohne die hohe Saite abzudämpfen.",
+     "p": [
+      "Setz Finger 1, 2 und 3 auf D-, G- und H-Saite im 2. Bund. Schlag ab der A-Saite an.",
+      "Die drei Finger stehen eng, also stell sie leicht schräg und bleib auf den Fingerkuppen.",
+      "Prüf die hohe E-Saite: Ist sie gedämpft, kipp Finger 3 ein wenig oder probier die Reihenfolge 2, 1, 3."
+     ],
+     "q": "Ist die enge A-Form leicht für deine Finger, oder fühlen sie sich gequetscht an?",
+     "c": "Spiel A, dann zupf die hohe E-Saite allein. Korrigier, bis sie klingt, und mach den Check 10-mal."
+    },
+    "es": {
+     "t": "El acorde de La mayor",
+     "g": "Tocar La mayor con tres dedos en el traste 2 sin apagar la cuerda aguda.",
+     "p": [
+      "Pon los dedos 1, 2 y 3 en las cuerdas Re, Sol y Si, traste 2. Rasguea desde la cuerda La.",
+      "Los tres dedos van apretados: inclínalos un poco y mantenlos sobre las yemas.",
+      "Revisa el Mi agudo: si está apagado, gira un poco el dedo 3 o prueba con los dedos 2, 1, 3."
+     ],
+     "q": "¿La forma apretada de La te resulta fácil o sientes los dedos estrujados?",
+     "c": "Toca La y luego solo el Mi agudo. Ajusta hasta que suene y repite la prueba 10 veces."
+    },
+    "fr": {
+     "t": "L'accord de La majeur",
+     "g": "Jouer La majeur avec trois doigts en case 2 sans étouffer la corde aiguë.",
+     "p": [
+      "Place les doigts 1, 2 et 3 sur les cordes de Ré, Sol et Si en case 2. Gratte depuis la corde de La.",
+      "Les trois doigts sont serrés : incline-les légèrement et reste bien sur le bout des doigts.",
+      "Vérifie le Mi aigu : s'il est étouffé, fais rouler un peu le doigt 3 ou essaie l'ordre 2, 1, 3."
+     ],
+     "q": "La forme serrée de La est-elle facile pour tes doigts, ou se sentent-ils à l'étroit ?",
+     "c": "Joue La, puis le Mi aigu seul. Ajuste jusqu'à ce qu'il sonne et refais le test 10 fois."
+    },
+    "it": {
+     "t": "L'accordo di La maggiore",
+     "g": "Suonare La maggiore con tre dita al 2° tasto senza smorzare il cantino.",
+     "p": [
+      "Metti le dita 1, 2 e 3 sulle corde Re, Sol e Si al 2° tasto. Pennella dalla corda La in giù.",
+      "Le tre dita stanno strette: inclinale un po' e tienile sui polpastrelli.",
+      "Controlla il Mi cantino: se è smorzato, ruota un po' il dito 3 o prova l'ordine 2, 1, 3."
+     ],
+     "q": "La forma stretta del La è facile per le tue dita, o si sentono schiacciate?",
+     "c": "Suona La, poi pizzica solo il Mi cantino. Correggi finché suona e ripeti il controllo 10 volte."
+    },
+    "pt": {
+     "t": "O acorde de Lá maior",
+     "g": "Tocar Lá maior com três dedos na 2.ª casa sem abafar a corda aguda.",
+     "p": [
+      "Põe os dedos 1, 2 e 3 nas cordas Ré, Sol e Si, na 2.ª casa. Toca a partir da corda Lá.",
+      "Os três dedos ficam apertados: inclina-os um pouco e mantém-nos nas pontas.",
+      "Verifica o Mi agudo: se estiver abafado, roda um pouco o dedo 3 ou experimenta os dedos 2, 1, 3."
+     ],
+     "q": "A forma apertada do Lá é fácil para os teus dedos, ou sentem-se espremidos?",
+     "c": "Toca Lá e depois só o Mi agudo. Ajusta até soar e repete o teste 10 vezes."
+    },
+    "pt_BR": {
+     "t": "O acorde de Lá maior",
+     "g": "Tocar Lá maior com três dedos na casa 2 sem abafar a corda mais aguda.",
+     "p": [
+      "Coloque os dedos 1, 2 e 3 nas cordas Ré, Sol e Si, casa 2. Toque a partir da corda Lá.",
+      "Os três dedos ficam apertados: incline-os um pouco e mantenha-os na ponta.",
+      "Confira o Mi agudo: se estiver abafado, gire um pouco o dedo 3 ou tente a ordem 2, 1, 3."
+     ],
+     "q": "O desenho apertado do Lá é fácil para seus dedos, ou eles se sentem espremidos?",
+     "c": "Toque Lá e depois só o Mi agudo. Ajuste até soar e repita o teste 10 vezes."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The D major chord",
+     "g": "Play the triangle-shaped D chord and strum only the top four strings.",
+     "p": [
+      "Finger 1 on the G string, 2nd fret; finger 2 on the high E, 2nd fret; finger 3 on the B string, 3rd fret.",
+      "The three fingers form a little triangle. Start your strum on the open D string.",
+      "Skip the low E and A strings: aim your pick so the first string you hit is the D string."
+     ],
+     "q": "What helps you most to aim the strum: watching, feeling, or listening?",
+     "c": "Strum D 16 times, starting each strum exactly on the D string, and count how many sound clean."
+    },
+    "de": {
+     "t": "Der D-Dur-Akkord",
+     "g": "Spiel den dreieckigen D-Akkord und schlag nur die oberen vier Saiten an.",
+     "p": [
+      "Finger 1 auf die G-Saite im 2. Bund, Finger 2 auf die hohe E-Saite im 2. Bund, Finger 3 auf die H-Saite im 3. Bund.",
+      "Die drei Finger bilden ein kleines Dreieck. Beginn deinen Anschlag auf der leeren D-Saite.",
+      "Lass tiefe E- und A-Saite aus: Ziel so, dass die erste Saite, die du triffst, die D-Saite ist."
+     ],
+     "q": "Was hilft dir am meisten beim Zielen: Hinschauen, Fühlen oder Hinhören?",
+     "c": "Schlag D 16-mal an, jedes Mal genau ab der D-Saite, und zähl, wie viele sauber klingen."
+    },
+    "es": {
+     "t": "El acorde de Re mayor",
+     "g": "Tocar el Re en forma de triángulo y rasguear solo las cuatro cuerdas agudas.",
+     "p": [
+      "Dedo 1 en la cuerda Sol, traste 2; dedo 2 en el Mi agudo, traste 2; dedo 3 en la cuerda Si, traste 3.",
+      "Los tres dedos forman un pequeño triángulo. Empieza el rasgueo en la cuerda Re al aire.",
+      "Evita el Mi grave y el La: apunta la púa para que la primera cuerda que toques sea el Re."
+     ],
+     "q": "¿Qué te ayuda más a apuntar el rasgueo: mirar, sentir o escuchar?",
+     "c": "Rasguea Re 16 veces empezando justo en la cuerda Re y cuenta cuántas suenan limpias."
+    },
+    "fr": {
+     "t": "L'accord de Ré majeur",
+     "g": "Jouer le Ré en forme de triangle et ne gratter que les quatre cordes aiguës.",
+     "p": [
+      "Doigt 1 sur la corde de Sol, case 2 ; doigt 2 sur le Mi aigu, case 2 ; doigt 3 sur la corde de Si, case 3.",
+      "Les trois doigts forment un petit triangle. Commence ton coup sur la corde de Ré à vide.",
+      "Évite le Mi grave et le La : vise pour que la première corde touchée soit le Ré."
+     ],
+     "q": "Qu'est-ce qui t'aide le plus à viser : regarder, sentir ou écouter ?",
+     "c": "Gratte Ré 16 fois en partant pile de la corde de Ré et compte combien sonnent net."
+    },
+    "it": {
+     "t": "L'accordo di Re maggiore",
+     "g": "Suonare il Re a forma di triangolo e pennellare solo le quattro corde acute.",
+     "p": [
+      "Dito 1 sulla corda Sol al 2° tasto, dito 2 sul Mi cantino al 2° tasto, dito 3 sulla corda Si al 3° tasto.",
+      "Le tre dita formano un piccolo triangolo. Inizia la pennata dalla corda Re a vuoto.",
+      "Salta Mi basso e La: punta il plettro in modo che la prima corda colpita sia il Re."
+     ],
+     "q": "Cosa ti aiuta di più a mirare la pennata: guardare, sentire al tatto o ascoltare?",
+     "c": "Pennella Re 16 volte partendo esattamente dalla corda Re e conta quante suonano pulite."
+    },
+    "pt": {
+     "t": "O acorde de Ré maior",
+     "g": "Tocar o Ré em forma de triângulo e tocar só as quatro cordas agudas.",
+     "p": [
+      "Dedo 1 na corda Sol, 2.ª casa; dedo 2 no Mi agudo, 2.ª casa; dedo 3 na corda Si, 3.ª casa.",
+      "Os três dedos formam um pequeno triângulo. Começa a batida na corda Ré solta.",
+      "Evita o Mi grave e o Lá: aponta a palheta para que a primeira corda tocada seja o Ré."
+     ],
+     "q": "O que te ajuda mais a acertar a batida: olhar, sentir ou ouvir?",
+     "c": "Toca Ré 16 vezes começando exatamente na corda Ré e conta quantas soam limpas."
+    },
+    "pt_BR": {
+     "t": "O acorde de Ré maior",
+     "g": "Tocar o Ré em forma de triângulo e tocar só as quatro cordas mais agudas.",
+     "p": [
+      "Dedo 1 na corda Sol, casa 2; dedo 2 no Mi agudo, casa 2; dedo 3 na corda Si, casa 3.",
+      "Os três dedos formam um triângulo. Comece a batida na corda Ré solta.",
+      "Evite o Mi grave e o Lá: mire a palheta para que a primeira corda tocada seja o Ré."
+     ],
+     "q": "O que mais te ajuda a acertar a batida: olhar, sentir ou ouvir?",
+     "c": "Toque Ré 16 vezes começando bem na corda Ré e conte quantas soam limpas."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Up-strums join the party",
+     "g": "Add up-strokes on the and of each beat for a fuller rhythm.",
+     "p": [
+      "Count 1 and 2 and 3 and 4 and: strum down on the numbers and up on each and.",
+      "Up-strums are lighter and usually hit only the top three or four strings. That is fine and sounds natural.",
+      "Keep your hand moving down and up like a pendulum all the time, even when it skips a string."
+     ],
+     "q": "Does adding up-strums make your rhythm feel more alive?",
+     "c": "Strum Em with down-up on every beat for 8 bars, counting 1 and 2 and out loud, then try it on D."
+    },
+    "de": {
+     "t": "Aufschläge kommen dazu",
+     "g": "Füg Aufschläge auf dem Und jedes Schlags hinzu, für einen volleren Rhythmus.",
+     "p": [
+      "Zähl 1 und 2 und 3 und 4 und: auf den Zahlen abschlagen, auf jedem und aufschlagen.",
+      "Aufschläge sind leichter und treffen meist nur die oberen drei oder vier Saiten. Das klingt ganz natürlich.",
+      "Lass die Hand ständig wie ein Pendel ab und auf schwingen, auch wenn sie mal eine Saite auslässt."
+     ],
+     "q": "Macht der Aufschlag deinen Rhythmus lebendiger?",
+     "c": "Schlag Em 8 Takte lang ab-auf auf jedem Schlag und zähl laut 1 und 2 und, dann probier es mit D."
+    },
+    "es": {
+     "t": "Llegan los rasgueos hacia arriba",
+     "g": "Añadir rasgueos hacia arriba en el y de cada pulso para un ritmo más lleno.",
+     "p": [
+      "Cuenta 1 y 2 y 3 y 4 y: rasguea abajo en los números y arriba en cada y.",
+      "Los rasgueos hacia arriba son más ligeros y suelen tocar solo las tres o cuatro cuerdas agudas. Suena natural.",
+      "Mantén la mano subiendo y bajando como un péndulo todo el rato, aunque a veces no toque las cuerdas."
+     ],
+     "q": "¿Notas que con los rasgueos hacia arriba tu ritmo cobra más vida?",
+     "c": "Rasguea Em abajo-arriba en cada pulso durante 8 compases contando 1 y 2 y en voz alta, y luego con Re."
+    },
+    "fr": {
+     "t": "Les coups montants entrent en jeu",
+     "g": "Ajouter des coups montants sur le et de chaque temps pour un rythme plus plein.",
+     "p": [
+      "Compte 1 et 2 et 3 et 4 et : vers le bas sur les chiffres, vers le haut sur chaque et.",
+      "Les coups montants sont plus légers et touchent souvent seulement les trois ou quatre cordes aiguës. C'est normal.",
+      "Garde la main en mouvement bas-haut comme un pendule en permanence, même quand elle saute une corde."
+     ],
+     "q": "Les coups montants rendent-ils ton rythme plus vivant ?",
+     "c": "Gratte Em bas-haut sur chaque temps pendant 8 mesures en comptant 1 et 2 et à voix haute, puis essaie sur Ré."
+    },
+    "it": {
+     "t": "Arrivano le pennate in su",
+     "g": "Aggiungere pennate in su sull'e di ogni battito per un ritmo più pieno.",
+     "p": [
+      "Conta 1 e 2 e 3 e 4 e: pennata in giù sui numeri e in su su ogni e.",
+      "Le pennate in su sono più leggere e spesso prendono solo le tre o quattro corde acute. È normale e suona bene.",
+      "Tieni la mano sempre in movimento giù e su come un pendolo, anche quando salta qualche corda."
+     ],
+     "q": "Con le pennate in su il tuo ritmo ti sembra più vivo?",
+     "c": "Pennella Em giù-su su ogni battito per 8 battute contando 1 e 2 e ad alta voce, poi prova con il Re."
+    },
+    "pt": {
+     "t": "Chegam as batidas para cima",
+     "g": "Acrescentar batidas para cima no e de cada tempo para um ritmo mais cheio.",
+     "p": [
+      "Conta 1 e 2 e 3 e 4 e: para baixo nos números e para cima em cada e.",
+      "As batidas para cima são mais leves e costumam tocar só as três ou quatro cordas agudas. É natural.",
+      "Mantém a mão a subir e a descer como um pêndulo o tempo todo, mesmo quando falha uma corda."
+     ],
+     "q": "As batidas para cima deixam o teu ritmo mais vivo?",
+     "c": "Toca Em baixo-cima em cada tempo durante 8 compassos a contar 1 e 2 e em voz alta, depois experimenta com Ré."
+    },
+    "pt_BR": {
+     "t": "Entram as batidas para cima",
+     "g": "Acrescentar batidas para cima no e de cada tempo para um ritmo mais cheio.",
+     "p": [
+      "Conte 1 e 2 e 3 e 4 e: para baixo nos números e para cima em cada e.",
+      "As batidas para cima são mais leves e costumam pegar só as três ou quatro cordas agudas. É natural.",
+      "Mantenha a mão subindo e descendo como um pêndulo o tempo todo, mesmo quando ela passa sem tocar."
+     ],
+     "q": "As batidas para cima deixam seu ritmo mais vivo?",
+     "c": "Toque Em baixo-cima em cada tempo por 8 compassos contando 1 e 2 e em voz alta, depois tente com Ré."
+    }
+   }
+  }
+ ]
+}

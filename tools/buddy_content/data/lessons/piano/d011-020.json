@@ -1,0 +1,835 @@
+{
+ "topic": "piano",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First notes with the left hand",
+     "g": "Learn the C five-finger position in the left hand and play it evenly.",
+     "p": [
+      "Place left-hand finger 5 on the C below middle C, then 4, 3, 2 and 1 on D, E, F and G.",
+      "In the left hand the thumb sits on the highest note, so the finger numbers run the other way.",
+      "Keep the same rounded shape as the right hand and watch that finger 5 does not collapse."
+     ],
+     "q": "Does your left hand feel very different from your right hand?",
+     "c": "Play C D E F G and back with the left hand, five times slowly, saying the finger numbers aloud."
+    },
+    "de": {
+     "t": "Erste Töne mit der linken Hand",
+     "g": "Die C-Fünftonlage in der linken Hand lernen und gleichmäßig spielen.",
+     "p": [
+      "Finger 5 der linken Hand aufs C unter dem mittleren C, dann 4, 3, 2 und 1 auf D, E, F und G.",
+      "Links liegt der Daumen auf dem höchsten Ton, die Fingernummern laufen also andersherum.",
+      "Behalte dieselbe runde Form wie rechts und achte darauf, dass Finger 5 nicht einknickt."
+     ],
+     "q": "Fühlt sich deine linke Hand ganz anders an als die rechte?",
+     "c": "Spiel links C D E F G und zurück, fünfmal langsam, und sag dabei laut die Fingernummern."
+    },
+    "es": {
+     "t": "Primeras notas con la mano izquierda",
+     "g": "Aprender la posición de cinco dedos en Do con la mano izquierda y tocarla de forma pareja.",
+     "p": [
+      "Pon el dedo 5 de la izquierda en el Do bajo el Do central, y 4, 3, 2 y 1 en Re, Mi, Fa y Sol.",
+      "En la izquierda el pulgar está en la nota más aguda, así que los números van al revés.",
+      "Mantén la misma forma redondeada que en la derecha y vigila que el dedo 5 no se hunda."
+     ],
+     "q": "¿Sientes la mano izquierda muy distinta de la derecha?",
+     "c": "Toca Do Re Mi Fa Sol y vuelve con la izquierda, cinco veces despacio, diciendo los números de dedo."
+    },
+    "fr": {
+     "t": "Premières notes à la main gauche",
+     "g": "Apprendre la position de cinq doigts en do à la main gauche et la jouer régulièrement.",
+     "p": [
+      "Pose le doigt 5 gauche sur le do sous le do central, puis 4, 3, 2 et 1 sur ré, mi, fa et sol.",
+      "À gauche, le pouce est sur la note la plus aiguë : les numéros vont donc dans l'autre sens.",
+      "Garde la même main arrondie qu'à droite et veille à ce que le doigt 5 ne s'écrase pas."
+     ],
+     "q": "Ta main gauche te semble-t-elle très différente de la droite ?",
+     "c": "Joue do ré mi fa sol et retour à la main gauche, cinq fois lentement, en disant les doigtés."
+    },
+    "it": {
+     "t": "Prime note con la mano sinistra",
+     "g": "Imparare la posizione di Do a cinque dita con la mano sinistra e suonarla in modo uniforme.",
+     "p": [
+      "Metti il dito 5 della sinistra sul Do sotto il Do centrale, poi 4, 3, 2 e 1 su Re, Mi, Fa e Sol.",
+      "Nella sinistra il pollice è sulla nota più acuta, quindi i numeri vanno al contrario.",
+      "Tieni la stessa forma rotonda della destra e controlla che il dito 5 non si afflosci."
+     ],
+     "q": "Senti la mano sinistra molto diversa dalla destra?",
+     "c": "Suona Do Re Mi Fa Sol e ritorno con la sinistra, cinque volte piano, dicendo i numeri delle dita."
+    },
+    "pt": {
+     "t": "Primeiras notas com a mão esquerda",
+     "g": "Aprender a posição de cinco dedos em dó na mão esquerda e tocá-la de forma igual.",
+     "p": [
+      "Põe o dedo 5 da esquerda no dó abaixo do dó central, e o 4, 3, 2 e 1 em ré, mi, fá e sol.",
+      "Na esquerda o polegar fica na nota mais aguda, por isso os números andam ao contrário.",
+      "Mantém a mesma forma arredondada da direita e vê se o dedo 5 não cede."
+     ],
+     "q": "Sentes a mão esquerda muito diferente da direita?",
+     "c": "Toca dó ré mi fá sol e volta com a esquerda, cinco vezes devagar, dizendo os números dos dedos."
+    },
+    "pt_BR": {
+     "t": "Primeiras notas com a mão esquerda",
+     "g": "Aprender a posição de cinco dedos em dó na mão esquerda e tocá-la por igual.",
+     "p": [
+      "Coloque o dedo 5 da esquerda no dó abaixo do dó central, e o 4, 3, 2 e 1 em ré, mi, fá e sol.",
+      "Na esquerda o polegar fica na nota mais aguda, então os números vão ao contrário.",
+      "Mantenha a mesma forma arredondada da direita e cuide para o dedo 5 não ceder."
+     ],
+     "q": "Você sente a mão esquerda muito diferente da direita?",
+     "c": "Toque dó ré mi fá sol e volte com a esquerda, cinco vezes devagar, falando os números dos dedos."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steady beat and counting",
+     "g": "Feel a steady beat and count quarter notes aloud while you play.",
+     "p": [
+      "The beat is the steady pulse of music, like a heartbeat or a clock ticking.",
+      "A quarter note usually lasts one beat; count 1 2 3 4 evenly and play one note on each number.",
+      "Counting aloud feels strange at first, but it is the fastest way to keep your rhythm honest."
+     ],
+     "q": "Do you tap your foot when you listen to music?",
+     "c": "Tap a steady beat on your knee for 30 seconds, then play C on every beat while counting 1 2 3 4 aloud."
+    },
+    "de": {
+     "t": "Gleichmäßiger Puls und Zählen",
+     "g": "Einen gleichmäßigen Grundschlag spüren und beim Spielen Viertelnoten laut zählen.",
+     "p": [
+      "Der Grundschlag ist der gleichmäßige Puls der Musik, wie ein Herzschlag oder das Ticken einer Uhr.",
+      "Eine Viertelnote dauert meist einen Schlag; zähl gleichmäßig 1 2 3 4 und spiel auf jede Zahl einen Ton.",
+      "Lautes Zählen fühlt sich anfangs seltsam an, ist aber der schnellste Weg zu einem ehrlichen Rhythmus."
+     ],
+     "q": "Wippst du mit dem Fuß, wenn du Musik hörst?",
+     "c": "Klopf 30 Sekunden einen gleichmäßigen Puls aufs Knie, dann spiel auf jeden Schlag C und zähl laut 1 2 3 4."
+    },
+    "es": {
+     "t": "Pulso estable y contar",
+     "g": "Sentir un pulso estable y contar negras en voz alta mientras tocas.",
+     "p": [
+      "El pulso es el latido constante de la música, como un corazón o el tictac de un reloj.",
+      "Una negra suele durar un pulso; cuenta 1 2 3 4 de forma regular y toca una nota en cada número.",
+      "Contar en voz alta resulta raro al principio, pero es la forma más rápida de mantener el ritmo."
+     ],
+     "q": "¿Llevas el ritmo con el pie cuando escuchas música?",
+     "c": "Marca un pulso regular en la rodilla 30 segundos y luego toca Do en cada pulso contando 1 2 3 4 en voz alta."
+    },
+    "fr": {
+     "t": "Pulsation régulière et comptage",
+     "g": "Sentir une pulsation régulière et compter les noires à voix haute en jouant.",
+     "p": [
+      "La pulsation est le battement régulier de la musique, comme un cœur ou le tic-tac d'une horloge.",
+      "Une noire dure en général un temps ; compte 1 2 3 4 régulièrement et joue une note sur chaque chiffre.",
+      "Compter à voix haute semble bizarre au début, mais c'est le moyen le plus rapide d'avoir un rythme juste."
+     ],
+     "q": "Tapes-tu du pied quand tu écoutes de la musique ?",
+     "c": "Tape une pulsation régulière sur ton genou 30 secondes, puis joue do sur chaque temps en comptant 1 2 3 4."
+    },
+    "it": {
+     "t": "Pulsazione regolare e contare",
+     "g": "Sentire una pulsazione regolare e contare le semiminime ad alta voce mentre suoni.",
+     "p": [
+      "La pulsazione è il battito costante della musica, come un cuore o il ticchettio di un orologio.",
+      "Una semiminima di solito dura un movimento; conta 1 2 3 4 in modo regolare e suona una nota per numero.",
+      "Contare ad alta voce sembra strano all'inizio, ma è il modo più rapido per tenere il ritmo giusto."
+     ],
+     "q": "Batti il piede quando ascolti musica?",
+     "c": "Batti un tempo regolare sul ginocchio per 30 secondi, poi suona Do su ogni battito contando 1 2 3 4."
+    },
+    "pt": {
+     "t": "Pulsação constante e contagem",
+     "g": "Sentir uma pulsação constante e contar semínimas em voz alta enquanto tocas.",
+     "p": [
+      "A pulsação é o batimento regular da música, como um coração ou o tiquetaque de um relógio.",
+      "Uma semínima costuma durar um tempo; conta 1 2 3 4 de forma regular e toca uma nota em cada número.",
+      "Contar em voz alta parece estranho no início, mas é a forma mais rápida de manter o ritmo certo."
+     ],
+     "q": "Costumas bater o pé quando ouves música?",
+     "c": "Marca uma pulsação regular no joelho durante 30 segundos e depois toca dó em cada tempo contando 1 2 3 4."
+    },
+    "pt_BR": {
+     "t": "Pulsação constante e contagem",
+     "g": "Sentir uma pulsação constante e contar semínimas em voz alta enquanto toca.",
+     "p": [
+      "A pulsação é a batida regular da música, como um coração ou o tique-taque de um relógio.",
+      "Uma semínima geralmente dura um tempo; conte 1 2 3 4 de forma regular e toque uma nota em cada número.",
+      "Contar em voz alta parece estranho no começo, mas é o jeito mais rápido de manter o ritmo certo."
+     ],
+     "q": "Você costuma bater o pé quando ouve música?",
+     "c": "Marque uma pulsação regular no joelho por 30 segundos e depois toque dó em cada tempo contando 1 2 3 4."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quarter, half and whole notes",
+     "g": "Recognise three basic note lengths and hold each one for the right number of beats.",
+     "p": [
+      "A quarter note is a filled head with a stem and lasts 1 beat.",
+      "A half note is a hollow head with a stem and lasts 2 beats; a whole note is a hollow head alone and lasts 4.",
+      "Keep the key down for the full value while you keep counting, and release exactly on the next beat."
+     ],
+     "q": "Which is harder for you: playing on time or holding long notes long enough?",
+     "c": "On C, play 4 quarters, 2 halves, then 1 whole note, counting 1 2 3 4 aloud through each bar."
+    },
+    "de": {
+     "t": "Viertel, Halbe und Ganze",
+     "g": "Drei Grundnotenwerte erkennen und jeden genau so viele Schläge halten, wie er dauert.",
+     "p": [
+      "Die Viertelnote hat einen gefüllten Kopf mit Hals und dauert 1 Schlag.",
+      "Die halbe Note hat einen hohlen Kopf mit Hals und dauert 2 Schläge; die ganze Note ist hohl ohne Hals und dauert 4.",
+      "Halt die Taste den ganzen Wert lang unten, zähl weiter und lass genau auf dem nächsten Schlag los."
+     ],
+     "q": "Was fällt dir schwerer: im Takt spielen oder lange Noten lange genug halten?",
+     "c": "Spiel auf C vier Viertel, zwei Halbe und eine Ganze und zähl dabei in jedem Takt laut 1 2 3 4."
+    },
+    "es": {
+     "t": "Negras, blancas y redondas",
+     "g": "Reconocer tres figuras básicas y mantener cada una los pulsos que le corresponden.",
+     "p": [
+      "La negra tiene la cabeza rellena y plica, y dura 1 pulso.",
+      "La blanca tiene la cabeza hueca y plica, y dura 2 pulsos; la redonda es hueca sin plica y dura 4.",
+      "Mantén la tecla abajo todo el valor sin dejar de contar y suéltala justo en el siguiente pulso."
+     ],
+     "q": "¿Qué te cuesta más: tocar a tiempo o mantener las notas largas lo suficiente?",
+     "c": "En Do, toca 4 negras, 2 blancas y 1 redonda, contando 1 2 3 4 en voz alta en cada compás."
+    },
+    "fr": {
+     "t": "Noires, blanches et rondes",
+     "g": "Reconnaître trois durées de base et tenir chacune le bon nombre de temps.",
+     "p": [
+      "La noire a une tête pleine avec une hampe et dure 1 temps.",
+      "La blanche a une tête vide avec une hampe et dure 2 temps ; la ronde, tête vide sans hampe, dure 4 temps.",
+      "Garde la touche enfoncée toute la durée en continuant à compter, et relâche pile sur le temps suivant."
+     ],
+     "q": "Qu'est-ce qui est le plus dur pour toi : jouer en rythme ou tenir assez les notes longues ?",
+     "c": "Sur do, joue 4 noires, 2 blanches puis 1 ronde, en comptant 1 2 3 4 à voix haute dans chaque mesure."
+    },
+    "it": {
+     "t": "Semiminime, minime e semibrevi",
+     "g": "Riconoscere tre figure di base e tenere ognuna per il giusto numero di movimenti.",
+     "p": [
+      "La semiminima ha la testa piena con il gambo e dura 1 movimento.",
+      "La minima ha la testa vuota con il gambo e dura 2 movimenti; la semibreve è vuota senza gambo e dura 4.",
+      "Tieni il tasto giù per tutto il valore continuando a contare e rilascialo esattamente sul movimento dopo."
+     ],
+     "q": "Cosa ti riesce più difficile: suonare a tempo o tenere abbastanza le note lunghe?",
+     "c": "Sul Do suona 4 semiminime, 2 minime e 1 semibreve, contando 1 2 3 4 ad alta voce in ogni battuta."
+    },
+    "pt": {
+     "t": "Semínimas, mínimas e semibreves",
+     "g": "Reconhecer três figuras básicas e manter cada uma o número certo de tempos.",
+     "p": [
+      "A semínima tem a cabeça cheia com haste e dura 1 tempo.",
+      "A mínima tem a cabeça vazia com haste e dura 2 tempos; a semibreve é vazia sem haste e dura 4.",
+      "Mantém a tecla em baixo todo o valor sem parar de contar e larga-a mesmo no tempo seguinte."
+     ],
+     "q": "O que te custa mais: tocar a tempo ou segurar as notas longas o suficiente?",
+     "c": "No dó, toca 4 semínimas, 2 mínimas e 1 semibreve, contando 1 2 3 4 em voz alta em cada compasso."
+    },
+    "pt_BR": {
+     "t": "Semínimas, mínimas e semibreves",
+     "g": "Reconhecer três figuras básicas e segurar cada uma pelo número certo de tempos.",
+     "p": [
+      "A semínima tem a cabeça cheia com haste e dura 1 tempo.",
+      "A mínima tem a cabeça vazada com haste e dura 2 tempos; a semibreve é vazada sem haste e dura 4.",
+      "Segure a tecla pelo valor todo sem parar de contar e solte bem no tempo seguinte."
+     ],
+     "q": "O que é mais difícil para você: tocar no tempo ou segurar as notas longas o bastante?",
+     "c": "No dó, toque 4 semínimas, 2 mínimas e 1 semibreve, contando 1 2 3 4 em voz alta em cada compasso."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first melody",
+     "g": "Play a simple tune in C position with the right hand, steadily and with a clear sound.",
+     "p": [
+      "Ode to Joy by Beethoven fits in C position: E E F G G F E D C C D E E D D.",
+      "Keep your hand in place on C to G so each note already has its finger; no looking for keys.",
+      "Choose a slow tempo you can keep from start to finish, then speed up only when it feels easy."
+     ],
+     "q": "Is there a song you would love to play as your first real piece?",
+     "c": "Play the first line of Ode to Joy three times without stopping, even if a note slips."
+    },
+    "de": {
+     "t": "Deine erste Melodie",
+     "g": "Eine einfache Melodie in der C-Lage mit der rechten Hand gleichmäßig und klar spielen.",
+     "p": [
+      "Beethovens Ode an die Freude passt in die C-Lage: E E F G G F E D C C D E E D D.",
+      "Lass die Hand auf C bis G liegen, so hat jeder Ton schon seinen Finger und du musst nichts suchen.",
+      "Wähl ein langsames Tempo, das du bis zum Ende halten kannst, und werde erst schneller, wenn es leicht geht."
+     ],
+     "q": "Gibt es ein Lied, das du gern als erstes richtiges Stück spielen würdest?",
+     "c": "Spiel die erste Zeile der Ode an die Freude dreimal ohne anzuhalten, auch wenn mal ein Ton danebengeht."
+    },
+    "es": {
+     "t": "Tu primera melodía",
+     "g": "Tocar una melodía sencilla en posición de Do con la derecha, con pulso estable y sonido claro.",
+     "p": [
+      "El Himno a la alegría de Beethoven cabe en posición de Do: Mi Mi Fa Sol Sol Fa Mi Re Do Do Re Mi Mi Re Re.",
+      "Deja la mano fija de Do a Sol: cada nota ya tiene su dedo y no hay que buscar teclas.",
+      "Elige un tempo lento que puedas mantener de principio a fin y acelera solo cuando te resulte fácil."
+     ],
+     "q": "¿Hay alguna canción que te encantaría tocar como primera pieza de verdad?",
+     "c": "Toca la primera frase del Himno a la alegría tres veces sin parar, aunque se escape alguna nota."
+    },
+    "fr": {
+     "t": "Ta première mélodie",
+     "g": "Jouer un air simple en position de do à la main droite, avec régularité et un son clair.",
+     "p": [
+      "L'Hymne à la joie de Beethoven tient en position de do : mi mi fa sol sol fa mi ré do do ré mi mi ré ré.",
+      "Garde la main posée de do à sol : chaque note a déjà son doigt, inutile de chercher les touches.",
+      "Choisis un tempo lent que tu peux tenir du début à la fin, et n'accélère que quand c'est facile."
+     ],
+     "q": "Y a-t-il un morceau que tu aimerais jouer comme première vraie pièce ?",
+     "c": "Joue la première ligne de l'Hymne à la joie trois fois sans t'arrêter, même si une note t'échappe."
+    },
+    "it": {
+     "t": "La tua prima melodia",
+     "g": "Suonare una melodia semplice in posizione di Do con la destra, a tempo e con un suono chiaro.",
+     "p": [
+      "L'Inno alla gioia di Beethoven sta nella posizione di Do: Mi Mi Fa Sol Sol Fa Mi Re Do Do Re Mi Mi Re Re.",
+      "Tieni la mano ferma da Do a Sol: ogni nota ha già il suo dito e non devi cercare i tasti.",
+      "Scegli un tempo lento che riesci a mantenere dall'inizio alla fine e accelera solo quando è facile."
+     ],
+     "q": "C'è una canzone che ti piacerebbe suonare come primo vero brano?",
+     "c": "Suona la prima riga dell'Inno alla gioia tre volte senza fermarti, anche se scappa qualche nota."
+    },
+    "pt": {
+     "t": "A tua primeira melodia",
+     "g": "Tocar uma melodia simples na posição de dó com a direita, com pulsação certa e som claro.",
+     "p": [
+      "O Hino da Alegria de Beethoven cabe na posição de dó: mi mi fá sol sol fá mi ré dó dó ré mi mi ré ré.",
+      "Deixa a mão fixa de dó a sol: cada nota já tem o seu dedo e não precisas de procurar teclas.",
+      "Escolhe um andamento lento que consigas manter do início ao fim e só acelera quando for fácil."
+     ],
+     "q": "Há alguma música que gostavas de tocar como primeira peça a sério?",
+     "c": "Toca a primeira frase do Hino da Alegria três vezes sem parar, mesmo que falhe alguma nota."
+    },
+    "pt_BR": {
+     "t": "Sua primeira melodia",
+     "g": "Tocar uma melodia simples na posição de dó com a direita, com pulsação firme e som claro.",
+     "p": [
+      "A Ode à Alegria de Beethoven cabe na posição de dó: mi mi fá sol sol fá mi ré dó dó ré mi mi ré ré.",
+      "Deixe a mão fixa de dó a sol: cada nota já tem seu dedo e você não precisa procurar teclas.",
+      "Escolha um andamento lento que dê para manter do começo ao fim e só acelere quando ficar fácil."
+     ],
+     "q": "Tem alguma música que você adoraria tocar como primeira peça de verdade?",
+     "c": "Toque a primeira frase da Ode à Alegria três vezes sem parar, mesmo que escape alguma nota."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A left-hand melody",
+     "g": "Play a short tune with the left hand alone, as clearly as with the right.",
+     "p": [
+      "Use left-hand C position: finger 5 on C, 1 on G; try Ode to Joy an octave lower with the left hand.",
+      "The left hand often feels clumsy at first; slow, careful repetition is what wakes it up.",
+      "Listen for an even sound: fingers 4 and 5 tend to play softer, so give them a little more weight."
+     ],
+     "q": "Are you right-handed or left-handed, and does it change how the piano feels?",
+     "c": "Play the first line of Ode to Joy with the left hand alone, five times slowly with even notes."
+    },
+    "de": {
+     "t": "Eine Melodie für die linke Hand",
+     "g": "Eine kurze Melodie mit der linken Hand allein so klar spielen wie mit der rechten.",
+     "p": [
+      "Nutz die linke C-Lage: Finger 5 auf C, 1 auf G; spiel die Ode an die Freude eine Oktave tiefer links.",
+      "Die linke Hand fühlt sich anfangs oft ungeschickt an; langsames, genaues Wiederholen weckt sie auf.",
+      "Hör auf einen gleichmäßigen Klang: Finger 4 und 5 spielen oft leiser, gib ihnen etwas mehr Gewicht."
+     ],
+     "q": "Bist du Rechts- oder Linkshänder, und merkst du das am Klavier?",
+     "c": "Spiel die erste Zeile der Ode an die Freude nur mit links, fünfmal langsam und mit gleichmäßigen Tönen."
+    },
+    "es": {
+     "t": "Una melodía con la izquierda",
+     "g": "Tocar una melodía corta solo con la mano izquierda, tan clara como con la derecha.",
+     "p": [
+      "Usa la posición de Do de la izquierda: dedo 5 en Do y 1 en Sol; prueba el Himno a la alegría una octava abajo.",
+      "La izquierda suele sentirse torpe al principio; la repetición lenta y cuidadosa es lo que la despierta.",
+      "Busca un sonido parejo: los dedos 4 y 5 suelen sonar más flojos, así que dales un poco más de peso."
+     ],
+     "q": "¿Eres diestro o zurdo, y notas la diferencia en el piano?",
+     "c": "Toca la primera frase del Himno a la alegría solo con la izquierda, cinco veces despacio y parejo."
+    },
+    "fr": {
+     "t": "Une mélodie à la main gauche",
+     "g": "Jouer un petit air à la main gauche seule, aussi clairement qu'à la droite.",
+     "p": [
+      "Utilise la position de do à gauche : doigt 5 sur do, 1 sur sol ; essaie l'Hymne à la joie une octave plus bas.",
+      "La main gauche paraît souvent maladroite au début ; une répétition lente et soignée la réveille.",
+      "Écoute l'égalité du son : les doigts 4 et 5 jouent souvent moins fort, donne-leur un peu plus de poids."
+     ],
+     "q": "Es-tu droitier ou gaucher, et le sens-tu au piano ?",
+     "c": "Joue la première ligne de l'Hymne à la joie à la main gauche seule, cinq fois lentement et égal."
+    },
+    "it": {
+     "t": "Una melodia per la mano sinistra",
+     "g": "Suonare una breve melodia con la sola mano sinistra, chiara come con la destra.",
+     "p": [
+      "Usa la posizione di Do della sinistra: dito 5 sul Do, 1 sul Sol; prova l'Inno alla gioia un'ottava sotto.",
+      "All'inizio la sinistra sembra spesso goffa; la ripetizione lenta e attenta è ciò che la risveglia.",
+      "Ascolta che il suono sia uniforme: il 4 e il 5 tendono a suonare più piano, dai loro un po' più di peso."
+     ],
+     "q": "Sei destrorso o mancino, e lo senti al pianoforte?",
+     "c": "Suona la prima riga dell'Inno alla gioia con la sola sinistra, cinque volte piano e uniforme."
+    },
+    "pt": {
+     "t": "Uma melodia para a mão esquerda",
+     "g": "Tocar uma melodia curta só com a mão esquerda, tão clara como com a direita.",
+     "p": [
+      "Usa a posição de dó da esquerda: dedo 5 no dó e 1 no sol; experimenta o Hino da Alegria uma oitava abaixo.",
+      "A esquerda parece muitas vezes desajeitada no início; a repetição lenta e cuidadosa é que a acorda.",
+      "Procura um som igual: os dedos 4 e 5 costumam soar mais fracos, por isso dá-lhes um pouco mais de peso."
+     ],
+     "q": "És destro ou canhoto, e notas isso ao piano?",
+     "c": "Toca a primeira frase do Hino da Alegria só com a esquerda, cinco vezes devagar e com notas iguais."
+    },
+    "pt_BR": {
+     "t": "Uma melodia para a mão esquerda",
+     "g": "Tocar uma melodia curta só com a mão esquerda, tão clara quanto com a direita.",
+     "p": [
+      "Use a posição de dó da esquerda: dedo 5 no dó e 1 no sol; experimente a Ode à Alegria uma oitava abaixo.",
+      "A esquerda costuma parecer desajeitada no começo; a repetição lenta e cuidadosa é o que a desperta.",
+      "Busque um som uniforme: os dedos 4 e 5 tendem a soar mais fracos, então dê a eles um pouco mais de peso."
+     ],
+     "q": "Você é destro ou canhoto, e sente isso no piano?",
+     "c": "Toque a primeira frase da Ode à Alegria só com a esquerda, cinco vezes devagar e com notas iguais."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hands taking turns",
+     "g": "Play melodies that pass back and forth between the hands without breaking the beat.",
+     "p": [
+      "Put both hands in C position: left 5 on low C, right 1 on middle C, so the hands sit side by side.",
+      "When one hand finishes, the other must be ready; prepare the next hand while the first is still playing.",
+      "Keep counting through the handover: the beat never stops just because the hand changes."
+     ],
+     "q": "Do you prefer playing with one hand, or switching between both?",
+     "c": "Play C D E F G with the left hand, then G F E D C with the right, without a gap, three times in a row."
+    },
+    "de": {
+     "t": "Die Hände wechseln sich ab",
+     "g": "Melodien spielen, die zwischen den Händen hin und her wandern, ohne den Puls zu verlieren.",
+     "p": [
+      "Beide Hände in C-Lage: links 5 aufs tiefe C, rechts 1 aufs mittlere C, die Hände liegen nebeneinander.",
+      "Wenn eine Hand fertig ist, muss die andere bereit sein; bereite sie vor, während die erste noch spielt.",
+      "Zähl beim Wechsel weiter: Der Puls hört nicht auf, nur weil die Hand wechselt."
+     ],
+     "q": "Spielst du lieber mit einer Hand oder im Wechsel mit beiden?",
+     "c": "Spiel links C D E F G, dann rechts G F E D C ohne Lücke, dreimal hintereinander."
+    },
+    "es": {
+     "t": "Las manos se turnan",
+     "g": "Tocar melodías que pasan de una mano a otra sin romper el pulso.",
+     "p": [
+      "Pon las dos manos en posición de Do: la izquierda con el 5 en el Do grave y la derecha con el 1 en el Do central.",
+      "Cuando una mano termina, la otra debe estar lista; prepárala mientras la primera aún toca.",
+      "Sigue contando durante el relevo: el pulso no se detiene porque cambie la mano."
+     ],
+     "q": "¿Prefieres tocar con una sola mano o alternar las dos?",
+     "c": "Toca Do Re Mi Fa Sol con la izquierda y luego Sol Fa Mi Re Do con la derecha sin hueco, tres veces seguidas."
+    },
+    "fr": {
+     "t": "Les mains se relaient",
+     "g": "Jouer des mélodies qui passent d'une main à l'autre sans casser la pulsation.",
+     "p": [
+      "Mets les deux mains en position de do : gauche 5 sur le do grave, droite 1 sur le do central, côte à côte.",
+      "Quand une main finit, l'autre doit être prête ; prépare-la pendant que la première joue encore.",
+      "Continue à compter pendant le passage : la pulsation ne s'arrête pas parce que la main change."
+     ],
+     "q": "Préfères-tu jouer avec une main ou alterner les deux ?",
+     "c": "Joue do ré mi fa sol à gauche puis sol fa mi ré do à droite sans trou, trois fois de suite."
+    },
+    "it": {
+     "t": "Le mani si danno il cambio",
+     "g": "Suonare melodie che passano da una mano all'altra senza interrompere la pulsazione.",
+     "p": [
+      "Metti entrambe le mani in posizione di Do: sinistra 5 sul Do grave, destra 1 sul Do centrale, una accanto all'altra.",
+      "Quando una mano finisce l'altra deve essere pronta; preparala mentre la prima sta ancora suonando.",
+      "Continua a contare durante il passaggio: la pulsazione non si ferma perché cambia la mano."
+     ],
+     "q": "Preferisci suonare con una mano sola o alternarle?",
+     "c": "Suona Do Re Mi Fa Sol con la sinistra e poi Sol Fa Mi Re Do con la destra senza pause, tre volte di fila."
+    },
+    "pt": {
+     "t": "As mãos revezam-se",
+     "g": "Tocar melodias que passam de uma mão para a outra sem quebrar a pulsação.",
+     "p": [
+      "Põe as duas mãos na posição de dó: esquerda com o 5 no dó grave, direita com o 1 no dó central, lado a lado.",
+      "Quando uma mão acaba, a outra tem de estar pronta; prepara-a enquanto a primeira ainda toca.",
+      "Continua a contar na passagem: a pulsação não para só porque a mão muda."
+     ],
+     "q": "Preferes tocar com uma mão ou alternar as duas?",
+     "c": "Toca dó ré mi fá sol com a esquerda e depois sol fá mi ré dó com a direita sem pausa, três vezes seguidas."
+    },
+    "pt_BR": {
+     "t": "As mãos se revezam",
+     "g": "Tocar melodias que passam de uma mão para a outra sem quebrar a pulsação.",
+     "p": [
+      "Coloque as duas mãos na posição de dó: esquerda com o 5 no dó grave, direita com o 1 no dó central, lado a lado.",
+      "Quando uma mão termina, a outra precisa estar pronta; prepare-a enquanto a primeira ainda toca.",
+      "Continue contando na troca: a pulsação não para só porque a mão mudou."
+     ],
+     "q": "Você prefere tocar com uma mão ou alternar as duas?",
+     "c": "Toque dó ré mi fá sol com a esquerda e depois sol fá mi ré dó com a direita sem pausa, três vezes seguidas."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introducing the staff",
+     "g": "Understand the five lines and four spaces where written notes live.",
+     "p": [
+      "The staff has 5 lines and 4 spaces, counted from the bottom up.",
+      "A note sits either on a line, with the line through its head, or in a space, between two lines.",
+      "The higher a note sits on the staff, the higher it sounds; short extra lines called ledger lines extend it."
+     ],
+     "q": "Have you ever tried to read sheet music before?",
+     "c": "Draw a staff and write one note on each line and in each space, then point and say line 1, space 1 and so on."
+    },
+    "de": {
+     "t": "Das Notensystem",
+     "g": "Die fünf Linien und vier Zwischenräume verstehen, auf denen Noten stehen.",
+     "p": [
+      "Das Notensystem hat 5 Linien und 4 Zwischenräume, von unten nach oben gezählt.",
+      "Eine Note sitzt entweder auf einer Linie, die durch den Kopf geht, oder in einem Zwischenraum.",
+      "Je höher die Note im System steht, desto höher klingt sie; kurze Hilfslinien erweitern das System."
+     ],
+     "q": "Hast du schon einmal versucht, Noten zu lesen?",
+     "c": "Zeichne fünf Linien, setz eine Note auf jede Linie und in jeden Zwischenraum und benenne sie: Linie 1, Raum 1 usw."
+    },
+    "es": {
+     "t": "El pentagrama",
+     "g": "Entender las cinco líneas y los cuatro espacios donde se escriben las notas.",
+     "p": [
+      "El pentagrama tiene 5 líneas y 4 espacios, que se cuentan de abajo arriba.",
+      "Una nota va en una línea, con la línea cruzando su cabeza, o en un espacio, entre dos líneas.",
+      "Cuanto más arriba está la nota, más aguda suena; las líneas adicionales amplían el pentagrama."
+     ],
+     "q": "¿Habías intentado leer partituras alguna vez?",
+     "c": "Dibuja un pentagrama, escribe una nota en cada línea y cada espacio, y señálalas: línea 1, espacio 1, etc."
+    },
+    "fr": {
+     "t": "La portée",
+     "g": "Comprendre les cinq lignes et les quatre interlignes où s'écrivent les notes.",
+     "p": [
+      "La portée a 5 lignes et 4 interlignes, comptés de bas en haut.",
+      "Une note est soit sur une ligne, qui traverse sa tête, soit dans un interligne, entre deux lignes.",
+      "Plus la note est haute sur la portée, plus elle est aiguë ; de petites lignes supplémentaires la prolongent."
+     ],
+     "q": "As-tu déjà essayé de lire une partition ?",
+     "c": "Dessine une portée, écris une note sur chaque ligne et dans chaque interligne, puis nomme-les : ligne 1, interligne 1."
+    },
+    "it": {
+     "t": "Il pentagramma",
+     "g": "Capire le cinque linee e i quattro spazi su cui si scrivono le note.",
+     "p": [
+      "Il pentagramma ha 5 linee e 4 spazi, contati dal basso verso l'alto.",
+      "Una nota sta su una linea, che le attraversa la testa, oppure in uno spazio, tra due linee.",
+      "Più la nota è in alto, più è acuta; i tagli addizionali estendono il pentagramma sopra e sotto."
+     ],
+     "q": "Hai mai provato a leggere uno spartito?",
+     "c": "Disegna un pentagramma, scrivi una nota su ogni linea e in ogni spazio e indicale: linea 1, spazio 1 e così via."
+    },
+    "pt": {
+     "t": "A pauta",
+     "g": "Perceber as cinco linhas e os quatro espaços onde se escrevem as notas.",
+     "p": [
+      "A pauta tem 5 linhas e 4 espaços, contados de baixo para cima.",
+      "Uma nota fica numa linha, com a linha a atravessar a cabeça, ou num espaço, entre duas linhas.",
+      "Quanto mais alta na pauta, mais aguda soa a nota; as linhas suplementares prolongam a pauta."
+     ],
+     "q": "Já alguma vez tentaste ler uma partitura?",
+     "c": "Desenha uma pauta, escreve uma nota em cada linha e em cada espaço e aponta-as: linha 1, espaço 1, etc."
+    },
+    "pt_BR": {
+     "t": "A pauta",
+     "g": "Entender as cinco linhas e os quatro espaços onde as notas são escritas.",
+     "p": [
+      "A pauta tem 5 linhas e 4 espaços, contados de baixo para cima.",
+      "Uma nota fica numa linha, com a linha cortando a cabeça, ou num espaço, entre duas linhas.",
+      "Quanto mais alto na pauta, mais aguda soa a nota; as linhas suplementares ampliam a pauta."
+     ],
+     "q": "Você já tentou ler partitura alguma vez?",
+     "c": "Desenhe uma pauta, escreva uma nota em cada linha e em cada espaço e aponte: linha 1, espaço 1 e assim por diante."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Treble clef notes",
+     "g": "Read notes in the treble clef from middle C upward.",
+     "p": [
+      "The treble or G clef curls around line 2, which is G; the right hand usually reads this staff.",
+      "Middle C sits on a ledger line just below the staff, then D below line 1 and E on line 1.",
+      "Lines from bottom: E G B D F (Every Good Boy Does Fine); spaces spell F A C E."
+     ],
+     "q": "Which do you find easier to read, notes on lines or in spaces?",
+     "c": "Write the notes C to G of your C position on a treble staff and play them while naming each one."
+    },
+    "de": {
+     "t": "Noten im Violinschlüssel",
+     "g": "Noten im Violinschlüssel vom mittleren C aufwärts lesen.",
+     "p": [
+      "Der Violin- oder G-Schlüssel kringelt sich um die 2. Linie, das G; meist liest die rechte Hand dieses System.",
+      "Das mittlere C steht auf einer Hilfslinie unter dem System, D darunter an der 1. Linie, E auf der 1. Linie.",
+      "Linien von unten: E G H D F; Zwischenräume: F A C E. Merksatz: Es geht hurtig durch Fleiß."
+     ],
+     "q": "Was liest du leichter, Noten auf Linien oder in Zwischenräumen?",
+     "c": "Schreib die Töne C bis G deiner C-Lage in den Violinschlüssel und spiel sie, während du jeden benennst."
+    },
+    "es": {
+     "t": "Notas en clave de sol",
+     "g": "Leer notas en clave de sol desde el Do central hacia arriba.",
+     "p": [
+      "La clave de sol se enrosca en la 2.ª línea, que es Sol; suele leerla la mano derecha.",
+      "El Do central va en una línea adicional bajo el pentagrama; Re justo debajo de la 1.ª línea y Mi en ella.",
+      "Líneas de abajo arriba: Mi Sol Si Re Fa; espacios: Fa La Do Mi."
+     ],
+     "q": "¿Qué lees mejor, las notas en líneas o en espacios?",
+     "c": "Escribe en clave de sol las notas de Do a Sol de tu posición y tócalas diciendo el nombre de cada una."
+    },
+    "fr": {
+     "t": "Les notes en clé de sol",
+     "g": "Lire les notes en clé de sol à partir du do central vers l'aigu.",
+     "p": [
+      "La clé de sol s'enroule autour de la 2e ligne, qui est sol ; c'est souvent la portée de la main droite.",
+      "Le do central est sur une ligne supplémentaire sous la portée, ré juste en dessous de la 1re ligne, mi dessus.",
+      "Lignes de bas en haut : mi sol si ré fa ; interlignes : fa la do mi."
+     ],
+     "q": "Qu'est-ce que tu lis le plus facilement, les notes sur les lignes ou dans les interlignes ?",
+     "c": "Écris en clé de sol les notes de do à sol de ta position, puis joue-les en nommant chacune."
+    },
+    "it": {
+     "t": "Le note in chiave di violino",
+     "g": "Leggere le note in chiave di violino dal Do centrale verso l'acuto.",
+     "p": [
+      "La chiave di violino, o di Sol, si avvolge intorno alla 2ª linea, che è Sol; di solito la legge la destra.",
+      "Il Do centrale sta su un taglio addizionale sotto il pentagramma, il Re sotto la 1ª linea e il Mi sulla 1ª.",
+      "Linee dal basso: Mi Sol Si Re Fa; spazi: Fa La Do Mi."
+     ],
+     "q": "Cosa leggi più facilmente, le note sulle linee o negli spazi?",
+     "c": "Scrivi in chiave di violino le note da Do a Sol della tua posizione e suonale dicendo il nome di ognuna."
+    },
+    "pt": {
+     "t": "Notas na clave de sol",
+     "g": "Ler notas na clave de sol a partir do dó central para cima.",
+     "p": [
+      "A clave de sol enrola-se à volta da 2.ª linha, que é o sol; normalmente é a pauta da mão direita.",
+      "O dó central fica numa linha suplementar abaixo da pauta, o ré logo abaixo da 1.ª linha e o mi em cima dela.",
+      "Linhas de baixo para cima: mi sol si ré fá; espaços: fá lá dó mi."
+     ],
+     "q": "O que lês com mais facilidade, notas nas linhas ou nos espaços?",
+     "c": "Escreve na clave de sol as notas de dó a sol da tua posição e toca-as dizendo o nome de cada uma."
+    },
+    "pt_BR": {
+     "t": "Notas na clave de sol",
+     "g": "Ler notas na clave de sol a partir do dó central para cima.",
+     "p": [
+      "A clave de sol se enrola na 2ª linha, que é o sol; normalmente é a pauta da mão direita.",
+      "O dó central fica numa linha suplementar abaixo da pauta, o ré logo abaixo da 1ª linha e o mi sobre ela.",
+      "Linhas de baixo para cima: mi sol si ré fá; espaços: fá lá dó mi."
+     ],
+     "q": "O que você lê com mais facilidade, notas nas linhas ou nos espaços?",
+     "c": "Escreva na clave de sol as notas de dó a sol da sua posição e toque falando o nome de cada uma."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bass clef notes",
+     "g": "Read notes in the bass clef from middle C downward.",
+     "p": [
+      "The bass or F clef has two dots around line 4, which is F; the left hand usually reads this staff.",
+      "Middle C sits on a ledger line just above the bass staff, with B and A just below it.",
+      "Lines from bottom: G B D F A (Good Boys Do Fine Always); spaces: A C E G (All Cows Eat Grass)."
+     ],
+     "q": "Does reading the bass clef feel harder than the treble clef?",
+     "c": "Write the notes from low C to G of your left-hand position on a bass staff and play them, naming each one."
+    },
+    "de": {
+     "t": "Noten im Bassschlüssel",
+     "g": "Noten im Bassschlüssel vom mittleren C abwärts lesen.",
+     "p": [
+      "Der Bass- oder F-Schlüssel hat zwei Punkte um die 4. Linie, das F; meist liest die linke Hand dieses System.",
+      "Das mittlere C steht auf einer Hilfslinie über dem Basssystem, H und A direkt darunter.",
+      "Linien von unten: G H D F A; Zwischenräume: A C E G."
+     ],
+     "q": "Fühlt sich der Bassschlüssel schwerer an als der Violinschlüssel?",
+     "c": "Schreib die Töne vom tiefen C bis G deiner linken C-Lage in den Bassschlüssel und spiel sie mit Namen."
+    },
+    "es": {
+     "t": "Notas en clave de fa",
+     "g": "Leer notas en clave de fa desde el Do central hacia abajo.",
+     "p": [
+      "La clave de fa en 4.ª tiene dos puntos alrededor de la 4.ª línea, que es Fa; suele leerla la izquierda.",
+      "El Do central va en una línea adicional justo encima del pentagrama, con Si y La justo debajo.",
+      "Líneas de abajo arriba: Sol Si Re Fa La; espacios: La Do Mi Sol."
+     ],
+     "q": "¿Te cuesta más leer la clave de fa que la de sol?",
+     "c": "Escribe en clave de fa las notas de Do a Sol de tu posición izquierda y tócalas diciendo su nombre."
+    },
+    "fr": {
+     "t": "Les notes en clé de fa",
+     "g": "Lire les notes en clé de fa à partir du do central vers le grave.",
+     "p": [
+      "La clé de fa a deux points autour de la 4e ligne, qui est fa ; c'est souvent la portée de la main gauche.",
+      "Le do central est sur une ligne supplémentaire juste au-dessus de la portée, avec si et la juste en dessous.",
+      "Lignes de bas en haut : sol si ré fa la ; interlignes : la do mi sol."
+     ],
+     "q": "La clé de fa te semble-t-elle plus difficile à lire que la clé de sol ?",
+     "c": "Écris en clé de fa les notes de do à sol de ta position gauche, puis joue-les en les nommant."
+    },
+    "it": {
+     "t": "Le note in chiave di basso",
+     "g": "Leggere le note in chiave di basso dal Do centrale verso il grave.",
+     "p": [
+      "La chiave di basso, o di Fa, ha due punti intorno alla 4ª linea, che è Fa; di solito la legge la sinistra.",
+      "Il Do centrale sta su un taglio addizionale appena sopra il pentagramma, con Si e La subito sotto.",
+      "Linee dal basso: Sol Si Re Fa La; spazi: La Do Mi Sol."
+     ],
+     "q": "Leggere la chiave di basso ti sembra più difficile della chiave di violino?",
+     "c": "Scrivi in chiave di basso le note da Do a Sol della posizione sinistra e suonale dicendone il nome."
+    },
+    "pt": {
+     "t": "Notas na clave de fá",
+     "g": "Ler notas na clave de fá a partir do dó central para baixo.",
+     "p": [
+      "A clave de fá tem dois pontos à volta da 4.ª linha, que é o fá; normalmente é a pauta da mão esquerda.",
+      "O dó central fica numa linha suplementar logo acima da pauta, com o si e o lá logo abaixo.",
+      "Linhas de baixo para cima: sol si ré fá lá; espaços: lá dó mi sol."
+     ],
+     "q": "Ler a clave de fá parece-te mais difícil do que a clave de sol?",
+     "c": "Escreve na clave de fá as notas de dó a sol da posição da esquerda e toca-as dizendo o nome."
+    },
+    "pt_BR": {
+     "t": "Notas na clave de fá",
+     "g": "Ler notas na clave de fá a partir do dó central para baixo.",
+     "p": [
+      "A clave de fá tem dois pontos em volta da 4ª linha, que é o fá; normalmente é a pauta da mão esquerda.",
+      "O dó central fica numa linha suplementar logo acima da pauta, com o si e o lá logo abaixo.",
+      "Linhas de baixo para cima: sol si ré fá lá; espaços: lá dó mi sol."
+     ],
+     "q": "Ler a clave de fá parece mais difícil para você do que a clave de sol?",
+     "c": "Escreva na clave de fá as notas de dó a sol da posição da esquerda e toque falando o nome de cada uma."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The grand staff",
+     "g": "See how the treble and bass staves join at middle C to form piano music.",
+     "p": [
+      "Piano music uses the grand staff: a treble staff on top and a bass staff below, joined by a brace.",
+      "Middle C is the meeting point: one ledger line below the treble staff or one above the bass staff.",
+      "Both staves are read at the same time; notes lined up vertically are played together."
+     ],
+     "q": "What part of reading music do you want to get faster at?",
+     "c": "Find middle C written in both clefs, then play five notes up from it in the treble and five down in the bass."
+    },
+    "de": {
+     "t": "Das Klaviersystem",
+     "g": "Verstehen, wie Violin- und Bassschlüssel am mittleren C zum Klaviersystem zusammenkommen.",
+     "p": [
+      "Klaviernoten stehen in einem Doppelsystem: oben Violinschlüssel, unten Bassschlüssel, mit einer Klammer verbunden.",
+      "Das mittlere C ist der Treffpunkt: eine Hilfslinie unter dem oberen oder über dem unteren System.",
+      "Beide Systeme werden gleichzeitig gelesen; Noten, die genau übereinander stehen, klingen zusammen."
+     ],
+     "q": "Bei welchem Teil des Notenlesens möchtest du schneller werden?",
+     "c": "Finde das mittlere C in beiden Schlüsseln und spiel fünf Töne aufwärts im Violin- und fünf abwärts im Bassschlüssel."
+    },
+    "es": {
+     "t": "El gran pentagrama",
+     "g": "Ver cómo las claves de sol y de fa se unen en el Do central para formar la música de piano.",
+     "p": [
+      "El piano usa el sistema doble: clave de sol arriba y clave de fa abajo, unidas por una llave.",
+      "El Do central es el punto de encuentro: una línea adicional bajo la clave de sol o sobre la de fa.",
+      "Se leen los dos pentagramas a la vez; las notas alineadas en vertical se tocan juntas."
+     ],
+     "q": "¿En qué parte de la lectura musical quieres ganar velocidad?",
+     "c": "Busca el Do central escrito en las dos claves y toca cinco notas hacia arriba en sol y cinco hacia abajo en fa."
+    },
+    "fr": {
+     "t": "La grande portée",
+     "g": "Voir comment les portées en clé de sol et de fa se rejoignent au do central.",
+     "p": [
+      "Le piano s'écrit sur une double portée : clé de sol en haut, clé de fa en bas, reliées par une accolade.",
+      "Le do central est le point de rencontre : une ligne supplémentaire sous la clé de sol ou au-dessus de la clé de fa.",
+      "Les deux portées se lisent en même temps ; les notes alignées verticalement se jouent ensemble."
+     ],
+     "q": "Sur quel aspect de la lecture veux-tu devenir plus rapide ?",
+     "c": "Trouve le do central écrit dans les deux clés, puis joue cinq notes vers l'aigu en sol et cinq vers le grave en fa."
+    },
+    "it": {
+     "t": "Il doppio pentagramma",
+     "g": "Vedere come chiave di violino e di basso si uniscono al Do centrale nella musica per pianoforte.",
+     "p": [
+      "Il pianoforte usa il doppio pentagramma: violino sopra e basso sotto, uniti da una graffa.",
+      "Il Do centrale è il punto d'incontro: un taglio sotto la chiave di violino o sopra quella di basso.",
+      "I due pentagrammi si leggono insieme; le note allineate in verticale si suonano insieme."
+     ],
+     "q": "In quale parte della lettura musicale vuoi diventare più veloce?",
+     "c": "Trova il Do centrale scritto in entrambe le chiavi e suona cinque note verso l'acuto in violino e cinque verso il grave in basso."
+    },
+    "pt": {
+     "t": "A pauta dupla",
+     "g": "Ver como as claves de sol e de fá se juntam no dó central na música para piano.",
+     "p": [
+      "O piano usa a pauta dupla: clave de sol em cima e clave de fá em baixo, unidas por uma chaveta.",
+      "O dó central é o ponto de encontro: uma linha suplementar abaixo da clave de sol ou acima da de fá.",
+      "As duas pautas leem-se ao mesmo tempo; notas alinhadas na vertical tocam-se juntas."
+     ],
+     "q": "Em que parte da leitura musical queres ficar mais rápido?",
+     "c": "Encontra o dó central escrito nas duas claves e toca cinco notas para cima na de sol e cinco para baixo na de fá."
+    },
+    "pt_BR": {
+     "t": "A pauta dupla",
+     "g": "Ver como as claves de sol e de fá se encontram no dó central na música para piano.",
+     "p": [
+      "O piano usa a pauta dupla: clave de sol em cima e clave de fá embaixo, unidas por uma chave.",
+      "O dó central é o ponto de encontro: uma linha suplementar abaixo da clave de sol ou acima da de fá.",
+      "As duas pautas são lidas ao mesmo tempo; notas alinhadas na vertical são tocadas juntas."
+     ],
+     "q": "Em que parte da leitura musical você quer ficar mais rápido?",
+     "c": "Ache o dó central escrito nas duas claves e toque cinco notas para cima na de sol e cinco para baixo na de fá."
+    }
+   }
+  }
+ ]
+}

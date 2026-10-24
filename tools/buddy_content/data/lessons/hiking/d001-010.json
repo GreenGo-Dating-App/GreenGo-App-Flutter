@@ -1,0 +1,835 @@
+{
+ "topic": "hiking",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the hiking path",
+     "g": "See what a year of curious, safe and joyful hiking can look like, whatever your fitness today.",
+     "p": [
+      "Hiking is simply walking in nature, at your own pace, on paths made for people on foot.",
+      "Over the year we go from first easy trails to gear, navigation, safety and bigger adventures.",
+      "One small lesson a day is enough: tiny habits turn into confident, happy days outdoors."
+     ],
+     "q": "What does hiking mean to you right now: a dream, a hobby or something brand new?",
+     "c": "Find one green place near you, a park or a path, that you could walk this week."
+    },
+    "de": {
+     "t": "Willkommen auf dem Wanderweg",
+     "g": "Entdecke, wie ein Jahr voller neugieriger, sicherer und fröhlicher Wanderungen aussehen kann.",
+     "p": [
+      "Wandern heißt einfach, in der Natur zu gehen, im eigenen Tempo, auf Wegen für Fußgänger.",
+      "Im Lauf des Jahres geht es von leichten Wegen über Ausrüstung und Navigation zu größeren Touren.",
+      "Eine kleine Lektion pro Tag reicht: Kleine Gewohnheiten werden zu sicheren, schönen Tagen draußen."
+     ],
+     "q": "Was bedeutet Wandern gerade für dich: ein Traum, ein Hobby oder etwas ganz Neues?",
+     "c": "Such dir einen grünen Ort in deiner Nähe, einen Park oder Weg, den du diese Woche gehen könntest."
+    },
+    "es": {
+     "t": "Bienvenida al camino del senderismo",
+     "g": "Descubre cómo puede ser un año de senderismo curioso, seguro y alegre, sea cual sea tu forma física.",
+     "p": [
+      "Hacer senderismo es caminar por la naturaleza, a tu ritmo, por caminos pensados para ir a pie.",
+      "Durante el año pasaremos de rutas fáciles a equipo, orientación, seguridad y aventuras mayores.",
+      "Basta una pequeña lección al día: los pequeños hábitos se convierten en días felices al aire libre."
+     ],
+     "q": "¿Qué significa para ti el senderismo ahora: un sueño, una afición o algo totalmente nuevo?",
+     "c": "Busca un lugar verde cerca de ti, un parque o un camino, que puedas recorrer esta semana."
+    },
+    "fr": {
+     "t": "Bienvenue sur le sentier de la rando",
+     "g": "Découvre à quoi peut ressembler une année de randonnée curieuse, sûre et joyeuse, quel que soit ton niveau.",
+     "p": [
+      "Randonner, c'est simplement marcher dans la nature, à son rythme, sur des chemins faits pour les piétons.",
+      "Au fil de l'année, on passe des sentiers faciles à l'équipement, l'orientation, la sécurité et plus loin.",
+      "Une petite leçon par jour suffit : de petites habitudes deviennent de belles journées dehors."
+     ],
+     "q": "Que représente la randonnée pour toi en ce moment : un rêve, un loisir ou quelque chose de nouveau ?",
+     "c": "Repère un coin de verdure près de chez toi, un parc ou un chemin, à parcourir cette semaine."
+    },
+    "it": {
+     "t": "Benvenuto nel percorso dell'escursionismo",
+     "g": "Scopri come può essere un anno di escursioni curiose, sicure e gioiose, qualunque sia la tua forma.",
+     "p": [
+      "Fare escursionismo significa camminare nella natura, con il tuo ritmo, su sentieri pensati per chi va a piedi.",
+      "Durante l'anno passeremo dai sentieri facili all'attrezzatura, all'orientamento, alla sicurezza e oltre.",
+      "Basta una piccola lezione al giorno: piccole abitudini diventano giornate serene all'aria aperta."
+     ],
+     "q": "Cosa significa per te l'escursionismo adesso: un sogno, un hobby o qualcosa di nuovo?",
+     "c": "Trova un posto verde vicino a te, un parco o un sentiero, da percorrere questa settimana."
+    },
+    "pt": {
+     "t": "Bem-vindo ao percurso das caminhadas",
+     "g": "Descobre como pode ser um ano de caminhadas curiosas, seguras e alegres, seja qual for a tua forma.",
+     "p": [
+      "Fazer caminhada na natureza é andar ao teu ritmo, por trilhos pensados para quem vai a pé.",
+      "Ao longo do ano passamos de trilhos fáceis ao equipamento, orientação, segurança e aventuras maiores.",
+      "Basta uma pequena lição por dia: pequenos hábitos tornam-se dias felizes ao ar livre."
+     ],
+     "q": "O que significam as caminhadas para ti agora: um sonho, um passatempo ou algo totalmente novo?",
+     "c": "Encontra um sítio verde perto de ti, um parque ou um trilho, para percorreres esta semana."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à trilha do trekking",
+     "g": "Descubra como pode ser um ano de trilhas curiosas, seguras e alegres, seja qual for seu preparo hoje.",
+     "p": [
+      "Fazer trilha é simplesmente caminhar na natureza, no seu ritmo, por caminhos feitos para ir a pé.",
+      "Ao longo do ano vamos de trilhas fáceis a equipamento, navegação, segurança e aventuras maiores.",
+      "Uma pequena lição por dia basta: pequenos hábitos viram dias felizes e confiantes ao ar livre."
+     ],
+     "q": "O que fazer trilha significa para você agora: um sonho, um hobby ou algo totalmente novo?",
+     "c": "Encontre um lugar verde perto de você, um parque ou um caminho, para percorrer nesta semana."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people love to hike",
+     "g": "Discover the many reasons people fall in love with hiking, from fresh air to good company.",
+     "p": [
+      "Hiking moves your whole body gently, and the changing ground keeps your legs and balance busy.",
+      "Trees, wide views and birdsong help many people feel calmer and clear their heads.",
+      "A trail is a great place to talk: walking side by side makes conversations flow easily."
+     ],
+     "q": "Which reason pulls you most: the views, the exercise, the calm or the company?",
+     "c": "On your next walk, notice three natural sounds and remember them for tomorrow."
+    },
+    "de": {
+     "t": "Warum Menschen das Wandern lieben",
+     "g": "Entdecke die vielen Gründe, warum Menschen das Wandern lieben, von frischer Luft bis zu guter Gesellschaft.",
+     "p": [
+      "Wandern bewegt den ganzen Körper sanft, und der wechselnde Boden trainiert Beine und Gleichgewicht.",
+      "Bäume, weite Ausblicke und Vogelgesang helfen vielen, ruhiger zu werden und den Kopf frei zu bekommen.",
+      "Ein Weg ist ideal zum Reden: Nebeneinander zu gehen macht Gespräche ganz leicht."
+     ],
+     "q": "Was reizt dich am meisten: die Aussicht, die Bewegung, die Ruhe oder die Gesellschaft?",
+     "c": "Achte beim nächsten Spaziergang auf drei Naturgeräusche und merk sie dir bis morgen."
+    },
+    "es": {
+     "t": "Por qué a la gente le encanta caminar",
+     "g": "Descubre por qué tanta gente se enamora del senderismo, del aire fresco a la buena compañía.",
+     "p": [
+      "Caminar por el monte mueve todo el cuerpo con suavidad, y el terreno cambiante trabaja piernas y equilibrio.",
+      "Los árboles, las vistas amplias y el canto de los pájaros ayudan a muchas personas a sentirse en calma.",
+      "Un sendero es ideal para charlar: caminar uno al lado del otro hace que la conversación fluya."
+     ],
+     "q": "¿Qué te atrae más: las vistas, el ejercicio, la calma o la compañía?",
+     "c": "En tu próximo paseo, fíjate en tres sonidos de la naturaleza y recuérdalos para mañana."
+    },
+    "fr": {
+     "t": "Pourquoi on aime tant randonner",
+     "g": "Découvre les nombreuses raisons d'aimer la randonnée, de l'air frais à la bonne compagnie.",
+     "p": [
+      "Randonner fait travailler tout le corps en douceur, et le terrain varié sollicite jambes et équilibre.",
+      "Les arbres, les grands panoramas et le chant des oiseaux aident beaucoup de gens à se sentir apaisés.",
+      "Un sentier est parfait pour discuter : marcher côte à côte rend la conversation facile."
+     ],
+     "q": "Qu'est-ce qui t'attire le plus : les paysages, l'effort, le calme ou la compagnie ?",
+     "c": "Lors de ta prochaine balade, repère trois sons de la nature et retiens-les pour demain."
+    },
+    "it": {
+     "t": "Perché si ama camminare in natura",
+     "g": "Scopri i tanti motivi per cui le persone si innamorano dell'escursionismo, dall'aria fresca alla compagnia.",
+     "p": [
+      "Camminare in natura muove tutto il corpo con dolcezza e il terreno vario allena gambe ed equilibrio.",
+      "Alberi, panorami ampi e canto degli uccelli aiutano molte persone a sentirsi più calme.",
+      "Un sentiero è perfetto per parlare: camminare fianco a fianco rende le chiacchiere facili."
+     ],
+     "q": "Cosa ti attira di più: i panorami, il movimento, la calma o la compagnia?",
+     "c": "Nella prossima passeggiata, nota tre suoni della natura e ricordali per domani."
+    },
+    "pt": {
+     "t": "Porque as pessoas adoram caminhar",
+     "g": "Descobre as muitas razões por que as pessoas se apaixonam pelas caminhadas, do ar puro à boa companhia.",
+     "p": [
+      "Caminhar na natureza mexe o corpo todo com suavidade, e o terreno variado trabalha pernas e equilíbrio.",
+      "Árvores, vistas largas e o canto dos pássaros ajudam muita gente a sentir-se mais calma.",
+      "Um trilho é ótimo para conversar: caminhar lado a lado faz a conversa fluir."
+     ],
+     "q": "O que te atrai mais: as vistas, o exercício, a calma ou a companhia?",
+     "c": "Na tua próxima caminhada, repara em três sons da natureza e lembra-te deles amanhã."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas amam fazer trilha",
+     "g": "Descubra os muitos motivos para se apaixonar por trilhas, do ar fresco à boa companhia.",
+     "p": [
+      "Fazer trilha movimenta o corpo todo com suavidade, e o terreno variado trabalha pernas e equilíbrio.",
+      "Árvores, vistas amplas e canto de pássaros ajudam muita gente a se sentir mais calma.",
+      "Uma trilha é ótima para conversar: caminhar lado a lado deixa o papo fluir."
+     ],
+     "q": "O que mais te atrai: as vistas, o exercício, a calma ou a companhia?",
+     "c": "Na sua próxima caminhada, repare em três sons da natureza e lembre deles amanhã."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking vs hiking vs trekking",
+     "g": "Learn how a stroll, a day hike and a multi-day trek differ in effort and planning.",
+     "p": [
+      "A walk is short and easy, usually on paved or smooth paths close to home.",
+      "A day hike goes into nature on trails for a few hours, so you bring water, food and layers.",
+      "A trek lasts several days, with nights in huts, lodges or tents and much more planning."
+     ],
+     "q": "Which of the three have you already tried, and which one makes you curious?",
+     "c": "Write down one walk, one hike and one trek you would love to do one day."
+    },
+    "de": {
+     "t": "Spazieren, Wandern, Trekking",
+     "g": "Lerne, wie sich Spaziergang, Tageswanderung und mehrtägiges Trekking in Aufwand und Planung unterscheiden.",
+     "p": [
+      "Ein Spaziergang ist kurz und leicht, meist auf glatten Wegen in der Nähe.",
+      "Eine Tageswanderung führt für einige Stunden in die Natur, also nimmst du Wasser, Essen und Kleidung mit.",
+      "Ein Trekking dauert mehrere Tage, mit Nächten in Hütten, Unterkünften oder Zelten und viel mehr Planung."
+     ],
+     "q": "Welche der drei Arten kennst du schon, und welche macht dich neugierig?",
+     "c": "Notiere einen Spaziergang, eine Wanderung und ein Trekking, die du gern einmal machen würdest."
+    },
+    "es": {
+     "t": "Paseo, senderismo y trekking",
+     "g": "Aprende en qué se diferencian un paseo, una excursión de un día y un trekking de varios días.",
+     "p": [
+      "Un paseo es corto y fácil, normalmente por caminos lisos o asfaltados cerca de casa.",
+      "Una excursión de un día entra en la naturaleza unas horas, así que llevas agua, comida y ropa de abrigo.",
+      "Un trekking dura varios días, con noches en refugios, albergues o tiendas, y requiere mucha más planificación."
+     ],
+     "q": "¿Cuál de los tres ya has probado y cuál te da curiosidad?",
+     "c": "Apunta un paseo, una excursión y un trekking que te encantaría hacer algún día."
+    },
+    "fr": {
+     "t": "Balade, rando ou trek ?",
+     "g": "Apprends ce qui distingue une balade, une rando à la journée et un trek de plusieurs jours.",
+     "p": [
+      "Une balade est courte et facile, souvent sur des chemins lisses ou goudronnés près de chez soi.",
+      "Une rando à la journée part quelques heures en nature, donc on emporte eau, nourriture et vêtements.",
+      "Un trek dure plusieurs jours, avec des nuits en refuge, en gîte ou sous tente, et bien plus de préparation."
+     ],
+     "q": "Lequel des trois as-tu déjà essayé, et lequel te rend curieux ?",
+     "c": "Note une balade, une rando et un trek que tu aimerais faire un jour."
+    },
+    "it": {
+     "t": "Passeggiata, escursione o trekking",
+     "g": "Impara la differenza tra una passeggiata, un'escursione giornaliera e un trekking di più giorni.",
+     "p": [
+      "Una passeggiata è breve e facile, di solito su strade lisce o asfaltate vicino a casa.",
+      "Un'escursione giornaliera entra nella natura per qualche ora, quindi porti acqua, cibo e strati.",
+      "Un trekking dura più giorni, con notti in rifugio, ostello o tenda, e richiede molta più preparazione."
+     ],
+     "q": "Quale dei tre hai già provato e quale ti incuriosisce?",
+     "c": "Annota una passeggiata, un'escursione e un trekking che ti piacerebbe fare un giorno."
+    },
+    "pt": {
+     "t": "Passeio, caminhada ou trekking",
+     "g": "Aprende a diferença entre um passeio, uma caminhada de um dia e um trekking de vários dias.",
+     "p": [
+      "Um passeio é curto e fácil, normalmente em caminhos lisos ou pavimentados perto de casa.",
+      "Uma caminhada de um dia entra na natureza durante algumas horas, por isso levas água, comida e agasalho.",
+      "Um trekking dura vários dias, com noites em refúgios, alojamentos ou tendas, e exige muito mais preparação."
+     ],
+     "q": "Qual dos três já experimentaste e qual te deixa curioso?",
+     "c": "Aponta um passeio, uma caminhada e um trekking que adorarias fazer um dia."
+    },
+    "pt_BR": {
+     "t": "Passeio, trilha ou trekking",
+     "g": "Aprenda a diferença entre um passeio, uma trilha de um dia e um trekking de vários dias.",
+     "p": [
+      "Um passeio é curto e fácil, geralmente em caminhos lisos ou asfaltados perto de casa.",
+      "Uma trilha de um dia entra na natureza por algumas horas, então você leva água, comida e agasalho.",
+      "Um trekking dura vários dias, com noites em abrigos, pousadas ou barracas, e exige bem mais planejamento."
+     ],
+     "q": "Qual dos três você já experimentou e qual te deixa curioso?",
+     "c": "Anote um passeio, uma trilha e um trekking que você adoraria fazer um dia."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Types of trails",
+     "g": "Get to know the main kinds of trails, from forest paths to mountain routes, loops and one-way hikes.",
+     "p": [
+      "Forest and coastal paths are often gentle, with shade or sea breeze and lovely views.",
+      "Mountain routes climb more, can be rocky and change with the weather, so they need more care.",
+      "A loop brings you back to the start; a point-to-point trail ends elsewhere, so plan the return trip."
+     ],
+     "q": "Which landscape calls you most: forest, coast, hills, lakes or mountains?",
+     "c": "Look up one loop trail near you and note how long it is."
+    },
+    "de": {
+     "t": "Arten von Wanderwegen",
+     "g": "Lerne die wichtigsten Wegarten kennen, von Waldwegen über Bergrouten bis zu Rund- und Streckenwanderungen.",
+     "p": [
+      "Wald- und Küstenwege sind oft sanft, mit Schatten oder Meeresbrise und schönen Ausblicken.",
+      "Bergrouten steigen mehr an, sind oft steinig und wetterabhängig, deshalb brauchen sie mehr Sorgfalt.",
+      "Ein Rundweg führt zum Start zurück; eine Streckenwanderung endet woanders, also plane die Rückfahrt."
+     ],
+     "q": "Welche Landschaft ruft dich am meisten: Wald, Küste, Hügel, Seen oder Berge?",
+     "c": "Such einen Rundweg in deiner Nähe und notiere, wie lang er ist."
+    },
+    "es": {
+     "t": "Tipos de senderos",
+     "g": "Conoce los principales tipos de rutas, de caminos de bosque a rutas de montaña, circulares y lineales.",
+     "p": [
+      "Los caminos de bosque y de costa suelen ser suaves, con sombra o brisa marina y vistas preciosas.",
+      "Las rutas de montaña suben más, pueden ser pedregosas y cambian con el tiempo, así que exigen más cuidado.",
+      "Una ruta circular vuelve al inicio; una lineal termina en otro lugar, así que planifica la vuelta."
+     ],
+     "q": "¿Qué paisaje te llama más: bosque, costa, colinas, lagos o montañas?",
+     "c": "Busca una ruta circular cerca de ti y apunta cuánto mide."
+    },
+    "fr": {
+     "t": "Les types de sentiers",
+     "g": "Découvre les grands types de sentiers, des chemins forestiers aux itinéraires de montagne, en boucle ou en ligne.",
+     "p": [
+      "Les chemins forestiers et côtiers sont souvent doux, avec de l'ombre ou la brise marine et de belles vues.",
+      "Les itinéraires de montagne montent davantage, sont parfois caillouteux et dépendent de la météo.",
+      "Une boucle revient au départ ; un parcours en ligne finit ailleurs, donc prévois le retour."
+     ],
+     "q": "Quel paysage t'appelle le plus : forêt, littoral, collines, lacs ou montagnes ?",
+     "c": "Cherche une boucle près de chez toi et note sa longueur."
+    },
+    "it": {
+     "t": "Tipi di sentieri",
+     "g": "Conosci i principali tipi di sentieri, dai percorsi nel bosco alle vie di montagna, ad anello o lineari.",
+     "p": [
+      "I sentieri nel bosco e lungo la costa sono spesso dolci, con ombra o brezza marina e bei panorami.",
+      "I percorsi di montagna salgono di più, possono essere sassosi e cambiano con il meteo, quindi serve più cura.",
+      "Un anello ti riporta al punto di partenza; un percorso lineare finisce altrove, quindi pianifica il ritorno."
+     ],
+     "q": "Quale paesaggio ti chiama di più: bosco, costa, colline, laghi o montagne?",
+     "c": "Cerca un sentiero ad anello vicino a te e annota quanto è lungo."
+    },
+    "pt": {
+     "t": "Tipos de trilhos",
+     "g": "Conhece os principais tipos de trilhos, de caminhos na floresta a percursos de montanha, circulares ou lineares.",
+     "p": [
+      "Os trilhos de floresta e de costa costumam ser suaves, com sombra ou brisa do mar e vistas bonitas.",
+      "Os percursos de montanha sobem mais, podem ter pedras e mudam com o tempo, por isso pedem mais cuidado.",
+      "Um percurso circular volta ao início; um linear acaba noutro sítio, por isso planeia o regresso."
+     ],
+     "q": "Que paisagem te chama mais: floresta, costa, colinas, lagos ou montanhas?",
+     "c": "Procura um percurso circular perto de ti e aponta quanto mede."
+    },
+    "pt_BR": {
+     "t": "Tipos de trilhas",
+     "g": "Conheça os principais tipos de trilha, de caminhos na mata a rotas de montanha, circulares ou de travessia.",
+     "p": [
+      "Trilhas na mata e no litoral costumam ser suaves, com sombra ou brisa do mar e vistas lindas.",
+      "Rotas de montanha sobem mais, podem ter pedras e mudam com o clima, então pedem mais cuidado.",
+      "Uma trilha circular volta ao início; uma travessia termina em outro lugar, então planeje a volta."
+     ],
+     "q": "Qual paisagem mais te chama: mata, litoral, morros, lagos ou montanhas?",
+     "c": "Procure uma trilha circular perto de você e anote quanto ela mede."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first trail",
+     "g": "Pick a first trail that is short, gentle, clearly marked and easy to turn back from.",
+     "p": [
+      "Start with a few kilometres and little climbing, so you finish smiling and wanting more.",
+      "Choose a popular, well-marked path where other walkers pass and the way is easy to follow.",
+      "Make sure you can turn back at any point, and you have a simple way home from the end."
+     ],
+     "q": "What would make a first trail feel just right for you: short, flat, shady or scenic?",
+     "c": "Pick one easy trail of under 5 km that you could try soon."
+    },
+    "de": {
+     "t": "Deinen ersten Weg auswählen",
+     "g": "Wähle für den Anfang einen kurzen, sanften, gut markierten Weg, bei dem Umkehren leicht ist.",
+     "p": [
+      "Starte mit wenigen Kilometern und wenig Anstieg, damit du lächelnd ankommst und Lust auf mehr hast.",
+      "Nimm einen beliebten, gut markierten Weg, auf dem andere unterwegs sind und man sich kaum verläuft.",
+      "Achte darauf, dass du jederzeit umkehren kannst und vom Ziel einfach nach Hause kommst."
+     ],
+     "q": "Was macht einen ersten Weg für dich perfekt: kurz, flach, schattig oder mit Aussicht?",
+     "c": "Wähle einen leichten Weg unter 5 km, den du bald ausprobieren könntest."
+    },
+    "es": {
+     "t": "Elegir tu primera ruta",
+     "g": "Elige una primera ruta corta, suave, bien señalizada y de la que sea fácil volver.",
+     "p": [
+      "Empieza con pocos kilómetros y poca subida, para terminar con una sonrisa y ganas de más.",
+      "Elige un camino popular y bien marcado, por donde pase más gente y sea fácil de seguir.",
+      "Asegúrate de poder darte la vuelta en cualquier punto y de tener una forma sencilla de volver a casa."
+     ],
+     "q": "¿Qué haría perfecta tu primera ruta: corta, llana, con sombra o con buenas vistas?",
+     "c": "Elige una ruta fácil de menos de 5 km que puedas probar pronto."
+    },
+    "fr": {
+     "t": "Choisir ton premier sentier",
+     "g": "Choisis un premier sentier court, doux, bien balisé et facile à quitter en cas de besoin.",
+     "p": [
+      "Commence par quelques kilomètres et peu de dénivelé, pour finir avec le sourire et l'envie de revenir.",
+      "Prends un sentier fréquenté et bien balisé, où d'autres marcheurs passent et où l'on se repère facilement.",
+      "Vérifie que tu peux faire demi-tour à tout moment et rentrer simplement depuis l'arrivée."
+     ],
+     "q": "Qu'est-ce qui rendrait ton premier sentier idéal : court, plat, ombragé ou panoramique ?",
+     "c": "Choisis un sentier facile de moins de 5 km que tu pourrais tester bientôt."
+    },
+    "it": {
+     "t": "Scegliere il primo sentiero",
+     "g": "Scegli un primo sentiero breve, dolce, ben segnato e da cui sia facile tornare indietro.",
+     "p": [
+      "Inizia con pochi chilometri e poco dislivello, così arrivi sorridendo e con voglia di ripartire.",
+      "Scegli un sentiero frequentato e ben segnalato, dove passano altre persone e la via è facile da seguire.",
+      "Assicurati di poter tornare indietro in ogni momento e di avere un modo semplice per rientrare."
+     ],
+     "q": "Cosa renderebbe perfetto il tuo primo sentiero: breve, pianeggiante, ombreggiato o panoramico?",
+     "c": "Scegli un sentiero facile sotto i 5 km che potresti provare presto."
+    },
+    "pt": {
+     "t": "Escolher o teu primeiro trilho",
+     "g": "Escolhe um primeiro trilho curto, suave, bem marcado e de onde seja fácil voltar para trás.",
+     "p": [
+      "Começa com poucos quilómetros e pouca subida, para acabares a sorrir e com vontade de mais.",
+      "Escolhe um trilho popular e bem sinalizado, onde passem outras pessoas e o caminho seja fácil de seguir.",
+      "Garante que podes voltar para trás a qualquer momento e que tens forma simples de regressar a casa."
+     ],
+     "q": "O que tornaria o teu primeiro trilho perfeito: curto, plano, com sombra ou com vista?",
+     "c": "Escolhe um trilho fácil com menos de 5 km que possas experimentar em breve."
+    },
+    "pt_BR": {
+     "t": "Escolhendo sua primeira trilha",
+     "g": "Escolha uma primeira trilha curta, suave, bem sinalizada e de onde seja fácil voltar.",
+     "p": [
+      "Comece com poucos quilômetros e pouca subida, para terminar sorrindo e com vontade de mais.",
+      "Escolha uma trilha popular e bem marcada, onde passem outras pessoas e o caminho seja fácil de seguir.",
+      "Garanta que dá para voltar a qualquer momento e que há um jeito simples de voltar para casa do final."
+     ],
+     "q": "O que deixaria sua primeira trilha perfeita: curta, plana, com sombra ou com vista?",
+     "c": "Escolha uma trilha fácil de menos de 5 km que você possa testar em breve."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a trail description",
+     "g": "Understand the key numbers in a trail description: distance, elevation gain, time and difficulty.",
+     "p": [
+      "Distance tells you how far you walk; check whether it is one way or the full round trip.",
+      "Elevation gain is the total climbing, and estimated time usually leaves out breaks.",
+      "Difficulty grades vary by country and website, so read the notes about terrain too."
+     ],
+     "q": "When you read about a trail, which detail do you check first?",
+     "c": "Find one trail description and note its distance, climbing, time and grade."
+    },
+    "de": {
+     "t": "Eine Tourenbeschreibung lesen",
+     "g": "Verstehe die wichtigsten Angaben einer Tourenbeschreibung: Länge, Höhenmeter, Gehzeit und Schwierigkeit.",
+     "p": [
+      "Die Länge sagt dir, wie weit du gehst; prüfe, ob sie nur hin oder hin und zurück gilt.",
+      "Die Höhenmeter sind der gesamte Anstieg, und die Gehzeit enthält meist keine Pausen.",
+      "Schwierigkeitsgrade sind je nach Land und Quelle verschieden, lies also auch die Hinweise zum Gelände."
+     ],
+     "q": "Welche Angabe schaust du dir bei einer Tour zuerst an?",
+     "c": "Such eine Tourenbeschreibung und notiere Länge, Höhenmeter, Gehzeit und Schwierigkeit."
+    },
+    "es": {
+     "t": "Leer la ficha de una ruta",
+     "g": "Entiende los datos clave de una ficha de ruta: distancia, desnivel, tiempo estimado y dificultad.",
+     "p": [
+      "La distancia indica cuánto caminas; comprueba si es solo ida o ida y vuelta.",
+      "El desnivel positivo es el total de subida, y el tiempo estimado no suele incluir paradas.",
+      "Los grados de dificultad cambian según el país y la web, así que lee también las notas sobre el terreno."
+     ],
+     "q": "Cuando lees sobre una ruta, ¿qué dato miras primero?",
+     "c": "Busca la ficha de una ruta y apunta distancia, desnivel, tiempo y dificultad."
+    },
+    "fr": {
+     "t": "Lire une fiche de randonnée",
+     "g": "Comprends les chiffres clés d'une fiche rando : distance, dénivelé positif, durée et difficulté.",
+     "p": [
+      "La distance indique combien tu marches ; vérifie si c'est un aller simple ou un aller-retour.",
+      "Le dénivelé positif est le total de montée, et la durée indiquée n'inclut souvent pas les pauses.",
+      "Les niveaux de difficulté varient selon les pays et les sites, lis donc aussi les notes sur le terrain."
+     ],
+     "q": "Quand tu lis une fiche rando, quelle info regardes-tu en premier ?",
+     "c": "Trouve une fiche rando et note distance, dénivelé, durée et difficulté."
+    },
+    "it": {
+     "t": "Leggere la scheda di un sentiero",
+     "g": "Capisci i dati chiave di una scheda: lunghezza, dislivello positivo, tempo di percorrenza e difficoltà.",
+     "p": [
+      "La lunghezza dice quanto cammini; controlla se è solo andata o andata e ritorno.",
+      "Il dislivello positivo è la salita totale, e il tempo indicato di solito non include le pause.",
+      "Le scale di difficoltà cambiano tra paesi e siti, quindi leggi anche le note sul terreno."
+     ],
+     "q": "Quando leggi di un sentiero, quale dato guardi per primo?",
+     "c": "Trova la scheda di un sentiero e annota lunghezza, dislivello, tempo e difficoltà."
+    },
+    "pt": {
+     "t": "Ler a descrição de um trilho",
+     "g": "Percebe os números-chave de uma descrição: distância, desnível positivo, tempo estimado e dificuldade.",
+     "p": [
+      "A distância diz quanto vais andar; confirma se é só ida ou ida e volta.",
+      "O desnível positivo é o total de subida, e o tempo estimado normalmente não inclui pausas.",
+      "Os graus de dificuldade variam conforme o país e o site, por isso lê também as notas sobre o terreno."
+     ],
+     "q": "Quando lês sobre um trilho, que dado vês primeiro?",
+     "c": "Encontra a descrição de um trilho e aponta distância, desnível, tempo e dificuldade."
+    },
+    "pt_BR": {
+     "t": "Lendo a descrição de uma trilha",
+     "g": "Entenda os números-chave de uma descrição: distância, ganho de elevação, tempo estimado e dificuldade.",
+     "p": [
+      "A distância diz quanto você vai andar; confira se é só ida ou ida e volta.",
+      "O ganho de elevação é o total de subida, e o tempo estimado geralmente não inclui pausas.",
+      "Os níveis de dificuldade variam conforme o país e o site, então leia também as notas sobre o terreno."
+     ],
+     "q": "Quando você lê sobre uma trilha, qual dado olha primeiro?",
+     "c": "Encontre a descrição de uma trilha e anote distância, subida, tempo e dificuldade."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding elevation gain",
+     "g": "See why 500 metres of climbing changes a hike more than a few extra kilometres on the flat.",
+     "p": [
+      "Elevation gain adds up every uphill section, not just the difference between start and top.",
+      "Climbing 500 m can add roughly an hour or more to your time, depending on fitness and terrain.",
+      "What goes up comes down: long descents tire the legs too, so plan energy for both."
+     ],
+     "q": "Do you prefer gentle long walks or short climbs with a big view?",
+     "c": "Check the elevation gain of a trail you like and imagine climbing that many stairs."
+    },
+    "de": {
+     "t": "Höhenmeter verstehen",
+     "g": "Verstehe, warum 500 Höhenmeter eine Tour stärker verändern als ein paar zusätzliche flache Kilometer.",
+     "p": [
+      "Höhenmeter zählen jeden Anstieg zusammen, nicht nur den Unterschied zwischen Start und Gipfel.",
+      "500 Höhenmeter können je nach Fitness und Gelände etwa eine Stunde oder mehr dazu bringen.",
+      "Was hochgeht, geht auch runter: Lange Abstiege ermüden die Beine ebenfalls, plane Kraft für beides."
+     ],
+     "q": "Magst du lieber lange, sanfte Wege oder kurze Anstiege mit großer Aussicht?",
+     "c": "Schau dir die Höhenmeter eines Wegs an und stell dir vor, so viele Treppen zu steigen."
+    },
+    "es": {
+     "t": "Entender el desnivel",
+     "g": "Descubre por qué 500 metros de subida cambian una ruta más que unos kilómetros extra en llano.",
+     "p": [
+      "El desnivel positivo suma cada tramo de subida, no solo la diferencia entre el inicio y la cima.",
+      "Subir 500 m puede añadir más o menos una hora o más, según tu forma física y el terreno.",
+      "Todo lo que sube, baja: los descensos largos también cansan las piernas, así que guarda energía."
+     ],
+     "q": "¿Prefieres caminatas largas y suaves o subidas cortas con una gran vista?",
+     "c": "Mira el desnivel de una ruta que te guste e imagina subir esa altura en escaleras."
+    },
+    "fr": {
+     "t": "Comprendre le dénivelé",
+     "g": "Vois pourquoi 500 mètres de montée changent plus une rando que quelques kilomètres de plat en plus.",
+     "p": [
+      "Le dénivelé positif additionne chaque montée, pas seulement l'écart entre le départ et le sommet.",
+      "Monter 500 m peut ajouter environ une heure ou plus, selon ta forme et le terrain.",
+      "Tout ce qui monte redescend : les longues descentes fatiguent aussi les jambes, garde de l'énergie."
+     ],
+     "q": "Tu préfères les longues marches douces ou les montées courtes avec une grande vue ?",
+     "c": "Regarde le dénivelé d'un sentier que tu aimes et imagine monter autant de marches."
+    },
+    "it": {
+     "t": "Capire il dislivello",
+     "g": "Scopri perché 500 metri di salita cambiano un'escursione più di qualche chilometro in piano.",
+     "p": [
+      "Il dislivello positivo somma ogni tratto in salita, non solo la differenza tra partenza e vetta.",
+      "Salire 500 m può aggiungere circa un'ora o più, secondo il tuo allenamento e il terreno.",
+      "Tutto ciò che sale scende: anche le lunghe discese stancano le gambe, quindi tieni energia per entrambe."
+     ],
+     "q": "Preferisci camminate lunghe e dolci o salite brevi con un grande panorama?",
+     "c": "Guarda il dislivello di un sentiero che ti piace e immagina di salire altrettante scale."
+    },
+    "pt": {
+     "t": "Perceber o desnível",
+     "g": "Percebe porque 500 metros de subida mudam uma caminhada mais do que uns quilómetros extra em plano.",
+     "p": [
+      "O desnível positivo soma cada troço a subir, não só a diferença entre o início e o topo.",
+      "Subir 500 m pode acrescentar cerca de uma hora ou mais, conforme a tua forma e o terreno.",
+      "Tudo o que sobe desce: as descidas longas também cansam as pernas, por isso guarda energia."
+     ],
+     "q": "Preferes caminhadas longas e suaves ou subidas curtas com uma grande vista?",
+     "c": "Vê o desnível de um trilho de que gostes e imagina subir essa altura em escadas."
+    },
+    "pt_BR": {
+     "t": "Entendendo o ganho de elevação",
+     "g": "Veja por que 500 metros de subida mudam uma trilha mais que alguns quilômetros extras no plano.",
+     "p": [
+      "O ganho de elevação soma cada trecho de subida, não só a diferença entre o início e o topo.",
+      "Subir 500 m pode somar cerca de uma hora ou mais, dependendo do seu preparo e do terreno.",
+      "Tudo que sobe desce: descidas longas também cansam as pernas, então guarde energia para as duas."
+     ],
+     "q": "Você prefere caminhadas longas e suaves ou subidas curtas com uma vista incrível?",
+     "c": "Veja o ganho de elevação de uma trilha que você curte e imagine subir essa altura em escadas."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Estimating hiking time",
+     "g": "Use simple rules of thumb that turn distance and climbing into a realistic number of hours.",
+     "p": [
+      "A classic guide, Naismith's rule, allows about 5 km per hour plus one hour for every 600 m climbed.",
+      "Many beginners walk slower, so planning around 4 km per hour plus extra time for climbs is wise.",
+      "Always add time for breaks, photos and the unexpected, and compare with how you really walked."
+     ],
+     "q": "Do you usually walk faster or slower than you expect?",
+     "c": "Estimate the time for a trail you like, then check it against the description."
+    },
+    "de": {
+     "t": "Gehzeit abschätzen",
+     "g": "Nutze einfache Faustregeln, die Strecke und Anstieg in eine realistische Gehzeit umrechnen.",
+     "p": [
+      "Eine klassische Regel nach Naismith rechnet etwa 5 km pro Stunde plus eine Stunde pro 600 Höhenmeter.",
+      "Viele Einsteiger gehen langsamer, daher ist eine Planung mit etwa 4 km pro Stunde plus Zeit für Anstiege klug.",
+      "Rechne immer Zeit für Pausen, Fotos und Unerwartetes dazu und vergleiche mit deiner echten Zeit."
+     ],
+     "q": "Gehst du meist schneller oder langsamer, als du denkst?",
+     "c": "Schätze die Gehzeit für einen Weg und vergleiche sie mit der Beschreibung."
+    },
+    "es": {
+     "t": "Calcular el tiempo de marcha",
+     "g": "Usa reglas sencillas que convierten distancia y desnivel en un número realista de horas.",
+     "p": [
+      "Una regla clásica, la de Naismith, calcula unos 5 km por hora más una hora por cada 600 m de subida.",
+      "Muchas personas que empiezan van más despacio, así que planificar unos 4 km por hora más tiempo para subir es sensato.",
+      "Añade siempre tiempo para descansos, fotos e imprevistos, y compáralo con lo que tardaste de verdad."
+     ],
+     "q": "¿Sueles caminar más rápido o más despacio de lo que esperas?",
+     "c": "Calcula el tiempo de una ruta que te guste y compáralo con la ficha."
+    },
+    "fr": {
+     "t": "Estimer la durée d'une rando",
+     "g": "Utilise des règles simples qui transforment distance et dénivelé en un nombre d'heures réaliste.",
+     "p": [
+      "Une règle classique, celle de Naismith, compte environ 5 km par heure plus une heure par 600 m de montée.",
+      "Beaucoup de débutants marchent moins vite, alors prévoir environ 4 km par heure plus du temps pour monter est sage.",
+      "Ajoute toujours du temps pour les pauses, les photos et les imprévus, puis compare avec ta vraie durée."
+     ],
+     "q": "Marches-tu en général plus vite ou moins vite que prévu ?",
+     "c": "Estime la durée d'un sentier que tu aimes et compare avec sa fiche."
+    },
+    "it": {
+     "t": "Stimare i tempi di cammino",
+     "g": "Usa semplici regole pratiche che trasformano distanza e salita in un numero di ore realistico.",
+     "p": [
+      "Una regola classica, quella di Naismith, conta circa 5 km all'ora più un'ora ogni 600 m di salita.",
+      "Molti principianti vanno più piano, quindi pianificare circa 4 km all'ora più tempo per le salite è saggio.",
+      "Aggiungi sempre tempo per pause, foto e imprevisti, e confrontalo con quanto hai davvero impiegato."
+     ],
+     "q": "Di solito cammini più veloce o più lento di quanto pensi?",
+     "c": "Stima il tempo di un sentiero che ti piace e confrontalo con la scheda."
+    },
+    "pt": {
+     "t": "Estimar o tempo de caminhada",
+     "g": "Usa regras simples que transformam distância e subida num número realista de horas.",
+     "p": [
+      "Uma regra clássica, a de Naismith, conta cerca de 5 km por hora mais uma hora por cada 600 m de subida.",
+      "Muitos principiantes andam mais devagar, por isso planear cerca de 4 km por hora mais tempo para subir é sensato.",
+      "Acrescenta sempre tempo para pausas, fotos e imprevistos, e compara com o que demoraste de facto."
+     ],
+     "q": "Costumas andar mais depressa ou mais devagar do que esperas?",
+     "c": "Estima o tempo de um trilho de que gostes e compara com a descrição."
+    },
+    "pt_BR": {
+     "t": "Estimando o tempo de trilha",
+     "g": "Use regras práticas que transformam distância e subida em um número realista de horas.",
+     "p": [
+      "Uma regra clássica, a de Naismith, conta cerca de 5 km por hora mais uma hora a cada 600 m de subida.",
+      "Muitos iniciantes andam mais devagar, então planejar uns 4 km por hora mais tempo para subidas é sensato.",
+      "Sempre some tempo para pausas, fotos e imprevistos, e compare com o tempo que você realmente levou."
+     ],
+     "q": "Você costuma andar mais rápido ou mais devagar do que imagina?",
+     "c": "Estime o tempo de uma trilha que você curte e compare com a descrição."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your natural pace",
+     "g": "Learn to walk at a steady speed where you can still chat comfortably for hours.",
+     "p": [
+      "The talk test is simple: if you can speak in full sentences, your pace is sustainable.",
+      "Start slower than you think; your body warms up during the first 15 to 20 minutes.",
+      "A steady rhythm beats fast bursts with long stops, and you arrive less tired."
+     ],
+     "q": "Do you tend to rush at the start of a walk or settle in slowly?",
+     "c": "On your next walk, try the talk test and find a pace where chatting feels easy."
+    },
+    "de": {
+     "t": "Dein natürliches Tempo finden",
+     "g": "Lerne, in einem gleichmäßigen Tempo zu gehen, bei dem du dich stundenlang bequem unterhalten kannst.",
+     "p": [
+      "Der Sprechtest ist einfach: Wenn du ganze Sätze sprechen kannst, ist dein Tempo durchhaltbar.",
+      "Starte langsamer als gedacht; dein Körper wärmt sich in den ersten 15 bis 20 Minuten auf.",
+      "Ein gleichmäßiger Rhythmus ist besser als schnelle Sprints mit langen Pausen, und du kommst frischer an."
+     ],
+     "q": "Gehst du zu Beginn eher zu schnell los oder findest du langsam hinein?",
+     "c": "Mach beim nächsten Spaziergang den Sprechtest und finde ein Tempo, bei dem Reden leichtfällt."
+    },
+    "es": {
+     "t": "Encontrar tu ritmo natural",
+     "g": "Aprende a caminar a un ritmo constante en el que puedas charlar cómodamente durante horas.",
+     "p": [
+      "La prueba de la conversación es simple: si puedes hablar con frases completas, tu ritmo es sostenible.",
+      "Empieza más despacio de lo que crees; el cuerpo entra en calor en los primeros 15 a 20 minutos.",
+      "Un ritmo constante es mejor que acelerones con paradas largas, y llegas menos cansado."
+     ],
+     "q": "¿Sueles ir deprisa al empezar a caminar o entras en ritmo poco a poco?",
+     "c": "En tu próximo paseo, haz la prueba de la conversación y busca un ritmo en que hablar sea fácil."
+    },
+    "fr": {
+     "t": "Trouver ton rythme naturel",
+     "g": "Apprends à marcher à une allure régulière où tu peux encore discuter tranquillement pendant des heures.",
+     "p": [
+      "Le test de la parole est simple : si tu peux dire des phrases complètes, ton allure est tenable.",
+      "Pars plus lentement que tu ne le penses ; le corps se met en route pendant les 15 à 20 premières minutes.",
+      "Un rythme régulier vaut mieux que des accélérations suivies de longues pauses, et tu arrives moins fatigué."
+     ],
+     "q": "As-tu tendance à partir trop vite ou à trouver ton rythme doucement ?",
+     "c": "Lors de ta prochaine marche, fais le test de la parole et trouve une allure où parler est facile."
+    },
+    "it": {
+     "t": "Trovare il tuo passo naturale",
+     "g": "Impara a camminare a un ritmo costante che ti permetta di chiacchierare comodamente per ore.",
+     "p": [
+      "Il test della parola è semplice: se riesci a parlare con frasi complete, il ritmo è sostenibile.",
+      "Parti più piano di quanto pensi; il corpo si scalda nei primi 15-20 minuti.",
+      "Un ritmo regolare è meglio di scatti veloci con lunghe soste, e arrivi meno stanco."
+     ],
+     "q": "Tendi a partire di corsa o trovi il tuo ritmo con calma?",
+     "c": "Nella prossima camminata fai il test della parola e trova un passo in cui parlare è facile."
+    },
+    "pt": {
+     "t": "Encontrar o teu ritmo natural",
+     "g": "Aprende a caminhar a um ritmo constante em que consigas conversar à vontade durante horas.",
+     "p": [
+      "O teste da conversa é simples: se consegues falar com frases completas, o teu ritmo é sustentável.",
+      "Começa mais devagar do que pensas; o corpo aquece nos primeiros 15 a 20 minutos.",
+      "Um ritmo constante é melhor do que arranques rápidos com paragens longas, e chegas menos cansado."
+     ],
+     "q": "Costumas começar a caminhar depressa demais ou entras no ritmo com calma?",
+     "c": "Na tua próxima caminhada, faz o teste da conversa e encontra um ritmo em que falar seja fácil."
+    },
+    "pt_BR": {
+     "t": "Encontrando seu ritmo natural",
+     "g": "Aprenda a caminhar num ritmo constante em que dá para conversar tranquilamente por horas.",
+     "p": [
+      "O teste da conversa é simples: se você fala frases completas, seu ritmo é sustentável.",
+      "Comece mais devagar do que acha; o corpo aquece nos primeiros 15 a 20 minutos.",
+      "Um ritmo constante é melhor que arrancadas rápidas com paradas longas, e você chega menos cansado."
+     ],
+     "q": "Você costuma sair rápido demais ou entra no ritmo aos poucos?",
+     "c": "Na próxima caminhada, faça o teste da conversa e ache um ritmo em que falar seja fácil."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Footwear basics",
+     "g": "Learn what trail shoes, hiking boots and approach shoes are each best for.",
+     "p": [
+      "Trail shoes are light and flexible, great for good paths and warm, dry days.",
+      "Hiking boots support the ankle and protect the foot on rocky ground and with heavier packs.",
+      "Approach shoes have sticky soles for rocky scrambles; for easy trails, comfort matters most."
+     ],
+     "q": "What do you wear on walks now, and does it feel comfortable after an hour?",
+     "c": "Check the soles of your current shoes: is there still good grip left?"
+    },
+    "de": {
+     "t": "Schuhwerk-Grundlagen",
+     "g": "Lerne, wofür Trailschuhe, Wanderstiefel und Zustiegsschuhe jeweils am besten geeignet sind.",
+     "p": [
+      "Trailschuhe sind leicht und flexibel, ideal für gute Wege und warme, trockene Tage.",
+      "Wanderstiefel stützen den Knöchel und schützen den Fuß auf steinigem Boden und mit schwerem Rucksack.",
+      "Zustiegsschuhe haben haftende Sohlen für Felspassagen; auf leichten Wegen zählt vor allem Komfort."
+     ],
+     "q": "Was trägst du gerade beim Gehen, und ist es nach einer Stunde noch bequem?",
+     "c": "Prüf die Sohlen deiner Schuhe: Haben sie noch genug Profil?"
+    },
+    "es": {
+     "t": "Lo básico del calzado",
+     "g": "Aprende para qué sirve mejor cada calzado: zapatillas de trail, botas de montaña y zapatillas de aproximación.",
+     "p": [
+      "Las zapatillas de trail son ligeras y flexibles, ideales para buenos caminos y días secos y cálidos.",
+      "Las botas sujetan el tobillo y protegen el pie en terreno rocoso y con mochilas más pesadas.",
+      "Las de aproximación tienen suela adherente para trepar rocas; en rutas fáciles, lo clave es la comodidad."
+     ],
+     "q": "¿Qué calzado usas ahora para caminar y sigue siendo cómodo después de una hora?",
+     "c": "Revisa las suelas de tu calzado: ¿todavía tienen buen agarre?"
+    },
+    "fr": {
+     "t": "Les bases des chaussures",
+     "g": "Découvre à quoi servent le mieux les chaussures de trail, les chaussures de rando montantes et d'approche.",
+     "p": [
+      "Les chaussures de trail sont légères et souples, parfaites sur de bons chemins par temps sec et doux.",
+      "Les chaussures montantes maintiennent la cheville et protègent le pied sur les cailloux et avec un sac lourd.",
+      "Les chaussures d'approche ont une semelle adhérente pour les passages rocheux ; sur sentier facile, le confort prime."
+     ],
+     "q": "Que portes-tu pour marcher en ce moment, et est-ce confortable après une heure ?",
+     "c": "Regarde les semelles de tes chaussures : ont-elles encore une bonne accroche ?"
+    },
+    "it": {
+     "t": "Le basi delle calzature",
+     "g": "Scopri a cosa servono meglio scarpe da trail, scarponi da escursionismo e scarpe da avvicinamento.",
+     "p": [
+      "Le scarpe da trail sono leggere e flessibili, ottime su buoni sentieri e nei giorni caldi e asciutti.",
+      "Gli scarponi sostengono la caviglia e proteggono il piede sui sassi e con zaini più pesanti.",
+      "Le scarpe da avvicinamento hanno suole aderenti per passaggi su roccia; sui sentieri facili conta il comfort."
+     ],
+     "q": "Cosa indossi ora per camminare, ed è ancora comodo dopo un'ora?",
+     "c": "Controlla le suole delle tue scarpe: hanno ancora una buona presa?"
+    },
+    "pt": {
+     "t": "O básico do calçado",
+     "g": "Aprende para que serve melhor cada calçado: sapatilhas de trail, botas de caminhada e sapatos de aproximação.",
+     "p": [
+      "As sapatilhas de trail são leves e flexíveis, ótimas em bons trilhos e em dias quentes e secos.",
+      "As botas apoiam o tornozelo e protegem o pé em terreno com pedras e com mochilas mais pesadas.",
+      "Os sapatos de aproximação têm sola aderente para passagens em rocha; em trilhos fáceis, o conforto conta mais."
+     ],
+     "q": "Que calçado usas agora para caminhar, e continua confortável ao fim de uma hora?",
+     "c": "Verifica as solas do teu calçado: ainda têm boa aderência?"
+    },
+    "pt_BR": {
+     "t": "O básico dos calçados",
+     "g": "Aprenda para que serve melhor cada calçado: tênis de trilha, botas de trekking e tênis de aproximação.",
+     "p": [
+      "Tênis de trilha são leves e flexíveis, ótimos em bons caminhos e em dias quentes e secos.",
+      "Botas dão apoio ao tornozelo e protegem o pé em terreno com pedras e com mochilas mais pesadas.",
+      "Tênis de aproximação têm sola aderente para trechos de rocha; em trilhas fáceis, conforto é o principal."
+     ],
+     "q": "O que você usa hoje para caminhar, e continua confortável depois de uma hora?",
+     "c": "Confira as solas do seu calçado: ainda têm boa aderência?"
+    }
+   }
+  }
+ ]
+}

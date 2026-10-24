@@ -1,0 +1,835 @@
+{
+ "topic": "poetry",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a poem",
+     "g": "Discover how a poem uses lines, sound and images to say a lot in very few words.",
+     "p": [
+      "A poem is shaped in lines, and the poet decides where each line ends.",
+      "Poems care about sound: rhythm, repetition and rhyme make words sing.",
+      "Strong images let readers see and feel instead of just being told."
+     ],
+     "q": "What is a poem you remember, even a song lyric or a nursery rhyme?",
+     "c": "Write three short lines about your morning, ending each line where you would pause."
+    },
+    "de": {
+     "t": "Was ist ein Gedicht?",
+     "g": "Entdecke, wie ein Gedicht mit Zeilen, Klang und Bildern viel in wenigen Worten sagt.",
+     "p": [
+      "Ein Gedicht besteht aus Zeilen, und der Dichter entscheidet, wo jede endet.",
+      "Gedichte achten auf Klang: Rhythmus, Wiederholung und Reim lassen Wörter klingen.",
+      "Starke Bilder lassen uns sehen und fühlen, statt nur etwas erklärt zu bekommen."
+     ],
+     "q": "An welches Gedicht erinnerst du dich, vielleicht auch an einen Liedtext oder Kinderreim?",
+     "c": "Schreibe drei kurze Zeilen über deinen Morgen und brich jede dort um, wo du eine Pause machst."
+    },
+    "es": {
+     "t": "¿Qué es un poema?",
+     "g": "Descubre cómo un poema usa versos, sonido e imágenes para decir mucho con pocas palabras.",
+     "p": [
+      "Un poema se escribe en versos, y el poeta decide dónde termina cada uno.",
+      "La poesía cuida el sonido: ritmo, repetición y rima hacen cantar las palabras.",
+      "Las imágenes vivas dejan ver y sentir, en lugar de solo explicar."
+     ],
+     "q": "¿Qué poema recuerdas, aunque sea la letra de una canción o una rima infantil?",
+     "c": "Escribe tres versos cortos sobre tu mañana y corta cada uno donde harías una pausa."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un poème ?",
+     "g": "Découvrir comment un poème utilise vers, sons et images pour dire beaucoup en peu de mots.",
+     "p": [
+      "Un poème s'écrit en vers, et c'est le poète qui choisit où chacun s'arrête.",
+      "La poésie soigne le son : rythme, répétition et rime font chanter les mots.",
+      "Des images fortes font voir et ressentir au lieu de simplement expliquer."
+     ],
+     "q": "De quel poème te souviens-tu, même une chanson ou une comptine ?",
+     "c": "Écris trois vers courts sur ta matinée, en coupant chaque vers là où tu ferais une pause."
+    },
+    "it": {
+     "t": "Che cos'è una poesia",
+     "g": "Scopri come una poesia usa versi, suoni e immagini per dire molto in poche parole.",
+     "p": [
+      "Una poesia è fatta di versi, e il poeta sceglie dove finisce ognuno.",
+      "La poesia cura il suono: ritmo, ripetizione e rima fanno cantare le parole.",
+      "Immagini precise fanno vedere e sentire invece di spiegare soltanto."
+     ],
+     "q": "Quale poesia ricordi, anche il testo di una canzone o una filastrocca?",
+     "c": "Scrivi tre versi brevi sulla tua mattina, andando a capo dove faresti una pausa."
+    },
+    "pt": {
+     "t": "O que é um poema",
+     "g": "Descobre como um poema usa versos, som e imagens para dizer muito em poucas palavras.",
+     "p": [
+      "Um poema escreve-se em versos, e é o poeta que decide onde cada um acaba.",
+      "A poesia cuida do som: ritmo, repetição e rima fazem as palavras cantar.",
+      "Imagens fortes deixam-nos ver e sentir, em vez de apenas explicar."
+     ],
+     "q": "De que poema te lembras, mesmo que seja a letra de uma canção ou uma lengalenga?",
+     "c": "Escreve três versos curtos sobre a tua manhã e muda de linha onde farias uma pausa."
+    },
+    "pt_BR": {
+     "t": "O que é um poema",
+     "g": "Descubra como um poema usa versos, som e imagens para dizer muito em poucas palavras.",
+     "p": [
+      "Um poema é escrito em versos, e o poeta decide onde cada um termina.",
+      "A poesia cuida do som: ritmo, repetição e rima fazem as palavras cantarem.",
+      "Imagens fortes deixam a gente ver e sentir, em vez de só explicar."
+     ],
+     "q": "De qual poema você se lembra, mesmo que seja uma letra de música ou uma cantiga?",
+     "c": "Escreva três versos curtos sobre a sua manhã, mudando de linha onde você faria uma pausa."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people write poetry",
+     "g": "See poetry as a way to notice, remember, celebrate and share feelings in every culture.",
+     "p": [
+      "Every culture has poetry: songs, chants, proverbs and written verse.",
+      "Poems help us slow down and notice moments we would otherwise forget.",
+      "People write poems to celebrate, to thank and to share joy with others."
+     ],
+     "q": "Why do you feel drawn to poetry right now?",
+     "c": "Write one line that celebrates something good that happened to you this week."
+    },
+    "de": {
+     "t": "Warum Menschen Gedichte schreiben",
+     "g": "Sieh Poesie als Weg, zu bemerken, zu erinnern, zu feiern und Gefühle zu teilen.",
+     "p": [
+      "Jede Kultur hat Poesie: Lieder, Sprechgesänge, Sprichwörter und Verse.",
+      "Gedichte helfen uns, langsamer zu werden und Momente wahrzunehmen.",
+      "Menschen schreiben Gedichte, um zu feiern, zu danken und Freude zu teilen."
+     ],
+     "q": "Was zieht dich gerade jetzt zur Poesie hin?",
+     "c": "Schreibe eine Zeile, die etwas Schönes aus dieser Woche feiert."
+    },
+    "es": {
+     "t": "Por qué escribimos poesía",
+     "g": "Mira la poesía como una forma de notar, recordar, celebrar y compartir sentimientos.",
+     "p": [
+      "Todas las culturas tienen poesía: canciones, cantos, refranes y versos escritos.",
+      "Los poemas nos ayudan a ir más despacio y notar momentos que olvidaríamos.",
+      "Escribimos poemas para celebrar, agradecer y compartir la alegría."
+     ],
+     "q": "¿Qué te atrae de la poesía en este momento de tu vida?",
+     "c": "Escribe un verso que celebre algo bueno que te pasó esta semana."
+    },
+    "fr": {
+     "t": "Pourquoi écrire de la poésie",
+     "g": "Voir la poésie comme une façon de remarquer, se souvenir, célébrer et partager.",
+     "p": [
+      "Chaque culture a sa poésie : chansons, chants, proverbes et vers écrits.",
+      "Les poèmes aident à ralentir et à remarquer des instants qu'on oublierait.",
+      "On écrit des poèmes pour célébrer, remercier et partager sa joie."
+     ],
+     "q": "Qu'est-ce qui t'attire vers la poésie en ce moment ?",
+     "c": "Écris un vers qui célèbre une bonne chose arrivée cette semaine."
+    },
+    "it": {
+     "t": "Perché si scrive poesia",
+     "g": "Vedi la poesia come un modo per notare, ricordare, celebrare e condividere emozioni.",
+     "p": [
+      "Ogni cultura ha la sua poesia: canti, filastrocche, proverbi e versi scritti.",
+      "Le poesie ci aiutano a rallentare e a notare momenti che dimenticheremmo.",
+      "Si scrivono poesie per festeggiare, ringraziare e condividere la gioia."
+     ],
+     "q": "Che cosa ti attira verso la poesia in questo periodo?",
+     "c": "Scrivi un verso che celebri qualcosa di bello successo questa settimana."
+    },
+    "pt": {
+     "t": "Porque escrevemos poesia",
+     "g": "Vê a poesia como forma de reparar, lembrar, celebrar e partilhar sentimentos.",
+     "p": [
+      "Todas as culturas têm poesia: canções, cantigas, provérbios e versos escritos.",
+      "Os poemas ajudam-nos a abrandar e a reparar em momentos que esqueceríamos.",
+      "Escrevemos poemas para celebrar, agradecer e partilhar alegria."
+     ],
+     "q": "O que te atrai na poesia neste momento?",
+     "c": "Escreve um verso que celebre algo bom que te aconteceu esta semana."
+    },
+    "pt_BR": {
+     "t": "Por que escrevemos poesia",
+     "g": "Veja a poesia como um jeito de notar, lembrar, celebrar e compartilhar sentimentos.",
+     "p": [
+      "Toda cultura tem poesia: canções, cantigas, provérbios e versos escritos.",
+      "Os poemas ajudam a desacelerar e a perceber momentos que a gente esqueceria.",
+      "Escrevemos poemas para celebrar, agradecer e compartilhar alegria."
+     ],
+     "q": "O que atrai você para a poesia neste momento?",
+     "c": "Escreva um verso que celebre algo bom que aconteceu com você nesta semana."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a poem aloud",
+     "g": "Hear a poem's rhythm and music by reading slowly, pausing at line ends and breathing.",
+     "p": [
+      "Read slower than you speak; poems reward patience.",
+      "Pause briefly at each line end, even when the sentence goes on.",
+      "Breathe between stanzas and let the sounds settle."
+     ],
+     "q": "How does a poem feel different when you hear it instead of reading silently?",
+     "c": "Read any short poem aloud twice today, once fast and once slowly, and notice the change."
+    },
+    "de": {
+     "t": "Ein Gedicht laut lesen",
+     "g": "Höre Rhythmus und Musik eines Gedichts, indem du langsam liest, pausierst und atmest.",
+     "p": [
+      "Lies langsamer, als du sprichst; Gedichte belohnen Geduld.",
+      "Mach am Zeilenende eine kleine Pause, auch wenn der Satz weitergeht.",
+      "Atme zwischen den Strophen und lass die Klänge nachwirken."
+     ],
+     "q": "Wie fühlt sich ein Gedicht anders an, wenn du es hörst statt still liest?",
+     "c": "Lies heute ein kurzes Gedicht zweimal laut, einmal schnell, einmal langsam, und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Leer un poema en voz alta",
+     "g": "Escucha el ritmo y la música de un poema leyendo despacio, con pausas y respiración.",
+     "p": [
+      "Lee más despacio de lo que hablas; los poemas premian la paciencia.",
+      "Haz una pausa breve al final de cada verso, aunque la frase continúe.",
+      "Respira entre estrofas y deja que los sonidos se asienten."
+     ],
+     "q": "¿Cómo cambia un poema cuando lo escuchas en lugar de leerlo en silencio?",
+     "c": "Lee hoy en voz alta un poema corto dos veces, una rápida y otra lenta, y nota la diferencia."
+    },
+    "fr": {
+     "t": "Lire un poème à voix haute",
+     "g": "Entendre le rythme et la musique d'un poème en lisant lentement, avec pauses et souffle.",
+     "p": [
+      "Lis plus lentement que tu ne parles ; les poèmes récompensent la patience.",
+      "Marque une petite pause en fin de vers, même si la phrase continue.",
+      "Respire entre les strophes et laisse les sons résonner."
+     ],
+     "q": "En quoi un poème change-t-il quand tu l'entends au lieu de le lire en silence ?",
+     "c": "Lis aujourd'hui un court poème deux fois à voix haute, vite puis lentement, et note la différence."
+    },
+    "it": {
+     "t": "Leggere una poesia ad alta voce",
+     "g": "Ascolta ritmo e musica di una poesia leggendo piano, con pause e respiro.",
+     "p": [
+      "Leggi più lentamente di come parli: la poesia premia la pazienza.",
+      "Fai una breve pausa a fine verso, anche se la frase continua.",
+      "Respira tra una strofa e l'altra e lascia risuonare i suoni."
+     ],
+     "q": "Come cambia una poesia quando la ascolti invece di leggerla in silenzio?",
+     "c": "Leggi oggi ad alta voce una poesia breve due volte, veloce e poi lenta, e nota la differenza."
+    },
+    "pt": {
+     "t": "Ler um poema em voz alta",
+     "g": "Ouve o ritmo e a música de um poema lendo devagar, com pausas e respiração.",
+     "p": [
+      "Lê mais devagar do que falas; os poemas recompensam a paciência.",
+      "Faz uma pausa breve no fim de cada verso, mesmo que a frase continue.",
+      "Respira entre estrofes e deixa os sons assentar."
+     ],
+     "q": "Como muda um poema quando o ouves em vez de o leres em silêncio?",
+     "c": "Lê hoje em voz alta um poema curto duas vezes, depressa e devagar, e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Ler um poema em voz alta",
+     "g": "Ouça o ritmo e a música de um poema lendo devagar, com pausas e respiração.",
+     "p": [
+      "Leia mais devagar do que você fala; poemas recompensam a paciência.",
+      "Faça uma pausa breve no fim de cada verso, mesmo que a frase continue.",
+      "Respire entre as estrofes e deixe os sons ecoarem."
+     ],
+     "q": "Como um poema muda quando você ouve em vez de ler em silêncio?",
+     "c": "Leia hoje um poema curto em voz alta duas vezes, rápido e devagar, e perceba a diferença."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a poem twice",
+     "g": "Learn why a second reading reveals new images, sounds and meanings.",
+     "p": [
+      "The first reading gives you the general feeling; the second shows the details.",
+      "On the second pass, notice one word that surprises you.",
+      "Ask what the poem shows, not only what it says."
+     ],
+     "q": "Have you ever reread something and found a detail you missed the first time?",
+     "c": "Read one short poem twice and write down one thing you only noticed the second time."
+    },
+    "de": {
+     "t": "Ein Gedicht zweimal lesen",
+     "g": "Erfahre, warum das zweite Lesen neue Bilder, Klänge und Bedeutungen zeigt.",
+     "p": [
+      "Beim ersten Lesen spürst du die Stimmung, beim zweiten siehst du die Details.",
+      "Achte beim zweiten Mal auf ein Wort, das dich überrascht.",
+      "Frag, was das Gedicht zeigt, nicht nur, was es sagt."
+     ],
+     "q": "Hast du schon einmal etwas neu gelesen und ein übersehenes Detail entdeckt?",
+     "c": "Lies ein kurzes Gedicht zweimal und notiere, was dir erst beim zweiten Mal auffiel."
+    },
+    "es": {
+     "t": "Leer un poema dos veces",
+     "g": "Aprende por qué una segunda lectura revela nuevas imágenes, sonidos y sentidos.",
+     "p": [
+      "La primera lectura da la sensación general; la segunda muestra los detalles.",
+      "En la segunda, fíjate en una palabra que te sorprenda.",
+      "Pregúntate qué muestra el poema, no solo qué dice."
+     ],
+     "q": "¿Alguna vez releíste algo y encontraste un detalle que se te había escapado?",
+     "c": "Lee un poema corto dos veces y anota algo que solo viste en la segunda lectura."
+    },
+    "fr": {
+     "t": "Lire un poème deux fois",
+     "g": "Comprendre pourquoi une seconde lecture révèle de nouvelles images, sons et sens.",
+     "p": [
+      "La première lecture donne l'impression générale, la seconde montre les détails.",
+      "À la seconde lecture, repère un mot qui te surprend.",
+      "Demande-toi ce que le poème montre, pas seulement ce qu'il dit."
+     ],
+     "q": "As-tu déjà relu un texte et découvert un détail manqué la première fois ?",
+     "c": "Lis un court poème deux fois et note une chose remarquée seulement à la seconde lecture."
+    },
+    "it": {
+     "t": "Leggere una poesia due volte",
+     "g": "Scopri perché una seconda lettura svela nuove immagini, suoni e significati.",
+     "p": [
+      "La prima lettura dà l'impressione generale, la seconda mostra i dettagli.",
+      "Alla seconda lettura, cerca una parola che ti sorprende.",
+      "Chiediti che cosa mostra la poesia, non solo che cosa dice."
+     ],
+     "q": "Ti è mai capitato di rileggere qualcosa e trovare un dettaglio che ti era sfuggito?",
+     "c": "Leggi una poesia breve due volte e annota una cosa notata solo alla seconda lettura."
+    },
+    "pt": {
+     "t": "Ler um poema duas vezes",
+     "g": "Percebe porque uma segunda leitura revela novas imagens, sons e sentidos.",
+     "p": [
+      "A primeira leitura dá a impressão geral; a segunda mostra os pormenores.",
+      "Na segunda leitura, repara numa palavra que te surpreenda.",
+      "Pergunta o que o poema mostra, não só o que diz."
+     ],
+     "q": "Já releste algo e encontraste um pormenor que te tinha escapado?",
+     "c": "Lê um poema curto duas vezes e anota algo que só notaste na segunda leitura."
+    },
+    "pt_BR": {
+     "t": "Ler um poema duas vezes",
+     "g": "Entenda por que uma segunda leitura revela novas imagens, sons e sentidos.",
+     "p": [
+      "A primeira leitura dá a sensação geral; a segunda mostra os detalhes.",
+      "Na segunda leitura, repare em uma palavra que surpreenda você.",
+      "Pergunte o que o poema mostra, não só o que ele diz."
+     ],
+     "q": "Você já releu algo e encontrou um detalhe que tinha passado despercebido?",
+     "c": "Leia um poema curto duas vezes e anote algo que você só notou na segunda leitura."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your poetry notebook",
+     "g": "Start a small notebook for images, phrases, overheard words and first drafts.",
+     "p": [
+      "Carry something small: a pocket notebook or a notes app works.",
+      "Collect raw material: images, odd phrases, words you overhear.",
+      "Date your entries and never cross out ideas; drafts can be messy."
+     ],
+     "q": "Do you prefer paper or a phone for capturing ideas, and why?",
+     "c": "Start your notebook today with five things you saw or heard."
+    },
+    "de": {
+     "t": "Dein Poesie-Notizbuch",
+     "g": "Beginne ein kleines Notizbuch für Bilder, Wendungen, aufgeschnappte Wörter und Entwürfe.",
+     "p": [
+      "Trag etwas Kleines bei dir: ein Taschenheft oder eine Notiz-App reicht.",
+      "Sammle Rohmaterial: Bilder, seltsame Wendungen, gehörte Wörter.",
+      "Datiere deine Einträge und streiche keine Ideen; Entwürfe dürfen chaotisch sein."
+     ],
+     "q": "Hältst du Ideen lieber auf Papier oder im Handy fest, und warum?",
+     "c": "Beginne heute dein Notizbuch mit fünf Dingen, die du gesehen oder gehört hast."
+    },
+    "es": {
+     "t": "Tu cuaderno de poesía",
+     "g": "Empieza un cuaderno pequeño para imágenes, frases, palabras oídas y borradores.",
+     "p": [
+      "Lleva algo pequeño: una libreta de bolsillo o una app de notas sirve.",
+      "Reúne material: imágenes, frases curiosas, palabras que oyes por ahí.",
+      "Pon fecha a tus notas y no taches ideas; los borradores pueden ser un lío."
+     ],
+     "q": "¿Prefieres papel o el móvil para apuntar ideas? ¿Por qué?",
+     "c": "Empieza hoy tu cuaderno con cinco cosas que hayas visto u oído."
+    },
+    "fr": {
+     "t": "Ton carnet de poésie",
+     "g": "Commencer un petit carnet pour images, expressions, mots entendus et brouillons.",
+     "p": [
+      "Garde sur toi quelque chose de petit : un carnet ou une appli de notes.",
+      "Récolte la matière : images, tournures étranges, mots entendus au vol.",
+      "Date tes notes et ne rature aucune idée ; un brouillon peut être en désordre."
+     ],
+     "q": "Préfères-tu le papier ou le téléphone pour noter tes idées, et pourquoi ?",
+     "c": "Commence ton carnet aujourd'hui avec cinq choses vues ou entendues."
+    },
+    "it": {
+     "t": "Il tuo quaderno di poesia",
+     "g": "Inizia un piccolo quaderno per immagini, frasi, parole sentite e prime bozze.",
+     "p": [
+      "Porta con te qualcosa di piccolo: un taccuino o un'app per le note.",
+      "Raccogli materiale: immagini, frasi curiose, parole ascoltate per caso.",
+      "Metti la data e non cancellare le idee: le bozze possono essere disordinate."
+     ],
+     "q": "Preferisci la carta o il telefono per annotare le idee? Perché?",
+     "c": "Inizia oggi il quaderno con cinque cose che hai visto o sentito."
+    },
+    "pt": {
+     "t": "O teu caderno de poesia",
+     "g": "Começa um caderninho para imagens, frases, palavras ouvidas e primeiros rascunhos.",
+     "p": [
+      "Leva algo pequeno: um bloco de bolso ou uma app de notas serve.",
+      "Junta matéria-prima: imagens, frases curiosas, palavras que ouves por aí.",
+      "Põe a data e não risques ideias; os rascunhos podem ser confusos."
+     ],
+     "q": "Preferes papel ou telemóvel para guardar ideias? Porquê?",
+     "c": "Começa hoje o teu caderno com cinco coisas que viste ou ouviste."
+    },
+    "pt_BR": {
+     "t": "Seu caderno de poesia",
+     "g": "Comece um caderninho para imagens, frases, palavras ouvidas e primeiros rascunhos.",
+     "p": [
+      "Leve algo pequeno: um bloquinho de bolso ou um app de notas serve.",
+      "Junte matéria-prima: imagens, frases curiosas, palavras que você ouve por aí.",
+      "Coloque a data e não risque ideias; rascunho pode ser bagunçado."
+     ],
+     "q": "Você prefere papel ou celular para anotar ideias? Por quê?",
+     "c": "Comece hoje o seu caderno com cinco coisas que você viu ou ouviu."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing like a poet",
+     "g": "Practise paying close attention to small everyday things others walk past.",
+     "p": [
+      "Poets look twice at ordinary things: a crack in a cup, light on a wall.",
+      "Slow down and name details: colour, shape, sound, movement.",
+      "Small, specific details make a poem feel true and alive."
+     ],
+     "q": "What small detail did you notice today that most people would miss?",
+     "c": "Spend two minutes looking at one object and write down six details about it."
+    },
+    "de": {
+     "t": "Wahrnehmen wie ein Dichter",
+     "g": "Übe, auf kleine Alltagsdinge zu achten, an denen andere vorbeigehen.",
+     "p": [
+      "Dichter schauen zweimal hin: ein Sprung in der Tasse, Licht an der Wand.",
+      "Werde langsamer und benenne Details: Farbe, Form, Klang, Bewegung.",
+      "Kleine, genaue Details machen ein Gedicht wahr und lebendig."
+     ],
+     "q": "Welches kleine Detail hast du heute bemerkt, das die meisten übersehen würden?",
+     "c": "Betrachte zwei Minuten lang einen Gegenstand und notiere sechs Details."
+    },
+    "es": {
+     "t": "Observar como un poeta",
+     "g": "Practica fijarte en las pequeñas cosas cotidianas que otros pasan por alto.",
+     "p": [
+      "Los poetas miran dos veces lo común: una grieta en la taza, luz en la pared.",
+      "Ve despacio y nombra detalles: color, forma, sonido, movimiento.",
+      "Los detalles pequeños y concretos hacen que un poema se sienta vivo."
+     ],
+     "q": "¿Qué pequeño detalle notaste hoy que casi nadie vería?",
+     "c": "Mira un objeto durante dos minutos y anota seis detalles sobre él."
+    },
+    "fr": {
+     "t": "Observer comme un poète",
+     "g": "S'exercer à remarquer les petites choses du quotidien que d'autres ignorent.",
+     "p": [
+      "Les poètes regardent deux fois l'ordinaire : une fêlure, la lumière sur un mur.",
+      "Ralentis et nomme les détails : couleur, forme, son, mouvement.",
+      "Des détails petits et précis rendent un poème vrai et vivant."
+     ],
+     "q": "Quel petit détail as-tu remarqué aujourd'hui que la plupart ne verraient pas ?",
+     "c": "Observe un objet pendant deux minutes et note six détails à son sujet."
+    },
+    "it": {
+     "t": "Osservare come un poeta",
+     "g": "Esercitati a notare le piccole cose quotidiane che gli altri non vedono.",
+     "p": [
+      "I poeti guardano due volte l'ordinario: una crepa nella tazza, luce su un muro.",
+      "Rallenta e dai un nome ai dettagli: colore, forma, suono, movimento.",
+      "Dettagli piccoli e precisi rendono una poesia vera e viva."
+     ],
+     "q": "Quale piccolo dettaglio hai notato oggi che quasi nessuno vedrebbe?",
+     "c": "Osserva un oggetto per due minuti e annota sei dettagli."
+    },
+    "pt": {
+     "t": "Reparar como um poeta",
+     "g": "Treina a atenção às pequenas coisas do dia a dia por onde os outros passam.",
+     "p": [
+      "Os poetas olham duas vezes o comum: uma racha na chávena, luz na parede.",
+      "Abranda e nomeia pormenores: cor, forma, som, movimento.",
+      "Pormenores pequenos e concretos tornam um poema vivo e verdadeiro."
+     ],
+     "q": "Que pequeno pormenor notaste hoje que quase ninguém veria?",
+     "c": "Observa um objeto durante dois minutos e anota seis pormenores."
+    },
+    "pt_BR": {
+     "t": "Observar como um poeta",
+     "g": "Treine a atenção às pequenas coisas do dia a dia que os outros nem notam.",
+     "p": [
+      "Poetas olham duas vezes o comum: uma rachadura na xícara, luz na parede.",
+      "Desacelere e nomeie detalhes: cor, forma, som, movimento.",
+      "Detalhes pequenos e concretos deixam o poema vivo e verdadeiro."
+     ],
+     "q": "Que pequeno detalhe você notou hoje que quase ninguém perceberia?",
+     "c": "Observe um objeto por dois minutos e anote seis detalhes sobre ele."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The image",
+     "g": "Learn to create a clear picture in the reader's mind with concrete, specific words.",
+     "p": [
+      "An image is language the reader can see, hear, smell, taste or touch.",
+      "Choose specific words: not a bird but a sparrow, not food but warm bread.",
+      "Show the scene and trust the reader to feel it."
+     ],
+     "q": "What image from your childhood comes back to you most clearly?",
+     "c": "Write one line that paints a picture without naming any feeling."
+    },
+    "de": {
+     "t": "Das Bild",
+     "g": "Lerne, mit konkreten, genauen Wörtern ein klares Bild im Kopf des Lesers zu erzeugen.",
+     "p": [
+      "Ein Bild ist Sprache, die man sehen, hören, riechen, schmecken oder fühlen kann.",
+      "Wähle genaue Wörter: nicht Vogel, sondern Spatz; nicht Essen, sondern warmes Brot.",
+      "Zeige die Szene und vertraue darauf, dass der Leser fühlt."
+     ],
+     "q": "Welches Bild aus deiner Kindheit kommt dir am deutlichsten zurück?",
+     "c": "Schreibe eine Zeile, die ein Bild malt, ohne ein Gefühl zu benennen."
+    },
+    "es": {
+     "t": "La imagen",
+     "g": "Aprende a crear una imagen clara en la mente del lector con palabras concretas.",
+     "p": [
+      "Una imagen es lenguaje que se puede ver, oír, oler, saborear o tocar.",
+      "Elige palabras precisas: no pájaro, sino gorrión; no comida, sino pan caliente.",
+      "Muestra la escena y confía en que el lector la sienta."
+     ],
+     "q": "¿Qué imagen de tu infancia vuelve a ti con más claridad?",
+     "c": "Escribe un verso que pinte una imagen sin nombrar ningún sentimiento."
+    },
+    "fr": {
+     "t": "L'image",
+     "g": "Apprendre à créer une image nette dans l'esprit du lecteur avec des mots concrets.",
+     "p": [
+      "Une image, c'est du langage qu'on peut voir, entendre, sentir, goûter ou toucher.",
+      "Choisis des mots précis : pas un oiseau mais un moineau, pas à manger mais du pain chaud.",
+      "Montre la scène et fais confiance au lecteur pour ressentir."
+     ],
+     "q": "Quelle image de ton enfance te revient le plus nettement ?",
+     "c": "Écris un vers qui peint une image sans nommer aucun sentiment."
+    },
+    "it": {
+     "t": "L'immagine",
+     "g": "Impara a creare un'immagine chiara nella mente del lettore con parole concrete.",
+     "p": [
+      "Un'immagine è linguaggio che si può vedere, sentire, odorare, gustare o toccare.",
+      "Scegli parole precise: non un uccello ma un passero, non cibo ma pane caldo.",
+      "Mostra la scena e fidati del lettore: sentirà da solo."
+     ],
+     "q": "Quale immagine della tua infanzia ti torna in mente più chiaramente?",
+     "c": "Scrivi un verso che dipinga un'immagine senza nominare alcuna emozione."
+    },
+    "pt": {
+     "t": "A imagem",
+     "g": "Aprende a criar uma imagem nítida na mente do leitor com palavras concretas.",
+     "p": [
+      "Uma imagem é linguagem que se pode ver, ouvir, cheirar, saborear ou tocar.",
+      "Escolhe palavras precisas: não pássaro mas pardal, não comida mas pão quente.",
+      "Mostra a cena e confia que o leitor a vai sentir."
+     ],
+     "q": "Que imagem da tua infância te volta com mais nitidez?",
+     "c": "Escreve um verso que pinte uma imagem sem nomear nenhum sentimento."
+    },
+    "pt_BR": {
+     "t": "A imagem",
+     "g": "Aprenda a criar uma imagem nítida na mente do leitor com palavras concretas.",
+     "p": [
+      "Imagem é linguagem que dá para ver, ouvir, cheirar, saborear ou tocar.",
+      "Escolha palavras precisas: não pássaro, mas pardal; não comida, mas pão quentinho.",
+      "Mostre a cena e confie que o leitor vai sentir."
+     ],
+     "q": "Que imagem da sua infância volta para você com mais nitidez?",
+     "c": "Escreva um verso que pinte uma imagem sem nomear nenhum sentimento."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Images from sight",
+     "g": "Write colour, shape, light and movement precisely in a few words.",
+     "p": [
+      "Name exact colours: rust, honey, slate, mint.",
+      "Describe how light falls: through leaves, on water, across a table.",
+      "Add movement with strong verbs: flicker, drift, tumble."
+     ],
+     "q": "Which colour do you notice most in the place where you are now?",
+     "c": "Write two lines about light in your room right now, using one exact colour and one verb."
+    },
+    "de": {
+     "t": "Bilder aus dem Sehen",
+     "g": "Beschreibe Farbe, Form, Licht und Bewegung genau und in wenigen Worten.",
+     "p": [
+      "Nenne genaue Farben: rostrot, honiggelb, schiefergrau, minzgrün.",
+      "Beschreibe, wie Licht fällt: durch Blätter, auf Wasser, über einen Tisch.",
+      "Bring Bewegung mit starken Verben: flackern, treiben, purzeln."
+     ],
+     "q": "Welche Farbe fällt dir an dem Ort, an dem du gerade bist, am meisten auf?",
+     "c": "Schreibe zwei Zeilen über das Licht in deinem Zimmer, mit einer genauen Farbe und einem Verb."
+    },
+    "es": {
+     "t": "Imágenes de la vista",
+     "g": "Escribe color, forma, luz y movimiento con precisión y en pocas palabras.",
+     "p": [
+      "Nombra colores exactos: óxido, miel, pizarra, menta.",
+      "Describe cómo cae la luz: entre hojas, sobre el agua, en una mesa.",
+      "Añade movimiento con verbos fuertes: titilar, flotar, rodar."
+     ],
+     "q": "¿Qué color destaca más en el lugar donde estás ahora?",
+     "c": "Escribe dos versos sobre la luz de tu cuarto ahora, con un color exacto y un verbo."
+    },
+    "fr": {
+     "t": "Images de la vue",
+     "g": "Écrire couleur, forme, lumière et mouvement avec précision, en peu de mots.",
+     "p": [
+      "Nomme des couleurs exactes : rouille, miel, ardoise, menthe.",
+      "Décris comment tombe la lumière : à travers les feuilles, sur l'eau, sur une table.",
+      "Ajoute du mouvement avec des verbes forts : vaciller, dériver, dégringoler."
+     ],
+     "q": "Quelle couleur remarques-tu le plus là où tu es maintenant ?",
+     "c": "Écris deux vers sur la lumière de ta pièce, avec une couleur précise et un verbe."
+    },
+    "it": {
+     "t": "Immagini dalla vista",
+     "g": "Scrivi colore, forma, luce e movimento con precisione e in poche parole.",
+     "p": [
+      "Nomina colori esatti: ruggine, miele, ardesia, menta.",
+      "Descrivi come cade la luce: tra le foglie, sull'acqua, su un tavolo.",
+      "Aggiungi movimento con verbi forti: tremolare, fluttuare, rotolare."
+     ],
+     "q": "Quale colore noti di più nel posto in cui sei adesso?",
+     "c": "Scrivi due versi sulla luce nella tua stanza ora, con un colore esatto e un verbo."
+    },
+    "pt": {
+     "t": "Imagens da visão",
+     "g": "Escreve cor, forma, luz e movimento com precisão e em poucas palavras.",
+     "p": [
+      "Nomeia cores exatas: ferrugem, mel, ardósia, menta.",
+      "Descreve como cai a luz: entre folhas, sobre a água, numa mesa.",
+      "Junta movimento com verbos fortes: cintilar, flutuar, rebolar."
+     ],
+     "q": "Que cor notas mais no sítio onde estás agora?",
+     "c": "Escreve dois versos sobre a luz do teu quarto agora, com uma cor exata e um verbo."
+    },
+    "pt_BR": {
+     "t": "Imagens da visão",
+     "g": "Escreva cor, forma, luz e movimento com precisão e em poucas palavras.",
+     "p": [
+      "Nomeie cores exatas: ferrugem, mel, ardósia, menta.",
+      "Descreva como a luz cai: entre folhas, sobre a água, numa mesa.",
+      "Acrescente movimento com verbos fortes: cintilar, flutuar, rolar."
+     ],
+     "q": "Que cor você mais nota no lugar onde está agora?",
+     "c": "Escreva dois versos sobre a luz do seu quarto agora, com uma cor exata e um verbo."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Images from sound",
+     "g": "Capture noises and silence in lines readers can almost hear.",
+     "p": [
+      "Listen first: close your eyes and list every sound around you.",
+      "Use precise sound words: hum, rattle, whisper, clink.",
+      "Silence is a sound too; describe what makes it noticeable."
+     ],
+     "q": "What sound makes you feel at home?",
+     "c": "Sit still for one minute, then write three lines, each built around one sound you heard."
+    },
+    "de": {
+     "t": "Bilder aus dem Hören",
+     "g": "Fange Geräusche und Stille in Zeilen ein, die man fast hören kann.",
+     "p": [
+      "Hör zuerst zu: Schließ die Augen und liste alle Geräusche um dich auf.",
+      "Nutze genaue Klangwörter: summen, klappern, flüstern, klirren.",
+      "Auch Stille ist ein Klang; beschreibe, was sie spürbar macht."
+     ],
+     "q": "Welches Geräusch gibt dir das Gefühl, zu Hause zu sein?",
+     "c": "Sitz eine Minute still und schreibe dann drei Zeilen, jede um ein gehörtes Geräusch."
+    },
+    "es": {
+     "t": "Imágenes del sonido",
+     "g": "Atrapa ruidos y silencios en versos que el lector casi pueda oír.",
+     "p": [
+      "Escucha primero: cierra los ojos y apunta cada sonido a tu alrededor.",
+      "Usa palabras sonoras precisas: zumbido, traqueteo, susurro, tintineo.",
+      "El silencio también suena; describe qué lo hace notable."
+     ],
+     "q": "¿Qué sonido te hace sentir en casa?",
+     "c": "Quédate quieto un minuto y escribe tres versos, cada uno sobre un sonido que oíste."
+    },
+    "fr": {
+     "t": "Images du son",
+     "g": "Capturer bruits et silences dans des vers que l'on entend presque.",
+     "p": [
+      "Écoute d'abord : ferme les yeux et liste chaque son autour de toi.",
+      "Utilise des mots sonores précis : bourdonner, cliqueter, chuchoter, tinter.",
+      "Le silence est aussi un son ; décris ce qui le rend perceptible."
+     ],
+     "q": "Quel son te donne l'impression d'être chez toi ?",
+     "c": "Reste immobile une minute, puis écris trois vers, chacun autour d'un son entendu."
+    },
+    "it": {
+     "t": "Immagini dal suono",
+     "g": "Cattura rumori e silenzi in versi che il lettore quasi può sentire.",
+     "p": [
+      "Prima ascolta: chiudi gli occhi ed elenca ogni suono intorno a te.",
+      "Usa parole sonore precise: ronzio, sferragliare, sussurro, tintinnio.",
+      "Anche il silenzio è un suono: descrivi che cosa lo rende percepibile."
+     ],
+     "q": "Quale suono ti fa sentire a casa?",
+     "c": "Resta fermo un minuto, poi scrivi tre versi, ognuno su un suono che hai sentito."
+    },
+    "pt": {
+     "t": "Imagens do som",
+     "g": "Apanha ruídos e silêncios em versos que o leitor quase consiga ouvir.",
+     "p": [
+      "Primeiro escuta: fecha os olhos e lista todos os sons à tua volta.",
+      "Usa palavras sonoras precisas: zumbido, chocalhar, sussurro, tilintar.",
+      "O silêncio também é som; descreve o que o torna notório."
+     ],
+     "q": "Que som te faz sentir em casa?",
+     "c": "Fica quieto um minuto e escreve três versos, cada um sobre um som que ouviste."
+    },
+    "pt_BR": {
+     "t": "Imagens do som",
+     "g": "Capture ruídos e silêncios em versos que o leitor quase consiga ouvir.",
+     "p": [
+      "Primeiro escute: feche os olhos e liste todos os sons ao seu redor.",
+      "Use palavras sonoras precisas: zumbido, chacoalhar, sussurro, tilintar.",
+      "O silêncio também é som; descreva o que faz ele ser notado."
+     ],
+     "q": "Que som faz você se sentir em casa?",
+     "c": "Fique parado um minuto e escreva três versos, cada um sobre um som que você ouviu."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Images from smell and taste",
+     "g": "Use scent and flavour to wake up memories in a poem.",
+     "p": [
+      "Smell is closely tied to memory; one scent can open a whole scene.",
+      "Be specific: cinnamon, cut grass, sea salt, lemon peel.",
+      "Taste adds closeness; readers almost feel it on their tongue."
+     ],
+     "q": "Which smell instantly takes you back to a happy place?",
+     "c": "Write a three-line poem that starts with a smell and ends with a memory."
+    },
+    "de": {
+     "t": "Bilder aus Geruch und Geschmack",
+     "g": "Nutze Duft und Geschmack, um in einem Gedicht Erinnerungen zu wecken.",
+     "p": [
+      "Geruch ist eng mit Erinnerung verbunden; ein Duft öffnet eine ganze Szene.",
+      "Sei genau: Zimt, frisch gemähtes Gras, Meersalz, Zitronenschale.",
+      "Geschmack schafft Nähe; man spürt ihn fast auf der Zunge."
+     ],
+     "q": "Welcher Geruch bringt dich sofort an einen glücklichen Ort zurück?",
+     "c": "Schreibe ein Dreizeiler-Gedicht, das mit einem Duft beginnt und mit einer Erinnerung endet."
+    },
+    "es": {
+     "t": "Imágenes del olfato y el gusto",
+     "g": "Usa aromas y sabores para despertar recuerdos en un poema.",
+     "p": [
+      "El olfato está muy unido a la memoria; un aroma abre toda una escena.",
+      "Sé concreto: canela, césped recién cortado, sal marina, cáscara de limón.",
+      "El gusto aporta cercanía; el lector casi lo siente en la lengua."
+     ],
+     "q": "¿Qué olor te lleva al instante a un lugar feliz?",
+     "c": "Escribe un poema de tres versos que empiece con un olor y termine con un recuerdo."
+    },
+    "fr": {
+     "t": "Images de l'odorat et du goût",
+     "g": "Utiliser odeurs et saveurs pour réveiller des souvenirs dans un poème.",
+     "p": [
+      "L'odorat est très lié à la mémoire ; une odeur peut ouvrir toute une scène.",
+      "Sois précis : cannelle, herbe coupée, sel marin, zeste de citron.",
+      "Le goût crée de la proximité ; on le sent presque sur la langue."
+     ],
+     "q": "Quelle odeur te ramène aussitôt dans un endroit heureux ?",
+     "c": "Écris un poème de trois vers qui commence par une odeur et finit par un souvenir."
+    },
+    "it": {
+     "t": "Immagini da olfatto e gusto",
+     "g": "Usa profumi e sapori per risvegliare ricordi in una poesia.",
+     "p": [
+      "L'olfatto è legato alla memoria: un profumo può aprire un'intera scena.",
+      "Sii preciso: cannella, erba tagliata, sale marino, scorza di limone.",
+      "Il gusto crea vicinanza: il lettore lo sente quasi sulla lingua."
+     ],
+     "q": "Quale profumo ti riporta subito in un posto felice?",
+     "c": "Scrivi una poesia di tre versi che inizi con un odore e finisca con un ricordo."
+    },
+    "pt": {
+     "t": "Imagens do olfato e do paladar",
+     "g": "Usa cheiros e sabores para despertar memórias num poema.",
+     "p": [
+      "O olfato está muito ligado à memória; um cheiro abre uma cena inteira.",
+      "Sê concreto: canela, relva cortada, sal do mar, casca de limão.",
+      "O paladar cria proximidade; o leitor quase o sente na língua."
+     ],
+     "q": "Que cheiro te leva de imediato a um lugar feliz?",
+     "c": "Escreve um poema de três versos que comece com um cheiro e acabe com uma memória."
+    },
+    "pt_BR": {
+     "t": "Imagens do olfato e do paladar",
+     "g": "Use cheiros e sabores para despertar lembranças num poema.",
+     "p": [
+      "O olfato é muito ligado à memória; um cheiro abre uma cena inteira.",
+      "Seja concreto: canela, grama cortada, sal do mar, casca de limão.",
+      "O paladar cria proximidade; o leitor quase sente na língua."
+     ],
+     "q": "Que cheiro leva você na hora para um lugar feliz?",
+     "c": "Escreva um poema de três versos que comece com um cheiro e termine com uma lembrança."
+    }
+   }
+  }
+ ]
+}

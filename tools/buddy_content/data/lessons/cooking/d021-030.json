@@ -1,0 +1,835 @@
+{
+ "topic": "cooking",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sautéing vegetables",
+     "g": "Learn to use a hot pan, a little fat and enough space so vegetables brown instead of steam.",
+     "p": [
+      "Heat the pan first, then add a little oil; it should shimmer before the vegetables go in.",
+      "Do not crowd the pan: too many vegetables release water and steam instead of turning golden.",
+      "Cut pieces the same size, toss now and then, and season near the end with salt and pepper."
+     ],
+     "q": "Which vegetables do you like best when they are browned?",
+     "c": "Sauté one vegetable in two batches instead of one crowded pan and compare the colour."
+    },
+    "de": {
+     "t": "Gemüse anbraten",
+     "g": "Lerne mit heißer Pfanne, wenig Fett und genug Platz Gemüse zu bräunen statt zu dämpfen.",
+     "p": [
+      "Erhitze zuerst die Pfanne, dann etwas Öl; es soll schimmern, bevor das Gemüse hineinkommt.",
+      "Überfüll die Pfanne nicht: zu viel Gemüse gibt Wasser ab und dämpft, statt goldbraun zu werden.",
+      "Schneide gleich große Stücke, schwenk ab und zu und würz gegen Ende mit Salz und Pfeffer."
+     ],
+     "q": "Welches Gemüse magst du am liebsten schön angebräunt?",
+     "c": "Brate ein Gemüse in zwei Portionen statt in einer vollen Pfanne und vergleiche die Farbe."
+    },
+    "es": {
+     "t": "Saltear verduras",
+     "g": "Aprende a usar sartén caliente, poca grasa y espacio suficiente para que las verduras se doren y no se cuezan.",
+     "p": [
+      "Calienta primero la sartén y luego añade un poco de aceite; debe brillar antes de echar las verduras.",
+      "No llenes demasiado la sartén: el exceso suelta agua y las verduras se cuecen en vez de dorarse.",
+      "Corta trozos iguales, saltea de vez en cuando y sazona al final con sal y pimienta."
+     ],
+     "q": "¿Qué verduras te gustan más bien doradas?",
+     "c": "Saltea una verdura en dos tandas en lugar de una sartén llena y compara el color."
+    },
+    "fr": {
+     "t": "Faire sauter des légumes",
+     "g": "Apprends à utiliser poêle chaude, peu de matière grasse et assez d'espace pour dorer au lieu de cuire à l'étuvée.",
+     "p": [
+      "Chauffe d'abord la poêle, puis un peu d'huile : elle doit miroiter avant d'ajouter les légumes.",
+      "Ne surcharge pas la poêle : trop de légumes rendent de l'eau et cuisent à la vapeur au lieu de dorer.",
+      "Coupe des morceaux de même taille, fais sauter de temps en temps et assaisonne en fin de cuisson."
+     ],
+     "q": "Quels légumes préfères-tu bien dorés ?",
+     "c": "Fais sauter un légume en deux fois plutôt que dans une poêle pleine et compare la couleur."
+    },
+    "it": {
+     "t": "Saltare le verdure",
+     "g": "Impara a usare padella calda, poco grasso e spazio sufficiente perché le verdure rosolino invece di lessarsi.",
+     "p": [
+      "Scalda prima la padella, poi un filo d'olio: deve luccicare prima di aggiungere le verdure.",
+      "Non affollare la padella: troppe verdure rilasciano acqua e si lessano invece di dorarsi.",
+      "Taglia pezzi uguali, salta ogni tanto e condisci verso la fine con sale e pepe."
+     ],
+     "q": "Quali verdure ami di più ben rosolate?",
+     "c": "Salta una verdura in due volte invece che in una padella piena e confronta il colore."
+    },
+    "pt": {
+     "t": "Saltear legumes",
+     "g": "Aprende a usar frigideira quente, pouca gordura e espaço suficiente para os legumes alourarem em vez de cozerem a vapor.",
+     "p": [
+      "Aquece primeiro a frigideira, depois um fio de azeite; deve brilhar antes de entrarem os legumes.",
+      "Não enchas demasiado: legumes a mais largam água e cozem a vapor em vez de ficarem dourados.",
+      "Corta pedaços iguais, salteia de vez em quando e tempera no fim com sal e pimenta."
+     ],
+     "q": "Que legumes preferes bem dourados?",
+     "c": "Salteia um legume em duas vezes em vez de numa frigideira cheia e compara a cor."
+    },
+    "pt_BR": {
+     "t": "Salteando legumes",
+     "g": "Aprenda a usar frigideira quente, pouca gordura e espaço para os legumes dourarem em vez de cozinharem no vapor.",
+     "p": [
+      "Aqueça primeiro a frigideira e depois um fio de óleo; ele deve brilhar antes de entrar o legume.",
+      "Não lote a frigideira: legume demais solta água e cozinha no vapor em vez de dourar.",
+      "Corte pedaços iguais, mexa de vez em quando e tempere no fim com sal e pimenta."
+     ],
+     "q": "Quais legumes você mais gosta bem douradinhos?",
+     "c": "Salteie um legume em duas levas em vez de uma frigideira cheia e compare a cor."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steaming vegetables",
+     "g": "Learn to steam vegetables so they stay colourful, crunchy and full of flavour.",
+     "p": [
+      "Put a little water in a pot, bring it to a boil and set the vegetables in a basket above the water.",
+      "Cover with a lid and cook briefly: thin greens take minutes, while carrots or broccoli need a bit longer.",
+      "Check with a knife tip: tender but still slightly crisp is perfect; season right after steaming."
+     ],
+     "q": "Which vegetables do you usually eat steamed?",
+     "c": "Steam some broccoli until bright green and just tender, then finish with lemon and salt."
+    },
+    "de": {
+     "t": "Gemüse dämpfen",
+     "g": "Lerne Gemüse so zu dämpfen, dass es farbig, knackig und aromatisch bleibt.",
+     "p": [
+      "Gib etwas Wasser in einen Topf, bring es zum Kochen und setz das Gemüse im Einsatz über das Wasser.",
+      "Deckel drauf und kurz garen: feines Blattgemüse braucht Minuten, Möhren oder Brokkoli etwas länger.",
+      "Prüf mit der Messerspitze: zart, aber noch leicht knackig ist perfekt; direkt danach würzen."
+     ],
+     "q": "Welches Gemüse isst du meist gedämpft?",
+     "c": "Dämpfe Brokkoli, bis er leuchtend grün und gerade zart ist, und vollende ihn mit Zitrone und Salz."
+    },
+    "es": {
+     "t": "Verduras al vapor",
+     "g": "Aprende a cocinar verduras al vapor para que queden coloridas, crujientes y sabrosas.",
+     "p": [
+      "Pon un poco de agua en una olla, llévala a ebullición y coloca las verduras en una cesta encima.",
+      "Tapa y cocina poco tiempo: las hojas finas tardan minutos; la zanahoria o el brócoli, algo más.",
+      "Prueba con la punta de un cuchillo: tiernas pero aún algo crujientes es lo ideal; sazona al terminar."
+     ],
+     "q": "¿Qué verduras sueles comer al vapor?",
+     "c": "Cuece brócoli al vapor hasta que esté verde intenso y tierno, y termínalo con limón y sal."
+    },
+    "fr": {
+     "t": "Légumes à la vapeur",
+     "g": "Apprends à cuire les légumes à la vapeur pour qu'ils restent colorés, croquants et savoureux.",
+     "p": [
+      "Mets un peu d'eau dans une casserole, porte à ébullition et pose les légumes dans un panier au-dessus.",
+      "Couvre et cuis peu de temps : les feuilles fines en quelques minutes, carottes ou brocoli un peu plus.",
+      "Vérifie avec la pointe d'un couteau : tendre mais encore un peu croquant ; assaisonne juste après."
+     ],
+     "q": "Quels légumes manges-tu souvent à la vapeur ?",
+     "c": "Cuis du brocoli à la vapeur jusqu'à ce qu'il soit vert vif et tendre, puis ajoute citron et sel."
+    },
+    "it": {
+     "t": "Verdure al vapore",
+     "g": "Impara a cuocere le verdure al vapore perché restino colorate, croccanti e saporite.",
+     "p": [
+      "Metti poca acqua in una pentola, portala a bollore e sistema le verdure in un cestello sopra.",
+      "Copri e cuoci per poco: le foglie sottili in pochi minuti, carote o broccoli un po' di più.",
+      "Controlla con la punta di un coltello: tenere ma ancora croccanti; condisci subito dopo."
+     ],
+     "q": "Quali verdure mangi di solito al vapore?",
+     "c": "Cuoci i broccoli al vapore finché sono verde brillante e teneri, poi aggiungi limone e sale."
+    },
+    "pt": {
+     "t": "Legumes ao vapor",
+     "g": "Aprende a cozer legumes ao vapor para ficarem coloridos, estaladiços e saborosos.",
+     "p": [
+      "Põe um pouco de água num tacho, leva a ferver e coloca os legumes num cesto por cima da água.",
+      "Tapa e cozinha pouco tempo: folhas finas em minutos, cenoura ou brócolos um pouco mais.",
+      "Testa com a ponta da faca: macios mas ainda firmes é o ideal; tempera logo a seguir."
+     ],
+     "q": "Que legumes costumas comer ao vapor?",
+     "c": "Coze brócolos ao vapor até ficarem verde vivo e macios, e termina com limão e sal."
+    },
+    "pt_BR": {
+     "t": "Legumes no vapor",
+     "g": "Aprenda a cozinhar legumes no vapor para ficarem coloridos, crocantes e saborosos.",
+     "p": [
+      "Coloque um pouco de água numa panela, leve à fervura e ponha os legumes num cesto acima da água.",
+      "Tampe e cozinhe por pouco tempo: folhas finas em minutos, cenoura ou brócolis um pouco mais.",
+      "Teste com a ponta da faca: macio mas ainda firme é o ideal; tempere logo depois."
+     ],
+     "q": "Quais legumes você costuma comer no vapor?",
+     "c": "Cozinhe brócolis no vapor até ficar verde vivo e macio, e finalize com limão e sal."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roasting vegetables",
+     "g": "Learn to use high oven heat, enough oil and space on the tray for caramelised edges.",
+     "p": [
+      "Preheat the oven to about 200 to 220 °C so vegetables brown instead of slowly drying out.",
+      "Toss pieces in a little oil and salt, and spread them in one layer with space between them.",
+      "Turn them once halfway; they are ready when the edges are golden and the centres are tender."
+     ],
+     "q": "Which vegetable do you think tastes best roasted?",
+     "c": "Roast a tray of mixed vegetables in one spacious layer and turn them once halfway through."
+    },
+    "de": {
+     "t": "Gemüse rösten",
+     "g": "Lerne mit hoher Ofenhitze, genug Öl und Platz auf dem Blech karamellisierte Ränder zu bekommen.",
+     "p": [
+      "Heiz den Ofen auf etwa 200 bis 220 °C vor, damit das Gemüse bräunt, statt langsam auszutrocknen.",
+      "Schwenk die Stücke in etwas Öl und Salz und verteile sie in einer Lage mit Abstand.",
+      "Wende sie einmal nach der Hälfte; fertig sind sie mit goldenen Rändern und weichem Kern."
+     ],
+     "q": "Welches Gemüse schmeckt dir geröstet am besten?",
+     "c": "Röste ein Blech gemischtes Gemüse in einer luftigen Lage und wende es einmal zur Halbzeit."
+    },
+    "es": {
+     "t": "Verduras asadas",
+     "g": "Aprende a usar horno fuerte, suficiente aceite y espacio en la bandeja para bordes caramelizados.",
+     "p": [
+      "Precalienta el horno a unos 200 a 220 °C para que las verduras se doren en lugar de secarse.",
+      "Mezcla los trozos con un poco de aceite y sal, y extiéndelos en una sola capa con espacio entre ellos.",
+      "Dales la vuelta a mitad de cocción; están listas con bordes dorados y centro tierno."
+     ],
+     "q": "¿Qué verdura crees que sabe mejor asada?",
+     "c": "Asa una bandeja de verduras variadas en una capa amplia y dales la vuelta una vez a mitad."
+    },
+    "fr": {
+     "t": "Rôtir des légumes",
+     "g": "Apprends à utiliser un four chaud, assez d'huile et d'espace sur la plaque pour des bords caramélisés.",
+     "p": [
+      "Préchauffe le four vers 200 à 220 °C pour que les légumes dorent au lieu de sécher lentement.",
+      "Enrobe les morceaux d'un peu d'huile et de sel, et étale-les en une seule couche bien espacée.",
+      "Retourne-les une fois à mi-cuisson ; ils sont prêts quand les bords sont dorés et le cœur tendre."
+     ],
+     "q": "Quel légume trouves-tu le meilleur rôti ?",
+     "c": "Rôtis une plaque de légumes variés en une couche aérée et retourne-les une fois à mi-cuisson."
+    },
+    "it": {
+     "t": "Verdure arrosto",
+     "g": "Impara a usare forno caldo, olio quanto basta e spazio sulla teglia per bordi caramellati.",
+     "p": [
+      "Preriscalda il forno a circa 200 a 220 °C, così le verdure dorano invece di seccarsi piano.",
+      "Condisci i pezzi con un filo d'olio e sale, e stendili in un solo strato ben distanziati.",
+      "Girali una volta a metà cottura; sono pronti con bordi dorati e cuore tenero."
+     ],
+     "q": "Quale verdura secondo te è più buona arrosto?",
+     "c": "Arrostisci una teglia di verdure miste in un solo strato arioso e girale una volta a metà."
+    },
+    "pt": {
+     "t": "Legumes assados",
+     "g": "Aprende a usar forno quente, azeite suficiente e espaço no tabuleiro para bordas caramelizadas.",
+     "p": [
+      "Pré-aquece o forno a cerca de 200 a 220 °C para os legumes alourarem em vez de secarem devagar.",
+      "Envolve os pedaços num fio de azeite e sal, e espalha-os numa só camada com espaço entre eles.",
+      "Vira-os uma vez a meio; estão prontos com bordas douradas e interior macio."
+     ],
+     "q": "Que legume achas que fica melhor assado?",
+     "c": "Assa um tabuleiro de legumes variados numa camada espaçosa e vira-os uma vez a meio."
+    },
+    "pt_BR": {
+     "t": "Legumes assados",
+     "g": "Aprenda a usar forno bem quente, óleo suficiente e espaço na assadeira para bordas caramelizadas.",
+     "p": [
+      "Preaqueça o forno a uns 200 a 220 °C para os legumes dourarem em vez de secarem devagar.",
+      "Misture os pedaços com um fio de azeite e sal, e espalhe numa camada só com espaço entre eles.",
+      "Vire uma vez na metade; estão prontos com bordas douradas e miolo macio."
+     ],
+     "q": "Qual legume você acha que fica melhor assado?",
+     "c": "Asse uma assadeira de legumes variados numa camada espaçosa e vire uma vez na metade."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a simple salad",
+     "g": "Learn to wash and dry greens and build a salad with crunch, colour and balance.",
+     "p": [
+      "Wash leaves in cold water, then dry them well; wet leaves dilute dressing and turn soggy fast.",
+      "Combine something leafy, something crunchy, something colourful and maybe a protein or grain.",
+      "Dress the salad just before serving and toss gently so every leaf is lightly coated."
+     ],
+     "q": "What do you love to put in a salad?",
+     "c": "Build a salad with one leafy, one crunchy and one colourful ingredient, dried well and dressed last."
+    },
+    "de": {
+     "t": "Einen einfachen Salat machen",
+     "g": "Lerne Blattsalat zu waschen und zu trocknen und einen Salat mit Biss, Farbe und Balance zu bauen.",
+     "p": [
+      "Wasch die Blätter in kaltem Wasser und trockne sie gut; nasse Blätter verwässern das Dressing.",
+      "Kombiniere etwas Blättriges, etwas Knackiges, etwas Farbiges und vielleicht Protein oder Getreide.",
+      "Mach das Dressing erst kurz vor dem Servieren dran und misch sanft, damit jedes Blatt leicht benetzt ist."
+     ],
+     "q": "Was gibst du am liebsten in einen Salat?",
+     "c": "Bau einen Salat aus einer Blatt-, einer knackigen und einer farbigen Zutat, gut getrocknet und zuletzt angemacht."
+    },
+    "es": {
+     "t": "Una ensalada sencilla",
+     "g": "Aprende a lavar y secar hojas y a montar una ensalada con textura, color y equilibrio.",
+     "p": [
+      "Lava las hojas en agua fría y sécalas bien; las hojas mojadas aguan el aliño y se ablandan rápido.",
+      "Combina algo de hoja, algo crujiente, algo colorido y quizá una proteína o un cereal.",
+      "Aliña justo antes de servir y mezcla con suavidad para que cada hoja quede ligeramente cubierta."
+     ],
+     "q": "¿Qué te encanta poner en una ensalada?",
+     "c": "Monta una ensalada con un ingrediente de hoja, uno crujiente y uno colorido, bien seca y aliñada al final."
+    },
+    "fr": {
+     "t": "Une salade simple",
+     "g": "Apprends à laver et sécher la salade et à composer un plat croquant, coloré et équilibré.",
+     "p": [
+      "Lave les feuilles à l'eau froide puis sèche-les bien : des feuilles mouillées diluent la vinaigrette.",
+      "Associe quelque chose de feuillu, de croquant, de coloré, et peut-être une protéine ou une céréale.",
+      "Assaisonne juste avant de servir et mélange délicatement pour enrober chaque feuille."
+     ],
+     "q": "Qu'aimes-tu mettre dans une salade ?",
+     "c": "Compose une salade avec un ingrédient feuillu, un croquant et un coloré, bien séchée et assaisonnée à la fin."
+    },
+    "it": {
+     "t": "Un'insalata semplice",
+     "g": "Impara a lavare e asciugare l'insalata e a comporre un piatto croccante, colorato ed equilibrato.",
+     "p": [
+      "Lava le foglie in acqua fredda e asciugale bene: le foglie bagnate annacquano il condimento.",
+      "Abbina qualcosa a foglia, qualcosa di croccante, qualcosa di colorato e magari proteine o cereali.",
+      "Condisci subito prima di servire e mescola piano perché ogni foglia sia appena velata."
+     ],
+     "q": "Cosa ami mettere in un'insalata?",
+     "c": "Componi un'insalata con un ingrediente a foglia, uno croccante e uno colorato, ben asciutta e condita alla fine."
+    },
+    "pt": {
+     "t": "Uma salada simples",
+     "g": "Aprende a lavar e secar folhas e a montar uma salada com crocância, cor e equilíbrio.",
+     "p": [
+      "Lava as folhas em água fria e seca-as bem; folhas molhadas diluem o tempero e murcham depressa.",
+      "Junta algo de folha, algo estaladiço, algo colorido e talvez uma proteína ou cereal.",
+      "Tempera mesmo antes de servir e envolve com cuidado para cada folha ficar levemente coberta."
+     ],
+     "q": "O que adoras pôr numa salada?",
+     "c": "Monta uma salada com um ingrediente de folha, um estaladiço e um colorido, bem seca e temperada no fim."
+    },
+    "pt_BR": {
+     "t": "Uma salada simples",
+     "g": "Aprenda a lavar e secar folhas e montar uma salada com crocância, cor e equilíbrio.",
+     "p": [
+      "Lave as folhas em água fria e seque bem; folha molhada dilui o molho e murcha rápido.",
+      "Junte algo de folha, algo crocante, algo colorido e talvez uma proteína ou grão.",
+      "Tempere só na hora de servir e misture com cuidado para cada folha ficar levemente coberta."
+     ],
+     "q": "O que você adora colocar numa salada?",
+     "c": "Monte uma salada com um ingrediente de folha, um crocante e um colorido, bem seca e temperada no fim."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A basic vinaigrette",
+     "g": "Learn the classic oil to vinegar ratio and how to shake or whisk a dressing together.",
+     "p": [
+      "The classic ratio is about three parts oil to one part vinegar or lemon juice; adjust to taste.",
+      "Add salt, pepper and a little mustard, which helps oil and vinegar blend and stay together.",
+      "Shake in a closed jar or whisk in a bowl, then taste on a leaf and adjust before dressing the salad."
+     ],
+     "q": "Do you prefer creamy dressings or light, tangy ones?",
+     "c": "Shake a vinaigrette in a jar with oil, vinegar, mustard, salt and pepper, and taste it on a leaf."
+    },
+    "de": {
+     "t": "Eine einfache Vinaigrette",
+     "g": "Lerne das klassische Verhältnis von Öl zu Essig und wie du ein Dressing schüttelst oder rührst.",
+     "p": [
+      "Klassisch sind etwa drei Teile Öl auf einen Teil Essig oder Zitronensaft; nach Geschmack anpassen.",
+      "Gib Salz, Pfeffer und etwas Senf dazu; Senf hilft, dass sich Öl und Essig verbinden.",
+      "Schüttle alles im geschlossenen Glas oder rühr es in einer Schüssel und probier es auf einem Blatt."
+     ],
+     "q": "Magst du lieber cremige oder leichte, säuerliche Dressings?",
+     "c": "Schüttle eine Vinaigrette aus Öl, Essig, Senf, Salz und Pfeffer im Glas und probier sie auf einem Blatt."
+    },
+    "es": {
+     "t": "Una vinagreta básica",
+     "g": "Aprende la proporción clásica de aceite y vinagre y cómo agitar o batir un aliño.",
+     "p": [
+      "La proporción clásica es unas tres partes de aceite por una de vinagre o limón; ajústala a tu gusto.",
+      "Añade sal, pimienta y un poco de mostaza, que ayuda a que el aceite y el vinagre se unan.",
+      "Agita en un tarro cerrado o bate en un bol, prueba en una hoja y ajusta antes de aliñar."
+     ],
+     "q": "¿Prefieres aliños cremosos o ligeros y ácidos?",
+     "c": "Agita una vinagreta en un tarro con aceite, vinagre, mostaza, sal y pimienta, y pruébala en una hoja."
+    },
+    "fr": {
+     "t": "Une vinaigrette de base",
+     "g": "Apprends la proportion classique huile et vinaigre et comment secouer ou fouetter une sauce.",
+     "p": [
+      "La règle classique : environ trois parts d'huile pour une de vinaigre ou de citron, à ajuster selon ton goût.",
+      "Ajoute sel, poivre et un peu de moutarde, qui aide l'huile et le vinaigre à se lier.",
+      "Secoue dans un bocal fermé ou fouette dans un bol, goûte sur une feuille et ajuste avant d'assaisonner."
+     ],
+     "q": "Préfères-tu les sauces crémeuses ou légères et acidulées ?",
+     "c": "Secoue une vinaigrette en bocal avec huile, vinaigre, moutarde, sel et poivre, puis goûte-la sur une feuille."
+    },
+    "it": {
+     "t": "Una vinaigrette di base",
+     "g": "Impara il rapporto classico tra olio e aceto e come agitare o sbattere un condimento.",
+     "p": [
+      "Il rapporto classico è circa tre parti d'olio e una di aceto o limone; regola secondo il gusto.",
+      "Aggiungi sale, pepe e un po' di senape, che aiuta olio e aceto a legarsi.",
+      "Agita in un barattolo chiuso o sbatti in una ciotola, assaggia su una foglia e correggi prima di condire."
+     ],
+     "q": "Preferisci condimenti cremosi o leggeri e aciduli?",
+     "c": "Agita una vinaigrette in un barattolo con olio, aceto, senape, sale e pepe, e assaggiala su una foglia."
+    },
+    "pt": {
+     "t": "Um vinagrete básico",
+     "g": "Aprende a proporção clássica de azeite e vinagre e como agitar ou bater um molho.",
+     "p": [
+      "A proporção clássica é cerca de três partes de azeite para uma de vinagre ou limão; ajusta a gosto.",
+      "Junta sal, pimenta e um pouco de mostarda, que ajuda o azeite e o vinagre a ligar.",
+      "Agita num frasco fechado ou bate numa taça, prova numa folha e ajusta antes de temperar."
+     ],
+     "q": "Preferes molhos cremosos ou leves e ácidos?",
+     "c": "Agita um molho num frasco com azeite, vinagre, mostarda, sal e pimenta, e prova-o numa folha."
+    },
+    "pt_BR": {
+     "t": "Um molho vinagrete básico",
+     "g": "Aprenda a proporção clássica de azeite e vinagre e como chacoalhar ou bater um molho.",
+     "p": [
+      "A proporção clássica é umas três partes de azeite para uma de vinagre ou limão; ajuste a gosto.",
+      "Acrescente sal, pimenta e um pouco de mostarda, que ajuda o azeite e o vinagre a se unirem.",
+      "Chacoalhe num pote fechado ou bata numa tigela, prove numa folha e ajuste antes de temperar."
+     ],
+     "q": "Você prefere molhos cremosos ou leves e azedinhos?",
+     "c": "Chacoalhe um molho num pote com azeite, vinagre, mostarda, sal e pimenta, e prove numa folha."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple tomato sauce",
+     "g": "Learn a classic sauce from tinned tomatoes, garlic and olive oil.",
+     "p": [
+      "Warm olive oil gently with sliced garlic until fragrant and just golden, never brown or burnt.",
+      "Add tinned tomatoes, a pinch of salt and simmer for about 15 to 20 minutes, stirring now and then.",
+      "Taste and adjust: a little salt, pepper, basil, or a pinch of sugar if the tomatoes are very sharp."
+     ],
+     "q": "What would you serve with a homemade tomato sauce?",
+     "c": "Make a small pot of tomato sauce and toss it with pasta or spoon it over toast."
+    },
+    "de": {
+     "t": "Einfache Tomatensauce",
+     "g": "Lerne eine klassische Sauce aus Dosentomaten, Knoblauch und Olivenöl.",
+     "p": [
+      "Erwärm Olivenöl sanft mit Knoblauchscheiben, bis es duftet und leicht golden ist, nie braun.",
+      "Gib Dosentomaten und eine Prise Salz dazu und lass alles 15 bis 20 Minuten köcheln, ab und zu rühren.",
+      "Abschmecken: etwas Salz, Pfeffer, Basilikum oder eine Prise Zucker, wenn die Tomaten sehr sauer sind."
+     ],
+     "q": "Was würdest du zu selbst gemachter Tomatensauce servieren?",
+     "c": "Koch einen kleinen Topf Tomatensauce und misch sie mit Pasta oder gib sie auf geröstetes Brot."
+    },
+    "es": {
+     "t": "Salsa de tomate sencilla",
+     "g": "Aprende una salsa clásica con tomate en lata, ajo y aceite de oliva.",
+     "p": [
+      "Calienta el aceite suave con ajo laminado hasta que huela y apenas se dore, nunca tostado.",
+      "Añade el tomate en lata y una pizca de sal, y cuece a fuego suave unos 15 a 20 minutos, removiendo.",
+      "Prueba y ajusta: sal, pimienta, albahaca, o una pizca de azúcar si el tomate está muy ácido."
+     ],
+     "q": "¿Con qué servirías una salsa de tomate casera?",
+     "c": "Prepara un cazo de salsa de tomate y mézclala con pasta o úntala sobre una tostada."
+    },
+    "fr": {
+     "t": "Une sauce tomate simple",
+     "g": "Apprends une sauce classique avec tomates en conserve, ail et huile d'olive.",
+     "p": [
+      "Chauffe doucement l'huile d'olive avec l'ail émincé jusqu'à ce qu'il embaume et blondisse, sans brunir.",
+      "Ajoute les tomates en conserve et une pincée de sel, puis laisse mijoter 15 à 20 minutes en remuant.",
+      "Goûte et ajuste : sel, poivre, basilic, ou une pincée de sucre si les tomates sont très acides."
+     ],
+     "q": "Avec quoi servirais-tu une sauce tomate maison ?",
+     "c": "Prépare une petite casserole de sauce tomate et mélange-la à des pâtes ou étale-la sur du pain grillé."
+    },
+    "it": {
+     "t": "Salsa di pomodoro semplice",
+     "g": "Impara una salsa classica con pomodori pelati, aglio e olio d'oliva.",
+     "p": [
+      "Scalda piano l'olio con l'aglio a fettine finché profuma ed è appena dorato, mai bruciato.",
+      "Aggiungi i pelati e un pizzico di sale e fai sobbollire 15 o 20 minuti, mescolando ogni tanto.",
+      "Assaggia e correggi: sale, pepe, basilico, o un pizzico di zucchero se il pomodoro è molto acido."
+     ],
+     "q": "Con cosa serviresti una salsa di pomodoro fatta in casa?",
+     "c": "Prepara un pentolino di salsa di pomodoro e condisci la pasta o spalmala sul pane tostato."
+    },
+    "pt": {
+     "t": "Molho de tomate simples",
+     "g": "Aprende um molho clássico com tomate em lata, alho e azeite.",
+     "p": [
+      "Aquece o azeite em lume brando com alho laminado até cheirar bem e ficar levemente dourado, nunca queimado.",
+      "Junta o tomate em lata e uma pitada de sal e deixa cozinhar em lume brando 15 a 20 minutos, mexendo.",
+      "Prova e ajusta: sal, pimenta, manjericão, ou uma pitada de açúcar se o tomate estiver muito ácido."
+     ],
+     "q": "Com o que servirias um molho de tomate caseiro?",
+     "c": "Faz um pequeno tacho de molho de tomate e envolve-o em massa ou põe-no sobre uma torrada."
+    },
+    "pt_BR": {
+     "t": "Molho de tomate simples",
+     "g": "Aprenda um molho clássico com tomate pelado em lata, alho e azeite.",
+     "p": [
+      "Aqueça o azeite em fogo baixo com alho fatiado até perfumar e dourar de leve, nunca queimar.",
+      "Junte o tomate e uma pitada de sal e cozinhe em fogo brando por 15 a 20 minutos, mexendo às vezes.",
+      "Prove e ajuste: sal, pimenta, manjericão, ou uma pitada de açúcar se o tomate estiver muito ácido."
+     ],
+     "q": "Com o que você serviria um molho de tomate caseiro?",
+     "c": "Faça uma panelinha de molho de tomate e misture com macarrão ou coloque sobre uma torrada."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sandwiches and wraps",
+     "g": "Learn to build tasty sandwiches and wraps with balance, texture and a good spread.",
+     "p": [
+      "Start with a spread such as butter, hummus or mayo; it adds flavour and stops bread going soggy.",
+      "Layer a main filling, something fresh and crunchy, and a touch of acid like pickles or mustard.",
+      "Toast the bread or warm the wrap for extra flavour, and keep wet ingredients in the middle."
+     ],
+     "q": "What is your all-time favourite sandwich?",
+     "c": "Build a sandwich with a spread, a main filling, something crunchy and something tangy."
+    },
+    "de": {
+     "t": "Sandwiches und Wraps",
+     "g": "Lerne leckere Sandwiches und Wraps mit Balance, Textur und einem guten Aufstrich zu bauen.",
+     "p": [
+      "Beginn mit einem Aufstrich wie Butter, Hummus oder Mayo; er gibt Geschmack und schützt das Brot.",
+      "Schichte eine Hauptfüllung, etwas Frisches, Knackiges und etwas Säure wie Gurken oder Senf.",
+      "Röste das Brot oder wärm den Wrap für mehr Aroma und leg feuchte Zutaten in die Mitte."
+     ],
+     "q": "Was ist dein absolutes Lieblingssandwich?",
+     "c": "Bau ein Sandwich mit Aufstrich, Hauptfüllung, etwas Knackigem und etwas Säuerlichem."
+    },
+    "es": {
+     "t": "Sándwiches y wraps",
+     "g": "Aprende a montar sándwiches y wraps sabrosos con equilibrio, textura y una buena base untable.",
+     "p": [
+      "Empieza con algo untable como mantequilla, hummus o mayonesa; da sabor y evita que el pan se moje.",
+      "Pon un relleno principal, algo fresco y crujiente, y un toque ácido como pepinillos o mostaza.",
+      "Tuesta el pan o calienta el wrap para más sabor, y deja los ingredientes húmedos en el centro."
+     ],
+     "q": "¿Cuál es tu sándwich favorito de siempre?",
+     "c": "Monta un sándwich con algo untable, un relleno principal, algo crujiente y algo ácido."
+    },
+    "fr": {
+     "t": "Sandwichs et wraps",
+     "g": "Apprends à composer des sandwichs et wraps savoureux, équilibrés et pleins de textures.",
+     "p": [
+      "Commence par une base à tartiner comme beurre, houmous ou mayo : elle donne du goût et protège le pain.",
+      "Ajoute une garniture principale, quelque chose de frais et croquant, et une touche acide comme cornichons ou moutarde.",
+      "Toaste le pain ou réchauffe le wrap pour plus de goût, et garde les ingrédients humides au centre."
+     ],
+     "q": "Quel est ton sandwich préféré de tous les temps ?",
+     "c": "Compose un sandwich avec une base à tartiner, une garniture, un élément croquant et un élément acidulé."
+    },
+    "it": {
+     "t": "Panini e wrap",
+     "g": "Impara a comporre panini e wrap gustosi con equilibrio, consistenze e una buona crema spalmabile.",
+     "p": [
+      "Parti da una crema come burro, hummus o maionese: dà sapore e impedisce al pane di inzupparsi.",
+      "Aggiungi un ripieno principale, qualcosa di fresco e croccante e un tocco acido come sottaceti o senape.",
+      "Tosta il pane o scalda il wrap per più sapore, e tieni gli ingredienti umidi al centro."
+     ],
+     "q": "Qual è il tuo panino preferito di sempre?",
+     "c": "Componi un panino con una crema, un ripieno principale, qualcosa di croccante e qualcosa di acidulo."
+    },
+    "pt": {
+     "t": "Sandes e wraps",
+     "g": "Aprende a montar sandes e wraps saborosos com equilíbrio, textura e uma boa base para barrar.",
+     "p": [
+      "Começa com algo para barrar como manteiga, húmus ou maionese; dá sabor e evita o pão encharcado.",
+      "Junta um recheio principal, algo fresco e estaladiço, e um toque ácido como pickles ou mostarda.",
+      "Torra o pão ou aquece o wrap para mais sabor, e deixa os ingredientes húmidos no meio."
+     ],
+     "q": "Qual é a tua sandes preferida de sempre?",
+     "c": "Monta uma sandes com algo para barrar, um recheio principal, algo estaladiço e algo ácido."
+    },
+    "pt_BR": {
+     "t": "Sanduíches e wraps",
+     "g": "Aprenda a montar sanduíches e wraps gostosos com equilíbrio, textura e uma boa pasta.",
+     "p": [
+      "Comece com uma pasta como manteiga, homus ou maionese; dá sabor e evita que o pão fique molhado.",
+      "Junte um recheio principal, algo fresco e crocante, e um toque ácido como picles ou mostarda.",
+      "Toste o pão ou aqueça o wrap para mais sabor, e deixe os ingredientes úmidos no meio."
+     ],
+     "q": "Qual é seu sanduíche favorito de todos os tempos?",
+     "c": "Monte um sanduíche com uma pasta, um recheio principal, algo crocante e algo azedinho."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beans and lentils for beginners",
+     "g": "Learn tinned versus dried pulses, rinsing them and quick dishes built on beans and lentils.",
+     "p": [
+      "Tinned beans are ready to use; rinse them in a sieve to remove the starchy liquid and extra salt.",
+      "Dried beans need soaking and longer cooking; red lentils need no soaking and cook in about 15 minutes.",
+      "Pulses love garlic, onion, spices and acid: think bean salads, lentil soup or a quick chickpea stew."
+     ],
+     "q": "Which beans or lentils do you eat most often?",
+     "c": "Rinse a tin of chickpeas or beans and turn them into a quick salad with onion, lemon and herbs."
+    },
+    "de": {
+     "t": "Bohnen und Linsen für Anfänger",
+     "g": "Lerne Hülsenfrüchte aus der Dose und getrocknet, das Abspülen und schnelle Gerichte daraus.",
+     "p": [
+      "Dosenbohnen sind sofort nutzbar; spül sie im Sieb ab, um Stärkeflüssigkeit und Salz zu entfernen.",
+      "Getrocknete Bohnen brauchen Einweichen und lange Garzeit; rote Linsen garen ohne Einweichen in etwa 15 Minuten.",
+      "Hülsenfrüchte lieben Knoblauch, Zwiebel, Gewürze und Säure: Bohnensalat, Linsensuppe, Kichererbseneintopf."
+     ],
+     "q": "Welche Bohnen oder Linsen isst du am häufigsten?",
+     "c": "Spül eine Dose Kichererbsen oder Bohnen ab und mach einen schnellen Salat mit Zwiebel, Zitrone und Kräutern."
+    },
+    "es": {
+     "t": "Legumbres para principiantes",
+     "g": "Aprende la diferencia entre legumbres en bote y secas, a enjuagarlas y platos rápidos con ellas.",
+     "p": [
+      "Las legumbres en bote ya están listas; enjuágalas en un colador para quitar el líquido y la sal extra.",
+      "Las secas necesitan remojo y cocción larga; las lentejas rojas no se remojan y se cuecen en unos 15 minutos.",
+      "Les encantan el ajo, la cebolla, las especias y la acidez: ensalada de alubias, sopa de lentejas o guiso de garbanzos."
+     ],
+     "q": "¿Qué legumbres comes más a menudo?",
+     "c": "Enjuaga un bote de garbanzos o alubias y prepara una ensalada rápida con cebolla, limón y hierbas."
+    },
+    "fr": {
+     "t": "Haricots et lentilles pour débuter",
+     "g": "Apprends les légumineuses en conserve ou sèches, le rinçage et des plats rapides à base de pulses.",
+     "p": [
+      "Les haricots en conserve sont prêts ; rince-les dans une passoire pour enlever le jus d'amidon et le sel.",
+      "Les haricots secs demandent trempage et longue cuisson ; les lentilles corail cuisent sans trempage en 15 minutes environ.",
+      "Elles adorent ail, oignon, épices et acidité : salade de haricots, soupe de lentilles ou ragoût de pois chiches."
+     ],
+     "q": "Quelles légumineuses manges-tu le plus souvent ?",
+     "c": "Rince une boîte de pois chiches ou de haricots et fais-en une salade rapide avec oignon, citron et herbes."
+    },
+    "it": {
+     "t": "Fagioli e lenticchie per iniziare",
+     "g": "Impara la differenza tra legumi in scatola e secchi, come sciacquarli e piatti veloci con i legumi.",
+     "p": [
+      "I legumi in scatola sono pronti; sciacquali in un colino per togliere il liquido amidaceo e il sale in più.",
+      "Quelli secchi vogliono ammollo e cottura lunga; le lenticchie rosse non serve ammollarle e cuociono in circa 15 minuti.",
+      "Amano aglio, cipolla, spezie e acidità: insalata di fagioli, zuppa di lenticchie o ceci in umido veloci."
+     ],
+     "q": "Quali legumi mangi più spesso?",
+     "c": "Sciacqua una scatola di ceci o fagioli e preparaci un'insalata veloce con cipolla, limone ed erbe."
+    },
+    "pt": {
+     "t": "Feijão e lentilhas para principiantes",
+     "g": "Aprende a diferença entre leguminosas em lata e secas, como passá-las por água e pratos rápidos com elas.",
+     "p": [
+      "As leguminosas em lata estão prontas; passa-as por água num passador para tirar o líquido e o sal a mais.",
+      "As secas precisam de demolha e cozedura longa; as lentilhas vermelhas não se demolham e cozem em cerca de 15 minutos.",
+      "Adoram alho, cebola, especiarias e acidez: salada de feijão, sopa de lentilhas ou um estufado de grão."
+     ],
+     "q": "Que leguminosas comes mais vezes?",
+     "c": "Passa por água uma lata de grão ou feijão e faz uma salada rápida com cebola, limão e ervas."
+    },
+    "pt_BR": {
+     "t": "Feijão e lentilha para iniciantes",
+     "g": "Aprenda a diferença entre grãos em lata e secos, como enxaguar e pratos rápidos com eles.",
+     "p": [
+      "Os grãos em lata já estão prontos; enxágue numa peneira para tirar o caldo e o excesso de sal.",
+      "Os secos precisam de molho e cozimento longo; a lentilha vermelha não precisa de molho e cozinha em uns 15 minutos.",
+      "Combinam com alho, cebola, especiarias e acidez: salada de feijão, sopa de lentilha ou grão-de-bico ensopado."
+     ],
+     "q": "Quais grãos você come com mais frequência?",
+     "c": "Enxágue uma lata de grão-de-bico ou feijão e faça uma salada rápida com cebola, limão e ervas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple vegetable soup",
+     "g": "Learn to build a soup from softened aromatics to the final seasoning.",
+     "p": [
+      "Start by gently softening onion, carrot and celery in a little oil until sweet, not browned.",
+      "Add chopped vegetables and stock or water, bring to a boil, then simmer until everything is tender.",
+      "Season at the end with salt, pepper and a squeeze of lemon; blend it smooth or leave it chunky."
+     ],
+     "q": "What is your favourite soup on a cold day?",
+     "c": "Make a small pot of vegetable soup, softening the aromatics first and seasoning only at the end."
+    },
+    "de": {
+     "t": "Eine einfache Gemüsesuppe",
+     "g": "Lerne eine Suppe von sanft gedünsteten Aromaten bis zum letzten Abschmecken aufzubauen.",
+     "p": [
+      "Dünste zuerst Zwiebel, Möhre und Sellerie sanft in etwas Öl, bis sie süßlich sind, nicht braun.",
+      "Gib gehacktes Gemüse und Brühe oder Wasser dazu, aufkochen und dann köcheln, bis alles weich ist.",
+      "Würz am Ende mit Salz, Pfeffer und Zitrone; püriere die Suppe oder lass sie stückig."
+     ],
+     "q": "Was ist deine Lieblingssuppe an einem kalten Tag?",
+     "c": "Koch einen kleinen Topf Gemüsesuppe, dünste zuerst die Aromaten und schmeck erst am Ende ab."
+    },
+    "es": {
+     "t": "Una sopa de verduras sencilla",
+     "g": "Aprende a hacer una sopa desde el sofrito suave hasta el sazonado final.",
+     "p": [
+      "Empieza pochando suavemente cebolla, zanahoria y apio en un poco de aceite hasta que estén dulces, sin dorar.",
+      "Añade las verduras troceadas y caldo o agua, lleva a ebullición y cuece a fuego suave hasta que esté todo tierno.",
+      "Sazona al final con sal, pimienta y un chorrito de limón; tritúrala o déjala con tropezones."
+     ],
+     "q": "¿Cuál es tu sopa favorita en un día frío?",
+     "c": "Prepara una olla pequeña de sopa de verduras, pochando primero los aromáticos y sazonando al final."
+    },
+    "fr": {
+     "t": "Une soupe de légumes simple",
+     "g": "Apprends à construire une soupe, des aromates fondus jusqu'à l'assaisonnement final.",
+     "p": [
+      "Commence par faire suer doucement oignon, carotte et céleri dans un peu d'huile, sans coloration.",
+      "Ajoute les légumes coupés et du bouillon ou de l'eau, porte à ébullition, puis laisse mijoter jusqu'à tendreté.",
+      "Assaisonne à la fin avec sel, poivre et un trait de citron ; mixe-la ou garde des morceaux."
+     ],
+     "q": "Quelle est ta soupe préférée par une journée froide ?",
+     "c": "Prépare une petite marmite de soupe de légumes, fais suer les aromates d'abord et assaisonne à la fin."
+    },
+    "it": {
+     "t": "Una zuppa di verdure semplice",
+     "g": "Impara a costruire una zuppa dal soffritto delicato fino all'ultima regolata di sale.",
+     "p": [
+      "Inizia facendo appassire piano cipolla, carota e sedano in un filo d'olio, finché sono dolci, non rosolati.",
+      "Aggiungi verdure a pezzi e brodo o acqua, porta a bollore e fai sobbollire finché tutto è tenero.",
+      "Regola alla fine con sale, pepe e una spruzzata di limone; frullala o lasciala a pezzi."
+     ],
+     "q": "Qual è la tua zuppa preferita in una giornata fredda?",
+     "c": "Prepara una pentola piccola di zuppa di verdure, con il soffritto prima e il sale solo alla fine."
+    },
+    "pt": {
+     "t": "Uma sopa de legumes simples",
+     "g": "Aprende a fazer uma sopa desde o refogado suave até ao tempero final.",
+     "p": [
+      "Começa por alourar devagar cebola, cenoura e aipo num fio de azeite até ficarem doces, sem dourar.",
+      "Junta os legumes cortados e caldo ou água, leva a ferver e depois deixa cozer em lume brando até tudo estar macio.",
+      "Tempera no fim com sal, pimenta e um pouco de limão; tritura ou deixa com pedaços."
+     ],
+     "q": "Qual é a tua sopa preferida num dia frio?",
+     "c": "Faz um tacho pequeno de sopa de legumes, refogando primeiro os aromáticos e temperando só no fim."
+    },
+    "pt_BR": {
+     "t": "Uma sopa de legumes simples",
+     "g": "Aprenda a montar uma sopa do refogado suave até o tempero final.",
+     "p": [
+      "Comece refogando devagar cebola, cenoura e salsão num fio de óleo até ficarem adocicados, sem dourar.",
+      "Junte os legumes picados e caldo ou água, leve à fervura e cozinhe em fogo brando até tudo ficar macio.",
+      "Tempere no fim com sal, pimenta e um pouco de limão; bata no liquidificador ou deixe com pedaços."
+     ],
+     "q": "Qual é sua sopa favorita num dia frio?",
+     "c": "Faça uma panelinha de sopa de legumes, refogando os aromáticos antes e temperando só no fim."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at the basics you learned and put them together in a simple three-dish meal.",
+     "p": [
+      "You learned hygiene, storage, knife safety, heat control, eggs, pasta, rice and vegetables.",
+      "You also practised seasoning with salt and acid, simple sauces, salads, pulses and soup.",
+      "Combining dishes is about timing: start what takes longest first and finish the quickest last."
+     ],
+     "q": "Which skill from this month are you most proud of?",
+     "c": "Cook a simple three-dish meal, such as soup, a salad with vinaigrette and pasta with tomato sauce."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Blick auf die Grundlagen zurück und kombiniere sie zu einem einfachen Menü aus drei Gerichten.",
+     "p": [
+      "Du hast Hygiene, Lagerung, sicheres Schneiden, Hitze, Eier, Pasta, Reis und Gemüse gelernt.",
+      "Dazu hast du mit Salz und Säure gewürzt, einfache Saucen, Salate, Hülsenfrüchte und Suppe geübt.",
+      "Beim Kombinieren zählt das Timing: Beginn mit dem, was am längsten dauert, das Schnellste kommt zuletzt."
+     ],
+     "q": "Auf welche Fähigkeit aus diesem Monat bist du am stolzesten?",
+     "c": "Koch ein einfaches Menü aus drei Gerichten, etwa Suppe, Salat mit Vinaigrette und Pasta mit Tomatensauce."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa lo básico que aprendiste y combínalo en un menú sencillo de tres platos.",
+     "p": [
+      "Aprendiste higiene, conservación, seguridad con el cuchillo, control del fuego, huevos, pasta, arroz y verduras.",
+      "También practicaste sazonar con sal y acidez, salsas sencillas, ensaladas, legumbres y sopa.",
+      "Combinar platos es cuestión de tiempos: empieza por lo que más tarda y termina con lo más rápido."
+     ],
+     "q": "¿De qué habilidad de este mes estás más orgulloso?",
+     "c": "Cocina un menú de tres platos, por ejemplo sopa, ensalada con vinagreta y pasta con salsa de tomate."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Reviens sur les bases apprises et assemble-les en un repas simple de trois plats.",
+     "p": [
+      "Tu as appris l'hygiène, la conservation, le couteau en sécurité, la chaleur, les œufs, les pâtes, le riz et les légumes.",
+      "Tu as aussi pratiqué l'assaisonnement avec sel et acidité, les sauces simples, salades, légumineuses et soupes.",
+      "Combiner des plats, c'est une question de timing : commence par le plus long, termine par le plus rapide."
+     ],
+     "q": "De quelle compétence de ce mois es-tu le plus fier ?",
+     "c": "Cuisine un repas de trois plats, par exemple soupe, salade vinaigrette et pâtes à la sauce tomate."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassa le basi imparate e uniscile in un pasto semplice di tre piatti.",
+     "p": [
+      "Hai imparato igiene, conservazione, coltello in sicurezza, calore, uova, pasta, riso e verdure.",
+      "Hai anche praticato il condimento con sale e acidità, salse semplici, insalate, legumi e zuppe.",
+      "Unire più piatti è questione di tempi: inizia da ciò che richiede di più e finisci con il più veloce."
+     ],
+     "q": "Di quale abilità di questo mese sei più orgoglioso?",
+     "c": "Cucina un pasto di tre piatti, per esempio zuppa, insalata con vinaigrette e pasta al pomodoro."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê o básico que aprendeste e junta tudo numa refeição simples de três pratos.",
+     "p": [
+      "Aprendeste higiene, conservação, segurança com a faca, controlo do lume, ovos, massa, arroz e legumes.",
+      "Também praticaste temperar com sal e acidez, molhos simples, saladas, leguminosas e sopa.",
+      "Juntar pratos é uma questão de tempos: começa pelo que demora mais e termina com o mais rápido."
+     ],
+     "q": "De que competência deste mês estás mais orgulhoso?",
+     "c": "Cozinha uma refeição de três pratos, como sopa, salada com molho e massa com molho de tomate."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Relembre o básico que aprendeu e junte tudo numa refeição simples de três pratos.",
+     "p": [
+      "Você aprendeu higiene, armazenamento, segurança com a faca, controle do fogo, ovos, macarrão, arroz e legumes.",
+      "Também praticou temperar com sal e acidez, molhos simples, saladas, grãos e sopa.",
+      "Juntar pratos é questão de tempo: comece pelo que demora mais e termine com o mais rápido."
+     ],
+     "q": "De qual habilidade deste mês você mais se orgulha?",
+     "c": "Cozinhe uma refeição de três pratos, como sopa, salada com vinagrete e macarrão com molho de tomate."
+    }
+   }
+  }
+ ]
+}

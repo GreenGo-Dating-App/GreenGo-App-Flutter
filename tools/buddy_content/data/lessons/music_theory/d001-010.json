@@ -1,0 +1,835 @@
+{
+ "topic": "music_theory",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to music theory",
+     "g": "See music theory as a friendly language that explains why music sounds the way it does.",
+     "p": [
+      "Music theory is not a set of strict rules, it describes what our ears already enjoy.",
+      "Our path goes from notes and rhythm to scales, chords, harmony and writing your own tunes.",
+      "One small lesson a day is enough, and you can learn it even without an instrument."
+     ],
+     "q": "Which song always makes you want to know how it works?",
+     "c": "Play your favourite song and say out loud one thing you notice about it, like fast, calm or catchy."
+    },
+    "de": {
+     "t": "Willkommen in der Musiktheorie",
+     "g": "Musiktheorie als freundliche Sprache sehen, die erklärt, warum Musik so klingt, wie sie klingt.",
+     "p": [
+      "Musiktheorie ist kein strenges Regelwerk, sie beschreibt, was unsere Ohren ohnehin mögen.",
+      "Unser Weg führt von Tönen und Rhythmus über Tonleitern und Akkorde bis zu eigenen Melodien.",
+      "Eine kleine Lektion am Tag reicht, und du brauchst dafür nicht einmal ein Instrument."
+     ],
+     "q": "Bei welchem Song würdest du am liebsten wissen, wie er funktioniert?",
+     "c": "Hör dein Lieblingslied und sag laut eine Sache, die dir auffällt, etwa schnell, ruhig oder eingängig."
+    },
+    "es": {
+     "t": "Bienvenido a la teoría musical",
+     "g": "Ver la teoría musical como un idioma amable que explica por qué la música suena como suena.",
+     "p": [
+      "La teoría musical no es un reglamento estricto, describe lo que a nuestros oídos ya les gusta.",
+      "El camino va de notas y ritmo a escalas, acordes, armonía y tus propias melodías.",
+      "Basta una lección pequeña al día, y puedes aprender incluso sin instrumento."
+     ],
+     "q": "¿Qué canción te da siempre ganas de saber cómo funciona?",
+     "c": "Escucha tu canción favorita y di en voz alta algo que notes, por ejemplo rápida, tranquila o pegadiza."
+    },
+    "fr": {
+     "t": "Bienvenue en théorie musicale",
+     "g": "Voir la théorie musicale comme une langue amicale qui explique pourquoi la musique sonne ainsi.",
+     "p": [
+      "La théorie n'est pas un règlement strict, elle décrit ce que nos oreilles aiment déjà.",
+      "Le parcours va des notes et du rythme aux gammes, accords, à l'harmonie et à tes propres mélodies.",
+      "Une petite leçon par jour suffit, et tu peux apprendre même sans instrument."
+     ],
+     "q": "Quelle chanson te donne toujours envie de savoir comment elle marche ?",
+     "c": "Écoute ta chanson préférée et dis à voix haute une chose que tu remarques : rapide, calme ou entraînante."
+    },
+    "it": {
+     "t": "Benvenuto nella teoria musicale",
+     "g": "Vedere la teoria musicale come una lingua amica che spiega perché la musica suona così.",
+     "p": [
+      "La teoria non è un regolamento rigido, descrive ciò che alle nostre orecchie piace già.",
+      "Il percorso va da note e ritmo a scale, accordi, armonia e melodie tutte tue.",
+      "Basta una piccola lezione al giorno, e puoi imparare anche senza strumento."
+     ],
+     "q": "Quale canzone ti fa sempre venire voglia di capire come funziona?",
+     "c": "Ascolta la tua canzone preferita e di' ad alta voce una cosa che noti: veloce, calma o orecchiabile."
+    },
+    "pt": {
+     "t": "Bem-vindo à teoria musical",
+     "g": "Ver a teoria musical como uma língua simpática que explica porque a música soa como soa.",
+     "p": [
+      "A teoria musical não é um regulamento rígido, descreve o que os nossos ouvidos já gostam.",
+      "O percurso vai das notas e do ritmo às escalas, acordes, harmonia e às tuas próprias melodias.",
+      "Basta uma pequena lição por dia, e podes aprender mesmo sem instrumento."
+     ],
+     "q": "Que música te dá sempre vontade de perceber como funciona?",
+     "c": "Ouve a tua música preferida e diz em voz alta uma coisa que notas: rápida, calma ou viciante."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à teoria musical",
+     "g": "Ver a teoria musical como uma língua amiga que explica por que a música soa do jeito que soa.",
+     "p": [
+      "Teoria musical não é um regulamento rígido, ela descreve o que nossos ouvidos já curtem.",
+      "O caminho vai de notas e ritmo a escalas, acordes, harmonia e suas próprias melodias.",
+      "Uma lição pequena por dia basta, e dá para aprender até sem instrumento."
+     ],
+     "q": "Qual música sempre te dá vontade de entender como ela funciona?",
+     "c": "Ouça sua música favorita e diga em voz alta uma coisa que você nota: rápida, calma ou chiclete."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is sound",
+     "g": "Understand how vibrations become sound waves and how our ears turn them into music.",
+     "p": [
+      "Every sound starts with something vibrating, like a string, a drum skin or your vocal cords.",
+      "The vibration pushes air back and forth, and these waves travel to your ears.",
+      "Your eardrum vibrates too, and your inner ear turns that motion into signals for the brain."
+     ],
+     "q": "What is the most relaxing sound you know?",
+     "c": "Touch your throat while you hum a note and feel the vibration that makes the sound."
+    },
+    "de": {
+     "t": "Was ist Schall",
+     "g": "Verstehen, wie Schwingungen zu Schallwellen werden und wie unsere Ohren daraus Musik machen.",
+     "p": [
+      "Jeder Klang beginnt mit einer Schwingung, etwa einer Saite, eines Trommelfells oder deiner Stimmlippen.",
+      "Die Schwingung schiebt die Luft hin und her, und diese Wellen wandern zu deinen Ohren.",
+      "Dein Trommelfell schwingt mit, und das Innenohr macht daraus Signale für das Gehirn."
+     ],
+     "q": "Welches Geräusch findest du am entspannendsten?",
+     "c": "Leg die Hand an den Hals, summ einen Ton und spür die Schwingung, die den Klang erzeugt."
+    },
+    "es": {
+     "t": "Qué es el sonido",
+     "g": "Entender cómo las vibraciones se vuelven ondas sonoras y cómo el oído las convierte en música.",
+     "p": [
+      "Todo sonido empieza con algo que vibra: una cuerda, el parche de un tambor o tus cuerdas vocales.",
+      "La vibración empuja el aire adelante y atrás, y esas ondas viajan hasta tus oídos.",
+      "Tu tímpano también vibra, y el oído interno convierte ese movimiento en señales para el cerebro."
+     ],
+     "q": "¿Cuál es el sonido más relajante que conoces?",
+     "c": "Tócate la garganta mientras tarareas una nota y siente la vibración que crea el sonido."
+    },
+    "fr": {
+     "t": "Qu'est-ce que le son",
+     "g": "Comprendre comment les vibrations deviennent des ondes sonores et comment l'oreille en fait de la musique.",
+     "p": [
+      "Tout son commence par une vibration : une corde, la peau d'un tambour ou tes cordes vocales.",
+      "La vibration pousse l'air d'avant en arrière, et ces ondes voyagent jusqu'à tes oreilles.",
+      "Ton tympan vibre à son tour, et l'oreille interne transforme ce mouvement en signaux pour le cerveau."
+     ],
+     "q": "Quel est le son le plus apaisant que tu connaisses ?",
+     "c": "Pose la main sur ta gorge en fredonnant une note et sens la vibration qui crée le son."
+    },
+    "it": {
+     "t": "Che cos'è il suono",
+     "g": "Capire come le vibrazioni diventano onde sonore e come l'orecchio le trasforma in musica.",
+     "p": [
+      "Ogni suono nasce da qualcosa che vibra: una corda, la pelle di un tamburo o le tue corde vocali.",
+      "La vibrazione spinge l'aria avanti e indietro, e queste onde viaggiano fino alle tue orecchie.",
+      "Anche il timpano vibra, e l'orecchio interno trasforma quel movimento in segnali per il cervello."
+     ],
+     "q": "Qual è il suono più rilassante che conosci?",
+     "c": "Appoggia la mano sulla gola mentre canticchi una nota e senti la vibrazione che crea il suono."
+    },
+    "pt": {
+     "t": "O que é o som",
+     "g": "Perceber como as vibrações se tornam ondas sonoras e como o ouvido as transforma em música.",
+     "p": [
+      "Todo o som começa com algo a vibrar: uma corda, a pele de um tambor ou as tuas cordas vocais.",
+      "A vibração empurra o ar para a frente e para trás, e essas ondas viajam até aos teus ouvidos.",
+      "O tímpano também vibra, e o ouvido interno transforma esse movimento em sinais para o cérebro."
+     ],
+     "q": "Qual é o som mais relaxante que conheces?",
+     "c": "Põe a mão na garganta enquanto cantarolas uma nota e sente a vibração que cria o som."
+    },
+    "pt_BR": {
+     "t": "O que é o som",
+     "g": "Entender como vibrações viram ondas sonoras e como o ouvido as transforma em música.",
+     "p": [
+      "Todo som começa com algo vibrando: uma corda, a pele de um tambor ou suas cordas vocais.",
+      "A vibração empurra o ar para frente e para trás, e essas ondas viajam até seus ouvidos.",
+      "O tímpano também vibra, e o ouvido interno transforma esse movimento em sinais para o cérebro."
+     ],
+     "q": "Qual é o som mais relaxante que você conhece?",
+     "c": "Coloque a mão na garganta enquanto cantarola uma nota e sinta a vibração que cria o som."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pitch: high and low",
+     "g": "Learn that fast vibrations make high notes and slow vibrations make low notes.",
+     "p": [
+      "Pitch is how high or low a sound is, and it depends on how fast something vibrates.",
+      "Speed of vibration is called frequency and is measured in hertz: the note A is often tuned to 440 Hz.",
+      "Short, thin or tight strings vibrate faster and sound higher than long, thick or loose ones."
+     ],
+     "q": "Do you prefer singing high or low notes?",
+     "c": "Hum your lowest comfortable note, then slide up to your highest one like a siren."
+    },
+    "de": {
+     "t": "Tonhöhe: hoch und tief",
+     "g": "Lernen, dass schnelle Schwingungen hohe Töne und langsame Schwingungen tiefe Töne erzeugen.",
+     "p": [
+      "Die Tonhöhe sagt, wie hoch oder tief ein Klang ist, und hängt davon ab, wie schnell etwas schwingt.",
+      "Die Schwingungszahl heißt Frequenz und wird in Hertz gemessen: Der Ton A ist oft auf 440 Hz gestimmt.",
+      "Kurze, dünne oder straffe Saiten schwingen schneller und klingen höher als lange, dicke oder lockere."
+     ],
+     "q": "Singst du lieber hohe oder tiefe Töne?",
+     "c": "Summ deinen tiefsten bequemen Ton und gleite dann wie eine Sirene zu deinem höchsten."
+    },
+    "es": {
+     "t": "Altura: agudo y grave",
+     "g": "Aprender que las vibraciones rápidas dan notas agudas y las lentas dan notas graves.",
+     "p": [
+      "La altura indica si un sonido es agudo o grave, y depende de la rapidez con que algo vibra.",
+      "Esa rapidez se llama frecuencia y se mide en hercios: el la suele afinarse a 440 Hz.",
+      "Las cuerdas cortas, finas o tensas vibran más rápido y suenan más agudas que las largas, gruesas o flojas."
+     ],
+     "q": "¿Prefieres cantar notas agudas o graves?",
+     "c": "Tararea tu nota más grave cómoda y sube deslizándote hasta la más aguda, como una sirena."
+    },
+    "fr": {
+     "t": "La hauteur : aigu et grave",
+     "g": "Apprendre que les vibrations rapides donnent des notes aiguës et les lentes des notes graves.",
+     "p": [
+      "La hauteur dit si un son est aigu ou grave, et elle dépend de la vitesse de la vibration.",
+      "Cette vitesse s'appelle la fréquence, en hertz : le la est souvent accordé à 440 Hz.",
+      "Les cordes courtes, fines ou tendues vibrent plus vite et sonnent plus aigu que les longues, épaisses ou lâches."
+     ],
+     "q": "Tu préfères chanter des notes aiguës ou graves ?",
+     "c": "Fredonne ta note la plus grave confortable, puis glisse jusqu'à la plus aiguë comme une sirène."
+    },
+    "it": {
+     "t": "Altezza: acuto e grave",
+     "g": "Imparare che le vibrazioni veloci danno note acute e quelle lente danno note gravi.",
+     "p": [
+      "L'altezza indica quanto un suono è acuto o grave, e dipende da quanto velocemente qualcosa vibra.",
+      "Questa velocità si chiama frequenza e si misura in hertz: il la è spesso accordato a 440 Hz.",
+      "Le corde corte, sottili o tese vibrano più in fretta e suonano più acute di quelle lunghe, spesse o lente."
+     ],
+     "q": "Preferisci cantare note acute o gravi?",
+     "c": "Canticchia la tua nota più grave comoda e poi sali scivolando fino alla più acuta, come una sirena."
+    },
+    "pt": {
+     "t": "Altura: agudo e grave",
+     "g": "Aprender que vibrações rápidas dão notas agudas e vibrações lentas dão notas graves.",
+     "p": [
+      "A altura diz se um som é agudo ou grave e depende da rapidez com que algo vibra.",
+      "Essa rapidez chama-se frequência e mede-se em hertz: o lá costuma ser afinado a 440 Hz.",
+      "Cordas curtas, finas ou esticadas vibram mais depressa e soam mais agudas do que as longas, grossas ou soltas."
+     ],
+     "q": "Preferes cantar notas agudas ou graves?",
+     "c": "Cantarola a tua nota mais grave confortável e sobe a deslizar até à mais aguda, como uma sirene."
+    },
+    "pt_BR": {
+     "t": "Altura: agudo e grave",
+     "g": "Aprender que vibrações rápidas geram notas agudas e vibrações lentas geram notas graves.",
+     "p": [
+      "A altura diz se um som é agudo ou grave e depende da rapidez com que algo vibra.",
+      "Essa rapidez se chama frequência e é medida em hertz: o lá costuma ser afinado em 440 Hz.",
+      "Cordas curtas, finas ou esticadas vibram mais rápido e soam mais agudas que as longas, grossas ou frouxas."
+     ],
+     "q": "Você prefere cantar notas agudas ou graves?",
+     "c": "Cantarole sua nota mais grave confortável e suba deslizando até a mais aguda, como uma sirene."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm: the heartbeat of music",
+     "g": "Discover rhythm as sounds and silences arranged in time.",
+     "p": [
+      "Rhythm is the pattern of long and short sounds and the gaps between them.",
+      "Silence is part of rhythm too: a pause can be as exciting as a note.",
+      "You can recognise many songs just from their rhythm, even without the melody."
+     ],
+     "q": "Which song has a rhythm you could clap right now?",
+     "c": "Clap the rhythm of the words Happy birthday to you and notice the long and short claps."
+    },
+    "de": {
+     "t": "Rhythmus: der Herzschlag der Musik",
+     "g": "Rhythmus als Anordnung von Klängen und Pausen in der Zeit entdecken.",
+     "p": [
+      "Rhythmus ist das Muster aus langen und kurzen Klängen und den Lücken dazwischen.",
+      "Auch Stille gehört zum Rhythmus: Eine Pause kann so spannend sein wie ein Ton.",
+      "Viele Lieder erkennst du allein am Rhythmus, sogar ohne Melodie."
+     ],
+     "q": "Bei welchem Lied könntest du den Rhythmus sofort klatschen?",
+     "c": "Klatsch den Rhythmus von Zum Geburtstag viel Glück und achte auf lange und kurze Klatscher."
+    },
+    "es": {
+     "t": "Ritmo: el latido de la música",
+     "g": "Descubrir el ritmo como sonidos y silencios ordenados en el tiempo.",
+     "p": [
+      "El ritmo es el patrón de sonidos largos y cortos y los huecos entre ellos.",
+      "El silencio también es ritmo: una pausa puede ser tan emocionante como una nota.",
+      "Puedes reconocer muchas canciones solo por su ritmo, aunque no haya melodía."
+     ],
+     "q": "¿Qué canción tiene un ritmo que podrías aplaudir ahora mismo?",
+     "c": "Aplaude el ritmo de Cumpleaños feliz y fíjate en las palmadas largas y cortas."
+    },
+    "fr": {
+     "t": "Le rythme, cœur de la musique",
+     "g": "Découvrir le rythme comme des sons et des silences organisés dans le temps.",
+     "p": [
+      "Le rythme est le motif des sons longs et courts et des espaces entre eux.",
+      "Le silence fait partie du rythme : une pause peut être aussi forte qu'une note.",
+      "On reconnaît beaucoup de chansons à leur seul rythme, même sans mélodie."
+     ],
+     "q": "Quelle chanson a un rythme que tu pourrais taper tout de suite ?",
+     "c": "Tape dans tes mains le rythme de Joyeux anniversaire et repère les frappes longues et courtes."
+    },
+    "it": {
+     "t": "Ritmo: il battito della musica",
+     "g": "Scoprire il ritmo come suoni e silenzi ordinati nel tempo.",
+     "p": [
+      "Il ritmo è lo schema di suoni lunghi e brevi e degli spazi tra di loro.",
+      "Anche il silenzio è ritmo: una pausa può essere emozionante quanto una nota.",
+      "Molte canzoni si riconoscono solo dal ritmo, anche senza melodia."
+     ],
+     "q": "Quale canzone ha un ritmo che potresti battere subito con le mani?",
+     "c": "Batti le mani sul ritmo di Tanti auguri a te e nota i colpi lunghi e quelli brevi."
+    },
+    "pt": {
+     "t": "Ritmo: o coração da música",
+     "g": "Descobrir o ritmo como sons e silêncios organizados no tempo.",
+     "p": [
+      "O ritmo é o padrão de sons longos e curtos e dos espaços entre eles.",
+      "O silêncio também faz parte do ritmo: uma pausa pode ser tão emocionante como uma nota.",
+      "Reconheces muitas músicas só pelo ritmo, mesmo sem melodia."
+     ],
+     "q": "Que música tem um ritmo que conseguias bater agora mesmo?",
+     "c": "Bate palmas ao ritmo dos Parabéns a você e repara nas palmas longas e curtas."
+    },
+    "pt_BR": {
+     "t": "Ritmo: o coração da música",
+     "g": "Descobrir o ritmo como sons e silêncios organizados no tempo.",
+     "p": [
+      "Ritmo é o padrão de sons longos e curtos e dos espaços entre eles.",
+      "O silêncio também é ritmo: uma pausa pode ser tão emocionante quanto uma nota.",
+      "Você reconhece muitas músicas só pelo ritmo, mesmo sem a melodia."
+     ],
+     "q": "Qual música tem um ritmo que você conseguiria bater palmas agora?",
+     "c": "Bata palmas no ritmo de Parabéns pra você e repare nas palmas longas e curtas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding the beat",
+     "g": "Feel the steady pulse of a song by tapping along.",
+     "p": [
+      "The beat is the steady pulse under the music, like a ticking clock.",
+      "Rhythms change all the time, but the beat stays even underneath them.",
+      "When you nod your head or tap your foot to a song, you are following the beat."
+     ],
+     "q": "Do you usually tap your foot or nod your head to music?",
+     "c": "Put on a song and tap your foot on every beat for one minute without losing it."
+    },
+    "de": {
+     "t": "Den Grundschlag finden",
+     "g": "Den gleichmäßigen Puls eines Liedes spüren, indem du mitklopfst.",
+     "p": [
+      "Der Grundschlag, auch Beat genannt, ist der gleichmäßige Puls unter der Musik, wie eine tickende Uhr.",
+      "Rhythmen wechseln ständig, aber der Grundschlag bleibt darunter gleichmäßig.",
+      "Wenn du zu einem Lied nickst oder mit dem Fuß wippst, folgst du dem Grundschlag."
+     ],
+     "q": "Wippst du bei Musik eher mit dem Fuß oder nickst du mit dem Kopf?",
+     "c": "Spiel ein Lied ab und tipp eine Minute lang auf jeden Schlag mit dem Fuß, ohne rauszufallen."
+    },
+    "es": {
+     "t": "Encontrar el pulso",
+     "g": "Sentir el pulso constante de una canción marcándolo con el pie.",
+     "p": [
+      "El pulso es el latido regular bajo la música, como un reloj que hace tictac.",
+      "Los ritmos cambian todo el tiempo, pero el pulso sigue igual por debajo.",
+      "Cuando mueves la cabeza o el pie con una canción, estás siguiendo el pulso."
+     ],
+     "q": "¿Sueles marcar la música con el pie o con la cabeza?",
+     "c": "Pon una canción y marca cada pulso con el pie durante un minuto sin perderte."
+    },
+    "fr": {
+     "t": "Trouver la pulsation",
+     "g": "Sentir la pulsation régulière d'une chanson en la tapant.",
+     "p": [
+      "La pulsation est le battement régulier sous la musique, comme le tic-tac d'une horloge.",
+      "Les rythmes changent sans cesse, mais la pulsation reste stable dessous.",
+      "Quand tu hoches la tête ou tapes du pied, tu suis la pulsation."
+     ],
+     "q": "En musique, tu tapes plutôt du pied ou tu hoches la tête ?",
+     "c": "Mets une chanson et tape du pied sur chaque pulsation pendant une minute sans décrocher."
+    },
+    "it": {
+     "t": "Trovare il battito",
+     "g": "Sentire la pulsazione costante di una canzone battendo il tempo.",
+     "p": [
+      "La pulsazione è il battito regolare sotto la musica, come il ticchettio di un orologio.",
+      "I ritmi cambiano di continuo, ma la pulsazione resta regolare sotto di loro.",
+      "Quando muovi la testa o batti il piede su una canzone, stai seguendo la pulsazione."
+     ],
+     "q": "Con la musica di solito batti il piede o muovi la testa?",
+     "c": "Metti una canzone e batti il piede su ogni pulsazione per un minuto senza perderti."
+    },
+    "pt": {
+     "t": "Encontrar a pulsação",
+     "g": "Sentir a pulsação regular de uma música marcando-a com o pé.",
+     "p": [
+      "A pulsação é o batimento regular por baixo da música, como o tique-taque de um relógio.",
+      "Os ritmos mudam a toda a hora, mas a pulsação mantém-se igual por baixo.",
+      "Quando abanas a cabeça ou bates o pé ao som de uma música, estás a seguir a pulsação."
+     ],
+     "q": "Costumas bater o pé ou abanar a cabeça com a música?",
+     "c": "Põe uma música e bate o pé em cada pulsação durante um minuto sem te perderes."
+    },
+    "pt_BR": {
+     "t": "Encontrando a pulsação",
+     "g": "Sentir a pulsação regular de uma música batendo o pé junto.",
+     "p": [
+      "A pulsação é a batida regular por baixo da música, como o tique-taque de um relógio.",
+      "Os ritmos mudam o tempo todo, mas a pulsação continua igual por baixo.",
+      "Quando você balança a cabeça ou bate o pé numa música, está seguindo a pulsação."
+     ],
+     "q": "Você costuma bater o pé ou balançar a cabeça com música?",
+     "c": "Coloque uma música e bata o pé em cada pulsação por um minuto sem se perder."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tempo",
+     "g": "Understand tempo as how fast or slow the beat goes.",
+     "p": [
+      "Tempo is the speed of the beat: slow for ballads, fast for dance tracks.",
+      "The same melody can feel sad at a slow tempo and joyful at a fast one.",
+      "Tempo shapes energy: it changes how we move, breathe and feel."
+     ],
+     "q": "What kind of tempo do you like for working or studying?",
+     "c": "Pick two songs, one slow and one fast, and tap the beat of each to feel the difference."
+    },
+    "de": {
+     "t": "Tempo",
+     "g": "Tempo verstehen: wie schnell oder langsam der Grundschlag läuft.",
+     "p": [
+      "Das Tempo ist die Geschwindigkeit des Grundschlags: langsam bei Balladen, schnell bei Tanzmusik.",
+      "Dieselbe Melodie kann langsam traurig und schnell fröhlich wirken.",
+      "Das Tempo prägt die Energie: Es verändert, wie wir uns bewegen, atmen und fühlen."
+     ],
+     "q": "Welches Tempo magst du beim Arbeiten oder Lernen?",
+     "c": "Wähle ein langsames und ein schnelles Lied und klopf bei beiden den Schlag, um den Unterschied zu spüren."
+    },
+    "es": {
+     "t": "El tempo",
+     "g": "Entender el tempo como lo rápido o lento que va el pulso.",
+     "p": [
+      "El tempo es la velocidad del pulso: lento en las baladas, rápido en la música de baile.",
+      "La misma melodía puede sonar triste lenta y alegre rápida.",
+      "El tempo marca la energía: cambia cómo nos movemos, respiramos y sentimos."
+     ],
+     "q": "¿Qué tempo te gusta para trabajar o estudiar?",
+     "c": "Elige una canción lenta y otra rápida y marca el pulso de cada una para notar la diferencia."
+    },
+    "fr": {
+     "t": "Le tempo",
+     "g": "Comprendre le tempo comme la vitesse, lente ou rapide, de la pulsation.",
+     "p": [
+      "Le tempo est la vitesse de la pulsation : lent pour les ballades, rapide pour la musique de danse.",
+      "La même mélodie peut paraître triste lente et joyeuse rapide.",
+      "Le tempo façonne l'énergie : il change notre façon de bouger, respirer et ressentir."
+     ],
+     "q": "Quel tempo aimes-tu pour travailler ou étudier ?",
+     "c": "Choisis une chanson lente et une rapide et tape la pulsation de chacune pour sentir la différence."
+    },
+    "it": {
+     "t": "Il tempo",
+     "g": "Capire il tempo come la velocità, lenta o veloce, della pulsazione.",
+     "p": [
+      "Il tempo è la velocità della pulsazione: lento nelle ballate, veloce nella musica da ballo.",
+      "La stessa melodia può sembrare triste se lenta e allegra se veloce.",
+      "Il tempo dà energia: cambia come ci muoviamo, respiriamo e ci sentiamo."
+     ],
+     "q": "Che tempo ti piace quando lavori o studi?",
+     "c": "Scegli una canzone lenta e una veloce e batti la pulsazione di entrambe per sentire la differenza."
+    },
+    "pt": {
+     "t": "O andamento",
+     "g": "Perceber o andamento como a velocidade, lenta ou rápida, da pulsação.",
+     "p": [
+      "O andamento, ou tempo, é a velocidade da pulsação: lento nas baladas, rápido na música de dança.",
+      "A mesma melodia pode parecer triste lenta e alegre rápida.",
+      "O andamento dá energia: muda a forma como nos mexemos, respiramos e sentimos."
+     ],
+     "q": "Que andamento preferes para trabalhar ou estudar?",
+     "c": "Escolhe uma música lenta e uma rápida e marca a pulsação de cada uma para sentires a diferença."
+    },
+    "pt_BR": {
+     "t": "Andamento",
+     "g": "Entender o andamento como a velocidade, lenta ou rápida, da pulsação.",
+     "p": [
+      "Andamento, ou tempo, é a velocidade da pulsação: lento nas baladas, rápido na música de dança.",
+      "A mesma melodia pode soar triste lenta e alegre rápida.",
+      "O andamento dá energia: muda o jeito como a gente se mexe, respira e sente."
+     ],
+     "q": "Que andamento você prefere para trabalhar ou estudar?",
+     "c": "Escolha uma música lenta e uma rápida e marque a pulsação de cada uma para sentir a diferença."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dynamics: loud and soft",
+     "g": "See volume as expression, from a gentle pianissimo to a powerful fortissimo.",
+     "p": [
+      "Dynamics means how loud or soft music is played.",
+      "Musicians use Italian words: piano means soft and forte means loud.",
+      "Pianissimo is very soft and fortissimo is very loud, with many shades in between."
+     ],
+     "q": "Do you prefer quiet, gentle music or loud, powerful music?",
+     "c": "Sing or hum one short phrase three times: very soft, medium and loud. Which feels most expressive?"
+    },
+    "de": {
+     "t": "Dynamik: laut und leise",
+     "g": "Lautstärke als Ausdruck sehen, vom zarten Pianissimo bis zum kraftvollen Fortissimo.",
+     "p": [
+      "Dynamik beschreibt, wie laut oder leise Musik gespielt wird.",
+      "Musiker nutzen italienische Wörter: piano heißt leise, forte heißt laut.",
+      "Pianissimo ist sehr leise, Fortissimo sehr laut, mit vielen Abstufungen dazwischen."
+     ],
+     "q": "Magst du eher leise, sanfte oder laute, kraftvolle Musik?",
+     "c": "Sing oder summ eine kurze Phrase dreimal: sehr leise, mittel und laut. Was wirkt am ausdrucksvollsten?"
+    },
+    "es": {
+     "t": "Dinámica: fuerte y suave",
+     "g": "Ver el volumen como expresión, desde un pianissimo delicado hasta un fortissimo potente.",
+     "p": [
+      "La dinámica indica lo fuerte o suave que se toca la música.",
+      "Los músicos usan palabras italianas: piano significa suave y forte significa fuerte.",
+      "Pianissimo es muy suave y fortissimo muy fuerte, con muchos matices entre ambos."
+     ],
+     "q": "¿Prefieres la música suave y tranquila o la fuerte y potente?",
+     "c": "Canta o tararea una frase corta tres veces: muy suave, media y fuerte. ¿Cuál expresa más?"
+    },
+    "fr": {
+     "t": "Les nuances : fort et doux",
+     "g": "Voir le volume comme une expression, du pianissimo délicat au fortissimo puissant.",
+     "p": [
+      "Les nuances indiquent si la musique se joue fort ou doucement.",
+      "Les musiciens utilisent l'italien : piano veut dire doux et forte veut dire fort.",
+      "Pianissimo est très doux, fortissimo très fort, avec beaucoup de degrés entre les deux."
+     ],
+     "q": "Tu préfères une musique douce et calme ou forte et puissante ?",
+     "c": "Chante ou fredonne une courte phrase trois fois : très doux, moyen et fort. Laquelle est la plus expressive ?"
+    },
+    "it": {
+     "t": "Dinamica: forte e piano",
+     "g": "Vedere il volume come espressione, dal pianissimo delicato al fortissimo potente.",
+     "p": [
+      "La dinamica indica quanto forte o piano si suona la musica.",
+      "In tutto il mondo i musicisti usano l'italiano: piano vuol dire debole, forte vuol dire forte.",
+      "Pianissimo è molto piano e fortissimo molto forte, con tante sfumature in mezzo."
+     ],
+     "q": "Preferisci la musica piano e delicata o forte e potente?",
+     "c": "Canta o canticchia una breve frase tre volte: pianissimo, medio e forte. Quale è più espressiva?"
+    },
+    "pt": {
+     "t": "Dinâmica: forte e suave",
+     "g": "Ver o volume como expressão, de um pianissimo delicado a um fortissimo poderoso.",
+     "p": [
+      "A dinâmica indica se a música é tocada forte ou suave.",
+      "Os músicos usam palavras italianas: piano quer dizer suave e forte quer dizer forte.",
+      "Pianissimo é muito suave e fortissimo muito forte, com muitas gradações pelo meio."
+     ],
+     "q": "Preferes música suave e calma ou forte e poderosa?",
+     "c": "Canta ou cantarola uma frase curta três vezes: muito suave, médio e forte. Qual é mais expressiva?"
+    },
+    "pt_BR": {
+     "t": "Dinâmica: forte e suave",
+     "g": "Ver o volume como expressão, de um pianissimo delicado a um fortissimo poderoso.",
+     "p": [
+      "Dinâmica é o quanto a música é tocada forte ou suave.",
+      "Os músicos usam palavras italianas: piano significa suave e forte significa forte.",
+      "Pianissimo é muito suave e fortissimo muito forte, com muitas nuances no meio."
+     ],
+     "q": "Você prefere música suave e calma ou forte e poderosa?",
+     "c": "Cante ou cantarole uma frase curta três vezes: bem suave, médio e forte. Qual expressa mais?"
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timbre: the colour of sound",
+     "g": "Understand why a flute and a violin sound different on the same note.",
+     "p": [
+      "Timbre is the unique colour or character of a sound.",
+      "Two instruments can play the same note at the same volume and still sound different.",
+      "Each sound mixes a main pitch with fainter extra tones called overtones, and the mix shapes its timbre."
+     ],
+     "q": "Which instrument has your favourite sound colour?",
+     "c": "Say one word in a whisper, a normal voice and a deep voice: same word, three timbres."
+    },
+    "de": {
+     "t": "Klangfarbe: die Farbe des Klangs",
+     "g": "Verstehen, warum Flöte und Geige auf demselben Ton verschieden klingen.",
+     "p": [
+      "Die Klangfarbe ist der unverwechselbare Charakter eines Klangs.",
+      "Zwei Instrumente können denselben Ton gleich laut spielen und trotzdem anders klingen.",
+      "Jeder Klang mischt einen Grundton mit leiseren Obertönen, und diese Mischung formt die Klangfarbe."
+     ],
+     "q": "Welches Instrument hat für dich die schönste Klangfarbe?",
+     "c": "Sag ein Wort geflüstert, normal und mit tiefer Stimme: dasselbe Wort, drei Klangfarben."
+    },
+    "es": {
+     "t": "Timbre: el color del sonido",
+     "g": "Entender por qué una flauta y un violín suenan distintos en la misma nota.",
+     "p": [
+      "El timbre es el color o carácter propio de un sonido.",
+      "Dos instrumentos pueden tocar la misma nota al mismo volumen y aun así sonar distintos.",
+      "Cada sonido mezcla una nota principal con tonos más débiles llamados armónicos, y esa mezcla da el timbre."
+     ],
+     "q": "¿Qué instrumento tiene tu color de sonido favorito?",
+     "c": "Di una palabra susurrando, con voz normal y con voz grave: la misma palabra, tres timbres."
+    },
+    "fr": {
+     "t": "Le timbre, couleur du son",
+     "g": "Comprendre pourquoi une flûte et un violon sonnent différemment sur la même note.",
+     "p": [
+      "Le timbre est la couleur ou le caractère unique d'un son.",
+      "Deux instruments peuvent jouer la même note au même volume et sonner pourtant différemment.",
+      "Chaque son mêle une note principale à des sons plus faibles, les harmoniques, et ce mélange fait le timbre."
+     ],
+     "q": "Quel instrument a ta couleur de son préférée ?",
+     "c": "Dis un mot en chuchotant, d'une voix normale puis d'une voix grave : même mot, trois timbres."
+    },
+    "it": {
+     "t": "Timbro: il colore del suono",
+     "g": "Capire perché flauto e violino suonano diversi sulla stessa nota.",
+     "p": [
+      "Il timbro è il colore o carattere unico di un suono.",
+      "Due strumenti possono suonare la stessa nota allo stesso volume e sembrare comunque diversi.",
+      "Ogni suono mescola una nota principale con suoni più deboli detti armonici, e quel mix crea il timbro."
+     ],
+     "q": "Quale strumento ha il colore di suono che preferisci?",
+     "c": "Di' una parola sussurrando, con voce normale e con voce profonda: stessa parola, tre timbri."
+    },
+    "pt": {
+     "t": "Timbre: a cor do som",
+     "g": "Perceber porque uma flauta e um violino soam diferentes na mesma nota.",
+     "p": [
+      "O timbre é a cor ou o carácter único de um som.",
+      "Dois instrumentos podem tocar a mesma nota ao mesmo volume e mesmo assim soar diferentes.",
+      "Cada som mistura uma nota principal com sons mais fracos, os harmónicos, e essa mistura dá o timbre."
+     ],
+     "q": "Que instrumento tem a tua cor de som preferida?",
+     "c": "Diz uma palavra a sussurrar, com voz normal e com voz grave: a mesma palavra, três timbres."
+    },
+    "pt_BR": {
+     "t": "Timbre: a cor do som",
+     "g": "Entender por que uma flauta e um violino soam diferentes na mesma nota.",
+     "p": [
+      "Timbre é a cor ou o caráter único de um som.",
+      "Dois instrumentos podem tocar a mesma nota no mesmo volume e ainda assim soar diferentes.",
+      "Cada som mistura uma nota principal com sons mais fracos, os harmônicos, e essa mistura forma o timbre."
+     ],
+     "q": "Qual instrumento tem sua cor de som favorita?",
+     "c": "Diga uma palavra sussurrando, com voz normal e com voz grave: a mesma palavra, três timbres."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Melody, harmony and rhythm",
+     "g": "Meet the three main ingredients of most music.",
+     "p": [
+      "Melody is the tune you can sing, one note after another.",
+      "Harmony is notes sounding together, like chords that support the melody.",
+      "Rhythm organises it all in time, and together the three make a song feel complete."
+     ],
+     "q": "When you remember a song, is it the melody, the words or the beat that sticks?",
+     "c": "Listen to a song and point out one moment for each: the melody, the harmony and the rhythm."
+    },
+    "de": {
+     "t": "Melodie, Harmonie und Rhythmus",
+     "g": "Die drei Hauptzutaten der meisten Musik kennenlernen.",
+     "p": [
+      "Die Melodie ist das, was du singen kannst, ein Ton nach dem anderen.",
+      "Harmonie sind gleichzeitig klingende Töne, etwa Akkorde, die die Melodie stützen.",
+      "Der Rhythmus ordnet alles in der Zeit, und zusammen machen die drei ein Lied komplett."
+     ],
+     "q": "Was bleibt dir bei einem Lied hängen: Melodie, Text oder Beat?",
+     "c": "Hör ein Lied und finde je einen Moment für Melodie, Harmonie und Rhythmus."
+    },
+    "es": {
+     "t": "Melodía, armonía y ritmo",
+     "g": "Conocer los tres ingredientes principales de casi toda la música.",
+     "p": [
+      "La melodía es lo que puedes cantar, una nota tras otra.",
+      "La armonía son notas que suenan juntas, como los acordes que acompañan la melodía.",
+      "El ritmo lo ordena todo en el tiempo, y juntos los tres completan una canción."
+     ],
+     "q": "Cuando recuerdas una canción, ¿qué se te queda: la melodía, la letra o el ritmo?",
+     "c": "Escucha una canción y señala un momento para cada uno: melodía, armonía y ritmo."
+    },
+    "fr": {
+     "t": "Mélodie, harmonie et rythme",
+     "g": "Découvrir les trois ingrédients principaux de la plupart des musiques.",
+     "p": [
+      "La mélodie, c'est l'air que tu peux chanter, une note après l'autre.",
+      "L'harmonie, ce sont des notes jouées ensemble, comme les accords qui soutiennent la mélodie.",
+      "Le rythme organise le tout dans le temps, et ensemble ils rendent une chanson complète."
+     ],
+     "q": "Quand une chanson te reste en tête, c'est la mélodie, les paroles ou le rythme ?",
+     "c": "Écoute une chanson et repère un moment pour chacun : la mélodie, l'harmonie et le rythme."
+    },
+    "it": {
+     "t": "Melodia, armonia e ritmo",
+     "g": "Conoscere i tre ingredienti principali di quasi tutta la musica.",
+     "p": [
+      "La melodia è il motivo che puoi cantare, una nota dopo l'altra.",
+      "L'armonia sono note che suonano insieme, come gli accordi che sostengono la melodia.",
+      "Il ritmo organizza tutto nel tempo, e insieme i tre rendono completa una canzone."
+     ],
+     "q": "Quando ricordi una canzone, ti resta la melodia, il testo o il ritmo?",
+     "c": "Ascolta una canzone e indica un momento per ciascuno: melodia, armonia e ritmo."
+    },
+    "pt": {
+     "t": "Melodia, harmonia e ritmo",
+     "g": "Conhecer os três ingredientes principais da maioria da música.",
+     "p": [
+      "A melodia é aquilo que consegues cantar, uma nota a seguir à outra.",
+      "A harmonia são notas a soar juntas, como os acordes que apoiam a melodia.",
+      "O ritmo organiza tudo no tempo, e juntos os três tornam uma música completa."
+     ],
+     "q": "Quando te lembras de uma música, o que fica: a melodia, a letra ou o ritmo?",
+     "c": "Ouve uma música e aponta um momento para cada um: melodia, harmonia e ritmo."
+    },
+    "pt_BR": {
+     "t": "Melodia, harmonia e ritmo",
+     "g": "Conhecer os três ingredientes principais da maioria das músicas.",
+     "p": [
+      "Melodia é o que você consegue cantar, uma nota depois da outra.",
+      "Harmonia são notas soando juntas, como os acordes que apoiam a melodia.",
+      "O ritmo organiza tudo no tempo, e juntos os três deixam a música completa."
+     ],
+     "q": "Quando você lembra de uma música, o que gruda: a melodia, a letra ou o ritmo?",
+     "c": "Ouça uma música e aponte um momento para cada um: melodia, harmonia e ritmo."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Active listening",
+     "g": "Listen to a song and notice its melody, rhythm and instruments.",
+     "p": [
+      "Active listening means focusing on the music instead of letting it play in the background.",
+      "Listen several times, each time following one thing: the voice, the drums, the bass.",
+      "Notice changes: where it gets louder, faster, calmer or adds new instruments."
+     ],
+     "q": "Which song would you like to listen to really closely?",
+     "c": "Listen to one song with full attention and name every instrument you can hear."
+    },
+    "de": {
+     "t": "Aktives Zuhören",
+     "g": "Ein Lied hören und dabei Melodie, Rhythmus und Instrumente bewusst wahrnehmen.",
+     "p": [
+      "Aktives Zuhören heißt, sich auf die Musik zu konzentrieren, statt sie nebenbei laufen zu lassen.",
+      "Hör mehrmals hin und folge jedes Mal einer Sache: Stimme, Schlagzeug, Bass.",
+      "Achte auf Veränderungen: wo es lauter, schneller, ruhiger wird oder neue Instrumente kommen."
+     ],
+     "q": "Welches Lied würdest du gern einmal ganz genau anhören?",
+     "c": "Hör ein Lied mit voller Aufmerksamkeit und zähl jedes Instrument auf, das du erkennst."
+    },
+    "es": {
+     "t": "Escucha activa",
+     "g": "Escuchar una canción fijándote en su melodía, su ritmo y sus instrumentos.",
+     "p": [
+      "Escuchar de forma activa es centrarte en la música en vez de dejarla de fondo.",
+      "Escucha varias veces y sigue cada vez una cosa: la voz, la batería, el bajo.",
+      "Fíjate en los cambios: dónde sube el volumen, se acelera, se calma o entran instrumentos nuevos."
+     ],
+     "q": "¿Qué canción te gustaría escuchar con mucha atención?",
+     "c": "Escucha una canción con toda tu atención y nombra cada instrumento que oigas."
+    },
+    "fr": {
+     "t": "L'écoute active",
+     "g": "Écouter une chanson en remarquant sa mélodie, son rythme et ses instruments.",
+     "p": [
+      "L'écoute active, c'est se concentrer sur la musique au lieu de la laisser en fond sonore.",
+      "Écoute plusieurs fois en suivant à chaque fois un élément : la voix, la batterie, la basse.",
+      "Repère les changements : où ça devient plus fort, plus rapide, plus calme ou plus riche."
+     ],
+     "q": "Quelle chanson aimerais-tu écouter vraiment de près ?",
+     "c": "Écoute une chanson avec toute ton attention et nomme chaque instrument que tu entends."
+    },
+    "it": {
+     "t": "Ascolto attivo",
+     "g": "Ascoltare una canzone notando melodia, ritmo e strumenti.",
+     "p": [
+      "Ascoltare in modo attivo vuol dire concentrarsi sulla musica invece di lasciarla in sottofondo.",
+      "Ascolta più volte e segui ogni volta una cosa: la voce, la batteria, il basso.",
+      "Nota i cambiamenti: dove diventa più forte, più veloce, più calma o entrano nuovi strumenti."
+     ],
+     "q": "Quale canzone vorresti ascoltare davvero da vicino?",
+     "c": "Ascolta una canzone con piena attenzione e nomina ogni strumento che senti."
+    },
+    "pt": {
+     "t": "Escuta ativa",
+     "g": "Ouvir uma música reparando na melodia, no ritmo e nos instrumentos.",
+     "p": [
+      "Escuta ativa é concentrares-te na música em vez de a deixares a tocar em fundo.",
+      "Ouve várias vezes e segue de cada vez uma coisa: a voz, a bateria, o baixo.",
+      "Repara nas mudanças: onde fica mais forte, mais rápida, mais calma ou entram novos instrumentos."
+     ],
+     "q": "Que música gostavas de ouvir mesmo com atenção?",
+     "c": "Ouve uma música com toda a atenção e diz o nome de cada instrumento que ouves."
+    },
+    "pt_BR": {
+     "t": "Escuta ativa",
+     "g": "Ouvir uma música prestando atenção na melodia, no ritmo e nos instrumentos.",
+     "p": [
+      "Escuta ativa é se concentrar na música em vez de deixá-la tocando de fundo.",
+      "Ouça várias vezes e siga uma coisa por vez: a voz, a bateria, o baixo.",
+      "Repare nas mudanças: onde fica mais forte, mais rápida, mais calma ou entram novos instrumentos."
+     ],
+     "q": "Qual música você gostaria de ouvir com muita atenção?",
+     "c": "Ouça uma música com toda a atenção e diga o nome de cada instrumento que você ouve."
+    }
+   }
+  }
+ ]
+}

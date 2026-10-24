@@ -1,0 +1,835 @@
+{
+ "topic": "drawing",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing straight lines",
+     "g": "Draw confident straight lines in one stroke by ghosting the movement first.",
+     "p": [
+      "Mark a start dot and an end dot, then ghost the line above the paper two or three times.",
+      "Look at the end dot, not the pencil tip, while you draw the line in one stroke.",
+      "A confident, slightly wobbly line looks better than a hesitant, hairy one made of many strokes."
+     ],
+     "q": "Do you tend to draw lines with one stroke or many little ones?",
+     "c": "Place ten pairs of dots across a page and connect each pair with a single ghosted stroke."
+    },
+    "de": {
+     "t": "Gerade Linien zeichnen",
+     "g": "Sichere gerade Linien in einem Zug zeichnen, indem du die Bewegung erst in der Luft übst.",
+     "p": [
+      "Setz einen Start- und einen Endpunkt und führ die Linie zwei-, dreimal knapp über dem Papier.",
+      "Schau beim Zeichnen auf den Endpunkt, nicht auf die Stiftspitze, und zieh in einem Zug.",
+      "Eine sichere, leicht wackelige Linie wirkt besser als eine zögerliche aus vielen Strichen."
+     ],
+     "q": "Zeichnest du Linien eher in einem Zug oder aus vielen kleinen Strichen?",
+     "c": "Verteile zehn Punktpaare auf einer Seite und verbinde jedes Paar mit einem einzigen Zug."
+    },
+    "es": {
+     "t": "Dibujar líneas rectas",
+     "g": "Trazar rectas seguras de un solo gesto ensayando antes el movimiento en el aire.",
+     "p": [
+      "Marca un punto de inicio y uno final y repasa el gesto sobre el papel dos o tres veces sin tocarlo.",
+      "Mira el punto final, no la punta del lápiz, mientras trazas la línea de una vez.",
+      "Una línea decidida y algo temblorosa queda mejor que una dudosa hecha de muchos trazos."
+     ],
+     "q": "¿Sueles trazar las líneas de una vez o con muchos trazos cortos?",
+     "c": "Pon diez pares de puntos en una página y únelos cada uno con un solo trazo ensayado."
+    },
+    "fr": {
+     "t": "Tracer des droites",
+     "g": "Tracer des droites assurées d'un seul geste en répétant d'abord le mouvement à vide.",
+     "p": [
+      "Marque un point de départ et d'arrivée, puis répète le geste au-dessus de la feuille deux ou trois fois.",
+      "Regarde le point d'arrivée, pas la pointe, et trace la ligne d'un seul coup.",
+      "Une ligne franche un peu tremblée vaut mieux qu'une ligne hésitante faite de petits traits."
+     ],
+     "q": "Traces-tu tes lignes d'un seul geste ou avec plein de petits traits ?",
+     "c": "Place dix paires de points sur une page et relie chaque paire d'un seul trait répété à vide."
+    },
+    "it": {
+     "t": "Disegnare linee dritte",
+     "g": "Tracciare linee dritte sicure in un solo gesto provando prima il movimento a vuoto.",
+     "p": [
+      "Segna un punto di partenza e uno di arrivo e prova il gesto sopra il foglio due o tre volte.",
+      "Guarda il punto di arrivo, non la punta, mentre tracci la linea in un colpo solo.",
+      "Una linea decisa e un po' tremolante è meglio di una incerta fatta di tanti trattini."
+     ],
+     "q": "Di solito tracci le linee in un gesto solo o con tanti trattini?",
+     "c": "Metti dieci coppie di punti su una pagina e unisci ogni coppia con un solo gesto provato prima."
+    },
+    "pt": {
+     "t": "Desenhar linhas retas",
+     "g": "Traçar retas seguras de um só gesto, ensaiando primeiro o movimento no ar.",
+     "p": [
+      "Marca um ponto de início e um de fim e ensaia o gesto acima do papel duas ou três vezes.",
+      "Olha para o ponto final, não para a ponta do lápis, e traça a linha de uma vez.",
+      "Uma linha decidida e um pouco tremida fica melhor do que uma hesitante feita de muitos traços."
+     ],
+     "q": "Costumas traçar linhas de uma vez ou com muitos tracinhos?",
+     "c": "Põe dez pares de pontos numa página e une cada par com um só traço ensaiado."
+    },
+    "pt_BR": {
+     "t": "Desenhando linhas retas",
+     "g": "Traçar retas firmes de um só gesto, ensaiando o movimento no ar antes.",
+     "p": [
+      "Marque um ponto de início e um de fim e ensaie o gesto acima do papel duas ou três vezes.",
+      "Olhe para o ponto final, não para a ponta do lápis, e trace a linha de uma vez.",
+      "Uma linha decidida e meio tremida fica melhor que uma insegura feita de vários tracinhos."
+     ],
+     "q": "Você costuma traçar linhas de uma vez ou com vários tracinhos?",
+     "c": "Coloque dez pares de pontos numa página e ligue cada par com um único traço ensaiado."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing curves and circles",
+     "g": "Build smooth arcs, ovals and circles through repetition and rhythm.",
+     "p": [
+      "Draw circles in one continuous motion, going around lightly two or three times.",
+      "Rotate the paper so curves follow the natural swing of your arm.",
+      "Rhythm matters more than precision: a relaxed, quick curve is smoother than a slow one."
+     ],
+     "q": "Which is harder for you right now, straight lines or circles?",
+     "c": "Fill a page with circles of three sizes, then pick your three best and darken them."
+    },
+    "de": {
+     "t": "Kurven und Kreise",
+     "g": "Glatte Bögen, Ovale und Kreise durch Wiederholung und Rhythmus aufbauen.",
+     "p": [
+      "Zeichne Kreise in einer fließenden Bewegung und fahr sie leicht zwei-, dreimal nach.",
+      "Dreh das Papier, damit Kurven dem natürlichen Schwung deines Arms folgen.",
+      "Rhythmus zählt mehr als Präzision: Eine lockere, schnelle Kurve wird glatter als eine langsame."
+     ],
+     "q": "Was fällt dir gerade schwerer, gerade Linien oder Kreise?",
+     "c": "Füll eine Seite mit Kreisen in drei Größen und zieh die drei besten dunkler nach."
+    },
+    "es": {
+     "t": "Curvas y círculos",
+     "g": "Lograr arcos, óvalos y círculos suaves con repetición y ritmo.",
+     "p": [
+      "Dibuja círculos en un solo movimiento continuo, dando dos o tres vueltas suaves.",
+      "Gira el papel para que las curvas sigan el giro natural de tu brazo.",
+      "El ritmo importa más que la precisión: una curva rápida y suelta sale más suave que una lenta."
+     ],
+     "q": "¿Qué te cuesta más ahora, las rectas o los círculos?",
+     "c": "Llena una página de círculos de tres tamaños y repasa más oscuros tus tres mejores."
+    },
+    "fr": {
+     "t": "Courbes et cercles",
+     "g": "Obtenir des arcs, ovales et cercles fluides grâce à la répétition et au rythme.",
+     "p": [
+      "Dessine les cercles d'un geste continu en tournant légèrement deux ou trois fois.",
+      "Tourne la feuille pour que les courbes suivent le mouvement naturel de ton bras.",
+      "Le rythme compte plus que la précision : une courbe rapide et détendue est plus fluide qu'une lente."
+     ],
+     "q": "Qu'est-ce qui est le plus dur pour toi en ce moment, les droites ou les cercles ?",
+     "c": "Remplis une page de cercles de trois tailles, puis repasse plus foncé tes trois meilleurs."
+    },
+    "it": {
+     "t": "Curve e cerchi",
+     "g": "Ottenere archi, ovali e cerchi fluidi con ripetizione e ritmo.",
+     "p": [
+      "Disegna i cerchi in un unico movimento continuo, girando leggero due o tre volte.",
+      "Ruota il foglio perché le curve seguano l'oscillazione naturale del braccio.",
+      "Il ritmo conta più della precisione: una curva veloce e rilassata viene più fluida di una lenta."
+     ],
+     "q": "Cosa ti riesce più difficile ora, le linee dritte o i cerchi?",
+     "c": "Riempi una pagina di cerchi di tre misure e ripassa più scuri i tuoi tre migliori."
+    },
+    "pt": {
+     "t": "Curvas e círculos",
+     "g": "Conseguir arcos, ovais e círculos suaves com repetição e ritmo.",
+     "p": [
+      "Desenha círculos num movimento contínuo, dando duas ou três voltas leves.",
+      "Roda o papel para que as curvas sigam o balanço natural do braço.",
+      "O ritmo conta mais do que a precisão: uma curva rápida e solta sai mais suave do que uma lenta."
+     ],
+     "q": "O que te custa mais agora, retas ou círculos?",
+     "c": "Enche uma página de círculos de três tamanhos e escurece os teus três melhores."
+    },
+    "pt_BR": {
+     "t": "Curvas e círculos",
+     "g": "Conseguir arcos, ovais e círculos suaves com repetição e ritmo.",
+     "p": [
+      "Desenhe círculos num movimento contínuo, dando duas ou três voltas leves.",
+      "Gire o papel para as curvas seguirem o balanço natural do braço.",
+      "Ritmo importa mais que precisão: uma curva rápida e solta sai mais suave que uma lenta."
+     ],
+     "q": "O que está mais difícil para você agora, retas ou círculos?",
+     "c": "Encha uma página de círculos de três tamanhos e escureça os seus três melhores."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Line weight",
+     "g": "Use thick and thin lines to show importance, depth and light.",
+     "p": [
+      "Thicker, darker lines feel closer and heavier; thin, light lines feel far away or lit.",
+      "Make lines thicker where an object touches the ground or where shadows are.",
+      "Varying the weight of one line can make a simple outline look alive and three-dimensional."
+     ],
+     "q": "Have you noticed thick and thin lines in comics or illustrations you like?",
+     "c": "Draw the outline of an apple twice: once with even lines, once with varied weight, and compare."
+    },
+    "de": {
+     "t": "Linienstärke",
+     "g": "Dicke und dünne Linien nutzen, um Wichtigkeit, Tiefe und Licht zu zeigen.",
+     "p": [
+      "Dicke, dunkle Linien wirken näher und schwerer, dünne, helle wirken fern oder beleuchtet.",
+      "Mach Linien dicker, wo ein Objekt den Boden berührt oder Schatten liegt.",
+      "Wechselnde Stärke in einer Linie lässt einen einfachen Umriss lebendig und räumlich wirken."
+     ],
+     "q": "Sind dir dicke und dünne Linien in Comics oder Illustrationen aufgefallen, die du magst?",
+     "c": "Zeichne einen Apfel zweimal: einmal mit gleichmäßiger Linie, einmal mit wechselnder Stärke."
+    },
+    "es": {
+     "t": "Grosor de línea",
+     "g": "Usar líneas gruesas y finas para mostrar importancia, profundidad y luz.",
+     "p": [
+      "Las líneas gruesas y oscuras parecen cercanas y pesadas; las finas y claras, lejanas o iluminadas.",
+      "Engrosa la línea donde el objeto toca el suelo o donde hay sombra.",
+      "Variar el grosor de una sola línea hace que un contorno simple parezca vivo y con volumen."
+     ],
+     "q": "¿Te has fijado en las líneas gruesas y finas de cómics o ilustraciones que te gustan?",
+     "c": "Dibuja el contorno de una manzana dos veces: con línea uniforme y con grosor variado, y compara."
+    },
+    "fr": {
+     "t": "L'épaisseur du trait",
+     "g": "Utiliser traits épais et fins pour montrer importance, profondeur et lumière.",
+     "p": [
+      "Un trait épais et foncé paraît proche et lourd ; un trait fin et clair paraît lointain ou éclairé.",
+      "Épaissis le trait là où l'objet touche le sol ou dans les zones d'ombre.",
+      "Faire varier l'épaisseur d'un seul trait rend un contour simple vivant et en volume."
+     ],
+     "q": "As-tu remarqué les traits épais et fins dans les BD ou illustrations que tu aimes ?",
+     "c": "Dessine une pomme deux fois : trait uniforme puis trait d'épaisseur variée, et compare."
+    },
+    "it": {
+     "t": "Spessore della linea",
+     "g": "Usare linee spesse e sottili per mostrare importanza, profondità e luce.",
+     "p": [
+      "Le linee spesse e scure sembrano vicine e pesanti; quelle sottili e chiare lontane o illuminate.",
+      "Ispessisci la linea dove l'oggetto tocca il piano o dove c'è ombra.",
+      "Variare lo spessore di una sola linea rende vivo e tridimensionale un contorno semplice."
+     ],
+     "q": "Hai notato linee spesse e sottili nei fumetti o nelle illustrazioni che ami?",
+     "c": "Disegna il contorno di una mela due volte: linea uniforme e spessore variato, poi confronta."
+    },
+    "pt": {
+     "t": "Espessura da linha",
+     "g": "Usar linhas grossas e finas para mostrar importância, profundidade e luz.",
+     "p": [
+      "Linhas grossas e escuras parecem próximas e pesadas; finas e claras parecem distantes ou iluminadas.",
+      "Engrossa a linha onde o objeto toca o chão ou onde há sombra.",
+      "Variar a espessura de uma só linha torna um contorno simples vivo e com volume."
+     ],
+     "q": "Já reparaste em linhas grossas e finas nas BD ou ilustrações de que gostas?",
+     "c": "Desenha o contorno de uma maçã duas vezes: linha uniforme e espessura variada, e compara."
+    },
+    "pt_BR": {
+     "t": "Peso da linha",
+     "g": "Usar linhas grossas e finas para mostrar importância, profundidade e luz.",
+     "p": [
+      "Linhas grossas e escuras parecem próximas e pesadas; finas e claras parecem distantes ou iluminadas.",
+      "Engrosse a linha onde o objeto toca o chão ou onde há sombra.",
+      "Variar a espessura de uma só linha deixa um contorno simples vivo e com volume."
+     ],
+     "q": "Você já reparou nas linhas grossas e finas dos quadrinhos ou ilustrações que curte?",
+     "c": "Desenhe o contorno de uma maçã duas vezes: linha uniforme e peso variado, e compare."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mark-making exploration",
+     "g": "Discover every mark your pencil can make and build your own texture library.",
+     "p": [
+      "Try dots, dashes, zigzags, loops, scribbles and smudges with different pressures.",
+      "Every mark can later become a texture: grass, fur, stone, water or clouds.",
+      "There are no wrong marks today; curiosity is the whole point."
+     ],
+     "q": "What everyday texture would you like to capture with a pencil?",
+     "c": "Divide a page into 12 boxes and fill each with a different kind of mark."
+    },
+    "de": {
+     "t": "Spuren erkunden",
+     "g": "Alle Spuren entdecken, die dein Stift machen kann, und eine eigene Texturbibliothek anlegen.",
+     "p": [
+      "Probier Punkte, Striche, Zickzack, Schlaufen, Kritzel und Wischer mit verschiedenem Druck.",
+      "Jede Spur kann später zur Textur werden: Gras, Fell, Stein, Wasser oder Wolken.",
+      "Heute gibt es keine falschen Spuren, Neugier ist das ganze Ziel."
+     ],
+     "q": "Welche alltägliche Textur würdest du gern mit dem Bleistift einfangen?",
+     "c": "Teil eine Seite in 12 Felder und füll jedes mit einer anderen Art von Strich."
+    },
+    "es": {
+     "t": "Explorar trazos",
+     "g": "Descubrir todas las marcas que hace tu lápiz y crear tu propia biblioteca de texturas.",
+     "p": [
+      "Prueba puntos, rayas, zigzags, bucles, garabatos y difuminados con distintas presiones.",
+      "Cada marca puede ser luego una textura: hierba, pelo, piedra, agua o nubes.",
+      "Hoy no hay marcas incorrectas; la curiosidad es todo el objetivo."
+     ],
+     "q": "¿Qué textura cotidiana te gustaría captar con un lápiz?",
+     "c": "Divide una página en 12 casillas y llena cada una con un tipo distinto de marca."
+    },
+    "fr": {
+     "t": "Explorer les traces",
+     "g": "Découvrir toutes les traces de ton crayon et créer ta propre bibliothèque de textures.",
+     "p": [
+      "Essaie points, tirets, zigzags, boucles, gribouillis et estompages avec différentes pressions.",
+      "Chaque trace peut devenir une texture : herbe, pelage, pierre, eau ou nuages.",
+      "Aujourd'hui, aucune trace n'est fausse ; la curiosité est tout l'enjeu."
+     ],
+     "q": "Quelle texture du quotidien aimerais-tu rendre au crayon ?",
+     "c": "Divise une page en 12 cases et remplis chacune d'un type de trace différent."
+    },
+    "it": {
+     "t": "Esplorare i segni",
+     "g": "Scoprire tutti i segni che fa la tua matita e creare una tua libreria di texture.",
+     "p": [
+      "Prova punti, trattini, zigzag, riccioli, scarabocchi e sfumati con pressioni diverse.",
+      "Ogni segno può diventare una texture: erba, pelo, pietra, acqua o nuvole.",
+      "Oggi non esistono segni sbagliati; la curiosità è tutto."
+     ],
+     "q": "Quale texture quotidiana ti piacerebbe rendere a matita?",
+     "c": "Dividi una pagina in 12 riquadri e riempi ognuno con un tipo di segno diverso."
+    },
+    "pt": {
+     "t": "Explorar marcas",
+     "g": "Descobrir todas as marcas que o lápis faz e criar a tua biblioteca de texturas.",
+     "p": [
+      "Experimenta pontos, traços, ziguezagues, laços, rabiscos e esbatidos com várias pressões.",
+      "Cada marca pode depois virar textura: relva, pelo, pedra, água ou nuvens.",
+      "Hoje não há marcas erradas; a curiosidade é o objetivo."
+     ],
+     "q": "Que textura do dia a dia gostavas de captar a lápis?",
+     "c": "Divide uma página em 12 quadrados e enche cada um com um tipo de marca diferente."
+    },
+    "pt_BR": {
+     "t": "Explorando traços",
+     "g": "Descobrir todas as marcas que o lápis faz e montar sua biblioteca de texturas.",
+     "p": [
+      "Teste pontos, traços, ziguezagues, laços, rabiscos e esfumados com pressões diferentes.",
+      "Cada marca pode virar textura depois: grama, pelo, pedra, água ou nuvens.",
+      "Hoje não existe marca errada; a curiosidade é o objetivo."
+     ],
+     "q": "Que textura do dia a dia você gostaria de captar no lápis?",
+     "c": "Divida uma página em 12 quadrados e preencha cada um com um tipo diferente de marca."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The basic shapes",
+     "g": "See any object as circles, squares and triangles to start drawings simply.",
+     "p": [
+      "Squint at an object to blur details and reveal its simplest shapes.",
+      "A house is a square plus a triangle; a cat's head can start as a circle with two triangles.",
+      "Starting with big simple shapes keeps proportions right before details arrive."
+     ],
+     "q": "Look around: which object near you is basically just a circle or a square?",
+     "c": "Draw five objects in your room using only circles, squares and triangles."
+    },
+    "de": {
+     "t": "Die Grundformen",
+     "g": "Jedes Objekt als Kreis, Quadrat und Dreieck sehen, um Zeichnungen einfach zu beginnen.",
+     "p": [
+      "Kneif die Augen zusammen: Details verschwimmen, die einfachsten Formen bleiben.",
+      "Ein Haus ist Quadrat plus Dreieck, ein Katzenkopf beginnt als Kreis mit zwei Dreiecken.",
+      "Große einfache Formen zuerst halten die Proportionen richtig, bevor Details kommen."
+     ],
+     "q": "Schau dich um: Welcher Gegenstand ist im Grunde nur ein Kreis oder Quadrat?",
+     "c": "Zeichne fünf Gegenstände im Raum nur mit Kreisen, Quadraten und Dreiecken."
+    },
+    "es": {
+     "t": "Las formas básicas",
+     "g": "Ver cualquier objeto como círculos, cuadrados y triángulos para empezar a dibujar fácil.",
+     "p": [
+      "Entrecierra los ojos para difuminar detalles y ver las formas más simples.",
+      "Una casa es un cuadrado y un triángulo; la cabeza de un gato, un círculo con dos triángulos.",
+      "Empezar con formas grandes y simples mantiene las proporciones antes de los detalles."
+     ],
+     "q": "Mira a tu alrededor: ¿qué objeto cercano es básicamente un círculo o un cuadrado?",
+     "c": "Dibuja cinco objetos de tu habitación usando solo círculos, cuadrados y triángulos."
+    },
+    "fr": {
+     "t": "Les formes de base",
+     "g": "Voir tout objet comme cercles, carrés et triangles pour commencer simplement.",
+     "p": [
+      "Plisse les yeux pour flouter les détails et révéler les formes les plus simples.",
+      "Une maison, c'est un carré et un triangle ; une tête de chat, un cercle et deux triangles.",
+      "Commencer par de grandes formes simples garde les proportions justes avant les détails."
+     ],
+     "q": "Regarde autour de toi : quel objet proche est au fond un simple cercle ou carré ?",
+     "c": "Dessine cinq objets de ta pièce avec seulement des cercles, des carrés et des triangles."
+    },
+    "it": {
+     "t": "Le forme base",
+     "g": "Vedere ogni oggetto come cerchi, quadrati e triangoli per iniziare a disegnare in modo semplice.",
+     "p": [
+      "Socchiudi gli occhi per sfocare i dettagli e scoprire le forme più semplici.",
+      "Una casa è un quadrato più un triangolo; la testa di un gatto un cerchio con due triangoli.",
+      "Partire da forme grandi e semplici mantiene giuste le proporzioni prima dei dettagli."
+     ],
+     "q": "Guardati intorno: quale oggetto vicino è in fondo solo un cerchio o un quadrato?",
+     "c": "Disegna cinque oggetti della stanza usando solo cerchi, quadrati e triangoli."
+    },
+    "pt": {
+     "t": "As formas básicas",
+     "g": "Ver qualquer objeto como círculos, quadrados e triângulos para começar a desenhar com simplicidade.",
+     "p": [
+      "Semicerra os olhos para desfocar detalhes e revelar as formas mais simples.",
+      "Uma casa é um quadrado e um triângulo; a cabeça de um gato, um círculo com dois triângulos.",
+      "Começar por formas grandes e simples mantém as proporções certas antes dos detalhes."
+     ],
+     "q": "Olha à tua volta: que objeto perto de ti é basicamente um círculo ou um quadrado?",
+     "c": "Desenha cinco objetos do teu quarto usando só círculos, quadrados e triângulos."
+    },
+    "pt_BR": {
+     "t": "As formas básicas",
+     "g": "Ver qualquer objeto como círculos, quadrados e triângulos para começar a desenhar de forma simples.",
+     "p": [
+      "Aperte os olhos para borrar os detalhes e revelar as formas mais simples.",
+      "Uma casa é um quadrado mais um triângulo; a cabeça de um gato, um círculo com dois triângulos.",
+      "Começar com formas grandes e simples mantém as proporções certas antes dos detalhes."
+     ],
+     "q": "Olhe em volta: qual objeto perto de você é basicamente um círculo ou um quadrado?",
+     "c": "Desenhe cinco objetos do seu quarto usando só círculos, quadrados e triângulos."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "From shapes to forms",
+     "g": "Turn flat circles, squares and triangles into spheres, cubes and cones.",
+     "p": [
+      "A shape is flat with two dimensions; a form has depth and volume.",
+      "A circle becomes a sphere with a curved line across it; a square becomes a cube with a second face.",
+      "Thinking in forms helps you shade and turn objects in space later."
+     ],
+     "q": "Can you name an object at home that is a sphere, one that is a cube and one that is a cone?",
+     "c": "Draw a circle, a square and a triangle, then next to each, turn it into a 3D form."
+    },
+    "de": {
+     "t": "Von Formen zu Körpern",
+     "g": "Flache Kreise, Quadrate und Dreiecke in Kugeln, Würfel und Kegel verwandeln.",
+     "p": [
+      "Eine Form ist flach und zweidimensional, ein Körper hat Tiefe und Volumen.",
+      "Ein Kreis wird mit einer gebogenen Linie zur Kugel, ein Quadrat mit einer zweiten Fläche zum Würfel.",
+      "In Körpern zu denken hilft später beim Schattieren und Drehen von Objekten im Raum."
+     ],
+     "q": "Kennst du zu Hause eine Kugel, einen Würfel und einen Kegel?",
+     "c": "Zeichne Kreis, Quadrat und Dreieck und verwandle jedes daneben in einen 3D-Körper."
+    },
+    "es": {
+     "t": "De formas a volúmenes",
+     "g": "Convertir círculos, cuadrados y triángulos planos en esferas, cubos y conos.",
+     "p": [
+      "Una forma es plana, de dos dimensiones; un volumen tiene profundidad.",
+      "Un círculo se vuelve esfera con una línea curva; un cuadrado, cubo al añadir otra cara.",
+      "Pensar en volúmenes te ayudará luego a sombrear y girar objetos en el espacio."
+     ],
+     "q": "¿Puedes nombrar en tu casa una esfera, un cubo y un cono?",
+     "c": "Dibuja un círculo, un cuadrado y un triángulo, y al lado convierte cada uno en un volumen 3D."
+    },
+    "fr": {
+     "t": "Des formes aux volumes",
+     "g": "Transformer cercles, carrés et triangles plats en sphères, cubes et cônes.",
+     "p": [
+      "Une forme est plate, en deux dimensions ; un volume a de la profondeur.",
+      "Un cercle devient sphère avec une ligne courbe ; un carré devient cube avec une deuxième face.",
+      "Penser en volumes t'aidera plus tard à ombrer et à faire tourner les objets dans l'espace."
+     ],
+     "q": "Peux-tu citer chez toi une sphère, un cube et un cône ?",
+     "c": "Dessine un cercle, un carré et un triangle, puis transforme chacun en volume 3D à côté."
+    },
+    "it": {
+     "t": "Dalle forme ai volumi",
+     "g": "Trasformare cerchi, quadrati e triangoli piatti in sfere, cubi e coni.",
+     "p": [
+      "Una forma è piatta, a due dimensioni; un volume ha profondità.",
+      "Un cerchio diventa sfera con una linea curva; un quadrato diventa cubo con una seconda faccia.",
+      "Pensare per volumi ti aiuterà poi a ombreggiare e ruotare gli oggetti nello spazio."
+     ],
+     "q": "Sai trovare in casa una sfera, un cubo e un cono?",
+     "c": "Disegna un cerchio, un quadrato e un triangolo e accanto trasforma ognuno in un volume 3D."
+    },
+    "pt": {
+     "t": "De formas a volumes",
+     "g": "Transformar círculos, quadrados e triângulos planos em esferas, cubos e cones.",
+     "p": [
+      "Uma forma é plana, com duas dimensões; um volume tem profundidade.",
+      "Um círculo vira esfera com uma linha curva; um quadrado vira cubo com uma segunda face.",
+      "Pensar em volumes vai ajudar-te a sombrear e a rodar objetos no espaço."
+     ],
+     "q": "Consegues nomear em casa uma esfera, um cubo e um cone?",
+     "c": "Desenha um círculo, um quadrado e um triângulo e, ao lado, transforma cada um num volume 3D."
+    },
+    "pt_BR": {
+     "t": "De formas a volumes",
+     "g": "Transformar círculos, quadrados e triângulos planos em esferas, cubos e cones.",
+     "p": [
+      "Forma é plana, com duas dimensões; volume tem profundidade.",
+      "Um círculo vira esfera com uma linha curva; um quadrado vira cubo com uma segunda face.",
+      "Pensar em volumes vai ajudar você a sombrear e girar objetos no espaço depois."
+     ],
+     "q": "Você consegue citar na sua casa uma esfera, um cubo e um cone?",
+     "c": "Desenhe um círculo, um quadrado e um triângulo e, ao lado, transforme cada um num volume 3D."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing a cube",
+     "g": "Draw a solid-looking box showing three faces with parallel edges.",
+     "p": [
+      "Start with the top face as a tilted diamond, then drop vertical lines from its corners.",
+      "Edges that are parallel in reality should stay parallel in a simple cube drawing.",
+      "Draw it see-through first, with hidden edges lightly, to check it makes sense."
+     ],
+     "q": "What box-shaped objects do you use every day?",
+     "c": "Draw five cubes seen from different angles, including the hidden back edges lightly."
+    },
+    "de": {
+     "t": "Einen Würfel zeichnen",
+     "g": "Eine massiv wirkende Box mit drei sichtbaren Flächen und parallelen Kanten zeichnen.",
+     "p": [
+      "Beginn mit der Oberseite als geneigte Raute und zieh von den Ecken senkrechte Linien nach unten.",
+      "Kanten, die in Wirklichkeit parallel sind, bleiben in einem einfachen Würfel parallel.",
+      "Zeichne ihn erst durchsichtig mit leichten verdeckten Kanten, um ihn zu prüfen."
+     ],
+     "q": "Welche würfelförmigen Gegenstände benutzt du jeden Tag?",
+     "c": "Zeichne fünf Würfel aus verschiedenen Blickwinkeln, die hinteren Kanten leicht mit."
+    },
+    "es": {
+     "t": "Dibujar un cubo",
+     "g": "Dibujar una caja sólida que muestre tres caras con aristas paralelas.",
+     "p": [
+      "Empieza por la cara superior como un rombo inclinado y baja líneas verticales desde sus esquinas.",
+      "Las aristas paralelas en la realidad siguen paralelas en un cubo sencillo.",
+      "Dibújalo primero transparente, con las aristas ocultas suaves, para comprobarlo."
+     ],
+     "q": "¿Qué objetos con forma de caja usas cada día?",
+     "c": "Dibuja cinco cubos desde ángulos distintos, con las aristas traseras en trazo suave."
+    },
+    "fr": {
+     "t": "Dessiner un cube",
+     "g": "Dessiner une boîte solide montrant trois faces aux arêtes parallèles.",
+     "p": [
+      "Commence par la face du dessus en losange incliné, puis descends des verticales depuis ses coins.",
+      "Les arêtes parallèles dans la réalité restent parallèles dans un cube simple.",
+      "Dessine-le d'abord transparent, arêtes cachées en trait léger, pour vérifier."
+     ],
+     "q": "Quels objets en forme de boîte utilises-tu chaque jour ?",
+     "c": "Dessine cinq cubes sous des angles différents, avec les arêtes arrière en trait léger."
+    },
+    "it": {
+     "t": "Disegnare un cubo",
+     "g": "Disegnare una scatola solida che mostri tre facce con spigoli paralleli.",
+     "p": [
+      "Inizia dalla faccia superiore come un rombo inclinato e scendi con linee verticali dagli angoli.",
+      "Gli spigoli paralleli nella realtà restano paralleli in un cubo semplice.",
+      "Disegnalo prima trasparente, con gli spigoli nascosti leggeri, per controllarlo."
+     ],
+     "q": "Quali oggetti a forma di scatola usi ogni giorno?",
+     "c": "Disegna cinque cubi da angolazioni diverse, con gli spigoli posteriori leggeri."
+    },
+    "pt": {
+     "t": "Desenhar um cubo",
+     "g": "Desenhar uma caixa sólida com três faces visíveis e arestas paralelas.",
+     "p": [
+      "Começa pela face de cima como um losango inclinado e desce linhas verticais dos cantos.",
+      "Arestas paralelas na realidade continuam paralelas num cubo simples.",
+      "Desenha-o primeiro transparente, com as arestas escondidas leves, para verificar."
+     ],
+     "q": "Que objetos em forma de caixa usas todos os dias?",
+     "c": "Desenha cinco cubos de ângulos diferentes, com as arestas de trás em traço leve."
+    },
+    "pt_BR": {
+     "t": "Desenhando um cubo",
+     "g": "Desenhar uma caixa sólida com três faces visíveis e arestas paralelas.",
+     "p": [
+      "Comece pela face de cima como um losango inclinado e desça linhas verticais dos cantos.",
+      "Arestas paralelas na realidade continuam paralelas num cubo simples.",
+      "Desenhe primeiro transparente, com as arestas escondidas bem leves, para conferir."
+     ],
+     "q": "Quais objetos em formato de caixa você usa todo dia?",
+     "c": "Desenhe cinco cubos de ângulos diferentes, com as arestas de trás em traço leve."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing a cylinder",
+     "g": "Draw cylinders as two ellipses joined by straight sides, the base of cups, cans and trees.",
+     "p": [
+      "Draw the top ellipse, then two straight vertical sides, then the bottom curve.",
+      "The bottom ellipse is a bit rounder than the top when you look down at a cylinder.",
+      "Cups, cans, candles, tree trunks and arms all start as cylinders."
+     ],
+     "q": "How many cylinders can you spot on your table right now?",
+     "c": "Draw a can, a cup and a candle, each starting from a simple cylinder."
+    },
+    "de": {
+     "t": "Einen Zylinder zeichnen",
+     "g": "Zylinder als zwei Ellipsen mit geraden Seiten zeichnen, Basis für Tassen, Dosen und Bäume.",
+     "p": [
+      "Zeichne die obere Ellipse, dann zwei gerade senkrechte Seiten, dann die untere Kurve.",
+      "Schaust du von oben, ist die untere Ellipse etwas runder als die obere.",
+      "Tassen, Dosen, Kerzen, Baumstämme und Arme beginnen alle als Zylinder."
+     ],
+     "q": "Wie viele Zylinder entdeckst du gerade auf deinem Tisch?",
+     "c": "Zeichne eine Dose, eine Tasse und eine Kerze, jeweils aus einem einfachen Zylinder."
+    },
+    "es": {
+     "t": "Dibujar un cilindro",
+     "g": "Dibujar cilindros como dos elipses unidas por lados rectos, base de tazas, latas y árboles.",
+     "p": [
+      "Dibuja la elipse superior, luego dos lados verticales rectos y después la curva inferior.",
+      "Si miras desde arriba, la elipse inferior es algo más redonda que la superior.",
+      "Tazas, latas, velas, troncos y brazos empiezan como cilindros."
+     ],
+     "q": "¿Cuántos cilindros ves ahora mismo en tu mesa?",
+     "c": "Dibuja una lata, una taza y una vela, cada una a partir de un cilindro simple."
+    },
+    "fr": {
+     "t": "Dessiner un cylindre",
+     "g": "Dessiner un cylindre comme deux ellipses reliées par des côtés droits, base des tasses, canettes et arbres.",
+     "p": [
+      "Trace l'ellipse du haut, puis deux côtés verticaux droits, puis la courbe du bas.",
+      "Vu d'en haut, l'ellipse du bas est un peu plus ronde que celle du haut.",
+      "Tasses, canettes, bougies, troncs et bras commencent tous par un cylindre."
+     ],
+     "q": "Combien de cylindres vois-tu sur ta table en ce moment ?",
+     "c": "Dessine une canette, une tasse et une bougie, chacune à partir d'un cylindre simple."
+    },
+    "it": {
+     "t": "Disegnare un cilindro",
+     "g": "Disegnare cilindri come due ellissi unite da lati dritti, base di tazze, lattine e alberi.",
+     "p": [
+      "Traccia l'ellisse superiore, poi due lati verticali dritti, poi la curva inferiore.",
+      "Guardando dall'alto, l'ellisse inferiore è un po' più rotonda di quella superiore.",
+      "Tazze, lattine, candele, tronchi e braccia partono tutti da un cilindro."
+     ],
+     "q": "Quanti cilindri vedi in questo momento sul tuo tavolo?",
+     "c": "Disegna una lattina, una tazza e una candela, ognuna partendo da un cilindro semplice."
+    },
+    "pt": {
+     "t": "Desenhar um cilindro",
+     "g": "Desenhar cilindros como duas elipses unidas por lados retos, base de chávenas, latas e árvores.",
+     "p": [
+      "Desenha a elipse de cima, depois dois lados verticais retos e por fim a curva de baixo.",
+      "Vista de cima, a elipse de baixo é um pouco mais redonda do que a de cima.",
+      "Chávenas, latas, velas, troncos e braços começam todos como cilindros."
+     ],
+     "q": "Quantos cilindros vês agora na tua mesa?",
+     "c": "Desenha uma lata, uma chávena e uma vela, cada uma a partir de um cilindro simples."
+    },
+    "pt_BR": {
+     "t": "Desenhando um cilindro",
+     "g": "Desenhar cilindros como duas elipses ligadas por lados retos, base de canecas, latas e árvores.",
+     "p": [
+      "Desenhe a elipse de cima, depois dois lados verticais retos e por fim a curva de baixo.",
+      "Vista de cima, a elipse de baixo é um pouco mais redonda que a de cima.",
+      "Canecas, latas, velas, troncos e braços começam todos como cilindros."
+     ],
+     "q": "Quantos cilindros você vê agora na sua mesa?",
+     "c": "Desenhe uma lata, uma caneca e uma vela, cada uma a partir de um cilindro simples."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing ellipses",
+     "g": "Understand how circles look in perspective and draw smooth, symmetrical ellipses.",
+     "p": [
+      "A circle seen at an angle becomes an ellipse; the lower your eye, the flatter it gets.",
+      "Ellipses have rounded ends, never pointed corners like a lemon or an eye.",
+      "Draw a light cross first to keep both halves symmetrical, then go around in one motion."
+     ],
+     "q": "Where do you see ellipses around you, like the top of a glass or a plate?",
+     "c": "Draw a column of ellipses from almost flat to almost round, using the cross guide each time."
+    },
+    "de": {
+     "t": "Ellipsen zeichnen",
+     "g": "Verstehen, wie Kreise in Perspektive aussehen, und glatte, symmetrische Ellipsen zeichnen.",
+     "p": [
+      "Ein schräg gesehener Kreis wird zur Ellipse; je tiefer dein Auge, desto flacher.",
+      "Ellipsen haben runde Enden, niemals spitze Ecken wie eine Zitrone oder ein Auge.",
+      "Zeichne erst ein leichtes Kreuz für Symmetrie und fahr dann in einer Bewegung herum."
+     ],
+     "q": "Wo siehst du um dich herum Ellipsen, etwa am Glasrand oder bei einem Teller?",
+     "c": "Zeichne eine Spalte Ellipsen von fast flach bis fast rund, jedes Mal mit Hilfskreuz."
+    },
+    "es": {
+     "t": "Dibujar elipses",
+     "g": "Entender cómo se ve un círculo en perspectiva y trazar elipses suaves y simétricas.",
+     "p": [
+      "Un círculo visto en ángulo se convierte en elipse; cuanto más baja la mirada, más plana.",
+      "Las elipses tienen extremos redondeados, nunca puntas como un limón o un ojo.",
+      "Dibuja primero una cruz suave para la simetría y luego rodea de un solo gesto."
+     ],
+     "q": "¿Dónde ves elipses a tu alrededor, como el borde de un vaso o un plato?",
+     "c": "Dibuja una columna de elipses de casi planas a casi redondas, con la cruz guía cada vez."
+    },
+    "fr": {
+     "t": "Dessiner des ellipses",
+     "g": "Comprendre l'aspect d'un cercle en perspective et tracer des ellipses fluides et symétriques.",
+     "p": [
+      "Un cercle vu de biais devient une ellipse ; plus ton œil est bas, plus elle s'aplatit.",
+      "Une ellipse a des bouts arrondis, jamais pointus comme un citron ou un œil.",
+      "Trace d'abord une croix légère pour la symétrie, puis fais le tour d'un seul geste."
+     ],
+     "q": "Où vois-tu des ellipses autour de toi, comme le bord d'un verre ou d'une assiette ?",
+     "c": "Dessine une colonne d'ellipses de presque plates à presque rondes, avec la croix guide à chaque fois."
+    },
+    "it": {
+     "t": "Disegnare ellissi",
+     "g": "Capire come appare un cerchio in prospettiva e tracciare ellissi fluide e simmetriche.",
+     "p": [
+      "Un cerchio visto di sbieco diventa un'ellisse; più è basso l'occhio, più è schiacciata.",
+      "Le ellissi hanno estremità arrotondate, mai punte come un limone o un occhio.",
+      "Traccia prima una croce leggera per la simmetria, poi gira in un solo gesto."
+     ],
+     "q": "Dove vedi ellissi intorno a te, come il bordo di un bicchiere o di un piatto?",
+     "c": "Disegna una colonna di ellissi da quasi piatte a quasi rotonde, ogni volta con la croce guida."
+    },
+    "pt": {
+     "t": "Desenhar elipses",
+     "g": "Perceber como um círculo fica em perspetiva e traçar elipses suaves e simétricas.",
+     "p": [
+      "Um círculo visto de lado torna-se elipse; quanto mais baixo o olhar, mais achatada.",
+      "As elipses têm pontas arredondadas, nunca bicos como um limão ou um olho.",
+      "Traça primeiro uma cruz leve para a simetria e depois contorna num só gesto."
+     ],
+     "q": "Onde vês elipses à tua volta, como a boca de um copo ou um prato?",
+     "c": "Desenha uma coluna de elipses de quase planas a quase redondas, com a cruz guia em cada uma."
+    },
+    "pt_BR": {
+     "t": "Desenhando elipses",
+     "g": "Entender como um círculo fica em perspectiva e traçar elipses suaves e simétricas.",
+     "p": [
+      "Um círculo visto de lado vira elipse; quanto mais baixo o olhar, mais achatada ela fica.",
+      "Elipses têm pontas arredondadas, nunca bicos como um limão ou um olho.",
+      "Trace antes uma cruz leve para a simetria e depois contorne num só gesto."
+     ],
+     "q": "Onde você vê elipses ao seu redor, como a boca de um copo ou um prato?",
+     "c": "Desenhe uma coluna de elipses de quase planas a quase redondas, com a cruz guia em cada uma."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing cones and pyramids",
+     "g": "Draw pointed forms and spot them in objects all around you.",
+     "p": [
+      "A cone is an ellipse with two straight lines meeting at a tip above its centre.",
+      "A pyramid is a square or triangle base with edges rising to one point.",
+      "Funnels, party hats, carrots, rooftops and mountains all hide cones and pyramids."
+     ],
+     "q": "What cone- or pyramid-shaped thing have you seen today?",
+     "c": "Draw a cone and a pyramid, then turn them into an ice-cream cone and a tent."
+    },
+    "de": {
+     "t": "Kegel und Pyramiden",
+     "g": "Spitze Körper zeichnen und sie in Gegenständen um dich herum entdecken.",
+     "p": [
+      "Ein Kegel ist eine Ellipse mit zwei geraden Linien, die sich über ihrer Mitte in einer Spitze treffen.",
+      "Eine Pyramide hat eine quadratische oder dreieckige Basis, deren Kanten zu einem Punkt steigen.",
+      "Trichter, Partyhüte, Karotten, Dächer und Berge verstecken Kegel und Pyramiden."
+     ],
+     "q": "Welches kegel- oder pyramidenförmige Ding hast du heute gesehen?",
+     "c": "Zeichne einen Kegel und eine Pyramide und mach daraus eine Eistüte und ein Zelt."
+    },
+    "es": {
+     "t": "Conos y pirámides",
+     "g": "Dibujar formas puntiagudas y encontrarlas en objetos a tu alrededor.",
+     "p": [
+      "Un cono es una elipse con dos rectas que se unen en una punta sobre su centro.",
+      "Una pirámide es una base cuadrada o triangular con aristas que suben a un punto.",
+      "Embudos, gorros de fiesta, zanahorias, tejados y montañas esconden conos y pirámides."
+     ],
+     "q": "¿Qué cosa con forma de cono o pirámide has visto hoy?",
+     "c": "Dibuja un cono y una pirámide y conviértelos en un cucurucho de helado y una tienda de campaña."
+    },
+    "fr": {
+     "t": "Cônes et pyramides",
+     "g": "Dessiner des formes pointues et les repérer dans les objets autour de toi.",
+     "p": [
+      "Un cône, c'est une ellipse et deux droites qui se rejoignent en une pointe au-dessus de son centre.",
+      "Une pyramide a une base carrée ou triangulaire dont les arêtes montent vers un point.",
+      "Entonnoirs, chapeaux de fête, carottes, toits et montagnes cachent cônes et pyramides."
+     ],
+     "q": "Quel objet en forme de cône ou de pyramide as-tu vu aujourd'hui ?",
+     "c": "Dessine un cône et une pyramide, puis transforme-les en cornet de glace et en tente."
+    },
+    "it": {
+     "t": "Coni e piramidi",
+     "g": "Disegnare forme appuntite e riconoscerle negli oggetti intorno a te.",
+     "p": [
+      "Un cono è un'ellisse con due linee dritte che si incontrano in una punta sopra il centro.",
+      "Una piramide ha una base quadrata o triangolare con spigoli che salgono a un punto.",
+      "Imbuti, cappellini da festa, carote, tetti e montagne nascondono coni e piramidi."
+     ],
+     "q": "Quale oggetto a forma di cono o piramide hai visto oggi?",
+     "c": "Disegna un cono e una piramide e trasformali in un cono gelato e una tenda."
+    },
+    "pt": {
+     "t": "Cones e pirâmides",
+     "g": "Desenhar formas pontiagudas e encontrá-las nos objetos à tua volta.",
+     "p": [
+      "Um cone é uma elipse com duas retas que se juntam numa ponta acima do centro.",
+      "Uma pirâmide tem base quadrada ou triangular com arestas que sobem até um ponto.",
+      "Funis, chapéus de festa, cenouras, telhados e montanhas escondem cones e pirâmides."
+     ],
+     "q": "Que coisa em forma de cone ou pirâmide viste hoje?",
+     "c": "Desenha um cone e uma pirâmide e transforma-os num cone de gelado e numa tenda."
+    },
+    "pt_BR": {
+     "t": "Cones e pirâmides",
+     "g": "Desenhar formas pontudas e encontrá-las nos objetos ao seu redor.",
+     "p": [
+      "Um cone é uma elipse com duas retas que se encontram numa ponta acima do centro.",
+      "Uma pirâmide tem base quadrada ou triangular com arestas que sobem até um ponto.",
+      "Funis, chapéus de festa, cenouras, telhados e montanhas escondem cones e pirâmides."
+     ],
+     "q": "Que coisa em formato de cone ou pirâmide você viu hoje?",
+     "c": "Desenhe um cone e uma pirâmide e transforme-os numa casquinha de sorvete e numa barraca."
+    }
+   }
+  }
+ ]
+}

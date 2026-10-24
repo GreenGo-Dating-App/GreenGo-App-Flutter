@@ -1,0 +1,835 @@
+{
+ "topic": "photography",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is exposure",
+     "g": "Understand how the amount of light reaching the sensor makes a photo bright or dark.",
+     "p": [
+      "Exposure is simply how much light the sensor collects while the picture is being taken.",
+      "Too much light gives a washed-out, overexposed photo; too little gives a dark, underexposed one.",
+      "A good exposure keeps detail in the important areas, even if some shadows or highlights are lost."
+     ],
+     "q": "Can you think of a photo you took that was too bright or too dark, and what was happening in the scene?",
+     "c": "Photograph the same object near a window and in a darker corner, then compare how bright each image looks."
+    },
+    "de": {
+     "t": "Was ist Belichtung",
+     "g": "Versteh, wie die Lichtmenge auf dem Sensor ein Foto hell oder dunkel macht.",
+     "p": [
+      "Belichtung ist einfach die Lichtmenge, die der Sensor während der Aufnahme sammelt.",
+      "Zu viel Licht ergibt ein ausgebranntes, überbelichtetes Foto, zu wenig ein dunkles, unterbelichtetes.",
+      "Eine gute Belichtung bewahrt Details in den wichtigen Bereichen, auch wenn einige Schatten verloren gehen."
+     ],
+     "q": "Fällt dir ein Foto ein, das zu hell oder zu dunkel war, und was war in der Szene los?",
+     "c": "Fotografiere denselben Gegenstand am Fenster und in einer dunklen Ecke und vergleiche, wie hell beide Bilder sind."
+    },
+    "es": {
+     "t": "Qué es la exposición",
+     "g": "Entiende cómo la cantidad de luz que llega al sensor hace que una foto sea clara u oscura.",
+     "p": [
+      "La exposición es simplemente cuánta luz recoge el sensor mientras se toma la foto.",
+      "Demasiada luz da una foto quemada o sobreexpuesta; muy poca, una foto oscura o subexpuesta.",
+      "Una buena exposición conserva detalle en las zonas importantes, aunque se pierdan algunas sombras o luces."
+     ],
+     "q": "¿Recuerdas una foto tuya demasiado clara u oscura, y qué pasaba en la escena?",
+     "c": "Fotografía el mismo objeto junto a una ventana y en un rincón más oscuro, y compara lo clara que sale cada imagen."
+    },
+    "fr": {
+     "t": "Qu'est-ce que l'exposition",
+     "g": "Comprends comment la quantité de lumière qui atteint le capteur rend une photo claire ou sombre.",
+     "p": [
+      "L'exposition, c'est simplement la quantité de lumière captée par le capteur pendant la prise de vue.",
+      "Trop de lumière donne une photo brûlée, surexposée ; trop peu, une photo sombre, sous-exposée.",
+      "Une bonne exposition garde du détail dans les zones importantes, même si quelques ombres ou hautes lumières se perdent."
+     ],
+     "q": "Te souviens-tu d'une photo trop claire ou trop sombre, et que se passait-il dans la scène ?",
+     "c": "Photographie le même objet près d'une fenêtre puis dans un coin plus sombre, et compare la luminosité des deux images."
+    },
+    "it": {
+     "t": "Che cos'è l'esposizione",
+     "g": "Capisci come la quantità di luce che arriva al sensore rende una foto chiara o scura.",
+     "p": [
+      "L'esposizione è semplicemente quanta luce raccoglie il sensore mentre la foto viene scattata.",
+      "Troppa luce dà una foto bruciata, sovraesposta; troppo poca una foto scura, sottoesposta.",
+      "Una buona esposizione conserva dettaglio nelle zone importanti, anche se si perde qualche ombra o luce."
+     ],
+     "q": "Ti viene in mente una tua foto troppo chiara o troppo scura, e cosa succedeva nella scena?",
+     "c": "Fotografa lo stesso oggetto vicino a una finestra e in un angolo più buio, poi confronta quanto è luminosa ogni immagine."
+    },
+    "pt": {
+     "t": "O que é a exposição",
+     "g": "Percebe como a quantidade de luz que chega ao sensor torna uma foto clara ou escura.",
+     "p": [
+      "A exposição é simplesmente a quantidade de luz que o sensor recolhe enquanto a foto é tirada.",
+      "Luz a mais dá uma foto queimada, sobre-exposta; luz a menos, uma foto escura, subexposta.",
+      "Uma boa exposição mantém detalhe nas zonas importantes, mesmo que se percam algumas sombras ou altas luzes."
+     ],
+     "q": "Lembras-te de uma foto tua clara ou escura demais, e o que se passava na cena?",
+     "c": "Fotografa o mesmo objeto junto a uma janela e num canto mais escuro e compara o brilho de cada imagem."
+    },
+    "pt_BR": {
+     "t": "O que é exposição",
+     "g": "Entenda como a quantidade de luz que chega ao sensor deixa uma foto clara ou escura.",
+     "p": [
+      "Exposição é simplesmente quanta luz o sensor capta enquanto a foto está sendo tirada.",
+      "Luz demais gera uma foto estourada, superexposta; luz de menos, uma foto escura, subexposta.",
+      "Uma boa exposição mantém detalhe nas áreas importantes, mesmo que algumas sombras ou altas luzes se percam."
+     ],
+     "q": "Você lembra de uma foto sua clara ou escura demais, e o que estava acontecendo na cena?",
+     "c": "Fotografe o mesmo objeto perto de uma janela e num canto mais escuro e compare o brilho de cada imagem."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The exposure triangle",
+     "g": "See how aperture, shutter speed and ISO work together to control exposure.",
+     "p": [
+      "Aperture is how wide the lens opens, shutter speed is how long it lets light in, ISO is how sensitive the sensor is.",
+      "Change one and you must often balance another: a faster shutter needs a wider aperture or a higher ISO.",
+      "Each setting also has a creative side effect: background blur, motion blur or grain."
+     ],
+     "q": "Which of the three settings sounds most mysterious to you right now?",
+     "c": "Find where your device shows aperture, shutter speed and ISO, even in auto, and note them for three different photos."
+    },
+    "de": {
+     "t": "Das Belichtungsdreieck",
+     "g": "Sieh, wie Blende, Verschlusszeit und ISO zusammen die Belichtung steuern.",
+     "p": [
+      "Die Blende ist die Öffnungsweite, die Verschlusszeit die Dauer des Lichteinfalls, ISO die Empfindlichkeit des Sensors.",
+      "Änderst du einen Wert, musst du oft einen anderen ausgleichen: Kürzere Zeit braucht offenere Blende oder höhere ISO.",
+      "Jede Einstellung hat auch eine kreative Nebenwirkung: Hintergrundunschärfe, Bewegungsunschärfe oder Rauschen."
+     ],
+     "q": "Welche der drei Einstellungen kommt dir gerade am rätselhaftesten vor?",
+     "c": "Finde, wo dein Gerät Blende, Zeit und ISO anzeigt, auch im Automatikmodus, und notiere sie für drei Fotos."
+    },
+    "es": {
+     "t": "El triángulo de exposición",
+     "g": "Descubre cómo la apertura, la velocidad de obturación y el ISO trabajan juntos para controlar la exposición.",
+     "p": [
+      "La apertura es cuánto se abre el objetivo, la velocidad cuánto tiempo entra la luz y el ISO la sensibilidad del sensor.",
+      "Si cambias uno, a menudo debes compensar otro: una velocidad más rápida pide más apertura o más ISO.",
+      "Cada ajuste tiene además un efecto creativo: fondo desenfocado, movimiento borroso o grano."
+     ],
+     "q": "¿Cuál de los tres ajustes te parece más misterioso ahora mismo?",
+     "c": "Busca dónde muestra tu aparato la apertura, la velocidad y el ISO, aunque sea en automático, y anótalos en tres fotos."
+    },
+    "fr": {
+     "t": "Le triangle d'exposition",
+     "g": "Vois comment l'ouverture, la vitesse d'obturation et l'ISO travaillent ensemble pour régler l'exposition.",
+     "p": [
+      "L'ouverture, c'est la taille du passage de la lumière, la vitesse sa durée, et l'ISO la sensibilité du capteur.",
+      "Si tu en changes un, il faut souvent compenser un autre : une vitesse plus rapide demande plus d'ouverture ou d'ISO.",
+      "Chaque réglage a aussi un effet créatif : arrière-plan flou, flou de mouvement ou grain."
+     ],
+     "q": "Lequel des trois réglages te semble le plus mystérieux pour l'instant ?",
+     "c": "Trouve où ton appareil affiche ouverture, vitesse et ISO, même en auto, et note-les pour trois photos différentes."
+    },
+    "it": {
+     "t": "Il triangolo dell'esposizione",
+     "g": "Scopri come diaframma, tempo di scatto e ISO lavorano insieme per controllare l'esposizione.",
+     "p": [
+      "Il diaframma è quanto si apre l'obiettivo, il tempo quanto a lungo entra la luce, l'ISO quanto è sensibile il sensore.",
+      "Se cambi un valore spesso devi bilanciarne un altro: un tempo più rapido chiede diaframma più aperto o ISO più alto.",
+      "Ogni impostazione ha anche un effetto creativo: sfondo sfocato, mosso o grana."
+     ],
+     "q": "Quale delle tre impostazioni ti sembra più misteriosa in questo momento?",
+     "c": "Trova dove il tuo dispositivo mostra diaframma, tempo e ISO, anche in automatico, e annotali per tre foto diverse."
+    },
+    "pt": {
+     "t": "O triângulo da exposição",
+     "g": "Vê como a abertura, a velocidade do obturador e o ISO trabalham juntos para controlar a exposição.",
+     "p": [
+      "A abertura é quanto a objetiva abre, a velocidade é quanto tempo entra luz e o ISO é a sensibilidade do sensor.",
+      "Se mudas um, muitas vezes tens de compensar outro: uma velocidade mais rápida pede mais abertura ou mais ISO.",
+      "Cada definição tem também um efeito criativo: fundo desfocado, arrastamento ou grão."
+     ],
+     "q": "Qual das três definições te parece mais misteriosa neste momento?",
+     "c": "Descobre onde o teu aparelho mostra abertura, velocidade e ISO, mesmo em automático, e anota-os em três fotos."
+    },
+    "pt_BR": {
+     "t": "O triângulo de exposição",
+     "g": "Veja como abertura, velocidade do obturador e ISO trabalham juntos para controlar a exposição.",
+     "p": [
+      "Abertura é quanto a lente abre, velocidade é por quanto tempo a luz entra e ISO é a sensibilidade do sensor.",
+      "Mudou um, muitas vezes precisa compensar outro: uma velocidade mais rápida pede mais abertura ou ISO mais alto.",
+      "Cada ajuste também tem um efeito criativo: fundo desfocado, borrão de movimento ou granulação."
+     ],
+     "q": "Qual dos três ajustes parece mais misterioso para você agora?",
+     "c": "Descubra onde seu aparelho mostra abertura, velocidade e ISO, mesmo no automático, e anote-os em três fotos."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aperture explained",
+     "g": "Learn what the lens opening is, how f-numbers work and why a small number means a wide opening.",
+     "p": [
+      "Aperture is an adjustable opening inside the lens, written as f-numbers like f/2, f/4, f/8 or f/16.",
+      "The f-number is a fraction, so f/2 is a big opening that lets in lots of light and f/16 is a small one.",
+      "Each full step, such as f/4 to f/5.6, halves or doubles the light reaching the sensor."
+     ],
+     "q": "Did the idea that a small f-number means a big opening surprise you?",
+     "c": "In aperture priority mode or a phone portrait mode, take one photo at the widest and one at the narrowest setting."
+    },
+    "de": {
+     "t": "Die Blende erklärt",
+     "g": "Lerne, was die Blendenöffnung ist, wie Blendenzahlen funktionieren und warum eine kleine Zahl weit offen bedeutet.",
+     "p": [
+      "Die Blende ist eine verstellbare Öffnung im Objektiv, angegeben als Blendenzahl wie f/2, f/4, f/8 oder f/16.",
+      "Die Blendenzahl ist ein Bruch: f/2 ist eine große Öffnung mit viel Licht, f/16 eine kleine.",
+      "Jede ganze Stufe, etwa von f/4 auf f/5.6, halbiert oder verdoppelt das Licht auf dem Sensor."
+     ],
+     "q": "Hat es dich überrascht, dass eine kleine Blendenzahl eine große Öffnung bedeutet?",
+     "c": "Mach in Zeitautomatik oder im Porträtmodus des Handys je ein Foto mit offenster und kleinster Blende."
+    },
+    "es": {
+     "t": "La apertura explicada",
+     "g": "Aprende qué es la abertura del objetivo, cómo funcionan los números f y por qué un número pequeño es una abertura grande.",
+     "p": [
+      "La apertura es una abertura regulable dentro del objetivo, indicada con números f como f/2, f/4, f/8 o f/16.",
+      "El número f es una fracción: f/2 es una abertura grande que deja pasar mucha luz y f/16 una pequeña.",
+      "Cada paso completo, como de f/4 a f/5.6, reduce a la mitad o duplica la luz que llega al sensor."
+     ],
+     "q": "¿Te sorprendió que un número f pequeño signifique una abertura grande?",
+     "c": "En prioridad de apertura o en el modo retrato del móvil, haz una foto con la apertura más grande y otra con la más pequeña."
+    },
+    "fr": {
+     "t": "L'ouverture expliquée",
+     "g": "Apprends ce qu'est l'ouverture, comment fonctionnent les nombres f et pourquoi un petit nombre veut dire grande ouverture.",
+     "p": [
+      "L'ouverture est un diaphragme réglable dans l'objectif, noté en nombres f comme f/2, f/4, f/8 ou f/16.",
+      "Le nombre f est une fraction : f/2 est une grande ouverture qui laisse entrer beaucoup de lumière, f/16 une petite.",
+      "Chaque palier complet, comme de f/4 à f/5.6, divise par deux ou double la lumière qui atteint le capteur."
+     ],
+     "q": "As-tu été surpris qu'un petit nombre f corresponde à une grande ouverture ?",
+     "c": "En priorité ouverture ou en mode portrait du smartphone, prends une photo à l'ouverture maximale et une à la minimale."
+    },
+    "it": {
+     "t": "Il diaframma spiegato",
+     "g": "Scopri cos'è l'apertura dell'obiettivo, come funzionano i numeri f e perché un numero piccolo indica un'apertura ampia.",
+     "p": [
+      "Il diaframma è un'apertura regolabile nell'obiettivo, indicata con numeri f come f/2, f/4, f/8 o f/16.",
+      "Il numero f è una frazione: f/2 è un'apertura grande che fa entrare molta luce, f/16 una piccola.",
+      "Ogni stop intero, come da f/4 a f/5.6, dimezza o raddoppia la luce che arriva al sensore."
+     ],
+     "q": "Ti ha sorpreso che un numero f piccolo significhi un'apertura grande?",
+     "c": "In priorità di diaframma o nella modalità ritratto dello smartphone, scatta una foto con l'apertura massima e una con la minima."
+    },
+    "pt": {
+     "t": "A abertura explicada",
+     "g": "Aprende o que é a abertura da objetiva, como funcionam os números f e porque um número pequeno é uma abertura grande.",
+     "p": [
+      "A abertura é um orifício regulável dentro da objetiva, indicado com números f como f/2, f/4, f/8 ou f/16.",
+      "O número f é uma fração: f/2 é uma abertura grande que deixa entrar muita luz e f/16 uma pequena.",
+      "Cada passo completo, como de f/4 para f/5.6, reduz para metade ou duplica a luz que chega ao sensor."
+     ],
+     "q": "Ficaste surpreendido por um número f pequeno significar uma abertura grande?",
+     "c": "Em prioridade à abertura ou no modo retrato do telemóvel, tira uma foto com a maior abertura e outra com a menor."
+    },
+    "pt_BR": {
+     "t": "Abertura explicada",
+     "g": "Aprenda o que é a abertura da lente, como funcionam os números f e por que um número pequeno é uma abertura grande.",
+     "p": [
+      "A abertura é um orifício ajustável dentro da lente, indicado por números f como f/2, f/4, f/8 ou f/16.",
+      "O número f é uma fração: f/2 é uma abertura grande que deixa entrar muita luz, e f/16 uma pequena.",
+      "Cada ponto inteiro, como de f/4 para f/5.6, corta pela metade ou dobra a luz que chega ao sensor."
+     ],
+     "q": "Você se surpreendeu com o fato de um número f pequeno significar uma abertura grande?",
+     "c": "Em prioridade de abertura ou no modo retrato do celular, tire uma foto com a maior abertura e outra com a menor."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shutter speed explained",
+     "g": "Learn how long the shutter stays open, from tiny fractions of a second to several seconds.",
+     "p": [
+      "Shutter speed is written in seconds or fractions: 1/1000 is very fast, 1/60 is medium and 2 means two seconds.",
+      "Like aperture, halving the time halves the light, so 1/250 lets in half the light of 1/125.",
+      "A handy guide: below about 1/60 handheld, shake becomes visible unless your device stabilises well."
+     ],
+     "q": "What would you love to photograph that moves fast, or that needs a long exposure?",
+     "c": "In shutter priority mode or a manual camera app, photograph running water at 1/1000 and at 1/15 and compare."
+    },
+    "de": {
+     "t": "Die Verschlusszeit erklärt",
+     "g": "Lerne, wie lange der Verschluss offen bleibt, von winzigen Sekundenbruchteilen bis zu mehreren Sekunden.",
+     "p": [
+      "Die Verschlusszeit wird in Sekunden oder Brüchen angegeben: 1/1000 ist sehr kurz, 1/60 mittel, 2 heißt zwei Sekunden.",
+      "Wie bei der Blende gilt: Halbe Zeit, halbes Licht, also lässt 1/250 halb so viel Licht herein wie 1/125.",
+      "Als Faustregel wird unter etwa 1/60 aus der Hand Verwacklung sichtbar, außer dein Gerät stabilisiert gut."
+     ],
+     "q": "Was würdest du gern fotografieren, das sich schnell bewegt oder eine Langzeitbelichtung braucht?",
+     "c": "Fotografiere in Blendenautomatik oder mit einer manuellen Kamera-App fließendes Wasser mit 1/1000 und 1/15 und vergleiche."
+    },
+    "es": {
+     "t": "La velocidad de obturación",
+     "g": "Aprende cuánto tiempo permanece abierto el obturador, desde fracciones mínimas de segundo hasta varios segundos.",
+     "p": [
+      "La velocidad se expresa en segundos o fracciones: 1/1000 es muy rápida, 1/60 intermedia y 2 son dos segundos.",
+      "Como con la apertura, reducir el tiempo a la mitad reduce la luz a la mitad: 1/250 deja entrar la mitad que 1/125.",
+      "Una guía útil: por debajo de 1/60 a pulso se nota la trepidación, salvo que tu aparato estabilice bien."
+     ],
+     "q": "¿Qué te encantaría fotografiar que se mueva rápido o que necesite una exposición larga?",
+     "c": "En prioridad de velocidad o con una app de cámara manual, fotografía agua corriendo a 1/1000 y a 1/15 y compara."
+    },
+    "fr": {
+     "t": "La vitesse d'obturation expliquée",
+     "g": "Apprends combien de temps l'obturateur reste ouvert, de minuscules fractions de seconde à plusieurs secondes.",
+     "p": [
+      "La vitesse s'écrit en secondes ou en fractions : 1/1000 est très rapide, 1/60 moyen et 2 signifie deux secondes.",
+      "Comme pour l'ouverture, diviser le temps par deux divise la lumière par deux : 1/250 laisse passer moitié moins que 1/125.",
+      "Repère utile : à main levée, sous 1/60 environ, le bougé devient visible, sauf bonne stabilisation."
+     ],
+     "q": "Qu'aimerais-tu photographier qui bouge vite, ou qui demande une pose longue ?",
+     "c": "En priorité vitesse ou avec une appli photo manuelle, photographie de l'eau qui coule à 1/1000 puis à 1/15 et compare."
+    },
+    "it": {
+     "t": "Il tempo di scatto spiegato",
+     "g": "Scopri per quanto resta aperto l'otturatore, da minuscole frazioni di secondo a diversi secondi.",
+     "p": [
+      "Il tempo si scrive in secondi o frazioni: 1/1000 è molto veloce, 1/60 medio e 2 significa due secondi.",
+      "Come per il diaframma, dimezzare il tempo dimezza la luce: 1/250 fa entrare metà della luce di 1/125.",
+      "Una guida pratica: sotto circa 1/60 a mano libera il mosso diventa visibile, a meno di una buona stabilizzazione."
+     ],
+     "q": "Cosa ti piacerebbe fotografare che si muove velocemente o che richiede una lunga esposizione?",
+     "c": "In priorità di tempi o con un'app fotografica manuale, fotografa acqua che scorre a 1/1000 e a 1/15 e confronta."
+    },
+    "pt": {
+     "t": "A velocidade do obturador",
+     "g": "Aprende quanto tempo o obturador fica aberto, desde frações mínimas de segundo até vários segundos.",
+     "p": [
+      "A velocidade escreve-se em segundos ou frações: 1/1000 é muito rápida, 1/60 é média e 2 são dois segundos.",
+      "Tal como na abertura, reduzir o tempo para metade reduz a luz para metade: 1/250 deixa entrar metade da luz de 1/125.",
+      "Uma regra útil: abaixo de cerca de 1/60 sem apoio, a trepidação nota-se, a não ser que o aparelho estabilize bem."
+     ],
+     "q": "O que gostavas de fotografar que se mova depressa ou que precise de uma exposição longa?",
+     "c": "Em prioridade à velocidade ou numa app de câmara manual, fotografa água a correr a 1/1000 e a 1/15 e compara."
+    },
+    "pt_BR": {
+     "t": "Velocidade do obturador explicada",
+     "g": "Aprenda por quanto tempo o obturador fica aberto, de frações mínimas de segundo até vários segundos.",
+     "p": [
+      "A velocidade é escrita em segundos ou frações: 1/1000 é muito rápida, 1/60 é média e 2 significa dois segundos.",
+      "Assim como na abertura, cortar o tempo pela metade corta a luz pela metade: 1/250 deixa entrar metade da luz de 1/125.",
+      "Uma dica prática: abaixo de 1/60 na mão, o tremido aparece, a não ser que o aparelho estabilize bem."
+     ],
+     "q": "O que você adoraria fotografar que se move rápido ou que precisa de uma exposição longa?",
+     "c": "Em prioridade de velocidade ou num app de câmera manual, fotografe água corrente a 1/1000 e a 1/15 e compare."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "ISO explained",
+     "g": "Understand sensor sensitivity, how it brightens images in low light and its trade-off with digital noise.",
+     "p": [
+      "ISO sets how strongly the sensor signal is amplified: 100 for bright days, 800 to 3200 or more for dim scenes.",
+      "Doubling ISO, for example from 200 to 400, makes the image as bright as doubling the light.",
+      "Higher ISO adds noise, a grainy texture with blotchy colours, so use the lowest ISO that keeps your shot sharp."
+     ],
+     "q": "Where do you often take photos in low light, and how do they usually look?",
+     "c": "Photograph the same dim scene at a low and a high ISO if your device allows, then zoom in to compare the noise."
+    },
+    "de": {
+     "t": "ISO erklärt",
+     "g": "Versteh die Sensorempfindlichkeit, wie sie Bilder bei wenig Licht aufhellt und warum dabei Rauschen entsteht.",
+     "p": [
+      "ISO bestimmt, wie stark das Sensorsignal verstärkt wird: 100 für helle Tage, 800 bis 3200 oder mehr für dunkle Szenen.",
+      "Eine Verdopplung, etwa von 200 auf 400, hellt das Bild so auf wie doppelt so viel Licht.",
+      "Höhere ISO bringt Rauschen, eine körnige Struktur mit Farbflecken, also nimm die niedrigste ISO, die scharfe Bilder erlaubt."
+     ],
+     "q": "Wo fotografierst du oft bei wenig Licht, und wie sehen die Bilder meist aus?",
+     "c": "Fotografiere dieselbe dunkle Szene mit niedriger und hoher ISO, wenn möglich, und vergleiche das Rauschen vergrößert."
+    },
+    "es": {
+     "t": "El ISO explicado",
+     "g": "Entiende la sensibilidad del sensor, cómo aclara las imágenes con poca luz y su coste en ruido digital.",
+     "p": [
+      "El ISO fija cuánto se amplifica la señal del sensor: 100 para días luminosos, de 800 a 3200 o más para escenas oscuras.",
+      "Duplicar el ISO, por ejemplo de 200 a 400, aclara la imagen como si duplicaras la luz.",
+      "Un ISO alto añade ruido, una textura granulada con manchas de color, así que usa el más bajo que mantenga la foto nítida."
+     ],
+     "q": "¿Dónde haces fotos con poca luz a menudo, y cómo suelen salir?",
+     "c": "Fotografía la misma escena oscura con un ISO bajo y uno alto si tu aparato lo permite, y amplía para comparar el ruido."
+    },
+    "fr": {
+     "t": "L'ISO expliqué",
+     "g": "Comprends la sensibilité du capteur, comment elle éclaircit l'image en faible lumière et son prix en bruit numérique.",
+     "p": [
+      "L'ISO règle l'amplification du signal du capteur : 100 par beau temps, de 800 à 3200 ou plus pour les scènes sombres.",
+      "Doubler l'ISO, par exemple de 200 à 400, éclaircit l'image comme si tu doublais la lumière.",
+      "Un ISO élevé ajoute du bruit, une texture granuleuse aux taches colorées : choisis l'ISO le plus bas qui garde la photo nette."
+     ],
+     "q": "Où prends-tu souvent des photos en faible lumière, et à quoi ressemblent-elles ?",
+     "c": "Photographie la même scène sombre avec un ISO bas puis élevé si ton appareil le permet, et zoome pour comparer le bruit."
+    },
+    "it": {
+     "t": "L'ISO spiegato",
+     "g": "Capisci la sensibilità del sensore, come schiarisce le immagini con poca luce e il suo prezzo in rumore digitale.",
+     "p": [
+      "L'ISO stabilisce quanto viene amplificato il segnale del sensore: 100 per giornate luminose, da 800 a 3200 o più per scene buie.",
+      "Raddoppiare l'ISO, per esempio da 200 a 400, schiarisce l'immagine come raddoppiare la luce.",
+      "Un ISO alto aggiunge rumore, una grana con macchie di colore: usa l'ISO più basso che mantiene la foto nitida."
+     ],
+     "q": "Dove scatti spesso con poca luce, e come vengono di solito le foto?",
+     "c": "Fotografa la stessa scena buia con ISO basso e alto se il dispositivo lo permette, poi ingrandisci per confrontare il rumore."
+    },
+    "pt": {
+     "t": "O ISO explicado",
+     "g": "Percebe a sensibilidade do sensor, como clareia as imagens com pouca luz e o preço que se paga em ruído digital.",
+     "p": [
+      "O ISO define quanto o sinal do sensor é amplificado: 100 para dias claros, de 800 a 3200 ou mais para cenas escuras.",
+      "Duplicar o ISO, por exemplo de 200 para 400, clareia a imagem como se duplicasses a luz.",
+      "ISO alto acrescenta ruído, uma textura granulada com manchas de cor, por isso usa o mais baixo que mantenha a foto nítida."
+     ],
+     "q": "Onde tiras muitas vezes fotos com pouca luz, e como costumam ficar?",
+     "c": "Fotografa a mesma cena escura com ISO baixo e alto, se o aparelho deixar, e amplia para comparar o ruído."
+    },
+    "pt_BR": {
+     "t": "ISO explicado",
+     "g": "Entenda a sensibilidade do sensor, como ela clareia imagens com pouca luz e o preço disso em ruído digital.",
+     "p": [
+      "O ISO define quanto o sinal do sensor é amplificado: 100 para dias claros, de 800 a 3200 ou mais para cenas escuras.",
+      "Dobrar o ISO, por exemplo de 200 para 400, clareia a imagem como se você dobrasse a luz.",
+      "ISO alto adiciona ruído, uma textura granulada com manchas de cor, então use o mais baixo que mantenha a foto nítida."
+     ],
+     "q": "Onde você costuma fotografar com pouca luz, e como as fotos costumam ficar?",
+     "c": "Fotografe a mesma cena escura com ISO baixo e alto, se o aparelho permitir, e amplie para comparar o ruído."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exposure compensation",
+     "g": "Use the plus and minus control to make the camera's automatic exposure brighter or darker.",
+     "p": [
+      "Exposure compensation tells auto exposure you want the image brighter (+) or darker (-) than it chose.",
+      "On phones it is often a sun icon or slider next to the focus point; on cameras a +/- button or dial.",
+      "Small steps like +0.7 or -0.7 are often enough; it is the quickest fix when auto gets the brightness wrong."
+     ],
+     "q": "Do you prefer your photos a little brighter and airy, or darker and moodier?",
+     "c": "Photograph one scene at -1, 0 and +1 and choose the version that best matches what you saw."
+    },
+    "de": {
+     "t": "Belichtungskorrektur",
+     "g": "Nutze die Plus-Minus-Funktion, um die automatische Belichtung heller oder dunkler zu machen.",
+     "p": [
+      "Mit der Belichtungskorrektur sagst du der Automatik, dass das Bild heller (+) oder dunkler (-) werden soll.",
+      "Am Handy ist es oft ein Sonnensymbol oder Schieber neben dem Fokuspunkt, an der Kamera eine +/- Taste oder ein Rad.",
+      "Kleine Schritte wie +0,7 oder -0,7 reichen oft; es ist die schnellste Lösung, wenn die Automatik danebenliegt."
+     ],
+     "q": "Magst du deine Fotos lieber etwas heller und luftig oder dunkler und stimmungsvoll?",
+     "c": "Fotografiere eine Szene mit -1, 0 und +1 und wähle die Version, die am besten dem Gesehenen entspricht."
+    },
+    "es": {
+     "t": "Compensación de exposición",
+     "g": "Usa el control de más y menos para que la exposición automática salga más clara o más oscura.",
+     "p": [
+      "La compensación indica a la exposición automática que quieres la imagen más clara (+) o más oscura (-).",
+      "En el móvil suele ser un icono de sol o un deslizador junto al enfoque; en la cámara, un botón o dial +/-.",
+      "Pasos pequeños como +0,7 o -0,7 suelen bastar; es el arreglo más rápido cuando el automático falla en el brillo."
+     ],
+     "q": "¿Prefieres tus fotos algo más claras y luminosas, o más oscuras y con ambiente?",
+     "c": "Fotografía una escena a -1, 0 y +1 y elige la versión que más se parezca a lo que viste."
+    },
+    "fr": {
+     "t": "La correction d'exposition",
+     "g": "Utilise la commande plus et moins pour rendre l'exposition automatique plus claire ou plus sombre.",
+     "p": [
+      "La correction d'exposition dit à l'automatisme que tu veux une image plus claire (+) ou plus sombre (-).",
+      "Sur smartphone, c'est souvent un soleil ou un curseur près du point de mise au point ; sur appareil, un bouton ou une molette +/-.",
+      "De petits pas comme +0,7 ou -0,7 suffisent souvent ; c'est la solution la plus rapide quand l'auto se trompe."
+     ],
+     "q": "Préfères-tu tes photos un peu plus claires et aérées, ou plus sombres et plus intenses ?",
+     "c": "Photographie une scène à -1, 0 et +1 et choisis la version la plus fidèle à ce que tu as vu."
+    },
+    "it": {
+     "t": "Compensazione dell'esposizione",
+     "g": "Usa il comando più e meno per rendere l'esposizione automatica più chiara o più scura.",
+     "p": [
+      "La compensazione dice all'esposizione automatica che vuoi l'immagine più chiara (+) o più scura (-).",
+      "Sullo smartphone è spesso un'icona del sole o un cursore vicino al punto di fuoco; sulla fotocamera un tasto o una ghiera +/-.",
+      "Piccoli passi come +0,7 o -0,7 spesso bastano; è la soluzione più rapida quando l'automatico sbaglia la luminosità."
+     ],
+     "q": "Preferisci le tue foto un po' più chiare e ariose, o più scure e d'atmosfera?",
+     "c": "Fotografa una scena a -1, 0 e +1 e scegli la versione più simile a ciò che hai visto."
+    },
+    "pt": {
+     "t": "Compensação da exposição",
+     "g": "Usa o controlo de mais e menos para tornar a exposição automática mais clara ou mais escura.",
+     "p": [
+      "A compensação diz à exposição automática que queres a imagem mais clara (+) ou mais escura (-).",
+      "No telemóvel costuma ser um ícone de sol ou um cursor junto ao foco; na câmara, um botão ou roda +/-.",
+      "Passos pequenos como +0,7 ou -0,7 muitas vezes chegam; é a solução mais rápida quando o automático erra o brilho."
+     ],
+     "q": "Preferes as tuas fotos um pouco mais claras e leves, ou mais escuras e com ambiente?",
+     "c": "Fotografa uma cena a -1, 0 e +1 e escolhe a versão mais parecida com o que viste."
+    },
+    "pt_BR": {
+     "t": "Compensação de exposição",
+     "g": "Use o controle de mais e menos para deixar a exposição automática mais clara ou mais escura.",
+     "p": [
+      "A compensação avisa a exposição automática que você quer a imagem mais clara (+) ou mais escura (-).",
+      "No celular costuma ser um ícone de sol ou um controle deslizante perto do foco; na câmera, um botão ou dial +/-.",
+      "Passos pequenos como +0,7 ou -0,7 muitas vezes bastam; é o conserto mais rápido quando o automático erra o brilho."
+     ],
+     "q": "Você prefere suas fotos um pouco mais claras e leves, ou mais escuras e com clima?",
+     "c": "Fotografe uma cena em -1, 0 e +1 e escolha a versão mais parecida com o que você viu."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freezing motion",
+     "g": "Use fast shutter speeds to capture sharp action, splashes and jumping pets.",
+     "p": [
+      "To freeze people walking, around 1/250 works; running kids or pets need 1/500 to 1/1000 or faster.",
+      "Fast speeds need lots of light, so shoot outdoors in daylight or raise the ISO and open the aperture.",
+      "Anticipate the peak of the action, like the top of a jump, and shoot just before it happens."
+     ],
+     "q": "What moving subject in your life would you love to capture perfectly sharp?",
+     "c": "Freeze a moment of action today, such as water poured into a glass or a tossed ball, using the fastest speed you can."
+    },
+    "de": {
+     "t": "Bewegung einfrieren",
+     "g": "Nutze kurze Verschlusszeiten für scharfe Action, Spritzer und springende Haustiere.",
+     "p": [
+      "Für gehende Menschen reicht etwa 1/250; rennende Kinder oder Tiere brauchen 1/500 bis 1/1000 oder kürzer.",
+      "Kurze Zeiten brauchen viel Licht: Fotografiere draußen bei Tageslicht oder erhöhe ISO und öffne die Blende.",
+      "Nimm den Höhepunkt vorweg, etwa den höchsten Punkt eines Sprungs, und löse kurz davor aus."
+     ],
+     "q": "Welches bewegte Motiv in deinem Leben würdest du gern gestochen scharf festhalten?",
+     "c": "Friere heute einen Moment ein, etwa Wasser, das in ein Glas fließt, oder einen geworfenen Ball, mit der kürzesten möglichen Zeit."
+    },
+    "es": {
+     "t": "Congelar el movimiento",
+     "g": "Usa velocidades rápidas para captar acción nítida, salpicaduras y mascotas saltando.",
+     "p": [
+      "Para congelar a gente caminando basta con 1/250; niños o mascotas corriendo piden de 1/500 a 1/1000 o más.",
+      "Las velocidades rápidas necesitan mucha luz: dispara al aire libre de día o sube el ISO y abre el diafragma.",
+      "Anticipa el momento cumbre de la acción, como lo más alto de un salto, y dispara justo antes."
+     ],
+     "q": "¿Qué sujeto en movimiento de tu vida te encantaría captar perfectamente nítido?",
+     "c": "Congela hoy un momento de acción, como agua cayendo en un vaso o una pelota lanzada, con la velocidad más rápida posible."
+    },
+    "fr": {
+     "t": "Figer le mouvement",
+     "g": "Utilise des vitesses rapides pour capter une action nette, des éclaboussures et des animaux qui sautent.",
+     "p": [
+      "Pour figer des gens qui marchent, 1/250 suffit ; des enfants ou animaux qui courent demandent 1/500 à 1/1000 ou plus.",
+      "Les vitesses rapides demandent beaucoup de lumière : photographie dehors en plein jour ou monte l'ISO et ouvre le diaphragme.",
+      "Anticipe le point culminant de l'action, comme le haut d'un saut, et déclenche juste avant."
+     ],
+     "q": "Quel sujet en mouvement dans ta vie aimerais-tu figer parfaitement net ?",
+     "c": "Fige aujourd'hui un moment d'action, comme de l'eau versée dans un verre ou une balle lancée, avec la vitesse la plus rapide possible."
+    },
+    "it": {
+     "t": "Congelare il movimento",
+     "g": "Usa tempi rapidi per catturare azione nitida, schizzi e animali che saltano.",
+     "p": [
+      "Per congelare persone che camminano basta 1/250; bambini o animali che corrono chiedono da 1/500 a 1/1000 o più.",
+      "I tempi rapidi richiedono molta luce: scatta all'aperto di giorno oppure alza l'ISO e apri il diaframma.",
+      "Anticipa il culmine dell'azione, come il punto più alto di un salto, e scatta un attimo prima."
+     ],
+     "q": "Quale soggetto in movimento della tua vita ti piacerebbe catturare perfettamente nitido?",
+     "c": "Congela oggi un momento d'azione, come l'acqua versata in un bicchiere o una palla lanciata, con il tempo più rapido possibile."
+    },
+    "pt": {
+     "t": "Congelar o movimento",
+     "g": "Usa velocidades rápidas para captar ação nítida, salpicos e animais a saltar.",
+     "p": [
+      "Para congelar pessoas a andar chega 1/250; crianças ou animais a correr pedem 1/500 a 1/1000 ou mais.",
+      "Velocidades rápidas precisam de muita luz: fotografa ao ar livre de dia ou sobe o ISO e abre o diafragma.",
+      "Antecipa o ponto alto da ação, como o topo de um salto, e dispara um pouco antes."
+     ],
+     "q": "Que motivo em movimento na tua vida gostavas de captar perfeitamente nítido?",
+     "c": "Congela hoje um momento de ação, como água a cair num copo ou uma bola atirada, com a velocidade mais rápida que conseguires."
+    },
+    "pt_BR": {
+     "t": "Congelando o movimento",
+     "g": "Use velocidades rápidas para capturar ação nítida, respingos e pets pulando.",
+     "p": [
+      "Para congelar pessoas andando, 1/250 resolve; crianças ou pets correndo pedem de 1/500 a 1/1000 ou mais.",
+      "Velocidades rápidas exigem muita luz: fotografe ao ar livre de dia ou suba o ISO e abra o diafragma.",
+      "Antecipe o auge da ação, como o ponto mais alto de um pulo, e dispare um pouco antes."
+     ],
+     "q": "Que assunto em movimento da sua vida você adoraria capturar perfeitamente nítido?",
+     "c": "Congele hoje um momento de ação, como água caindo num copo ou uma bola jogada, com a velocidade mais rápida possível."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A first look at blur",
+     "g": "Discover how slow shutter speeds turn movement into soft, creative streaks.",
+     "p": [
+      "At slow speeds like 1/15 or longer, moving things blur while still things stay sharp if the camera is steady.",
+      "Rest your device on a wall, a table or a small tripod so only the moving parts turn into streaks.",
+      "Try flowing water, passing traffic lights at dusk or a spinning toy for easy first results."
+     ],
+     "q": "Do you like photos with motion blur, or do you prefer everything crisp?",
+     "c": "Rest your device on something solid and photograph moving water or traffic at a slow speed or with a long-exposure mode."
+    },
+    "de": {
+     "t": "Ein erster Blick auf Unschärfe",
+     "g": "Entdecke, wie lange Verschlusszeiten Bewegung in weiche, kreative Spuren verwandeln.",
+     "p": [
+      "Bei langen Zeiten wie 1/15 oder länger verwischt Bewegtes, während Ruhendes bei stabiler Kamera scharf bleibt.",
+      "Leg dein Gerät auf eine Mauer, einen Tisch oder ein kleines Stativ, damit nur Bewegtes zu Spuren wird.",
+      "Probier fließendes Wasser, Autolichter in der Dämmerung oder ein sich drehendes Spielzeug für erste Erfolge."
+     ],
+     "q": "Magst du Fotos mit Bewegungsunschärfe, oder soll lieber alles knackscharf sein?",
+     "c": "Leg dein Gerät auf etwas Festes und fotografiere Wasser oder Verkehr mit langer Zeit oder einem Langzeitmodus."
+    },
+    "es": {
+     "t": "Un primer vistazo al desenfoque",
+     "g": "Descubre cómo las velocidades lentas convierten el movimiento en estelas suaves y creativas.",
+     "p": [
+      "A velocidades lentas como 1/15 o más, lo que se mueve sale borroso y lo quieto nítido si la cámara está firme.",
+      "Apoya tu aparato en un muro, una mesa o un trípode pequeño para que solo lo que se mueve forme estelas.",
+      "Prueba con agua que corre, luces de coches al anochecer o un juguete que gira para lograr resultados fáciles."
+     ],
+     "q": "¿Te gustan las fotos con movimiento borroso, o prefieres que todo salga nítido?",
+     "c": "Apoya tu aparato en algo firme y fotografía agua o tráfico con velocidad lenta o con un modo de larga exposición."
+    },
+    "fr": {
+     "t": "Un premier regard sur le flou",
+     "g": "Découvre comment les vitesses lentes transforment le mouvement en traînées douces et créatives.",
+     "p": [
+      "À vitesse lente, 1/15 ou plus long, ce qui bouge devient flou et ce qui est immobile reste net si l'appareil est stable.",
+      "Pose ton appareil sur un muret, une table ou un petit trépied pour que seuls les éléments mobiles laissent des traînées.",
+      "Essaie l'eau qui coule, les phares au crépuscule ou un jouet qui tourne pour de premiers résultats faciles."
+     ],
+     "q": "Aimes-tu les photos avec du flou de mouvement, ou préfères-tu que tout soit net ?",
+     "c": "Pose ton appareil sur un support stable et photographie de l'eau ou la circulation en vitesse lente ou en mode pose longue."
+    },
+    "it": {
+     "t": "Un primo sguardo al mosso",
+     "g": "Scopri come i tempi lunghi trasformano il movimento in scie morbide e creative.",
+     "p": [
+      "Con tempi lenti come 1/15 o più lunghi, ciò che si muove diventa mosso e ciò che è fermo resta nitido se la fotocamera è stabile.",
+      "Appoggia il dispositivo su un muretto, un tavolo o un piccolo treppiede, così solo le parti in movimento diventano scie.",
+      "Prova con acqua che scorre, luci delle auto al tramonto o un giocattolo che gira per risultati facili."
+     ],
+     "q": "Ti piacciono le foto con il mosso creativo, o preferisci tutto nitido?",
+     "c": "Appoggia il dispositivo su qualcosa di stabile e fotografa acqua o traffico con un tempo lungo o una modalità lunga esposizione."
+    },
+    "pt": {
+     "t": "Um primeiro olhar sobre o arrastamento",
+     "g": "Descobre como as velocidades lentas transformam o movimento em rastos suaves e criativos.",
+     "p": [
+      "Com velocidades lentas como 1/15 ou mais, o que se move fica arrastado e o que está parado fica nítido se a câmara estiver firme.",
+      "Apoia o aparelho num muro, numa mesa ou num pequeno tripé para que só o que se move forme rastos.",
+      "Experimenta água a correr, luzes de carros ao anoitecer ou um brinquedo a girar para resultados fáceis."
+     ],
+     "q": "Gostas de fotos com movimento arrastado, ou preferes tudo nítido?",
+     "c": "Apoia o aparelho em algo firme e fotografa água ou trânsito com velocidade lenta ou num modo de longa exposição."
+    },
+    "pt_BR": {
+     "t": "Um primeiro olhar sobre o borrão",
+     "g": "Descubra como velocidades lentas transformam movimento em rastros suaves e criativos.",
+     "p": [
+      "Em velocidades lentas como 1/15 ou mais, o que se move fica borrado e o que está parado fica nítido se a câmera estiver firme.",
+      "Apoie o aparelho num muro, numa mesa ou num tripé pequeno para que só o que se move vire rastro.",
+      "Teste com água corrente, faróis de carros ao anoitecer ou um brinquedo girando para resultados fáceis."
+     ],
+     "q": "Você gosta de fotos com movimento borrado, ou prefere tudo nítido?",
+     "c": "Apoie o aparelho em algo firme e fotografe água ou trânsito com velocidade lenta ou num modo de longa exposição."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Background blur basics",
+     "g": "Learn how a wide aperture and a closer subject create a soft, dreamy background.",
+     "p": [
+      "A wide aperture such as f/1.8 or f/2.8 makes the zone of sharpness thin, so the background melts away.",
+      "Getting closer to your subject and moving it further from the background both increase the blur.",
+      "Phones imitate this effect with portrait mode, which works best with clear edges and some distance behind."
+     ],
+     "q": "What kind of photo would you love to shoot with a creamy blurred background?",
+     "c": "Photograph a small object with the background close behind, then far behind, using your widest aperture or portrait mode."
+    },
+    "de": {
+     "t": "Grundlagen der Hintergrundunschärfe",
+     "g": "Lerne, wie offene Blende und geringer Abstand einen weichen, verträumten Hintergrund erzeugen.",
+     "p": [
+      "Eine offene Blende wie f/1.8 oder f/2.8 macht den Schärfebereich schmal, und der Hintergrund verschwimmt.",
+      "Näher ans Motiv gehen und es weiter vom Hintergrund entfernen verstärkt beides die Unschärfe.",
+      "Handys ahmen das im Porträtmodus nach; er klappt am besten mit klaren Kanten und Abstand nach hinten."
+     ],
+     "q": "Welches Foto würdest du gern mit einem cremig unscharfen Hintergrund machen?",
+     "c": "Fotografiere einen kleinen Gegenstand mit Hintergrund dicht dahinter und weit dahinter, mit offenster Blende oder Porträtmodus."
+    },
+    "es": {
+     "t": "Fondo desenfocado: lo básico",
+     "g": "Aprende cómo una apertura amplia y un sujeto cercano crean un fondo suave y soñador.",
+     "p": [
+      "Una apertura amplia como f/1.8 o f/2.8 estrecha la zona de nitidez y el fondo se difumina.",
+      "Acercarte al sujeto y alejarlo del fondo aumentan ambos el desenfoque.",
+      "El móvil imita este efecto con el modo retrato, que funciona mejor con bordes claros y algo de distancia detrás."
+     ],
+     "q": "¿Qué tipo de foto te encantaría hacer con un fondo suave y desenfocado?",
+     "c": "Fotografía un objeto pequeño con el fondo muy cerca y luego lejos, con tu apertura más amplia o el modo retrato."
+    },
+    "fr": {
+     "t": "Les bases de l'arrière-plan flou",
+     "g": "Apprends comment une grande ouverture et un sujet proche créent un arrière-plan doux et rêveur.",
+     "p": [
+      "Une grande ouverture comme f/1.8 ou f/2.8 réduit la zone de netteté, et l'arrière-plan se fond.",
+      "Se rapprocher du sujet et l'éloigner de l'arrière-plan augmentent tous deux le flou.",
+      "Les smartphones imitent cet effet avec le mode portrait, qui marche mieux avec des contours nets et de la distance derrière."
+     ],
+     "q": "Quelle photo aimerais-tu réaliser avec un arrière-plan flou et crémeux ?",
+     "c": "Photographie un petit objet avec l'arrière-plan tout près puis loin, à ta plus grande ouverture ou en mode portrait."
+    },
+    "it": {
+     "t": "Le basi dello sfondo sfocato",
+     "g": "Impara come un diaframma aperto e un soggetto vicino creano uno sfondo morbido e sognante.",
+     "p": [
+      "Un'apertura ampia come f/1.8 o f/2.8 rende sottile la zona di nitidezza e lo sfondo si scioglie.",
+      "Avvicinarsi al soggetto e allontanarlo dallo sfondo aumentano entrambi lo sfocato.",
+      "Gli smartphone imitano l'effetto con la modalità ritratto, che rende meglio con contorni netti e un po' di distanza dietro."
+     ],
+     "q": "Che tipo di foto ti piacerebbe fare con uno sfondo morbido e sfocato?",
+     "c": "Fotografa un piccolo oggetto con lo sfondo vicinissimo e poi lontano, usando l'apertura massima o la modalità ritratto."
+    },
+    "pt": {
+     "t": "Fundo desfocado: o básico",
+     "g": "Aprende como uma abertura grande e um motivo próximo criam um fundo suave e sonhador.",
+     "p": [
+      "Uma abertura grande como f/1.8 ou f/2.8 torna a zona de nitidez estreita e o fundo dissolve-se.",
+      "Aproximares-te do motivo e afastá-lo do fundo aumentam ambos o desfoque.",
+      "O telemóvel imita este efeito com o modo retrato, que resulta melhor com contornos claros e alguma distância atrás."
+     ],
+     "q": "Que tipo de foto gostavas de fazer com um fundo suave e desfocado?",
+     "c": "Fotografa um objeto pequeno com o fundo muito perto e depois longe, com a maior abertura ou o modo retrato."
+    },
+    "pt_BR": {
+     "t": "Fundo desfocado: o básico",
+     "g": "Aprenda como uma abertura grande e um assunto próximo criam um fundo suave e sonhador.",
+     "p": [
+      "Uma abertura grande como f/1.8 ou f/2.8 deixa a faixa de nitidez estreita, e o fundo se dissolve.",
+      "Chegar mais perto do assunto e afastá-lo do fundo aumentam o desfoque.",
+      "O celular imita esse efeito com o modo retrato, que funciona melhor com contornos claros e alguma distância atrás."
+     ],
+     "q": "Que tipo de foto você adoraria fazer com um fundo suave e desfocado?",
+     "c": "Fotografe um objeto pequeno com o fundo bem perto e depois longe, com a maior abertura ou o modo retrato."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everything sharp",
+     "g": "Use a narrower aperture to keep both near and far parts of a scene in focus.",
+     "p": [
+      "Narrow apertures like f/8 to f/11 give a deep zone of sharpness, ideal for landscapes and city views.",
+      "Focusing about a third of the way into the scene helps spread sharpness from front to back.",
+      "Small apertures let in less light, so use a slower shutter, a higher ISO or a steady support."
+     ],
+     "q": "Which scenes do you photograph where you want every detail, near and far, to be sharp?",
+     "c": "Photograph a scene with something close and something far at f/8 or f/11, focusing a third of the way in, and check both."
+    },
+    "de": {
+     "t": "Alles scharf",
+     "g": "Nutze eine kleinere Blende, um nahe und ferne Teile einer Szene scharf zu halten.",
+     "p": [
+      "Kleine Blenden wie f/8 bis f/11 ergeben einen tiefen Schärfebereich, ideal für Landschaften und Stadtansichten.",
+      "Stell etwa auf ein Drittel der Szene scharf, so verteilt sich die Schärfe von vorn bis hinten.",
+      "Kleine Blenden lassen weniger Licht durch: Nimm eine längere Zeit, höhere ISO oder eine feste Unterlage."
+     ],
+     "q": "Bei welchen Szenen soll für dich jedes Detail, nah und fern, scharf sein?",
+     "c": "Fotografiere eine Szene mit Nahem und Fernem bei f/8 oder f/11, fokussiere auf ein Drittel und prüfe beide Bereiche."
+    },
+    "es": {
+     "t": "Todo nítido",
+     "g": "Usa una apertura más cerrada para mantener enfocadas las partes cercanas y lejanas de la escena.",
+     "p": [
+      "Aperturas cerradas como f/8 a f/11 dan una zona de nitidez profunda, ideal para paisajes y vistas urbanas.",
+      "Enfocar a un tercio de la escena ayuda a repartir la nitidez de delante hacia atrás.",
+      "Las aperturas pequeñas dejan pasar menos luz: usa una velocidad más lenta, más ISO o un apoyo firme."
+     ],
+     "q": "¿En qué escenas quieres que cada detalle, cerca y lejos, salga nítido?",
+     "c": "Fotografía una escena con algo cerca y algo lejos a f/8 o f/11, enfocando a un tercio, y revisa ambas zonas."
+    },
+    "fr": {
+     "t": "Tout net",
+     "g": "Utilise une ouverture plus fermée pour garder nets les éléments proches et lointains d'une scène.",
+     "p": [
+      "Des ouvertures fermées comme f/8 à f/11 donnent une grande profondeur de champ, idéale pour paysages et vues de ville.",
+      "Faire la mise au point au premier tiers de la scène aide à répartir la netteté de l'avant à l'arrière.",
+      "Les petites ouvertures laissent passer moins de lumière : allonge la vitesse, monte l'ISO ou utilise un appui stable."
+     ],
+     "q": "Dans quelles scènes veux-tu que chaque détail, proche ou lointain, soit net ?",
+     "c": "Photographie une scène avec un élément proche et un lointain à f/8 ou f/11, mise au point au premier tiers, et vérifie les deux."
+    },
+    "it": {
+     "t": "Tutto nitido",
+     "g": "Usa un diaframma più chiuso per mantenere a fuoco sia le parti vicine sia quelle lontane di una scena.",
+     "p": [
+      "Diaframmi chiusi come f/8 o f/11 danno una profondità di campo ampia, ideale per paesaggi e panorami urbani.",
+      "Mettere a fuoco a circa un terzo della scena aiuta a distribuire la nitidezza dal primo piano allo sfondo.",
+      "I diaframmi chiusi fanno entrare meno luce: usa un tempo più lungo, un ISO più alto o un appoggio stabile."
+     ],
+     "q": "In quali scene vuoi che ogni dettaglio, vicino e lontano, sia nitido?",
+     "c": "Fotografa una scena con qualcosa di vicino e qualcosa di lontano a f/8 o f/11, a fuoco a un terzo, e controlla entrambi."
+    },
+    "pt": {
+     "t": "Tudo nítido",
+     "g": "Usa uma abertura mais fechada para manter nítidas as partes próximas e distantes de uma cena.",
+     "p": [
+      "Aberturas fechadas como f/8 a f/11 dão uma profundidade de campo grande, ideal para paisagens e vistas urbanas.",
+      "Focar a cerca de um terço da cena ajuda a espalhar a nitidez da frente para trás.",
+      "Aberturas pequenas deixam entrar menos luz: usa uma velocidade mais lenta, mais ISO ou um apoio firme."
+     ],
+     "q": "Em que cenas queres que cada detalhe, perto e longe, fique nítido?",
+     "c": "Fotografa uma cena com algo perto e algo longe a f/8 ou f/11, focando a um terço, e confirma as duas zonas."
+    },
+    "pt_BR": {
+     "t": "Tudo nítido",
+     "g": "Use uma abertura mais fechada para manter nítidas as partes próximas e distantes de uma cena.",
+     "p": [
+      "Aberturas fechadas como f/8 a f/11 dão uma profundidade de campo grande, ideal para paisagens e vistas urbanas.",
+      "Focar a cerca de um terço da cena ajuda a espalhar a nitidez da frente para o fundo.",
+      "Aberturas pequenas deixam entrar menos luz: use velocidade mais lenta, ISO mais alto ou um apoio firme."
+     ],
+     "q": "Em que cenas você quer que cada detalhe, perto e longe, fique nítido?",
+     "c": "Fotografe uma cena com algo perto e algo longe a f/8 ou f/11, focando a um terço, e confira as duas áreas."
+    }
+   }
+  }
+ ]
+}

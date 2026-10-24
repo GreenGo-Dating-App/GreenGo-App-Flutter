@@ -1,0 +1,835 @@
+{
+ "topic": "basketball",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crossover dribble",
+     "g": "Learn the classic move to change direction and beat a defender.",
+     "p": [
+      "A crossover moves the ball quickly from one hand to the other, low and in front of your body.",
+      "Sell it first: step and lean one way so the defender shifts, then cross the other way.",
+      "Allen Iverson and Tim Hardaway made the crossover famous with their quick, low changes."
+     ],
+     "q": "Have you ever seen a crossover so quick that the defender stumbled?",
+     "c": "Do 20 slow crossovers, keeping the ball below your knees."
+    },
+    "de": {
+     "t": "Der Crossover",
+     "g": "Lerne den klassischen Move, um die Richtung zu wechseln und den Verteidiger zu schlagen.",
+     "p": [
+      "Beim Crossover wechselt der Ball schnell von einer Hand in die andere, tief und vor dem Körper.",
+      "Erst täuschen: Schritt und Lehnen in eine Richtung, dann in die andere kreuzen.",
+      "Allen Iverson und Tim Hardaway machten den Crossover mit schnellen, tiefen Wechseln berühmt."
+     ],
+     "q": "Hast du schon einen Crossover gesehen, bei dem der Verteidiger stolperte?",
+     "c": "Mach 20 langsame Crossover und halte den Ball unter Kniehöhe."
+    },
+    "es": {
+     "t": "El crossover",
+     "g": "Aprende el movimiento clásico para cambiar de dirección y superar al defensor.",
+     "p": [
+      "El crossover pasa el balón rápido de una mano a otra, bajo y por delante del cuerpo.",
+      "Primero engaña: amaga y inclínate hacia un lado y luego cruza hacia el otro.",
+      "Allen Iverson y Tim Hardaway hicieron famoso el crossover con cambios rápidos y bajos."
+     ],
+     "q": "¿Has visto alguna vez un crossover tan rápido que el defensor tropezó?",
+     "c": "Haz 20 crossovers lentos con el balón por debajo de las rodillas."
+    },
+    "fr": {
+     "t": "Le crossover",
+     "g": "Apprendre le geste classique pour changer de direction et battre un défenseur.",
+     "p": [
+      "Le crossover fait passer le ballon vite d'une main à l'autre, bas et devant le corps.",
+      "Vends la feinte : pas et épaules d'un côté pour décaler le défenseur, puis croise de l'autre.",
+      "Allen Iverson et Tim Hardaway ont rendu le crossover célèbre avec des changements rapides et bas."
+     ],
+     "q": "As-tu déjà vu un crossover si rapide que le défenseur a trébuché ?",
+     "c": "Fais 20 crossovers lents en gardant le ballon sous les genoux."
+    },
+    "it": {
+     "t": "Il crossover",
+     "g": "Impara il movimento classico per cambiare direzione e battere il difensore.",
+     "p": [
+      "Il crossover porta la palla veloce da una mano all'altra, bassa e davanti al corpo.",
+      "Prima vendi la finta: passo e spalle da una parte, poi incrocia dall'altra.",
+      "Allen Iverson e Tim Hardaway resero famoso il crossover con cambi rapidi e bassi."
+     ],
+     "q": "Hai mai visto un crossover così veloce da far inciampare il difensore?",
+     "c": "Fai 20 crossover lenti tenendo la palla sotto le ginocchia."
+    },
+    "pt": {
+     "t": "O crossover",
+     "g": "Aprende o movimento clássico para mudar de direção e passar o defensor.",
+     "p": [
+      "O crossover passa a bola depressa de uma mão para a outra, baixa e à frente do corpo.",
+      "Primeiro vende a finta: passo e inclinação para um lado, depois cruza para o outro.",
+      "Allen Iverson e Tim Hardaway tornaram o crossover famoso com mudanças rápidas e baixas."
+     ],
+     "q": "Já viste um crossover tão rápido que o defensor tropeçou?",
+     "c": "Faz 20 crossovers lentos com a bola abaixo dos joelhos."
+    },
+    "pt_BR": {
+     "t": "O crossover",
+     "g": "Aprenda o movimento clássico para mudar de direção e passar pelo marcador.",
+     "p": [
+      "O crossover troca a bola rápido de uma mão para a outra, baixa e na frente do corpo.",
+      "Primeiro venda a finta: passo e corpo para um lado, depois cruze para o outro.",
+      "Allen Iverson e Tim Hardaway deixaram o crossover famoso com trocas rápidas e baixas."
+     ],
+     "q": "Você já viu um crossover tão rápido que o marcador tropeçou?",
+     "c": "Faça 20 crossovers lentos com a bola abaixo dos joelhos."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Behind the back and between the legs",
+     "g": "Learn two dribble changes that keep your body between the ball and the defender.",
+     "p": [
+      "Between the legs: bounce the ball through your legs from one hand to the other as you step.",
+      "Behind the back: wrap the ball around your back to change hands when a defender is close in front.",
+      "Bob Cousy popularized the behind-the-back dribble in the 1950s, and Pete Maravich made it an art."
+     ],
+     "q": "Which of the two moves looks more fun to learn?",
+     "c": "Try five slow between-the-legs dribbles while standing still."
+    },
+    "de": {
+     "t": "Hinter dem Rücken und durch die Beine",
+     "g": "Lerne zwei Dribbelwechsel, bei denen dein Körper den Ball schützt.",
+     "p": [
+      "Durch die Beine: Prell den Ball beim Schritt durch die Beine von einer Hand in die andere.",
+      "Hinter dem Rücken: Führ den Ball um den Rücken, wenn ein Verteidiger dicht vor dir steht.",
+      "Bob Cousy machte das Dribbling hinter dem Rücken in den 1950ern bekannt, Pete Maravich machte daraus Kunst."
+     ],
+     "q": "Welcher der beiden Moves sieht für dich spaßiger aus?",
+     "c": "Probier im Stehen fünf langsame Dribblings durch die Beine."
+    },
+    "es": {
+     "t": "Por la espalda y entre las piernas",
+     "g": "Aprende dos cambios de bote que protegen el balón con tu cuerpo.",
+     "p": [
+      "Entre las piernas: bota el balón entre tus piernas de una mano a otra mientras das un paso.",
+      "Por la espalda: rodea tu espalda con el balón para cambiar de mano si el defensor está encima.",
+      "Bob Cousy popularizó el bote por la espalda en los años cincuenta y Pete Maravich lo convirtió en arte."
+     ],
+     "q": "¿Cuál de los dos movimientos te parece más divertido de aprender?",
+     "c": "Prueba cinco botes lentos entre las piernas sin moverte del sitio."
+    },
+    "fr": {
+     "t": "Dans le dos et entre les jambes",
+     "g": "Apprendre deux changements de main qui protègent le ballon avec ton corps.",
+     "p": [
+      "Entre les jambes : fais rebondir le ballon entre tes jambes d'une main à l'autre en faisant un pas.",
+      "Dans le dos : passe le ballon derrière toi pour changer de main quand un défenseur est collé devant.",
+      "Bob Cousy a popularisé le dribble dans le dos dans les années 1950, et Pete Maravich en a fait un art."
+     ],
+     "q": "Lequel des deux gestes te semble le plus amusant à apprendre ?",
+     "c": "Essaie cinq dribbles lents entre les jambes, sans bouger."
+    },
+    "it": {
+     "t": "Dietro la schiena e tra le gambe",
+     "g": "Impara due cambi di mano che proteggono la palla con il corpo.",
+     "p": [
+      "Tra le gambe: fai rimbalzare la palla tra le gambe da una mano all'altra mentre fai un passo.",
+      "Dietro la schiena: porta la palla dietro di te per cambiare mano quando il difensore è vicino.",
+      "Bob Cousy rese popolare il palleggio dietro la schiena negli anni Cinquanta, Pete Maravich ne fece un'arte."
+     ],
+     "q": "Quale dei due movimenti ti sembra più divertente da imparare?",
+     "c": "Prova cinque palleggi lenti tra le gambe stando fermo."
+    },
+    "pt": {
+     "t": "Pelas costas e entre as pernas",
+     "g": "Aprende duas mudanças de mão que protegem a bola com o teu corpo.",
+     "p": [
+      "Entre as pernas: bate a bola por entre as pernas de uma mão para a outra enquanto dás um passo.",
+      "Pelas costas: passa a bola por trás de ti para mudar de mão quando o defensor está colado à frente.",
+      "Bob Cousy popularizou o drible pelas costas nos anos 50, e Pete Maravich fez dele uma arte."
+     ],
+     "q": "Qual dos dois movimentos te parece mais divertido de aprender?",
+     "c": "Experimenta cinco dribles lentos entre as pernas, parado."
+    },
+    "pt_BR": {
+     "t": "Pelas costas e entre as pernas",
+     "g": "Aprenda duas trocas de mão que protegem a bola com seu corpo.",
+     "p": [
+      "Entre as pernas: quique a bola entre as pernas de uma mão para a outra enquanto dá um passo.",
+      "Pelas costas: passe a bola por trás do corpo para trocar de mão quando o marcador está colado.",
+      "Bob Cousy popularizou o drible pelas costas nos anos 1950, e Pete Maravich o transformou em arte."
+     ],
+     "q": "Qual dos dois movimentos parece mais divertido de aprender?",
+     "c": "Tente cinco dribles lentos entre as pernas, parado."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weak-hand training",
+     "g": "Understand why both hands matter and how to train your weaker one.",
+     "p": [
+      "Defenders quickly notice if you can only go one way and will force you to your weak side.",
+      "Using both hands lets you drive, finish and pass from either side of the court.",
+      "Simple drills: dribble only with your weak hand, and do weak-hand layups from close range."
+     ],
+     "q": "Which everyday task could you try with your weaker hand today?",
+     "c": "Brush your teeth or open doors with your weaker hand all day."
+    },
+    "de": {
+     "t": "Training der schwachen Hand",
+     "g": "Verstehe, warum beide Hände zählen und wie du die schwächere trainierst.",
+     "p": [
+      "Verteidiger merken schnell, wenn du nur in eine Richtung kannst, und zwingen dich auf die schwache Seite.",
+      "Mit beiden Händen kannst du von jeder Seite ziehen, abschließen und passen.",
+      "Einfache Übungen: nur mit der schwachen Hand dribbeln und aus kurzer Distanz Korbleger mit ihr."
+     ],
+     "q": "Welche Alltagsaufgabe könntest du heute mit der schwächeren Hand probieren?",
+     "c": "Putz dir heute die Zähne oder öffne Türen mit der schwächeren Hand."
+    },
+    "es": {
+     "t": "Entrenar la mano débil",
+     "g": "Entiende por qué importan las dos manos y cómo entrenar la menos hábil.",
+     "p": [
+      "Los defensores notan enseguida si solo vas hacia un lado y te obligan a ir por tu lado débil.",
+      "Usar ambas manos te permite penetrar, finalizar y pasar desde cualquier lado.",
+      "Ejercicios sencillos: bota solo con la mano débil y haz bandejas cortas con ella."
+     ],
+     "q": "¿Qué tarea diaria podrías probar hoy con tu mano menos hábil?",
+     "c": "Lávate los dientes o abre puertas con tu mano menos hábil todo el día."
+    },
+    "fr": {
+     "t": "Travailler la main faible",
+     "g": "Comprendre pourquoi les deux mains comptent et comment entraîner la plus faible.",
+     "p": [
+      "Les défenseurs voient vite si tu ne vas que d'un côté et te forcent vers ta main faible.",
+      "Utiliser les deux mains permet d'attaquer, finir et passer des deux côtés du terrain.",
+      "Exercices simples : dribble uniquement de la main faible et fais des doubles pas de près avec elle."
+     ],
+     "q": "Quelle tâche du quotidien pourrais-tu faire aujourd'hui avec ta main faible ?",
+     "c": "Brosse-toi les dents ou ouvre les portes avec ta main faible toute la journée."
+    },
+    "it": {
+     "t": "Allenare la mano debole",
+     "g": "Capisci perché contano entrambe le mani e come allenare quella debole.",
+     "p": [
+      "I difensori notano subito se vai solo da una parte e ti spingono sul lato debole.",
+      "Usare entrambe le mani ti permette di penetrare, concludere e passare da ogni lato.",
+      "Esercizi semplici: palleggia solo con la mano debole e fai terzi tempi da vicino con quella."
+     ],
+     "q": "Quale attività quotidiana potresti provare oggi con la mano debole?",
+     "c": "Lavati i denti o apri le porte con la mano debole per tutto il giorno."
+    },
+    "pt": {
+     "t": "Treinar a mão fraca",
+     "g": "Percebe porque as duas mãos importam e como treinar a mais fraca.",
+     "p": [
+      "Os defensores notam logo se só vais para um lado e empurram-te para o lado fraco.",
+      "Usar as duas mãos permite-te penetrar, finalizar e passar de qualquer lado.",
+      "Exercícios simples: dribla só com a mão fraca e faz lançamentos na passada curtos com ela."
+     ],
+     "q": "Que tarefa do dia a dia podias experimentar hoje com a mão mais fraca?",
+     "c": "Lava os dentes ou abre portas com a mão mais fraca o dia todo."
+    },
+    "pt_BR": {
+     "t": "Treinando a mão fraca",
+     "g": "Entenda por que as duas mãos importam e como treinar a mais fraca.",
+     "p": [
+      "Os marcadores percebem rápido se você só vai para um lado e forçam você para o lado fraco.",
+      "Usar as duas mãos permite infiltrar, finalizar e passar de qualquer lado.",
+      "Exercícios simples: drible só com a mão fraca e faça bandejas curtas com ela."
+     ],
+     "q": "Que tarefa do dia a dia você poderia tentar hoje com a mão mais fraca?",
+     "c": "Escove os dentes ou abra portas com a mão mais fraca o dia todo."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The jump stop",
+     "g": "Learn to stop on two feet with balance and options.",
+     "p": [
+      "In a jump stop you land on both feet at the same time after a dribble or a catch.",
+      "Landing on both feet lets you choose either foot as your pivot foot afterwards.",
+      "Land low with knees bent so you stay balanced and avoid traveling."
+     ],
+     "q": "Why do you think keeping both pivot options is useful?",
+     "c": "Jog, hop and land on both feet ten times, freezing each landing."
+    },
+    "de": {
+     "t": "Der Sprungstopp",
+     "g": "Lerne, mit Balance und Optionen auf beiden Füßen zu stoppen.",
+     "p": [
+      "Beim Sprungstopp landest du nach Dribbling oder Fang gleichzeitig auf beiden Füßen.",
+      "Weil beide Füße zugleich landen, kannst du danach jeden Fuß als Standbein wählen.",
+      "Lande tief mit gebeugten Knien, damit du stabil bleibst und keinen Schrittfehler machst."
+     ],
+     "q": "Warum ist es wohl nützlich, beide Standbein-Optionen zu behalten?",
+     "c": "Lauf locker, spring ab und lande zehnmal auf beiden Füßen, jedes Mal eingefroren."
+    },
+    "es": {
+     "t": "La parada en un tiempo",
+     "g": "Aprende a parar con los dos pies, equilibrado y con opciones.",
+     "p": [
+      "En la parada en un tiempo caes con los dos pies a la vez tras un bote o una recepción.",
+      "Al caer con ambos pies, después puedes elegir cualquiera como pie de pivote.",
+      "Cae bajo con las rodillas flexionadas para mantener el equilibrio y no hacer pasos."
+     ],
+     "q": "¿Por qué crees que es útil conservar las dos opciones de pivote?",
+     "c": "Trota, salta y cae con los dos pies diez veces, congelando cada aterrizaje."
+    },
+    "fr": {
+     "t": "L'arrêt simultané",
+     "g": "Apprendre à s'arrêter sur deux pieds, équilibré et avec des options.",
+     "p": [
+      "Lors d'un arrêt simultané, tu atterris sur les deux pieds en même temps après un dribble ou une réception.",
+      "En atterrissant sur les deux pieds, tu peux ensuite choisir n'importe lequel comme pied de pivot.",
+      "Atterris bas, genoux fléchis, pour rester équilibré et éviter le marcher."
+     ],
+     "q": "Pourquoi est-il utile de garder les deux options de pivot, à ton avis ?",
+     "c": "Trottine, saute et atterris sur les deux pieds dix fois en figeant chaque réception."
+    },
+    "it": {
+     "t": "L'arresto a un tempo",
+     "g": "Impara a fermarti su due piedi, in equilibrio e con più opzioni.",
+     "p": [
+      "Nell'arresto a un tempo atterri su entrambi i piedi insieme dopo un palleggio o una ricezione.",
+      "Atterrando su due piedi, dopo puoi scegliere l'uno o l'altro come piede perno.",
+      "Atterra basso con le ginocchia piegate per restare in equilibrio ed evitare i passi."
+     ],
+     "q": "Perché pensi sia utile mantenere entrambe le opzioni di perno?",
+     "c": "Corricchia, salta e atterra su due piedi dieci volte, bloccando ogni arrivo."
+    },
+    "pt": {
+     "t": "A paragem a um tempo",
+     "g": "Aprende a parar com os dois pés, equilibrado e com opções.",
+     "p": [
+      "Na paragem a um tempo aterras com os dois pés ao mesmo tempo depois de um drible ou receção.",
+      "Ao aterrar com os dois pés, podes depois escolher qualquer um como pé de pivô.",
+      "Aterra baixo com os joelhos fletidos para ficares equilibrado e evitares passos."
+     ],
+     "q": "Porque achas útil manter as duas opções de pivô?",
+     "c": "Corre devagar, salta e aterra com os dois pés dez vezes, congelando cada receção."
+    },
+    "pt_BR": {
+     "t": "A parada em um tempo",
+     "g": "Aprenda a parar com os dois pés, equilibrado e com opções.",
+     "p": [
+      "Na parada em um tempo você cai com os dois pés juntos depois de um drible ou recepção.",
+      "Caindo com os dois pés, depois você pode escolher qualquer um como pé de pivô.",
+      "Caia baixo com os joelhos dobrados para manter o equilíbrio e evitar andada."
+     ],
+     "q": "Por que você acha útil manter as duas opções de pivô?",
+     "c": "Trote, salte e caia com os dois pés dez vezes, congelando cada aterrissagem."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pivoting with purpose",
+     "g": "Use pivots to protect the ball and find passing lanes.",
+     "p": [
+      "A front pivot turns you forward around your pivot foot, toward the defender or the basket.",
+      "A reverse pivot turns you backward, away from pressure, to open a new view of the floor.",
+      "Keep the ball tight near your chin or hip, away from the defender's hands."
+     ],
+     "q": "When would you choose a reverse pivot instead of a front pivot?",
+     "c": "Hold a ball and do ten front and ten reverse pivots on the same foot."
+    },
+    "de": {
+     "t": "Gezielt sternschreiten",
+     "g": "Nutze Sternschritte, um den Ball zu schützen und Passwege zu finden.",
+     "p": [
+      "Beim Vorwärtsdrehen drehst du dich um dein Standbein nach vorn, zum Verteidiger oder Korb.",
+      "Beim Rückwärtsdrehen drehst du dich weg vom Druck und bekommst einen neuen Blick aufs Feld.",
+      "Halte den Ball eng an Kinn oder Hüfte, weg von den Händen des Verteidigers."
+     ],
+     "q": "Wann würdest du eher rückwärts statt vorwärts drehen?",
+     "c": "Mach mit Ball je zehn Vorwärts- und Rückwärtsdrehungen auf demselben Fuß."
+    },
+    "es": {
+     "t": "Pivotar con intención",
+     "g": "Usa los pivotes para proteger el balón y encontrar líneas de pase.",
+     "p": [
+      "El pivote frontal te gira hacia delante sobre tu pie de pivote, hacia el defensor o el aro.",
+      "El pivote reverso te gira hacia atrás, lejos de la presión, y te abre otra visión de la cancha.",
+      "Mantén el balón pegado a la barbilla o la cadera, lejos de las manos del defensor."
+     ],
+     "q": "¿Cuándo elegirías un pivote reverso en vez de uno frontal?",
+     "c": "Con un balón, haz diez pivotes frontales y diez reversos sobre el mismo pie."
+    },
+    "fr": {
+     "t": "Pivoter avec intention",
+     "g": "Utiliser les pivots pour protéger le ballon et trouver des lignes de passe.",
+     "p": [
+      "Le pivot avant te fait tourner vers l'avant autour de ton pied de pivot, vers le défenseur ou le panier.",
+      "Le pivot arrière te fait tourner vers l'arrière, loin de la pression, pour voir le terrain autrement.",
+      "Garde le ballon serré près du menton ou de la hanche, loin des mains du défenseur."
+     ],
+     "q": "Quand choisirais-tu un pivot arrière plutôt qu'un pivot avant ?",
+     "c": "Avec un ballon, fais dix pivots avant et dix pivots arrière sur le même pied."
+    },
+    "it": {
+     "t": "Ruotare con uno scopo",
+     "g": "Usa i perni per proteggere la palla e trovare linee di passaggio.",
+     "p": [
+      "Il perno frontale ti fa ruotare in avanti sul piede perno, verso il difensore o il canestro.",
+      "Il perno dorsale ti fa ruotare all'indietro, lontano dalla pressione, aprendo una nuova visuale.",
+      "Tieni la palla stretta vicino al mento o al fianco, lontano dalle mani del difensore."
+     ],
+     "q": "Quando sceglieresti un perno dorsale invece di uno frontale?",
+     "c": "Con una palla, fai dieci perni frontali e dieci dorsali sullo stesso piede."
+    },
+    "pt": {
+     "t": "Rodar com intenção",
+     "g": "Usa os pivôs para proteger a bola e encontrar linhas de passe.",
+     "p": [
+      "O pivô de frente faz-te rodar para a frente sobre o pé de pivô, para o defensor ou o cesto.",
+      "O pivô de reverso faz-te rodar para trás, longe da pressão, abrindo outra visão do campo.",
+      "Mantém a bola junto ao queixo ou à anca, longe das mãos do defensor."
+     ],
+     "q": "Quando escolherias um pivô de reverso em vez de um de frente?",
+     "c": "Com uma bola, faz dez pivôs de frente e dez de reverso sobre o mesmo pé."
+    },
+    "pt_BR": {
+     "t": "Girando com propósito",
+     "g": "Use o pivô para proteger a bola e achar linhas de passe.",
+     "p": [
+      "O pivô de frente gira você para a frente sobre o pé de pivô, rumo ao marcador ou à cesta.",
+      "O pivô reverso gira você para trás, longe da pressão, abrindo outra visão da quadra.",
+      "Mantenha a bola junto ao queixo ou ao quadril, longe das mãos do marcador."
+     ],
+     "q": "Quando você escolheria um pivô reverso em vez de um de frente?",
+     "c": "Com uma bola, faça dez pivôs de frente e dez reversos sobre o mesmo pé."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Triple-threat position",
+     "g": "Learn the strongest stance when you catch the ball.",
+     "p": [
+      "Triple threat means you can shoot, pass or dribble from the same position.",
+      "Knees bent, ball near your hip on your shooting side, eyes on the rim and the floor.",
+      "The defender cannot guess your next move, so they must respect all three options."
+     ],
+     "q": "Which of the three options do you think you would use most?",
+     "c": "Catch any ball ten times and land in triple threat before moving."
+    },
+    "de": {
+     "t": "Die Triple-Threat-Position",
+     "g": "Lerne die stärkste Haltung, wenn du den Ball fängst.",
+     "p": [
+      "Triple Threat heißt: Aus derselben Position kannst du werfen, passen oder dribbeln.",
+      "Knie gebeugt, Ball an der Hüfte auf der Wurfseite, Blick auf Ring und Feld.",
+      "Der Verteidiger kann deinen nächsten Schritt nicht erraten und muss alle drei Optionen respektieren."
+     ],
+     "q": "Welche der drei Optionen würdest du wohl am meisten nutzen?",
+     "c": "Fang zehnmal einen Ball und geh jedes Mal erst in die Triple-Threat-Position."
+    },
+    "es": {
+     "t": "La triple amenaza",
+     "g": "Aprende la postura más fuerte al recibir el balón.",
+     "p": [
+      "Triple amenaza significa que puedes tirar, pasar o botar desde la misma posición.",
+      "Rodillas flexionadas, balón junto a la cadera del lado de tiro, mirada al aro y a la cancha.",
+      "El defensor no puede adivinar tu siguiente acción y debe respetar las tres opciones."
+     ],
+     "q": "¿Cuál de las tres opciones crees que usarías más?",
+     "c": "Recibe un balón diez veces y colócate en triple amenaza antes de moverte."
+    },
+    "fr": {
+     "t": "La triple menace",
+     "g": "Apprendre la position la plus forte quand tu reçois le ballon.",
+     "p": [
+      "La triple menace signifie que tu peux tirer, passer ou dribbler depuis la même position.",
+      "Genoux fléchis, ballon près de la hanche côté tir, regard sur le cercle et le terrain.",
+      "Le défenseur ne peut pas deviner ton action et doit respecter les trois options."
+     ],
+     "q": "Laquelle des trois options utiliserais-tu le plus, selon toi ?",
+     "c": "Reçois un ballon dix fois et place-toi en triple menace avant de bouger."
+    },
+    "it": {
+     "t": "La triplice minaccia",
+     "g": "Impara la posizione più forte quando ricevi la palla.",
+     "p": [
+      "Triplice minaccia vuol dire che puoi tirare, passare o palleggiare dalla stessa posizione.",
+      "Ginocchia piegate, palla vicino al fianco del lato di tiro, occhi sul ferro e sul campo.",
+      "Il difensore non può indovinare la tua mossa e deve rispettare tutte e tre le opzioni."
+     ],
+     "q": "Quale delle tre opzioni pensi useresti di più?",
+     "c": "Ricevi una palla dieci volte e mettiti in triplice minaccia prima di muoverti."
+    },
+    "pt": {
+     "t": "A tripla ameaça",
+     "g": "Aprende a posição mais forte quando recebes a bola.",
+     "p": [
+      "Tripla ameaça significa que podes lançar, passar ou driblar a partir da mesma posição.",
+      "Joelhos fletidos, bola junto à anca do lado do lançamento, olhos no aro e no campo.",
+      "O defensor não consegue adivinhar o teu próximo movimento e tem de respeitar as três opções."
+     ],
+     "q": "Qual das três opções achas que usarias mais?",
+     "c": "Recebe uma bola dez vezes e coloca-te em tripla ameaça antes de te mexeres."
+    },
+    "pt_BR": {
+     "t": "A tripla ameaça",
+     "g": "Aprenda a posição mais forte quando você recebe a bola.",
+     "p": [
+      "Tripla ameaça significa que você pode arremessar, passar ou driblar da mesma posição.",
+      "Joelhos dobrados, bola perto do quadril do lado do arremesso, olhos no aro e na quadra.",
+      "O marcador não consegue adivinhar seu próximo movimento e precisa respeitar as três opções."
+     ],
+     "q": "Qual das três opções você acha que usaria mais?",
+     "c": "Receba uma bola dez vezes e fique em tripla ameaça antes de se mexer."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The jump shot",
+     "g": "Learn how the set shot evolved into the jump shot.",
+     "p": [
+      "Early players shot flat-footed set shots; pioneers like Kenny Sailors helped popularize the jumper in the 1940s.",
+      "Rhythm matters: dip, rise with your legs and let the power flow up to your hands.",
+      "Release at or just before the top of your jump, so the shot stays smooth and hard to block."
+     ],
+     "q": "Why do you think the jump shot was so hard to defend at first?",
+     "c": "Take ten form shots close to a target, focusing on releasing at the top."
+    },
+    "de": {
+     "t": "Der Sprungwurf",
+     "g": "Lerne, wie aus dem Standwurf der Sprungwurf wurde.",
+     "p": [
+      "Früher warf man aus dem Stand; Pioniere wie Kenny Sailors machten den Sprungwurf in den 1940ern populär.",
+      "Rhythmus zählt: kurz absenken, mit den Beinen hochgehen und die Kraft bis in die Hände leiten.",
+      "Lass den Ball am oder kurz vor dem höchsten Punkt los, dann bleibt der Wurf flüssig und schwer zu blocken."
+     ],
+     "q": "Warum war der Sprungwurf anfangs wohl so schwer zu verteidigen?",
+     "c": "Mach zehn Technikwürfe nah am Ziel und achte auf das Loslassen oben."
+    },
+    "es": {
+     "t": "El tiro en suspensión",
+     "g": "Aprende cómo el tiro estático evolucionó al tiro en suspensión.",
+     "p": [
+      "Antes se tiraba con los pies en el suelo; pioneros como Kenny Sailors popularizaron la suspensión en los años cuarenta.",
+      "El ritmo importa: flexiona, sube con las piernas y deja que la fuerza llegue a las manos.",
+      "Suelta el balón en lo más alto del salto o justo antes, para que el tiro sea fluido y difícil de taponar."
+     ],
+     "q": "¿Por qué crees que el tiro en suspensión era tan difícil de defender al principio?",
+     "c": "Haz diez tiros de técnica cerca de un objetivo, soltando arriba."
+    },
+    "fr": {
+     "t": "Le tir en suspension",
+     "g": "Apprendre comment le tir arrêté est devenu le tir en suspension.",
+     "p": [
+      "Avant, on tirait pieds au sol ; des pionniers comme Kenny Sailors ont popularisé le shoot en suspension dans les années 1940.",
+      "Le rythme compte : fléchis, monte avec les jambes et laisse la force remonter jusqu'aux mains.",
+      "Lâche le ballon au sommet du saut ou juste avant, pour un tir fluide et difficile à contrer."
+     ],
+     "q": "Pourquoi le tir en suspension était-il si difficile à défendre au début, à ton avis ?",
+     "c": "Fais dix tirs de placement près d'une cible en lâchant au sommet."
+    },
+    "it": {
+     "t": "Il tiro in sospensione",
+     "g": "Impara come il tiro piazzato si è evoluto nel tiro in sospensione.",
+     "p": [
+      "Un tempo si tirava da fermi; pionieri come Kenny Sailors resero popolare il jump shot negli anni Quaranta.",
+      "Conta il ritmo: piega, sali con le gambe e lascia che la forza arrivi alle mani.",
+      "Rilascia al punto più alto del salto o poco prima, così il tiro resta fluido e difficile da stoppare."
+     ],
+     "q": "Perché pensi che il tiro in sospensione fosse così difficile da difendere all'inizio?",
+     "c": "Fai dieci tiri di tecnica vicino a un bersaglio, rilasciando in alto."
+    },
+    "pt": {
+     "t": "O lançamento em suspensão",
+     "g": "Aprende como o lançamento parado evoluiu para o lançamento em suspensão.",
+     "p": [
+      "Antes lançava-se com os pés no chão; pioneiros como Kenny Sailors popularizaram a suspensão nos anos 40.",
+      "O ritmo conta: flete, sobe com as pernas e deixa a força chegar até às mãos.",
+      "Solta a bola no ponto mais alto do salto ou pouco antes, para o lançamento sair fluido e difícil de desarmar."
+     ],
+     "q": "Porque achas que o lançamento em suspensão era tão difícil de defender no início?",
+     "c": "Faz dez lançamentos de técnica perto de um alvo, soltando lá em cima."
+    },
+    "pt_BR": {
+     "t": "O arremesso de jump",
+     "g": "Aprenda como o arremesso parado evoluiu para o jump.",
+     "p": [
+      "Antes se arremessava com os pés no chão; pioneiros como Kenny Sailors popularizaram o jump nos anos 1940.",
+      "O ritmo importa: flexione, suba com as pernas e deixe a força chegar até as mãos.",
+      "Solte a bola no ponto mais alto do salto ou logo antes, para o arremesso sair fluido e difícil de tocar."
+     ],
+     "q": "Por que você acha que o jump era tão difícil de marcar no começo?",
+     "c": "Faça dez arremessos de técnica perto de um alvo, soltando lá em cima."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shooting off the catch",
+     "g": "Turn a pass into a quick, balanced shot.",
+     "p": [
+      "Show your hands as a target before the ball arrives, ready to catch in your shooting pocket.",
+      "Have your feet set or hop into your shot so you are balanced on the catch.",
+      "Ray Allen famously caught and shot in one smooth motion with almost no wasted movement."
+     ],
+     "q": "Do you think catch-and-shoot is easier or harder than shooting off the dribble?",
+     "c": "Toss a ball up to yourself, catch it in your shot pocket and rise ten times."
+    },
+    "de": {
+     "t": "Wurf aus dem Fang",
+     "g": "Verwandle einen Pass in einen schnellen, stabilen Wurf.",
+     "p": [
+      "Zeig deine Hände als Ziel, bevor der Ball kommt, bereit zum Fangen in der Wurfposition.",
+      "Steh mit gesetzten Füßen oder hüpf in den Wurf, damit du beim Fang im Gleichgewicht bist.",
+      "Ray Allen fing und warf berühmt in einer einzigen fließenden Bewegung, ohne unnötige Bewegung."
+     ],
+     "q": "Ist ein Wurf aus dem Fang leichter oder schwerer als aus dem Dribbling?",
+     "c": "Wirf dir den Ball zehnmal selbst zu, fang ihn in Wurfposition und steig hoch."
+    },
+    "es": {
+     "t": "Tiro tras recepción",
+     "g": "Convierte un pase en un tiro rápido y equilibrado.",
+     "p": [
+      "Enseña las manos como objetivo antes de que llegue el balón, listas para recibir en posición de tiro.",
+      "Ten los pies preparados o entra con un pequeño salto para estar equilibrado al recibir.",
+      "Ray Allen recibía y tiraba en un solo movimiento fluido, casi sin gestos de más."
+     ],
+     "q": "¿Crees que tirar tras recepción es más fácil o más difícil que tras bote?",
+     "c": "Lánzate el balón, recíbelo en posición de tiro y sube diez veces."
+    },
+    "fr": {
+     "t": "Le tir après réception",
+     "g": "Transformer une passe en tir rapide et équilibré.",
+     "p": [
+      "Montre tes mains comme cible avant que le ballon arrive, prêtes à recevoir en position de tir.",
+      "Aie les pieds déjà placés ou entre dans le tir avec un petit saut pour être équilibré à la réception.",
+      "Ray Allen recevait et tirait en un seul geste fluide, presque sans mouvement inutile."
+     ],
+     "q": "Le tir après réception est-il plus facile ou plus difficile qu'après dribble, selon toi ?",
+     "c": "Lance-toi le ballon, reçois-le en position de tir et monte, dix fois."
+    },
+    "it": {
+     "t": "Il tiro in ricezione",
+     "g": "Trasforma un passaggio in un tiro rapido ed equilibrato.",
+     "p": [
+      "Mostra le mani come bersaglio prima che arrivi la palla, pronte a riceverla in posizione di tiro.",
+      "Tieni i piedi già pronti o entra nel tiro con un saltello per essere equilibrato in ricezione.",
+      "Ray Allen riceveva e tirava in un unico gesto fluido, quasi senza movimenti inutili."
+     ],
+     "q": "Pensi che tirare in ricezione sia più facile o più difficile che dal palleggio?",
+     "c": "Lanciati la palla, ricevila in posizione di tiro e sali, dieci volte."
+    },
+    "pt": {
+     "t": "O lançamento após receção",
+     "g": "Transforma um passe num lançamento rápido e equilibrado.",
+     "p": [
+      "Mostra as mãos como alvo antes de a bola chegar, prontas a receber na posição de lançamento.",
+      "Tem os pés preparados ou entra no lançamento com um pequeno salto para estares equilibrado.",
+      "Ray Allen recebia e lançava num só movimento fluido, quase sem gestos a mais."
+     ],
+     "q": "Achas que lançar após receção é mais fácil ou mais difícil do que após drible?",
+     "c": "Atira a bola a ti próprio, recebe-a na posição de lançamento e sobe, dez vezes."
+    },
+    "pt_BR": {
+     "t": "O arremesso após recepção",
+     "g": "Transforme um passe num arremesso rápido e equilibrado.",
+     "p": [
+      "Mostre as mãos como alvo antes de a bola chegar, prontas para receber na posição de arremesso.",
+      "Esteja com os pés prontos ou entre no arremesso com um pulinho para ficar equilibrado.",
+      "Ray Allen recebia e arremessava num só movimento fluido, quase sem gestos a mais."
+     ],
+     "q": "Você acha que arremessar após recepção é mais fácil ou mais difícil que após o drible?",
+     "c": "Jogue a bola para si mesmo, receba na posição de arremesso e suba, dez vezes."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free-throw routine",
+     "g": "Build a calm, repeatable routine at the line.",
+     "p": [
+      "Great free-throw shooters do the same steps every time: a set number of bounces, a breath, then the shot.",
+      "You have 10 seconds in the NBA and 5 seconds under FIBA rules, so keep the routine short.",
+      "Rick Barry made about 90 percent of his free throws shooting underhand."
+     ],
+     "q": "What small ritual helps you stay calm before something important?",
+     "c": "Create your own routine of three steps and repeat it before ten practice shots."
+    },
+    "de": {
+     "t": "Die Freiwurf-Routine",
+     "g": "Bau dir eine ruhige, wiederholbare Routine an der Linie auf.",
+     "p": [
+      "Gute Freiwurfschützen machen jedes Mal dasselbe: feste Anzahl an Dribblings, ein Atemzug, dann der Wurf.",
+      "In der NBA hast du 10 Sekunden, nach FIBA-Regeln 5 Sekunden, also halte die Routine kurz.",
+      "Rick Barry traf rund 90 Prozent seiner Freiwürfe, und zwar von unten geworfen."
+     ],
+     "q": "Welches kleine Ritual hilft dir, vor etwas Wichtigem ruhig zu bleiben?",
+     "c": "Erfinde eine Routine mit drei Schritten und wiederhole sie vor zehn Übungswürfen."
+    },
+    "es": {
+     "t": "La rutina de tiro libre",
+     "g": "Crea una rutina tranquila y repetible en la línea.",
+     "p": [
+      "Los grandes tiradores de libres repiten siempre lo mismo: unos botes fijos, una respiración y el tiro.",
+      "Tienes 10 segundos en la NBA y 5 con reglas FIBA, así que mantén la rutina corta.",
+      "Rick Barry metía alrededor del 90 por ciento de sus libres lanzando por debajo, a dos manos."
+     ],
+     "q": "¿Qué pequeño ritual te ayuda a mantener la calma antes de algo importante?",
+     "c": "Crea tu propia rutina de tres pasos y repítela antes de diez tiros de práctica."
+    },
+    "fr": {
+     "t": "La routine des lancers francs",
+     "g": "Construire une routine calme et répétable sur la ligne.",
+     "p": [
+      "Les grands tireurs de lancers font toujours pareil : un nombre fixe de dribbles, une respiration, puis le tir.",
+      "Tu as 10 secondes en NBA et 5 selon les règles FIBA, alors garde une routine courte.",
+      "Rick Barry réussissait environ 90 pour cent de ses lancers en tirant à la cuillère, par en dessous."
+     ],
+     "q": "Quel petit rituel t'aide à rester calme avant un moment important ?",
+     "c": "Crée ta propre routine en trois étapes et répète-la avant dix tirs d'entraînement."
+    },
+    "it": {
+     "t": "La routine del tiro libero",
+     "g": "Costruisci una routine calma e ripetibile in lunetta.",
+     "p": [
+      "I grandi tiratori di liberi fanno sempre gli stessi passi: palleggi fissi, un respiro, poi il tiro.",
+      "Hai 10 secondi in NBA e 5 con le regole FIBA, quindi tieni la routine breve.",
+      "Rick Barry segnava circa il 90 per cento dei liberi tirando dal basso, a due mani."
+     ],
+     "q": "Quale piccolo rituale ti aiuta a restare calmo prima di qualcosa di importante?",
+     "c": "Crea una tua routine in tre passi e ripetila prima di dieci tiri di prova."
+    },
+    "pt": {
+     "t": "A rotina do lance livre",
+     "g": "Cria uma rotina calma e repetível na linha.",
+     "p": [
+      "Os grandes lançadores de lances livres repetem sempre os mesmos passos: dribles fixos, uma respiração e o lançamento.",
+      "Tens 10 segundos na NBA e 5 com regras FIBA, por isso mantém a rotina curta.",
+      "Rick Barry acertava cerca de 90 por cento dos lances livres a lançar por baixo, com as duas mãos."
+     ],
+     "q": "Que pequeno ritual te ajuda a ficar calmo antes de algo importante?",
+     "c": "Cria a tua rotina de três passos e repete-a antes de dez lançamentos de treino."
+    },
+    "pt_BR": {
+     "t": "A rotina do lance livre",
+     "g": "Crie uma rotina calma e repetível na linha.",
+     "p": [
+      "Os grandes cobradores de lance livre repetem sempre os mesmos passos: quiques fixos, uma respiração e o arremesso.",
+      "Você tem 10 segundos na NBA e 5 nas regras FIBA, então mantenha a rotina curta.",
+      "Rick Barry acertava cerca de 90 por cento dos lances livres arremessando por baixo, com as duas mãos."
+     ],
+     "q": "Que pequeno ritual ajuda você a ficar calmo antes de algo importante?",
+     "c": "Crie sua própria rotina de três passos e repita antes de dez arremessos de treino."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Floater and runner",
+     "g": "Learn a soft shot to score over taller defenders.",
+     "p": [
+      "A floater is a high, soft one-handed shot released early in the lane, before a big defender can block it.",
+      "A runner is similar but taken on the move, often off one foot after a drive.",
+      "Tony Parker made his teardrop floater one of the most famous weapons of his era."
+     ],
+     "q": "Why do you think smaller guards love the floater?",
+     "c": "Toss a soft one-handed shot with a high arc at any target ten times."
+    },
+    "de": {
+     "t": "Floater und Runner",
+     "g": "Lerne einen weichen Wurf, um über größere Verteidiger zu punkten.",
+     "p": [
+      "Der Floater ist ein hoher, weicher Einhandwurf, früh in der Zone losgelassen, bevor ein Großer blocken kann.",
+      "Der Runner ist ähnlich, wird aber aus der Bewegung genommen, oft von einem Fuß nach einem Drive.",
+      "Tony Parker machte seinen Teardrop-Floater zu einer der bekanntesten Waffen seiner Zeit."
+     ],
+     "q": "Warum lieben kleinere Guards wohl den Floater?",
+     "c": "Wirf zehnmal einen weichen Einhandwurf mit hohem Bogen auf ein Ziel."
+    },
+    "es": {
+     "t": "La bombita y el runner",
+     "g": "Aprende un tiro suave para anotar sobre defensores más altos.",
+     "p": [
+      "La bombita es un tiro alto y suave a una mano, soltado pronto en la zona antes de que un grande tapone.",
+      "El runner es parecido pero en carrera, a menudo con un solo pie tras una penetración.",
+      "Tony Parker convirtió su bombita en una de las armas más famosas de su época."
+     ],
+     "q": "¿Por qué crees que a los bases bajitos les encanta la bombita?",
+     "c": "Lanza diez veces un tiro suave a una mano con parábola alta a un objetivo."
+    },
+    "fr": {
+     "t": "Le floater et le runner",
+     "g": "Apprendre un tir doux pour marquer par-dessus des défenseurs plus grands.",
+     "p": [
+      "Le floater est un tir haut et doux à une main, lâché tôt dans la raquette avant que le grand puisse contrer.",
+      "Le runner est proche, mais pris en mouvement, souvent sur un pied après une pénétration.",
+      "Tony Parker a fait de son floater en cloche une des armes les plus célèbres de son époque."
+     ],
+     "q": "Pourquoi les petits meneurs adorent-ils le floater, à ton avis ?",
+     "c": "Fais dix tirs doux à une main avec une trajectoire haute vers une cible."
+    },
+    "it": {
+     "t": "Il floater e il runner",
+     "g": "Impara un tiro morbido per segnare sopra difensori più alti.",
+     "p": [
+      "Il floater è un tiro alto e morbido a una mano, rilasciato presto in area prima che il lungo possa stoppare.",
+      "Il runner è simile ma preso in corsa, spesso su un piede dopo una penetrazione.",
+      "Tony Parker fece del suo floater a goccia una delle armi più famose della sua epoca."
+     ],
+     "q": "Perché pensi che le guardie piccole adorino il floater?",
+     "c": "Fai dieci tiri morbidi a una mano con parabola alta verso un bersaglio."
+    },
+    "pt": {
+     "t": "O floater e o runner",
+     "g": "Aprende um lançamento suave para marcar por cima de defensores mais altos.",
+     "p": [
+      "O floater é um lançamento alto e suave a uma mão, solto cedo na área antes de um poste conseguir desarmar.",
+      "O runner é parecido mas em corrida, muitas vezes num só pé depois de uma penetração.",
+      "Tony Parker fez do seu floater em gota uma das armas mais famosas da sua época."
+     ],
+     "q": "Porque achas que os bases mais baixos adoram o floater?",
+     "c": "Faz dez lançamentos suaves a uma mão com arco alto para um alvo."
+    },
+    "pt_BR": {
+     "t": "O floater e o runner",
+     "g": "Aprenda um arremesso suave para pontuar por cima de marcadores mais altos.",
+     "p": [
+      "O floater é um arremesso alto e suave com uma mão, solto cedo no garrafão antes que o pivô dê o toco.",
+      "O runner é parecido mas em movimento, muitas vezes com um pé só depois de uma infiltração.",
+      "Tony Parker fez do seu floater em gota uma das armas mais famosas da sua época."
+     ],
+     "q": "Por que você acha que armadores mais baixos adoram o floater?",
+     "c": "Faça dez arremessos suaves com uma mão e arco alto num alvo."
+    }
+   }
+  }
+ ]
+}

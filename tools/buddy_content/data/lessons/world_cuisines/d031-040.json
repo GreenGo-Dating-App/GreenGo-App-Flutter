@@ -1,0 +1,835 @@
+{
+ "topic": "world_cuisines",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Peru: ceviche",
+     "g": "Discover ceviche, the bright coastal classic of raw fish cured in lime juice.",
+     "p": [
+      "Fresh raw fish is cut into cubes and cured in lime juice with chili and red onion.",
+      "The tangy, spicy marinade left in the bowl is lovingly called leche de tigre, tiger's milk.",
+      "Ceviche is often served with sweet potato and large-kernel Andean corn to balance the acidity."
+     ],
+     "q": "Do you enjoy sour, zesty flavours, or do you prefer milder food?",
+     "c": "Squeeze lime over thin slices of red onion with salt and chili and taste the zingy result."
+    },
+    "de": {
+     "t": "Peru: Ceviche",
+     "g": "Entdecke Ceviche, den frischen Küstenklassiker aus rohem, in Limettensaft gegartem Fisch.",
+     "p": [
+      "Frischer roher Fisch wird gewürfelt und in Limettensaft mit Chili und roten Zwiebeln gegart.",
+      "Die würzig-saure Marinade in der Schüssel heißt liebevoll Leche de Tigre, Tigermilch.",
+      "Dazu gibt es oft Süßkartoffel und großkörnigen Andenmais, um die Säure auszugleichen."
+     ],
+     "q": "Magst du saure, spritzige Aromen, oder bevorzugst du mildes Essen?",
+     "c": "Träufle Limettensaft über dünne rote Zwiebelringe mit Salz und Chili und probiere das spritzige Ergebnis."
+    },
+    "es": {
+     "t": "Perú: el ceviche",
+     "g": "Descubre el ceviche, el luminoso clásico costero de pescado crudo curado en limón.",
+     "p": [
+      "El pescado crudo fresco se corta en dados y se cura en jugo de limón con ají y cebolla morada.",
+      "El jugo ácido y picante que queda en el bol se llama con cariño leche de tigre.",
+      "El ceviche suele servirse con camote y choclo, el maíz andino de grano grande, para equilibrar la acidez."
+     ],
+     "q": "¿Te gustan los sabores ácidos y vivos, o prefieres comida más suave?",
+     "c": "Exprime limón sobre cebolla morada en tiras finas con sal y ají y prueba el resultado."
+    },
+    "fr": {
+     "t": "Pérou : le ceviche",
+     "g": "Découvre le ceviche, classique côtier de poisson cru mariné au citron vert.",
+     "p": [
+      "Du poisson cru très frais est coupé en dés et « cuit » dans le jus de citron vert avec piment et oignon rouge.",
+      "La marinade acidulée et piquante restée au fond s'appelle affectueusement leche de tigre, lait de tigre.",
+      "Le ceviche est souvent servi avec patate douce et gros maïs andin pour équilibrer l'acidité."
+     ],
+     "q": "Tu aimes les saveurs acidulées et vives, ou tu préfères une cuisine plus douce ?",
+     "c": "Presse du citron vert sur de fines lamelles d'oignon rouge avec sel et piment, et goûte le résultat."
+    },
+    "it": {
+     "t": "Perù: il ceviche",
+     "g": "Scopri il ceviche, il vivace classico costiero di pesce crudo marinato nel lime.",
+     "p": [
+      "Il pesce crudo freschissimo si taglia a cubetti e si marina nel succo di lime con peperoncino e cipolla rossa.",
+      "La marinata acida e piccante che resta nella ciotola si chiama affettuosamente leche de tigre, latte di tigre.",
+      "Il ceviche si serve spesso con patata dolce e mais andino a chicchi grandi per bilanciare l'acidità."
+     ],
+     "q": "Ti piacciono i sapori acidi e vivaci, o preferisci cibi più delicati?",
+     "c": "Spremi lime su sottili fettine di cipolla rossa con sale e peperoncino e assaggia il risultato."
+    },
+    "pt": {
+     "t": "Peru: o ceviche",
+     "g": "Descobre o ceviche, o vibrante clássico costeiro de peixe cru curado em sumo de lima.",
+     "p": [
+      "O peixe cru fresco é cortado em cubos e curado em sumo de lima com malagueta e cebola roxa.",
+      "A marinada ácida e picante que fica na taça chama-se carinhosamente leche de tigre, leite de tigre.",
+      "O ceviche costuma vir com batata-doce e milho andino de grão grande para equilibrar a acidez."
+     ],
+     "q": "Gostas de sabores ácidos e vivos, ou preferes comida mais suave?",
+     "c": "Espreme lima sobre cebola roxa às tiras finas com sal e malagueta e prova o resultado."
+    },
+    "pt_BR": {
+     "t": "Peru: o ceviche",
+     "g": "Descubra o ceviche, o vibrante clássico do litoral de peixe cru curado no limão.",
+     "p": [
+      "O peixe cru fresco é cortado em cubos e curado no suco de limão com pimenta e cebola roxa.",
+      "O caldo ácido e picante que fica na tigela é chamado com carinho de leche de tigre, leite de tigre.",
+      "O ceviche costuma vir com batata-doce e milho andino de grão graúdo para equilibrar a acidez."
+     ],
+     "q": "Você gosta de sabores ácidos e vibrantes, ou prefere comida mais suave?",
+     "c": "Esprema limão sobre cebola roxa em tiras finas com sal e pimenta e prove o resultado."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brazil: feijoada",
+     "g": "Get to know feijoada, Brazil's beloved black bean stew and its festive sides.",
+     "p": [
+      "Feijoada is a slow-cooked stew of black beans with different cuts of pork and sausage.",
+      "It comes with rice, farofa (toasted cassava flour), sautéed collard greens and orange slices.",
+      "In many Brazilian cities it is a classic, unhurried lunch shared with family or friends."
+     ],
+     "q": "What dish in your culture is made for long, relaxed meals with others?",
+     "c": "Toast a few spoons of cassava flour or breadcrumbs in butter to make a simple farofa."
+    },
+    "de": {
+     "t": "Brasilien: Feijoada",
+     "g": "Lerne Feijoada kennen, Brasiliens geliebten Eintopf aus schwarzen Bohnen, und seine Beilagen.",
+     "p": [
+      "Feijoada ist ein langsam geschmorter Eintopf aus schwarzen Bohnen mit Schweinefleisch und Wurst.",
+      "Dazu gibt es Reis, Farofa (geröstetes Maniokmehl), gedünsteten Blattkohl und Orangenscheiben.",
+      "In vielen brasilianischen Städten ist sie ein klassisches, gemütliches Mittagessen mit Familie oder Freunden."
+     ],
+     "q": "Welches Gericht deiner Kultur ist für lange, entspannte Mahlzeiten mit anderen gemacht?",
+     "c": "Röste ein paar Löffel Maniokmehl oder Semmelbrösel in Butter für eine einfache Farofa."
+    },
+    "es": {
+     "t": "Brasil: la feijoada",
+     "g": "Conoce la feijoada, el querido guiso brasileño de frijoles negros y sus acompañamientos.",
+     "p": [
+      "La feijoada es un guiso lento de frijoles negros con distintos cortes de cerdo y embutidos.",
+      "Se sirve con arroz, farofa (harina de mandioca tostada), col salteada y rodajas de naranja.",
+      "En muchas ciudades de Brasil es un almuerzo clásico y sin prisas con familia o amigos."
+     ],
+     "q": "¿Qué plato de tu cultura está hecho para comidas largas y relajadas con otros?",
+     "c": "Tuesta unas cucharadas de harina de mandioca o pan rallado en mantequilla para una farofa sencilla."
+    },
+    "fr": {
+     "t": "Brésil : la feijoada",
+     "g": "Découvre la feijoada, le ragoût brésilien adoré de haricots noirs, et ses accompagnements.",
+     "p": [
+      "La feijoada est un ragoût mijoté de haricots noirs avec différents morceaux de porc et de saucisse.",
+      "On la sert avec riz, farofa (farine de manioc grillée), chou vert sauté et rondelles d'orange.",
+      "Dans beaucoup de villes brésiliennes, c'est un déjeuner classique et tranquille en famille ou entre amis."
+     ],
+     "q": "Quel plat de ta culture est fait pour de longs repas détendus à plusieurs ?",
+     "c": "Fais griller quelques cuillères de farine de manioc ou de chapelure au beurre pour une farofa simple."
+    },
+    "it": {
+     "t": "Brasile: la feijoada",
+     "g": "Conosci la feijoada, l'amato stufato brasiliano di fagioli neri, e i suoi contorni.",
+     "p": [
+      "La feijoada è uno stufato lento di fagioli neri con diversi tagli di maiale e salsicce.",
+      "Si serve con riso, farofa (farina di manioca tostata), cavolo saltato e fette d'arancia.",
+      "In molte città brasiliane è un classico pranzo senza fretta con famiglia o amici."
+     ],
+     "q": "Quale piatto della tua cultura è fatto per pasti lunghi e rilassati in compagnia?",
+     "c": "Tosta qualche cucchiaio di farina di manioca o pangrattato nel burro per una farofa semplice."
+    },
+    "pt": {
+     "t": "Brasil: a feijoada",
+     "g": "Conhece a feijoada, o querido guisado brasileiro de feijão-preto, e os seus acompanhamentos.",
+     "p": [
+      "A feijoada brasileira é um guisado lento de feijão-preto com várias partes de porco e enchidos.",
+      "Vem com arroz, farofa (farinha de mandioca torrada), couve salteada e rodelas de laranja.",
+      "Em muitas cidades brasileiras é um almoço clássico e sem pressa com família ou amigos."
+     ],
+     "q": "Que prato da tua cultura é feito para refeições longas e descontraídas com outros?",
+     "c": "Torra umas colheres de farinha de mandioca ou pão ralado em manteiga para uma farofa simples."
+    },
+    "pt_BR": {
+     "t": "Brasil: a feijoada",
+     "g": "Conheça a feijoada, o querido ensopado brasileiro de feijão-preto, e seus acompanhamentos.",
+     "p": [
+      "A feijoada é um cozido lento de feijão-preto com diferentes cortes de porco e linguiça.",
+      "Vem com arroz, farofa, couve refogada e rodelas de laranja.",
+      "Em muitas cidades brasileiras é um almoço clássico e sem pressa com família ou amigos."
+     ],
+     "q": "Qual prato da sua cultura é feito para refeições longas e tranquilas com outras pessoas?",
+     "c": "Toste algumas colheres de farinha de mandioca na manteiga para fazer uma farofa simples."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Argentina: the asado",
+     "g": "Discover the asado, where grilling is a social ritual, plus chimichurri and empanadas.",
+     "p": [
+      "An asado is a slow grill over wood or charcoal embers, often lasting a whole afternoon.",
+      "Chimichurri is a sauce of parsley, garlic, oregano, vinegar and oil spooned over grilled meat.",
+      "Baked empanadas are filled pastries, and each province has its own favourite filling."
+     ],
+     "q": "Who is the grill master in your family or group of friends?",
+     "c": "Make a small chimichurri with chopped parsley, garlic, oregano, oil and vinegar and try it on veggies."
+    },
+    "de": {
+     "t": "Argentinien: Das Asado",
+     "g": "Entdecke das Asado, bei dem Grillen ein soziales Ritual ist, dazu Chimichurri und Empanadas.",
+     "p": [
+      "Ein Asado ist langsames Grillen über Holz- oder Kohleglut und dauert oft einen ganzen Nachmittag.",
+      "Chimichurri ist eine Sauce aus Petersilie, Knoblauch, Oregano, Essig und Öl für gegrilltes Fleisch.",
+      "Gebackene Empanadas sind gefüllte Teigtaschen, und jede Provinz hat ihre Lieblingsfüllung."
+     ],
+     "q": "Wer ist in deiner Familie oder deinem Freundeskreis der Grillmeister?",
+     "c": "Mach ein kleines Chimichurri aus Petersilie, Knoblauch, Oregano, Öl und Essig und probiere es zu Gemüse."
+    },
+    "es": {
+     "t": "Argentina: el asado",
+     "g": "Descubre el asado, donde la parrilla es un ritual social, además del chimichurri y las empanadas.",
+     "p": [
+      "El asado es una cocción lenta a la parrilla sobre brasas de leña o carbón, a menudo toda una tarde.",
+      "El chimichurri es una salsa de perejil, ajo, orégano, vinagre y aceite para la carne asada.",
+      "Las empanadas al horno son masas rellenas, y cada provincia tiene su relleno favorito."
+     ],
+     "q": "¿Quién es el asador de tu familia o de tu grupo de amigos?",
+     "c": "Prepara un pequeño chimichurri con perejil, ajo, orégano, aceite y vinagre y pruébalo con verduras."
+    },
+    "fr": {
+     "t": "Argentine : l'asado",
+     "g": "Découvre l'asado, où le barbecue est un rituel social, avec chimichurri et empanadas.",
+     "p": [
+      "L'asado est une cuisson lente au gril sur des braises de bois ou de charbon, souvent tout un après-midi.",
+      "Le chimichurri est une sauce au persil, ail, origan, vinaigre et huile, versée sur la viande grillée.",
+      "Les empanadas au four sont des chaussons farcis, et chaque province a sa garniture préférée."
+     ],
+     "q": "Qui est le maître du gril dans ta famille ou ton groupe d'amis ?",
+     "c": "Prépare un petit chimichurri avec persil, ail, origan, huile et vinaigre, et goûte-le sur des légumes."
+    },
+    "it": {
+     "t": "Argentina: l'asado",
+     "g": "Scopri l'asado, dove la griglia è un rito sociale, insieme a chimichurri ed empanadas.",
+     "p": [
+      "L'asado è una cottura lenta alla griglia su braci di legna o carbone, che spesso dura un pomeriggio.",
+      "Il chimichurri è una salsa di prezzemolo, aglio, origano, aceto e olio per la carne alla griglia.",
+      "Le empanadas al forno sono fagottini ripieni, e ogni provincia ha il suo ripieno preferito."
+     ],
+     "q": "Chi è il maestro della griglia nella tua famiglia o tra i tuoi amici?",
+     "c": "Prepara un piccolo chimichurri con prezzemolo, aglio, origano, olio e aceto e provalo sulle verdure."
+    },
+    "pt": {
+     "t": "Argentina: o asado",
+     "g": "Descobre o asado, onde a grelha é um ritual social, mais o chimichurri e as empanadas.",
+     "p": [
+      "O asado é um grelhado lento sobre brasas de lenha ou carvão, que muitas vezes dura uma tarde inteira.",
+      "O chimichurri é um molho de salsa, alho, orégãos, vinagre e azeite para a carne grelhada.",
+      "As empanadas no forno são pastéis recheados, e cada província tem o seu recheio preferido."
+     ],
+     "q": "Quem é o mestre da grelha na tua família ou grupo de amigos?",
+     "c": "Faz um pequeno chimichurri com salsa, alho, orégãos, azeite e vinagre e prova-o com legumes."
+    },
+    "pt_BR": {
+     "t": "Argentina: o asado",
+     "g": "Descubra o asado, onde o churrasco é um ritual social, além do chimichurri e das empanadas.",
+     "p": [
+      "O asado é um preparo lento na grelha sobre brasas de lenha ou carvão, que muitas vezes dura a tarde toda.",
+      "O chimichurri é um molho de salsinha, alho, orégano, vinagre e azeite para a carne grelhada.",
+      "As empanadas assadas são pastéis recheados, e cada província tem seu recheio favorito."
+     ],
+     "q": "Quem é o churrasqueiro oficial da sua família ou turma de amigos?",
+     "c": "Faça um pequeno chimichurri com salsinha, alho, orégano, azeite e vinagre e prove com legumes."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "USA: regional comfort food",
+     "g": "Explore the huge variety of American home cooking, region by region.",
+     "p": [
+      "Barbecue styles differ: Texas loves beef brisket, the Carolinas pulled pork with tangy sauces.",
+      "New England clam chowder is a creamy soup of clams, potatoes and onions.",
+      "Gumbo from Louisiana is a thick stew built on a dark roux, often with okra and seafood."
+     ],
+     "q": "Which American comfort dish would you most like to try, or cook yourself?",
+     "c": "Make a simple roux by stirring flour into melted butter and watch it slowly turn golden."
+    },
+    "de": {
+     "t": "USA: Regionale Wohlfühlküche",
+     "g": "Entdecke die enorme Vielfalt der amerikanischen Hausmannskost, Region für Region.",
+     "p": [
+      "Die Barbecue-Stile unterscheiden sich: Texas liebt Rinderbrust, die Carolinas Pulled Pork mit saurer Sauce.",
+      "New England Clam Chowder ist eine cremige Suppe aus Venusmuscheln, Kartoffeln und Zwiebeln.",
+      "Gumbo aus Louisiana ist ein dicker Eintopf auf dunkler Mehlschwitze, oft mit Okra und Meeresfrüchten."
+     ],
+     "q": "Welches amerikanische Wohlfühlgericht würdest du am liebsten probieren oder selbst kochen?",
+     "c": "Mach eine einfache Mehlschwitze aus Mehl und geschmolzener Butter und sieh zu, wie sie langsam golden wird."
+    },
+    "es": {
+     "t": "EE. UU.: comida casera regional",
+     "g": "Explora la enorme variedad de la cocina casera estadounidense, región por región.",
+     "p": [
+      "Los estilos de barbacoa varían: Texas ama el brisket de res; las Carolinas, el cerdo desmenuzado con salsas ácidas.",
+      "La clam chowder de Nueva Inglaterra es una sopa cremosa de almejas, patatas y cebolla.",
+      "El gumbo de Luisiana es un guiso espeso a base de un roux oscuro, a menudo con okra y marisco."
+     ],
+     "q": "¿Qué plato reconfortante estadounidense te gustaría probar o cocinar tú?",
+     "c": "Haz un roux sencillo mezclando harina con mantequilla derretida y mira cómo se dora poco a poco."
+    },
+    "fr": {
+     "t": "États-Unis : cuisine réconfort régionale",
+     "g": "Explore l'immense variété de la cuisine familiale américaine, région par région.",
+     "p": [
+      "Les styles de barbecue varient : le Texas adore la poitrine de bœuf, les Carolines le porc effiloché sauce acidulée.",
+      "La clam chowder de Nouvelle-Angleterre est une soupe crémeuse aux palourdes, pommes de terre et oignons.",
+      "Le gumbo de Louisiane est un ragoût épais à base de roux brun, souvent au gombo et aux fruits de mer."
+     ],
+     "q": "Quel plat réconfortant américain aimerais-tu goûter, ou cuisiner toi-même ?",
+     "c": "Prépare un roux simple en mélangeant farine et beurre fondu, et regarde-le dorer doucement."
+    },
+    "it": {
+     "t": "USA: comfort food regionale",
+     "g": "Esplora l'enorme varietà della cucina casalinga americana, regione per regione.",
+     "p": [
+      "Gli stili di barbecue cambiano: il Texas ama il brisket di manzo, le Caroline il maiale sfilacciato con salse acidule.",
+      "La clam chowder del New England è una zuppa cremosa di vongole, patate e cipolle.",
+      "Il gumbo della Louisiana è uno stufato denso su un roux scuro, spesso con gombo e frutti di mare."
+     ],
+     "q": "Quale comfort food americano vorresti assaggiare, o cucinare tu stesso?",
+     "c": "Prepara un roux semplice mescolando farina e burro fuso e guardalo dorarsi piano piano."
+    },
+    "pt": {
+     "t": "EUA: comida reconfortante regional",
+     "g": "Explora a enorme variedade da cozinha caseira americana, região a região.",
+     "p": [
+      "Os estilos de churrasco variam: o Texas adora peito de vaca, as Carolinas porco desfiado com molhos ácidos.",
+      "A clam chowder da Nova Inglaterra é uma sopa cremosa de amêijoas, batata e cebola.",
+      "O gumbo da Luisiana é um guisado espesso à base de roux escuro, muitas vezes com quiabo e marisco."
+     ],
+     "q": "Que prato reconfortante americano gostarias de provar, ou cozinhar tu mesmo?",
+     "c": "Faz um roux simples mexendo farinha em manteiga derretida e vê-o alourar devagar."
+    },
+    "pt_BR": {
+     "t": "EUA: comida caseira regional",
+     "g": "Explore a enorme variedade da cozinha caseira americana, região por região.",
+     "p": [
+      "Os estilos de barbecue variam: o Texas ama peito bovino, as Carolinas porco desfiado com molhos ácidos.",
+      "A clam chowder da Nova Inglaterra é uma sopa cremosa de mariscos, batata e cebola.",
+      "O gumbo da Louisiana é um ensopado grosso à base de roux escuro, muitas vezes com quiabo e frutos do mar."
+     ],
+     "q": "Qual comida caseira americana você gostaria de provar, ou cozinhar você mesmo?",
+     "c": "Faça um roux simples mexendo farinha na manteiga derretida e veja dourar devagar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caribbean flavours",
+     "g": "Taste the warmth of the Caribbean through jerk, rice and peas and tropical fruit.",
+     "p": [
+      "Jamaican jerk seasoning blends allspice and fiery Scotch bonnet chilies with herbs and spices.",
+      "Rice and peas is rice cooked with kidney beans and coconut milk, a Sunday favourite in Jamaica.",
+      "Fried ripe plantains are sweet and caramelised, and mango, guava and papaya are everywhere."
+     ],
+     "q": "Which tropical fruit do you love most, or which would you like to try?",
+     "c": "Fry slices of a very ripe plantain or banana in a little oil until golden on both sides."
+    },
+    "de": {
+     "t": "Karibische Aromen",
+     "g": "Schmecke die Wärme der Karibik mit Jerk, Rice and Peas und tropischen Früchten.",
+     "p": [
+      "Jamaikanisches Jerk-Gewürz vereint Piment und feurige Scotch-Bonnet-Chilis mit Kräutern und Gewürzen.",
+      "Rice and Peas ist Reis mit Kidneybohnen und Kokosmilch, ein Sonntagsliebling in Jamaika.",
+      "Gebratene reife Kochbananen sind süß und karamellisiert, und Mango, Guave und Papaya gibt es überall."
+     ],
+     "q": "Welche tropische Frucht liebst du am meisten, oder welche würdest du gern probieren?",
+     "c": "Brate Scheiben einer sehr reifen Kochbanane oder Banane in etwas Öl, bis sie beidseitig golden sind."
+    },
+    "es": {
+     "t": "Sabores del Caribe",
+     "g": "Saborea la calidez del Caribe con el jerk, el arroz con frijoles y las frutas tropicales.",
+     "p": [
+      "El jerk jamaicano mezcla pimienta de Jamaica y el ardiente chile Scotch bonnet con hierbas y especias.",
+      "El rice and peas es arroz cocido con frijoles rojos y leche de coco, favorito del domingo en Jamaica.",
+      "Los plátanos maduros fritos son dulces y caramelizados, y mango, guayaba y papaya están por todas partes."
+     ],
+     "q": "¿Qué fruta tropical te encanta más, o cuál te gustaría probar?",
+     "c": "Fríe rodajas de plátano macho muy maduro o banana en un poco de aceite hasta dorar por ambos lados."
+    },
+    "fr": {
+     "t": "Saveurs des Caraïbes",
+     "g": "Goûte la chaleur des Caraïbes avec le jerk, le riz aux haricots et les fruits tropicaux.",
+     "p": [
+      "L'assaisonnement jerk jamaïcain mêle piment de la Jamaïque et piment Scotch bonnet brûlant, herbes et épices.",
+      "Le rice and peas est un riz cuit avec haricots rouges et lait de coco, favori du dimanche en Jamaïque.",
+      "Les bananes plantains mûres frites sont sucrées et caramélisées, et mangue, goyave et papaye sont partout."
+     ],
+     "q": "Quel fruit tropical préfères-tu, ou lequel aimerais-tu goûter ?",
+     "c": "Fais frire des tranches de banane plantain bien mûre dans un peu d'huile jusqu'à ce qu'elles dorent."
+    },
+    "it": {
+     "t": "Sapori dei Caraibi",
+     "g": "Assapora il calore dei Caraibi con jerk, rice and peas e frutta tropicale.",
+     "p": [
+      "Il condimento jerk giamaicano unisce pimento e infuocati peperoncini Scotch bonnet con erbe e spezie.",
+      "Il rice and peas è riso cotto con fagioli rossi e latte di cocco, un classico domenicale in Giamaica.",
+      "Le platano mature fritte sono dolci e caramellate, e mango, guava e papaya si trovano ovunque."
+     ],
+     "q": "Quale frutto tropicale ami di più, o quale vorresti assaggiare?",
+     "c": "Friggi fette di platano o banana molto matura in poco olio finché sono dorate su entrambi i lati."
+    },
+    "pt": {
+     "t": "Sabores das Caraíbas",
+     "g": "Prova o calor das Caraíbas com o jerk, o arroz com feijão e a fruta tropical.",
+     "p": [
+      "O tempero jerk jamaicano junta pimenta-da-jamaica e a ardente malagueta Scotch bonnet com ervas e especiarias.",
+      "O rice and peas é arroz cozido com feijão-encarnado e leite de coco, um favorito de domingo na Jamaica.",
+      "A banana-pão madura frita fica doce e caramelizada, e manga, goiaba e papaia estão por todo o lado."
+     ],
+     "q": "Que fruta tropical adoras mais, ou qual gostarias de provar?",
+     "c": "Frita rodelas de banana-pão ou banana bem madura num pouco de óleo até alourarem dos dois lados."
+    },
+    "pt_BR": {
+     "t": "Sabores do Caribe",
+     "g": "Prove o calor do Caribe com o jerk, o arroz com feijão e as frutas tropicais.",
+     "p": [
+      "O tempero jerk jamaicano junta pimenta-da-jamaica e a ardida pimenta Scotch bonnet com ervas e especiarias.",
+      "O rice and peas é arroz cozido com feijão-vermelho e leite de coco, favorito de domingo na Jamaica.",
+      "A banana-da-terra madura frita fica doce e caramelizada, e manga, goiaba e mamão estão por toda parte."
+     ],
+     "q": "Qual fruta tropical você mais ama, ou qual gostaria de provar?",
+     "c": "Frite rodelas de banana-da-terra bem madura num pouco de óleo até dourar dos dois lados."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "UK and Ireland classics",
+     "g": "Meet the comforting classics of British and Irish home cooking.",
+     "p": [
+      "A Sunday roast brings roast meat, potatoes, vegetables, gravy and often Yorkshire puddings.",
+      "Fish and chips is battered fried fish with thick-cut chips, a seaside favourite.",
+      "Shepherd's pie is lamb mince under mashed potato; Irish soda bread rises with baking soda, not yeast."
+     ],
+     "q": "Is there a weekly family meal tradition, like a Sunday roast, in your home?",
+     "c": "Bake a mini soda bread with flour, baking soda, salt and yogurt or buttermilk."
+    },
+    "de": {
+     "t": "Klassiker aus Großbritannien und Irland",
+     "g": "Lerne die wohltuenden Klassiker der britischen und irischen Hausmannskost kennen.",
+     "p": [
+      "Ein Sunday Roast bringt Braten, Kartoffeln, Gemüse, Bratensauce und oft Yorkshire Puddings.",
+      "Fish and Chips ist frittierter Backfisch mit dicken Pommes, ein Liebling an der Küste.",
+      "Shepherd's Pie ist Lammhack unter Kartoffelpüree; irisches Soda Bread geht mit Natron statt Hefe auf."
+     ],
+     "q": "Gibt es bei dir eine wöchentliche Familienmahlzeit, wie einen Sonntagsbraten?",
+     "c": "Backe ein Mini-Soda-Bread aus Mehl, Natron, Salz und Joghurt oder Buttermilch."
+    },
+    "es": {
+     "t": "Clásicos de Reino Unido e Irlanda",
+     "g": "Conoce los reconfortantes clásicos de la cocina casera británica e irlandesa.",
+     "p": [
+      "El Sunday roast reúne carne asada, patatas, verduras, salsa gravy y a menudo Yorkshire puddings.",
+      "El fish and chips es pescado rebozado y frito con patatas gruesas, un favorito junto al mar.",
+      "El shepherd's pie es cordero picado bajo puré; el soda bread irlandés sube con bicarbonato, sin levadura."
+     ],
+     "q": "¿Hay en tu casa una comida familiar semanal, como un asado de domingo?",
+     "c": "Hornea un mini soda bread con harina, bicarbonato, sal y yogur o suero de leche."
+    },
+    "fr": {
+     "t": "Classiques du Royaume-Uni et d'Irlande",
+     "g": "Découvre les classiques réconfortants de la cuisine familiale britannique et irlandaise.",
+     "p": [
+      "Le Sunday roast réunit rôti, pommes de terre, légumes, sauce gravy et souvent des Yorkshire puddings.",
+      "Le fish and chips, c'est du poisson pané frit avec de grosses frites, un favori du bord de mer.",
+      "Le shepherd's pie, c'est de l'agneau haché sous la purée ; le soda bread irlandais lève au bicarbonate."
+     ],
+     "q": "Y a-t-il chez toi un repas familial hebdomadaire, comme un rôti du dimanche ?",
+     "c": "Fais cuire un mini soda bread avec farine, bicarbonate, sel et yaourt ou babeurre."
+    },
+    "it": {
+     "t": "Classici di Regno Unito e Irlanda",
+     "g": "Conosci i confortanti classici della cucina casalinga britannica e irlandese.",
+     "p": [
+      "Il Sunday roast porta arrosto, patate, verdure, salsa gravy e spesso gli Yorkshire pudding.",
+      "Il fish and chips è pesce in pastella fritto con patatine spesse, un classico al mare.",
+      "Lo shepherd's pie è macinato d'agnello sotto il purè; il soda bread irlandese lievita col bicarbonato."
+     ],
+     "q": "C'è a casa tua una tradizione di pasto settimanale in famiglia, come l'arrosto della domenica?",
+     "c": "Inforna un mini soda bread con farina, bicarbonato, sale e yogurt o latticello."
+    },
+    "pt": {
+     "t": "Clássicos do Reino Unido e Irlanda",
+     "g": "Conhece os clássicos reconfortantes da cozinha caseira britânica e irlandesa.",
+     "p": [
+      "O Sunday roast junta assado, batatas, legumes, molho gravy e muitas vezes Yorkshire puddings.",
+      "O fish and chips é peixe em polme frito com batatas grossas, um favorito à beira-mar.",
+      "O shepherd's pie é carne picada de borrego sob puré; o soda bread irlandês leveda com bicarbonato."
+     ],
+     "q": "Há em tua casa uma refeição familiar semanal, como um assado de domingo?",
+     "c": "Faz um mini soda bread com farinha, bicarbonato, sal e iogurte ou leitelho."
+    },
+    "pt_BR": {
+     "t": "Clássicos do Reino Unido e Irlanda",
+     "g": "Conheça os clássicos reconfortantes da cozinha caseira britânica e irlandesa.",
+     "p": [
+      "O Sunday roast reúne carne assada, batatas, legumes, molho gravy e muitas vezes Yorkshire puddings.",
+      "O fish and chips é peixe empanado e frito com batatas grossas, um favorito do litoral.",
+      "O shepherd's pie é carne moída de cordeiro sob purê; o soda bread irlandês cresce com bicarbonato."
+     ],
+     "q": "Existe na sua casa uma refeição familiar semanal, como um assado de domingo?",
+     "c": "Asse um mini soda bread com farinha, bicarbonato, sal e iogurte ou leitelho."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Germany: bread and sausages",
+     "g": "Explore Germany's huge bread culture and its many regional sausage traditions.",
+     "p": [
+      "Germany has thousands of registered bread varieties, from dark rye loaves to soft pretzels.",
+      "Regional sausages are proudly local: small Nuremberg bratwurst, Bavarian Weisswurst, Berlin currywurst.",
+      "Bread with toppings, called Abendbrot, is a common simple evening meal in many homes."
+     ],
+     "q": "Which do you prefer: dark, dense bread or light, fluffy bread?",
+     "c": "Taste a slice of rye or wholegrain bread with just butter and salt and describe its flavour."
+    },
+    "de": {
+     "t": "Deutschland: Brot und Würste",
+     "g": "Entdecke Deutschlands riesige Brotkultur und seine vielen regionalen Wursttraditionen.",
+     "p": [
+      "Deutschland hat Tausende registrierte Brotsorten, vom dunklen Roggenbrot bis zur weichen Brezel.",
+      "Regionale Würste sind stolz lokal: kleine Nürnberger Rostbratwurst, bayerische Weißwurst, Berliner Currywurst.",
+      "Belegte Brote zum Abendbrot sind in vielen Haushalten eine einfache, übliche Abendmahlzeit."
+     ],
+     "q": "Was magst du lieber: dunkles, kräftiges Brot oder helles, fluffiges?",
+     "c": "Probiere eine Scheibe Roggen- oder Vollkornbrot nur mit Butter und Salz und beschreibe den Geschmack."
+    },
+    "es": {
+     "t": "Alemania: pan y salchichas",
+     "g": "Explora la enorme cultura del pan en Alemania y sus muchas tradiciones regionales de salchichas.",
+     "p": [
+      "Alemania tiene miles de variedades de pan registradas, del pan oscuro de centeno al pretzel tierno.",
+      "Las salchichas son orgullosamente locales: la pequeña bratwurst de Núremberg, la Weisswurst bávara, la currywurst berlinesa.",
+      "El pan con embutidos o queso, llamado Abendbrot, es una cena sencilla habitual en muchas casas."
+     ],
+     "q": "¿Qué prefieres: pan oscuro y denso o pan claro y esponjoso?",
+     "c": "Prueba una rebanada de pan de centeno o integral solo con mantequilla y sal y describe su sabor."
+    },
+    "fr": {
+     "t": "Allemagne : pain et saucisses",
+     "g": "Explore l'immense culture du pain en Allemagne et ses nombreuses traditions de saucisses.",
+     "p": [
+      "L'Allemagne compte des milliers de pains répertoriés, du pain de seigle sombre au bretzel moelleux.",
+      "Les saucisses sont fièrement locales : petite bratwurst de Nuremberg, Weisswurst bavaroise, currywurst berlinoise.",
+      "Le pain garni, appelé Abendbrot, est un repas du soir simple et courant dans beaucoup de foyers."
+     ],
+     "q": "Tu préfères le pain sombre et dense, ou le pain clair et moelleux ?",
+     "c": "Goûte une tranche de pain de seigle ou complet avec juste du beurre et du sel, et décris sa saveur."
+    },
+    "it": {
+     "t": "Germania: pane e salsicce",
+     "g": "Esplora l'enorme cultura del pane tedesca e le sue tante tradizioni regionali di salsicce.",
+     "p": [
+      "La Germania ha migliaia di varietà di pane registrate, dal pane scuro di segale al morbido brezel.",
+      "Le salsicce sono orgogliosamente locali: piccola bratwurst di Norimberga, Weisswurst bavarese, currywurst berlinese.",
+      "Il pane con affettati o formaggio, detto Abendbrot, è una cena semplice comune in molte case."
+     ],
+     "q": "Cosa preferisci: pane scuro e compatto o pane chiaro e soffice?",
+     "c": "Assaggia una fetta di pane di segale o integrale solo con burro e sale e descrivine il sapore."
+    },
+    "pt": {
+     "t": "Alemanha: pão e salsichas",
+     "g": "Explora a enorme cultura do pão na Alemanha e as suas muitas tradições regionais de salsichas.",
+     "p": [
+      "A Alemanha tem milhares de variedades de pão registadas, do pão escuro de centeio ao pretzel macio.",
+      "As salsichas são orgulhosamente locais: a pequena bratwurst de Nuremberga, a Weisswurst bávara, a currywurst de Berlim.",
+      "O pão com acompanhamentos, chamado Abendbrot, é um jantar simples e comum em muitas casas."
+     ],
+     "q": "O que preferes: pão escuro e denso ou pão claro e fofo?",
+     "c": "Prova uma fatia de pão de centeio ou integral só com manteiga e sal e descreve o sabor."
+    },
+    "pt_BR": {
+     "t": "Alemanha: pão e salsichas",
+     "g": "Explore a enorme cultura do pão na Alemanha e suas muitas tradições regionais de salsichas.",
+     "p": [
+      "A Alemanha tem milhares de variedades de pão registradas, do pão escuro de centeio ao pretzel macio.",
+      "As salsichas são orgulhosamente locais: a pequena bratwurst de Nuremberg, a Weisswurst bávara, a currywurst de Berlim.",
+      "O pão com frios e queijo, chamado Abendbrot, é um jantar simples e comum em muitas casas."
+     ],
+     "q": "O que você prefere: pão escuro e denso ou pão claro e fofinho?",
+     "c": "Prove uma fatia de pão de centeio ou integral só com manteiga e sal e descreva o sabor."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Central Europe: dumplings",
+     "g": "Discover the comforting dough dumplings of Central Europe in many shapes and sizes.",
+     "p": [
+      "Knödel are round dumplings of bread or potato, loved in Austria, Germany and Czechia.",
+      "Polish pierogi are half-moon dumplings filled with potato and cheese, cabbage or fruit.",
+      "Slovak halušky are small potato dumplings, famously served with sheep's cheese."
+     ],
+     "q": "Do you prefer your dumplings boiled, fried, or both?",
+     "c": "Mix grated potato with a little flour and salt, drop small spoonfuls into boiling water and taste."
+    },
+    "de": {
+     "t": "Mitteleuropa: Knödel und Co.",
+     "g": "Entdecke die tröstlichen Teigklöße Mitteleuropas in vielen Formen und Größen.",
+     "p": [
+      "Knödel sind runde Klöße aus Brot oder Kartoffeln, beliebt in Österreich, Deutschland und Tschechien.",
+      "Polnische Pierogi sind halbmondförmige Teigtaschen mit Kartoffel und Quark, Kohl oder Obst.",
+      "Slowakische Halušky sind kleine Kartoffelnocken, berühmt mit Schafskäse serviert."
+     ],
+     "q": "Magst du deine Teigtaschen lieber gekocht, gebraten oder beides?",
+     "c": "Mische geriebene Kartoffel mit etwas Mehl und Salz, gib kleine Löffel in kochendes Wasser und probiere."
+    },
+    "es": {
+     "t": "Europa Central: dumplings",
+     "g": "Descubre las reconfortantes bolas de masa de Europa Central en muchas formas y tamaños.",
+     "p": [
+      "Los Knödel son bolas de pan o patata, muy queridas en Austria, Alemania y Chequia.",
+      "Los pierogi polacos son empanadillas en media luna rellenas de patata y queso, col o fruta.",
+      "Los halušky eslovacos son pequeños ñoquis de patata, famosos con queso de oveja."
+     ],
+     "q": "¿Prefieres tus dumplings hervidos, fritos o de las dos formas?",
+     "c": "Mezcla patata rallada con un poco de harina y sal, echa cucharaditas en agua hirviendo y prueba."
+    },
+    "fr": {
+     "t": "Europe centrale : les boulettes de pâte",
+     "g": "Découvre les réconfortantes boulettes de pâte d'Europe centrale, de toutes formes et tailles.",
+     "p": [
+      "Les Knödel sont des boulettes rondes de pain ou de pomme de terre, adorées en Autriche, Allemagne et Tchéquie.",
+      "Les pierogi polonais sont des chaussons en demi-lune garnis de pomme de terre et fromage, chou ou fruits.",
+      "Les halušky slovaques sont de petites quenelles de pomme de terre, célèbres au fromage de brebis."
+     ],
+     "q": "Tu préfères tes raviolis bouillis, poêlés, ou les deux ?",
+     "c": "Mélange de la pomme de terre râpée avec un peu de farine et de sel, plonge des cuillerées dans l'eau bouillante et goûte."
+    },
+    "it": {
+     "t": "Europa centrale: gnocchi e ravioli",
+     "g": "Scopri i confortanti gnocchi e ravioli dell'Europa centrale in tante forme e misure.",
+     "p": [
+      "I Knödel sono grossi gnocchi rotondi di pane o patate, amati in Austria, Germania e Cechia.",
+      "I pierogi polacchi sono ravioli a mezzaluna ripieni di patate e formaggio, cavolo o frutta.",
+      "Gli halušky slovacchi sono piccoli gnocchetti di patate, famosi con formaggio di pecora."
+     ],
+     "q": "Preferisci i ravioli bolliti, fritti o in entrambi i modi?",
+     "c": "Mescola patata grattugiata con poca farina e sale, lascia cadere cucchiaini in acqua bollente e assaggia."
+    },
+    "pt": {
+     "t": "Europa Central: bolinhos de massa",
+     "g": "Descobre os reconfortantes bolinhos de massa da Europa Central em muitas formas e tamanhos.",
+     "p": [
+      "Os Knödel são bolinhos redondos de pão ou batata, adorados na Áustria, Alemanha e Chéquia.",
+      "Os pierogi polacos são pastéis em meia-lua recheados com batata e queijo, couve ou fruta.",
+      "Os halušky eslovacos são pequenos nhoques de batata, famosos com queijo de ovelha."
+     ],
+     "q": "Preferes os teus bolinhos cozidos, fritos ou das duas formas?",
+     "c": "Mistura batata ralada com um pouco de farinha e sal, deita colheradas em água a ferver e prova."
+    },
+    "pt_BR": {
+     "t": "Europa Central: bolinhos de massa",
+     "g": "Descubra os reconfortantes bolinhos de massa da Europa Central em muitas formas e tamanhos.",
+     "p": [
+      "Os Knödel são bolinhos redondos de pão ou batata, adorados na Áustria, Alemanha e Tchéquia.",
+      "Os pierogi poloneses são pastéis em meia-lua recheados com batata e queijo, repolho ou fruta.",
+      "Os halušky eslovacos são pequenos nhoques de batata, famosos com queijo de ovelha."
+     ],
+     "q": "Você prefere seus bolinhos cozidos, fritos ou dos dois jeitos?",
+     "c": "Misture batata ralada com um pouco de farinha e sal, jogue colheradas em água fervente e prove."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scandinavia: old and new",
+     "g": "Explore Nordic food from rye bread and cured fish to the New Nordic movement.",
+     "p": [
+      "Dark rye bread is the base of Danish smørrebrød, beautifully topped open sandwiches.",
+      "Gravlax is salmon cured with salt, sugar and dill, and pickled herring is a Nordic classic.",
+      "New Nordic cooking, launched with a 2004 manifesto, celebrates local, seasonal and foraged food."
+     ],
+     "q": "Would you rather try a classic open sandwich or a creative New Nordic dish?",
+     "c": "Make an open sandwich on dark bread with three toppings and arrange it neatly like smørrebrød."
+    },
+    "de": {
+     "t": "Skandinavien: Alt und Neu",
+     "g": "Entdecke die nordische Küche von Roggenbrot und gebeiztem Fisch bis zur Neuen Nordischen Küche.",
+     "p": [
+      "Dunkles Roggenbrot ist die Basis des dänischen Smørrebrød, kunstvoll belegter offener Brote.",
+      "Gravlax ist mit Salz, Zucker und Dill gebeizter Lachs, und eingelegter Hering ist ein nordischer Klassiker.",
+      "Die Neue Nordische Küche, 2004 mit einem Manifest gestartet, feiert lokale, saisonale und gesammelte Zutaten."
+     ],
+     "q": "Würdest du lieber ein klassisches offenes Brot oder ein kreatives neu-nordisches Gericht probieren?",
+     "c": "Belege dunkles Brot mit drei Zutaten und richte es ordentlich an wie ein Smørrebrød."
+    },
+    "es": {
+     "t": "Escandinavia: lo antiguo y lo nuevo",
+     "g": "Explora la cocina nórdica, del pan de centeno y el pescado curado al movimiento Nueva Cocina Nórdica.",
+     "p": [
+      "El pan oscuro de centeno es la base del smørrebrød danés, bocadillos abiertos muy bien decorados.",
+      "El gravlax es salmón curado con sal, azúcar y eneldo, y el arenque en vinagre es un clásico nórdico.",
+      "La Nueva Cocina Nórdica, nacida con un manifiesto en 2004, celebra lo local, de temporada y recolectado."
+     ],
+     "q": "¿Probarías antes un bocadillo abierto clásico o un plato creativo de la Nueva Cocina Nórdica?",
+     "c": "Prepara una tosta abierta sobre pan oscuro con tres ingredientes y colócalos con cuidado como un smørrebrød."
+    },
+    "fr": {
+     "t": "Scandinavie : l'ancien et le nouveau",
+     "g": "Explore la cuisine nordique, du pain de seigle et du poisson mariné à la Nouvelle cuisine nordique.",
+     "p": [
+      "Le pain de seigle sombre est la base du smørrebrød danois, tartines ouvertes joliment garnies.",
+      "Le gravlax est un saumon mariné au sel, sucre et aneth, et le hareng mariné est un classique nordique.",
+      "La Nouvelle cuisine nordique, lancée par un manifeste en 2004, célèbre le local, le saisonnier et la cueillette."
+     ],
+     "q": "Tu goûterais plutôt une tartine classique ou un plat créatif de la Nouvelle cuisine nordique ?",
+     "c": "Prépare une tartine sur pain sombre avec trois garnitures, disposées avec soin comme un smørrebrød."
+    },
+    "it": {
+     "t": "Scandinavia: antico e nuovo",
+     "g": "Esplora la cucina nordica, dal pane di segale e il pesce marinato alla Nuova Cucina Nordica.",
+     "p": [
+      "Il pane scuro di segale è la base dello smørrebrød danese, tartine aperte guarnite con cura.",
+      "Il gravlax è salmone marinato con sale, zucchero e aneto, e l'aringa marinata è un classico nordico.",
+      "La Nuova Cucina Nordica, nata con un manifesto nel 2004, celebra ingredienti locali, stagionali e raccolti in natura."
+     ],
+     "q": "Proveresti prima una tartina classica o un piatto creativo della Nuova Cucina Nordica?",
+     "c": "Prepara una tartina aperta su pane scuro con tre ingredienti, disposti con cura come uno smørrebrød."
+    },
+    "pt": {
+     "t": "Escandinávia: o antigo e o novo",
+     "g": "Explora a cozinha nórdica, do pão de centeio e peixe curado ao movimento Nova Cozinha Nórdica.",
+     "p": [
+      "O pão escuro de centeio é a base do smørrebrød dinamarquês, tostas abertas bem decoradas.",
+      "O gravlax é salmão curado com sal, açúcar e endro, e o arenque em conserva é um clássico nórdico.",
+      "A Nova Cozinha Nórdica, lançada com um manifesto em 2004, celebra o local, o sazonal e o recolhido na natureza."
+     ],
+     "q": "Provarias primeiro uma tosta aberta clássica ou um prato criativo da Nova Cozinha Nórdica?",
+     "c": "Faz uma tosta aberta em pão escuro com três ingredientes, dispostos com cuidado como um smørrebrød."
+    },
+    "pt_BR": {
+     "t": "Escandinávia: o antigo e o novo",
+     "g": "Explore a cozinha nórdica, do pão de centeio e peixe curado ao movimento Nova Cozinha Nórdica.",
+     "p": [
+      "O pão escuro de centeio é a base do smørrebrød dinamarquês, sanduíches abertos bem decorados.",
+      "O gravlax é salmão curado com sal, açúcar e endro, e o arenque em conserva é um clássico nórdico.",
+      "A Nova Cozinha Nórdica, lançada com um manifesto em 2004, celebra o local, o sazonal e o coletado na natureza."
+     ],
+     "q": "Você provaria antes um sanduíche aberto clássico ou um prato criativo da Nova Cozinha Nórdica?",
+     "c": "Monte um sanduíche aberto em pão escuro com três coberturas, arrumadas com capricho como um smørrebrød."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eastern Europe: hearty soups",
+     "g": "Warm up with the hearty soups that help people through long, cold winters.",
+     "p": [
+      "Borscht is a vivid red beetroot soup, beloved in Ukraine and across the region.",
+      "Shchi is a cabbage soup, sometimes made with sauerkraut for a pleasant sour note.",
+      "Many of these soups are finished with a spoon of sour cream and fresh dill."
+     ],
+     "q": "What soup do you crave most on a cold day?",
+     "c": "Grate a cooked beetroot into a simple vegetable broth and finish it with yogurt and dill."
+    },
+    "de": {
+     "t": "Osteuropa: Kräftige Suppen",
+     "g": "Wärm dich mit den kräftigen Suppen auf, die durch lange, kalte Winter helfen.",
+     "p": [
+      "Borschtsch ist eine leuchtend rote Rote-Bete-Suppe, geliebt in der Ukraine und der ganzen Region.",
+      "Schtschi ist eine Kohlsuppe, manchmal mit Sauerkraut für eine angenehm saure Note.",
+      "Viele dieser Suppen werden mit einem Löffel saurer Sahne und frischem Dill vollendet."
+     ],
+     "q": "Nach welcher Suppe sehnst du dich an einem kalten Tag am meisten?",
+     "c": "Reibe eine gekochte Rote Bete in eine einfache Gemüsebrühe und vollende sie mit Joghurt und Dill."
+    },
+    "es": {
+     "t": "Europa del Este: sopas contundentes",
+     "g": "Entra en calor con las sopas contundentes que ayudan a pasar los largos y fríos inviernos.",
+     "p": [
+      "El borsch es una sopa de remolacha de un rojo intenso, muy querida en Ucrania y en toda la región.",
+      "El shchi es una sopa de col, a veces hecha con chucrut para darle un agradable toque ácido.",
+      "Muchas de estas sopas se terminan con una cucharada de nata agria y eneldo fresco."
+     ],
+     "q": "¿Qué sopa te apetece más en un día frío?",
+     "c": "Ralla una remolacha cocida en un caldo de verduras sencillo y termínalo con yogur y eneldo."
+    },
+    "fr": {
+     "t": "Europe de l'Est : soupes généreuses",
+     "g": "Réchauffe-toi avec les soupes généreuses qui aident à traverser les longs hivers froids.",
+     "p": [
+      "Le bortsch est une soupe de betterave d'un rouge éclatant, adorée en Ukraine et dans toute la région.",
+      "Le chtchi est une soupe au chou, parfois préparée avec de la choucroute pour une note acidulée.",
+      "Beaucoup de ces soupes se terminent par une cuillère de crème aigre et de l'aneth frais."
+     ],
+     "q": "Quelle soupe te fait le plus envie par une journée froide ?",
+     "c": "Râpe une betterave cuite dans un simple bouillon de légumes et termine avec du yaourt et de l'aneth."
+    },
+    "it": {
+     "t": "Europa dell'Est: zuppe sostanziose",
+     "g": "Scaldati con le zuppe sostanziose che aiutano ad affrontare i lunghi inverni freddi.",
+     "p": [
+      "Il borscht è una zuppa di barbabietola rosso vivo, amata in Ucraina e in tutta la regione.",
+      "Lo shchi è una zuppa di cavolo, a volte preparata con crauti per una piacevole nota acida.",
+      "Molte di queste zuppe si completano con un cucchiaio di panna acida e aneto fresco."
+     ],
+     "q": "Quale zuppa desideri di più in una giornata fredda?",
+     "c": "Grattugia una barbabietola cotta in un semplice brodo vegetale e completa con yogurt e aneto."
+    },
+    "pt": {
+     "t": "Europa de Leste: sopas reconfortantes",
+     "g": "Aquece-te com as sopas reconfortantes que ajudam a passar os longos e frios invernos.",
+     "p": [
+      "O borscht é uma sopa de beterraba de um vermelho intenso, adorada na Ucrânia e em toda a região.",
+      "O shchi é uma sopa de couve, às vezes feita com chucrute para um agradável toque ácido.",
+      "Muitas destas sopas terminam com uma colher de natas azedas e endro fresco."
+     ],
+     "q": "Que sopa te apetece mais num dia frio?",
+     "c": "Rala uma beterraba cozida num caldo de legumes simples e termina com iogurte e endro."
+    },
+    "pt_BR": {
+     "t": "Leste Europeu: sopas encorpadas",
+     "g": "Esquente-se com as sopas encorpadas que ajudam a atravessar os longos e frios invernos.",
+     "p": [
+      "O borscht é uma sopa de beterraba de um vermelho intenso, amada na Ucrânia e em toda a região.",
+      "O shchi é uma sopa de repolho, às vezes feita com chucrute para um toque azedinho agradável.",
+      "Muitas dessas sopas são finalizadas com uma colher de creme azedo e endro fresco."
+     ],
+     "q": "Qual sopa você mais deseja num dia frio?",
+     "c": "Rale uma beterraba cozida num caldo de legumes simples e finalize com iogurte e endro."
+    }
+   }
+  }
+ ]
+}

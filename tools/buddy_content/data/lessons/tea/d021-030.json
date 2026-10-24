@@ -1,0 +1,835 @@
+{
+ "topic": "tea",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caffeine in tea, simply",
+     "g": "Learn the general facts: why tea contains caffeine and why the amount in your cup varies.",
+     "p": [
+      "Caffeine is made naturally by the tea plant; every true tea contains some, while most tisanes contain none.",
+      "The amount depends on the leaf, the bud content, the water temperature and how long you steep.",
+      "Hotter water and longer steeps extract more; matcha is different because you drink the whole powdered leaf."
+     ],
+     "q": "Do you choose different teas for the morning and the evening?",
+     "c": "Make a simple list of your teas and tisanes and mark which ones contain caffeine and which do not."
+    },
+    "de": {
+     "t": "Koffein im Tee, einfach erklärt",
+     "g": "Lerne die allgemeinen Fakten: warum Tee Koffein enthält und warum die Menge in deiner Tasse schwankt.",
+     "p": [
+      "Koffein bildet die Teepflanze von Natur aus; jeder echte Tee enthält etwas, die meisten Kräuteraufgüsse keines.",
+      "Die Menge hängt vom Blatt, dem Knospenanteil, der Wassertemperatur und der Ziehzeit ab.",
+      "Heißeres Wasser und längeres Ziehen lösen mehr; Matcha ist anders, weil du das ganze pulverisierte Blatt trinkst."
+     ],
+     "q": "Wählst du morgens und abends unterschiedliche Tees?",
+     "c": "Mach eine einfache Liste deiner Tees und Aufgüsse und markiere, welche Koffein enthalten und welche nicht."
+    },
+    "es": {
+     "t": "La cafeína del té, fácil",
+     "g": "Aprende los datos generales: por qué el té tiene cafeína y por qué la cantidad de tu taza varía.",
+     "p": [
+      "La cafeína la produce de forma natural la planta del té; todo té verdadero tiene algo, y la mayoría de infusiones, nada.",
+      "La cantidad depende de la hoja, la proporción de brotes, la temperatura del agua y el tiempo de infusión.",
+      "El agua más caliente y la infusión más larga extraen más; el matcha es distinto porque bebes toda la hoja en polvo."
+     ],
+     "q": "¿Eliges tés distintos para la mañana y para la noche?",
+     "c": "Haz una lista sencilla de tus tés e infusiones y marca cuáles tienen cafeína y cuáles no."
+    },
+    "fr": {
+     "t": "La caféine du thé, simplement",
+     "g": "Apprends les faits généraux : pourquoi le thé contient de la caféine et pourquoi la quantité varie dans ta tasse.",
+     "p": [
+      "La caféine est produite naturellement par le théier ; tout vrai thé en contient un peu, la plupart des tisanes aucune.",
+      "La quantité dépend de la feuille, de la part de bourgeons, de la température de l'eau et du temps d'infusion.",
+      "Une eau plus chaude et une infusion plus longue en extraient davantage ; le matcha diffère car on boit toute la feuille en poudre."
+     ],
+     "q": "Choisis-tu des thés différents le matin et le soir ?",
+     "c": "Fais une liste simple de tes thés et tisanes et marque ceux qui contiennent de la caféine et ceux qui n'en ont pas."
+    },
+    "it": {
+     "t": "La caffeina nel tè, in breve",
+     "g": "Impara i fatti generali: perché il tè contiene caffeina e perché la quantità nella tua tazza varia.",
+     "p": [
+      "La caffeina è prodotta naturalmente dalla pianta del tè; ogni vero tè ne contiene un po', quasi tutte le tisane no.",
+      "La quantità dipende dalla foglia, dalla parte di germogli, dalla temperatura dell'acqua e dal tempo di infusione.",
+      "Acqua più calda e infusioni più lunghe ne estraggono di più; il matcha è diverso perché bevi tutta la foglia in polvere."
+     ],
+     "q": "Scegli tè diversi per la mattina e per la sera?",
+     "c": "Fai una semplice lista dei tuoi tè e tisane e segna quali contengono caffeina e quali no."
+    },
+    "pt": {
+     "t": "A cafeína do chá, de forma simples",
+     "g": "Aprende os factos gerais: porque o chá tem cafeína e porque a quantidade na tua chávena varia.",
+     "p": [
+      "A cafeína é produzida naturalmente pela planta do chá; todo o chá verdadeiro tem alguma, e a maioria das infusões nenhuma.",
+      "A quantidade depende da folha, da proporção de rebentos, da temperatura da água e do tempo de infusão.",
+      "Água mais quente e infusões mais longas extraem mais; o matcha é diferente porque bebes a folha inteira em pó."
+     ],
+     "q": "Escolhes chás diferentes para a manhã e para a noite?",
+     "c": "Faz uma lista simples dos teus chás e infusões e marca quais têm cafeína e quais não têm."
+    },
+    "pt_BR": {
+     "t": "A cafeína do chá, de um jeito simples",
+     "g": "Aprenda os fatos gerais: por que o chá tem cafeína e por que a quantidade na sua xícara varia.",
+     "p": [
+      "A cafeína é produzida naturalmente pela planta do chá; todo chá verdadeiro tem um pouco, e a maioria das infusões, nada.",
+      "A quantidade depende da folha, da proporção de brotos, da temperatura da água e do tempo de infusão.",
+      "Água mais quente e infusões mais longas extraem mais; o matcha é diferente porque você toma a folha inteira em pó."
+     ],
+     "q": "Você escolhe chás diferentes para a manhã e para a noite?",
+     "c": "Faça uma lista simples dos seus chás e infusões e marque quais têm cafeína e quais não têm."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storing tea at home",
+     "g": "Keep your tea fresh longer by protecting it from air, light, heat, moisture and strong smells.",
+     "p": [
+      "Use an airtight, opaque tin or pouch, and close it well after every use.",
+      "Store it in a cool, dry cupboard, away from the stove, the kettle steam and spices like coffee or garlic.",
+      "Green and light teas fade fastest, so enjoy them within months; dark teas and pu-erh are made to keep."
+     ],
+     "q": "Where do you keep your tea right now?",
+     "c": "Check where your tea is stored today and move it to a better spot if it sits near heat, light or spices."
+    },
+    "de": {
+     "t": "Tee zu Hause aufbewahren",
+     "g": "Halte deinen Tee länger frisch, indem du ihn vor Luft, Licht, Wärme, Feuchtigkeit und starken Gerüchen schützt.",
+     "p": [
+      "Nutze eine luftdichte, lichtundurchlässige Dose oder Tüte und verschließe sie nach jedem Gebrauch gut.",
+      "Lagere ihn in einem kühlen, trockenen Schrank, fern von Herd, Wasserdampf und Gewürzen wie Kaffee oder Knoblauch.",
+      "Grüne und helle Tees verblassen am schnellsten, trink sie innerhalb von Monaten; dunkle Tees und Pu-Erh sind zum Lagern gemacht."
+     ],
+     "q": "Wo bewahrst du deinen Tee gerade auf?",
+     "c": "Prüfe heute, wo dein Tee steht, und stell ihn um, falls er nahe an Wärme, Licht oder Gewürzen liegt."
+    },
+    "es": {
+     "t": "Guardar el té en casa",
+     "g": "Mantén tu té fresco más tiempo protegiéndolo del aire, la luz, el calor, la humedad y los olores fuertes.",
+     "p": [
+      "Usa una lata o bolsa hermética y opaca, y ciérrala bien después de cada uso.",
+      "Guárdalo en un armario fresco y seco, lejos de los fogones, el vapor del hervidor y especias como café o ajo.",
+      "Los verdes y tés ligeros pierden frescura antes, así que disfrútalos en unos meses; los oscuros y el pu-erh se hacen para guardarse."
+     ],
+     "q": "¿Dónde guardas tu té ahora mismo?",
+     "c": "Revisa hoy dónde guardas tu té y cámbialo de sitio si está cerca del calor, la luz o las especias."
+    },
+    "fr": {
+     "t": "Conserver le thé à la maison",
+     "g": "Garde ton thé frais plus longtemps en le protégeant de l'air, de la lumière, de la chaleur, de l'humidité et des odeurs fortes.",
+     "p": [
+      "Utilise une boîte ou un sachet hermétique et opaque, bien refermé après chaque usage.",
+      "Range-le dans un placard frais et sec, loin de la cuisinière, de la vapeur et des épices comme le café ou l'ail.",
+      "Les verts et thés légers perdent vite leur fraîcheur, bois-les en quelques mois ; les thés sombres et le pu-erh se gardent."
+     ],
+     "q": "Où ranges-tu ton thé en ce moment ?",
+     "c": "Vérifie aujourd'hui où est rangé ton thé et déplace-le s'il est près de la chaleur, de la lumière ou des épices."
+    },
+    "it": {
+     "t": "Conservare il tè in casa",
+     "g": "Mantieni il tè fresco più a lungo proteggendolo da aria, luce, calore, umidità e odori forti.",
+     "p": [
+      "Usa una latta o una busta ermetica e opaca, e chiudila bene dopo ogni uso.",
+      "Conservalo in una dispensa fresca e asciutta, lontano dai fornelli, dal vapore e da spezie come caffè o aglio.",
+      "Verdi e tè leggeri perdono freschezza prima, quindi gustali entro pochi mesi; i tè scuri e il pu-erh sono fatti per durare."
+     ],
+     "q": "Dove tieni il tuo tè in questo momento?",
+     "c": "Controlla oggi dove conservi il tè e spostalo se è vicino a calore, luce o spezie."
+    },
+    "pt": {
+     "t": "Guardar o chá em casa",
+     "g": "Mantém o teu chá fresco por mais tempo protegendo-o do ar, da luz, do calor, da humidade e de cheiros fortes.",
+     "p": [
+      "Usa uma lata ou saco hermético e opaco, e fecha-o bem depois de cada utilização.",
+      "Guarda-o num armário fresco e seco, longe do fogão, do vapor da chaleira e de especiarias como café ou alho.",
+      "Os verdes e chás leves perdem frescura mais depressa, bebe-os em poucos meses; os escuros e o pu-erh são feitos para guardar."
+     ],
+     "q": "Onde guardas o teu chá neste momento?",
+     "c": "Vê hoje onde guardas o teu chá e muda-o de sítio se estiver perto do calor, da luz ou das especiarias."
+    },
+    "pt_BR": {
+     "t": "Guardando o chá em casa",
+     "g": "Mantenha seu chá fresco por mais tempo protegendo-o do ar, da luz, do calor, da umidade e de cheiros fortes.",
+     "p": [
+      "Use uma lata ou pacote hermético e opaco, e feche bem depois de cada uso.",
+      "Guarde num armário fresco e seco, longe do fogão, do vapor da chaleira e de temperos como café ou alho.",
+      "Verdes e chás leves perdem o frescor mais rápido, tome em poucos meses; os escuros e o pu-erh são feitos para guardar."
+     ],
+     "q": "Onde você guarda seu chá agora?",
+     "c": "Veja hoje onde seu chá está guardado e mude de lugar se estiver perto de calor, luz ou temperos."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a tea label",
+     "g": "Decode the key information on a tea package: origin, harvest, grade and style.",
+     "p": [
+      "The origin tells you the country, region or even the estate or garden where the tea grew.",
+      "The harvest or flush, like first flush Darjeeling, tells you the season the leaves were picked.",
+      "Grades and style words, such as FOP or 'whole leaf', describe leaf size and type; many labels also give brewing tips."
+     ],
+     "q": "What information do you usually look at first when you choose a tea?",
+     "c": "Read the label of one tea at home and find its origin, style and any brewing advice."
+    },
+    "de": {
+     "t": "Ein Teeetikett lesen",
+     "g": "Entschlüssle die wichtigsten Angaben auf einer Teepackung: Herkunft, Ernte, Grad und Stil.",
+     "p": [
+      "Die Herkunft nennt dir Land, Region oder sogar den Garten, in dem der Tee gewachsen ist.",
+      "Die Ernte oder Pflückung, etwa First Flush Darjeeling, sagt dir, in welcher Saison die Blätter gepflückt wurden.",
+      "Grade und Stilbegriffe wie FOP oder ganzes Blatt beschreiben Blattgröße und Typ; viele Etiketten geben auch Brühtipps."
+     ],
+     "q": "Worauf achtest du zuerst, wenn du einen Tee auswählst?",
+     "c": "Lies das Etikett eines Tees bei dir und finde Herkunft, Stil und eventuelle Zubereitungshinweise."
+    },
+    "es": {
+     "t": "Leer la etiqueta de un té",
+     "g": "Descifra la información clave de un paquete de té: origen, cosecha, grado y estilo.",
+     "p": [
+      "El origen indica el país, la región o incluso la finca o jardín donde creció el té.",
+      "La cosecha o flush, como el first flush de Darjeeling, indica en qué temporada se recogieron las hojas.",
+      "Los grados y términos como FOP u 'hoja entera' describen tamaño y tipo de hoja; muchas etiquetas dan también consejos de preparación."
+     ],
+     "q": "¿Qué información miras primero cuando eliges un té?",
+     "c": "Lee la etiqueta de un té que tengas en casa y encuentra su origen, su estilo y algún consejo de preparación."
+    },
+    "fr": {
+     "t": "Lire une étiquette de thé",
+     "g": "Décode les infos clés d'un paquet de thé : origine, récolte, grade et style.",
+     "p": [
+      "L'origine indique le pays, la région, voire le jardin où le thé a poussé.",
+      "La récolte ou flush, comme le Darjeeling first flush, indique la saison où les feuilles ont été cueillies.",
+      "Les grades comme FOP ou la mention « feuilles entières » décrivent la feuille ; beaucoup d'étiquettes donnent aussi des conseils."
+     ],
+     "q": "Quelle information regardes-tu en premier quand tu choisis un thé ?",
+     "c": "Lis l'étiquette d'un thé chez toi et trouve son origine, son style et les conseils d'infusion."
+    },
+    "it": {
+     "t": "Leggere l'etichetta di un tè",
+     "g": "Decifra le informazioni chiave di una confezione di tè: origine, raccolto, grado e stile.",
+     "p": [
+      "L'origine indica il Paese, la regione o persino la piantagione dove è cresciuto il tè.",
+      "Il raccolto o flush, come il first flush di Darjeeling, dice in quale stagione sono state colte le foglie.",
+      "Gradi e termini come FOP o 'foglia intera' descrivono dimensione e tipo di foglia; molte etichette danno anche consigli di preparazione."
+     ],
+     "q": "Quale informazione guardi per prima quando scegli un tè?",
+     "c": "Leggi l'etichetta di un tè che hai in casa e trova origine, stile e consigli di preparazione."
+    },
+    "pt": {
+     "t": "Ler o rótulo de um chá",
+     "g": "Decifra a informação principal de uma embalagem de chá: origem, colheita, grau e estilo.",
+     "p": [
+      "A origem indica o país, a região ou até a plantação onde o chá cresceu.",
+      "A colheita ou flush, como o first flush de Darjeeling, diz em que estação as folhas foram apanhadas.",
+      "Os graus e termos como FOP ou 'folha inteira' descrevem tamanho e tipo de folha; muitos rótulos também dão dicas de preparação."
+     ],
+     "q": "Que informação olhas primeiro quando escolhes um chá?",
+     "c": "Lê o rótulo de um chá que tenhas em casa e encontra a origem, o estilo e alguma dica de preparação."
+    },
+    "pt_BR": {
+     "t": "Lendo o rótulo de um chá",
+     "g": "Decifre a informação principal de uma embalagem de chá: origem, colheita, grau e estilo.",
+     "p": [
+      "A origem indica o país, a região ou até a fazenda onde o chá cresceu.",
+      "A colheita ou flush, como o first flush de Darjeeling, diz em que estação as folhas foram colhidas.",
+      "Graus e termos como FOP ou 'folha inteira' descrevem tamanho e tipo de folha; muitos rótulos também dão dicas de preparo."
+     ],
+     "q": "Que informação você olha primeiro quando escolhe um chá?",
+     "c": "Leia o rótulo de um chá que você tem em casa e encontre a origem, o estilo e alguma dica de preparo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where tea grows",
+     "g": "Tour the big tea regions of the world, from China and India to Japan, Kenya and Sri Lanka.",
+     "p": [
+      "Tea likes warm, rainy climates and well-drained, slightly acidic soil, often on hills and mountains.",
+      "China and India are the largest producers; Sri Lanka is famous for Ceylon tea and Kenya for strong black tea.",
+      "Japan is known for green teas such as sencha and matcha, and Taiwan for its oolongs."
+     ],
+     "q": "Which tea-growing country would you most like to visit, and why?",
+     "c": "Find two teas from different countries and taste them one after the other, noticing what differs."
+    },
+    "de": {
+     "t": "Wo Tee wächst",
+     "g": "Reise durch die großen Teeregionen der Welt, von China und Indien bis Japan, Kenia und Sri Lanka.",
+     "p": [
+      "Tee mag warmes, regenreiches Klima und durchlässigen, leicht sauren Boden, oft an Hängen und in Bergen.",
+      "China und Indien sind die größten Produzenten; Sri Lanka ist für Ceylon-Tee bekannt, Kenia für kräftigen Schwarztee.",
+      "Japan ist berühmt für Grüntees wie Sencha und Matcha, Taiwan für seine Oolongs."
+     ],
+     "q": "Welches Teeanbauland würdest du am liebsten besuchen, und warum?",
+     "c": "Such dir zwei Tees aus verschiedenen Ländern und probiere sie nacheinander; achte auf die Unterschiede."
+    },
+    "es": {
+     "t": "Dónde crece el té",
+     "g": "Recorre las grandes regiones del té del mundo, de China e India a Japón, Kenia y Sri Lanka.",
+     "p": [
+      "Al té le gustan los climas cálidos y lluviosos y los suelos bien drenados y algo ácidos, a menudo en colinas y montañas.",
+      "China e India son los mayores productores; Sri Lanka es famosa por el té de Ceilán y Kenia por su té negro intenso.",
+      "Japón es conocido por sus tés verdes como el sencha y el matcha, y Taiwán por sus oolong."
+     ],
+     "q": "¿Qué país productor de té te gustaría más visitar y por qué?",
+     "c": "Busca dos tés de países distintos y pruébalos uno tras otro, fijándote en qué cambia."
+    },
+    "fr": {
+     "t": "Où pousse le thé",
+     "g": "Fais le tour des grandes régions du thé, de la Chine et l'Inde au Japon, au Kenya et au Sri Lanka.",
+     "p": [
+      "Le théier aime les climats chauds et pluvieux et les sols drainés, un peu acides, souvent sur des collines et montagnes.",
+      "La Chine et l'Inde sont les plus grands producteurs ; le Sri Lanka est célèbre pour le thé de Ceylan, le Kenya pour ses noirs corsés.",
+      "Le Japon est connu pour ses thés verts comme le sencha et le matcha, et Taïwan pour ses oolongs."
+     ],
+     "q": "Quel pays producteur de thé aimerais-tu le plus visiter, et pourquoi ?",
+     "c": "Trouve deux thés de pays différents et goûte-les l'un après l'autre en notant ce qui change."
+    },
+    "it": {
+     "t": "Dove cresce il tè",
+     "g": "Viaggia tra le grandi regioni del tè, dalla Cina e dall'India al Giappone, al Kenya e allo Sri Lanka.",
+     "p": [
+      "Il tè ama climi caldi e piovosi e terreni ben drenati e un po' acidi, spesso su colline e montagne.",
+      "Cina e India sono i maggiori produttori; lo Sri Lanka è famoso per il tè di Ceylon e il Kenya per il suo tè nero forte.",
+      "Il Giappone è noto per i tè verdi come sencha e matcha, Taiwan per i suoi oolong."
+     ],
+     "q": "Quale Paese del tè ti piacerebbe di più visitare, e perché?",
+     "c": "Trova due tè di Paesi diversi e assaggiali uno dopo l'altro, notando cosa cambia."
+    },
+    "pt": {
+     "t": "Onde cresce o chá",
+     "g": "Percorre as grandes regiões do chá no mundo, da China e da Índia ao Japão, ao Quénia e ao Sri Lanka.",
+     "p": [
+      "O chá gosta de climas quentes e chuvosos e de solos bem drenados e um pouco ácidos, muitas vezes em colinas e montanhas.",
+      "A China e a Índia são os maiores produtores; o Sri Lanka é famoso pelo chá do Ceilão e o Quénia pelo chá preto forte.",
+      "O Japão é conhecido pelos chás verdes como o sencha e o matcha, e Taiwan pelos oolongs."
+     ],
+     "q": "Que país produtor de chá mais gostarias de visitar, e porquê?",
+     "c": "Arranja dois chás de países diferentes e prova-os um a seguir ao outro, reparando no que muda."
+    },
+    "pt_BR": {
+     "t": "Onde o chá cresce",
+     "g": "Percorra as grandes regiões do chá no mundo, da China e da Índia ao Japão, ao Quênia e ao Sri Lanka.",
+     "p": [
+      "O chá gosta de clima quente e chuvoso e de solo bem drenado e um pouco ácido, muitas vezes em morros e montanhas.",
+      "China e Índia são os maiores produtores; o Sri Lanka é famoso pelo chá do Ceilão e o Quênia pelo chá preto forte.",
+      "O Japão é conhecido pelos chás verdes como sencha e matcha, e Taiwan pelos oolongs."
+     ],
+     "q": "Qual país produtor de chá você mais gostaria de visitar, e por quê?",
+     "c": "Arrume dois chás de países diferentes e prove um depois do outro, reparando no que muda."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The legend of tea's origin",
+     "g": "Enjoy the famous legend of Shennong and the leaves that fell into his hot water.",
+     "p": [
+      "Chinese legend says Emperor Shennong, the Divine Farmer, was boiling water when leaves drifted into his pot.",
+      "He liked the fragrant drink so much that, the story goes, tea was born; legend places it about 5,000 years ago.",
+      "It is a legend, not history, but tea has truly been drunk in China for thousands of years."
+     ],
+     "q": "Do you know any legend or story about a food or drink from your own culture?",
+     "c": "Brew a cup and tell the Shennong legend to someone in your own words, in under one minute."
+    },
+    "de": {
+     "t": "Die Legende vom Ursprung des Tees",
+     "g": "Genieße die berühmte Legende von Shennong und den Blättern, die in sein heißes Wasser fielen.",
+     "p": [
+      "Eine chinesische Legende erzählt, Kaiser Shennong, der Göttliche Bauer, kochte Wasser, als Blätter in seinen Topf wehten.",
+      "Das duftende Getränk gefiel ihm so sehr, dass so der Tee entstand; die Legende verortet das vor etwa 5.000 Jahren.",
+      "Es ist eine Legende, keine Geschichte, doch in China wird Tee tatsächlich seit Jahrtausenden getrunken."
+     ],
+     "q": "Kennst du eine Legende über ein Essen oder Getränk aus deiner eigenen Kultur?",
+     "c": "Brühe eine Tasse und erzähle jemandem die Shennong-Legende in eigenen Worten, in unter einer Minute."
+    },
+    "es": {
+     "t": "La leyenda del origen del té",
+     "g": "Disfruta la famosa leyenda de Shennong y las hojas que cayeron en su agua caliente.",
+     "p": [
+      "Una leyenda china cuenta que el emperador Shennong, el Divino Agricultor, hervía agua cuando unas hojas cayeron en su olla.",
+      "Le gustó tanto la bebida fragante que así nació el té, según el relato, hace unos 5.000 años.",
+      "Es una leyenda, no historia, pero en China el té se bebe de verdad desde hace miles de años."
+     ],
+     "q": "¿Conoces alguna leyenda sobre una comida o bebida de tu propia cultura?",
+     "c": "Prepara una taza y cuenta a alguien la leyenda de Shennong con tus palabras, en menos de un minuto."
+    },
+    "fr": {
+     "t": "La légende de l'origine du thé",
+     "g": "Savoure la célèbre légende de Shennong et des feuilles tombées dans son eau chaude.",
+     "p": [
+      "Une légende chinoise raconte que l'empereur Shennong, le Divin Laboureur, faisait bouillir de l'eau quand des feuilles y tombèrent.",
+      "Il aima tant cette boisson parfumée que le thé serait né ainsi, il y a environ 5 000 ans selon la légende.",
+      "C'est une légende, pas de l'histoire, mais en Chine on boit réellement du thé depuis des millénaires."
+     ],
+     "q": "Connais-tu une légende sur un plat ou une boisson de ta propre culture ?",
+     "c": "Prépare une tasse et raconte la légende de Shennong à quelqu'un avec tes mots, en moins d'une minute."
+    },
+    "it": {
+     "t": "La leggenda dell'origine del tè",
+     "g": "Goditi la famosa leggenda di Shennong e delle foglie cadute nella sua acqua calda.",
+     "p": [
+      "Una leggenda cinese narra che l'imperatore Shennong, il Divino Agricoltore, bolliva acqua quando alcune foglie caddero nella pentola.",
+      "La bevanda profumata gli piacque tanto che così, secondo il racconto, nacque il tè, circa 5.000 anni fa.",
+      "È una leggenda, non storia, ma in Cina il tè si beve davvero da migliaia di anni."
+     ],
+     "q": "Conosci una leggenda su un cibo o una bevanda della tua cultura?",
+     "c": "Prepara una tazza e racconta a qualcuno la leggenda di Shennong con parole tue, in meno di un minuto."
+    },
+    "pt": {
+     "t": "A lenda da origem do chá",
+     "g": "Desfruta a famosa lenda de Shennong e das folhas que caíram na sua água quente.",
+     "p": [
+      "Uma lenda chinesa conta que o imperador Shennong, o Divino Agricultor, fervia água quando umas folhas caíram na panela.",
+      "Gostou tanto da bebida perfumada que assim terá nascido o chá, há cerca de 5000 anos, segundo a lenda.",
+      "É uma lenda, não história, mas na China bebe-se chá de facto há milhares de anos."
+     ],
+     "q": "Conheces alguma lenda sobre uma comida ou bebida da tua cultura?",
+     "c": "Prepara uma chávena e conta a lenda de Shennong a alguém por palavras tuas, em menos de um minuto."
+    },
+    "pt_BR": {
+     "t": "A lenda da origem do chá",
+     "g": "Curta a famosa lenda de Shennong e das folhas que caíram na sua água quente.",
+     "p": [
+      "Uma lenda chinesa conta que o imperador Shennong, o Divino Agricultor, fervia água quando algumas folhas caíram na panela.",
+      "Ele gostou tanto da bebida perfumada que assim teria nascido o chá, há cerca de 5 mil anos, segundo a lenda.",
+      "É uma lenda, não história, mas na China o chá é bebido de verdade há milhares de anos."
+     ],
+     "q": "Você conhece alguma lenda sobre uma comida ou bebida da sua cultura?",
+     "c": "Prepare uma xícara e conte a lenda de Shennong para alguém com suas palavras, em menos de um minuto."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea travels the world",
+     "g": "Follow how tea spread from China across Asia, then by sea and land to Europe and beyond.",
+     "p": [
+      "Buddhist monks carried tea and seeds from China to Japan and Korea over a thousand years ago.",
+      "Overland, tea moved on caravan routes like the Tea Horse Road; by sea, Portuguese and Dutch traders brought it to Europe.",
+      "Many words for tea come from two Chinese sounds: 'cha', as in chai, and 'te', as in tea and thé."
+     ],
+     "q": "What is the word for tea in your language: does it sound like 'cha' or like 'te'?",
+     "c": "Ask two friends how they say 'tea' in a language they know, and guess which route it travelled."
+    },
+    "de": {
+     "t": "Tee reist um die Welt",
+     "g": "Verfolge, wie Tee sich von China über Asien und dann über Meer und Land nach Europa und weiter verbreitete.",
+     "p": [
+      "Buddhistische Mönche brachten Tee und Samen vor über tausend Jahren aus China nach Japan und Korea.",
+      "Über Land reiste Tee auf Karawanenwegen wie der Tee-Pferde-Straße; übers Meer brachten ihn Portugiesen und Niederländer nach Europa.",
+      "Viele Wörter für Tee stammen von zwei chinesischen Lauten: cha, wie in Chai, und te, wie in Tee und thé."
+     ],
+     "q": "Wie heißt Tee in deiner Sprache: klingt es nach cha oder nach te?",
+     "c": "Frag zwei Freunde, wie man Tee in einer Sprache sagt, die sie kennen, und rate, welchen Weg das Wort nahm."
+    },
+    "es": {
+     "t": "El té viaja por el mundo",
+     "g": "Sigue cómo el té se extendió desde China por Asia y luego por mar y tierra hasta Europa y más allá.",
+     "p": [
+      "Monjes budistas llevaron té y semillas de China a Japón y Corea hace más de mil años.",
+      "Por tierra viajó en caravanas, por rutas como el Camino del Té y los Caballos; por mar, portugueses y neerlandeses lo llevaron a Europa.",
+      "Muchas palabras para el té vienen de dos sonidos chinos: 'cha', como en chai, y 'te', como en té y tea."
+     ],
+     "q": "¿Cómo se dice té en tu idioma? ¿Suena a 'cha' o a 'te'?",
+     "c": "Pregunta a dos amigos cómo se dice té en un idioma que conozcan y adivina por qué ruta viajó la palabra."
+    },
+    "fr": {
+     "t": "Le thé fait le tour du monde",
+     "g": "Suis le voyage du thé, de la Chine à travers l'Asie, puis par mer et par terre jusqu'en Europe et au-delà.",
+     "p": [
+      "Des moines bouddhistes ont apporté thé et graines de Chine au Japon et en Corée il y a plus de mille ans.",
+      "Par la terre, il a suivi des caravanes, comme sur la route du thé et des chevaux ; par mer, Portugais et Hollandais l'ont amené en Europe.",
+      "Beaucoup de mots pour le thé viennent de deux sons chinois : « cha », comme chai, et « te », comme thé et tea."
+     ],
+     "q": "Comment dit-on thé dans ta langue : ça ressemble à « cha » ou à « te » ?",
+     "c": "Demande à deux amis comment on dit thé dans une langue qu'ils connaissent et devine la route suivie."
+    },
+    "it": {
+     "t": "Il tè viaggia nel mondo",
+     "g": "Segui come il tè si diffuse dalla Cina in Asia, poi per mare e per terra fino all'Europa e oltre.",
+     "p": [
+      "Monaci buddisti portarono tè e semi dalla Cina in Giappone e in Corea più di mille anni fa.",
+      "Via terra, il tè viaggiò su vie carovaniere come la Strada del tè e dei cavalli; via mare, portoghesi e olandesi lo portarono in Europa.",
+      "Molte parole per il tè derivano da due suoni cinesi: 'cha', come in chai, e 'te', come in tè e tea."
+     ],
+     "q": "Come si dice tè nella tua lingua? Somiglia a 'cha' o a 'te'?",
+     "c": "Chiedi a due amici come si dice tè in una lingua che conoscono e indovina quale strada ha percorso la parola."
+    },
+    "pt": {
+     "t": "O chá viaja pelo mundo",
+     "g": "Segue como o chá se espalhou da China pela Ásia e depois por mar e terra até à Europa e mais além.",
+     "p": [
+      "Monges budistas levaram chá e sementes da China para o Japão e a Coreia há mais de mil anos.",
+      "Por terra, o chá seguiu rotas de caravanas como a Estrada do Chá e dos Cavalos; por mar, portugueses e holandeses levaram-no à Europa.",
+      "Muitas palavras para chá vêm de dois sons chineses: 'cha', como em chá e chai, e 'te', como em tea e thé."
+     ],
+     "q": "Como se diz chá na tua língua? Soa a 'cha' ou a 'te'?",
+     "c": "Pergunta a dois amigos como se diz chá numa língua que conheçam e adivinha que rota a palavra seguiu."
+    },
+    "pt_BR": {
+     "t": "O chá viaja pelo mundo",
+     "g": "Acompanhe como o chá se espalhou da China pela Ásia e depois por mar e terra até a Europa e além.",
+     "p": [
+      "Monges budistas levaram chá e sementes da China para o Japão e a Coreia há mais de mil anos.",
+      "Por terra, o chá seguiu rotas de caravanas como a Estrada do Chá e dos Cavalos; por mar, portugueses e holandeses o levaram para a Europa.",
+      "Muitas palavras para chá vêm de dois sons chineses: 'cha', como em chá e chai, e 'te', como em tea e thé."
+     ],
+     "q": "Como se diz chá no seu idioma? Soa como 'cha' ou como 'te'?",
+     "c": "Pergunte a dois amigos como se diz chá num idioma que eles conhecem e adivinhe que rota a palavra seguiu."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Milk tea basics",
+     "g": "See why milk pairs with strong black tea and how different cultures make their milk tea.",
+     "p": [
+      "Milk softens the brisk tannins of strong black tea and adds a creamy body.",
+      "British tea adds milk to the cup, Indian chai simmers tea, milk and spices together, and Hong Kong milk tea uses evaporated milk.",
+      "Tibet and Mongolia have their own salty milk or butter teas, and Taiwan gave the world bubble tea."
+     ],
+     "q": "Which milk tea from around the world would you most like to try?",
+     "c": "Brew a strong black tea for 5 minutes, add warm milk, and taste how the bitterness softens."
+    },
+    "de": {
+     "t": "Milchtee-Grundlagen",
+     "g": "Sieh, warum Milch zu kräftigem Schwarztee passt und wie verschiedene Kulturen ihren Milchtee zubereiten.",
+     "p": [
+      "Milch mildert die herben Gerbstoffe von kräftigem Schwarztee und gibt einen cremigen Körper.",
+      "In Großbritannien kommt Milch in die Tasse, indischer Chai köchelt Tee, Milch und Gewürze zusammen, Hongkong nutzt Kondensmilch.",
+      "Tibet und die Mongolei haben eigene salzige Milch- oder Buttertees, und Taiwan schenkte der Welt den Bubble Tea."
+     ],
+     "q": "Welchen Milchtee aus aller Welt würdest du am liebsten probieren?",
+     "c": "Brühe einen kräftigen Schwarztee 5 Minuten, gib warme Milch dazu und schmecke, wie die Herbe weicher wird."
+    },
+    "es": {
+     "t": "Lo básico del té con leche",
+     "g": "Descubre por qué la leche combina con el té negro fuerte y cómo distintas culturas preparan su té con leche.",
+     "p": [
+      "La leche suaviza los taninos del té negro fuerte y aporta un cuerpo cremoso.",
+      "En Reino Unido se añade leche a la taza, el chai indio hierve té, leche y especias juntos, y Hong Kong usa leche evaporada.",
+      "Tíbet y Mongolia tienen sus propios tés salados con leche o mantequilla, y Taiwán dio al mundo el bubble tea."
+     ],
+     "q": "¿Qué té con leche del mundo te gustaría más probar?",
+     "c": "Prepara un té negro fuerte durante 5 minutos, añade leche caliente y nota cómo se suaviza el amargor."
+    },
+    "fr": {
+     "t": "Les bases du thé au lait",
+     "g": "Vois pourquoi le lait s'accorde avec un thé noir corsé et comment différentes cultures préparent leur thé au lait.",
+     "p": [
+      "Le lait adoucit les tanins vifs d'un thé noir corsé et apporte de la rondeur crémeuse.",
+      "Les Britanniques ajoutent du lait dans la tasse, le chai indien mijote thé, lait et épices, Hong Kong utilise du lait concentré.",
+      "Le Tibet et la Mongolie ont leurs thés salés au lait ou au beurre, et Taïwan a offert le bubble tea au monde."
+     ],
+     "q": "Quel thé au lait du monde aimerais-tu le plus goûter ?",
+     "c": "Infuse un thé noir corsé 5 minutes, ajoute du lait chaud et goûte comment l'amertume s'adoucit."
+    },
+    "it": {
+     "t": "Le basi del tè al latte",
+     "g": "Scopri perché il latte si sposa con il tè nero forte e come le diverse culture preparano il loro tè al latte.",
+     "p": [
+      "Il latte ammorbidisce i tannini del tè nero forte e aggiunge un corpo cremoso.",
+      "Nel Regno Unito il latte va in tazza, il chai indiano fa sobbollire tè, latte e spezie insieme, Hong Kong usa latte evaporato.",
+      "Tibet e Mongolia hanno i loro tè salati al latte o al burro, e Taiwan ha regalato al mondo il bubble tea."
+     ],
+     "q": "Quale tè al latte del mondo ti piacerebbe di più provare?",
+     "c": "Prepara un tè nero forte per 5 minuti, aggiungi latte caldo e senti come si ammorbidisce l'amaro."
+    },
+    "pt": {
+     "t": "O básico do chá com leite",
+     "g": "Vê porque o leite combina com chá preto forte e como diferentes culturas fazem o seu chá com leite.",
+     "p": [
+      "O leite suaviza os taninos do chá preto forte e dá um corpo cremoso.",
+      "No Reino Unido junta-se leite na chávena, o chai indiano ferve chá, leite e especiarias juntos, e Hong Kong usa leite evaporado.",
+      "O Tibete e a Mongólia têm chás salgados com leite ou manteiga, e Taiwan deu ao mundo o bubble tea."
+     ],
+     "q": "Que chá com leite do mundo mais gostarias de provar?",
+     "c": "Prepara um chá preto forte durante 5 minutos, junta leite quente e prova como o amargor suaviza."
+    },
+    "pt_BR": {
+     "t": "O básico do chá com leite",
+     "g": "Veja por que o leite combina com chá preto forte e como diferentes culturas fazem seu chá com leite.",
+     "p": [
+      "O leite suaviza os taninos do chá preto forte e dá um corpo cremoso.",
+      "No Reino Unido o leite vai na xícara, o chai indiano ferve chá, leite e especiarias juntos, e Hong Kong usa leite evaporado.",
+      "Tibete e Mongólia têm chás salgados com leite ou manteiga, e Taiwan deu ao mundo o bubble tea."
+     ],
+     "q": "Qual chá com leite do mundo você mais gostaria de provar?",
+     "c": "Prepare um chá preto forte por 5 minutos, coloque leite quente e sinta como o amargor suaviza."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lemon, honey and sugar",
+     "g": "Learn how common additions change tea's taste and how to add them without hiding the tea.",
+     "p": [
+      "Lemon brightens black tea and lightens its colour; skip it with milk, because acid can curdle milk.",
+      "Honey and sugar soften bitterness; add a little at a time and taste, so the tea still shines.",
+      "Delicate greens, whites and fine oolongs are usually best enjoyed with nothing added."
+     ],
+     "q": "Do you sweeten your tea, and have you ever tried it with no sugar at all?",
+     "c": "Taste one cup of black tea plain, then with a thin slice of lemon, and decide which you prefer."
+    },
+    "de": {
+     "t": "Zitrone, Honig und Zucker",
+     "g": "Lerne, wie übliche Zutaten den Teegeschmack verändern und wie du sie zugibst, ohne den Tee zu überdecken.",
+     "p": [
+      "Zitrone macht Schwarztee frischer und heller; nicht mit Milch kombinieren, weil Säure Milch gerinnen lassen kann.",
+      "Honig und Zucker mildern Bitterkeit; gib wenig auf einmal dazu und probiere, damit der Tee noch durchkommt.",
+      "Zarte Grüntees, weiße Tees und feine Oolongs genießt man meist am besten ganz pur."
+     ],
+     "q": "Süßt du deinen Tee, und hast du ihn schon einmal ganz ohne Zucker probiert?",
+     "c": "Probiere eine Tasse Schwarztee pur und dann mit einer dünnen Zitronenscheibe; entscheide, was dir lieber ist."
+    },
+    "es": {
+     "t": "Limón, miel y azúcar",
+     "g": "Aprende cómo los añadidos habituales cambian el sabor del té y cómo usarlos sin taparlo.",
+     "p": [
+      "El limón aviva el té negro y aclara su color; no lo mezcles con leche, porque el ácido puede cortarla.",
+      "La miel y el azúcar suavizan el amargor; añade poco a poco y prueba, para que el té siga brillando.",
+      "Los verdes delicados, los blancos y los oolong finos suelen disfrutarse mejor sin nada."
+     ],
+     "q": "¿Endulzas tu té? ¿Lo has probado alguna vez sin nada de azúcar?",
+     "c": "Prueba una taza de té negro solo y luego con una rodaja fina de limón, y decide cuál prefieres."
+    },
+    "fr": {
+     "t": "Citron, miel et sucre",
+     "g": "Apprends comment les ajouts courants changent le goût du thé et comment les doser sans le masquer.",
+     "p": [
+      "Le citron avive le thé noir et éclaircit sa couleur ; évite-le avec du lait, car l'acide peut le faire cailler.",
+      "Le miel et le sucre adoucissent l'amertume ; ajoutes-en peu à la fois et goûte, pour que le thé reste présent.",
+      "Les verts délicats, les blancs et les oolongs fins se savourent en général sans rien."
+     ],
+     "q": "Sucres-tu ton thé, et l'as-tu déjà essayé sans sucre du tout ?",
+     "c": "Goûte une tasse de thé noir nature, puis avec une fine rondelle de citron, et choisis ta préférée."
+    },
+    "it": {
+     "t": "Limone, miele e zucchero",
+     "g": "Scopri come le aggiunte più comuni cambiano il gusto del tè e come usarle senza coprirlo.",
+     "p": [
+      "Il limone ravviva il tè nero e ne schiarisce il colore; evitalo col latte, perché l'acido può farlo cagliare.",
+      "Miele e zucchero ammorbidiscono l'amaro; aggiungine poco alla volta e assaggia, così il tè resta protagonista.",
+      "Verdi delicati, bianchi e oolong pregiati di solito si gustano meglio senza nulla."
+     ],
+     "q": "Addolcisci il tuo tè? L'hai mai provato senza zucchero?",
+     "c": "Assaggia una tazza di tè nero liscio, poi con una fettina sottile di limone, e decidi quale preferisci."
+    },
+    "pt": {
+     "t": "Limão, mel e açúcar",
+     "g": "Aprende como os acrescentos habituais mudam o sabor do chá e como usá-los sem o esconder.",
+     "p": [
+      "O limão aviva o chá preto e aclara a cor; evita-o com leite, porque o ácido pode talhar o leite.",
+      "O mel e o açúcar suavizam o amargor; junta pouco de cada vez e prova, para o chá continuar a brilhar.",
+      "Os verdes delicados, os brancos e os oolongs finos costumam saber melhor sem nada."
+     ],
+     "q": "Adoças o teu chá? Já o provaste sem açúcar nenhum?",
+     "c": "Prova uma chávena de chá preto simples e depois com uma rodela fina de limão, e decide qual preferes."
+    },
+    "pt_BR": {
+     "t": "Limão, mel e açúcar",
+     "g": "Aprenda como os acréscimos comuns mudam o sabor do chá e como usá-los sem esconder o chá.",
+     "p": [
+      "O limão dá vida ao chá preto e clareia a cor; evite com leite, porque o ácido pode talhar o leite.",
+      "Mel e açúcar suavizam o amargor; coloque pouco de cada vez e prove, para o chá continuar aparecendo.",
+      "Verdes delicados, brancos e oolongs finos costumam ficar melhores sem nada."
+     ],
+     "q": "Você adoça seu chá? Já provou sem nenhum açúcar?",
+     "c": "Prove uma xícara de chá preto puro e depois com uma rodela fina de limão, e decida qual prefere."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Iced tea at home",
+     "g": "Brew iced tea the hot way, pour it over ice, and avoid a cloudy or bitter result.",
+     "p": [
+      "Brew the tea twice as strong as usual, using double the leaf rather than a longer steep.",
+      "Pour it straight over a glass full of ice so it chills fast; slow cooling can make strong tea cloudy.",
+      "Cloudiness is harmless but less pretty; softer water and cooling quickly both help keep it clear."
+     ],
+     "q": "What is your favourite cold drink on a hot day?",
+     "c": "Make one glass of iced tea with double leaf poured over plenty of ice, and check how clear it looks."
+    },
+    "de": {
+     "t": "Eistee zu Hause",
+     "g": "Bereite Eistee auf die heiße Art zu, gieß ihn über Eis und vermeide trübe oder bittere Ergebnisse.",
+     "p": [
+      "Brühe den Tee doppelt so stark wie sonst, mit doppelter Blattmenge statt längerer Ziehzeit.",
+      "Gieß ihn direkt auf ein Glas voller Eis, damit er schnell abkühlt; langsames Abkühlen kann starken Tee trüben.",
+      "Trübung ist harmlos, aber weniger hübsch; weicheres Wasser und schnelles Abkühlen halten ihn klar."
+     ],
+     "q": "Was ist dein liebstes kaltes Getränk an einem heißen Tag?",
+     "c": "Mach ein Glas Eistee mit doppelter Blattmenge über viel Eis und schau, wie klar er bleibt."
+    },
+    "es": {
+     "t": "Té helado en casa",
+     "g": "Prepara té helado en caliente, viértelo sobre hielo y evita que quede turbio o amargo.",
+     "p": [
+      "Prepara el té el doble de fuerte, con el doble de hoja y no con más tiempo de infusión.",
+      "Viértelo directamente en un vaso lleno de hielo para que se enfríe rápido; enfriar despacio puede enturbiar el té fuerte.",
+      "La turbidez es inofensiva, pero menos bonita; el agua blanda y el enfriado rápido ayudan a que quede claro."
+     ],
+     "q": "¿Cuál es tu bebida fría favorita en un día de calor?",
+     "c": "Haz un vaso de té helado con el doble de hoja sobre mucho hielo y mira lo transparente que queda."
+    },
+    "fr": {
+     "t": "Le thé glacé maison",
+     "g": "Prépare un thé glacé à chaud, verse-le sur des glaçons et évite un résultat trouble ou amer.",
+     "p": [
+      "Infuse le thé deux fois plus fort que d'habitude, avec deux fois plus de feuilles plutôt qu'un temps plus long.",
+      "Verse-le directement sur un verre rempli de glaçons pour qu'il refroidisse vite ; un refroidissement lent peut le troubler.",
+      "Le trouble est sans danger mais moins joli ; une eau douce et un refroidissement rapide aident à le garder limpide."
+     ],
+     "q": "Quelle est ta boisson fraîche préférée par une journée chaude ?",
+     "c": "Prépare un verre de thé glacé avec deux fois plus de feuilles sur beaucoup de glaçons et observe sa limpidité."
+    },
+    "it": {
+     "t": "Tè freddo fatto in casa",
+     "g": "Prepara il tè freddo a caldo, versalo sul ghiaccio ed evita che diventi torbido o amaro.",
+     "p": [
+      "Prepara il tè due volte più forte del solito, con il doppio delle foglie invece di un'infusione più lunga.",
+      "Versalo subito in un bicchiere pieno di ghiaccio, così si raffredda in fretta; un raffreddamento lento può intorbidirlo.",
+      "La torbidità è innocua ma meno bella; acqua più dolce e raffreddamento rapido lo mantengono limpido."
+     ],
+     "q": "Qual è la tua bevanda fredda preferita in una giornata calda?",
+     "c": "Prepara un bicchiere di tè freddo con il doppio delle foglie su tanto ghiaccio e guarda quanto è limpido."
+    },
+    "pt": {
+     "t": "Chá gelado em casa",
+     "g": "Prepara chá gelado a quente, deita-o sobre gelo e evita que fique turvo ou amargo.",
+     "p": [
+      "Prepara o chá com o dobro da força, usando o dobro da folha em vez de mais tempo de infusão.",
+      "Deita-o logo num copo cheio de gelo para arrefecer depressa; arrefecer devagar pode turvar o chá forte.",
+      "A turvação é inofensiva mas menos bonita; água mais macia e arrefecimento rápido ajudam a mantê-lo límpido."
+     ],
+     "q": "Qual é a tua bebida fresca preferida num dia de calor?",
+     "c": "Faz um copo de chá gelado com o dobro da folha sobre muito gelo e vê como fica límpido."
+    },
+    "pt_BR": {
+     "t": "Chá gelado em casa",
+     "g": "Prepare chá gelado do jeito quente, despeje sobre o gelo e evite que fique turvo ou amargo.",
+     "p": [
+      "Prepare o chá com o dobro da força, usando o dobro de folha em vez de mais tempo de infusão.",
+      "Despeje direto num copo cheio de gelo para gelar rápido; esfriar devagar pode deixar o chá forte turvo.",
+      "A turbidez é inofensiva, mas menos bonita; água mais leve e resfriamento rápido ajudam a manter o chá límpido."
+     ],
+     "q": "Qual é sua bebida gelada favorita num dia quente?",
+     "c": "Faça um copo de chá gelado com o dobro de folha sobre bastante gelo e veja como fica límpido."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your tea basics",
+     "g": "Look back at your first month: tea types, water, temperature and timing, with a tasting of your choice.",
+     "p": [
+      "All true tea comes from Camellia sinensis; processing creates six families, from white to dark tea.",
+      "Good tea needs fresh water, the right temperature, about 2 to 3 grams per cup and a timer.",
+      "Tisanes are not tea, and milk, lemon or iced versions are ways to enjoy tea, not rules."
+     ],
+     "q": "What is the most surprising thing you have learned about tea this month?",
+     "c": "Brew your favourite tea using everything you have learned so far and describe it in three tasting words."
+    },
+    "de": {
+     "t": "Rückblick: deine Tee-Grundlagen",
+     "g": "Blick auf deinen ersten Monat zurück: Teesorten, Wasser, Temperatur und Zeit, mit einer Verkostung deiner Wahl.",
+     "p": [
+      "Jeder echte Tee stammt von Camellia sinensis; die Verarbeitung schafft sechs Familien, von weiß bis dunkel.",
+      "Guter Tee braucht frisches Wasser, die richtige Temperatur, etwa 2 bis 3 Gramm pro Tasse und einen Timer.",
+      "Kräuteraufgüsse sind kein Tee, und Milch, Zitrone oder Eistee sind Genussarten, keine Regeln."
+     ],
+     "q": "Was hat dich diesen Monat am meisten über Tee überrascht?",
+     "c": "Brühe deinen Lieblingstee mit allem, was du bisher gelernt hast, und beschreibe ihn mit drei Geschmackswörtern."
+    },
+    "es": {
+     "t": "Repaso: lo básico del té",
+     "g": "Repasa tu primer mes: tipos de té, agua, temperatura y tiempo, con una cata a tu elección.",
+     "p": [
+      "Todo té verdadero viene de la Camellia sinensis; el procesado crea seis familias, del blanco al oscuro.",
+      "Un buen té pide agua fresca, la temperatura justa, unos 2-3 gramos por taza y un temporizador.",
+      "Las infusiones no son té, y la leche, el limón o el té helado son formas de disfrutarlo, no reglas."
+     ],
+     "q": "¿Qué es lo que más te ha sorprendido del té este mes?",
+     "c": "Prepara tu té favorito con todo lo aprendido hasta ahora y descríbelo con tres palabras de cata."
+    },
+    "fr": {
+     "t": "Bilan : tes bases du thé",
+     "g": "Reviens sur ton premier mois : types de thé, eau, température et temps, avec une dégustation de ton choix.",
+     "p": [
+      "Tout vrai thé vient du Camellia sinensis ; la transformation crée six familles, du blanc au sombre.",
+      "Un bon thé demande une eau fraîche, la bonne température, environ 2 à 3 grammes par tasse et un minuteur.",
+      "Les tisanes ne sont pas du thé, et le lait, le citron ou le thé glacé sont des plaisirs, pas des règles."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris sur le thé ce mois-ci ?",
+     "c": "Infuse ton thé préféré avec tout ce que tu as appris et décris-le en trois mots de dégustation."
+    },
+    "it": {
+     "t": "Ripasso: le basi del tè",
+     "g": "Ripercorri il tuo primo mese: tipi di tè, acqua, temperatura e tempi, con un assaggio a tua scelta.",
+     "p": [
+      "Ogni vero tè nasce dalla Camellia sinensis; la lavorazione crea sei famiglie, dal bianco allo scuro.",
+      "Un buon tè vuole acqua fresca, la giusta temperatura, circa 2-3 grammi per tazza e un timer.",
+      "Le tisane non sono tè, e latte, limone o tè freddo sono modi di gustarlo, non regole."
+     ],
+     "q": "Qual è la cosa sul tè che ti ha sorpreso di più questo mese?",
+     "c": "Prepara il tuo tè preferito con tutto ciò che hai imparato e descrivilo con tre parole di degustazione."
+    },
+    "pt": {
+     "t": "Revisão: o básico do chá",
+     "g": "Revê o teu primeiro mês: tipos de chá, água, temperatura e tempo, com uma prova à tua escolha.",
+     "p": [
+      "Todo o chá verdadeiro vem da Camellia sinensis; o processamento cria seis famílias, do branco ao escuro.",
+      "Um bom chá pede água fresca, a temperatura certa, cerca de 2 a 3 gramas por chávena e um temporizador.",
+      "As infusões não são chá, e o leite, o limão ou o chá gelado são formas de o apreciar, não regras."
+     ],
+     "q": "O que mais te surpreendeu sobre o chá este mês?",
+     "c": "Prepara o teu chá preferido com tudo o que aprendeste e descreve-o com três palavras de prova."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico do chá",
+     "g": "Revise seu primeiro mês: tipos de chá, água, temperatura e tempo, com uma degustação à sua escolha.",
+     "p": [
+      "Todo chá verdadeiro vem da Camellia sinensis; o processamento cria seis famílias, do branco ao escuro.",
+      "Um bom chá pede água fresca, a temperatura certa, cerca de 2 a 3 gramas por xícara e um timer.",
+      "Infusões não são chá, e leite, limão ou chá gelado são jeitos de curtir o chá, não regras."
+     ],
+     "q": "O que mais te surpreendeu sobre o chá neste mês?",
+     "c": "Prepare seu chá favorito com tudo o que aprendeu e descreva com três palavras de degustação."
+    }
+   }
+  }
+ ]
+}

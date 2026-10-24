@@ -1,0 +1,835 @@
+{
+ "topic": "baking",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a recipe like a baker",
+     "g": "Learn to read a recipe properly and set up your mise en place before you start mixing.",
+     "p": [
+      "Read the whole recipe twice so there are no surprises, like chilling time or an ingredient at room temperature.",
+      "Mise en place means weighing and preparing everything before you begin, so nothing is forgotten.",
+      "Know the key verbs: cream means beat until light, fold means mix gently to keep air in."
+     ],
+     "q": "Which baking terms in recipes have confused you so far?",
+     "c": "Pick any recipe, read it twice and underline every step that needs time or a temperature."
+    },
+    "de": {
+     "t": "Rezepte lesen wie ein Bäcker",
+     "g": "Lerne, ein Rezept richtig zu lesen und dein Mise en place vorzubereiten, bevor du anfängst.",
+     "p": [
+      "Lies das Rezept zweimal ganz durch, damit dich Kühlzeiten oder zimmerwarme Zutaten nicht überraschen.",
+      "Mise en place heißt: alles abwiegen und vorbereiten, bevor du loslegst, damit nichts fehlt.",
+      "Kenne die Schlüsselwörter: schaumig schlagen heißt hell und luftig rühren, unterheben heißt sanft mischen."
+     ],
+     "q": "Welche Backbegriffe in Rezepten haben dich bisher verwirrt?",
+     "c": "Nimm ein Rezept, lies es zweimal und unterstreiche jeden Schritt, der Zeit oder eine Temperatur braucht."
+    },
+    "es": {
+     "t": "Leer una receta como un repostero",
+     "g": "Aprende a leer bien una receta y a preparar tu mise en place antes de empezar a mezclar.",
+     "p": [
+      "Lee la receta entera dos veces para evitar sorpresas, como tiempos de frío o ingredientes a temperatura ambiente.",
+      "Mise en place significa pesar y preparar todo antes de empezar, para no olvidar nada.",
+      "Conoce los verbos clave: cremar es batir hasta aclarar, envolver es mezclar suave sin perder aire."
+     ],
+     "q": "¿Qué términos de repostería te han confundido hasta ahora en las recetas?",
+     "c": "Elige una receta, léela dos veces y subraya cada paso que necesite tiempo o temperatura."
+    },
+    "fr": {
+     "t": "Lire une recette comme un pro",
+     "g": "Apprends à bien lire une recette et à préparer ta mise en place avant de commencer.",
+     "p": [
+      "Lis la recette deux fois en entier pour éviter les surprises, comme un temps de repos ou du beurre pommade.",
+      "La mise en place, c'est tout peser et tout préparer avant de commencer, pour ne rien oublier.",
+      "Connais les verbes clés : crémer, c'est battre jusqu'à blanchir ; incorporer, c'est mélanger sans casser l'air."
+     ],
+     "q": "Quels termes de pâtisserie t'ont déjà semé le doute dans une recette ?",
+     "c": "Choisis une recette, lis-la deux fois et souligne chaque étape qui demande du temps ou une température."
+    },
+    "it": {
+     "t": "Leggere una ricetta da pasticcere",
+     "g": "Impara a leggere bene una ricetta e a preparare la tua mise en place prima di iniziare.",
+     "p": [
+      "Leggi la ricetta intera due volte per evitare sorprese, come tempi di riposo o ingredienti a temperatura ambiente.",
+      "Mise en place significa pesare e preparare tutto prima di cominciare, così non dimentichi nulla.",
+      "Conosci i verbi chiave: montare a crema significa sbattere fino a schiarire, incorporare è mescolare piano."
+     ],
+     "q": "Quali termini di pasticceria ti hanno confuso finora nelle ricette?",
+     "c": "Scegli una ricetta, leggila due volte e sottolinea ogni passaggio che richiede tempo o una temperatura."
+    },
+    "pt": {
+     "t": "Ler uma receita como um pasteleiro",
+     "g": "Aprende a ler bem uma receita e a preparar a tua mise en place antes de começar.",
+     "p": [
+      "Lê a receita inteira duas vezes para evitar surpresas, como tempos de frio ou ingredientes à temperatura ambiente.",
+      "Mise en place é pesar e preparar tudo antes de começar, para não te esqueceres de nada.",
+      "Conhece os verbos-chave: bater em creme é bater até clarear, envolver é misturar com cuidado."
+     ],
+     "q": "Que termos de pastelaria te confundiram até agora nas receitas?",
+     "c": "Escolhe uma receita, lê-a duas vezes e sublinha cada passo que precisa de tempo ou de temperatura."
+    },
+    "pt_BR": {
+     "t": "Lendo receitas como confeiteiro",
+     "g": "Aprenda a ler bem uma receita e a preparar sua mise en place antes de começar.",
+     "p": [
+      "Leia a receita inteira duas vezes para evitar surpresas, como tempo de geladeira ou ingrediente em temperatura ambiente.",
+      "Mise en place é pesar e preparar tudo antes de começar, para não esquecer nada.",
+      "Conheça os verbos-chave: bater em creme é bater até clarear, incorporar é misturar com delicadeza."
+     ],
+     "q": "Quais termos de confeitaria já confundiram você nas receitas?",
+     "c": "Escolha uma receita, leia duas vezes e sublinhe cada etapa que precisa de tempo ou temperatura."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measuring without mistakes",
+     "g": "Master the small habits that make every measurement accurate, with or without a scale.",
+     "p": [
+      "Tare the scale with the bowl on it, then reset to zero before adding each new ingredient.",
+      "Without a scale, spoon flour into the cup and level it with a knife instead of scooping and packing.",
+      "Read liquids at eye level on a flat surface, and use proper measuring spoons, not table spoons."
+     ],
+     "q": "Do you measure by weight, by cups or by eye at the moment?",
+     "c": "Weigh 100 g of flour, then spoon-and-level a cup and weigh it to see how close you get."
+    },
+    "de": {
+     "t": "Fehlerfrei abmessen",
+     "g": "Lerne die kleinen Gewohnheiten, die jedes Abmessen genau machen, mit oder ohne Waage.",
+     "p": [
+      "Stell die Schüssel auf die Waage, tariere sie und setze vor jeder neuen Zutat wieder auf null.",
+      "Ohne Waage: Mehl mit einem Löffel in den Messbecher füllen und glatt streichen, nicht hineindrücken.",
+      "Flüssigkeiten auf Augenhöhe und auf ebener Fläche ablesen und echte Messlöffel verwenden."
+     ],
+     "q": "Misst du gerade nach Gewicht, mit Tassen oder nach Gefühl ab?",
+     "c": "Wiege 100 g Mehl ab, fülle dann eine Tasse locker mit dem Löffel und wiege sie zum Vergleich."
+    },
+    "es": {
+     "t": "Medir sin errores",
+     "g": "Domina los pequeños hábitos que hacen exacta cada medida, con báscula o sin ella.",
+     "p": [
+      "Pon el bol en la báscula, tara y vuelve a cero antes de añadir cada ingrediente nuevo.",
+      "Sin báscula, echa la harina con cuchara en la taza y enrásala con un cuchillo, sin apretarla.",
+      "Lee los líquidos a la altura de los ojos y sobre una superficie plana, y usa cucharas medidoras reales."
+     ],
+     "q": "¿Ahora mismo mides por peso, con tazas o a ojo?",
+     "c": "Pesa 100 g de harina, luego llena una taza con cuchara, enrásala y pésala para ver cuánto te acercas."
+    },
+    "fr": {
+     "t": "Mesurer sans se tromper",
+     "g": "Maîtrise les petites habitudes qui rendent chaque mesure précise, avec ou sans balance.",
+     "p": [
+      "Pose le bol sur la balance, fais la tare et remets à zéro avant chaque nouvel ingrédient.",
+      "Sans balance, verse la farine à la cuillère dans la tasse et arase au couteau, sans tasser.",
+      "Lis les liquides à hauteur des yeux sur une surface plane, et utilise de vraies cuillères doseuses."
+     ],
+     "q": "Pour l'instant, mesures-tu au poids, à la tasse ou à l'œil ?",
+     "c": "Pèse 100 g de farine, puis remplis une tasse à la cuillère, arase-la et pèse-la pour comparer."
+    },
+    "it": {
+     "t": "Misurare senza errori",
+     "g": "Padroneggia le piccole abitudini che rendono precisa ogni misura, con o senza bilancia.",
+     "p": [
+      "Metti la ciotola sulla bilancia, fai la tara e riazzera prima di ogni nuovo ingrediente.",
+      "Senza bilancia, versa la farina col cucchiaio nella tazza e livellala con un coltello, senza pressarla.",
+      "Leggi i liquidi all'altezza degli occhi su una superficie piana e usa veri misurini."
+     ],
+     "q": "In questo momento misuri a peso, con le tazze o a occhio?",
+     "c": "Pesa 100 g di farina, poi riempi una tazza col cucchiaio, livellala e pesala per confrontare."
+    },
+    "pt": {
+     "t": "Medir sem erros",
+     "g": "Domina os pequenos hábitos que tornam cada medida exata, com ou sem balança.",
+     "p": [
+      "Põe a taça na balança, faz a tara e volta a zero antes de cada ingrediente novo.",
+      "Sem balança, deita a farinha com uma colher na chávena e nivela com uma faca, sem calcar.",
+      "Lê os líquidos ao nível dos olhos numa superfície plana e usa colheres de medida a sério."
+     ],
+     "q": "Neste momento medes por peso, com chávenas ou a olho?",
+     "c": "Pesa 100 g de farinha, depois enche uma chávena à colher, nivela e pesa para comparar."
+    },
+    "pt_BR": {
+     "t": "Medindo sem erros",
+     "g": "Domine os pequenos hábitos que deixam cada medida exata, com ou sem balança.",
+     "p": [
+      "Coloque a tigela na balança, zere e volte a zerar antes de cada ingrediente novo.",
+      "Sem balança, coloque a farinha na xícara com uma colher e nivele com uma faca, sem apertar.",
+      "Leia os líquidos na altura dos olhos, em superfície plana, e use colheres medidoras de verdade."
+     ],
+     "q": "Hoje você mede por peso, com xícaras ou no olho?",
+     "c": "Pese 100 g de farinha, depois encha uma xícara com colher, nivele e pese para comparar."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First bake: simple shortbread",
+     "g": "Bake your first real recipe: buttery, crumbly shortbread from just flour, butter and sugar.",
+     "p": [
+      "The classic ratio is one part sugar, two parts butter and three parts flour by weight.",
+      "Mix only until the dough comes together, so gluten stays weak and the biscuits stay short and crumbly.",
+      "Bake low, around 150 to 160 °C, until pale golden; they firm up as they cool on the tray."
+     ],
+     "q": "Do you like your biscuits crumbly and buttery, or crisp and snappy?",
+     "c": "Bake a small batch of shortbread with 50 g sugar, 100 g butter and 150 g flour, and share one."
+    },
+    "de": {
+     "t": "Erstes Backen: einfaches Shortbread",
+     "g": "Back dein erstes Rezept: buttriges, mürbes Shortbread aus nur Mehl, Butter und Zucker.",
+     "p": [
+      "Das klassische Verhältnis nach Gewicht: ein Teil Zucker, zwei Teile Butter, drei Teile Mehl.",
+      "Nur so lange mischen, bis der Teig zusammenhält, dann bleibt das Gluten schwach und das Gebäck mürbe.",
+      "Bei niedriger Hitze, etwa 150 bis 160 °C, hellgolden backen; auf dem Blech wird es beim Abkühlen fest."
+     ],
+     "q": "Magst du Kekse lieber mürbe und buttrig oder knusprig und knackig?",
+     "c": "Back eine kleine Portion Shortbread mit 50 g Zucker, 100 g Butter und 150 g Mehl und verschenke eins."
+    },
+    "es": {
+     "t": "Primer horneado: shortbread sencillo",
+     "g": "Hornea tu primera receta: galletas shortbread mantecosas y quebradizas con harina, mantequilla y azúcar.",
+     "p": [
+      "La proporción clásica en peso es una parte de azúcar, dos de mantequilla y tres de harina.",
+      "Mezcla solo hasta que la masa se una, así el gluten queda débil y las galletas quedan quebradizas.",
+      "Hornea a baja temperatura, unos 150 a 160 °C, hasta dorar apenas; se endurecen al enfriarse."
+     ],
+     "q": "¿Te gustan las galletas mantecosas y que se deshacen, o crujientes y firmes?",
+     "c": "Hornea una tanda pequeña con 50 g de azúcar, 100 g de mantequilla y 150 g de harina, y comparte una."
+    },
+    "fr": {
+     "t": "Première fournée : shortbread facile",
+     "g": "Réalise ta première recette : des shortbreads sablés et beurrés avec farine, beurre et sucre.",
+     "p": [
+      "Le ratio classique en poids : une part de sucre, deux parts de beurre et trois parts de farine.",
+      "Mélange juste jusqu'à ce que la pâte se tienne : le gluten reste faible et le biscuit bien sablé.",
+      "Cuis à four doux, vers 150 à 160 °C, jusqu'à une couleur dorée pâle ; ils durcissent en refroidissant."
+     ],
+     "q": "Tu préfères les biscuits sablés et fondants, ou croquants et cassants ?",
+     "c": "Fais une petite fournée avec 50 g de sucre, 100 g de beurre et 150 g de farine, et offres-en un."
+    },
+    "it": {
+     "t": "Prima infornata: shortbread semplice",
+     "g": "Prepara la tua prima ricetta: biscotti shortbread burrosi e friabili con farina, burro e zucchero.",
+     "p": [
+      "La proporzione classica a peso è una parte di zucchero, due di burro e tre di farina.",
+      "Impasta solo finché l'impasto sta insieme, così il glutine resta debole e i biscotti friabili.",
+      "Cuoci a bassa temperatura, circa 150-160 °C, finché sono appena dorati; si induriscono raffreddando."
+     ],
+     "q": "Ti piacciono i biscotti friabili e burrosi o croccanti e secchi?",
+     "c": "Prepara una piccola dose con 50 g di zucchero, 100 g di burro e 150 g di farina, e regalane uno."
+    },
+    "pt": {
+     "t": "Primeira fornada: shortbread simples",
+     "g": "Faz a tua primeira receita: bolachas shortbread amanteigadas e quebradiças com farinha, manteiga e açúcar.",
+     "p": [
+      "A proporção clássica em peso é uma parte de açúcar, duas de manteiga e três de farinha.",
+      "Mistura só até a massa ligar, assim o glúten fica fraco e as bolachas ficam a desfazer-se.",
+      "Coze a temperatura baixa, cerca de 150 a 160 °C, até ficarem levemente douradas; endurecem ao arrefecer."
+     ],
+     "q": "Gostas de bolachas amanteigadas que se desfazem ou estaladiças e firmes?",
+     "c": "Faz uma fornada pequena com 50 g de açúcar, 100 g de manteiga e 150 g de farinha, e oferece uma."
+    },
+    "pt_BR": {
+     "t": "Primeira fornada: shortbread simples",
+     "g": "Faça sua primeira receita: biscoitos shortbread amanteigados que derretem na boca, com farinha, manteiga e açúcar.",
+     "p": [
+      "A proporção clássica em peso é uma parte de açúcar, duas de manteiga e três de farinha.",
+      "Misture só até a massa dar liga, assim o glúten fica fraco e o biscoito fica esfarelento.",
+      "Asse em forno baixo, cerca de 150 a 160 °C, até dourar levemente; eles firmam ao esfriar."
+     ],
+     "q": "Você gosta de biscoitos amanteigados que desmancham ou crocantes e firmes?",
+     "c": "Faça uma fornada pequena com 50 g de açúcar, 100 g de manteiga e 150 g de farinha, e dê um para alguém."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The creaming method",
+     "g": "Learn to cream butter and sugar properly to trap tiny air bubbles for light cakes and cookies.",
+     "p": [
+      "Soft butter around 18 to 20 °C holds air best: it should dent when pressed but not look greasy.",
+      "Sugar crystals cut tiny pockets into the butter; beat for several minutes until pale and fluffy.",
+      "Add eggs one at a time and beat well each time, so the mixture stays smooth and does not split."
+     ],
+     "q": "Have you ever creamed butter and sugar by hand, or do you prefer a mixer?",
+     "c": "Cream 50 g butter with 50 g sugar for five minutes and watch how the colour and volume change."
+    },
+    "de": {
+     "t": "Die Rührmethode",
+     "g": "Lerne, Butter und Zucker richtig schaumig zu schlagen, damit winzige Luftbläschen Kuchen locker machen.",
+     "p": [
+      "Weiche Butter bei etwa 18 bis 20 °C hält Luft am besten: Sie gibt auf Druck nach, wirkt aber nicht ölig.",
+      "Zuckerkristalle schneiden kleine Taschen in die Butter; schlage mehrere Minuten, bis alles hell und fluffig ist.",
+      "Eier einzeln zugeben und jedes Mal gut rühren, damit die Masse glatt bleibt und nicht gerinnt."
+     ],
+     "q": "Hast du Butter und Zucker schon mal von Hand schaumig gerührt, oder nimmst du lieber eine Maschine?",
+     "c": "Schlage 50 g Butter mit 50 g Zucker fünf Minuten lang und beobachte, wie sich Farbe und Volumen ändern."
+    },
+    "es": {
+     "t": "El método de cremado",
+     "g": "Aprende a batir mantequilla y azúcar para atrapar burbujas de aire y lograr bizcochos y galletas ligeros.",
+     "p": [
+      "La mantequilla blanda, a unos 18 a 20 °C, retiene mejor el aire: cede al presionarla sin verse grasienta.",
+      "Los cristales de azúcar abren pequeños huecos en la mantequilla; bate varios minutos hasta que blanquee.",
+      "Añade los huevos de uno en uno y bate bien cada vez, para que la mezcla siga lisa y no se corte."
+     ],
+     "q": "¿Has cremado mantequilla y azúcar a mano alguna vez, o prefieres batidora?",
+     "c": "Bate 50 g de mantequilla con 50 g de azúcar durante cinco minutos y observa cómo cambian color y volumen."
+    },
+    "fr": {
+     "t": "La méthode du crémage",
+     "g": "Apprends à crémer beurre et sucre pour emprisonner de fines bulles d'air et alléger gâteaux et cookies.",
+     "p": [
+      "Un beurre mou, vers 18 à 20 °C, retient le mieux l'air : il cède sous le doigt sans paraître huileux.",
+      "Les cristaux de sucre creusent de petites poches dans le beurre ; bats plusieurs minutes jusqu'à blanchir.",
+      "Ajoute les œufs un par un en battant bien à chaque fois, pour que l'appareil reste lisse et ne tranche pas."
+     ],
+     "q": "As-tu déjà crémé beurre et sucre à la main, ou préfères-tu un batteur ?",
+     "c": "Bats 50 g de beurre avec 50 g de sucre pendant cinq minutes et observe le changement de couleur et de volume."
+    },
+    "it": {
+     "t": "Il metodo a crema",
+     "g": "Impara a montare burro e zucchero per intrappolare bollicine d'aria e ottenere torte e biscotti leggeri.",
+     "p": [
+      "Il burro morbido, intorno ai 18-20 °C, trattiene meglio l'aria: cede se premuto ma non sembra unto.",
+      "I cristalli di zucchero creano piccole tasche nel burro; monta per diversi minuti finché è chiaro e spumoso.",
+      "Aggiungi le uova una alla volta e mescola bene ogni volta, così il composto resta liscio e non impazzisce."
+     ],
+     "q": "Hai mai montato burro e zucchero a mano, o preferisci uno sbattitore?",
+     "c": "Monta 50 g di burro con 50 g di zucchero per cinque minuti e osserva come cambiano colore e volume."
+    },
+    "pt": {
+     "t": "O método cremoso",
+     "g": "Aprende a bater manteiga e açúcar em creme para prender bolhinhas de ar e ter bolos e bolachas leves.",
+     "p": [
+      "A manteiga mole, a cerca de 18 a 20 °C, segura melhor o ar: cede ao toque sem parecer oleosa.",
+      "Os cristais de açúcar abrem pequenas bolsas na manteiga; bate vários minutos até ficar clara e fofa.",
+      "Junta os ovos um a um e bate bem de cada vez, para a mistura ficar lisa e não talhar."
+     ],
+     "q": "Já bateste manteiga e açúcar à mão ou preferes a batedeira?",
+     "c": "Bate 50 g de manteiga com 50 g de açúcar durante cinco minutos e observa como mudam a cor e o volume."
+    },
+    "pt_BR": {
+     "t": "O método cremoso",
+     "g": "Aprenda a bater manteiga e açúcar em creme para prender bolhinhas de ar e ter bolos e cookies leves.",
+     "p": [
+      "Manteiga macia, por volta de 18 a 20 °C, segura melhor o ar: afunda ao toque sem parecer oleosa.",
+      "Os cristais de açúcar abrem pequenos bolsões na manteiga; bata por vários minutos até clarear e ficar fofa.",
+      "Adicione os ovos um de cada vez, batendo bem a cada um, para a mistura ficar lisa e não talhar."
+     ],
+     "q": "Você já bateu manteiga e açúcar à mão ou prefere a batedeira?",
+     "c": "Bata 50 g de manteiga com 50 g de açúcar por cinco minutos e observe como mudam a cor e o volume."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classic chocolate chip cookies",
+     "g": "Bake chocolate chip cookies with crisp edges and chewy centres using creaming, chilling and timing.",
+     "p": [
+      "Brown sugar adds moisture and chew, while white sugar helps the edges spread and crisp up.",
+      "Chilling the dough for at least an hour firms the butter and deepens the flavour.",
+      "Take them out when the edges are golden and the centres still look slightly underdone; they set on the tray."
+     ],
+     "q": "What is your ideal cookie: thin and crispy, thick and soft, or somewhere in between?",
+     "c": "Bake two cookies from the same dough, one straight away and one after chilling, and compare them."
+    },
+    "de": {
+     "t": "Klassische Chocolate Chip Cookies",
+     "g": "Back Cookies mit knusprigem Rand und weicher Mitte: schaumig rühren, kühlen, richtig timen.",
+     "p": [
+      "Brauner Zucker bringt Feuchtigkeit und Biss, weißer Zucker lässt die Ränder verlaufen und knusprig werden.",
+      "Mindestens eine Stunde Kühlen festigt die Butter und vertieft das Aroma.",
+      "Nimm sie heraus, wenn die Ränder golden und die Mitten noch leicht roh aussehen; sie ziehen auf dem Blech nach."
+     ],
+     "q": "Wie ist dein idealer Cookie: dünn und knusprig, dick und weich oder irgendwo dazwischen?",
+     "c": "Back zwei Cookies aus demselben Teig, einen sofort und einen nach dem Kühlen, und vergleiche sie."
+    },
+    "es": {
+     "t": "Galletas clásicas con chips de chocolate",
+     "g": "Hornea cookies con bordes crujientes y centro tierno usando cremado, frío y buen control del tiempo.",
+     "p": [
+      "El azúcar moreno aporta humedad y textura masticable; el blanco ayuda a que los bordes se extiendan y crujan.",
+      "Enfriar la masa al menos una hora endurece la mantequilla y profundiza el sabor.",
+      "Sácalas cuando los bordes estén dorados y el centro parezca un poco crudo; terminan de cuajar en la bandeja."
+     ],
+     "q": "¿Cómo es tu cookie ideal: fina y crujiente, gruesa y blanda, o algo intermedio?",
+     "c": "Hornea dos cookies de la misma masa, una enseguida y otra tras enfriarla, y compáralas."
+    },
+    "fr": {
+     "t": "Les cookies aux pépites de chocolat",
+     "g": "Réussis des cookies croustillants au bord et moelleux au cœur grâce au crémage, au froid et au bon timing.",
+     "p": [
+      "Le sucre brun apporte humidité et moelleux ; le sucre blanc aide les bords à s'étaler et à croustiller.",
+      "Une heure au froid minimum raffermit le beurre et développe les arômes.",
+      "Sors-les quand les bords sont dorés et le centre encore un peu cru : ils finissent de prendre sur la plaque."
+     ],
+     "q": "Ton cookie idéal : fin et croustillant, épais et moelleux, ou entre les deux ?",
+     "c": "Cuis deux cookies de la même pâte, l'un tout de suite et l'autre après repos au froid, puis compare-les."
+    },
+    "it": {
+     "t": "Cookies classici con gocce di cioccolato",
+     "g": "Sforna cookies con bordi croccanti e cuore morbido grazie a crema, riposo in frigo e tempi giusti.",
+     "p": [
+      "Lo zucchero di canna dà umidità e morbidezza; quello bianco aiuta i bordi ad allargarsi e diventare croccanti.",
+      "Far riposare l'impasto in frigo almeno un'ora rassoda il burro e intensifica il sapore.",
+      "Sfornali quando i bordi sono dorati e il centro sembra ancora un po' crudo: si assestano sulla teglia."
+     ],
+     "q": "Com'è il tuo cookie ideale: sottile e croccante, alto e morbido o una via di mezzo?",
+     "c": "Cuoci due cookies dallo stesso impasto, uno subito e uno dopo il frigo, e confrontali."
+    },
+    "pt": {
+     "t": "Cookies clássicos com pepitas de chocolate",
+     "g": "Faz cookies com bordas estaladiças e centro macio usando o método cremoso, o frio e o tempo certo.",
+     "p": [
+      "O açúcar amarelo dá humidade e textura macia; o branco ajuda as bordas a espalhar e a estalar.",
+      "Pôr a massa no frigorífico pelo menos uma hora firma a manteiga e aprofunda o sabor.",
+      "Tira-os quando as bordas estiverem douradas e o centro ainda pareça mal cozido; acabam de firmar no tabuleiro."
+     ],
+     "q": "Como é o teu cookie ideal: fino e estaladiço, grosso e macio, ou algo entre os dois?",
+     "c": "Coze dois cookies da mesma massa, um logo e outro depois do frio, e compara-os."
+    },
+    "pt_BR": {
+     "t": "Cookies clássicos com gotas de chocolate",
+     "g": "Asse cookies com borda crocante e centro macio usando método cremoso, geladeira e o tempo certo.",
+     "p": [
+      "O açúcar mascavo dá umidade e textura puxa-puxa; o refinado ajuda a borda a espalhar e ficar crocante.",
+      "Deixar a massa na geladeira por pelo menos uma hora firma a manteiga e intensifica o sabor.",
+      "Tire quando a borda estiver dourada e o centro ainda parecer cru; eles terminam de firmar na assadeira."
+     ],
+     "q": "Como é o seu cookie ideal: fino e crocante, alto e macio ou algo no meio?",
+     "c": "Asse dois cookies da mesma massa, um na hora e outro depois da geladeira, e compare."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why cookies spread",
+     "g": "Learn how butter temperature, sugar and flour control how much a cookie spreads in the oven.",
+     "p": [
+      "Warm or melted butter makes cookies spread thin; cold, firm dough keeps them thick.",
+      "More white sugar means more spread and crunch; more flour or a little less butter means less spread.",
+      "Bake on a cool tray lined with baking paper; a hot tray from the last batch starts melting the dough early."
+     ],
+     "q": "Have your cookies ever melted into one giant flat sheet? What do you think caused it?",
+     "c": "Bake one cookie on a warm tray and one on a cool tray, and compare their shape."
+    },
+    "de": {
+     "t": "Warum Cookies verlaufen",
+     "g": "Lerne, wie Buttertemperatur, Zucker und Mehl steuern, wie stark ein Cookie im Ofen verläuft.",
+     "p": [
+      "Warme oder geschmolzene Butter lässt Cookies flach verlaufen; kalter, fester Teig hält sie dick.",
+      "Mehr weißer Zucker heißt mehr Verlaufen und Knusper; mehr Mehl oder etwas weniger Butter heißt weniger.",
+      "Back auf einem kühlen Blech mit Backpapier; ein heißes Blech vom letzten Durchgang schmilzt den Teig zu früh."
+     ],
+     "q": "Sind deine Cookies schon mal zu einer riesigen flachen Platte zerlaufen? Woran lag es wohl?",
+     "c": "Back einen Cookie auf einem warmen und einen auf einem kühlen Blech und vergleiche die Form."
+    },
+    "es": {
+     "t": "Por qué se extienden las galletas",
+     "g": "Aprende cómo la temperatura de la mantequilla, el azúcar y la harina controlan cuánto se extiende una galleta.",
+     "p": [
+      "La mantequilla tibia o fundida hace galletas finas; una masa fría y firme las mantiene gruesas.",
+      "Más azúcar blanco significa más extensión y crujido; más harina o algo menos de mantequilla, menos.",
+      "Hornea sobre una bandeja fría con papel; una bandeja caliente de la tanda anterior funde la masa antes de tiempo."
+     ],
+     "q": "¿Alguna vez tus galletas se fundieron en una sola lámina plana? ¿Qué crees que pasó?",
+     "c": "Hornea una galleta en bandeja tibia y otra en bandeja fría, y compara su forma."
+    },
+    "fr": {
+     "t": "Pourquoi les cookies s'étalent",
+     "g": "Apprends comment la température du beurre, le sucre et la farine contrôlent l'étalement d'un cookie.",
+     "p": [
+      "Un beurre tiède ou fondu donne des cookies fins ; une pâte froide et ferme les garde épais.",
+      "Plus de sucre blanc, c'est plus d'étalement et de croquant ; plus de farine ou un peu moins de beurre, moins.",
+      "Cuis sur une plaque froide avec du papier cuisson ; une plaque encore chaude fait fondre la pâte trop tôt."
+     ],
+     "q": "Tes cookies ont-ils déjà fusionné en une grande galette plate ? Quelle en était la cause, à ton avis ?",
+     "c": "Cuis un cookie sur une plaque tiède et un sur une plaque froide, puis compare leur forme."
+    },
+    "it": {
+     "t": "Perché i biscotti si allargano",
+     "g": "Impara come temperatura del burro, zucchero e farina controllano quanto si allarga un biscotto in forno.",
+     "p": [
+      "Il burro tiepido o fuso fa biscotti sottili; un impasto freddo e sodo li mantiene alti.",
+      "Più zucchero bianco significa più allargamento e croccantezza; più farina o meno burro, meno.",
+      "Cuoci su una teglia fredda con carta forno; una teglia calda dell'infornata precedente scioglie l'impasto."
+     ],
+     "q": "Ti è mai capitato che i biscotti diventassero un'unica sfoglia piatta? Cosa pensi l'abbia causato?",
+     "c": "Cuoci un biscotto su una teglia tiepida e uno su una fredda, e confronta la forma."
+    },
+    "pt": {
+     "t": "Porque é que as bolachas espalham",
+     "g": "Aprende como a temperatura da manteiga, o açúcar e a farinha controlam quanto uma bolacha espalha.",
+     "p": [
+      "Manteiga morna ou derretida faz bolachas finas; massa fria e firme mantém-nas grossas.",
+      "Mais açúcar branco significa mais espalhamento e crocância; mais farinha ou menos manteiga, menos.",
+      "Coze num tabuleiro frio com papel vegetal; um tabuleiro quente da fornada anterior derrete a massa cedo demais."
+     ],
+     "q": "Já tiveste bolachas que se juntaram numa enorme folha achatada? O que achas que aconteceu?",
+     "c": "Coze uma bolacha num tabuleiro morno e outra num frio, e compara a forma."
+    },
+    "pt_BR": {
+     "t": "Por que os cookies espalham",
+     "g": "Aprenda como a temperatura da manteiga, o açúcar e a farinha controlam quanto um cookie espalha.",
+     "p": [
+      "Manteiga morna ou derretida faz cookies finos; massa gelada e firme mantém eles altos.",
+      "Mais açúcar refinado significa mais espalhamento e crocância; mais farinha ou menos manteiga, menos.",
+      "Asse em assadeira fria com papel-manteiga; uma assadeira quente da fornada anterior derrete a massa antes da hora."
+     ],
+     "q": "Seus cookies já viraram uma única folha achatada? O que você acha que causou isso?",
+     "c": "Asse um cookie em assadeira morna e outro em assadeira fria, e compare o formato."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The muffin method",
+     "g": "Learn the quick muffin method: wet into dry, minimal mixing, and why lumps are a good sign.",
+     "p": [
+      "Whisk the dry ingredients in one bowl and the wet ones in another, then pour the wet into the dry.",
+      "Stir only until no dry flour shows; overmixing builds gluten and gives tough muffins with tunnels.",
+      "A lumpy batter is perfect: the lumps hydrate in the oven and give a tender, light crumb."
+     ],
+     "q": "Do you like muffins sweet, savoury, or both?",
+     "c": "Make a half batch of plain muffin batter and count how few strokes it takes to just combine it."
+    },
+    "de": {
+     "t": "Die Muffin-Methode",
+     "g": "Lerne die schnelle Muffin-Methode: Nasses zu Trockenem, kurz rühren, und warum Klümpchen gut sind.",
+     "p": [
+      "Trockene Zutaten in einer Schüssel mischen, flüssige in einer anderen, dann das Nasse zum Trockenen gießen.",
+      "Nur rühren, bis kein trockenes Mehl mehr zu sehen ist; zu langes Rühren macht Muffins zäh und löchrig.",
+      "Ein klumpiger Teig ist perfekt: Die Klümpchen quellen im Ofen und ergeben eine zarte, lockere Krume."
+     ],
+     "q": "Magst du Muffins lieber süß, herzhaft oder beides?",
+     "c": "Rühr einen halben Muffinteig an und zähle, wie wenige Rührbewegungen bis zum Verbinden nötig sind."
+    },
+    "es": {
+     "t": "El método muffin",
+     "g": "Aprende el método rápido de los muffins: líquidos sobre secos, mezcla mínima y por qué los grumos son buena señal.",
+     "p": [
+      "Mezcla los secos en un bol y los líquidos en otro, y vierte los líquidos sobre los secos.",
+      "Remueve solo hasta que no se vea harina seca; mezclar de más forma gluten y da muffins duros y con túneles.",
+      "Una masa con grumos es perfecta: se hidratan en el horno y dan una miga tierna y ligera."
+     ],
+     "q": "¿Te gustan los muffins dulces, salados o ambos?",
+     "c": "Prepara media tanda de masa de muffins y cuenta con qué pocos movimientos queda apenas mezclada."
+    },
+    "fr": {
+     "t": "La méthode muffin",
+     "g": "Apprends la méthode rapide des muffins : liquides sur secs, mélange minimal et grumeaux bienvenus.",
+     "p": [
+      "Mélange les ingrédients secs dans un bol, les liquides dans un autre, puis verse les liquides sur les secs.",
+      "Remue juste jusqu'à ne plus voir de farine ; trop mélanger développe le gluten et donne des muffins durs.",
+      "Une pâte grumeleuse est parfaite : les grumeaux s'hydratent au four et donnent une mie tendre et légère."
+     ],
+     "q": "Tu aimes les muffins sucrés, salés ou les deux ?",
+     "c": "Prépare une demi-dose de pâte à muffins et compte le peu de coups de spatule qu'il faut pour l'assembler."
+    },
+    "it": {
+     "t": "Il metodo muffin",
+     "g": "Impara il metodo veloce dei muffin: liquidi nei secchi, mescolare poco e perché i grumi sono un buon segno.",
+     "p": [
+      "Mescola gli ingredienti secchi in una ciotola e quelli liquidi in un'altra, poi versa i liquidi nei secchi.",
+      "Mescola solo finché non vedi più farina asciutta; mescolare troppo sviluppa glutine e indurisce i muffin.",
+      "Un impasto grumoso è perfetto: i grumi si idratano in forno e danno una mollica tenera e leggera."
+     ],
+     "q": "Ti piacciono i muffin dolci, salati o entrambi?",
+     "c": "Prepara mezza dose di impasto base e conta quanti pochi colpi di spatola servono per amalgamarlo appena."
+    },
+    "pt": {
+     "t": "O método dos muffins",
+     "g": "Aprende o método rápido dos muffins: líquidos nos secos, mistura mínima e porque os grumos são bom sinal.",
+     "p": [
+      "Mistura os secos numa taça e os líquidos noutra, depois deita os líquidos sobre os secos.",
+      "Mexe só até não se ver farinha seca; misturar demais forma glúten e dá muffins rijos e com túneis.",
+      "Uma massa com grumos é perfeita: hidratam no forno e dão um miolo tenro e leve."
+     ],
+     "q": "Gostas de muffins doces, salgados ou de ambos?",
+     "c": "Faz meia dose de massa de muffins e conta com quão poucas voltas fica apenas misturada."
+    },
+    "pt_BR": {
+     "t": "O método dos muffins",
+     "g": "Aprenda o método rápido dos muffins: líquidos nos secos, mistura mínima e por que os grumos são bom sinal.",
+     "p": [
+      "Misture os secos em uma tigela e os líquidos em outra, depois despeje os líquidos sobre os secos.",
+      "Mexa só até não aparecer farinha seca; misturar demais forma glúten e deixa o muffin duro e cheio de túneis.",
+      "Massa com grumos é perfeita: eles hidratam no forno e dão um miolo macio e leve."
+     ],
+     "q": "Você gosta de muffins doces, salgados ou dos dois?",
+     "c": "Faça meia receita de massa de muffin e conte com quão poucas mexidas ela fica apenas misturada."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blueberry muffins",
+     "g": "Bake blueberry muffins with tall domed tops and juicy berries spread evenly through the crumb.",
+     "p": [
+      "Fill the cases almost to the top and start in a hot oven, around 200 °C, for a quick rise and a domed top.",
+      "Toss the berries in a spoonful of the flour so they cling to the batter instead of sinking.",
+      "Fold the berries in at the very end with a few gentle strokes, so they do not burst and turn the batter blue."
+     ],
+     "q": "Fresh or frozen blueberries: which do you usually find, and have you baked with either?",
+     "c": "Bake six blueberry muffins and cut one in half to check if the berries stayed spread through the crumb."
+    },
+    "de": {
+     "t": "Blaubeer-Muffins",
+     "g": "Back Blaubeer-Muffins mit hoher Haube und saftigen Beeren, die gleichmäßig in der Krume verteilt sind.",
+     "p": [
+      "Förmchen fast voll füllen und in einem heißen Ofen bei etwa 200 °C starten, für schnellen Trieb und eine Haube.",
+      "Beeren in einem Löffel Mehl wenden, damit sie im Teig haften, statt abzusinken.",
+      "Die Beeren ganz zum Schluss mit wenigen Zügen unterheben, damit sie nicht platzen und den Teig blau färben."
+     ],
+     "q": "Frische oder tiefgekühlte Blaubeeren: Was bekommst du meistens, und hast du schon damit gebacken?",
+     "c": "Back sechs Blaubeer-Muffins und schneide einen auf, um zu sehen, ob die Beeren verteilt geblieben sind."
+    },
+    "es": {
+     "t": "Muffins de arándanos",
+     "g": "Hornea muffins de arándanos con copete alto y fruta jugosa repartida por toda la miga.",
+     "p": [
+      "Llena los moldes casi hasta arriba y empieza con horno fuerte, unos 200 °C, para un levado rápido y un buen copete.",
+      "Pasa los arándanos por una cucharada de la harina para que se agarren a la masa y no se hundan.",
+      "Incorpóralos al final con pocos movimientos suaves, para que no revienten y tiñan la masa de azul."
+     ],
+     "q": "Arándanos frescos o congelados: ¿cuáles encuentras más y has horneado con alguno?",
+     "c": "Hornea seis muffins de arándanos y corta uno por la mitad para ver si la fruta quedó repartida."
+    },
+    "fr": {
+     "t": "Muffins aux myrtilles",
+     "g": "Réussis des muffins aux myrtilles bien bombés, avec des fruits juteux répartis dans toute la mie.",
+     "p": [
+      "Remplis les caissettes presque à ras bord et démarre à four chaud, vers 200 °C, pour une belle levée bombée.",
+      "Enrobe les myrtilles d'une cuillère de farine pour qu'elles accrochent à la pâte au lieu de couler.",
+      "Incorpore-les tout à la fin en quelques gestes doux, pour qu'elles n'éclatent pas et ne bleuissent pas la pâte."
+     ],
+     "q": "Myrtilles fraîches ou surgelées : lesquelles trouves-tu le plus, et as-tu déjà pâtissé avec ?",
+     "c": "Cuis six muffins aux myrtilles et coupes-en un en deux pour vérifier la répartition des fruits."
+    },
+    "it": {
+     "t": "Muffin ai mirtilli",
+     "g": "Sforna muffin ai mirtilli con la cupola alta e frutti succosi distribuiti in tutta la mollica.",
+     "p": [
+      "Riempi i pirottini quasi fino all'orlo e parti con forno caldo, circa 200 °C, per una crescita rapida e una bella cupola.",
+      "Passa i mirtilli in un cucchiaio della farina, così aderiscono all'impasto invece di affondare.",
+      "Incorporali alla fine con pochi movimenti delicati, perché non scoppino colorando l'impasto di blu."
+     ],
+     "q": "Mirtilli freschi o surgelati: quali trovi più spesso, e li hai mai usati nei dolci?",
+     "c": "Cuoci sei muffin ai mirtilli e tagliane uno a metà per vedere se i frutti sono rimasti distribuiti."
+    },
+    "pt": {
+     "t": "Muffins de mirtilo",
+     "g": "Faz muffins de mirtilo com topo alto e arredondado e frutos suculentos espalhados pelo miolo.",
+     "p": [
+      "Enche as formas quase até cima e começa com forno quente, cerca de 200 °C, para crescerem depressa e abaularem.",
+      "Passa os mirtilos por uma colher da farinha para agarrarem à massa em vez de irem ao fundo.",
+      "Envolve-os no fim com poucos movimentos suaves, para não rebentarem nem pintarem a massa de azul."
+     ],
+     "q": "Mirtilos frescos ou congelados: quais encontras mais e já fizeste bolos com algum?",
+     "c": "Faz seis muffins de mirtilo e corta um ao meio para ver se os frutos ficaram bem distribuídos."
+    },
+    "pt_BR": {
+     "t": "Muffins de mirtilo",
+     "g": "Asse muffins de mirtilo com topo alto e arredondado e frutinhas suculentas espalhadas pelo miolo.",
+     "p": [
+      "Encha as forminhas quase até a borda e comece com forno quente, cerca de 200 °C, para crescer rápido e formar o topo.",
+      "Passe os mirtilos em uma colher da farinha para grudarem na massa em vez de afundar.",
+      "Incorpore no final com poucas mexidas suaves, para não estourarem nem deixarem a massa azul."
+     ],
+     "q": "Mirtilos frescos ou congelados: quais você encontra mais e já assou com algum?",
+     "c": "Asse seis muffins de mirtilo e corte um ao meio para ver se as frutinhas ficaram bem distribuídas."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quick breads: banana bread",
+     "g": "Bake a moist banana bread, learn to test when it is done and keep the loaf soft for days.",
+     "p": [
+      "Use very ripe bananas with lots of brown spots: they are sweeter, softer and more aromatic.",
+      "The banana acid reacts with baking soda for lift; mix gently, just like the muffin method.",
+      "Test with a skewer in the centre, then wrap the cooled loaf so it stays moist for several days."
+     ],
+     "q": "How ripe do you like your bananas for eating, and do you ever end up with overripe ones?",
+     "c": "Bake a banana bread with three spotty bananas and note how long it took until the skewer came out clean."
+    },
+    "de": {
+     "t": "Rührbrote: Bananenbrot",
+     "g": "Back ein saftiges Bananenbrot, lerne die Garprobe und halte es tagelang weich.",
+     "p": [
+      "Nimm sehr reife Bananen mit vielen braunen Flecken: Sie sind süßer, weicher und aromatischer.",
+      "Die Säure der Banane reagiert mit Natron und lockert den Teig; sanft mischen wie bei Muffins.",
+      "Mit einem Holzstäbchen in der Mitte prüfen, dann das abgekühlte Brot einwickeln, damit es saftig bleibt."
+     ],
+     "q": "Wie reif magst du Bananen zum Essen, und bleiben bei dir manchmal überreife übrig?",
+     "c": "Back ein Bananenbrot mit drei fleckigen Bananen und notiere, wann das Stäbchen sauber herauskam."
+    },
+    "es": {
+     "t": "Panes rápidos: pan de plátano",
+     "g": "Hornea un pan de plátano jugoso, aprende a comprobar si está hecho y mantenlo tierno varios días.",
+     "p": [
+      "Usa plátanos muy maduros con muchas manchas marrones: son más dulces, blandos y aromáticos.",
+      "La acidez del plátano reacciona con el bicarbonato y da volumen; mezcla suave, como en los muffins.",
+      "Pincha el centro con una brocheta y, ya frío, envuélvelo para que siga jugoso varios días."
+     ],
+     "q": "¿Qué tan maduros te gustan los plátanos para comer, y te quedan a veces demasiado maduros?",
+     "c": "Hornea un pan con tres plátanos con manchas y anota cuánto tardó la brocheta en salir limpia."
+    },
+    "fr": {
+     "t": "Cakes rapides : le banana bread",
+     "g": "Réalise un banana bread moelleux, apprends à vérifier la cuisson et garde-le tendre plusieurs jours.",
+     "p": [
+      "Prends des bananes très mûres, bien tachetées : elles sont plus sucrées, plus tendres et plus parfumées.",
+      "L'acidité de la banane réagit avec le bicarbonate et fait lever ; mélange doucement, comme pour les muffins.",
+      "Vérifie avec une pique au centre, puis emballe le cake refroidi pour qu'il reste moelleux plusieurs jours."
+     ],
+     "q": "Tu aimes tes bananes plutôt fermes ou bien mûres, et t'en reste-t-il parfois de trop mûres ?",
+     "c": "Fais un banana bread avec trois bananes tachetées et note le temps qu'il a fallu pour que la pique ressorte sèche."
+    },
+    "it": {
+     "t": "Pani veloci: banana bread",
+     "g": "Prepara un banana bread umido, impara a verificare la cottura e mantienilo morbido per giorni.",
+     "p": [
+      "Usa banane molto mature con tante macchie scure: sono più dolci, morbide e profumate.",
+      "L'acidità della banana reagisce col bicarbonato e fa crescere l'impasto; mescola piano come per i muffin.",
+      "Verifica con uno stecchino al centro, poi avvolgi il pane freddo perché resti umido per giorni."
+     ],
+     "q": "Quanto mature ti piacciono le banane da mangiare, e ti capita di averne di troppo mature?",
+     "c": "Prepara un banana bread con tre banane macchiate e annota dopo quanto lo stecchino è uscito asciutto."
+    },
+    "pt": {
+     "t": "Bolos rápidos: pão de banana",
+     "g": "Faz um pão de banana húmido, aprende a testar a cozedura e mantém-no macio durante dias.",
+     "p": [
+      "Usa bananas muito maduras, cheias de pintas castanhas: são mais doces, moles e aromáticas.",
+      "A acidez da banana reage com o bicarbonato e faz crescer; mistura com suavidade, como nos muffins.",
+      "Testa com um palito no centro e, depois de frio, embrulha-o para se manter húmido vários dias."
+     ],
+     "q": "Gostas das bananas mais verdes ou bem maduras, e às vezes ficam-te algumas maduras demais?",
+     "c": "Faz um pão de banana com três bananas pintadas e anota quanto tempo levou até o palito sair limpo."
+    },
+    "pt_BR": {
+     "t": "Pães rápidos: pão de banana",
+     "g": "Asse um pão de banana úmido, aprenda a testar o ponto e mantenha ele macio por dias.",
+     "p": [
+      "Use bananas bem maduras, cheias de pintinhas marrons: são mais doces, macias e perfumadas.",
+      "A acidez da banana reage com o bicarbonato e faz crescer; misture com delicadeza, como no muffin.",
+      "Teste com um palito no centro e, depois de frio, embrulhe para continuar úmido por vários dias."
+     ],
+     "q": "Você gosta de banana mais verde ou bem madura, e às vezes sobram algumas maduras demais?",
+     "c": "Asse um pão de banana com três bananas pintadinhas e anote quanto tempo levou até o palito sair limpo."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to tell when it is done",
+     "g": "Learn the reliable signs of doneness for cakes, cookies and breads, so you never guess again.",
+     "p": [
+      "A skewer in the centre of a cake should come out clean or with a few moist crumbs, not wet batter.",
+      "A done sponge springs back when pressed lightly and starts to pull away from the sides of the tin.",
+      "For bread, an instant thermometer helps: around 90 to 95 °C inside for most loaves."
+     ],
+     "q": "What do you usually check to decide a cake is ready, and has it ever fooled you?",
+     "c": "Next time you bake, use two tests, like the skewer and the spring-back, and see if they agree."
+    },
+    "de": {
+     "t": "Woran man erkennt, dass es fertig ist",
+     "g": "Lerne die verlässlichen Garzeichen für Kuchen, Kekse und Brot, damit du nie mehr raten musst.",
+     "p": [
+      "Ein Stäbchen in der Kuchenmitte sollte sauber oder mit ein paar feuchten Krümeln herauskommen, nicht mit Teig.",
+      "Ein fertiger Biskuit federt bei leichtem Druck zurück und löst sich vom Formrand.",
+      "Beim Brot hilft ein Einstichthermometer: innen etwa 90 bis 95 °C bei den meisten Laiben."
+     ],
+     "q": "Worauf achtest du normalerweise, ob ein Kuchen fertig ist, und hat es dich schon mal getäuscht?",
+     "c": "Nutze beim nächsten Backen zwei Tests, etwa Stäbchen und Druckprobe, und schau, ob sie übereinstimmen."
+    },
+    "es": {
+     "t": "Cómo saber si está hecho",
+     "g": "Aprende las señales fiables de cocción para bizcochos, galletas y panes, y deja de adivinar.",
+     "p": [
+      "Una brocheta en el centro del bizcocho debe salir limpia o con algunas migas húmedas, nunca con masa cruda.",
+      "Un bizcocho hecho recupera su forma al presionarlo suavemente y se separa de las paredes del molde.",
+      "Para el pan ayuda un termómetro de lectura rápida: unos 90 a 95 °C por dentro en la mayoría."
+     ],
+     "q": "¿Qué sueles comprobar para decidir que un bizcocho está listo, y alguna vez te ha engañado?",
+     "c": "La próxima vez que hornees, usa dos pruebas, como la brocheta y la presión, y mira si coinciden."
+    },
+    "fr": {
+     "t": "Savoir quand c'est cuit",
+     "g": "Apprends les signes fiables de cuisson des gâteaux, biscuits et pains, pour ne plus jamais deviner.",
+     "p": [
+      "Une pique au centre d'un gâteau doit ressortir sèche ou avec quelques miettes humides, jamais avec de la pâte.",
+      "Une génoise cuite reprend sa forme sous une légère pression et se décolle des bords du moule.",
+      "Pour le pain, un thermomètre à sonde aide : environ 90 à 95 °C à cœur pour la plupart des pains."
+     ],
+     "q": "Que vérifies-tu d'habitude pour savoir qu'un gâteau est prêt, et t'es-tu déjà fait piéger ?",
+     "c": "À ta prochaine fournée, utilise deux tests, comme la pique et la pression, et vois s'ils concordent."
+    },
+    "it": {
+     "t": "Come capire se è cotto",
+     "g": "Impara i segnali affidabili di cottura per torte, biscotti e pani, così non dovrai più indovinare.",
+     "p": [
+      "Uno stecchino al centro della torta deve uscire asciutto o con poche briciole umide, mai con impasto crudo.",
+      "Un pan di Spagna cotto torna su se premuto leggermente e si stacca dai bordi dello stampo.",
+      "Per il pane aiuta un termometro a sonda: circa 90-95 °C al cuore per la maggior parte dei pani."
+     ],
+     "q": "Cosa controlli di solito per decidere che una torta è pronta, e ti ha mai ingannato?",
+     "c": "La prossima volta usa due prove, come stecchino e pressione, e guarda se danno lo stesso risultato."
+    },
+    "pt": {
+     "t": "Como saber se está cozido",
+     "g": "Aprende os sinais fiáveis de cozedura para bolos, bolachas e pães, para nunca mais adivinhares.",
+     "p": [
+      "Um palito no centro do bolo deve sair limpo ou com algumas migalhas húmidas, nunca com massa crua.",
+      "Um pão de ló cozido volta à forma quando pressionado e começa a descolar das paredes da forma.",
+      "No pão ajuda um termómetro de leitura rápida: cerca de 90 a 95 °C no interior da maioria."
+     ],
+     "q": "O que costumas verificar para decidir que um bolo está pronto, e já te enganou alguma vez?",
+     "c": "Na próxima fornada, usa dois testes, como o palito e a pressão, e vê se concordam."
+    },
+    "pt_BR": {
+     "t": "Como saber se está pronto",
+     "g": "Aprenda os sinais confiáveis de ponto para bolos, biscoitos e pães, e nunca mais fique no chute.",
+     "p": [
+      "Um palito no centro do bolo deve sair limpo ou com algumas migalhas úmidas, nunca com massa crua.",
+      "Um pão de ló pronto volta ao lugar quando pressionado de leve e começa a soltar das laterais da forma.",
+      "No pão ajuda um termômetro culinário: cerca de 90 a 95 °C no interior da maioria."
+     ],
+     "q": "O que você costuma conferir para saber se o bolo está pronto, e isso já te enganou?",
+     "c": "Na próxima fornada, use dois testes, como o palito e a pressão, e veja se eles concordam."
+    }
+   }
+  }
+ ]
+}

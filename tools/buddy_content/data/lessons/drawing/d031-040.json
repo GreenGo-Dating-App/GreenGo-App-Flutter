@@ -1,0 +1,835 @@
+{
+ "topic": "drawing",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measuring with your pencil",
+     "g": "Use your pencil at arm's length to compare heights, widths and angles.",
+     "p": [
+      "Stretch your arm fully and lock the elbow so every measurement uses the same distance.",
+      "Close one eye, line the pencil tip with one edge and slide your thumb to mark the other.",
+      "Measure in units: pick one part, like the height of a cup, and compare everything to it."
+     ],
+     "q": "Have you ever seen artists holding out a pencil and wondered what they were doing?",
+     "c": "Measure how many cup-heights wide your table looks, then draw the cup and table using that ratio."
+    },
+    "de": {
+     "t": "Mit dem Bleistift messen",
+     "g": "Den Stift auf Armlänge nutzen, um Höhen, Breiten und Winkel zu vergleichen.",
+     "p": [
+      "Streck den Arm ganz aus und halt den Ellbogen gerade, damit jede Messung gleich ist.",
+      "Schließ ein Auge, setz die Stiftspitze an eine Kante und schieb den Daumen zur anderen.",
+      "Miss in Einheiten: Nimm einen Teil, etwa die Tassenhöhe, und vergleich alles damit."
+     ],
+     "q": "Hast du schon Künstler gesehen, die einen Stift ausstrecken, und dich gefragt, was sie tun?",
+     "c": "Miss, wie viele Tassenhöhen breit dein Tisch wirkt, und zeichne Tasse und Tisch in diesem Verhältnis."
+    },
+    "es": {
+     "t": "Medir con el lápiz",
+     "g": "Usar el lápiz con el brazo estirado para comparar alturas, anchos y ángulos.",
+     "p": [
+      "Estira el brazo del todo y bloquea el codo para medir siempre a la misma distancia.",
+      "Cierra un ojo, alinea la punta con un borde y desliza el pulgar hasta el otro.",
+      "Mide en unidades: elige una parte, como la altura de una taza, y compara todo con ella."
+     ],
+     "q": "¿Has visto artistas con el lápiz estirado y te has preguntado qué hacían?",
+     "c": "Mide cuántas alturas de taza parece medir tu mesa de ancho y dibuja ambas con esa proporción."
+    },
+    "fr": {
+     "t": "Mesurer avec son crayon",
+     "g": "Utiliser le crayon à bout de bras pour comparer hauteurs, largeurs et angles.",
+     "p": [
+      "Tends complètement le bras, coude verrouillé, pour mesurer toujours à la même distance.",
+      "Ferme un œil, aligne la pointe sur un bord et fais glisser ton pouce jusqu'à l'autre.",
+      "Mesure en unités : choisis une partie, comme la hauteur d'une tasse, et compare tout à elle."
+     ],
+     "q": "As-tu déjà vu des artistes tendre leur crayon en te demandant ce qu'ils faisaient ?",
+     "c": "Mesure combien de hauteurs de tasse fait ta table en largeur, puis dessine-les avec ce rapport."
+    },
+    "it": {
+     "t": "Misurare con la matita",
+     "g": "Usare la matita a braccio teso per confrontare altezze, larghezze e angoli.",
+     "p": [
+      "Stendi del tutto il braccio e blocca il gomito, così misuri sempre alla stessa distanza.",
+      "Chiudi un occhio, allinea la punta a un bordo e fai scorrere il pollice fino all'altro.",
+      "Misura in unità: scegli una parte, come l'altezza di una tazza, e confronta tutto con quella."
+     ],
+     "q": "Hai mai visto artisti con la matita tesa chiedendoti cosa facessero?",
+     "c": "Misura quante altezze di tazza è largo il tavolo e disegna tazza e tavolo con quel rapporto."
+    },
+    "pt": {
+     "t": "Medir com o lápis",
+     "g": "Usar o lápis com o braço esticado para comparar alturas, larguras e ângulos.",
+     "p": [
+      "Estica bem o braço e trava o cotovelo para medir sempre à mesma distância.",
+      "Fecha um olho, alinha a ponta com uma borda e desliza o polegar até à outra.",
+      "Mede em unidades: escolhe uma parte, como a altura de uma chávena, e compara tudo com ela."
+     ],
+     "q": "Já viste artistas de lápis esticado e perguntaste o que estavam a fazer?",
+     "c": "Mede quantas alturas de chávena tem a mesa de largura e desenha as duas nessa proporção."
+    },
+    "pt_BR": {
+     "t": "Medindo com o lápis",
+     "g": "Usar o lápis com o braço esticado para comparar alturas, larguras e ângulos.",
+     "p": [
+      "Estique bem o braço e trave o cotovelo para medir sempre na mesma distância.",
+      "Feche um olho, alinhe a ponta com uma borda e deslize o polegar até a outra.",
+      "Meça em unidades: escolha uma parte, como a altura de uma caneca, e compare tudo com ela."
+     ],
+     "q": "Você já viu artistas com o lápis esticado e se perguntou o que estavam fazendo?",
+     "c": "Meça quantas alturas de caneca tem a largura da mesa e desenhe as duas nessa proporção."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Proportions by comparison",
+     "g": "Check how many times one part fits into another to draw accurately.",
+     "p": [
+      "Proportion is the size relationship between parts, like a bottle's neck to its body.",
+      "Ask simple questions: is it taller than wide? Is this half or a third of that?",
+      "Mark key points lightly with small ticks before drawing full lines."
+     ],
+     "q": "What object would you like to check: a bottle, a lamp or a chair?",
+     "c": "Draw a bottle by first marking its total height, then where the neck and shoulder fall."
+    },
+    "de": {
+     "t": "Proportionen vergleichen",
+     "g": "Prüfen, wie oft ein Teil in einen anderen passt, um genau zu zeichnen.",
+     "p": [
+      "Proportion ist das Größenverhältnis der Teile, etwa Flaschenhals zu Flaschenkörper.",
+      "Stell einfache Fragen: Ist es höher als breit? Ist das die Hälfte oder ein Drittel davon?",
+      "Markier wichtige Punkte erst mit kleinen Strichen, bevor du ganze Linien ziehst."
+     ],
+     "q": "Was möchtest du prüfen: eine Flasche, eine Lampe oder einen Stuhl?",
+     "c": "Zeichne eine Flasche: erst Gesamthöhe markieren, dann wo Hals und Schulter liegen."
+    },
+    "es": {
+     "t": "Proporciones por comparación",
+     "g": "Comprobar cuántas veces cabe una parte en otra para dibujar con precisión.",
+     "p": [
+      "La proporción es la relación de tamaño entre partes, como el cuello de una botella y su cuerpo.",
+      "Hazte preguntas simples: ¿es más alto que ancho? ¿Esto es la mitad o un tercio de aquello?",
+      "Marca puntos clave con pequeñas rayitas antes de trazar líneas completas."
+     ],
+     "q": "¿Qué objeto te gustaría comprobar: una botella, una lámpara o una silla?",
+     "c": "Dibuja una botella marcando primero su altura total y luego dónde caen el cuello y el hombro."
+    },
+    "fr": {
+     "t": "Proportions par comparaison",
+     "g": "Vérifier combien de fois une partie entre dans une autre pour dessiner juste.",
+     "p": [
+      "La proportion est le rapport de taille entre les parties, comme le goulot et le corps d'une bouteille.",
+      "Pose des questions simples : plus haut que large ? Est-ce la moitié ou le tiers de ça ?",
+      "Marque les points clés par de petits repères avant de tracer les lignes."
+     ],
+     "q": "Quel objet aimerais-tu vérifier : une bouteille, une lampe ou une chaise ?",
+     "c": "Dessine une bouteille en marquant d'abord sa hauteur totale, puis où tombent le goulot et l'épaule."
+    },
+    "it": {
+     "t": "Proporzioni per confronto",
+     "g": "Verificare quante volte una parte sta in un'altra per disegnare con precisione.",
+     "p": [
+      "La proporzione è il rapporto di misura tra le parti, come il collo e il corpo di una bottiglia.",
+      "Fatti domande semplici: è più alto che largo? Questo è metà o un terzo di quello?",
+      "Segna i punti chiave con piccole tacche prima di tracciare le linee intere."
+     ],
+     "q": "Quale oggetto vorresti verificare: una bottiglia, una lampada o una sedia?",
+     "c": "Disegna una bottiglia segnando prima l'altezza totale, poi dove cadono collo e spalla."
+    },
+    "pt": {
+     "t": "Proporções por comparação",
+     "g": "Verificar quantas vezes uma parte cabe noutra para desenhar com rigor.",
+     "p": [
+      "A proporção é a relação de tamanho entre partes, como o gargalo e o corpo de uma garrafa.",
+      "Faz perguntas simples: é mais alto do que largo? Isto é metade ou um terço daquilo?",
+      "Marca os pontos-chave com pequenos traços antes de desenhar linhas completas."
+     ],
+     "q": "Que objeto gostavas de verificar: uma garrafa, um candeeiro ou uma cadeira?",
+     "c": "Desenha uma garrafa marcando primeiro a altura total e depois onde ficam o gargalo e o ombro."
+    },
+    "pt_BR": {
+     "t": "Proporções por comparação",
+     "g": "Conferir quantas vezes uma parte cabe em outra para desenhar com precisão.",
+     "p": [
+      "Proporção é a relação de tamanho entre as partes, como o gargalo e o corpo de uma garrafa.",
+      "Faça perguntas simples: é mais alto que largo? Isto é metade ou um terço daquilo?",
+      "Marque os pontos-chave com tracinhos antes de traçar linhas completas."
+     ],
+     "q": "Que objeto você gostaria de conferir: uma garrafa, um abajur ou uma cadeira?",
+     "c": "Desenhe uma garrafa marcando primeiro a altura total e depois onde ficam o gargalo e o ombro."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Angles and alignments",
+     "g": "Find vertical and horizontal relationships to place parts correctly.",
+     "p": [
+      "Hold your pencil perfectly vertical or horizontal and see which points line up with it.",
+      "Compare a slanted edge to the vertical pencil to judge its angle, like a clock hand.",
+      "Alignments catch errors early: if the cup handle lines up with the plate edge, draw it that way."
+     ],
+     "q": "Do you find it easier to judge angles or to judge sizes?",
+     "c": "Draw a chair or table, checking at least five vertical and horizontal alignments with your pencil."
+    },
+    "de": {
+     "t": "Winkel und Fluchten",
+     "g": "Senkrechte und waagerechte Beziehungen finden, um Teile richtig zu platzieren.",
+     "p": [
+      "Halt den Stift genau senkrecht oder waagerecht und schau, welche Punkte darauf liegen.",
+      "Vergleich eine schräge Kante mit dem senkrechten Stift, um ihren Winkel wie einen Uhrzeiger zu schätzen.",
+      "Fluchten zeigen Fehler früh: Liegt der Henkel auf Höhe des Tellerrands, zeichne es so."
+     ],
+     "q": "Fällt es dir leichter, Winkel oder Größen einzuschätzen?",
+     "c": "Zeichne einen Stuhl oder Tisch und prüf mindestens fünf senkrechte und waagerechte Fluchten."
+    },
+    "es": {
+     "t": "Ángulos y alineaciones",
+     "g": "Encontrar relaciones verticales y horizontales para colocar bien cada parte.",
+     "p": [
+      "Sujeta el lápiz totalmente vertical u horizontal y mira qué puntos quedan alineados.",
+      "Compara un borde inclinado con el lápiz vertical para calcular su ángulo, como la aguja de un reloj.",
+      "Las alineaciones detectan errores pronto: si el asa coincide con el borde del plato, dibújalo así."
+     ],
+     "q": "¿Te resulta más fácil calcular ángulos o tamaños?",
+     "c": "Dibuja una silla o mesa comprobando al menos cinco alineaciones verticales y horizontales."
+    },
+    "fr": {
+     "t": "Angles et alignements",
+     "g": "Trouver les relations verticales et horizontales pour bien placer chaque partie.",
+     "p": [
+      "Tiens ton crayon bien vertical ou horizontal et observe quels points s'alignent dessus.",
+      "Compare un bord incliné au crayon vertical pour juger son angle, comme une aiguille d'horloge.",
+      "Les alignements repèrent vite les erreurs : si l'anse s'aligne avec le bord de l'assiette, dessine-le."
+     ],
+     "q": "Trouves-tu plus facile de juger les angles ou les tailles ?",
+     "c": "Dessine une chaise ou une table en vérifiant au moins cinq alignements verticaux et horizontaux."
+    },
+    "it": {
+     "t": "Angoli e allineamenti",
+     "g": "Trovare rapporti verticali e orizzontali per posizionare bene ogni parte.",
+     "p": [
+      "Tieni la matita perfettamente verticale o orizzontale e guarda quali punti si allineano.",
+      "Confronta un bordo inclinato con la matita verticale per stimarne l'angolo, come una lancetta.",
+      "Gli allineamenti scovano presto gli errori: se il manico si allinea col bordo del piatto, disegnalo così."
+     ],
+     "q": "Ti viene più facile valutare angoli o misure?",
+     "c": "Disegna una sedia o un tavolo controllando almeno cinque allineamenti verticali e orizzontali."
+    },
+    "pt": {
+     "t": "Ângulos e alinhamentos",
+     "g": "Encontrar relações verticais e horizontais para colocar cada parte no sítio certo.",
+     "p": [
+      "Segura o lápis bem na vertical ou na horizontal e vê que pontos ficam alinhados.",
+      "Compara uma borda inclinada com o lápis vertical para avaliar o ângulo, como um ponteiro de relógio.",
+      "Os alinhamentos apanham erros cedo: se a asa alinha com a borda do prato, desenha assim."
+     ],
+     "q": "Achas mais fácil avaliar ângulos ou tamanhos?",
+     "c": "Desenha uma cadeira ou mesa verificando pelo menos cinco alinhamentos verticais e horizontais."
+    },
+    "pt_BR": {
+     "t": "Ângulos e alinhamentos",
+     "g": "Encontrar relações verticais e horizontais para colocar cada parte no lugar certo.",
+     "p": [
+      "Segure o lápis bem na vertical ou na horizontal e veja quais pontos ficam alinhados.",
+      "Compare uma borda inclinada com o lápis vertical para avaliar o ângulo, como um ponteiro de relógio.",
+      "Alinhamentos pegam erros cedo: se a alça alinha com a borda do prato, desenhe assim."
+     ],
+     "q": "Para você é mais fácil avaliar ângulos ou tamanhos?",
+     "c": "Desenhe uma cadeira ou mesa conferindo pelo menos cinco alinhamentos verticais e horizontais."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light first, dark later",
+     "g": "Start with light construction lines and press harder only once shapes are right.",
+     "p": [
+      "Light lines are easy to correct and disappear under shading later.",
+      "Build the drawing in stages: light layout, then medium lines, then dark accents last.",
+      "Pressing hard too early leaves grooves in the paper that are hard to erase or shade over."
+     ],
+     "q": "Do you tend to press hard from the start?",
+     "c": "Draw a bowl of fruit in three stages: very light layout, firmer contours, then a few darkest accents."
+    },
+    "de": {
+     "t": "Erst hell, dann dunkel",
+     "g": "Mit leichten Hilfslinien beginnen und erst fester drücken, wenn die Formen stimmen.",
+     "p": [
+      "Helle Linien sind leicht zu korrigieren und verschwinden später unter Schatten.",
+      "Bau die Zeichnung in Stufen: leichte Anlage, dann mittlere Linien, zuletzt dunkle Akzente.",
+      "Zu früher starker Druck hinterlässt Rillen, die schwer zu radieren oder zu überschattieren sind."
+     ],
+     "q": "Drückst du eher von Anfang an fest auf?",
+     "c": "Zeichne eine Obstschale in drei Stufen: ganz leichte Anlage, festere Konturen, dann wenige dunkelste Akzente."
+    },
+    "es": {
+     "t": "Primero claro, luego oscuro",
+     "g": "Empezar con líneas de construcción suaves y apretar solo cuando las formas estén bien.",
+     "p": [
+      "Las líneas suaves se corrigen fácil y desaparecen luego bajo el sombreado.",
+      "Construye por fases: encaje suave, luego líneas medias y al final acentos oscuros.",
+      "Apretar demasiado pronto deja surcos en el papel difíciles de borrar o sombrear."
+     ],
+     "q": "¿Sueles apretar fuerte desde el principio?",
+     "c": "Dibuja un frutero en tres fases: encaje muy suave, contornos más firmes y unos pocos acentos oscuros."
+    },
+    "fr": {
+     "t": "D'abord clair, puis foncé",
+     "g": "Commencer par des traits de construction légers et n'appuyer qu'une fois les formes justes.",
+     "p": [
+      "Les traits légers se corrigent facilement et disparaissent sous l'ombrage.",
+      "Construis par étapes : mise en place légère, traits moyens, puis accents foncés à la fin.",
+      "Appuyer trop tôt creuse le papier, difficile ensuite à gommer ou à ombrer."
+     ],
+     "q": "As-tu tendance à appuyer fort dès le début ?",
+     "c": "Dessine une coupe de fruits en trois étapes : mise en place très légère, contours plus fermes, quelques accents foncés."
+    },
+    "it": {
+     "t": "Prima chiaro, poi scuro",
+     "g": "Iniziare con linee di costruzione leggere e premere solo quando le forme sono giuste.",
+     "p": [
+      "Le linee leggere si correggono facilmente e spariscono poi sotto l'ombreggiatura.",
+      "Costruisci per fasi: impostazione leggera, linee medie e infine accenti scuri.",
+      "Premere troppo presto lascia solchi nella carta difficili da cancellare o ombreggiare."
+     ],
+     "q": "Tendi a premere forte fin dall'inizio?",
+     "c": "Disegna una fruttiera in tre fasi: impostazione leggerissima, contorni più decisi e pochi accenti scuri."
+    },
+    "pt": {
+     "t": "Primeiro claro, depois escuro",
+     "g": "Começar com linhas de construção leves e só carregar quando as formas estiverem certas.",
+     "p": [
+      "As linhas leves corrigem-se facilmente e desaparecem depois sob o sombreado.",
+      "Constrói por fases: esboço leve, linhas médias e por fim acentos escuros.",
+      "Carregar cedo demais deixa sulcos no papel difíceis de apagar ou sombrear."
+     ],
+     "q": "Costumas carregar com força logo desde o início?",
+     "c": "Desenha uma fruteira em três fases: esboço muito leve, contornos mais firmes e poucos acentos escuros."
+    },
+    "pt_BR": {
+     "t": "Primeiro claro, depois escuro",
+     "g": "Começar com linhas de construção leves e só apertar quando as formas estiverem certas.",
+     "p": [
+      "Linhas leves são fáceis de corrigir e somem depois embaixo do sombreado.",
+      "Construa em etapas: esboço leve, linhas médias e por último os acentos escuros.",
+      "Apertar cedo demais deixa sulcos no papel difíceis de apagar ou sombrear."
+     ],
+     "q": "Você costuma apertar forte desde o começo?",
+     "c": "Desenhe uma fruteira em três etapas: esboço bem leve, contornos mais firmes e poucos acentos escuros."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixing a drawing calmly",
+     "g": "Check your drawing with fresh eyes, in a mirror or from a distance to spot errors.",
+     "p": [
+      "Step back two metres or prop the drawing up: errors jump out from a distance.",
+      "A mirror or your phone's camera flipped horizontally shows tilts and lopsided shapes instantly.",
+      "Fix the biggest problem first, like proportions, before polishing details."
+     ],
+     "q": "How do you usually react when you notice a mistake in your drawing?",
+     "c": "Look at a recent drawing in a mirror, list two things to fix and correct the biggest one."
+    },
+    "de": {
+     "t": "Gelassen korrigieren",
+     "g": "Die Zeichnung mit frischem Blick, im Spiegel oder aus Abstand prüfen, um Fehler zu finden.",
+     "p": [
+      "Geh zwei Meter zurück oder stell die Zeichnung auf: Aus Abstand springen Fehler ins Auge.",
+      "Ein Spiegel oder ein gespiegeltes Handyfoto zeigt Schieflagen sofort.",
+      "Behebe zuerst das größte Problem, etwa Proportionen, bevor du Details polierst."
+     ],
+     "q": "Wie reagierst du meist, wenn du einen Fehler in deiner Zeichnung bemerkst?",
+     "c": "Schau eine neue Zeichnung im Spiegel an, notier zwei Fehler und korrigier den größten."
+    },
+    "es": {
+     "t": "Corregir con calma",
+     "g": "Revisar el dibujo con ojos frescos, en un espejo o a distancia para detectar errores.",
+     "p": [
+      "Aléjate dos metros o apoya el dibujo de pie: a distancia los errores saltan a la vista.",
+      "Un espejo o una foto volteada en el móvil muestra al instante inclinaciones y formas torcidas.",
+      "Corrige primero el problema mayor, como las proporciones, antes de pulir detalles."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando ves un error en tu dibujo?",
+     "c": "Mira un dibujo reciente en un espejo, apunta dos cosas a corregir y arregla la más grande."
+    },
+    "fr": {
+     "t": "Corriger sereinement",
+     "g": "Vérifier son dessin avec un œil neuf, dans un miroir ou de loin pour repérer les erreurs.",
+     "p": [
+      "Recule de deux mètres ou pose le dessin debout : de loin, les erreurs sautent aux yeux.",
+      "Un miroir ou une photo inversée sur ton téléphone montre tout de suite ce qui penche.",
+      "Corrige d'abord le plus gros problème, comme les proportions, avant les détails."
+     ],
+     "q": "Comment réagis-tu d'habitude quand tu vois une erreur dans ton dessin ?",
+     "c": "Regarde un dessin récent dans un miroir, note deux choses à corriger et rectifie la plus importante."
+    },
+    "it": {
+     "t": "Correggere con calma",
+     "g": "Controllare il disegno con occhi freschi, allo specchio o da lontano per scovare gli errori.",
+     "p": [
+      "Allontanati di due metri o appoggia il disegno in verticale: da lontano gli errori saltano all'occhio.",
+      "Uno specchio o una foto ribaltata sul telefono mostra subito pendenze e forme storte.",
+      "Correggi prima il problema più grande, come le proporzioni, poi i dettagli."
+     ],
+     "q": "Come reagisci di solito quando noti un errore nel tuo disegno?",
+     "c": "Guarda un disegno recente allo specchio, annota due cose da correggere e sistema la più grande."
+    },
+    "pt": {
+     "t": "Corrigir com calma",
+     "g": "Rever o desenho com olhos frescos, ao espelho ou à distância para encontrar erros.",
+     "p": [
+      "Afasta-te dois metros ou põe o desenho de pé: à distância, os erros saltam à vista.",
+      "Um espelho ou uma foto invertida no telemóvel mostra logo inclinações e formas tortas.",
+      "Corrige primeiro o problema maior, como as proporções, antes de afinar detalhes."
+     ],
+     "q": "Como costumas reagir quando reparas num erro no teu desenho?",
+     "c": "Olha para um desenho recente ao espelho, anota duas coisas a corrigir e corrige a maior."
+    },
+    "pt_BR": {
+     "t": "Corrigindo com calma",
+     "g": "Revisar o desenho com olhos descansados, no espelho ou de longe para achar erros.",
+     "p": [
+      "Afaste-se dois metros ou deixe o desenho em pé: de longe, os erros saltam aos olhos.",
+      "Um espelho ou uma foto espelhada no celular mostra na hora inclinações e formas tortas.",
+      "Corrija primeiro o maior problema, como as proporções, antes de caprichar nos detalhes."
+     ],
+     "q": "Como você costuma reagir quando nota um erro no seu desenho?",
+     "c": "Olhe um desenho recente no espelho, anote duas coisas para corrigir e conserte a maior."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is value in drawing",
+     "g": "See how light and dark make flat lines look three-dimensional.",
+     "p": [
+      "Value means how light or dark a tone is, from white paper to the blackest black.",
+      "An outline only shows shape; value shows form, light and depth.",
+      "Squinting helps you see values as simple light, middle and dark shapes."
+     ],
+     "q": "Can you think of a black-and-white photo that looks very 3D to you?",
+     "c": "Squint at an object near a window and draw it using only three values: light, middle and dark."
+    },
+    "de": {
+     "t": "Was ist Tonwert",
+     "g": "Verstehen, wie Hell und Dunkel flache Linien dreidimensional wirken lassen.",
+     "p": [
+      "Tonwert heißt, wie hell oder dunkel ein Ton ist, vom weißen Papier bis zum tiefsten Schwarz.",
+      "Ein Umriss zeigt nur die Form, Tonwerte zeigen Körper, Licht und Tiefe.",
+      "Mit zusammengekniffenen Augen siehst du Tonwerte als einfache helle, mittlere und dunkle Flächen."
+     ],
+     "q": "Fällt dir ein Schwarzweißfoto ein, das für dich sehr räumlich wirkt?",
+     "c": "Kneif die Augen vor einem Objekt am Fenster zusammen und zeichne es mit nur drei Tonwerten."
+    },
+    "es": {
+     "t": "Qué es el valor tonal",
+     "g": "Ver cómo la luz y la oscuridad hacen que unas líneas planas parezcan tridimensionales.",
+     "p": [
+      "El valor es lo claro u oscuro de un tono, del blanco del papel al negro más intenso.",
+      "Un contorno solo muestra la forma; el valor muestra volumen, luz y profundidad.",
+      "Entrecerrar los ojos ayuda a ver los valores como zonas simples: claras, medias y oscuras."
+     ],
+     "q": "¿Recuerdas una foto en blanco y negro que te parezca muy tridimensional?",
+     "c": "Entrecierra los ojos ante un objeto junto a la ventana y dibújalo con solo tres valores."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la valeur",
+     "g": "Voir comment le clair et le foncé donnent du relief à des lignes plates.",
+     "p": [
+      "La valeur, c'est le degré de clarté d'un ton, du blanc du papier au noir le plus profond.",
+      "Un contour montre seulement la forme ; la valeur montre le volume, la lumière et la profondeur.",
+      "Plisser les yeux aide à voir les valeurs comme des zones simples : claires, moyennes et foncées."
+     ],
+     "q": "Te souviens-tu d'une photo noir et blanc qui te semble très en relief ?",
+     "c": "Plisse les yeux devant un objet près d'une fenêtre et dessine-le avec seulement trois valeurs."
+    },
+    "it": {
+     "t": "Cos'è il valore tonale",
+     "g": "Capire come chiaro e scuro rendono tridimensionali delle linee piatte.",
+     "p": [
+      "Il valore indica quanto un tono è chiaro o scuro, dal bianco della carta al nero più profondo.",
+      "Un contorno mostra solo la forma; il valore mostra volume, luce e profondità.",
+      "Socchiudere gli occhi aiuta a vedere i valori come zone semplici: chiare, medie e scure."
+     ],
+     "q": "Ti viene in mente una foto in bianco e nero che ti sembra molto tridimensionale?",
+     "c": "Socchiudi gli occhi davanti a un oggetto vicino alla finestra e disegnalo con soli tre valori."
+    },
+    "pt": {
+     "t": "O que é o valor tonal",
+     "g": "Ver como o claro e o escuro fazem linhas planas parecer tridimensionais.",
+     "p": [
+      "O valor é o quão claro ou escuro é um tom, do branco do papel ao preto mais profundo.",
+      "Um contorno só mostra a forma; o valor mostra volume, luz e profundidade.",
+      "Semicerrar os olhos ajuda a ver os valores como zonas simples: claras, médias e escuras."
+     ],
+     "q": "Lembras-te de uma foto a preto e branco que te pareça muito tridimensional?",
+     "c": "Semicerra os olhos diante de um objeto junto à janela e desenha-o com só três valores."
+    },
+    "pt_BR": {
+     "t": "O que é valor tonal",
+     "g": "Ver como o claro e o escuro fazem linhas planas parecerem tridimensionais.",
+     "p": [
+      "Valor é o quanto um tom é claro ou escuro, do branco do papel ao preto mais profundo.",
+      "Um contorno só mostra a forma; o valor mostra volume, luz e profundidade.",
+      "Apertar os olhos ajuda a ver os valores como áreas simples: claras, médias e escuras."
+     ],
+     "q": "Você lembra de uma foto em preto e branco que parece muito tridimensional?",
+     "c": "Aperte os olhos diante de um objeto perto da janela e desenhe-o com só três valores."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a value scale",
+     "g": "Draw even steps from white paper to the darkest dark your pencil can make.",
+     "p": [
+      "Draw a strip of five to nine boxes; leave the first white and make the last as dark as possible.",
+      "Fill the middle box first as a medium grey, then work out the steps on each side.",
+      "Your scale becomes a ruler for checking values in every future drawing."
+     ],
+     "q": "How dark can your darkest pencil really go?",
+     "c": "Make a five-step value scale, then a second one using a different pencil or hatching."
+    },
+    "de": {
+     "t": "Eine Tonwertskala",
+     "g": "Gleichmäßige Stufen vom weißen Papier bis zum dunkelsten Ton deines Stifts zeichnen.",
+     "p": [
+      "Zeichne einen Streifen mit fünf bis neun Feldern, das erste weiß, das letzte so dunkel wie möglich.",
+      "Füll zuerst das mittlere Feld mittelgrau und arbeite dann die Stufen zu beiden Seiten aus.",
+      "Deine Skala wird zum Lineal, um Tonwerte in jeder künftigen Zeichnung zu prüfen."
+     ],
+     "q": "Wie dunkel kann dein dunkelster Stift wirklich werden?",
+     "c": "Mach eine fünfstufige Tonwertskala und eine zweite mit einem anderen Stift oder mit Schraffur."
+    },
+    "es": {
+     "t": "Hacer una escala de valores",
+     "g": "Dibujar pasos regulares del blanco del papel al oscuro más intenso de tu lápiz.",
+     "p": [
+      "Traza una tira de cinco a nueve casillas; deja la primera en blanco y haz la última lo más oscura posible.",
+      "Rellena primero la casilla central de gris medio y luego los pasos a cada lado.",
+      "Tu escala será una regla para comprobar los valores en todos tus dibujos."
+     ],
+     "q": "¿Hasta qué punto puede oscurecer de verdad tu lápiz más blando?",
+     "c": "Haz una escala de cinco valores y otra con un lápiz distinto o con trama de líneas."
+    },
+    "fr": {
+     "t": "Faire une échelle de valeurs",
+     "g": "Dessiner des paliers réguliers du blanc du papier au plus foncé possible de ton crayon.",
+     "p": [
+      "Trace une bande de cinq à neuf cases ; laisse la première blanche et rends la dernière la plus foncée possible.",
+      "Remplis d'abord la case du milieu en gris moyen, puis les paliers de chaque côté.",
+      "Ton échelle devient une règle pour vérifier les valeurs dans tous tes futurs dessins."
+     ],
+     "q": "Jusqu'à quel point ton crayon le plus tendre peut-il foncer ?",
+     "c": "Fais une échelle de cinq valeurs, puis une deuxième avec un autre crayon ou en hachures."
+    },
+    "it": {
+     "t": "Creare una scala di valori",
+     "g": "Disegnare passaggi regolari dal bianco della carta allo scuro più intenso della tua matita.",
+     "p": [
+      "Traccia una striscia di cinque-nove caselle; lascia la prima bianca e fai l'ultima più scura possibile.",
+      "Riempi prima la casella centrale di grigio medio, poi i passaggi ai lati.",
+      "La tua scala diventa un righello per controllare i valori in ogni disegno futuro."
+     ],
+     "q": "Quanto scura può diventare davvero la tua matita più morbida?",
+     "c": "Fai una scala di cinque valori e una seconda con un'altra matita o a tratteggio."
+    },
+    "pt": {
+     "t": "Fazer uma escala de valores",
+     "g": "Desenhar passos regulares do branco do papel ao escuro mais intenso do teu lápis.",
+     "p": [
+      "Traça uma tira de cinco a nove quadrados; deixa o primeiro branco e o último o mais escuro possível.",
+      "Preenche primeiro o quadrado do meio com cinzento médio e depois os passos de cada lado.",
+      "A tua escala passa a ser uma régua para verificar valores em todos os desenhos."
+     ],
+     "q": "Até que ponto consegue escurecer o teu lápis mais macio?",
+     "c": "Faz uma escala de cinco valores e outra com um lápis diferente ou com tracejado."
+    },
+    "pt_BR": {
+     "t": "Fazendo uma escala de valores",
+     "g": "Desenhar passos regulares do branco do papel ao escuro mais intenso do seu lápis.",
+     "p": [
+      "Trace uma faixa de cinco a nove quadrados; deixe o primeiro branco e o último o mais escuro possível.",
+      "Preencha primeiro o quadrado do meio com cinza médio e depois os passos de cada lado.",
+      "Sua escala vira uma régua para conferir valores em todos os desenhos futuros."
+     ],
+     "q": "Até onde o seu lápis mais macio consegue escurecer?",
+     "c": "Faça uma escala de cinco valores e outra com um lápis diferente ou com hachura."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hatching",
+     "g": "Build tone with parallel lines placed close together or far apart.",
+     "p": [
+      "Closer lines read darker; lines spaced apart read lighter.",
+      "Keep strokes in one direction and the same length for a clean, even area.",
+      "Flick each stroke so it tapers at the end, which helps tones blend smoothly."
+     ],
+     "q": "Have you seen hatching in old engravings, comics or banknotes?",
+     "c": "Hatch a value scale of five boxes, then shade a simple box shape using only hatching."
+    },
+    "de": {
+     "t": "Schraffur",
+     "g": "Tonwerte mit parallelen Linien aufbauen, eng oder weit auseinander gesetzt.",
+     "p": [
+      "Enge Linien wirken dunkler, weit gesetzte heller.",
+      "Halt die Striche in eine Richtung und gleich lang für eine saubere, gleichmäßige Fläche.",
+      "Lass jeden Strich am Ende auslaufen, so gehen die Töne weicher ineinander über."
+     ],
+     "q": "Hast du Schraffuren in alten Stichen, Comics oder auf Geldscheinen gesehen?",
+     "c": "Schraffiere eine Tonwertskala mit fünf Feldern und schattiere dann eine einfache Box nur mit Schraffur."
+    },
+    "es": {
+     "t": "Trama de líneas",
+     "g": "Crear tono con líneas paralelas más juntas o más separadas.",
+     "p": [
+      "Las líneas juntas se ven más oscuras; las separadas, más claras.",
+      "Mantén los trazos en una dirección y del mismo largo para una zona limpia y uniforme.",
+      "Suelta cada trazo para que termine afinado; así los tonos se funden mejor."
+     ],
+     "q": "¿Has visto tramas de líneas en grabados antiguos, cómics o billetes?",
+     "c": "Haz una escala de cinco valores con trama y sombrea una caja sencilla usando solo líneas."
+    },
+    "fr": {
+     "t": "Les hachures",
+     "g": "Construire le ton avec des lignes parallèles plus ou moins serrées.",
+     "p": [
+      "Des lignes serrées paraissent plus foncées ; espacées, plus claires.",
+      "Garde les traits dans une seule direction et de même longueur pour une zone nette et régulière.",
+      "Lance chaque trait pour qu'il s'affine au bout : les tons se fondent mieux."
+     ],
+     "q": "As-tu vu des hachures dans de vieilles gravures, des BD ou sur des billets ?",
+     "c": "Hachure une échelle de cinq valeurs, puis ombre une boîte simple uniquement en hachures."
+    },
+    "it": {
+     "t": "Il tratteggio",
+     "g": "Costruire il tono con linee parallele più vicine o più distanti.",
+     "p": [
+      "Linee vicine sembrano più scure; linee distanti più chiare.",
+      "Tieni i tratti in una sola direzione e della stessa lunghezza per una zona pulita e uniforme.",
+      "Fai sfumare ogni tratto alla fine: così i toni si fondono meglio."
+     ],
+     "q": "Hai visto il tratteggio in vecchie incisioni, fumetti o banconote?",
+     "c": "Fai una scala di cinque valori a tratteggio, poi ombreggia una scatola semplice solo con linee."
+    },
+    "pt": {
+     "t": "Tracejado",
+     "g": "Criar tom com linhas paralelas mais juntas ou mais afastadas.",
+     "p": [
+      "Linhas juntas parecem mais escuras; afastadas, mais claras.",
+      "Mantém os traços numa só direção e com o mesmo comprimento para uma zona limpa e uniforme.",
+      "Solta cada traço para que afine no fim; assim os tons fundem-se melhor."
+     ],
+     "q": "Já viste tracejado em gravuras antigas, BD ou notas de banco?",
+     "c": "Faz uma escala de cinco valores em tracejado e sombreia uma caixa simples só com linhas."
+    },
+    "pt_BR": {
+     "t": "Hachura",
+     "g": "Criar tom com linhas paralelas mais juntas ou mais afastadas.",
+     "p": [
+      "Linhas juntas parecem mais escuras; afastadas, mais claras.",
+      "Mantenha os traços numa só direção e do mesmo tamanho para uma área limpa e uniforme.",
+      "Solte cada traço para ele afinar no final; assim os tons se misturam melhor."
+     ],
+     "q": "Você já viu hachura em gravuras antigas, quadrinhos ou cédulas?",
+     "c": "Faça uma escala de cinco valores em hachura e sombreie uma caixa simples só com linhas."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cross-hatching",
+     "g": "Layer hatching in different directions for richer, darker tones.",
+     "p": [
+      "Start with one layer of hatching, then add a second at an angle where it needs to be darker.",
+      "Each new direction darkens the area; three or four layers give deep shadows.",
+      "Avoid exact 90-degree crossings at first: slight angles look softer and less like a grid."
+     ],
+     "q": "Do you like the look of line-based shading or smooth shading more?",
+     "c": "Shade a sphere with cross-hatching, adding one layer for halftone and more for the shadow side."
+    },
+    "de": {
+     "t": "Kreuzschraffur",
+     "g": "Schraffuren in verschiedene Richtungen schichten für sattere, dunklere Töne.",
+     "p": [
+      "Beginn mit einer Schraffurlage und füg eine zweite im Winkel hinzu, wo es dunkler werden soll.",
+      "Jede neue Richtung macht dunkler, drei oder vier Lagen ergeben tiefe Schatten.",
+      "Vermeide anfangs genaue 90-Grad-Kreuzungen: leichte Winkel wirken weicher, weniger wie ein Gitter."
+     ],
+     "q": "Magst du schraffierte oder glatte Schattierung lieber?",
+     "c": "Schattiere eine Kugel mit Kreuzschraffur: eine Lage für Halbtöne, mehr für die Schattenseite."
+    },
+    "es": {
+     "t": "Trama cruzada",
+     "g": "Superponer tramas en distintas direcciones para tonos más ricos y oscuros.",
+     "p": [
+      "Empieza con una capa de líneas y añade otra en ángulo donde haga falta más oscuridad.",
+      "Cada dirección nueva oscurece la zona; tres o cuatro capas dan sombras profundas.",
+      "Evita al principio cruces exactos de 90 grados: los ángulos leves quedan más suaves."
+     ],
+     "q": "¿Te gusta más el sombreado con líneas o el sombreado suave?",
+     "c": "Sombrea una esfera con trama cruzada: una capa para los medios tonos y más para el lado en sombra."
+    },
+    "fr": {
+     "t": "Les hachures croisées",
+     "g": "Superposer des hachures dans plusieurs directions pour des tons plus riches et plus foncés.",
+     "p": [
+      "Commence par une couche de hachures, puis ajoute-en une en biais là où il faut foncer.",
+      "Chaque nouvelle direction fonce la zone ; trois ou quatre couches donnent des ombres profondes.",
+      "Évite au début les croisements à 90 degrés exacts : un léger angle paraît plus doux."
+     ],
+     "q": "Préfères-tu l'ombrage au trait ou l'ombrage lisse ?",
+     "c": "Ombre une sphère en hachures croisées : une couche pour les demi-teintes, plus pour le côté ombre."
+    },
+    "it": {
+     "t": "Tratteggio incrociato",
+     "g": "Sovrapporre tratteggi in direzioni diverse per toni più ricchi e scuri.",
+     "p": [
+      "Parti con uno strato di tratteggio, poi aggiungine un altro inclinato dove serve più scuro.",
+      "Ogni nuova direzione scurisce la zona; tre o quattro strati danno ombre profonde.",
+      "All'inizio evita incroci esatti a 90 gradi: angoli leggeri sembrano più morbidi."
+     ],
+     "q": "Preferisci l'ombreggiatura a linee o quella sfumata?",
+     "c": "Ombreggia una sfera col tratteggio incrociato: uno strato per i mezzitoni, di più per il lato in ombra."
+    },
+    "pt": {
+     "t": "Tracejado cruzado",
+     "g": "Sobrepor tracejados em direções diferentes para tons mais ricos e escuros.",
+     "p": [
+      "Começa com uma camada de tracejado e junta outra em ângulo onde precisa de escurecer.",
+      "Cada nova direção escurece a zona; três ou quatro camadas dão sombras profundas.",
+      "Evita ao início cruzamentos exatos de 90 graus: ângulos ligeiros parecem mais suaves."
+     ],
+     "q": "Preferes o sombreado com linhas ou o sombreado liso?",
+     "c": "Sombreia uma esfera com tracejado cruzado: uma camada para meios-tons e mais para o lado da sombra."
+    },
+    "pt_BR": {
+     "t": "Hachura cruzada",
+     "g": "Sobrepor hachuras em direções diferentes para tons mais ricos e escuros.",
+     "p": [
+      "Comece com uma camada de hachura e acrescente outra em ângulo onde precisa escurecer.",
+      "Cada nova direção escurece a área; três ou quatro camadas dão sombras profundas.",
+      "No começo evite cruzamentos exatos de 90 graus: ângulos leves parecem mais suaves."
+     ],
+     "q": "Você prefere sombreado com linhas ou sombreado liso?",
+     "c": "Sombreie uma esfera com hachura cruzada: uma camada para meios-tons e mais para o lado da sombra."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stippling",
+     "g": "Build tone from dots: slow, controlled and beautiful.",
+     "p": [
+      "Dense dots make dark areas; scattered dots make light ones.",
+      "Use a fine pen or sharp pencil and lift it straight up so dots stay round, not comma-shaped.",
+      "Start with a small subject: stippling a big area takes a lot of time."
+     ],
+     "q": "Does a slow, almost meditative technique sound relaxing or frustrating to you?",
+     "c": "Stipple a small sphere about 4 cm wide, with dense dots on the shadow side and few in the light."
+    },
+    "de": {
+     "t": "Punktieren",
+     "g": "Tonwerte aus Punkten aufbauen: langsam, kontrolliert und schön.",
+     "p": [
+      "Dichte Punkte ergeben dunkle Flächen, verstreute Punkte helle.",
+      "Nimm einen feinen Stift oder spitzen Bleistift und heb ihn gerade ab, damit Punkte rund bleiben.",
+      "Beginn mit einem kleinen Motiv: Eine große Fläche zu punktieren dauert lange."
+     ],
+     "q": "Klingt eine langsame, fast meditative Technik für dich entspannend oder frustrierend?",
+     "c": "Punktiere eine kleine Kugel von etwa 4 cm, dicht auf der Schattenseite, locker im Licht."
+    },
+    "es": {
+     "t": "Puntillismo",
+     "g": "Crear tono con puntos: lento, controlado y precioso.",
+     "p": [
+      "Los puntos densos crean zonas oscuras; los dispersos, zonas claras.",
+      "Usa un rotulador fino o lápiz afilado y levántalo recto para que los puntos queden redondos.",
+      "Empieza con un motivo pequeño: puntear una zona grande lleva mucho tiempo."
+     ],
+     "q": "¿Una técnica lenta, casi meditativa, te parece relajante o frustrante?",
+     "c": "Puntea una esfera de unos 4 cm, con puntos densos en el lado de sombra y pocos en la luz."
+    },
+    "fr": {
+     "t": "Le pointillé",
+     "g": "Construire le ton avec des points : lent, maîtrisé et magnifique.",
+     "p": [
+      "Des points serrés font les zones sombres ; des points épars, les zones claires.",
+      "Utilise un feutre fin ou un crayon pointu et relève-le bien droit pour des points ronds.",
+      "Commence petit : pointiller une grande surface prend beaucoup de temps."
+     ],
+     "q": "Une technique lente, presque méditative, te semble-t-elle relaxante ou frustrante ?",
+     "c": "Pointille une petite sphère d'environ 4 cm, points serrés côté ombre, épars dans la lumière."
+    },
+    "it": {
+     "t": "Il puntinismo",
+     "g": "Costruire il tono con i puntini: lento, controllato e bellissimo.",
+     "p": [
+      "Puntini fitti creano zone scure; puntini radi zone chiare.",
+      "Usa una penna fine o una matita appuntita e sollevala dritta perché i punti restino tondi.",
+      "Inizia con un soggetto piccolo: puntinare una zona grande richiede molto tempo."
+     ],
+     "q": "Una tecnica lenta, quasi meditativa, ti sembra rilassante o frustrante?",
+     "c": "Puntina una piccola sfera di circa 4 cm, fitta sul lato in ombra e rada nella luce."
+    },
+    "pt": {
+     "t": "Pontilhismo",
+     "g": "Criar tom com pontos: lento, controlado e bonito.",
+     "p": [
+      "Pontos densos fazem zonas escuras; pontos espalhados, zonas claras.",
+      "Usa uma caneta fina ou um lápis afiado e levanta-o a direito para os pontos ficarem redondos.",
+      "Começa com um tema pequeno: pontilhar uma área grande demora muito."
+     ],
+     "q": "Uma técnica lenta, quase meditativa, parece-te relaxante ou frustrante?",
+     "c": "Pontilha uma esfera com cerca de 4 cm, com pontos densos no lado da sombra e poucos na luz."
+    },
+    "pt_BR": {
+     "t": "Pontilhismo",
+     "g": "Criar tom com pontinhos: lento, controlado e lindo.",
+     "p": [
+      "Pontos densos fazem áreas escuras; pontos espalhados, áreas claras.",
+      "Use uma caneta fina ou lápis apontado e levante reto para os pontos ficarem redondos.",
+      "Comece com um tema pequeno: pontilhar uma área grande leva muito tempo."
+     ],
+     "q": "Uma técnica lenta, quase meditativa, parece relaxante ou frustrante para você?",
+     "c": "Pontilhe uma esfera de uns 4 cm, com pontos densos no lado da sombra e poucos na luz."
+    }
+   }
+  }
+ ]
+}

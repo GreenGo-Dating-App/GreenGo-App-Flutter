@@ -1,0 +1,835 @@
+{
+ "topic": "music_theory",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Four-four time",
+     "g": "Get to know 4/4, the most common time signature in pop and rock.",
+     "p": [
+      "4/4 has four quarter-note beats per bar, counted 1 2 3 4.",
+      "It is so common that it is also called common time and can be written as a large C.",
+      "In a typical rock beat, the kick drum lands on 1 and 3 and the snare on 2 and 4."
+     ],
+     "q": "Can you name a song you love that is in 4/4?",
+     "c": "Play a pop song, tap your knee on 1 and 3 and clap on 2 and 4 like a drummer."
+    },
+    "de": {
+     "t": "Der Vierviertel-Takt",
+     "g": "Den 4/4-Takt kennenlernen, die häufigste Taktart in Pop und Rock.",
+     "p": [
+      "Der 4/4-Takt hat vier Viertelschläge pro Takt, gezählt 1 2 3 4.",
+      "Er ist so verbreitet, dass man ihn auch mit einem großen C schreiben kann.",
+      "Im typischen Rockbeat kommt die Bassdrum auf 1 und 3, die Snare auf 2 und 4."
+     ],
+     "q": "Welches Lied, das du liebst, steht im 4/4-Takt?",
+     "c": "Spiel einen Popsong, klopf auf 1 und 3 aufs Knie und klatsch auf 2 und 4 wie ein Schlagzeuger."
+    },
+    "es": {
+     "t": "El compás de cuatro por cuatro",
+     "g": "Conocer el 4/4, el compás más común en el pop y el rock.",
+     "p": [
+      "El 4/4 tiene cuatro pulsos de negra por compás, contados 1 2 3 4.",
+      "Es tan habitual que también se escribe con una C grande.",
+      "En un ritmo típico de rock, el bombo cae en 1 y 3 y la caja en 2 y 4."
+     ],
+     "q": "¿Puedes nombrar una canción que te encante en 4/4?",
+     "c": "Pon una canción pop, golpea la rodilla en 1 y 3 y aplaude en 2 y 4 como un batería."
+    },
+    "fr": {
+     "t": "La mesure à quatre temps",
+     "g": "Découvrir le 4/4, la mesure la plus courante en pop et en rock.",
+     "p": [
+      "Le 4/4 compte quatre temps de noire par mesure : 1 2 3 4.",
+      "Il est si courant qu'on peut aussi l'écrire avec un grand C.",
+      "Dans un rythme rock typique, la grosse caisse tombe sur 1 et 3, la caisse claire sur 2 et 4."
+     ],
+     "q": "Peux-tu citer une chanson que tu adores en 4/4 ?",
+     "c": "Mets une chanson pop, tape ton genou sur 1 et 3 et frappe des mains sur 2 et 4 comme un batteur."
+    },
+    "it": {
+     "t": "Il tempo in quattro quarti",
+     "g": "Conoscere il 4/4, il tempo più comune nel pop e nel rock.",
+     "p": [
+      "Il 4/4 ha quattro movimenti di semiminima per battuta, contati 1 2 3 4.",
+      "È così diffuso che si chiama anche tempo ordinario e si può scrivere con una grande C.",
+      "In un tipico ritmo rock la cassa cade su 1 e 3 e il rullante su 2 e 4."
+     ],
+     "q": "Sai nominare una canzone che ami in 4/4?",
+     "c": "Metti una canzone pop, batti sul ginocchio su 1 e 3 e le mani su 2 e 4 come un batterista."
+    },
+    "pt": {
+     "t": "O compasso quaternário",
+     "g": "Conhecer o 4/4, o compasso mais comum no pop e no rock.",
+     "p": [
+      "O 4/4 tem quatro tempos de semínima por compasso, contados 1 2 3 4.",
+      "É tão comum que também se pode escrever com um C grande.",
+      "Num ritmo típico de rock, o bombo cai no 1 e no 3 e a tarola no 2 e no 4."
+     ],
+     "q": "Consegues dizer uma música de que gostas muito em 4/4?",
+     "c": "Põe uma música pop, bate no joelho no 1 e no 3 e bate palmas no 2 e no 4 como um baterista."
+    },
+    "pt_BR": {
+     "t": "O compasso quaternário",
+     "g": "Conhecer o 4/4, o compasso mais comum no pop e no rock.",
+     "p": [
+      "O 4/4 tem quatro tempos de semínima por compasso, contados 1 2 3 4.",
+      "É tão comum que também pode ser escrito com um C grande.",
+      "Numa batida típica de rock, o bumbo cai no 1 e no 3 e a caixa no 2 e no 4."
+     ],
+     "q": "Você consegue citar uma música que ama em 4/4?",
+     "c": "Coloque uma música pop, bata no joelho no 1 e no 3 e bata palma no 2 e no 4 como um baterista."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three-four time",
+     "g": "Feel the waltz with three beats per bar.",
+     "p": [
+      "3/4 has three quarter-note beats per bar, counted 1 2 3.",
+      "The first beat is the strongest, giving a swaying feel: ONE two three.",
+      "Waltzes, many folk songs and some ballads use 3/4."
+     ],
+     "q": "Does music in three make you want to sway or dance?",
+     "c": "Sway side to side on each ONE while counting 1 2 3, then hum Happy birthday, which is in 3/4."
+    },
+    "de": {
+     "t": "Der Dreiviertel-Takt",
+     "g": "Den Walzer mit drei Schlägen pro Takt spüren.",
+     "p": [
+      "Der 3/4-Takt hat drei Viertelschläge pro Takt, gezählt 1 2 3.",
+      "Der erste Schlag ist der stärkste, das ergibt ein Wiegen: EINS zwei drei.",
+      "Walzer, viele Volkslieder und manche Balladen stehen im 3/4-Takt."
+     ],
+     "q": "Bringt dich Musik im Dreiertakt zum Wiegen oder Tanzen?",
+     "c": "Wieg dich auf jede EINS zur Seite und zähl 1 2 3, dann summ Zum Geburtstag viel Glück, das im 3/4-Takt steht."
+    },
+    "es": {
+     "t": "El compás de tres por cuatro",
+     "g": "Sentir el vals con tres pulsos por compás.",
+     "p": [
+      "El 3/4 tiene tres pulsos de negra por compás, contados 1 2 3.",
+      "El primer pulso es el más fuerte y da un balanceo: UNO dos tres.",
+      "Los valses, muchas canciones populares y algunas baladas van en 3/4."
+     ],
+     "q": "¿La música en tres te da ganas de balancearte o bailar?",
+     "c": "Balancéate en cada UNO contando 1 2 3 y luego tararea Cumpleaños feliz, que va en 3/4."
+    },
+    "fr": {
+     "t": "La mesure à trois temps",
+     "g": "Sentir la valse avec trois temps par mesure.",
+     "p": [
+      "Le 3/4 compte trois temps de noire par mesure : 1 2 3.",
+      "Le premier temps est le plus fort et donne un balancement : UN deux trois.",
+      "Les valses, beaucoup de chansons populaires et certaines ballades sont en 3/4."
+     ],
+     "q": "La musique à trois temps te donne envie de te balancer ou de danser ?",
+     "c": "Balance-toi sur chaque UN en comptant 1 2 3, puis fredonne Joyeux anniversaire, qui est en 3/4."
+    },
+    "it": {
+     "t": "Il tempo in tre quarti",
+     "g": "Sentire il valzer con tre movimenti per battuta.",
+     "p": [
+      "Il 3/4 ha tre movimenti di semiminima per battuta, contati 1 2 3.",
+      "Il primo movimento è il più forte e crea un dondolio: UNO due tre.",
+      "Valzer, molte canzoni popolari e alcune ballate sono in 3/4."
+     ],
+     "q": "La musica in tre ti fa venire voglia di dondolare o ballare?",
+     "c": "Dondola su ogni UNO contando 1 2 3, poi canticchia Tanti auguri a te, che è in 3/4."
+    },
+    "pt": {
+     "t": "O compasso ternário",
+     "g": "Sentir a valsa com três tempos por compasso.",
+     "p": [
+      "O 3/4 tem três tempos de semínima por compasso, contados 1 2 3.",
+      "O primeiro tempo é o mais forte e cria um balanço: UM dois três.",
+      "As valsas, muitas canções populares e algumas baladas estão em 3/4."
+     ],
+     "q": "A música em três dá-te vontade de te balançares ou dançar?",
+     "c": "Balança-te em cada UM a contar 1 2 3 e depois cantarola os Parabéns a você, que estão em 3/4."
+    },
+    "pt_BR": {
+     "t": "O compasso ternário",
+     "g": "Sentir a valsa com três tempos por compasso.",
+     "p": [
+      "O 3/4 tem três tempos de semínima por compasso, contados 1 2 3.",
+      "O primeiro tempo é o mais forte e cria um balanço: UM dois três.",
+      "Valsas, muitas canções populares e algumas baladas são em 3/4."
+     ],
+     "q": "Música em três dá vontade de balançar ou dançar?",
+     "c": "Balance o corpo em cada UM contando 1 2 3 e depois cantarole Parabéns pra você, que é em 3/4."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two-four time",
+     "g": "Feel the march with two strong beats.",
+     "p": [
+      "2/4 has two quarter-note beats per bar, counted 1 2.",
+      "It sounds like walking or marching: left, right, left, right.",
+      "Marches, polkas and many samba and folk dances are written in 2/4."
+     ],
+     "q": "Can you imagine a parade or a dance that fits two beats?",
+     "c": "March on the spot counting 1 2, stepping harder on 1, while humming any march you know."
+    },
+    "de": {
+     "t": "Der Zweiviertel-Takt",
+     "g": "Den Marsch mit zwei kräftigen Schlägen spüren.",
+     "p": [
+      "Der 2/4-Takt hat zwei Viertelschläge pro Takt, gezählt 1 2.",
+      "Er klingt wie Gehen oder Marschieren: links, rechts, links, rechts.",
+      "Märsche, Polkas und viele Samba- und Volkstänze stehen im 2/4-Takt."
+     ],
+     "q": "Fällt dir ein Umzug oder ein Tanz ein, der zu zwei Schlägen passt?",
+     "c": "Marschier auf der Stelle, zähl 1 2, tritt auf 1 fester auf und summ einen Marsch, den du kennst."
+    },
+    "es": {
+     "t": "El compás de dos por cuatro",
+     "g": "Sentir la marcha con dos pulsos fuertes.",
+     "p": [
+      "El 2/4 tiene dos pulsos de negra por compás, contados 1 2.",
+      "Suena como caminar o marchar: izquierda, derecha, izquierda, derecha.",
+      "Las marchas, las polcas y muchas sambas y danzas populares van en 2/4."
+     ],
+     "q": "¿Te imaginas un desfile o un baile que encaje con dos pulsos?",
+     "c": "Marcha en el sitio contando 1 2, pisando más fuerte en el 1, mientras tarareas una marcha que conozcas."
+    },
+    "fr": {
+     "t": "La mesure à deux temps",
+     "g": "Sentir la marche avec deux temps forts.",
+     "p": [
+      "Le 2/4 compte deux temps de noire par mesure : 1 2.",
+      "Il sonne comme une marche : gauche, droite, gauche, droite.",
+      "Marches, polkas et beaucoup de sambas et danses populaires sont en 2/4."
+     ],
+     "q": "Imagines-tu un défilé ou une danse qui colle à deux temps ?",
+     "c": "Marche sur place en comptant 1 2, en appuyant plus fort sur 1, tout en fredonnant une marche connue."
+    },
+    "it": {
+     "t": "Il tempo in due quarti",
+     "g": "Sentire la marcia con due movimenti forti.",
+     "p": [
+      "Il 2/4 ha due movimenti di semiminima per battuta, contati 1 2.",
+      "Suona come camminare o marciare: sinistro, destro, sinistro, destro.",
+      "Marce, polke e tante samba e danze popolari sono in 2/4."
+     ],
+     "q": "Ti viene in mente una parata o un ballo che va bene in due?",
+     "c": "Marcia sul posto contando 1 2, battendo più forte sull'1, mentre canticchi una marcia che conosci."
+    },
+    "pt": {
+     "t": "O compasso binário",
+     "g": "Sentir a marcha com dois tempos fortes.",
+     "p": [
+      "O 2/4 tem dois tempos de semínima por compasso, contados 1 2.",
+      "Soa como andar ou marchar: esquerdo, direito, esquerdo, direito.",
+      "Marchas, polcas e muitos sambas e danças populares estão em 2/4."
+     ],
+     "q": "Imaginas um desfile ou uma dança que encaixe em dois tempos?",
+     "c": "Marcha no lugar a contar 1 2, pisando mais forte no 1, enquanto cantarolas uma marcha que conheças."
+    },
+    "pt_BR": {
+     "t": "O compasso binário",
+     "g": "Sentir a marcha com dois tempos fortes.",
+     "p": [
+      "O 2/4 tem dois tempos de semínima por compasso, contados 1 2.",
+      "Soa como andar ou marchar: esquerdo, direito, esquerdo, direito.",
+      "Marchinhas, polcas e muito samba e dança popular são em 2/4."
+     ],
+     "q": "Você imagina um desfile ou uma dança que encaixe em dois tempos?",
+     "c": "Marche no lugar contando 1 2, pisando mais forte no 1, enquanto cantarola uma marchinha de carnaval."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strong and weak beats",
+     "g": "Understand why some beats feel heavier than others.",
+     "p": [
+      "Beats are not all equal: beat 1 of each bar usually feels the strongest.",
+      "In 4/4 the pattern is strong, weak, medium, weak; in 3/4 it is strong, weak, weak.",
+      "Lyrics and melodies often put important words and notes on strong beats."
+     ],
+     "q": "Do you notice where the singer places the key words in a song?",
+     "c": "Say 1 2 3 4 with a loud ONE and a slightly louder THREE, then try it while clapping."
+    },
+    "de": {
+     "t": "Betonte und unbetonte Zählzeiten",
+     "g": "Verstehen, warum sich manche Schläge schwerer anfühlen als andere.",
+     "p": [
+      "Schläge sind nicht gleich: Schlag 1 eines Takts fühlt sich meist am stärksten an.",
+      "Im 4/4-Takt heißt das Muster schwer, leicht, mittel, leicht; im 3/4-Takt schwer, leicht, leicht.",
+      "Texte und Melodien setzen wichtige Wörter und Töne oft auf betonte Zählzeiten."
+     ],
+     "q": "Achtest du darauf, wo der Sänger die wichtigen Wörter platziert?",
+     "c": "Sag 1 2 3 4 mit lauter EINS und etwas lauterer DREI und probier es dann klatschend."
+    },
+    "es": {
+     "t": "Pulsos fuertes y débiles",
+     "g": "Entender por qué algunos pulsos se sienten más pesados.",
+     "p": [
+      "No todos los pulsos son iguales: el 1 de cada compás suele ser el más fuerte.",
+      "En 4/4 el patrón es fuerte, débil, semifuerte, débil; en 3/4, fuerte, débil, débil.",
+      "Las letras y melodías suelen poner las palabras y notas importantes en pulsos fuertes."
+     ],
+     "q": "¿Te fijas en dónde coloca el cantante las palabras clave?",
+     "c": "Di 1 2 3 4 con un UNO fuerte y un TRES algo más fuerte, y luego hazlo aplaudiendo."
+    },
+    "fr": {
+     "t": "Temps forts et temps faibles",
+     "g": "Comprendre pourquoi certains temps semblent plus lourds que d'autres.",
+     "p": [
+      "Les temps ne se valent pas : le 1 de chaque mesure est en général le plus fort.",
+      "En 4/4 : fort, faible, mi-fort, faible ; en 3/4 : fort, faible, faible.",
+      "Paroles et mélodies placent souvent les mots et notes importants sur les temps forts."
+     ],
+     "q": "Remarques-tu où le chanteur place les mots clés d'une chanson ?",
+     "c": "Dis 1 2 3 4 avec un UN fort et un TROIS un peu appuyé, puis essaie en frappant des mains."
+    },
+    "it": {
+     "t": "Tempi forti e deboli",
+     "g": "Capire perché alcuni movimenti sembrano più pesanti di altri.",
+     "p": [
+      "I movimenti non sono tutti uguali: l'1 di ogni battuta di solito è il più forte.",
+      "In 4/4 lo schema è forte, debole, mezzo forte, debole; in 3/4 forte, debole, debole.",
+      "Testi e melodie mettono spesso le parole e le note importanti sui tempi forti."
+     ],
+     "q": "Noti dove il cantante mette le parole chiave di una canzone?",
+     "c": "Di' 1 2 3 4 con un UNO forte e un TRE un po' accentato, poi prova battendo le mani."
+    },
+    "pt": {
+     "t": "Tempos fortes e fracos",
+     "g": "Perceber porque alguns tempos parecem mais pesados do que outros.",
+     "p": [
+      "Os tempos não são todos iguais: o 1 de cada compasso costuma ser o mais forte.",
+      "Em 4/4 o padrão é forte, fraco, meio-forte, fraco; em 3/4, forte, fraco, fraco.",
+      "Letras e melodias põem muitas vezes as palavras e notas importantes nos tempos fortes."
+     ],
+     "q": "Reparas onde o cantor coloca as palavras-chave de uma música?",
+     "c": "Diz 1 2 3 4 com um UM forte e um TRÊS um pouco acentuado, e depois faz o mesmo a bater palmas."
+    },
+    "pt_BR": {
+     "t": "Tempos fortes e fracos",
+     "g": "Entender por que alguns tempos parecem mais pesados que outros.",
+     "p": [
+      "Os tempos não são iguais: o 1 de cada compasso costuma ser o mais forte.",
+      "Em 4/4 o padrão é forte, fraco, meio-forte, fraco; em 3/4, forte, fraco, fraco.",
+      "Letras e melodias costumam colocar as palavras e notas importantes nos tempos fortes."
+     ],
+     "q": "Você repara onde o cantor coloca as palavras-chave de uma música?",
+     "c": "Diga 1 2 3 4 com um UM forte e um TRÊS um pouco acentuado, depois faça batendo palma."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pickup notes",
+     "g": "Discover notes that start before the first full bar.",
+     "p": [
+      "A pickup (anacrusis) is one or more notes before the first strong beat of a song.",
+      "Happy birthday starts with a pickup: Hap-py comes just before the strong beat on birth.",
+      "When a piece starts with a pickup, the last bar is often shorter to balance it out."
+     ],
+     "q": "Can you think of another song that starts just before the main beat?",
+     "c": "Sing Happy birthday and clap only on the strong beats. Notice that the first clap falls on birth."
+    },
+    "de": {
+     "t": "Der Auftakt",
+     "g": "Töne entdecken, die vor dem ersten vollen Takt beginnen.",
+     "p": [
+      "Ein Auftakt sind ein oder mehrere Töne vor der ersten betonten Zählzeit eines Liedes.",
+      "Zum Geburtstag beginnt mit Auftakt: Zum Ge- kommt kurz vor dem betonten -burts-.",
+      "Beginnt ein Stück mit Auftakt, ist der letzte Takt oft entsprechend kürzer."
+     ],
+     "q": "Fällt dir ein weiteres Lied ein, das kurz vor dem Hauptschlag beginnt?",
+     "c": "Sing Zum Geburtstag viel Glück und klatsch nur auf betonte Schläge. Der erste Klatscher fällt auf -burts-."
+    },
+    "es": {
+     "t": "La anacrusa",
+     "g": "Descubrir las notas que empiezan antes del primer compás completo.",
+     "p": [
+      "La anacrusa es una o varias notas antes del primer pulso fuerte de una canción.",
+      "Cumpleaños feliz empieza con anacrusa: Cum-ple- llega justo antes del pulso fuerte en -a-.",
+      "Cuando una obra empieza con anacrusa, el último compás suele ser más corto para compensar."
+     ],
+     "q": "¿Se te ocurre otra canción que empiece justo antes del pulso principal?",
+     "c": "Canta Cumpleaños feliz y aplaude solo en los pulsos fuertes. Fíjate en que la primera palmada cae en -a-."
+    },
+    "fr": {
+     "t": "L'anacrouse",
+     "g": "Découvrir les notes qui commencent avant la première mesure complète.",
+     "p": [
+      "Une anacrouse est une ou plusieurs notes placées avant le premier temps fort d'un morceau.",
+      "Joyeux anniversaire commence par une anacrouse : Jo-yeux arrive juste avant le temps fort sur an-.",
+      "Quand un morceau commence par une anacrouse, la dernière mesure est souvent plus courte."
+     ],
+     "q": "Connais-tu une autre chanson qui démarre juste avant le temps principal ?",
+     "c": "Chante Joyeux anniversaire en frappant seulement les temps forts. Remarque que la première frappe tombe sur an-."
+    },
+    "it": {
+     "t": "L'anacrusi",
+     "g": "Scoprire le note che iniziano prima della prima battuta completa.",
+     "p": [
+      "L'anacrusi è una o più note prima del primo tempo forte di un brano.",
+      "Tanti auguri inizia in anacrusi: Tan-ti arriva subito prima del tempo forte su au-.",
+      "Quando un brano inizia in anacrusi, l'ultima battuta spesso è più corta per compensare."
+     ],
+     "q": "Ti viene in mente un'altra canzone che parte poco prima del movimento principale?",
+     "c": "Canta Tanti auguri a te battendo solo i tempi forti. Nota che il primo colpo cade su au-."
+    },
+    "pt": {
+     "t": "A anacruse",
+     "g": "Descobrir as notas que começam antes do primeiro compasso completo.",
+     "p": [
+      "A anacruse é uma ou mais notas antes do primeiro tempo forte de uma música.",
+      "Muitas canções começam assim: uma sílaba fraca cai antes do tempo forte, como um impulso.",
+      "Quando uma peça começa em anacruse, o último compasso costuma ser mais curto para compensar."
+     ],
+     "q": "Lembras-te de uma música que começa um pouco antes do tempo principal?",
+     "c": "Canta uma canção que conheças bem e bate palmas só nos tempos fortes. A primeira sílaba cai antes da palma?"
+    },
+    "pt_BR": {
+     "t": "Anacruse",
+     "g": "Descobrir as notas que começam antes do primeiro compasso completo.",
+     "p": [
+      "Anacruse é uma ou mais notas antes do primeiro tempo forte de uma música.",
+      "Muitas canções começam assim: uma sílaba fraca vem antes do tempo forte, como um impulso.",
+      "Quando uma peça começa em anacruse, o último compasso costuma ser mais curto para compensar."
+     ],
+     "q": "Você lembra de uma música que começa um pouco antes do tempo principal?",
+     "c": "Cante uma música que você conhece bem e bata palma só nos tempos fortes. A primeira sílaba vem antes da palma?"
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Syncopation basics",
+     "g": "Feel the off-beat accents that make music groove.",
+     "p": [
+      "Syncopation puts accents where we do not expect them, often on the and between beats.",
+      "It creates surprise and energy, and it is at the heart of funk, reggae, samba and jazz.",
+      "To feel it, keep the beat steady in your foot while your hands clap off the beat."
+     ],
+     "q": "Which song makes you want to dance because of its groove?",
+     "c": "Tap your foot on 1 2 3 4 and clap only on every and. Keep it going for one minute."
+    },
+    "de": {
+     "t": "Synkopen-Grundlagen",
+     "g": "Die Akzente zwischen den Schlägen spüren, die Musik grooven lassen.",
+     "p": [
+      "Eine Synkope setzt Betonungen dort, wo wir sie nicht erwarten, oft auf das und zwischen den Schlägen.",
+      "Sie bringt Überraschung und Energie und steckt im Herzen von Funk, Reggae, Samba und Jazz.",
+      "Halte den Schlag mit dem Fuß, während die Hände zwischen den Schlägen klatschen."
+     ],
+     "q": "Bei welchem Lied willst du wegen des Grooves sofort tanzen?",
+     "c": "Tipp mit dem Fuß 1 2 3 4 und klatsch nur auf jedes und. Halte das eine Minute durch."
+    },
+    "es": {
+     "t": "Introducción a la síncopa",
+     "g": "Sentir los acentos a contratiempo que hacen que la música tenga swing.",
+     "p": [
+      "La síncopa pone acentos donde no los esperamos, a menudo en la y entre pulsos.",
+      "Crea sorpresa y energía, y es el corazón del funk, el reggae, la samba y el jazz.",
+      "Para sentirla, mantén el pulso con el pie mientras las manos aplauden a contratiempo."
+     ],
+     "q": "¿Qué canción te hace bailar por su ritmo?",
+     "c": "Marca 1 2 3 4 con el pie y aplaude solo en cada y. Aguanta un minuto."
+    },
+    "fr": {
+     "t": "Les bases de la syncope",
+     "g": "Sentir les accents à contretemps qui donnent du groove.",
+     "p": [
+      "La syncope place des accents là où on ne les attend pas, souvent sur le et entre les temps.",
+      "Elle crée surprise et énergie, et elle est au cœur du funk, du reggae, de la samba et du jazz.",
+      "Pour la sentir, garde la pulsation au pied pendant que tes mains frappent à contretemps."
+     ],
+     "q": "Quelle chanson te donne envie de danser grâce à son groove ?",
+     "c": "Tape du pied sur 1 2 3 4 et frappe des mains seulement sur chaque et. Tiens une minute."
+    },
+    "it": {
+     "t": "Basi di sincope",
+     "g": "Sentire gli accenti in controtempo che fanno groovare la musica.",
+     "p": [
+      "La sincope mette accenti dove non ce li aspettiamo, spesso sulla e tra i movimenti.",
+      "Crea sorpresa ed energia ed è il cuore di funk, reggae, samba e jazz.",
+      "Per sentirla, tieni il tempo col piede mentre le mani battono in controtempo."
+     ],
+     "q": "Quale canzone ti fa ballare per il suo groove?",
+     "c": "Batti il piede su 1 2 3 4 e le mani solo su ogni e. Continua per un minuto."
+    },
+    "pt": {
+     "t": "Introdução à síncopa",
+     "g": "Sentir os acentos em contratempo que dão balanço à música.",
+     "p": [
+      "A síncopa põe acentos onde não os esperamos, muitas vezes no e entre os tempos.",
+      "Cria surpresa e energia, e está no coração do funk, do reggae, do samba e do jazz.",
+      "Para a sentir, mantém a pulsação com o pé enquanto as mãos batem em contratempo."
+     ],
+     "q": "Que música te faz dançar por causa do balanço?",
+     "c": "Bate o pé em 1 2 3 4 e bate palmas só em cada e. Aguenta um minuto."
+    },
+    "pt_BR": {
+     "t": "Noções de síncope",
+     "g": "Sentir os acentos no contratempo que dão suingue à música.",
+     "p": [
+      "A síncope coloca acentos onde não esperamos, muitas vezes no e entre os tempos.",
+      "Ela cria surpresa e energia, e está no coração do funk, do reggae, do samba e do jazz.",
+      "Para sentir, mantenha a pulsação no pé enquanto as mãos batem no contratempo."
+     ],
+     "q": "Qual música te faz dançar por causa do suingue?",
+     "c": "Bata o pé em 1 2 3 4 e bata palma só em cada e. Segure por um minuto."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Triplets",
+     "g": "Fit three notes into the space of two.",
+     "p": [
+      "A triplet squeezes three equal notes into the time normally taken by two.",
+      "Eighth-note triplets put three even notes in one beat, marked with a small 3.",
+      "Say tri-po-let or 1-trip-let evenly on each beat to feel the rolling motion."
+     ],
+     "q": "Have you noticed the rolling three-note feel in blues or slow rock songs?",
+     "c": "Tap a steady beat and say tri-po-let on each tap, then switch between 1 and and tri-po-let."
+    },
+    "de": {
+     "t": "Triolen",
+     "g": "Drei Töne in den Raum von zwei bringen.",
+     "p": [
+      "Eine Triole quetscht drei gleich lange Töne in die Zeit, die sonst zwei brauchen.",
+      "Achteltriolen setzen drei gleichmäßige Töne in einen Schlag, markiert mit einer kleinen 3.",
+      "Sag auf jeden Schlag gleichmäßig Tri-o-le, um die rollende Bewegung zu spüren."
+     ],
+     "q": "Ist dir das rollende Dreiergefühl im Blues oder in langsamen Rocksongs aufgefallen?",
+     "c": "Tipp einen gleichmäßigen Schlag und sag auf jeden Tri-o-le, dann wechsle zwischen 1 und und Tri-o-le."
+    },
+    "es": {
+     "t": "Los tresillos",
+     "g": "Meter tres notas en el espacio de dos.",
+     "p": [
+      "Un tresillo encaja tres notas iguales en el tiempo que normalmente ocupan dos.",
+      "El tresillo de corcheas pone tres notas iguales en un pulso, marcadas con un pequeño 3.",
+      "Di tre-si-llo de forma pareja en cada pulso para sentir el movimiento rodante."
+     ],
+     "q": "¿Has notado ese balanceo de tres notas en el blues o el rock lento?",
+     "c": "Marca un pulso estable y di tre-si-llo en cada golpe, luego alterna entre 1 y y tre-si-llo."
+    },
+    "fr": {
+     "t": "Les triolets",
+     "g": "Faire tenir trois notes dans l'espace de deux.",
+     "p": [
+      "Un triolet glisse trois notes égales dans le temps normalement occupé par deux.",
+      "Le triolet de croches place trois notes égales sur un temps, marquées d'un petit 3.",
+      "Dis tri-o-let régulièrement sur chaque temps pour sentir ce mouvement qui roule."
+     ],
+     "q": "As-tu remarqué ce roulement à trois notes dans le blues ou le rock lent ?",
+     "c": "Tape une pulsation régulière et dis tri-o-let sur chaque temps, puis alterne entre 1 et et tri-o-let."
+    },
+    "it": {
+     "t": "Le terzine",
+     "g": "Far stare tre note nello spazio di due.",
+     "p": [
+      "Una terzina infila tre note uguali nel tempo che normalmente ne occupano due.",
+      "La terzina di crome mette tre note uguali in un movimento, segnate con un piccolo 3.",
+      "Di' ter-zi-na in modo regolare su ogni movimento per sentire il movimento rotolante."
+     ],
+     "q": "Hai notato quel dondolio a tre note nel blues o nel rock lento?",
+     "c": "Batti un tempo regolare e di' ter-zi-na su ogni colpo, poi alterna tra 1 e e ter-zi-na."
+    },
+    "pt": {
+     "t": "As tercinas",
+     "g": "Encaixar três notas no espaço de duas.",
+     "p": [
+      "Uma tercina encaixa três notas iguais no tempo que normalmente ocupam duas.",
+      "A tercina de colcheias põe três notas iguais num tempo, marcadas com um pequeno 3.",
+      "Diz ter-ci-na de forma regular em cada tempo para sentires o movimento a rolar."
+     ],
+     "q": "Já reparaste nesse balanço de três notas no blues ou no rock lento?",
+     "c": "Marca uma pulsação regular e diz ter-ci-na em cada batida, depois alterna entre 1 e e ter-ci-na."
+    },
+    "pt_BR": {
+     "t": "Tercinas",
+     "g": "Encaixar três notas no espaço de duas.",
+     "p": [
+      "Uma tercina, ou quiáltera, encaixa três notas iguais no tempo que normalmente cabem duas.",
+      "A tercina de colcheias coloca três notas iguais num tempo, marcadas com um pequeno 3.",
+      "Diga ter-ci-na de forma regular em cada tempo para sentir o movimento rolando."
+     ],
+     "q": "Você já reparou nesse balanço de três notas no blues ou no rock lento?",
+     "c": "Marque uma pulsação regular e diga ter-ci-na em cada batida, depois alterne entre 1 e e ter-ci-na."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm dictation",
+     "g": "Listen to a rhythm and write it down.",
+     "p": [
+      "Rhythm dictation means hearing a pattern and writing the note values you heard.",
+      "First find the beat, then decide how many sounds fall on each beat.",
+      "One sound per beat is a quarter, two are eighths, one sound across two beats is a half note."
+     ],
+     "q": "Would you rather clap rhythms or write them down?",
+     "c": "Clap the first line of a song you know, then write it down using quarters, eighths and half notes."
+    },
+    "de": {
+     "t": "Rhythmusdiktat",
+     "g": "Einen Rhythmus hören und aufschreiben.",
+     "p": [
+      "Beim Rhythmusdiktat hörst du ein Muster und schreibst die gehörten Notenwerte auf.",
+      "Finde zuerst den Schlag und entscheide dann, wie viele Klänge auf jeden Schlag fallen.",
+      "Ein Klang pro Schlag ist eine Viertel, zwei sind Achtel, ein Klang über zwei Schläge eine Halbe."
+     ],
+     "q": "Klatschst du Rhythmen lieber oder schreibst du sie lieber auf?",
+     "c": "Klatsch die erste Zeile eines bekannten Liedes und schreib sie mit Vierteln, Achteln und Halben auf."
+    },
+    "es": {
+     "t": "Dictado rítmico",
+     "g": "Escuchar un ritmo y escribirlo.",
+     "p": [
+      "El dictado rítmico consiste en oír un patrón y escribir las figuras que oíste.",
+      "Primero encuentra el pulso y luego decide cuántos sonidos caen en cada pulso.",
+      "Un sonido por pulso es una negra, dos son corcheas y un sonido que dura dos pulsos es una blanca."
+     ],
+     "q": "¿Prefieres aplaudir ritmos o escribirlos?",
+     "c": "Aplaude la primera frase de una canción que conozcas y escríbela con negras, corcheas y blancas."
+    },
+    "fr": {
+     "t": "La dictée rythmique",
+     "g": "Écouter un rythme et l'écrire.",
+     "p": [
+      "La dictée rythmique consiste à entendre un motif et à noter les valeurs entendues.",
+      "Trouve d'abord la pulsation, puis compte combien de sons tombent sur chaque temps.",
+      "Un son par temps, c'est une noire ; deux, des croches ; un son sur deux temps, une blanche."
+     ],
+     "q": "Tu préfères frapper les rythmes ou les écrire ?",
+     "c": "Frappe la première phrase d'une chanson connue, puis écris-la avec noires, croches et blanches."
+    },
+    "it": {
+     "t": "Dettato ritmico",
+     "g": "Ascoltare un ritmo e scriverlo.",
+     "p": [
+      "Il dettato ritmico consiste nel sentire uno schema e scrivere le figure ascoltate.",
+      "Prima trova la pulsazione, poi decidi quanti suoni cadono su ogni movimento.",
+      "Un suono per movimento è una semiminima, due sono crome, un suono lungo due movimenti è una minima."
+     ],
+     "q": "Preferisci battere i ritmi o scriverli?",
+     "c": "Batti la prima frase di una canzone che conosci e scrivila con semiminime, crome e minime."
+    },
+    "pt": {
+     "t": "Ditado rítmico",
+     "g": "Ouvir um ritmo e escrevê-lo.",
+     "p": [
+      "O ditado rítmico é ouvir um padrão e escrever as figuras que ouviste.",
+      "Primeiro encontra a pulsação e depois decide quantos sons caem em cada tempo.",
+      "Um som por tempo é uma semínima, dois são colcheias e um som que dura dois tempos é uma mínima."
+     ],
+     "q": "Preferes bater ritmos ou escrevê-los?",
+     "c": "Bate a primeira frase de uma música que conheças e escreve-a com semínimas, colcheias e mínimas."
+    },
+    "pt_BR": {
+     "t": "Ditado rítmico",
+     "g": "Ouvir um ritmo e escrever.",
+     "p": [
+      "Ditado rítmico é ouvir um padrão e escrever as figuras que você ouviu.",
+      "Primeiro encontre a pulsação e depois decida quantos sons caem em cada tempo.",
+      "Um som por tempo é uma semínima, dois são colcheias e um som que dura dois tempos é uma mínima."
+     ],
+     "q": "Você prefere bater ritmos ou escrevê-los?",
+     "c": "Bata a primeira frase de uma música que você conhece e escreva com semínimas, colcheias e mínimas."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body percussion",
+     "g": "Play rhythms by clapping, stomping and snapping.",
+     "p": [
+      "Your body is a full drum kit: stomps are the low sound, claps the middle, snaps the high.",
+      "Combining sounds makes simple rhythms more interesting and trains coordination.",
+      "Start slowly and loop a short pattern until it feels natural, then speed up."
+     ],
+     "q": "Which body sound do you enjoy making the most?",
+     "c": "Loop this 4/4 pattern: stomp on 1, clap on 2, stomp on 3, clap and snap on 4. Speed up when ready."
+    },
+    "de": {
+     "t": "Bodypercussion",
+     "g": "Rhythmen mit Klatschen, Stampfen und Schnipsen spielen.",
+     "p": [
+      "Dein Körper ist ein ganzes Schlagzeug: Stampfen klingt tief, Klatschen mittel, Schnipsen hoch.",
+      "Klänge zu kombinieren macht einfache Rhythmen spannender und trainiert die Koordination.",
+      "Fang langsam an und wiederhol ein kurzes Muster, bis es natürlich wirkt, dann schneller."
+     ],
+     "q": "Welchen Körperklang machst du am liebsten?",
+     "c": "Wiederhol im 4/4: stampfen auf 1, klatschen auf 2, stampfen auf 3, klatschen und schnipsen auf 4."
+    },
+    "es": {
+     "t": "Percusión corporal",
+     "g": "Tocar ritmos con palmas, pisadas y chasquidos.",
+     "p": [
+      "Tu cuerpo es una batería completa: las pisadas suenan graves, las palmas medias y los chasquidos agudos.",
+      "Combinar sonidos hace los ritmos simples más interesantes y entrena la coordinación.",
+      "Empieza despacio y repite un patrón corto hasta que salga natural, luego acelera."
+     ],
+     "q": "¿Qué sonido corporal te gusta más hacer?",
+     "c": "Repite en 4/4: pisada en 1, palmada en 2, pisada en 3, palmada y chasquido en 4. Acelera cuando puedas."
+    },
+    "fr": {
+     "t": "Les percussions corporelles",
+     "g": "Jouer des rythmes avec des frappes de mains, de pieds et des claquements de doigts.",
+     "p": [
+      "Ton corps est une batterie : les pieds font le grave, les mains le médium, les doigts l'aigu.",
+      "Combiner les sons rend les rythmes simples plus vivants et entraîne la coordination.",
+      "Commence lentement et répète un court motif jusqu'à ce qu'il soit naturel, puis accélère."
+     ],
+     "q": "Quel son corporel préfères-tu faire ?",
+     "c": "Boucle en 4/4 : pied sur 1, mains sur 2, pied sur 3, mains et doigts sur 4. Accélère quand c'est prêt."
+    },
+    "it": {
+     "t": "Body percussion",
+     "g": "Suonare ritmi con battiti di mani, piedi e schiocchi di dita.",
+     "p": [
+      "Il tuo corpo è una batteria: i piedi fanno il grave, le mani il medio, le dita l'acuto.",
+      "Combinare suoni rende più interessanti i ritmi semplici e allena la coordinazione.",
+      "Inizia piano e ripeti un breve schema finché viene naturale, poi accelera."
+     ],
+     "q": "Quale suono del corpo ti piace di più fare?",
+     "c": "Ripeti in 4/4: piede sull'1, mani sul 2, piede sul 3, mani e schiocco sul 4. Accelera quando sei pronto."
+    },
+    "pt": {
+     "t": "Percussão corporal",
+     "g": "Tocar ritmos com palmas, pés e estalinhos de dedos.",
+     "p": [
+      "O teu corpo é uma bateria completa: os pés soam graves, as palmas médias e os estalos agudos.",
+      "Combinar sons torna ritmos simples mais interessantes e treina a coordenação.",
+      "Começa devagar e repete um padrão curto até sair natural, depois acelera."
+     ],
+     "q": "Que som do corpo gostas mais de fazer?",
+     "c": "Repete em 4/4: pé no 1, palma no 2, pé no 3, palma e estalo no 4. Acelera quando estiveres pronto."
+    },
+    "pt_BR": {
+     "t": "Percussão corporal",
+     "g": "Tocar ritmos com palmas, pisadas e estalos de dedo.",
+     "p": [
+      "Seu corpo é uma bateria completa: pisadas soam graves, palmas médias e estalos agudos.",
+      "Combinar sons deixa ritmos simples mais interessantes e treina a coordenação.",
+      "Comece devagar e repita um padrão curto até sair natural, depois acelere."
+     ],
+     "q": "Qual som do corpo você mais gosta de fazer?",
+     "c": "Repita em 4/4: pisada no 1, palma no 2, pisada no 3, palma e estalo no 4. Acelere quando estiver pronto."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythms of the world",
+     "g": "Try simple patterns from samba, reggae and flamenco.",
+     "p": [
+      "Samba from Brazil has a lively 2/4 feel with many syncopated sixteenth notes and a strong surdo drum.",
+      "Reggae from Jamaica often accents the off-beats, with guitar chops on the and of each beat.",
+      "Flamenco from Spain uses 12-beat cycles called compás, with accents on beats 3, 6, 8, 10 and 12."
+     ],
+     "q": "Which of these three rhythms would you most like to learn?",
+     "c": "Count 1 to 12 out loud and clap loudly on 3, 6, 8, 10 and 12: that is a flamenco compás."
+    },
+    "de": {
+     "t": "Rhythmen der Welt",
+     "g": "Einfache Muster aus Samba, Reggae und Flamenco ausprobieren.",
+     "p": [
+      "Samba aus Brasilien hat ein lebhaftes 2/4-Gefühl mit vielen synkopierten Sechzehnteln und kräftiger Surdo.",
+      "Reggae aus Jamaika betont oft die Offbeats, die Gitarre spielt kurze Akkorde auf jedes und.",
+      "Flamenco aus Spanien nutzt 12er-Zyklen namens Compás, mit Akzenten auf 3, 6, 8, 10 und 12."
+     ],
+     "q": "Welchen dieser drei Rhythmen würdest du am liebsten lernen?",
+     "c": "Zähl laut bis 12 und klatsch kräftig auf 3, 6, 8, 10 und 12: Das ist ein Flamenco-Compás."
+    },
+    "es": {
+     "t": "Ritmos del mundo",
+     "g": "Probar patrones sencillos de samba, reggae y flamenco.",
+     "p": [
+      "La samba de Brasil tiene un aire vivo en 2/4, con muchas semicorcheas sincopadas y un surdo potente.",
+      "El reggae de Jamaica acentúa los contratiempos, con la guitarra en la y de cada pulso.",
+      "El flamenco usa ciclos de 12 pulsos llamados compás, con acentos en 3, 6, 8, 10 y 12."
+     ],
+     "q": "¿Cuál de estos tres ritmos te gustaría aprender más?",
+     "c": "Cuenta en voz alta del 1 al 12 y da palmas fuertes en 3, 6, 8, 10 y 12: eso es un compás flamenco."
+    },
+    "fr": {
+     "t": "Rythmes du monde",
+     "g": "Essayer des motifs simples de samba, de reggae et de flamenco.",
+     "p": [
+      "La samba du Brésil a un esprit vif en 2/4, avec beaucoup de doubles croches syncopées et un surdo puissant.",
+      "Le reggae de Jamaïque accentue souvent les contretemps, la guitare jouant sur le et de chaque temps.",
+      "Le flamenco d'Espagne utilise des cycles de 12 temps, le compás, accentués sur 3, 6, 8, 10 et 12."
+     ],
+     "q": "Lequel de ces trois rythmes aimerais-tu le plus apprendre ?",
+     "c": "Compte de 1 à 12 à voix haute et frappe fort sur 3, 6, 8, 10 et 12 : voilà un compás flamenco."
+    },
+    "it": {
+     "t": "Ritmi del mondo",
+     "g": "Provare schemi semplici di samba, reggae e flamenco.",
+     "p": [
+      "La samba brasiliana ha un carattere vivace in 2/4, con tante semicrome sincopate e un surdo potente.",
+      "Il reggae giamaicano accentua spesso i controtempi, con la chitarra sulla e di ogni movimento.",
+      "Il flamenco spagnolo usa cicli di 12 movimenti detti compás, con accenti su 3, 6, 8, 10 e 12."
+     ],
+     "q": "Quale di questi tre ritmi vorresti imparare di più?",
+     "c": "Conta ad alta voce da 1 a 12 e batti forte su 3, 6, 8, 10 e 12: questo è un compás di flamenco."
+    },
+    "pt": {
+     "t": "Ritmos do mundo",
+     "g": "Experimentar padrões simples de samba, reggae e flamenco.",
+     "p": [
+      "O samba do Brasil tem um ar vivo em 2/4, com muitas semicolcheias sincopadas e um surdo forte.",
+      "O reggae da Jamaica acentua muitas vezes os contratempos, com a guitarra no e de cada tempo.",
+      "O flamenco de Espanha usa ciclos de 12 tempos chamados compás, com acentos em 3, 6, 8, 10 e 12."
+     ],
+     "q": "Qual destes três ritmos gostavas mais de aprender?",
+     "c": "Conta em voz alta de 1 a 12 e bate palmas fortes em 3, 6, 8, 10 e 12: isso é um compás de flamenco."
+    },
+    "pt_BR": {
+     "t": "Ritmos do mundo",
+     "g": "Experimentar padrões simples de samba, reggae e flamenco.",
+     "p": [
+      "O samba tem um balanço vivo em 2/4, com muitas semicolcheias sincopadas e o surdo marcando forte.",
+      "O reggae da Jamaica costuma acentuar o contratempo, com a guitarra no e de cada tempo.",
+      "O flamenco da Espanha usa ciclos de 12 tempos chamados compás, com acentos em 3, 6, 8, 10 e 12."
+     ],
+     "q": "Qual desses três ritmos você mais gostaria de aprender?",
+     "c": "Conte em voz alta de 1 a 12 e bata palmas fortes em 3, 6, 8, 10 e 12: isso é um compás de flamenco."
+    }
+   }
+  }
+ ]
+}

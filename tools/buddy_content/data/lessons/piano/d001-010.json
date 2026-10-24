@@ -1,0 +1,835 @@
+{
+ "topic": "piano",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the piano",
+     "g": "Get to know the keys and pedals and how a piano turns a key press into sound.",
+     "p": [
+      "A standard piano has 88 keys: 52 white and 36 black, from deep bass on the left to bright treble on the right.",
+      "In an acoustic piano a key moves a felt hammer that strikes strings; a digital piano plays recorded or modelled sounds.",
+      "Most pianos have two or three pedals; the right one, the sustain pedal, lets notes ring on after you let go."
+     ],
+     "q": "What made you want to learn the piano?",
+     "c": "Play the lowest key, the highest key and one in the middle, and listen to how different they sound."
+    },
+    "de": {
+     "t": "Lerne das Klavier kennen",
+     "g": "Tasten und Pedale kennenlernen und verstehen, wie aus einem Tastendruck ein Ton wird.",
+     "p": [
+      "Ein normales Klavier hat 88 Tasten: 52 weiße und 36 schwarze, links tiefe Bässe, rechts helle Höhen.",
+      "Beim akustischen Klavier schlägt ein Filzhammer auf Saiten; ein Digitalpiano spielt aufgenommene oder berechnete Klänge.",
+      "Meist gibt es zwei oder drei Pedale; das rechte, das Haltepedal, lässt Töne nach dem Loslassen weiterklingen."
+     ],
+     "q": "Was hat dich dazu gebracht, Klavier lernen zu wollen?",
+     "c": "Spiel die tiefste, die höchste und eine Taste in der Mitte und hör, wie verschieden sie klingen."
+    },
+    "es": {
+     "t": "Conoce el piano",
+     "g": "Conocer las teclas y los pedales y cómo el piano convierte una pulsación en sonido.",
+     "p": [
+      "Un piano estándar tiene 88 teclas: 52 blancas y 36 negras, de graves a la izquierda a agudos a la derecha.",
+      "En un piano acústico la tecla mueve un martillo de fieltro que golpea cuerdas; el digital reproduce sonidos grabados o modelados.",
+      "Suele tener dos o tres pedales; el derecho, el de resonancia, deja sonar las notas aunque sueltes la tecla."
+     ],
+     "q": "¿Qué te hizo querer aprender piano?",
+     "c": "Toca la tecla más grave, la más aguda y una del centro, y escucha qué distintas suenan."
+    },
+    "fr": {
+     "t": "Découvrir le piano",
+     "g": "Connaître les touches et les pédales et comprendre comment une touche devient un son.",
+     "p": [
+      "Un piano standard a 88 touches : 52 blanches et 36 noires, des graves à gauche aux aigus à droite.",
+      "Sur un piano acoustique, la touche lance un marteau en feutre sur des cordes ; le numérique joue des sons enregistrés ou modélisés.",
+      "Il a souvent deux ou trois pédales ; celle de droite, la pédale forte, prolonge le son après avoir lâché la touche."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie d'apprendre le piano ?",
+     "c": "Joue la touche la plus grave, la plus aiguë et une au milieu, et écoute leurs différences."
+    },
+    "it": {
+     "t": "Conosci il pianoforte",
+     "g": "Conoscere tasti e pedali e capire come il pianoforte trasforma un tasto premuto in suono.",
+     "p": [
+      "Un pianoforte standard ha 88 tasti: 52 bianchi e 36 neri, dai gravi a sinistra agli acuti a destra.",
+      "Nel pianoforte acustico il tasto muove un martelletto di feltro che colpisce le corde; il digitale usa suoni registrati o modellati.",
+      "Di solito ci sono due o tre pedali; quello destro, il pedale di risonanza, fa continuare il suono dopo aver lasciato il tasto."
+     ],
+     "q": "Che cosa ti ha fatto venire voglia di imparare il pianoforte?",
+     "c": "Suona il tasto più grave, il più acuto e uno al centro, e ascolta quanto sono diversi."
+    },
+    "pt": {
+     "t": "Conhece o piano",
+     "g": "Conhecer as teclas e os pedais e perceber como o piano transforma uma tecla em som.",
+     "p": [
+      "Um piano normal tem 88 teclas: 52 brancas e 36 pretas, dos graves à esquerda aos agudos à direita.",
+      "No piano acústico a tecla move um martelo de feltro que bate nas cordas; o digital toca sons gravados ou modelados.",
+      "Há normalmente dois ou três pedais; o da direita, o de sustentação, deixa as notas soar depois de largares a tecla."
+     ],
+     "q": "O que te fez querer aprender piano?",
+     "c": "Toca a tecla mais grave, a mais aguda e uma do meio, e ouve como soam diferentes."
+    },
+    "pt_BR": {
+     "t": "Conheça o piano",
+     "g": "Conhecer as teclas e os pedais e entender como o piano transforma um toque em som.",
+     "p": [
+      "Um piano padrão tem 88 teclas: 52 brancas e 36 pretas, dos graves à esquerda aos agudos à direita.",
+      "No piano acústico a tecla move um martelo de feltro que bate nas cordas; o digital toca sons gravados ou modelados.",
+      "Costuma ter dois ou três pedais; o da direita, o de sustentação, deixa as notas soando depois que você solta a tecla."
+     ],
+     "q": "O que fez você querer aprender piano?",
+     "c": "Toque a tecla mais grave, a mais aguda e uma do meio, e ouça como soam diferentes."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acoustic or digital piano?",
+     "g": "Understand grand, upright and digital pianos and choose what you really need to start.",
+     "p": [
+      "Grand pianos lie flat and are the concert standard; uprights stand against a wall and save space.",
+      "A good digital piano needs 88 full-size, weighted keys and a sustain pedal; that is enough for years.",
+      "Acoustic pianos need regular tuning; digital ones never go out of tune and allow headphones."
+     ],
+     "q": "What instrument do you have, or plan to practise on?",
+     "c": "Check your keyboard: count its keys and press one softly, then hard. Does the volume change?"
+    },
+    "de": {
+     "t": "Akustisch oder digital?",
+     "g": "Flügel, Klavier und Digitalpiano unterscheiden und wissen, was du zum Start wirklich brauchst.",
+     "p": [
+      "Der Flügel liegt waagerecht und ist Konzertstandard; das aufrechte Klavier steht an der Wand und spart Platz.",
+      "Ein gutes Digitalpiano braucht 88 gewichtete Tasten in voller Größe und ein Haltepedal, das reicht für Jahre.",
+      "Akustische Klaviere müssen regelmäßig gestimmt werden; digitale nie, und du kannst mit Kopfhörern üben."
+     ],
+     "q": "Auf welchem Instrument übst du oder willst du üben?",
+     "c": "Prüf dein Instrument: Zähl die Tasten und drück eine leise, dann kräftig. Ändert sich die Lautstärke?"
+    },
+    "es": {
+     "t": "¿Piano acústico o digital?",
+     "g": "Distinguir piano de cola, vertical y digital y saber qué necesitas de verdad para empezar.",
+     "p": [
+      "El piano de cola es horizontal y el estándar de concierto; el vertical va contra la pared y ocupa menos.",
+      "Un buen digital necesita 88 teclas de tamaño completo, contrapesadas, y un pedal de resonancia: basta para años.",
+      "El acústico necesita afinación periódica; el digital nunca se desafina y permite usar auriculares."
+     ],
+     "q": "¿Qué instrumento tienes o piensas usar para practicar?",
+     "c": "Revisa tu teclado: cuenta sus teclas y pulsa una suave y luego fuerte. ¿Cambia el volumen?"
+    },
+    "fr": {
+     "t": "Piano acoustique ou numérique ?",
+     "g": "Distinguer piano à queue, droit et numérique, et savoir ce qu'il te faut vraiment pour débuter.",
+     "p": [
+      "Le piano à queue est horizontal, c'est la référence en concert ; le piano droit se place contre un mur.",
+      "Un bon numérique doit avoir 88 touches lestées de taille normale et une pédale forte : de quoi tenir des années.",
+      "Un acoustique s'accorde régulièrement ; un numérique ne se désaccorde jamais et accepte un casque."
+     ],
+     "q": "Sur quel instrument joues-tu, ou comptes-tu t'entraîner ?",
+     "c": "Examine ton clavier : compte les touches, puis appuie doucement et fort. Le volume change-t-il ?"
+    },
+    "it": {
+     "t": "Pianoforte acustico o digitale?",
+     "g": "Distinguere pianoforte a coda, verticale e digitale e capire cosa ti serve davvero per iniziare.",
+     "p": [
+      "Il pianoforte a coda è orizzontale ed è lo standard da concerto; il verticale sta contro il muro e occupa meno.",
+      "Un buon digitale deve avere 88 tasti pesati a grandezza piena e un pedale di risonanza: basta per anni.",
+      "L'acustico va accordato regolarmente; il digitale non si scorda mai e permette le cuffie."
+     ],
+     "q": "Su quale strumento suoni o pensi di esercitarti?",
+     "c": "Controlla la tua tastiera: conta i tasti e premine uno piano, poi forte. Il volume cambia?"
+    },
+    "pt": {
+     "t": "Piano acústico ou digital?",
+     "g": "Distinguir piano de cauda, vertical e digital e saber o que precisas mesmo para começar.",
+     "p": [
+      "O piano de cauda é horizontal e é o padrão dos concertos; o vertical fica encostado à parede e poupa espaço.",
+      "Um bom digital precisa de 88 teclas pesadas de tamanho real e um pedal de sustentação: chega para anos.",
+      "O acústico precisa de afinação regular; o digital nunca desafina e permite usar auscultadores."
+     ],
+     "q": "Em que instrumento tocas ou pensas praticar?",
+     "c": "Verifica o teu teclado: conta as teclas e carrega numa suavemente e depois com força. O volume muda?"
+    },
+    "pt_BR": {
+     "t": "Piano acústico ou digital?",
+     "g": "Diferenciar piano de cauda, vertical e digital e saber do que você precisa de verdade para começar.",
+     "p": [
+      "O piano de cauda é horizontal e é o padrão de concerto; o vertical fica encostado na parede e ocupa menos espaço.",
+      "Um bom digital precisa de 88 teclas pesadas de tamanho real e um pedal de sustentação: serve por anos.",
+      "O acústico precisa de afinação regular; o digital nunca desafina e permite usar fones de ouvido."
+     ],
+     "q": "Em qual instrumento você toca ou pretende praticar?",
+     "c": "Confira seu teclado: conte as teclas e aperte uma de leve e depois forte. O volume muda?"
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sitting at the piano",
+     "g": "Set up your bench and posture so you can play relaxed and with control.",
+     "p": [
+      "Sit on the front half of the bench, centred near middle C, with both feet flat on the floor.",
+      "Your forearms should be roughly level with the keys; adjust the bench height or add a cushion.",
+      "Sit far enough back that your elbows are slightly in front of your body and your back stays tall but loose."
+     ],
+     "q": "Is your piano bench or chair at a good height for you?",
+     "c": "Sit at the piano, check feet, height and distance, then hold the position relaxed for one minute."
+    },
+    "de": {
+     "t": "Richtig am Klavier sitzen",
+     "g": "Bank und Haltung so einstellen, dass du entspannt und kontrolliert spielen kannst.",
+     "p": [
+      "Setz dich auf die vordere Hälfte der Bank, mittig vor das mittlere C, beide Füße flach am Boden.",
+      "Die Unterarme sollten etwa waagerecht zu den Tasten sein; Bankhöhe anpassen oder ein Kissen nutzen.",
+      "Sitz so weit weg, dass die Ellbogen leicht vor dem Körper sind und der Rücken aufrecht, aber locker bleibt."
+     ],
+     "q": "Hat deine Klavierbank oder dein Stuhl die richtige Höhe für dich?",
+     "c": "Setz dich ans Klavier, prüf Füße, Höhe und Abstand und halte die Position eine Minute locker."
+    },
+    "es": {
+     "t": "Sentarse al piano",
+     "g": "Ajustar la banqueta y la postura para tocar relajado y con control.",
+     "p": [
+      "Siéntate en la mitad delantera de la banqueta, centrado frente al Do central, con los pies apoyados en el suelo.",
+      "Los antebrazos deben quedar más o menos a la altura de las teclas; ajusta la banqueta o usa un cojín.",
+      "Siéntate a una distancia en la que los codos queden un poco por delante del cuerpo y la espalda recta y suelta."
+     ],
+     "q": "¿Tu banqueta o silla tiene una buena altura para ti?",
+     "c": "Siéntate al piano, revisa pies, altura y distancia, y mantén la postura relajada un minuto."
+    },
+    "fr": {
+     "t": "Bien s'asseoir au piano",
+     "g": "Régler la banquette et la posture pour jouer détendu et avec contrôle.",
+     "p": [
+      "Assieds-toi sur la moitié avant de la banquette, face au do central, les deux pieds à plat au sol.",
+      "Les avant-bras doivent être à peu près au niveau des touches ; règle la hauteur ou ajoute un coussin.",
+      "Recule assez pour que les coudes soient un peu devant le corps, le dos droit mais souple."
+     ],
+     "q": "Ta banquette ou ta chaise est-elle à la bonne hauteur pour toi ?",
+     "c": "Installe-toi au piano, vérifie pieds, hauteur et distance, puis garde la position détendue une minute."
+    },
+    "it": {
+     "t": "Sedersi al pianoforte",
+     "g": "Regolare panchetta e postura per suonare rilassato e con controllo.",
+     "p": [
+      "Siediti sulla metà anteriore della panchetta, al centro davanti al Do centrale, con i piedi ben appoggiati.",
+      "Gli avambracci devono essere circa all'altezza dei tasti; regola la panchetta o aggiungi un cuscino.",
+      "Siediti a una distanza tale che i gomiti siano un po' davanti al corpo e la schiena dritta ma morbida."
+     ],
+     "q": "La tua panchetta o sedia è all'altezza giusta per te?",
+     "c": "Siediti al pianoforte, controlla piedi, altezza e distanza, poi tieni la posizione rilassata per un minuto."
+    },
+    "pt": {
+     "t": "Sentar-se ao piano",
+     "g": "Ajustar o banco e a postura para tocares descontraído e com controlo.",
+     "p": [
+      "Senta-te na metade da frente do banco, ao centro, em frente ao dó central, com os pés bem assentes no chão.",
+      "Os antebraços devem ficar mais ou menos ao nível das teclas; ajusta a altura do banco ou usa uma almofada.",
+      "Fica a uma distância em que os cotovelos ficam um pouco à frente do corpo e as costas direitas mas soltas."
+     ],
+     "q": "O teu banco ou cadeira está a uma boa altura para ti?",
+     "c": "Senta-te ao piano, verifica pés, altura e distância e mantém a posição descontraída durante um minuto."
+    },
+    "pt_BR": {
+     "t": "Sentando ao piano",
+     "g": "Ajustar o banco e a postura para tocar relaxado e com controle.",
+     "p": [
+      "Sente na metade da frente do banco, centralizado em frente ao dó central, com os pés apoiados no chão.",
+      "Os antebraços devem ficar mais ou menos na altura das teclas; ajuste o banco ou use uma almofada.",
+      "Sente a uma distância em que os cotovelos fiquem um pouco à frente do corpo e as costas retas, mas soltas."
+     ],
+     "q": "Seu banco ou cadeira está numa boa altura para você?",
+     "c": "Sente ao piano, confira pés, altura e distância e mantenha a postura relaxada por um minuto."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A good hand shape",
+     "g": "Build a natural, rounded hand shape that lets your fingers move freely.",
+     "p": [
+      "Let your arm hang at your side: the relaxed curve of your fingers is the shape you want on the keys.",
+      "Play on the fingertips with curved fingers; the thumb rests lightly on its side edge.",
+      "Keep the wrist level and loose, never pressed down or lifted high, and the shoulders relaxed."
+     ],
+     "q": "When you rest your hand on the keys, where do you feel tension?",
+     "c": "Hold an imaginary orange, place that shape on five white keys and press each finger gently in turn."
+    },
+    "de": {
+     "t": "Eine gute Handhaltung",
+     "g": "Eine natürliche, runde Handform aufbauen, mit der sich die Finger frei bewegen.",
+     "p": [
+      "Lass den Arm locker hängen: Die entspannte Rundung deiner Finger ist die Form, die du auf den Tasten willst.",
+      "Spiel mit den Fingerkuppen und gebogenen Fingern; der Daumen liegt leicht auf seiner Seitenkante.",
+      "Das Handgelenk bleibt waagerecht und locker, weder abgeknickt noch hochgezogen, die Schultern entspannt."
+     ],
+     "q": "Wo spürst du Spannung, wenn deine Hand auf den Tasten liegt?",
+     "c": "Halte eine gedachte Orange, setz diese Form auf fünf weiße Tasten und drück jeden Finger sanft nacheinander."
+    },
+    "es": {
+     "t": "Una buena forma de mano",
+     "g": "Crear una forma de mano natural y redondeada que deje moverse libremente a los dedos.",
+     "p": [
+      "Deja colgar el brazo: la curva relajada de tus dedos es la forma que quieres sobre las teclas.",
+      "Toca con las yemas y los dedos curvados; el pulgar se apoya suave sobre su borde lateral.",
+      "Mantén la muñeca nivelada y suelta, ni hundida ni levantada, y los hombros relajados."
+     ],
+     "q": "Cuando apoyas la mano en las teclas, ¿dónde notas tensión?",
+     "c": "Sujeta una naranja imaginaria, pon esa forma sobre cinco teclas blancas y pulsa cada dedo suavemente."
+    },
+    "fr": {
+     "t": "Une bonne position de main",
+     "g": "Construire une main ronde et naturelle qui laisse les doigts bouger librement.",
+     "p": [
+      "Laisse pendre ton bras : la courbe détendue de tes doigts est la forme à garder sur les touches.",
+      "Joue du bout des doigts, bien arrondis ; le pouce repose légèrement sur son côté.",
+      "Garde le poignet à l'horizontale et souple, ni cassé ni levé, et les épaules relâchées."
+     ],
+     "q": "Quand ta main est posée sur les touches, où sens-tu de la tension ?",
+     "c": "Tiens une orange imaginaire, pose cette forme sur cinq touches blanches et appuie chaque doigt doucement."
+    },
+    "it": {
+     "t": "Una buona posizione della mano",
+     "g": "Costruire una mano rotonda e naturale che lasci muovere liberamente le dita.",
+     "p": [
+      "Lascia pendere il braccio: la curva rilassata delle dita è la forma da tenere sui tasti.",
+      "Suona con i polpastrelli e le dita curve; il pollice appoggia leggero sul suo lato.",
+      "Tieni il polso in linea e morbido, né abbassato né alzato, e le spalle rilassate."
+     ],
+     "q": "Quando appoggi la mano sui tasti, dove senti tensione?",
+     "c": "Tieni un'arancia immaginaria, metti quella forma su cinque tasti bianchi e premi un dito alla volta, piano."
+    },
+    "pt": {
+     "t": "Uma boa posição da mão",
+     "g": "Criar uma mão arredondada e natural que deixe os dedos mexer-se livremente.",
+     "p": [
+      "Deixa o braço cair ao lado do corpo: a curva descontraída dos dedos é a forma que queres nas teclas.",
+      "Toca com as pontas dos dedos curvados; o polegar apoia-se levemente na sua parte lateral.",
+      "Mantém o pulso nivelado e solto, nem descaído nem levantado, e os ombros relaxados."
+     ],
+     "q": "Quando pousas a mão nas teclas, onde sentes tensão?",
+     "c": "Segura uma laranja imaginária, pousa essa forma em cinco teclas brancas e carrega cada dedo suavemente."
+    },
+    "pt_BR": {
+     "t": "Uma boa posição da mão",
+     "g": "Criar uma mão arredondada e natural que deixe os dedos se moverem livremente.",
+     "p": [
+      "Deixe o braço cair ao lado do corpo: a curva relaxada dos dedos é a forma que você quer nas teclas.",
+      "Toque com as pontas dos dedos curvados; o polegar se apoia de leve na lateral.",
+      "Mantenha o punho nivelado e solto, nem caído nem levantado, e os ombros relaxados."
+     ],
+     "q": "Quando você apoia a mão nas teclas, onde sente tensão?",
+     "c": "Segure uma laranja imaginária, coloque essa forma em cinco teclas brancas e aperte cada dedo com suavidade."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finger numbers",
+     "g": "Learn the finger numbers used in piano music for both hands.",
+     "p": [
+      "Fingers are numbered 1 to 5: thumb 1, index 2, middle 3, ring 4, little finger 5.",
+      "Both hands use the same numbers, so the thumbs are 1 and they sit next to each other in the middle.",
+      "Small numbers above or below notes in sheet music tell you which finger to use."
+     ],
+     "q": "Which finger feels the weakest or hardest to control for you?",
+     "c": "Tap each finger on a table as you say its number, 1 to 5 and back, first right hand, then left."
+    },
+    "de": {
+     "t": "Die Fingernummern",
+     "g": "Die Fingersätze der Klaviernoten für beide Hände lernen.",
+     "p": [
+      "Die Finger sind von 1 bis 5 nummeriert: Daumen 1, Zeigefinger 2, Mittelfinger 3, Ringfinger 4, kleiner Finger 5.",
+      "Beide Hände haben dieselben Nummern, also sind beide Daumen die 1 und liegen in der Mitte nebeneinander.",
+      "Kleine Zahlen über oder unter den Noten zeigen dir, welchen Finger du nehmen sollst."
+     ],
+     "q": "Welcher Finger fühlt sich bei dir am schwächsten oder schwierigsten an?",
+     "c": "Tippe jeden Finger auf den Tisch und sag seine Nummer, 1 bis 5 und zurück, erst rechts, dann links."
+    },
+    "es": {
+     "t": "Los números de los dedos",
+     "g": "Aprender la numeración de los dedos que usan las partituras de piano en ambas manos.",
+     "p": [
+      "Los dedos van del 1 al 5: pulgar 1, índice 2, medio 3, anular 4 y meñique 5.",
+      "Las dos manos usan los mismos números, así que los pulgares son el 1 y quedan juntos en el centro.",
+      "Los números pequeños sobre o bajo las notas indican qué dedo usar: es la digitación."
+     ],
+     "q": "¿Qué dedo sientes más débil o difícil de controlar?",
+     "c": "Golpea cada dedo en una mesa diciendo su número, del 1 al 5 y vuelta, primero la derecha y luego la izquierda."
+    },
+    "fr": {
+     "t": "Les numéros des doigts",
+     "g": "Apprendre la numérotation des doigts utilisée dans les partitions, pour les deux mains.",
+     "p": [
+      "Les doigts sont numérotés de 1 à 5 : pouce 1, index 2, majeur 3, annulaire 4, auriculaire 5.",
+      "Les deux mains ont les mêmes numéros : les pouces sont le 1 et se trouvent côte à côte au centre.",
+      "Les petits chiffres au-dessus ou au-dessous des notes indiquent le doigté à utiliser."
+     ],
+     "q": "Quel doigt te semble le plus faible ou le plus difficile à contrôler ?",
+     "c": "Tapote chaque doigt sur une table en disant son numéro, de 1 à 5 et retour, main droite puis gauche."
+    },
+    "it": {
+     "t": "I numeri delle dita",
+     "g": "Imparare la numerazione delle dita usata negli spartiti di pianoforte per entrambe le mani.",
+     "p": [
+      "Le dita vanno da 1 a 5: pollice 1, indice 2, medio 3, anulare 4, mignolo 5.",
+      "Le due mani usano gli stessi numeri: i pollici sono l'1 e stanno vicini al centro.",
+      "I numerini sopra o sotto le note indicano quale dito usare: è la diteggiatura."
+     ],
+     "q": "Quale dito senti più debole o difficile da controllare?",
+     "c": "Batti ogni dito sul tavolo dicendo il suo numero, da 1 a 5 e ritorno, prima la destra e poi la sinistra."
+    },
+    "pt": {
+     "t": "Os números dos dedos",
+     "g": "Aprender a numeração dos dedos usada nas partituras de piano, nas duas mãos.",
+     "p": [
+      "Os dedos vão de 1 a 5: polegar 1, indicador 2, médio 3, anelar 4 e mindinho 5.",
+      "As duas mãos usam os mesmos números, por isso os polegares são o 1 e ficam juntos no meio.",
+      "Os pequenos números por cima ou por baixo das notas dizem-te que dedo usar: é a dedilhação."
+     ],
+     "q": "Que dedo sentes mais fraco ou difícil de controlar?",
+     "c": "Bate cada dedo numa mesa dizendo o seu número, de 1 a 5 e volta, primeiro a direita e depois a esquerda."
+    },
+    "pt_BR": {
+     "t": "Os números dos dedos",
+     "g": "Aprender a numeração dos dedos usada nas partituras de piano, nas duas mãos.",
+     "p": [
+      "Os dedos vão de 1 a 5: polegar 1, indicador 2, médio 3, anelar 4 e mindinho 5.",
+      "As duas mãos usam os mesmos números, então os polegares são o 1 e ficam lado a lado no meio.",
+      "Os numerozinhos acima ou abaixo das notas dizem qual dedo usar: é o dedilhado."
+     ],
+     "q": "Qual dedo você sente mais fraco ou difícil de controlar?",
+     "c": "Bata cada dedo numa mesa dizendo o número dele, de 1 a 5 e volta, primeiro a direita e depois a esquerda."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pattern of black keys",
+     "g": "Use the groups of two and three black keys as your map of the keyboard.",
+     "p": [
+      "Black keys come in alternating groups of two and three all along the keyboard.",
+      "This pattern repeats every 12 keys, so once you know one section you know them all.",
+      "Every white key has a fixed place next to these groups, which is how pianists find notes without counting."
+     ],
+     "q": "Can you spot the groups of two and three on your keyboard right away?",
+     "c": "Play every group of two black keys from bottom to top with fingers 2 and 3, then every group of three with 2, 3, 4."
+    },
+    "de": {
+     "t": "Das Muster der schwarzen Tasten",
+     "g": "Die Zweier- und Dreiergruppen der schwarzen Tasten als Landkarte der Tastatur nutzen.",
+     "p": [
+      "Die schwarzen Tasten wechseln sich auf der ganzen Tastatur in Gruppen von zwei und drei ab.",
+      "Das Muster wiederholt sich alle 12 Tasten: Kennst du einen Abschnitt, kennst du alle.",
+      "Jede weiße Taste hat einen festen Platz neben diesen Gruppen, so finden Pianisten Töne ohne Zählen."
+     ],
+     "q": "Erkennst du die Zweier- und Dreiergruppen auf deiner Tastatur sofort?",
+     "c": "Spiel alle Zweiergruppen von unten nach oben mit den Fingern 2 und 3, dann alle Dreiergruppen mit 2, 3, 4."
+    },
+    "es": {
+     "t": "El patrón de las teclas negras",
+     "g": "Usar los grupos de dos y tres teclas negras como mapa del teclado.",
+     "p": [
+      "Las teclas negras se alternan en grupos de dos y de tres a lo largo de todo el teclado.",
+      "El patrón se repite cada 12 teclas: si conoces una sección, las conoces todas.",
+      "Cada tecla blanca tiene un sitio fijo junto a esos grupos; así se encuentran las notas sin contar."
+     ],
+     "q": "¿Ves enseguida los grupos de dos y de tres en tu teclado?",
+     "c": "Toca todos los grupos de dos negras de grave a agudo con los dedos 2 y 3, y luego los de tres con 2, 3 y 4."
+    },
+    "fr": {
+     "t": "Le motif des touches noires",
+     "g": "Utiliser les groupes de deux et trois touches noires comme carte du clavier.",
+     "p": [
+      "Les touches noires alternent en groupes de deux et de trois sur tout le clavier.",
+      "Ce motif se répète toutes les 12 touches : connaître une section, c'est les connaître toutes.",
+      "Chaque touche blanche a une place fixe près de ces groupes, c'est ainsi qu'on trouve les notes sans compter."
+     ],
+     "q": "Repères-tu tout de suite les groupes de deux et de trois sur ton clavier ?",
+     "c": "Joue tous les groupes de deux noires du grave à l'aigu avec les doigts 2 et 3, puis ceux de trois avec 2, 3, 4."
+    },
+    "it": {
+     "t": "Lo schema dei tasti neri",
+     "g": "Usare i gruppi di due e tre tasti neri come mappa della tastiera.",
+     "p": [
+      "I tasti neri si alternano in gruppi di due e di tre lungo tutta la tastiera.",
+      "Lo schema si ripete ogni 12 tasti: se conosci una sezione, le conosci tutte.",
+      "Ogni tasto bianco ha un posto fisso accanto a questi gruppi: così si trovano le note senza contare."
+     ],
+     "q": "Riesci a vedere subito i gruppi di due e di tre sulla tua tastiera?",
+     "c": "Suona tutti i gruppi di due neri dal grave all'acuto con le dita 2 e 3, poi quelli di tre con 2, 3 e 4."
+    },
+    "pt": {
+     "t": "O padrão das teclas pretas",
+     "g": "Usar os grupos de duas e três teclas pretas como mapa do teclado.",
+     "p": [
+      "As teclas pretas alternam em grupos de duas e de três ao longo de todo o teclado.",
+      "O padrão repete-se a cada 12 teclas: se conheces uma secção, conheces todas.",
+      "Cada tecla branca tem um lugar fixo junto destes grupos; é assim que se encontram as notas sem contar."
+     ],
+     "q": "Consegues ver logo os grupos de duas e de três no teu teclado?",
+     "c": "Toca todos os grupos de duas pretas do grave ao agudo com os dedos 2 e 3, e depois os de três com 2, 3 e 4."
+    },
+    "pt_BR": {
+     "t": "O padrão das teclas pretas",
+     "g": "Usar os grupos de duas e três teclas pretas como mapa do teclado.",
+     "p": [
+      "As teclas pretas se alternam em grupos de duas e de três ao longo de todo o teclado.",
+      "O padrão se repete a cada 12 teclas: se você conhece uma parte, conhece todas.",
+      "Cada tecla branca tem um lugar fixo junto desses grupos; é assim que se acham as notas sem contar."
+     ],
+     "q": "Você enxerga logo os grupos de duas e de três no seu teclado?",
+     "c": "Toque todos os grupos de duas pretas do grave ao agudo com os dedos 2 e 3, depois os de três com 2, 3 e 4."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding middle C",
+     "g": "Find middle C and every other C using the black-key groups.",
+     "p": [
+      "C is always the white key just to the left of a group of two black keys.",
+      "Middle C is the C closest to the centre of the piano, usually right in front of the brand name.",
+      "An 88-key piano has eight Cs; middle C is your home base for reading and for hand positions."
+     ],
+     "q": "How quickly can you find middle C without looking twice?",
+     "c": "Play every C from the bottom to the top, then close your eyes, open them and find middle C at once."
+    },
+    "de": {
+     "t": "Das mittlere C finden",
+     "g": "Das mittlere C und alle anderen C mithilfe der schwarzen Tastengruppen finden.",
+     "p": [
+      "C ist immer die weiße Taste direkt links von einer Zweiergruppe schwarzer Tasten.",
+      "Das mittlere C liegt der Mitte des Klaviers am nächsten, meist direkt vor dem Markennamen.",
+      "Ein Klavier mit 88 Tasten hat acht C; das mittlere C ist deine Basis zum Notenlesen und für Handpositionen."
+     ],
+     "q": "Wie schnell findest du das mittlere C, ohne zweimal hinzusehen?",
+     "c": "Spiel alle C von unten nach oben, dann Augen zu, Augen auf und sofort das mittlere C finden."
+    },
+    "es": {
+     "t": "Encontrar el Do central",
+     "g": "Localizar el Do central y todos los demás Do gracias a los grupos de teclas negras.",
+     "p": [
+      "Do es siempre la tecla blanca justo a la izquierda de un grupo de dos teclas negras.",
+      "El Do central es el más cercano al centro del piano, normalmente delante del nombre de la marca.",
+      "Un piano de 88 teclas tiene ocho Do; el Do central es tu base para leer y colocar las manos."
+     ],
+     "q": "¿Cuánto tardas en encontrar el Do central sin dudar?",
+     "c": "Toca todos los Do de grave a agudo; luego cierra los ojos, ábrelos y encuentra el Do central al instante."
+    },
+    "fr": {
+     "t": "Trouver le do central",
+     "g": "Repérer le do central et tous les autres do grâce aux groupes de touches noires.",
+     "p": [
+      "Le do est toujours la touche blanche juste à gauche d'un groupe de deux touches noires.",
+      "Le do central est le plus proche du milieu du piano, souvent juste devant le nom de la marque.",
+      "Un piano de 88 touches a huit do ; le do central est ta base pour lire et placer les mains."
+     ],
+     "q": "En combien de temps trouves-tu le do central sans hésiter ?",
+     "c": "Joue tous les do du grave à l'aigu, puis ferme les yeux, rouvre-les et trouve aussitôt le do central."
+    },
+    "it": {
+     "t": "Trovare il Do centrale",
+     "g": "Trovare il Do centrale e tutti gli altri Do grazie ai gruppi di tasti neri.",
+     "p": [
+      "Il Do è sempre il tasto bianco subito a sinistra di un gruppo di due tasti neri.",
+      "Il Do centrale è quello più vicino al centro del pianoforte, di solito davanti al nome della marca.",
+      "Un pianoforte di 88 tasti ha otto Do; il Do centrale è la tua base per leggere e posizionare le mani."
+     ],
+     "q": "Quanto ci metti a trovare il Do centrale senza esitare?",
+     "c": "Suona tutti i Do dal grave all'acuto, poi chiudi gli occhi, riaprili e trova subito il Do centrale."
+    },
+    "pt": {
+     "t": "Encontrar o dó central",
+     "g": "Localizar o dó central e todos os outros dós com a ajuda dos grupos de teclas pretas.",
+     "p": [
+      "O dó é sempre a tecla branca logo à esquerda de um grupo de duas teclas pretas.",
+      "O dó central é o mais próximo do meio do piano, normalmente em frente ao nome da marca.",
+      "Um piano de 88 teclas tem oito dós; o dó central é a tua base para ler e posicionar as mãos."
+     ],
+     "q": "Quanto tempo demoras a encontrar o dó central sem hesitar?",
+     "c": "Toca todos os dós do grave ao agudo; depois fecha os olhos, abre-os e encontra logo o dó central."
+    },
+    "pt_BR": {
+     "t": "Encontrando o dó central",
+     "g": "Localizar o dó central e todos os outros dós usando os grupos de teclas pretas.",
+     "p": [
+      "O dó é sempre a tecla branca logo à esquerda de um grupo de duas teclas pretas.",
+      "O dó central é o mais próximo do meio do piano, geralmente na frente do nome da marca.",
+      "Um piano de 88 teclas tem oito dós; o dó central é sua base para ler e posicionar as mãos."
+     ],
+     "q": "Quanto tempo você leva para achar o dó central sem hesitar?",
+     "c": "Toque todos os dós do grave ao agudo; depois feche os olhos, abra e encontre o dó central na hora."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The musical alphabet",
+     "g": "Learn the seven note names that repeat along the white keys.",
+     "p": [
+      "Music uses only seven letters, A B C D E F G, then starts again at A.",
+      "Going right the letters move forward and the sound gets higher; going left they move backward and lower.",
+      "Two keys with the same letter are an octave apart and sound like a higher or lower version of each other."
+     ],
+     "q": "Can you say the musical alphabet backwards from G as fast as forwards?",
+     "c": "Starting on any C, play up the white keys saying C D E F G A B C aloud, then come back down."
+    },
+    "de": {
+     "t": "Das musikalische Alphabet",
+     "g": "Die sieben Notennamen lernen, die sich auf den weißen Tasten wiederholen.",
+     "p": [
+      "Im Deutschen heißen die weißen Tasten C D E F G A H, danach beginnt es wieder bei C.",
+      "Achtung: Das deutsche H ist das englische B; ein deutsches B ist der Ton eine schwarze Taste darunter.",
+      "Zwei Tasten mit gleichem Namen liegen eine Oktave auseinander und klingen wie höhere oder tiefere Zwillinge."
+     ],
+     "q": "Kannst du die Tonnamen von H abwärts so schnell sagen wie aufwärts?",
+     "c": "Spiel ab einem C die weißen Tasten aufwärts und sag laut C D E F G A H C, dann wieder abwärts."
+    },
+    "es": {
+     "t": "El alfabeto musical",
+     "g": "Aprender los siete nombres de notas que se repiten en las teclas blancas.",
+     "p": [
+      "Las notas son siete: Do Re Mi Fa Sol La Si, y después se vuelve a empezar por Do.",
+      "En los cifrados se usan letras: C es Do, D Re, E Mi, F Fa, G Sol, A La y B Si.",
+      "Dos teclas con el mismo nombre están a una octava y suenan como versiones más aguda o grave una de otra."
+     ],
+     "q": "¿Puedes decir las notas al revés, desde Si, tan rápido como hacia delante?",
+     "c": "Desde cualquier Do, sube por las teclas blancas diciendo en voz alta Do Re Mi Fa Sol La Si Do y vuelve a bajar."
+    },
+    "fr": {
+     "t": "L'alphabet musical",
+     "g": "Apprendre les sept noms de notes qui se répètent sur les touches blanches.",
+     "p": [
+      "Il y a sept notes : do ré mi fa sol la si, puis on recommence à do.",
+      "Les grilles d'accords utilisent des lettres : C do, D ré, E mi, F fa, G sol, A la, B si.",
+      "Deux touches du même nom sont à une octave d'écart et sonnent comme la version aiguë ou grave l'une de l'autre."
+     ],
+     "q": "Arrives-tu à dire les notes à l'envers, depuis si, aussi vite qu'à l'endroit ?",
+     "c": "Depuis un do, monte les touches blanches en disant à voix haute do ré mi fa sol la si do, puis redescends."
+    },
+    "it": {
+     "t": "L'alfabeto musicale",
+     "g": "Imparare i sette nomi delle note che si ripetono sui tasti bianchi.",
+     "p": [
+      "Le note sono sette: Do Re Mi Fa Sol La Si, poi si ricomincia dal Do.",
+      "Nelle sigle degli accordi si usano lettere: C Do, D Re, E Mi, F Fa, G Sol, A La, B Si.",
+      "Due tasti con lo stesso nome distano un'ottava e suonano come versioni più acute o più gravi l'uno dell'altro."
+     ],
+     "q": "Riesci a dire le note al contrario, dal Si, veloce come in avanti?",
+     "c": "Da un Do qualsiasi sali sui tasti bianchi dicendo ad alta voce Do Re Mi Fa Sol La Si Do, poi scendi."
+    },
+    "pt": {
+     "t": "O alfabeto musical",
+     "g": "Aprender os sete nomes das notas que se repetem nas teclas brancas.",
+     "p": [
+      "As notas são sete: dó ré mi fá sol lá si, e depois volta-se a começar no dó.",
+      "Nas cifras usam-se letras: C dó, D ré, E mi, F fá, G sol, A lá e B si.",
+      "Duas teclas com o mesmo nome estão a uma oitava e soam como versões mais aguda ou grave uma da outra."
+     ],
+     "q": "Consegues dizer as notas ao contrário, desde o si, tão depressa como para a frente?",
+     "c": "A partir de um dó, sobe pelas teclas brancas dizendo alto dó ré mi fá sol lá si dó, e depois desce."
+    },
+    "pt_BR": {
+     "t": "O alfabeto musical",
+     "g": "Aprender os sete nomes das notas que se repetem nas teclas brancas.",
+     "p": [
+      "As notas são sete: dó ré mi fá sol lá si, e depois tudo recomeça no dó.",
+      "Nas cifras usamos letras: C dó, D ré, E mi, F fá, G sol, A lá e B si.",
+      "Duas teclas com o mesmo nome ficam a uma oitava e soam como versões mais aguda ou grave uma da outra."
+     ],
+     "q": "Você consegue dizer as notas de trás para frente, a partir do si, tão rápido quanto para frente?",
+     "c": "A partir de um dó, suba pelas teclas brancas falando alto dó ré mi fá sol lá si dó, e depois desça."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming every white key",
+     "g": "Use the black-key groups to find D, E, F, G, A and B anywhere on the keyboard.",
+     "p": [
+      "Around the group of two: C on the left, D in the middle, E on the right.",
+      "Around the group of three: F on the left, then G and A in the gaps, and B on the right.",
+      "Say the note name every time you play a key; it builds the link between hand, eye and ear."
+     ],
+     "q": "Which note takes you the longest to find right now?",
+     "c": "Pick a letter, play every key with that name from bottom to top, and repeat with all seven letters."
+    },
+    "de": {
+     "t": "Alle weißen Tasten benennen",
+     "g": "Mit den schwarzen Tastengruppen D, E, F, G, A und H überall auf der Tastatur finden.",
+     "p": [
+      "Um die Zweiergruppe herum: links C, in der Mitte D, rechts E.",
+      "Um die Dreiergruppe herum: links F, in den Lücken G und A, rechts H.",
+      "Sag bei jeder gespielten Taste ihren Namen; so verbinden sich Hand, Auge und Ohr."
+     ],
+     "q": "Welchen Ton brauchst du im Moment am längsten zu finden?",
+     "c": "Wähl einen Tonnamen, spiel alle Tasten mit diesem Namen von unten nach oben und mach das mit allen sieben."
+    },
+    "es": {
+     "t": "Nombrar todas las teclas blancas",
+     "g": "Usar los grupos de teclas negras para hallar Re, Mi, Fa, Sol, La y Si en cualquier lugar.",
+     "p": [
+      "Alrededor del grupo de dos: Do a la izquierda, Re en medio y Mi a la derecha.",
+      "Alrededor del grupo de tres: Fa a la izquierda, Sol y La en los huecos y Si a la derecha.",
+      "Di el nombre de la nota cada vez que tocas una tecla: así conectas mano, vista y oído."
+     ],
+     "q": "¿Qué nota te cuesta más encontrar ahora mismo?",
+     "c": "Elige una nota, toca todas las teclas con ese nombre de grave a agudo y repite con las siete."
+    },
+    "fr": {
+     "t": "Nommer toutes les touches blanches",
+     "g": "Utiliser les groupes de touches noires pour trouver ré, mi, fa, sol, la et si partout.",
+     "p": [
+      "Autour du groupe de deux : do à gauche, ré au milieu, mi à droite.",
+      "Autour du groupe de trois : fa à gauche, sol et la dans les creux, si à droite.",
+      "Dis le nom de la note à chaque touche jouée : tu relies ainsi la main, l'œil et l'oreille."
+     ],
+     "q": "Quelle note mets-tu le plus de temps à trouver en ce moment ?",
+     "c": "Choisis une note, joue toutes les touches de ce nom du grave à l'aigu, puis recommence avec les sept."
+    },
+    "it": {
+     "t": "Dare un nome a ogni tasto bianco",
+     "g": "Usare i gruppi di tasti neri per trovare Re, Mi, Fa, Sol, La e Si ovunque sulla tastiera.",
+     "p": [
+      "Intorno al gruppo di due: Do a sinistra, Re in mezzo, Mi a destra.",
+      "Intorno al gruppo di tre: Fa a sinistra, Sol e La negli spazi, Si a destra.",
+      "Di' il nome della nota ogni volta che suoni un tasto: colleghi mano, occhio e orecchio."
+     ],
+     "q": "Quale nota fai più fatica a trovare in questo momento?",
+     "c": "Scegli una nota, suona tutti i tasti con quel nome dal grave all'acuto e ripeti con tutte e sette."
+    },
+    "pt": {
+     "t": "Dar nome a todas as teclas brancas",
+     "g": "Usar os grupos de teclas pretas para encontrar ré, mi, fá, sol, lá e si em qualquer sítio.",
+     "p": [
+      "À volta do grupo de duas: dó à esquerda, ré no meio e mi à direita.",
+      "À volta do grupo de três: fá à esquerda, sol e lá nos espaços e si à direita.",
+      "Diz o nome da nota sempre que tocas uma tecla: assim ligas a mão, os olhos e o ouvido."
+     ],
+     "q": "Que nota demoras mais a encontrar neste momento?",
+     "c": "Escolhe uma nota, toca todas as teclas com esse nome do grave ao agudo e repete com as sete."
+    },
+    "pt_BR": {
+     "t": "Dando nome a todas as teclas brancas",
+     "g": "Usar os grupos de teclas pretas para achar ré, mi, fá, sol, lá e si em qualquer lugar.",
+     "p": [
+      "Em volta do grupo de duas: dó à esquerda, ré no meio e mi à direita.",
+      "Em volta do grupo de três: fá à esquerda, sol e lá nos espaços e si à direita.",
+      "Diga o nome da nota sempre que tocar uma tecla: assim você conecta mão, olhos e ouvido."
+     ],
+     "q": "Qual nota você mais demora para encontrar agora?",
+     "c": "Escolha uma nota, toque todas as teclas com esse nome do grave ao agudo e repita com as sete."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First notes with the right hand",
+     "g": "Play C, D, E, F and G with right-hand fingers 1 to 5 in the C position.",
+     "p": [
+      "Place thumb 1 on middle C and let fingers 2, 3, 4 and 5 rest on D, E, F and G.",
+      "Press each key with the fingertip and let the weight of the arm help; the other fingers stay resting.",
+      "Lift one finger as the next one goes down, so the sound passes evenly from note to note."
+     ],
+     "q": "How does it feel to play with your weaker fourth and fifth fingers?",
+     "c": "Play C D E F G and back down five times slowly, saying the note names, with an even sound."
+    },
+    "de": {
+     "t": "Erste Töne mit der rechten Hand",
+     "g": "C, D, E, F und G mit den Fingern 1 bis 5 der rechten Hand in der C-Lage spielen.",
+     "p": [
+      "Daumen 1 aufs mittlere C, die Finger 2, 3, 4 und 5 liegen auf D, E, F und G.",
+      "Drück jede Taste mit der Fingerkuppe, lass das Armgewicht helfen; die anderen Finger bleiben liegen.",
+      "Heb einen Finger, während der nächste sinkt, damit der Klang gleichmäßig von Ton zu Ton wandert."
+     ],
+     "q": "Wie fühlt es sich an, mit dem schwächeren vierten und fünften Finger zu spielen?",
+     "c": "Spiel C D E F G und zurück, fünfmal langsam, sag die Tonnamen und achte auf gleichmäßigen Klang."
+    },
+    "es": {
+     "t": "Primeras notas con la mano derecha",
+     "g": "Tocar Do, Re, Mi, Fa y Sol con los dedos 1 a 5 de la mano derecha en posición de Do.",
+     "p": [
+      "Pon el pulgar 1 en el Do central y deja los dedos 2, 3, 4 y 5 sobre Re, Mi, Fa y Sol.",
+      "Pulsa cada tecla con la yema y deja que ayude el peso del brazo; los demás dedos siguen apoyados.",
+      "Levanta un dedo mientras baja el siguiente, para que el sonido pase igual de nota a nota."
+     ],
+     "q": "¿Qué tal te sientes tocando con el cuarto y el quinto dedo, que son más débiles?",
+     "c": "Toca Do Re Mi Fa Sol y vuelve, cinco veces despacio, diciendo las notas y con un sonido parejo."
+    },
+    "fr": {
+     "t": "Premières notes à la main droite",
+     "g": "Jouer do, ré, mi, fa et sol avec les doigts 1 à 5 de la main droite en position de do.",
+     "p": [
+      "Pose le pouce 1 sur le do central ; les doigts 2, 3, 4 et 5 reposent sur ré, mi, fa et sol.",
+      "Enfonce chaque touche du bout du doigt en laissant le poids du bras aider ; les autres doigts restent posés.",
+      "Lève un doigt pendant que le suivant descend, pour que le son passe régulièrement d'une note à l'autre."
+     ],
+     "q": "Comment te sens-tu avec les doigts 4 et 5, plus faibles ?",
+     "c": "Joue do ré mi fa sol et retour cinq fois lentement, en disant les notes, avec un son bien égal."
+    },
+    "it": {
+     "t": "Prime note con la mano destra",
+     "g": "Suonare Do, Re, Mi, Fa e Sol con le dita 1-5 della mano destra in posizione di Do.",
+     "p": [
+      "Metti il pollice 1 sul Do centrale e appoggia le dita 2, 3, 4 e 5 su Re, Mi, Fa e Sol.",
+      "Premi ogni tasto con il polpastrello lasciando aiutare il peso del braccio; le altre dita restano appoggiate.",
+      "Alza un dito mentre scende il successivo, così il suono passa uniforme da una nota all'altra."
+     ],
+     "q": "Come ti senti a suonare con il quarto e il quinto dito, più deboli?",
+     "c": "Suona Do Re Mi Fa Sol e ritorno cinque volte piano, dicendo le note, con un suono uniforme."
+    },
+    "pt": {
+     "t": "Primeiras notas com a mão direita",
+     "g": "Tocar dó, ré, mi, fá e sol com os dedos 1 a 5 da mão direita na posição de dó.",
+     "p": [
+      "Põe o polegar 1 no dó central e deixa os dedos 2, 3, 4 e 5 pousados em ré, mi, fá e sol.",
+      "Carrega cada tecla com a ponta do dedo e deixa o peso do braço ajudar; os outros dedos ficam pousados.",
+      "Levanta um dedo enquanto o seguinte desce, para o som passar de forma igual de nota para nota."
+     ],
+     "q": "Como te sentes a tocar com o quarto e o quinto dedos, que são mais fracos?",
+     "c": "Toca dó ré mi fá sol e volta cinco vezes devagar, dizendo as notas, com um som igual."
+    },
+    "pt_BR": {
+     "t": "Primeiras notas com a mão direita",
+     "g": "Tocar dó, ré, mi, fá e sol com os dedos 1 a 5 da mão direita na posição de dó.",
+     "p": [
+      "Coloque o polegar 1 no dó central e deixe os dedos 2, 3, 4 e 5 apoiados em ré, mi, fá e sol.",
+      "Aperte cada tecla com a ponta do dedo e deixe o peso do braço ajudar; os outros dedos ficam apoiados.",
+      "Levante um dedo enquanto o próximo desce, para o som passar por igual de uma nota para outra."
+     ],
+     "q": "Como é tocar com o quarto e o quinto dedos, que são mais fracos?",
+     "c": "Toque dó ré mi fá sol e volte, cinco vezes devagar, falando as notas e com um som uniforme."
+    }
+   }
+  }
+ ]
+}

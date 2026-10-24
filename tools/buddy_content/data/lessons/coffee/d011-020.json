@@ -1,0 +1,835 @@
+{
+ "topic": "coffee",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a coffee bag",
+     "g": "Learn to read the label on a coffee bag: origin, roast date, process, variety and tasting notes.",
+     "p": [
+      "Origin tells you the country, region or even the farm, and the roast date tells you how fresh the beans are.",
+      "Process, such as washed or natural, and variety, such as Bourbon or Typica, hint at the flavour style.",
+      "Tasting notes like 'cherry, cocoa' describe flavours the roaster finds; no fruit or chocolate is added."
+     ],
+     "q": "What information would you look for first on a coffee bag, and why?",
+     "c": "Pick up any coffee bag or look one up and find its origin, roast date and tasting notes."
+    },
+    "de": {
+     "t": "Eine Kaffeetüte lesen",
+     "g": "Lerne, das Etikett einer Kaffeetüte zu lesen: Herkunft, Röstdatum, Aufbereitung, Varietät und Aromen.",
+     "p": [
+      "Die Herkunft nennt Land, Region oder sogar die Farm, und das Röstdatum zeigt, wie frisch die Bohnen sind.",
+      "Aufbereitung, etwa gewaschen oder natural, und Varietät, etwa Bourbon oder Typica, deuten den Geschmacksstil an.",
+      "Aromen wie ‚Kirsche, Kakao‘ beschreiben, was der Röster schmeckt; Frucht oder Schokolade wird nicht zugesetzt."
+     ],
+     "q": "Welche Angabe würdest du auf einer Kaffeetüte zuerst suchen, und warum?",
+     "c": "Nimm eine Kaffeetüte zur Hand oder suche eine online und finde Herkunft, Röstdatum und Aromen."
+    },
+    "es": {
+     "t": "Cómo leer una bolsa de café",
+     "g": "Aprende a leer la etiqueta de una bolsa de café: origen, fecha de tueste, proceso, variedad y notas de cata.",
+     "p": [
+      "El origen indica el país, la región o incluso la finca, y la fecha de tueste te dice lo fresco que está el café.",
+      "El proceso, como lavado o natural, y la variedad, como Bourbon o Typica, anticipan el estilo de sabor.",
+      "Las notas como «cereza, cacao» describen sabores que percibe el tostador; no se añade fruta ni chocolate."
+     ],
+     "q": "¿Qué dato buscarías primero en una bolsa de café y por qué?",
+     "c": "Toma una bolsa de café o busca una en internet y encuentra su origen, fecha de tueste y notas de cata."
+    },
+    "fr": {
+     "t": "Lire un paquet de café",
+     "g": "Apprends à lire l'étiquette d'un paquet de café : origine, date de torréfaction, procédé, variété et notes.",
+     "p": [
+      "L'origine indique le pays, la région ou même la ferme, et la date de torréfaction dit à quel point le café est frais.",
+      "Le procédé, lavé ou nature, et la variété, comme Bourbon ou Typica, donnent une idée du style de goût.",
+      "Les notes comme « cerise, cacao » décrivent des saveurs perçues par le torréfacteur : rien n'est ajouté."
+     ],
+     "q": "Quelle information chercherais-tu en premier sur un paquet de café, et pourquoi ?",
+     "c": "Prends un paquet de café ou trouve-en un en ligne et repère l'origine, la date de torréfaction et les notes."
+    },
+    "it": {
+     "t": "Leggere un pacchetto di caffè",
+     "g": "Impara a leggere l'etichetta di un pacchetto di caffè: origine, data di tostatura, processo, varietà e note.",
+     "p": [
+      "L'origine indica paese, regione o perfino la fattoria, e la data di tostatura ti dice quanto è fresco il caffè.",
+      "Il processo, come lavato o naturale, e la varietà, come Bourbon o Typica, suggeriscono lo stile del gusto.",
+      "Le note come «ciliegia, cacao» descrivono sapori percepiti dal torrefattore: non si aggiunge frutta né cioccolato."
+     ],
+     "q": "Quale informazione cercheresti per prima su un pacchetto di caffè, e perché?",
+     "c": "Prendi un pacchetto di caffè o cercane uno online e trova origine, data di tostatura e note di degustazione."
+    },
+    "pt": {
+     "t": "Ler um pacote de café",
+     "g": "Aprende a ler o rótulo de um pacote de café: origem, data de torra, processo, variedade e notas de prova.",
+     "p": [
+      "A origem indica o país, a região ou até a quinta, e a data de torra diz-te quão fresco está o café.",
+      "O processo, como lavado ou natural, e a variedade, como Bourbon ou Typica, dão pistas sobre o estilo de sabor.",
+      "Notas como «cereja, cacau» descrevem sabores que o torrefator encontra; não se junta fruta nem chocolate."
+     ],
+     "q": "Que informação procurarias primeiro num pacote de café, e porquê?",
+     "c": "Pega num pacote de café ou procura um online e encontra a origem, a data de torra e as notas de prova."
+    },
+    "pt_BR": {
+     "t": "Lendo um pacote de café",
+     "g": "Aprenda a ler o rótulo de um pacote de café: origem, data de torra, processo, variedade e notas sensoriais.",
+     "p": [
+      "A origem indica o país, a região ou até a fazenda, e a data de torra mostra quão fresco o café está.",
+      "O processo, como lavado ou natural, e a variedade, como Bourbon ou Catuaí, dão pistas sobre o estilo de sabor.",
+      "Notas como 'cereja, cacau' descrevem sabores que o torrador percebe; ninguém adiciona fruta ou chocolate."
+     ],
+     "q": "Qual informação você procuraria primeiro num pacote de café, e por quê?",
+     "c": "Pegue um pacote de café ou procure um online e encontre a origem, a data de torra e as notas sensoriais."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freshness matters",
+     "g": "See why the roast date counts and when beans are at their best for brewing.",
+     "p": [
+      "Right after roasting, beans release a lot of carbon dioxide, so many people let them rest a few days first.",
+      "Most roasted coffee tastes its best within roughly a month of roasting, then slowly turns flat and dull.",
+      "A 'best before' date alone says little; a roast date helps you know exactly how fresh your coffee is."
+     ],
+     "q": "Do you usually check when your coffee was roasted, or is this new for you?",
+     "c": "Find the roast date on your coffee and work out how many days old the beans are today."
+    },
+    "de": {
+     "t": "Frische zählt",
+     "g": "Verstehe, warum das Röstdatum wichtig ist und wann Bohnen sich am besten zum Brühen eignen.",
+     "p": [
+      "Direkt nach dem Rösten geben Bohnen viel Kohlendioxid ab, deshalb lassen viele sie erst ein paar Tage ruhen.",
+      "Die meisten Röstkaffees schmecken etwa im ersten Monat nach der Röstung am besten und werden dann langsam flach.",
+      "Ein Mindesthaltbarkeitsdatum allein sagt wenig; ein Röstdatum zeigt dir genau, wie frisch dein Kaffee ist."
+     ],
+     "q": "Achtest du normalerweise darauf, wann dein Kaffee geröstet wurde, oder ist das neu für dich?",
+     "c": "Finde das Röstdatum auf deinem Kaffee und rechne aus, wie viele Tage alt die Bohnen heute sind."
+    },
+    "es": {
+     "t": "La frescura importa",
+     "g": "Descubre por qué importa la fecha de tueste y cuándo están los granos en su mejor momento.",
+     "p": [
+      "Justo después del tueste, los granos liberan mucho dióxido de carbono, así que muchos los dejan reposar unos días.",
+      "La mayoría del café tostado sabe mejor durante más o menos el primer mes y luego se vuelve plano y apagado.",
+      "Una fecha de consumo preferente dice poco; la fecha de tueste te indica exactamente lo fresco que está tu café."
+     ],
+     "q": "¿Sueles mirar cuándo se tostó tu café o es algo nuevo para ti?",
+     "c": "Busca la fecha de tueste de tu café y calcula cuántos días tienen hoy los granos."
+    },
+    "fr": {
+     "t": "La fraîcheur compte",
+     "g": "Comprends pourquoi la date de torréfaction compte et quand les grains sont au meilleur pour l'infusion.",
+     "p": [
+      "Juste après la torréfaction, les grains libèrent beaucoup de gaz carbonique : on les laisse souvent reposer quelques jours.",
+      "La plupart des cafés torréfiés sont à leur meilleur pendant environ un mois, puis deviennent plats et ternes.",
+      "Une date limite seule dit peu de chose ; la date de torréfaction t'indique précisément la fraîcheur de ton café."
+     ],
+     "q": "Regardes-tu d'habitude quand ton café a été torréfié, ou est-ce nouveau pour toi ?",
+     "c": "Trouve la date de torréfaction de ton café et calcule l'âge des grains en jours aujourd'hui."
+    },
+    "it": {
+     "t": "La freschezza conta",
+     "g": "Scopri perché la data di tostatura è importante e quando i chicchi danno il meglio in tazza.",
+     "p": [
+      "Subito dopo la tostatura i chicchi rilasciano molta anidride carbonica, per questo spesso si lasciano riposare qualche giorno.",
+      "La maggior parte del caffè tostato è al meglio entro circa un mese, poi diventa piatto e spento.",
+      "La sola data di scadenza dice poco; la data di tostatura ti indica esattamente quanto è fresco il tuo caffè."
+     ],
+     "q": "Di solito controlli quando è stato tostato il tuo caffè, o è una novità per te?",
+     "c": "Trova la data di tostatura del tuo caffè e calcola quanti giorni hanno oggi i chicchi."
+    },
+    "pt": {
+     "t": "A frescura importa",
+     "g": "Percebe porque é que a data de torra conta e quando os grãos estão no seu melhor para preparar café.",
+     "p": [
+      "Logo após a torra, os grãos libertam muito dióxido de carbono, por isso muitos deixam-nos repousar uns dias.",
+      "A maior parte do café torrado está no seu melhor durante cerca de um mês e depois fica sem graça.",
+      "Uma data de validade pouco diz; a data de torra mostra-te exatamente quão fresco está o teu café."
+     ],
+     "q": "Costumas ver quando o teu café foi torrado, ou isto é novidade para ti?",
+     "c": "Encontra a data de torra do teu café e calcula quantos dias têm hoje os grãos."
+    },
+    "pt_BR": {
+     "t": "Frescor faz diferença",
+     "g": "Entenda por que a data de torra importa e quando os grãos estão no melhor momento para o preparo.",
+     "p": [
+      "Logo depois da torra, os grãos liberam muito gás carbônico, por isso muita gente deixa descansar alguns dias.",
+      "A maior parte do café torrado fica no auge por cerca de um mês e depois vai perdendo a graça.",
+      "Só a data de validade diz pouco; a data de torra mostra exatamente quão fresco está o seu café."
+     ],
+     "q": "Você costuma olhar quando o seu café foi torrado, ou isso é novidade?",
+     "c": "Encontre a data de torra do seu café e calcule quantos dias os grãos têm hoje."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storing coffee at home",
+     "g": "Keep your beans fresh longer by storing them airtight, dark, cool and dry.",
+     "p": [
+      "Air, light, heat and moisture are coffee's enemies, so use an opaque, airtight container or a resealable bag.",
+      "A cupboard away from the stove works well; the fridge is a poor choice because of moisture and food smells.",
+      "For longer storage you can freeze beans in small sealed portions and take out only what you need."
+     ],
+     "q": "Where do you keep your coffee at home right now?",
+     "c": "Move your coffee to the coolest, darkest cupboard you have and make sure the bag is tightly closed."
+    },
+    "de": {
+     "t": "Kaffee zu Hause lagern",
+     "g": "Halte deine Bohnen länger frisch: luftdicht, dunkel, kühl und trocken gelagert.",
+     "p": [
+      "Luft, Licht, Wärme und Feuchtigkeit sind Feinde des Kaffees, also nutze eine lichtdichte, luftdichte Dose.",
+      "Ein Schrank fern vom Herd ist ideal; der Kühlschrank ist wegen Feuchtigkeit und Essensgerüchen keine gute Wahl.",
+      "Für längere Zeit kannst du Bohnen portionsweise luftdicht einfrieren und nur nehmen, was du brauchst."
+     ],
+     "q": "Wo bewahrst du deinen Kaffee zu Hause gerade auf?",
+     "c": "Stell deinen Kaffee in den kühlsten, dunkelsten Schrank und sorge dafür, dass die Tüte gut verschlossen ist."
+    },
+    "es": {
+     "t": "Cómo guardar el café en casa",
+     "g": "Mantén tus granos frescos más tiempo guardándolos herméticos, a oscuras, en sitio fresco y seco.",
+     "p": [
+      "El aire, la luz, el calor y la humedad son enemigos del café: usa un bote opaco y hermético o una bolsa con cierre.",
+      "Un armario lejos de la cocina va bien; la nevera es mala opción por la humedad y los olores de la comida.",
+      "Para guardarlo más tiempo puedes congelar los granos en porciones cerradas y sacar solo lo que necesites."
+     ],
+     "q": "¿Dónde guardas ahora mismo el café en casa?",
+     "c": "Pasa tu café al armario más fresco y oscuro que tengas y asegúrate de que la bolsa queda bien cerrada."
+    },
+    "fr": {
+     "t": "Conserver le café à la maison",
+     "g": "Garde tes grains frais plus longtemps : à l'abri de l'air, de la lumière, de la chaleur et de l'humidité.",
+     "p": [
+      "L'air, la lumière, la chaleur et l'humidité sont les ennemis du café : utilise une boîte opaque et hermétique.",
+      "Un placard loin de la cuisinière convient bien ; le frigo est un mauvais choix à cause de l'humidité et des odeurs.",
+      "Pour plus longtemps, tu peux congeler les grains en petites portions fermées et ne sortir que ce dont tu as besoin."
+     ],
+     "q": "Où ranges-tu ton café à la maison en ce moment ?",
+     "c": "Range ton café dans le placard le plus frais et sombre que tu aies et vérifie que le sac est bien fermé."
+    },
+    "it": {
+     "t": "Conservare il caffè a casa",
+     "g": "Mantieni i chicchi freschi più a lungo: al riparo da aria, luce, calore e umidità.",
+     "p": [
+      "Aria, luce, calore e umidità sono nemici del caffè: usa un barattolo opaco ed ermetico o una busta richiudibile.",
+      "Una dispensa lontana dai fornelli va bene; il frigo è una cattiva scelta per l'umidità e gli odori dei cibi.",
+      "Per tempi lunghi puoi congelare i chicchi in piccole porzioni sigillate e prendere solo quello che ti serve."
+     ],
+     "q": "Dove tieni il caffè a casa in questo momento?",
+     "c": "Sposta il tuo caffè nella dispensa più fresca e buia che hai e assicurati che la busta sia ben chiusa."
+    },
+    "pt": {
+     "t": "Guardar café em casa",
+     "g": "Mantém os teus grãos frescos por mais tempo, guardando-os bem fechados, no escuro, frescos e secos.",
+     "p": [
+      "O ar, a luz, o calor e a humidade são inimigos do café: usa um recipiente opaco e hermético ou um saco com fecho.",
+      "Um armário longe do fogão funciona bem; o frigorífico é má escolha por causa da humidade e dos cheiros.",
+      "Para guardar mais tempo podes congelar os grãos em pequenas porções fechadas e tirar só o que precisas."
+     ],
+     "q": "Onde guardas o teu café em casa neste momento?",
+     "c": "Muda o teu café para o armário mais fresco e escuro que tiveres e garante que o saco fica bem fechado."
+    },
+    "pt_BR": {
+     "t": "Guardando café em casa",
+     "g": "Mantenha seus grãos frescos por mais tempo, guardando bem fechados, no escuro, em lugar fresco e seco.",
+     "p": [
+      "Ar, luz, calor e umidade são inimigos do café: use um pote opaco e hermético ou um pacote com zíper.",
+      "Um armário longe do fogão funciona bem; a geladeira é má escolha por causa da umidade e dos cheiros.",
+      "Para guardar por mais tempo, congele os grãos em porções pequenas bem fechadas e tire só o que for usar."
+     ],
+     "q": "Onde você guarda o seu café em casa hoje?",
+     "c": "Leve o seu café para o armário mais fresco e escuro da casa e confira se o pacote está bem fechado."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Whole bean or pre-ground",
+     "g": "Understand why grinding just before brewing makes such a big difference.",
+     "p": [
+      "Grinding opens up the bean and exposes far more surface to air, so aroma escapes within minutes.",
+      "Whole beans keep their flavour for weeks, while pre-ground coffee loses freshness much faster.",
+      "Pre-ground is still handy: buy small bags, keep them sealed and use them up quickly."
+     ],
+     "q": "Do you buy whole beans or ground coffee, and what made you choose it?",
+     "c": "Smell freshly ground coffee and coffee ground a day ago, or ask a café to compare, and describe the difference."
+    },
+    "de": {
+     "t": "Ganze Bohne oder gemahlen",
+     "g": "Verstehe, warum Mahlen direkt vor dem Brühen so einen großen Unterschied macht.",
+     "p": [
+      "Beim Mahlen wird die Bohne geöffnet und viel mehr Oberfläche liegt an der Luft, sodass Aroma in Minuten entweicht.",
+      "Ganze Bohnen behalten ihren Geschmack wochenlang, gemahlener Kaffee verliert die Frische viel schneller.",
+      "Gemahlener Kaffee ist trotzdem praktisch: kauf kleine Packungen, halte sie verschlossen und verbrauche sie zügig."
+     ],
+     "q": "Kaufst du ganze Bohnen oder gemahlenen Kaffee, und warum?",
+     "c": "Riech an frisch gemahlenem Kaffee und an Pulver vom Vortag und beschreibe den Unterschied."
+    },
+    "es": {
+     "t": "Grano entero o molido",
+     "g": "Entiende por qué moler justo antes de preparar el café marca tanta diferencia.",
+     "p": [
+      "Al moler, el grano se abre y deja mucha más superficie expuesta al aire, así que el aroma escapa en minutos.",
+      "Los granos enteros conservan su sabor semanas, mientras que el café molido pierde frescura mucho antes.",
+      "El molido sigue siendo práctico: compra bolsas pequeñas, mantenlas cerradas y gástalas pronto."
+     ],
+     "q": "¿Compras café en grano o molido, y por qué lo elegiste?",
+     "c": "Huele café recién molido y café molido el día anterior y describe la diferencia."
+    },
+    "fr": {
+     "t": "En grains ou moulu",
+     "g": "Comprends pourquoi moudre juste avant l'infusion fait une si grande différence.",
+     "p": [
+      "La mouture ouvre le grain et expose bien plus de surface à l'air : les arômes s'échappent en quelques minutes.",
+      "Les grains entiers gardent leur goût des semaines, alors que le café moulu perd sa fraîcheur bien plus vite.",
+      "Le moulu reste pratique : achète de petits paquets, garde-les fermés et finis-les rapidement."
+     ],
+     "q": "Achètes-tu du café en grains ou moulu, et pourquoi ce choix ?",
+     "c": "Sens du café fraîchement moulu et du café moulu la veille, puis décris la différence."
+    },
+    "it": {
+     "t": "In grani o macinato",
+     "g": "Capisci perché macinare subito prima dell'estrazione fa una differenza così grande.",
+     "p": [
+      "Macinando, il chicco si apre ed espone molta più superficie all'aria: l'aroma svanisce in pochi minuti.",
+      "I chicchi interi mantengono il sapore per settimane, mentre il macinato perde freschezza molto prima.",
+      "Il macinato resta comodo: compra confezioni piccole, tienile chiuse e finiscile in fretta."
+     ],
+     "q": "Compri caffè in grani o macinato, e perché lo hai scelto?",
+     "c": "Annusa caffè appena macinato e caffè macinato il giorno prima e descrivi la differenza."
+    },
+    "pt": {
+     "t": "Em grão ou moído",
+     "g": "Percebe porque é que moer mesmo antes de preparar faz tanta diferença.",
+     "p": [
+      "Ao moer, o grão abre-se e expõe muito mais superfície ao ar, por isso o aroma escapa em minutos.",
+      "Os grãos inteiros mantêm o sabor durante semanas, enquanto o café moído perde frescura muito mais depressa.",
+      "O moído continua prático: compra embalagens pequenas, mantém-nas fechadas e gasta-as depressa."
+     ],
+     "q": "Compras café em grão ou moído, e porque o escolheste?",
+     "c": "Cheira café acabado de moer e café moído no dia anterior e descreve a diferença."
+    },
+    "pt_BR": {
+     "t": "Em grão ou moído",
+     "g": "Entenda por que moer logo antes do preparo faz tanta diferença.",
+     "p": [
+      "Ao moer, o grão se abre e expõe muito mais superfície ao ar, e o aroma escapa em poucos minutos.",
+      "Os grãos inteiros guardam o sabor por semanas, enquanto o café moído perde o frescor bem mais rápido.",
+      "O moído continua prático: compre pacotes pequenos, mantenha fechados e consuma logo."
+     ],
+     "q": "Você compra café em grão ou moído, e por que escolheu assim?",
+     "c": "Cheire café moído na hora e café moído no dia anterior e descreva a diferença."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blade and burr grinders",
+     "g": "Learn how blade and burr grinders work and why burrs give a more even grind.",
+     "p": [
+      "A blade grinder spins a metal blade that chops beans randomly, leaving dust and big chunks together.",
+      "A burr grinder crushes beans between two discs or cones, so you get particles of a much more even size.",
+      "Even particles extract evenly, which means fewer bitter or sour notes in the same cup."
+     ],
+     "q": "What kind of grinder do you have, or would you like to have one?",
+     "c": "Tip some ground coffee onto white paper and look closely: are the pieces similar in size or very mixed?"
+    },
+    "de": {
+     "t": "Schlagmessermühle und Mahlwerk",
+     "g": "Lerne, wie Schlagmessermühlen und Mühlen mit Mahlwerk arbeiten und warum ein Mahlwerk gleichmäßiger mahlt.",
+     "p": [
+      "Eine Schlagmessermühle zerhackt die Bohnen mit einem rotierenden Messer zufällig: Staub und grobe Stücke gemischt.",
+      "Ein Mahlwerk zerdrückt die Bohnen zwischen zwei Scheiben oder Kegeln und liefert viel gleichmäßigere Partikel.",
+      "Gleich große Partikel extrahieren gleichmäßig, also gibt es weniger bittere oder saure Noten in derselben Tasse."
+     ],
+     "q": "Welche Kaffeemühle hast du, oder hättest du gern eine?",
+     "c": "Streu etwas Kaffeepulver auf weißes Papier und schau genau hin: Sind die Teilchen ähnlich groß oder sehr gemischt?"
+    },
+    "es": {
+     "t": "Molinos de cuchillas y de muelas",
+     "g": "Aprende cómo funcionan los molinos de cuchillas y de muelas y por qué las muelas muelen más parejo.",
+     "p": [
+      "El molino de cuchillas gira una hoja que corta los granos al azar, mezclando polvo y trozos grandes.",
+      "El de muelas tritura los granos entre dos discos o conos, así que las partículas salen de tamaño mucho más uniforme.",
+      "Partículas uniformes se extraen por igual, lo que significa menos notas amargas o ácidas en la misma taza."
+     ],
+     "q": "¿Qué tipo de molino tienes, o te gustaría tener uno?",
+     "c": "Echa un poco de café molido sobre un papel blanco y míralo de cerca: ¿son trozos parecidos o muy mezclados?"
+    },
+    "fr": {
+     "t": "Moulins à lames et à meules",
+     "g": "Apprends comment fonctionnent les moulins à lames et à meules et pourquoi les meules donnent une mouture plus régulière.",
+     "p": [
+      "Le moulin à lames fait tourner une hélice qui hache les grains au hasard : poussière et gros morceaux se mélangent.",
+      "Le moulin à meules écrase les grains entre deux disques ou cônes, pour des particules de taille bien plus régulière.",
+      "Des particules régulières s'extraient de façon homogène : moins de notes amères ou acides dans la même tasse."
+     ],
+     "q": "Quel type de moulin as-tu, ou aimerais-tu en avoir un ?",
+     "c": "Verse un peu de café moulu sur une feuille blanche et observe : les morceaux sont-ils de taille proche ou très variée ?"
+    },
+    "it": {
+     "t": "Macinini a lame e a macine",
+     "g": "Scopri come funzionano i macinini a lame e a macine e perché le macine danno una macinatura più uniforme.",
+     "p": [
+      "Il macinino a lame fa girare una lama che trita i chicchi a caso, mescolando polvere e pezzi grossi.",
+      "Il macinino a macine schiaccia i chicchi tra due dischi o coni, con particelle di dimensioni molto più uniformi.",
+      "Particelle uniformi si estraggono in modo uniforme, quindi meno note amare o acide nella stessa tazza."
+     ],
+     "q": "Che tipo di macinino hai, o ti piacerebbe averne uno?",
+     "c": "Versa un po' di caffè macinato su un foglio bianco e guarda bene: i pezzi sono simili o molto diversi?"
+    },
+    "pt": {
+     "t": "Moinhos de lâminas e de mós",
+     "g": "Aprende como funcionam os moinhos de lâminas e de mós e porque as mós dão uma moagem mais uniforme.",
+     "p": [
+      "O moinho de lâminas roda uma hélice que corta os grãos ao acaso, misturando pó fino e pedaços grandes.",
+      "O moinho de mós esmaga os grãos entre dois discos ou cones, dando partículas de tamanho muito mais uniforme.",
+      "Partículas uniformes extraem por igual, o que significa menos notas amargas ou ácidas na mesma chávena."
+     ],
+     "q": "Que tipo de moinho tens, ou gostavas de ter um?",
+     "c": "Deita um pouco de café moído numa folha branca e observa: os pedaços são parecidos ou muito misturados?"
+    },
+    "pt_BR": {
+     "t": "Moedores de lâmina e de mó",
+     "g": "Aprenda como funcionam os moedores de lâmina e de mó e por que as mós moem de forma mais uniforme.",
+     "p": [
+      "O moedor de lâmina gira uma hélice que corta os grãos ao acaso, misturando pó fino e pedaços grandes.",
+      "O moedor de mó esmaga os grãos entre dois discos ou cones, gerando partículas de tamanho bem mais uniforme.",
+      "Partículas uniformes extraem por igual, o que significa menos notas amargas ou azedas na mesma xícara."
+     ],
+     "q": "Que tipo de moedor você tem, ou gostaria de ter um?",
+     "c": "Coloque um pouco de café moído num papel branco e observe: os pedaços são parecidos ou bem misturados?"
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grind size basics",
+     "g": "Learn the range from extra fine to coarse and which brew method needs which grind.",
+     "p": [
+      "Extra fine, like flour, suits Turkish coffee; fine, like table salt, suits espresso.",
+      "Medium, like sand, works for drip machines and pour-over, while coarse, like sea salt, suits the French press.",
+      "Longer contact with water needs a coarser grind; short, fast brews need a finer one."
+     ],
+     "q": "Which grind size do you think your usual brewing method needs?",
+     "c": "Rub a pinch of your ground coffee between your fingers and decide if it feels like flour, sand or sea salt."
+    },
+    "de": {
+     "t": "Mahlgrad-Grundlagen",
+     "g": "Lerne die Spanne von extrafein bis grob kennen und welche Zubereitung welchen Mahlgrad braucht.",
+     "p": [
+      "Extrafein wie Mehl passt zu türkischem Mokka, fein wie Tafelsalz zu Espresso.",
+      "Mittel wie Sand eignet sich für Filtermaschine und Handfilter, grob wie Meersalz für die French Press.",
+      "Je länger das Wasser Kontakt hat, desto gröber der Mahlgrad; kurze, schnelle Zubereitungen brauchen feineren."
+     ],
+     "q": "Welchen Mahlgrad braucht deiner Meinung nach deine übliche Zubereitung?",
+     "c": "Reib eine Prise deines Kaffeepulvers zwischen den Fingern: fühlt es sich an wie Mehl, Sand oder Meersalz?"
+    },
+    "es": {
+     "t": "Lo básico de la molienda",
+     "g": "Conoce la gama de molienda, de extrafina a gruesa, y qué método necesita cada una.",
+     "p": [
+      "La extrafina, como harina, es para el café turco; la fina, como sal de mesa, para el espresso.",
+      "La media, como arena, va bien para cafeteras de goteo y métodos de filtro; la gruesa, como sal marina, para la prensa francesa.",
+      "Cuanto más tiempo de contacto con el agua, más gruesa la molienda; las preparaciones cortas la piden más fina."
+     ],
+     "q": "¿Qué molienda crees que necesita tu método habitual?",
+     "c": "Frota una pizca de tu café molido entre los dedos y decide si parece harina, arena o sal marina."
+    },
+    "fr": {
+     "t": "Les bases de la mouture",
+     "g": "Découvre la gamme de moutures, de très fine à grossière, et laquelle convient à chaque méthode.",
+     "p": [
+      "Très fine comme de la farine pour le café turc ; fine comme du sel de table pour l'espresso.",
+      "Moyenne comme du sable pour la cafetière filtre et le café filtre manuel ; grossière comme du gros sel pour la cafetière à piston.",
+      "Plus le contact avec l'eau est long, plus la mouture doit être grossière ; les infusions courtes la veulent fine."
+     ],
+     "q": "Quelle mouture penses-tu que ta méthode habituelle demande ?",
+     "c": "Frotte une pincée de ton café moulu entre tes doigts : ressemble-t-il à de la farine, du sable ou du gros sel ?"
+    },
+    "it": {
+     "t": "Le basi della macinatura",
+     "g": "Conosci la gamma di macinature, da finissima a grossa, e quale serve per ogni metodo.",
+     "p": [
+      "Finissima come farina per il caffè turco; fine come sale da cucina per l'espresso.",
+      "Media come sabbia per macchine a filtro e pour-over; grossa come sale grosso per la French press.",
+      "Più a lungo il caffè sta a contatto con l'acqua, più grossa la macinatura; le estrazioni brevi la vogliono fine."
+     ],
+     "q": "Quale macinatura pensi che serva al tuo metodo abituale?",
+     "c": "Strofina un pizzico del tuo macinato tra le dita e decidi se sembra farina, sabbia o sale grosso."
+    },
+    "pt": {
+     "t": "O básico da moagem",
+     "g": "Conhece a gama de moagens, de extrafina a grossa, e qual o método que pede cada uma.",
+     "p": [
+      "Extrafina, como farinha, para o café turco; fina, como sal de mesa, para o espresso.",
+      "Média, como areia, para máquinas de filtro e métodos de filtro manual; grossa, como sal grosso, para a prensa francesa.",
+      "Quanto mais tempo de contacto com a água, mais grossa a moagem; preparações curtas pedem moagem fina."
+     ],
+     "q": "Que moagem achas que o teu método habitual precisa?",
+     "c": "Esfrega uma pitada do teu café moído entre os dedos e decide se parece farinha, areia ou sal grosso."
+    },
+    "pt_BR": {
+     "t": "O básico da moagem",
+     "g": "Conheça a escala de moagem, de extrafina a grossa, e qual método pede cada uma.",
+     "p": [
+      "Extrafina, como farinha, para o café turco; fina, como sal de cozinha, para o espresso.",
+      "Média, como areia, para cafeteira elétrica e coado; grossa, como sal grosso, para a prensa francesa.",
+      "Quanto mais tempo de contato com a água, mais grossa a moagem; preparos curtos pedem moagem mais fina."
+     ],
+     "q": "Qual moagem você acha que o seu método de sempre precisa?",
+     "c": "Esfregue uma pitada do seu café moído entre os dedos e decida se parece farinha, areia ou sal grosso."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The coffee-to-water ratio",
+     "g": "Use a simple starting ratio and learn to adjust it to your own taste.",
+     "p": [
+      "A popular starting point is about 1 part coffee to 16 parts water, for example 15 g coffee to 250 g water.",
+      "If the cup tastes weak or watery, use a little more coffee; if it feels too heavy or intense, use less.",
+      "Weighing beats spoons, because beans vary in size and a spoonful can hold quite different amounts."
+     ],
+     "q": "Do you measure your coffee, or do you usually go by eye?",
+     "c": "Brew one cup at 1:16, then the next at 1:14, and decide which strength you prefer."
+    },
+    "de": {
+     "t": "Das Verhältnis von Kaffee zu Wasser",
+     "g": "Nutze ein einfaches Startverhältnis und passe es an deinen Geschmack an.",
+     "p": [
+      "Ein beliebter Ausgangspunkt ist etwa 1 Teil Kaffee auf 16 Teile Wasser, zum Beispiel 15 g Kaffee auf 250 g Wasser.",
+      "Schmeckt die Tasse dünn oder wässrig, nimm etwas mehr Kaffee; ist sie zu schwer oder intensiv, nimm weniger.",
+      "Wiegen ist besser als Löffel, denn Bohnen sind verschieden groß und ein Löffel fasst sehr unterschiedliche Mengen."
+     ],
+     "q": "Misst du deinen Kaffee ab, oder machst du es meist nach Gefühl?",
+     "c": "Brüh eine Tasse im Verhältnis 1:16 und die nächste mit 1:14 und entscheide, welche Stärke du lieber magst."
+    },
+    "es": {
+     "t": "La proporción de café y agua",
+     "g": "Usa una proporción inicial sencilla y aprende a ajustarla a tu gusto.",
+     "p": [
+      "Un punto de partida popular es 1 parte de café por 16 de agua, por ejemplo 15 g de café para 250 g de agua.",
+      "Si la taza sabe floja o aguada, usa un poco más de café; si resulta demasiado intensa, usa menos.",
+      "Pesar es mejor que usar cucharas, porque los granos varían de tamaño y una cucharada puede contener cantidades muy distintas."
+     ],
+     "q": "¿Mides tu café o sueles hacerlo a ojo?",
+     "c": "Prepara una taza con proporción 1:16 y la siguiente con 1:14, y decide qué intensidad prefieres."
+    },
+    "fr": {
+     "t": "Le ratio café-eau",
+     "g": "Utilise un ratio de départ simple et apprends à l'ajuster à ton goût.",
+     "p": [
+      "Un point de départ courant est environ 1 part de café pour 16 parts d'eau, par exemple 15 g de café pour 250 g d'eau.",
+      "Si la tasse paraît faible ou aqueuse, mets un peu plus de café ; si elle est trop lourde ou intense, mets-en moins.",
+      "Peser vaut mieux que des cuillères, car les grains varient en taille et une cuillerée contient des quantités très différentes."
+     ],
+     "q": "Mesures-tu ton café, ou fais-tu plutôt à l'œil ?",
+     "c": "Prépare une tasse à 1:16, puis la suivante à 1:14, et décide quelle intensité tu préfères."
+    },
+    "it": {
+     "t": "Il rapporto tra caffè e acqua",
+     "g": "Usa un rapporto di partenza semplice e impara ad adattarlo al tuo gusto.",
+     "p": [
+      "Un punto di partenza diffuso è circa 1 parte di caffè per 16 di acqua, per esempio 15 g di caffè per 250 g di acqua.",
+      "Se la tazza sa di acquoso, usa un po' più di caffè; se è troppo pesante o intensa, usane meno.",
+      "Pesare è meglio dei cucchiai, perché i chicchi variano di dimensione e un cucchiaio può contenere quantità molto diverse."
+     ],
+     "q": "Misuri il tuo caffè o vai di solito a occhio?",
+     "c": "Prepara una tazza con rapporto 1:16 e la successiva con 1:14, poi decidi quale intensità preferisci."
+    },
+    "pt": {
+     "t": "A proporção de café e água",
+     "g": "Usa uma proporção inicial simples e aprende a ajustá-la ao teu gosto.",
+     "p": [
+      "Um ponto de partida popular é cerca de 1 parte de café para 16 de água, por exemplo 15 g de café para 250 g de água.",
+      "Se a chávena souber a fraco ou aguado, usa um pouco mais de café; se for intensa demais, usa menos.",
+      "Pesar é melhor do que usar colheres, porque os grãos variam de tamanho e uma colherada leva quantidades muito diferentes."
+     ],
+     "q": "Medes o teu café ou costumas fazer a olho?",
+     "c": "Prepara uma chávena com proporção 1:16 e a seguinte com 1:14, e decide que intensidade preferes."
+    },
+    "pt_BR": {
+     "t": "A proporção de café e água",
+     "g": "Use uma proporção inicial simples e aprenda a ajustá-la ao seu gosto.",
+     "p": [
+      "Um ponto de partida popular é cerca de 1 parte de café para 16 de água, por exemplo 15 g de café para 250 g de água.",
+      "Se a xícara ficar fraca ou aguada, use um pouco mais de café; se ficar intensa demais, use menos.",
+      "Pesar é melhor que usar colher, porque os grãos variam de tamanho e uma colherada pode ter quantidades bem diferentes."
+     ],
+     "q": "Você mede o seu café ou costuma fazer no olho?",
+     "c": "Prepare uma xícara na proporção 1:16 e a seguinte na 1:14, e decida qual intensidade você prefere."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water: the biggest ingredient",
+     "g": "See why clean, good-tasting water makes better coffee.",
+     "p": [
+      "A cup of brewed coffee is about 98 percent water, so any off taste in the water ends up in your cup.",
+      "If your tap water smells of chlorine or tastes odd, a simple filter jug can already help a lot.",
+      "Avoid distilled water: coffee needs some minerals in the water to extract flavour and taste lively."
+     ],
+     "q": "Have you ever noticed coffee tasting different in another city or country?",
+     "c": "Brew the same coffee with tap water and with filtered or bottled water, and compare the two cups."
+    },
+    "de": {
+     "t": "Wasser: die wichtigste Zutat",
+     "g": "Verstehe, warum sauberes, gut schmeckendes Wasser besseren Kaffee macht.",
+     "p": [
+      "Eine Tasse Kaffee besteht zu etwa 98 Prozent aus Wasser, also landet jeder Fremdgeschmack direkt in der Tasse.",
+      "Riecht dein Leitungswasser nach Chlor oder schmeckt komisch, hilft oft schon ein einfacher Wasserfilter.",
+      "Meide destilliertes Wasser: Kaffee braucht etwas Mineralien im Wasser, um Aromen zu lösen und lebendig zu schmecken."
+     ],
+     "q": "Ist dir schon mal aufgefallen, dass Kaffee in einer anderen Stadt oder einem anderen Land anders schmeckt?",
+     "c": "Brüh denselben Kaffee mit Leitungswasser und mit gefiltertem oder stillem Flaschenwasser und vergleiche."
+    },
+    "es": {
+     "t": "El agua: el ingrediente principal",
+     "g": "Descubre por qué un agua limpia y de buen sabor da un café mejor.",
+     "p": [
+      "Una taza de café es agua en un 98 por ciento aproximadamente, así que cualquier sabor raro del agua acaba en la taza.",
+      "Si el agua del grifo huele a cloro o sabe extraña, una simple jarra con filtro ya ayuda mucho.",
+      "Evita el agua destilada: el café necesita algunos minerales en el agua para extraer sabor y resultar vivo."
+     ],
+     "q": "¿Has notado alguna vez que el café sabe distinto en otra ciudad u otro país?",
+     "c": "Prepara el mismo café con agua del grifo y con agua filtrada o embotellada, y compara las dos tazas."
+    },
+    "fr": {
+     "t": "L'eau, l'ingrédient principal",
+     "g": "Comprends pourquoi une eau propre et bonne au goût donne un meilleur café.",
+     "p": [
+      "Une tasse de café est composée d'environ 98 % d'eau : tout mauvais goût de l'eau se retrouve dans la tasse.",
+      "Si l'eau du robinet sent le chlore ou a un goût bizarre, une simple carafe filtrante aide déjà beaucoup.",
+      "Évite l'eau distillée : le café a besoin de quelques minéraux dans l'eau pour extraire ses saveurs et rester vivant."
+     ],
+     "q": "As-tu déjà remarqué que le café avait un autre goût dans une autre ville ou un autre pays ?",
+     "c": "Prépare le même café avec l'eau du robinet puis avec de l'eau filtrée ou en bouteille, et compare."
+    },
+    "it": {
+     "t": "L'acqua, l'ingrediente principale",
+     "g": "Scopri perché un'acqua pulita e dal buon sapore dà un caffè migliore.",
+     "p": [
+      "Una tazza di caffè è fatta per circa il 98 per cento d'acqua, quindi ogni sapore strano dell'acqua finisce in tazza.",
+      "Se l'acqua del rubinetto sa di cloro o ha un gusto strano, una semplice caraffa filtrante aiuta già molto.",
+      "Evita l'acqua distillata: il caffè ha bisogno di qualche minerale nell'acqua per estrarre sapore ed essere vivace."
+     ],
+     "q": "Hai mai notato che il caffè ha un sapore diverso in un'altra città o in un altro paese?",
+     "c": "Prepara lo stesso caffè con acqua del rubinetto e con acqua filtrata o in bottiglia, e confronta le due tazze."
+    },
+    "pt": {
+     "t": "A água: o ingrediente principal",
+     "g": "Percebe porque é que uma água limpa e com bom sabor dá melhor café.",
+     "p": [
+      "Uma chávena de café é cerca de 98 por cento água, por isso qualquer sabor estranho da água acaba na chávena.",
+      "Se a água da torneira cheira a cloro ou sabe a estranho, um simples jarro com filtro já ajuda muito.",
+      "Evita água destilada: o café precisa de alguns minerais na água para extrair sabor e ficar vivo."
+     ],
+     "q": "Já reparaste que o café sabe diferente noutra cidade ou noutro país?",
+     "c": "Prepara o mesmo café com água da torneira e com água filtrada ou engarrafada, e compara as duas chávenas."
+    },
+    "pt_BR": {
+     "t": "Água: o maior ingrediente",
+     "g": "Entenda por que uma água limpa e saborosa faz um café melhor.",
+     "p": [
+      "Uma xícara de café é cerca de 98 por cento água, então qualquer gosto estranho da água vai parar na xícara.",
+      "Se a água da torneira tem cheiro de cloro ou gosto esquisito, um filtro simples já ajuda muito.",
+      "Evite água destilada: o café precisa de alguns minerais na água para extrair sabor e ficar vivo."
+     ],
+     "q": "Você já percebeu o café com gosto diferente em outra cidade ou outro país?",
+     "c": "Prepare o mesmo café com água da torneira e com água filtrada ou mineral sem gás, e compare as duas xícaras."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water temperature",
+     "g": "Find the ideal brewing range and what happens when water is too hot or too cool.",
+     "p": [
+      "Most brewing methods work best with water around 90 to 96 °C, just below boiling.",
+      "Water that is too cool extracts too little and tastes sour or thin; very hot water can pull out harsh bitterness.",
+      "No thermometer? Boil the kettle and wait about 30 seconds before pouring."
+     ],
+     "q": "Do you pour boiling water straight onto your coffee, or let it rest first?",
+     "c": "Make two cups, one with water straight off the boil and one after a short wait, and taste the difference."
+    },
+    "de": {
+     "t": "Wassertemperatur",
+     "g": "Finde den idealen Temperaturbereich und erfahre, was bei zu heißem oder zu kühlem Wasser passiert.",
+     "p": [
+      "Die meisten Zubereitungen gelingen am besten mit Wasser von etwa 90 bis 96 °C, knapp unter dem Siedepunkt.",
+      "Zu kühles Wasser extrahiert zu wenig und schmeckt sauer oder dünn; sehr heißes kann harte Bitterkeit lösen.",
+      "Kein Thermometer? Lass das Wasser kochen und warte etwa 30 Sekunden, bevor du gießt."
+     ],
+     "q": "Gießt du kochendes Wasser direkt auf deinen Kaffee, oder lässt du es kurz ruhen?",
+     "c": "Mach zwei Tassen, eine mit gerade kochendem Wasser und eine nach kurzer Pause, und schmecke den Unterschied."
+    },
+    "es": {
+     "t": "La temperatura del agua",
+     "g": "Conoce el rango ideal de temperatura y qué pasa cuando el agua está demasiado caliente o fría.",
+     "p": [
+      "La mayoría de los métodos funcionan mejor con agua entre 90 y 96 °C, justo por debajo de la ebullición.",
+      "El agua demasiado fría extrae poco y sabe ácida o floja; la muy caliente puede sacar amargor áspero.",
+      "¿No tienes termómetro? Hierve el agua y espera unos 30 segundos antes de verter."
+     ],
+     "q": "¿Viertes el agua hirviendo directamente sobre el café o la dejas reposar antes?",
+     "c": "Prepara dos tazas, una con agua recién hervida y otra tras una breve espera, y prueba la diferencia."
+    },
+    "fr": {
+     "t": "La température de l'eau",
+     "g": "Découvre la plage idéale de température et ce qui se passe si l'eau est trop chaude ou trop froide.",
+     "p": [
+      "La plupart des méthodes fonctionnent le mieux avec une eau entre 90 et 96 °C, juste sous l'ébullition.",
+      "Une eau trop froide extrait trop peu et donne un goût acide ou mince ; très chaude, elle tire une amertume dure.",
+      "Pas de thermomètre ? Fais bouillir l'eau et attends environ 30 secondes avant de verser."
+     ],
+     "q": "Verses-tu l'eau bouillante directement sur ton café, ou la laisses-tu reposer d'abord ?",
+     "c": "Prépare deux tasses, l'une avec de l'eau juste bouillie, l'autre après une courte attente, et goûte la différence."
+    },
+    "it": {
+     "t": "La temperatura dell'acqua",
+     "g": "Scopri l'intervallo ideale di temperatura e cosa succede se l'acqua è troppo calda o troppo fredda.",
+     "p": [
+      "La maggior parte dei metodi funziona meglio con acqua tra circa 90 e 96 °C, appena sotto l'ebollizione.",
+      "L'acqua troppo fredda estrae poco e sa di acido o di vuoto; quella molto calda può tirare fuori un'amarezza aspra.",
+      "Niente termometro? Porta l'acqua a bollore e aspetta circa 30 secondi prima di versarla."
+     ],
+     "q": "Versi l'acqua bollente direttamente sul caffè o la lasci riposare prima?",
+     "c": "Prepara due tazze, una con acqua appena bollita e una dopo una breve attesa, e assaggia la differenza."
+    },
+    "pt": {
+     "t": "A temperatura da água",
+     "g": "Descobre a gama ideal de temperatura e o que acontece quando a água está quente ou fria demais.",
+     "p": [
+      "A maioria dos métodos funciona melhor com água entre cerca de 90 e 96 °C, mesmo abaixo da fervura.",
+      "Água fria demais extrai pouco e sabe a ácido ou fraco; água muito quente pode tirar um amargor áspero.",
+      "Não tens termómetro? Ferve a água e espera uns 30 segundos antes de verter."
+     ],
+     "q": "Vertes a água a ferver diretamente sobre o café, ou deixas repousar primeiro?",
+     "c": "Prepara duas chávenas, uma com água acabada de ferver e outra após uma pequena pausa, e prova a diferença."
+    },
+    "pt_BR": {
+     "t": "Temperatura da água",
+     "g": "Descubra a faixa ideal de temperatura e o que acontece quando a água está quente ou fria demais.",
+     "p": [
+      "A maioria dos métodos funciona melhor com água entre 90 e 96 °C, logo abaixo da fervura.",
+      "Água fria demais extrai pouco e deixa o café azedo ou ralo; água muito quente pode puxar um amargor áspero.",
+      "Sem termômetro? Ferva a água e espere uns 30 segundos antes de despejar."
+     ],
+     "q": "Você joga a água fervendo direto no café ou deixa descansar antes?",
+     "c": "Prepare duas xícaras, uma com água recém-fervida e outra depois de uma pequena pausa, e prove a diferença."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first scale and timer",
+     "g": "Weigh your coffee and time your brew to get the same good cup again and again.",
+     "p": [
+      "A simple kitchen scale that shows single grams is enough to start measuring coffee and water.",
+      "Put your brewer on the scale, press tare to zero it, then add coffee and pour water while watching the numbers.",
+      "A timer, even your phone, shows how long the brew takes, so you can repeat what worked or change one thing."
+     ],
+     "q": "Do you like precise recipes, or do you prefer cooking and brewing by feel?",
+     "c": "Brew a cup with a scale and timer and write down three numbers: coffee grams, water grams and total time."
+    },
+    "de": {
+     "t": "Deine erste Waage und Stoppuhr",
+     "g": "Wiege deinen Kaffee und stoppe die Brühzeit, um immer wieder dieselbe gute Tasse zu bekommen.",
+     "p": [
+      "Eine einfache Küchenwaage mit Grammanzeige reicht, um Kaffee und Wasser abzuwiegen.",
+      "Stell deinen Filter auf die Waage, drück auf Tara, gib Kaffee hinein und gieß Wasser, während du die Zahlen beobachtest.",
+      "Eine Stoppuhr, auch dein Handy, zeigt die Brühzeit, damit du Gelungenes wiederholen oder eine Sache ändern kannst."
+     ],
+     "q": "Magst du genaue Rezepte, oder kochst und brühst du lieber nach Gefühl?",
+     "c": "Brüh eine Tasse mit Waage und Stoppuhr und notiere drei Zahlen: Gramm Kaffee, Gramm Wasser und Gesamtzeit."
+    },
+    "es": {
+     "t": "Tu primera báscula y temporizador",
+     "g": "Pesa tu café y cronometra la preparación para repetir la misma buena taza una y otra vez.",
+     "p": [
+      "Una báscula de cocina sencilla que marque gramos basta para empezar a medir café y agua.",
+      "Pon la cafetera sobre la báscula, pulsa tara para ponerla a cero, añade el café y vierte el agua mirando los números.",
+      "Un temporizador, aunque sea el del móvil, muestra cuánto dura la preparación para repetir lo que funcionó o cambiar algo."
+     ],
+     "q": "¿Te gustan las recetas precisas o prefieres cocinar y preparar café a ojo?",
+     "c": "Prepara una taza con báscula y temporizador y apunta tres números: gramos de café, gramos de agua y tiempo total."
+    },
+    "fr": {
+     "t": "Ta première balance et ton minuteur",
+     "g": "Pèse ton café et chronomètre l'infusion pour retrouver encore et encore la même bonne tasse.",
+     "p": [
+      "Une simple balance de cuisine au gramme près suffit pour commencer à mesurer café et eau.",
+      "Pose ta cafetière sur la balance, appuie sur tare pour la remettre à zéro, ajoute le café et verse l'eau en suivant les chiffres.",
+      "Un minuteur, même celui du téléphone, montre la durée de l'infusion pour refaire ce qui a marché ou changer une seule chose."
+     ],
+     "q": "Aimes-tu les recettes précises, ou préfères-tu cuisiner et préparer le café au feeling ?",
+     "c": "Prépare une tasse avec balance et minuteur et note trois chiffres : grammes de café, grammes d'eau et temps total."
+    },
+    "it": {
+     "t": "La tua prima bilancia e il timer",
+     "g": "Pesa il caffè e cronometra l'estrazione per ottenere sempre la stessa buona tazza.",
+     "p": [
+      "Una semplice bilancia da cucina che segna i grammi basta per iniziare a misurare caffè e acqua.",
+      "Metti il filtro sulla bilancia, premi tara per azzerarla, aggiungi il caffè e versa l'acqua guardando i numeri.",
+      "Un timer, anche quello del telefono, mostra quanto dura l'estrazione, così puoi ripetere ciò che funziona o cambiare una cosa."
+     ],
+     "q": "Ti piacciono le ricette precise o preferisci cucinare e preparare il caffè a occhio?",
+     "c": "Prepara una tazza con bilancia e timer e annota tre numeri: grammi di caffè, grammi d'acqua e tempo totale."
+    },
+    "pt": {
+     "t": "A tua primeira balança e temporizador",
+     "g": "Pesa o teu café e cronometra a preparação para repetir a mesma boa chávena vezes sem conta.",
+     "p": [
+      "Uma balança de cozinha simples, que mostre gramas, chega para começar a medir café e água.",
+      "Põe o teu método em cima da balança, carrega em tara para pôr a zero, junta o café e verte a água a olhar para os números.",
+      "Um temporizador, até o do telemóvel, mostra quanto dura a preparação, para repetires o que resultou ou mudares uma coisa."
+     ],
+     "q": "Gostas de receitas precisas ou preferes cozinhar e fazer café a olho?",
+     "c": "Prepara uma chávena com balança e temporizador e aponta três números: gramas de café, gramas de água e tempo total."
+    },
+    "pt_BR": {
+     "t": "Sua primeira balança e timer",
+     "g": "Pese o seu café e cronometre o preparo para repetir a mesma xícara boa sempre.",
+     "p": [
+      "Uma balança de cozinha simples, que mostre gramas, já basta para começar a medir café e água.",
+      "Coloque o coador sobre a balança, aperte tara para zerar, adicione o café e despeje a água olhando os números.",
+      "Um timer, até o do celular, mostra quanto tempo dura o preparo, para você repetir o que deu certo ou mudar uma coisa só."
+     ],
+     "q": "Você gosta de receitas precisas ou prefere cozinhar e passar café no olho?",
+     "c": "Prepare uma xícara com balança e timer e anote três números: gramas de café, gramas de água e tempo total."
+    }
+   }
+  }
+ ]
+}

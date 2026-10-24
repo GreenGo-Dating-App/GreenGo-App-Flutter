@@ -1,0 +1,835 @@
+{
+ "topic": "vegan",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vegan, vegetarian, flexitarian",
+     "g": "Understand what each word means in the kitchen and why people enjoy plant-based meals.",
+     "p": [
+      "Vegan cooking uses no animal products at all: no meat, fish, dairy, eggs or honey.",
+      "Vegetarian cooking skips meat and fish but may include dairy and eggs; flexitarians eat mostly plants, with meat now and then.",
+      "People choose plant-based meals for taste, curiosity, the planet, animals or simply variety, and every reason is welcome."
+     ],
+     "q": "Which of these three styles sounds closest to the way you like to eat right now?",
+     "c": "Look at what you ate yesterday and spot one meal that was already vegan or vegetarian without you planning it."
+    },
+    "de": {
+     "t": "Vegan, vegetarisch, flexitarisch",
+     "g": "Verstehe, was jedes Wort in der Küche bedeutet und warum Menschen pflanzliche Gerichte mögen.",
+     "p": [
+      "Vegan kochen heißt: keine tierischen Produkte, also kein Fleisch, Fisch, keine Milch, Eier oder Honig.",
+      "Vegetarisch verzichtet auf Fleisch und Fisch, nutzt aber oft Milch und Eier; Flexitarier essen meist pflanzlich, ab und zu Fleisch.",
+      "Man wählt pflanzlich aus Genuss, Neugier, für den Planeten, für Tiere oder für Abwechslung, und jeder Grund ist willkommen."
+     ],
+     "q": "Welcher dieser drei Stile kommt deiner aktuellen Ernährung am nächsten?",
+     "c": "Schau dir an, was du gestern gegessen hast, und finde eine Mahlzeit, die ganz zufällig schon vegan oder vegetarisch war."
+    },
+    "es": {
+     "t": "Vegano, vegetariano, flexitariano",
+     "g": "Entender qué significa cada palabra en la cocina y por qué a tanta gente le gustan las comidas vegetales.",
+     "p": [
+      "La cocina vegana no usa productos animales: ni carne, ni pescado, ni lácteos, ni huevos, ni miel.",
+      "La vegetariana evita carne y pescado pero puede incluir lácteos y huevos; la flexitariana es casi vegetal, con carne de vez en cuando.",
+      "Se elige lo vegetal por sabor, curiosidad, el planeta, los animales o por variedad, y cualquier motivo es bienvenido."
+     ],
+     "q": "¿Cuál de estos tres estilos se parece más a tu forma de comer ahora mismo?",
+     "c": "Repasa lo que comiste ayer y encuentra una comida que ya era vegana o vegetariana sin que lo planearas."
+    },
+    "fr": {
+     "t": "Végan, végétarien, flexitarien",
+     "g": "Comprendre ce que chaque mot signifie en cuisine et pourquoi on aime les repas végétaux.",
+     "p": [
+      "La cuisine végane n’utilise aucun produit animal : ni viande, ni poisson, ni laitages, ni œufs, ni miel.",
+      "La cuisine végétarienne exclut viande et poisson mais garde souvent laitages et œufs ; le flexitarien mange surtout végétal.",
+      "On choisit le végétal par goût, curiosité, pour la planète, les animaux ou la variété, et chaque raison est la bienvenue."
+     ],
+     "q": "Lequel de ces trois styles ressemble le plus à ta façon de manger en ce moment ?",
+     "c": "Repense à ce que tu as mangé hier et repère un repas qui était déjà végan ou végétarien sans que tu l’aies prévu."
+    },
+    "it": {
+     "t": "Vegano, vegetariano, flexitariano",
+     "g": "Capire cosa significa ogni parola in cucina e perché tante persone amano i piatti vegetali.",
+     "p": [
+      "La cucina vegana non usa prodotti animali: niente carne, pesce, latticini, uova o miele.",
+      "Quella vegetariana esclude carne e pesce ma spesso usa latticini e uova; il flexitariano mangia soprattutto vegetale.",
+      "Si sceglie il vegetale per gusto, curiosità, per il pianeta, per gli animali o per varietà, e ogni motivo va bene."
+     ],
+     "q": "Quale di questi tre stili somiglia di più al tuo modo di mangiare oggi?",
+     "c": "Ripensa a cosa hai mangiato ieri e trova un pasto che era già vegano o vegetariano senza che tu l’avessi pianificato."
+    },
+    "pt": {
+     "t": "Vegano, vegetariano, flexitariano",
+     "g": "Perceber o que cada palavra significa na cozinha e porque tantas pessoas gostam de refeições vegetais.",
+     "p": [
+      "A cozinha vegana não usa produtos animais: nem carne, peixe, lacticínios, ovos ou mel.",
+      "A vegetariana evita carne e peixe mas pode usar lacticínios e ovos; o flexitariano come sobretudo vegetal, com carne de vez em quando.",
+      "Escolhe-se o vegetal por sabor, curiosidade, pelo planeta, pelos animais ou por variedade, e qualquer razão é bem-vinda."
+     ],
+     "q": "Qual destes três estilos se aproxima mais da tua forma de comer neste momento?",
+     "c": "Pensa no que comeste ontem e encontra uma refeição que já era vegana ou vegetariana sem teres planeado."
+    },
+    "pt_BR": {
+     "t": "Vegano, vegetariano, flexitariano",
+     "g": "Entender o que cada palavra significa na cozinha e por que tanta gente curte refeições vegetais.",
+     "p": [
+      "A cozinha vegana não usa nada de origem animal: nem carne, peixe, laticínios, ovos ou mel.",
+      "A vegetariana tira carne e peixe, mas pode ter laticínios e ovos; o flexitariano come mais vegetal, com carne de vez em quando.",
+      "As pessoas escolhem o vegetal por sabor, curiosidade, pelo planeta, pelos animais ou por variedade, e todo motivo vale."
+     ],
+     "q": "Qual desses três estilos parece mais com o seu jeito de comer hoje?",
+     "c": "Lembre o que você comeu ontem e ache uma refeição que já era vegana ou vegetariana sem você planejar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why plants are exciting to cook",
+     "g": "See vegetables as the star of the plate through colour, texture and flavour.",
+     "p": [
+      "Colour is a clue to variety: deep greens, bright reds, purples and oranges make a plate look and taste lively.",
+      "Texture keeps every bite interesting, so mix crunchy, creamy, chewy and crisp elements in one dish.",
+      "Plants carry huge flavour ranges, from sweet roasted carrots to bitter greens and smoky grilled peppers."
+     ],
+     "q": "Which vegetable do you think is underrated and deserves to be the star of a meal?",
+     "c": "Pick one vegetable and cook it two ways today, for example raw and roasted, then compare the textures."
+    },
+    "de": {
+     "t": "Warum Gemüse spannend ist",
+     "g": "Sieh Gemüse dank Farbe, Textur und Geschmack als Star auf dem Teller.",
+     "p": [
+      "Farbe zeigt Vielfalt: dunkles Grün, leuchtendes Rot, Lila und Orange machen einen Teller lebendig.",
+      "Textur hält jeden Bissen spannend, also kombiniere Knuspriges, Cremiges, Bissfestes und Frisches.",
+      "Pflanzen bieten riesige Aromen, von süßen Ofenkarotten über bittere Blätter bis zu rauchiger Grillpaprika."
+     ],
+     "q": "Welches Gemüse findest du unterschätzt, und welches verdient die Hauptrolle?",
+     "c": "Nimm heute ein Gemüse und bereite es auf zwei Arten zu, etwa roh und geröstet, und vergleiche die Textur."
+    },
+    "es": {
+     "t": "Por qué cocinar plantas es emocionante",
+     "g": "Ver las verduras como protagonistas del plato gracias al color, la textura y el sabor.",
+     "p": [
+      "El color es pista de variedad: verdes intensos, rojos vivos, morados y naranjas alegran el plato.",
+      "La textura mantiene cada bocado interesante: combina lo crujiente, lo cremoso y lo jugoso en un mismo plato.",
+      "Las plantas tienen sabores enormes, desde zanahorias asadas dulces hasta hojas amargas o pimientos ahumados."
+     ],
+     "q": "¿Qué verdura crees que está infravalorada y merece ser la estrella de una comida?",
+     "c": "Elige una verdura y prepárala hoy de dos maneras, por ejemplo cruda y asada, y compara las texturas."
+    },
+    "fr": {
+     "t": "Pourquoi cuisiner les plantes est passionnant",
+     "g": "Voir les légumes comme les vedettes de l’assiette grâce à la couleur, la texture et la saveur.",
+     "p": [
+      "La couleur signale la variété : verts profonds, rouges vifs, violets et oranges rendent l’assiette vivante.",
+      "La texture rend chaque bouchée intéressante : mélange croquant, crémeux, moelleux et croustillant.",
+      "Les plantes offrent mille saveurs, des carottes rôties sucrées aux feuilles amères et aux poivrons fumés."
+     ],
+     "q": "Quel légume trouves-tu sous-estimé et mériterait d’être la star d’un repas ?",
+     "c": "Choisis un légume et prépare-le de deux façons aujourd’hui, par exemple cru et rôti, puis compare."
+    },
+    "it": {
+     "t": "Perché cucinare le verdure è entusiasmante",
+     "g": "Vedere le verdure come protagoniste del piatto grazie a colore, consistenza e sapore.",
+     "p": [
+      "Il colore indica varietà: verdi intensi, rossi accesi, viola e arancioni rendono il piatto vivace.",
+      "La consistenza rende ogni boccone interessante: unisci croccante, cremoso, morbido e sfizioso.",
+      "Le piante hanno sapori vastissimi, dalle carote arrosto dolci alle verdure amare e ai peperoni affumicati."
+     ],
+     "q": "Quale verdura secondo te è sottovalutata e meriterebbe di essere la star di un pasto?",
+     "c": "Scegli una verdura e cucinala oggi in due modi, per esempio cruda e arrosto, poi confronta le consistenze."
+    },
+    "pt": {
+     "t": "Porque cozinhar plantas é entusiasmante",
+     "g": "Ver os legumes como estrelas do prato através da cor, da textura e do sabor.",
+     "p": [
+      "A cor é sinal de variedade: verdes intensos, vermelhos vivos, roxos e laranjas dão vida ao prato.",
+      "A textura torna cada garfada interessante: junta crocante, cremoso, macio e estaladiço no mesmo prato.",
+      "As plantas têm sabores imensos, de cenouras assadas doces a folhas amargas e pimentos fumados."
+     ],
+     "q": "Que legume achas subvalorizado e merecia ser a estrela de uma refeição?",
+     "c": "Escolhe um legume e prepara-o hoje de duas maneiras, por exemplo cru e assado, e compara as texturas."
+    },
+    "pt_BR": {
+     "t": "Por que cozinhar vegetais é empolgante",
+     "g": "Ver os legumes como estrelas do prato pela cor, textura e sabor.",
+     "p": [
+      "A cor é pista de variedade: verdes intensos, vermelhos vivos, roxos e laranjas deixam o prato animado.",
+      "A textura deixa cada garfada interessante: misture crocante, cremoso, macio e sequinho no mesmo prato.",
+      "Os vegetais têm sabores enormes, de cenoura assada adocicada a folhas amargas e pimentão defumado."
+     ],
+     "q": "Qual legume você acha subestimado e merecia ser a estrela de uma refeição?",
+     "c": "Escolha um legume e prepare de dois jeitos hoje, tipo cru e assado, e compare as texturas."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plant-based cooking around the world",
+     "g": "Discover that many cuisines, from India to Ethiopia and the Mediterranean, are full of meatless classics.",
+     "p": [
+      "India offers dals, chana masala and vegetable curries, often built on lentils, chickpeas and spices.",
+      "Ethiopia is known for colourful lentil and vegetable stews served on injera, a spongy flatbread.",
+      "Around the Mediterranean you find falafel, ratatouille, pasta e fagioli and many bean and vegetable dishes."
+     ],
+     "q": "Have you ever tried a meatless dish from another country that you still remember?",
+     "c": "Choose one country from today and look up a classic meatless dish from it that you would like to cook soon."
+    },
+    "de": {
+     "t": "Pflanzliche Küche weltweit",
+     "g": "Entdecke, dass viele Küchen, von Indien über Äthiopien bis zum Mittelmeer, voller fleischloser Klassiker sind.",
+     "p": [
+      "Indien bietet Dal, Chana Masala und Gemüsecurrys, oft aus Linsen, Kichererbsen und Gewürzen.",
+      "Äthiopien ist bekannt für bunte Linsen- und Gemüseeintöpfe auf Injera, einem weichen Fladenbrot.",
+      "Rund ums Mittelmeer gibt es Falafel, Ratatouille, Pasta e Fagioli und viele Bohnen- und Gemüsegerichte."
+     ],
+     "q": "Hast du schon einmal ein fleischloses Gericht aus einem anderen Land probiert, an das du dich erinnerst?",
+     "c": "Wähle ein Land von heute und suche dir einen fleischlosen Klassiker aus, den du bald kochen möchtest."
+    },
+    "es": {
+     "t": "Cocina vegetal por el mundo",
+     "g": "Descubrir que muchas cocinas, de la India a Etiopía y el Mediterráneo, están llenas de clásicos sin carne.",
+     "p": [
+      "La India ofrece dal, chana masala y currys de verduras, a menudo con lentejas, garbanzos y especias.",
+      "Etiopía es famosa por sus guisos de lentejas y verduras servidos sobre injera, un pan plano esponjoso.",
+      "En el Mediterráneo hay faláfel, ratatouille, pasta e fagioli y muchos platos de legumbres y verduras."
+     ],
+     "q": "¿Has probado alguna vez un plato sin carne de otro país que todavía recuerdes?",
+     "c": "Elige un país de hoy y busca un plato clásico sin carne de allí que te gustaría cocinar pronto."
+    },
+    "fr": {
+     "t": "La cuisine végétale autour du monde",
+     "g": "Découvrir que beaucoup de cuisines, de l’Inde à l’Éthiopie et à la Méditerranée, regorgent de classiques sans viande.",
+     "p": [
+      "L’Inde propose dal, chana masala et currys de légumes, souvent à base de lentilles, pois chiches et épices.",
+      "L’Éthiopie est connue pour ses ragoûts colorés de lentilles et légumes servis sur l’injera, une galette moelleuse.",
+      "Autour de la Méditerranée : falafels, ratatouille, pasta e fagioli et de nombreux plats de légumineuses."
+     ],
+     "q": "As-tu déjà goûté un plat sans viande d’un autre pays dont tu te souviens encore ?",
+     "c": "Choisis un pays du jour et cherche un classique sans viande de là-bas que tu aimerais cuisiner bientôt."
+    },
+    "it": {
+     "t": "La cucina vegetale nel mondo",
+     "g": "Scoprire che molte cucine, dall’India all’Etiopia al Mediterraneo, sono piene di classici senza carne.",
+     "p": [
+      "L’India offre dal, chana masala e curry di verdure, spesso a base di lenticchie, ceci e spezie.",
+      "L’Etiopia è famosa per stufati colorati di lenticchie e verdure serviti sull’injera, un pane piatto spugnoso.",
+      "Nel Mediterraneo trovi falafel, ratatouille, pasta e fagioli e tanti piatti di legumi e verdure."
+     ],
+     "q": "Hai mai assaggiato un piatto senza carne di un altro paese che ricordi ancora?",
+     "c": "Scegli un paese di oggi e cerca un piatto classico senza carne di lì che vorresti cucinare presto."
+    },
+    "pt": {
+     "t": "Cozinha vegetal pelo mundo",
+     "g": "Descobrir que muitas cozinhas, da Índia à Etiópia e ao Mediterrâneo, estão cheias de clássicos sem carne.",
+     "p": [
+      "A Índia tem dal, chana masala e caris de legumes, muitas vezes com lentilhas, grão-de-bico e especiarias.",
+      "A Etiópia é conhecida pelos guisados coloridos de lentilhas e legumes servidos sobre injera, um pão achatado.",
+      "No Mediterrâneo há falafel, ratatouille, pasta e fagioli e muitos pratos de leguminosas e legumes."
+     ],
+     "q": "Já provaste algum prato sem carne de outro país de que ainda te lembras?",
+     "c": "Escolhe um país de hoje e procura um clássico sem carne de lá que gostavas de cozinhar em breve."
+    },
+    "pt_BR": {
+     "t": "Cozinha vegetal pelo mundo",
+     "g": "Descobrir que muitas cozinhas, da Índia à Etiópia e ao Mediterrâneo, estão cheias de clássicos sem carne.",
+     "p": [
+      "A Índia tem dal, chana masala e curries de legumes, muitas vezes com lentilha, grão-de-bico e especiarias.",
+      "A Etiópia é famosa por ensopados coloridos de lentilha e legumes servidos sobre injera, um pão fino e macio.",
+      "No Mediterrâneo tem falafel, ratatouille, pasta e fagioli e muitos pratos de leguminosas e legumes."
+     ],
+     "q": "Você já provou um prato sem carne de outro país que ainda lembra?",
+     "c": "Escolha um país de hoje e procure um clássico sem carne de lá que você gostaria de cozinhar logo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your plant-based pantry",
+     "g": "Learn which beans, grains, nuts, seeds, spices and sauces to keep on hand for easy meals.",
+     "p": [
+      "Dried or canned beans, lentils and chickpeas are the backbone of countless filling dishes.",
+      "Rice, oats, pasta and other grains plus nuts and seeds give you quick bases and crunchy toppings.",
+      "A few spices and sauces, like cumin, paprika, soy sauce and tomato paste, turn simple food into a meal."
+     ],
+     "q": "What is already in your cupboard that could become a plant-based dinner tonight?",
+     "c": "Open your cupboard and list five plant-based staples you have, then note one you would like to add."
+    },
+    "de": {
+     "t": "Deine pflanzliche Vorratskammer",
+     "g": "Lerne, welche Bohnen, Getreide, Nüsse, Samen, Gewürze und Saucen du für schnelle Gerichte vorrätig hältst.",
+     "p": [
+      "Getrocknete oder Dosenbohnen, Linsen und Kichererbsen sind die Basis unzähliger sättigender Gerichte.",
+      "Reis, Haferflocken, Nudeln und andere Getreide sowie Nüsse und Samen liefern schnelle Grundlagen und Crunch.",
+      "Ein paar Gewürze und Saucen wie Kreuzkümmel, Paprika, Sojasauce und Tomatenmark machen aus Einfachem ein Essen."
+     ],
+     "q": "Was steht schon in deinem Schrank, das heute Abend ein pflanzliches Essen werden könnte?",
+     "c": "Öffne deinen Schrank, notiere fünf pflanzliche Basics, die du hast, und eines, das du ergänzen möchtest."
+    },
+    "es": {
+     "t": "Tu despensa vegetal",
+     "g": "Saber qué legumbres, cereales, frutos secos, semillas, especias y salsas tener a mano para comer fácil.",
+     "p": [
+      "Las alubias, lentejas y garbanzos, secos o en bote, son la base de innumerables platos saciantes.",
+      "Arroz, avena, pasta y otros cereales, más frutos secos y semillas, dan bases rápidas y toques crujientes.",
+      "Unas pocas especias y salsas, como comino, pimentón, salsa de soja y tomate concentrado, convierten lo simple en comida."
+     ],
+     "q": "¿Qué tienes ya en la despensa que podría ser una cena vegetal esta noche?",
+     "c": "Abre la despensa, apunta cinco básicos vegetales que tienes y uno que te gustaría añadir."
+    },
+    "fr": {
+     "t": "Ton garde-manger végétal",
+     "g": "Savoir quels haricots, céréales, noix, graines, épices et sauces garder sous la main pour des repas faciles.",
+     "p": [
+      "Haricots, lentilles et pois chiches, secs ou en conserve, sont la base d’innombrables plats rassasiants.",
+      "Riz, flocons d’avoine, pâtes et autres céréales, plus noix et graines, donnent des bases rapides et du croquant.",
+      "Quelques épices et sauces, comme cumin, paprika, sauce soja et concentré de tomate, font d’un rien un repas."
+     ],
+     "q": "Qu’as-tu déjà dans tes placards qui pourrait devenir un dîner végétal ce soir ?",
+     "c": "Ouvre ton placard, note cinq produits végétaux de base que tu as et un que tu aimerais ajouter."
+    },
+    "it": {
+     "t": "La tua dispensa vegetale",
+     "g": "Sapere quali legumi, cereali, frutta secca, semi, spezie e salse tenere a portata di mano.",
+     "p": [
+      "Fagioli, lenticchie e ceci, secchi o in scatola, sono la base di tantissimi piatti sazianti.",
+      "Riso, avena, pasta e altri cereali, più frutta secca e semi, offrono basi veloci e un tocco croccante.",
+      "Poche spezie e salse, come cumino, paprika, salsa di soia e concentrato di pomodoro, trasformano il semplice in un pasto."
+     ],
+     "q": "Cosa hai già in dispensa che potrebbe diventare una cena vegetale stasera?",
+     "c": "Apri la dispensa, scrivi cinque basi vegetali che hai e una che vorresti aggiungere."
+    },
+    "pt": {
+     "t": "A tua despensa vegetal",
+     "g": "Saber que feijões, cereais, frutos secos, sementes, especiarias e molhos ter à mão para refeições fáceis.",
+     "p": [
+      "Feijão, lentilhas e grão-de-bico, secos ou em lata, são a base de inúmeros pratos que saciam.",
+      "Arroz, aveia, massa e outros cereais, mais frutos secos e sementes, dão bases rápidas e um toque crocante.",
+      "Algumas especiarias e molhos, como cominhos, colorau, molho de soja e concentrado de tomate, fazem do simples uma refeição."
+     ],
+     "q": "O que já tens no armário que podia virar um jantar vegetal esta noite?",
+     "c": "Abre o armário, escreve cinco básicos vegetais que tens e um que gostavas de acrescentar."
+    },
+    "pt_BR": {
+     "t": "Sua despensa vegetal",
+     "g": "Saber quais feijões, grãos, castanhas, sementes, temperos e molhos ter em casa para refeições fáceis.",
+     "p": [
+      "Feijão, lentilha e grão-de-bico, secos ou em lata, são a base de muitos pratos que sustentam.",
+      "Arroz, aveia, macarrão e outros grãos, mais castanhas e sementes, viram bases rápidas e toques crocantes.",
+      "Alguns temperos e molhos, como cominho, páprica, shoyu e extrato de tomate, transformam o simples em refeição."
+     ],
+     "q": "O que já tem no seu armário que poderia virar um jantar vegetal hoje à noite?",
+     "c": "Abra o armário, anote cinco básicos vegetais que você tem e um que gostaria de comprar."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stocking the fridge and freezer",
+     "g": "Keep fresh vegetables, tofu, plant milks and frozen produce ready for quick meals.",
+     "p": [
+      "Sturdy vegetables like carrots, cabbage and peppers last well in the fridge and fit many dishes.",
+      "Tofu, plant milk, hummus and a jar of mustard or pesto make fast breakfasts, lunches and sauces possible.",
+      "Frozen peas, spinach, berries and mixed vegetables are picked ripe and ready whenever you need them."
+     ],
+     "q": "Which frozen vegetable or fruit do you find most useful on a busy day?",
+     "c": "Check your freezer and plan one quick meal that uses at least one frozen vegetable you already have."
+    },
+    "de": {
+     "t": "Kühlschrank und Gefrierfach füllen",
+     "g": "Halte frisches Gemüse, Tofu, Pflanzenmilch und Tiefkühlware für schnelle Gerichte bereit.",
+     "p": [
+      "Robustes Gemüse wie Karotten, Kohl und Paprika hält lange im Kühlschrank und passt zu vielen Gerichten.",
+      "Tofu, Pflanzenmilch, Hummus und ein Glas Senf oder Pesto ermöglichen schnelle Frühstücke, Mittagessen und Saucen.",
+      "Tiefkühlerbsen, Spinat, Beeren und Gemüsemischungen werden reif geerntet und sind jederzeit griffbereit."
+     ],
+     "q": "Welches Tiefkühlgemüse oder -obst findest du an stressigen Tagen am nützlichsten?",
+     "c": "Schau in dein Gefrierfach und plane ein schnelles Essen mit mindestens einem Tiefkühlgemüse, das du schon hast."
+    },
+    "es": {
+     "t": "Llenar la nevera y el congelador",
+     "g": "Tener verduras frescas, tofu, bebidas vegetales y congelados listos para comidas rápidas.",
+     "p": [
+      "Verduras resistentes como zanahoria, col y pimiento duran bien en la nevera y sirven para muchos platos.",
+      "Tofu, bebida vegetal, hummus y un bote de mostaza o pesto hacen posibles desayunos, comidas y salsas rápidas.",
+      "Guisantes, espinacas, frutos rojos y verduras congeladas se recogen maduros y están listos cuando los necesitas."
+     ],
+     "q": "¿Qué verdura o fruta congelada te resulta más útil en un día con prisa?",
+     "c": "Mira tu congelador y planea una comida rápida con al menos una verdura congelada que ya tengas."
+    },
+    "fr": {
+     "t": "Remplir le frigo et le congélateur",
+     "g": "Garder légumes frais, tofu, boissons végétales et surgelés prêts pour des repas rapides.",
+     "p": [
+      "Les légumes robustes comme carottes, chou et poivrons se gardent bien au frigo et vont dans plein de plats.",
+      "Tofu, boisson végétale, houmous et un pot de moutarde ou de pesto rendent possibles des repas et sauces express.",
+      "Petits pois, épinards, fruits rouges et poêlées surgelés sont cueillis mûrs et prêts quand tu en as besoin."
+     ],
+     "q": "Quel légume ou fruit surgelé te sauve le plus les jours chargés ?",
+     "c": "Regarde ton congélateur et prévois un repas rapide avec au moins un légume surgelé que tu as déjà."
+    },
+    "it": {
+     "t": "Riempire frigo e freezer",
+     "g": "Avere verdure fresche, tofu, bevande vegetali e surgelati pronti per pasti veloci.",
+     "p": [
+      "Verdure resistenti come carote, cavolo e peperoni durano a lungo in frigo e vanno bene in molti piatti.",
+      "Tofu, bevanda vegetale, hummus e un vasetto di senape o pesto rendono possibili colazioni, pranzi e salse rapidi.",
+      "Piselli, spinaci, frutti di bosco e verdure miste surgelati sono raccolti maturi e pronti quando servono."
+     ],
+     "q": "Quale verdura o frutta surgelata ti è più utile nelle giornate piene?",
+     "c": "Controlla il freezer e pianifica un pasto veloce con almeno una verdura surgelata che hai già."
+    },
+    "pt": {
+     "t": "Abastecer o frigorífico e o congelador",
+     "g": "Ter legumes frescos, tofu, bebidas vegetais e congelados prontos para refeições rápidas.",
+     "p": [
+      "Legumes resistentes como cenoura, couve e pimento duram bem no frigorífico e servem para muitos pratos.",
+      "Tofu, bebida vegetal, húmus e um frasco de mostarda ou pesto permitem pequenos-almoços, almoços e molhos rápidos.",
+      "Ervilhas, espinafres, frutos vermelhos e legumes congelados são colhidos maduros e estão prontos quando precisas."
+     ],
+     "q": "Que legume ou fruta congelada te dá mais jeito num dia apressado?",
+     "c": "Espreita o congelador e planeia uma refeição rápida com pelo menos um legume congelado que já tens."
+    },
+    "pt_BR": {
+     "t": "Abastecendo geladeira e freezer",
+     "g": "Deixar legumes frescos, tofu, bebidas vegetais e congelados prontos para refeições rápidas.",
+     "p": [
+      "Legumes resistentes como cenoura, repolho e pimentão duram bem na geladeira e vão em muitos pratos.",
+      "Tofu, bebida vegetal, homus e um pote de mostarda ou pesto garantem cafés, almoços e molhos rápidos.",
+      "Ervilha, espinafre, frutas vermelhas e mix de legumes congelados são colhidos maduros e ficam prontos para usar."
+     ],
+     "q": "Qual legume ou fruta congelada mais te salva num dia corrido?",
+     "c": "Olhe seu freezer e planeje uma refeição rápida com pelo menos um legume congelado que você já tem."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic kitchen tools",
+     "g": "Set up a simple starter kit: a sharp knife, a board, a pot, a pan and a blender.",
+     "p": [
+      "One good chef's knife and a stable cutting board handle almost all vegetable prep.",
+      "A medium pot for grains, soups and beans plus a wide pan for frying cover most everyday recipes.",
+      "A blender makes sauces, soups, hummus and smoothies, so it is worth having even a simple one."
+     ],
+     "q": "Which kitchen tool do you use the most, and which one do you wish you had?",
+     "c": "Put a damp cloth under your cutting board so it stays still, then slice one vegetable on it."
+    },
+    "de": {
+     "t": "Grundausstattung der Küche",
+     "g": "Stelle dir ein einfaches Starterset zusammen: scharfes Messer, Brett, Topf, Pfanne und Mixer.",
+     "p": [
+      "Ein gutes Kochmesser und ein stabiles Schneidebrett reichen für fast jede Gemüsevorbereitung.",
+      "Ein mittlerer Topf für Getreide, Suppen und Bohnen plus eine breite Pfanne decken die meisten Rezepte ab.",
+      "Ein Mixer macht Saucen, Suppen, Hummus und Smoothies, daher lohnt sich schon ein einfaches Modell."
+     ],
+     "q": "Welches Küchenwerkzeug nutzt du am meisten, und welches hättest du gern?",
+     "c": "Lege ein feuchtes Tuch unter dein Schneidebrett, damit es nicht rutscht, und schneide darauf ein Gemüse."
+    },
+    "es": {
+     "t": "Utensilios básicos de cocina",
+     "g": "Montar un kit sencillo: un cuchillo afilado, una tabla, una olla, una sartén y una batidora.",
+     "p": [
+      "Un buen cuchillo de cocinero y una tabla estable bastan para casi toda la preparación de verduras.",
+      "Una olla mediana para cereales, sopas y legumbres y una sartén amplia cubren la mayoría de recetas diarias.",
+      "La batidora hace salsas, cremas, hummus y batidos, así que vale la pena tener aunque sea una sencilla."
+     ],
+     "q": "¿Qué utensilio usas más en la cocina y cuál te gustaría tener?",
+     "c": "Pon un paño húmedo bajo tu tabla para que no se mueva y corta una verdura encima."
+    },
+    "fr": {
+     "t": "Les ustensiles de base",
+     "g": "Constituer un kit simple : un couteau bien aiguisé, une planche, une casserole, une poêle et un mixeur.",
+     "p": [
+      "Un bon couteau de chef et une planche stable suffisent pour presque toute la préparation des légumes.",
+      "Une casserole moyenne pour céréales, soupes et légumineuses et une grande poêle couvrent la plupart des recettes.",
+      "Un mixeur fait sauces, soupes, houmous et smoothies : même un modèle simple vaut le coup."
+     ],
+     "q": "Quel ustensile utilises-tu le plus, et lequel aimerais-tu avoir ?",
+     "c": "Place un torchon humide sous ta planche pour qu’elle ne glisse pas, puis coupe un légume dessus."
+    },
+    "it": {
+     "t": "Gli attrezzi di base",
+     "g": "Creare un kit semplice: un coltello affilato, un tagliere, una pentola, una padella e un frullatore.",
+     "p": [
+      "Un buon coltello da cuoco e un tagliere stabile bastano per quasi tutta la preparazione delle verdure.",
+      "Una pentola media per cereali, zuppe e legumi e una padella larga coprono la maggior parte delle ricette.",
+      "Il frullatore prepara salse, vellutate, hummus e frullati, quindi conviene averne anche uno semplice."
+     ],
+     "q": "Quale attrezzo usi di più in cucina e quale vorresti avere?",
+     "c": "Metti un panno umido sotto il tagliere perché non scivoli, poi affetta una verdura sopra."
+    },
+    "pt": {
+     "t": "Utensílios básicos de cozinha",
+     "g": "Montar um kit simples: uma faca afiada, uma tábua, um tacho, uma frigideira e uma liquidificadora.",
+     "p": [
+      "Uma boa faca de chef e uma tábua estável chegam para quase toda a preparação de legumes.",
+      "Um tacho médio para cereais, sopas e feijão e uma frigideira larga cobrem a maioria das receitas do dia a dia.",
+      "A liquidificadora faz molhos, sopas, húmus e batidos, por isso vale a pena ter mesmo uma simples."
+     ],
+     "q": "Que utensílio usas mais na cozinha e qual gostavas de ter?",
+     "c": "Põe um pano húmido debaixo da tábua para não escorregar e corta um legume em cima dela."
+    },
+    "pt_BR": {
+     "t": "Utensílios básicos de cozinha",
+     "g": "Montar um kit simples: uma faca afiada, uma tábua, uma panela, uma frigideira e um liquidificador.",
+     "p": [
+      "Uma boa faca de chef e uma tábua firme resolvem quase todo o preparo de legumes.",
+      "Uma panela média para grãos, sopas e feijão e uma frigideira larga dão conta da maioria das receitas.",
+      "O liquidificador faz molhos, sopas, homus e vitaminas, então vale ter mesmo um modelo simples."
+     ],
+     "q": "Qual utensílio você mais usa na cozinha e qual gostaria de ter?",
+     "c": "Coloque um pano úmido embaixo da tábua para ela não escorregar e corte um legume em cima."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knife skills: the basics",
+     "g": "Hold a knife safely and learn to slice, dice and mince.",
+     "p": [
+      "Grip the handle with the blade between thumb and index finger, and curl the fingers of your other hand like a claw.",
+      "Slicing means even thin pieces; dicing means cubes; mincing means chopping very finely.",
+      "Cut a flat side on round vegetables first so they lie still and never roll under the blade."
+     ],
+     "q": "Which cut do you find hardest right now: slicing, dicing or mincing?",
+     "c": "Dice one carrot or potato into cubes of roughly the same size, slowly and with the claw grip."
+    },
+    "de": {
+     "t": "Messertechnik: die Grundlagen",
+     "g": "Halte ein Messer sicher und lerne Scheiben, Würfel und feines Hacken.",
+     "p": [
+      "Greife den Griff, Klinge zwischen Daumen und Zeigefinger, und forme die andere Hand zur Kralle.",
+      "Scheiben sind gleichmäßig dünn, Würfel sind kleine Quader, Hacken bedeutet sehr fein zerkleinern.",
+      "Schneide runden Gemüsen zuerst eine flache Seite an, damit sie liegen bleiben und nicht wegrollen."
+     ],
+     "q": "Welcher Schnitt fällt dir gerade am schwersten: Scheiben, Würfel oder fein Hacken?",
+     "c": "Würfle eine Karotte oder Kartoffel in etwa gleich große Stücke, langsam und mit dem Krallengriff."
+    },
+    "es": {
+     "t": "Técnica de cuchillo: lo básico",
+     "g": "Sujetar el cuchillo con seguridad y aprender a cortar en láminas, en dados y picar fino.",
+     "p": [
+      "Agarra el mango con la hoja entre el pulgar y el índice y dobla los dedos de la otra mano como una garra.",
+      "Laminar es cortar piezas finas iguales; cortar en dados es hacer cubos; picar es trocear muy fino.",
+      "Corta primero un lado plano en las verduras redondas para que se apoyen bien y no rueden."
+     ],
+     "q": "¿Qué corte te cuesta más ahora: láminas, dados o picado fino?",
+     "c": "Corta una zanahoria o una patata en dados de tamaño parecido, despacio y con la mano en garra."
+    },
+    "fr": {
+     "t": "Techniques de couteau : les bases",
+     "g": "Tenir un couteau en sécurité et apprendre à émincer, couper en dés et hacher.",
+     "p": [
+      "Tiens le manche, lame pincée entre pouce et index, et replie les doigts de l’autre main en griffe.",
+      "Émincer, ce sont des tranches fines et égales ; les dés sont des cubes ; hacher, c’est couper très fin.",
+      "Coupe d’abord un côté plat sur les légumes ronds pour qu’ils restent stables et ne roulent pas."
+     ],
+     "q": "Quelle coupe te semble la plus difficile pour l’instant : émincer, dés ou hacher ?",
+     "c": "Coupe une carotte ou une pomme de terre en dés de taille à peu près égale, lentement, main en griffe."
+    },
+    "it": {
+     "t": "Tecnica del coltello: le basi",
+     "g": "Tenere il coltello in sicurezza e imparare ad affettare, tagliare a dadini e tritare.",
+     "p": [
+      "Impugna il manico con la lama tra pollice e indice e piega le dita dell’altra mano ad artiglio.",
+      "Affettare dà fette sottili e uguali; i dadini sono cubetti; tritare significa tagliare finissimo.",
+      "Taglia prima un lato piatto alle verdure tonde, così restano ferme e non rotolano sotto la lama."
+     ],
+     "q": "Quale taglio ti riesce più difficile ora: fette, dadini o trito?",
+     "c": "Taglia una carota o una patata a dadini di misura simile, piano e con la mano ad artiglio."
+    },
+    "pt": {
+     "t": "Técnica de faca: o básico",
+     "g": "Segurar a faca com segurança e aprender a fatiar, cortar em cubos e picar.",
+     "p": [
+      "Agarra o cabo com a lâmina entre o polegar e o indicador e dobra os dedos da outra mão em garra.",
+      "Fatiar é fazer pedaços finos e iguais; cortar em cubos é fazer dados; picar é cortar muito fino.",
+      "Corta primeiro um lado plano nos legumes redondos para ficarem estáveis e não rolarem."
+     ],
+     "q": "Que corte achas mais difícil neste momento: fatiar, cubos ou picar?",
+     "c": "Corta uma cenoura ou batata em cubos de tamanho parecido, devagar e com a mão em garra."
+    },
+    "pt_BR": {
+     "t": "Técnica de faca: o básico",
+     "g": "Segurar a faca com segurança e aprender a fatiar, cortar em cubos e picar.",
+     "p": [
+      "Segure o cabo com a lâmina entre o polegar e o indicador e dobre os dedos da outra mão em forma de garra.",
+      "Fatiar é fazer pedaços finos e iguais; cubos são dadinhos; picar é cortar bem miudinho.",
+      "Corte primeiro um lado reto nos legumes redondos para eles ficarem firmes e não rolarem."
+     ],
+     "q": "Qual corte é mais difícil para você agora: fatiar, cubos ou picar?",
+     "c": "Corte uma cenoura ou batata em cubos de tamanho parecido, com calma e a mão em garra."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chopping an onion like a pro",
+     "g": "Learn a neat, quick method for dicing onions with fewer tears.",
+     "p": [
+      "Halve the onion through the root, peel it and keep the root end on so the layers hold together.",
+      "Make vertical cuts toward the root, then slice across to get even little cubes.",
+      "A sharp knife crushes fewer cells, which means less irritating vapour and fewer tears."
+     ],
+     "q": "Do onions make you cry, and do you have a trick that helps?",
+     "c": "Dice one onion with today's method and use it as the start of a simple sauce or soup."
+    },
+    "de": {
+     "t": "Zwiebeln schneiden wie ein Profi",
+     "g": "Lerne eine saubere, schnelle Methode, Zwiebeln mit weniger Tränen zu würfeln.",
+     "p": [
+      "Halbiere die Zwiebel durch die Wurzel, schäle sie und lass das Wurzelende dran, damit die Schichten halten.",
+      "Schneide senkrecht bis kurz vor die Wurzel, dann quer, und du erhältst gleichmäßige Würfel.",
+      "Ein scharfes Messer zerdrückt weniger Zellen, also entstehen weniger reizende Dämpfe und Tränen."
+     ],
+     "q": "Musst du beim Zwiebelschneiden weinen, und hast du einen Trick dagegen?",
+     "c": "Würfle eine Zwiebel mit der heutigen Methode und nutze sie als Start für eine einfache Sauce oder Suppe."
+    },
+    "es": {
+     "t": "Picar cebolla como un profesional",
+     "g": "Aprender un método limpio y rápido para picar cebolla con menos lágrimas.",
+     "p": [
+      "Parte la cebolla por la raíz, pélala y deja la raíz puesta para que las capas no se separen.",
+      "Haz cortes verticales hacia la raíz y luego corta en perpendicular para lograr daditos iguales.",
+      "Un cuchillo afilado rompe menos células, así hay menos vapores irritantes y menos lágrimas."
+     ],
+     "q": "¿Te hace llorar la cebolla? ¿Tienes algún truco que te funcione?",
+     "c": "Pica una cebolla con el método de hoy y úsala como base de una salsa o sopa sencilla."
+    },
+    "fr": {
+     "t": "Ciseler un oignon comme un pro",
+     "g": "Apprendre une méthode nette et rapide pour couper l’oignon en dés avec moins de larmes.",
+     "p": [
+      "Coupe l’oignon en deux par la racine, épluche-le et garde la racine pour que les couches tiennent.",
+      "Fais des entailles verticales vers la racine, puis tranche en travers pour obtenir de petits dés réguliers.",
+      "Un couteau bien aiguisé écrase moins de cellules : moins de vapeurs irritantes, donc moins de larmes."
+     ],
+     "q": "Les oignons te font-ils pleurer, et as-tu une astuce qui marche ?",
+     "c": "Cisèle un oignon avec la méthode du jour et utilise-le comme base d’une sauce ou d’une soupe simple."
+    },
+    "it": {
+     "t": "Tritare la cipolla come un professionista",
+     "g": "Imparare un metodo pulito e veloce per tagliare la cipolla a dadini con meno lacrime.",
+     "p": [
+      "Taglia la cipolla a metà passando per la radice, sbucciala e lascia la radice per tenere uniti gli strati.",
+      "Fai tagli verticali verso la radice, poi taglia di traverso per ottenere dadini regolari.",
+      "Un coltello affilato schiaccia meno cellule: meno vapori irritanti e quindi meno lacrime."
+     ],
+     "q": "La cipolla ti fa piangere? Hai un trucco che funziona?",
+     "c": "Trita una cipolla con il metodo di oggi e usala come base per un sugo o una zuppa semplice."
+    },
+    "pt": {
+     "t": "Picar cebola como um profissional",
+     "g": "Aprender um método limpo e rápido para picar cebola com menos lágrimas.",
+     "p": [
+      "Corta a cebola ao meio pela raiz, descasca e mantém a raiz para as camadas ficarem unidas.",
+      "Faz cortes verticais em direção à raiz e depois corta na transversal para ter cubinhos iguais.",
+      "Uma faca afiada esmaga menos células, o que liberta menos vapores irritantes e menos lágrimas."
+     ],
+     "q": "A cebola faz-te chorar? Tens algum truque que resulte?",
+     "c": "Pica uma cebola com o método de hoje e usa-a como base de um refogado ou sopa simples."
+    },
+    "pt_BR": {
+     "t": "Picar cebola como profissional",
+     "g": "Aprender um jeito limpo e rápido de picar cebola com menos lágrimas.",
+     "p": [
+      "Corte a cebola ao meio pela raiz, descasque e mantenha a raiz para as camadas ficarem unidas.",
+      "Faça cortes verticais até perto da raiz e depois corte na transversal para ter cubinhos iguais.",
+      "Faca afiada esmaga menos células, solta menos vapor irritante e faz você chorar menos."
+     ],
+     "q": "Cebola faz você chorar? Tem algum truque que funciona?",
+     "c": "Pique uma cebola com o método de hoje e use como base de um refogado ou sopa simples."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Garlic and ginger prep",
+     "g": "Peel, mince and grate the two flavour heroes of many cuisines.",
+     "p": [
+      "Press a garlic clove with the flat of your knife to loosen the skin, then peel and mince it finely.",
+      "Peel fresh ginger with the edge of a spoon, which follows its bumps and wastes very little.",
+      "Grate ginger and garlic on a fine grater for sauces and dressings where you want smooth flavour."
+     ],
+     "q": "Which do you use more often, garlic or ginger, and in what dish?",
+     "c": "Grate a small piece of ginger and one clove of garlic into a spoon of soy sauce and taste it on rice or vegetables."
+    },
+    "de": {
+     "t": "Knoblauch und Ingwer vorbereiten",
+     "g": "Schälen, hacken und reiben: die zwei Geschmackshelden vieler Küchen.",
+     "p": [
+      "Drück eine Knoblauchzehe mit der flachen Klinge an, damit sich die Haut löst, dann schälen und fein hacken.",
+      "Schäle frischen Ingwer mit der Kante eines Löffels, der sich den Knubbeln anpasst und wenig verschwendet.",
+      "Reibe Ingwer und Knoblauch fein für Saucen und Dressings, wenn du einen glatten Geschmack willst."
+     ],
+     "q": "Was nutzt du öfter, Knoblauch oder Ingwer, und in welchem Gericht?",
+     "c": "Reibe ein Stück Ingwer und eine Knoblauchzehe in einen Löffel Sojasauce und probiere es zu Reis oder Gemüse."
+    },
+    "es": {
+     "t": "Preparar ajo y jengibre",
+     "g": "Pelar, picar y rallar los dos héroes del sabor de muchas cocinas.",
+     "p": [
+      "Aplasta un diente de ajo con la hoja plana del cuchillo para soltar la piel, pélalo y pícalo fino.",
+      "Pela el jengibre fresco con el borde de una cuchara: sigue sus curvas y desperdicia muy poco.",
+      "Ralla el jengibre y el ajo con un rallador fino para salsas y aliños de sabor suave y uniforme."
+     ],
+     "q": "¿Qué usas más, ajo o jengibre, y en qué plato?",
+     "c": "Ralla un trocito de jengibre y un diente de ajo en una cucharada de salsa de soja y pruébalo con arroz o verduras."
+    },
+    "fr": {
+     "t": "Préparer l’ail et le gingembre",
+     "g": "Éplucher, hacher et râper les deux héros du goût de nombreuses cuisines.",
+     "p": [
+      "Écrase une gousse d’ail avec le plat de la lame pour décoller la peau, puis épluche-la et hache-la finement.",
+      "Épluche le gingembre frais avec le bord d’une cuillère, qui suit ses bosses et gaspille très peu.",
+      "Râpe gingembre et ail finement pour les sauces et vinaigrettes où tu veux un goût bien lisse."
+     ],
+     "q": "Utilises-tu plus souvent l’ail ou le gingembre, et dans quel plat ?",
+     "c": "Râpe un petit morceau de gingembre et une gousse d’ail dans une cuillère de sauce soja, et goûte sur du riz."
+    },
+    "it": {
+     "t": "Preparare aglio e zenzero",
+     "g": "Sbucciare, tritare e grattugiare i due eroi del sapore di molte cucine.",
+     "p": [
+      "Schiaccia uno spicchio d’aglio con la lama piatta per staccare la buccia, poi sbuccialo e tritalo fine.",
+      "Pela lo zenzero fresco con il bordo di un cucchiaino: segue le sue curve e spreca pochissimo.",
+      "Grattugia zenzero e aglio finemente per salse e condimenti dal sapore liscio e uniforme."
+     ],
+     "q": "Usi più spesso l’aglio o lo zenzero, e in quale piatto?",
+     "c": "Grattugia un pezzetto di zenzero e uno spicchio d’aglio in un cucchiaio di salsa di soia e assaggia su riso o verdure."
+    },
+    "pt": {
+     "t": "Preparar alho e gengibre",
+     "g": "Descascar, picar e ralar os dois heróis do sabor de muitas cozinhas.",
+     "p": [
+      "Esmaga um dente de alho com a lâmina da faca para soltar a pele, depois descasca e pica fininho.",
+      "Descasca o gengibre fresco com a borda de uma colher, que segue as curvas e desperdiça muito pouco.",
+      "Rala gengibre e alho num ralador fino para molhos e temperos de sabor suave e uniforme."
+     ],
+     "q": "O que usas mais, alho ou gengibre, e em que prato?",
+     "c": "Rala um pedacinho de gengibre e um dente de alho numa colher de molho de soja e prova com arroz ou legumes."
+    },
+    "pt_BR": {
+     "t": "Preparando alho e gengibre",
+     "g": "Descascar, picar e ralar os dois heróis do sabor de muitas cozinhas.",
+     "p": [
+      "Amasse um dente de alho com a lateral da faca para soltar a casca, depois descasque e pique bem fininho.",
+      "Descasque o gengibre fresco com a borda de uma colher, que acompanha as curvas e desperdiça pouco.",
+      "Rale gengibre e alho no ralo fino para molhos e temperos com sabor suave e uniforme."
+     ],
+     "q": "O que você usa mais, alho ou gengibre, e em qual prato?",
+     "c": "Rale um pedacinho de gengibre e um dente de alho numa colher de shoyu e prove com arroz ou legumes."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Washing and storing vegetables",
+     "g": "Keep greens crisp, herbs fresh and root vegetables lasting longer.",
+     "p": [
+      "Wash leafy greens in a bowl of cold water, lift them out, then dry them well so they stay crisp.",
+      "Treat soft herbs like flowers: stems in a glass of water; wrap hardy herbs in a slightly damp towel.",
+      "Store potatoes, onions and garlic in a cool, dark, dry place, but keep potatoes away from onions."
+     ],
+     "q": "Which vegetable always seems to go bad too fast in your kitchen?",
+     "c": "Put a bunch of fresh herbs in a glass of water in the fridge or on the counter and see how long they last."
+    },
+    "de": {
+     "t": "Gemüse waschen und lagern",
+     "g": "Halte Blattgemüse knackig, Kräuter frisch und Wurzelgemüse länger haltbar.",
+     "p": [
+      "Wasche Blattgemüse in einer Schüssel kaltem Wasser, heb es heraus und trockne es gut, damit es knackig bleibt.",
+      "Behandle weiche Kräuter wie Blumen, Stiele ins Wasserglas; feste Kräuter in ein leicht feuchtes Tuch wickeln.",
+      "Lagere Kartoffeln, Zwiebeln und Knoblauch kühl, dunkel und trocken, Kartoffeln aber getrennt von Zwiebeln."
+     ],
+     "q": "Welches Gemüse verdirbt bei dir in der Küche immer zu schnell?",
+     "c": "Stell einen Bund frische Kräuter in ein Glas Wasser und beobachte, wie lange er frisch bleibt."
+    },
+    "es": {
+     "t": "Lavar y guardar verduras",
+     "g": "Mantener las hojas crujientes, las hierbas frescas y las raíces durante más tiempo.",
+     "p": [
+      "Lava las hojas en un bol de agua fría, sácalas y sécalas bien para que sigan crujientes.",
+      "Trata las hierbas tiernas como flores, tallos en un vaso de agua; envuelve las duras en un paño algo húmedo.",
+      "Guarda patatas, cebollas y ajos en un lugar fresco, oscuro y seco, pero las patatas lejos de las cebollas."
+     ],
+     "q": "¿Qué verdura parece estropearse siempre demasiado rápido en tu cocina?",
+     "c": "Pon un manojo de hierbas frescas en un vaso con agua y observa cuánto tiempo aguantan."
+    },
+    "fr": {
+     "t": "Laver et conserver les légumes",
+     "g": "Garder les salades croquantes, les herbes fraîches et les légumes racines plus longtemps.",
+     "p": [
+      "Lave les feuilles dans un saladier d’eau froide, sors-les puis sèche-les bien pour qu’elles restent croquantes.",
+      "Traite les herbes tendres comme des fleurs, tiges dans l’eau ; enroule les herbes robustes dans un linge humide.",
+      "Range pommes de terre, oignons et ail au frais, au sec et à l’obscurité, mais les pommes de terre loin des oignons."
+     ],
+     "q": "Quel légume semble toujours s’abîmer trop vite chez toi ?",
+     "c": "Mets un bouquet d’herbes fraîches dans un verre d’eau et observe combien de temps il tient."
+    },
+    "it": {
+     "t": "Lavare e conservare le verdure",
+     "g": "Mantenere l’insalata croccante, le erbe fresche e le radici più a lungo.",
+     "p": [
+      "Lava le foglie in una ciotola d’acqua fredda, sollevale e asciugale bene perché restino croccanti.",
+      "Tratta le erbe tenere come fiori, gambi in un bicchiere d’acqua; avvolgi quelle robuste in un panno umido.",
+      "Conserva patate, cipolle e aglio in un luogo fresco, buio e asciutto, ma tieni le patate lontane dalle cipolle."
+     ],
+     "q": "Quale verdura nella tua cucina sembra rovinarsi sempre troppo in fretta?",
+     "c": "Metti un mazzetto di erbe fresche in un bicchiere d’acqua e osserva quanto durano."
+    },
+    "pt": {
+     "t": "Lavar e guardar legumes",
+     "g": "Manter as folhas estaladiças, as ervas frescas e os tubérculos durante mais tempo.",
+     "p": [
+      "Lava as folhas numa taça de água fria, retira-as e seca-as bem para ficarem estaladiças.",
+      "Trata as ervas tenras como flores, pés num copo de água; embrulha as mais rijas num pano ligeiramente húmido.",
+      "Guarda batatas, cebolas e alho num sítio fresco, escuro e seco, mas as batatas longe das cebolas."
+     ],
+     "q": "Que legume parece estragar-se sempre depressa demais na tua cozinha?",
+     "c": "Põe um ramo de ervas frescas num copo com água e vê quanto tempo aguenta."
+    },
+    "pt_BR": {
+     "t": "Lavando e guardando legumes",
+     "g": "Manter as folhas crocantes, as ervas frescas e as raízes durando mais.",
+     "p": [
+      "Lave as folhas numa tigela de água fria, tire e seque bem para continuarem crocantes.",
+      "Trate ervas delicadas como flores, talos num copo de água; enrole as mais firmes num pano levemente úmido.",
+      "Guarde batata, cebola e alho em lugar fresco, escuro e seco, mas deixe a batata longe da cebola."
+     ],
+     "q": "Qual legume sempre parece estragar rápido demais na sua cozinha?",
+     "c": "Coloque um maço de ervas frescas num copo com água e veja quanto tempo ele dura."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "travel_phrases",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ordering drinks",
+     "g": "Order water, coffee, tea and juice, and ask for still or sparkling.",
+     "p": [
+      "Spanish: «Un agua sin gas» (seen GAS) = still water, «con gas» = sparkling. «Un café con leche» (LEH-cheh) = coffee with milk.",
+      "French: «Une carafe d'eau, s'il vous plaît» (ka-RAF doh) = a jug of tap water, usually free in restaurants. «Un thé» (tay) = a tea.",
+      "Italian: «Acqua naturale o frizzante?» (na-too-RA-leh / freed-DZAN-teh) = still or sparkling? «Un succo d'arancia» = an orange juice."
+     ],
+     "q": "What is your go-to drink when you sit down in a café abroad?",
+     "c": "Order your favourite drink out loud in Spanish, French and Italian."
+    },
+    "de": {
+     "t": "Getränke bestellen",
+     "g": "Bestell Wasser, Kaffee, Tee und Saft und frag nach still oder mit Kohlensäure.",
+     "p": [
+      "Spanisch: «Un agua sin gas» (ssin GASS) = stilles Wasser, «con gas» = mit Kohlensäure. «Un café con leche» (LE-tsche) = Milchkaffee.",
+      "Französisch: «Une carafe d'eau, s'il vous plaît» (ka-RAF do) = Leitungswasser in der Karaffe, im Restaurant meist gratis. «Un thé» = Tee.",
+      "Italienisch: «Acqua naturale o frizzante?» (na-tu-RA-le / frid-DSAN-te) = still oder sprudelnd? «Un succo d'arancia» = Orangensaft."
+     ],
+     "q": "Was ist dein Lieblingsgetränk, wenn du dich im Ausland in ein Café setzt?",
+     "c": "Bestell dein Lieblingsgetränk laut auf Spanisch, Französisch und Italienisch."
+    },
+    "es": {
+     "t": "Pedir bebidas",
+     "g": "Pide agua, café, té y zumo, y pregunta si es con gas o sin gas.",
+     "p": [
+      "Inglés: «Still water, please» (stil UO-ter) = agua sin gas, «sparkling» (SPAR-kling) = con gas. «A white coffee» = café con leche.",
+      "Francés: «Une carafe d'eau, s'il vous plaît» (ka-RAF do) = una jarra de agua del grifo, normalmente gratis. «Un thé» (té) = un té.",
+      "Italiano: «Acqua naturale o frizzante?» (na-tu-RA-le / fri-DSAN-te) = ¿sin gas o con gas? «Un succo d'arancia» = un zumo de naranja."
+     ],
+     "q": "¿Qué bebida pides siempre cuando te sientas en una cafetería en el extranjero?",
+     "c": "Pide tu bebida favorita en voz alta en inglés, francés e italiano."
+    },
+    "fr": {
+     "t": "Commander des boissons",
+     "g": "Commander de l'eau, un café, un thé ou un jus, et demander plate ou gazeuse.",
+     "p": [
+      "Espagnol : «Un agua sin gas» (sine GASS) = eau plate, «con gas» = gazeuse. «Un café con leche» (LÉ-tché) = café au lait.",
+      "Anglais : «Tap water, please» (tap OUO-teur) = eau du robinet, «sparkling water» = eau gazeuse. «A tea» (a TI) = un thé.",
+      "Italien : «Acqua naturale o frizzante?» (na-tou-RA-lé / frid-DZANE-té) = plate ou gazeuse ? «Un succo d'arancia» = un jus d'orange."
+     ],
+     "q": "Quelle est ta boisson préférée quand tu t'assois dans un café à l'étranger ?",
+     "c": "Commande ta boisson préférée à voix haute en espagnol, en anglais et en italien."
+    },
+    "it": {
+     "t": "Ordinare da bere",
+     "g": "Ordinare acqua, caffè, tè e succo, e chiedere naturale o frizzante.",
+     "p": [
+      "Spagnolo: «Un agua sin gas» (sin GAS) = acqua naturale, «con gas» = frizzante. «Un café con leche» (LE-ce) = caffellatte.",
+      "Francese: «Une carafe d'eau, s'il vous plaît» (ka-RAF do) = una caraffa d'acqua del rubinetto, di solito gratis. «Un thé» (té) = un tè.",
+      "Inglese: «Still or sparkling?» (stil or SPAR-kling) = naturale o frizzante? «An orange juice» (an O-rinj jus) = un succo d'arancia."
+     ],
+     "q": "Qual è la tua bevanda preferita quando ti siedi in un caffè all'estero?",
+     "c": "Ordina ad alta voce la tua bevanda preferita in spagnolo, francese e inglese."
+    },
+    "pt": {
+     "t": "Pedir bebidas",
+     "g": "Pedir água, café, chá e sumo, e perguntar se é com ou sem gás.",
+     "p": [
+      "Espanhol: «Un agua sin gas» (sin GÁS) = água sem gás, «con gas» = com gás. «Un café con leche» (LÊ-tche) = galão ou meia de leite.",
+      "Francês: «Une carafe d'eau, s'il vous plaît» (ka-RÁF dô) = jarro de água da torneira, em geral grátis. «Un thé» (tê) = um chá.",
+      "Italiano: «Acqua naturale o frizzante?» (na-tu-RÁ-le / fri-DZÃN-te) = sem gás ou com gás? «Un succo d'arancia» = um sumo de laranja."
+     ],
+     "q": "Qual é a tua bebida de sempre quando te sentas num café no estrangeiro?",
+     "c": "Pede a tua bebida preferida em voz alta em espanhol, francês e italiano."
+    },
+    "pt_BR": {
+     "t": "Pedir bebidas",
+     "g": "Pedir água, café, chá e suco, e perguntar se é com ou sem gás.",
+     "p": [
+      "Espanhol: «Un agua sin gas» (sin GÁS) = água sem gás, «con gas» = com gás. «Un café con leche» (LÊ-tche) = café com leite.",
+      "Francês: «Une carafe d'eau, s'il vous plaît» (ka-RÁF dô) = jarra de água da torneira, em geral grátis. «Un thé» (tê) = um chá.",
+      "Italiano: «Acqua naturale o frizzante?» (na-tu-RÁ-le / fri-DZÃN-te) = sem gás ou com gás? «Un succo d'arancia» = um suco de laranja."
+     ],
+     "q": "Qual é a sua bebida de sempre quando senta num café no exterior?",
+     "c": "Peça sua bebida favorita em voz alta em espanhol, francês e italiano."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dietary needs",
+     "g": "Say that you are vegetarian, vegan or avoid certain foods.",
+     "p": [
+      "Spanish: «Soy vegetariano» (men) or «Soy vegetariana» (women), said veh-heh-ta-RYA-no. «Soy vegano / vegana» = I am vegan.",
+      "French: «Je suis végétarien» or «végétarienne» (vay-zhay-ta-RYAN). «Sans viande, s'il vous plaît» (sahn VYAHND) = without meat.",
+      "Italian: «Non mangio pesce» (non MAN-jo PEH-sheh) = I don't eat fish. Ask «C'è carne?» = is there meat in it? Broths can hide meat."
+     ],
+     "q": "Do you follow any special diet, or is there a food you simply never eat?",
+     "c": "Write your own food rule in two languages, like I don't eat meat or no pork, please."
+    },
+    "de": {
+     "t": "Besondere Ernährung",
+     "g": "Sag, dass du vegetarisch oder vegan lebst oder bestimmte Lebensmittel meidest.",
+     "p": [
+      "Spanisch: «Soy vegetariano» (Männer) oder «Soy vegetariana» (Frauen), gesprochen we-che-ta-RJA-no. «Soy vegano / vegana» = Ich bin vegan.",
+      "Französisch: «Je suis végétarien» oder «végétarienne» (we-sche-ta-RJÄN). «Sans viande, s'il vous plaît» (ssan WJAND) = ohne Fleisch.",
+      "Italienisch: «Non mangio pesce» (non MAN-dscho PE-sche) = Ich esse keinen Fisch. Frag «C'è carne?» = Ist Fleisch drin? Achtung bei Brühen."
+     ],
+     "q": "Folgst du einer besonderen Ernährung, oder gibt es ein Lebensmittel, das du nie isst?",
+     "c": "Schreib deine eigene Essensregel in zwei Sprachen, etwa Ich esse kein Fleisch oder Bitte ohne Schwein."
+    },
+    "es": {
+     "t": "Necesidades alimentarias",
+     "g": "Di que eres vegetariano, vegano o que evitas ciertos alimentos.",
+     "p": [
+      "Inglés: «I'm vegetarian» (aim ve-ye-TE-rian) = soy vegetariano o vegetariana. «I'm vegan» (aim VI-gan) = soy vegano.",
+      "Francés: «Je suis végétarien» o «végétarienne» (ve-ye-ta-RIAN). «Sans viande, s'il vous plaît» (san VIAND) = sin carne, por favor.",
+      "Italiano: «Non mangio pesce» (non MAN-yo PE-she) = no como pescado. Pregunta «C'è carne?» = ¿lleva carne? Los caldos pueden llevarla."
+     ],
+     "q": "¿Sigues alguna dieta especial, o hay un alimento que nunca comes?",
+     "c": "Escribe tu propia norma de comida en dos idiomas, como no como carne o sin cerdo, por favor."
+    },
+    "fr": {
+     "t": "Régimes alimentaires",
+     "g": "Dire qu'on est végétarien, végan ou qu'on évite certains aliments.",
+     "p": [
+      "Espagnol : «Soy vegetariano» (hommes) ou «Soy vegetariana» (femmes), dit vé-khé-ta-RIA-no. «Soy vegano / vegana» = je suis végan.",
+      "Anglais : «I'm vegetarian» (aïm vè-dji-TÈ-rieun) = je suis végétarien. «No meat, please» (nôou MIT pliz) = sans viande, s'il vous plaît.",
+      "Italien : «Non mangio pesce» = je ne mange pas de poisson. Demande «C'è carne?» = il y a de la viande ? Gare aux bouillons."
+     ],
+     "q": "Suis-tu un régime particulier, ou y a-t-il un aliment que tu ne manges jamais ?",
+     "c": "Écris ta propre règle alimentaire dans deux langues, comme je ne mange pas de viande ou sans porc, s'il vous plaît."
+    },
+    "it": {
+     "t": "Esigenze alimentari",
+     "g": "Dire che sei vegetariano, vegano o che eviti certi cibi.",
+     "p": [
+      "Spagnolo: «Soy vegetariano» (uomini) o «Soy vegetariana» (donne), si dice ve-he-ta-RIA-no. «Soy vegano / vegana» = sono vegano.",
+      "Francese: «Je suis végétarien» o «végétarienne» (ve-je-ta-RIẼ). «Sans viande, s'il vous plaît» (san VIAND) = senza carne, per favore.",
+      "Inglese: «I don't eat fish» (ai dount it FISC) = non mangio pesce. Chiedi «Is there meat in it?» = c'è carne? Attenzione ai brodi."
+     ],
+     "q": "Segui una dieta particolare, o c'è un cibo che non mangi mai?",
+     "c": "Scrivi la tua regola alimentare in due lingue, come non mangio carne o senza maiale, per favore."
+    },
+    "pt": {
+     "t": "Necessidades alimentares",
+     "g": "Dizer que és vegetariano, vegano ou que evitas certos alimentos.",
+     "p": [
+      "Espanhol: «Soy vegetariano» (homens) ou «Soy vegetariana» (mulheres), dito ve-rre-ta-RIÁ-no. «Soy vegano / vegana» = sou vegano.",
+      "Francês: «Je suis végétarien» ou «végétarienne» (vê-jê-ta-RIÃ). «Sans viande, s'il vous plaît» (sã VIÃD) = sem carne, por favor.",
+      "Italiano: «Non mangio pesce» (non MÃN-djo PÊ-che) = não como peixe. Pergunta «C'è carne?» = leva carne? Os caldos podem ter carne."
+     ],
+     "q": "Segues alguma dieta especial, ou há algum alimento que nunca comes?",
+     "c": "Escreve a tua regra alimentar em duas línguas, como não como carne ou sem porco, por favor."
+    },
+    "pt_BR": {
+     "t": "Restrições alimentares",
+     "g": "Dizer que você é vegetariano, vegano ou que evita certos alimentos.",
+     "p": [
+      "Espanhol: «Soy vegetariano» (homens) ou «Soy vegetariana» (mulheres), dito ve-rre-ta-RIÁ-no. «Soy vegano / vegana» = sou vegano.",
+      "Francês: «Je suis végétarien» ou «végétarienne» (vê-jê-ta-RIÃ). «Sans viande, s'il vous plaît» (sã VIÃD) = sem carne, por favor.",
+      "Italiano: «Non mangio pesce» (non MÃN-djo PÊ-che) = não como peixe. Pergunte «C'è carne?» = tem carne? Caldos podem ter carne."
+     ],
+     "q": "Você segue alguma dieta especial, ou tem algum alimento que nunca come?",
+     "c": "Escreva sua regra alimentar em dois idiomas, como não como carne ou sem porco, por favor."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food allergies",
+     "g": "Explain an allergy clearly and ask what is in a dish.",
+     "p": [
+      "Spanish: «Soy alérgico a los frutos secos» (a-LER-hee-ko ... FROO-tos SEH-kos) = I am allergic to nuts. Women say «alérgica».",
+      "French: «Je suis allergique aux cacahuètes» (a-lehr-ZHEEK oh ka-ka-WET) = peanuts. Italian: «Sono allergico al glutine» (GLOO-tee-neh).",
+      "Ask «¿Qué lleva este plato?» (keh YEH-va) = what is in this dish? For serious allergies, carry a card written in the local language."
+     ],
+     "q": "Do you or someone you travel with need to watch out for any ingredient when eating out?",
+     "c": "Write a short allergy card in one language for yourself or a friend, even just as practice."
+    },
+    "de": {
+     "t": "Lebensmittelallergien",
+     "g": "Erkläre eine Allergie klar und frag, was in einem Gericht steckt.",
+     "p": [
+      "Spanisch: «Soy alérgico a los frutos secos» (a-LER-chi-ko ... FRU-tos SSE-kos) = Ich bin allergisch gegen Nüsse. Frauen sagen «alérgica».",
+      "Französisch: «Je suis allergique aux cacahuètes» (a-lär-SCHIK o ka-ka-UÄT) = Erdnüsse. Italienisch: «Sono allergico al glutine» (GLU-ti-ne).",
+      "Frag «¿Qué lleva este plato?» (ke JE-wa) = Was ist in diesem Gericht? Bei ernsten Allergien hilft eine Karte in der Landessprache."
+     ],
+     "q": "Musst du oder jemand, mit dem du reist, beim Essen auswärts auf eine Zutat achten?",
+     "c": "Schreib zur Übung eine kurze Allergiekarte in einer Sprache, für dich oder einen Freund."
+    },
+    "es": {
+     "t": "Alergias alimentarias",
+     "g": "Explica una alergia con claridad y pregunta qué lleva un plato.",
+     "p": [
+      "Inglés: «I'm allergic to nuts» (aim a-LER-yik tu NATS) = soy alérgico a los frutos secos. «Peanuts» (PI-nats) = cacahuetes.",
+      "Francés: «Je suis allergique aux cacahuètes» (a-ler-YIK o ka-ka-UET) = a los cacahuetes. Italiano: «Sono allergico al glutine» (GLU-ti-ne).",
+      "Pregunta «What's in this dish?» (uots in dis DISH) = ¿qué lleva este plato? Con alergias graves, lleva una tarjeta en el idioma local."
+     ],
+     "q": "¿Tú o alguien con quien viajas tiene que vigilar algún ingrediente al comer fuera?",
+     "c": "Escribe una tarjeta corta de alergia en un idioma para ti o para un amigo, aunque sea como práctica."
+    },
+    "fr": {
+     "t": "Allergies alimentaires",
+     "g": "Expliquer clairement une allergie et demander ce qu'il y a dans un plat.",
+     "p": [
+      "Espagnol : «Soy alérgico a los frutos secos» (a-LÈR-khi-ko ... FROU-toss SSÉ-koss) = allergique aux fruits à coque. Femmes : «alérgica».",
+      "Anglais : «I'm allergic to peanuts» (aïm a-leur-djik tou PI-neuts) = aux cacahuètes. Italien : «Sono allergico al glutine» (GLOU-ti-né).",
+      "Demande «¿Qué lleva este plato?» (ké YÉ-va) = qu'y a-t-il dans ce plat ? En cas d'allergie grave, garde une carte dans la langue locale."
+     ],
+     "q": "Toi ou quelqu'un avec qui tu voyages devez-vous faire attention à un ingrédient au restaurant ?",
+     "c": "Écris une petite carte d'allergie dans une langue pour toi ou un ami, même juste pour t'entraîner."
+    },
+    "it": {
+     "t": "Allergie alimentari",
+     "g": "Spiegare con chiarezza un'allergia e chiedere cosa c'è in un piatto.",
+     "p": [
+      "Spagnolo: «Soy alérgico a los frutos secos» (a-LER-hi-ko ... FRU-tos SE-kos) = sono allergico alla frutta a guscio. Donne: «alérgica».",
+      "Francese: «Je suis allergique aux cacahuètes» (a-ler-JIK o ka-ka-UÈT) = alle arachidi. Inglese: «I'm allergic to gluten» (GLU-ten).",
+      "Chiedi «¿Qué lleva este plato?» (ke IE-va) = cosa c'è in questo piatto? Per allergie gravi porta un biglietto nella lingua locale."
+     ],
+     "q": "Tu o qualcuno con cui viaggi dovete stare attenti a qualche ingrediente quando mangiate fuori?",
+     "c": "Scrivi un breve biglietto sulle allergie in una lingua per te o per un amico, anche solo per esercizio."
+    },
+    "pt": {
+     "t": "Alergias alimentares",
+     "g": "Explicar uma alergia com clareza e perguntar o que leva um prato.",
+     "p": [
+      "Espanhol: «Soy alérgico a los frutos secos» (a-LÉR-rri-ko ... FRU-tos SSÊ-kos) = sou alérgico a frutos secos. Mulheres: «alérgica».",
+      "Francês: «Je suis allergique aux cacahuètes» (a-ler-JIK ô ka-ka-UÉT) = a amendoins. Italiano: «Sono allergico al glutine» (GLU-ti-ne).",
+      "Pergunta «¿Qué lleva este plato?» (ke LHÊ-va) = o que leva este prato? Em alergias graves, leva um cartão na língua local."
+     ],
+     "q": "Tu ou alguém com quem viajas precisa de ter cuidado com algum ingrediente ao comer fora?",
+     "c": "Escreve um pequeno cartão de alergia numa língua para ti ou para um amigo, mesmo só para treinar."
+    },
+    "pt_BR": {
+     "t": "Alergias alimentares",
+     "g": "Explicar uma alergia com clareza e perguntar o que vai num prato.",
+     "p": [
+      "Espanhol: «Soy alérgico a los frutos secos» (a-LÉR-rri-ko ... FRU-tos SSÊ-kos) = sou alérgico a castanhas. Mulheres: «alérgica».",
+      "Francês: «Je suis allergique aux cacahuètes» (a-ler-JIK ô ka-ka-UÉT) = a amendoim. Italiano: «Sono allergico al glutine» (GLU-ti-ne).",
+      "Pergunte «¿Qué lleva este plato?» (ke JÊ-va) = o que vai neste prato? Em alergias graves, leve um cartão no idioma local."
+     ],
+     "q": "Você ou alguém com quem viaja precisa tomar cuidado com algum ingrediente ao comer fora?",
+     "c": "Escreva um pequeno cartão de alergia num idioma para você ou um amigo, mesmo só para treinar."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for recommendations",
+     "g": "Ask what someone recommends and how to find the local speciality.",
+     "p": [
+      "Spanish: «¿Qué me recomienda?» (keh meh reh-ko-MYEN-da) = what do you recommend? French: «Qu'est-ce que vous me conseillez ?»",
+      "Speciality: Spanish «¿Cuál es la especialidad de la casa?» (es-peh-sya-lee-DAD) = what is the house speciality?",
+      "Italian: «Qual è il piatto tipico?» (PYAT-to TEE-pee-ko) = what is the typical local dish? Locals love sharing their favourites."
+     ],
+     "q": "What local dish from your own region would you recommend to a visitor, and why?",
+     "c": "Ask someone today, in any language, what they recommend: a dish, a café or a place to visit."
+    },
+    "de": {
+     "t": "Nach Empfehlungen fragen",
+     "g": "Frag, was jemand empfiehlt und wie du die lokale Spezialität findest.",
+     "p": [
+      "Spanisch: «¿Qué me recomienda?» (ke me re-ko-MJEN-da) = Was empfehlen Sie? Französisch: «Qu'est-ce que vous me conseillez ?»",
+      "Spezialität: Spanisch «¿Cuál es la especialidad de la casa?» (es-pe-ssja-li-DAD) = Was ist die Spezialität des Hauses?",
+      "Italienisch: «Qual è il piatto tipico?» (PJAT-to TI-pi-ko) = Was ist das typische Gericht? Einheimische teilen gern ihre Lieblinge."
+     ],
+     "q": "Welches Gericht aus deiner Region würdest du einem Besucher empfehlen, und warum?",
+     "c": "Frag heute jemanden in irgendeiner Sprache nach einer Empfehlung: ein Gericht, ein Café oder ein Ausflugsziel."
+    },
+    "es": {
+     "t": "Pedir recomendaciones",
+     "g": "Pregunta qué te recomiendan y cómo encontrar la especialidad local.",
+     "p": [
+      "Inglés: «What do you recommend?» (uot du yu re-ko-MEND) = ¿qué me recomienda? Francés: «Qu'est-ce que vous me conseillez ?»",
+      "Especialidad: inglés «What's the house speciality?» (uots de jaus spe-shi-A-li-ti) = ¿cuál es la especialidad de la casa?",
+      "Italiano: «Qual è il piatto tipico?» (PIAT-to TI-pi-ko) = ¿cuál es el plato típico? A la gente local le encanta compartir sus favoritos."
+     ],
+     "q": "¿Qué plato de tu región recomendarías a un visitante, y por qué?",
+     "c": "Pregunta hoy a alguien, en cualquier idioma, qué te recomienda: un plato, un café o un sitio para visitar."
+    },
+    "fr": {
+     "t": "Demander des conseils",
+     "g": "Demander ce que l'on te conseille et comment trouver la spécialité locale.",
+     "p": [
+      "Espagnol : «¿Qué me recomienda?» (ké mé ré-ko-MIÈNE-da) = que me conseillez-vous ? Anglais : «What do you recommend?»",
+      "Spécialité : espagnol «¿Cuál es la especialidad de la casa?» (èss-pé-ssia-li-DAD) = quelle est la spécialité de la maison ?",
+      "Italien : «Qual è il piatto tipico?» (PIAT-to TI-pi-ko) = quel est le plat typique ? Les habitants adorent partager leurs favoris."
+     ],
+     "q": "Quel plat de ta région conseillerais-tu à un visiteur, et pourquoi ?",
+     "c": "Demande aujourd'hui à quelqu'un, dans n'importe quelle langue, ce qu'il te conseille : un plat, un café ou un lieu."
+    },
+    "it": {
+     "t": "Chiedere consigli",
+     "g": "Chiedere cosa ti consigliano e come trovare la specialità del posto.",
+     "p": [
+      "Spagnolo: «¿Qué me recomienda?» (ke me re-ko-MIEN-da) = cosa mi consiglia? Francese: «Qu'est-ce que vous me conseillez ?»",
+      "Specialità: spagnolo «¿Cuál es la especialidad de la casa?» (es-pe-sia-li-DAD) = qual è la specialità della casa?",
+      "Inglese: «What's the local dish?» (uots de LOU-kal DISC) = qual è il piatto tipico? La gente del posto ama condividere i suoi preferiti."
+     ],
+     "q": "Quale piatto della tua regione consiglieresti a un visitatore, e perché?",
+     "c": "Chiedi oggi a qualcuno, in qualsiasi lingua, cosa ti consiglia: un piatto, un bar o un posto da visitare."
+    },
+    "pt": {
+     "t": "Pedir recomendações",
+     "g": "Perguntar o que te recomendam e como encontrar a especialidade local.",
+     "p": [
+      "Espanhol: «¿Qué me recomienda?» (ke me rre-ko-MIÉN-da) = o que me recomenda? Francês: «Qu'est-ce que vous me conseillez ?»",
+      "Especialidade: espanhol «¿Cuál es la especialidad de la casa?» (es-pe-ssia-li-DÁD) = qual é a especialidade da casa?",
+      "Italiano: «Qual è il piatto tipico?» (PIÁT-to TÍ-pi-ko) = qual é o prato típico? As pessoas da terra adoram partilhar os favoritos."
+     ],
+     "q": "Que prato da tua região recomendarias a um visitante, e porquê?",
+     "c": "Pergunta hoje a alguém, em qualquer língua, o que recomenda: um prato, um café ou um sítio para visitar."
+    },
+    "pt_BR": {
+     "t": "Pedir recomendações",
+     "g": "Perguntar o que te recomendam e como achar a especialidade local.",
+     "p": [
+      "Espanhol: «¿Qué me recomienda?» (ke me rre-ko-MIÉN-da) = o que me recomenda? Francês: «Qu'est-ce que vous me conseillez ?»",
+      "Especialidade: espanhol «¿Cuál es la especialidad de la casa?» (es-pe-ssia-li-DÁD) = qual é a especialidade da casa?",
+      "Italiano: «Qual è il piatto tipico?» (PIÁT-to TÍ-pi-ko) = qual é o prato típico? O pessoal local adora compartilhar os favoritos."
+     ],
+     "q": "Que prato da sua região você recomendaria a um visitante, e por quê?",
+     "c": "Pergunte hoje a alguém, em qualquer idioma, o que recomenda: um prato, um café ou um lugar para visitar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paying the bill",
+     "g": "Ask for the bill, pay by card or cash and split it.",
+     "p": [
+      "Spanish «La cuenta, por favor» (KWEN-ta), French «L'addition, s'il vous plaît» (la-dee-SYON), Italian «Il conto, per favore» (KON-to).",
+      "Card or cash: Spanish «¿Puedo pagar con tarjeta?» (tar-HEH-ta) = can I pay by card? «En efectivo» (eh-fek-TEE-vo) = in cash.",
+      "Split: French «On peut payer séparément ?» (say-pa-ray-MAHN). In many places staff wait for you to ask for the bill, so do ask."
+     ],
+     "q": "When you eat out with friends, do you usually split the bill or take turns paying?",
+     "c": "Ask for the bill and to pay by card in two languages, as if you were finishing a great dinner."
+    },
+    "de": {
+     "t": "Die Rechnung bezahlen",
+     "g": "Bitte um die Rechnung, zahl mit Karte oder bar und teilt sie auf.",
+     "p": [
+      "Spanisch «La cuenta, por favor» (KUEN-ta), Französisch «L'addition, s'il vous plaît» (la-di-SSJON), Italienisch «Il conto, per favore».",
+      "Karte oder bar: Spanisch «¿Puedo pagar con tarjeta?» (tar-CHE-ta) = Kann ich mit Karte zahlen? «En efectivo» (e-fek-TI-wo) = bar.",
+      "Getrennt: Französisch «On peut payer séparément ?» (sse-pa-re-MAN). Vielerorts wartet das Personal, bis du nach der Rechnung fragst."
+     ],
+     "q": "Wenn du mit Freunden essen gehst, teilt ihr die Rechnung oder zahlt ihr abwechselnd?",
+     "c": "Bitte in zwei Sprachen um die Rechnung und ums Zahlen mit Karte, als hättest du gerade toll gegessen."
+    },
+    "es": {
+     "t": "Pagar la cuenta",
+     "g": "Pide la cuenta, paga con tarjeta o en efectivo y divídela.",
+     "p": [
+      "Inglés «The bill, please» (de BIL pliis; en EE. UU. «the check»), francés «L'addition, s'il vous plaît», italiano «Il conto, per favore».",
+      "Tarjeta o efectivo: inglés «Can I pay by card?» (ken ai pei bai KARD) = ¿puedo pagar con tarjeta? «In cash» (in KASH) = en efectivo.",
+      "Dividir: francés «On peut payer séparément ?» (se-pa-re-MAN). En muchos sitios esperan a que pidas la cuenta, así que pídela."
+     ],
+     "q": "Cuando comes fuera con amigos, ¿soléis dividir la cuenta o pagáis por turnos?",
+     "c": "Pide la cuenta y pagar con tarjeta en dos idiomas, como si terminaras una cena estupenda."
+    },
+    "fr": {
+     "t": "Payer l'addition",
+     "g": "Demander l'addition, payer par carte ou en espèces et partager.",
+     "p": [
+      "Espagnol «La cuenta, por favor» (KOUÈNE-ta), anglais «The bill, please» (ze BIL pliz), italien «Il conto, per favore» (KONE-to).",
+      "Carte ou espèces : espagnol «¿Puedo pagar con tarjeta?» (tar-KHÉ-ta) = je peux payer par carte ? «En efectivo» (é-fèk-TI-vo) = en espèces.",
+      "Partager : anglais «Can we pay separately?» (kène oui pèï SÈ-pa-reut-li). Souvent, on attend que tu demandes l'addition, alors demande-la."
+     ],
+     "q": "Quand tu manges avec des amis, partagez-vous l'addition ou payez-vous chacun votre tour ?",
+     "c": "Demande l'addition et à payer par carte dans deux langues, comme à la fin d'un super dîner."
+    },
+    "it": {
+     "t": "Pagare il conto",
+     "g": "Chiedere il conto, pagare con carta o in contanti e dividerlo.",
+     "p": [
+      "Spagnolo «La cuenta, por favor» (KUEN-ta), francese «L'addition, s'il vous plaît» (la-di-SION), inglese «The bill, please» (de BIL pliis).",
+      "Carta o contanti: spagnolo «¿Puedo pagar con tarjeta?» (tar-HE-ta) = posso pagare con carta? «En efectivo» (e-fek-TI-vo) = in contanti.",
+      "Dividere: francese «On peut payer séparément ?» (se-pa-re-MAN). In molti posti aspettano che tu chieda il conto, quindi chiedilo."
+     ],
+     "q": "Quando mangi fuori con gli amici, di solito dividete il conto o pagate a turno?",
+     "c": "Chiedi il conto e di pagare con carta in due lingue, come alla fine di una cena fantastica."
+    },
+    "pt": {
+     "t": "Pagar a conta",
+     "g": "Pedir a conta, pagar com cartão ou em dinheiro e dividi-la.",
+     "p": [
+      "Espanhol «La cuenta, por favor» (KUÉN-ta), francês «L'addition, s'il vous plaît» (la-di-SSIÕ), italiano «Il conto, per favore» (KÔN-to).",
+      "Cartão ou dinheiro: espanhol «¿Puedo pagar con tarjeta?» (tar-RRÊ-ta) = posso pagar com cartão? «En efectivo» (e-fek-TI-vo) = em dinheiro.",
+      "Dividir: francês «On peut payer séparément ?» (sê-pa-rê-MÃ). Em muitos sítios esperam que peças a conta, por isso pede-a."
+     ],
+     "q": "Quando comes fora com amigos, costumam dividir a conta ou pagar à vez?",
+     "c": "Pede a conta e para pagar com cartão em duas línguas, como no fim de um jantar ótimo."
+    },
+    "pt_BR": {
+     "t": "Pagar a conta",
+     "g": "Pedir a conta, pagar no cartão ou em dinheiro e dividir.",
+     "p": [
+      "Espanhol «La cuenta, por favor» (KUÉN-ta), francês «L'addition, s'il vous plaît» (la-di-SSIÕ), italiano «Il conto, per favore» (KÔN-to).",
+      "Cartão ou dinheiro: espanhol «¿Puedo pagar con tarjeta?» (tar-RRÊ-ta) = posso pagar no cartão? «En efectivo» (e-fek-TI-vo) = em dinheiro.",
+      "Dividir: francês «On peut payer séparément ?» (sê-pa-rê-MÃ). Em muitos lugares esperam você pedir a conta, então peça."
+     ],
+     "q": "Quando você come fora com amigos, vocês costumam dividir a conta ou revezar quem paga?",
+     "c": "Peça a conta e para pagar no cartão em dois idiomas, como no fim de um jantar ótimo."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Café and bakery phrases",
+     "g": "Order a quick coffee and pastry to have here or to take away.",
+     "p": [
+      "Spanish: «Un café solo» = an espresso, «un cortado» = espresso with a dash of milk. «Para llevar» (yeh-VAR) = to take away.",
+      "French: «Un croissant et un café, s'il vous plaît». Staff may ask «Sur place ou à emporter ?» = eat in or take away (ahn-por-TAY)?",
+      "Italian: «Un cappuccino e un cornetto» (kor-NET-to). In many Italian bars you pay at the till first, then show the receipt at the counter."
+     ],
+     "q": "What does your perfect café breakfast look like when you travel?",
+     "c": "Order your dream coffee and pastry in two languages, saying whether it is for here or to go."
+    },
+    "de": {
+     "t": "Sätze für Café und Bäckerei",
+     "g": "Bestell schnell Kaffee und Gebäck zum Hieressen oder zum Mitnehmen.",
+     "p": [
+      "Spanisch: «Un café solo» = Espresso, «un cortado» = Espresso mit einem Schuss Milch. «Para llevar» (je-WAR) = zum Mitnehmen.",
+      "Französisch: «Un croissant et un café, s'il vous plaît». Man fragt dich vielleicht «Sur place ou à emporter ?» = hier oder mitnehmen?",
+      "Italienisch: «Un cappuccino e un cornetto» (kor-NET-to). In vielen Bars zahlst du zuerst an der Kasse und zeigst dann den Bon an der Theke."
+     ],
+     "q": "Wie sieht dein perfektes Café-Frühstück auf Reisen aus?",
+     "c": "Bestell deinen Traumkaffee mit Gebäck in zwei Sprachen und sag, ob hier oder zum Mitnehmen."
+    },
+    "es": {
+     "t": "Frases de cafetería y panadería",
+     "g": "Pide un café rápido y un dulce para tomar aquí o para llevar.",
+     "p": [
+      "Inglés: «A latte and a muffin, please». Te preguntarán «For here or to go?» (for jir or tu GOU) = ¿para tomar aquí o para llevar?",
+      "Francés: «Un croissant et un café, s'il vous plaît». Te pueden preguntar «Sur place ou à emporter ?» (an-por-TÉ) = ¿aquí o para llevar?",
+      "Italiano: «Un cappuccino e un cornetto» (kor-NET-to). En muchos bares italianos pagas primero en caja y luego enseñas el tique en la barra."
+     ],
+     "q": "¿Cómo es tu desayuno perfecto en una cafetería cuando viajas?",
+     "c": "Pide el café y el dulce de tus sueños en dos idiomas, diciendo si es para tomar aquí o para llevar."
+    },
+    "fr": {
+     "t": "Phrases de café et de boulangerie",
+     "g": "Commander un café et une viennoiserie, sur place ou à emporter.",
+     "p": [
+      "Espagnol : «Un café solo» = un expresso, «un cortado» = expresso avec un nuage de lait. «Para llevar» (yé-VAR) = à emporter.",
+      "Anglais : «A latte and a muffin, please». On te demandera «For here or to go?» (for hir or tou GÔOU) = sur place ou à emporter ?",
+      "Italien : «Un cappuccino e un cornetto» (kor-NÈT-to). Dans beaucoup de bars italiens, on paie d'abord à la caisse puis on montre le ticket."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner idéal au café quand tu voyages ?",
+     "c": "Commande ton café et ta viennoiserie de rêve dans deux langues, en précisant sur place ou à emporter."
+    },
+    "it": {
+     "t": "Frasi da bar e panetteria",
+     "g": "Ordinare al volo un caffè e una pasta, da consumare lì o da portare via.",
+     "p": [
+      "Spagnolo: «Un café solo» = un espresso, «un cortado» = un macchiato. «Para llevar» (ie-VAR) = da portare via.",
+      "Francese: «Un croissant et un café, s'il vous plaît». Ti possono chiedere «Sur place ou à emporter ?» (an-por-TÉ) = qui o da asporto?",
+      "Inglese: «A latte and a muffin, please». Ti chiederanno «For here or to go?» (for hir or tu GOU) = qui o da portare via?"
+     ],
+     "q": "Com'è la tua colazione perfetta al bar quando viaggi?",
+     "c": "Ordina il caffè e la pasta dei tuoi sogni in due lingue, dicendo se è da consumare lì o da asporto."
+    },
+    "pt": {
+     "t": "Frases de café e pastelaria",
+     "g": "Pedir um café rápido e um bolo para comer aqui ou para levar.",
+     "p": [
+      "Espanhol: «Un café solo» = uma bica, «un cortado» = um pingo. «Para llevar» (lhe-VÁR) = para levar.",
+      "Francês: «Un croissant et un café, s'il vous plaît». Podem perguntar «Sur place ou à emporter ?» (ã-por-TÊ) = aqui ou para levar?",
+      "Italiano: «Un cappuccino e un cornetto» (kor-NÊT-to). Em muitos bares italianos paga-se primeiro na caixa e mostra-se o talão ao balcão."
+     ],
+     "q": "Como é o teu pequeno-almoço perfeito num café quando viajas?",
+     "c": "Pede o café e o bolo dos teus sonhos em duas línguas, dizendo se é para comer aqui ou para levar."
+    },
+    "pt_BR": {
+     "t": "Frases de café e padaria",
+     "g": "Pedir um café rápido e um doce para comer aqui ou para viagem.",
+     "p": [
+      "Espanhol: «Un café solo» = um espresso, «un cortado» = um pingado. «Para llevar» (je-VÁR) = para viagem.",
+      "Francês: «Un croissant et un café, s'il vous plaît». Podem perguntar «Sur place ou à emporter ?» (ã-por-TÊ) = aqui ou para viagem?",
+      "Italiano: «Un cappuccino e un cornetto» (kor-NÊT-to). Em muitos bares italianos você paga primeiro no caixa e mostra o recibo no balcão."
+     ],
+     "q": "Como é o seu café da manhã perfeito numa cafeteria quando você viaja?",
+     "c": "Peça o café e o doce dos seus sonhos em dois idiomas, dizendo se é para comer aqui ou para viagem."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food stands",
+     "g": "Order fast, ask for less spicy and point at what you want.",
+     "p": [
+      "Point and say: Spanish «Uno de estos, por favor» (OO-no deh ES-tos) = one of these. Add «Sin cebolla» (seh-BO-ya) = no onion.",
+      "Not too spicy: Spanish «No muy picante» (pee-KAN-teh), French «Pas trop épicé» (pa tro ay-pee-SAY), Thai «Mai phet» (my PET).",
+      "Watch what locals order and how they pay; busy stalls with a queue are often the freshest and tastiest choice."
+     ],
+     "q": "What is the best street food you have ever tried, or the one you most want to try?",
+     "c": "Practise ordering one item, no onion and not too spicy, in two languages."
+    },
+    "de": {
+     "t": "An Streetfood-Ständen",
+     "g": "Bestell schnell, bitte um weniger scharf und zeig auf das, was du willst.",
+     "p": [
+      "Zeigen und sagen: Spanisch «Uno de estos, por favor» (U-no de ES-tos) = eins davon. Dazu «Sin cebolla» (sse-BO-ja) = ohne Zwiebeln.",
+      "Nicht zu scharf: Spanisch «No muy picante» (pi-KAN-te), Französisch «Pas trop épicé» (pa tro e-pi-SSE), Thailändisch «Mai phet» (mai PET).",
+      "Schau, was Einheimische bestellen und wie sie zahlen; volle Stände mit Schlange sind oft am frischsten und leckersten."
+     ],
+     "q": "Was ist das beste Streetfood, das du je probiert hast, oder das du am liebsten probieren würdest?",
+     "c": "Übe, etwas ohne Zwiebeln und nicht zu scharf zu bestellen, in zwei Sprachen."
+    },
+    "es": {
+     "t": "Puestos de comida callejera",
+     "g": "Pide rápido, pide menos picante y señala lo que quieres.",
+     "p": [
+      "Señala y di: inglés «One of these, please» (uan ov DIS pliis) = uno de estos. Añade «No onion» (nou O-nion) = sin cebolla.",
+      "Poco picante: inglés «Not too spicy» (not tu SPAI-si), francés «Pas trop épicé» (pa tro e-pi-SÉ), tailandés «Mai phet» (mai PET).",
+      "Fíjate en qué piden y cómo pagan los locales; los puestos con cola suelen ser los más frescos y sabrosos."
+     ],
+     "q": "¿Cuál es la mejor comida callejera que has probado, o la que más te gustaría probar?",
+     "c": "Practica pedir algo sin cebolla y poco picante en dos idiomas."
+    },
+    "fr": {
+     "t": "Stands de street food",
+     "g": "Commander vite, demander moins épicé et montrer ce que tu veux.",
+     "p": [
+      "Montre et dis : espagnol «Uno de estos, por favor» (OU-no dé ÈSS-toss) = un de ceux-là. Ajoute «Sin cebolla» (ssé-BO-ya) = sans oignon.",
+      "Pas trop épicé : espagnol «No muy picante» (pi-KANE-té), anglais «Not too spicy» (not tou SPAÏ-si), thaï «Mai phet» (maï PÈT).",
+      "Observe ce que commandent les habitants et comment ils paient ; les stands avec la queue sont souvent les plus frais et savoureux."
+     ],
+     "q": "Quelle est la meilleure street food que tu aies goûtée, ou celle que tu rêves de goûter ?",
+     "c": "Entraîne-toi à commander un plat sans oignon et pas trop épicé dans deux langues."
+    },
+    "it": {
+     "t": "Bancarelle di street food",
+     "g": "Ordinare in fretta, chiedere meno piccante e indicare cosa vuoi.",
+     "p": [
+      "Indica e di': spagnolo «Uno de estos, por favor» (U-no de ES-tos) = uno di questi. Aggiungi «Sin cebolla» (se-BO-ia) = senza cipolla.",
+      "Poco piccante: spagnolo «No muy picante» (pi-KAN-te), francese «Pas trop épicé» (pa tro e-pi-SÉ), tailandese «Mai phet» (mai PET).",
+      "Guarda cosa ordina la gente del posto e come paga; le bancarelle con la fila sono spesso le più fresche e gustose."
+     ],
+     "q": "Qual è il miglior street food che hai mai provato, o quello che vorresti di più assaggiare?",
+     "c": "Esercitati a ordinare qualcosa senza cipolla e poco piccante in due lingue."
+    },
+    "pt": {
+     "t": "Bancas de comida de rua",
+     "g": "Pedir depressa, pedir menos picante e apontar para o que queres.",
+     "p": [
+      "Aponta e diz: espanhol «Uno de estos, por favor» (U-no de ÉS-tos) = um destes. Junta «Sin cebolla» (sse-BÔ-lha) = sem cebola.",
+      "Pouco picante: espanhol «No muy picante» (pi-KÃN-te), francês «Pas trop épicé» (pa trô ê-pi-SSÊ), tailandês «Mai phet» (mai PÉT).",
+      "Repara no que as pessoas da terra pedem e como pagam; as bancas com fila costumam ser as mais frescas e saborosas."
+     ],
+     "q": "Qual foi a melhor comida de rua que já provaste, ou a que mais queres provar?",
+     "c": "Treina pedir algo sem cebola e pouco picante em duas línguas."
+    },
+    "pt_BR": {
+     "t": "Barracas de comida de rua",
+     "g": "Pedir rápido, pedir menos apimentado e apontar o que você quer.",
+     "p": [
+      "Aponte e diga: espanhol «Uno de estos, por favor» (U-no de ÉS-tos) = um destes. Junte «Sin cebolla» (sse-BÔ-ja) = sem cebola.",
+      "Pouco apimentado: espanhol «No muy picante» (pi-KÃN-te), francês «Pas trop épicé» (pa trô ê-pi-SSÊ), tailandês «Mai phet» (mai PÉT).",
+      "Repare no que o pessoal local pede e como paga; barracas com fila costumam ser as mais frescas e gostosas."
+     ],
+     "q": "Qual foi a melhor comida de rua que você já provou, ou a que mais quer provar?",
+     "c": "Treine pedir algo sem cebola e pouco apimentado em dois idiomas."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Compliments to the cook",
+     "g": "Say the food was delicious and thank the staff warmly.",
+     "p": [
+      "Spanish: «¡Estaba buenísimo!» (es-TA-ba bweh-NEE-see-mo) = it was delicious! French: «C'était délicieux !» (say-teh day-lee-SYUH).",
+      "Italian: «Era buonissimo!» (bwo-NEES-see-mo) and «Complimenti allo chef!» (kom-plee-MEN-tee) = my compliments to the chef!",
+      "Japanese: after a meal, say «Gochisōsama deshita» (go-chee-SOH-sa-ma desh-ta) to thank the cook. Staff light up when you try."
+     ],
+     "q": "Which meal on a trip impressed you so much that you wanted to thank the cook in person?",
+     "c": "Next time you eat something you love, compliment the cook in a new language, even at home."
+    },
+    "de": {
+     "t": "Komplimente an die Küche",
+     "g": "Sag, dass das Essen köstlich war, und bedanke dich herzlich beim Personal.",
+     "p": [
+      "Spanisch: «¡Estaba buenísimo!» (es-TA-ba bue-NI-ssi-mo) = Es war köstlich! Französisch: «C'était délicieux !» (sse-tä de-li-SSJÖ).",
+      "Italienisch: «Era buonissimo!» (buo-NIS-si-mo) und «Complimenti allo chef!» (kom-pli-MEN-ti) = Kompliment an den Koch!",
+      "Japanisch: Nach dem Essen sagt man «Gochisōsama deshita» (go-tschi-SO-sa-ma desch-ta), um dem Koch zu danken. Das freut alle."
+     ],
+     "q": "Welches Essen auf Reisen hat dich so beeindruckt, dass du dem Koch persönlich danken wolltest?",
+     "c": "Wenn dir das nächste Mal etwas richtig schmeckt, mach dem Koch ein Kompliment in einer neuen Sprache, auch zu Hause."
+    },
+    "es": {
+     "t": "Felicitar al cocinero",
+     "g": "Di que la comida estaba deliciosa y da las gracias al personal con cariño.",
+     "p": [
+      "Inglés: «That was delicious!» (dat uos di-LI-shos) = ¡estaba delicioso! Francés: «C'était délicieux !» (se-te de-li-SIÖ).",
+      "Italiano: «Era buonissimo!» (buo-NIS-si-mo) y «Complimenti allo chef!» (kom-pli-MEN-ti) = ¡felicidades al chef!",
+      "Japonés: después de comer se dice «Gochisōsama deshita» (go-chi-SO-sa-ma desh-ta) para agradecer la comida. Les encanta que lo intentes."
+     ],
+     "q": "¿Qué comida de un viaje te impresionó tanto que quisiste dar las gracias al cocinero en persona?",
+     "c": "La próxima vez que comas algo que te encante, felicita al cocinero en un idioma nuevo, aunque sea en casa."
+    },
+    "fr": {
+     "t": "Compliments au chef",
+     "g": "Dire que c'était délicieux et remercier chaleureusement le personnel.",
+     "p": [
+      "Espagnol : «¡Estaba buenísimo!» (èss-TA-ba boué-NI-ssi-mo) = c'était délicieux ! Anglais : «That was delicious!» (zat ouoz di-LI-cheuss).",
+      "Italien : «Era buonissimo!» (bouo-NISS-si-mo) et «Complimenti allo chef!» (kom-pli-MÈNE-ti) = mes compliments au chef !",
+      "Japonais : après le repas, on dit «Gochisōsama deshita» (go-tchi-SÔ-sa-ma dèch-ta) pour remercier. Le personnel adore qu'on essaie."
+     ],
+     "q": "Quel repas en voyage t'a tellement impressionné que tu as voulu remercier le cuisinier en personne ?",
+     "c": "La prochaine fois que tu manges quelque chose que tu adores, complimente le cuisinier dans une nouvelle langue, même chez toi."
+    },
+    "it": {
+     "t": "Complimenti al cuoco",
+     "g": "Dire che il cibo era delizioso e ringraziare il personale con calore.",
+     "p": [
+      "Spagnolo: «¡Estaba buenísimo!» (es-TA-ba bue-NI-si-mo) = era buonissimo! Francese: «C'était délicieux !» (se-tè de-li-SIÖ).",
+      "Inglese: «That was delicious!» (dat uos di-LI-sciös) = era delizioso! «My compliments to the chef!» = complimenti allo chef!",
+      "Giapponese: dopo il pasto si dice «Gochisōsama deshita» (go-ci-SO-sa-ma desc-ta) per ringraziare. Il personale apprezza molto."
+     ],
+     "q": "Quale pasto in viaggio ti ha colpito così tanto da voler ringraziare il cuoco di persona?",
+     "c": "La prossima volta che mangi qualcosa che ami, fai i complimenti al cuoco in una lingua nuova, anche a casa."
+    },
+    "pt": {
+     "t": "Elogios ao cozinheiro",
+     "g": "Dizer que a comida estava deliciosa e agradecer ao pessoal com carinho.",
+     "p": [
+      "Espanhol: «¡Estaba buenísimo!» (es-TÁ-ba bue-NI-ssi-mo) = estava ótimo! Francês: «C'était délicieux !» (sé-té dê-li-SSIÊ).",
+      "Italiano: «Era buonissimo!» (buo-NÍS-si-mo) e «Complimenti allo chef!» (kom-pli-MÊN-ti) = os meus parabéns ao chef!",
+      "Japonês: depois de comer diz-se «Gochisōsama deshita» (go-tchi-SÔ-sa-ma dech-ta) para agradecer. O pessoal adora que tentes."
+     ],
+     "q": "Que refeição numa viagem te impressionou tanto que quiseste agradecer ao cozinheiro em pessoa?",
+     "c": "Da próxima vez que comeres algo de que gostes muito, elogia o cozinheiro numa língua nova, mesmo em casa."
+    },
+    "pt_BR": {
+     "t": "Elogios ao cozinheiro",
+     "g": "Dizer que a comida estava deliciosa e agradecer à equipe com carinho.",
+     "p": [
+      "Espanhol: «¡Estaba buenísimo!» (es-TÁ-ba bue-NI-ssi-mo) = estava uma delícia! Francês: «C'était délicieux !» (sé-té dê-li-SSIÊ).",
+      "Italiano: «Era buonissimo!» (buo-NÍS-si-mo) e «Complimenti allo chef!» (kom-pli-MÊN-ti) = parabéns ao chef!",
+      "Japonês: depois de comer se diz «Gochisōsama deshita» (go-tchi-SÔ-sa-ma dech-ta) para agradecer. A equipe adora quando você tenta."
+     ],
+     "q": "Que refeição numa viagem te impressionou tanto que você quis agradecer ao cozinheiro pessoalmente?",
+     "c": "Da próxima vez que comer algo que adora, elogie o cozinheiro num idioma novo, mesmo em casa."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping basics",
+     "g": "Ask how much something is, say you are just looking and ask for another size or colour.",
+     "p": [
+      "Price: Spanish «¿Cuánto cuesta esto?» (KWAN-to KWES-ta ES-to). Just looking: «Solo estoy mirando» (SO-lo es-TOY mee-RAN-do).",
+      "French: «Je regarde seulement, merci» (zhuh ruh-GARD suhl-MAHN) = I am just looking, thanks. Shop staff usually leave you in peace.",
+      "Another size or colour: Spanish «¿Lo tiene en otra talla?» (TA-ya), Italian «Ce l'ha in un'altra taglia?» (TA-lya) or «in blu?»."
+     ],
+     "q": "Do you enjoy browsing shops on holiday, or do you prefer to buy quickly and move on?",
+     "c": "Pick an item you own and ask for it in another size and colour in two languages."
+    },
+    "de": {
+     "t": "Einkaufen: die Grundlagen",
+     "g": "Frag nach dem Preis, sag, dass du nur schaust, und frag nach anderer Größe oder Farbe.",
+     "p": [
+      "Preis: Spanisch «¿Cuánto cuesta esto?» (KUAN-to KUES-ta ES-to). Nur schauen: «Solo estoy mirando» (SSO-lo es-TOI mi-RAN-do).",
+      "Französisch: «Je regarde seulement, merci» (schö rö-GARD ssöl-MAN) = Ich schaue nur, danke. Meist lässt man dich dann in Ruhe.",
+      "Andere Größe oder Farbe: Spanisch «¿Lo tiene en otra talla?» (TA-ja), Italienisch «Ce l'ha in un'altra taglia?» (TA-lja) oder «in blu?»."
+     ],
+     "q": "Bummelst du im Urlaub gern durch Läden, oder kaufst du lieber schnell und gehst weiter?",
+     "c": "Nimm etwas, das du besitzt, und frag in zwei Sprachen nach anderer Größe und Farbe."
+    },
+    "es": {
+     "t": "Lo básico para comprar",
+     "g": "Pregunta cuánto cuesta algo, di que solo estás mirando y pide otra talla u otro color.",
+     "p": [
+      "Precio: inglés «How much is this?» (jau mach is DIS). Solo mirar: «I'm just looking» (aim yast LU-king) = solo estoy mirando.",
+      "Francés: «Je regarde seulement, merci» (yə re-GARD sel-MAN) = solo estoy mirando, gracias. Así suelen dejarte tranquilo.",
+      "Otra talla o color: inglés «Do you have it in another size?» (a-NA-der SAIS), italiano «Ce l'ha in un'altra taglia?» (TA-lia) o «in blu?»."
+     ],
+     "q": "¿Te gusta mirar tiendas en vacaciones, o prefieres comprar rápido y seguir?",
+     "c": "Elige una prenda tuya y pídela en otra talla y otro color en dos idiomas."
+    },
+    "fr": {
+     "t": "Les bases du shopping",
+     "g": "Demander le prix, dire qu'on regarde seulement et demander une autre taille ou couleur.",
+     "p": [
+      "Prix : espagnol «¿Cuánto cuesta esto?» (KOUANE-to KOUÈSS-ta ÈSS-to). Regarder : «Solo estoy mirando» (SSO-lo èss-TOÏ mi-RANE-do).",
+      "Anglais : «I'm just looking, thanks» (aïm djeust LOU-kigne) = je regarde seulement, merci. En général, on te laisse tranquille.",
+      "Autre taille ou couleur : espagnol «¿Lo tiene en otra talla?» (TA-ya), italien «Ce l'ha in un'altra taglia?» (TA-lia) ou «in blu?»."
+     ],
+     "q": "Aimes-tu flâner dans les boutiques en vacances, ou préfères-tu acheter vite et passer à autre chose ?",
+     "c": "Choisis un vêtement à toi et demande-le dans une autre taille et une autre couleur dans deux langues."
+    },
+    "it": {
+     "t": "Le basi dello shopping",
+     "g": "Chiedere quanto costa, dire che stai solo guardando e chiedere un'altra taglia o colore.",
+     "p": [
+      "Prezzo: spagnolo «¿Cuánto cuesta esto?» (KUAN-to KUES-ta ES-to). Solo guardare: «Solo estoy mirando» (SO-lo es-TOI mi-RAN-do).",
+      "Francese: «Je regarde seulement, merci» (jə rö-GARD söl-MAN) = sto solo guardando, grazie. Di solito ti lasciano tranquillo.",
+      "Altra taglia o colore: spagnolo «¿Lo tiene en otra talla?» (TA-ia), inglese «Do you have it in another size?» o «in blue?»."
+     ],
+     "q": "Ti piace curiosare nei negozi in vacanza, o preferisci comprare in fretta e andare avanti?",
+     "c": "Scegli un capo che hai e chiedilo in un'altra taglia e colore in due lingue."
+    },
+    "pt": {
+     "t": "O básico das compras",
+     "g": "Perguntar quanto custa, dizer que estás só a ver e pedir outro tamanho ou cor.",
+     "p": [
+      "Preço: espanhol «¿Cuánto cuesta esto?» (KUÁN-to KUÉS-ta ÉS-to). Só a ver: «Solo estoy mirando» (SSÔ-lo es-TÓI mi-RÃN-do).",
+      "Francês: «Je regarde seulement, merci» (je re-GÁRD sel-MÃ) = estou só a ver, obrigado. Normalmente deixam-te à vontade.",
+      "Outro tamanho ou cor: espanhol «¿Lo tiene en otra talla?» (TÁ-lha), italiano «Ce l'ha in un'altra taglia?» (TÁ-lha) ou «in blu?»."
+     ],
+     "q": "Gostas de ver lojas nas férias, ou preferes comprar depressa e seguir?",
+     "c": "Escolhe uma peça tua e pede-a noutro tamanho e noutra cor em duas línguas."
+    },
+    "pt_BR": {
+     "t": "O básico das compras",
+     "g": "Perguntar quanto custa, dizer que só está olhando e pedir outro tamanho ou cor.",
+     "p": [
+      "Preço: espanhol «¿Cuánto cuesta esto?» (KUÁN-to KUÉS-ta ÉS-to). Só olhando: «Solo estoy mirando» (SSÔ-lo es-TÓI mi-RÃN-do).",
+      "Francês: «Je regarde seulement, merci» (je re-GÁRD sel-MÃ) = só estou olhando, obrigado. Normalmente te deixam à vontade.",
+      "Outro tamanho ou cor: espanhol «¿Lo tiene en otra talla?» (TÁ-ja), italiano «Ce l'ha in un'altra taglia?» (TÁ-lha) ou «in blu?»."
+     ],
+     "q": "Você gosta de olhar lojas nas férias, ou prefere comprar rápido e seguir em frente?",
+     "c": "Escolha uma roupa sua e peça em outro tamanho e outra cor em dois idiomas."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: sleep and eat",
+     "g": "Recap hotel and restaurant phrases through a full day role-play.",
+     "p": [
+      "Morning: «Tengo una reserva a nombre de...», «¿El desayuno está incluido?» and, if needed, «Il n'y a pas d'eau chaude».",
+      "Lunch: «Una mesa para dos», «Qu'est-ce que vous me conseillez ?», «Vorrei la pasta» and «Sin cebolla, por favor».",
+      "Evening: «L'addition, s'il vous plaît», «¿Puedo pagar con tarjeta?» and a happy «¡Estaba buenísimo!» before you leave."
+     ],
+     "q": "If you could spend one perfect travel day eating and sleeping anywhere, where would it be?",
+     "c": "Role-play the whole day aloud, from hotel desk to dinner bill, mixing at least two languages."
+    },
+    "de": {
+     "t": "Wiederholung: schlafen und essen",
+     "g": "Wiederhole Hotel- und Restaurantsätze in einem Rollenspiel über einen ganzen Tag.",
+     "p": [
+      "Morgens: «Tengo una reserva a nombre de...», «¿El desayuno está incluido?» und, falls nötig, «Il n'y a pas d'eau chaude».",
+      "Mittags: «Una mesa para dos», «Qu'est-ce que vous me conseillez ?», «Vorrei la pasta» und «Sin cebolla, por favor».",
+      "Abends: «L'addition, s'il vous plaît», «¿Puedo pagar con tarjeta?» und ein fröhliches «¡Estaba buenísimo!» zum Abschied."
+     ],
+     "q": "Wenn du einen perfekten Reisetag mit Essen und Schlafen irgendwo verbringen könntest, wo wäre das?",
+     "c": "Spiel den ganzen Tag laut durch, von der Rezeption bis zur Rechnung, mit mindestens zwei Sprachen."
+    },
+    "es": {
+     "t": "Repaso: dormir y comer",
+     "g": "Repasa frases de hotel y restaurante con un juego de rol de un día entero.",
+     "p": [
+      "Mañana: «I have a reservation under...», «Is breakfast included?» y, si hace falta, «Il n'y a pas d'eau chaude».",
+      "Comida: «A table for two», «Qu'est-ce que vous me conseillez ?», «Vorrei la pasta» y «No onion, please».",
+      "Noche: «L'addition, s'il vous plaît», «Can I pay by card?» y un alegre «Era buonissimo!» antes de irte."
+     ],
+     "q": "Si pudieras pasar un día de viaje perfecto comiendo y durmiendo en cualquier lugar, ¿dónde sería?",
+     "c": "Representa en voz alta todo el día, de la recepción a la cuenta de la cena, mezclando al menos dos idiomas."
+    },
+    "fr": {
+     "t": "Révision : dormir et manger",
+     "g": "Réviser les phrases d'hôtel et de restaurant avec un jeu de rôle sur une journée entière.",
+     "p": [
+      "Matin : «Tengo una reserva a nombre de...», «¿El desayuno está incluido?» et, si besoin, «There's no hot water».",
+      "Midi : «Una mesa para dos», «What do you recommend?», «Vorrei la pasta» et «Sin cebolla, por favor».",
+      "Soir : «La cuenta, por favor», «Can I pay by card?» et un joyeux «¡Estaba buenísimo!» avant de partir."
+     ],
+     "q": "Si tu pouvais passer une journée de voyage parfaite à manger et dormir n'importe où, ce serait où ?",
+     "c": "Joue toute la journée à voix haute, de la réception à l'addition, en mélangeant au moins deux langues."
+    },
+    "it": {
+     "t": "Ripasso: dormire e mangiare",
+     "g": "Ripassare le frasi di hotel e ristorante con un gioco di ruolo di una giornata intera.",
+     "p": [
+      "Mattina: «Tengo una reserva a nombre de...», «¿El desayuno está incluido?» e, se serve, «Il n'y a pas d'eau chaude».",
+      "Pranzo: «Una mesa para dos», «Qu'est-ce que vous me conseillez ?», «I'll have the fish» e «Sin cebolla, por favor».",
+      "Sera: «L'addition, s'il vous plaît», «¿Puedo pagar con tarjeta?» e un allegro «¡Estaba buenísimo!» prima di andare."
+     ],
+     "q": "Se potessi passare una giornata di viaggio perfetta mangiando e dormendo ovunque, dove sarebbe?",
+     "c": "Recita ad alta voce tutta la giornata, dalla reception al conto della cena, mescolando almeno due lingue."
+    },
+    "pt": {
+     "t": "Revisão: dormir e comer",
+     "g": "Rever frases de hotel e restaurante com um jogo de papéis de um dia inteiro.",
+     "p": [
+      "Manhã: «Tengo una reserva a nombre de...», «¿El desayuno está incluido?» e, se for preciso, «Il n'y a pas d'eau chaude».",
+      "Almoço: «Una mesa para dos», «Qu'est-ce que vous me conseillez ?», «Vorrei la pasta» e «Sin cebolla, por favor».",
+      "Noite: «L'addition, s'il vous plaît», «¿Puedo pagar con tarjeta?» e um alegre «¡Estaba buenísimo!» antes de saíres."
+     ],
+     "q": "Se pudesses passar um dia de viagem perfeito a comer e dormir em qualquer lugar, onde seria?",
+     "c": "Encena em voz alta o dia todo, da receção à conta do jantar, misturando pelo menos duas línguas."
+    },
+    "pt_BR": {
+     "t": "Revisão: dormir e comer",
+     "g": "Revisar frases de hotel e restaurante com uma encenação de um dia inteiro.",
+     "p": [
+      "Manhã: «Tengo una reserva a nombre de...», «¿El desayuno está incluido?» e, se precisar, «Il n'y a pas d'eau chaude».",
+      "Almoço: «Una mesa para dos», «Qu'est-ce que vous me conseillez ?», «Vorrei la pasta» e «Sin cebolla, por favor».",
+      "Noite: «L'addition, s'il vous plaît», «¿Puedo pagar con tarjeta?» e um alegre «¡Estaba buenísimo!» antes de sair."
+     ],
+     "q": "Se você pudesse passar um dia de viagem perfeito comendo e dormindo em qualquer lugar, onde seria?",
+     "c": "Encene em voz alta o dia todo, da recepção à conta do jantar, misturando pelo menos dois idiomas."
+    }
+   }
+  }
+ ]
+}

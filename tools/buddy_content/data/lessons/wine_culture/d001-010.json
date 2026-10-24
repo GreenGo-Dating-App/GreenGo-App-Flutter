@@ -1,0 +1,835 @@
+{
+ "topic": "wine_culture",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to wine culture",
+     "g": "Discover wine as a story of places, history and craft, explored calmly and with curiosity.",
+     "p": [
+      "Wine has been part of meals, art and trade for thousands of years, from ancient Georgia to modern vineyards.",
+      "You can enjoy wine culture through its regions, grapes, aromas and food traditions, with or without drinking.",
+      "This path is for adults, at your own pace, always moderate and never with pressure to drink."
+     ],
+     "q": "What first made you curious about wine: a trip, a meal, a book or something else?",
+     "c": "Look at any wine label or menu today and note one place name you would like to learn about."
+    },
+    "de": {
+     "t": "Willkommen in der Weinkultur",
+     "g": "Entdecke Wein als Geschichte von Orten, Tradition und Handwerk, ganz in Ruhe und mit Neugier.",
+     "p": [
+      "Wein begleitet Mahlzeiten, Kunst und Handel seit Jahrtausenden, vom alten Georgien bis zu heutigen Weingütern.",
+      "Weinkultur erlebst du über Regionen, Rebsorten, Aromen und Esstraditionen, ob du trinkst oder nicht.",
+      "Dieser Weg ist für Erwachsene, in deinem Tempo, immer maßvoll und ganz ohne Druck zu trinken."
+     ],
+     "q": "Was hat dich zuerst neugierig auf Wein gemacht: eine Reise, ein Essen, ein Buch oder etwas anderes?",
+     "c": "Schau dir heute ein Weinetikett oder eine Karte an und notiere einen Ortsnamen, über den du mehr wissen willst."
+    },
+    "es": {
+     "t": "Bienvenido a la cultura del vino",
+     "g": "Descubre el vino como una historia de lugares, tradición y oficio, con calma y curiosidad.",
+     "p": [
+      "El vino acompaña comidas, arte y comercio desde hace miles de años, desde la antigua Georgia hasta hoy.",
+      "Puedes disfrutar su cultura a través de regiones, uvas, aromas y tradiciones gastronómicas, bebas o no.",
+      "Este camino es para adultos, a tu ritmo, siempre con moderación y sin ninguna presión para beber."
+     ],
+     "q": "¿Qué despertó tu curiosidad por el vino: un viaje, una comida, un libro u otra cosa?",
+     "c": "Mira hoy una etiqueta o una carta de vinos y anota el nombre de un lugar que te gustaría conocer."
+    },
+    "fr": {
+     "t": "Bienvenue dans la culture du vin",
+     "g": "Découvre le vin comme une histoire de lieux, de traditions et de savoir-faire, avec calme et curiosité.",
+     "p": [
+      "Le vin accompagne repas, art et commerce depuis des millénaires, de l'ancienne Géorgie aux vignobles actuels.",
+      "Tu peux apprécier sa culture par les régions, les cépages, les arômes et la gastronomie, que tu boives ou non.",
+      "Ce parcours s'adresse aux adultes, à ton rythme, toujours avec modération et sans pression pour boire."
+     ],
+     "q": "Qu'est-ce qui a éveillé ta curiosité pour le vin : un voyage, un repas, un livre ou autre chose ?",
+     "c": "Regarde aujourd'hui une étiquette ou une carte des vins et note un nom de lieu que tu aimerais découvrir."
+    },
+    "it": {
+     "t": "Benvenuto nella cultura del vino",
+     "g": "Scopri il vino come una storia di luoghi, tradizioni e mestiere, con calma e curiosità.",
+     "p": [
+      "Il vino accompagna pasti, arte e commerci da millenni, dall'antica Georgia ai vigneti di oggi.",
+      "Puoi vivere la sua cultura attraverso regioni, vitigni, profumi e tradizioni a tavola, che tu beva o no.",
+      "Questo percorso è per adulti, al tuo ritmo, sempre con moderazione e senza alcuna pressione a bere."
+     ],
+     "q": "Che cosa ti ha incuriosito del vino per la prima volta: un viaggio, un pasto, un libro o altro?",
+     "c": "Guarda oggi un'etichetta o una carta dei vini e annota il nome di un luogo che vorresti conoscere."
+    },
+    "pt": {
+     "t": "Bem-vindo à cultura do vinho",
+     "g": "Descobre o vinho como uma história de lugares, tradição e ofício, com calma e curiosidade.",
+     "p": [
+      "O vinho acompanha refeições, arte e comércio há milhares de anos, da antiga Geórgia às vinhas de hoje.",
+      "Podes apreciar a sua cultura através de regiões, castas, aromas e tradições à mesa, bebas ou não.",
+      "Este percurso é para adultos, ao teu ritmo, sempre com moderação e sem qualquer pressão para beber."
+     ],
+     "q": "O que despertou primeiro a tua curiosidade pelo vinho: uma viagem, uma refeição, um livro ou outra coisa?",
+     "c": "Olha hoje para um rótulo ou uma carta de vinhos e aponta o nome de um lugar que gostavas de conhecer."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à cultura do vinho",
+     "g": "Descubra o vinho como uma história de lugares, tradição e ofício, com calma e curiosidade.",
+     "p": [
+      "O vinho acompanha refeições, arte e comércio há milhares de anos, da antiga Geórgia aos vinhedos de hoje.",
+      "Você pode curtir essa cultura por regiões, uvas, aromas e tradições à mesa, bebendo ou não.",
+      "Esta trilha é para adultos, no seu ritmo, sempre com moderação e sem nenhuma pressão para beber."
+     ],
+     "q": "O que despertou sua curiosidade pelo vinho: uma viagem, uma refeição, um livro ou outra coisa?",
+     "c": "Olhe hoje um rótulo ou uma carta de vinhos e anote o nome de um lugar que você gostaria de conhecer."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Responsible appreciation",
+     "g": "Learn the simple rules that keep wine appreciation safe, respectful and focused on attention.",
+     "p": [
+      "Wine is only for adults of legal drinking age, and the legal age differs from country to country.",
+      "Never drink and drive: choose a designated driver, public transport or an alcohol-free glass instead.",
+      "Tasting is about noticing colour, aroma and texture, so a small sip teaches more than a full glass."
+     ],
+     "q": "What helps you stay relaxed and in control at a dinner or party where drinks are served?",
+     "c": "Plan one alcohol-free drink you enjoy, like sparkling water with citrus, for your next social meal."
+    },
+    "de": {
+     "t": "Verantwortungsvoll genießen",
+     "g": "Lerne die einfachen Regeln, die Weingenuss sicher, respektvoll und aufmerksam machen.",
+     "p": [
+      "Wein ist nur für Erwachsene im gesetzlichen Mindestalter, und dieses Alter ist von Land zu Land verschieden.",
+      "Nie trinken und fahren: Wähle eine Fahrerin, öffentliche Verkehrsmittel oder ein alkoholfreies Glas.",
+      "Beim Verkosten geht es um Farbe, Duft und Textur, darum lehrt ein kleiner Schluck mehr als ein volles Glas."
+     ],
+     "q": "Was hilft dir, bei einem Essen oder einer Feier mit Getränken entspannt und klar zu bleiben?",
+     "c": "Plane für dein nächstes geselliges Essen ein alkoholfreies Getränk, das dir schmeckt, etwa Sprudel mit Zitrone."
+    },
+    "es": {
+     "t": "Apreciar con responsabilidad",
+     "g": "Aprende las reglas sencillas que hacen que disfrutar del vino sea seguro, respetuoso y atento.",
+     "p": [
+      "El vino es solo para adultos con la edad legal para beber, y esa edad cambia de un país a otro.",
+      "Nunca bebas si vas a conducir: elige un conductor designado, transporte público o una copa sin alcohol.",
+      "Catar es fijarse en color, aroma y textura, así que un sorbo pequeño enseña más que una copa llena."
+     ],
+     "q": "¿Qué te ayuda a sentirte tranquilo y con control en una cena o fiesta donde se sirven bebidas?",
+     "c": "Planea una bebida sin alcohol que te guste, como agua con gas y cítricos, para tu próxima comida social."
+    },
+    "fr": {
+     "t": "Apprécier avec responsabilité",
+     "g": "Apprends les règles simples qui rendent la découverte du vin sûre, respectueuse et attentive.",
+     "p": [
+      "Le vin est réservé aux adultes ayant l'âge légal, et cet âge varie d'un pays à l'autre.",
+      "Ne conduis jamais après avoir bu : choisis un conducteur désigné, les transports ou un verre sans alcool.",
+      "Déguster, c'est observer couleur, arômes et texture : une petite gorgée en apprend plus qu'un verre plein."
+     ],
+     "q": "Qu'est-ce qui t'aide à rester détendu et maître de toi lors d'un dîner ou d'une fête avec des boissons ?",
+     "c": "Prévois une boisson sans alcool que tu aimes, comme une eau pétillante aux agrumes, pour ton prochain repas."
+    },
+    "it": {
+     "t": "Apprezzare con responsabilità",
+     "g": "Impara le regole semplici che rendono l'apprezzamento del vino sicuro, rispettoso e attento.",
+     "p": [
+      "Il vino è solo per adulti in età legale per bere, e questa età cambia da paese a paese.",
+      "Mai bere se devi guidare: scegli un guidatore designato, i mezzi pubblici o un calice analcolico.",
+      "Degustare significa notare colore, profumo e consistenza: un piccolo sorso insegna più di un bicchiere pieno."
+     ],
+     "q": "Che cosa ti aiuta a restare rilassato e lucido a una cena o a una festa dove si servono bevande?",
+     "c": "Scegli una bevanda analcolica che ti piace, come acqua frizzante con agrumi, per il tuo prossimo pasto in compagnia."
+    },
+    "pt": {
+     "t": "Apreciar com responsabilidade",
+     "g": "Aprende as regras simples que tornam a apreciação do vinho segura, respeitosa e atenta.",
+     "p": [
+      "O vinho é só para adultos com a idade legal para beber, e essa idade muda de país para país.",
+      "Nunca bebas se fores conduzir: escolhe um condutor designado, transportes públicos ou um copo sem álcool.",
+      "Provar é reparar na cor, no aroma e na textura, por isso um pequeno gole ensina mais do que um copo cheio."
+     ],
+     "q": "O que te ajuda a ficar descontraído e com controlo num jantar ou festa onde se servem bebidas?",
+     "c": "Planeia uma bebida sem álcool de que gostes, como água com gás e citrinos, para a tua próxima refeição social."
+    },
+    "pt_BR": {
+     "t": "Apreciar com responsabilidade",
+     "g": "Aprenda as regras simples que deixam a apreciação do vinho segura, respeitosa e atenta.",
+     "p": [
+      "O vinho é só para adultos com a idade legal para beber, e essa idade muda de país para país.",
+      "Nunca beba se for dirigir: escolha um motorista da rodada, transporte público ou uma taça sem álcool.",
+      "Degustar é reparar na cor, no aroma e na textura, então um gole pequeno ensina mais que uma taça cheia."
+     ],
+     "q": "O que ajuda você a ficar tranquilo e no controle em um jantar ou festa onde servem bebidas?",
+     "c": "Planeje uma bebida sem álcool de que você goste, como água com gás e limão, para sua próxima refeição social."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What wine is",
+     "g": "Understand the basic idea behind wine: grape juice transformed by yeast through fermentation.",
+     "p": [
+      "Ripe grapes are full of natural sugars, and their juice is the starting point of every wine.",
+      "Yeasts feed on those sugars and turn them into alcohol and carbon dioxide during fermentation.",
+      "Fermentation also releases many of the aromas and flavours that make each wine unique."
+     ],
+     "q": "Which other fermented foods do you know, like bread, yogurt or cheese, and which do you enjoy?",
+     "c": "Taste a fresh grape slowly today and notice its sweetness, sourness and the texture of its skin."
+    },
+    "de": {
+     "t": "Was Wein ist",
+     "g": "Verstehe die Grundidee des Weins: Traubensaft, den Hefe durch Gärung verwandelt.",
+     "p": [
+      "Reife Trauben sind voller natürlicher Zucker, und ihr Saft ist der Ausgangspunkt jedes Weins.",
+      "Hefen ernähren sich von diesem Zucker und wandeln ihn bei der Gärung in Alkohol und Kohlendioxid um.",
+      "Die Gärung setzt auch viele der Aromen frei, die jeden Wein einzigartig machen."
+     ],
+     "q": "Welche anderen fermentierten Lebensmittel kennst du, etwa Brot, Joghurt oder Käse, und welche magst du?",
+     "c": "Probiere heute langsam eine frische Traube und achte auf Süße, Säure und die Textur der Schale."
+    },
+    "es": {
+     "t": "Qué es el vino",
+     "g": "Entiende la idea básica del vino: zumo de uva transformado por levaduras mediante la fermentación.",
+     "p": [
+      "Las uvas maduras están llenas de azúcares naturales, y su zumo es el punto de partida de todo vino.",
+      "Las levaduras se alimentan de esos azúcares y los convierten en alcohol y dióxido de carbono al fermentar.",
+      "La fermentación también libera muchos de los aromas y sabores que hacen único a cada vino."
+     ],
+     "q": "¿Qué otros alimentos fermentados conoces, como el pan, el yogur o el queso, y cuáles disfrutas?",
+     "c": "Prueba hoy una uva fresca despacio y fíjate en su dulzor, su acidez y la textura de su piel."
+    },
+    "fr": {
+     "t": "Ce qu'est le vin",
+     "g": "Comprends l'idée de base du vin : du jus de raisin transformé par les levures grâce à la fermentation.",
+     "p": [
+      "Les raisins mûrs sont riches en sucres naturels, et leur jus est le point de départ de tout vin.",
+      "Les levures se nourrissent de ces sucres et les transforment en alcool et en gaz carbonique.",
+      "La fermentation libère aussi une grande partie des arômes qui rendent chaque vin unique."
+     ],
+     "q": "Quels autres aliments fermentés connais-tu, comme le pain, le yaourt ou le fromage, et lesquels aimes-tu ?",
+     "c": "Goûte lentement un raisin frais aujourd'hui et observe sa douceur, son acidité et la texture de sa peau."
+    },
+    "it": {
+     "t": "Che cos'è il vino",
+     "g": "Capisci l'idea di base del vino: succo d'uva trasformato dai lieviti attraverso la fermentazione.",
+     "p": [
+      "L'uva matura è ricca di zuccheri naturali, e il suo succo è il punto di partenza di ogni vino.",
+      "I lieviti si nutrono di questi zuccheri e li trasformano in alcol e anidride carbonica durante la fermentazione.",
+      "La fermentazione libera anche molti dei profumi e dei sapori che rendono unico ogni vino."
+     ],
+     "q": "Quali altri cibi fermentati conosci, come pane, yogurt o formaggio, e quali ti piacciono?",
+     "c": "Assaggia oggi lentamente un acino d'uva fresco e nota dolcezza, acidità e consistenza della buccia."
+    },
+    "pt": {
+     "t": "O que é o vinho",
+     "g": "Percebe a ideia base do vinho: sumo de uva transformado pelas leveduras através da fermentação.",
+     "p": [
+      "As uvas maduras estão cheias de açúcares naturais, e o seu sumo é o ponto de partida de qualquer vinho.",
+      "As leveduras alimentam-se desses açúcares e transformam-nos em álcool e dióxido de carbono.",
+      "A fermentação liberta também muitos dos aromas e sabores que tornam cada vinho único."
+     ],
+     "q": "Que outros alimentos fermentados conheces, como pão, iogurte ou queijo, e de quais gostas?",
+     "c": "Prova hoje devagar uma uva fresca e repara na doçura, na acidez e na textura da casca."
+    },
+    "pt_BR": {
+     "t": "O que é o vinho",
+     "g": "Entenda a ideia básica do vinho: suco de uva transformado pelas leveduras por meio da fermentação.",
+     "p": [
+      "Uvas maduras são cheias de açúcares naturais, e o suco delas é o ponto de partida de todo vinho.",
+      "As leveduras se alimentam desses açúcares e os transformam em álcool e gás carbônico.",
+      "A fermentação também libera muitos dos aromas e sabores que deixam cada vinho único."
+     ],
+     "q": "Que outros alimentos fermentados você conhece, como pão, iogurte ou queijo, e de quais você gosta?",
+     "c": "Prove hoje uma uva fresca bem devagar e repare na doçura, na acidez e na textura da casca."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The grapevine",
+     "g": "Meet Vitis vinifera, the vine species behind most of the wines made around the world.",
+     "p": [
+      "Vitis vinifera was first cultivated thousands of years ago, likely around the Caucasus and Near East.",
+      "Thousands of grape varieties, like Merlot or Riesling, all belong to this one species.",
+      "Vines are perennial plants that can live and produce grapes for many decades."
+     ],
+     "q": "Have you ever seen a vineyard in person or in a film, and what did the landscape look like?",
+     "c": "Find a photo of a vineyard in winter and one in late summer and compare how the vines change."
+    },
+    "de": {
+     "t": "Die Weinrebe",
+     "g": "Lerne Vitis vinifera kennen, die Rebenart hinter den meisten Weinen der Welt.",
+     "p": [
+      "Vitis vinifera wurde vor Jahrtausenden kultiviert, vermutlich im Kaukasus und im Nahen Osten.",
+      "Tausende Rebsorten wie Merlot oder Riesling gehören alle zu dieser einen Art.",
+      "Reben sind mehrjährige Pflanzen, die viele Jahrzehnte leben und Trauben tragen können."
+     ],
+     "q": "Hast du schon einmal einen Weinberg gesehen, live oder im Film, und wie sah die Landschaft aus?",
+     "c": "Suche ein Foto eines Weinbergs im Winter und eines im Spätsommer und vergleiche, wie sich die Reben verändern."
+    },
+    "es": {
+     "t": "La vid",
+     "g": "Conoce Vitis vinifera, la especie de vid que da origen a la mayoría de los vinos del mundo.",
+     "p": [
+      "Vitis vinifera se cultivó por primera vez hace miles de años, probablemente en el Cáucaso y Oriente Próximo.",
+      "Miles de variedades de uva, como Merlot o Riesling, pertenecen todas a esta misma especie.",
+      "Las vides son plantas perennes que pueden vivir y dar uvas durante muchas décadas."
+     ],
+     "q": "¿Has visto alguna vez un viñedo en persona o en una película, y cómo era el paisaje?",
+     "c": "Busca una foto de un viñedo en invierno y otra a finales de verano y compara cómo cambian las vides."
+    },
+    "fr": {
+     "t": "La vigne",
+     "g": "Découvre Vitis vinifera, l'espèce de vigne à l'origine de la plupart des vins du monde.",
+     "p": [
+      "Vitis vinifera a été cultivée il y a des millénaires, sans doute dans le Caucase et au Proche-Orient.",
+      "Des milliers de cépages, comme le merlot ou le riesling, appartiennent tous à cette seule espèce.",
+      "La vigne est une plante vivace qui peut vivre et donner du raisin pendant de nombreuses décennies."
+     ],
+     "q": "As-tu déjà vu un vignoble en vrai ou dans un film, et à quoi ressemblait le paysage ?",
+     "c": "Trouve une photo d'un vignoble en hiver et une autre à la fin de l'été, et compare l'aspect des vignes."
+    },
+    "it": {
+     "t": "La vite",
+     "g": "Conosci Vitis vinifera, la specie di vite all'origine della maggior parte dei vini del mondo.",
+     "p": [
+      "Vitis vinifera fu coltivata per la prima volta millenni fa, probabilmente tra Caucaso e Vicino Oriente.",
+      "Migliaia di vitigni, come Merlot o Riesling, appartengono tutti a questa sola specie.",
+      "La vite è una pianta perenne che può vivere e dare uva per molti decenni."
+     ],
+     "q": "Hai mai visto un vigneto dal vivo o in un film, e com'era il paesaggio?",
+     "c": "Cerca una foto di un vigneto in inverno e una a fine estate e confronta come cambiano le viti."
+    },
+    "pt": {
+     "t": "A videira",
+     "g": "Conhece a Vitis vinifera, a espécie de videira por trás da maioria dos vinhos do mundo.",
+     "p": [
+      "A Vitis vinifera foi cultivada há milhares de anos, provavelmente no Cáucaso e no Próximo Oriente.",
+      "Milhares de castas, como Merlot ou Riesling, pertencem todas a esta mesma espécie.",
+      "As videiras são plantas perenes que podem viver e dar uvas durante muitas décadas."
+     ],
+     "q": "Já viste uma vinha ao vivo ou num filme, e como era a paisagem?",
+     "c": "Procura uma foto de uma vinha no inverno e outra no fim do verão e compara como as videiras mudam."
+    },
+    "pt_BR": {
+     "t": "A videira",
+     "g": "Conheça a Vitis vinifera, a espécie de videira por trás da maioria dos vinhos do mundo.",
+     "p": [
+      "A Vitis vinifera foi cultivada há milhares de anos, provavelmente no Cáucaso e no Oriente Próximo.",
+      "Milhares de variedades de uva, como Merlot ou Riesling, pertencem todas a essa mesma espécie.",
+      "As videiras são plantas perenes que podem viver e dar uvas por muitas décadas."
+     ],
+     "q": "Você já viu um vinhedo ao vivo ou em um filme, e como era a paisagem?",
+     "c": "Procure uma foto de um vinhedo no inverno e outra no fim do verão e compare como as videiras mudam."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Red, white and rosé",
+     "g": "See how contact with grape skins gives red, white and rosé wines their different colours.",
+     "p": [
+      "The juice of almost all grapes is clear; the colour comes from pigments in the skins.",
+      "Red wine ferments with the skins for days or weeks, while white wine juice is separated early.",
+      "Rosé gets its pink shade from just a few hours of skin contact with dark grapes."
+     ],
+     "q": "Which colour of wine do you find most beautiful to look at, and why?",
+     "c": "Cut a red grape in half and look at the pale flesh next to the dark skin."
+    },
+    "de": {
+     "t": "Rot, Weiß und Rosé",
+     "g": "Sieh, wie der Kontakt mit den Traubenschalen Rot-, Weiß- und Roséweinen ihre Farbe gibt.",
+     "p": [
+      "Der Saft fast aller Trauben ist hell; die Farbe stammt aus Farbstoffen in den Schalen.",
+      "Rotwein gärt Tage oder Wochen mit den Schalen, beim Weißwein wird der Saft früh getrennt.",
+      "Rosé erhält seinen Farbton durch nur wenige Stunden Schalenkontakt mit dunklen Trauben."
+     ],
+     "q": "Welche Weinfarbe findest du am schönsten anzusehen, und warum?",
+     "c": "Schneide eine rote Traube durch und betrachte das helle Fruchtfleisch neben der dunklen Schale."
+    },
+    "es": {
+     "t": "Tinto, blanco y rosado",
+     "g": "Descubre cómo el contacto con los hollejos da a los vinos tintos, blancos y rosados su color.",
+     "p": [
+      "El zumo de casi todas las uvas es claro; el color viene de los pigmentos de la piel.",
+      "El tinto fermenta con los hollejos durante días o semanas; en el blanco, el mosto se separa pronto.",
+      "El rosado obtiene su tono con solo unas horas de contacto con la piel de uvas tintas."
+     ],
+     "q": "¿Qué color de vino te parece más bonito a la vista, y por qué?",
+     "c": "Corta una uva tinta por la mitad y observa la pulpa clara junto a la piel oscura."
+    },
+    "fr": {
+     "t": "Rouge, blanc et rosé",
+     "g": "Vois comment le contact avec la peau du raisin donne leur couleur aux vins rouges, blancs et rosés.",
+     "p": [
+      "Le jus de presque tous les raisins est clair ; la couleur vient des pigments de la peau.",
+      "Le rouge fermente avec les peaux pendant des jours ou des semaines, le jus du blanc est séparé tôt.",
+      "Le rosé tire sa teinte de quelques heures seulement de contact avec la peau de raisins noirs."
+     ],
+     "q": "Quelle couleur de vin trouves-tu la plus belle à regarder, et pourquoi ?",
+     "c": "Coupe un raisin noir en deux et observe la pulpe claire à côté de la peau foncée."
+    },
+    "it": {
+     "t": "Rosso, bianco e rosato",
+     "g": "Scopri come il contatto con le bucce dà ai vini rossi, bianchi e rosati i loro colori.",
+     "p": [
+      "Il succo di quasi tutte le uve è chiaro; il colore viene dai pigmenti delle bucce.",
+      "Il rosso fermenta con le bucce per giorni o settimane, mentre nel bianco il mosto si separa subito.",
+      "Il rosato prende la sua tinta da poche ore di contatto con le bucce di uve scure."
+     ],
+     "q": "Quale colore di vino trovi più bello da guardare, e perché?",
+     "c": "Taglia a metà un acino d'uva nera e osserva la polpa chiara accanto alla buccia scura."
+    },
+    "pt": {
+     "t": "Tinto, branco e rosé",
+     "g": "Vê como o contacto com as películas dá aos vinhos tintos, brancos e rosés as suas cores.",
+     "p": [
+      "O sumo de quase todas as uvas é claro; a cor vem dos pigmentos das películas.",
+      "O tinto fermenta com as películas durante dias ou semanas, no branco o mosto é separado cedo.",
+      "O rosé ganha o seu tom com apenas algumas horas de contacto com as películas de uvas tintas."
+     ],
+     "q": "Que cor de vinho achas mais bonita de ver, e porquê?",
+     "c": "Corta uma uva tinta ao meio e observa a polpa clara ao lado da casca escura."
+    },
+    "pt_BR": {
+     "t": "Tinto, branco e rosé",
+     "g": "Veja como o contato com as cascas dá aos vinhos tintos, brancos e rosés suas cores.",
+     "p": [
+      "O suco de quase todas as uvas é claro; a cor vem dos pigmentos das cascas.",
+      "O tinto fermenta com as cascas por dias ou semanas, já no branco o mosto é separado cedo.",
+      "O rosé ganha seu tom com só algumas horas de contato com as cascas de uvas tintas."
+     ],
+     "q": "Qual cor de vinho você acha mais bonita de ver, e por quê?",
+     "c": "Corte uma uva escura ao meio e observe a polpa clara ao lado da casca escura."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sparkling wine basics",
+     "g": "Find out where the bubbles in sparkling wine come from.",
+     "p": [
+      "In the traditional method, used for Champagne and Cava, a second fermentation happens inside the bottle.",
+      "In the tank method, used for most Prosecco, the second fermentation happens in a large sealed tank.",
+      "Some simple sparkling wines are made by adding carbon dioxide, like a soft drink."
+     ],
+     "q": "Do you associate sparkling drinks with celebrations, and how do you like to celebrate?",
+     "c": "Pour a sparkling water into a glass and watch how the size and speed of the bubbles change."
+    },
+    "de": {
+     "t": "Grundlagen Schaumwein",
+     "g": "Finde heraus, woher die Bläschen im Schaumwein kommen.",
+     "p": [
+      "Bei der traditionellen Methode, etwa für Champagner und Cava, findet eine zweite Gärung in der Flasche statt.",
+      "Bei der Tankmethode, typisch für Prosecco, läuft die zweite Gärung in einem großen geschlossenen Tank.",
+      "Manche einfachen Schaumweine entstehen durch Zusatz von Kohlensäure, wie bei Limonade."
+     ],
+     "q": "Verbindest du prickelnde Getränke mit Feiern, und wie feierst du am liebsten?",
+     "c": "Gieße Mineralwasser mit Kohlensäure ins Glas und beobachte, wie sich Größe und Tempo der Bläschen ändern."
+    },
+    "es": {
+     "t": "Espumosos básicos",
+     "g": "Descubre de dónde vienen las burbujas de los vinos espumosos.",
+     "p": [
+      "En el método tradicional, usado en el Champagne y el Cava, hay una segunda fermentación dentro de la botella.",
+      "En el método en tanque, típico del Prosecco, la segunda fermentación ocurre en un gran depósito cerrado.",
+      "Algunos espumosos sencillos se hacen añadiendo gas carbónico, como un refresco."
+     ],
+     "q": "¿Asocias las bebidas con burbujas a las celebraciones, y cómo te gusta celebrar?",
+     "c": "Sirve agua con gas en un vaso y observa cómo cambian el tamaño y la velocidad de las burbujas."
+    },
+    "fr": {
+     "t": "Les bases des effervescents",
+     "g": "Découvre d'où viennent les bulles des vins effervescents.",
+     "p": [
+      "Dans la méthode traditionnelle, celle du champagne et du cava, une seconde fermentation a lieu en bouteille.",
+      "Dans la méthode en cuve close, typique du prosecco, la seconde fermentation se fait dans une grande cuve.",
+      "Certains effervescents simples sont obtenus en ajoutant du gaz carbonique, comme un soda."
+     ],
+     "q": "Associes-tu les boissons pétillantes aux fêtes, et comment aimes-tu célébrer ?",
+     "c": "Verse une eau pétillante dans un verre et observe comment la taille et la vitesse des bulles évoluent."
+    },
+    "it": {
+     "t": "Le basi delle bollicine",
+     "g": "Scopri da dove vengono le bollicine dei vini spumanti.",
+     "p": [
+      "Nel metodo classico, usato per Champagne, Franciacorta e Cava, la seconda fermentazione avviene in bottiglia.",
+      "Nel metodo Martinotti, tipico del Prosecco, la seconda fermentazione avviene in grandi autoclavi.",
+      "Alcuni spumanti semplici si ottengono aggiungendo anidride carbonica, come una bibita."
+     ],
+     "q": "Associ le bollicine alle feste, e come ti piace festeggiare?",
+     "c": "Versa dell'acqua frizzante in un bicchiere e osserva come cambiano dimensione e velocità delle bollicine."
+    },
+    "pt": {
+     "t": "Espumantes: o básico",
+     "g": "Descobre de onde vêm as bolhas dos vinhos espumantes.",
+     "p": [
+      "No método clássico, usado no Champagne e no Cava, há uma segunda fermentação dentro da garrafa.",
+      "No método de cuba fechada, típico do Prosecco, a segunda fermentação acontece num grande depósito.",
+      "Alguns espumantes simples são feitos juntando gás carbónico, como um refrigerante."
+     ],
+     "q": "Associas as bebidas com bolhas a celebrações, e como gostas de celebrar?",
+     "c": "Deita água com gás num copo e observa como mudam o tamanho e a velocidade das bolhas."
+    },
+    "pt_BR": {
+     "t": "Espumantes: o básico",
+     "g": "Descubra de onde vêm as bolhas dos vinhos espumantes.",
+     "p": [
+      "No método tradicional, usado no Champagne e no Cava, há uma segunda fermentação dentro da garrafa.",
+      "No método Charmat, típico do Prosecco, a segunda fermentação acontece em um grande tanque fechado.",
+      "Alguns espumantes simples são feitos adicionando gás carbônico, como um refrigerante."
+     ],
+     "q": "Você associa bebidas com bolhas a comemorações, e como gosta de comemorar?",
+     "c": "Coloque água com gás em um copo e observe como mudam o tamanho e a velocidade das bolhas."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sweet and fortified wines",
+     "g": "Get to know sweeter and stronger wine styles such as late harvest wines, port and sherry.",
+     "p": [
+      "Late harvest wines come from grapes left on the vine longer, so they gather more sugar.",
+      "Port, from Portugal's Douro Valley, is fortified with grape spirit, which stops fermentation and keeps sweetness.",
+      "Sherry, from Jerez in Spain, is also fortified and ranges from very dry to very sweet."
+     ],
+     "q": "Do you prefer sweet, salty or bitter flavours at the end of a meal?",
+     "c": "Compare a ripe and a less ripe piece of the same fruit today and describe the difference in sweetness."
+    },
+    "de": {
+     "t": "Süß- und Likörweine",
+     "g": "Lerne süßere und stärkere Weinstile kennen, etwa Spätlesen, Portwein und Sherry.",
+     "p": [
+      "Spätlesen stammen von Trauben, die länger am Stock hängen und so mehr Zucker sammeln.",
+      "Portwein aus dem portugiesischen Douro wird mit Traubenbrand verstärkt, was die Gärung stoppt und Süße erhält.",
+      "Sherry aus Jerez in Spanien ist ebenfalls verstärkt und reicht von sehr trocken bis sehr süß."
+     ],
+     "q": "Magst du am Ende eines Essens lieber süße, salzige oder bittere Aromen?",
+     "c": "Vergleiche heute ein reifes und ein weniger reifes Stück derselben Frucht und beschreibe den Unterschied in der Süße."
+    },
+    "es": {
+     "t": "Vinos dulces y generosos",
+     "g": "Conoce estilos de vino más dulces y fuertes, como los de vendimia tardía, el oporto y el jerez.",
+     "p": [
+      "Los vinos de vendimia tardía vienen de uvas que se quedan más tiempo en la cepa y acumulan más azúcar.",
+      "El oporto, del valle del Duero en Portugal, se encabeza con aguardiente de uva, que frena la fermentación.",
+      "El jerez, de Jerez de la Frontera, también se encabeza y va de muy seco a muy dulce."
+     ],
+     "q": "¿Prefieres sabores dulces, salados o amargos al final de una comida?",
+     "c": "Compara hoy un trozo maduro y otro menos maduro de la misma fruta y describe la diferencia de dulzor."
+    },
+    "fr": {
+     "t": "Vins doux et vins mutés",
+     "g": "Découvre des styles plus doux et plus forts, comme les vendanges tardives, le porto et le xérès.",
+     "p": [
+      "Les vendanges tardives viennent de raisins laissés plus longtemps sur la vigne, donc plus riches en sucre.",
+      "Le porto, de la vallée du Douro au Portugal, est muté à l'eau-de-vie, ce qui arrête la fermentation.",
+      "Le xérès, de Jerez en Espagne, est aussi muté et va du très sec au très doux."
+     ],
+     "q": "Préfères-tu les saveurs sucrées, salées ou amères à la fin d'un repas ?",
+     "c": "Compare aujourd'hui un morceau mûr et un morceau moins mûr d'un même fruit et décris la différence de douceur."
+    },
+    "it": {
+     "t": "Vini dolci e fortificati",
+     "g": "Conosci stili più dolci e più forti, come i vini da vendemmia tardiva, il porto e lo sherry.",
+     "p": [
+      "I vini da vendemmia tardiva nascono da uve lasciate più a lungo sulla pianta, quindi più zuccherine.",
+      "Il porto, della valle del Douro in Portogallo, è fortificato con acquavite d'uva, che ferma la fermentazione.",
+      "Lo sherry, di Jerez in Spagna, è anch'esso fortificato e va dal molto secco al molto dolce."
+     ],
+     "q": "Alla fine di un pasto preferisci sapori dolci, salati o amari?",
+     "c": "Confronta oggi un pezzo maturo e uno meno maturo dello stesso frutto e descrivi la differenza di dolcezza."
+    },
+    "pt": {
+     "t": "Vinhos doces e generosos",
+     "g": "Conhece estilos mais doces e mais fortes, como as colheitas tardias, o vinho do Porto e o Xerez.",
+     "p": [
+      "As colheitas tardias vêm de uvas deixadas mais tempo na videira, que acumulam mais açúcar.",
+      "O vinho do Porto, do Douro, é fortificado com aguardente vínica, o que trava a fermentação e guarda doçura.",
+      "O Xerez, de Jerez em Espanha, também é fortificado e vai do muito seco ao muito doce."
+     ],
+     "q": "Preferes sabores doces, salgados ou amargos no fim de uma refeição?",
+     "c": "Compara hoje um pedaço maduro e outro menos maduro da mesma fruta e descreve a diferença de doçura."
+    },
+    "pt_BR": {
+     "t": "Vinhos doces e fortificados",
+     "g": "Conheça estilos mais doces e mais fortes, como as colheitas tardias, o vinho do Porto e o Jerez.",
+     "p": [
+      "As colheitas tardias vêm de uvas deixadas mais tempo no pé, que acumulam mais açúcar.",
+      "O vinho do Porto, do vale do Douro, recebe aguardente vínica, que interrompe a fermentação e mantém a doçura.",
+      "O Jerez, da Espanha, também é fortificado e vai do muito seco ao muito doce."
+     ],
+     "q": "Você prefere sabores doces, salgados ou amargos no fim de uma refeição?",
+     "c": "Compare hoje um pedaço maduro e outro menos maduro da mesma fruta e descreva a diferença de doçura."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "From vineyard to bottle",
+     "g": "Follow the basic journey of wine from harvest to bottling.",
+     "p": [
+      "Grapes are harvested when ripe, then crushed or pressed to release their juice.",
+      "The juice ferments into wine, which may then age in tanks or barrels for months or years.",
+      "Finally the wine is clarified, bottled and often rested before it reaches the table."
+     ],
+     "q": "Which step of this journey would you most like to see in person during a visit?",
+     "c": "Draw a simple five-step timeline of the journey of wine from grape to bottle."
+    },
+    "de": {
+     "t": "Vom Weinberg in die Flasche",
+     "g": "Verfolge den grundlegenden Weg des Weins von der Lese bis zur Abfüllung.",
+     "p": [
+      "Die Trauben werden reif gelesen und dann gemahlen oder gepresst, um den Saft zu gewinnen.",
+      "Der Saft gärt zu Wein, der danach Monate oder Jahre in Tanks oder Fässern reifen kann.",
+      "Zum Schluss wird der Wein geklärt, abgefüllt und oft noch ruhen gelassen, bevor er auf den Tisch kommt."
+     ],
+     "q": "Welchen Schritt dieses Weges würdest du bei einem Besuch am liebsten live sehen?",
+     "c": "Zeichne eine einfache Zeitleiste mit fünf Schritten vom Weinberg bis zur Flasche."
+    },
+    "es": {
+     "t": "Del viñedo a la botella",
+     "g": "Sigue el recorrido básico del vino desde la vendimia hasta el embotellado.",
+     "p": [
+      "Las uvas se vendimian maduras y luego se estrujan o prensan para obtener su mosto.",
+      "El mosto fermenta y se convierte en vino, que puede envejecer en depósitos o barricas durante meses o años.",
+      "Por último, el vino se clarifica, se embotella y a menudo reposa antes de llegar a la mesa."
+     ],
+     "q": "¿Qué paso de este recorrido te gustaría más ver en persona durante una visita?",
+     "c": "Dibuja una línea de tiempo sencilla con cinco pasos del vino, de la uva a la botella."
+    },
+    "fr": {
+     "t": "De la vigne à la bouteille",
+     "g": "Suis le parcours de base du vin, des vendanges à la mise en bouteille.",
+     "p": [
+      "Les raisins sont vendangés mûrs, puis foulés ou pressés pour en extraire le jus.",
+      "Le jus fermente et devient du vin, qui peut ensuite vieillir en cuve ou en fût pendant des mois ou des années.",
+      "Enfin, le vin est clarifié, mis en bouteille et souvent laissé au repos avant d'arriver à table."
+     ],
+     "q": "Quelle étape de ce parcours aimerais-tu le plus voir en vrai lors d'une visite ?",
+     "c": "Dessine une frise simple en cinq étapes, du raisin jusqu'à la bouteille."
+    },
+    "it": {
+     "t": "Dalla vigna alla bottiglia",
+     "g": "Segui il percorso di base del vino, dalla vendemmia all'imbottigliamento.",
+     "p": [
+      "L'uva viene vendemmiata matura, poi pigiata o pressata per ottenere il mosto.",
+      "Il mosto fermenta e diventa vino, che può poi affinare in vasche o botti per mesi o anni.",
+      "Infine il vino viene chiarificato, imbottigliato e spesso lasciato riposare prima di arrivare in tavola."
+     ],
+     "q": "Quale fase di questo percorso ti piacerebbe di più vedere dal vivo durante una visita?",
+     "c": "Disegna una semplice linea del tempo in cinque tappe, dall'uva alla bottiglia."
+    },
+    "pt": {
+     "t": "Da vinha à garrafa",
+     "g": "Acompanha o percurso básico do vinho, da vindima ao engarrafamento.",
+     "p": [
+      "As uvas são vindimadas maduras e depois esmagadas ou prensadas para libertar o sumo.",
+      "O mosto fermenta e torna-se vinho, que pode estagiar em cubas ou barricas durante meses ou anos.",
+      "Por fim, o vinho é clarificado, engarrafado e muitas vezes repousa antes de chegar à mesa."
+     ],
+     "q": "Que etapa deste percurso gostavas mais de ver ao vivo numa visita?",
+     "c": "Desenha uma linha do tempo simples com cinco etapas, da uva até à garrafa."
+    },
+    "pt_BR": {
+     "t": "Do vinhedo à garrafa",
+     "g": "Acompanhe o caminho básico do vinho, da colheita ao engarrafamento.",
+     "p": [
+      "As uvas são colhidas maduras e depois esmagadas ou prensadas para liberar o suco.",
+      "O mosto fermenta e vira vinho, que pode envelhecer em tanques ou barricas por meses ou anos.",
+      "Por fim, o vinho é clarificado, engarrafado e muitas vezes descansa antes de chegar à mesa."
+     ],
+     "q": "Qual etapa desse caminho você mais gostaria de ver ao vivo em uma visita?",
+     "c": "Desenhe uma linha do tempo simples com cinco etapas, da uva até a garrafa."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a wine label",
+     "g": "Learn the key details a wine label tells you at a glance.",
+     "p": [
+      "Most labels show the producer and the region, the place where the grapes were grown.",
+      "Many also name the grape variety and the vintage, the year the grapes were harvested.",
+      "The alcohol level is shown as a percentage, a useful hint about how strong and full the wine is."
+     ],
+     "q": "When you look at packaging in a shop, which details catch your eye first?",
+     "c": "Find any wine label, online or at home, and spot the producer, region, vintage and alcohol level."
+    },
+    "de": {
+     "t": "Ein Weinetikett lesen",
+     "g": "Lerne die wichtigsten Angaben kennen, die ein Weinetikett auf einen Blick verrät.",
+     "p": [
+      "Die meisten Etiketten nennen den Erzeuger und die Region, also wo die Trauben gewachsen sind.",
+      "Viele nennen auch die Rebsorte und den Jahrgang, das Jahr der Lese.",
+      "Der Alkoholgehalt steht in Prozent, ein guter Hinweis darauf, wie kräftig und voll der Wein ist."
+     ],
+     "q": "Welche Angaben auf einer Verpackung fallen dir im Laden zuerst auf?",
+     "c": "Such dir ein Weinetikett, online oder zu Hause, und finde Erzeuger, Region, Jahrgang und Alkoholgehalt."
+    },
+    "es": {
+     "t": "Leer una etiqueta de vino",
+     "g": "Aprende los datos clave que una etiqueta de vino te da de un vistazo.",
+     "p": [
+      "La mayoría de las etiquetas muestran el productor y la región, el lugar donde crecieron las uvas.",
+      "Muchas también indican la variedad de uva y la añada, el año en que se vendimió.",
+      "El grado alcohólico aparece en porcentaje, una pista útil sobre lo fuerte y corpulento que es el vino."
+     ],
+     "q": "Cuando miras un envase en una tienda, ¿qué detalles te llaman la atención primero?",
+     "c": "Busca una etiqueta de vino, en internet o en casa, y localiza productor, región, añada y grado alcohólico."
+    },
+    "fr": {
+     "t": "Lire une étiquette de vin",
+     "g": "Apprends les informations clés qu'une étiquette de vin te donne d'un coup d'œil.",
+     "p": [
+      "La plupart des étiquettes indiquent le producteur et la région, là où le raisin a poussé.",
+      "Beaucoup mentionnent aussi le cépage et le millésime, l'année de la récolte.",
+      "Le degré d'alcool est indiqué en pourcentage, un bon indice de la puissance et du corps du vin."
+     ],
+     "q": "Quand tu regardes un emballage en magasin, quels détails attirent ton œil en premier ?",
+     "c": "Trouve une étiquette de vin, en ligne ou chez toi, et repère producteur, région, millésime et degré."
+    },
+    "it": {
+     "t": "Leggere un'etichetta",
+     "g": "Impara le informazioni chiave che un'etichetta di vino ti dà a colpo d'occhio.",
+     "p": [
+      "La maggior parte delle etichette indica il produttore e la zona, cioè dove è cresciuta l'uva.",
+      "Molte riportano anche il vitigno e l'annata, l'anno della vendemmia.",
+      "La gradazione alcolica è espressa in percentuale, un indizio utile su quanto il vino sia forte e pieno."
+     ],
+     "q": "Quando guardi una confezione in negozio, quali dettagli ti colpiscono per primi?",
+     "c": "Trova un'etichetta di vino, online o a casa, e individua produttore, zona, annata e gradazione."
+    },
+    "pt": {
+     "t": "Ler um rótulo de vinho",
+     "g": "Aprende as informações principais que um rótulo de vinho te dá num relance.",
+     "p": [
+      "A maioria dos rótulos mostra o produtor e a região, o lugar onde as uvas cresceram.",
+      "Muitos indicam também a casta e o ano de colheita, quando as uvas foram vindimadas.",
+      "O teor alcoólico aparece em percentagem, uma pista útil sobre a força e o corpo do vinho."
+     ],
+     "q": "Quando olhas para uma embalagem numa loja, que detalhes te chamam primeiro a atenção?",
+     "c": "Encontra um rótulo de vinho, online ou em casa, e identifica produtor, região, colheita e teor alcoólico."
+    },
+    "pt_BR": {
+     "t": "Lendo um rótulo de vinho",
+     "g": "Aprenda as informações principais que um rótulo de vinho mostra em um relance.",
+     "p": [
+      "A maioria dos rótulos mostra o produtor e a região, o lugar onde as uvas cresceram.",
+      "Muitos também indicam a uva e a safra, o ano em que as uvas foram colhidas.",
+      "O teor alcoólico aparece em porcentagem, uma pista útil sobre a força e o corpo do vinho."
+     ],
+     "q": "Quando você olha uma embalagem em uma loja, quais detalhes chamam sua atenção primeiro?",
+     "c": "Encontre um rótulo de vinho, na internet ou em casa, e identifique produtor, região, safra e teor alcoólico."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Old World and New World",
+     "g": "Compare Europe's place-named wines with the grape-named labels common in other countries.",
+     "p": [
+      "Old World usually means Europe, where wines are often named after places like Rioja or Chablis.",
+      "New World includes countries like Chile, Australia and the USA, where labels often show the grape name.",
+      "Both styles tell a story: one highlights the land, the other highlights the grape."
+     ],
+     "q": "Would you rather choose a wine by its place of origin or by its grape, and why?",
+     "c": "Pick one Old World region and one New World country and find out which grape each is famous for."
+    },
+    "de": {
+     "t": "Alte Welt und Neue Welt",
+     "g": "Vergleiche Europas Weine mit Herkunftsnamen und die Rebsortenetiketten anderer Länder.",
+     "p": [
+      "Alte Welt meint meist Europa, wo Weine oft nach Orten wie Rioja oder Chablis benannt sind.",
+      "Zur Neuen Welt zählen Länder wie Chile, Australien und die USA, wo oft die Rebsorte auf dem Etikett steht.",
+      "Beide Stile erzählen eine Geschichte: Der eine betont die Landschaft, der andere die Traube."
+     ],
+     "q": "Würdest du einen Wein lieber nach Herkunft oder nach Rebsorte auswählen, und warum?",
+     "c": "Wähle eine Region der Alten Welt und ein Land der Neuen Welt und finde heraus, für welche Traube sie bekannt sind."
+    },
+    "es": {
+     "t": "Viejo Mundo y Nuevo Mundo",
+     "g": "Compara los vinos europeos con nombre de lugar y las etiquetas con nombre de uva de otros países.",
+     "p": [
+      "Viejo Mundo suele significar Europa, donde los vinos se nombran por lugares como Rioja o Chablis.",
+      "El Nuevo Mundo incluye países como Chile, Australia o EE. UU., donde la etiqueta suele mostrar la uva.",
+      "Ambos estilos cuentan una historia: uno destaca la tierra y el otro, la uva."
+     ],
+     "q": "¿Preferirías elegir un vino por su origen o por su uva, y por qué?",
+     "c": "Elige una región del Viejo Mundo y un país del Nuevo Mundo y averigua por qué uva es famoso cada uno."
+    },
+    "fr": {
+     "t": "Ancien Monde et Nouveau Monde",
+     "g": "Compare les vins européens nommés d'après un lieu et les étiquettes à cépage d'autres pays.",
+     "p": [
+      "L'Ancien Monde désigne surtout l'Europe, où les vins portent souvent un nom de lieu, comme Rioja ou Chablis.",
+      "Le Nouveau Monde inclut le Chili, l'Australie ou les États-Unis, où l'étiquette affiche souvent le cépage.",
+      "Les deux styles racontent une histoire : l'un met en avant la terre, l'autre le raisin."
+     ],
+     "q": "Préférerais-tu choisir un vin selon son origine ou selon son cépage, et pourquoi ?",
+     "c": "Choisis une région de l'Ancien Monde et un pays du Nouveau Monde et trouve leur cépage emblématique."
+    },
+    "it": {
+     "t": "Vecchio e Nuovo Mondo",
+     "g": "Confronta i vini europei con nome di luogo e le etichette con il vitigno tipiche di altri paesi.",
+     "p": [
+      "Vecchio Mondo indica di solito l'Europa, dove i vini prendono spesso il nome da luoghi come Chianti o Chablis.",
+      "Il Nuovo Mondo comprende paesi come Cile, Australia e Stati Uniti, dove l'etichetta mostra spesso il vitigno.",
+      "Entrambi raccontano una storia: uno mette in risalto il territorio, l'altro l'uva."
+     ],
+     "q": "Preferiresti scegliere un vino in base all'origine o al vitigno, e perché?",
+     "c": "Scegli una zona del Vecchio Mondo e un paese del Nuovo Mondo e scopri per quale uva sono famosi."
+    },
+    "pt": {
+     "t": "Velho Mundo e Novo Mundo",
+     "g": "Compara os vinhos europeus com nome de lugar e os rótulos com nome de casta de outros países.",
+     "p": [
+      "Velho Mundo costuma significar Europa, onde os vinhos têm nomes de lugares como Douro ou Rioja.",
+      "O Novo Mundo inclui países como Chile, Austrália e EUA, onde o rótulo mostra muitas vezes a casta.",
+      "Os dois estilos contam uma história: um destaca a terra, o outro destaca a uva."
+     ],
+     "q": "Preferias escolher um vinho pela origem ou pela casta, e porquê?",
+     "c": "Escolhe uma região do Velho Mundo e um país do Novo Mundo e descobre por que casta é famoso cada um."
+    },
+    "pt_BR": {
+     "t": "Velho Mundo e Novo Mundo",
+     "g": "Compare os vinhos europeus com nome de lugar e os rótulos com nome de uva de outros países.",
+     "p": [
+      "Velho Mundo costuma significar Europa, onde os vinhos levam nomes de lugares como Rioja ou Chablis.",
+      "O Novo Mundo inclui países como Chile, Austrália e EUA, onde o rótulo costuma mostrar a uva.",
+      "Os dois estilos contam uma história: um destaca a terra, o outro destaca a uva."
+     ],
+     "q": "Você prefere escolher um vinho pela origem ou pela uva, e por quê?",
+     "c": "Escolha uma região do Velho Mundo e um país do Novo Mundo e descubra por qual uva cada um é famoso."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "history",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mesopotamia",
+     "g": "Meet the land between two rivers where some of the world's first cities grew.",
+     "p": [
+      "Mesopotamia means land between rivers: the Tigris and Euphrates, in what is now mainly Iraq.",
+      "Canals carried river water to the fields, so farmers grew enough barley to feed growing towns.",
+      "Uruk became one of the first true cities, with tens of thousands of people by about 5,000 years ago."
+     ],
+     "q": "What do you think makes a place a city rather than a big village?",
+     "c": "Find the Tigris and Euphrates on a map and trace where they meet before reaching the sea."
+    },
+    "de": {
+     "t": "Mesopotamien",
+     "g": "Lerne das Land zwischen zwei Flüssen kennen, in dem einige der ersten Städte entstanden.",
+     "p": [
+      "Mesopotamien heißt Land zwischen den Flüssen: Euphrat und Tigris, vor allem im heutigen Irak.",
+      "Kanäle leiteten Flusswasser auf die Felder, so wuchs genug Gerste, um wachsende Städte zu ernähren.",
+      "Uruk wurde zu einer der ersten echten Städte, mit Zehntausenden Einwohnern vor etwa 5.000 Jahren."
+     ],
+     "q": "Was macht einen Ort deiner Meinung nach zu einer Stadt statt zu einem großen Dorf?",
+     "c": "Such Euphrat und Tigris auf einer Karte und verfolge, wo sie sich vor dem Meer vereinen."
+    },
+    "es": {
+     "t": "Mesopotamia",
+     "g": "Conoce la tierra entre dos ríos donde crecieron algunas de las primeras ciudades del mundo.",
+     "p": [
+      "Mesopotamia significa tierra entre ríos: el Tigris y el Éufrates, sobre todo en el actual Irak.",
+      "Los canales llevaban agua a los campos y así se cultivaba cebada suficiente para alimentar ciudades.",
+      "Uruk fue una de las primeras ciudades de verdad, con decenas de miles de habitantes hace unos 5.000 años."
+     ],
+     "q": "¿Qué crees que convierte un lugar en ciudad y no en un pueblo grande?",
+     "c": "Busca el Tigris y el Éufrates en un mapa y sigue su curso hasta donde se unen antes del mar."
+    },
+    "fr": {
+     "t": "La Mésopotamie",
+     "g": "Découvrir la terre entre deux fleuves où sont nées certaines des premières villes du monde.",
+     "p": [
+      "Mésopotamie signifie pays entre les fleuves : le Tigre et l'Euphrate, surtout dans l'Irak actuel.",
+      "Des canaux menaient l'eau aux champs : on récoltait assez d'orge pour nourrir des villes en plein essor.",
+      "Uruk fut l'une des premières vraies villes, avec des dizaines de milliers d'habitants il y a environ 5 000 ans."
+     ],
+     "q": "Selon toi, qu'est-ce qui fait d'un lieu une ville plutôt qu'un gros village ?",
+     "c": "Trouve le Tigre et l'Euphrate sur une carte et suis-les jusqu'à leur jonction avant la mer."
+    },
+    "it": {
+     "t": "La Mesopotamia",
+     "g": "Conosci la terra tra due fiumi dove nacquero alcune delle prime città del mondo.",
+     "p": [
+      "Mesopotamia significa terra tra i fiumi: il Tigri e l'Eufrate, soprattutto nell'attuale Iraq.",
+      "I canali portavano l'acqua nei campi e così si coltivava abbastanza orzo da nutrire città in crescita.",
+      "Uruk divenne una delle prime vere città, con decine di migliaia di abitanti circa 5.000 anni fa."
+     ],
+     "q": "Secondo te che cosa rende un luogo una città e non un grande villaggio?",
+     "c": "Trova il Tigri e l'Eufrate su una mappa e segui il loro corso fino a dove si uniscono prima del mare."
+    },
+    "pt": {
+     "t": "A Mesopotâmia",
+     "g": "Conhecer a terra entre dois rios onde cresceram algumas das primeiras cidades do mundo.",
+     "p": [
+      "Mesopotâmia significa terra entre rios: o Tigre e o Eufrates, sobretudo no atual Iraque.",
+      "Canais levavam a água aos campos e assim cultivava-se cevada suficiente para alimentar cidades em crescimento.",
+      "Uruk foi uma das primeiras verdadeiras cidades, com dezenas de milhares de habitantes há cerca de 5000 anos."
+     ],
+     "q": "O que achas que faz de um lugar uma cidade e não uma aldeia grande?",
+     "c": "Procura o Tigre e o Eufrates num mapa e segue-os até onde se juntam antes do mar."
+    },
+    "pt_BR": {
+     "t": "Mesopotâmia",
+     "g": "Conhecer a terra entre dois rios onde surgiram algumas das primeiras cidades do mundo.",
+     "p": [
+      "Mesopotâmia significa terra entre rios: o Tigre e o Eufrates, principalmente no atual Iraque.",
+      "Canais levavam água aos campos e assim se plantava cevada suficiente para alimentar cidades em crescimento.",
+      "Uruk foi uma das primeiras cidades de verdade, com dezenas de milhares de habitantes há cerca de 5 mil anos."
+     ],
+     "q": "O que você acha que transforma um lugar em cidade, e não numa vila grande?",
+     "c": "Procure o Tigre e o Eufrates num mapa e siga o curso deles até onde se juntam antes do mar."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The invention of writing",
+     "g": "Find out how writing began in Sumer as a way of keeping records.",
+     "p": [
+      "Over 5,000 years ago in Sumer, scribes pressed marks into wet clay tablets with a reed.",
+      "The first texts were mostly lists: sacks of barley, sheep, workers and payments.",
+      "Over time, cuneiform wedge signs could record laws, letters, stories and even school exercises."
+     ],
+     "q": "What would be harder for you to live without: writing or numbers?",
+     "c": "Invent three simple symbols for things you use daily and write a short shopping list with them."
+    },
+    "de": {
+     "t": "Die Erfindung der Schrift",
+     "g": "Erfahre, wie die Schrift in Sumer als Mittel zur Buchführung entstand.",
+     "p": [
+      "Vor über 5.000 Jahren drückten Schreiber in Sumer mit einem Schilfrohr Zeichen in feuchte Tontafeln.",
+      "Die ersten Texte waren meist Listen: Säcke mit Gerste, Schafe, Arbeiter und Zahlungen.",
+      "Mit der Zeit hielt die Keilschrift Gesetze, Briefe, Erzählungen und sogar Schulübungen fest."
+     ],
+     "q": "Worauf könntest du schwerer verzichten: auf Schrift oder auf Zahlen?",
+     "c": "Erfinde drei einfache Zeichen für Dinge des Alltags und schreib damit einen kurzen Einkaufszettel."
+    },
+    "es": {
+     "t": "La invención de la escritura",
+     "g": "Descubre cómo nació la escritura en Sumer como forma de llevar cuentas.",
+     "p": [
+      "Hace más de 5.000 años, en Sumer, los escribas marcaban tablillas de arcilla húmeda con una caña.",
+      "Los primeros textos eran sobre todo listas: sacos de cebada, ovejas, trabajadores y pagos.",
+      "Con el tiempo, la escritura cuneiforme sirvió para leyes, cartas, relatos e incluso ejercicios escolares."
+     ],
+     "q": "¿Sin qué te costaría más vivir: sin la escritura o sin los números?",
+     "c": "Inventa tres símbolos sencillos para cosas que usas a diario y escribe con ellos una lista de la compra."
+    },
+    "fr": {
+     "t": "L'invention de l'écriture",
+     "g": "Découvrir comment l'écriture est née à Sumer pour tenir des comptes.",
+     "p": [
+      "Il y a plus de 5 000 ans, à Sumer, les scribes imprimaient des signes dans l'argile humide avec un roseau.",
+      "Les premiers textes étaient surtout des listes : sacs d'orge, moutons, ouvriers et paiements.",
+      "Peu à peu, l'écriture cunéiforme a noté des lois, des lettres, des récits et même des exercices d'écoliers."
+     ],
+     "q": "De quoi aurais-tu le plus de mal à te passer : l'écriture ou les nombres ?",
+     "c": "Invente trois symboles simples pour des objets du quotidien et écris avec eux une petite liste de courses."
+    },
+    "it": {
+     "t": "L'invenzione della scrittura",
+     "g": "Scopri come la scrittura nacque a Sumer per tenere i conti.",
+     "p": [
+      "Oltre 5.000 anni fa, a Sumer, gli scribi imprimevano segni su tavolette di argilla umida con una canna.",
+      "I primi testi erano soprattutto elenchi: sacchi d'orzo, pecore, lavoratori e pagamenti.",
+      "Col tempo la scrittura cuneiforme registrò leggi, lettere, racconti e perfino esercizi scolastici."
+     ],
+     "q": "Di che cosa faresti più fatica a fare a meno: della scrittura o dei numeri?",
+     "c": "Inventa tre simboli semplici per cose che usi ogni giorno e scrivi con essi una breve lista della spesa."
+    },
+    "pt": {
+     "t": "A invenção da escrita",
+     "g": "Descobrir como a escrita nasceu na Suméria como forma de fazer registos.",
+     "p": [
+      "Há mais de 5000 anos, na Suméria, os escribas marcavam tabuinhas de argila húmida com uma cana.",
+      "Os primeiros textos eram sobretudo listas: sacos de cevada, ovelhas, trabalhadores e pagamentos.",
+      "Com o tempo, a escrita cuneiforme passou a registar leis, cartas, histórias e até exercícios escolares."
+     ],
+     "q": "Sem o que te custaria mais viver: sem a escrita ou sem os números?",
+     "c": "Inventa três símbolos simples para coisas que usas todos os dias e escreve com eles uma lista de compras."
+    },
+    "pt_BR": {
+     "t": "A invenção da escrita",
+     "g": "Descobrir como a escrita nasceu na Suméria como forma de fazer registros.",
+     "p": [
+      "Há mais de 5 mil anos, na Suméria, os escribas marcavam tabuletas de argila úmida com um junco.",
+      "Os primeiros textos eram principalmente listas: sacos de cevada, ovelhas, trabalhadores e pagamentos.",
+      "Com o tempo, a escrita cuneiforme passou a registrar leis, cartas, histórias e até exercícios escolares."
+     ],
+     "q": "Sem o que seria mais difícil viver: sem a escrita ou sem os números?",
+     "c": "Invente três símbolos simples para coisas que você usa todo dia e escreva com eles uma lista de compras."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The wheel",
+     "g": "Learn how the wheel began in Mesopotamia, first for pottery and then for transport.",
+     "p": [
+      "The potter's wheel came first, about 5,500 years ago, letting potters shape round pots fast.",
+      "Wheels for carts followed a few centuries later, made from solid wooden planks.",
+      "The hard part was the axle: it had to fit just right so the wheel could turn smoothly."
+     ],
+     "q": "Which invention with wheels could you least live without: bike, car, suitcase or something else?",
+     "c": "Count how many wheels you can spot in ten minutes today, from clocks to office chairs."
+    },
+    "de": {
+     "t": "Das Rad",
+     "g": "Erfahre, wie das Rad in Mesopotamien entstand, zuerst zum Töpfern, dann für Wagen.",
+     "p": [
+      "Zuerst kam die Töpferscheibe vor etwa 5.500 Jahren, mit der Töpfer runde Gefäße schnell formten.",
+      "Räder für Wagen folgten einige Jahrhunderte später, aus massiven Holzbrettern gefertigt.",
+      "Das Schwierige war die Achse: Sie musste genau passen, damit sich das Rad gleichmäßig drehte."
+     ],
+     "q": "Auf welche Erfindung mit Rädern könntest du am wenigsten verzichten: Fahrrad, Auto, Koffer oder etwas anderes?",
+     "c": "Zähle heute zehn Minuten lang alle Räder, die du entdeckst, von Uhren bis zu Bürostühlen."
+    },
+    "es": {
+     "t": "La rueda",
+     "g": "Aprende cómo nació la rueda en Mesopotamia, primero para la cerámica y luego para el transporte.",
+     "p": [
+      "Primero llegó el torno de alfarero, hace unos 5.500 años, que permitía hacer vasijas redondas rápido.",
+      "Las ruedas para carros llegaron unos siglos después, hechas con tablones de madera maciza.",
+      "Lo difícil era el eje: tenía que encajar justo para que la rueda girara con suavidad."
+     ],
+     "q": "¿Sin qué invento con ruedas te costaría más vivir: bici, coche, maleta u otro?",
+     "c": "Cuenta cuántas ruedas ves hoy en diez minutos, desde relojes hasta sillas de oficina."
+    },
+    "fr": {
+     "t": "La roue",
+     "g": "Apprendre comment la roue est née en Mésopotamie, d'abord pour la poterie puis pour le transport.",
+     "p": [
+      "Le tour de potier est venu d'abord, il y a environ 5 500 ans, pour façonner vite des pots ronds.",
+      "Les roues de chariot ont suivi quelques siècles plus tard, faites de planches de bois pleines.",
+      "Le plus dur était l'essieu : il devait être parfaitement ajusté pour que la roue tourne bien."
+     ],
+     "q": "De quelle invention à roues aurais-tu le plus de mal à te passer : vélo, voiture, valise ou autre ?",
+     "c": "Compte combien de roues tu repères en dix minutes aujourd'hui, des horloges aux chaises de bureau."
+    },
+    "it": {
+     "t": "La ruota",
+     "g": "Scopri come nacque la ruota in Mesopotamia, prima per la ceramica e poi per il trasporto.",
+     "p": [
+      "Prima arrivò il tornio del vasaio, circa 5.500 anni fa, per modellare velocemente vasi rotondi.",
+      "Le ruote per i carri seguirono qualche secolo dopo, fatte di assi di legno pieno.",
+      "La parte difficile era l'asse: doveva combaciare alla perfezione perché la ruota girasse bene."
+     ],
+     "q": "Di quale invenzione con le ruote faresti più fatica a fare a meno: bici, auto, valigia o altro?",
+     "c": "Conta quante ruote vedi oggi in dieci minuti, dagli orologi alle sedie da ufficio."
+    },
+    "pt": {
+     "t": "A roda",
+     "g": "Aprender como a roda nasceu na Mesopotâmia, primeiro para a olaria e depois para o transporte.",
+     "p": [
+      "Primeiro veio a roda de oleiro, há cerca de 5500 anos, que permitia moldar potes redondos depressa.",
+      "As rodas para carros chegaram uns séculos depois, feitas de tábuas de madeira maciça.",
+      "O difícil era o eixo: tinha de encaixar na perfeição para a roda girar suavemente."
+     ],
+     "q": "Sem que invenção com rodas te custaria mais viver: bicicleta, carro, mala ou outra?",
+     "c": "Conta quantas rodas vês hoje em dez minutos, desde relógios a cadeiras de escritório."
+    },
+    "pt_BR": {
+     "t": "A roda",
+     "g": "Aprender como a roda nasceu na Mesopotâmia, primeiro para a cerâmica e depois para o transporte.",
+     "p": [
+      "Primeiro veio o torno de oleiro, há cerca de 5.500 anos, que permitia moldar potes redondos rápido.",
+      "As rodas para carroças vieram alguns séculos depois, feitas de tábuas de madeira maciça.",
+      "A parte difícil era o eixo: precisava encaixar na medida certa para a roda girar suavemente."
+     ],
+     "q": "Sem qual invenção com rodas seria mais difícil viver: bicicleta, carro, mala ou outra?",
+     "c": "Conte quantas rodas você vê hoje em dez minutos, de relógios a cadeiras de escritório."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hammurabi's Code",
+     "g": "Discover one of the earliest written collections of laws, from ancient Babylon.",
+     "p": [
+      "King Hammurabi of Babylon had about 280 laws carved on a tall stone pillar around 3,750 years ago.",
+      "The laws covered everyday matters: trade, wages, rent, farming, family and fixing damaged property.",
+      "Writing laws down meant people could, in theory, know the rules in advance; the stone is now in the Louvre."
+     ],
+     "q": "If you could write one rule for everyone in your town, what would it be?",
+     "c": "Write three fair rules for a shared kitchen, clear enough that anyone could follow them."
+    },
+    "de": {
+     "t": "Der Codex Hammurapi",
+     "g": "Entdecke eine der ältesten schriftlichen Gesetzessammlungen, aus dem alten Babylon.",
+     "p": [
+      "König Hammurapi von Babylon ließ vor etwa 3.750 Jahren rund 280 Gesetze in eine hohe Steinstele meißeln.",
+      "Die Gesetze regelten Alltägliches: Handel, Löhne, Miete, Landwirtschaft, Familie und Schadenersatz.",
+      "Aufgeschriebene Gesetze machten die Regeln im Voraus bekannt; die Stele steht heute im Louvre."
+     ],
+     "q": "Wenn du eine Regel für alle in deiner Stadt schreiben dürftest, welche wäre es?",
+     "c": "Schreib drei faire Regeln für eine Gemeinschaftsküche, so klar, dass jeder sie befolgen kann."
+    },
+    "es": {
+     "t": "El Código de Hammurabi",
+     "g": "Descubre una de las primeras colecciones de leyes escritas, de la antigua Babilonia.",
+     "p": [
+      "El rey Hammurabi de Babilonia hizo grabar unas 280 leyes en una alta estela de piedra hace unos 3.750 años.",
+      "Las leyes trataban asuntos cotidianos: comercio, salarios, alquileres, agricultura, familia y daños.",
+      "Escribir las leyes permitía conocer las normas de antemano; la estela está hoy en el Louvre."
+     ],
+     "q": "Si pudieras escribir una norma para todos en tu ciudad, ¿cuál sería?",
+     "c": "Escribe tres normas justas para una cocina compartida, tan claras que cualquiera pueda seguirlas."
+    },
+    "fr": {
+     "t": "Le Code de Hammurabi",
+     "g": "Découvrir l'un des plus anciens recueils de lois écrites, venu de l'ancienne Babylone.",
+     "p": [
+      "Le roi Hammurabi de Babylone fit graver environ 280 lois sur une haute stèle de pierre il y a près de 3 750 ans.",
+      "Les lois touchaient la vie courante : commerce, salaires, loyers, agriculture, famille et réparation des dégâts.",
+      "Écrire les lois permettait de connaître les règles à l'avance ; la stèle est aujourd'hui au Louvre."
+     ],
+     "q": "Si tu pouvais écrire une règle pour tous les habitants de ta ville, laquelle serait-ce ?",
+     "c": "Écris trois règles justes pour une cuisine partagée, assez claires pour que chacun puisse les suivre."
+    },
+    "it": {
+     "t": "Il Codice di Hammurabi",
+     "g": "Scopri una delle prime raccolte di leggi scritte, dall'antica Babilonia.",
+     "p": [
+      "Il re Hammurabi di Babilonia fece incidere circa 280 leggi su un'alta stele di pietra circa 3.750 anni fa.",
+      "Le leggi riguardavano la vita quotidiana: commercio, salari, affitti, agricoltura, famiglia e danni.",
+      "Scrivere le leggi permetteva di conoscere le regole in anticipo; oggi la stele è al Louvre."
+     ],
+     "q": "Se potessi scrivere una regola per tutti nella tua città, quale sarebbe?",
+     "c": "Scrivi tre regole giuste per una cucina condivisa, così chiare che chiunque possa seguirle."
+    },
+    "pt": {
+     "t": "O Código de Hamurabi",
+     "g": "Descobrir uma das primeiras coleções de leis escritas, da antiga Babilónia.",
+     "p": [
+      "O rei Hamurabi da Babilónia mandou gravar cerca de 280 leis numa alta estela de pedra há uns 3750 anos.",
+      "As leis tratavam do dia a dia: comércio, salários, rendas, agricultura, família e danos.",
+      "Escrever as leis permitia conhecer as regras com antecedência; a estela está hoje no Louvre."
+     ],
+     "q": "Se pudesses escrever uma regra para toda a gente na tua cidade, qual seria?",
+     "c": "Escreve três regras justas para uma cozinha partilhada, tão claras que qualquer pessoa as possa seguir."
+    },
+    "pt_BR": {
+     "t": "O Código de Hamurabi",
+     "g": "Descobrir uma das primeiras coleções de leis escritas, da antiga Babilônia.",
+     "p": [
+      "O rei Hamurabi da Babilônia mandou gravar cerca de 280 leis numa alta estela de pedra há uns 3.750 anos.",
+      "As leis tratavam do dia a dia: comércio, salários, aluguéis, agricultura, família e danos.",
+      "Escrever as leis permitia conhecer as regras de antemão; a estela está hoje no Louvre."
+     ],
+     "q": "Se você pudesse escrever uma regra para todo mundo na sua cidade, qual seria?",
+     "c": "Escreva três regras justas para uma cozinha compartilhada, tão claras que qualquer pessoa consiga seguir."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Egypt and the Nile",
+     "g": "See how the Nile's yearly flood made farming and a great civilisation possible.",
+     "p": [
+      "Every summer the Nile flooded, leaving rich black mud on its banks, perfect for wheat and barley.",
+      "Egyptians called their land Kemet, the black land, after this fertile soil, surrounded by desert.",
+      "The river was also a highway: boats carried grain, stone and people along its length."
+     ],
+     "q": "Would you rather live by a great river, by the sea or in the mountains?",
+     "c": "Find the Nile on a map and notice that it flows north, from Africa's interior to the Mediterranean."
+    },
+    "de": {
+     "t": "Das alte Ägypten und der Nil",
+     "g": "Sieh, wie die jährliche Nilflut Landwirtschaft und eine große Zivilisation möglich machte.",
+     "p": [
+      "Jeden Sommer trat der Nil über die Ufer und hinterließ fruchtbaren schwarzen Schlamm, ideal für Weizen und Gerste.",
+      "Die Ägypter nannten ihr Land Kemet, das schwarze Land, nach diesem Boden inmitten der Wüste.",
+      "Der Fluss war auch eine Straße: Boote transportierten Getreide, Steine und Menschen."
+     ],
+     "q": "Würdest du lieber an einem großen Fluss, am Meer oder in den Bergen leben?",
+     "c": "Such den Nil auf einer Karte: Er fließt nach Norden, aus dem Inneren Afrikas zum Mittelmeer."
+    },
+    "es": {
+     "t": "El antiguo Egipto y el Nilo",
+     "g": "Descubre cómo la crecida anual del Nilo hizo posible la agricultura y una gran civilización.",
+     "p": [
+      "Cada verano el Nilo se desbordaba y dejaba un limo negro y fértil, perfecto para el trigo y la cebada.",
+      "Los egipcios llamaban a su tierra Kemet, la tierra negra, por ese suelo fértil rodeado de desierto.",
+      "El río también era una autopista: los barcos llevaban grano, piedra y personas."
+     ],
+     "q": "¿Preferirías vivir junto a un gran río, junto al mar o en la montaña?",
+     "c": "Busca el Nilo en un mapa y fíjate en que fluye hacia el norte, del interior de África al Mediterráneo."
+    },
+    "fr": {
+     "t": "L'Égypte ancienne et le Nil",
+     "g": "Voir comment la crue annuelle du Nil a rendu possibles l'agriculture et une grande civilisation.",
+     "p": [
+      "Chaque été, le Nil débordait et laissait un limon noir et fertile, idéal pour le blé et l'orge.",
+      "Les Égyptiens appelaient leur pays Kemet, la terre noire, d'après ce sol fertile entouré de désert.",
+      "Le fleuve était aussi une route : les bateaux transportaient grain, pierres et voyageurs."
+     ],
+     "q": "Préférerais-tu vivre près d'un grand fleuve, au bord de la mer ou à la montagne ?",
+     "c": "Trouve le Nil sur une carte : il coule vers le nord, du cœur de l'Afrique à la Méditerranée."
+    },
+    "it": {
+     "t": "L'antico Egitto e il Nilo",
+     "g": "Scopri come la piena annuale del Nilo rese possibili l'agricoltura e una grande civiltà.",
+     "p": [
+      "Ogni estate il Nilo straripava lasciando un limo nero e fertile, perfetto per grano e orzo.",
+      "Gli Egizi chiamavano la loro terra Kemet, la terra nera, per quel suolo fertile circondato dal deserto.",
+      "Il fiume era anche un'autostrada: le barche trasportavano grano, pietre e persone."
+     ],
+     "q": "Preferiresti vivere vicino a un grande fiume, al mare o in montagna?",
+     "c": "Trova il Nilo su una mappa e nota che scorre verso nord, dall'interno dell'Africa al Mediterraneo."
+    },
+    "pt": {
+     "t": "O antigo Egito e o Nilo",
+     "g": "Ver como a cheia anual do Nilo tornou possíveis a agricultura e uma grande civilização.",
+     "p": [
+      "Todos os verões o Nilo transbordava e deixava um lodo negro e fértil, perfeito para o trigo e a cevada.",
+      "Os egípcios chamavam à sua terra Kemet, a terra negra, por causa desse solo fértil rodeado de deserto.",
+      "O rio era também uma estrada: os barcos transportavam cereais, pedra e pessoas."
+     ],
+     "q": "Preferias viver junto a um grande rio, junto ao mar ou nas montanhas?",
+     "c": "Procura o Nilo num mapa e repara que corre para norte, do interior de África até ao Mediterrâneo."
+    },
+    "pt_BR": {
+     "t": "O antigo Egito e o Nilo",
+     "g": "Ver como a cheia anual do Nilo tornou possíveis a agricultura e uma grande civilização.",
+     "p": [
+      "Todo verão o Nilo transbordava e deixava um lodo preto e fértil, perfeito para trigo e cevada.",
+      "Os egípcios chamavam sua terra de Kemet, a terra negra, por causa desse solo fértil cercado de deserto.",
+      "O rio também era uma estrada: barcos transportavam grãos, pedras e pessoas."
+     ],
+     "q": "Você preferiria morar perto de um grande rio, do mar ou nas montanhas?",
+     "c": "Procure o Nilo num mapa e repare que ele corre para o norte, do interior da África até o Mediterrâneo."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pyramids",
+     "g": "Find out how and why the pyramids were built, and who the skilled builders really were.",
+     "p": [
+      "The Great Pyramid of Giza was built for King Khufu about 4,500 years ago, with over 2 million stone blocks.",
+      "Evidence from workers' villages shows paid, organised crews of skilled builders, not enslaved masses.",
+      "Workers ate bread, beer, onions and fish, and teams even left names like Friends of Khufu on stones."
+     ],
+     "q": "What question would you ask one of the pyramid builders if you could meet them?",
+     "c": "Estimate how long it would take to place 2 million blocks if your team placed one every two minutes."
+    },
+    "de": {
+     "t": "Die Pyramiden",
+     "g": "Erfahre, wie und warum die Pyramiden gebaut wurden und wer die Bauleute wirklich waren.",
+     "p": [
+      "Die Cheops-Pyramide von Gizeh entstand vor etwa 4.500 Jahren für König Cheops, aus über 2 Millionen Steinblöcken.",
+      "Funde aus Arbeiterdörfern zeigen bezahlte, gut organisierte Teams von Fachleuten, keine Sklavenmassen.",
+      "Die Arbeiter aßen Brot, Zwiebeln und Fisch, tranken Bier und hinterließen Teamnamen wie Freunde des Cheops."
+     ],
+     "q": "Welche Frage würdest du einem der Pyramidenbauer stellen, wenn du ihn treffen könntest?",
+     "c": "Schätze, wie lange 2 Millionen Blöcke dauern würden, wenn dein Team alle zwei Minuten einen setzt."
+    },
+    "es": {
+     "t": "Las pirámides",
+     "g": "Descubre cómo y por qué se construyeron las pirámides y quiénes eran de verdad sus constructores.",
+     "p": [
+      "La Gran Pirámide de Guiza se levantó para el rey Keops hace unos 4.500 años, con más de 2 millones de bloques.",
+      "Los poblados de obreros muestran equipos pagados y organizados de constructores expertos, no masas de esclavos.",
+      "Comían pan, cebollas y pescado, bebían cerveza, y algunos equipos dejaron nombres como Amigos de Keops."
+     ],
+     "q": "¿Qué le preguntarías a uno de los constructores de las pirámides si pudieras conocerlo?",
+     "c": "Calcula cuánto tardaría tu equipo en colocar 2 millones de bloques poniendo uno cada dos minutos."
+    },
+    "fr": {
+     "t": "Les pyramides",
+     "g": "Découvrir comment et pourquoi les pyramides ont été bâties, et qui étaient vraiment leurs bâtisseurs.",
+     "p": [
+      "La grande pyramide de Gizeh a été bâtie pour le roi Khéops il y a environ 4 500 ans, avec plus de 2 millions de blocs.",
+      "Les villages d'ouvriers révèlent des équipes payées et organisées d'artisans qualifiés, pas des foules d'esclaves.",
+      "Ils mangeaient pain, oignons et poisson, buvaient de la bière, et des équipes ont signé Amis de Khéops."
+     ],
+     "q": "Quelle question poserais-tu à l'un des bâtisseurs des pyramides si tu pouvais le rencontrer ?",
+     "c": "Estime combien de temps il faudrait pour poser 2 millions de blocs à raison d'un toutes les deux minutes."
+    },
+    "it": {
+     "t": "Le piramidi",
+     "g": "Scopri come e perché furono costruite le piramidi e chi erano davvero i loro costruttori.",
+     "p": [
+      "La Grande Piramide di Giza fu costruita per il re Cheope circa 4.500 anni fa, con oltre 2 milioni di blocchi.",
+      "I villaggi degli operai mostrano squadre pagate e organizzate di costruttori esperti, non masse di schiavi.",
+      "Mangiavano pane, cipolle e pesce, bevevano birra, e alcune squadre lasciarono nomi come Amici di Cheope."
+     ],
+     "q": "Che domanda faresti a uno dei costruttori delle piramidi se potessi incontrarlo?",
+     "c": "Stima quanto tempo servirebbe per posare 2 milioni di blocchi mettendone uno ogni due minuti."
+    },
+    "pt": {
+     "t": "As pirâmides",
+     "g": "Descobrir como e porque se construíram as pirâmides e quem eram realmente os seus construtores.",
+     "p": [
+      "A Grande Pirâmide de Gizé foi erguida para o rei Quéops há cerca de 4500 anos, com mais de 2 milhões de blocos.",
+      "As aldeias de operários mostram equipas pagas e organizadas de construtores qualificados, não massas de escravos.",
+      "Comiam pão, cebola e peixe, bebiam cerveja, e algumas equipas deixaram nomes como Amigos de Quéops."
+     ],
+     "q": "Que pergunta farias a um dos construtores das pirâmides se o pudesses conhecer?",
+     "c": "Calcula quanto tempo levaria a pôr 2 milhões de blocos se a tua equipa colocasse um a cada dois minutos."
+    },
+    "pt_BR": {
+     "t": "As pirâmides",
+     "g": "Descobrir como e por que as pirâmides foram construídas e quem eram de verdade seus construtores.",
+     "p": [
+      "A Grande Pirâmide de Gizé foi erguida para o rei Quéops há cerca de 4.500 anos, com mais de 2 milhões de blocos.",
+      "As vilas de operários mostram equipes pagas e organizadas de construtores qualificados, não multidões de escravos.",
+      "Comiam pão, cebola e peixe, bebiam cerveja, e algumas equipes deixaram nomes como Amigos de Quéops."
+     ],
+     "q": "Que pergunta você faria a um dos construtores das pirâmides se pudesse conhecê-lo?",
+     "c": "Calcule quanto tempo levaria para colocar 2 milhões de blocos se sua equipe pusesse um a cada dois minutos."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hieroglyphs and the Rosetta Stone",
+     "g": "Learn how one stone with three scripts helped unlock the secret of hieroglyphs.",
+     "p": [
+      "Hieroglyphs mix picture signs for sounds and for ideas; for centuries nobody could read them.",
+      "The Rosetta Stone, found in 1799, has the same decree in hieroglyphs, demotic script and ancient Greek.",
+      "By comparing the Greek with royal names in the other scripts, Champollion decoded hieroglyphs in 1822."
+     ],
+     "q": "Which ancient script or language would you most like to be able to read?",
+     "c": "Write your name using simple pictures for its sounds, like a modern mini hieroglyph puzzle."
+    },
+    "de": {
+     "t": "Hieroglyphen und der Stein von Rosette",
+     "g": "Erfahre, wie ein Stein mit drei Schriften half, das Geheimnis der Hieroglyphen zu lüften.",
+     "p": [
+      "Hieroglyphen mischen Bildzeichen für Laute und für Begriffe; jahrhundertelang konnte sie niemand lesen.",
+      "Der 1799 gefundene Stein von Rosette trägt denselben Erlass in Hieroglyphen, Demotisch und Altgriechisch.",
+      "Durch den Vergleich des Griechischen mit Königsnamen entzifferte Champollion 1822 die Hieroglyphen."
+     ],
+     "q": "Welche alte Schrift oder Sprache würdest du am liebsten lesen können?",
+     "c": "Schreib deinen Namen mit einfachen Bildern für seine Laute, wie ein modernes Hieroglyphen-Rätsel."
+    },
+    "es": {
+     "t": "Los jeroglíficos y la piedra Rosetta",
+     "g": "Aprende cómo una piedra con tres escrituras ayudó a descifrar el secreto de los jeroglíficos.",
+     "p": [
+      "Los jeroglíficos mezclan signos dibujados para sonidos y para ideas; durante siglos nadie supo leerlos.",
+      "La piedra Rosetta, hallada en 1799, tiene el mismo decreto en jeroglíficos, demótico y griego antiguo.",
+      "Comparando el griego con los nombres reales de las otras escrituras, Champollion los descifró en 1822."
+     ],
+     "q": "¿Qué escritura o lengua antigua te gustaría poder leer?",
+     "c": "Escribe tu nombre con dibujos sencillos para sus sonidos, como un pequeño jeroglífico moderno."
+    },
+    "fr": {
+     "t": "Hiéroglyphes et pierre de Rosette",
+     "g": "Apprendre comment une pierre gravée de trois écritures a permis de percer le secret des hiéroglyphes.",
+     "p": [
+      "Les hiéroglyphes mêlent des signes-images pour des sons et pour des idées ; pendant des siècles, personne ne sut les lire.",
+      "La pierre de Rosette, découverte en 1799, porte le même décret en hiéroglyphes, en démotique et en grec ancien.",
+      "En comparant le grec aux noms royaux des autres écritures, Champollion a déchiffré les hiéroglyphes en 1822."
+     ],
+     "q": "Quelle écriture ou langue ancienne aimerais-tu savoir lire ?",
+     "c": "Écris ton prénom avec de petits dessins pour ses sons, comme un rébus de hiéroglyphes moderne."
+    },
+    "it": {
+     "t": "Geroglifici e Stele di Rosetta",
+     "g": "Scopri come una pietra con tre scritture aiutò a svelare il segreto dei geroglifici.",
+     "p": [
+      "I geroglifici uniscono segni-immagine per suoni e per idee; per secoli nessuno riuscì a leggerli.",
+      "La Stele di Rosetta, trovata nel 1799, riporta lo stesso decreto in geroglifico, demotico e greco antico.",
+      "Confrontando il greco con i nomi dei re nelle altre scritture, Champollion decifrò i geroglifici nel 1822."
+     ],
+     "q": "Quale scrittura o lingua antica ti piacerebbe saper leggere?",
+     "c": "Scrivi il tuo nome con semplici disegni per i suoi suoni, come un piccolo rebus di geroglifici moderni."
+    },
+    "pt": {
+     "t": "Hieróglifos e a Pedra de Roseta",
+     "g": "Aprender como uma pedra com três escritas ajudou a desvendar o segredo dos hieróglifos.",
+     "p": [
+      "Os hieróglifos misturam sinais-desenho para sons e para ideias; durante séculos ninguém os conseguiu ler.",
+      "A Pedra de Roseta, encontrada em 1799, tem o mesmo decreto em hieróglifos, em demótico e em grego antigo.",
+      "Comparando o grego com os nomes reais nas outras escritas, Champollion decifrou os hieróglifos em 1822."
+     ],
+     "q": "Que escrita ou língua antiga gostarias mais de saber ler?",
+     "c": "Escreve o teu nome com desenhos simples para os seus sons, como um pequeno enigma de hieróglifos moderno."
+    },
+    "pt_BR": {
+     "t": "Hieróglifos e a Pedra de Roseta",
+     "g": "Aprender como uma pedra com três escritas ajudou a desvendar o segredo dos hieróglifos.",
+     "p": [
+      "Os hieróglifos misturam sinais-desenho para sons e para ideias; durante séculos ninguém conseguiu lê-los.",
+      "A Pedra de Roseta, encontrada em 1799, tem o mesmo decreto em hieróglifos, em demótico e em grego antigo.",
+      "Comparando o grego com os nomes reais nas outras escritas, Champollion decifrou os hieróglifos em 1822."
+     ],
+     "q": "Qual escrita ou língua antiga você mais gostaria de saber ler?",
+     "c": "Escreva seu nome com desenhos simples para os sons dele, como um pequeno enigma de hieróglifos moderno."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daily life in ancient Egypt",
+     "g": "Step into an ordinary Egyptian home along the Nile and see how people lived.",
+     "p": [
+      "Bread and beer were the daily basics, with onions, lentils, fish, dates and figs.",
+      "People played board games like senet, kept cats and dogs as pets and loved music and dancing.",
+      "Women could own property, run businesses and go to court, which was unusual in the ancient world."
+     ],
+     "q": "Which part of everyday Egyptian life would you most enjoy: the food, the games or the music?",
+     "c": "Look up the rules of senet and try a simple version with paper squares and coins."
+    },
+    "de": {
+     "t": "Alltag im alten Ägypten",
+     "g": "Tritt in ein gewöhnliches ägyptisches Haus am Nil und sieh, wie die Menschen lebten.",
+     "p": [
+      "Brot und Bier waren Grundnahrung, dazu Zwiebeln, Linsen, Fisch, Datteln und Feigen.",
+      "Man spielte Brettspiele wie Senet, hielt Katzen und Hunde als Haustiere und liebte Musik und Tanz.",
+      "Frauen konnten Besitz haben, Geschäfte führen und vor Gericht gehen, was in der Antike ungewöhnlich war."
+     ],
+     "q": "Was am ägyptischen Alltag würde dir am meisten gefallen: das Essen, die Spiele oder die Musik?",
+     "c": "Such die Regeln von Senet und probiere eine einfache Version mit Papierfeldern und Münzen."
+    },
+    "es": {
+     "t": "La vida diaria en el antiguo Egipto",
+     "g": "Entra en una casa egipcia corriente junto al Nilo y descubre cómo vivía la gente.",
+     "p": [
+      "El pan y la cerveza eran lo básico de cada día, con cebollas, lentejas, pescado, dátiles e higos.",
+      "Jugaban a juegos de mesa como el senet, tenían gatos y perros y les encantaban la música y el baile.",
+      "Las mujeres podían tener bienes, llevar negocios e ir a juicio, algo poco común en la Antigüedad."
+     ],
+     "q": "¿Qué parte de la vida egipcia disfrutarías más: la comida, los juegos o la música?",
+     "c": "Busca las reglas del senet y prueba una versión sencilla con casillas de papel y monedas."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Égypte ancienne",
+     "g": "Entrer dans une maison égyptienne ordinaire au bord du Nil et voir comment on y vivait.",
+     "p": [
+      "Le pain et la bière formaient la base, avec oignons, lentilles, poisson, dattes et figues.",
+      "On jouait à des jeux de plateau comme le senet, on avait chats et chiens, et on adorait musique et danse.",
+      "Les femmes pouvaient posséder des biens, tenir un commerce et aller en justice, chose rare dans l'Antiquité."
+     ],
+     "q": "Qu'est-ce qui te plairait le plus dans la vie égyptienne : la cuisine, les jeux ou la musique ?",
+     "c": "Cherche les règles du senet et essaie une version simple avec des cases en papier et des pièces."
+    },
+    "it": {
+     "t": "La vita quotidiana nell'antico Egitto",
+     "g": "Entra in una normale casa egizia lungo il Nilo e scopri come viveva la gente.",
+     "p": [
+      "Pane e birra erano la base quotidiana, con cipolle, lenticchie, pesce, datteri e fichi.",
+      "Si giocava a giochi da tavolo come il senet, si tenevano gatti e cani e si amavano musica e danza.",
+      "Le donne potevano possedere beni, gestire attività e andare in tribunale, cosa rara nel mondo antico."
+     ],
+     "q": "Quale aspetto della vita egizia ti piacerebbe di più: il cibo, i giochi o la musica?",
+     "c": "Cerca le regole del senet e prova una versione semplice con caselle di carta e monete."
+    },
+    "pt": {
+     "t": "O dia a dia no antigo Egito",
+     "g": "Entrar numa casa egípcia comum junto ao Nilo e ver como as pessoas viviam.",
+     "p": [
+      "O pão e a cerveja eram a base diária, com cebola, lentilhas, peixe, tâmaras e figos.",
+      "Jogavam jogos de tabuleiro como o senet, tinham gatos e cães e adoravam música e dança.",
+      "As mulheres podiam ter bens, gerir negócios e ir a tribunal, algo raro no mundo antigo."
+     ],
+     "q": "Que parte do dia a dia egípcio te agradaria mais: a comida, os jogos ou a música?",
+     "c": "Procura as regras do senet e experimenta uma versão simples com casas de papel e moedas."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no antigo Egito",
+     "g": "Entrar numa casa egípcia comum perto do Nilo e ver como as pessoas viviam.",
+     "p": [
+      "Pão e cerveja eram a base diária, com cebola, lentilha, peixe, tâmaras e figos.",
+      "Jogavam jogos de tabuleiro como o senet, tinham gatos e cachorros e adoravam música e dança.",
+      "As mulheres podiam ter bens, tocar negócios e ir aos tribunais, algo raro no mundo antigo."
+     ],
+     "q": "Qual parte do dia a dia egípcio você mais curtiria: a comida, os jogos ou a música?",
+     "c": "Procure as regras do senet e teste uma versão simples com casas de papel e moedas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Indus Valley",
+     "g": "Visit Harappa and Mohenjo-daro, carefully planned cities with drains and public baths.",
+     "p": [
+      "The Indus civilisation flourished about 4,500 years ago in what is now Pakistan and northwest India.",
+      "Its cities had straight streets in a grid, standard-sized bricks and covered drains along the roads.",
+      "Mohenjo-daro's Great Bath is a large waterproof pool; the Indus script is still not deciphered."
+     ],
+     "q": "What do you think a city's drains say about how well it was planned?",
+     "c": "Look at a map of your town and check whether its streets follow a grid or grew more freely."
+    },
+    "de": {
+     "t": "Das Industal",
+     "g": "Besuche Harappa und Mohenjo-daro, sorgfältig geplante Städte mit Abwasserkanälen und Bädern.",
+     "p": [
+      "Die Induskultur blühte vor etwa 4.500 Jahren im heutigen Pakistan und Nordwesten Indiens.",
+      "Ihre Städte hatten gerade Straßen im Raster, genormte Ziegel und abgedeckte Kanäle entlang der Wege.",
+      "Das Große Bad von Mohenjo-daro ist ein großes wasserdichtes Becken; die Indusschrift ist noch nicht entziffert."
+     ],
+     "q": "Was verraten die Abwasserkanäle einer Stadt deiner Meinung nach über ihre Planung?",
+     "c": "Schau dir einen Plan deiner Stadt an: Folgen die Straßen einem Raster oder wuchsen sie frei?"
+    },
+    "es": {
+     "t": "El valle del Indo",
+     "g": "Visita Harappa y Mohenjo-daro, ciudades bien planificadas con desagües y baños públicos.",
+     "p": [
+      "La civilización del Indo floreció hace unos 4.500 años en el actual Pakistán y el noroeste de la India.",
+      "Sus ciudades tenían calles rectas en cuadrícula, ladrillos de tamaño estándar y desagües cubiertos.",
+      "El Gran Baño de Mohenjo-daro es una gran piscina impermeable; la escritura del Indo sigue sin descifrarse."
+     ],
+     "q": "¿Qué crees que dicen los desagües de una ciudad sobre lo bien planificada que está?",
+     "c": "Mira un mapa de tu ciudad y comprueba si sus calles siguen una cuadrícula o crecieron libremente."
+    },
+    "fr": {
+     "t": "La vallée de l'Indus",
+     "g": "Visiter Harappa et Mohenjo-daro, des villes planifiées avec égouts et bains publics.",
+     "p": [
+      "La civilisation de l'Indus a prospéré il y a environ 4 500 ans, dans l'actuel Pakistan et le nord-ouest de l'Inde.",
+      "Ses villes avaient des rues droites en damier, des briques de taille standard et des égouts couverts.",
+      "Le Grand Bain de Mohenjo-daro est un vaste bassin étanche ; l'écriture de l'Indus n'est toujours pas déchiffrée."
+     ],
+     "q": "Selon toi, que disent les égouts d'une ville sur la qualité de son organisation ?",
+     "c": "Regarde un plan de ta ville : ses rues suivent-elles un damier ou ont-elles poussé librement ?"
+    },
+    "it": {
+     "t": "La valle dell'Indo",
+     "g": "Visita Harappa e Mohenjo-daro, città ben pianificate con fognature e bagni pubblici.",
+     "p": [
+      "La civiltà dell'Indo fiorì circa 4.500 anni fa nell'attuale Pakistan e nel nord-ovest dell'India.",
+      "Le sue città avevano strade dritte a griglia, mattoni di misura standard e canali di scolo coperti.",
+      "Il Grande Bagno di Mohenjo-daro è una grande vasca impermeabile; la scrittura dell'Indo non è ancora decifrata."
+     ],
+     "q": "Secondo te che cosa dicono le fognature di una città su quanto è stata ben pianificata?",
+     "c": "Guarda una mappa della tua città e verifica se le strade seguono una griglia o sono cresciute liberamente."
+    },
+    "pt": {
+     "t": "O vale do Indo",
+     "g": "Visitar Harappa e Mohenjo-daro, cidades bem planeadas com esgotos e banhos públicos.",
+     "p": [
+      "A civilização do Indo floresceu há cerca de 4500 anos no atual Paquistão e no noroeste da Índia.",
+      "As cidades tinham ruas direitas em quadrícula, tijolos de tamanho padrão e esgotos cobertos.",
+      "O Grande Banho de Mohenjo-daro é uma grande piscina impermeável; a escrita do Indo continua por decifrar."
+     ],
+     "q": "O que achas que os esgotos de uma cidade dizem sobre o seu planeamento?",
+     "c": "Olha para um mapa da tua cidade e vê se as ruas seguem uma quadrícula ou cresceram livremente."
+    },
+    "pt_BR": {
+     "t": "O vale do Indo",
+     "g": "Visitar Harappa e Mohenjo-daro, cidades bem planejadas com esgotos e banhos públicos.",
+     "p": [
+      "A civilização do Indo floresceu há cerca de 4.500 anos no atual Paquistão e no noroeste da Índia.",
+      "As cidades tinham ruas retas em grade, tijolos de tamanho padrão e esgotos cobertos.",
+      "O Grande Banho de Mohenjo-daro é uma grande piscina impermeável; a escrita do Indo ainda não foi decifrada."
+     ],
+     "q": "O que você acha que os esgotos de uma cidade dizem sobre o planejamento dela?",
+     "c": "Olhe um mapa da sua cidade e veja se as ruas seguem uma grade ou cresceram livremente."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the first civilisations",
+     "g": "Look back at days 1-29 and pick the early invention you find most important.",
+     "p": [
+      "We learned how historians use sources, archaeology and dating to study the past.",
+      "Early humans mastered fire, tools and art, then farming, animals and the first villages.",
+      "Mesopotamia, Egypt and the Indus gave us cities, writing, the wheel and written laws."
+     ],
+     "q": "Of fire, farming, writing and the wheel, which do you think changed life the most, and why?",
+     "c": "Explain to a friend in two sentences how the Rosetta Stone helped read hieroglyphs."
+    },
+    "de": {
+     "t": "Rückblick: die ersten Hochkulturen",
+     "g": "Blick zurück auf die Tage 1 bis 29 und wähle die frühe Erfindung, die dir am wichtigsten scheint.",
+     "p": [
+      "Wir haben gelernt, wie Historiker Quellen, Archäologie und Datierung nutzen.",
+      "Frühe Menschen beherrschten Feuer, Werkzeuge und Kunst, dann Ackerbau, Haustiere und erste Dörfer.",
+      "Mesopotamien, Ägypten und das Industal brachten Städte, Schrift, das Rad und geschriebene Gesetze."
+     ],
+     "q": "Feuer, Ackerbau, Schrift oder Rad: Was hat das Leben am stärksten verändert, und warum?",
+     "c": "Erkläre einem Freund in zwei Sätzen, wie der Stein von Rosette beim Lesen der Hieroglyphen half."
+    },
+    "es": {
+     "t": "Repaso: las primeras civilizaciones",
+     "g": "Repasa los días 1 a 29 y elige el invento antiguo que te parece más importante.",
+     "p": [
+      "Vimos cómo los historiadores usan fuentes, arqueología y métodos de datación.",
+      "Los primeros humanos dominaron el fuego, las herramientas y el arte, y luego la agricultura y las aldeas.",
+      "Mesopotamia, Egipto y el Indo nos dieron ciudades, escritura, la rueda y leyes escritas."
+     ],
+     "q": "Entre el fuego, la agricultura, la escritura y la rueda, ¿cuál cambió más la vida y por qué?",
+     "c": "Explícale a un amigo en dos frases cómo la piedra Rosetta ayudó a leer los jeroglíficos."
+    },
+    "fr": {
+     "t": "Bilan : les premières civilisations",
+     "g": "Revoir les jours 1 à 29 et choisir l'invention ancienne qui te semble la plus importante.",
+     "p": [
+      "Nous avons vu comment les historiens utilisent les sources, l'archéologie et la datation.",
+      "Les premiers humains ont maîtrisé le feu, les outils et l'art, puis l'agriculture et les premiers villages.",
+      "La Mésopotamie, l'Égypte et l'Indus nous ont légué villes, écriture, roue et lois écrites."
+     ],
+     "q": "Entre le feu, l'agriculture, l'écriture et la roue, lequel a le plus changé la vie, et pourquoi ?",
+     "c": "Explique à un ami en deux phrases comment la pierre de Rosette a aidé à lire les hiéroglyphes."
+    },
+    "it": {
+     "t": "Ripasso: le prime civiltà",
+     "g": "Ripassa i giorni da 1 a 29 e scegli l'invenzione antica che ti sembra più importante.",
+     "p": [
+      "Abbiamo visto come gli storici usano fonti, archeologia e metodi di datazione.",
+      "I primi umani impararono a usare fuoco, strumenti e arte, poi agricoltura, animali e primi villaggi.",
+      "Mesopotamia, Egitto e valle dell'Indo ci hanno dato città, scrittura, ruota e leggi scritte."
+     ],
+     "q": "Tra fuoco, agricoltura, scrittura e ruota, quale ha cambiato di più la vita, e perché?",
+     "c": "Spiega a un amico in due frasi come la Stele di Rosetta aiutò a leggere i geroglifici."
+    },
+    "pt": {
+     "t": "Revisão: as primeiras civilizações",
+     "g": "Rever os dias 1 a 29 e escolher a invenção antiga que te parece mais importante.",
+     "p": [
+      "Vimos como os historiadores usam fontes, arqueologia e métodos de datação.",
+      "Os primeiros humanos dominaram o fogo, as ferramentas e a arte, e depois a agricultura e as aldeias.",
+      "A Mesopotâmia, o Egito e o Indo deram-nos cidades, escrita, a roda e leis escritas."
+     ],
+     "q": "Entre o fogo, a agricultura, a escrita e a roda, qual mudou mais a vida, e porquê?",
+     "c": "Explica a um amigo em duas frases como a Pedra de Roseta ajudou a ler os hieróglifos."
+    },
+    "pt_BR": {
+     "t": "Revisão: as primeiras civilizações",
+     "g": "Revisar os dias 1 a 29 e escolher a invenção antiga que você acha mais importante.",
+     "p": [
+      "Vimos como os historiadores usam fontes, arqueologia e métodos de datação.",
+      "Os primeiros humanos dominaram o fogo, as ferramentas e a arte, e depois a agricultura e as aldeias.",
+      "A Mesopotâmia, o Egito e o Indo nos deram cidades, escrita, a roda e leis escritas."
+     ],
+     "q": "Entre o fogo, a agricultura, a escrita e a roda, qual mudou mais a vida, e por quê?",
+     "c": "Explique a um amigo em duas frases como a Pedra de Roseta ajudou a ler os hieróglifos."
+    }
+   }
+  }
+ ]
+}

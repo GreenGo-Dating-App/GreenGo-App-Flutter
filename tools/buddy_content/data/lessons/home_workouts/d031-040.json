@@ -1,0 +1,835 @@
+{
+ "topic": "home_workouts",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a weekly habit",
+     "g": "Choose fixed days and times so training fits naturally into your life.",
+     "p": [
+      "Pick two or three days that are realistic for your week.",
+      "Link your workout to something you already do, like after morning coffee.",
+      "Same time, same place makes starting much easier."
+     ],
+     "q": "Which days and times would suit your workouts best?",
+     "c": "Write your workout days and times for next week in your calendar."
+    },
+    "de": {
+     "t": "Eine Wochengewohnheit aufbauen",
+     "g": "Wähle feste Tage und Zeiten, damit das Training ganz natürlich in dein Leben passt.",
+     "p": [
+      "Such dir zwei oder drei Tage aus, die in deiner Woche realistisch sind.",
+      "Verknüpf das Training mit etwas, das du schon tust, etwa nach dem Morgenkaffee.",
+      "Gleiche Zeit, gleicher Ort macht das Anfangen viel leichter."
+     ],
+     "q": "Welche Tage und Uhrzeiten passen am besten zu deinem Training?",
+     "c": "Trag deine Trainingstage und -zeiten für nächste Woche in den Kalender ein."
+    },
+    "es": {
+     "t": "Crear un hábito semanal",
+     "g": "Elige días y horas fijos para que entrenar encaje de forma natural en tu vida.",
+     "p": [
+      "Escoge dos o tres días que sean realistas en tu semana.",
+      "Une el entreno a algo que ya haces, como después del café de la mañana.",
+      "Misma hora y mismo lugar hacen que empezar sea mucho más fácil."
+     ],
+     "q": "¿Qué días y horas irían mejor para tus entrenos?",
+     "c": "Apunta en tu calendario los días y horas de entreno de la próxima semana."
+    },
+    "fr": {
+     "t": "Créer une habitude hebdomadaire",
+     "g": "Choisis des jours et horaires fixes pour que le sport s'intègre naturellement à ta vie.",
+     "p": [
+      "Choisis deux ou trois jours réalistes dans ta semaine.",
+      "Associe ta séance à une habitude existante, comme après le café du matin.",
+      "Même heure, même endroit : c'est bien plus facile de commencer."
+     ],
+     "q": "Quels jours et horaires conviendraient le mieux à tes séances ?",
+     "c": "Note tes jours et horaires de séance de la semaine prochaine dans ton agenda."
+    },
+    "it": {
+     "t": "Creare un'abitudine settimanale",
+     "g": "Scegli giorni e orari fissi perché l'allenamento entri naturalmente nella tua vita.",
+     "p": [
+      "Scegli due o tre giorni realistici nella tua settimana.",
+      "Collega l'allenamento a qualcosa che fai già, come dopo il caffè del mattino.",
+      "Stessa ora e stesso posto rendono molto più facile iniziare."
+     ],
+     "q": "Quali giorni e orari sarebbero migliori per i tuoi allenamenti?",
+     "c": "Segna sul calendario i giorni e gli orari di allenamento della prossima settimana."
+    },
+    "pt": {
+     "t": "Criar um hábito semanal",
+     "g": "Escolhe dias e horas fixos para o treino entrar naturalmente na tua vida.",
+     "p": [
+      "Escolhe dois ou três dias que sejam realistas na tua semana.",
+      "Liga o treino a algo que já fazes, como depois do café da manhã.",
+      "Mesma hora e mesmo sítio tornam muito mais fácil começar."
+     ],
+     "q": "Que dias e horas seriam melhores para os teus treinos?",
+     "c": "Aponta no calendário os dias e horas de treino da próxima semana."
+    },
+    "pt_BR": {
+     "t": "Criando um hábito semanal",
+     "g": "Escolha dias e horários fixos para o treino entrar naturalmente na sua vida.",
+     "p": [
+      "Escolha dois ou três dias que sejam realistas na sua semana.",
+      "Ligue o treino a algo que você já faz, como depois do café da manhã.",
+      "Mesmo horário e mesmo lugar deixam muito mais fácil começar."
+     ],
+     "q": "Quais dias e horários seriam melhores para os seus treinos?",
+     "c": "Anote na agenda os dias e horários de treino da próxima semana."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tiny workouts count",
+     "g": "See why five or ten minutes of movement is truly worth doing.",
+     "p": [
+      "Short sessions add up over a week and keep the habit alive.",
+      "On busy days, a tiny workout beats skipping completely.",
+      "Starting small often turns into doing a bit more than planned."
+     ],
+     "q": "When during your day could a five-minute workout fit?",
+     "c": "Do a five-minute mini session today: warm-up moves, 10 squats and a short plank."
+    },
+    "de": {
+     "t": "Mini-Trainings zählen",
+     "g": "Erkenne, warum fünf oder zehn Minuten Bewegung wirklich etwas bringen.",
+     "p": [
+      "Kurze Einheiten summieren sich über die Woche und halten die Gewohnheit lebendig.",
+      "An vollen Tagen ist ein Mini-Training besser als ganz auszusetzen.",
+      "Klein anfangen führt oft dazu, etwas mehr zu machen als geplant."
+     ],
+     "q": "Wann könnte in deinen Tag ein Fünf-Minuten-Training passen?",
+     "c": "Mach heute eine Mini-Einheit von fünf Minuten: Aufwärmen, 10 Kniebeugen und ein kurzer Stütz."
+    },
+    "es": {
+     "t": "Los mini entrenos cuentan",
+     "g": "Descubre por qué cinco o diez minutos de movimiento valen de verdad la pena.",
+     "p": [
+      "Las sesiones cortas suman a lo largo de la semana y mantienen vivo el hábito.",
+      "En días ocupados, un mini entreno es mejor que saltártelo del todo.",
+      "Empezar con poco a menudo acaba en hacer algo más de lo previsto."
+     ],
+     "q": "¿En qué momento de tu día cabría un entreno de cinco minutos?",
+     "c": "Haz hoy una mini sesión de cinco minutos: calentamiento, 10 sentadillas y una plancha corta."
+    },
+    "fr": {
+     "t": "Les mini-séances comptent",
+     "g": "Découvre pourquoi cinq ou dix minutes de mouvement valent vraiment le coup.",
+     "p": [
+      "Les courtes séances s'additionnent sur la semaine et entretiennent l'habitude.",
+      "Les jours chargés, une mini-séance vaut mieux que rien du tout.",
+      "Commencer petit mène souvent à en faire un peu plus que prévu."
+     ],
+     "q": "À quel moment de ta journée une séance de cinq minutes pourrait-elle trouver sa place ?",
+     "c": "Fais une mini-séance de cinq minutes aujourd'hui : échauffement, 10 squats et une courte planche."
+    },
+    "it": {
+     "t": "Anche i mini allenamenti contano",
+     "g": "Scopri perché cinque o dieci minuti di movimento valgono davvero la pena.",
+     "p": [
+      "Le sessioni brevi si sommano nella settimana e tengono viva l'abitudine.",
+      "Nei giorni pieni, un mini allenamento è meglio che saltare del tutto.",
+      "Iniziare in piccolo spesso porta a fare un po' più del previsto."
+     ],
+     "q": "In quale momento della giornata potrebbe stare un allenamento di cinque minuti?",
+     "c": "Fai oggi una mini sessione di cinque minuti: riscaldamento, 10 squat e un breve plank."
+    },
+    "pt": {
+     "t": "Os mini treinos contam",
+     "g": "Descobre porque é que cinco ou dez minutos de movimento valem mesmo a pena.",
+     "p": [
+      "As sessões curtas somam-se ao longo da semana e mantêm o hábito vivo.",
+      "Nos dias cheios, um mini treino é melhor do que saltar tudo.",
+      "Começar pequeno muitas vezes acaba em fazer um pouco mais do que o previsto."
+     ],
+     "q": "Em que momento do teu dia cabia um treino de cinco minutos?",
+     "c": "Faz hoje uma mini sessão de cinco minutos: aquecimento, 10 agachamentos e uma prancha curta."
+    },
+    "pt_BR": {
+     "t": "Mini treinos contam",
+     "g": "Descubra por que cinco ou dez minutos de movimento valem muito a pena.",
+     "p": [
+      "Sessões curtas somam ao longo da semana e mantêm o hábito vivo.",
+      "Em dias corridos, um mini treino é melhor do que pular de vez.",
+      "Começar pequeno muitas vezes vira fazer um pouco mais do que o planejado."
+     ],
+     "q": "Em que momento do seu dia caberia um treino de cinco minutos?",
+     "c": "Faça hoje uma mini sessão de cinco minutos: aquecimento, 10 agachamentos e uma prancha curta."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking your workouts",
+     "g": "Use a simple notebook or calendar to see your progress clearly.",
+     "p": [
+      "Write the date, exercises, reps and how hard it felt.",
+      "A tick on the calendar for each workout is motivating to see.",
+      "Looking back after a few weeks shows how far you have come."
+     ],
+     "q": "Do you prefer tracking on paper or on your phone?",
+     "c": "Start a workout log today and add your last session to it."
+    },
+    "de": {
+     "t": "Dein Training festhalten",
+     "g": "Nutze ein einfaches Notizbuch oder einen Kalender, um Fortschritte klar zu sehen.",
+     "p": [
+      "Notier Datum, Übungen, Wiederholungen und wie anstrengend es war.",
+      "Ein Haken im Kalender für jedes Training motiviert beim Hinsehen.",
+      "Ein Blick zurück nach ein paar Wochen zeigt, wie weit du gekommen bist."
+     ],
+     "q": "Hältst du lieber auf Papier oder am Handy fest?",
+     "c": "Fang heute ein Trainingstagebuch an und trag deine letzte Einheit ein."
+    },
+    "es": {
+     "t": "Registrar tus entrenos",
+     "g": "Usa una libreta o un calendario sencillo para ver tu progreso con claridad.",
+     "p": [
+      "Anota la fecha, los ejercicios, las repeticiones y el esfuerzo.",
+      "Una marca en el calendario por cada entreno motiva mucho al verla.",
+      "Mirar atrás tras unas semanas muestra lo mucho que has avanzado."
+     ],
+     "q": "¿Prefieres registrar en papel o en el móvil?",
+     "c": "Empieza hoy un registro de entrenos y añade tu última sesión."
+    },
+    "fr": {
+     "t": "Suivre tes séances",
+     "g": "Utilise un carnet ou un calendrier simple pour voir clairement tes progrès.",
+     "p": [
+      "Note la date, les exercices, les répétitions et ton ressenti d'effort.",
+      "Une coche sur le calendrier pour chaque séance, c'est motivant à voir.",
+      "Regarder en arrière après quelques semaines montre tout le chemin parcouru."
+     ],
+     "q": "Tu préfères noter sur papier ou sur ton téléphone ?",
+     "c": "Commence un carnet d'entraînement aujourd'hui et ajoute ta dernière séance."
+    },
+    "it": {
+     "t": "Tenere traccia degli allenamenti",
+     "g": "Usa un quaderno o un calendario semplice per vedere chiaramente i progressi.",
+     "p": [
+      "Scrivi data, esercizi, ripetizioni e quanto è stato faticoso.",
+      "Una spunta sul calendario per ogni allenamento motiva molto.",
+      "Guardare indietro dopo qualche settimana mostra quanta strada hai fatto."
+     ],
+     "q": "Preferisci annotare su carta o sul telefono?",
+     "c": "Inizia oggi un diario di allenamento e aggiungi la tua ultima sessione."
+    },
+    "pt": {
+     "t": "Registar os teus treinos",
+     "g": "Usa um caderno ou calendário simples para veres o teu progresso com clareza.",
+     "p": [
+      "Escreve a data, os exercícios, as repetições e o esforço que sentiste.",
+      "Um visto no calendário por cada treino é motivador de ver.",
+      "Olhar para trás depois de umas semanas mostra o caminho que já fizeste."
+     ],
+     "q": "Preferes registar em papel ou no telemóvel?",
+     "c": "Começa hoje um registo de treinos e acrescenta a tua última sessão."
+    },
+    "pt_BR": {
+     "t": "Registrando seus treinos",
+     "g": "Use um caderno ou calendário simples para ver seu progresso com clareza.",
+     "p": [
+      "Anote a data, os exercícios, as repetições e o esforço que sentiu.",
+      "Um tique no calendário para cada treino motiva muito.",
+      "Olhar para trás depois de algumas semanas mostra o quanto você evoluiu."
+     ],
+     "q": "Você prefere registrar no papel ou no celular?",
+     "c": "Comece hoje um registro de treinos e adicione sua última sessão."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reverse lunges",
+     "g": "Build balance and leg strength by stepping back into a lunge.",
+     "p": [
+      "From standing, take a comfortable step back and lower the back knee gently.",
+      "Keep your front knee over your foot and your chest tall.",
+      "Push through the front foot to return; hold a chair if you need balance."
+     ],
+     "q": "Did one leg feel stronger or steadier than the other?",
+     "c": "Do 2 sets of 6 reverse lunges per leg, using a chair for support if needed."
+    },
+    "de": {
+     "t": "Ausfallschritte nach hinten",
+     "g": "Bau Gleichgewicht und Beinkraft mit einem Schritt nach hinten auf.",
+     "p": [
+      "Mach aus dem Stand einen angenehmen Schritt zurück und senk das hintere Knie sanft ab.",
+      "Das vordere Knie bleibt über dem Fuß, die Brust aufrecht.",
+      "Drück dich über den vorderen Fuß zurück; halt dich bei Bedarf an einem Stuhl fest."
+     ],
+     "q": "Hat sich ein Bein stärker oder stabiler angefühlt als das andere?",
+     "c": "Mach 2 Sätze à 6 Ausfallschritte pro Bein, bei Bedarf mit einem Stuhl als Stütze."
+    },
+    "es": {
+     "t": "Zancadas hacia atrás",
+     "g": "Gana equilibrio y fuerza en las piernas dando un paso atrás en zancada.",
+     "p": [
+      "De pie, da un paso cómodo atrás y baja suave la rodilla trasera.",
+      "Mantén la rodilla delantera sobre el pie y el pecho erguido.",
+      "Empuja con el pie delantero para volver; agárrate a una silla si lo necesitas."
+     ],
+     "q": "¿Una pierna se sintió más fuerte o estable que la otra?",
+     "c": "Haz 2 series de 6 zancadas atrás por pierna, apoyándote en una silla si hace falta."
+    },
+    "fr": {
+     "t": "Les fentes arrière",
+     "g": "Gagne en équilibre et en force des jambes en reculant dans une fente.",
+     "p": [
+      "Debout, fais un pas confortable en arrière et descends doucement le genou arrière.",
+      "Garde le genou avant au-dessus du pied et la poitrine haute.",
+      "Pousse sur le pied avant pour revenir ; tiens une chaise si besoin."
+     ],
+     "q": "Une jambe t'a-t-elle semblé plus forte ou plus stable que l'autre ?",
+     "c": "Fais 2 séries de 6 fentes arrière par jambe, avec une chaise en appui si besoin."
+    },
+    "it": {
+     "t": "Affondi indietro",
+     "g": "Costruisci equilibrio e forza nelle gambe con un passo indietro in affondo.",
+     "p": [
+      "Da in piedi, fai un passo comodo indietro e abbassa dolcemente il ginocchio dietro.",
+      "Tieni il ginocchio davanti sopra il piede e il petto alto.",
+      "Spingi con il piede davanti per tornare; tieniti a una sedia se serve."
+     ],
+     "q": "Una gamba ti è sembrata più forte o stabile dell'altra?",
+     "c": "Fai 2 serie da 6 affondi indietro per gamba, usando una sedia come appoggio se serve."
+    },
+    "pt": {
+     "t": "Afundos para trás",
+     "g": "Ganha equilíbrio e força nas pernas dando um passo atrás em afundo.",
+     "p": [
+      "De pé, dá um passo confortável para trás e baixa suavemente o joelho de trás.",
+      "Mantém o joelho da frente por cima do pé e o peito erguido.",
+      "Empurra com o pé da frente para voltar; apoia-te numa cadeira se precisares."
+     ],
+     "q": "Uma perna pareceu-te mais forte ou estável do que a outra?",
+     "c": "Faz 2 séries de 6 afundos para trás por perna, com uma cadeira de apoio se precisares."
+    },
+    "pt_BR": {
+     "t": "Afundo para trás",
+     "g": "Ganhe equilíbrio e força nas pernas dando um passo para trás em afundo.",
+     "p": [
+      "Em pé, dê um passo confortável para trás e desça o joelho de trás com suavidade.",
+      "Mantenha o joelho da frente sobre o pé e o peito erguido.",
+      "Empurre com o pé da frente para voltar; segure numa cadeira se precisar."
+     ],
+     "q": "Uma perna pareceu mais forte ou estável que a outra?",
+     "c": "Faça 2 séries de 6 afundos para trás por perna, com uma cadeira de apoio se precisar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Static split squats",
+     "g": "Move up and down with control from a fixed split stance.",
+     "p": [
+      "Stand with one foot forward and one back, like a long step, feet hip-width.",
+      "Lower straight down by bending both knees, then rise without moving your feet.",
+      "Keep your weight mostly on the front foot and your torso upright."
+     ],
+     "q": "How does this compare with the reverse lunge for you?",
+     "c": "Do 2 sets of 6 split squats per leg with a slow count of three on the way down."
+    },
+    "de": {
+     "t": "Statische Split Squats",
+     "g": "Beweg dich kontrolliert aus einer festen Schrittstellung auf und ab.",
+     "p": [
+      "Stell einen Fuß nach vorn und einen nach hinten wie ein langer Schritt, hüftbreit.",
+      "Senk dich senkrecht ab, indem du beide Knie beugst, und komm hoch, ohne die Füße zu bewegen.",
+      "Das Gewicht liegt vor allem auf dem vorderen Fuß, der Oberkörper bleibt aufrecht."
+     ],
+     "q": "Wie fühlt sich das im Vergleich zum Ausfallschritt nach hinten an?",
+     "c": "Mach 2 Sätze à 6 Split Squats pro Bein und zähl beim Absenken langsam bis drei."
+    },
+    "es": {
+     "t": "Sentadilla en zancada estática",
+     "g": "Sube y baja con control desde una posición de paso fija.",
+     "p": [
+      "Pon un pie delante y otro detrás, como un paso largo, al ancho de cadera.",
+      "Baja en vertical doblando ambas rodillas y sube sin mover los pies.",
+      "Mantén el peso sobre todo en el pie delantero y el tronco erguido."
+     ],
+     "q": "¿Cómo se compara con la zancada hacia atrás para ti?",
+     "c": "Haz 2 series de 6 por pierna, contando lento hasta tres al bajar."
+    },
+    "fr": {
+     "t": "Les fentes statiques",
+     "g": "Monte et descends en contrôle depuis une position de fente fixe.",
+     "p": [
+      "Place un pied devant et un derrière, comme un grand pas, écartés comme les hanches.",
+      "Descends à la verticale en pliant les deux genoux, puis remonte sans bouger les pieds.",
+      "Garde surtout le poids sur le pied avant et le buste droit."
+     ],
+     "q": "Comment ça se compare avec la fente arrière pour toi ?",
+     "c": "Fais 2 séries de 6 fentes statiques par jambe en comptant lentement jusqu'à trois en descendant."
+    },
+    "it": {
+     "t": "Split squat statici",
+     "g": "Sali e scendi con controllo da una posizione divaricata fissa.",
+     "p": [
+      "Metti un piede avanti e uno indietro, come un passo lungo, alla larghezza delle anche.",
+      "Scendi in verticale piegando entrambe le ginocchia e risali senza muovere i piedi.",
+      "Tieni il peso soprattutto sul piede davanti e il busto dritto."
+     ],
+     "q": "Come ti sembra rispetto all'affondo indietro?",
+     "c": "Fai 2 serie da 6 split squat per gamba, contando piano fino a tre mentre scendi."
+    },
+    "pt": {
+     "t": "Agachamento afundo estático",
+     "g": "Sobe e desce com controlo a partir de uma posição de passada fixa.",
+     "p": [
+      "Põe um pé à frente e outro atrás, como um passo largo, à largura da anca.",
+      "Desce na vertical dobrando os dois joelhos e sobe sem mexer os pés.",
+      "Mantém o peso sobretudo no pé da frente e o tronco direito."
+     ],
+     "q": "Como compara com o afundo para trás para ti?",
+     "c": "Faz 2 séries de 6 por perna, contando devagar até três ao descer."
+    },
+    "pt_BR": {
+     "t": "Afundo estático",
+     "g": "Suba e desça com controle a partir de uma base de passada fixa.",
+     "p": [
+      "Coloque um pé à frente e outro atrás, como um passo longo, na largura do quadril.",
+      "Desça na vertical dobrando os dois joelhos e suba sem mexer os pés.",
+      "Mantenha o peso principalmente no pé da frente e o tronco ereto."
+     ],
+     "q": "Como ele se compara ao afundo para trás para você?",
+     "c": "Faça 2 séries de 6 por perna, contando devagar até três na descida."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Step-ups on a stair",
+     "g": "Use one step of your stairs for strength and gentle cardio.",
+     "p": [
+      "Place your whole foot on the bottom step and hold the handrail if there is one.",
+      "Press through that foot to stand up tall, then step down slowly.",
+      "Lead with one leg for a set, then switch; keep the movement calm and controlled."
+     ],
+     "q": "Do you have stairs or a sturdy step at home?",
+     "c": "Do 2 sets of 8 step-ups per leg on the lowest step, holding the rail."
+    },
+    "de": {
+     "t": "Step-ups auf der Treppe",
+     "g": "Nutze eine Treppenstufe für Kraft und sanftes Cardio.",
+     "p": [
+      "Stell den ganzen Fuß auf die unterste Stufe und halt dich am Geländer fest, falls vorhanden.",
+      "Drück dich über diesen Fuß hoch in den aufrechten Stand und steig langsam wieder ab.",
+      "Führ einen Satz mit einem Bein, dann wechseln; bleib ruhig und kontrolliert."
+     ],
+     "q": "Hast du zu Hause eine Treppe oder eine stabile Stufe?",
+     "c": "Mach 2 Sätze à 8 Step-ups pro Bein auf der untersten Stufe und halt dich am Geländer fest."
+    },
+    "es": {
+     "t": "Subir a un escalón",
+     "g": "Usa un escalón de tu escalera para ganar fuerza y hacer cardio suave.",
+     "p": [
+      "Apoya todo el pie en el primer escalón y agárrate a la barandilla si la hay.",
+      "Empuja con ese pie hasta quedar erguido y baja despacio.",
+      "Haz una serie con una pierna y luego cambia; muévete con calma y control."
+     ],
+     "q": "¿Tienes escaleras o un escalón firme en casa?",
+     "c": "Haz 2 series de 8 subidas por pierna en el escalón más bajo, sujetando la barandilla."
+    },
+    "fr": {
+     "t": "Les montées de marche",
+     "g": "Utilise une marche d'escalier pour la force et un cardio doux.",
+     "p": [
+      "Pose tout le pied sur la première marche et tiens la rampe s'il y en a une.",
+      "Pousse sur ce pied pour te redresser, puis redescends lentement.",
+      "Mène une série avec une jambe, puis change ; garde un mouvement calme et contrôlé."
+     ],
+     "q": "As-tu un escalier ou une marche solide chez toi ?",
+     "c": "Fais 2 séries de 8 montées par jambe sur la marche la plus basse en tenant la rampe."
+    },
+    "it": {
+     "t": "Step-up sul gradino",
+     "g": "Usa un gradino delle scale per forza e cardio leggero.",
+     "p": [
+      "Appoggia tutto il piede sul primo gradino e tieniti al corrimano se c'è.",
+      "Spingi con quel piede fino a stare dritto, poi scendi piano.",
+      "Fai una serie guidando con una gamba, poi cambia; movimento calmo e controllato."
+     ],
+     "q": "Hai delle scale o un gradino stabile in casa?",
+     "c": "Fai 2 serie da 8 step-up per gamba sul gradino più basso, tenendo il corrimano."
+    },
+    "pt": {
+     "t": "Subidas ao degrau",
+     "g": "Usa um degrau da escada para ganhar força e fazer cardio suave.",
+     "p": [
+      "Põe o pé todo no primeiro degrau e segura o corrimão, se houver.",
+      "Empurra com esse pé até ficares direito e desce devagar.",
+      "Faz uma série a começar com uma perna e depois troca; com calma e controlo."
+     ],
+     "q": "Tens escadas ou um degrau firme em casa?",
+     "c": "Faz 2 séries de 8 subidas por perna no degrau mais baixo, segurando o corrimão."
+    },
+    "pt_BR": {
+     "t": "Subida no degrau",
+     "g": "Use um degrau da escada para ganhar força e fazer um cardio leve.",
+     "p": [
+      "Apoie o pé inteiro no primeiro degrau e segure o corrimão, se houver.",
+      "Empurre com esse pé até ficar ereto e desça devagar.",
+      "Faça uma série puxando com uma perna e depois troque; com calma e controle."
+     ],
+     "q": "Você tem escada ou um degrau firme em casa?",
+     "c": "Faça 2 séries de 8 subidas por perna no degrau mais baixo, segurando o corrimão."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Side-lying leg lifts",
+     "g": "Gently work the sides of your hips while lying down.",
+     "p": [
+      "Lie on your side with legs straight and your head resting on your arm.",
+      "Lift the top leg slowly to a comfortable height, toes pointing forward.",
+      "Lower with control; avoid rolling your hips backwards."
+     ],
+     "q": "Have you ever trained the sides of your hips before?",
+     "c": "Do 2 sets of 10 slow leg lifts on each side."
+    },
+    "de": {
+     "t": "Seitliches Beinheben",
+     "g": "Trainiere sanft die Seiten deiner Hüfte im Liegen.",
+     "p": [
+      "Leg dich auf die Seite, Beine gestreckt, Kopf auf dem Arm abgelegt.",
+      "Heb das obere Bein langsam auf eine angenehme Höhe, Zehen zeigen nach vorn.",
+      "Senk kontrolliert ab und roll die Hüfte nicht nach hinten."
+     ],
+     "q": "Hast du die Seiten deiner Hüfte schon mal gezielt trainiert?",
+     "c": "Mach 2 Sätze à 10 langsame Beinheber auf jeder Seite."
+    },
+    "es": {
+     "t": "Elevaciones de pierna de lado",
+     "g": "Trabaja con suavidad los laterales de la cadera tumbado.",
+     "p": [
+      "Túmbate de lado con las piernas rectas y la cabeza apoyada en el brazo.",
+      "Sube despacio la pierna de arriba a una altura cómoda, puntas hacia delante.",
+      "Baja con control y evita que la cadera rote hacia atrás."
+     ],
+     "q": "¿Habías entrenado antes los laterales de la cadera?",
+     "c": "Haz 2 series de 10 elevaciones lentas por cada lado."
+    },
+    "fr": {
+     "t": "Les élévations latérales de jambe",
+     "g": "Travaille en douceur les côtés des hanches en position allongée.",
+     "p": [
+      "Allonge-toi sur le côté, jambes tendues, tête posée sur le bras.",
+      "Monte lentement la jambe du dessus à une hauteur confortable, orteils vers l'avant.",
+      "Redescends en contrôle sans laisser le bassin basculer en arrière."
+     ],
+     "q": "As-tu déjà travaillé les côtés de tes hanches ?",
+     "c": "Fais 2 séries de 10 élévations lentes de chaque côté."
+    },
+    "it": {
+     "t": "Sollevamenti laterali della gamba",
+     "g": "Lavora con dolcezza i lati delle anche da sdraiato.",
+     "p": [
+      "Sdraiati sul fianco con le gambe tese e la testa appoggiata sul braccio.",
+      "Solleva piano la gamba sopra fino a un'altezza comoda, punte in avanti.",
+      "Scendi con controllo senza far ruotare il bacino indietro."
+     ],
+     "q": "Hai mai allenato i lati delle anche prima d'ora?",
+     "c": "Fai 2 serie da 10 sollevamenti lenti per ogni lato."
+    },
+    "pt": {
+     "t": "Elevações laterais da perna",
+     "g": "Trabalha com suavidade os lados da anca, deitado.",
+     "p": [
+      "Deita-te de lado com as pernas esticadas e a cabeça apoiada no braço.",
+      "Sobe devagar a perna de cima até uma altura confortável, pontas para a frente.",
+      "Desce com controlo, sem deixar a anca rodar para trás."
+     ],
+     "q": "Já alguma vez treinaste os lados da anca?",
+     "c": "Faz 2 séries de 10 elevações lentas de cada lado."
+    },
+    "pt_BR": {
+     "t": "Elevação lateral de perna",
+     "g": "Trabalhe com suavidade as laterais do quadril, deitado.",
+     "p": [
+      "Deite de lado com as pernas esticadas e a cabeça apoiada no braço.",
+      "Suba devagar a perna de cima até uma altura confortável, pontas para frente.",
+      "Desça com controle, sem deixar o quadril girar para trás."
+     ],
+     "q": "Você já treinou as laterais do quadril antes?",
+     "c": "Faça 2 séries de 10 elevações lentas de cada lado."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clamshells",
+     "g": "Learn a simple, gentle hip exercise lying on your side.",
+     "p": [
+      "Lie on your side with knees bent and feet together.",
+      "Keeping feet touching, open the top knee like a clamshell, then close it.",
+      "Move slowly and keep your hips still; a small range is perfect."
+     ],
+     "q": "Where do you feel the clamshell working?",
+     "c": "Do 2 sets of 12 clamshells on each side."
+    },
+    "de": {
+     "t": "Clamshells",
+     "g": "Lerne eine einfache, sanfte Hüftübung in Seitenlage.",
+     "p": [
+      "Leg dich auf die Seite, Knie gebeugt, Füße zusammen.",
+      "Die Füße bleiben zusammen, öffne das obere Knie wie eine Muschel und schließ es wieder.",
+      "Beweg dich langsam und halt die Hüfte ruhig; ein kleiner Bewegungsumfang ist perfekt."
+     ],
+     "q": "Wo spürst du die Clamshells arbeiten?",
+     "c": "Mach 2 Sätze à 12 Clamshells auf jeder Seite."
+    },
+    "es": {
+     "t": "La almeja",
+     "g": "Aprende un ejercicio de cadera sencillo y suave, tumbado de lado.",
+     "p": [
+      "Túmbate de lado con las rodillas dobladas y los pies juntos.",
+      "Con los pies unidos, abre la rodilla de arriba como una almeja y ciérrala.",
+      "Muévete despacio y con la cadera quieta; un recorrido pequeño es perfecto."
+     ],
+     "q": "¿Dónde sientes que trabaja la almeja?",
+     "c": "Haz 2 series de 12 almejas por cada lado."
+    },
+    "fr": {
+     "t": "Le clamshell",
+     "g": "Apprends un exercice de hanche simple et doux, allongé sur le côté.",
+     "p": [
+      "Allonge-toi sur le côté, genoux pliés et pieds joints.",
+      "Pieds collés, ouvre le genou du dessus comme un coquillage, puis referme.",
+      "Bouge lentement, bassin immobile ; une petite amplitude est parfaite."
+     ],
+     "q": "Où sens-tu le clamshell travailler ?",
+     "c": "Fais 2 séries de 12 clamshells de chaque côté."
+    },
+    "it": {
+     "t": "La conchiglia",
+     "g": "Impara un esercizio per le anche semplice e dolce, sdraiato sul fianco.",
+     "p": [
+      "Sdraiati sul fianco con le ginocchia piegate e i piedi uniti.",
+      "Con i piedi uniti, apri il ginocchio sopra come una conchiglia, poi chiudi.",
+      "Muoviti piano tenendo fermo il bacino; un piccolo movimento è perfetto."
+     ],
+     "q": "Dove senti lavorare la conchiglia?",
+     "c": "Fai 2 serie da 12 conchiglie per ogni lato."
+    },
+    "pt": {
+     "t": "A concha",
+     "g": "Aprende um exercício de anca simples e suave, deitado de lado.",
+     "p": [
+      "Deita-te de lado com os joelhos dobrados e os pés juntos.",
+      "Com os pés encostados, abre o joelho de cima como uma concha e fecha.",
+      "Mexe-te devagar com a anca parada; uma pequena amplitude é perfeita."
+     ],
+     "q": "Onde sentes a concha a trabalhar?",
+     "c": "Faz 2 séries de 12 conchas de cada lado."
+    },
+    "pt_BR": {
+     "t": "A concha",
+     "g": "Aprenda um exercício de quadril simples e suave, deitado de lado.",
+     "p": [
+      "Deite de lado com os joelhos dobrados e os pés juntos.",
+      "Com os pés encostados, abra o joelho de cima como uma concha e feche.",
+      "Mova-se devagar com o quadril parado; uma amplitude pequena é perfeita."
+     ],
+     "q": "Onde você sente a concha trabalhar?",
+     "c": "Faça 2 séries de 12 conchas de cada lado."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Superman holds",
+     "g": "Strengthen the back of your body by lifting arms and legs lying face down.",
+     "p": [
+      "Lie on your front with arms stretched forward and forehead near the floor.",
+      "Gently lift arms, chest and legs a little, keeping your neck long.",
+      "Hold for a few seconds, breathing, then lower; small lifts are enough."
+     ],
+     "q": "How did your back feel during the superman hold?",
+     "c": "Do 3 superman holds of 5 seconds each with a calm rest between."
+    },
+    "de": {
+     "t": "Superman-Halten",
+     "g": "Stärke die Rückseite deines Körpers, indem du in Bauchlage Arme und Beine hebst.",
+     "p": [
+      "Leg dich auf den Bauch, Arme nach vorn gestreckt, Stirn nahe am Boden.",
+      "Heb Arme, Brust und Beine sanft ein wenig an, der Nacken bleibt lang.",
+      "Halte ein paar Sekunden mit ruhigem Atem und senk ab; kleine Bewegungen reichen."
+     ],
+     "q": "Wie hat sich dein Rücken beim Superman angefühlt?",
+     "c": "Mach 3 Superman-Halten à 5 Sekunden mit einer ruhigen Pause dazwischen."
+    },
+    "es": {
+     "t": "El superman",
+     "g": "Fortalece la parte trasera del cuerpo levantando brazos y piernas boca abajo.",
+     "p": [
+      "Túmbate boca abajo con los brazos estirados al frente y la frente cerca del suelo.",
+      "Levanta un poco y con suavidad brazos, pecho y piernas, con el cuello largo.",
+      "Mantén unos segundos respirando y baja; con elevaciones pequeñas basta."
+     ],
+     "q": "¿Cómo se sintió tu espalda durante el superman?",
+     "c": "Haz 3 supermans de 5 segundos cada uno con un descanso tranquilo entre ellos."
+    },
+    "fr": {
+     "t": "Le superman",
+     "g": "Renforce l'arrière du corps en levant bras et jambes, allongé sur le ventre.",
+     "p": [
+      "Allonge-toi sur le ventre, bras tendus devant, front près du sol.",
+      "Lève doucement un peu les bras, la poitrine et les jambes, nuque allongée.",
+      "Tiens quelques secondes en respirant, puis redescends ; de petites élévations suffisent."
+     ],
+     "q": "Comment s'est senti ton dos pendant le superman ?",
+     "c": "Fais 3 maintiens superman de 5 secondes avec un repos calme entre chacun."
+    },
+    "it": {
+     "t": "Il superman",
+     "g": "Rinforza la parte posteriore del corpo sollevando braccia e gambe a pancia in giù.",
+     "p": [
+      "Sdraiati a pancia in giù, braccia tese in avanti e fronte vicino al pavimento.",
+      "Solleva dolcemente un po' braccia, petto e gambe, mantenendo il collo lungo.",
+      "Tieni qualche secondo respirando, poi scendi; bastano piccoli sollevamenti."
+     ],
+     "q": "Come si è sentita la tua schiena durante il superman?",
+     "c": "Fai 3 superman da 5 secondi ciascuno con un recupero tranquillo tra uno e l'altro."
+    },
+    "pt": {
+     "t": "O super-homem",
+     "g": "Fortalece a parte de trás do corpo levantando braços e pernas deitado de barriga para baixo.",
+     "p": [
+      "Deita-te de barriga para baixo, braços esticados à frente e testa perto do chão.",
+      "Levanta suavemente um pouco os braços, o peito e as pernas, com o pescoço longo.",
+      "Mantém uns segundos a respirar e desce; pequenas elevações chegam."
+     ],
+     "q": "Como se sentiram as tuas costas durante o super-homem?",
+     "c": "Faz 3 super-homens de 5 segundos cada, com um descanso calmo entre eles."
+    },
+    "pt_BR": {
+     "t": "O super-homem",
+     "g": "Fortaleça a parte de trás do corpo erguendo braços e pernas de bruços.",
+     "p": [
+      "Deite de bruços com os braços esticados à frente e a testa perto do chão.",
+      "Erga de leve braços, peito e pernas, mantendo o pescoço alongado.",
+      "Segure alguns segundos respirando e desça; pequenas elevações já bastam."
+     ],
+     "q": "Como suas costas se sentiram durante o super-homem?",
+     "c": "Faça 3 super-homens de 5 segundos cada, com um descanso tranquilo entre eles."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chair-supported balance",
+     "g": "Practise standing on one leg safely with a hand on a chair.",
+     "p": [
+      "Stand beside a sturdy chair and rest one hand lightly on the backrest.",
+      "Lift one foot a little off the floor and stand tall, eyes looking ahead.",
+      "Start with 10 to 20 seconds per leg; use less hand support as you improve."
+     ],
+     "q": "Is balancing easier for you on one side?",
+     "c": "Balance on each leg for 3 rounds of 15 seconds, holding the chair lightly."
+    },
+    "de": {
+     "t": "Gleichgewicht mit Stuhl",
+     "g": "Üb sicher den Einbeinstand mit einer Hand am Stuhl.",
+     "p": [
+      "Stell dich neben einen stabilen Stuhl und leg eine Hand leicht auf die Lehne.",
+      "Heb einen Fuß etwas vom Boden und steh aufrecht, Blick nach vorn.",
+      "Starte mit 10 bis 20 Sekunden pro Bein und stütz dich mit der Zeit weniger ab."
+     ],
+     "q": "Fällt dir das Gleichgewicht auf einer Seite leichter?",
+     "c": "Balanciere auf jedem Bein 3 Runden à 15 Sekunden und halt den Stuhl nur leicht."
+    },
+    "es": {
+     "t": "Equilibrio con apoyo en silla",
+     "g": "Practica estar sobre una pierna con seguridad, con una mano en una silla.",
+     "p": [
+      "Ponte junto a una silla firme y apoya una mano suavemente en el respaldo.",
+      "Levanta un poco un pie del suelo y quédate erguido, mirando al frente.",
+      "Empieza con 10 a 20 segundos por pierna; apóyate menos según mejores."
+     ],
+     "q": "¿Te resulta más fácil el equilibrio en un lado?",
+     "c": "Mantén el equilibrio en cada pierna 3 rondas de 15 segundos, tocando la silla suave."
+    },
+    "fr": {
+     "t": "L'équilibre avec une chaise",
+     "g": "Entraîne-toi à tenir sur une jambe en sécurité, une main sur une chaise.",
+     "p": [
+      "Place-toi à côté d'une chaise solide, une main posée légèrement sur le dossier.",
+      "Lève un pied un peu du sol et tiens-toi droit, regard devant.",
+      "Commence par 10 à 20 secondes par jambe ; appuie-toi moins en progressant."
+     ],
+     "q": "L'équilibre est-il plus facile d'un côté pour toi ?",
+     "c": "Tiens sur chaque jambe 3 fois 15 secondes, en touchant la chaise légèrement."
+    },
+    "it": {
+     "t": "Equilibrio con la sedia",
+     "g": "Allenati a stare su una gamba in sicurezza con una mano sulla sedia.",
+     "p": [
+      "Mettiti accanto a una sedia stabile e appoggia leggermente una mano sullo schienale.",
+      "Solleva un po' un piede da terra e stai dritto, sguardo in avanti.",
+      "Inizia con 10-20 secondi per gamba; usa meno appoggio man mano che migliori."
+     ],
+     "q": "L'equilibrio ti riesce meglio da un lato?",
+     "c": "Stai in equilibrio su ogni gamba per 3 round da 15 secondi, toccando appena la sedia."
+    },
+    "pt": {
+     "t": "Equilíbrio com apoio na cadeira",
+     "g": "Pratica ficar num pé só em segurança, com uma mão numa cadeira.",
+     "p": [
+      "Põe-te ao lado de uma cadeira firme e apoia levemente uma mão no encosto.",
+      "Levanta um pouco um pé do chão e fica direito, a olhar em frente.",
+      "Começa com 10 a 20 segundos por perna; apoia-te menos à medida que melhoras."
+     ],
+     "q": "O equilíbrio é mais fácil para ti de um dos lados?",
+     "c": "Equilibra-te em cada perna 3 rondas de 15 segundos, tocando levemente na cadeira."
+    },
+    "pt_BR": {
+     "t": "Equilíbrio com apoio na cadeira",
+     "g": "Pratique ficar em um pé só com segurança, com a mão em uma cadeira.",
+     "p": [
+      "Fique ao lado de uma cadeira firme e apoie a mão de leve no encosto.",
+      "Tire um pé um pouco do chão e fique ereto, olhando para frente.",
+      "Comece com 10 a 20 segundos por perna; use menos apoio conforme melhora."
+     ],
+     "q": "O equilíbrio é mais fácil para você de um lado?",
+     "c": "Equilibre-se em cada perna por 3 rodadas de 15 segundos, tocando a cadeira de leve."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "tea",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Peppermint and fresh mint",
+     "g": "Brew dried and fresh mint and enjoy the cooling, refreshing taste it brings.",
+     "p": [
+      "Dried peppermint likes boiling water and 5 to 7 minutes; cover the cup to keep the aroma in.",
+      "For fresh mint, gently bruise a handful of leaves and pour hot water over them for a bright, green taste.",
+      "In Morocco, mint tea is green gunpowder tea brewed with fresh spearmint and sugar, poured from a height."
+     ],
+     "q": "Do you prefer the taste of fresh mint or dried mint?",
+     "c": "Make one cup with fresh mint leaves and one with a dried mint, and compare their freshness."
+    },
+    "de": {
+     "t": "Pfefferminze und frische Minze",
+     "g": "Brühe getrocknete und frische Minze auf und genieße ihren kühlenden, erfrischenden Geschmack.",
+     "p": [
+      "Getrocknete Pfefferminze mag kochendes Wasser und 5 bis 7 Minuten; deck die Tasse ab, damit das Aroma bleibt.",
+      "Bei frischer Minze eine Handvoll Blätter leicht andrücken und heißes Wasser darübergießen, für einen frischen, grünen Geschmack.",
+      "In Marokko ist Minztee grüner Gunpowder-Tee mit frischer Nana-Minze und Zucker, aus der Höhe eingeschenkt."
+     ],
+     "q": "Magst du lieber den Geschmack frischer oder getrockneter Minze?",
+     "c": "Mach eine Tasse mit frischen Minzblättern und eine mit getrockneter Minze und vergleiche die Frische."
+    },
+    "es": {
+     "t": "Menta piperita y hierbabuena fresca",
+     "g": "Prepara menta seca y fresca y disfruta de su sabor refrescante.",
+     "p": [
+      "La menta piperita seca quiere agua hirviendo y 5-7 minutos; tapa la taza para conservar el aroma.",
+      "Con menta fresca, aplasta un poco un puñado de hojas y vierte agua caliente para un sabor verde y vivo.",
+      "En Marruecos, el té a la menta es té verde gunpowder con hierbabuena fresca y azúcar, servido desde lo alto."
+     ],
+     "q": "¿Prefieres el sabor de la menta fresca o el de la seca?",
+     "c": "Prepara una taza con hojas de menta fresca y otra con menta seca, y compara su frescor."
+    },
+    "fr": {
+     "t": "Menthe poivrée et menthe fraîche",
+     "g": "Infuse la menthe séchée et fraîche et savoure son goût rafraîchissant.",
+     "p": [
+      "La menthe poivrée séchée aime l'eau bouillante et 5 à 7 minutes ; couvre la tasse pour garder l'arôme.",
+      "Pour la menthe fraîche, froisse légèrement une poignée de feuilles et verse l'eau chaude dessus pour un goût vert et vif.",
+      "Au Maroc, le thé à la menthe associe thé vert gunpowder, menthe verte fraîche et sucre, versé de haut."
+     ],
+     "q": "Préfères-tu le goût de la menthe fraîche ou séchée ?",
+     "c": "Prépare une tasse avec des feuilles de menthe fraîche et une avec de la menthe séchée, et compare leur fraîcheur."
+    },
+    "it": {
+     "t": "Menta piperita e menta fresca",
+     "g": "Prepara menta secca e fresca e goditi il suo gusto rinfrescante.",
+     "p": [
+      "La menta piperita secca vuole acqua bollente e 5-7 minuti; copri la tazza per trattenere l'aroma.",
+      "Con la menta fresca, schiaccia appena una manciata di foglie e versaci sopra acqua calda per un gusto verde e vivace.",
+      "In Marocco il tè alla menta è tè verde gunpowder con menta fresca e zucchero, versato dall'alto."
+     ],
+     "q": "Preferisci il gusto della menta fresca o di quella secca?",
+     "c": "Prepara una tazza con foglie di menta fresca e una con menta secca, e confronta la freschezza."
+    },
+    "pt": {
+     "t": "Hortelã-pimenta e hortelã fresca",
+     "g": "Prepara hortelã seca e fresca e aprecia o seu sabor refrescante.",
+     "p": [
+      "A hortelã-pimenta seca gosta de água a ferver e 5 a 7 minutos; tapa a chávena para guardar o aroma.",
+      "Com hortelã fresca, esmaga levemente um punhado de folhas e deita água quente por cima, para um sabor verde e vivo.",
+      "Em Marrocos, o chá de menta é chá verde gunpowder com hortelã fresca e açúcar, servido do alto."
+     ],
+     "q": "Preferes o sabor da hortelã fresca ou da seca?",
+     "c": "Faz uma chávena com folhas de hortelã fresca e outra com hortelã seca, e compara a frescura."
+    },
+    "pt_BR": {
+     "t": "Hortelã-pimenta e hortelã fresca",
+     "g": "Prepare hortelã seca e fresca e curta o sabor refrescante que ela traz.",
+     "p": [
+      "A hortelã-pimenta seca gosta de água fervente e 5 a 7 minutos; tampe a xícara para manter o aroma.",
+      "Com hortelã fresca, amasse de leve um punhado de folhas e jogue água quente por cima, para um sabor verde e vivo.",
+      "No Marrocos, o chá de menta é chá verde gunpowder com hortelã fresca e açúcar, servido do alto."
+     ],
+     "q": "Você prefere o sabor da hortelã fresca ou da seca?",
+     "c": "Faça uma xícara com folhas de hortelã fresca e outra com hortelã seca, e compare o frescor."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rooibos from South Africa",
+     "g": "Discover rooibos, a red, caffeine-free bush infusion with a sweet, nutty taste, and how to brew it.",
+     "p": [
+      "Rooibos, 'red bush' in Afrikaans, grows almost only in the Cederberg region of South Africa's Western Cape.",
+      "Its needle-like leaves are oxidised to turn red; green rooibos is unoxidised and lighter.",
+      "Brew with boiling water for 5 minutes or more; it rarely turns bitter and is lovely with milk."
+     ],
+     "q": "Have you tried rooibos, and would you drink it plain or with milk?",
+     "c": "Brew rooibos for 5 minutes, then let a second cup steep for 10, and see if it turns bitter."
+    },
+    "de": {
+     "t": "Rooibos aus Südafrika",
+     "g": "Entdecke Rooibos, einen roten, koffeinfreien Strauchaufguss mit süßem, nussigem Geschmack, und wie man ihn zubereitet.",
+     "p": [
+      "Rooibos, Afrikaans für roter Busch, wächst fast nur in der Cederberg-Region im Westkap Südafrikas.",
+      "Seine nadelartigen Blätter werden oxidiert und färben sich rot; grüner Rooibos ist unoxidiert und leichter.",
+      "Mit kochendem Wasser 5 Minuten oder länger ziehen lassen; er wird selten bitter und schmeckt toll mit Milch."
+     ],
+     "q": "Hast du Rooibos probiert, und würdest du ihn pur oder mit Milch trinken?",
+     "c": "Brühe Rooibos 5 Minuten, lass eine zweite Tasse 10 Minuten ziehen und prüfe, ob er bitter wird."
+    },
+    "es": {
+     "t": "Rooibos de Sudáfrica",
+     "g": "Descubre el rooibos, una infusión roja de arbusto sin cafeína, de sabor dulce y a frutos secos, y cómo prepararla.",
+     "p": [
+      "Rooibos, 'arbusto rojo' en afrikáans, crece casi solo en la región del Cederberg, en el Cabo Occidental de Sudáfrica.",
+      "Sus hojas como agujas se oxidan y se vuelven rojas; el rooibos verde no se oxida y es más ligero.",
+      "Prepáralo con agua hirviendo 5 minutos o más; casi nunca amarga y está delicioso con leche."
+     ],
+     "q": "¿Has probado el rooibos? ¿Lo tomarías solo o con leche?",
+     "c": "Prepara rooibos 5 minutos, deja otra taza 10 minutos y comprueba si amarga."
+    },
+    "fr": {
+     "t": "Le rooibos d'Afrique du Sud",
+     "g": "Découvre le rooibos, une infusion rouge d'arbuste sans caféine, au goût doux et de noisette, et comment l'infuser.",
+     "p": [
+      "Rooibos, « buisson rouge » en afrikaans, pousse presque uniquement dans la région du Cederberg, au Cap-Occidental.",
+      "Ses feuilles en aiguilles sont oxydées et deviennent rouges ; le rooibos vert n'est pas oxydé et reste plus léger.",
+      "Infuse-le à l'eau bouillante 5 minutes ou plus ; il devient rarement amer et se marie bien avec le lait."
+     ],
+     "q": "As-tu déjà goûté le rooibos, et le boirais-tu nature ou avec du lait ?",
+     "c": "Infuse un rooibos 5 minutes, laisse une seconde tasse 10 minutes et vérifie s'il devient amer."
+    },
+    "it": {
+     "t": "Il rooibos del Sudafrica",
+     "g": "Scopri il rooibos, un infuso rosso di arbusto senza caffeina, dal gusto dolce e di nocciola, e come prepararlo.",
+     "p": [
+      "Rooibos, 'cespuglio rosso' in afrikaans, cresce quasi solo nella regione del Cederberg, nel Capo Occidentale.",
+      "Le sue foglie ad ago vengono ossidate e diventano rosse; il rooibos verde non è ossidato ed è più leggero.",
+      "Preparalo con acqua bollente per 5 minuti o più; raramente diventa amaro ed è ottimo con il latte."
+     ],
+     "q": "Hai provato il rooibos? Lo berresti liscio o con il latte?",
+     "c": "Prepara il rooibos per 5 minuti, lascia una seconda tazza per 10 e verifica se diventa amaro."
+    },
+    "pt": {
+     "t": "Rooibos da África do Sul",
+     "g": "Descobre o rooibos, uma infusão vermelha de arbusto sem cafeína, de sabor doce e a frutos secos, e como prepará-la.",
+     "p": [
+      "Rooibos, 'arbusto vermelho' em africânder, cresce quase só na região de Cederberg, no Cabo Ocidental da África do Sul.",
+      "As folhas em forma de agulha são oxidadas e ficam vermelhas; o rooibos verde não é oxidado e é mais leve.",
+      "Prepara-o com água a ferver 5 minutos ou mais; raramente amarga e fica ótimo com leite."
+     ],
+     "q": "Já provaste rooibos? Bebê-lo-ias simples ou com leite?",
+     "c": "Prepara rooibos 5 minutos, deixa uma segunda chávena 10 minutos e vê se amarga."
+    },
+    "pt_BR": {
+     "t": "Rooibos da África do Sul",
+     "g": "Descubra o rooibos, uma infusão vermelha de arbusto sem cafeína, de sabor doce e de castanhas, e como prepará-la.",
+     "p": [
+      "Rooibos, 'arbusto vermelho' em africâner, cresce quase só na região de Cederberg, no Cabo Ocidental da África do Sul.",
+      "As folhas em forma de agulha são oxidadas e ficam vermelhas; o rooibos verde não é oxidado e é mais leve.",
+      "Prepare com água fervente por 5 minutos ou mais; ele raramente amarga e fica ótimo com leite."
+     ],
+     "q": "Você já provou rooibos? Tomaria puro ou com leite?",
+     "c": "Prepare rooibos por 5 minutos, deixe uma segunda xícara por 10 e veja se ele amarga."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hibiscus and fruit infusions",
+     "g": "Enjoy bright red, tangy hibiscus and dried fruit blends, served hot or cold.",
+     "p": [
+      "Hibiscus infusions use the dried red calyces of the roselle flower and taste tart, like cranberry.",
+      "It is loved worldwide: agua de jamaica in Mexico, karkadé in Egypt and bissap in West Africa.",
+      "Fruit blends of dried apple, berries and hibiscus need boiling water and 5 to 10 minutes."
+     ],
+     "q": "Do you like tangy, fruity drinks, or do you prefer gentle flavours?",
+     "c": "Brew a hibiscus or fruit infusion, chill half of it, and decide if you prefer it hot or cold."
+    },
+    "de": {
+     "t": "Hibiskus und Früchteaufgüsse",
+     "g": "Genieße leuchtend roten, säuerlichen Hibiskus und Mischungen aus getrockneten Früchten, heiß oder kalt.",
+     "p": [
+      "Hibiskusaufgüsse nutzen die getrockneten roten Kelche der Roselle-Blüte und schmecken herb-säuerlich wie Cranberry.",
+      "Er ist weltweit beliebt: Agua de Jamaica in Mexiko, Karkadeh in Ägypten und Bissap in Westafrika.",
+      "Früchtemischungen aus Apfel, Beeren und Hibiskus brauchen kochendes Wasser und 5 bis 10 Minuten."
+     ],
+     "q": "Magst du säuerliche, fruchtige Getränke, oder lieber sanfte Aromen?",
+     "c": "Brühe einen Hibiskus- oder Früchteaufguss, kühle die Hälfte und entscheide, ob du ihn heiß oder kalt lieber magst."
+    },
+    "es": {
+     "t": "Hibisco e infusiones de frutas",
+     "g": "Disfruta del hibisco, rojo intenso y ácido, y de las mezclas de frutas secas, en caliente o en frío.",
+     "p": [
+      "Las infusiones de hibisco usan los cálices rojos secos de la flor de jamaica y saben ácidas, como el arándano rojo.",
+      "Se adora en todo el mundo: agua de jamaica en México, karkadé en Egipto y bissap en África Occidental.",
+      "Las mezclas de manzana seca, frutos rojos e hibisco piden agua hirviendo y 5-10 minutos."
+     ],
+     "q": "¿Te gustan las bebidas ácidas y afrutadas o prefieres sabores suaves?",
+     "c": "Prepara una infusión de hibisco o de frutas, enfría la mitad y decide si la prefieres caliente o fría."
+    },
+    "fr": {
+     "t": "Hibiscus et infusions de fruits",
+     "g": "Savoure l'hibiscus, rouge vif et acidulé, et les mélanges de fruits secs, chauds ou froids.",
+     "p": [
+      "Les infusions d'hibiscus utilisent les calices rouges séchés de l'oseille de Guinée et ont un goût acidulé, proche de la canneberge.",
+      "On l'aime partout : agua de jamaica au Mexique, karkadé en Égypte et bissap en Afrique de l'Ouest.",
+      "Les mélanges de pomme séchée, baies et hibiscus demandent de l'eau bouillante et 5 à 10 minutes."
+     ],
+     "q": "Aimes-tu les boissons acidulées et fruitées, ou préfères-tu les saveurs douces ?",
+     "c": "Infuse un hibiscus ou un mélange fruité, refroidis-en la moitié et choisis : chaud ou froid ?"
+    },
+    "it": {
+     "t": "Ibisco e infusi di frutta",
+     "g": "Goditi l'ibisco, rosso acceso e acidulo, e le miscele di frutta secca, calde o fredde.",
+     "p": [
+      "Gli infusi di ibisco usano i calici rossi essiccati della carcadè e hanno un gusto acidulo, simile al mirtillo rosso.",
+      "È amato in tutto il mondo: agua de jamaica in Messico, karkadè in Egitto e bissap in Africa occidentale.",
+      "Le miscele di mela essiccata, frutti di bosco e ibisco vogliono acqua bollente e 5-10 minuti."
+     ],
+     "q": "Ti piacciono le bevande acidule e fruttate o preferisci sapori delicati?",
+     "c": "Prepara un infuso di ibisco o di frutta, raffreddane metà e decidi se lo preferisci caldo o freddo."
+    },
+    "pt": {
+     "t": "Hibisco e infusões de fruta",
+     "g": "Aprecia o hibisco, vermelho vivo e ácido, e as misturas de fruta seca, quentes ou frias.",
+     "p": [
+      "As infusões de hibisco usam os cálices vermelhos secos da flor de rosela e sabem ácidas, como o arando.",
+      "É adorado no mundo inteiro: agua de jamaica no México, karkadé no Egito e bissap na África Ocidental.",
+      "As misturas de maçã seca, frutos vermelhos e hibisco pedem água a ferver e 5 a 10 minutos."
+     ],
+     "q": "Gostas de bebidas ácidas e frutadas, ou preferes sabores suaves?",
+     "c": "Prepara uma infusão de hibisco ou de fruta, arrefece metade e decide se a preferes quente ou fria."
+    },
+    "pt_BR": {
+     "t": "Hibisco e infusões de frutas",
+     "g": "Curta o hibisco, vermelho vivo e azedinho, e os blends de frutas secas, quentes ou gelados.",
+     "p": [
+      "As infusões de hibisco usam os cálices vermelhos secos da vinagreira e têm sabor ácido, parecido com o cranberry.",
+      "É adorado no mundo todo: agua de jamaica no México, karkadé no Egito e bissap na África Ocidental.",
+      "Blends de maçã seca, frutas vermelhas e hibisco pedem água fervente e 5 a 10 minutos."
+     ],
+     "q": "Você gosta de bebidas azedinhas e frutadas, ou prefere sabores suaves?",
+     "c": "Prepare uma infusão de hibisco ou de frutas, gele metade e decida se prefere quente ou gelada."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ginger and spice infusions",
+     "g": "Brew fresh ginger, cinnamon and clove, and learn when spices are simmered or steeped.",
+     "p": [
+      "Hard spices like ginger slices, cinnamon sticks and cloves release flavour best when simmered for 5 to 10 minutes.",
+      "Crushing or slicing spices exposes more surface, so the brew becomes stronger and spicier.",
+      "These spices are also the base of masala chai, simmered with black tea and milk in India."
+     ],
+     "q": "Which spice do you love most in drinks or desserts?",
+     "c": "Simmer a few slices of fresh ginger with a cinnamon stick for 10 minutes and taste the warmth."
+    },
+    "de": {
+     "t": "Ingwer- und Gewürzaufgüsse",
+     "g": "Bereite frischen Ingwer, Zimt und Nelken zu und lerne, wann Gewürze gekocht oder nur übergossen werden.",
+     "p": [
+      "Harte Gewürze wie Ingwerscheiben, Zimtstangen und Nelken geben ihr Aroma am besten ab, wenn sie 5 bis 10 Minuten köcheln.",
+      "Zerdrückte oder geschnittene Gewürze haben mehr Oberfläche, der Aufguss wird kräftiger und würziger.",
+      "Diese Gewürze sind auch die Basis von Masala Chai, der in Indien mit Schwarztee und Milch gekocht wird."
+     ],
+     "q": "Welches Gewürz liebst du am meisten in Getränken oder Desserts?",
+     "c": "Lass ein paar Scheiben frischen Ingwer mit einer Zimtstange 10 Minuten köcheln und schmecke die Wärme."
+    },
+    "es": {
+     "t": "Infusiones de jengibre y especias",
+     "g": "Prepara jengibre fresco, canela y clavo, y aprende cuándo las especias se hierven o se infusionan.",
+     "p": [
+      "Las especias duras, como rodajas de jengibre, ramas de canela y clavos, sueltan mejor su sabor hirviendo 5-10 minutos.",
+      "Machacar o cortar las especias deja más superficie expuesta, y la infusión sale más intensa y especiada.",
+      "Estas especias son también la base del masala chai, que en la India se hierve con té negro y leche."
+     ],
+     "q": "¿Qué especia te gusta más en bebidas o postres?",
+     "c": "Hierve unas rodajas de jengibre fresco con una rama de canela 10 minutos y saborea su calidez."
+    },
+    "fr": {
+     "t": "Infusions de gingembre et d'épices",
+     "g": "Prépare gingembre frais, cannelle et clou de girofle, et apprends quand les épices mijotent ou infusent.",
+     "p": [
+      "Les épices dures, comme les tranches de gingembre, la cannelle en bâton et les clous, donnent mieux leur goût en mijotant 5 à 10 minutes.",
+      "Écraser ou trancher les épices augmente la surface, et l'infusion devient plus forte et plus épicée.",
+      "Ces épices sont aussi la base du masala chai, mijoté en Inde avec du thé noir et du lait."
+     ],
+     "q": "Quelle épice aimes-tu le plus dans les boissons ou les desserts ?",
+     "c": "Fais mijoter quelques tranches de gingembre frais avec un bâton de cannelle 10 minutes et goûte cette chaleur."
+    },
+    "it": {
+     "t": "Infusi di zenzero e spezie",
+     "g": "Prepara zenzero fresco, cannella e chiodi di garofano, e scopri quando le spezie si fanno sobbollire o si mettono in infusione.",
+     "p": [
+      "Le spezie dure, come fettine di zenzero, stecche di cannella e chiodi di garofano, rendono meglio sobbollendo 5-10 minuti.",
+      "Schiacciare o tagliare le spezie espone più superficie, e l'infuso diventa più forte e speziato.",
+      "Queste spezie sono anche la base del masala chai, che in India si fa sobbollire con tè nero e latte."
+     ],
+     "q": "Quale spezia ami di più nelle bevande o nei dolci?",
+     "c": "Fai sobbollire qualche fettina di zenzero fresco con una stecca di cannella per 10 minuti e assapora il calore."
+    },
+    "pt": {
+     "t": "Infusões de gengibre e especiarias",
+     "g": "Prepara gengibre fresco, canela e cravinho, e aprende quando as especiarias se fervem ou se infundem.",
+     "p": [
+      "As especiarias duras, como rodelas de gengibre, paus de canela e cravinhos, soltam melhor o sabor a ferver 5 a 10 minutos.",
+      "Esmagar ou cortar as especiarias expõe mais superfície, e a infusão fica mais forte e picante.",
+      "Estas especiarias são também a base do masala chai, que na Índia se ferve com chá preto e leite."
+     ],
+     "q": "Que especiaria mais adoras em bebidas ou sobremesas?",
+     "c": "Ferve umas rodelas de gengibre fresco com um pau de canela durante 10 minutos e prova o calor."
+    },
+    "pt_BR": {
+     "t": "Infusões de gengibre e especiarias",
+     "g": "Prepare gengibre fresco, canela e cravo, e aprenda quando as especiarias são fervidas ou só infusionadas.",
+     "p": [
+      "Especiarias duras, como rodelas de gengibre, canela em pau e cravos, soltam melhor o sabor fervendo de 5 a 10 minutos.",
+      "Amassar ou cortar as especiarias expõe mais superfície, e a infusão fica mais forte e picante.",
+      "Essas especiarias também são a base do masala chai, fervido na Índia com chá preto e leite."
+     ],
+     "q": "Qual especiaria você mais ama em bebidas ou sobremesas?",
+     "c": "Ferva algumas rodelas de gengibre fresco com um pau de canela por 10 minutos e sinta o calor."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea and the senses",
+     "g": "Make looking part of tasting: study the dry leaf, the wet leaf and the colour of the liquor.",
+     "p": [
+      "Dry leaf shows shape, size and care: whole, even leaves often signal a carefully made tea.",
+      "Wet leaves reveal the real leaf: buds, whole leaves or broken pieces, and their colour after oxidation.",
+      "Liquor colour hints at style: pale green-gold for greens, amber for oolongs, copper-red for black teas."
+     ],
+     "q": "Do you ever look closely at your tea before you drink it?",
+     "c": "Put dry leaf, wet leaf and a cup of tea side by side on a white plate and describe each one."
+    },
+    "de": {
+     "t": "Tee und die Sinne",
+     "g": "Mach das Schauen zum Teil der Verkostung: Betrachte trockenes Blatt, nasses Blatt und die Farbe des Aufgusses.",
+     "p": [
+      "Das trockene Blatt zeigt Form, Größe und Sorgfalt: ganze, gleichmäßige Blätter deuten oft auf einen sorgfältigen Tee.",
+      "Nasse Blätter zeigen das wahre Blatt: Knospen, ganze Blätter oder Bruch und ihre Farbe nach der Oxidation.",
+      "Die Aufgussfarbe verrät den Stil: hell grüngolden bei Grüntee, bernsteinfarben bei Oolong, kupferrot bei Schwarztee."
+     ],
+     "q": "Schaust du dir deinen Tee manchmal genau an, bevor du ihn trinkst?",
+     "c": "Leg trockenes Blatt, nasses Blatt und eine Tasse Tee nebeneinander auf einen weißen Teller und beschreibe alles."
+    },
+    "es": {
+     "t": "El té y los sentidos",
+     "g": "Haz que mirar forme parte de la cata: observa la hoja seca, la hoja húmeda y el color de la infusión.",
+     "p": [
+      "La hoja seca muestra forma, tamaño y cuidado: hojas enteras y uniformes suelen indicar un té bien hecho.",
+      "Las hojas húmedas revelan la hoja real: brotes, hojas enteras o trozos, y su color tras la oxidación.",
+      "El color de la infusión da pistas del estilo: verde dorado pálido en verdes, ámbar en oolong, rojo cobrizo en negros."
+     ],
+     "q": "¿Sueles mirar de cerca tu té antes de beberlo?",
+     "c": "Pon hoja seca, hoja húmeda y una taza de té juntas sobre un plato blanco y describe cada una."
+    },
+    "fr": {
+     "t": "Le thé et les sens",
+     "g": "Fais du regard une partie de la dégustation : observe la feuille sèche, la feuille infusée et la couleur de la liqueur.",
+     "p": [
+      "La feuille sèche montre forme, taille et soin : des feuilles entières et régulières signalent souvent un thé soigné.",
+      "Les feuilles infusées révèlent la vraie feuille : bourgeons, feuilles entières ou brisures, et leur couleur après oxydation.",
+      "La couleur de la liqueur donne des indices : or-vert pâle pour les verts, ambre pour les oolongs, rouge cuivré pour les noirs."
+     ],
+     "q": "Regardes-tu parfois ton thé attentivement avant de le boire ?",
+     "c": "Place feuille sèche, feuille infusée et une tasse de thé côte à côte sur une assiette blanche et décris chacune."
+    },
+    "it": {
+     "t": "Il tè e i sensi",
+     "g": "Fai dell'osservazione una parte dell'assaggio: guarda la foglia secca, la foglia bagnata e il colore dell'infuso.",
+     "p": [
+      "La foglia secca mostra forma, dimensione e cura: foglie intere e regolari spesso indicano un tè lavorato con attenzione.",
+      "Le foglie bagnate rivelano la foglia vera: germogli, foglie intere o frammenti, e il loro colore dopo l'ossidazione.",
+      "Il colore dell'infuso suggerisce lo stile: verde-oro pallido per i verdi, ambra per gli oolong, rosso rame per i neri."
+     ],
+     "q": "Ti capita di osservare bene il tè prima di berlo?",
+     "c": "Metti foglia secca, foglia bagnata e una tazza di tè una accanto all'altra su un piatto bianco e descrivile."
+    },
+    "pt": {
+     "t": "O chá e os sentidos",
+     "g": "Faz do olhar parte da prova: observa a folha seca, a folha molhada e a cor da infusão.",
+     "p": [
+      "A folha seca mostra forma, tamanho e cuidado: folhas inteiras e regulares indicam muitas vezes um chá bem feito.",
+      "As folhas molhadas revelam a folha real: rebentos, folhas inteiras ou pedaços, e a sua cor após a oxidação.",
+      "A cor da infusão dá pistas do estilo: verde-dourado claro nos verdes, âmbar nos oolongs, vermelho-acobreado nos pretos."
+     ],
+     "q": "Costumas olhar com atenção para o teu chá antes de o beber?",
+     "c": "Põe folha seca, folha molhada e uma chávena de chá lado a lado num prato branco e descreve cada uma."
+    },
+    "pt_BR": {
+     "t": "O chá e os sentidos",
+     "g": "Faça do olhar parte da degustação: observe a folha seca, a folha molhada e a cor da infusão.",
+     "p": [
+      "A folha seca mostra forma, tamanho e cuidado: folhas inteiras e uniformes costumam indicar um chá bem feito.",
+      "As folhas molhadas revelam a folha real: brotos, folhas inteiras ou pedaços, e sua cor depois da oxidação.",
+      "A cor da infusão dá pistas do estilo: verde-dourado claro nos verdes, âmbar nos oolongs, vermelho-cobre nos pretos."
+     ],
+     "q": "Você costuma olhar com atenção para seu chá antes de beber?",
+     "c": "Coloque folha seca, folha molhada e uma xícara de chá lado a lado num prato branco e descreva cada uma."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smelling the wet leaves",
+     "g": "Learn why the aroma of steeped leaves tells you so much about a tea.",
+     "p": [
+      "Warm, wet leaves release aromas strongly, often more clearly than the tea in the cup.",
+      "Lift the lid of the pot or the infuser and breathe in gently: you may find flowers, fruit, toast or sea air.",
+      "Professional tasters always smell the wet leaf, because it also shows freshness and any flaws."
+     ],
+     "q": "What is your favourite natural smell, and have you ever found it in a tea?",
+     "c": "After brewing today, smell the wet leaves before you drink and write down the first three things they remind you of."
+    },
+    "de": {
+     "t": "An nassen Blättern riechen",
+     "g": "Lerne, warum der Duft aufgegossener Blätter so viel über einen Tee verrät.",
+     "p": [
+      "Warme, nasse Blätter verströmen ihre Aromen stark, oft deutlicher als der Tee in der Tasse.",
+      "Heb den Deckel der Kanne oder das Sieb an und atme sanft ein: Vielleicht findest du Blüten, Obst, Toast oder Meeresluft.",
+      "Profis riechen immer am nassen Blatt, denn es zeigt auch Frische und mögliche Fehler."
+     ],
+     "q": "Was ist dein liebster natürlicher Duft, und hast du ihn schon einmal in einem Tee gefunden?",
+     "c": "Riech heute nach dem Aufgießen an den nassen Blättern und notiere die ersten drei Dinge, an die sie dich erinnern."
+    },
+    "es": {
+     "t": "Oler las hojas húmedas",
+     "g": "Aprende por qué el aroma de las hojas infusionadas dice tanto de un té.",
+     "p": [
+      "Las hojas calientes y húmedas liberan aromas con fuerza, a menudo con más claridad que el té de la taza.",
+      "Levanta la tapa de la tetera o el infusor y respira suave: quizá encuentres flores, fruta, tostado o brisa marina.",
+      "Los catadores profesionales siempre huelen la hoja húmeda, porque muestra también frescura y defectos."
+     ],
+     "q": "¿Cuál es tu olor natural favorito? ¿Lo has encontrado alguna vez en un té?",
+     "c": "Hoy, tras preparar el té, huele las hojas húmedas antes de beber y anota las tres primeras cosas que te recuerdan."
+    },
+    "fr": {
+     "t": "Sentir les feuilles infusées",
+     "g": "Apprends pourquoi l'arôme des feuilles infusées en dit tant sur un thé.",
+     "p": [
+      "Les feuilles chaudes et humides libèrent fortement leurs arômes, souvent plus nettement que le thé dans la tasse.",
+      "Soulève le couvercle de la théière ou l'infuseur et inspire doucement : fleurs, fruits, pain grillé ou air marin peut-être.",
+      "Les dégustateurs professionnels sentent toujours la feuille infusée, qui révèle aussi fraîcheur et défauts."
+     ],
+     "q": "Quelle est ton odeur naturelle préférée, et l'as-tu déjà retrouvée dans un thé ?",
+     "c": "Après l'infusion du jour, sens les feuilles avant de boire et note les trois premières choses qu'elles t'évoquent."
+    },
+    "it": {
+     "t": "Annusare le foglie bagnate",
+     "g": "Scopri perché il profumo delle foglie infuse dice così tanto su un tè.",
+     "p": [
+      "Le foglie calde e bagnate sprigionano gli aromi con forza, spesso più chiaramente del tè in tazza.",
+      "Solleva il coperchio della teiera o l'infusore e respira piano: potresti trovare fiori, frutta, tostato o aria di mare.",
+      "Gli assaggiatori professionisti annusano sempre la foglia bagnata, perché rivela anche freschezza e difetti."
+     ],
+     "q": "Qual è il tuo profumo naturale preferito? L'hai mai ritrovato in un tè?",
+     "c": "Oggi, dopo l'infusione, annusa le foglie bagnate prima di bere e annota le prime tre cose che ti ricordano."
+    },
+    "pt": {
+     "t": "Cheirar as folhas molhadas",
+     "g": "Aprende porque o aroma das folhas infundidas diz tanto sobre um chá.",
+     "p": [
+      "As folhas quentes e molhadas libertam aromas com força, muitas vezes com mais clareza do que o chá na chávena.",
+      "Levanta a tampa do bule ou o infusor e inspira devagar: talvez encontres flores, fruta, tostado ou ar do mar.",
+      "Os provadores profissionais cheiram sempre a folha molhada, porque mostra também a frescura e os defeitos."
+     ],
+     "q": "Qual é o teu cheiro natural preferido? Já o encontraste num chá?",
+     "c": "Hoje, depois de preparar o chá, cheira as folhas molhadas antes de beber e escreve as três primeiras coisas que te lembram."
+    },
+    "pt_BR": {
+     "t": "Cheirando as folhas molhadas",
+     "g": "Aprenda por que o aroma das folhas infusionadas diz tanto sobre um chá.",
+     "p": [
+      "Folhas quentes e molhadas soltam aromas com força, muitas vezes com mais clareza do que o chá na xícara.",
+      "Levante a tampa do bule ou o infusor e inspire devagar: talvez encontre flores, fruta, tostado ou brisa do mar.",
+      "Degustadores profissionais sempre cheiram a folha molhada, porque ela mostra também o frescor e os defeitos."
+     ],
+     "q": "Qual é o seu cheiro natural favorito? Você já encontrou ele num chá?",
+     "c": "Hoje, depois de preparar o chá, cheire as folhas molhadas antes de beber e anote as três primeiras coisas que elas lembram."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mouthfeel and body",
+     "g": "Learn to feel tea as well as taste it: thin, silky, creamy or full.",
+     "p": [
+      "Body is the weight of the tea in your mouth, from light like water to full like milk.",
+      "Texture words include silky, smooth, creamy and, for strong teas, drying or astringent.",
+      "White and green teas are often light and silky; Assam and ripe pu-erh feel full and rich."
+     ],
+     "q": "Do you prefer drinks that feel light or ones that feel rich and full?",
+     "c": "Sip water, then a light tea, then a strong tea, and rank how heavy each one feels in your mouth."
+    },
+    "de": {
+     "t": "Mundgefühl und Körper",
+     "g": "Lerne, Tee zu fühlen und nicht nur zu schmecken: dünn, seidig, cremig oder voll.",
+     "p": [
+      "Körper ist das Gewicht des Tees im Mund, von leicht wie Wasser bis voll wie Milch.",
+      "Texturwörter sind seidig, weich, cremig und bei kräftigen Tees trocknend oder adstringierend.",
+      "Weiße und grüne Tees sind oft leicht und seidig; Assam und reifer Pu-Erh wirken voll und reich."
+     ],
+     "q": "Magst du lieber Getränke, die sich leicht anfühlen, oder solche, die reich und voll sind?",
+     "c": "Trink Wasser, dann einen leichten, dann einen kräftigen Tee und ordne, wie schwer sich jeder im Mund anfühlt."
+    },
+    "es": {
+     "t": "Textura y cuerpo",
+     "g": "Aprende a sentir el té además de saborearlo: ligero, sedoso, cremoso o con cuerpo.",
+     "p": [
+      "El cuerpo es el peso del té en la boca, desde ligero como el agua hasta lleno como la leche.",
+      "Palabras de textura: sedoso, suave, cremoso y, en tés fuertes, secante o astringente.",
+      "Los tés blancos y verdes suelen ser ligeros y sedosos; el Assam y el pu-erh maduro se sienten plenos y ricos."
+     ],
+     "q": "¿Prefieres bebidas ligeras o con mucho cuerpo?",
+     "c": "Bebe agua, luego un té ligero y luego uno fuerte, y ordena cuánto pesa cada uno en la boca."
+    },
+    "fr": {
+     "t": "Texture et corps",
+     "g": "Apprends à sentir le thé autant qu'à le goûter : léger, soyeux, crémeux ou plein.",
+     "p": [
+      "Le corps, c'est le poids du thé en bouche, de léger comme l'eau à plein comme le lait.",
+      "Mots de texture : soyeux, rond, crémeux et, pour les thés corsés, asséchant ou astringent.",
+      "Les thés blancs et verts sont souvent légers et soyeux ; l'Assam et le pu-erh cuit sont pleins et riches."
+     ],
+     "q": "Préfères-tu les boissons légères en bouche ou riches et pleines ?",
+     "c": "Bois de l'eau, puis un thé léger, puis un thé corsé, et classe-les selon leur poids en bouche."
+    },
+    "it": {
+     "t": "Sensazione in bocca e corpo",
+     "g": "Impara a sentire il tè oltre che a gustarlo: leggero, setoso, cremoso o pieno.",
+     "p": [
+      "Il corpo è il peso del tè in bocca, da leggero come l'acqua a pieno come il latte.",
+      "Parole per la consistenza: setoso, morbido, cremoso e, per i tè forti, asciugante o astringente.",
+      "Bianchi e verdi sono spesso leggeri e setosi; l'Assam e il pu-erh maturo risultano pieni e ricchi."
+     ],
+     "q": "Preferisci bevande leggere o ricche e corpose?",
+     "c": "Bevi acqua, poi un tè leggero, poi uno forte, e metti in ordine quanto pesa ciascuno in bocca."
+    },
+    "pt": {
+     "t": "Textura e corpo",
+     "g": "Aprende a sentir o chá e não só a prová-lo: leve, sedoso, cremoso ou encorpado.",
+     "p": [
+      "O corpo é o peso do chá na boca, desde leve como a água até cheio como o leite.",
+      "Palavras de textura: sedoso, suave, cremoso e, nos chás fortes, secante ou adstringente.",
+      "Os chás brancos e verdes são muitas vezes leves e sedosos; o Assam e o pu-erh maduro parecem cheios e ricos."
+     ],
+     "q": "Preferes bebidas leves ou ricas e encorpadas?",
+     "c": "Bebe água, depois um chá leve e depois um forte, e ordena quanto pesa cada um na boca."
+    },
+    "pt_BR": {
+     "t": "Textura e corpo",
+     "g": "Aprenda a sentir o chá e não só a provar: leve, sedoso, cremoso ou encorpado.",
+     "p": [
+      "O corpo é o peso do chá na boca, de leve como a água a cheio como o leite.",
+      "Palavras de textura: sedoso, macio, cremoso e, nos chás fortes, secante ou adstringente.",
+      "Chás brancos e verdes costumam ser leves e sedosos; o Assam e o pu-erh maduro parecem cheios e ricos."
+     ],
+     "q": "Você prefere bebidas leves ou ricas e encorpadas?",
+     "c": "Beba água, depois um chá leve e depois um forte, e ordene o quanto cada um pesa na boca."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The aftertaste",
+     "g": "Discover what tea lovers call a lingering finish and how to notice it in your cup.",
+     "p": [
+      "The finish is what stays after you swallow: sweetness, a floral echo or a pleasant dryness.",
+      "In Chinese tea culture, a sweet returning taste in the throat is called hui gan and is highly prized.",
+      "A long, clean finish is often a sign of a good tea; a short or harsh one may mean over-steeping."
+     ],
+     "q": "Have you ever noticed a taste that came back a few seconds after you swallowed?",
+     "c": "After your next sip, count slowly while the flavour lasts and note what you taste at the end."
+    },
+    "de": {
+     "t": "Der Nachklang",
+     "g": "Entdecke, was Teeliebhaber einen langen Abgang nennen und wie du ihn in deiner Tasse bemerkst.",
+     "p": [
+      "Der Abgang ist, was nach dem Schlucken bleibt: Süße, ein blumiges Echo oder eine angenehme Trockenheit.",
+      "In der chinesischen Teekultur heißt ein süßer, zurückkehrender Geschmack im Hals Hui Gan und wird sehr geschätzt.",
+      "Ein langer, klarer Abgang deutet oft auf guten Tee; ein kurzer oder harter kann auf zu langes Ziehen hinweisen."
+     ],
+     "q": "Hast du schon einmal einen Geschmack bemerkt, der Sekunden nach dem Schlucken zurückkam?",
+     "c": "Zähl nach deinem nächsten Schluck langsam, solange der Geschmack bleibt, und notiere, was du am Ende schmeckst."
+    },
+    "es": {
+     "t": "El regusto",
+     "g": "Descubre lo que los amantes del té llaman un final persistente y cómo notarlo en tu taza.",
+     "p": [
+      "El final es lo que queda al tragar: dulzor, un eco floral o una sequedad agradable.",
+      "En la cultura china del té, un dulzor que vuelve a la garganta se llama hui gan y se valora mucho.",
+      "Un final largo y limpio suele indicar un buen té; uno corto o áspero puede señalar una infusión demasiado larga."
+     ],
+     "q": "¿Has notado alguna vez un sabor que vuelve unos segundos después de tragar?",
+     "c": "Tras tu próximo sorbo, cuenta despacio mientras dura el sabor y anota qué notas al final."
+    },
+    "fr": {
+     "t": "L'arrière-goût",
+     "g": "Découvre ce que les amateurs appellent une finale persistante et comment la remarquer dans ta tasse.",
+     "p": [
+      "La finale, c'est ce qui reste après avoir avalé : douceur, écho floral ou agréable sécheresse.",
+      "Dans la culture chinoise du thé, une douceur qui revient en gorge s'appelle hui gan et est très appréciée.",
+      "Une finale longue et nette signale souvent un bon thé ; une finale courte ou dure peut venir d'une infusion trop longue."
+     ],
+     "q": "As-tu déjà remarqué un goût qui revient quelques secondes après avoir avalé ?",
+     "c": "Après ta prochaine gorgée, compte lentement tant que le goût dure et note ce que tu perçois à la fin."
+    },
+    "it": {
+     "t": "Il retrogusto",
+     "g": "Scopri ciò che gli amanti del tè chiamano un finale persistente e come notarlo nella tua tazza.",
+     "p": [
+      "Il finale è ciò che resta dopo aver deglutito: dolcezza, un'eco floreale o una piacevole secchezza.",
+      "Nella cultura cinese del tè, una dolcezza che ritorna in gola si chiama hui gan ed è molto apprezzata.",
+      "Un finale lungo e pulito spesso indica un buon tè; uno corto o aspro può derivare da un'infusione troppo lunga."
+     ],
+     "q": "Hai mai notato un sapore che ritorna qualche secondo dopo aver deglutito?",
+     "c": "Dopo il prossimo sorso, conta lentamente finché dura il sapore e annota cosa senti alla fine."
+    },
+    "pt": {
+     "t": "O final de boca",
+     "g": "Descobre o que os amantes de chá chamam um final persistente e como o notar na tua chávena.",
+     "p": [
+      "O final é o que fica depois de engolir: doçura, um eco floral ou uma secura agradável.",
+      "Na cultura chinesa do chá, uma doçura que volta à garganta chama-se hui gan e é muito apreciada.",
+      "Um final longo e limpo é muitas vezes sinal de bom chá; um curto ou áspero pode indicar infusão longa demais."
+     ],
+     "q": "Já reparaste num sabor que voltou uns segundos depois de engolires?",
+     "c": "Depois do próximo gole, conta devagar enquanto o sabor dura e anota o que sentes no fim."
+    },
+    "pt_BR": {
+     "t": "O retrogosto",
+     "g": "Descubra o que os amantes de chá chamam de final persistente e como perceber isso na sua xícara.",
+     "p": [
+      "O final é o que fica depois de engolir: doçura, um eco floral ou uma secura agradável.",
+      "Na cultura chinesa do chá, uma doçura que volta na garganta se chama hui gan e é muito valorizada.",
+      "Um final longo e limpo costuma indicar um bom chá; um curto ou áspero pode indicar infusão longa demais."
+     ],
+     "q": "Você já notou um sabor que voltou alguns segundos depois de engolir?",
+     "c": "Depois do próximo gole, conte devagar enquanto o sabor dura e anote o que sente no final."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparing two teas side by side",
+     "g": "Train your palate faster with a simple side-by-side comparison at home.",
+     "p": [
+      "Use the same amount of leaf, the same water, temperature and time, so only the tea changes.",
+      "Two identical white cups make colours easy to compare; label them so you do not mix them up.",
+      "Taste them in turn, go back and forth, and note what is different: aroma, body, sweetness, finish."
+     ],
+     "q": "Which two teas in your cupboard would be the most interesting to compare?",
+     "c": "Brew two different teas side by side today and write three differences you notice between them."
+    },
+    "de": {
+     "t": "Zwei Tees im direkten Vergleich",
+     "g": "Trainiere deinen Gaumen schneller mit einem einfachen Vergleich zweier Tees zu Hause.",
+     "p": [
+      "Nimm gleiche Blattmenge, gleiches Wasser, gleiche Temperatur und Zeit, damit sich nur der Tee unterscheidet.",
+      "Zwei gleiche weiße Tassen machen Farben leicht vergleichbar; beschrifte sie, damit du sie nicht verwechselst.",
+      "Probiere abwechselnd, hin und her, und notiere die Unterschiede: Aroma, Körper, Süße, Abgang."
+     ],
+     "q": "Welche zwei Tees in deinem Schrank wären am spannendsten zu vergleichen?",
+     "c": "Brühe heute zwei verschiedene Tees nebeneinander und schreib drei Unterschiede auf, die dir auffallen."
+    },
+    "es": {
+     "t": "Comparar dos tés lado a lado",
+     "g": "Entrena tu paladar más rápido con una sencilla comparación en casa.",
+     "p": [
+      "Usa la misma cantidad de hoja, la misma agua, temperatura y tiempo, para que solo cambie el té.",
+      "Dos tazas blancas iguales facilitan comparar colores; márcalas para no confundirlas.",
+      "Pruébalos por turnos, ve y vuelve, y anota qué cambia: aroma, cuerpo, dulzor, final."
+     ],
+     "q": "¿Qué dos tés de tu armario serían los más interesantes de comparar?",
+     "c": "Prepara hoy dos tés distintos a la vez y escribe tres diferencias que notes entre ellos."
+    },
+    "fr": {
+     "t": "Comparer deux thés côte à côte",
+     "g": "Entraîne ton palais plus vite avec une comparaison simple à la maison.",
+     "p": [
+      "Utilise la même quantité de feuilles, la même eau, température et durée, pour que seul le thé change.",
+      "Deux tasses blanches identiques facilitent la comparaison des couleurs ; étiquette-les pour ne pas les confondre.",
+      "Goûte-les tour à tour, fais des allers-retours et note les différences : arôme, corps, douceur, finale."
+     ],
+     "q": "Quels deux thés de ton placard seraient les plus intéressants à comparer ?",
+     "c": "Infuse aujourd'hui deux thés différents côte à côte et note trois différences que tu remarques."
+    },
+    "it": {
+     "t": "Confrontare due tè fianco a fianco",
+     "g": "Allena il palato più in fretta con un semplice confronto a casa.",
+     "p": [
+      "Usa la stessa quantità di foglie, la stessa acqua, temperatura e tempo, così cambia solo il tè.",
+      "Due tazze bianche uguali rendono facile confrontare i colori; etichettale per non confonderle.",
+      "Assaggiali a turno, avanti e indietro, e annota cosa cambia: aroma, corpo, dolcezza, finale."
+     ],
+     "q": "Quali due tè della tua dispensa sarebbero più interessanti da confrontare?",
+     "c": "Prepara oggi due tè diversi fianco a fianco e scrivi tre differenze che noti."
+    },
+    "pt": {
+     "t": "Comparar dois chás lado a lado",
+     "g": "Treina o teu paladar mais depressa com uma comparação simples em casa.",
+     "p": [
+      "Usa a mesma quantidade de folha, a mesma água, temperatura e tempo, para só o chá mudar.",
+      "Duas chávenas brancas iguais facilitam comparar as cores; identifica-as para não as trocares.",
+      "Prova-os à vez, vai e volta, e anota o que muda: aroma, corpo, doçura, final."
+     ],
+     "q": "Que dois chás do teu armário seriam mais interessantes de comparar?",
+     "c": "Prepara hoje dois chás diferentes lado a lado e escreve três diferenças que notes."
+    },
+    "pt_BR": {
+     "t": "Comparando dois chás lado a lado",
+     "g": "Treine seu paladar mais rápido com uma comparação simples em casa.",
+     "p": [
+      "Use a mesma quantidade de folha, a mesma água, temperatura e tempo, para só o chá mudar.",
+      "Duas xícaras brancas iguais facilitam comparar as cores; identifique cada uma para não confundir.",
+      "Prove um de cada vez, vá e volte, e anote o que muda: aroma, corpo, doçura, final."
+     ],
+     "q": "Quais dois chás do seu armário seriam mais interessantes de comparar?",
+     "c": "Prepare hoje dois chás diferentes lado a lado e escreva três diferenças que você percebe."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a tea notebook",
+     "g": "Record name, origin, brewing and impressions so you remember the teas you loved.",
+     "p": [
+      "Write the tea name, origin, where you got it and the date you tasted it.",
+      "Note how you brewed it: amount of leaf, water temperature, steep time and number of infusions.",
+      "Add tasting words and a simple score, so you can repeat a great cup or fix a disappointing one."
+     ],
+     "q": "Would you rather keep tea notes on paper or on your phone?",
+     "c": "Start your tea notebook today with one entry for the tea you drink most often."
+    },
+    "de": {
+     "t": "Ein Tee-Notizbuch führen",
+     "g": "Notiere Name, Herkunft, Zubereitung und Eindrücke, damit du dich an deine Lieblingstees erinnerst.",
+     "p": [
+      "Schreib Teename, Herkunft, Bezugsquelle und das Datum der Verkostung auf.",
+      "Notiere die Zubereitung: Blattmenge, Wassertemperatur, Ziehzeit und Anzahl der Aufgüsse.",
+      "Ergänze Geschmackswörter und eine einfache Note, um eine tolle Tasse zu wiederholen oder eine enttäuschende zu verbessern."
+     ],
+     "q": "Würdest du Teenotizen lieber auf Papier oder im Handy führen?",
+     "c": "Beginne heute dein Tee-Notizbuch mit einem Eintrag zu dem Tee, den du am häufigsten trinkst."
+    },
+    "es": {
+     "t": "Llevar un cuaderno de té",
+     "g": "Anota nombre, origen, preparación e impresiones para recordar los tés que te encantaron.",
+     "p": [
+      "Escribe el nombre del té, su origen, dónde lo conseguiste y la fecha en que lo probaste.",
+      "Apunta cómo lo preparaste: cantidad de hoja, temperatura del agua, tiempo e infusiones.",
+      "Añade palabras de cata y una nota sencilla, para repetir una gran taza o corregir una decepcionante."
+     ],
+     "q": "¿Prefieres tomar notas de té en papel o en el móvil?",
+     "c": "Empieza hoy tu cuaderno de té con una entrada sobre el té que más bebes."
+    },
+    "fr": {
+     "t": "Tenir un carnet de thé",
+     "g": "Note nom, origine, préparation et impressions pour te souvenir des thés que tu as aimés.",
+     "p": [
+      "Écris le nom du thé, son origine, où tu l'as trouvé et la date de dégustation.",
+      "Note comment tu l'as préparé : quantité de feuilles, température, temps et nombre d'infusions.",
+      "Ajoute des mots de dégustation et une note simple, pour refaire une belle tasse ou corriger une décevante."
+     ],
+     "q": "Préfères-tu prendre tes notes de thé sur papier ou sur ton téléphone ?",
+     "c": "Commence aujourd'hui ton carnet de thé avec une fiche sur le thé que tu bois le plus."
+    },
+    "it": {
+     "t": "Tenere un quaderno del tè",
+     "g": "Annota nome, origine, preparazione e impressioni per ricordare i tè che hai amato.",
+     "p": [
+      "Scrivi il nome del tè, l'origine, dove l'hai preso e la data dell'assaggio.",
+      "Annota come l'hai preparato: quantità di foglie, temperatura dell'acqua, tempo e numero di infusioni.",
+      "Aggiungi parole di degustazione e un voto semplice, per ripetere una tazza ottima o correggerne una deludente."
+     ],
+     "q": "Preferisci prendere appunti sul tè su carta o sul telefono?",
+     "c": "Inizia oggi il tuo quaderno del tè con una scheda sul tè che bevi più spesso."
+    },
+    "pt": {
+     "t": "Ter um caderno de chá",
+     "g": "Regista nome, origem, preparação e impressões para te lembrares dos chás de que gostaste.",
+     "p": [
+      "Escreve o nome do chá, a origem, onde o arranjaste e a data em que o provaste.",
+      "Anota como o preparaste: quantidade de folha, temperatura da água, tempo e número de infusões.",
+      "Junta palavras de prova e uma nota simples, para repetir uma grande chávena ou corrigir uma dececionante."
+     ],
+     "q": "Preferes tomar notas de chá em papel ou no telemóvel?",
+     "c": "Começa hoje o teu caderno de chá com uma entrada sobre o chá que bebes mais."
+    },
+    "pt_BR": {
+     "t": "Mantendo um caderno de chá",
+     "g": "Registre nome, origem, preparo e impressões para lembrar dos chás que você amou.",
+     "p": [
+      "Escreva o nome do chá, a origem, onde conseguiu e a data em que provou.",
+      "Anote como preparou: quantidade de folha, temperatura da água, tempo e número de infusões.",
+      "Inclua palavras de degustação e uma nota simples, para repetir uma ótima xícara ou corrigir uma decepcionante."
+     ],
+     "q": "Você prefere anotar sobre chá no papel ou no celular?",
+     "c": "Comece hoje seu caderno de chá com uma anotação sobre o chá que você mais toma."
+    }
+   }
+  }
+ ]
+}

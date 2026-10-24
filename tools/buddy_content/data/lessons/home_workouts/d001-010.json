@@ -1,0 +1,835 @@
+{
+ "topic": "home_workouts",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to home workouts",
+     "g": "See what a year of simple, steady training at home can look like for you.",
+     "p": [
+      "Small sessions at home, done often, add up to real progress over a year.",
+      "We start with basics and build step by step, one short lesson a day.",
+      "This is general information only; check with a doctor if you are unsure."
+     ],
+     "q": "What made you curious about working out at home?",
+     "c": "Stand up, stretch your arms high and take three slow, deep breaths."
+    },
+    "de": {
+     "t": "Willkommen beim Training zu Hause",
+     "g": "Entdecke, wie ein Jahr mit einfachem, regelmäßigem Training zu Hause aussehen kann.",
+     "p": [
+      "Kurze Einheiten zu Hause, oft gemacht, bringen über ein Jahr echte Fortschritte.",
+      "Wir beginnen mit den Grundlagen und bauen Schritt für Schritt auf, jeden Tag ein kleiner Impuls.",
+      "Das sind nur allgemeine Infos; frag im Zweifel deinen Arzt oder deine Ärztin."
+     ],
+     "q": "Was hat dich neugierig auf Training zu Hause gemacht?",
+     "c": "Steh auf, streck die Arme hoch und atme dreimal langsam und tief durch."
+    },
+    "es": {
+     "t": "Bienvenido a entrenar en casa",
+     "g": "Descubre cómo puede ser un año de entrenamiento sencillo y constante en casa.",
+     "p": [
+      "Sesiones cortas en casa, hechas a menudo, suman un progreso real en un año.",
+      "Empezamos por lo básico y avanzamos paso a paso, con una lección breve al día.",
+      "Es solo información general; consulta a un médico si tienes dudas."
+     ],
+     "q": "¿Qué te despertó la curiosidad por entrenar en casa?",
+     "c": "Ponte de pie, estira los brazos hacia arriba y respira hondo tres veces."
+    },
+    "fr": {
+     "t": "Bienvenue dans le sport à la maison",
+     "g": "Découvre à quoi peut ressembler une année d'entraînement simple et régulier chez toi.",
+     "p": [
+      "De petites séances à la maison, faites souvent, mènent à de vrais progrès en un an.",
+      "On commence par les bases et on avance pas à pas, une courte leçon par jour.",
+      "Ce sont des infos générales ; demande l'avis d'un médecin en cas de doute."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de faire du sport chez toi ?",
+     "c": "Lève-toi, étire les bras vers le haut et prends trois grandes respirations lentes."
+    },
+    "it": {
+     "t": "Benvenuto negli allenamenti a casa",
+     "g": "Scopri come può essere un anno di allenamento semplice e costante a casa.",
+     "p": [
+      "Brevi sessioni a casa, fatte spesso, portano a progressi veri in un anno.",
+      "Partiamo dalle basi e cresciamo passo dopo passo, con una breve lezione al giorno.",
+      "Sono solo informazioni generali; se hai dubbi, chiedi al medico."
+     ],
+     "q": "Cosa ti ha incuriosito dell'allenarti a casa?",
+     "c": "Alzati, allunga le braccia verso l'alto e fai tre respiri lenti e profondi."
+    },
+    "pt": {
+     "t": "Bem-vindo ao treino em casa",
+     "g": "Descobre como pode ser um ano de treino simples e regular em casa.",
+     "p": [
+      "Sessões curtas em casa, feitas com frequência, somam progresso real num ano.",
+      "Começamos pelo básico e avançamos passo a passo, com uma pequena lição por dia.",
+      "É só informação geral; fala com um médico se tiveres dúvidas."
+     ],
+     "q": "O que te despertou a curiosidade por treinar em casa?",
+     "c": "Levanta-te, estica os braços para cima e respira fundo três vezes, devagar."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao treino em casa",
+     "g": "Descubra como pode ser um ano de treino simples e constante em casa.",
+     "p": [
+      "Sessões curtas em casa, feitas com frequência, somam progresso real em um ano.",
+      "Começamos pelo básico e avançamos passo a passo, com uma lição curta por dia.",
+      "É só informação geral; converse com um médico se tiver dúvidas."
+     ],
+     "q": "O que despertou sua curiosidade por treinar em casa?",
+     "c": "Fique de pé, estique os braços para cima e respire fundo três vezes, devagar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why train at home",
+     "g": "Discover the everyday advantages of making your home your gym.",
+     "p": [
+      "No commute and no crowds means more time and less stress.",
+      "You can train any time of day, even in short breaks.",
+      "Your own music, your own pace and no one watching you learn."
+     ],
+     "q": "Which benefit of home training matters most to you?",
+     "c": "Write down two moments in your week when a short workout could fit."
+    },
+    "de": {
+     "t": "Warum zu Hause trainieren",
+     "g": "Entdecke die Vorteile, wenn dein Zuhause zu deinem Studio wird.",
+     "p": [
+      "Kein Anfahrtsweg und kein Gedränge heißt mehr Zeit und weniger Stress.",
+      "Du kannst zu jeder Tageszeit trainieren, auch in kurzen Pausen.",
+      "Deine Musik, dein Tempo und niemand, der dir beim Lernen zusieht."
+     ],
+     "q": "Welcher Vorteil des Heimtrainings ist dir am wichtigsten?",
+     "c": "Notiere zwei Momente in deiner Woche, in die ein kurzes Training passt."
+    },
+    "es": {
+     "t": "Por qué entrenar en casa",
+     "g": "Descubre las ventajas diarias de convertir tu casa en tu gimnasio.",
+     "p": [
+      "Sin desplazamientos ni aglomeraciones ganas tiempo y pierdes estrés.",
+      "Puedes entrenar a cualquier hora, incluso en pausas cortas.",
+      "Tu música, tu ritmo y nadie mirando mientras aprendes."
+     ],
+     "q": "¿Qué ventaja de entrenar en casa es la más importante para ti?",
+     "c": "Anota dos momentos de tu semana donde quepa un entrenamiento corto."
+    },
+    "fr": {
+     "t": "Pourquoi s'entraîner à la maison",
+     "g": "Découvre les avantages concrets de transformer ton chez-toi en salle de sport.",
+     "p": [
+      "Pas de trajet ni de foule : plus de temps et moins de stress.",
+      "Tu peux t'entraîner à toute heure, même pendant de courtes pauses.",
+      "Ta musique, ton rythme et personne pour te regarder apprendre."
+     ],
+     "q": "Quel avantage du sport à la maison compte le plus pour toi ?",
+     "c": "Note deux moments de ta semaine où une courte séance pourrait trouver sa place."
+    },
+    "it": {
+     "t": "Perché allenarsi a casa",
+     "g": "Scopri i vantaggi quotidiani di trasformare casa tua nella tua palestra.",
+     "p": [
+      "Niente spostamenti né folla: più tempo e meno stress.",
+      "Puoi allenarti a qualsiasi ora, anche in brevi pause.",
+      "La tua musica, il tuo ritmo e nessuno che ti guarda mentre impari."
+     ],
+     "q": "Quale vantaggio dell'allenamento a casa conta di più per te?",
+     "c": "Scrivi due momenti della tua settimana in cui può stare un breve allenamento."
+    },
+    "pt": {
+     "t": "Porquê treinar em casa",
+     "g": "Descobre as vantagens diárias de transformar a tua casa no teu ginásio.",
+     "p": [
+      "Sem deslocações nem multidões ganhas tempo e perdes stress.",
+      "Podes treinar a qualquer hora do dia, até em pausas curtas.",
+      "A tua música, o teu ritmo e ninguém a ver-te aprender."
+     ],
+     "q": "Que vantagem do treino em casa é a mais importante para ti?",
+     "c": "Escreve dois momentos da tua semana onde cabe um treino curto."
+    },
+    "pt_BR": {
+     "t": "Por que treinar em casa",
+     "g": "Descubra as vantagens do dia a dia de transformar sua casa na sua academia.",
+     "p": [
+      "Sem deslocamento nem lotação, você ganha tempo e perde estresse.",
+      "Dá para treinar a qualquer hora do dia, até em pausas curtas.",
+      "Sua música, seu ritmo e ninguém olhando enquanto você aprende."
+     ],
+     "q": "Qual vantagem do treino em casa é a mais importante para você?",
+     "c": "Anote dois momentos da sua semana em que cabe um treino curto."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving safely in general terms",
+     "g": "Learn the simple habits that keep home training safe and enjoyable.",
+     "p": [
+      "Start gently and increase effort slowly over days and weeks.",
+      "Mild effort is fine; sharp pain, dizziness or chest discomfort means stop.",
+      "If you have a health condition or doubts, ask a doctor before starting."
+     ],
+     "q": "How do you usually know when your body needs a break?",
+     "c": "During any movement today, notice how your body feels and rate it from 1 to 10."
+    },
+    "de": {
+     "t": "Sicher bewegen im Allgemeinen",
+     "g": "Lerne einfache Gewohnheiten, die dein Heimtraining sicher und angenehm machen.",
+     "p": [
+      "Fang sanft an und steigere die Anstrengung langsam über Tage und Wochen.",
+      "Leichte Anstrengung ist okay; stechender Schmerz, Schwindel oder Brustdruck heißt: stopp.",
+      "Bei Vorerkrankungen oder Zweifeln frag vor dem Start einen Arzt."
+     ],
+     "q": "Woran merkst du normalerweise, dass dein Körper eine Pause braucht?",
+     "c": "Achte heute bei jeder Bewegung darauf, wie sich dein Körper anfühlt, auf einer Skala von 1 bis 10."
+    },
+    "es": {
+     "t": "Moverse con seguridad en general",
+     "g": "Aprende hábitos sencillos que hacen el entrenamiento en casa seguro y agradable.",
+     "p": [
+      "Empieza suave y aumenta el esfuerzo poco a poco durante días y semanas.",
+      "Un esfuerzo moderado está bien; dolor agudo, mareo o molestia en el pecho: para.",
+      "Si tienes una condición de salud o dudas, consulta a un médico antes de empezar."
+     ],
+     "q": "¿Cómo sueles saber que tu cuerpo necesita un descanso?",
+     "c": "Hoy, en cualquier movimiento, nota cómo se siente tu cuerpo y puntúalo del 1 al 10."
+    },
+    "fr": {
+     "t": "Bouger en sécurité, en général",
+     "g": "Apprends des habitudes simples pour un entraînement à la maison sûr et agréable.",
+     "p": [
+      "Commence doucement et augmente l'effort petit à petit sur des jours et des semaines.",
+      "Un effort modéré, ça va ; douleur vive, vertige ou gêne dans la poitrine : stop.",
+      "En cas de problème de santé ou de doute, consulte un médecin avant de commencer."
+     ],
+     "q": "Comment sais-tu d'habitude que ton corps a besoin d'une pause ?",
+     "c": "Aujourd'hui, pendant chaque mouvement, observe ton corps et note ton ressenti de 1 à 10."
+    },
+    "it": {
+     "t": "Muoversi in sicurezza in generale",
+     "g": "Impara abitudini semplici che rendono l'allenamento a casa sicuro e piacevole.",
+     "p": [
+      "Inizia piano e aumenta lo sforzo gradualmente nei giorni e nelle settimane.",
+      "Uno sforzo moderato va bene; dolore acuto, capogiri o fastidio al petto: fermati.",
+      "Se hai problemi di salute o dubbi, chiedi al medico prima di iniziare."
+     ],
+     "q": "Come capisci di solito che il tuo corpo ha bisogno di una pausa?",
+     "c": "Oggi, durante ogni movimento, ascolta il tuo corpo e dai un voto da 1 a 10."
+    },
+    "pt": {
+     "t": "Mexer-se em segurança, em geral",
+     "g": "Aprende hábitos simples que tornam o treino em casa seguro e agradável.",
+     "p": [
+      "Começa com calma e aumenta o esforço aos poucos, ao longo de dias e semanas.",
+      "Esforço moderado é normal; dor aguda, tonturas ou desconforto no peito: para.",
+      "Se tens algum problema de saúde ou dúvidas, fala com um médico antes de começar."
+     ],
+     "q": "Como costumas perceber que o teu corpo precisa de uma pausa?",
+     "c": "Hoje, em qualquer movimento, repara em como o corpo se sente e dá-lhe uma nota de 1 a 10."
+    },
+    "pt_BR": {
+     "t": "Se movimentar com segurança",
+     "g": "Aprenda hábitos simples que deixam o treino em casa seguro e gostoso.",
+     "p": [
+      "Comece com calma e aumente o esforço aos poucos, ao longo de dias e semanas.",
+      "Esforço moderado é normal; dor aguda, tontura ou desconforto no peito: pare.",
+      "Se você tem alguma condição de saúde ou dúvida, fale com um médico antes de começar."
+     ],
+     "q": "Como você costuma perceber que seu corpo precisa de uma pausa?",
+     "c": "Hoje, em qualquer movimento, perceba como seu corpo se sente e dê uma nota de 1 a 10."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a friendly goal",
+     "g": "Choose one kind, realistic goal that will guide your first weeks.",
+     "p": [
+      "Goals like consistency, more energy or learning the basics are great starts.",
+      "A good goal is small, clear and fits your real week.",
+      "You can change your goal anytime as you learn what you enjoy."
+     ],
+     "q": "What would make you proud after your first month at home?",
+     "c": "Write your goal in one short sentence and put it where you will see it."
+    },
+    "de": {
+     "t": "Ein freundliches Ziel setzen",
+     "g": "Wähle ein realistisches, freundliches Ziel für deine ersten Wochen.",
+     "p": [
+      "Ziele wie Regelmäßigkeit, mehr Energie oder die Grundlagen lernen sind ein toller Start.",
+      "Ein gutes Ziel ist klein, klar und passt in deine echte Woche.",
+      "Du kannst dein Ziel jederzeit ändern, wenn du merkst, was dir Spaß macht."
+     ],
+     "q": "Worauf wärst du nach deinem ersten Monat zu Hause stolz?",
+     "c": "Schreib dein Ziel in einem kurzen Satz auf und häng es gut sichtbar auf."
+    },
+    "es": {
+     "t": "Ponerte una meta amable",
+     "g": "Elige una meta realista y amable que guíe tus primeras semanas.",
+     "p": [
+      "Metas como la constancia, tener más energía o aprender lo básico son un gran inicio.",
+      "Una buena meta es pequeña, clara y encaja en tu semana real.",
+      "Puedes cambiar tu meta cuando quieras, según descubras lo que te gusta."
+     ],
+     "q": "¿Qué te haría sentir orgulloso tras tu primer mes entrenando en casa?",
+     "c": "Escribe tu meta en una frase corta y ponla donde la veas a diario."
+    },
+    "fr": {
+     "t": "Se fixer un objectif bienveillant",
+     "g": "Choisis un objectif réaliste et bienveillant pour guider tes premières semaines.",
+     "p": [
+      "La régularité, plus d'énergie ou apprendre les bases sont de super débuts.",
+      "Un bon objectif est petit, clair et s'adapte à ta vraie semaine.",
+      "Tu peux changer d'objectif quand tu veux, selon ce que tu aimes."
+     ],
+     "q": "De quoi serais-tu fier après ton premier mois d'entraînement chez toi ?",
+     "c": "Écris ton objectif en une phrase courte et place-le là où tu le verras."
+    },
+    "it": {
+     "t": "Darsi un obiettivo gentile",
+     "g": "Scegli un obiettivo realistico e gentile che guidi le tue prime settimane.",
+     "p": [
+      "Costanza, più energia o imparare le basi sono ottimi punti di partenza.",
+      "Un buon obiettivo è piccolo, chiaro e si adatta alla tua settimana reale.",
+      "Puoi cambiarlo quando vuoi, man mano che scopri cosa ti piace."
+     ],
+     "q": "Di cosa saresti orgoglioso dopo il primo mese di allenamento a casa?",
+     "c": "Scrivi il tuo obiettivo in una frase breve e mettilo dove lo vedi ogni giorno."
+    },
+    "pt": {
+     "t": "Definir um objetivo simpático",
+     "g": "Escolhe um objetivo realista e simpático para guiar as tuas primeiras semanas.",
+     "p": [
+      "Regularidade, mais energia ou aprender o básico são ótimos começos.",
+      "Um bom objetivo é pequeno, claro e cabe na tua semana real.",
+      "Podes mudar o objetivo quando quiseres, à medida que descobres o que gostas."
+     ],
+     "q": "Do que te orgulharias depois do primeiro mês a treinar em casa?",
+     "c": "Escreve o teu objetivo numa frase curta e põe-no onde o vejas todos os dias."
+    },
+    "pt_BR": {
+     "t": "Definindo uma meta gentil",
+     "g": "Escolha uma meta realista e gentil para guiar suas primeiras semanas.",
+     "p": [
+      "Constância, mais energia ou aprender o básico são ótimos começos.",
+      "Uma boa meta é pequena, clara e cabe na sua semana de verdade.",
+      "Você pode mudar a meta quando quiser, conforme descobre do que gosta."
+     ],
+     "q": "Do que você se orgulharia depois do primeiro mês treinando em casa?",
+     "c": "Escreva sua meta em uma frase curta e coloque onde você vai ver todo dia."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your workout space",
+     "g": "Pick a spot at home that works well for short training sessions.",
+     "p": [
+      "A small clear area about the size of a mat is often enough.",
+      "A non-slip floor helps; a mat or rug that stays put works well.",
+      "Fresh air and a bit of light make workouts feel better."
+     ],
+     "q": "Where at home could you set up your workout corner?",
+     "c": "Find your spot today and check if you can stretch your arms out fully."
+    },
+    "de": {
+     "t": "Deinen Trainingsplatz finden",
+     "g": "Such dir einen Platz zu Hause, der gut für kurze Einheiten passt.",
+     "p": [
+      "Eine kleine freie Fläche in Mattengröße reicht oft schon aus.",
+      "Ein rutschfester Boden hilft; eine Matte oder ein fester Teppich ist ideal.",
+      "Frische Luft und etwas Licht machen das Training angenehmer."
+     ],
+     "q": "Wo könntest du zu Hause deine Trainingsecke einrichten?",
+     "c": "Such dir heute deinen Platz und prüf, ob du die Arme ganz ausstrecken kannst."
+    },
+    "es": {
+     "t": "Encontrar tu espacio de entreno",
+     "g": "Elige un lugar en casa que funcione bien para sesiones cortas.",
+     "p": [
+      "Un área despejada del tamaño de una esterilla suele ser suficiente.",
+      "Un suelo antideslizante ayuda; una esterilla o alfombra que no se mueva va genial.",
+      "Aire fresco y algo de luz hacen que entrenar se sienta mejor."
+     ],
+     "q": "¿En qué parte de tu casa podrías montar tu rincón de entreno?",
+     "c": "Busca hoy tu sitio y comprueba si puedes estirar los brazos del todo."
+    },
+    "fr": {
+     "t": "Trouver ton espace d'entraînement",
+     "g": "Choisis un endroit chez toi adapté à de courtes séances.",
+     "p": [
+      "Une petite zone dégagée de la taille d'un tapis suffit souvent.",
+      "Un sol antidérapant aide ; un tapis qui ne glisse pas est idéal.",
+      "De l'air frais et un peu de lumière rendent la séance plus agréable."
+     ],
+     "q": "Où pourrais-tu installer ton coin sport à la maison ?",
+     "c": "Trouve ton endroit aujourd'hui et vérifie que tu peux tendre les bras en entier."
+    },
+    "it": {
+     "t": "Trovare il tuo spazio",
+     "g": "Scegli un punto della casa adatto a brevi sessioni di allenamento.",
+     "p": [
+      "Spesso basta una piccola area libera grande quanto un tappetino.",
+      "Un pavimento antiscivolo aiuta; un tappetino che non si sposta è perfetto.",
+      "Aria fresca e un po' di luce rendono l'allenamento più piacevole."
+     ],
+     "q": "In quale parte della casa potresti creare il tuo angolo fitness?",
+     "c": "Trova oggi il tuo posto e controlla di poter allargare del tutto le braccia."
+    },
+    "pt": {
+     "t": "Encontrar o teu espaço de treino",
+     "g": "Escolhe um sítio em casa que funcione bem para sessões curtas.",
+     "p": [
+      "Uma pequena área livre do tamanho de um tapete costuma chegar.",
+      "Um chão que não escorrega ajuda; um tapete que fique no lugar é ótimo.",
+      "Ar fresco e alguma luz tornam o treino mais agradável."
+     ],
+     "q": "Em que parte da casa podias montar o teu canto de treino?",
+     "c": "Encontra hoje o teu sítio e vê se consegues esticar bem os braços."
+    },
+    "pt_BR": {
+     "t": "Encontrando seu espaço de treino",
+     "g": "Escolha um lugar em casa que funcione bem para sessões curtas.",
+     "p": [
+      "Uma área livre do tamanho de um tapetinho costuma ser suficiente.",
+      "Piso antiderrapante ajuda; um tapete que não escorrega é ótimo.",
+      "Ar fresco e um pouco de luz deixam o treino mais gostoso."
+     ],
+     "q": "Em que parte da casa você poderia montar seu cantinho de treino?",
+     "c": "Encontre seu lugar hoje e veja se consegue abrir bem os braços."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making your space safe",
+     "g": "Prepare your workout spot so you can move freely and safely.",
+     "p": [
+      "Move chairs, tables and sharp corners out of your way.",
+      "Check the floor for water, cables, loose rugs or small objects.",
+      "Keep pets and toys away while you train to avoid trips."
+     ],
+     "q": "What in your space might need moving before you train?",
+     "c": "Spend two minutes clearing your workout spot and removing anything you could trip on."
+    },
+    "de": {
+     "t": "Deinen Platz sicher machen",
+     "g": "Bereite deinen Trainingsplatz so vor, dass du dich frei und sicher bewegen kannst.",
+     "p": [
+      "Stell Stühle, Tische und scharfe Kanten aus dem Weg.",
+      "Prüf den Boden auf Wasser, Kabel, lose Teppiche oder Kleinteile.",
+      "Halte Haustiere und Spielzeug beim Training fern, damit du nicht stolperst."
+     ],
+     "q": "Was müsste in deinem Raum vor dem Training zur Seite?",
+     "c": "Räum zwei Minuten lang deinen Platz frei und entferne alles, worüber du stolpern könntest."
+    },
+    "es": {
+     "t": "Hacer tu espacio seguro",
+     "g": "Prepara tu rincón para moverte con libertad y seguridad.",
+     "p": [
+      "Aparta sillas, mesas y esquinas con picos.",
+      "Revisa el suelo: agua, cables, alfombras sueltas u objetos pequeños.",
+      "Mantén lejos mascotas y juguetes mientras entrenas para no tropezar."
+     ],
+     "q": "¿Qué habría que mover en tu espacio antes de entrenar?",
+     "c": "Dedica dos minutos a despejar tu rincón y quitar todo con lo que puedas tropezar."
+    },
+    "fr": {
+     "t": "Sécuriser ton espace",
+     "g": "Prépare ton coin pour bouger librement et en toute sécurité.",
+     "p": [
+      "Écarte chaises, tables et coins pointus de ton chemin.",
+      "Vérifie le sol : eau, câbles, tapis qui glissent ou petits objets.",
+      "Éloigne animaux et jouets pendant la séance pour ne pas trébucher."
+     ],
+     "q": "Qu'est-ce qu'il faudrait déplacer chez toi avant de t'entraîner ?",
+     "c": "Prends deux minutes pour dégager ton coin et retirer tout ce qui pourrait te faire trébucher."
+    },
+    "it": {
+     "t": "Rendere sicuro il tuo spazio",
+     "g": "Prepara il tuo angolo per muoverti in libertà e sicurezza.",
+     "p": [
+      "Sposta sedie, tavoli e spigoli dal tuo percorso.",
+      "Controlla il pavimento: acqua, cavi, tappeti che scivolano o piccoli oggetti.",
+      "Tieni lontani animali e giocattoli mentre ti alleni per non inciampare."
+     ],
+     "q": "Cosa dovresti spostare nel tuo spazio prima di allenarti?",
+     "c": "Dedica due minuti a liberare il tuo angolo da tutto ciò su cui potresti inciampare."
+    },
+    "pt": {
+     "t": "Tornar o teu espaço seguro",
+     "g": "Prepara o teu canto para te mexeres à vontade e em segurança.",
+     "p": [
+      "Afasta cadeiras, mesas e cantos afiados do caminho.",
+      "Verifica o chão: água, cabos, tapetes soltos ou objetos pequenos.",
+      "Mantém animais e brinquedos longe durante o treino para não tropeçares."
+     ],
+     "q": "O que terias de mudar de sítio no teu espaço antes de treinar?",
+     "c": "Passa dois minutos a arrumar o teu canto e a tirar tudo em que possas tropeçar."
+    },
+    "pt_BR": {
+     "t": "Deixando seu espaço seguro",
+     "g": "Prepare seu cantinho para se mexer com liberdade e segurança.",
+     "p": [
+      "Tire do caminho cadeiras, mesas e quinas.",
+      "Confira o chão: água, fios, tapetes soltos ou objetos pequenos.",
+      "Deixe pets e brinquedos longe durante o treino para não tropeçar."
+     ],
+     "q": "O que precisaria sair do lugar no seu espaço antes de treinar?",
+     "c": "Passe dois minutos liberando seu cantinho e tirando tudo em que você possa tropeçar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to wear at home",
+     "g": "Choose clothes and footwear that make home training comfortable.",
+     "p": [
+      "Wear soft, stretchy clothes that let you bend and reach freely.",
+      "Trainers give grip and support, especially for stepping or jumping.",
+      "Bare feet can work on a safe, non-slip surface for calm exercises."
+     ],
+     "q": "Do you prefer training in shoes or barefoot, and why?",
+     "c": "Put together one comfy workout outfit and keep it ready near your space."
+    },
+    "de": {
+     "t": "Was du zu Hause anziehst",
+     "g": "Wähle Kleidung und Schuhe, die dein Heimtraining bequem machen.",
+     "p": [
+      "Trag weiche, dehnbare Kleidung, in der du dich frei beugen und strecken kannst.",
+      "Sportschuhe geben Halt, vor allem beim Steppen oder Springen.",
+      "Barfuß geht auf sicherem, rutschfestem Boden gut für ruhige Übungen."
+     ],
+     "q": "Trainierst du lieber mit Schuhen oder barfuß, und warum?",
+     "c": "Stell dir ein bequemes Trainingsoutfit zusammen und leg es griffbereit hin."
+    },
+    "es": {
+     "t": "Qué ponerte en casa",
+     "g": "Elige ropa y calzado que hagan cómodo tu entreno en casa.",
+     "p": [
+      "Usa ropa suave y elástica que te deje agacharte y estirarte sin límites.",
+      "Las zapatillas dan agarre y soporte, sobre todo al subir escalones o saltar.",
+      "Descalzo puede ir bien en un suelo seguro y antideslizante para ejercicios tranquilos."
+     ],
+     "q": "¿Prefieres entrenar con zapatillas o descalzo? ¿Por qué?",
+     "c": "Prepara un conjunto cómodo de entreno y déjalo listo cerca de tu espacio."
+    },
+    "fr": {
+     "t": "Quoi porter à la maison",
+     "g": "Choisis des vêtements et chaussures qui rendent ta séance confortable.",
+     "p": [
+      "Porte des vêtements doux et extensibles pour te pencher et t'étirer librement.",
+      "Les baskets donnent de l'adhérence et du maintien, surtout pour monter ou sauter.",
+      "Pieds nus, c'est possible sur un sol sûr et antidérapant pour des exercices calmes."
+     ],
+     "q": "Tu préfères t'entraîner en baskets ou pieds nus, et pourquoi ?",
+     "c": "Prépare une tenue de sport confortable et laisse-la prête près de ton coin."
+    },
+    "it": {
+     "t": "Cosa indossare a casa",
+     "g": "Scegli abiti e scarpe che rendano comodo l'allenamento a casa.",
+     "p": [
+      "Indossa capi morbidi ed elastici che ti lascino piegare e allungare liberamente.",
+      "Le scarpe da ginnastica danno presa e sostegno, soprattutto per step o salti.",
+      "A piedi nudi si può, su un pavimento sicuro e antiscivolo, per esercizi tranquilli."
+     ],
+     "q": "Preferisci allenarti con le scarpe o a piedi nudi, e perché?",
+     "c": "Prepara un completo comodo per allenarti e tienilo pronto vicino al tuo spazio."
+    },
+    "pt": {
+     "t": "O que vestir em casa",
+     "g": "Escolhe roupa e calçado que tornem o treino em casa confortável.",
+     "p": [
+      "Usa roupa macia e elástica que te deixe dobrar e esticar à vontade.",
+      "Ténis dão aderência e apoio, sobretudo para subir degraus ou saltar.",
+      "Descalço pode resultar num chão seguro e antiderrapante, em exercícios calmos."
+     ],
+     "q": "Preferes treinar de ténis ou descalço, e porquê?",
+     "c": "Junta uma roupa de treino confortável e deixa-a pronta perto do teu espaço."
+    },
+    "pt_BR": {
+     "t": "O que vestir em casa",
+     "g": "Escolha roupas e calçados que deixem o treino em casa confortável.",
+     "p": [
+      "Use roupas macias e elásticas que deixem você se abaixar e se esticar à vontade.",
+      "Tênis dão aderência e apoio, principalmente para subir degraus ou pular.",
+      "Descalço pode funcionar em piso seguro e antiderrapante, em exercícios calmos."
+     ],
+     "q": "Você prefere treinar de tênis ou descalço? Por quê?",
+     "c": "Separe uma roupa de treino confortável e deixe pronta perto do seu espaço."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Equipment-free training",
+     "g": "Understand how your own body weight can be a complete gym.",
+     "p": [
+      "Your body weight gives enough resistance to build strength as a beginner.",
+      "Changing angle, speed or range makes a move easier or harder.",
+      "Bodyweight moves train strength, balance and coordination together."
+     ],
+     "q": "Which bodyweight exercises do you already know?",
+     "c": "Try five slow sit-to-stands from a chair and notice which muscles work."
+    },
+    "de": {
+     "t": "Training ohne Geräte",
+     "g": "Verstehe, wie dein eigenes Körpergewicht zu einem kompletten Studio wird.",
+     "p": [
+      "Dein Körpergewicht bietet als Einsteiger genug Widerstand für mehr Kraft.",
+      "Winkel, Tempo oder Bewegungsumfang machen eine Übung leichter oder schwerer.",
+      "Körpergewichtsübungen trainieren Kraft, Gleichgewicht und Koordination zugleich."
+     ],
+     "q": "Welche Übungen mit eigenem Körpergewicht kennst du schon?",
+     "c": "Steh fünfmal langsam von einem Stuhl auf und spür, welche Muskeln arbeiten."
+    },
+    "es": {
+     "t": "Entrenar sin material",
+     "g": "Entiende cómo tu propio peso corporal puede ser un gimnasio completo.",
+     "p": [
+      "Tu peso corporal ofrece resistencia suficiente para ganar fuerza al empezar.",
+      "Cambiar el ángulo, la velocidad o el recorrido hace un ejercicio más fácil o difícil.",
+      "Los ejercicios con peso corporal trabajan fuerza, equilibrio y coordinación a la vez."
+     ],
+     "q": "¿Qué ejercicios con peso corporal conoces ya?",
+     "c": "Levántate despacio de una silla cinco veces y nota qué músculos trabajan."
+    },
+    "fr": {
+     "t": "S'entraîner sans matériel",
+     "g": "Comprends comment ton propre poids peut devenir une salle complète.",
+     "p": [
+      "Ton poids de corps offre assez de résistance pour gagner en force au début.",
+      "Changer l'angle, la vitesse ou l'amplitude rend un exercice plus facile ou plus dur.",
+      "Le poids du corps travaille force, équilibre et coordination en même temps."
+     ],
+     "q": "Quels exercices au poids du corps connais-tu déjà ?",
+     "c": "Lève-toi lentement d'une chaise cinq fois et observe quels muscles travaillent."
+    },
+    "it": {
+     "t": "Allenarsi senza attrezzi",
+     "g": "Capisci come il tuo peso corporeo possa diventare una palestra completa.",
+     "p": [
+      "Il peso del corpo offre abbastanza resistenza per diventare più forte all'inizio.",
+      "Cambiare angolo, velocità o ampiezza rende un esercizio più facile o difficile.",
+      "Gli esercizi a corpo libero allenano forza, equilibrio e coordinazione insieme."
+     ],
+     "q": "Quali esercizi a corpo libero conosci già?",
+     "c": "Alzati lentamente da una sedia cinque volte e nota quali muscoli lavorano."
+    },
+    "pt": {
+     "t": "Treinar sem equipamento",
+     "g": "Percebe como o teu próprio peso pode ser um ginásio completo.",
+     "p": [
+      "O peso do corpo dá resistência suficiente para ganhar força quando começas.",
+      "Mudar o ângulo, a velocidade ou a amplitude torna o exercício mais fácil ou difícil.",
+      "Os exercícios com o peso do corpo treinam força, equilíbrio e coordenação ao mesmo tempo."
+     ],
+     "q": "Que exercícios com o peso do corpo já conheces?",
+     "c": "Levanta-te devagar de uma cadeira cinco vezes e repara que músculos trabalham."
+    },
+    "pt_BR": {
+     "t": "Treino sem equipamento",
+     "g": "Entenda como o seu próprio peso pode ser uma academia completa.",
+     "p": [
+      "O peso do corpo dá resistência suficiente para ganhar força no começo.",
+      "Mudar o ângulo, a velocidade ou a amplitude deixa o exercício mais fácil ou difícil.",
+      "Exercícios com peso corporal treinam força, equilíbrio e coordenação ao mesmo tempo."
+     ],
+     "q": "Quais exercícios com peso corporal você já conhece?",
+     "c": "Levante-se devagar de uma cadeira cinco vezes e perceba quais músculos trabalham."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Household items as equipment",
+     "g": "Spot everyday objects at home that can support your workouts.",
+     "p": [
+      "A sturdy chair helps with squats, balance and incline push-ups.",
+      "A towel can slide on smooth floors or help you stretch.",
+      "Water bottles, a backpack with books and a stair step add variety."
+     ],
+     "q": "Which household item would you like to try in a workout?",
+     "c": "Walk around your home and pick three objects you could safely train with."
+    },
+    "de": {
+     "t": "Haushaltsgegenstände als Geräte",
+     "g": "Entdecke Alltagsgegenstände, die dein Training zu Hause unterstützen.",
+     "p": [
+      "Ein stabiler Stuhl hilft bei Kniebeugen, Gleichgewicht und Liegestützen mit Erhöhung.",
+      "Ein Handtuch kann auf glattem Boden gleiten oder beim Dehnen helfen.",
+      "Wasserflaschen, ein Rucksack mit Büchern und eine Treppenstufe bringen Abwechslung."
+     ],
+     "q": "Welchen Haushaltsgegenstand würdest du gern im Training ausprobieren?",
+     "c": "Geh durch deine Wohnung und such drei Dinge aus, mit denen du sicher trainieren kannst."
+    },
+    "es": {
+     "t": "Objetos de casa como material",
+     "g": "Descubre objetos cotidianos que pueden apoyar tus entrenamientos.",
+     "p": [
+      "Una silla firme ayuda en sentadillas, equilibrio y flexiones inclinadas.",
+      "Una toalla puede deslizarse en suelos lisos o ayudarte a estirar.",
+      "Botellas de agua, una mochila con libros y un escalón añaden variedad."
+     ],
+     "q": "¿Qué objeto de casa te gustaría probar en un entreno?",
+     "c": "Recorre tu casa y elige tres objetos con los que podrías entrenar con seguridad."
+    },
+    "fr": {
+     "t": "Les objets de la maison comme matériel",
+     "g": "Repère des objets du quotidien qui peuvent soutenir tes séances.",
+     "p": [
+      "Une chaise solide aide pour les squats, l'équilibre et les pompes inclinées.",
+      "Une serviette peut glisser sur un sol lisse ou t'aider à t'étirer.",
+      "Des bouteilles d'eau, un sac à dos avec des livres et une marche ajoutent de la variété."
+     ],
+     "q": "Quel objet de la maison aimerais-tu essayer pendant une séance ?",
+     "c": "Fais le tour de chez toi et choisis trois objets pour t'entraîner en sécurité."
+    },
+    "it": {
+     "t": "Oggetti di casa come attrezzi",
+     "g": "Scopri oggetti di tutti i giorni che possono aiutare i tuoi allenamenti.",
+     "p": [
+      "Una sedia stabile aiuta per squat, equilibrio e piegamenti inclinati.",
+      "Un asciugamano può scivolare su pavimenti lisci o aiutarti ad allungarti.",
+      "Bottiglie d'acqua, uno zaino con libri e un gradino aggiungono varietà."
+     ],
+     "q": "Quale oggetto di casa ti piacerebbe provare in un allenamento?",
+     "c": "Fai un giro per casa e scegli tre oggetti con cui allenarti in sicurezza."
+    },
+    "pt": {
+     "t": "Objetos de casa como equipamento",
+     "g": "Descobre objetos do dia a dia que podem apoiar os teus treinos.",
+     "p": [
+      "Uma cadeira firme ajuda nos agachamentos, no equilíbrio e nas flexões inclinadas.",
+      "Uma toalha pode deslizar em chão liso ou ajudar-te a alongar.",
+      "Garrafas de água, uma mochila com livros e um degrau trazem variedade."
+     ],
+     "q": "Que objeto de casa gostavas de experimentar num treino?",
+     "c": "Dá uma volta pela casa e escolhe três objetos com que possas treinar em segurança."
+    },
+    "pt_BR": {
+     "t": "Objetos de casa como equipamento",
+     "g": "Descubra objetos do dia a dia que podem ajudar nos seus treinos.",
+     "p": [
+      "Uma cadeira firme ajuda no agachamento, no equilíbrio e na flexão inclinada.",
+      "Uma toalha pode deslizar em piso liso ou ajudar no alongamento.",
+      "Garrafas de água, uma mochila com livros e um degrau trazem variedade."
+     ],
+     "q": "Qual objeto de casa você gostaria de testar em um treino?",
+     "c": "Dê uma volta pela casa e escolha três objetos para treinar com segurança."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why warm up",
+     "g": "Understand why a short warm-up comes before every workout.",
+     "p": [
+      "A warm-up gently raises body temperature and heart rate.",
+      "It prepares joints and muscles so movements feel smoother.",
+      "It also helps your mind switch into training mode."
+     ],
+     "q": "How do you feel when you start moving without warming up?",
+     "c": "Before anything active today, march on the spot for one easy minute."
+    },
+    "de": {
+     "t": "Warum aufwärmen",
+     "g": "Verstehe, warum vor jedem Training ein kurzes Aufwärmen steht.",
+     "p": [
+      "Aufwärmen erhöht sanft Körpertemperatur und Herzfrequenz.",
+      "Es bereitet Gelenke und Muskeln vor, damit sich Bewegungen geschmeidiger anfühlen.",
+      "Es hilft auch deinem Kopf, in den Trainingsmodus zu schalten."
+     ],
+     "q": "Wie fühlst du dich, wenn du ohne Aufwärmen loslegst?",
+     "c": "Geh heute vor jeder Aktivität eine lockere Minute auf der Stelle."
+    },
+    "es": {
+     "t": "Por qué calentar",
+     "g": "Entiende por qué un calentamiento corto va antes de cada entreno.",
+     "p": [
+      "El calentamiento sube suavemente la temperatura del cuerpo y el pulso.",
+      "Prepara articulaciones y músculos para que los movimientos fluyan mejor.",
+      "También ayuda a tu mente a entrar en modo entrenamiento."
+     ],
+     "q": "¿Cómo te sientes cuando empiezas a moverte sin calentar?",
+     "c": "Antes de cualquier actividad hoy, marcha en el sitio un minuto suave."
+    },
+    "fr": {
+     "t": "Pourquoi s'échauffer",
+     "g": "Comprends pourquoi un court échauffement précède chaque séance.",
+     "p": [
+      "L'échauffement augmente doucement la température du corps et le rythme cardiaque.",
+      "Il prépare articulations et muscles pour des mouvements plus fluides.",
+      "Il aide aussi ta tête à passer en mode entraînement."
+     ],
+     "q": "Comment te sens-tu quand tu bouges sans t'échauffer ?",
+     "c": "Avant toute activité aujourd'hui, marche sur place pendant une minute tranquille."
+    },
+    "it": {
+     "t": "Perché scaldarsi",
+     "g": "Capisci perché un breve riscaldamento viene prima di ogni allenamento.",
+     "p": [
+      "Il riscaldamento alza dolcemente la temperatura del corpo e il battito.",
+      "Prepara articolazioni e muscoli così i movimenti diventano più fluidi.",
+      "Aiuta anche la mente a entrare in modalità allenamento."
+     ],
+     "q": "Come ti senti quando inizi a muoverti senza scaldarti?",
+     "c": "Prima di ogni attività oggi, marcia sul posto per un minuto tranquillo."
+    },
+    "pt": {
+     "t": "Porquê aquecer",
+     "g": "Percebe porque é que um aquecimento curto vem antes de cada treino.",
+     "p": [
+      "O aquecimento sobe suavemente a temperatura do corpo e o ritmo cardíaco.",
+      "Prepara articulações e músculos para que os movimentos fiquem mais fluidos.",
+      "Também ajuda a cabeça a entrar em modo de treino."
+     ],
+     "q": "Como te sentes quando começas a mexer-te sem aquecer?",
+     "c": "Antes de qualquer atividade hoje, marcha no lugar durante um minuto tranquilo."
+    },
+    "pt_BR": {
+     "t": "Por que aquecer",
+     "g": "Entenda por que um aquecimento curto vem antes de todo treino.",
+     "p": [
+      "O aquecimento aumenta suavemente a temperatura do corpo e os batimentos.",
+      "Ele prepara articulações e músculos para os movimentos ficarem mais soltos.",
+      "Também ajuda sua mente a entrar no modo treino."
+     ],
+     "q": "Como você se sente quando começa a se mexer sem aquecer?",
+     "c": "Antes de qualquer atividade hoje, marche no lugar por um minuto tranquilo."
+    }
+   }
+  }
+ ]
+}

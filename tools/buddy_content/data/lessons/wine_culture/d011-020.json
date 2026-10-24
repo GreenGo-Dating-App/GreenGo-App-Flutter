@@ -1,0 +1,835 @@
+{
+ "topic": "wine_culture",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cabernet Sauvignon",
+     "g": "Meet Cabernet Sauvignon, a structured red with blackcurrant and cedar notes and firm tannins.",
+     "p": [
+      "Cabernet Sauvignon has small, thick-skinned berries, which give deep colour and firm tannins.",
+      "Typical aromas include blackcurrant, cedar, mint and, with oak, a touch of vanilla.",
+      "It is famous in Bordeaux's Médoc, California's Napa Valley and Chile's Maipo Valley."
+     ],
+     "q": "Do you enjoy foods with bold, intense flavours, or do you prefer gentle ones?",
+     "c": "Smell blackcurrant jam or a cedar pencil today and remember the scent as a Cabernet clue."
+    },
+    "de": {
+     "t": "Cabernet Sauvignon",
+     "g": "Lerne Cabernet Sauvignon kennen, einen strukturierten Roten mit Cassis- und Zedernnoten und festem Tannin.",
+     "p": [
+      "Cabernet Sauvignon hat kleine, dickschalige Beeren, die tiefe Farbe und festes Tannin geben.",
+      "Typische Aromen sind schwarze Johannisbeere, Zeder, Minze und mit Holz etwas Vanille.",
+      "Berühmt ist er im Médoc in Bordeaux, im kalifornischen Napa Valley und im chilenischen Maipo-Tal."
+     ],
+     "q": "Magst du Speisen mit kräftigen, intensiven Aromen, oder eher sanfte?",
+     "c": "Riech heute an Johannisbeergelee oder einem Bleistift aus Zedernholz und merke dir den Duft als Cabernet-Hinweis."
+    },
+    "es": {
+     "t": "Cabernet Sauvignon",
+     "g": "Conoce la Cabernet Sauvignon, un tinto estructurado con notas de grosella negra, cedro y taninos firmes.",
+     "p": [
+      "La Cabernet Sauvignon tiene bayas pequeñas de piel gruesa, que dan color intenso y taninos firmes.",
+      "Sus aromas típicos son grosella negra, cedro, menta y, con roble, un toque de vainilla.",
+      "Es famosa en el Médoc de Burdeos, en el valle de Napa en California y en el valle del Maipo en Chile."
+     ],
+     "q": "¿Disfrutas de comidas con sabores intensos y potentes, o prefieres los suaves?",
+     "c": "Huele hoy mermelada de grosella negra o un lápiz de cedro y recuerda ese aroma como pista de la Cabernet."
+    },
+    "fr": {
+     "t": "Cabernet-sauvignon",
+     "g": "Découvre le cabernet-sauvignon, un rouge structuré aux notes de cassis et de cèdre, aux tanins fermes.",
+     "p": [
+      "Le cabernet-sauvignon a de petites baies à peau épaisse, qui donnent une couleur profonde et des tanins fermes.",
+      "On y trouve souvent cassis, cèdre, menthe et, avec le bois, une touche de vanille.",
+      "Il est célèbre dans le Médoc bordelais, dans la Napa Valley en Californie et dans la vallée du Maipo au Chili."
+     ],
+     "q": "Aimes-tu les plats aux saveurs puissantes et intenses, ou plutôt les saveurs douces ?",
+     "c": "Sens aujourd'hui de la confiture de cassis ou un crayon en cèdre et garde cette odeur comme indice du cabernet."
+    },
+    "it": {
+     "t": "Cabernet Sauvignon",
+     "g": "Conosci il Cabernet Sauvignon, un rosso strutturato con note di ribes nero e cedro e tannini decisi.",
+     "p": [
+      "Il Cabernet Sauvignon ha acini piccoli dalla buccia spessa, che danno colore intenso e tannini decisi.",
+      "Profumi tipici sono ribes nero, cedro, menta e, con il legno, un tocco di vaniglia.",
+      "È famoso nel Médoc di Bordeaux, nella Napa Valley in California, nella valle del Maipo in Cile e a Bolgheri."
+     ],
+     "q": "Ti piacciono i cibi dai sapori intensi e decisi, o preferisci quelli delicati?",
+     "c": "Annusa oggi una marmellata di ribes nero o una matita di cedro e ricorda quel profumo come indizio del Cabernet."
+    },
+    "pt": {
+     "t": "Cabernet Sauvignon",
+     "g": "Conhece a Cabernet Sauvignon, um tinto estruturado com notas de cassis e cedro e taninos firmes.",
+     "p": [
+      "A Cabernet Sauvignon tem bagos pequenos de película grossa, que dão cor intensa e taninos firmes.",
+      "Os aromas típicos incluem cassis, cedro, menta e, com madeira, um toque de baunilha.",
+      "É famosa no Médoc em Bordéus, no vale de Napa na Califórnia e no vale do Maipo no Chile."
+     ],
+     "q": "Gostas de comidas com sabores intensos e marcantes, ou preferes os suaves?",
+     "c": "Cheira hoje doce de groselha preta ou um lápis de cedro e guarda esse aroma como pista da Cabernet."
+    },
+    "pt_BR": {
+     "t": "Cabernet Sauvignon",
+     "g": "Conheça a Cabernet Sauvignon, um tinto estruturado com notas de cassis e cedro e taninos firmes.",
+     "p": [
+      "A Cabernet Sauvignon tem bagas pequenas de casca grossa, que dão cor intensa e taninos firmes.",
+      "Os aromas típicos incluem cassis, cedro, menta e, com madeira, um toque de baunilha.",
+      "É famosa no Médoc em Bordeaux, no vale de Napa na Califórnia e no vale do Maipo no Chile."
+     ],
+     "q": "Você gosta de comidas com sabores intensos e marcantes, ou prefere os suaves?",
+     "c": "Cheire hoje geleia de cassis ou um lápis de cedro e guarde esse aroma como pista da Cabernet."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Merlot",
+     "g": "Discover Merlot, a softer, plummy red and Cabernet Sauvignon's classic partner in Bordeaux blends.",
+     "p": [
+      "Merlot ripens earlier than Cabernet and usually gives rounder wines with softer tannins.",
+      "Typical aromas are plum, black cherry and sometimes chocolate or herbs.",
+      "On Bordeaux's Right Bank, in Saint-Émilion and Pomerol, Merlot is often the main grape in the blend."
+     ],
+     "q": "Do you prefer things smooth and gentle or bold and firm, in food, music or coffee?",
+     "c": "Taste a ripe plum slowly today and note the words that describe its flavour and texture."
+    },
+    "de": {
+     "t": "Merlot",
+     "g": "Entdecke Merlot, einen weicheren, pflaumigen Roten und Cabernets klassischen Partner in Bordeaux-Cuvées.",
+     "p": [
+      "Merlot reift früher als Cabernet und ergibt meist rundere Weine mit sanfterem Tannin.",
+      "Typische Aromen sind Pflaume, schwarze Kirsche und manchmal Schokolade oder Kräuter.",
+      "Am rechten Ufer von Bordeaux, in Saint-Émilion und Pomerol, ist Merlot oft die Hauptsorte der Cuvée."
+     ],
+     "q": "Magst du es lieber sanft und weich oder kräftig und fest, beim Essen, bei Musik oder Kaffee?",
+     "c": "Iss heute langsam eine reife Pflaume und notiere Wörter, die Geschmack und Textur beschreiben."
+    },
+    "es": {
+     "t": "Merlot",
+     "g": "Descubre la Merlot, un tinto más suave y con notas de ciruela, compañera clásica de la Cabernet en Burdeos.",
+     "p": [
+      "La Merlot madura antes que la Cabernet y suele dar vinos más redondos, con taninos más suaves.",
+      "Sus aromas típicos son ciruela, cereza negra y a veces chocolate o hierbas.",
+      "En la orilla derecha de Burdeos, en Saint-Émilion y Pomerol, suele ser la uva principal del ensamblaje."
+     ],
+     "q": "¿Prefieres lo suave y amable o lo potente y firme, en comida, música o café?",
+     "c": "Come hoy despacio una ciruela madura y anota palabras que describan su sabor y textura."
+    },
+    "fr": {
+     "t": "Merlot",
+     "g": "Découvre le merlot, un rouge plus souple aux notes de prune, partenaire classique du cabernet à Bordeaux.",
+     "p": [
+      "Le merlot mûrit plus tôt que le cabernet et donne souvent des vins plus ronds, aux tanins plus souples.",
+      "Ses arômes typiques sont la prune, la cerise noire et parfois le chocolat ou les herbes.",
+      "Sur la rive droite de Bordeaux, à Saint-Émilion et Pomerol, il est souvent le cépage principal de l'assemblage."
+     ],
+     "q": "Préfères-tu ce qui est doux et souple ou puissant et ferme, en cuisine, en musique ou en café ?",
+     "c": "Goûte lentement une prune mûre aujourd'hui et note les mots qui décrivent sa saveur et sa texture."
+    },
+    "it": {
+     "t": "Merlot",
+     "g": "Scopri il Merlot, un rosso più morbido dalle note di prugna, partner classico del Cabernet nei tagli bordolesi.",
+     "p": [
+      "Il Merlot matura prima del Cabernet e dà di solito vini più rotondi, con tannini più morbidi.",
+      "Profumi tipici sono prugna, ciliegia nera e a volte cioccolato o erbe.",
+      "Sulla riva destra di Bordeaux, a Saint-Émilion e Pomerol, è spesso il vitigno principale del taglio."
+     ],
+     "q": "Preferisci le cose morbide e delicate o decise e strutturate, nel cibo, nella musica o nel caffè?",
+     "c": "Assaggia oggi lentamente una prugna matura e annota le parole che ne descrivono sapore e consistenza."
+    },
+    "pt": {
+     "t": "Merlot",
+     "g": "Descobre a Merlot, um tinto mais macio com notas de ameixa, parceira clássica da Cabernet em Bordéus.",
+     "p": [
+      "A Merlot amadurece mais cedo do que a Cabernet e costuma dar vinhos mais redondos, com taninos suaves.",
+      "Os aromas típicos são ameixa, cereja preta e por vezes chocolate ou ervas.",
+      "Na margem direita de Bordéus, em Saint-Émilion e Pomerol, é muitas vezes a casta principal do lote."
+     ],
+     "q": "Preferes coisas macias e suaves ou intensas e firmes, na comida, na música ou no café?",
+     "c": "Come hoje devagar uma ameixa madura e aponta palavras que descrevam o seu sabor e textura."
+    },
+    "pt_BR": {
+     "t": "Merlot",
+     "g": "Descubra a Merlot, um tinto mais macio com notas de ameixa, parceira clássica da Cabernet em Bordeaux.",
+     "p": [
+      "A Merlot amadurece antes da Cabernet e costuma dar vinhos mais redondos, com taninos mais suaves.",
+      "Os aromas típicos são ameixa, cereja preta e às vezes chocolate ou ervas.",
+      "Na margem direita de Bordeaux, em Saint-Émilion e Pomerol, ela costuma ser a uva principal do corte."
+     ],
+     "q": "Você prefere coisas macias e suaves ou intensas e firmes, na comida, na música ou no café?",
+     "c": "Coma hoje devagar uma ameixa madura e anote palavras que descrevam seu sabor e textura."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pinot Noir",
+     "g": "Get to know Pinot Noir, a delicate red with red fruit aromas and the star grape of Burgundy.",
+     "p": [
+      "Pinot Noir has thin skins, so its wines are usually pale, light in tannin and very aromatic.",
+      "Common aromas are cherry, raspberry and strawberry, with earthy or mushroom notes as it ages.",
+      "Besides Burgundy, it shines in Oregon, New Zealand and Germany, where it is called Spätburgunder."
+     ],
+     "q": "Which red fruit do you love most: cherry, raspberry or strawberry?",
+     "c": "Smell a handful of red berries today and try to describe each one with a single word."
+    },
+    "de": {
+     "t": "Pinot Noir",
+     "g": "Lerne Pinot Noir kennen, einen zarten Roten mit roten Fruchtaromen und Star des Burgunds.",
+     "p": [
+      "Pinot Noir hat dünne Schalen, darum sind seine Weine meist hell, tanninarm und sehr aromatisch.",
+      "Häufige Aromen sind Kirsche, Himbeere und Erdbeere, mit der Reife auch Erde oder Pilze.",
+      "Neben dem Burgund glänzt er in Oregon, Neuseeland und Deutschland, wo er Spätburgunder heißt."
+     ],
+     "q": "Welche rote Frucht magst du am liebsten: Kirsche, Himbeere oder Erdbeere?",
+     "c": "Riech heute an einer Handvoll roter Beeren und beschreibe jede mit einem einzigen Wort."
+    },
+    "es": {
+     "t": "Pinot Noir",
+     "g": "Conoce la Pinot Noir, un tinto delicado con aromas de fruta roja y la gran uva de Borgoña.",
+     "p": [
+      "La Pinot Noir tiene la piel fina, así que sus vinos suelen ser pálidos, con poco tanino y muy aromáticos.",
+      "Sus aromas habituales son cereza, frambuesa y fresa, con notas terrosas o de setas al envejecer.",
+      "Además de Borgoña, brilla en Oregón, Nueva Zelanda y Alemania, donde se llama Spätburgunder."
+     ],
+     "q": "¿Qué fruta roja te gusta más: cereza, frambuesa o fresa?",
+     "c": "Huele hoy un puñado de frutos rojos e intenta describir cada uno con una sola palabra."
+    },
+    "fr": {
+     "t": "Pinot noir",
+     "g": "Découvre le pinot noir, un rouge délicat aux arômes de fruits rouges, cépage star de la Bourgogne.",
+     "p": [
+      "Le pinot noir a une peau fine : ses vins sont souvent pâles, peu tanniques et très aromatiques.",
+      "On y sent la cerise, la framboise et la fraise, puis des notes de sous-bois ou de champignon avec l'âge.",
+      "Hors de Bourgogne, il brille en Oregon, en Nouvelle-Zélande et en Allemagne, où on l'appelle Spätburgunder."
+     ],
+     "q": "Quel fruit rouge préfères-tu : la cerise, la framboise ou la fraise ?",
+     "c": "Sens aujourd'hui une poignée de fruits rouges et décris chacun avec un seul mot."
+    },
+    "it": {
+     "t": "Pinot Nero",
+     "g": "Conosci il Pinot Nero, un rosso delicato dai profumi di frutti rossi e vitigno simbolo della Borgogna.",
+     "p": [
+      "Il Pinot Nero ha la buccia sottile, quindi i suoi vini sono di solito chiari, poco tannici e molto profumati.",
+      "Profumi comuni sono ciliegia, lampone e fragola, con note di terra o funghi con l'età.",
+      "Oltre alla Borgogna, brilla in Oregon, Nuova Zelanda, Alto Adige e Germania, dove si chiama Spätburgunder."
+     ],
+     "q": "Quale frutto rosso ami di più: ciliegia, lampone o fragola?",
+     "c": "Annusa oggi una manciata di frutti rossi e prova a descrivere ciascuno con una sola parola."
+    },
+    "pt": {
+     "t": "Pinot Noir",
+     "g": "Conhece a Pinot Noir, um tinto delicado com aromas de fruta vermelha e a grande casta da Borgonha.",
+     "p": [
+      "A Pinot Noir tem película fina, por isso os seus vinhos são em geral claros, pouco tânicos e muito aromáticos.",
+      "Os aromas comuns são cereja, framboesa e morango, com notas terrosas ou de cogumelos com a idade.",
+      "Além da Borgonha, brilha no Oregon, na Nova Zelândia e na Alemanha, onde se chama Spätburgunder."
+     ],
+     "q": "Que fruta vermelha preferes: cereja, framboesa ou morango?",
+     "c": "Cheira hoje uma mão-cheia de frutos vermelhos e tenta descrever cada um com uma só palavra."
+    },
+    "pt_BR": {
+     "t": "Pinot Noir",
+     "g": "Conheça a Pinot Noir, um tinto delicado com aromas de frutas vermelhas e a grande uva da Borgonha.",
+     "p": [
+      "A Pinot Noir tem casca fina, então seus vinhos costumam ser claros, com pouco tanino e muito aromáticos.",
+      "Os aromas comuns são cereja, framboesa e morango, com notas terrosas ou de cogumelo com a idade.",
+      "Além da Borgonha, ela brilha no Oregon, na Nova Zelândia e na Alemanha, onde se chama Spätburgunder."
+     ],
+     "q": "Qual fruta vermelha você prefere: cereja, framboesa ou morango?",
+     "c": "Cheire hoje um punhado de frutas vermelhas e tente descrever cada uma com uma só palavra."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Syrah and Shiraz",
+     "g": "Learn how one grape, Syrah or Shiraz, can taste peppery in the Rhône and rich and ripe in Australia.",
+     "p": [
+      "Syrah and Shiraz are the same grape; the name often hints at the style of the wine.",
+      "In the northern Rhône, as in Hermitage and Côte-Rôtie, it shows black pepper, olive and dark berries.",
+      "In warm Australian regions such as the Barossa Valley, Shiraz tends to be riper, fuller and jammier."
+     ],
+     "q": "Do you like a little spice in your food, and which spice is your favourite?",
+     "c": "Smell freshly ground black pepper today and keep that aroma in mind as a Syrah clue."
+    },
+    "de": {
+     "t": "Syrah und Shiraz",
+     "g": "Erfahre, wie eine Traube, Syrah oder Shiraz, an der Rhône pfeffrig und in Australien reif und üppig schmeckt.",
+     "p": [
+      "Syrah und Shiraz sind dieselbe Rebsorte; der Name verrät oft den Stil des Weins.",
+      "An der nördlichen Rhône, etwa in Hermitage und Côte-Rôtie, zeigt sie schwarzen Pfeffer, Olive und dunkle Beeren.",
+      "In warmen australischen Regionen wie dem Barossa Valley ist Shiraz meist reifer, voller und marmeladiger."
+     ],
+     "q": "Magst du etwas Würze im Essen, und welches Gewürz ist dein liebstes?",
+     "c": "Riech heute an frisch gemahlenem schwarzem Pfeffer und merke dir den Duft als Syrah-Hinweis."
+    },
+    "es": {
+     "t": "Syrah y Shiraz",
+     "g": "Aprende cómo una misma uva, Syrah o Shiraz, sabe a pimienta en el Ródano y madura y rica en Australia.",
+     "p": [
+      "Syrah y Shiraz son la misma uva; el nombre suele dar una pista del estilo del vino.",
+      "En el norte del Ródano, como en Hermitage y Côte-Rôtie, muestra pimienta negra, aceituna y bayas oscuras.",
+      "En zonas cálidas de Australia como el valle de Barossa, el Shiraz suele ser más maduro, lleno y mermelada."
+     ],
+     "q": "¿Te gusta un toque picante o especiado en la comida, y cuál es tu especia favorita?",
+     "c": "Huele hoy pimienta negra recién molida y guarda ese aroma como pista de la Syrah."
+    },
+    "fr": {
+     "t": "Syrah et shiraz",
+     "g": "Découvre comment un même cépage, syrah ou shiraz, se montre poivré dans le Rhône et mûr et riche en Australie.",
+     "p": [
+      "Syrah et shiraz sont le même cépage ; le nom donne souvent un indice sur le style du vin.",
+      "Dans le Rhône nord, à Hermitage ou Côte-Rôtie, elle offre poivre noir, olive et fruits noirs.",
+      "Dans les régions chaudes d'Australie comme la Barossa Valley, la shiraz est plus mûre, ample et confiturée."
+     ],
+     "q": "Aimes-tu une touche épicée dans tes plats, et quelle est ton épice préférée ?",
+     "c": "Sens aujourd'hui du poivre noir fraîchement moulu et garde cet arôme comme indice de la syrah."
+    },
+    "it": {
+     "t": "Syrah e Shiraz",
+     "g": "Scopri come la stessa uva, Syrah o Shiraz, sa di pepe nel Rodano ed è matura e ricca in Australia.",
+     "p": [
+      "Syrah e Shiraz sono lo stesso vitigno; il nome spesso suggerisce lo stile del vino.",
+      "Nel Rodano settentrionale, come a Hermitage e Côte-Rôtie, mostra pepe nero, oliva e frutti scuri.",
+      "Nelle zone calde dell'Australia come la Barossa Valley, lo Shiraz è più maturo, pieno e confetturato."
+     ],
+     "q": "Ti piace un tocco speziato nel cibo, e qual è la tua spezia preferita?",
+     "c": "Annusa oggi del pepe nero appena macinato e ricorda quel profumo come indizio del Syrah."
+    },
+    "pt": {
+     "t": "Syrah e Shiraz",
+     "g": "Aprende como uma só casta, Syrah ou Shiraz, sabe a pimenta no Ródano e é madura e rica na Austrália.",
+     "p": [
+      "Syrah e Shiraz são a mesma casta; o nome dá muitas vezes uma pista sobre o estilo do vinho.",
+      "No norte do Ródano, como em Hermitage e Côte-Rôtie, mostra pimenta preta, azeitona e bagas escuras.",
+      "Em zonas quentes da Austrália como o vale de Barossa, o Shiraz tende a ser mais maduro, cheio e compotado."
+     ],
+     "q": "Gostas de um toque de especiaria na comida, e qual é a tua especiaria preferida?",
+     "c": "Cheira hoje pimenta preta acabada de moer e guarda esse aroma como pista da Syrah."
+    },
+    "pt_BR": {
+     "t": "Syrah e Shiraz",
+     "g": "Aprenda como uma só uva, Syrah ou Shiraz, lembra pimenta no Rhône e é madura e rica na Austrália.",
+     "p": [
+      "Syrah e Shiraz são a mesma uva; o nome costuma dar uma pista sobre o estilo do vinho.",
+      "No norte do Rhône, como em Hermitage e Côte-Rôtie, mostra pimenta-do-reino, azeitona e frutas escuras.",
+      "Em regiões quentes da Austrália como o vale de Barossa, o Shiraz tende a ser mais maduro, encorpado e geleia."
+     ],
+     "q": "Você gosta de um toque de especiaria na comida, e qual é sua especiaria favorita?",
+     "c": "Cheire hoje pimenta-do-reino moída na hora e guarde esse aroma como pista da Syrah."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grenache",
+     "g": "Discover Grenache, a warm-climate grape with red berry flavours, loved in southern France and Spain.",
+     "p": [
+      "Grenache, called Garnacha in Spain, loves heat and sunshine and ripens late.",
+      "It gives juicy flavours of strawberry, raspberry and sometimes white pepper or dried herbs.",
+      "It is key in Châteauneuf-du-Pape, in Priorat and in many fresh rosés of Provence and Navarra."
+     ],
+     "q": "Do you prefer sunny, warm places or cool, green ones when you travel?",
+     "c": "Look at a map of the Mediterranean and find Provence, the southern Rhône and Aragon in Spain."
+    },
+    "de": {
+     "t": "Grenache",
+     "g": "Entdecke Grenache, eine Rebe warmer Regionen mit roten Beerenaromen, beliebt in Südfrankreich und Spanien.",
+     "p": [
+      "Grenache, in Spanien Garnacha genannt, liebt Hitze und Sonne und reift spät.",
+      "Sie bringt saftige Aromen von Erdbeere, Himbeere und manchmal weißem Pfeffer oder getrockneten Kräutern.",
+      "Sie ist wichtig im Châteauneuf-du-Pape, im Priorat und in vielen frischen Rosés der Provence und Navarras."
+     ],
+     "q": "Magst du auf Reisen lieber sonnige, warme Orte oder kühle, grüne?",
+     "c": "Schau auf eine Karte des Mittelmeers und finde die Provence, die südliche Rhône und Aragonien in Spanien."
+    },
+    "es": {
+     "t": "Garnacha",
+     "g": "Descubre la Garnacha, una uva de clima cálido con sabores de frutos rojos, querida en el sur de Francia y España.",
+     "p": [
+      "La Garnacha, llamada Grenache en Francia, ama el calor y el sol y madura tarde.",
+      "Da sabores jugosos de fresa, frambuesa y a veces pimienta blanca o hierbas secas.",
+      "Es clave en Châteauneuf-du-Pape, en el Priorat y en muchos rosados frescos de Provenza y Navarra."
+     ],
+     "q": "Cuando viajas, ¿prefieres lugares soleados y cálidos o frescos y verdes?",
+     "c": "Mira un mapa del Mediterráneo y encuentra la Provenza, el sur del Ródano y Aragón en España."
+    },
+    "fr": {
+     "t": "Grenache",
+     "g": "Découvre le grenache, un cépage des climats chauds aux saveurs de fruits rouges, aimé dans le sud de la France et en Espagne.",
+     "p": [
+      "Le grenache, appelé garnacha en Espagne, aime la chaleur et le soleil et mûrit tard.",
+      "Il donne des saveurs juteuses de fraise, de framboise et parfois de poivre blanc ou d'herbes sèches.",
+      "Il est essentiel à Châteauneuf-du-Pape, dans le Priorat et dans de nombreux rosés de Provence et de Navarre."
+     ],
+     "q": "En voyage, préfères-tu les lieux chauds et ensoleillés ou frais et verdoyants ?",
+     "c": "Regarde une carte de la Méditerranée et trouve la Provence, le Rhône sud et l'Aragon en Espagne."
+    },
+    "it": {
+     "t": "Grenache",
+     "g": "Scopri il Grenache, uva dei climi caldi dai sapori di frutti rossi, amata nel sud della Francia e in Spagna.",
+     "p": [
+      "Il Grenache, chiamato Garnacha in Spagna e Cannonau in Sardegna, ama il caldo e il sole e matura tardi.",
+      "Dà sapori succosi di fragola, lampone e talvolta pepe bianco o erbe secche.",
+      "È fondamentale a Châteauneuf-du-Pape, nel Priorat e in tanti rosati freschi di Provenza e Navarra."
+     ],
+     "q": "In viaggio preferisci luoghi caldi e soleggiati o freschi e verdi?",
+     "c": "Guarda una carta del Mediterraneo e trova la Provenza, il Rodano meridionale e la Sardegna."
+    },
+    "pt": {
+     "t": "Grenache",
+     "g": "Descobre a Grenache, uma casta de clima quente com sabores de frutos vermelhos, adorada no sul de França e em Espanha.",
+     "p": [
+      "A Grenache, chamada Garnacha em Espanha, adora calor e sol e amadurece tarde.",
+      "Dá sabores suculentos de morango, framboesa e por vezes pimenta branca ou ervas secas.",
+      "É essencial em Châteauneuf-du-Pape, no Priorat e em muitos rosés frescos da Provença e de Navarra."
+     ],
+     "q": "Quando viajas, preferes lugares quentes e soalheiros ou frescos e verdes?",
+     "c": "Olha para um mapa do Mediterrâneo e encontra a Provença, o sul do Ródano e Aragão em Espanha."
+    },
+    "pt_BR": {
+     "t": "Grenache",
+     "g": "Descubra a Grenache, uma uva de clima quente com sabores de frutas vermelhas, adorada no sul da França e na Espanha.",
+     "p": [
+      "A Grenache, chamada Garnacha na Espanha, adora calor e sol e amadurece tarde.",
+      "Ela dá sabores suculentos de morango, framboesa e às vezes pimenta-branca ou ervas secas.",
+      "É essencial em Châteauneuf-du-Pape, no Priorat e em muitos rosés frescos da Provence e de Navarra."
+     ],
+     "q": "Quando viaja, você prefere lugares quentes e ensolarados ou frescos e verdes?",
+     "c": "Olhe um mapa do Mediterrâneo e encontre a Provence, o sul do Rhône e Aragão, na Espanha."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tempranillo",
+     "g": "Get to know Tempranillo, Spain's signature red grape and the backbone of Rioja.",
+     "p": [
+      "The name comes from temprano, Spanish for early, because it ripens earlier than many red grapes.",
+      "It often shows cherry, plum and leather, and with American oak, notes of vanilla and coconut.",
+      "Rioja and Ribera del Duero are its most famous homes, and in Portugal it is called Tinta Roriz."
+     ],
+     "q": "Which Spanish dishes or tapas do you know or would you love to try?",
+     "c": "Find Rioja and Ribera del Duero on a map of Spain and note which rivers flow through them."
+    },
+    "de": {
+     "t": "Tempranillo",
+     "g": "Lerne Tempranillo kennen, Spaniens typische rote Rebsorte und das Rückgrat des Rioja.",
+     "p": [
+      "Der Name kommt von temprano, spanisch für früh, weil sie früher reift als viele rote Sorten.",
+      "Sie zeigt oft Kirsche, Pflaume und Leder, mit amerikanischer Eiche auch Vanille und Kokos.",
+      "Rioja und Ribera del Duero sind ihre bekanntesten Heimaten, in Portugal heißt sie Tinta Roriz."
+     ],
+     "q": "Welche spanischen Gerichte oder Tapas kennst du oder würdest du gern probieren?",
+     "c": "Finde Rioja und Ribera del Duero auf einer Spanienkarte und notiere, welche Flüsse dort fließen."
+    },
+    "es": {
+     "t": "Tempranillo",
+     "g": "Conoce la Tempranillo, la uva tinta emblemática de España y la columna vertebral de Rioja.",
+     "p": [
+      "Su nombre viene de temprano, porque madura antes que muchas otras uvas tintas.",
+      "Suele mostrar cereza, ciruela y cuero, y con roble americano, notas de vainilla y coco.",
+      "Rioja y Ribera del Duero son sus casas más famosas, y en Portugal se llama Tinta Roriz."
+     ],
+     "q": "¿Qué platos o tapas españolas conoces o te encantaría probar?",
+     "c": "Busca Rioja y Ribera del Duero en un mapa de España y anota qué ríos las atraviesan."
+    },
+    "fr": {
+     "t": "Tempranillo",
+     "g": "Découvre le tempranillo, le cépage rouge emblématique de l'Espagne et la colonne vertébrale du Rioja.",
+     "p": [
+      "Son nom vient de temprano, « tôt » en espagnol, car il mûrit plus tôt que beaucoup de cépages rouges.",
+      "Il offre souvent cerise, prune et cuir, et avec le chêne américain, des notes de vanille et de coco.",
+      "Rioja et Ribera del Duero sont ses terres les plus célèbres ; au Portugal, on l'appelle tinta roriz."
+     ],
+     "q": "Quels plats ou tapas espagnols connais-tu ou aimerais-tu goûter ?",
+     "c": "Trouve Rioja et Ribera del Duero sur une carte de l'Espagne et note les fleuves qui les traversent."
+    },
+    "it": {
+     "t": "Tempranillo",
+     "g": "Conosci il Tempranillo, l'uva rossa simbolo della Spagna e la spina dorsale del Rioja.",
+     "p": [
+      "Il nome viene da temprano, cioè presto in spagnolo, perché matura prima di molte uve rosse.",
+      "Mostra spesso ciliegia, prugna e cuoio, e con il rovere americano note di vaniglia e cocco.",
+      "Rioja e Ribera del Duero sono le sue zone più famose, e in Portogallo si chiama Tinta Roriz."
+     ],
+     "q": "Quali piatti o tapas spagnole conosci o ti piacerebbe assaggiare?",
+     "c": "Trova Rioja e Ribera del Duero su una carta della Spagna e annota quali fiumi le attraversano."
+    },
+    "pt": {
+     "t": "Tempranillo",
+     "g": "Conhece a Tempranillo, a casta tinta emblemática de Espanha e a espinha dorsal da Rioja.",
+     "p": [
+      "O nome vem de temprano, cedo em espanhol, porque amadurece antes de muitas castas tintas.",
+      "Mostra muitas vezes cereja, ameixa e couro, e com carvalho americano, notas de baunilha e coco.",
+      "Rioja e Ribera del Duero são as suas casas mais famosas; em Portugal chama-se Tinta Roriz ou Aragonez."
+     ],
+     "q": "Que pratos ou tapas espanholas conheces ou gostavas de provar?",
+     "c": "Encontra Rioja e Ribera del Duero num mapa de Espanha e aponta que rios as atravessam."
+    },
+    "pt_BR": {
+     "t": "Tempranillo",
+     "g": "Conheça a Tempranillo, a uva tinta emblemática da Espanha e a espinha dorsal da Rioja.",
+     "p": [
+      "O nome vem de temprano, cedo em espanhol, porque ela amadurece antes de muitas uvas tintas.",
+      "Costuma mostrar cereja, ameixa e couro, e com carvalho americano, notas de baunilha e coco.",
+      "Rioja e Ribera del Duero são suas casas mais famosas, e em Portugal ela se chama Tinta Roriz."
+     ],
+     "q": "Que pratos ou tapas espanholas você conhece ou adoraria provar?",
+     "c": "Encontre Rioja e Ribera del Duero em um mapa da Espanha e anote quais rios passam por lá."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sangiovese",
+     "g": "Meet Sangiovese, the cherry-scented grape behind Chianti and Brunello di Montalcino.",
+     "p": [
+      "Sangiovese is Italy's most planted red grape and the heart of Tuscany's wines.",
+      "It shows sour cherry, tomato leaf and dried herbs, with lively acidity and firm tannins.",
+      "Chianti Classico, Brunello di Montalcino and Vino Nobile di Montepulciano are its best-known wines."
+     ],
+     "q": "Which Italian dish would you most like to cook or taste, and why?",
+     "c": "Smell a fresh tomato leaf or dried oregano today and connect the scent with Tuscany."
+    },
+    "de": {
+     "t": "Sangiovese",
+     "g": "Lerne Sangiovese kennen, die nach Kirsche duftende Traube hinter Chianti und Brunello di Montalcino.",
+     "p": [
+      "Sangiovese ist Italiens meistgepflanzte rote Rebsorte und das Herz der toskanischen Weine.",
+      "Sie zeigt Sauerkirsche, Tomatenblatt und getrocknete Kräuter, mit lebhafter Säure und festem Tannin.",
+      "Chianti Classico, Brunello di Montalcino und Vino Nobile di Montepulciano sind ihre bekanntesten Weine."
+     ],
+     "q": "Welches italienische Gericht würdest du am liebsten kochen oder probieren, und warum?",
+     "c": "Riech heute an einem Tomatenblatt oder getrocknetem Oregano und verbinde den Duft mit der Toskana."
+    },
+    "es": {
+     "t": "Sangiovese",
+     "g": "Conoce la Sangiovese, la uva con aroma a cereza detrás del Chianti y el Brunello di Montalcino.",
+     "p": [
+      "La Sangiovese es la uva tinta más plantada de Italia y el corazón de los vinos de la Toscana.",
+      "Muestra guinda, hoja de tomate y hierbas secas, con acidez viva y taninos firmes.",
+      "Chianti Classico, Brunello di Montalcino y Vino Nobile di Montepulciano son sus vinos más conocidos."
+     ],
+     "q": "¿Qué plato italiano te gustaría más cocinar o probar, y por qué?",
+     "c": "Huele hoy una hoja de tomatera u orégano seco y relaciona ese aroma con la Toscana."
+    },
+    "fr": {
+     "t": "Sangiovese",
+     "g": "Découvre le sangiovese, le cépage aux arômes de cerise derrière le Chianti et le Brunello di Montalcino.",
+     "p": [
+      "Le sangiovese est le cépage rouge le plus planté d'Italie et le cœur des vins de Toscane.",
+      "Il offre griotte, feuille de tomate et herbes sèches, avec une acidité vive et des tanins fermes.",
+      "Chianti Classico, Brunello di Montalcino et Vino Nobile di Montepulciano sont ses vins les plus connus."
+     ],
+     "q": "Quel plat italien aimerais-tu le plus cuisiner ou goûter, et pourquoi ?",
+     "c": "Sens aujourd'hui une feuille de tomate ou de l'origan séché et associe ce parfum à la Toscane."
+    },
+    "it": {
+     "t": "Sangiovese",
+     "g": "Conosci il Sangiovese, l'uva dal profumo di ciliegia alla base del Chianti e del Brunello di Montalcino.",
+     "p": [
+      "Il Sangiovese è l'uva rossa più coltivata d'Italia e il cuore dei vini toscani.",
+      "Mostra amarena, foglia di pomodoro ed erbe secche, con acidità vivace e tannini decisi.",
+      "Chianti Classico, Brunello di Montalcino e Vino Nobile di Montepulciano sono i suoi vini più noti."
+     ],
+     "q": "Quale piatto italiano ti piacerebbe di più cucinare o assaggiare, e perché?",
+     "c": "Annusa oggi una foglia di pomodoro o dell'origano secco e collega quel profumo alla Toscana."
+    },
+    "pt": {
+     "t": "Sangiovese",
+     "g": "Conhece a Sangiovese, a casta com aroma a cereja por trás do Chianti e do Brunello di Montalcino.",
+     "p": [
+      "A Sangiovese é a casta tinta mais plantada de Itália e o coração dos vinhos da Toscana.",
+      "Mostra ginja, folha de tomate e ervas secas, com acidez viva e taninos firmes.",
+      "Chianti Classico, Brunello di Montalcino e Vino Nobile di Montepulciano são os seus vinhos mais conhecidos."
+     ],
+     "q": "Que prato italiano gostavas mais de cozinhar ou provar, e porquê?",
+     "c": "Cheira hoje uma folha de tomateiro ou orégãos secos e liga esse aroma à Toscana."
+    },
+    "pt_BR": {
+     "t": "Sangiovese",
+     "g": "Conheça a Sangiovese, a uva com aroma de cereja por trás do Chianti e do Brunello di Montalcino.",
+     "p": [
+      "A Sangiovese é a uva tinta mais plantada da Itália e o coração dos vinhos da Toscana.",
+      "Ela mostra cereja ácida, folha de tomate e ervas secas, com acidez viva e taninos firmes.",
+      "Chianti Classico, Brunello di Montalcino e Vino Nobile di Montepulciano são seus vinhos mais conhecidos."
+     ],
+     "q": "Que prato italiano você mais gostaria de cozinhar ou provar, e por quê?",
+     "c": "Cheire hoje uma folha de tomateiro ou orégano seco e ligue esse aroma à Toscana."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nebbiolo",
+     "g": "Discover Nebbiolo, the pale but powerful grape of Barolo and Barbaresco in Piedmont.",
+     "p": [
+      "Nebbiolo gives wines that look light in colour but have high acidity and strong tannins.",
+      "Its classic aromas are rose, tar, cherry and, with age, dried herbs and truffle.",
+      "Its name may come from nebbia, Italian for fog, which often covers Piedmont's hills at harvest."
+     ],
+     "q": "Have you ever been surprised that something looked one way but tasted completely different?",
+     "c": "Smell a rose today and imagine it together with cherry: that is a classic Nebbiolo pairing of aromas."
+    },
+    "de": {
+     "t": "Nebbiolo",
+     "g": "Entdecke Nebbiolo, die helle, aber kraftvolle Traube von Barolo und Barbaresco im Piemont.",
+     "p": [
+      "Nebbiolo ergibt Weine, die hell aussehen, aber hohe Säure und kräftiges Tannin haben.",
+      "Klassische Aromen sind Rose, Teer, Kirsche und mit dem Alter getrocknete Kräuter und Trüffel.",
+      "Der Name kommt vielleicht von nebbia, italienisch für Nebel, der zur Lese oft über den Hügeln liegt."
+     ],
+     "q": "Hat dich schon einmal etwas überrascht, das ganz anders schmeckte, als es aussah?",
+     "c": "Riech heute an einer Rose und stell sie dir zusammen mit Kirsche vor: ein klassisches Nebbiolo-Duo."
+    },
+    "es": {
+     "t": "Nebbiolo",
+     "g": "Descubre la Nebbiolo, la uva pálida pero potente de Barolo y Barbaresco, en el Piamonte.",
+     "p": [
+      "La Nebbiolo da vinos de color claro pero con acidez alta y taninos intensos.",
+      "Sus aromas clásicos son rosa, alquitrán, cereza y, con los años, hierbas secas y trufa.",
+      "Su nombre quizá venga de nebbia, niebla en italiano, que suele cubrir las colinas del Piamonte en vendimia."
+     ],
+     "q": "¿Alguna vez te sorprendió algo que parecía de una manera y sabía totalmente distinto?",
+     "c": "Huele hoy una rosa e imagínala junto a una cereza: es un dúo de aromas clásico de la Nebbiolo."
+    },
+    "fr": {
+     "t": "Nebbiolo",
+     "g": "Découvre le nebbiolo, le cépage pâle mais puissant du Barolo et du Barbaresco, dans le Piémont.",
+     "p": [
+      "Le nebbiolo donne des vins de couleur claire mais à l'acidité élevée et aux tanins puissants.",
+      "Ses arômes classiques sont la rose, le goudron, la cerise et, avec l'âge, les herbes sèches et la truffe.",
+      "Son nom viendrait de nebbia, « brouillard », qui couvre souvent les collines du Piémont aux vendanges."
+     ],
+     "q": "As-tu déjà été surpris par quelque chose qui avait l'air d'une façon et un goût tout autre ?",
+     "c": "Sens une rose aujourd'hui et imagine-la avec une cerise : c'est un duo d'arômes classique du nebbiolo."
+    },
+    "it": {
+     "t": "Nebbiolo",
+     "g": "Scopri il Nebbiolo, l'uva chiara ma potente del Barolo e del Barbaresco, in Piemonte.",
+     "p": [
+      "Il Nebbiolo dà vini dal colore chiaro ma con acidità alta e tannini importanti.",
+      "I suoi profumi classici sono rosa, catrame, ciliegia e, con l'età, erbe secche e tartufo.",
+      "Il nome deriverebbe da nebbia, che spesso avvolge le Langhe nel periodo della vendemmia."
+     ],
+     "q": "Ti è mai capitato che qualcosa sembrasse in un modo e avesse un sapore del tutto diverso?",
+     "c": "Annusa oggi una rosa e immaginala insieme alla ciliegia: è un classico duo di profumi del Nebbiolo."
+    },
+    "pt": {
+     "t": "Nebbiolo",
+     "g": "Descobre a Nebbiolo, a casta clara mas poderosa do Barolo e do Barbaresco, no Piemonte.",
+     "p": [
+      "A Nebbiolo dá vinhos de cor clara mas com acidez alta e taninos fortes.",
+      "Os seus aromas clássicos são rosa, alcatrão, cereja e, com a idade, ervas secas e trufa.",
+      "O nome pode vir de nebbia, nevoeiro em italiano, que cobre muitas vezes as colinas do Piemonte na vindima."
+     ],
+     "q": "Já te surpreendeu algo que parecia de uma maneira e tinha um sabor totalmente diferente?",
+     "c": "Cheira hoje uma rosa e imagina-a junto a uma cereja: é um par de aromas clássico da Nebbiolo."
+    },
+    "pt_BR": {
+     "t": "Nebbiolo",
+     "g": "Descubra a Nebbiolo, a uva clara mas poderosa do Barolo e do Barbaresco, no Piemonte.",
+     "p": [
+      "A Nebbiolo dá vinhos de cor clara, mas com acidez alta e taninos fortes.",
+      "Seus aromas clássicos são rosa, alcatrão, cereja e, com a idade, ervas secas e trufa.",
+      "O nome pode vir de nebbia, neblina em italiano, que costuma cobrir as colinas do Piemonte na colheita."
+     ],
+     "q": "Algo já te surpreendeu por parecer de um jeito e ter um sabor totalmente diferente?",
+     "c": "Cheire hoje uma rosa e imagine junto com cereja: é uma dupla de aromas clássica da Nebbiolo."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Malbec",
+     "g": "Learn how Malbec, a French grape, found fame as Argentina's flagship red in Mendoza.",
+     "p": [
+      "Malbec comes from south-west France, where it is the main grape of the dark wines of Cahors.",
+      "In Mendoza's high-altitude vineyards near the Andes, it gives deep purple wines with plum and violet notes.",
+      "Sunny days and cool nights at altitude help the grapes keep freshness while ripening fully."
+     ],
+     "q": "Which mountain landscapes have impressed you the most, in person or in pictures?",
+     "c": "Look up Mendoza on a map and see how close its vineyards are to the Andes mountains."
+    },
+    "de": {
+     "t": "Malbec",
+     "g": "Erfahre, wie Malbec, eine französische Rebsorte, als Argentiniens Aushängeschild in Mendoza berühmt wurde.",
+     "p": [
+      "Malbec stammt aus Südwestfrankreich, wo sie die Hauptsorte der dunklen Weine von Cahors ist.",
+      "In Mendozas Höhenlagen nahe den Anden ergibt sie tiefviolette Weine mit Pflaumen- und Veilchennoten.",
+      "Sonnige Tage und kühle Nächte in der Höhe helfen den Trauben, frisch zu bleiben und voll auszureifen."
+     ],
+     "q": "Welche Berglandschaften haben dich am meisten beeindruckt, live oder auf Bildern?",
+     "c": "Such Mendoza auf einer Karte und sieh, wie nah die Weinberge an den Anden liegen."
+    },
+    "es": {
+     "t": "Malbec",
+     "g": "Aprende cómo la Malbec, una uva francesa, se hizo famosa como emblema de Argentina en Mendoza.",
+     "p": [
+      "La Malbec viene del suroeste de Francia, donde es la uva principal de los vinos oscuros de Cahors.",
+      "En los viñedos de altura de Mendoza, junto a los Andes, da vinos violáceos con notas de ciruela y violeta.",
+      "Los días soleados y las noches frescas en altura ayudan a la uva a madurar sin perder frescura."
+     ],
+     "q": "¿Qué paisajes de montaña te han impresionado más, en persona o en fotos?",
+     "c": "Busca Mendoza en un mapa y mira lo cerca que están sus viñedos de la cordillera de los Andes."
+    },
+    "fr": {
+     "t": "Malbec",
+     "g": "Découvre comment le malbec, cépage français, est devenu l'emblème de l'Argentine à Mendoza.",
+     "p": [
+      "Le malbec vient du sud-ouest de la France, où il est le cépage principal des vins sombres de Cahors.",
+      "Dans les vignobles d'altitude de Mendoza, au pied des Andes, il donne des vins violacés aux notes de prune et de violette.",
+      "Les journées ensoleillées et les nuits fraîches en altitude aident le raisin à mûrir en gardant sa fraîcheur."
+     ],
+     "q": "Quels paysages de montagne t'ont le plus impressionné, en vrai ou en photo ?",
+     "c": "Cherche Mendoza sur une carte et vois à quel point ses vignes sont proches de la cordillère des Andes."
+    },
+    "it": {
+     "t": "Malbec",
+     "g": "Scopri come il Malbec, uva francese, è diventato il simbolo dell'Argentina a Mendoza.",
+     "p": [
+      "Il Malbec viene dal sud-ovest della Francia, dove è l'uva principale dei vini scuri di Cahors.",
+      "Nei vigneti d'altura di Mendoza, vicino alle Ande, dà vini violacei con note di prugna e violetta.",
+      "Giornate di sole e notti fresche in quota aiutano l'uva a maturare mantenendo freschezza."
+     ],
+     "q": "Quali paesaggi di montagna ti hanno colpito di più, dal vivo o in foto?",
+     "c": "Cerca Mendoza su una carta e guarda quanto sono vicini i suoi vigneti alle Ande."
+    },
+    "pt": {
+     "t": "Malbec",
+     "g": "Aprende como a Malbec, uma casta francesa, ganhou fama como estandarte da Argentina em Mendoza.",
+     "p": [
+      "A Malbec vem do sudoeste de França, onde é a casta principal dos vinhos escuros de Cahors.",
+      "Nas vinhas de altitude de Mendoza, junto aos Andes, dá vinhos violáceos com notas de ameixa e violeta.",
+      "Dias de sol e noites frescas em altitude ajudam as uvas a amadurecer sem perder frescura."
+     ],
+     "q": "Que paisagens de montanha te impressionaram mais, ao vivo ou em fotografias?",
+     "c": "Procura Mendoza num mapa e vê como as suas vinhas estão perto da cordilheira dos Andes."
+    },
+    "pt_BR": {
+     "t": "Malbec",
+     "g": "Aprenda como a Malbec, uma uva francesa, ficou famosa como símbolo da Argentina em Mendoza.",
+     "p": [
+      "A Malbec vem do sudoeste da França, onde é a uva principal dos vinhos escuros de Cahors.",
+      "Nos vinhedos de altitude de Mendoza, perto dos Andes, ela dá vinhos violáceos com notas de ameixa e violeta.",
+      "Dias de sol e noites frescas na altitude ajudam as uvas a amadurecer sem perder frescor."
+     ],
+     "q": "Quais paisagens de montanha mais te impressionaram, ao vivo ou em fotos?",
+     "c": "Procure Mendoza em um mapa e veja como seus vinhedos ficam perto da Cordilheira dos Andes."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zinfandel and Primitivo",
+     "g": "Discover one grape with two homes: Zinfandel in California and Primitivo in Puglia.",
+     "p": [
+      "DNA research showed that Zinfandel and Primitivo are the same grape, with roots in Croatia.",
+      "It often gives ripe, juicy wines with blackberry, raspberry jam and spice notes.",
+      "In California it also makes a pale pink, often sweet style known as White Zinfandel."
+     ],
+     "q": "Do you know a food or tradition that travelled to another country and got a new name?",
+     "c": "Find Croatia, Puglia and California on a world map and trace the long journey of this grape."
+    },
+    "de": {
+     "t": "Zinfandel und Primitivo",
+     "g": "Entdecke eine Traube mit zwei Heimaten: Zinfandel in Kalifornien und Primitivo in Apulien.",
+     "p": [
+      "DNA-Analysen zeigten, dass Zinfandel und Primitivo dieselbe Rebsorte sind, mit Wurzeln in Kroatien.",
+      "Sie ergibt oft reife, saftige Weine mit Brombeere, Himbeerkonfitüre und Würze.",
+      "In Kalifornien entsteht daraus auch ein blassrosa, oft süßlicher Stil namens White Zinfandel."
+     ],
+     "q": "Kennst du ein Gericht oder eine Tradition, die in ein anderes Land wanderte und einen neuen Namen bekam?",
+     "c": "Finde Kroatien, Apulien und Kalifornien auf einer Weltkarte und verfolge die lange Reise dieser Traube."
+    },
+    "es": {
+     "t": "Zinfandel y Primitivo",
+     "g": "Descubre una uva con dos hogares: Zinfandel en California y Primitivo en Apulia.",
+     "p": [
+      "Estudios de ADN demostraron que Zinfandel y Primitivo son la misma uva, con raíces en Croacia.",
+      "Suele dar vinos maduros y jugosos con notas de mora, mermelada de frambuesa y especias.",
+      "En California también da un estilo rosado pálido, a menudo dulce, conocido como White Zinfandel."
+     ],
+     "q": "¿Conoces una comida o tradición que viajó a otro país y recibió un nombre nuevo?",
+     "c": "Busca Croacia, Apulia y California en un mapamundi y traza el largo viaje de esta uva."
+    },
+    "fr": {
+     "t": "Zinfandel et primitivo",
+     "g": "Découvre un cépage aux deux patries : le zinfandel en Californie et le primitivo dans les Pouilles.",
+     "p": [
+      "Des analyses ADN ont montré que zinfandel et primitivo sont le même cépage, originaire de Croatie.",
+      "Il donne souvent des vins mûrs et juteux aux notes de mûre, de confiture de framboise et d'épices.",
+      "En Californie, il donne aussi un style rosé pâle, souvent doux, appelé White Zinfandel."
+     ],
+     "q": "Connais-tu un plat ou une tradition qui a voyagé dans un autre pays et changé de nom ?",
+     "c": "Trouve la Croatie, les Pouilles et la Californie sur une carte du monde et retrace le voyage de ce cépage."
+    },
+    "it": {
+     "t": "Zinfandel e Primitivo",
+     "g": "Scopri un'uva con due case: lo Zinfandel in California e il Primitivo in Puglia.",
+     "p": [
+      "Le analisi del DNA hanno dimostrato che Zinfandel e Primitivo sono la stessa uva, con radici in Croazia.",
+      "Dà spesso vini maturi e succosi con note di mora, confettura di lamponi e spezie.",
+      "In California produce anche uno stile rosato chiaro, spesso dolce, chiamato White Zinfandel."
+     ],
+     "q": "Conosci un cibo o una tradizione che ha viaggiato in un altro paese e ha preso un nuovo nome?",
+     "c": "Trova Croazia, Puglia e California su un planisfero e traccia il lungo viaggio di quest'uva."
+    },
+    "pt": {
+     "t": "Zinfandel e Primitivo",
+     "g": "Descobre uma casta com duas casas: Zinfandel na Califórnia e Primitivo na Apúlia.",
+     "p": [
+      "Estudos de ADN mostraram que Zinfandel e Primitivo são a mesma casta, com raízes na Croácia.",
+      "Dá muitas vezes vinhos maduros e suculentos com notas de amora, compota de framboesa e especiarias.",
+      "Na Califórnia faz também um estilo rosado pálido, muitas vezes doce, chamado White Zinfandel."
+     ],
+     "q": "Conheces um prato ou tradição que viajou para outro país e ganhou um nome novo?",
+     "c": "Encontra a Croácia, a Apúlia e a Califórnia num mapa-múndi e traça a longa viagem desta casta."
+    },
+    "pt_BR": {
+     "t": "Zinfandel e Primitivo",
+     "g": "Descubra uma uva com duas casas: Zinfandel na Califórnia e Primitivo na Puglia.",
+     "p": [
+      "Estudos de DNA mostraram que Zinfandel e Primitivo são a mesma uva, com raízes na Croácia.",
+      "Ela costuma dar vinhos maduros e suculentos com notas de amora, geleia de framboesa e especiarias.",
+      "Na Califórnia, também faz um estilo rosado claro, muitas vezes doce, chamado White Zinfandel."
+     ],
+     "q": "Você conhece uma comida ou tradição que viajou para outro país e ganhou um nome novo?",
+     "c": "Encontre Croácia, Puglia e Califórnia em um mapa-múndi e trace a longa viagem dessa uva."
+    }
+   }
+  }
+ ]
+}

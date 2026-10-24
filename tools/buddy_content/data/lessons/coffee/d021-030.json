@@ -1,0 +1,835 @@
+{
+ "topic": "coffee",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The French press",
+     "g": "Brew with full immersion: steep, plunge and pour off promptly for a rich, full-bodied cup.",
+     "p": [
+      "Use a coarse grind and about 1:15, for example 30 g of coffee to 450 g of water just off the boil.",
+      "Stir, put the lid on and steep about 4 minutes, then press the plunger down slowly and gently.",
+      "Pour all the coffee out right away, because coffee left on the grounds keeps extracting and turns bitter."
+     ],
+     "q": "Have you used a French press before, and what did you think of the result?",
+     "c": "Brew a French press for exactly 4 minutes using a timer and note how the body feels in your mouth."
+    },
+    "de": {
+     "t": "Die French Press",
+     "g": "Brühe im Vollimmersionsverfahren: ziehen lassen, pressen und sofort abgießen für eine volle Tasse.",
+     "p": [
+      "Nimm einen groben Mahlgrad und etwa 1:15, zum Beispiel 30 g Kaffee auf 450 g Wasser knapp unter dem Siedepunkt.",
+      "Umrühren, Deckel drauf, etwa 4 Minuten ziehen lassen und dann den Stempel langsam und sanft herunterdrücken.",
+      "Gieß den ganzen Kaffee sofort ab, denn auf dem Satz extrahiert er weiter und wird bitter."
+     ],
+     "q": "Hast du schon einmal eine French Press benutzt, und wie fandest du das Ergebnis?",
+     "c": "Brüh eine French Press mit Stoppuhr genau 4 Minuten und achte darauf, wie sich der Körper im Mund anfühlt."
+    },
+    "es": {
+     "t": "La prensa francesa",
+     "g": "Prepara por inmersión total: infusiona, presiona y sirve enseguida para una taza con mucho cuerpo.",
+     "p": [
+      "Usa molienda gruesa y una proporción de 1:15, por ejemplo 30 g de café para 450 g de agua recién hervida y templada.",
+      "Remueve, tapa y deja infusionar unos 4 minutos; después baja el émbolo despacio y con suavidad.",
+      "Sirve todo el café de inmediato, porque si se queda sobre los posos sigue extrayéndose y amarga."
+     ],
+     "q": "¿Has usado alguna vez una prensa francesa y qué te pareció el resultado?",
+     "c": "Prepara una prensa francesa exactamente 4 minutos con temporizador y fíjate en el cuerpo del café en la boca."
+    },
+    "fr": {
+     "t": "La cafetière à piston",
+     "g": "Infuse par immersion totale : laisse infuser, presse et sers aussitôt pour une tasse ronde et corsée.",
+     "p": [
+      "Prends une mouture grossière et environ 1:15, par exemple 30 g de café pour 450 g d'eau juste frémissante.",
+      "Remue, pose le couvercle et laisse infuser environ 4 minutes, puis enfonce le piston lentement et en douceur.",
+      "Verse tout le café tout de suite, car laissé sur le marc il continue d'extraire et devient amer."
+     ],
+     "q": "As-tu déjà utilisé une cafetière à piston, et qu'as-tu pensé du résultat ?",
+     "c": "Prépare une cafetière à piston pendant exactement 4 minutes au minuteur et observe le corps en bouche."
+    },
+    "it": {
+     "t": "La French press",
+     "g": "Prepara per immersione totale: lascia in infusione, premi e versa subito per una tazza ricca e corposa.",
+     "p": [
+      "Usa una macinatura grossa e circa 1:15, per esempio 30 g di caffè per 450 g di acqua appena tolta dal bollore.",
+      "Mescola, chiudi il coperchio e lascia in infusione circa 4 minuti, poi abbassa lo stantuffo piano e con dolcezza.",
+      "Versa subito tutto il caffè, perché lasciato sui fondi continua a estrarre e diventa amaro."
+     ],
+     "q": "Hai mai usato una French press, e cosa ne pensi del risultato?",
+     "c": "Prepara una French press per esattamente 4 minuti con il timer e nota com'è il corpo in bocca."
+    },
+    "pt": {
+     "t": "A prensa francesa",
+     "g": "Prepara por imersão total: deixa em infusão, carrega no êmbolo e serve logo para uma chávena encorpada.",
+     "p": [
+      "Usa moagem grossa e cerca de 1:15, por exemplo 30 g de café para 450 g de água acabada de sair da fervura.",
+      "Mexe, põe a tampa e deixa em infusão cerca de 4 minutos, depois baixa o êmbolo devagar e com suavidade.",
+      "Serve logo todo o café, porque se ficar sobre as borras continua a extrair e fica amargo."
+     ],
+     "q": "Já usaste uma prensa francesa, e o que achaste do resultado?",
+     "c": "Prepara uma prensa francesa durante exatamente 4 minutos com temporizador e repara no corpo do café na boca."
+    },
+    "pt_BR": {
+     "t": "A prensa francesa",
+     "g": "Prepare por imersão total: deixe em infusão, pressione e sirva logo para uma xícara encorpada.",
+     "p": [
+      "Use moagem grossa e cerca de 1:15, por exemplo 30 g de café para 450 g de água logo depois da fervura.",
+      "Mexa, tampe e deixe em infusão por uns 4 minutos; depois desça o êmbolo devagar e com delicadeza.",
+      "Sirva todo o café na hora, porque se ele ficar sobre a borra continua extraindo e fica amargo."
+     ],
+     "q": "Você já usou uma prensa francesa, e o que achou do resultado?",
+     "c": "Prepare uma prensa francesa por exatamente 4 minutos com timer e repare no corpo do café na boca."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "French press troubleshooting",
+     "g": "Fix the most common French press problems: silt, bitterness and weak cups.",
+     "p": [
+      "Too much silt? Grind a little coarser, let the cup settle for a minute and leave the last sip in the pot.",
+      "Bitter or harsh? Grind coarser, steep a bit shorter and always pour off the coffee as soon as it is ready.",
+      "Weak or thin? Use more coffee, grind slightly finer or steep a little longer, changing one thing at a time."
+     ],
+     "q": "What is the most common problem you have had with your coffee at home?",
+     "c": "Brew a French press and wait 5 minutes after pouring before you drink: does less silt reach your mouth?"
+    },
+    "de": {
+     "t": "French Press: Probleme lösen",
+     "g": "Behebe die häufigsten French-Press-Probleme: Bodensatz, Bitterkeit und dünne Tassen.",
+     "p": [
+      "Zu viel Satz? Mahle etwas gröber, lass die Tasse eine Minute ruhen und lass den letzten Schluck in der Kanne.",
+      "Bitter oder hart? Mahle gröber, lass kürzer ziehen und gieß den Kaffee immer sofort ab, wenn er fertig ist.",
+      "Dünn oder wässrig? Mehr Kaffee, etwas feiner mahlen oder länger ziehen lassen, immer nur eine Sache ändern."
+     ],
+     "q": "Welches Problem hattest du am häufigsten mit deinem Kaffee zu Hause?",
+     "c": "Brüh eine French Press und warte nach dem Eingießen 5 Minuten: Kommt weniger Satz in deinen Mund?"
+    },
+    "es": {
+     "t": "Problemas con la prensa francesa",
+     "g": "Soluciona los fallos más comunes de la prensa francesa: posos, amargor y tazas flojas.",
+     "p": [
+      "¿Demasiados posos? Muele un poco más grueso, deja reposar la taza un minuto y no apures el último sorbo.",
+      "¿Amargo o áspero? Muele más grueso, infusiona algo menos y sirve siempre el café en cuanto esté listo.",
+      "¿Flojo o aguado? Usa más café, muele algo más fino o infusiona un poco más, cambiando una sola cosa cada vez."
+     ],
+     "q": "¿Cuál es el problema más habitual que has tenido con tu café en casa?",
+     "c": "Prepara una prensa francesa y espera 5 minutos después de servir: ¿te llegan menos posos a la boca?"
+    },
+    "fr": {
+     "t": "Dépanner la cafetière à piston",
+     "g": "Règle les problèmes courants de la cafetière à piston : dépôt, amertume et tasses faibles.",
+     "p": [
+      "Trop de dépôt ? Mouds un peu plus gros, laisse reposer la tasse une minute et laisse la dernière gorgée au fond.",
+      "Amer ou dur ? Mouds plus gros, infuse un peu moins longtemps et verse toujours le café dès qu'il est prêt.",
+      "Faible ou aqueux ? Plus de café, une mouture un peu plus fine ou une infusion plus longue, un réglage à la fois."
+     ],
+     "q": "Quel est le problème le plus fréquent que tu as eu avec ton café à la maison ?",
+     "c": "Prépare une cafetière à piston et attends 5 minutes après avoir versé : as-tu moins de dépôt en bouche ?"
+    },
+    "it": {
+     "t": "Risolvere i problemi della French press",
+     "g": "Risolvi i problemi più comuni della French press: fondi, amarezza e tazze deboli.",
+     "p": [
+      "Troppi fondi? Macina un po' più grosso, lascia riposare la tazza un minuto e lascia l'ultimo sorso nella caraffa.",
+      "Amaro o aspro? Macina più grosso, riduci un po' l'infusione e versa sempre il caffè appena è pronto.",
+      "Debole o acquoso? Più caffè, macinatura un po' più fine o infusione più lunga, cambiando una cosa alla volta."
+     ],
+     "q": "Qual è il problema più comune che hai avuto con il caffè a casa?",
+     "c": "Prepara una French press e aspetta 5 minuti dopo averla versata: arrivano meno fondi in bocca?"
+    },
+    "pt": {
+     "t": "Resolver problemas da prensa francesa",
+     "g": "Resolve os problemas mais comuns da prensa francesa: borra, amargor e chávenas fracas.",
+     "p": [
+      "Muita borra? Mói um pouco mais grosso, deixa a chávena repousar um minuto e deixa o último gole no jarro.",
+      "Amargo ou áspero? Mói mais grosso, encurta a infusão e serve sempre o café assim que estiver pronto.",
+      "Fraco ou aguado? Mais café, moagem um pouco mais fina ou infusão mais longa, mudando uma coisa de cada vez."
+     ],
+     "q": "Qual foi o problema mais comum que já tiveste com o teu café em casa?",
+     "c": "Prepara uma prensa francesa e espera 5 minutos depois de servir: chega-te menos borra à boca?"
+    },
+    "pt_BR": {
+     "t": "Resolvendo problemas da prensa francesa",
+     "g": "Resolva os problemas mais comuns da prensa francesa: borra, amargor e xícaras fracas.",
+     "p": [
+      "Muita borra? Moa um pouco mais grosso, deixe a xícara descansar um minuto e deixe o último gole no recipiente.",
+      "Amargo ou áspero? Moa mais grosso, encurte a infusão e sirva o café assim que ele estiver pronto.",
+      "Fraco ou aguado? Mais café, moagem um pouco mais fina ou infusão mais longa, mudando uma coisa por vez."
+     ],
+     "q": "Qual o problema mais comum que você já teve com o café em casa?",
+     "c": "Prepare uma prensa francesa e espere 5 minutos depois de servir: chega menos borra na sua boca?"
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Automatic drip machines",
+     "g": "Get the best from a filter coffee machine at home or in the office.",
+     "p": [
+      "Use fresh, medium-ground coffee and a proper ratio instead of guessing with the scoop.",
+      "Brew a full batch if possible, since many machines heat water and spread it more evenly at full capacity.",
+      "Do not leave coffee on the hot plate for long; pour it into a thermos, and descale the machine regularly."
+     ],
+     "q": "Is there a filter coffee machine at your home or workplace, and how is its coffee?",
+     "c": "Next time you use a drip machine, weigh the coffee for a 1:16 ratio and compare it with your usual cup."
+    },
+    "de": {
+     "t": "Filterkaffeemaschinen",
+     "g": "Hol das Beste aus einer Filterkaffeemaschine heraus, zu Hause oder im Büro.",
+     "p": [
+      "Nimm frischen, mittel gemahlenen Kaffee und ein richtiges Verhältnis, statt mit dem Löffel zu raten.",
+      "Brüh möglichst eine volle Kanne, denn viele Maschinen erhitzen und verteilen das Wasser dann gleichmäßiger.",
+      "Lass den Kaffee nicht lange auf der Heizplatte stehen; füll ihn in eine Thermoskanne und entkalke regelmäßig."
+     ],
+     "q": "Gibt es zu Hause oder bei der Arbeit eine Filtermaschine, und wie schmeckt ihr Kaffee?",
+     "c": "Wiege beim nächsten Mal den Kaffee für ein Verhältnis von 1:16 ab und vergleiche mit deiner üblichen Tasse."
+    },
+    "es": {
+     "t": "Cafeteras de goteo automáticas",
+     "g": "Saca el máximo partido a una cafetera de filtro en casa o en la oficina.",
+     "p": [
+      "Usa café fresco de molienda media y una proporción correcta en lugar de calcular a ojo con el cacito.",
+      "Si puedes, prepara la jarra completa: muchas máquinas calientan y reparten mejor el agua a plena capacidad.",
+      "No dejes el café mucho tiempo en la placa caliente; pásalo a un termo y descalcifica la máquina a menudo."
+     ],
+     "q": "¿Hay una cafetera de filtro en tu casa o tu trabajo, y qué tal es su café?",
+     "c": "La próxima vez pesa el café para una proporción 1:16 y compáralo con tu taza de siempre."
+    },
+    "fr": {
+     "t": "Les cafetières filtres",
+     "g": "Tire le meilleur d'une cafetière filtre électrique, à la maison ou au bureau.",
+     "p": [
+      "Utilise un café frais moulu moyen et un vrai ratio plutôt que de deviner avec la cuillère doseuse.",
+      "Prépare si possible une verseuse pleine : beaucoup de machines chauffent et répartissent mieux l'eau à pleine capacité.",
+      "Ne laisse pas le café longtemps sur la plaque chauffante ; verse-le dans un thermos et détartre souvent."
+     ],
+     "q": "Y a-t-il une cafetière filtre chez toi ou au travail, et que vaut son café ?",
+     "c": "La prochaine fois, pèse le café pour un ratio de 1:16 et compare avec ta tasse habituelle."
+    },
+    "it": {
+     "t": "Le macchine da caffè filtro",
+     "g": "Ottieni il meglio da una macchina da caffè americano, a casa o in ufficio.",
+     "p": [
+      "Usa caffè fresco macinato medio e un rapporto corretto, invece di andare a occhio con il misurino.",
+      "Se puoi, prepara una caraffa piena: molte macchine scaldano e distribuiscono meglio l'acqua a pieno carico.",
+      "Non lasciare a lungo il caffè sulla piastra calda; versalo in un thermos e decalcifica la macchina spesso."
+     ],
+     "q": "C'è una macchina da caffè filtro a casa tua o al lavoro, e com'è il suo caffè?",
+     "c": "La prossima volta pesa il caffè per un rapporto 1:16 e confrontalo con la tua solita tazza."
+    },
+    "pt": {
+     "t": "Máquinas de café de filtro",
+     "g": "Tira o melhor partido de uma máquina de café de filtro, em casa ou no escritório.",
+     "p": [
+      "Usa café fresco de moagem média e uma proporção certa, em vez de adivinhar com a colher-medida.",
+      "Se puderes, prepara um jarro cheio: muitas máquinas aquecem e distribuem melhor a água na capacidade máxima.",
+      "Não deixes o café muito tempo na placa quente; passa-o para um termo e descalcifica a máquina com frequência."
+     ],
+     "q": "Há uma máquina de café de filtro em tua casa ou no trabalho, e como é o café dela?",
+     "c": "Da próxima vez pesa o café para uma proporção de 1:16 e compara com a tua chávena habitual."
+    },
+    "pt_BR": {
+     "t": "Cafeteiras elétricas",
+     "g": "Aproveite ao máximo uma cafeteira elétrica de filtro, em casa ou no escritório.",
+     "p": [
+      "Use café fresco de moagem média e uma proporção certa, em vez de chutar com a colher-medida.",
+      "Se der, prepare a jarra cheia: muitas máquinas aquecem e distribuem melhor a água na capacidade máxima.",
+      "Não deixe o café muito tempo na chapa quente; passe para uma garrafa térmica e descalcifique a máquina sempre."
+     ],
+     "q": "Tem uma cafeteira elétrica na sua casa ou no trabalho, e como é o café dela?",
+     "c": "Na próxima vez, pese o café para uma proporção de 1:16 e compare com a sua xícara de sempre."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pour-over basics",
+     "g": "Learn the bloom, slow spiral pours and how they give a clean, bright cup.",
+     "p": [
+      "Rinse the paper filter with hot water, add medium-fine coffee and level the bed with a gentle shake.",
+      "Start with a small pour, about twice the weight of the coffee, and wait 30 to 45 seconds for the bloom.",
+      "Then pour slowly in spirals from the centre outward, aiming to finish the whole brew in about 3 minutes."
+     ],
+     "q": "Does the slow ritual of a pour-over sound relaxing or too fiddly to you?",
+     "c": "Brew a pour-over and time it: write down when you finished pouring and when the dripping stopped."
+    },
+    "de": {
+     "t": "Handfilter-Grundlagen",
+     "g": "Lerne das Blooming, langsames Gießen in Spiralen und wie das eine klare, lebhafte Tasse ergibt.",
+     "p": [
+      "Spül den Papierfilter mit heißem Wasser, gib mittelfein gemahlenen Kaffee hinein und rüttle das Bett eben.",
+      "Beginne mit einem kleinen Guss, etwa doppelt so viel Wasser wie Kaffee, und warte 30 bis 45 Sekunden.",
+      "Gieß dann langsam in Spiralen von der Mitte nach außen und ziele auf eine Gesamtzeit von etwa 3 Minuten."
+     ],
+     "q": "Klingt das langsame Ritual des Handfilters für dich entspannend oder zu umständlich?",
+     "c": "Brüh einen Handfilter mit Stoppuhr und notiere, wann du fertig gegossen hast und wann es aufhörte zu tropfen."
+    },
+    "es": {
+     "t": "Lo básico del café de filtro",
+     "g": "Aprende el bloom, los vertidos lentos en espiral y cómo dan una taza limpia y brillante.",
+     "p": [
+      "Enjuaga el filtro de papel con agua caliente, añade café de molienda media-fina y nivela la cama con un leve meneo.",
+      "Empieza con un vertido pequeño, el doble del peso del café, y espera de 30 a 45 segundos al bloom.",
+      "Luego vierte despacio en espirales del centro hacia fuera, intentando acabar en unos 3 minutos."
+     ],
+     "q": "¿El ritual lento del café de filtro te parece relajante o demasiado complicado?",
+     "c": "Prepara un café de filtro con temporizador y apunta cuándo terminaste de verter y cuándo dejó de gotear."
+    },
+    "fr": {
+     "t": "Les bases du café filtre manuel",
+     "g": "Apprends le bloom, les versements lents en spirale et comment ils donnent une tasse nette et vive.",
+     "p": [
+      "Rince le filtre papier à l'eau chaude, ajoute un café moulu moyen-fin et égalise le lit d'une petite secousse.",
+      "Commence par un petit versement, environ deux fois le poids du café, et attends 30 à 45 secondes.",
+      "Verse ensuite lentement en spirale du centre vers l'extérieur, pour finir l'infusion en environ 3 minutes."
+     ],
+     "q": "Le rituel lent du café filtre te semble-t-il relaxant ou trop minutieux ?",
+     "c": "Prépare un café filtre au minuteur et note quand tu as fini de verser et quand l'écoulement s'est arrêté."
+    },
+    "it": {
+     "t": "Le basi del pour-over",
+     "g": "Impara il bloom, le versate lente a spirale e come danno una tazza pulita e vivace.",
+     "p": [
+      "Sciacqua il filtro di carta con acqua calda, aggiungi caffè macinato medio-fine e livella il letto con un leggero colpetto.",
+      "Inizia con una piccola versata, circa il doppio del peso del caffè, e aspetta 30-45 secondi per il bloom.",
+      "Poi versa piano a spirale dal centro verso l'esterno, puntando a finire tutto in circa 3 minuti."
+     ],
+     "q": "Il rituale lento del pour-over ti sembra rilassante o troppo complicato?",
+     "c": "Prepara un pour-over con il timer e annota quando hai finito di versare e quando ha smesso di gocciolare."
+    },
+    "pt": {
+     "t": "O básico do café de filtro manual",
+     "g": "Aprende o bloom, as vertidas lentas em espiral e como dão uma chávena limpa e viva.",
+     "p": [
+      "Passa o filtro de papel por água quente, junta café de moagem média-fina e nivela a cama com um abanão leve.",
+      "Começa com uma vertida pequena, cerca do dobro do peso do café, e espera 30 a 45 segundos pelo bloom.",
+      "Depois verte devagar em espiral do centro para fora, tentando terminar tudo em cerca de 3 minutos."
+     ],
+     "q": "O ritual lento do filtro manual parece-te relaxante ou complicado demais?",
+     "c": "Prepara um café de filtro com temporizador e aponta quando acabaste de verter e quando parou de pingar."
+    },
+    "pt_BR": {
+     "t": "O básico do café coado",
+     "g": "Aprenda o bloom, as despejadas lentas em espiral e como elas dão uma xícara limpa e viva.",
+     "p": [
+      "Escalde o filtro de papel com água quente, adicione café de moagem média-fina e nivele a cama com uma leve balançada.",
+      "Comece com uma despejada pequena, cerca do dobro do peso do café, e espere de 30 a 45 segundos pelo bloom.",
+      "Depois despeje devagar em espiral, do centro para fora, tentando terminar tudo em uns 3 minutos."
+     ],
+     "q": "O ritual lento do coado parece relaxante ou trabalhoso demais para você?",
+     "c": "Faça um coado com timer e anote quando terminou de despejar e quando parou de pingar."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cone dripper",
+     "g": "Brew with a cone-shaped dripper and a paper filter, one of the most popular pour-over tools.",
+     "p": [
+      "Cone drippers have one larger hole or a few small ones at the bottom, and the coffee bed sits deep in the point.",
+      "Paper filters for drippers go back to 1908, when Melitta Bentz in Germany made one from blotting paper.",
+      "Because flow depends a lot on your pouring, grind size and pour speed have a big effect on the taste."
+     ],
+     "q": "Have you seen cone drippers in cafés, and did you notice which shape they had?",
+     "c": "Brew with a cone, then grind slightly finer for the next cup and note how the brew time and taste change."
+    },
+    "de": {
+     "t": "Der Kegelfilter",
+     "g": "Brühe mit einem kegelförmigen Filter und Papierfilter, einem der beliebtesten Handfilter.",
+     "p": [
+      "Kegelfilter haben unten ein größeres oder ein paar kleine Löcher, und das Kaffeebett liegt tief in der Spitze.",
+      "Papierfilter gehen auf 1908 zurück, als Melitta Bentz in Dresden einen aus Löschpapier bastelte.",
+      "Weil der Durchfluss stark vom Gießen abhängt, wirken Mahlgrad und Gießtempo deutlich auf den Geschmack."
+     ],
+     "q": "Hast du Kegelfilter schon in Cafés gesehen, und welche Form hatten sie?",
+     "c": "Brüh mit einem Kegelfilter und mahle für die nächste Tasse etwas feiner: Wie ändern sich Brühzeit und Geschmack?"
+    },
+    "es": {
+     "t": "El gotero cónico",
+     "g": "Prepara café con un gotero cónico y filtro de papel, una de las herramientas de filtro más populares.",
+     "p": [
+      "Los goteros cónicos tienen un agujero grande o varios pequeños en la base, y la cama de café queda honda en la punta.",
+      "Los filtros de papel se remontan a 1908, cuando Melitta Bentz, en Alemania, hizo uno con papel secante.",
+      "Como el flujo depende mucho de tu vertido, la molienda y la velocidad de vertido influyen mucho en el sabor."
+     ],
+     "q": "¿Has visto goteros cónicos en cafeterías y te fijaste en su forma?",
+     "c": "Prepara con un cono y muele algo más fino para la siguiente taza: anota cómo cambian el tiempo y el sabor."
+    },
+    "fr": {
+     "t": "Le dripper conique",
+     "g": "Infuse avec un dripper conique et un filtre papier, l'un des outils de café filtre les plus populaires.",
+     "p": [
+      "Les drippers coniques ont un grand trou ou quelques petits au fond, et le lit de café est profond dans la pointe.",
+      "Le filtre papier remonte à 1908, quand Melitta Bentz, en Allemagne, en fabriqua un avec du papier buvard.",
+      "Comme le débit dépend beaucoup de ton versement, la mouture et la vitesse de versement pèsent sur le goût."
+     ],
+     "q": "As-tu déjà vu des drippers coniques dans des cafés, et as-tu remarqué leur forme ?",
+     "c": "Infuse avec un cône, puis mouds un peu plus fin pour la tasse suivante et note les changements de temps et de goût."
+    },
+    "it": {
+     "t": "Il dripper a cono",
+     "g": "Prepara il caffè con un dripper a cono e filtro di carta, uno degli strumenti pour-over più popolari.",
+     "p": [
+      "I dripper a cono hanno un foro grande o alcuni piccoli sul fondo, e il letto di caffè è profondo nella punta.",
+      "Il filtro di carta risale al 1908, quando Melitta Bentz, in Germania, ne creò uno con la carta assorbente.",
+      "Poiché il flusso dipende molto dalla tua versata, macinatura e velocità di versata cambiano molto il gusto."
+     ],
+     "q": "Hai visto dripper a cono nei bar e hai notato che forma avevano?",
+     "c": "Prepara con un cono, poi macina un po' più fine per la tazza seguente e nota come cambiano tempo e gusto."
+    },
+    "pt": {
+     "t": "O filtro cónico",
+     "g": "Prepara café com um filtro cónico e papel, uma das ferramentas de filtro manual mais populares.",
+     "p": [
+      "Os filtros cónicos têm um furo grande ou alguns pequenos no fundo, e a cama de café fica funda na ponta.",
+      "O filtro de papel remonta a 1908, quando Melitta Bentz, na Alemanha, fez um com papel mata-borrão.",
+      "Como o fluxo depende muito da tua vertida, a moagem e a velocidade de vertida mexem muito com o sabor."
+     ],
+     "q": "Já viste filtros cónicos em cafés, e reparaste na forma deles?",
+     "c": "Prepara com um cone e mói um pouco mais fino para a chávena seguinte: aponta como mudam o tempo e o sabor."
+    },
+    "pt_BR": {
+     "t": "O coador cônico",
+     "g": "Faça café com um coador cônico e filtro de papel, um dos métodos de coado mais populares.",
+     "p": [
+      "Os coadores cônicos têm um furo grande ou alguns pequenos no fundo, e a cama de café fica funda na ponta.",
+      "O filtro de papel surgiu em 1908, quando Melitta Bentz, na Alemanha, fez um com papel mata-borrão.",
+      "Como a vazão depende muito da sua despejada, a moagem e a velocidade de despejo mudam bastante o sabor."
+     ],
+     "q": "Você já viu coadores cônicos em cafeterias e reparou no formato deles?",
+     "c": "Prepare com um cone e moa um pouco mais fino na próxima xícara: anote como mudam o tempo e o sabor."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flat-bottom drippers",
+     "g": "See how a flat coffee bed changes the flow and evenness of extraction.",
+     "p": [
+      "Flat-bottom drippers hold the coffee in a wide, even layer and usually drain through a few small holes.",
+      "The water passes through a bed of similar depth everywhere, so extraction tends to be more even.",
+      "They are often called forgiving, because small changes in your pouring matter less than with a cone."
+     ],
+     "q": "Do you prefer tools that forgive mistakes or ones that reward precision?",
+     "c": "If you can, brew the same coffee in a cone and a flat-bottom dripper and compare sweetness and clarity."
+    },
+    "de": {
+     "t": "Flachbodenfilter",
+     "g": "Sieh, wie ein flaches Kaffeebett den Durchfluss und die Gleichmäßigkeit der Extraktion verändert.",
+     "p": [
+      "Flachbodenfilter halten den Kaffee in einer breiten, ebenen Schicht und lassen ihn meist durch wenige kleine Löcher ab.",
+      "Das Wasser fließt überall durch ein ähnlich tiefes Bett, deshalb wird die Extraktion oft gleichmäßiger.",
+      "Sie gelten als verzeihend, denn kleine Gießfehler wirken sich weniger aus als beim Kegel."
+     ],
+     "q": "Magst du lieber Werkzeuge, die Fehler verzeihen, oder solche, die Präzision belohnen?",
+     "c": "Brüh wenn möglich denselben Kaffee im Kegel und im Flachbodenfilter und vergleiche Süße und Klarheit."
+    },
+    "es": {
+     "t": "Goteros de fondo plano",
+     "g": "Descubre cómo una cama de café plana cambia el flujo y la uniformidad de la extracción.",
+     "p": [
+      "Los goteros de fondo plano reparten el café en una capa ancha y pareja, y suelen drenar por unos pocos agujeros pequeños.",
+      "El agua atraviesa una cama de profundidad similar en todas partes, así que la extracción suele ser más uniforme.",
+      "Se dice que perdonan errores, porque pequeños cambios en el vertido importan menos que con un cono."
+     ],
+     "q": "¿Prefieres herramientas que perdonan errores o que premian la precisión?",
+     "c": "Si puedes, prepara el mismo café en un cono y en un gotero plano y compara dulzor y claridad."
+    },
+    "fr": {
+     "t": "Les drippers à fond plat",
+     "g": "Vois comment un lit de café plat change le débit et l'homogénéité de l'extraction.",
+     "p": [
+      "Les drippers à fond plat étalent le café en une couche large et régulière, avec souvent quelques petits trous.",
+      "L'eau traverse partout un lit de même profondeur, donc l'extraction a tendance à être plus homogène.",
+      "On les dit indulgents : de petites variations de versement comptent moins qu'avec un cône."
+     ],
+     "q": "Préfères-tu les outils qui pardonnent les erreurs ou ceux qui récompensent la précision ?",
+     "c": "Si tu peux, prépare le même café dans un cône et dans un dripper plat et compare douceur et netteté."
+    },
+    "it": {
+     "t": "Dripper a fondo piatto",
+     "g": "Scopri come un letto di caffè piatto cambia il flusso e l'uniformità dell'estrazione.",
+     "p": [
+      "I dripper a fondo piatto tengono il caffè in uno strato largo e uniforme e di solito drenano da pochi fori piccoli.",
+      "L'acqua attraversa ovunque un letto di profondità simile, quindi l'estrazione tende a essere più uniforme.",
+      "Sono detti indulgenti, perché piccoli cambi nella versata contano meno che con un cono."
+     ],
+     "q": "Preferisci strumenti che perdonano gli errori o che premiano la precisione?",
+     "c": "Se puoi, prepara lo stesso caffè in un cono e in un dripper piatto e confronta dolcezza e pulizia."
+    },
+    "pt": {
+     "t": "Filtros de fundo plano",
+     "g": "Vê como uma cama de café plana muda o fluxo e a uniformidade da extração.",
+     "p": [
+      "Os filtros de fundo plano espalham o café numa camada larga e regular e costumam escoar por poucos furos pequenos.",
+      "A água atravessa uma cama com a mesma profundidade em todo o lado, por isso a extração tende a ser mais uniforme.",
+      "Dizem que perdoam erros, porque pequenas variações na vertida contam menos do que num cone."
+     ],
+     "q": "Preferes ferramentas que perdoam erros ou que recompensam a precisão?",
+     "c": "Se puderes, prepara o mesmo café num cone e num filtro de fundo plano e compara doçura e limpeza."
+    },
+    "pt_BR": {
+     "t": "Coadores de fundo chato",
+     "g": "Veja como uma cama de café plana muda a vazão e a uniformidade da extração.",
+     "p": [
+      "Os coadores de fundo chato espalham o café numa camada larga e regular e costumam escoar por poucos furos pequenos.",
+      "A água passa por uma cama com a mesma profundidade em toda parte, então a extração tende a ser mais uniforme.",
+      "Dizem que eles perdoam erros, porque pequenas variações na despejada pesam menos do que num cone."
+     ],
+     "q": "Você prefere ferramentas que perdoam erros ou que recompensam a precisão?",
+     "c": "Se puder, prepare o mesmo café num cone e num coador de fundo chato e compare doçura e limpeza."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper, metal and cloth filters",
+     "g": "Learn how each filter type changes body, clarity and oils in your cup.",
+     "p": [
+      "Paper filters hold back oils and fine particles, giving a very clean, clear cup with lighter body.",
+      "Metal filters let oils and some fines through, so the coffee feels fuller and richer, with a little sediment.",
+      "Cloth filters sit in between: clean yet round, but they need rinsing and careful drying after each use."
+     ],
+     "q": "Which sounds more appealing to you: a crystal-clear cup or a rich, heavy one?",
+     "c": "Look at your last cup against the light: is it clear or cloudy, and which filter made it?"
+    },
+    "de": {
+     "t": "Papier-, Metall- und Stofffilter",
+     "g": "Erfahre, wie jeder Filtertyp Körper, Klarheit und Öle in deiner Tasse verändert.",
+     "p": [
+      "Papierfilter halten Öle und feine Partikel zurück und ergeben eine sehr klare Tasse mit leichterem Körper.",
+      "Metallfilter lassen Öle und etwas Feinanteil durch, der Kaffee wirkt voller, mit etwas Bodensatz.",
+      "Stofffilter liegen dazwischen: klar und doch rund, müssen aber nach jedem Gebrauch gespült und getrocknet werden."
+     ],
+     "q": "Was klingt für dich verlockender: eine glasklare Tasse oder eine reiche, kräftige?",
+     "c": "Halte deine letzte Tasse gegen das Licht: Ist sie klar oder trüb, und welcher Filter hat sie gemacht?"
+    },
+    "es": {
+     "t": "Filtros de papel, metal y tela",
+     "g": "Aprende cómo cada tipo de filtro cambia el cuerpo, la claridad y los aceites de tu taza.",
+     "p": [
+      "El papel retiene aceites y partículas finas, y da una taza muy limpia y clara, de cuerpo más ligero.",
+      "El metal deja pasar aceites y algunos finos, así que el café resulta más denso y redondo, con algo de poso.",
+      "La tela queda en medio: limpia pero redonda, aunque hay que enjuagarla y secarla bien tras cada uso."
+     ],
+     "q": "¿Qué te apetece más: una taza cristalina o una rica y con mucho cuerpo?",
+     "c": "Mira tu última taza a contraluz: ¿es clara o turbia, y qué filtro la preparó?"
+    },
+    "fr": {
+     "t": "Filtres papier, métal et tissu",
+     "g": "Découvre comment chaque filtre change le corps, la netteté et les huiles dans ta tasse.",
+     "p": [
+      "Le papier retient les huiles et les particules fines : la tasse est très nette, claire et plus légère en corps.",
+      "Le métal laisse passer huiles et quelques fines : le café est plus rond et riche, avec un léger dépôt.",
+      "Le tissu se situe entre les deux : net mais rond, à rincer et sécher avec soin après chaque usage."
+     ],
+     "q": "Qu'est-ce qui te tente le plus : une tasse limpide ou une tasse riche et corsée ?",
+     "c": "Regarde ta dernière tasse à la lumière : est-elle claire ou trouble, et quel filtre l'a préparée ?"
+    },
+    "it": {
+     "t": "Filtri di carta, metallo e stoffa",
+     "g": "Scopri come ogni tipo di filtro cambia corpo, pulizia e oli nella tua tazza.",
+     "p": [
+      "La carta trattiene oli e particelle fini e dà una tazza molto pulita e limpida, dal corpo più leggero.",
+      "Il metallo lascia passare oli e un po' di fini, quindi il caffè è più pieno e ricco, con un po' di fondo.",
+      "La stoffa sta nel mezzo: pulita ma rotonda, però va sciacquata e asciugata bene dopo ogni uso."
+     ],
+     "q": "Cosa ti attira di più: una tazza cristallina o una ricca e corposa?",
+     "c": "Guarda la tua ultima tazza controluce: è limpida o torbida, e quale filtro l'ha preparata?"
+    },
+    "pt": {
+     "t": "Filtros de papel, metal e pano",
+     "g": "Aprende como cada tipo de filtro muda o corpo, a limpidez e os óleos da tua chávena.",
+     "p": [
+      "O papel retém óleos e partículas finas e dá uma chávena muito limpa e clara, de corpo mais leve.",
+      "O metal deixa passar óleos e alguns finos, por isso o café fica mais cheio e rico, com um pouco de depósito.",
+      "O pano fica no meio: limpo mas redondo, embora precise de ser lavado e seco com cuidado após cada uso."
+     ],
+     "q": "O que te atrai mais: uma chávena cristalina ou uma rica e encorpada?",
+     "c": "Olha para a tua última chávena contra a luz: está clara ou turva, e que filtro a fez?"
+    },
+    "pt_BR": {
+     "t": "Filtros de papel, metal e pano",
+     "g": "Aprenda como cada tipo de filtro muda o corpo, a limpidez e os óleos da sua xícara.",
+     "p": [
+      "O papel segura óleos e partículas finas e dá uma xícara bem limpa e clara, de corpo mais leve.",
+      "O metal deixa passar óleos e alguns finos, então o café fica mais encorpado e rico, com um pouco de borra.",
+      "O coador de pano, tão tradicional no Brasil, fica no meio: limpo mas redondo, e precisa ser lavado e bem seco."
+     ],
+     "q": "O que te atrai mais: uma xícara cristalina ou uma rica e encorpada?",
+     "c": "Olhe sua última xícara contra a luz: ela está clara ou turva, e qual filtro a preparou?"
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bloom explained",
+     "g": "Understand why fresh coffee bubbles when wet and why we pause for it.",
+     "p": [
+      "Roasting creates carbon dioxide that stays trapped in the beans and escapes when hot water touches them.",
+      "This gas can push water away, so a short pause lets it escape and helps water reach all the coffee evenly.",
+      "Very fresh coffee blooms a lot, while old coffee barely rises, so the bloom also hints at freshness."
+     ],
+     "q": "Have you ever noticed your coffee bubbling or rising when you poured water on it?",
+     "c": "Watch your next bloom closely for 30 seconds and describe how high the coffee bed rises and bubbles."
+    },
+    "de": {
+     "t": "Das Blooming erklärt",
+     "g": "Verstehe, warum frischer Kaffee beim Benetzen blubbert und warum wir dafür kurz warten.",
+     "p": [
+      "Beim Rösten entsteht Kohlendioxid, das in den Bohnen bleibt und entweicht, sobald heißes Wasser sie trifft.",
+      "Das Gas kann Wasser wegdrücken; eine kurze Pause lässt es entweichen, damit das Wasser allen Kaffee erreicht.",
+      "Sehr frischer Kaffee blüht stark auf, alter hebt sich kaum, also verrät das Blooming auch etwas über die Frische."
+     ],
+     "q": "Ist dir schon mal aufgefallen, dass dein Kaffee beim Aufgießen blubbert oder aufsteigt?",
+     "c": "Beobachte dein nächstes Blooming 30 Sekunden lang und beschreibe, wie hoch das Kaffeebett steigt und blubbert."
+    },
+    "es": {
+     "t": "El bloom explicado",
+     "g": "Entiende por qué el café fresco burbujea al mojarse y por qué hacemos una pausa.",
+     "p": [
+      "El tueste genera dióxido de carbono que queda atrapado en los granos y sale cuando los toca el agua caliente.",
+      "Ese gas puede apartar el agua, así que una pausa corta lo deja escapar y ayuda a mojar todo el café por igual.",
+      "El café muy fresco se hincha mucho y el viejo apenas sube, así que el bloom también indica frescura."
+     ],
+     "q": "¿Te has fijado alguna vez en que el café burbujea o sube cuando le echas agua?",
+     "c": "Observa tu próximo bloom durante 30 segundos y describe cuánto sube y burbujea la cama de café."
+    },
+    "fr": {
+     "t": "Le bloom expliqué",
+     "g": "Comprends pourquoi le café frais bouillonne quand on le mouille et pourquoi on fait une pause.",
+     "p": [
+      "La torréfaction crée du gaz carbonique piégé dans les grains, qui s'échappe au contact de l'eau chaude.",
+      "Ce gaz peut repousser l'eau : une courte pause le laisse partir et aide l'eau à atteindre tout le café.",
+      "Un café très frais gonfle beaucoup, un vieux café monte à peine : le bloom indique aussi la fraîcheur."
+     ],
+     "q": "As-tu déjà remarqué que ton café bouillonne ou gonfle quand tu verses l'eau ?",
+     "c": "Observe ton prochain bloom pendant 30 secondes et décris à quelle hauteur le lit de café monte et bouillonne."
+    },
+    "it": {
+     "t": "Il bloom spiegato",
+     "g": "Capisci perché il caffè fresco fa le bolle quando si bagna e perché facciamo una pausa.",
+     "p": [
+      "La tostatura crea anidride carbonica che resta intrappolata nei chicchi ed esce quando l'acqua calda li tocca.",
+      "Questo gas può respingere l'acqua: una breve pausa lo lascia uscire e aiuta l'acqua a raggiungere tutto il caffè.",
+      "Il caffè molto fresco si gonfia molto, quello vecchio quasi non sale: il bloom indica anche la freschezza."
+     ],
+     "q": "Hai mai notato che il caffè fa le bolle o si gonfia quando ci versi l'acqua?",
+     "c": "Osserva il tuo prossimo bloom per 30 secondi e descrivi quanto sale e fa le bolle il letto di caffè."
+    },
+    "pt": {
+     "t": "O bloom explicado",
+     "g": "Percebe porque é que o café fresco borbulha quando se molha e porque fazemos uma pausa.",
+     "p": [
+      "A torra cria dióxido de carbono que fica preso nos grãos e escapa quando a água quente lhes toca.",
+      "Esse gás pode afastar a água, por isso uma pausa curta deixa-o sair e ajuda a água a chegar a todo o café.",
+      "Café muito fresco incha bastante e café velho quase não sobe, por isso o bloom também indica frescura."
+     ],
+     "q": "Já reparaste que o café borbulha ou sobe quando lhe deitas água?",
+     "c": "Observa o teu próximo bloom durante 30 segundos e descreve quanto sobe e borbulha a cama de café."
+    },
+    "pt_BR": {
+     "t": "O bloom explicado",
+     "g": "Entenda por que o café fresco borbulha quando é molhado e por que fazemos uma pausa.",
+     "p": [
+      "A torra gera gás carbônico que fica preso nos grãos e escapa quando a água quente encosta neles.",
+      "Esse gás pode afastar a água, então uma pausa curta deixa ele sair e ajuda a água a molhar todo o café.",
+      "Café bem fresco estufa bastante e café velho quase não sobe, então o bloom também indica frescor."
+     ],
+     "q": "Você já reparou que o café borbulha ou estufa quando você joga água nele?",
+     "c": "Observe seu próximo bloom por 30 segundos e descreva quanto a cama de café sobe e borbulha."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tasting your first cups",
+     "g": "Start noticing sweetness, acidity, bitterness and body in every cup you drink.",
+     "p": [
+      "Sweetness feels soft and rounded, like caramel or ripe fruit, even when no sugar is added.",
+      "Acidity is a bright, juicy liveliness, like apple or citrus, while bitterness is like dark chocolate or tonic.",
+      "Body is how heavy the coffee feels in your mouth, from light like tea to thick like whole milk."
+     ],
+     "q": "Which of the four, sweetness, acidity, bitterness or body, do you notice most in your coffee?",
+     "c": "Take three small slurps of your next black coffee and rate sweetness, acidity, bitterness and body from 1 to 5."
+    },
+    "de": {
+     "t": "Deine ersten Verkostungen",
+     "g": "Achte in jeder Tasse auf Süße, Säure, Bitterkeit und Körper.",
+     "p": [
+      "Süße wirkt weich und rund, wie Karamell oder reife Früchte, auch ganz ohne Zucker.",
+      "Säure ist eine helle, saftige Lebendigkeit wie Apfel oder Zitrus, Bitterkeit erinnert an dunkle Schokolade.",
+      "Körper ist, wie schwer sich der Kaffee im Mund anfühlt, von leicht wie Tee bis dicht wie Vollmilch."
+     ],
+     "q": "Welche der vier, Süße, Säure, Bitterkeit oder Körper, bemerkst du in deinem Kaffee am meisten?",
+     "c": "Nimm drei kleine Schlürfer von deinem nächsten schwarzen Kaffee und bewerte die vier Merkmale von 1 bis 5."
+    },
+    "es": {
+     "t": "Cata tus primeras tazas",
+     "g": "Empieza a notar el dulzor, la acidez, el amargor y el cuerpo en cada taza que tomes.",
+     "p": [
+      "El dulzor se siente suave y redondo, como caramelo o fruta madura, aunque no lleve azúcar.",
+      "La acidez es una viveza brillante y jugosa, como manzana o cítricos; el amargor recuerda al chocolate negro.",
+      "El cuerpo es lo pesado que se siente el café en la boca, de ligero como un té a denso como leche entera."
+     ],
+     "q": "¿Cuál de los cuatro, dulzor, acidez, amargor o cuerpo, notas más en tu café?",
+     "c": "Da tres sorbos pequeños a tu próximo café solo y puntúa dulzor, acidez, amargor y cuerpo del 1 al 5."
+    },
+    "fr": {
+     "t": "Déguster tes premières tasses",
+     "g": "Commence à repérer la douceur, l'acidité, l'amertume et le corps dans chaque tasse.",
+     "p": [
+      "La douceur est ronde et suave, comme le caramel ou un fruit mûr, même sans sucre ajouté.",
+      "L'acidité est une vivacité juteuse, comme la pomme ou les agrumes ; l'amertume rappelle le chocolat noir.",
+      "Le corps, c'est le poids du café en bouche, léger comme un thé ou épais comme du lait entier."
+     ],
+     "q": "Lequel des quatre, douceur, acidité, amertume ou corps, remarques-tu le plus dans ton café ?",
+     "c": "Aspire trois petites gorgées de ton prochain café noir et note douceur, acidité, amertume et corps de 1 à 5."
+    },
+    "it": {
+     "t": "Assaggiare le prime tazze",
+     "g": "Inizia a notare dolcezza, acidità, amarezza e corpo in ogni tazza che bevi.",
+     "p": [
+      "La dolcezza è morbida e rotonda, come caramello o frutta matura, anche senza zucchero aggiunto.",
+      "L'acidità è una vivacità succosa, come mela o agrumi; l'amarezza ricorda il cioccolato fondente.",
+      "Il corpo è quanto il caffè sembra pesante in bocca, da leggero come un tè a denso come latte intero."
+     ],
+     "q": "Quale dei quattro, dolcezza, acidità, amarezza o corpo, noti di più nel tuo caffè?",
+     "c": "Fai tre piccoli sorsi rumorosi del prossimo caffè nero e dai un voto da 1 a 5 ai quattro elementi."
+    },
+    "pt": {
+     "t": "Provar as primeiras chávenas",
+     "g": "Começa a reparar na doçura, acidez, amargor e corpo de cada chávena que bebes.",
+     "p": [
+      "A doçura sente-se suave e redonda, como caramelo ou fruta madura, mesmo sem açúcar.",
+      "A acidez é uma vivacidade sumarenta, como maçã ou citrinos; o amargor lembra chocolate preto.",
+      "O corpo é o peso do café na boca, de leve como um chá a denso como leite gordo."
+     ],
+     "q": "Qual dos quatro, doçura, acidez, amargor ou corpo, notas mais no teu café?",
+     "c": "Dá três pequenos goles sorvidos no teu próximo café sem açúcar e pontua os quatro elementos de 1 a 5."
+    },
+    "pt_BR": {
+     "t": "Degustando as primeiras xícaras",
+     "g": "Comece a perceber doçura, acidez, amargor e corpo em cada xícara que você toma.",
+     "p": [
+      "A doçura parece suave e redonda, como caramelo ou fruta madura, mesmo sem açúcar.",
+      "A acidez é uma vivacidade suculenta, como maçã ou cítricos; o amargor lembra chocolate amargo.",
+      "O corpo é o peso do café na boca, de leve como chá a denso como leite integral."
+     ],
+     "q": "Qual dos quatro, doçura, acidez, amargor ou corpo, você mais percebe no seu café?",
+     "c": "Dê três golinhos sorvidos no seu próximo café puro e dê nota de 1 a 5 para os quatro elementos."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month of coffee",
+     "g": "Look back on your first month and brew the same coffee two ways to describe the difference.",
+     "p": [
+      "You now know the journey from cherry to cup, the two main species and how roast level shapes flavour.",
+      "You have learned freshness, storage, grind size, ratio, water and temperature: the keys to any good brew.",
+      "French press, drip and pour-over each show the same coffee in a different light."
+     ],
+     "q": "What was the most surprising thing you learned about coffee this month?",
+     "c": "Brew one coffee as a French press and as a pour-over, then describe body, clarity and sweetness of each."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Kaffeemonat",
+     "g": "Blick auf deinen ersten Monat zurück und brüh denselben Kaffee auf zwei Arten, um den Unterschied zu beschreiben.",
+     "p": [
+      "Du kennst jetzt den Weg von der Kirsche zur Tasse, die zwei Hauptarten und wie der Röstgrad den Geschmack prägt.",
+      "Du hast Frische, Lagerung, Mahlgrad, Verhältnis, Wasser und Temperatur gelernt: die Schlüssel jeder guten Tasse.",
+      "French Press, Filtermaschine und Handfilter zeigen denselben Kaffee jeweils in einem anderen Licht."
+     ],
+     "q": "Was war das Überraschendste, das du diesen Monat über Kaffee gelernt hast?",
+     "c": "Brüh einen Kaffee in der French Press und im Handfilter und beschreibe Körper, Klarheit und Süße von beiden."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes de café",
+     "g": "Repasa tu primer mes y prepara el mismo café de dos maneras para describir la diferencia.",
+     "p": [
+      "Ya conoces el viaje de la cereza a la taza, las dos especies principales y cómo el tueste moldea el sabor.",
+      "Has aprendido frescura, conservación, molienda, proporción, agua y temperatura: las claves de cualquier buen café.",
+      "La prensa francesa, el goteo y el filtro manual muestran el mismo café desde ángulos distintos."
+     ],
+     "q": "¿Qué es lo que más te sorprendió aprender sobre el café este mes?",
+     "c": "Prepara un café en prensa francesa y en filtro, y describe el cuerpo, la claridad y el dulzor de cada uno."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois de café",
+     "g": "Fais le point sur ton premier mois et prépare le même café de deux façons pour décrire la différence.",
+     "p": [
+      "Tu connais maintenant le voyage de la cerise à la tasse, les deux espèces principales et l'effet de la torréfaction.",
+      "Tu as appris fraîcheur, conservation, mouture, ratio, eau et température : les clés de toute bonne tasse.",
+      "Cafetière à piston, filtre électrique et filtre manuel montrent le même café sous un jour différent."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris dans ce que tu as appris sur le café ce mois-ci ?",
+     "c": "Prépare un café à la cafetière à piston et au filtre manuel, puis décris le corps, la netteté et la douceur de chacun."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di caffè",
+     "g": "Ripercorri il tuo primo mese e prepara lo stesso caffè in due modi per descriverne la differenza.",
+     "p": [
+      "Ora conosci il viaggio dalla ciliegia alla tazza, le due specie principali e come la tostatura cambia il gusto.",
+      "Hai imparato freschezza, conservazione, macinatura, rapporto, acqua e temperatura: le chiavi di ogni buon caffè.",
+      "French press, macchina a filtro e pour-over mostrano lo stesso caffè sotto una luce diversa."
+     ],
+     "q": "Qual è la cosa più sorprendente che hai imparato sul caffè questo mese?",
+     "c": "Prepara un caffè con la French press e con il pour-over, poi descrivi corpo, pulizia e dolcezza di entrambi."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de café",
+     "g": "Revê o teu primeiro mês e prepara o mesmo café de duas formas para descrever a diferença.",
+     "p": [
+      "Já conheces a viagem da cereja à chávena, as duas espécies principais e como a torra molda o sabor.",
+      "Aprendeste frescura, conservação, moagem, proporção, água e temperatura: as chaves de qualquer bom café.",
+      "A prensa francesa, a máquina de filtro e o filtro manual mostram o mesmo café de ângulos diferentes."
+     ],
+     "q": "Qual foi a coisa mais surpreendente que aprendeste sobre café este mês?",
+     "c": "Prepara um café na prensa francesa e no filtro manual, e descreve o corpo, a limpidez e a doçura de cada um."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de café",
+     "g": "Relembre seu primeiro mês e prepare o mesmo café de dois jeitos para descrever a diferença.",
+     "p": [
+      "Você já conhece a viagem da cereja à xícara, as duas espécies principais e como a torra molda o sabor.",
+      "Aprendeu frescor, armazenamento, moagem, proporção, água e temperatura: as chaves de qualquer café bom.",
+      "Prensa francesa, cafeteira elétrica e coado mostram o mesmo café por ângulos diferentes."
+     ],
+     "q": "Qual foi a coisa mais surpreendente que você aprendeu sobre café neste mês?",
+     "c": "Prepare um café na prensa francesa e no coado, e descreva o corpo, a limpidez e a doçura de cada um."
+    }
+   }
+  }
+ ]
+}

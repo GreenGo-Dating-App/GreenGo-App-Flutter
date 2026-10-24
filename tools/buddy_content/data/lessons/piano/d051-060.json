@@ -1,0 +1,835 @@
+{
+ "topic": "piano",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crescendo and diminuendo",
+     "g": "Grow gradually louder or softer so the music has direction.",
+     "p": [
+      "Crescendo (cresc.) means gradually louder; diminuendo (dim.) or decrescendo means gradually softer.",
+      "They are often drawn as hairpins: an opening angle for crescendo, a closing angle for diminuendo.",
+      "Plan the change: start soft enough to have room to grow, and spread it evenly across the notes."
+     ],
+     "q": "Does a gradual build-up in music give you goosebumps?",
+     "c": "Play the C scale up with a crescendo from p to f and back down with a diminuendo, keeping the tempo steady."
+    },
+    "de": {
+     "t": "Crescendo und Decrescendo",
+     "g": "Allmählich lauter oder leiser werden, damit die Musik eine Richtung bekommt.",
+     "p": [
+      "Crescendo (cresc.) heißt allmählich lauter; Diminuendo (dim.) oder Decrescendo heißt allmählich leiser.",
+      "Oft stehen sie als Gabeln da: eine sich öffnende für crescendo, eine sich schließende für decrescendo.",
+      "Plane die Veränderung: Fang leise genug an, um Raum zum Wachsen zu haben, und verteile sie gleichmäßig."
+     ],
+     "q": "Bekommst du Gänsehaut, wenn Musik sich allmählich steigert?",
+     "c": "Spiel die C-Dur-Tonleiter aufwärts mit crescendo von p bis f und abwärts mit decrescendo, im gleichen Tempo."
+    },
+    "es": {
+     "t": "Crescendo y diminuendo",
+     "g": "Ir subiendo o bajando el volumen poco a poco para dar dirección a la música.",
+     "p": [
+      "Crescendo (cresc.) significa cada vez más fuerte; diminuendo (dim.) o decrescendo, cada vez más suave.",
+      "A menudo se dibujan como reguladores: un ángulo que se abre para crescendo y uno que se cierra para diminuendo.",
+      "Planifica el cambio: empieza lo bastante suave para tener margen y repártelo por igual entre las notas."
+     ],
+     "q": "¿Se te pone la piel de gallina cuando la música va creciendo poco a poco?",
+     "c": "Toca la escala de Do subiendo con crescendo de p a f y bajando con diminuendo, sin cambiar el tempo."
+    },
+    "fr": {
+     "t": "Crescendo et diminuendo",
+     "g": "Augmenter ou diminuer le volume progressivement pour donner une direction à la musique.",
+     "p": [
+      "Crescendo (cresc.) veut dire de plus en plus fort ; diminuendo (dim.) ou decrescendo, de plus en plus doux.",
+      "On les dessine souvent en soufflets : un angle qui s'ouvre pour le crescendo, qui se ferme pour le diminuendo.",
+      "Prévois le changement : commence assez doux pour avoir de la marge et répartis-le sur toutes les notes."
+     ],
+     "q": "As-tu des frissons quand une musique monte peu à peu en intensité ?",
+     "c": "Joue la gamme de do en montant avec un crescendo de p à f, puis en descendant avec un diminuendo, au même tempo."
+    },
+    "it": {
+     "t": "Crescendo e diminuendo",
+     "g": "Aumentare o diminuire gradualmente il volume per dare direzione alla musica.",
+     "p": [
+      "Crescendo (cresc.) significa sempre più forte; diminuendo (dim.) o decrescendo, sempre più piano.",
+      "Spesso si disegnano come forcelle: un angolo che si apre per il crescendo, uno che si chiude per il diminuendo.",
+      "Pianifica il cambiamento: parti abbastanza piano da avere spazio e distribuiscilo in modo uniforme sulle note."
+     ],
+     "q": "Ti vengono i brividi quando la musica cresce poco a poco?",
+     "c": "Suona la scala di Do in salita con un crescendo da p a f e in discesa con un diminuendo, senza cambiare tempo."
+    },
+    "pt": {
+     "t": "Crescendo e diminuendo",
+     "g": "Ir aumentando ou diminuindo o volume aos poucos para dar direção à música.",
+     "p": [
+      "Crescendo (cresc.) quer dizer cada vez mais forte; diminuendo (dim.) ou decrescendo, cada vez mais suave.",
+      "Muitas vezes desenham-se como forquilhas: um ângulo que abre para o crescendo e um que fecha para o diminuendo.",
+      "Planeia a mudança: começa suave o suficiente para ter margem e distribui-a por igual pelas notas."
+     ],
+     "q": "Ficas arrepiado quando a música vai crescendo aos poucos?",
+     "c": "Toca a escala de dó a subir com crescendo de p a f e a descer com diminuendo, sem mudar o andamento."
+    },
+    "pt_BR": {
+     "t": "Crescendo e diminuendo",
+     "g": "Ir aumentando ou diminuindo o volume aos poucos para dar direção à música.",
+     "p": [
+      "Crescendo (cresc.) quer dizer cada vez mais forte; diminuendo (dim.) ou decrescendo, cada vez mais suave.",
+      "Muitas vezes aparecem como sinais em forma de cunha: abrindo para o crescendo e fechando para o diminuendo.",
+      "Planeje a mudança: comece suave o bastante para ter espaço e distribua por igual entre as notas."
+     ],
+     "q": "Você fica arrepiado quando a música vai crescendo aos poucos?",
+     "c": "Toque a escala de dó subindo com crescendo de p a f e descendo com diminuendo, sem mudar o andamento."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accents",
+     "g": "Emphasise certain notes with accents to give music character and energy.",
+     "p": [
+      "An accent mark (>) above or below a note means play that note a bit louder than its neighbours.",
+      "Make the accent with a quicker key speed and a little arm weight, then relax right after it.",
+      "Accents on weak beats or off-beats create surprise and drive, as in many dances and pop grooves."
+     ],
+     "q": "Do you like music with strong, punchy rhythms?",
+     "c": "Play C D E F G in eighth notes four times, accenting the first note, then the second, then the last."
+    },
+    "de": {
+     "t": "Akzente",
+     "g": "Bestimmte Töne mit Akzenten hervorheben, um der Musik Charakter und Energie zu geben.",
+     "p": [
+      "Ein Akzentzeichen (>) über oder unter einer Note heißt: diesen Ton etwas lauter als seine Nachbarn spielen.",
+      "Erzeuge den Akzent mit schnellerem Anschlag und etwas Armgewicht und entspann dich direkt danach.",
+      "Akzente auf schwachen Schlägen oder dazwischen erzeugen Überraschung und Drive, wie in vielen Tänzen und Popgrooves."
+     ],
+     "q": "Magst du Musik mit kräftigen, knackigen Rhythmen?",
+     "c": "Spiel C D E F G viermal in Achteln und betone erst den ersten Ton, dann den zweiten, dann den letzten."
+    },
+    "es": {
+     "t": "Acentos",
+     "g": "Resaltar ciertas notas con acentos para dar carácter y energía a la música.",
+     "p": [
+      "El acento (>) sobre o bajo una nota indica tocarla un poco más fuerte que las de alrededor.",
+      "Haz el acento con más velocidad de tecla y algo de peso del brazo, y relájate justo después.",
+      "Los acentos en pulsos débiles o a contratiempo crean sorpresa y empuje, como en muchos bailes y en el pop."
+     ],
+     "q": "¿Te gusta la música con ritmos fuertes y marcados?",
+     "c": "Toca Do Re Mi Fa Sol en corcheas cuatro veces, acentuando primero la primera nota, luego la segunda y luego la última."
+    },
+    "fr": {
+     "t": "Les accents",
+     "g": "Mettre en valeur certaines notes avec des accents pour donner caractère et énergie.",
+     "p": [
+      "Un accent (>) au-dessus ou au-dessous d'une note demande de la jouer un peu plus fort que ses voisines.",
+      "Fais l'accent avec une vitesse de touche plus rapide et un peu de poids du bras, puis relâche aussitôt.",
+      "Des accents sur les temps faibles ou à contretemps créent surprise et élan, comme dans beaucoup de danses et de pop."
+     ],
+     "q": "Aimes-tu la musique aux rythmes francs et percutants ?",
+     "c": "Joue do ré mi fa sol en croches quatre fois, en accentuant la première note, puis la deuxième, puis la dernière."
+    },
+    "it": {
+     "t": "Gli accenti",
+     "g": "Mettere in risalto alcune note con gli accenti per dare carattere ed energia alla musica.",
+     "p": [
+      "L'accento (>) sopra o sotto una nota indica di suonarla un po' più forte delle note vicine.",
+      "Fai l'accento con una velocità di tasto maggiore e un po' di peso del braccio, poi rilassati subito.",
+      "Gli accenti sui tempi deboli o in controtempo creano sorpresa e spinta, come in tante danze e nel pop."
+     ],
+     "q": "Ti piace la musica con ritmi forti e incisivi?",
+     "c": "Suona Do Re Mi Fa Sol in crome quattro volte, accentando prima la prima nota, poi la seconda, poi l'ultima."
+    },
+    "pt": {
+     "t": "Acentos",
+     "g": "Realçar certas notas com acentos para dar carácter e energia à música.",
+     "p": [
+      "O acento (>) por cima ou por baixo de uma nota indica que a deves tocar um pouco mais forte do que as vizinhas.",
+      "Faz o acento com mais velocidade de tecla e algum peso do braço, e relaxa logo a seguir.",
+      "Acentos em tempos fracos ou em contratempo criam surpresa e energia, como em muitas danças e no pop."
+     ],
+     "q": "Gostas de música com ritmos fortes e marcados?",
+     "c": "Toca dó ré mi fá sol em colcheias quatro vezes, acentuando primeiro a primeira nota, depois a segunda e depois a última."
+    },
+    "pt_BR": {
+     "t": "Acentos",
+     "g": "Destacar certas notas com acentos para dar caráter e energia à música.",
+     "p": [
+      "O acento (>) acima ou abaixo de uma nota indica tocá-la um pouco mais forte do que as vizinhas.",
+      "Faça o acento com mais velocidade de tecla e um pouco de peso do braço, e relaxe logo depois.",
+      "Acentos em tempos fracos ou no contratempo criam surpresa e balanço, como em muitas danças e no pop."
+     ],
+     "q": "Você gosta de música com ritmos fortes e marcados?",
+     "c": "Toque dó ré mi fá sol em colcheias quatro vezes, acentuando primeiro a primeira nota, depois a segunda e depois a última."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The sustain pedal",
+     "g": "Press, hold and release the right pedal with good control.",
+     "p": [
+      "The sustain pedal lifts the dampers off the strings, so notes keep ringing after you release the keys.",
+      "Keep your right heel on the floor and press the pedal with the ball of the foot, smoothly and all the way.",
+      "Release it fully to stop the sound; holding it too long blurs different chords into a muddy wash."
+     ],
+     "q": "Have you noticed how different the piano sounds with the pedal down?",
+     "c": "Play a C chord, press the pedal, let go of the keys and listen; then lift the pedal and hear the sound stop."
+    },
+    "de": {
+     "t": "Das Haltepedal",
+     "g": "Das rechte Pedal kontrolliert drücken, halten und loslassen.",
+     "p": [
+      "Das Haltepedal hebt die Dämpfer von den Saiten, sodass die Töne nach dem Loslassen der Tasten weiterklingen.",
+      "Die rechte Ferse bleibt am Boden; drück das Pedal mit dem Fußballen gleichmäßig und ganz durch.",
+      "Lass es ganz los, um den Klang zu beenden; zu langes Halten verwischt verschiedene Akkorde zu Klangbrei."
+     ],
+     "q": "Ist dir aufgefallen, wie anders das Klavier mit getretenem Pedal klingt?",
+     "c": "Spiel einen C-Akkord, tritt das Pedal, lass die Tasten los und hör zu; dann heb das Pedal und hör den Klang enden."
+    },
+    "es": {
+     "t": "El pedal de resonancia",
+     "g": "Pisar, mantener y soltar el pedal derecho con buen control.",
+     "p": [
+      "El pedal de resonancia separa los apagadores de las cuerdas, así las notas siguen sonando al soltar las teclas.",
+      "Deja el talón derecho en el suelo y pisa con la parte delantera del pie, suave y hasta el fondo.",
+      "Suéltalo del todo para cortar el sonido; mantenerlo demasiado mezcla acordes distintos en un sonido borroso."
+     ],
+     "q": "¿Has notado lo distinto que suena el piano con el pedal pisado?",
+     "c": "Toca un acorde de Do, pisa el pedal, suelta las teclas y escucha; luego levanta el pedal y oye cómo se corta."
+    },
+    "fr": {
+     "t": "La pédale forte",
+     "g": "Enfoncer, tenir et relâcher la pédale de droite avec contrôle.",
+     "p": [
+      "La pédale forte soulève les étouffoirs des cordes : les notes continuent de sonner après avoir lâché les touches.",
+      "Garde le talon droit au sol et enfonce la pédale avec l'avant du pied, souplement et jusqu'au bout.",
+      "Relâche-la complètement pour arrêter le son ; la tenir trop longtemps mélange les accords en un son brouillé."
+     ],
+     "q": "As-tu remarqué à quel point le piano sonne autrement avec la pédale ?",
+     "c": "Joue un accord de do, enfonce la pédale, lâche les touches et écoute ; puis relève la pédale et entends le son s'arrêter."
+    },
+    "it": {
+     "t": "Il pedale di risonanza",
+     "g": "Premere, tenere e rilasciare il pedale destro con controllo.",
+     "p": [
+      "Il pedale di risonanza solleva gli smorzatori dalle corde, così le note continuano a suonare dopo aver lasciato i tasti.",
+      "Tieni il tallone destro a terra e premi il pedale con l'avampiede, in modo morbido e fino in fondo.",
+      "Rilascialo del tutto per fermare il suono; tenerlo troppo mescola accordi diversi in un suono confuso."
+     ],
+     "q": "Hai notato quanto suona diverso il pianoforte con il pedale abbassato?",
+     "c": "Suona un accordo di Do, premi il pedale, lascia i tasti e ascolta; poi alza il pedale e senti il suono fermarsi."
+    },
+    "pt": {
+     "t": "O pedal de sustentação",
+     "g": "Carregar, manter e largar o pedal direito com bom controlo.",
+     "p": [
+      "O pedal de sustentação afasta os abafadores das cordas, por isso as notas continuam a soar depois de largares as teclas.",
+      "Mantém o calcanhar direito no chão e carrega o pedal com a parte da frente do pé, suavemente e até ao fundo.",
+      "Larga-o por completo para parar o som; segurá-lo demasiado mistura acordes diferentes num som turvo."
+     ],
+     "q": "Já reparaste como o piano soa diferente com o pedal carregado?",
+     "c": "Toca um acorde de dó, carrega o pedal, larga as teclas e ouve; depois levanta o pedal e ouve o som parar."
+    },
+    "pt_BR": {
+     "t": "O pedal de sustentação",
+     "g": "Pisar, segurar e soltar o pedal direito com bom controle.",
+     "p": [
+      "O pedal de sustentação afasta os abafadores das cordas, então as notas continuam soando depois que você solta as teclas.",
+      "Mantenha o calcanhar direito no chão e pise o pedal com a parte da frente do pé, suave e até o fundo.",
+      "Solte por completo para parar o som; segurar demais mistura acordes diferentes num som embolado."
+     ],
+     "q": "Você já percebeu como o piano soa diferente com o pedal pisado?",
+     "c": "Toque um acorde de dó, pise o pedal, solte as teclas e ouça; depois levante o pedal e ouça o som parar."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Legato pedalling",
+     "g": "Change the pedal just after each new chord so the sound connects without blurring.",
+     "p": [
+      "Legato or syncopated pedalling: play the new chord, lift the pedal at that moment, then press it again right after.",
+      "Think hands down, foot up, foot down: the foot moves just after the hand, never at the same time.",
+      "Let your ear judge: if the old chord still rings into the new one, the pedal came down too early."
+     ],
+     "q": "Can you hear the difference between a clean pedal change and a blurry one?",
+     "c": "Play C, F, G, C as blocked chords, one per bar, changing the pedal just after each chord; repeat until no blur or gap."
+    },
+    "de": {
+     "t": "Legato-Pedal",
+     "g": "Das Pedal kurz nach jedem neuen Akkord wechseln, damit der Klang verbunden, aber nicht verwischt ist.",
+     "p": [
+      "Synkopisches Pedal: Spiel den neuen Akkord, heb in diesem Moment das Pedal und tritt es gleich danach wieder.",
+      "Denk Hand runter, Fuß hoch, Fuß runter: Der Fuß folgt kurz nach der Hand, nie gleichzeitig.",
+      "Lass dein Ohr urteilen: Klingt der alte Akkord in den neuen hinein, kam das Pedal zu früh."
+     ],
+     "q": "Hörst du den Unterschied zwischen sauberem und verschwommenem Pedalwechsel?",
+     "c": "Spiel C, F, G, C als Blockakkorde, einer pro Takt, wechsle das Pedal kurz nach jedem; wiederhol, bis nichts verwischt."
+    },
+    "es": {
+     "t": "Pedal legato",
+     "g": "Cambiar el pedal justo después de cada acorde nuevo para unir el sonido sin emborronarlo.",
+     "p": [
+      "Pedal sincopado: toca el acorde nuevo, levanta el pedal en ese instante y vuelve a pisarlo justo después.",
+      "Piensa manos abajo, pie arriba, pie abajo: el pie se mueve justo después de la mano, nunca a la vez.",
+      "Que juzgue tu oído: si el acorde anterior sigue sonando en el nuevo, pisaste demasiado pronto."
+     ],
+     "q": "¿Oyes la diferencia entre un cambio de pedal limpio y uno borroso?",
+     "c": "Toca Do, Fa, Sol, Do en bloque, uno por compás, cambiando el pedal justo después de cada uno, hasta que no haya mezcla."
+    },
+    "fr": {
+     "t": "La pédale syncopée",
+     "g": "Changer la pédale juste après chaque nouvel accord pour lier le son sans le brouiller.",
+     "p": [
+      "Pédale syncopée : joue le nouvel accord, relève la pédale à cet instant, puis renfonce-la juste après.",
+      "Pense mains en bas, pied en haut, pied en bas : le pied bouge juste après la main, jamais en même temps.",
+      "Laisse ton oreille juger : si l'ancien accord résonne encore dans le nouveau, la pédale est revenue trop tôt."
+     ],
+     "q": "Entends-tu la différence entre un changement de pédale net et un changement flou ?",
+     "c": "Joue do, fa, sol, do plaqués, un par mesure, en changeant la pédale juste après chacun, jusqu'à ce que rien ne bave."
+    },
+    "it": {
+     "t": "Il pedale legato",
+     "g": "Cambiare il pedale subito dopo ogni nuovo accordo per collegare il suono senza impastarlo.",
+     "p": [
+      "Pedale sincopato: suona il nuovo accordo, alza il pedale in quell'istante e riabbassalo subito dopo.",
+      "Pensa mani giù, piede su, piede giù: il piede si muove subito dopo la mano, mai insieme.",
+      "Lascia giudicare l'orecchio: se l'accordo vecchio suona ancora nel nuovo, il pedale è sceso troppo presto."
+     ],
+     "q": "Senti la differenza tra un cambio di pedale pulito e uno impastato?",
+     "c": "Suona Do, Fa, Sol, Do pieni, uno per battuta, cambiando il pedale subito dopo ognuno, finché non c'è più impasto."
+    },
+    "pt": {
+     "t": "Pedal legato",
+     "g": "Mudar o pedal logo depois de cada acorde novo para ligar o som sem o tornar turvo.",
+     "p": [
+      "Pedal sincopado: toca o acorde novo, levanta o pedal nesse instante e volta a carregá-lo logo a seguir.",
+      "Pensa mãos em baixo, pé em cima, pé em baixo: o pé mexe-se logo depois da mão, nunca ao mesmo tempo.",
+      "Deixa o ouvido decidir: se o acorde anterior ainda soa no novo, o pedal desceu cedo demais."
+     ],
+     "q": "Ouves a diferença entre uma mudança de pedal limpa e uma turva?",
+     "c": "Toca dó, fá, sol, dó em bloco, um por compasso, mudando o pedal logo depois de cada um, até não haver mistura."
+    },
+    "pt_BR": {
+     "t": "Pedal legato",
+     "g": "Trocar o pedal logo depois de cada acorde novo para ligar o som sem embolar.",
+     "p": [
+      "Pedal sincopado: toque o acorde novo, levante o pedal nesse instante e pise de novo logo em seguida.",
+      "Pense mãos para baixo, pé para cima, pé para baixo: o pé se move logo depois da mão, nunca junto.",
+      "Deixe o ouvido julgar: se o acorde anterior ainda soa no novo, o pedal desceu cedo demais."
+     ],
+     "q": "Você ouve a diferença entre uma troca de pedal limpa e uma embolada?",
+     "c": "Toque dó, fá, sol, dó em bloco, um por compasso, trocando o pedal logo depois de cada um, até não embolar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shifting hand positions",
+     "g": "Move smoothly to new hand positions in the middle of a piece.",
+     "p": [
+      "Look for the shift in the music before you play: a new fingering number often signals a new position.",
+      "Use rests, long notes or phrase ends to move, and travel with a light, relaxed arm.",
+      "Look ahead and land on the new position with the first finger you need already prepared."
+     ],
+     "q": "Do you tend to look down at your hands when you change position?",
+     "c": "Play C D E F G in C position, move to G position and play G A B C D, then back, without breaking the beat."
+    },
+    "de": {
+     "t": "Handlagen wechseln",
+     "g": "Mitten im Stück fließend in neue Handlagen wechseln.",
+     "p": [
+      "Such den Lagenwechsel vor dem Spielen in den Noten: Eine neue Fingerzahl kündigt oft eine neue Lage an.",
+      "Nutz Pausen, lange Noten oder Phrasenenden zum Wechseln und bewege dich mit leichtem, lockerem Arm.",
+      "Schau voraus und lande in der neuen Lage mit dem ersten benötigten Finger schon vorbereitet."
+     ],
+     "q": "Schaust du beim Lagenwechsel eher auf deine Hände?",
+     "c": "Spiel C D E F G in der C-Lage, wechsle in die G-Lage und spiel G A H C D, dann zurück, ohne den Puls zu verlieren."
+    },
+    "es": {
+     "t": "Cambiar de posición",
+     "g": "Pasar con fluidez a nuevas posiciones de la mano en mitad de una pieza.",
+     "p": [
+      "Busca el cambio en la partitura antes de tocar: un nuevo número de dedo suele avisar de una posición nueva.",
+      "Aprovecha silencios, notas largas o finales de frase para moverte, con el brazo ligero y relajado.",
+      "Mira por delante y llega a la nueva posición con el primer dedo que necesitas ya preparado."
+     ],
+     "q": "¿Sueles mirarte las manos cuando cambias de posición?",
+     "c": "Toca Do Re Mi Fa Sol en posición de Do, pasa a Sol y toca Sol La Si Do Re, y vuelve, sin romper el pulso."
+    },
+    "fr": {
+     "t": "Changer de position",
+     "g": "Passer avec fluidité à de nouvelles positions de main au milieu d'un morceau.",
+     "p": [
+      "Repère le déplacement sur la partition avant de jouer : un nouveau doigté annonce souvent une nouvelle position.",
+      "Profite des silences, des notes longues ou des fins de phrase pour te déplacer, le bras léger et détendu.",
+      "Lis en avance et arrive dans la nouvelle position avec le premier doigt utile déjà prêt."
+     ],
+     "q": "As-tu tendance à regarder tes mains quand tu changes de position ?",
+     "c": "Joue do ré mi fa sol en position de do, passe en position de sol pour sol la si do ré, puis reviens, sans casser la pulsation."
+    },
+    "it": {
+     "t": "Cambiare posizione",
+     "g": "Spostarsi con fluidità in nuove posizioni della mano nel mezzo di un brano.",
+     "p": [
+      "Cerca lo spostamento nello spartito prima di suonare: un nuovo numero di dito spesso annuncia una nuova posizione.",
+      "Sfrutta pause, note lunghe o fine frase per spostarti, con il braccio leggero e rilassato.",
+      "Guarda avanti e arriva nella nuova posizione con il primo dito che ti serve già pronto."
+     ],
+     "q": "Tendi a guardarti le mani quando cambi posizione?",
+     "c": "Suona Do Re Mi Fa Sol in posizione di Do, passa a Sol e suona Sol La Si Do Re, poi torna, senza perdere il tempo."
+    },
+    "pt": {
+     "t": "Mudar de posição",
+     "g": "Passar com fluidez para novas posições da mão a meio de uma peça.",
+     "p": [
+      "Procura a mudança na partitura antes de tocar: um novo número de dedo costuma anunciar uma posição nova.",
+      "Aproveita pausas, notas longas ou finais de frase para te mexeres, com o braço leve e descontraído.",
+      "Lê à frente e chega à nova posição com o primeiro dedo de que precisas já preparado."
+     ],
+     "q": "Costumas olhar para as mãos quando mudas de posição?",
+     "c": "Toca dó ré mi fá sol na posição de dó, passa para sol e toca sol lá si dó ré, e volta, sem quebrar a pulsação."
+    },
+    "pt_BR": {
+     "t": "Mudando de posição",
+     "g": "Passar com fluidez para novas posições da mão no meio de uma peça.",
+     "p": [
+      "Procure a mudança na partitura antes de tocar: um novo número de dedo costuma avisar de uma nova posição.",
+      "Aproveite pausas, notas longas ou fins de frase para se mover, com o braço leve e relaxado.",
+      "Leia adiante e chegue à nova posição com o primeiro dedo de que precisa já preparado."
+     ],
+     "q": "Você costuma olhar para as mãos quando muda de posição?",
+     "c": "Toque dó ré mi fá sol na posição de dó, passe para sol e toque sol lá si dó ré, e volte, sem quebrar a pulsação."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finger crossings in melodies",
+     "g": "Use thumb-under and finger-over moves to play melodies wider than five notes.",
+     "p": [
+      "Thumb-under lets the hand continue upward smoothly; finger-over lets it continue downward.",
+      "Crossings follow the same rules as in scales: keep the wrist level and the thumb close to the keys.",
+      "Follow the printed fingering; it is usually planned so the crossing falls where it is easiest."
+     ],
+     "q": "Have you found a melody you love that needs more than five notes?",
+     "c": "Play C D E, cross the thumb to F and continue to C above, then come down crossing 3 over to E; five times, legato."
+    },
+    "de": {
+     "t": "Über- und Untersetzen in Melodien",
+     "g": "Daumenuntersatz und Übersetzen nutzen, um Melodien mit mehr als fünf Tönen zu spielen.",
+     "p": [
+      "Mit dem Daumenuntersatz geht die Hand weich nach oben weiter; mit dem Übersetzen nach unten.",
+      "Es gelten dieselben Regeln wie bei Tonleitern: Handgelenk ruhig, Daumen nah an den Tasten.",
+      "Folge dem gedruckten Fingersatz; er ist meist so geplant, dass der Wechsel an der bequemsten Stelle liegt."
+     ],
+     "q": "Hast du eine Lieblingsmelodie gefunden, die mehr als fünf Töne braucht?",
+     "c": "Spiel C D E, setz den Daumen auf F unter, weiter bis zum oberen C, dann abwärts mit 3 über auf E; fünfmal legato."
+    },
+    "es": {
+     "t": "Pasos de pulgar en melodías",
+     "g": "Usar el paso del pulgar y el cruce de dedos para tocar melodías de más de cinco notas.",
+     "p": [
+      "Pasar el pulgar por debajo deja que la mano siga subiendo; cruzar un dedo por encima, que siga bajando.",
+      "Los cruces siguen las reglas de las escalas: muñeca nivelada y pulgar cerca de las teclas.",
+      "Sigue la digitación impresa: suele estar pensada para que el cruce caiga donde resulta más fácil."
+     ],
+     "q": "¿Has encontrado una melodía que te encante y necesite más de cinco notas?",
+     "c": "Toca Do Re Mi, pasa el pulgar a Fa y sigue hasta el Do agudo; baja cruzando el 3 hasta Mi. Cinco veces, ligado."
+    },
+    "fr": {
+     "t": "Passages de doigts dans les mélodies",
+     "g": "Utiliser le passage du pouce et des doigts pour jouer des mélodies de plus de cinq notes.",
+     "p": [
+      "Le passage du pouce permet à la main de continuer vers l'aigu ; le passage d'un doigt par-dessus, vers le grave.",
+      "Les passages suivent les règles des gammes : poignet à l'horizontale, pouce près des touches.",
+      "Suis le doigté imprimé : il est en général prévu pour que le passage tombe là où c'est le plus facile."
+     ],
+     "q": "As-tu trouvé une mélodie que tu adores et qui demande plus de cinq notes ?",
+     "c": "Joue do ré mi, passe le pouce sur fa jusqu'au do aigu, puis redescends en passant le 3 sur mi ; cinq fois, legato."
+    },
+    "it": {
+     "t": "Passaggi delle dita nelle melodie",
+     "g": "Usare il passaggio del pollice e lo scavalcamento per suonare melodie di più di cinque note.",
+     "p": [
+      "Il passaggio del pollice fa proseguire la mano verso l'acuto; lo scavalcamento di un dito, verso il grave.",
+      "I passaggi seguono le regole delle scale: polso in linea e pollice vicino ai tasti.",
+      "Segui la diteggiatura stampata: di solito è pensata perché il passaggio cada dove è più comodo."
+     ],
+     "q": "Hai trovato una melodia che ami e che richiede più di cinque note?",
+     "c": "Suona Do Re Mi, passa il pollice sul Fa fino al Do acuto, poi scendi scavalcando con il 3 sul Mi; cinque volte, legato."
+    },
+    "pt": {
+     "t": "Passagens de dedos nas melodias",
+     "g": "Usar a passagem do polegar e o cruzamento de dedos para tocar melodias com mais de cinco notas.",
+     "p": [
+      "Passar o polegar por baixo deixa a mão continuar a subir; cruzar um dedo por cima deixa-a continuar a descer.",
+      "Os cruzamentos seguem as regras das escalas: pulso nivelado e polegar perto das teclas.",
+      "Segue a dedilhação impressa: normalmente está pensada para o cruzamento cair onde é mais fácil."
+     ],
+     "q": "Já encontraste uma melodia de que gostas muito e que precisa de mais de cinco notas?",
+     "c": "Toca dó ré mi, passa o polegar para o fá até ao dó agudo e desce cruzando o 3 para o mi; cinco vezes, ligado."
+    },
+    "pt_BR": {
+     "t": "Passagens de dedos nas melodias",
+     "g": "Usar a passagem do polegar e o cruzamento de dedos para tocar melodias com mais de cinco notas.",
+     "p": [
+      "Passar o polegar por baixo deixa a mão continuar subindo; cruzar um dedo por cima deixa continuar descendo.",
+      "Os cruzamentos seguem as regras das escalas: punho nivelado e polegar perto das teclas.",
+      "Siga o dedilhado impresso: geralmente ele é pensado para o cruzamento cair onde é mais fácil."
+     ],
+     "q": "Você já encontrou uma melodia que ama e que precisa de mais de cinco notas?",
+     "c": "Toque dó ré mi, passe o polegar para o fá até o dó agudo e desça cruzando o 3 para o mi; cinco vezes, ligado."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The G major scale",
+     "g": "Play the G major scale with its one sharp, F sharp, and the familiar fingering.",
+     "p": [
+      "G major uses G A B C D E F sharp G: one black key, the F sharp just below the top G.",
+      "The fingering matches C major: right hand 1 2 3 1 2 3 4 5, left hand 5 4 3 2 1 3 2 1.",
+      "Finger 4 in the right hand plays F sharp, so let the hand move slightly forward into the black keys."
+     ],
+     "q": "Does the G scale feel easy after practising C?",
+     "c": "Play the G major scale with each hand, up and down, three times slowly, then try hands together once."
+    },
+    "de": {
+     "t": "Die G-Dur-Tonleiter",
+     "g": "Die G-Dur-Tonleiter mit ihrem einen Kreuz, Fis, und dem vertrauten Fingersatz spielen.",
+     "p": [
+      "G-Dur besteht aus G A H C D E Fis G: eine schwarze Taste, das Fis direkt unter dem oberen G.",
+      "Der Fingersatz ist wie in C-Dur: rechts 1 2 3 1 2 3 4 5, links 5 4 3 2 1 3 2 1.",
+      "Rechts spielt der 4. Finger das Fis, also lass die Hand leicht nach vorn zu den schwarzen Tasten rücken."
+     ],
+     "q": "Fühlt sich die G-Dur-Tonleiter nach dem Üben von C-Dur leicht an?",
+     "c": "Spiel die G-Dur-Tonleiter mit jeder Hand dreimal langsam auf und ab, dann einmal beidhändig."
+    },
+    "es": {
+     "t": "La escala de Sol mayor",
+     "g": "Tocar la escala de Sol mayor con su único sostenido, Fa#, y una digitación conocida.",
+     "p": [
+      "Sol mayor usa Sol La Si Do Re Mi Fa# Sol: una sola tecla negra, el Fa# justo debajo del Sol agudo.",
+      "La digitación es como en Do mayor: derecha 1 2 3 1 2 3 4 5, izquierda 5 4 3 2 1 3 2 1.",
+      "En la derecha el dedo 4 toca el Fa#, así que adelanta un poco la mano hacia las teclas negras."
+     ],
+     "q": "¿Te resulta fácil la escala de Sol después de practicar la de Do?",
+     "c": "Toca la escala de Sol mayor con cada mano, subiendo y bajando, tres veces despacio, y luego una vez con las dos."
+    },
+    "fr": {
+     "t": "La gamme de sol majeur",
+     "g": "Jouer la gamme de sol majeur avec son unique dièse, fa dièse, et un doigté familier.",
+     "p": [
+      "Sol majeur : sol la si do ré mi fa dièse sol, une seule touche noire, le fa dièse juste sous le sol aigu.",
+      "Le doigté est celui de do majeur : main droite 1 2 3 1 2 3 4 5, main gauche 5 4 3 2 1 3 2 1.",
+      "À droite, le 4e doigt joue fa dièse : avance légèrement la main vers les touches noires."
+     ],
+     "q": "La gamme de sol te semble-t-elle facile après celle de do ?",
+     "c": "Joue la gamme de sol majeur à chaque main, en montant et en descendant, trois fois lentement, puis une fois mains ensemble."
+    },
+    "it": {
+     "t": "La scala di Sol maggiore",
+     "g": "Suonare la scala di Sol maggiore con il suo unico diesis, il Fa diesis, e una diteggiatura nota.",
+     "p": [
+      "Sol maggiore usa Sol La Si Do Re Mi Fa# Sol: un solo tasto nero, il Fa# subito sotto il Sol acuto.",
+      "La diteggiatura è come in Do maggiore: destra 1 2 3 1 2 3 4 5, sinistra 5 4 3 2 1 3 2 1.",
+      "Nella destra il 4 suona il Fa#, quindi porta la mano un po' in avanti verso i tasti neri."
+     ],
+     "q": "La scala di Sol ti sembra facile dopo aver studiato quella di Do?",
+     "c": "Suona la scala di Sol maggiore con ogni mano, in salita e discesa, tre volte lentamente, poi una volta a mani unite."
+    },
+    "pt": {
+     "t": "A escala de sol maior",
+     "g": "Tocar a escala de sol maior com o seu único sustenido, fá#, e uma dedilhação conhecida.",
+     "p": [
+      "Sol maior usa sol lá si dó ré mi fá# sol: uma só tecla preta, o fá# logo abaixo do sol agudo.",
+      "A dedilhação é igual à de dó maior: direita 1 2 3 1 2 3 4 5, esquerda 5 4 3 2 1 3 2 1.",
+      "Na direita o dedo 4 toca o fá#, por isso avança um pouco a mão para as teclas pretas."
+     ],
+     "q": "A escala de sol parece-te fácil depois de praticares a de dó?",
+     "c": "Toca a escala de sol maior com cada mão, a subir e a descer, três vezes devagar, e depois uma vez com as duas."
+    },
+    "pt_BR": {
+     "t": "A escala de sol maior",
+     "g": "Tocar a escala de sol maior com seu único sustenido, fá#, e um dedilhado conhecido.",
+     "p": [
+      "Sol maior usa sol lá si dó ré mi fá# sol: uma única tecla preta, o fá# logo abaixo do sol agudo.",
+      "O dedilhado é igual ao de dó maior: direita 1 2 3 1 2 3 4 5, esquerda 5 4 3 2 1 3 2 1.",
+      "Na direita o dedo 4 toca o fá#, então avance um pouco a mão em direção às teclas pretas."
+     ],
+     "q": "A escala de sol parece fácil depois de praticar a de dó?",
+     "c": "Toque a escala de sol maior com cada mão, subindo e descendo, três vezes devagar, e depois uma vez com as duas."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The F major scale",
+     "g": "Play the F major scale with its one flat, B flat, and the special right-hand fingering.",
+     "p": [
+      "F major uses F G A B flat C D E F: the only black key is B flat.",
+      "Right hand fingering is 1 2 3 4, then thumb under to C, then 1 2 3 4: finger 4 plays B flat.",
+      "Left hand uses the usual 5 4 3 2 1 3 2 1, crossing finger 3 over the thumb onto D."
+     ],
+     "q": "Why do you think the right hand avoids putting the thumb on B flat?",
+     "c": "Play the F major scale with the right hand three times saying the fingering, then the left hand three times."
+    },
+    "de": {
+     "t": "Die F-Dur-Tonleiter",
+     "g": "Die F-Dur-Tonleiter mit ihrem einen b, dem Ton B, und dem besonderen Fingersatz rechts spielen.",
+     "p": [
+      "F-Dur besteht aus F G A B C D E F: Die einzige schwarze Taste ist das B (englisch B flat).",
+      "Rechts lautet der Fingersatz 1 2 3 4, dann Daumen unter auf C, dann 1 2 3 4: der 4. Finger spielt das B.",
+      "Links gilt das übliche 5 4 3 2 1 3 2 1, mit dem 3. Finger über den Daumen auf D."
+     ],
+     "q": "Warum vermeidet die rechte Hand wohl, den Daumen auf das B zu setzen?",
+     "c": "Spiel die F-Dur-Tonleiter dreimal rechts und sag den Fingersatz, dann dreimal links."
+    },
+    "es": {
+     "t": "La escala de Fa mayor",
+     "g": "Tocar la escala de Fa mayor con su único bemol, Si bemol, y la digitación especial de la derecha.",
+     "p": [
+      "Fa mayor usa Fa Sol La Sib Do Re Mi Fa: la única tecla negra es el Si bemol.",
+      "La derecha digita 1 2 3 4, pasa el pulgar a Do y sigue 1 2 3 4: el dedo 4 toca el Si bemol.",
+      "La izquierda usa el habitual 5 4 3 2 1 3 2 1, cruzando el dedo 3 sobre el pulgar hasta Re."
+     ],
+     "q": "¿Por qué crees que la derecha evita poner el pulgar en el Si bemol?",
+     "c": "Toca la escala de Fa mayor con la derecha tres veces diciendo la digitación, y luego con la izquierda tres veces."
+    },
+    "fr": {
+     "t": "La gamme de fa majeur",
+     "g": "Jouer la gamme de fa majeur avec son unique bémol, si bémol, et le doigté spécial de la main droite.",
+     "p": [
+      "Fa majeur : fa sol la si bémol do ré mi fa ; la seule touche noire est le si bémol.",
+      "Main droite : 1 2 3 4, puis passage du pouce sur do, puis 1 2 3 4 ; le 4e doigt joue si bémol.",
+      "Main gauche : le doigté habituel 5 4 3 2 1 3 2 1, le 3 passant par-dessus le pouce sur ré."
+     ],
+     "q": "Pourquoi, selon toi, la main droite évite-t-elle de mettre le pouce sur si bémol ?",
+     "c": "Joue la gamme de fa majeur trois fois à la main droite en disant le doigté, puis trois fois à la main gauche."
+    },
+    "it": {
+     "t": "La scala di Fa maggiore",
+     "g": "Suonare la scala di Fa maggiore con il suo unico bemolle, il Si bemolle, e la diteggiatura speciale della destra.",
+     "p": [
+      "Fa maggiore usa Fa Sol La Sib Do Re Mi Fa: l'unico tasto nero è il Si bemolle.",
+      "La destra fa 1 2 3 4, passa il pollice sul Do, poi 1 2 3 4: il 4 suona il Si bemolle.",
+      "La sinistra usa il solito 5 4 3 2 1 3 2 1, scavalcando con il 3 sopra il pollice sul Re."
+     ],
+     "q": "Secondo te perché la destra evita di mettere il pollice sul Si bemolle?",
+     "c": "Suona la scala di Fa maggiore tre volte con la destra dicendo la diteggiatura, poi tre volte con la sinistra."
+    },
+    "pt": {
+     "t": "A escala de fá maior",
+     "g": "Tocar a escala de fá maior com o seu único bemol, si bemol, e a dedilhação especial da direita.",
+     "p": [
+      "Fá maior usa fá sol lá sib dó ré mi fá: a única tecla preta é o si bemol.",
+      "A direita faz 1 2 3 4, passa o polegar para o dó e continua 1 2 3 4: o dedo 4 toca o si bemol.",
+      "A esquerda usa o habitual 5 4 3 2 1 3 2 1, cruzando o dedo 3 por cima do polegar até ao ré."
+     ],
+     "q": "Porque achas que a direita evita pôr o polegar no si bemol?",
+     "c": "Toca a escala de fá maior três vezes com a direita dizendo a dedilhação, e depois três vezes com a esquerda."
+    },
+    "pt_BR": {
+     "t": "A escala de fá maior",
+     "g": "Tocar a escala de fá maior com seu único bemol, si bemol, e o dedilhado especial da direita.",
+     "p": [
+      "Fá maior usa fá sol lá sib dó ré mi fá: a única tecla preta é o si bemol.",
+      "A direita faz 1 2 3 4, passa o polegar para o dó e segue 1 2 3 4: o dedo 4 toca o si bemol.",
+      "A esquerda usa o de sempre, 5 4 3 2 1 3 2 1, cruzando o dedo 3 por cima do polegar até o ré."
+     ],
+     "q": "Por que você acha que a direita evita colocar o polegar no si bemol?",
+     "c": "Toque a escala de fá maior três vezes com a direita falando o dedilhado, e depois três vezes com a esquerda."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Key signatures",
+     "g": "Read the sharps and flats at the start of a piece and apply them all the way through.",
+     "p": [
+      "The key signature sits right after the clef on every line and tells you which notes are always sharp or flat.",
+      "One sharp (F sharp) usually means G major; one flat (B flat) usually means F major; none means C major.",
+      "A sharp or flat in the key signature applies to that note in every octave until the piece ends."
+     ],
+     "q": "Have you ever missed a sharp in the key signature while playing?",
+     "c": "Open any piece, name its key signature and circle every note it affects, then play the first line."
+    },
+    "de": {
+     "t": "Vorzeichen",
+     "g": "Die Kreuze und Bs am Stückanfang lesen und durchgehend anwenden.",
+     "p": [
+      "Die Vorzeichen stehen in jeder Zeile direkt nach dem Schlüssel und zeigen, welche Töne immer erhöht oder erniedrigt sind.",
+      "Ein Kreuz (Fis) bedeutet meist G-Dur, ein b (B) meist F-Dur, keine Vorzeichen meist C-Dur.",
+      "Ein Vorzeichen gilt für diesen Ton in jeder Oktave, bis das Stück endet."
+     ],
+     "q": "Hast du beim Spielen schon mal ein Kreuz in den Vorzeichen übersehen?",
+     "c": "Öffne ein Stück, benenne die Vorzeichen, kreise jede betroffene Note ein und spiel dann die erste Zeile."
+    },
+    "es": {
+     "t": "Armaduras",
+     "g": "Leer los sostenidos y bemoles del principio de una pieza y aplicarlos de principio a fin.",
+     "p": [
+      "La armadura va justo después de la clave en cada línea e indica qué notas son siempre sostenidas o bemoles.",
+      "Un sostenido (Fa#) suele indicar Sol mayor; un bemol (Sib), Fa mayor; ninguno, Do mayor.",
+      "Una alteración de la armadura afecta a esa nota en todas las octavas hasta el final de la pieza."
+     ],
+     "q": "¿Se te ha escapado alguna vez un sostenido de la armadura al tocar?",
+     "c": "Abre cualquier pieza, di su armadura, rodea cada nota afectada y toca la primera línea."
+    },
+    "fr": {
+     "t": "Les armures",
+     "g": "Lire les dièses et bémols du début d'un morceau et les appliquer jusqu'au bout.",
+     "p": [
+      "L'armure se place juste après la clé à chaque ligne et indique quelles notes sont toujours diésées ou bémolisées.",
+      "Un dièse (fa dièse) indique souvent sol majeur ; un bémol (si bémol), fa majeur ; aucun, do majeur.",
+      "Une altération à l'armure vaut pour cette note à toutes les octaves, jusqu'à la fin du morceau."
+     ],
+     "q": "T'est-il déjà arrivé d'oublier un dièse de l'armure en jouant ?",
+     "c": "Ouvre un morceau, nomme son armure, entoure chaque note concernée, puis joue la première ligne."
+    },
+    "it": {
+     "t": "Le armature di chiave",
+     "g": "Leggere diesis e bemolli all'inizio del brano e applicarli fino alla fine.",
+     "p": [
+      "L'armatura sta subito dopo la chiave in ogni rigo e indica quali note sono sempre diesis o bemolle.",
+      "Un diesis (Fa#) di solito indica Sol maggiore; un bemolle (Sib), Fa maggiore; nessuno, Do maggiore.",
+      "Un'alterazione in armatura vale per quella nota in tutte le ottave fino alla fine del brano."
+     ],
+     "q": "Ti è mai sfuggito un diesis dell'armatura mentre suonavi?",
+     "c": "Apri un brano, di' la sua armatura, cerchia ogni nota interessata e poi suona il primo rigo."
+    },
+    "pt": {
+     "t": "Armações de clave",
+     "g": "Ler os sustenidos e bemóis do início de uma peça e aplicá-los até ao fim.",
+     "p": [
+      "A armação fica logo a seguir à clave em cada linha e indica que notas são sempre sustenidas ou bemóis.",
+      "Um sustenido (fá#) costuma indicar sol maior; um bemol (sib), fá maior; nenhum, dó maior.",
+      "Uma alteração na armação vale para essa nota em todas as oitavas até ao fim da peça."
+     ],
+     "q": "Já te escapou um sustenido da armação enquanto tocavas?",
+     "c": "Abre uma peça, diz a sua armação, rodeia cada nota afetada e toca a primeira linha."
+    },
+    "pt_BR": {
+     "t": "Armaduras de clave",
+     "g": "Ler os sustenidos e bemóis do início de uma peça e aplicá-los até o fim.",
+     "p": [
+      "A armadura fica logo depois da clave em cada linha e indica quais notas são sempre sustenidas ou bemóis.",
+      "Um sustenido (fá#) costuma indicar sol maior; um bemol (sib), fá maior; nenhum, dó maior.",
+      "Uma alteração na armadura vale para aquela nota em todas as oitavas até o fim da peça."
+     ],
+     "q": "Você já deixou passar um sustenido da armadura enquanto tocava?",
+     "c": "Abra uma peça, diga a armadura dela, circule cada nota afetada e toque a primeira linha."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: two months in",
+     "g": "Revisit scales, chords, the pedal and reading to see how far you have come.",
+     "p": [
+      "You can play the C, G and F major scales and build major and minor triads with their inversions.",
+      "You can accompany a melody with I, IV and V, use the sustain pedal cleanly and read key signatures.",
+      "Notice what still feels shaky and give it two minutes in each session this week."
+     ],
+     "q": "Which skill from these two months makes you smile most when you play?",
+     "c": "Play the C, G and F scales, then Ode to Joy with left-hand chords and pedal, as a small concert for yourself."
+    },
+    "de": {
+     "t": "Wiederholung: zwei Monate geschafft",
+     "g": "Tonleitern, Akkorde, Pedal und Notenlesen wiederholen und sehen, wie weit du gekommen bist.",
+     "p": [
+      "Du spielst die Tonleitern C-, G- und F-Dur und baust Dur- und Molldreiklänge mit ihren Umkehrungen.",
+      "Du begleitest eine Melodie mit I, IV und V, nutzt das Haltepedal sauber und liest Vorzeichen.",
+      "Merk dir, was noch wackelt, und gib ihm diese Woche in jeder Übeeinheit zwei Minuten."
+     ],
+     "q": "Welche Fähigkeit aus diesen zwei Monaten bringt dich beim Spielen am meisten zum Lächeln?",
+     "c": "Spiel C-, G- und F-Dur, dann die Ode an die Freude mit linken Akkorden und Pedal, als kleines Konzert für dich."
+    },
+    "es": {
+     "t": "Repaso: dos meses",
+     "g": "Repasar escalas, acordes, el pedal y la lectura para ver cuánto has avanzado.",
+     "p": [
+      "Tocas las escalas de Do, Sol y Fa mayor y construyes tríadas mayores y menores con sus inversiones.",
+      "Acompañas una melodía con I, IV y V, usas el pedal de resonancia con limpieza y lees armaduras.",
+      "Fíjate en lo que aún se tambalea y dedícale dos minutos en cada sesión de esta semana."
+     ],
+     "q": "¿Qué habilidad de estos dos meses te hace sonreír más al tocar?",
+     "c": "Toca las escalas de Do, Sol y Fa y luego el Himno a la alegría con acordes y pedal, como un pequeño concierto para ti."
+    },
+    "fr": {
+     "t": "Révision : deux mois déjà",
+     "g": "Revoir gammes, accords, pédale et lecture pour mesurer le chemin parcouru.",
+     "p": [
+      "Tu joues les gammes de do, sol et fa majeur et construis des accords majeurs et mineurs avec leurs renversements.",
+      "Tu accompagnes une mélodie avec I, IV et V, utilises proprement la pédale forte et lis les armures.",
+      "Repère ce qui est encore fragile et consacre-lui deux minutes à chaque séance cette semaine."
+     ],
+     "q": "Quelle compétence de ces deux mois te fait le plus sourire quand tu joues ?",
+     "c": "Joue les gammes de do, sol et fa, puis l'Hymne à la joie avec accords à gauche et pédale, comme un petit concert pour toi."
+    },
+    "it": {
+     "t": "Ripasso: due mesi",
+     "g": "Ripassare scale, accordi, pedale e lettura per vedere quanta strada hai fatto.",
+     "p": [
+      "Suoni le scale di Do, Sol e Fa maggiore e costruisci triadi maggiori e minori con i loro rivolti.",
+      "Accompagni una melodia con I, IV e V, usi il pedale di risonanza in modo pulito e leggi le armature.",
+      "Nota cosa è ancora incerto e dedicagli due minuti in ogni sessione di questa settimana."
+     ],
+     "q": "Quale abilità di questi due mesi ti fa sorridere di più quando suoni?",
+     "c": "Suona le scale di Do, Sol e Fa, poi l'Inno alla gioia con accordi e pedale, come un piccolo concerto per te."
+    },
+    "pt": {
+     "t": "Revisão: dois meses",
+     "g": "Rever escalas, acordes, o pedal e a leitura para ver quanto já avançaste.",
+     "p": [
+      "Já tocas as escalas de dó, sol e fá maior e constróis tríades maiores e menores com as suas inversões.",
+      "Acompanhas uma melodia com I, IV e V, usas o pedal de sustentação de forma limpa e lês armações.",
+      "Repara no que ainda está inseguro e dá-lhe dois minutos em cada sessão desta semana."
+     ],
+     "q": "Que competência destes dois meses te faz sorrir mais quando tocas?",
+     "c": "Toca as escalas de dó, sol e fá e depois o Hino da Alegria com acordes e pedal, como um pequeno concerto para ti."
+    },
+    "pt_BR": {
+     "t": "Revisão: dois meses",
+     "g": "Revisar escalas, acordes, o pedal e a leitura para ver quanto você já avançou.",
+     "p": [
+      "Você já toca as escalas de dó, sol e fá maior e monta tríades maiores e menores com suas inversões.",
+      "Você acompanha uma melodia com I, IV e V, usa o pedal de sustentação de forma limpa e lê armaduras.",
+      "Perceba o que ainda está inseguro e dê a isso dois minutos em cada sessão desta semana."
+     ],
+     "q": "Qual habilidade destes dois meses mais faz você sorrir quando toca?",
+     "c": "Toque as escalas de dó, sol e fá e depois a Ode à Alegria com acordes e pedal, como um pequeno concerto para você."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "drawing",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scribble shading",
+     "g": "Create lively textures and tones with loose circular or random marks.",
+     "p": [
+      "Small overlapping circles build tone fast and give a soft, energetic texture.",
+      "Tight, dense scribbles read dark; loose, open scribbles read light.",
+      "Scribble shading suits organic things like trees, hair, clouds and rough surfaces."
+     ],
+     "q": "Which feels more like you: tidy lines or energetic scribbles?",
+     "c": "Shade a tree crown or a cloud using only small circular scribbles, dense in shadow and loose in light."
+    },
+    "de": {
+     "t": "Kritzelschattierung",
+     "g": "Lebendige Texturen und Töne mit lockeren kreisenden oder zufälligen Strichen erzeugen.",
+     "p": [
+      "Kleine überlappende Kreise bauen schnell Ton auf und geben eine weiche, energische Textur.",
+      "Enge, dichte Kritzel wirken dunkel, lockere, offene hell.",
+      "Kritzelschattierung passt zu Organischem wie Bäumen, Haaren, Wolken und rauen Flächen."
+     ],
+     "q": "Was passt mehr zu dir: ordentliche Linien oder energische Kritzel?",
+     "c": "Schattiere eine Baumkrone oder Wolke nur mit kleinen Kreiskritzeln, dicht im Schatten, locker im Licht."
+    },
+    "es": {
+     "t": "Sombreado con garabatos",
+     "g": "Crear texturas y tonos vivos con marcas sueltas, circulares o al azar.",
+     "p": [
+      "Pequeños círculos superpuestos crean tono rápido con una textura suave y enérgica.",
+      "Los garabatos densos se ven oscuros; los sueltos y abiertos, claros.",
+      "Va genial para cosas orgánicas: árboles, pelo, nubes y superficies rugosas."
+     ],
+     "q": "¿Qué va más contigo: líneas ordenadas o garabatos enérgicos?",
+     "c": "Sombrea la copa de un árbol o una nube solo con pequeños círculos, densos en sombra y sueltos en luz."
+    },
+    "fr": {
+     "t": "L'ombrage gribouillé",
+     "g": "Créer textures et tons vivants avec des traces libres, circulaires ou aléatoires.",
+     "p": [
+      "De petits cercles superposés montent vite le ton avec une texture douce et énergique.",
+      "Des gribouillis serrés paraissent foncés ; lâches et ouverts, clairs.",
+      "Idéal pour l'organique : arbres, cheveux, nuages et surfaces rugueuses."
+     ],
+     "q": "Qu'est-ce qui te ressemble le plus : des traits soignés ou des gribouillis énergiques ?",
+     "c": "Ombre une couronne d'arbre ou un nuage uniquement avec de petits cercles, serrés à l'ombre, lâches à la lumière."
+    },
+    "it": {
+     "t": "Ombreggiatura a scarabocchio",
+     "g": "Creare texture e toni vivaci con segni liberi, circolari o casuali.",
+     "p": [
+      "Piccoli cerchi sovrapposti costruiscono il tono in fretta con una texture morbida ed energica.",
+      "Scarabocchi fitti sembrano scuri; quelli radi e aperti chiari.",
+      "Perfetta per soggetti organici: alberi, capelli, nuvole e superfici ruvide."
+     ],
+     "q": "Cosa ti somiglia di più: linee ordinate o scarabocchi energici?",
+     "c": "Ombreggia la chioma di un albero o una nuvola solo con piccoli cerchi, fitti in ombra e radi in luce."
+    },
+    "pt": {
+     "t": "Sombreado com rabiscos",
+     "g": "Criar texturas e tons vivos com marcas soltas, circulares ou ao acaso.",
+     "p": [
+      "Pequenos círculos sobrepostos criam tom depressa, com uma textura suave e enérgica.",
+      "Rabiscos densos parecem escuros; soltos e abertos, claros.",
+      "Funciona bem em coisas orgânicas: árvores, cabelo, nuvens e superfícies rugosas."
+     ],
+     "q": "O que tem mais a ver contigo: linhas arrumadas ou rabiscos enérgicos?",
+     "c": "Sombreia a copa de uma árvore ou uma nuvem só com pequenos círculos, densos na sombra e soltos na luz."
+    },
+    "pt_BR": {
+     "t": "Sombreado com rabiscos",
+     "g": "Criar texturas e tons vivos com marcas soltas, circulares ou aleatórias.",
+     "p": [
+      "Pequenos círculos sobrepostos criam tom rápido, com uma textura suave e cheia de energia.",
+      "Rabiscos densos parecem escuros; soltos e abertos, claros.",
+      "Combina com coisas orgânicas: árvores, cabelo, nuvens e superfícies ásperas."
+     ],
+     "q": "O que tem mais a ver com você: linhas certinhas ou rabiscos cheios de energia?",
+     "c": "Sombreie a copa de uma árvore ou uma nuvem só com pequenos círculos, densos na sombra e soltos na luz."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smooth blending",
+     "g": "Lay even layers of graphite and decide when to use a blending stump, tissue or nothing.",
+     "p": [
+      "Build tone with many light layers in small overlapping strokes rather than one heavy layer.",
+      "A blending stump or tissue softens tone, but overuse makes drawings look muddy and flat.",
+      "Avoid blending with your finger: skin oils leave stains that are hard to erase."
+     ],
+     "q": "Have you ever smudged a drawing by accident and liked the result?",
+     "c": "Shade two gradient strips: one built only with careful layers, one blended with a tissue. Compare."
+    },
+    "de": {
+     "t": "Glattes Verblenden",
+     "g": "Grafit gleichmäßig schichten und entscheiden, wann Wischer, Tuch oder gar nichts passt.",
+     "p": [
+      "Bau Töne in vielen leichten Lagen mit kleinen überlappenden Strichen auf, nicht in einer schweren Lage.",
+      "Wischer oder Tuch machen Töne weich, zu viel davon wirkt aber schmutzig und flach.",
+      "Verwisch nicht mit dem Finger: Hautfett hinterlässt Flecken, die schwer zu radieren sind."
+     ],
+     "q": "Hast du schon mal aus Versehen verwischt und das Ergebnis mochtest du?",
+     "c": "Schattiere zwei Verlaufsstreifen: einen nur aus sorgfältigen Lagen, einen mit Tuch verwischt. Vergleiche."
+    },
+    "es": {
+     "t": "Difuminado suave",
+     "g": "Aplicar capas uniformes de grafito y decidir cuándo usar difumino, pañuelo o nada.",
+     "p": [
+      "Crea el tono con muchas capas suaves de trazos cortos superpuestos, no con una sola capa fuerte.",
+      "El difumino o el pañuelo suavizan, pero abusar de ellos deja el dibujo sucio y plano.",
+      "Evita difuminar con el dedo: la grasa de la piel deja manchas difíciles de borrar."
+     ],
+     "q": "¿Alguna vez manchaste un dibujo sin querer y te gustó el resultado?",
+     "c": "Sombrea dos degradados: uno solo con capas cuidadas y otro difuminado con pañuelo. Compara."
+    },
+    "fr": {
+     "t": "Le fondu lisse",
+     "g": "Poser des couches régulières de graphite et choisir entre estompe, mouchoir ou rien du tout.",
+     "p": [
+      "Monte le ton par de nombreuses couches légères en petits traits superposés, pas en une couche lourde.",
+      "Une estompe ou un mouchoir adoucit, mais trop l'utiliser rend le dessin sale et plat.",
+      "Évite d'estomper au doigt : le gras de la peau laisse des taches difficiles à gommer."
+     ],
+     "q": "As-tu déjà estompé un dessin par accident et aimé le résultat ?",
+     "c": "Ombre deux dégradés : l'un seulement en couches soignées, l'autre fondu au mouchoir. Compare."
+    },
+    "it": {
+     "t": "Sfumatura morbida",
+     "g": "Stendere strati uniformi di grafite e scegliere quando usare sfumino, fazzoletto o niente.",
+     "p": [
+      "Costruisci il tono con molti strati leggeri di piccoli tratti sovrapposti, non con uno strato pesante.",
+      "Sfumino o fazzoletto ammorbidiscono, ma abusarne rende il disegno sporco e piatto.",
+      "Evita di sfumare col dito: il sebo della pelle lascia macchie difficili da cancellare."
+     ],
+     "q": "Ti è mai capitato di sbavare un disegno per sbaglio e che il risultato ti piacesse?",
+     "c": "Ombreggia due sfumature: una solo con strati accurati, l'altra sfumata col fazzoletto. Confronta."
+    },
+    "pt": {
+     "t": "Esbatido suave",
+     "g": "Aplicar camadas uniformes de grafite e decidir quando usar esfuminho, lenço ou nada.",
+     "p": [
+      "Cria o tom com muitas camadas leves de traços curtos sobrepostos, não com uma camada pesada.",
+      "O esfuminho ou o lenço suavizam, mas usá-los demais deixa o desenho sujo e plano.",
+      "Evita esbater com o dedo: a gordura da pele deixa manchas difíceis de apagar."
+     ],
+     "q": "Já borraste um desenho sem querer e gostaste do resultado?",
+     "c": "Sombreia duas faixas em degradê: uma só com camadas cuidadas e outra esbatida com lenço. Compara."
+    },
+    "pt_BR": {
+     "t": "Esfumado suave",
+     "g": "Aplicar camadas uniformes de grafite e decidir quando usar esfuminho, lenço ou nada.",
+     "p": [
+      "Construa o tom com várias camadas leves de traços curtos sobrepostos, não com uma camada pesada.",
+      "Esfuminho ou lenço suavizam, mas usar demais deixa o desenho sujo e chapado.",
+      "Evite esfumar com o dedo: a oleosidade da pele deixa manchas difíceis de apagar."
+     ],
+     "q": "Você já borrou um desenho sem querer e gostou do resultado?",
+     "c": "Sombreie duas faixas em degradê: uma só com camadas cuidadosas e outra esfumada com lenço. Compare."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light on a sphere",
+     "g": "Learn the five parts of light on a form: highlight, halftone, core shadow, reflected light and cast shadow.",
+     "p": [
+      "The highlight faces the light directly; halftones turn gradually away from it.",
+      "The core shadow is the darkest band on the form, just where it turns away from the light.",
+      "Reflected light is a faint glow in the shadow, and the cast shadow falls on the surface below."
+     ],
+     "q": "Can you spot all five parts of light on an orange or a ball near you?",
+     "c": "Place a ball under one lamp and shade it, labelling all five parts of light lightly beside it."
+    },
+    "de": {
+     "t": "Licht auf der Kugel",
+     "g": "Die fünf Lichtzonen kennen: Glanzlicht, Halbton, Kernschatten, Reflexlicht und Schlagschatten.",
+     "p": [
+      "Das Glanzlicht zeigt direkt zum Licht, Halbtöne drehen sich allmählich davon weg.",
+      "Der Kernschatten ist das dunkelste Band, genau dort, wo sich der Körper vom Licht abwendet.",
+      "Reflexlicht ist ein schwaches Leuchten im Schatten, der Schlagschatten fällt auf die Fläche darunter."
+     ],
+     "q": "Entdeckst du alle fünf Lichtzonen auf einer Orange oder einem Ball in deiner Nähe?",
+     "c": "Leg einen Ball unter eine Lampe, schattiere ihn und beschrifte die fünf Lichtzonen leicht daneben."
+    },
+    "es": {
+     "t": "La luz sobre una esfera",
+     "g": "Conocer las cinco partes de la luz: brillo, medio tono, sombra propia, luz reflejada y sombra proyectada.",
+     "p": [
+      "El brillo mira directamente a la luz; los medios tonos se alejan de ella poco a poco.",
+      "La sombra propia es la franja más oscura, justo donde la forma deja de recibir luz.",
+      "La luz reflejada es un leve resplandor en la sombra, y la sombra proyectada cae sobre la superficie."
+     ],
+     "q": "¿Ves las cinco partes de la luz en una naranja o una pelota cercana?",
+     "c": "Pon una pelota bajo una sola lámpara, sombréala y anota a un lado las cinco partes de la luz."
+    },
+    "fr": {
+     "t": "La lumière sur une sphère",
+     "g": "Connaître les cinq zones de lumière : reflet, demi-teinte, ombre propre, lumière réfléchie et ombre portée.",
+     "p": [
+      "Le reflet fait face à la lumière ; les demi-teintes s'en détournent progressivement.",
+      "L'ombre propre est la bande la plus foncée, là où la forme se détourne de la lumière.",
+      "La lumière réfléchie est une faible lueur dans l'ombre ; l'ombre portée tombe sur la surface."
+     ],
+     "q": "Repères-tu les cinq zones de lumière sur une orange ou un ballon près de toi ?",
+     "c": "Place un ballon sous une seule lampe, ombre-le et note légèrement les cinq zones à côté."
+    },
+    "it": {
+     "t": "La luce sulla sfera",
+     "g": "Conoscere le cinque zone di luce: luce piena, mezzatinta, ombra propria, luce riflessa e ombra portata.",
+     "p": [
+      "Il punto luce guarda dritto verso la luce; le mezzetinte se ne allontanano gradualmente.",
+      "L'ombra propria è la fascia più scura, proprio dove la forma si gira lontano dalla luce.",
+      "La luce riflessa è un debole bagliore nell'ombra; l'ombra portata cade sulla superficie sotto."
+     ],
+     "q": "Riesci a vedere le cinque zone di luce su un'arancia o una palla vicino a te?",
+     "c": "Metti una palla sotto una sola lampada, ombreggiala e segna accanto le cinque zone di luce."
+    },
+    "pt": {
+     "t": "A luz numa esfera",
+     "g": "Conhecer as cinco zonas de luz: brilho, meio-tom, sombra própria, luz refletida e sombra projetada.",
+     "p": [
+      "O brilho está virado para a luz; os meios-tons afastam-se dela aos poucos.",
+      "A sombra própria é a faixa mais escura, onde a forma deixa de receber luz.",
+      "A luz refletida é um brilho fraco na sombra; a sombra projetada cai na superfície por baixo."
+     ],
+     "q": "Consegues ver as cinco zonas de luz numa laranja ou numa bola perto de ti?",
+     "c": "Põe uma bola debaixo de um só candeeiro, sombreia-a e anota ao lado as cinco zonas de luz."
+    },
+    "pt_BR": {
+     "t": "A luz numa esfera",
+     "g": "Conhecer as cinco partes da luz: brilho, meio-tom, sombra própria, luz refletida e sombra projetada.",
+     "p": [
+      "O brilho fica de frente para a luz; os meios-tons vão se afastando dela aos poucos.",
+      "A sombra própria é a faixa mais escura, bem onde a forma deixa de receber luz.",
+      "A luz refletida é um brilho fraco na sombra; a sombra projetada cai na superfície embaixo."
+     ],
+     "q": "Você consegue ver as cinco partes da luz numa laranja ou bola perto de você?",
+     "c": "Coloque uma bola sob uma única luminária, sombreie e anote ao lado as cinco partes da luz."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shading a cube and cylinder",
+     "g": "See how light changes on flat planes versus curved surfaces.",
+     "p": [
+      "On a cube each face has one fairly even value: light top, medium side, dark side.",
+      "On a cylinder value changes gradually across the curve, in vertical bands.",
+      "Darkest values sit where planes turn away from the light, like the core shadow on a sphere."
+     ],
+     "q": "Which do you think is easier to shade, a cube or a cylinder?",
+     "c": "Shade a cube and a cylinder side by side, lit from the same direction, with their cast shadows."
+    },
+    "de": {
+     "t": "Würfel und Zylinder schattieren",
+     "g": "Sehen, wie sich Licht auf flachen Flächen und gebogenen Oberflächen verändert.",
+     "p": [
+      "Beim Würfel hat jede Fläche einen recht gleichmäßigen Ton: helle Oberseite, mittlere und dunkle Seite.",
+      "Beim Zylinder ändert sich der Ton allmählich über die Rundung, in senkrechten Bändern.",
+      "Die dunkelsten Töne liegen dort, wo sich Flächen vom Licht abwenden, wie der Kernschatten der Kugel."
+     ],
+     "q": "Was ist wohl leichter zu schattieren, Würfel oder Zylinder?",
+     "c": "Schattiere Würfel und Zylinder nebeneinander, von derselben Seite beleuchtet, mit Schlagschatten."
+    },
+    "es": {
+     "t": "Sombrear cubo y cilindro",
+     "g": "Ver cómo cambia la luz en planos rectos frente a superficies curvas.",
+     "p": [
+      "En un cubo cada cara tiene un valor bastante uniforme: arriba clara, un lado medio y otro oscuro.",
+      "En un cilindro el valor cambia poco a poco a lo largo de la curva, en franjas verticales.",
+      "Los valores más oscuros están donde los planos se alejan de la luz, como la sombra propia de la esfera."
+     ],
+     "q": "¿Cuál crees que es más fácil de sombrear, el cubo o el cilindro?",
+     "c": "Sombrea un cubo y un cilindro juntos, iluminados desde el mismo lado, con sus sombras proyectadas."
+    },
+    "fr": {
+     "t": "Ombrer cube et cylindre",
+     "g": "Voir comment la lumière change sur des plans plats et des surfaces courbes.",
+     "p": [
+      "Sur un cube, chaque face a une valeur assez uniforme : dessus clair, un côté moyen, un côté foncé.",
+      "Sur un cylindre, la valeur change progressivement le long de la courbe, en bandes verticales.",
+      "Les valeurs les plus foncées sont là où les plans se détournent de la lumière, comme l'ombre propre."
+     ],
+     "q": "Lequel est le plus facile à ombrer selon toi, le cube ou le cylindre ?",
+     "c": "Ombre un cube et un cylindre côte à côte, éclairés du même côté, avec leurs ombres portées."
+    },
+    "it": {
+     "t": "Ombreggiare cubo e cilindro",
+     "g": "Vedere come cambia la luce su piani piatti e superfici curve.",
+     "p": [
+      "Su un cubo ogni faccia ha un valore abbastanza uniforme: sopra chiaro, un lato medio, uno scuro.",
+      "Su un cilindro il valore cambia gradualmente lungo la curva, a fasce verticali.",
+      "I valori più scuri stanno dove i piani si girano lontano dalla luce, come l'ombra propria della sfera."
+     ],
+     "q": "Secondo te è più facile ombreggiare un cubo o un cilindro?",
+     "c": "Ombreggia un cubo e un cilindro affiancati, illuminati dallo stesso lato, con le ombre portate."
+    },
+    "pt": {
+     "t": "Sombrear cubo e cilindro",
+     "g": "Ver como a luz muda em planos retos e em superfícies curvas.",
+     "p": [
+      "Num cubo cada face tem um valor bastante uniforme: topo claro, um lado médio e outro escuro.",
+      "Num cilindro o valor muda aos poucos ao longo da curva, em faixas verticais.",
+      "Os valores mais escuros ficam onde os planos se afastam da luz, como a sombra própria da esfera."
+     ],
+     "q": "Qual achas mais fácil de sombrear, o cubo ou o cilindro?",
+     "c": "Sombreia um cubo e um cilindro lado a lado, iluminados do mesmo lado, com as sombras projetadas."
+    },
+    "pt_BR": {
+     "t": "Sombreando cubo e cilindro",
+     "g": "Ver como a luz muda em planos retos e em superfícies curvas.",
+     "p": [
+      "No cubo cada face tem um valor bem uniforme: topo claro, um lado médio e outro escuro.",
+      "No cilindro o valor muda aos poucos ao longo da curva, em faixas verticais.",
+      "Os valores mais escuros ficam onde os planos se afastam da luz, como a sombra própria da esfera."
+     ],
+     "q": "Qual você acha mais fácil de sombrear, o cubo ou o cilindro?",
+     "c": "Sombreie um cubo e um cilindro lado a lado, iluminados do mesmo lado, com as sombras projetadas."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cast shadows",
+     "g": "Understand the direction, shape and softness of shadows depending on the light source.",
+     "p": [
+      "A cast shadow always points away from the light and is darkest right where the object touches the surface.",
+      "A low light makes long shadows; a high light makes short ones.",
+      "Close, small lights give sharp edges; big or distant soft light gives blurry edges."
+     ],
+     "q": "Have you noticed how your own shadow changes from morning to midday?",
+     "c": "Move a lamp around a mug and draw three quick sketches showing how the cast shadow changes."
+    },
+    "de": {
+     "t": "Schlagschatten",
+     "g": "Richtung, Form und Weichheit von Schatten je nach Lichtquelle verstehen.",
+     "p": [
+      "Ein Schlagschatten zeigt immer vom Licht weg und ist dort am dunkelsten, wo das Objekt aufliegt.",
+      "Tiefes Licht macht lange Schatten, hohes Licht kurze.",
+      "Kleine, nahe Lichter geben harte Kanten, große oder weiche Lichtquellen weiche Kanten."
+     ],
+     "q": "Hast du bemerkt, wie sich dein eigener Schatten vom Morgen bis Mittag verändert?",
+     "c": "Beweg eine Lampe um eine Tasse und mach drei schnelle Skizzen, wie sich der Schlagschatten ändert."
+    },
+    "es": {
+     "t": "Sombras proyectadas",
+     "g": "Entender la dirección, forma y suavidad de las sombras según la fuente de luz.",
+     "p": [
+      "La sombra proyectada siempre se aleja de la luz y es más oscura justo donde el objeto toca la superficie.",
+      "Una luz baja da sombras largas; una luz alta, sombras cortas.",
+      "Las luces pequeñas y cercanas dan bordes nítidos; las grandes o suaves, bordes difusos."
+     ],
+     "q": "¿Te has fijado en cómo cambia tu propia sombra de la mañana al mediodía?",
+     "c": "Mueve una lámpara alrededor de una taza y haz tres bocetos rápidos de cómo cambia su sombra."
+    },
+    "fr": {
+     "t": "Les ombres portées",
+     "g": "Comprendre direction, forme et douceur des ombres selon la source de lumière.",
+     "p": [
+      "L'ombre portée part toujours à l'opposé de la lumière et est plus foncée au point de contact.",
+      "Une lumière basse donne des ombres longues ; une lumière haute, des ombres courtes.",
+      "Une petite lumière proche donne des bords nets ; une grande lumière douce, des bords flous."
+     ],
+     "q": "As-tu remarqué comment ta propre ombre change du matin à midi ?",
+     "c": "Déplace une lampe autour d'une tasse et fais trois croquis rapides de son ombre portée."
+    },
+    "it": {
+     "t": "Le ombre portate",
+     "g": "Capire direzione, forma e morbidezza delle ombre in base alla fonte di luce.",
+     "p": [
+      "L'ombra portata va sempre dalla parte opposta alla luce ed è più scura dove l'oggetto tocca il piano.",
+      "Una luce bassa crea ombre lunghe; una luce alta ombre corte.",
+      "Luci piccole e vicine danno bordi netti; luci grandi o diffuse bordi sfumati."
+     ],
+     "q": "Hai notato come cambia la tua ombra dal mattino a mezzogiorno?",
+     "c": "Sposta una lampada attorno a una tazza e fai tre schizzi veloci di come cambia l'ombra portata."
+    },
+    "pt": {
+     "t": "Sombras projetadas",
+     "g": "Perceber a direção, forma e suavidade das sombras conforme a fonte de luz.",
+     "p": [
+      "A sombra projetada aponta sempre para longe da luz e é mais escura onde o objeto toca a superfície.",
+      "Uma luz baixa dá sombras longas; uma luz alta, sombras curtas.",
+      "Luzes pequenas e próximas dão bordas nítidas; luzes grandes ou suaves, bordas difusas."
+     ],
+     "q": "Já reparaste como a tua sombra muda da manhã para o meio-dia?",
+     "c": "Move um candeeiro à volta de uma chávena e faz três esboços rápidos de como a sombra muda."
+    },
+    "pt_BR": {
+     "t": "Sombras projetadas",
+     "g": "Entender a direção, forma e suavidade das sombras conforme a fonte de luz.",
+     "p": [
+      "A sombra projetada sempre aponta para longe da luz e é mais escura onde o objeto toca a superfície.",
+      "Luz baixa dá sombras longas; luz alta, sombras curtas.",
+      "Luzes pequenas e próximas dão bordas nítidas; luzes grandes ou suaves, bordas difusas."
+     ],
+     "q": "Você já reparou como sua sombra muda da manhã para o meio-dia?",
+     "c": "Mova uma luminária em volta de uma caneca e faça três esboços rápidos de como a sombra muda."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contrast and focus",
+     "g": "Put your strongest darks and lights where you want the viewer to look.",
+     "p": [
+      "The eye goes first to the area of highest contrast, where the lightest light meets the darkest dark.",
+      "Keep contrast softer and details simpler in less important areas.",
+      "Decide your focal point before you shade, not after."
+     ],
+     "q": "When you look at a photo, what usually grabs your attention first?",
+     "c": "Draw two objects and make one the star with full contrast, keeping the other soft and light."
+    },
+    "de": {
+     "t": "Kontrast und Fokus",
+     "g": "Die stärksten Hell-Dunkel-Kontraste dorthin setzen, wo der Blick hin soll.",
+     "p": [
+      "Das Auge geht zuerst zum stärksten Kontrast, wo das hellste Licht auf das tiefste Dunkel trifft.",
+      "Halte Kontraste in unwichtigen Bereichen weicher und Details einfacher.",
+      "Leg deinen Blickpunkt fest, bevor du schattierst, nicht danach."
+     ],
+     "q": "Was fällt dir bei einem Foto meist zuerst ins Auge?",
+     "c": "Zeichne zwei Objekte und mach eins mit vollem Kontrast zum Star, das andere bleibt weich und hell."
+    },
+    "es": {
+     "t": "Contraste y foco",
+     "g": "Poner los oscuros y claros más fuertes donde quieres que mire el espectador.",
+     "p": [
+      "El ojo va primero a la zona de mayor contraste, donde la luz más clara toca el oscuro más intenso.",
+      "Suaviza el contraste y simplifica detalles en las zonas menos importantes.",
+      "Decide tu punto focal antes de sombrear, no después."
+     ],
+     "q": "Cuando miras una foto, ¿qué suele captar primero tu atención?",
+     "c": "Dibuja dos objetos y haz protagonista a uno con todo el contraste; deja el otro suave y claro."
+    },
+    "fr": {
+     "t": "Contraste et point focal",
+     "g": "Placer les noirs et blancs les plus forts là où tu veux attirer le regard.",
+     "p": [
+      "L'œil va d'abord au plus fort contraste, là où le plus clair rencontre le plus foncé.",
+      "Adoucis le contraste et simplifie les détails dans les zones secondaires.",
+      "Choisis ton point focal avant d'ombrer, pas après."
+     ],
+     "q": "Quand tu regardes une photo, qu'est-ce qui attire ton regard en premier ?",
+     "c": "Dessine deux objets : fais de l'un la star avec un contraste fort, garde l'autre doux et clair."
+    },
+    "it": {
+     "t": "Contrasto e punto focale",
+     "g": "Mettere gli scuri e i chiari più forti dove vuoi che guardi lo spettatore.",
+     "p": [
+      "L'occhio va prima alla zona di massimo contrasto, dove il chiaro più forte incontra lo scuro più intenso.",
+      "Ammorbidisci il contrasto e semplifica i dettagli nelle zone meno importanti.",
+      "Decidi il punto focale prima di ombreggiare, non dopo."
+     ],
+     "q": "Quando guardi una foto, cosa cattura di solito per primo la tua attenzione?",
+     "c": "Disegna due oggetti: rendi uno protagonista con pieno contrasto, lascia l'altro morbido e chiaro."
+    },
+    "pt": {
+     "t": "Contraste e foco",
+     "g": "Pôr os escuros e claros mais fortes onde queres que o olhar vá.",
+     "p": [
+      "O olho vai primeiro para a zona de maior contraste, onde o claro mais forte encontra o escuro mais intenso.",
+      "Suaviza o contraste e simplifica os detalhes nas zonas menos importantes.",
+      "Decide o ponto focal antes de sombrear, não depois."
+     ],
+     "q": "Quando olhas para uma foto, o que te prende a atenção primeiro?",
+     "c": "Desenha dois objetos: faz de um a estrela com contraste total e deixa o outro suave e claro."
+    },
+    "pt_BR": {
+     "t": "Contraste e foco",
+     "g": "Colocar os escuros e claros mais fortes onde você quer que o olhar vá.",
+     "p": [
+      "O olho vai primeiro para a área de maior contraste, onde o claro mais forte encontra o escuro mais intenso.",
+      "Suavize o contraste e simplifique detalhes nas áreas menos importantes.",
+      "Decida o ponto focal antes de sombrear, não depois."
+     ],
+     "q": "Quando você olha uma foto, o que chama sua atenção primeiro?",
+     "c": "Desenhe dois objetos: faça de um a estrela com contraste total e deixe o outro suave e claro."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing textures: wood",
+     "g": "Draw wood grain, knots and rough surfaces convincingly.",
+     "p": [
+      "Grain lines run along the length of the wood and flow around knots like water around a stone.",
+      "Vary spacing and darkness of the lines; real grain is never perfectly regular.",
+      "Add a few cracks and darker end grain to make planks look worn and solid."
+     ],
+     "q": "Is there a wooden object at home you love, like a table, spoon or door?",
+     "c": "Draw a small section of a wooden plank with flowing grain, one knot and a crack."
+    },
+    "de": {
+     "t": "Texturen: Holz",
+     "g": "Holzmaserung, Astlöcher und raue Oberflächen überzeugend zeichnen.",
+     "p": [
+      "Maserlinien laufen längs durchs Holz und fließen um Äste wie Wasser um einen Stein.",
+      "Variier Abstand und Dunkelheit der Linien, echte Maserung ist nie ganz regelmäßig.",
+      "Ein paar Risse und dunkleres Hirnholz lassen Bretter alt und massiv wirken."
+     ],
+     "q": "Gibt es zu Hause einen Holzgegenstand, den du magst, wie Tisch, Löffel oder Tür?",
+     "c": "Zeichne ein Stück Holzbrett mit fließender Maserung, einem Astloch und einem Riss."
+    },
+    "es": {
+     "t": "Texturas: madera",
+     "g": "Dibujar vetas, nudos y superficies rugosas de la madera de forma convincente.",
+     "p": [
+      "Las vetas recorren la madera a lo largo y rodean los nudos como el agua a una piedra.",
+      "Varía la separación y oscuridad de las líneas; la veta real nunca es regular del todo.",
+      "Unas grietas y la testa más oscura hacen que las tablas parezcan gastadas y sólidas."
+     ],
+     "q": "¿Hay algún objeto de madera en casa que te encante, como una mesa, cuchara o puerta?",
+     "c": "Dibuja un trozo de tabla con vetas fluidas, un nudo y una grieta."
+    },
+    "fr": {
+     "t": "Textures : le bois",
+     "g": "Dessiner de façon convaincante veines, nœuds et surfaces rugueuses du bois.",
+     "p": [
+      "Les veines suivent la longueur du bois et contournent les nœuds comme l'eau autour d'une pierre.",
+      "Varie l'espacement et l'intensité des lignes ; le vrai veinage n'est jamais régulier.",
+      "Quelques fissures et un bout de bois plus foncé donnent aux planches un air usé et solide."
+     ],
+     "q": "Y a-t-il chez toi un objet en bois que tu aimes, comme une table, une cuillère ou une porte ?",
+     "c": "Dessine un morceau de planche avec un veinage fluide, un nœud et une fissure."
+    },
+    "it": {
+     "t": "Texture: il legno",
+     "g": "Disegnare in modo convincente venature, nodi e superfici ruvide del legno.",
+     "p": [
+      "Le venature corrono lungo il legno e girano attorno ai nodi come l'acqua attorno a un sasso.",
+      "Varia distanza e intensità delle linee; le venature vere non sono mai regolari.",
+      "Qualche crepa e la testa del legno più scura rendono le assi vissute e solide."
+     ],
+     "q": "C'è un oggetto di legno in casa che ami, come un tavolo, un cucchiaio o una porta?",
+     "c": "Disegna un pezzo di asse con venature fluide, un nodo e una crepa."
+    },
+    "pt": {
+     "t": "Texturas: madeira",
+     "g": "Desenhar veios, nós e superfícies rugosas da madeira de forma convincente.",
+     "p": [
+      "Os veios seguem o comprimento da madeira e contornam os nós como água à volta de uma pedra.",
+      "Varia o espaçamento e o escuro das linhas; os veios reais nunca são regulares.",
+      "Algumas rachas e o topo da madeira mais escuro dão às tábuas um ar gasto e sólido."
+     ],
+     "q": "Há algum objeto de madeira em casa de que gostes, como uma mesa, colher ou porta?",
+     "c": "Desenha um pedaço de tábua com veios fluidos, um nó e uma racha."
+    },
+    "pt_BR": {
+     "t": "Texturas: madeira",
+     "g": "Desenhar veios, nós e superfícies ásperas da madeira de forma convincente.",
+     "p": [
+      "Os veios seguem o comprimento da madeira e contornam os nós como água em volta de uma pedra.",
+      "Varie o espaçamento e o escuro das linhas; veio de verdade nunca é regular.",
+      "Algumas rachaduras e a ponta da madeira mais escura deixam as tábuas com cara de gastas e sólidas."
+     ],
+     "q": "Tem algum objeto de madeira em casa que você adora, como mesa, colher ou porta?",
+     "c": "Desenhe um pedaço de tábua com veios fluidos, um nó e uma rachadura."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing textures: metal and glass",
+     "g": "Show shiny surfaces with high contrast, sharp reflections and clean highlights.",
+     "p": [
+      "Shiny materials jump from very dark to very light with hard edges, unlike matte objects.",
+      "Draw reflections as distorted shapes of what surrounds the object, not as random marks.",
+      "Leave highlights as pure white paper, or lift them out cleanly with an eraser."
+     ],
+     "q": "What shiny object would you like to try: a spoon, a glass or a key?",
+     "c": "Draw a metal spoon, mapping its reflections as abstract light and dark shapes with crisp edges."
+    },
+    "de": {
+     "t": "Texturen: Metall und Glas",
+     "g": "Glänzende Oberflächen mit starkem Kontrast, scharfen Spiegelungen und sauberen Glanzlichtern zeigen.",
+     "p": [
+      "Glänzende Materialien springen mit harten Kanten von sehr dunkel zu sehr hell, anders als matte.",
+      "Zeichne Spiegelungen als verzerrte Formen der Umgebung, nicht als zufällige Striche.",
+      "Lass Glanzlichter als reines weißes Papier stehen oder radier sie sauber heraus."
+     ],
+     "q": "Was Glänzendes möchtest du probieren: einen Löffel, ein Glas oder einen Schlüssel?",
+     "c": "Zeichne einen Metalllöffel und erfasse seine Spiegelungen als abstrakte helle und dunkle Formen mit klaren Kanten."
+    },
+    "es": {
+     "t": "Texturas: metal y vidrio",
+     "g": "Mostrar superficies brillantes con alto contraste, reflejos nítidos y brillos limpios.",
+     "p": [
+      "Los materiales brillantes saltan de muy oscuro a muy claro con bordes duros, a diferencia de los mates.",
+      "Dibuja los reflejos como formas deformadas de lo que rodea al objeto, no como marcas al azar.",
+      "Deja los brillos con el blanco del papel o sácalos limpios con la goma."
+     ],
+     "q": "¿Qué objeto brillante te gustaría probar: una cuchara, un vaso o una llave?",
+     "c": "Dibuja una cuchara de metal trazando sus reflejos como formas claras y oscuras de bordes nítidos."
+    },
+    "fr": {
+     "t": "Textures : métal et verre",
+     "g": "Rendre les surfaces brillantes avec un fort contraste, des reflets nets et des éclats propres.",
+     "p": [
+      "Les matières brillantes passent du très foncé au très clair avec des bords nets, contrairement aux mates.",
+      "Dessine les reflets comme des formes déformées de l'entourage, pas comme des traces au hasard.",
+      "Laisse les éclats en blanc du papier ou retire-les proprement à la gomme."
+     ],
+     "q": "Quel objet brillant aimerais-tu essayer : une cuillère, un verre ou une clé ?",
+     "c": "Dessine une cuillère en métal en traçant ses reflets comme des formes claires et foncées aux bords nets."
+    },
+    "it": {
+     "t": "Texture: metallo e vetro",
+     "g": "Rendere le superfici lucide con forte contrasto, riflessi netti e luci pulite.",
+     "p": [
+      "I materiali lucidi passano dal molto scuro al molto chiaro con bordi netti, a differenza di quelli opachi.",
+      "Disegna i riflessi come forme deformate di ciò che circonda l'oggetto, non come segni casuali.",
+      "Lascia le luci col bianco della carta o tirale fuori pulite con la gomma."
+     ],
+     "q": "Quale oggetto lucido vorresti provare: un cucchiaio, un bicchiere o una chiave?",
+     "c": "Disegna un cucchiaio di metallo rendendo i riflessi come forme chiare e scure dai bordi netti."
+    },
+    "pt": {
+     "t": "Texturas: metal e vidro",
+     "g": "Mostrar superfícies brilhantes com alto contraste, reflexos nítidos e brilhos limpos.",
+     "p": [
+      "Os materiais brilhantes saltam do muito escuro ao muito claro com bordas duras, ao contrário dos mates.",
+      "Desenha os reflexos como formas distorcidas do que rodeia o objeto, não como marcas ao acaso.",
+      "Deixa os brilhos com o branco do papel ou tira-os limpos com a borracha."
+     ],
+     "q": "Que objeto brilhante gostavas de experimentar: uma colher, um copo ou uma chave?",
+     "c": "Desenha uma colher de metal com os reflexos como formas claras e escuras de bordas nítidas."
+    },
+    "pt_BR": {
+     "t": "Texturas: metal e vidro",
+     "g": "Mostrar superfícies brilhantes com alto contraste, reflexos nítidos e brilhos limpos.",
+     "p": [
+      "Materiais brilhantes saltam do muito escuro ao muito claro com bordas duras, diferente dos foscos.",
+      "Desenhe os reflexos como formas distorcidas do que está em volta, não como marcas aleatórias.",
+      "Deixe os brilhos no branco do papel ou tire-os limpos com a borracha."
+     ],
+     "q": "Que objeto brilhante você quer testar: uma colher, um copo ou uma chave?",
+     "c": "Desenhe uma colher de metal com os reflexos como formas claras e escuras de bordas nítidas."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing textures: fabric",
+     "g": "Draw soft folds and patterns, and show the difference between thick and thin fabrics.",
+     "p": [
+      "Folds radiate from points of tension, like where fabric hangs from a hook or is pinched.",
+      "Thin fabric makes many small sharp folds; thick fabric makes fewer, rounder, heavier ones.",
+      "Patterns like stripes must bend and follow the folds to look believable."
+     ],
+     "q": "What is your favourite piece of fabric at home, like a scarf, blanket or shirt?",
+     "c": "Hang a towel or scarf from one point and draw the folds, shading the inner valleys darker."
+    },
+    "de": {
+     "t": "Texturen: Stoff",
+     "g": "Weiche Falten und Muster zeichnen und dicke von dünnen Stoffen unterscheiden.",
+     "p": [
+      "Falten strahlen von Spannungspunkten aus, etwa wo Stoff an einem Haken hängt.",
+      "Dünner Stoff wirft viele kleine scharfe Falten, dicker Stoff weniger, rundere und schwerere.",
+      "Muster wie Streifen müssen sich mit den Falten biegen, um glaubwürdig zu wirken."
+     ],
+     "q": "Was ist dein liebstes Stoffstück zu Hause, etwa Schal, Decke oder Hemd?",
+     "c": "Häng ein Handtuch oder einen Schal an einem Punkt auf, zeichne die Falten und die Täler dunkler."
+    },
+    "es": {
+     "t": "Texturas: tela",
+     "g": "Dibujar pliegues suaves y estampados, y diferenciar telas gruesas y finas.",
+     "p": [
+      "Los pliegues salen de puntos de tensión, como donde la tela cuelga de un gancho o se pellizca.",
+      "La tela fina hace muchos pliegues pequeños y marcados; la gruesa, menos, más redondos y pesados.",
+      "Los estampados como las rayas deben curvarse con los pliegues para resultar creíbles."
+     ],
+     "q": "¿Cuál es tu tela favorita en casa, como una bufanda, una manta o una camisa?",
+     "c": "Cuelga una toalla o bufanda de un punto, dibuja los pliegues y oscurece los valles interiores."
+    },
+    "fr": {
+     "t": "Textures : le tissu",
+     "g": "Dessiner plis souples et motifs, et distinguer tissus épais et fins.",
+     "p": [
+      "Les plis rayonnent depuis les points de tension, comme là où le tissu pend d'un crochet.",
+      "Un tissu fin fait beaucoup de petits plis nets ; un tissu épais, moins de plis, plus ronds et lourds.",
+      "Les motifs comme les rayures doivent suivre les plis pour être crédibles."
+     ],
+     "q": "Quel est ton tissu préféré chez toi : une écharpe, une couverture ou une chemise ?",
+     "c": "Suspends une serviette ou une écharpe par un point, dessine les plis et fonce les creux."
+    },
+    "it": {
+     "t": "Texture: il tessuto",
+     "g": "Disegnare pieghe morbide e motivi, e distinguere tessuti spessi e sottili.",
+     "p": [
+      "Le pieghe partono dai punti di tensione, come dove la stoffa pende da un gancio.",
+      "Il tessuto sottile fa tante pieghe piccole e nette; quello spesso meno pieghe, più tonde e pesanti.",
+      "I motivi come le righe devono piegarsi con le pieghe per essere credibili."
+     ],
+     "q": "Qual è il tuo tessuto preferito in casa, come una sciarpa, una coperta o una camicia?",
+     "c": "Appendi un asciugamano o una sciarpa da un punto, disegna le pieghe e scurisci gli incavi."
+    },
+    "pt": {
+     "t": "Texturas: tecido",
+     "g": "Desenhar pregas suaves e padrões, e distinguir tecidos grossos e finos.",
+     "p": [
+      "As pregas partem de pontos de tensão, como onde o tecido pende de um gancho.",
+      "Tecido fino faz muitas pregas pequenas e vincadas; tecido grosso, menos, mais redondas e pesadas.",
+      "Padrões como riscas têm de curvar com as pregas para parecerem credíveis."
+     ],
+     "q": "Qual é o teu tecido preferido em casa, como um cachecol, manta ou camisa?",
+     "c": "Pendura uma toalha ou cachecol por um ponto, desenha as pregas e escurece as zonas interiores."
+    },
+    "pt_BR": {
+     "t": "Texturas: tecido",
+     "g": "Desenhar dobras suaves e estampas, e diferenciar tecidos grossos e finos.",
+     "p": [
+      "As dobras saem de pontos de tensão, como onde o tecido fica pendurado num gancho.",
+      "Tecido fino faz muitas dobras pequenas e marcadas; tecido grosso, menos, mais redondas e pesadas.",
+      "Estampas como listras precisam curvar com as dobras para parecerem reais."
+     ],
+     "q": "Qual é seu tecido favorito em casa, como cachecol, manta ou camisa?",
+     "c": "Pendure uma toalha ou cachecol por um ponto, desenhe as dobras e escureça as partes internas."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing textures: fur and hair",
+     "g": "Draw fur and hair with directional strokes, clumps and light areas left for shine.",
+     "p": [
+      "Draw hair in clumps or locks, not as thousands of single strands.",
+      "Follow the direction of growth with flicked strokes that taper at the tips.",
+      "Leave bands of light paper where hair catches the light, and darken where clumps overlap."
+     ],
+     "q": "Do you have a pet, or a hairstyle, you would love to draw?",
+     "c": "Draw a small patch of fur or a lock of hair, using flicked strokes and leaving a shiny highlight band."
+    },
+    "de": {
+     "t": "Texturen: Fell und Haare",
+     "g": "Fell und Haare mit gerichteten Strichen, Strähnen und ausgesparten Glanzstellen zeichnen.",
+     "p": [
+      "Zeichne Haare in Strähnen oder Büscheln, nicht als tausend einzelne Haare.",
+      "Folge der Wuchsrichtung mit schwungvollen Strichen, die an den Spitzen auslaufen.",
+      "Lass helle Bänder frei, wo Haare Licht fangen, und dunkle, wo Strähnen sich überlagern."
+     ],
+     "q": "Hast du ein Haustier oder eine Frisur, die du gern zeichnen würdest?",
+     "c": "Zeichne ein kleines Stück Fell oder eine Haarsträhne mit schwungvollen Strichen und einem Glanzband."
+    },
+    "es": {
+     "t": "Texturas: pelo y pelaje",
+     "g": "Dibujar pelo y pelaje con trazos direccionales, mechones y zonas claras para el brillo.",
+     "p": [
+      "Dibuja el pelo en mechones, no como miles de pelos sueltos.",
+      "Sigue la dirección de crecimiento con trazos sueltos que se afinan en las puntas.",
+      "Deja franjas de papel claro donde el pelo brilla y oscurece donde los mechones se solapan."
+     ],
+     "q": "¿Tienes una mascota o un peinado que te encantaría dibujar?",
+     "c": "Dibuja un trozo de pelaje o un mechón con trazos sueltos y deja una franja de brillo."
+    },
+    "fr": {
+     "t": "Textures : poils et cheveux",
+     "g": "Dessiner poils et cheveux avec des traits orientés, des mèches et des zones claires pour la brillance.",
+     "p": [
+      "Dessine les cheveux en mèches, pas comme des milliers de cheveux isolés.",
+      "Suis le sens de pousse avec des traits lancés qui s'affinent aux pointes.",
+      "Laisse des bandes claires là où les cheveux brillent, et fonce là où les mèches se superposent."
+     ],
+     "q": "As-tu un animal ou une coiffure que tu aimerais dessiner ?",
+     "c": "Dessine un petit carré de pelage ou une mèche avec des traits lancés et une bande de brillance."
+    },
+    "it": {
+     "t": "Texture: pelo e capelli",
+     "g": "Disegnare pelo e capelli con tratti direzionali, ciocche e zone chiare per la lucentezza.",
+     "p": [
+      "Disegna i capelli a ciocche, non come migliaia di fili singoli.",
+      "Segui la direzione di crescita con tratti veloci che si assottigliano sulle punte.",
+      "Lascia fasce di carta chiara dove i capelli prendono luce e scurisci dove le ciocche si sovrappongono."
+     ],
+     "q": "Hai un animale o un'acconciatura che ti piacerebbe disegnare?",
+     "c": "Disegna un pezzetto di pelo o una ciocca con tratti veloci e lascia una fascia di luce."
+    },
+    "pt": {
+     "t": "Texturas: pelo e cabelo",
+     "g": "Desenhar pelo e cabelo com traços direcionais, madeixas e zonas claras para o brilho.",
+     "p": [
+      "Desenha o cabelo em madeixas, não como milhares de fios soltos.",
+      "Segue a direção do crescimento com traços soltos que afinam nas pontas.",
+      "Deixa faixas de papel claro onde o cabelo brilha e escurece onde as madeixas se sobrepõem."
+     ],
+     "q": "Tens um animal ou um penteado que adorasses desenhar?",
+     "c": "Desenha um pedaço de pelo ou uma madeixa com traços soltos e deixa uma faixa de brilho."
+    },
+    "pt_BR": {
+     "t": "Texturas: pelo e cabelo",
+     "g": "Desenhar pelo e cabelo com traços direcionais, mechas e áreas claras para o brilho.",
+     "p": [
+      "Desenhe o cabelo em mechas, não como milhares de fios soltos.",
+      "Siga a direção do crescimento com traços soltos que afinam nas pontas.",
+      "Deixe faixas de papel claro onde o cabelo brilha e escureça onde as mechas se sobrepõem."
+     ],
+     "q": "Você tem um pet ou um penteado que adoraria desenhar?",
+     "c": "Desenhe um pedaço de pelo ou uma mecha com traços soltos e deixe uma faixa de brilho."
+    }
+   }
+  }
+ ]
+}

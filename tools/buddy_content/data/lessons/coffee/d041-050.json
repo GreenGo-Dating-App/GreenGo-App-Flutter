@@ -1,0 +1,835 @@
+{
+ "topic": "coffee",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What espresso is",
+     "g": "Understand espresso: pressure, finely ground coffee and a short, intense shot.",
+     "p": [
+      "Espresso is made by forcing hot water through a compact bed of fine coffee at about 9 bar of pressure.",
+      "In roughly 25 to 30 seconds you get a small, concentrated drink with a thick body and golden crema on top.",
+      "It was developed in Italy in the early 1900s, and espresso is the base of most café milk drinks."
+     ],
+     "q": "What does a perfect espresso taste like to you, or have you not tried one yet?",
+     "c": "Order or make an espresso, take three small sips and describe its body, sweetness and finish."
+    },
+    "de": {
+     "t": "Was Espresso ist",
+     "g": "Verstehe Espresso: Druck, fein gemahlener Kaffee und ein kurzer, intensiver Shot.",
+     "p": [
+      "Für Espresso wird heißes Wasser mit etwa 9 bar Druck durch ein kompaktes Bett aus fein gemahlenem Kaffee gepresst.",
+      "In etwa 25 bis 30 Sekunden entsteht ein kleines, konzentriertes Getränk mit dichtem Körper und goldener Crema.",
+      "Er wurde Anfang des 20. Jahrhunderts in Italien entwickelt und ist die Basis der meisten Milchgetränke im Café."
+     ],
+     "q": "Wie schmeckt für dich ein perfekter Espresso, oder hast du noch keinen probiert?",
+     "c": "Bestell oder mach einen Espresso, nimm drei kleine Schlucke und beschreibe Körper, Süße und Abgang."
+    },
+    "es": {
+     "t": "Qué es el espresso",
+     "g": "Entiende el espresso: presión, café molido fino y un trago corto e intenso.",
+     "p": [
+      "El espresso se hace forzando agua caliente a unos 9 bares de presión a través de una pastilla compacta de café fino.",
+      "En unos 25 a 30 segundos obtienes una bebida pequeña y concentrada, con cuerpo denso y crema dorada encima.",
+      "Se desarrolló en Italia a principios del siglo XX y es la base de casi todas las bebidas con leche de cafetería."
+     ],
+     "q": "¿Cómo sabe para ti un espresso perfecto, o todavía no has probado ninguno?",
+     "c": "Pide o prepara un espresso, da tres sorbos pequeños y describe su cuerpo, dulzor y final."
+    },
+    "fr": {
+     "t": "Ce qu'est l'espresso",
+     "g": "Comprends l'espresso : de la pression, un café moulu fin et une boisson courte et intense.",
+     "p": [
+      "L'espresso se fait en poussant de l'eau chaude à environ 9 bars à travers une galette compacte de café fin.",
+      "En 25 à 30 secondes environ, on obtient une petite boisson concentrée, au corps dense, avec une crema dorée.",
+      "Il est né en Italie au début du XXe siècle et sert de base à la plupart des boissons lactées des cafés."
+     ],
+     "q": "Quel goût a pour toi un espresso parfait, ou n'en as-tu pas encore goûté ?",
+     "c": "Commande ou prépare un espresso, prends trois petites gorgées et décris son corps, sa douceur et sa finale."
+    },
+    "it": {
+     "t": "Cos'è l'espresso",
+     "g": "Capisci l'espresso: pressione, caffè macinato fine e una tazzina corta e intensa.",
+     "p": [
+      "L'espresso si ottiene spingendo acqua calda a circa 9 bar attraverso un pannello compatto di caffè macinato fine.",
+      "In circa 25-30 secondi ottieni una bevanda piccola e concentrata, dal corpo denso e con la crema dorata sopra.",
+      "È nato in Italia all'inizio del Novecento ed è la base della maggior parte delle bevande al latte del bar."
+     ],
+     "q": "Che sapore ha per te un espresso perfetto, o non ne hai ancora assaggiato uno?",
+     "c": "Ordina o prepara un espresso, fai tre piccoli sorsi e descrivi corpo, dolcezza e finale."
+    },
+    "pt": {
+     "t": "O que é o espresso",
+     "g": "Percebe o espresso: pressão, café moído fino e uma bebida curta e intensa.",
+     "p": [
+      "O espresso faz-se forçando água quente a cerca de 9 bar através de uma pastilha compacta de café fino.",
+      "Em cerca de 25 a 30 segundos obténs uma bebida pequena e concentrada, com corpo denso e crema dourada.",
+      "Nasceu em Itália no início do século XX e é a base da maioria das bebidas com leite dos cafés; em Portugal chama-se bica ou café."
+     ],
+     "q": "Como sabe para ti um espresso perfeito, ou ainda não provaste nenhum?",
+     "c": "Pede ou faz um espresso, dá três pequenos goles e descreve o corpo, a doçura e o final."
+    },
+    "pt_BR": {
+     "t": "O que é o espresso",
+     "g": "Entenda o espresso: pressão, café moído fino e uma dose curta e intensa.",
+     "p": [
+      "O espresso é feito forçando água quente a cerca de 9 bar através de uma pastilha compacta de café fino.",
+      "Em uns 25 a 30 segundos você tem uma bebida pequena e concentrada, de corpo denso e crema dourada por cima.",
+      "Ele surgiu na Itália no começo do século 20 e é a base da maioria das bebidas com leite das cafeterias."
+     ],
+     "q": "Qual é o sabor de um espresso perfeito para você, ou você ainda não provou um?",
+     "c": "Peça ou prepare um espresso, dê três golinhos e descreva o corpo, a doçura e o final."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How an espresso machine works",
+     "g": "Get to know the boiler, pump, group head and portafilter of an espresso machine.",
+     "p": [
+      "A boiler or thermoblock heats the water, and a pump pushes it at high pressure towards the group head.",
+      "The group head spreads water evenly through a shower screen onto the coffee in the portafilter's basket.",
+      "Most machines also have a steam wand, which uses steam from the boiler to heat and froth milk."
+     ],
+     "q": "Have you ever watched a barista work and wondered what each part of the machine does?",
+     "c": "Look at a photo of an espresso machine and point out the group head, portafilter and steam wand."
+    },
+    "de": {
+     "t": "Wie eine Espressomaschine funktioniert",
+     "g": "Lerne Boiler, Pumpe, Brühgruppe und Siebträger einer Espressomaschine kennen.",
+     "p": [
+      "Ein Boiler oder Thermoblock erhitzt das Wasser, und eine Pumpe drückt es mit hohem Druck zur Brühgruppe.",
+      "Die Brühgruppe verteilt das Wasser über eine Dusche gleichmäßig auf den Kaffee im Sieb des Siebträgers.",
+      "Die meisten Maschinen haben auch eine Dampflanze, die mit Dampf aus dem Boiler Milch erhitzt und aufschäumt."
+     ],
+     "q": "Hast du schon mal einem Barista zugesehen und dich gefragt, was jedes Teil der Maschine macht?",
+     "c": "Schau dir ein Foto einer Espressomaschine an und zeig auf Brühgruppe, Siebträger und Dampflanze."
+    },
+    "es": {
+     "t": "Cómo funciona una cafetera espresso",
+     "g": "Conoce la caldera, la bomba, el grupo y el portafiltro de una máquina de espresso.",
+     "p": [
+      "Una caldera o termobloque calienta el agua, y una bomba la empuja a alta presión hacia el grupo.",
+      "El grupo reparte el agua a través de una ducha sobre el café que está en el cestillo del portafiltro.",
+      "La mayoría de las máquinas tiene además un vaporizador, que usa vapor de la caldera para calentar y espumar la leche."
+     ],
+     "q": "¿Has mirado alguna vez trabajar a un barista preguntándote qué hace cada parte de la máquina?",
+     "c": "Mira una foto de una máquina de espresso y señala el grupo, el portafiltro y el vaporizador."
+    },
+    "fr": {
+     "t": "Comment marche une machine à espresso",
+     "g": "Découvre la chaudière, la pompe, le groupe et le porte-filtre d'une machine à espresso.",
+     "p": [
+      "Une chaudière ou un thermobloc chauffe l'eau, et une pompe la pousse à haute pression vers le groupe.",
+      "Le groupe répartit l'eau à travers une douchette sur le café placé dans le panier du porte-filtre.",
+      "La plupart des machines ont aussi une buse vapeur, qui utilise la vapeur de la chaudière pour chauffer et mousser le lait."
+     ],
+     "q": "As-tu déjà observé un barista en te demandant à quoi sert chaque partie de la machine ?",
+     "c": "Regarde une photo de machine à espresso et repère le groupe, le porte-filtre et la buse vapeur."
+    },
+    "it": {
+     "t": "Come funziona una macchina da espresso",
+     "g": "Conosci caldaia, pompa, gruppo e portafiltro di una macchina da espresso.",
+     "p": [
+      "Una caldaia o un thermoblock scalda l'acqua, e una pompa la spinge ad alta pressione verso il gruppo.",
+      "Il gruppo distribuisce l'acqua attraverso la doccetta sul caffè contenuto nel filtro del portafiltro.",
+      "Quasi tutte le macchine hanno anche una lancia vapore, che usa il vapore della caldaia per scaldare e montare il latte."
+     ],
+     "q": "Hai mai guardato un barista al lavoro chiedendoti a cosa serve ogni parte della macchina?",
+     "c": "Guarda la foto di una macchina da espresso e indica gruppo, portafiltro e lancia vapore."
+    },
+    "pt": {
+     "t": "Como funciona uma máquina de espresso",
+     "g": "Conhece a caldeira, a bomba, o grupo e o porta-filtro de uma máquina de espresso.",
+     "p": [
+      "Uma caldeira ou termobloco aquece a água, e uma bomba empurra-a com alta pressão até ao grupo.",
+      "O grupo espalha a água por um chuveiro sobre o café que está no filtro do porta-filtro.",
+      "A maioria das máquinas tem também um vaporizador, que usa vapor da caldeira para aquecer e espumar o leite."
+     ],
+     "q": "Já viste um barista a trabalhar e perguntaste-te para que serve cada parte da máquina?",
+     "c": "Olha para uma fotografia de uma máquina de espresso e aponta o grupo, o porta-filtro e o vaporizador."
+    },
+    "pt_BR": {
+     "t": "Como funciona uma máquina de espresso",
+     "g": "Conheça a caldeira, a bomba, o grupo e o porta-filtro de uma máquina de espresso.",
+     "p": [
+      "Uma caldeira ou termobloco aquece a água, e uma bomba a empurra em alta pressão até o grupo.",
+      "O grupo espalha a água por um chuveiro sobre o café que fica no filtro do porta-filtro.",
+      "A maioria das máquinas também tem um bico vaporizador, que usa vapor da caldeira para aquecer e vaporizar o leite."
+     ],
+     "q": "Você já viu um barista trabalhando e se perguntou para que serve cada parte da máquina?",
+     "c": "Olhe a foto de uma máquina de espresso e aponte o grupo, o porta-filtro e o bico vaporizador."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Espresso grinders",
+     "g": "See why espresso needs a precise grinder with very fine adjustments.",
+     "p": [
+      "Espresso is so sensitive that a tiny change in grind size can make a shot run several seconds faster or slower.",
+      "Espresso grinders use solid burrs and very small steps, or stepless adjustment, to dial in each coffee.",
+      "Change the grind in small moves and taste after each one, keeping dose and yield the same."
+     ],
+     "q": "Did you expect the grinder to matter as much as the espresso machine itself?",
+     "c": "If you have an espresso grinder, move it one small step finer and note how the shot time changes."
+    },
+    "de": {
+     "t": "Espressomühlen",
+     "g": "Verstehe, warum Espresso eine präzise Mühle mit sehr feiner Einstellung braucht.",
+     "p": [
+      "Espresso ist so empfindlich, dass eine winzige Mahlgradänderung den Bezug um mehrere Sekunden schneller oder langsamer macht.",
+      "Espressomühlen haben stabile Mahlwerke und sehr kleine Stufen oder eine stufenlose Einstellung für jeden Kaffee.",
+      "Verstelle den Mahlgrad in kleinen Schritten und probiere jedes Mal, bei gleicher Dosis und Menge in der Tasse."
+     ],
+     "q": "Hättest du gedacht, dass die Mühle genauso wichtig ist wie die Espressomaschine selbst?",
+     "c": "Wenn du eine Espressomühle hast, stell sie eine kleine Stufe feiner und notiere, wie sich die Bezugszeit ändert."
+    },
+    "es": {
+     "t": "Molinos de espresso",
+     "g": "Descubre por qué el espresso necesita un molino preciso con ajustes muy finos.",
+     "p": [
+      "El espresso es tan sensible que un mínimo cambio de molienda hace que el café salga varios segundos más rápido o lento.",
+      "Los molinos de espresso tienen muelas robustas y pasos muy pequeños, o ajuste continuo, para calibrar cada café.",
+      "Cambia la molienda en pasos pequeños y prueba tras cada uno, manteniendo la dosis y el rendimiento iguales."
+     ],
+     "q": "¿Esperabas que el molino importara tanto como la propia máquina de espresso?",
+     "c": "Si tienes molino de espresso, muévelo un paso más fino y anota cómo cambia el tiempo de extracción."
+    },
+    "fr": {
+     "t": "Les moulins à espresso",
+     "g": "Comprends pourquoi l'espresso exige un moulin précis aux réglages très fins.",
+     "p": [
+      "L'espresso est si sensible qu'un minuscule changement de mouture fait couler la tasse plusieurs secondes plus vite ou plus lentement.",
+      "Les moulins à espresso ont des meules solides et des crans très fins, ou un réglage continu, pour ajuster chaque café.",
+      "Change la mouture par petites touches et goûte à chaque fois, en gardant la même dose et le même rendement."
+     ],
+     "q": "T'attendais-tu à ce que le moulin compte autant que la machine à espresso elle-même ?",
+     "c": "Si tu as un moulin à espresso, règle-le d'un petit cran plus fin et note comment change le temps d'extraction."
+    },
+    "it": {
+     "t": "I macinacaffè per espresso",
+     "g": "Scopri perché l'espresso richiede un macinacaffè preciso con regolazioni molto fini.",
+     "p": [
+      "L'espresso è così sensibile che un minimo cambio di macinatura fa scendere la tazzina parecchi secondi più veloce o più lenta.",
+      "I macinacaffè per espresso hanno macine robuste e scatti piccolissimi, o regolazione continua, per tarare ogni caffè.",
+      "Cambia la macinatura a piccoli passi e assaggia ogni volta, mantenendo uguali dose e resa."
+     ],
+     "q": "Ti aspettavi che il macinacaffè contasse quanto la macchina da espresso stessa?",
+     "c": "Se hai un macinacaffè per espresso, spostalo di uno scatto più fine e annota come cambia il tempo di estrazione."
+    },
+    "pt": {
+     "t": "Moinhos de espresso",
+     "g": "Percebe porque é que o espresso precisa de um moinho preciso com afinações muito finas.",
+     "p": [
+      "O espresso é tão sensível que uma mudança mínima na moagem faz o café sair vários segundos mais depressa ou mais devagar.",
+      "Os moinhos de espresso têm mós robustas e passos muito pequenos, ou afinação contínua, para acertar cada café.",
+      "Muda a moagem aos poucos e prova depois de cada mudança, mantendo a dose e o rendimento iguais."
+     ],
+     "q": "Esperavas que o moinho importasse tanto como a própria máquina de espresso?",
+     "c": "Se tens moinho de espresso, mói um passo mais fino e aponta como muda o tempo de extração."
+    },
+    "pt_BR": {
+     "t": "Moedores para espresso",
+     "g": "Entenda por que o espresso precisa de um moedor preciso com ajustes bem finos.",
+     "p": [
+      "O espresso é tão sensível que uma mudança mínima na moagem faz a dose sair vários segundos mais rápida ou mais lenta.",
+      "Moedores para espresso têm mós robustas e passos bem pequenos, ou ajuste contínuo, para calibrar cada café.",
+      "Mude a moagem aos poucos e prove depois de cada ajuste, mantendo a dose e o rendimento iguais."
+     ],
+     "q": "Você imaginava que o moedor importasse tanto quanto a própria máquina de espresso?",
+     "c": "Se tiver moedor para espresso, deixe um passo mais fino e anote como muda o tempo de extração."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dosing and distribution",
+     "g": "Fill the basket with the right amount of coffee and spread it evenly for a balanced shot.",
+     "p": [
+      "A typical double basket holds about 16 to 20 g of coffee; weighing your dose keeps every shot consistent.",
+      "Clumps and uneven piles leave weak spots, where water rushes through in a channel and the shot tastes thin or sour.",
+      "Break up clumps by stirring the grounds with a thin needle tool, then tap or level the basket gently."
+     ],
+     "q": "Do you like the idea of a careful, step-by-step routine before every espresso?",
+     "c": "Weigh your next espresso dose and stir the grounds gently before tamping; note if the shot runs more evenly."
+    },
+    "de": {
+     "t": "Dosieren und Verteilen",
+     "g": "Fülle das Sieb mit der richtigen Kaffeemenge und verteile sie gleichmäßig für einen ausgewogenen Bezug.",
+     "p": [
+      "Ein typisches Doppelsieb fasst etwa 16 bis 20 g Kaffee; wenn du die Dosis wiegst, bleibt jeder Bezug gleich.",
+      "Klumpen und ungleiche Häufchen lassen Schwachstellen, durch die Wasser in einem Kanal schießt: der Espresso wird dünn oder sauer.",
+      "Löse Klumpen, indem du das Pulver mit einem feinen Nadelwerkzeug umrührst, und klopf oder glätte dann sanft."
+     ],
+     "q": "Gefällt dir die Idee einer sorgfältigen Schritt-für-Schritt-Routine vor jedem Espresso?",
+     "c": "Wiege deine nächste Espressodosis und rühr das Pulver vor dem Tampen sanft um; läuft der Bezug gleichmäßiger?"
+    },
+    "es": {
+     "t": "Dosificación y distribución",
+     "g": "Llena el cestillo con la cantidad justa de café y repártela por igual para un espresso equilibrado.",
+     "p": [
+      "Un cestillo doble típico admite de 16 a 20 g de café; pesar la dosis hace que cada espresso sea constante.",
+      "Los grumos y montones desiguales dejan puntos débiles por donde el agua escapa en un canal y el café sabe flojo o ácido.",
+      "Deshaz los grumos removiendo el café con una herramienta de agujas finas y luego da unos golpecitos o nivela con suavidad."
+     ],
+     "q": "¿Te gusta la idea de una rutina cuidadosa, paso a paso, antes de cada espresso?",
+     "c": "Pesa la dosis de tu próximo espresso y remueve el café antes de prensar; fíjate si sale de forma más uniforme."
+    },
+    "fr": {
+     "t": "Dosage et distribution",
+     "g": "Remplis le panier avec la bonne quantité de café et répartis-la bien pour une extraction équilibrée.",
+     "p": [
+      "Un panier double contient en général 16 à 20 g de café ; peser la dose rend chaque espresso régulier.",
+      "Grumeaux et tas irréguliers créent des points faibles où l'eau file en un canal : l'espresso devient mince ou acide.",
+      "Casse les grumeaux en remuant la mouture avec un outil à fines aiguilles, puis tapote ou égalise doucement."
+     ],
+     "q": "L'idée d'une routine soignée, étape par étape, avant chaque espresso te plaît-elle ?",
+     "c": "Pèse la dose de ton prochain espresso et remue la mouture avant de tasser ; note si l'écoulement est plus régulier."
+    },
+    "it": {
+     "t": "Dosatura e distribuzione",
+     "g": "Riempi il filtro con la giusta quantità di caffè e distribuiscila in modo uniforme per un espresso equilibrato.",
+     "p": [
+      "Un tipico filtro doppio contiene circa 16-20 g di caffè; pesare la dose rende ogni espresso costante.",
+      "Grumi e mucchietti irregolari lasciano punti deboli in cui l'acqua corre in un canale e la tazzina sa di vuoto o di acido.",
+      "Rompi i grumi mescolando il macinato con un attrezzo ad aghi sottili, poi dai qualche colpetto o livella con delicatezza."
+     ],
+     "q": "Ti piace l'idea di una routine attenta, passo dopo passo, prima di ogni espresso?",
+     "c": "Pesa la dose del prossimo espresso e mescola il macinato prima di pressare; nota se l'estrazione è più uniforme."
+    },
+    "pt": {
+     "t": "Dose e distribuição",
+     "g": "Enche o filtro com a quantidade certa de café e espalha-a por igual para um espresso equilibrado.",
+     "p": [
+      "Um filtro duplo típico leva cerca de 16 a 20 g de café; pesar a dose torna cada espresso consistente.",
+      "Grumos e montinhos irregulares deixam pontos fracos por onde a água foge num canal, e o café sabe a fraco ou ácido.",
+      "Desfaz os grumos mexendo o café com uma ferramenta de agulhas finas e depois dá umas pancadinhas ou nivela com cuidado."
+     ],
+     "q": "Gostas da ideia de uma rotina cuidadosa, passo a passo, antes de cada espresso?",
+     "c": "Pesa a dose do próximo espresso e mexe o café antes de calcar; repara se a extração sai mais uniforme."
+    },
+    "pt_BR": {
+     "t": "Dose e distribuição",
+     "g": "Encha o filtro com a quantidade certa de café e espalhe por igual para uma dose equilibrada.",
+     "p": [
+      "Um filtro duplo típico leva cerca de 16 a 20 g de café; pesar a dose deixa cada espresso consistente.",
+      "Grumos e montinhos irregulares deixam pontos fracos por onde a água escapa num canal, e o café fica ralo ou azedo.",
+      "Desfaça os grumos mexendo o pó com uma ferramenta de agulhas finas e depois dê batidinhas ou nivele com cuidado."
+     ],
+     "q": "Você gosta da ideia de uma rotina cuidadosa, passo a passo, antes de cada espresso?",
+     "c": "Pese a dose do próximo espresso e mexa o pó antes de compactar; repare se a extração sai mais uniforme."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tamping",
+     "g": "Press the coffee bed level and firm so water flows through it evenly.",
+     "p": [
+      "The tamper compresses the grounds into a flat, firm puck so water cannot rush through loose gaps.",
+      "Being level matters more than pressing extra hard: a tilted puck lets water favour the thinner side.",
+      "Use the same firm pressure each time, then wipe loose grounds off the basket rim before locking it in."
+     ],
+     "q": "Does the idea of practising one small movement until it is perfect appeal to you?",
+     "c": "Tamp your next shot, then look at the puck from the side: is it level? Try to keep it level for three shots in a row."
+    },
+    "de": {
+     "t": "Tampen",
+     "g": "Drück das Kaffeebett eben und fest an, damit das Wasser gleichmäßig hindurchfließt.",
+     "p": [
+      "Der Tamper presst das Pulver zu einem flachen, festen Puck, damit Wasser nicht durch lose Lücken schießt.",
+      "Gerade zu tampen ist wichtiger als extra fest: Ein schiefer Puck lässt das Wasser die dünnere Seite bevorzugen.",
+      "Drück jedes Mal gleich fest und wisch loses Pulver vom Siebrand, bevor du den Siebträger einspannst."
+     ],
+     "q": "Reizt es dich, eine kleine Bewegung so lange zu üben, bis sie perfekt ist?",
+     "c": "Tampe deinen nächsten Shot und schau den Puck von der Seite an: Ist er eben? Schaffe das dreimal hintereinander."
+    },
+    "es": {
+     "t": "El prensado",
+     "g": "Presiona la cama de café nivelada y firme para que el agua la atraviese por igual.",
+     "p": [
+      "El tamper compacta el café en una pastilla plana y firme para que el agua no se cuele por huecos sueltos.",
+      "Que quede nivelada importa más que apretar muy fuerte: una pastilla inclinada hace que el agua vaya por el lado más fino.",
+      "Usa la misma presión firme cada vez y limpia el café suelto del borde del cestillo antes de encajarlo."
+     ],
+     "q": "¿Te atrae la idea de practicar un pequeño movimiento hasta que salga perfecto?",
+     "c": "Prensa tu próximo espresso y mira la pastilla de lado: ¿está nivelada? Intenta lograrlo tres veces seguidas."
+    },
+    "fr": {
+     "t": "Le tassage",
+     "g": "Tasse le lit de café bien à plat et fermement pour que l'eau le traverse de façon homogène.",
+     "p": [
+      "Le tamper compresse la mouture en une galette plate et ferme pour que l'eau ne file pas par des espaces lâches.",
+      "Être bien à plat compte plus que tasser très fort : une galette inclinée laisse l'eau privilégier le côté le plus fin.",
+      "Tasse avec la même pression ferme à chaque fois, puis essuie la mouture sur le bord du panier avant de l'enclencher."
+     ],
+     "q": "L'idée de répéter un petit geste jusqu'à ce qu'il soit parfait te plaît-elle ?",
+     "c": "Tasse ton prochain espresso et regarde la galette de côté : est-elle plate ? Réussis-le trois fois de suite."
+    },
+    "it": {
+     "t": "La pressatura",
+     "g": "Pressa il letto di caffè in modo piano e deciso perché l'acqua lo attraversi in modo uniforme.",
+     "p": [
+      "Il pressino compatta il macinato in un pannello piatto e saldo, così l'acqua non corre tra spazi vuoti.",
+      "Essere in piano conta più che premere fortissimo: un pannello inclinato fa passare l'acqua dal lato più sottile.",
+      "Usa ogni volta la stessa pressione decisa e pulisci il bordo del filtro dal macinato prima di agganciarlo."
+     ],
+     "q": "Ti piace l'idea di esercitarti in un piccolo gesto finché non è perfetto?",
+     "c": "Pressa il prossimo espresso e guarda il pannello di lato: è in piano? Prova a riuscirci tre volte di fila."
+    },
+    "pt": {
+     "t": "Calcar o café",
+     "g": "Calca a cama de café nivelada e firme para que a água a atravesse por igual.",
+     "p": [
+      "O calcador comprime o café numa pastilha plana e firme, para a água não fugir por espaços soltos.",
+      "Ficar nivelado importa mais do que calcar com muita força: uma pastilha inclinada faz a água ir pelo lado mais fino.",
+      "Usa sempre a mesma pressão firme e limpa o café solto da borda do filtro antes de encaixar o porta-filtro."
+     ],
+     "q": "Atrai-te a ideia de treinar um pequeno gesto até ficar perfeito?",
+     "c": "Calca o próximo espresso e olha para a pastilha de lado: está nivelada? Tenta conseguir isso três vezes seguidas."
+    },
+    "pt_BR": {
+     "t": "Compactação",
+     "g": "Compacte a cama de café nivelada e firme para que a água passe por igual.",
+     "p": [
+      "O tamper comprime o pó numa pastilha plana e firme, para a água não escapar por espaços soltos.",
+      "Ficar nivelado importa mais do que apertar com muita força: uma pastilha torta faz a água ir pelo lado mais fino.",
+      "Use sempre a mesma pressão firme e limpe o pó solto da borda do filtro antes de encaixar o porta-filtro."
+     ],
+     "q": "Te atrai a ideia de treinar um pequeno movimento até ficar perfeito?",
+     "c": "Compacte o próximo espresso e olhe a pastilha de lado: ela está nivelada? Tente conseguir isso três vezes seguidas."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pulling your first shot",
+     "g": "Learn the three numbers of espresso: dose, yield and time.",
+     "p": [
+      "Dose is the dry coffee in the basket, yield is the liquid espresso in the cup, and time is how long the shot runs.",
+      "A common starting recipe is 18 g of coffee in, about 36 g of espresso out, in roughly 25 to 30 seconds.",
+      "If the shot runs much faster, grind finer; if it runs much slower, grind coarser, then taste again."
+     ],
+     "q": "Do you enjoy following a recipe exactly, or do you like to adjust as you go?",
+     "c": "Pull a shot on a scale, write down dose, yield and time, and say in one word how it tastes."
+    },
+    "de": {
+     "t": "Dein erster Espresso",
+     "g": "Lerne die drei Zahlen des Espressos: Dosis, Ausbeute und Zeit.",
+     "p": [
+      "Dosis ist das Kaffeepulver im Sieb, Ausbeute der flüssige Espresso in der Tasse, Zeit die Dauer des Bezugs.",
+      "Ein gängiges Startrezept: 18 g Kaffee rein, etwa 36 g Espresso raus, in rund 25 bis 30 Sekunden.",
+      "Läuft er viel schneller, mahle feiner; läuft er viel langsamer, mahle gröber, und probiere dann erneut."
+     ],
+     "q": "Folgst du gern exakt einem Rezept, oder passt du lieber unterwegs an?",
+     "c": "Bezieh einen Espresso auf der Waage, notiere Dosis, Ausbeute und Zeit und beschreibe den Geschmack in einem Wort."
+    },
+    "es": {
+     "t": "Tu primer espresso",
+     "g": "Aprende los tres números del espresso: dosis, rendimiento y tiempo.",
+     "p": [
+      "La dosis es el café seco en el cestillo, el rendimiento es el espresso líquido en la taza y el tiempo, lo que tarda.",
+      "Una receta inicial habitual: 18 g de café de entrada, unos 36 g de espresso de salida, en 25 a 30 segundos.",
+      "Si sale mucho más rápido, muele más fino; si sale mucho más lento, más grueso, y vuelve a probar."
+     ],
+     "q": "¿Te gusta seguir una receta al pie de la letra o prefieres ajustar sobre la marcha?",
+     "c": "Prepara un espresso sobre la báscula, apunta dosis, rendimiento y tiempo y describe su sabor en una palabra."
+    },
+    "fr": {
+     "t": "Ton premier espresso",
+     "g": "Apprends les trois chiffres de l'espresso : la dose, le rendement et le temps.",
+     "p": [
+      "La dose est le café sec dans le panier, le rendement l'espresso liquide dans la tasse, et le temps la durée de l'extraction.",
+      "Une recette de départ courante : 18 g de café, environ 36 g d'espresso en tasse, en 25 à 30 secondes.",
+      "Si l'espresso coule bien plus vite, mouds plus fin ; s'il coule bien plus lentement, plus gros, puis regoûte."
+     ],
+     "q": "Aimes-tu suivre une recette à la lettre, ou préfères-tu ajuster en cours de route ?",
+     "c": "Fais un espresso sur une balance, note la dose, le rendement et le temps, et décris son goût en un mot."
+    },
+    "it": {
+     "t": "Il tuo primo espresso",
+     "g": "Impara i tre numeri dell'espresso: dose, resa e tempo.",
+     "p": [
+      "La dose è il caffè macinato nel filtro, la resa è l'espresso liquido in tazza e il tempo è la durata dell'estrazione.",
+      "Una ricetta di partenza comune: 18 g di caffè, circa 36 g di espresso in tazza, in circa 25-30 secondi.",
+      "Se scende molto più veloce, macina più fine; se scende molto più lento, più grosso, poi assaggia di nuovo."
+     ],
+     "q": "Ti piace seguire una ricetta alla lettera o preferisci aggiustare strada facendo?",
+     "c": "Fai un espresso sulla bilancia, annota dose, resa e tempo e descrivi il gusto con una parola."
+    },
+    "pt": {
+     "t": "O teu primeiro espresso",
+     "g": "Aprende os três números do espresso: dose, rendimento e tempo.",
+     "p": [
+      "A dose é o café seco no filtro, o rendimento é o espresso líquido na chávena e o tempo é quanto dura a extração.",
+      "Uma receita inicial comum: 18 g de café, cerca de 36 g de espresso na chávena, em 25 a 30 segundos.",
+      "Se sair muito mais depressa, mói mais fino; se sair muito mais devagar, mais grosso, e volta a provar."
+     ],
+     "q": "Gostas de seguir uma receita à letra ou preferes ir ajustando?",
+     "c": "Tira um espresso em cima da balança, aponta dose, rendimento e tempo e descreve o sabor numa palavra."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro espresso",
+     "g": "Aprenda os três números do espresso: dose, rendimento e tempo.",
+     "p": [
+      "A dose é o pó seco no filtro, o rendimento é o espresso líquido na xícara e o tempo é quanto dura a extração.",
+      "Uma receita inicial comum: 18 g de café, cerca de 36 g de espresso na xícara, em 25 a 30 segundos.",
+      "Se sair muito mais rápido, moa mais fino; se sair muito mais devagar, mais grosso, e prove de novo."
+     ],
+     "q": "Você gosta de seguir uma receita à risca ou prefere ir ajustando?",
+     "c": "Tire um espresso sobre a balança, anote dose, rendimento e tempo e descreva o sabor numa palavra."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading crema",
+     "g": "Find out what the golden foam on top of espresso can and cannot tell you.",
+     "p": [
+      "Crema is a foam of tiny gas bubbles, mostly carbon dioxide from roasting, held together by coffee oils.",
+      "Very fresh coffee gives more crema, and robusta blends make thick crema, so lots of crema is not proof of quality.",
+      "Taste is the real judge: a shot with thin crema can be delicious, and a thick one can still taste harsh."
+     ],
+     "q": "Did you think a thick crema always meant a better espresso?",
+     "c": "Taste a spoon of crema on its own, then stir the rest of the shot and taste again: what changes?"
+    },
+    "de": {
+     "t": "Die Crema lesen",
+     "g": "Erfahre, was der goldene Schaum auf dem Espresso verraten kann und was nicht.",
+     "p": [
+      "Crema ist ein Schaum aus winzigen Gasbläschen, meist Kohlendioxid aus der Röstung, gehalten von Kaffeeölen.",
+      "Sehr frischer Kaffee bildet mehr Crema, Robusta-Mischungen eine dicke; viel Crema beweist also keine Qualität.",
+      "Der Geschmack entscheidet: Ein Shot mit dünner Crema kann köstlich sein, einer mit dicker trotzdem hart schmecken."
+     ],
+     "q": "Dachtest du, dass dicke Crema immer einen besseren Espresso bedeutet?",
+     "c": "Probiere einen Löffel Crema allein, rühr dann den Rest um und probiere noch einmal: Was ändert sich?"
+    },
+    "es": {
+     "t": "Cómo leer la crema",
+     "g": "Descubre qué puede decirte y qué no la espuma dorada del espresso.",
+     "p": [
+      "La crema es una espuma de diminutas burbujas de gas, sobre todo dióxido de carbono del tueste, unidas por los aceites del café.",
+      "El café muy fresco da más crema, y las mezclas con robusta dan una crema espesa, así que mucha crema no garantiza calidad.",
+      "El sabor es el verdadero juez: un espresso con poca crema puede estar delicioso y uno con mucha puede saber áspero."
+     ],
+     "q": "¿Pensabas que una crema espesa siempre significaba un mejor espresso?",
+     "c": "Prueba una cucharadita de crema sola, luego remueve el resto del espresso y vuelve a probar: ¿qué cambia?"
+    },
+    "fr": {
+     "t": "Lire la crema",
+     "g": "Découvre ce que la mousse dorée de l'espresso peut t'apprendre, et ce qu'elle ne dit pas.",
+     "p": [
+      "La crema est une mousse de minuscules bulles de gaz, surtout du gaz carbonique de torréfaction, liées par les huiles du café.",
+      "Un café très frais donne plus de crema, les mélanges avec robusta une crema épaisse : beaucoup de crema ne prouve rien.",
+      "Le goût reste le vrai juge : une crema fine peut être délicieuse, une crema épaisse peut cacher un goût dur."
+     ],
+     "q": "Pensais-tu qu'une crema épaisse voulait toujours dire un meilleur espresso ?",
+     "c": "Goûte une cuillère de crema seule, puis remue le reste de l'espresso et goûte encore : qu'est-ce qui change ?"
+    },
+    "it": {
+     "t": "Leggere la crema",
+     "g": "Scopri cosa può dirti e cosa no la schiuma dorata sopra l'espresso.",
+     "p": [
+      "La crema è una schiuma di minuscole bolle di gas, soprattutto anidride carbonica della tostatura, tenute insieme dagli oli.",
+      "Il caffè molto fresco fa più crema e le miscele con robusta una crema spessa, quindi tanta crema non garantisce qualità.",
+      "Il vero giudice è il gusto: un espresso con poca crema può essere ottimo, uno con tanta può essere aspro."
+     ],
+     "q": "Pensavi che una crema spessa volesse sempre dire un espresso migliore?",
+     "c": "Assaggia un cucchiaino di sola crema, poi mescola il resto dell'espresso e assaggia di nuovo: cosa cambia?"
+    },
+    "pt": {
+     "t": "Ler a crema",
+     "g": "Descobre o que a espuma dourada do espresso te pode dizer, e o que não pode.",
+     "p": [
+      "A crema é uma espuma de bolhas minúsculas de gás, sobretudo dióxido de carbono da torra, unidas pelos óleos do café.",
+      "Café muito fresco dá mais crema e lotes com robusta dão crema espessa, por isso muita crema não prova qualidade.",
+      "O sabor é o verdadeiro juiz: um espresso com pouca crema pode ser delicioso e um com muita pode ser áspero."
+     ],
+     "q": "Achavas que uma crema espessa significava sempre um espresso melhor?",
+     "c": "Prova uma colher de crema sozinha, depois mexe o resto do espresso e prova outra vez: o que muda?"
+    },
+    "pt_BR": {
+     "t": "Lendo a crema",
+     "g": "Descubra o que a espuma dourada do espresso pode te dizer, e o que não pode.",
+     "p": [
+      "A crema é uma espuma de bolhinhas de gás, principalmente gás carbônico da torra, unidas pelos óleos do café.",
+      "Café bem fresco faz mais crema e blends com robusta fazem crema grossa, então muita crema não prova qualidade.",
+      "O sabor é o verdadeiro juiz: um espresso com pouca crema pode ser delicioso e um com muita pode ser áspero."
+     ],
+     "q": "Você achava que uma crema grossa sempre significava um espresso melhor?",
+     "c": "Prove uma colher só de crema, depois mexa o resto do espresso e prove de novo: o que muda?"
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sour or bitter shots",
+     "g": "Recognise under- and over-extraction in espresso and know how to fix them.",
+     "p": [
+      "An under-extracted shot runs fast and tastes sour, salty or thin, because too little was dissolved from the coffee.",
+      "An over-extracted shot runs slow and tastes bitter, dry or ashy, because too much was pulled out.",
+      "To fix sour shots, grind finer or pull a little longer; for bitter shots, grind coarser or stop a bit sooner."
+     ],
+     "q": "Which do you notice more easily in a coffee: sourness or bitterness?",
+     "c": "Pull one shot a bit short and one a bit long, taste both and decide which is sour and which is bitter."
+    },
+    "de": {
+     "t": "Saurer oder bitterer Espresso",
+     "g": "Erkenne Unter- und Überextraktion beim Espresso und wisse, wie du sie behebst.",
+     "p": [
+      "Ein unterextrahierter Shot läuft schnell und schmeckt sauer, salzig oder dünn, weil zu wenig gelöst wurde.",
+      "Ein überextrahierter Shot läuft langsam und schmeckt bitter, trocken oder aschig, weil zu viel gelöst wurde.",
+      "Gegen sauer: feiner mahlen oder etwas länger beziehen; gegen bitter: gröber mahlen oder etwas früher stoppen."
+     ],
+     "q": "Was bemerkst du in einem Kaffee leichter: Säure oder Bitterkeit?",
+     "c": "Bezieh einen Shot etwas kürzer und einen etwas länger, probiere beide und entscheide, welcher sauer und welcher bitter ist."
+    },
+    "es": {
+     "t": "Espressos ácidos o amargos",
+     "g": "Reconoce la subextracción y la sobreextracción en el espresso y aprende a corregirlas.",
+     "p": [
+      "Un espresso subextraído sale rápido y sabe ácido, salado o flojo, porque se disolvió demasiado poco del café.",
+      "Un espresso sobreextraído sale lento y sabe amargo, seco o a ceniza, porque se extrajo demasiado.",
+      "Para el ácido, muele más fino o alarga un poco; para el amargo, muele más grueso o corta un poco antes."
+     ],
+     "q": "¿Qué notas con más facilidad en un café: la acidez o el amargor?",
+     "c": "Prepara un espresso un poco corto y otro un poco largo, pruébalos y decide cuál es ácido y cuál amargo."
+    },
+    "fr": {
+     "t": "Espressos acides ou amers",
+     "g": "Reconnais la sous-extraction et la sur-extraction dans l'espresso et sache les corriger.",
+     "p": [
+      "Un espresso sous-extrait coule vite et paraît acide, salé ou mince, car trop peu de matière a été dissoute.",
+      "Un espresso sur-extrait coule lentement et paraît amer, sec ou cendré, car on en a trop extrait.",
+      "Contre l'acidité, mouds plus fin ou allonge un peu ; contre l'amertume, mouds plus gros ou arrête un peu plus tôt."
+     ],
+     "q": "Que remarques-tu plus facilement dans un café : l'acidité ou l'amertume ?",
+     "c": "Fais un espresso un peu court et un autre un peu long, goûte-les et décide lequel est acide et lequel est amer."
+    },
+    "it": {
+     "t": "Espresso acidi o amari",
+     "g": "Riconosci sottoestrazione e sovraestrazione nell'espresso e impara a correggerle.",
+     "p": [
+      "Un espresso sottoestratto scende veloce e sa di acido, salato o vuoto, perché si è sciolto troppo poco.",
+      "Un espresso sovraestratto scende lento e sa di amaro, secco o cenere, perché si è estratto troppo.",
+      "Per l'acido macina più fine o allunga un po'; per l'amaro macina più grosso o fermati un po' prima."
+     ],
+     "q": "Cosa noti più facilmente in un caffè: l'acidità o l'amarezza?",
+     "c": "Fai un espresso un po' corto e uno un po' lungo, assaggiali e decidi quale è acido e quale amaro."
+    },
+    "pt": {
+     "t": "Espressos ácidos ou amargos",
+     "g": "Reconhece a subextração e a sobre-extração no espresso e aprende a corrigi-las.",
+     "p": [
+      "Um espresso subextraído sai depressa e sabe a ácido, salgado ou fraco, porque se dissolveu pouco do café.",
+      "Um espresso sobre-extraído sai devagar e sabe a amargo, seco ou cinza, porque se extraiu demasiado.",
+      "Para o ácido, mói mais fino ou prolonga um pouco; para o amargo, mói mais grosso ou para um pouco antes."
+     ],
+     "q": "O que notas com mais facilidade num café: a acidez ou o amargor?",
+     "c": "Tira um espresso um pouco curto e outro um pouco longo, prova os dois e decide qual é ácido e qual é amargo."
+    },
+    "pt_BR": {
+     "t": "Espresso azedo ou amargo",
+     "g": "Reconheça a subextração e a superextração no espresso e saiba corrigir cada uma.",
+     "p": [
+      "Um espresso subextraído sai rápido e fica azedo, salgado ou ralo, porque pouco do café foi dissolvido.",
+      "Um espresso superextraído sai devagar e fica amargo, seco ou com gosto de cinza, porque extraiu demais.",
+      "Para o azedo, moa mais fino ou estenda um pouco; para o amargo, moa mais grosso ou pare um pouco antes."
+     ],
+     "q": "O que você percebe com mais facilidade num café: o azedo ou o amargo?",
+     "c": "Tire um espresso um pouco curto e outro um pouco longo, prove os dois e decida qual é azedo e qual é amargo."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ristretto and lungo",
+     "g": "Taste the difference between shorter and longer espresso shots.",
+     "p": [
+      "A ristretto, 'restricted' in Italian, uses the same dose but less water, giving a shorter, sweeter, more syrupy shot.",
+      "A lungo, 'long', lets more water through the same coffee, giving a bigger, lighter cup with more bitterness.",
+      "Both start from the same grounds; only the amount of liquid in the cup, and so the extraction, changes."
+     ],
+     "q": "Would you choose a short, intense ristretto or a longer, gentler lungo?",
+     "c": "Pull or order a ristretto and a lungo of the same coffee and describe how sweetness and bitterness change."
+    },
+    "de": {
+     "t": "Ristretto und Lungo",
+     "g": "Schmecke den Unterschied zwischen kürzeren und längeren Espressobezügen.",
+     "p": [
+      "Ein Ristretto, italienisch für ‚eingeschränkt‘, nutzt die gleiche Dosis mit weniger Wasser: kürzer, süßer, sirupartiger.",
+      "Ein Lungo, ‚lang‘, lässt mehr Wasser durch denselben Kaffee: eine größere, leichtere Tasse mit mehr Bitterkeit.",
+      "Beide starten mit demselben Pulver; nur die Flüssigkeitsmenge in der Tasse und damit die Extraktion ändern sich."
+     ],
+     "q": "Würdest du einen kurzen, intensiven Ristretto oder einen längeren, sanfteren Lungo wählen?",
+     "c": "Bezieh oder bestell Ristretto und Lungo vom selben Kaffee und beschreibe, wie sich Süße und Bitterkeit verändern."
+    },
+    "es": {
+     "t": "Ristretto y lungo",
+     "g": "Prueba la diferencia entre espressos más cortos y más largos.",
+     "p": [
+      "El ristretto, 'restringido' en italiano, usa la misma dosis con menos agua: un trago más corto, dulce y almibarado.",
+      "El lungo, 'largo', deja pasar más agua por el mismo café: una taza mayor, más ligera y con más amargor.",
+      "Ambos parten del mismo café molido; solo cambia la cantidad de líquido en la taza y, con ella, la extracción."
+     ],
+     "q": "¿Elegirías un ristretto corto e intenso o un lungo más largo y suave?",
+     "c": "Prepara o pide un ristretto y un lungo del mismo café y describe cómo cambian el dulzor y el amargor."
+    },
+    "fr": {
+     "t": "Ristretto et lungo",
+     "g": "Goûte la différence entre des espressos plus courts et plus longs.",
+     "p": [
+      "Le ristretto, « restreint » en italien, garde la même dose avec moins d'eau : plus court, plus doux et sirupeux.",
+      "Le lungo, « long », fait passer plus d'eau sur le même café : une tasse plus grande, plus légère et plus amère.",
+      "Les deux partent de la même mouture ; seule la quantité de liquide en tasse, donc l'extraction, change."
+     ],
+     "q": "Choisirais-tu un ristretto court et intense ou un lungo plus long et doux ?",
+     "c": "Prépare ou commande un ristretto et un lungo du même café et décris comment évoluent douceur et amertume."
+    },
+    "it": {
+     "t": "Ristretto e lungo",
+     "g": "Assaggia la differenza tra espresso più corti e più lunghi.",
+     "p": [
+      "Il ristretto usa la stessa dose ma meno acqua: una tazzina più corta, dolce e quasi sciropposa.",
+      "Il lungo fa passare più acqua attraverso lo stesso caffè: una tazza più grande, più leggera e con più amarezza.",
+      "Entrambi partono dallo stesso macinato; cambia solo la quantità di liquido in tazza e quindi l'estrazione."
+     ],
+     "q": "Sceglieresti un ristretto corto e intenso o un lungo più ampio e delicato?",
+     "c": "Prepara o ordina un ristretto e un lungo dello stesso caffè e descrivi come cambiano dolcezza e amarezza."
+    },
+    "pt": {
+     "t": "Ristretto e lungo",
+     "g": "Prova a diferença entre espressos mais curtos e mais longos.",
+     "p": [
+      "O ristretto, 'restrito' em italiano, usa a mesma dose com menos água: mais curto, doce e quase xaroposo; em Portugal é a bica curta.",
+      "O lungo, 'longo', deixa passar mais água pelo mesmo café: uma chávena maior, mais leve e mais amarga, como a bica cheia.",
+      "Ambos partem do mesmo café moído; só muda a quantidade de líquido na chávena e, com ela, a extração."
+     ],
+     "q": "Escolhias um ristretto curto e intenso ou um lungo mais longo e suave?",
+     "c": "Tira ou pede um ristretto e um lungo do mesmo café e descreve como mudam a doçura e o amargor."
+    },
+    "pt_BR": {
+     "t": "Ristretto e lungo",
+     "g": "Prove a diferença entre doses de espresso mais curtas e mais longas.",
+     "p": [
+      "O ristretto, 'restrito' em italiano, usa a mesma dose com menos água: mais curto, doce e quase xaroposo.",
+      "O lungo, 'longo', deixa passar mais água pelo mesmo café: uma xícara maior, mais leve e mais amarga.",
+      "Os dois partem do mesmo pó; só muda a quantidade de líquido na xícara e, com ela, a extração."
+     ],
+     "q": "Você escolheria um ristretto curto e intenso ou um lungo mais longo e suave?",
+     "c": "Tire ou peça um ristretto e um lungo do mesmo café e descreva como mudam a doçura e o amargor."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Americano and the long black",
+     "g": "Compare two drinks of espresso with hot water, made in opposite orders.",
+     "p": [
+      "An Americano is espresso topped up with hot water, giving a drink closer in strength to filter coffee.",
+      "A long black, popular in Australia and New Zealand, pours the espresso onto hot water, so more crema stays on top.",
+      "A popular story says the Americano is named after American soldiers in Italy who diluted espresso to taste like home."
+     ],
+     "q": "Do you prefer your coffee short and strong, or long and easy to sip?",
+     "c": "Make an Americano and a long black with the same espresso and compare aroma and crema."
+    },
+    "de": {
+     "t": "Americano und Long Black",
+     "g": "Vergleiche zwei Getränke aus Espresso und heißem Wasser, in umgekehrter Reihenfolge zubereitet.",
+     "p": [
+      "Ein Americano ist Espresso, mit heißem Wasser aufgegossen; seine Stärke ähnelt eher Filterkaffee.",
+      "Beim Long Black, beliebt in Australien und Neuseeland, kommt der Espresso aufs heiße Wasser, so bleibt mehr Crema oben.",
+      "Einer beliebten Geschichte nach ist der Americano nach US-Soldaten in Italien benannt, die Espresso verdünnten."
+     ],
+     "q": "Magst du deinen Kaffee lieber kurz und kräftig oder lang und leicht zu trinken?",
+     "c": "Mach mit demselben Espresso einen Americano und einen Long Black und vergleiche Aroma und Crema."
+    },
+    "es": {
+     "t": "El americano y el long black",
+     "g": "Compara dos bebidas de espresso con agua caliente, hechas en orden opuesto.",
+     "p": [
+      "El americano es un espresso al que se añade agua caliente, con una intensidad más parecida a un café de filtro.",
+      "El long black, popular en Australia y Nueva Zelanda, vierte el espresso sobre el agua, así que conserva más crema.",
+      "Una historia popular dice que el americano debe su nombre a soldados estadounidenses en Italia que alargaban el espresso."
+     ],
+     "q": "¿Prefieres el café corto e intenso o largo y fácil de beber?",
+     "c": "Prepara un americano y un long black con el mismo espresso y compara el aroma y la crema."
+    },
+    "fr": {
+     "t": "L'americano et le long black",
+     "g": "Compare deux boissons d'espresso et d'eau chaude, préparées dans l'ordre inverse.",
+     "p": [
+      "L'americano est un espresso allongé d'eau chaude, d'une intensité plus proche d'un café filtre.",
+      "Le long black, apprécié en Australie et en Nouvelle-Zélande, verse l'espresso sur l'eau chaude : plus de crema reste en surface.",
+      "Selon une histoire populaire, l'americano doit son nom aux soldats américains en Italie qui allongeaient l'espresso."
+     ],
+     "q": "Préfères-tu un café court et intense, ou long et facile à boire ?",
+     "c": "Prépare un americano et un long black avec le même espresso et compare l'arôme et la crema."
+    },
+    "it": {
+     "t": "L'americano e il long black",
+     "g": "Confronta due bevande di espresso e acqua calda, preparate in ordine opposto.",
+     "p": [
+      "L'americano è un espresso allungato con acqua calda, con un'intensità più vicina al caffè filtro.",
+      "Il long black, diffuso in Australia e Nuova Zelanda, versa l'espresso sull'acqua calda, così resta più crema in superficie.",
+      "Secondo una storia popolare, l'americano prende il nome dai soldati americani in Italia che allungavano l'espresso."
+     ],
+     "q": "Preferisci il caffè corto e intenso o lungo e facile da sorseggiare?",
+     "c": "Prepara un americano e un long black con lo stesso espresso e confronta aroma e crema."
+    },
+    "pt": {
+     "t": "O americano e o long black",
+     "g": "Compara duas bebidas de espresso com água quente, feitas por ordem inversa.",
+     "p": [
+      "O americano é um espresso a que se junta água quente, com uma intensidade mais próxima do café de filtro.",
+      "O long black, popular na Austrália e na Nova Zelândia, verte o espresso sobre a água quente, e fica mais crema à superfície.",
+      "Conta uma história popular que o americano deve o nome a soldados americanos em Itália que diluíam o espresso."
+     ],
+     "q": "Preferes o café curto e intenso, ou longo e fácil de beber?",
+     "c": "Faz um americano e um long black com o mesmo espresso e compara o aroma e a crema."
+    },
+    "pt_BR": {
+     "t": "O americano e o long black",
+     "g": "Compare duas bebidas de espresso com água quente, feitas em ordem inversa.",
+     "p": [
+      "O americano é um espresso completado com água quente, com intensidade mais parecida com a de um coado.",
+      "O long black, popular na Austrália e na Nova Zelândia, despeja o espresso sobre a água quente, e sobra mais crema por cima.",
+      "Uma história popular diz que o americano tem esse nome por causa de soldados americanos na Itália que diluíam o espresso."
+     ],
+     "q": "Você prefere café curto e intenso, ou longo e fácil de tomar?",
+     "c": "Faça um americano e um long black com o mesmo espresso e compare o aroma e a crema."
+    }
+   }
+  }
+ ]
+}

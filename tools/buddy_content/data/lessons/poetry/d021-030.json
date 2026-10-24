@@ -1,0 +1,835 @@
+{
+ "topic": "poetry",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personification",
+     "g": "Give human qualities to objects, animals or weather.",
+     "p": [
+      "Personification lets things act like people: the wind hums, the kettle sighs.",
+      "Choose a human action that fits the object's real behaviour.",
+      "It makes the world feel alive and friendly on the page."
+     ],
+     "q": "Which object in your home would have the funniest personality?",
+     "c": "Write three lines where the weather outside your window behaves like a person."
+    },
+    "de": {
+     "t": "Personifikation",
+     "g": "Verleihe Gegenständen, Tieren oder Wetter menschliche Eigenschaften.",
+     "p": [
+      "Durch Personifikation handeln Dinge wie Menschen: Der Wind summt, der Kessel seufzt.",
+      "Wähle eine menschliche Handlung, die zum echten Verhalten des Dings passt.",
+      "So wirkt die Welt auf dem Papier lebendig und freundlich."
+     ],
+     "q": "Welcher Gegenstand bei dir zu Hause hätte die lustigste Persönlichkeit?",
+     "c": "Schreibe drei Zeilen, in denen das Wetter vor deinem Fenster wie ein Mensch handelt."
+    },
+    "es": {
+     "t": "La personificación",
+     "g": "Da cualidades humanas a objetos, animales o al clima.",
+     "p": [
+      "Con la personificación las cosas actúan como personas: el viento canturrea, la tetera suspira.",
+      "Elige una acción humana que encaje con el comportamiento real del objeto.",
+      "Hace que el mundo se sienta vivo y cercano en la página."
+     ],
+     "q": "¿Qué objeto de tu casa tendría la personalidad más divertida?",
+     "c": "Escribe tres versos en los que el tiempo de tu ventana actúe como una persona."
+    },
+    "fr": {
+     "t": "La personnification",
+     "g": "Donner des qualités humaines à des objets, des animaux ou au temps qu'il fait.",
+     "p": [
+      "Avec elle, les choses agissent comme des gens : le vent fredonne, la bouilloire soupire.",
+      "Choisis une action humaine qui colle au vrai comportement de l'objet.",
+      "Elle rend le monde vivant et chaleureux sur la page."
+     ],
+     "q": "Quel objet de ta maison aurait la personnalité la plus drôle ?",
+     "c": "Écris trois vers où le temps qu'il fait derrière ta fenêtre agit comme une personne."
+    },
+    "it": {
+     "t": "La personificazione",
+     "g": "Dai qualità umane a oggetti, animali o al tempo atmosferico.",
+     "p": [
+      "Con la personificazione le cose agiscono come persone: il vento canticchia, il bollitore sospira.",
+      "Scegli un'azione umana che si adatti al vero comportamento dell'oggetto.",
+      "Rende il mondo vivo e amichevole sulla pagina."
+     ],
+     "q": "Quale oggetto di casa tua avrebbe la personalità più buffa?",
+     "c": "Scrivi tre versi in cui il tempo fuori dalla tua finestra si comporta come una persona."
+    },
+    "pt": {
+     "t": "A personificação",
+     "g": "Dá qualidades humanas a objetos, animais ou ao tempo.",
+     "p": [
+      "Com a personificação as coisas agem como pessoas: o vento cantarola, a chaleira suspira.",
+      "Escolhe uma ação humana que combine com o comportamento real do objeto.",
+      "Faz o mundo parecer vivo e acolhedor na página."
+     ],
+     "q": "Que objeto da tua casa teria a personalidade mais divertida?",
+     "c": "Escreve três versos em que o tempo lá fora à tua janela age como uma pessoa."
+    },
+    "pt_BR": {
+     "t": "A personificação",
+     "g": "Dê qualidades humanas a objetos, animais ou ao clima.",
+     "p": [
+      "Com a personificação as coisas agem como gente: o vento cantarola, a chaleira suspira.",
+      "Escolha uma ação humana que combine com o comportamento real do objeto.",
+      "Ela faz o mundo parecer vivo e acolhedor na página."
+     ],
+     "q": "Que objeto da sua casa teria a personalidade mais divertida?",
+     "c": "Escreva três versos em que o tempo lá fora da sua janela age como uma pessoa."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh comparisons",
+     "g": "Avoid worn-out comparisons and find surprising ones of your own.",
+     "p": [
+      "Clichés like busy as a bee or white as snow no longer surprise anyone.",
+      "Look at your real subject closely and ask what it truly resembles.",
+      "Draw comparisons from your own life, job, hobbies or culture."
+     ],
+     "q": "Which cliché do you hear so often that it makes you smile?",
+     "c": "Take three clichés and rewrite each with a fresh comparison from your own world."
+    },
+    "de": {
+     "t": "Frische Vergleiche",
+     "g": "Vermeide abgenutzte Vergleiche und finde eigene, überraschende.",
+     "p": [
+      "Klischees wie fleißig wie eine Biene oder weiß wie Schnee überraschen niemanden mehr.",
+      "Schau dein Thema genau an und frag, wem es wirklich ähnelt.",
+      "Nimm Vergleiche aus deinem Leben, Beruf, Hobby oder deiner Kultur."
+     ],
+     "q": "Welches Klischee hörst du so oft, dass es dich zum Lächeln bringt?",
+     "c": "Nimm drei Klischees und schreibe jedes mit einem frischen Vergleich aus deiner Welt neu."
+    },
+    "es": {
+     "t": "Comparaciones frescas",
+     "g": "Evita comparaciones gastadas y encuentra otras sorprendentes y tuyas.",
+     "p": [
+      "Clichés como blanco como la nieve ya no sorprenden a nadie.",
+      "Observa de cerca tu tema y pregúntate a qué se parece de verdad.",
+      "Saca comparaciones de tu vida, tu trabajo, tus aficiones o tu cultura."
+     ],
+     "q": "¿Qué cliché oyes tan a menudo que te hace sonreír?",
+     "c": "Toma tres clichés y reescribe cada uno con una comparación nueva de tu mundo."
+    },
+    "fr": {
+     "t": "Des comparaisons neuves",
+     "g": "Éviter les comparaisons usées et en trouver de surprenantes, bien à toi.",
+     "p": [
+      "Les clichés comme blanc comme neige ne surprennent plus personne.",
+      "Regarde ton sujet de près et demande-toi à quoi il ressemble vraiment.",
+      "Puise tes comparaisons dans ta vie, ton métier, tes loisirs ou ta culture."
+     ],
+     "q": "Quel cliché entends-tu si souvent qu'il te fait sourire ?",
+     "c": "Prends trois clichés et réécris chacun avec une comparaison neuve tirée de ton monde."
+    },
+    "it": {
+     "t": "Paragoni freschi",
+     "g": "Evita paragoni consumati e trovane di sorprendenti e tuoi.",
+     "p": [
+      "Cliché come bianco come la neve non sorprendono più nessuno.",
+      "Osserva da vicino il soggetto e chiediti a che cosa somiglia davvero.",
+      "Prendi i paragoni dalla tua vita, dal lavoro, dagli hobby o dalla tua cultura."
+     ],
+     "q": "Quale cliché senti così spesso da farti sorridere?",
+     "c": "Prendi tre cliché e riscrivili con un paragone nuovo preso dal tuo mondo."
+    },
+    "pt": {
+     "t": "Comparações frescas",
+     "g": "Evita comparações gastas e encontra outras surpreendentes e tuas.",
+     "p": [
+      "Clichés como branco como a neve já não surpreendem ninguém.",
+      "Olha de perto para o teu tema e pergunta a que se parece mesmo.",
+      "Tira comparações da tua vida, do trabalho, dos passatempos ou da tua cultura."
+     ],
+     "q": "Que cliché ouves tantas vezes que te faz sorrir?",
+     "c": "Pega em três clichés e reescreve cada um com uma comparação nova do teu mundo."
+    },
+    "pt_BR": {
+     "t": "Comparações frescas",
+     "g": "Evite comparações batidas e encontre outras surpreendentes e suas.",
+     "p": [
+      "Clichês como branco como a neve já não surpreendem ninguém.",
+      "Olhe de perto para o seu tema e pergunte com o que ele realmente se parece.",
+      "Tire comparações da sua vida, do trabalho, dos hobbies ou da sua cultura."
+     ],
+     "q": "Que clichê você ouve tanto que até faz você sorrir?",
+     "c": "Pegue três clichês e reescreva cada um com uma comparação nova do seu mundo."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hyperbole for fun",
+     "g": "Use playful exaggeration to add energy and humour to a poem.",
+     "p": [
+      "Hyperbole is exaggeration on purpose: I have told you a million times.",
+      "It works best when the reader knows it is a joke or a burst of feeling.",
+      "Use it once or twice in a poem so it keeps its punch."
+     ],
+     "q": "What is the funniest exaggeration you or your family often use?",
+     "c": "Write a four-line poem about your favourite food using big, joyful exaggerations."
+    },
+    "de": {
+     "t": "Übertreibung mit Spaß",
+     "g": "Nutze spielerische Übertreibung für Schwung und Humor im Gedicht.",
+     "p": [
+      "Die Hyperbel übertreibt absichtlich: Ich hab es dir tausendmal gesagt.",
+      "Sie wirkt am besten, wenn der Leser den Witz oder das Gefühl erkennt.",
+      "Setze sie ein- oder zweimal ein, damit sie ihre Wirkung behält."
+     ],
+     "q": "Welche lustige Übertreibung benutzt du oder deine Familie oft?",
+     "c": "Schreibe ein Vierzeiler-Gedicht über dein Lieblingsessen voller fröhlicher Übertreibungen."
+    },
+    "es": {
+     "t": "La hipérbole divertida",
+     "g": "Usa la exageración juguetona para dar energía y humor a un poema.",
+     "p": [
+      "La hipérbole exagera a propósito: te lo he dicho un millón de veces.",
+      "Funciona mejor cuando el lector reconoce la broma o el arrebato.",
+      "Úsala una o dos veces por poema para que no pierda fuerza."
+     ],
+     "q": "¿Cuál es la exageración más divertida que usas tú o tu familia?",
+     "c": "Escribe un poema de cuatro versos sobre tu comida favorita con exageraciones alegres."
+    },
+    "fr": {
+     "t": "L'hyperbole pour rire",
+     "g": "Utiliser l'exagération ludique pour donner énergie et humour à un poème.",
+     "p": [
+      "L'hyperbole exagère exprès : je te l'ai dit mille fois.",
+      "Elle marche mieux quand le lecteur sent la blague ou l'élan du cœur.",
+      "Utilise-la une ou deux fois par poème pour qu'elle garde sa force."
+     ],
+     "q": "Quelle exagération amusante toi ou ta famille utilisez souvent ?",
+     "c": "Écris un poème de quatre vers sur ton plat préféré avec de joyeuses exagérations."
+    },
+    "it": {
+     "t": "L'iperbole per divertirsi",
+     "g": "Usa l'esagerazione giocosa per dare energia e umorismo a una poesia.",
+     "p": [
+      "L'iperbole esagera apposta: te l'ho detto un milione di volte.",
+      "Funziona meglio quando il lettore capisce lo scherzo o lo slancio.",
+      "Usala una o due volte per poesia, così resta incisiva."
+     ],
+     "q": "Qual è l'esagerazione più buffa che usi tu o la tua famiglia?",
+     "c": "Scrivi una poesia di quattro versi sul tuo piatto preferito con esagerazioni allegre."
+    },
+    "pt": {
+     "t": "A hipérbole divertida",
+     "g": "Usa o exagero brincalhão para dar energia e humor a um poema.",
+     "p": [
+      "A hipérbole exagera de propósito: já te disse isto um milhão de vezes.",
+      "Resulta melhor quando o leitor percebe a brincadeira ou o entusiasmo.",
+      "Usa-a uma ou duas vezes por poema para manter a força."
+     ],
+     "q": "Qual é o exagero mais engraçado que tu ou a tua família usam?",
+     "c": "Escreve um poema de quatro versos sobre a tua comida preferida com exageros alegres."
+    },
+    "pt_BR": {
+     "t": "A hipérbole divertida",
+     "g": "Use o exagero brincalhão para dar energia e humor a um poema.",
+     "p": [
+      "A hipérbole exagera de propósito: já te falei isso um milhão de vezes.",
+      "Funciona melhor quando o leitor percebe a brincadeira ou o entusiasmo.",
+      "Use uma ou duas vezes por poema para não perder a força."
+     ],
+     "q": "Qual é o exagero mais engraçado que você ou sua família usam?",
+     "c": "Escreva um poema de quatro versos sobre sua comida favorita com exageros alegres."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: images and comparisons",
+     "g": "Lightly review images, lines, stanzas and figurative language.",
+     "p": [
+      "Images use the five senses and specific words to show, not tell.",
+      "Lines, breaks, stanzas and white space shape how a poem is read.",
+      "Similes, metaphors and personification create fresh connections."
+     ],
+     "q": "Which tool from the past weeks do you enjoy using most?",
+     "c": "Revise one poem from your notebook: sharpen one image and fix one line break."
+    },
+    "de": {
+     "t": "Rückblick: Bilder und Vergleiche",
+     "g": "Wiederhole locker Bilder, Zeilen, Strophen und bildhafte Sprache.",
+     "p": [
+      "Bilder nutzen die fünf Sinne und genaue Wörter, um zu zeigen statt zu erklären.",
+      "Zeilen, Umbrüche, Strophen und Weißraum prägen, wie ein Gedicht gelesen wird.",
+      "Vergleich, Metapher und Personifikation schaffen frische Verbindungen."
+     ],
+     "q": "Welches Werkzeug der letzten Wochen benutzt du am liebsten?",
+     "c": "Überarbeite ein Gedicht aus deinem Notizbuch: schärfe ein Bild und verbessere einen Umbruch."
+    },
+    "es": {
+     "t": "Repaso: imágenes y comparaciones",
+     "g": "Repasa sin prisa imágenes, versos, estrofas y lenguaje figurado.",
+     "p": [
+      "Las imágenes usan los cinco sentidos y palabras precisas para mostrar.",
+      "Versos, cortes, estrofas y espacio en blanco moldean la lectura.",
+      "Símil, metáfora y personificación crean conexiones nuevas."
+     ],
+     "q": "¿Qué herramienta de estas semanas te gusta más usar?",
+     "c": "Revisa un poema de tu cuaderno: afina una imagen y mejora un corte de verso."
+    },
+    "fr": {
+     "t": "Révision : images et comparaisons",
+     "g": "Réviser en douceur images, vers, strophes et langage figuré.",
+     "p": [
+      "Les images utilisent les cinq sens et des mots précis pour montrer.",
+      "Vers, coupes, strophes et blancs façonnent la lecture d'un poème.",
+      "Comparaison, métaphore et personnification créent des liens neufs."
+     ],
+     "q": "Quel outil de ces dernières semaines préfères-tu utiliser ?",
+     "c": "Révise un poème de ton carnet : affine une image et améliore une coupe de vers."
+    },
+    "it": {
+     "t": "Ripasso: immagini e paragoni",
+     "g": "Ripassa con calma immagini, versi, strofe e linguaggio figurato.",
+     "p": [
+      "Le immagini usano i cinque sensi e parole precise per mostrare.",
+      "Versi, a capo, strofe e spazi bianchi guidano la lettura.",
+      "Similitudine, metafora e personificazione creano legami nuovi."
+     ],
+     "q": "Quale strumento di queste settimane ti piace di più usare?",
+     "c": "Rivedi una poesia del quaderno: rendi più nitida un'immagine e migliora un a capo."
+    },
+    "pt": {
+     "t": "Revisão: imagens e comparações",
+     "g": "Revê com calma imagens, versos, estrofes e linguagem figurada.",
+     "p": [
+      "As imagens usam os cinco sentidos e palavras precisas para mostrar.",
+      "Versos, quebras, estrofes e espaço em branco moldam a leitura.",
+      "Comparação, metáfora e personificação criam ligações novas."
+     ],
+     "q": "Que ferramenta destas semanas gostas mais de usar?",
+     "c": "Revê um poema do teu caderno: afina uma imagem e melhora uma quebra de verso."
+    },
+    "pt_BR": {
+     "t": "Revisão: imagens e comparações",
+     "g": "Revise com calma imagens, versos, estrofes e linguagem figurada.",
+     "p": [
+      "Imagens usam os cinco sentidos e palavras precisas para mostrar.",
+      "Versos, quebras, estrofes e espaço em branco moldam a leitura.",
+      "Comparação, metáfora e personificação criam ligações novas."
+     ],
+     "q": "Qual ferramenta destas semanas você mais gosta de usar?",
+     "c": "Revise um poema do seu caderno: afine uma imagem e melhore uma quebra de verso."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The music of words",
+     "g": "Understand why sound matters as much as meaning in poetry.",
+     "p": [
+      "Poetry began as spoken and sung art, so it is made for the ear.",
+      "Some words feel soft, like murmur and silk; others sharp, like crack and kick.",
+      "Choose words for both their meaning and their sound."
+     ],
+     "q": "What word do you love simply because of how it sounds?",
+     "c": "Make a list of five soft-sounding and five sharp-sounding words in your language."
+    },
+    "de": {
+     "t": "Die Musik der Wörter",
+     "g": "Verstehe, warum Klang in der Poesie so wichtig ist wie Bedeutung.",
+     "p": [
+      "Poesie begann als gesprochene und gesungene Kunst; sie ist fürs Ohr gemacht.",
+      "Manche Wörter klingen weich, wie murmeln und Samt, andere hart, wie Knacks und Tritt.",
+      "Wähle Wörter wegen ihrer Bedeutung und ihres Klangs."
+     ],
+     "q": "Welches Wort liebst du einfach wegen seines Klangs?",
+     "c": "Liste fünf weich und fünf hart klingende Wörter in deiner Sprache auf."
+    },
+    "es": {
+     "t": "La música de las palabras",
+     "g": "Entiende por qué el sonido importa tanto como el significado en la poesía.",
+     "p": [
+      "La poesía nació hablada y cantada, así que está hecha para el oído.",
+      "Unas palabras suenan suaves, como murmullo y seda; otras duras, como crac y golpe.",
+      "Elige palabras por su significado y también por su sonido."
+     ],
+     "q": "¿Qué palabra te encanta solo por cómo suena?",
+     "c": "Haz una lista de cinco palabras suaves y cinco duras de sonido en tu idioma."
+    },
+    "fr": {
+     "t": "La musique des mots",
+     "g": "Comprendre pourquoi le son compte autant que le sens en poésie.",
+     "p": [
+      "La poésie est née dite et chantée : elle est faite pour l'oreille.",
+      "Certains mots sonnent doux, comme murmure et soie ; d'autres secs, comme crac et coup.",
+      "Choisis les mots pour leur sens et pour leur son."
+     ],
+     "q": "Quel mot aimes-tu simplement pour sa sonorité ?",
+     "c": "Fais une liste de cinq mots doux et cinq mots secs à l'oreille dans ta langue."
+    },
+    "it": {
+     "t": "La musica delle parole",
+     "g": "Capisci perché in poesia il suono conta quanto il significato.",
+     "p": [
+      "La poesia è nata detta e cantata: è fatta per l'orecchio.",
+      "Alcune parole suonano morbide, come mormorio e seta; altre secche, come crac e colpo.",
+      "Scegli le parole per il significato e anche per il suono."
+     ],
+     "q": "Quale parola ami solo per come suona?",
+     "c": "Fai una lista di cinque parole dal suono morbido e cinque dal suono secco nella tua lingua."
+    },
+    "pt": {
+     "t": "A música das palavras",
+     "g": "Percebe porque o som importa tanto como o sentido na poesia.",
+     "p": [
+      "A poesia nasceu dita e cantada, por isso é feita para o ouvido.",
+      "Há palavras suaves, como murmúrio e seda, e outras secas, como estalo e pancada.",
+      "Escolhe as palavras pelo sentido e também pelo som."
+     ],
+     "q": "Que palavra adoras só pelo som que tem?",
+     "c": "Faz uma lista de cinco palavras de som suave e cinco de som seco na tua língua."
+    },
+    "pt_BR": {
+     "t": "A música das palavras",
+     "g": "Entenda por que o som importa tanto quanto o sentido na poesia.",
+     "p": [
+      "A poesia nasceu falada e cantada, então é feita para o ouvido.",
+      "Há palavras suaves, como murmúrio e seda, e outras secas, como estalo e chute.",
+      "Escolha as palavras pelo sentido e também pelo som."
+     ],
+     "q": "Que palavra você adora só pelo som que ela tem?",
+     "c": "Faça uma lista de cinco palavras de som suave e cinco de som seco na sua língua."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhyme basics",
+     "g": "Learn full rhyme, how it creates pleasure and pattern, and when to use it.",
+     "p": [
+      "Full rhyme matches the final stressed vowel and what follows: light and bright.",
+      "Rhyme gives pleasure, helps memory and ties lines together.",
+      "Never twist a sentence just to force a rhyme; meaning comes first."
+     ],
+     "q": "Which song or rhyme from childhood can you still recite?",
+     "c": "Write a four-line poem about breakfast where lines two and four rhyme."
+    },
+    "de": {
+     "t": "Grundlagen des Reims",
+     "g": "Lerne den reinen Reim kennen, wie er Freude und Muster schafft und wann er passt.",
+     "p": [
+      "Beim reinen Reim stimmen betonter Vokal und alles danach überein: Licht und Sicht.",
+      "Reim macht Freude, hilft beim Merken und verbindet Zeilen.",
+      "Verbiege nie einen Satz, nur um einen Reim zu erzwingen; Sinn geht vor."
+     ],
+     "q": "Welches Lied oder welchen Reim aus der Kindheit kannst du noch aufsagen?",
+     "c": "Schreibe einen Vierzeiler über dein Frühstück, in dem sich Zeile zwei und vier reimen."
+    },
+    "es": {
+     "t": "Lo básico de la rima",
+     "g": "Aprende la rima consonante, cómo crea placer y patrón, y cuándo usarla.",
+     "p": [
+      "En la rima consonante coinciden vocales y consonantes desde la última tónica: canción y corazón.",
+      "La rima da placer, ayuda a recordar y une los versos.",
+      "No retuerzas una frase solo para forzar la rima; primero el sentido."
+     ],
+     "q": "¿Qué canción o rima de tu infancia aún sabes de memoria?",
+     "c": "Escribe un poema de cuatro versos sobre el desayuno en el que rimen el segundo y el cuarto."
+    },
+    "fr": {
+     "t": "Les bases de la rime",
+     "g": "Découvrir la rime riche et suffisante, le plaisir qu'elle crée et quand l'utiliser.",
+     "p": [
+      "La rime fait se répondre les sons de fin de vers : lumière et clairière.",
+      "Elle donne du plaisir, aide la mémoire et relie les vers entre eux.",
+      "Ne tords jamais une phrase pour forcer une rime : le sens passe d'abord."
+     ],
+     "q": "Quelle chanson ou comptine d'enfance sais-tu encore par cœur ?",
+     "c": "Écris un quatrain sur ton petit-déjeuner où les vers deux et quatre riment."
+    },
+    "it": {
+     "t": "Le basi della rima",
+     "g": "Impara la rima perfetta, il piacere e lo schema che crea, e quando usarla.",
+     "p": [
+      "Nella rima perfetta coincide tutto dalla vocale accentata in poi: cuore e amore, sole e parole.",
+      "La rima dà piacere, aiuta la memoria e lega i versi.",
+      "Non forzare mai una frase solo per la rima: prima viene il senso."
+     ],
+     "q": "Quale canzone o filastrocca d'infanzia sai ancora a memoria?",
+     "c": "Scrivi una quartina sulla colazione in cui rimino il secondo e il quarto verso."
+    },
+    "pt": {
+     "t": "Bases da rima",
+     "g": "Aprende a rima perfeita, como cria prazer e padrão e quando a usar.",
+     "p": [
+      "Na rima perfeita coincide tudo desde a última vogal tónica: canção e coração.",
+      "A rima dá prazer, ajuda a memória e une os versos.",
+      "Nunca tortures uma frase só para forçar a rima; o sentido vem primeiro."
+     ],
+     "q": "Que canção ou lengalenga da infância ainda sabes de cor?",
+     "c": "Escreve uma quadra sobre o pequeno-almoço em que rimem o segundo e o quarto versos."
+    },
+    "pt_BR": {
+     "t": "Noções de rima",
+     "g": "Aprenda a rima perfeita, como ela cria prazer e padrão e quando usar.",
+     "p": [
+      "Na rima perfeita coincide tudo desde a última vogal tônica: canção e coração.",
+      "A rima dá prazer, ajuda a memória e une os versos.",
+      "Nunca force uma frase só para encaixar a rima; o sentido vem primeiro."
+     ],
+     "q": "Que música ou cantiga da infância você ainda sabe de cor?",
+     "c": "Escreva uma quadra sobre o café da manhã em que rimem o segundo e o quarto versos."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slant rhyme",
+     "g": "Use near rhymes like shape and keep that feel subtle and modern.",
+     "p": [
+      "Slant rhyme shares only part of the sound: a vowel or a final consonant.",
+      "Emily Dickinson used slant rhyme often, giving her poems a gentle tilt.",
+      "It sounds less predictable and gives you far more word choices."
+     ],
+     "q": "Does perfect rhyme ever feel too neat or sing-song to you?",
+     "c": "Find three slant-rhyme pairs and use one of them in a two-line poem."
+    },
+    "de": {
+     "t": "Unreiner Reim",
+     "g": "Nutze Halbreime, die feiner und moderner wirken.",
+     "p": [
+      "Der unreine Reim teilt nur einen Teil des Klangs: einen Vokal oder einen Endkonsonanten.",
+      "Emily Dickinson nutzte Halbreime oft und gab ihren Gedichten eine sanfte Schieflage.",
+      "Er klingt weniger vorhersehbar und lässt dir viel mehr Wortwahl."
+     ],
+     "q": "Wirkt reiner Reim auf dich manchmal zu glatt oder leiernd?",
+     "c": "Finde drei Halbreim-Paare und nutze eines davon in einem Zweizeiler."
+    },
+    "es": {
+     "t": "La rima imperfecta",
+     "g": "Usa rimas cercanas, como la asonante, que suenan sutiles y modernas.",
+     "p": [
+      "Comparte solo parte del sonido: en español, la rima asonante iguala solo las vocales.",
+      "Emily Dickinson usaba a menudo rimas imperfectas, con un leve desequilibrio.",
+      "Suena menos previsible y te da muchas más palabras para elegir."
+     ],
+     "q": "¿Alguna vez la rima perfecta te parece demasiado cantarina?",
+     "c": "Busca tres pares de rima asonante, como mesa y fresca, y usa uno en un poema de dos versos."
+    },
+    "fr": {
+     "t": "La rime approximative",
+     "g": "Utiliser des assonances et quasi-rimes, plus subtiles et modernes.",
+     "p": [
+      "La quasi-rime ne partage qu'une partie du son : une voyelle ou une consonne finale.",
+      "Emily Dickinson en usait souvent, ce qui donne à ses poèmes un léger décalage.",
+      "Elle sonne moins prévisible et offre beaucoup plus de mots possibles."
+     ],
+     "q": "La rime parfaite te paraît-elle parfois trop sage ou chantante ?",
+     "c": "Trouve trois paires de quasi-rimes, comme porte et morde, et utilises-en une dans un poème de deux vers."
+    },
+    "it": {
+     "t": "La rima imperfetta",
+     "g": "Usa rime imperfette come assonanze e consonanze, più sottili e moderne.",
+     "p": [
+      "Condivide solo parte del suono: le vocali, come in mare e pane, o le consonanti.",
+      "Emily Dickinson le usava spesso, dando alle poesie una leggera inclinazione.",
+      "Suona meno prevedibile e ti offre molte più parole tra cui scegliere."
+     ],
+     "q": "La rima perfetta ti sembra a volte troppo cantilenante?",
+     "c": "Trova tre coppie di rime imperfette e usane una in una poesia di due versi."
+    },
+    "pt": {
+     "t": "A rima imperfeita",
+     "g": "Usa rimas aproximadas, como a toante, que soam subtis e modernas.",
+     "p": [
+      "Partilha só parte do som: a rima toante iguala apenas as vogais, como em mesa e certa.",
+      "Emily Dickinson usava muitas vezes rimas imperfeitas, com um leve desequilíbrio.",
+      "Soa menos previsível e dá-te muito mais palavras por onde escolher."
+     ],
+     "q": "A rima perfeita às vezes parece-te demasiado cantada?",
+     "c": "Encontra três pares de rimas toantes e usa um deles num poema de dois versos."
+    },
+    "pt_BR": {
+     "t": "A rima imperfeita",
+     "g": "Use rimas aproximadas, como a toante, que soam sutis e modernas.",
+     "p": [
+      "Ela divide só parte do som: a rima toante iguala apenas as vogais, como em mesa e certa.",
+      "Emily Dickinson usava muito rimas imperfeitas, com um leve desequilíbrio.",
+      "Soa menos previsível e dá muito mais palavras para escolher."
+     ],
+     "q": "A rima perfeita às vezes parece cantada demais para você?",
+     "c": "Encontre três pares de rimas toantes e use um deles num poema de dois versos."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Internal rhyme",
+     "g": "Add rhymes inside lines for music without a sing-song effect.",
+     "p": [
+      "Internal rhyme places a rhyme within a line: the light of the night sky.",
+      "It adds hidden music while line endings stay free.",
+      "Use it lightly; one or two inside a stanza is often enough."
+     ],
+     "q": "Can you think of a song lyric with a rhyme hidden in the middle of a line?",
+     "c": "Write two lines about rain, each containing one internal rhyme."
+    },
+    "de": {
+     "t": "Binnenreim",
+     "g": "Setze Reime innerhalb der Zeilen für Musik ohne Leierton.",
+     "p": [
+      "Der Binnenreim steht innerhalb einer Zeile: das Licht, das durch die Wolken bricht.",
+      "Er fügt verborgene Musik hinzu, während die Zeilenenden frei bleiben.",
+      "Setze ihn sparsam ein; ein oder zwei pro Strophe reichen oft."
+     ],
+     "q": "Kennst du einen Liedtext mit einem Reim mitten in der Zeile?",
+     "c": "Schreibe zwei Zeilen über Regen, jede mit einem Binnenreim."
+    },
+    "es": {
+     "t": "La rima interna",
+     "g": "Añade rimas dentro del verso para dar música sin sonsonete.",
+     "p": [
+      "La rima interna aparece dentro del verso: la luna en la laguna se acuna.",
+      "Aporta música escondida mientras los finales quedan libres.",
+      "Úsala con mesura; una o dos por estrofa suelen bastar."
+     ],
+     "q": "¿Recuerdas la letra de una canción con una rima escondida en medio del verso?",
+     "c": "Escribe dos versos sobre la lluvia, cada uno con una rima interna."
+    },
+    "fr": {
+     "t": "La rime intérieure",
+     "g": "Placer des rimes à l'intérieur des vers pour la musique, sans effet ritournelle.",
+     "p": [
+      "La rime intérieure se cache dans le vers : la pluie sans bruit s'enfuit.",
+      "Elle ajoute une musique discrète tout en laissant les fins de vers libres.",
+      "Utilise-la avec légèreté ; une ou deux par strophe suffisent souvent."
+     ],
+     "q": "Connais-tu une chanson avec une rime cachée au milieu d'un vers ?",
+     "c": "Écris deux vers sur la pluie, chacun avec une rime intérieure."
+    },
+    "it": {
+     "t": "La rima interna",
+     "g": "Aggiungi rime dentro i versi per la musica, senza effetto cantilena.",
+     "p": [
+      "La rima interna sta dentro il verso: la luna sulla duna si raduna.",
+      "Aggiunge musica nascosta lasciando liberi i finali di verso.",
+      "Usala con leggerezza: una o due per strofa spesso bastano."
+     ],
+     "q": "Ti viene in mente una canzone con una rima nascosta a metà verso?",
+     "c": "Scrivi due versi sulla pioggia, ognuno con una rima interna."
+    },
+    "pt": {
+     "t": "A rima interna",
+     "g": "Junta rimas dentro dos versos para dar música sem cantilena.",
+     "p": [
+      "A rima interna fica dentro do verso: a luz que reluz no mar azul.",
+      "Acrescenta música escondida e deixa livres os finais de verso.",
+      "Usa-a com leveza; uma ou duas por estrofe costumam bastar."
+     ],
+     "q": "Lembras-te de uma canção com uma rima escondida a meio do verso?",
+     "c": "Escreve dois versos sobre a chuva, cada um com uma rima interna."
+    },
+    "pt_BR": {
+     "t": "A rima interna",
+     "g": "Acrescente rimas dentro dos versos para dar música sem cantilena.",
+     "p": [
+      "A rima interna fica dentro do verso: a luz que reluz no mar azul.",
+      "Ela traz uma música escondida e deixa livres os finais de verso.",
+      "Use com leveza; uma ou duas por estrofe costumam bastar."
+     ],
+     "q": "Você lembra de uma música com uma rima escondida no meio do verso?",
+     "c": "Escreva dois versos sobre a chuva, cada um com uma rima interna."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alliteration",
+     "g": "Repeat first consonant sounds for rhythm and emphasis.",
+     "p": [
+      "Alliteration repeats starting sounds: silver sea, bright blue balloon.",
+      "It makes phrases catchy and links words together in the ear.",
+      "Tongue twisters show it at full volume; poems use a lighter touch."
+     ],
+     "q": "What is your favourite tongue twister in any language?",
+     "c": "Write one line about your city where at least three words start with the same sound."
+    },
+    "de": {
+     "t": "Alliteration",
+     "g": "Wiederhole Anfangslaute für Rhythmus und Betonung.",
+     "p": [
+      "Die Alliteration wiederholt Anfangslaute: Milch macht müde Männer munter.",
+      "Sie macht Wendungen einprägsam und verbindet Wörter im Ohr.",
+      "Zungenbrecher zeigen sie in voller Lautstärke; Gedichte sind feiner."
+     ],
+     "q": "Welcher ist dein liebster Zungenbrecher, in welcher Sprache auch immer?",
+     "c": "Schreibe eine Zeile über deine Stadt, in der mindestens drei Wörter gleich beginnen."
+    },
+    "es": {
+     "t": "La aliteración",
+     "g": "Repite sonidos consonánticos iniciales para dar ritmo y énfasis.",
+     "p": [
+      "La aliteración repite sonidos: el ruido con que rueda la ronca tempestad.",
+      "Hace pegadizas las frases y une las palabras en el oído.",
+      "Los trabalenguas la muestran a todo volumen; los poemas, con más sutileza."
+     ],
+     "q": "¿Cuál es tu trabalenguas favorito, en el idioma que sea?",
+     "c": "Escribe un verso sobre tu ciudad en el que al menos tres palabras empiecen igual."
+    },
+    "fr": {
+     "t": "L'allitération",
+     "g": "Répéter des sons consonantiques pour le rythme et l'insistance.",
+     "p": [
+      "L'allitération répète des consonnes : pour qui sont ces serpents qui sifflent sur vos têtes.",
+      "Elle rend les phrases accrocheuses et relie les mots à l'oreille.",
+      "Les virelangues la poussent à fond ; les poèmes l'utilisent avec finesse."
+     ],
+     "q": "Quel est ton virelangue préféré, dans n'importe quelle langue ?",
+     "c": "Écris un vers sur ta ville où au moins trois mots commencent par le même son."
+    },
+    "it": {
+     "t": "L'allitterazione",
+     "g": "Ripeti suoni consonantici iniziali per dare ritmo ed enfasi.",
+     "p": [
+      "L'allitterazione ripete suoni: di me medesmo meco mi vergogno, scrisse Petrarca.",
+      "Rende le frasi orecchiabili e lega le parole nell'orecchio.",
+      "Gli scioglilingua la usano a tutto volume; le poesie con più delicatezza."
+     ],
+     "q": "Qual è il tuo scioglilingua preferito, in qualsiasi lingua?",
+     "c": "Scrivi un verso sulla tua città in cui almeno tre parole iniziano con lo stesso suono."
+    },
+    "pt": {
+     "t": "A aliteração",
+     "g": "Repete sons consonânticos iniciais para dar ritmo e ênfase.",
+     "p": [
+      "A aliteração repete sons: o rato roeu a rolha da garrafa do rei.",
+      "Torna as frases memoráveis e liga as palavras no ouvido.",
+      "Os trava-línguas usam-na no máximo; os poemas, com mais leveza."
+     ],
+     "q": "Qual é o teu trava-línguas preferido, em qualquer língua?",
+     "c": "Escreve um verso sobre a tua cidade em que pelo menos três palavras comecem pelo mesmo som."
+    },
+    "pt_BR": {
+     "t": "A aliteração",
+     "g": "Repita sons consonantais iniciais para dar ritmo e ênfase.",
+     "p": [
+      "A aliteração repete sons: o rato roeu a roupa do rei de Roma.",
+      "Ela deixa as frases marcantes e liga as palavras no ouvido.",
+      "Trava-línguas usam no volume máximo; poemas, com mais leveza."
+     ],
+     "q": "Qual é o seu trava-língua favorito, em qualquer idioma?",
+     "c": "Escreva um verso sobre sua cidade em que pelo menos três palavras comecem com o mesmo som."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Assonance",
+     "g": "Repeat vowel sounds to create a soft, musical flow.",
+     "p": [
+      "Assonance repeats vowel sounds in nearby words: the rain in Spain stays mainly in the plain.",
+      "Long vowels slow a line down; short vowels speed it up.",
+      "It builds music quietly, often unnoticed but felt."
+     ],
+     "q": "Which vowel sound feels calmest to you when you say it slowly?",
+     "c": "Write a line about the sea that repeats one long vowel sound at least three times."
+    },
+    "de": {
+     "t": "Assonanz",
+     "g": "Wiederhole Vokalklänge für einen weichen, musikalischen Fluss.",
+     "p": [
+      "Die Assonanz wiederholt Vokale in nahen Wörtern: das blaue Tal im Abendstrahl.",
+      "Lange Vokale verlangsamen eine Zeile, kurze beschleunigen sie.",
+      "Sie baut leise Musik auf, oft unbemerkt, aber gespürt."
+     ],
+     "q": "Welcher Vokal fühlt sich für dich am ruhigsten an, wenn du ihn langsam sprichst?",
+     "c": "Schreibe eine Zeile über das Meer, die einen langen Vokal mindestens dreimal wiederholt."
+    },
+    "es": {
+     "t": "La asonancia",
+     "g": "Repite sonidos vocálicos para crear un fluir suave y musical.",
+     "p": [
+      "La asonancia repite vocales en palabras cercanas: la mar salada clara.",
+      "Las vocales abiertas abren el verso; las cerradas lo hacen más íntimo.",
+      "Construye música en silencio, a menudo sin notarse pero sintiéndose."
+     ],
+     "q": "¿Qué vocal te parece más tranquila cuando la dices despacio?",
+     "c": "Escribe un verso sobre el mar que repita una vocal al menos tres veces."
+    },
+    "fr": {
+     "t": "L'assonance",
+     "g": "Répéter des sons voyelles pour un flux doux et musical.",
+     "p": [
+      "L'assonance répète des voyelles proches : les sanglots longs des violons, chez Verlaine.",
+      "Les voyelles longues ralentissent le vers, les brèves l'accélèrent.",
+      "Elle crée une musique discrète, souvent inaperçue mais ressentie."
+     ],
+     "q": "Quel son de voyelle te paraît le plus calme quand tu le dis lentement ?",
+     "c": "Écris un vers sur la mer qui répète au moins trois fois le même son voyelle."
+    },
+    "it": {
+     "t": "L'assonanza",
+     "g": "Ripeti suoni vocalici per creare un flusso morbido e musicale.",
+     "p": [
+      "L'assonanza ripete vocali in parole vicine: il mare chiaro calmo appare.",
+      "Le vocali aperte allargano il verso, quelle chiuse lo rendono intimo.",
+      "Costruisce musica in silenzio, spesso non notata ma sentita."
+     ],
+     "q": "Quale vocale ti sembra più calma quando la pronunci lentamente?",
+     "c": "Scrivi un verso sul mare che ripeta una vocale almeno tre volte."
+    },
+    "pt": {
+     "t": "A assonância",
+     "g": "Repete sons vocálicos para criar um fluir suave e musical.",
+     "p": [
+      "A assonância repete vogais em palavras próximas: a água clara da praia calma.",
+      "Vogais abertas alargam o verso; vogais fechadas tornam-no íntimo.",
+      "Constrói música em silêncio, muitas vezes despercebida mas sentida."
+     ],
+     "q": "Que vogal te parece mais calma quando a dizes devagar?",
+     "c": "Escreve um verso sobre o mar que repita uma vogal pelo menos três vezes."
+    },
+    "pt_BR": {
+     "t": "A assonância",
+     "g": "Repita sons vocálicos para criar um fluxo suave e musical.",
+     "p": [
+      "A assonância repete vogais em palavras próximas: a água clara da praia calma.",
+      "Vogais abertas alargam o verso; vogais fechadas deixam ele íntimo.",
+      "Ela constrói música em silêncio, muitas vezes despercebida, mas sentida."
+     ],
+     "q": "Que vogal parece mais calma para você quando dita devagar?",
+     "c": "Escreva um verso sobre o mar que repita uma vogal pelo menos três vezes."
+    }
+   }
+  }
+ ]
+}

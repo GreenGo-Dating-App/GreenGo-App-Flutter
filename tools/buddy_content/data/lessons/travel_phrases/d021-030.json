@@ -1,0 +1,835 @@
+{
+ "topic": "travel_phrases",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "At the airport check-in",
+     "g": "Check your bags, choose a seat and ask about the gate with confidence.",
+     "p": [
+      "Spanish: «Quiero facturar una maleta» (fak-too-RAR) = I want to check in a suitcase. «¿Ventanilla o pasillo?» = window or aisle?",
+      "French: «Je voudrais une place côté hublot» (oo-BLOH) = a window seat, or «côté couloir» (koo-LWAHR) = an aisle seat.",
+      "Ask the gate: French «Quelle est la porte d'embarquement ?» (port dahn-bar-kuh-MAHN), Spanish «¿Cuál es la puerta?» (PWER-ta)."
+     ],
+     "q": "Window seat or aisle seat: which do you always pick, and why?",
+     "c": "Say the check-in, seat and gate phrases in one go, as if you were at the counter now."
+    },
+    "de": {
+     "t": "Beim Check-in am Flughafen",
+     "g": "Gib dein Gepäck auf, wähle einen Platz und frag souverän nach dem Gate.",
+     "p": [
+      "Spanisch: «Quiero facturar una maleta» (fak-tu-RAR) = Ich möchte einen Koffer aufgeben. «¿Ventanilla o pasillo?» = Fenster oder Gang?",
+      "Französisch: «Je voudrais une place côté hublot» (u-BLO) = Fensterplatz, oder «côté couloir» (ku-LUAR) = Gangplatz.",
+      "Nach dem Gate fragen: Französisch «Quelle est la porte d'embarquement ?» (port dan-bar-kö-MAN), Spanisch «¿Cuál es la puerta?»."
+     ],
+     "q": "Fenster oder Gang: Welchen Platz wählst du immer, und warum?",
+     "c": "Sag die Sätze für Gepäck, Platz und Gate am Stück, als stündest du jetzt am Schalter."
+    },
+    "es": {
+     "t": "En el mostrador de facturación",
+     "g": "Factura tus maletas, elige asiento y pregunta por la puerta con seguridad.",
+     "p": [
+      "Inglés: «I'd like to check in this bag» (aid laik tu chek in dis BAG). «Window or aisle?» (UIN-dou or AIL) = ¿ventanilla o pasillo?",
+      "Francés: «Je voudrais une place côté hublot» (u-BLÓ) = asiento de ventanilla, o «côté couloir» (ku-LUAR) = de pasillo.",
+      "Pregunta la puerta: francés «Quelle est la porte d'embarquement ?» (port dan-bar-ke-MAN), inglés «Which gate is it?» (uich GUEIT)."
+     ],
+     "q": "¿Ventanilla o pasillo: cuál eliges siempre, y por qué?",
+     "c": "Di las frases de maleta, asiento y puerta de un tirón, como si estuvieras ahora en el mostrador."
+    },
+    "fr": {
+     "t": "À l'enregistrement",
+     "g": "Enregistrer ses bagages, choisir sa place et demander la porte avec assurance.",
+     "p": [
+      "Espagnol : «Quiero facturar una maleta» (fak-tou-RAR) = je veux enregistrer une valise. «¿Ventanilla o pasillo?» = hublot ou couloir ?",
+      "Anglais : «I'd like a window seat» (aïd laïk a OUINE-dô sit) = une place côté hublot, ou «an aisle seat» (eun AÏL sit) = côté couloir.",
+      "Demander la porte : anglais «Which gate is it?» (ouitch GUÈÏT), espagnol «¿Cuál es la puerta?» (kouale èss la POUÈR-ta)."
+     ],
+     "q": "Hublot ou couloir : laquelle choisis-tu toujours, et pourquoi ?",
+     "c": "Dis d'une traite les phrases bagage, place et porte, comme si tu étais au comptoir."
+    },
+    "it": {
+     "t": "Al check-in in aeroporto",
+     "g": "Imbarcare i bagagli, scegliere il posto e chiedere del gate con sicurezza.",
+     "p": [
+      "Spagnolo: «Quiero facturar una maleta» (fak-tu-RAR) = voglio imbarcare una valigia. «¿Ventanilla o pasillo?» = finestrino o corridoio?",
+      "Francese: «Je voudrais une place côté hublot» (u-BLÓ) = posto finestrino, oppure «côté couloir» (ku-LUAR) = posto corridoio.",
+      "Chiedi il gate: francese «Quelle est la porte d'embarquement ?» (port dan-bar-kö-MAN), spagnolo «¿Cuál es la puerta?»."
+     ],
+     "q": "Finestrino o corridoio: quale scegli sempre, e perché?",
+     "c": "Di' tutto d'un fiato le frasi per bagaglio, posto e gate, come se fossi al banco adesso."
+    },
+    "pt": {
+     "t": "No check-in do aeroporto",
+     "g": "Despachar a bagagem, escolher o lugar e perguntar pela porta com confiança.",
+     "p": [
+      "Espanhol: «Quiero facturar una maleta» (fak-tu-RÁR) = quero despachar uma mala. «¿Ventanilla o pasillo?» = janela ou corredor?",
+      "Francês: «Je voudrais une place côté hublot» (u-BLÔ) = lugar à janela, ou «côté couloir» (ku-LUÁR) = lugar no corredor.",
+      "Pergunta a porta: francês «Quelle est la porte d'embarquement ?» (port dã-bar-ke-MÃ), espanhol «¿Cuál es la puerta?»."
+     ],
+     "q": "Janela ou corredor: qual escolhes sempre, e porquê?",
+     "c": "Diz de seguida as frases de mala, lugar e porta, como se estivesses agora no balcão."
+    },
+    "pt_BR": {
+     "t": "No check-in do aeroporto",
+     "g": "Despachar a bagagem, escolher o assento e perguntar pelo portão com confiança.",
+     "p": [
+      "Espanhol: «Quiero facturar una maleta» (fak-tu-RÁR) = quero despachar uma mala. «¿Ventanilla o pasillo?» = janela ou corredor?",
+      "Francês: «Je voudrais une place côté hublot» (u-BLÔ) = assento na janela, ou «côté couloir» (ku-LUÁR) = no corredor.",
+      "Pergunte o portão: francês «Quelle est la porte d'embarquement ?» (port dã-bar-ke-MÃ), espanhol «¿Cuál es la puerta?»."
+     ],
+     "q": "Janela ou corredor: qual você sempre escolhe, e por quê?",
+     "c": "Diga de uma vez as frases de mala, assento e portão, como se estivesse agora no balcão."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Going through security",
+     "g": "Understand instructions to remove items, open bags and walk through.",
+     "p": [
+      "Many airports use English: «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Spanish: «Quítese el cinturón» (KEE-teh-seh el seen-too-RON) = take off your belt. «Abra la maleta» (A-bra) = open the bag.",
+      "French: «Videz vos poches» (vee-DAY vo POSH) = empty your pockets. «Avancez» (a-vahn-SAY) = step forward. Stay calm and polite."
+     ],
+     "q": "What is your best trick for getting through airport security quickly and stress-free?",
+     "c": "Pack a small bag at home and mime a security check while saying each instruction in another language."
+    },
+    "de": {
+     "t": "Durch die Sicherheitskontrolle",
+     "g": "Verstehe Anweisungen, Dinge herauszunehmen, Taschen zu öffnen und durchzugehen.",
+     "p": [
+      "Viele Flughäfen nutzen Englisch: «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Spanisch: «Quítese el cinturón» (KI-te-sse el ssin-tu-RON) = Gürtel ab. «Abra la maleta» (A-bra) = Öffnen Sie die Tasche.",
+      "Französisch: «Videz vos poches» (wi-DE wo POSCH) = Taschen leeren. «Avancez» (a-wan-SSE) = Gehen Sie vor. Bleib ruhig und höflich."
+     ],
+     "q": "Was ist dein bester Trick, um schnell und stressfrei durch die Sicherheitskontrolle zu kommen?",
+     "c": "Pack zu Hause eine kleine Tasche und spiel eine Kontrolle nach, mit jeder Anweisung in einer anderen Sprache."
+    },
+    "es": {
+     "t": "Pasar el control de seguridad",
+     "g": "Entiende las instrucciones para sacar objetos, abrir la maleta y pasar.",
+     "p": [
+      "Muchos aeropuertos usan inglés: «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Inglés: «Take off your shoes» (teik of yor SHUS) = quítese los zapatos. «Open your bag, please» (OU-pen yor BAG) = abra la maleta.",
+      "Francés: «Videz vos poches» (vi-DÉ vo POSH) = vacíe los bolsillos. «Avancez» (a-van-SÉ) = avance. Mantén la calma y la cortesía."
+     ],
+     "q": "¿Cuál es tu mejor truco para pasar el control del aeropuerto rápido y sin estrés?",
+     "c": "Prepara una bolsa pequeña en casa y simula un control diciendo cada instrucción en otro idioma."
+    },
+    "fr": {
+     "t": "Passer le contrôle de sécurité",
+     "g": "Comprendre les consignes pour sortir des objets, ouvrir son sac et passer le portique.",
+     "p": [
+      "Beaucoup d'aéroports parlent anglais : «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Espagnol : «Quítese el cinturón» (KI-té-ssé él ssine-tou-RONE) = enlevez votre ceinture. «Abra la maleta» = ouvrez le sac.",
+      "Anglais : «Take off your shoes» (tèïk of yor CHOUZ) = enlevez vos chaussures. «Step forward» = avancez. Reste calme et poli."
+     ],
+     "q": "Quelle est ton astuce pour passer le contrôle de l'aéroport vite et sans stress ?",
+     "c": "Prépare un petit sac chez toi et mime un contrôle en disant chaque consigne dans une autre langue."
+    },
+    "it": {
+     "t": "Ai controlli di sicurezza",
+     "g": "Capire le istruzioni per togliere oggetti, aprire la borsa e passare.",
+     "p": [
+      "Molti aeroporti usano l'inglese: «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Spagnolo: «Quítese el cinturón» (KI-te-se el sin-tu-RON) = si tolga la cintura. «Abra la maleta» (A-bra) = apra la borsa.",
+      "Francese: «Videz vos poches» (vi-DÉ vo POSC) = svuoti le tasche. «Avancez» (a-van-SÉ) = avanzi. Resta calmo e cortese."
+     ],
+     "q": "Qual è il tuo trucco migliore per passare i controlli in aeroporto in fretta e senza stress?",
+     "c": "Prepara una piccola borsa a casa e simula un controllo dicendo ogni istruzione in un'altra lingua."
+    },
+    "pt": {
+     "t": "Passar o controlo de segurança",
+     "g": "Perceber as instruções para tirar objetos, abrir a mala e passar.",
+     "p": [
+      "Muitos aeroportos usam inglês: «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Espanhol: «Quítese el cinturón» (KI-te-se el sin-tu-RÔN) = tire o cinto. «Abra la maleta» (Á-bra) = abra a mala.",
+      "Francês: «Videz vos poches» (vi-DÊ vô PÓCH) = esvazie os bolsos. «Avancez» (a-vã-SÊ) = avance. Mantém a calma e a simpatia."
+     ],
+     "q": "Qual é o teu melhor truque para passar a segurança do aeroporto depressa e sem stress?",
+     "c": "Prepara uma mala pequena em casa e simula um controlo dizendo cada instrução noutra língua."
+    },
+    "pt_BR": {
+     "t": "Passar pela segurança",
+     "g": "Entender as instruções para tirar objetos, abrir a bolsa e passar.",
+     "p": [
+      "Muitos aeroportos usam inglês: «Laptops and liquids out, please», «Take off your belt», «Empty your pockets», «Walk through».",
+      "Espanhol: «Quítese el cinturón» (KI-te-se el sin-tu-RÔN) = tire o cinto. «Abra la maleta» (Á-bra) = abra a mala.",
+      "Francês: «Videz vos poches» (vi-DÊ vô PÓCH) = esvazie os bolsos. «Avancez» (a-vã-SÊ) = avance. Mantenha a calma e a gentileza."
+     ],
+     "q": "Qual é o seu melhor truque para passar pela segurança do aeroporto rápido e sem estresse?",
+     "c": "Prepare uma bolsa pequena em casa e simule uma inspeção dizendo cada instrução em outro idioma."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Passport control",
+     "g": "Answer simple questions about your trip, your stay and the purpose of your visit.",
+     "p": [
+      "Common English questions: «What is the purpose of your visit?» Answer «Tourism» or «I'm on holiday». «How long are you staying?»",
+      "Spanish: «¿Cuánto tiempo se queda?» (KWAN-to TYEM-po seh KEH-da) = how long are you staying? Answer «Una semana» = one week.",
+      "French: «Où logez-vous ?» (oo lo-zhay VOO) = where are you staying? Say «À l'hôtel» and keep your booking ready. Short, honest answers."
+     ],
+     "q": "What do you usually keep handy in your bag when you arrive in a new country?",
+     "c": "Practise answering purpose, length of stay and where you sleep in one new language."
+    },
+    "de": {
+     "t": "Passkontrolle",
+     "g": "Beantworte einfache Fragen zu Reise, Aufenthalt und Zweck deines Besuchs.",
+     "p": [
+      "Typische Fragen auf Englisch: «What is the purpose of your visit?» Antwort «Tourism» oder «I'm on holiday». «How long are you staying?»",
+      "Spanisch: «¿Cuánto tiempo se queda?» (KUAN-to TJEM-po sse KE-da) = Wie lange bleiben Sie? Antwort «Una semana» = eine Woche.",
+      "Französisch: «Où logez-vous ?» (u lo-sche WU) = Wo wohnen Sie? Sag «À l'hôtel» und halte die Buchung bereit. Kurz und ehrlich antworten."
+     ],
+     "q": "Was hast du griffbereit in der Tasche, wenn du in einem neuen Land ankommst?",
+     "c": "Übe die Antworten zu Zweck, Dauer und Unterkunft in einer neuen Sprache."
+    },
+    "es": {
+     "t": "Control de pasaportes",
+     "g": "Responde preguntas sencillas sobre tu viaje, tu estancia y el motivo de la visita.",
+     "p": [
+      "Preguntas típicas en inglés: «What is the purpose of your visit?» Responde «Tourism» o «I'm on holiday». «How long are you staying?»",
+      "Inglés: «How long are you staying?» (jau long ar yu STEI-ing) = ¿cuánto tiempo se queda? Responde «One week» (uan uik) = una semana.",
+      "Francés: «Où logez-vous ?» (u lo-yé VU) = ¿dónde se aloja? Di «À l'hôtel» y ten la reserva a mano. Respuestas cortas y sinceras."
+     ],
+     "q": "¿Qué sueles tener a mano en el bolso cuando llegas a un país nuevo?",
+     "c": "Practica responder motivo, duración y alojamiento en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Contrôle des passeports",
+     "g": "Répondre à des questions simples sur le voyage, le séjour et le motif de la visite.",
+     "p": [
+      "Questions fréquentes en anglais : «What is the purpose of your visit?» Réponds «Tourism» ou «I'm on holiday». «How long are you staying?»",
+      "Espagnol : «¿Cuánto tiempo se queda?» (KOUANE-to TIÈM-po sé KÉ-da) = combien de temps restez-vous ? Réponse «Una semana» = une semaine.",
+      "Anglais : «Where are you staying?» (ouèr ar you STÈÏ-igne) = où logez-vous ? Dis «At a hotel» et garde ta réservation sous la main."
+     ],
+     "q": "Qu'est-ce que tu gardes toujours à portée de main en arrivant dans un nouveau pays ?",
+     "c": "Entraîne-toi à répondre motif, durée et hébergement dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Controllo passaporti",
+     "g": "Rispondere a domande semplici sul viaggio, sul soggiorno e sul motivo della visita.",
+     "p": [
+      "Domande comuni in inglese: «What is the purpose of your visit?» Rispondi «Tourism» o «I'm on holiday». «How long are you staying?»",
+      "Spagnolo: «¿Cuánto tiempo se queda?» (KUAN-to TIEM-po se KE-da) = quanto tempo si ferma? Risposta «Una semana» = una settimana.",
+      "Francese: «Où logez-vous ?» (u lo-gé VU) = dove alloggia? Di' «À l'hôtel» e tieni pronta la prenotazione. Risposte brevi e sincere."
+     ],
+     "q": "Cosa tieni sempre a portata di mano quando arrivi in un paese nuovo?",
+     "c": "Esercitati a rispondere su motivo, durata e alloggio in una lingua nuova."
+    },
+    "pt": {
+     "t": "Controlo de passaportes",
+     "g": "Responder a perguntas simples sobre a viagem, a estadia e o motivo da visita.",
+     "p": [
+      "Perguntas comuns em inglês: «What is the purpose of your visit?» Responde «Tourism» ou «I'm on holiday». «How long are you staying?»",
+      "Espanhol: «¿Cuánto tiempo se queda?» (KUÁN-to TIÉM-po se KÊ-da) = quanto tempo fica? Resposta «Una semana» = uma semana.",
+      "Francês: «Où logez-vous ?» (u lo-jê VU) = onde fica alojado? Diz «À l'hôtel» e tem a reserva à mão. Respostas curtas e sinceras."
+     ],
+     "q": "O que costumas ter à mão na mala quando chegas a um país novo?",
+     "c": "Treina responder motivo, duração e alojamento numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Controle de passaporte",
+     "g": "Responder perguntas simples sobre a viagem, a estadia e o motivo da visita.",
+     "p": [
+      "Perguntas comuns em inglês: «What is the purpose of your visit?» Responda «Tourism» ou «I'm on holiday». «How long are you staying?»",
+      "Espanhol: «¿Cuánto tiempo se queda?» (KUÁN-to TIÉM-po se KÊ-da) = quanto tempo vai ficar? Resposta «Una semana» = uma semana.",
+      "Francês: «Où logez-vous ?» (u lo-jê VU) = onde vai se hospedar? Diga «À l'hôtel» e deixe a reserva à mão. Respostas curtas e sinceras."
+     ],
+     "q": "O que você costuma deixar à mão na bolsa quando chega a um país novo?",
+     "c": "Treine responder motivo, duração e hospedagem num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Collecting your luggage",
+     "g": "Find the baggage belt and report a bag that did not arrive.",
+     "p": [
+      "Spanish: «¿Dónde está la cinta de equipajes?» (SEEN-ta deh eh-kee-PA-hes). French: «Où est le tapis à bagages ?» (ta-PEE a ba-GAZH).",
+      "Missing bag: Spanish «Mi maleta no ha llegado» (mee ma-LEH-ta no a yeh-GA-do), French «Ma valise n'est pas arrivée» (va-LEEZ).",
+      "Go to the lost baggage desk before leaving the hall, and show your baggage tag; English «My bag didn't arrive» works too."
+     ],
+     "q": "Have you ever waited a long time at the baggage belt? How do you pass the time?",
+     "c": "Take a photo of your suitcase and tag before your next trip, and learn to describe its colour in one language."
+    },
+    "de": {
+     "t": "Gepäck abholen",
+     "g": "Finde das Gepäckband und melde einen Koffer, der nicht angekommen ist.",
+     "p": [
+      "Spanisch: «¿Dónde está la cinta de equipajes?» (SSIN-ta de e-ki-PA-ches). Französisch: «Où est le tapis à bagages ?» (ta-PI a ba-GASCH).",
+      "Koffer fehlt: Spanisch «Mi maleta no ha llegado» (mi ma-LE-ta no a je-GA-do), Französisch «Ma valise n'est pas arrivée» (wa-LIES).",
+      "Geh vor dem Verlassen der Halle zum Gepäckschalter und zeig deinen Gepäckabschnitt; auf Englisch: «My bag didn't arrive»."
+     ],
+     "q": "Hast du schon einmal lange am Gepäckband gewartet? Wie vertreibst du dir die Zeit?",
+     "c": "Fotografiere vor der nächsten Reise Koffer und Anhänger und lerne, seine Farbe in einer Sprache zu beschreiben."
+    },
+    "es": {
+     "t": "Recoger el equipaje",
+     "g": "Encuentra la cinta de equipajes y reclama una maleta que no llegó.",
+     "p": [
+      "Inglés: «Where is baggage claim?» (uer is BA-gich kleim). Francés: «Où est le tapis à bagages ?» (ta-PÍ a ba-GASH).",
+      "Maleta perdida: inglés «My bag didn't arrive» (mai bag DI-dent a-RAIV), francés «Ma valise n'est pas arrivée» (va-LIS).",
+      "Ve al mostrador de equipajes perdidos antes de salir de la sala y enseña la etiqueta de tu maleta."
+     ],
+     "q": "¿Alguna vez esperaste mucho en la cinta de equipajes? ¿Cómo pasas el rato?",
+     "c": "Haz una foto de tu maleta y su etiqueta antes del próximo viaje y aprende a decir su color en un idioma."
+    },
+    "fr": {
+     "t": "Récupérer ses bagages",
+     "g": "Trouver le tapis à bagages et signaler une valise qui n'est pas arrivée.",
+     "p": [
+      "Espagnol : «¿Dónde está la cinta de equipajes?» (SSINE-ta dé é-ki-PA-khèss). Anglais : «Where is baggage claim?» (ouèr iz BA-guitch klèïm).",
+      "Valise manquante : espagnol «Mi maleta no ha llegado» (mi ma-LÉ-ta no a yé-GA-do), anglais «My bag didn't arrive».",
+      "Va au guichet des bagages perdus avant de quitter le hall et montre l'étiquette de ta valise."
+     ],
+     "q": "As-tu déjà attendu longtemps au tapis à bagages ? Comment fais-tu passer le temps ?",
+     "c": "Prends en photo ta valise et son étiquette avant ton prochain voyage, et apprends à dire sa couleur dans une langue."
+    },
+    "it": {
+     "t": "Ritirare i bagagli",
+     "g": "Trovare il nastro bagagli e denunciare una valigia che non è arrivata.",
+     "p": [
+      "Spagnolo: «¿Dónde está la cinta de equipajes?» (SIN-ta de e-ki-PA-hes). Francese: «Où est le tapis à bagages ?» (ta-PI a ba-GAJ).",
+      "Valigia mancante: spagnolo «Mi maleta no ha llegado» (mi ma-LE-ta no a ie-GA-do), francese «Ma valise n'est pas arrivée».",
+      "Vai all'ufficio bagagli smarriti prima di lasciare la sala e mostra lo scontrino del bagaglio; in inglese «My bag didn't arrive»."
+     ],
+     "q": "Ti è mai capitato di aspettare a lungo al nastro bagagli? Come passi il tempo?",
+     "c": "Fotografa la tua valigia e l'etichetta prima del prossimo viaggio e impara a dirne il colore in una lingua."
+    },
+    "pt": {
+     "t": "Recolher a bagagem",
+     "g": "Encontrar o tapete da bagagem e reclamar uma mala que não chegou.",
+     "p": [
+      "Espanhol: «¿Dónde está la cinta de equipajes?» (SSIN-ta de e-ki-PÁ-rres). Francês: «Où est le tapis à bagages ?» (ta-PI a ba-GÁJ).",
+      "Mala perdida: espanhol «Mi maleta no ha llegado» (mi ma-LÉ-ta no a lhe-GÁ-do), francês «Ma valise n'est pas arrivée» (va-LIZ).",
+      "Vai ao balcão de bagagem perdida antes de saíres da sala e mostra a etiqueta da mala; em inglês, «My bag didn't arrive»."
+     ],
+     "q": "Já esperaste muito tempo no tapete da bagagem? Como passas o tempo?",
+     "c": "Tira uma foto à mala e à etiqueta antes da próxima viagem e aprende a dizer a cor dela numa língua."
+    },
+    "pt_BR": {
+     "t": "Retirar a bagagem",
+     "g": "Encontrar a esteira de bagagem e reclamar uma mala que não chegou.",
+     "p": [
+      "Espanhol: «¿Dónde está la cinta de equipajes?» (SSIN-ta de e-ki-PÁ-rres). Francês: «Où est le tapis à bagages ?» (ta-PI a ba-GÁJ).",
+      "Mala perdida: espanhol «Mi maleta no ha llegado» (mi ma-LÉ-ta no a je-GÁ-do), francês «Ma valise n'est pas arrivée» (va-LIZ).",
+      "Vá ao balcão de bagagem extraviada antes de sair da sala e mostre a etiqueta da mala; em inglês, «My bag didn't arrive»."
+     ],
+     "q": "Você já esperou muito tempo na esteira de bagagem? Como passa o tempo?",
+     "c": "Tire uma foto da mala e da etiqueta antes da próxima viagem e aprenda a dizer a cor dela num idioma."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buying a train ticket",
+     "g": "Ask for a single or return ticket, the platform and the next train.",
+     "p": [
+      "Spanish: «Un billete de ida, por favor» (bee-YEH-teh deh EE-da) = a single. «De ida y vuelta» (VWEL-ta) = a return.",
+      "French: «Un aller simple» (a-LAY SAMPL) = single, «un aller-retour» (a-lay ruh-TOOR) = return. «Quel quai ?» (kel KAY) = which platform?",
+      "Italian: «A che ora parte il prossimo treno?» (PROS-see-mo TREH-no) = when is the next train? Validate paper regional tickets first."
+     ],
+     "q": "Do you enjoy train journeys? Which train trip would you love to take one day?",
+     "c": "Ask for a return ticket to a city you like, in Spanish, French or Italian."
+    },
+    "de": {
+     "t": "Eine Fahrkarte kaufen",
+     "g": "Frag nach einfacher Fahrt oder Hin und zurück, dem Gleis und dem nächsten Zug.",
+     "p": [
+      "Spanisch: «Un billete de ida, por favor» (bi-JE-te de I-da) = einfache Fahrt. «De ida y vuelta» (BUEL-ta) = hin und zurück.",
+      "Französisch: «Un aller simple» (a-LE SSÄNPL) = einfach, «un aller-retour» (a-le rö-TUR) = hin und zurück. «Quel quai ?» = welches Gleis?",
+      "Italienisch: «A che ora parte il prossimo treno?» = Wann fährt der nächste Zug? Regionale Papiertickets vorher entwerten."
+     ],
+     "q": "Fährst du gern Zug? Welche Zugreise würdest du gern einmal machen?",
+     "c": "Verlange eine Hin- und Rückfahrkarte in eine Stadt, die du magst, auf Spanisch, Französisch oder Italienisch."
+    },
+    "es": {
+     "t": "Comprar un billete de tren",
+     "g": "Pide un billete de ida o de ida y vuelta, el andén y el próximo tren.",
+     "p": [
+      "Inglés: «A single to London, please» (a SIN-guel) = un billete de ida. «A return» (a ri-TERN) = de ida y vuelta (en EE. UU., «round trip»).",
+      "Francés: «Un aller simple» (a-LÉ SANPL) = ida, «un aller-retour» (a-le re-TUR) = ida y vuelta. «Quel quai ?» (kel KÉ) = ¿qué andén?",
+      "Italiano: «A che ora parte il prossimo treno?» = ¿a qué hora sale el próximo tren? Valida los billetes regionales de papel."
+     ],
+     "q": "¿Te gustan los viajes en tren? ¿Qué trayecto en tren te encantaría hacer algún día?",
+     "c": "Pide un billete de ida y vuelta a una ciudad que te guste, en inglés, francés o italiano."
+    },
+    "fr": {
+     "t": "Acheter un billet de train",
+     "g": "Demander un aller simple ou un aller-retour, le quai et le prochain train.",
+     "p": [
+      "Espagnol : «Un billete de ida, por favor» (bi-YÉ-té dé I-da) = un aller simple. «De ida y vuelta» (BOUÈL-ta) = un aller-retour.",
+      "Anglais : «A single, please» (a SIN-gueul) = aller simple, «a return» = aller-retour. «Which platform?» = quel quai ?",
+      "Italien : «A che ora parte il prossimo treno?» = à quelle heure part le prochain train ? Composte les billets régionaux papier."
+     ],
+     "q": "Aimes-tu les voyages en train ? Quel trajet en train rêverais-tu de faire un jour ?",
+     "c": "Demande un aller-retour pour une ville que tu aimes, en espagnol, en anglais ou en italien."
+    },
+    "it": {
+     "t": "Comprare un biglietto del treno",
+     "g": "Chiedere un biglietto di sola andata o andata e ritorno, il binario e il prossimo treno.",
+     "p": [
+      "Spagnolo: «Un billete de ida, por favor» (bi-IE-te de I-da) = sola andata. «De ida y vuelta» (BUEL-ta) = andata e ritorno.",
+      "Francese: «Un aller simple» (a-LÉ SẼPL) = sola andata, «un aller-retour» (a-le rö-TUR) = andata e ritorno. «Quel quai ?» = quale binario?",
+      "Inglese: «When is the next train?» (uen is de nekst TREIN) = quando parte il prossimo treno? «Which platform?» = quale binario?"
+     ],
+     "q": "Ti piacciono i viaggi in treno? Quale tragitto in treno ti piacerebbe fare un giorno?",
+     "c": "Chiedi un biglietto di andata e ritorno per una città che ti piace, in spagnolo, francese o inglese."
+    },
+    "pt": {
+     "t": "Comprar um bilhete de comboio",
+     "g": "Pedir um bilhete de ida ou de ida e volta, a linha e o próximo comboio.",
+     "p": [
+      "Espanhol: «Un billete de ida, por favor» (bi-LHÉ-te de Í-da) = só ida. «De ida y vuelta» (BUÉL-ta) = ida e volta.",
+      "Francês: «Un aller simple» (a-LÊ SÃPL) = só ida, «un aller-retour» (a-lê re-TUR) = ida e volta. «Quel quai ?» (kél KÉ) = que linha?",
+      "Italiano: «A che ora parte il prossimo treno?» = a que horas sai o próximo comboio? Valida os bilhetes regionais em papel."
+     ],
+     "q": "Gostas de viajar de comboio? Que viagem de comboio adoravas fazer um dia?",
+     "c": "Pede um bilhete de ida e volta para uma cidade de que gostes, em espanhol, francês ou italiano."
+    },
+    "pt_BR": {
+     "t": "Comprar uma passagem de trem",
+     "g": "Pedir uma passagem só de ida ou de ida e volta, a plataforma e o próximo trem.",
+     "p": [
+      "Espanhol: «Un billete de ida, por favor» (bi-JÉ-te de Í-da) = só ida. «De ida y vuelta» (BUÉL-ta) = ida e volta.",
+      "Francês: «Un aller simple» (a-LÊ SÃPL) = só ida, «un aller-retour» (a-lê re-TUR) = ida e volta. «Quel quai ?» (kél KÉ) = qual plataforma?",
+      "Italiano: «A che ora parte il prossimo treno?» = que horas sai o próximo trem? Valide os bilhetes regionais de papel."
+     ],
+     "q": "Você gosta de viajar de trem? Que viagem de trem adoraria fazer um dia?",
+     "c": "Peça uma passagem de ida e volta para uma cidade de que você gosta, em espanhol, francês ou italiano."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking the bus",
+     "g": "Ask if a bus goes to your stop and tell the driver where you want to get off.",
+     "p": [
+      "Spanish: «¿Este autobús va al centro?» (ES-teh ow-to-BOOS va al SEN-tro) = does this bus go to the centre?",
+      "Ask for a heads-up: Spanish «¿Me avisa cuando lleguemos?» (meh a-VEE-sa KWAN-do yeh-GEH-mos) = will you tell me when we arrive?",
+      "Getting off: French «Je descends au prochain arrêt» (zhuh deh-SAHN oh pro-SHAN na-REH), Italian «Scendo alla prossima» (SHEN-do)."
+     ],
+     "q": "Do you like taking local buses when you travel, or do you prefer to walk or ride the metro?",
+     "c": "Pick a bus route near you and practise asking if it goes to the centre, in a new language."
+    },
+    "de": {
+     "t": "Mit dem Bus fahren",
+     "g": "Frag, ob ein Bus zu deiner Haltestelle fährt, und sag dem Fahrer, wo du aussteigen willst.",
+     "p": [
+      "Spanisch: «¿Este autobús va al centro?» (ES-te au-to-BUS wa al SSEN-tro) = Fährt dieser Bus ins Zentrum?",
+      "Bescheid sagen lassen: Spanisch «¿Me avisa cuando lleguemos?» (me a-WI-ssa KUAN-do je-GE-mos) = Sagen Sie mir Bescheid, wenn wir da sind?",
+      "Aussteigen: Französisch «Je descends au prochain arrêt» (schö de-SSAN o pro-SCHÄN na-RÄ), Italienisch «Scendo alla prossima» (SCHEN-do)."
+     ],
+     "q": "Fährst du auf Reisen gern mit Stadtbussen, oder gehst du lieber zu Fuß oder nimmst die U-Bahn?",
+     "c": "Such dir eine Buslinie in deiner Nähe aus und übe die Frage, ob sie ins Zentrum fährt, in einer neuen Sprache."
+    },
+    "es": {
+     "t": "Coger el autobús",
+     "g": "Pregunta si un autobús va a tu parada y dile al conductor dónde quieres bajar.",
+     "p": [
+      "Inglés: «Does this bus go to the centre?» (das dis bas gou tu de SEN-ter) = ¿este autobús va al centro?",
+      "Pide aviso: inglés «Can you tell me when to get off?» (ken yu tel mi uen tu guet OF) = ¿me avisa cuándo bajar?",
+      "Bajarte: francés «Je descends au prochain arrêt» (yə de-SAN o pro-SHAN na-RÉ), italiano «Scendo alla prossima» (SHEN-do)."
+     ],
+     "q": "¿Te gusta usar los autobuses locales cuando viajas, o prefieres caminar o ir en metro?",
+     "c": "Elige una línea de autobús cercana y practica preguntar si va al centro en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Prendre le bus",
+     "g": "Demander si un bus va à ton arrêt et dire au chauffeur où tu veux descendre.",
+     "p": [
+      "Espagnol : «¿Este autobús va al centro?» (ÈSS-té aou-to-BOUSS va al SSÈNE-tro) = ce bus va au centre ?",
+      "Demander qu'on te prévienne : espagnol «¿Me avisa cuando lleguemos?» (mé a-VI-ssa KOUANE-do yé-GUÉ-moss) = vous me prévenez ?",
+      "Descendre : anglais «I'd like to get off here» (aïd laïk tou guèt OF), italien «Scendo alla prossima» (CHÈNE-do) = je descends au prochain."
+     ],
+     "q": "Aimes-tu prendre les bus locaux en voyage, ou préfères-tu marcher ou prendre le métro ?",
+     "c": "Choisis une ligne de bus près de chez toi et entraîne-toi à demander si elle va au centre, dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Prendere l'autobus",
+     "g": "Chiedere se un autobus va alla tua fermata e dire all'autista dove vuoi scendere.",
+     "p": [
+      "Spagnolo: «¿Este autobús va al centro?» (ES-te au-to-BUS va al SEN-tro) = questo autobus va in centro?",
+      "Chiedi un avviso: spagnolo «¿Me avisa cuando lleguemos?» (me a-VI-sa KUAN-do ie-GHE-mos) = mi avvisa quando arriviamo?",
+      "Scendere: francese «Je descends au prochain arrêt» (jə de-SAN o pro-SCẼ na-RÈ), inglese «I'd like to get off here»."
+     ],
+     "q": "Ti piace usare gli autobus locali in viaggio, o preferisci camminare o prendere la metro?",
+     "c": "Scegli una linea di autobus vicino a te ed esercitati a chiedere se va in centro, in una lingua nuova."
+    },
+    "pt": {
+     "t": "Apanhar o autocarro",
+     "g": "Perguntar se um autocarro vai à tua paragem e dizer ao motorista onde queres sair.",
+     "p": [
+      "Espanhol: «¿Este autobús va al centro?» (ÉS-te au-to-BUS va al SSÉN-tro) = este autocarro vai ao centro?",
+      "Pede um aviso: espanhol «¿Me avisa cuando lleguemos?» (me a-VI-ssa KUÁN-do lhe-GUÊ-mos) = avisa-me quando chegarmos?",
+      "Sair: francês «Je descends au prochain arrêt» (je de-SSÃ ô pro-CHÃ na-RÉ), italiano «Scendo alla prossima» (CHÊN-do)."
+     ],
+     "q": "Gostas de andar de autocarro local quando viajas, ou preferes caminhar ou ir de metro?",
+     "c": "Escolhe uma carreira de autocarro perto de ti e treina perguntar se vai ao centro, numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Pegar o ônibus",
+     "g": "Perguntar se um ônibus vai até o seu ponto e dizer ao motorista onde quer descer.",
+     "p": [
+      "Espanhol: «¿Este autobús va al centro?» (ÉS-te au-to-BUS va al SSÉN-tro) = este ônibus vai para o centro?",
+      "Peça um aviso: espanhol «¿Me avisa cuando lleguemos?» (me a-VI-ssa KUÁN-do je-GUÊ-mos) = me avisa quando a gente chegar?",
+      "Descer: francês «Je descends au prochain arrêt» (je de-SSÃ ô pro-CHÃ na-RÉ), italiano «Scendo alla prossima» (CHÊN-do)."
+     ],
+     "q": "Você gosta de pegar ônibus local quando viaja, ou prefere caminhar ou ir de metrô?",
+     "c": "Escolha uma linha de ônibus perto de você e treine perguntar se ela vai ao centro, num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using the metro",
+     "g": "Ask which line to take, where to change and which exit to use.",
+     "p": [
+      "Spanish: «¿Qué línea va a la playa?» (keh LEE-neh-a) = which line goes to the beach? Lines show the final station as direction.",
+      "Changing: Spanish «¿Dónde hago transbordo?» (DON-deh A-go trans-BOR-do); in French, follow signs for «Correspondance» (ko-res-pon-DAHNS).",
+      "Exits: Spanish «¿Qué salida es para el museo?» (sa-LEE-da), Italian «Quale uscita per il museo?» (oo-SHEE-ta). Big stations have many."
+     ],
+     "q": "Have you ever got lost in a big metro system? Which city's metro do you find easiest?",
+     "c": "Open a metro map of a city you love and plan a route out loud, naming the line and the change."
+    },
+    "de": {
+     "t": "Mit der U-Bahn fahren",
+     "g": "Frag, welche Linie du nimmst, wo du umsteigst und welchen Ausgang du nutzt.",
+     "p": [
+      "Spanisch: «¿Qué línea va a la playa?» (ke LI-ne-a) = Welche Linie fährt zum Strand? Linien zeigen die Endstation als Richtung.",
+      "Umsteigen: Spanisch «¿Dónde hago transbordo?» (DON-de A-go trans-BOR-do); auf Französisch folgst du «Correspondance» (ko-res-pon-DANS).",
+      "Ausgänge: Spanisch «¿Qué salida es para el museo?» Italienisch «Quale uscita per il museo?» (u-SCHI-ta). Große Stationen haben mehrere."
+     ],
+     "q": "Hast du dich schon einmal in einem großen U-Bahn-Netz verirrt? Welche U-Bahn findest du am einfachsten?",
+     "c": "Öffne den U-Bahn-Plan einer Lieblingsstadt und plane laut eine Route mit Linie und Umstieg."
+    },
+    "es": {
+     "t": "Usar el metro",
+     "g": "Pregunta qué línea tomar, dónde cambiar y qué salida usar.",
+     "p": [
+      "Inglés: «Which line goes to the airport?» (uich lain gous tu di ER-port) = ¿qué línea va al aeropuerto? Mira la estación final.",
+      "Cambiar: inglés «Where do I change?» (uer du ai CHEINCH); en francés sigue los carteles de «Correspondance» (ko-res-pon-DANS).",
+      "Salidas: inglés «Which exit for the museum?» italiano «Quale uscita per il museo?» (u-SHI-ta). Las estaciones grandes tienen muchas."
+     ],
+     "q": "¿Te has perdido alguna vez en un metro grande? ¿Qué metro te parece el más fácil?",
+     "c": "Abre el plano del metro de una ciudad que te guste y planea en voz alta una ruta con línea y transbordo."
+    },
+    "fr": {
+     "t": "Prendre le métro",
+     "g": "Demander quelle ligne prendre, où changer et quelle sortie utiliser.",
+     "p": [
+      "Espagnol : «¿Qué línea va a la playa?» (ké LI-né-a) = quelle ligne va à la plage ? Les lignes affichent le terminus comme direction.",
+      "Changer : espagnol «¿Dónde hago transbordo?» (DONE-dé A-go trans-BOR-do) ; en anglais, «Where do I change?» (ouèr dou aï TCHÈÏNDJ).",
+      "Sorties : espagnol «¿Qué salida es para el museo?» italien «Quale uscita per il museo?» (ou-CHI-ta). Les grandes stations en ont plusieurs."
+     ],
+     "q": "T'es-tu déjà perdu dans un grand métro ? Quel métro trouves-tu le plus simple ?",
+     "c": "Ouvre le plan du métro d'une ville que tu aimes et prépare à voix haute un trajet avec ligne et correspondance."
+    },
+    "it": {
+     "t": "Usare la metropolitana",
+     "g": "Chiedere quale linea prendere, dove cambiare e quale uscita usare.",
+     "p": [
+      "Spagnolo: «¿Qué línea va a la playa?» (ke LI-ne-a) = quale linea va alla spiaggia? Le linee indicano il capolinea come direzione.",
+      "Cambiare: spagnolo «¿Dónde hago transbordo?» (DON-de A-go trans-BOR-do); in francese segui i cartelli «Correspondance».",
+      "Uscite: spagnolo «¿Qué salida es para el museo?» (sa-LI-da), inglese «Which exit for the museum?». Le grandi stazioni ne hanno tante."
+     ],
+     "q": "Ti sei mai perso in una grande metropolitana? Quale metro trovi più facile?",
+     "c": "Apri la mappa della metro di una città che ami e pianifica ad alta voce un percorso con linea e cambio."
+    },
+    "pt": {
+     "t": "Andar de metro",
+     "g": "Perguntar que linha apanhar, onde mudar e que saída usar.",
+     "p": [
+      "Espanhol: «¿Qué línea va a la playa?» (ke LI-ne-a) = que linha vai à praia? As linhas indicam a estação final como direção.",
+      "Mudar: espanhol «¿Dónde hago transbordo?» (DÔN-de Á-go trans-BÔR-do); em francês segue as placas «Correspondance».",
+      "Saídas: espanhol «¿Qué salida es para el museo?» italiano «Quale uscita per il museo?» (u-CHI-ta). As grandes estações têm muitas."
+     ],
+     "q": "Já te perdeste num metro grande? Que metro achas mais fácil?",
+     "c": "Abre o mapa do metro de uma cidade de que gostes e planeia em voz alta um trajeto com linha e mudança."
+    },
+    "pt_BR": {
+     "t": "Usar o metrô",
+     "g": "Perguntar que linha pegar, onde fazer baldeação e qual saída usar.",
+     "p": [
+      "Espanhol: «¿Qué línea va a la playa?» (ke LI-ne-a) = que linha vai para a praia? As linhas indicam a estação final como sentido.",
+      "Baldeação: espanhol «¿Dónde hago transbordo?» (DÔN-de Á-go trans-BÔR-do); em francês siga as placas «Correspondance».",
+      "Saídas: espanhol «¿Qué salida es para el museo?» (sa-LI-da), italiano «Quale uscita per il museo?» (u-CHI-ta). Estações grandes têm muitas."
+     ],
+     "q": "Você já se perdeu num metrô grande? Qual metrô você acha mais fácil?",
+     "c": "Abra o mapa do metrô de uma cidade de que você gosta e planeje em voz alta um trajeto com linha e baldeação."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking a taxi",
+     "g": "Give an address, ask about the fare and ask for a receipt.",
+     "p": [
+      "Show the address and say: Spanish «A esta dirección, por favor» (dee-rek-SYON), French «À cette adresse, s'il vous plaît».",
+      "Fare: Spanish «¿Cuánto costará más o menos?» (kos-ta-RA) = roughly how much? Use official taxis and check the meter is on.",
+      "Receipt: Spanish «¿Me da un recibo?» (reh-SEE-bo), French «Je peux avoir un reçu ?» (ruh-SEW), Italian «Mi fa la ricevuta?»."
+     ],
+     "q": "Do you prefer taxis, ride apps or public transport when you arrive somewhere late at night?",
+     "c": "Write one address you know and practise giving it to a taxi driver in two languages."
+    },
+    "de": {
+     "t": "Taxi fahren",
+     "g": "Nenne eine Adresse, frag nach dem Fahrpreis und bitte um eine Quittung.",
+     "p": [
+      "Zeig die Adresse und sag: Spanisch «A esta dirección, por favor» (di-rek-SSJON), Französisch «À cette adresse, s'il vous plaît».",
+      "Preis: Spanisch «¿Cuánto costará más o menos?» (kos-ta-RA) = Wie viel ungefähr? Nimm offizielle Taxis und achte auf das Taxameter.",
+      "Quittung: Spanisch «¿Me da un recibo?» (re-SSI-bo), Französisch «Je peux avoir un reçu ?» (rö-SSÜ), Italienisch «Mi fa la ricevuta?»."
+     ],
+     "q": "Nimmst du lieber ein Taxi, eine Fahr-App oder öffentliche Verkehrsmittel, wenn du spät nachts ankommst?",
+     "c": "Schreib eine Adresse auf, die du kennst, und übe, sie einem Taxifahrer in zwei Sprachen zu nennen."
+    },
+    "es": {
+     "t": "Tomar un taxi",
+     "g": "Da una dirección, pregunta por la tarifa y pide un recibo.",
+     "p": [
+      "Enseña la dirección y di: inglés «To this address, please» (tu dis a-DRES pliis), francés «À cette adresse, s'il vous plaît».",
+      "Tarifa: inglés «Roughly how much will it be?» (RAF-li jau mach) = ¿cuánto costará más o menos? Usa taxis oficiales con taxímetro.",
+      "Recibo: inglés «Can I have a receipt?» (ri-SIT), francés «Je peux avoir un reçu ?» (re-SÜ), italiano «Mi fa la ricevuta?»."
+     ],
+     "q": "¿Prefieres taxi, apps de transporte o transporte público cuando llegas a un sitio de noche?",
+     "c": "Escribe una dirección que conozcas y practica dársela a un taxista en dos idiomas."
+    },
+    "fr": {
+     "t": "Prendre un taxi",
+     "g": "Donner une adresse, demander le prix et réclamer un reçu.",
+     "p": [
+      "Montre l'adresse et dis : espagnol «A esta dirección, por favor» (di-rèk-SSIONE), anglais «To this address, please».",
+      "Prix : espagnol «¿Cuánto costará más o menos?» (koss-ta-RA) = ça coûtera combien environ ? Prends des taxis officiels avec compteur.",
+      "Reçu : espagnol «¿Me da un recibo?» (ré-SSI-bo), anglais «Can I have a receipt?» (ri-SSIT), italien «Mi fa la ricevuta?»."
+     ],
+     "q": "Préfères-tu le taxi, une appli de VTC ou les transports publics quand tu arrives tard le soir ?",
+     "c": "Écris une adresse que tu connais et entraîne-toi à la donner à un chauffeur dans deux langues."
+    },
+    "it": {
+     "t": "Prendere un taxi",
+     "g": "Dare un indirizzo, chiedere la tariffa e chiedere la ricevuta.",
+     "p": [
+      "Mostra l'indirizzo e di': spagnolo «A esta dirección, por favor» (di-rek-SION), francese «À cette adresse, s'il vous plaît».",
+      "Tariffa: spagnolo «¿Cuánto costará más o menos?» (kos-ta-RA) = quanto costerà più o meno? Usa taxi ufficiali con tassametro.",
+      "Ricevuta: spagnolo «¿Me da un recibo?» (re-SI-bo), francese «Je peux avoir un reçu ?» (rö-SÜ), inglese «Can I have a receipt?»."
+     ],
+     "q": "Preferisci taxi, app di trasporto o mezzi pubblici quando arrivi in un posto a tarda sera?",
+     "c": "Scrivi un indirizzo che conosci ed esercitati a darlo a un tassista in due lingue."
+    },
+    "pt": {
+     "t": "Apanhar um táxi",
+     "g": "Dar uma morada, perguntar o preço e pedir um recibo.",
+     "p": [
+      "Mostra a morada e diz: espanhol «A esta dirección, por favor» (di-rek-SSIÔN), francês «À cette adresse, s'il vous plaît».",
+      "Preço: espanhol «¿Cuánto costará más o menos?» (kos-ta-RÁ) = quanto vai custar mais ou menos? Usa táxis oficiais com taxímetro.",
+      "Recibo: espanhol «¿Me da un recibo?» (re-SSI-bo), francês «Je peux avoir un reçu ?» (re-SSÜ), italiano «Mi fa la ricevuta?»."
+     ],
+     "q": "Preferes táxi, aplicações de transporte ou transportes públicos quando chegas a algum lado à noite?",
+     "c": "Escreve uma morada que conheças e treina dá-la a um taxista em duas línguas."
+    },
+    "pt_BR": {
+     "t": "Pegar um táxi",
+     "g": "Dar um endereço, perguntar o preço e pedir um recibo.",
+     "p": [
+      "Mostre o endereço e diga: espanhol «A esta dirección, por favor» (di-rek-SSIÔN), francês «À cette adresse, s'il vous plaît».",
+      "Preço: espanhol «¿Cuánto costará más o menos?» (kos-ta-RÁ) = quanto vai custar mais ou menos? Use táxis oficiais com taxímetro.",
+      "Recibo: espanhol «¿Me da un recibo?» (re-SSI-bo), francês «Je peux avoir un reçu ?» (re-SSÜ), italiano «Mi fa la ricevuta?»."
+     ],
+     "q": "Você prefere táxi, aplicativo de transporte ou transporte público quando chega a algum lugar à noite?",
+     "c": "Escreva um endereço que você conhece e treine dizê-lo a um taxista em dois idiomas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ride apps and pickup points",
+     "g": "Message a driver, confirm your location and check the car details.",
+     "p": [
+      "Short messages: Spanish «Estoy en la puerta principal» (PWER-ta preen-see-PAL) = I am at the main entrance. «Llego en dos minutos».",
+      "Describe yourself: Spanish «Llevo una chaqueta roja» (YEH-vo) = I am wearing a red jacket; French «Je suis devant l'entrée».",
+      "Check the plate before getting in: Spanish «la matrícula», French «la plaque», Italian «la targa». Then ask «¿Para Ana?»."
+     ],
+     "q": "Do you use ride apps when you travel? What do you like or dislike about them?",
+     "c": "Write three short pickup messages in a new language: where you are, what you wear, when you arrive."
+    },
+    "de": {
+     "t": "Fahr-Apps und Abholpunkte",
+     "g": "Schreib dem Fahrer, bestätige deinen Standort und prüfe die Autodaten.",
+     "p": [
+      "Kurze Nachrichten: Spanisch «Estoy en la puerta principal» (PUER-ta prin-ssi-PAL) = Ich bin am Haupteingang. «Llego en dos minutos».",
+      "Beschreib dich: Spanisch «Llevo una chaqueta roja» (JE-wo) = Ich trage eine rote Jacke; Französisch «Je suis devant l'entrée».",
+      "Prüf vor dem Einsteigen das Kennzeichen: Spanisch «la matrícula», Französisch «la plaque», Italienisch «la targa». Dann «¿Para Ana?»."
+     ],
+     "q": "Nutzt du auf Reisen Fahr-Apps? Was gefällt dir daran, was nicht?",
+     "c": "Schreib drei kurze Abholnachrichten in einer neuen Sprache: wo du bist, was du trägst, wann du kommst."
+    },
+    "es": {
+     "t": "Apps de transporte y puntos de recogida",
+     "g": "Escribe al conductor, confirma tu ubicación y comprueba los datos del coche.",
+     "p": [
+      "Mensajes cortos: inglés «I'm at the main entrance» (aim at de mein EN-trans) = estoy en la entrada principal. «Coming in two minutes».",
+      "Descríbete: inglés «I'm wearing a red jacket» (aim UE-ring a red YA-ket); francés «Je suis devant l'entrée» = estoy delante de la entrada.",
+      "Mira la matrícula antes de subir: inglés «number plate», francés «la plaque», italiano «la targa». Luego pregunta «For Ana?»."
+     ],
+     "q": "¿Usas apps de transporte cuando viajas? ¿Qué te gusta o no te gusta de ellas?",
+     "c": "Escribe tres mensajes cortos de recogida en un idioma nuevo: dónde estás, qué llevas puesto, cuándo llegas."
+    },
+    "fr": {
+     "t": "Applis de VTC et points de rendez-vous",
+     "g": "Écrire au chauffeur, confirmer ta position et vérifier la voiture.",
+     "p": [
+      "Messages courts : espagnol «Estoy en la puerta principal» (POUÈR-ta prine-ssi-PAL) = je suis à l'entrée principale. «Llego en dos minutos».",
+      "Te décrire : espagnol «Llevo una chaqueta roja» (YÉ-vo) = je porte une veste rouge ; anglais «I'm at the main entrance».",
+      "Vérifie la plaque avant de monter : espagnol «la matrícula», anglais «number plate», italien «la targa». Puis demande «¿Para Ana?»."
+     ],
+     "q": "Utilises-tu des applis de VTC en voyage ? Qu'est-ce qui te plaît ou te déplaît ?",
+     "c": "Écris trois messages courts dans une nouvelle langue : où tu es, ce que tu portes, quand tu arrives."
+    },
+    "it": {
+     "t": "App di trasporto e punti di ritiro",
+     "g": "Scrivere all'autista, confermare la posizione e controllare i dati dell'auto.",
+     "p": [
+      "Messaggi brevi: spagnolo «Estoy en la puerta principal» (PUER-ta prin-si-PAL) = sono all'ingresso principale. «Llego en dos minutos».",
+      "Descriviti: spagnolo «Llevo una chaqueta roja» (IE-vo) = indosso una giacca rossa; francese «Je suis devant l'entrée».",
+      "Controlla la targa prima di salire: spagnolo «la matrícula», francese «la plaque», inglese «number plate». Poi chiedi «¿Para Ana?»."
+     ],
+     "q": "Usi app di trasporto quando viaggi? Cosa ti piace o non ti piace?",
+     "c": "Scrivi tre brevi messaggi in una lingua nuova: dove sei, cosa indossi, quando arrivi."
+    },
+    "pt": {
+     "t": "Apps de transporte e pontos de recolha",
+     "g": "Escrever ao motorista, confirmar a tua localização e verificar o carro.",
+     "p": [
+      "Mensagens curtas: espanhol «Estoy en la puerta principal» (PUÉR-ta prin-ssi-PÁL) = estou na entrada principal. «Llego en dos minutos».",
+      "Descreve-te: espanhol «Llevo una chaqueta roja» (LHÉ-vo) = tenho um casaco vermelho; francês «Je suis devant l'entrée».",
+      "Confirma a matrícula antes de entrar: espanhol «la matrícula», francês «la plaque», italiano «la targa». Depois pergunta «¿Para Ana?»."
+     ],
+     "q": "Usas apps de transporte quando viajas? Do que gostas ou não gostas nelas?",
+     "c": "Escreve três mensagens curtas numa língua nova: onde estás, o que tens vestido, quando chegas."
+    },
+    "pt_BR": {
+     "t": "Apps de corrida e pontos de embarque",
+     "g": "Mandar mensagem ao motorista, confirmar sua localização e conferir o carro.",
+     "p": [
+      "Mensagens curtas: espanhol «Estoy en la puerta principal» (PUÉR-ta prin-ssi-PÁL) = estou na entrada principal. «Llego en dos minutos».",
+      "Descreva-se: espanhol «Llevo una chaqueta roja» (JÉ-vo) = estou de jaqueta vermelha; francês «Je suis devant l'entrée».",
+      "Confira a placa antes de entrar: espanhol «la matrícula», francês «la plaque», italiano «la targa». Depois pergunte «¿Para Ana?»."
+     ],
+     "q": "Você usa apps de corrida quando viaja? Do que gosta ou não gosta neles?",
+     "c": "Escreva três mensagens curtas num idioma novo: onde você está, o que está vestindo, quando chega."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking how long it takes",
+     "g": "Ask about journey time, delays and arrival times.",
+     "p": [
+      "Spanish: «¿Cuánto tarda?» (KWAN-to TAR-da) = how long does it take? French: «Ça prend combien de temps ?» (sa prahn kom-BYAN duh TAHN).",
+      "Delays: Spanish «¿Hay retraso?» (eye reh-TRA-so) = is there a delay? Boards show «retrasado», «en retard» or «in ritardo».",
+      "Arrival: Italian «A che ora arriva?» (a keh O-ra ar-REE-va) = what time does it arrive? «Quanto ci vuole?» = how long does it take?"
+     ],
+     "q": "How do you keep calm and cheerful when a train or flight is delayed?",
+     "c": "Ask how long a trip you take often lasts, in one language, and answer it yourself in minutes."
+    },
+    "de": {
+     "t": "Fragen, wie lange es dauert",
+     "g": "Frag nach Fahrzeit, Verspätungen und Ankunftszeiten.",
+     "p": [
+      "Spanisch: «¿Cuánto tarda?» (KUAN-to TAR-da) = Wie lange dauert es? Französisch: «Ça prend combien de temps ?» (ssa pran kom-BJÄN dö TAN).",
+      "Verspätung: Spanisch «¿Hay retraso?» (ai re-TRA-sso) = Gibt es Verspätung? Tafeln zeigen «retrasado», «en retard» oder «in ritardo».",
+      "Ankunft: Italienisch «A che ora arriva?» (a ke O-ra ar-RI-wa) = Wann kommt er an? «Quanto ci vuole?» = Wie lange dauert es?"
+     ],
+     "q": "Wie bleibst du ruhig und gut gelaunt, wenn ein Zug oder Flug Verspätung hat?",
+     "c": "Frag in einer Sprache, wie lange eine Strecke dauert, die du oft fährst, und antworte selbst in Minuten."
+    },
+    "es": {
+     "t": "Preguntar cuánto se tarda",
+     "g": "Pregunta por la duración del viaje, los retrasos y la hora de llegada.",
+     "p": [
+      "Inglés: «How long does it take?» (jau long das it TEIK) = ¿cuánto tarda? Francés: «Ça prend combien de temps ?» (sa pran kom-BIAN de TAN).",
+      "Retrasos: inglés «Is it delayed?» (is it di-LEID) = ¿va con retraso? Los paneles muestran «delayed», «en retard» o «in ritardo».",
+      "Llegada: italiano «A che ora arriva?» (a ke O-ra a-RRI-va) = ¿a qué hora llega? «Quanto ci vuole?» = ¿cuánto se tarda?"
+     ],
+     "q": "¿Cómo mantienes la calma y el buen humor cuando un tren o un vuelo se retrasa?",
+     "c": "Pregunta en un idioma cuánto dura un trayecto que haces a menudo y respóndete en minutos."
+    },
+    "fr": {
+     "t": "Demander combien de temps ça prend",
+     "g": "Poser des questions sur la durée du trajet, les retards et l'heure d'arrivée.",
+     "p": [
+      "Espagnol : «¿Cuánto tarda?» (KOUANE-to TAR-da) = ça prend combien de temps ? Anglais : «How long does it take?» (haou long doz it TÈÏK).",
+      "Retards : espagnol «¿Hay retraso?» (aï ré-TRA-sso) = il y a du retard ? Les écrans affichent «retrasado», «delayed» ou «in ritardo».",
+      "Arrivée : italien «A che ora arriva?» (a ké O-ra ar-RI-va) = il arrive à quelle heure ? «Quanto ci vuole?» = combien de temps ça prend ?"
+     ],
+     "q": "Comment restes-tu calme et de bonne humeur quand un train ou un vol est en retard ?",
+     "c": "Demande dans une langue la durée d'un trajet que tu fais souvent et réponds toi-même en minutes."
+    },
+    "it": {
+     "t": "Chiedere quanto ci vuole",
+     "g": "Fare domande su durata del viaggio, ritardi e orari di arrivo.",
+     "p": [
+      "Spagnolo: «¿Cuánto tarda?» (KUAN-to TAR-da) = quanto ci vuole? Francese: «Ça prend combien de temps ?» (sa pran kom-BIẼ dö TAN).",
+      "Ritardi: spagnolo «¿Hay retraso?» (ai re-TRA-so) = c'è ritardo? I tabelloni mostrano «retrasado», «en retard» o «delayed».",
+      "Arrivo: inglese «What time does it arrive?» (uot taim das it a-RAIV) = a che ora arriva? In francese: «Il arrive à quelle heure ?»."
+     ],
+     "q": "Come resti calmo e di buon umore quando un treno o un volo è in ritardo?",
+     "c": "Chiedi in una lingua quanto dura un tragitto che fai spesso e rispondi tu stesso in minuti."
+    },
+    "pt": {
+     "t": "Perguntar quanto tempo demora",
+     "g": "Perguntar pela duração da viagem, atrasos e horas de chegada.",
+     "p": [
+      "Espanhol: «¿Cuánto tarda?» (KUÁN-to TÁR-da) = quanto tempo demora? Francês: «Ça prend combien de temps ?» (sa prã kõ-BIÃ de TÃ).",
+      "Atrasos: espanhol «¿Hay retraso?» (ái rre-TRÁ-sso) = há atraso? Os painéis mostram «retrasado», «en retard» ou «in ritardo».",
+      "Chegada: italiano «A che ora arriva?» (a ke Ô-ra ar-RI-va) = a que horas chega? «Quanto ci vuole?» = quanto tempo demora?"
+     ],
+     "q": "Como manténs a calma e o bom humor quando um comboio ou um voo se atrasa?",
+     "c": "Pergunta numa língua quanto tempo demora um trajeto que fazes muitas vezes e responde tu em minutos."
+    },
+    "pt_BR": {
+     "t": "Perguntar quanto tempo leva",
+     "g": "Perguntar sobre duração da viagem, atrasos e horários de chegada.",
+     "p": [
+      "Espanhol: «¿Cuánto tarda?» (KUÁN-to TÁR-da) = quanto tempo leva? Francês: «Ça prend combien de temps ?» (sa prã kõ-BIÃ de TÃ).",
+      "Atrasos: espanhol «¿Hay retraso?» (ái rre-TRÁ-sso) = está atrasado? Os painéis mostram «retrasado», «en retard» ou «in ritardo».",
+      "Chegada: italiano «A che ora arriva?» (a ke Ô-ra ar-RI-va) = que horas chega? «Quanto ci vuole?» = quanto tempo leva?"
+     ],
+     "q": "Como você mantém a calma e o bom humor quando um trem ou voo atrasa?",
+     "c": "Pergunte num idioma quanto tempo leva um trajeto que você faz sempre e responda você mesmo em minutos."
+    }
+   }
+  }
+ ]
+}

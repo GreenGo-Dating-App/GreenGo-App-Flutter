@@ -1,0 +1,835 @@
+{
+ "topic": "music_theory",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Note values",
+     "g": "Learn whole, half, quarter and eighth notes and how long they last.",
+     "p": [
+      "Note shapes show length: a whole note is an open oval, a half note adds a stem, a quarter note is filled in.",
+      "An eighth note is a quarter note with a flag, or joined to others by a beam.",
+      "Each value is half of the one before: 1 whole = 2 halves = 4 quarters = 8 eighths."
+     ],
+     "q": "Does it help you to think of note values like slices of a pizza?",
+     "c": "Draw one whole note, two half notes, four quarter notes and eight eighth notes in a row."
+    },
+    "de": {
+     "t": "Notenwerte",
+     "g": "Ganze, halbe, Viertel- und Achtelnoten kennenlernen und wie lange sie dauern.",
+     "p": [
+      "Die Form zeigt die Länge: Die ganze Note ist ein offenes Oval, die halbe hat einen Hals, die Viertel ist gefüllt.",
+      "Eine Achtelnote ist eine Viertel mit Fähnchen oder mit anderen durch einen Balken verbunden.",
+      "Jeder Wert ist die Hälfte des vorigen: 1 Ganze = 2 Halbe = 4 Viertel = 8 Achtel."
+     ],
+     "q": "Hilft es dir, Notenwerte wie Pizzastücke zu sehen?",
+     "c": "Zeichne eine ganze Note, zwei halbe, vier Viertel und acht Achtel in eine Reihe."
+    },
+    "es": {
+     "t": "Las figuras musicales",
+     "g": "Aprender la redonda, la blanca, la negra y la corchea, y cuánto dura cada una.",
+     "p": [
+      "La forma indica la duración: la redonda es un óvalo vacío, la blanca tiene plica y la negra está rellena.",
+      "La corchea es una negra con corchete, o unida a otras con una barra.",
+      "Cada figura vale la mitad de la anterior: 1 redonda = 2 blancas = 4 negras = 8 corcheas."
+     ],
+     "q": "¿Te ayuda imaginar las figuras como porciones de una pizza?",
+     "c": "Dibuja en fila una redonda, dos blancas, cuatro negras y ocho corcheas."
+    },
+    "fr": {
+     "t": "Les valeurs de notes",
+     "g": "Apprendre la ronde, la blanche, la noire et la croche, et leur durée.",
+     "p": [
+      "La forme indique la durée : la ronde est un ovale vide, la blanche a une hampe, la noire est pleine.",
+      "La croche est une noire avec un crochet, ou reliée à d'autres par une barre.",
+      "Chaque valeur vaut la moitié de la précédente : 1 ronde = 2 blanches = 4 noires = 8 croches."
+     ],
+     "q": "Ça t'aide d'imaginer les valeurs comme des parts de pizza ?",
+     "c": "Dessine à la suite une ronde, deux blanches, quatre noires et huit croches."
+    },
+    "it": {
+     "t": "Le figure musicali",
+     "g": "Imparare semibreve, minima, semiminima e croma, e quanto durano.",
+     "p": [
+      "La forma indica la durata: la semibreve è un ovale vuoto, la minima ha il gambo, la semiminima è piena.",
+      "La croma è una semiminima con una codetta, o unita ad altre da una travatura.",
+      "Ogni figura vale metà della precedente: 1 semibreve = 2 minime = 4 semiminime = 8 crome."
+     ],
+     "q": "Ti aiuta immaginare le figure come fette di una pizza?",
+     "c": "Disegna in fila una semibreve, due minime, quattro semiminime e otto crome."
+    },
+    "pt": {
+     "t": "As figuras musicais",
+     "g": "Aprender a semibreve, a mínima, a semínima e a colcheia, e quanto dura cada uma.",
+     "p": [
+      "A forma indica a duração: a semibreve é um oval vazio, a mínima tem haste e a semínima é cheia.",
+      "A colcheia é uma semínima com bandeirola, ou unida a outras por uma barra.",
+      "Cada figura vale metade da anterior: 1 semibreve = 2 mínimas = 4 semínimas = 8 colcheias."
+     ],
+     "q": "Ajuda-te imaginar as figuras como fatias de uma piza?",
+     "c": "Desenha em linha uma semibreve, duas mínimas, quatro semínimas e oito colcheias."
+    },
+    "pt_BR": {
+     "t": "As figuras musicais",
+     "g": "Aprender semibreve, mínima, semínima e colcheia, e quanto dura cada uma.",
+     "p": [
+      "A forma indica a duração: a semibreve é um oval vazio, a mínima tem haste e a semínima é preenchida.",
+      "A colcheia é uma semínima com bandeirola, ou ligada a outras por uma barra.",
+      "Cada figura vale metade da anterior: 1 semibreve = 2 mínimas = 4 semínimas = 8 colcheias."
+     ],
+     "q": "Ajuda você imaginar as figuras como fatias de uma pizza?",
+     "c": "Desenhe em fila uma semibreve, duas mínimas, quatro semínimas e oito colcheias."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting quarter notes",
+     "g": "Count 1 2 3 4 and clap steady quarter-note beats.",
+     "p": [
+      "In most music a quarter note lasts one beat.",
+      "Counting 1 2 3 4 out loud keeps your claps even and helps you know where you are.",
+      "Steady is more important than fast: aim for claps spaced like a ticking clock."
+     ],
+     "q": "Can you clap and count at the same time without speeding up?",
+     "c": "Clap 16 quarter notes while counting 1 2 3 4 four times, keeping every clap evenly spaced."
+    },
+    "de": {
+     "t": "Viertel zählen",
+     "g": "1 2 3 4 zählen und gleichmäßige Viertelschläge klatschen.",
+     "p": [
+      "In den meisten Stücken dauert eine Viertelnote einen Schlag.",
+      "Lautes Zählen von 1 2 3 4 hält dein Klatschen gleichmäßig und zeigt dir, wo du bist.",
+      "Gleichmäßig ist wichtiger als schnell: Klatsch so regelmäßig wie eine tickende Uhr."
+     ],
+     "q": "Kannst du gleichzeitig klatschen und zählen, ohne schneller zu werden?",
+     "c": "Klatsch 16 Viertel und zähl dabei viermal 1 2 3 4, alle Klatscher in gleichem Abstand."
+    },
+    "es": {
+     "t": "Contar negras",
+     "g": "Contar 1 2 3 4 y aplaudir negras con pulso constante.",
+     "p": [
+      "En casi toda la música, una negra dura un pulso.",
+      "Contar 1 2 3 4 en voz alta mantiene tus palmadas regulares y te ubica en la música.",
+      "Constante es más importante que rápido: busca palmadas como el tictac de un reloj."
+     ],
+     "q": "¿Puedes aplaudir y contar a la vez sin acelerarte?",
+     "c": "Aplaude 16 negras contando 1 2 3 4 cuatro veces, con todas las palmadas a la misma distancia."
+    },
+    "fr": {
+     "t": "Compter les noires",
+     "g": "Compter 1 2 3 4 et frapper des noires bien régulières.",
+     "p": [
+      "Dans la plupart des morceaux, une noire dure un temps.",
+      "Compter 1 2 3 4 à voix haute rend tes frappes régulières et t'aide à te repérer.",
+      "Régulier compte plus que rapide : vise des frappes espacées comme un tic-tac."
+     ],
+     "q": "Arrives-tu à frapper et compter en même temps sans accélérer ?",
+     "c": "Frappe 16 noires en comptant quatre fois 1 2 3 4, toutes bien espacées de la même façon."
+    },
+    "it": {
+     "t": "Contare le semiminime",
+     "g": "Contare 1 2 3 4 e battere semiminime regolari.",
+     "p": [
+      "Nella maggior parte della musica una semiminima dura un movimento.",
+      "Contare 1 2 3 4 ad alta voce rende regolari i battiti e ti aiuta a sapere dove sei.",
+      "Regolare conta più che veloce: punta a battiti distanziati come un orologio."
+     ],
+     "q": "Riesci a battere le mani e contare insieme senza accelerare?",
+     "c": "Batti 16 semiminime contando quattro volte 1 2 3 4, tutte alla stessa distanza."
+    },
+    "pt": {
+     "t": "Contar semínimas",
+     "g": "Contar 1 2 3 4 e bater semínimas regulares.",
+     "p": [
+      "Na maior parte da música, uma semínima dura um tempo.",
+      "Contar 1 2 3 4 em voz alta mantém as palmas regulares e ajuda-te a saber onde estás.",
+      "Regular é mais importante do que rápido: procura palmas espaçadas como um relógio."
+     ],
+     "q": "Consegues bater palmas e contar ao mesmo tempo sem acelerar?",
+     "c": "Bate 16 semínimas a contar quatro vezes 1 2 3 4, com todas as palmas à mesma distância."
+    },
+    "pt_BR": {
+     "t": "Contando semínimas",
+     "g": "Contar 1 2 3 4 e bater semínimas regulares.",
+     "p": [
+      "Na maioria das músicas, uma semínima dura um tempo.",
+      "Contar 1 2 3 4 em voz alta deixa as palmas regulares e ajuda você a se localizar.",
+      "Regular é mais importante que rápido: busque palmas espaçadas como um relógio."
+     ],
+     "q": "Você consegue bater palma e contar ao mesmo tempo sem acelerar?",
+     "c": "Bata 16 semínimas contando quatro vezes 1 2 3 4, todas as palmas com o mesmo espaço."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Half and whole notes",
+     "g": "Hold notes for two and four beats.",
+     "p": [
+      "A half note lasts two beats: clap on 1 and keep holding through 2.",
+      "A whole note lasts four beats, a full bar in 4/4.",
+      "When holding long notes, keep counting inside your head so you do not cut them short."
+     ],
+     "q": "Is it harder for you to hold a long note or to play many short ones?",
+     "c": "Sing ah on one note: hold it 4 beats, then two notes of 2 beats, then four of 1 beat, counting aloud."
+    },
+    "de": {
+     "t": "Halbe und ganze Noten",
+     "g": "Töne zwei und vier Schläge lang halten.",
+     "p": [
+      "Eine halbe Note dauert zwei Schläge: auf 1 spielen und über 2 hinweg halten.",
+      "Eine ganze Note dauert vier Schläge, einen vollen 4/4-Takt.",
+      "Zähl bei langen Tönen innerlich weiter, damit du sie nicht zu früh beendest."
+     ],
+     "q": "Fällt dir ein langer Ton oder viele kurze schwerer?",
+     "c": "Sing ah auf einem Ton: 4 Schläge halten, dann zwei halbe, dann vier Viertel, laut mitzählend."
+    },
+    "es": {
+     "t": "Blancas y redondas",
+     "g": "Mantener notas durante dos y cuatro pulsos.",
+     "p": [
+      "La blanca dura dos pulsos: suena en el 1 y se mantiene durante el 2.",
+      "La redonda dura cuatro pulsos, un compás entero de 4/4.",
+      "Al mantener notas largas, sigue contando por dentro para no cortarlas antes de tiempo."
+     ],
+     "q": "¿Qué te cuesta más: mantener una nota larga o tocar muchas cortas?",
+     "c": "Canta a en una nota: mantenla 4 pulsos, luego dos blancas y luego cuatro negras, contando en voz alta."
+    },
+    "fr": {
+     "t": "Blanches et rondes",
+     "g": "Tenir des notes pendant deux et quatre temps.",
+     "p": [
+      "La blanche dure deux temps : elle sonne sur 1 et se tient pendant 2.",
+      "La ronde dure quatre temps, une mesure entière en 4/4.",
+      "Pour tenir une note longue, continue de compter dans ta tête pour ne pas la couper trop tôt."
+     ],
+     "q": "C'est plus dur pour toi de tenir une note longue ou d'en jouer plein de courtes ?",
+     "c": "Chante a sur une note : tiens 4 temps, puis deux blanches, puis quatre noires, en comptant à voix haute."
+    },
+    "it": {
+     "t": "Minime e semibrevi",
+     "g": "Tenere le note per due e quattro movimenti.",
+     "p": [
+      "La minima dura due movimenti: suona sull'1 e si tiene durante il 2.",
+      "La semibreve dura quattro movimenti, una battuta intera in 4/4.",
+      "Tenendo note lunghe, continua a contare dentro di te per non accorciarle."
+     ],
+     "q": "È più difficile per te tenere una nota lunga o suonarne tante brevi?",
+     "c": "Canta a su una nota: tienila 4 movimenti, poi due minime, poi quattro semiminime, contando ad alta voce."
+    },
+    "pt": {
+     "t": "Mínimas e semibreves",
+     "g": "Segurar notas durante dois e quatro tempos.",
+     "p": [
+      "A mínima dura dois tempos: soa no 1 e mantém-se durante o 2.",
+      "A semibreve dura quatro tempos, um compasso inteiro em 4/4.",
+      "Ao segurar notas longas, continua a contar mentalmente para não as cortares antes do tempo."
+     ],
+     "q": "Custa-te mais segurar uma nota longa ou tocar muitas curtas?",
+     "c": "Canta á numa nota: segura 4 tempos, depois duas mínimas e depois quatro semínimas, a contar em voz alta."
+    },
+    "pt_BR": {
+     "t": "Mínimas e semibreves",
+     "g": "Segurar notas por dois e quatro tempos.",
+     "p": [
+      "A mínima dura dois tempos: soa no 1 e continua durante o 2.",
+      "A semibreve dura quatro tempos, um compasso inteiro em 4/4.",
+      "Ao segurar notas longas, continue contando na cabeça para não cortar antes da hora."
+     ],
+     "q": "O que é mais difícil para você: segurar uma nota longa ou tocar muitas curtas?",
+     "c": "Cante á numa nota: segure 4 tempos, depois duas mínimas e depois quatro semínimas, contando em voz alta."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eighth notes",
+     "g": "Split the beat in two and count 1 and 2 and.",
+     "p": [
+      "Two eighth notes fit into one beat, so they move twice as fast as quarter notes.",
+      "Count 1 and 2 and 3 and 4 and: numbers fall on the beat, and on the halfway point.",
+      "Tapping your foot on the numbers and clapping every syllable helps you feel the split."
+     ],
+     "q": "Can you hear eighth notes in the hi-hat of your favourite pop song?",
+     "c": "Tap your foot on 1 2 3 4 and clap eight even claps per bar, saying 1 and 2 and 3 and 4 and."
+    },
+    "de": {
+     "t": "Achtelnoten",
+     "g": "Den Schlag in zwei teilen und 1 und 2 und zählen.",
+     "p": [
+      "Zwei Achtel passen in einen Schlag, sie sind also doppelt so schnell wie Viertel.",
+      "Zähl 1 und 2 und 3 und 4 und: Die Zahlen liegen auf dem Schlag, das und genau dazwischen.",
+      "Mit dem Fuß auf die Zahlen tippen und jede Silbe klatschen hilft, die Teilung zu spüren."
+     ],
+     "q": "Hörst du Achtel in der Hi-Hat deines Lieblings-Popsongs?",
+     "c": "Tipp mit dem Fuß 1 2 3 4 und klatsch acht gleichmäßige Achtel pro Takt, dazu 1 und 2 und 3 und 4 und."
+    },
+    "es": {
+     "t": "Las corcheas",
+     "g": "Dividir el pulso en dos y contar 1 y 2 y.",
+     "p": [
+      "Dos corcheas caben en un pulso, así que van el doble de rápido que las negras.",
+      "Cuenta 1 y 2 y 3 y 4 y: los números caen en el pulso y la y justo a la mitad.",
+      "Marcar los números con el pie y aplaudir cada sílaba ayuda a sentir la división."
+     ],
+     "q": "¿Oyes corcheas en el charles de tu canción pop favorita?",
+     "c": "Marca 1 2 3 4 con el pie y aplaude ocho corcheas iguales por compás diciendo 1 y 2 y 3 y 4 y."
+    },
+    "fr": {
+     "t": "Les croches",
+     "g": "Diviser le temps en deux et compter 1 et 2 et.",
+     "p": [
+      "Deux croches tiennent dans un temps, elles vont donc deux fois plus vite que les noires.",
+      "Compte 1 et 2 et 3 et 4 et : les chiffres tombent sur le temps, le et pile au milieu.",
+      "Taper du pied sur les chiffres et frapper chaque syllabe aide à sentir la division."
+     ],
+     "q": "Entends-tu des croches dans le charleston de ta chanson pop préférée ?",
+     "c": "Tape du pied sur 1 2 3 4 et frappe huit croches égales par mesure en disant 1 et 2 et 3 et 4 et."
+    },
+    "it": {
+     "t": "Le crome",
+     "g": "Dividere il movimento in due e contare 1 e 2 e.",
+     "p": [
+      "Due crome stanno in un movimento, quindi vanno al doppio della velocità delle semiminime.",
+      "Conta 1 e 2 e 3 e 4 e: i numeri cadono sul movimento, la e esattamente a metà.",
+      "Battere il piede sui numeri e le mani su ogni sillaba aiuta a sentire la divisione."
+     ],
+     "q": "Senti le crome nel charleston della tua canzone pop preferita?",
+     "c": "Batti il piede su 1 2 3 4 e le mani otto crome uguali per battuta, dicendo 1 e 2 e 3 e 4 e."
+    },
+    "pt": {
+     "t": "As colcheias",
+     "g": "Dividir o tempo em dois e contar 1 e 2 e.",
+     "p": [
+      "Duas colcheias cabem num tempo, por isso andam ao dobro da velocidade das semínimas.",
+      "Conta 1 e 2 e 3 e 4 e: os números caem no tempo e o e mesmo a meio.",
+      "Bater o pé nos números e bater palmas em cada sílaba ajuda a sentir a divisão."
+     ],
+     "q": "Ouves colcheias no prato de choque da tua música pop preferida?",
+     "c": "Bate o pé em 1 2 3 4 e bate oito colcheias iguais por compasso a dizer 1 e 2 e 3 e 4 e."
+    },
+    "pt_BR": {
+     "t": "Colcheias",
+     "g": "Dividir o tempo em dois e contar 1 e 2 e.",
+     "p": [
+      "Duas colcheias cabem num tempo, então andam no dobro da velocidade das semínimas.",
+      "Conte 1 e 2 e 3 e 4 e: os números caem no tempo e o e bem no meio.",
+      "Bater o pé nos números e bater palma em cada sílaba ajuda a sentir a divisão."
+     ],
+     "q": "Você ouve colcheias no chimbal da sua música pop favorita?",
+     "c": "Bata o pé em 1 2 3 4 e bata oito colcheias iguais por compasso falando 1 e 2 e 3 e 4 e."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sixteenth notes",
+     "g": "Split the beat in four and count 1 e and a.",
+     "p": [
+      "Four sixteenth notes fit into one beat, twice as fast as eighth notes.",
+      "Count 1 e and a 2 e and a: the number is the beat, and is the middle, e and a fill the gaps.",
+      "Sixteenth notes have two flags or two beams, and they drive many funk and dance grooves."
+     ],
+     "q": "Which style of music do you think uses lots of fast sixteenth notes?",
+     "c": "Tap your foot slowly on each beat and say 1 e and a 2 e and a, clapping on every syllable."
+    },
+    "de": {
+     "t": "Sechzehntelnoten",
+     "g": "Den Schlag in vier teilen und 1 e und e zählen.",
+     "p": [
+      "Vier Sechzehntel passen in einen Schlag, doppelt so schnell wie Achtel.",
+      "Zähl 1 e und e 2 e und e: Die Zahl ist der Schlag, und ist die Mitte, die e füllen die Lücken.",
+      "Sechzehntel haben zwei Fähnchen oder zwei Balken und treiben viele Funk- und Dance-Grooves an."
+     ],
+     "q": "Welche Musikrichtung nutzt deiner Meinung nach viele schnelle Sechzehntel?",
+     "c": "Tipp langsam mit dem Fuß jeden Schlag und sag 1 e und e 2 e und e, klatschend auf jeder Silbe."
+    },
+    "es": {
+     "t": "Las semicorcheas",
+     "g": "Dividir el pulso en cuatro y contarlo con cuatro sílabas.",
+     "p": [
+      "Cuatro semicorcheas caben en un pulso, el doble de rápido que las corcheas.",
+      "Puedes contar 1 i y a 2 i y a, o usar sílabas como ta-ka-di-mi: el número o ta cae en el pulso.",
+      "Las semicorcheas llevan dos corchetes o dos barras, y mueven muchos ritmos de funk y baile."
+     ],
+     "q": "¿Qué estilo musical crees que usa muchas semicorcheas rápidas?",
+     "c": "Marca despacio cada pulso con el pie y di ta-ka-di-mi en cada uno, aplaudiendo cada sílaba."
+    },
+    "fr": {
+     "t": "Les doubles croches",
+     "g": "Diviser le temps en quatre et le compter en quatre syllabes.",
+     "p": [
+      "Quatre doubles croches tiennent dans un temps, deux fois plus vite que les croches.",
+      "Compte 1 i et a ou utilise des syllabes comme ta-ka-di-mi : le chiffre ou le ta tombe sur le temps.",
+      "Les doubles croches ont deux crochets ou deux barres, et animent beaucoup de grooves funk et dance."
+     ],
+     "q": "Selon toi, quel style utilise beaucoup de doubles croches rapides ?",
+     "c": "Tape lentement du pied chaque temps et dis ta-ka-di-mi sur chacun, en frappant chaque syllabe."
+    },
+    "it": {
+     "t": "Le semicrome",
+     "g": "Dividere il movimento in quattro e contarlo con quattro sillabe.",
+     "p": [
+      "Quattro semicrome stanno in un movimento, al doppio della velocità delle crome.",
+      "Puoi contare 1 e 2 e più veloce o usare sillabe come ta-ka-di-mi: il ta cade sul movimento.",
+      "Le semicrome hanno due codette o due travature e animano molti groove funk e dance."
+     ],
+     "q": "Secondo te quale genere usa tante semicrome veloci?",
+     "c": "Batti lentamente il piede su ogni movimento e di' ta-ka-di-mi su ciascuno, battendo ogni sillaba."
+    },
+    "pt": {
+     "t": "As semicolcheias",
+     "g": "Dividir o tempo em quatro e contá-lo com quatro sílabas.",
+     "p": [
+      "Quatro semicolcheias cabem num tempo, ao dobro da velocidade das colcheias.",
+      "Podes contar 1 i e a ou usar sílabas como ta-ka-di-mi: o número ou ta cai no tempo.",
+      "As semicolcheias têm duas bandeirolas ou duas barras e movem muitos ritmos de funk e dança."
+     ],
+     "q": "Que estilo musical achas que usa muitas semicolcheias rápidas?",
+     "c": "Bate devagar o pé em cada tempo e diz ta-ka-di-mi em cada um, batendo palmas em cada sílaba."
+    },
+    "pt_BR": {
+     "t": "Semicolcheias",
+     "g": "Dividir o tempo em quatro e contar com quatro sílabas.",
+     "p": [
+      "Quatro semicolcheias cabem num tempo, no dobro da velocidade das colcheias.",
+      "Você pode contar 1 i e a ou usar sílabas como ta-ka-di-mi: o número ou ta cai no tempo.",
+      "Semicolcheias têm duas bandeirolas ou duas barras e movem muitos ritmos de funk e dança."
+     ],
+     "q": "Que estilo musical você acha que usa muitas semicolcheias rápidas?",
+     "c": "Bata o pé devagar em cada tempo e diga ta-ka-di-mi em cada um, batendo palma em cada sílaba."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rests",
+     "g": "Learn the silent symbols that match each note value.",
+     "p": [
+      "Every note value has a matching rest that lasts exactly as long, but in silence.",
+      "A whole rest hangs below a line, a half rest sits on top, a quarter rest looks like a zigzag.",
+      "Keep counting through rests: silence still takes up time in the bar."
+     ],
+     "q": "Can you think of a song where a sudden silence makes a big impact?",
+     "c": "Clap 1 2 3 4 but stay silent on beat 3 each time, as if there were a quarter rest. Do eight bars."
+    },
+    "de": {
+     "t": "Pausen",
+     "g": "Die stillen Zeichen lernen, die zu jedem Notenwert passen.",
+     "p": [
+      "Zu jedem Notenwert gibt es eine Pause, die genauso lange dauert, nur still.",
+      "Die ganze Pause hängt unter einer Linie, die halbe sitzt darauf, die Viertelpause sieht wie ein Zickzack aus.",
+      "Zähl durch Pausen weiter: Auch Stille füllt Zeit im Takt."
+     ],
+     "q": "Fällt dir ein Lied ein, in dem eine plötzliche Stille viel bewirkt?",
+     "c": "Klatsch 1 2 3 4, aber bleib jedes Mal auf Schlag 3 still, wie bei einer Viertelpause. Acht Takte lang."
+    },
+    "es": {
+     "t": "Los silencios",
+     "g": "Aprender los símbolos de silencio que corresponden a cada figura.",
+     "p": [
+      "Cada figura tiene su silencio, que dura exactamente lo mismo pero sin sonido.",
+      "El de redonda cuelga bajo una línea, el de blanca se apoya encima, el de negra parece un zigzag.",
+      "Sigue contando durante los silencios: el silencio también ocupa tiempo en el compás."
+     ],
+     "q": "¿Recuerdas una canción donde un silencio repentino causa mucho efecto?",
+     "c": "Aplaude 1 2 3 4 pero calla siempre en el 3, como un silencio de negra. Hazlo durante ocho compases."
+    },
+    "fr": {
+     "t": "Les silences",
+     "g": "Apprendre les symboles silencieux qui correspondent à chaque valeur.",
+     "p": [
+      "Chaque valeur a son silence, qui dure exactement autant mais sans son : pause, demi-pause, soupir.",
+      "La pause pend sous une ligne, la demi-pause est posée dessus, le soupir ressemble à un zigzag.",
+      "Continue à compter pendant les silences : le silence prend aussi du temps dans la mesure."
+     ],
+     "q": "Connais-tu une chanson où un silence soudain fait beaucoup d'effet ?",
+     "c": "Frappe 1 2 3 4 mais tais-toi à chaque fois sur le 3, comme un soupir. Fais-le pendant huit mesures."
+    },
+    "it": {
+     "t": "Le pause",
+     "g": "Imparare i simboli di silenzio che corrispondono a ogni figura.",
+     "p": [
+      "Ogni figura ha la sua pausa, che dura esattamente quanto lei ma in silenzio.",
+      "La pausa di semibreve pende sotto una linea, quella di minima ci sta sopra, quella di semiminima è un zigzag.",
+      "Continua a contare nelle pause: anche il silenzio occupa tempo nella battuta."
+     ],
+     "q": "Ti viene in mente una canzone in cui un silenzio improvviso fa grande effetto?",
+     "c": "Batti 1 2 3 4 ma resta in silenzio sul 3 ogni volta, come una pausa di semiminima. Per otto battute."
+    },
+    "pt": {
+     "t": "As pausas",
+     "g": "Aprender os símbolos de silêncio que correspondem a cada figura.",
+     "p": [
+      "Cada figura tem a sua pausa, que dura exatamente o mesmo, mas em silêncio.",
+      "A pausa de semibreve fica pendurada numa linha, a de mínima pousada em cima, a de semínima parece um ziguezague.",
+      "Continua a contar nas pausas: o silêncio também ocupa tempo no compasso."
+     ],
+     "q": "Lembras-te de uma música em que um silêncio súbito causa grande efeito?",
+     "c": "Bate 1 2 3 4 mas fica calado sempre no 3, como uma pausa de semínima. Faz isto durante oito compassos."
+    },
+    "pt_BR": {
+     "t": "Pausas",
+     "g": "Aprender os símbolos de silêncio que correspondem a cada figura.",
+     "p": [
+      "Cada figura tem sua pausa, que dura exatamente o mesmo, só que em silêncio.",
+      "A pausa de semibreve fica pendurada na linha, a de mínima apoiada em cima, a de semínima parece um zigue-zague.",
+      "Continue contando nas pausas: o silêncio também ocupa tempo no compasso."
+     ],
+     "q": "Você lembra de uma música em que um silêncio repentino causa muito impacto?",
+     "c": "Bata 1 2 3 4 mas fique em silêncio sempre no 3, como uma pausa de semínima. Faça por oito compassos."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dotted notes",
+     "g": "See how a dot adds half of the note's value.",
+     "p": [
+      "A dot after a note adds half of its value to it.",
+      "A dotted half note lasts 2 + 1 = 3 beats, and a dotted quarter lasts 1 and a half beats.",
+      "Dotted rhythms give music a bouncy, swinging or marching feel."
+     ],
+     "q": "Do you know a tune with a long-short, bouncy rhythm?",
+     "c": "Clap a dotted half note (3 beats) then a quarter note (1 beat), four times, counting 1 2 3 4."
+    },
+    "de": {
+     "t": "Punktierte Noten",
+     "g": "Sehen, wie ein Punkt die Hälfte des Notenwerts dazugibt.",
+     "p": [
+      "Ein Punkt hinter einer Note verlängert sie um die Hälfte ihres Werts.",
+      "Eine punktierte Halbe dauert 2 + 1 = 3 Schläge, eine punktierte Viertel eineinhalb Schläge.",
+      "Punktierte Rhythmen klingen hüpfend, schwingend oder marschartig."
+     ],
+     "q": "Kennst du eine Melodie mit hüpfendem Lang-kurz-Rhythmus?",
+     "c": "Klatsch eine punktierte Halbe (3 Schläge) und eine Viertel (1 Schlag), viermal, und zähl 1 2 3 4."
+    },
+    "es": {
+     "t": "Las notas con puntillo",
+     "g": "Ver cómo un puntillo añade la mitad del valor de la nota.",
+     "p": [
+      "Un puntillo después de una nota le suma la mitad de su valor.",
+      "Una blanca con puntillo dura 2 + 1 = 3 pulsos, y una negra con puntillo, pulso y medio.",
+      "Los ritmos con puntillo dan a la música un aire saltarín, balanceado o de marcha."
+     ],
+     "q": "¿Conoces una melodía con un ritmo largo-corto y saltarín?",
+     "c": "Aplaude una blanca con puntillo (3 pulsos) y una negra (1 pulso), cuatro veces, contando 1 2 3 4."
+    },
+    "fr": {
+     "t": "Les notes pointées",
+     "g": "Voir comment un point ajoute la moitié de la valeur de la note.",
+     "p": [
+      "Un point placé après une note lui ajoute la moitié de sa valeur.",
+      "Une blanche pointée dure 2 + 1 = 3 temps, une noire pointée un temps et demi.",
+      "Les rythmes pointés donnent à la musique un caractère sautillant, balancé ou martial."
+     ],
+     "q": "Connais-tu un air au rythme long-court et sautillant ?",
+     "c": "Frappe une blanche pointée (3 temps) puis une noire (1 temps), quatre fois, en comptant 1 2 3 4."
+    },
+    "it": {
+     "t": "Le note puntate",
+     "g": "Vedere come il punto aggiunge metà del valore della nota.",
+     "p": [
+      "Un punto dopo una nota le aggiunge metà del suo valore.",
+      "Una minima puntata dura 2 + 1 = 3 movimenti, una semiminima puntata un movimento e mezzo.",
+      "I ritmi puntati danno alla musica un carattere saltellante, dondolante o da marcia."
+     ],
+     "q": "Conosci una melodia con un ritmo lungo-breve e saltellante?",
+     "c": "Batti una minima puntata (3 movimenti) e una semiminima (1), quattro volte, contando 1 2 3 4."
+    },
+    "pt": {
+     "t": "Notas com ponto",
+     "g": "Ver como o ponto de aumento acrescenta metade do valor da nota.",
+     "p": [
+      "Um ponto depois de uma nota acrescenta-lhe metade do seu valor.",
+      "Uma mínima com ponto dura 2 + 1 = 3 tempos, e uma semínima com ponto, um tempo e meio.",
+      "Os ritmos pontuados dão à música um ar saltitante, balançado ou de marcha."
+     ],
+     "q": "Conheces uma melodia com um ritmo longo-curto e saltitante?",
+     "c": "Bate uma mínima com ponto (3 tempos) e uma semínima (1 tempo), quatro vezes, a contar 1 2 3 4."
+    },
+    "pt_BR": {
+     "t": "Notas pontuadas",
+     "g": "Ver como o ponto de aumento acrescenta metade do valor da nota.",
+     "p": [
+      "Um ponto depois de uma nota soma metade do valor dela.",
+      "Uma mínima pontuada dura 2 + 1 = 3 tempos, e uma semínima pontuada, um tempo e meio.",
+      "Ritmos pontuados dão à música um jeito saltitante, gingado ou de marcha."
+     ],
+     "q": "Você conhece uma melodia com ritmo longo-curto e saltitante?",
+     "c": "Bata uma mínima pontuada (3 tempos) e uma semínima (1 tempo), quatro vezes, contando 1 2 3 4."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ties",
+     "g": "Join notes of the same pitch to hold them longer.",
+     "p": [
+      "A tie is a curved line joining two notes of the same pitch: you play the first and hold through the second.",
+      "Ties let a note last across a bar line or create lengths no single symbol can show.",
+      "A curve between different pitches is a slur, not a tie, and means play smoothly."
+     ],
+     "q": "Why do you think musicians need ties if dotted notes exist?",
+     "c": "Clap a quarter note tied to a half note: one clap, held for 3 beats. Then try it across a bar line."
+    },
+    "de": {
+     "t": "Haltebögen",
+     "g": "Noten gleicher Tonhöhe verbinden, um sie länger zu halten.",
+     "p": [
+      "Ein Haltebogen verbindet zwei Noten gleicher Höhe: Du spielst die erste und hältst über die zweite.",
+      "So kann ein Ton über den Taktstrich klingen oder Längen haben, die kein einzelnes Zeichen zeigt.",
+      "Ein Bogen zwischen verschiedenen Tönen ist ein Legatobogen, kein Haltebogen, und heißt gebunden."
+     ],
+     "q": "Warum brauchen Musiker Haltebögen, wenn es doch Punkte gibt?",
+     "c": "Klatsch eine Viertel mit Haltebogen zu einer Halben: ein Klatscher, 3 Schläge gehalten. Dann über den Taktstrich."
+    },
+    "es": {
+     "t": "Las ligaduras",
+     "g": "Unir notas de la misma altura para mantenerlas más tiempo.",
+     "p": [
+      "La ligadura de prolongación une dos notas iguales: tocas la primera y mantienes durante la segunda.",
+      "Permite que una nota cruce la barra de compás o dure algo que ninguna figura sola puede mostrar.",
+      "Una curva entre notas distintas es una ligadura de expresión: significa tocar ligado."
+     ],
+     "q": "¿Por qué crees que hacen falta ligaduras si existen los puntillos?",
+     "c": "Aplaude una negra ligada a una blanca: una palmada que dura 3 pulsos. Luego hazlo cruzando la barra."
+    },
+    "fr": {
+     "t": "Les liaisons",
+     "g": "Relier des notes de même hauteur pour les tenir plus longtemps.",
+     "p": [
+      "Une liaison de prolongation relie deux notes identiques : tu joues la première et tiens pendant la seconde.",
+      "Elle permet de tenir une note au-delà de la barre de mesure ou d'obtenir une durée qu'aucun signe seul n'offre.",
+      "Une courbe entre notes différentes est une liaison d'expression : jouer lié."
+     ],
+     "q": "Pourquoi a-t-on besoin de liaisons alors que les points existent ?",
+     "c": "Frappe une noire liée à une blanche : une frappe tenue 3 temps. Puis essaie par-dessus la barre de mesure."
+    },
+    "it": {
+     "t": "Le legature di valore",
+     "g": "Unire note della stessa altezza per tenerle più a lungo.",
+     "p": [
+      "La legatura di valore unisce due note uguali: suoni la prima e tieni anche per la durata della seconda.",
+      "Permette a una nota di superare la stanghetta o di durare quanto nessuna figura sola può mostrare.",
+      "Un arco tra note diverse è una legatura di portamento: significa suonare legato."
+     ],
+     "q": "Perché servono le legature di valore se esistono i punti?",
+     "c": "Batti una semiminima legata a una minima: un colpo tenuto 3 movimenti. Poi prova oltre la stanghetta."
+    },
+    "pt": {
+     "t": "As ligaduras",
+     "g": "Unir notas da mesma altura para as segurar mais tempo.",
+     "p": [
+      "A ligadura de prolongação une duas notas iguais: tocas a primeira e seguras durante a segunda.",
+      "Permite a uma nota atravessar a barra de compasso ou durar o que nenhuma figura sozinha mostra.",
+      "Uma curva entre notas diferentes é uma ligadura de expressão: significa tocar ligado."
+     ],
+     "q": "Porque achas que são precisas ligaduras se já existem pontos?",
+     "c": "Bate uma semínima ligada a uma mínima: uma palma segura 3 tempos. Depois tenta por cima da barra de compasso."
+    },
+    "pt_BR": {
+     "t": "Ligaduras",
+     "g": "Unir notas da mesma altura para segurar por mais tempo.",
+     "p": [
+      "A ligadura de valor une duas notas iguais: você toca a primeira e segura durante a segunda.",
+      "Ela deixa uma nota atravessar a barra de compasso ou durar o que nenhuma figura sozinha mostra.",
+      "Uma curva entre notas diferentes é uma ligadura de expressão: significa tocar ligado."
+     ],
+     "q": "Por que você acha que precisamos de ligaduras se já existem pontos?",
+     "c": "Bata uma semínima ligada a uma mínima: uma palma segurando 3 tempos. Depois tente atravessando a barra."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bars and bar lines",
+     "g": "See how music is divided into measures.",
+     "p": [
+      "Bar lines are vertical lines that divide music into small equal groups called bars or measures.",
+      "Each bar holds the same number of beats, which makes music easier to read and count.",
+      "A double bar line marks the end of a section, and a thick final bar line the end of the piece."
+     ],
+     "q": "Do you like to count along when you listen to music?",
+     "c": "Listen to a pop song and count the beats in groups of four. Say the bar number on every 1."
+    },
+    "de": {
+     "t": "Takte und Taktstriche",
+     "g": "Sehen, wie Musik in Takte eingeteilt wird.",
+     "p": [
+      "Taktstriche sind senkrechte Linien, die Musik in kleine gleiche Gruppen teilen, die Takte.",
+      "Jeder Takt enthält gleich viele Schläge, das macht Lesen und Zählen leichter.",
+      "Ein Doppelstrich markiert das Ende eines Abschnitts, ein dicker Schlussstrich das Ende des Stücks."
+     ],
+     "q": "Zählst du beim Musikhören gern mit?",
+     "c": "Hör einen Popsong, zähl die Schläge in Vierergruppen und sag auf jede 1 die Taktnummer."
+    },
+    "es": {
+     "t": "Compases y barras",
+     "g": "Ver cómo la música se divide en compases.",
+     "p": [
+      "Las barras de compás son líneas verticales que dividen la música en grupos iguales llamados compases.",
+      "Cada compás tiene el mismo número de pulsos, lo que facilita leer y contar.",
+      "La doble barra marca el final de una sección, y la barra final gruesa el final de la obra."
+     ],
+     "q": "¿Te gusta contar mientras escuchas música?",
+     "c": "Escucha una canción pop, cuenta los pulsos de cuatro en cuatro y di el número de compás en cada 1."
+    },
+    "fr": {
+     "t": "Mesures et barres de mesure",
+     "g": "Voir comment la musique est divisée en mesures.",
+     "p": [
+      "Les barres de mesure sont des traits verticaux qui découpent la musique en petits groupes égaux, les mesures.",
+      "Chaque mesure contient le même nombre de temps, ce qui facilite lecture et comptage.",
+      "La double barre marque la fin d'une partie, la barre finale épaisse la fin du morceau."
+     ],
+     "q": "Aimes-tu compter en écoutant de la musique ?",
+     "c": "Écoute une chanson pop, compte les temps par quatre et dis le numéro de la mesure sur chaque 1."
+    },
+    "it": {
+     "t": "Battute e stanghette",
+     "g": "Vedere come la musica è divisa in battute.",
+     "p": [
+      "Le stanghette sono linee verticali che dividono la musica in piccoli gruppi uguali, le battute o misure.",
+      "Ogni battuta contiene lo stesso numero di movimenti, così leggere e contare è più facile.",
+      "La doppia stanghetta segna la fine di una sezione, quella finale spessa la fine del brano."
+     ],
+     "q": "Ti piace contare mentre ascolti musica?",
+     "c": "Ascolta una canzone pop, conta i movimenti a gruppi di quattro e di' il numero della battuta su ogni 1."
+    },
+    "pt": {
+     "t": "Compassos e barras",
+     "g": "Ver como a música se divide em compassos.",
+     "p": [
+      "As barras de compasso são linhas verticais que dividem a música em pequenos grupos iguais, os compassos.",
+      "Cada compasso tem o mesmo número de tempos, o que torna mais fácil ler e contar.",
+      "A barra dupla marca o fim de uma secção, e a barra final grossa o fim da peça."
+     ],
+     "q": "Gostas de contar enquanto ouves música?",
+     "c": "Ouve uma música pop, conta os tempos de quatro em quatro e diz o número do compasso em cada 1."
+    },
+    "pt_BR": {
+     "t": "Compassos e barras",
+     "g": "Ver como a música é dividida em compassos.",
+     "p": [
+      "Barras de compasso são linhas verticais que dividem a música em pequenos grupos iguais, os compassos.",
+      "Cada compasso tem o mesmo número de tempos, o que facilita ler e contar.",
+      "A barra dupla marca o fim de uma seção, e a barra final grossa o fim da música."
+     ],
+     "q": "Você gosta de contar enquanto ouve música?",
+     "c": "Ouça uma música pop, conte os tempos de quatro em quatro e diga o número do compasso em cada 1."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time signatures",
+     "g": "Understand what the two numbers at the start of a piece mean.",
+     "p": [
+      "A time signature is two stacked numbers written after the clef.",
+      "The top number tells how many beats are in each bar.",
+      "The bottom number tells which note gets one beat: 4 means a quarter note, 8 an eighth note."
+     ],
+     "q": "Have you ever noticed the numbers at the start of sheet music?",
+     "c": "Write bars in 2/4, 3/4 and 4/4 using only quarter notes, and count each one out loud."
+    },
+    "de": {
+     "t": "Taktarten",
+     "g": "Verstehen, was die beiden Zahlen am Anfang eines Stücks bedeuten.",
+     "p": [
+      "Die Taktart besteht aus zwei übereinander stehenden Zahlen hinter dem Schlüssel.",
+      "Die obere Zahl sagt, wie viele Schläge ein Takt hat.",
+      "Die untere Zahl sagt, welcher Notenwert einen Schlag bekommt: 4 heißt Viertel, 8 heißt Achtel."
+     ],
+     "q": "Sind dir die Zahlen am Anfang von Noten schon einmal aufgefallen?",
+     "c": "Schreib Takte in 2/4, 3/4 und 4/4 nur mit Vierteln und zähl jeden laut."
+    },
+    "es": {
+     "t": "Indicación de compás",
+     "g": "Entender qué significan los dos números al inicio de una obra.",
+     "p": [
+      "La indicación de compás son dos números, uno encima del otro, escritos tras la clave.",
+      "El número de arriba dice cuántos pulsos hay en cada compás.",
+      "El de abajo dice qué figura vale un pulso: 4 es la negra, 8 la corchea."
+     ],
+     "q": "¿Te habías fijado en los números al principio de una partitura?",
+     "c": "Escribe compases de 2/4, 3/4 y 4/4 solo con negras y cuenta cada uno en voz alta."
+    },
+    "fr": {
+     "t": "Le chiffrage de la mesure",
+     "g": "Comprendre ce que signifient les deux chiffres au début d'un morceau.",
+     "p": [
+      "Le chiffrage, ce sont deux nombres superposés écrits après la clé.",
+      "Le chiffre du haut indique combien de temps il y a dans chaque mesure.",
+      "Celui du bas indique quelle valeur vaut un temps : 4 pour la noire, 8 pour la croche."
+     ],
+     "q": "As-tu déjà remarqué les chiffres au début d'une partition ?",
+     "c": "Écris des mesures en 2/4, 3/4 et 4/4 uniquement avec des noires et compte chacune à voix haute."
+    },
+    "it": {
+     "t": "L'indicazione di tempo",
+     "g": "Capire cosa significano i due numeri all'inizio di un brano.",
+     "p": [
+      "L'indicazione di tempo è formata da due numeri sovrapposti scritti dopo la chiave.",
+      "Il numero in alto dice quanti movimenti ci sono in ogni battuta.",
+      "Quello in basso dice quale figura vale un movimento: 4 è la semiminima, 8 la croma."
+     ],
+     "q": "Avevi mai notato i numeri all'inizio di uno spartito?",
+     "c": "Scrivi battute in 2/4, 3/4 e 4/4 solo con semiminime e contale ad alta voce."
+    },
+    "pt": {
+     "t": "Fórmula de compasso",
+     "g": "Perceber o que significam os dois números no início de uma peça.",
+     "p": [
+      "A fórmula de compasso são dois números sobrepostos escritos depois da clave.",
+      "O número de cima diz quantos tempos há em cada compasso.",
+      "O de baixo diz que figura vale um tempo: 4 é a semínima, 8 a colcheia."
+     ],
+     "q": "Já tinhas reparado nos números no início de uma partitura?",
+     "c": "Escreve compassos em 2/4, 3/4 e 4/4 só com semínimas e conta cada um em voz alta."
+    },
+    "pt_BR": {
+     "t": "Fórmula de compasso",
+     "g": "Entender o que significam os dois números no começo de uma música.",
+     "p": [
+      "A fórmula de compasso são dois números, um em cima do outro, escritos depois da clave.",
+      "O número de cima diz quantos tempos há em cada compasso.",
+      "O de baixo diz qual figura vale um tempo: 4 é a semínima, 8 a colcheia."
+     ],
+     "q": "Você já tinha reparado nos números no começo de uma partitura?",
+     "c": "Escreva compassos em 2/4, 3/4 e 4/4 só com semínimas e conte cada um em voz alta."
+    }
+   }
+  }
+ ]
+}

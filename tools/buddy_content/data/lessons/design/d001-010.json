@@ -1,0 +1,835 @@
+{
+ "topic": "design",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What design really is",
+     "g": "Understand design as solving problems for people, not just making things pretty.",
+     "p": [
+      "Design starts with a person and a problem: who needs this, and what should get easier for them?",
+      "Good design is useful, clear and pleasant at the same time; beauty alone is not enough.",
+      "Every design is a set of decisions, and each decision should have a reason you can explain."
+     ],
+     "q": "Think of an object you use every day: what problem does it solve for you?",
+     "c": "Pick one thing at home that annoys you and write one sentence about the problem it fails to solve."
+    },
+    "de": {
+     "t": "Was Design wirklich ist",
+     "g": "Design als Lösung von Problemen für Menschen verstehen, nicht nur als Verschönerung.",
+     "p": [
+      "Design beginnt mit einem Menschen und einem Problem: Wer braucht das, und was soll für ihn leichter werden?",
+      "Gutes Design ist zugleich nützlich, klar und angenehm; Schönheit allein reicht nicht.",
+      "Jedes Design ist eine Reihe von Entscheidungen, und jede sollte einen Grund haben, den du erklären kannst."
+     ],
+     "q": "Denk an einen Gegenstand, den du täglich benutzt: Welches Problem löst er für dich?",
+     "c": "Such dir zu Hause etwas, das dich nervt, und schreib einen Satz über das Problem, das es nicht löst."
+    },
+    "es": {
+     "t": "Qué es realmente el diseño",
+     "g": "Entender el diseño como resolver problemas para personas, no solo como embellecer cosas.",
+     "p": [
+      "El diseño empieza con una persona y un problema: ¿quién lo necesita y qué debería resultarle más fácil?",
+      "El buen diseño es útil, claro y agradable a la vez; la belleza sola no basta.",
+      "Todo diseño es un conjunto de decisiones, y cada una debería tener un motivo que puedas explicar."
+     ],
+     "q": "Piensa en un objeto que usas cada día: ¿qué problema te resuelve?",
+     "c": "Elige algo de casa que te moleste y escribe una frase sobre el problema que no logra resolver."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le design",
+     "g": "Comprendre le design comme la résolution de problèmes pour des personnes, pas seulement de la décoration.",
+     "p": [
+      "Le design part d'une personne et d'un problème : qui en a besoin, et qu'est-ce qui doit devenir plus simple ?",
+      "Un bon design est à la fois utile, clair et agréable ; la beauté seule ne suffit pas.",
+      "Tout design est une suite de décisions, et chacune devrait avoir une raison que tu peux expliquer."
+     ],
+     "q": "Pense à un objet que tu utilises chaque jour : quel problème résout-il pour toi ?",
+     "c": "Choisis chez toi un objet qui t'agace et écris une phrase sur le problème qu'il ne résout pas."
+    },
+    "it": {
+     "t": "Che cos'è davvero il design",
+     "g": "Capire il design come soluzione di problemi per le persone, non solo come abbellimento.",
+     "p": [
+      "Il design parte da una persona e da un problema: chi ne ha bisogno e cosa dovrebbe diventare più facile?",
+      "Il buon design è utile, chiaro e piacevole allo stesso tempo; la bellezza da sola non basta.",
+      "Ogni progetto è un insieme di scelte, e ognuna dovrebbe avere un motivo che sai spiegare."
+     ],
+     "q": "Pensa a un oggetto che usi ogni giorno: quale problema risolve per te?",
+     "c": "Scegli in casa qualcosa che ti infastidisce e scrivi una frase sul problema che non risolve."
+    },
+    "pt": {
+     "t": "O que é realmente o design",
+     "g": "Perceber o design como resolver problemas para pessoas, e não apenas tornar as coisas bonitas.",
+     "p": [
+      "O design começa com uma pessoa e um problema: quem precisa disto e o que deve ficar mais fácil?",
+      "Um bom design é útil, claro e agradável ao mesmo tempo; a beleza sozinha não chega.",
+      "Cada design é um conjunto de decisões, e cada uma deve ter uma razão que consigas explicar."
+     ],
+     "q": "Pensa num objeto que usas todos os dias: que problema resolve para ti?",
+     "c": "Escolhe em casa algo que te irrita e escreve uma frase sobre o problema que não resolve."
+    },
+    "pt_BR": {
+     "t": "O que design realmente é",
+     "g": "Entender design como resolver problemas para pessoas, e não só deixar as coisas bonitas.",
+     "p": [
+      "Design começa com uma pessoa e um problema: quem precisa disso e o que deveria ficar mais fácil?",
+      "Um bom design é útil, claro e agradável ao mesmo tempo; beleza sozinha não basta.",
+      "Todo design é um conjunto de decisões, e cada uma deve ter um motivo que você saiba explicar."
+     ],
+     "q": "Pense em um objeto que você usa todo dia: que problema ele resolve para você?",
+     "c": "Escolha algo em casa que te irrita e escreva uma frase sobre o problema que ele não resolve."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Graphic design and product design",
+     "g": "See how visual communication and the design of physical objects differ and overlap.",
+     "p": [
+      "Graphic design shapes messages: posters, logos, books, screens and signs that people read and look at.",
+      "Product design shapes things people hold and use, where comfort, materials and making matter.",
+      "Both share the same core: understand the user, organise information, test ideas and refine."
+     ],
+     "q": "Which do you find more exciting right now: designing a poster or designing an object?",
+     "c": "Find one item that mixes both, like a cereal box, and note what is graphic and what is product."
+    },
+    "de": {
+     "t": "Grafikdesign und Produktdesign",
+     "g": "Verstehen, wie sich visuelle Kommunikation und die Gestaltung von Objekten unterscheiden und überschneiden.",
+     "p": [
+      "Grafikdesign gestaltet Botschaften: Plakate, Logos, Bücher, Bildschirme und Schilder zum Lesen und Ansehen.",
+      "Produktdesign gestaltet Dinge zum Anfassen und Benutzen, bei denen Komfort, Material und Herstellung zählen.",
+      "Beide teilen den gleichen Kern: Nutzer verstehen, Information ordnen, Ideen testen und verfeinern."
+     ],
+     "q": "Was reizt dich gerade mehr: ein Plakat zu gestalten oder einen Gegenstand?",
+     "c": "Such ein Ding, das beides verbindet, etwa eine Müslipackung, und notiere, was Grafik und was Produkt ist."
+    },
+    "es": {
+     "t": "Diseño gráfico y diseño de producto",
+     "g": "Ver en qué se diferencian y se cruzan la comunicación visual y el diseño de objetos físicos.",
+     "p": [
+      "El diseño gráfico da forma a mensajes: carteles, logos, libros, pantallas y señales que leemos y miramos.",
+      "El diseño de producto da forma a cosas que tocamos y usamos, donde importan comodidad, materiales y fabricación.",
+      "Ambos comparten la base: entender al usuario, ordenar la información, probar ideas y pulirlas."
+     ],
+     "q": "¿Qué te entusiasma más ahora: diseñar un cartel o diseñar un objeto?",
+     "c": "Busca algo que mezcle ambos, como una caja de cereales, y anota qué parte es gráfica y cuál es producto."
+    },
+    "fr": {
+     "t": "Design graphique et design produit",
+     "g": "Voir en quoi la communication visuelle et le design d'objets se distinguent et se rejoignent.",
+     "p": [
+      "Le design graphique façonne des messages : affiches, logos, livres, écrans et panneaux que l'on lit et regarde.",
+      "Le design produit façonne des objets qu'on tient et utilise, où confort, matériaux et fabrication comptent.",
+      "Les deux partagent le même cœur : comprendre l'utilisateur, organiser l'information, tester et affiner."
+     ],
+     "q": "Qu'est-ce qui t'attire le plus en ce moment : créer une affiche ou un objet ?",
+     "c": "Trouve un objet qui mêle les deux, comme une boîte de céréales, et note ce qui relève du graphisme ou du produit."
+    },
+    "it": {
+     "t": "Graphic design e product design",
+     "g": "Capire in cosa la comunicazione visiva e il design di oggetti fisici si distinguono e si incontrano.",
+     "p": [
+      "Il graphic design dà forma ai messaggi: manifesti, loghi, libri, schermi e cartelli da leggere e guardare.",
+      "Il product design dà forma a cose da tenere in mano e usare, dove contano comfort, materiali e produzione.",
+      "Entrambi condividono la base: capire chi usa, ordinare le informazioni, provare idee e rifinirle."
+     ],
+     "q": "Cosa ti appassiona di più adesso: progettare un manifesto o un oggetto?",
+     "c": "Trova una cosa che unisce i due mondi, come una scatola di cereali, e annota cosa è grafica e cosa è prodotto."
+    },
+    "pt": {
+     "t": "Design gráfico e design de produto",
+     "g": "Ver como a comunicação visual e o design de objetos físicos se distinguem e se cruzam.",
+     "p": [
+      "O design gráfico molda mensagens: cartazes, logótipos, livros, ecrãs e sinais que lemos e observamos.",
+      "O design de produto molda coisas que seguramos e usamos, onde contam conforto, materiais e fabrico.",
+      "Ambos partilham a mesma base: perceber o utilizador, organizar informação, testar ideias e afinar."
+     ],
+     "q": "O que te entusiasma mais agora: desenhar um cartaz ou desenhar um objeto?",
+     "c": "Procura algo que junte os dois, como uma caixa de cereais, e anota o que é gráfico e o que é produto."
+    },
+    "pt_BR": {
+     "t": "Design gráfico e design de produto",
+     "g": "Ver como a comunicação visual e o design de objetos físicos se diferenciam e se cruzam.",
+     "p": [
+      "Design gráfico molda mensagens: cartazes, logos, livros, telas e placas que a gente lê e observa.",
+      "Design de produto molda coisas que seguramos e usamos, em que conforto, materiais e fabricação importam.",
+      "Os dois têm a mesma base: entender o usuário, organizar informação, testar ideias e refinar."
+     ],
+     "q": "O que te empolga mais agora: criar um cartaz ou criar um objeto?",
+     "c": "Procure algo que junte os dois, como uma caixa de cereal, e anote o que é gráfico e o que é produto."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Design is everywhere",
+     "g": "Start spotting deliberate design choices in the ordinary things around you.",
+     "p": [
+      "Signs, packaging, apps, chairs and kitchen tools were all planned by someone for a reason.",
+      "When design works, you barely notice it; when it fails, you feel confused or frustrated.",
+      "Asking why something looks or works the way it does is the first habit of a designer."
+     ],
+     "q": "What is the best designed thing in your kitchen, and why?",
+     "c": "On your next walk, find three designed things, like a sign or a bench, and note one choice in each."
+    },
+    "de": {
+     "t": "Design ist überall",
+     "g": "Bewusste Gestaltungsentscheidungen in alltäglichen Dingen um dich herum entdecken.",
+     "p": [
+      "Schilder, Verpackungen, Apps, Stühle und Küchengeräte wurden alle von jemandem mit Absicht geplant.",
+      "Wenn Design funktioniert, merkst du es kaum; wenn es scheitert, bist du verwirrt oder genervt.",
+      "Zu fragen, warum etwas so aussieht oder funktioniert, ist die erste Gewohnheit von Designern."
+     ],
+     "q": "Was ist das am besten gestaltete Ding in deiner Küche, und warum?",
+     "c": "Finde beim nächsten Spaziergang drei gestaltete Dinge, etwa ein Schild oder eine Bank, und notiere je eine Entscheidung."
+    },
+    "es": {
+     "t": "El diseño está en todas partes",
+     "g": "Empezar a notar decisiones de diseño intencionadas en las cosas cotidianas que te rodean.",
+     "p": [
+      "Señales, envases, apps, sillas y utensilios de cocina fueron pensados por alguien con un propósito.",
+      "Cuando el diseño funciona apenas lo notas; cuando falla, te sientes confundido o frustrado.",
+      "Preguntarte por qué algo se ve o funciona así es el primer hábito de quien diseña."
+     ],
+     "q": "¿Cuál es el objeto mejor diseñado de tu cocina y por qué?",
+     "c": "En tu próximo paseo encuentra tres cosas diseñadas, como una señal o un banco, y anota una decisión de cada una."
+    },
+    "fr": {
+     "t": "Le design est partout",
+     "g": "Commencer à repérer des choix de design voulus dans les objets ordinaires autour de toi.",
+     "p": [
+      "Panneaux, emballages, applis, chaises et ustensiles de cuisine ont tous été pensés par quelqu'un, avec une raison.",
+      "Quand le design fonctionne, on le remarque à peine ; quand il échoue, on est perdu ou agacé.",
+      "Se demander pourquoi une chose a cette forme ou ce fonctionnement est la première habitude du designer."
+     ],
+     "q": "Quel est l'objet le mieux conçu de ta cuisine, et pourquoi ?",
+     "c": "Lors de ta prochaine balade, trouve trois objets conçus, comme un panneau ou un banc, et note un choix pour chacun."
+    },
+    "it": {
+     "t": "Il design è ovunque",
+     "g": "Iniziare a notare scelte di design intenzionali nelle cose comuni che ti circondano.",
+     "p": [
+      "Cartelli, confezioni, app, sedie e utensili da cucina sono stati pensati da qualcuno per un motivo.",
+      "Quando il design funziona quasi non lo noti; quando fallisce ti senti confuso o irritato.",
+      "Chiederti perché qualcosa ha quell'aspetto o funziona così è la prima abitudine di chi progetta."
+     ],
+     "q": "Qual è l'oggetto progettato meglio nella tua cucina, e perché?",
+     "c": "Nella prossima passeggiata trova tre cose progettate, come un cartello o una panchina, e annota una scelta per ognuna."
+    },
+    "pt": {
+     "t": "O design está em todo o lado",
+     "g": "Começar a reparar em escolhas de design intencionais nas coisas comuns à tua volta.",
+     "p": [
+      "Sinais, embalagens, aplicações, cadeiras e utensílios de cozinha foram pensados por alguém com um motivo.",
+      "Quando o design funciona, quase não o notas; quando falha, sentes confusão ou frustração.",
+      "Perguntar porque é que algo tem aquele aspeto ou funciona assim é o primeiro hábito de um designer."
+     ],
+     "q": "Qual é o objeto mais bem desenhado da tua cozinha, e porquê?",
+     "c": "No próximo passeio, encontra três coisas desenhadas, como um sinal ou um banco, e anota uma escolha em cada."
+    },
+    "pt_BR": {
+     "t": "Design está em todo lugar",
+     "g": "Começar a perceber escolhas de design intencionais nas coisas comuns ao seu redor.",
+     "p": [
+      "Placas, embalagens, apps, cadeiras e utensílios de cozinha foram pensados por alguém com um motivo.",
+      "Quando o design funciona, você quase não nota; quando falha, você fica confuso ou frustrado.",
+      "Perguntar por que algo tem aquela cara ou funciona daquele jeito é o primeiro hábito de quem desenha."
+     ],
+     "q": "Qual é o objeto mais bem projetado da sua cozinha, e por quê?",
+     "c": "Na sua próxima caminhada, ache três coisas projetadas, como uma placa ou um banco, e anote uma escolha de cada."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seeing like a designer",
+     "g": "Train your eye to notice spacing, colour, shape and purpose in daily objects.",
+     "p": [
+      "Designers look slowly: first the whole, then the parts, then the gaps between the parts.",
+      "Notice four things each time: spacing, colour, shape and what the object is for.",
+      "Comparing two similar items, like two mugs, quickly shows you which choices make a difference."
+     ],
+     "q": "When you look at a shop window, what catches your eye first?",
+     "c": "Compare two similar objects, like two mugs or two apps, and list three differences in their design."
+    },
+    "de": {
+     "t": "Sehen wie ein Designer",
+     "g": "Dein Auge schulen, um Abstände, Farbe, Form und Zweck in Alltagsdingen zu bemerken.",
+     "p": [
+      "Designer schauen langsam: erst das Ganze, dann die Teile, dann die Lücken zwischen den Teilen.",
+      "Achte jedes Mal auf vier Dinge: Abstand, Farbe, Form und wofür das Objekt da ist.",
+      "Der Vergleich zweier ähnlicher Dinge, etwa zweier Tassen, zeigt schnell, welche Entscheidungen zählen."
+     ],
+     "q": "Wenn du in ein Schaufenster schaust, was fällt dir zuerst auf?",
+     "c": "Vergleiche zwei ähnliche Dinge, etwa zwei Tassen oder zwei Apps, und notiere drei Unterschiede im Design."
+    },
+    "es": {
+     "t": "Mirar como un diseñador",
+     "g": "Entrenar tu mirada para notar espacios, color, forma y propósito en los objetos diarios.",
+     "p": [
+      "Quien diseña mira despacio: primero el conjunto, luego las partes y después los huecos entre ellas.",
+      "Fíjate cada vez en cuatro cosas: espacio, color, forma y para qué sirve el objeto.",
+      "Comparar dos objetos parecidos, como dos tazas, muestra rápido qué decisiones marcan la diferencia."
+     ],
+     "q": "Cuando miras un escaparate, ¿qué te llama la atención primero?",
+     "c": "Compara dos objetos parecidos, como dos tazas o dos apps, y anota tres diferencias en su diseño."
+    },
+    "fr": {
+     "t": "Regarder comme un designer",
+     "g": "Entraîner ton œil à remarquer espacement, couleur, forme et usage dans les objets du quotidien.",
+     "p": [
+      "Le designer regarde lentement : d'abord l'ensemble, puis les parties, puis les vides entre elles.",
+      "Observe chaque fois quatre choses : l'espacement, la couleur, la forme et la fonction de l'objet.",
+      "Comparer deux objets proches, comme deux tasses, montre vite quels choix font la différence."
+     ],
+     "q": "Devant une vitrine, qu'est-ce qui attire ton regard en premier ?",
+     "c": "Compare deux objets similaires, comme deux tasses ou deux applis, et note trois différences de design."
+    },
+    "it": {
+     "t": "Guardare come un designer",
+     "g": "Allenare l'occhio a notare spazi, colore, forma e scopo negli oggetti di tutti i giorni.",
+     "p": [
+      "Chi progetta guarda con calma: prima l'insieme, poi le parti, poi gli spazi tra le parti.",
+      "Osserva ogni volta quattro cose: spaziatura, colore, forma e a cosa serve l'oggetto.",
+      "Confrontare due oggetti simili, come due tazze, mostra subito quali scelte fanno la differenza."
+     ],
+     "q": "Quando guardi una vetrina, cosa ti colpisce per primo?",
+     "c": "Confronta due oggetti simili, come due tazze o due app, e annota tre differenze nel loro design."
+    },
+    "pt": {
+     "t": "Ver como um designer",
+     "g": "Treinar o olhar para reparar no espaço, na cor, na forma e na função dos objetos do dia a dia.",
+     "p": [
+      "Um designer olha devagar: primeiro o todo, depois as partes e por fim os espaços entre elas.",
+      "Repara sempre em quatro coisas: espaçamento, cor, forma e para que serve o objeto.",
+      "Comparar dois objetos parecidos, como duas canecas, mostra depressa que escolhas fazem diferença."
+     ],
+     "q": "Quando olhas para uma montra, o que te chama a atenção primeiro?",
+     "c": "Compara dois objetos parecidos, como duas canecas ou duas aplicações, e anota três diferenças de design."
+    },
+    "pt_BR": {
+     "t": "Enxergar como designer",
+     "g": "Treinar o olhar para perceber espaço, cor, forma e função nos objetos do dia a dia.",
+     "p": [
+      "Quem desenha olha com calma: primeiro o todo, depois as partes e por fim os espaços entre elas.",
+      "Repare sempre em quatro coisas: espaçamento, cor, forma e para que o objeto serve.",
+      "Comparar dois objetos parecidos, como duas canecas, mostra rápido quais escolhas fazem diferença."
+     ],
+     "q": "Quando você olha uma vitrine, o que chama sua atenção primeiro?",
+     "c": "Compare dois objetos parecidos, como duas canecas ou dois apps, e anote três diferenças no design."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your designer's sketchbook",
+     "g": "Learn why designers sketch daily and start your own simple idea notebook.",
+     "p": [
+      "A sketchbook is a thinking tool, not an art gallery; messy pages are perfectly fine.",
+      "Quick drawings, notes, cut-outs and lists all count; the aim is to capture ideas fast.",
+      "A few minutes every day builds the eye and hand far better than rare long sessions."
+     ],
+     "q": "Do you prefer paper and pencil or a screen for capturing ideas?",
+     "c": "Start a notebook today: fill one page with five quick sketches of things you noticed this week."
+    },
+    "de": {
+     "t": "Dein Skizzenbuch als Designer",
+     "g": "Verstehen, warum Designer täglich skizzieren, und ein einfaches Ideenheft beginnen.",
+     "p": [
+      "Ein Skizzenbuch ist ein Denkwerkzeug, keine Galerie; unordentliche Seiten sind völlig in Ordnung.",
+      "Schnelle Zeichnungen, Notizen, Ausschnitte und Listen zählen alle; Ziel ist, Ideen rasch festzuhalten.",
+      "Ein paar Minuten täglich schulen Auge und Hand viel besser als seltene lange Sitzungen."
+     ],
+     "q": "Hältst du Ideen lieber mit Papier und Stift oder auf einem Bildschirm fest?",
+     "c": "Beginne heute ein Heft: Füll eine Seite mit fünf schnellen Skizzen von Dingen, die dir diese Woche auffielen."
+    },
+    "es": {
+     "t": "Tu cuaderno de diseñador",
+     "g": "Saber por qué quienes diseñan dibujan a diario y empezar tu propio cuaderno de ideas.",
+     "p": [
+      "Un cuaderno es una herramienta para pensar, no una galería; las páginas desordenadas están bien.",
+      "Dibujos rápidos, notas, recortes y listas cuentan; la meta es atrapar ideas deprisa.",
+      "Unos minutos cada día entrenan ojo y mano mucho mejor que sesiones largas y escasas."
+     ],
+     "q": "¿Prefieres papel y lápiz o una pantalla para guardar ideas?",
+     "c": "Empieza hoy un cuaderno: llena una página con cinco bocetos rápidos de cosas que viste esta semana."
+    },
+    "fr": {
+     "t": "Ton carnet de designer",
+     "g": "Comprendre pourquoi les designers dessinent chaque jour et commencer un carnet d'idées.",
+     "p": [
+      "Un carnet est un outil pour penser, pas une galerie ; les pages brouillonnes sont tout à fait normales.",
+      "Croquis rapides, notes, découpages et listes comptent tous ; le but est de saisir les idées vite.",
+      "Quelques minutes par jour forment l'œil et la main bien mieux que de rares longues séances."
+     ],
+     "q": "Tu préfères le papier et le crayon ou un écran pour noter tes idées ?",
+     "c": "Commence un carnet aujourd'hui : remplis une page de cinq croquis rapides de choses vues cette semaine."
+    },
+    "it": {
+     "t": "Il tuo quaderno da designer",
+     "g": "Capire perché chi progetta schizza ogni giorno e iniziare un semplice quaderno di idee.",
+     "p": [
+      "Un quaderno di schizzi è uno strumento per pensare, non una galleria; le pagine disordinate vanno benissimo.",
+      "Disegni veloci, appunti, ritagli ed elenchi contano tutti; lo scopo è catturare le idee in fretta.",
+      "Pochi minuti al giorno allenano occhio e mano molto meglio di rare sessioni lunghe."
+     ],
+     "q": "Preferisci carta e matita o uno schermo per fissare le idee?",
+     "c": "Inizia oggi un quaderno: riempi una pagina con cinque schizzi veloci di cose notate questa settimana."
+    },
+    "pt": {
+     "t": "O teu caderno de designer",
+     "g": "Perceber porque é que os designers desenham todos os dias e começar um caderno de ideias.",
+     "p": [
+      "Um caderno é uma ferramenta para pensar, não uma galeria; páginas desarrumadas estão ótimas.",
+      "Esboços rápidos, notas, recortes e listas contam todos; o objetivo é captar ideias depressa.",
+      "Alguns minutos por dia treinam o olho e a mão muito melhor do que sessões longas e raras."
+     ],
+     "q": "Preferes papel e lápis ou um ecrã para guardar ideias?",
+     "c": "Começa hoje um caderno: enche uma página com cinco esboços rápidos de coisas que viste esta semana."
+    },
+    "pt_BR": {
+     "t": "Seu caderno de designer",
+     "g": "Entender por que designers rabiscam todo dia e começar seu próprio caderno de ideias.",
+     "p": [
+      "Um caderno é uma ferramenta de pensar, não uma galeria; páginas bagunçadas estão ótimas.",
+      "Rabiscos rápidos, anotações, recortes e listas valem; o objetivo é capturar ideias rápido.",
+      "Alguns minutos por dia treinam olho e mão muito melhor que sessões longas e raras."
+     ],
+     "q": "Você prefere papel e lápis ou uma tela para guardar ideias?",
+     "c": "Comece um caderno hoje: preencha uma página com cinco esboços rápidos de coisas que viu esta semana."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Form follows function",
+     "g": "Learn the famous principle that an object's shape should grow from its purpose.",
+     "p": [
+      "The phrase comes from architect Louis Sullivan: purpose first, shape second.",
+      "A teapot spout, a door handle or a chair back each take their form from what they must do.",
+      "It does not ban beauty; it asks that beauty support the use instead of fighting it."
+     ],
+     "q": "Can you think of an object whose shape tells you exactly how to use it?",
+     "c": "Sketch a simple cup, then change one part so it works better, like a wider handle, and note why."
+    },
+    "de": {
+     "t": "Die Form folgt der Funktion",
+     "g": "Das berühmte Prinzip kennenlernen, dass die Form eines Objekts aus seinem Zweck entsteht.",
+     "p": [
+      "Der Satz stammt vom Architekten Louis Sullivan: zuerst der Zweck, dann die Form.",
+      "Eine Teekannentülle, ein Türgriff oder eine Stuhllehne erhalten ihre Form aus ihrer Aufgabe.",
+      "Schönheit ist nicht verboten; sie soll den Gebrauch unterstützen statt ihn zu stören."
+     ],
+     "q": "Fällt dir ein Gegenstand ein, dessen Form dir genau zeigt, wie man ihn benutzt?",
+     "c": "Skizziere eine einfache Tasse, ändere dann ein Teil, damit sie besser funktioniert, und notiere warum."
+    },
+    "es": {
+     "t": "La forma sigue a la función",
+     "g": "Conocer el famoso principio de que la forma de un objeto nace de su propósito.",
+     "p": [
+      "La frase viene del arquitecto Louis Sullivan: primero el propósito, luego la forma.",
+      "El pico de una tetera, un tirador o el respaldo de una silla toman su forma de lo que deben hacer.",
+      "No prohíbe la belleza; pide que la belleza apoye el uso en lugar de estorbarlo."
+     ],
+     "q": "¿Se te ocurre un objeto cuya forma te diga exactamente cómo usarlo?",
+     "c": "Dibuja una taza sencilla y cambia una parte para que funcione mejor, como un asa más ancha; anota por qué."
+    },
+    "fr": {
+     "t": "La forme suit la fonction",
+     "g": "Découvrir le célèbre principe selon lequel la forme d'un objet naît de sa fonction.",
+     "p": [
+      "La formule vient de l'architecte Louis Sullivan : d'abord l'usage, ensuite la forme.",
+      "Un bec de théière, une poignée de porte ou un dossier de chaise tirent leur forme de leur rôle.",
+      "Ce principe n'interdit pas la beauté ; il demande qu'elle serve l'usage au lieu de le gêner."
+     ],
+     "q": "Connais-tu un objet dont la forme t'indique exactement comment t'en servir ?",
+     "c": "Dessine une tasse simple, puis modifie une partie pour qu'elle marche mieux, comme l'anse, et note pourquoi."
+    },
+    "it": {
+     "t": "La forma segue la funzione",
+     "g": "Conoscere il celebre principio per cui la forma di un oggetto nasce dal suo scopo.",
+     "p": [
+      "La frase è dell'architetto Louis Sullivan: prima lo scopo, poi la forma.",
+      "Il beccuccio di una teiera, una maniglia o lo schienale di una sedia prendono forma da ciò che devono fare.",
+      "Non vieta la bellezza; chiede che la bellezza aiuti l'uso invece di ostacolarlo."
+     ],
+     "q": "Ti viene in mente un oggetto la cui forma ti dice esattamente come usarlo?",
+     "c": "Disegna una tazza semplice, poi cambia una parte perché funzioni meglio, come il manico, e annota perché."
+    },
+    "pt": {
+     "t": "A forma segue a função",
+     "g": "Conhecer o famoso princípio de que a forma de um objeto nasce da sua função.",
+     "p": [
+      "A frase é do arquiteto Louis Sullivan: primeiro a função, depois a forma.",
+      "O bico de um bule, um puxador ou o encosto de uma cadeira ganham forma a partir do que têm de fazer.",
+      "Não proíbe a beleza; pede que a beleza ajude o uso em vez de o atrapalhar."
+     ],
+     "q": "Lembras-te de um objeto cuja forma te diz exatamente como usá-lo?",
+     "c": "Desenha uma chávena simples e muda uma parte para funcionar melhor, como a asa, e anota porquê."
+    },
+    "pt_BR": {
+     "t": "A forma segue a função",
+     "g": "Conhecer o famoso princípio de que a forma de um objeto nasce da sua função.",
+     "p": [
+      "A frase é do arquiteto Louis Sullivan: primeiro a função, depois a forma.",
+      "O bico de um bule, uma maçaneta ou o encosto de uma cadeira ganham forma a partir do que precisam fazer.",
+      "Não proíbe a beleza; pede que a beleza ajude o uso em vez de atrapalhar."
+     ],
+     "q": "Você lembra de um objeto cuja forma mostra exatamente como usá-lo?",
+     "c": "Desenhe uma xícara simples e mude uma parte para funcionar melhor, como a alça, e anote por quê."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good design versus decoration",
+     "g": "Tell the difference between design that helps and design that only adorns.",
+     "p": [
+      "Decoration is added on top; design shapes how something works and is understood.",
+      "Ornament is not bad, but it should never hide information or make use harder.",
+      "A useful test: if you remove an element, does the thing become worse or just plainer?"
+     ],
+     "q": "Do you enjoy richly decorated things, or do you prefer very plain ones?",
+     "c": "Find a busy label or menu and circle every element that adds nothing to the message."
+    },
+    "de": {
+     "t": "Gutes Design oder Dekoration",
+     "g": "Unterscheiden zwischen Gestaltung, die hilft, und Gestaltung, die nur schmückt.",
+     "p": [
+      "Dekoration wird obendrauf gesetzt; Design bestimmt, wie etwas funktioniert und verstanden wird.",
+      "Ornament ist nicht schlecht, darf aber nie Information verstecken oder die Nutzung erschweren.",
+      "Ein guter Test: Wird das Ding schlechter, wenn du ein Element entfernst, oder nur schlichter?"
+     ],
+     "q": "Magst du reich verzierte Dinge, oder lieber ganz schlichte?",
+     "c": "Such ein überladenes Etikett oder eine Speisekarte und kreise jedes Element ein, das der Botschaft nichts bringt."
+    },
+    "es": {
+     "t": "Buen diseño frente a decoración",
+     "g": "Distinguir el diseño que ayuda del que solo adorna.",
+     "p": [
+      "La decoración se añade encima; el diseño define cómo algo funciona y se entiende.",
+      "El adorno no es malo, pero nunca debería esconder información ni complicar el uso.",
+      "Una prueba útil: si quitas un elemento, ¿empeora el objeto o solo queda más sencillo?"
+     ],
+     "q": "¿Te gustan las cosas muy decoradas o prefieres las muy sobrias?",
+     "c": "Busca una etiqueta o un menú recargado y rodea cada elemento que no aporta nada al mensaje."
+    },
+    "fr": {
+     "t": "Bon design ou décoration",
+     "g": "Faire la différence entre un design qui aide et un design qui ne fait qu'orner.",
+     "p": [
+      "La décoration s'ajoute par-dessus ; le design façonne la manière dont une chose marche et se comprend.",
+      "L'ornement n'est pas mauvais, mais il ne doit jamais cacher l'information ni gêner l'usage.",
+      "Un test utile : si tu retires un élément, l'objet devient-il moins bon ou juste plus sobre ?"
+     ],
+     "q": "Aimes-tu les objets richement décorés, ou préfères-tu les choses très sobres ?",
+     "c": "Trouve une étiquette ou un menu chargé et entoure chaque élément qui n'apporte rien au message."
+    },
+    "it": {
+     "t": "Buon design o decorazione",
+     "g": "Distinguere il design che aiuta da quello che si limita ad abbellire.",
+     "p": [
+      "La decorazione si aggiunge sopra; il design definisce come una cosa funziona e viene capita.",
+      "L'ornamento non è sbagliato, ma non deve mai nascondere informazioni o rendere l'uso più difficile.",
+      "Un test utile: se togli un elemento, l'oggetto peggiora o diventa solo più semplice?"
+     ],
+     "q": "Ti piacciono le cose molto decorate o preferisci quelle essenziali?",
+     "c": "Trova un'etichetta o un menu affollato e cerchia ogni elemento che non aggiunge nulla al messaggio."
+    },
+    "pt": {
+     "t": "Bom design ou decoração",
+     "g": "Distinguir o design que ajuda do design que apenas enfeita.",
+     "p": [
+      "A decoração junta-se por cima; o design define como algo funciona e é compreendido.",
+      "O ornamento não é mau, mas nunca deve esconder informação nem dificultar o uso.",
+      "Um teste útil: se retirares um elemento, o objeto fica pior ou apenas mais simples?"
+     ],
+     "q": "Gostas de coisas muito decoradas ou preferes as muito simples?",
+     "c": "Procura um rótulo ou uma ementa carregada e rodeia cada elemento que não acrescenta nada à mensagem."
+    },
+    "pt_BR": {
+     "t": "Bom design ou decoração",
+     "g": "Diferenciar o design que ajuda do design que só enfeita.",
+     "p": [
+      "Decoração é colocada por cima; design define como algo funciona e é entendido.",
+      "Ornamento não é ruim, mas nunca deve esconder informação nem dificultar o uso.",
+      "Um teste útil: se você tirar um elemento, o objeto piora ou só fica mais simples?"
+     ],
+     "q": "Você curte coisas bem decoradas ou prefere as bem simples?",
+     "c": "Ache um rótulo ou cardápio carregado e circule cada elemento que não acrescenta nada à mensagem."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dieter Rams' ideas in brief",
+     "g": "Meet the well-known principles of good design by the German designer Dieter Rams.",
+     "p": [
+      "Rams listed ten qualities; good design is useful, honest, understandable and long-lasting.",
+      "His most quoted idea is less, but better: keep only what serves the user.",
+      "Honest design does not pretend to do more than it can or look more valuable than it is."
+     ],
+     "q": "Which of these ideas feels most important to you: useful, honest or as little as possible?",
+     "c": "Pick one product you own and rate it from 1 to 5 on usefulness, honesty and simplicity."
+    },
+    "de": {
+     "t": "Dieter Rams kurz erklärt",
+     "g": "Die bekannten Prinzipien guten Designs des deutschen Gestalters Dieter Rams kennenlernen.",
+     "p": [
+      "Rams nannte zehn Eigenschaften; gutes Design ist nützlich, ehrlich, verständlich und langlebig.",
+      "Sein meistzitierter Gedanke lautet weniger, aber besser: nur behalten, was dem Nutzer dient.",
+      "Ehrliches Design gibt nicht vor, mehr zu können oder wertvoller zu sein, als es ist."
+     ],
+     "q": "Welcher Gedanke ist dir am wichtigsten: nützlich, ehrlich oder so wenig Design wie möglich?",
+     "c": "Nimm ein Produkt, das du besitzt, und bewerte es von 1 bis 5 nach Nutzen, Ehrlichkeit und Einfachheit."
+    },
+    "es": {
+     "t": "Las ideas de Dieter Rams en breve",
+     "g": "Conocer los famosos principios del buen diseño del diseñador alemán Dieter Rams.",
+     "p": [
+      "Rams enumeró diez cualidades; el buen diseño es útil, honesto, comprensible y duradero.",
+      "Su idea más citada es menos, pero mejor: conservar solo lo que sirve a quien lo usa.",
+      "El diseño honesto no finge hacer más de lo que puede ni parecer más valioso de lo que es."
+     ],
+     "q": "¿Cuál de estas ideas te parece más importante: útil, honesto o lo mínimo posible?",
+     "c": "Elige un producto tuyo y puntúalo del 1 al 5 en utilidad, honestidad y sencillez."
+    },
+    "fr": {
+     "t": "Les idées de Dieter Rams en bref",
+     "g": "Découvrir les célèbres principes du bon design du designer allemand Dieter Rams.",
+     "p": [
+      "Rams a listé dix qualités ; un bon design est utile, honnête, compréhensible et durable.",
+      "Son idée la plus citée est moins, mais mieux : ne garder que ce qui sert l'utilisateur.",
+      "Un design honnête ne prétend pas faire plus qu'il ne peut ni sembler plus précieux qu'il n'est."
+     ],
+     "q": "Laquelle de ces idées te parle le plus : utile, honnête ou le moins possible ?",
+     "c": "Choisis un produit que tu possèdes et note-le de 1 à 5 en utilité, honnêteté et simplicité."
+    },
+    "it": {
+     "t": "Le idee di Dieter Rams in breve",
+     "g": "Conoscere i noti principi del buon design del designer tedesco Dieter Rams.",
+     "p": [
+      "Rams elencò dieci qualità; il buon design è utile, onesto, comprensibile e duraturo.",
+      "La sua idea più citata è meno, ma meglio: tenere solo ciò che serve a chi usa.",
+      "Il design onesto non finge di fare più di quanto può né di valere più di quanto vale."
+     ],
+     "q": "Quale di queste idee senti più importante: utile, onesto o il meno possibile?",
+     "c": "Scegli un prodotto che possiedi e dagli un voto da 1 a 5 per utilità, onestà e semplicità."
+    },
+    "pt": {
+     "t": "As ideias de Dieter Rams em resumo",
+     "g": "Conhecer os famosos princípios do bom design do designer alemão Dieter Rams.",
+     "p": [
+      "Rams enumerou dez qualidades; o bom design é útil, honesto, compreensível e duradouro.",
+      "A sua ideia mais citada é menos, mas melhor: manter só o que serve o utilizador.",
+      "O design honesto não finge fazer mais do que consegue nem parecer mais valioso do que é."
+     ],
+     "q": "Qual destas ideias te parece mais importante: útil, honesto ou o mínimo possível?",
+     "c": "Escolhe um produto teu e dá-lhe uma nota de 1 a 5 em utilidade, honestidade e simplicidade."
+    },
+    "pt_BR": {
+     "t": "As ideias de Dieter Rams em resumo",
+     "g": "Conhecer os famosos princípios do bom design do designer alemão Dieter Rams.",
+     "p": [
+      "Rams listou dez qualidades; bom design é útil, honesto, compreensível e duradouro.",
+      "A ideia mais citada dele é menos, porém melhor: manter só o que serve ao usuário.",
+      "Design honesto não finge fazer mais do que consegue nem parecer mais valioso do que é."
+     ],
+     "q": "Qual dessas ideias parece mais importante para você: útil, honesto ou o mínimo possível?",
+     "c": "Escolha um produto seu e dê uma nota de 1 a 5 em utilidade, honestidade e simplicidade."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Points, lines and shapes",
+     "g": "Learn the basic building blocks of every visual composition and what each can express.",
+     "p": [
+      "A point marks a place and pulls the eye; even a single dot on a page creates focus.",
+      "Lines lead the eye and set a mood: straight feels calm or firm, curved feels soft, diagonal feels lively.",
+      "Closed lines become shapes, and shapes combine into everything from icons to posters."
+     ],
+     "q": "Which feels more like you: a straight line, a curve or a zigzag?",
+     "c": "Make a tiny poster using only dots, lines and simple shapes to express the word calm."
+    },
+    "de": {
+     "t": "Punkte, Linien und Formen",
+     "g": "Die Grundbausteine jeder Bildkomposition kennenlernen und was sie ausdrücken können.",
+     "p": [
+      "Ein Punkt markiert einen Ort und zieht den Blick an; schon ein Punkt auf der Seite schafft Fokus.",
+      "Linien führen den Blick und erzeugen Stimmung: gerade wirkt ruhig, gebogen weich, diagonal lebendig.",
+      "Geschlossene Linien werden zu Formen, und Formen ergeben alles vom Icon bis zum Plakat."
+     ],
+     "q": "Was passt eher zu dir: eine gerade Linie, eine Kurve oder ein Zickzack?",
+     "c": "Gestalte ein Mini-Plakat nur aus Punkten, Linien und einfachen Formen, das das Wort Ruhe ausdrückt."
+    },
+    "es": {
+     "t": "Puntos, líneas y formas",
+     "g": "Conocer los elementos básicos de toda composición visual y lo que cada uno expresa.",
+     "p": [
+      "Un punto marca un lugar y atrae la mirada; incluso un solo punto en la página crea foco.",
+      "Las líneas guían la vista y crean ambiente: recta es calma, curva es suave, diagonal es dinámica.",
+      "Las líneas cerradas se vuelven formas, y las formas construyen desde iconos hasta carteles."
+     ],
+     "q": "¿Qué te representa más: una línea recta, una curva o un zigzag?",
+     "c": "Haz un mini cartel solo con puntos, líneas y formas simples que exprese la palabra calma."
+    },
+    "fr": {
+     "t": "Points, lignes et formes",
+     "g": "Découvrir les briques de base de toute composition visuelle et ce que chacune exprime.",
+     "p": [
+      "Un point marque un lieu et attire l'œil ; un seul point sur une page suffit à créer un centre.",
+      "Les lignes guident le regard : droite, c'est calme ; courbe, c'est doux ; diagonale, c'est vif.",
+      "Les lignes fermées deviennent des formes, qui composent tout, des icônes aux affiches."
+     ],
+     "q": "Qu'est-ce qui te ressemble le plus : une droite, une courbe ou un zigzag ?",
+     "c": "Crée une mini-affiche avec seulement des points, des lignes et des formes simples pour exprimer le calme."
+    },
+    "it": {
+     "t": "Punti, linee e forme",
+     "g": "Conoscere i mattoni di base di ogni composizione visiva e cosa ognuno può esprimere.",
+     "p": [
+      "Un punto segna un luogo e attira lo sguardo; anche un solo punto sulla pagina crea un centro.",
+      "Le linee guidano l'occhio: dritta dà calma, curva dà morbidezza, diagonale dà dinamismo.",
+      "Le linee chiuse diventano forme, e le forme compongono tutto, dalle icone ai manifesti."
+     ],
+     "q": "Cosa ti somiglia di più: una linea dritta, una curva o uno zigzag?",
+     "c": "Crea un mini manifesto solo con punti, linee e forme semplici che esprima la parola calma."
+    },
+    "pt": {
+     "t": "Pontos, linhas e formas",
+     "g": "Conhecer os elementos básicos de qualquer composição visual e o que cada um exprime.",
+     "p": [
+      "Um ponto marca um lugar e atrai o olhar; até um só ponto numa página cria foco.",
+      "As linhas guiam o olhar: reta transmite calma, curva suavidade, diagonal energia.",
+      "Linhas fechadas tornam-se formas, e as formas compõem tudo, de ícones a cartazes."
+     ],
+     "q": "O que tem mais a ver contigo: uma linha reta, uma curva ou um ziguezague?",
+     "c": "Faz um mini cartaz só com pontos, linhas e formas simples que exprima a palavra calma."
+    },
+    "pt_BR": {
+     "t": "Pontos, linhas e formas",
+     "g": "Conhecer os elementos básicos de qualquer composição visual e o que cada um expressa.",
+     "p": [
+      "Um ponto marca um lugar e puxa o olhar; até um único ponto na página cria foco.",
+      "Linhas guiam o olhar: reta passa calma, curva passa suavidade, diagonal passa energia.",
+      "Linhas fechadas viram formas, e formas montam tudo, de ícones a cartazes."
+     ],
+     "q": "O que tem mais a ver com você: uma linha reta, uma curva ou um zigue-zague?",
+     "c": "Faça um mini cartaz só com pontos, linhas e formas simples que expresse a palavra calma."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Geometric and organic shapes",
+     "g": "See how precise geometric forms and natural organic forms create different moods.",
+     "p": [
+      "Geometric shapes like circles, squares and triangles feel ordered, modern and reliable.",
+      "Organic shapes, like leaves, pebbles or clouds, feel natural, friendly and relaxed.",
+      "Mixing both creates interest: a soft organic shape stands out against a strict grid."
+     ],
+     "q": "Do you feel more drawn to clean geometry or to soft natural forms?",
+     "c": "Draw the same logo idea twice, once with geometric shapes and once with organic ones, and compare the mood."
+    },
+    "de": {
+     "t": "Geometrische und organische Formen",
+     "g": "Verstehen, wie exakte geometrische und natürliche organische Formen verschiedene Stimmungen erzeugen.",
+     "p": [
+      "Geometrische Formen wie Kreis, Quadrat und Dreieck wirken geordnet, modern und verlässlich.",
+      "Organische Formen wie Blätter, Kiesel oder Wolken wirken natürlich, freundlich und entspannt.",
+      "Die Mischung macht es spannend: Eine weiche Form fällt vor einem strengen Raster auf."
+     ],
+     "q": "Ziehen dich klare Geometrie oder weiche Naturformen mehr an?",
+     "c": "Zeichne eine Logo-Idee zweimal, einmal geometrisch und einmal organisch, und vergleiche die Wirkung."
+    },
+    "es": {
+     "t": "Formas geométricas y orgánicas",
+     "g": "Ver cómo las formas geométricas precisas y las orgánicas naturales crean ambientes distintos.",
+     "p": [
+      "Las formas geométricas como círculos, cuadrados y triángulos transmiten orden, modernidad y confianza.",
+      "Las formas orgánicas, como hojas, piedras o nubes, se sienten naturales, cercanas y relajadas.",
+      "Mezclar ambas crea interés: una forma suave destaca sobre una retícula estricta."
+     ],
+     "q": "¿Te atrae más la geometría limpia o las formas suaves de la naturaleza?",
+     "c": "Dibuja una idea de logo dos veces, una con formas geométricas y otra orgánicas, y compara el ambiente."
+    },
+    "fr": {
+     "t": "Formes géométriques et organiques",
+     "g": "Voir comment les formes géométriques précises et les formes organiques créent des ambiances différentes.",
+     "p": [
+      "Les formes géométriques comme le cercle, le carré et le triangle semblent ordonnées, modernes et fiables.",
+      "Les formes organiques, comme les feuilles, galets ou nuages, semblent naturelles, amicales et détendues.",
+      "Les mélanger crée de l'intérêt : une forme douce ressort sur une grille stricte."
+     ],
+     "q": "Es-tu plus attiré par la géométrie nette ou par les formes naturelles et douces ?",
+     "c": "Dessine la même idée de logo deux fois, en géométrique puis en organique, et compare l'ambiance."
+    },
+    "it": {
+     "t": "Forme geometriche e organiche",
+     "g": "Vedere come le forme geometriche precise e quelle organiche naturali creano atmosfere diverse.",
+     "p": [
+      "Le forme geometriche come cerchio, quadrato e triangolo comunicano ordine, modernità e affidabilità.",
+      "Le forme organiche, come foglie, sassi o nuvole, sembrano naturali, amichevoli e rilassate.",
+      "Mescolarle crea interesse: una forma morbida spicca su una griglia rigorosa."
+     ],
+     "q": "Ti attira di più la geometria pulita o le forme morbide della natura?",
+     "c": "Disegna la stessa idea di logo due volte, una geometrica e una organica, e confronta l'atmosfera."
+    },
+    "pt": {
+     "t": "Formas geométricas e orgânicas",
+     "g": "Ver como formas geométricas precisas e formas orgânicas naturais criam ambientes diferentes.",
+     "p": [
+      "Formas geométricas como círculos, quadrados e triângulos transmitem ordem, modernidade e confiança.",
+      "Formas orgânicas, como folhas, seixos ou nuvens, parecem naturais, simpáticas e descontraídas.",
+      "Misturar as duas cria interesse: uma forma suave destaca-se numa grelha rigorosa."
+     ],
+     "q": "Sentes-te mais atraído pela geometria limpa ou pelas formas suaves da natureza?",
+     "c": "Desenha a mesma ideia de logótipo duas vezes, geométrica e orgânica, e compara o ambiente."
+    },
+    "pt_BR": {
+     "t": "Formas geométricas e orgânicas",
+     "g": "Ver como formas geométricas precisas e formas orgânicas naturais criam climas diferentes.",
+     "p": [
+      "Formas geométricas como círculos, quadrados e triângulos passam ordem, modernidade e confiança.",
+      "Formas orgânicas, como folhas, pedrinhas ou nuvens, parecem naturais, simpáticas e relaxadas.",
+      "Misturar as duas cria interesse: uma forma suave se destaca sobre um grid rígido."
+     ],
+     "q": "Você se sente mais atraído pela geometria limpa ou pelas formas suaves da natureza?",
+     "c": "Desenhe a mesma ideia de logo duas vezes, uma geométrica e outra orgânica, e compare o clima."
+    }
+   }
+  }
+ ]
+}

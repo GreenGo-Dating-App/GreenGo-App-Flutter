@@ -1,0 +1,835 @@
+{
+ "topic": "barbecue",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple grilled vegetables",
+     "g": "Prepare peppers, courgettes, onions and mushrooms so they grill tender and smoky.",
+     "p": [
+      "Cut vegetables into large, even pieces or thick slices so they cook evenly and don't fall through the grate.",
+      "Toss them lightly in oil, salt and pepper; too much oil drips and causes flare-ups.",
+      "Grill over medium direct heat until tender with nice char marks; skewers or a grill basket help with small pieces."
+     ],
+     "q": "Which vegetable do you think tastes best after a little time on the grill?",
+     "c": "Grill a plate of mixed vegetables, or choose three vegetables and plan how you would cut each one for the grill."
+    },
+    "de": {
+     "t": "Einfaches Grillgemüse",
+     "g": "Bereite Paprika, Zucchini, Zwiebeln und Pilze so vor, dass sie zart und rauchig werden.",
+     "p": [
+      "Schneide Gemüse in große, gleichmäßige Stücke oder dicke Scheiben, damit es gleichmäßig gart und nicht durchfällt.",
+      "Wende es leicht in Öl, Salz und Pfeffer; zu viel Öl tropft und sorgt für Stichflammen.",
+      "Bei mittlerer direkter Hitze grillen, bis es zart ist und schöne Röststreifen hat; Spieße oder Grillkorb helfen bei Kleinem."
+     ],
+     "q": "Welches Gemüse schmeckt deiner Meinung nach nach kurzer Zeit auf dem Grill am besten?",
+     "c": "Grill einen Teller gemischtes Gemüse oder wähle drei Sorten und plane, wie du jede für den Grill schneiden würdest."
+    },
+    "es": {
+     "t": "Verduras sencillas a la parrilla",
+     "g": "Prepara pimientos, calabacines, cebollas y champiñones para que queden tiernos y ahumados.",
+     "p": [
+      "Corta las verduras en trozos grandes y parejos o en rodajas gruesas para que se hagan igual y no caigan por la rejilla.",
+      "Úntalas ligeramente con aceite, sal y pimienta; el exceso de aceite gotea y provoca llamaradas.",
+      "Ásalas a fuego directo medio hasta que estén tiernas y marcadas; las brochetas o una cesta ayudan con piezas pequeñas."
+     ],
+     "q": "¿Qué verdura crees que sabe mejor después de un ratito en la parrilla?",
+     "c": "Asa un plato de verduras variadas, o elige tres y planea cómo cortarías cada una para la parrilla."
+    },
+    "fr": {
+     "t": "Légumes grillés tout simples",
+     "g": "Prépare poivrons, courgettes, oignons et champignons pour qu'ils grillent tendres et fumés.",
+     "p": [
+      "Coupe les légumes en gros morceaux réguliers ou en tranches épaisses pour une cuisson égale, sans qu'ils tombent.",
+      "Enrobe-les légèrement d'huile, de sel et de poivre ; trop d'huile coule et provoque des flammes.",
+      "Grille à chaleur directe moyenne jusqu'à ce qu'ils soient tendres et marqués ; brochettes ou panier aident pour les petits."
+     ],
+     "q": "Selon toi, quel légume est le meilleur après un petit passage sur le grill ?",
+     "c": "Grille une assiette de légumes variés, ou choisis-en trois et prévois comment tu couperais chacun pour le grill."
+    },
+    "it": {
+     "t": "Verdure alla griglia semplici",
+     "g": "Prepara peperoni, zucchine, cipolle e funghi perché vengano teneri e affumicati.",
+     "p": [
+      "Taglia le verdure a pezzi grandi e regolari o a fette spesse, così cuociono in modo uniforme e non cadono.",
+      "Condiscile appena con olio, sale e pepe; troppo olio gocciola e provoca fiammate.",
+      "Griglia a calore diretto medio finché sono tenere e ben segnate; spiedini o un cestello aiutano con i pezzi piccoli."
+     ],
+     "q": "Quale verdura secondo te è più buona dopo un po' di tempo sulla griglia?",
+     "c": "Griglia un piatto di verdure miste, oppure scegline tre e pensa a come taglieresti ciascuna per la griglia."
+    },
+    "pt": {
+     "t": "Legumes grelhados simples",
+     "g": "Prepara pimentos, courgettes, cebolas e cogumelos para ficarem tenros e com sabor a fumo.",
+     "p": [
+      "Corta os legumes em pedaços grandes e iguais ou em fatias grossas para cozerem por igual e não caírem.",
+      "Envolve-os levemente em azeite, sal e pimenta; azeite a mais pinga e provoca labaredas.",
+      "Grelha em calor direto médio até ficarem tenros e marcados; espetadas ou um cesto ajudam com peças pequenas."
+     ],
+     "q": "Que legume achas que fica melhor depois de um bocadinho na grelha?",
+     "c": "Grelha um prato de legumes variados, ou escolhe três e planeia como cortarias cada um para a grelha."
+    },
+    "pt_BR": {
+     "t": "Legumes simples na grelha",
+     "g": "Prepare pimentões, abobrinhas, cebolas e cogumelos para ficarem macios e defumados.",
+     "p": [
+      "Corte os legumes em pedaços grandes e iguais ou em fatias grossas para cozinharem por igual e não caírem.",
+      "Envolva com um pouco de azeite, sal e pimenta; azeite demais pinga e provoca labaredas.",
+      "Grelhe no calor direto médio até ficarem macios e marcados; espetinhos ou uma cesta ajudam com pedaços pequenos."
+     ],
+     "q": "Qual legume você acha que fica melhor depois de um tempinho na grelha?",
+     "c": "Grelhe um prato de legumes variados, ou escolha três e planeje como cortaria cada um para a grelha."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Corn on the cob three ways",
+     "g": "Try three ways to grill corn and taste how each method changes it.",
+     "p": [
+      "In the husk: soak the cobs about 15 minutes, then grill them in their husks for steamy, sweet, tender corn.",
+      "Naked: husk the cobs and grill them directly, turning often, for smoky, charred kernels.",
+      "In foil: wrap them with butter and seasoning for buttery, juicy corn that is hard to burn."
+     ],
+     "q": "Do you like your corn sweet and juicy or smoky and charred?",
+     "c": "Grill corn one way you have never tried, or plan a topping like lime and chilli or herb butter."
+    },
+    "de": {
+     "t": "Maiskolben auf drei Arten",
+     "g": "Probier drei Arten, Mais zu grillen, und schmeck, wie jede Methode ihn verändert.",
+     "p": [
+      "Mit Hüllblättern: Kolben etwa 15 Minuten einweichen, dann in den Blättern grillen, für dampfig-süßen, zarten Mais.",
+      "Nackt: Blätter entfernen und direkt grillen, oft wenden, für rauchige, leicht geröstete Körner.",
+      "In Alufolie: mit Butter und Gewürzen einwickeln, für buttrigen, saftigen Mais, der kaum anbrennt."
+     ],
+     "q": "Magst du deinen Mais lieber süß und saftig oder rauchig und geröstet?",
+     "c": "Grill Mais auf eine Art, die du noch nie probiert hast, oder plane einen Belag wie Limette und Chili oder Kräuterbutter."
+    },
+    "es": {
+     "t": "Mazorcas de maíz de tres formas",
+     "g": "Prueba tres maneras de asar maíz y descubre cómo cambia el sabor con cada método.",
+     "p": [
+      "Con hojas: remoja las mazorcas unos 15 minutos y ásalas con sus hojas para un maíz tierno, dulce y jugoso.",
+      "Sin hojas: pélalas y ásalas directamente, girándolas a menudo, para granos ahumados y tostados.",
+      "En papel de aluminio: envuélvelas con mantequilla y especias para un maíz jugoso y difícil de quemar."
+     ],
+     "q": "¿Te gusta el maíz dulce y jugoso o ahumado y tostado?",
+     "c": "Asa maíz de una forma que nunca hayas probado, o planea un acompañamiento como lima y chile o mantequilla de hierbas."
+    },
+    "fr": {
+     "t": "Épis de maïs de trois façons",
+     "g": "Essaie trois façons de griller le maïs et goûte comment chaque méthode le transforme.",
+     "p": [
+      "Dans les feuilles : fais tremper les épis environ 15 minutes, puis grille-les dans leurs feuilles pour un maïs tendre et sucré.",
+      "Nu : retire les feuilles et grille-les directement, en tournant souvent, pour des grains fumés et caramélisés.",
+      "En papillote : enveloppe-les avec beurre et épices pour un maïs fondant et juteux, difficile à brûler."
+     ],
+     "q": "Tu aimes ton maïs plutôt sucré et juteux, ou fumé et grillé ?",
+     "c": "Grille du maïs d'une façon jamais essayée, ou imagine une garniture comme citron vert et piment ou beurre aux herbes."
+    },
+    "it": {
+     "t": "Pannocchie in tre modi",
+     "g": "Prova tre modi di grigliare il mais e senti come cambia con ciascun metodo.",
+     "p": [
+      "Con le foglie: metti in ammollo le pannocchie circa 15 minuti e grigliale con le foglie per un mais tenero e dolce.",
+      "Nude: togli le foglie e grigliale direttamente, girandole spesso, per chicchi affumicati e abbrustoliti.",
+      "Nella stagnola: avvolgile con burro e spezie per un mais morbido e succoso, difficile da bruciare."
+     ],
+     "q": "Ti piace il mais dolce e succoso o affumicato e abbrustolito?",
+     "c": "Griglia il mais in un modo che non hai mai provato, oppure pensa a un condimento come lime e peperoncino o burro alle erbe."
+    },
+    "pt": {
+     "t": "Maçarocas de milho de três formas",
+     "g": "Experimenta três formas de grelhar milho e prova como cada método o muda.",
+     "p": [
+      "Com a casca: demolha as maçarocas cerca de 15 minutos e grelha-as com a casca para um milho tenro e doce.",
+      "Sem casca: descasca-as e grelha-as diretamente, virando muitas vezes, para grãos fumados e tostados.",
+      "Em papel de alumínio: embrulha-as com manteiga e temperos para um milho suculento e difícil de queimar."
+     ],
+     "q": "Gostas do milho doce e suculento ou fumado e tostado?",
+     "c": "Grelha milho de uma forma que nunca experimentaste, ou planeia uma cobertura como lima e malagueta ou manteiga de ervas."
+    },
+    "pt_BR": {
+     "t": "Milho na espiga de três jeitos",
+     "g": "Experimente três jeitos de grelhar milho e sinta como cada método muda o sabor.",
+     "p": [
+      "Com palha: deixe as espigas de molho uns 15 minutos e grelhe com a palha para um milho macio e docinho.",
+      "Sem palha: tire a palha e grelhe direto, virando sempre, para grãos defumados e tostados.",
+      "No papel-alumínio: embrulhe com manteiga e temperos para um milho suculento e difícil de queimar."
+     ],
+     "q": "Você gosta do milho doce e suculento ou defumado e tostado?",
+     "c": "Grelhe milho de um jeito que nunca experimentou, ou planeje uma cobertura como limão e pimenta ou manteiga de ervas."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salt: the most important seasoning",
+     "g": "Learn how and when to salt so your grilled food tastes its best.",
+     "p": [
+      "Coarse salt, like kosher or flaky sea salt, is easier to sprinkle evenly than fine table salt.",
+      "Salting meat at least 40 minutes ahead, or right before grilling, both work; salting in between can draw out moisture.",
+      "Salt seasons, but it also changes texture: given time, it helps meat stay juicy and firm up nicely."
+     ],
+     "q": "What kind of salt do you have at home, and how do you usually use it?",
+     "c": "Salt one piece of food 40 minutes ahead and another just before grilling, then compare taste and texture."
+    },
+    "de": {
+     "t": "Salz: das wichtigste Gewürz",
+     "g": "Lerne, wie und wann du salzt, damit dein Grillgut am besten schmeckt.",
+     "p": [
+      "Grobes Salz, etwa Koscher- oder Flockensalz, lässt sich gleichmäßiger streuen als feines Tafelsalz.",
+      "Fleisch mindestens 40 Minuten vorher oder direkt vor dem Grillen salzen klappt; dazwischen zieht es Saft heraus.",
+      "Salz würzt, verändert aber auch die Textur: Mit etwas Zeit hilft es dem Fleisch, saftig und fest zu bleiben."
+     ],
+     "q": "Welches Salz hast du zu Hause, und wie verwendest du es meistens?",
+     "c": "Salze ein Stück 40 Minuten vorher und ein anderes direkt vor dem Grillen, und vergleiche Geschmack und Textur."
+    },
+    "es": {
+     "t": "La sal: el condimento más importante",
+     "g": "Aprende cómo y cuándo salar para que tu comida a la parrilla sepa mejor.",
+     "p": [
+      "La sal gruesa, como la sal en escamas o la de tipo kosher, se reparte más fácil y pareja que la sal fina.",
+      "Salar la carne al menos 40 minutos antes, o justo antes de asarla, funciona; en medio puede soltar jugos.",
+      "La sal sazona, pero también cambia la textura: con tiempo, ayuda a que la carne quede jugosa y firme."
+     ],
+     "q": "¿Qué tipo de sal tienes en casa y cómo la sueles usar?",
+     "c": "Sala una pieza 40 minutos antes y otra justo antes de asarla, y luego compara sabor y textura."
+    },
+    "fr": {
+     "t": "Le sel : l'assaisonnement essentiel",
+     "g": "Apprends comment et quand saler pour que tes grillades aient le meilleur goût.",
+     "p": [
+      "Le gros sel ou la fleur de sel se répartissent plus facilement et plus régulièrement que le sel fin.",
+      "Saler la viande au moins 40 minutes avant, ou juste avant de griller, fonctionne ; entre les deux, elle rend son jus.",
+      "Le sel assaisonne mais change aussi la texture : avec le temps, il aide la viande à rester juteuse et ferme."
+     ],
+     "q": "Quel sel as-tu à la maison, et comment l'utilises-tu d'habitude ?",
+     "c": "Sale un morceau 40 minutes avant et un autre juste avant de griller, puis compare goût et texture."
+    },
+    "it": {
+     "t": "Il sale: il condimento più importante",
+     "g": "Impara come e quando salare perché i tuoi cibi alla griglia abbiano il gusto migliore.",
+     "p": [
+      "Il sale grosso o in scaglie si distribuisce più facilmente e in modo uniforme rispetto al sale fino.",
+      "Salare la carne almeno 40 minuti prima, o subito prima di grigliarla, funziona; a metà strada rilascia liquidi.",
+      "Il sale insaporisce ma cambia anche la consistenza: col tempo aiuta la carne a restare succosa e soda."
+     ],
+     "q": "Che tipo di sale hai a casa e come lo usi di solito?",
+     "c": "Sala un pezzo 40 minuti prima e un altro subito prima di grigliarlo, poi confronta gusto e consistenza."
+    },
+    "pt": {
+     "t": "O sal: o tempero mais importante",
+     "g": "Aprende como e quando salgar para os teus grelhados terem o melhor sabor.",
+     "p": [
+      "O sal grosso ou a flor de sal espalham-se com mais facilidade e por igual do que o sal fino.",
+      "Salgar a carne pelo menos 40 minutos antes, ou mesmo antes de grelhar, resulta; a meio caminho, perde sucos.",
+      "O sal tempera, mas também muda a textura: com tempo, ajuda a carne a ficar suculenta e firme."
+     ],
+     "q": "Que tipo de sal tens em casa e como o costumas usar?",
+     "c": "Salga uma peça 40 minutos antes e outra mesmo antes de grelhar, e compara o sabor e a textura."
+    },
+    "pt_BR": {
+     "t": "Sal: o tempero mais importante",
+     "g": "Aprenda como e quando salgar para o seu churrasco ficar com o melhor sabor.",
+     "p": [
+      "O sal grosso ou o sal em flocos se espalham com mais facilidade e por igual que o sal refinado.",
+      "Salgar a carne pelo menos 40 minutos antes, ou logo antes de grelhar, funciona; no meio do caminho ela solta líquido.",
+      "O sal tempera, mas também muda a textura: com tempo, ajuda a carne a ficar suculenta e firme."
+     ],
+     "q": "Que tipo de sal você tem em casa e como costuma usar?",
+     "c": "Salgue um pedaço 40 minutos antes e outro logo antes de grelhar, e compare sabor e textura."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building flavour with pepper and spices",
+     "g": "Use pepper and a few key spices as the base of countless grilling flavours.",
+     "p": [
+      "Freshly cracked black pepper tastes far brighter than pre-ground; grind it just before using.",
+      "Paprika adds colour and gentle sweetness, garlic powder gives savoury depth and cumin brings warm, earthy notes.",
+      "Spices can burn over very high heat, so use them on food cooked at medium heat or add them near the end."
+     ],
+     "q": "Which spice do you reach for most often when you cook?",
+     "c": "Smell paprika, cumin and garlic powder one by one, then choose two to season your next grilled dish."
+    },
+    "de": {
+     "t": "Aroma mit Pfeffer und Gewürzen",
+     "g": "Nutze Pfeffer und ein paar wichtige Gewürze als Basis für unzählige Grillaromen.",
+     "p": [
+      "Frisch gemahlener schwarzer Pfeffer schmeckt viel lebendiger als vorgemahlener; mahle ihn erst kurz vorher.",
+      "Paprika bringt Farbe und milde Süße, Knoblauchpulver herzhafte Tiefe und Kreuzkümmel warme, erdige Noten.",
+      "Gewürze können bei starker Hitze verbrennen; nutze sie bei mittlerer Hitze oder gib sie gegen Ende dazu."
+     ],
+     "q": "Zu welchem Gewürz greifst du beim Kochen am häufigsten?",
+     "c": "Riech nacheinander an Paprika, Kreuzkümmel und Knoblauchpulver und wähle zwei für dein nächstes Grillgericht."
+    },
+    "es": {
+     "t": "Dar sabor con pimienta y especias",
+     "g": "Usa la pimienta y unas pocas especias clave como base de infinitos sabores a la parrilla.",
+     "p": [
+      "La pimienta negra recién molida sabe mucho más viva que la ya molida; muélela justo antes de usarla.",
+      "El pimentón da color y un dulzor suave, el ajo en polvo profundidad sabrosa y el comino notas cálidas y terrosas.",
+      "Las especias pueden quemarse a fuego muy alto; úsalas en cocciones a fuego medio o añádelas al final."
+     ],
+     "q": "¿Qué especia usas más a menudo cuando cocinas?",
+     "c": "Huele uno a uno el pimentón, el comino y el ajo en polvo, y elige dos para sazonar tu próximo plato a la parrilla."
+    },
+    "fr": {
+     "t": "Du goût avec le poivre et les épices",
+     "g": "Utilise le poivre et quelques épices clés comme base d'innombrables saveurs grillées.",
+     "p": [
+      "Le poivre noir fraîchement moulu est bien plus vif que le poivre déjà moulu ; mouds-le juste avant.",
+      "Le paprika apporte couleur et douceur, l'ail en poudre de la profondeur et le cumin des notes chaudes et terreuses.",
+      "Les épices peuvent brûler à feu très vif ; utilise-les sur des cuissons à feu moyen ou ajoute-les à la fin."
+     ],
+     "q": "Quelle épice utilises-tu le plus souvent en cuisine ?",
+     "c": "Sens tour à tour le paprika, le cumin et l'ail en poudre, puis choisis-en deux pour ta prochaine grillade."
+    },
+    "it": {
+     "t": "Dare sapore con pepe e spezie",
+     "g": "Usa il pepe e poche spezie chiave come base di infiniti sapori alla griglia.",
+     "p": [
+      "Il pepe nero macinato al momento è molto più vivace di quello già macinato; macinalo appena prima di usarlo.",
+      "La paprika dà colore e dolcezza, l'aglio in polvere profondità sapida e il cumino note calde e terrose.",
+      "Le spezie possono bruciare a fuoco molto alto; usale per cotture a fuoco medio o aggiungile verso la fine."
+     ],
+     "q": "Quale spezia usi più spesso quando cucini?",
+     "c": "Annusa una alla volta paprika, cumino e aglio in polvere, poi scegline due per condire la tua prossima grigliata."
+    },
+    "pt": {
+     "t": "Dar sabor com pimenta e especiarias",
+     "g": "Usa a pimenta e algumas especiarias essenciais como base de inúmeros sabores grelhados.",
+     "p": [
+      "A pimenta preta moída na hora sabe muito mais viva do que a já moída; mói-a mesmo antes de usar.",
+      "O colorau dá cor e uma doçura suave, o alho em pó profundidade e o cominho notas quentes e terrosas.",
+      "As especiarias podem queimar em lume muito forte; usa-as em cozeduras a calor médio ou junta-as no fim."
+     ],
+     "q": "Que especiaria usas mais vezes quando cozinhas?",
+     "c": "Cheira, uma a uma, o colorau, o cominho e o alho em pó, e escolhe dois para temperar o teu próximo grelhado."
+    },
+    "pt_BR": {
+     "t": "Sabor com pimenta e especiarias",
+     "g": "Use a pimenta-do-reino e algumas especiarias-chave como base de muitos sabores de churrasco.",
+     "p": [
+      "A pimenta-do-reino moída na hora é muito mais viva que a já moída; moa logo antes de usar.",
+      "A páprica dá cor e um dulçor suave, o alho em pó profundidade e o cominho notas quentes e terrosas.",
+      "Especiarias podem queimar em fogo muito alto; use em preparos de fogo médio ou acrescente no final."
+     ],
+     "q": "Qual especiaria você mais usa quando cozinha?",
+     "c": "Cheire, uma de cada vez, páprica, cominho e alho em pó, e escolha duas para temperar seu próximo prato na grelha."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lid open or lid closed",
+     "g": "Learn how the lid controls heat, smoke and cooking speed on any grill.",
+     "p": [
+      "Lid open is best for thin foods over direct heat that cook in a few minutes, like burgers and skewers.",
+      "Lid closed traps heat and smoke, cooks thicker food faster and evenly, and is essential for indirect cooking.",
+      "On charcoal, a closed lid also limits oxygen, so it calms the fire and reduces flare-ups."
+     ],
+     "q": "Do you usually cook with the lid open or closed, and why?",
+     "c": "Grill the same food once with the lid open and once closed, or predict how the results would differ."
+    },
+    "de": {
+     "t": "Deckel auf oder Deckel zu",
+     "g": "Lerne, wie der Deckel Hitze, Rauch und Garzeit auf jedem Grill steuert.",
+     "p": [
+      "Deckel offen passt zu dünnem Grillgut über direkter Hitze, das in wenigen Minuten gar ist, wie Burger und Spieße.",
+      "Deckel zu hält Hitze und Rauch, gart dickere Stücke schneller und gleichmäßiger und ist beim indirekten Grillen Pflicht.",
+      "Beim Holzkohlegrill begrenzt ein geschlossener Deckel auch den Sauerstoff, beruhigt das Feuer und mindert Stichflammen."
+     ],
+     "q": "Grillst du meistens mit offenem oder geschlossenem Deckel, und warum?",
+     "c": "Grill dasselbe einmal mit offenem und einmal mit geschlossenem Deckel oder sag voraus, wie sich das Ergebnis unterscheidet."
+    },
+    "es": {
+     "t": "Tapa abierta o tapa cerrada",
+     "g": "Aprende cómo la tapa controla el calor, el humo y la velocidad de cocción en cualquier parrilla.",
+     "p": [
+      "Con la tapa abierta se cocinan mejor los alimentos finos a fuego directo que tardan pocos minutos, como hamburguesas.",
+      "Con la tapa cerrada se atrapan calor y humo, las piezas gruesas se hacen antes y parejas; es clave en el calor indirecto.",
+      "En carbón, la tapa cerrada también limita el oxígeno, así calma el fuego y reduce las llamaradas."
+     ],
+     "q": "¿Sueles cocinar con la tapa abierta o cerrada, y por qué?",
+     "c": "Asa el mismo alimento una vez con la tapa abierta y otra cerrada, o predice en qué se diferenciaría el resultado."
+    },
+    "fr": {
+     "t": "Couvercle ouvert ou fermé",
+     "g": "Apprends comment le couvercle contrôle chaleur, fumée et vitesse de cuisson sur tout barbecue.",
+     "p": [
+      "Couvercle ouvert : idéal pour les aliments fins en chaleur directe qui cuisent en quelques minutes, comme les burgers.",
+      "Couvercle fermé : il garde chaleur et fumée, cuit plus vite et plus uniformément les pièces épaisses ; indispensable en indirect.",
+      "Au charbon, le couvercle fermé limite aussi l'oxygène, ce qui calme le feu et réduit les flammes."
+     ],
+     "q": "Cuisines-tu plutôt couvercle ouvert ou fermé, et pourquoi ?",
+     "c": "Grille le même aliment une fois couvercle ouvert et une fois fermé, ou prédis en quoi le résultat différerait."
+    },
+    "it": {
+     "t": "Coperchio aperto o chiuso",
+     "g": "Impara come il coperchio controlla calore, fumo e velocità di cottura su qualsiasi barbecue.",
+     "p": [
+      "Il coperchio aperto va bene per cibi sottili a calore diretto che cuociono in pochi minuti, come hamburger e spiedini.",
+      "Il coperchio chiuso trattiene calore e fumo, cuoce i pezzi spessi più in fretta e in modo uniforme: è essenziale nell'indiretto.",
+      "Sul carbone il coperchio chiuso limita anche l'ossigeno, così calma il fuoco e riduce le fiammate."
+     ],
+     "q": "Di solito cucini con il coperchio aperto o chiuso, e perché?",
+     "c": "Griglia lo stesso cibo una volta a coperchio aperto e una chiuso, oppure prevedi come cambierebbe il risultato."
+    },
+    "pt": {
+     "t": "Tampa aberta ou tampa fechada",
+     "g": "Aprende como a tampa controla o calor, o fumo e a velocidade de cozedura em qualquer grelhador.",
+     "p": [
+      "Tampa aberta é melhor para alimentos finos em calor direto que cozem em poucos minutos, como hambúrgueres e espetadas.",
+      "Tampa fechada guarda calor e fumo, coze peças grossas mais depressa e por igual, e é essencial no calor indireto.",
+      "No carvão, a tampa fechada também limita o oxigénio, por isso acalma o fogo e reduz as labaredas."
+     ],
+     "q": "Costumas cozinhar de tampa aberta ou fechada, e porquê?",
+     "c": "Grelha o mesmo alimento uma vez de tampa aberta e outra fechada, ou prevê como mudaria o resultado."
+    },
+    "pt_BR": {
+     "t": "Tampa aberta ou tampa fechada",
+     "g": "Aprenda como a tampa controla o calor, a fumaça e a velocidade de preparo em qualquer churrasqueira.",
+     "p": [
+      "Tampa aberta é melhor para alimentos finos no calor direto que ficam prontos em minutos, como hambúrguer e espetinho.",
+      "Tampa fechada segura calor e fumaça, cozinha peças grossas mais rápido e por igual, e é essencial no calor indireto.",
+      "No carvão, a tampa fechada também limita o oxigênio, então acalma o fogo e reduz as labaredas."
+     ],
+     "q": "Você costuma cozinhar com a tampa aberta ou fechada, e por quê?",
+     "c": "Grelhe o mesmo alimento uma vez com a tampa aberta e outra fechada, ou preveja como mudaria o resultado."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Controlling charcoal heat with vents",
+     "g": "Use the bottom and top vents to steer the temperature of a charcoal fire.",
+     "p": [
+      "Fire needs oxygen: open vents let in more air and make the coals burn hotter; closing them cools the fire down.",
+      "The bottom vent feeds air to the coals, while the top vent lets hot air and smoke escape and draws air through.",
+      "Make small changes and wait 10 to 15 minutes to see the effect; to put the fire out, close both vents fully."
+     ],
+     "q": "Have you ever tried adjusting the vents on a grill, and what happened?",
+     "c": "Find the vents on your grill or in a picture of a kettle grill and practise saying what opening and closing each does."
+    },
+    "de": {
+     "t": "Holzkohlehitze mit Lüftungen steuern",
+     "g": "Nutze untere und obere Lüftung, um die Temperatur eines Holzkohlefeuers zu lenken.",
+     "p": [
+      "Feuer braucht Sauerstoff: Offene Lüftungen lassen mehr Luft rein und machen die Glut heißer; Schließen kühlt sie ab.",
+      "Die untere Lüftung versorgt die Kohle mit Luft, die obere lässt heiße Luft und Rauch entweichen und zieht Luft durch.",
+      "Ändere nur wenig und warte 10 bis 15 Minuten; zum Löschen beide Lüftungen ganz schließen."
+     ],
+     "q": "Hast du schon einmal die Lüftungen am Grill verstellt, und was ist passiert?",
+     "c": "Finde die Lüftungen an deinem Grill oder auf einem Bild eines Kugelgrills und erkläre, was Öffnen und Schließen bewirkt."
+    },
+    "es": {
+     "t": "Controlar el calor del carbón con las rejillas",
+     "g": "Usa las rejillas de ventilación de abajo y de arriba para dirigir la temperatura del carbón.",
+     "p": [
+      "El fuego necesita oxígeno: abrir las rejillas deja entrar más aire y aviva las brasas; cerrarlas lo enfría.",
+      "La rejilla de abajo alimenta de aire las brasas y la de arriba deja salir el aire caliente y el humo, creando tiro.",
+      "Haz cambios pequeños y espera de 10 a 15 minutos; para apagar el fuego, cierra del todo ambas rejillas."
+     ],
+     "q": "¿Alguna vez has ajustado las rejillas de una parrilla? ¿Qué pasó?",
+     "c": "Busca las rejillas en tu parrilla o en una foto de una kettle y explica qué hace abrir y cerrar cada una."
+    },
+    "fr": {
+     "t": "Régler la chaleur du charbon avec les aérations",
+     "g": "Utilise les aérations du bas et du haut pour piloter la température d'un feu de charbon.",
+     "p": [
+      "Le feu a besoin d'oxygène : des aérations ouvertes font entrer plus d'air et chauffent les braises ; fermées, elles le calment.",
+      "L'aération du bas nourrit les braises en air, celle du haut laisse sortir l'air chaud et la fumée et crée le tirage.",
+      "Fais de petits réglages et attends 10 à 15 minutes ; pour éteindre, ferme complètement les deux aérations."
+     ],
+     "q": "As-tu déjà réglé les aérations d'un barbecue ? Que s'est-il passé ?",
+     "c": "Repère les aérations de ton barbecue ou sur une photo de bouilloire, et explique l'effet de chacune ouverte ou fermée."
+    },
+    "it": {
+     "t": "Controllare il calore con le prese d'aria",
+     "g": "Usa le prese d'aria inferiore e superiore per guidare la temperatura del fuoco a carbone.",
+     "p": [
+      "Il fuoco ha bisogno di ossigeno: prese aperte fanno entrare più aria e scaldano le braci; chiuderle raffredda il fuoco.",
+      "La presa inferiore porta aria alle braci, quella superiore fa uscire aria calda e fumo e crea il tiraggio.",
+      "Fai piccole modifiche e aspetta 10-15 minuti; per spegnere il fuoco chiudi del tutto entrambe le prese."
+     ],
+     "q": "Hai mai regolato le prese d'aria di un barbecue? Cos'è successo?",
+     "c": "Trova le prese d'aria sul tuo barbecue o in una foto di un kettle e spiega cosa fa aprire e chiudere ciascuna."
+    },
+    "pt": {
+     "t": "Controlar o calor do carvão com as entradas de ar",
+     "g": "Usa as entradas de ar de baixo e de cima para dirigir a temperatura do carvão.",
+     "p": [
+      "O fogo precisa de oxigénio: entradas abertas deixam entrar mais ar e aquecem as brasas; fechá-las arrefece o fogo.",
+      "A entrada de baixo alimenta as brasas com ar e a de cima deixa sair ar quente e fumo, puxando o ar.",
+      "Faz pequenas mudanças e espera 10 a 15 minutos; para apagar o fogo, fecha totalmente as duas entradas."
+     ],
+     "q": "Já experimentaste ajustar as entradas de ar de um grelhador? O que aconteceu?",
+     "c": "Encontra as entradas de ar no teu grelhador ou numa imagem de um kettle e explica o que faz abrir e fechar cada uma."
+    },
+    "pt_BR": {
+     "t": "Controlando o carvão pelas saídas de ar",
+     "g": "Use as saídas de ar de baixo e de cima para controlar a temperatura do carvão.",
+     "p": [
+      "O fogo precisa de oxigênio: com as saídas abertas entra mais ar e a brasa esquenta; fechando, o fogo esfria.",
+      "A saída de baixo alimenta as brasas com ar e a de cima deixa sair ar quente e fumaça, puxando o ar.",
+      "Faça mudanças pequenas e espere de 10 a 15 minutos; para apagar o fogo, feche totalmente as duas saídas."
+     ],
+     "q": "Você já ajustou as saídas de ar de uma churrasqueira? O que aconteceu?",
+     "c": "Encontre as saídas de ar na sua churrasqueira ou numa foto de uma bola e explique o que faz abrir e fechar cada uma."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flare-ups and how to tame them",
+     "g": "Understand why flare-ups happen and handle them calmly without scorching your food.",
+     "p": [
+      "Flare-ups happen when fat or oil drips onto hot coals or burners and bursts into sudden flames.",
+      "Move the food to the cool zone until the flames die down; closing the lid also helps by cutting the oxygen.",
+      "Prevent them by trimming excess fat, using less oil and keeping the grill clean of old grease."
+     ],
+     "q": "Have you ever had a flare-up surprise you, and how did you react?",
+     "c": "Before your next cook, trim extra fat from the meat and plan exactly where your safe zone will be."
+    },
+    "de": {
+     "t": "Stichflammen bändigen",
+     "g": "Verstehe, warum Stichflammen entstehen, und reagiere ruhig, ohne dass das Grillgut verbrennt.",
+     "p": [
+      "Stichflammen entstehen, wenn Fett oder Öl auf heiße Kohle oder Brenner tropft und plötzlich aufflammt.",
+      "Schieb das Grillgut in die kühle Zone, bis die Flammen nachlassen; ein geschlossener Deckel nimmt Sauerstoff weg.",
+      "Vorbeugen: überschüssiges Fett abschneiden, weniger Öl nehmen und den Grill frei von altem Fett halten."
+     ],
+     "q": "Hat dich schon einmal eine Stichflamme überrascht, und wie hast du reagiert?",
+     "c": "Schneide vor dem nächsten Grillen überschüssiges Fett ab und plane genau, wo deine sichere Zone sein wird."
+    },
+    "es": {
+     "t": "Las llamaradas y cómo dominarlas",
+     "g": "Entiende por qué se producen las llamaradas y contrólalas con calma sin quemar la comida.",
+     "p": [
+      "Las llamaradas aparecen cuando grasa o aceite gotean sobre brasas o quemadores calientes y prenden de golpe.",
+      "Pasa la comida a la zona fría hasta que bajen las llamas; cerrar la tapa también ayuda porque quita oxígeno.",
+      "Prevénlas quitando el exceso de grasa, usando menos aceite y manteniendo la parrilla limpia de grasa vieja."
+     ],
+     "q": "¿Alguna vez te sorprendió una llamarada? ¿Cómo reaccionaste?",
+     "c": "Antes de tu próxima parrillada, quita la grasa sobrante de la carne y planea exactamente dónde estará tu zona segura."
+    },
+    "fr": {
+     "t": "Dompter les flambées",
+     "g": "Comprends pourquoi les flambées surviennent et gère-les calmement sans brûler tes aliments.",
+     "p": [
+      "Une flambée se produit quand du gras ou de l'huile coule sur des braises ou brûleurs chauds et s'enflamme d'un coup.",
+      "Glisse l'aliment en zone froide jusqu'à ce que les flammes baissent ; fermer le couvercle prive aussi le feu d'oxygène.",
+      "Préviens-les en retirant l'excès de gras, en utilisant moins d'huile et en gardant le barbecue propre."
+     ],
+     "q": "Une flambée t'a-t-elle déjà surpris, et comment as-tu réagi ?",
+     "c": "Avant ta prochaine grillade, retire le gras en trop de la viande et prévois exactement où sera ta zone sûre."
+    },
+    "it": {
+     "t": "Le fiammate e come domarle",
+     "g": "Capisci perché nascono le fiammate e gestiscile con calma senza bruciare il cibo.",
+     "p": [
+      "Le fiammate nascono quando grasso o olio gocciolano su braci o bruciatori caldi e prendono fuoco all'improvviso.",
+      "Sposta il cibo nella zona fredda finché le fiamme calano; chiudere il coperchio aiuta perché toglie ossigeno.",
+      "Prevenile togliendo il grasso in eccesso, usando meno olio e tenendo il barbecue pulito dal grasso vecchio."
+     ],
+     "q": "Ti ha mai sorpreso una fiammata? Come hai reagito?",
+     "c": "Prima della prossima grigliata togli il grasso in eccesso dalla carne e decidi esattamente dove sarà la zona sicura."
+    },
+    "pt": {
+     "t": "As labaredas e como as domar",
+     "g": "Percebe porque surgem as labaredas e controla-as com calma sem queimar a comida.",
+     "p": [
+      "As labaredas surgem quando gordura ou óleo pingam sobre brasas ou queimadores quentes e se inflamam de repente.",
+      "Passa a comida para a zona fria até as chamas baixarem; fechar a tampa também ajuda, porque corta o oxigénio.",
+      "Evita-as retirando o excesso de gordura, usando menos óleo e mantendo o grelhador limpo de gordura velha."
+     ],
+     "q": "Já foste surpreendido por uma labareda? Como reagiste?",
+     "c": "Antes do próximo churrasco, tira a gordura em excesso da carne e decide exatamente onde ficará a tua zona segura."
+    },
+    "pt_BR": {
+     "t": "Labaredas e como controlá-las",
+     "g": "Entenda por que surgem as labaredas e lide com elas com calma, sem queimar a comida.",
+     "p": [
+      "As labaredas aparecem quando gordura ou óleo pinga em brasas ou queimadores quentes e pega fogo de repente.",
+      "Passe a comida para a zona fria até as chamas baixarem; fechar a tampa também ajuda, porque corta o oxigênio.",
+      "Evite retirando o excesso de gordura, usando menos óleo e mantendo a churrasqueira limpa de gordura velha."
+     ],
+     "q": "Uma labareda já pegou você de surpresa? Como você reagiu?",
+     "c": "Antes do próximo churrasco, tire o excesso de gordura da carne e defina exatamente onde ficará sua zona segura."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Resting meat after grilling",
+     "g": "Learn why resting meat makes it juicier and how long different cuts need.",
+     "p": [
+      "Right off the grill, juices are moving around; a short rest lets them settle so less runs out when you slice.",
+      "Rest steaks and chops about 5 minutes, whole chickens 10 to 15, and big roasts 15 to 20, loosely covered with foil.",
+      "The temperature keeps rising a few degrees while resting, so you can take meat off just before its target."
+     ],
+     "q": "Do you usually cut into meat right away or wait a little?",
+     "c": "Rest your next piece of grilled meat for 5 to 10 minutes and notice how much juice stays on the board."
+    },
+    "de": {
+     "t": "Fleisch nach dem Grillen ruhen lassen",
+     "g": "Lerne, warum Ruhen Fleisch saftiger macht und wie lange verschiedene Stücke brauchen.",
+     "p": [
+      "Direkt vom Grill ist der Fleischsaft in Bewegung; eine kurze Ruhe lässt ihn sich setzen, sodass beim Schneiden weniger ausläuft.",
+      "Steaks und Koteletts etwa 5 Minuten ruhen lassen, ganze Hähnchen 10 bis 15, große Braten 15 bis 20, locker mit Folie bedeckt.",
+      "Beim Ruhen steigt die Temperatur noch ein paar Grad, du kannst das Fleisch also kurz vor dem Zielwert herunternehmen."
+     ],
+     "q": "Schneidest du Fleisch meist sofort an oder wartest du ein wenig?",
+     "c": "Lass dein nächstes Stück Grillfleisch 5 bis 10 Minuten ruhen und achte darauf, wie viel Saft auf dem Brett bleibt."
+    },
+    "es": {
+     "t": "Dejar reposar la carne tras asarla",
+     "g": "Aprende por qué el reposo hace la carne más jugosa y cuánto necesita cada corte.",
+     "p": [
+      "Recién salida de la parrilla, los jugos se mueven; un breve reposo los asienta y sale menos líquido al cortar.",
+      "Deja reposar filetes y chuletas unos 5 minutos, pollos enteros de 10 a 15 y asados grandes de 15 a 20, tapados con aluminio.",
+      "La temperatura sigue subiendo unos grados en reposo, así que puedes retirar la carne justo antes de su objetivo."
+     ],
+     "q": "¿Sueles cortar la carne enseguida o esperas un poco?",
+     "c": "Deja reposar tu próxima pieza de carne a la parrilla de 5 a 10 minutos y fíjate cuánto jugo queda en la tabla."
+    },
+    "fr": {
+     "t": "Laisser reposer la viande",
+     "g": "Apprends pourquoi le repos rend la viande plus juteuse et combien de temps il faut selon la pièce.",
+     "p": [
+      "À la sortie du grill, les jus bougent encore ; un court repos les stabilise et moins de jus s'échappe à la découpe.",
+      "Laisse reposer steaks et côtes environ 5 minutes, poulets entiers 10 à 15, gros rôtis 15 à 20, sous une feuille d'alu lâche.",
+      "La température monte encore de quelques degrés au repos ; tu peux donc retirer la viande juste avant la cible."
+     ],
+     "q": "D'habitude, coupes-tu la viande tout de suite ou attends-tu un peu ?",
+     "c": "Laisse reposer ta prochaine viande grillée 5 à 10 minutes et observe combien de jus reste sur la planche."
+    },
+    "it": {
+     "t": "Far riposare la carne dopo la griglia",
+     "g": "Scopri perché il riposo rende la carne più succosa e quanto serve per ogni taglio.",
+     "p": [
+      "Appena tolta dalla griglia i succhi si muovono; un breve riposo li stabilizza e al taglio ne esce meno.",
+      "Fai riposare bistecche e braciole circa 5 minuti, polli interi 10-15 e grandi arrosti 15-20, coperti con stagnola lenta.",
+      "Durante il riposo la temperatura sale ancora di qualche grado, quindi puoi togliere la carne poco prima dell'obiettivo."
+     ],
+     "q": "Di solito tagli subito la carne o aspetti un po'?",
+     "c": "Fai riposare il prossimo pezzo di carne grigliata 5-10 minuti e osserva quanto succo resta sul tagliere."
+    },
+    "pt": {
+     "t": "Deixar a carne repousar",
+     "g": "Aprende porque é que o repouso deixa a carne mais suculenta e quanto tempo precisa cada peça.",
+     "p": [
+      "Acabada de sair da grelha, os sucos ainda se movem; um curto repouso assenta-os e sai menos líquido ao cortar.",
+      "Deixa repousar bifes e costeletas cerca de 5 minutos, frangos inteiros 10 a 15 e assados grandes 15 a 20, tapados com alumínio.",
+      "A temperatura ainda sobe uns graus durante o repouso, por isso podes tirar a carne um pouco antes do alvo."
+     ],
+     "q": "Costumas cortar a carne logo ou esperas um pouco?",
+     "c": "Deixa repousar a próxima peça de carne grelhada 5 a 10 minutos e repara quanto suco fica na tábua."
+    },
+    "pt_BR": {
+     "t": "Deixando a carne descansar",
+     "g": "Aprenda por que o descanso deixa a carne mais suculenta e quanto tempo cada corte precisa.",
+     "p": [
+      "Recém-saída da grelha, os sucos ainda estão se movendo; um breve descanso acomoda tudo e sai menos líquido no corte.",
+      "Deixe bifes e costeletas descansarem uns 5 minutos, frango inteiro 10 a 15 e peças grandes 15 a 20, cobertos com alumínio.",
+      "A temperatura ainda sobe alguns graus no descanso, então dá para tirar a carne um pouco antes do ponto desejado."
+     ],
+     "q": "Você costuma cortar a carne na hora ou espera um pouco?",
+     "c": "Deixe o próximo pedaço de carne grelhada descansar de 5 a 10 minutos e repare quanto suco fica na tábua."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grill marks and the Maillard reaction",
+     "g": "Understand the browning that creates grilled flavour and make neat crosshatch marks.",
+     "p": [
+      "The Maillard reaction is browning that happens on hot, dry surfaces, creating hundreds of rich, savoury flavours.",
+      "Pat food dry and use a hot, clean grate: moisture on the surface steams instead of browning.",
+      "For crosshatch marks, place food at an angle, then turn it about 90 degrees halfway through each side."
+     ],
+     "q": "Which grilled food do you think has the best browned crust?",
+     "c": "Pat your food dry before grilling and try for crosshatch marks, or draw how you would place it on the grate."
+    },
+    "de": {
+     "t": "Grillstreifen und die Maillard-Reaktion",
+     "g": "Verstehe die Bräunung, die Grillaroma schafft, und mach saubere Rautenmuster.",
+     "p": [
+      "Die Maillard-Reaktion ist die Bräunung auf heißen, trockenen Oberflächen, die Hunderte kräftige Aromen erzeugt.",
+      "Tupf das Grillgut trocken und nutze einen heißen, sauberen Rost: Feuchtigkeit dampft, statt zu bräunen.",
+      "Für ein Rautenmuster schräg auflegen und nach der Hälfte der Zeit je Seite um etwa 90 Grad drehen."
+     ],
+     "q": "Welches Grillgut hat deiner Meinung nach die beste gebräunte Kruste?",
+     "c": "Tupf dein Grillgut vor dem Grillen trocken und versuch ein Rautenmuster, oder zeichne, wie du es auflegen würdest."
+    },
+    "es": {
+     "t": "Marcas de parrilla y reacción de Maillard",
+     "g": "Entiende el dorado que crea el sabor a parrilla y logra marcas cruzadas bien definidas.",
+     "p": [
+      "La reacción de Maillard es el dorado que ocurre en superficies calientes y secas, creando cientos de sabores intensos.",
+      "Seca bien la comida y usa una rejilla caliente y limpia: la humedad en la superficie cuece al vapor en vez de dorar.",
+      "Para marcas cruzadas, coloca la pieza en diagonal y gírala unos 90 grados a mitad de cada lado."
+     ],
+     "q": "¿Qué alimento a la parrilla crees que tiene la mejor costra dorada?",
+     "c": "Seca la comida antes de asarla e intenta marcas cruzadas, o dibuja cómo la colocarías en la rejilla."
+    },
+    "fr": {
+     "t": "Marques de grill et réaction de Maillard",
+     "g": "Comprends le brunissement qui crée le goût grillé et réalise de jolis quadrillages.",
+     "p": [
+      "La réaction de Maillard est le brunissement sur des surfaces chaudes et sèches, qui crée des centaines d'arômes riches.",
+      "Sèche bien l'aliment et utilise une grille chaude et propre : l'humidité en surface fait de la vapeur au lieu de dorer.",
+      "Pour un quadrillage, pose l'aliment en biais, puis tourne-le d'environ 90 degrés à mi-cuisson de chaque face."
+     ],
+     "q": "Selon toi, quel aliment grillé a la meilleure croûte dorée ?",
+     "c": "Sèche ton aliment avant de le griller et tente un quadrillage, ou dessine comment tu le placerais sur la grille."
+    },
+    "it": {
+     "t": "Rigature e reazione di Maillard",
+     "g": "Capisci la doratura che crea il sapore di griglia e ottieni belle rigature incrociate.",
+     "p": [
+      "La reazione di Maillard è la doratura che avviene su superfici calde e asciutte e crea centinaia di sapori intensi.",
+      "Asciuga bene il cibo e usa una griglia calda e pulita: l'umidità in superficie fa vapore invece di dorare.",
+      "Per le rigature incrociate posa il cibo in diagonale, poi giralo di circa 90 gradi a metà cottura di ogni lato."
+     ],
+     "q": "Quale cibo alla griglia secondo te ha la crosticina dorata migliore?",
+     "c": "Asciuga il cibo prima di grigliarlo e prova le rigature incrociate, oppure disegna come lo posizioneresti."
+    },
+    "pt": {
+     "t": "Marcas de grelha e a reação de Maillard",
+     "g": "Percebe o alourado que cria o sabor a grelhado e faz marcas cruzadas bem definidas.",
+     "p": [
+      "A reação de Maillard é o alourado que acontece em superfícies quentes e secas, criando centenas de sabores intensos.",
+      "Seca bem a comida e usa uma grelha quente e limpa: a humidade à superfície coze a vapor em vez de alourar.",
+      "Para marcas cruzadas, põe a peça na diagonal e roda-a cerca de 90 graus a meio de cada lado."
+     ],
+     "q": "Que alimento grelhado achas que tem a melhor crosta dourada?",
+     "c": "Seca a comida antes de grelhar e tenta marcas cruzadas, ou desenha como a colocarias na grelha."
+    },
+    "pt_BR": {
+     "t": "Marcas de grelha e a reação de Maillard",
+     "g": "Entenda o dourado que cria o sabor de churrasco e faça marcas cruzadas bem definidas.",
+     "p": [
+      "A reação de Maillard é o dourado que acontece em superfícies quentes e secas, criando centenas de sabores intensos.",
+      "Seque bem a comida e use uma grelha quente e limpa: a umidade na superfície cozinha no vapor em vez de dourar.",
+      "Para marcas cruzadas, coloque a peça na diagonal e gire uns 90 graus na metade do tempo de cada lado."
+     ],
+     "q": "Qual alimento grelhado você acha que tem a melhor crostinha dourada?",
+     "c": "Seque a comida antes de grelhar e tente marcas cruzadas, ou desenhe como colocaria a peça na grelha."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: your grilling foundations",
+     "g": "Look back at your first month of grilling basics and see how much you have learned.",
+     "p": [
+      "You know the main grills and fuels, how to light charcoal and gas safely, and why preheating and clean grates matter.",
+      "You can set up direct, indirect and two-zone fires and control heat with the lid and vents.",
+      "You use a thermometer and safe temperatures, keep raw and cooked apart, and have cooked burgers, sausages, chicken and vegetables."
+     ],
+     "q": "Which lesson from this first month has been the most useful for you?",
+     "c": "Cook one simple meal using a two-zone fire and a thermometer, then tell me what went well and what you would change."
+    },
+    "de": {
+     "t": "Wiederholung: deine Grill-Grundlagen",
+     "g": "Blick auf deinen ersten Monat Grillgrundlagen zurück und sieh, wie viel du gelernt hast.",
+     "p": [
+      "Du kennst die wichtigsten Grills und Brennstoffe, zündest Kohle und Gas sicher an und weißt, warum Vorheizen zählt.",
+      "Du richtest direkte, indirekte und Zwei-Zonen-Feuer ein und steuerst die Hitze mit Deckel und Lüftungen.",
+      "Du nutzt Thermometer und sichere Temperaturen, trennst Rohes und Gegartes und hast Burger, Wurst, Hähnchen und Gemüse gegrillt."
+     ],
+     "q": "Welche Lektion aus diesem ersten Monat war für dich am nützlichsten?",
+     "c": "Koch ein einfaches Essen mit Zwei-Zonen-Feuer und Thermometer und erzähl mir, was gut lief und was du ändern würdest."
+    },
+    "es": {
+     "t": "Repaso: tus bases de parrilla",
+     "g": "Repasa tu primer mes de fundamentos y descubre cuánto has aprendido.",
+     "p": [
+      "Conoces las principales parrillas y combustibles, enciendes carbón y gas con seguridad y sabes por qué precalentar.",
+      "Sabes montar fuego directo, indirecto y de dos zonas, y controlar el calor con la tapa y las rejillas.",
+      "Usas termómetro y temperaturas seguras, separas crudo y cocinado, y has asado hamburguesas, salchichas, pollo y verduras."
+     ],
+     "q": "¿Qué lección de este primer mes te ha resultado más útil?",
+     "c": "Cocina una comida sencilla con fuego de dos zonas y termómetro, y cuéntame qué salió bien y qué cambiarías."
+    },
+    "fr": {
+     "t": "Révision : tes bases du grill",
+     "g": "Repense à ton premier mois de bases et constate tout ce que tu as appris.",
+     "p": [
+      "Tu connais les principaux barbecues et combustibles, tu allumes charbon et gaz en sécurité et sais pourquoi préchauffer.",
+      "Tu sais installer un feu direct, indirect et à deux zones, et régler la chaleur avec couvercle et aérations.",
+      "Tu utilises un thermomètre et des températures sûres, sépares cru et cuit, et as grillé burgers, saucisses, poulet et légumes."
+     ],
+     "q": "Quelle leçon de ce premier mois t'a été la plus utile ?",
+     "c": "Cuisine un repas simple avec un feu à deux zones et un thermomètre, puis raconte-moi ce qui a marché et ce que tu changerais."
+    },
+    "it": {
+     "t": "Ripasso: le basi della griglia",
+     "g": "Ripensa al tuo primo mese di basi e scopri quanto hai imparato.",
+     "p": [
+      "Conosci i principali barbecue e combustibili, accendi carbone e gas in sicurezza e sai perché preriscaldare.",
+      "Sai preparare fuoco diretto, indiretto e a due zone e regolare il calore con coperchio e prese d'aria.",
+      "Usi il termometro e le temperature sicure, separi crudo e cotto e hai grigliato hamburger, salsicce, pollo e verdure."
+     ],
+     "q": "Quale lezione di questo primo mese ti è stata più utile?",
+     "c": "Cucina un pasto semplice con fuoco a due zone e termometro, poi raccontami cosa è andato bene e cosa cambieresti."
+    },
+    "pt": {
+     "t": "Revisão: as tuas bases da grelha",
+     "g": "Revê o teu primeiro mês de bases e vê quanto já aprendeste.",
+     "p": [
+      "Conheces os principais grelhadores e combustíveis, acendes carvão e gás em segurança e sabes porque pré-aquecer.",
+      "Sabes montar fogo direto, indireto e de duas zonas, e controlar o calor com a tampa e as entradas de ar.",
+      "Usas termómetro e temperaturas seguras, separas cru e cozinhado, e já grelhaste hambúrgueres, salsichas, frango e legumes."
+     ],
+     "q": "Que lição deste primeiro mês te foi mais útil?",
+     "c": "Cozinha uma refeição simples com fogo de duas zonas e termómetro, e conta-me o que correu bem e o que mudarias."
+    },
+    "pt_BR": {
+     "t": "Revisão: suas bases de churrasco",
+     "g": "Relembre seu primeiro mês de fundamentos e veja quanto você já aprendeu.",
+     "p": [
+      "Você conhece as principais churrasqueiras e combustíveis, acende carvão e gás com segurança e sabe por que preaquecer.",
+      "Você sabe montar fogo direto, indireto e de duas zonas, e controlar o calor com a tampa e as saídas de ar.",
+      "Você usa termômetro e temperaturas seguras, separa cru e pronto, e já grelhou hambúrguer, linguiça, frango e legumes."
+     ],
+     "q": "Qual lição deste primeiro mês foi mais útil para você?",
+     "c": "Prepare uma refeição simples com fogo de duas zonas e termômetro, e me conte o que deu certo e o que mudaria."
+    }
+   }
+  }
+ ]
+}

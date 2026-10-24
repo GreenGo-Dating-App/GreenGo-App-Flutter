@@ -1,0 +1,835 @@
+{
+ "topic": "wine_culture",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holding a wine glass",
+     "g": "Learn why tasters hold a wine glass by the stem rather than the bowl.",
+     "p": [
+      "Holding the stem keeps the warmth of your hand away, so the wine stays at its ideal temperature.",
+      "It also keeps the bowl free of fingerprints, so you can see the colour clearly.",
+      "Stemless glasses are fine for casual meals; just hold them near the base."
+     ],
+     "q": "Which small table manners or rituals do you enjoy at a nice meal?",
+     "c": "Practise holding any stemmed glass with water by the stem and gently tilting it against the light."
+    },
+    "de": {
+     "t": "Ein Weinglas halten",
+     "g": "Erfahre, warum man ein Weinglas am Stiel statt am Kelch hält.",
+     "p": [
+      "Wer den Stiel hält, hält die Handwärme fern, so bleibt der Wein bei seiner idealen Temperatur.",
+      "Außerdem bleibt der Kelch frei von Fingerabdrücken, und du siehst die Farbe klar.",
+      "Gläser ohne Stiel sind beim lockeren Essen in Ordnung; halte sie einfach nahe am Boden."
+     ],
+     "q": "Welche kleinen Tischsitten oder Rituale magst du bei einem schönen Essen?",
+     "c": "Übe, ein Stielglas mit Wasser am Stiel zu halten und es leicht gegen das Licht zu neigen."
+    },
+    "es": {
+     "t": "Cómo sujetar una copa",
+     "g": "Aprende por qué los catadores sujetan la copa por el tallo y no por el cáliz.",
+     "p": [
+      "Sujetar el tallo aleja el calor de la mano, así el vino se mantiene a su temperatura ideal.",
+      "También mantiene el cáliz sin huellas, para que puedas ver bien el color.",
+      "Los vasos sin tallo están bien para comidas informales; sujétalos cerca de la base."
+     ],
+     "q": "¿Qué pequeños modales o rituales en la mesa disfrutas en una buena comida?",
+     "c": "Practica sujetar una copa con agua por el tallo e inclinarla suavemente a contraluz."
+    },
+    "fr": {
+     "t": "Tenir un verre de vin",
+     "g": "Découvre pourquoi les dégustateurs tiennent le verre par le pied plutôt que par le calice.",
+     "p": [
+      "Tenir le pied éloigne la chaleur de la main, et le vin reste à sa température idéale.",
+      "Le calice reste aussi sans traces de doigts, ce qui permet de bien voir la couleur.",
+      "Les verres sans pied conviennent aux repas simples ; tiens-les simplement près de la base."
+     ],
+     "q": "Quels petits gestes ou rituels de table apprécies-tu lors d'un bon repas ?",
+     "c": "Entraîne-toi à tenir un verre à pied rempli d'eau par le pied et à l'incliner doucement face à la lumière."
+    },
+    "it": {
+     "t": "Come tenere il calice",
+     "g": "Scopri perché chi degusta tiene il calice per lo stelo e non per la coppa.",
+     "p": [
+      "Tenere lo stelo allontana il calore della mano, così il vino resta alla temperatura ideale.",
+      "Inoltre la coppa resta senza impronte e puoi vedere bene il colore.",
+      "I bicchieri senza stelo vanno bene per i pasti informali; tienili vicino alla base."
+     ],
+     "q": "Quali piccoli gesti o rituali a tavola ti piacciono durante un bel pasto?",
+     "c": "Esercitati a tenere un calice d'acqua per lo stelo e a inclinarlo piano controluce."
+    },
+    "pt": {
+     "t": "Segurar um copo de vinho",
+     "g": "Aprende porque os provadores seguram o copo pelo pé e não pelo bojo.",
+     "p": [
+      "Segurar o pé afasta o calor da mão, e o vinho mantém-se à temperatura ideal.",
+      "Também deixa o bojo sem dedadas, para veres bem a cor.",
+      "Os copos sem pé estão bem para refeições informais; segura-os perto da base."
+     ],
+     "q": "Que pequenos gestos ou rituais à mesa aprecias numa boa refeição?",
+     "c": "Pratica segurar um copo com pé cheio de água pelo pé e incliná-lo suavemente contra a luz."
+    },
+    "pt_BR": {
+     "t": "Segurando a taça",
+     "g": "Aprenda por que os degustadores seguram a taça pela haste e não pelo bojo.",
+     "p": [
+      "Segurar a haste afasta o calor da mão, e o vinho fica na temperatura ideal.",
+      "Também deixa o bojo sem marcas de dedos, para você ver bem a cor.",
+      "Copos sem haste servem bem em refeições informais; segure perto da base."
+     ],
+     "q": "Que pequenos gestos ou rituais à mesa você curte em uma boa refeição?",
+     "c": "Pratique segurar uma taça com água pela haste e incliná-la de leve contra a luz."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wine glass shapes",
+     "g": "Understand why wine glasses have different bowl sizes and how the shape affects aroma.",
+     "p": [
+      "A bowl that narrows at the top gathers aromas and guides them towards your nose.",
+      "Large bowls give bold reds room to breathe, while smaller ones keep whites cool and focused.",
+      "Tall, narrow flutes or tulip glasses help sparkling wine keep its bubbles longer."
+     ],
+     "q": "Do you have a favourite cup or glass at home, and what makes it special to you?",
+     "c": "Smell the same juice or tea in a wide cup and a narrow glass and compare the aroma."
+    },
+    "de": {
+     "t": "Formen von Weingläsern",
+     "g": "Verstehe, warum Weingläser verschiedene Kelchgrößen haben und wie die Form den Duft beeinflusst.",
+     "p": [
+      "Ein Kelch, der sich oben verjüngt, sammelt die Aromen und lenkt sie zur Nase.",
+      "Große Kelche geben kräftigen Roten Raum zum Atmen, kleinere halten Weiße kühl und konzentriert.",
+      "Hohe, schmale Flöten oder Tulpengläser lassen Schaumwein länger perlen."
+     ],
+     "q": "Hast du zu Hause eine Lieblingstasse oder ein Lieblingsglas, und was macht es besonders?",
+     "c": "Riech am selben Saft oder Tee in einer weiten Tasse und einem schmalen Glas und vergleiche den Duft."
+    },
+    "es": {
+     "t": "Formas de copas",
+     "g": "Entiende por qué las copas tienen cálices de distinto tamaño y cómo la forma influye en el aroma.",
+     "p": [
+      "Un cáliz que se estrecha arriba concentra los aromas y los dirige hacia la nariz.",
+      "Los cálices grandes dan espacio a los tintos potentes; los pequeños mantienen los blancos frescos.",
+      "Las flautas altas y estrechas o las copas tulipa ayudan al espumoso a conservar las burbujas."
+     ],
+     "q": "¿Tienes una taza o un vaso favorito en casa, y qué lo hace especial para ti?",
+     "c": "Huele el mismo zumo o té en una taza ancha y en un vaso estrecho y compara el aroma."
+    },
+    "fr": {
+     "t": "Formes de verres",
+     "g": "Comprends pourquoi les verres ont des calices de tailles différentes et comment la forme influence l'arôme.",
+     "p": [
+      "Un calice qui se resserre en haut concentre les arômes et les guide vers le nez.",
+      "Les grands calices laissent respirer les rouges puissants ; les plus petits gardent les blancs frais.",
+      "Les flûtes hautes ou les verres tulipe aident l'effervescent à garder ses bulles plus longtemps."
+     ],
+     "q": "As-tu une tasse ou un verre préféré chez toi, et qu'est-ce qui le rend spécial ?",
+     "c": "Sens le même jus ou thé dans une tasse large et dans un verre étroit, et compare l'arôme."
+    },
+    "it": {
+     "t": "Forme dei calici",
+     "g": "Capisci perché i calici hanno coppe di dimensioni diverse e come la forma influisce sui profumi.",
+     "p": [
+      "Una coppa che si stringe in alto concentra i profumi e li guida verso il naso.",
+      "Le coppe ampie fanno respirare i rossi strutturati, quelle piccole tengono i bianchi freschi.",
+      "Flûte alte e strette o calici a tulipano aiutano lo spumante a conservare le bollicine."
+     ],
+     "q": "Hai una tazza o un bicchiere preferito a casa, e che cosa lo rende speciale?",
+     "c": "Annusa lo stesso succo o tè in una tazza larga e in un bicchiere stretto e confronta il profumo."
+    },
+    "pt": {
+     "t": "Formas de copos",
+     "g": "Percebe porque os copos de vinho têm bojos de tamanhos diferentes e como a forma afeta o aroma.",
+     "p": [
+      "Um bojo que estreita no topo concentra os aromas e leva-os até ao nariz.",
+      "Bojos grandes dão espaço aos tintos encorpados; os pequenos mantêm os brancos frescos.",
+      "Flautes altas e estreitas ou copos tulipa ajudam o espumante a manter as bolhas."
+     ],
+     "q": "Tens uma chávena ou copo preferido em casa, e o que o torna especial para ti?",
+     "c": "Cheira o mesmo sumo ou chá numa chávena larga e num copo estreito e compara o aroma."
+    },
+    "pt_BR": {
+     "t": "Formatos de taças",
+     "g": "Entenda por que as taças têm bojos de tamanhos diferentes e como o formato afeta o aroma.",
+     "p": [
+      "Um bojo que fecha no topo concentra os aromas e leva-os até o nariz.",
+      "Bojos grandes dão espaço aos tintos encorpados; os menores mantêm os brancos frescos.",
+      "Taças flûte altas e estreitas ou tulipa ajudam o espumante a manter as bolhas."
+     ],
+     "q": "Você tem uma caneca ou copo favorito em casa, e o que o torna especial?",
+     "c": "Cheire o mesmo suco ou chá em uma caneca larga e em um copo estreito e compare o aroma."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Serving temperatures",
+     "g": "Learn why whites and sparkling wines are served chilled and reds slightly below room temperature.",
+     "p": [
+      "Sparkling and light whites taste best well chilled, about 6 to 10 °C.",
+      "Fuller whites and light reds like Pinot Noir shine a little warmer, around 10 to 14 °C.",
+      "Fuller reds are best at about 15 to 18 °C; too warm and the alcohol feels hot and heavy."
+     ],
+     "q": "Do you notice how temperature changes the taste of drinks like coffee, tea or juice?",
+     "c": "Taste a glass of juice cold and again after twenty minutes at room temperature and compare."
+    },
+    "de": {
+     "t": "Serviertemperaturen",
+     "g": "Erfahre, warum Weiß- und Schaumweine gekühlt und Rotweine leicht unter Zimmertemperatur serviert werden.",
+     "p": [
+      "Schaumwein und leichte Weiße schmecken gut gekühlt am besten, bei etwa 6 bis 10 °C.",
+      "Vollere Weiße und leichte Rote wie Pinot Noir zeigen sich etwas wärmer, bei etwa 10 bis 14 °C.",
+      "Kräftige Rote passen bei 15 bis 18 °C; zu warm wirkt der Alkohol heiß und schwer."
+     ],
+     "q": "Merkst du, wie die Temperatur den Geschmack von Kaffee, Tee oder Saft verändert?",
+     "c": "Probiere ein Glas Saft kalt und nach zwanzig Minuten bei Zimmertemperatur noch einmal und vergleiche."
+    },
+    "es": {
+     "t": "Temperaturas de servicio",
+     "g": "Aprende por qué los blancos y espumosos se sirven fríos y los tintos algo por debajo de la temperatura ambiente.",
+     "p": [
+      "Los espumosos y blancos ligeros saben mejor bien fríos, a unos 6 a 10 °C.",
+      "Los blancos con más cuerpo y tintos ligeros como la Pinot Noir lucen algo más templados, a 10 a 14 °C.",
+      "Los tintos con cuerpo van mejor a 15 a 18 °C; demasiado calientes, el alcohol se nota pesado."
+     ],
+     "q": "¿Notas cómo la temperatura cambia el sabor de bebidas como el café, el té o el zumo?",
+     "c": "Prueba un zumo frío y otra vez tras veinte minutos a temperatura ambiente, y compara."
+    },
+    "fr": {
+     "t": "Températures de service",
+     "g": "Apprends pourquoi blancs et effervescents se servent frais et les rouges un peu sous la température ambiante.",
+     "p": [
+      "Effervescents et blancs légers sont meilleurs bien frais, vers 6 à 10 °C.",
+      "Les blancs plus amples et les rouges légers comme le pinot noir aiment un peu plus, vers 10 à 14 °C.",
+      "Les rouges corsés s'apprécient vers 15 à 18 °C ; trop chauds, l'alcool paraît lourd."
+     ],
+     "q": "Remarques-tu comment la température change le goût du café, du thé ou d'un jus ?",
+     "c": "Goûte un jus bien frais, puis à nouveau après vingt minutes à température ambiante, et compare."
+    },
+    "it": {
+     "t": "Temperature di servizio",
+     "g": "Scopri perché bianchi e spumanti si servono freschi e i rossi poco sotto la temperatura ambiente.",
+     "p": [
+      "Spumanti e bianchi leggeri danno il meglio ben freschi, intorno ai 6-10 °C.",
+      "Bianchi più strutturati e rossi leggeri come il Pinot Nero amano un po' di più, circa 10-14 °C.",
+      "I rossi corposi stanno bene a 15-18 °C; troppo caldi, l'alcol risulta pesante."
+     ],
+     "q": "Noti come la temperatura cambia il sapore di bevande come caffè, tè o succo?",
+     "c": "Assaggia un succo freddo e poi di nuovo dopo venti minuti a temperatura ambiente, e confronta."
+    },
+    "pt": {
+     "t": "Temperaturas de serviço",
+     "g": "Aprende porque brancos e espumantes se servem frescos e os tintos um pouco abaixo da temperatura ambiente.",
+     "p": [
+      "Espumantes e brancos leves sabem melhor bem frescos, a cerca de 6 a 10 °C.",
+      "Brancos mais encorpados e tintos leves como a Pinot Noir brilham um pouco mais quentes, a 10 a 14 °C.",
+      "Tintos encorpados ficam melhor a 15 a 18 °C; quentes demais, o álcool parece pesado."
+     ],
+     "q": "Notas como a temperatura muda o sabor de bebidas como café, chá ou sumo?",
+     "c": "Prova um sumo fresco e de novo após vinte minutos à temperatura ambiente, e compara."
+    },
+    "pt_BR": {
+     "t": "Temperaturas de serviço",
+     "g": "Aprenda por que brancos e espumantes são servidos gelados e os tintos um pouco abaixo da temperatura ambiente.",
+     "p": [
+      "Espumantes e brancos leves ficam melhores bem gelados, a cerca de 6 a 10 °C.",
+      "Brancos mais encorpados e tintos leves como a Pinot Noir brilham um pouco mais quentes, a 10 a 14 °C.",
+      "Tintos encorpados ficam melhores a 15 a 18 °C; quentes demais, o álcool fica pesado."
+     ],
+     "q": "Você percebe como a temperatura muda o sabor de bebidas como café, chá ou suco?",
+     "c": "Prove um suco gelado e de novo após vinte minutos em temperatura ambiente, e compare."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening a bottle",
+     "g": "Learn to use a corkscrew safely and open sparkling wine gently, without a loud pop.",
+     "p": [
+      "Cut the foil below the lip, insert the corkscrew in the centre and ease the cork out slowly.",
+      "For sparkling wine, keep a thumb on the cork, point the bottle away from people and turn the bottle, not the cork.",
+      "A soft sigh instead of a pop keeps the bubbles in the wine and everyone safe."
+     ],
+     "q": "Have you ever had a funny or tricky moment opening a bottle or jar?",
+     "c": "Watch a short video on the waiter's friend corkscrew and practise the movement on a bottle of sparkling water."
+    },
+    "de": {
+     "t": "Eine Flasche öffnen",
+     "g": "Lerne, einen Korkenzieher sicher zu benutzen und Schaumwein sanft ohne lauten Knall zu öffnen.",
+     "p": [
+      "Schneide die Kapsel unter dem Rand ab, setze den Korkenzieher mittig an und zieh den Korken langsam heraus.",
+      "Bei Schaumwein den Daumen auf dem Korken lassen, die Flasche von Menschen weg halten und die Flasche drehen, nicht den Korken.",
+      "Ein leises Zischen statt eines Knalls hält die Perlage im Wein und alle sicher."
+     ],
+     "q": "Hattest du schon einmal einen lustigen oder kniffligen Moment beim Öffnen einer Flasche oder eines Glases?",
+     "c": "Sieh dir ein kurzes Video zum Kellnermesser an und übe die Bewegung an einer Flasche Mineralwasser."
+    },
+    "es": {
+     "t": "Abrir una botella",
+     "g": "Aprende a usar un sacacorchos con seguridad y a abrir un espumoso con suavidad, sin estallido.",
+     "p": [
+      "Corta la cápsula bajo el gollete, clava el sacacorchos en el centro y saca el corcho despacio.",
+      "Con el espumoso, mantén el pulgar sobre el corcho, apunta lejos de las personas y gira la botella, no el corcho.",
+      "Un suave suspiro en lugar de un estallido conserva las burbujas y mantiene a todos seguros."
+     ],
+     "q": "¿Has vivido algún momento divertido o complicado al abrir una botella o un tarro?",
+     "c": "Mira un vídeo corto sobre el sacacorchos de camarero y practica el gesto con una botella de agua con gas."
+    },
+    "fr": {
+     "t": "Ouvrir une bouteille",
+     "g": "Apprends à utiliser un tire-bouchon en sécurité et à ouvrir un effervescent en douceur, sans bruit.",
+     "p": [
+      "Coupe la capsule sous le col, plante le tire-bouchon au centre et retire le bouchon lentement.",
+      "Pour un effervescent, garde le pouce sur le bouchon, vise loin des gens et tourne la bouteille, pas le bouchon.",
+      "Un léger soupir plutôt qu'un pop garde les bulles dans le vin et tout le monde en sécurité."
+     ],
+     "q": "As-tu déjà vécu un moment drôle ou délicat en ouvrant une bouteille ou un bocal ?",
+     "c": "Regarde une courte vidéo sur le limonadier et entraîne-toi au geste avec une bouteille d'eau gazeuse."
+    },
+    "it": {
+     "t": "Aprire una bottiglia",
+     "g": "Impara a usare un cavatappi in sicurezza e ad aprire uno spumante con delicatezza, senza botto.",
+     "p": [
+      "Taglia la capsula sotto il collo, inserisci il cavatappi al centro ed estrai il tappo lentamente.",
+      "Con lo spumante tieni il pollice sul tappo, punta lontano dalle persone e ruota la bottiglia, non il tappo.",
+      "Un leggero sospiro invece del botto conserva le bollicine e tiene tutti al sicuro."
+     ],
+     "q": "Ti è mai capitato un momento buffo o difficile aprendo una bottiglia o un barattolo?",
+     "c": "Guarda un breve video sul cavatappi da sommelier e prova il gesto con una bottiglia d'acqua frizzante."
+    },
+    "pt": {
+     "t": "Abrir uma garrafa",
+     "g": "Aprende a usar um saca-rolhas com segurança e a abrir um espumante com suavidade, sem estoiro.",
+     "p": [
+      "Corta a cápsula abaixo do gargalo, espeta o saca-rolhas no centro e tira a rolha devagar.",
+      "No espumante, mantém o polegar na rolha, aponta para longe das pessoas e roda a garrafa, não a rolha.",
+      "Um suspiro suave em vez de um estoiro mantém as bolhas no vinho e todos em segurança."
+     ],
+     "q": "Já tiveste um momento engraçado ou difícil a abrir uma garrafa ou um frasco?",
+     "c": "Vê um vídeo curto sobre o saca-rolhas de empregado de mesa e treina o gesto com uma garrafa de água com gás."
+    },
+    "pt_BR": {
+     "t": "Abrindo uma garrafa",
+     "g": "Aprenda a usar um saca-rolhas com segurança e a abrir um espumante com suavidade, sem estouro.",
+     "p": [
+      "Corte a cápsula abaixo do gargalo, insira o saca-rolhas no centro e puxe a rolha devagar.",
+      "No espumante, mantenha o polegar na rolha, aponte para longe das pessoas e gire a garrafa, não a rolha.",
+      "Um suspiro suave em vez de um estouro mantém as bolhas no vinho e todo mundo seguro."
+     ],
+     "q": "Você já teve um momento engraçado ou difícil abrindo uma garrafa ou um pote?",
+     "c": "Assista a um vídeo curto sobre o saca-rolhas de garçom e treine o gesto com uma garrafa de água com gás."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Corks and screw caps",
+     "g": "Understand what corks and screw caps do and why screw caps are not a sign of lower quality.",
+     "p": [
+      "Natural cork comes from the bark of the cork oak, harvested every nine years or so in Portugal and Spain.",
+      "Screw caps seal tightly and protect fresh aromas, and they are widely used in New Zealand and Australia.",
+      "Quality depends on the wine, not the closure: many excellent wines use screw caps."
+     ],
+     "q": "Before today, did you think screw caps meant a cheaper or lesser wine?",
+     "c": "Look at the closures of any bottles at home, like oil, juice or vinegar, and note which type each uses."
+    },
+    "de": {
+     "t": "Korken und Schraubverschluss",
+     "g": "Verstehe, was Korken und Schraubverschluss leisten und warum Schraubverschlüsse kein Qualitätsmangel sind.",
+     "p": [
+      "Naturkork stammt aus der Rinde der Korkeiche, die etwa alle neun Jahre in Portugal und Spanien geschält wird.",
+      "Schraubverschlüsse schließen dicht und schützen frische Aromen; in Neuseeland und Australien sind sie verbreitet.",
+      "Die Qualität hängt vom Wein ab, nicht vom Verschluss: Viele hervorragende Weine tragen Schraubverschluss."
+     ],
+     "q": "Dachtest du bisher, ein Schraubverschluss bedeute einen einfacheren Wein?",
+     "c": "Sieh dir die Verschlüsse von Flaschen zu Hause an, etwa Öl, Saft oder Essig, und notiere die Art."
+    },
+    "es": {
+     "t": "Corchos y tapones de rosca",
+     "g": "Entiende qué hacen el corcho y el tapón de rosca y por qué la rosca no indica menor calidad.",
+     "p": [
+      "El corcho natural viene de la corteza del alcornoque, que se descorcha cada nueve años más o menos en Portugal y España.",
+      "El tapón de rosca cierra bien y protege los aromas frescos; es muy usado en Nueva Zelanda y Australia.",
+      "La calidad depende del vino, no del cierre: muchos vinos excelentes llevan tapón de rosca."
+     ],
+     "q": "Antes de hoy, ¿pensabas que el tapón de rosca significaba un vino peor?",
+     "c": "Mira los cierres de las botellas de casa, como aceite, zumo o vinagre, y anota qué tipo usa cada una."
+    },
+    "fr": {
+     "t": "Bouchons et capsules à vis",
+     "g": "Comprends le rôle du bouchon et de la capsule à vis, et pourquoi la vis n'est pas un signe de moindre qualité.",
+     "p": [
+      "Le liège naturel vient de l'écorce du chêne-liège, récoltée environ tous les neuf ans au Portugal et en Espagne.",
+      "La capsule à vis ferme bien et protège les arômes frais ; elle est très utilisée en Nouvelle-Zélande et en Australie.",
+      "La qualité dépend du vin, pas du bouchage : beaucoup de grands vins sont fermés par une capsule à vis."
+     ],
+     "q": "Avant aujourd'hui, pensais-tu qu'une capsule à vis signifiait un vin moins bon ?",
+     "c": "Regarde les fermetures des bouteilles chez toi, huile, jus ou vinaigre, et note le type de chacune."
+    },
+    "it": {
+     "t": "Tappi in sughero e a vite",
+     "g": "Capisci cosa fanno sughero e tappo a vite e perché il tappo a vite non indica minore qualità.",
+     "p": [
+      "Il sughero naturale viene dalla corteccia della quercia da sughero, decorticata ogni nove anni circa in Portogallo e Spagna.",
+      "Il tappo a vite chiude bene e protegge i profumi freschi; è molto usato in Nuova Zelanda e Australia.",
+      "La qualità dipende dal vino, non dalla chiusura: molti vini eccellenti usano il tappo a vite."
+     ],
+     "q": "Prima di oggi pensavi che il tappo a vite significasse un vino meno buono?",
+     "c": "Guarda le chiusure delle bottiglie di casa, come olio, succo o aceto, e annota il tipo di ciascuna."
+    },
+    "pt": {
+     "t": "Rolhas e tampas de rosca",
+     "g": "Percebe o que fazem a rolha e a tampa de rosca e porque a rosca não é sinal de menor qualidade.",
+     "p": [
+      "A cortiça natural vem da casca do sobreiro, tirada mais ou menos de nove em nove anos em Portugal e Espanha.",
+      "A tampa de rosca veda bem e protege os aromas frescos; é muito usada na Nova Zelândia e na Austrália.",
+      "A qualidade depende do vinho, não do vedante: muitos vinhos excelentes usam tampa de rosca."
+     ],
+     "q": "Antes de hoje, achavas que a tampa de rosca significava um vinho pior?",
+     "c": "Olha para os vedantes das garrafas lá de casa, como azeite, sumo ou vinagre, e aponta o tipo de cada um."
+    },
+    "pt_BR": {
+     "t": "Rolhas e tampas de rosca",
+     "g": "Entenda o que fazem a rolha e a tampa de rosca e por que a rosca não indica menor qualidade.",
+     "p": [
+      "A cortiça natural vem da casca do sobreiro, retirada mais ou menos a cada nove anos em Portugal e na Espanha.",
+      "A tampa de rosca veda bem e protege os aromas frescos; é muito usada na Nova Zelândia e na Austrália.",
+      "A qualidade depende do vinho, não da tampa: muitos vinhos excelentes usam tampa de rosca."
+     ],
+     "q": "Antes de hoje, você achava que tampa de rosca significava um vinho pior?",
+     "c": "Olhe as tampas das garrafas em casa, como azeite, suco ou vinagre, e anote o tipo de cada uma."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Decanting basics",
+     "g": "Learn why some wines are poured into a decanter and when it really helps.",
+     "p": [
+      "Decanting separates an older red from the sediment that can form in the bottle over time.",
+      "Pouring a young, tight wine into a decanter lets air soften it and opens up its aromas.",
+      "Most everyday wines do not need decanting; a few swirls in the glass are often enough."
+     ],
+     "q": "Do you enjoy little rituals that slow things down, like brewing tea or preparing coffee by hand?",
+     "c": "Pour water slowly from a bottle into a jug while holding it against a light, as if spotting sediment."
+    },
+    "de": {
+     "t": "Grundlagen Dekantieren",
+     "g": "Erfahre, warum manche Weine in eine Karaffe gegossen werden und wann es wirklich hilft.",
+     "p": [
+      "Beim Dekantieren trennt man einen älteren Roten vom Depot, das sich mit der Zeit in der Flasche bildet.",
+      "Ein junger, verschlossener Wein wird in der Karaffe durch Luft weicher und öffnet seine Aromen.",
+      "Die meisten Alltagsweine brauchen das nicht; ein paar Schwenker im Glas reichen oft."
+     ],
+     "q": "Magst du kleine Rituale, die entschleunigen, etwa Tee aufbrühen oder Kaffee von Hand zubereiten?",
+     "c": "Gieße Wasser langsam aus einer Flasche in einen Krug und halte sie gegen das Licht, als suchtest du Depot."
+    },
+    "es": {
+     "t": "Decantar: lo básico",
+     "g": "Aprende por qué algunos vinos se sirven en un decantador y cuándo ayuda de verdad.",
+     "p": [
+      "Decantar separa un tinto viejo de los posos que pueden formarse en la botella con el tiempo.",
+      "Pasar un vino joven y cerrado al decantador deja que el aire lo suavice y abra sus aromas.",
+      "La mayoría de los vinos cotidianos no lo necesitan; unos giros en la copa suelen bastar."
+     ],
+     "q": "¿Disfrutas de pequeños rituales que hacen ir más despacio, como preparar té o café a mano?",
+     "c": "Vierte agua despacio de una botella a una jarra mirándola a contraluz, como si buscaras posos."
+    },
+    "fr": {
+     "t": "Les bases de la carafe",
+     "g": "Découvre pourquoi on verse certains vins en carafe et quand cela aide vraiment.",
+     "p": [
+      "La décantation sépare un vieux rouge du dépôt qui peut se former en bouteille avec le temps.",
+      "Carafer un vin jeune et fermé permet à l'air de l'assouplir et d'ouvrir ses arômes.",
+      "La plupart des vins du quotidien n'en ont pas besoin ; quelques mouvements dans le verre suffisent souvent."
+     ],
+     "q": "Aimes-tu les petits rituels qui ralentissent le temps, comme préparer un thé ou un café à la main ?",
+     "c": "Verse lentement de l'eau d'une bouteille dans une carafe en la tenant face à la lumière, comme pour repérer un dépôt."
+    },
+    "it": {
+     "t": "Decantare: le basi",
+     "g": "Scopri perché alcuni vini si versano in un decanter e quando aiuta davvero.",
+     "p": [
+      "Decantare separa un rosso maturo dal sedimento che può formarsi in bottiglia col tempo.",
+      "Versare un vino giovane e chiuso nel decanter permette all'aria di ammorbidirlo e aprirne i profumi.",
+      "La maggior parte dei vini quotidiani non ne ha bisogno; qualche rotazione nel calice spesso basta."
+     ],
+     "q": "Ti piacciono i piccoli rituali che rallentano, come preparare il tè o il caffè a mano?",
+     "c": "Versa piano l'acqua da una bottiglia in una caraffa tenendola controluce, come per cercare il sedimento."
+    },
+    "pt": {
+     "t": "Decantar: o básico",
+     "g": "Aprende porque alguns vinhos são vertidos para um decantador e quando isso ajuda mesmo.",
+     "p": [
+      "Decantar separa um tinto mais velho do depósito que se pode formar na garrafa com o tempo.",
+      "Passar um vinho jovem e fechado para o decantador deixa o ar suavizá-lo e abrir os aromas.",
+      "A maioria dos vinhos do dia a dia não precisa; umas voltas no copo costumam chegar."
+     ],
+     "q": "Gostas de pequenos rituais que abrandam o ritmo, como fazer chá ou café à mão?",
+     "c": "Verte água devagar de uma garrafa para um jarro, segurando-a contra a luz, como se procurasses depósito."
+    },
+    "pt_BR": {
+     "t": "Decantação: o básico",
+     "g": "Aprenda por que alguns vinhos vão para um decanter e quando isso realmente ajuda.",
+     "p": [
+      "Decantar separa um tinto mais velho dos sedimentos que podem se formar na garrafa com o tempo.",
+      "Passar um vinho jovem e fechado para o decanter deixa o ar suavizá-lo e abrir seus aromas.",
+      "A maioria dos vinhos do dia a dia não precisa; algumas giradas na taça costumam bastar."
+     ],
+     "q": "Você curte pequenos rituais que desaceleram, como fazer chá ou café coado à mão?",
+     "c": "Despeje água devagar de uma garrafa em uma jarra, segurando-a contra a luz, como se procurasse sedimentos."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storing wine at home",
+     "g": "Learn the simple rules for keeping bottles in good condition at home.",
+     "p": [
+      "Wine likes a cool, steady temperature, ideally around 10 to 15 °C, without big swings.",
+      "Keep bottles in the dark and away from vibration, since light and heat can damage aromas.",
+      "Lay cork-sealed bottles on their side so the cork stays moist and does not let air in."
+     ],
+     "q": "Where in your home is the coolest, darkest and calmest spot?",
+     "c": "Find the most suitable storage corner at home and check it with your hand at different times of day."
+    },
+    "de": {
+     "t": "Wein zu Hause lagern",
+     "g": "Lerne die einfachen Regeln, um Flaschen zu Hause in gutem Zustand zu halten.",
+     "p": [
+      "Wein mag eine kühle, gleichmäßige Temperatur, ideal etwa 10 bis 15 °C, ohne große Schwankungen.",
+      "Lagere Flaschen dunkel und ohne Erschütterung, denn Licht und Wärme können Aromen schaden.",
+      "Flaschen mit Korken liegen auf der Seite, damit der Korken feucht bleibt und keine Luft hereinlässt."
+     ],
+     "q": "Wo ist bei dir zu Hause der kühlste, dunkelste und ruhigste Platz?",
+     "c": "Finde die beste Lagerecke in deiner Wohnung und prüfe sie zu verschiedenen Tageszeiten mit der Hand."
+    },
+    "es": {
+     "t": "Guardar vino en casa",
+     "g": "Aprende las reglas sencillas para mantener las botellas en buen estado en casa.",
+     "p": [
+      "El vino prefiere una temperatura fresca y estable, idealmente de 10 a 15 °C, sin grandes cambios.",
+      "Guarda las botellas a oscuras y sin vibraciones, porque la luz y el calor pueden dañar los aromas.",
+      "Acuesta las botellas con corcho para que este siga húmedo y no deje pasar el aire."
+     ],
+     "q": "¿Cuál es el rincón más fresco, oscuro y tranquilo de tu casa?",
+     "c": "Busca el mejor rincón de casa para guardar botellas y compruébalo con la mano a distintas horas."
+    },
+    "fr": {
+     "t": "Conserver le vin chez soi",
+     "g": "Apprends les règles simples pour garder tes bouteilles en bon état à la maison.",
+     "p": [
+      "Le vin aime une température fraîche et stable, idéalement de 10 à 15 °C, sans grands écarts.",
+      "Garde les bouteilles à l'obscurité et sans vibrations, car la lumière et la chaleur abîment les arômes.",
+      "Couche les bouteilles bouchées au liège pour que le bouchon reste humide et étanche à l'air."
+     ],
+     "q": "Quel est l'endroit le plus frais, le plus sombre et le plus calme de ton logement ?",
+     "c": "Trouve le meilleur coin de rangement chez toi et vérifie-le avec la main à différents moments de la journée."
+    },
+    "it": {
+     "t": "Conservare il vino a casa",
+     "g": "Impara le regole semplici per tenere le bottiglie in buono stato a casa.",
+     "p": [
+      "Il vino ama una temperatura fresca e costante, idealmente tra 10 e 15 °C, senza grandi sbalzi.",
+      "Tieni le bottiglie al buio e lontano dalle vibrazioni, perché luce e calore rovinano i profumi.",
+      "Corica le bottiglie con tappo di sughero, così il tappo resta umido e non lascia entrare aria."
+     ],
+     "q": "Qual è l'angolo più fresco, buio e tranquillo di casa tua?",
+     "c": "Trova l'angolo migliore di casa per le bottiglie e controllalo con la mano in diversi momenti del giorno."
+    },
+    "pt": {
+     "t": "Guardar vinho em casa",
+     "g": "Aprende as regras simples para manter as garrafas em bom estado em casa.",
+     "p": [
+      "O vinho gosta de uma temperatura fresca e estável, idealmente entre 10 e 15 °C, sem grandes oscilações.",
+      "Guarda as garrafas no escuro e longe de vibrações, porque a luz e o calor estragam os aromas.",
+      "Deita as garrafas com rolha para que a cortiça se mantenha húmida e não deixe entrar ar."
+     ],
+     "q": "Qual é o sítio mais fresco, escuro e sossegado da tua casa?",
+     "c": "Encontra o melhor canto de casa para guardar garrafas e verifica-o com a mão a várias horas do dia."
+    },
+    "pt_BR": {
+     "t": "Guardando vinho em casa",
+     "g": "Aprenda as regras simples para manter as garrafas em bom estado em casa.",
+     "p": [
+      "O vinho gosta de temperatura fresca e estável, de preferência entre 10 e 15 °C, sem grandes variações.",
+      "Guarde as garrafas no escuro e longe de vibrações, porque luz e calor estragam os aromas.",
+      "Deite as garrafas com rolha para que a cortiça fique úmida e não deixe o ar entrar."
+     ],
+     "q": "Qual é o lugar mais fresco, escuro e tranquilo da sua casa?",
+     "c": "Encontre o melhor canto da casa para guardar garrafas e confira com a mão em horários diferentes."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five S's of tasting",
+     "g": "Learn a simple five-step method to taste with attention: see, swirl, sniff, sip and savour.",
+     "p": [
+      "See: look at the colour and clarity; swirl: move the glass gently to release aromas.",
+      "Sniff: take short, calm smells; sip: take a small amount and let it cover your whole mouth.",
+      "Savour: pause, notice the flavours and how long they last, and note your impressions."
+     ],
+     "q": "Which of your senses do you feel is strongest: sight, smell, taste, touch or hearing?",
+     "c": "Try the five S's today with a juice, tea or alcohol-free drink and say one word for each step."
+    },
+    "de": {
+     "t": "Die fünf S der Verkostung",
+     "g": "Lerne eine einfache Methode in fünf Schritten: sehen, schwenken, schnuppern, schlürfen, schmecken.",
+     "p": [
+      "Sehen: Farbe und Klarheit betrachten; schwenken: das Glas sanft bewegen, um Aromen freizusetzen.",
+      "Schnuppern: kurz und ruhig riechen; schlürfen: einen kleinen Schluck im ganzen Mund verteilen.",
+      "Schmecken: innehalten, Aromen und ihre Länge wahrnehmen und deine Eindrücke notieren."
+     ],
+     "q": "Welcher deiner Sinne ist deiner Meinung nach am stärksten: Sehen, Riechen, Schmecken, Tasten oder Hören?",
+     "c": "Probiere die fünf S heute mit Saft, Tee oder einem alkoholfreien Getränk und finde für jeden Schritt ein Wort."
+    },
+    "es": {
+     "t": "Las cinco claves de la cata",
+     "g": "Aprende un método sencillo en cinco pasos para catar con atención: ver, girar, oler, probar y saborear.",
+     "p": [
+      "Ver: observa el color y la limpidez; girar: mueve la copa con suavidad para liberar aromas.",
+      "Oler: inspira de forma corta y tranquila; probar: toma un sorbo pequeño que cubra toda la boca.",
+      "Saborear: haz una pausa, nota los sabores y cuánto duran, y anota tus impresiones."
+     ],
+     "q": "¿Cuál de tus sentidos crees que es el más fuerte: vista, olfato, gusto, tacto u oído?",
+     "c": "Prueba hoy los cinco pasos con un zumo, un té o una bebida sin alcohol y di una palabra en cada paso."
+    },
+    "fr": {
+     "t": "Les cinq étapes de la dégustation",
+     "g": "Apprends une méthode simple en cinq étapes : regarder, faire tourner, sentir, goûter et savourer.",
+     "p": [
+      "Regarder : observe la couleur et la limpidité ; faire tourner : agite doucement le verre pour libérer les arômes.",
+      "Sentir : inspire brièvement et calmement ; goûter : prends une petite gorgée qui tapisse toute la bouche.",
+      "Savourer : fais une pause, observe les saveurs et leur durée, et note tes impressions."
+     ],
+     "q": "Lequel de tes sens te semble le plus fort : la vue, l'odorat, le goût, le toucher ou l'ouïe ?",
+     "c": "Essaie les cinq étapes aujourd'hui avec un jus, un thé ou une boisson sans alcool et dis un mot pour chacune."
+    },
+    "it": {
+     "t": "Le cinque fasi della degustazione",
+     "g": "Impara un metodo semplice in cinque fasi: guardare, roteare, annusare, sorseggiare e assaporare.",
+     "p": [
+      "Guardare: osserva colore e limpidezza; roteare: muovi il calice con delicatezza per liberare i profumi.",
+      "Annusare: inspira in modo breve e calmo; sorseggiare: prendi un piccolo sorso che copra tutta la bocca.",
+      "Assaporare: fai una pausa, nota i sapori e quanto durano, e annota le tue impressioni."
+     ],
+     "q": "Quale dei tuoi sensi ti sembra più forte: vista, olfatto, gusto, tatto o udito?",
+     "c": "Prova oggi le cinque fasi con un succo, un tè o una bevanda analcolica e di' una parola per ogni fase."
+    },
+    "pt": {
+     "t": "As cinco etapas da prova",
+     "g": "Aprende um método simples em cinco etapas para provar com atenção: ver, rodar, cheirar, provar e saborear.",
+     "p": [
+      "Ver: observa a cor e a limpidez; rodar: mexe o copo com suavidade para libertar os aromas.",
+      "Cheirar: inspira de forma curta e calma; provar: toma um gole pequeno que cubra toda a boca.",
+      "Saborear: faz uma pausa, repara nos sabores e em quanto duram, e aponta as tuas impressões."
+     ],
+     "q": "Qual dos teus sentidos achas que é o mais forte: visão, olfato, paladar, tato ou audição?",
+     "c": "Experimenta hoje as cinco etapas com um sumo, chá ou bebida sem álcool e diz uma palavra em cada uma."
+    },
+    "pt_BR": {
+     "t": "As cinco etapas da degustação",
+     "g": "Aprenda um método simples em cinco etapas para degustar com atenção: ver, girar, cheirar, provar e saborear.",
+     "p": [
+      "Ver: observe a cor e a limpidez; girar: mexa a taça com suavidade para liberar os aromas.",
+      "Cheirar: inspire de forma curta e calma; provar: tome um gole pequeno que cubra toda a boca.",
+      "Saborear: faça uma pausa, repare nos sabores e em quanto duram, e anote suas impressões."
+     ],
+     "q": "Qual dos seus sentidos você acha mais forte: visão, olfato, paladar, tato ou audição?",
+     "c": "Experimente hoje as cinco etapas com um suco, chá ou bebida sem álcool e diga uma palavra em cada uma."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Looking at colour",
+     "g": "Discover what the colour and depth of a wine can reveal about its grape and age.",
+     "p": [
+      "Tilt the glass over a white background and look at the colour from the centre to the rim.",
+      "White wines tend to deepen from pale lemon to gold with age; reds move from purple to garnet and brick.",
+      "Thick-skinned grapes like Syrah give deep colours, while Pinot Noir and Nebbiolo stay paler."
+     ],
+     "q": "Which colours make you think of freshness, and which make you think of richness?",
+     "c": "Hold a glass of tea against a white sheet of paper and describe its colour at the centre and at the rim."
+    },
+    "de": {
+     "t": "Die Farbe betrachten",
+     "g": "Entdecke, was Farbe und Tiefe eines Weins über Rebsorte und Alter verraten können.",
+     "p": [
+      "Neige das Glas über einem weißen Hintergrund und betrachte die Farbe von der Mitte bis zum Rand.",
+      "Weißweine werden mit dem Alter von hellem Zitronengelb zu Gold; Rote gehen von Violett zu Granat und Ziegelrot.",
+      "Dickschalige Sorten wie Syrah geben tiefe Farben, Pinot Noir und Nebbiolo bleiben heller."
+     ],
+     "q": "Welche Farben lassen dich an Frische denken, und welche an Fülle?",
+     "c": "Halte ein Glas Tee vor ein weißes Blatt Papier und beschreibe die Farbe in der Mitte und am Rand."
+    },
+    "es": {
+     "t": "Observar el color",
+     "g": "Descubre lo que el color y la intensidad de un vino pueden revelar sobre su uva y su edad.",
+     "p": [
+      "Inclina la copa sobre un fondo blanco y mira el color desde el centro hasta el borde.",
+      "Los blancos suelen pasar de amarillo pálido a dorado con la edad; los tintos, de violeta a granate y teja.",
+      "Las uvas de piel gruesa como la Syrah dan colores profundos; la Pinot Noir y la Nebbiolo son más pálidas."
+     ],
+     "q": "¿Qué colores te hacen pensar en frescura y cuáles en riqueza?",
+     "c": "Pon un vaso de té ante una hoja blanca y describe su color en el centro y en el borde."
+    },
+    "fr": {
+     "t": "Observer la couleur",
+     "g": "Découvre ce que la couleur et l'intensité d'un vin révèlent sur son cépage et son âge.",
+     "p": [
+      "Incline le verre au-dessus d'un fond blanc et regarde la couleur du centre jusqu'au bord.",
+      "Les blancs passent avec l'âge du jaune pâle à l'or ; les rouges, du violet au grenat puis à la tuile.",
+      "Les cépages à peau épaisse comme la syrah donnent des couleurs profondes ; pinot noir et nebbiolo restent plus pâles."
+     ],
+     "q": "Quelles couleurs t'évoquent la fraîcheur, et lesquelles la richesse ?",
+     "c": "Place un verre de thé devant une feuille blanche et décris sa couleur au centre et sur le bord."
+    },
+    "it": {
+     "t": "Osservare il colore",
+     "g": "Scopri che cosa colore e intensità di un vino possono rivelare sul vitigno e sull'età.",
+     "p": [
+      "Inclina il calice su uno sfondo bianco e guarda il colore dal centro fino all'unghia, il bordo.",
+      "I bianchi passano con l'età dal giallo paglierino all'oro; i rossi dal porpora al granato e al mattone.",
+      "Le uve dalla buccia spessa come il Syrah danno colori profondi, mentre Pinot Nero e Nebbiolo restano chiari."
+     ],
+     "q": "Quali colori ti fanno pensare alla freschezza, e quali alla ricchezza?",
+     "c": "Metti un bicchiere di tè davanti a un foglio bianco e descrivi il colore al centro e sul bordo."
+    },
+    "pt": {
+     "t": "Observar a cor",
+     "g": "Descobre o que a cor e a intensidade de um vinho podem revelar sobre a casta e a idade.",
+     "p": [
+      "Inclina o copo sobre um fundo branco e olha para a cor do centro até ao rebordo.",
+      "Os brancos passam com a idade de amarelo-pálido a dourado; os tintos, de violeta a granada e tijolo.",
+      "Castas de película grossa como a Syrah dão cores profundas; a Pinot Noir e a Nebbiolo ficam mais claras."
+     ],
+     "q": "Que cores te fazem pensar em frescura, e quais em riqueza?",
+     "c": "Põe um copo de chá à frente de uma folha branca e descreve a cor no centro e no rebordo."
+    },
+    "pt_BR": {
+     "t": "Observando a cor",
+     "g": "Descubra o que a cor e a intensidade de um vinho podem revelar sobre a uva e a idade.",
+     "p": [
+      "Incline a taça sobre um fundo branco e olhe a cor do centro até a borda.",
+      "Os brancos passam com a idade de amarelo-claro a dourado; os tintos, de violeta a granada e tijolo.",
+      "Uvas de casca grossa como a Syrah dão cores profundas; a Pinot Noir e a Nebbiolo ficam mais claras."
+     ],
+     "q": "Quais cores fazem você pensar em frescor, e quais em riqueza?",
+     "c": "Coloque um copo de chá na frente de uma folha branca e descreva a cor no centro e na borda."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Swirling and smelling",
+     "g": "Learn why swirling releases aromas and how to smell in short, gentle sniffs.",
+     "p": [
+      "Swirling spreads the wine over the glass, mixes in air and lifts aromas into the bowl.",
+      "Keep the glass on the table while swirling until you feel confident doing it in the air.",
+      "Take two or three short, gentle sniffs, then pause, since your nose tires quickly with long breaths."
+     ],
+     "q": "Is there a smell from your childhood kitchen that you could recognise anywhere?",
+     "c": "Swirl a glass of orange juice, then sniff it before and after and notice how the aroma changes."
+    },
+    "de": {
+     "t": "Schwenken und riechen",
+     "g": "Erfahre, warum Schwenken Aromen freisetzt und wie du in kurzen, sanften Zügen riechst.",
+     "p": [
+      "Beim Schwenken verteilt sich der Wein im Glas, nimmt Luft auf und hebt die Aromen in den Kelch.",
+      "Lass das Glas beim Schwenken auf dem Tisch stehen, bis du dich sicher fühlst, es in der Luft zu tun.",
+      "Riech zwei- oder dreimal kurz und sanft und mach dann eine Pause, denn die Nase ermüdet schnell."
+     ],
+     "q": "Gibt es einen Duft aus der Küche deiner Kindheit, den du überall wiedererkennen würdest?",
+     "c": "Schwenke ein Glas Orangensaft und riech davor und danach daran: Wie verändert sich der Duft?"
+    },
+    "es": {
+     "t": "Girar y oler",
+     "g": "Aprende por qué girar la copa libera aromas y cómo oler con inspiraciones cortas y suaves.",
+     "p": [
+      "Al girar, el vino se extiende por la copa, se mezcla con aire y eleva los aromas.",
+      "Mantén la copa apoyada en la mesa al girarla hasta que te sientas seguro haciéndolo en el aire.",
+      "Haz dos o tres inspiraciones cortas y suaves y luego una pausa, porque la nariz se cansa rápido."
+     ],
+     "q": "¿Hay algún olor de la cocina de tu infancia que reconocerías en cualquier lugar?",
+     "c": "Gira un vaso de zumo de naranja, huélelo antes y después y fíjate en cómo cambia el aroma."
+    },
+    "fr": {
+     "t": "Faire tourner et sentir",
+     "g": "Découvre pourquoi faire tourner le vin libère ses arômes et comment sentir par petites inspirations.",
+     "p": [
+      "En tournant, le vin s'étale sur la paroi, s'aère et fait monter les arômes dans le verre.",
+      "Garde le verre posé sur la table en le faisant tourner jusqu'à être à l'aise pour le faire en l'air.",
+      "Fais deux ou trois inspirations brèves et douces, puis une pause, car le nez se fatigue vite."
+     ],
+     "q": "Y a-t-il une odeur de la cuisine de ton enfance que tu reconnaîtrais n'importe où ?",
+     "c": "Fais tourner un verre de jus d'orange, sens-le avant et après, et remarque comment l'arôme change."
+    },
+    "it": {
+     "t": "Roteare e annusare",
+     "g": "Scopri perché roteare il calice libera i profumi e come annusare con brevi inspirazioni delicate.",
+     "p": [
+      "Roteando, il vino si stende sulle pareti, si ossigena e solleva i profumi nella coppa.",
+      "Tieni il calice appoggiato sul tavolo mentre lo roti, finché non ti senti sicuro a farlo in aria.",
+      "Fai due o tre inspirazioni brevi e delicate, poi una pausa, perché il naso si stanca in fretta."
+     ],
+     "q": "C'è un odore della cucina della tua infanzia che riconosceresti ovunque?",
+     "c": "Rotea un bicchiere di succo d'arancia, annusalo prima e dopo e nota come cambia il profumo."
+    },
+    "pt": {
+     "t": "Rodar e cheirar",
+     "g": "Aprende porque rodar o copo liberta aromas e como cheirar com inspirações curtas e suaves.",
+     "p": [
+      "Ao rodar, o vinho espalha-se pelo copo, mistura-se com ar e faz subir os aromas.",
+      "Mantém o copo pousado na mesa enquanto o rodas, até te sentires seguro a fazê-lo no ar.",
+      "Faz duas ou três inspirações curtas e suaves e depois uma pausa, porque o nariz cansa-se depressa."
+     ],
+     "q": "Há algum cheiro da cozinha da tua infância que reconhecerias em qualquer lado?",
+     "c": "Roda um copo de sumo de laranja, cheira-o antes e depois e repara como o aroma muda."
+    },
+    "pt_BR": {
+     "t": "Girar e cheirar",
+     "g": "Aprenda por que girar a taça libera aromas e como cheirar com inspirações curtas e suaves.",
+     "p": [
+      "Ao girar, o vinho se espalha pela taça, se mistura com o ar e faz os aromas subirem.",
+      "Mantenha a taça apoiada na mesa enquanto gira, até se sentir seguro para fazer isso no ar.",
+      "Faça duas ou três inspirações curtas e suaves e depois uma pausa, porque o nariz cansa rápido."
+     ],
+     "q": "Existe algum cheiro da cozinha da sua infância que você reconheceria em qualquer lugar?",
+     "c": "Gire um copo de suco de laranja, cheire antes e depois e repare como o aroma muda."
+    }
+   }
+  }
+ ]
+}

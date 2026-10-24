@@ -1,0 +1,835 @@
+{
+ "topic": "home_workouts",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jumping jacks and low-impact jacks",
+     "g": "Learn classic jumping jacks and a quiet, joint-friendly version.",
+     "p": [
+      "Classic jacks: jump feet out while arms swing up, then jump back in.",
+      "Low-impact jacks: step one foot out at a time while raising your arms.",
+      "Choose the quiet version if you have neighbours below or tender joints."
+     ],
+     "q": "Which version suits your home and your body better?",
+     "c": "Do 3 rounds of 20 seconds of jacks, classic or low-impact, with short rests."
+    },
+    "de": {
+     "t": "Hampelmänner und leise Variante",
+     "g": "Lerne den klassischen Hampelmann und eine leise, gelenkschonende Version.",
+     "p": [
+      "Klassisch: Füße auseinanderspringen, Arme hoch, dann zurückspringen.",
+      "Leise Variante: abwechselnd einen Fuß zur Seite setzen und dabei die Arme heben.",
+      "Nimm die leise Version, wenn Nachbarn unter dir wohnen oder Gelenke empfindlich sind."
+     ],
+     "q": "Welche Variante passt besser zu deiner Wohnung und deinem Körper?",
+     "c": "Mach 3 Runden à 20 Sekunden Hampelmänner, klassisch oder leise, mit kurzen Pausen."
+    },
+    "es": {
+     "t": "Saltos de tijera y versión sin impacto",
+     "g": "Aprende los saltos de tijera clásicos y una versión silenciosa y suave.",
+     "p": [
+      "Clásicos: salta abriendo los pies mientras subes los brazos y vuelve a cerrar.",
+      "Sin impacto: saca un pie a un lado cada vez mientras subes los brazos.",
+      "Elige la versión silenciosa si tienes vecinos abajo o articulaciones sensibles."
+     ],
+     "q": "¿Qué versión encaja mejor con tu casa y tu cuerpo?",
+     "c": "Haz 3 rondas de 20 segundos de tijeras, clásicas o sin impacto, con descansos cortos."
+    },
+    "fr": {
+     "t": "Jumping jacks et version sans impact",
+     "g": "Apprends les jumping jacks classiques et une version silencieuse et douce.",
+     "p": [
+      "Classiques : saute pieds écartés en levant les bras, puis reviens pieds joints.",
+      "Sans impact : écarte un pied à la fois en levant les bras.",
+      "Choisis la version calme si tu as des voisins en dessous ou des articulations sensibles."
+     ],
+     "q": "Quelle version convient le mieux à ton logement et à ton corps ?",
+     "c": "Fais 3 tours de 20 secondes de jacks, classiques ou sans impact, avec de courtes pauses."
+    },
+    "it": {
+     "t": "Jumping jack e versione senza salti",
+     "g": "Impara i jumping jack classici e una versione silenziosa e gentile con le articolazioni.",
+     "p": [
+      "Classici: salta aprendo i piedi mentre alzi le braccia, poi torna a piedi uniti.",
+      "Senza salti: porta un piede di lato alla volta mentre alzi le braccia.",
+      "Scegli la versione silenziosa se hai vicini sotto o articolazioni delicate."
+     ],
+     "q": "Quale versione è più adatta alla tua casa e al tuo corpo?",
+     "c": "Fai 3 round da 20 secondi di jumping jack, classici o senza salti, con brevi pause."
+    },
+    "pt": {
+     "t": "Polichinelos e versão sem impacto",
+     "g": "Aprende os polichinelos clássicos e uma versão silenciosa e suave.",
+     "p": [
+      "Clássicos: salta abrindo os pés enquanto sobes os braços e volta a fechar.",
+      "Sem impacto: leva um pé de cada vez para o lado enquanto sobes os braços.",
+      "Escolhe a versão silenciosa se tens vizinhos por baixo ou articulações sensíveis."
+     ],
+     "q": "Que versão combina melhor com a tua casa e o teu corpo?",
+     "c": "Faz 3 rondas de 20 segundos de polichinelos, clássicos ou sem impacto, com pausas curtas."
+    },
+    "pt_BR": {
+     "t": "Polichinelo e versão sem impacto",
+     "g": "Aprenda o polichinelo clássico e uma versão silenciosa e suave.",
+     "p": [
+      "Clássico: pule abrindo os pés enquanto sobe os braços e volte a fechar.",
+      "Sem impacto: leve um pé de cada vez para o lado enquanto sobe os braços.",
+      "Escolha a versão silenciosa se tem vizinhos embaixo ou articulações sensíveis."
+     ],
+     "q": "Qual versão combina mais com sua casa e seu corpo?",
+     "c": "Faça 3 rodadas de 20 segundos de polichinelo, clássico ou sem impacto, com pausas curtas."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "High knees and fast feet",
+     "g": "Add short, fun bursts of energy for your heart and coordination.",
+     "p": [
+      "High knees: march fast, lifting knees towards hip height, arms pumping.",
+      "Fast feet: quick, light steps on the spot, staying on the balls of your feet.",
+      "Keep bursts short, like 15 to 20 seconds, and rest as long as you need."
+     ],
+     "q": "Which felt more fun, high knees or fast feet?",
+     "c": "Do 4 rounds of 15 seconds alternating high knees and fast feet, resting 30 seconds."
+    },
+    "de": {
+     "t": "Kniehebelauf und schnelle Füße",
+     "g": "Bau kurze, lustige Energieschübe für Herz und Koordination ein.",
+     "p": [
+      "Kniehebelauf: schnell marschieren, Knie Richtung Hüfthöhe, Arme schwingen mit.",
+      "Schnelle Füße: kleine, leichte Schritte auf der Stelle auf den Fußballen.",
+      "Halte die Schübe kurz, etwa 15 bis 20 Sekunden, und pausiere so lange wie nötig."
+     ],
+     "q": "Was hat mehr Spaß gemacht: Kniehebelauf oder schnelle Füße?",
+     "c": "Mach 4 Runden à 15 Sekunden abwechselnd Kniehebelauf und schnelle Füße, 30 Sekunden Pause."
+    },
+    "es": {
+     "t": "Rodillas arriba y pies rápidos",
+     "g": "Añade ráfagas cortas y divertidas de energía para el corazón y la coordinación.",
+     "p": [
+      "Rodillas arriba: marcha rápido subiendo las rodillas hacia la cadera, brazos activos.",
+      "Pies rápidos: pasos cortos y ligeros en el sitio, sobre la parte delantera del pie.",
+      "Haz ráfagas cortas, de 15 a 20 segundos, y descansa lo que necesites."
+     ],
+     "q": "¿Qué fue más divertido, rodillas arriba o pies rápidos?",
+     "c": "Haz 4 rondas de 15 segundos alternando rodillas arriba y pies rápidos, con 30 segundos de descanso."
+    },
+    "fr": {
+     "t": "Montées de genoux et pieds rapides",
+     "g": "Ajoute de courtes rafales d'énergie ludiques pour le cœur et la coordination.",
+     "p": [
+      "Montées de genoux : marche vite, genoux vers les hanches, bras dynamiques.",
+      "Pieds rapides : petits pas légers et vifs sur place, sur l'avant des pieds.",
+      "Garde des efforts courts, 15 à 20 secondes, et repose-toi autant que nécessaire."
+     ],
+     "q": "Qu'est-ce qui était le plus amusant : montées de genoux ou pieds rapides ?",
+     "c": "Fais 4 tours de 15 secondes en alternant montées de genoux et pieds rapides, 30 secondes de repos."
+    },
+    "it": {
+     "t": "Skip alto e piedi veloci",
+     "g": "Aggiungi brevi e divertenti scariche di energia per cuore e coordinazione.",
+     "p": [
+      "Skip alto: marcia veloce portando le ginocchia verso le anche, braccia attive.",
+      "Piedi veloci: passi piccoli e leggeri sul posto, sull'avampiede.",
+      "Tieni gli scatti brevi, da 15 a 20 secondi, e recupera quanto ti serve."
+     ],
+     "q": "Cosa è stato più divertente, skip alto o piedi veloci?",
+     "c": "Fai 4 round da 15 secondi alternando skip alto e piedi veloci, con 30 secondi di recupero."
+    },
+    "pt": {
+     "t": "Skipping e pés rápidos",
+     "g": "Junta pequenas explosões de energia divertidas para o coração e a coordenação.",
+     "p": [
+      "Skipping: marcha rápida subindo os joelhos até à altura da anca, braços ativos.",
+      "Pés rápidos: passos curtos e leves no lugar, na parte da frente dos pés.",
+      "Mantém os esforços curtos, de 15 a 20 segundos, e descansa o que precisares."
+     ],
+     "q": "O que foi mais divertido, skipping ou pés rápidos?",
+     "c": "Faz 4 rondas de 15 segundos alternando skipping e pés rápidos, com 30 segundos de descanso."
+    },
+    "pt_BR": {
+     "t": "Skipping e pés rápidos",
+     "g": "Inclua explosões curtas e divertidas de energia para o coração e a coordenação.",
+     "p": [
+      "Skipping: marche rápido subindo os joelhos até a altura do quadril, braços ativos.",
+      "Pés rápidos: passos curtos e leves no lugar, na ponta dos pés.",
+      "Mantenha os estímulos curtos, de 15 a 20 segundos, e descanse o quanto precisar."
+     ],
+     "q": "O que foi mais divertido, skipping ou pés rápidos?",
+     "c": "Faça 4 rodadas de 15 segundos alternando skipping e pés rápidos, com 30 segundos de descanso."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shadow boxing basics",
+     "g": "Turn jabs, crosses and footwork into fun home cardio.",
+     "p": [
+      "Stand in a relaxed stance, one foot forward, hands up near your face.",
+      "A jab is a quick straight punch with the front hand; a cross comes from the back hand.",
+      "Punch into the air, never locking your elbows, and stay light on your feet."
+     ],
+     "q": "Have you ever tried boxing moves before?",
+     "c": "Shadow box for 3 rounds of 30 seconds, mixing jabs, crosses and small steps."
+    },
+    "de": {
+     "t": "Grundlagen des Schattenboxens",
+     "g": "Mach aus Jab, Cross und Beinarbeit ein lustiges Cardio zu Hause.",
+     "p": [
+      "Steh locker, ein Fuß vorn, die Hände oben nah am Gesicht.",
+      "Ein Jab ist ein schneller gerader Schlag mit der vorderen Hand, ein Cross kommt von hinten.",
+      "Schlag in die Luft, ohne die Ellbogen durchzustrecken, und bleib leichtfüßig."
+     ],
+     "q": "Hast du schon mal Boxbewegungen ausprobiert?",
+     "c": "Box 3 Runden à 30 Sekunden gegen deinen Schatten mit Jabs, Crosses und kleinen Schritten."
+    },
+    "es": {
+     "t": "Boxeo de sombra básico",
+     "g": "Convierte jabs, directos y juego de pies en un cardio divertido en casa.",
+     "p": [
+      "Ponte en guardia relajada, un pie delante y las manos arriba cerca de la cara.",
+      "El jab es un golpe recto y rápido con la mano delantera; el directo sale de la trasera.",
+      "Golpea al aire sin bloquear los codos y mantente ligero de pies."
+     ],
+     "q": "¿Has probado alguna vez movimientos de boxeo?",
+     "c": "Haz boxeo de sombra 3 rondas de 30 segundos, mezclando jabs, directos y pasos cortos."
+    },
+    "fr": {
+     "t": "Les bases de la boxe dans le vide",
+     "g": "Transforme jabs, directs et jeu de jambes en cardio ludique à la maison.",
+     "p": [
+      "Mets-toi en garde détendue, un pied devant, mains hautes près du visage.",
+      "Le jab est un coup droit rapide de la main avant ; le direct part de la main arrière.",
+      "Frappe dans le vide sans verrouiller les coudes et reste léger sur tes appuis."
+     ],
+     "q": "As-tu déjà essayé des mouvements de boxe ?",
+     "c": "Boxe dans le vide 3 tours de 30 secondes en mêlant jabs, directs et petits pas."
+    },
+    "it": {
+     "t": "Le basi dello shadow boxing",
+     "g": "Trasforma jab, diretti e lavoro di gambe in un cardio divertente a casa.",
+     "p": [
+      "Mettiti in guardia rilassata, un piede avanti e le mani alte vicino al viso.",
+      "Il jab è un pugno dritto e veloce con la mano davanti; il diretto parte da quella dietro.",
+      "Colpisci l'aria senza bloccare i gomiti e resta leggero sui piedi."
+     ],
+     "q": "Hai mai provato movimenti di boxe?",
+     "c": "Fai shadow boxing per 3 round da 30 secondi, mescolando jab, diretti e piccoli passi."
+    },
+    "pt": {
+     "t": "O básico do boxe de sombra",
+     "g": "Transforma jabs, diretos e trabalho de pés num cardio divertido em casa.",
+     "p": [
+      "Fica em guarda relaxada, um pé à frente e as mãos em cima perto da cara.",
+      "O jab é um soco reto e rápido com a mão da frente; o direto sai da mão de trás.",
+      "Soca o ar sem trancar os cotovelos e mantém-te leve nos pés."
+     ],
+     "q": "Já experimentaste movimentos de boxe?",
+     "c": "Faz boxe de sombra 3 rondas de 30 segundos, misturando jabs, diretos e passos curtos."
+    },
+    "pt_BR": {
+     "t": "O básico do boxe de sombra",
+     "g": "Transforme jabs, diretos e trabalho de pés em um cardio divertido em casa.",
+     "p": [
+      "Fique em guarda relaxada, um pé à frente e as mãos no alto perto do rosto.",
+      "O jab é um soco reto e rápido com a mão da frente; o direto sai da mão de trás.",
+      "Soque o ar sem travar os cotovelos e fique leve nos pés."
+     ],
+     "q": "Você já experimentou movimentos de boxe?",
+     "c": "Faça boxe de sombra por 3 rodadas de 30 segundos, misturando jabs, diretos e passos curtos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dance cardio",
+     "g": "Use your favourite songs to make moving a real and joyful workout.",
+     "p": [
+      "Dancing raises your heart rate while feeling more like play than training.",
+      "There is no wrong way: step, sway, swing your arms and have fun.",
+      "Start with gentle songs and build up to more upbeat ones."
+     ],
+     "q": "What song always makes you want to move?",
+     "c": "Dance non-stop to two of your favourite songs today."
+    },
+    "de": {
+     "t": "Tanz-Cardio",
+     "g": "Mach mit deinen Lieblingsliedern aus Bewegung ein echtes, fröhliches Training.",
+     "p": [
+      "Tanzen bringt den Puls hoch und fühlt sich eher nach Spiel als nach Training an.",
+      "Es gibt kein Falsch: steppen, wiegen, Arme schwingen und Spaß haben.",
+      "Starte mit ruhigen Liedern und steiger dich zu schwungvolleren."
+     ],
+     "q": "Bei welchem Lied willst du dich immer bewegen?",
+     "c": "Tanz heute ohne Pause zu zwei deiner Lieblingslieder."
+    },
+    "es": {
+     "t": "Cardio bailando",
+     "g": "Usa tus canciones favoritas para convertir el movimiento en un entreno real y alegre.",
+     "p": [
+      "Bailar sube el pulso y se siente más como un juego que como un entreno.",
+      "No hay forma incorrecta: da pasos, balancéate, mueve los brazos y diviértete.",
+      "Empieza con canciones suaves y sube a otras más animadas."
+     ],
+     "q": "¿Qué canción siempre te dan ganas de moverte?",
+     "c": "Baila sin parar dos de tus canciones favoritas hoy."
+    },
+    "fr": {
+     "t": "Le cardio dansé",
+     "g": "Utilise tes chansons préférées pour faire du mouvement une vraie séance joyeuse.",
+     "p": [
+      "Danser fait monter le cœur tout en ressemblant plus à un jeu qu'à un entraînement.",
+      "Pas de mauvaise façon : fais des pas, balance-toi, bouge les bras et amuse-toi.",
+      "Commence par des chansons douces, puis passe à des titres plus rythmés."
+     ],
+     "q": "Quelle chanson te donne toujours envie de bouger ?",
+     "c": "Danse sans t'arrêter sur deux de tes chansons préférées aujourd'hui."
+    },
+    "it": {
+     "t": "Cardio ballando",
+     "g": "Usa le tue canzoni preferite per rendere il movimento un allenamento vero e gioioso.",
+     "p": [
+      "Ballare alza il battito e sembra più un gioco che un allenamento.",
+      "Non c'è un modo sbagliato: fai passi, ondeggia, muovi le braccia e divertiti.",
+      "Inizia con canzoni tranquille e passa a quelle più ritmate."
+     ],
+     "q": "Quale canzone ti fa sempre venire voglia di muoverti?",
+     "c": "Balla senza fermarti su due delle tue canzoni preferite oggi."
+    },
+    "pt": {
+     "t": "Cardio a dançar",
+     "g": "Usa as tuas músicas favoritas para transformar o movimento num treino real e alegre.",
+     "p": [
+      "Dançar sobe o ritmo cardíaco e parece mais brincadeira do que treino.",
+      "Não há forma errada: dá passos, balança, mexe os braços e diverte-te.",
+      "Começa com músicas calmas e passa para outras mais animadas."
+     ],
+     "q": "Que música te dá sempre vontade de te mexer?",
+     "c": "Dança sem parar ao som de duas das tuas músicas favoritas hoje."
+    },
+    "pt_BR": {
+     "t": "Cardio dançando",
+     "g": "Use suas músicas favoritas para transformar o movimento em um treino de verdade e alegre.",
+     "p": [
+      "Dançar acelera os batimentos e parece mais brincadeira do que treino.",
+      "Não existe jeito errado: dê passos, balance, mexa os braços e se divirta.",
+      "Comece com músicas tranquilas e vá para as mais animadas."
+     ],
+     "q": "Qual música sempre dá vontade de se mexer?",
+     "c": "Dance sem parar ao som de duas das suas músicas favoritas hoje."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first circuit",
+     "g": "Learn to move from one exercise to the next with short rests.",
+     "p": [
+      "A circuit is a list of exercises done one after another, then repeated.",
+      "Try squats, incline push-ups, bridges and marching, 30 seconds each.",
+      "Rest 15 to 30 seconds between moves and a minute between rounds."
+     ],
+     "q": "Do you like changing exercises often, or staying with one longer?",
+     "c": "Complete 2 rounds of the four-move circuit today after your warm-up."
+    },
+    "de": {
+     "t": "Dein erstes Zirkeltraining",
+     "g": "Lerne, mit kurzen Pausen von einer Übung zur nächsten zu wechseln.",
+     "p": [
+      "Ein Zirkel ist eine Reihe von Übungen nacheinander, die dann wiederholt wird.",
+      "Probier Kniebeugen, erhöhte Liegestütze, Brücken und Marschieren, je 30 Sekunden.",
+      "Pausiere 15 bis 30 Sekunden zwischen den Übungen und eine Minute zwischen den Runden."
+     ],
+     "q": "Wechselst du gern oft die Übung oder bleibst du lieber länger bei einer?",
+     "c": "Mach heute nach dem Aufwärmen 2 Runden des Zirkels mit vier Übungen."
+    },
+    "es": {
+     "t": "Tu primer circuito",
+     "g": "Aprende a pasar de un ejercicio al siguiente con descansos cortos.",
+     "p": [
+      "Un circuito es una lista de ejercicios seguidos que luego se repite.",
+      "Prueba sentadillas, flexiones inclinadas, puentes y marcha, 30 segundos cada uno.",
+      "Descansa de 15 a 30 segundos entre ejercicios y un minuto entre rondas."
+     ],
+     "q": "¿Te gusta cambiar de ejercicio a menudo o quedarte más tiempo con uno?",
+     "c": "Completa hoy 2 rondas del circuito de cuatro ejercicios tras calentar."
+    },
+    "fr": {
+     "t": "Ton premier circuit",
+     "g": "Apprends à enchaîner les exercices avec de courtes pauses.",
+     "p": [
+      "Un circuit est une liste d'exercices faits à la suite, puis répétés.",
+      "Essaie squats, pompes inclinées, ponts et marche sur place, 30 secondes chacun.",
+      "Repose-toi 15 à 30 secondes entre les exercices et une minute entre les tours."
+     ],
+     "q": "Tu aimes changer souvent d'exercice ou rester plus longtemps sur un seul ?",
+     "c": "Fais 2 tours du circuit de quatre exercices aujourd'hui après l'échauffement."
+    },
+    "it": {
+     "t": "Il tuo primo circuito",
+     "g": "Impara a passare da un esercizio all'altro con brevi pause.",
+     "p": [
+      "Un circuito è una serie di esercizi fatti uno dopo l'altro e poi ripetuti.",
+      "Prova squat, piegamenti inclinati, ponti e marcia, 30 secondi ciascuno.",
+      "Recupera da 15 a 30 secondi tra gli esercizi e un minuto tra i giri."
+     ],
+     "q": "Ti piace cambiare spesso esercizio o restare più a lungo su uno?",
+     "c": "Completa oggi 2 giri del circuito da quattro esercizi dopo il riscaldamento."
+    },
+    "pt": {
+     "t": "O teu primeiro circuito",
+     "g": "Aprende a passar de um exercício para o seguinte com descansos curtos.",
+     "p": [
+      "Um circuito é uma lista de exercícios feitos seguidos e depois repetidos.",
+      "Experimenta agachamentos, flexões inclinadas, pontes e marcha, 30 segundos cada.",
+      "Descansa 15 a 30 segundos entre exercícios e um minuto entre voltas."
+     ],
+     "q": "Gostas de mudar de exercício muitas vezes ou de ficar mais tempo num só?",
+     "c": "Completa hoje 2 voltas do circuito de quatro exercícios depois de aquecer."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro circuito",
+     "g": "Aprenda a passar de um exercício para o outro com descansos curtos.",
+     "p": [
+      "Um circuito é uma lista de exercícios feitos em sequência e depois repetidos.",
+      "Tente agachamento, flexão inclinada, ponte e marcha, 30 segundos cada.",
+      "Descanse de 15 a 30 segundos entre os exercícios e um minuto entre as rodadas."
+     ],
+     "q": "Você gosta de trocar de exercício toda hora ou de ficar mais tempo em um só?",
+     "c": "Complete hoje 2 rodadas do circuito de quatro exercícios depois de aquecer."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timed intervals",
+     "g": "Learn to work for a set time instead of counting reps.",
+     "p": [
+      "You choose a work time and a rest time, like 30 seconds on, 30 off.",
+      "Focus on smooth, good-quality movement for the whole interval.",
+      "A phone timer or a simple interval app keeps you on track."
+     ],
+     "q": "Do you prefer counting reps or working against the clock?",
+     "c": "Do 6 intervals of 30 seconds of squats or marching, with 30 seconds of rest."
+    },
+    "de": {
+     "t": "Intervalle nach Zeit",
+     "g": "Lerne, eine feste Zeit zu arbeiten, statt Wiederholungen zu zählen.",
+     "p": [
+      "Du wählst eine Arbeits- und eine Pausenzeit, zum Beispiel 30 Sekunden an, 30 aus.",
+      "Achte das ganze Intervall auf saubere, ruhige Bewegungen.",
+      "Ein Handy-Timer oder eine einfache Intervall-App hält dich im Takt."
+     ],
+     "q": "Zählst du lieber Wiederholungen oder arbeitest du lieber gegen die Uhr?",
+     "c": "Mach 6 Intervalle à 30 Sekunden Kniebeugen oder Marschieren mit 30 Sekunden Pause."
+    },
+    "es": {
+     "t": "Intervalos por tiempo",
+     "g": "Aprende a trabajar un tiempo fijo en vez de contar repeticiones.",
+     "p": [
+      "Eliges un tiempo de trabajo y uno de descanso, como 30 segundos sí y 30 no.",
+      "Céntrate en moverte con fluidez y buena técnica durante todo el intervalo.",
+      "Un temporizador del móvil o una app sencilla de intervalos te guía."
+     ],
+     "q": "¿Prefieres contar repeticiones o trabajar contra el reloj?",
+     "c": "Haz 6 intervalos de 30 segundos de sentadillas o marcha, con 30 segundos de descanso."
+    },
+    "fr": {
+     "t": "Les intervalles chronométrés",
+     "g": "Apprends à travailler sur un temps donné au lieu de compter les répétitions.",
+     "p": [
+      "Tu choisis un temps d'effort et un temps de repos, par exemple 30 secondes chacun.",
+      "Concentre-toi sur un mouvement fluide et propre pendant tout l'intervalle.",
+      "Un minuteur sur ton téléphone ou une appli simple t'aide à suivre le rythme."
+     ],
+     "q": "Tu préfères compter les répétitions ou travailler contre la montre ?",
+     "c": "Fais 6 intervalles de 30 secondes de squats ou de marche, avec 30 secondes de repos."
+    },
+    "it": {
+     "t": "Intervalli a tempo",
+     "g": "Impara a lavorare per un tempo stabilito invece di contare le ripetizioni.",
+     "p": [
+      "Scegli un tempo di lavoro e uno di recupero, per esempio 30 secondi e 30 secondi.",
+      "Concentrati su un movimento fluido e di qualità per tutto l'intervallo.",
+      "Il timer del telefono o una semplice app per intervalli ti tiene in ritmo."
+     ],
+     "q": "Preferisci contare le ripetizioni o lavorare contro il tempo?",
+     "c": "Fai 6 intervalli da 30 secondi di squat o marcia, con 30 secondi di recupero."
+    },
+    "pt": {
+     "t": "Intervalos por tempo",
+     "g": "Aprende a trabalhar durante um tempo fixo em vez de contar repetições.",
+     "p": [
+      "Escolhes um tempo de trabalho e um de descanso, como 30 segundos de cada.",
+      "Concentra-te em movimentos fluidos e bem feitos durante todo o intervalo.",
+      "Um temporizador no telemóvel ou uma app simples de intervalos ajuda-te."
+     ],
+     "q": "Preferes contar repetições ou trabalhar contra o relógio?",
+     "c": "Faz 6 intervalos de 30 segundos de agachamentos ou marcha, com 30 segundos de descanso."
+    },
+    "pt_BR": {
+     "t": "Intervalos por tempo",
+     "g": "Aprenda a trabalhar por um tempo fixo em vez de contar repetições.",
+     "p": [
+      "Você escolhe um tempo de trabalho e um de descanso, como 30 segundos de cada.",
+      "Foque em movimentos fluidos e bem feitos durante todo o intervalo.",
+      "Um timer no celular ou um app simples de intervalos ajuda você."
+     ],
+     "q": "Você prefere contar repetições ou trabalhar contra o relógio?",
+     "c": "Faça 6 intervalos de 30 segundos de agachamento ou marcha, com 30 segundos de descanso."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mobility vs flexibility",
+     "g": "Understand the difference between moving joints actively and holding stretches.",
+     "p": [
+      "Mobility means moving a joint through its range with control, like hip circles.",
+      "Flexibility is how far a muscle can lengthen, often trained with held stretches.",
+      "Mobility fits well in warm-ups; longer stretches fit well after workouts."
+     ],
+     "q": "Do you feel more stiff or more flexible in daily life?",
+     "c": "Do 10 slow hip circles, then hold a gentle thigh stretch for 20 seconds, and compare."
+    },
+    "de": {
+     "t": "Mobilität und Beweglichkeit",
+     "g": "Verstehe den Unterschied zwischen aktivem Bewegen der Gelenke und gehaltenen Dehnungen.",
+     "p": [
+      "Mobilität heißt, ein Gelenk kontrolliert durch seinen Bewegungsumfang zu führen, etwa Hüftkreise.",
+      "Beweglichkeit beschreibt, wie weit ein Muskel nachgibt, oft mit gehaltenen Dehnungen trainiert.",
+      "Mobilität passt gut ins Aufwärmen, längere Dehnungen passen gut nach dem Training."
+     ],
+     "q": "Fühlst du dich im Alltag eher steif oder eher beweglich?",
+     "c": "Mach 10 langsame Hüftkreise, dann halte 20 Sekunden eine sanfte Oberschenkeldehnung und vergleiche."
+    },
+    "es": {
+     "t": "Movilidad y flexibilidad",
+     "g": "Entiende la diferencia entre mover las articulaciones activamente y mantener estiramientos.",
+     "p": [
+      "Movilidad es mover una articulación por su recorrido con control, como círculos de cadera.",
+      "Flexibilidad es cuánto puede alargarse un músculo, a menudo con estiramientos mantenidos.",
+      "La movilidad encaja en el calentamiento; los estiramientos largos, después del entreno."
+     ],
+     "q": "¿Te sientes más bien rígido o flexible en tu día a día?",
+     "c": "Haz 10 círculos lentos de cadera, luego mantén un estiramiento suave de muslo 20 segundos y compara."
+    },
+    "fr": {
+     "t": "Mobilité et souplesse",
+     "g": "Comprends la différence entre bouger activement les articulations et tenir des étirements.",
+     "p": [
+      "La mobilité, c'est bouger une articulation sur son amplitude avec contrôle, comme des cercles de hanches.",
+      "La souplesse, c'est jusqu'où un muscle peut s'allonger, souvent travaillée par étirements tenus.",
+      "La mobilité va bien dans l'échauffement ; les étirements longs, après la séance."
+     ],
+     "q": "Te sens-tu plutôt raide ou plutôt souple au quotidien ?",
+     "c": "Fais 10 cercles de hanches lents, puis tiens un étirement doux de cuisse 20 secondes et compare."
+    },
+    "it": {
+     "t": "Mobilità e flessibilità",
+     "g": "Capisci la differenza tra muovere attivamente le articolazioni e mantenere un allungamento.",
+     "p": [
+      "Mobilità è muovere un'articolazione in tutta la sua ampiezza con controllo, come i cerchi con il bacino.",
+      "Flessibilità è quanto un muscolo può allungarsi, spesso allenata con allungamenti mantenuti.",
+      "La mobilità sta bene nel riscaldamento; gli allungamenti lunghi dopo l'allenamento."
+     ],
+     "q": "Nella vita di tutti i giorni ti senti più rigido o più flessibile?",
+     "c": "Fai 10 cerchi lenti con il bacino, poi tieni un allungamento dolce della coscia per 20 secondi e confronta."
+    },
+    "pt": {
+     "t": "Mobilidade e flexibilidade",
+     "g": "Percebe a diferença entre mexer as articulações ativamente e manter alongamentos.",
+     "p": [
+      "Mobilidade é mexer uma articulação em toda a amplitude com controlo, como círculos de anca.",
+      "Flexibilidade é quanto um músculo consegue alongar, muitas vezes treinada com alongamentos mantidos.",
+      "A mobilidade encaixa no aquecimento; os alongamentos longos, depois do treino."
+     ],
+     "q": "No dia a dia sentes-te mais rígido ou mais flexível?",
+     "c": "Faz 10 círculos lentos de anca, depois mantém um alongamento suave da coxa 20 segundos e compara."
+    },
+    "pt_BR": {
+     "t": "Mobilidade e flexibilidade",
+     "g": "Entenda a diferença entre mover as articulações ativamente e manter alongamentos.",
+     "p": [
+      "Mobilidade é mover uma articulação em toda a amplitude com controle, como círculos de quadril.",
+      "Flexibilidade é o quanto um músculo consegue alongar, muitas vezes treinada com alongamentos mantidos.",
+      "A mobilidade combina com o aquecimento; alongamentos longos, com o pós-treino."
+     ],
+     "q": "No dia a dia você se sente mais rígido ou mais flexível?",
+     "c": "Faça 10 círculos lentos de quadril, depois segure um alongamento suave de coxa por 20 segundos e compare."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Neck and shoulder mobility",
+     "g": "Use gentle circles and rolls to refresh desk-tired shoulders.",
+     "p": [
+      "Slowly tilt your head side to side and gently look left and right.",
+      "Roll your shoulders backwards and forwards in big, easy circles.",
+      "Move slowly and within comfort; skip any movement that causes pain."
+     ],
+     "q": "When during the day do your shoulders feel tight?",
+     "c": "Do 10 slow shoulder rolls each way and 5 gentle head turns to each side."
+    },
+    "de": {
+     "t": "Mobilität für Nacken und Schultern",
+     "g": "Erfrisch schreibtischmüde Schultern mit sanften Kreisen und Rollen.",
+     "p": [
+      "Neig den Kopf langsam von Seite zu Seite und schau sanft nach links und rechts.",
+      "Roll die Schultern in großen, lockeren Kreisen nach hinten und nach vorn.",
+      "Beweg dich langsam und im angenehmen Bereich; lass alles weg, was schmerzt."
+     ],
+     "q": "Wann am Tag fühlen sich deine Schultern verspannt an?",
+     "c": "Mach 10 langsame Schulterrollen in jede Richtung und 5 sanfte Kopfdrehungen pro Seite."
+    },
+    "es": {
+     "t": "Movilidad de cuello y hombros",
+     "g": "Usa círculos y giros suaves para refrescar los hombros cansados de la mesa.",
+     "p": [
+      "Inclina la cabeza despacio de lado a lado y mira suavemente a izquierda y derecha.",
+      "Rueda los hombros hacia atrás y hacia delante en círculos amplios y suaves.",
+      "Muévete despacio y sin molestias; evita cualquier movimiento que duela."
+     ],
+     "q": "¿En qué momento del día notas los hombros tensos?",
+     "c": "Haz 10 giros lentos de hombros en cada sentido y 5 giros suaves de cabeza a cada lado."
+    },
+    "fr": {
+     "t": "Mobilité du cou et des épaules",
+     "g": "Utilise des cercles et rotations doux pour soulager des épaules fatiguées par le bureau.",
+     "p": [
+      "Incline lentement la tête d'un côté à l'autre et regarde doucement à gauche et à droite.",
+      "Fais rouler les épaules vers l'arrière et vers l'avant en grands cercles faciles.",
+      "Bouge lentement et dans le confort ; évite tout mouvement douloureux."
+     ],
+     "q": "À quel moment de la journée tes épaules sont-elles tendues ?",
+     "c": "Fais 10 rotations lentes d'épaules dans chaque sens et 5 rotations douces de la tête de chaque côté."
+    },
+    "it": {
+     "t": "Mobilità di collo e spalle",
+     "g": "Usa cerchi e rotazioni dolci per rinfrescare le spalle stanche da scrivania.",
+     "p": [
+      "Inclina piano la testa da un lato all'altro e guarda dolcemente a sinistra e a destra.",
+      "Ruota le spalle indietro e in avanti con cerchi ampi e morbidi.",
+      "Muoviti piano e senza fastidio; salta ogni movimento che dà dolore."
+     ],
+     "q": "In quale momento della giornata senti le spalle rigide?",
+     "c": "Fai 10 rotazioni lente delle spalle per verso e 5 rotazioni dolci della testa per lato."
+    },
+    "pt": {
+     "t": "Mobilidade do pescoço e ombros",
+     "g": "Usa círculos e rotações suaves para aliviar os ombros cansados da secretária.",
+     "p": [
+      "Inclina a cabeça devagar de um lado para o outro e olha suavemente para a esquerda e a direita.",
+      "Roda os ombros para trás e para a frente em círculos grandes e leves.",
+      "Mexe-te devagar e com conforto; evita qualquer movimento que doa."
+     ],
+     "q": "Em que altura do dia sentes os ombros tensos?",
+     "c": "Faz 10 rotações lentas de ombros para cada lado e 5 viragens suaves da cabeça para cada lado."
+    },
+    "pt_BR": {
+     "t": "Mobilidade de pescoço e ombros",
+     "g": "Use círculos e rotações suaves para aliviar os ombros cansados de tanto computador.",
+     "p": [
+      "Incline a cabeça devagar de um lado para o outro e olhe suavemente para a esquerda e a direita.",
+      "Gire os ombros para trás e para frente em círculos grandes e leves.",
+      "Mova-se devagar e com conforto; evite qualquer movimento que doa."
+     ],
+     "q": "Em que momento do dia você sente os ombros tensos?",
+     "c": "Faça 10 rotações lentas de ombros para cada lado e 5 giros suaves de cabeça para cada lado."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hip mobility basics",
+     "g": "Open up your hips with circles, rocking and gentle openers.",
+     "p": [
+      "Stand and draw slow, big circles with your hips in both directions.",
+      "On hands and knees, rock gently back towards your heels and forward again.",
+      "Try a gentle hip opener, like slowly moving a bent knee out to the side and back."
+     ],
+     "q": "Do your hips feel stiff after long periods of sitting?",
+     "c": "Do 10 hip circles each way and 10 slow rocks back and forth on hands and knees."
+    },
+    "de": {
+     "t": "Grundlagen der Hüftmobilität",
+     "g": "Öffne deine Hüfte mit Kreisen, Schaukeln und sanften Öffnern.",
+     "p": [
+      "Mach im Stand langsame, große Hüftkreise in beide Richtungen.",
+      "Schaukel im Vierfüßlerstand sanft nach hinten Richtung Fersen und wieder nach vorn.",
+      "Probier einen sanften Hüftöffner, etwa ein gebeugtes Knie langsam zur Seite führen und zurück."
+     ],
+     "q": "Fühlt sich deine Hüfte nach langem Sitzen steif an?",
+     "c": "Mach 10 Hüftkreise pro Richtung und 10 langsame Schaukelbewegungen im Vierfüßlerstand."
+    },
+    "es": {
+     "t": "Movilidad básica de cadera",
+     "g": "Abre las caderas con círculos, balanceos y aperturas suaves.",
+     "p": [
+      "De pie, dibuja círculos lentos y amplios con la cadera en ambos sentidos.",
+      "A cuatro patas, balancéate suave hacia los talones y vuelve adelante.",
+      "Prueba una apertura suave, como llevar despacio una rodilla doblada hacia fuera y volver."
+     ],
+     "q": "¿Sientes la cadera rígida tras pasar mucho tiempo sentado?",
+     "c": "Haz 10 círculos de cadera por sentido y 10 balanceos lentos a cuatro patas."
+    },
+    "fr": {
+     "t": "Les bases de la mobilité des hanches",
+     "g": "Ouvre tes hanches avec des cercles, des bascules et des ouvertures douces.",
+     "p": [
+      "Debout, dessine de grands cercles lents avec les hanches dans les deux sens.",
+      "À quatre pattes, recule doucement vers les talons puis reviens vers l'avant.",
+      "Essaie une ouverture douce, comme écarter lentement un genou plié sur le côté puis revenir."
+     ],
+     "q": "Tes hanches sont-elles raides après être resté longtemps assis ?",
+     "c": "Fais 10 cercles de hanches dans chaque sens et 10 bascules lentes à quatre pattes."
+    },
+    "it": {
+     "t": "Basi di mobilità dell'anca",
+     "g": "Apri le anche con cerchi, dondolii e aperture dolci.",
+     "p": [
+      "In piedi, disegna cerchi lenti e ampi con il bacino in entrambe le direzioni.",
+      "A quattro zampe, dondola piano indietro verso i talloni e torna avanti.",
+      "Prova un'apertura dolce, come portare lentamente un ginocchio piegato di lato e tornare."
+     ],
+     "q": "Senti le anche rigide dopo tanto tempo seduto?",
+     "c": "Fai 10 cerchi con il bacino per verso e 10 dondolii lenti a quattro zampe."
+    },
+    "pt": {
+     "t": "O básico da mobilidade da anca",
+     "g": "Abre as ancas com círculos, balanços e aberturas suaves.",
+     "p": [
+      "De pé, desenha círculos lentos e grandes com a anca nos dois sentidos.",
+      "De quatro, balança suavemente para trás em direção aos calcanhares e volta à frente.",
+      "Experimenta uma abertura suave, como levar devagar um joelho dobrado para o lado e voltar."
+     ],
+     "q": "Sentes a anca rígida depois de muito tempo sentado?",
+     "c": "Faz 10 círculos de anca para cada lado e 10 balanços lentos de quatro."
+    },
+    "pt_BR": {
+     "t": "O básico da mobilidade de quadril",
+     "g": "Abra o quadril com círculos, balanços e aberturas suaves.",
+     "p": [
+      "Em pé, desenhe círculos lentos e grandes com o quadril nos dois sentidos.",
+      "Em quatro apoios, balance de leve para trás em direção aos calcanhares e volte.",
+      "Tente uma abertura suave, como levar devagar um joelho dobrado para o lado e voltar."
+     ],
+     "q": "Você sente o quadril rígido depois de muito tempo sentado?",
+     "c": "Faça 10 círculos de quadril para cada lado e 10 balanços lentos em quatro apoios."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spine mobility",
+     "g": "Keep your back moving with cat-cow, side bends and easy rotations.",
+     "p": [
+      "Cat-cow: on hands and knees, slowly round your back, then gently arch it.",
+      "Side bends: standing tall, slide one hand down your leg and return, then switch.",
+      "Rotations: seated or standing, turn your upper body gently left and right."
+     ],
+     "q": "Which spine movement felt the most refreshing?",
+     "c": "Do 8 slow cat-cows, 5 side bends per side and 5 gentle rotations per side."
+    },
+    "de": {
+     "t": "Mobilität der Wirbelsäule",
+     "g": "Halt deinen Rücken mit Katze-Kuh, Seitneigen und leichten Drehungen in Bewegung.",
+     "p": [
+      "Katze-Kuh: im Vierfüßlerstand den Rücken langsam rund machen, dann sanft ins Hohlkreuz.",
+      "Seitneigen: aufrecht stehen, eine Hand am Bein hinuntergleiten lassen, zurück, dann wechseln.",
+      "Drehungen: im Sitzen oder Stehen den Oberkörper sanft nach links und rechts drehen."
+     ],
+     "q": "Welche Bewegung der Wirbelsäule war am erfrischendsten?",
+     "c": "Mach 8 langsame Katze-Kuh, 5 Seitneigen pro Seite und 5 sanfte Drehungen pro Seite."
+    },
+    "es": {
+     "t": "Movilidad de la columna",
+     "g": "Mantén la espalda en movimiento con gato-vaca, inclinaciones laterales y giros suaves.",
+     "p": [
+      "Gato-vaca: a cuatro patas, redondea la espalda despacio y luego arquéala suave.",
+      "Inclinaciones: de pie, desliza una mano por la pierna y vuelve; luego cambia.",
+      "Giros: sentado o de pie, gira suavemente el tronco a izquierda y derecha."
+     ],
+     "q": "¿Qué movimiento de columna te resultó más refrescante?",
+     "c": "Haz 8 gato-vaca lentos, 5 inclinaciones y 5 giros suaves por lado."
+    },
+    "fr": {
+     "t": "Mobilité de la colonne",
+     "g": "Garde ton dos mobile avec le chat-vache, les inclinaisons et des rotations faciles.",
+     "p": [
+      "Chat-vache : à quatre pattes, arrondis lentement le dos, puis creuse-le doucement.",
+      "Inclinaisons : debout, fais glisser une main le long de la jambe et reviens, puis change.",
+      "Rotations : assis ou debout, tourne doucement le haut du corps à gauche et à droite."
+     ],
+     "q": "Quel mouvement de la colonne t'a fait le plus de bien ?",
+     "c": "Fais 8 chat-vache lents, 5 inclinaisons par côté et 5 rotations douces par côté."
+    },
+    "it": {
+     "t": "Mobilità della colonna",
+     "g": "Mantieni la schiena in movimento con gatto-mucca, inclinazioni laterali e rotazioni facili.",
+     "p": [
+      "Gatto-mucca: a quattro zampe, arrotonda piano la schiena, poi inarcala dolcemente.",
+      "Inclinazioni: in piedi, fai scivolare una mano lungo la gamba e torna, poi cambia.",
+      "Rotazioni: seduto o in piedi, ruota dolcemente il busto a sinistra e a destra."
+     ],
+     "q": "Quale movimento della colonna ti ha dato più sollievo?",
+     "c": "Fai 8 gatto-mucca lenti, 5 inclinazioni per lato e 5 rotazioni dolci per lato."
+    },
+    "pt": {
+     "t": "Mobilidade da coluna",
+     "g": "Mantém as costas em movimento com gato-vaca, inclinações laterais e rotações leves.",
+     "p": [
+      "Gato-vaca: de quatro, arredonda as costas devagar e depois arqueia-as suavemente.",
+      "Inclinações: de pé, desliza uma mão pela perna abaixo e volta, depois troca.",
+      "Rotações: sentado ou de pé, roda suavemente o tronco para a esquerda e a direita."
+     ],
+     "q": "Que movimento da coluna te soube melhor?",
+     "c": "Faz 8 gato-vaca lentos, 5 inclinações por lado e 5 rotações suaves por lado."
+    },
+    "pt_BR": {
+     "t": "Mobilidade da coluna",
+     "g": "Mantenha as costas em movimento com gato-vaca, inclinações laterais e rotações leves.",
+     "p": [
+      "Gato-vaca: em quatro apoios, arredonde as costas devagar e depois arqueie com suavidade.",
+      "Inclinações: em pé, deslize uma mão pela perna e volte, depois troque.",
+      "Rotações: sentado ou em pé, gire o tronco suavemente para a esquerda e a direita."
+     ],
+     "q": "Qual movimento da coluna foi o mais gostoso?",
+     "c": "Faça 8 gato-vaca lentos, 5 inclinações por lado e 5 rotações suaves por lado."
+    }
+   }
+  }
+ ]
+}

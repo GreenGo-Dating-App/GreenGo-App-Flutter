@@ -1,0 +1,835 @@
+{
+ "topic": "photography",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focus modes",
+     "g": "Learn when to use single focus for still subjects and continuous focus for moving ones.",
+     "p": [
+      "Single focus (often AF-S or One Shot) locks focus once, perfect for portraits, buildings and still life.",
+      "Continuous focus (AF-C or AI Servo) keeps adjusting while you half-press, tracking subjects that move.",
+      "Phones usually switch automatically, but you can often hold a tap to lock focus or tap again to track."
+     ],
+     "q": "Which subjects you photograph would benefit most from continuous focus?",
+     "c": "Photograph a person or pet walking towards you, first with single focus and then with continuous focus, and compare."
+    },
+    "de": {
+     "t": "Fokusmodi",
+     "g": "Lerne, wann du Einzelfokus für ruhende und kontinuierlichen Fokus für bewegte Motive nutzt.",
+     "p": [
+      "Einzelfokus (oft AF-S oder One Shot) stellt einmal scharf, perfekt für Porträts, Gebäude und Stillleben.",
+      "Kontinuierlicher Fokus (AF-C oder AI Servo) führt die Schärfe beim halben Drücken nach und verfolgt Bewegung.",
+      "Handys wechseln meist automatisch, oft kannst du aber durch Gedrückthalten den Fokus sperren."
+     ],
+     "q": "Welche deiner Motive würden am meisten vom kontinuierlichen Fokus profitieren?",
+     "c": "Fotografiere eine Person oder ein Tier, das auf dich zukommt, erst mit Einzelfokus, dann kontinuierlich, und vergleiche."
+    },
+    "es": {
+     "t": "Modos de enfoque",
+     "g": "Aprende cuándo usar el enfoque único para sujetos quietos y el continuo para sujetos en movimiento.",
+     "p": [
+      "El enfoque único (AF-S o One Shot) fija el enfoque una vez: perfecto para retratos, edificios y bodegones.",
+      "El enfoque continuo (AF-C o AI Servo) se ajusta mientras pulsas a medias y sigue a los sujetos que se mueven.",
+      "El móvil suele cambiar solo, pero a menudo puedes mantener el toque para bloquear el enfoque."
+     ],
+     "q": "¿Qué sujetos de los que fotografías se beneficiarían más del enfoque continuo?",
+     "c": "Fotografía a una persona o mascota que camina hacia ti, primero con enfoque único y luego continuo, y compara."
+    },
+    "fr": {
+     "t": "Les modes de mise au point",
+     "g": "Apprends quand utiliser l'autofocus ponctuel pour les sujets immobiles et le continu pour ceux qui bougent.",
+     "p": [
+      "Le mode ponctuel (AF-S ou One Shot) fait le point une fois, parfait pour portraits, bâtiments et natures mortes.",
+      "Le mode continu (AF-C ou AI Servo) ajuste le point tant que tu appuies à mi-course et suit les sujets mobiles.",
+      "Les smartphones basculent souvent seuls, mais un appui long permet en général de verrouiller le point."
+     ],
+     "q": "Quels sujets que tu photographies profiteraient le plus du mode continu ?",
+     "c": "Photographie une personne ou un animal qui marche vers toi, d'abord en ponctuel puis en continu, et compare."
+    },
+    "it": {
+     "t": "Modalità di messa a fuoco",
+     "g": "Impara quando usare la messa a fuoco singola per soggetti fermi e quella continua per soggetti in movimento.",
+     "p": [
+      "La messa a fuoco singola (AF-S o One Shot) blocca il fuoco una volta: perfetta per ritratti, edifici e still life.",
+      "Quella continua (AF-C o AI Servo) si aggiorna finché premi a metà e segue i soggetti in movimento.",
+      "Gli smartphone di solito cambiano da soli, ma spesso tenendo premuto puoi bloccare il fuoco."
+     ],
+     "q": "Quali soggetti che fotografi trarrebbero più vantaggio dalla messa a fuoco continua?",
+     "c": "Fotografa una persona o un animale che cammina verso di te, prima con fuoco singolo poi continuo, e confronta."
+    },
+    "pt": {
+     "t": "Modos de focagem",
+     "g": "Aprende quando usar a focagem única para motivos parados e a contínua para motivos em movimento.",
+     "p": [
+      "A focagem única (AF-S ou One Shot) fixa o foco uma vez: perfeita para retratos, edifícios e naturezas-mortas.",
+      "A contínua (AF-C ou AI Servo) vai ajustando enquanto carregas a meio e segue os motivos que se mexem.",
+      "O telemóvel costuma mudar sozinho, mas muitas vezes podes manter o toque para bloquear o foco."
+     ],
+     "q": "Que motivos que fotografas ganhariam mais com a focagem contínua?",
+     "c": "Fotografa uma pessoa ou um animal a caminhar na tua direção, primeiro com focagem única e depois contínua, e compara."
+    },
+    "pt_BR": {
+     "t": "Modos de foco",
+     "g": "Aprenda quando usar o foco único para assuntos parados e o contínuo para assuntos em movimento.",
+     "p": [
+      "O foco único (AF-S ou One Shot) trava o foco uma vez: perfeito para retratos, prédios e still.",
+      "O contínuo (AF-C ou AI Servo) vai ajustando enquanto você aperta até a metade e acompanha quem se move.",
+      "O celular costuma trocar sozinho, mas muitas vezes dá para segurar o toque e travar o foco."
+     ],
+     "q": "Quais assuntos que você fotografa ganhariam mais com o foco contínuo?",
+     "c": "Fotografe uma pessoa ou pet andando na sua direção, primeiro com foco único e depois contínuo, e compare."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focus points",
+     "g": "Pick a single focus point yourself instead of letting the camera guess what matters.",
+     "p": [
+      "In wide automatic area mode the camera usually focuses on the nearest or most contrasty thing.",
+      "Choosing a single point lets you put focus exactly on an eye, a flower or a sign, even off-centre.",
+      "Move the point to where your subject sits in the frame rather than always focusing in the middle."
+     ],
+     "q": "Has your camera ever focused on the background instead of your subject?",
+     "c": "Set a single focus point and photograph a subject placed near the edge of the frame, moving the point onto it."
+    },
+    "de": {
+     "t": "Fokuspunkte",
+     "g": "Wähle selbst einen einzelnen Fokuspunkt, statt die Kamera raten zu lassen, was wichtig ist.",
+     "p": [
+      "Im großen Automatikfeld stellt die Kamera meist auf das Nächste oder Kontrastreichste scharf.",
+      "Mit einem Einzelpunkt legst du die Schärfe genau auf ein Auge, eine Blüte oder ein Schild, auch außerhalb der Mitte.",
+      "Verschieb den Punkt dorthin, wo dein Motiv im Bild sitzt, statt immer in der Mitte zu fokussieren."
+     ],
+     "q": "Hat deine Kamera schon mal den Hintergrund statt deines Motivs scharfgestellt?",
+     "c": "Wähle einen Einzelfokuspunkt und fotografiere ein Motiv nahe am Bildrand, indem du den Punkt darauf schiebst."
+    },
+    "es": {
+     "t": "Puntos de enfoque",
+     "g": "Elige tú un único punto de enfoque en lugar de dejar que la cámara adivine qué importa.",
+     "p": [
+      "En modo de zona automática amplia, la cámara suele enfocar lo más cercano o lo de mayor contraste.",
+      "Elegir un solo punto te permite enfocar justo un ojo, una flor o un cartel, aunque no esté en el centro.",
+      "Mueve el punto hasta donde está tu sujeto en el encuadre en vez de enfocar siempre en el centro."
+     ],
+     "q": "¿Alguna vez tu cámara enfocó el fondo en lugar de tu sujeto?",
+     "c": "Elige un único punto de enfoque y fotografía un sujeto cerca del borde del encuadre, moviendo el punto sobre él."
+    },
+    "fr": {
+     "t": "Les collimateurs",
+     "g": "Choisis toi-même un collimateur unique au lieu de laisser l'appareil deviner ce qui compte.",
+     "p": [
+      "En mode zone automatique large, l'appareil fait souvent le point sur l'élément le plus proche ou le plus contrasté.",
+      "Un collimateur unique te permet de viser précisément un œil, une fleur ou une enseigne, même décentrés.",
+      "Déplace le collimateur là où se trouve ton sujet plutôt que de toujours faire le point au centre."
+     ],
+     "q": "Ton appareil a-t-il déjà fait le point sur l'arrière-plan au lieu de ton sujet ?",
+     "c": "Choisis un collimateur unique et photographie un sujet placé près du bord du cadre en y déplaçant le collimateur."
+    },
+    "it": {
+     "t": "Punti di messa a fuoco",
+     "g": "Scegli tu un singolo punto di messa a fuoco invece di lasciare che la fotocamera indovini cosa conta.",
+     "p": [
+      "In modalità area automatica ampia la fotocamera di solito mette a fuoco la cosa più vicina o più contrastata.",
+      "Con un punto singolo metti il fuoco esattamente su un occhio, un fiore o un'insegna, anche fuori centro.",
+      "Sposta il punto dove si trova il soggetto nell'inquadratura invece di mettere sempre a fuoco al centro."
+     ],
+     "q": "La tua fotocamera ha mai messo a fuoco lo sfondo invece del soggetto?",
+     "c": "Imposta un punto singolo e fotografa un soggetto vicino al bordo dell'inquadratura, spostando il punto su di esso."
+    },
+    "pt": {
+     "t": "Pontos de focagem",
+     "g": "Escolhe tu um único ponto de focagem em vez de deixar a câmara adivinhar o que importa.",
+     "p": [
+      "No modo de área automática ampla, a câmara costuma focar o que está mais perto ou tem mais contraste.",
+      "Escolher um só ponto permite focar exatamente um olho, uma flor ou uma placa, mesmo fora do centro.",
+      "Move o ponto para onde o motivo está no enquadramento em vez de focar sempre ao centro."
+     ],
+     "q": "A tua câmara já focou o fundo em vez do teu motivo?",
+     "c": "Escolhe um único ponto de focagem e fotografa um motivo junto à margem do enquadramento, movendo o ponto para ele."
+    },
+    "pt_BR": {
+     "t": "Pontos de foco",
+     "g": "Escolha você mesmo um único ponto de foco em vez de deixar a câmera adivinhar o que importa.",
+     "p": [
+      "No modo de área automática ampla, a câmera costuma focar o que está mais perto ou tem mais contraste.",
+      "Com um ponto só, você coloca o foco exatamente num olho, numa flor ou numa placa, mesmo fora do centro.",
+      "Mova o ponto para onde o assunto está no quadro em vez de focar sempre no meio."
+     ],
+     "q": "Sua câmera já focou o fundo em vez do seu assunto?",
+     "c": "Escolha um ponto de foco único e fotografe um assunto perto da borda do quadro, movendo o ponto até ele."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focus on the eyes",
+     "g": "Understand why sharp eyes make portraits of people and animals feel alive.",
+     "p": [
+      "We look at eyes first, so if they are soft the whole portrait feels slightly wrong, even when the rest is sharp.",
+      "Use eye detection if your device has it, or put a single focus point on the nearest eye.",
+      "With wide apertures the sharp zone is thin, so focus on the eye closest to the camera."
+     ],
+     "q": "Who would you most like to photograph in a portrait, a friend, a relative or a pet?",
+     "c": "With permission, take three portraits of a friend, relative or pet, focusing carefully on the nearest eye each time."
+    },
+    "de": {
+     "t": "Auf die Augen fokussieren",
+     "g": "Versteh, warum scharfe Augen Porträts von Menschen und Tieren lebendig wirken lassen.",
+     "p": [
+      "Wir schauen zuerst in die Augen: Sind sie unscharf, wirkt das ganze Porträt seltsam, selbst wenn der Rest scharf ist.",
+      "Nutze die Augenerkennung, falls vorhanden, oder setz einen Einzelfokuspunkt auf das nähere Auge.",
+      "Bei offener Blende ist der Schärfebereich schmal, also fokussiere auf das Auge, das der Kamera am nächsten ist."
+     ],
+     "q": "Wen würdest du am liebsten porträtieren: Freund, Familie oder Haustier?",
+     "c": "Mach mit Erlaubnis drei Porträts von Freund, Familie oder Haustier und fokussiere jedes Mal genau auf das nähere Auge."
+    },
+    "es": {
+     "t": "Enfoca los ojos",
+     "g": "Entiende por qué unos ojos nítidos dan vida a los retratos de personas y animales.",
+     "p": [
+      "Miramos primero a los ojos: si están blandos, el retrato entero parece raro aunque el resto esté nítido.",
+      "Usa la detección de ojos si tu aparato la tiene, o coloca un punto de enfoque sobre el ojo más cercano.",
+      "Con aperturas amplias la zona nítida es estrecha, así que enfoca el ojo más próximo a la cámara."
+     ],
+     "q": "¿A quién te gustaría más retratar: un amigo, un familiar o una mascota?",
+     "c": "Con permiso, haz tres retratos de un amigo, familiar o mascota, enfocando con cuidado el ojo más cercano cada vez."
+    },
+    "fr": {
+     "t": "La mise au point sur les yeux",
+     "g": "Comprends pourquoi des yeux nets donnent vie aux portraits de personnes et d'animaux.",
+     "p": [
+      "Nous regardons d'abord les yeux : s'ils sont flous, tout le portrait semble raté, même si le reste est net.",
+      "Utilise la détection des yeux si ton appareil l'a, ou place un collimateur unique sur l'œil le plus proche.",
+      "Aux grandes ouvertures, la zone nette est mince : fais le point sur l'œil le plus proche de l'appareil."
+     ],
+     "q": "Qui aimerais-tu le plus photographier en portrait : un ami, un proche ou un animal ?",
+     "c": "Avec son accord, fais trois portraits d'un ami, d'un proche ou d'un animal, en visant à chaque fois l'œil le plus proche."
+    },
+    "it": {
+     "t": "Metti a fuoco gli occhi",
+     "g": "Capisci perché occhi nitidi rendono vivi i ritratti di persone e animali.",
+     "p": [
+      "Guardiamo prima gli occhi: se sono morbidi tutto il ritratto sembra sbagliato, anche se il resto è nitido.",
+      "Usa il rilevamento degli occhi se il dispositivo lo offre, oppure metti un punto singolo sull'occhio più vicino.",
+      "Con diaframmi aperti la zona nitida è sottile, quindi metti a fuoco l'occhio più vicino alla fotocamera."
+     ],
+     "q": "Chi ti piacerebbe di più ritrarre: un amico, un familiare o un animale?",
+     "c": "Con il suo permesso, fai tre ritratti a un amico, un familiare o un animale, mettendo a fuoco ogni volta l'occhio più vicino."
+    },
+    "pt": {
+     "t": "Focar os olhos",
+     "g": "Percebe porque olhos nítidos dão vida aos retratos de pessoas e animais.",
+     "p": [
+      "Olhamos primeiro para os olhos: se estiverem desfocados, o retrato inteiro parece estranho, mesmo com o resto nítido.",
+      "Usa a deteção de olhos se o aparelho a tiver, ou põe um ponto de focagem no olho mais próximo.",
+      "Com aberturas grandes a zona nítida é estreita, por isso foca o olho mais próximo da câmara."
+     ],
+     "q": "Quem gostavas mais de retratar: um amigo, um familiar ou um animal?",
+     "c": "Com autorização, faz três retratos de um amigo, familiar ou animal, focando com cuidado o olho mais próximo de cada vez."
+    },
+    "pt_BR": {
+     "t": "Foque nos olhos",
+     "g": "Entenda por que olhos nítidos dão vida a retratos de pessoas e animais.",
+     "p": [
+      "Olhamos primeiro para os olhos: se estiverem moles, o retrato todo parece errado, mesmo com o resto nítido.",
+      "Use a detecção de olhos se seu aparelho tiver, ou coloque um ponto de foco no olho mais próximo.",
+      "Com aberturas grandes a faixa nítida é estreita, então foque o olho mais perto da câmera."
+     ],
+     "q": "Quem você mais gostaria de retratar: um amigo, um parente ou um pet?",
+     "c": "Com permissão, faça três retratos de um amigo, parente ou pet, focando com cuidado o olho mais próximo em cada um."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Metering basics",
+     "g": "Learn how the camera measures light and why very bright or very dark scenes fool it.",
+     "p": [
+      "The meter assumes every scene averages out to a middle grey and sets exposure to match that.",
+      "Evaluative or matrix metering reads the whole frame; spot metering reads only a tiny area you choose.",
+      "Scenes that are mostly bright or mostly dark break the middle grey idea, so the camera gets them wrong."
+     ],
+     "q": "Have you noticed your photos turning out darker or brighter than expected in certain places?",
+     "c": "Photograph a white wall and then a dark coat filling the frame in auto, and notice how both come out greyish."
+    },
+    "de": {
+     "t": "Grundlagen der Belichtungsmessung",
+     "g": "Lerne, wie die Kamera Licht misst und warum sehr helle oder dunkle Szenen sie täuschen.",
+     "p": [
+      "Der Belichtungsmesser geht davon aus, dass jede Szene im Schnitt mittelgrau ist, und belichtet entsprechend.",
+      "Matrix- oder Mehrfeldmessung liest das ganze Bild, Spotmessung nur einen kleinen, gewählten Bereich.",
+      "Überwiegend helle oder dunkle Szenen passen nicht zum Mittelgrau, deshalb liegt die Kamera daneben."
+     ],
+     "q": "Ist dir aufgefallen, dass Fotos an bestimmten Orten dunkler oder heller werden als erwartet?",
+     "c": "Fotografiere in Automatik eine weiße Wand und eine dunkle Jacke formatfüllend und achte darauf, wie beide gräulich werden."
+    },
+    "es": {
+     "t": "Fundamentos de la medición",
+     "g": "Aprende cómo mide la luz la cámara y por qué las escenas muy claras u oscuras la engañan.",
+     "p": [
+      "El fotómetro supone que toda escena equivale de media a un gris medio y ajusta la exposición a ese valor.",
+      "La medición evaluativa o matricial lee todo el encuadre; la puntual lee solo una zona pequeña que eliges.",
+      "Las escenas casi todas claras u oscuras rompen la idea del gris medio y la cámara se equivoca."
+     ],
+     "q": "¿Has notado que tus fotos salen más oscuras o claras de lo esperado en ciertos lugares?",
+     "c": "En automático, fotografía una pared blanca y luego un abrigo oscuro llenando el encuadre, y observa que ambos salen grisáceos."
+    },
+    "fr": {
+     "t": "Les bases de la mesure de lumière",
+     "g": "Apprends comment l'appareil mesure la lumière et pourquoi les scènes très claires ou sombres le trompent.",
+     "p": [
+      "La cellule suppose que toute scène correspond en moyenne à un gris moyen et règle l'exposition en conséquence.",
+      "La mesure matricielle lit tout le cadre ; la mesure spot ne lit qu'une petite zone choisie.",
+      "Les scènes surtout claires ou surtout sombres faussent ce gris moyen, et l'appareil se trompe."
+     ],
+     "q": "As-tu remarqué que tes photos sortent plus sombres ou plus claires que prévu dans certains lieux ?",
+     "c": "En auto, photographie un mur blanc puis un manteau sombre qui remplissent le cadre, et observe qu'ils virent au gris."
+    },
+    "it": {
+     "t": "Le basi dell'esposimetro",
+     "g": "Impara come la fotocamera misura la luce e perché le scene molto chiare o molto scure la ingannano.",
+     "p": [
+      "L'esposimetro presume che ogni scena in media sia un grigio medio e imposta l'esposizione di conseguenza.",
+      "La misurazione valutativa o matrix legge tutta l'inquadratura; quella spot legge solo una piccola area scelta.",
+      "Le scene quasi tutte chiare o scure rompono l'idea del grigio medio, così la fotocamera sbaglia."
+     ],
+     "q": "Hai notato che in certi luoghi le tue foto vengono più scure o più chiare del previsto?",
+     "c": "In automatico fotografa un muro bianco e poi un cappotto scuro che riempiono l'inquadratura, e nota come diventano grigiastri."
+    },
+    "pt": {
+     "t": "Noções de medição da luz",
+     "g": "Aprende como a câmara mede a luz e porque as cenas muito claras ou muito escuras a enganam.",
+     "p": [
+      "O fotómetro assume que qualquer cena equivale em média a um cinzento médio e ajusta a exposição a isso.",
+      "A medição matricial lê o enquadramento inteiro; a medição pontual lê só uma pequena área à tua escolha.",
+      "Cenas quase todas claras ou escuras quebram a ideia do cinzento médio, e a câmara engana-se."
+     ],
+     "q": "Já reparaste que em certos sítios as tuas fotos saem mais escuras ou claras do que esperavas?",
+     "c": "Em automático, fotografa uma parede branca e depois um casaco escuro a encher o enquadramento e repara como ficam acinzentados."
+    },
+    "pt_BR": {
+     "t": "Noções de fotometria",
+     "g": "Aprenda como a câmera mede a luz e por que cenas muito claras ou escuras enganam o fotômetro.",
+     "p": [
+      "O fotômetro supõe que toda cena tem, em média, um cinza médio e ajusta a exposição para isso.",
+      "A medição matricial lê o quadro inteiro; a medição pontual lê só uma área pequena que você escolhe.",
+      "Cenas quase todas claras ou escuras quebram a ideia do cinza médio, e a câmera erra."
+     ],
+     "q": "Você já percebeu que em certos lugares suas fotos saem mais escuras ou claras do que esperava?",
+     "c": "No automático, fotografe uma parede branca e depois um casaco escuro enchendo o quadro e repare como ficam acinzentados."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bright scenes: snow and beach",
+     "g": "Learn why snow turns grey in auto mode and how to bring back its clean brightness.",
+     "p": [
+      "Snow, white sand and bright skies make the meter think the scene is too bright, so it darkens it.",
+      "Dial in about +1 to +2 exposure compensation to make whites look white again.",
+      "Watch the brightest areas: stop before clouds or snow lose all their texture and turn pure white."
+     ],
+     "q": "Have you ever photographed snow, a beach or a white building that came out dull and grey?",
+     "c": "Photograph something bright and white at 0, +1 and +2 compensation and choose the most natural result."
+    },
+    "de": {
+     "t": "Helle Szenen: Schnee und Strand",
+     "g": "Lerne, warum Schnee im Automatikmodus grau wird und wie du seine saubere Helligkeit zurückholst.",
+     "p": [
+      "Schnee, heller Sand und Himmel lassen den Belichtungsmesser denken, die Szene sei zu hell, und er dunkelt ab.",
+      "Stell etwa +1 bis +2 Belichtungskorrektur ein, damit Weiß wieder weiß aussieht.",
+      "Achte auf die hellsten Stellen: Hör auf, bevor Wolken oder Schnee jede Struktur verlieren."
+     ],
+     "q": "Hast du schon Schnee, Strand oder ein weißes Gebäude fotografiert, das trüb und grau wurde?",
+     "c": "Fotografiere etwas Helles und Weißes mit 0, +1 und +2 Korrektur und wähle das natürlichste Ergebnis."
+    },
+    "es": {
+     "t": "Escenas claras: nieve y playa",
+     "g": "Aprende por qué la nieve sale gris en automático y cómo recuperar su blanco limpio.",
+     "p": [
+      "La nieve, la arena blanca y los cielos luminosos hacen creer al fotómetro que hay demasiada luz, y oscurece.",
+      "Aplica entre +1 y +2 de compensación para que los blancos vuelvan a parecer blancos.",
+      "Vigila las zonas más claras: para antes de que las nubes o la nieve pierdan toda su textura."
+     ],
+     "q": "¿Has fotografiado alguna vez nieve, una playa o un edificio blanco que salió apagado y gris?",
+     "c": "Fotografía algo claro y blanco con compensación 0, +1 y +2 y elige el resultado más natural."
+    },
+    "fr": {
+     "t": "Scènes claires : neige et plage",
+     "g": "Apprends pourquoi la neige devient grise en mode auto et comment lui rendre sa blancheur.",
+     "p": [
+      "La neige, le sable blanc et les ciels lumineux font croire à la cellule que la scène est trop claire : elle assombrit.",
+      "Applique environ +1 à +2 de correction d'exposition pour que les blancs redeviennent blancs.",
+      "Surveille les zones les plus claires : arrête-toi avant que nuages ou neige perdent toute texture."
+     ],
+     "q": "As-tu déjà photographié de la neige, une plage ou un bâtiment blanc qui est sorti terne et gris ?",
+     "c": "Photographie quelque chose de clair et blanc à 0, +1 et +2 de correction, et choisis le résultat le plus naturel."
+    },
+    "it": {
+     "t": "Scene chiare: neve e spiaggia",
+     "g": "Scopri perché la neve diventa grigia in automatico e come restituirle il suo bianco pulito.",
+     "p": [
+      "Neve, sabbia bianca e cieli luminosi fanno credere all'esposimetro che la scena sia troppo chiara, e lui scurisce.",
+      "Imposta circa da +1 a +2 di compensazione perché i bianchi tornino bianchi.",
+      "Osserva le zone più chiare: fermati prima che nuvole o neve perdano tutta la loro texture."
+     ],
+     "q": "Hai mai fotografato neve, una spiaggia o un edificio bianco venuti spenti e grigi?",
+     "c": "Fotografa qualcosa di chiaro e bianco a 0, +1 e +2 di compensazione e scegli il risultato più naturale."
+    },
+    "pt": {
+     "t": "Cenas claras: neve e praia",
+     "g": "Aprende porque a neve fica cinzenta no automático e como lhe devolver o branco limpo.",
+     "p": [
+      "Neve, areia branca e céus claros fazem o fotómetro achar que a cena está clara demais, e ele escurece.",
+      "Aplica cerca de +1 a +2 de compensação para que os brancos voltem a parecer brancos.",
+      "Vigia as zonas mais claras: para antes de as nuvens ou a neve perderem toda a textura."
+     ],
+     "q": "Já fotografaste neve, uma praia ou um edifício branco que ficou baço e cinzento?",
+     "c": "Fotografa algo claro e branco com compensação 0, +1 e +2 e escolhe o resultado mais natural."
+    },
+    "pt_BR": {
+     "t": "Cenas claras: neve e praia",
+     "g": "Aprenda por que a neve fica cinza no automático e como devolver o branco limpo a ela.",
+     "p": [
+      "Neve, areia branca e céu claro fazem o fotômetro achar que a cena está clara demais, e ele escurece.",
+      "Aplique cerca de +1 a +2 de compensação para que os brancos voltem a parecer brancos.",
+      "Fique de olho nas áreas mais claras: pare antes que nuvens ou neve percam toda a textura."
+     ],
+     "q": "Você já fotografou neve, praia ou um prédio branco que saiu apagado e cinza?",
+     "c": "Fotografe algo claro e branco com compensação 0, +1 e +2 e escolha o resultado mais natural."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dark scenes and moody light",
+     "g": "Learn why dark scenes come out too bright and how to keep their atmosphere.",
+     "p": [
+      "In a dim café or at dusk, the meter tries to lift the scene to middle grey, washing out the mood.",
+      "Use about -0.7 to -2 exposure compensation so dark areas stay dark and lights keep their glow.",
+      "Hold steady or lean on something, since dark scenes often need slower shutter speeds."
+     ],
+     "q": "What moody place near you would make a beautiful low-light photo?",
+     "c": "Photograph a dim room or an evening street at 0 and at -1 compensation and decide which keeps the feeling better."
+    },
+    "de": {
+     "t": "Dunkle Szenen und stimmungsvolles Licht",
+     "g": "Lerne, warum dunkle Szenen zu hell werden und wie du ihre Atmosphäre bewahrst.",
+     "p": [
+      "In einem dunklen Café oder in der Dämmerung hebt der Messer die Szene auf Mittelgrau und zerstört die Stimmung.",
+      "Nutze etwa -0,7 bis -2 Belichtungskorrektur, damit Dunkles dunkel bleibt und Lichter leuchten.",
+      "Halte ruhig oder lehn dich an, denn dunkle Szenen brauchen oft längere Verschlusszeiten."
+     ],
+     "q": "Welcher stimmungsvolle Ort in deiner Nähe gäbe ein schönes Foto bei wenig Licht?",
+     "c": "Fotografiere einen dunklen Raum oder eine Abendstraße mit 0 und -1 Korrektur und entscheide, was die Stimmung besser trifft."
+    },
+    "es": {
+     "t": "Escenas oscuras y luz con ambiente",
+     "g": "Aprende por qué las escenas oscuras salen demasiado claras y cómo conservar su atmósfera.",
+     "p": [
+      "En un café en penumbra o al anochecer, el fotómetro intenta subir la escena a gris medio y se pierde el ambiente.",
+      "Usa entre -0,7 y -2 de compensación para que lo oscuro siga oscuro y las luces conserven su brillo.",
+      "Mantén el pulso o apóyate en algo, porque las escenas oscuras suelen pedir velocidades más lentas."
+     ],
+     "q": "¿Qué lugar con ambiente cerca de ti daría una bonita foto con poca luz?",
+     "c": "Fotografía una habitación en penumbra o una calle al anochecer con compensación 0 y -1, y decide cuál conserva mejor la sensación."
+    },
+    "fr": {
+     "t": "Scènes sombres et lumière d'ambiance",
+     "g": "Apprends pourquoi les scènes sombres sortent trop claires et comment garder leur atmosphère.",
+     "p": [
+      "Dans un café tamisé ou au crépuscule, la cellule remonte la scène vers le gris moyen et l'ambiance disparaît.",
+      "Utilise environ -0,7 à -2 de correction pour que les zones sombres restent sombres et que les lumières brillent.",
+      "Reste stable ou appuie-toi, car les scènes sombres demandent souvent des vitesses plus lentes."
+     ],
+     "q": "Quel lieu plein d'ambiance près de chez toi ferait une belle photo en faible lumière ?",
+     "c": "Photographie une pièce tamisée ou une rue le soir à 0 puis à -1 de correction, et choisis celle qui garde le mieux l'ambiance."
+    },
+    "it": {
+     "t": "Scene scure e luce d'atmosfera",
+     "g": "Scopri perché le scene scure vengono troppo chiare e come conservarne l'atmosfera.",
+     "p": [
+      "In un bar in penombra o al crepuscolo, l'esposimetro cerca di portare la scena al grigio medio e l'atmosfera sparisce.",
+      "Usa circa da -0,7 a -2 di compensazione perché le zone scure restino scure e le luci brillino.",
+      "Tieni la fotocamera ferma o appoggiati, perché le scene scure spesso richiedono tempi più lunghi."
+     ],
+     "q": "Quale luogo d'atmosfera vicino a te darebbe una bella foto con poca luce?",
+     "c": "Fotografa una stanza in penombra o una strada di sera a 0 e a -1 di compensazione e decidi quale conserva meglio l'atmosfera."
+    },
+    "pt": {
+     "t": "Cenas escuras e luz de ambiente",
+     "g": "Aprende porque as cenas escuras ficam claras demais e como preservar a sua atmosfera.",
+     "p": [
+      "Num café à meia-luz ou ao anoitecer, o fotómetro tenta levar a cena ao cinzento médio e o ambiente perde-se.",
+      "Usa cerca de -0,7 a -2 de compensação para que o escuro continue escuro e as luzes mantenham o brilho.",
+      "Segura com firmeza ou encosta-te, porque cenas escuras pedem muitas vezes velocidades mais lentas."
+     ],
+     "q": "Que lugar com ambiente perto de ti daria uma bela foto com pouca luz?",
+     "c": "Fotografa uma sala à meia-luz ou uma rua ao fim do dia com compensação 0 e -1 e decide qual guarda melhor o ambiente."
+    },
+    "pt_BR": {
+     "t": "Cenas escuras e luz com clima",
+     "g": "Aprenda por que cenas escuras saem claras demais e como preservar a atmosfera delas.",
+     "p": [
+      "Num café à meia-luz ou ao anoitecer, o fotômetro tenta levar a cena ao cinza médio e o clima se perde.",
+      "Use de -0,7 a -2 de compensação para o escuro continuar escuro e as luzes manterem o brilho.",
+      "Segure firme ou se apoie em algo, porque cenas escuras costumam pedir velocidades mais lentas."
+     ],
+     "q": "Que lugar com clima perto de você daria uma bela foto com pouca luz?",
+     "c": "Fotografe um ambiente à meia-luz ou uma rua à noite com compensação 0 e -1 e decida qual guarda melhor o clima."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading your screen honestly",
+     "g": "Learn to check sharpness by zooming in and not to trust screen brightness too much.",
+     "p": [
+      "A small preview hides blur and missed focus, so zoom in on the subject right after shooting important photos.",
+      "Screens look brighter in a dark room and darker in sunlight, so a photo may not be as bright as it seems.",
+      "Many cameras offer a histogram, a graph of brightness that is more reliable than your eyes on the screen."
+     ],
+     "q": "Have you ever been disappointed when you saw a photo on a bigger screen later?",
+     "c": "After each of five photos today, zoom in to check focus and, if available, glance at the histogram before moving on."
+    },
+    "de": {
+     "t": "Dem Display ehrlich begegnen",
+     "g": "Lerne, die Schärfe durch Vergrößern zu prüfen und der Displayhelligkeit nicht blind zu trauen.",
+     "p": [
+      "Eine kleine Vorschau versteckt Unschärfe, also vergrößere wichtige Fotos direkt nach der Aufnahme.",
+      "Displays wirken im Dunkeln heller und in der Sonne dunkler, ein Foto ist also vielleicht nicht so hell, wie es scheint.",
+      "Viele Kameras zeigen ein Histogramm, eine Helligkeitskurve, die zuverlässiger ist als dein Blick aufs Display."
+     ],
+     "q": "Warst du schon enttäuscht, als du ein Foto später auf einem größeren Bildschirm gesehen hast?",
+     "c": "Vergrößere heute nach jedem von fünf Fotos die Schärfe und wirf, wenn möglich, einen Blick aufs Histogramm."
+    },
+    "es": {
+     "t": "Leer tu pantalla con honestidad",
+     "g": "Aprende a comprobar la nitidez ampliando y a no fiarte demasiado del brillo de la pantalla.",
+     "p": [
+      "Una vista previa pequeña oculta el desenfoque, así que amplía el sujeto justo después de las fotos importantes.",
+      "La pantalla parece más clara en un sitio oscuro y más oscura al sol, así que la foto puede no ser tan clara como parece.",
+      "Muchas cámaras ofrecen un histograma, un gráfico de brillo más fiable que tus ojos ante la pantalla."
+     ],
+     "q": "¿Te has llevado alguna vez una decepción al ver una foto después en una pantalla más grande?",
+     "c": "Tras cada una de cinco fotos de hoy, amplía para revisar el enfoque y, si puedes, mira el histograma antes de seguir."
+    },
+    "fr": {
+     "t": "Lire ton écran avec honnêteté",
+     "g": "Apprends à vérifier la netteté en zoomant et à ne pas trop te fier à la luminosité de l'écran.",
+     "p": [
+      "Un petit aperçu cache le flou : zoome sur le sujet juste après chaque photo importante.",
+      "L'écran paraît plus lumineux dans le noir et plus sombre au soleil : ta photo n'est peut-être pas aussi claire qu'elle semble.",
+      "Beaucoup d'appareils proposent un histogramme, un graphique de luminosité plus fiable que tes yeux sur l'écran."
+     ],
+     "q": "As-tu déjà été déçu en revoyant une photo plus tard sur un grand écran ?",
+     "c": "Après chacune de cinq photos aujourd'hui, zoome pour vérifier la netteté et, si possible, regarde l'histogramme."
+    },
+    "it": {
+     "t": "Leggere lo schermo con onestà",
+     "g": "Impara a controllare la nitidezza ingrandendo e a non fidarti troppo della luminosità dello schermo.",
+     "p": [
+      "Un'anteprima piccola nasconde il mosso e il fuoco sbagliato: ingrandisci il soggetto subito dopo le foto importanti.",
+      "Lo schermo sembra più luminoso al buio e più scuro al sole, quindi la foto potrebbe non essere chiara come sembra.",
+      "Molte fotocamere offrono l'istogramma, un grafico della luminosità più affidabile dei tuoi occhi sullo schermo."
+     ],
+     "q": "Ti è mai capitato di restare deluso rivedendo una foto su uno schermo più grande?",
+     "c": "Dopo ciascuna di cinque foto di oggi, ingrandisci per controllare il fuoco e, se puoi, guarda l'istogramma."
+    },
+    "pt": {
+     "t": "Ler o ecrã com honestidade",
+     "g": "Aprende a verificar a nitidez ampliando e a não confiar demasiado no brilho do ecrã.",
+     "p": [
+      "Uma pré-visualização pequena esconde o desfoque, por isso amplia o motivo logo a seguir às fotos importantes.",
+      "O ecrã parece mais claro num sítio escuro e mais escuro ao sol, por isso a foto pode não ser tão clara como parece.",
+      "Muitas câmaras mostram um histograma, um gráfico do brilho mais fiável do que os teus olhos no ecrã."
+     ],
+     "q": "Já ficaste desiludido ao ver mais tarde uma foto num ecrã maior?",
+     "c": "Depois de cada uma de cinco fotos hoje, amplia para verificar o foco e, se puderes, olha para o histograma."
+    },
+    "pt_BR": {
+     "t": "Lendo sua tela com honestidade",
+     "g": "Aprenda a conferir a nitidez ampliando e a não confiar demais no brilho da tela.",
+     "p": [
+      "Uma prévia pequena esconde o desfoque, então amplie o assunto logo depois das fotos importantes.",
+      "A tela parece mais clara num lugar escuro e mais escura no sol, então a foto pode não ser tão clara quanto parece.",
+      "Muitas câmeras mostram um histograma, um gráfico de brilho mais confiável que seus olhos na tela."
+     ],
+     "q": "Você já se decepcionou ao ver uma foto depois numa tela maior?",
+     "c": "Depois de cada uma de cinco fotos hoje, amplie para conferir o foco e, se der, olhe o histograma."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "File formats: JPEG first",
+     "g": "Learn what a JPEG is, how quality settings work and why it is a great format to start with.",
+     "p": [
+      "A JPEG is a finished, compressed image: colours, contrast and sharpening are already applied by the device.",
+      "Choose the highest quality and full size setting so you keep as much detail as possible.",
+      "JPEGs are small, open everywhere and share instantly; heavy editing later is where other formats help."
+     ],
+     "q": "Do you ever edit your photos, or do you usually share them straight from the device?",
+     "c": "Check your device settings, set photos to the highest quality, and look at how large one image file is."
+    },
+    "de": {
+     "t": "Dateiformate: zuerst JPEG",
+     "g": "Lerne, was ein JPEG ist, wie Qualitätsstufen funktionieren und warum es ein guter Start ist.",
+     "p": [
+      "Ein JPEG ist ein fertiges, komprimiertes Bild: Farben, Kontrast und Schärfung hat das Gerät bereits angewendet.",
+      "Wähle die höchste Qualität und volle Größe, damit möglichst viele Details erhalten bleiben.",
+      "JPEGs sind klein, öffnen sich überall und lassen sich sofort teilen; für starke Bearbeitung helfen andere Formate."
+     ],
+     "q": "Bearbeitest du deine Fotos, oder teilst du sie meist direkt vom Gerät?",
+     "c": "Prüfe die Einstellungen deines Geräts, stell die höchste Bildqualität ein und schau, wie groß eine Bilddatei ist."
+    },
+    "es": {
+     "t": "Formatos de archivo: primero JPEG",
+     "g": "Aprende qué es un JPEG, cómo funcionan los ajustes de calidad y por qué es un gran formato para empezar.",
+     "p": [
+      "Un JPEG es una imagen terminada y comprimida: el aparato ya ha aplicado colores, contraste y enfoque.",
+      "Elige la máxima calidad y el tamaño completo para conservar el mayor detalle posible.",
+      "Los JPEG pesan poco, se abren en todas partes y se comparten al instante; para editar mucho, otros formatos ayudan."
+     ],
+     "q": "¿Sueles editar tus fotos, o las compartes directamente desde el aparato?",
+     "c": "Revisa los ajustes de tu aparato, pon la calidad más alta y mira cuánto ocupa un archivo de imagen."
+    },
+    "fr": {
+     "t": "Formats de fichier : d'abord le JPEG",
+     "g": "Apprends ce qu'est un JPEG, comment fonctionnent les réglages de qualité et pourquoi c'est un bon début.",
+     "p": [
+      "Un JPEG est une image finie et compressée : couleurs, contraste et accentuation sont déjà appliqués par l'appareil.",
+      "Choisis la qualité maximale et la pleine taille pour garder le plus de détails possible.",
+      "Les JPEG sont légers, s'ouvrent partout et se partagent tout de suite ; pour retoucher beaucoup, d'autres formats aident."
+     ],
+     "q": "Retouches-tu tes photos, ou les partages-tu directement depuis l'appareil ?",
+     "c": "Vérifie les réglages de ton appareil, choisis la meilleure qualité d'image et regarde le poids d'un fichier photo."
+    },
+    "it": {
+     "t": "Formati di file: prima il JPEG",
+     "g": "Scopri cos'è un JPEG, come funzionano le impostazioni di qualità e perché è un ottimo formato per iniziare.",
+     "p": [
+      "Un JPEG è un'immagine finita e compressa: colori, contrasto e nitidezza sono già applicati dal dispositivo.",
+      "Scegli la qualità più alta e la dimensione piena per conservare più dettaglio possibile.",
+      "I JPEG sono leggeri, si aprono ovunque e si condividono subito; per un fotoritocco pesante aiutano altri formati."
+     ],
+     "q": "Modifichi le tue foto, o di solito le condividi direttamente dal dispositivo?",
+     "c": "Controlla le impostazioni del dispositivo, scegli la qualità più alta e guarda quanto pesa un file immagine."
+    },
+    "pt": {
+     "t": "Formatos de ficheiro: primeiro o JPEG",
+     "g": "Aprende o que é um JPEG, como funcionam as definições de qualidade e porque é um ótimo formato para começar.",
+     "p": [
+      "Um JPEG é uma imagem acabada e comprimida: cores, contraste e nitidez já foram aplicados pelo aparelho.",
+      "Escolhe a qualidade mais alta e o tamanho máximo para guardar o máximo de detalhe.",
+      "Os JPEG são leves, abrem em todo o lado e partilham-se logo; para edições pesadas, outros formatos ajudam."
+     ],
+     "q": "Costumas editar as tuas fotos, ou partilhas diretamente do aparelho?",
+     "c": "Vê as definições do teu aparelho, escolhe a qualidade mais alta e repara no tamanho de um ficheiro de imagem."
+    },
+    "pt_BR": {
+     "t": "Formatos de arquivo: primeiro o JPEG",
+     "g": "Aprenda o que é um JPEG, como funcionam os ajustes de qualidade e por que ele é ótimo para começar.",
+     "p": [
+      "Um JPEG é uma imagem pronta e comprimida: cores, contraste e nitidez já foram aplicados pelo aparelho.",
+      "Escolha a qualidade mais alta e o tamanho máximo para guardar o máximo de detalhe.",
+      "JPEGs são leves, abrem em qualquer lugar e são compartilhados na hora; para edições pesadas, outros formatos ajudam."
+     ],
+     "q": "Você costuma editar suas fotos, ou compartilha direto do aparelho?",
+     "c": "Confira os ajustes do seu aparelho, escolha a qualidade mais alta e veja o tamanho de um arquivo de imagem."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organising your photos",
+     "g": "Set up simple folders, dates and backups so your pictures stay easy to find and safe.",
+     "p": [
+      "Use one clear structure, such as year, then month or event, for example 2024-06 Lake trip.",
+      "Delete obvious failures soon after shooting so your best photos are not buried under duplicates.",
+      "Keep at least two copies in different places, such as a computer and an external drive or cloud storage."
+     ],
+     "q": "How do you store your photos today, and have you ever lost any?",
+     "c": "Create a folder for this month, move today's best photos into it and make sure a second copy exists somewhere else."
+    },
+    "de": {
+     "t": "Fotos organisieren",
+     "g": "Richte einfache Ordner, Daten und Sicherungen ein, damit deine Bilder auffindbar und sicher bleiben.",
+     "p": [
+      "Nutze eine klare Struktur, etwa Jahr und dann Monat oder Anlass, zum Beispiel 2024-06 Ausflug zum See.",
+      "Lösche offensichtliche Fehlschüsse bald, damit deine besten Fotos nicht unter Duplikaten verschwinden.",
+      "Bewahre mindestens zwei Kopien an verschiedenen Orten auf, etwa Computer und externe Festplatte oder Cloud."
+     ],
+     "q": "Wie speicherst du deine Fotos heute, und hast du schon einmal welche verloren?",
+     "c": "Leg einen Ordner für diesen Monat an, verschieb die besten Fotos des Tages hinein und sorg für eine zweite Kopie."
+    },
+    "es": {
+     "t": "Organizar tus fotos",
+     "g": "Crea carpetas, fechas y copias de seguridad sencillas para que tus fotos sean fáciles de encontrar y estén a salvo.",
+     "p": [
+      "Usa una estructura clara, como año y luego mes o evento, por ejemplo 2024-06 Excursión al lago.",
+      "Borra pronto los fallos evidentes para que tus mejores fotos no queden enterradas entre duplicados.",
+      "Guarda al menos dos copias en lugares distintos, como el ordenador y un disco externo o la nube."
+     ],
+     "q": "¿Cómo guardas hoy tus fotos, y has perdido alguna alguna vez?",
+     "c": "Crea una carpeta para este mes, mueve a ella las mejores fotos de hoy y asegúrate de que hay una segunda copia en otro sitio."
+    },
+    "fr": {
+     "t": "Organiser tes photos",
+     "g": "Mets en place des dossiers, des dates et des sauvegardes simples pour retrouver tes photos et les protéger.",
+     "p": [
+      "Utilise une structure claire, par exemple année puis mois ou événement, comme 2024-06 Balade au lac.",
+      "Supprime vite les ratés évidents pour que tes meilleures photos ne soient pas noyées sous les doublons.",
+      "Garde au moins deux copies à des endroits différents, comme un ordinateur et un disque externe ou le cloud."
+     ],
+     "q": "Comment ranges-tu tes photos aujourd'hui, et en as-tu déjà perdu ?",
+     "c": "Crée un dossier pour ce mois, déplaces-y les meilleures photos du jour et vérifie qu'une deuxième copie existe ailleurs."
+    },
+    "it": {
+     "t": "Organizzare le tue foto",
+     "g": "Crea cartelle, date e backup semplici perché le tue foto restino facili da trovare e al sicuro.",
+     "p": [
+      "Usa una struttura chiara, come anno e poi mese o evento, per esempio 2024-06 Gita al lago.",
+      "Elimina presto gli scatti sbagliati evidenti, così le foto migliori non restano sepolte tra i duplicati.",
+      "Tieni almeno due copie in posti diversi, come il computer e un disco esterno o il cloud."
+     ],
+     "q": "Come archivi oggi le tue foto, e te ne è mai capitato di perderne?",
+     "c": "Crea una cartella per questo mese, spostaci le foto migliori di oggi e assicurati che esista una seconda copia altrove."
+    },
+    "pt": {
+     "t": "Organizar as tuas fotos",
+     "g": "Cria pastas, datas e cópias de segurança simples para que as tuas fotos sejam fáceis de encontrar e estejam seguras.",
+     "p": [
+      "Usa uma estrutura clara, como ano e depois mês ou evento, por exemplo 2024-06 Passeio ao lago.",
+      "Apaga cedo as falhas evidentes para que as melhores fotos não fiquem enterradas no meio de repetidas.",
+      "Guarda pelo menos duas cópias em sítios diferentes, como o computador e um disco externo ou a nuvem."
+     ],
+     "q": "Como guardas hoje as tuas fotos, e já perdeste alguma?",
+     "c": "Cria uma pasta para este mês, move para lá as melhores fotos de hoje e garante que existe uma segunda cópia noutro sítio."
+    },
+    "pt_BR": {
+     "t": "Organizando suas fotos",
+     "g": "Monte pastas, datas e backups simples para que suas fotos fiquem fáceis de achar e seguras.",
+     "p": [
+      "Use uma estrutura clara, como ano e depois mês ou evento, por exemplo 2024-06 Passeio no lago.",
+      "Apague logo os erros óbvios para que suas melhores fotos não fiquem enterradas entre repetidas.",
+      "Mantenha pelo menos duas cópias em lugares diferentes, como o computador e um HD externo ou a nuvem."
+     ],
+     "q": "Como você guarda suas fotos hoje, e já perdeu alguma?",
+     "c": "Crie uma pasta para este mês, mova para ela as melhores fotos de hoje e garanta que exista uma segunda cópia em outro lugar."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Recap the camera basics and exposure skills from this month with a relaxed shoot of your favourite subject.",
+     "p": [
+      "You learned to find a subject, hold steady, focus precisely and clean your lens before shooting.",
+      "You met aperture, shutter speed and ISO, and used compensation when auto exposure got it wrong.",
+      "You now check photos honestly by zooming in, and you keep them organised and backed up."
+     ],
+     "q": "Which lesson from this month made the biggest difference to your photos?",
+     "c": "Spend twenty minutes photographing your favourite subject, using at least three skills from this month, and pick your best shot."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Wiederhole die Kamera- und Belichtungsgrundlagen dieses Monats mit einem entspannten Shooting deines Lieblingsmotivs.",
+     "p": [
+      "Du hast gelernt, ein Motiv zu finden, ruhig zu halten, genau zu fokussieren und das Objektiv zu reinigen.",
+      "Du kennst Blende, Verschlusszeit und ISO und korrigierst die Belichtung, wenn die Automatik danebenliegt.",
+      "Du prüfst Fotos jetzt ehrlich vergrößert und hältst sie organisiert und gesichert."
+     ],
+     "q": "Welche Lektion dieses Monats hat deine Fotos am meisten verbessert?",
+     "c": "Fotografiere zwanzig Minuten dein Lieblingsmotiv mit mindestens drei Fähigkeiten dieses Monats und wähle dein bestes Bild."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa lo básico de la cámara y la exposición de este mes con una sesión tranquila de tu sujeto favorito.",
+     "p": [
+      "Aprendiste a encontrar un sujeto, sujetar firme, enfocar con precisión y limpiar el objetivo antes de disparar.",
+      "Conociste la apertura, la velocidad y el ISO, y usaste la compensación cuando el automático fallaba.",
+      "Ahora revisas las fotos con honestidad ampliándolas y las mantienes organizadas y con copia."
+     ],
+     "q": "¿Qué lección de este mes ha cambiado más tus fotos?",
+     "c": "Dedica veinte minutos a fotografiar tu sujeto favorito usando al menos tres habilidades de este mes, y elige tu mejor foto."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Révise les bases de l'appareil et de l'exposition vues ce mois-ci avec une séance détendue de ton sujet préféré.",
+     "p": [
+      "Tu as appris à trouver un sujet, tenir l'appareil stable, faire une mise au point précise et nettoyer l'objectif.",
+      "Tu connais l'ouverture, la vitesse et l'ISO, et tu corriges l'exposition quand l'auto se trompe.",
+      "Tu vérifies désormais tes photos honnêtement en zoomant, et tu les ranges et les sauvegardes."
+     ],
+     "q": "Quelle leçon de ce mois a le plus changé tes photos ?",
+     "c": "Passe vingt minutes à photographier ton sujet préféré en utilisant au moins trois savoir-faire du mois, puis choisis ta meilleure image."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassa le basi della fotocamera e dell'esposizione di questo mese con uno scatto rilassato del tuo soggetto preferito.",
+     "p": [
+      "Hai imparato a trovare un soggetto, tenere ferma la fotocamera, mettere a fuoco con precisione e pulire l'obiettivo.",
+      "Hai conosciuto diaframma, tempo e ISO e hai usato la compensazione quando l'automatico sbagliava.",
+      "Ora controlli le foto con onestà ingrandendole e le tieni organizzate e con backup."
+     ],
+     "q": "Quale lezione di questo mese ha cambiato di più le tue foto?",
+     "c": "Dedica venti minuti al tuo soggetto preferito usando almeno tre abilità di questo mese, poi scegli il tuo scatto migliore."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê o básico da câmara e da exposição deste mês com uma sessão descontraída do teu motivo favorito.",
+     "p": [
+      "Aprendeste a encontrar um motivo, segurar com firmeza, focar com precisão e limpar a objetiva antes de fotografar.",
+      "Conheceste a abertura, a velocidade e o ISO, e usaste a compensação quando o automático falhava.",
+      "Agora verificas as fotos com honestidade ampliando-as e manténs tudo organizado e com cópia."
+     ],
+     "q": "Que lição deste mês fez mais diferença nas tuas fotos?",
+     "c": "Passa vinte minutos a fotografar o teu motivo favorito usando pelo menos três capacidades deste mês e escolhe a melhor foto."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Revise o básico de câmera e exposição deste mês com uma sessão tranquila do seu assunto favorito.",
+     "p": [
+      "Você aprendeu a achar um assunto, segurar firme, focar com precisão e limpar a lente antes de fotografar.",
+      "Conheceu abertura, velocidade e ISO, e usou a compensação quando o automático errava.",
+      "Agora você confere as fotos com honestidade ampliando e mantém tudo organizado e com backup."
+     ],
+     "q": "Qual lição deste mês fez mais diferença nas suas fotos?",
+     "c": "Passe vinte minutos fotografando seu assunto favorito usando pelo menos três habilidades deste mês e escolha sua melhor foto."
+    }
+   }
+  }
+ ]
+}

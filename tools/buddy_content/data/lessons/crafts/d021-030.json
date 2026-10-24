@@ -1,0 +1,835 @@
+{
+ "topic": "crafts",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the yarn",
+     "g": "Get to know common yarn fibres, how yarn is plied and why texture matters.",
+     "p": [
+      "Wool is warm and springy, cotton is cool and crisp with little stretch, acrylic is easy-care and budget-friendly.",
+      "Most yarns are plied: several thin strands twisted together, which makes the yarn stronger and more even.",
+      "Smooth yarns show stitches clearly, while fluffy or textured yarns hide them, so beginners often prefer smooth."
+     ],
+     "q": "Do you have a favourite knitted or crocheted item? What do you think it is made of?",
+     "c": "Collect any yarns at home and sort them by feel: soft, crisp, springy or fluffy."
+    },
+    "de": {
+     "t": "Garn kennenlernen",
+     "g": "Lerne gängige Garnfasern kennen, wie Garn verzwirnt wird und warum die Textur zählt.",
+     "p": [
+      "Wolle ist warm und elastisch, Baumwolle kühl und fest mit wenig Dehnung, Acryl pflegeleicht und günstig.",
+      "Die meisten Garne sind verzwirnt: Mehrere dünne Fäden werden zusammengedreht, das macht sie fester und gleichmäßiger.",
+      "Glatte Garne zeigen Maschen deutlich, flauschige oder strukturierte verstecken sie, darum mögen Anfänger glatte."
+     ],
+     "q": "Hast du ein gestricktes oder gehäkeltes Lieblingsstück? Woraus ist es wohl gemacht?",
+     "c": "Sammle alle Garne, die du zu Hause hast, und sortiere sie nach Gefühl: weich, fest, elastisch oder flauschig."
+    },
+    "es": {
+     "t": "Conoce el hilo",
+     "g": "Conoce las fibras de lana más comunes, cómo se tuerce el hilo y por qué importa la textura.",
+     "p": [
+      "La lana es cálida y elástica, el algodón fresco y firme con poca elasticidad, el acrílico fácil de cuidar y económico.",
+      "La mayoría de hilos van torcidos: varias hebras finas retorcidas juntas, lo que los hace más fuertes y regulares.",
+      "Los hilos lisos muestran bien los puntos y los peludos o texturizados los esconden, por eso al empezar se prefieren lisos."
+     ],
+     "q": "¿Tienes alguna prenda tejida favorita? ¿De qué crees que está hecha?",
+     "c": "Reúne los ovillos que tengas en casa y ordénalos por tacto: suaves, firmes, elásticos o esponjosos."
+    },
+    "fr": {
+     "t": "Faire connaissance avec le fil",
+     "g": "Découvre les fibres courantes, comment un fil est retordu et pourquoi la texture compte.",
+     "p": [
+      "La laine est chaude et élastique, le coton frais et ferme avec peu d'élasticité, l'acrylique facile d'entretien et économique.",
+      "La plupart des fils sont retordus : plusieurs brins fins tordus ensemble, ce qui les rend plus solides et réguliers.",
+      "Les fils lisses montrent bien les mailles, les fils duveteux les cachent : les débutants préfèrent souvent le lisse."
+     ],
+     "q": "As-tu un vêtement tricoté ou crocheté préféré ? En quoi est-il fait, à ton avis ?",
+     "c": "Rassemble les fils que tu as chez toi et trie-les au toucher : doux, ferme, élastique ou duveteux."
+    },
+    "it": {
+     "t": "Conoscere il filato",
+     "g": "Scopri le fibre più comuni, come si ritorce il filato e perché la texture conta.",
+     "p": [
+      "La lana è calda ed elastica, il cotone fresco e compatto con poca elasticità, l'acrilico facile da curare ed economico.",
+      "Quasi tutti i filati sono ritorti: più capi sottili attorcigliati insieme, che li rendono più forti e regolari.",
+      "I filati lisci mostrano bene i punti, quelli pelosi o fantasia li nascondono: per iniziare meglio quelli lisci."
+     ],
+     "q": "Hai un capo a maglia o all'uncinetto preferito? Di cosa pensi che sia fatto?",
+     "c": "Raccogli i gomitoli che hai in casa e ordinali al tatto: morbidi, compatti, elastici o soffici."
+    },
+    "pt": {
+     "t": "Conhecer o fio",
+     "g": "Conhece as fibras de fio mais comuns, como o fio é torcido e porque a textura importa.",
+     "p": [
+      "A lã é quente e elástica, o algodão fresco e firme com pouca elasticidade, o acrílico fácil de cuidar e económico.",
+      "A maioria dos fios é torcida: vários cabos finos enrolados juntos, o que os torna mais fortes e regulares.",
+      "Os fios lisos mostram bem os pontos e os felpudos ou texturados escondem-nos, por isso quem começa prefere lisos."
+     ],
+     "q": "Tens alguma peça de tricô ou croché preferida? De que achas que é feita?",
+     "c": "Junta os novelos que tiveres em casa e organiza-os pelo toque: macios, firmes, elásticos ou fofos."
+    },
+    "pt_BR": {
+     "t": "Conhecendo o fio",
+     "g": "Conheça as fibras de fio mais comuns, como o fio é torcido e por que a textura importa.",
+     "p": [
+      "A lã é quente e elástica, o algodão é fresco e firme com pouca elasticidade, o acrílico é fácil de cuidar e econômico.",
+      "A maioria dos fios é torcida: vários cabos finos enrolados juntos, o que deixa o fio mais forte e regular.",
+      "Fios lisos mostram bem os pontos e os peludos ou texturizados escondem, por isso quem começa prefere os lisos."
+     ],
+     "q": "Você tem alguma peça de tricô ou crochê favorita? Do que acha que ela é feita?",
+     "c": "Junte os novelos que tiver em casa e organize pelo toque: macios, firmes, elásticos ou fofinhos."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a yarn label",
+     "g": "Decode everything a yarn label tells you before you buy or start a project.",
+     "p": [
+      "The label lists fibre content, weight category and length per ball, so you can estimate how much you need.",
+      "It suggests a needle or hook size and often a gauge, plus care symbols for washing and drying.",
+      "The dye lot number matters: buy all balls for one project from the same lot so the colour matches exactly."
+     ],
+     "q": "Have you ever kept a yarn label, or did it end up in the bin?",
+     "c": "Find a yarn label (or a clothing care label) and read out every symbol and number on it."
+    },
+    "de": {
+     "t": "Eine Garnbanderole lesen",
+     "g": "Entschlüssle alles, was eine Banderole verrät, bevor du kaufst oder ein Projekt beginnst.",
+     "p": [
+      "Die Banderole nennt Faser, Garnstärke und Lauflänge pro Knäuel, so kannst du die nötige Menge abschätzen.",
+      "Sie empfiehlt eine Nadel- oder Hakenstärke, oft eine Maschenprobe, und zeigt Pflegesymbole fürs Waschen.",
+      "Die Partienummer ist wichtig: Kauf alle Knäuel eines Projekts aus derselben Partie, damit die Farbe genau passt."
+     ],
+     "q": "Hebst du Garnbanderolen auf, oder landen sie im Müll?",
+     "c": "Nimm eine Banderole (oder ein Pflegeetikett) und lies jedes Symbol und jede Zahl darauf."
+    },
+    "es": {
+     "t": "Leer la etiqueta del ovillo",
+     "g": "Descifra todo lo que dice una etiqueta de lana antes de comprar o empezar un proyecto.",
+     "p": [
+      "La etiqueta indica la fibra, el grosor y los metros por ovillo, para que calcules cuánto necesitas.",
+      "Sugiere un tamaño de aguja o ganchillo, a menudo una muestra, y símbolos de cuidado para lavar y secar.",
+      "El número de lote de tinte importa: compra todos los ovillos de un proyecto del mismo lote para que el color coincida."
+     ],
+     "q": "¿Alguna vez guardaste una etiqueta de lana o acabó en la basura?",
+     "c": "Busca una etiqueta de lana (o de una prenda) y lee en voz alta cada símbolo y número."
+    },
+    "fr": {
+     "t": "Lire l'étiquette d'une pelote",
+     "g": "Décode tout ce que dit une étiquette de fil avant d'acheter ou de commencer un projet.",
+     "p": [
+      "L'étiquette indique la fibre, la grosseur et le métrage par pelote, pour estimer la quantité nécessaire.",
+      "Elle suggère une taille d'aiguilles ou de crochet, souvent un échantillon, et des symboles d'entretien.",
+      "Le numéro de bain compte : achète toutes les pelotes d'un projet dans le même bain pour une couleur identique."
+     ],
+     "q": "As-tu déjà gardé une étiquette de pelote, ou finit-elle à la poubelle ?",
+     "c": "Prends une étiquette de fil (ou de vêtement) et lis à voix haute chaque symbole et chaque chiffre."
+    },
+    "it": {
+     "t": "Leggere l'etichetta del gomitolo",
+     "g": "Decifra tutto ciò che dice un'etichetta di filato prima di comprare o iniziare un progetto.",
+     "p": [
+      "L'etichetta indica fibra, spessore e metri per gomitolo, così puoi stimare quanto te ne serve.",
+      "Suggerisce la misura di ferri o uncinetto, spesso un campione, e i simboli per lavaggio e asciugatura.",
+      "Il numero di bagno conta: compra tutti i gomitoli di un progetto dallo stesso bagno, così il colore è identico."
+     ],
+     "q": "Hai mai conservato un'etichetta di filato o è finita nel cestino?",
+     "c": "Prendi un'etichetta di filato (o di un capo) e leggi ad alta voce ogni simbolo e numero."
+    },
+    "pt": {
+     "t": "Ler o rótulo do novelo",
+     "g": "Decifra tudo o que o rótulo de um fio diz antes de comprares ou começares um projeto.",
+     "p": [
+      "O rótulo indica a fibra, a espessura e os metros por novelo, para calculares quanto precisas.",
+      "Sugere um tamanho de agulha ou de agulha de croché, muitas vezes uma amostra, e símbolos de lavagem.",
+      "O número do lote de tinta importa: compra todos os novelos de um projeto do mesmo lote para a cor bater certo."
+     ],
+     "q": "Já guardaste um rótulo de fio, ou acabou no lixo?",
+     "c": "Pega num rótulo de fio (ou de uma peça de roupa) e lê em voz alta cada símbolo e número."
+    },
+    "pt_BR": {
+     "t": "Lendo o rótulo do novelo",
+     "g": "Decifre tudo o que o rótulo de um fio diz antes de comprar ou começar um projeto.",
+     "p": [
+      "O rótulo mostra a fibra, a espessura e os metros por novelo, para você calcular quanto vai precisar.",
+      "Ele sugere um tamanho de agulha de tricô ou crochê, muitas vezes uma amostra, e símbolos de lavagem.",
+      "O número do lote de tingimento importa: compre todos os novelos do projeto do mesmo lote para a cor bater."
+     ],
+     "q": "Você já guardou um rótulo de fio, ou ele foi parar no lixo?",
+     "c": "Pegue um rótulo de fio (ou de uma roupa) e leia em voz alta cada símbolo e número."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yarn weights from lace to bulky",
+     "g": "Learn how yarn thickness is named and how it changes needle size and fabric.",
+     "p": [
+      "Common weights from thin to thick: lace, fingering, sport, DK, worsted or aran, chunky or bulky, super bulky.",
+      "Thicker yarn needs bigger needles and grows fast; thinner yarn gives fine, light fabric but takes longer.",
+      "For a first project, a medium weight like DK or worsted is easy to see, hold and count."
+     ],
+     "q": "Would you rather knit something quick and chunky or slow and delicate?",
+     "c": "Compare two yarns side by side and guess their weight category from their thickness."
+    },
+    "de": {
+     "t": "Garnstärken von Lace bis Bulky",
+     "g": "Lerne, wie Garnstärken heißen und wie sie Nadelgröße und Gestrick verändern.",
+     "p": [
+      "Gängige Stärken von dünn bis dick: Lace, Sockengarn, Sport, DK, Worsted oder Aran, Chunky oder Bulky, Super Bulky.",
+      "Dickes Garn braucht dicke Nadeln und wächst schnell; dünnes gibt feines, leichtes Gestrick, dauert aber länger.",
+      "Für ein erstes Projekt ist eine mittlere Stärke wie DK oder Worsted leicht zu sehen, zu halten und zu zählen."
+     ],
+     "q": "Strickst du lieber etwas Schnelles, Dickes oder etwas Langsames, Feines?",
+     "c": "Vergleiche zwei Garne nebeneinander und schätze an der Dicke ihre Stärke-Kategorie."
+    },
+    "es": {
+     "t": "Grosores de hilo: de lace a bulky",
+     "g": "Aprende cómo se nombra el grosor del hilo y cómo cambia la aguja y el tejido.",
+     "p": [
+      "Grosores habituales de fino a grueso: lace, fingering, sport, DK, worsted o aran, chunky o bulky y super bulky.",
+      "El hilo grueso pide agujas grandes y avanza rápido; el fino da un tejido ligero y delicado, pero lleva más tiempo.",
+      "Para un primer proyecto, un grosor medio como DK o worsted se ve, se sujeta y se cuenta con facilidad."
+     ],
+     "q": "¿Prefieres tejer algo rápido y grueso o algo lento y delicado?",
+     "c": "Compara dos hilos uno al lado del otro y adivina su categoría de grosor."
+    },
+    "fr": {
+     "t": "Grosseurs de fil, du lace au bulky",
+     "g": "Apprends comment on nomme la grosseur du fil et comment elle change aiguilles et tricot.",
+     "p": [
+      "Grosseurs courantes, du fin à l'épais : lace, fingering, sport, DK, worsted ou aran, chunky ou bulky, super bulky.",
+      "Un fil épais demande de grosses aiguilles et avance vite ; un fil fin donne un tricot léger mais prend plus de temps.",
+      "Pour un premier projet, une grosseur moyenne comme DK ou worsted se voit, se tient et se compte facilement."
+     ],
+     "q": "Préfères-tu tricoter quelque chose de rapide et épais, ou de lent et délicat ?",
+     "c": "Compare deux fils côte à côte et devine leur catégorie de grosseur."
+    },
+    "it": {
+     "t": "Spessori del filato, dal lace al bulky",
+     "g": "Impara come si chiamano gli spessori del filato e come cambiano ferri e tessuto.",
+     "p": [
+      "Spessori comuni dal sottile al grosso: lace, fingering, sport, DK, worsted o aran, chunky o bulky, super bulky.",
+      "Il filato grosso vuole ferri grandi e cresce in fretta; quello sottile dà un tessuto fine e leggero ma richiede più tempo.",
+      "Per un primo progetto uno spessore medio come DK o worsted è facile da vedere, tenere e contare."
+     ],
+     "q": "Preferisci lavorare qualcosa di veloce e grosso o di lento e delicato?",
+     "c": "Confronta due filati uno accanto all'altro e indovina la loro categoria di spessore."
+    },
+    "pt": {
+     "t": "Espessuras de fio, do lace ao bulky",
+     "g": "Aprende como se chama a espessura do fio e como muda a agulha e o tecido.",
+     "p": [
+      "Espessuras comuns da fina à grossa: lace, fingering, sport, DK, worsted ou aran, chunky ou bulky, super bulky.",
+      "O fio grosso pede agulhas grandes e cresce depressa; o fino dá um tecido leve e delicado, mas demora mais.",
+      "Para um primeiro projeto, uma espessura média como DK ou worsted é fácil de ver, segurar e contar."
+     ],
+     "q": "Preferes tricotar algo rápido e grosso ou lento e delicado?",
+     "c": "Compara dois fios lado a lado e adivinha a categoria de espessura de cada um."
+    },
+    "pt_BR": {
+     "t": "Espessuras de fio, do lace ao bulky",
+     "g": "Aprenda como a espessura do fio é chamada e como ela muda a agulha e o tecido.",
+     "p": [
+      "Espessuras comuns da fina à grossa: lace, fingering, sport, DK, worsted ou aran, chunky ou bulky, super bulky.",
+      "Fio grosso pede agulhas grandes e cresce rápido; o fino dá um tecido leve e delicado, mas demora mais.",
+      "Para um primeiro projeto, uma espessura média como DK ou worsted é fácil de ver, segurar e contar."
+     ],
+     "q": "Você prefere tricotar algo rápido e grosso ou lento e delicado?",
+     "c": "Compare dois fios lado a lado e tente adivinhar a categoria de espessura de cada um."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knitting needles explained",
+     "g": "Learn the main needle types, their materials and how sizes are marked.",
+     "p": [
+      "Straight needles are classic for flat pieces; circular needles, joined by a cable, knit flat or in the round.",
+      "Double-pointed needles come in sets for small tubes like socks; materials include bamboo, wood and metal.",
+      "Sizes are marked in millimetres (the diameter) and sometimes in US numbers; the label tells you which to use."
+     ],
+     "q": "Do you like the idea of warm wooden needles or smooth, fast metal ones?",
+     "c": "Look at any needles or pencils at home and estimate their diameter in millimetres."
+    },
+    "de": {
+     "t": "Stricknadeln erklärt",
+     "g": "Lerne die wichtigsten Nadelarten, ihre Materialien und wie Größen angegeben werden.",
+     "p": [
+      "Gerade Nadeln sind klassisch für flache Teile; Rundstricknadeln mit Seil stricken flach oder in Runden.",
+      "Nadelspiele gibt es im Set für kleine Schläuche wie Socken; Materialien sind Bambus, Holz und Metall.",
+      "Größen stehen in Millimetern (Durchmesser), manchmal auch als US-Nummer; die Banderole sagt dir, welche passt."
+     ],
+     "q": "Magst du eher warme Holznadeln oder glatte, schnelle Metallnadeln?",
+     "c": "Schau dir Nadeln oder Stifte zu Hause an und schätze ihren Durchmesser in Millimetern."
+    },
+    "es": {
+     "t": "Las agujas de tejer",
+     "g": "Conoce los principales tipos de agujas, sus materiales y cómo se indican los tamaños.",
+     "p": [
+      "Las agujas rectas son clásicas para piezas planas; las circulares, unidas por un cable, tejen en plano o en redondo.",
+      "Las de doble punta vienen en juegos para tubos pequeños como calcetines; hay de bambú, madera y metal.",
+      "El tamaño se indica en milímetros (el diámetro) y a veces en números de EE. UU.; la etiqueta te dice cuál usar."
+     ],
+     "q": "¿Te atraen más las agujas cálidas de madera o las de metal, lisas y rápidas?",
+     "c": "Mira agujas o lápices que tengas en casa y calcula su diámetro en milímetros."
+    },
+    "fr": {
+     "t": "Les aiguilles à tricoter",
+     "g": "Découvre les principaux types d'aiguilles, leurs matières et comment les tailles sont indiquées.",
+     "p": [
+      "Les aiguilles droites sont classiques pour les pièces plates ; les circulaires, reliées par un câble, tricotent à plat ou en rond.",
+      "Les aiguilles double pointe vont par jeux pour les petits tubes comme les chaussettes ; en bambou, bois ou métal.",
+      "La taille est indiquée en millimètres (le diamètre), parfois en numéros américains ; l'étiquette dit laquelle choisir."
+     ],
+     "q": "Les aiguilles en bois, chaleureuses, te tentent-elles plus que celles en métal, lisses et rapides ?",
+     "c": "Regarde des aiguilles ou des crayons chez toi et estime leur diamètre en millimètres."
+    },
+    "it": {
+     "t": "I ferri da maglia",
+     "g": "Scopri i principali tipi di ferri, i materiali e come si indicano le misure.",
+     "p": [
+      "I ferri dritti sono classici per pezzi piani; i ferri circolari, uniti da un cavo, lavorano in piano o in tondo.",
+      "I ferri a doppia punta sono in set per piccoli tubi come le calze; esistono in bambù, legno e metallo.",
+      "La misura è in millimetri (il diametro) e a volte in numeri USA; l'etichetta del filato ti dice quale usare."
+     ],
+     "q": "Ti attirano di più i caldi ferri di legno o quelli lisci e veloci di metallo?",
+     "c": "Guarda ferri o matite che hai in casa e stima il loro diametro in millimetri."
+    },
+    "pt": {
+     "t": "As agulhas de tricô",
+     "g": "Conhece os principais tipos de agulhas, os materiais e como os tamanhos são indicados.",
+     "p": [
+      "As agulhas direitas são clássicas para peças planas; as circulares, unidas por um cabo, tricotam em plano ou em redondo.",
+      "As de pontas duplas vêm em conjuntos para tubos pequenos como meias; há de bambu, madeira e metal.",
+      "O tamanho vem em milímetros (o diâmetro) e às vezes em números americanos; o rótulo diz qual usar."
+     ],
+     "q": "Atraem-te mais as agulhas quentes de madeira ou as de metal, lisas e rápidas?",
+     "c": "Olha para agulhas ou lápis que tenhas em casa e calcula o diâmetro em milímetros."
+    },
+    "pt_BR": {
+     "t": "As agulhas de tricô",
+     "g": "Conheça os principais tipos de agulha, os materiais e como os tamanhos são indicados.",
+     "p": [
+      "Agulhas retas são clássicas para peças planas; as circulares, unidas por um cabo, tricotam em plano ou em redondo.",
+      "As de pontas duplas vêm em jogos para tubos pequenos como meias; existem de bambu, madeira e metal.",
+      "O tamanho vem em milímetros (o diâmetro) e às vezes em números americanos; o rótulo diz qual usar."
+     ],
+     "q": "Você se atrai mais por agulhas quentinhas de madeira ou pelas de metal, lisas e rápidas?",
+     "c": "Olhe agulhas ou lápis que tenha em casa e estime o diâmetro em milímetros."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a slip knot",
+     "g": "Tie the slip knot, the first loop of almost every knitting and crochet project.",
+     "p": [
+      "Make a loop with the yarn, then pull a second loop of the working yarn up through the first one.",
+      "Pull the tail gently to tighten it onto the needle or hook, snug but still able to slide.",
+      "The tail end stays still; the working yarn is the end that comes from the ball and keeps going."
+     ],
+     "q": "Do you already know any knots, maybe from sailing, camping or tying shoes?",
+     "c": "Tie ten slip knots in a row and undo them, until you can do one without thinking."
+    },
+    "de": {
+     "t": "Die Anfangsschlinge",
+     "g": "Knüpfe die Anfangsschlinge, die erste Schlaufe fast jedes Strick- und Häkelprojekts.",
+     "p": [
+      "Leg eine Schlaufe mit dem Garn und zieh dann eine zweite Schlaufe des Arbeitsfadens durch die erste.",
+      "Zieh vorsichtig am Fadenende, damit sie sich um Nadel oder Haken legt, eng, aber noch verschiebbar.",
+      "Das Fadenende bleibt ruhig; der Arbeitsfaden ist das Ende, das vom Knäuel kommt und weiterläuft."
+     ],
+     "q": "Kennst du schon Knoten, vielleicht vom Segeln, Zelten oder Schuhebinden?",
+     "c": "Knüpfe zehn Anfangsschlingen nacheinander und löse sie wieder, bis eine ohne Nachdenken gelingt."
+    },
+    "es": {
+     "t": "Hacer un nudo corredizo",
+     "g": "Haz el nudo corredizo, el primer lazo de casi todos los proyectos de punto y ganchillo.",
+     "p": [
+      "Forma un lazo con el hilo y saca un segundo lazo del hilo de trabajo a través del primero.",
+      "Tira suavemente de la cola para ajustarlo a la aguja o al ganchillo: firme, pero que aún pueda deslizarse.",
+      "La cola se queda quieta; el hilo de trabajo es el extremo que viene del ovillo y sigue tejiendo."
+     ],
+     "q": "¿Ya sabes hacer algún nudo, quizá de navegar, de acampar o de atarte los zapatos?",
+     "c": "Haz diez nudos corredizos seguidos y deshazlos, hasta que te salga uno sin pensar."
+    },
+    "fr": {
+     "t": "Faire un nœud coulant",
+     "g": "Fais le nœud coulant, la première boucle de presque tous les projets de tricot et de crochet.",
+     "p": [
+      "Forme une boucle avec le fil, puis tire une deuxième boucle du fil de travail à travers la première.",
+      "Tire doucement sur le bout pour l'ajuster sur l'aiguille ou le crochet : serré, mais encore coulissant.",
+      "Le bout libre reste immobile ; le fil de travail est celui qui vient de la pelote et continue."
+     ],
+     "q": "Connais-tu déjà des nœuds, peut-être de voile, de camping ou de lacets ?",
+     "c": "Fais dix nœuds coulants d'affilée et défais-les, jusqu'à en réussir un sans réfléchir."
+    },
+    "it": {
+     "t": "Fare il nodo scorsoio",
+     "g": "Fai il nodo scorsoio, il primo anello di quasi tutti i progetti a maglia e all'uncinetto.",
+     "p": [
+      "Forma un anello col filo, poi tira un secondo anello del filo di lavoro attraverso il primo.",
+      "Tira piano la coda per stringerlo sul ferro o sull'uncinetto: aderente ma ancora libero di scorrere.",
+      "La coda resta ferma; il filo di lavoro è il capo che arriva dal gomitolo e continua."
+     ],
+     "q": "Conosci già qualche nodo, magari dalla vela, dal campeggio o dalle scarpe?",
+     "c": "Fai dieci nodi scorsoi di fila e scioglili, finché non te ne riesce uno senza pensarci."
+    },
+    "pt": {
+     "t": "Fazer um nó corrediço",
+     "g": "Faz o nó corrediço, o primeiro laço de quase todos os projetos de tricô e croché.",
+     "p": [
+      "Faz um laço com o fio e puxa um segundo laço do fio de trabalho através do primeiro.",
+      "Puxa suavemente a ponta para o ajustar à agulha: justo, mas ainda capaz de deslizar.",
+      "A ponta solta fica parada; o fio de trabalho é o que vem do novelo e continua."
+     ],
+     "q": "Já sabes fazer algum nó, talvez da vela, do campismo ou dos atacadores?",
+     "c": "Faz dez nós corrediços seguidos e desfá-los, até conseguires um sem pensar."
+    },
+    "pt_BR": {
+     "t": "Fazendo um nó corrediço",
+     "g": "Faça o nó corrediço, a primeira laçada de quase todo projeto de tricô e crochê.",
+     "p": [
+      "Faça uma laçada com o fio e puxe uma segunda laçada do fio de trabalho por dentro da primeira.",
+      "Puxe de leve a ponta para ajustar na agulha: firme, mas ainda deslizando.",
+      "A ponta solta fica parada; o fio de trabalho é o que vem do novelo e continua."
+     ],
+     "q": "Você já sabe fazer algum nó, talvez de barco, de acampamento ou de cadarço?",
+     "c": "Faça dez nós corrediços seguidos e desfaça, até conseguir um sem pensar."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Casting on for knitting",
+     "g": "Learn the long-tail cast-on and keep your stitches neither too tight nor too loose.",
+     "p": [
+      "Leave a tail about three times the width you want to cast on, then make a slip knot on one needle.",
+      "With the tail over your thumb and the working yarn over your index finger, scoop each new loop onto the needle.",
+      "Stitches should slide easily: if they are tight, cast on over two needles held together or relax your grip."
+     ],
+     "q": "What is your first knitting project dream, even if it seems far away now?",
+     "c": "Cast on 20 stitches, pull them off, and cast on again until the row looks even."
+    },
+    "de": {
+     "t": "Maschen anschlagen",
+     "g": "Lerne den Kreuzanschlag und halte deine Maschen weder zu fest noch zu locker.",
+     "p": [
+      "Lass ein Fadenende von etwa dreimal der gewünschten Breite und mach eine Anfangsschlinge auf eine Nadel.",
+      "Fadenende über dem Daumen, Arbeitsfaden über dem Zeigefinger: Hol jede neue Schlaufe so auf die Nadel.",
+      "Maschen sollen gut gleiten: Sind sie zu fest, schlag über zwei Nadeln zusammen an oder lockere deinen Griff."
+     ],
+     "q": "Wovon träumst du als erstem Strickprojekt, auch wenn es noch weit weg scheint?",
+     "c": "Schlag 20 Maschen an, zieh sie wieder ab und schlag erneut an, bis die Reihe gleichmäßig aussieht."
+    },
+    "es": {
+     "t": "Montar puntos",
+     "g": "Aprende el montaje de cola larga y logra puntos ni muy apretados ni muy flojos.",
+     "p": [
+      "Deja una cola de unas tres veces el ancho que quieres montar y haz un nudo corredizo en una aguja.",
+      "Con la cola sobre el pulgar y el hilo de trabajo sobre el índice, recoge cada nuevo lazo con la aguja.",
+      "Los puntos deben deslizarse fácil: si van apretados, monta sobre dos agujas juntas o relaja la mano."
+     ],
+     "q": "¿Cuál es tu proyecto de punto soñado, aunque ahora parezca lejano?",
+     "c": "Monta 20 puntos, sácalos y vuelve a montar hasta que la fila se vea uniforme."
+    },
+    "fr": {
+     "t": "Monter les mailles",
+     "g": "Apprends le montage à l'italienne simple (queue longue) avec des mailles ni trop serrées ni trop lâches.",
+     "p": [
+      "Laisse une longueur de fil d'environ trois fois la largeur voulue, puis fais un nœud coulant sur une aiguille.",
+      "Bout libre sur le pouce, fil de travail sur l'index : attrape chaque nouvelle boucle avec l'aiguille.",
+      "Les mailles doivent glisser facilement : si elles serrent, monte sur deux aiguilles tenues ensemble ou détends ta main."
+     ],
+     "q": "Quel est ton projet de tricot rêvé, même s'il paraît lointain pour l'instant ?",
+     "c": "Monte 20 mailles, retire-les, puis recommence jusqu'à obtenir un rang régulier."
+    },
+    "it": {
+     "t": "Avviare le maglie",
+     "g": "Impara l'avvio a coda lunga e ottieni maglie né troppo strette né troppo lente.",
+     "p": [
+      "Lascia una coda di circa tre volte la larghezza da avviare e fai un nodo scorsoio su un ferro.",
+      "Con la coda sul pollice e il filo di lavoro sull'indice, raccogli ogni nuovo anello con il ferro.",
+      "Le maglie devono scorrere bene: se sono strette, avvia su due ferri insieme o rilassa la presa."
+     ],
+     "q": "Qual è il progetto a maglia dei tuoi sogni, anche se ora sembra lontano?",
+     "c": "Avvia 20 maglie, sfilale e ricomincia finché il ferro non appare regolare."
+    },
+    "pt": {
+     "t": "Montar malhas",
+     "g": "Aprende a montagem de ponta longa e consegue malhas nem muito apertadas nem muito soltas.",
+     "p": [
+      "Deixa uma ponta com cerca de três vezes a largura que queres montar e faz um nó corrediço numa agulha.",
+      "Com a ponta sobre o polegar e o fio de trabalho sobre o indicador, apanha cada nova laçada com a agulha.",
+      "As malhas devem deslizar bem: se estiverem apertadas, monta sobre duas agulhas juntas ou relaxa a mão."
+     ],
+     "q": "Qual é o projeto de tricô dos teus sonhos, mesmo que pareça distante?",
+     "c": "Monta 20 malhas, tira-as e volta a montar até a carreira ficar uniforme."
+    },
+    "pt_BR": {
+     "t": "Montando os pontos",
+     "g": "Aprenda a montagem de ponta longa e deixe os pontos nem apertados nem frouxos demais.",
+     "p": [
+      "Deixe uma ponta de umas três vezes a largura que quer montar e faça um nó corrediço numa agulha.",
+      "Com a ponta sobre o polegar e o fio de trabalho sobre o indicador, pegue cada nova laçada com a agulha.",
+      "Os pontos devem deslizar fácil: se estiverem apertados, monte sobre duas agulhas juntas ou relaxe a mão."
+     ],
+     "q": "Qual é o projeto de tricô dos seus sonhos, mesmo que pareça distante agora?",
+     "c": "Monte 20 pontos, tire da agulha e monte de novo até a carreira ficar uniforme."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The knit stitch",
+     "g": "Master insert, wrap, pull through and slip off, the movement that builds all knitting.",
+     "p": [
+      "Insert the right needle into the front of the first stitch, from left to right, behind the left needle.",
+      "Wrap the working yarn around the right needle anticlockwise, then pull that new loop through the stitch.",
+      "Slip the old stitch off the left needle; the new one now sits on the right. Repeat to the end of the row."
+     ],
+     "q": "Some knitters say a little rhyme to remember the steps. Would that help you?",
+     "c": "Knit three rows on yesterday's cast-on, saying in, wrap, through, off for each stitch."
+    },
+    "de": {
+     "t": "Die rechte Masche",
+     "g": "Beherrsche einstechen, umschlingen, durchziehen, abgleiten: die Bewegung, aus der alles Stricken besteht.",
+     "p": [
+      "Stich mit der rechten Nadel von links nach rechts vorn in die erste Masche, hinter der linken Nadel entlang.",
+      "Leg den Arbeitsfaden gegen den Uhrzeigersinn um die rechte Nadel und zieh die neue Schlaufe durch die Masche.",
+      "Lass die alte Masche von der linken Nadel gleiten; die neue sitzt nun rechts. Wiederhole bis zum Reihenende."
+     ],
+     "q": "Manche sagen sich beim Stricken einen kleinen Reim auf. Würde dir das helfen?",
+     "c": "Strick drei Reihen auf deinem Anschlag von gestern und sag bei jeder Masche: rein, um, durch, runter."
+    },
+    "es": {
+     "t": "El punto del derecho",
+     "g": "Domina entrar, enrollar, sacar y soltar: el movimiento con el que se construye todo el punto.",
+     "p": [
+      "Mete la aguja derecha por delante del primer punto, de izquierda a derecha, por detrás de la aguja izquierda.",
+      "Enrolla el hilo de trabajo en la aguja derecha en sentido antihorario y saca ese nuevo lazo a través del punto.",
+      "Suelta el punto viejo de la aguja izquierda; el nuevo queda en la derecha. Repite hasta el final de la fila."
+     ],
+     "q": "Algunas personas recitan una rima para recordar los pasos. ¿Te ayudaría?",
+     "c": "Teje tres filas sobre el montaje de ayer diciendo entra, enrolla, saca, suelta en cada punto."
+    },
+    "fr": {
+     "t": "La maille endroit",
+     "g": "Maîtrise piquer, enrouler, tirer, faire glisser : le geste qui construit tout le tricot.",
+     "p": [
+      "Pique l'aiguille droite dans le devant de la première maille, de gauche à droite, derrière l'aiguille gauche.",
+      "Enroule le fil de travail autour de l'aiguille droite dans le sens inverse des aiguilles d'une montre et tire la boucle à travers.",
+      "Fais glisser l'ancienne maille de l'aiguille gauche ; la nouvelle est à droite. Répète jusqu'au bout du rang."
+     ],
+     "q": "Certaines tricoteuses récitent une petite comptine pour retenir les étapes. Cela t'aiderait-il ?",
+     "c": "Tricote trois rangs sur le montage d'hier en disant pique, enroule, tire, glisse à chaque maille."
+    },
+    "it": {
+     "t": "Il punto diritto",
+     "g": "Padroneggia inserisci, avvolgi, estrai, lascia: il movimento con cui si costruisce tutta la maglia.",
+     "p": [
+      "Inserisci il ferro destro nel davanti della prima maglia, da sinistra a destra, dietro al ferro sinistro.",
+      "Avvolgi il filo di lavoro intorno al ferro destro in senso antiorario, poi estrai il nuovo anello dalla maglia.",
+      "Lascia cadere la vecchia maglia dal ferro sinistro; la nuova è sul destro. Ripeti fino a fine ferro."
+     ],
+     "q": "Alcune persone recitano una filastrocca per ricordare i passaggi. Ti aiuterebbe?",
+     "c": "Lavora tre ferri sull'avvio di ieri dicendo dentro, avvolgi, fuori, lascia per ogni maglia."
+    },
+    "pt": {
+     "t": "A malha meia",
+     "g": "Domina enfiar, enrolar, puxar e largar: o movimento que constrói todo o tricô.",
+     "p": [
+      "Enfia a agulha direita na frente da primeira malha, da esquerda para a direita, por trás da agulha esquerda.",
+      "Enrola o fio de trabalho na agulha direita no sentido contrário ao dos ponteiros e puxa a nova laçada pela malha.",
+      "Deixa cair a malha velha da agulha esquerda; a nova fica na direita. Repete até ao fim da carreira."
+     ],
+     "q": "Há quem diga uma pequena rima para decorar os passos. Isso ajudava-te?",
+     "c": "Tricota três carreiras na montagem de ontem dizendo entra, enrola, puxa, larga em cada malha."
+    },
+    "pt_BR": {
+     "t": "O ponto meia",
+     "g": "Domine entrar, enrolar, puxar e soltar: o movimento que constrói todo o tricô.",
+     "p": [
+      "Enfie a agulha direita na frente do primeiro ponto, da esquerda para a direita, por trás da agulha esquerda.",
+      "Enrole o fio de trabalho na agulha direita no sentido anti-horário e puxe a nova laçada pelo ponto.",
+      "Solte o ponto antigo da agulha esquerda; o novo fica na direita. Repita até o fim da carreira."
+     ],
+     "q": "Tem gente que fala uma rima para lembrar os passos. Isso te ajudaria?",
+     "c": "Tricote três carreiras na montagem de ontem dizendo entra, enrola, puxa, solta em cada ponto."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Garter stitch fabric",
+     "g": "Knit every row to create a squishy, reversible fabric that lies nicely flat.",
+     "p": [
+      "Garter stitch is simply knitting every row; it looks the same on both sides, with rows of soft ridges.",
+      "It does not curl at the edges, so it is perfect for scarves, blankets and dishcloths.",
+      "Each ridge equals two rows, and garter fabric is stretchy sideways but a little shorter than you might expect."
+     ],
+     "q": "Which would you knit first in garter stitch: a dishcloth, a scarf or a coaster?",
+     "c": "Knit a small garter square of about 10 cm and admire how flat it lies."
+    },
+    "de": {
+     "t": "Krausrippen-Gestrick",
+     "g": "Strick jede Reihe rechts für ein weiches, beidseitig gleiches Gestrick, das schön flach liegt.",
+     "p": [
+      "Kraus rechts heißt einfach, jede Reihe rechts zu stricken; beide Seiten sehen gleich aus, mit weichen Rippen.",
+      "Die Kanten rollen sich nicht ein, darum ist es ideal für Schals, Decken und Spültücher.",
+      "Jede Rippe sind zwei Reihen; das Gestrick dehnt sich in der Breite und wird kürzer, als man denkt."
+     ],
+     "q": "Was würdest du zuerst kraus rechts stricken: ein Spültuch, einen Schal oder einen Untersetzer?",
+     "c": "Strick ein kleines Quadrat von etwa 10 cm kraus rechts und bewundere, wie flach es liegt."
+    },
+    "es": {
+     "t": "El punto bobo",
+     "g": "Teje todas las filas del derecho para crear un tejido esponjoso, reversible y bien plano.",
+     "p": [
+      "El punto bobo es tejer todas las filas del derecho; se ve igual por ambos lados, con surcos suaves.",
+      "No se enrolla en los bordes, así que es perfecto para bufandas, mantas y paños de cocina.",
+      "Cada surco equivale a dos filas, y el tejido estira a lo ancho pero crece algo menos a lo largo de lo que esperas."
+     ],
+     "q": "¿Qué tejerías primero en punto bobo: un paño, una bufanda o un posavasos?",
+     "c": "Teje un cuadrado de punto bobo de unos 10 cm y admira lo plano que queda."
+    },
+    "fr": {
+     "t": "Le point mousse",
+     "g": "Tricote tous les rangs à l'endroit pour un tricot moelleux, réversible et bien plat.",
+     "p": [
+      "Le point mousse, c'est tricoter tous les rangs à l'endroit ; les deux faces sont identiques, avec des côtes douces.",
+      "Il ne roule pas sur les bords, donc il est parfait pour les écharpes, les couvertures et les lavettes.",
+      "Chaque côte compte deux rangs, et le point mousse s'étire en largeur mais monte moins vite qu'on ne pense."
+     ],
+     "q": "Que tricoterais-tu d'abord au point mousse : une lavette, une écharpe ou un dessous-de-verre ?",
+     "c": "Tricote un petit carré de point mousse d'environ 10 cm et admire comme il reste plat."
+    },
+    "it": {
+     "t": "Il punto legaccio",
+     "g": "Lavora tutti i ferri a diritto per un tessuto morbido, reversibile e ben piatto.",
+     "p": [
+      "Il legaccio è lavorare tutti i ferri a diritto; è uguale sui due lati, con righe di costine morbide.",
+      "Non si arrotola sui bordi, quindi è perfetto per sciarpe, coperte e presine.",
+      "Ogni costina vale due ferri, e il legaccio si allarga in larghezza ma cresce in altezza meno di quanto pensi."
+     ],
+     "q": "Cosa lavoreresti per primo a legaccio: una presina, una sciarpa o un sottobicchiere?",
+     "c": "Lavora un quadrato a legaccio di circa 10 cm e ammira quanto resta piatto."
+    },
+    "pt": {
+     "t": "O ponto liga",
+     "g": "Tricota todas as carreiras em meia para criar um tecido fofo, reversível e bem plano.",
+     "p": [
+      "O ponto liga é tricotar todas as carreiras em meia; fica igual dos dois lados, com sulcos suaves.",
+      "Não enrola nas bordas, por isso é perfeito para cachecóis, mantas e panos de cozinha.",
+      "Cada sulco são duas carreiras, e o tecido estica na largura, mas cresce menos em altura do que esperas."
+     ],
+     "q": "O que tricotarias primeiro em ponto liga: um pano, um cachecol ou uma base para copos?",
+     "c": "Tricota um quadrado em ponto liga com cerca de 10 cm e repara como fica plano."
+    },
+    "pt_BR": {
+     "t": "O ponto tricô (ponto liga)",
+     "g": "Tricote todas as carreiras em meia para criar um tecido fofinho, reversível e bem plano.",
+     "p": [
+      "O ponto tricô é tricotar todas as carreiras em meia; fica igual dos dois lados, com gominhos suaves.",
+      "Ele não enrola nas bordas, por isso é perfeito para cachecóis, mantas e panos de prato.",
+      "Cada gominho vale duas carreiras, e o tecido estica na largura, mas cresce menos na altura do que você imagina."
+     ],
+     "q": "O que você tricotaria primeiro em ponto tricô: um pano, um cachecol ou um porta-copos?",
+     "c": "Tricote um quadrado em ponto tricô de uns 10 cm e repare como ele fica plano."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting rows and stitches",
+     "g": "Learn to read your knitting so you always know where you are.",
+     "p": [
+      "On the needle, each stitch is a loop sitting over it: count loops, not gaps, touching each one with a fingertip.",
+      "In garter stitch, count the ridges on one side and double the number to get the rows.",
+      "A stitch marker or a scrap of contrast yarn every 10 stitches makes counting long rows quick and safe."
+     ],
+     "q": "Do you like counting things, or do you prefer to go by eye?",
+     "c": "Count the stitches and rows of your garter square and write the numbers on a slip of paper."
+    },
+    "de": {
+     "t": "Reihen und Maschen zählen",
+     "g": "Lerne, dein Gestrick zu lesen, damit du immer weißt, wo du bist.",
+     "p": [
+      "Auf der Nadel ist jede Masche eine Schlaufe über ihr: Zähle Schlaufen, nicht Lücken, und tippe jede an.",
+      "Bei kraus rechts zählst du die Rippen einer Seite und verdoppelst die Zahl, das sind die Reihen.",
+      "Ein Maschenmarkierer oder ein Kontrastfaden alle 10 Maschen macht das Zählen langer Reihen schnell und sicher."
+     ],
+     "q": "Zählst du gern, oder verlässt du dich lieber auf dein Auge?",
+     "c": "Zähl Maschen und Reihen deines Krausquadrats und schreib die Zahlen auf einen Zettel."
+    },
+    "es": {
+     "t": "Contar filas y puntos",
+     "g": "Aprende a leer tu tejido para saber siempre por dónde vas.",
+     "p": [
+      "En la aguja, cada punto es un lazo que la abraza: cuenta lazos, no huecos, tocando cada uno con la yema.",
+      "En punto bobo, cuenta los surcos de un lado y multiplica por dos para saber las filas.",
+      "Un marcador o una hebra de otro color cada 10 puntos hace que contar filas largas sea rápido y seguro."
+     ],
+     "q": "¿Te gusta contar cosas o prefieres guiarte a ojo?",
+     "c": "Cuenta los puntos y filas de tu cuadrado de punto bobo y apunta los números en un papel."
+    },
+    "fr": {
+     "t": "Compter rangs et mailles",
+     "g": "Apprends à lire ton tricot pour savoir toujours où tu en es.",
+     "p": [
+      "Sur l'aiguille, chaque maille est une boucle posée dessus : compte les boucles, pas les espaces, en touchant chacune.",
+      "Au point mousse, compte les côtes d'une face et multiplie par deux pour obtenir le nombre de rangs.",
+      "Un marqueur ou un bout de fil contrasté toutes les 10 mailles rend le comptage des longs rangs rapide et sûr."
+     ],
+     "q": "Aimes-tu compter, ou préfères-tu te fier à ton œil ?",
+     "c": "Compte les mailles et les rangs de ton carré au point mousse et note les chiffres sur un papier."
+    },
+    "it": {
+     "t": "Contare ferri e maglie",
+     "g": "Impara a leggere il tuo lavoro per sapere sempre a che punto sei.",
+     "p": [
+      "Sul ferro ogni maglia è un anello che lo avvolge: conta gli anelli, non gli spazi, toccandoli con un dito.",
+      "A legaccio conta le costine su un lato e moltiplica per due per sapere i ferri lavorati.",
+      "Un segnapunti o un filo di colore diverso ogni 10 maglie rende veloce e sicuro contare ferri lunghi."
+     ],
+     "q": "Ti piace contare le cose o preferisci andare a occhio?",
+     "c": "Conta maglie e ferri del tuo quadrato a legaccio e scrivi i numeri su un foglietto."
+    },
+    "pt": {
+     "t": "Contar carreiras e malhas",
+     "g": "Aprende a ler o teu tricô para saberes sempre onde estás.",
+     "p": [
+      "Na agulha, cada malha é uma laçada pousada nela: conta laçadas, não espaços, tocando em cada uma com o dedo.",
+      "No ponto liga, conta os sulcos de um lado e multiplica por dois para saber as carreiras.",
+      "Um marcador ou um fio de outra cor a cada 10 malhas torna rápida e segura a contagem de carreiras longas."
+     ],
+     "q": "Gostas de contar coisas ou preferes ir a olho?",
+     "c": "Conta as malhas e carreiras do teu quadrado em ponto liga e escreve os números num papel."
+    },
+    "pt_BR": {
+     "t": "Contando carreiras e pontos",
+     "g": "Aprenda a ler seu tricô para sempre saber onde está.",
+     "p": [
+      "Na agulha, cada ponto é uma laçada apoiada nela: conte laçadas, não espaços, tocando cada uma com o dedo.",
+      "No ponto tricô, conte os gominhos de um lado e multiplique por dois para saber as carreiras.",
+      "Um marcador ou um fio de outra cor a cada 10 pontos deixa a contagem de carreiras longas rápida e segura."
+     ],
+     "q": "Você gosta de contar coisas ou prefere ir no olho?",
+     "c": "Conte os pontos e carreiras do seu quadrado em ponto tricô e anote os números num papel."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: paper and first stitches",
+     "g": "Look back at paper crafts and first knitting steps, and combine both in a mini project.",
+     "p": [
+      "You learned tools, safety and glues, then folding, cutting, origami, cards, collage, quilling and decoupage.",
+      "You met yarn and needles, tied a slip knot, cast on and knitted garter stitch while counting rows.",
+      "Mixing crafts is normal: a knitted square can become the front of a card, a coaster or a little gift."
+     ],
+     "q": "Which day so far did you enjoy most, and which felt hardest?",
+     "c": "Glue a tiny knitted or yarn piece onto a handmade card as a thank-you to yourself."
+    },
+    "de": {
+     "t": "Rückblick: Papier und erste Maschen",
+     "g": "Blick zurück auf Papierhandwerk und erste Strickschritte und verbinde beides in einem Mini-Projekt.",
+     "p": [
+      "Du hast Werkzeug, Sicherheit und Kleber kennengelernt, dann Falten, Schneiden, Origami, Karten, Collage, Quilling, Decoupage.",
+      "Du hast Garn und Nadeln entdeckt, eine Anfangsschlinge geknüpft, angeschlagen und kraus rechts gestrickt.",
+      "Handwerke zu mischen ist normal: Ein Strickquadrat kann Kartenvorderseite, Untersetzer oder kleines Geschenk werden."
+     ],
+     "q": "Welcher Tag hat dir bisher am meisten Spaß gemacht, und welcher war am schwersten?",
+     "c": "Klebe ein kleines Strick- oder Garnstück auf eine selbstgemachte Karte, als Dankeschön an dich selbst."
+    },
+    "es": {
+     "t": "Repaso: papel y primeros puntos",
+     "g": "Repasa las manualidades de papel y los primeros pasos de punto, y combina ambos en un mini proyecto.",
+     "p": [
+      "Aprendiste herramientas, seguridad y pegamentos, luego doblar, cortar, origami, tarjetas, collage, quilling y decoupage.",
+      "Conociste el hilo y las agujas, hiciste un nudo corredizo, montaste puntos y tejiste punto bobo contando filas.",
+      "Mezclar técnicas es normal: un cuadrado tejido puede ser el frente de una tarjeta, un posavasos o un regalito."
+     ],
+     "q": "¿Qué día has disfrutado más hasta ahora y cuál te costó más?",
+     "c": "Pega un trocito tejido o de lana en una tarjeta hecha a mano como regalo de agradecimiento para ti."
+    },
+    "fr": {
+     "t": "Bilan : papier et premières mailles",
+     "g": "Reviens sur le papier et les premiers pas en tricot, puis combine les deux dans un mini-projet.",
+     "p": [
+      "Tu as vu outils, sécurité et colles, puis pliage, découpe, origami, cartes, collage, quilling et serviettage.",
+      "Tu as découvert fils et aiguilles, fait un nœud coulant, monté des mailles et tricoté au point mousse en comptant.",
+      "Mélanger les techniques est normal : un carré tricoté peut devenir le recto d'une carte, un dessous-de-verre ou un cadeau."
+     ],
+     "q": "Quel jour as-tu préféré jusqu'ici, et lequel t'a semblé le plus difficile ?",
+     "c": "Colle un petit morceau tricoté ou de fil sur une carte faite main, comme un merci à toi-même."
+    },
+    "it": {
+     "t": "Ripasso: carta e prime maglie",
+     "g": "Ripercorri i lavori in carta e i primi passi a maglia e uniscili in un mini progetto.",
+     "p": [
+      "Hai visto attrezzi, sicurezza e colle, poi piegatura, taglio, origami, biglietti, collage, quilling e decoupage.",
+      "Hai conosciuto filati e ferri, fatto il nodo scorsoio, avviato le maglie e lavorato a legaccio contando i ferri.",
+      "Mescolare le tecniche è normale: un quadrato a maglia può diventare il fronte di un biglietto, un sottobicchiere o un regalo."
+     ],
+     "q": "Quale giorno ti è piaciuto di più finora, e quale ti è sembrato più difficile?",
+     "c": "Incolla un pezzetto a maglia o di filato su un biglietto fatto a mano, come grazie a te stesso."
+    },
+    "pt": {
+     "t": "Revisão: papel e primeiras malhas",
+     "g": "Revê o artesanato em papel e os primeiros passos no tricô, e junta os dois num mini projeto.",
+     "p": [
+      "Aprendeste ferramentas, segurança e colas, depois dobrar, cortar, origami, postais, colagem, quilling e decoupage.",
+      "Conheceste fios e agulhas, fizeste um nó corrediço, montaste malhas e tricotaste ponto liga a contar carreiras.",
+      "Misturar técnicas é normal: um quadrado de tricô pode ser a frente de um postal, uma base para copos ou um presente."
+     ],
+     "q": "De que dia gostaste mais até agora, e qual te pareceu mais difícil?",
+     "c": "Cola um pedacinho de tricô ou de fio num postal feito à mão, como um obrigado a ti mesmo."
+    },
+    "pt_BR": {
+     "t": "Revisão: papel e primeiros pontos",
+     "g": "Relembre o artesanato em papel e os primeiros passos no tricô, e junte os dois num mini projeto.",
+     "p": [
+      "Você aprendeu ferramentas, segurança e colas, depois dobrar, cortar, origami, cartões, colagem, quilling e decoupage.",
+      "Conheceu fios e agulhas, fez o nó corrediço, montou pontos e tricotou ponto tricô contando as carreiras.",
+      "Misturar técnicas é normal: um quadrado de tricô pode virar frente de cartão, porta-copos ou um presentinho."
+     ],
+     "q": "De qual dia você mais gostou até agora, e qual achou mais difícil?",
+     "c": "Cole um pedacinho de tricô ou de fio num cartão feito à mão, como um obrigado para você mesmo."
+    }
+   }
+  }
+ ]
+}

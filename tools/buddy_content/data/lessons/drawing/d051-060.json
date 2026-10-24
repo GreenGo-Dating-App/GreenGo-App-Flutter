@@ -1,0 +1,835 @@
+{
+ "topic": "drawing",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing textures: stone and brick",
+     "g": "Draw rough surfaces, cracks and repeating patterns without drawing every detail.",
+     "p": [
+      "Suggest texture: detail a few bricks or stones fully and let the rest fade into simple shapes.",
+      "Use broken, irregular lines and small speckles for a rough, weathered surface.",
+      "Dark mortar lines and cast shadows under each brick make a wall look solid."
+     ],
+     "q": "Is there an old wall or stone path near you that you find beautiful?",
+     "c": "Draw a small section of brick wall, detailing three bricks fully and only suggesting the others."
+    },
+    "de": {
+     "t": "Texturen: Stein und Ziegel",
+     "g": "Raue Flächen, Risse und Wiederholungsmuster zeichnen, ohne jedes Detail.",
+     "p": [
+      "Deute Textur an: ein paar Steine ganz ausarbeiten, den Rest in einfache Formen auslaufen lassen.",
+      "Gebrochene, unregelmäßige Linien und kleine Sprenkel ergeben eine raue, verwitterte Fläche.",
+      "Dunkle Fugen und Schatten unter jedem Ziegel lassen eine Mauer massiv wirken."
+     ],
+     "q": "Gibt es in deiner Nähe eine alte Mauer oder einen Steinweg, den du schön findest?",
+     "c": "Zeichne ein Stück Ziegelmauer, arbeite drei Ziegel ganz aus und deute die übrigen nur an."
+    },
+    "es": {
+     "t": "Texturas: piedra y ladrillo",
+     "g": "Dibujar superficies rugosas, grietas y patrones repetidos sin dibujar cada detalle.",
+     "p": [
+      "Sugiere la textura: detalla del todo unos pocos ladrillos o piedras y deja que el resto se simplifique.",
+      "Usa líneas quebradas e irregulares y puntitos para una superficie rugosa y gastada.",
+      "Las juntas oscuras y la sombra bajo cada ladrillo hacen que un muro parezca sólido."
+     ],
+     "q": "¿Hay algún muro antiguo o camino de piedra cerca que te parezca bonito?",
+     "c": "Dibuja un trozo de pared de ladrillo, detalla tres ladrillos del todo y solo sugiere los demás."
+    },
+    "fr": {
+     "t": "Textures : pierre et brique",
+     "g": "Dessiner surfaces rugueuses, fissures et motifs répétés sans tout détailler.",
+     "p": [
+      "Suggère la texture : détaille quelques briques ou pierres et laisse le reste se simplifier.",
+      "Des traits brisés et irréguliers et de petits points donnent une surface rugueuse et usée.",
+      "Des joints foncés et une ombre sous chaque brique rendent un mur solide."
+     ],
+     "q": "Y a-t-il près de chez toi un vieux mur ou un chemin de pierre que tu trouves beau ?",
+     "c": "Dessine un pan de mur en briques, détaille trois briques et suggère seulement les autres."
+    },
+    "it": {
+     "t": "Texture: pietra e mattoni",
+     "g": "Disegnare superfici ruvide, crepe e motivi ripetuti senza disegnare ogni dettaglio.",
+     "p": [
+      "Suggerisci la texture: definisci bene pochi mattoni o sassi e lascia il resto più semplice.",
+      "Usa linee spezzate e irregolari e piccoli puntini per una superficie ruvida e consumata.",
+      "Fughe scure e ombre sotto ogni mattone rendono solido un muro."
+     ],
+     "q": "C'è un vecchio muro o un sentiero di pietra vicino a te che trovi bello?",
+     "c": "Disegna un pezzo di muro di mattoni, definisci bene tre mattoni e accenna soltanto gli altri."
+    },
+    "pt": {
+     "t": "Texturas: pedra e tijolo",
+     "g": "Desenhar superfícies rugosas, fendas e padrões repetidos sem desenhar cada detalhe.",
+     "p": [
+      "Sugere a textura: detalha bem alguns tijolos ou pedras e deixa o resto simplificar-se.",
+      "Usa linhas partidas e irregulares e pequenos pontos para uma superfície rugosa e gasta.",
+      "Juntas escuras e sombra debaixo de cada tijolo tornam uma parede sólida."
+     ],
+     "q": "Há perto de ti algum muro antigo ou calçada de pedra que aches bonito?",
+     "c": "Desenha um pedaço de parede de tijolo, detalha três tijolos e apenas sugere os outros."
+    },
+    "pt_BR": {
+     "t": "Texturas: pedra e tijolo",
+     "g": "Desenhar superfícies ásperas, rachaduras e padrões repetidos sem desenhar cada detalhe.",
+     "p": [
+      "Sugira a textura: detalhe bem alguns tijolos ou pedras e deixe o resto mais simples.",
+      "Use linhas quebradas e irregulares e pontinhos para uma superfície áspera e gasta.",
+      "Rejuntes escuros e sombra embaixo de cada tijolo deixam a parede sólida."
+     ],
+     "q": "Tem algum muro antigo ou calçada de pedra perto de você que você acha bonito?",
+     "c": "Desenhe um pedaço de parede de tijolos, detalhe três tijolos e só sugira os outros."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple still life",
+     "g": "Arrange three objects, find the big shapes and add value step by step.",
+     "p": [
+      "Choose objects of different heights and textures, overlap them slightly and light them from one side.",
+      "Block in the big shapes and their proportions first, then the shadow shapes.",
+      "Shade from general to specific: big value areas first, details and textures last."
+     ],
+     "q": "Which three objects from your home would make a nice still life?",
+     "c": "Set up three objects with one lamp and draw a still life in 20 to 30 minutes."
+    },
+    "de": {
+     "t": "Ein einfaches Stillleben",
+     "g": "Drei Objekte arrangieren, die großen Formen finden und Tonwerte Schritt für Schritt aufbauen.",
+     "p": [
+      "Wähl Objekte unterschiedlicher Höhe und Textur, lass sie sich leicht überschneiden und beleuchte von einer Seite.",
+      "Leg zuerst die großen Formen und Proportionen an, dann die Schattenformen.",
+      "Schattiere vom Groben ins Feine: erst große Tonflächen, zuletzt Details und Texturen."
+     ],
+     "q": "Welche drei Gegenstände bei dir würden ein schönes Stillleben ergeben?",
+     "c": "Stell drei Objekte mit einer Lampe auf und zeichne ein Stillleben in 20 bis 30 Minuten."
+    },
+    "es": {
+     "t": "Un bodegón sencillo",
+     "g": "Colocar tres objetos, encontrar las formas grandes y añadir valor paso a paso.",
+     "p": [
+      "Elige objetos de alturas y texturas distintas, solápalos un poco e ilumínalos desde un lado.",
+      "Encaja primero las formas grandes y sus proporciones, luego las formas de sombra.",
+      "Sombrea de lo general a lo concreto: primero las grandes zonas de valor, al final detalles y texturas."
+     ],
+     "q": "¿Qué tres objetos de tu casa formarían un bonito bodegón?",
+     "c": "Coloca tres objetos con una lámpara y dibuja un bodegón en 20 a 30 minutos."
+    },
+    "fr": {
+     "t": "Une nature morte simple",
+     "g": "Disposer trois objets, trouver les grandes formes et ajouter les valeurs pas à pas.",
+     "p": [
+      "Choisis des objets de hauteurs et textures variées, fais-les se chevaucher et éclaire d'un côté.",
+      "Place d'abord les grandes formes et leurs proportions, puis les formes d'ombre.",
+      "Ombre du général au particulier : grandes zones de valeur d'abord, détails et textures à la fin."
+     ],
+     "q": "Quels trois objets de chez toi feraient une jolie nature morte ?",
+     "c": "Installe trois objets avec une lampe et dessine une nature morte en 20 à 30 minutes."
+    },
+    "it": {
+     "t": "Una natura morta semplice",
+     "g": "Disporre tre oggetti, trovare le forme grandi e aggiungere i valori passo dopo passo.",
+     "p": [
+      "Scegli oggetti di altezze e texture diverse, sovrapponili un po' e illuminali da un lato.",
+      "Imposta prima le forme grandi e le proporzioni, poi le forme d'ombra.",
+      "Ombreggia dal generale al particolare: prima le grandi zone di valore, alla fine dettagli e texture."
+     ],
+     "q": "Quali tre oggetti di casa tua formerebbero una bella natura morta?",
+     "c": "Disponi tre oggetti con una lampada e disegna una natura morta in 20-30 minuti."
+    },
+    "pt": {
+     "t": "Uma natureza-morta simples",
+     "g": "Dispor três objetos, encontrar as formas grandes e juntar valores passo a passo.",
+     "p": [
+      "Escolhe objetos de alturas e texturas diferentes, sobrepõe-nos um pouco e ilumina-os de um lado.",
+      "Marca primeiro as formas grandes e as proporções, depois as formas de sombra.",
+      "Sombreia do geral para o particular: primeiro as grandes zonas de valor, no fim detalhes e texturas."
+     ],
+     "q": "Que três objetos da tua casa dariam uma bonita natureza-morta?",
+     "c": "Monta três objetos com um candeeiro e desenha uma natureza-morta em 20 a 30 minutos."
+    },
+    "pt_BR": {
+     "t": "Uma natureza-morta simples",
+     "g": "Arrumar três objetos, achar as formas grandes e acrescentar valores passo a passo.",
+     "p": [
+      "Escolha objetos de alturas e texturas diferentes, sobreponha um pouco e ilumine de um lado.",
+      "Marque primeiro as formas grandes e as proporções, depois as formas de sombra.",
+      "Sombreie do geral para o específico: primeiro as grandes áreas de valor, por último detalhes e texturas."
+     ],
+     "q": "Quais três objetos da sua casa dariam uma natureza-morta bonita?",
+     "c": "Monte três objetos com uma luminária e desenhe uma natureza-morta em 20 a 30 minutos."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing with charcoal",
+     "g": "Use vine and compressed charcoal for bold darks, working big and loose.",
+     "p": [
+      "Vine charcoal is light and easy to erase; compressed charcoal gives rich, deep blacks.",
+      "Work large, on paper at least A3, and use your whole arm.",
+      "Smudge tones with a cloth and lift lights with a kneaded eraser, then spray fixative or protect the page."
+     ],
+     "q": "Do you enjoy getting your hands a little messy when you create?",
+     "c": "On a large sheet, draw a pot or fruit with vine charcoal, then add the darkest shadows with compressed charcoal."
+    },
+    "de": {
+     "t": "Zeichnen mit Kohle",
+     "g": "Weidenkohle und Presskohle für kräftige Dunkeltöne nutzen und groß und locker arbeiten.",
+     "p": [
+      "Weidenkohle ist hell und leicht zu radieren, Presskohle gibt sattes, tiefes Schwarz.",
+      "Arbeite groß, auf mindestens A3, und nutze den ganzen Arm.",
+      "Verwisch Töne mit einem Tuch, hol Lichter mit dem Knetradierer heraus und fixiere oder schütze das Blatt."
+     ],
+     "q": "Magst du es, beim Gestalten ein bisschen schmutzige Hände zu bekommen?",
+     "c": "Zeichne auf großem Blatt einen Topf oder eine Frucht mit Weidenkohle, die tiefsten Schatten mit Presskohle."
+    },
+    "es": {
+     "t": "Dibujar con carboncillo",
+     "g": "Usar carboncillo de sauce y comprimido para oscuros intensos, trabajando grande y suelto.",
+     "p": [
+      "El carboncillo de sauce es suave y se borra fácil; el comprimido da negros profundos.",
+      "Trabaja en grande, en papel de A3 o más, y usa todo el brazo.",
+      "Difumina con un trapo, saca luces con la goma moldeable y luego fija o protege la hoja."
+     ],
+     "q": "¿Te gusta mancharte un poco las manos cuando creas?",
+     "c": "En una hoja grande, dibuja una maceta o fruta con carboncillo de sauce y añade las sombras más oscuras con comprimido."
+    },
+    "fr": {
+     "t": "Dessiner au fusain",
+     "g": "Utiliser fusain et fusain compressé pour des noirs intenses, en travaillant grand et libre.",
+     "p": [
+      "Le fusain est léger et s'efface facilement ; le fusain compressé donne des noirs profonds.",
+      "Travaille grand, sur du papier A3 minimum, et utilise tout ton bras.",
+      "Estompe au chiffon, reprends les lumières à la mie de pain, puis fixe ou protège la feuille."
+     ],
+     "q": "Aimes-tu te salir un peu les mains quand tu crées ?",
+     "c": "Sur une grande feuille, dessine un pot ou un fruit au fusain, puis ajoute les ombres les plus foncées au compressé."
+    },
+    "it": {
+     "t": "Disegnare a carboncino",
+     "g": "Usare carboncino di salice e compresso per scuri intensi, lavorando in grande e sciolto.",
+     "p": [
+      "Il carboncino di salice è leggero e si cancella facilmente; il compresso dà neri profondi.",
+      "Lavora in grande, su carta almeno A3, e usa tutto il braccio.",
+      "Sfuma con un panno, recupera le luci con la gomma pane e poi fissa o proteggi il foglio."
+     ],
+     "q": "Ti piace sporcarti un po' le mani quando crei?",
+     "c": "Su un foglio grande, disegna un vaso o un frutto col carboncino di salice e aggiungi le ombre più scure col compresso."
+    },
+    "pt": {
+     "t": "Desenhar a carvão",
+     "g": "Usar carvão vegetal e carvão comprimido para escuros fortes, trabalhando em grande e solto.",
+     "p": [
+      "O carvão vegetal é leve e apaga-se facilmente; o comprimido dá pretos profundos.",
+      "Trabalha em grande, em papel A3 ou maior, e usa o braço todo.",
+      "Esbate com um pano, tira luzes com a borracha moldável e depois fixa ou protege a folha."
+     ],
+     "q": "Gostas de sujar um pouco as mãos quando crias?",
+     "c": "Numa folha grande, desenha um vaso ou fruta a carvão vegetal e junta as sombras mais escuras com o comprimido."
+    },
+    "pt_BR": {
+     "t": "Desenhando com carvão",
+     "g": "Usar carvão vegetal e carvão prensado para escuros fortes, trabalhando grande e solto.",
+     "p": [
+      "O carvão vegetal é leve e fácil de apagar; o prensado dá pretos profundos.",
+      "Trabalhe grande, em papel A3 ou maior, e use o braço todo.",
+      "Esfume com um pano, tire luzes com a limpa-tipos e depois fixe ou proteja a folha."
+     ],
+     "q": "Você curte sujar um pouco as mãos quando cria?",
+     "c": "Numa folha grande, desenhe um vaso ou fruta com carvão vegetal e acrescente as sombras mais escuras com o prensado."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing with ink pens",
+     "g": "Draw with fineliners and brush pens and learn to commit to lines without erasing.",
+     "p": [
+      "Fineliners give even lines in fixed widths; brush pens change from thin to thick with pressure.",
+      "Ink cannot be erased, so plan with a very light pencil sketch or embrace imperfect lines.",
+      "Build tone with hatching, cross-hatching and stippling, which you already know."
+     ],
+     "q": "Does the idea of drawing without an eraser excite you or make you nervous?",
+     "c": "Draw a plant or cup directly in ink, no pencil first, and turn any mistake into part of the drawing."
+    },
+    "de": {
+     "t": "Zeichnen mit Tuschestiften",
+     "g": "Mit Finelinern und Pinselstiften zeichnen und lernen, Linien ohne Radieren zu setzen.",
+     "p": [
+      "Fineliner geben gleichmäßige Linien fester Breite, Pinselstifte wechseln je nach Druck von dünn zu dick.",
+      "Tusche lässt sich nicht radieren: Plane mit ganz leichter Bleistiftskizze oder akzeptiere unperfekte Linien.",
+      "Bau Töne mit Schraffur, Kreuzschraffur und Punktieren auf, die du schon kennst."
+     ],
+     "q": "Reizt dich Zeichnen ohne Radierer, oder macht es dich nervös?",
+     "c": "Zeichne eine Pflanze oder Tasse direkt mit Tusche, ohne Vorzeichnung, und mach Fehler zum Teil des Bildes."
+    },
+    "es": {
+     "t": "Dibujar con rotuladores",
+     "g": "Dibujar con rotuladores calibrados y de punta pincel y aprender a comprometerse con la línea sin borrar.",
+     "p": [
+      "Los calibrados dan líneas de ancho fijo; los de punta pincel van de fino a grueso según la presión.",
+      "La tinta no se borra: planifica con un boceto a lápiz muy suave o acepta las líneas imperfectas.",
+      "Crea tono con trama, trama cruzada y puntillismo, que ya conoces."
+     ],
+     "q": "¿La idea de dibujar sin goma te emociona o te pone nervioso?",
+     "c": "Dibuja una planta o taza directamente en tinta, sin lápiz, y convierte cualquier error en parte del dibujo."
+    },
+    "fr": {
+     "t": "Dessiner au feutre",
+     "g": "Dessiner aux feutres fins et feutres pinceaux et apprendre à assumer ses traits sans gommer.",
+     "p": [
+      "Les feutres fins donnent des traits d'épaisseur fixe ; les feutres pinceaux varient du fin à l'épais selon la pression.",
+      "L'encre ne s'efface pas : prépare un crayonné très léger ou accepte les traits imparfaits.",
+      "Monte le ton avec hachures, hachures croisées et pointillé, que tu connais déjà."
+     ],
+     "q": "Dessiner sans gomme, ça t'enthousiasme ou ça te stresse ?",
+     "c": "Dessine une plante ou une tasse directement à l'encre, sans crayon, et intègre chaque erreur au dessin."
+    },
+    "it": {
+     "t": "Disegnare a penna",
+     "g": "Disegnare con fineliner e pennarelli a pennello e imparare a impegnarsi nella linea senza cancellare.",
+     "p": [
+      "I fineliner danno linee di spessore fisso; i pennarelli a pennello passano da sottile a spesso con la pressione.",
+      "L'inchiostro non si cancella: prepara uno schizzo a matita leggerissimo o accetta linee imperfette.",
+      "Costruisci il tono con tratteggio, tratteggio incrociato e puntinismo, che già conosci."
+     ],
+     "q": "L'idea di disegnare senza gomma ti entusiasma o ti mette ansia?",
+     "c": "Disegna una pianta o una tazza direttamente a penna, senza matita, e trasforma ogni errore in parte del disegno."
+    },
+    "pt": {
+     "t": "Desenhar a caneta",
+     "g": "Desenhar com canetas de ponta fina e de ponta pincel e aprender a assumir as linhas sem apagar.",
+     "p": [
+      "As canetas de ponta fina dão linhas de espessura fixa; as de pincel vão de fino a grosso com a pressão.",
+      "A tinta não se apaga: planeia com um esboço a lápis muito leve ou aceita linhas imperfeitas.",
+      "Cria tom com tracejado, tracejado cruzado e pontilhismo, que já conheces."
+     ],
+     "q": "A ideia de desenhar sem borracha entusiasma-te ou deixa-te nervoso?",
+     "c": "Desenha uma planta ou chávena diretamente a caneta, sem lápis, e torna cada erro parte do desenho."
+    },
+    "pt_BR": {
+     "t": "Desenhando com canetas",
+     "g": "Desenhar com canetas nanquim e brush pens e aprender a assumir as linhas sem apagar.",
+     "p": [
+      "Canetas nanquim dão linhas de espessura fixa; brush pens vão de fino a grosso conforme a pressão.",
+      "Tinta não apaga: planeje com um esboço a lápis bem leve ou aceite linhas imperfeitas.",
+      "Crie tom com hachura, hachura cruzada e pontilhismo, que você já conhece."
+     ],
+     "q": "A ideia de desenhar sem borracha anima você ou deixa nervoso?",
+     "c": "Desenhe uma planta ou caneca direto na caneta, sem lápis, e transforme qualquer erro em parte do desenho."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing with coloured pencils",
+     "g": "Layer coloured pencils with light pressure and build colour slowly.",
+     "p": [
+      "Start with light pressure and many thin layers; heavy pressure early seals the paper's tooth.",
+      "Mix colours on the paper by layering, like yellow over blue to make green.",
+      "Shadows look richer with a complementary or darker colour layered in, not only black."
+     ],
+     "q": "What colour do you find yourself choosing again and again?",
+     "c": "Draw a piece of fruit with at least four layered colours, using light pressure throughout."
+    },
+    "de": {
+     "t": "Zeichnen mit Buntstiften",
+     "g": "Buntstifte mit leichtem Druck schichten und Farbe langsam aufbauen.",
+     "p": [
+      "Beginn mit leichtem Druck und vielen dünnen Lagen, früher starker Druck verschließt die Papierkörnung.",
+      "Misch Farben auf dem Papier durch Schichten, etwa Gelb über Blau für Grün.",
+      "Schatten wirken satter mit einer Komplementär- oder dunkleren Farbe statt nur Schwarz."
+     ],
+     "q": "Zu welcher Farbe greifst du immer wieder?",
+     "c": "Zeichne eine Frucht mit mindestens vier geschichteten Farben, durchgehend mit leichtem Druck."
+    },
+    "es": {
+     "t": "Dibujar con lápices de colores",
+     "g": "Superponer lápices de colores con presión suave y construir el color poco a poco.",
+     "p": [
+      "Empieza con presión suave y muchas capas finas; apretar pronto tapa el grano del papel.",
+      "Mezcla colores en el papel superponiéndolos, como amarillo sobre azul para lograr verde.",
+      "Las sombras quedan más ricas con un color complementario o más oscuro, no solo negro."
+     ],
+     "q": "¿Qué color acabas eligiendo una y otra vez?",
+     "c": "Dibuja una fruta con al menos cuatro colores superpuestos, siempre con presión suave."
+    },
+    "fr": {
+     "t": "Dessiner aux crayons de couleur",
+     "g": "Superposer les crayons de couleur avec une pression légère et monter la couleur lentement.",
+     "p": [
+      "Commence léger avec de nombreuses couches fines ; appuyer tôt bouche le grain du papier.",
+      "Mélange les couleurs sur la feuille en les superposant, comme du jaune sur du bleu pour du vert.",
+      "Les ombres sont plus riches avec une couleur complémentaire ou plus foncée, pas seulement du noir."
+     ],
+     "q": "Quelle couleur choisis-tu encore et encore ?",
+     "c": "Dessine un fruit avec au moins quatre couleurs superposées, toujours avec une pression légère."
+    },
+    "it": {
+     "t": "Disegnare con le matite colorate",
+     "g": "Sovrapporre le matite colorate con pressione leggera e costruire il colore piano piano.",
+     "p": [
+      "Parti con pressione leggera e tanti strati sottili; premere subito chiude la grana della carta.",
+      "Mescola i colori sul foglio sovrapponendoli, come giallo sopra blu per avere il verde.",
+      "Le ombre sono più ricche con un colore complementare o più scuro, non solo col nero."
+     ],
+     "q": "Quale colore finisci per scegliere sempre?",
+     "c": "Disegna un frutto con almeno quattro colori sovrapposti, sempre con pressione leggera."
+    },
+    "pt": {
+     "t": "Desenhar com lápis de cor",
+     "g": "Sobrepor lápis de cor com pressão leve e construir a cor devagar.",
+     "p": [
+      "Começa com pressão leve e muitas camadas finas; carregar cedo tapa o grão do papel.",
+      "Mistura cores no papel sobrepondo-as, como amarelo sobre azul para fazer verde.",
+      "As sombras ficam mais ricas com uma cor complementar ou mais escura, não só com preto."
+     ],
+     "q": "Que cor acabas por escolher vezes sem conta?",
+     "c": "Desenha uma fruta com pelo menos quatro cores sobrepostas, sempre com pressão leve."
+    },
+    "pt_BR": {
+     "t": "Desenhando com lápis de cor",
+     "g": "Sobrepor lápis de cor com pressão leve e construir a cor aos poucos.",
+     "p": [
+      "Comece com pressão leve e várias camadas finas; apertar cedo fecha a textura do papel.",
+      "Misture cores no papel sobrepondo, como amarelo sobre azul para fazer verde.",
+      "Sombras ficam mais ricas com uma cor complementar ou mais escura, não só com preto."
+     ],
+     "q": "Que cor você acaba escolhendo sempre?",
+     "c": "Desenhe uma fruta com pelo menos quatro cores sobrepostas, sempre com pressão leve."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toned paper drawing",
+     "g": "Draw on grey or tan paper with a dark pencil for shadows and white for highlights.",
+     "p": [
+      "The paper itself is your middle value, so you only add darks and lights.",
+      "Use white pencil or chalk sparingly, only on the brightest planes and highlights.",
+      "Keep darks and whites apart; mixing them on the page makes a dull grey."
+     ],
+     "q": "Have you ever seen drawings on coloured paper that looked especially elegant?",
+     "c": "On grey or brown paper, draw an egg or a ball with dark pencil shadows and a few white highlights."
+    },
+    "de": {
+     "t": "Zeichnen auf Tonpapier",
+     "g": "Auf grauem oder braunem Papier mit dunklem Stift für Schatten und Weiß für Lichter zeichnen.",
+     "p": [
+      "Das Papier ist dein Mittelton, du fügst nur Dunkles und Helles hinzu.",
+      "Setz Weißstift oder Kreide sparsam ein, nur auf den hellsten Flächen und Glanzlichtern.",
+      "Halt Dunkel und Weiß getrennt, vermischt auf dem Blatt ergibt sich ein stumpfes Grau."
+     ],
+     "q": "Hast du schon Zeichnungen auf farbigem Papier gesehen, die besonders edel wirkten?",
+     "c": "Zeichne auf grauem oder braunem Papier ein Ei oder einen Ball mit dunklen Schatten und wenigen weißen Lichtern."
+    },
+    "es": {
+     "t": "Dibujo en papel tintado",
+     "g": "Dibujar en papel gris o crema con lápiz oscuro para sombras y blanco para luces.",
+     "p": [
+      "El propio papel es tu valor medio, así que solo añades oscuros y claros.",
+      "Usa el lápiz o tiza blanca con moderación, solo en los planos más iluminados y los brillos.",
+      "Mantén separados oscuros y blancos; mezclarlos en el papel da un gris apagado."
+     ],
+     "q": "¿Has visto dibujos en papel de color que te parecieran especialmente elegantes?",
+     "c": "En papel gris o marrón, dibuja un huevo o una pelota con sombras a lápiz oscuro y pocos brillos blancos."
+    },
+    "fr": {
+     "t": "Dessiner sur papier teinté",
+     "g": "Dessiner sur papier gris ou beige avec un crayon foncé pour les ombres et du blanc pour les lumières.",
+     "p": [
+      "Le papier est ta valeur moyenne : tu n'ajoutes que des foncés et des clairs.",
+      "Utilise le crayon ou la craie blanche avec parcimonie, seulement sur les plans les plus clairs et les reflets.",
+      "Garde foncés et blancs séparés ; les mélanger sur la feuille donne un gris terne."
+     ],
+     "q": "As-tu déjà vu des dessins sur papier coloré particulièrement élégants ?",
+     "c": "Sur papier gris ou kraft, dessine un œuf ou une balle avec des ombres foncées et quelques reflets blancs."
+    },
+    "it": {
+     "t": "Disegno su carta tinta",
+     "g": "Disegnare su carta grigia o avana con matita scura per le ombre e bianco per le luci.",
+     "p": [
+      "La carta stessa è il tuo valore medio, quindi aggiungi solo scuri e chiari.",
+      "Usa matita o gesso bianco con parsimonia, solo sui piani più luminosi e sui riflessi.",
+      "Tieni separati scuri e bianchi: mescolarli sul foglio crea un grigio spento."
+     ],
+     "q": "Hai mai visto disegni su carta colorata particolarmente eleganti?",
+     "c": "Su carta grigia o marrone, disegna un uovo o una palla con ombre a matita scura e pochi tocchi bianchi."
+    },
+    "pt": {
+     "t": "Desenho em papel colorido",
+     "g": "Desenhar em papel cinzento ou bege com lápis escuro para sombras e branco para luzes.",
+     "p": [
+      "O próprio papel é o teu valor médio, por isso só acrescentas escuros e claros.",
+      "Usa lápis ou giz branco com moderação, só nos planos mais claros e nos brilhos.",
+      "Mantém escuros e brancos separados; misturá-los no papel dá um cinzento baço."
+     ],
+     "q": "Já viste desenhos em papel colorido que te parecessem especialmente elegantes?",
+     "c": "Em papel cinzento ou castanho, desenha um ovo ou uma bola com sombras a lápis escuro e poucos brilhos brancos."
+    },
+    "pt_BR": {
+     "t": "Desenho em papel tonalizado",
+     "g": "Desenhar em papel cinza ou bege com lápis escuro para sombras e branco para luzes.",
+     "p": [
+      "O próprio papel é seu valor médio, então você só acrescenta escuros e claros.",
+      "Use lápis ou giz branco com moderação, só nos planos mais claros e nos brilhos.",
+      "Mantenha escuros e brancos separados; misturar no papel dá um cinza sem vida."
+     ],
+     "q": "Você já viu desenhos em papel colorido que pareciam especialmente elegantes?",
+     "c": "Em papel cinza ou pardo, desenhe um ovo ou uma bola com sombras de lápis escuro e poucos brilhos brancos."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing from photographs",
+     "g": "Choose good reference photos and avoid copying blurry or flattened details.",
+     "p": [
+      "Pick sharp, well-lit photos with clear light and shadow, ideally ones you took yourself.",
+      "Cameras flatten depth and lose detail in dark shadows, so simplify rather than copy every blur.",
+      "Use photos to study, but change, simplify and arrange what you see to make your own image."
+     ],
+     "q": "Do you take photos of things you would like to draw later?",
+     "c": "Take a well-lit photo of an object at home and draw it, simplifying any blurry or dark areas."
+    },
+    "de": {
+     "t": "Nach Fotos zeichnen",
+     "g": "Gute Referenzfotos wählen und keine unscharfen oder flachen Details abzeichnen.",
+     "p": [
+      "Wähl scharfe, gut beleuchtete Fotos mit klarem Licht und Schatten, am besten eigene.",
+      "Kameras verflachen Tiefe und verlieren Details im Schatten, also vereinfache statt jede Unschärfe zu kopieren.",
+      "Nutze Fotos zum Lernen, aber verändere, vereinfache und ordne an, um ein eigenes Bild zu machen."
+     ],
+     "q": "Fotografierst du Dinge, die du später zeichnen möchtest?",
+     "c": "Mach ein gut beleuchtetes Foto von einem Gegenstand zu Hause und zeichne es, unscharfe Stellen vereinfacht."
+    },
+    "es": {
+     "t": "Dibujar a partir de fotos",
+     "g": "Elegir buenas fotos de referencia y no copiar detalles borrosos o aplanados.",
+     "p": [
+      "Elige fotos nítidas y bien iluminadas, con luz y sombra claras, mejor si son tuyas.",
+      "La cámara aplana la profundidad y pierde detalle en las sombras; simplifica en vez de copiar lo borroso.",
+      "Usa fotos para estudiar, pero cambia, simplifica y ordena lo que ves para crear tu propia imagen."
+     ],
+     "q": "¿Sueles hacer fotos de cosas que te gustaría dibujar después?",
+     "c": "Haz una foto bien iluminada de un objeto de casa y dibújalo, simplificando las zonas borrosas u oscuras."
+    },
+    "fr": {
+     "t": "Dessiner d'après photo",
+     "g": "Choisir de bonnes photos de référence et ne pas copier les détails flous ou écrasés.",
+     "p": [
+      "Choisis des photos nettes et bien éclairées, avec lumière et ombre claires, idéalement les tiennes.",
+      "L'appareil aplatit la profondeur et perd du détail dans les ombres : simplifie au lieu de copier le flou.",
+      "Utilise les photos pour étudier, mais change, simplifie et compose pour créer ta propre image."
+     ],
+     "q": "Prends-tu en photo des choses que tu aimerais dessiner plus tard ?",
+     "c": "Prends une photo bien éclairée d'un objet chez toi et dessine-le en simplifiant les zones floues ou sombres."
+    },
+    "it": {
+     "t": "Disegnare da fotografie",
+     "g": "Scegliere buone foto di riferimento ed evitare di copiare dettagli sfocati o appiattiti.",
+     "p": [
+      "Scegli foto nitide e ben illuminate, con luce e ombra chiare, meglio se scattate da te.",
+      "La fotocamera appiattisce la profondità e perde dettagli nelle ombre: semplifica invece di copiare lo sfocato.",
+      "Usa le foto per studiare, ma cambia, semplifica e componi per creare un'immagine tua."
+     ],
+     "q": "Fotografi le cose che vorresti disegnare più tardi?",
+     "c": "Scatta una foto ben illuminata di un oggetto di casa e disegnalo, semplificando le zone sfocate o scure."
+    },
+    "pt": {
+     "t": "Desenhar a partir de fotos",
+     "g": "Escolher boas fotos de referência e não copiar detalhes desfocados ou achatados.",
+     "p": [
+      "Escolhe fotos nítidas e bem iluminadas, com luz e sombra claras, de preferência tuas.",
+      "A câmara achata a profundidade e perde detalhe nas sombras; simplifica em vez de copiar o desfocado.",
+      "Usa fotos para estudar, mas muda, simplifica e organiza o que vês para criar a tua imagem."
+     ],
+     "q": "Costumas fotografar coisas que gostavas de desenhar mais tarde?",
+     "c": "Tira uma foto bem iluminada de um objeto em casa e desenha-o, simplificando zonas desfocadas ou escuras."
+    },
+    "pt_BR": {
+     "t": "Desenhando a partir de fotos",
+     "g": "Escolher boas fotos de referência e não copiar detalhes borrados ou achatados.",
+     "p": [
+      "Escolha fotos nítidas e bem iluminadas, com luz e sombra claras, de preferência suas.",
+      "A câmera achata a profundidade e perde detalhe nas sombras; simplifique em vez de copiar o borrado.",
+      "Use fotos para estudar, mas mude, simplifique e organize o que vê para criar sua própria imagem."
+     ],
+     "q": "Você costuma fotografar coisas que gostaria de desenhar depois?",
+     "c": "Tire uma foto bem iluminada de um objeto da casa e desenhe, simplificando as áreas borradas ou escuras."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing from life",
+     "g": "Discover why real objects teach depth and light better than photos.",
+     "p": [
+      "With two eyes and a moving head, you see real depth and how forms turn in space.",
+      "Real light shows subtle shadows and reflected light that photos often lose.",
+      "Life drawing trains you to simplify and decide, because the world is never flat and still."
+     ],
+     "q": "Would you rather draw at home, in a park or in a café full of life?",
+     "c": "Draw a real object from life for ten minutes, then compare it with a drawing you made from a photo."
+    },
+    "de": {
+     "t": "Nach dem Leben zeichnen",
+     "g": "Entdecken, warum echte Objekte Tiefe und Licht besser lehren als Fotos.",
+     "p": [
+      "Mit zwei Augen und beweglichem Kopf siehst du echte Tiefe und wie sich Körper im Raum drehen.",
+      "Echtes Licht zeigt feine Schatten und Reflexlicht, die Fotos oft verlieren.",
+      "Zeichnen nach dem Leben schult Vereinfachen und Entscheiden, denn die Welt ist nie flach und still."
+     ],
+     "q": "Würdest du lieber zu Hause, im Park oder in einem lebendigen Café zeichnen?",
+     "c": "Zeichne zehn Minuten ein echtes Objekt und vergleich es mit einer Zeichnung nach Foto."
+    },
+    "es": {
+     "t": "Dibujar del natural",
+     "g": "Descubrir por qué los objetos reales enseñan profundidad y luz mejor que las fotos.",
+     "p": [
+      "Con dos ojos y la cabeza en movimiento ves la profundidad real y cómo giran las formas.",
+      "La luz real muestra sombras sutiles y luz reflejada que las fotos suelen perder.",
+      "Dibujar del natural entrena a simplificar y decidir, porque el mundo nunca es plano ni quieto."
+     ],
+     "q": "¿Prefieres dibujar en casa, en un parque o en una cafetería llena de vida?",
+     "c": "Dibuja un objeto real del natural diez minutos y compáralo con un dibujo que hiciste de una foto."
+    },
+    "fr": {
+     "t": "Dessiner d'après nature",
+     "g": "Découvrir pourquoi les objets réels enseignent mieux la profondeur et la lumière que les photos.",
+     "p": [
+      "Avec deux yeux et une tête qui bouge, tu vois la vraie profondeur et comment les formes tournent.",
+      "La vraie lumière montre des ombres subtiles et des reflets que les photos perdent souvent.",
+      "Dessiner sur le vif apprend à simplifier et choisir, car le monde n'est jamais plat ni figé."
+     ],
+     "q": "Préférerais-tu dessiner chez toi, dans un parc ou dans un café plein de vie ?",
+     "c": "Dessine un objet réel d'après nature pendant dix minutes, puis compare avec un dessin fait d'après photo."
+    },
+    "it": {
+     "t": "Disegnare dal vero",
+     "g": "Scoprire perché gli oggetti reali insegnano profondità e luce meglio delle foto.",
+     "p": [
+      "Con due occhi e la testa che si muove vedi la vera profondità e come le forme girano nello spazio.",
+      "La luce reale mostra ombre sottili e luce riflessa che le foto spesso perdono.",
+      "Disegnare dal vero allena a semplificare e scegliere, perché il mondo non è mai piatto né fermo."
+     ],
+     "q": "Preferiresti disegnare a casa, in un parco o in un bar pieno di vita?",
+     "c": "Disegna un oggetto reale dal vero per dieci minuti e confrontalo con un disegno fatto da una foto."
+    },
+    "pt": {
+     "t": "Desenhar ao vivo",
+     "g": "Descobrir porque os objetos reais ensinam profundidade e luz melhor do que as fotos.",
+     "p": [
+      "Com dois olhos e a cabeça em movimento, vês a profundidade real e como as formas rodam no espaço.",
+      "A luz real mostra sombras subtis e luz refletida que as fotos costumam perder.",
+      "Desenhar ao vivo treina a simplificar e decidir, porque o mundo nunca é plano nem parado."
+     ],
+     "q": "Preferias desenhar em casa, num parque ou num café cheio de vida?",
+     "c": "Desenha um objeto real ao vivo durante dez minutos e compara com um desenho feito a partir de foto."
+    },
+    "pt_BR": {
+     "t": "Desenhando ao vivo",
+     "g": "Descobrir por que objetos reais ensinam profundidade e luz melhor que fotos.",
+     "p": [
+      "Com dois olhos e a cabeça se mexendo, você vê a profundidade real e como as formas giram no espaço.",
+      "A luz real mostra sombras sutis e luz refletida que as fotos costumam perder.",
+      "Desenhar ao vivo treina simplificar e decidir, porque o mundo nunca é plano nem parado."
+     ],
+     "q": "Você prefere desenhar em casa, num parque ou num café cheio de vida?",
+     "c": "Desenhe um objeto real ao vivo por dez minutos e compare com um desenho feito a partir de foto."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doodling with purpose",
+     "g": "Turn playful doodles into patterns, characters and creative warm-ups.",
+     "p": [
+      "Repeat one simple shape, like a loop or triangle, to grow a whole pattern across a page.",
+      "Add eyes, arms and legs to random blobs to invent funny characters.",
+      "Doodling relaxes your hand and mind and often sparks ideas for bigger drawings."
+     ],
+     "q": "Do you doodle during phone calls or meetings? What do you usually draw?",
+     "c": "Draw five random blobs with eyes closed, then open them and turn each into a character."
+    },
+    "de": {
+     "t": "Kritzeln mit Ziel",
+     "g": "Spielerische Kritzeleien in Muster, Figuren und kreatives Aufwärmen verwandeln.",
+     "p": [
+      "Wiederhol eine einfache Form wie Schlaufe oder Dreieck, um ein ganzes Muster über die Seite wachsen zu lassen.",
+      "Gib zufälligen Klecksen Augen, Arme und Beine und erfinde lustige Figuren.",
+      "Kritzeln entspannt Hand und Kopf und bringt oft Ideen für größere Zeichnungen."
+     ],
+     "q": "Kritzelst du beim Telefonieren oder in Meetings? Was zeichnest du dann meist?",
+     "c": "Zeichne mit geschlossenen Augen fünf Kleckse, öffne sie und mach aus jedem eine Figur."
+    },
+    "es": {
+     "t": "Garabatos con intención",
+     "g": "Convertir garabatos juguetones en patrones, personajes y calentamientos creativos.",
+     "p": [
+      "Repite una forma sencilla, como un bucle o un triángulo, hasta crear un patrón que llene la página.",
+      "Añade ojos, brazos y piernas a manchas al azar para inventar personajes divertidos.",
+      "Garabatear relaja la mano y la mente y suele dar ideas para dibujos más grandes."
+     ],
+     "q": "¿Garabateas durante llamadas o reuniones? ¿Qué sueles dibujar?",
+     "c": "Dibuja cinco manchas con los ojos cerrados, ábrelos y convierte cada una en un personaje."
+    },
+    "fr": {
+     "t": "Griffonner avec intention",
+     "g": "Transformer des griffonnages ludiques en motifs, personnages et échauffements créatifs.",
+     "p": [
+      "Répète une forme simple, comme une boucle ou un triangle, pour faire grandir un motif sur toute la page.",
+      "Ajoute des yeux, des bras et des jambes à des taches au hasard pour inventer des personnages drôles.",
+      "Griffonner détend la main et l'esprit et fait souvent naître des idées pour de plus grands dessins."
+     ],
+     "q": "Griffonnes-tu au téléphone ou en réunion ? Que dessines-tu d'habitude ?",
+     "c": "Dessine cinq taches les yeux fermés, ouvre-les et transforme chacune en personnage."
+    },
+    "it": {
+     "t": "Scarabocchiare con uno scopo",
+     "g": "Trasformare scarabocchi giocosi in motivi, personaggi e riscaldamenti creativi.",
+     "p": [
+      "Ripeti una forma semplice, come un ricciolo o un triangolo, per far crescere un motivo su tutta la pagina.",
+      "Aggiungi occhi, braccia e gambe a macchie casuali per inventare personaggi buffi.",
+      "Scarabocchiare rilassa mano e mente e spesso fa nascere idee per disegni più grandi."
+     ],
+     "q": "Scarabocchi durante le telefonate o le riunioni? Cosa disegni di solito?",
+     "c": "Disegna cinque macchie a occhi chiusi, poi aprili e trasforma ognuna in un personaggio."
+    },
+    "pt": {
+     "t": "Rabiscar com intenção",
+     "g": "Transformar rabiscos divertidos em padrões, personagens e aquecimentos criativos.",
+     "p": [
+      "Repete uma forma simples, como um laço ou triângulo, até criar um padrão que encha a página.",
+      "Junta olhos, braços e pernas a manchas ao acaso para inventar personagens engraçadas.",
+      "Rabiscar relaxa a mão e a mente e muitas vezes dá ideias para desenhos maiores."
+     ],
+     "q": "Costumas rabiscar ao telefone ou em reuniões? O que desenhas normalmente?",
+     "c": "Desenha cinco manchas de olhos fechados, abre-os e transforma cada uma numa personagem."
+    },
+    "pt_BR": {
+     "t": "Rabiscando com propósito",
+     "g": "Transformar rabiscos divertidos em padrões, personagens e aquecimentos criativos.",
+     "p": [
+      "Repita uma forma simples, como um laço ou triângulo, até criar um padrão que encha a página.",
+      "Coloque olhos, braços e pernas em manchas aleatórias para inventar personagens engraçados.",
+      "Rabiscar relaxa a mão e a mente e muitas vezes dá ideias para desenhos maiores."
+     ],
+     "q": "Você rabisca durante ligações ou reuniões? O que costuma desenhar?",
+     "c": "Desenhe cinco manchas de olhos fechados, depois abra e transforme cada uma num personagem."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: measuring and shading",
+     "g": "Recap proportions, value and textures with a complete shaded still life.",
+     "p": [
+      "Measure and align first, then block in light, middle and dark shapes.",
+      "Choose one shading method, hatching, scribbling or blending, and keep it consistent.",
+      "Finish with textures and your strongest contrast at the focal point."
+     ],
+     "q": "Which technique from the last 30 days did you enjoy most?",
+     "c": "Draw a still life of three objects with one light, measured carefully and shaded with a full value range."
+    },
+    "de": {
+     "t": "Rückblick: Messen und Schattieren",
+     "g": "Proportionen, Tonwerte und Texturen mit einem ganz schattierten Stillleben wiederholen.",
+     "p": [
+      "Zuerst messen und ausrichten, dann helle, mittlere und dunkle Flächen anlegen.",
+      "Wähl eine Schattiermethode, Schraffur, Kritzeln oder Verwischen, und bleib dabei.",
+      "Zum Schluss Texturen und den stärksten Kontrast am Blickpunkt."
+     ],
+     "q": "Welche Technik der letzten 30 Tage hat dir am meisten Spaß gemacht?",
+     "c": "Zeichne ein Stillleben aus drei Objekten mit einer Lichtquelle, sorgfältig gemessen und mit voller Tonwertskala."
+    },
+    "es": {
+     "t": "Repaso: medir y sombrear",
+     "g": "Repasar proporciones, valor y texturas con un bodegón completo y sombreado.",
+     "p": [
+      "Primero mide y alinea, luego encaja las zonas claras, medias y oscuras.",
+      "Elige un método de sombreado, trama, garabato o difuminado, y mantenlo.",
+      "Termina con las texturas y el contraste más fuerte en el punto focal."
+     ],
+     "q": "¿Qué técnica de los últimos 30 días has disfrutado más?",
+     "c": "Dibuja un bodegón de tres objetos con una sola luz, bien medido y sombreado con toda la escala de valores."
+    },
+    "fr": {
+     "t": "Révision : mesurer et ombrer",
+     "g": "Revoir proportions, valeurs et textures avec une nature morte entièrement ombrée.",
+     "p": [
+      "Mesure et aligne d'abord, puis place les zones claires, moyennes et foncées.",
+      "Choisis une méthode d'ombrage, hachures, gribouillis ou fondu, et garde-la.",
+      "Termine par les textures et le contraste le plus fort au point focal."
+     ],
+     "q": "Quelle technique des 30 derniers jours as-tu préférée ?",
+     "c": "Dessine une nature morte de trois objets sous une seule lumière, bien mesurée et ombrée avec toute l'échelle de valeurs."
+    },
+    "it": {
+     "t": "Ripasso: misurare e ombreggiare",
+     "g": "Ripassare proporzioni, valori e texture con una natura morta completa e ombreggiata.",
+     "p": [
+      "Prima misura e allinea, poi imposta le zone chiare, medie e scure.",
+      "Scegli un metodo di ombreggiatura, tratteggio, scarabocchio o sfumato, e mantienilo.",
+      "Finisci con le texture e il contrasto più forte nel punto focale."
+     ],
+     "q": "Quale tecnica degli ultimi 30 giorni ti è piaciuta di più?",
+     "c": "Disegna una natura morta di tre oggetti con una sola luce, misurata con cura e ombreggiata con tutta la scala dei valori."
+    },
+    "pt": {
+     "t": "Revisão: medir e sombrear",
+     "g": "Rever proporções, valores e texturas com uma natureza-morta completa e sombreada.",
+     "p": [
+      "Primeiro mede e alinha, depois marca as zonas claras, médias e escuras.",
+      "Escolhe um método de sombreado, tracejado, rabisco ou esbatido, e mantém-no.",
+      "Termina com as texturas e o contraste mais forte no ponto focal."
+     ],
+     "q": "Que técnica dos últimos 30 dias te deu mais gosto?",
+     "c": "Desenha uma natureza-morta de três objetos com uma só luz, bem medida e sombreada com toda a escala de valores."
+    },
+    "pt_BR": {
+     "t": "Revisão: medir e sombrear",
+     "g": "Revisar proporções, valores e texturas com uma natureza-morta completa e sombreada.",
+     "p": [
+      "Primeiro meça e alinhe, depois marque as áreas claras, médias e escuras.",
+      "Escolha um método de sombreado, hachura, rabisco ou esfumado, e mantenha.",
+      "Termine com as texturas e o contraste mais forte no ponto focal."
+     ],
+     "q": "Qual técnica dos últimos 30 dias você mais curtiu?",
+     "c": "Desenhe uma natureza-morta de três objetos com uma só luz, bem medida e sombreada com toda a escala de valores."
+    }
+   }
+  }
+ ]
+}

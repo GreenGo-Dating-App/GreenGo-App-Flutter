@@ -1,0 +1,835 @@
+{
+ "topic": "vegan",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calcium in plant foods",
+     "g": "Learn in general terms about fortified milks, calcium-set tofu and leafy greens.",
+     "p": [
+      "Many plant milks and yogurts are fortified with calcium; the label tells you if they are.",
+      "Tofu set with calcium sulphate, listed on the pack, is commonly mentioned as a plant source of calcium.",
+      "Greens like kale, bok choy and broccoli also contain calcium; a doctor or dietitian can advise on your own needs."
+     ],
+     "q": "Do you check labels on plant milks, and what do you look for?",
+     "c": "Check the label of a plant milk or tofu at home or in a shop and see whether calcium is listed."
+    },
+    "de": {
+     "t": "Kalzium in Pflanzenlebensmitteln",
+     "g": "Lerne allgemein über angereicherte Pflanzenmilch, mit Kalzium gefällten Tofu und Blattgemüse.",
+     "p": [
+      "Viele Pflanzenmilch- und Joghurtsorten sind mit Kalzium angereichert; das Etikett zeigt es dir.",
+      "Tofu, der mit Calciumsulfat gefällt wurde, steht auf der Packung und wird oft als pflanzliche Kalziumquelle genannt.",
+      "Grünkohl, Pak Choi und Brokkoli enthalten auch Kalzium; zu deinem Bedarf berät dich eine Ärztin oder Ernährungsfachkraft."
+     ],
+     "q": "Liest du die Etiketten von Pflanzenmilch, und worauf achtest du?",
+     "c": "Prüfe zu Hause oder im Laden das Etikett einer Pflanzenmilch oder eines Tofus, ob Kalzium aufgeführt ist."
+    },
+    "es": {
+     "t": "Calcio en alimentos vegetales",
+     "g": "Conocer de forma general las bebidas enriquecidas, el tofu cuajado con calcio y las hojas verdes.",
+     "p": [
+      "Muchas bebidas y yogures vegetales están enriquecidos con calcio; la etiqueta te lo indica.",
+      "El tofu cuajado con sulfato de calcio, indicado en el envase, suele mencionarse como fuente vegetal de calcio.",
+      "Hojas como col rizada, pak choi y brócoli también tienen calcio; un médico o dietista puede orientarte según tus necesidades."
+     ],
+     "q": "¿Miras las etiquetas de las bebidas vegetales? ¿Qué buscas en ellas?",
+     "c": "Revisa la etiqueta de una bebida vegetal o de un tofu en casa o en la tienda y mira si aparece el calcio."
+    },
+    "fr": {
+     "t": "Le calcium dans les aliments végétaux",
+     "g": "Découvrir de façon générale les boissons enrichies, le tofu caillé au calcium et les légumes verts.",
+     "p": [
+      "Beaucoup de boissons et yaourts végétaux sont enrichis en calcium ; l’étiquette te l’indique.",
+      "Le tofu caillé au sulfate de calcium, mentionné sur l’emballage, est souvent cité comme source végétale de calcium.",
+      "Chou kale, pak choï et brocoli en contiennent aussi ; un médecin ou diététicien peut te conseiller selon tes besoins."
+     ],
+     "q": "Lis-tu les étiquettes des boissons végétales, et que regardes-tu ?",
+     "c": "Vérifie l’étiquette d’une boisson végétale ou d’un tofu, chez toi ou en magasin, pour voir si le calcium y figure."
+    },
+    "it": {
+     "t": "Il calcio negli alimenti vegetali",
+     "g": "Conoscere in generale le bevande arricchite, il tofu cagliato con calcio e le verdure a foglia.",
+     "p": [
+      "Molte bevande e yogurt vegetali sono arricchiti con calcio; l’etichetta te lo dice.",
+      "Il tofu cagliato con solfato di calcio, indicato sulla confezione, è spesso citato come fonte vegetale di calcio.",
+      "Cavolo riccio, pak choi e broccoli contengono anch’essi calcio; un medico o dietista può consigliarti per le tue esigenze."
+     ],
+     "q": "Leggi le etichette delle bevande vegetali? Cosa cerchi?",
+     "c": "Controlla l’etichetta di una bevanda vegetale o di un tofu a casa o al negozio e guarda se c’è il calcio."
+    },
+    "pt": {
+     "t": "O cálcio nos alimentos vegetais",
+     "g": "Conhecer de forma geral as bebidas enriquecidas, o tofu coalhado com cálcio e as folhas verdes.",
+     "p": [
+      "Muitas bebidas e iogurtes vegetais são enriquecidos com cálcio; o rótulo diz-te se são.",
+      "O tofu coalhado com sulfato de cálcio, indicado na embalagem, é muitas vezes referido como fonte vegetal de cálcio.",
+      "Couve kale, pak choi e brócolos também têm cálcio; um médico ou nutricionista pode aconselhar-te sobre as tuas necessidades."
+     ],
+     "q": "Lês os rótulos das bebidas vegetais? O que procuras?",
+     "c": "Vê o rótulo de uma bebida vegetal ou de um tofu em casa ou na loja e confirma se o cálcio aparece."
+    },
+    "pt_BR": {
+     "t": "Cálcio nos alimentos vegetais",
+     "g": "Conhecer de forma geral bebidas enriquecidas, tofu coagulado com cálcio e folhas verdes.",
+     "p": [
+      "Muitas bebidas e iogurtes vegetais são enriquecidos com cálcio; o rótulo mostra se são.",
+      "O tofu coagulado com sulfato de cálcio, indicado na embalagem, costuma ser citado como fonte vegetal de cálcio.",
+      "Couve, couve-chinesa e brócolis também têm cálcio; um médico ou nutricionista pode orientar sobre suas necessidades."
+     ],
+     "q": "Você lê os rótulos das bebidas vegetais? O que procura?",
+     "c": "Confira o rótulo de uma bebida vegetal ou de um tofu em casa ou no mercado e veja se o cálcio aparece."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vitamin B12, in general terms",
+     "g": "Understand why B12 is commonly discussed for vegans and why professional advice is useful.",
+     "p": [
+      "Vitamin B12 is made by microorganisms, and unfortified plant foods are not considered a reliable source of it.",
+      "That is why fortified foods, such as some plant milks, cereals and nutritional yeast, are often mentioned.",
+      "Needs and the right approach differ from person to person, so a doctor or registered dietitian is the best guide."
+     ],
+     "q": "Had you heard about B12 before, and what did you know about it?",
+     "c": "Look at the labels of two foods you have, like a plant milk or cereal, and check whether B12 is added."
+    },
+    "de": {
+     "t": "Vitamin B12, allgemein erklärt",
+     "g": "Verstehe, warum B12 bei veganer Ernährung oft Thema ist und warum fachlicher Rat hilft.",
+     "p": [
+      "Vitamin B12 wird von Mikroorganismen gebildet, und nicht angereicherte Pflanzenlebensmittel gelten nicht als verlässliche Quelle.",
+      "Deshalb werden oft angereicherte Lebensmittel genannt, etwa manche Pflanzenmilch, Frühstücksflocken und Hefeflocken.",
+      "Bedarf und der richtige Weg sind individuell, daher ist eine Ärztin oder Ernährungsfachkraft die beste Anlaufstelle."
+     ],
+     "q": "Hattest du schon von B12 gehört, und was wusstest du darüber?",
+     "c": "Schau dir die Etiketten von zwei Lebensmitteln an, etwa Pflanzenmilch oder Müsli, und prüfe, ob B12 zugesetzt ist."
+    },
+    "es": {
+     "t": "Vitamina B12, en términos generales",
+     "g": "Entender por qué se habla tanto de la B12 en la dieta vegana y por qué conviene el consejo profesional.",
+     "p": [
+      "La vitamina B12 la producen microorganismos, y los alimentos vegetales no enriquecidos no se consideran una fuente fiable.",
+      "Por eso se mencionan a menudo alimentos enriquecidos, como algunas bebidas vegetales, cereales y levadura nutricional.",
+      "Las necesidades y el enfoque adecuado varían según la persona, así que un médico o dietista es la mejor guía."
+     ],
+     "q": "¿Habías oído hablar de la B12? ¿Qué sabías de ella?",
+     "c": "Mira las etiquetas de dos alimentos que tengas, como una bebida vegetal o cereales, y comprueba si llevan B12 añadida."
+    },
+    "fr": {
+     "t": "La vitamine B12, en termes généraux",
+     "g": "Comprendre pourquoi on parle souvent de B12 pour les végans et pourquoi un avis professionnel est utile.",
+     "p": [
+      "La vitamine B12 est produite par des micro-organismes, et les aliments végétaux non enrichis ne sont pas une source fiable.",
+      "C’est pourquoi on cite souvent des aliments enrichis, comme certaines boissons végétales, céréales et levures maltées.",
+      "Les besoins et la bonne approche varient d’une personne à l’autre : un médecin ou un diététicien est le meilleur guide."
+     ],
+     "q": "Avais-tu déjà entendu parler de la B12, et qu’en savais-tu ?",
+     "c": "Regarde les étiquettes de deux aliments que tu as, boisson végétale ou céréales, et vérifie si la B12 est ajoutée."
+    },
+    "it": {
+     "t": "La vitamina B12, in termini generali",
+     "g": "Capire perché della B12 si parla spesso per chi è vegano e perché il consiglio di un professionista è utile.",
+     "p": [
+      "La vitamina B12 è prodotta da microrganismi, e gli alimenti vegetali non arricchiti non sono considerati una fonte affidabile.",
+      "Per questo si citano spesso alimenti arricchiti, come alcune bevande vegetali, cereali e lievito alimentare.",
+      "Fabbisogno e approccio giusto cambiano da persona a persona, quindi un medico o un dietista è la guida migliore."
+     ],
+     "q": "Avevi già sentito parlare della B12? Cosa ne sapevi?",
+     "c": "Guarda le etichette di due alimenti che hai, come una bevanda vegetale o dei cereali, e controlla se c’è B12 aggiunta."
+    },
+    "pt": {
+     "t": "A vitamina B12, em termos gerais",
+     "g": "Perceber porque se fala tanto da B12 na alimentação vegana e porque o aconselhamento profissional é útil.",
+     "p": [
+      "A vitamina B12 é produzida por microrganismos, e os alimentos vegetais não enriquecidos não são considerados uma fonte fiável.",
+      "Por isso falam-se muitas vezes de alimentos enriquecidos, como algumas bebidas vegetais, cereais e levedura nutricional.",
+      "As necessidades e a abordagem certa variam de pessoa para pessoa, por isso um médico ou nutricionista é o melhor guia."
+     ],
+     "q": "Já tinhas ouvido falar da B12? O que sabias sobre ela?",
+     "c": "Vê os rótulos de dois alimentos que tens, como uma bebida vegetal ou cereais, e confirma se têm B12 adicionada."
+    },
+    "pt_BR": {
+     "t": "Vitamina B12, de forma geral",
+     "g": "Entender por que a B12 é tão falada na alimentação vegana e por que vale ter orientação profissional.",
+     "p": [
+      "A vitamina B12 é produzida por microrganismos, e alimentos vegetais não enriquecidos não são considerados fonte confiável.",
+      "Por isso se fala muito em alimentos enriquecidos, como algumas bebidas vegetais, cereais e levedura nutricional.",
+      "As necessidades e o melhor caminho mudam de pessoa para pessoa, então um médico ou nutricionista é o melhor guia."
+     ],
+     "q": "Você já tinha ouvido falar da B12? O que sabia sobre ela?",
+     "c": "Olhe os rótulos de dois alimentos que você tem, como bebida vegetal ou cereal, e veja se têm B12 adicionada."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Omega-3 from plants",
+     "g": "Learn general facts about flaxseed, chia seeds and walnuts in everyday cooking.",
+     "p": [
+      "Ground flaxseed, chia seeds, hemp seeds and walnuts are commonly listed as plant foods with omega-3 fats.",
+      "Flaxseed is best eaten ground; whole seeds often pass through undigested.",
+      "They are easy to sprinkle on oats, salads and bowls; for personal advice, a doctor or registered dietitian can help."
+     ],
+     "q": "Do you already use seeds like flax or chia, and how?",
+     "c": "Sprinkle a spoon of ground flaxseed, chia or chopped walnuts on one meal today."
+    },
+    "de": {
+     "t": "Omega-3 aus Pflanzen",
+     "g": "Lerne allgemeine Fakten zu Leinsamen, Chiasamen und Walnüssen in der Alltagsküche.",
+     "p": [
+      "Geschrotete Leinsamen, Chia, Hanfsamen und Walnüsse werden oft als Pflanzenlebensmittel mit Omega-3-Fetten genannt.",
+      "Leinsamen isst man am besten geschrotet; ganze Samen werden oft unverdaut ausgeschieden.",
+      "Sie lassen sich leicht über Haferflocken, Salate und Bowls streuen; persönlichen Rat gibt eine Ärztin oder Ernährungsfachkraft."
+     ],
+     "q": "Nutzt du schon Samen wie Lein oder Chia, und wie?",
+     "c": "Streue heute einen Löffel geschrotete Leinsamen, Chia oder gehackte Walnüsse über eine Mahlzeit."
+    },
+    "es": {
+     "t": "Omega-3 de origen vegetal",
+     "g": "Conocer datos generales sobre linaza, semillas de chía y nueces en la cocina diaria.",
+     "p": [
+      "La linaza molida, la chía, las semillas de cáñamo y las nueces suelen citarse como alimentos vegetales con omega-3.",
+      "La linaza conviene comerla molida; las semillas enteras a menudo pasan sin digerirse.",
+      "Es fácil espolvorearlas sobre avena, ensaladas y bowls; para consejo personal, consulta a un médico o dietista-nutricionista."
+     ],
+     "q": "¿Ya usas semillas como linaza o chía? ¿Cómo?",
+     "c": "Espolvorea hoy una cucharada de linaza molida, chía o nueces picadas sobre una comida."
+    },
+    "fr": {
+     "t": "Les oméga-3 végétaux",
+     "g": "Connaître des faits généraux sur les graines de lin, de chia et les noix dans la cuisine quotidienne.",
+     "p": [
+      "Graines de lin moulues, chia, chanvre et noix sont souvent citées comme aliments végétaux riches en oméga-3.",
+      "Le lin se consomme de préférence moulu ; les graines entières traversent souvent le corps sans être digérées.",
+      "Faciles à saupoudrer sur flocons d’avoine, salades et bols ; pour un conseil personnel, vois un médecin ou un diététicien."
+     ],
+     "q": "Utilises-tu déjà des graines comme le lin ou le chia, et comment ?",
+     "c": "Saupoudre aujourd’hui une cuillère de lin moulu, de chia ou de noix hachées sur un repas."
+    },
+    "it": {
+     "t": "Omega-3 dalle piante",
+     "g": "Conoscere fatti generali su semi di lino, semi di chia e noci nella cucina di tutti i giorni.",
+     "p": [
+      "Semi di lino macinati, chia, semi di canapa e noci sono spesso indicati come alimenti vegetali con omega-3.",
+      "I semi di lino è meglio mangiarli macinati; quelli interi spesso passano senza essere digeriti.",
+      "Si spolverano facilmente su avena, insalate e bowl; per consigli personali può aiutarti un medico o un dietista."
+     ],
+     "q": "Usi già semi come lino o chia? In che modo?",
+     "c": "Spolvera oggi un cucchiaio di semi di lino macinati, chia o noci tritate su un pasto."
+    },
+    "pt": {
+     "t": "Ómega-3 de origem vegetal",
+     "g": "Conhecer factos gerais sobre linhaça, sementes de chia e nozes na cozinha do dia a dia.",
+     "p": [
+      "A linhaça moída, a chia, as sementes de cânhamo e as nozes são muitas vezes indicadas como alimentos vegetais com ómega-3.",
+      "A linhaça deve comer-se moída; as sementes inteiras passam muitas vezes sem ser digeridas.",
+      "É fácil polvilhá-las em aveia, saladas e taças; para conselhos pessoais, fala com um médico ou nutricionista."
+     ],
+     "q": "Já usas sementes como linhaça ou chia? Como?",
+     "c": "Polvilha hoje uma colher de linhaça moída, chia ou nozes picadas numa refeição."
+    },
+    "pt_BR": {
+     "t": "Ômega-3 de origem vegetal",
+     "g": "Conhecer fatos gerais sobre linhaça, chia e nozes na cozinha do dia a dia.",
+     "p": [
+      "Linhaça moída, chia, sementes de cânhamo e nozes costumam ser citadas como alimentos vegetais com ômega-3.",
+      "A linhaça deve ser comida moída; as sementes inteiras muitas vezes passam sem ser digeridas.",
+      "É fácil polvilhar em aveia, saladas e bowls; para orientação pessoal, converse com um médico ou nutricionista."
+     ],
+     "q": "Você já usa sementes como linhaça ou chia? Como?",
+     "c": "Polvilhe hoje uma colher de linhaça moída, chia ou nozes picadas numa refeição."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading food labels",
+     "g": "Spot animal ingredients like whey, gelatine or egg in ingredient lists.",
+     "p": [
+      "Ingredient lists are ordered by amount, and allergens like milk and egg are often highlighted in bold.",
+      "Watch for less obvious names: whey, casein and lactose come from milk; gelatine comes from animals; albumen is egg.",
+      "Many products also carry a vegan label, which makes shopping quicker once you know the trusted symbols."
+     ],
+     "q": "Have you ever been surprised to find an animal ingredient in a product?",
+     "c": "Read the ingredients of three packaged foods at home and note whether each one is vegan."
+    },
+    "de": {
+     "t": "Lebensmitteletiketten lesen",
+     "g": "Erkenne tierische Zutaten wie Molke, Gelatine oder Ei in Zutatenlisten.",
+     "p": [
+      "Zutatenlisten sind nach Menge sortiert, und Allergene wie Milch und Ei sind oft fett hervorgehoben.",
+      "Achte auf weniger offensichtliche Namen: Molke, Kasein und Laktose stammen aus Milch, Gelatine von Tieren, Albumin ist Ei.",
+      "Viele Produkte tragen auch ein Vegan-Siegel, das den Einkauf beschleunigt, sobald du die vertrauenswürdigen Symbole kennst."
+     ],
+     "q": "Warst du schon einmal überrascht, eine tierische Zutat in einem Produkt zu finden?",
+     "c": "Lies die Zutaten von drei verpackten Lebensmitteln zu Hause und notiere, ob sie vegan sind."
+    },
+    "es": {
+     "t": "Leer etiquetas de alimentos",
+     "g": "Detectar ingredientes animales como suero lácteo, gelatina o huevo en la lista de ingredientes.",
+     "p": [
+      "La lista de ingredientes va de mayor a menor cantidad, y los alérgenos como leche y huevo suelen ir en negrita.",
+      "Ojo con nombres menos obvios: suero, caseína y lactosa vienen de la leche; la gelatina es animal; la albúmina es huevo.",
+      "Muchos productos llevan un sello vegano, que agiliza la compra cuando conoces los símbolos de confianza."
+     ],
+     "q": "¿Alguna vez te sorprendió encontrar un ingrediente animal en un producto?",
+     "c": "Lee los ingredientes de tres alimentos envasados en casa y apunta si cada uno es vegano."
+    },
+    "fr": {
+     "t": "Lire les étiquettes",
+     "g": "Repérer les ingrédients animaux comme le lactosérum, la gélatine ou l’œuf dans la liste des ingrédients.",
+     "p": [
+      "La liste suit l’ordre des quantités, et les allergènes comme le lait et l’œuf sont souvent en gras.",
+      "Attention aux noms moins évidents : lactosérum, caséine et lactose viennent du lait, la gélatine est animale, l’albumine est l’œuf.",
+      "Beaucoup de produits portent aussi un label végan, ce qui accélère les courses quand on connaît les logos fiables."
+     ],
+     "q": "As-tu déjà été surpris de trouver un ingrédient animal dans un produit ?",
+     "c": "Lis les ingrédients de trois aliments emballés chez toi et note si chacun est végan."
+    },
+    "it": {
+     "t": "Leggere le etichette",
+     "g": "Riconoscere ingredienti animali come siero di latte, gelatina o uova nell’elenco degli ingredienti.",
+     "p": [
+      "L’elenco ingredienti segue l’ordine di quantità, e gli allergeni come latte e uova sono spesso in grassetto.",
+      "Attenzione ai nomi meno ovvi: siero, caseina e lattosio vengono dal latte, la gelatina è animale, l’albume è uovo.",
+      "Molti prodotti hanno anche un marchio vegano, che velocizza la spesa quando conosci i simboli affidabili."
+     ],
+     "q": "Ti è mai capitato di trovare con sorpresa un ingrediente animale in un prodotto?",
+     "c": "Leggi gli ingredienti di tre alimenti confezionati a casa e annota se ognuno è vegano."
+    },
+    "pt": {
+     "t": "Ler rótulos",
+     "g": "Identificar ingredientes animais como soro de leite, gelatina ou ovo na lista de ingredientes.",
+     "p": [
+      "A lista de ingredientes segue a ordem da quantidade, e os alergénios como leite e ovo costumam estar a negrito.",
+      "Atenção a nomes menos óbvios: soro, caseína e lactose vêm do leite; a gelatina é animal; a albumina é ovo.",
+      "Muitos produtos têm também um selo vegano, que torna as compras mais rápidas quando conheces os símbolos fiáveis."
+     ],
+     "q": "Já ficaste surpreendido por encontrar um ingrediente animal num produto?",
+     "c": "Lê os ingredientes de três alimentos embalados em casa e anota se cada um é vegano."
+    },
+    "pt_BR": {
+     "t": "Lendo rótulos",
+     "g": "Identificar ingredientes animais como soro de leite, gelatina ou ovo na lista de ingredientes.",
+     "p": [
+      "A lista de ingredientes segue a ordem de quantidade, e alergênicos como leite e ovo costumam vir em destaque.",
+      "Fique de olho em nomes menos óbvios: soro, caseína e lactose vêm do leite; gelatina é animal; albumina é ovo.",
+      "Muitos produtos têm também um selo vegano, que agiliza as compras quando você conhece os símbolos confiáveis."
+     ],
+     "q": "Você já se surpreendeu ao achar um ingrediente animal num produto?",
+     "c": "Leia os ingredientes de três alimentos embalados em casa e anote se cada um é vegano."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating a rainbow",
+     "g": "See why varied, colourful vegetables and fruits make meals exciting and diverse.",
+     "p": [
+      "Different colours come from different natural plant compounds, so a colourful plate usually means a varied one.",
+      "Aim for a mix across the week: reds like tomatoes, oranges like squash, greens, purples like red cabbage and whites like cauliflower.",
+      "Colour also makes food more appealing, and a rainbow bowl is one of the easiest ways to make a meal look special."
+     ],
+     "q": "How many colours were on your plate at your last meal?",
+     "c": "Make one meal today with at least five different natural colours on the plate."
+    },
+    "de": {
+     "t": "Den Regenbogen essen",
+     "g": "Sieh, warum vielfältiges, buntes Gemüse und Obst Mahlzeiten spannend und abwechslungsreich macht.",
+     "p": [
+      "Verschiedene Farben stammen von verschiedenen natürlichen Pflanzenstoffen, ein bunter Teller ist also meist ein vielfältiger.",
+      "Mische über die Woche: Rot wie Tomaten, Orange wie Kürbis, Grün, Lila wie Rotkohl und Weiß wie Blumenkohl.",
+      "Farbe macht Essen auch appetitlicher, und eine Regenbogen-Bowl ist einer der einfachsten Wege zu einem besonderen Essen."
+     ],
+     "q": "Wie viele Farben waren bei deiner letzten Mahlzeit auf dem Teller?",
+     "c": "Mach heute eine Mahlzeit mit mindestens fünf verschiedenen natürlichen Farben auf dem Teller."
+    },
+    "es": {
+     "t": "Comer el arcoíris",
+     "g": "Ver por qué las verduras y frutas variadas y coloridas hacen las comidas más emocionantes y diversas.",
+     "p": [
+      "Cada color procede de distintos compuestos naturales de las plantas, así que un plato colorido suele ser variado.",
+      "Busca variedad en la semana: rojos como el tomate, naranjas como la calabaza, verdes, morados como la lombarda y blancos como la coliflor.",
+      "El color hace la comida más apetecible, y un bowl arcoíris es una de las formas más fáciles de lucir un plato."
+     ],
+     "q": "¿Cuántos colores había en tu plato en la última comida?",
+     "c": "Prepara hoy una comida con al menos cinco colores naturales distintos en el plato."
+    },
+    "fr": {
+     "t": "Manger l’arc-en-ciel",
+     "g": "Comprendre pourquoi des légumes et fruits variés et colorés rendent les repas passionnants et diversifiés.",
+     "p": [
+      "Les couleurs viennent de différents composés naturels des plantes : une assiette colorée est en général une assiette variée.",
+      "Varie sur la semaine : rouge comme la tomate, orange comme la courge, vert, violet comme le chou rouge et blanc comme le chou-fleur.",
+      "La couleur rend aussi les plats plus appétissants, et un bol arc-en-ciel est un moyen simple de faire un beau repas."
+     ],
+     "q": "Combien de couleurs y avait-il dans ton assiette au dernier repas ?",
+     "c": "Prépare aujourd’hui un repas avec au moins cinq couleurs naturelles différentes dans l’assiette."
+    },
+    "it": {
+     "t": "Mangiare l’arcobaleno",
+     "g": "Capire perché verdure e frutta varie e colorate rendono i pasti entusiasmanti e diversi.",
+     "p": [
+      "I diversi colori vengono da diversi composti naturali delle piante, quindi un piatto colorato di solito è un piatto vario.",
+      "Punta a un mix nella settimana: rossi come pomodori, arancioni come zucca, verdi, viola come cavolo rosso e bianchi come cavolfiore.",
+      "Il colore rende il cibo più invitante, e una bowl arcobaleno è uno dei modi più semplici per rendere speciale un pasto."
+     ],
+     "q": "Quanti colori c’erano nel tuo piatto all’ultimo pasto?",
+     "c": "Prepara oggi un pasto con almeno cinque colori naturali diversi nel piatto."
+    },
+    "pt": {
+     "t": "Comer o arco-íris",
+     "g": "Perceber porque legumes e frutas variados e coloridos tornam as refeições entusiasmantes e diversas.",
+     "p": [
+      "As cores vêm de diferentes compostos naturais das plantas, por isso um prato colorido costuma ser um prato variado.",
+      "Procura variedade na semana: vermelhos como tomate, laranjas como abóbora, verdes, roxos como couve-roxa e brancos como couve-flor.",
+      "A cor torna a comida mais apetitosa, e uma taça arco-íris é das formas mais fáceis de tornar uma refeição especial."
+     ],
+     "q": "Quantas cores havia no teu prato na última refeição?",
+     "c": "Faz hoje uma refeição com pelo menos cinco cores naturais diferentes no prato."
+    },
+    "pt_BR": {
+     "t": "Comendo o arco-íris",
+     "g": "Entender por que legumes e frutas variados e coloridos deixam as refeições animadas e diversas.",
+     "p": [
+      "As cores vêm de diferentes compostos naturais das plantas, então um prato colorido costuma ser um prato variado.",
+      "Busque variedade na semana: vermelhos como tomate, laranjas como abóbora, verdes, roxos como repolho roxo e brancos como couve-flor.",
+      "A cor deixa a comida mais apetitosa, e um bowl arco-íris é um dos jeitos mais fáceis de deixar a refeição especial."
+     ],
+     "q": "Quantas cores tinha no seu prato na última refeição?",
+     "c": "Faça hoje uma refeição com pelo menos cinco cores naturais diferentes no prato."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plant-based breakfasts",
+     "g": "Start the day with oats, smoothies, toast toppings and tofu scrambles.",
+     "p": [
+      "Warm porridge made with oats and plant milk, topped with fruit, seeds or nut butter, is quick and filling.",
+      "Savoury breakfasts like tofu scramble, beans on toast or Middle Eastern ful medames are popular around the world.",
+      "Prepare parts ahead, like chopped fruit or a jar of seeds, so a good breakfast takes only a few minutes."
+     ],
+     "q": "Are you a sweet breakfast or a savoury breakfast person?",
+     "c": "Try a breakfast today that is different from your usual one, sweet if you usually eat savoury, or the other way round."
+    },
+    "de": {
+     "t": "Pflanzliches Frühstück",
+     "g": "Starte den Tag mit Haferflocken, Smoothies, belegtem Toast und Rührtofu.",
+     "p": [
+      "Warmer Porridge aus Haferflocken und Pflanzenmilch mit Obst, Samen oder Nussmus ist schnell und sättigend.",
+      "Herzhaftes Frühstück wie Rührtofu, Bohnen auf Toast oder nahöstliches Ful Medames ist weltweit beliebt.",
+      "Bereite Teile vor, etwa geschnittenes Obst oder ein Glas Samen, dann dauert ein gutes Frühstück nur Minuten."
+     ],
+     "q": "Bist du eher ein süßer oder ein herzhafter Frühstückstyp?",
+     "c": "Probiere heute ein Frühstück, das anders ist als sonst, süß statt herzhaft oder umgekehrt."
+    },
+    "es": {
+     "t": "Desayunos vegetales",
+     "g": "Empezar el día con avena, batidos, tostadas y revuelto de tofu.",
+     "p": [
+      "Unas gachas calientes de avena y bebida vegetal con fruta, semillas o crema de frutos secos son rápidas y saciantes.",
+      "Los desayunos salados como el revuelto de tofu, las alubias con tostada o el ful medames de Oriente Medio triunfan en el mundo.",
+      "Deja cosas preparadas, como fruta cortada o un tarro de semillas, y un buen desayuno te llevará pocos minutos."
+     ],
+     "q": "¿Eres más de desayuno dulce o salado?",
+     "c": "Prueba hoy un desayuno distinto al habitual: dulce si sueles tomarlo salado, o al revés."
+    },
+    "fr": {
+     "t": "Petits-déjeuners végétaux",
+     "g": "Commencer la journée avec flocons d’avoine, smoothies, tartines et tofu brouillé.",
+     "p": [
+      "Un porridge chaud aux flocons d’avoine et boisson végétale, garni de fruits, graines ou purée d’oléagineux, est rapide et rassasiant.",
+      "Les petits-déjeuners salés comme le tofu brouillé, les haricots sur toast ou le ful medames oriental sont populaires partout.",
+      "Prépare des éléments à l’avance, fruits coupés ou bocal de graines, et un bon petit-déjeuner ne prend que quelques minutes."
+     ],
+     "q": "Es-tu plutôt petit-déjeuner sucré ou salé ?",
+     "c": "Essaie aujourd’hui un petit-déjeuner différent : sucré si tu manges salé d’habitude, ou l’inverse."
+    },
+    "it": {
+     "t": "Colazioni vegetali",
+     "g": "Iniziare la giornata con avena, frullati, pane tostato e tofu strapazzato.",
+     "p": [
+      "Un porridge caldo di avena e bevanda vegetale con frutta, semi o burro di frutta secca è veloce e saziante.",
+      "Le colazioni salate come tofu strapazzato, fagioli su pane tostato o il ful medames mediorientale sono amate nel mondo.",
+      "Prepara alcune cose in anticipo, come frutta tagliata o un barattolo di semi, e una buona colazione richiede pochi minuti."
+     ],
+     "q": "Sei più tipo da colazione dolce o salata?",
+     "c": "Prova oggi una colazione diversa dal solito: dolce se di solito mangi salato, o viceversa."
+    },
+    "pt": {
+     "t": "Pequenos-almoços vegetais",
+     "g": "Começar o dia com aveia, batidos, torradas e tofu mexido.",
+     "p": [
+      "Papas de aveia quentes com bebida vegetal e fruta, sementes ou manteiga de frutos secos são rápidas e saciam.",
+      "Pequenos-almoços salgados como tofu mexido, feijão na torrada ou ful medames do Médio Oriente são populares pelo mundo.",
+      "Deixa coisas preparadas, como fruta cortada ou um frasco de sementes, e um bom pequeno-almoço leva poucos minutos."
+     ],
+     "q": "És mais de pequeno-almoço doce ou salgado?",
+     "c": "Experimenta hoje um pequeno-almoço diferente do habitual: doce se costumas comer salgado, ou ao contrário."
+    },
+    "pt_BR": {
+     "t": "Cafés da manhã vegetais",
+     "g": "Começar o dia com aveia, vitaminas, torradas e tofu mexido.",
+     "p": [
+      "Mingau quente de aveia com bebida vegetal e frutas, sementes ou pasta de castanha é rápido e sustenta.",
+      "Cafés da manhã salgados como tofu mexido, feijão na torrada ou ful medames do Oriente Médio fazem sucesso no mundo.",
+      "Deixe coisas prontas, como frutas picadas ou um pote de sementes, e um bom café da manhã leva poucos minutos."
+     ],
+     "q": "Você é mais de café da manhã doce ou salgado?",
+     "c": "Experimente hoje um café da manhã diferente do normal: doce se costuma comer salgado, ou o contrário."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Overnight oats",
+     "g": "Soak oats in plant milk with fruit and seeds for a ready-made breakfast.",
+     "p": [
+      "Mix rolled oats with roughly the same amount of plant milk in a jar, plus a spoon of chia seeds if you like it thicker.",
+      "Leave it in the fridge overnight; the oats soften into a creamy, spoonable breakfast with no cooking.",
+      "Top it in the morning with fruit, nuts, cinnamon or a swirl of nut butter, and vary it all week."
+     ],
+     "q": "What would be your dream topping for overnight oats?",
+     "c": "Prepare a jar of overnight oats tonight with plant milk, a fruit and one seed, ready for tomorrow."
+    },
+    "de": {
+     "t": "Overnight Oats",
+     "g": "Weiche Haferflocken in Pflanzenmilch mit Obst und Samen für ein fertiges Frühstück ein.",
+     "p": [
+      "Mische Haferflocken mit etwa gleich viel Pflanzenmilch in einem Glas, plus einen Löffel Chia, wenn du es dicker magst.",
+      "Über Nacht in den Kühlschrank: Die Flocken werden weich und cremig, ganz ohne Kochen.",
+      "Morgens mit Obst, Nüssen, Zimt oder einem Klecks Nussmus toppen und die ganze Woche variieren."
+     ],
+     "q": "Was wäre dein Traum-Topping für Overnight Oats?",
+     "c": "Bereite heute Abend ein Glas Overnight Oats mit Pflanzenmilch, einem Obst und einem Samen für morgen vor."
+    },
+    "es": {
+     "t": "Avena remojada de la noche",
+     "g": "Remojar avena en bebida vegetal con fruta y semillas para tener el desayuno listo.",
+     "p": [
+      "Mezcla copos de avena con más o menos la misma cantidad de bebida vegetal en un tarro, y chía si la quieres más espesa.",
+      "Déjala en la nevera toda la noche; la avena se ablanda y queda cremosa, sin cocinar nada.",
+      "Por la mañana añade fruta, frutos secos, canela o crema de frutos secos, y ve variando durante la semana."
+     ],
+     "q": "¿Cuál sería tu topping soñado para la avena de la noche?",
+     "c": "Prepara esta noche un tarro de avena con bebida vegetal, una fruta y una semilla, listo para mañana."
+    },
+    "fr": {
+     "t": "Overnight oats",
+     "g": "Faire tremper des flocons d’avoine dans une boisson végétale avec fruits et graines pour un petit-déjeuner prêt.",
+     "p": [
+      "Mélange des flocons d’avoine avec à peu près autant de boisson végétale dans un bocal, plus du chia si tu l’aimes plus épais.",
+      "Laisse au frigo toute la nuit : les flocons ramollissent en un petit-déjeuner crémeux, sans cuisson.",
+      "Le matin, ajoute fruits, noix, cannelle ou un peu de purée d’oléagineux, et varie toute la semaine."
+     ],
+     "q": "Quelle serait ta garniture de rêve pour des overnight oats ?",
+     "c": "Prépare ce soir un bocal d’overnight oats avec boisson végétale, un fruit et une graine, prêt pour demain."
+    },
+    "it": {
+     "t": "Overnight oats",
+     "g": "Mettere in ammollo l’avena nella bevanda vegetale con frutta e semi per una colazione già pronta.",
+     "p": [
+      "Mescola fiocchi d’avena con circa la stessa quantità di bevanda vegetale in un barattolo, più semi di chia se la vuoi più densa.",
+      "Lascia in frigo tutta la notte: l’avena si ammorbidisce in una colazione cremosa, senza cuocere nulla.",
+      "Al mattino aggiungi frutta, frutta secca, cannella o un cucchiaio di burro di frutta secca, e varia tutta la settimana."
+     ],
+     "q": "Quale sarebbe il tuo condimento ideale per gli overnight oats?",
+     "c": "Prepara stasera un barattolo di overnight oats con bevanda vegetale, un frutto e un seme, pronto per domani."
+    },
+    "pt": {
+     "t": "Papas de aveia de véspera",
+     "g": "Demolhar aveia em bebida vegetal com fruta e sementes para ter o pequeno-almoço pronto.",
+     "p": [
+      "Mistura flocos de aveia com mais ou menos a mesma quantidade de bebida vegetal num frasco, e chia se gostares mais espesso.",
+      "Deixa no frigorífico durante a noite; a aveia amolece e fica cremosa, sem cozinhar nada.",
+      "De manhã junta fruta, frutos secos, canela ou manteiga de frutos secos, e varia ao longo da semana."
+     ],
+     "q": "Qual seria a tua cobertura de sonho para as papas de véspera?",
+     "c": "Prepara esta noite um frasco de aveia com bebida vegetal, uma fruta e uma semente, pronto para amanhã."
+    },
+    "pt_BR": {
+     "t": "Aveia dormida",
+     "g": "Deixar aveia de molho na bebida vegetal com frutas e sementes para ter o café da manhã pronto.",
+     "p": [
+      "Misture aveia em flocos com mais ou menos a mesma quantidade de bebida vegetal num pote, e chia se gostar mais grosso.",
+      "Deixe na geladeira a noite toda; a aveia amolece e fica cremosa, sem cozinhar nada.",
+      "De manhã coloque frutas, castanhas, canela ou pasta de amendoim, e vá variando durante a semana."
+     ],
+     "q": "Qual seria a cobertura dos sonhos para sua aveia dormida?",
+     "c": "Prepare hoje à noite um pote de aveia dormida com bebida vegetal, uma fruta e uma semente, pronto para amanhã."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smoothie building",
+     "g": "Blend fruit, greens, plant milk and seeds into a balanced drink.",
+     "p": [
+      "A simple formula: liquid like plant milk, fruit like banana or berries, a handful of greens, and seeds or nut butter.",
+      "Frozen fruit makes a thick, cold smoothie without ice; banana adds natural creaminess.",
+      "Start with less liquid and add more while blending until you reach the texture you like."
+     ],
+     "q": "What is your favourite fruit combination in a smoothie?",
+     "c": "Blend a smoothie with the four-part formula, sneaking in a handful of spinach, and see if you can taste it."
+    },
+    "de": {
+     "t": "Smoothies zusammenstellen",
+     "g": "Mixe Obst, Grünes, Pflanzenmilch und Samen zu einem ausgewogenen Drink.",
+     "p": [
+      "Eine einfache Formel: Flüssigkeit wie Pflanzenmilch, Obst wie Banane oder Beeren, eine Handvoll Grünes und Samen oder Nussmus.",
+      "Gefrorenes Obst macht den Smoothie dick und kalt ohne Eis; Banane bringt natürliche Cremigkeit.",
+      "Beginne mit wenig Flüssigkeit und gib beim Mixen mehr dazu, bis die Konsistenz passt."
+     ],
+     "q": "Was ist deine liebste Obstkombination im Smoothie?",
+     "c": "Mixe einen Smoothie nach der Vier-Teile-Formel mit einer Handvoll Spinat und teste, ob du ihn schmeckst."
+    },
+    "es": {
+     "t": "Cómo montar un batido",
+     "g": "Triturar fruta, hojas verdes, bebida vegetal y semillas en una bebida equilibrada.",
+     "p": [
+      "Una fórmula sencilla: líquido como bebida vegetal, fruta como plátano o frutos rojos, un puñado de hojas y semillas o crema de frutos secos.",
+      "La fruta congelada da un batido espeso y frío sin hielo; el plátano aporta cremosidad natural.",
+      "Empieza con menos líquido y añade más mientras trituras hasta lograr la textura que te gusta."
+     ],
+     "q": "¿Cuál es tu combinación de frutas favorita en un batido?",
+     "c": "Prepara un batido con la fórmula de cuatro partes, añade a escondidas un puñado de espinacas y mira si lo notas."
+    },
+    "fr": {
+     "t": "Composer un smoothie",
+     "g": "Mixer fruits, verdure, boisson végétale et graines en une boisson équilibrée.",
+     "p": [
+      "Formule simple : boisson végétale, un fruit comme banane ou baies, une poignée de verdure, et graines ou purée d’oléagineux.",
+      "Les fruits surgelés donnent un smoothie épais et frais sans glaçons ; la banane apporte une onctuosité naturelle.",
+      "Commence avec peu de liquide et ajoute-en en mixant jusqu’à la texture que tu aimes."
+     ],
+     "q": "Quelle est ta combinaison de fruits préférée dans un smoothie ?",
+     "c": "Mixe un smoothie selon la formule en quatre parties, glisse une poignée d’épinards et vois si tu les sens."
+    },
+    "it": {
+     "t": "Costruire un frullato",
+     "g": "Frullare frutta, verdure a foglia, bevanda vegetale e semi in una bevanda equilibrata.",
+     "p": [
+      "Formula semplice: bevanda vegetale, frutta come banana o frutti di bosco, una manciata di verdure e semi o burro di frutta secca.",
+      "La frutta surgelata rende il frullato denso e freddo senza ghiaccio; la banana dà cremosità naturale.",
+      "Parti con poco liquido e aggiungine mentre frulli finché raggiungi la consistenza che ti piace."
+     ],
+     "q": "Qual è la tua combinazione di frutta preferita in un frullato?",
+     "c": "Frulla un frullato con la formula in quattro parti, nascondendo una manciata di spinaci, e vedi se li senti."
+    },
+    "pt": {
+     "t": "Montar um batido",
+     "g": "Triturar fruta, folhas verdes, bebida vegetal e sementes numa bebida equilibrada.",
+     "p": [
+      "Fórmula simples: bebida vegetal, fruta como banana ou frutos vermelhos, uma mão-cheia de folhas e sementes ou manteiga de frutos secos.",
+      "A fruta congelada dá um batido espesso e fresco sem gelo; a banana dá cremosidade natural.",
+      "Começa com pouco líquido e junta mais enquanto trituras até chegares à textura que gostas."
+     ],
+     "q": "Qual é a tua combinação de frutas preferida num batido?",
+     "c": "Faz um batido com a fórmula de quatro partes, esconde uma mão-cheia de espinafres e vê se notas o sabor."
+    },
+    "pt_BR": {
+     "t": "Montando uma vitamina",
+     "g": "Bater frutas, folhas verdes, bebida vegetal e sementes numa bebida equilibrada.",
+     "p": [
+      "Fórmula simples: bebida vegetal, fruta como banana ou frutas vermelhas, um punhado de folhas e sementes ou pasta de castanha.",
+      "Fruta congelada deixa a vitamina grossa e gelada sem gelo; a banana dá cremosidade natural.",
+      "Comece com pouco líquido e vá colocando mais enquanto bate até chegar na textura que você gosta."
+     ],
+     "q": "Qual sua combinação de frutas preferida numa vitamina?",
+     "c": "Bata uma vitamina com a fórmula de quatro partes, escondendo um punhado de espinafre, e veja se sente o gosto."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avocado toast and beyond",
+     "g": "Get creative with toast toppings like hummus, beans, tomatoes and mushrooms.",
+     "p": [
+      "Mash avocado with lemon, salt and chilli flakes, then add contrast like radish slices, seeds or herbs.",
+      "Try other toppings: garlicky mushrooms, smashed white beans with olive oil, or hummus with roasted peppers.",
+      "Spanish pan con tomate, bread rubbed with ripe tomato, garlic and olive oil, shows how little a great toast needs."
+     ],
+     "q": "What is the most unusual toast topping you have ever enjoyed?",
+     "c": "Make two different toasts today, one with avocado and one with a topping you have never tried."
+    },
+    "de": {
+     "t": "Avocado-Toast und mehr",
+     "g": "Werde kreativ mit Toppings wie Hummus, Bohnen, Tomaten und Pilzen.",
+     "p": [
+      "Zerdrücke Avocado mit Zitrone, Salz und Chiliflocken und setze Kontraste mit Radieschen, Samen oder Kräutern.",
+      "Probiere andere Toppings: Knoblauchpilze, zerdrückte weiße Bohnen mit Olivenöl oder Hummus mit Ofenpaprika.",
+      "Spanisches Pan con Tomate, Brot mit reifer Tomate, Knoblauch und Olivenöl, zeigt, wie wenig ein toller Toast braucht."
+     ],
+     "q": "Was ist das ungewöhnlichste Toast-Topping, das dir je geschmeckt hat?",
+     "c": "Mach heute zwei verschiedene Toasts, einen mit Avocado und einen mit einem Topping, das du noch nie probiert hast."
+    },
+    "es": {
+     "t": "Tostada de aguacate y más allá",
+     "g": "Ser creativo con toppings como hummus, alubias, tomate y setas.",
+     "p": [
+      "Machaca aguacate con limón, sal y chile en copos, y añade contraste con rábano, semillas o hierbas.",
+      "Prueba otros toppings: champiñones al ajillo, alubias blancas aplastadas con aceite o hummus con pimientos asados.",
+      "El pan con tomate, pan frotado con tomate maduro, ajo y aceite de oliva, demuestra lo poco que necesita una gran tostada."
+     ],
+     "q": "¿Cuál es el topping más original que has disfrutado en una tostada?",
+     "c": "Haz hoy dos tostadas distintas: una con aguacate y otra con un topping que nunca hayas probado."
+    },
+    "fr": {
+     "t": "Avocado toast et au-delà",
+     "g": "Être créatif avec des garnitures comme houmous, haricots, tomates et champignons.",
+     "p": [
+      "Écrase l’avocat avec citron, sel et piment en flocons, puis ajoute du contraste : radis, graines ou herbes.",
+      "Essaie d’autres garnitures : champignons à l’ail, haricots blancs écrasés à l’huile d’olive ou houmous aux poivrons rôtis.",
+      "Le pan con tomate espagnol, pain frotté de tomate mûre, d’ail et d’huile d’olive, montre qu’une super tartine demande peu."
+     ],
+     "q": "Quelle est la garniture de tartine la plus originale que tu aies aimée ?",
+     "c": "Prépare aujourd’hui deux tartines : une à l’avocat et une avec une garniture que tu n’as jamais goûtée."
+    },
+    "it": {
+     "t": "Avocado toast e oltre",
+     "g": "Essere creativi con condimenti come hummus, fagioli, pomodori e funghi.",
+     "p": [
+      "Schiaccia l’avocado con limone, sale e peperoncino in fiocchi, poi aggiungi contrasto con ravanelli, semi o erbe.",
+      "Prova altri condimenti: funghi all’aglio, fagioli bianchi schiacciati con olio d’oliva o hummus con peperoni arrosto.",
+      "Il pan con tomate spagnolo, pane strofinato con pomodoro maturo, aglio e olio, mostra quanto poco serve a una grande fetta."
+     ],
+     "q": "Qual è il condimento più insolito che hai gustato su una fetta di pane?",
+     "c": "Prepara oggi due fette diverse: una con avocado e una con un condimento che non hai mai provato."
+    },
+    "pt": {
+     "t": "Tosta de abacate e muito mais",
+     "g": "Ser criativo com coberturas como húmus, feijão, tomate e cogumelos.",
+     "p": [
+      "Esmaga abacate com limão, sal e flocos de malagueta, e junta contraste com rabanete, sementes ou ervas.",
+      "Experimenta outras coberturas: cogumelos com alho, feijão branco esmagado com azeite ou húmus com pimentos assados.",
+      "O pan con tomate espanhol, pão esfregado com tomate maduro, alho e azeite, mostra quão pouco uma ótima tosta precisa."
+     ],
+     "q": "Qual foi a cobertura de tosta mais invulgar de que já gostaste?",
+     "c": "Faz hoje duas tostas diferentes: uma com abacate e outra com uma cobertura que nunca provaste."
+    },
+    "pt_BR": {
+     "t": "Torrada de abacate e muito mais",
+     "g": "Ser criativo com coberturas como homus, feijão, tomate e cogumelos.",
+     "p": [
+      "Amasse abacate com limão, sal e pimenta calabresa, e coloque contraste com rabanete, sementes ou ervas.",
+      "Experimente outras coberturas: cogumelos no alho, feijão branco amassado com azeite ou homus com pimentão assado.",
+      "O pan con tomate espanhol, pão esfregado com tomate maduro, alho e azeite, mostra como uma ótima torrada precisa de pouco."
+     ],
+     "q": "Qual a cobertura de torrada mais diferente que você já curtiu?",
+     "c": "Faça hoje duas torradas diferentes: uma com abacate e outra com uma cobertura que você nunca provou."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pancakes without eggs",
+     "g": "Make fluffy pancakes with plant milk and a little baking powder.",
+     "p": [
+      "Whisk flour, baking powder, a pinch of salt and a little sugar, then stir in plant milk and a spoon of oil.",
+      "A splash of vinegar or lemon juice in the milk reacts with the baking powder for extra lift.",
+      "Do not overmix: a few lumps keep pancakes tender; cook on medium heat and flip when bubbles appear."
+     ],
+     "q": "What toppings would you put on your perfect stack of pancakes?",
+     "c": "Make a small batch of egg-free pancakes this weekend and flip each one only once, when bubbles form."
+    },
+    "de": {
+     "t": "Pfannkuchen ohne Ei",
+     "g": "Mach fluffige Pfannkuchen mit Pflanzenmilch und etwas Backpulver.",
+     "p": [
+      "Verrühre Mehl, Backpulver, eine Prise Salz und etwas Zucker, dann Pflanzenmilch und einen Löffel Öl unterrühren.",
+      "Ein Schuss Essig oder Zitronensaft in der Milch reagiert mit dem Backpulver und lässt sie höher aufgehen.",
+      "Nicht zu lange rühren, ein paar Klümpchen halten sie zart; bei mittlerer Hitze backen und wenden, wenn Blasen kommen."
+     ],
+     "q": "Welche Toppings kämen auf deinen perfekten Pfannkuchenstapel?",
+     "c": "Back am Wochenende ein paar eifreie Pfannkuchen und wende jeden nur einmal, wenn sich Bläschen zeigen."
+    },
+    "es": {
+     "t": "Tortitas sin huevo",
+     "g": "Preparar tortitas esponjosas con bebida vegetal y un poco de levadura química.",
+     "p": [
+      "Mezcla harina, levadura química, una pizca de sal y algo de azúcar, y añade bebida vegetal y una cucharada de aceite.",
+      "Un chorrito de vinagre o limón en la bebida reacciona con la levadura y las hace subir más.",
+      "No batas de más: unos grumos las mantienen tiernas; cocínalas a fuego medio y dales la vuelta cuando salgan burbujas."
+     ],
+     "q": "¿Qué toppings pondrías en tu montaña perfecta de tortitas?",
+     "c": "Haz este fin de semana unas pocas tortitas sin huevo y dales la vuelta solo una vez, cuando aparezcan burbujas."
+    },
+    "fr": {
+     "t": "Des pancakes sans œufs",
+     "g": "Préparer des pancakes moelleux avec une boisson végétale et un peu de levure chimique.",
+     "p": [
+      "Mélange farine, levure chimique, une pincée de sel et un peu de sucre, puis ajoute boisson végétale et une cuillère d’huile.",
+      "Un trait de vinaigre ou de citron dans la boisson réagit avec la levure et les fait mieux gonfler.",
+      "Ne mélange pas trop : quelques grumeaux les gardent tendres ; cuis à feu moyen et retourne quand des bulles apparaissent."
+     ],
+     "q": "Quelles garnitures mettrais-tu sur ta pile de pancakes idéale ?",
+     "c": "Fais ce week-end quelques pancakes sans œufs et retourne chacun une seule fois, quand les bulles se forment."
+    },
+    "it": {
+     "t": "Pancake senza uova",
+     "g": "Preparare pancake soffici con bevanda vegetale e un po’ di lievito per dolci.",
+     "p": [
+      "Mescola farina, lievito, un pizzico di sale e un po’ di zucchero, poi unisci bevanda vegetale e un cucchiaio d’olio.",
+      "Un goccio di aceto o limone nella bevanda reagisce con il lievito e li fa gonfiare di più.",
+      "Non mescolare troppo: qualche grumo li mantiene morbidi; cuoci a fuoco medio e gira quando compaiono le bolle."
+     ],
+     "q": "Quali condimenti metteresti sulla tua pila perfetta di pancake?",
+     "c": "Prepara nel fine settimana qualche pancake senza uova e girali una volta sola, quando si formano le bolle."
+    },
+    "pt": {
+     "t": "Panquecas sem ovos",
+     "g": "Fazer panquecas fofas com bebida vegetal e um pouco de fermento em pó.",
+     "p": [
+      "Mistura farinha, fermento em pó, uma pitada de sal e um pouco de açúcar, e junta bebida vegetal e uma colher de óleo.",
+      "Um pouco de vinagre ou limão na bebida reage com o fermento e faz as panquecas crescer mais.",
+      "Não mexas demasiado: alguns grumos deixam-nas macias; coze em lume médio e vira quando aparecerem bolhas."
+     ],
+     "q": "Que coberturas punhas na tua pilha perfeita de panquecas?",
+     "c": "Faz este fim de semana umas panquecas sem ovos e vira cada uma só uma vez, quando surgirem bolhas."
+    },
+    "pt_BR": {
+     "t": "Panquecas sem ovo",
+     "g": "Fazer panquecas fofinhas com bebida vegetal e um pouco de fermento químico.",
+     "p": [
+      "Misture farinha, fermento químico, uma pitada de sal e um pouco de açúcar, e junte bebida vegetal e uma colher de óleo.",
+      "Um pouco de vinagre ou limão na bebida reage com o fermento e faz as panquecas crescerem mais.",
+      "Não mexa demais: alguns grumos deixam a massa macia; cozinhe em fogo médio e vire quando aparecerem bolhas."
+     ],
+     "q": "Quais coberturas iriam na sua pilha perfeita de panquecas?",
+     "c": "Faça neste fim de semana umas panquecas sem ovo e vire cada uma só uma vez, quando surgirem bolhinhas."
+    }
+   }
+  }
+ ]
+}

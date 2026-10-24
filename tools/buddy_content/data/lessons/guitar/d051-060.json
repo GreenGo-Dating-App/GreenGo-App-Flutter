@@ -1,0 +1,835 @@
+{
+ "topic": "guitar",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notes on the low E string",
+     "g": "Learn the natural note names on the low E string up to the 12th fret.",
+     "p": [
+      "Natural notes on low E: open E, F at fret 1, G at 3, A at 5, B at 7, C at 8, D at 10 and E again at 12.",
+      "Notice the gaps: two frets between most notes, but only one fret between E and F, and between B and C.",
+      "At the 12th fret everything repeats an octave higher, often marked with a double dot on the neck."
+     ],
+     "q": "Which fret markers on your guitar help you most to find your way?",
+     "c": "Play each natural note on the low E string from fret 0 to 12, saying its name out loud, then go back down."
+    },
+    "de": {
+     "t": "Die Töne auf der tiefen E-Saite",
+     "g": "Lerne die Stammtöne auf der tiefen E-Saite bis zum 12. Bund.",
+     "p": [
+      "Stammtöne auf tiefem E: leer E, F im 1. Bund, G im 3., A im 5., H im 7., C im 8., D im 10. und wieder E im 12.",
+      "Achte auf die Abstände: meist zwei Bünde zwischen den Tönen, aber nur einer zwischen E und F sowie zwischen H und C.",
+      "Ab dem 12. Bund wiederholt sich alles eine Oktave höher, oft mit einem Doppelpunkt am Hals markiert."
+     ],
+     "q": "Welche Bundmarkierungen an deiner Gitarre helfen dir am meisten bei der Orientierung?",
+     "c": "Spiel jeden Stammton auf der tiefen E-Saite von Bund 0 bis 12, sag laut seinen Namen und geh dann zurück."
+    },
+    "es": {
+     "t": "Las notas de la cuerda Mi grave",
+     "g": "Aprender las notas naturales de la cuerda Mi grave hasta el traste 12.",
+     "p": [
+      "Notas naturales en Mi grave: Mi al aire, Fa en el traste 1, Sol en el 3, La en el 5, Si en el 7, Do en el 8, Re en el 10 y Mi en el 12.",
+      "Fíjate en los saltos: entre casi todas hay dos trastes, pero solo uno entre Mi y Fa, y entre Si y Do.",
+      "En el traste 12 todo se repite una octava más aguda; suele estar marcado con un doble punto en el mástil."
+     ],
+     "q": "¿Qué marcas del mástil de tu guitarra te ayudan más a orientarte?",
+     "c": "Toca cada nota natural de la cuerda Mi grave del traste 0 al 12 diciendo su nombre en voz alta, y luego baja."
+    },
+    "fr": {
+     "t": "Les notes de la corde de Mi grave",
+     "g": "Apprendre les notes naturelles sur la corde de Mi grave jusqu'à la case 12.",
+     "p": [
+      "Notes naturelles sur Mi grave : Mi à vide, Fa case 1, Sol case 3, La case 5, Si case 7, Do case 8, Ré case 10 et Mi de nouveau case 12.",
+      "Remarque les écarts : deux cases entre la plupart des notes, mais une seule entre Mi et Fa, et entre Si et Do.",
+      "À la case 12, tout recommence une octave plus haut, souvent marquée d'un double point sur le manche."
+     ],
+     "q": "Quels repères sur le manche de ta guitare t'aident le plus à t'orienter ?",
+     "c": "Joue chaque note naturelle sur le Mi grave de la case 0 à 12 en disant son nom à voix haute, puis redescends."
+    },
+    "it": {
+     "t": "Le note sulla corda di Mi basso",
+     "g": "Imparare le note naturali sulla corda di Mi basso fino al 12° tasto.",
+     "p": [
+      "Note naturali sul Mi basso: Mi a vuoto, Fa al 1° tasto, Sol al 3°, La al 5°, Si al 7°, Do all'8°, Re al 10° e di nuovo Mi al 12°.",
+      "Nota le distanze: due tasti tra quasi tutte le note, ma solo uno tra Mi e Fa, e tra Si e Do.",
+      "Al 12° tasto tutto si ripete un'ottava sopra; di solito è segnato con un doppio pallino sul manico."
+     ],
+     "q": "Quali segni sul manico della tua chitarra ti aiutano di più a orientarti?",
+     "c": "Suona ogni nota naturale sul Mi basso dal tasto 0 al 12 dicendo il nome ad alta voce, poi torna indietro."
+    },
+    "pt": {
+     "t": "As notas da corda Mi grave",
+     "g": "Aprender as notas naturais na corda Mi grave até à 12.ª casa.",
+     "p": [
+      "Notas naturais no Mi grave: Mi solto, Fá na 1.ª casa, Sol na 3.ª, Lá na 5.ª, Si na 7.ª, Dó na 8.ª, Ré na 10.ª e Mi outra vez na 12.ª.",
+      "Repara nos intervalos: duas casas entre quase todas as notas, mas só uma entre Mi e Fá, e entre Si e Dó.",
+      "Na 12.ª casa tudo se repete uma oitava acima; costuma estar marcada com um ponto duplo no braço."
+     ],
+     "q": "Que marcas no braço da tua guitarra te ajudam mais a orientar-te?",
+     "c": "Toca cada nota natural no Mi grave da casa 0 à 12 dizendo o nome em voz alta, depois desce."
+    },
+    "pt_BR": {
+     "t": "As notas da corda Mi grave",
+     "g": "Aprender as notas naturais na corda Mi grave até a casa 12.",
+     "p": [
+      "Notas naturais no Mi grave: Mi solto, Fá na casa 1, Sol na 3, Lá na 5, Si na 7, Dó na 8, Ré na 10 e Mi de novo na 12.",
+      "Repare nos intervalos: duas casas entre quase todas as notas, mas só uma entre Mi e Fá, e entre Si e Dó.",
+      "Na casa 12 tudo se repete uma oitava acima; ela costuma ter um ponto duplo no braço."
+     ],
+     "q": "Quais marcações no braço do seu violão ou guitarra mais ajudam você a se localizar?",
+     "c": "Toque cada nota natural no Mi grave da casa 0 à 12 falando o nome em voz alta, depois volte descendo."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notes on the A string",
+     "g": "Find the note names on the A string so you can name your power chords.",
+     "p": [
+      "Natural notes on the A string: open A, B at fret 2, C at 3, D at 5, E at 7, F at 8, G at 10 and A again at 12.",
+      "The same rule applies: one fret between B and C, and between E and F; two frets between all the others.",
+      "Now you can name any power chord: root on the A string at fret 5 is D, so the chord is D5."
+     ],
+     "q": "Can you name the power chord with its root on the A string at fret 7?",
+     "c": "Call out a random note, find it on the A string as fast as you can, and play its power chord. Do 10 notes."
+    },
+    "de": {
+     "t": "Die Töne auf der A-Saite",
+     "g": "Finde die Tonnamen auf der A-Saite, um deine Powerchords zu benennen.",
+     "p": [
+      "Stammtöne auf der A-Saite: leer A, H im 2. Bund, C im 3., D im 5., E im 7., F im 8., G im 10. und wieder A im 12.",
+      "Es gilt dieselbe Regel: ein Bund zwischen H und C sowie zwischen E und F, zwei Bünde zwischen allen anderen.",
+      "Jetzt kannst du jeden Powerchord benennen: Grundton auf der A-Saite im 5. Bund ist D, also heißt er D5."
+     ],
+     "q": "Wie heißt der Powerchord mit Grundton auf der A-Saite im 7. Bund?",
+     "c": "Nenn einen zufälligen Ton, finde ihn so schnell wie möglich auf der A-Saite und spiel seinen Powerchord. Mach 10 Töne."
+    },
+    "es": {
+     "t": "Las notas de la cuerda La",
+     "g": "Encontrar los nombres de las notas en la cuerda La para poder nombrar tus power chords.",
+     "p": [
+      "Notas naturales en la cuerda La: La al aire, Si en el traste 2, Do en el 3, Re en el 5, Mi en el 7, Fa en el 8, Sol en el 10 y La en el 12.",
+      "Rige la misma regla: un traste entre Si y Do, y entre Mi y Fa; dos trastes entre las demás.",
+      "Ya puedes nombrar cualquier power chord: tónica en la cuerda La, traste 5, es Re, así que el acorde es D5."
+     ],
+     "q": "¿Sabes nombrar el power chord con la tónica en la cuerda La, traste 7?",
+     "c": "Di una nota al azar, encuéntrala lo más rápido posible en la cuerda La y toca su power chord. Haz 10 notas."
+    },
+    "fr": {
+     "t": "Les notes de la corde de La",
+     "g": "Trouver le nom des notes sur la corde de La pour nommer tes power chords.",
+     "p": [
+      "Notes naturelles sur la corde de La : La à vide, Si case 2, Do case 3, Ré case 5, Mi case 7, Fa case 8, Sol case 10 et La case 12.",
+      "Même règle : une case entre Si et Do, et entre Mi et Fa ; deux cases entre toutes les autres.",
+      "Tu peux maintenant nommer n'importe quel power chord : fondamentale sur la corde de La case 5, c'est Ré, donc D5."
+     ],
+     "q": "Sais-tu nommer le power chord dont la fondamentale est sur la corde de La, case 7 ?",
+     "c": "Annonce une note au hasard, trouve-la le plus vite possible sur la corde de La et joue son power chord. Fais 10 notes."
+    },
+    "it": {
+     "t": "Le note sulla corda La",
+     "g": "Trovare i nomi delle note sulla corda La per dare un nome ai tuoi power chord.",
+     "p": [
+      "Note naturali sulla corda La: La a vuoto, Si al 2° tasto, Do al 3°, Re al 5°, Mi al 7°, Fa all'8°, Sol al 10° e La al 12°.",
+      "Vale la stessa regola: un tasto tra Si e Do, e tra Mi e Fa; due tasti tra tutte le altre.",
+      "Ora puoi nominare ogni power chord: tonica sulla corda La al 5° tasto è Re, quindi l'accordo è D5."
+     ],
+     "q": "Sai dire come si chiama il power chord con la tonica sulla corda La al 7° tasto?",
+     "c": "Di' una nota a caso, trovala il più in fretta possibile sulla corda La e suona il suo power chord. Fai 10 note."
+    },
+    "pt": {
+     "t": "As notas da corda Lá",
+     "g": "Encontrar os nomes das notas na corda Lá para dar nome aos teus power chords.",
+     "p": [
+      "Notas naturais na corda Lá: Lá solto, Si na 2.ª casa, Dó na 3.ª, Ré na 5.ª, Mi na 7.ª, Fá na 8.ª, Sol na 10.ª e Lá na 12.ª.",
+      "Vale a mesma regra: uma casa entre Si e Dó, e entre Mi e Fá; duas casas entre todas as outras.",
+      "Agora já consegues dar nome a qualquer power chord: tónica na corda Lá na 5.ª casa é Ré, por isso o acorde é D5."
+     ],
+     "q": "Sabes o nome do power chord com tónica na corda Lá, 7.ª casa?",
+     "c": "Diz uma nota ao acaso, encontra-a o mais depressa possível na corda Lá e toca o seu power chord. Faz 10 notas."
+    },
+    "pt_BR": {
+     "t": "As notas da corda Lá",
+     "g": "Encontrar os nomes das notas na corda Lá para dar nome aos seus power chords.",
+     "p": [
+      "Notas naturais na corda Lá: Lá solto, Si na casa 2, Dó na 3, Ré na 5, Mi na 7, Fá na 8, Sol na 10 e Lá na 12.",
+      "Vale a mesma regra: uma casa entre Si e Dó, e entre Mi e Fá; duas casas entre todas as outras.",
+      "Agora você já pode nomear qualquer power chord: tônica na corda Lá, casa 5, é Ré, então o acorde é D5."
+     ],
+     "q": "Você sabe o nome do power chord com tônica na corda Lá, casa 7?",
+     "c": "Fale uma nota aleatória, ache ela o mais rápido possível na corda Lá e toque o power chord dela. Faça 10 notas."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharps, flats and half steps",
+     "g": "See how one fret equals a half step and why some notes have two names.",
+     "p": [
+      "Moving one fret is a half step (semitone); two frets is a whole step (tone).",
+      "A sharp (#) raises a note by a half step, a flat (b) lowers it. The note between F and G is both F# and Gb.",
+      "There is no sharp or flat between E and F or between B and C: they are already a half step apart."
+     ],
+     "q": "Can you work out the other name for the note between A and B?",
+     "c": "On the low E string, play every fret from 0 to 12 naming each note with sharps going up and with flats coming down."
+    },
+    "de": {
+     "t": "Kreuze, Bs und Halbtöne",
+     "g": "Erfahre, warum ein Bund einem Halbton entspricht und manche Töne zwei Namen haben.",
+     "p": [
+      "Ein Bund weiter ist ein Halbton, zwei Bünde sind ein Ganzton.",
+      "Ein Kreuz (#) erhöht einen Ton um einen Halbton, ein b erniedrigt ihn. Der Ton zwischen F und G ist Fis und zugleich Ges.",
+      "Zwischen E und F und zwischen H und C gibt es kein Kreuz und kein b: Sie liegen schon einen Halbton auseinander."
+     ],
+     "q": "Weißt du, wie der Ton zwischen A und H noch heißt? (Tipp: In Deutsch hat er einen eigenen Namen, B.)",
+     "c": "Spiel auf der tiefen E-Saite jeden Bund von 0 bis 12 und benenne die Töne aufwärts mit Kreuzen, abwärts mit bs."
+    },
+    "es": {
+     "t": "Sostenidos, bemoles y semitonos",
+     "g": "Ver que un traste equivale a un semitono y por qué algunas notas tienen dos nombres.",
+     "p": [
+      "Moverse un traste es un semitono; dos trastes son un tono.",
+      "El sostenido (#) sube una nota un semitono y el bemol (b) la baja. La nota entre Fa y Sol es Fa# y también Solb.",
+      "Entre Mi y Fa y entre Si y Do no hay sostenido ni bemol: ya están a un semitono de distancia."
+     ],
+     "q": "¿Sabes cuál es el otro nombre de la nota que hay entre La y Si?",
+     "c": "En la cuerda Mi grave, toca cada traste del 0 al 12 nombrando las notas con sostenidos al subir y con bemoles al bajar."
+    },
+    "fr": {
+     "t": "Dièses, bémols et demi-tons",
+     "g": "Comprendre qu'une case vaut un demi-ton et pourquoi certaines notes ont deux noms.",
+     "p": [
+      "Avancer d'une case, c'est un demi-ton ; deux cases font un ton.",
+      "Le dièse (#) monte une note d'un demi-ton, le bémol (b) la descend. La note entre Fa et Sol est Fa# et aussi Solb.",
+      "Il n'y a ni dièse ni bémol entre Mi et Fa, ni entre Si et Do : ils sont déjà à un demi-ton."
+     ],
+     "q": "Sais-tu trouver l'autre nom de la note entre La et Si ?",
+     "c": "Sur le Mi grave, joue chaque case de 0 à 12 en nommant les notes avec des dièses en montant et des bémols en descendant."
+    },
+    "it": {
+     "t": "Diesis, bemolle e semitoni",
+     "g": "Capire che un tasto vale un semitono e perché alcune note hanno due nomi.",
+     "p": [
+      "Spostarsi di un tasto è un semitono; due tasti sono un tono.",
+      "Il diesis (#) alza una nota di un semitono, il bemolle (b) la abbassa. La nota tra Fa e Sol è Fa# e anche Solb.",
+      "Tra Mi e Fa e tra Si e Do non ci sono diesis né bemolle: sono già a un semitono di distanza."
+     ],
+     "q": "Sai trovare l'altro nome della nota tra La e Si?",
+     "c": "Sul Mi basso suona ogni tasto da 0 a 12 nominando le note con i diesis salendo e con i bemolle scendendo."
+    },
+    "pt": {
+     "t": "Sustenidos, bemóis e meios-tons",
+     "g": "Perceber que uma casa vale meio-tom e porque algumas notas têm dois nomes.",
+     "p": [
+      "Avançar uma casa é meio-tom; duas casas são um tom.",
+      "O sustenido (#) sobe uma nota meio-tom e o bemol (b) desce-a. A nota entre Fá e Sol é Fá# e também Solb.",
+      "Entre Mi e Fá e entre Si e Dó não há sustenido nem bemol: já estão a meio-tom de distância."
+     ],
+     "q": "Consegues descobrir o outro nome da nota entre Lá e Si?",
+     "c": "No Mi grave, toca cada casa de 0 a 12 dizendo as notas com sustenidos a subir e com bemóis a descer."
+    },
+    "pt_BR": {
+     "t": "Sustenidos, bemóis e semitons",
+     "g": "Entender que uma casa vale um semitom e por que algumas notas têm dois nomes.",
+     "p": [
+      "Andar uma casa é um semitom; duas casas são um tom.",
+      "O sustenido (#) sobe a nota um semitom e o bemol (b) desce. A nota entre Fá e Sol é Fá# e também Solb.",
+      "Entre Mi e Fá e entre Si e Dó não existe sustenido nem bemol: elas já estão a um semitom de distância."
+     ],
+     "q": "Você consegue descobrir o outro nome da nota entre Lá e Si?",
+     "c": "No Mi grave, toque cada casa de 0 a 12 falando as notas com sustenidos subindo e com bemóis descendo."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Octave shapes",
+     "g": "Find the same note higher up to move around the neck quickly.",
+     "p": [
+      "From a note on the low E string, skip one string and go up two frets on the D string: same note, one octave higher.",
+      "From a note on the A string, skip one string and go up two frets on the G string for its octave.",
+      "Use finger 1 for the low note and finger 3 or 4 for the octave, and mute the string in between with finger 1."
+     ],
+     "q": "Can you find the octave of the G on the low E string, 3rd fret?",
+     "c": "Find the octave of every natural note on the low E string from F to E using the skip-a-string shape, saying each name."
+    },
+    "de": {
+     "t": "Oktavgriffe",
+     "g": "Finde denselben Ton höher, um dich schnell über den Hals zu bewegen.",
+     "p": [
+      "Von einem Ton auf der tiefen E-Saite: eine Saite überspringen und auf der D-Saite zwei Bünde höher, gleicher Ton, eine Oktave höher.",
+      "Von einem Ton auf der A-Saite: eine Saite überspringen, auf der G-Saite zwei Bünde höher liegt die Oktave.",
+      "Nimm Finger 1 für den tiefen Ton und Finger 3 oder 4 für die Oktave und dämpf die Saite dazwischen mit Finger 1."
+     ],
+     "q": "Findest du die Oktave des G auf der tiefen E-Saite im 3. Bund?",
+     "c": "Finde mit dem Oktavgriff die Oktave jedes Stammtons auf der tiefen E-Saite von F bis E und sag jeden Namen laut."
+    },
+    "es": {
+     "t": "Formas de octava",
+     "g": "Encontrar la misma nota más aguda para moverte rápido por el mástil.",
+     "p": [
+      "Desde una nota en el Mi grave, sáltate una cuerda y sube dos trastes en la cuerda Re: misma nota, una octava más aguda.",
+      "Desde una nota en la cuerda La, sáltate una cuerda y sube dos trastes en la cuerda Sol para su octava.",
+      "Usa el dedo 1 para la nota grave y el 3 o el 4 para la octava, y apaga la cuerda del medio con el dedo 1."
+     ],
+     "q": "¿Encuentras la octava del Sol que está en el Mi grave, traste 3?",
+     "c": "Busca la octava de cada nota natural del Mi grave, de Fa a Mi, con la forma de saltar una cuerda, diciendo cada nombre."
+    },
+    "fr": {
+     "t": "Les formes d'octave",
+     "g": "Trouver la même note plus haut pour te déplacer vite sur le manche.",
+     "p": [
+      "Depuis une note sur le Mi grave, saute une corde et monte de deux cases sur la corde de Ré : même note, une octave plus haut.",
+      "Depuis une note sur la corde de La, saute une corde et monte de deux cases sur la corde de Sol pour l'octave.",
+      "Doigt 1 pour la note grave, doigt 3 ou 4 pour l'octave, et étouffe la corde du milieu avec le doigt 1."
+     ],
+     "q": "Sais-tu trouver l'octave du Sol sur le Mi grave, case 3 ?",
+     "c": "Trouve l'octave de chaque note naturelle du Mi grave, de Fa à Mi, avec la forme qui saute une corde, en disant chaque nom."
+    },
+    "it": {
+     "t": "Le forme d'ottava",
+     "g": "Trovare la stessa nota più in alto per muoverti velocemente sul manico.",
+     "p": [
+      "Da una nota sul Mi basso, salta una corda e sali di due tasti sulla corda Re: stessa nota, un'ottava sopra.",
+      "Da una nota sulla corda La, salta una corda e sali di due tasti sulla corda Sol per la sua ottava.",
+      "Usa il dito 1 per la nota bassa e il 3 o il 4 per l'ottava, e smorza la corda in mezzo con il dito 1."
+     ],
+     "q": "Trovi l'ottava del Sol sul Mi basso al 3° tasto?",
+     "c": "Trova l'ottava di ogni nota naturale del Mi basso, da Fa a Mi, con la forma che salta una corda, dicendo ogni nome."
+    },
+    "pt": {
+     "t": "Formas de oitava",
+     "g": "Encontrar a mesma nota mais acima para te moveres depressa pelo braço.",
+     "p": [
+      "A partir de uma nota no Mi grave, salta uma corda e sobe duas casas na corda Ré: a mesma nota, uma oitava acima.",
+      "A partir de uma nota na corda Lá, salta uma corda e sobe duas casas na corda Sol para a oitava.",
+      "Usa o dedo 1 na nota grave e o 3 ou 4 na oitava, e abafa a corda do meio com o dedo 1."
+     ],
+     "q": "Consegues encontrar a oitava do Sol no Mi grave, 3.ª casa?",
+     "c": "Encontra a oitava de cada nota natural do Mi grave, de Fá a Mi, com a forma de saltar uma corda, dizendo cada nome."
+    },
+    "pt_BR": {
+     "t": "Desenhos de oitava",
+     "g": "Encontrar a mesma nota mais aguda para se mover rápido pelo braço.",
+     "p": [
+      "A partir de uma nota no Mi grave, pule uma corda e suba duas casas na corda Ré: mesma nota, uma oitava acima.",
+      "A partir de uma nota na corda Lá, pule uma corda e suba duas casas na corda Sol para achar a oitava.",
+      "Use o dedo 1 na nota grave e o 3 ou 4 na oitava, e abafe a corda do meio com o dedo 1."
+     ],
+     "q": "Você consegue achar a oitava do Sol no Mi grave, casa 3?",
+     "c": "Ache a oitava de cada nota natural do Mi grave, de Fá a Mi, com o desenho de pular uma corda, falando cada nome."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fingerpicking: thumb and fingers",
+     "g": "Assign p, i, m and a to the strings for basic fingerstyle.",
+     "p": [
+      "Picking-hand fingers have letters from Spanish: p thumb, i index, m middle, a ring. The little finger usually rests.",
+      "Basic setup: the thumb plays the three bass strings, i plays the G string, m the B string and a the high E.",
+      "The thumb pushes down and slightly forward; the fingers pluck upward toward your palm, staying close to the strings."
+     ],
+     "q": "Do you have short nails, or are you thinking of growing them a little for fingerpicking?",
+     "c": "With open strings, play p (low E), i, m, a, then p (A), i, m, a, and so on, slowly and evenly for 3 minutes."
+    },
+    "de": {
+     "t": "Fingerpicking: Daumen und Finger",
+     "g": "Ordne p, i, m und a den Saiten zu, für einfaches Fingerstyle-Spiel.",
+     "p": [
+      "Die Finger der Anschlagshand haben Buchstaben aus dem Spanischen: p Daumen, i Zeige-, m Mittel-, a Ringfinger. Der kleine Finger ruht meist.",
+      "Grundaufteilung: Der Daumen spielt die drei Basssaiten, i die G-Saite, m die H-Saite und a die hohe E-Saite.",
+      "Der Daumen drückt nach unten und leicht nach vorn, die Finger zupfen nach oben zur Handfläche hin, nah an den Saiten."
+     ],
+     "q": "Hast du kurze Nägel, oder überlegst du, sie fürs Fingerpicking etwas wachsen zu lassen?",
+     "c": "Spiel auf Leersaiten p (tiefes E), i, m, a, dann p (A), i, m, a usw., 3 Minuten lang langsam und gleichmäßig."
+    },
+    "es": {
+     "t": "Fingerpicking: pulgar y dedos",
+     "g": "Asignar p, i, m y a a las cuerdas para tocar fingerstyle básico.",
+     "p": [
+      "Los dedos de la mano derecha tienen letras: p pulgar, i índice, m medio, a anular. El meñique suele descansar.",
+      "Reparto básico: el pulgar toca las tres cuerdas graves, i la cuerda Sol, m la Si y a el Mi agudo.",
+      "El pulgar empuja hacia abajo y algo hacia delante; los dedos pulsan hacia arriba, hacia la palma, cerca de las cuerdas."
+     ],
+     "q": "¿Llevas las uñas cortas o estás pensando en dejarlas crecer un poco para el fingerpicking?",
+     "c": "Con cuerdas al aire, toca p (Mi grave), i, m, a, luego p (La), i, m, a, y así, despacio y parejo durante 3 minutos."
+    },
+    "fr": {
+     "t": "Le picking : pouce et doigts",
+     "g": "Attribuer p, i, m et a aux cordes pour un jeu aux doigts de base.",
+     "p": [
+      "Les doigts de la main droite ont des lettres venues de l'espagnol : p pouce, i index, m majeur, a annulaire. L'auriculaire se repose.",
+      "Répartition de base : le pouce joue les trois cordes graves, i la corde de Sol, m la corde de Si et a le Mi aigu.",
+      "Le pouce pousse vers le bas et un peu vers l'avant ; les doigts pincent vers le haut, vers la paume, près des cordes."
+     ],
+     "q": "As-tu les ongles courts, ou penses-tu les laisser pousser un peu pour le picking ?",
+     "c": "Sur cordes à vide, joue p (Mi grave), i, m, a, puis p (La), i, m, a, et ainsi de suite, lentement et régulièrement, 3 minutes."
+    },
+    "it": {
+     "t": "Fingerpicking: pollice e dita",
+     "g": "Assegnare p, i, m e a alle corde per un fingerstyle di base.",
+     "p": [
+      "Le dita della mano destra hanno lettere dallo spagnolo: p pollice, i indice, m medio, a anulare. Il mignolo di solito riposa.",
+      "Schema base: il pollice suona le tre corde basse, i la corda Sol, m la corda Si e a il Mi cantino.",
+      "Il pollice spinge in giù e un po' in avanti; le dita pizzicano verso l'alto, verso il palmo, restando vicine alle corde."
+     ],
+     "q": "Hai le unghie corte, o pensi di farle crescere un po' per il fingerpicking?",
+     "c": "Sulle corde a vuoto suona p (Mi basso), i, m, a, poi p (La), i, m, a, e così via, piano e regolare per 3 minuti."
+    },
+    "pt": {
+     "t": "Dedilhado: polegar e dedos",
+     "g": "Atribuir p, i, m e a às cordas para um dedilhado básico.",
+     "p": [
+      "Os dedos da mão direita têm letras vindas do espanhol: p polegar, i indicador, m médio, a anelar. O mindinho costuma descansar.",
+      "Divisão básica: o polegar toca as três cordas graves, o i a corda Sol, o m a corda Si e o a o Mi agudo.",
+      "O polegar empurra para baixo e um pouco para a frente; os dedos puxam para cima, em direção à palma, perto das cordas."
+     ],
+     "q": "Tens as unhas curtas, ou estás a pensar deixá-las crescer um pouco para o dedilhado?",
+     "c": "Com cordas soltas, toca p (Mi grave), i, m, a, depois p (Lá), i, m, a, e assim por diante, devagar e regular, 3 minutos."
+    },
+    "pt_BR": {
+     "t": "Dedilhado: polegar e dedos",
+     "g": "Atribuir p, i, m e a às cordas para um dedilhado básico.",
+     "p": [
+      "Os dedos da mão direita têm letras: p polegar, i indicador, m médio, a anelar. O mindinho costuma descansar.",
+      "Divisão básica: o polegar toca as três cordas graves, o i a corda Sol, o m a corda Si e o a o Mi agudo.",
+      "O polegar empurra para baixo e um pouco para a frente; os dedos puxam para cima, na direção da palma, perto das cordas."
+     ],
+     "q": "Você usa unhas curtas, ou pensa em deixar crescer um pouco para o dedilhado?",
+     "c": "Com as cordas soltas, toque p (Mi grave), i, m, a, depois p (Lá), i, m, a, e assim por diante, devagar e por igual, 3 minutos."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first fingerpicking pattern",
+     "g": "Play a simple arpeggio pattern over C, Am and G.",
+     "p": [
+      "The pattern is p, i, m, a, played twice per bar of 4/4: eight even notes, counted 1 and 2 and 3 and 4 and.",
+      "The thumb always plays the chord's root: A string for C and Am, low E string for G. Fingers i, m, a stay on G, B, high E.",
+      "Hold the whole chord down so every note rings into the next, like a harp. Keep the tempo slow and steady."
+     ],
+     "q": "How does fingerpicking sound to you compared with strumming the same chords?",
+     "c": "Play C, Am, G, C with p, i, m, a twice per chord for 3 minutes at a slow tempo, keeping the thumb on the right string."
+    },
+    "de": {
+     "t": "Dein erstes Fingerpicking-Muster",
+     "g": "Spiel ein einfaches Arpeggio-Muster über C, Am und G.",
+     "p": [
+      "Das Muster ist p, i, m, a, zweimal pro 4/4-Takt: acht gleichmäßige Töne, gezählt 1 und 2 und 3 und 4 und.",
+      "Der Daumen spielt immer den Grundton: A-Saite bei C und Am, tiefe E-Saite bei G. Die Finger i, m, a bleiben auf G, H und hohem E.",
+      "Halt den ganzen Akkord gegriffen, damit jeder Ton in den nächsten klingt, wie bei einer Harfe. Tempo langsam und ruhig."
+     ],
+     "q": "Wie klingt Fingerpicking für dich im Vergleich zum Schlagen derselben Akkorde?",
+     "c": "Spiel C, Am, G, C mit p, i, m, a zweimal pro Akkord, 3 Minuten langsam, und achte darauf, dass der Daumen die richtige Saite trifft."
+    },
+    "es": {
+     "t": "Tu primer patrón de fingerpicking",
+     "g": "Tocar un patrón de arpegio sencillo sobre Do, Lam y Sol.",
+     "p": [
+      "El patrón es p, i, m, a, dos veces por compás de 4/4: ocho notas parejas, contando 1 y 2 y 3 y 4 y.",
+      "El pulgar toca siempre la tónica: cuerda La en Do y Lam, Mi grave en Sol. Los dedos i, m, a se quedan en Sol, Si y Mi agudo.",
+      "Mantén pisado todo el acorde para que cada nota suene sobre la siguiente, como un arpa. Tempo lento y constante."
+     ],
+     "q": "¿Cómo te suena el fingerpicking comparado con rasguear los mismos acordes?",
+     "c": "Toca Do, Lam, Sol, Do con p, i, m, a dos veces por acorde durante 3 minutos, despacio, con el pulgar en la cuerda correcta."
+    },
+    "fr": {
+     "t": "Ton premier motif de picking",
+     "g": "Jouer un motif d'arpège simple sur Do, Lam et Sol.",
+     "p": [
+      "Le motif est p, i, m, a, joué deux fois par mesure à 4/4 : huit notes égales, comptées 1 et 2 et 3 et 4 et.",
+      "Le pouce joue toujours la fondamentale : corde de La pour Do et Lam, Mi grave pour Sol. i, m, a restent sur Sol, Si et Mi aigu.",
+      "Garde tout l'accord appuyé pour que chaque note sonne dans la suivante, comme une harpe. Tempo lent et régulier."
+     ],
+     "q": "Comment sonne le picking pour toi, comparé au grattage des mêmes accords ?",
+     "c": "Joue Do, Lam, Sol, Do avec p, i, m, a deux fois par accord pendant 3 minutes, lentement, le pouce sur la bonne corde."
+    },
+    "it": {
+     "t": "Il tuo primo schema di fingerpicking",
+     "g": "Suonare un semplice arpeggio su Do, Lam e Sol.",
+     "p": [
+      "Lo schema è p, i, m, a, due volte per battuta in 4/4: otto note regolari, contando 1 e 2 e 3 e 4 e.",
+      "Il pollice suona sempre la tonica: corda La per Do e Lam, Mi basso per Sol. Le dita i, m, a restano su Sol, Si e Mi cantino.",
+      "Tieni premuto tutto l'accordo così ogni nota risuona nella successiva, come un'arpa. Tempo lento e costante."
+     ],
+     "q": "Come ti suona il fingerpicking rispetto a pennellare gli stessi accordi?",
+     "c": "Suona Do, Lam, Sol, Do con p, i, m, a due volte per accordo per 3 minuti, piano, con il pollice sulla corda giusta."
+    },
+    "pt": {
+     "t": "O teu primeiro padrão de dedilhado",
+     "g": "Tocar um padrão simples de arpejo sobre Dó, Lá menor e Sol.",
+     "p": [
+      "O padrão é p, i, m, a, duas vezes por compasso de 4/4: oito notas regulares, contando 1 e 2 e 3 e 4 e.",
+      "O polegar toca sempre a tónica: corda Lá em Dó e Lá menor, Mi grave em Sol. Os dedos i, m, a ficam no Sol, Si e Mi agudo.",
+      "Mantém o acorde todo pressionado para cada nota soar por cima da seguinte, como uma harpa. Andamento lento e certo."
+     ],
+     "q": "Como te soa o dedilhado comparado com tocar os mesmos acordes em batida?",
+     "c": "Toca Dó, Lá menor, Sol, Dó com p, i, m, a duas vezes por acorde durante 3 minutos, devagar, com o polegar na corda certa."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro padrão de dedilhado",
+     "g": "Tocar um padrão simples de arpejo sobre Dó, Lá menor e Sol.",
+     "p": [
+      "O padrão é p, i, m, a, duas vezes por compasso de 4/4: oito notas iguais, contando 1 e 2 e 3 e 4 e.",
+      "O polegar toca sempre a tônica: corda Lá no Dó e no Lá menor, Mi grave no Sol. Os dedos i, m, a ficam no Sol, Si e Mi agudo.",
+      "Mantenha o acorde todo apertado para cada nota soar por cima da próxima, como uma harpa. Andamento lento e constante."
+     ],
+     "q": "Como o dedilhado soa para você comparado com tocar os mesmos acordes na batida?",
+     "c": "Toque Dó, Lá menor, Sol, Dó com p, i, m, a duas vezes por acorde por 3 minutos, devagar, com o polegar na corda certa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thumb independence",
+     "g": "Alternate bass notes with the thumb while the fingers pluck.",
+     "p": [
+      "The thumb plays a steady bass on every beat, switching between two strings: on C, the A string, then the D string.",
+      "While the thumb keeps the beat, fingers i and m pluck the G and B strings between thumb notes, on the ands.",
+      "Practise the thumb alone first until it runs on autopilot, then add one finger, then the other."
+     ],
+     "q": "Does your thumb want to follow your fingers, or can it keep its own steady beat?",
+     "c": "On C, play the thumb alone (A, D, A, D) for 1 minute, then add i and m on the ands for 2 more minutes, slowly."
+    },
+    "de": {
+     "t": "Daumenunabhängigkeit",
+     "g": "Spiel mit dem Daumen Wechselbässe, während die Finger zupfen.",
+     "p": [
+      "Der Daumen spielt auf jedem Schlag einen gleichmäßigen Bass und wechselt zwischen zwei Saiten: bei C erst A-, dann D-Saite.",
+      "Während der Daumen den Takt hält, zupfen i und m die G- und H-Saite zwischen den Daumentönen, auf den unds.",
+      "Üb zuerst nur den Daumen, bis er wie im Autopilot läuft, dann nimm einen Finger dazu, dann den anderen."
+     ],
+     "q": "Will dein Daumen den Fingern folgen, oder hält er seinen eigenen Takt?",
+     "c": "Spiel bei C erst 1 Minute nur den Daumen (A, D, A, D), dann 2 Minuten mit i und m auf den unds, langsam."
+    },
+    "es": {
+     "t": "Independencia del pulgar",
+     "g": "Alternar bajos con el pulgar mientras los dedos pulsan.",
+     "p": [
+      "El pulgar toca un bajo constante en cada pulso, alternando entre dos cuerdas: en Do, la cuerda La y luego la Re.",
+      "Mientras el pulgar marca el pulso, i y m pulsan las cuerdas Sol y Si entre las notas del pulgar, en los y.",
+      "Practica primero solo el pulgar hasta que vaya en piloto automático, luego añade un dedo y después el otro."
+     ],
+     "q": "¿Tu pulgar quiere seguir a los dedos o consigue mantener su propio pulso?",
+     "c": "En Do, toca solo el pulgar (La, Re, La, Re) durante 1 minuto y luego añade i y m en los y durante 2 minutos más, despacio."
+    },
+    "fr": {
+     "t": "L'indépendance du pouce",
+     "g": "Alterner les basses au pouce pendant que les doigts pincent.",
+     "p": [
+      "Le pouce joue une basse régulière sur chaque temps en alternant deux cordes : sur Do, la corde de La puis celle de Ré.",
+      "Pendant que le pouce tient le temps, i et m pincent les cordes de Sol et de Si entre les notes du pouce, sur les et.",
+      "Travaille d'abord le pouce seul jusqu'à ce qu'il tourne en pilote automatique, puis ajoute un doigt, puis l'autre."
+     ],
+     "q": "Ton pouce veut-il suivre tes doigts, ou arrive-t-il à garder son propre temps ?",
+     "c": "Sur Do, joue le pouce seul (La, Ré, La, Ré) pendant 1 minute, puis ajoute i et m sur les et pendant 2 minutes, lentement."
+    },
+    "it": {
+     "t": "Indipendenza del pollice",
+     "g": "Alternare i bassi con il pollice mentre le dita pizzicano.",
+     "p": [
+      "Il pollice suona un basso costante su ogni battito, alternando due corde: sul Do, la corda La e poi la corda Re.",
+      "Mentre il pollice tiene il tempo, i e m pizzicano le corde Sol e Si tra le note del pollice, sulle e.",
+      "Esercita prima solo il pollice finché va col pilota automatico, poi aggiungi un dito e poi l'altro."
+     ],
+     "q": "Il tuo pollice vuole seguire le dita, o riesce a tenere il suo battito costante?",
+     "c": "Sul Do suona solo il pollice (La, Re, La, Re) per 1 minuto, poi aggiungi i e m sulle e per altri 2 minuti, piano."
+    },
+    "pt": {
+     "t": "Independência do polegar",
+     "g": "Alternar baixos com o polegar enquanto os dedos dedilham.",
+     "p": [
+      "O polegar toca um baixo regular em cada tempo, alternando entre duas cordas: em Dó, a corda Lá e depois a corda Ré.",
+      "Enquanto o polegar marca o tempo, o i e o m tocam as cordas Sol e Si entre as notas do polegar, nos e.",
+      "Pratica primeiro só o polegar até andar em piloto automático, depois junta um dedo e depois o outro."
+     ],
+     "q": "O teu polegar quer seguir os dedos, ou consegue manter o seu próprio tempo?",
+     "c": "Em Dó, toca só o polegar (Lá, Ré, Lá, Ré) durante 1 minuto e depois junta i e m nos e durante mais 2 minutos, devagar."
+    },
+    "pt_BR": {
+     "t": "Independência do polegar",
+     "g": "Alternar baixos com o polegar enquanto os dedos dedilham.",
+     "p": [
+      "O polegar toca um baixo constante em cada tempo, alternando entre duas cordas: no Dó, a corda Lá e depois a corda Ré.",
+      "Enquanto o polegar marca o tempo, i e m tocam as cordas Sol e Si entre as notas do polegar, nos e.",
+      "Pratique primeiro só o polegar até ele ir no piloto automático, depois coloque um dedo e depois o outro."
+     ],
+     "q": "Seu polegar quer seguir os dedos, ou consegue manter o próprio tempo?",
+     "c": "No Dó, toque só o polegar (Lá, Ré, Lá, Ré) por 1 minuto e depois acrescente i e m nos e por mais 2 minutos, devagar."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fingerpicking a full song",
+     "g": "Apply your patterns to a slow, ballad-style chord progression.",
+     "p": [
+      "Choose a ballad loop like G, Em, C, D, one bar each, and use p, i, m, a twice per bar.",
+      "Remember the bass: low E for G and Em, A string for C, D string for D. Change chords right on the thumb note of beat 1.",
+      "For an ending, slow down on the last chord and let it ring. Mistakes? Keep the thumb going and the song stays alive."
+     ],
+     "q": "Which song would you love to fingerpick for someone one day?",
+     "c": "Fingerpick G, Em, C, D four times through at 60 BPM, ending on G, then play it once for someone or record it."
+    },
+    "de": {
+     "t": "Einen ganzen Song fingerpicken",
+     "g": "Wende deine Muster auf eine langsame Akkordfolge im Balladenstil an.",
+     "p": [
+      "Wähl eine Balladenfolge wie G, Em, C, D, je einen Takt, und spiel p, i, m, a zweimal pro Takt.",
+      "Denk an den Bass: tiefes E bei G und Em, A-Saite bei C, D-Saite bei D. Wechsle genau auf dem Daumenton der Eins.",
+      "Zum Schluss beim letzten Akkord langsamer werden und ausklingen lassen. Fehler? Lass den Daumen weiterlaufen, dann lebt der Song."
+     ],
+     "q": "Welchen Song würdest du eines Tages gern für jemanden fingerpicken?",
+     "c": "Spiel G, Em, C, D viermal durch bei 60 BPM, ende auf G und spiel es dann einmal jemandem vor oder nimm es auf."
+    },
+    "es": {
+     "t": "Una canción entera con fingerpicking",
+     "g": "Aplicar tus patrones a una progresión lenta de estilo balada.",
+     "p": [
+      "Elige un ciclo de balada como Sol, Em, Do, Re, un compás cada uno, y usa p, i, m, a dos veces por compás.",
+      "Recuerda el bajo: Mi grave para Sol y Em, cuerda La para Do, cuerda Re para Re. Cambia justo en la nota del pulgar del 1.",
+      "Para terminar, frena en el último acorde y déjalo sonar. ¿Errores? Mantén el pulgar en marcha y la canción sigue viva."
+     ],
+     "q": "¿Qué canción te encantaría tocar con los dedos para alguien algún día?",
+     "c": "Toca Sol, Em, Do, Re cuatro vueltas a 60 BPM terminando en Sol, y luego tócalo una vez para alguien o grábalo."
+    },
+    "fr": {
+     "t": "Toute une chanson en picking",
+     "g": "Appliquer tes motifs à une grille lente de style ballade.",
+     "p": [
+      "Choisis une boucle de ballade comme Sol, Em, Do, Ré, une mesure chacun, et joue p, i, m, a deux fois par mesure.",
+      "Pense à la basse : Mi grave pour Sol et Em, corde de La pour Do, corde de Ré pour Ré. Change pile sur la note de pouce du temps 1.",
+      "Pour finir, ralentis sur le dernier accord et laisse-le sonner. Des erreurs ? Garde le pouce en marche et la chanson reste vivante."
+     ],
+     "q": "Quelle chanson aimerais-tu jouer en picking pour quelqu'un un jour ?",
+     "c": "Joue Sol, Em, Do, Ré quatre fois à 60 BPM en finissant sur Sol, puis joue-la une fois pour quelqu'un ou enregistre-la."
+    },
+    "it": {
+     "t": "Una canzone intera in fingerpicking",
+     "g": "Applicare i tuoi schemi a un giro lento in stile ballata.",
+     "p": [
+      "Scegli un giro da ballata come Sol, Em, Do, Re, una battuta ciascuno, e usa p, i, m, a due volte per battuta.",
+      "Ricorda il basso: Mi basso per Sol ed Em, corda La per Do, corda Re per Re. Cambia proprio sulla nota del pollice dell'1.",
+      "Per il finale, rallenta sull'ultimo accordo e lascialo suonare. Errori? Tieni il pollice in moto e la canzone resta viva."
+     ],
+     "q": "Quale canzone ti piacerebbe suonare in fingerpicking per qualcuno un giorno?",
+     "c": "Suona Sol, Em, Do, Re quattro volte a 60 BPM chiudendo su Sol, poi suonalo una volta per qualcuno o registralo."
+    },
+    "pt": {
+     "t": "Uma música inteira dedilhada",
+     "g": "Aplicar os teus padrões a uma sequência lenta em estilo balada.",
+     "p": [
+      "Escolhe um ciclo de balada como Sol, Em, Dó, Ré, um compasso cada, e usa p, i, m, a duas vezes por compasso.",
+      "Lembra-te do baixo: Mi grave para Sol e Em, corda Lá para Dó, corda Ré para Ré. Muda mesmo na nota do polegar do tempo 1.",
+      "Para acabar, abranda no último acorde e deixa-o soar. Erros? Mantém o polegar a andar e a música continua viva."
+     ],
+     "q": "Que música adorarias dedilhar para alguém um dia?",
+     "c": "Dedilha Sol, Em, Dó, Ré quatro vezes a 60 BPM terminando em Sol, depois toca-a uma vez para alguém ou grava-a."
+    },
+    "pt_BR": {
+     "t": "Uma música inteira no dedilhado",
+     "g": "Aplicar seus padrões a uma sequência lenta no estilo balada.",
+     "p": [
+      "Escolha um ciclo de balada como Sol, Em, Dó, Ré, um compasso cada, e use p, i, m, a duas vezes por compasso.",
+      "Lembre do baixo: Mi grave para Sol e Em, corda Lá para Dó, corda Ré para Ré. Troque bem na nota do polegar do tempo 1.",
+      "Para terminar, desacelere no último acorde e deixe soar. Errou? Mantenha o polegar andando e a música continua viva."
+     ],
+     "q": "Qual música você adoraria dedilhar para alguém um dia?",
+     "c": "Dedilhe Sol, Em, Dó, Ré quatro vezes a 60 BPM terminando em Sol, depois toque uma vez para alguém ou grave."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practice routine basics",
+     "g": "Build a focused 20-minute routine: warm-up, technique, chords and songs.",
+     "p": [
+      "Minutes 0-3: warm-up with the 1-2-3-4 exercise. Minutes 3-8: one technique, like palm muting or fingerpicking.",
+      "Minutes 8-14: chord changes, including the one-minute drill on your weakest pair. Minutes 14-20: play songs for fun.",
+      "Short daily sessions beat one long weekly session. Keep a small notebook of tempos and scores to see your progress."
+     ],
+     "q": "What time of day could you protect for 20 minutes of guitar?",
+     "c": "Do the full 20-minute routine today with a timer and write down one thing that went well and one to work on."
+    },
+    "de": {
+     "t": "Grundlagen einer Übe-Routine",
+     "g": "Bau eine fokussierte 20-Minuten-Routine: Aufwärmen, Technik, Akkorde und Songs.",
+     "p": [
+      "Minute 0-3: Aufwärmen mit der 1-2-3-4-Übung. Minute 3-8: eine Technik, etwa Palm Muting oder Fingerpicking.",
+      "Minute 8-14: Akkordwechsel, inklusive Ein-Minuten-Übung mit deinem schwächsten Paar. Minute 14-20: Songs zum Spaß.",
+      "Kurze tägliche Einheiten schlagen eine lange pro Woche. Führ ein kleines Heft mit Tempi und Ergebnissen, um Fortschritte zu sehen."
+     ],
+     "q": "Welche Tageszeit kannst du dir für 20 Minuten Gitarre freihalten?",
+     "c": "Mach heute die ganze 20-Minuten-Routine mit Timer und notiere eine Sache, die gut lief, und eine, an der du arbeiten willst."
+    },
+    "es": {
+     "t": "Bases de una rutina de práctica",
+     "g": "Crear una rutina de 20 minutos centrada: calentamiento, técnica, acordes y canciones.",
+     "p": [
+      "Minutos 0-3: calentamiento con el ejercicio 1-2-3-4. Minutos 3-8: una técnica, como palm mute o fingerpicking.",
+      "Minutos 8-14: cambios de acordes, con el ejercicio de un minuto en tu pareja más débil. Minutos 14-20: canciones por gusto.",
+      "Sesiones cortas diarias rinden más que una larga semanal. Lleva una libreta con tempos y marcas para ver tu progreso."
+     ],
+     "q": "¿Qué momento del día podrías reservar para 20 minutos de guitarra?",
+     "c": "Haz hoy la rutina completa de 20 minutos con temporizador y apunta una cosa que salió bien y otra que trabajar."
+    },
+    "fr": {
+     "t": "Les bases d'une routine de travail",
+     "g": "Construire une routine ciblée de 20 minutes : échauffement, technique, accords et chansons.",
+     "p": [
+      "Minutes 0-3 : échauffement avec l'exercice 1-2-3-4. Minutes 3-8 : une technique, comme le palm mute ou le picking.",
+      "Minutes 8-14 : changements d'accords, avec le défi d'une minute sur ta paire la plus faible. Minutes 14-20 : chansons pour le plaisir.",
+      "De courtes séances quotidiennes valent mieux qu'une longue par semaine. Tiens un carnet de tempos et de scores pour voir tes progrès."
+     ],
+     "q": "Quel moment de la journée pourrais-tu réserver à 20 minutes de guitare ?",
+     "c": "Fais aujourd'hui toute la routine de 20 minutes avec un minuteur et note une chose réussie et une à travailler."
+    },
+    "it": {
+     "t": "Le basi di una routine di studio",
+     "g": "Costruire una routine mirata di 20 minuti: riscaldamento, tecnica, accordi e canzoni.",
+     "p": [
+      "Minuti 0-3: riscaldamento con l'esercizio 1-2-3-4. Minuti 3-8: una tecnica, come palm muting o fingerpicking.",
+      "Minuti 8-14: cambi di accordo, con l'esercizio di un minuto sulla coppia più debole. Minuti 14-20: canzoni per divertimento.",
+      "Sessioni brevi ogni giorno battono una lunga alla settimana. Tieni un quadernetto con tempi e punteggi per vedere i progressi."
+     ],
+     "q": "Quale momento della giornata potresti dedicare a 20 minuti di chitarra?",
+     "c": "Fai oggi tutta la routine da 20 minuti con un timer e scrivi una cosa andata bene e una su cui lavorare."
+    },
+    "pt": {
+     "t": "Bases de uma rotina de prática",
+     "g": "Criar uma rotina focada de 20 minutos: aquecimento, técnica, acordes e músicas.",
+     "p": [
+      "Minutos 0-3: aquecimento com o exercício 1-2-3-4. Minutos 3-8: uma técnica, como palm muting ou dedilhado.",
+      "Minutos 8-14: mudanças de acordes, com o exercício de um minuto no teu par mais fraco. Minutos 14-20: músicas por prazer.",
+      "Sessões curtas diárias valem mais do que uma longa por semana. Tem um caderninho com andamentos e pontuações para ver a evolução."
+     ],
+     "q": "Que altura do dia podias guardar para 20 minutos de guitarra?",
+     "c": "Faz hoje a rotina completa de 20 minutos com temporizador e anota uma coisa que correu bem e outra a trabalhar."
+    },
+    "pt_BR": {
+     "t": "Básico de uma rotina de estudo",
+     "g": "Montar uma rotina focada de 20 minutos: aquecimento, técnica, acordes e músicas.",
+     "p": [
+      "Minutos 0-3: aquecimento com o exercício 1-2-3-4. Minutos 3-8: uma técnica, como palm mute ou dedilhado.",
+      "Minutos 8-14: trocas de acordes, com o desafio de um minuto no seu par mais fraco. Minutos 14-20: músicas por diversão.",
+      "Sessões curtas todo dia rendem mais que uma longa por semana. Tenha um caderninho com andamentos e pontuações para ver sua evolução."
+     ],
+     "q": "Que horário do dia você consegue reservar para 20 minutos de violão?",
+     "c": "Faça hoje a rotina completa de 20 minutos com timer e anote uma coisa que foi bem e outra para trabalhar."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: two months in",
+     "g": "Revisit tab, seventh chords, power chords and fingerpicking.",
+     "p": [
+      "Tab and notes: play the Ode to Joy phrase, then name the natural notes on the low E and A strings.",
+      "Chords: run through E7, A7, D7, G7, C7 and the easy F, then play a power-chord riff with palm muting.",
+      "Fingerpicking: play p, i, m, a over G, Em, C, D. Two months of steady practice really adds up!"
+     ],
+     "q": "Which skill from this month surprised you most by how quickly it improved?",
+     "c": "Play a mini-concert of 3 pieces: a strummed song, the rock riff and a fingerpicked progression, and record it for later."
+    },
+    "de": {
+     "t": "Wiederholungstag: zwei Monate geschafft",
+     "g": "Wiederhole Tabs, Septakkorde, Powerchords und Fingerpicking.",
+     "p": [
+      "Tabs und Töne: Spiel die Phrase der Ode an die Freude und benenne dann die Stammtöne auf tiefer E- und A-Saite.",
+      "Akkorde: Geh E7, A7, D7, G7, C7 und das leichte F durch, dann spiel ein Powerchord-Riff mit Palm Muting.",
+      "Fingerpicking: Spiel p, i, m, a über G, Em, C, D. Zwei Monate stetiges Üben machen sich wirklich bemerkbar!"
+     ],
+     "q": "Welche Fähigkeit aus diesem Monat hat dich am meisten überrascht, weil sie so schnell besser wurde?",
+     "c": "Spiel ein Mini-Konzert aus 3 Stücken: einen geschlagenen Song, das Rockriff und eine gepickte Folge, und nimm es auf."
+    },
+    "es": {
+     "t": "Día de repaso: dos meses tocando",
+     "g": "Repasar tablatura, séptimas, power chords y fingerpicking.",
+     "p": [
+      "Tablatura y notas: toca la frase del Himno de la alegría y luego nombra las notas naturales del Mi grave y de la La.",
+      "Acordes: repasa E7, A7, D7, G7, C7 y el Fa fácil, y luego toca un riff de power chords con palm mute.",
+      "Fingerpicking: toca p, i, m, a sobre Sol, Em, Do, Re. ¡Dos meses de práctica constante se notan de verdad!"
+     ],
+     "q": "¿Qué habilidad de este mes te sorprendió más por lo rápido que mejoró?",
+     "c": "Da un miniconcierto de 3 piezas: una canción rasgueada, el riff de rock y una progresión con dedos, y grábalo."
+    },
+    "fr": {
+     "t": "Jour de révision : deux mois déjà",
+     "g": "Revoir la tablature, les septièmes, les power chords et le picking.",
+     "p": [
+      "Tablature et notes : joue la phrase de l'Hymne à la joie, puis nomme les notes naturelles sur le Mi grave et la corde de La.",
+      "Accords : passe en revue E7, A7, D7, G7, C7 et le Fa facile, puis joue un riff de power chords en palm mute.",
+      "Picking : joue p, i, m, a sur Sol, Em, Do, Ré. Deux mois de pratique régulière, ça se voit vraiment !"
+     ],
+     "q": "Quelle compétence de ce mois t'a le plus surpris par la vitesse de tes progrès ?",
+     "c": "Donne un mini-concert de 3 morceaux : une chanson grattée, le riff rock et une grille en picking, et enregistre-le."
+    },
+    "it": {
+     "t": "Giorno di ripasso: due mesi di chitarra",
+     "g": "Ripassare tablatura, settime, power chord e fingerpicking.",
+     "p": [
+      "Tablatura e note: suona la frase dell'Inno alla gioia, poi nomina le note naturali sul Mi basso e sulla corda La.",
+      "Accordi: ripassa E7, A7, D7, G7, C7 e il Fa facile, poi suona un riff di power chord con palm muting.",
+      "Fingerpicking: suona p, i, m, a su Sol, Em, Do, Re. Due mesi di pratica costante si sentono davvero!"
+     ],
+     "q": "Quale abilità di questo mese ti ha sorpreso di più per quanto è migliorata in fretta?",
+     "c": "Fai un mini-concerto di 3 brani: una canzone pennellata, il riff rock e un giro in fingerpicking, e registralo."
+    },
+    "pt": {
+     "t": "Dia de revisão: dois meses de guitarra",
+     "g": "Rever tablatura, sétimas, power chords e dedilhado.",
+     "p": [
+      "Tablatura e notas: toca a frase do Hino da Alegria e depois diz as notas naturais no Mi grave e na corda Lá.",
+      "Acordes: revê E7, A7, D7, G7, C7 e o Fá fácil, depois toca um riff de power chords com palm muting.",
+      "Dedilhado: toca p, i, m, a sobre Sol, Em, Dó, Ré. Dois meses de prática regular fazem mesmo diferença!"
+     ],
+     "q": "Que competência deste mês te surpreendeu mais pela rapidez com que melhorou?",
+     "c": "Faz um mini-concerto de 3 peças: uma música em batida, o riff rock e uma sequência dedilhada, e grava-o."
+    },
+    "pt_BR": {
+     "t": "Dia de revisão: dois meses de estrada",
+     "g": "Revisar tablatura, sétimas, power chords e dedilhado.",
+     "p": [
+      "Tablatura e notas: toque a frase do Hino à Alegria e depois diga as notas naturais no Mi grave e na corda Lá.",
+      "Acordes: revise E7, A7, D7, G7, C7 e o Fá fácil, depois toque um riff de power chords com palm mute.",
+      "Dedilhado: toque p, i, m, a sobre Sol, Em, Dó, Ré. Dois meses de prática constante fazem diferença de verdade!"
+     ],
+     "q": "Qual habilidade deste mês mais surpreendeu você pela rapidez com que melhorou?",
+     "c": "Faça um minishow de 3 peças: uma música na batida, o riff de rock e uma sequência dedilhada, e grave."
+    }
+   }
+  }
+ ]
+}

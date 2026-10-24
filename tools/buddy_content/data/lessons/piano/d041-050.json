@@ -1,0 +1,835 @@
+{
+ "topic": "piano",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Major triads",
+     "g": "Build C, F and G major chords from a root, a third and a fifth.",
+     "p": [
+      "A triad stacks three notes in skips: the root, the third above it and the fifth above that.",
+      "C major is C E G, F major is F A C and G major is G B D; each sounds bright and stable.",
+      "Play triads with fingers 1 3 5 in the right hand and 5 3 1 in the left, all three keys landing together."
+     ],
+     "q": "Do major chords sound happy to your ear?",
+     "c": "Play C, F and G major with each hand, four times each, landing all three notes at exactly the same moment."
+    },
+    "de": {
+     "t": "Dur-Dreiklänge",
+     "g": "C-, F- und G-Dur-Akkorde aus Grundton, Terz und Quinte bauen.",
+     "p": [
+      "Ein Dreiklang schichtet drei Töne in Terzen: Grundton, die Terz darüber und die Quinte darüber.",
+      "C-Dur ist C E G, F-Dur F A C und G-Dur G H D; alle klingen hell und stabil.",
+      "Spiel Dreiklänge rechts mit 1 3 5 und links mit 5 3 1, alle drei Tasten landen gleichzeitig."
+     ],
+     "q": "Klingen Durakkorde für dich fröhlich?",
+     "c": "Spiel C-, F- und G-Dur mit jeder Hand je viermal und lass alle drei Töne genau gleichzeitig erklingen."
+    },
+    "es": {
+     "t": "Tríadas mayores",
+     "g": "Construir los acordes de Do, Fa y Sol mayor con fundamental, tercera y quinta.",
+     "p": [
+      "Una tríada apila tres notas por saltos: la fundamental, la tercera encima y la quinta encima de esta.",
+      "Do mayor es Do Mi Sol, Fa mayor es Fa La Do y Sol mayor es Sol Si Re; suenan luminosos y estables.",
+      "Toca las tríadas con los dedos 1 3 5 en la derecha y 5 3 1 en la izquierda, con las tres teclas a la vez."
+     ],
+     "q": "¿Los acordes mayores te suenan alegres?",
+     "c": "Toca Do, Fa y Sol mayor con cada mano, cuatro veces cada uno, con las tres notas exactamente a la vez."
+    },
+    "fr": {
+     "t": "Les accords parfaits majeurs",
+     "g": "Construire les accords de do, fa et sol majeur avec fondamentale, tierce et quinte.",
+     "p": [
+      "Un accord de trois sons empile des tierces : la fondamentale, la tierce au-dessus, puis la quinte.",
+      "Do majeur, c'est do mi sol ; fa majeur fa la do ; sol majeur sol si ré : un son lumineux et stable.",
+      "Joue-les avec les doigts 1 3 5 à droite et 5 3 1 à gauche, les trois touches ensemble."
+     ],
+     "q": "Les accords majeurs te semblent-ils joyeux ?",
+     "c": "Joue do, fa et sol majeur à chaque main, quatre fois chacun, les trois notes pile en même temps."
+    },
+    "it": {
+     "t": "Triadi maggiori",
+     "g": "Costruire gli accordi di Do, Fa e Sol maggiore con fondamentale, terza e quinta.",
+     "p": [
+      "Una triade sovrappone tre note per terze: la fondamentale, la terza sopra e la quinta sopra ancora.",
+      "Do maggiore è Do Mi Sol, Fa maggiore Fa La Do e Sol maggiore Sol Si Re: suonano luminosi e stabili.",
+      "Suona le triadi con le dita 1 3 5 nella destra e 5 3 1 nella sinistra, con i tre tasti insieme."
+     ],
+     "q": "Gli accordi maggiori ti suonano allegri?",
+     "c": "Suona Do, Fa e Sol maggiore con ogni mano, quattro volte ciascuno, con le tre note esattamente insieme."
+    },
+    "pt": {
+     "t": "Tríades maiores",
+     "g": "Construir os acordes de dó, fá e sol maior com fundamental, terceira e quinta.",
+     "p": [
+      "Uma tríade empilha três notas aos saltos: a fundamental, a terceira acima e a quinta acima dessa.",
+      "Dó maior é dó mi sol, fá maior é fá lá dó e sol maior é sol si ré; soam luminosos e estáveis.",
+      "Toca as tríades com os dedos 1 3 5 na direita e 5 3 1 na esquerda, com as três teclas ao mesmo tempo."
+     ],
+     "q": "Os acordes maiores soam-te alegres?",
+     "c": "Toca dó, fá e sol maior com cada mão, quatro vezes cada, com as três notas exatamente ao mesmo tempo."
+    },
+    "pt_BR": {
+     "t": "Tríades maiores",
+     "g": "Montar os acordes de dó, fá e sol maior com fundamental, terça e quinta.",
+     "p": [
+      "Uma tríade empilha três notas em saltos: a fundamental, a terça acima e a quinta acima dela.",
+      "Dó maior é dó mi sol, fá maior é fá lá dó e sol maior é sol si ré; soam brilhantes e estáveis.",
+      "Toque as tríades com os dedos 1 3 5 na direita e 5 3 1 na esquerda, com as três teclas juntas."
+     ],
+     "q": "Os acordes maiores soam alegres para você?",
+     "c": "Toque dó, fá e sol maior com cada mão, quatro vezes cada, com as três notas exatamente juntas."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Minor triads",
+     "g": "Turn major chords into minor ones by lowering the third.",
+     "p": [
+      "Lower the middle note of a major triad by a half step and it becomes minor: C E G becomes C E flat G.",
+      "D minor (D F A), E minor (E G B) and A minor (A C E) use only white keys.",
+      "Minor chords often sound softer, darker or more thoughtful than major ones."
+     ],
+     "q": "Which do you like more, the sound of major or minor chords?",
+     "c": "Play C major then C minor, G major then G minor, and D minor, E minor and A minor, listening to each colour."
+    },
+    "de": {
+     "t": "Moll-Dreiklänge",
+     "g": "Durakkorde zu Mollakkorden machen, indem du die Terz erniedrigst.",
+     "p": [
+      "Erniedrige den mittleren Ton eines Durdreiklangs um einen Halbton, dann wird er Moll: C E G wird C Es G.",
+      "d-Moll (D F A), e-Moll (E G H) und a-Moll (A C E) liegen nur auf weißen Tasten.",
+      "Mollakkorde klingen oft weicher, dunkler oder nachdenklicher als Durakkorde."
+     ],
+     "q": "Was gefällt dir besser, der Klang von Dur oder von Moll?",
+     "c": "Spiel C-Dur, dann c-Moll, G-Dur, dann g-Moll, dann d-, e- und a-Moll und hör auf jede Klangfarbe."
+    },
+    "es": {
+     "t": "Tríadas menores",
+     "g": "Convertir acordes mayores en menores bajando la tercera.",
+     "p": [
+      "Baja medio tono la nota central de una tríada mayor y se vuelve menor: Do Mi Sol pasa a Do Mib Sol.",
+      "Re menor (Re Fa La), Mi menor (Mi Sol Si) y La menor (La Do Mi) usan solo teclas blancas.",
+      "Los acordes menores suelen sonar más suaves, oscuros o pensativos que los mayores."
+     ],
+     "q": "¿Qué te gusta más, el sonido de los acordes mayores o el de los menores?",
+     "c": "Toca Do mayor y Do menor, Sol mayor y Sol menor, y luego Re, Mi y La menor, escuchando cada color."
+    },
+    "fr": {
+     "t": "Les accords parfaits mineurs",
+     "g": "Transformer les accords majeurs en mineurs en baissant la tierce.",
+     "p": [
+      "Baisse d'un demi-ton la note du milieu d'un accord majeur et il devient mineur : do mi sol devient do mi bémol sol.",
+      "Ré mineur (ré fa la), mi mineur (mi sol si) et la mineur (la do mi) n'utilisent que des touches blanches.",
+      "Les accords mineurs sonnent souvent plus doux, plus sombres ou plus pensifs que les majeurs."
+     ],
+     "q": "Que préfères-tu, le son des accords majeurs ou mineurs ?",
+     "c": "Joue do majeur puis do mineur, sol majeur puis sol mineur, puis ré, mi et la mineur, en écoutant chaque couleur."
+    },
+    "it": {
+     "t": "Triadi minori",
+     "g": "Trasformare gli accordi maggiori in minori abbassando la terza.",
+     "p": [
+      "Abbassa di un semitono la nota centrale di una triade maggiore e diventa minore: Do Mi Sol diventa Do Mib Sol.",
+      "Re minore (Re Fa La), Mi minore (Mi Sol Si) e La minore (La Do Mi) usano solo tasti bianchi.",
+      "Gli accordi minori spesso suonano più morbidi, scuri o pensosi di quelli maggiori."
+     ],
+     "q": "Ti piace di più il suono degli accordi maggiori o minori?",
+     "c": "Suona Do maggiore e Do minore, Sol maggiore e Sol minore, poi Re, Mi e La minore, ascoltando ogni colore."
+    },
+    "pt": {
+     "t": "Tríades menores",
+     "g": "Transformar acordes maiores em menores baixando a terceira.",
+     "p": [
+      "Baixa meio-tom a nota do meio de uma tríade maior e ela fica menor: dó mi sol passa a dó mi bemol sol.",
+      "Ré menor (ré fá lá), mi menor (mi sol si) e lá menor (lá dó mi) usam só teclas brancas.",
+      "Os acordes menores soam muitas vezes mais suaves, escuros ou pensativos do que os maiores."
+     ],
+     "q": "De que gostas mais, do som dos acordes maiores ou dos menores?",
+     "c": "Toca dó maior e dó menor, sol maior e sol menor, e depois ré, mi e lá menor, ouvindo cada cor."
+    },
+    "pt_BR": {
+     "t": "Tríades menores",
+     "g": "Transformar acordes maiores em menores abaixando a terça.",
+     "p": [
+      "Abaixe meio tom a nota do meio de uma tríade maior e ela vira menor: dó mi sol vira dó mi bemol sol.",
+      "Ré menor (ré fá lá), mi menor (mi sol si) e lá menor (lá dó mi) usam só teclas brancas.",
+      "Os acordes menores costumam soar mais suaves, escuros ou pensativos do que os maiores."
+     ],
+     "q": "Do que você gosta mais, do som dos acordes maiores ou dos menores?",
+     "c": "Toque dó maior e dó menor, sol maior e sol menor, e depois ré, mi e lá menor, ouvindo cada cor."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blocked and broken chords",
+     "g": "Play chord notes together as a block or one after another as a broken chord.",
+     "p": [
+      "A blocked chord sounds all its notes at once; on the staff the notes are stacked vertically.",
+      "A broken chord plays the same notes one at a time, like C E G, or C G E G, and sounds lighter and flowing.",
+      "Keep the hand in the chord shape for broken chords, so the fingers are already over the right keys."
+     ],
+     "q": "Which sounds more like the music you love, blocked or broken chords?",
+     "c": "Play C, F and G as blocked chords, then broken (root, third, fifth, third), four times each, left hand then right."
+    },
+    "de": {
+     "t": "Akkorde gleichzeitig und gebrochen",
+     "g": "Akkordtöne zusammen als Block oder nacheinander als gebrochenen Akkord spielen.",
+     "p": [
+      "Beim Blockakkord erklingen alle Töne gleichzeitig; im Notenbild stehen sie senkrecht übereinander.",
+      "Der gebrochene Akkord spielt dieselben Töne nacheinander, etwa C E G oder C G E G, und klingt leichter, fließend.",
+      "Halt die Hand beim gebrochenen Akkord in der Akkordform, so liegen die Finger schon über den richtigen Tasten."
+     ],
+     "q": "Was klingt mehr nach der Musik, die du liebst: Block- oder gebrochene Akkorde?",
+     "c": "Spiel C, F und G als Block, dann gebrochen (Grundton, Terz, Quinte, Terz), je viermal, erst links, dann rechts."
+    },
+    "es": {
+     "t": "Acordes plaqué y arpegiados",
+     "g": "Tocar las notas del acorde juntas, en bloque, o una tras otra, como acorde roto.",
+     "p": [
+      "En el acorde en bloque suenan todas las notas a la vez; en la partitura van apiladas en vertical.",
+      "El acorde roto toca las mismas notas una a una, como Do Mi Sol o Do Sol Mi Sol, y suena más ligero y fluido.",
+      "Mantén la mano en la forma del acorde al romperlo: así los dedos ya están sobre las teclas correctas."
+     ],
+     "q": "¿Qué se parece más a la música que te encanta, los acordes en bloque o rotos?",
+     "c": "Toca Do, Fa y Sol en bloque y luego rotos (fundamental, tercera, quinta, tercera), cuatro veces, izquierda y derecha."
+    },
+    "fr": {
+     "t": "Accords plaqués et arpégés",
+     "g": "Jouer les notes d'un accord ensemble, plaquées, ou l'une après l'autre, arpégées.",
+     "p": [
+      "Un accord plaqué fait sonner toutes ses notes à la fois ; sur la portée elles sont empilées verticalement.",
+      "Un accord brisé joue les mêmes notes une à une, comme do mi sol ou do sol mi sol : plus léger et fluide.",
+      "Garde la main dans la forme de l'accord quand tu l'arpèges : les doigts sont déjà au-dessus des bonnes touches."
+     ],
+     "q": "Qu'est-ce qui ressemble le plus à la musique que tu aimes, accords plaqués ou brisés ?",
+     "c": "Joue do, fa et sol plaqués, puis brisés (fondamentale, tierce, quinte, tierce), quatre fois chacun, gauche puis droite."
+    },
+    "it": {
+     "t": "Accordi pieni e spezzati",
+     "g": "Suonare le note dell'accordo insieme, in blocco, o una dopo l'altra, come accordo spezzato.",
+     "p": [
+      "Nell'accordo pieno suonano tutte le note insieme; sullo spartito sono impilate in verticale.",
+      "L'accordo spezzato suona le stesse note una alla volta, come Do Mi Sol o Do Sol Mi Sol, ed è più leggero e fluido.",
+      "Tieni la mano nella forma dell'accordo quando lo spezzi: così le dita sono già sui tasti giusti."
+     ],
+     "q": "Cosa somiglia di più alla musica che ami, accordi pieni o spezzati?",
+     "c": "Suona Do, Fa e Sol pieni e poi spezzati (fondamentale, terza, quinta, terza), quattro volte, sinistra e destra."
+    },
+    "pt": {
+     "t": "Acordes em bloco e quebrados",
+     "g": "Tocar as notas do acorde juntas, em bloco, ou uma a seguir à outra, como acorde quebrado.",
+     "p": [
+      "No acorde em bloco soam todas as notas ao mesmo tempo; na pauta ficam empilhadas na vertical.",
+      "O acorde quebrado toca as mesmas notas uma a uma, como dó mi sol ou dó sol mi sol, e soa mais leve e fluido.",
+      "Mantém a mão na forma do acorde quando o quebras: assim os dedos já estão por cima das teclas certas."
+     ],
+     "q": "O que se parece mais com a música de que gostas, acordes em bloco ou quebrados?",
+     "c": "Toca dó, fá e sol em bloco e depois quebrados (fundamental, terceira, quinta, terceira), quatro vezes, esquerda e direita."
+    },
+    "pt_BR": {
+     "t": "Acordes em bloco e arpejados",
+     "g": "Tocar as notas do acorde juntas, em bloco, ou uma depois da outra, como acorde quebrado.",
+     "p": [
+      "No acorde em bloco todas as notas soam juntas; na partitura elas ficam empilhadas na vertical.",
+      "O acorde quebrado toca as mesmas notas uma a uma, como dó mi sol ou dó sol mi sol, e soa mais leve e fluido.",
+      "Mantenha a mão na forma do acorde ao quebrá-lo: assim os dedos já ficam sobre as teclas certas."
+     ],
+     "q": "O que se parece mais com a música que você ama, acordes em bloco ou quebrados?",
+     "c": "Toque dó, fá e sol em bloco e depois quebrados (fundamental, terça, quinta, terça), quatro vezes, esquerda e direita."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Left-hand chords under a melody",
+     "g": "Accompany a right-hand tune with simple left-hand chords.",
+     "p": [
+      "The melody is the star: play the chords a little softer so the tune sings on top.",
+      "Change chords on the beat where the music asks, often at the start of a bar.",
+      "Ode to Joy works with just C and G chords: use C where the tune rests on C, E or G, and G where it leans on D or B."
+     ],
+     "q": "Have you ever accompanied yourself or someone else singing?",
+     "c": "Play Ode to Joy with the right hand and hold a C or G chord in the left hand at the start of each bar."
+    },
+    "de": {
+     "t": "Linke Akkorde unter einer Melodie",
+     "g": "Eine Melodie der rechten Hand mit einfachen Akkorden der linken Hand begleiten.",
+     "p": [
+      "Die Melodie ist der Star: Spiel die Akkorde etwas leiser, damit die Melodie darüber singt.",
+      "Wechsle die Akkorde auf dem Schlag, wo es die Musik verlangt, oft am Taktanfang.",
+      "Die Ode an die Freude klappt mit C und G: C, wo die Melodie auf C, E oder G ruht, G, wo sie auf D oder H liegt."
+     ],
+     "q": "Hast du dich selbst oder jemanden beim Singen schon einmal begleitet?",
+     "c": "Spiel die Ode an die Freude rechts und halte links zu Beginn jedes Taktes einen C- oder G-Akkord."
+    },
+    "es": {
+     "t": "Acordes de izquierda bajo la melodía",
+     "g": "Acompañar una melodía de la mano derecha con acordes sencillos de la izquierda.",
+     "p": [
+      "La melodía es la estrella: toca los acordes un poco más suaves para que la melodía cante por encima.",
+      "Cambia de acorde en el pulso que pide la música, a menudo al inicio del compás.",
+      "El Himno a la alegría funciona con Do y Sol: Do cuando la melodía se apoya en Do, Mi o Sol, y Sol en Re o Si."
+     ],
+     "q": "¿Te has acompañado alguna vez a ti mismo o a alguien cantando?",
+     "c": "Toca el Himno a la alegría con la derecha y mantén un acorde de Do o Sol con la izquierda al inicio de cada compás."
+    },
+    "fr": {
+     "t": "Accords à gauche sous une mélodie",
+     "g": "Accompagner une mélodie de la main droite avec de simples accords à la main gauche.",
+     "p": [
+      "La mélodie est la vedette : joue les accords un peu moins fort pour qu'elle chante par-dessus.",
+      "Change d'accord sur le temps où la musique le demande, souvent au début de la mesure.",
+      "L'Hymne à la joie marche avec do et sol : do quand l'air repose sur do, mi ou sol, sol quand il s'appuie sur ré ou si."
+     ],
+     "q": "T'es-tu déjà accompagné toi-même, ou quelqu'un qui chante ?",
+     "c": "Joue l'Hymne à la joie à droite et tiens un accord de do ou de sol à gauche au début de chaque mesure."
+    },
+    "it": {
+     "t": "Accordi della sinistra sotto la melodia",
+     "g": "Accompagnare una melodia della destra con semplici accordi della sinistra.",
+     "p": [
+      "La melodia è la protagonista: suona gli accordi un po' più piano, così la melodia canta sopra.",
+      "Cambia accordo sul movimento in cui lo chiede la musica, spesso all'inizio della battuta.",
+      "L'Inno alla gioia funziona con Do e Sol: Do quando la melodia poggia su Do, Mi o Sol, Sol quando poggia su Re o Si."
+     ],
+     "q": "Ti è mai capitato di accompagnare te stesso o qualcuno che canta?",
+     "c": "Suona l'Inno alla gioia con la destra e tieni un accordo di Do o Sol con la sinistra all'inizio di ogni battuta."
+    },
+    "pt": {
+     "t": "Acordes da esquerda sob a melodia",
+     "g": "Acompanhar uma melodia da mão direita com acordes simples da esquerda.",
+     "p": [
+      "A melodia é a estrela: toca os acordes um pouco mais suaves para a melodia cantar por cima.",
+      "Muda de acorde no tempo em que a música pede, muitas vezes no início do compasso.",
+      "O Hino da Alegria funciona com dó e sol: dó quando a melodia assenta em dó, mi ou sol, e sol quando assenta em ré ou si."
+     ],
+     "q": "Já alguma vez te acompanhaste a ti próprio ou a alguém a cantar?",
+     "c": "Toca o Hino da Alegria com a direita e segura um acorde de dó ou sol na esquerda no início de cada compasso."
+    },
+    "pt_BR": {
+     "t": "Acordes da esquerda sob a melodia",
+     "g": "Acompanhar uma melodia da mão direita com acordes simples da esquerda.",
+     "p": [
+      "A melodia é a estrela: toque os acordes um pouco mais suaves para a melodia cantar por cima.",
+      "Troque de acorde no tempo em que a música pede, muitas vezes no começo do compasso.",
+      "A Ode à Alegria funciona com dó e sol: dó quando a melodia apoia em dó, mi ou sol, e sol quando apoia em ré ou si."
+     ],
+     "q": "Você já acompanhou a si mesmo ou alguém cantando?",
+     "c": "Toque a Ode à Alegria com a direita e segure um acorde de dó ou sol na esquerda no começo de cada compasso."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The primary chords I, IV and V",
+     "g": "Know the three chords that hold up countless songs: I, IV and V.",
+     "p": [
+      "Number the notes of a scale 1 to 7; a chord built on note 1 is I, on note 4 is IV, on note 5 is V.",
+      "In C major, I is C, IV is F and V is G: together they contain every note of the scale.",
+      "V pulls strongly back to I, which is why so many songs end with the move G to C."
+     ],
+     "q": "Can you hear the feeling of coming home when G resolves to C?",
+     "c": "Play the pattern C F C G C in the left hand, four beats each, and hum any tune you know over it."
+    },
+    "de": {
+     "t": "Die Hauptdreiklänge I, IV und V",
+     "g": "Die drei Akkorde kennen, die unzählige Lieder tragen: I, IV und V.",
+     "p": [
+      "Nummeriere die Töne einer Tonleiter von 1 bis 7; der Akkord auf Ton 1 ist I, auf 4 ist IV, auf 5 ist V.",
+      "In C-Dur ist I C, IV F und V G: Zusammen enthalten sie jeden Ton der Tonleiter.",
+      "V zieht stark zurück zu I, darum enden so viele Lieder mit dem Schritt G nach C."
+     ],
+     "q": "Hörst du das Gefühl des Nach-Hause-Kommens, wenn G sich nach C auflöst?",
+     "c": "Spiel links die Folge C F C G C, je vier Schläge, und summ eine bekannte Melodie dazu."
+    },
+    "es": {
+     "t": "Los acordes principales I, IV y V",
+     "g": "Conocer los tres acordes que sostienen infinidad de canciones: I, IV y V.",
+     "p": [
+      "Numera las notas de la escala del 1 al 7; el acorde sobre la nota 1 es I, sobre la 4 es IV y sobre la 5 es V.",
+      "En Do mayor, I es Do, IV es Fa y V es Sol: entre los tres contienen todas las notas de la escala.",
+      "El V tira con fuerza hacia el I; por eso tantas canciones terminan con el paso de Sol a Do."
+     ],
+     "q": "¿Notas esa sensación de volver a casa cuando Sol resuelve en Do?",
+     "c": "Toca con la izquierda la secuencia Do Fa Do Sol Do, cuatro pulsos cada uno, y tararea encima una melodía que conozcas."
+    },
+    "fr": {
+     "t": "Les accords principaux I, IV et V",
+     "g": "Connaître les trois accords qui portent d'innombrables chansons : I, IV et V.",
+     "p": [
+      "Numérote les notes d'une gamme de 1 à 7 ; l'accord bâti sur la note 1 est I, sur la 4 est IV, sur la 5 est V.",
+      "En do majeur, I est do, IV est fa et V est sol : à eux trois, ils contiennent toutes les notes de la gamme.",
+      "V attire fortement vers I, c'est pourquoi tant de chansons finissent par sol vers do."
+     ],
+     "q": "Entends-tu cette sensation de retour à la maison quand sol se résout sur do ?",
+     "c": "Joue à gauche l'enchaînement do fa do sol do, quatre temps chacun, et fredonne dessus un air que tu connais."
+    },
+    "it": {
+     "t": "Gli accordi principali I, IV e V",
+     "g": "Conoscere i tre accordi che reggono infinite canzoni: I, IV e V.",
+     "p": [
+      "Numera le note di una scala da 1 a 7; l'accordo sulla nota 1 è I, sulla 4 è IV, sulla 5 è V.",
+      "In Do maggiore I è Do, IV è Fa e V è Sol: insieme contengono tutte le note della scala.",
+      "Il V tira con forza verso il I, ed è per questo che tante canzoni finiscono con Sol che va a Do."
+     ],
+     "q": "Senti la sensazione di tornare a casa quando Sol risolve su Do?",
+     "c": "Suona con la sinistra la sequenza Do Fa Do Sol Do, quattro movimenti ciascuno, e canticchia sopra una melodia che conosci."
+    },
+    "pt": {
+     "t": "Os acordes principais I, IV e V",
+     "g": "Conhecer os três acordes que sustentam inúmeras canções: I, IV e V.",
+     "p": [
+      "Numera as notas de uma escala de 1 a 7; o acorde na nota 1 é I, na nota 4 é IV e na nota 5 é V.",
+      "Em dó maior, I é dó, IV é fá e V é sol: juntos contêm todas as notas da escala.",
+      "O V puxa com força para o I; é por isso que tantas canções acabam com a passagem de sol para dó."
+     ],
+     "q": "Ouves a sensação de voltar a casa quando o sol resolve em dó?",
+     "c": "Toca na esquerda a sequência dó fá dó sol dó, quatro tempos cada, e trauteia por cima uma melodia que conheças."
+    },
+    "pt_BR": {
+     "t": "Os acordes principais I, IV e V",
+     "g": "Conhecer os três acordes que sustentam inúmeras músicas: I, IV e V.",
+     "p": [
+      "Numere as notas de uma escala de 1 a 7; o acorde na nota 1 é I, na nota 4 é IV e na nota 5 é V.",
+      "Em dó maior, I é dó, IV é fá e V é sol: juntos eles têm todas as notas da escala.",
+      "O V puxa com força para o I; por isso tantas músicas terminam com a passagem de sol para dó."
+     ],
+     "q": "Você sente aquela sensação de voltar para casa quando o sol resolve em dó?",
+     "c": "Toque na esquerda a sequência dó fá dó sol dó, quatro tempos cada, e cantarole por cima uma melodia que você conhece."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chord inversions",
+     "g": "Rearrange chord notes so you can move between chords with little hand movement.",
+     "p": [
+      "Root position has the root at the bottom (C E G); first inversion puts the third at the bottom (E G C).",
+      "Second inversion puts the fifth at the bottom (G C E); the chord keeps its name and character.",
+      "From C (C E G), play F as C F A and G as B D G: only one or two fingers move each time."
+     ],
+     "q": "Do you notice how much smoother the chord changes sound with inversions?",
+     "c": "Play C (C E G), F (C F A), C, G (B D G), C with the left hand, keeping common notes and moving as little as possible."
+    },
+    "de": {
+     "t": "Akkordumkehrungen",
+     "g": "Akkordtöne umstellen, um mit wenig Handbewegung zwischen Akkorden zu wechseln.",
+     "p": [
+      "In der Grundstellung liegt der Grundton unten (C E G); im Sextakkord liegt die Terz unten (E G C).",
+      "Im Quartsextakkord liegt die Quinte unten (G C E); der Akkord behält Namen und Charakter.",
+      "Von C (C E G) spielst du F als C F A und G als H D G: Jedes Mal bewegen sich nur ein oder zwei Finger."
+     ],
+     "q": "Merkst du, wie viel weicher die Akkordwechsel mit Umkehrungen klingen?",
+     "c": "Spiel links C (C E G), F (C F A), C, G (H D G), C, behalte gemeinsame Töne und bewege dich so wenig wie möglich."
+    },
+    "es": {
+     "t": "Inversiones de acordes",
+     "g": "Reordenar las notas del acorde para pasar de uno a otro moviendo poco la mano.",
+     "p": [
+      "En estado fundamental la fundamental está abajo (Do Mi Sol); en primera inversión, la tercera (Mi Sol Do).",
+      "En segunda inversión la quinta queda abajo (Sol Do Mi); el acorde conserva su nombre y su carácter.",
+      "Desde Do (Do Mi Sol), toca Fa como Do Fa La y Sol como Si Re Sol: cada vez se mueven solo uno o dos dedos."
+     ],
+     "q": "¿Notas cuánto más suaves suenan los cambios con inversiones?",
+     "c": "Toca con la izquierda Do (Do Mi Sol), Fa (Do Fa La), Do, Sol (Si Re Sol), Do, manteniendo las notas comunes."
+    },
+    "fr": {
+     "t": "Les renversements d'accords",
+     "g": "Réorganiser les notes d'un accord pour passer de l'un à l'autre en bougeant peu la main.",
+     "p": [
+      "À l'état fondamental, la fondamentale est en bas (do mi sol) ; au 1er renversement, la tierce (mi sol do).",
+      "Au 2e renversement, la quinte est en bas (sol do mi) ; l'accord garde son nom et son caractère.",
+      "Depuis do (do mi sol), joue fa en do fa la et sol en si ré sol : un ou deux doigts seulement bougent."
+     ],
+     "q": "Remarques-tu à quel point les enchaînements sont plus fluides avec les renversements ?",
+     "c": "Joue à gauche do (do mi sol), fa (do fa la), do, sol (si ré sol), do, en gardant les notes communes."
+    },
+    "it": {
+     "t": "I rivolti degli accordi",
+     "g": "Riordinare le note dell'accordo per passare da uno all'altro muovendo poco la mano.",
+     "p": [
+      "In stato fondamentale la fondamentale è in basso (Do Mi Sol); nel primo rivolto c'è la terza (Mi Sol Do).",
+      "Nel secondo rivolto in basso c'è la quinta (Sol Do Mi); l'accordo mantiene nome e carattere.",
+      "Da Do (Do Mi Sol) suona Fa come Do Fa La e Sol come Si Re Sol: ogni volta si muovono solo uno o due dita."
+     ],
+     "q": "Noti quanto sono più morbidi i cambi di accordo con i rivolti?",
+     "c": "Suona con la sinistra Do (Do Mi Sol), Fa (Do Fa La), Do, Sol (Si Re Sol), Do, tenendo ferme le note comuni."
+    },
+    "pt": {
+     "t": "Inversões de acordes",
+     "g": "Reorganizar as notas do acorde para passar de um para outro mexendo pouco a mão.",
+     "p": [
+      "No estado fundamental a fundamental fica em baixo (dó mi sol); na 1.ª inversão fica a terceira (mi sol dó).",
+      "Na 2.ª inversão fica a quinta em baixo (sol dó mi); o acorde mantém o nome e o carácter.",
+      "A partir de dó (dó mi sol), toca fá como dó fá lá e sol como si ré sol: só mexem um ou dois dedos."
+     ],
+     "q": "Notas como as mudanças de acorde soam mais suaves com inversões?",
+     "c": "Toca na esquerda dó (dó mi sol), fá (dó fá lá), dó, sol (si ré sol), dó, mantendo as notas comuns."
+    },
+    "pt_BR": {
+     "t": "Inversões de acordes",
+     "g": "Reorganizar as notas do acorde para passar de um para outro mexendo pouco a mão.",
+     "p": [
+      "No estado fundamental a fundamental fica embaixo (dó mi sol); na 1ª inversão fica a terça (mi sol dó).",
+      "Na 2ª inversão a quinta fica embaixo (sol dó mi); o acorde mantém o nome e o caráter.",
+      "A partir de dó (dó mi sol), toque fá como dó fá lá e sol como si ré sol: só um ou dois dedos se movem."
+     ],
+     "q": "Você percebe como as trocas de acorde soam mais suaves com inversões?",
+     "c": "Toque na esquerda dó (dó mi sol), fá (dó fá lá), dó, sol (si ré sol), dó, mantendo as notas comuns."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy accompaniment patterns",
+     "g": "Learn block, waltz and broken-chord patterns to bring the left hand to life.",
+     "p": [
+      "Block pattern: play the whole chord on beat 1 and hold it, or repeat it on every beat.",
+      "Waltz pattern in 3/4: the root alone on beat 1, then the upper chord notes on beats 2 and 3, oom-pah-pah.",
+      "Broken pattern: root, fifth, third, fifth in eighth notes, a flowing classic often used in ballads."
+     ],
+     "q": "Which pattern would fit your favourite song?",
+     "c": "Play the chords C F G C with each of the three patterns, one bar per chord, at a slow and steady tempo."
+    },
+    "de": {
+     "t": "Einfache Begleitmuster",
+     "g": "Block-, Walzer- und gebrochene Muster lernen, um die linke Hand lebendig zu machen.",
+     "p": [
+      "Blockmuster: Spiel den ganzen Akkord auf Schlag 1 und halte ihn, oder wiederhol ihn auf jedem Schlag.",
+      "Walzermuster im 3/4-Takt: auf 1 nur der Grundton, auf 2 und 3 die oberen Akkordtöne, um-ta-ta.",
+      "Gebrochenes Muster: Grundton, Quinte, Terz, Quinte in Achteln, ein fließender Klassiker für Balladen."
+     ],
+     "q": "Welches Muster würde zu deinem Lieblingslied passen?",
+     "c": "Spiel die Akkorde C F G C in allen drei Mustern, ein Takt pro Akkord, langsam und gleichmäßig."
+    },
+    "es": {
+     "t": "Patrones de acompañamiento fáciles",
+     "g": "Aprender los patrones en bloque, de vals y de acorde roto para dar vida a la mano izquierda.",
+     "p": [
+      "Patrón en bloque: toca el acorde entero en el pulso 1 y mantenlo, o repítelo en cada pulso.",
+      "Patrón de vals en 3/4: la fundamental sola en el 1 y las notas de arriba del acorde en el 2 y el 3, chun-pa-pa.",
+      "Patrón roto: fundamental, quinta, tercera, quinta en corcheas, un clásico fluido de las baladas."
+     ],
+     "q": "¿Qué patrón le iría bien a tu canción favorita?",
+     "c": "Toca los acordes Do Fa Sol Do con cada uno de los tres patrones, un compás por acorde, a tempo lento y estable."
+    },
+    "fr": {
+     "t": "Des accompagnements faciles",
+     "g": "Apprendre les motifs plaqué, valse et arpégé pour donner vie à la main gauche.",
+     "p": [
+      "Motif plaqué : joue l'accord entier sur le temps 1 et tiens-le, ou répète-le sur chaque temps.",
+      "Motif de valse à 3/4 : la fondamentale seule sur 1, puis les notes du haut de l'accord sur 2 et 3, boum-tchac-tchac.",
+      "Motif arpégé : fondamentale, quinte, tierce, quinte en croches, un classique fluide des ballades."
+     ],
+     "q": "Quel motif irait bien avec ta chanson préférée ?",
+     "c": "Joue les accords do fa sol do avec chacun des trois motifs, une mesure par accord, lentement et régulièrement."
+    },
+    "it": {
+     "t": "Accompagnamenti facili",
+     "g": "Imparare gli schemi a blocchi, di valzer e ad accordo spezzato per dare vita alla sinistra.",
+     "p": [
+      "Schema a blocchi: suona l'accordo intero sul movimento 1 e tienilo, o ripetilo su ogni movimento.",
+      "Schema di valzer in 3/4: la fondamentale da sola sull'1, poi le note superiori dell'accordo su 2 e 3, zum-pa-pa.",
+      "Schema spezzato: fondamentale, quinta, terza, quinta in crome, un classico fluido delle ballate."
+     ],
+     "q": "Quale schema starebbe bene con la tua canzone preferita?",
+     "c": "Suona gli accordi Do Fa Sol Do con ognuno dei tre schemi, una battuta per accordo, a tempo lento e regolare."
+    },
+    "pt": {
+     "t": "Padrões de acompanhamento fáceis",
+     "g": "Aprender os padrões em bloco, de valsa e de acorde quebrado para dar vida à mão esquerda.",
+     "p": [
+      "Padrão em bloco: toca o acorde inteiro no tempo 1 e segura-o, ou repete-o em cada tempo.",
+      "Padrão de valsa em 3/4: a fundamental sozinha no 1 e as notas de cima do acorde no 2 e no 3, pum-pá-pá.",
+      "Padrão quebrado: fundamental, quinta, terceira, quinta em colcheias, um clássico fluido das baladas."
+     ],
+     "q": "Que padrão ficaria bem na tua música preferida?",
+     "c": "Toca os acordes dó fá sol dó com cada um dos três padrões, um compasso por acorde, num andamento lento e certo."
+    },
+    "pt_BR": {
+     "t": "Padrões de acompanhamento fáceis",
+     "g": "Aprender os padrões em bloco, de valsa e de acorde quebrado para dar vida à mão esquerda.",
+     "p": [
+      "Padrão em bloco: toque o acorde inteiro no tempo 1 e segure, ou repita em cada tempo.",
+      "Padrão de valsa em 3/4: a fundamental sozinha no 1 e as notas de cima do acorde no 2 e no 3, pum-pá-pá.",
+      "Padrão quebrado: fundamental, quinta, terça, quinta em colcheias, um clássico fluido das baladas."
+     ],
+     "q": "Qual padrão combinaria com a sua música favorita?",
+     "c": "Toque os acordes dó fá sol dó com cada um dos três padrões, um compasso por acorde, num andamento lento e firme."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Playing from a lead sheet",
+     "g": "Read a melody with chord symbols written above it and make your own accompaniment.",
+     "p": [
+      "A lead sheet gives only the melody on one staff and chord symbols like C, F, G or Am above it.",
+      "A capital letter alone means a major chord; a small m after it means minor, so Am is A minor.",
+      "The right hand plays the melody, the left hand plays the named chord, using any pattern you know."
+     ],
+     "q": "Is there a simple song you would like to play from chord symbols?",
+     "c": "Write the first line of Ode to Joy with chord symbols C and G above it, then play it with a block left hand."
+    },
+    "de": {
+     "t": "Spielen nach Leadsheet",
+     "g": "Eine Melodie mit darübergeschriebenen Akkordsymbolen lesen und selbst eine Begleitung gestalten.",
+     "p": [
+      "Ein Leadsheet zeigt nur die Melodie in einem System und darüber Akkordsymbole wie C, F, G oder Am.",
+      "Ein Großbuchstabe allein ist Dur, ein kleines m dahinter Moll, also Am ist a-Moll; Achtung: B im Symbol ist H.",
+      "Die rechte Hand spielt die Melodie, die linke den angegebenen Akkord, mit einem Muster deiner Wahl."
+     ],
+     "q": "Gibt es ein einfaches Lied, das du gern nach Akkordsymbolen spielen würdest?",
+     "c": "Schreib die erste Zeile der Ode an die Freude mit den Symbolen C und G darüber und spiel sie mit Blockakkorden links."
+    },
+    "es": {
+     "t": "Tocar con una partitura de cifrado",
+     "g": "Leer una melodía con cifrado americano encima y crear tu propio acompañamiento.",
+     "p": [
+      "Una lead sheet solo trae la melodía en un pentagrama y encima los acordes cifrados: C, F, G o Am.",
+      "La letra sola indica acorde mayor y una m pequeña indica menor: C es Do mayor y Am es La menor.",
+      "La derecha toca la melodía y la izquierda el acorde indicado, con el patrón que tú elijas."
+     ],
+     "q": "¿Hay alguna canción sencilla que te gustaría tocar con cifrado?",
+     "c": "Escribe la primera frase del Himno a la alegría con los cifrados C y G encima y tócala con acordes en bloque."
+    },
+    "fr": {
+     "t": "Jouer d'après une grille",
+     "g": "Lire une mélodie avec des symboles d'accords au-dessus et créer ton propre accompagnement.",
+     "p": [
+      "Une lead sheet ne donne que la mélodie sur une portée et, au-dessus, des accords comme C, F, G ou Am.",
+      "Une lettre seule indique un accord majeur, un m minuscule un mineur : C est do majeur, Am la mineur.",
+      "La main droite joue la mélodie, la gauche l'accord indiqué, avec le motif de ton choix."
+     ],
+     "q": "Y a-t-il une chanson simple que tu aimerais jouer avec une grille d'accords ?",
+     "c": "Écris la première ligne de l'Hymne à la joie avec les accords C et G au-dessus, puis joue-la avec des accords plaqués."
+    },
+    "it": {
+     "t": "Suonare da una lead sheet",
+     "g": "Leggere una melodia con le sigle degli accordi sopra e creare il tuo accompagnamento.",
+     "p": [
+      "Una lead sheet riporta solo la melodia su un pentagramma e sopra le sigle degli accordi, come C, F, G o Am.",
+      "La lettera da sola indica un accordo maggiore, una m minuscola un minore: C è Do maggiore, Am La minore.",
+      "La destra suona la melodia e la sinistra l'accordo indicato, con lo schema che preferisci."
+     ],
+     "q": "C'è una canzone semplice che vorresti suonare leggendo le sigle?",
+     "c": "Scrivi la prima riga dell'Inno alla gioia con le sigle C e G sopra e suonala con accordi pieni nella sinistra."
+    },
+    "pt": {
+     "t": "Tocar a partir de uma cifra",
+     "g": "Ler uma melodia com cifras por cima e criar o teu próprio acompanhamento.",
+     "p": [
+      "Uma lead sheet traz só a melodia numa pauta e por cima as cifras dos acordes, como C, F, G ou Am.",
+      "A letra sozinha indica acorde maior e um m pequeno indica menor: C é dó maior e Am é lá menor.",
+      "A direita toca a melodia e a esquerda o acorde indicado, com o padrão que escolheres."
+     ],
+     "q": "Há alguma música simples que gostavas de tocar pela cifra?",
+     "c": "Escreve a primeira frase do Hino da Alegria com as cifras C e G por cima e toca-a com acordes em bloco na esquerda."
+    },
+    "pt_BR": {
+     "t": "Tocando pela cifra",
+     "g": "Ler uma melodia com cifras escritas em cima e criar seu próprio acompanhamento.",
+     "p": [
+      "Uma lead sheet traz só a melodia numa pauta e, em cima, as cifras dos acordes, como C, F, G ou Am.",
+      "A letra sozinha indica acorde maior e um m minúsculo indica menor: C é dó maior e Am é lá menor.",
+      "A direita toca a melodia e a esquerda o acorde indicado, com o padrão que você escolher."
+     ],
+     "q": "Tem alguma música simples que você gostaria de tocar pela cifra?",
+     "c": "Escreva a primeira frase da Ode à Alegria com as cifras C e G em cima e toque com acordes em bloco na esquerda."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dotted quarter notes",
+     "g": "Master the long-short rhythm of a dotted quarter followed by an eighth note.",
+     "p": [
+      "A dotted quarter lasts one and a half beats; it is usually followed by an eighth note to complete two beats.",
+      "Count 1 2 and: play on 1, hold through 2, and play the eighth note exactly on the and.",
+      "Ode to Joy uses it at the end of each line: E. D D, a long note, a short one, then a half note."
+     ],
+     "q": "Can you clap the long-short rhythm of a dotted quarter and an eighth?",
+     "c": "Clap then play C. D | E (half) four times, counting 1 2 and 3 4 aloud, keeping the and precise."
+    },
+    "de": {
+     "t": "Punktierte Viertelnoten",
+     "g": "Den Lang-kurz-Rhythmus aus punktierter Viertel und folgender Achtel sicher spielen.",
+     "p": [
+      "Eine punktierte Viertel dauert anderthalb Schläge; meist folgt eine Achtel, die die zwei Schläge vollmacht.",
+      "Zähl 1 2 und: Spiel auf 1, halte über 2 und spiel die Achtel genau auf dem und.",
+      "Die Ode an die Freude nutzt ihn am Ende jeder Zeile: E. D D, ein langer Ton, ein kurzer, dann eine Halbe."
+     ],
+     "q": "Kannst du den Lang-kurz-Rhythmus aus punktierter Viertel und Achtel klatschen?",
+     "c": "Klatsch und spiel dann C. D | E (Halbe) viermal, zähl laut 1 2 und 3 4 und triff das und genau."
+    },
+    "es": {
+     "t": "Negras con puntillo",
+     "g": "Dominar el ritmo largo-corto de una negra con puntillo seguida de una corchea.",
+     "p": [
+      "La negra con puntillo dura un pulso y medio; suele ir seguida de una corchea que completa los dos pulsos.",
+      "Cuenta 1 2 y: toca en el 1, mantén durante el 2 y toca la corchea justo en la y.",
+      "El Himno a la alegría la usa al final de cada frase: Mi. Re Re, una nota larga, una corta y una blanca."
+     ],
+     "q": "¿Puedes palmear el ritmo largo-corto de negra con puntillo y corchea?",
+     "c": "Palmea y luego toca Do. Re | Mi (blanca) cuatro veces, contando 1 2 y 3 4 en voz alta, con la y precisa."
+    },
+    "fr": {
+     "t": "La noire pointée",
+     "g": "Maîtriser le rythme long-bref d'une noire pointée suivie d'une croche.",
+     "p": [
+      "Une noire pointée dure un temps et demi ; elle est souvent suivie d'une croche qui complète les deux temps.",
+      "Compte 1 2 et : joue sur 1, tiens pendant 2 et joue la croche pile sur le et.",
+      "L'Hymne à la joie l'utilise à la fin de chaque ligne : mi. ré ré, une note longue, une brève, puis une blanche."
+     ],
+     "q": "Arrives-tu à frapper le rythme long-bref noire pointée et croche ?",
+     "c": "Frappe puis joue do. ré | mi (blanche) quatre fois, en comptant 1 2 et 3 4 à voix haute, le et bien précis."
+    },
+    "it": {
+     "t": "La semiminima puntata",
+     "g": "Padroneggiare il ritmo lungo-breve della semiminima puntata seguita da una croma.",
+     "p": [
+      "La semiminima puntata dura un movimento e mezzo; di solito la segue una croma che completa i due movimenti.",
+      "Conta 1 2 e: suona sull'1, tieni durante il 2 e suona la croma esattamente sulla e.",
+      "L'Inno alla gioia la usa alla fine di ogni riga: Mi. Re Re, una nota lunga, una breve, poi una minima."
+     ],
+     "q": "Riesci a battere il ritmo lungo-breve di semiminima puntata e croma?",
+     "c": "Batti e poi suona Do. Re | Mi (minima) quattro volte, contando 1 2 e 3 4 ad alta voce, con la e precisa."
+    },
+    "pt": {
+     "t": "Semínimas pontuadas",
+     "g": "Dominar o ritmo longo-curto de uma semínima pontuada seguida de uma colcheia.",
+     "p": [
+      "A semínima pontuada dura um tempo e meio; normalmente segue-se uma colcheia que completa os dois tempos.",
+      "Conta 1 2 e: toca no 1, segura durante o 2 e toca a colcheia mesmo no e.",
+      "O Hino da Alegria usa-a no fim de cada frase: mi. ré ré, uma nota longa, uma curta e depois uma mínima."
+     ],
+     "q": "Consegues bater palmas no ritmo longo-curto de semínima pontuada e colcheia?",
+     "c": "Bate palmas e depois toca dó. ré | mi (mínima) quatro vezes, contando 1 2 e 3 4 em voz alta, com o e preciso."
+    },
+    "pt_BR": {
+     "t": "Semínimas pontuadas",
+     "g": "Dominar o ritmo longo-curto de uma semínima pontuada seguida de uma colcheia.",
+     "p": [
+      "A semínima pontuada dura um tempo e meio; geralmente vem seguida de uma colcheia que completa os dois tempos.",
+      "Conte 1 2 e: toque no 1, segure durante o 2 e toque a colcheia bem no e.",
+      "A Ode à Alegria usa esse ritmo no fim de cada frase: mi. ré ré, uma nota longa, uma curta e depois uma mínima."
+     ],
+     "q": "Você consegue bater palmas no ritmo longo-curto de semínima pontuada e colcheia?",
+     "c": "Bata palmas e depois toque dó. ré | mi (mínima) quatro vezes, contando 1 2 e 3 4 em voz alta, com o e preciso."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pickup notes",
+     "g": "Start pieces that begin before the first full bar, on a pickup or upbeat.",
+     "p": [
+      "A pickup, or anacrusis, is one or more notes before the first full bar, leading into its strong beat 1.",
+      "Count the missing beats silently first: with a one-beat pickup in 4/4, count 1 2 3 and play on 4.",
+      "The final bar is often shortened by the same amount, so pickup and last bar together make one full bar."
+     ],
+     "q": "Can you think of a song that starts before the main beat, like Happy Birthday?",
+     "c": "Count 1 2 3 aloud, then play G on beat 4 as a pickup and land on C on the next beat 1; repeat five times."
+    },
+    "de": {
+     "t": "Der Auftakt",
+     "g": "Stücke beginnen, die vor dem ersten vollen Takt starten, mit einem Auftakt.",
+     "p": [
+      "Ein Auftakt besteht aus einem oder mehreren Tönen vor dem ersten vollen Takt und führt zu dessen betonter 1.",
+      "Zähl die fehlenden Schläge erst still: Bei einem Viertel-Auftakt im 4/4-Takt zählst du 1 2 3 und spielst auf 4.",
+      "Der letzte Takt ist oft um denselben Wert kürzer; Auftakt und Schlusstakt ergeben zusammen einen vollen Takt."
+     ],
+     "q": "Fällt dir ein Lied ein, das vor dem Hauptschlag beginnt, wie Zum Geburtstag viel Glück?",
+     "c": "Zähl laut 1 2 3, spiel G auf Schlag 4 als Auftakt und lande auf der nächsten 1 auf C; fünfmal wiederholen."
+    },
+    "es": {
+     "t": "La anacrusa",
+     "g": "Empezar piezas que comienzan antes del primer compás completo, con una anacrusa.",
+     "p": [
+      "La anacrusa es una o más notas antes del primer compás completo, que llevan a su pulso fuerte, el 1.",
+      "Cuenta primero en silencio los pulsos que faltan: con una anacrusa de un pulso en 4/4, cuenta 1 2 3 y toca en el 4.",
+      "El último compás suele acortarse lo mismo, así que anacrusa y compás final suman un compás completo."
+     ],
+     "q": "¿Se te ocurre una canción que empiece antes del pulso fuerte, como Cumpleaños feliz?",
+     "c": "Cuenta 1 2 3 en voz alta, toca Sol en el pulso 4 como anacrusa y cae en Do en el siguiente 1; repite cinco veces."
+    },
+    "fr": {
+     "t": "L'anacrouse",
+     "g": "Commencer des pièces qui démarrent avant la première mesure complète, sur une levée.",
+     "p": [
+      "Une anacrouse, ou levée, est une ou plusieurs notes avant la première mesure complète, menant à son temps fort.",
+      "Compte d'abord en silence les temps manquants : avec une levée d'un temps à 4/4, compte 1 2 3 et joue sur 4.",
+      "La dernière mesure est souvent raccourcie d'autant : levée et dernière mesure forment ensemble une mesure."
+     ],
+     "q": "Connais-tu une chanson qui commence avant le temps fort, comme Joyeux anniversaire ?",
+     "c": "Compte 1 2 3 à voix haute, joue sol sur le temps 4 en levée et pose do sur le 1 suivant ; cinq fois."
+    },
+    "it": {
+     "t": "L'anacrusi",
+     "g": "Iniziare brani che partono prima della prima battuta completa, in levare.",
+     "p": [
+      "L'anacrusi è una o più note prima della prima battuta completa, che portano al suo movimento forte, l'1.",
+      "Conta prima in silenzio i movimenti mancanti: con un'anacrusi di un movimento in 4/4 conta 1 2 3 e suona sul 4.",
+      "L'ultima battuta spesso è accorciata dello stesso valore: anacrusi e battuta finale insieme fanno una battuta intera."
+     ],
+     "q": "Ti viene in mente una canzone che parte prima del tempo forte, come Tanti auguri a te?",
+     "c": "Conta 1 2 3 ad alta voce, suona Sol sul 4 come anacrusi e arriva sul Do al successivo 1; ripeti cinque volte."
+    },
+    "pt": {
+     "t": "A anacrusa",
+     "g": "Começar peças que arrancam antes do primeiro compasso completo, com uma anacrusa.",
+     "p": [
+      "A anacrusa é uma ou mais notas antes do primeiro compasso completo, que levam ao seu tempo forte, o 1.",
+      "Conta primeiro em silêncio os tempos que faltam: com uma anacrusa de um tempo em 4/4, conta 1 2 3 e toca no 4.",
+      "O último compasso costuma ser encurtado no mesmo valor, por isso anacrusa e compasso final fazem um compasso inteiro."
+     ],
+     "q": "Lembras-te de uma música que comece antes do tempo forte, como os Parabéns a você?",
+     "c": "Conta 1 2 3 em voz alta, toca sol no tempo 4 como anacrusa e cai no dó no 1 seguinte; repete cinco vezes."
+    },
+    "pt_BR": {
+     "t": "A anacruse",
+     "g": "Começar peças que iniciam antes do primeiro compasso completo, com uma anacruse.",
+     "p": [
+      "A anacruse é uma ou mais notas antes do primeiro compasso completo, que levam ao tempo forte dele, o 1.",
+      "Conte primeiro em silêncio os tempos que faltam: com anacruse de um tempo em 4/4, conte 1 2 3 e toque no 4.",
+      "O último compasso costuma ser encurtado no mesmo valor, então anacruse e compasso final somam um compasso inteiro."
+     ],
+     "q": "Você lembra de uma música que começa antes do tempo forte, como o Parabéns pra você?",
+     "c": "Conte 1 2 3 em voz alta, toque sol no tempo 4 como anacruse e caia no dó no 1 seguinte; repita cinco vezes."
+    }
+   }
+  }
+ ]
+}

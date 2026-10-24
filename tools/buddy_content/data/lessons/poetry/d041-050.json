@@ -1,0 +1,835 @@
+{
+ "topic": "poetry",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Senryu",
+     "g": "Meet the haiku's cousin that focuses on everyday human life, often with gentle humour.",
+     "p": [
+      "Senryu has the same short three-line shape as haiku.",
+      "Instead of nature and seasons, it looks at people, habits and little human moments.",
+      "Gentle humour and kindness work well: the lost keys, the cold coffee."
+     ],
+     "q": "What everyday habit of yours could make a funny senryu?",
+     "c": "Write two senryu about small, funny moments from your week."
+    },
+    "de": {
+     "t": "Senryu",
+     "g": "Lerne den Cousin des Haiku kennen, der den menschlichen Alltag zeigt, oft mit sanftem Humor.",
+     "p": [
+      "Das Senryu hat die gleiche kurze Dreizeilenform wie das Haiku.",
+      "Statt Natur und Jahreszeiten zeigt es Menschen, Gewohnheiten und kleine Alltagsmomente.",
+      "Sanfter Humor und Freundlichkeit passen gut: verlegte Schlüssel, kalter Kaffee."
+     ],
+     "q": "Welche deiner Alltagsgewohnheiten könnte ein lustiges Senryu ergeben?",
+     "c": "Schreibe zwei Senryu über kleine, lustige Momente deiner Woche."
+    },
+    "es": {
+     "t": "El senryu",
+     "g": "Conoce al primo del haiku que mira la vida humana cotidiana, a menudo con humor amable.",
+     "p": [
+      "El senryu tiene la misma forma breve de tres versos que el haiku.",
+      "En vez de naturaleza y estaciones, mira a las personas, sus hábitos y pequeños momentos.",
+      "El humor amable funciona muy bien: las llaves perdidas, el café que se enfría."
+     ],
+     "q": "¿Qué costumbre tuya podría dar un senryu divertido?",
+     "c": "Escribe dos senryu sobre momentos pequeños y graciosos de tu semana."
+    },
+    "fr": {
+     "t": "Le senryū",
+     "g": "Découvrir le cousin du haïku qui observe la vie humaine, souvent avec un humour doux.",
+     "p": [
+      "Le senryū a la même forme courte en trois vers que le haïku.",
+      "Au lieu de la nature et des saisons, il regarde les gens, leurs habitudes, leurs petits moments.",
+      "L'humour tendre y fonctionne bien : les clés perdues, le café refroidi."
+     ],
+     "q": "Quelle habitude de ton quotidien pourrait donner un senryū amusant ?",
+     "c": "Écris deux senryū sur de petits moments drôles de ta semaine."
+    },
+    "it": {
+     "t": "Il senryu",
+     "g": "Scopri il cugino dell'haiku che guarda la vita quotidiana, spesso con umorismo gentile.",
+     "p": [
+      "Il senryu ha la stessa forma breve in tre versi dell'haiku.",
+      "Invece di natura e stagioni, osserva le persone, le abitudini e i piccoli momenti umani.",
+      "L'umorismo gentile funziona bene: le chiavi perse, il caffè che si raffredda."
+     ],
+     "q": "Quale tua abitudine quotidiana potrebbe diventare un senryu divertente?",
+     "c": "Scrivi due senryu su piccoli momenti buffi della tua settimana."
+    },
+    "pt": {
+     "t": "O senryu",
+     "g": "Conhece o primo do haiku que olha a vida humana do dia a dia, muitas vezes com humor gentil.",
+     "p": [
+      "O senryu tem a mesma forma curta de três versos que o haiku.",
+      "Em vez da natureza e das estações, olha para as pessoas, hábitos e pequenos momentos.",
+      "O humor gentil resulta bem: as chaves perdidas, o café que arrefece."
+     ],
+     "q": "Que hábito teu do dia a dia daria um senryu engraçado?",
+     "c": "Escreve dois senryu sobre momentos pequenos e divertidos da tua semana."
+    },
+    "pt_BR": {
+     "t": "O senryu",
+     "g": "Conheça o primo do haicai que olha a vida humana cotidiana, muitas vezes com humor gentil.",
+     "p": [
+      "O senryu tem a mesma forma curta de três versos do haicai.",
+      "Em vez da natureza e das estações, ele olha para as pessoas, hábitos e pequenos momentos.",
+      "O humor gentil funciona bem: as chaves perdidas, o café que esfria."
+     ],
+     "q": "Que hábito seu do dia a dia daria um senryu engraçado?",
+     "c": "Escreva dois senryus sobre momentos pequenos e engraçados da sua semana."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The acrostic poem",
+     "g": "Write a poem where the first letters of each line spell a word.",
+     "p": [
+      "Write a word down the left side of the page, one letter per line.",
+      "Each line starts with that letter and says something about the word.",
+      "Avoid single words per line; full phrases make it a real poem."
+     ],
+     "q": "What word would you choose for an acrostic about yourself?",
+     "c": "Write an acrostic using the name of a place or a person you admire."
+    },
+    "de": {
+     "t": "Das Akrostichon",
+     "g": "Schreibe ein Gedicht, in dem die Anfangsbuchstaben der Zeilen ein Wort bilden.",
+     "p": [
+      "Schreib ein Wort senkrecht an den linken Rand, ein Buchstabe pro Zeile.",
+      "Jede Zeile beginnt mit diesem Buchstaben und sagt etwas über das Wort.",
+      "Vermeide Einzelwörter; ganze Wendungen machen es zu einem echten Gedicht."
+     ],
+     "q": "Welches Wort würdest du für ein Akrostichon über dich wählen?",
+     "c": "Schreibe ein Akrostichon mit dem Namen eines Ortes oder einer Person, die du bewunderst."
+    },
+    "es": {
+     "t": "El acróstico",
+     "g": "Escribe un poema en el que las primeras letras de cada verso formen una palabra.",
+     "p": [
+      "Escribe una palabra en vertical a la izquierda, una letra por verso.",
+      "Cada verso empieza con esa letra y dice algo sobre la palabra.",
+      "Evita una sola palabra por verso; las frases completas lo hacen poema."
+     ],
+     "q": "¿Qué palabra elegirías para un acróstico sobre ti?",
+     "c": "Escribe un acróstico con el nombre de un lugar o de una persona a quien admires."
+    },
+    "fr": {
+     "t": "L'acrostiche",
+     "g": "Écrire un poème dont les premières lettres des vers forment un mot.",
+     "p": [
+      "Écris un mot à la verticale, à gauche, une lettre par vers.",
+      "Chaque vers commence par cette lettre et dit quelque chose du mot.",
+      "Évite un seul mot par vers ; des phrases entières en font un vrai poème."
+     ],
+     "q": "Quel mot choisirais-tu pour un acrostiche sur toi ?",
+     "c": "Écris un acrostiche avec le nom d'un lieu ou d'une personne que tu admires."
+    },
+    "it": {
+     "t": "L'acrostico",
+     "g": "Scrivi una poesia in cui le iniziali dei versi formano una parola.",
+     "p": [
+      "Scrivi una parola in verticale a sinistra, una lettera per verso.",
+      "Ogni verso inizia con quella lettera e dice qualcosa sulla parola.",
+      "Evita una sola parola per verso: frasi intere la rendono vera poesia."
+     ],
+     "q": "Quale parola sceglieresti per un acrostico su di te?",
+     "c": "Scrivi un acrostico con il nome di un luogo o di una persona che ammiri."
+    },
+    "pt": {
+     "t": "O acróstico",
+     "g": "Escreve um poema em que as primeiras letras dos versos formam uma palavra.",
+     "p": [
+      "Escreve uma palavra na vertical, à esquerda, uma letra por verso.",
+      "Cada verso começa com essa letra e diz algo sobre a palavra.",
+      "Evita uma só palavra por verso; frases inteiras fazem dele um poema."
+     ],
+     "q": "Que palavra escolherias para um acróstico sobre ti?",
+     "c": "Escreve um acróstico com o nome de um lugar ou de uma pessoa que admires."
+    },
+    "pt_BR": {
+     "t": "O acróstico",
+     "g": "Escreva um poema em que as primeiras letras dos versos formam uma palavra.",
+     "p": [
+      "Escreva uma palavra na vertical, à esquerda, uma letra por verso.",
+      "Cada verso começa com essa letra e diz algo sobre a palavra.",
+      "Evite uma só palavra por verso; frases inteiras fazem dele um poema de verdade."
+     ],
+     "q": "Que palavra você escolheria para um acróstico sobre você?",
+     "c": "Escreva um acróstico com o nome de um lugar ou de uma pessoa que você admira."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The list poem",
+     "g": "Build a poem from a list of things, wishes or memories.",
+     "p": [
+      "A list poem gathers items around one theme: things in my pocket, small joys.",
+      "Specific, surprising items keep it lively; mix big and tiny things.",
+      "Save the most moving or funny item for the last line."
+     ],
+     "q": "What would be on your list of small everyday joys?",
+     "c": "Write a list poem of eight lines called Things That Make Me Smile."
+    },
+    "de": {
+     "t": "Das Listengedicht",
+     "g": "Baue ein Gedicht aus einer Liste von Dingen, Wünschen oder Erinnerungen.",
+     "p": [
+      "Ein Listengedicht sammelt Dinge zu einem Thema: in meiner Tasche, kleine Freuden.",
+      "Genaue, überraschende Einträge halten es lebendig; mische Großes und Winziges.",
+      "Heb dir den berührendsten oder lustigsten Eintrag für die letzte Zeile auf."
+     ],
+     "q": "Was stünde auf deiner Liste kleiner Alltagsfreuden?",
+     "c": "Schreibe ein Listengedicht mit acht Zeilen namens Dinge, die mich lächeln lassen."
+    },
+    "es": {
+     "t": "El poema lista",
+     "g": "Construye un poema con una lista de cosas, deseos o recuerdos.",
+     "p": [
+      "El poema lista reúne elementos en torno a un tema: lo que hay en mi bolsillo, pequeñas alegrías.",
+      "Elementos concretos y sorprendentes lo mantienen vivo; mezcla lo grande y lo diminuto.",
+      "Guarda el elemento más emotivo o gracioso para el último verso."
+     ],
+     "q": "¿Qué habría en tu lista de pequeñas alegrías diarias?",
+     "c": "Escribe un poema lista de ocho versos titulado Cosas que me hacen sonreír."
+    },
+    "fr": {
+     "t": "Le poème-liste",
+     "g": "Construire un poème à partir d'une liste de choses, de vœux ou de souvenirs.",
+     "p": [
+      "Le poème-liste réunit des éléments autour d'un thème : dans ma poche, petits bonheurs.",
+      "Des éléments précis et surprenants le rendent vivant ; mélange grand et minuscule.",
+      "Garde l'élément le plus touchant ou le plus drôle pour le dernier vers."
+     ],
+     "q": "Que mettrais-tu sur ta liste de petits bonheurs quotidiens ?",
+     "c": "Écris un poème-liste de huit vers intitulé Ce qui me fait sourire."
+    },
+    "it": {
+     "t": "La poesia elenco",
+     "g": "Costruisci una poesia da un elenco di cose, desideri o ricordi.",
+     "p": [
+      "La poesia elenco raccoglie elementi intorno a un tema: nella mia tasca, piccole gioie.",
+      "Elementi precisi e sorprendenti la rendono viva: mescola grande e minuscolo.",
+      "Tieni l'elemento più toccante o divertente per l'ultimo verso."
+     ],
+     "q": "Che cosa ci sarebbe nella tua lista di piccole gioie quotidiane?",
+     "c": "Scrivi una poesia elenco di otto versi intitolata Cose che mi fanno sorridere."
+    },
+    "pt": {
+     "t": "O poema lista",
+     "g": "Constrói um poema a partir de uma lista de coisas, desejos ou memórias.",
+     "p": [
+      "O poema lista junta elementos à volta de um tema: no meu bolso, pequenas alegrias.",
+      "Elementos concretos e surpreendentes dão-lhe vida; mistura o grande e o minúsculo.",
+      "Guarda o elemento mais tocante ou engraçado para o último verso."
+     ],
+     "q": "O que estaria na tua lista de pequenas alegrias do dia a dia?",
+     "c": "Escreve um poema lista de oito versos chamado Coisas que me fazem sorrir."
+    },
+    "pt_BR": {
+     "t": "O poema lista",
+     "g": "Construa um poema a partir de uma lista de coisas, desejos ou lembranças.",
+     "p": [
+      "O poema lista junta itens em torno de um tema: no meu bolso, pequenas alegrias.",
+      "Itens concretos e surpreendentes dão vida a ele; misture o grande e o minúsculo.",
+      "Guarde o item mais tocante ou engraçado para o último verso."
+     ],
+     "q": "O que estaria na sua lista de pequenas alegrias do dia a dia?",
+     "c": "Escreva um poema lista de oito versos chamado Coisas que me fazem sorrir."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cinquain",
+     "g": "Try a five-line form with a growing and shrinking shape.",
+     "p": [
+      "Adelaide Crapsey's cinquain uses 2, 4, 6, 8 and 2 syllables.",
+      "A simpler school version uses 1, 2, 3, 4 and 1 words.",
+      "The short last line works like a quiet click that closes the poem."
+     ],
+     "q": "What subject would suit a poem that grows and then shrinks?",
+     "c": "Write a 2-4-6-8-2 syllable cinquain about a cup of something warm."
+    },
+    "de": {
+     "t": "Das Cinquain",
+     "g": "Probiere eine Fünfzeilenform, die wächst und wieder schrumpft.",
+     "p": [
+      "Adelaide Crapseys Cinquain hat 2, 4, 6, 8 und 2 Silben.",
+      "Eine einfachere Schulversion nutzt 1, 2, 3, 4 und 1 Wörter.",
+      "Die kurze letzte Zeile wirkt wie ein leises Klicken, das das Gedicht schließt."
+     ],
+     "q": "Welches Thema passt zu einem Gedicht, das wächst und wieder schrumpft?",
+     "c": "Schreibe ein Cinquain mit 2-4-6-8-2 Silben über eine Tasse mit etwas Warmem."
+    },
+    "es": {
+     "t": "El cinquain",
+     "g": "Prueba una forma de cinco versos que crece y luego se encoge.",
+     "p": [
+      "El cinquain de Adelaide Crapsey usa 2, 4, 6, 8 y 2 sílabas.",
+      "Una versión escolar más sencilla usa 1, 2, 3, 4 y 1 palabras.",
+      "El último verso corto suena como un clic suave que cierra el poema."
+     ],
+     "q": "¿Qué tema encajaría en un poema que crece y luego se encoge?",
+     "c": "Escribe un cinquain de 2-4-6-8-2 sílabas sobre una taza de algo calentito."
+    },
+    "fr": {
+     "t": "Le cinquain",
+     "g": "Essayer une forme en cinq vers qui grandit puis rétrécit.",
+     "p": [
+      "Le cinquain d'Adelaide Crapsey compte 2, 4, 6, 8 et 2 syllabes.",
+      "Une version scolaire plus simple utilise 1, 2, 3, 4 et 1 mots.",
+      "Le dernier vers court agit comme un petit déclic qui ferme le poème."
+     ],
+     "q": "Quel sujet irait bien à un poème qui grandit puis rétrécit ?",
+     "c": "Écris un cinquain de 2-4-6-8-2 syllabes sur une tasse de quelque chose de chaud."
+    },
+    "it": {
+     "t": "Il cinquain",
+     "g": "Prova una forma di cinque versi che cresce e poi si restringe.",
+     "p": [
+      "Il cinquain di Adelaide Crapsey usa 2, 4, 6, 8 e 2 sillabe.",
+      "Una versione scolastica più semplice usa 1, 2, 3, 4 e 1 parole.",
+      "L'ultimo verso breve è come un clic leggero che chiude la poesia."
+     ],
+     "q": "Quale soggetto si adatterebbe a una poesia che cresce e poi si restringe?",
+     "c": "Scrivi un cinquain di 2-4-6-8-2 sillabe su una tazza di qualcosa di caldo."
+    },
+    "pt": {
+     "t": "O cinquain",
+     "g": "Experimenta uma forma de cinco versos que cresce e depois encolhe.",
+     "p": [
+      "O cinquain de Adelaide Crapsey usa 2, 4, 6, 8 e 2 sílabas.",
+      "Uma versão escolar mais simples usa 1, 2, 3, 4 e 1 palavras.",
+      "O último verso curto funciona como um clique suave que fecha o poema."
+     ],
+     "q": "Que tema combinaria com um poema que cresce e depois encolhe?",
+     "c": "Escreve um cinquain de 2-4-6-8-2 sílabas sobre uma chávena de algo quente."
+    },
+    "pt_BR": {
+     "t": "O cinquain",
+     "g": "Experimente uma forma de cinco versos que cresce e depois encolhe.",
+     "p": [
+      "O cinquain de Adelaide Crapsey usa 2, 4, 6, 8 e 2 sílabas.",
+      "Uma versão escolar mais simples usa 1, 2, 3, 4 e 1 palavras.",
+      "O último verso curto funciona como um clique suave que fecha o poema."
+     ],
+     "q": "Que tema combinaria com um poema que cresce e depois encolhe?",
+     "c": "Escreva um cinquain de 2-4-6-8-2 sílabas sobre uma xícara de algo quentinho."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The limerick",
+     "g": "Enjoy a funny five-line form with a bouncy rhythm and an AABBA rhyme.",
+     "p": [
+      "Lines 1, 2 and 5 are longer and rhyme; lines 3 and 4 are short and rhyme together.",
+      "The rhythm bounces: da-da-DUM, da-da-DUM, like a happy gallop.",
+      "Edward Lear made limericks famous with his playful nonsense verse."
+     ],
+     "q": "Do you know any funny rhymes or jokes in verse from your culture?",
+     "c": "Read a limerick aloud and clap its bouncing beat, then note its AABBA rhymes."
+    },
+    "de": {
+     "t": "Der Limerick",
+     "g": "Hab Spaß mit einer lustigen Fünfzeilenform mit hüpfendem Rhythmus und Reim AABBA.",
+     "p": [
+      "Zeilen 1, 2 und 5 sind länger und reimen sich; 3 und 4 sind kurz und reimen sich.",
+      "Der Rhythmus hüpft: da-da-DAM, da-da-DAM, wie ein fröhlicher Galopp.",
+      "Edward Lear machte Limericks mit seinen verspielten Unsinnsversen berühmt."
+     ],
+     "q": "Kennst du lustige Reime oder Witze in Versform aus deiner Kultur?",
+     "c": "Lies einen Limerick laut, klatsche seinen hüpfenden Takt und notiere die Reime AABBA."
+    },
+    "es": {
+     "t": "El limerick",
+     "g": "Disfruta una forma divertida de cinco versos con ritmo saltarín y rima AABBA.",
+     "p": [
+      "Los versos 1, 2 y 5 son más largos y riman; el 3 y el 4 son cortos y riman entre sí.",
+      "El ritmo salta: ta-ta-TÁN, ta-ta-TÁN, como un galope alegre.",
+      "Edward Lear hizo famosos los limericks con sus juguetones versos de disparates."
+     ],
+     "q": "¿Conoces rimas o chistes en verso divertidos de tu cultura?",
+     "c": "Lee en voz alta un limerick, marca con palmas su ritmo y anota sus rimas AABBA."
+    },
+    "fr": {
+     "t": "Le limerick",
+     "g": "Découvrir une forme amusante en cinq vers, au rythme bondissant et aux rimes AABBA.",
+     "p": [
+      "Les vers 1, 2 et 5 sont plus longs et riment ; les vers 3 et 4, courts, riment entre eux.",
+      "Le rythme rebondit : ta-ta-TAM, ta-ta-TAM, comme un joyeux galop.",
+      "Edward Lear a rendu les limericks célèbres avec ses vers absurdes et joueurs."
+     ],
+     "q": "Connais-tu des rimes drôles ou des blagues en vers de ta culture ?",
+     "c": "Lis un limerick à voix haute, tape son rythme bondissant et note ses rimes AABBA."
+    },
+    "it": {
+     "t": "Il limerick",
+     "g": "Divertiti con una forma buffa di cinque versi, ritmo saltellante e rima AABBA.",
+     "p": [
+      "I versi 1, 2 e 5 sono più lunghi e rimano; il 3 e il 4 sono brevi e rimano tra loro.",
+      "Il ritmo saltella: ta-ta-TAM, ta-ta-TAM, come un galoppo allegro.",
+      "Edward Lear rese famosi i limerick con i suoi giocosi versi nonsense."
+     ],
+     "q": "Conosci rime buffe o barzellette in versi della tua cultura?",
+     "c": "Leggi un limerick ad alta voce, batti il suo ritmo e annota le rime AABBA."
+    },
+    "pt": {
+     "t": "O limerique",
+     "g": "Diverte-te com uma forma engraçada de cinco versos, ritmo saltitante e rima AABBA.",
+     "p": [
+      "Os versos 1, 2 e 5 são mais longos e rimam; o 3 e o 4 são curtos e rimam entre si.",
+      "O ritmo saltita: ta-ta-TÃ, ta-ta-TÃ, como um galope alegre.",
+      "Edward Lear tornou os limeriques famosos com os seus versos de disparate brincalhões."
+     ],
+     "q": "Conheces rimas engraçadas ou anedotas em verso da tua cultura?",
+     "c": "Lê um limerique em voz alta, marca o ritmo com palmas e anota as rimas AABBA."
+    },
+    "pt_BR": {
+     "t": "O limerique",
+     "g": "Divirta-se com uma forma engraçada de cinco versos, ritmo saltitante e rima AABBA.",
+     "p": [
+      "Os versos 1, 2 e 5 são mais longos e rimam; o 3 e o 4 são curtos e rimam entre si.",
+      "O ritmo saltita: ta-ta-TÃ, ta-ta-TÃ, como um galope alegre.",
+      "Edward Lear tornou os limeriques famosos com seus versos nonsense brincalhões."
+     ],
+     "q": "Você conhece rimas engraçadas ou piadas em verso da sua cultura?",
+     "c": "Leia um limerique em voz alta, marque o ritmo com palmas e anote as rimas AABBA."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a limerick",
+     "g": "Create your own limerick with a playful character and a twist.",
+     "p": [
+      "Start with a character and a place: There once was a cook from Peru.",
+      "Brainstorm many rhymes for your first line before you start.",
+      "Make lines 3 and 4 build up the situation, and give line 5 a funny twist."
+     ],
+     "q": "Who would be the hero of your limerick?",
+     "c": "Write a complete limerick about a pet, a neighbour or an imaginary character."
+    },
+    "de": {
+     "t": "Einen Limerick schreiben",
+     "g": "Schreibe deinen eigenen Limerick mit einer verspielten Figur und einer Pointe.",
+     "p": [
+      "Beginne mit Figur und Ort: Es war einmal ein Koch aus Peru.",
+      "Sammle viele Reime auf deine erste Zeile, bevor du loslegst.",
+      "Lass Zeile 3 und 4 die Lage zuspitzen und gib Zeile 5 eine lustige Wendung."
+     ],
+     "q": "Wer wäre der Held deines Limericks?",
+     "c": "Schreibe einen ganzen Limerick über ein Haustier, einen Nachbarn oder eine Fantasiefigur."
+    },
+    "es": {
+     "t": "Escribir un limerick",
+     "g": "Crea tu propio limerick con un personaje juguetón y un giro final.",
+     "p": [
+      "Empieza con un personaje y un lugar: Había una vez un cocinero de Perú.",
+      "Busca muchas rimas para tu primer verso antes de empezar.",
+      "Que los versos 3 y 4 preparen la situación y el 5 dé un giro gracioso."
+     ],
+     "q": "¿Quién sería el protagonista de tu limerick?",
+     "c": "Escribe un limerick completo sobre una mascota, un vecino o un personaje inventado."
+    },
+    "fr": {
+     "t": "Écrire un limerick",
+     "g": "Créer ton propre limerick avec un personnage espiègle et une chute.",
+     "p": [
+      "Commence par un personnage et un lieu : Il était un cuisinier de Pérouse.",
+      "Cherche beaucoup de rimes pour ton premier vers avant de commencer.",
+      "Que les vers 3 et 4 fassent monter la situation, et que le 5 offre une chute drôle."
+     ],
+     "q": "Qui serait le héros de ton limerick ?",
+     "c": "Écris un limerick complet sur un animal, un voisin ou un personnage imaginaire."
+    },
+    "it": {
+     "t": "Scrivere un limerick",
+     "g": "Crea il tuo limerick con un personaggio giocoso e una sorpresa finale.",
+     "p": [
+      "Inizia con un personaggio e un luogo: C'era un cuoco che stava a Torino.",
+      "Cerca molte rime per il primo verso prima di cominciare.",
+      "Fai crescere la situazione nei versi 3 e 4 e regala al 5 una svolta buffa."
+     ],
+     "q": "Chi sarebbe il protagonista del tuo limerick?",
+     "c": "Scrivi un limerick completo su un animale, un vicino o un personaggio inventato."
+    },
+    "pt": {
+     "t": "Escrever um limerique",
+     "g": "Cria o teu próprio limerique com uma personagem brincalhona e uma reviravolta.",
+     "p": [
+      "Começa com uma personagem e um lugar: Havia um cozinheiro de Viseu.",
+      "Procura muitas rimas para o primeiro verso antes de começar.",
+      "Faz os versos 3 e 4 prepararem a situação e dá ao 5 uma reviravolta engraçada."
+     ],
+     "q": "Quem seria o herói do teu limerique?",
+     "c": "Escreve um limerique completo sobre um animal, um vizinho ou uma personagem inventada."
+    },
+    "pt_BR": {
+     "t": "Escrever um limerique",
+     "g": "Crie seu próprio limerique com um personagem brincalhão e uma reviravolta.",
+     "p": [
+      "Comece com um personagem e um lugar: Havia um cozinheiro de Belém.",
+      "Procure muitas rimas para o primeiro verso antes de começar.",
+      "Faça os versos 3 e 4 prepararem a situação e dê ao 5 uma reviravolta engraçada."
+     ],
+     "q": "Quem seria o herói do seu limerique?",
+     "c": "Escreva um limerique completo sobre um bicho, um vizinho ou um personagem inventado."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The couplet",
+     "g": "Write two rhyming lines that make a neat, memorable unit.",
+     "p": [
+      "A couplet is two lines that usually rhyme and share a similar length.",
+      "It feels complete and easy to remember, like a proverb.",
+      "Couplets can stand alone or close a longer poem with a final click."
+     ],
+     "q": "Is there a saying in your language that sounds like a rhyming couplet?",
+     "c": "Write three couplets, each giving one piece of friendly advice."
+    },
+    "de": {
+     "t": "Das Reimpaar",
+     "g": "Schreibe zwei gereimte Zeilen, die eine runde, einprägsame Einheit bilden.",
+     "p": [
+      "Ein Reimpaar besteht aus zwei Zeilen, die sich meist reimen und ähnlich lang sind.",
+      "Es wirkt abgeschlossen und leicht zu merken, wie ein Sprichwort.",
+      "Reimpaare stehen allein oder schließen ein längeres Gedicht wie ein Klicken ab."
+     ],
+     "q": "Gibt es in deiner Sprache ein Sprichwort, das wie ein Reimpaar klingt?",
+     "c": "Schreibe drei Reimpaare, jedes mit einem freundlichen Ratschlag."
+    },
+    "es": {
+     "t": "El pareado",
+     "g": "Escribe dos versos que riman y forman una unidad redonda y fácil de recordar.",
+     "p": [
+      "El pareado son dos versos que suelen rimar y tener una medida parecida.",
+      "Suena completo y se recuerda fácilmente, como un refrán.",
+      "Puede ir solo o cerrar un poema más largo con un clic final."
+     ],
+     "q": "¿Hay algún refrán en tu idioma que suene como un pareado?",
+     "c": "Escribe tres pareados, cada uno con un consejo amable."
+    },
+    "fr": {
+     "t": "Le distique",
+     "g": "Écrire deux vers rimés qui forment une unité nette et mémorable.",
+     "p": [
+      "Le distique est un groupe de deux vers, souvent rimés et de longueur proche.",
+      "Il sonne complet et se retient facilement, comme un proverbe.",
+      "Il peut vivre seul ou clore un poème plus long d'un petit déclic."
+     ],
+     "q": "Y a-t-il un dicton dans ta langue qui sonne comme un distique rimé ?",
+     "c": "Écris trois distiques, chacun donnant un conseil bienveillant."
+    },
+    "it": {
+     "t": "Il distico",
+     "g": "Scrivi due versi in rima che formano un'unità netta e memorabile.",
+     "p": [
+      "Il distico è una coppia di versi, di solito in rima e di lunghezza simile.",
+      "Suona compiuto e si ricorda facilmente, come un proverbio.",
+      "Può stare da solo o chiudere una poesia più lunga con un clic finale."
+     ],
+     "q": "C'è un proverbio nella tua lingua che suona come un distico in rima?",
+     "c": "Scrivi tre distici, ognuno con un consiglio gentile."
+    },
+    "pt": {
+     "t": "O dístico",
+     "g": "Escreve dois versos rimados que formam uma unidade redonda e memorável.",
+     "p": [
+      "O dístico são dois versos que costumam rimar e ter medida parecida.",
+      "Soa completo e fixa-se facilmente, como um provérbio.",
+      "Pode viver sozinho ou fechar um poema mais longo com um clique final."
+     ],
+     "q": "Há algum provérbio na tua língua que soe como um dístico rimado?",
+     "c": "Escreve três dísticos, cada um com um conselho amigo."
+    },
+    "pt_BR": {
+     "t": "O dístico",
+     "g": "Escreva dois versos rimados que formam uma unidade redonda e fácil de lembrar.",
+     "p": [
+      "O dístico são dois versos que costumam rimar e ter tamanho parecido.",
+      "Ele soa completo e gruda na memória, como um ditado.",
+      "Pode viver sozinho ou fechar um poema mais longo com um clique final."
+     ],
+     "q": "Existe algum ditado na sua língua que soe como um dístico rimado?",
+     "c": "Escreva três dísticos, cada um com um conselho amigo."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The quatrain",
+     "g": "Use four-line stanzas and common rhyme patterns like ABAB and AABB.",
+     "p": [
+      "A quatrain is a stanza of four lines, the most common stanza in many languages.",
+      "AABB rhymes in pairs; ABAB alternates; ABCB rhymes only lines two and four.",
+      "Each pattern has its own feel: AABB is bouncy, ABAB flows, ABCB is relaxed."
+     ],
+     "q": "Which rhyme pattern do the songs you love tend to use?",
+     "c": "Write one quatrain about a favourite place using the ABAB pattern."
+    },
+    "de": {
+     "t": "Der Vierzeiler",
+     "g": "Nutze vierzeilige Strophen und gängige Reimschemata wie ABAB und AABB.",
+     "p": [
+      "Ein Vierzeiler ist eine Strophe aus vier Zeilen, in vielen Sprachen die häufigste.",
+      "AABB reimt paarweise, ABAB im Wechsel, ABCB nur Zeile zwei und vier.",
+      "Jedes Schema wirkt anders: AABB hüpft, ABAB fließt, ABCB ist entspannt."
+     ],
+     "q": "Welches Reimschema nutzen die Lieder, die du liebst, meistens?",
+     "c": "Schreibe einen Vierzeiler über einen Lieblingsort im Schema ABAB."
+    },
+    "es": {
+     "t": "La cuarteta",
+     "g": "Usa estrofas de cuatro versos y patrones de rima como ABAB y AABB.",
+     "p": [
+      "La estrofa de cuatro versos es de las más comunes en muchas lenguas.",
+      "AABB rima por pares; ABAB alterna; ABCB solo rima el segundo y el cuarto.",
+      "Cada patrón suena distinto: AABB salta, ABAB fluye, ABCB es relajado."
+     ],
+     "q": "¿Qué patrón de rima suelen usar las canciones que te gustan?",
+     "c": "Escribe una estrofa de cuatro versos sobre un lugar favorito con el patrón ABAB."
+    },
+    "fr": {
+     "t": "Le quatrain",
+     "g": "Utiliser des strophes de quatre vers et des schémas de rimes comme ABAB et AABB.",
+     "p": [
+      "Le quatrain est une strophe de quatre vers, l'une des plus courantes.",
+      "AABB : rimes plates ; ABAB : rimes croisées ; ABBA : rimes embrassées.",
+      "Chaque schéma a sa couleur : les plates sautillent, les croisées coulent, les embrassées enveloppent."
+     ],
+     "q": "Quel schéma de rimes utilisent souvent les chansons que tu aimes ?",
+     "c": "Écris un quatrain sur un lieu que tu aimes, en rimes croisées ABAB."
+    },
+    "it": {
+     "t": "La quartina",
+     "g": "Usa strofe di quattro versi e schemi di rima come ABAB e AABB.",
+     "p": [
+      "La quartina è una strofa di quattro versi, tra le più comuni in molte lingue.",
+      "AABB è rima baciata, ABAB alternata, ABBA incrociata.",
+      "Ogni schema ha il suo colore: la baciata saltella, l'alternata scorre, l'incrociata avvolge."
+     ],
+     "q": "Quale schema di rima usano spesso le canzoni che ami?",
+     "c": "Scrivi una quartina su un luogo che ami con lo schema alternato ABAB."
+    },
+    "pt": {
+     "t": "A quadra",
+     "g": "Usa estrofes de quatro versos e esquemas de rima como ABAB e AABB.",
+     "p": [
+      "A quadra é uma estrofe de quatro versos, muito presente na poesia popular portuguesa.",
+      "AABB rima emparelhada; ABAB cruzada; ABBA interpolada.",
+      "Cada esquema soa diferente: a emparelhada saltita, a cruzada flui, a interpolada envolve."
+     ],
+     "q": "Que esquema de rima usam muitas vezes as canções de que gostas?",
+     "c": "Escreve uma quadra sobre um lugar preferido com rima cruzada ABAB."
+    },
+    "pt_BR": {
+     "t": "A quadra",
+     "g": "Use estrofes de quatro versos e esquemas de rima como ABAB e AABB.",
+     "p": [
+      "A quadra é uma estrofe de quatro versos, muito presente na poesia popular brasileira.",
+      "AABB é rima emparelhada; ABAB, cruzada ou alternada; ABBA, interpolada.",
+      "Cada esquema soa diferente: a emparelhada saltita, a alternada flui, a interpolada envolve."
+     ],
+     "q": "Que esquema de rima as músicas que você ama costumam usar?",
+     "c": "Escreva uma quadra sobre um lugar favorito com rima alternada ABAB."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The tercet",
+     "g": "Explore three-line stanzas and their balanced, flowing feel.",
+     "p": [
+      "A tercet is a stanza of three lines, rhymed or unrhymed.",
+      "Three lines feel balanced yet open, pulling the reader onward.",
+      "Dante used linked tercets, called terza rima, in his Divine Comedy."
+     ],
+     "q": "Do groups of three feel special to you, in stories, jokes or music?",
+     "c": "Write a poem of three tercets about a journey, short or long."
+    },
+    "de": {
+     "t": "Die Terzine",
+     "g": "Entdecke dreizeilige Strophen und ihr ausgewogenes, fließendes Gefühl.",
+     "p": [
+      "Eine Dreizeilerstrophe hat drei Zeilen, gereimt oder ungereimt.",
+      "Drei Zeilen wirken ausgewogen und doch offen, sie ziehen den Leser weiter.",
+      "Dante nutzte verkettete Terzinen, die Terza Rima, in seiner Göttlichen Komödie."
+     ],
+     "q": "Wirken Dreiergruppen auf dich besonders, in Geschichten, Witzen oder Musik?",
+     "c": "Schreibe ein Gedicht aus drei Dreizeilern über eine kurze oder lange Reise."
+    },
+    "es": {
+     "t": "El terceto",
+     "g": "Explora las estrofas de tres versos y su sensación equilibrada y fluida.",
+     "p": [
+      "El terceto es una estrofa de tres versos, con rima o sin ella.",
+      "Tres versos se sienten equilibrados y abiertos, y empujan al lector a seguir.",
+      "Dante usó tercetos encadenados, la terza rima, en su Divina Comedia."
+     ],
+     "q": "¿Los grupos de tres te parecen especiales, en cuentos, chistes o música?",
+     "c": "Escribe un poema de tres tercetos sobre un viaje, corto o largo."
+    },
+    "fr": {
+     "t": "Le tercet",
+     "g": "Explorer les strophes de trois vers et leur sensation équilibrée et fluide.",
+     "p": [
+      "Le tercet est une strophe de trois vers, rimés ou non.",
+      "Trois vers semblent équilibrés mais ouverts, et entraînent le lecteur plus loin.",
+      "Dante a utilisé des tercets enchaînés, la terza rima, dans sa Divine Comédie."
+     ],
+     "q": "Les groupes de trois te semblent-ils spéciaux, dans les contes, les blagues ou la musique ?",
+     "c": "Écris un poème de trois tercets sur un voyage, court ou long."
+    },
+    "it": {
+     "t": "La terzina",
+     "g": "Esplora le strofe di tre versi e la loro sensazione equilibrata e fluida.",
+     "p": [
+      "La terzina è una strofa di tre versi, in rima o no.",
+      "Tre versi sembrano equilibrati ma aperti e spingono il lettore avanti.",
+      "Dante usò terzine incatenate, la terza rima, nella Divina Commedia."
+     ],
+     "q": "I gruppi di tre ti sembrano speciali, nelle storie, nelle barzellette o nella musica?",
+     "c": "Scrivi una poesia di tre terzine su un viaggio, breve o lungo."
+    },
+    "pt": {
+     "t": "O terceto",
+     "g": "Explora as estrofes de três versos e a sua sensação equilibrada e fluida.",
+     "p": [
+      "O terceto é uma estrofe de três versos, com ou sem rima.",
+      "Três versos parecem equilibrados mas abertos e puxam o leitor para a frente.",
+      "Dante usou tercetos encadeados, a terza rima, na sua Divina Comédia."
+     ],
+     "q": "Os grupos de três parecem-te especiais, em histórias, anedotas ou música?",
+     "c": "Escreve um poema de três tercetos sobre uma viagem, curta ou longa."
+    },
+    "pt_BR": {
+     "t": "O terceto",
+     "g": "Explore as estrofes de três versos e sua sensação equilibrada e fluida.",
+     "p": [
+      "O terceto é uma estrofe de três versos, com ou sem rima.",
+      "Três versos parecem equilibrados, mas abertos, e puxam o leitor adiante.",
+      "Dante usou tercetos encadeados, a terza rima, na Divina Comédia."
+     ],
+     "q": "Grupos de três parecem especiais para você, em histórias, piadas ou música?",
+     "c": "Escreva um poema de três tercetos sobre uma viagem, curta ou longa."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shape poems",
+     "g": "Create concrete poems whose layout forms a picture of the subject.",
+     "p": [
+      "In a shape poem the words on the page form the outline of the subject.",
+      "A poem about rain can fall down the page; one about a tree can branch out.",
+      "The words still matter: shape and meaning should support each other."
+     ],
+     "q": "What object would make the most fun shape poem?",
+     "c": "Draw a simple outline lightly, then fill it with words about that object."
+    },
+    "de": {
+     "t": "Figurengedichte",
+     "g": "Gestalte konkrete Gedichte, deren Anordnung ein Bild des Themas formt.",
+     "p": [
+      "Im Figurengedicht bilden die Wörter auf der Seite die Umrisse des Themas.",
+      "Ein Gedicht über Regen kann die Seite hinabfallen, eins über einen Baum sich verzweigen.",
+      "Die Wörter zählen trotzdem: Form und Sinn sollen sich gegenseitig stützen."
+     ],
+     "q": "Welcher Gegenstand ergäbe das lustigste Figurengedicht?",
+     "c": "Zeichne leicht einen einfachen Umriss und fülle ihn mit Wörtern über diesen Gegenstand."
+    },
+    "es": {
+     "t": "Caligramas",
+     "g": "Crea poemas visuales cuya disposición dibuja el tema.",
+     "p": [
+      "En un caligrama las palabras forman en la página la silueta del tema.",
+      "Un poema sobre la lluvia puede caer por la página; uno sobre un árbol, ramificarse.",
+      "Las palabras siguen importando: forma y sentido deben apoyarse."
+     ],
+     "q": "¿Qué objeto daría el caligrama más divertido?",
+     "c": "Dibuja suavemente una silueta sencilla y llénala de palabras sobre ese objeto."
+    },
+    "fr": {
+     "t": "Les calligrammes",
+     "g": "Créer des poèmes visuels dont la mise en page dessine le sujet.",
+     "p": [
+      "Dans un calligramme, les mots forment sur la page la silhouette du sujet.",
+      "Apollinaire a fait pleuvoir des mots sur la page dans son calligramme Il pleut.",
+      "Les mots comptent toujours : forme et sens doivent se soutenir."
+     ],
+     "q": "Quel objet donnerait le calligramme le plus amusant ?",
+     "c": "Dessine légèrement une silhouette simple, puis remplis-la de mots sur cet objet."
+    },
+    "it": {
+     "t": "I calligrammi",
+     "g": "Crea poesie visive la cui disposizione disegna il soggetto.",
+     "p": [
+      "Nel calligramma le parole formano sulla pagina la sagoma del soggetto.",
+      "Una poesia sulla pioggia può cadere lungo la pagina, una sull'albero ramificarsi.",
+      "Le parole contano sempre: forma e significato devono sostenersi a vicenda."
+     ],
+     "q": "Quale oggetto darebbe il calligramma più divertente?",
+     "c": "Disegna leggermente una sagoma semplice e riempila di parole su quell'oggetto."
+    },
+    "pt": {
+     "t": "Caligramas",
+     "g": "Cria poemas visuais cuja disposição desenha o tema.",
+     "p": [
+      "Num caligrama as palavras formam na página a silhueta do tema.",
+      "Um poema sobre a chuva pode cair pela página; um sobre uma árvore, ramificar-se.",
+      "As palavras continuam a importar: forma e sentido devem apoiar-se."
+     ],
+     "q": "Que objeto daria o caligrama mais divertido?",
+     "c": "Desenha levemente uma silhueta simples e enche-a de palavras sobre esse objeto."
+    },
+    "pt_BR": {
+     "t": "Poemas visuais",
+     "g": "Crie poemas concretos cuja disposição desenha o tema.",
+     "p": [
+      "Num poema visual as palavras formam na página a silhueta do tema.",
+      "O Brasil tem uma forte tradição de poesia concreta, que brinca com a forma das palavras.",
+      "As palavras continuam importando: forma e sentido devem se apoiar."
+     ],
+     "q": "Que objeto daria o poema visual mais divertido?",
+     "c": "Desenhe de leve uma silhueta simples e preencha com palavras sobre esse objeto."
+    }
+   }
+  }
+ ]
+}

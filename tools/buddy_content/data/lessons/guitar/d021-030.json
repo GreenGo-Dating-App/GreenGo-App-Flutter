@@ -1,0 +1,835 @@
+{
+ "topic": "guitar",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Down-down-up-up-down-up",
+     "g": "Learn the most popular folk-pop strumming pattern step by step.",
+     "p": [
+      "The pattern is D, D U, U D U. Count 1, 2 and, (3) and, 4 and: you skip the down-strum on beat 3.",
+      "On beat 3 your hand still moves down but misses the strings, so it is ready for the up-strum.",
+      "Learn it slowly on one chord first, saying the pattern out loud, before adding chord changes."
+     ],
+     "q": "Do you recognise this strumming pattern from songs you know?",
+     "c": "Play D DU UDU on Em for 2 minutes, saying down, down-up, up-down-up out loud, then switch to Am."
+    },
+    "de": {
+     "t": "Ab-ab-auf-auf-ab-auf",
+     "g": "Lerne Schritt für Schritt das beliebteste Folk-Pop-Schlagmuster.",
+     "p": [
+      "Das Muster ist A, A U, U A U (ab, auf). Zähl 1, 2 und, (3) und, 4 und: Der Abschlag auf Schlag 3 fällt weg.",
+      "Auf Schlag 3 bewegt sich die Hand trotzdem nach unten, verfehlt aber die Saiten und ist bereit für den Aufschlag.",
+      "Lern es zuerst langsam auf einem Akkord und sprich das Muster laut mit, bevor Akkordwechsel dazukommen."
+     ],
+     "q": "Erkennst du dieses Schlagmuster aus Songs, die du kennst?",
+     "c": "Spiel das Muster 2 Minuten auf Em und sag laut ab, ab-auf, auf-ab-auf, dann wechsle zu Am."
+    },
+    "es": {
+     "t": "Abajo-abajo-arriba-arriba-abajo-arriba",
+     "g": "Aprender paso a paso el patrón de rasgueo más popular del folk y el pop.",
+     "p": [
+      "El patrón es Ab, Ab Ar, Ar Ab Ar. Cuenta 1, 2 y, (3) y, 4 y: te saltas el rasgueo hacia abajo del pulso 3.",
+      "En el pulso 3 la mano baja igual pero sin tocar las cuerdas, y así queda lista para subir.",
+      "Apréndelo despacio con un solo acorde, diciendo el patrón en voz alta, antes de añadir cambios."
+     ],
+     "q": "¿Reconoces este patrón de rasgueo en canciones que conoces?",
+     "c": "Toca el patrón en Em durante 2 minutos diciendo abajo, abajo-arriba, arriba-abajo-arriba, y luego pasa a Am."
+    },
+    "fr": {
+     "t": "Bas-bas-haut-haut-bas-haut",
+     "g": "Apprendre pas à pas la rythmique folk-pop la plus populaire.",
+     "p": [
+      "Le motif est B, B H, H B H. Compte 1, 2 et, (3) et, 4 et : tu sautes le coup descendant du temps 3.",
+      "Sur le temps 3, la main descend quand même mais rate les cordes, pour être prête à remonter.",
+      "Apprends-le lentement sur un seul accord en disant le motif à voix haute, avant d'ajouter des changements."
+     ],
+     "q": "Reconnais-tu cette rythmique dans des chansons que tu connais ?",
+     "c": "Joue le motif sur Em pendant 2 minutes en disant bas, bas-haut, haut-bas-haut, puis passe à Am."
+    },
+    "it": {
+     "t": "Giù-giù-su-su-giù-su",
+     "g": "Imparare passo dopo passo la ritmica folk-pop più famosa.",
+     "p": [
+      "Lo schema è G, G S, S G S. Conta 1, 2 e, (3) e, 4 e: salti la pennata in giù sul battito 3.",
+      "Sul battito 3 la mano scende comunque ma manca le corde, così è pronta per la pennata in su.",
+      "Imparalo piano su un solo accordo dicendo lo schema ad alta voce, prima di aggiungere i cambi."
+     ],
+     "q": "Riconosci questa ritmica in canzoni che conosci?",
+     "c": "Suona lo schema su Em per 2 minuti dicendo giù, giù-su, su-giù-su, poi passa ad Am."
+    },
+    "pt": {
+     "t": "Baixo-baixo-cima-cima-baixo-cima",
+     "g": "Aprender passo a passo o ritmo folk-pop mais popular.",
+     "p": [
+      "O padrão é B, B C, C B C. Conta 1, 2 e, (3) e, 4 e: saltas a batida para baixo do tempo 3.",
+      "No tempo 3 a mão desce na mesma mas sem tocar nas cordas, ficando pronta para subir.",
+      "Aprende-o devagar num só acorde, dizendo o padrão em voz alta, antes de juntar mudanças."
+     ],
+     "q": "Reconheces este ritmo de músicas que conheces?",
+     "c": "Toca o padrão em Em durante 2 minutos a dizer baixo, baixo-cima, cima-baixo-cima, depois passa para Am."
+    },
+    "pt_BR": {
+     "t": "Baixo-baixo-cima-cima-baixo-cima",
+     "g": "Aprender passo a passo a levada folk-pop mais popular.",
+     "p": [
+      "A levada é B, B C, C B C. Conte 1, 2 e, (3) e, 4 e: você pula a batida para baixo do tempo 3.",
+      "No tempo 3 a mão desce mesmo assim, mas sem tocar nas cordas, e fica pronta para subir.",
+      "Aprenda devagar em um acorde só, falando a levada em voz alta, antes de colocar trocas."
+     ],
+     "q": "Você reconhece essa levada de músicas que conhece?",
+     "c": "Toque a levada em Em por 2 minutos falando baixo, baixo-cima, cima-baixo-cima, depois passe para Am."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first two-chord song",
+     "g": "Use Em and D in a simple song structure with steady strumming.",
+     "p": [
+      "Many songs loop just two chords. Try 2 bars of Em then 2 bars of D, over and over.",
+      "Use simple down-strums or D DU UDU, and change chord right on beat 1 of the new bar.",
+      "If a change is late, keep strumming anyway: the rhythm matters more than a perfect chord."
+     ],
+     "q": "Is there a song you love that you would like to play with just a few chords?",
+     "c": "Loop Em (2 bars) and D (2 bars) for 3 minutes without stopping, and hum any melody you like over it."
+    },
+    "de": {
+     "t": "Dein erster Song mit zwei Akkorden",
+     "g": "Setz Em und D in einer einfachen Songstruktur mit gleichmäßigem Schlag ein.",
+     "p": [
+      "Viele Songs wiederholen nur zwei Akkorde. Probier 2 Takte Em, dann 2 Takte D, immer wieder.",
+      "Nimm einfache Abschläge oder ab, ab-auf, auf-ab-auf, und wechsle genau auf Schlag 1 des neuen Takts.",
+      "Ist ein Wechsel zu spät, schlag trotzdem weiter: Der Rhythmus zählt mehr als ein perfekter Akkord."
+     ],
+     "q": "Gibt es einen Song, den du liebst und gern mit wenigen Akkorden spielen würdest?",
+     "c": "Spiel 3 Minuten ohne Pause Em (2 Takte) und D (2 Takte) im Kreis und summ eine beliebige Melodie dazu."
+    },
+    "es": {
+     "t": "Tu primera canción de dos acordes",
+     "g": "Usar Em y Re en una estructura sencilla de canción con rasgueo constante.",
+     "p": [
+      "Muchas canciones repiten solo dos acordes. Prueba 2 compases de Em y 2 de Re, una y otra vez.",
+      "Usa rasgueos hacia abajo o el patrón abajo, abajo-arriba, arriba-abajo-arriba, y cambia justo en el 1 del compás.",
+      "Si llegas tarde al cambio, sigue rasgueando: el ritmo importa más que un acorde perfecto."
+     ],
+     "q": "¿Hay alguna canción que te encante y te gustaría tocar con pocos acordes?",
+     "c": "Repite Em (2 compases) y Re (2 compases) durante 3 minutos sin parar y tararea encima la melodía que quieras."
+    },
+    "fr": {
+     "t": "Ta première chanson à deux accords",
+     "g": "Utiliser Em et Ré dans une structure de chanson simple avec un rythme régulier.",
+     "p": [
+      "Beaucoup de chansons tournent sur deux accords. Essaie 2 mesures d'Em puis 2 mesures de Ré, en boucle.",
+      "Utilise des coups descendants ou bas, bas-haut, haut-bas-haut, et change d'accord pile sur le temps 1.",
+      "Si un changement est en retard, continue de gratter : le rythme compte plus qu'un accord parfait."
+     ],
+     "q": "Y a-t-il une chanson que tu adores et que tu aimerais jouer avec peu d'accords ?",
+     "c": "Boucle Em (2 mesures) et Ré (2 mesures) pendant 3 minutes sans t'arrêter et fredonne la mélodie de ton choix."
+    },
+    "it": {
+     "t": "La tua prima canzone a due accordi",
+     "g": "Usare Em e Re in una semplice struttura di canzone con ritmo costante.",
+     "p": [
+      "Molte canzoni girano su due soli accordi. Prova 2 battute di Em e 2 di Re, in loop.",
+      "Usa pennate in giù o lo schema giù, giù-su, su-giù-su, e cambia accordo proprio sull'1 della battuta.",
+      "Se arrivi tardi al cambio, continua a suonare: il ritmo conta più di un accordo perfetto."
+     ],
+     "q": "C'è una canzone che ami e che vorresti suonare con pochi accordi?",
+     "c": "Suona in loop Em (2 battute) e Re (2 battute) per 3 minuti senza fermarti e canticchiaci sopra una melodia a piacere."
+    },
+    "pt": {
+     "t": "A tua primeira música de dois acordes",
+     "g": "Usar Em e Ré numa estrutura simples de música com batida regular.",
+     "p": [
+      "Muitas músicas repetem só dois acordes. Experimenta 2 compassos de Em e 2 de Ré, sem parar.",
+      "Usa batidas para baixo ou o padrão baixo, baixo-cima, cima-baixo-cima, e muda de acorde mesmo no tempo 1.",
+      "Se a mudança atrasar, continua a tocar: o ritmo importa mais do que um acorde perfeito."
+     ],
+     "q": "Há alguma música de que gostes muito e quisesses tocar com poucos acordes?",
+     "c": "Repete Em (2 compassos) e Ré (2 compassos) durante 3 minutos sem parar e trauteia por cima a melodia que quiseres."
+    },
+    "pt_BR": {
+     "t": "Sua primeira música de dois acordes",
+     "g": "Usar Em e Ré numa estrutura simples de música com batida constante.",
+     "p": [
+      "Muitas músicas repetem só dois acordes. Tente 2 compassos de Em e 2 de Ré, sem parar.",
+      "Use batidas para baixo ou a levada baixo, baixo-cima, cima-baixo-cima, e troque de acorde bem no tempo 1.",
+      "Se a troca atrasar, continue tocando: o ritmo importa mais que um acorde perfeito."
+     ],
+     "q": "Tem alguma música que você ama e gostaria de tocar com poucos acordes?",
+     "c": "Repita Em (2 compassos) e Ré (2 compassos) por 3 minutos sem parar e cantarole por cima a melodia que quiser."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a metronome",
+     "g": "Set a slow tempo and lock your strumming to the click.",
+     "p": [
+      "A metronome clicks at a steady speed measured in BPM, beats per minute. Free metronome apps work well.",
+      "Start slow, around 60 BPM, and strum exactly on each click so the click almost disappears under your strum.",
+      "When you can play cleanly 4 times in a row, raise the tempo by about 5 BPM. Slow and steady wins."
+     ],
+     "q": "Do you find it easier to play with a click, or does it feel like a strict teacher?",
+     "c": "Strum Em to D with one down-strum per click at 60 BPM for 2 minutes, then try 65 BPM."
+    },
+    "de": {
+     "t": "Mit dem Metronom üben",
+     "g": "Stell ein langsames Tempo ein und bring deinen Schlag genau auf den Klick.",
+     "p": [
+      "Ein Metronom klickt in gleichmäßigem Tempo, gemessen in BPM, Schlägen pro Minute. Kostenlose Apps reichen völlig.",
+      "Fang langsam an, etwa bei 60 BPM, und schlag genau auf jeden Klick, sodass er fast in deinem Anschlag verschwindet.",
+      "Klappt es 4-mal hintereinander sauber, erhöh das Tempo um etwa 5 BPM. Langsam und stetig gewinnt."
+     ],
+     "q": "Spielst du lieber mit Klick, oder fühlt er sich wie ein strenger Lehrer an?",
+     "c": "Schlag Em zu D mit einem Abschlag pro Klick bei 60 BPM für 2 Minuten, dann probier 65 BPM."
+    },
+    "es": {
+     "t": "Usar un metrónomo",
+     "g": "Poner un tempo lento y encajar el rasgueo con el clic.",
+     "p": [
+      "El metrónomo marca clics a velocidad constante, medida en BPM, pulsos por minuto. Las apps gratuitas sirven.",
+      "Empieza despacio, sobre 60 BPM, y rasguea justo en cada clic hasta que el clic casi desaparezca bajo tu rasgueo.",
+      "Cuando lo toques limpio 4 veces seguidas, sube unos 5 BPM. Despacio y constante se llega lejos."
+     ],
+     "q": "¿Te resulta más fácil tocar con clic, o te parece un profesor demasiado estricto?",
+     "c": "Rasguea Em a Re con un golpe hacia abajo por clic a 60 BPM durante 2 minutos, y luego prueba a 65 BPM."
+    },
+    "fr": {
+     "t": "Utiliser un métronome",
+     "g": "Régler un tempo lent et caler ton grattage sur le clic.",
+     "p": [
+      "Un métronome clique à vitesse régulière, mesurée en BPM, battements par minute. Les applis gratuites suffisent.",
+      "Commence lentement, vers 60 BPM, et gratte pile sur chaque clic, au point qu'il disparaisse presque sous ton coup.",
+      "Quand c'est propre 4 fois de suite, monte d'environ 5 BPM. Lentement mais sûrement."
+     ],
+     "q": "Est-ce plus facile pour toi de jouer avec un clic, ou ressemble-t-il à un prof trop sévère ?",
+     "c": "Gratte Em vers Ré, un coup descendant par clic à 60 BPM pendant 2 minutes, puis essaie à 65 BPM."
+    },
+    "it": {
+     "t": "Usare il metronomo",
+     "g": "Impostare un tempo lento e agganciare la pennata al clic.",
+     "p": [
+      "Il metronomo fa clic a velocità costante, misurata in BPM, battiti al minuto. Le app gratuite vanno benissimo.",
+      "Parti piano, intorno a 60 BPM, e pennella esattamente su ogni clic, finché il clic quasi sparisce sotto il suono.",
+      "Quando suoni pulito 4 volte di fila, alza di circa 5 BPM. Piano e costante si arriva lontano."
+     ],
+     "q": "Ti è più facile suonare con il clic, o ti sembra un insegnante troppo severo?",
+     "c": "Pennella Em e Re con una pennata in giù per clic a 60 BPM per 2 minuti, poi prova a 65 BPM."
+    },
+    "pt": {
+     "t": "Usar um metrónomo",
+     "g": "Escolher um andamento lento e encaixar a batida no clique.",
+     "p": [
+      "O metrónomo dá cliques a velocidade constante, medida em BPM, batidas por minuto. As apps gratuitas servem bem.",
+      "Começa devagar, perto de 60 BPM, e toca exatamente em cada clique, até ele quase desaparecer debaixo da batida.",
+      "Quando tocares limpo 4 vezes seguidas, sobe cerca de 5 BPM. Devagar e sempre se vai longe."
+     ],
+     "q": "É mais fácil tocares com clique, ou parece-te um professor demasiado rigoroso?",
+     "c": "Toca Em para Ré com uma batida para baixo por clique a 60 BPM durante 2 minutos, depois experimenta 65 BPM."
+    },
+    "pt_BR": {
+     "t": "Usando o metrônomo",
+     "g": "Escolher um andamento lento e encaixar a batida no clique.",
+     "p": [
+      "O metrônomo dá cliques numa velocidade constante, medida em BPM, batidas por minuto. Apps gratuitos funcionam bem.",
+      "Comece devagar, perto de 60 BPM, e toque bem em cada clique, até ele quase sumir debaixo da sua batida.",
+      "Quando sair limpo 4 vezes seguidas, suba uns 5 BPM. Devagar e sempre se vai longe."
+     ],
+     "q": "Para você é mais fácil tocar com clique, ou ele parece um professor bravo demais?",
+     "c": "Toque Em para Ré com uma batida para baixo por clique a 60 BPM por 2 minutos, depois tente 65 BPM."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The G major chord",
+     "g": "Learn two common G fingerings and choose the one that makes changes easier.",
+     "p": [
+      "Version A: finger 2 on low E, 3rd fret; finger 1 on A, 2nd fret; finger 3 on high E, 3rd fret.",
+      "Version B: finger 3 on low E, 3rd fret; finger 2 on A, 2nd fret; finger 4 on high E, 3rd fret.",
+      "Version B feels harder at first but makes the change to C much smoother, as fingers 2 and 3 move together."
+     ],
+     "q": "Which G fingering feels more natural for your hand today?",
+     "c": "Play each G version 10 times, strumming all six strings, and note which one rings cleaner."
+    },
+    "de": {
+     "t": "Der G-Dur-Akkord",
+     "g": "Lerne zwei gängige G-Griffe und wähl den, der Wechsel leichter macht.",
+     "p": [
+      "Variante A: Finger 2 auf tiefem E im 3. Bund, Finger 1 auf A im 2. Bund, Finger 3 auf hohem E im 3. Bund.",
+      "Variante B: Finger 3 auf tiefem E im 3. Bund, Finger 2 auf A im 2. Bund, Finger 4 auf hohem E im 3. Bund.",
+      "Variante B ist anfangs schwerer, macht aber den Wechsel zu C viel flüssiger, weil Finger 2 und 3 zusammen wandern."
+     ],
+     "q": "Welcher G-Griff fühlt sich heute natürlicher für deine Hand an?",
+     "c": "Spiel jede G-Variante 10-mal über alle sechs Saiten und notiere, welche sauberer klingt."
+    },
+    "es": {
+     "t": "El acorde de Sol mayor",
+     "g": "Aprender dos digitaciones comunes de Sol y elegir la que facilita los cambios.",
+     "p": [
+      "Versión A: dedo 2 en Mi grave, traste 3; dedo 1 en La, traste 2; dedo 3 en Mi agudo, traste 3.",
+      "Versión B: dedo 3 en Mi grave, traste 3; dedo 2 en La, traste 2; dedo 4 en Mi agudo, traste 3.",
+      "La B cuesta más al principio, pero hace mucho más fácil pasar a Do, porque los dedos 2 y 3 se mueven juntos."
+     ],
+     "q": "¿Qué digitación de Sol te resulta más natural hoy?",
+     "c": "Toca cada versión de Sol 10 veces rasgueando las seis cuerdas y anota cuál suena más limpia."
+    },
+    "fr": {
+     "t": "L'accord de Sol majeur",
+     "g": "Apprendre deux doigtés courants de Sol et choisir celui qui facilite les changements.",
+     "p": [
+      "Version A : doigt 2 sur Mi grave, case 3 ; doigt 1 sur La, case 2 ; doigt 3 sur Mi aigu, case 3.",
+      "Version B : doigt 3 sur Mi grave, case 3 ; doigt 2 sur La, case 2 ; doigt 4 sur Mi aigu, case 3.",
+      "La B semble plus dure au début mais rend le passage vers Do bien plus fluide : les doigts 2 et 3 bougent ensemble."
+     ],
+     "q": "Quel doigté de Sol te semble le plus naturel aujourd'hui ?",
+     "c": "Joue chaque version de Sol 10 fois sur les six cordes et note laquelle sonne le plus net."
+    },
+    "it": {
+     "t": "L'accordo di Sol maggiore",
+     "g": "Imparare due diteggiature comuni del Sol e scegliere quella che rende i cambi più facili.",
+     "p": [
+      "Versione A: dito 2 sul Mi basso al 3° tasto, dito 1 sul La al 2° tasto, dito 3 sul Mi cantino al 3° tasto.",
+      "Versione B: dito 3 sul Mi basso al 3° tasto, dito 2 sul La al 2° tasto, dito 4 sul Mi cantino al 3° tasto.",
+      "La B sembra più difficile all'inizio ma rende molto più fluido il passaggio al Do: le dita 2 e 3 si muovono insieme."
+     ],
+     "q": "Quale diteggiatura del Sol ti sembra più naturale oggi?",
+     "c": "Suona ogni versione del Sol 10 volte su tutte e sei le corde e annota quale suona più pulita."
+    },
+    "pt": {
+     "t": "O acorde de Sol maior",
+     "g": "Aprender duas dedilhações comuns de Sol e escolher a que facilita as mudanças.",
+     "p": [
+      "Versão A: dedo 2 no Mi grave, 3.ª casa; dedo 1 no Lá, 2.ª casa; dedo 3 no Mi agudo, 3.ª casa.",
+      "Versão B: dedo 3 no Mi grave, 3.ª casa; dedo 2 no Lá, 2.ª casa; dedo 4 no Mi agudo, 3.ª casa.",
+      "A B parece mais difícil ao início, mas torna a passagem para Dó muito mais fácil: os dedos 2 e 3 movem-se juntos."
+     ],
+     "q": "Que dedilhação de Sol te parece mais natural hoje?",
+     "c": "Toca cada versão de Sol 10 vezes nas seis cordas e anota qual soa mais limpa."
+    },
+    "pt_BR": {
+     "t": "O acorde de Sol maior",
+     "g": "Aprender duas posições comuns de Sol e escolher a que facilita as trocas.",
+     "p": [
+      "Versão A: dedo 2 no Mi grave, casa 3; dedo 1 no Lá, casa 2; dedo 3 no Mi agudo, casa 3.",
+      "Versão B: dedo 3 no Mi grave, casa 3; dedo 2 no Lá, casa 2; dedo 4 no Mi agudo, casa 3.",
+      "A B parece mais difícil no início, mas deixa a troca para Dó bem mais fácil: os dedos 2 e 3 andam juntos."
+     ],
+     "q": "Qual posição de Sol parece mais natural para sua mão hoje?",
+     "c": "Toque cada versão de Sol 10 vezes nas seis cordas e anote qual soa mais limpa."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The C major chord",
+     "g": "Finger C, arch your fingers and keep the high E string clear.",
+     "p": [
+      "Finger 3 on the A string, 3rd fret; finger 2 on the D string, 2nd fret; finger 1 on the B string, 1st fret.",
+      "Strum from the A string down. The G and high E strings stay open and must ring.",
+      "Arch your fingers like a bridge and keep your wrist slightly forward so nothing leans on the open strings."
+     ],
+     "q": "Is C a stretch for your hand, or does it already feel comfortable?",
+     "c": "Play C, then pick the open G and high E strings alone. Fix your arch until both ring, 10 times in a row."
+    },
+    "de": {
+     "t": "Der C-Dur-Akkord",
+     "g": "Greif C, wölbe die Finger und halt die hohe E-Saite frei.",
+     "p": [
+      "Finger 3 auf die A-Saite im 3. Bund, Finger 2 auf die D-Saite im 2. Bund, Finger 1 auf die H-Saite im 1. Bund.",
+      "Schlag ab der A-Saite an. G-Saite und hohe E-Saite bleiben leer und müssen klingen.",
+      "Wölbe die Finger wie eine Brücke und schieb das Handgelenk leicht vor, damit nichts an den Leersaiten lehnt."
+     ],
+     "q": "Ist C eine Dehnung für deine Hand, oder fühlt es sich schon bequem an?",
+     "c": "Spiel C und zupf dann nur die leere G- und hohe E-Saite. Korrigier die Wölbung, bis beide klingen, 10-mal in Folge."
+    },
+    "es": {
+     "t": "El acorde de Do mayor",
+     "g": "Pisar Do, arquear los dedos y dejar libre el Mi agudo.",
+     "p": [
+      "Dedo 3 en la cuerda La, traste 3; dedo 2 en la cuerda Re, traste 2; dedo 1 en la cuerda Si, traste 1.",
+      "Rasguea desde la cuerda La. Las cuerdas Sol y Mi agudo van al aire y tienen que sonar.",
+      "Arquea los dedos como un puente y adelanta un poco la muñeca para que nada roce las cuerdas al aire."
+     ],
+     "q": "¿Do te supone una apertura grande o ya te resulta cómodo?",
+     "c": "Toca Do y luego solo las cuerdas Sol y Mi agudo. Corrige el arco hasta que suenen las dos, 10 veces seguidas."
+    },
+    "fr": {
+     "t": "L'accord de Do majeur",
+     "g": "Placer Do, arrondir les doigts et laisser le Mi aigu libre.",
+     "p": [
+      "Doigt 3 sur la corde de La, case 3 ; doigt 2 sur la corde de Ré, case 2 ; doigt 1 sur la corde de Si, case 1.",
+      "Gratte depuis la corde de La. Les cordes de Sol et de Mi aigu restent à vide et doivent sonner.",
+      "Arrondis les doigts comme un pont et avance un peu le poignet pour que rien ne touche les cordes à vide."
+     ],
+     "q": "Do est-il un écart pour ta main, ou est-il déjà confortable ?",
+     "c": "Joue Do puis seulement les cordes de Sol et Mi aigu. Corrige l'arrondi jusqu'à ce que les deux sonnent, 10 fois de suite."
+    },
+    "it": {
+     "t": "L'accordo di Do maggiore",
+     "g": "Diteggiare il Do, arcuare le dita e lasciare libero il Mi cantino.",
+     "p": [
+      "Dito 3 sulla corda La al 3° tasto, dito 2 sulla corda Re al 2° tasto, dito 1 sulla corda Si al 1° tasto.",
+      "Pennella dalla corda La in giù. Le corde Sol e Mi cantino restano a vuoto e devono suonare.",
+      "Arcua le dita come un ponte e porta il polso un po' in avanti, così niente tocca le corde a vuoto."
+     ],
+     "q": "Il Do è un'apertura difficile per la tua mano, o ti sembra già comodo?",
+     "c": "Suona Do, poi pizzica solo Sol e Mi cantino a vuoto. Correggi l'arco finché suonano entrambe, 10 volte di fila."
+    },
+    "pt": {
+     "t": "O acorde de Dó maior",
+     "g": "Fazer o Dó, arquear os dedos e deixar o Mi agudo livre.",
+     "p": [
+      "Dedo 3 na corda Lá, 3.ª casa; dedo 2 na corda Ré, 2.ª casa; dedo 1 na corda Si, 1.ª casa.",
+      "Toca a partir da corda Lá. As cordas Sol e Mi agudo ficam soltas e têm de soar.",
+      "Arqueia os dedos como uma ponte e avança um pouco o pulso para nada tocar nas cordas soltas."
+     ],
+     "q": "O Dó é uma abertura difícil para a tua mão, ou já te parece confortável?",
+     "c": "Toca Dó e depois só as cordas Sol e Mi agudo. Corrige o arco até as duas soarem, 10 vezes seguidas."
+    },
+    "pt_BR": {
+     "t": "O acorde de Dó maior",
+     "g": "Montar o Dó, arquear os dedos e deixar o Mi agudo livre.",
+     "p": [
+      "Dedo 3 na corda Lá, casa 3; dedo 2 na corda Ré, casa 2; dedo 1 na corda Si, casa 1.",
+      "Toque a partir da corda Lá. As cordas Sol e Mi agudo ficam soltas e precisam soar.",
+      "Arqueie os dedos como uma ponte e leve o pulso um pouco à frente para nada encostar nas cordas soltas."
+     ],
+     "q": "O Dó é uma abertura difícil para sua mão, ou já parece confortável?",
+     "c": "Toque Dó e depois só as cordas Sol e Mi agudo. Ajuste o arco até as duas soarem, 10 vezes seguidas."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The magic four: G, C, D, Em",
+     "g": "See why G, C, D and Em unlock hundreds of popular songs.",
+     "p": [
+      "These four chords belong to the key of G major, so they sound good together in almost any order.",
+      "Popular orders include G, D, Em, C and G, Em, C, D. Countless pop, rock and folk songs use them.",
+      "You already know all four shapes, so now the goal is smooth changes between them."
+     ],
+     "q": "Which of the four chords is still the slowest for you to grab?",
+     "c": "Play G, D, Em, C with 4 down-strums each, looping for 3 minutes, then try G, Em, C, D."
+    },
+    "de": {
+     "t": "Die magischen vier: G, C, D, Em",
+     "g": "Erfahre, warum G, C, D und Em Hunderte bekannter Songs öffnen.",
+     "p": [
+      "Diese vier Akkorde gehören zur Tonart G-Dur, darum klingen sie in fast jeder Reihenfolge gut zusammen.",
+      "Beliebte Folgen sind G, D, Em, C und G, Em, C, D. Unzählige Pop-, Rock- und Folksongs nutzen sie.",
+      "Du kennst schon alle vier Griffe, jetzt geht es um flüssige Wechsel zwischen ihnen."
+     ],
+     "q": "Welcher der vier Akkorde ist für dich noch am langsamsten zu greifen?",
+     "c": "Spiel G, D, Em, C mit je 4 Abschlägen 3 Minuten im Kreis, dann probier G, Em, C, D."
+    },
+    "es": {
+     "t": "Los cuatro mágicos: Sol, Do, Re, Em",
+     "g": "Ver por qué Sol, Do, Re y Em abren la puerta a cientos de canciones.",
+     "p": [
+      "Los cuatro pertenecen a la tonalidad de Sol mayor, así que suenan bien juntos casi en cualquier orden.",
+      "Órdenes muy usados: Sol, Re, Em, Do y Sol, Em, Do, Re. Infinidad de canciones de pop, rock y folk los usan.",
+      "Ya conoces las cuatro formas; ahora el objetivo es cambiar entre ellas con fluidez."
+     ],
+     "q": "¿Cuál de los cuatro acordes te sigue costando más colocar rápido?",
+     "c": "Toca Sol, Re, Em, Do con 4 rasgueos cada uno en bucle durante 3 minutos, y luego Sol, Em, Do, Re."
+    },
+    "fr": {
+     "t": "Les quatre magiques : Sol, Do, Ré, Em",
+     "g": "Comprendre pourquoi Sol, Do, Ré et Em ouvrent la porte à des centaines de chansons.",
+     "p": [
+      "Ces quatre accords appartiennent à la tonalité de Sol majeur, ils sonnent donc bien ensemble dans presque n'importe quel ordre.",
+      "Enchaînements courants : Sol, Ré, Em, Do et Sol, Em, Do, Ré. D'innombrables chansons pop, rock et folk les utilisent.",
+      "Tu connais déjà les quatre formes ; l'objectif est maintenant de changer en douceur."
+     ],
+     "q": "Lequel des quatre accords est encore le plus lent à placer pour toi ?",
+     "c": "Joue Sol, Ré, Em, Do avec 4 coups chacun en boucle pendant 3 minutes, puis Sol, Em, Do, Ré."
+    },
+    "it": {
+     "t": "I quattro magici: Sol, Do, Re, Em",
+     "g": "Scoprire perché Sol, Do, Re ed Em aprono le porte a centinaia di canzoni.",
+     "p": [
+      "Questi quattro accordi appartengono alla tonalità di Sol maggiore, quindi stanno bene insieme in quasi ogni ordine.",
+      "Giri famosi: Sol, Re, Em, Do e Sol, Em, Do, Re. Innumerevoli brani pop, rock e folk li usano.",
+      "Conosci già tutte e quattro le forme: ora l'obiettivo è cambiare in modo fluido."
+     ],
+     "q": "Quale dei quattro accordi è ancora il più lento da prendere per te?",
+     "c": "Suona Sol, Re, Em, Do con 4 pennate ciascuno in loop per 3 minuti, poi Sol, Em, Do, Re."
+    },
+    "pt": {
+     "t": "Os quatro mágicos: Sol, Dó, Ré, Em",
+     "g": "Perceber porque Sol, Dó, Ré e Em abrem a porta a centenas de músicas.",
+     "p": [
+      "Estes quatro acordes pertencem ao tom de Sol maior, por isso soam bem juntos em quase qualquer ordem.",
+      "Sequências comuns: Sol, Ré, Em, Dó e Sol, Em, Dó, Ré. Inúmeras músicas pop, rock e folk usam-nas.",
+      "Já conheces as quatro formas; agora o objetivo é mudar entre elas com fluidez."
+     ],
+     "q": "Qual dos quatro acordes ainda é o mais lento para ti?",
+     "c": "Toca Sol, Ré, Em, Dó com 4 batidas cada em ciclo durante 3 minutos, depois Sol, Em, Dó, Ré."
+    },
+    "pt_BR": {
+     "t": "Os quatro mágicos: Sol, Dó, Ré, Em",
+     "g": "Entender por que Sol, Dó, Ré e Em abrem as portas para centenas de músicas.",
+     "p": [
+      "Esses quatro acordes pertencem ao tom de Sol maior, por isso soam bem juntos em quase qualquer ordem.",
+      "Sequências comuns: Sol, Ré, Em, Dó e Sol, Em, Dó, Ré. Inúmeras músicas pop, rock, MPB e folk usam esses acordes.",
+      "Você já conhece os quatro desenhos; agora o objetivo é trocar entre eles com fluidez."
+     ],
+     "q": "Qual dos quatro acordes ainda é o mais lento para você montar?",
+     "c": "Toque Sol, Ré, Em, Dó com 4 batidas cada em ciclo por 3 minutos, depois Sol, Em, Dó, Ré."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anchor fingers for smoother changes",
+     "g": "Keep shared fingers down between chords to save time and effort.",
+     "p": [
+      "An anchor finger stays on the same string and fret in both chords, so it does not need to move.",
+      "C to Am: fingers 1 and 2 stay put; only finger 3 moves from the A string to the G string, 2nd fret.",
+      "Em to E: fingers 2 and 3 stay, and finger 1 just lands or lifts. Look for anchors in every new chord pair."
+     ],
+     "q": "Which other chord pairs you know might share an anchor finger?",
+     "c": "Switch C to Am 30 times keeping fingers 1 and 2 pressed the whole time, moving only finger 3."
+    },
+    "de": {
+     "t": "Ankerfinger für flüssigere Wechsel",
+     "g": "Lass gemeinsame Finger zwischen Akkorden liegen, um Zeit und Kraft zu sparen.",
+     "p": [
+      "Ein Ankerfinger bleibt in beiden Akkorden auf derselben Saite und demselben Bund und muss sich nicht bewegen.",
+      "C zu Am: Finger 1 und 2 bleiben liegen, nur Finger 3 wandert von der A-Saite auf die G-Saite im 2. Bund.",
+      "Em zu E: Finger 2 und 3 bleiben, Finger 1 setzt nur auf oder hebt ab. Such bei jedem neuen Akkordpaar nach Ankern."
+     ],
+     "q": "Welche anderen Akkordpaare, die du kennst, könnten einen Ankerfinger teilen?",
+     "c": "Wechsle 30-mal von C zu Am, halt Finger 1 und 2 die ganze Zeit gedrückt und bewege nur Finger 3."
+    },
+    "es": {
+     "t": "Dedos ancla para cambios más suaves",
+     "g": "Dejar apoyados los dedos comunes entre acordes para ahorrar tiempo y esfuerzo.",
+     "p": [
+      "Un dedo ancla está en la misma cuerda y traste en los dos acordes, así que no tiene que moverse.",
+      "De Do a Lam: los dedos 1 y 2 se quedan; solo el dedo 3 pasa de la cuerda La a la cuerda Sol, traste 2.",
+      "De Em a Mi: los dedos 2 y 3 se quedan y el 1 solo se pone o se quita. Busca anclas en cada pareja nueva."
+     ],
+     "q": "¿Qué otras parejas de acordes que conoces podrían compartir un dedo ancla?",
+     "c": "Cambia de Do a Lam 30 veces manteniendo los dedos 1 y 2 apretados todo el rato y moviendo solo el 3."
+    },
+    "fr": {
+     "t": "Les doigts pivots pour des changements fluides",
+     "g": "Garder les doigts communs posés entre deux accords pour gagner du temps et de l'énergie.",
+     "p": [
+      "Un doigt pivot reste sur la même corde et la même case dans les deux accords : il n'a pas besoin de bouger.",
+      "Do vers Lam : les doigts 1 et 2 restent ; seul le doigt 3 passe de la corde de La à la corde de Sol, case 2.",
+      "Em vers Mi : les doigts 2 et 3 restent, le doigt 1 se pose ou se lève. Cherche des pivots dans chaque paire d'accords."
+     ],
+     "q": "Quelles autres paires d'accords que tu connais pourraient partager un doigt pivot ?",
+     "c": "Passe de Do à Lam 30 fois en gardant les doigts 1 et 2 appuyés tout le temps et en ne bougeant que le doigt 3."
+    },
+    "it": {
+     "t": "Dita àncora per cambi più fluidi",
+     "g": "Lasciare giù le dita in comune tra accordi per risparmiare tempo e fatica.",
+     "p": [
+      "Un dito àncora resta sulla stessa corda e lo stesso tasto in entrambi gli accordi, quindi non deve muoversi.",
+      "Da Do a Lam: le dita 1 e 2 restano ferme; solo il dito 3 passa dalla corda La alla corda Sol, 2° tasto.",
+      "Da Em a Mi: le dita 2 e 3 restano e il dito 1 si appoggia o si alza. Cerca àncore in ogni nuova coppia di accordi."
+     ],
+     "q": "Quali altre coppie di accordi che conosci potrebbero avere un dito àncora in comune?",
+     "c": "Passa da Do a Lam 30 volte tenendo premute le dita 1 e 2 per tutto il tempo e muovendo solo il dito 3."
+    },
+    "pt": {
+     "t": "Dedos âncora para mudanças suaves",
+     "g": "Manter os dedos comuns pousados entre acordes para poupar tempo e esforço.",
+     "p": [
+      "Um dedo âncora fica na mesma corda e casa nos dois acordes, por isso não precisa de se mexer.",
+      "De Dó para Lá menor: os dedos 1 e 2 ficam; só o dedo 3 passa da corda Lá para a corda Sol, 2.ª casa.",
+      "De Em para Mi: os dedos 2 e 3 ficam e o dedo 1 só pousa ou levanta. Procura âncoras em cada novo par de acordes."
+     ],
+     "q": "Que outros pares de acordes que conheces podem partilhar um dedo âncora?",
+     "c": "Muda de Dó para Lá menor 30 vezes com os dedos 1 e 2 sempre pressionados, mexendo só o dedo 3."
+    },
+    "pt_BR": {
+     "t": "Dedos âncora para trocas suaves",
+     "g": "Manter os dedos em comum apoiados entre acordes para poupar tempo e esforço.",
+     "p": [
+      "Um dedo âncora fica na mesma corda e casa nos dois acordes, então não precisa se mexer.",
+      "De Dó para Lá menor: os dedos 1 e 2 ficam; só o dedo 3 passa da corda Lá para a corda Sol, casa 2.",
+      "De Em para Mi: os dedos 2 e 3 ficam e o dedo 1 só apoia ou levanta. Procure âncoras em cada novo par de acordes."
+     ],
+     "q": "Quais outros pares de acordes que você conhece podem ter um dedo âncora em comum?",
+     "c": "Troque de Dó para Lá menor 30 vezes com os dedos 1 e 2 sempre apertados, mexendo só o dedo 3."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One-minute chord change drill",
+     "g": "Count how many clean changes you can make in sixty seconds.",
+     "p": [
+      "Pick two chords, set a timer for one minute and switch back and forth, strumming once per chord.",
+      "Only count changes where every note rings; speed with buzzing does not count.",
+      "Write your score down each day. Watching the number grow is a great motivator."
+     ],
+     "q": "Which chord pair do you think will give you the lowest score?",
+     "c": "Do the one-minute drill on G to C, C to D and Em to D, and write down all three scores."
+    },
+    "de": {
+     "t": "Die Ein-Minuten-Wechselübung",
+     "g": "Zähl, wie viele saubere Wechsel du in sechzig Sekunden schaffst.",
+     "p": [
+      "Wähl zwei Akkorde, stell einen Timer auf eine Minute und wechsle hin und her, ein Anschlag pro Akkord.",
+      "Zähl nur Wechsel, bei denen jeder Ton klingt; schnell, aber schnarrend zählt nicht.",
+      "Schreib dein Ergebnis jeden Tag auf. Zu sehen, wie die Zahl wächst, motiviert enorm."
+     ],
+     "q": "Bei welchem Akkordpaar erwartest du das niedrigste Ergebnis?",
+     "c": "Mach die Ein-Minuten-Übung mit G zu C, C zu D und Em zu D und notiere alle drei Ergebnisse."
+    },
+    "es": {
+     "t": "Ejercicio de cambios en un minuto",
+     "g": "Contar cuántos cambios limpios haces en sesenta segundos.",
+     "p": [
+      "Elige dos acordes, pon un temporizador de un minuto y alterna entre ellos rasgueando una vez cada uno.",
+      "Cuenta solo los cambios en los que suenan todas las notas; rápido pero con zumbidos no vale.",
+      "Apunta tu marca cada día. Ver cómo sube el número motiva muchísimo."
+     ],
+     "q": "¿Con qué pareja de acordes crees que sacarás la marca más baja?",
+     "c": "Haz el ejercicio de un minuto con Sol a Do, Do a Re y Em a Re, y apunta las tres marcas."
+    },
+    "fr": {
+     "t": "Le défi des changements en une minute",
+     "g": "Compter combien de changements propres tu fais en soixante secondes.",
+     "p": [
+      "Choisis deux accords, règle un minuteur sur une minute et alterne, un coup de médiator par accord.",
+      "Ne compte que les changements où toutes les notes sonnent ; rapide mais qui frise ne compte pas.",
+      "Note ton score chaque jour. Voir le chiffre grimper motive énormément."
+     ],
+     "q": "Avec quelle paire d'accords penses-tu faire le score le plus bas ?",
+     "c": "Fais le défi d'une minute sur Sol vers Do, Do vers Ré et Em vers Ré, et note les trois scores."
+    },
+    "it": {
+     "t": "L'esercizio dei cambi in un minuto",
+     "g": "Contare quanti cambi puliti riesci a fare in sessanta secondi.",
+     "p": [
+      "Scegli due accordi, imposta un timer di un minuto e alterna, con una pennata per accordo.",
+      "Conta solo i cambi in cui suonano tutte le note: veloce ma con ronzii non vale.",
+      "Scrivi il punteggio ogni giorno. Vedere il numero crescere motiva tantissimo."
+     ],
+     "q": "Con quale coppia di accordi pensi di fare il punteggio più basso?",
+     "c": "Fai l'esercizio di un minuto con Sol-Do, Do-Re ed Em-Re e scrivi tutti e tre i punteggi."
+    },
+    "pt": {
+     "t": "Exercício de mudanças num minuto",
+     "g": "Contar quantas mudanças limpas consegues fazer em sessenta segundos.",
+     "p": [
+      "Escolhe dois acordes, põe um temporizador de um minuto e alterna, com uma batida por acorde.",
+      "Conta só as mudanças em que todas as notas soam; rápido mas a zumbir não conta.",
+      "Anota a tua pontuação todos os dias. Ver o número a crescer motiva imenso."
+     ],
+     "q": "Com que par de acordes achas que vais ter a pontuação mais baixa?",
+     "c": "Faz o exercício de um minuto com Sol-Dó, Dó-Ré e Em-Ré, e anota as três pontuações."
+    },
+    "pt_BR": {
+     "t": "Desafio de trocas em um minuto",
+     "g": "Contar quantas trocas limpas você consegue fazer em sessenta segundos.",
+     "p": [
+      "Escolha dois acordes, coloque um timer de um minuto e alterne, com uma batida por acorde.",
+      "Conte só as trocas em que todas as notas soam; rápido mas zumbindo não vale.",
+      "Anote sua pontuação todo dia. Ver o número subir motiva demais."
+     ],
+     "q": "Com qual par de acordes você acha que vai tirar a pontuação mais baixa?",
+     "c": "Faça o desafio de um minuto com Sol-Dó, Dó-Ré e Em-Ré, e anote as três pontuações."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caring for your strings",
+     "g": "Keep your strings clean and know when they need changing.",
+     "p": [
+      "Wash and dry your hands before playing: sweat and skin oils make strings dull and rusty much faster.",
+      "After playing, wipe each string with a soft dry cloth, including the underside, and store the guitar in its case or on a stand.",
+      "Old strings sound dull, feel rough or look dark, and will not stay in tune. That is the time to change them."
+     ],
+     "q": "How do your strings look and feel right now: shiny and smooth, or a bit dull?",
+     "c": "Wipe all six strings with a dry cloth after today's practice and run your finger along them to feel the difference."
+    },
+    "de": {
+     "t": "Pflege deiner Saiten",
+     "g": "Halte deine Saiten sauber und erkenne, wann sie gewechselt werden müssen.",
+     "p": [
+      "Wasch und trockne vor dem Spielen die Hände: Schweiß und Hautfett lassen Saiten viel schneller dumpf und rostig werden.",
+      "Wisch nach dem Spielen jede Saite mit einem weichen, trockenen Tuch ab, auch unten, und stell die Gitarre in Koffer oder Ständer.",
+      "Alte Saiten klingen dumpf, fühlen sich rau an oder sind dunkel und halten die Stimmung nicht. Zeit zum Wechseln."
+     ],
+     "q": "Wie sehen deine Saiten gerade aus: glänzend und glatt oder etwas stumpf?",
+     "c": "Wisch nach dem heutigen Üben alle sechs Saiten mit einem trockenen Tuch ab und fühl mit dem Finger den Unterschied."
+    },
+    "es": {
+     "t": "Cuidar tus cuerdas",
+     "g": "Mantener las cuerdas limpias y saber cuándo hay que cambiarlas.",
+     "p": [
+      "Lávate y sécate las manos antes de tocar: el sudor y la grasa de la piel apagan y oxidan las cuerdas mucho antes.",
+      "Después de tocar, limpia cada cuerda con un paño suave y seco, también por debajo, y guarda la guitarra en su funda o en un soporte.",
+      "Las cuerdas viejas suenan apagadas, se notan ásperas u oscuras y no mantienen la afinación. Toca cambiarlas."
+     ],
+     "q": "¿Cómo están tus cuerdas ahora: brillantes y suaves, o algo apagadas?",
+     "c": "Limpia las seis cuerdas con un paño seco al acabar hoy y pasa el dedo por ellas para notar la diferencia."
+    },
+    "fr": {
+     "t": "Prendre soin de tes cordes",
+     "g": "Garder tes cordes propres et savoir quand les changer.",
+     "p": [
+      "Lave et sèche tes mains avant de jouer : la sueur et le sébum ternissent et rouillent les cordes bien plus vite.",
+      "Après avoir joué, essuie chaque corde avec un chiffon doux et sec, dessous aussi, et range la guitare dans son étui ou sur un stand.",
+      "Des cordes usées sonnent sourd, paraissent rugueuses ou foncées et ne tiennent plus l'accord. Il est temps de les changer."
+     ],
+     "q": "Comment sont tes cordes en ce moment : brillantes et lisses, ou un peu ternes ?",
+     "c": "Essuie les six cordes avec un chiffon sec après ta séance d'aujourd'hui et passe le doigt dessus pour sentir la différence."
+    },
+    "it": {
+     "t": "Prendersi cura delle corde",
+     "g": "Tenere pulite le corde e capire quando vanno cambiate.",
+     "p": [
+      "Lava e asciuga le mani prima di suonare: sudore e sebo spengono e arrugginiscono le corde molto più in fretta.",
+      "Dopo aver suonato, pulisci ogni corda con un panno morbido e asciutto, anche sotto, e riponi la chitarra nella custodia o su un supporto.",
+      "Le corde vecchie suonano spente, sono ruvide o scure e non tengono l'accordatura. È il momento di cambiarle."
+     ],
+     "q": "Come sono le tue corde adesso: lucide e lisce, o un po' spente?",
+     "c": "Pulisci tutte e sei le corde con un panno asciutto dopo la pratica di oggi e passaci il dito per sentire la differenza."
+    },
+    "pt": {
+     "t": "Cuidar das cordas",
+     "g": "Manter as cordas limpas e saber quando é preciso trocá-las.",
+     "p": [
+      "Lava e seca as mãos antes de tocar: o suor e a oleosidade da pele deixam as cordas baças e enferrujadas muito mais cedo.",
+      "Depois de tocar, limpa cada corda com um pano macio e seco, também por baixo, e guarda a guitarra no estojo ou num suporte.",
+      "Cordas velhas soam abafadas, ficam ásperas ou escuras e não mantêm a afinação. É altura de as trocar."
+     ],
+     "q": "Como estão as tuas cordas agora: brilhantes e lisas, ou um pouco baças?",
+     "c": "Limpa as seis cordas com um pano seco no fim da prática de hoje e passa o dedo por elas para sentir a diferença."
+    },
+    "pt_BR": {
+     "t": "Cuidando das cordas",
+     "g": "Manter as cordas limpas e saber quando é hora de trocar.",
+     "p": [
+      "Lave e seque as mãos antes de tocar: o suor e a oleosidade da pele deixam as cordas foscas e enferrujadas muito mais rápido.",
+      "Depois de tocar, passe um pano macio e seco em cada corda, inclusive por baixo, e guarde o violão na capa ou num suporte.",
+      "Cordas velhas soam abafadas, ficam ásperas ou escuras e não seguram a afinação. Hora de trocar."
+     ],
+     "q": "Como estão suas cordas agora: brilhantes e lisas, ou meio foscas?",
+     "c": "Limpe as seis cordas com um pano seco no fim da prática de hoje e passe o dedo nelas para sentir a diferença."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: your first month",
+     "g": "Revisit your chords, strums and posture and play your favourite song so far.",
+     "p": [
+      "Check your posture: relaxed shoulders, thumb behind the neck, fingertips just behind the frets.",
+      "Run through your chords: Em, Am, E, A, D, G and C. Which ring cleanly and which still buzz?",
+      "Play D DU UDU with a metronome and loop G, D, Em, C. Notice how far you have come in one month!"
+     ],
+     "q": "What are you proudest of after your first month with the guitar?",
+     "c": "Record yourself playing your favourite progression from this month, then listen back and name one thing that improved."
+    },
+    "de": {
+     "t": "Wiederholungstag: dein erster Monat",
+     "g": "Wiederhole Akkorde, Schlagmuster und Haltung und spiel deinen bisherigen Lieblingssong.",
+     "p": [
+      "Prüf deine Haltung: lockere Schultern, Daumen hinter dem Hals, Fingerkuppen direkt hinter den Bundstäben.",
+      "Geh deine Akkorde durch: Em, Am, E, A, D, G und C. Welche klingen sauber, welche schnarren noch?",
+      "Spiel ab, ab-auf, auf-ab-auf mit Metronom über G, D, Em, C. Schau, wie weit du in einem Monat gekommen bist!"
+     ],
+     "q": "Worauf bist du nach deinem ersten Gitarrenmonat am meisten stolz?",
+     "c": "Nimm dich mit deiner Lieblingsfolge dieses Monats auf, hör es dir an und nenn eine Sache, die besser geworden ist."
+    },
+    "es": {
+     "t": "Día de repaso: tu primer mes",
+     "g": "Repasar acordes, rasgueos y postura, y tocar tu canción favorita hasta ahora.",
+     "p": [
+      "Revisa la postura: hombros sueltos, pulgar detrás del mástil y yemas justo detrás de los trastes.",
+      "Repasa tus acordes: Em, Am, Mi, La, Re, Sol y Do. ¿Cuáles suenan limpios y cuáles aún zumban?",
+      "Toca abajo, abajo-arriba, arriba-abajo-arriba con metrónomo sobre Sol, Re, Em, Do. ¡Mira cuánto has avanzado en un mes!"
+     ],
+     "q": "¿De qué estás más orgulloso tras tu primer mes con la guitarra?",
+     "c": "Grábate tocando tu progresión favorita de este mes, escúchala y nombra una cosa que haya mejorado."
+    },
+    "fr": {
+     "t": "Jour de révision : ton premier mois",
+     "g": "Revoir accords, rythmiques et posture, et jouer ta chanson préférée jusqu'ici.",
+     "p": [
+      "Vérifie ta posture : épaules détendues, pouce derrière le manche, bouts des doigts juste derrière les frettes.",
+      "Passe tes accords en revue : Em, Am, Mi, La, Ré, Sol et Do. Lesquels sonnent net, lesquels frisent encore ?",
+      "Joue bas, bas-haut, haut-bas-haut au métronome sur Sol, Ré, Em, Do. Vois le chemin parcouru en un mois !"
+     ],
+     "q": "De quoi es-tu le plus fier après ton premier mois de guitare ?",
+     "c": "Enregistre-toi sur ta grille préférée du mois, réécoute-toi et nomme une chose qui s'est améliorée."
+    },
+    "it": {
+     "t": "Giorno di ripasso: il tuo primo mese",
+     "g": "Ripassare accordi, ritmiche e postura, e suonare la tua canzone preferita finora.",
+     "p": [
+      "Controlla la postura: spalle rilassate, pollice dietro al manico, polpastrelli appena dietro le barrette.",
+      "Ripassa gli accordi: Em, Am, Mi, La, Re, Sol e Do. Quali suonano puliti e quali ronzano ancora?",
+      "Suona giù, giù-su, su-giù-su con il metronomo su Sol, Re, Em, Do. Guarda quanta strada hai fatto in un mese!"
+     ],
+     "q": "Di cosa sei più orgoglioso dopo il tuo primo mese con la chitarra?",
+     "c": "Registrati mentre suoni il tuo giro preferito del mese, riascoltati e nomina una cosa migliorata."
+    },
+    "pt": {
+     "t": "Dia de revisão: o teu primeiro mês",
+     "g": "Rever acordes, batidas e postura, e tocar a tua música favorita até agora.",
+     "p": [
+      "Verifica a postura: ombros soltos, polegar atrás do braço, pontas dos dedos logo atrás dos trastes.",
+      "Revê os acordes: Em, Am, Mi, Lá, Ré, Sol e Dó. Quais soam limpos e quais ainda zumbem?",
+      "Toca baixo, baixo-cima, cima-baixo-cima com metrónomo sobre Sol, Ré, Em, Dó. Vê o quanto evoluíste num mês!"
+     ],
+     "q": "Do que te orgulhas mais depois do teu primeiro mês com a guitarra?",
+     "c": "Grava-te a tocar a tua sequência favorita deste mês, ouve e diz uma coisa que melhorou."
+    },
+    "pt_BR": {
+     "t": "Dia de revisão: seu primeiro mês",
+     "g": "Revisar acordes, batidas e postura, e tocar sua música favorita até agora.",
+     "p": [
+      "Confira a postura: ombros soltos, polegar atrás do braço, pontas dos dedos logo atrás dos trastes.",
+      "Revise os acordes: Em, Am, Mi, Lá, Ré, Sol e Dó. Quais soam limpos e quais ainda zumbem?",
+      "Toque baixo, baixo-cima, cima-baixo-cima com metrônomo em Sol, Ré, Em, Dó. Veja o quanto você evoluiu em um mês!"
+     ],
+     "q": "Do que você mais se orgulha depois do seu primeiro mês com o violão?",
+     "c": "Grave você tocando sua sequência favorita deste mês, ouça e diga uma coisa que melhorou."
+    }
+   }
+  }
+ ]
+}

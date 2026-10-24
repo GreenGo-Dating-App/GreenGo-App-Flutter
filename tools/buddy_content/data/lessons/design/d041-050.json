@@ -1,0 +1,835 @@
+{
+ "topic": "design",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The 60-30-10 rule",
+     "g": "Use a simple guide for balancing dominant, secondary and accent colours.",
+     "p": [
+      "About 60 percent of the area gets the dominant colour, often a calm or neutral one.",
+      "About 30 percent gets a secondary colour that supports and adds interest.",
+      "About 10 percent gets the accent, used for the most important details; it is a guide, not a law."
+     ],
+     "q": "Look around the room you are in: does it roughly follow 60-30-10?",
+     "c": "Colour a simple room sketch using 60-30-10: walls dominant, furniture secondary, cushions and lamp as accent."
+    },
+    "de": {
+     "t": "Die 60-30-10-Regel",
+     "g": "Eine einfache Richtlinie nutzen, um Haupt-, Neben- und Akzentfarbe auszubalancieren.",
+     "p": [
+      "Etwa 60 Prozent der Fläche erhalten die dominante Farbe, oft eine ruhige oder neutrale.",
+      "Etwa 30 Prozent erhalten eine Nebenfarbe, die stützt und Interesse weckt.",
+      "Etwa 10 Prozent erhalten den Akzent für die wichtigsten Details; es ist eine Richtlinie, kein Gesetz."
+     ],
+     "q": "Schau dich im Raum um: Folgt er ungefähr 60-30-10?",
+     "c": "Male eine einfache Raumskizze nach 60-30-10 aus: Wände dominant, Möbel Nebenfarbe, Kissen und Lampe als Akzent."
+    },
+    "es": {
+     "t": "La regla 60-30-10",
+     "g": "Usar una guía sencilla para equilibrar el color dominante, el secundario y el de acento.",
+     "p": [
+      "Alrededor del 60 por ciento del área lleva el color dominante, a menudo tranquilo o neutro.",
+      "Alrededor del 30 por ciento lleva un color secundario que apoya y da interés.",
+      "Alrededor del 10 por ciento lleva el acento, para los detalles clave; es una guía, no una ley."
+     ],
+     "q": "Mira la habitación en la que estás: ¿sigue más o menos el 60-30-10?",
+     "c": "Colorea el boceto de una habitación con 60-30-10: paredes dominantes, muebles secundarios, cojines y lámpara de acento."
+    },
+    "fr": {
+     "t": "La règle 60-30-10",
+     "g": "Utiliser un repère simple pour équilibrer couleur dominante, secondaire et d'accent.",
+     "p": [
+      "Environ 60 pour cent de la surface reçoit la couleur dominante, souvent calme ou neutre.",
+      "Environ 30 pour cent reçoit une couleur secondaire qui soutient et apporte de l'intérêt.",
+      "Environ 10 pour cent reçoit l'accent, pour les détails clés ; c'est un repère, pas une loi."
+     ],
+     "q": "Regarde la pièce où tu es : suit-elle à peu près le 60-30-10 ?",
+     "c": "Colorie le croquis d'une pièce en 60-30-10 : murs dominants, meubles secondaires, coussins et lampe en accent."
+    },
+    "it": {
+     "t": "La regola 60-30-10",
+     "g": "Usare una guida semplice per bilanciare colore dominante, secondario e d'accento.",
+     "p": [
+      "Circa il 60 per cento della superficie ha il colore dominante, spesso calmo o neutro.",
+      "Circa il 30 per cento ha un colore secondario che sostiene e aggiunge interesse.",
+      "Circa il 10 per cento ha l'accento, per i dettagli chiave; è una guida, non una legge."
+     ],
+     "q": "Guarda la stanza in cui sei: segue più o meno il 60-30-10?",
+     "c": "Colora lo schizzo di una stanza con il 60-30-10: pareti dominanti, mobili secondari, cuscini e lampada d'accento."
+    },
+    "pt": {
+     "t": "A regra 60-30-10",
+     "g": "Usar um guia simples para equilibrar a cor dominante, a secundária e a de destaque.",
+     "p": [
+      "Cerca de 60 por cento da área leva a cor dominante, muitas vezes calma ou neutra.",
+      "Cerca de 30 por cento leva uma cor secundária que apoia e dá interesse.",
+      "Cerca de 10 por cento leva o destaque, para os pormenores-chave; é um guia, não uma lei."
+     ],
+     "q": "Olha para a divisão onde estás: segue mais ou menos o 60-30-10?",
+     "c": "Pinta o esboço de uma sala com 60-30-10: paredes dominantes, móveis secundários, almofadas e candeeiro em destaque."
+    },
+    "pt_BR": {
+     "t": "A regra 60-30-10",
+     "g": "Usar um guia simples para equilibrar a cor dominante, a secundária e a de destaque.",
+     "p": [
+      "Cerca de 60 por cento da área recebe a cor dominante, muitas vezes calma ou neutra.",
+      "Cerca de 30 por cento recebe uma cor secundária que apoia e traz interesse.",
+      "Cerca de 10 por cento recebe o destaque, para os detalhes principais; é um guia, não uma lei."
+     ],
+     "q": "Olhe o cômodo onde você está: ele segue mais ou menos o 60-30-10?",
+     "c": "Pinte o esboço de uma sala com 60-30-10: paredes dominantes, móveis secundários, almofadas e luminária em destaque."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour in nature",
+     "g": "Collect palettes from landscapes, flowers and food for inspiration.",
+     "p": [
+      "Nature offers ready-made palettes that already feel harmonious and balanced.",
+      "Notice proportions too: a meadow is mostly green with tiny dots of flower colour.",
+      "Pick colours from a photo by squinting: the main areas become clear and details fade."
+     ],
+     "q": "What natural place has colours you would love to wear or live with?",
+     "c": "Photograph a fruit, flower or landscape and pick five colours from it in the proportions you see."
+    },
+    "de": {
+     "t": "Farbe in der Natur",
+     "g": "Paletten aus Landschaften, Blumen und Essen als Inspiration sammeln.",
+     "p": [
+      "Die Natur bietet fertige Paletten, die bereits harmonisch und ausgewogen wirken.",
+      "Achte auch auf Mengen: Eine Wiese ist vor allem grün, mit winzigen Punkten Blütenfarbe.",
+      "Wähle Farben aus einem Foto mit zusammengekniffenen Augen: Hauptflächen werden klar, Details verschwinden."
+     ],
+     "q": "Welcher Ort in der Natur hat Farben, die du gern tragen oder um dich haben würdest?",
+     "c": "Fotografiere eine Frucht, Blume oder Landschaft und entnimm fünf Farben in den Mengen, die du siehst."
+    },
+    "es": {
+     "t": "El color en la naturaleza",
+     "g": "Recoger paletas de paisajes, flores y comida como inspiración.",
+     "p": [
+      "La naturaleza ofrece paletas ya hechas que se sienten armoniosas y equilibradas.",
+      "Fíjate también en las proporciones: un prado es casi todo verde con diminutos puntos de flores.",
+      "Elige colores de una foto entornando los ojos: las zonas principales se aclaran y los detalles se borran."
+     ],
+     "q": "¿Qué lugar natural tiene colores que te encantaría vestir o tener en casa?",
+     "c": "Fotografía una fruta, una flor o un paisaje y saca cinco colores en las proporciones que ves."
+    },
+    "fr": {
+     "t": "La couleur dans la nature",
+     "g": "Récolter des palettes dans les paysages, les fleurs et la nourriture pour s'inspirer.",
+     "p": [
+      "La nature offre des palettes toutes faites, déjà harmonieuses et équilibrées.",
+      "Observe aussi les proportions : une prairie est surtout verte, avec de minuscules points de fleurs.",
+      "Choisis les couleurs d'une photo en plissant les yeux : les grandes zones ressortent, les détails s'effacent."
+     ],
+     "q": "Quel lieu naturel a des couleurs que tu aimerais porter ou avoir chez toi ?",
+     "c": "Photographie un fruit, une fleur ou un paysage et prélève cinq couleurs dans les proportions observées."
+    },
+    "it": {
+     "t": "Il colore in natura",
+     "g": "Raccogliere palette da paesaggi, fiori e cibo come ispirazione.",
+     "p": [
+      "La natura offre palette già pronte che risultano armoniose ed equilibrate.",
+      "Osserva anche le proporzioni: un prato è quasi tutto verde con piccoli punti di colore dei fiori.",
+      "Scegli i colori da una foto socchiudendo gli occhi: le aree principali emergono, i dettagli spariscono."
+     ],
+     "q": "Quale luogo naturale ha colori che ti piacerebbe indossare o avere in casa?",
+     "c": "Fotografa un frutto, un fiore o un paesaggio e ricava cinque colori nelle proporzioni che vedi."
+    },
+    "pt": {
+     "t": "A cor na natureza",
+     "g": "Recolher paletas de paisagens, flores e comida como inspiração.",
+     "p": [
+      "A natureza oferece paletas já feitas que parecem harmoniosas e equilibradas.",
+      "Repara também nas proporções: um prado é quase todo verde com pontinhos de cor das flores.",
+      "Escolhe cores de uma foto semicerrando os olhos: as áreas principais destacam-se e os pormenores somem."
+     ],
+     "q": "Que lugar natural tem cores que adorarias vestir ou ter em casa?",
+     "c": "Fotografa uma fruta, uma flor ou uma paisagem e tira cinco cores nas proporções que vês."
+    },
+    "pt_BR": {
+     "t": "A cor na natureza",
+     "g": "Coletar paletas de paisagens, flores e comida como inspiração.",
+     "p": [
+      "A natureza oferece paletas prontas que já parecem harmoniosas e equilibradas.",
+      "Repare também nas proporções: um campo é quase todo verde com pontinhos de cor das flores.",
+      "Escolha cores de uma foto apertando os olhos: as áreas principais aparecem e os detalhes somem."
+     ],
+     "q": "Que lugar da natureza tem cores que você adoraria vestir ou ter em casa?",
+     "c": "Fotografe uma fruta, uma flor ou uma paisagem e tire cinco cores nas proporções que você vê."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "RGB and CMYK",
+     "g": "Understand why screens and print use different colour systems.",
+     "p": [
+      "RGB mixes red, green and blue light; screens add light, so all three together make white.",
+      "CMYK mixes cyan, magenta, yellow and black ink; inks absorb light, so they work on paper.",
+      "Some bright screen colours cannot be printed exactly, so always check print colours on paper."
+     ],
+     "q": "Have you ever printed something and found the colours looked duller than on screen?",
+     "c": "Find one thing designed for screen and one for print, and note how each is meant to be seen."
+    },
+    "de": {
+     "t": "RGB und CMYK",
+     "g": "Verstehen, warum Bildschirme und Druck unterschiedliche Farbsysteme nutzen.",
+     "p": [
+      "RGB mischt rotes, grünes und blaues Licht; Bildschirme addieren Licht, alle drei zusammen ergeben Weiß.",
+      "CMYK mischt Cyan, Magenta, Gelb und Schwarz; Druckfarben schlucken Licht und funktionieren so auf Papier.",
+      "Manche leuchtenden Bildschirmfarben lassen sich nicht exakt drucken, also Druckfarben immer auf Papier prüfen."
+     ],
+     "q": "Hast du schon mal etwas gedruckt und die Farben wirkten matter als auf dem Bildschirm?",
+     "c": "Such ein Ding für den Bildschirm und eins für den Druck und notiere, wie jedes betrachtet werden soll."
+    },
+    "es": {
+     "t": "RGB y CMYK",
+     "g": "Entender por qué las pantallas y la impresión usan sistemas de color distintos.",
+     "p": [
+      "RGB mezcla luz roja, verde y azul; las pantallas suman luz, y las tres juntas dan blanco.",
+      "CMYK mezcla tintas cian, magenta, amarilla y negra; las tintas absorben luz y funcionan sobre papel.",
+      "Algunos colores vivos de pantalla no se pueden imprimir igual, así que revisa siempre en papel."
+     ],
+     "q": "¿Alguna vez imprimiste algo y los colores salieron más apagados que en pantalla?",
+     "c": "Busca algo diseñado para pantalla y algo para papel, y anota cómo se pensó cada uno para verse."
+    },
+    "fr": {
+     "t": "RVB et CMJN",
+     "g": "Comprendre pourquoi écrans et impression utilisent des systèmes de couleur différents.",
+     "p": [
+      "Le RVB mélange de la lumière rouge, verte et bleue ; l'écran ajoute de la lumière, les trois donnent du blanc.",
+      "Le CMJN mélange encres cyan, magenta, jaune et noire ; les encres absorbent la lumière et vont sur papier.",
+      "Certaines couleurs vives d'écran ne s'impriment pas à l'identique : vérifie toujours sur papier."
+     ],
+     "q": "As-tu déjà imprimé quelque chose dont les couleurs semblaient plus ternes qu'à l'écran ?",
+     "c": "Trouve un objet conçu pour l'écran et un pour l'imprimé, et note comment chacun est censé être vu."
+    },
+    "it": {
+     "t": "RGB e CMYK",
+     "g": "Capire perché schermi e stampa usano sistemi di colore diversi.",
+     "p": [
+      "RGB mescola luce rossa, verde e blu; gli schermi sommano luce e i tre insieme danno il bianco.",
+      "CMYK mescola inchiostri ciano, magenta, giallo e nero; gli inchiostri assorbono luce e funzionano su carta.",
+      "Alcuni colori brillanti dello schermo non si stampano uguali, quindi controlla sempre su carta."
+     ],
+     "q": "Ti è mai capitato di stampare qualcosa e trovare i colori più spenti che sullo schermo?",
+     "c": "Trova una cosa progettata per lo schermo e una per la stampa, e annota come ognuna è pensata per essere vista."
+    },
+    "pt": {
+     "t": "RGB e CMYK",
+     "g": "Perceber porque é que os ecrãs e a impressão usam sistemas de cor diferentes.",
+     "p": [
+      "O RGB mistura luz vermelha, verde e azul; os ecrãs somam luz, e as três juntas dão branco.",
+      "O CMYK mistura tintas ciano, magenta, amarela e preta; as tintas absorvem luz e funcionam em papel.",
+      "Algumas cores vivas de ecrã não se imprimem iguais, por isso confirma sempre as cores em papel."
+     ],
+     "q": "Já imprimiste algo e as cores pareceram mais baças do que no ecrã?",
+     "c": "Procura uma coisa feita para ecrã e outra para papel, e anota como cada uma foi pensada para ser vista."
+    },
+    "pt_BR": {
+     "t": "RGB e CMYK",
+     "g": "Entender por que telas e impressão usam sistemas de cor diferentes.",
+     "p": [
+      "RGB mistura luz vermelha, verde e azul; telas somam luz, e as três juntas formam o branco.",
+      "CMYK mistura tintas ciano, magenta, amarela e preta; tintas absorvem luz e funcionam no papel.",
+      "Algumas cores vivas de tela não saem iguais na impressão, então sempre confira as cores no papel."
+     ],
+     "q": "Você já imprimiu algo e as cores saíram mais apagadas do que na tela?",
+     "c": "Ache uma coisa feita para tela e outra para papel, e anote como cada uma foi pensada para ser vista."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour and emotion",
+     "g": "Explore how colours can evoke calm, energy, trust or playfulness.",
+     "p": [
+      "Blues and greens often feel calm and trustworthy; reds and oranges feel energetic and urgent.",
+      "Soft pastels feel gentle and friendly, while dark, deep colours feel serious or luxurious.",
+      "These links are tendencies, shaped by culture and context, not fixed rules."
+     ],
+     "q": "Which colour instantly lifts your mood?",
+     "c": "Design three versions of a button saying Join us: one calm, one energetic and one playful, using only colour."
+    },
+    "de": {
+     "t": "Farbe und Gefühl",
+     "g": "Erkunden, wie Farben Ruhe, Energie, Vertrauen oder Verspieltheit auslösen können.",
+     "p": [
+      "Blau und Grün wirken oft ruhig und vertrauenswürdig; Rot und Orange energisch und dringend.",
+      "Zarte Pastelltöne wirken sanft und freundlich, dunkle, tiefe Farben ernst oder luxuriös.",
+      "Diese Wirkungen sind Tendenzen, geprägt von Kultur und Kontext, keine festen Regeln."
+     ],
+     "q": "Welche Farbe hebt sofort deine Laune?",
+     "c": "Gestalte drei Versionen eines Buttons mit Mach mit: ruhig, energisch und verspielt, nur über die Farbe."
+    },
+    "es": {
+     "t": "Color y emoción",
+     "g": "Explorar cómo los colores pueden evocar calma, energía, confianza o diversión.",
+     "p": [
+      "Azules y verdes suelen transmitir calma y confianza; rojos y naranjas, energía y urgencia.",
+      "Los pasteles suaves resultan amables y cercanos; los colores oscuros y profundos, serios o lujosos.",
+      "Estas asociaciones son tendencias marcadas por la cultura y el contexto, no reglas fijas."
+     ],
+     "q": "¿Qué color te sube el ánimo al instante?",
+     "c": "Diseña tres versiones de un botón que diga Únete: una tranquila, una enérgica y una divertida, solo con color."
+    },
+    "fr": {
+     "t": "Couleur et émotion",
+     "g": "Explorer comment les couleurs évoquent le calme, l'énergie, la confiance ou le jeu.",
+     "p": [
+      "Bleus et verts semblent souvent calmes et fiables ; rouges et oranges, énergiques et urgents.",
+      "Les pastels doux paraissent tendres et amicaux, les couleurs sombres et profondes sérieuses ou luxueuses.",
+      "Ces liens sont des tendances, façonnées par la culture et le contexte, pas des règles fixes."
+     ],
+     "q": "Quelle couleur te met instantanément de bonne humeur ?",
+     "c": "Crée trois versions d'un bouton Rejoins-nous : une calme, une énergique et une ludique, avec la couleur seule."
+    },
+    "it": {
+     "t": "Colore ed emozione",
+     "g": "Esplorare come i colori possano evocare calma, energia, fiducia o giocosità.",
+     "p": [
+      "Blu e verdi spesso trasmettono calma e affidabilità; rossi e arancioni energia e urgenza.",
+      "I pastelli tenui sembrano dolci e amichevoli, i colori scuri e profondi seri o lussuosi.",
+      "Questi legami sono tendenze, influenzate da cultura e contesto, non regole fisse."
+     ],
+     "q": "Quale colore ti mette subito di buon umore?",
+     "c": "Progetta tre versioni di un pulsante Unisciti a noi: una calma, una energica e una giocosa, usando solo il colore."
+    },
+    "pt": {
+     "t": "Cor e emoção",
+     "g": "Explorar como as cores podem evocar calma, energia, confiança ou diversão.",
+     "p": [
+      "Azuis e verdes costumam transmitir calma e confiança; vermelhos e laranjas, energia e urgência.",
+      "Os pastéis suaves parecem meigos e simpáticos; as cores escuras e profundas, sérias ou luxuosas.",
+      "Estas ligações são tendências, moldadas pela cultura e pelo contexto, não regras fixas."
+     ],
+     "q": "Que cor te melhora logo o humor?",
+     "c": "Desenha três versões de um botão Junta-te a nós: uma calma, uma enérgica e uma divertida, só com cor."
+    },
+    "pt_BR": {
+     "t": "Cor e emoção",
+     "g": "Explorar como as cores podem evocar calma, energia, confiança ou diversão.",
+     "p": [
+      "Azuis e verdes costumam passar calma e confiança; vermelhos e laranjas, energia e urgência.",
+      "Tons pastel suaves parecem delicados e simpáticos; cores escuras e profundas, sérias ou luxuosas.",
+      "Essas ligações são tendências, moldadas por cultura e contexto, não regras fixas."
+     ],
+     "q": "Que cor melhora seu humor na hora?",
+     "c": "Crie três versões de um botão Participe: uma calma, uma enérgica e uma divertida, usando só cor."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Monochrome designs",
+     "g": "Create strong work with only one hue and its variations.",
+     "p": [
+      "A monochrome design uses one hue in many tints, shades and tones.",
+      "With colour fixed, value contrast and shape do all the work, which trains your eye.",
+      "Monochrome feels unified and elegant, and one small contrasting accent can look striking."
+     ],
+     "q": "Can you think of a film, brand or room that uses mostly one colour?",
+     "c": "Design a small poster in only one hue, using at least four values, then try adding a single accent."
+    },
+    "de": {
+     "t": "Monochrome Entwürfe",
+     "g": "Starke Arbeiten mit nur einem Farbton und seinen Varianten gestalten.",
+     "p": [
+      "Ein monochromer Entwurf nutzt einen Farbton in vielen Aufhellungen, Abdunklungen und Trübungen.",
+      "Ist die Farbe festgelegt, leisten Helligkeitskontrast und Form die ganze Arbeit, das schult das Auge.",
+      "Monochrom wirkt geschlossen und elegant, und ein kleiner Kontrastakzent kann auffallend wirken."
+     ],
+     "q": "Fällt dir ein Film, eine Marke oder ein Raum ein, der fast nur eine Farbe nutzt?",
+     "c": "Gestalte ein kleines Plakat in nur einem Farbton mit mindestens vier Helligkeiten und probiere dann einen Akzent."
+    },
+    "es": {
+     "t": "Diseños monocromáticos",
+     "g": "Crear trabajos potentes con un solo tono y sus variaciones.",
+     "p": [
+      "Un diseño monocromático usa un tono en muchos tintes, sombras y tonos.",
+      "Con el color fijo, el contraste de valor y la forma hacen todo el trabajo, lo que entrena tu mirada.",
+      "Lo monocromo se siente unido y elegante, y un pequeño acento contrastado puede impactar."
+     ],
+     "q": "¿Se te ocurre una película, marca o habitación que use casi un solo color?",
+     "c": "Diseña un pequeño cartel en un solo tono con al menos cuatro valores y luego prueba a añadir un acento."
+    },
+    "fr": {
+     "t": "Les designs monochromes",
+     "g": "Créer un travail fort avec une seule teinte et ses variations.",
+     "p": [
+      "Un design monochrome utilise une seule teinte en nombreuses versions claires, sombres et grisées.",
+      "La couleur étant fixée, le contraste de valeur et la forme font tout, ce qui entraîne l'œil.",
+      "Le monochrome paraît uni et élégant, et une petite touche contrastée peut frapper fort."
+     ],
+     "q": "Connais-tu un film, une marque ou une pièce qui utilise presque une seule couleur ?",
+     "c": "Crée une petite affiche en une seule teinte avec au moins quatre valeurs, puis essaie d'ajouter un accent."
+    },
+    "it": {
+     "t": "Progetti monocromatici",
+     "g": "Creare lavori forti con una sola tinta e le sue variazioni.",
+     "p": [
+      "Un progetto monocromatico usa una tinta in tante versioni chiare, scure e ingrigite.",
+      "Con il colore fisso, contrasto di luminosità e forma fanno tutto il lavoro, e questo allena l'occhio.",
+      "Il monocromo risulta unitario ed elegante, e un piccolo accento in contrasto può colpire molto."
+     ],
+     "q": "Ti viene in mente un film, un marchio o una stanza che usa quasi un solo colore?",
+     "c": "Progetta un piccolo manifesto in una sola tinta con almeno quattro luminosità, poi prova ad aggiungere un accento."
+    },
+    "pt": {
+     "t": "Designs monocromáticos",
+     "g": "Criar trabalhos fortes com uma só matiz e as suas variações.",
+     "p": [
+      "Um design monocromático usa uma matiz em muitas versões claras, escuras e acinzentadas.",
+      "Com a cor fixa, o contraste de valor e a forma fazem todo o trabalho, o que treina o olhar.",
+      "O monocromático parece unido e elegante, e um pequeno destaque contrastante pode impressionar."
+     ],
+     "q": "Lembras-te de um filme, marca ou sala que use quase só uma cor?",
+     "c": "Desenha um pequeno cartaz numa só matiz com pelo menos quatro valores e depois experimenta um destaque."
+    },
+    "pt_BR": {
+     "t": "Designs monocromáticos",
+     "g": "Criar trabalhos fortes com uma só cor e suas variações.",
+     "p": [
+      "Um design monocromático usa uma cor em muitas versões claras, escuras e acinzentadas.",
+      "Com a cor fixa, o contraste de valor e a forma fazem todo o trabalho, o que treina o olhar.",
+      "O monocromático parece unido e elegante, e um pequeno destaque contrastante pode impressionar."
+     ],
+     "q": "Você lembra de um filme, marca ou ambiente que use quase uma cor só?",
+     "c": "Crie um pequeno cartaz em uma só cor com pelo menos quatro valores e depois teste um destaque."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: working with colour",
+     "g": "Build and test a palette for a small poster project, using everything from this colour unit.",
+     "p": [
+      "Start from a mood, choose a harmony type, then set proportions with 60-30-10.",
+      "Check value contrast in black and white so text and key shapes stay readable.",
+      "Test the palette on real content and adjust; a palette is only good if it works in use."
+     ],
+     "q": "Which colour lesson surprised you most so far?",
+     "c": "Make a poster for a local market: pick a mood, a harmony, apply 60-30-10, then check it in black and white."
+    },
+    "de": {
+     "t": "Rückblick: mit Farbe arbeiten",
+     "g": "Eine Palette für ein kleines Plakatprojekt bauen und testen, mit allem aus der Farbeinheit.",
+     "p": [
+      "Beginne mit einer Stimmung, wähle eine Harmonieart und lege dann die Mengen mit 60-30-10 fest.",
+      "Prüfe den Helligkeitskontrast in Schwarzweiß, damit Text und wichtige Formen lesbar bleiben.",
+      "Teste die Palette mit echtem Inhalt und passe sie an; eine Palette ist nur gut, wenn sie im Einsatz funktioniert."
+     ],
+     "q": "Welche Farblektion hat dich bisher am meisten überrascht?",
+     "c": "Gestalte ein Plakat für einen Markt: Stimmung, Harmonie, 60-30-10 anwenden und dann in Schwarzweiß prüfen."
+    },
+    "es": {
+     "t": "Repaso: trabajar con color",
+     "g": "Crear y probar una paleta para un pequeño cartel, usando todo lo aprendido sobre color.",
+     "p": [
+      "Parte de un ambiente, elige un tipo de armonía y fija las proporciones con el 60-30-10.",
+      "Comprueba el contraste de valor en blanco y negro para que texto y formas clave se lean bien.",
+      "Prueba la paleta con contenido real y ajústala; solo es buena si funciona en uso."
+     ],
+     "q": "¿Qué lección de color te ha sorprendido más hasta ahora?",
+     "c": "Haz un cartel para un mercado local: elige ambiente y armonía, aplica 60-30-10 y revísalo en blanco y negro."
+    },
+    "fr": {
+     "t": "Révision : travailler la couleur",
+     "g": "Créer et tester une palette pour une petite affiche avec tout ce que tu as appris sur la couleur.",
+     "p": [
+      "Pars d'une ambiance, choisis un type d'harmonie, puis fixe les proportions avec le 60-30-10.",
+      "Vérifie le contraste de valeur en noir et blanc pour que textes et formes clés restent lisibles.",
+      "Teste la palette sur un vrai contenu et ajuste ; une palette n'est bonne que si elle fonctionne."
+     ],
+     "q": "Quelle leçon sur la couleur t'a le plus surpris jusqu'ici ?",
+     "c": "Crée une affiche pour un marché local : ambiance, harmonie, 60-30-10, puis vérification en noir et blanc."
+    },
+    "it": {
+     "t": "Ripasso: lavorare con il colore",
+     "g": "Creare e testare una palette per un piccolo manifesto, usando tutto ciò che hai imparato sul colore.",
+     "p": [
+      "Parti da un'atmosfera, scegli un tipo di armonia e fissa le proporzioni con il 60-30-10.",
+      "Controlla il contrasto di luminosità in bianco e nero perché testo e forme chiave restino leggibili.",
+      "Prova la palette su contenuti reali e correggila; una palette è buona solo se funziona nell'uso."
+     ],
+     "q": "Quale lezione sul colore ti ha sorpreso di più finora?",
+     "c": "Crea un manifesto per un mercato locale: atmosfera, armonia, 60-30-10, poi verifica in bianco e nero."
+    },
+    "pt": {
+     "t": "Revisão: trabalhar com cor",
+     "g": "Criar e testar uma paleta para um pequeno cartaz, usando tudo o que aprendeste sobre cor.",
+     "p": [
+      "Parte de um ambiente, escolhe um tipo de harmonia e define as proporções com o 60-30-10.",
+      "Verifica o contraste de valor a preto e branco para que texto e formas-chave se leiam bem.",
+      "Testa a paleta com conteúdo real e ajusta; uma paleta só é boa se funcionar na prática."
+     ],
+     "q": "Que lição sobre cor te surpreendeu mais até agora?",
+     "c": "Faz um cartaz para um mercado local: ambiente, harmonia, 60-30-10 e depois verifica a preto e branco."
+    },
+    "pt_BR": {
+     "t": "Revisão: trabalhando com cor",
+     "g": "Criar e testar uma paleta para um pequeno cartaz, usando tudo o que você aprendeu sobre cor.",
+     "p": [
+      "Parta de um clima, escolha um tipo de harmonia e defina as proporções com o 60-30-10.",
+      "Confira o contraste de valor em preto e branco para texto e formas principais continuarem legíveis.",
+      "Teste a paleta com conteúdo real e ajuste; uma paleta só é boa se funciona na prática."
+     ],
+     "q": "Qual lição de cor mais te surpreendeu até agora?",
+     "c": "Crie um cartaz para uma feira local: clima, harmonia, 60-30-10 e depois confira em preto e branco."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Typography basics",
+     "g": "See why type choice and arrangement shape how a message feels and reads.",
+     "p": [
+      "Typography is the art of choosing and arranging letters so text is clear and has the right voice.",
+      "The same words feel formal, friendly, loud or calm depending on the typeface and layout.",
+      "A typeface is the design family; a font is one specific style of it, like bold or italic."
+     ],
+     "q": "Which shop sign or book cover has lettering you really like?",
+     "c": "Write your name in three very different typefaces or styles and note the personality each one gives."
+    },
+    "de": {
+     "t": "Grundlagen der Typografie",
+     "g": "Verstehen, warum Schriftwahl und Anordnung prägen, wie eine Botschaft wirkt und sich liest.",
+     "p": [
+      "Typografie ist die Kunst, Buchstaben so zu wählen und anzuordnen, dass Text klar ist und passend klingt.",
+      "Dieselben Worte wirken förmlich, freundlich, laut oder ruhig, je nach Schrift und Layout.",
+      "Eine Schriftart ist die Gestaltungsfamilie; ein Schriftschnitt ist eine bestimmte Variante, etwa fett oder kursiv."
+     ],
+     "q": "Welches Ladenschild oder Buchcover hat eine Schrift, die du richtig magst?",
+     "c": "Schreib deinen Namen in drei sehr verschiedenen Schriften oder Stilen und notiere, welche Persönlichkeit jede ausstrahlt."
+    },
+    "es": {
+     "t": "Fundamentos de tipografía",
+     "g": "Ver por qué la elección y disposición de las letras definen cómo se siente y se lee un mensaje.",
+     "p": [
+      "La tipografía es el arte de elegir y ordenar letras para que el texto sea claro y tenga la voz adecuada.",
+      "Las mismas palabras parecen formales, cercanas, ruidosas o tranquilas según la letra y la composición.",
+      "Una familia tipográfica es el diseño completo; una fuente es un estilo concreto, como negrita o cursiva."
+     ],
+     "q": "¿Qué letrero de tienda o portada de libro tiene unas letras que te encantan?",
+     "c": "Escribe tu nombre en tres tipografías o estilos muy distintos y anota la personalidad que da cada uno."
+    },
+    "fr": {
+     "t": "Les bases de la typographie",
+     "g": "Comprendre pourquoi le choix et la disposition des lettres changent la perception d'un message.",
+     "p": [
+      "La typographie est l'art de choisir et d'agencer les lettres pour un texte clair, avec la bonne voix.",
+      "Les mêmes mots semblent formels, amicaux, bruyants ou calmes selon la police et la mise en page.",
+      "Une famille de caractères est le dessin d'ensemble ; une police en est un style précis, gras ou italique."
+     ],
+     "q": "Quelle enseigne ou couverture de livre a un lettrage que tu aimes vraiment ?",
+     "c": "Écris ton prénom dans trois caractères ou styles très différents et note la personnalité de chacun."
+    },
+    "it": {
+     "t": "Le basi della tipografia",
+     "g": "Capire perché scelta e disposizione dei caratteri cambiano come un messaggio appare e si legge.",
+     "p": [
+      "La tipografia è l'arte di scegliere e disporre le lettere perché il testo sia chiaro e abbia la voce giusta.",
+      "Le stesse parole sembrano formali, amichevoli, urlate o calme a seconda del carattere e del layout.",
+      "Un carattere tipografico è la famiglia di disegno; un font è uno stile preciso, come grassetto o corsivo."
+     ],
+     "q": "Quale insegna o copertina di libro ha delle lettere che ti piacciono davvero?",
+     "c": "Scrivi il tuo nome in tre caratteri o stili molto diversi e annota la personalità che dà ognuno."
+    },
+    "pt": {
+     "t": "Bases da tipografia",
+     "g": "Perceber porque a escolha e a disposição das letras definem como uma mensagem se sente e se lê.",
+     "p": [
+      "A tipografia é a arte de escolher e dispor letras para que o texto seja claro e tenha a voz certa.",
+      "As mesmas palavras parecem formais, simpáticas, ruidosas ou calmas conforme a letra e o layout.",
+      "Um tipo de letra é a família de desenho; uma fonte é um estilo concreto, como negrito ou itálico."
+     ],
+     "q": "Que letreiro de loja ou capa de livro tem letras de que gostas mesmo?",
+     "c": "Escreve o teu nome em três tipos de letra ou estilos muito diferentes e anota a personalidade de cada um."
+    },
+    "pt_BR": {
+     "t": "Fundamentos de tipografia",
+     "g": "Entender por que a escolha e a disposição das letras definem como uma mensagem soa e é lida.",
+     "p": [
+      "Tipografia é a arte de escolher e organizar letras para o texto ficar claro e com a voz certa.",
+      "As mesmas palavras parecem formais, simpáticas, barulhentas ou calmas dependendo da fonte e do layout.",
+      "Uma família tipográfica é o desenho completo; uma fonte é um estilo específico, como negrito ou itálico."
+     ],
+     "q": "Que fachada de loja ou capa de livro tem letras de que você gosta muito?",
+     "c": "Escreva seu nome em três fontes ou estilos bem diferentes e anote a personalidade que cada um passa."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anatomy of a letter",
+     "g": "Learn the parts of type: baseline, x-height, ascenders, descenders and more.",
+     "p": [
+      "The baseline is the line letters sit on; the x-height is the height of a lowercase x.",
+      "Ascenders rise above the x-height, as in b, d and h; descenders drop below the baseline, as in g, p and y.",
+      "A large x-height usually reads well at small sizes; small x-heights feel more classic and elegant."
+     ],
+     "q": "Have you ever noticed that some fonts look bigger than others at the same size?",
+     "c": "Write the word typography on lined paper and mark the baseline, x-height, one ascender and one descender."
+    },
+    "de": {
+     "t": "Anatomie eines Buchstabens",
+     "g": "Die Teile der Schrift kennenlernen: Grundlinie, x-Höhe, Oberlängen, Unterlängen und mehr.",
+     "p": [
+      "Die Grundlinie ist die Linie, auf der Buchstaben stehen; die x-Höhe ist die Höhe eines kleinen x.",
+      "Oberlängen ragen über die x-Höhe, wie bei b, d und h; Unterlängen reichen unter die Grundlinie, wie bei g, p und y.",
+      "Eine große x-Höhe liest sich klein meist gut; eine kleine x-Höhe wirkt klassischer und eleganter."
+     ],
+     "q": "Ist dir aufgefallen, dass manche Schriften bei gleicher Größe größer wirken?",
+     "c": "Schreib das Wort Typografie auf liniertes Papier und markiere Grundlinie, x-Höhe, eine Ober- und eine Unterlänge."
+    },
+    "es": {
+     "t": "Anatomía de una letra",
+     "g": "Conocer las partes de la letra: línea base, altura de x, ascendentes, descendentes y más.",
+     "p": [
+      "La línea base es donde se apoyan las letras; la altura de x es la altura de una x minúscula.",
+      "Los ascendentes suben por encima de la x, como en b, d y h; los descendentes bajan de la base, como en g, p e y.",
+      "Una altura de x grande se lee bien en tamaños pequeños; una pequeña se siente más clásica y elegante."
+     ],
+     "q": "¿Has notado que algunas fuentes parecen más grandes que otras al mismo tamaño?",
+     "c": "Escribe la palabra tipografía en papel pautado y marca la línea base, la altura de x, un ascendente y un descendente."
+    },
+    "fr": {
+     "t": "Anatomie d'une lettre",
+     "g": "Découvrir les parties de la lettre : ligne de base, hauteur d'x, ascendantes, descendantes et plus.",
+     "p": [
+      "La ligne de base est celle où reposent les lettres ; la hauteur d'x est la hauteur d'un x minuscule.",
+      "Les ascendantes dépassent la hauteur d'x, comme b, d, h ; les descendantes passent sous la base, comme g, p, y.",
+      "Une grande hauteur d'x se lit bien en petit ; une petite paraît plus classique et élégante."
+     ],
+     "q": "As-tu remarqué que certaines polices paraissent plus grandes que d'autres à taille égale ?",
+     "c": "Écris le mot typographie sur papier ligné et marque la ligne de base, la hauteur d'x, une ascendante et une descendante."
+    },
+    "it": {
+     "t": "Anatomia di una lettera",
+     "g": "Conoscere le parti del carattere: linea di base, altezza della x, ascendenti, discendenti e altro.",
+     "p": [
+      "La linea di base è dove poggiano le lettere; l'altezza della x è l'altezza di una x minuscola.",
+      "Le ascendenti salgono sopra la x, come in b, d e h; le discendenti scendono sotto la base, come in g, p e y.",
+      "Un'altezza della x grande si legge bene in piccolo; una piccola risulta più classica ed elegante."
+     ],
+     "q": "Hai notato che alcuni caratteri sembrano più grandi di altri alla stessa dimensione?",
+     "c": "Scrivi la parola tipografia su carta a righe e segna linea di base, altezza della x, un'ascendente e una discendente."
+    },
+    "pt": {
+     "t": "Anatomia de uma letra",
+     "g": "Conhecer as partes da letra: linha de base, altura de x, ascendentes, descendentes e mais.",
+     "p": [
+      "A linha de base é onde as letras assentam; a altura de x é a altura de um x minúsculo.",
+      "As ascendentes sobem acima da altura de x, como b, d e h; as descendentes descem da base, como g, p e y.",
+      "Uma altura de x grande lê-se bem em tamanhos pequenos; uma pequena parece mais clássica e elegante."
+     ],
+     "q": "Já reparaste que algumas fontes parecem maiores do que outras no mesmo tamanho?",
+     "c": "Escreve a palavra tipografia em papel pautado e marca a linha de base, a altura de x, uma ascendente e uma descendente."
+    },
+    "pt_BR": {
+     "t": "Anatomia de uma letra",
+     "g": "Conhecer as partes da letra: linha de base, altura-x, ascendentes, descendentes e mais.",
+     "p": [
+      "A linha de base é onde as letras se apoiam; a altura-x é a altura de um x minúsculo.",
+      "Ascendentes sobem acima da altura-x, como em b, d e h; descendentes descem da base, como em g, p e y.",
+      "Uma altura-x grande lê bem em tamanhos pequenos; uma pequena parece mais clássica e elegante."
+     ],
+     "q": "Você já reparou que algumas fontes parecem maiores que outras no mesmo tamanho?",
+     "c": "Escreva a palavra tipografia em papel pautado e marque a linha de base, a altura-x, uma ascendente e uma descendente."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Serif and sans serif",
+     "g": "Meet the two big type families and the personality each one brings.",
+     "p": [
+      "Serifs are the small strokes at the ends of letters; serif fonts often feel classic, literary and trustworthy.",
+      "Sans serif means without serifs; these fonts often feel modern, clean and neutral.",
+      "Both can be highly readable; choose by the voice you need and the setting, not by a strict rule."
+     ],
+     "q": "Is the book you last read set in a serif or a sans serif font?",
+     "c": "Find one serif and one sans serif example around you and write three words describing each one's mood."
+    },
+    "de": {
+     "t": "Serifen und serifenlos",
+     "g": "Die zwei großen Schriftfamilien und ihre jeweilige Persönlichkeit kennenlernen.",
+     "p": [
+      "Serifen sind die kleinen Striche an den Buchstabenenden; Serifenschriften wirken oft klassisch, literarisch, vertrauenswürdig.",
+      "Serifenlos heißt ohne Serifen; solche Schriften wirken oft modern, klar und neutral.",
+      "Beide können sehr gut lesbar sein; wähle nach der gewünschten Stimme und dem Umfeld, nicht nach starrer Regel."
+     ],
+     "q": "Ist das Buch, das du zuletzt gelesen hast, in einer Serifen- oder serifenlosen Schrift gesetzt?",
+     "c": "Such je ein Beispiel mit und ohne Serifen in deiner Umgebung und beschreib die Stimmung jedes mit drei Worten."
+    },
+    "es": {
+     "t": "Serifa y sin serifa",
+     "g": "Conocer las dos grandes familias tipográficas y la personalidad de cada una.",
+     "p": [
+      "Las serifas son los pequeños remates al final de las letras; estas fuentes suelen sentirse clásicas y fiables.",
+      "Sin serifa significa sin remates; estas fuentes suelen sentirse modernas, limpias y neutras.",
+      "Ambas pueden leerse muy bien; elige según la voz que necesitas y el contexto, no por una regla fija."
+     ],
+     "q": "¿El último libro que leíste estaba en una fuente con serifa o sin serifa?",
+     "c": "Busca un ejemplo con serifa y otro sin serifa a tu alrededor y describe el ambiente de cada uno en tres palabras."
+    },
+    "fr": {
+     "t": "Avec et sans empattements",
+     "g": "Découvrir les deux grandes familles de caractères et la personnalité de chacune.",
+     "p": [
+      "Les empattements sont les petits traits au bout des lettres ; ces polices paraissent souvent classiques et fiables.",
+      "Sans empattements, les polices paraissent souvent modernes, nettes et neutres.",
+      "Les deux peuvent être très lisibles ; choisis selon la voix voulue et le contexte, pas selon une règle stricte."
+     ],
+     "q": "Le dernier livre que tu as lu était-il composé avec ou sans empattements ?",
+     "c": "Trouve autour de toi un exemple avec et un sans empattements, et décris l'ambiance de chacun en trois mots."
+    },
+    "it": {
+     "t": "Graziato e senza grazie",
+     "g": "Conoscere le due grandi famiglie di caratteri e la personalità di ciascuna.",
+     "p": [
+      "Le grazie sono i piccoli tratti alle estremità delle lettere; questi caratteri sembrano spesso classici e affidabili.",
+      "Senza grazie, i caratteri sembrano spesso moderni, puliti e neutri.",
+      "Entrambi possono essere molto leggibili; scegli in base alla voce che serve e al contesto, non per regola fissa."
+     ],
+     "q": "L'ultimo libro che hai letto era composto in un carattere graziato o senza grazie?",
+     "c": "Trova intorno a te un esempio graziato e uno senza grazie e descrivi l'atmosfera di ciascuno con tre parole."
+    },
+    "pt": {
+     "t": "Serifa e sem serifa",
+     "g": "Conhecer as duas grandes famílias de letra e a personalidade de cada uma.",
+     "p": [
+      "As serifas são os pequenos remates nas pontas das letras; estas fontes parecem muitas vezes clássicas e fiáveis.",
+      "Sem serifa significa sem remates; estas fontes parecem muitas vezes modernas, limpas e neutras.",
+      "Ambas podem ler-se muito bem; escolhe pela voz de que precisas e pelo contexto, não por uma regra rígida."
+     ],
+     "q": "O último livro que leste estava numa fonte com ou sem serifa?",
+     "c": "Procura à tua volta um exemplo com serifa e outro sem serifa e descreve o ambiente de cada um em três palavras."
+    },
+    "pt_BR": {
+     "t": "Serifa e sem serifa",
+     "g": "Conhecer as duas grandes famílias de fontes e a personalidade de cada uma.",
+     "p": [
+      "Serifas são os pequenos acabamentos nas pontas das letras; essas fontes costumam parecer clássicas e confiáveis.",
+      "Sem serifa quer dizer sem esses acabamentos; essas fontes costumam parecer modernas, limpas e neutras.",
+      "As duas podem ser bem legíveis; escolha pela voz que você precisa e pelo contexto, não por regra fixa."
+     ],
+     "q": "O último livro que você leu estava em uma fonte com ou sem serifa?",
+     "c": "Ache ao seu redor um exemplo com serifa e outro sem e descreva o clima de cada um em três palavras."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Script and display fonts",
+     "g": "Learn when decorative typefaces work and when they get in the way.",
+     "p": [
+      "Script fonts imitate handwriting or calligraphy; display fonts are made for large, eye-catching headlines.",
+      "They add strong personality but are hard to read in long text or at small sizes.",
+      "Use them sparingly, for a few words, and pair them with a calm, readable font for the rest."
+     ],
+     "q": "Have you seen a wedding invitation or menu where fancy lettering was hard to read?",
+     "c": "Design a cafe sign with the name in a script or display style and the opening hours in a simple font."
+    },
+    "de": {
+     "t": "Schreib- und Displayschriften",
+     "g": "Erfahren, wann dekorative Schriften funktionieren und wann sie stören.",
+     "p": [
+      "Schreibschriften ahmen Handschrift oder Kalligrafie nach; Displayschriften sind für große, auffällige Überschriften gemacht.",
+      "Sie bringen viel Persönlichkeit, sind aber in langen Texten oder kleinen Größen schwer lesbar.",
+      "Setz sie sparsam für wenige Worte ein und kombiniere sie für den Rest mit einer ruhigen, gut lesbaren Schrift."
+     ],
+     "q": "Hast du schon eine Einladung oder Karte gesehen, deren verschnörkelte Schrift schwer lesbar war?",
+     "c": "Gestalte ein Café-Schild mit dem Namen in Schreib- oder Displayschrift und den Öffnungszeiten in schlichter Schrift."
+    },
+    "es": {
+     "t": "Fuentes caligráficas y de exhibición",
+     "g": "Saber cuándo funcionan las tipografías decorativas y cuándo estorban.",
+     "p": [
+      "Las caligráficas imitan la escritura a mano; las de exhibición están hechas para titulares grandes y llamativos.",
+      "Aportan mucha personalidad, pero cuesta leerlas en textos largos o en tamaños pequeños.",
+      "Úsalas con moderación, para pocas palabras, y combínalas con una fuente tranquila y legible."
+     ],
+     "q": "¿Has visto una invitación o un menú donde las letras elaboradas eran difíciles de leer?",
+     "c": "Diseña el letrero de una cafetería con el nombre en estilo caligráfico o de exhibición y el horario en una fuente sencilla."
+    },
+    "fr": {
+     "t": "Scriptes et polices de titrage",
+     "g": "Savoir quand les caractères décoratifs fonctionnent et quand ils gênent.",
+     "p": [
+      "Les scriptes imitent l'écriture manuscrite ou la calligraphie ; les polices de titrage visent les grands titres accrocheurs.",
+      "Elles apportent beaucoup de caractère mais se lisent mal en texte long ou en petite taille.",
+      "Utilise-les avec parcimonie, pour quelques mots, et associe-les à une police calme et lisible."
+     ],
+     "q": "As-tu déjà vu une invitation ou un menu dont le lettrage fantaisie était difficile à lire ?",
+     "c": "Crée l'enseigne d'un café avec le nom en scripte ou en titrage et les horaires dans une police simple."
+    },
+    "it": {
+     "t": "Caratteri script e display",
+     "g": "Capire quando i caratteri decorativi funzionano e quando intralciano.",
+     "p": [
+      "Gli script imitano la scrittura a mano o la calligrafia; i display sono pensati per titoli grandi e d'impatto.",
+      "Danno molta personalità ma sono difficili da leggere in testi lunghi o in piccolo.",
+      "Usali con parsimonia, per poche parole, e abbinali a un carattere calmo e leggibile."
+     ],
+     "q": "Hai mai visto un invito o un menu con lettere elaborate difficili da leggere?",
+     "c": "Progetta l'insegna di un bar con il nome in stile script o display e gli orari in un carattere semplice."
+    },
+    "pt": {
+     "t": "Letras manuscritas e de título",
+     "g": "Perceber quando os tipos decorativos funcionam e quando atrapalham.",
+     "p": [
+      "As manuscritas imitam a escrita à mão ou a caligrafia; as de título são feitas para títulos grandes e chamativos.",
+      "Dão muita personalidade, mas leem-se mal em textos longos ou em tamanhos pequenos.",
+      "Usa-as com moderação, em poucas palavras, e combina-as com uma letra calma e legível."
+     ],
+     "q": "Já viste um convite ou ementa com letras elaboradas difíceis de ler?",
+     "c": "Desenha a tabuleta de um café com o nome em estilo manuscrito ou de título e o horário numa letra simples."
+    },
+    "pt_BR": {
+     "t": "Fontes script e display",
+     "g": "Entender quando fontes decorativas funcionam e quando atrapalham.",
+     "p": [
+      "Fontes script imitam escrita à mão ou caligrafia; fontes display são feitas para títulos grandes e chamativos.",
+      "Elas trazem muita personalidade, mas são difíceis de ler em textos longos ou tamanhos pequenos.",
+      "Use com moderação, em poucas palavras, e combine com uma fonte calma e legível no resto."
+     ],
+     "q": "Você já viu um convite ou cardápio com letras rebuscadas difíceis de ler?",
+     "c": "Crie a placa de uma cafeteria com o nome em estilo script ou display e o horário em uma fonte simples."
+    }
+   }
+  }
+ ]
+}

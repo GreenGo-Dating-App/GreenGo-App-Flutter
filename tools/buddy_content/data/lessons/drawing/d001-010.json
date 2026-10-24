@@ -1,0 +1,835 @@
+{
+ "topic": "drawing",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to drawing",
+     "g": "See drawing as a skill anyone can learn and get ready for a year of small daily practice.",
+     "p": [
+      "Drawing is a skill, not a gift: it grows with practice like learning to ride a bike.",
+      "Our path goes from lines and shapes to shading, perspective, people and your own style.",
+      "Ten focused minutes a day beat one long session a month."
+     ],
+     "q": "What would you love to be able to draw one year from now?",
+     "c": "Draw your coffee cup or any object near you in two minutes, then sign and date the page."
+    },
+    "de": {
+     "t": "Willkommen beim Zeichnen",
+     "g": "Zeichnen als erlernbare Fähigkeit verstehen und dich auf ein Jahr kleiner täglicher Übungen einstellen.",
+     "p": [
+      "Zeichnen ist kein Talent, sondern Übung, so wie Fahrradfahren lernen.",
+      "Unser Weg führt von Linien und Formen über Schattierung und Perspektive bis zu deinem eigenen Stil.",
+      "Zehn konzentrierte Minuten täglich bringen mehr als eine lange Sitzung im Monat."
+     ],
+     "q": "Was würdest du in einem Jahr gern zeichnen können?",
+     "c": "Zeichne in zwei Minuten deine Tasse oder einen Gegenstand neben dir, dann Datum und Unterschrift drauf."
+    },
+    "es": {
+     "t": "Bienvenido al dibujo",
+     "g": "Entender el dibujo como una habilidad que se aprende y prepararte para un año de práctica diaria.",
+     "p": [
+      "Dibujar no es un don, es práctica, igual que aprender a montar en bici.",
+      "El camino va de líneas y formas a sombreado, perspectiva, personas y tu propio estilo.",
+      "Diez minutos concentrados al día valen más que una sesión larga al mes."
+     ],
+     "q": "¿Qué te encantaría poder dibujar dentro de un año?",
+     "c": "Dibuja tu taza o un objeto cercano en dos minutos y pon la fecha y tu firma."
+    },
+    "fr": {
+     "t": "Bienvenue dans le dessin",
+     "g": "Voir le dessin comme une compétence qui s'apprend et se préparer à un an de petite pratique quotidienne.",
+     "p": [
+      "Dessiner n'est pas un don, c'est un entraînement, comme apprendre le vélo.",
+      "Le parcours va des lignes et formes à l'ombre, la perspective, les personnages et ton style.",
+      "Dix minutes concentrées par jour valent mieux qu'une longue séance par mois."
+     ],
+     "q": "Qu'aimerais-tu savoir dessiner dans un an ?",
+     "c": "Dessine ta tasse ou un objet proche en deux minutes, puis date et signe la page."
+    },
+    "it": {
+     "t": "Benvenuto nel disegno",
+     "g": "Capire che il disegno si impara e prepararsi a un anno di piccola pratica quotidiana.",
+     "p": [
+      "Disegnare non è un dono ma allenamento, proprio come imparare ad andare in bici.",
+      "Il percorso va da linee e forme a ombre, prospettiva, figure e il tuo stile personale.",
+      "Dieci minuti concentrati al giorno valgono più di una lunga sessione al mese."
+     ],
+     "q": "Che cosa ti piacerebbe saper disegnare tra un anno?",
+     "c": "Disegna la tua tazza o un oggetto vicino in due minuti, poi metti data e firma."
+    },
+    "pt": {
+     "t": "Bem-vindo ao desenho",
+     "g": "Ver o desenho como uma competência que se aprende e preparar-te para um ano de prática diária.",
+     "p": [
+      "Desenhar não é um dom, é treino, tal como aprender a andar de bicicleta.",
+      "O percurso vai de linhas e formas a sombreado, perspetiva, figuras e o teu estilo.",
+      "Dez minutos concentrados por dia valem mais do que uma sessão longa por mês."
+     ],
+     "q": "O que gostarias de saber desenhar daqui a um ano?",
+     "c": "Desenha a tua chávena ou um objeto próximo em dois minutos e põe a data e a assinatura."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao desenho",
+     "g": "Ver o desenho como uma habilidade que se aprende e se preparar para um ano de prática diária.",
+     "p": [
+      "Desenhar não é dom, é treino, igual aprender a andar de bicicleta.",
+      "O caminho vai de linhas e formas a sombreamento, perspectiva, pessoas e seu próprio estilo.",
+      "Dez minutos focados por dia valem mais que uma sessão longa por mês."
+     ],
+     "q": "O que você adoraria saber desenhar daqui a um ano?",
+     "c": "Desenhe sua caneca ou um objeto perto de você em dois minutos e coloque data e assinatura."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawing is seeing",
+     "g": "Learn that drawing well starts with looking carefully at shapes, edges and light.",
+     "p": [
+      "Your brain uses symbols, like a lemon-shaped eye; drawing means replacing symbols with what you see.",
+      "Look at the object more than at the paper, especially at first.",
+      "Notice edges, the shapes they make, and where light and shadow fall."
+     ],
+     "q": "What object at home have you looked at a thousand times but never really observed?",
+     "c": "Study a leaf or a key for one full minute without drawing, then draw it from memory and compare."
+    },
+    "de": {
+     "t": "Zeichnen heißt Sehen",
+     "g": "Erkennen, dass gutes Zeichnen mit genauem Hinsehen auf Formen, Kanten und Licht beginnt.",
+     "p": [
+      "Das Gehirn nutzt Symbole, etwa ein mandelförmiges Auge; Zeichnen ersetzt Symbole durch echtes Sehen.",
+      "Schau anfangs öfter auf das Objekt als auf das Papier.",
+      "Achte auf Kanten, die Formen, die sie bilden, und wo Licht und Schatten liegen."
+     ],
+     "q": "Welchen Gegenstand zu Hause hast du tausendmal gesehen, aber nie wirklich betrachtet?",
+     "c": "Betrachte ein Blatt oder einen Schlüssel eine Minute lang, zeichne ihn aus dem Gedächtnis und vergleiche."
+    },
+    "es": {
+     "t": "Dibujar es ver",
+     "g": "Descubrir que dibujar bien empieza por mirar con atención formas, bordes y luz.",
+     "p": [
+      "El cerebro usa símbolos, como un ojo en forma de almendra; dibujar es cambiarlos por lo que ves.",
+      "Al principio, mira más el objeto que el papel.",
+      "Fíjate en los bordes, las formas que crean y dónde caen la luz y la sombra."
+     ],
+     "q": "¿Qué objeto de tu casa has visto mil veces pero nunca has observado de verdad?",
+     "c": "Observa una hoja o una llave un minuto sin dibujar, dibújala de memoria y compara."
+    },
+    "fr": {
+     "t": "Dessiner, c'est voir",
+     "g": "Comprendre que bien dessiner commence par observer attentivement formes, contours et lumière.",
+     "p": [
+      "Le cerveau utilise des symboles, comme un œil en amande ; dessiner, c'est les remplacer par ce qu'on voit.",
+      "Au début, regarde l'objet plus souvent que la feuille.",
+      "Observe les contours, les formes qu'ils créent et où tombent la lumière et l'ombre."
+     ],
+     "q": "Quel objet chez toi as-tu vu mille fois sans jamais vraiment l'observer ?",
+     "c": "Observe une feuille ou une clé une minute sans dessiner, puis dessine-la de mémoire et compare."
+    },
+    "it": {
+     "t": "Disegnare è vedere",
+     "g": "Scoprire che disegnare bene inizia dal guardare con attenzione forme, contorni e luce.",
+     "p": [
+      "Il cervello usa simboli, come un occhio a mandorla; disegnare significa sostituirli con ciò che vedi.",
+      "All'inizio guarda l'oggetto più spesso del foglio.",
+      "Osserva i contorni, le forme che creano e dove cadono luce e ombra."
+     ],
+     "q": "Quale oggetto di casa hai visto mille volte senza mai osservarlo davvero?",
+     "c": "Osserva una foglia o una chiave per un minuto senza disegnare, poi disegnala a memoria e confronta."
+    },
+    "pt": {
+     "t": "Desenhar é ver",
+     "g": "Perceber que desenhar bem começa por olhar com atenção para formas, contornos e luz.",
+     "p": [
+      "O cérebro usa símbolos, como um olho em amêndoa; desenhar é trocá-los pelo que realmente vês.",
+      "No início, olha mais para o objeto do que para o papel.",
+      "Repara nos contornos, nas formas que criam e onde caem a luz e a sombra."
+     ],
+     "q": "Que objeto em casa já viste mil vezes mas nunca observaste a sério?",
+     "c": "Observa uma folha ou uma chave durante um minuto sem desenhar, depois desenha-a de memória e compara."
+    },
+    "pt_BR": {
+     "t": "Desenhar é enxergar",
+     "g": "Perceber que desenhar bem começa com olhar com atenção para formas, contornos e luz.",
+     "p": [
+      "O cérebro usa símbolos, como um olho em formato de amêndoa; desenhar é trocá-los pelo que você vê.",
+      "No começo, olhe mais para o objeto do que para o papel.",
+      "Repare nos contornos, nas formas que eles criam e onde caem a luz e a sombra."
+     ],
+     "q": "Que objeto da sua casa você já viu mil vezes, mas nunca observou de verdade?",
+     "c": "Observe uma folha ou uma chave por um minuto sem desenhar, depois desenhe de memória e compare."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pencil grades",
+     "g": "Understand what H and B mean on pencils and pick a simple starter set.",
+     "p": [
+      "H pencils are hard and light, B pencils are soft and dark, HB sits in the middle.",
+      "A 2H for light sketching, an HB for lines and a 4B or 6B for darks cover almost everything.",
+      "Soft pencils smudge more and need sharpening more often; hard ones can dent the paper."
+     ],
+     "q": "Which pencils do you already have at home, and do you know their grades?",
+     "c": "Make a small square with each pencil you own, pressing the same way, and label which is darkest."
+    },
+    "de": {
+     "t": "Bleistifthärten",
+     "g": "Verstehen, was H und B auf Bleistiften bedeuten, und ein einfaches Starterset wählen.",
+     "p": [
+      "H-Stifte sind hart und hell, B-Stifte weich und dunkel, HB liegt in der Mitte.",
+      "Ein 2H zum Vorzeichnen, ein HB für Linien und ein 4B oder 6B für Dunkles reichen fast immer.",
+      "Weiche Stifte verwischen leichter und stumpfen schneller ab, harte können das Papier eindrücken."
+     ],
+     "q": "Welche Bleistifte hast du schon zu Hause, und kennst du ihre Härtegrade?",
+     "c": "Mal mit jedem Bleistift ein kleines Feld bei gleichem Druck und notiere, welcher am dunkelsten ist."
+    },
+    "es": {
+     "t": "Durezas del lápiz",
+     "g": "Entender qué significan H y B en los lápices y elegir un set sencillo para empezar.",
+     "p": [
+      "Los lápices H son duros y claros, los B blandos y oscuros, y el HB está en medio.",
+      "Un 2H para encajar, un HB para líneas y un 4B o 6B para oscuros cubren casi todo.",
+      "Los blandos manchan más y se gastan antes; los duros pueden marcar el papel."
+     ],
+     "q": "¿Qué lápices tienes ya en casa y conoces su dureza?",
+     "c": "Haz un cuadradito con cada lápiz que tengas, con la misma presión, y anota cuál es el más oscuro."
+    },
+    "fr": {
+     "t": "Les duretés de crayon",
+     "g": "Comprendre ce que signifient H et B sur les crayons et choisir un petit kit de départ.",
+     "p": [
+      "Les crayons H sont durs et clairs, les B tendres et foncés, le HB est au milieu.",
+      "Un 2H pour esquisser, un HB pour les traits et un 4B ou 6B pour les noirs suffisent presque toujours.",
+      "Les tendres bavent plus et s'usent vite ; les durs peuvent marquer le papier."
+     ],
+     "q": "Quels crayons as-tu déjà chez toi, et connais-tu leur dureté ?",
+     "c": "Fais un petit carré avec chaque crayon, même pression, et note lequel est le plus foncé."
+    },
+    "it": {
+     "t": "Le gradazioni della matita",
+     "g": "Capire cosa significano H e B sulle matite e scegliere un set iniziale semplice.",
+     "p": [
+      "Le matite H sono dure e chiare, le B morbide e scure, la HB sta nel mezzo.",
+      "Una 2H per abbozzare, una HB per le linee e una 4B o 6B per gli scuri bastano quasi sempre.",
+      "Le morbide sbavano di più e si consumano prima; le dure possono incidere la carta."
+     ],
+     "q": "Quali matite hai già in casa e conosci la loro gradazione?",
+     "c": "Fai un quadratino con ogni matita che hai, con la stessa pressione, e segna qual è la più scura."
+    },
+    "pt": {
+     "t": "Graus do lápis",
+     "g": "Perceber o que significam H e B nos lápis e escolher um conjunto simples para começar.",
+     "p": [
+      "Os lápis H são duros e claros, os B macios e escuros, e o HB fica no meio.",
+      "Um 2H para esboçar, um HB para linhas e um 4B ou 6B para escuros chegam para quase tudo.",
+      "Os macios borram mais e gastam-se depressa; os duros podem marcar o papel."
+     ],
+     "q": "Que lápis já tens em casa e conheces o grau de cada um?",
+     "c": "Faz um quadradinho com cada lápis que tens, com a mesma pressão, e anota qual é o mais escuro."
+    },
+    "pt_BR": {
+     "t": "Graduação do lápis",
+     "g": "Entender o que H e B significam nos lápis e escolher um kit simples para começar.",
+     "p": [
+      "Lápis H são duros e claros, lápis B são macios e escuros, e o HB fica no meio.",
+      "Um 2H para esboçar, um HB para linhas e um 4B ou 6B para escuros resolvem quase tudo.",
+      "Os macios borram mais e gastam rápido; os duros podem marcar o papel."
+     ],
+     "q": "Quais lápis você já tem em casa e sabe a graduação deles?",
+     "c": "Faça um quadradinho com cada lápis que tiver, com a mesma pressão, e anote qual é o mais escuro."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Erasers as drawing tools",
+     "g": "Use plastic, kneaded and pen erasers to lift light into a drawing, not only to fix it.",
+     "p": [
+      "A plastic eraser removes graphite cleanly; a kneaded eraser lifts it gently without crumbs.",
+      "Shape a kneaded eraser into a point to pull out highlights and soft light areas.",
+      "A pen-style eraser draws thin white lines, perfect for hair or shiny edges."
+     ],
+     "q": "Do you usually see erasing as fixing mistakes or as part of drawing?",
+     "c": "Shade a square dark with a soft pencil, then draw a star or your initials into it with an eraser."
+    },
+    "de": {
+     "t": "Radiergummis als Werkzeug",
+     "g": "Plastik-, Knet- und Stiftradierer nutzen, um Licht ins Bild zu holen, nicht nur zum Korrigieren.",
+     "p": [
+      "Ein Plastikradierer entfernt Grafit sauber, ein Knetradierer hebt ihn sanft ohne Krümel ab.",
+      "Forme den Knetradierer spitz, um Glanzlichter und weiche helle Stellen herauszuholen.",
+      "Ein Radierstift zeichnet feine weiße Linien, ideal für Haare oder glänzende Kanten."
+     ],
+     "q": "Siehst du Radieren eher als Fehlerkorrektur oder als Teil des Zeichnens?",
+     "c": "Schattiere ein Feld dunkel und radiere einen Stern oder deine Initialen hinein."
+    },
+    "es": {
+     "t": "La goma como herramienta",
+     "g": "Usar gomas de plástico, moldeables y en lápiz para sacar luces, no solo para corregir.",
+     "p": [
+      "La goma de plástico borra limpio; la moldeable levanta el grafito con suavidad y sin migas.",
+      "Dale punta a la goma moldeable para sacar brillos y zonas de luz suaves.",
+      "Una goma en lápiz dibuja líneas blancas finas, ideal para pelo o bordes brillantes."
+     ],
+     "q": "¿Ves la goma como algo para corregir o como parte del dibujo?",
+     "c": "Sombrea un cuadrado oscuro con lápiz blando y dibuja dentro una estrella o tus iniciales con la goma."
+    },
+    "fr": {
+     "t": "La gomme comme outil",
+     "g": "Utiliser gommes plastique, mie de pain et gomme-stylo pour faire jaillir la lumière, pas seulement corriger.",
+     "p": [
+      "La gomme plastique efface net ; la gomme mie de pain soulève le graphite en douceur, sans miettes.",
+      "Façonne la mie de pain en pointe pour sortir reflets et zones claires douces.",
+      "Une gomme-stylo trace de fines lignes blanches, idéale pour cheveux ou bords brillants."
+     ],
+     "q": "Vois-tu la gomme comme un outil de correction ou comme une partie du dessin ?",
+     "c": "Ombre un carré foncé au crayon tendre, puis dessine dedans une étoile ou tes initiales à la gomme."
+    },
+    "it": {
+     "t": "La gomma come strumento",
+     "g": "Usare gomme in plastica, pane e a matita per far emergere la luce, non solo per correggere.",
+     "p": [
+      "La gomma in plastica cancella pulito; la gomma pane solleva la grafite con delicatezza, senza briciole.",
+      "Modella la gomma pane a punta per tirare fuori luci e zone chiare morbide.",
+      "Una gomma a penna traccia sottili linee bianche, perfetta per capelli o bordi lucidi."
+     ],
+     "q": "Vedi la gomma come un modo per correggere o come parte del disegno?",
+     "c": "Ombreggia un quadrato scuro con una matita morbida e disegnaci dentro una stella o le tue iniziali con la gomma."
+    },
+    "pt": {
+     "t": "A borracha como ferramenta",
+     "g": "Usar borrachas de plástico, moldáveis e em caneta para criar luz, não só para corrigir.",
+     "p": [
+      "A borracha de plástico apaga limpo; a moldável levanta a grafite com suavidade e sem restos.",
+      "Molda a borracha moldável em bico para tirar brilhos e zonas claras suaves.",
+      "Uma borracha em caneta desenha linhas brancas finas, ótima para cabelo ou bordas brilhantes."
+     ],
+     "q": "Vês a borracha como forma de corrigir ou como parte do desenho?",
+     "c": "Sombreia um quadrado escuro com lápis macio e desenha lá dentro uma estrela ou as tuas iniciais com a borracha."
+    },
+    "pt_BR": {
+     "t": "A borracha como ferramenta",
+     "g": "Usar borrachas de plástico, limpa-tipos e em caneta para criar luz, não só para corrigir.",
+     "p": [
+      "A borracha de plástico apaga limpo; a limpa-tipos levanta o grafite com suavidade e sem farelo.",
+      "Modele a limpa-tipos em ponta para tirar brilhos e áreas claras suaves.",
+      "Uma borracha em caneta desenha linhas brancas finas, ótima para cabelo ou bordas brilhantes."
+     ],
+     "q": "Você vê a borracha como forma de corrigir ou como parte do desenho?",
+     "c": "Sombreie um quadrado escuro com lápis macio e desenhe dentro uma estrela ou suas iniciais com a borracha."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper for drawing",
+     "g": "Learn how smooth, medium and textured papers change the look of pencil and charcoal.",
+     "p": [
+      "Tooth is the paper's surface texture: more tooth grabs more graphite or charcoal.",
+      "Smooth paper suits fine detail and ink; medium paper is a great all-rounder for pencil.",
+      "Heavier paper, around 120 g or more, handles erasing and layering much better."
+     ],
+     "q": "Have you noticed a difference when drawing on printer paper versus a sketchbook?",
+     "c": "Draw the same small shaded circle on two different papers and note which you prefer and why."
+    },
+    "de": {
+     "t": "Papier zum Zeichnen",
+     "g": "Erfahren, wie glattes, mittleres und raues Papier das Aussehen von Bleistift und Kohle verändert.",
+     "p": [
+      "Die Körnung ist die Oberfläche des Papiers: mehr Körnung hält mehr Grafit oder Kohle.",
+      "Glattes Papier passt zu feinen Details und Tusche, mittleres ist ein guter Allrounder für Bleistift.",
+      "Schwereres Papier ab etwa 120 g verträgt Radieren und Schichten viel besser."
+     ],
+     "q": "Hast du einen Unterschied zwischen Druckerpapier und Skizzenbuch bemerkt?",
+     "c": "Zeichne denselben kleinen schattierten Kreis auf zwei Papiersorten und notiere, welche dir besser gefällt."
+    },
+    "es": {
+     "t": "Papel para dibujar",
+     "g": "Conocer cómo el papel liso, medio y con textura cambia el lápiz y el carboncillo.",
+     "p": [
+      "El grano es la textura del papel: más grano atrapa más grafito o carboncillo.",
+      "El papel liso va bien para detalle y tinta; el de grano medio es todoterreno para lápiz.",
+      "Un papel más grueso, de unos 120 g o más, aguanta mejor borrar y superponer capas."
+     ],
+     "q": "¿Has notado diferencia entre dibujar en papel de impresora y en un cuaderno de dibujo?",
+     "c": "Dibuja el mismo círculo sombreado en dos papeles distintos y anota cuál prefieres y por qué."
+    },
+    "fr": {
+     "t": "Le papier à dessin",
+     "g": "Découvrir comment un papier lisse, moyen ou texturé change le rendu du crayon et du fusain.",
+     "p": [
+      "Le grain est la texture du papier : plus il y a de grain, plus il retient graphite ou fusain.",
+      "Le papier lisse convient au détail et à l'encre ; le grain moyen est polyvalent pour le crayon.",
+      "Un papier plus épais, environ 120 g ou plus, supporte bien mieux gommage et couches."
+     ],
+     "q": "As-tu remarqué une différence entre papier d'imprimante et carnet de croquis ?",
+     "c": "Dessine le même petit cercle ombré sur deux papiers différents et note lequel tu préfères et pourquoi."
+    },
+    "it": {
+     "t": "La carta da disegno",
+     "g": "Scoprire come la carta liscia, media o ruvida cambia l'effetto di matita e carboncino.",
+     "p": [
+      "La grana è la texture della carta: più grana trattiene più grafite o carboncino.",
+      "La carta liscia va bene per dettagli e inchiostro; quella media è versatile per la matita.",
+      "Una carta più pesante, da circa 120 g in su, regge meglio cancellature e strati."
+     ],
+     "q": "Hai notato differenze tra disegnare su carta da stampante e su un album da disegno?",
+     "c": "Disegna lo stesso cerchio ombreggiato su due carte diverse e annota quale preferisci e perché."
+    },
+    "pt": {
+     "t": "Papel para desenhar",
+     "g": "Perceber como o papel liso, médio ou texturado muda o efeito do lápis e do carvão.",
+     "p": [
+      "O grão é a textura do papel: mais grão agarra mais grafite ou carvão.",
+      "O papel liso serve para detalhe e tinta; o de grão médio é versátil para lápis.",
+      "Papel mais grosso, a partir de uns 120 g, aguenta melhor borrachas e camadas."
+     ],
+     "q": "Já notaste diferença entre desenhar em papel de impressora e num caderno de desenho?",
+     "c": "Desenha o mesmo círculo sombreado em dois papéis diferentes e anota qual preferes e porquê."
+    },
+    "pt_BR": {
+     "t": "Papel para desenhar",
+     "g": "Entender como papel liso, médio ou texturizado muda o efeito do lápis e do carvão.",
+     "p": [
+      "A gramatura fala do peso; a textura, ou dente, é o que segura mais grafite ou carvão.",
+      "Papel liso é bom para detalhe e nanquim; o de textura média é coringa para lápis.",
+      "Papel mais grosso, a partir de uns 120 g, aguenta melhor borracha e camadas."
+     ],
+     "q": "Você já notou diferença entre desenhar em papel sulfite e em um caderno de desenho?",
+     "c": "Desenhe o mesmo círculo sombreado em dois papéis diferentes e anote qual prefere e por quê."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first sketchbook",
+     "g": "Choose a sketchbook you will really carry and treat it as a practice space.",
+     "p": [
+      "Pick a size that fits your bag, like A5, so it comes along everywhere.",
+      "A sketchbook is a gym, not a gallery: messy, unfinished pages are proof of practice.",
+      "Date your pages so you can see your progress over weeks and months."
+     ],
+     "q": "Where would you most like to sketch: at home, in cafés, outdoors or while travelling?",
+     "c": "Fill the first page of your sketchbook with quick, imperfect scribbles so it is no longer blank."
+    },
+    "de": {
+     "t": "Dein erstes Skizzenbuch",
+     "g": "Ein Skizzenbuch wählen, das du wirklich mitnimmst, und es als Übungsraum sehen.",
+     "p": [
+      "Wähle eine Größe, die in deine Tasche passt, etwa A5, damit es überall dabei ist.",
+      "Ein Skizzenbuch ist ein Trainingsraum, keine Galerie: unfertige Seiten zeigen, dass du übst.",
+      "Datiere deine Seiten, um deinen Fortschritt über Wochen und Monate zu sehen."
+     ],
+     "q": "Wo würdest du am liebsten skizzieren: zu Hause, im Café, draußen oder auf Reisen?",
+     "c": "Füll die erste Seite mit schnellen, unperfekten Kritzeleien, damit sie nicht mehr leer ist."
+    },
+    "es": {
+     "t": "Tu primer cuaderno",
+     "g": "Elegir un cuaderno que de verdad lleves contigo y verlo como espacio de práctica.",
+     "p": [
+      "Elige un tamaño que quepa en tu bolso, como A5, para que vaya contigo a todas partes.",
+      "Un cuaderno es un gimnasio, no una galería: las páginas sin terminar demuestran práctica.",
+      "Pon fecha a tus páginas para ver tu progreso semana a semana."
+     ],
+     "q": "¿Dónde te gustaría más dibujar: en casa, en cafeterías, al aire libre o de viaje?",
+     "c": "Llena la primera página con garabatos rápidos e imperfectos para que deje de estar en blanco."
+    },
+    "fr": {
+     "t": "Ton premier carnet",
+     "g": "Choisir un carnet que tu emporteras vraiment et le voir comme un espace d'entraînement.",
+     "p": [
+      "Prends un format qui tient dans ton sac, comme l'A5, pour l'avoir toujours sur toi.",
+      "Un carnet est une salle de sport, pas une galerie : les pages brouillonnes prouvent que tu pratiques.",
+      "Date tes pages pour voir tes progrès au fil des semaines."
+     ],
+     "q": "Où aimerais-tu le plus dessiner : chez toi, au café, dehors ou en voyage ?",
+     "c": "Remplis la première page de gribouillis rapides et imparfaits pour qu'elle ne soit plus blanche."
+    },
+    "it": {
+     "t": "Il tuo primo sketchbook",
+     "g": "Scegliere uno sketchbook che porterai davvero con te e viverlo come spazio di pratica.",
+     "p": [
+      "Scegli un formato che stia in borsa, come l'A5, così viene sempre con te.",
+      "Lo sketchbook è una palestra, non una galleria: le pagine disordinate sono la prova che ti alleni.",
+      "Metti la data sulle pagine per vedere i progressi nel tempo."
+     ],
+     "q": "Dove ti piacerebbe di più disegnare: a casa, al bar, all'aperto o in viaggio?",
+     "c": "Riempi la prima pagina di scarabocchi veloci e imperfetti, così non è più bianca."
+    },
+    "pt": {
+     "t": "O teu primeiro caderno",
+     "g": "Escolher um caderno que vais mesmo levar contigo e vê-lo como espaço de treino.",
+     "p": [
+      "Escolhe um tamanho que caiba na mala, como A5, para ir contigo para todo o lado.",
+      "Um caderno é um ginásio, não uma galeria: páginas inacabadas provam que praticas.",
+      "Põe a data nas páginas para veres o teu progresso ao longo das semanas."
+     ],
+     "q": "Onde gostarias mais de desenhar: em casa, em cafés, ao ar livre ou em viagem?",
+     "c": "Enche a primeira página com rabiscos rápidos e imperfeitos para que deixe de estar em branco."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro sketchbook",
+     "g": "Escolher um caderno que você vai levar de verdade e enxergá-lo como espaço de treino.",
+     "p": [
+      "Escolha um tamanho que caiba na bolsa, como A5, para ir com você a todo lugar.",
+      "Sketchbook é academia, não galeria: páginas bagunçadas mostram que você está praticando.",
+      "Coloque a data nas páginas para ver sua evolução ao longo das semanas."
+     ],
+     "q": "Onde você mais gostaria de desenhar: em casa, em cafés, ao ar livre ou viajando?",
+     "c": "Encha a primeira página com rabiscos rápidos e imperfeitos para ela não ficar mais em branco."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharpening pencils",
+     "g": "Sharpen pencils with a knife or sharpener and choose the right point for each job.",
+     "p": [
+      "A sharpener is quick and safe; a craft knife gives a long exposed lead for shading.",
+      "A sharp point makes crisp lines and details; a blunt or flat side gives soft, wide tone.",
+      "Rub the tip on sandpaper to reshape it fast without wasting pencil."
+     ],
+     "q": "Do you prefer neat sharp points or soft rounded ones when you write or draw?",
+     "c": "Draw a row of lines with a sharp tip, then with a blunt tip and the side of the lead, and compare."
+    },
+    "de": {
+     "t": "Bleistifte spitzen",
+     "g": "Mit Messer oder Spitzer spitzen und für jede Aufgabe die passende Spitze wählen.",
+     "p": [
+      "Ein Spitzer ist schnell und sicher, ein Cuttermesser legt eine lange Mine frei fürs Schattieren.",
+      "Eine spitze Mine macht klare Linien und Details, eine stumpfe Seite weiche, breite Töne.",
+      "Reib die Spitze auf Schleifpapier, um sie schnell nachzuformen, ohne Stift zu verschwenden."
+     ],
+     "q": "Magst du beim Schreiben oder Zeichnen lieber spitze oder runde Minen?",
+     "c": "Zieh eine Reihe Linien mit spitzer Mine, dann mit stumpfer und mit der Seite, und vergleiche."
+    },
+    "es": {
+     "t": "Afilar el lápiz",
+     "g": "Afilar con cúter o sacapuntas y elegir la punta adecuada para cada tarea.",
+     "p": [
+      "El sacapuntas es rápido y seguro; el cúter deja mucha mina al aire para sombrear.",
+      "Una punta fina da líneas nítidas y detalle; una roma o de lado da tono suave y ancho.",
+      "Frota la punta en papel de lija para darle forma sin gastar el lápiz."
+     ],
+     "q": "¿Prefieres puntas muy afiladas o redondeadas cuando escribes o dibujas?",
+     "c": "Haz una fila de líneas con punta fina, otra con punta roma y otra de lado, y compara."
+    },
+    "fr": {
+     "t": "Tailler ses crayons",
+     "g": "Tailler au cutter ou au taille-crayon et choisir la bonne pointe pour chaque usage.",
+     "p": [
+      "Le taille-crayon est rapide et sûr ; le cutter dégage une longue mine pour ombrer.",
+      "Une pointe fine donne des traits nets et du détail ; une pointe usée ou le côté donne un ton doux et large.",
+      "Frotte la mine sur du papier de verre pour la remodeler sans gaspiller le crayon."
+     ],
+     "q": "Préfères-tu les pointes bien fines ou arrondies quand tu écris ou dessines ?",
+     "c": "Trace une rangée de traits pointe fine, puis pointe usée et côté de la mine, et compare."
+    },
+    "it": {
+     "t": "Temperare le matite",
+     "g": "Temperare con taglierino o temperino e scegliere la punta giusta per ogni uso.",
+     "p": [
+      "Il temperino è veloce e sicuro; il taglierino scopre una mina lunga per ombreggiare.",
+      "Una punta fine dà linee nette e dettagli; una punta smussata o il lato danno toni morbidi e ampi.",
+      "Strofina la punta sulla carta vetrata per rimodellarla senza sprecare matita."
+     ],
+     "q": "Preferisci punte affilate o arrotondate quando scrivi o disegni?",
+     "c": "Traccia una fila di linee con punta fine, poi smussata e di lato, e confronta."
+    },
+    "pt": {
+     "t": "Afiar os lápis",
+     "g": "Afiar com x-ato ou afia e escolher a ponta certa para cada tarefa.",
+     "p": [
+      "O afia é rápido e seguro; o x-ato deixa uma mina longa à vista para sombrear.",
+      "Uma ponta fina faz linhas nítidas e detalhe; uma ponta romba ou de lado dá tom suave e largo.",
+      "Esfrega a ponta numa lixa para a moldar sem gastar o lápis."
+     ],
+     "q": "Preferes pontas bem afiadas ou arredondadas quando escreves ou desenhas?",
+     "c": "Faz uma fila de linhas com ponta fina, depois romba e de lado, e compara."
+    },
+    "pt_BR": {
+     "t": "Apontando lápis",
+     "g": "Apontar com estilete ou apontador e escolher a ponta certa para cada tarefa.",
+     "p": [
+      "O apontador é rápido e seguro; o estilete deixa uma mina longa à mostra para sombrear.",
+      "Ponta fina faz linhas nítidas e detalhes; ponta gasta ou de lado dá tom suave e largo.",
+      "Esfregue a ponta numa lixa para modelar sem gastar o lápis."
+     ],
+     "q": "Você prefere pontas bem finas ou arredondadas quando escreve ou desenha?",
+     "c": "Faça uma fileira de linhas com ponta fina, depois gasta e de lado, e compare."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holding the pencil",
+     "g": "Switch between a writing grip for detail and an overhand grip for loose lines and shading.",
+     "p": [
+      "The writing grip, close to the tip, gives control for small details and edges.",
+      "The overhand grip, pencil under your palm, uses the side of the lead for broad tone.",
+      "Holding the pencil further back gives longer, looser and more relaxed lines."
+     ],
+     "q": "Which grip feels natural to you, and which one feels strange at first?",
+     "c": "Draw ten long lines with the overhand grip and ten short ones with the writing grip."
+    },
+    "de": {
+     "t": "Den Stift halten",
+     "g": "Zwischen Schreibgriff für Details und Obergriff für lockere Linien und Schatten wechseln.",
+     "p": [
+      "Der Schreibgriff nah an der Spitze gibt Kontrolle für kleine Details und Kanten.",
+      "Beim Obergriff liegt der Stift unter der Handfläche, die Minenseite macht breite Töne.",
+      "Hältst du den Stift weiter hinten, werden die Linien länger, lockerer und entspannter."
+     ],
+     "q": "Welcher Griff fühlt sich für dich natürlich an, welcher zuerst seltsam?",
+     "c": "Zieh zehn lange Linien im Obergriff und zehn kurze im Schreibgriff."
+    },
+    "es": {
+     "t": "Cómo sujetar el lápiz",
+     "g": "Alternar el agarre de escritura para detalle y el agarre por encima para líneas sueltas y sombras.",
+     "p": [
+      "El agarre de escritura, cerca de la punta, da control en detalles y bordes pequeños.",
+      "Con el agarre por encima, el lápiz bajo la palma, el lateral de la mina da tonos amplios.",
+      "Sujetar el lápiz más atrás da líneas más largas, sueltas y relajadas."
+     ],
+     "q": "¿Qué agarre te resulta natural y cuál te parece raro al principio?",
+     "c": "Traza diez líneas largas con agarre por encima y diez cortas con agarre de escritura."
+    },
+    "fr": {
+     "t": "Tenir son crayon",
+     "g": "Alterner la prise d'écriture pour le détail et la prise par-dessus pour les traits libres et l'ombre.",
+     "p": [
+      "La prise d'écriture, près de la pointe, donne du contrôle pour les petits détails.",
+      "Avec la prise par-dessus, crayon sous la paume, le côté de la mine donne des tons larges.",
+      "Tenir le crayon plus loin de la pointe donne des traits plus longs et plus détendus."
+     ],
+     "q": "Quelle prise te semble naturelle, et laquelle te paraît étrange au début ?",
+     "c": "Trace dix longs traits en prise par-dessus et dix courts en prise d'écriture."
+    },
+    "it": {
+     "t": "Impugnare la matita",
+     "g": "Alternare la presa da scrittura per i dettagli e la presa dall'alto per linee sciolte e ombre.",
+     "p": [
+      "La presa da scrittura, vicino alla punta, dà controllo su dettagli e contorni piccoli.",
+      "Con la presa dall'alto, matita sotto il palmo, il lato della mina crea toni ampi.",
+      "Tenere la matita più indietro dà linee più lunghe, sciolte e rilassate."
+     ],
+     "q": "Quale presa ti viene naturale e quale ti sembra strana all'inizio?",
+     "c": "Traccia dieci linee lunghe con la presa dall'alto e dieci corte con la presa da scrittura."
+    },
+    "pt": {
+     "t": "Segurar o lápis",
+     "g": "Alternar a pega de escrita para detalhe e a pega por cima para linhas soltas e sombras.",
+     "p": [
+      "A pega de escrita, perto da ponta, dá controlo em detalhes e contornos pequenos.",
+      "Na pega por cima, lápis debaixo da palma, a lateral da mina faz tons largos.",
+      "Segurar o lápis mais atrás dá linhas mais longas, soltas e descontraídas."
+     ],
+     "q": "Que pega te parece natural e qual estranhas ao início?",
+     "c": "Traça dez linhas longas com a pega por cima e dez curtas com a pega de escrita."
+    },
+    "pt_BR": {
+     "t": "Como segurar o lápis",
+     "g": "Alternar a pegada de escrita para detalhes e a pegada por cima para linhas soltas e sombras.",
+     "p": [
+      "A pegada de escrita, perto da ponta, dá controle em detalhes e contornos pequenos.",
+      "Na pegada por cima, lápis embaixo da palma, a lateral da mina faz tons largos.",
+      "Segurar o lápis mais para trás dá linhas mais longas, soltas e relaxadas."
+     ],
+     "q": "Qual pegada parece natural para você e qual é estranha no começo?",
+     "c": "Trace dez linhas longas com a pegada por cima e dez curtas com a pegada de escrita."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture and setup",
+     "g": "Set up a comfortable drawing space where you can see your whole drawing without distortion.",
+     "p": [
+      "Sit upright with both feet on the floor and relax your shoulders.",
+      "Tilt your paper or use a board on your knees: flat paper seen at an angle distorts proportions.",
+      "Light from the side opposite your drawing hand avoids shadows over your lines."
+     ],
+     "q": "Where do you usually draw, and what could make that spot more comfortable?",
+     "c": "Set up your drawing spot with tilted paper and good light, then draw a simple object for five minutes."
+    },
+    "de": {
+     "t": "Haltung und Arbeitsplatz",
+     "g": "Einen bequemen Platz einrichten, an dem du die ganze Zeichnung unverzerrt siehst.",
+     "p": [
+      "Sitz aufrecht, beide Füße auf dem Boden, und lass die Schultern locker.",
+      "Neig das Papier oder nimm ein Brett auf die Knie: flaches Papier schräg gesehen verzerrt Proportionen.",
+      "Licht von der Seite gegenüber der Zeichenhand verhindert Schatten auf deinen Linien."
+     ],
+     "q": "Wo zeichnest du meistens, und was würde den Platz bequemer machen?",
+     "c": "Richte deinen Platz mit geneigtem Papier und gutem Licht ein und zeichne fünf Minuten ein Objekt."
+    },
+    "es": {
+     "t": "Postura y espacio",
+     "g": "Preparar un lugar cómodo donde veas todo el dibujo sin deformaciones.",
+     "p": [
+      "Siéntate erguido, con los pies en el suelo y los hombros relajados.",
+      "Inclina el papel o usa un tablero en las rodillas: el papel plano visto en ángulo deforma las proporciones.",
+      "La luz desde el lado contrario a tu mano evita sombras sobre tus líneas."
+     ],
+     "q": "¿Dónde sueles dibujar y qué haría ese lugar más cómodo?",
+     "c": "Prepara tu rincón con papel inclinado y buena luz, y dibuja un objeto sencillo cinco minutos."
+    },
+    "fr": {
+     "t": "Posture et installation",
+     "g": "Installer un coin confortable où tu vois tout ton dessin sans déformation.",
+     "p": [
+      "Assieds-toi droit, les deux pieds au sol et les épaules détendues.",
+      "Incline ta feuille ou pose une planche sur tes genoux : une feuille à plat vue de biais déforme les proportions.",
+      "Une lumière venant du côté opposé à ta main évite les ombres sur tes traits."
+     ],
+     "q": "Où dessines-tu d'habitude, et qu'est-ce qui rendrait ce coin plus confortable ?",
+     "c": "Installe ton coin avec feuille inclinée et bonne lumière, puis dessine un objet simple pendant cinq minutes."
+    },
+    "it": {
+     "t": "Postura e postazione",
+     "g": "Preparare un posto comodo dove vedere tutto il disegno senza distorsioni.",
+     "p": [
+      "Siediti dritto, con i piedi a terra e le spalle rilassate.",
+      "Inclina il foglio o usa una tavoletta sulle ginocchia: il foglio piatto visto di sbieco deforma le proporzioni.",
+      "La luce dal lato opposto alla mano che disegna evita ombre sulle linee."
+     ],
+     "q": "Dove disegni di solito e cosa renderebbe quel posto più comodo?",
+     "c": "Prepara la postazione con foglio inclinato e buona luce, poi disegna un oggetto semplice per cinque minuti."
+    },
+    "pt": {
+     "t": "Postura e espaço",
+     "g": "Preparar um lugar confortável onde vejas o desenho todo sem distorções.",
+     "p": [
+      "Senta-te direito, com os pés no chão e os ombros relaxados.",
+      "Inclina o papel ou usa uma prancha nos joelhos: papel plano visto de lado distorce as proporções.",
+      "A luz do lado oposto à mão que desenha evita sombras sobre as linhas."
+     ],
+     "q": "Onde costumas desenhar e o que tornaria esse sítio mais confortável?",
+     "c": "Prepara o teu canto com papel inclinado e boa luz e desenha um objeto simples durante cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Postura e espaço",
+     "g": "Montar um lugar confortável onde você veja o desenho todo sem distorção.",
+     "p": [
+      "Sente-se ereto, com os pés no chão e os ombros relaxados.",
+      "Incline o papel ou use uma prancheta no colo: papel deitado visto de lado distorce as proporções.",
+      "Luz vindo do lado oposto à mão que desenha evita sombras sobre as linhas."
+     ],
+     "q": "Onde você costuma desenhar e o que deixaria esse lugar mais confortável?",
+     "c": "Monte seu cantinho com papel inclinado e boa luz e desenhe um objeto simples por cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warm-up lines",
+     "g": "Loosen up with straight lines, curves and circles drawn from the shoulder.",
+     "p": [
+      "Small lines come from the wrist; long, smooth lines come from the elbow and shoulder.",
+      "A two-minute warm-up makes every drawing after it more relaxed and confident.",
+      "Fill a page with parallel lines, waves, spirals and circles without stopping."
+     ],
+     "q": "Do you ever warm up before an activity, like stretching before sport?",
+     "c": "Do a three-minute warm-up page of lines, waves and circles, using your whole arm."
+    },
+    "de": {
+     "t": "Aufwärmlinien",
+     "g": "Mit geraden Linien, Kurven und Kreisen aus der Schulter locker werden.",
+     "p": [
+      "Kleine Linien kommen aus dem Handgelenk, lange, glatte aus Ellbogen und Schulter.",
+      "Zwei Minuten Aufwärmen machen jede folgende Zeichnung entspannter und sicherer.",
+      "Füll eine Seite ohne Pause mit parallelen Linien, Wellen, Spiralen und Kreisen."
+     ],
+     "q": "Wärmst du dich vor Aktivitäten auf, etwa mit Dehnen vor dem Sport?",
+     "c": "Mach eine dreiminütige Aufwärmseite mit Linien, Wellen und Kreisen aus dem ganzen Arm."
+    },
+    "es": {
+     "t": "Líneas de calentamiento",
+     "g": "Soltarte con rectas, curvas y círculos trazados desde el hombro.",
+     "p": [
+      "Las líneas pequeñas salen de la muñeca; las largas y suaves, del codo y el hombro.",
+      "Dos minutos de calentamiento hacen que cada dibujo posterior sea más suelto y seguro.",
+      "Llena una página de paralelas, ondas, espirales y círculos sin parar."
+     ],
+     "q": "¿Calientas antes de alguna actividad, como estirar antes del deporte?",
+     "c": "Haz una página de calentamiento de tres minutos con líneas, ondas y círculos usando todo el brazo."
+    },
+    "fr": {
+     "t": "Traits d'échauffement",
+     "g": "Se délier avec des droites, des courbes et des cercles tracés depuis l'épaule.",
+     "p": [
+      "Les petits traits viennent du poignet ; les longs traits fluides du coude et de l'épaule.",
+      "Deux minutes d'échauffement rendent chaque dessin suivant plus détendu et assuré.",
+      "Remplis une page de parallèles, vagues, spirales et cercles sans t'arrêter."
+     ],
+     "q": "T'échauffes-tu avant une activité, comme des étirements avant le sport ?",
+     "c": "Fais une page d'échauffement de trois minutes avec traits, vagues et cercles, en utilisant tout le bras."
+    },
+    "it": {
+     "t": "Linee di riscaldamento",
+     "g": "Sciogliersi con linee dritte, curve e cerchi tracciati dalla spalla.",
+     "p": [
+      "Le linee piccole partono dal polso; quelle lunghe e fluide da gomito e spalla.",
+      "Due minuti di riscaldamento rendono ogni disegno successivo più sciolto e sicuro.",
+      "Riempi una pagina di parallele, onde, spirali e cerchi senza fermarti."
+     ],
+     "q": "Ti riscaldi prima di qualche attività, come lo stretching prima dello sport?",
+     "c": "Fai una pagina di riscaldamento di tre minuti con linee, onde e cerchi usando tutto il braccio."
+    },
+    "pt": {
+     "t": "Linhas de aquecimento",
+     "g": "Soltar a mão com retas, curvas e círculos feitos a partir do ombro.",
+     "p": [
+      "As linhas pequenas vêm do pulso; as longas e suaves vêm do cotovelo e do ombro.",
+      "Dois minutos de aquecimento tornam cada desenho seguinte mais solto e seguro.",
+      "Enche uma página de paralelas, ondas, espirais e círculos sem parar."
+     ],
+     "q": "Costumas aquecer antes de alguma atividade, como alongar antes do desporto?",
+     "c": "Faz uma página de aquecimento de três minutos com linhas, ondas e círculos usando o braço todo."
+    },
+    "pt_BR": {
+     "t": "Linhas de aquecimento",
+     "g": "Soltar a mão com retas, curvas e círculos feitos a partir do ombro.",
+     "p": [
+      "Linhas pequenas vêm do pulso; as longas e suaves vêm do cotovelo e do ombro.",
+      "Dois minutos de aquecimento deixam cada desenho seguinte mais solto e seguro.",
+      "Encha uma página com paralelas, ondas, espirais e círculos sem parar."
+     ],
+     "q": "Você costuma aquecer antes de alguma atividade, como alongar antes do esporte?",
+     "c": "Faça uma página de aquecimento de três minutos com linhas, ondas e círculos usando o braço todo."
+    }
+   }
+  }
+ ]
+}

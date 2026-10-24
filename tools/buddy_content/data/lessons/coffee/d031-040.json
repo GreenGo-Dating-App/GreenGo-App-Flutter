@@ -1,0 +1,835 @@
+{
+ "topic": "coffee",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The moka pot",
+     "g": "Brew on the stovetop with a moka pot: filling, heat control and avoiding a burnt taste.",
+     "p": [
+      "The moka pot, made famous by Bialetti in 1930s Italy, pushes hot water up through the coffee using steam pressure.",
+      "Fill the base with hot water up to the valve, add fine-medium coffee without pressing, and use gentle heat.",
+      "When it starts to gurgle, take it off the heat and cool the base under cold water to stop a bitter, burnt finish."
+     ],
+     "q": "Is the moka pot a family classic in your home or something new to you?",
+     "c": "Make a moka pot starting with hot water in the base and stop it at the first gurgle; note how it tastes."
+    },
+    "de": {
+     "t": "Die Mokkakanne",
+     "g": "Brühe auf dem Herd mit der Mokkakanne: richtig befüllen, Hitze steuern und Brandgeschmack vermeiden.",
+     "p": [
+      "Die Mokkakanne, berühmt geworden durch Bialetti im Italien der 1930er, drückt heißes Wasser per Dampfdruck durch den Kaffee.",
+      "Füll den Unterteil mit heißem Wasser bis zum Ventil, gib mittelfeinen Kaffee ohne Andrücken hinein und heize sanft.",
+      "Sobald es gurgelt, nimm die Kanne vom Herd und kühl den Boden unter kaltem Wasser, damit nichts bitter wird."
+     ],
+     "q": "Ist die Mokkakanne bei dir zu Hause ein Familienklassiker oder etwas Neues?",
+     "c": "Bereite eine Mokkakanne mit heißem Wasser im Unterteil zu, stopp beim ersten Gurgeln und notiere den Geschmack."
+    },
+    "es": {
+     "t": "La cafetera moka",
+     "g": "Prepara café en el fuego con una moka: cómo llenarla, controlar el calor y evitar el sabor a quemado.",
+     "p": [
+      "La moka, popularizada por Bialetti en la Italia de los años 30, empuja agua caliente a través del café con presión de vapor.",
+      "Llena la base con agua caliente hasta la válvula, pon café de molienda media-fina sin apretarlo y usa fuego suave.",
+      "Cuando empiece a borbotear, retírala del fuego y enfría la base con agua fría para evitar un final amargo y quemado."
+     ],
+     "q": "¿La moka es un clásico familiar en tu casa o algo nuevo para ti?",
+     "c": "Prepara una moka con agua caliente en la base y retírala al primer borboteo; anota cómo sabe."
+    },
+    "fr": {
+     "t": "La cafetière italienne",
+     "g": "Prépare le café sur le feu avec une cafetière italienne : remplissage, contrôle du feu et pas de goût de brûlé.",
+     "p": [
+      "La cafetière moka, rendue célèbre par Bialetti dans l'Italie des années 1930, pousse l'eau chaude à travers le café par la vapeur.",
+      "Remplis le bas d'eau chaude jusqu'à la soupape, ajoute un café moulu moyen-fin sans tasser et chauffe doucement.",
+      "Quand elle commence à gargouiller, retire-la du feu et refroidis la base sous l'eau froide pour éviter l'amertume."
+     ],
+     "q": "La cafetière italienne est-elle un classique familial chez toi ou une nouveauté ?",
+     "c": "Prépare une cafetière italienne avec de l'eau chaude dans le bas, arrête-la au premier gargouillis et note le goût."
+    },
+    "it": {
+     "t": "La moka",
+     "g": "Prepara il caffè sul fornello con la moka: riempimento, controllo della fiamma e niente sapore di bruciato.",
+     "p": [
+      "La moka, resa celebre da Bialetti negli anni Trenta, spinge l'acqua calda attraverso il caffè grazie alla pressione del vapore.",
+      "Riempi la caldaia d'acqua calda fino alla valvola, metti il caffè macinato medio-fine senza pressarlo e usa fiamma bassa.",
+      "Quando inizia a gorgogliare, toglila dal fuoco e raffredda la base sotto l'acqua fredda per evitare il gusto di bruciato."
+     ],
+     "q": "La moka è un classico di famiglia a casa tua o una novità?",
+     "c": "Prepara una moka con acqua già calda nella caldaia e fermala al primo gorgoglio; annota com'è il gusto."
+    },
+    "pt": {
+     "t": "A cafeteira moka",
+     "g": "Prepara café no fogão com uma moka: encher, controlar o lume e evitar o sabor a queimado.",
+     "p": [
+      "A moka, tornada famosa pela Bialetti na Itália dos anos 30, empurra água quente pelo café com a pressão do vapor.",
+      "Enche a base com água quente até à válvula, junta café de moagem média-fina sem calcar e usa lume brando.",
+      "Quando começar a borbulhar, tira-a do lume e arrefece a base em água fria para evitar um final amargo e queimado."
+     ],
+     "q": "A moka é um clássico da família em tua casa ou é novidade para ti?",
+     "c": "Faz uma moka com água quente na base e tira-a ao primeiro borbulhar; aponta o sabor."
+    },
+    "pt_BR": {
+     "t": "A cafeteira italiana",
+     "g": "Prepare café no fogão com uma moka: encher, controlar o fogo e evitar o gosto de queimado.",
+     "p": [
+      "A moka, que ficou famosa com a Bialetti na Itália dos anos 30, empurra água quente pelo café com a pressão do vapor.",
+      "Encha a base com água quente até a válvula, coloque café de moagem média-fina sem compactar e use fogo baixo.",
+      "Quando começar a borbulhar, tire do fogo e esfrie a base em água fria para evitar um final amargo e queimado."
+     ],
+     "q": "A cafeteira italiana é um clássico da família na sua casa ou é novidade para você?",
+     "c": "Faça uma moka com água quente na base e tire do fogo no primeiro borbulhar; anote o sabor."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The AeroPress",
+     "g": "Get to know a small, versatile press and its standard and inverted methods.",
+     "p": [
+      "The AeroPress, invented by Alan Adler in 2005, combines steeping with gentle air pressure through a paper filter.",
+      "In the standard method you brew on top of the cup; in the inverted method you brew upside down, then flip it.",
+      "Short brew times, easy cleaning and endless recipes make it popular with travellers and home brewers alike."
+     ],
+     "q": "Do you like gadgets that let you experiment with many recipes?",
+     "c": "Try an AeroPress or watch a short demo, then write a simple recipe: coffee, water, time and method."
+    },
+    "de": {
+     "t": "Die AeroPress",
+     "g": "Lerne eine kleine, vielseitige Presse und ihre Standard- und invertierte Methode kennen.",
+     "p": [
+      "Die AeroPress, 2005 von Alan Adler erfunden, verbindet Ziehenlassen mit sanftem Luftdruck durch einen Papierfilter.",
+      "Bei der Standardmethode brühst du direkt über der Tasse, bei der invertierten kopfüber und drehst sie dann um.",
+      "Kurze Brühzeiten, leichte Reinigung und unzählige Rezepte machen sie bei Reisenden und zu Hause beliebt."
+     ],
+     "q": "Magst du Geräte, mit denen du viele Rezepte ausprobieren kannst?",
+     "c": "Probiere eine AeroPress oder sieh dir eine kurze Demo an und schreib ein Rezept: Kaffee, Wasser, Zeit, Methode."
+    },
+    "es": {
+     "t": "La AeroPress",
+     "g": "Conoce una prensa pequeña y versátil y sus métodos estándar e invertido.",
+     "p": [
+      "La AeroPress, inventada por Alan Adler en 2005, combina infusión con una suave presión de aire a través de un filtro de papel.",
+      "En el método estándar preparas sobre la taza; en el invertido, boca abajo, y luego le das la vuelta.",
+      "Tiempos cortos, limpieza fácil y recetas infinitas la hacen popular entre viajeros y aficionados en casa."
+     ],
+     "q": "¿Te gustan los aparatos que permiten experimentar con muchas recetas?",
+     "c": "Prueba una AeroPress o mira una demostración corta y escribe una receta: café, agua, tiempo y método."
+    },
+    "fr": {
+     "t": "L'AeroPress",
+     "g": "Découvre une petite presse polyvalente et ses méthodes standard et inversée.",
+     "p": [
+      "L'AeroPress, inventée par Alan Adler en 2005, associe infusion et légère pression d'air à travers un filtre papier.",
+      "En méthode standard, tu infuses directement sur la tasse ; en méthode inversée, à l'envers, puis tu la retournes.",
+      "Infusions courtes, nettoyage facile et recettes infinies la rendent populaire en voyage comme à la maison."
+     ],
+     "q": "Aimes-tu les objets qui permettent d'expérimenter plein de recettes ?",
+     "c": "Essaie une AeroPress ou regarde une courte démo, puis écris une recette simple : café, eau, temps et méthode."
+    },
+    "it": {
+     "t": "L'AeroPress",
+     "g": "Conosci una piccola pressa versatile e i suoi metodi standard e invertito.",
+     "p": [
+      "L'AeroPress, inventata da Alan Adler nel 2005, unisce infusione e una leggera pressione d'aria attraverso un filtro di carta.",
+      "Nel metodo standard prepari sopra la tazza; in quello invertito la usi capovolta e poi la giri.",
+      "Tempi brevi, pulizia facile e ricette infinite la rendono amata da chi viaggia e da chi prepara caffè a casa."
+     ],
+     "q": "Ti piacciono gli strumenti che permettono di sperimentare tante ricette?",
+     "c": "Prova un'AeroPress o guarda una breve demo, poi scrivi una ricetta semplice: caffè, acqua, tempo e metodo."
+    },
+    "pt": {
+     "t": "A AeroPress",
+     "g": "Conhece uma prensa pequena e versátil e os seus métodos normal e invertido.",
+     "p": [
+      "A AeroPress, inventada por Alan Adler em 2005, junta infusão e uma leve pressão de ar através de um filtro de papel.",
+      "No método normal preparas por cima da chávena; no invertido preparas de pernas para o ar e depois viras.",
+      "Tempos curtos, limpeza fácil e receitas sem fim tornam-na popular entre viajantes e em casa."
+     ],
+     "q": "Gostas de aparelhos que te deixam experimentar muitas receitas?",
+     "c": "Experimenta uma AeroPress ou vê uma demonstração curta e escreve uma receita: café, água, tempo e método."
+    },
+    "pt_BR": {
+     "t": "A AeroPress",
+     "g": "Conheça uma prensa pequena e versátil e seus métodos padrão e invertido.",
+     "p": [
+      "A AeroPress, inventada por Alan Adler em 2005, junta infusão e uma leve pressão de ar através de um filtro de papel.",
+      "No método padrão você prepara em cima da xícara; no invertido, de cabeça para baixo, e depois vira.",
+      "Preparo rápido, limpeza fácil e receitas sem fim fazem dela uma queridinha de viajantes e de quem passa café em casa."
+     ],
+     "q": "Você gosta de aparelhos que deixam experimentar várias receitas?",
+     "c": "Experimente uma AeroPress ou veja uma demonstração curta e escreva uma receita: café, água, tempo e método."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cold brew",
+     "g": "Make cold brew by steeping coarse coffee in cold water for many hours for a smooth, mellow drink.",
+     "p": [
+      "Mix coarse coffee with cold or room-temperature water and let it steep for roughly 12 to 24 hours.",
+      "Without heat, fewer acids and bitter compounds dissolve, so cold brew tastes smooth, sweet and low in acidity.",
+      "Strain it well and keep it in the fridge; many people brew a concentrate and dilute it with water or milk."
+     ],
+     "q": "Have you tried cold brew, and would you drink it in summer or all year round?",
+     "c": "Steep a small jar of coarse coffee in cold water overnight, strain it in the morning and taste it."
+    },
+    "de": {
+     "t": "Cold Brew",
+     "g": "Mach Cold Brew, indem du groben Kaffee viele Stunden in kaltem Wasser ziehen lässt, für ein sanftes Getränk.",
+     "p": [
+      "Misch groben Kaffee mit kaltem oder zimmerwarmem Wasser und lass ihn etwa 12 bis 24 Stunden ziehen.",
+      "Ohne Hitze lösen sich weniger Säuren und Bitterstoffe, darum schmeckt Cold Brew weich, süßlich und säurearm.",
+      "Gut abseihen und im Kühlschrank aufbewahren; viele machen ein Konzentrat und verdünnen es mit Wasser oder Milch."
+     ],
+     "q": "Hast du Cold Brew schon probiert, und würdest du es nur im Sommer oder das ganze Jahr trinken?",
+     "c": "Setz über Nacht ein kleines Glas groben Kaffee mit kaltem Wasser an, seih es morgens ab und probiere."
+    },
+    "es": {
+     "t": "Cold brew",
+     "g": "Prepara cold brew dejando café grueso en agua fría durante muchas horas para una bebida suave.",
+     "p": [
+      "Mezcla café de molienda gruesa con agua fría o del tiempo y déjalo reposar entre 12 y 24 horas, más o menos.",
+      "Sin calor se disuelven menos ácidos y compuestos amargos, así que sabe suave, dulce y con poca acidez.",
+      "Cuélalo bien y guárdalo en la nevera; mucha gente prepara un concentrado y lo diluye con agua o leche."
+     ],
+     "q": "¿Has probado el cold brew y lo tomarías solo en verano o todo el año?",
+     "c": "Deja un frasco pequeño de café grueso en agua fría toda la noche, cuélalo por la mañana y pruébalo."
+    },
+    "fr": {
+     "t": "Le cold brew",
+     "g": "Prépare un cold brew en laissant infuser du café grossier dans l'eau froide pendant des heures.",
+     "p": [
+      "Mélange un café moulu grossier avec de l'eau froide ou à température ambiante et laisse infuser 12 à 24 heures environ.",
+      "Sans chaleur, moins d'acides et de composés amers se dissolvent : le cold brew est doux, sucré et peu acide.",
+      "Filtre-le bien et garde-le au frigo ; beaucoup préparent un concentré à allonger d'eau ou de lait."
+     ],
+     "q": "As-tu déjà goûté au cold brew, et le boirais-tu seulement l'été ou toute l'année ?",
+     "c": "Laisse infuser un petit bocal de café grossier dans l'eau froide toute la nuit, filtre-le le matin et goûte."
+    },
+    "it": {
+     "t": "Il cold brew",
+     "g": "Prepara il cold brew lasciando in infusione caffè macinato grosso in acqua fredda per molte ore.",
+     "p": [
+      "Mescola caffè macinato grosso con acqua fredda o a temperatura ambiente e lascialo in infusione circa 12-24 ore.",
+      "Senza calore si sciolgono meno acidi e composti amari, quindi il cold brew è morbido, dolce e poco acido.",
+      "Filtralo bene e conservalo in frigo; molti preparano un concentrato da allungare con acqua o latte."
+     ],
+     "q": "Hai mai provato il cold brew, e lo berresti solo d'estate o tutto l'anno?",
+     "c": "Lascia un barattolino di caffè macinato grosso in acqua fredda per tutta la notte, filtralo al mattino e assaggia."
+    },
+    "pt": {
+     "t": "O cold brew",
+     "g": "Prepara cold brew deixando café de moagem grossa em água fria durante muitas horas, para uma bebida suave.",
+     "p": [
+      "Mistura café de moagem grossa com água fria ou à temperatura ambiente e deixa em infusão cerca de 12 a 24 horas.",
+      "Sem calor dissolvem-se menos ácidos e compostos amargos, por isso o cold brew é suave, doce e pouco ácido.",
+      "Coa bem e guarda no frigorífico; muita gente faz um concentrado e dilui-o com água ou leite."
+     ],
+     "q": "Já provaste cold brew, e bebias só no verão ou o ano todo?",
+     "c": "Deixa um frasco pequeno de café grosso em água fria durante a noite, coa de manhã e prova."
+    },
+    "pt_BR": {
+     "t": "Cold brew",
+     "g": "Prepare cold brew deixando café de moagem grossa em água fria por muitas horas, para uma bebida suave.",
+     "p": [
+      "Misture café de moagem grossa com água fria ou em temperatura ambiente e deixe em infusão por 12 a 24 horas.",
+      "Sem calor, menos ácidos e compostos amargos se dissolvem, por isso o cold brew fica suave, doce e pouco ácido.",
+      "Coe bem e guarde na geladeira; muita gente faz um concentrado e dilui com água ou leite."
+     ],
+     "q": "Você já provou cold brew, e tomaria só no verão ou o ano todo?",
+     "c": "Deixe um potinho de café grosso em água fria durante a noite, coe de manhã e prove."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Iced coffee vs cold brew",
+     "g": "Compare two different ways to enjoy coffee cold and how each one tastes.",
+     "p": [
+      "Iced coffee is brewed hot and then cooled, often by brewing straight onto ice so the melted ice becomes part of the water.",
+      "Brewing hot onto ice keeps the bright acidity and aromas, giving a crisp, refreshing drink in minutes.",
+      "Cold brew takes many hours and tastes rounder and mellower, with less acidity and a heavier feel."
+     ],
+     "q": "On a hot day, would you choose a bright iced coffee or a smooth cold brew?",
+     "c": "Brew a pour-over with half the water as ice in the jug, then compare it with cold brew if you have some."
+    },
+    "de": {
+     "t": "Eiskaffee oder Cold Brew",
+     "g": "Vergleiche zwei Wege, Kaffee kalt zu genießen, und wie jeder davon schmeckt.",
+     "p": [
+      "Iced Coffee wird heiß gebrüht und dann gekühlt, oft direkt auf Eis, sodass das Schmelzwasser Teil des Wassers wird.",
+      "Heiß auf Eis gebrüht bleiben Säure und Aromen lebendig: ein frisches, spritziges Getränk in wenigen Minuten.",
+      "Cold Brew braucht viele Stunden und schmeckt runder und milder, mit weniger Säure und mehr Fülle."
+     ],
+     "q": "Würdest du an einem heißen Tag einen frischen Eiskaffee oder ein sanftes Cold Brew wählen?",
+     "c": "Brüh einen Handfilter mit der Hälfte des Wassers als Eis in der Kanne und vergleiche ihn, wenn möglich, mit Cold Brew."
+    },
+    "es": {
+     "t": "Café con hielo vs cold brew",
+     "g": "Compara dos formas distintas de disfrutar el café frío y cómo sabe cada una.",
+     "p": [
+      "El café con hielo se prepara en caliente y se enfría, a menudo directamente sobre hielo, que pasa a ser parte del agua.",
+      "Prepararlo caliente sobre hielo conserva la acidez y los aromas: una bebida fresca y vibrante en minutos.",
+      "El cold brew tarda muchas horas y sabe más redondo y suave, con menos acidez y más cuerpo."
+     ],
+     "q": "En un día de calor, ¿elegirías un café con hielo brillante o un cold brew suave?",
+     "c": "Prepara un café de filtro con la mitad del agua en forma de hielo en la jarra y compáralo con cold brew si tienes."
+    },
+    "fr": {
+     "t": "Café glacé ou cold brew",
+     "g": "Compare deux façons de savourer le café froid et le goût de chacune.",
+     "p": [
+      "Le café glacé est infusé chaud puis refroidi, souvent directement sur des glaçons qui font partie de l'eau.",
+      "Infuser chaud sur de la glace garde l'acidité et les arômes : une boisson vive et rafraîchissante en quelques minutes.",
+      "Le cold brew demande des heures et donne un goût plus rond et doux, moins acide et plus enveloppant."
+     ],
+     "q": "Par une journée chaude, choisirais-tu un café glacé vif ou un cold brew tout doux ?",
+     "c": "Prépare un café filtre avec la moitié de l'eau sous forme de glaçons dans la verseuse, et compare avec un cold brew."
+    },
+    "it": {
+     "t": "Caffè freddo o cold brew",
+     "g": "Confronta due modi diversi di gustare il caffè freddo e il sapore di ciascuno.",
+     "p": [
+      "Il caffè freddo si prepara caldo e poi si raffredda, spesso direttamente sul ghiaccio, che diventa parte dell'acqua.",
+      "Estrarre caldo sul ghiaccio mantiene acidità e aromi: una bevanda vivace e rinfrescante in pochi minuti.",
+      "Il cold brew richiede molte ore e ha un gusto più rotondo e morbido, con meno acidità e più corpo."
+     ],
+     "q": "In una giornata calda sceglieresti un caffè freddo vivace o un cold brew morbido?",
+     "c": "Prepara un pour-over con metà dell'acqua sotto forma di ghiaccio nella caraffa e confrontalo con un cold brew."
+    },
+    "pt": {
+     "t": "Café com gelo vs cold brew",
+     "g": "Compara duas formas diferentes de beber café frio e o sabor de cada uma.",
+     "p": [
+      "O café com gelo é feito quente e depois arrefecido, muitas vezes diretamente sobre gelo, que passa a fazer parte da água.",
+      "Preparar quente sobre gelo mantém a acidez e os aromas: uma bebida viva e refrescante em minutos.",
+      "O cold brew demora muitas horas e sabe mais redondo e suave, com menos acidez e mais corpo."
+     ],
+     "q": "Num dia de calor, escolhias um café com gelo vivo ou um cold brew suave?",
+     "c": "Prepara um café de filtro com metade da água em gelo no jarro e compara-o com cold brew, se tiveres."
+    },
+    "pt_BR": {
+     "t": "Café gelado vs cold brew",
+     "g": "Compare dois jeitos diferentes de tomar café frio e o sabor de cada um.",
+     "p": [
+      "O café gelado é feito quente e depois resfriado, muitas vezes direto sobre o gelo, que vira parte da água.",
+      "Coar quente sobre o gelo preserva a acidez e os aromas: uma bebida viva e refrescante em minutos.",
+      "O cold brew leva muitas horas e fica mais redondo e suave, com menos acidez e mais corpo."
+     ],
+     "q": "Num dia quente, você escolheria um café gelado vivo ou um cold brew suave?",
+     "c": "Faça um coado com metade da água em gelo na jarra e compare com um cold brew, se tiver."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turkish coffee",
+     "g": "Discover Turkish coffee: very fine coffee simmered in a cezve and served with its foam.",
+     "p": [
+      "Coffee ground as fine as flour is mixed with cold water, and sugar if wanted, in a small pot called a cezve.",
+      "It is heated slowly until a thick foam rises, then poured into small cups without filtering.",
+      "The grounds settle at the bottom, and the cup often comes with water and a sweet; the tradition is on UNESCO's heritage list."
+     ],
+     "q": "Have you ever tasted Turkish coffee, or seen it served somewhere?",
+     "c": "Ask for Turkish coffee next time you see it, or try it at home, and wait a minute for the grounds to settle before sipping."
+    },
+    "de": {
+     "t": "Türkischer Kaffee",
+     "g": "Entdecke türkischen Kaffee: sehr fein gemahlen, im Cezve erhitzt und mit seinem Schaum serviert.",
+     "p": [
+      "Mehlfein gemahlener Kaffee wird mit kaltem Wasser und nach Wunsch Zucker in einem Kännchen namens Cezve gemischt.",
+      "Er wird langsam erhitzt, bis ein dichter Schaum aufsteigt, und dann ungefiltert in kleine Tassen gegossen.",
+      "Der Satz sinkt zu Boden, oft gibt es Wasser und etwas Süßes dazu; die Tradition steht auf der UNESCO-Kulturerbeliste."
+     ],
+     "q": "Hast du schon einmal türkischen Kaffee probiert oder gesehen, wie er serviert wird?",
+     "c": "Bestell beim nächsten Mal türkischen Kaffee oder mach ihn zu Hause, und warte eine Minute, bis sich der Satz setzt."
+    },
+    "es": {
+     "t": "El café turco",
+     "g": "Descubre el café turco: café muy fino calentado en un cezve y servido con su espuma.",
+     "p": [
+      "El café molido fino como harina se mezcla con agua fría, y azúcar si se quiere, en un cacito llamado cezve.",
+      "Se calienta despacio hasta que sube una espuma espesa y se sirve en tazas pequeñas sin filtrar.",
+      "Los posos se asientan en el fondo y suele acompañarse de agua y un dulce; la tradición es patrimonio de la UNESCO."
+     ],
+     "q": "¿Has probado alguna vez el café turco o lo has visto servir en algún sitio?",
+     "c": "Pide café turco la próxima vez que lo veas o prepáralo en casa, y espera un minuto a que se asienten los posos."
+    },
+    "fr": {
+     "t": "Le café turc",
+     "g": "Découvre le café turc : un café très fin chauffé dans un cezve et servi avec sa mousse.",
+     "p": [
+      "Le café moulu aussi fin que de la farine est mélangé à de l'eau froide, et du sucre si on veut, dans un petit pot, le cezve.",
+      "On le chauffe lentement jusqu'à ce qu'une mousse épaisse monte, puis on le verse sans filtrer dans de petites tasses.",
+      "Le marc se dépose au fond, et on sert souvent de l'eau et une douceur ; la tradition est inscrite au patrimoine de l'UNESCO."
+     ],
+     "q": "As-tu déjà goûté un café turc, ou vu comment on le sert ?",
+     "c": "Commande un café turc la prochaine fois ou prépare-le chez toi, et attends une minute que le marc se dépose."
+    },
+    "it": {
+     "t": "Il caffè turco",
+     "g": "Scopri il caffè turco: caffè finissimo scaldato in un cezve e servito con la sua schiuma.",
+     "p": [
+      "Il caffè macinato fine come farina si mescola con acqua fredda, e zucchero a piacere, in un pentolino detto cezve.",
+      "Si scalda lentamente finché sale una schiuma densa, poi si versa senza filtrare in tazzine piccole.",
+      "I fondi si depositano sul fondo e spesso arrivano acqua e un dolcetto; la tradizione è patrimonio UNESCO."
+     ],
+     "q": "Hai mai assaggiato il caffè turco o visto come viene servito?",
+     "c": "Ordina un caffè turco la prossima volta o preparalo a casa, e aspetta un minuto che i fondi si depositino."
+    },
+    "pt": {
+     "t": "O café turco",
+     "g": "Descobre o café turco: café muito fino aquecido num cezve e servido com a sua espuma.",
+     "p": [
+      "O café moído fino como farinha mistura-se com água fria, e açúcar se quiseres, num pequeno bule chamado cezve.",
+      "Aquece-se devagar até subir uma espuma espessa e serve-se em chávenas pequenas, sem filtrar.",
+      "As borras assentam no fundo e costuma vir com água e um doce; a tradição é património imaterial da UNESCO."
+     ],
+     "q": "Já provaste café turco, ou viste como é servido?",
+     "c": "Pede um café turco da próxima vez ou faz em casa, e espera um minuto para as borras assentarem."
+    },
+    "pt_BR": {
+     "t": "O café turco",
+     "g": "Descubra o café turco: café bem fino aquecido num cezve e servido com sua espuma.",
+     "p": [
+      "O café moído fino como farinha é misturado com água fria, e açúcar se quiser, numa pequena panela chamada cezve.",
+      "Ele é aquecido devagar até subir uma espuma espessa e servido em xícaras pequenas, sem coar.",
+      "A borra assenta no fundo e costuma vir com água e um docinho; a tradição é patrimônio imaterial da UNESCO."
+     ],
+     "q": "Você já provou café turco, ou viu como ele é servido?",
+     "c": "Peça um café turco na próxima oportunidade ou faça em casa, e espere um minuto para a borra assentar."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vietnamese phin",
+     "g": "Meet the phin: a small metal filter, slow drips and sweet condensed milk.",
+     "p": [
+      "A phin sits on top of the cup; you add coffee, press it lightly with the insert and pour hot water over it.",
+      "The coffee drips slowly for about four to five minutes, often onto a layer of sweetened condensed milk.",
+      "Stir and drink it hot, or pour it over ice for cà phê sữa đá, one of Vietnam's best-loved drinks."
+     ],
+     "q": "Have you tried Vietnamese coffee, or does condensed milk in coffee sound tempting?",
+     "c": "Make a strong small coffee and stir in a spoon of condensed milk, hot or over ice, then describe the taste."
+    },
+    "de": {
+     "t": "Der vietnamesische Phin",
+     "g": "Lerne den Phin kennen: ein kleiner Metallfilter, langsame Tropfen und süße Kondensmilch.",
+     "p": [
+      "Der Phin sitzt auf der Tasse; du gibst Kaffee hinein, drückst ihn mit dem Einsatz leicht an und gießt heißes Wasser auf.",
+      "Der Kaffee tropft etwa vier bis fünf Minuten langsam durch, oft auf eine Schicht gesüßter Kondensmilch.",
+      "Umrühren und heiß trinken oder über Eis gießen: cà phê sữa đá, eines der beliebtesten Getränke Vietnams."
+     ],
+     "q": "Hast du vietnamesischen Kaffee probiert, oder klingt Kondensmilch im Kaffee verlockend?",
+     "c": "Mach einen kleinen starken Kaffee, rühr einen Löffel gesüßte Kondensmilch ein, heiß oder auf Eis, und beschreib den Geschmack."
+    },
+    "es": {
+     "t": "El phin vietnamita",
+     "g": "Conoce el phin: un pequeño filtro metálico, goteo lento y leche condensada dulce.",
+     "p": [
+      "El phin se coloca sobre la taza; pones el café, lo presionas un poco con la pieza interior y viertes agua caliente.",
+      "El café gotea despacio durante unos cuatro o cinco minutos, a menudo sobre una capa de leche condensada.",
+      "Remueve y tómalo caliente, o viértelo sobre hielo para un cà phê sữa đá, una de las bebidas favoritas de Vietnam."
+     ],
+     "q": "¿Has probado el café vietnamita o te tienta la leche condensada en el café?",
+     "c": "Prepara un café corto y fuerte, añade una cucharada de leche condensada, caliente o con hielo, y describe el sabor."
+    },
+    "fr": {
+     "t": "Le phin vietnamien",
+     "g": "Découvre le phin : un petit filtre en métal, des gouttes lentes et du lait concentré sucré.",
+     "p": [
+      "Le phin se pose sur la tasse ; tu ajoutes le café, le tasses légèrement avec le disque et verses l'eau chaude.",
+      "Le café s'écoule lentement pendant quatre à cinq minutes, souvent sur une couche de lait concentré sucré.",
+      "Remue et bois chaud, ou verse sur des glaçons pour un cà phê sữa đá, l'une des boissons préférées du Vietnam."
+     ],
+     "q": "As-tu goûté le café vietnamien, ou le lait concentré dans le café te tente-t-il ?",
+     "c": "Prépare un petit café serré, ajoute une cuillère de lait concentré sucré, chaud ou sur glace, et décris le goût."
+    },
+    "it": {
+     "t": "Il phin vietnamita",
+     "g": "Conosci il phin: un piccolo filtro di metallo, gocce lente e latte condensato zuccherato.",
+     "p": [
+      "Il phin si appoggia sulla tazza; metti il caffè, lo premi appena con il disco interno e versi l'acqua calda.",
+      "Il caffè gocciola lentamente per circa quattro o cinque minuti, spesso su uno strato di latte condensato.",
+      "Mescola e bevilo caldo, o versalo sul ghiaccio per un cà phê sữa đá, una delle bevande più amate del Vietnam."
+     ],
+     "q": "Hai provato il caffè vietnamita, o il latte condensato nel caffè ti tenta?",
+     "c": "Prepara un caffè corto e forte, aggiungi un cucchiaio di latte condensato, caldo o con ghiaccio, e descrivi il gusto."
+    },
+    "pt": {
+     "t": "O phin vietnamita",
+     "g": "Conhece o phin: um pequeno filtro de metal, gotas lentas e leite condensado.",
+     "p": [
+      "O phin assenta em cima da chávena; pões o café, pressionas levemente com a peça interior e vertes água quente.",
+      "O café pinga devagar durante quatro a cinco minutos, muitas vezes sobre uma camada de leite condensado.",
+      "Mexe e bebe quente, ou deita sobre gelo para um cà phê sữa đá, uma das bebidas mais queridas do Vietname."
+     ],
+     "q": "Já provaste café vietnamita, ou leite condensado no café parece-te tentador?",
+     "c": "Faz um café curto e forte, junta uma colher de leite condensado, quente ou com gelo, e descreve o sabor."
+    },
+    "pt_BR": {
+     "t": "O phin vietnamita",
+     "g": "Conheça o phin: um pequeno filtro de metal, gotas lentas e leite condensado.",
+     "p": [
+      "O phin fica em cima da xícara; você coloca o café, pressiona de leve com a peça interna e despeja água quente.",
+      "O café pinga devagar por quatro a cinco minutos, muitas vezes sobre uma camada de leite condensado.",
+      "Mexa e tome quente, ou despeje sobre gelo para um cà phê sữa đá, uma das bebidas mais amadas do Vietnã."
+     ],
+     "q": "Você já provou café vietnamita, ou leite condensado no café parece tentador?",
+     "c": "Faça um café curto e forte, misture uma colher de leite condensado, quente ou com gelo, e descreva o sabor."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The siphon brewer",
+     "g": "Watch the siphon at work: vacuum brewing with two glass chambers, science you can see.",
+     "p": [
+      "Water heats in the lower chamber until vapour pressure pushes it up into the top chamber with the coffee.",
+      "After a short steep the heat is removed, the lower chamber cools and a vacuum pulls the coffee back down through a filter.",
+      "Siphons date back to the 1830s in Europe and are still loved, especially in Japan, for their clean, aromatic cups."
+     ],
+     "q": "Does brewing that looks like a science experiment appeal to you?",
+     "c": "Watch a siphon video and explain in your own words why the water rises and then falls back down."
+    },
+    "de": {
+     "t": "Der Vakuumbereiter",
+     "g": "Sieh dem Siphon bei der Arbeit zu: Vakuumbrühen mit zwei Glaskammern, Wissenschaft zum Zuschauen.",
+     "p": [
+      "Wasser erhitzt sich in der unteren Kammer, bis der Dampfdruck es nach oben zum Kaffee drückt.",
+      "Nach kurzer Ziehzeit wird die Hitze entfernt, die untere Kammer kühlt ab und ein Vakuum zieht den Kaffee durch einen Filter zurück.",
+      "Siphons gibt es in Europa seit den 1830ern; besonders in Japan sind sie für klare, aromatische Tassen beliebt."
+     ],
+     "q": "Reizt dich eine Zubereitung, die wie ein Wissenschaftsexperiment aussieht?",
+     "c": "Schau dir ein Siphon-Video an und erkläre mit eigenen Worten, warum das Wasser steigt und wieder sinkt."
+    },
+    "es": {
+     "t": "La cafetera de sifón",
+     "g": "Mira el sifón en acción: preparación al vacío con dos cámaras de vidrio, ciencia a la vista.",
+     "p": [
+      "El agua se calienta en la cámara inferior hasta que la presión del vapor la empuja a la superior, donde está el café.",
+      "Tras una breve infusión se retira el calor, la cámara inferior se enfría y el vacío hace bajar el café por un filtro.",
+      "Los sifones existen en Europa desde la década de 1830 y siguen siendo muy apreciados, sobre todo en Japón."
+     ],
+     "q": "¿Te atrae una forma de preparar café que parece un experimento de ciencias?",
+     "c": "Mira un vídeo de sifón y explica con tus palabras por qué el agua sube y luego vuelve a bajar."
+    },
+    "fr": {
+     "t": "La cafetière à dépression",
+     "g": "Regarde le siphon à l'œuvre : une infusion sous vide en deux ballons de verre, de la science en direct.",
+     "p": [
+      "L'eau chauffe dans le ballon du bas jusqu'à ce que la pression de vapeur la pousse dans le haut, avec le café.",
+      "Après une courte infusion, on coupe la chaleur, le bas refroidit et le vide aspire le café à travers un filtre.",
+      "Les siphons existent en Europe depuis les années 1830 et sont toujours très appréciés, surtout au Japon."
+     ],
+     "q": "Une méthode qui ressemble à une expérience de sciences te tente-t-elle ?",
+     "c": "Regarde une vidéo de siphon et explique avec tes mots pourquoi l'eau monte puis redescend."
+    },
+    "it": {
+     "t": "Il sifone",
+     "g": "Guarda il sifone all'opera: estrazione sottovuoto con due camere di vetro, scienza da osservare.",
+     "p": [
+      "L'acqua si scalda nella camera inferiore finché la pressione del vapore la spinge in quella superiore, con il caffè.",
+      "Dopo una breve infusione si toglie il calore, la camera bassa si raffredda e il vuoto risucchia il caffè attraverso un filtro.",
+      "I sifoni esistono in Europa dagli anni Trenta dell'Ottocento e sono ancora amati, soprattutto in Giappone."
+     ],
+     "q": "Ti attira un metodo che sembra un esperimento di scienze?",
+     "c": "Guarda un video del sifone e spiega con parole tue perché l'acqua sale e poi riscende."
+    },
+    "pt": {
+     "t": "A cafeteira de sifão",
+     "g": "Vê o sifão a trabalhar: preparação a vácuo com duas câmaras de vidro, ciência à vista.",
+     "p": [
+      "A água aquece na câmara de baixo até a pressão do vapor a empurrar para a de cima, onde está o café.",
+      "Após uma curta infusão tira-se o calor, a câmara de baixo arrefece e o vácuo puxa o café de volta por um filtro.",
+      "Os sifões existem na Europa desde a década de 1830 e continuam muito apreciados, sobretudo no Japão."
+     ],
+     "q": "Uma preparação que parece uma experiência de ciências atrai-te?",
+     "c": "Vê um vídeo de sifão e explica por palavras tuas porque é que a água sobe e depois volta a descer."
+    },
+    "pt_BR": {
+     "t": "A cafeteira sifão",
+     "g": "Veja o sifão em ação: preparo a vácuo com duas câmaras de vidro, ciência diante dos olhos.",
+     "p": [
+      "A água esquenta na câmara de baixo até a pressão do vapor empurrá-la para a de cima, onde está o café.",
+      "Depois de uma infusão curta, tira-se o calor, a câmara de baixo esfria e o vácuo puxa o café de volta por um filtro.",
+      "Os sifões existem na Europa desde a década de 1830 e continuam muito apreciados, principalmente no Japão."
+     ],
+     "q": "Um preparo que parece experiência de ciências te atrai?",
+     "c": "Assista a um vídeo de sifão e explique com suas palavras por que a água sobe e depois desce."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The percolator",
+     "g": "Learn a classic stovetop method and how to keep it from over-extracting.",
+     "p": [
+      "A percolator boils water at the bottom and sends it up a tube, where it showers over the coffee again and again.",
+      "Because the brewed coffee keeps cycling through the grounds, it easily turns bitter and over-extracted.",
+      "Use a coarse grind, low to medium heat and a short brewing time, and stop as soon as the colour looks right."
+     ],
+     "q": "Does anyone you know still use a percolator, perhaps at home or when camping?",
+     "c": "If you have a percolator, brew it for a shorter time than usual and compare the bitterness with your normal cup."
+    },
+    "de": {
+     "t": "Der Perkolator",
+     "g": "Lerne eine klassische Herdmethode kennen und wie du Überextraktion vermeidest.",
+     "p": [
+      "Ein Perkolator kocht unten Wasser und schickt es durch ein Steigrohr, von wo es immer wieder über den Kaffee rieselt.",
+      "Weil der fertige Kaffee ständig durch das Pulver zirkuliert, wird er leicht bitter und überextrahiert.",
+      "Nimm groben Mahlgrad, niedrige bis mittlere Hitze und eine kurze Brühzeit, und hör auf, wenn die Farbe passt."
+     ],
+     "q": "Kennst du jemanden, der noch einen Perkolator benutzt, vielleicht zu Hause oder beim Camping?",
+     "c": "Hast du einen Perkolator, brüh kürzer als sonst und vergleiche die Bitterkeit mit deiner üblichen Tasse."
+    },
+    "es": {
+     "t": "La cafetera de percolación",
+     "g": "Conoce un método clásico de fogón y cómo evitar que se sobreextraiga.",
+     "p": [
+      "El percolador hierve el agua abajo y la sube por un tubo, desde donde cae una y otra vez sobre el café.",
+      "Como el café ya hecho sigue pasando por los posos, se vuelve fácilmente amargo y sobreextraído.",
+      "Usa molienda gruesa, fuego bajo o medio y un tiempo corto, y para en cuanto el color sea el adecuado."
+     ],
+     "q": "¿Conoces a alguien que aún use un percolador, en casa o de acampada?",
+     "c": "Si tienes un percolador, prepáralo menos tiempo de lo habitual y compara el amargor con tu taza normal."
+    },
+    "fr": {
+     "t": "Le percolateur",
+     "g": "Découvre une méthode classique sur le feu et comment éviter la sur-extraction.",
+     "p": [
+      "Le percolateur fait bouillir l'eau en bas et la fait monter par un tube, d'où elle arrose le café encore et encore.",
+      "Comme le café déjà prêt repasse sans cesse dans le marc, il devient facilement amer et sur-extrait.",
+      "Prends une mouture grossière, un feu doux à moyen et un temps court, et arrête dès que la couleur te plaît."
+     ],
+     "q": "Connais-tu quelqu'un qui utilise encore un percolateur, à la maison ou en camping ?",
+     "c": "Si tu as un percolateur, raccourcis l'infusion et compare l'amertume avec ta tasse habituelle."
+    },
+    "it": {
+     "t": "Il percolatore",
+     "g": "Scopri un classico metodo da fornello e come evitare la sovraestrazione.",
+     "p": [
+      "Il percolatore fa bollire l'acqua in basso e la spinge su per un tubo, da cui ricade sul caffè ancora e ancora.",
+      "Poiché il caffè già pronto continua a ripassare nei fondi, diventa facilmente amaro e sovraestratto.",
+      "Usa macinatura grossa, fiamma bassa o media e tempi brevi, e fermati appena il colore è giusto."
+     ],
+     "q": "Conosci qualcuno che usa ancora un percolatore, a casa o in campeggio?",
+     "c": "Se hai un percolatore, prepara il caffè per meno tempo del solito e confronta l'amarezza con la tua tazza abituale."
+    },
+    "pt": {
+     "t": "O percolador",
+     "g": "Conhece um método clássico de fogão e como evitar que extraia demais.",
+     "p": [
+      "O percolador ferve a água em baixo e fá-la subir por um tubo, de onde cai sobre o café uma e outra vez.",
+      "Como o café já feito continua a passar pelas borras, fica facilmente amargo e sobre-extraído.",
+      "Usa moagem grossa, lume brando a médio e pouco tempo, e para assim que a cor estiver certa."
+     ],
+     "q": "Conheces alguém que ainda use um percolador, em casa ou a acampar?",
+     "c": "Se tiveres um percolador, prepara-o durante menos tempo do que o habitual e compara o amargor com a chávena normal."
+    },
+    "pt_BR": {
+     "t": "O percolador",
+     "g": "Conheça um método clássico de fogão e como evitar que ele extraia demais.",
+     "p": [
+      "O percolador ferve a água embaixo e a faz subir por um tubo, de onde ela cai sobre o café de novo e de novo.",
+      "Como o café já pronto continua passando pela borra, ele fica amargo e superextraído com facilidade.",
+      "Use moagem grossa, fogo baixo a médio e pouco tempo, e pare assim que a cor estiver boa."
+     ],
+     "q": "Você conhece alguém que ainda usa percolador, em casa ou acampando?",
+     "c": "Se tiver um percolador, prepare por menos tempo que o normal e compare o amargor com a sua xícara de sempre."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clever and immersion drippers",
+     "g": "Combine steeping and filtering in one device with an immersion dripper.",
+     "p": [
+      "An immersion dripper looks like a pour-over cone but has a valve that keeps water in while the coffee steeps.",
+      "After steeping, you set it on a cup or press a switch, the valve opens and the coffee drains through paper.",
+      "You get the easy, even extraction of a French press with the clean, silt-free cup of a paper filter."
+     ],
+     "q": "Do you prefer methods where you can step away, or do you enjoy pouring by hand?",
+     "c": "Steep coffee for 3 minutes in any cup, then pour it through a paper filter and compare it with a French press cup."
+    },
+    "de": {
+     "t": "Clever- und Immersionsfilter",
+     "g": "Verbinde Ziehenlassen und Filtern in einem Gerät mit einem Immersionsfilter.",
+     "p": [
+      "Ein Immersionsfilter sieht aus wie ein Kegelfilter, hat aber ein Ventil, das das Wasser hält, während der Kaffee zieht.",
+      "Danach stellst du ihn auf eine Tasse oder drückst einen Schalter, das Ventil öffnet sich und der Kaffee läuft durchs Papier.",
+      "Du bekommst die einfache, gleichmäßige Extraktion der French Press mit der klaren Tasse eines Papierfilters."
+     ],
+     "q": "Magst du Methoden, bei denen du kurz weggehen kannst, oder gießt du gern von Hand?",
+     "c": "Lass Kaffee 3 Minuten in einer Tasse ziehen, gieß ihn durch einen Papierfilter und vergleiche mit French-Press-Kaffee."
+    },
+    "es": {
+     "t": "Goteros Clever y de inmersión",
+     "g": "Combina infusión y filtrado en un solo aparato con un gotero de inmersión.",
+     "p": [
+      "Un gotero de inmersión parece un cono de filtro, pero tiene una válvula que retiene el agua mientras el café reposa.",
+      "Tras la infusión lo pones sobre una taza o pulsas un interruptor, la válvula se abre y el café cae por el papel.",
+      "Obtienes la extracción fácil y pareja de la prensa francesa con la taza limpia y sin posos de un filtro de papel."
+     ],
+     "q": "¿Prefieres métodos que te dejan alejarte un momento o disfrutas vertiendo a mano?",
+     "c": "Deja reposar café 3 minutos en una taza, pásalo por un filtro de papel y compáralo con uno de prensa francesa."
+    },
+    "fr": {
+     "t": "Drippers Clever et à immersion",
+     "g": "Associe infusion et filtration dans un seul appareil grâce à un dripper à immersion.",
+     "p": [
+      "Un dripper à immersion ressemble à un cône de café filtre, mais une valve retient l'eau pendant que le café infuse.",
+      "Ensuite, tu le poses sur une tasse ou actionnes un bouton : la valve s'ouvre et le café s'écoule à travers le papier.",
+      "Tu obtiens l'extraction simple et homogène de la cafetière à piston avec la tasse nette d'un filtre papier."
+     ],
+     "q": "Préfères-tu les méthodes qui te laissent t'éloigner, ou aimes-tu verser à la main ?",
+     "c": "Laisse infuser du café 3 minutes dans une tasse, verse-le à travers un filtre papier et compare avec un café piston."
+    },
+    "it": {
+     "t": "Dripper Clever e a immersione",
+     "g": "Unisci infusione e filtrazione in un solo strumento con un dripper a immersione.",
+     "p": [
+      "Un dripper a immersione sembra un cono da pour-over, ma ha una valvola che trattiene l'acqua mentre il caffè è in infusione.",
+      "Dopo l'infusione lo appoggi su una tazza o premi un pulsante, la valvola si apre e il caffè scende attraverso la carta.",
+      "Ottieni l'estrazione facile e uniforme della French press con la tazza pulita, senza fondi, del filtro di carta."
+     ],
+     "q": "Preferisci metodi che ti lasciano allontanare un attimo o ti piace versare a mano?",
+     "c": "Lascia il caffè in infusione 3 minuti in una tazza, filtralo con la carta e confrontalo con un caffè della French press."
+    },
+    "pt": {
+     "t": "Filtros Clever e de imersão",
+     "g": "Junta infusão e filtragem num só aparelho com um filtro de imersão.",
+     "p": [
+      "Um filtro de imersão parece um cone de filtro manual, mas tem uma válvula que segura a água enquanto o café repousa.",
+      "Depois da infusão pousas sobre uma chávena ou carregas num botão, a válvula abre e o café escorre pelo papel.",
+      "Tens a extração fácil e uniforme da prensa francesa com a chávena limpa, sem borras, de um filtro de papel."
+     ],
+     "q": "Preferes métodos que te deixam afastar um pouco ou gostas de verter à mão?",
+     "c": "Deixa café em infusão 3 minutos numa chávena, passa-o por um filtro de papel e compara com um café de prensa."
+    },
+    "pt_BR": {
+     "t": "Coadores Clever e de imersão",
+     "g": "Junte infusão e filtragem num só aparelho com um coador de imersão.",
+     "p": [
+      "Um coador de imersão parece um cone de coado, mas tem uma válvula que segura a água enquanto o café fica em infusão.",
+      "Depois da infusão você coloca sobre a xícara ou aperta um botão, a válvula abre e o café escorre pelo papel.",
+      "Você tem a extração fácil e uniforme da prensa francesa com a xícara limpa, sem borra, do filtro de papel."
+     ],
+     "q": "Você prefere métodos que deixam você se afastar um pouco ou gosta de despejar à mão?",
+     "c": "Deixe café em infusão 3 minutos numa xícara, passe por um filtro de papel e compare com um café de prensa."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a method for you",
+     "g": "Match brewing methods to your taste, your time and your budget.",
+     "p": [
+      "For a full, rich cup with little effort, try a French press, a moka pot or an immersion dripper.",
+      "For a clean, bright cup and a calm ritual, choose a pour-over cone or a flat-bottom dripper.",
+      "Short on time or travelling? An AeroPress, a phin or a good drip machine can all make a great cup."
+     ],
+     "q": "Which brewing method from this month fits your daily routine best, and why?",
+     "c": "Write down your top two methods and plan which one you will use on a busy day and on a slow weekend morning."
+    },
+    "de": {
+     "t": "Die richtige Methode für dich",
+     "g": "Finde Zubereitungen, die zu deinem Geschmack, deiner Zeit und deinem Budget passen.",
+     "p": [
+      "Für eine volle, kräftige Tasse mit wenig Aufwand probiere French Press, Mokkakanne oder Immersionsfilter.",
+      "Für eine klare, lebhafte Tasse und ein ruhiges Ritual wähle einen Kegel- oder Flachbodenfilter.",
+      "Wenig Zeit oder unterwegs? AeroPress, Phin oder eine gute Filtermaschine machen ebenfalls tollen Kaffee."
+     ],
+     "q": "Welche Zubereitung aus diesem Monat passt am besten zu deinem Alltag, und warum?",
+     "c": "Schreib deine zwei Lieblingsmethoden auf und plane, welche du an einem vollen Tag und an einem ruhigen Wochenende nutzt."
+    },
+    "es": {
+     "t": "Elige tu método",
+     "g": "Encuentra el método que encaja con tu gusto, tu tiempo y tu presupuesto.",
+     "p": [
+      "Para una taza intensa y con cuerpo sin mucho esfuerzo, prueba la prensa francesa, la moka o un gotero de inmersión.",
+      "Para una taza limpia y brillante y un ritual tranquilo, elige un cono de filtro o un gotero de fondo plano.",
+      "¿Poco tiempo o de viaje? Una AeroPress, un phin o una buena cafetera de goteo dan una gran taza."
+     ],
+     "q": "¿Qué método de este mes encaja mejor con tu rutina diaria y por qué?",
+     "c": "Anota tus dos métodos favoritos y decide cuál usarás en un día ajetreado y cuál en una mañana tranquila de fin de semana."
+    },
+    "fr": {
+     "t": "Choisir ta méthode",
+     "g": "Associe les méthodes à ton goût, à ton temps et à ton budget.",
+     "p": [
+      "Pour une tasse ronde et corsée sans effort, essaie la cafetière à piston, l'italienne ou un dripper à immersion.",
+      "Pour une tasse nette et vive et un rituel calme, choisis un cône filtre ou un dripper à fond plat.",
+      "Peu de temps ou en voyage ? Une AeroPress, un phin ou une bonne cafetière filtre font une excellente tasse."
+     ],
+     "q": "Quelle méthode de ce mois correspond le mieux à ta routine, et pourquoi ?",
+     "c": "Note tes deux méthodes préférées et décide laquelle utiliser un jour chargé et laquelle un matin calme de week-end."
+    },
+    "it": {
+     "t": "Scegliere il metodo giusto",
+     "g": "Abbina i metodi di estrazione al tuo gusto, al tuo tempo e al tuo budget.",
+     "p": [
+      "Per una tazza piena e ricca con poco sforzo, prova French press, moka o dripper a immersione.",
+      "Per una tazza pulita e vivace e un rituale tranquillo, scegli un cono pour-over o un dripper a fondo piatto.",
+      "Poco tempo o in viaggio? AeroPress, phin o una buona macchina a filtro fanno comunque un'ottima tazza."
+     ],
+     "q": "Quale metodo di questo mese si adatta meglio alla tua routine, e perché?",
+     "c": "Scrivi i tuoi due metodi preferiti e decidi quale usare in una giornata piena e quale in una mattina tranquilla nel weekend."
+    },
+    "pt": {
+     "t": "Escolher o teu método",
+     "g": "Junta os métodos ao teu gosto, ao teu tempo e ao teu orçamento.",
+     "p": [
+      "Para uma chávena cheia e intensa com pouco esforço, experimenta a prensa francesa, a moka ou um filtro de imersão.",
+      "Para uma chávena limpa e viva e um ritual calmo, escolhe um cone de filtro ou um filtro de fundo plano.",
+      "Pouco tempo ou em viagem? Uma AeroPress, um phin ou uma boa máquina de filtro fazem uma ótima chávena."
+     ],
+     "q": "Que método deste mês encaixa melhor na tua rotina, e porquê?",
+     "c": "Escreve os teus dois métodos preferidos e decide qual usas num dia cheio e qual numa manhã calma de fim de semana."
+    },
+    "pt_BR": {
+     "t": "Escolhendo o seu método",
+     "g": "Combine os métodos com o seu gosto, o seu tempo e o seu orçamento.",
+     "p": [
+      "Para uma xícara encorpada e intensa com pouco esforço, experimente prensa francesa, moka ou coador de imersão.",
+      "Para uma xícara limpa e viva e um ritual calmo, escolha um coador cônico ou um de fundo chato.",
+      "Pouco tempo ou viajando? AeroPress, phin ou uma boa cafeteira elétrica também fazem uma ótima xícara."
+     ],
+     "q": "Qual método deste mês combina mais com a sua rotina, e por quê?",
+     "c": "Anote seus dois métodos favoritos e decida qual usar num dia corrido e qual numa manhã tranquila de fim de semana."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "world_cuisines",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thailand: balancing flavours",
+     "g": "Understand the harmony of sweet, sour, salty and spicy at the heart of Thai cooking.",
+     "p": [
+      "Fish sauce brings saltiness, lime and tamarind bring sourness, palm sugar brings sweetness.",
+      "Fresh chilies add heat, and a good dish keeps all four in lively balance.",
+      "Many Thai tables offer a small condiment set so each person can adjust their own bowl."
+     ],
+     "q": "Do you like to adjust your food at the table, or eat it exactly as the cook made it?",
+     "c": "Make a dipping sauce with lime, a little sugar, salt or soy sauce and chili, and balance it to taste."
+    },
+    "de": {
+     "t": "Thailand: Aromen im Gleichgewicht",
+     "g": "Verstehe die Harmonie von süß, sauer, salzig und scharf im Herzen der Thai-Küche.",
+     "p": [
+      "Fischsauce bringt Salz, Limette und Tamarinde bringen Säure, Palmzucker bringt Süße.",
+      "Frische Chilis sorgen für Schärfe, und ein gutes Gericht hält alle vier lebendig in Balance.",
+      "Auf vielen Thai-Tischen steht ein kleines Würzset, damit jeder seine Schale selbst abschmecken kann."
+     ],
+     "q": "Würzt du dein Essen gern am Tisch nach, oder isst du es genau so, wie es gekocht wurde?",
+     "c": "Rühr einen Dip aus Limette, etwas Zucker, Salz oder Sojasauce und Chili an und balanciere ihn aus."
+    },
+    "es": {
+     "t": "Tailandia: equilibrar sabores",
+     "g": "Entiende la armonía de dulce, ácido, salado y picante en el corazón de la cocina tailandesa.",
+     "p": [
+      "La salsa de pescado aporta lo salado, la lima y el tamarindo lo ácido, el azúcar de palma lo dulce.",
+      "Los chiles frescos dan el picante, y un buen plato mantiene los cuatro en equilibrio vivo.",
+      "Muchas mesas tailandesas tienen un juego de condimentos para que cada uno ajuste su plato."
+     ],
+     "q": "¿Te gusta ajustar la comida en la mesa o comerla tal como la hizo quien cocinó?",
+     "c": "Prepara una salsa con lima, un poco de azúcar, sal o soja y chile, y equilíbrala a tu gusto."
+    },
+    "fr": {
+     "t": "Thaïlande : l'équilibre des saveurs",
+     "g": "Comprends l'harmonie du sucré, de l'acide, du salé et du piquant au cœur de la cuisine thaïe.",
+     "p": [
+      "La sauce de poisson apporte le salé, le citron vert et le tamarin l'acidité, le sucre de palme la douceur.",
+      "Le piment frais ajoute du piquant, et un bon plat garde les quatre saveurs en équilibre.",
+      "Beaucoup de tables thaïes proposent un petit set de condiments pour ajuster son propre bol."
+     ],
+     "q": "Tu aimes ajuster ton plat à table, ou le manger exactement comme le cuisinier l'a fait ?",
+     "c": "Prépare une sauce avec citron vert, un peu de sucre, du sel ou de la sauce soja et du piment, et équilibre-la."
+    },
+    "it": {
+     "t": "Thailandia: equilibrio dei sapori",
+     "g": "Capisci l'armonia di dolce, acido, salato e piccante al cuore della cucina thailandese.",
+     "p": [
+      "La salsa di pesce dà il salato, lime e tamarindo l'acidità, lo zucchero di palma la dolcezza.",
+      "Il peperoncino fresco porta il piccante, e un buon piatto tiene i quattro gusti in equilibrio.",
+      "Su molte tavole thai c'è un piccolo set di condimenti per regolare la propria ciotola."
+     ],
+     "q": "Ti piace regolare il cibo a tavola, o lo mangi esattamente come l'ha fatto il cuoco?",
+     "c": "Prepara una salsa con lime, un po' di zucchero, sale o salsa di soia e peperoncino, e bilanciala."
+    },
+    "pt": {
+     "t": "Tailândia: equilibrar sabores",
+     "g": "Percebe a harmonia entre doce, ácido, salgado e picante no coração da cozinha tailandesa.",
+     "p": [
+      "O molho de peixe dá o salgado, a lima e o tamarindo a acidez, o açúcar de palma a doçura.",
+      "As malaguetas frescas trazem picante, e um bom prato mantém os quatro em equilíbrio.",
+      "Muitas mesas tailandesas têm um pequeno conjunto de condimentos para cada um ajustar a sua taça."
+     ],
+     "q": "Gostas de ajustar a comida à mesa ou de a comer tal como o cozinheiro a fez?",
+     "c": "Faz um molho com lima, um pouco de açúcar, sal ou molho de soja e malagueta, e equilibra-o a gosto."
+    },
+    "pt_BR": {
+     "t": "Tailândia: equilíbrio de sabores",
+     "g": "Entenda a harmonia entre doce, azedo, salgado e picante no coração da culinária tailandesa.",
+     "p": [
+      "O molho de peixe traz o salgado, o limão e o tamarindo a acidez, o açúcar de palma a doçura.",
+      "A pimenta fresca traz ardência, e um bom prato mantém os quatro em equilíbrio.",
+      "Muitas mesas tailandesas têm um kit de condimentos para cada um ajustar a própria tigela."
+     ],
+     "q": "Você gosta de ajustar a comida na mesa ou come do jeito que o cozinheiro fez?",
+     "c": "Faça um molho com limão, um pouco de açúcar, sal ou shoyu e pimenta, e equilibre a gosto."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thailand: curries and pad thai",
+     "g": "Get to know Thailand's famous curries and its best-known noodle dish.",
+     "p": [
+      "Green curry gets its colour from fresh green chilies; red curry from dried red chilies.",
+      "Massaman curry is milder, with peanuts, potatoes and warm spices like cardamom and cinnamon.",
+      "Pad thai is stir-fried rice noodles with tamarind, egg, bean sprouts and crushed peanuts."
+     ],
+     "q": "Which sounds better to you right now: a creamy curry or a plate of stir-fried noodles?",
+     "c": "Stir-fry noodles with an egg and a splash of tamarind or lime, then top with peanuts."
+    },
+    "de": {
+     "t": "Thailand: Currys und Pad Thai",
+     "g": "Lerne Thailands berühmte Currys und sein bekanntestes Nudelgericht kennen.",
+     "p": [
+      "Grünes Curry verdankt seine Farbe frischen grünen Chilis, rotes Curry getrockneten roten Chilis.",
+      "Massaman-Curry ist milder, mit Erdnüssen, Kartoffeln und warmen Gewürzen wie Kardamom und Zimt.",
+      "Pad Thai sind gebratene Reisnudeln mit Tamarinde, Ei, Sojasprossen und gehackten Erdnüssen."
+     ],
+     "q": "Was klingt für dich gerade besser: ein cremiges Curry oder ein Teller gebratene Nudeln?",
+     "c": "Brate Nudeln mit einem Ei und einem Schuss Tamarinde oder Limette an und streue Erdnüsse darüber."
+    },
+    "es": {
+     "t": "Tailandia: currys y pad thai",
+     "g": "Conoce los famosos currys de Tailandia y su plato de fideos más conocido.",
+     "p": [
+      "El curry verde debe su color a chiles verdes frescos; el rojo, a chiles rojos secos.",
+      "El curry massaman es más suave, con cacahuetes, patatas y especias como cardamomo y canela.",
+      "El pad thai son fideos de arroz salteados con tamarindo, huevo, brotes de soja y cacahuete picado."
+     ],
+     "q": "¿Qué te apetece más ahora: un curry cremoso o un plato de fideos salteados?",
+     "c": "Saltea fideos con un huevo y un chorrito de tamarindo o lima, y termina con cacahuetes."
+    },
+    "fr": {
+     "t": "Thaïlande : currys et pad thaï",
+     "g": "Découvre les célèbres currys thaïs et le plat de nouilles le plus connu du pays.",
+     "p": [
+      "Le curry vert doit sa couleur aux piments verts frais ; le curry rouge, aux piments rouges séchés.",
+      "Le curry massaman est plus doux, avec cacahuètes, pommes de terre, cardamome et cannelle.",
+      "Le pad thaï, ce sont des nouilles de riz sautées au tamarin, à l'œuf, aux pousses de soja et aux cacahuètes."
+     ],
+     "q": "Qu'est-ce qui te tente le plus maintenant : un curry crémeux ou des nouilles sautées ?",
+     "c": "Fais sauter des nouilles avec un œuf et un trait de tamarin ou de citron vert, puis ajoute des cacahuètes."
+    },
+    "it": {
+     "t": "Thailandia: curry e pad thai",
+     "g": "Conosci i famosi curry thailandesi e il piatto di noodles più noto del paese.",
+     "p": [
+      "Il curry verde prende colore dai peperoncini verdi freschi; quello rosso dai peperoncini rossi secchi.",
+      "Il curry massaman è più delicato, con arachidi, patate e spezie calde come cardamomo e cannella.",
+      "Il pad thai sono noodles di riso saltati con tamarindo, uovo, germogli di soia e arachidi tritate."
+     ],
+     "q": "Cosa ti attira di più adesso: un curry cremoso o un piatto di noodles saltati?",
+     "c": "Salta dei noodles con un uovo e un goccio di tamarindo o lime, poi completa con arachidi."
+    },
+    "pt": {
+     "t": "Tailândia: caris e pad thai",
+     "g": "Conhece os famosos caris tailandeses e o prato de massa mais conhecido do país.",
+     "p": [
+      "O caril verde deve a cor às malaguetas verdes frescas; o vermelho, às malaguetas vermelhas secas.",
+      "O caril massaman é mais suave, com amendoim, batata e especiarias como cardamomo e canela.",
+      "O pad thai é massa de arroz salteada com tamarindo, ovo, rebentos de soja e amendoim picado."
+     ],
+     "q": "O que te apetece mais agora: um caril cremoso ou um prato de massa salteada?",
+     "c": "Salteia massa com um ovo e um pouco de tamarindo ou lima, e termina com amendoim."
+    },
+    "pt_BR": {
+     "t": "Tailândia: curries e pad thai",
+     "g": "Conheça os famosos curries tailandeses e o prato de macarrão mais conhecido do país.",
+     "p": [
+      "O curry verde deve a cor às pimentas verdes frescas; o vermelho, às pimentas vermelhas secas.",
+      "O curry massaman é mais suave, com amendoim, batata e especiarias como cardamomo e canela.",
+      "O pad thai é macarrão de arroz salteado com tamarindo, ovo, broto de feijão e amendoim picado."
+     ],
+     "q": "O que você prefere agora: um curry cremoso ou um prato de macarrão salteado?",
+     "c": "Salteie macarrão com um ovo e um pouco de tamarindo ou limão, e finalize com amendoim."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vietnam: fresh and herbal",
+     "g": "Taste Vietnam's love of freshness through soups, rolls and plates of herbs.",
+     "p": [
+      "Pho is a fragrant noodle soup from northern Vietnam, with broth simmered for hours.",
+      "Fresh spring rolls wrap herbs, rice noodles and shrimp or tofu in soft rice paper.",
+      "A plate of herbs like mint, Thai basil and coriander is often served on the side to add as you like."
+     ],
+     "q": "Do you prefer food that feels fresh and light, or rich and warming?",
+     "c": "Roll a fresh spring roll with rice paper, lettuce, herbs and any filling you have at home."
+    },
+    "de": {
+     "t": "Vietnam: Frisch und kräuterreich",
+     "g": "Schmecke Vietnams Liebe zur Frische in Suppen, Rollen und Kräutertellern.",
+     "p": [
+      "Pho ist eine duftende Nudelsuppe aus dem Norden Vietnams, deren Brühe stundenlang köchelt.",
+      "Frische Sommerrollen hüllen Kräuter, Reisnudeln und Garnelen oder Tofu in weiches Reispapier.",
+      "Oft gibt es einen Kräuterteller mit Minze, Thai-Basilikum und Koriander zum Selbstzugeben."
+     ],
+     "q": "Magst du lieber Essen, das frisch und leicht ist, oder reichhaltig und wärmend?",
+     "c": "Rolle eine Sommerrolle aus Reispapier, Salat, Kräutern und einer Füllung, die du zu Hause hast."
+    },
+    "es": {
+     "t": "Vietnam: fresco y herbal",
+     "g": "Saborea el amor de Vietnam por lo fresco en sopas, rollitos y platos de hierbas.",
+     "p": [
+      "El pho es una sopa aromática de fideos del norte de Vietnam, con caldo cocido durante horas.",
+      "Los rollitos frescos envuelven hierbas, fideos de arroz y gambas o tofu en papel de arroz.",
+      "Suele servirse un plato de hierbas como menta, albahaca tailandesa y cilantro para añadir al gusto."
+     ],
+     "q": "¿Prefieres comida fresca y ligera o contundente y reconfortante?",
+     "c": "Enrolla un rollito fresco con papel de arroz, lechuga, hierbas y el relleno que tengas en casa."
+    },
+    "fr": {
+     "t": "Vietnam : frais et herbacé",
+     "g": "Goûte l'amour du Vietnam pour la fraîcheur à travers soupes, rouleaux et assiettes d'herbes.",
+     "p": [
+      "Le phở est une soupe de nouilles parfumée du nord du Vietnam, au bouillon mijoté pendant des heures.",
+      "Les rouleaux de printemps frais enveloppent herbes, vermicelles et crevettes ou tofu dans la galette de riz.",
+      "Une assiette d'herbes, menthe, basilic thaï, coriandre, est souvent servie à part, à ajouter à volonté."
+     ],
+     "q": "Tu préfères une cuisine fraîche et légère, ou riche et réconfortante ?",
+     "c": "Roule un rouleau de printemps avec galette de riz, salade, herbes et une garniture de ton frigo."
+    },
+    "it": {
+     "t": "Vietnam: fresco ed erbaceo",
+     "g": "Assapora l'amore del Vietnam per la freschezza tra zuppe, involtini e piatti di erbe.",
+     "p": [
+      "Il pho è una zuppa di noodles profumata del nord del Vietnam, con brodo cotto per ore.",
+      "Gli involtini freschi avvolgono erbe, spaghetti di riso e gamberi o tofu nella carta di riso.",
+      "Spesso si serve a parte un piatto di erbe come menta, basilico thai e coriandolo da aggiungere a piacere."
+     ],
+     "q": "Preferisci cibo fresco e leggero o ricco e avvolgente?",
+     "c": "Arrotola un involtino fresco con carta di riso, lattuga, erbe e un ripieno che hai in casa."
+    },
+    "pt": {
+     "t": "Vietname: fresco e aromático",
+     "g": "Prova o amor do Vietname pela frescura em sopas, rolinhos e pratos de ervas.",
+     "p": [
+      "O pho é uma sopa aromática de massa do norte do Vietname, com caldo cozido durante horas.",
+      "Os rolinhos frescos envolvem ervas, massa de arroz e camarão ou tofu em papel de arroz.",
+      "Costuma vir à parte um prato de ervas como hortelã, manjericão tailandês e coentros, a gosto."
+     ],
+     "q": "Preferes comida fresca e leve ou rica e reconfortante?",
+     "c": "Enrola um rolinho fresco com papel de arroz, alface, ervas e o recheio que tiveres em casa."
+    },
+    "pt_BR": {
+     "t": "Vietnã: fresco e cheio de ervas",
+     "g": "Prove o amor do Vietnã pelo frescor em sopas, rolinhos e pratos de ervas.",
+     "p": [
+      "O pho é uma sopa aromática de macarrão do norte do Vietnã, com caldo cozido por horas.",
+      "Os rolinhos frescos envolvem ervas, macarrão de arroz e camarão ou tofu em papel de arroz.",
+      "Costuma vir à parte um prato de ervas como hortelã, manjericão tailandês e coentro, a gosto."
+     ],
+     "q": "Você prefere comida fresca e leve ou encorpada e reconfortante?",
+     "c": "Enrole um rolinho fresco com papel de arroz, alface, ervas e o recheio que tiver em casa."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Korea: kimchi and banchan",
+     "g": "Discover Korea's famous fermented cabbage and the small dishes that fill the table.",
+     "p": [
+      "Kimchi is usually napa cabbage fermented with chili flakes, garlic, ginger and salt.",
+      "Kimjang, the communal making of kimchi for winter, is recognised by UNESCO.",
+      "Banchan are many small side dishes shared by everyone at the table alongside rice."
+     ],
+     "q": "If you could invent one new banchan, what would you put in it?",
+     "c": "Taste a fermented food today, like kimchi, sauerkraut or pickles, and describe its flavour."
+    },
+    "de": {
+     "t": "Korea: Kimchi und Banchan",
+     "g": "Entdecke Koreas berühmten fermentierten Kohl und die kleinen Gerichte, die den Tisch füllen.",
+     "p": [
+      "Kimchi ist meist Chinakohl, fermentiert mit Chiliflocken, Knoblauch, Ingwer und Salz.",
+      "Kimjang, das gemeinsame Kimchi-Machen für den Winter, ist von der UNESCO anerkannt.",
+      "Banchan sind viele kleine Beilagen, die alle am Tisch zum Reis teilen."
+     ],
+     "q": "Wenn du ein neues Banchan erfinden könntest, was käme hinein?",
+     "c": "Probiere heute etwas Fermentiertes wie Kimchi, Sauerkraut oder saure Gurken und beschreibe den Geschmack."
+    },
+    "es": {
+     "t": "Corea: kimchi y banchan",
+     "g": "Descubre la famosa col fermentada de Corea y los platitos que llenan la mesa.",
+     "p": [
+      "El kimchi suele ser col china fermentada con chile en escamas, ajo, jengibre y sal.",
+      "El kimjang, la elaboración comunitaria de kimchi para el invierno, está reconocido por la UNESCO.",
+      "Los banchan son muchos platitos de acompañamiento que todos comparten con el arroz."
+     ],
+     "q": "Si pudieras inventar un banchan nuevo, ¿qué llevaría?",
+     "c": "Prueba hoy un alimento fermentado, como kimchi, chucrut o encurtidos, y describe su sabor."
+    },
+    "fr": {
+     "t": "Corée : kimchi et banchan",
+     "g": "Découvre le célèbre chou fermenté de Corée et les petits plats qui garnissent la table.",
+     "p": [
+      "Le kimchi est le plus souvent du chou chinois fermenté avec piment, ail, gingembre et sel.",
+      "Le kimjang, préparation collective du kimchi pour l'hiver, est reconnu par l'UNESCO.",
+      "Les banchan sont de nombreux petits plats d'accompagnement que tout le monde partage avec le riz."
+     ],
+     "q": "Si tu pouvais inventer un nouveau banchan, que mettrais-tu dedans ?",
+     "c": "Goûte aujourd'hui un aliment fermenté, kimchi, choucroute ou cornichons, et décris sa saveur."
+    },
+    "it": {
+     "t": "Corea: kimchi e banchan",
+     "g": "Scopri il famoso cavolo fermentato coreano e i piattini che riempiono la tavola.",
+     "p": [
+      "Il kimchi è di solito cavolo cinese fermentato con peperoncino in fiocchi, aglio, zenzero e sale.",
+      "Il kimjang, la preparazione collettiva del kimchi per l'inverno, è riconosciuto dall'UNESCO.",
+      "I banchan sono tanti piccoli contorni condivisi da tutti a tavola insieme al riso."
+     ],
+     "q": "Se potessi inventare un nuovo banchan, cosa ci metteresti?",
+     "c": "Assaggia oggi un cibo fermentato, come kimchi, crauti o sottaceti, e descrivi il suo sapore."
+    },
+    "pt": {
+     "t": "Coreia: kimchi e banchan",
+     "g": "Descobre a famosa couve fermentada da Coreia e os pratinhos que enchem a mesa.",
+     "p": [
+      "O kimchi é geralmente couve-chinesa fermentada com malagueta em flocos, alho, gengibre e sal.",
+      "O kimjang, a preparação comunitária de kimchi para o inverno, é reconhecido pela UNESCO.",
+      "Os banchan são muitos pratinhos de acompanhamento partilhados por todos à mesa com o arroz."
+     ],
+     "q": "Se pudesses inventar um banchan novo, o que levaria?",
+     "c": "Prova hoje um alimento fermentado, como kimchi, chucrute ou pickles, e descreve o sabor."
+    },
+    "pt_BR": {
+     "t": "Coreia: kimchi e banchan",
+     "g": "Descubra o famoso repolho fermentado da Coreia e os pratinhos que enchem a mesa.",
+     "p": [
+      "O kimchi geralmente é acelga chinesa fermentada com pimenta em flocos, alho, gengibre e sal.",
+      "O kimjang, o preparo comunitário de kimchi para o inverno, é reconhecido pela UNESCO.",
+      "Os banchan são vários pratinhos de acompanhamento que todos dividem à mesa com o arroz."
+     ],
+     "q": "Se você pudesse inventar um banchan novo, o que ele levaria?",
+     "c": "Prove hoje um alimento fermentado, como kimchi, chucrute ou picles, e descreva o sabor."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greece: the Mediterranean plate",
+     "g": "Explore Greek home cooking, built on olive oil, fresh produce and the sea.",
+     "p": [
+      "Greece is one of the world's great olive oil producers, and it flows generously in its kitchens.",
+      "A village salad combines tomato, cucumber, onion, olives and a slab of feta cheese.",
+      "Feta is a brined cheese made mainly from sheep's milk, and grilled fish is a coastal favourite."
+     ],
+     "q": "What would be on your plate for a perfect summer lunch by the sea?",
+     "c": "Make a simple Greek-style salad and dress it only with good olive oil, salt and oregano."
+    },
+    "de": {
+     "t": "Griechenland: Der Mittelmeerteller",
+     "g": "Entdecke die griechische Hausmannskost aus Olivenöl, frischen Produkten und dem Meer.",
+     "p": [
+      "Griechenland gehört zu den großen Olivenölproduzenten der Welt, und es fließt großzügig in der Küche.",
+      "Ein Bauernsalat vereint Tomate, Gurke, Zwiebel, Oliven und ein Stück Feta.",
+      "Feta ist ein Salzlakenkäse, vorwiegend aus Schafsmilch, und gegrillter Fisch ist an der Küste beliebt."
+     ],
+     "q": "Was läge auf deinem Teller für ein perfektes Sommer-Mittagessen am Meer?",
+     "c": "Mach einen einfachen Salat nach griechischer Art und würze ihn nur mit gutem Olivenöl, Salz und Oregano."
+    },
+    "es": {
+     "t": "Grecia: el plato mediterráneo",
+     "g": "Explora la cocina casera griega, basada en aceite de oliva, productos frescos y el mar.",
+     "p": [
+      "Grecia es uno de los grandes productores de aceite de oliva, que se usa con generosidad en su cocina.",
+      "La ensalada griega combina tomate, pepino, cebolla, aceitunas y un trozo de queso feta.",
+      "El feta es un queso en salmuera hecho sobre todo con leche de oveja; el pescado a la brasa triunfa en la costa."
+     ],
+     "q": "¿Qué habría en tu plato para un almuerzo de verano perfecto junto al mar?",
+     "c": "Prepara una ensalada griega sencilla y alíñala solo con buen aceite de oliva, sal y orégano."
+    },
+    "fr": {
+     "t": "Grèce : l'assiette méditerranéenne",
+     "g": "Explore la cuisine familiale grecque, fondée sur l'huile d'olive, les produits frais et la mer.",
+     "p": [
+      "La Grèce est l'un des grands producteurs d'huile d'olive, utilisée généreusement en cuisine.",
+      "La salade villageoise associe tomate, concombre, oignon, olives et une tranche de feta.",
+      "La feta est un fromage en saumure surtout au lait de brebis, et le poisson grillé règne sur les côtes."
+     ],
+     "q": "Qu'y aurait-il dans ton assiette pour un déjeuner d'été parfait au bord de la mer ?",
+     "c": "Prépare une salade grecque simple et assaisonne-la seulement d'huile d'olive, de sel et d'origan."
+    },
+    "it": {
+     "t": "Grecia: il piatto mediterraneo",
+     "g": "Esplora la cucina casalinga greca, fondata su olio d'oliva, prodotti freschi e mare.",
+     "p": [
+      "La Grecia è tra i grandi produttori di olio d'oliva, usato con generosità in cucina.",
+      "L'insalata greca unisce pomodoro, cetriolo, cipolla, olive e una fetta di feta.",
+      "La feta è un formaggio in salamoia fatto soprattutto con latte di pecora; il pesce alla griglia regna sulla costa."
+     ],
+     "q": "Cosa ci sarebbe nel tuo piatto per un pranzo estivo perfetto in riva al mare?",
+     "c": "Prepara un'insalata greca semplice e condiscila solo con buon olio d'oliva, sale e origano."
+    },
+    "pt": {
+     "t": "Grécia: o prato mediterrânico",
+     "g": "Explora a cozinha caseira grega, assente no azeite, nos produtos frescos e no mar.",
+     "p": [
+      "A Grécia é um dos grandes produtores de azeite do mundo, usado com generosidade na cozinha.",
+      "A salada grega junta tomate, pepino, cebola, azeitonas e uma fatia de queijo feta.",
+      "O feta é um queijo em salmoura feito sobretudo com leite de ovelha; o peixe grelhado reina na costa."
+     ],
+     "q": "O que teria o teu prato para um almoço de verão perfeito à beira-mar?",
+     "c": "Faz uma salada grega simples e tempera-a só com bom azeite, sal e orégãos."
+    },
+    "pt_BR": {
+     "t": "Grécia: o prato mediterrâneo",
+     "g": "Explore a cozinha caseira grega, baseada no azeite, em produtos frescos e no mar.",
+     "p": [
+      "A Grécia é um dos grandes produtores de azeite do mundo, usado com generosidade na cozinha.",
+      "A salada grega junta tomate, pepino, cebola, azeitonas e uma fatia de queijo feta.",
+      "O feta é um queijo curado em salmoura, feito principalmente com leite de ovelha; peixe grelhado reina no litoral."
+     ],
+     "q": "O que teria no seu prato para um almoço de verão perfeito à beira-mar?",
+     "c": "Faça uma salada grega simples e tempere só com um bom azeite, sal e orégano."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turkey: mezes and kebabs",
+     "g": "Discover Turkish mezes and the many regional styles of kebab.",
+     "p": [
+      "Mezes are small starters such as yogurt dips, spicy tomato ezme and stuffed vine leaves.",
+      "Adana kebab is spicy minced meat grilled on a wide skewer, named after its home city.",
+      "Iskender kebab, from Bursa, layers thin meat slices over bread with tomato sauce and yogurt."
+     ],
+     "q": "Which would you choose to start a meal: a creamy dip or a fresh, spicy salad?",
+     "c": "Mix thick yogurt with grated cucumber, garlic, mint and salt for a quick meze dip."
+    },
+    "de": {
+     "t": "Türkei: Meze und Kebabs",
+     "g": "Entdecke türkische Meze und die vielen regionalen Kebab-Stile.",
+     "p": [
+      "Meze sind kleine Vorspeisen wie Joghurt-Dips, scharfe Tomaten-Ezme und gefüllte Weinblätter.",
+      "Adana-Kebab ist scharfes Hackfleisch vom breiten Spieß, benannt nach seiner Heimatstadt.",
+      "Iskender-Kebab aus Bursa schichtet dünne Fleischscheiben auf Brot mit Tomatensauce und Joghurt."
+     ],
+     "q": "Was würdest du zum Auftakt wählen: einen cremigen Dip oder einen frischen, scharfen Salat?",
+     "c": "Rühre dicken Joghurt mit geriebener Gurke, Knoblauch, Minze und Salz zu einem schnellen Meze-Dip."
+    },
+    "es": {
+     "t": "Turquía: mezes y kebabs",
+     "g": "Descubre los mezes turcos y los muchos estilos regionales de kebab.",
+     "p": [
+      "Los mezes son entrantes pequeños como salsas de yogur, ezme de tomate picante y hojas de parra rellenas.",
+      "El kebab Adana es carne picada especiada a la brasa en una brocheta ancha, con nombre de su ciudad.",
+      "El kebab Iskender, de Bursa, pone finas lonchas de carne sobre pan con salsa de tomate y yogur."
+     ],
+     "q": "¿Con qué empezarías una comida: una salsa cremosa o una ensalada fresca y picante?",
+     "c": "Mezcla yogur espeso con pepino rallado, ajo, menta y sal para un meze rápido."
+    },
+    "fr": {
+     "t": "Turquie : mezzés et kebabs",
+     "g": "Découvre les mezzés turcs et les nombreux styles régionaux de kebab.",
+     "p": [
+      "Les mezzés sont de petites entrées : sauces au yaourt, ezme de tomate épicé, feuilles de vigne farcies.",
+      "Le kebab Adana est de la viande hachée épicée grillée sur une large brochette, du nom de sa ville.",
+      "Le kebab Iskender, de Bursa, dispose de fines tranches de viande sur du pain, sauce tomate et yaourt."
+     ],
+     "q": "Pour commencer un repas, tu choisirais une sauce crémeuse ou une salade fraîche et piquante ?",
+     "c": "Mélange du yaourt épais avec du concombre râpé, de l'ail, de la menthe et du sel pour un mezzé express."
+    },
+    "it": {
+     "t": "Turchia: meze e kebab",
+     "g": "Scopri i meze turchi e i tanti stili regionali di kebab.",
+     "p": [
+      "I meze sono piccoli antipasti come salse allo yogurt, ezme di pomodoro piccante e foglie di vite ripiene.",
+      "L'Adana kebab è carne macinata speziata cotta su uno spiedo largo, dal nome della sua città.",
+      "L'Iskender kebab, di Bursa, adagia sottili fette di carne sul pane con salsa di pomodoro e yogurt."
+     ],
+     "q": "Con cosa inizieresti un pasto: una salsa cremosa o un'insalata fresca e piccante?",
+     "c": "Mescola yogurt denso con cetriolo grattugiato, aglio, menta e sale per un meze veloce."
+    },
+    "pt": {
+     "t": "Turquia: mezes e kebabs",
+     "g": "Descobre os mezes turcos e os muitos estilos regionais de kebab.",
+     "p": [
+      "Os mezes são pequenas entradas como molhos de iogurte, ezme de tomate picante e folhas de videira recheadas.",
+      "O kebab Adana é carne picada condimentada grelhada num espeto largo, com o nome da sua cidade.",
+      "O kebab Iskender, de Bursa, põe fatias finas de carne sobre pão com molho de tomate e iogurte."
+     ],
+     "q": "Com o que começarias uma refeição: um molho cremoso ou uma salada fresca e picante?",
+     "c": "Mistura iogurte espesso com pepino ralado, alho, hortelã e sal para um meze rápido."
+    },
+    "pt_BR": {
+     "t": "Turquia: mezes e kebabs",
+     "g": "Descubra os mezes turcos e os muitos estilos regionais de kebab.",
+     "p": [
+      "Os mezes são pequenas entradas como pastas de iogurte, ezme de tomate picante e charutinhos de folha de uva.",
+      "O kebab Adana é carne moída temperada grelhada num espeto largo, com o nome de sua cidade.",
+      "O kebab Iskender, de Bursa, coloca fatias finas de carne sobre pão com molho de tomate e iogurte."
+     ],
+     "q": "Com o que você começaria uma refeição: uma pasta cremosa ou uma salada fresca e picante?",
+     "c": "Misture iogurte grosso com pepino ralado, alho, hortelã e sal para um meze rápido."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lebanon: mezze culture",
+     "g": "Enjoy the Lebanese joy of sharing many small dishes around one table.",
+     "p": [
+      "Tabbouleh is mostly chopped parsley, with a little bulgur, tomato, mint and lemon.",
+      "Hummus blends chickpeas with tahini, lemon and garlic into a smooth, creamy dip.",
+      "Baba ghanoush is made from smoky roasted aubergine, and flatbread is used to scoop everything."
+     ],
+     "q": "Which do you enjoy more: a meal where everyone shares, or your own individual plate?",
+     "c": "Chop a big bunch of parsley very finely and make a small tabbouleh with lemon and olive oil."
+    },
+    "de": {
+     "t": "Libanon: Mezze-Kultur",
+     "g": "Genieße die libanesische Freude, viele kleine Gerichte an einem Tisch zu teilen.",
+     "p": [
+      "Taboulé besteht vor allem aus gehackter Petersilie, mit etwas Bulgur, Tomate, Minze und Zitrone.",
+      "Hummus vereint Kichererbsen mit Tahini, Zitrone und Knoblauch zu einem cremigen Dip.",
+      "Baba Ghanoush entsteht aus rauchig gerösteter Aubergine, und mit Fladenbrot wird alles aufgenommen."
+     ],
+     "q": "Was magst du lieber: ein Essen, bei dem alle teilen, oder deinen eigenen Teller?",
+     "c": "Hacke einen großen Bund Petersilie sehr fein und mach ein kleines Taboulé mit Zitrone und Olivenöl."
+    },
+    "es": {
+     "t": "Líbano: la cultura del mezze",
+     "g": "Disfruta del placer libanés de compartir muchos platitos alrededor de una mesa.",
+     "p": [
+      "El tabulé es sobre todo perejil picado, con un poco de bulgur, tomate, menta y limón.",
+      "El hummus mezcla garbanzos con tahini, limón y ajo en una crema suave.",
+      "El baba ganush se hace con berenjena asada ahumada, y el pan plano sirve para recogerlo todo."
+     ],
+     "q": "¿Qué disfrutas más: una comida donde todos comparten o tu propio plato individual?",
+     "c": "Pica muy fino un buen manojo de perejil y prepara un pequeño tabulé con limón y aceite de oliva."
+    },
+    "fr": {
+     "t": "Liban : la culture du mezzé",
+     "g": "Savoure le plaisir libanais de partager de nombreux petits plats autour d'une table.",
+     "p": [
+      "Le taboulé libanais, c'est surtout du persil haché, avec un peu de boulgour, tomate, menthe et citron.",
+      "Le houmous mêle pois chiches, tahini, citron et ail en une crème onctueuse.",
+      "Le baba ganoush est fait d'aubergine rôtie fumée, et le pain plat sert à tout saisir."
+     ],
+     "q": "Tu préfères un repas où tout le monde partage, ou ta propre assiette ?",
+     "c": "Hache très finement un gros bouquet de persil et prépare un petit taboulé au citron et à l'huile d'olive."
+    },
+    "it": {
+     "t": "Libano: la cultura del mezze",
+     "g": "Goditi il piacere libanese di condividere tanti piattini attorno a una tavola.",
+     "p": [
+      "Il tabbouleh è soprattutto prezzemolo tritato, con un po' di bulgur, pomodoro, menta e limone.",
+      "L'hummus unisce ceci, tahina, limone e aglio in una crema liscia.",
+      "Il baba ganoush si fa con melanzane arrostite e affumicate, e il pane piatto serve a raccogliere tutto."
+     ],
+     "q": "Cosa ti piace di più: un pasto dove tutti condividono o il tuo piatto personale?",
+     "c": "Trita finissimo un bel mazzo di prezzemolo e prepara un piccolo tabbouleh con limone e olio d'oliva."
+    },
+    "pt": {
+     "t": "Líbano: a cultura do mezze",
+     "g": "Aproveita o prazer libanês de partilhar muitos pratinhos à volta de uma mesa.",
+     "p": [
+      "O tabule é sobretudo salsa picada, com um pouco de bulgur, tomate, hortelã e limão.",
+      "O húmus junta grão-de-bico, tahini, limão e alho num creme macio.",
+      "O baba ganoush faz-se com beringela assada e fumada, e o pão achatado serve para apanhar tudo."
+     ],
+     "q": "O que preferes: uma refeição em que todos partilham ou o teu próprio prato?",
+     "c": "Pica muito fino um bom molho de salsa e faz um pequeno tabule com limão e azeite."
+    },
+    "pt_BR": {
+     "t": "Líbano: a cultura do mezze",
+     "g": "Aproveite o prazer libanês de dividir muitos pratinhos ao redor de uma mesa.",
+     "p": [
+      "O tabule é principalmente salsinha picada, com um pouco de trigo para quibe, tomate, hortelã e limão.",
+      "O homus mistura grão-de-bico, tahine, limão e alho num creme macio.",
+      "O babaganuche é feito com berinjela assada e defumada, e o pão sírio serve para pegar tudo."
+     ],
+     "q": "O que você prefere: uma refeição em que todos dividem ou o seu próprio prato?",
+     "c": "Pique bem fino um maço grande de salsinha e faça um pequeno tabule com limão e azeite."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morocco: tagines and couscous",
+     "g": "Meet Morocco's slow-cooked stews and its fluffy steamed semolina.",
+     "p": [
+      "A tagine is both a stew and the clay pot with a cone-shaped lid it is cooked in.",
+      "The lid sends steam back down, keeping dishes like chicken with preserved lemon and olives moist.",
+      "Couscous is steamed semolina, often shared as a family meal; UNESCO recognised it in 2020."
+     ],
+     "q": "Have you ever eaten from one shared dish in the middle of the table?",
+     "c": "Make quick couscous by pouring hot stock over it, cover for five minutes, then fluff with a fork."
+    },
+    "de": {
+     "t": "Marokko: Tajine und Couscous",
+     "g": "Lerne Marokkos langsam gegarte Schmorgerichte und seinen lockeren gedämpften Grieß kennen.",
+     "p": [
+      "Eine Tajine ist zugleich ein Schmorgericht und der Tontopf mit kegelförmigem Deckel, in dem es gart.",
+      "Der Deckel lässt Dampf zurückfließen und hält etwa Huhn mit Salzzitrone und Oliven saftig.",
+      "Couscous ist gedämpfter Grieß, oft als Familienmahl geteilt; die UNESCO erkannte ihn 2020 an."
+     ],
+     "q": "Hast du schon einmal aus einer gemeinsamen Schüssel in der Tischmitte gegessen?",
+     "c": "Mach schnellen Couscous: heiße Brühe darübergießen, fünf Minuten abdecken, mit der Gabel auflockern."
+    },
+    "es": {
+     "t": "Marruecos: tajines y cuscús",
+     "g": "Conoce los guisos lentos de Marruecos y su esponjosa sémola al vapor.",
+     "p": [
+      "Un tajín es a la vez un guiso y la olla de barro con tapa cónica en la que se cocina.",
+      "La tapa devuelve el vapor y mantiene jugosos platos como el pollo con limón confitado y aceitunas.",
+      "El cuscús es sémola al vapor, a menudo compartida en familia; la UNESCO lo reconoció en 2020."
+     ],
+     "q": "¿Has comido alguna vez de un plato común en el centro de la mesa?",
+     "c": "Haz un cuscús rápido: vierte caldo caliente, tapa cinco minutos y suéltalo con un tenedor."
+    },
+    "fr": {
+     "t": "Maroc : tajines et couscous",
+     "g": "Découvre les plats mijotés du Maroc et sa semoule vapeur légère.",
+     "p": [
+      "Le tajine est à la fois un plat mijoté et le pot en terre au couvercle conique où il cuit.",
+      "Le couvercle renvoie la vapeur et garde moelleux des plats comme le poulet au citron confit et olives.",
+      "Le couscous est une semoule cuite à la vapeur, souvent partagée en famille ; l'UNESCO l'a reconnu en 2020."
+     ],
+     "q": "As-tu déjà mangé dans un plat commun posé au milieu de la table ?",
+     "c": "Prépare un couscous express : verse du bouillon chaud, couvre cinq minutes, puis égraine à la fourchette."
+    },
+    "it": {
+     "t": "Marocco: tajine e couscous",
+     "g": "Conosci gli stufati lenti del Marocco e la sua soffice semola al vapore.",
+     "p": [
+      "La tajine è sia uno stufato sia la pentola di terracotta con coperchio conico in cui cuoce.",
+      "Il coperchio rimanda giù il vapore e tiene morbidi piatti come pollo con limoni confit e olive.",
+      "Il couscous è semola cotta al vapore, spesso condivisa in famiglia; l'UNESCO l'ha riconosciuto nel 2020."
+     ],
+     "q": "Hai mai mangiato da un unico piatto condiviso al centro della tavola?",
+     "c": "Prepara un couscous veloce: versa brodo caldo, copri per cinque minuti e sgrana con una forchetta."
+    },
+    "pt": {
+     "t": "Marrocos: tajines e cuscuz",
+     "g": "Conhece os estufados lentos de Marrocos e a sua sêmola fofa cozida a vapor.",
+     "p": [
+      "A tajine é ao mesmo tempo um estufado e o tacho de barro com tampa cónica onde é cozinhado.",
+      "A tampa devolve o vapor e mantém suculentos pratos como frango com limão em conserva e azeitonas.",
+      "O cuscuz é sêmola cozida a vapor, muitas vezes partilhada em família; a UNESCO reconheceu-o em 2020."
+     ],
+     "q": "Já comeste de um prato comum no centro da mesa?",
+     "c": "Faz um cuscuz rápido: deita caldo quente por cima, tapa cinco minutos e solta com um garfo."
+    },
+    "pt_BR": {
+     "t": "Marrocos: tajines e cuscuz",
+     "g": "Conheça os ensopados lentos do Marrocos e sua sêmola fofinha cozida no vapor.",
+     "p": [
+      "O tajine é ao mesmo tempo um ensopado e a panela de barro com tampa cônica onde ele é feito.",
+      "A tampa devolve o vapor e mantém suculentos pratos como frango com limão em conserva e azeitonas.",
+      "O cuscuz marroquino é sêmola no vapor, muitas vezes dividida em família; a UNESCO o reconheceu em 2020."
+     ],
+     "q": "Você já comeu de um prato comum no centro da mesa?",
+     "c": "Faça um cuscuz rápido: despeje caldo quente por cima, tampe por cinco minutos e solte com um garfo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ethiopia: injera and wat",
+     "g": "Discover the spongy flatbread that serves as plate, cutlery and food at once.",
+     "p": [
+      "Injera is a slightly sour, spongy flatbread made from fermented teff, a tiny native grain.",
+      "Stews called wat, often spiced with the chili blend berbere, are served right on top of it.",
+      "People tear injera with the right hand to scoop food, and sharing one large platter is common."
+     ],
+     "q": "Would you enjoy eating with your hands from a shared platter? Why or why not?",
+     "c": "Mix a pinch of paprika, chili, ginger, garlic and cardamom to smell a simple berbere-style blend."
+    },
+    "de": {
+     "t": "Äthiopien: Injera und Wat",
+     "g": "Entdecke das schwammige Fladenbrot, das zugleich Teller, Besteck und Speise ist.",
+     "p": [
+      "Injera ist ein leicht säuerliches, schwammiges Fladenbrot aus fermentiertem Teff, einem winzigen Getreide.",
+      "Eintöpfe namens Wat, oft mit der Chilimischung Berbere gewürzt, kommen direkt darauf.",
+      "Man reißt Injera mit der rechten Hand ab, um Essen zu greifen, und teilt oft eine große Platte."
+     ],
+     "q": "Würdest du gern mit den Händen von einer gemeinsamen Platte essen? Warum oder warum nicht?",
+     "c": "Mische je eine Prise Paprika, Chili, Ingwer, Knoblauch und Kardamom und rieche an einer Berbere-artigen Mischung."
+    },
+    "es": {
+     "t": "Etiopía: injera y wat",
+     "g": "Descubre el pan esponjoso que sirve a la vez de plato, cubiertos y comida.",
+     "p": [
+      "La injera es un pan plano esponjoso y algo ácido de teff fermentado, un cereal diminuto local.",
+      "Los guisos llamados wat, a menudo con la mezcla picante berbere, se sirven encima.",
+      "Se corta la injera con la mano derecha para tomar la comida, y es común compartir una gran bandeja."
+     ],
+     "q": "¿Te gustaría comer con las manos de una bandeja compartida? ¿Por qué sí o por qué no?",
+     "c": "Mezcla una pizca de pimentón, chile, jengibre, ajo y cardamomo para oler una mezcla tipo berbere."
+    },
+    "fr": {
+     "t": "Éthiopie : injera et wat",
+     "g": "Découvre la galette spongieuse qui sert à la fois d'assiette, de couverts et d'aliment.",
+     "p": [
+      "L'injera est une galette spongieuse un peu acidulée à base de teff fermenté, une céréale minuscule.",
+      "Les ragoûts appelés wat, souvent relevés au berbéré, mélange pimenté, sont servis directement dessus.",
+      "On déchire l'injera de la main droite pour saisir la nourriture, et on partage souvent un grand plateau."
+     ],
+     "q": "Aimerais-tu manger avec les mains dans un plateau partagé ? Pourquoi ?",
+     "c": "Mélange une pincée de paprika, piment, gingembre, ail et cardamome pour sentir un mélange façon berbéré."
+    },
+    "it": {
+     "t": "Etiopia: injera e wat",
+     "g": "Scopri il pane spugnoso che fa da piatto, posate e cibo allo stesso tempo.",
+     "p": [
+      "L'injera è un pane piatto spugnoso e leggermente acido di teff fermentato, un cereale minuscolo.",
+      "Gli stufati chiamati wat, spesso speziati con il mix piccante berberè, si servono sopra.",
+      "Si strappa l'injera con la mano destra per prendere il cibo, e spesso si condivide un grande vassoio."
+     ],
+     "q": "Ti piacerebbe mangiare con le mani da un vassoio condiviso? Perché sì o perché no?",
+     "c": "Mescola un pizzico di paprica, peperoncino, zenzero, aglio e cardamomo e annusa un mix in stile berberè."
+    },
+    "pt": {
+     "t": "Etiópia: injera e wat",
+     "g": "Descobre o pão esponjoso que serve ao mesmo tempo de prato, talheres e comida.",
+     "p": [
+      "A injera é um pão achatado, esponjoso e ligeiramente ácido, de teff fermentado, um cereal minúsculo.",
+      "Os guisados chamados wat, muitas vezes com a mistura picante berbere, vêm servidos por cima.",
+      "Rasga-se a injera com a mão direita para apanhar a comida, e é comum partilhar uma grande travessa."
+     ],
+     "q": "Gostarias de comer com as mãos de uma travessa partilhada? Porquê?",
+     "c": "Mistura uma pitada de pimentão-doce, malagueta, gengibre, alho e cardamomo e cheira uma mistura tipo berbere."
+    },
+    "pt_BR": {
+     "t": "Etiópia: injera e wat",
+     "g": "Descubra o pão esponjoso que serve ao mesmo tempo de prato, talher e comida.",
+     "p": [
+      "A injera é um pão achatado, esponjoso e levemente azedo, de teff fermentado, um grão minúsculo.",
+      "Os ensopados chamados wat, muitas vezes com a mistura picante berbere, são servidos por cima.",
+      "Rasga-se a injera com a mão direita para pegar a comida, e é comum dividir uma grande travessa."
+     ],
+     "q": "Você gostaria de comer com as mãos de uma travessa compartilhada? Por quê?",
+     "c": "Misture uma pitada de páprica, pimenta, gengibre, alho e cardamomo e sinta o aroma de uma mistura tipo berbere."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: a first world tour",
+     "g": "Look back at days 1 to 29 and choose your favourite dish from the journey so far.",
+     "p": [
+      "We met the building blocks: grains, spices, herbs, the five tastes and signature fats.",
+      "We travelled from pasta, paella and tacos to sushi, dal, pho, kimchi, mezze and injera.",
+      "Many cuisines share ideas: flatbreads, dumplings, fermentation and the joy of sharing food."
+     ],
+     "q": "Which dish from our tour would you most like to taste first, and why?",
+     "c": "Cook or plan one dish from days 1 to 29 that you have never tried before."
+    },
+    "de": {
+     "t": "Rückblick: Die erste Weltreise",
+     "g": "Schau auf die Tage 1 bis 29 zurück und wähle dein Lieblingsgericht der bisherigen Reise.",
+     "p": [
+      "Wir lernten die Bausteine kennen: Getreide, Gewürze, Kräuter, die fünf Geschmäcker und typische Fette.",
+      "Wir reisten von Pasta, Paella und Tacos zu Sushi, Dal, Pho, Kimchi, Mezze und Injera.",
+      "Viele Küchen teilen Ideen: Fladenbrote, Teigtaschen, Fermentation und die Freude am Teilen."
+     ],
+     "q": "Welches Gericht unserer Reise würdest du am liebsten zuerst probieren, und warum?",
+     "c": "Koche oder plane ein Gericht aus den Tagen 1 bis 29, das du noch nie probiert hast."
+    },
+    "es": {
+     "t": "Repaso: una primera vuelta al mundo",
+     "g": "Repasa los días 1 a 29 y elige tu plato favorito del viaje hasta ahora.",
+     "p": [
+      "Vimos los pilares: cereales, especias, hierbas, los cinco sabores y las grasas típicas.",
+      "Viajamos de la pasta, la paella y los tacos al sushi, el dal, el pho, el kimchi, el mezze y la injera.",
+      "Muchas cocinas comparten ideas: panes planos, empanadillas, fermentación y el placer de compartir."
+     ],
+     "q": "¿Qué plato de nuestro viaje te gustaría probar primero y por qué?",
+     "c": "Cocina o planea un plato de los días 1 a 29 que nunca hayas probado."
+    },
+    "fr": {
+     "t": "Bilan : un premier tour du monde",
+     "g": "Repense aux jours 1 à 29 et choisis ton plat préféré du voyage jusqu'ici.",
+     "p": [
+      "Nous avons vu les bases : céréales, épices, herbes, les cinq saveurs et les graisses emblématiques.",
+      "Nous sommes allés des pâtes, de la paella et des tacos aux sushis, dal, phở, kimchi, mezzés et injera.",
+      "Beaucoup de cuisines partagent des idées : galettes, raviolis, fermentation et plaisir du partage."
+     ],
+     "q": "Quel plat de notre tour aimerais-tu goûter en premier, et pourquoi ?",
+     "c": "Cuisine ou planifie un plat des jours 1 à 29 que tu n'as encore jamais goûté."
+    },
+    "it": {
+     "t": "Ripasso: un primo giro del mondo",
+     "g": "Ripensa ai giorni da 1 a 29 e scegli il tuo piatto preferito del viaggio finora.",
+     "p": [
+      "Abbiamo visto le basi: cereali, spezie, erbe, i cinque gusti e i grassi tipici.",
+      "Siamo passati da pasta, paella e tacos a sushi, dal, pho, kimchi, mezze e injera.",
+      "Molte cucine condividono idee: pani piatti, ravioli, fermentazione e il piacere di condividere."
+     ],
+     "q": "Quale piatto del nostro viaggio vorresti assaggiare per primo, e perché?",
+     "c": "Cucina o pianifica un piatto dei giorni 1-29 che non hai mai provato."
+    },
+    "pt": {
+     "t": "Revisão: uma primeira volta ao mundo",
+     "g": "Revê os dias 1 a 29 e escolhe o teu prato preferido da viagem até agora.",
+     "p": [
+      "Conhecemos os pilares: cereais, especiarias, ervas, os cinco sabores e as gorduras típicas.",
+      "Viajámos da massa, da paella e dos tacos ao sushi, dal, pho, kimchi, mezze e injera.",
+      "Muitas cozinhas partilham ideias: pães achatados, pastéis, fermentação e o prazer de partilhar."
+     ],
+     "q": "Que prato da nossa viagem gostarias de provar primeiro, e porquê?",
+     "c": "Cozinha ou planeia um prato dos dias 1 a 29 que nunca tenhas provado."
+    },
+    "pt_BR": {
+     "t": "Revisão: uma primeira volta ao mundo",
+     "g": "Revise os dias 1 a 29 e escolha o seu prato favorito da viagem até agora.",
+     "p": [
+      "Conhecemos os pilares: grãos, especiarias, ervas, os cinco sabores e as gorduras típicas.",
+      "Viajamos das massas, da paella e dos tacos ao sushi, dal, pho, kimchi, mezze e injera.",
+      "Muitas culinárias compartilham ideias: pães achatados, pastéis, fermentação e o prazer de dividir."
+     ],
+     "q": "Qual prato da nossa viagem você gostaria de provar primeiro, e por quê?",
+     "c": "Cozinhe ou planeje um prato dos dias 1 a 29 que você nunca provou."
+    }
+   }
+  }
+ ]
+}

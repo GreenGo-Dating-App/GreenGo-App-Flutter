@@ -1,0 +1,835 @@
+{
+ "topic": "martial_arts",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking care of the space",
+     "g": "Learn the common customs that keep a training space clean, safe and welcoming.",
+     "p": [
+      "Shoes come off before the mat, and sandals wait neatly at the edge for when you step off.",
+      "Many schools clean the floor together after class, a tradition called soji in Japan.",
+      "Arriving on time and greeting others shows respect for the group and the teacher."
+     ],
+     "q": "What small habit could you adopt to show care for a shared space you use?",
+     "c": "Leave one shared space today, like a kitchen or desk, cleaner than you found it."
+    },
+    "de": {
+     "t": "Den Raum pflegen",
+     "g": "Lerne die üblichen Bräuche, die einen Trainingsraum sauber, sicher und einladend halten.",
+     "p": [
+      "Vor der Matte zieht man die Schuhe aus; Schlappen warten ordentlich am Rand.",
+      "Viele Schulen putzen den Boden nach dem Training gemeinsam, in Japan heißt das Soji.",
+      "Pünktlich kommen und andere grüßen zeigt Respekt für die Gruppe und den Lehrer."
+     ],
+     "q": "Welche kleine Gewohnheit könntest du annehmen, um einen gemeinsamen Raum zu pflegen?",
+     "c": "Hinterlass heute einen gemeinsamen Ort, etwa Küche oder Schreibtisch, sauberer als vorher."
+    },
+    "es": {
+     "t": "Cuidar el espacio",
+     "g": "Aprende las costumbres que mantienen un espacio de entrenamiento limpio, seguro y acogedor.",
+     "p": [
+      "Los zapatos se quitan antes del tatami y las chanclas esperan ordenadas en el borde.",
+      "Muchas escuelas limpian el suelo juntas al acabar, una tradición llamada soji en Japón.",
+      "Llegar puntual y saludar a los demás muestra respeto por el grupo y el maestro."
+     ],
+     "q": "¿Qué pequeño hábito podrías adoptar para cuidar un espacio compartido que usas?",
+     "c": "Deja hoy un espacio compartido, como la cocina o un escritorio, más limpio de como lo encontraste."
+    },
+    "fr": {
+     "t": "Prendre soin du lieu",
+     "g": "Apprends les coutumes qui gardent une salle d'entraînement propre, sûre et accueillante.",
+     "p": [
+      "On retire ses chaussures avant le tapis, et les sandales attendent bien rangées au bord.",
+      "Beaucoup d'écoles nettoient le sol ensemble après le cours, une tradition appelée soji au Japon.",
+      "Arriver à l'heure et saluer les autres montre du respect pour le groupe et le professeur."
+     ],
+     "q": "Quelle petite habitude pourrais-tu adopter pour prendre soin d'un lieu partagé ?",
+     "c": "Laisse aujourd'hui un espace commun, comme une cuisine ou un bureau, plus propre que tu ne l'as trouvé."
+    },
+    "it": {
+     "t": "Prendersi cura dello spazio",
+     "g": "Impara le usanze che mantengono uno spazio di allenamento pulito, sicuro e accogliente.",
+     "p": [
+      "Le scarpe si tolgono prima del tatami e le ciabatte aspettano in ordine sul bordo.",
+      "Molte scuole puliscono il pavimento insieme dopo la lezione, una tradizione chiamata soji in Giappone.",
+      "Arrivare puntuali e salutare gli altri mostra rispetto per il gruppo e per il maestro."
+     ],
+     "q": "Quale piccola abitudine potresti adottare per curare uno spazio condiviso che usi?",
+     "c": "Lascia oggi uno spazio comune, come la cucina o una scrivania, più pulito di come l'hai trovato."
+    },
+    "pt": {
+     "t": "Cuidar do espaço",
+     "g": "Aprende os costumes que mantêm um espaço de treino limpo, seguro e acolhedor.",
+     "p": [
+      "Os sapatos tiram-se antes do tapete e os chinelos esperam arrumados à beira.",
+      "Muitas escolas limpam o chão juntas no fim da aula, uma tradição chamada soji no Japão.",
+      "Chegar a horas e cumprimentar os outros mostra respeito pelo grupo e pelo professor."
+     ],
+     "q": "Que pequeno hábito poderias adotar para cuidar de um espaço partilhado que usas?",
+     "c": "Deixa hoje um espaço comum, como a cozinha ou uma secretária, mais limpo do que o encontraste."
+    },
+    "pt_BR": {
+     "t": "Cuidar do espaço",
+     "g": "Aprenda os costumes que mantêm um espaço de treino limpo, seguro e acolhedor.",
+     "p": [
+      "Os sapatos ficam fora do tatame e os chinelos esperam arrumados na beirada.",
+      "Muitas escolas limpam o chão juntas no fim da aula, uma tradição chamada soji no Japão.",
+      "Chegar no horário e cumprimentar os outros mostra respeito pelo grupo e pelo professor."
+     ],
+     "q": "Que pequeno hábito você poderia adotar para cuidar de um espaço compartilhado que usa?",
+     "c": "Deixe hoje um espaço comum, como a cozinha ou uma mesa, mais limpo do que encontrou."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The teacher and the student",
+     "g": "Discover teacher titles across arts and the relationship they describe.",
+     "p": [
+      "Sensei in Japanese means one who was born before, someone further along the path.",
+      "In taekwondo the teacher is sabeom or sabeomnim; in kung fu, sifu; in many BJJ academies, professor.",
+      "The bond is built on trust: the teacher guides with care, the student learns with effort."
+     ],
+     "q": "Who has been a sensei in your life, in any field, and what did they teach you?",
+     "c": "Write down one lesson a teacher gave you that you still use today."
+    },
+    "de": {
+     "t": "Lehrer und Schüler",
+     "g": "Entdecke Lehrertitel verschiedener Künste und die Beziehung, die sie beschreiben.",
+     "p": [
+      "Sensei heißt auf Japanisch der vorher Geborene, jemand, der auf dem Weg schon weiter ist.",
+      "Im Taekwondo heißt der Lehrer Sabeom oder Sabeomnim, im Kung Fu Sifu, in vielen BJJ-Akademien Professor.",
+      "Die Beziehung beruht auf Vertrauen: Der Lehrer führt mit Sorgfalt, der Schüler lernt mit Einsatz."
+     ],
+     "q": "Wer war in deinem Leben ein Sensei, in welchem Bereich auch immer, und was hat er dich gelehrt?",
+     "c": "Schreib eine Lektion eines Lehrers auf, die du heute noch nutzt."
+    },
+    "es": {
+     "t": "El maestro y el alumno",
+     "g": "Descubre los títulos del maestro en distintas artes y la relación que describen.",
+     "p": [
+      "Sensei en japonés significa el que nació antes, alguien más avanzado en el camino.",
+      "En taekwondo el maestro es sabeom o sabeomnim; en kung fu, sifu; en muchas academias de BJJ, profesor.",
+      "El vínculo se basa en la confianza: el maestro guía con cuidado y el alumno aprende con esfuerzo."
+     ],
+     "q": "¿Quién ha sido un sensei en tu vida, en cualquier ámbito, y qué te enseñó?",
+     "c": "Escribe una lección que te dio un profesor y que todavía usas hoy."
+    },
+    "fr": {
+     "t": "Le maître et l'élève",
+     "g": "Découvre les titres d'enseignant dans différents arts et la relation qu'ils décrivent.",
+     "p": [
+      "Sensei signifie en japonais celui qui est né avant, quelqu'un plus avancé sur la voie.",
+      "En taekwondo, l'enseignant est sabeom ou sabeomnim ; en kung-fu, sifu ; dans bien des académies de JJB, professeur.",
+      "Le lien repose sur la confiance : le maître guide avec soin, l'élève apprend avec effort."
+     ],
+     "q": "Qui a été un sensei dans ta vie, dans n'importe quel domaine, et que t'a-t-il appris ?",
+     "c": "Note une leçon reçue d'un enseignant que tu utilises encore aujourd'hui."
+    },
+    "it": {
+     "t": "Il maestro e l'allievo",
+     "g": "Scopri i titoli del maestro nelle diverse arti e il rapporto che descrivono.",
+     "p": [
+      "Sensei in giapponese significa nato prima, qualcuno più avanti sul cammino.",
+      "Nel taekwondo il maestro è sabeom o sabeomnim; nel kung fu, sifu; in molte accademie di BJJ, professore.",
+      "Il legame si basa sulla fiducia: il maestro guida con cura, l'allievo impara con impegno."
+     ],
+     "q": "Chi è stato un sensei nella tua vita, in qualsiasi campo, e cosa ti ha insegnato?",
+     "c": "Scrivi una lezione ricevuta da un insegnante che usi ancora oggi."
+    },
+    "pt": {
+     "t": "O mestre e o aluno",
+     "g": "Descobre os títulos do professor em várias artes e a relação que descrevem.",
+     "p": [
+      "Sensei, em japonês, significa aquele que nasceu antes, alguém mais adiantado no caminho.",
+      "No taekwondo o professor é sabeom ou sabeomnim; no kung fu, sifu; em muitas academias de BJJ, professor.",
+      "A relação assenta na confiança: o mestre orienta com cuidado e o aluno aprende com esforço."
+     ],
+     "q": "Quem foi um sensei na tua vida, em qualquer área, e o que te ensinou?",
+     "c": "Escreve uma lição que um professor te deu e que ainda usas hoje."
+    },
+    "pt_BR": {
+     "t": "O mestre e o aluno",
+     "g": "Descubra os títulos do professor em várias artes e a relação que eles descrevem.",
+     "p": [
+      "Sensei, em japonês, significa aquele que nasceu antes, alguém mais adiantado no caminho.",
+      "No taekwondo o professor é sabeom ou sabeomnim; no kung fu, sifu; em muitas academias de jiu-jítsu, professor.",
+      "A relação se baseia na confiança: o mestre orienta com cuidado e o aluno aprende com esforço."
+     ],
+     "q": "Quem foi um sensei na sua vida, em qualquer área, e o que ensinou a você?",
+     "c": "Anote uma lição que um professor deu a você e que você ainda usa hoje."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Senior and junior students",
+     "g": "See how experienced students support newer ones in many traditions.",
+     "p": [
+      "In Japanese arts a senior student is a senpai and a junior is a kohai.",
+      "Seniors set an example, help with techniques and make newcomers feel welcome.",
+      "Juniors learn by watching, asking politely and later passing the help forward."
+     ],
+     "q": "Have you ever helped someone newer than you learn something? How did it feel?",
+     "c": "Offer to help someone with a small task you know well, just as a senpai would."
+    },
+    "de": {
+     "t": "Ältere und jüngere Schüler",
+     "g": "Sieh, wie erfahrene Schüler in vielen Traditionen neuere unterstützen.",
+     "p": [
+      "In japanischen Künsten ist ein älterer Schüler ein Senpai, ein jüngerer ein Kohai.",
+      "Ältere geben ein Vorbild, helfen bei Techniken und sorgen dafür, dass sich Neue willkommen fühlen.",
+      "Jüngere lernen durch Zuschauen und höfliches Fragen und geben die Hilfe später weiter."
+     ],
+     "q": "Hast du schon einmal jemandem geholfen, der neuer war als du? Wie fühlte sich das an?",
+     "c": "Biete jemandem Hilfe bei einer kleinen Aufgabe an, die du gut kannst, wie ein Senpai."
+    },
+    "es": {
+     "t": "Alumnos veteranos y nuevos",
+     "g": "Mira cómo los alumnos con experiencia apoyan a los nuevos en muchas tradiciones.",
+     "p": [
+      "En las artes japonesas un alumno veterano es un senpai y uno más nuevo es un kohai.",
+      "Los veteranos dan ejemplo, ayudan con las técnicas y hacen sentir bienvenidos a los nuevos.",
+      "Los nuevos aprenden observando, preguntando con educación y más tarde ayudando a otros."
+     ],
+     "q": "¿Alguna vez ayudaste a alguien más nuevo que tú a aprender algo? ¿Cómo te sentiste?",
+     "c": "Ofrece tu ayuda a alguien con una pequeña tarea que conozcas bien, como haría un senpai."
+    },
+    "fr": {
+     "t": "Anciens et nouveaux élèves",
+     "g": "Vois comment les élèves expérimentés soutiennent les nouveaux dans bien des traditions.",
+     "p": [
+      "Dans les arts japonais, un élève ancien est un senpai et un plus récent un kohai.",
+      "Les anciens montrent l'exemple, aident aux techniques et font que les nouveaux se sentent accueillis.",
+      "Les nouveaux apprennent en observant, en demandant poliment, puis transmettent l'aide à leur tour."
+     ],
+     "q": "As-tu déjà aidé quelqu'un de plus récent que toi à apprendre ? Qu'as-tu ressenti ?",
+     "c": "Propose ton aide à quelqu'un pour une petite tâche que tu maîtrises, comme un senpai."
+    },
+    "it": {
+     "t": "Allievi anziani e nuovi",
+     "g": "Scopri come gli allievi esperti sostengono i nuovi in molte tradizioni.",
+     "p": [
+      "Nelle arti giapponesi un allievo anziano è un senpai e uno più nuovo è un kohai.",
+      "Gli anziani danno l'esempio, aiutano con le tecniche e fanno sentire benvenuti i nuovi.",
+      "I nuovi imparano osservando e chiedendo con garbo, e poi passano l'aiuto ad altri."
+     ],
+     "q": "Hai mai aiutato qualcuno più nuovo di te a imparare qualcosa? Come ti sei sentito?",
+     "c": "Offri aiuto a qualcuno in un piccolo compito che conosci bene, come farebbe un senpai."
+    },
+    "pt": {
+     "t": "Alunos mais antigos e mais novos",
+     "g": "Vê como os alunos experientes apoiam os mais novos em muitas tradições.",
+     "p": [
+      "Nas artes japonesas, um aluno mais antigo é um senpai e um mais recente é um kohai.",
+      "Os mais antigos dão o exemplo, ajudam nas técnicas e fazem os novos sentirem-se bem-vindos.",
+      "Os mais novos aprendem a observar, a perguntar com educação e, mais tarde, ajudam outros."
+     ],
+     "q": "Já ajudaste alguém mais novo do que tu a aprender algo? Como te sentiste?",
+     "c": "Oferece ajuda a alguém numa pequena tarefa que conheces bem, como faria um senpai."
+    },
+    "pt_BR": {
+     "t": "Alunos veteranos e novatos",
+     "g": "Veja como os alunos experientes apoiam os novatos em muitas tradições.",
+     "p": [
+      "Nas artes japonesas, um aluno veterano é um senpai e um mais novo é um kohai.",
+      "Os veteranos dão o exemplo, ajudam nas técnicas e fazem os novatos se sentirem bem-vindos.",
+      "Os novatos aprendem observando, perguntando com educação e, depois, ajudando outros."
+     ],
+     "q": "Você já ajudou alguém mais novo que você a aprender algo? Como se sentiu?",
+     "c": "Ofereça ajuda a alguém numa pequena tarefa que você conhece bem, como faria um senpai."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The uniform",
+     "g": "Learn about martial arts uniforms, their history, parts and how to wear them.",
+     "p": [
+      "The Japanese training uniform is often called gi or keikogi; Korean taekwondo uses the dobok.",
+      "Jigoro Kano shaped the modern judo uniform, and many arts later adopted similar designs.",
+      "A typical uniform has a jacket, trousers and a belt; the left side of the jacket crosses over the right."
+     ],
+     "q": "What do you think wearing the same uniform does for a group of students?",
+     "c": "Fold a jacket or shirt neatly today, with care, as if it were your training uniform."
+    },
+    "de": {
+     "t": "Die Trainingskleidung",
+     "g": "Erfahre mehr über Kampfkunstanzüge, ihre Geschichte, ihre Teile und wie man sie trägt.",
+     "p": [
+      "Der japanische Trainingsanzug heißt oft Gi oder Keikogi, im koreanischen Taekwondo trägt man den Dobok.",
+      "Jigoro Kano prägte den modernen Judoanzug, und viele Künste übernahmen später ähnliche Schnitte.",
+      "Ein Anzug hat meist Jacke, Hose und Gürtel; die linke Jackenseite liegt über der rechten."
+     ],
+     "q": "Was bewirkt es deiner Meinung nach, wenn eine Gruppe den gleichen Anzug trägt?",
+     "c": "Falte heute eine Jacke oder ein Hemd sorgfältig, als wäre es dein Trainingsanzug."
+    },
+    "es": {
+     "t": "El uniforme",
+     "g": "Conoce los uniformes de artes marciales, su historia, sus partes y cómo se llevan.",
+     "p": [
+      "El uniforme japonés se suele llamar gi o keikogi; en el taekwondo coreano se usa el dobok.",
+      "Jigoro Kano dio forma al uniforme moderno de judo, y muchas artes adoptaron después diseños parecidos.",
+      "Suele tener chaqueta, pantalón y cinturón; el lado izquierdo de la chaqueta cruza sobre el derecho."
+     ],
+     "q": "¿Qué crees que aporta a un grupo de alumnos llevar el mismo uniforme?",
+     "c": "Dobla hoy una chaqueta o camisa con cuidado, como si fuera tu uniforme de entrenamiento."
+    },
+    "fr": {
+     "t": "La tenue",
+     "g": "Découvre les tenues d'arts martiaux, leur histoire, leurs éléments et comment les porter.",
+     "p": [
+      "La tenue japonaise s'appelle souvent gi ou keikogi ; en taekwondo coréen, on porte le dobok.",
+      "Jigoro Kano a façonné la tenue moderne du judo, et bien des arts ont ensuite adopté des modèles proches.",
+      "Une tenue comprend veste, pantalon et ceinture ; le pan gauche de la veste se croise sur le droit."
+     ],
+     "q": "Selon toi, qu'apporte le port d'une même tenue à un groupe d'élèves ?",
+     "c": "Plie soigneusement une veste ou une chemise aujourd'hui, comme si c'était ta tenue d'entraînement."
+    },
+    "it": {
+     "t": "La divisa",
+     "g": "Scopri le divise delle arti marziali, la loro storia, le parti e come si indossano.",
+     "p": [
+      "La divisa giapponese si chiama spesso gi o keikogi; nel taekwondo coreano si usa il dobok.",
+      "Jigoro Kano diede forma alla divisa moderna del judo, e molte arti adottarono poi modelli simili.",
+      "Di solito ha giacca, pantaloni e cintura; il lembo sinistro della giacca si incrocia sopra il destro."
+     ],
+     "q": "Secondo te, cosa dà a un gruppo di allievi indossare la stessa divisa?",
+     "c": "Piega con cura una giacca o una camicia oggi, come se fosse la tua divisa da allenamento."
+    },
+    "pt": {
+     "t": "O uniforme",
+     "g": "Conhece os uniformes das artes marciais, a sua história, as partes e como se vestem.",
+     "p": [
+      "O uniforme japonês chama-se muitas vezes gi ou keikogi; no taekwondo coreano usa-se o dobok.",
+      "Jigoro Kano deu forma ao uniforme moderno do judo, e muitas artes adotaram depois modelos parecidos.",
+      "Costuma ter casaco, calças e cinto; o lado esquerdo do casaco cruza por cima do direito."
+     ],
+     "q": "O que achas que usar o mesmo uniforme traz a um grupo de alunos?",
+     "c": "Dobra hoje um casaco ou uma camisa com cuidado, como se fosse o teu uniforme de treino."
+    },
+    "pt_BR": {
+     "t": "O uniforme",
+     "g": "Conheça os uniformes das artes marciais, sua história, suas partes e como vesti-los.",
+     "p": [
+      "O uniforme japonês costuma se chamar gi, kimono ou keikogi; no taekwondo coreano usa-se o dobok.",
+      "Jigoro Kano deu forma ao uniforme moderno do judô, e muitas artes adotaram depois modelos parecidos.",
+      "Costuma ter casaco, calça e faixa; o lado esquerdo do casaco cruza por cima do direito."
+     ],
+     "q": "O que você acha que usar o mesmo uniforme traz para um grupo de alunos?",
+     "c": "Dobre hoje um casaco ou uma camisa com cuidado, como se fosse seu uniforme de treino."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tying your belt",
+     "g": "Learn the common way to tie a belt neatly so it stays in place.",
+     "p": [
+      "Find the middle of the belt, place it on your belly and wrap it twice around your waist.",
+      "Cross the ends in front, tuck one under both layers, then tie a flat square knot.",
+      "A well-tied belt has both ends hanging at roughly equal length."
+     ],
+     "q": "Why do you think tying the belt carefully is part of getting ready to train?",
+     "c": "Practise the belt knot with a scarf or long cloth three times until it feels smooth."
+    },
+    "de": {
+     "t": "Den Gürtel binden",
+     "g": "Lerne die übliche Art, einen Gürtel ordentlich zu binden, damit er hält.",
+     "p": [
+      "Such die Mitte des Gürtels, leg sie auf den Bauch und wickle ihn zweimal um die Taille.",
+      "Kreuze die Enden vorn, steck eins unter beide Lagen und binde einen flachen Kreuzknoten.",
+      "Bei einem gut gebundenen Gürtel hängen beide Enden etwa gleich lang herab."
+     ],
+     "q": "Warum gehört das sorgfältige Binden des Gürtels wohl zur Vorbereitung aufs Training?",
+     "c": "Übe den Gürtelknoten dreimal mit einem Schal oder langen Tuch, bis er flüssig klappt."
+    },
+    "es": {
+     "t": "Atarse el cinturón",
+     "g": "Aprende la forma habitual de atar el cinturón para que quede firme y bien colocado.",
+     "p": [
+      "Busca la mitad del cinturón, colócala sobre el vientre y da dos vueltas a la cintura.",
+      "Cruza los extremos delante, pasa uno por debajo de las dos capas y haz un nudo plano.",
+      "En un cinturón bien atado, los dos extremos cuelgan más o menos igual de largos."
+     ],
+     "q": "¿Por qué crees que atarse bien el cinturón forma parte de prepararse para entrenar?",
+     "c": "Practica el nudo con una bufanda o una tela larga tres veces hasta que salga con fluidez."
+    },
+    "fr": {
+     "t": "Nouer sa ceinture",
+     "g": "Apprends la façon courante de nouer sa ceinture pour qu'elle tienne bien.",
+     "p": [
+      "Trouve le milieu de la ceinture, place-le sur le ventre et fais deux tours de taille.",
+      "Croise les bouts devant, passe-en un sous les deux épaisseurs, puis fais un nœud plat.",
+      "Une ceinture bien nouée a ses deux bouts à peu près de même longueur."
+     ],
+     "q": "Pourquoi nouer soigneusement sa ceinture fait-il partie de la préparation, selon toi ?",
+     "c": "Entraîne-toi au nœud avec une écharpe ou un long tissu trois fois, jusqu'à ce qu'il soit fluide."
+    },
+    "it": {
+     "t": "Legare la cintura",
+     "g": "Impara il modo comune di legare la cintura in ordine perché resti al suo posto.",
+     "p": [
+      "Trova il centro della cintura, appoggialo sulla pancia e avvolgila due volte intorno alla vita.",
+      "Incrocia le estremità davanti, passane una sotto entrambi i giri e fai un nodo piano.",
+      "In una cintura ben legata le due estremità pendono più o meno della stessa lunghezza."
+     ],
+     "q": "Perché secondo te legare bene la cintura fa parte della preparazione all'allenamento?",
+     "c": "Prova il nodo con una sciarpa o un tessuto lungo tre volte, finché non viene fluido."
+    },
+    "pt": {
+     "t": "Atar o cinto",
+     "g": "Aprende a forma habitual de atar o cinto para que fique bem preso.",
+     "p": [
+      "Encontra o meio do cinto, coloca-o na barriga e dá duas voltas à cintura.",
+      "Cruza as pontas à frente, passa uma por baixo das duas camadas e faz um nó direito.",
+      "Num cinto bem atado, as duas pontas ficam mais ou menos do mesmo comprimento."
+     ],
+     "q": "Porque achas que atar bem o cinto faz parte de te preparares para treinar?",
+     "c": "Pratica o nó com um cachecol ou um pano comprido três vezes, até sair com facilidade."
+    },
+    "pt_BR": {
+     "t": "Amarrando a faixa",
+     "g": "Aprenda o jeito mais comum de amarrar a faixa para ela ficar firme no lugar.",
+     "p": [
+      "Encontre o meio da faixa, coloque na barriga e dê duas voltas na cintura.",
+      "Cruze as pontas na frente, passe uma por baixo das duas camadas e faça um nó direito.",
+      "Numa faixa bem amarrada, as duas pontas ficam mais ou menos do mesmo tamanho."
+     ],
+     "q": "Por que você acha que amarrar bem a faixa faz parte de se preparar para treinar?",
+     "c": "Pratique o nó com um cachecol ou um pano comprido três vezes, até sair com facilidade."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The coloured belt system",
+     "g": "Discover how coloured belts mark progress and how systems differ between arts.",
+     "p": [
+      "Jigoro Kano introduced dan grades and the black belt in judo in the late nineteenth century.",
+      "More coloured belts for beginners spread later, especially through judo teaching in Europe.",
+      "Colours and their order vary: karate, taekwondo and BJJ each have their own systems."
+     ],
+     "q": "Do you like clear milestones like belts, or do you prefer progress without levels?",
+     "c": "Write down three skills you would want to master before earning your first new belt."
+    },
+    "de": {
+     "t": "Das farbige Gürtelsystem",
+     "g": "Entdecke, wie farbige Gürtel Fortschritt anzeigen und wie sich die Systeme unterscheiden.",
+     "p": [
+      "Jigoro Kano führte im späten 19. Jahrhundert im Judo die Dan-Grade und den schwarzen Gürtel ein.",
+      "Weitere farbige Gürtel für Anfänger verbreiteten sich später, vor allem durch den Judounterricht in Europa.",
+      "Farben und Reihenfolge variieren: Karate, Taekwondo und BJJ haben je eigene Systeme."
+     ],
+     "q": "Magst du klare Etappen wie Gürtel, oder lieber Fortschritt ohne Stufen?",
+     "c": "Schreib drei Fähigkeiten auf, die du beherrschen möchtest, bevor du deinen ersten neuen Gürtel bekommst."
+    },
+    "es": {
+     "t": "El sistema de cinturones de colores",
+     "g": "Descubre cómo los cinturones de colores marcan el progreso y cómo varían los sistemas.",
+     "p": [
+      "Jigoro Kano introdujo los grados dan y el cinturón negro en el judo a finales del siglo XIX.",
+      "Más tarde se extendieron otros colores para principiantes, sobre todo con la enseñanza del judo en Europa.",
+      "Los colores y su orden varían: kárate, taekwondo y BJJ tienen cada uno su propio sistema."
+     ],
+     "q": "¿Te gustan las metas claras como los cinturones o prefieres progresar sin niveles?",
+     "c": "Escribe tres habilidades que querrías dominar antes de ganar tu primer cinturón nuevo."
+    },
+    "fr": {
+     "t": "Le système des ceintures de couleur",
+     "g": "Découvre comment les ceintures de couleur marquent les progrès et comment les systèmes varient.",
+     "p": [
+      "Jigoro Kano a introduit les grades dan et la ceinture noire au judo à la fin du XIXe siècle.",
+      "D'autres couleurs pour débutants se sont répandues plus tard, surtout avec l'enseignement du judo en Europe.",
+      "Les couleurs et leur ordre varient : karaté, taekwondo et JJB ont chacun leur système."
+     ],
+     "q": "Aimes-tu les étapes claires comme les ceintures, ou préfères-tu progresser sans niveaux ?",
+     "c": "Note trois compétences que tu voudrais maîtriser avant d'obtenir ta première nouvelle ceinture."
+    },
+    "it": {
+     "t": "Il sistema delle cinture colorate",
+     "g": "Scopri come le cinture colorate segnano i progressi e come variano i sistemi.",
+     "p": [
+      "Jigoro Kano introdusse i gradi dan e la cintura nera nel judo alla fine dell'Ottocento.",
+      "Altre cinture colorate per principianti si diffusero più tardi, soprattutto con l'insegnamento del judo in Europa.",
+      "Colori e ordine variano: karate, taekwondo e BJJ hanno ciascuno il proprio sistema."
+     ],
+     "q": "Ti piacciono le tappe chiare come le cinture o preferisci progredire senza livelli?",
+     "c": "Scrivi tre abilità che vorresti padroneggiare prima di ottenere la tua prima cintura nuova."
+    },
+    "pt": {
+     "t": "O sistema de cintos coloridos",
+     "g": "Descobre como os cintos coloridos marcam o progresso e como os sistemas variam.",
+     "p": [
+      "Jigoro Kano introduziu os graus dan e o cinto negro no judo no final do século XIX.",
+      "Mais tarde espalharam-se outras cores para principiantes, sobretudo com o ensino do judo na Europa.",
+      "As cores e a sua ordem variam: karaté, taekwondo e BJJ têm cada um o seu sistema."
+     ],
+     "q": "Gostas de metas claras como os cintos ou preferes progredir sem níveis?",
+     "c": "Escreve três competências que quererias dominar antes de ganhares o teu primeiro cinto novo."
+    },
+    "pt_BR": {
+     "t": "O sistema de faixas coloridas",
+     "g": "Descubra como as faixas coloridas marcam o progresso e como os sistemas variam.",
+     "p": [
+      "Jigoro Kano introduziu os graus dan e a faixa preta no judô no final do século XIX.",
+      "Depois se espalharam outras cores para iniciantes, sobretudo com o ensino do judô na Europa.",
+      "As cores e a ordem variam: caratê, taekwondo e jiu-jítsu têm cada um o seu sistema."
+     ],
+     "q": "Você gosta de metas claras como as faixas ou prefere evoluir sem níveis?",
+     "c": "Anote três habilidades que você gostaria de dominar antes de ganhar sua primeira faixa nova."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The black belt meaning",
+     "g": "Understand why a black belt is often seen as a new beginning rather than an end.",
+     "p": [
+      "The first black belt grade in Japanese is shodan, which literally means beginning degree.",
+      "Many teachers say the black belt shows you have learned the basics well enough to truly start.",
+      "After it come further dan grades that can take many years of patient practice."
+     ],
+     "q": "What goal in your life turned out to be the start of something new, rather than the end?",
+     "c": "Think of a skill you finished learning and write one way you could keep deepening it."
+    },
+    "de": {
+     "t": "Die Bedeutung des schwarzen Gürtels",
+     "g": "Verstehe, warum der schwarze Gürtel oft als neuer Anfang und nicht als Ende gilt.",
+     "p": [
+      "Der erste Schwarzgurtgrad heißt auf Japanisch Shodan, wörtlich Anfangsstufe.",
+      "Viele Lehrer sagen, er zeige, dass man die Grundlagen gut genug kennt, um wirklich anzufangen.",
+      "Danach folgen weitere Dan-Grade, die viele Jahre geduldiger Übung brauchen können."
+     ],
+     "q": "Welches Ziel in deinem Leben war am Ende der Anfang von etwas Neuem?",
+     "c": "Denk an eine Fähigkeit, die du gelernt hast, und schreib auf, wie du sie weiter vertiefen könntest."
+    },
+    "es": {
+     "t": "El significado del cinturón negro",
+     "g": "Entiende por qué el cinturón negro suele verse como un nuevo comienzo y no como un final.",
+     "p": [
+      "El primer grado de cinturón negro en japonés es shodan, que significa literalmente grado inicial.",
+      "Muchos maestros dicen que demuestra que conoces la base lo bastante bien para empezar de verdad.",
+      "Después vienen más grados dan, que pueden llevar muchos años de práctica paciente."
+     ],
+     "q": "¿Qué meta de tu vida resultó ser el inicio de algo nuevo y no el final?",
+     "c": "Piensa en una habilidad que terminaste de aprender y escribe una forma de seguir profundizando en ella."
+    },
+    "fr": {
+     "t": "Le sens de la ceinture noire",
+     "g": "Comprends pourquoi la ceinture noire est souvent vue comme un nouveau départ plutôt qu'une fin.",
+     "p": [
+      "Le premier grade de ceinture noire se dit shodan en japonais, littéralement degré du commencement.",
+      "Beaucoup de maîtres disent qu'elle montre qu'on connaît assez bien les bases pour vraiment commencer.",
+      "Viennent ensuite d'autres grades dan, qui peuvent demander de longues années de pratique patiente."
+     ],
+     "q": "Quel objectif de ta vie s'est révélé être le début de quelque chose, plutôt qu'une fin ?",
+     "c": "Pense à une compétence que tu as fini d'apprendre et note une façon de continuer à l'approfondir."
+    },
+    "it": {
+     "t": "Il significato della cintura nera",
+     "g": "Capisci perché la cintura nera è spesso vista come un nuovo inizio e non come una fine.",
+     "p": [
+      "Il primo grado di cintura nera in giapponese è shodan, letteralmente grado iniziale.",
+      "Molti maestri dicono che dimostra di conoscere le basi abbastanza bene per cominciare davvero.",
+      "Poi arrivano altri gradi dan, che possono richiedere molti anni di pratica paziente."
+     ],
+     "q": "Quale traguardo della tua vita si è rivelato l'inizio di qualcosa di nuovo, più che una fine?",
+     "c": "Pensa a un'abilità che hai finito di imparare e scrivi un modo per continuare ad approfondirla."
+    },
+    "pt": {
+     "t": "O significado do cinto negro",
+     "g": "Percebe porque é que o cinto negro é muitas vezes visto como um novo começo e não um fim.",
+     "p": [
+      "O primeiro grau de cinto negro, em japonês, é shodan, que significa literalmente grau inicial.",
+      "Muitos mestres dizem que mostra que conheces a base o suficiente para começar a sério.",
+      "Depois vêm outros graus dan, que podem levar muitos anos de prática paciente."
+     ],
+     "q": "Que objetivo da tua vida acabou por ser o início de algo novo, e não o fim?",
+     "c": "Pensa numa competência que acabaste de aprender e escreve uma forma de continuar a aprofundá-la."
+    },
+    "pt_BR": {
+     "t": "O significado da faixa preta",
+     "g": "Entenda por que a faixa preta costuma ser vista como um novo começo e não como um fim.",
+     "p": [
+      "O primeiro grau de faixa preta, em japonês, é shodan, que significa literalmente grau inicial.",
+      "Muitos mestres dizem que ela mostra que você conhece a base o bastante para começar de verdade.",
+      "Depois vêm outros graus dan, que podem levar muitos anos de prática paciente."
+     ],
+     "q": "Que objetivo da sua vida acabou sendo o começo de algo novo, e não o fim?",
+     "c": "Pense numa habilidade que você terminou de aprender e anote um jeito de continuar a aprofundá-la."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting in Japanese",
+     "g": "Learn to count to ten in Japanese, as heard in many dojos.",
+     "p": [
+      "One to five: ichi, ni, san, shi or yon, go.",
+      "Six to ten: roku, shichi or nana, hachi, ku or kyu, ju.",
+      "Teachers count aloud to keep the group moving together in warm-ups and drills."
+     ],
+     "q": "Which numbers sound easiest to you, and which feel tricky to remember?",
+     "c": "Count from one to ten in Japanese aloud while doing ten slow squats or arm circles."
+    },
+    "de": {
+     "t": "Zählen auf Japanisch",
+     "g": "Lerne, auf Japanisch bis zehn zu zählen, wie man es in vielen Dojos hört.",
+     "p": [
+      "Eins bis fünf: ichi, ni, san, shi oder yon, go.",
+      "Sechs bis zehn: roku, shichi oder nana, hachi, ku oder kyu, ju.",
+      "Lehrer zählen laut, damit sich die Gruppe beim Aufwärmen und Üben im Gleichtakt bewegt."
+     ],
+     "q": "Welche Zahlen klingen für dich am leichtesten, und welche kannst du dir schwer merken?",
+     "c": "Zähl laut auf Japanisch von eins bis zehn und mach dabei zehn langsame Kniebeugen oder Armkreise."
+    },
+    "es": {
+     "t": "Contar en japonés",
+     "g": "Aprende a contar hasta diez en japonés, como se oye en muchos dojos.",
+     "p": [
+      "Del uno al cinco: ichi, ni, san, shi o yon, go.",
+      "Del seis al diez: roku, shichi o nana, hachi, ku o kyu, ju.",
+      "Los maestros cuentan en voz alta para que el grupo se mueva a la vez en calentamientos y ejercicios."
+     ],
+     "q": "¿Qué números te suenan más fáciles y cuáles te cuesta recordar?",
+     "c": "Cuenta del uno al diez en japonés en voz alta mientras haces diez sentadillas lentas o círculos de brazos."
+    },
+    "fr": {
+     "t": "Compter en japonais",
+     "g": "Apprends à compter jusqu'à dix en japonais, comme on l'entend dans beaucoup de dojos.",
+     "p": [
+      "De un à cinq : ichi, ni, san, shi ou yon, go.",
+      "De six à dix : roku, shichi ou nana, hachi, ku ou kyu, ju.",
+      "Les enseignants comptent à voix haute pour que le groupe bouge ensemble à l'échauffement et aux exercices."
+     ],
+     "q": "Quels nombres te semblent les plus faciles, et lesquels sont difficiles à retenir ?",
+     "c": "Compte de un à dix en japonais à voix haute en faisant dix squats lents ou cercles de bras."
+    },
+    "it": {
+     "t": "Contare in giapponese",
+     "g": "Impara a contare fino a dieci in giapponese, come si sente in molti dojo.",
+     "p": [
+      "Da uno a cinque: ichi, ni, san, shi o yon, go.",
+      "Da sei a dieci: roku, shichi o nana, hachi, ku o kyu, ju.",
+      "I maestri contano ad alta voce perché il gruppo si muova insieme nel riscaldamento e negli esercizi."
+     ],
+     "q": "Quali numeri ti sembrano più facili e quali più difficili da ricordare?",
+     "c": "Conta da uno a dieci in giapponese ad alta voce facendo dieci squat lenti o cerchi con le braccia."
+    },
+    "pt": {
+     "t": "Contar em japonês",
+     "g": "Aprende a contar até dez em japonês, como se ouve em muitos dojos.",
+     "p": [
+      "De um a cinco: ichi, ni, san, shi ou yon, go.",
+      "De seis a dez: roku, shichi ou nana, hachi, ku ou kyu, ju.",
+      "Os professores contam em voz alta para o grupo se mexer em conjunto no aquecimento e nos exercícios."
+     ],
+     "q": "Que números te parecem mais fáceis e quais custam mais a lembrar?",
+     "c": "Conta de um a dez em japonês em voz alta enquanto fazes dez agachamentos lentos ou círculos com os braços."
+    },
+    "pt_BR": {
+     "t": "Contando em japonês",
+     "g": "Aprenda a contar até dez em japonês, como se ouve em muitos dojos.",
+     "p": [
+      "De um a cinco: ichi, ni, san, shi ou yon, go.",
+      "De seis a dez: roku, shichi ou nana, hachi, ku ou kyu, ju.",
+      "Os professores contam em voz alta para o grupo se mover junto no aquecimento e nos exercícios."
+     ],
+     "q": "Quais números parecem mais fáceis para você e quais são difíceis de lembrar?",
+     "c": "Conte de um a dez em japonês em voz alta enquanto faz dez agachamentos lentos ou círculos com os braços."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting in Korean",
+     "g": "Learn to count to ten in Korean, as heard in taekwondo classes.",
+     "p": [
+      "One to five: hana, dul, set, net, daseot.",
+      "Six to ten: yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "Korean also has a second number system, used for things like dan grades and dates."
+     ],
+     "q": "Which do you find easier so far, counting in Japanese or in Korean?",
+     "c": "Count from one to ten in Korean aloud while marching on the spot."
+    },
+    "de": {
+     "t": "Zählen auf Koreanisch",
+     "g": "Lerne, auf Koreanisch bis zehn zu zählen, wie man es im Taekwondo hört.",
+     "p": [
+      "Eins bis fünf: hana, dul, set, net, daseot.",
+      "Sechs bis zehn: yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "Koreanisch hat noch ein zweites Zahlensystem, etwa für Dan-Grade und Datumsangaben."
+     ],
+     "q": "Was fällt dir bisher leichter: Zählen auf Japanisch oder auf Koreanisch?",
+     "c": "Zähl laut auf Koreanisch von eins bis zehn und marschier dabei auf der Stelle."
+    },
+    "es": {
+     "t": "Contar en coreano",
+     "g": "Aprende a contar hasta diez en coreano, como se oye en las clases de taekwondo.",
+     "p": [
+      "Del uno al cinco: hana, dul, set, net, daseot.",
+      "Del seis al diez: yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "El coreano tiene además un segundo sistema numérico, usado para grados dan o fechas."
+     ],
+     "q": "¿Qué te resulta más fácil hasta ahora, contar en japonés o en coreano?",
+     "c": "Cuenta del uno al diez en coreano en voz alta mientras marchas en el sitio."
+    },
+    "fr": {
+     "t": "Compter en coréen",
+     "g": "Apprends à compter jusqu'à dix en coréen, comme on l'entend en taekwondo.",
+     "p": [
+      "De un à cinq : hana, dul, set, net, daseot.",
+      "De six à dix : yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "Le coréen a aussi un second système de nombres, utilisé pour les grades dan ou les dates."
+     ],
+     "q": "Qu'est-ce qui te semble le plus facile jusqu'ici : compter en japonais ou en coréen ?",
+     "c": "Compte de un à dix en coréen à voix haute en marchant sur place."
+    },
+    "it": {
+     "t": "Contare in coreano",
+     "g": "Impara a contare fino a dieci in coreano, come si sente nelle lezioni di taekwondo.",
+     "p": [
+      "Da uno a cinque: hana, dul, set, net, daseot.",
+      "Da sei a dieci: yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "Il coreano ha anche un secondo sistema numerico, usato per i gradi dan o le date."
+     ],
+     "q": "Finora cosa trovi più facile, contare in giapponese o in coreano?",
+     "c": "Conta da uno a dieci in coreano ad alta voce marciando sul posto."
+    },
+    "pt": {
+     "t": "Contar em coreano",
+     "g": "Aprende a contar até dez em coreano, como se ouve nas aulas de taekwondo.",
+     "p": [
+      "De um a cinco: hana, dul, set, net, daseot.",
+      "De seis a dez: yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "O coreano tem ainda um segundo sistema de números, usado para graus dan ou datas."
+     ],
+     "q": "O que te parece mais fácil até agora, contar em japonês ou em coreano?",
+     "c": "Conta de um a dez em coreano em voz alta enquanto marchas no lugar."
+    },
+    "pt_BR": {
+     "t": "Contando em coreano",
+     "g": "Aprenda a contar até dez em coreano, como se ouve nas aulas de taekwondo.",
+     "p": [
+      "De um a cinco: hana, dul, set, net, daseot.",
+      "De seis a dez: yeoseot, ilgop, yeodeol, ahop, yeol.",
+      "O coreano tem ainda um segundo sistema de números, usado para graus dan ou datas."
+     ],
+     "q": "O que parece mais fácil para você até agora, contar em japonês ou em coreano?",
+     "c": "Conte de um a dez em coreano em voz alta enquanto marcha no lugar."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first steps into martial arts",
+     "g": "Look back at styles, etiquette and customs and choose what interests you most.",
+     "p": [
+      "You met major arts from Japan, China, Korea, Thailand and Brazil and their key ideas.",
+      "You learned about the training hall, bows, teachers, seniors, uniforms and belts.",
+      "You can now count to ten in Japanese and Korean, just like in many classes."
+     ],
+     "q": "Which art or custom from this first month surprised or inspired you the most?",
+     "c": "Pick your top two arts so far and write one reason you would like to try each."
+    },
+    "de": {
+     "t": "Rückblick: erste Schritte in die Kampfkunst",
+     "g": "Blick auf Stile, Etikette und Bräuche zurück und wähl, was dich am meisten interessiert.",
+     "p": [
+      "Du hast große Künste aus Japan, China, Korea, Thailand und Brasilien und ihre Kernideen kennengelernt.",
+      "Du weißt jetzt mehr über Trainingsraum, Verbeugung, Lehrer, Ältere, Anzüge und Gürtel.",
+      "Du kannst auf Japanisch und Koreanisch bis zehn zählen, wie in vielen Kursen."
+     ],
+     "q": "Welche Kunst oder welcher Brauch aus diesem ersten Monat hat dich am meisten überrascht oder inspiriert?",
+     "c": "Wähl deine zwei Lieblingskünste bisher und schreib je einen Grund auf, sie auszuprobieren."
+    },
+    "es": {
+     "t": "Repaso: primeros pasos en las artes marciales",
+     "g": "Repasa estilos, etiqueta y costumbres y elige lo que más te interesa.",
+     "p": [
+      "Conociste grandes artes de Japón, China, Corea, Tailandia y Brasil y sus ideas clave.",
+      "Aprendiste sobre la sala, las reverencias, los maestros, los veteranos, los uniformes y los cinturones.",
+      "Ya sabes contar hasta diez en japonés y en coreano, como en muchas clases."
+     ],
+     "q": "¿Qué arte o costumbre de este primer mes te sorprendió o inspiró más?",
+     "c": "Elige tus dos artes favoritas hasta ahora y escribe un motivo para probar cada una."
+    },
+    "fr": {
+     "t": "Bilan : premiers pas dans les arts martiaux",
+     "g": "Repense aux styles, à l'étiquette et aux coutumes, et choisis ce qui t'intéresse le plus.",
+     "p": [
+      "Tu as découvert de grands arts du Japon, de Chine, de Corée, de Thaïlande et du Brésil et leurs idées clés.",
+      "Tu as appris la salle, le salut, les maîtres, les anciens, les tenues et les ceintures.",
+      "Tu sais maintenant compter jusqu'à dix en japonais et en coréen, comme dans bien des cours."
+     ],
+     "q": "Quel art ou quelle coutume de ce premier mois t'a le plus surpris ou inspiré ?",
+     "c": "Choisis tes deux arts préférés pour l'instant et note une raison d'essayer chacun."
+    },
+    "it": {
+     "t": "Ripasso: primi passi nelle arti marziali",
+     "g": "Ripensa a stili, etichetta e usanze e scegli ciò che ti interessa di più.",
+     "p": [
+      "Hai conosciuto grandi arti di Giappone, Cina, Corea, Thailandia e Brasile e le loro idee chiave.",
+      "Hai imparato la sala, il saluto, i maestri, gli anziani, le divise e le cinture.",
+      "Ora sai contare fino a dieci in giapponese e in coreano, come in molte lezioni."
+     ],
+     "q": "Quale arte o usanza di questo primo mese ti ha sorpreso o ispirato di più?",
+     "c": "Scegli le tue due arti preferite finora e scrivi un motivo per provarle entrambe."
+    },
+    "pt": {
+     "t": "Revisão: primeiros passos nas artes marciais",
+     "g": "Revê estilos, etiqueta e costumes e escolhe o que mais te interessa.",
+     "p": [
+      "Conheceste grandes artes do Japão, China, Coreia, Tailândia e Brasil e as suas ideias principais.",
+      "Aprendeste sobre a sala, as vénias, os mestres, os mais antigos, os uniformes e os cintos.",
+      "Já sabes contar até dez em japonês e em coreano, como em muitas aulas."
+     ],
+     "q": "Que arte ou costume deste primeiro mês mais te surpreendeu ou inspirou?",
+     "c": "Escolhe as tuas duas artes preferidas até agora e escreve uma razão para experimentares cada uma."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros passos nas artes marciais",
+     "g": "Revise estilos, etiqueta e costumes e escolha o que mais interessa a você.",
+     "p": [
+      "Você conheceu grandes artes do Japão, China, Coreia, Tailândia e Brasil e suas ideias principais.",
+      "Aprendeu sobre o espaço de treino, as reverências, os mestres, os veteranos, os uniformes e as faixas.",
+      "Já sabe contar até dez em japonês e em coreano, como em muitas aulas."
+     ],
+     "q": "Que arte ou costume deste primeiro mês mais surpreendeu ou inspirou você?",
+     "c": "Escolha suas duas artes favoritas até agora e anote um motivo para experimentar cada uma."
+    }
+   }
+  }
+ ]
+}

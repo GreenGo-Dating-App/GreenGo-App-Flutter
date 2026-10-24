@@ -1,0 +1,835 @@
+{
+ "topic": "barbecue",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding direct heat",
+     "g": "Learn when to cook food right over the flames for fast, flavourful results.",
+     "p": [
+      "Direct heat means the food sits straight above the coals or burners, getting strong heat from below.",
+      "It is perfect for thin, quick foods: burgers, sausages, thin steaks, skewers and sliced vegetables.",
+      "Rule of thumb: if it cooks in about 20 minutes or less, direct heat is usually the right choice."
+     ],
+     "q": "Which of your favourite grilled foods do you think cook best over direct heat?",
+     "c": "Make a list of five foods and sort them into direct heat or not, using the 20-minute rule."
+    },
+    "de": {
+     "t": "Direkte Hitze verstehen",
+     "g": "Lerne, wann du Grillgut direkt über der Glut garst, für schnelle, aromatische Ergebnisse.",
+     "p": [
+      "Direkte Hitze heißt: Das Grillgut liegt genau über Glut oder Brennern und bekommt kräftige Hitze von unten.",
+      "Ideal für dünne, schnelle Sachen: Burger, Würstchen, dünne Steaks, Spieße und Gemüsescheiben.",
+      "Faustregel: Was in etwa 20 Minuten oder weniger gar ist, gehört meist auf die direkte Hitze."
+     ],
+     "q": "Welche deiner Lieblingsspeisen vom Grill gelingen deiner Meinung nach am besten direkt?",
+     "c": "Schreib fünf Lebensmittel auf und sortiere sie mit der 20-Minuten-Regel: direkte Hitze oder nicht?"
+    },
+    "es": {
+     "t": "Entender el calor directo",
+     "g": "Aprende cuándo cocinar justo encima del fuego para lograr resultados rápidos y sabrosos.",
+     "p": [
+      "Calor directo significa que la comida está justo sobre las brasas o los quemadores y recibe calor fuerte desde abajo.",
+      "Es perfecto para alimentos finos y rápidos: hamburguesas, salchichas, filetes finos, brochetas y verduras en rodajas.",
+      "Regla práctica: si se cocina en unos 20 minutos o menos, el calor directo suele ser la mejor opción."
+     ],
+     "q": "¿Cuáles de tus comidas a la parrilla favoritas crees que salen mejor a fuego directo?",
+     "c": "Haz una lista de cinco alimentos y clasifícalos en calor directo o no, con la regla de los 20 minutos."
+    },
+    "fr": {
+     "t": "Comprendre la chaleur directe",
+     "g": "Apprends quand cuire juste au-dessus des flammes pour des résultats rapides et savoureux.",
+     "p": [
+      "La chaleur directe, c'est quand l'aliment est juste au-dessus des braises ou des brûleurs et chauffe fort par-dessous.",
+      "Parfaite pour les aliments fins et rapides : burgers, saucisses, steaks fins, brochettes et légumes en tranches.",
+      "Règle simple : si ça cuit en 20 minutes environ ou moins, la chaleur directe est souvent le bon choix."
+     ],
+     "q": "Parmi tes grillades préférées, lesquelles réussissent le mieux en chaleur directe selon toi ?",
+     "c": "Liste cinq aliments et classe-les en chaleur directe ou non grâce à la règle des 20 minutes."
+    },
+    "it": {
+     "t": "Capire il calore diretto",
+     "g": "Scopri quando cuocere proprio sopra la fiamma per risultati veloci e saporiti.",
+     "p": [
+      "Calore diretto significa che il cibo sta proprio sopra le braci o i bruciatori e riceve calore forte dal basso.",
+      "È perfetto per cibi sottili e rapidi: hamburger, salsicce, bistecche sottili, spiedini e verdure a fette.",
+      "Regola pratica: se cuoce in circa 20 minuti o meno, il calore diretto di solito è la scelta giusta."
+     ],
+     "q": "Quali dei tuoi cibi alla griglia preferiti pensi vengano meglio a calore diretto?",
+     "c": "Fai una lista di cinque cibi e dividili in calore diretto o no, usando la regola dei 20 minuti."
+    },
+    "pt": {
+     "t": "Perceber o calor direto",
+     "g": "Aprende quando cozinhar mesmo por cima das brasas para resultados rápidos e saborosos.",
+     "p": [
+      "Calor direto significa que a comida fica logo acima das brasas ou dos queimadores, recebendo calor forte por baixo.",
+      "É perfeito para alimentos finos e rápidos: hambúrgueres, salsichas, bifes finos, espetadas e legumes às rodelas.",
+      "Regra prática: se coze em cerca de 20 minutos ou menos, o calor direto costuma ser a escolha certa."
+     ],
+     "q": "Quais dos teus grelhados preferidos achas que ficam melhor em calor direto?",
+     "c": "Faz uma lista de cinco alimentos e separa-os em calor direto ou não, usando a regra dos 20 minutos."
+    },
+    "pt_BR": {
+     "t": "Entendendo o calor direto",
+     "g": "Aprenda quando cozinhar bem em cima das brasas para resultados rápidos e saborosos.",
+     "p": [
+      "Calor direto significa que a comida fica logo acima das brasas ou queimadores, recebendo calor forte por baixo.",
+      "É perfeito para alimentos finos e rápidos: hambúrgueres, linguiças finas, bifes finos, espetinhos e legumes fatiados.",
+      "Regra prática: se fica pronto em cerca de 20 minutos ou menos, o calor direto costuma ser a melhor escolha."
+     ],
+     "q": "Quais dos seus pratos de churrasco favoritos você acha que ficam melhores no calor direto?",
+     "c": "Faça uma lista de cinco alimentos e separe em calor direto ou não, usando a regra dos 20 minutos."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding indirect heat",
+     "g": "Learn to use the grill like an outdoor oven for bigger, thicker foods.",
+     "p": [
+      "Indirect heat means the food sits beside the fire, not over it, so hot air cooks it gently from all sides.",
+      "Keep the lid closed: it traps the heat and turns the grill into a convection oven with a smoky touch.",
+      "Use it for whole chickens, roasts, thick chops, ribs and anything that needs longer than about 20 minutes."
+     ],
+     "q": "What would you love to cook on a grill that you normally make in the oven?",
+     "c": "Look at one oven recipe you like and think how you could cook it with indirect heat on a grill instead."
+    },
+    "de": {
+     "t": "Indirekte Hitze verstehen",
+     "g": "Lerne, den Grill wie einen Backofen im Freien für größere, dickere Stücke zu nutzen.",
+     "p": [
+      "Indirekte Hitze heißt: Das Grillgut liegt neben dem Feuer, nicht darüber, und heiße Luft gart es sanft von allen Seiten.",
+      "Lass den Deckel zu: Er hält die Hitze und macht den Grill zu einem Umluftofen mit Rauchnote.",
+      "Ideal für ganze Hähnchen, Braten, dicke Koteletts, Rippchen und alles, was länger als etwa 20 Minuten braucht."
+     ],
+     "q": "Was würdest du gern auf dem Grill zubereiten, das du sonst im Ofen machst?",
+     "c": "Nimm ein Ofenrezept, das du magst, und überleg, wie du es mit indirekter Hitze auf dem Grill zubereiten könntest."
+    },
+    "es": {
+     "t": "Entender el calor indirecto",
+     "g": "Aprende a usar la parrilla como un horno al aire libre para piezas más grandes y gruesas.",
+     "p": [
+      "Calor indirecto significa que la comida está al lado del fuego, no encima, y el aire caliente la cocina suave por todos lados.",
+      "Mantén la tapa cerrada: atrapa el calor y convierte la parrilla en un horno de convección con toque ahumado.",
+      "Úsalo para pollos enteros, asados, chuletas gruesas, costillas y todo lo que necesite más de unos 20 minutos."
+     ],
+     "q": "¿Qué te encantaría cocinar en la parrilla que normalmente haces en el horno?",
+     "c": "Elige una receta de horno que te guste y piensa cómo podrías hacerla con calor indirecto en la parrilla."
+    },
+    "fr": {
+     "t": "Comprendre la chaleur indirecte",
+     "g": "Apprends à utiliser le barbecue comme un four d'extérieur pour les pièces plus grosses.",
+     "p": [
+      "En chaleur indirecte, l'aliment est à côté du feu, pas dessus, et l'air chaud le cuit doucement de tous les côtés.",
+      "Garde le couvercle fermé : il retient la chaleur et transforme le barbecue en four à chaleur tournante fumé.",
+      "Idéal pour poulets entiers, rôtis, côtes épaisses, travers et tout ce qui demande plus d'environ 20 minutes."
+     ],
+     "q": "Qu'aimerais-tu cuire au barbecue que tu fais d'habitude au four ?",
+     "c": "Prends une recette au four que tu aimes et imagine comment la faire en chaleur indirecte au barbecue."
+    },
+    "it": {
+     "t": "Capire il calore indiretto",
+     "g": "Impara a usare il barbecue come un forno all'aperto per pezzi più grandi e spessi.",
+     "p": [
+      "Calore indiretto significa che il cibo sta accanto al fuoco, non sopra, e l'aria calda lo cuoce dolcemente da ogni lato.",
+      "Tieni il coperchio chiuso: trattiene il calore e trasforma il barbecue in un forno ventilato dal tocco affumicato.",
+      "Usalo per polli interi, arrosti, braciole spesse, costine e tutto ciò che richiede più di circa 20 minuti."
+     ],
+     "q": "Cosa ti piacerebbe cucinare sul barbecue che di solito prepari in forno?",
+     "c": "Scegli una ricetta al forno che ami e pensa a come potresti farla con il calore indiretto sul barbecue."
+    },
+    "pt": {
+     "t": "Perceber o calor indireto",
+     "g": "Aprende a usar o grelhador como um forno ao ar livre para peças maiores e mais grossas.",
+     "p": [
+      "Calor indireto significa que a comida fica ao lado do fogo, não por cima, e o ar quente coze-a suavemente por todos os lados.",
+      "Mantém a tampa fechada: guarda o calor e transforma o grelhador num forno de convecção com um toque fumado.",
+      "Usa-o para frangos inteiros, assados, costeletas grossas, entrecosto e tudo o que precise de mais de uns 20 minutos."
+     ],
+     "q": "O que gostavas de cozinhar no grelhador que normalmente fazes no forno?",
+     "c": "Escolhe uma receita de forno de que gostes e pensa em como a podias fazer com calor indireto no grelhador."
+    },
+    "pt_BR": {
+     "t": "Entendendo o calor indireto",
+     "g": "Aprenda a usar a churrasqueira como um forno ao ar livre para peças maiores e mais grossas.",
+     "p": [
+      "Calor indireto significa que a comida fica ao lado do fogo, não em cima, e o ar quente cozinha devagar por todos os lados.",
+      "Mantenha a tampa fechada: ela segura o calor e transforma a churrasqueira num forno de convecção defumado.",
+      "Use para frango inteiro, assados, costeletas grossas, costela suína e tudo que precise de mais de uns 20 minutos."
+     ],
+     "q": "O que você adoraria fazer na churrasqueira que normalmente prepara no forno?",
+     "c": "Escolha uma receita de forno de que você gosta e pense como faria com calor indireto na churrasqueira."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The two-zone fire setup",
+     "g": "Build a grill with a hot zone and a safe zone so you can control any cook.",
+     "p": [
+      "Bank all the coals on one side, or light burners on just one side, leaving the other side with no fire.",
+      "Sear food over the hot zone, then move it to the cool side to finish cooking gently with the lid closed.",
+      "The cool side is your safety net: when flames jump or food browns too fast, simply slide it over."
+     ],
+     "q": "Can you think of a moment when a safe zone would have saved something you were cooking?",
+     "c": "Set up a two-zone fire on your next cook, or sketch one on paper, and mark the hot and safe zones."
+    },
+    "de": {
+     "t": "Das Zwei-Zonen-Feuer",
+     "g": "Richte einen Grill mit heißer und sicherer Zone ein, damit du jedes Grillgut im Griff hast.",
+     "p": [
+      "Schichte alle Kohlen auf eine Seite oder zünde nur die Brenner einer Seite, die andere bleibt ohne Feuer.",
+      "Brate über der heißen Zone an und schieb das Grillgut dann auf die kühle Seite, um es mit Deckel sanft fertigzugaren.",
+      "Die kühle Seite ist dein Sicherheitsnetz: Wenn Flammen hochschlagen oder etwas zu schnell bräunt, schieb es rüber."
+     ],
+     "q": "Fällt dir ein Moment ein, in dem eine sichere Zone etwas gerettet hätte, das du gegrillt hast?",
+     "c": "Richte beim nächsten Grillen ein Zwei-Zonen-Feuer ein oder skizziere es und markiere heiße und sichere Zone."
+    },
+    "es": {
+     "t": "El fuego de dos zonas",
+     "g": "Monta la parrilla con una zona caliente y una zona segura para controlar cualquier cocción.",
+     "p": [
+      "Amontona todo el carbón a un lado, o enciende solo los quemadores de un lado, y deja el otro sin fuego.",
+      "Sella sobre la zona caliente y luego pasa la comida al lado frío para terminarla suavemente con la tapa cerrada.",
+      "El lado frío es tu red de seguridad: si saltan llamas o algo se dora demasiado rápido, solo desplázalo."
+     ],
+     "q": "¿Recuerdas algún momento en que una zona segura habría salvado algo que estabas cocinando?",
+     "c": "Monta un fuego de dos zonas en tu próxima parrillada, o dibújalo en papel, y marca la zona caliente y la segura."
+    },
+    "fr": {
+     "t": "Le feu à deux zones",
+     "g": "Installe une zone chaude et une zone sûre pour maîtriser n'importe quelle cuisson.",
+     "p": [
+      "Regroupe toutes les braises d'un côté, ou allume les brûleurs d'un seul côté, et laisse l'autre sans feu.",
+      "Saisis au-dessus de la zone chaude, puis glisse l'aliment côté froid pour finir en douceur, couvercle fermé.",
+      "Le côté froid est ton filet de sécurité : si les flammes montent ou si ça dore trop vite, déplace simplement l'aliment."
+     ],
+     "q": "Te souviens-tu d'un moment où une zone sûre aurait sauvé ce que tu cuisinais ?",
+     "c": "Prépare un feu à deux zones lors de ta prochaine grillade, ou dessine-le, et indique zone chaude et zone sûre."
+    },
+    "it": {
+     "t": "Il fuoco a due zone",
+     "g": "Crea sul barbecue una zona calda e una zona sicura per controllare qualsiasi cottura.",
+     "p": [
+      "Ammassa tutte le braci da un lato, o accendi solo i bruciatori di un lato, lasciando l'altro senza fuoco.",
+      "Scotta sulla zona calda, poi sposta il cibo sul lato freddo per finire la cottura dolcemente a coperchio chiuso.",
+      "Il lato freddo è la tua rete di sicurezza: se salgono le fiamme o qualcosa scurisce troppo in fretta, spostalo lì."
+     ],
+     "q": "Ti viene in mente un momento in cui una zona sicura avrebbe salvato qualcosa che stavi cucinando?",
+     "c": "Prepara un fuoco a due zone alla prossima grigliata, o disegnalo su carta, e segna zona calda e zona sicura."
+    },
+    "pt": {
+     "t": "O fogo de duas zonas",
+     "g": "Monta o grelhador com uma zona quente e uma zona segura para controlares qualquer cozedura.",
+     "p": [
+      "Junta todo o carvão de um lado, ou acende só os queimadores de um lado, deixando o outro sem fogo.",
+      "Sela por cima da zona quente e depois passa a comida para o lado frio para terminar devagar, de tampa fechada.",
+      "O lado frio é a tua rede de segurança: se as chamas subirem ou algo alourar depressa demais, basta mudá-lo."
+     ],
+     "q": "Lembras-te de um momento em que uma zona segura teria salvado algo que estavas a cozinhar?",
+     "c": "Monta um fogo de duas zonas no próximo churrasco, ou desenha-o em papel, e marca a zona quente e a segura."
+    },
+    "pt_BR": {
+     "t": "O fogo de duas zonas",
+     "g": "Monte a churrasqueira com uma zona quente e uma zona segura para controlar qualquer preparo.",
+     "p": [
+      "Junte todo o carvão de um lado, ou acenda só os queimadores de um lado, e deixe o outro sem fogo.",
+      "Sele em cima da zona quente e depois passe a comida para o lado frio para terminar devagar, com a tampa fechada.",
+      "O lado frio é sua rede de segurança: se as chamas subirem ou algo dourar rápido demais, é só mudar de lado."
+     ],
+     "q": "Você lembra de um momento em que uma zona segura teria salvado algo que estava preparando?",
+     "c": "Monte um fogo de duas zonas no próximo churrasco, ou desenhe no papel, e marque a zona quente e a segura."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The hand test for heat",
+     "g": "Estimate grill temperature quickly using only your hand held safely above the grate.",
+     "p": [
+      "Hold your palm about 12 cm above the grate and count how many seconds until you need to pull it away.",
+      "About 2 seconds means high heat, 4 to 5 seconds medium heat, and 6 to 7 seconds low heat.",
+      "It is a handy backup, not a precise tool; keep sleeves rolled up and never touch the grate."
+     ],
+     "q": "Do you usually judge heat by feel, by a thermometer or just by looking at the fire?",
+     "c": "Try the hand test over both zones of your grill, or near a hot oven door, and compare your counts."
+    },
+    "de": {
+     "t": "Der Handtest für die Hitze",
+     "g": "Schätze die Grilltemperatur schnell mit der Hand, sicher über dem Rost gehalten.",
+     "p": [
+      "Halte die Handfläche etwa 12 cm über den Rost und zähle die Sekunden, bis du sie wegziehen musst.",
+      "Etwa 2 Sekunden bedeuten starke Hitze, 4 bis 5 Sekunden mittlere, 6 bis 7 Sekunden schwache Hitze.",
+      "Er ist eine praktische Notlösung, kein Präzisionswerkzeug; Ärmel hochkrempeln und den Rost nie berühren."
+     ],
+     "q": "Schätzt du die Hitze meist mit Gefühl, mit Thermometer oder einfach mit Blick aufs Feuer?",
+     "c": "Mach den Handtest über beiden Zonen deines Grills oder an einer warmen Ofentür und vergleiche die Sekunden."
+    },
+    "es": {
+     "t": "La prueba de la mano",
+     "g": "Calcula rápido la temperatura de la parrilla solo con la mano, a una distancia segura de la rejilla.",
+     "p": [
+      "Pon la palma unos 12 cm sobre la rejilla y cuenta los segundos hasta que necesites retirarla.",
+      "Unos 2 segundos indican fuego fuerte, de 4 a 5 segundos fuego medio, y de 6 a 7 segundos fuego bajo.",
+      "Es un buen apoyo, no una herramienta precisa; súbete las mangas y nunca toques la rejilla."
+     ],
+     "q": "¿Sueles calcular el calor a ojo, con termómetro o mirando el fuego?",
+     "c": "Haz la prueba de la mano sobre las dos zonas de tu parrilla, o cerca de la puerta de un horno, y compara."
+    },
+    "fr": {
+     "t": "Le test de la main",
+     "g": "Estime vite la température du barbecue avec ta main, tenue en sécurité au-dessus de la grille.",
+     "p": [
+      "Place ta paume à environ 12 cm au-dessus de la grille et compte les secondes avant de devoir la retirer.",
+      "Environ 2 secondes, c'est feu vif ; 4 à 5 secondes, feu moyen ; 6 à 7 secondes, feu doux.",
+      "C'est un bon repère, pas un outil précis ; remonte tes manches et ne touche jamais la grille."
+     ],
+     "q": "Juges-tu la chaleur plutôt au ressenti, au thermomètre ou en regardant le feu ?",
+     "c": "Fais le test de la main au-dessus des deux zones de ton barbecue, ou près d'une porte de four chaude, et compare."
+    },
+    "it": {
+     "t": "Il test della mano",
+     "g": "Stima in fretta la temperatura del barbecue con la mano, tenuta a distanza sicura dalla griglia.",
+     "p": [
+      "Tieni il palmo a circa 12 cm sopra la griglia e conta i secondi finché non devi toglierlo.",
+      "Circa 2 secondi indicano fuoco alto, 4-5 secondi fuoco medio e 6-7 secondi fuoco basso.",
+      "È un aiuto pratico, non uno strumento preciso; tira su le maniche e non toccare mai la griglia."
+     ],
+     "q": "Di solito valuti il calore a sensazione, con il termometro o guardando il fuoco?",
+     "c": "Fai il test della mano sopra le due zone del barbecue, o vicino allo sportello di un forno caldo, e confronta."
+    },
+    "pt": {
+     "t": "O teste da mão",
+     "g": "Estima depressa a temperatura do grelhador só com a mão, a uma distância segura da grelha.",
+     "p": [
+      "Põe a palma da mão a cerca de 12 cm da grelha e conta os segundos até precisares de a afastar.",
+      "Cerca de 2 segundos é calor forte, 4 a 5 segundos é calor médio e 6 a 7 segundos é calor brando.",
+      "É uma boa ajuda, não um instrumento preciso; arregaça as mangas e nunca toques na grelha."
+     ],
+     "q": "Costumas avaliar o calor a olho, com termómetro ou só a olhar para o fogo?",
+     "c": "Faz o teste da mão sobre as duas zonas do grelhador, ou perto da porta de um forno quente, e compara."
+    },
+    "pt_BR": {
+     "t": "O teste da mão",
+     "g": "Estime rápido a temperatura da churrasqueira só com a mão, a uma distância segura da grelha.",
+     "p": [
+      "Coloque a palma da mão a uns 12 cm da grelha e conte os segundos até precisar tirá-la.",
+      "Uns 2 segundos indicam fogo alto, 4 a 5 segundos fogo médio e 6 a 7 segundos fogo baixo.",
+      "É uma boa referência, não um instrumento preciso; dobre as mangas e nunca encoste na grelha."
+     ],
+     "q": "Você costuma avaliar o calor no olho, com termômetro ou só olhando o fogo?",
+     "c": "Faça o teste da mão nas duas zonas da churrasqueira, ou perto da porta de um forno quente, e compare."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a meat thermometer",
+     "g": "Choose the right thermometer and learn where to insert it for an accurate reading.",
+     "p": [
+      "An instant-read thermometer checks food in seconds; a probe thermometer stays in and reports while it cooks.",
+      "Insert it into the thickest part, away from bone, fat or the grate, because these give false readings.",
+      "For thin foods like burgers or chicken breasts, slide the probe in from the side to reach the centre."
+     ],
+     "q": "Do you own a meat thermometer, and if so, how often do you actually use it?",
+     "c": "Test your thermometer in a glass of ice water: it should read about 0 °C (32 °F). If not, check its manual."
+    },
+    "de": {
+     "t": "Das Fleischthermometer benutzen",
+     "g": "Wähle das richtige Thermometer und lerne, wo du es für genaue Werte einstichst.",
+     "p": [
+      "Ein Sofort-Thermometer misst in Sekunden; ein Thermometer mit Fühler bleibt im Grillgut und meldet laufend.",
+      "Stich in die dickste Stelle, weg von Knochen, Fett oder Rost, denn diese verfälschen den Wert.",
+      "Bei dünnem Grillgut wie Burgern oder Hähnchenbrust den Fühler seitlich bis zur Mitte einführen."
+     ],
+     "q": "Hast du ein Fleischthermometer, und wenn ja, wie oft benutzt du es wirklich?",
+     "c": "Teste dein Thermometer in Eiswasser: Es sollte etwa 0 °C anzeigen. Wenn nicht, schau in die Anleitung."
+    },
+    "es": {
+     "t": "Usar un termómetro de cocina",
+     "g": "Elige el termómetro adecuado y aprende dónde clavarlo para una lectura exacta.",
+     "p": [
+      "El termómetro de lectura instantánea mide en segundos; el de sonda se queda dentro e informa mientras se cocina.",
+      "Clávalo en la parte más gruesa, lejos del hueso, la grasa o la rejilla, porque dan lecturas falsas.",
+      "En piezas finas como hamburguesas o pechugas, introduce la sonda de lado hasta llegar al centro."
+     ],
+     "q": "¿Tienes un termómetro de cocina? Si es así, ¿cuántas veces lo usas de verdad?",
+     "c": "Prueba tu termómetro en un vaso con agua y hielo: debería marcar unos 0 °C. Si no, revisa su manual."
+    },
+    "fr": {
+     "t": "Utiliser un thermomètre à viande",
+     "g": "Choisis le bon thermomètre et apprends où le piquer pour une mesure fiable.",
+     "p": [
+      "Le thermomètre à lecture instantanée mesure en quelques secondes ; la sonde reste dans l'aliment pendant la cuisson.",
+      "Pique au cœur de la partie la plus épaisse, loin de l'os, du gras ou de la grille, qui faussent la mesure.",
+      "Pour les aliments fins comme les burgers ou les blancs de poulet, glisse la sonde par le côté jusqu'au centre."
+     ],
+     "q": "As-tu un thermomètre à viande, et si oui, à quelle fréquence l'utilises-tu vraiment ?",
+     "c": "Teste ton thermomètre dans un verre d'eau glacée : il doit indiquer environ 0 °C. Sinon, consulte sa notice."
+    },
+    "it": {
+     "t": "Usare il termometro per carne",
+     "g": "Scegli il termometro giusto e impara dove inserirlo per una lettura precisa.",
+     "p": [
+      "Il termometro a lettura istantanea misura in pochi secondi; quello a sonda resta dentro e segnala durante la cottura.",
+      "Inseriscilo nella parte più spessa, lontano da osso, grasso o griglia, che falsano la lettura.",
+      "Per cibi sottili come hamburger o petti di pollo, infila la sonda di lato fino a raggiungere il centro."
+     ],
+     "q": "Hai un termometro per carne? Se sì, quanto spesso lo usi davvero?",
+     "c": "Prova il termometro in un bicchiere di acqua e ghiaccio: dovrebbe segnare circa 0 °C. Se no, guarda il manuale."
+    },
+    "pt": {
+     "t": "Usar um termómetro de carne",
+     "g": "Escolhe o termómetro certo e aprende onde o espetar para uma leitura exata.",
+     "p": [
+      "O termómetro de leitura instantânea mede em segundos; o de sonda fica dentro e vai informando durante a cozedura.",
+      "Espeta-o na parte mais grossa, longe do osso, da gordura ou da grelha, que dão leituras falsas.",
+      "Em peças finas como hambúrgueres ou peitos de frango, introduz a sonda de lado até chegar ao centro."
+     ],
+     "q": "Tens um termómetro de carne? Se sim, com que frequência o usas mesmo?",
+     "c": "Testa o termómetro num copo com água e gelo: deve marcar cerca de 0 °C. Se não marcar, consulta o manual."
+    },
+    "pt_BR": {
+     "t": "Usando um termômetro culinário",
+     "g": "Escolha o termômetro certo e aprenda onde espetar para uma leitura precisa.",
+     "p": [
+      "O termômetro de leitura instantânea mede em segundos; o de sonda fica dentro da carne e informa durante o preparo.",
+      "Espete na parte mais grossa, longe do osso, da gordura ou da grelha, que dão leituras erradas.",
+      "Em peças finas como hambúrguer ou peito de frango, coloque a sonda pela lateral até chegar ao centro."
+     ],
+     "q": "Você tem termômetro culinário? Se tem, com que frequência usa de verdade?",
+     "c": "Teste o termômetro num copo com água e gelo: ele deve marcar cerca de 0 °C. Se não marcar, veja o manual."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe internal temperatures",
+     "g": "Know the general doneness targets that make grilled food safe and delicious.",
+     "p": [
+      "Poultry, whole or minced, is generally safe at 74 °C (165 °F) in the thickest part.",
+      "Minced beef, pork or lamb, as in burgers, should reach about 71 °C (160 °F) all the way through.",
+      "Whole cuts of pork, beef and lamb are generally safe from 63 °C (145 °F) plus a short rest; check local guidance."
+     ],
+     "q": "Which of these temperatures surprised you the most?",
+     "c": "Write the three temperatures on a small card and keep it with your grilling tools as a quick reference."
+    },
+    "de": {
+     "t": "Sichere Kerntemperaturen",
+     "g": "Kenne die allgemeinen Gar-Richtwerte, die Grillgut sicher und lecker machen.",
+     "p": [
+      "Geflügel, ganz oder gehackt, gilt allgemein bei 74 °C an der dicksten Stelle als sicher.",
+      "Hackfleisch von Rind, Schwein oder Lamm, etwa im Burger, sollte durchgehend etwa 71 °C erreichen.",
+      "Ganze Stücke von Schwein, Rind und Lamm gelten ab 63 °C plus kurzer Ruhezeit als sicher; beachte lokale Empfehlungen."
+     ],
+     "q": "Welche dieser Temperaturen hat dich am meisten überrascht?",
+     "c": "Schreib die drei Temperaturen auf eine kleine Karte und leg sie als Spickzettel zu deinem Grillwerkzeug."
+    },
+    "es": {
+     "t": "Temperaturas internas seguras",
+     "g": "Conoce las temperaturas orientativas que hacen que la comida a la parrilla sea segura y rica.",
+     "p": [
+      "Las aves, enteras o picadas, se consideran seguras en general a 74 °C en la parte más gruesa.",
+      "La carne picada de vacuno, cerdo o cordero, como en hamburguesas, debe llegar a unos 71 °C en todo su interior.",
+      "Las piezas enteras de cerdo, vacuno y cordero suelen ser seguras desde 63 °C más un breve reposo; consulta guías locales."
+     ],
+     "q": "¿Cuál de estas temperaturas te sorprendió más?",
+     "c": "Escribe las tres temperaturas en una tarjeta pequeña y guárdala con tus utensilios como referencia rápida."
+    },
+    "fr": {
+     "t": "Les températures à cœur sûres",
+     "g": "Connais les repères généraux de cuisson qui rendent les grillades sûres et délicieuses.",
+     "p": [
+      "La volaille, entière ou hachée, est généralement sûre à 74 °C au cœur de la partie la plus épaisse.",
+      "La viande hachée de bœuf, porc ou agneau, comme dans les burgers, doit atteindre environ 71 °C à cœur.",
+      "Les pièces entières de porc, bœuf et agneau sont en général sûres dès 63 °C plus un court repos ; suis les conseils locaux."
+     ],
+     "q": "Laquelle de ces températures t'a le plus surpris ?",
+     "c": "Note les trois températures sur une petite carte et range-la avec tes outils de grill comme aide-mémoire."
+    },
+    "it": {
+     "t": "Temperature interne sicure",
+     "g": "Conosci i valori indicativi di cottura che rendono i cibi alla griglia sicuri e buoni.",
+     "p": [
+      "Il pollame, intero o macinato, è in genere sicuro a 74 °C nella parte più spessa.",
+      "La carne macinata di manzo, maiale o agnello, come negli hamburger, deve arrivare a circa 71 °C in tutto l'interno.",
+      "I tagli interi di maiale, manzo e agnello sono in genere sicuri da 63 °C più un breve riposo; segui le linee guida locali."
+     ],
+     "q": "Quale di queste temperature ti ha sorpreso di più?",
+     "c": "Scrivi le tre temperature su un cartoncino e tienilo con i tuoi attrezzi da barbecue come promemoria."
+    },
+    "pt": {
+     "t": "Temperaturas internas seguras",
+     "g": "Conhece as referências gerais de cozedura que tornam os grelhados seguros e saborosos.",
+     "p": [
+      "As aves, inteiras ou picadas, são em geral seguras a 74 °C na parte mais grossa.",
+      "A carne picada de vaca, porco ou borrego, como nos hambúrgueres, deve chegar a cerca de 71 °C em todo o interior.",
+      "As peças inteiras de porco, vaca e borrego são em geral seguras a partir de 63 °C e um breve repouso; segue as normas locais."
+     ],
+     "q": "Qual destas temperaturas te surpreendeu mais?",
+     "c": "Escreve as três temperaturas num cartão pequeno e guarda-o com os teus utensílios como referência rápida."
+    },
+    "pt_BR": {
+     "t": "Temperaturas internas seguras",
+     "g": "Conheça as referências gerais de ponto que deixam o churrasco seguro e gostoso.",
+     "p": [
+      "Aves, inteiras ou moídas, são em geral seguras a 74 °C na parte mais grossa.",
+      "Carne moída de boi, porco ou cordeiro, como no hambúrguer, deve chegar a uns 71 °C em todo o interior.",
+      "Cortes inteiros de porco, boi e cordeiro em geral são seguros a partir de 63 °C e um breve descanso; siga as normas locais."
+     ],
+     "q": "Qual dessas temperaturas mais surpreendeu você?",
+     "c": "Escreva as três temperaturas num cartãozinho e guarde junto com seus utensílios como referência rápida."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food safety at the grill",
+     "g": "Keep raw and cooked food apart and handle everything cleanly from fridge to plate.",
+     "p": [
+      "Use one plate and set of tongs for raw meat and a clean plate and tongs for cooked food, never the same ones.",
+      "Wash your hands after touching raw meat, and keep cold food cold in the fridge or a cooler until it hits the grill.",
+      "Do not leave cooked food out in the heat for long; on hot days chill leftovers within about an hour."
+     ],
+     "q": "What is one food safety habit you already have in the kitchen that you could bring to the grill?",
+     "c": "Prepare two clearly different plates, one for raw and one for cooked, before you light the grill next time."
+    },
+    "de": {
+     "t": "Lebensmittelsicherheit am Grill",
+     "g": "Halte Rohes und Gegartes getrennt und arbeite sauber vom Kühlschrank bis zum Teller.",
+     "p": [
+      "Nimm einen Teller und eine Zange für rohes Fleisch und saubere für Gegartes, niemals dieselben.",
+      "Wasch dir nach rohem Fleisch die Hände und halte Kühles im Kühlschrank oder in der Kühlbox, bis es auf den Grill kommt.",
+      "Lass Gegartes nicht lange in der Hitze stehen; an heißen Tagen Reste innerhalb etwa einer Stunde kühlen."
+     ],
+     "q": "Welche Hygienegewohnheit aus deiner Küche könntest du an den Grill mitnehmen?",
+     "c": "Stell vor dem nächsten Anzünden zwei deutlich verschiedene Teller bereit: einen für Rohes, einen für Gegartes."
+    },
+    "es": {
+     "t": "Seguridad alimentaria en la parrilla",
+     "g": "Separa lo crudo de lo cocinado y manipula todo con higiene, de la nevera al plato.",
+     "p": [
+      "Usa un plato y unas pinzas para la carne cruda y otros limpios para la cocinada, nunca los mismos.",
+      "Lávate las manos tras tocar carne cruda y mantén lo frío en la nevera o una nevera portátil hasta ir a la parrilla.",
+      "No dejes la comida cocinada mucho tiempo al calor; en días calurosos enfría las sobras en una hora más o menos."
+     ],
+     "q": "¿Qué hábito de higiene que ya tienes en la cocina podrías llevar a la parrilla?",
+     "c": "Antes de encender la parrilla la próxima vez, prepara dos platos bien distintos: uno para crudo y otro para cocinado."
+    },
+    "fr": {
+     "t": "La sécurité alimentaire au barbecue",
+     "g": "Sépare le cru du cuit et manipule tout proprement, du frigo à l'assiette.",
+     "p": [
+      "Utilise une assiette et des pinces pour la viande crue, et une assiette et des pinces propres pour le cuit.",
+      "Lave-toi les mains après la viande crue et garde le frais au frigo ou en glacière jusqu'au moment de griller.",
+      "Ne laisse pas le cuit longtemps à la chaleur ; par temps chaud, mets les restes au frais en une heure environ."
+     ],
+     "q": "Quelle habitude d'hygiène de ta cuisine pourrais-tu emporter au barbecue ?",
+     "c": "Avant d'allumer le barbecue la prochaine fois, prépare deux assiettes bien distinctes : une pour le cru, une pour le cuit."
+    },
+    "it": {
+     "t": "Sicurezza alimentare al barbecue",
+     "g": "Tieni separati crudo e cotto e maneggia tutto con igiene, dal frigo al piatto.",
+     "p": [
+      "Usa un piatto e delle pinze per la carne cruda e un piatto e pinze puliti per quella cotta, mai gli stessi.",
+      "Lavati le mani dopo aver toccato carne cruda e tieni il fresco in frigo o in borsa frigo fino alla griglia.",
+      "Non lasciare a lungo il cibo cotto al caldo; nelle giornate calde metti in frigo gli avanzi entro circa un'ora."
+     ],
+     "q": "Quale abitudine igienica che hai già in cucina potresti portare al barbecue?",
+     "c": "Prima di accendere il barbecue la prossima volta, prepara due piatti ben distinti: uno per il crudo e uno per il cotto."
+    },
+    "pt": {
+     "t": "Segurança alimentar no grelhador",
+     "g": "Mantém o cru separado do cozinhado e trata tudo com higiene, do frigorífico ao prato.",
+     "p": [
+      "Usa um prato e umas pinças para a carne crua e um prato e pinças limpos para a cozinhada, nunca os mesmos.",
+      "Lava as mãos depois de mexer em carne crua e mantém o que é frio no frigorífico ou numa geleira até ir para a grelha.",
+      "Não deixes comida cozinhada muito tempo ao calor; em dias quentes, guarda as sobras no frio em cerca de uma hora."
+     ],
+     "q": "Que hábito de higiene que já tens na cozinha podias levar para o grelhador?",
+     "c": "Antes de acenderes o grelhador da próxima vez, prepara dois pratos bem diferentes: um para cru e outro para cozinhado."
+    },
+    "pt_BR": {
+     "t": "Segurança alimentar no churrasco",
+     "g": "Mantenha o cru separado do pronto e manuseie tudo com higiene, da geladeira ao prato.",
+     "p": [
+      "Use um prato e um pegador para a carne crua e um prato e pegador limpos para a carne pronta, nunca os mesmos.",
+      "Lave as mãos depois de mexer em carne crua e mantenha o que é gelado na geladeira ou no cooler até ir para a grelha.",
+      "Não deixe comida pronta muito tempo no calor; em dias quentes, guarde as sobras na geladeira em cerca de uma hora."
+     ],
+     "q": "Que hábito de higiene que você já tem na cozinha poderia levar para o churrasco?",
+     "c": "Antes de acender a churrasqueira na próxima vez, separe dois pratos bem diferentes: um para cru e outro para pronto."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first perfect burger",
+     "g": "Shape, grill and rest a juicy burger with a few simple tricks.",
+     "p": [
+      "Shape patties a little wider than the bun and about 2 cm thick, handling the meat gently so it stays tender.",
+      "Press a shallow dimple in the centre with your thumb so the patty stays flat instead of puffing up.",
+      "Grill over direct medium-high heat, flip once, don't press the juices out, and cook to about 71 °C (160 °F) inside."
+     ],
+     "q": "What is your dream burger topping combination?",
+     "c": "Grill burgers using the thumb dimple trick, or plan your perfect burger and its toppings in detail."
+    },
+    "de": {
+     "t": "Dein erster perfekter Burger",
+     "g": "Forme, grill und ruhe einen saftigen Burger mit ein paar einfachen Tricks.",
+     "p": [
+      "Forme die Patties etwas breiter als das Brötchen und etwa 2 cm dick; das Fleisch sanft behandeln, damit es zart bleibt.",
+      "Drück mit dem Daumen eine flache Mulde in die Mitte, damit das Patty flach bleibt und sich nicht wölbt.",
+      "Direkt bei mittelhoher Hitze grillen, einmal wenden, nicht drücken und innen auf etwa 71 °C garen."
+     ],
+     "q": "Was ist deine Traum-Kombination für einen Burgerbelag?",
+     "c": "Grill Burger mit dem Daumenmulden-Trick oder plane deinen perfekten Burger samt Belag ganz genau."
+    },
+    "es": {
+     "t": "Tu primera hamburguesa perfecta",
+     "g": "Forma, asa y deja reposar una hamburguesa jugosa con unos trucos sencillos.",
+     "p": [
+      "Forma las hamburguesas algo más anchas que el pan y de unos 2 cm de grosor, manipulando la carne con suavidad.",
+      "Haz un pequeño hueco en el centro con el pulgar para que la hamburguesa quede plana y no se hinche.",
+      "Ásala a fuego directo medio-alto, dale la vuelta una vez, no la aplastes y cocínala a unos 71 °C por dentro."
+     ],
+     "q": "¿Cuál es tu combinación soñada de ingredientes para una hamburguesa?",
+     "c": "Asa hamburguesas con el truco del hueco del pulgar, o planea al detalle tu hamburguesa perfecta y sus ingredientes."
+    },
+    "fr": {
+     "t": "Ton premier burger parfait",
+     "g": "Façonne, grille et laisse reposer un burger juteux grâce à quelques astuces simples.",
+     "p": [
+      "Façonne des steaks un peu plus larges que le pain et d'environ 2 cm d'épaisseur, en manipulant la viande doucement.",
+      "Creuse un léger creux au centre avec le pouce pour que le steak reste plat au lieu de gonfler.",
+      "Grille à chaleur directe moyenne-vive, retourne une fois, n'écrase pas le steak et cuis à environ 71 °C à cœur."
+     ],
+     "q": "Quelle est ta combinaison de garnitures de rêve pour un burger ?",
+     "c": "Grille des burgers avec l'astuce du creux au pouce, ou imagine en détail ton burger parfait et sa garniture."
+    },
+    "it": {
+     "t": "Il tuo primo hamburger perfetto",
+     "g": "Forma, griglia e fai riposare un hamburger succoso con pochi semplici trucchi.",
+     "p": [
+      "Forma gli hamburger un po' più larghi del panino e spessi circa 2 cm, maneggiando la carne con delicatezza.",
+      "Premi una piccola fossetta al centro con il pollice, così l'hamburger resta piatto invece di gonfiarsi.",
+      "Griglia a calore diretto medio-alto, giralo una volta, non schiacciarlo e cuoci fino a circa 71 °C all'interno."
+     ],
+     "q": "Qual è la tua combinazione da sogno di condimenti per un hamburger?",
+     "c": "Griglia hamburger con il trucco della fossetta, oppure progetta nei dettagli il tuo hamburger perfetto e i condimenti."
+    },
+    "pt": {
+     "t": "O teu primeiro hambúrguer perfeito",
+     "g": "Molda, grelha e deixa repousar um hambúrguer suculento com alguns truques simples.",
+     "p": [
+      "Molda os hambúrgueres um pouco mais largos do que o pão e com cerca de 2 cm de espessura, mexendo a carne com cuidado.",
+      "Faz uma pequena cova no centro com o polegar para o hambúrguer ficar direito e não inchar.",
+      "Grelha em calor direto médio-alto, vira uma vez, não espremas e coze até cerca de 71 °C no interior."
+     ],
+     "q": "Qual é a tua combinação de sonho para cobrir um hambúrguer?",
+     "c": "Grelha hambúrgueres com o truque da cova do polegar, ou planeia ao pormenor o teu hambúrguer perfeito e o recheio."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro hambúrguer perfeito",
+     "g": "Modele, grelhe e deixe descansar um hambúrguer suculento com alguns truques simples.",
+     "p": [
+      "Modele os hambúrgueres um pouco mais largos que o pão e com uns 2 cm de altura, mexendo na carne com delicadeza.",
+      "Faça uma covinha no centro com o polegar para o hambúrguer ficar reto e não estufar.",
+      "Grelhe no calor direto médio-alto, vire uma vez, não aperte e cozinhe até uns 71 °C por dentro."
+     ],
+     "q": "Qual é a sua combinação dos sonhos de recheio para hambúrguer?",
+     "c": "Grelhe hambúrgueres com o truque da covinha, ou planeje nos detalhes seu hambúrguer perfeito e o recheio."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilling sausages without bursting",
+     "g": "Cook sausages evenly and juicily without splitting the casings.",
+     "p": [
+      "Use medium heat, not high: too much heat makes the juices boil and the casing split open.",
+      "Turn the sausages often with tongs so they brown evenly on all sides.",
+      "Never pierce them with a fork, as the juices escape; fresh sausages are done at about 71 °C (160 °F) inside."
+     ],
+     "q": "Which sausage from a grilling culture would you like to try, like bratwurst, boerewors or chorizo?",
+     "c": "Grill sausages over medium heat turning them every few minutes, or pick a sausage from another country to try."
+    },
+    "de": {
+     "t": "Würstchen grillen, ohne dass sie platzen",
+     "g": "Gare Würstchen gleichmäßig und saftig, ohne dass die Haut aufreißt.",
+     "p": [
+      "Grill bei mittlerer, nicht starker Hitze: Zu viel Hitze lässt den Saft kochen und die Haut platzen.",
+      "Wende die Würstchen oft mit der Zange, damit sie rundum gleichmäßig bräunen.",
+      "Stich nie mit der Gabel hinein, sonst läuft der Saft aus; frische Bratwurst ist bei etwa 71 °C innen gar."
+     ],
+     "q": "Welche Wurst aus einer anderen Grillkultur würdest du gern probieren, etwa Boerewors oder Chorizo?",
+     "c": "Grill Würstchen bei mittlerer Hitze und wende sie alle paar Minuten, oder such dir eine Wurst aus einem anderen Land aus."
+    },
+    "es": {
+     "t": "Salchichas a la parrilla sin que revienten",
+     "g": "Cocina las salchichas de forma pareja y jugosa sin que se rompa la tripa.",
+     "p": [
+      "Usa fuego medio, no fuerte: demasiado calor hace hervir los jugos y la tripa se raja.",
+      "Gira las salchichas a menudo con pinzas para que se doren por igual por todos lados.",
+      "Nunca las pinches con un tenedor, porque se escapan los jugos; las frescas están listas a unos 71 °C por dentro."
+     ],
+     "q": "¿Qué salchicha de otra cultura parrillera te gustaría probar, como la bratwurst, la boerewors o el chorizo?",
+     "c": "Asa salchichas a fuego medio girándolas cada pocos minutos, o elige una salchicha de otro país para probar."
+    },
+    "fr": {
+     "t": "Griller des saucisses sans qu'elles éclatent",
+     "g": "Cuis les saucisses de façon homogène et juteuse sans faire éclater le boyau.",
+     "p": [
+      "Utilise un feu moyen, pas vif : trop de chaleur fait bouillir le jus et éclater le boyau.",
+      "Retourne souvent les saucisses avec des pinces pour qu'elles dorent uniformément.",
+      "Ne les pique jamais à la fourchette, le jus s'échappe ; les saucisses fraîches sont cuites vers 71 °C à cœur."
+     ],
+     "q": "Quelle saucisse d'une autre culture du grill aimerais-tu goûter, comme la bratwurst, la boerewors ou le chorizo ?",
+     "c": "Grille des saucisses à feu moyen en les tournant toutes les quelques minutes, ou choisis une saucisse d'un autre pays."
+    },
+    "it": {
+     "t": "Salsicce alla griglia senza farle scoppiare",
+     "g": "Cuoci le salsicce in modo uniforme e succoso senza rompere il budello.",
+     "p": [
+      "Usa fuoco medio, non alto: troppo calore fa bollire i succhi e spacca il budello.",
+      "Gira spesso le salsicce con le pinze, così si dorano in modo uniforme su tutti i lati.",
+      "Non bucarle mai con la forchetta, i succhi escono; le salsicce fresche sono cotte a circa 71 °C all'interno."
+     ],
+     "q": "Quale salsiccia di un'altra cultura della griglia vorresti provare, come bratwurst, boerewors o chorizo?",
+     "c": "Griglia salsicce a fuoco medio girandole ogni pochi minuti, oppure scegli una salsiccia di un altro paese da provare."
+    },
+    "pt": {
+     "t": "Grelhar salsichas sem rebentarem",
+     "g": "Cozinha salsichas de forma uniforme e suculenta sem rebentar a tripa.",
+     "p": [
+      "Usa calor médio, não forte: calor a mais faz ferver os sucos e rebentar a tripa.",
+      "Vira as salsichas muitas vezes com as pinças para alourarem por igual de todos os lados.",
+      "Nunca as piques com um garfo, porque os sucos escapam; as frescas estão prontas a cerca de 71 °C no interior."
+     ],
+     "q": "Que enchido de outra cultura de grelha gostavas de provar, como a bratwurst, a boerewors ou o chouriço?",
+     "c": "Grelha salsichas em calor médio, virando-as a cada poucos minutos, ou escolhe um enchido de outro país para provar."
+    },
+    "pt_BR": {
+     "t": "Linguiça na grelha sem estourar",
+     "g": "Prepare linguiças por igual e suculentas, sem estourar a tripa.",
+     "p": [
+      "Use fogo médio, não alto: calor demais faz o caldo ferver e a tripa estourar.",
+      "Vire as linguiças com frequência usando o pegador para dourarem por igual de todos os lados.",
+      "Nunca fure com garfo, porque o caldo escapa; linguiça fresca fica pronta com uns 71 °C por dentro."
+     ],
+     "q": "Que linguiça de outra cultura de churrasco você gostaria de provar, como bratwurst, boerewors ou chorizo?",
+     "c": "Grelhe linguiças em fogo médio virando a cada poucos minutos, ou escolha uma linguiça de outro país para provar."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilled chicken thighs",
+     "g": "Grill chicken thighs with crisp skin and juicy meat, the most forgiving cut for beginners.",
+     "p": [
+      "Thighs have more fat than breasts, so they stay juicy even if you cook them a little longer.",
+      "Start skin side down on the cool side with the lid closed, then crisp the skin over the hot side at the end.",
+      "Cook until at least 74 °C (165 °F); thighs are often even more tender at around 80 °C (176 °F)."
+     ],
+     "q": "Do you prefer chicken with or without the skin, and why?",
+     "c": "Grill bone-in thighs using the two-zone method, or write a simple seasoning you would use on them."
+    },
+    "de": {
+     "t": "Gegrillte Hähnchenschenkel",
+     "g": "Grill Hähnchenschenkel mit knuspriger Haut und saftigem Fleisch, das gutmütigste Stück für Einsteiger.",
+     "p": [
+      "Schenkel haben mehr Fett als Brust und bleiben saftig, auch wenn sie etwas länger garen.",
+      "Mit der Haut nach unten auf der kühlen Seite bei geschlossenem Deckel starten, zum Schluss über der Hitze knusprig grillen.",
+      "Gare sie auf mindestens 74 °C; Schenkel werden bei etwa 80 °C oft sogar noch zarter."
+     ],
+     "q": "Magst du Hähnchen lieber mit oder ohne Haut, und warum?",
+     "c": "Grill Schenkel mit Knochen nach der Zwei-Zonen-Methode oder schreib eine einfache Würzung auf, die du nehmen würdest."
+    },
+    "es": {
+     "t": "Muslos de pollo a la parrilla",
+     "g": "Asa muslos de pollo con piel crujiente y carne jugosa, el corte más agradecido para empezar.",
+     "p": [
+      "Los muslos tienen más grasa que la pechuga, así que siguen jugosos aunque se cocinen un poco más.",
+      "Empieza con la piel hacia abajo en el lado frío y la tapa cerrada, y al final dora la piel en el lado caliente.",
+      "Cocínalos a 74 °C como mínimo; los muslos suelen quedar aún más tiernos hacia los 80 °C."
+     ],
+     "q": "¿Prefieres el pollo con piel o sin piel, y por qué?",
+     "c": "Asa muslos con hueso usando el método de dos zonas, o escribe un aliño sencillo que usarías con ellos."
+    },
+    "fr": {
+     "t": "Cuisses de poulet grillées",
+     "g": "Grille des cuisses de poulet à la peau croustillante et à la chair juteuse, le morceau le plus indulgent.",
+     "p": [
+      "Les hauts de cuisse ont plus de gras que le blanc, ils restent juteux même cuits un peu plus longtemps.",
+      "Commence peau dessous côté froid, couvercle fermé, puis rends la peau croustillante côté chaud à la fin.",
+      "Cuis jusqu'à au moins 74 °C ; les cuisses sont souvent encore plus tendres vers 80 °C."
+     ],
+     "q": "Préfères-tu le poulet avec ou sans la peau, et pourquoi ?",
+     "c": "Grille des cuisses avec os selon la méthode à deux zones, ou note un assaisonnement simple que tu utiliserais."
+    },
+    "it": {
+     "t": "Sovracosce di pollo alla griglia",
+     "g": "Griglia sovracosce di pollo con pelle croccante e carne succosa, il taglio più facile per chi inizia.",
+     "p": [
+      "Le sovracosce hanno più grasso del petto, quindi restano succose anche se cuociono un po' di più.",
+      "Inizia con la pelle in giù sul lato freddo a coperchio chiuso, poi rendi croccante la pelle sul lato caldo alla fine.",
+      "Cuoci fino ad almeno 74 °C; le sovracosce spesso diventano ancora più tenere verso gli 80 °C."
+     ],
+     "q": "Preferisci il pollo con o senza pelle, e perché?",
+     "c": "Griglia sovracosce con l'osso col metodo a due zone, oppure scrivi un condimento semplice che useresti."
+    },
+    "pt": {
+     "t": "Coxas de frango grelhadas",
+     "g": "Grelha coxas de frango com pele estaladiça e carne suculenta, o corte mais fácil para quem começa.",
+     "p": [
+      "As coxas têm mais gordura do que o peito, por isso ficam suculentas mesmo que cozam um pouco mais.",
+      "Começa com a pele para baixo no lado frio, de tampa fechada, e no fim torna a pele estaladiça no lado quente.",
+      "Coze até pelo menos 74 °C; as coxas costumam ficar ainda mais tenras perto dos 80 °C."
+     ],
+     "q": "Preferes frango com ou sem pele, e porquê?",
+     "c": "Grelha coxas com osso usando o método de duas zonas, ou escreve um tempero simples que usarias nelas."
+    },
+    "pt_BR": {
+     "t": "Sobrecoxa de frango na grelha",
+     "g": "Grelhe sobrecoxas com pele crocante e carne suculenta, o corte mais fácil para iniciantes.",
+     "p": [
+      "A sobrecoxa tem mais gordura que o peito, então continua suculenta mesmo se cozinhar um pouco mais.",
+      "Comece com a pele para baixo no lado frio, de tampa fechada, e no fim deixe a pele crocante no lado quente.",
+      "Cozinhe até pelo menos 74 °C; a sobrecoxa costuma ficar ainda mais macia por volta de 80 °C."
+     ],
+     "q": "Você prefere frango com ou sem pele, e por quê?",
+     "c": "Grelhe sobrecoxas com osso usando o método de duas zonas, ou anote um tempero simples que usaria nelas."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "painting",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up your palette",
+     "g": "Arrange your colours in a logical order and keep a clean area for mixing.",
+     "p": [
+      "Squeeze colours around the edge in a fixed order, for example warm to cool or light to dark, and keep it the same every time.",
+      "Leave the centre free for mixing so pure colours stay clean and you always know where to find them.",
+      "A white palette shows colours truly; a mid-grey palette helps judge values when painting opaque media."
+     ],
+     "q": "How do you like to organise things: by colour, by size or a creative chaos?",
+     "c": "Plan your palette layout on paper: draw the circle or rectangle and write where each colour will go."
+    },
+    "de": {
+     "t": "Deine Palette einrichten",
+     "g": "Ordne deine Farben logisch an und halte eine saubere Fläche zum Mischen frei.",
+     "p": [
+      "Setze die Farben in fester Reihenfolge an den Rand, etwa von warm nach kalt oder hell nach dunkel, und bleib dabei.",
+      "Lass die Mitte zum Mischen frei, damit reine Farben sauber bleiben und du sie immer sofort findest.",
+      "Eine weiße Palette zeigt Farben unverfälscht; eine mittelgraue hilft, Tonwerte bei deckenden Farben einzuschätzen."
+     ],
+     "q": "Wie ordnest du gern Dinge: nach Farbe, nach Größe oder im kreativen Chaos?",
+     "c": "Plane dein Palettenlayout auf Papier: Zeichne die Form und schreibe hinein, wo jede Farbe hinkommt."
+    },
+    "es": {
+     "t": "Organizar tu paleta",
+     "g": "Coloca tus colores en un orden lógico y deja una zona limpia para mezclar.",
+     "p": [
+      "Pon los colores en el borde en un orden fijo, por ejemplo de cálidos a fríos o de claros a oscuros, y repítelo siempre.",
+      "Deja el centro libre para mezclar: así los colores puros siguen limpios y siempre sabes dónde están.",
+      "Una paleta blanca muestra el color real; una gris media ayuda a juzgar los valores con pinturas opacas."
+     ],
+     "q": "¿Cómo te gusta ordenar las cosas: por color, por tamaño o en caos creativo?",
+     "c": "Planea tu paleta en papel: dibuja su forma y escribe dónde irá cada color."
+    },
+    "fr": {
+     "t": "Organiser ta palette",
+     "g": "Dispose tes couleurs dans un ordre logique et garde une zone propre pour les mélanges.",
+     "p": [
+      "Place les couleurs sur le bord dans un ordre fixe, par exemple des chaudes aux froides ou des claires aux foncées.",
+      "Laisse le centre libre pour mélanger : les couleurs pures restent propres et tu sais toujours où elles sont.",
+      "Une palette blanche montre la vraie couleur ; une palette gris moyen aide à juger les valeurs en peinture couvrante."
+     ],
+     "q": "Comment aimes-tu ranger les choses : par couleur, par taille ou en chaos créatif ?",
+     "c": "Dessine le plan de ta palette sur papier et note où ira chaque couleur."
+    },
+    "it": {
+     "t": "Organizzare la tavolozza",
+     "g": "Disponi i colori in un ordine logico e tieni un'area pulita per mescolare.",
+     "p": [
+      "Metti i colori lungo il bordo in un ordine fisso, per esempio dai caldi ai freddi o dai chiari agli scuri, sempre uguale.",
+      "Lascia libero il centro per gli impasti: i colori puri restano puliti e sai sempre dove trovarli.",
+      "Una tavolozza bianca mostra i colori veri; una grigio medio aiuta a giudicare i valori con i colori coprenti."
+     ],
+     "q": "Come ti piace organizzare le cose: per colore, per misura o nel caos creativo?",
+     "c": "Progetta la tua tavolozza su carta: disegna la forma e scrivi dove andrà ogni colore."
+    },
+    "pt": {
+     "t": "Organizar a paleta",
+     "g": "Dispõe as cores numa ordem lógica e mantém uma zona limpa para misturar.",
+     "p": [
+      "Coloca as cores na borda numa ordem fixa, por exemplo das quentes às frias ou das claras às escuras, e mantém-na sempre.",
+      "Deixa o centro livre para misturas: as cores puras ficam limpas e sabes sempre onde estão.",
+      "Uma paleta branca mostra a cor real; uma cinzenta média ajuda a avaliar valores com tintas opacas."
+     ],
+     "q": "Como gostas de arrumar as coisas: por cor, por tamanho ou em caos criativo?",
+     "c": "Planeia a tua paleta em papel: desenha a forma e escreve onde fica cada cor."
+    },
+    "pt_BR": {
+     "t": "Organizando a paleta",
+     "g": "Disponha suas cores numa ordem lógica e mantenha uma área limpa para misturar.",
+     "p": [
+      "Coloque as cores na borda numa ordem fixa, por exemplo das quentes às frias ou das claras às escuras, e repita sempre.",
+      "Deixe o centro livre para misturas: as cores puras ficam limpas e você sempre sabe onde estão.",
+      "Uma paleta branca mostra a cor real; uma cinza média ajuda a avaliar os valores com tintas opacas."
+     ],
+     "q": "Como você gosta de organizar as coisas: por cor, por tamanho ou no caos criativo?",
+     "c": "Planeje sua paleta no papel: desenhe o formato e escreva onde vai cada cor."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple painting corner",
+     "g": "Set up a small, comfortable space where painting is easy to start.",
+     "p": [
+      "Good light matters most: steady daylight from a window or a daylight-balanced lamp shows colours truly.",
+      "Two water jars, one for rinsing and one clean, plus rags or paper towels, keep your colours fresh.",
+      "Keep tools within reach of your painting hand and leave the setup ready, so starting takes seconds, not minutes."
+     ],
+     "q": "Where in your home could a small painting corner fit?",
+     "c": "Choose your spot today and place your paints, water jar and a towel there, ready for tomorrow."
+    },
+    "de": {
+     "t": "Eine einfache Malecke",
+     "g": "Richte einen kleinen, bequemen Platz ein, an dem du schnell mit dem Malen beginnen kannst.",
+     "p": [
+      "Licht ist am wichtigsten: gleichmäßiges Tageslicht vom Fenster oder eine Tageslichtlampe zeigt Farben richtig.",
+      "Zwei Wassergläser, eins zum Ausspülen und eins sauber, plus Lappen oder Küchenpapier halten die Farben frisch.",
+      "Leg Werkzeug in Reichweite der Malhand und lass alles aufgebaut, dann dauert der Start Sekunden statt Minuten."
+     ],
+     "q": "Wo in deinem Zuhause könnte eine kleine Malecke Platz finden?",
+     "c": "Wähle heute deinen Platz und stell Farben, Wasserglas und ein Tuch bereit für morgen."
+    },
+    "es": {
+     "t": "Un rincón para pintar",
+     "g": "Prepara un espacio pequeño y cómodo donde empezar a pintar sea fácil.",
+     "p": [
+      "La luz es lo más importante: luz natural constante de una ventana o una lámpara de luz día muestra bien los colores.",
+      "Dos tarros de agua, uno para enjuagar y otro limpio, y trapos o papel de cocina mantienen frescos tus colores.",
+      "Ten las herramientas al alcance de la mano que pinta y deja todo montado: empezar te llevará segundos."
+     ],
+     "q": "¿En qué parte de tu casa cabría un pequeño rincón para pintar?",
+     "c": "Elige hoy tu sitio y deja allí pinturas, un tarro de agua y un trapo, listos para mañana."
+    },
+    "fr": {
+     "t": "Un coin peinture simple",
+     "g": "Installe un petit espace confortable où commencer à peindre est facile.",
+     "p": [
+      "La lumière compte le plus : une lumière du jour stable venant d'une fenêtre ou une lampe lumière du jour montre les vraies couleurs.",
+      "Deux pots d'eau, un pour rincer et un propre, plus des chiffons ou de l'essuie-tout, gardent tes couleurs fraîches.",
+      "Garde tes outils à portée de la main qui peint et laisse tout installé : commencer prend alors quelques secondes."
+     ],
+     "q": "Où chez toi pourrait tenir un petit coin peinture ?",
+     "c": "Choisis ton coin aujourd'hui et pose-y peintures, pot d'eau et chiffon, prêts pour demain."
+    },
+    "it": {
+     "t": "Un angolo per dipingere",
+     "g": "Prepara un piccolo spazio comodo dove iniziare a dipingere sia facile.",
+     "p": [
+      "La luce conta più di tutto: una luce naturale costante da una finestra o una lampada luce diurna mostra i colori veri.",
+      "Due barattoli d'acqua, uno per sciacquare e uno pulito, più stracci o carta assorbente, tengono freschi i colori.",
+      "Tieni gli strumenti a portata della mano che dipinge e lascia tutto pronto: iniziare richiederà pochi secondi."
+     ],
+     "q": "In quale punto di casa potrebbe stare un piccolo angolo per dipingere?",
+     "c": "Scegli oggi il tuo posto e mettici colori, barattolo d'acqua e uno straccio, pronti per domani."
+    },
+    "pt": {
+     "t": "Um canto para pintar",
+     "g": "Prepara um espaço pequeno e confortável onde começar a pintar seja fácil.",
+     "p": [
+      "A luz é o mais importante: luz natural estável de uma janela ou um candeeiro de luz do dia mostra as cores reais.",
+      "Dois frascos de água, um para enxaguar e outro limpo, e panos ou papel de cozinha mantêm as cores frescas.",
+      "Tem as ferramentas ao alcance da mão que pinta e deixa tudo montado: começar demora segundos."
+     ],
+     "q": "Em que parte da tua casa caberia um pequeno canto para pintar?",
+     "c": "Escolhe hoje o teu lugar e deixa lá as tintas, um frasco de água e um pano, prontos para amanhã."
+    },
+    "pt_BR": {
+     "t": "Um cantinho para pintar",
+     "g": "Monte um espaço pequeno e confortável onde começar a pintar seja fácil.",
+     "p": [
+      "A luz é o mais importante: luz natural constante de uma janela ou uma luminária luz do dia mostra as cores reais.",
+      "Dois potes de água, um para enxaguar e outro limpo, e panos ou papel toalha mantêm as cores limpas.",
+      "Deixe as ferramentas ao alcance da mão que pinta e tudo montado: começar leva segundos."
+     ],
+     "q": "Em que lugar da sua casa caberia um cantinho para pintar?",
+     "c": "Escolha hoje seu lugar e deixe lá tintas, um pote de água e um pano, prontos para amanhã."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holding the brush",
+     "g": "Learn how grip position changes control and freedom in your strokes.",
+     "p": [
+      "Holding near the ferrule, like a pencil, gives control for details, edges and small shapes.",
+      "Holding far back on the handle loosens your strokes and makes them lively and expressive, great for big areas.",
+      "Move from the shoulder and elbow for long strokes, not only the wrist, and keep your hand relaxed."
+     ],
+     "q": "Do you tend to grip tools tightly or loosely when you draw or write?",
+     "c": "Paint ten strokes holding the brush close to the hairs, then ten holding the end. Compare the energy."
+    },
+    "de": {
+     "t": "Den Pinsel halten",
+     "g": "Lerne, wie die Griffposition Kontrolle und Freiheit deiner Striche verändert.",
+     "p": [
+      "Nah an der Zwinge gehalten, wie ein Stift, hast du Kontrolle für Details, Kanten und kleine Formen.",
+      "Weit hinten am Stiel gehalten werden Striche locker, lebendig und ausdrucksstark, ideal für große Flächen.",
+      "Bewege lange Striche aus Schulter und Ellbogen, nicht nur aus dem Handgelenk, und halte die Hand entspannt."
+     ],
+     "q": "Hältst du Werkzeuge beim Zeichnen oder Schreiben eher fest oder locker?",
+     "c": "Male zehn Striche mit Griff nah an den Haaren, dann zehn mit Griff am Stielende. Vergleiche die Energie."
+    },
+    "es": {
+     "t": "Cómo sujetar el pincel",
+     "g": "Aprende cómo la posición de la mano cambia el control y la libertad del trazo.",
+     "p": [
+      "Sujetarlo cerca de la virola, como un lápiz, da control para detalles, bordes y formas pequeñas.",
+      "Sujetarlo al final del mango suelta el trazo y lo vuelve vivo y expresivo, ideal para zonas grandes.",
+      "Mueve el hombro y el codo en trazos largos, no solo la muñeca, y mantén la mano relajada."
+     ],
+     "q": "¿Sueles agarrar las herramientas con fuerza o con suavidad al dibujar o escribir?",
+     "c": "Pinta diez trazos cogiendo el pincel cerca del pelo y diez desde el extremo. Compara su energía."
+    },
+    "fr": {
+     "t": "Tenir le pinceau",
+     "g": "Découvre comment la position de la main change le contrôle et la liberté du geste.",
+     "p": [
+      "Tenu près de la virole, comme un crayon, le pinceau offre du contrôle pour les détails, bords et petites formes.",
+      "Tenu au bout du manche, il libère la touche et la rend vivante et expressive, idéal pour les grandes zones.",
+      "Pour les longs gestes, bouge l'épaule et le coude, pas seulement le poignet, et garde la main détendue."
+     ],
+     "q": "Tiens-tu tes outils plutôt serrés ou souples quand tu dessines ou écris ?",
+     "c": "Peins dix traits en tenant le pinceau près des poils, puis dix en le tenant au bout. Compare l'énergie."
+    },
+    "it": {
+     "t": "Impugnare il pennello",
+     "g": "Scopri come la posizione della mano cambia controllo e libertà della pennellata.",
+     "p": [
+      "Tenuto vicino alla ghiera, come una matita, dà controllo per dettagli, bordi e forme piccole.",
+      "Tenuto in fondo al manico scioglie la pennellata e la rende viva ed espressiva, ottimo per le grandi aree.",
+      "Per tratti lunghi muovi spalla e gomito, non solo il polso, e tieni la mano rilassata."
+     ],
+     "q": "Tendi a stringere forte o a tenere leggeri gli strumenti quando disegni o scrivi?",
+     "c": "Dipingi dieci tratti tenendo il pennello vicino ai peli e dieci tenendolo in fondo. Confronta l'energia."
+    },
+    "pt": {
+     "t": "Segurar o pincel",
+     "g": "Aprende como a posição da mão muda o controlo e a liberdade da pincelada.",
+     "p": [
+      "Segurar perto da virola, como um lápis, dá controlo para detalhes, contornos e formas pequenas.",
+      "Segurar no fim do cabo solta a pincelada e torna-a viva e expressiva, ótimo para áreas grandes.",
+      "Em traços longos move o ombro e o cotovelo, não só o pulso, e mantém a mão relaxada."
+     ],
+     "q": "Costumas agarrar as ferramentas com força ou com leveza quando desenhas ou escreves?",
+     "c": "Pinta dez traços segurando o pincel perto do pelo e dez segurando no fim. Compara a energia."
+    },
+    "pt_BR": {
+     "t": "Segurando o pincel",
+     "g": "Aprenda como a posição da mão muda o controle e a liberdade da pincelada.",
+     "p": [
+      "Segurar perto da virola, como um lápis, dá controle para detalhes, bordas e formas pequenas.",
+      "Segurar no fim do cabo solta a pincelada e deixa tudo vivo e expressivo, ótimo para áreas grandes.",
+      "Em traços longos mexa o ombro e o cotovelo, não só o pulso, e mantenha a mão relaxada."
+     ],
+     "q": "Você costuma segurar as ferramentas com força ou de leve quando desenha ou escreve?",
+     "c": "Pinte dez traços segurando o pincel perto do pelo e dez segurando na ponta do cabo. Compare a energia."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first marks",
+     "g": "Explore everything one brush can do with dots, lines, dabs and sweeps.",
+     "p": [
+      "Dots and dabs come from touching and lifting; try the tip, the side and the heel of the brush.",
+      "Lines can be straight, wavy or zigzag; twisting the brush as you move makes them thick and thin.",
+      "Sweeps use the whole arm; a mark library like this becomes your personal vocabulary for future paintings."
+     ],
+     "q": "Which mark felt the most natural to you, and which felt the strangest?",
+     "c": "Fill one scrap page with at least 20 different marks from a single brush. Give your favourite a name."
+    },
+    "de": {
+     "t": "Deine ersten Spuren",
+     "g": "Entdecke, was ein einziger Pinsel mit Punkten, Linien, Tupfern und Schwüngen alles kann.",
+     "p": [
+      "Punkte und Tupfer entstehen durch Aufsetzen und Abheben; probiere Spitze, Seite und Bauch des Pinsels.",
+      "Linien können gerade, wellig oder zackig sein; drehst du den Pinsel dabei, werden sie dick und dünn.",
+      "Schwünge kommen aus dem ganzen Arm; so eine Spurensammlung wird dein persönlicher Wortschatz fürs Malen."
+     ],
+     "q": "Welche Spur fühlte sich am natürlichsten an, welche am seltsamsten?",
+     "c": "Fülle ein Schmierblatt mit mindestens 20 verschiedenen Spuren eines Pinsels. Gib deiner liebsten einen Namen."
+    },
+    "es": {
+     "t": "Tus primeros trazos",
+     "g": "Explora todo lo que puede hacer un pincel con puntos, líneas, toques y barridos.",
+     "p": [
+      "Los puntos y toques salen de apoyar y levantar; prueba la punta, el lateral y la panza del pincel.",
+      "Las líneas pueden ser rectas, onduladas o en zigzag; si giras el pincel al moverlo, se vuelven gruesas y finas.",
+      "Los barridos usan todo el brazo; este muestrario de trazos será tu vocabulario personal para pintar."
+     ],
+     "q": "¿Qué trazo te salió más natural y cuál te resultó más raro?",
+     "c": "Llena una hoja de prueba con al menos 20 trazos distintos de un solo pincel. Ponle nombre a tu favorito."
+    },
+    "fr": {
+     "t": "Tes premières traces",
+     "g": "Explore tout ce qu'un seul pinceau peut faire : points, lignes, touches et balayages.",
+     "p": [
+      "Points et touches naissent en posant et soulevant ; essaie la pointe, le flanc et le ventre du pinceau.",
+      "Les lignes peuvent être droites, ondulées ou en zigzag ; en tournant le pinceau, elles deviennent épaisses et fines.",
+      "Les balayages viennent de tout le bras ; ce répertoire devient ton vocabulaire personnel de peintre."
+     ],
+     "q": "Quelle trace t'a semblé la plus naturelle, et laquelle la plus étrange ?",
+     "c": "Remplis une feuille de brouillon avec au moins 20 traces différentes d'un seul pinceau. Baptise ta préférée."
+    },
+    "it": {
+     "t": "I tuoi primi segni",
+     "g": "Esplora tutto ciò che un pennello sa fare con punti, linee, tocchi e pennellate ampie.",
+     "p": [
+      "Punti e tocchi nascono appoggiando e sollevando; prova la punta, il fianco e la pancia del pennello.",
+      "Le linee possono essere dritte, ondulate o a zigzag; ruotando il pennello diventano spesse e sottili.",
+      "Le pennellate ampie usano tutto il braccio; questo campionario diventa il tuo vocabolario personale."
+     ],
+     "q": "Quale segno ti è venuto più naturale e quale più strano?",
+     "c": "Riempi un foglio di prova con almeno 20 segni diversi fatti con un solo pennello. Dai un nome al tuo preferito."
+    },
+    "pt": {
+     "t": "As tuas primeiras marcas",
+     "g": "Explora tudo o que um pincel consegue fazer com pontos, linhas, toques e varrimentos.",
+     "p": [
+      "Pontos e toques nascem de pousar e levantar; experimenta a ponta, o lado e a barriga do pincel.",
+      "As linhas podem ser retas, onduladas ou em ziguezague; rodando o pincel, ficam grossas e finas.",
+      "Os varrimentos usam o braço todo; este mostruário de marcas torna-se o teu vocabulário pessoal."
+     ],
+     "q": "Que marca te pareceu mais natural e qual a mais estranha?",
+     "c": "Enche uma folha de rascunho com pelo menos 20 marcas diferentes de um só pincel. Dá nome à tua preferida."
+    },
+    "pt_BR": {
+     "t": "Suas primeiras marcas",
+     "g": "Explore tudo o que um pincel consegue fazer com pontos, linhas, toques e varridas.",
+     "p": [
+      "Pontos e toques nascem de encostar e levantar; teste a ponta, a lateral e a barriga do pincel.",
+      "As linhas podem ser retas, onduladas ou em zigue-zague; girando o pincel, elas ficam grossas e finas.",
+      "As varridas usam o braço todo; esse mostruário de marcas vira seu vocabulário pessoal de pintura."
+     ],
+     "q": "Qual marca saiu mais natural e qual pareceu mais estranha?",
+     "c": "Encha uma folha de rascunho com pelo menos 20 marcas diferentes de um só pincel. Dê nome à sua favorita."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pressure and speed",
+     "g": "See how pressing harder or moving faster changes the width and energy of a stroke.",
+     "p": [
+      "Light pressure gives thin lines with a round brush; pressing down spreads the hairs into a wide stroke.",
+      "Fast strokes look lively and may break into dry, sparkly edges; slow strokes look calm, even and deliberate.",
+      "Combining a light start, firm middle and light end creates a tapered stroke, ideal for leaves and petals."
+     ],
+     "q": "Are you naturally a fast, energetic painter or a slow, careful one?",
+     "c": "Paint one row of slow strokes and one row of fast strokes, then a row of tapered leaf shapes."
+    },
+    "de": {
+     "t": "Druck und Tempo",
+     "g": "Sieh, wie stärkerer Druck oder schnellere Bewegung Breite und Energie eines Strichs verändern.",
+     "p": [
+      "Leichter Druck gibt mit dem Rundpinsel dünne Linien; drückst du, spreizen sich die Haare zu einem breiten Strich.",
+      "Schnelle Striche wirken lebendig und brechen oft in trockene, glitzernde Ränder; langsame wirken ruhig und bewusst.",
+      "Leicht beginnen, fest in der Mitte, leicht enden: So entsteht ein spitz zulaufender Strich, ideal für Blätter."
+     ],
+     "q": "Bist du eher ein schneller, energischer oder ein langsamer, sorgfältiger Maltyp?",
+     "c": "Male eine Reihe langsamer und eine Reihe schneller Striche, dann eine Reihe spitz zulaufender Blätter."
+    },
+    "es": {
+     "t": "Presión y velocidad",
+     "g": "Mira cómo presionar más o moverte más rápido cambia el grosor y la energía del trazo.",
+     "p": [
+      "Con poca presión el pincel redondo da líneas finas; al apretar, el pelo se abre en un trazo ancho.",
+      "Los trazos rápidos se ven vivos y pueden romperse en bordes secos y chispeantes; los lentos, tranquilos y uniformes.",
+      "Empezar suave, apretar en medio y terminar suave crea un trazo afilado, perfecto para hojas y pétalos."
+     ],
+     "q": "¿Eres de pintar rápido y con energía o despacio y con cuidado?",
+     "c": "Pinta una fila de trazos lentos, otra de rápidos y luego una de hojas afiladas."
+    },
+    "fr": {
+     "t": "Pression et vitesse",
+     "g": "Vois comment appuyer plus ou aller plus vite change la largeur et l'énergie d'une touche.",
+     "p": [
+      "Une pression légère donne des lignes fines au pinceau rond ; en appuyant, les poils s'étalent en une large touche.",
+      "Les touches rapides sont vivantes et cassent en bords secs et scintillants ; les lentes paraissent calmes et posées.",
+      "Départ léger, milieu appuyé, fin légère : tu obtiens une touche effilée, parfaite pour feuilles et pétales."
+     ],
+     "q": "Es-tu plutôt un peintre rapide et énergique ou lent et minutieux ?",
+     "c": "Peins une rangée de touches lentes, une de touches rapides, puis une de feuilles effilées."
+    },
+    "it": {
+     "t": "Pressione e velocità",
+     "g": "Osserva come premere di più o muoverti più in fretta cambia spessore ed energia del segno.",
+     "p": [
+      "Con poca pressione il tondo fa linee sottili; premendo, i peli si allargano in una pennellata ampia.",
+      "Le pennellate veloci sono vive e si spezzano in bordi asciutti e brillanti; quelle lente sono calme e regolari.",
+      "Partire leggeri, premere al centro e chiudere leggeri crea un segno affusolato, ideale per foglie e petali."
+     ],
+     "q": "Sei di natura un pittore veloce ed energico o lento e attento?",
+     "c": "Dipingi una fila di pennellate lente, una di veloci e poi una di foglie affusolate."
+    },
+    "pt": {
+     "t": "Pressão e velocidade",
+     "g": "Vê como carregar mais ou mover mais depressa muda a largura e a energia da pincelada.",
+     "p": [
+      "Pouca pressão dá linhas finas com o redondo; ao carregar, os pelos abrem numa pincelada larga.",
+      "Pinceladas rápidas parecem vivas e partem em bordas secas e cintilantes; as lentas parecem calmas e regulares.",
+      "Começar leve, carregar a meio e acabar leve cria uma pincelada afilada, ideal para folhas e pétalas."
+     ],
+     "q": "És por natureza um pintor rápido e enérgico ou lento e cuidadoso?",
+     "c": "Pinta uma fila de pinceladas lentas, outra de rápidas e depois uma de folhas afiladas."
+    },
+    "pt_BR": {
+     "t": "Pressão e velocidade",
+     "g": "Veja como apertar mais ou mover mais rápido muda a largura e a energia da pincelada.",
+     "p": [
+      "Pouca pressão dá linhas finas com o redondo; apertando, os pelos abrem numa pincelada larga.",
+      "Pinceladas rápidas ficam vivas e podem falhar em bordas secas e brilhantes; as lentas ficam calmas e regulares.",
+      "Começar leve, apertar no meio e terminar leve cria uma pincelada afinada, ótima para folhas e pétalas."
+     ],
+     "q": "Você é do tipo que pinta rápido e com energia ou devagar e com cuidado?",
+     "c": "Pinte uma fileira de pinceladas lentas, outra de rápidas e depois uma de folhas afinadas."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loading the brush",
+     "g": "Learn to control how much paint your brush carries for the stroke you want.",
+     "p": [
+      "Too much paint floods, drips or leaves blobs; too little gives scratchy, broken strokes that run out fast.",
+      "Just right: load the brush, then touch the edge of the palette or jar to remove the excess.",
+      "Load the full belly for long strokes, only the tip for details, and use a nearly dry brush for texture."
+     ],
+     "q": "Have you ever had a drip or blob ruin a stroke? How did you handle it?",
+     "c": "Paint the same stroke three times: overloaded, underloaded and just right. Label each one."
+    },
+    "de": {
+     "t": "Den Pinsel beladen",
+     "g": "Lerne zu steuern, wie viel Farbe dein Pinsel für den gewünschten Strich trägt.",
+     "p": [
+      "Zu viel Farbe tropft, läuft oder macht Kleckse; zu wenig gibt kratzige, abgerissene Striche, die schnell enden.",
+      "Genau richtig: Pinsel beladen, dann am Rand von Palette oder Glas abstreifen, um den Überschuss zu entfernen.",
+      "Für lange Striche den ganzen Bauch füllen, für Details nur die Spitze, für Struktur einen fast trockenen Pinsel."
+     ],
+     "q": "Hat dir schon mal ein Tropfen oder Klecks einen Strich verdorben? Wie bist du damit umgegangen?",
+     "c": "Male denselben Strich dreimal: zu voll, zu leer und genau richtig. Beschrifte jeden."
+    },
+    "es": {
+     "t": "Cargar el pincel",
+     "g": "Aprende a controlar cuánta pintura lleva el pincel según el trazo que buscas.",
+     "p": [
+      "Demasiada pintura gotea, encharca o deja grumos; muy poca da trazos rasgados que se agotan enseguida.",
+      "Lo justo: carga el pincel y luego toca el borde de la paleta o del tarro para quitar el exceso.",
+      "Carga toda la panza para trazos largos, solo la punta para detalles y usa un pincel casi seco para texturas."
+     ],
+     "q": "¿Alguna vez una gota o un grumo arruinó un trazo? ¿Cómo lo resolviste?",
+     "c": "Pinta el mismo trazo tres veces: sobrecargado, con poca pintura y justo. Etiqueta cada uno."
+    },
+    "fr": {
+     "t": "Charger le pinceau",
+     "g": "Apprends à contrôler la quantité de peinture du pinceau selon la touche voulue.",
+     "p": [
+      "Trop de peinture coule, goutte ou fait des paquets ; trop peu donne des touches griffées qui s'épuisent vite.",
+      "Juste ce qu'il faut : charge le pinceau, puis essuie-le sur le bord de la palette ou du pot pour ôter l'excès.",
+      "Charge tout le ventre pour les longues touches, la pointe seule pour les détails, un pinceau presque sec pour la texture."
+     ],
+     "q": "Une goutte ou un paquet de peinture a-t-il déjà gâché une touche ? Qu'as-tu fait ?",
+     "c": "Peins trois fois la même touche : trop chargée, pas assez et juste bien. Note chacune."
+    },
+    "it": {
+     "t": "Caricare il pennello",
+     "g": "Impara a controllare quanto colore porta il pennello per il segno che vuoi.",
+     "p": [
+      "Troppo colore cola, gocciola o lascia grumi; troppo poco dà pennellate graffiate che finiscono subito.",
+      "Il giusto: carica il pennello, poi sfioralo sul bordo della tavolozza o del barattolo per togliere l'eccesso.",
+      "Carica tutta la pancia per tratti lunghi, solo la punta per i dettagli, un pennello quasi asciutto per la texture."
+     ],
+     "q": "Ti è mai capitato che una goccia o un grumo rovinasse una pennellata? Come hai risolto?",
+     "c": "Dipingi la stessa pennellata tre volte: troppo carica, scarica e giusta. Etichetta ognuna."
+    },
+    "pt": {
+     "t": "Carregar o pincel",
+     "g": "Aprende a controlar quanta tinta o pincel leva para a pincelada que queres.",
+     "p": [
+      "Tinta a mais escorre, pinga ou faz borrões; tinta a menos dá pinceladas falhadas que acabam depressa.",
+      "Na medida certa: carrega o pincel e depois encosta-o à borda da paleta ou do frasco para tirar o excesso.",
+      "Carrega a barriga toda para traços longos, só a ponta para detalhes e usa o pincel quase seco para texturas."
+     ],
+     "q": "Já tiveste um pingo ou borrão a estragar uma pincelada? Como resolveste?",
+     "c": "Pinta a mesma pincelada três vezes: carregada a mais, a menos e na medida certa. Identifica cada uma."
+    },
+    "pt_BR": {
+     "t": "Carregando o pincel",
+     "g": "Aprenda a controlar quanta tinta o pincel leva para a pincelada que você quer.",
+     "p": [
+      "Tinta demais escorre, pinga ou faz borrões; tinta de menos dá pinceladas falhadas que acabam rápido.",
+      "Na medida: carregue o pincel e depois encoste na borda da paleta ou do pote para tirar o excesso.",
+      "Carregue a barriga toda para traços longos, só a ponta para detalhes e use o pincel quase seco para texturas."
+     ],
+     "q": "Um pingo ou borrão já estragou uma pincelada sua? Como você resolveu?",
+     "c": "Pinte a mesma pincelada três vezes: carregada demais, de menos e na medida. Identifique cada uma."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The colour wheel",
+     "g": "See how the colour wheel organises hues and why painters still use it daily.",
+     "p": [
+      "Isaac Newton bent the spectrum into a circle in 1704, giving painters a map of how colours relate.",
+      "Neighbouring colours look harmonious together; colours facing each other create strong contrast.",
+      "Painters use the wheel to predict mixes, choose palettes and find the colour that will calm or boost another."
+     ],
+     "q": "Which part of the colour wheel do you find yourself drawn to most?",
+     "c": "Draw a circle, split it into 12 slices and colour or label it with the hues you know. Keep it for later days."
+    },
+    "de": {
+     "t": "Der Farbkreis",
+     "g": "Sieh, wie der Farbkreis Farbtöne ordnet und warum Maler ihn täglich nutzen.",
+     "p": [
+      "Isaac Newton bog das Spektrum 1704 zu einem Kreis und gab Malern damit eine Karte der Farbbeziehungen.",
+      "Benachbarte Farben wirken harmonisch; einander gegenüberliegende erzeugen starken Kontrast.",
+      "Maler nutzen den Kreis, um Mischungen vorherzusagen, Paletten zu wählen und Farben zu beruhigen oder zu steigern."
+     ],
+     "q": "Zu welchem Bereich des Farbkreises fühlst du dich am meisten hingezogen?",
+     "c": "Zeichne einen Kreis mit 12 Feldern und male oder beschrifte die Farbtöne, die du kennst. Heb ihn auf."
+    },
+    "es": {
+     "t": "El círculo cromático",
+     "g": "Descubre cómo el círculo cromático ordena los colores y por qué los pintores lo usan a diario.",
+     "p": [
+      "Isaac Newton curvó el espectro en un círculo en 1704 y dio a los pintores un mapa de cómo se relacionan los colores.",
+      "Los colores vecinos armonizan entre sí; los que están enfrentados crean un contraste fuerte.",
+      "Los pintores lo usan para prever mezclas, elegir paletas y encontrar el color que calma o realza a otro."
+     ],
+     "q": "¿Qué zona del círculo cromático te atrae más?",
+     "c": "Dibuja un círculo, divídelo en 12 partes y coloréalo o escribe los colores que conoces. Guárdalo."
+    },
+    "fr": {
+     "t": "Le cercle chromatique",
+     "g": "Vois comment le cercle chromatique organise les teintes et pourquoi les peintres s'en servent chaque jour.",
+     "p": [
+      "Isaac Newton a courbé le spectre en cercle en 1704, offrant aux peintres une carte des relations entre couleurs.",
+      "Les couleurs voisines s'harmonisent ; les couleurs face à face créent un fort contraste.",
+      "Les peintres s'en servent pour prévoir les mélanges, choisir une palette et trouver la couleur qui calme ou exalte une autre."
+     ],
+     "q": "Vers quelle zone du cercle chromatique es-tu le plus attiré ?",
+     "c": "Trace un cercle en 12 parts et colorie-le ou note les teintes que tu connais. Garde-le pour la suite."
+    },
+    "it": {
+     "t": "Il cerchio cromatico",
+     "g": "Scopri come il cerchio cromatico ordina i colori e perché i pittori lo usano ogni giorno.",
+     "p": [
+      "Isaac Newton piegò lo spettro in un cerchio nel 1704, dando ai pittori una mappa delle relazioni tra colori.",
+      "I colori vicini stanno bene insieme; quelli opposti creano un forte contrasto.",
+      "I pittori lo usano per prevedere gli impasti, scegliere tavolozze e trovare il colore che calma o esalta un altro."
+     ],
+     "q": "Verso quale zona del cerchio cromatico ti senti più attratto?",
+     "c": "Disegna un cerchio diviso in 12 spicchi e coloralo o scrivi i colori che conosci. Conservalo."
+    },
+    "pt": {
+     "t": "O círculo cromático",
+     "g": "Vê como o círculo cromático organiza as cores e porque os pintores o usam todos os dias.",
+     "p": [
+      "Isaac Newton curvou o espetro num círculo em 1704, dando aos pintores um mapa das relações entre cores.",
+      "Cores vizinhas harmonizam-se; cores opostas criam um contraste forte.",
+      "Os pintores usam-no para prever misturas, escolher paletas e encontrar a cor que acalma ou realça outra."
+     ],
+     "q": "Para que zona do círculo cromático te sentes mais atraído?",
+     "c": "Desenha um círculo com 12 fatias e pinta-o ou escreve as cores que conheces. Guarda-o."
+    },
+    "pt_BR": {
+     "t": "O círculo cromático",
+     "g": "Veja como o círculo cromático organiza as cores e por que pintores o usam todo dia.",
+     "p": [
+      "Isaac Newton curvou o espectro num círculo em 1704, dando aos pintores um mapa de como as cores se relacionam.",
+      "Cores vizinhas combinam entre si; cores opostas criam um contraste forte.",
+      "Pintores usam o círculo para prever misturas, escolher paletas e achar a cor que acalma ou realça outra."
+     ],
+     "q": "Por qual parte do círculo cromático você se sente mais atraído?",
+     "c": "Desenhe um círculo com 12 fatias e pinte ou escreva as cores que conhece. Guarde-o."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Primary colours",
+     "g": "Meet red, yellow and blue as a starting set and see why real pigments are never perfect.",
+     "p": [
+      "In traditional painting, red, yellow and blue are the primaries: in theory they mix every other hue.",
+      "Every real pigment leans warm or cool: a red can lean orange, like cadmium red, or violet, like crimson.",
+      "That is why many painters use a split primary palette: a warm and a cool version of each primary."
+     ],
+     "q": "If you had only three tubes of paint, which exact colours would you pick?",
+     "c": "Look at three red objects at home and decide whether each red leans more to orange or to violet."
+    },
+    "de": {
+     "t": "Grundfarben",
+     "g": "Lerne Rot, Gelb und Blau als Startset kennen und warum echte Pigmente nie perfekt sind.",
+     "p": [
+      "In der traditionellen Malerei sind Rot, Gelb und Blau die Grundfarben: Theoretisch mischen sie alle anderen Töne.",
+      "Jedes echte Pigment neigt warm oder kalt: Ein Rot kann Richtung Orange gehen, wie Kadmiumrot, oder Richtung Violett.",
+      "Darum nutzen viele Maler eine geteilte Palette: je eine warme und eine kalte Version jeder Grundfarbe."
+     ],
+     "q": "Wenn du nur drei Farbtuben hättest, welche genauen Farben würdest du wählen?",
+     "c": "Schau dir drei rote Gegenstände zu Hause an und entscheide, ob jedes Rot eher zu Orange oder zu Violett neigt."
+    },
+    "es": {
+     "t": "Colores primarios",
+     "g": "Conoce el rojo, el amarillo y el azul como punto de partida y por qué los pigmentos reales nunca son perfectos.",
+     "p": [
+      "En la pintura tradicional, rojo, amarillo y azul son los primarios: en teoría mezclan todos los demás colores.",
+      "Todo pigmento real tira a cálido o a frío: un rojo puede tirar a naranja, como el rojo cadmio, o a violeta, como el carmín.",
+      "Por eso muchos pintores usan una paleta de primarios dobles: una versión cálida y otra fría de cada uno."
+     ],
+     "q": "Si solo tuvieras tres tubos de pintura, ¿qué colores exactos elegirías?",
+     "c": "Mira tres objetos rojos en casa y decide si cada rojo tira más a naranja o a violeta."
+    },
+    "fr": {
+     "t": "Les couleurs primaires",
+     "g": "Découvre le rouge, le jaune et le bleu comme base, et pourquoi les vrais pigments ne sont jamais parfaits.",
+     "p": [
+      "En peinture traditionnelle, rouge, jaune et bleu sont les primaires : en théorie, ils donnent toutes les autres teintes.",
+      "Chaque pigment réel tire vers le chaud ou le froid : un rouge peut tirer vers l'orange, comme le cadmium, ou vers le violet.",
+      "C'est pourquoi beaucoup de peintres utilisent une palette double : une version chaude et une froide de chaque primaire."
+     ],
+     "q": "Si tu n'avais que trois tubes de peinture, quelles couleurs exactes choisirais-tu ?",
+     "c": "Observe trois objets rouges chez toi et décide si chaque rouge tire plutôt vers l'orange ou le violet."
+    },
+    "it": {
+     "t": "I colori primari",
+     "g": "Conosci rosso, giallo e blu come punto di partenza e perché i pigmenti reali non sono mai perfetti.",
+     "p": [
+      "Nella pittura tradizionale rosso, giallo e blu sono i primari: in teoria mescolano tutti gli altri colori.",
+      "Ogni pigmento reale tende al caldo o al freddo: un rosso può tendere all'arancio, come il cadmio, o al viola, come il cremisi.",
+      "Per questo molti pittori usano una tavolozza di primari doppi: una versione calda e una fredda di ciascuno."
+     ],
+     "q": "Se avessi solo tre tubetti di colore, quali colori esatti sceglieresti?",
+     "c": "Osserva tre oggetti rossi in casa e decidi se ogni rosso tende più all'arancio o al viola."
+    },
+    "pt": {
+     "t": "Cores primárias",
+     "g": "Conhece o vermelho, o amarelo e o azul como ponto de partida e porque os pigmentos reais nunca são perfeitos.",
+     "p": [
+      "Na pintura tradicional, vermelho, amarelo e azul são as primárias: em teoria misturam todas as outras cores.",
+      "Todo o pigmento real puxa para quente ou frio: um vermelho pode puxar para laranja, como o cádmio, ou para violeta.",
+      "Por isso muitos pintores usam uma paleta de primárias duplas: uma versão quente e uma fria de cada."
+     ],
+     "q": "Se só tivesses três tubos de tinta, que cores exatas escolherias?",
+     "c": "Olha para três objetos vermelhos em casa e decide se cada vermelho puxa mais para laranja ou para violeta."
+    },
+    "pt_BR": {
+     "t": "Cores primárias",
+     "g": "Conheça vermelho, amarelo e azul como ponto de partida e por que pigmentos reais nunca são perfeitos.",
+     "p": [
+      "Na pintura tradicional, vermelho, amarelo e azul são as primárias: em teoria, misturam todas as outras cores.",
+      "Todo pigmento real puxa para quente ou frio: um vermelho pode puxar para laranja, como o cádmio, ou para violeta.",
+      "Por isso muitos pintores usam uma paleta de primárias duplas: uma versão quente e uma fria de cada uma."
+     ],
+     "q": "Se você tivesse só três tubos de tinta, quais cores exatas escolheria?",
+     "c": "Olhe três objetos vermelhos em casa e decida se cada vermelho puxa mais para laranja ou para violeta."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Secondary colours",
+     "g": "Mix orange, green and violet and notice how your choice of primaries changes them.",
+     "p": [
+      "Red plus yellow makes orange, yellow plus blue makes green, blue plus red makes violet.",
+      "Primaries that lean towards each other give bright mixes: a cool lemon yellow and a greenish blue make a vivid green.",
+      "Primaries that lean away give duller mixes: an orange-leaning red with a greenish blue makes a muddy purple."
+     ],
+     "q": "Which secondary colour do you think is hardest to mix brightly, and why?",
+     "c": "Mix two versions of each secondary colour with different primaries, if you have them, and compare brightness."
+    },
+    "de": {
+     "t": "Sekundärfarben",
+     "g": "Mische Orange, Grün und Violett und beobachte, wie die Wahl der Grundfarben sie verändert.",
+     "p": [
+      "Rot und Gelb ergeben Orange, Gelb und Blau ergeben Grün, Blau und Rot ergeben Violett.",
+      "Grundfarben, die zueinander neigen, mischen leuchtend: Ein kühles Zitronengelb und ein grünliches Blau ergeben kräftiges Grün.",
+      "Grundfarben, die voneinander wegneigen, mischen trüb: Ein oranges Rot mit grünlichem Blau ergibt ein schlammiges Violett."
+     ],
+     "q": "Welche Sekundärfarbe ist wohl am schwersten leuchtend zu mischen, und warum?",
+     "c": "Mische jede Sekundärfarbe in zwei Versionen mit verschiedenen Grundfarben, falls vorhanden, und vergleiche die Leuchtkraft."
+    },
+    "es": {
+     "t": "Colores secundarios",
+     "g": "Mezcla naranja, verde y violeta y observa cómo cambian según los primarios que elijas.",
+     "p": [
+      "Rojo y amarillo dan naranja, amarillo y azul dan verde, azul y rojo dan violeta.",
+      "Los primarios que tiran uno hacia el otro dan mezclas vivas: un amarillo limón frío y un azul verdoso dan un verde intenso.",
+      "Los que tiran en sentido contrario dan mezclas apagadas: un rojo anaranjado con un azul verdoso da un violeta sucio."
+     ],
+     "q": "¿Qué secundario crees que es más difícil de mezclar brillante, y por qué?",
+     "c": "Mezcla dos versiones de cada secundario con primarios distintos, si los tienes, y compara su brillo."
+    },
+    "fr": {
+     "t": "Les couleurs secondaires",
+     "g": "Mélange orange, vert et violet et vois comment le choix des primaires les change.",
+     "p": [
+      "Rouge et jaune donnent l'orange, jaune et bleu le vert, bleu et rouge le violet.",
+      "Des primaires qui penchent l'une vers l'autre donnent des mélanges vifs : jaune citron froid et bleu verdâtre font un vert éclatant.",
+      "Des primaires qui s'éloignent donnent des mélanges ternes : un rouge orangé avec un bleu verdâtre fait un violet boueux."
+     ],
+     "q": "Quelle secondaire te semble la plus difficile à obtenir éclatante, et pourquoi ?",
+     "c": "Mélange deux versions de chaque secondaire avec des primaires différentes, si tu en as, et compare leur éclat."
+    },
+    "it": {
+     "t": "I colori secondari",
+     "g": "Mescola arancio, verde e viola e nota come cambiano in base ai primari scelti.",
+     "p": [
+      "Rosso e giallo danno arancio, giallo e blu danno verde, blu e rosso danno viola.",
+      "Primari che tendono l'uno verso l'altro danno impasti vivaci: giallo limone freddo e blu verdastro fanno un verde brillante.",
+      "Primari che si allontanano danno impasti spenti: un rosso aranciato con un blu verdastro fa un viola fangoso."
+     ],
+     "q": "Quale secondario pensi sia più difficile da ottenere brillante, e perché?",
+     "c": "Mescola due versioni di ogni secondario con primari diversi, se li hai, e confronta la brillantezza."
+    },
+    "pt": {
+     "t": "Cores secundárias",
+     "g": "Mistura laranja, verde e violeta e repara como mudam conforme as primárias que escolhes.",
+     "p": [
+      "Vermelho e amarelo dão laranja, amarelo e azul dão verde, azul e vermelho dão violeta.",
+      "Primárias que puxam uma para a outra dão misturas vivas: amarelo-limão frio e azul esverdeado dão um verde intenso.",
+      "Primárias que se afastam dão misturas baças: um vermelho alaranjado com um azul esverdeado dá um violeta sujo."
+     ],
+     "q": "Que secundária achas mais difícil de misturar brilhante, e porquê?",
+     "c": "Mistura duas versões de cada secundária com primárias diferentes, se as tiveres, e compara o brilho."
+    },
+    "pt_BR": {
+     "t": "Cores secundárias",
+     "g": "Misture laranja, verde e violeta e perceba como mudam conforme as primárias escolhidas.",
+     "p": [
+      "Vermelho e amarelo dão laranja, amarelo e azul dão verde, azul e vermelho dão violeta.",
+      "Primárias que puxam uma para a outra dão misturas vivas: amarelo-limão frio e azul esverdeado dão um verde intenso.",
+      "Primárias que se afastam dão misturas apagadas: um vermelho alaranjado com azul esverdeado dá um roxo sujo."
+     ],
+     "q": "Qual secundária você acha mais difícil de misturar brilhante, e por quê?",
+     "c": "Misture duas versões de cada secundária com primárias diferentes, se tiver, e compare o brilho."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tertiary colours",
+     "g": "Mix the in-between hues that complete the twelve-part colour wheel.",
+     "p": [
+      "Tertiaries mix a primary with a neighbouring secondary: yellow-orange, red-orange, red-violet and so on.",
+      "They are named primary first, like blue-green or yellow-green, and there are six of them in total.",
+      "These subtle hues are everywhere in nature, from the yellow-green of new leaves to the blue-green of the sea."
+     ],
+     "q": "Which tertiary colour do you see most often around you, indoors or outdoors?",
+     "c": "Complete the 12-slice wheel you drew on day 17 by mixing or labelling the six tertiary hues."
+    },
+    "de": {
+     "t": "Tertiärfarben",
+     "g": "Mische die Zwischentöne, die den zwölfteiligen Farbkreis vervollständigen.",
+     "p": [
+      "Tertiärfarben mischen eine Grundfarbe mit einer benachbarten Sekundärfarbe: Gelborange, Rotorange, Rotviolett usw.",
+      "Es gibt sechs davon, etwa Blaugrün oder Gelbgrün, jeweils benannt nach den beiden Farben, aus denen sie entstehen.",
+      "Diese feinen Töne sind überall in der Natur, vom Gelbgrün junger Blätter bis zum Blaugrün des Meeres."
+     ],
+     "q": "Welche Tertiärfarbe siehst du in deiner Umgebung am häufigsten?",
+     "c": "Vervollständige deinen Farbkreis von Tag 17, indem du die sechs Tertiärfarben mischst oder beschriftest."
+    },
+    "es": {
+     "t": "Colores terciarios",
+     "g": "Mezcla los tonos intermedios que completan el círculo cromático de doce partes.",
+     "p": [
+      "Los terciarios mezclan un primario con un secundario vecino: amarillo anaranjado, rojo anaranjado, rojo violáceo, etc.",
+      "Son seis en total, como el verde azulado o el verde amarillento, y su nombre indica los dos colores que los forman.",
+      "Estos tonos sutiles están en toda la naturaleza, del verde amarillento de los brotes al verde azulado del mar."
+     ],
+     "q": "¿Qué color terciario ves más a menudo a tu alrededor?",
+     "c": "Completa el círculo de 12 partes del día 17 mezclando o escribiendo los seis terciarios."
+    },
+    "fr": {
+     "t": "Les couleurs tertiaires",
+     "g": "Mélange les teintes intermédiaires qui complètent le cercle à douze parts.",
+     "p": [
+      "Les tertiaires mêlent une primaire et une secondaire voisine : jaune-orangé, rouge-orangé, rouge-violet, etc.",
+      "Il y en a six, comme le bleu-vert ou le jaune-vert, nommées d'après les deux couleurs qui les composent.",
+      "Ces teintes subtiles sont partout dans la nature, du jaune-vert des jeunes feuilles au bleu-vert de la mer."
+     ],
+     "q": "Quelle couleur tertiaire vois-tu le plus souvent autour de toi ?",
+     "c": "Complète ton cercle du jour 17 en mélangeant ou en notant les six teintes tertiaires."
+    },
+    "it": {
+     "t": "I colori terziari",
+     "g": "Mescola le tinte intermedie che completano il cerchio cromatico a dodici parti.",
+     "p": [
+      "I terziari uniscono un primario e un secondario vicino: giallo-arancio, rosso-arancio, rosso-viola e così via.",
+      "Sono sei in tutto, come il blu-verde o il giallo-verde, e il nome indica i due colori che li formano.",
+      "Queste tinte sottili sono ovunque in natura, dal giallo-verde delle foglie nuove al blu-verde del mare."
+     ],
+     "q": "Quale colore terziario vedi più spesso intorno a te?",
+     "c": "Completa il cerchio a 12 spicchi del giorno 17 mescolando o scrivendo i sei terziari."
+    },
+    "pt": {
+     "t": "Cores terciárias",
+     "g": "Mistura os tons intermédios que completam o círculo cromático de doze partes.",
+     "p": [
+      "As terciárias juntam uma primária a uma secundária vizinha: amarelo-alaranjado, vermelho-alaranjado, vermelho-violeta, etc.",
+      "São seis, como o azul-esverdeado ou o verde-amarelado, e o nome indica as duas cores que as formam.",
+      "Estes tons subtis estão por toda a natureza, do verde-amarelado das folhas novas ao azul-esverdeado do mar."
+     ],
+     "q": "Que cor terciária vês mais vezes à tua volta?",
+     "c": "Completa o círculo de 12 fatias do dia 17 misturando ou escrevendo as seis terciárias."
+    },
+    "pt_BR": {
+     "t": "Cores terciárias",
+     "g": "Misture os tons intermediários que completam o círculo cromático de doze partes.",
+     "p": [
+      "As terciárias juntam uma primária com uma secundária vizinha: amarelo-alaranjado, vermelho-alaranjado, vermelho-violeta etc.",
+      "São seis no total, como o azul-esverdeado e o verde-amarelado, e o nome mostra as duas cores que as formam.",
+      "Esses tons sutis estão em toda a natureza, do verde-amarelado das folhas novas ao azul-esverdeado do mar."
+     ],
+     "q": "Qual cor terciária você mais vê ao seu redor?",
+     "c": "Complete o círculo de 12 fatias do dia 17 misturando ou escrevendo as seis terciárias."
+    }
+   }
+  }
+ ]
+}

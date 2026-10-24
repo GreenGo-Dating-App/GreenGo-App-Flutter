@@ -1,0 +1,835 @@
+{
+ "topic": "photography",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simplify the background",
+     "g": "Move your feet to remove poles, signs and clutter from behind your subject.",
+     "p": [
+      "Before shooting, scan the background: a pole growing out of a head is easy to miss and hard to unsee.",
+      "Step left or right, crouch or rise, so the background behind your subject becomes plain or calm.",
+      "Distance helps too: the further the background, the more it blurs and fades away."
+     ],
+     "q": "What distractions often sneak into the background of your photos?",
+     "c": "Photograph a subject, then move until the background is as clean as possible, and compare the before and after."
+    },
+    "de": {
+     "t": "Den Hintergrund vereinfachen",
+     "g": "Beweg dich, um Masten, Schilder und Unordnung hinter deinem Motiv loszuwerden.",
+     "p": [
+      "Prüf vor dem Auslösen den Hintergrund: Ein Mast, der aus einem Kopf wächst, fällt erst später auf.",
+      "Geh nach links oder rechts, in die Hocke oder höher, bis der Hintergrund schlicht und ruhig wird.",
+      "Auch Abstand hilft: Je weiter der Hintergrund entfernt ist, desto stärker verschwimmt er."
+     ],
+     "q": "Welche Störenfriede schleichen sich oft in den Hintergrund deiner Fotos?",
+     "c": "Fotografiere ein Motiv, beweg dich dann, bis der Hintergrund so ruhig wie möglich ist, und vergleiche vorher und nachher."
+    },
+    "es": {
+     "t": "Simplifica el fondo",
+     "g": "Muévete para quitar postes, carteles y desorden de detrás de tu sujeto.",
+     "p": [
+      "Antes de disparar, revisa el fondo: un poste que sale de una cabeza pasa desapercibido y luego no se olvida.",
+      "Da un paso a un lado, agáchate o súbete a algo para que el fondo detrás del sujeto quede liso o tranquilo.",
+      "La distancia también ayuda: cuanto más lejos está el fondo, más se difumina."
+     ],
+     "q": "¿Qué distracciones se cuelan a menudo en el fondo de tus fotos?",
+     "c": "Fotografía un sujeto, luego muévete hasta que el fondo quede lo más limpio posible, y compara el antes y el después."
+    },
+    "fr": {
+     "t": "Simplifier l'arrière-plan",
+     "g": "Déplace-toi pour éliminer poteaux, panneaux et désordre derrière ton sujet.",
+     "p": [
+      "Avant de déclencher, observe l'arrière-plan : un poteau qui sort d'une tête passe inaperçu puis saute aux yeux.",
+      "Décale-toi à gauche ou à droite, accroupis-toi ou monte, pour que l'arrière-plan devienne simple et calme.",
+      "La distance aide aussi : plus l'arrière-plan est loin, plus il devient flou et discret."
+     ],
+     "q": "Quelles distractions se glissent souvent à l'arrière-plan de tes photos ?",
+     "c": "Photographie un sujet, puis bouge jusqu'à ce que l'arrière-plan soit le plus net possible, et compare avant et après."
+    },
+    "it": {
+     "t": "Semplifica lo sfondo",
+     "g": "Spostati per eliminare pali, cartelli e disordine dietro al soggetto.",
+     "p": [
+      "Prima di scattare controlla lo sfondo: un palo che spunta da una testa sfugge facilmente e poi non si dimentica.",
+      "Fai un passo a destra o a sinistra, abbassati o alzati, finché lo sfondo dietro il soggetto diventa semplice.",
+      "Anche la distanza aiuta: più lo sfondo è lontano, più si sfoca e scompare."
+     ],
+     "q": "Quali distrazioni si infilano spesso nello sfondo delle tue foto?",
+     "c": "Fotografa un soggetto, poi spostati finché lo sfondo è il più pulito possibile e confronta prima e dopo."
+    },
+    "pt": {
+     "t": "Simplifica o fundo",
+     "g": "Mexe-te para tirar postes, placas e confusão de trás do motivo.",
+     "p": [
+      "Antes de disparar, observa o fundo: um poste a sair de uma cabeça passa despercebido e depois salta à vista.",
+      "Dá um passo para o lado, agacha-te ou sobe, até o fundo atrás do motivo ficar simples e calmo.",
+      "A distância também ajuda: quanto mais longe estiver o fundo, mais se desfoca."
+     ],
+     "q": "Que distrações se infiltram muitas vezes no fundo das tuas fotos?",
+     "c": "Fotografa um motivo, depois mexe-te até o fundo ficar o mais limpo possível e compara o antes e o depois."
+    },
+    "pt_BR": {
+     "t": "Simplifique o fundo",
+     "g": "Mude de posição para tirar postes, placas e bagunça de trás do assunto.",
+     "p": [
+      "Antes de disparar, olhe o fundo: um poste saindo da cabeça passa batido e depois não dá para desver.",
+      "Dê um passo para o lado, agache ou suba em algo até o fundo atrás do assunto ficar simples e calmo.",
+      "A distância também ajuda: quanto mais longe o fundo, mais ele desfoca e some."
+     ],
+     "q": "Que distrações costumam aparecer no fundo das suas fotos?",
+     "c": "Fotografe um assunto, depois se mova até o fundo ficar o mais limpo possível e compare o antes e o depois."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Foreground interest",
+     "g": "Add something close to the lens to give depth and scale to wide scenes.",
+     "p": [
+      "Wide landscapes often feel flat because everything is far away; a near element pulls the viewer in.",
+      "Rocks, flowers, a fence post or a curving path in the lower part of the frame work well.",
+      "Get low and close to the foreground object, and use a narrower aperture to keep near and far sharp."
+     ],
+     "q": "What wide view near you could become more interesting with something in the foreground?",
+     "c": "Photograph a wide scene twice, once as it is and once with a close foreground object, and compare the depth."
+    },
+    "de": {
+     "t": "Interessanter Vordergrund",
+     "g": "Bring etwas nah ans Objektiv, um weiten Szenen Tiefe und Maßstab zu geben.",
+     "p": [
+      "Weite Landschaften wirken oft flach, weil alles weit weg ist; ein nahes Element zieht den Betrachter hinein.",
+      "Steine, Blumen, ein Zaunpfahl oder ein geschwungener Weg im unteren Bildteil funktionieren gut.",
+      "Geh tief und nah an das Vordergrundobjekt und nutze eine kleinere Blende, damit Nah und Fern scharf sind."
+     ],
+     "q": "Welcher weite Ausblick in deiner Nähe würde mit etwas im Vordergrund spannender?",
+     "c": "Fotografiere eine weite Szene zweimal, einmal pur und einmal mit nahem Vordergrund, und vergleiche die Tiefe."
+    },
+    "es": {
+     "t": "Interés en primer plano",
+     "g": "Añade algo cerca del objetivo para dar profundidad y escala a las escenas amplias.",
+     "p": [
+      "Los paisajes amplios suelen parecer planos porque todo está lejos; un elemento cercano atrae a quien mira.",
+      "Rocas, flores, un poste de valla o un camino curvo en la parte baja del encuadre funcionan bien.",
+      "Agáchate cerca del elemento en primer plano y cierra algo la apertura para que cerca y lejos salgan nítidos."
+     ],
+     "q": "¿Qué vista amplia cerca de ti ganaría con algo en primer plano?",
+     "c": "Fotografía una escena amplia dos veces, tal cual y con un elemento cercano en primer plano, y compara la profundidad."
+    },
+    "fr": {
+     "t": "Un premier plan intéressant",
+     "g": "Ajoute un élément proche de l'objectif pour donner profondeur et échelle aux scènes larges.",
+     "p": [
+      "Les grands paysages paraissent souvent plats car tout est loin ; un élément proche attire le spectateur.",
+      "Rochers, fleurs, piquet de clôture ou chemin sinueux dans le bas du cadre fonctionnent bien.",
+      "Baisse-toi près de l'élément de premier plan et ferme un peu le diaphragme pour garder net le proche et le lointain."
+     ],
+     "q": "Quelle vue large près de chez toi deviendrait plus intéressante avec un premier plan ?",
+     "c": "Photographie une scène large deux fois, telle quelle puis avec un premier plan proche, et compare la profondeur."
+    },
+    "it": {
+     "t": "Primo piano interessante",
+     "g": "Aggiungi qualcosa vicino all'obiettivo per dare profondità e scala alle scene ampie.",
+     "p": [
+      "I paesaggi ampi spesso sembrano piatti perché tutto è lontano; un elemento vicino attira chi guarda.",
+      "Rocce, fiori, un paletto o un sentiero curvo nella parte bassa dell'inquadratura funzionano bene.",
+      "Abbassati vicino all'elemento in primo piano e chiudi un po' il diaframma perché vicino e lontano siano nitidi."
+     ],
+     "q": "Quale vista ampia vicino a te diventerebbe più interessante con qualcosa in primo piano?",
+     "c": "Fotografa una scena ampia due volte, così com'è e con un elemento vicino in primo piano, e confronta la profondità."
+    },
+    "pt": {
+     "t": "Interesse em primeiro plano",
+     "g": "Junta algo perto da objetiva para dar profundidade e escala às cenas amplas.",
+     "p": [
+      "As paisagens amplas parecem muitas vezes planas porque tudo está longe; um elemento próximo puxa quem vê.",
+      "Rochas, flores, um poste de vedação ou um caminho curvo na parte de baixo do enquadramento resultam bem.",
+      "Baixa-te perto do elemento em primeiro plano e fecha um pouco a abertura para manter nítido o perto e o longe."
+     ],
+     "q": "Que vista ampla perto de ti ficaria mais interessante com algo em primeiro plano?",
+     "c": "Fotografa uma cena ampla duas vezes, tal como está e com um elemento próximo em primeiro plano, e compara a profundidade."
+    },
+    "pt_BR": {
+     "t": "Interesse em primeiro plano",
+     "g": "Coloque algo perto da lente para dar profundidade e escala a cenas amplas.",
+     "p": [
+      "Paisagens amplas costumam parecer chapadas porque tudo está longe; um elemento próximo puxa quem olha.",
+      "Pedras, flores, um mourão de cerca ou uma trilha curva na parte de baixo do quadro funcionam bem.",
+      "Abaixe-se perto do elemento em primeiro plano e feche um pouco a abertura para manter perto e longe nítidos."
+     ],
+     "q": "Que vista ampla perto de você ficaria mais interessante com algo em primeiro plano?",
+     "c": "Fotografe uma cena ampla duas vezes, do jeito que está e com um elemento próximo na frente, e compare a profundidade."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Changing your angle",
+     "g": "Shoot from low down or high up to see familiar things in a fresh way.",
+     "p": [
+      "Most photos are taken at standing eye height, so simply changing height makes yours stand out.",
+      "A low angle makes subjects look taller and stronger and can turn the sky into a clean background.",
+      "A high angle, looking down, shows patterns, layouts and gives a gentle, overview feeling."
+     ],
+     "q": "What everyday object would look surprising from a very low or very high viewpoint?",
+     "c": "Photograph one everyday object from ground level, from standing height and from directly above, and pick a favourite."
+    },
+    "de": {
+     "t": "Den Blickwinkel ändern",
+     "g": "Fotografiere von ganz unten oder oben, um Vertrautes neu zu sehen.",
+     "p": [
+      "Die meisten Fotos entstehen in Augenhöhe im Stehen; schon eine andere Höhe lässt deine herausstechen.",
+      "Eine Froschperspektive lässt Motive größer und stärker wirken und macht den Himmel zum ruhigen Hintergrund.",
+      "Eine Vogelperspektive von oben zeigt Muster und Anordnungen und wirkt sanft und überblickend."
+     ],
+     "q": "Welcher Alltagsgegenstand sähe von ganz unten oder ganz oben überraschend aus?",
+     "c": "Fotografiere einen Alltagsgegenstand vom Boden, aus Stehhöhe und senkrecht von oben und wähle deinen Favoriten."
+    },
+    "es": {
+     "t": "Cambia el ángulo",
+     "g": "Dispara desde muy abajo o desde arriba para ver lo cotidiano de otra manera.",
+     "p": [
+      "La mayoría de las fotos se hacen de pie a la altura de los ojos; solo con cambiar de altura, las tuyas destacan.",
+      "Un ángulo bajo hace que los sujetos parezcan más altos y fuertes, y puede convertir el cielo en un fondo limpio.",
+      "Un ángulo alto, mirando hacia abajo, muestra patrones y disposiciones y da una sensación de vista general."
+     ],
+     "q": "¿Qué objeto cotidiano se vería sorprendente desde un punto muy bajo o muy alto?",
+     "c": "Fotografía un objeto cotidiano desde el suelo, de pie y desde justo encima, y elige tu favorita."
+    },
+    "fr": {
+     "t": "Changer d'angle",
+     "g": "Photographie de très bas ou de haut pour voir les choses familières autrement.",
+     "p": [
+      "La plupart des photos sont prises debout à hauteur d'yeux : changer simplement de hauteur rend les tiennes différentes.",
+      "Une contre-plongée grandit et renforce le sujet et peut faire du ciel un fond épuré.",
+      "Une plongée, vue d'en haut, révèle motifs et agencements et donne une impression douce de vue d'ensemble."
+     ],
+     "q": "Quel objet du quotidien paraîtrait surprenant vu de très bas ou de très haut ?",
+     "c": "Photographie un objet du quotidien depuis le sol, debout et juste au-dessus, puis choisis ta préférée."
+    },
+    "it": {
+     "t": "Cambia angolazione",
+     "g": "Scatta dal basso o dall'alto per vedere le cose familiari in modo nuovo.",
+     "p": [
+      "La maggior parte delle foto si scatta in piedi all'altezza degli occhi: basta cambiare altezza per distinguersi.",
+      "Un'inquadratura dal basso rende i soggetti più alti e forti e può trasformare il cielo in uno sfondo pulito.",
+      "Un'inquadratura dall'alto mostra motivi e disposizioni e dà una sensazione di visione d'insieme."
+     ],
+     "q": "Quale oggetto quotidiano sembrerebbe sorprendente da un punto di vista molto basso o molto alto?",
+     "c": "Fotografa un oggetto quotidiano da terra, in piedi e dritto dall'alto, poi scegli la tua preferita."
+    },
+    "pt": {
+     "t": "Muda o ângulo",
+     "g": "Fotografa de muito baixo ou de cima para veres as coisas do dia a dia de outra forma.",
+     "p": [
+      "A maioria das fotos é tirada de pé, à altura dos olhos; basta mudares de altura para as tuas se destacarem.",
+      "Um ângulo baixo faz os motivos parecerem mais altos e fortes e pode transformar o céu num fundo limpo.",
+      "Um ângulo alto, a olhar para baixo, mostra padrões e disposições e dá uma sensação de vista geral."
+     ],
+     "q": "Que objeto do dia a dia pareceria surpreendente visto de muito baixo ou de muito alto?",
+     "c": "Fotografa um objeto do dia a dia do chão, de pé e mesmo de cima, e escolhe a tua favorita."
+    },
+    "pt_BR": {
+     "t": "Mudando o ângulo",
+     "g": "Fotografe de bem baixo ou de cima para ver coisas familiares de um jeito novo.",
+     "p": [
+      "A maioria das fotos é tirada em pé, na altura dos olhos; só de mudar a altura, as suas já se destacam.",
+      "Um ângulo baixo deixa o assunto mais alto e forte e pode transformar o céu num fundo limpo.",
+      "Um ângulo alto, olhando para baixo, mostra padrões e arranjos e dá uma sensação de visão geral."
+     ],
+     "q": "Que objeto do dia a dia ficaria surpreendente visto de muito baixo ou de muito alto?",
+     "c": "Fotografe um objeto do dia a dia do chão, em pé e bem de cima, e escolha sua favorita."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye-level shots",
+     "g": "Learn when shooting at your subject's eye level creates a real connection.",
+     "p": [
+      "Shooting at the subject's own eye level puts the viewer in their world, as an equal.",
+      "With children and pets, kneel or sit down; from above they look small and distant.",
+      "Eye level feels honest and intimate, perfect for portraits and everyday moments."
+     ],
+     "q": "Who or what in your life would you like to photograph from their own eye level?",
+     "c": "With permission, photograph a child, friend or pet from your standing height and then from their eye level, and compare."
+    },
+    "de": {
+     "t": "Auf Augenhöhe fotografieren",
+     "g": "Lerne, wann Fotos auf Augenhöhe deines Motivs eine echte Verbindung schaffen.",
+     "p": [
+      "Auf Augenhöhe des Motivs zu fotografieren versetzt den Betrachter auf Augenhöhe in dessen Welt.",
+      "Bei Kindern und Haustieren knie oder setz dich hin; von oben wirken sie klein und fern.",
+      "Augenhöhe wirkt ehrlich und nah, perfekt für Porträts und Alltagsmomente."
+     ],
+     "q": "Wen oder was würdest du gern von dessen eigener Augenhöhe aus fotografieren?",
+     "c": "Fotografiere mit Erlaubnis ein Kind, einen Freund oder ein Haustier aus Stehhöhe und dann auf Augenhöhe, und vergleiche."
+    },
+    "es": {
+     "t": "A la altura de los ojos",
+     "g": "Aprende cuándo fotografiar a la altura de los ojos del sujeto crea una conexión real.",
+     "p": [
+      "Disparar a la altura de los ojos del sujeto mete a quien mira en su mundo, de igual a igual.",
+      "Con niños y mascotas, arrodíllate o siéntate; desde arriba se ven pequeños y lejanos.",
+      "La altura de los ojos transmite sinceridad y cercanía, ideal para retratos y momentos cotidianos."
+     ],
+     "q": "¿A quién o qué de tu vida te gustaría fotografiar desde su propia altura?",
+     "c": "Con permiso, fotografía a un niño, un amigo o una mascota desde tu altura y luego a la altura de sus ojos, y compara."
+    },
+    "fr": {
+     "t": "À hauteur des yeux",
+     "g": "Apprends quand photographier à hauteur des yeux du sujet crée un vrai lien.",
+     "p": [
+      "Photographier à hauteur des yeux du sujet place le spectateur dans son monde, d'égal à égal.",
+      "Avec des enfants ou des animaux, mets-toi à genoux ou assieds-toi : vus d'en haut, ils paraissent petits et lointains.",
+      "La hauteur des yeux semble sincère et intime, parfaite pour les portraits et les moments du quotidien."
+     ],
+     "q": "Qui ou quoi dans ta vie aimerais-tu photographier à sa propre hauteur ?",
+     "c": "Avec accord, photographie un enfant, un ami ou un animal depuis ta hauteur puis à hauteur de ses yeux, et compare."
+    },
+    "it": {
+     "t": "All'altezza degli occhi",
+     "g": "Impara quando scattare all'altezza degli occhi del soggetto crea un vero legame.",
+     "p": [
+      "Scattare all'altezza degli occhi del soggetto porta chi guarda nel suo mondo, alla pari.",
+      "Con bambini e animali inginocchiati o siediti: dall'alto sembrano piccoli e lontani.",
+      "L'altezza degli occhi trasmette sincerità e vicinanza, perfetta per ritratti e momenti quotidiani."
+     ],
+     "q": "Chi o cosa della tua vita ti piacerebbe fotografare dalla sua altezza?",
+     "c": "Con il permesso, fotografa un bambino, un amico o un animale dalla tua altezza e poi all'altezza dei suoi occhi, e confronta."
+    },
+    "pt": {
+     "t": "À altura dos olhos",
+     "g": "Aprende quando fotografar à altura dos olhos do motivo cria uma ligação verdadeira.",
+     "p": [
+      "Fotografar à altura dos olhos do motivo leva quem vê para o mundo dele, de igual para igual.",
+      "Com crianças e animais, ajoelha-te ou senta-te; vistos de cima parecem pequenos e distantes.",
+      "A altura dos olhos transmite sinceridade e proximidade, ideal para retratos e momentos do dia a dia."
+     ],
+     "q": "Quem ou o quê na tua vida gostavas de fotografar à sua própria altura?",
+     "c": "Com autorização, fotografa uma criança, um amigo ou um animal da tua altura e depois à altura dos olhos dele, e compara."
+    },
+    "pt_BR": {
+     "t": "Na altura dos olhos",
+     "g": "Aprenda quando fotografar na altura dos olhos do assunto cria uma conexão de verdade.",
+     "p": [
+      "Fotografar na altura dos olhos do assunto leva quem olha para o mundo dele, de igual para igual.",
+      "Com crianças e pets, ajoelhe ou sente; vistos de cima, eles parecem pequenos e distantes.",
+      "A altura dos olhos passa sinceridade e proximidade, perfeita para retratos e momentos do dia a dia."
+     ],
+     "q": "Quem ou o que na sua vida você gostaria de fotografar da altura dele?",
+     "c": "Com permissão, fotografe uma criança, um amigo ou um pet da sua altura e depois na altura dos olhos dele, e compare."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Odd numbers",
+     "g": "Discover why groups of three or five often look more natural than pairs.",
+     "p": [
+      "With an even number, the eye tends to pair things up; with an odd number it keeps moving through the group.",
+      "Three objects easily form a triangle, one of the most pleasing shapes in a composition.",
+      "Try it with still life at home: fruit, cups, stones or flowers arranged in threes or fives."
+     ],
+     "q": "Do you notice odd-numbered groups in photos, paintings or shop windows you like?",
+     "c": "Arrange two, then three, then four similar objects on a table, photograph each set and decide which feels best."
+    },
+    "de": {
+     "t": "Ungerade Zahlen",
+     "g": "Entdecke, warum Gruppen aus drei oder fünf oft natürlicher wirken als Paare.",
+     "p": [
+      "Bei gerader Zahl bildet das Auge gern Paare; bei ungerader wandert es weiter durch die Gruppe.",
+      "Drei Gegenstände bilden leicht ein Dreieck, eine der angenehmsten Formen in der Komposition.",
+      "Probier es mit einem Stillleben zu Hause: Obst, Tassen, Steine oder Blumen in Dreier- oder Fünfergruppen."
+     ],
+     "q": "Fallen dir ungerade Gruppen in Fotos, Gemälden oder Schaufenstern auf, die du magst?",
+     "c": "Stell zwei, dann drei, dann vier ähnliche Gegenstände auf einen Tisch, fotografiere jede Gruppe und entscheide, was am besten wirkt."
+    },
+    "es": {
+     "t": "Números impares",
+     "g": "Descubre por qué los grupos de tres o cinco suelen verse más naturales que las parejas.",
+     "p": [
+      "Con un número par, la mirada tiende a emparejar; con un número impar sigue recorriendo el grupo.",
+      "Tres objetos forman fácilmente un triángulo, una de las formas más agradables en una composición.",
+      "Pruébalo con un bodegón en casa: fruta, tazas, piedras o flores agrupadas de tres en tres o de cinco en cinco."
+     ],
+     "q": "¿Te fijas en grupos impares en fotos, cuadros o escaparates que te gustan?",
+     "c": "Coloca dos, luego tres y luego cuatro objetos parecidos en una mesa, fotografía cada grupo y decide cuál funciona mejor."
+    },
+    "fr": {
+     "t": "Les nombres impairs",
+     "g": "Découvre pourquoi les groupes de trois ou cinq paraissent souvent plus naturels que les paires.",
+     "p": [
+      "Avec un nombre pair, l'œil a tendance à former des paires ; avec un nombre impair, il continue de parcourir le groupe.",
+      "Trois objets forment facilement un triangle, l'une des formes les plus agréables en composition.",
+      "Essaie avec une nature morte à la maison : fruits, tasses, galets ou fleurs par trois ou par cinq."
+     ],
+     "q": "Remarques-tu des groupes impairs dans les photos, tableaux ou vitrines que tu aimes ?",
+     "c": "Dispose deux, puis trois, puis quatre objets semblables sur une table, photographie chaque groupe et choisis le plus réussi."
+    },
+    "it": {
+     "t": "Numeri dispari",
+     "g": "Scopri perché i gruppi di tre o cinque spesso sembrano più naturali delle coppie.",
+     "p": [
+      "Con un numero pari l'occhio tende a formare coppie; con un numero dispari continua a muoversi nel gruppo.",
+      "Tre oggetti formano facilmente un triangolo, una delle forme più piacevoli in una composizione.",
+      "Provalo con uno still life a casa: frutta, tazze, sassi o fiori disposti a tre o a cinque."
+     ],
+     "q": "Noti gruppi dispari nelle foto, nei quadri o nelle vetrine che ti piacciono?",
+     "c": "Disponi due, poi tre, poi quattro oggetti simili su un tavolo, fotografa ogni gruppo e decidi quale funziona meglio."
+    },
+    "pt": {
+     "t": "Números ímpares",
+     "g": "Descobre porque os grupos de três ou cinco parecem muitas vezes mais naturais do que os pares.",
+     "p": [
+      "Com um número par, o olhar tende a formar pares; com um número ímpar continua a percorrer o grupo.",
+      "Três objetos formam facilmente um triângulo, uma das formas mais agradáveis numa composição.",
+      "Experimenta com uma natureza-morta em casa: fruta, chávenas, pedras ou flores em grupos de três ou cinco."
+     ],
+     "q": "Reparas em grupos ímpares nas fotos, quadros ou montras de que gostas?",
+     "c": "Põe dois, depois três e depois quatro objetos parecidos numa mesa, fotografa cada grupo e decide qual resulta melhor."
+    },
+    "pt_BR": {
+     "t": "Números ímpares",
+     "g": "Descubra por que grupos de três ou cinco costumam parecer mais naturais que pares.",
+     "p": [
+      "Com número par, o olhar tende a formar pares; com número ímpar, ele continua passeando pelo grupo.",
+      "Três objetos formam fácil um triângulo, uma das formas mais agradáveis numa composição.",
+      "Teste com um still em casa: frutas, xícaras, pedras ou flores em grupos de três ou cinco."
+     ],
+     "q": "Você repara em grupos ímpares em fotos, quadros ou vitrines de que gosta?",
+     "c": "Coloque dois, depois três e depois quatro objetos parecidos numa mesa, fotografe cada grupo e decida qual funciona melhor."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Diagonals",
+     "g": "Use diagonal lines to add energy and movement to your photos.",
+     "p": [
+      "Horizontal lines feel calm and vertical ones feel stable, while diagonals feel dynamic and active.",
+      "Staircases, roofs, shadows, ramps and slopes all offer natural diagonals.",
+      "Tilting the camera to create a diagonal can work, but do it boldly so it looks intentional."
+     ],
+     "q": "What place near you is full of strong diagonal lines?",
+     "c": "Find three diagonal lines today, such as stairs, a railing or a long shadow, and photograph each running corner to corner."
+    },
+    "de": {
+     "t": "Diagonalen",
+     "g": "Nutze diagonale Linien, um deinen Fotos Energie und Bewegung zu geben.",
+     "p": [
+      "Waagerechte Linien wirken ruhig, senkrechte stabil, Diagonalen dagegen dynamisch und lebendig.",
+      "Treppen, Dächer, Schatten, Rampen und Hänge bieten natürliche Diagonalen.",
+      "Eine gekippte Kamera kann eine Diagonale erzeugen, aber dann deutlich, damit es gewollt aussieht."
+     ],
+     "q": "Welcher Ort in deiner Nähe steckt voller starker Diagonalen?",
+     "c": "Finde heute drei Diagonalen, etwa Treppen, ein Geländer oder einen langen Schatten, und fotografiere sie von Ecke zu Ecke."
+    },
+    "es": {
+     "t": "Diagonales",
+     "g": "Usa líneas diagonales para dar energía y movimiento a tus fotos.",
+     "p": [
+      "Las líneas horizontales transmiten calma y las verticales estabilidad, mientras que las diagonales son dinámicas.",
+      "Escaleras, tejados, sombras, rampas y pendientes ofrecen diagonales naturales.",
+      "Inclinar la cámara para crear una diagonal puede funcionar, pero hazlo con decisión para que parezca intencionado."
+     ],
+     "q": "¿Qué lugar cerca de ti está lleno de diagonales marcadas?",
+     "c": "Encuentra hoy tres diagonales, como unas escaleras, una barandilla o una sombra larga, y fotografía cada una de esquina a esquina."
+    },
+    "fr": {
+     "t": "Les diagonales",
+     "g": "Utilise des lignes diagonales pour donner énergie et mouvement à tes photos.",
+     "p": [
+      "Les horizontales évoquent le calme, les verticales la stabilité, et les diagonales le dynamisme.",
+      "Escaliers, toits, ombres, rampes et pentes offrent des diagonales naturelles.",
+      "Incliner l'appareil pour créer une diagonale peut marcher, mais franchement, pour que ce soit clairement voulu."
+     ],
+     "q": "Quel endroit près de chez toi est plein de diagonales marquées ?",
+     "c": "Trouve aujourd'hui trois diagonales, comme un escalier, une rambarde ou une longue ombre, et photographie-les d'un coin à l'autre."
+    },
+    "it": {
+     "t": "Diagonali",
+     "g": "Usa le linee diagonali per dare energia e movimento alle tue foto.",
+     "p": [
+      "Le linee orizzontali trasmettono calma e quelle verticali stabilità, mentre le diagonali sono dinamiche.",
+      "Scale, tetti, ombre, rampe e pendii offrono diagonali naturali.",
+      "Inclinare la fotocamera per creare una diagonale può funzionare, ma fallo con decisione perché sembri voluto."
+     ],
+     "q": "Quale luogo vicino a te è pieno di diagonali forti?",
+     "c": "Trova oggi tre diagonali, come scale, una ringhiera o un'ombra lunga, e fotografa ciascuna da un angolo all'altro."
+    },
+    "pt": {
+     "t": "Diagonais",
+     "g": "Usa linhas diagonais para dar energia e movimento às tuas fotos.",
+     "p": [
+      "As linhas horizontais transmitem calma e as verticais estabilidade, enquanto as diagonais são dinâmicas.",
+      "Escadas, telhados, sombras, rampas e encostas oferecem diagonais naturais.",
+      "Inclinar a câmara para criar uma diagonal pode resultar, mas fá-lo com decisão para parecer intencional."
+     ],
+     "q": "Que sítio perto de ti está cheio de diagonais fortes?",
+     "c": "Encontra hoje três diagonais, como escadas, um corrimão ou uma sombra comprida, e fotografa cada uma de canto a canto."
+    },
+    "pt_BR": {
+     "t": "Diagonais",
+     "g": "Use linhas diagonais para dar energia e movimento às suas fotos.",
+     "p": [
+      "Linhas horizontais passam calma e verticais passam estabilidade, enquanto diagonais são dinâmicas.",
+      "Escadas, telhados, sombras, rampas e ladeiras oferecem diagonais naturais.",
+      "Inclinar a câmera para criar uma diagonal pode funcionar, mas faça com convicção para parecer intencional."
+     ],
+     "q": "Que lugar perto de você está cheio de diagonais fortes?",
+     "c": "Encontre hoje três diagonais, como escadas, um corrimão ou uma sombra comprida, e fotografe cada uma de canto a canto."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Curves and S-shapes",
+     "g": "Use winding paths, rivers and roads to give a gentle flow to your images.",
+     "p": [
+      "Curves slow the eye down and guide it softly through the frame, unlike straight lines that rush it along.",
+      "An S-shaped path or river leads the viewer from the foreground deep into the scene.",
+      "Shoot from a slightly higher viewpoint to reveal the full shape of the curve."
+     ],
+     "q": "Where could you find a winding path, road, river or railing near you?",
+     "c": "Find a curving line, such as a path, a stream or a staircase handrail, and photograph it so it leads into the scene."
+    },
+    "de": {
+     "t": "Kurven und S-Formen",
+     "g": "Nutze gewundene Wege, Flüsse und Straßen, um deinen Bildern einen sanften Fluss zu geben.",
+     "p": [
+      "Kurven verlangsamen den Blick und führen ihn sanft durchs Bild, anders als gerade Linien, die ihn hetzen.",
+      "Ein S-förmiger Weg oder Fluss führt den Betrachter vom Vordergrund tief in die Szene.",
+      "Fotografiere von etwas erhöhter Position, um die ganze Form der Kurve zu zeigen."
+     ],
+     "q": "Wo in deiner Nähe findest du einen gewundenen Weg, eine Straße, einen Fluss oder ein Geländer?",
+     "c": "Finde eine geschwungene Linie, etwa einen Weg, einen Bach oder einen Handlauf, und fotografiere sie so, dass sie in die Szene führt."
+    },
+    "es": {
+     "t": "Curvas y formas en S",
+     "g": "Usa caminos sinuosos, ríos y carreteras para dar un flujo suave a tus imágenes.",
+     "p": [
+      "Las curvas frenan la mirada y la guían con suavidad, a diferencia de las rectas, que la aceleran.",
+      "Un camino o un río en forma de S lleva a quien mira desde el primer plano hasta el fondo de la escena.",
+      "Dispara desde un punto algo elevado para mostrar la forma completa de la curva."
+     ],
+     "q": "¿Dónde podrías encontrar cerca de ti un camino, carretera, río o barandilla con curvas?",
+     "c": "Busca una línea curva, como un camino, un arroyo o un pasamanos, y fotografíala de modo que lleve hacia la escena."
+    },
+    "fr": {
+     "t": "Courbes et lignes en S",
+     "g": "Utilise chemins sinueux, rivières et routes pour donner un flux doux à tes images.",
+     "p": [
+      "Les courbes ralentissent le regard et le guident doucement, contrairement aux lignes droites qui le pressent.",
+      "Un chemin ou une rivière en S conduit le spectateur du premier plan jusqu'au fond de la scène.",
+      "Photographie depuis un point de vue un peu plus haut pour révéler toute la forme de la courbe."
+     ],
+     "q": "Où pourrais-tu trouver près de chez toi un chemin, une route, une rivière ou une rampe qui serpente ?",
+     "c": "Trouve une ligne courbe, comme un chemin, un ruisseau ou une main courante, et photographie-la pour qu'elle mène dans la scène."
+    },
+    "it": {
+     "t": "Curve e forme a S",
+     "g": "Usa sentieri tortuosi, fiumi e strade per dare un flusso morbido alle tue immagini.",
+     "p": [
+      "Le curve rallentano lo sguardo e lo guidano dolcemente, a differenza delle linee rette che lo accelerano.",
+      "Un sentiero o un fiume a S conduce chi guarda dal primo piano fino in fondo alla scena.",
+      "Scatta da un punto un po' più alto per mostrare tutta la forma della curva."
+     ],
+     "q": "Dove potresti trovare vicino a te un sentiero, una strada, un fiume o una ringhiera curvi?",
+     "c": "Trova una linea curva, come un sentiero, un ruscello o un corrimano, e fotografala in modo che conduca dentro la scena."
+    },
+    "pt": {
+     "t": "Curvas e formas em S",
+     "g": "Usa caminhos sinuosos, rios e estradas para dar um fluxo suave às tuas imagens.",
+     "p": [
+      "As curvas abrandam o olhar e guiam-no com suavidade, ao contrário das retas, que o apressam.",
+      "Um caminho ou um rio em S leva quem vê do primeiro plano até ao fundo da cena.",
+      "Fotografa de um ponto um pouco mais alto para mostrar a forma completa da curva."
+     ],
+     "q": "Onde podias encontrar perto de ti um caminho, estrada, rio ou corrimão com curvas?",
+     "c": "Encontra uma linha curva, como um caminho, um ribeiro ou um corrimão, e fotografa-a de forma a levar para dentro da cena."
+    },
+    "pt_BR": {
+     "t": "Curvas e formas em S",
+     "g": "Use trilhas sinuosas, rios e estradas para dar um fluxo suave às suas imagens.",
+     "p": [
+      "Curvas desaceleram o olhar e o guiam com suavidade, ao contrário das retas, que o apressam.",
+      "Uma trilha ou um rio em forma de S leva quem olha do primeiro plano até o fundo da cena.",
+      "Fotografe de um ponto um pouco mais alto para mostrar a forma inteira da curva."
+     ],
+     "q": "Onde você encontraria perto de você uma trilha, estrada, rio ou corrimão com curvas?",
+     "c": "Encontre uma linha curva, como uma trilha, um riacho ou um corrimão, e fotografe de modo que ela leve para dentro da cena."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Balance and visual weight",
+     "g": "See how size, colour and brightness make elements feel heavy or light in the frame.",
+     "p": [
+      "Large, bright, colourful, sharp or human elements feel heavy and pull the eye strongly.",
+      "A big subject on one side can be balanced by a small but bright or colourful one on the other.",
+      "Balance does not mean symmetry; it means the frame feels settled rather than tipping to one side."
+     ],
+     "q": "When you look at a photo, can you feel if it leans too much to one side?",
+     "c": "Photograph a scene where a large element on one side is balanced by a smaller, brighter one on the other."
+    },
+    "de": {
+     "t": "Balance und visuelles Gewicht",
+     "g": "Sieh, wie Größe, Farbe und Helligkeit Elemente im Bild schwer oder leicht wirken lassen.",
+     "p": [
+      "Große, helle, farbige, scharfe oder menschliche Elemente wirken schwer und ziehen den Blick stark an.",
+      "Ein großes Motiv auf einer Seite lässt sich durch ein kleines, aber helles oder farbiges auf der anderen ausgleichen.",
+      "Balance heißt nicht Symmetrie; sie bedeutet, dass das Bild ruht, statt zu einer Seite zu kippen."
+     ],
+     "q": "Spürst du beim Betrachten eines Fotos, ob es zu sehr zu einer Seite hängt?",
+     "c": "Fotografiere eine Szene, in der ein großes Element auf einer Seite durch ein kleineres, helleres auf der anderen ausgeglichen wird."
+    },
+    "es": {
+     "t": "Equilibrio y peso visual",
+     "g": "Descubre cómo el tamaño, el color y el brillo hacen que los elementos parezcan pesados o ligeros.",
+     "p": [
+      "Los elementos grandes, claros, de color, nítidos o humanos pesan más y atraen con fuerza la mirada.",
+      "Un sujeto grande a un lado puede equilibrarse con uno pequeño pero claro o colorido al otro.",
+      "Equilibrio no es simetría: significa que el encuadre se siente estable y no se inclina hacia un lado."
+     ],
+     "q": "Cuando miras una foto, ¿notas si se inclina demasiado hacia un lado?",
+     "c": "Fotografía una escena en la que un elemento grande a un lado se equilibre con otro más pequeño y claro al otro."
+    },
+    "fr": {
+     "t": "Équilibre et poids visuel",
+     "g": "Vois comment la taille, la couleur et la luminosité rendent des éléments lourds ou légers dans le cadre.",
+     "p": [
+      "Les éléments grands, clairs, colorés, nets ou humains pèsent lourd et attirent fortement le regard.",
+      "Un grand sujet d'un côté peut être équilibré par un petit élément lumineux ou coloré de l'autre.",
+      "L'équilibre n'est pas la symétrie : c'est un cadre qui semble posé au lieu de pencher d'un côté."
+     ],
+     "q": "Quand tu regardes une photo, sens-tu si elle penche trop d'un côté ?",
+     "c": "Photographie une scène où un grand élément d'un côté est équilibré par un plus petit et plus lumineux de l'autre."
+    },
+    "it": {
+     "t": "Equilibrio e peso visivo",
+     "g": "Scopri come dimensione, colore e luminosità rendono gli elementi pesanti o leggeri nell'inquadratura.",
+     "p": [
+      "Elementi grandi, chiari, colorati, nitidi o umani pesano di più e attirano con forza lo sguardo.",
+      "Un soggetto grande da un lato può essere bilanciato da uno piccolo ma luminoso o colorato dall'altro.",
+      "Equilibrio non significa simmetria: vuol dire che l'inquadratura sembra stabile e non pende da un lato."
+     ],
+     "q": "Quando guardi una foto, senti se pende troppo da un lato?",
+     "c": "Fotografa una scena in cui un elemento grande da un lato è bilanciato da uno più piccolo e luminoso dall'altro."
+    },
+    "pt": {
+     "t": "Equilíbrio e peso visual",
+     "g": "Vê como o tamanho, a cor e o brilho fazem os elementos parecer pesados ou leves no enquadramento.",
+     "p": [
+      "Elementos grandes, claros, coloridos, nítidos ou humanos pesam mais e puxam muito o olhar.",
+      "Um motivo grande de um lado pode ser equilibrado por um pequeno, mas claro ou colorido, do outro.",
+      "Equilíbrio não é simetria: significa que o enquadramento parece estável e não tomba para um lado."
+     ],
+     "q": "Quando olhas para uma foto, sentes se pende demasiado para um lado?",
+     "c": "Fotografa uma cena em que um elemento grande de um lado é equilibrado por outro mais pequeno e claro do outro lado."
+    },
+    "pt_BR": {
+     "t": "Equilíbrio e peso visual",
+     "g": "Veja como tamanho, cor e brilho deixam elementos pesados ou leves no quadro.",
+     "p": [
+      "Elementos grandes, claros, coloridos, nítidos ou humanos pesam mais e puxam muito o olhar.",
+      "Um assunto grande de um lado pode ser equilibrado por um pequeno, mas claro ou colorido, do outro.",
+      "Equilíbrio não é simetria: significa que o quadro parece estável e não tomba para um lado."
+     ],
+     "q": "Quando você olha uma foto, sente se ela pende demais para um lado?",
+     "c": "Fotografe uma cena em que um elemento grande de um lado seja equilibrado por outro menor e mais claro do outro lado."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Edges of the frame",
+     "g": "Check the corners and edges of your frame for distractions before you shoot.",
+     "p": [
+      "Bright spots, half-cut objects and stray lines at the edges pull the eye away from your subject.",
+      "Do a quick edge patrol: trace the border of the frame with your eyes before pressing the shutter.",
+      "Avoid cutting people at joints like wrists, knees or ankles; crop between them instead."
+     ],
+     "q": "What unwanted things have you noticed at the edges of your photos afterwards?",
+     "c": "For every photo you take today, do an edge patrol first, and count how many times you adjust the framing."
+    },
+    "de": {
+     "t": "Die Bildränder",
+     "g": "Prüf vor dem Auslösen Ecken und Ränder deines Bildes auf Störendes.",
+     "p": [
+      "Helle Flecken, angeschnittene Gegenstände und Linien am Rand ziehen den Blick vom Motiv weg.",
+      "Mach eine kurze Randkontrolle: Fahr mit den Augen den Bildrand entlang, bevor du auslöst.",
+      "Schneide Menschen nicht an Gelenken wie Handgelenk, Knie oder Knöchel ab, sondern dazwischen."
+     ],
+     "q": "Welche ungewollten Dinge hast du später schon an den Rändern deiner Fotos entdeckt?",
+     "c": "Mach heute vor jedem Foto eine Randkontrolle und zähle, wie oft du den Ausschnitt korrigierst."
+    },
+    "es": {
+     "t": "Los bordes del encuadre",
+     "g": "Revisa las esquinas y los bordes del encuadre en busca de distracciones antes de disparar.",
+     "p": [
+      "Manchas claras, objetos cortados por la mitad y líneas sueltas en los bordes alejan la mirada del sujeto.",
+      "Haz una ronda por los bordes: recorre con la vista el contorno del encuadre antes de pulsar el disparador.",
+      "Evita cortar a las personas por las articulaciones, como muñecas, rodillas o tobillos; corta entre ellas."
+     ],
+     "q": "¿Qué cosas no deseadas has descubierto después en los bordes de tus fotos?",
+     "c": "En cada foto de hoy, haz primero una ronda por los bordes y cuenta cuántas veces corriges el encuadre."
+    },
+    "fr": {
+     "t": "Les bords du cadre",
+     "g": "Vérifie les coins et les bords de ton cadre pour repérer les distractions avant de déclencher.",
+     "p": [
+      "Taches claires, objets coupés et lignes parasites sur les bords détournent le regard de ton sujet.",
+      "Fais une patrouille des bords : parcours des yeux le contour du cadre avant d'appuyer.",
+      "Évite de couper les personnes aux articulations, comme poignets, genoux ou chevilles ; coupe entre elles."
+     ],
+     "q": "Quels éléments indésirables as-tu déjà découverts après coup sur les bords de tes photos ?",
+     "c": "Pour chaque photo aujourd'hui, fais d'abord une patrouille des bords et compte combien de fois tu ajustes le cadrage."
+    },
+    "it": {
+     "t": "I bordi dell'inquadratura",
+     "g": "Controlla angoli e bordi dell'inquadratura in cerca di distrazioni prima di scattare.",
+     "p": [
+      "Macchie chiare, oggetti tagliati a metà e linee vaganti ai bordi allontanano lo sguardo dal soggetto.",
+      "Fai un giro di controllo dei bordi: percorri con gli occhi il contorno dell'inquadratura prima di scattare.",
+      "Evita di tagliare le persone alle articolazioni come polsi, ginocchia o caviglie; taglia tra l'una e l'altra."
+     ],
+     "q": "Quali cose indesiderate hai notato dopo ai bordi delle tue foto?",
+     "c": "Per ogni foto di oggi fai prima un controllo dei bordi e conta quante volte correggi l'inquadratura."
+    },
+    "pt": {
+     "t": "As margens do enquadramento",
+     "g": "Verifica os cantos e as margens do enquadramento à procura de distrações antes de disparar.",
+     "p": [
+      "Manchas claras, objetos cortados a meio e linhas soltas nas margens afastam o olhar do motivo.",
+      "Faz uma ronda às margens: percorre com os olhos o contorno do enquadramento antes de carregar no botão.",
+      "Evita cortar pessoas nas articulações, como pulsos, joelhos ou tornozelos; corta entre elas."
+     ],
+     "q": "Que coisas indesejadas já descobriste depois nas margens das tuas fotos?",
+     "c": "Em cada foto de hoje, faz primeiro uma ronda às margens e conta quantas vezes corriges o enquadramento."
+    },
+    "pt_BR": {
+     "t": "As bordas do quadro",
+     "g": "Confira os cantos e as bordas do quadro em busca de distrações antes de disparar.",
+     "p": [
+      "Manchas claras, objetos cortados pela metade e linhas soltas nas bordas tiram o olhar do assunto.",
+      "Faça uma ronda nas bordas: percorra com os olhos o contorno do quadro antes de apertar o botão.",
+      "Evite cortar pessoas nas articulações, como pulsos, joelhos ou tornozelos; corte entre elas."
+     ],
+     "q": "Que coisas indesejadas você já descobriu depois nas bordas das suas fotos?",
+     "c": "Em cada foto de hoje, faça primeiro uma ronda nas bordas e conte quantas vezes você corrige o enquadramento."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cropping in camera",
+     "g": "Decide what to leave out while you shoot, instead of fixing it later.",
+     "p": [
+      "Every frame is a choice of what to include; leaving things out is as important as putting them in.",
+      "Cropping in camera keeps full resolution and trains your eye to see the final image before you shoot.",
+      "Try tighter framings: a hand instead of a whole person, one window instead of a whole building."
+     ],
+     "q": "Do you usually crop your photos afterwards, or try to get the framing right when shooting?",
+     "c": "Take ten photos today with no cropping allowed later, framing each one exactly as you want the final image."
+    },
+    "de": {
+     "t": "Zuschneiden beim Fotografieren",
+     "g": "Entscheide beim Fotografieren, was du weglässt, statt es später zu korrigieren.",
+     "p": [
+      "Jedes Bild ist eine Wahl, was hineinkommt; Weglassen ist genauso wichtig wie Zeigen.",
+      "Zuschneiden in der Kamera erhält die volle Auflösung und schult dein Auge, das fertige Bild vorab zu sehen.",
+      "Probier engere Ausschnitte: eine Hand statt der ganzen Person, ein Fenster statt des ganzen Gebäudes."
+     ],
+     "q": "Schneidest du deine Fotos meist nachträglich zu, oder versuchst du, den Ausschnitt gleich richtig zu wählen?",
+     "c": "Mach heute zehn Fotos ohne späteres Zuschneiden und wähle jeden Ausschnitt genau so, wie das fertige Bild sein soll."
+    },
+    "es": {
+     "t": "Recortar en cámara",
+     "g": "Decide qué dejar fuera mientras disparas, en lugar de arreglarlo después.",
+     "p": [
+      "Cada encuadre es una elección de qué incluir; dejar cosas fuera es tan importante como meterlas.",
+      "Recortar en cámara conserva toda la resolución y entrena tu ojo para ver la imagen final antes de disparar.",
+      "Prueba encuadres más cerrados: una mano en vez de una persona entera, una ventana en vez de todo el edificio."
+     ],
+     "q": "¿Sueles recortar tus fotos después o intentas acertar el encuadre al disparar?",
+     "c": "Haz hoy diez fotos sin permitirte recortar después, encuadrando cada una exactamente como quieres la imagen final."
+    },
+    "fr": {
+     "t": "Recadrer à la prise de vue",
+     "g": "Décide ce que tu laisses de côté au moment de photographier, au lieu de corriger après.",
+     "p": [
+      "Chaque cadrage est un choix de ce qu'on inclut ; exclure compte autant qu'inclure.",
+      "Recadrer à la prise de vue garde toute la résolution et entraîne ton œil à voir l'image finale d'avance.",
+      "Essaie des cadrages plus serrés : une main au lieu de toute la personne, une fenêtre au lieu du bâtiment entier."
+     ],
+     "q": "Recadres-tu tes photos après coup, ou cherches-tu le bon cadrage dès la prise de vue ?",
+     "c": "Prends aujourd'hui dix photos sans recadrage autorisé ensuite, en cadrant chacune exactement comme l'image finale."
+    },
+    "it": {
+     "t": "Ritagliare in macchina",
+     "g": "Decidi cosa lasciare fuori mentre scatti, invece di sistemarlo dopo.",
+     "p": [
+      "Ogni inquadratura è una scelta di cosa includere; lasciare fuori è importante quanto mettere dentro.",
+      "Ritagliare in macchina conserva tutta la risoluzione e allena l'occhio a vedere l'immagine finale prima di scattare.",
+      "Prova inquadrature più strette: una mano invece di tutta la persona, una finestra invece dell'intero edificio."
+     ],
+     "q": "Di solito ritagli le foto dopo, o cerchi di azzeccare l'inquadratura mentre scatti?",
+     "c": "Scatta oggi dieci foto senza ritagli successivi, inquadrando ciascuna esattamente come vuoi l'immagine finale."
+    },
+    "pt": {
+     "t": "Cortar na câmara",
+     "g": "Decide o que deixar de fora enquanto fotografas, em vez de corrigir depois.",
+     "p": [
+      "Cada enquadramento é uma escolha do que incluir; deixar coisas de fora é tão importante como pô-las dentro.",
+      "Cortar na câmara mantém a resolução total e treina o olhar para ver a imagem final antes de disparar.",
+      "Experimenta enquadramentos mais apertados: uma mão em vez da pessoa inteira, uma janela em vez do edifício."
+     ],
+     "q": "Costumas cortar as tuas fotos depois, ou tentas acertar no enquadramento ao fotografar?",
+     "c": "Tira hoje dez fotos sem poderes cortar depois, enquadrando cada uma exatamente como queres a imagem final."
+    },
+    "pt_BR": {
+     "t": "Cortando na câmera",
+     "g": "Decida o que deixar de fora enquanto fotografa, em vez de consertar depois.",
+     "p": [
+      "Cada enquadramento é uma escolha do que incluir; deixar coisas de fora é tão importante quanto colocar.",
+      "Cortar na câmera mantém a resolução total e treina seu olho para ver a imagem final antes de disparar.",
+      "Teste enquadramentos mais fechados: uma mão em vez da pessoa inteira, uma janela em vez do prédio todo."
+     ],
+     "q": "Você costuma cortar suas fotos depois, ou tenta acertar o enquadramento na hora?",
+     "c": "Tire hoje dez fotos sem poder cortar depois, enquadrando cada uma exatamente como você quer a imagem final."
+    }
+   }
+  }
+ ]
+}

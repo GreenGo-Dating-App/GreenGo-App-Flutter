@@ -1,0 +1,835 @@
+{
+ "topic": "crafts",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Origami bases explained",
+     "g": "Learn the square, triangle and kite bases that thousands of origami designs start from.",
+     "p": [
+      "A base is a standard set of first folds; once you know it, many models suddenly feel much easier.",
+      "The kite base is just two edges folded to a centre line; the triangle (waterbomb) base collapses a square into a triangle.",
+      "The square (preliminary) base collapses into a small layered square and leads to the bird base and the crane."
+     ],
+     "q": "Do you like learning steps by heart, or do you prefer following a diagram each time?",
+     "c": "Fold all three bases from three squares and keep them on your desk as a little reference."
+    },
+    "de": {
+     "t": "Origami-Grundformen erklärt",
+     "g": "Lerne die Quadrat-, Dreieck- und Drachengrundform, mit denen Tausende Origami-Modelle beginnen.",
+     "p": [
+      "Eine Grundform ist eine feste Abfolge erster Faltungen; kennst du sie, werden viele Modelle viel leichter.",
+      "Die Drachenform faltet zwei Kanten zur Mittellinie; die Dreieck- oder Wasserbombenform legt ein Quadrat zum Dreieck.",
+      "Die Quadrat- oder Vorgrundform wird zum kleinen Quadrat mit Lagen und führt zur Vogelgrundform und zum Kranich."
+     ],
+     "q": "Lernst du Schritte gern auswendig, oder folgst du lieber jedes Mal einer Anleitung?",
+     "c": "Falte alle drei Grundformen aus drei Quadraten und leg sie als kleine Vorlage auf deinen Tisch."
+    },
+    "es": {
+     "t": "Las bases del origami",
+     "g": "Aprende las bases cuadrada, triangular y de cometa, punto de partida de miles de modelos.",
+     "p": [
+      "Una base es una serie fija de primeros pliegues; cuando la dominas, muchos modelos se vuelven mucho más fáciles.",
+      "La base cometa lleva dos bordes a la línea central; la triangular (bomba de agua) pliega el cuadrado en triángulo.",
+      "La base cuadrada (preliminar) se pliega en un cuadradito con capas y lleva a la base pájaro y a la grulla."
+     ],
+     "q": "¿Te gusta aprenderte los pasos de memoria o prefieres seguir un diagrama cada vez?",
+     "c": "Dobla las tres bases con tres cuadrados y déjalas en tu mesa como pequeña referencia."
+    },
+    "fr": {
+     "t": "Les bases de l'origami",
+     "g": "Apprends les bases carrée, triangulaire et cerf-volant, point de départ de milliers de modèles.",
+     "p": [
+      "Une base est une suite fixe de premiers plis ; une fois connue, beaucoup de modèles deviennent bien plus simples.",
+      "La base cerf-volant ramène deux bords vers la ligne centrale ; la base triangulaire (bombe à eau) plie le carré en triangle.",
+      "La base carrée (préliminaire) forme un petit carré à plusieurs couches et mène à la base de l'oiseau et à la grue."
+     ],
+     "q": "Aimes-tu apprendre les étapes par cœur, ou préfères-tu suivre un diagramme à chaque fois ?",
+     "c": "Plie les trois bases dans trois carrés et garde-les sur ton bureau comme petit aide-mémoire."
+    },
+    "it": {
+     "t": "Le basi dell'origami",
+     "g": "Impara le basi quadrata, triangolare e aquilone, da cui partono migliaia di modelli.",
+     "p": [
+      "Una base è una sequenza fissa di prime pieghe; quando la conosci, molti modelli diventano molto più facili.",
+      "La base aquilone porta due bordi sulla linea centrale; la base triangolare (bomba d'acqua) chiude il quadrato a triangolo.",
+      "La base quadrata (preliminare) diventa un quadratino a strati e porta alla base dell'uccello e alla gru."
+     ],
+     "q": "Ti piace imparare i passaggi a memoria o preferisci seguire ogni volta un diagramma?",
+     "c": "Piega le tre basi da tre quadrati e tienile sulla scrivania come piccolo promemoria."
+    },
+    "pt": {
+     "t": "As bases do origami",
+     "g": "Aprende as bases quadrada, triangular e papagaio, ponto de partida de milhares de modelos.",
+     "p": [
+      "Uma base é uma sequência fixa de primeiras dobras; quando a conheces, muitos modelos ficam bem mais fáceis.",
+      "A base papagaio leva duas bordas à linha central; a triangular (bomba de água) fecha o quadrado em triângulo.",
+      "A base quadrada (preliminar) fecha-se num quadradinho em camadas e leva à base do pássaro e ao grou."
+     ],
+     "q": "Gostas de decorar os passos ou preferes seguir um diagrama de cada vez?",
+     "c": "Dobra as três bases a partir de três quadrados e deixa-as na mesa como pequena referência."
+    },
+    "pt_BR": {
+     "t": "As bases do origami",
+     "g": "Aprenda as bases quadrada, triangular e pipa, ponto de partida de milhares de modelos.",
+     "p": [
+      "Uma base é uma sequência fixa de primeiras dobras; quando você a domina, muitos modelos ficam bem mais fáceis.",
+      "A base pipa leva duas bordas até a linha central; a triangular (bomba d'água) fecha o quadrado em triângulo.",
+      "A base quadrada (preliminar) se fecha num quadradinho em camadas e leva à base do pássaro e ao tsuru."
+     ],
+     "q": "Você gosta de decorar os passos ou prefere seguir um diagrama toda vez?",
+     "c": "Dobre as três bases com três quadrados e deixe-as na mesa como pequena referência."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The traditional paper crane",
+     "g": "Fold the classic paper crane step by step and learn why it became a symbol of good wishes.",
+     "p": [
+      "The crane starts from the square base, becomes a bird base, then the neck, tail and wings take shape.",
+      "In Japan the crane stands for long life and good fortune, and folding a thousand cranes is a wish tradition.",
+      "Use thin paper about 15 cm square for your first cranes, and crease every step firmly."
+     ],
+     "q": "Is there a symbol of good luck in your culture that people make or give as a gift?",
+     "c": "Fold one crane and give it to someone with a short kind wish written on a slip of paper."
+    },
+    "de": {
+     "t": "Der traditionelle Papierkranich",
+     "g": "Falte Schritt für Schritt den klassischen Kranich und erfahre, warum er für gute Wünsche steht.",
+     "p": [
+      "Der Kranich beginnt mit der Quadratgrundform, wird zur Vogelgrundform, dann entstehen Hals, Schwanz und Flügel.",
+      "In Japan steht der Kranich für langes Leben und Glück; tausend Kraniche zu falten ist ein Wunschbrauch.",
+      "Nimm für die ersten Kraniche dünnes Papier, etwa 15 cm im Quadrat, und falze jeden Schritt kräftig."
+     ],
+     "q": "Gibt es in deiner Kultur ein Glückssymbol, das man selbst macht oder verschenkt?",
+     "c": "Falte einen Kranich und schenke ihn jemandem mit einem kleinen, netten Wunsch auf einem Zettel."
+    },
+    "es": {
+     "t": "La grulla de papel tradicional",
+     "g": "Dobla paso a paso la grulla clásica y descubre por qué se convirtió en símbolo de buenos deseos.",
+     "p": [
+      "La grulla empieza con la base cuadrada, pasa a base pájaro y luego toman forma el cuello, la cola y las alas.",
+      "En Japón la grulla representa larga vida y buena fortuna, y doblar mil grullas es una tradición para pedir un deseo.",
+      "Usa papel fino de unos 15 cm de lado para tus primeras grullas y marca bien cada pliegue."
+     ],
+     "q": "¿Hay en tu cultura algún símbolo de buena suerte que la gente haga o regale?",
+     "c": "Dobla una grulla y regálasela a alguien con un pequeño deseo amable escrito en un papel."
+    },
+    "fr": {
+     "t": "La grue en papier traditionnelle",
+     "g": "Plie la grue classique étape par étape et découvre pourquoi elle symbolise les vœux de bonheur.",
+     "p": [
+      "La grue part de la base carrée, devient base de l'oiseau, puis le cou, la queue et les ailes prennent forme.",
+      "Au Japon, la grue symbolise longue vie et bonne fortune, et plier mille grues est une tradition pour faire un vœu.",
+      "Prends un papier fin d'environ 15 cm de côté pour tes premières grues et marque bien chaque pli."
+     ],
+     "q": "Existe-t-il dans ta culture un porte-bonheur que l'on fabrique ou que l'on offre ?",
+     "c": "Plie une grue et offre-la à quelqu'un avec un petit vœu gentil écrit sur un bout de papier."
+    },
+    "it": {
+     "t": "La gru di carta tradizionale",
+     "g": "Piega passo dopo passo la gru classica e scopri perché è diventata simbolo di auguri.",
+     "p": [
+      "La gru parte dalla base quadrata, diventa base dell'uccello, poi prendono forma collo, coda e ali.",
+      "In Giappone la gru simboleggia lunga vita e fortuna, e piegare mille gru è una tradizione per esprimere un desiderio.",
+      "Usa carta sottile di circa 15 cm di lato per le prime gru e segna bene ogni piega."
+     ],
+     "q": "Nella tua cultura c'è un portafortuna che si fa a mano o si regala?",
+     "c": "Piega una gru e regalala a qualcuno con un piccolo augurio gentile scritto su un foglietto."
+    },
+    "pt": {
+     "t": "O grou de papel tradicional",
+     "g": "Dobra passo a passo o grou clássico e descobre porque se tornou símbolo de bons desejos.",
+     "p": [
+      "O grou começa na base quadrada, passa a base do pássaro e depois ganham forma o pescoço, a cauda e as asas.",
+      "No Japão, o grou simboliza vida longa e boa sorte, e dobrar mil grous é uma tradição para pedir um desejo.",
+      "Usa papel fino com cerca de 15 cm de lado nos primeiros grous e vinca bem cada passo."
+     ],
+     "q": "Há na tua cultura algum símbolo de boa sorte que as pessoas façam ou ofereçam?",
+     "c": "Dobra um grou e oferece-o a alguém com um pequeno desejo simpático escrito num papelinho."
+    },
+    "pt_BR": {
+     "t": "O tsuru de papel tradicional",
+     "g": "Dobre passo a passo o tsuru clássico e descubra por que ele virou símbolo de bons desejos.",
+     "p": [
+      "O tsuru começa na base quadrada, vira base do pássaro e depois ganham forma o pescoço, a cauda e as asas.",
+      "No Japão, o tsuru simboliza vida longa e boa sorte, e dobrar mil tsurus é uma tradição para fazer um pedido.",
+      "Use papel fino com uns 15 cm de lado nos primeiros tsurus e vinque bem cada passo."
+     ],
+     "q": "Existe na sua cultura algum símbolo de boa sorte que as pessoas fazem ou dão de presente?",
+     "c": "Dobre um tsuru e dê para alguém com um pequeno desejo carinhoso escrito num papelzinho."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cutting and scoring with precision",
+     "g": "Make straight cuts and clean score lines, and keep your cutting mat in good shape.",
+     "p": [
+      "Hold a metal ruler firmly, keep fingers well away from the edge and pull the knife towards you in light passes.",
+      "Scoring means pressing a line without cutting through, so thick card folds neatly; an empty ballpoint works well.",
+      "Vary where you cut on the mat, keep it flat and away from heat, and always retract the blade between cuts."
+     ],
+     "q": "Have you ever had a cut go crooked? What do you think caused it?",
+     "c": "Cut three straight strips of card with ruler and knife, then score and fold one of them."
+    },
+    "de": {
+     "t": "Präzise schneiden und rillen",
+     "g": "Mach gerade Schnitte und saubere Rilllinien und halte deine Schneidematte in gutem Zustand.",
+     "p": [
+      "Halte ein Metalllineal fest, die Finger weit weg von der Kante, und zieh das Messer in leichten Zügen zu dir.",
+      "Rillen heißt, eine Linie einzudrücken, ohne zu schneiden, damit Karton sauber faltet; ein leerer Kuli eignet sich gut.",
+      "Schneide an wechselnden Stellen, lagere die Matte flach und fern von Hitze und fahr die Klinge zwischendurch ein."
+     ],
+     "q": "Ist dir schon einmal ein Schnitt schief geraten? Was war wohl der Grund?",
+     "c": "Schneide mit Lineal und Messer drei gerade Kartonstreifen, dann rille und falte einen davon."
+    },
+    "es": {
+     "t": "Cortar y marcar con precisión",
+     "g": "Haz cortes rectos y líneas de plegado limpias, y mantén tu base de corte en buen estado.",
+     "p": [
+      "Sujeta firme una regla metálica, con los dedos lejos del borde, y tira del cúter hacia ti en pasadas suaves.",
+      "Marcar es hundir una línea sin cortar, para que la cartulina se doble limpia; un bolígrafo sin tinta funciona bien.",
+      "Cambia la zona de corte en la base, guárdala plana y lejos del calor, y retrae la cuchilla entre corte y corte."
+     ],
+     "q": "¿Alguna vez te salió un corte torcido? ¿Qué crees que lo causó?",
+     "c": "Corta tres tiras rectas de cartulina con regla y cúter, luego marca y dobla una de ellas."
+    },
+    "fr": {
+     "t": "Couper et rainer avec précision",
+     "g": "Fais des coupes droites et des rainures nettes, et garde ton tapis de coupe en bon état.",
+     "p": [
+      "Tiens fermement une règle en métal, doigts loin du bord, et tire le cutter vers toi en passages légers.",
+      "Rainer, c'est marquer une ligne sans couper pour que le carton se plie net ; un stylo à bille vide marche bien.",
+      "Varie l'endroit où tu coupes sur le tapis, range-le à plat loin de la chaleur et rentre la lame entre deux coupes."
+     ],
+     "q": "Une de tes coupes est-elle déjà partie de travers ? D'où venait le problème, à ton avis ?",
+     "c": "Coupe trois bandes droites de papier cartonné à la règle et au cutter, puis raine et plie l'une d'elles."
+    },
+    "it": {
+     "t": "Tagliare e cordonare con precisione",
+     "g": "Fai tagli dritti e cordonature pulite, e mantieni in buono stato il tappetino da taglio.",
+     "p": [
+      "Tieni ben fermo un righello di metallo, con le dita lontane dal bordo, e tira il taglierino verso di te con passate leggere.",
+      "Cordonare significa incidere una linea senza tagliare, così il cartoncino si piega bene; una penna scarica funziona.",
+      "Cambia zona di taglio sul tappetino, conservalo piatto e lontano dal calore e ritira la lama tra un taglio e l'altro."
+     ],
+     "q": "Ti è mai venuto un taglio storto? Cosa pensi l'abbia causato?",
+     "c": "Taglia tre strisce dritte di cartoncino con righello e taglierino, poi cordona e piega una di esse."
+    },
+    "pt": {
+     "t": "Cortar e vincar com precisão",
+     "g": "Faz cortes direitos e vincos limpos, e mantém a tua base de corte em bom estado.",
+     "p": [
+      "Segura bem uma régua de metal, com os dedos longe da borda, e puxa o x-ato para ti em passagens leves.",
+      "Vincar é marcar uma linha sem cortar, para a cartolina dobrar limpa; uma esferográfica sem tinta funciona bem.",
+      "Varia o sítio onde cortas na base, guarda-a plana e longe do calor e recolhe a lâmina entre cortes."
+     ],
+     "q": "Já te saiu um corte torto? O que achas que o causou?",
+     "c": "Corta três tiras direitas de cartolina com régua e x-ato, depois vinca e dobra uma delas."
+    },
+    "pt_BR": {
+     "t": "Cortando e vincando com precisão",
+     "g": "Faça cortes retos e vincos limpos, e mantenha sua base de corte em bom estado.",
+     "p": [
+      "Segure firme uma régua de metal, com os dedos longe da borda, e puxe o estilete na sua direção em passadas leves.",
+      "Vincar é marcar uma linha sem cortar, para o papel grosso dobrar limpo; uma caneta sem tinta funciona bem.",
+      "Varie o lugar onde corta na base, guarde-a plana e longe do calor e recolha a lâmina entre os cortes."
+     ],
+     "q": "Algum corte seu já saiu torto? O que você acha que causou isso?",
+     "c": "Corte três tiras retas de papel grosso com régua e estilete, depois vinque e dobre uma delas."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a greeting card",
+     "g": "Plan, fold and layer a handmade card that someone will want to keep.",
+     "p": [
+      "Start with a card base: fold cardstock in half, scoring first so the spine is crisp and straight.",
+      "Plan the layout with a focal point, then add layers of paper slightly smaller than the card front.",
+      "Leave space inside for your message; a few heartfelt handwritten words matter more than perfect decoration."
+     ],
+     "q": "Who in your life would love to receive a handmade card from you?",
+     "c": "Make one simple card with at least two paper layers and write a short message inside."
+    },
+    "de": {
+     "t": "Eine Grußkarte gestalten",
+     "g": "Plane, falte und schichte eine handgemachte Karte, die jemand gern aufbewahrt.",
+     "p": [
+      "Beginne mit der Kartenbasis: Karton zur Hälfte falten, vorher rillen, damit der Falz scharf und gerade wird.",
+      "Plane das Layout mit einem Blickfang und lege Papierschichten auf, etwas kleiner als die Vorderseite.",
+      "Lass innen Platz für deine Nachricht; ein paar herzliche Worte zählen mehr als perfekte Deko."
+     ],
+     "q": "Wer in deinem Leben würde sich über eine handgemachte Karte von dir freuen?",
+     "c": "Gestalte eine einfache Karte mit mindestens zwei Papierschichten und schreib innen ein paar Worte."
+    },
+    "es": {
+     "t": "Hacer una tarjeta de felicitación",
+     "g": "Planifica, dobla y añade capas a una tarjeta hecha a mano que alguien querrá guardar.",
+     "p": [
+      "Empieza por la base: dobla la cartulina por la mitad, marcándola antes para que el lomo quede nítido y recto.",
+      "Planifica el diseño con un punto focal y añade capas de papel un poco más pequeñas que el frente.",
+      "Deja espacio dentro para tu mensaje: unas palabras sinceras a mano valen más que una decoración perfecta."
+     ],
+     "q": "¿Quién en tu vida estaría feliz de recibir una tarjeta hecha por ti?",
+     "c": "Haz una tarjeta sencilla con al menos dos capas de papel y escribe un mensaje corto dentro."
+    },
+    "fr": {
+     "t": "Créer une carte de vœux",
+     "g": "Planifie, plie et superpose une carte faite main que l'on aura envie de garder.",
+     "p": [
+      "Commence par la base : plie un papier cartonné en deux, après l'avoir rainé pour un pli net et droit.",
+      "Prévois la mise en page avec un point fort, puis ajoute des couches de papier un peu plus petites que le recto.",
+      "Laisse de la place à l'intérieur : quelques mots sincères écrits à la main comptent plus qu'un décor parfait."
+     ],
+     "q": "Qui, dans ta vie, serait ravi de recevoir une carte faite de tes mains ?",
+     "c": "Réalise une carte simple avec au moins deux couches de papier et écris un petit message dedans."
+    },
+    "it": {
+     "t": "Creare un biglietto d'auguri",
+     "g": "Progetta, piega e stratifica un biglietto fatto a mano che qualcuno vorrà conservare.",
+     "p": [
+      "Parti dalla base: piega a metà il cartoncino, dopo averlo cordonato, così il dorso viene netto e dritto.",
+      "Progetta il layout con un punto focale, poi aggiungi strati di carta poco più piccoli del fronte.",
+      "Lascia spazio dentro per il messaggio: poche parole sincere scritte a mano valgono più di una decorazione perfetta."
+     ],
+     "q": "Chi, nella tua vita, sarebbe felice di ricevere un biglietto fatto da te?",
+     "c": "Crea un biglietto semplice con almeno due strati di carta e scrivi dentro un breve messaggio."
+    },
+    "pt": {
+     "t": "Fazer um postal de felicitações",
+     "g": "Planeia, dobra e sobrepõe camadas num postal feito à mão que alguém vai querer guardar.",
+     "p": [
+      "Começa pela base: dobra a cartolina ao meio, vincando primeiro para a lombada ficar nítida e direita.",
+      "Planeia o layout com um ponto focal e junta camadas de papel um pouco mais pequenas do que a frente.",
+      "Deixa espaço dentro para a mensagem: poucas palavras sinceras à mão valem mais do que uma decoração perfeita."
+     ],
+     "q": "Quem na tua vida ia adorar receber um postal feito por ti?",
+     "c": "Faz um postal simples com pelo menos duas camadas de papel e escreve uma mensagem curta lá dentro."
+    },
+    "pt_BR": {
+     "t": "Fazendo um cartão comemorativo",
+     "g": "Planeje, dobre e monte camadas em um cartão feito à mão que alguém vai querer guardar.",
+     "p": [
+      "Comece pela base: dobre o papel grosso ao meio, vincando antes para a lombada ficar nítida e reta.",
+      "Planeje o layout com um ponto focal e acrescente camadas de papel um pouco menores que a frente.",
+      "Deixe espaço dentro para a mensagem: poucas palavras sinceras à mão valem mais que uma decoração perfeita."
+     ],
+     "q": "Quem na sua vida ia adorar receber um cartão feito por você?",
+     "c": "Faça um cartão simples com pelo menos duas camadas de papel e escreva uma mensagem curta dentro."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper collage techniques",
+     "g": "Combine torn and cut paper, colours and textures into a collage that tells a story.",
+     "p": [
+      "Torn edges look soft and organic, while cut edges look sharp and graphic; mixing both adds interest.",
+      "Layer from background to foreground and repeat a colour or two so the whole picture feels connected.",
+      "Arrange all pieces first and take a photo, then glue them down one by one with a thin, even layer."
+     ],
+     "q": "Do you prefer bold, bright colours or calm, soft tones in pictures?",
+     "c": "Make a small collage from old magazines on the theme of your favourite place."
+    },
+    "de": {
+     "t": "Papiercollage-Techniken",
+     "g": "Kombiniere gerissenes und geschnittenes Papier, Farben und Texturen zu einer Collage mit Geschichte.",
+     "p": [
+      "Gerissene Kanten wirken weich und natürlich, geschnittene scharf und grafisch; die Mischung macht es spannend.",
+      "Arbeite vom Hintergrund nach vorn und wiederhole ein, zwei Farben, damit das Bild zusammenhängt.",
+      "Lege erst alle Teile aus und mach ein Foto, dann klebe sie einzeln mit einer dünnen, gleichmäßigen Schicht auf."
+     ],
+     "q": "Magst du in Bildern lieber kräftige, leuchtende Farben oder ruhige, sanfte Töne?",
+     "c": "Gestalte aus alten Zeitschriften eine kleine Collage zum Thema deines Lieblingsortes."
+    },
+    "es": {
+     "t": "Técnicas de collage con papel",
+     "g": "Combina papel rasgado y cortado, colores y texturas en un collage que cuente una historia.",
+     "p": [
+      "Los bordes rasgados se ven suaves y orgánicos; los cortados, nítidos y gráficos: mezclarlos da interés.",
+      "Trabaja del fondo hacia el primer plano y repite uno o dos colores para que todo se vea unido.",
+      "Coloca primero todas las piezas y hazles una foto; luego pégalas una a una con una capa fina y uniforme."
+     ],
+     "q": "¿Prefieres colores intensos y vivos o tonos suaves y tranquilos en las imágenes?",
+     "c": "Haz un pequeño collage con revistas viejas sobre tu lugar favorito."
+    },
+    "fr": {
+     "t": "Techniques de collage papier",
+     "g": "Associe papier déchiré et découpé, couleurs et textures dans un collage qui raconte une histoire.",
+     "p": [
+      "Les bords déchirés paraissent doux et naturels, les bords coupés nets et graphiques : les mélanger crée du relief.",
+      "Travaille de l'arrière-plan vers le premier plan et répète une ou deux couleurs pour unifier l'image.",
+      "Dispose d'abord toutes les pièces et prends une photo, puis colle-les une à une avec une couche fine et régulière."
+     ],
+     "q": "Préfères-tu les couleurs vives et franches ou les tons doux et calmes dans les images ?",
+     "c": "Fais un petit collage avec de vieux magazines sur le thème de ton lieu préféré."
+    },
+    "it": {
+     "t": "Tecniche di collage con la carta",
+     "g": "Combina carta strappata e tagliata, colori e texture in un collage che racconta una storia.",
+     "p": [
+      "I bordi strappati sono morbidi e naturali, quelli tagliati netti e grafici: mescolarli rende tutto più vivo.",
+      "Lavora dallo sfondo verso il primo piano e ripeti uno o due colori perché l'immagine sia unita.",
+      "Disponi prima tutti i pezzi e fai una foto, poi incollali uno alla volta con uno strato sottile e uniforme."
+     ],
+     "q": "Nelle immagini preferisci colori vivaci e decisi o toni tenui e calmi?",
+     "c": "Crea un piccolo collage con vecchie riviste sul tema del tuo posto preferito."
+    },
+    "pt": {
+     "t": "Técnicas de colagem em papel",
+     "g": "Combina papel rasgado e cortado, cores e texturas numa colagem que conta uma história.",
+     "p": [
+      "As bordas rasgadas parecem suaves e orgânicas, as cortadas nítidas e gráficas: misturá-las dá interesse.",
+      "Trabalha do fundo para a frente e repete uma ou duas cores para que a imagem pareça unida.",
+      "Dispõe primeiro todas as peças e tira uma foto, depois cola-as uma a uma com uma camada fina e uniforme."
+     ],
+     "q": "Nas imagens, preferes cores fortes e vivas ou tons suaves e calmos?",
+     "c": "Faz uma pequena colagem com revistas velhas sobre o teu lugar preferido."
+    },
+    "pt_BR": {
+     "t": "Técnicas de colagem com papel",
+     "g": "Combine papel rasgado e cortado, cores e texturas numa colagem que conta uma história.",
+     "p": [
+      "Bordas rasgadas parecem suaves e orgânicas; as cortadas, nítidas e gráficas: misturar as duas dá interesse.",
+      "Trabalhe do fundo para a frente e repita uma ou duas cores para a imagem parecer unida.",
+      "Posicione antes todas as peças e tire uma foto, depois cole uma a uma com uma camada fina e uniforme."
+     ],
+     "q": "Nas imagens, você prefere cores fortes e vivas ou tons suaves e calmos?",
+     "c": "Faça uma pequena colagem com revistas velhas sobre o seu lugar favorito."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quilling basics",
+     "g": "Roll paper strips into coils, teardrops and scrolls to create delicate decorative shapes.",
+     "p": [
+      "Quilling uses narrow paper strips, often 3 to 5 mm wide, rolled tightly around a slotted tool or a toothpick.",
+      "A tight coil stays closed with a dab of glue; a loose coil is allowed to relax before you pinch it into a shape.",
+      "Pinch one side for a teardrop, two sides for an eye shape, or curl both ends for an elegant scroll."
+     ],
+     "q": "What would you like to decorate with quilled shapes: a card, a frame or a bookmark?",
+     "c": "Make five shapes, a tight coil, a loose coil, a teardrop, an eye and a scroll, and glue them into a flower."
+    },
+    "de": {
+     "t": "Quilling-Grundlagen",
+     "g": "Rolle Papierstreifen zu Spiralen, Tropfen und Schnecken für feine, dekorative Formen.",
+     "p": [
+      "Quilling nutzt schmale Papierstreifen, oft 3 bis 5 mm breit, fest gerollt um ein Schlitzwerkzeug oder einen Zahnstocher.",
+      "Eine feste Spirale wird mit einem Tupfen Kleber fixiert; eine lockere lässt man sich entspannen und formt sie dann.",
+      "Eine Seite zusammendrücken ergibt einen Tropfen, zwei Seiten ein Auge, beide Enden eingerollt eine Schnecke."
+     ],
+     "q": "Was würdest du gern mit Quilling verzieren: eine Karte, einen Rahmen oder ein Lesezeichen?",
+     "c": "Mach fünf Formen, feste und lockere Spirale, Tropfen, Auge und Schnecke, und klebe sie zu einer Blume."
+    },
+    "es": {
+     "t": "Conceptos básicos de quilling",
+     "g": "Enrolla tiras de papel en espirales, gotas y volutas para crear formas decorativas delicadas.",
+     "p": [
+      "El quilling usa tiras estrechas, de unos 3 a 5 mm, enrolladas bien apretadas en una herramienta ranurada o un palillo.",
+      "Una espiral cerrada se fija con un toque de cola; una abierta se deja aflojar antes de pellizcarla para darle forma.",
+      "Pellizca un lado para una gota, dos lados para un ojo, o enrolla ambos extremos para una voluta elegante."
+     ],
+     "q": "¿Qué te gustaría decorar con quilling: una tarjeta, un marco o un marcapáginas?",
+     "c": "Haz cinco formas, espiral cerrada, espiral abierta, gota, ojo y voluta, y pégalas formando una flor."
+    },
+    "fr": {
+     "t": "Les bases du quilling",
+     "g": "Roule des bandes de papier en spirales, gouttes et volutes pour créer de délicates formes décoratives.",
+     "p": [
+      "Le quilling utilise de fines bandes, souvent de 3 à 5 mm, roulées serrées autour d'un outil fendu ou d'un cure-dent.",
+      "Une spirale serrée se ferme d'un point de colle ; une spirale lâche se détend avant d'être pincée pour prendre forme.",
+      "Pince un côté pour une goutte, deux côtés pour un œil, ou enroule les deux bouts pour une volute élégante."
+     ],
+     "q": "Que voudrais-tu décorer avec du quilling : une carte, un cadre ou un marque-page ?",
+     "c": "Fais cinq formes, spirale serrée, spirale lâche, goutte, œil et volute, et colle-les en forme de fleur."
+    },
+    "it": {
+     "t": "Le basi del quilling",
+     "g": "Arrotola strisce di carta in spirali, gocce e riccioli per creare delicate forme decorative.",
+     "p": [
+      "Il quilling usa strisce sottili, spesso da 3 a 5 mm, arrotolate strette su un attrezzo con fessura o uno stuzzicadenti.",
+      "Una spirale chiusa si fissa con un punto di colla; una spirale aperta si lascia allentare e poi si pizzica per darle forma.",
+      "Pizzica un lato per la goccia, due lati per l'occhio, o arriccia entrambe le estremità per un ricciolo elegante."
+     ],
+     "q": "Cosa ti piacerebbe decorare con il quilling: un biglietto, una cornice o un segnalibro?",
+     "c": "Fai cinque forme, spirale chiusa, spirale aperta, goccia, occhio e ricciolo, e incollale a forma di fiore."
+    },
+    "pt": {
+     "t": "Noções básicas de quilling",
+     "g": "Enrola tiras de papel em espirais, gotas e volutas para criar formas decorativas delicadas.",
+     "p": [
+      "O quilling usa tiras estreitas, muitas vezes de 3 a 5 mm, enroladas apertadas numa ferramenta com ranhura ou num palito.",
+      "Uma espiral fechada fixa-se com um pingo de cola; uma aberta deixa-se soltar antes de a apertares para dar forma.",
+      "Aperta um lado para uma gota, dois lados para um olho, ou enrola as duas pontas para uma voluta elegante."
+     ],
+     "q": "O que gostavas de decorar com quilling: um postal, uma moldura ou um marcador?",
+     "c": "Faz cinco formas, espiral fechada, espiral aberta, gota, olho e voluta, e cola-as em forma de flor."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de quilling",
+     "g": "Enrole tiras de papel em espirais, gotas e volutas para criar formas decorativas delicadas.",
+     "p": [
+      "O quilling usa tiras estreitas, muitas vezes de 3 a 5 mm, enroladas bem apertadas numa ferramenta com fenda ou num palito.",
+      "Uma espiral fechada é fixada com um pingo de cola; uma aberta é deixada soltar antes de ser apertada para ganhar forma.",
+      "Aperte um lado para uma gota, dois lados para um olho, ou enrole as duas pontas para uma voluta elegante."
+     ],
+     "q": "O que você gostaria de decorar com quilling: um cartão, um porta-retrato ou um marcador?",
+     "c": "Faça cinco formas, espiral fechada, espiral aberta, gota, olho e voluta, e cole formando uma flor."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper beads from old magazines",
+     "g": "Roll colourful magazine strips into beads and seal them for necklaces and bracelets.",
+     "p": [
+      "Cut long triangles about 2 cm wide at the base; rolling them from the wide end gives a bead fat in the middle.",
+      "Roll tightly around a skewer or toothpick, add a little glue near the tip and press the end down.",
+      "Seal the beads with a coat of PVA or clear varnish, let them dry on the skewer, then string them."
+     ],
+     "q": "Which colours would you choose for a bracelet that feels like you?",
+     "c": "Roll ten paper beads from one magazine page and string them into a simple bracelet."
+    },
+    "de": {
+     "t": "Papierperlen aus alten Zeitschriften",
+     "g": "Rolle bunte Zeitschriftenstreifen zu Perlen und versiegle sie für Ketten und Armbänder.",
+     "p": [
+      "Schneide lange Dreiecke, unten etwa 2 cm breit; vom breiten Ende gerollt wird die Perle in der Mitte dicker.",
+      "Rolle sie fest um einen Spieß oder Zahnstocher, gib kurz vor der Spitze etwas Kleber dazu und drück das Ende an.",
+      "Versiegle die Perlen mit Weißleim oder Klarlack, lass sie auf dem Spieß trocknen und fädle sie dann auf."
+     ],
+     "q": "Welche Farben würdest du für ein Armband wählen, das zu dir passt?",
+     "c": "Rolle aus einer Zeitschriftenseite zehn Papierperlen und fädle sie zu einem einfachen Armband auf."
+    },
+    "es": {
+     "t": "Cuentas de papel con revistas viejas",
+     "g": "Enrolla tiras de revista coloridas en cuentas y séllalas para collares y pulseras.",
+     "p": [
+      "Corta triángulos largos de unos 2 cm de base; al enrollarlos desde el lado ancho, la cuenta queda gruesa en el centro.",
+      "Enrolla apretado en un pincho o palillo, pon un poco de cola cerca de la punta y presiona el extremo.",
+      "Sella las cuentas con cola blanca o barniz transparente, déjalas secar en el pincho y luego ensártalas."
+     ],
+     "q": "¿Qué colores elegirías para una pulsera que se parezca a ti?",
+     "c": "Enrolla diez cuentas de papel con una página de revista y ensártalas en una pulsera sencilla."
+    },
+    "fr": {
+     "t": "Perles en papier de magazines",
+     "g": "Roule des bandes de magazine colorées en perles et vernis-les pour colliers et bracelets.",
+     "p": [
+      "Coupe de longs triangles d'environ 2 cm de base ; roulés depuis le côté large, ils donnent une perle bombée au centre.",
+      "Roule serré autour d'une brochette ou d'un cure-dent, mets un peu de colle près de la pointe et presse le bout.",
+      "Vernis les perles avec de la colle blanche ou un vernis transparent, laisse sécher sur la brochette puis enfile-les."
+     ],
+     "q": "Quelles couleurs choisirais-tu pour un bracelet qui te ressemble ?",
+     "c": "Roule dix perles dans une page de magazine et enfile-les pour faire un bracelet simple."
+    },
+    "it": {
+     "t": "Perline di carta da vecchie riviste",
+     "g": "Arrotola strisce colorate di rivista in perline e sigillale per collane e braccialetti.",
+     "p": [
+      "Taglia lunghi triangoli di circa 2 cm di base; arrotolati dal lato largo danno una perlina più grossa al centro.",
+      "Arrotola stretto su uno spiedino o uno stuzzicadenti, metti un po' di colla vicino alla punta e premi l'estremità.",
+      "Sigilla le perline con colla vinilica o vernice trasparente, lasciale asciugare sullo spiedino e poi infilale."
+     ],
+     "q": "Quali colori sceglieresti per un braccialetto che ti somigli?",
+     "c": "Arrotola dieci perline da una pagina di rivista e infilale in un semplice braccialetto."
+    },
+    "pt": {
+     "t": "Contas de papel com revistas velhas",
+     "g": "Enrola tiras coloridas de revista em contas e sela-as para colares e pulseiras.",
+     "p": [
+      "Corta triângulos compridos com cerca de 2 cm de base; enrolados pelo lado largo, dão uma conta mais gorda no meio.",
+      "Enrola bem apertado num espeto ou palito, põe um pouco de cola perto da ponta e pressiona o fim.",
+      "Sela as contas com cola branca ou verniz transparente, deixa secar no espeto e depois enfia-as."
+     ],
+     "q": "Que cores escolherias para uma pulseira que tenha a ver contigo?",
+     "c": "Enrola dez contas com uma página de revista e enfia-as numa pulseira simples."
+    },
+    "pt_BR": {
+     "t": "Contas de papel com revistas velhas",
+     "g": "Enrole tiras coloridas de revista em contas e sele para colares e pulseiras.",
+     "p": [
+      "Corte triângulos compridos com uns 2 cm de base; enrolados pelo lado largo, formam uma conta mais gordinha no meio.",
+      "Enrole bem apertado num espeto ou palito, passe um pouco de cola perto da ponta e pressione o final.",
+      "Sele as contas com cola branca ou verniz transparente, deixe secar no espeto e depois passe o fio."
+     ],
+     "q": "Que cores você escolheria para uma pulseira com a sua cara?",
+     "c": "Enrole dez contas com uma página de revista e monte uma pulseira simples."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Decoupage made simple",
+     "g": "Glue paper cutouts onto a box or jar and seal them for a smooth, varnished look.",
+     "p": [
+      "Thin papers like napkins or tissue work best: peel off the printed top layer of a napkin and use only that.",
+      "Brush a thin layer of decoupage medium or diluted PVA, lay the paper on and smooth from the centre outwards.",
+      "Add two or three thin top coats, letting each dry fully, and work in a ventilated room if you use varnish."
+     ],
+     "q": "Is there an old box, jar or tin at home that deserves a makeover?",
+     "c": "Decorate a small jar or box with napkin cutouts and seal it with one top coat today."
+    },
+    "de": {
+     "t": "Decoupage leicht gemacht",
+     "g": "Klebe Papiermotive auf eine Schachtel oder ein Glas und versiegle sie für eine glatte Lackoptik.",
+     "p": [
+      "Dünnes Papier wie Servietten eignet sich am besten: Zieh die bedruckte oberste Lage ab und nimm nur diese.",
+      "Streich eine dünne Schicht Serviettenkleber oder verdünnten Weißleim auf, leg das Papier auf und streich von der Mitte aus.",
+      "Trag zwei, drei dünne Schutzschichten auf, lass jede ganz trocknen und arbeite mit Lack in einem gelüfteten Raum."
+     ],
+     "q": "Gibt es zu Hause eine alte Schachtel, ein Glas oder eine Dose, die eine Verschönerung verdient?",
+     "c": "Verziere ein kleines Glas oder eine Schachtel mit Serviettenmotiven und trag heute eine Schutzschicht auf."
+    },
+    "es": {
+     "t": "Decoupage fácil",
+     "g": "Pega recortes de papel en una caja o frasco y séllalos para un acabado liso y barnizado.",
+     "p": [
+      "Los papeles finos como las servilletas funcionan mejor: separa la capa superior impresa y usa solo esa.",
+      "Pinta una capa fina de cola para decoupage o cola blanca diluida, coloca el papel y alisa del centro hacia fuera.",
+      "Da dos o tres capas finas de acabado, dejando secar bien cada una, y si usas barniz trabaja en un lugar ventilado."
+     ],
+     "q": "¿Hay en casa alguna caja, frasco o lata vieja que merezca un cambio de look?",
+     "c": "Decora un frasco o una cajita con recortes de servilleta y séllalo hoy con una capa de acabado."
+    },
+    "fr": {
+     "t": "Le serviettage tout simple",
+     "g": "Colle des motifs en papier sur une boîte ou un bocal et vernis-les pour un fini lisse.",
+     "p": [
+      "Les papiers fins comme les serviettes marchent le mieux : sépare la couche imprimée du dessus et garde-la seule.",
+      "Passe une fine couche de colle à serviettage ou de colle blanche diluée, pose le papier et lisse depuis le centre.",
+      "Ajoute deux ou trois fines couches de finition, sèche complète entre chaque, et aère la pièce si tu utilises du vernis."
+     ],
+     "q": "As-tu chez toi une vieille boîte, un bocal ou une boîte en métal qui mérite une nouvelle vie ?",
+     "c": "Décore un petit bocal ou une boîte avec des motifs de serviette et passe aujourd'hui une couche de finition."
+    },
+    "it": {
+     "t": "Decoupage semplice",
+     "g": "Incolla ritagli di carta su una scatola o un barattolo e sigillali per un effetto liscio e laccato.",
+     "p": [
+      "Le carte sottili come i tovaglioli funzionano meglio: stacca lo strato stampato superiore e usa solo quello.",
+      "Stendi uno strato sottile di colla per decoupage o vinilica diluita, posa la carta e liscia dal centro verso l'esterno.",
+      "Dai due o tre mani sottili di finitura, lasciando asciugare bene ognuna, e con la vernice lavora in un locale aerato."
+     ],
+     "q": "C'è in casa una vecchia scatola, un barattolo o una latta che merita un nuovo look?",
+     "c": "Decora un barattolino o una scatola con ritagli di tovagliolo e sigillalo oggi con una mano di finitura."
+    },
+    "pt": {
+     "t": "Decoupage sem complicações",
+     "g": "Cola recortes de papel numa caixa ou frasco e sela-os para um acabamento liso e envernizado.",
+     "p": [
+      "Papéis finos como guardanapos funcionam melhor: separa a camada de cima impressa e usa só essa.",
+      "Pincela uma camada fina de cola para decoupage ou cola branca diluída, pousa o papel e alisa do centro para fora.",
+      "Dá duas ou três camadas finas de acabamento, deixando secar bem cada uma, e usa verniz num espaço arejado."
+     ],
+     "q": "Há em casa alguma caixa, frasco ou lata velha que mereça uma nova vida?",
+     "c": "Decora um frasco ou caixinha com recortes de guardanapo e sela-o hoje com uma camada de acabamento."
+    },
+    "pt_BR": {
+     "t": "Decoupage descomplicada",
+     "g": "Cole recortes de papel numa caixa ou pote e sele para um acabamento liso e envernizado.",
+     "p": [
+      "Papéis finos como guardanapos funcionam melhor: separe a camada de cima impressa e use só ela.",
+      "Passe uma camada fina de cola para decoupage ou cola branca diluída, coloque o papel e alise do centro para fora.",
+      "Aplique duas ou três camadas finas de acabamento, deixando cada uma secar bem, e use verniz em lugar ventilado."
+     ],
+     "q": "Tem em casa alguma caixa, pote ou lata velha que merece uma repaginada?",
+     "c": "Decore um potinho ou caixinha com recortes de guardanapo e sele hoje com uma camada de acabamento."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Papel picado from Mexico",
+     "g": "Discover the cut tissue paper banners of Mexican celebrations and cut a simple design.",
+     "p": [
+      "Papel picado means perforated paper: colourful tissue sheets cut with patterns and hung in rows over streets.",
+      "They brighten many Mexican festivities, from family parties to national holidays, fluttering in the wind.",
+      "Fold tissue paper in half or in quarters, cut small shapes along the folds, then open it to reveal the pattern."
+     ],
+     "q": "Does your culture have a traditional decoration for celebrations?",
+     "c": "Cut three small papel picado flags from tissue or thin paper and hang them on a string."
+    },
+    "de": {
+     "t": "Papel picado aus Mexiko",
+     "g": "Entdecke die Scherenschnitt-Girlanden mexikanischer Feste und schneide ein einfaches Motiv.",
+     "p": [
+      "Papel picado heißt durchlöchertes Papier: bunte Seidenpapierbögen mit geschnittenen Mustern, in Reihen aufgehängt.",
+      "Sie schmücken viele mexikanische Feste, von Familienfeiern bis zu Nationalfeiertagen, und flattern im Wind.",
+      "Falte Seidenpapier halb oder viertel, schneide kleine Formen entlang der Falten und entfalte dann das Muster."
+     ],
+     "q": "Gibt es in deiner Kultur eine traditionelle Dekoration für Feste?",
+     "c": "Schneide drei kleine Papel-picado-Fähnchen aus Seiden- oder dünnem Papier und häng sie an eine Schnur."
+    },
+    "es": {
+     "t": "El papel picado de México",
+     "g": "Descubre los banderines de papel de seda calado de las fiestas mexicanas y recorta un diseño sencillo.",
+     "p": [
+      "Papel picado son hojas de papel de seda de colores recortadas con dibujos y colgadas en hileras sobre las calles.",
+      "Alegran muchas fiestas mexicanas, desde reuniones familiares hasta fiestas patrias, ondeando con el viento.",
+      "Dobla el papel de seda por la mitad o en cuatro, recorta formitas en los pliegues y ábrelo para ver el dibujo."
+     ],
+     "q": "¿Tu cultura tiene alguna decoración tradicional para las celebraciones?",
+     "c": "Recorta tres banderitas de papel picado en papel de seda o fino y cuélgalas de un cordel."
+    },
+    "fr": {
+     "t": "Le papel picado du Mexique",
+     "g": "Découvre les guirlandes de papier de soie découpé des fêtes mexicaines et découpe un motif simple.",
+     "p": [
+      "Papel picado signifie papier perforé : des feuilles de soie colorées découpées de motifs et suspendues en rangées.",
+      "Elles égaient beaucoup de fêtes mexicaines, des réunions de famille aux fêtes nationales, en flottant au vent.",
+      "Plie le papier de soie en deux ou en quatre, découpe de petites formes sur les plis, puis déplie pour voir le motif."
+     ],
+     "q": "Ta culture a-t-elle une décoration traditionnelle pour les fêtes ?",
+     "c": "Découpe trois petits fanions de papel picado dans du papier de soie ou fin et suspends-les à une ficelle."
+    },
+    "it": {
+     "t": "Il papel picado del Messico",
+     "g": "Scopri i festoni di carta velina traforata delle feste messicane e ritaglia un disegno semplice.",
+     "p": [
+      "Papel picado significa carta traforata: fogli colorati di velina ritagliati a motivi e appesi in file sulle strade.",
+      "Rallegrano molte feste messicane, dai ritrovi in famiglia alle feste nazionali, sventolando nel vento.",
+      "Piega la velina a metà o in quattro, ritaglia piccole forme lungo le pieghe e poi aprila per scoprire il disegno."
+     ],
+     "q": "Nella tua cultura c'è una decorazione tradizionale per le feste?",
+     "c": "Ritaglia tre bandierine di papel picado da carta velina o sottile e appendile a uno spago."
+    },
+    "pt": {
+     "t": "O papel picado do México",
+     "g": "Descobre as bandeirinhas de papel de seda recortado das festas mexicanas e recorta um desenho simples.",
+     "p": [
+      "Papel picado quer dizer papel perfurado: folhas coloridas de papel de seda recortadas e penduradas em filas.",
+      "Alegram muitas festas mexicanas, de encontros de família a feriados nacionais, a esvoaçar ao vento.",
+      "Dobra o papel de seda ao meio ou em quatro, recorta pequenas formas nas dobras e abre para ver o padrão."
+     ],
+     "q": "A tua cultura tem alguma decoração tradicional para festas?",
+     "c": "Recorta três bandeirinhas de papel picado em papel de seda ou fino e pendura-as num fio."
+    },
+    "pt_BR": {
+     "t": "O papel picado do México",
+     "g": "Descubra as bandeirinhas de papel de seda recortado das festas mexicanas e recorte um desenho simples.",
+     "p": [
+      "Papel picado quer dizer papel perfurado: folhas coloridas de papel de seda recortadas e penduradas em fileiras.",
+      "Elas alegram muitas festas mexicanas, de encontros de família a feriados nacionais, balançando ao vento.",
+      "Dobre o papel de seda ao meio ou em quatro, recorte formas pequenas nas dobras e abra para ver o desenho."
+     ],
+     "q": "Sua cultura tem alguma decoração tradicional para festas, como as bandeirinhas de festa junina?",
+     "c": "Recorte três bandeirinhas de papel picado em papel de seda ou fino e pendure num barbante."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pop-up cards",
+     "g": "Build simple pop-up mechanisms like the box fold and the V-fold that make a card jump to life.",
+     "p": [
+      "The box fold: two parallel cuts from the fold, then push the strip inwards to make a step for a figure to stand on.",
+      "The V-fold: a piece glued across the centre fold at an angle rises up as the card opens.",
+      "Test every mechanism on scrap paper first, and make sure nothing sticks out of the card when it is closed."
+     ],
+     "q": "What scene would you love to see pop up when you open a card?",
+     "c": "Make one card with a box-fold step and glue a small paper figure onto it."
+    },
+    "de": {
+     "t": "Pop-up-Karten",
+     "g": "Baue einfache Pop-up-Mechanismen wie Stufe und V-Falte, die eine Karte zum Leben erwecken.",
+     "p": [
+      "Die Stufe: zwei parallele Schnitte vom Falz aus, dann den Streifen nach innen drücken, damit eine Figur darauf steht.",
+      "Die V-Falte: Ein schräg über den Mittelfalz geklebtes Teil richtet sich beim Öffnen der Karte auf.",
+      "Teste jeden Mechanismus zuerst auf Schmierpapier und achte darauf, dass geschlossen nichts übersteht."
+     ],
+     "q": "Welche Szene würdest du gern sehen, wenn du eine Karte öffnest?",
+     "c": "Bastle eine Karte mit einer Pop-up-Stufe und klebe eine kleine Papierfigur darauf."
+    },
+    "es": {
+     "t": "Tarjetas desplegables (pop-up)",
+     "g": "Construye mecanismos sencillos como el escalón y el pliegue en V que hacen saltar la tarjeta.",
+     "p": [
+      "El escalón: dos cortes paralelos desde el pliegue y luego empuja la tira hacia dentro para apoyar una figura.",
+      "El pliegue en V: una pieza pegada en ángulo sobre el pliegue central se levanta al abrir la tarjeta.",
+      "Prueba cada mecanismo antes en papel de sobra y asegúrate de que nada sobresalga con la tarjeta cerrada."
+     ],
+     "q": "¿Qué escena te encantaría ver aparecer al abrir una tarjeta?",
+     "c": "Haz una tarjeta con un escalón desplegable y pégale una pequeña figura de papel."
+    },
+    "fr": {
+     "t": "Les cartes pop-up",
+     "g": "Construis des mécanismes simples comme la marche et le pli en V, qui font jaillir la carte.",
+     "p": [
+      "La marche : deux coupes parallèles depuis le pli, puis pousse la bande vers l'intérieur pour y poser une figurine.",
+      "Le pli en V : une pièce collée en biais sur le pli central se dresse quand on ouvre la carte.",
+      "Teste chaque mécanisme sur du brouillon d'abord, et vérifie que rien ne dépasse quand la carte est fermée."
+     ],
+     "q": "Quelle scène aimerais-tu voir surgir en ouvrant une carte ?",
+     "c": "Fais une carte avec une marche pop-up et colle dessus une petite figurine en papier."
+    },
+    "it": {
+     "t": "Biglietti pop-up",
+     "g": "Costruisci semplici meccanismi come il gradino e la piega a V che fanno scattare il biglietto.",
+     "p": [
+      "Il gradino: due tagli paralleli dalla piega, poi spingi la striscia all'interno per farci stare una figura.",
+      "La piega a V: un pezzo incollato in diagonale sulla piega centrale si alza quando apri il biglietto.",
+      "Prova ogni meccanismo su carta di scarto e controlla che a biglietto chiuso non sporga nulla."
+     ],
+     "q": "Quale scena ti piacerebbe veder spuntare aprendo un biglietto?",
+     "c": "Crea un biglietto con un gradino pop-up e incollaci sopra una piccola figura di carta."
+    },
+    "pt": {
+     "t": "Postais pop-up",
+     "g": "Constrói mecanismos simples como o degrau e a dobra em V que fazem o postal ganhar vida.",
+     "p": [
+      "O degrau: dois cortes paralelos a partir da dobra; depois empurra a tira para dentro para apoiar uma figura.",
+      "A dobra em V: uma peça colada em ângulo sobre a dobra central levanta-se quando abres o postal.",
+      "Testa cada mecanismo primeiro em papel de rascunho e garante que nada fica de fora com o postal fechado."
+     ],
+     "q": "Que cena adorarias ver saltar ao abrir um postal?",
+     "c": "Faz um postal com um degrau pop-up e cola nele uma pequena figura de papel."
+    },
+    "pt_BR": {
+     "t": "Cartões pop-up",
+     "g": "Construa mecanismos simples como o degrau e a dobra em V que fazem o cartão ganhar vida.",
+     "p": [
+      "O degrau: dois cortes paralelos a partir da dobra; depois empurre a tira para dentro para apoiar uma figura.",
+      "A dobra em V: uma peça colada em ângulo sobre a dobra central se levanta quando o cartão abre.",
+      "Teste cada mecanismo antes em papel de rascunho e garanta que nada fique para fora com o cartão fechado."
+     ],
+     "q": "Que cena você adoraria ver saltar ao abrir um cartão?",
+     "c": "Faça um cartão com um degrau pop-up e cole nele uma pequena figura de papel."
+    }
+   }
+  }
+ ]
+}

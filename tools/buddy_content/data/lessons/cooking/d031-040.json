@@ -1,0 +1,835 @@
+{
+ "topic": "cooking",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding cooking fats",
+     "g": "Learn how butter, olive oil and neutral oils differ in flavour and smoke point.",
+     "p": [
+      "Butter adds rich flavour but its milk solids burn easily, so use it on low to medium heat.",
+      "Olive oil is great for gentle cooking and dressings; extra virgin has the most flavour.",
+      "Neutral oils like sunflower or rapeseed handle higher heat, ideal for searing and stir-frying."
+     ],
+     "q": "Which fat do you cook with most often, and why?",
+     "c": "Melt a little butter on low heat and watch it foam, then turn nutty brown, and take it off in time."
+    },
+    "de": {
+     "t": "Kochfette verstehen",
+     "g": "Lerne, wie sich Butter, Olivenöl und neutrale Öle in Geschmack und Rauchpunkt unterscheiden.",
+     "p": [
+      "Butter gibt vollen Geschmack, aber ihr Milcheiweiß verbrennt leicht, also niedrige bis mittlere Hitze.",
+      "Olivenöl passt zum sanften Garen und für Dressings; natives Olivenöl extra hat das meiste Aroma.",
+      "Neutrale Öle wie Sonnenblumen- oder Rapsöl vertragen mehr Hitze, ideal zum Anbraten und im Wok."
+     ],
+     "q": "Mit welchem Fett kochst du am häufigsten, und warum?",
+     "c": "Schmilz etwas Butter bei kleiner Hitze, sieh zu, wie sie schäumt und nussig braun wird, und nimm sie rechtzeitig vom Herd."
+    },
+    "es": {
+     "t": "Las grasas de cocina",
+     "g": "Aprende en qué se diferencian mantequilla, aceite de oliva y aceites neutros en sabor y punto de humo.",
+     "p": [
+      "La mantequilla da mucho sabor, pero sus sólidos lácteos se queman fácil: úsala a fuego bajo o medio.",
+      "El aceite de oliva es ideal para cocciones suaves y aliños; el virgen extra es el más sabroso.",
+      "Los aceites neutros, como el de girasol, aguantan más calor, ideales para sellar y saltear."
+     ],
+     "q": "¿Con qué grasa cocinas más a menudo y por qué?",
+     "c": "Derrite un poco de mantequilla a fuego bajo, mira cómo espuma y se vuelve avellana, y retírala a tiempo."
+    },
+    "fr": {
+     "t": "Comprendre les matières grasses",
+     "g": "Apprends ce qui distingue beurre, huile d'olive et huiles neutres en goût et point de fumée.",
+     "p": [
+      "Le beurre apporte beaucoup de goût, mais ses protéines de lait brûlent vite : feu doux à moyen.",
+      "L'huile d'olive est parfaite en cuisson douce et en vinaigrette ; la vierge extra est la plus parfumée.",
+      "Les huiles neutres comme tournesol ou colza supportent plus de chaleur, idéales pour saisir et le wok."
+     ],
+     "q": "Quelle matière grasse utilises-tu le plus, et pourquoi ?",
+     "c": "Fais fondre un peu de beurre à feu doux, regarde-le mousser puis devenir noisette, et retire-le à temps."
+    },
+    "it": {
+     "t": "Capire i grassi da cucina",
+     "g": "Impara come burro, olio d'oliva e oli neutri differiscono per sapore e punto di fumo.",
+     "p": [
+      "Il burro dà sapore ricco, ma le sue parti del latte bruciano facilmente: usalo a fuoco basso o medio.",
+      "L'olio d'oliva è ottimo per cotture delicate e condimenti; l'extravergine è il più saporito.",
+      "Gli oli neutri come girasole o arachide reggono più calore, ideali per rosolare e saltare."
+     ],
+     "q": "Con quale grasso cucini più spesso, e perché?",
+     "c": "Sciogli un po' di burro a fuoco basso, guardalo schiumare e diventare nocciola, e toglilo in tempo."
+    },
+    "pt": {
+     "t": "Perceber as gorduras",
+     "g": "Aprende como manteiga, azeite e óleos neutros diferem em sabor e ponto de fumo.",
+     "p": [
+      "A manteiga dá muito sabor, mas os sólidos do leite queimam facilmente: usa lume brando a médio.",
+      "O azeite é ótimo para cozinhados suaves e molhos; o virgem extra é o mais saboroso.",
+      "Óleos neutros como girassol aguentam mais calor, ideais para selar e saltear."
+     ],
+     "q": "Com que gordura cozinhas mais vezes, e porquê?",
+     "c": "Derrete um pouco de manteiga em lume brando, vê-a fazer espuma e ficar cor de avelã, e tira-a a tempo."
+    },
+    "pt_BR": {
+     "t": "Entendendo as gorduras",
+     "g": "Aprenda como manteiga, azeite e óleos neutros diferem em sabor e ponto de fumaça.",
+     "p": [
+      "A manteiga dá muito sabor, mas os sólidos do leite queimam fácil: use fogo baixo a médio.",
+      "O azeite é ótimo para cozimentos suaves e molhos; o extravirgem é o mais saboroso.",
+      "Óleos neutros como girassol ou canola aguentam mais calor, ideais para selar e saltear."
+     ],
+     "q": "Com qual gordura você cozinha mais, e por quê?",
+     "c": "Derreta um pouco de manteiga em fogo baixo, veja espumar e ficar cor de avelã, e tire a tempo."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pans and their materials",
+     "g": "Learn when stainless steel, non-stick and cast iron pans each shine.",
+     "p": [
+      "Stainless steel browns food beautifully and builds tasty bits for sauces; preheat it well.",
+      "Non-stick is best for eggs, pancakes and delicate fish; use medium heat and soft utensils.",
+      "Cast iron holds heat for great searing and goes into the oven; dry it well and keep it lightly oiled."
+     ],
+     "q": "Which type of pan do you have, and what do you cook in it?",
+     "c": "Look at your pans, name each material and decide which one you will use for eggs and which for searing."
+    },
+    "de": {
+     "t": "Pfannen und ihre Materialien",
+     "g": "Lerne, wann Edelstahl, Antihaft und Gusseisen jeweils glänzen.",
+     "p": [
+      "Edelstahl bräunt wunderbar und bildet Röstaromen für Saucen; heiz ihn gut vor.",
+      "Antihaft ist ideal für Eier, Pfannkuchen und zarten Fisch; mittlere Hitze und weiche Helfer nutzen.",
+      "Gusseisen speichert Hitze, brät hervorragend an und darf in den Ofen; gut trocknen und leicht einölen."
+     ],
+     "q": "Welche Pfanne hast du, und was kochst du darin?",
+     "c": "Schau dir deine Pfannen an, benenne das Material und entscheide, welche für Eier und welche zum Anbraten dient."
+    },
+    "es": {
+     "t": "Sartenes y sus materiales",
+     "g": "Aprende cuándo destacan las sartenes de acero inoxidable, antiadherentes y de hierro fundido.",
+     "p": [
+      "El acero inoxidable dora muy bien y deja restos sabrosos para salsas; precaliéntalo bien.",
+      "La antiadherente es ideal para huevos, tortitas y pescado delicado; fuego medio y utensilios suaves.",
+      "El hierro fundido guarda el calor, sella de maravilla y va al horno; sécalo bien y engrásalo un poco."
+     ],
+     "q": "¿Qué tipo de sartén tienes y qué cocinas en ella?",
+     "c": "Mira tus sartenes, nombra el material de cada una y decide cuál usarás para huevos y cuál para sellar."
+    },
+    "fr": {
+     "t": "Les poêles et leurs matériaux",
+     "g": "Apprends quand briller avec l'inox, l'antiadhésif ou la fonte.",
+     "p": [
+      "L'inox dore très bien et laisse des sucs savoureux pour les sauces ; préchauffe-le bien.",
+      "L'antiadhésif est idéal pour les œufs, les crêpes et le poisson fragile ; feu moyen et ustensiles doux.",
+      "La fonte garde la chaleur, saisit à merveille et va au four ; sèche-la bien et huile-la légèrement."
+     ],
+     "q": "Quel type de poêle as-tu, et qu'y cuisines-tu ?",
+     "c": "Regarde tes poêles, nomme leur matériau et choisis laquelle servira aux œufs et laquelle à saisir."
+    },
+    "it": {
+     "t": "Padelle e materiali",
+     "g": "Impara quando danno il meglio acciaio inox, antiaderente e ghisa.",
+     "p": [
+      "L'acciaio inox rosola benissimo e lascia fondi saporiti per le salse; scaldalo bene prima.",
+      "L'antiaderente è perfetta per uova, pancake e pesce delicato; fuoco medio e utensili morbidi.",
+      "La ghisa trattiene il calore, rosola alla grande e va in forno; asciugala bene e ungila leggermente."
+     ],
+     "q": "Che tipo di padella hai e cosa ci cucini?",
+     "c": "Guarda le tue padelle, dai un nome al materiale e decidi quale usare per le uova e quale per rosolare."
+    },
+    "pt": {
+     "t": "Frigideiras e materiais",
+     "g": "Aprende quando brilham as frigideiras de inox, antiaderentes e de ferro fundido.",
+     "p": [
+      "O inox aloura muito bem e deixa resíduos saborosos para molhos; aquece-o bem antes.",
+      "A antiaderente é ideal para ovos, panquecas e peixe delicado; lume médio e utensílios macios.",
+      "O ferro fundido guarda o calor, sela muito bem e vai ao forno; seca-o bem e unta-o levemente."
+     ],
+     "q": "Que tipo de frigideira tens e o que cozinhas nela?",
+     "c": "Olha para as tuas frigideiras, identifica o material e decide qual usar para ovos e qual para selar."
+    },
+    "pt_BR": {
+     "t": "Frigideiras e seus materiais",
+     "g": "Aprenda quando brilham as frigideiras de inox, antiaderentes e de ferro fundido.",
+     "p": [
+      "O inox doura muito bem e deixa um fundinho saboroso para molhos; preaqueça bem.",
+      "A antiaderente é ideal para ovos, panquecas e peixe delicado; fogo médio e utensílios macios.",
+      "O ferro fundido segura o calor, sela muito bem e vai ao forno; seque bem e unte de leve."
+     ],
+     "q": "Que tipo de frigideira você tem e o que cozinha nela?",
+     "c": "Olhe suas frigideiras, identifique o material e decida qual usar para ovos e qual para selar."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Searing for flavour",
+     "g": "Learn how browning food builds flavour through the Maillard reaction, in simple words.",
+     "p": [
+      "When proteins and sugars meet high, dry heat, they brown and create hundreds of new savoury flavours.",
+      "Pat food dry, heat the pan well and add oil; moisture on the surface stops browning.",
+      "Leave food alone until it releases from the pan easily; moving it too soon tears the crust."
+     ],
+     "q": "Which browned food do you find irresistible?",
+     "c": "Pat a few mushrooms dry and sear them in a hot pan without moving them until golden."
+    },
+    "de": {
+     "t": "Anbraten für Geschmack",
+     "g": "Lerne in einfachen Worten, wie Bräunen durch die Maillard-Reaktion Geschmack aufbaut.",
+     "p": [
+      "Treffen Eiweiße und Zucker auf hohe, trockene Hitze, bräunen sie und bilden Hunderte neue Röstaromen.",
+      "Tupf Lebensmittel trocken, heiz die Pfanne gut vor und gib Öl hinein; Feuchtigkeit verhindert Bräunung.",
+      "Lass das Bratgut in Ruhe, bis es sich leicht löst; zu frühes Bewegen zerreißt die Kruste."
+     ],
+     "q": "Welches angebratene Essen findest du unwiderstehlich?",
+     "c": "Tupf ein paar Pilze trocken und brate sie in heißer Pfanne, ohne sie zu bewegen, bis sie golden sind."
+    },
+    "es": {
+     "t": "Sellar para dar sabor",
+     "g": "Aprende con palabras sencillas cómo dorar los alimentos crea sabor gracias a la reacción de Maillard.",
+     "p": [
+      "Cuando proteínas y azúcares reciben calor alto y seco, se doran y crean cientos de sabores nuevos.",
+      "Seca bien el alimento, calienta la sartén y añade aceite; la humedad en la superficie impide dorar.",
+      "No lo muevas hasta que se suelte solo de la sartén; si lo mueves antes, rompes la costra."
+     ],
+     "q": "¿Qué alimento dorado te parece irresistible?",
+     "c": "Seca unos champiñones y séllalos en sartén caliente sin moverlos hasta que estén dorados."
+    },
+    "fr": {
+     "t": "Saisir pour le goût",
+     "g": "Apprends simplement comment faire dorer crée du goût grâce à la réaction de Maillard.",
+     "p": [
+      "Quand protéines et sucres rencontrent une chaleur vive et sèche, ils brunissent et créent des centaines d'arômes.",
+      "Sèche bien l'aliment, chauffe la poêle et ajoute l'huile : l'humidité en surface empêche de dorer.",
+      "Ne touche à rien jusqu'à ce que l'aliment se détache seul ; le bouger trop tôt déchire la croûte."
+     ],
+     "q": "Quel aliment bien doré trouves-tu irrésistible ?",
+     "c": "Sèche quelques champignons et saisis-les dans une poêle chaude sans les bouger jusqu'à ce qu'ils dorent."
+    },
+    "it": {
+     "t": "Rosolare per il sapore",
+     "g": "Impara in parole semplici come la rosolatura crea sapore grazie alla reazione di Maillard.",
+     "p": [
+      "Quando proteine e zuccheri incontrano calore alto e secco, dorano e creano centinaia di nuovi aromi.",
+      "Asciuga bene il cibo, scalda la padella e aggiungi l'olio: l'umidità in superficie impedisce di dorare.",
+      "Non toccarlo finché non si stacca da solo; muoverlo troppo presto rompe la crosticina."
+     ],
+     "q": "Quale cibo ben rosolato trovi irresistibile?",
+     "c": "Asciuga qualche fungo e rosolalo in padella calda senza muoverlo finché è dorato."
+    },
+    "pt": {
+     "t": "Selar para dar sabor",
+     "g": "Aprende de forma simples como alourar cria sabor graças à reação de Maillard.",
+     "p": [
+      "Quando proteínas e açúcares encontram calor alto e seco, douram e criam centenas de sabores novos.",
+      "Seca bem o alimento, aquece a frigideira e junta o óleo; a humidade à superfície impede de dourar.",
+      "Não mexas até se soltar sozinho da frigideira; mexer cedo demais rasga a crosta."
+     ],
+     "q": "Que alimento bem dourado achas irresistível?",
+     "c": "Seca uns cogumelos e sela-os numa frigideira quente sem mexer até ficarem dourados."
+    },
+    "pt_BR": {
+     "t": "Selando para dar sabor",
+     "g": "Aprenda de um jeito simples como dourar cria sabor pela reação de Maillard.",
+     "p": [
+      "Quando proteínas e açúcares encontram calor alto e seco, eles douram e criam centenas de sabores novos.",
+      "Seque bem o alimento, aqueça a frigideira e coloque o óleo; umidade na superfície impede de dourar.",
+      "Não mexa até soltar sozinho da frigideira; mexer cedo demais rasga a crostinha."
+     ],
+     "q": "Qual alimento douradinho você acha irresistível?",
+     "c": "Seque alguns cogumelos e sele numa frigideira quente sem mexer até ficarem dourados."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking chicken breast",
+     "g": "Learn to get even thickness, a good sear and check that chicken is cooked through.",
+     "p": [
+      "Flatten the thick end gently between baking paper so the breast cooks evenly without drying out.",
+      "Season, sear in a hot oiled pan until golden, then lower the heat and cook through, turning once.",
+      "It is done at 74 °C in the thickest part; rest it a few minutes before slicing so it stays juicy."
+     ],
+     "q": "How do you usually like to season chicken?",
+     "c": "Pound a chicken breast to even thickness, sear it, check it with a thermometer and rest it before slicing."
+    },
+    "de": {
+     "t": "Hähnchenbrust braten",
+     "g": "Lerne gleichmäßige Dicke, gutes Anbraten und wie du prüfst, ob Hähnchen durchgegart ist.",
+     "p": [
+      "Klopf das dicke Ende zwischen Backpapier sanft flach, damit die Brust gleichmäßig gart und saftig bleibt.",
+      "Würzen, in heißer Pfanne mit Öl golden anbraten, dann Hitze reduzieren und einmal gewendet fertig garen.",
+      "Fertig ist sie bei 74 °C an der dicksten Stelle; einige Minuten ruhen lassen, dann bleibt sie saftig."
+     ],
+     "q": "Wie würzt du Hähnchen am liebsten?",
+     "c": "Klopf eine Hähnchenbrust gleichmäßig flach, brate sie an, prüf sie mit dem Thermometer und lass sie ruhen."
+    },
+    "es": {
+     "t": "Pechuga de pollo",
+     "g": "Aprende a igualar el grosor, sellar bien y comprobar que el pollo esté hecho por dentro.",
+     "p": [
+      "Aplana con cuidado la parte gruesa entre papel de horno para que se cocine parejo sin secarse.",
+      "Sazona, sella en sartén caliente con aceite hasta dorar, baja el fuego y termina, girando una vez.",
+      "Está lista a 74 °C en la parte más gruesa; déjala reposar unos minutos antes de cortar para que quede jugosa."
+     ],
+     "q": "¿Cómo te gusta sazonar el pollo?",
+     "c": "Aplana una pechuga, séllala, compruébala con un termómetro y déjala reposar antes de cortarla."
+    },
+    "fr": {
+     "t": "Cuire un blanc de poulet",
+     "g": "Apprends à obtenir une épaisseur égale, une belle coloration et une cuisson à cœur.",
+     "p": [
+      "Aplatis doucement la partie épaisse entre deux feuilles de papier cuisson pour une cuisson homogène.",
+      "Assaisonne, saisis dans une poêle chaude huilée jusqu'à coloration, puis baisse le feu et termine en retournant une fois.",
+      "C'est cuit à 74 °C au cœur ; laisse reposer quelques minutes avant de trancher pour garder le jus."
+     ],
+     "q": "Comment aimes-tu assaisonner le poulet ?",
+     "c": "Aplatis un blanc de poulet, saisis-le, vérifie-le au thermomètre et laisse-le reposer avant de trancher."
+    },
+    "it": {
+     "t": "Petto di pollo",
+     "g": "Impara a ottenere spessore uniforme, una buona rosolatura e a verificare che il pollo sia cotto.",
+     "p": [
+      "Batti piano la parte più spessa tra due fogli di carta forno, così cuoce in modo uniforme senza seccarsi.",
+      "Condisci, rosola in padella calda con olio finché è dorato, poi abbassa e termina girandolo una volta.",
+      "È pronto a 74 °C nel punto più spesso; fallo riposare qualche minuto prima di tagliarlo, resta succoso."
+     ],
+     "q": "Come ti piace condire il pollo?",
+     "c": "Batti un petto di pollo, rosolalo, controllalo con un termometro e lascialo riposare prima di tagliarlo."
+    },
+    "pt": {
+     "t": "Peito de frango",
+     "g": "Aprende a igualar a espessura, selar bem e confirmar que o frango está cozinhado por dentro.",
+     "p": [
+      "Achata com cuidado a parte grossa entre papel vegetal para cozinhar por igual sem secar.",
+      "Tempera, sela numa frigideira quente com óleo até dourar, baixa o lume e termina, virando uma vez.",
+      "Está pronto a 74 °C na parte mais grossa; deixa repousar uns minutos antes de cortar para ficar suculento."
+     ],
+     "q": "Como gostas de temperar o frango?",
+     "c": "Achata um peito de frango, sela-o, verifica-o com termómetro e deixa repousar antes de fatiar."
+    },
+    "pt_BR": {
+     "t": "Peito de frango",
+     "g": "Aprenda a deixar a espessura igual, selar bem e conferir se o frango está cozido por dentro.",
+     "p": [
+      "Achate com cuidado a parte grossa entre papel-manteiga para cozinhar por igual sem ressecar.",
+      "Tempere, sele em frigideira quente com óleo até dourar, abaixe o fogo e termine, virando uma vez.",
+      "Está pronto a 74 °C na parte mais grossa; descanse alguns minutos antes de fatiar para ficar suculento."
+     ],
+     "q": "Como você gosta de temperar frango?",
+     "c": "Achate um peito de frango, sele, confira com termômetro e deixe descansar antes de fatiar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe cooking temperatures",
+     "g": "Learn to use a food thermometer and the core temperatures that keep food safe.",
+     "p": [
+      "Insert the probe into the thickest part, away from bone, and wait for the number to settle.",
+      "Common guides: poultry 74 °C, minced meat 71 °C, whole cuts of beef, pork or lamb and fish 63 °C.",
+      "Clean the probe between uses, and keep hot food hot and cold food cold until you serve it."
+     ],
+     "q": "Have you ever used a food thermometer?",
+     "c": "Check one cooked dish today with a thermometer, or note the key temperatures somewhere in your kitchen."
+    },
+    "de": {
+     "t": "Sichere Gartemperaturen",
+     "g": "Lerne ein Fleischthermometer zu nutzen und die Kerntemperaturen, die Essen sicher machen.",
+     "p": [
+      "Steck die Spitze in die dickste Stelle, nicht an den Knochen, und warte, bis der Wert stabil ist.",
+      "Richtwerte: Geflügel 74 °C, Hackfleisch 71 °C, ganze Stücke von Rind, Schwein, Lamm und Fisch 63 °C.",
+      "Reinige die Spitze zwischen den Einsätzen und halte Heißes heiß und Kaltes kalt bis zum Servieren."
+     ],
+     "q": "Hast du schon einmal ein Küchenthermometer benutzt?",
+     "c": "Prüf heute ein Gericht mit dem Thermometer oder notiere die wichtigsten Temperaturen sichtbar in der Küche."
+    },
+    "es": {
+     "t": "Temperaturas seguras",
+     "g": "Aprende a usar un termómetro de cocina y las temperaturas internas que hacen segura la comida.",
+     "p": [
+      "Introduce la sonda en la parte más gruesa, lejos del hueso, y espera a que el número se estabilice.",
+      "Guías comunes: aves 74 °C, carne picada 71 °C, piezas enteras de ternera, cerdo o cordero y pescado 63 °C.",
+      "Limpia la sonda entre usos y mantén lo caliente caliente y lo frío frío hasta servir."
+     ],
+     "q": "¿Has usado alguna vez un termómetro de cocina?",
+     "c": "Comprueba hoy un plato con termómetro o apunta las temperaturas clave en un lugar visible de la cocina."
+    },
+    "fr": {
+     "t": "Les températures de sécurité",
+     "g": "Apprends à utiliser un thermomètre de cuisine et les températures à cœur qui rendent les aliments sûrs.",
+     "p": [
+      "Pique la sonde au plus épais, loin de l'os, et attends que le chiffre se stabilise.",
+      "Repères courants : volaille 74 °C, viande hachée 71 °C, pièces entières de bœuf, porc, agneau et poisson 63 °C.",
+      "Nettoie la sonde entre deux usages, et garde le chaud bien chaud et le froid bien froid jusqu'au service."
+     ],
+     "q": "As-tu déjà utilisé un thermomètre de cuisine ?",
+     "c": "Vérifie un plat au thermomètre aujourd'hui, ou note les températures clés bien en vue dans ta cuisine."
+    },
+    "it": {
+     "t": "Temperature di sicurezza",
+     "g": "Impara a usare un termometro da cucina e le temperature al cuore che rendono il cibo sicuro.",
+     "p": [
+      "Inserisci la sonda nel punto più spesso, lontano dall'osso, e aspetta che il valore si stabilizzi.",
+      "Riferimenti comuni: pollame 74 °C, carne macinata 71 °C, tagli interi di manzo, maiale, agnello e pesce 63 °C.",
+      "Pulisci la sonda tra un uso e l'altro, e tieni caldo il caldo e freddo il freddo fino a servire."
+     ],
+     "q": "Hai mai usato un termometro da cucina?",
+     "c": "Controlla oggi un piatto con il termometro, o annota le temperature chiave in un punto visibile della cucina."
+    },
+    "pt": {
+     "t": "Temperaturas seguras",
+     "g": "Aprende a usar um termómetro de cozinha e as temperaturas internas que tornam a comida segura.",
+     "p": [
+      "Espeta a sonda na parte mais grossa, longe do osso, e espera que o valor estabilize.",
+      "Referências comuns: aves 74 °C, carne picada 71 °C, peças inteiras de vaca, porco, borrego e peixe 63 °C.",
+      "Limpa a sonda entre usos e mantém o quente quente e o frio frio até servir."
+     ],
+     "q": "Já usaste alguma vez um termómetro de cozinha?",
+     "c": "Verifica hoje um prato com termómetro, ou aponta as temperaturas-chave num sítio visível da cozinha."
+    },
+    "pt_BR": {
+     "t": "Temperaturas seguras",
+     "g": "Aprenda a usar um termômetro culinário e as temperaturas internas que deixam a comida segura.",
+     "p": [
+      "Espete a sonda na parte mais grossa, longe do osso, e espere o número estabilizar.",
+      "Referências comuns: aves 74 °C, carne moída 71 °C, peças inteiras de boi, porco, cordeiro e peixe 63 °C.",
+      "Limpe a sonda entre usos e mantenha o quente quente e o frio frio até servir."
+     ],
+     "q": "Você já usou um termômetro culinário?",
+     "c": "Confira hoje um prato com termômetro, ou anote as temperaturas principais num lugar visível da cozinha."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking minced meat",
+     "g": "Learn to brown mince well for sauces, tacos and meatballs.",
+     "p": [
+      "Use a hot, wide pan and add the mince in a flat layer; let it brown before breaking it up.",
+      "Cook in batches if needed, since too much mince at once releases water and turns grey instead of brown.",
+      "Cook mince until no pink remains, then add onion, spices or sauce; wash hands after handling it raw."
+     ],
+     "q": "What is your favourite dish made with mince?",
+     "c": "Brown a small batch of mince properly, without stirring at first, and use it in a sauce or tacos."
+    },
+    "de": {
+     "t": "Hackfleisch braten",
+     "g": "Lerne Hackfleisch für Saucen, Tacos und Bällchen richtig anzubräunen.",
+     "p": [
+      "Nimm eine heiße, breite Pfanne und gib das Hack flach hinein; lass es bräunen, bevor du es zerteilst.",
+      "Brate in Portionen, wenn nötig, denn zu viel Hack auf einmal gibt Wasser ab und wird grau statt braun.",
+      "Gare Hack, bis nichts Rosa mehr übrig ist, dann Zwiebel, Gewürze oder Sauce dazu; Hände danach waschen."
+     ],
+     "q": "Was ist dein Lieblingsgericht mit Hackfleisch?",
+     "c": "Brate eine kleine Portion Hack richtig an, erst ohne Rühren, und verwende es in Sauce oder Tacos."
+    },
+    "es": {
+     "t": "Cocinar carne picada",
+     "g": "Aprende a dorar bien la carne picada para salsas, tacos y albóndigas.",
+     "p": [
+      "Usa una sartén ancha y caliente, pon la carne en una capa plana y deja que se dore antes de deshacerla.",
+      "Hazla por tandas si hace falta: demasiada carne a la vez suelta agua y queda gris en vez de dorada.",
+      "Cocínala hasta que no quede nada rosado y luego añade cebolla, especias o salsa; lávate las manos tras tocarla cruda."
+     ],
+     "q": "¿Cuál es tu plato favorito con carne picada?",
+     "c": "Dora bien una pequeña cantidad de carne picada, sin remover al principio, y úsala en una salsa o tacos."
+    },
+    "fr": {
+     "t": "Cuire la viande hachée",
+     "g": "Apprends à bien dorer la viande hachée pour sauces, tacos et boulettes.",
+     "p": [
+      "Utilise une poêle large et chaude, étale la viande à plat et laisse-la dorer avant de l'émietter.",
+      "Procède en plusieurs fois si besoin : trop de viande à la fois rend de l'eau et grisaille au lieu de dorer.",
+      "Cuis jusqu'à ce qu'il ne reste plus de rose, puis ajoute oignon, épices ou sauce ; lave-toi les mains après."
+     ],
+     "q": "Quel est ton plat préféré à base de viande hachée ?",
+     "c": "Fais bien dorer une petite quantité de viande hachée, sans remuer au début, et utilise-la en sauce ou en tacos."
+    },
+    "it": {
+     "t": "Cuocere la carne macinata",
+     "g": "Impara a rosolare bene il macinato per sughi, tacos e polpette.",
+     "p": [
+      "Usa una padella larga e calda, stendi il macinato in uno strato piatto e lascialo dorare prima di sgranarlo.",
+      "Se serve, cuoci in più volte: troppo macinato insieme rilascia acqua e diventa grigio invece che dorato.",
+      "Cuocilo finché non resta niente di rosa, poi aggiungi cipolla, spezie o sugo; lavati le mani dopo."
+     ],
+     "q": "Qual è il tuo piatto preferito con la carne macinata?",
+     "c": "Rosola bene una piccola dose di macinato, senza mescolare all'inizio, e usalo in un sugo o nei tacos."
+    },
+    "pt": {
+     "t": "Cozinhar carne picada",
+     "g": "Aprende a alourar bem carne picada para molhos, tacos e almôndegas.",
+     "p": [
+      "Usa uma frigideira larga e quente, espalha a carne numa camada plana e deixa-a dourar antes de a desfazer.",
+      "Faz em várias vezes se for preciso: carne a mais de uma vez larga água e fica cinzenta em vez de dourada.",
+      "Cozinha até não haver nada rosado e depois junta cebola, especiarias ou molho; lava as mãos depois."
+     ],
+     "q": "Qual é o teu prato preferido com carne picada?",
+     "c": "Aloura bem uma pequena porção de carne picada, sem mexer no início, e usa-a num molho ou em tacos."
+    },
+    "pt_BR": {
+     "t": "Cozinhando carne moída",
+     "g": "Aprenda a dourar bem a carne moída para molhos, tacos e almôndegas.",
+     "p": [
+      "Use uma frigideira larga e quente, espalhe a carne numa camada plana e deixe dourar antes de soltar.",
+      "Faça em levas se precisar: carne demais de uma vez solta água e fica cinza em vez de dourada.",
+      "Cozinhe até não sobrar nada rosado e depois junte cebola, temperos ou molho; lave as mãos depois."
+     ],
+     "q": "Qual é seu prato favorito com carne moída?",
+     "c": "Doure bem uma pequena porção de carne moída, sem mexer no começo, e use num molho ou em tacos."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking fish fillets",
+     "g": "Learn to pan-fry fish gently and get crispy skin without sticking.",
+     "p": [
+      "Pat the fillet very dry, season it and place it skin side down in a hot pan with a little oil.",
+      "Press gently for a few seconds so the skin stays flat, then leave it until it releases on its own.",
+      "Cook mostly on the skin side and flip briefly; fish is done when it flakes easily and looks opaque."
+     ],
+     "q": "Which fish do you enjoy most?",
+     "c": "Pan-fry a fish fillet skin side down until crispy, flipping only once at the very end."
+    },
+    "de": {
+     "t": "Fischfilets braten",
+     "g": "Lerne Fisch sanft zu braten und eine knusprige Haut ohne Ankleben zu bekommen.",
+     "p": [
+      "Tupf das Filet sehr trocken, würz es und leg es mit der Haut nach unten in die heiße Pfanne mit etwas Öl.",
+      "Drück es einige Sekunden sanft an, damit die Haut flach bleibt, und lass es, bis es sich von selbst löst.",
+      "Gar es überwiegend auf der Hautseite und wende es kurz; fertig ist es, wenn es glasig-weiß zerfällt."
+     ],
+     "q": "Welchen Fisch isst du am liebsten?",
+     "c": "Brate ein Fischfilet auf der Haut knusprig und wende es erst ganz am Ende einmal."
+    },
+    "es": {
+     "t": "Filetes de pescado",
+     "g": "Aprende a hacer pescado a la sartén con suavidad y a lograr piel crujiente sin que se pegue.",
+     "p": [
+      "Seca muy bien el filete, sazónalo y ponlo con la piel hacia abajo en sartén caliente con poco aceite.",
+      "Presiona suave unos segundos para que la piel quede plana y déjalo hasta que se suelte solo.",
+      "Cocínalo casi todo por el lado de la piel y dale la vuelta un momento; está listo cuando se desmiga y está opaco."
+     ],
+     "q": "¿Qué pescado te gusta más?",
+     "c": "Haz un filete de pescado con la piel hacia abajo hasta que cruja, girándolo solo una vez al final."
+    },
+    "fr": {
+     "t": "Cuire des filets de poisson",
+     "g": "Apprends à poêler le poisson en douceur et à obtenir une peau croustillante sans qu'il attache.",
+     "p": [
+      "Sèche très bien le filet, assaisonne-le et pose-le côté peau dans une poêle chaude légèrement huilée.",
+      "Appuie doucement quelques secondes pour garder la peau à plat, puis laisse-le jusqu'à ce qu'il se détache seul.",
+      "Cuis surtout côté peau et retourne brièvement ; le poisson est prêt quand il s'effeuille et devient opaque."
+     ],
+     "q": "Quel poisson préfères-tu ?",
+     "c": "Poêle un filet de poisson côté peau jusqu'à ce qu'il croustille, en ne le retournant qu'à la fin."
+    },
+    "it": {
+     "t": "Filetti di pesce in padella",
+     "g": "Impara a cuocere il pesce in padella con delicatezza e a ottenere pelle croccante senza attaccare.",
+     "p": [
+      "Asciuga bene il filetto, condiscilo e mettilo dal lato della pelle in padella calda con poco olio.",
+      "Premi piano qualche secondo perché la pelle resti piatta, poi lascialo finché si stacca da solo.",
+      "Cuoci quasi tutto dal lato della pelle e gira per poco; è pronto quando si sfalda ed è opaco."
+     ],
+     "q": "Quale pesce ti piace di più?",
+     "c": "Cuoci un filetto di pesce dal lato della pelle finché è croccante, girandolo solo alla fine."
+    },
+    "pt": {
+     "t": "Filetes de peixe",
+     "g": "Aprende a fritar peixe com cuidado e a ter pele estaladiça sem pegar.",
+     "p": [
+      "Seca muito bem o filete, tempera-o e põe-no com a pele para baixo numa frigideira quente com pouco óleo.",
+      "Pressiona suavemente uns segundos para a pele ficar plana e deixa-o até se soltar sozinho.",
+      "Cozinha quase tudo do lado da pele e vira por instantes; está pronto quando lasca e fica opaco."
+     ],
+     "q": "Que peixe gostas mais?",
+     "c": "Frita um filete de peixe com a pele para baixo até ficar estaladiço, virando só no fim."
+    },
+    "pt_BR": {
+     "t": "Filés de peixe",
+     "g": "Aprenda a fazer peixe na frigideira com cuidado e deixar a pele crocante sem grudar.",
+     "p": [
+      "Seque bem o filé, tempere e coloque com a pele para baixo em frigideira quente com pouco óleo.",
+      "Pressione de leve alguns segundos para a pele ficar reta e deixe até soltar sozinho.",
+      "Cozinhe quase todo do lado da pele e vire rapidinho; está pronto quando desfia fácil e fica opaco."
+     ],
+     "q": "Qual peixe você mais gosta?",
+     "c": "Faça um filé de peixe com a pele para baixo até ficar crocante, virando só no final."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tofu basics",
+     "g": "Learn to press, cube and crisp tofu so it soaks up flavour.",
+     "p": [
+      "Choose firm or extra-firm tofu, wrap it in a towel and press it for about 15 minutes to remove water.",
+      "Cut it into even cubes and toss them in a little cornflour for a crisp coating.",
+      "Fry in a hot oiled pan without moving too often, then add a sauce such as soy, garlic and ginger."
+     ],
+     "q": "Have you tried tofu before, and how was it cooked?",
+     "c": "Press a block of tofu, cube it, crisp it in a pan and toss it in a quick soy and garlic sauce."
+    },
+    "de": {
+     "t": "Tofu-Grundlagen",
+     "g": "Lerne Tofu zu pressen, zu würfeln und knusprig zu braten, damit er Geschmack aufnimmt.",
+     "p": [
+      "Nimm festen Tofu, wickel ihn in ein Tuch und press ihn etwa 15 Minuten, um Wasser zu entfernen.",
+      "Schneide ihn in gleichmäßige Würfel und wende sie in etwas Speisestärke für eine knusprige Hülle.",
+      "Brate ihn in heißer Pfanne mit Öl, ohne oft zu wenden, und gib dann Sauce aus Soja, Knoblauch und Ingwer dazu."
+     ],
+     "q": "Hast du Tofu schon probiert, und wie war er zubereitet?",
+     "c": "Press einen Block Tofu, würfle ihn, brate ihn knusprig und schwenk ihn in einer schnellen Soja-Knoblauch-Sauce."
+    },
+    "es": {
+     "t": "Tofu básico",
+     "g": "Aprende a prensar, cortar en dados y dorar el tofu para que absorba sabor.",
+     "p": [
+      "Elige tofu firme o extrafirme, envuélvelo en un paño y prénsalo unos 15 minutos para quitar agua.",
+      "Córtalo en dados iguales y rebózalos en un poco de maicena para que queden crujientes.",
+      "Fríelos en sartén caliente con aceite sin moverlos demasiado y luego añade salsa de soja, ajo y jengibre."
+     ],
+     "q": "¿Has probado el tofu? ¿Cómo estaba cocinado?",
+     "c": "Prensa un bloque de tofu, córtalo en dados, dóralo y mézclalo con una salsa rápida de soja y ajo."
+    },
+    "fr": {
+     "t": "Les bases du tofu",
+     "g": "Apprends à presser, couper et dorer le tofu pour qu'il absorbe les saveurs.",
+     "p": [
+      "Choisis un tofu ferme, enveloppe-le dans un torchon et presse-le environ 15 minutes pour retirer l'eau.",
+      "Coupe-le en cubes réguliers et enrobe-les d'un peu de fécule de maïs pour une croûte croustillante.",
+      "Fais-les dorer dans une poêle chaude huilée sans trop remuer, puis ajoute une sauce soja, ail et gingembre."
+     ],
+     "q": "As-tu déjà goûté le tofu, et comment était-il cuisiné ?",
+     "c": "Presse un bloc de tofu, coupe-le en cubes, fais-le dorer et enrobe-le d'une sauce rapide soja et ail."
+    },
+    "it": {
+     "t": "Il tofu di base",
+     "g": "Impara a pressare, tagliare a cubetti e rendere croccante il tofu perché assorba sapore.",
+     "p": [
+      "Scegli tofu compatto, avvolgilo in un canovaccio e pressalo circa 15 minuti per togliere l'acqua.",
+      "Taglialo a cubetti regolari e passali in un po' di amido di mais per una crosticina croccante.",
+      "Rosolali in padella calda con olio senza girarli troppo, poi aggiungi una salsa di soia, aglio e zenzero."
+     ],
+     "q": "Hai mai provato il tofu, e com'era cucinato?",
+     "c": "Pressa un panetto di tofu, taglialo a cubetti, rendilo croccante e saltalo con una salsa veloce di soia e aglio."
+    },
+    "pt": {
+     "t": "O básico do tofu",
+     "g": "Aprende a prensar, cortar em cubos e alourar o tofu para absorver sabor.",
+     "p": [
+      "Escolhe tofu firme, embrulha-o num pano e prensa-o cerca de 15 minutos para tirar a água.",
+      "Corta-o em cubos iguais e passa-os por um pouco de amido de milho para ficarem estaladiços.",
+      "Frita-os numa frigideira quente com óleo sem mexer demasiado e junta um molho de soja, alho e gengibre."
+     ],
+     "q": "Já provaste tofu? Como estava cozinhado?",
+     "c": "Prensa um bloco de tofu, corta em cubos, aloura-o e envolve-o num molho rápido de soja e alho."
+    },
+    "pt_BR": {
+     "t": "O básico do tofu",
+     "g": "Aprenda a prensar, cortar em cubos e dourar o tofu para ele absorver sabor.",
+     "p": [
+      "Escolha tofu firme, enrole num pano e prense por uns 15 minutos para tirar a água.",
+      "Corte em cubos iguais e passe num pouco de amido de milho para ficarem crocantes.",
+      "Frite em frigideira quente com óleo sem mexer demais e junte um molho de shoyu, alho e gengibre."
+     ],
+     "q": "Você já provou tofu? Como ele foi preparado?",
+     "c": "Prense um bloco de tofu, corte em cubos, doure e misture num molho rápido de shoyu e alho."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Potatoes three ways",
+     "g": "Learn boiled, mashed and roasted potatoes and which varieties suit each.",
+     "p": [
+      "Waxy potatoes hold their shape when boiled, perfect for salads; floury ones turn fluffy.",
+      "For mash, start floury potatoes in cold salted water, cook until soft, drain well and mash with warm butter and milk.",
+      "For roast potatoes, parboil, rough up the edges and roast in hot oil until golden and crisp."
+     ],
+     "q": "How do you like your potatoes best?",
+     "c": "Cook one batch of potatoes and serve half boiled and half mashed, then compare textures."
+    },
+    "de": {
+     "t": "Kartoffeln auf drei Arten",
+     "g": "Lerne gekochte Kartoffeln, Püree und Bratkartoffeln aus dem Ofen und welche Sorten wozu passen.",
+     "p": [
+      "Festkochende Kartoffeln behalten gekocht ihre Form, ideal für Salat; mehligkochende werden locker.",
+      "Fürs Püree mehlige Kartoffeln in kaltem Salzwasser aufsetzen, weich kochen, gut abtropfen und mit warmer Butter und Milch stampfen.",
+      "Für Ofenkartoffeln vorkochen, die Ränder aufrauen und in heißem Öl golden und knusprig rösten."
+     ],
+     "q": "Wie magst du Kartoffeln am liebsten?",
+     "c": "Koch eine Portion Kartoffeln, serviere die Hälfte gekocht, die andere als Püree, und vergleiche die Textur."
+    },
+    "es": {
+     "t": "Patatas de tres maneras",
+     "g": "Aprende patatas cocidas, puré y asadas, y qué variedades van mejor para cada una.",
+     "p": [
+      "Las patatas firmes mantienen la forma al cocerlas, ideales para ensalada; las harinosas quedan esponjosas.",
+      "Para el puré, cuece patatas harinosas desde agua fría con sal, escúrrelas bien y aplástalas con mantequilla y leche templadas.",
+      "Para asarlas, precuécelas, raspa los bordes y ásalas en aceite caliente hasta que estén doradas y crujientes."
+     ],
+     "q": "¿Cómo te gustan más las patatas?",
+     "c": "Cuece una tanda de patatas y sirve la mitad cocidas y la otra mitad en puré, y compara texturas."
+    },
+    "fr": {
+     "t": "Les pommes de terre de trois façons",
+     "g": "Apprends les pommes de terre à l'eau, en purée et rôties, et quelles variétés conviennent à chacune.",
+     "p": [
+      "Les variétés fermes gardent leur forme à la cuisson, parfaites en salade ; les farineuses deviennent fondantes.",
+      "Pour la purée, démarre des farineuses à l'eau froide salée, cuis-les, égoutte-les bien et écrase-les avec beurre et lait chauds.",
+      "Pour les rôtir, précuis-les, abîme un peu les bords et rôtis-les dans l'huile chaude jusqu'à ce qu'elles dorent."
+     ],
+     "q": "Comment préfères-tu les pommes de terre ?",
+     "c": "Cuis une fournée de pommes de terre, sers-en la moitié à l'eau et l'autre en purée, et compare les textures."
+    },
+    "it": {
+     "t": "Patate in tre modi",
+     "g": "Impara patate lesse, purè e arrosto, e quali varietà sono adatte a ciascuna.",
+     "p": [
+      "Le patate a pasta gialla soda tengono la forma da lesse, perfette in insalata; quelle farinose diventano soffici.",
+      "Per il purè, metti patate farinose in acqua fredda salata, cuocile, scolale bene e schiacciale con burro e latte caldi.",
+      "Per l'arrosto, sbollentale, graffia un po' i bordi e arrostiscile in olio caldo finché sono dorate e croccanti."
+     ],
+     "q": "Come ti piacciono di più le patate?",
+     "c": "Cuoci delle patate e servine metà lesse e metà in purè, poi confronta le consistenze."
+    },
+    "pt": {
+     "t": "Batatas de três maneiras",
+     "g": "Aprende batatas cozidas, puré e assadas, e que variedades servem melhor a cada uma.",
+     "p": [
+      "Batatas de polpa firme mantêm a forma quando cozidas, ótimas para salada; as farinhentas ficam fofas.",
+      "Para o puré, põe batatas farinhentas em água fria com sal, coze até ficarem macias, escorre bem e esmaga com manteiga e leite quentes.",
+      "Para assar, coze-as um pouco, arranha as bordas e assa em óleo quente até ficarem douradas e estaladiças."
+     ],
+     "q": "Como gostas mais de batatas?",
+     "c": "Coze uma porção de batatas e serve metade cozidas e metade em puré, comparando as texturas."
+    },
+    "pt_BR": {
+     "t": "Batatas de três jeitos",
+     "g": "Aprenda batatas cozidas, purê e assadas, e quais variedades combinam com cada uma.",
+     "p": [
+      "Batatas firmes mantêm a forma ao cozinhar, ótimas para salada; as farinhentas ficam fofinhas.",
+      "Para purê, coloque batatas farinhentas em água fria com sal, cozinhe até amaciar, escorra bem e amasse com manteiga e leite mornos.",
+      "Para assar, pré-cozinhe, arranhe as bordas e asse em óleo quente até ficarem douradas e crocantes."
+     ],
+     "q": "Como você mais gosta de batata?",
+     "c": "Cozinhe uma porção de batatas e sirva metade cozidas e metade em purê, comparando as texturas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baked potatoes and wedges",
+     "g": "Learn to make crispy jacket potatoes and seasoned oven wedges.",
+     "p": [
+      "For jacket potatoes, scrub them, prick the skin, rub with oil and salt and bake until soft inside.",
+      "For wedges, cut potatoes lengthways, toss with oil, salt and spices and spread them out on a tray.",
+      "Bake at a high temperature and turn wedges once; they are ready when golden outside and fluffy inside."
+     ],
+     "q": "What toppings would you put on a baked potato?",
+     "c": "Bake a tray of seasoned wedges with paprika or herbs and turn them once halfway."
+    },
+    "de": {
+     "t": "Ofenkartoffeln und Spalten",
+     "g": "Lerne knusprige Ofenkartoffeln und gewürzte Kartoffelspalten aus dem Ofen.",
+     "p": [
+      "Für Ofenkartoffeln abbürsten, die Schale einstechen, mit Öl und Salz einreiben und backen, bis sie innen weich sind.",
+      "Für Spalten Kartoffeln längs schneiden, mit Öl, Salz und Gewürzen mischen und auf dem Blech verteilen.",
+      "Bei hoher Temperatur backen und einmal wenden; fertig, wenn sie außen golden und innen locker sind."
+     ],
+     "q": "Welche Toppings würdest du auf eine Ofenkartoffel geben?",
+     "c": "Back ein Blech gewürzte Kartoffelspalten mit Paprika oder Kräutern und wende sie einmal zur Halbzeit."
+    },
+    "es": {
+     "t": "Patatas asadas y gajos",
+     "g": "Aprende a hacer patatas asadas con piel crujiente y gajos especiados al horno.",
+     "p": [
+      "Para las asadas, frótalas bien, pincha la piel, úntalas con aceite y sal y hornéalas hasta que estén tiernas dentro.",
+      "Para los gajos, corta las patatas a lo largo, mézclalas con aceite, sal y especias y extiéndelas en la bandeja.",
+      "Hornea a temperatura alta y dales una vuelta; están listos dorados por fuera y esponjosos por dentro."
+     ],
+     "q": "¿Qué pondrías encima de una patata asada?",
+     "c": "Hornea una bandeja de gajos con pimentón o hierbas y dales la vuelta una vez a mitad."
+    },
+    "fr": {
+     "t": "Pommes de terre au four et potatoes",
+     "g": "Apprends les pommes de terre en robe croustillantes et les quartiers épicés au four.",
+     "p": [
+      "Pour les pommes de terre en robe, brosse-les, pique la peau, frotte d'huile et de sel et cuis-les jusqu'à ce qu'elles soient fondantes.",
+      "Pour les quartiers, coupe dans la longueur, mélange avec huile, sel et épices et étale sur une plaque.",
+      "Cuis à four chaud et retourne une fois ; c'est prêt quand c'est doré dehors et moelleux dedans."
+     ],
+     "q": "Quelle garniture mettrais-tu sur une pomme de terre au four ?",
+     "c": "Fais cuire une plaque de quartiers épicés au paprika ou aux herbes et retourne-les à mi-cuisson."
+    },
+    "it": {
+     "t": "Patate al cartoccio e spicchi",
+     "g": "Impara le patate al forno con la buccia croccante e gli spicchi speziati al forno.",
+     "p": [
+      "Per le patate intere, spazzolale, buca la buccia, ungile con olio e sale e cuocile finché sono morbide dentro.",
+      "Per gli spicchi, taglia le patate per il lungo, condiscile con olio, sale e spezie e stendile sulla teglia.",
+      "Cuoci a temperatura alta e girale una volta; sono pronte dorate fuori e soffici dentro."
+     ],
+     "q": "Cosa metteresti sopra una patata al forno?",
+     "c": "Cuoci in forno una teglia di spicchi con paprika o erbe e girali una volta a metà."
+    },
+    "pt": {
+     "t": "Batatas no forno e gomos",
+     "g": "Aprende batatas assadas com pele estaladiça e gomos temperados no forno.",
+     "p": [
+      "Para as batatas inteiras, esfrega-as, pica a pele, unta com óleo e sal e assa até estarem macias por dentro.",
+      "Para os gomos, corta as batatas ao comprido, envolve em azeite, sal e especiarias e espalha no tabuleiro.",
+      "Assa em forno quente e vira uma vez; estão prontas douradas por fora e fofas por dentro."
+     ],
+     "q": "Que coberturas punhas numa batata assada?",
+     "c": "Assa um tabuleiro de gomos temperados com colorau ou ervas e vira-os uma vez a meio."
+    },
+    "pt_BR": {
+     "t": "Batata assada e rústica",
+     "g": "Aprenda batatas assadas com casca crocante e batatas rústicas temperadas no forno.",
+     "p": [
+      "Para as inteiras, esfregue bem, fure a casca, passe óleo e sal e asse até ficarem macias por dentro.",
+      "Para as rústicas, corte as batatas no comprido, misture com azeite, sal e temperos e espalhe na assadeira.",
+      "Asse em forno quente e vire uma vez; estão prontas douradas por fora e macias por dentro."
+     ],
+     "q": "O que você colocaria por cima de uma batata assada?",
+     "c": "Asse uma assadeira de batatas rústicas com páprica ou ervas e vire uma vez na metade."
+    }
+   }
+  }
+ ]
+}

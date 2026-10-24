@@ -1,0 +1,835 @@
+{
+ "topic": "history",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What history is",
+     "g": "Understand what history studies and why the human past still matters today.",
+     "p": [
+      "History is the study of the human past, built on evidence such as documents, objects and buildings.",
+      "It covers kings and battles, but also food, work, games, homes and ordinary families.",
+      "Knowing how things came to be helps us understand our cities, languages and customs today."
+     ],
+     "q": "Which period of history have you always been curious about, and why?",
+     "c": "Pick one object near you and guess how old the idea behind it is, for example a spoon or a calendar."
+    },
+    "de": {
+     "t": "Was Geschichte ist",
+     "g": "Verstehe, was Geschichte erforscht und warum die Vergangenheit heute noch zählt.",
+     "p": [
+      "Geschichte erforscht die menschliche Vergangenheit anhand von Belegen wie Schriften, Gegenständen und Bauten.",
+      "Es geht nicht nur um Könige und Schlachten, sondern auch um Essen, Arbeit, Spiele und Familien.",
+      "Wer weiß, wie etwas entstanden ist, versteht Städte, Sprachen und Bräuche von heute besser."
+     ],
+     "q": "Welche Epoche der Geschichte hat dich schon immer neugierig gemacht und warum?",
+     "c": "Nimm einen Gegenstand in deiner Nähe und schätze, wie alt die Idee dahinter ist, etwa ein Löffel."
+    },
+    "es": {
+     "t": "Qué es la historia",
+     "g": "Entiende qué estudia la historia y por qué el pasado humano sigue importando hoy.",
+     "p": [
+      "La historia estudia el pasado humano a partir de pruebas como documentos, objetos y edificios.",
+      "No solo trata de reyes y batallas, también de comida, trabajo, juegos, casas y familias corrientes.",
+      "Saber cómo surgieron las cosas nos ayuda a entender nuestras ciudades, lenguas y costumbres."
+     ],
+     "q": "¿Qué época de la historia siempre te ha dado curiosidad y por qué?",
+     "c": "Elige un objeto cercano y adivina lo antigua que es la idea detrás de él, por ejemplo una cuchara."
+    },
+    "fr": {
+     "t": "Ce qu'est l'histoire",
+     "g": "Comprendre ce qu'étudie l'histoire et pourquoi le passé humain compte encore aujourd'hui.",
+     "p": [
+      "L'histoire étudie le passé humain à partir de preuves : documents, objets et bâtiments.",
+      "Elle parle de rois et de batailles, mais aussi de nourriture, de travail, de jeux et de familles.",
+      "Savoir comment les choses sont nées aide à comprendre nos villes, nos langues et nos coutumes."
+     ],
+     "q": "Quelle période de l'histoire t'a toujours rendu curieux, et pourquoi ?",
+     "c": "Choisis un objet près de toi et devine l'âge de l'idée qui se cache derrière, une cuillère par exemple."
+    },
+    "it": {
+     "t": "Che cos'è la storia",
+     "g": "Capire che cosa studia la storia e perché il passato umano conta ancora oggi.",
+     "p": [
+      "La storia studia il passato umano partendo da prove come documenti, oggetti ed edifici.",
+      "Non parla solo di re e battaglie, ma anche di cibo, lavoro, giochi, case e famiglie comuni.",
+      "Sapere come sono nate le cose ci aiuta a capire le nostre città, lingue e usanze di oggi."
+     ],
+     "q": "Quale periodo della storia ti ha sempre incuriosito, e perché?",
+     "c": "Scegli un oggetto vicino a te e indovina quanto è antica l'idea che c'è dietro, per esempio un cucchiaio."
+    },
+    "pt": {
+     "t": "O que é a história",
+     "g": "Perceber o que a história estuda e porque é que o passado humano ainda importa hoje.",
+     "p": [
+      "A história estuda o passado humano com base em provas como documentos, objetos e edifícios.",
+      "Não fala só de reis e batalhas, mas também de comida, trabalho, jogos, casas e famílias comuns.",
+      "Saber como as coisas surgiram ajuda-nos a compreender as nossas cidades, línguas e costumes."
+     ],
+     "q": "Que período da história sempre te despertou curiosidade, e porquê?",
+     "c": "Escolhe um objeto perto de ti e adivinha a idade da ideia por trás dele, por exemplo uma colher."
+    },
+    "pt_BR": {
+     "t": "O que é história",
+     "g": "Entender o que a história estuda e por que o passado humano ainda importa hoje.",
+     "p": [
+      "A história estuda o passado humano com base em evidências como documentos, objetos e construções.",
+      "Ela não fala só de reis e batalhas, mas também de comida, trabalho, jogos, casas e famílias comuns.",
+      "Saber como as coisas surgiram ajuda a entender nossas cidades, línguas e costumes de hoje."
+     ],
+     "q": "Qual período da história sempre despertou sua curiosidade, e por quê?",
+     "c": "Escolha um objeto perto de você e adivinhe a idade da ideia por trás dele, por exemplo uma colher."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How historians know things",
+     "g": "Learn the difference between primary and secondary sources and why both are useful.",
+     "p": [
+      "Primary sources come from the time itself: letters, diaries, coins, tools, photos and ruins.",
+      "Secondary sources are later works, like history books, that explain and compare primary sources.",
+      "Good historians ask who made a source, when, why, and what it might leave out."
+     ],
+     "q": "If someone studied your life in 300 years, which of your things would tell them the most?",
+     "c": "Find one primary source at home, like an old photo or ticket, and ask who, when and why it was made."
+    },
+    "de": {
+     "t": "Woher Historiker es wissen",
+     "g": "Lerne den Unterschied zwischen Primär- und Sekundärquellen und warum beide nützlich sind.",
+     "p": [
+      "Primärquellen stammen aus der Zeit selbst: Briefe, Tagebücher, Münzen, Werkzeuge, Fotos und Ruinen.",
+      "Sekundärquellen entstehen später, etwa Geschichtsbücher, die Primärquellen erklären und vergleichen.",
+      "Gute Historiker fragen: Wer hat die Quelle gemacht, wann, warum und was fehlt vielleicht darin?"
+     ],
+     "q": "Wenn jemand in 300 Jahren dein Leben erforscht, welche deiner Sachen würden am meisten verraten?",
+     "c": "Such zu Hause eine Primärquelle, etwa ein altes Foto, und frag: Wer, wann und warum?"
+    },
+    "es": {
+     "t": "Cómo saben los historiadores",
+     "g": "Aprende la diferencia entre fuentes primarias y secundarias y por qué ambas son útiles.",
+     "p": [
+      "Las fuentes primarias son de la propia época: cartas, diarios, monedas, herramientas, fotos y ruinas.",
+      "Las secundarias son obras posteriores, como libros de historia, que explican y comparan las primarias.",
+      "Un buen historiador pregunta quién hizo la fuente, cuándo, por qué y qué podría estar omitiendo."
+     ],
+     "q": "Si alguien estudiara tu vida dentro de 300 años, ¿qué cosas tuyas le dirían más?",
+     "c": "Busca en casa una fuente primaria, como una foto antigua o una entrada, y pregunta quién, cuándo y por qué."
+    },
+    "fr": {
+     "t": "Comment les historiens savent",
+     "g": "Découvrir la différence entre sources primaires et secondaires et l'utilité de chacune.",
+     "p": [
+      "Les sources primaires datent de l'époque : lettres, journaux intimes, pièces, outils, photos, ruines.",
+      "Les sources secondaires sont plus tardives, comme les livres d'histoire qui expliquent les primaires.",
+      "Un bon historien demande qui a produit la source, quand, pourquoi, et ce qu'elle passe sous silence."
+     ],
+     "q": "Si quelqu'un étudiait ta vie dans 300 ans, lesquels de tes objets lui en diraient le plus ?",
+     "c": "Trouve chez toi une source primaire, une vieille photo par exemple, et demande-toi qui, quand et pourquoi."
+    },
+    "it": {
+     "t": "Come fanno gli storici a sapere",
+     "g": "Impara la differenza tra fonti primarie e secondarie e perché servono entrambe.",
+     "p": [
+      "Le fonti primarie vengono dall'epoca stessa: lettere, diari, monete, attrezzi, foto e rovine.",
+      "Le fonti secondarie sono opere successive, come i libri di storia, che spiegano e confrontano le primarie.",
+      "Un buono storico chiede chi ha creato la fonte, quando, perché e che cosa potrebbe tralasciare."
+     ],
+     "q": "Se qualcuno studiasse la tua vita tra 300 anni, quali tuoi oggetti gli direbbero di più?",
+     "c": "Trova a casa una fonte primaria, come una vecchia foto o un biglietto, e chiediti chi, quando e perché."
+    },
+    "pt": {
+     "t": "Como os historiadores sabem",
+     "g": "Aprender a diferença entre fontes primárias e secundárias e porque ambas são úteis.",
+     "p": [
+      "As fontes primárias são da própria época: cartas, diários, moedas, ferramentas, fotografias e ruínas.",
+      "As secundárias são obras posteriores, como livros de história, que explicam e comparam as primárias.",
+      "Um bom historiador pergunta quem fez a fonte, quando, porquê e o que ela pode estar a omitir."
+     ],
+     "q": "Se alguém estudasse a tua vida daqui a 300 anos, que coisas tuas lhe diriam mais?",
+     "c": "Procura em casa uma fonte primária, como uma fotografia antiga, e pergunta quem, quando e porquê."
+    },
+    "pt_BR": {
+     "t": "Como os historiadores sabem",
+     "g": "Aprender a diferença entre fontes primárias e secundárias e por que as duas são úteis.",
+     "p": [
+      "Fontes primárias são da própria época: cartas, diários, moedas, ferramentas, fotos e ruínas.",
+      "Fontes secundárias são obras posteriores, como livros de história, que explicam e comparam as primárias.",
+      "Um bom historiador pergunta quem fez a fonte, quando, por que e o que ela pode estar deixando de fora."
+     ],
+     "q": "Se alguém estudasse sua vida daqui a 300 anos, quais coisas suas diriam mais sobre você?",
+     "c": "Procure em casa uma fonte primária, como uma foto antiga ou um ingresso, e pergunte quem, quando e por quê."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Archaeology basics",
+     "g": "See how archaeologists dig carefully and read soil layers to rebuild everyday life.",
+     "p": [
+      "Archaeologists dig slowly in small squares, recording the exact spot of every find.",
+      "Soil builds up in layers, so deeper layers are usually older: this idea is called stratigraphy.",
+      "Ordinary finds like broken pots, seeds and bones often reveal more than treasure does."
+     ],
+     "q": "If you could join one archaeological dig anywhere in the world, where would you go?",
+     "c": "Look at your rubbish bin today and imagine what an archaeologist could learn about your life from it."
+    },
+    "de": {
+     "t": "Grundlagen der Archäologie",
+     "g": "Sieh, wie Archäologen sorgfältig graben und Erdschichten lesen, um den Alltag zu rekonstruieren.",
+     "p": [
+      "Archäologen graben langsam in kleinen Quadraten und notieren die genaue Lage jedes Fundes.",
+      "Erde lagert sich in Schichten ab, tiefere sind meist älter: Das nennt man Stratigrafie.",
+      "Alltägliche Funde wie Scherben, Samen und Knochen verraten oft mehr als ein Schatz."
+     ],
+     "q": "Bei welcher archäologischen Ausgrabung auf der Welt würdest du gern mitmachen?",
+     "c": "Schau heute in deinen Mülleimer und überlege, was ein Archäologe daraus über dein Leben lernen könnte."
+    },
+    "es": {
+     "t": "Lo básico de la arqueología",
+     "g": "Descubre cómo los arqueólogos excavan con cuidado y leen las capas del suelo.",
+     "p": [
+      "Los arqueólogos excavan despacio en cuadrículas y anotan el lugar exacto de cada hallazgo.",
+      "El suelo se acumula en capas y las más profundas suelen ser más antiguas: es la estratigrafía.",
+      "Hallazgos sencillos como cerámica rota, semillas y huesos revelan a menudo más que un tesoro."
+     ],
+     "q": "Si pudieras participar en una excavación en cualquier lugar del mundo, ¿adónde irías?",
+     "c": "Mira hoy tu cubo de basura e imagina qué podría aprender un arqueólogo sobre tu vida a partir de él."
+    },
+    "fr": {
+     "t": "Les bases de l'archéologie",
+     "g": "Voir comment les archéologues fouillent avec soin et lisent les couches du sol.",
+     "p": [
+      "Les archéologues fouillent lentement par petits carrés et notent l'emplacement exact de chaque objet.",
+      "Le sol se dépose en couches, les plus profondes étant souvent les plus anciennes : c'est la stratigraphie.",
+      "Des trouvailles banales comme des tessons, des graines et des os en disent souvent plus qu'un trésor."
+     ],
+     "q": "Si tu pouvais participer à une fouille n'importe où dans le monde, où irais-tu ?",
+     "c": "Regarde ta poubelle aujourd'hui et imagine ce qu'un archéologue pourrait en déduire sur ta vie."
+    },
+    "it": {
+     "t": "Le basi dell'archeologia",
+     "g": "Scopri come gli archeologi scavano con cura e leggono gli strati del terreno.",
+     "p": [
+      "Gli archeologi scavano lentamente in piccoli quadrati e registrano il punto esatto di ogni reperto.",
+      "Il terreno si accumula a strati e quelli più profondi di solito sono più antichi: è la stratigrafia.",
+      "Reperti comuni come cocci, semi e ossa spesso rivelano più di un tesoro."
+     ],
+     "q": "Se potessi partecipare a uno scavo archeologico ovunque nel mondo, dove andresti?",
+     "c": "Guarda oggi il tuo cestino e immagina che cosa potrebbe capire un archeologo della tua vita."
+    },
+    "pt": {
+     "t": "Noções de arqueologia",
+     "g": "Ver como os arqueólogos escavam com cuidado e leem as camadas do solo.",
+     "p": [
+      "Os arqueólogos escavam devagar em pequenos quadrados e registam o local exato de cada achado.",
+      "O solo acumula-se em camadas e as mais fundas costumam ser mais antigas: é a estratigrafia.",
+      "Achados simples como cacos, sementes e ossos revelam muitas vezes mais do que um tesouro."
+     ],
+     "q": "Se pudesses participar numa escavação em qualquer parte do mundo, para onde irias?",
+     "c": "Olha hoje para o teu caixote do lixo e imagina o que um arqueólogo saberia da tua vida a partir dele."
+    },
+    "pt_BR": {
+     "t": "Noções de arqueologia",
+     "g": "Ver como os arqueólogos escavam com cuidado e leem as camadas do solo.",
+     "p": [
+      "Os arqueólogos escavam devagar em pequenos quadrados e registram o local exato de cada achado.",
+      "O solo se acumula em camadas e as mais fundas costumam ser mais antigas: é a estratigrafia.",
+      "Achados simples como cacos, sementes e ossos muitas vezes revelam mais do que um tesouro."
+     ],
+     "q": "Se você pudesse participar de uma escavação em qualquer lugar do mundo, para onde iria?",
+     "c": "Olhe hoje para a sua lixeira e imagine o que um arqueólogo descobriria sobre sua vida a partir dela."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dating the past",
+     "g": "Learn how we label years and how science measures the age of ancient things.",
+     "p": [
+      "BC and AD count years before and after a traditional starting point; BCE and CE use the same numbers.",
+      "Radiocarbon dating measures slowly fading carbon in once-living things, up to about 50,000 years old.",
+      "Tree rings grow one per year, so matching ring patterns can date old wooden beams very precisely."
+     ],
+     "q": "Which do you find more amazing: reading tree rings or measuring carbon in ancient seeds?",
+     "c": "Count the years between 500 BCE and 500 CE in your head. Tip: there is no year zero!"
+    },
+    "de": {
+     "t": "Die Vergangenheit datieren",
+     "g": "Lerne, wie wir Jahre benennen und wie die Wissenschaft das Alter alter Dinge misst.",
+     "p": [
+      "v. Chr. und n. Chr. zählen Jahre vor und nach einem traditionellen Startpunkt; v. u. Z. nutzt dieselben Zahlen.",
+      "Die Radiokarbonmethode misst zerfallenden Kohlenstoff in einst lebendem Material, bis etwa 50.000 Jahre.",
+      "Bäume bilden einen Ring pro Jahr, daher lassen sich alte Holzbalken über Ringmuster genau datieren."
+     ],
+     "q": "Was findest du erstaunlicher: Baumringe lesen oder Kohlenstoff in uralten Samen messen?",
+     "c": "Rechne im Kopf die Jahre zwischen 500 v. Chr. und 500 n. Chr. Tipp: Es gibt kein Jahr null!"
+    },
+    "es": {
+     "t": "Fechar el pasado",
+     "g": "Aprende cómo nombramos los años y cómo la ciencia mide la edad de lo antiguo.",
+     "p": [
+      "a. C. y d. C. cuentan los años antes y después de un punto de partida tradicional; a. e. c. usa los mismos números.",
+      "El carbono 14 mide el carbono que se desintegra en restos de seres vivos, hasta unos 50.000 años.",
+      "Los árboles forman un anillo al año, así que comparar anillos permite fechar vigas antiguas con precisión."
+     ],
+     "q": "¿Qué te parece más asombroso: leer anillos de árboles o medir carbono en semillas antiguas?",
+     "c": "Calcula de cabeza los años entre el 500 a. C. y el 500 d. C. Pista: ¡no existe el año cero!"
+    },
+    "fr": {
+     "t": "Dater le passé",
+     "g": "Apprendre comment on nomme les années et comment la science mesure l'âge des choses anciennes.",
+     "p": [
+      "Av. J.-C. et apr. J.-C. comptent les années avant et après un point de départ traditionnel ; AEC et EC aussi.",
+      "Le carbone 14 mesure le carbone qui disparaît lentement des restes vivants, jusqu'à environ 50 000 ans.",
+      "Un arbre forme un cerne par an : comparer les cernes permet de dater très précisément de vieilles poutres."
+     ],
+     "q": "Qu'est-ce qui t'impressionne le plus : lire les cernes des arbres ou mesurer le carbone de graines anciennes ?",
+     "c": "Calcule de tête les années entre 500 av. J.-C. et 500 apr. J.-C. Indice : il n'y a pas d'année zéro !"
+    },
+    "it": {
+     "t": "Datare il passato",
+     "g": "Impara come indichiamo gli anni e come la scienza misura l'età delle cose antiche.",
+     "p": [
+      "a.C. e d.C. contano gli anni prima e dopo un punto di partenza tradizionale; a.e.v. ed e.v. usano gli stessi numeri.",
+      "Il carbonio 14 misura il carbonio che decade nei resti di esseri viventi, fino a circa 50.000 anni.",
+      "Gli alberi formano un anello all'anno, quindi confrontare gli anelli permette di datare travi antiche."
+     ],
+     "q": "Che cosa trovi più sorprendente: leggere gli anelli degli alberi o misurare il carbonio in semi antichi?",
+     "c": "Calcola a mente gli anni tra il 500 a.C. e il 500 d.C. Suggerimento: l'anno zero non esiste!"
+    },
+    "pt": {
+     "t": "Datar o passado",
+     "g": "Aprender como designamos os anos e como a ciência mede a idade das coisas antigas.",
+     "p": [
+      "a.C. e d.C. contam os anos antes e depois de um ponto de partida tradicional; AEC e EC usam os mesmos números.",
+      "O carbono 14 mede o carbono que se desintegra em restos de seres vivos, até cerca de 50 000 anos.",
+      "As árvores formam um anel por ano, por isso comparar anéis permite datar vigas antigas com precisão."
+     ],
+     "q": "O que achas mais incrível: ler anéis de árvores ou medir o carbono em sementes antigas?",
+     "c": "Calcula de cabeça os anos entre 500 a.C. e 500 d.C. Dica: não existe ano zero!"
+    },
+    "pt_BR": {
+     "t": "Datando o passado",
+     "g": "Aprender como nomeamos os anos e como a ciência mede a idade das coisas antigas.",
+     "p": [
+      "a.C. e d.C. contam os anos antes e depois de um ponto de partida tradicional; AEC e EC usam os mesmos números.",
+      "O carbono 14 mede o carbono que se desintegra em restos de seres vivos, até cerca de 50 mil anos.",
+      "As árvores formam um anel por ano, então comparar anéis permite datar vigas antigas com precisão."
+     ],
+     "q": "O que você acha mais incrível: ler anéis de árvores ou medir o carbono em sementes antigas?",
+     "c": "Calcule de cabeça os anos entre 500 a.C. e 500 d.C. Dica: não existe ano zero!"
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timelines and eras",
+     "g": "Get to know the big periods of history and why we split time into eras.",
+     "p": [
+      "Prehistory is the long time before writing; ancient history starts with the first written records.",
+      "Then come the medieval, early modern and modern periods, roughly ending around 1500, 1800 and today.",
+      "Eras are tools made by historians: their borders are fuzzy and differ from region to region."
+     ],
+     "q": "If you could name the era we live in now, what name would you give it?",
+     "c": "Draw a quick timeline of your own life and split it into three or four eras with fun names."
+    },
+    "de": {
+     "t": "Zeitleisten und Epochen",
+     "g": "Lerne die großen Epochen kennen und warum wir die Zeit überhaupt einteilen.",
+     "p": [
+      "Die Vorgeschichte ist die lange Zeit vor der Schrift; das Altertum beginnt mit den ersten Schriftquellen.",
+      "Danach folgen Mittelalter, Frühe Neuzeit und Moderne, grob mit Grenzen um 1500, um 1800 und bis heute.",
+      "Epochen sind Werkzeuge der Historiker: Ihre Grenzen sind unscharf und je nach Region verschieden."
+     ],
+     "q": "Wenn du unserer heutigen Zeit einen Epochennamen geben dürftest, welcher wäre es?",
+     "c": "Zeichne eine kurze Zeitleiste deines Lebens und teile sie in drei oder vier Epochen mit lustigen Namen."
+    },
+    "es": {
+     "t": "Líneas de tiempo y épocas",
+     "g": "Conoce los grandes periodos de la historia y por qué dividimos el tiempo en épocas.",
+     "p": [
+      "La prehistoria es el largo periodo anterior a la escritura; la Edad Antigua empieza con los primeros textos.",
+      "Luego vienen la Edad Media, la Moderna y la Contemporánea, con límites aproximados hacia 1500 y 1800.",
+      "Las épocas son herramientas de los historiadores: sus límites son difusos y cambian según la región."
+     ],
+     "q": "Si pudieras ponerle nombre a la época en que vivimos, ¿cuál le pondrías?",
+     "c": "Dibuja una línea de tiempo de tu vida y divídela en tres o cuatro épocas con nombres divertidos."
+    },
+    "fr": {
+     "t": "Frises et périodes",
+     "g": "Connaître les grandes périodes de l'histoire et comprendre pourquoi on découpe le temps.",
+     "p": [
+      "La préhistoire est la longue période avant l'écriture ; l'Antiquité commence avec les premiers écrits.",
+      "Viennent ensuite le Moyen Âge, les Temps modernes et l'époque contemporaine, avec des seuils vers 1500 et 1800.",
+      "Les périodes sont des outils d'historiens : leurs limites sont floues et varient selon les régions."
+     ],
+     "q": "Si tu devais donner un nom à l'époque dans laquelle nous vivons, lequel choisirais-tu ?",
+     "c": "Dessine une frise de ta propre vie et découpe-la en trois ou quatre périodes aux noms amusants."
+    },
+    "it": {
+     "t": "Linee del tempo ed epoche",
+     "g": "Conosci i grandi periodi della storia e perché dividiamo il tempo in epoche.",
+     "p": [
+      "La preistoria è il lungo periodo prima della scrittura; la storia antica inizia con i primi testi scritti.",
+      "Poi vengono Medioevo, età moderna ed età contemporanea, con confini indicativi intorno al 1500 e al 1800.",
+      "Le epoche sono strumenti degli storici: i loro confini sono sfumati e cambiano da regione a regione."
+     ],
+     "q": "Se potessi dare un nome all'epoca in cui viviamo, quale sceglieresti?",
+     "c": "Disegna una linea del tempo della tua vita e dividila in tre o quattro epoche con nomi divertenti."
+    },
+    "pt": {
+     "t": "Cronologias e épocas",
+     "g": "Conhecer os grandes períodos da história e perceber porque dividimos o tempo em épocas.",
+     "p": [
+      "A pré-história é o longo período antes da escrita; a Antiguidade começa com os primeiros registos escritos.",
+      "Seguem-se a Idade Média, a Idade Moderna e a Contemporânea, com limites aproximados em 1500 e 1800.",
+      "As épocas são ferramentas dos historiadores: os seus limites são difusos e variam de região para região."
+     ],
+     "q": "Se pudesses dar um nome à época em que vivemos, que nome lhe darias?",
+     "c": "Desenha uma cronologia da tua vida e divide-a em três ou quatro épocas com nomes divertidos."
+    },
+    "pt_BR": {
+     "t": "Linhas do tempo e eras",
+     "g": "Conhecer os grandes períodos da história e entender por que dividimos o tempo em eras.",
+     "p": [
+      "A pré-história é o longo período antes da escrita; a Antiguidade começa com os primeiros registros escritos.",
+      "Depois vêm a Idade Média, a Moderna e a Contemporânea, com limites aproximados em 1500 e 1800.",
+      "As eras são ferramentas dos historiadores: seus limites são imprecisos e variam de região para região."
+     ],
+     "q": "Se você pudesse dar um nome à era em que vivemos, qual seria?",
+     "c": "Desenhe uma linha do tempo da sua vida e divida-a em três ou quatro eras com nomes divertidos."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Maps tell stories",
+     "g": "Discover how old maps reveal what people knew, guessed and believed about the world.",
+     "p": [
+      "Old maps show the known world of their makers, with blank areas or guesses for faraway places.",
+      "Many medieval European maps put a holy city at the centre, showing what mattered most to their makers.",
+      "Over centuries, explorers' reports and better tools made maps more accurate, coast by coast."
+     ],
+     "q": "If you drew a map of the world only from memory, which places would end up too big or too small?",
+     "c": "Draw your neighbourhood from memory, then compare it with a real map and spot what you got wrong."
+    },
+    "de": {
+     "t": "Karten erzählen Geschichten",
+     "g": "Entdecke, wie alte Karten zeigen, was Menschen über die Welt wussten, vermuteten und glaubten.",
+     "p": [
+      "Alte Karten zeigen die bekannte Welt ihrer Zeichner, mit leeren Flächen oder Vermutungen für ferne Orte.",
+      "Viele mittelalterliche Karten Europas setzten eine heilige Stadt ins Zentrum, was ihren Machern wichtig war.",
+      "Über Jahrhunderte machten Berichte von Entdeckern und bessere Instrumente Karten immer genauer."
+     ],
+     "q": "Wenn du die Welt aus dem Gedächtnis zeichnest, welche Orte würden zu groß oder zu klein?",
+     "c": "Zeichne dein Viertel aus dem Gedächtnis, vergleiche es mit einer echten Karte und finde die Fehler."
+    },
+    "es": {
+     "t": "Los mapas cuentan historias",
+     "g": "Descubre cómo los mapas antiguos muestran lo que la gente sabía, suponía y creía del mundo.",
+     "p": [
+      "Los mapas antiguos muestran el mundo conocido por sus autores, con zonas en blanco o suposiciones.",
+      "Muchos mapas medievales europeos ponían una ciudad santa en el centro, lo que más importaba a sus autores.",
+      "Con los siglos, los relatos de exploradores y mejores instrumentos hicieron mapas cada vez más precisos."
+     ],
+     "q": "Si dibujaras el mapa del mundo de memoria, ¿qué lugares te saldrían demasiado grandes o pequeños?",
+     "c": "Dibuja tu barrio de memoria, compáralo con un mapa real y descubre en qué te equivocaste."
+    },
+    "fr": {
+     "t": "Les cartes racontent",
+     "g": "Découvrir comment les cartes anciennes montrent ce que l'on savait, supposait et croyait du monde.",
+     "p": [
+      "Les cartes anciennes montrent le monde connu de leurs auteurs, avec des blancs ou des suppositions.",
+      "Beaucoup de cartes médiévales d'Europe plaçaient une ville sainte au centre, signe de ce qui comptait pour eux.",
+      "Au fil des siècles, les récits d'explorateurs et de meilleurs instruments ont rendu les cartes plus précises."
+     ],
+     "q": "Si tu dessinais le monde de mémoire, quels lieux seraient trop grands ou trop petits ?",
+     "c": "Dessine ton quartier de mémoire, compare-le à une vraie carte et repère tes erreurs."
+    },
+    "it": {
+     "t": "Le mappe raccontano storie",
+     "g": "Scopri come le mappe antiche mostrano ciò che le persone sapevano, immaginavano e credevano.",
+     "p": [
+      "Le mappe antiche mostrano il mondo conosciuto dai loro autori, con spazi vuoti o ipotesi sui luoghi lontani.",
+      "Molte mappe medievali europee mettevano al centro una città santa, ciò che contava di più per gli autori.",
+      "Nei secoli, i racconti degli esploratori e strumenti migliori resero le mappe sempre più precise."
+     ],
+     "q": "Se disegnassi il mondo a memoria, quali luoghi verrebbero troppo grandi o troppo piccoli?",
+     "c": "Disegna il tuo quartiere a memoria, confrontalo con una mappa vera e trova gli errori."
+    },
+    "pt": {
+     "t": "Os mapas contam histórias",
+     "g": "Descobrir como os mapas antigos mostram o que as pessoas sabiam, supunham e acreditavam.",
+     "p": [
+      "Os mapas antigos mostram o mundo conhecido pelos seus autores, com zonas em branco ou suposições.",
+      "Muitos mapas medievais europeus punham uma cidade santa no centro, o que mais importava aos seus autores.",
+      "Ao longo dos séculos, relatos de exploradores e melhores instrumentos tornaram os mapas mais precisos."
+     ],
+     "q": "Se desenhasses o mapa do mundo de memória, que lugares ficariam grandes ou pequenos demais?",
+     "c": "Desenha o teu bairro de memória, compara-o com um mapa real e descobre onde te enganaste."
+    },
+    "pt_BR": {
+     "t": "Mapas contam histórias",
+     "g": "Descobrir como mapas antigos mostram o que as pessoas sabiam, supunham e acreditavam.",
+     "p": [
+      "Mapas antigos mostram o mundo conhecido por seus autores, com áreas em branco ou suposições.",
+      "Muitos mapas medievais europeus colocavam uma cidade santa no centro, o que mais importava aos autores.",
+      "Ao longo dos séculos, relatos de exploradores e instrumentos melhores deixaram os mapas mais precisos."
+     ],
+     "q": "Se você desenhasse o mapa do mundo de memória, quais lugares ficariam grandes ou pequenos demais?",
+     "c": "Desenhe seu bairro de memória, compare com um mapa real e descubra onde você errou."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Myth, legend and fact",
+     "g": "Learn to tell apart stories handed down over generations and what evidence supports.",
+     "p": [
+      "A myth explains the world through gods or heroes; a legend is a story about the past, often based on real places.",
+      "Some legends hide real history: Troy was long seen as a story until excavations found a real ancient city.",
+      "Historians compare legends with documents and archaeology to see which parts hold up."
+     ],
+     "q": "Which legend from your country or region do you love, and could any part of it be true?",
+     "c": "Pick a famous legend and write down one detail that could be checked with evidence."
+    },
+    "de": {
+     "t": "Mythos, Legende und Fakt",
+     "g": "Lerne, überlieferte Geschichten von dem zu unterscheiden, was Belege stützen.",
+     "p": [
+      "Ein Mythos erklärt die Welt mit Göttern oder Helden; eine Legende erzählt von der Vergangenheit, oft an echten Orten.",
+      "Manche Legenden bergen echte Geschichte: Troja galt lange als Sage, bis Grabungen eine antike Stadt fanden.",
+      "Historiker vergleichen Legenden mit Schriften und Archäologie, um zu sehen, was davon standhält."
+     ],
+     "q": "Welche Legende aus deinem Land oder deiner Region magst du, und könnte etwas davon wahr sein?",
+     "c": "Wähle eine bekannte Legende und notiere ein Detail, das man mit Belegen überprüfen könnte."
+    },
+    "es": {
+     "t": "Mito, leyenda y hecho",
+     "g": "Aprende a distinguir las historias transmitidas por generaciones de lo que apoyan las pruebas.",
+     "p": [
+      "Un mito explica el mundo con dioses o héroes; una leyenda cuenta el pasado, a menudo en lugares reales.",
+      "Algunas leyendas esconden historia real: Troya se vio como un cuento hasta que se excavó una ciudad antigua.",
+      "Los historiadores comparan las leyendas con documentos y arqueología para ver qué partes se sostienen."
+     ],
+     "q": "¿Qué leyenda de tu país o región te encanta, y podría ser verdad alguna parte?",
+     "c": "Elige una leyenda famosa y apunta un detalle que podría comprobarse con pruebas."
+    },
+    "fr": {
+     "t": "Mythe, légende et fait",
+     "g": "Apprendre à distinguer les récits transmis de génération en génération de ce que prouvent les sources.",
+     "p": [
+      "Un mythe explique le monde par des dieux ou des héros ; une légende raconte le passé, souvent en des lieux réels.",
+      "Certaines légendes cachent du vrai : Troie passait pour un conte jusqu'aux fouilles d'une cité antique.",
+      "Les historiens confrontent les légendes aux documents et à l'archéologie pour voir ce qui tient."
+     ],
+     "q": "Quelle légende de ton pays ou de ta région aimes-tu, et une partie pourrait-elle être vraie ?",
+     "c": "Choisis une légende célèbre et note un détail qui pourrait être vérifié par des preuves."
+    },
+    "it": {
+     "t": "Mito, leggenda e fatto",
+     "g": "Impara a distinguere le storie tramandate per generazioni da ciò che le prove confermano.",
+     "p": [
+      "Un mito spiega il mondo con dèi o eroi; una leggenda racconta il passato, spesso in luoghi reali.",
+      "Alcune leggende nascondono storia vera: Troia sembrava solo un racconto finché gli scavi trovarono una città antica.",
+      "Gli storici confrontano le leggende con documenti e archeologia per capire quali parti reggono."
+     ],
+     "q": "Quale leggenda del tuo paese o della tua regione ami, e potrebbe esserci qualcosa di vero?",
+     "c": "Scegli una leggenda famosa e annota un dettaglio che si potrebbe verificare con delle prove."
+    },
+    "pt": {
+     "t": "Mito, lenda e facto",
+     "g": "Aprender a distinguir as histórias passadas de geração em geração do que as provas confirmam.",
+     "p": [
+      "Um mito explica o mundo com deuses ou heróis; uma lenda conta o passado, muitas vezes em lugares reais.",
+      "Algumas lendas escondem história real: Troia foi vista como conto até escavações revelarem uma cidade antiga.",
+      "Os historiadores comparam as lendas com documentos e arqueologia para ver que partes se aguentam."
+     ],
+     "q": "Que lenda do teu país ou região adoras, e poderá alguma parte ser verdade?",
+     "c": "Escolhe uma lenda famosa e aponta um pormenor que poderia ser verificado com provas."
+    },
+    "pt_BR": {
+     "t": "Mito, lenda e fato",
+     "g": "Aprender a separar as histórias passadas de geração em geração do que as evidências confirmam.",
+     "p": [
+      "Um mito explica o mundo com deuses ou heróis; uma lenda conta o passado, muitas vezes em lugares reais.",
+      "Algumas lendas escondem história real: Troia foi vista como conto até escavações revelarem uma cidade antiga.",
+      "Os historiadores comparam lendas com documentos e arqueologia para ver quais partes se sustentam."
+     ],
+     "q": "Qual lenda do seu país ou região você adora, e alguma parte dela poderia ser verdade?",
+     "c": "Escolha uma lenda famosa e anote um detalhe que poderia ser verificado com evidências."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "History is everywhere",
+     "g": "Notice the clues to the past hidden in streets, buildings and everyday objects.",
+     "p": [
+      "Street names often remember old trades, rivers, gates or people who once lived there.",
+      "Buildings show their age through style, materials and dates carved above doors.",
+      "Family objects like recipes, tools or photos carry stories that no book has written down."
+     ],
+     "q": "What is the oldest building or object you see regularly, and what do you know about it?",
+     "c": "On your next walk, find one street name or carved date and look up the story behind it."
+    },
+    "de": {
+     "t": "Geschichte ist überall",
+     "g": "Entdecke die Spuren der Vergangenheit in Straßen, Gebäuden und Alltagsgegenständen.",
+     "p": [
+      "Straßennamen erinnern oft an alte Handwerke, Flüsse, Stadttore oder Menschen, die dort lebten.",
+      "Gebäude verraten ihr Alter durch Stil, Baumaterial und Jahreszahlen über der Tür.",
+      "Familienstücke wie Rezepte, Werkzeuge oder Fotos tragen Geschichten, die in keinem Buch stehen."
+     ],
+     "q": "Was ist das älteste Gebäude oder Objekt, das du regelmäßig siehst, und was weißt du darüber?",
+     "c": "Such beim nächsten Spaziergang einen Straßennamen oder eine Jahreszahl und finde die Geschichte dahinter."
+    },
+    "es": {
+     "t": "La historia está en todas partes",
+     "g": "Descubre las pistas del pasado escondidas en calles, edificios y objetos cotidianos.",
+     "p": [
+      "Los nombres de las calles suelen recordar oficios, ríos, puertas antiguas o personas que vivieron allí.",
+      "Los edificios muestran su edad por su estilo, sus materiales y las fechas grabadas sobre las puertas.",
+      "Objetos familiares como recetas, herramientas o fotos guardan historias que ningún libro ha escrito."
+     ],
+     "q": "¿Cuál es el edificio u objeto más antiguo que ves a menudo, y qué sabes de él?",
+     "c": "En tu próximo paseo, busca un nombre de calle o una fecha grabada y averigua su historia."
+    },
+    "fr": {
+     "t": "L'histoire est partout",
+     "g": "Repérer les indices du passé cachés dans les rues, les bâtiments et les objets du quotidien.",
+     "p": [
+      "Les noms de rues rappellent souvent d'anciens métiers, des rivières, des portes ou des habitants.",
+      "Les bâtiments révèlent leur âge par leur style, leurs matériaux et les dates gravées au-dessus des portes.",
+      "Les objets de famille, recettes, outils ou photos, portent des histoires qu'aucun livre n'a écrites."
+     ],
+     "q": "Quel est le bâtiment ou l'objet le plus ancien que tu vois souvent, et que sais-tu de lui ?",
+     "c": "Lors de ta prochaine balade, trouve un nom de rue ou une date gravée et cherche son histoire."
+    },
+    "it": {
+     "t": "La storia è ovunque",
+     "g": "Nota gli indizi del passato nascosti in strade, edifici e oggetti di tutti i giorni.",
+     "p": [
+      "I nomi delle vie ricordano spesso antichi mestieri, fiumi, porte della città o persone che ci vivevano.",
+      "Gli edifici rivelano la loro età con lo stile, i materiali e le date incise sopra le porte.",
+      "Gli oggetti di famiglia come ricette, attrezzi o foto custodiscono storie che nessun libro ha scritto."
+     ],
+     "q": "Qual è l'edificio o l'oggetto più antico che vedi spesso, e che cosa sai di lui?",
+     "c": "Nella tua prossima passeggiata trova il nome di una via o una data incisa e cerca la sua storia."
+    },
+    "pt": {
+     "t": "A história está em todo o lado",
+     "g": "Reparar nas pistas do passado escondidas em ruas, edifícios e objetos do dia a dia.",
+     "p": [
+      "Os nomes das ruas lembram muitas vezes antigos ofícios, rios, portas da cidade ou pessoas que lá viveram.",
+      "Os edifícios mostram a sua idade pelo estilo, pelos materiais e pelas datas gravadas sobre as portas.",
+      "Objetos de família como receitas, ferramentas ou fotografias guardam histórias que nenhum livro escreveu."
+     ],
+     "q": "Qual é o edifício ou objeto mais antigo que vês com frequência, e o que sabes sobre ele?",
+     "c": "No teu próximo passeio, encontra um nome de rua ou uma data gravada e descobre a sua história."
+    },
+    "pt_BR": {
+     "t": "A história está em toda parte",
+     "g": "Perceber as pistas do passado escondidas em ruas, prédios e objetos do dia a dia.",
+     "p": [
+      "Os nomes das ruas costumam lembrar antigos ofícios, rios, portões ou pessoas que moraram ali.",
+      "As construções mostram a idade pelo estilo, pelos materiais e pelas datas gravadas sobre as portas.",
+      "Objetos de família como receitas, ferramentas ou fotos guardam histórias que nenhum livro escreveu."
+     ],
+     "q": "Qual é a construção ou objeto mais antigo que você vê com frequência, e o que sabe sobre ele?",
+     "c": "No seu próximo passeio, encontre um nome de rua ou uma data gravada e descubra a história por trás."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your family's history",
+     "g": "Learn how to collect stories from older relatives and keep your family's memory alive.",
+     "p": [
+      "Older relatives remember daily life, jobs, games and places that have changed a lot since.",
+      "Open questions work best: What did you eat as a child? What was your first job like?",
+      "Write stories down or record them, with names, places and rough dates, so they are not lost."
+     ],
+     "q": "Which older person in your life tells the best stories about the past?",
+     "c": "Ask a relative or older friend one question about their childhood today and note their answer."
+    },
+    "de": {
+     "t": "Deine Familiengeschichte",
+     "g": "Lerne, Geschichten älterer Verwandter zu sammeln und die Erinnerung deiner Familie zu bewahren.",
+     "p": [
+      "Ältere Verwandte erinnern sich an Alltag, Berufe, Spiele und Orte, die sich stark verändert haben.",
+      "Offene Fragen wirken am besten: Was hast du als Kind gegessen? Wie war deine erste Arbeit?",
+      "Schreib Geschichten auf oder nimm sie auf, mit Namen, Orten und ungefähren Daten, damit nichts verloren geht."
+     ],
+     "q": "Welcher ältere Mensch in deinem Leben erzählt die besten Geschichten von früher?",
+     "c": "Stell heute einem Verwandten oder älteren Freund eine Frage zu seiner Kindheit und notiere die Antwort."
+    },
+    "es": {
+     "t": "La historia de tu familia",
+     "g": "Aprende a recoger historias de tus mayores y a mantener viva la memoria familiar.",
+     "p": [
+      "Los familiares mayores recuerdan la vida diaria, oficios, juegos y lugares que han cambiado mucho.",
+      "Las preguntas abiertas funcionan mejor: ¿Qué comías de niño? ¿Cómo fue tu primer trabajo?",
+      "Escribe o graba las historias con nombres, lugares y fechas aproximadas para que no se pierdan."
+     ],
+     "q": "¿Qué persona mayor de tu vida cuenta las mejores historias del pasado?",
+     "c": "Hazle hoy a un familiar o amigo mayor una pregunta sobre su infancia y apunta su respuesta."
+    },
+    "fr": {
+     "t": "L'histoire de ta famille",
+     "g": "Apprendre à recueillir les souvenirs de tes aînés et à garder vivante la mémoire familiale.",
+     "p": [
+      "Les aînés se souviennent de la vie quotidienne, des métiers, des jeux et de lieux qui ont beaucoup changé.",
+      "Les questions ouvertes marchent le mieux : que mangeais-tu enfant ? Comment était ton premier travail ?",
+      "Écris ou enregistre les récits avec des noms, des lieux et des dates approximatives pour ne rien perdre."
+     ],
+     "q": "Quelle personne âgée de ton entourage raconte les plus belles histoires du passé ?",
+     "c": "Pose aujourd'hui à un proche plus âgé une question sur son enfance et note sa réponse."
+    },
+    "it": {
+     "t": "La storia della tua famiglia",
+     "g": "Impara a raccogliere i racconti dei parenti più anziani e a custodire la memoria di famiglia.",
+     "p": [
+      "I parenti anziani ricordano la vita quotidiana, i mestieri, i giochi e luoghi che sono molto cambiati.",
+      "Le domande aperte funzionano meglio: che cosa mangiavi da bambino? Com'era il tuo primo lavoro?",
+      "Scrivi o registra i racconti con nomi, luoghi e date approssimative, così non andranno persi."
+     ],
+     "q": "Quale persona anziana nella tua vita racconta le storie più belle sul passato?",
+     "c": "Fai oggi a un parente o a un amico più grande una domanda sulla sua infanzia e annota la risposta."
+    },
+    "pt": {
+     "t": "A história da tua família",
+     "g": "Aprender a recolher histórias dos familiares mais velhos e manter viva a memória da família.",
+     "p": [
+      "Os familiares mais velhos lembram-se do dia a dia, de ofícios, jogos e lugares que mudaram muito.",
+      "As perguntas abertas funcionam melhor: o que comias em criança? Como foi o teu primeiro emprego?",
+      "Escreve ou grava as histórias com nomes, lugares e datas aproximadas, para que não se percam."
+     ],
+     "q": "Que pessoa mais velha na tua vida conta as melhores histórias do passado?",
+     "c": "Faz hoje a um familiar ou amigo mais velho uma pergunta sobre a infância dele e regista a resposta."
+    },
+    "pt_BR": {
+     "t": "A história da sua família",
+     "g": "Aprender a coletar histórias dos parentes mais velhos e manter viva a memória da família.",
+     "p": [
+      "Os parentes mais velhos lembram do dia a dia, de profissões, brincadeiras e lugares que mudaram muito.",
+      "Perguntas abertas funcionam melhor: o que você comia na infância? Como foi seu primeiro emprego?",
+      "Escreva ou grave as histórias com nomes, lugares e datas aproximadas, para que não se percam."
+     ],
+     "q": "Qual pessoa mais velha na sua vida conta as melhores histórias do passado?",
+     "c": "Faça hoje a um parente ou amigo mais velho uma pergunta sobre a infância dele e anote a resposta."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Museums as time machines",
+     "g": "Find out how to visit a museum in a relaxed way and really enjoy what you see.",
+     "p": [
+      "You do not need to see everything: choose one or two rooms and take your time.",
+      "Read the labels: they tell you where an object was found, how old it is and what it was for.",
+      "Imagine the person who made or used the object: their hands, their home, their day."
+     ],
+     "q": "What is the most memorable object you have ever seen in a museum?",
+     "c": "Visit a museum website, pick one object and imagine a day in the life of the person who used it."
+    },
+    "de": {
+     "t": "Museen als Zeitmaschinen",
+     "g": "Erfahre, wie du ein Museum entspannt besuchst und das Gesehene wirklich genießt.",
+     "p": [
+      "Du musst nicht alles sehen: Wähl ein oder zwei Säle und lass dir Zeit.",
+      "Lies die Schilder: Sie verraten, wo ein Objekt gefunden wurde, wie alt es ist und wozu es diente.",
+      "Stell dir den Menschen vor, der das Objekt gemacht oder benutzt hat: seine Hände, sein Zuhause, seinen Tag."
+     ],
+     "q": "Welches Museumsobjekt ist dir am stärksten im Gedächtnis geblieben?",
+     "c": "Besuch die Website eines Museums, wähl ein Objekt und stell dir einen Tag im Leben seines Besitzers vor."
+    },
+    "es": {
+     "t": "Museos, máquinas del tiempo",
+     "g": "Descubre cómo visitar un museo con calma y disfrutar de verdad lo que ves.",
+     "p": [
+      "No hace falta verlo todo: elige una o dos salas y tómate tu tiempo.",
+      "Lee las cartelas: dicen dónde se encontró el objeto, qué antigüedad tiene y para qué servía.",
+      "Imagina a la persona que hizo o usó el objeto: sus manos, su casa, su día a día."
+     ],
+     "q": "¿Cuál es el objeto más memorable que has visto en un museo?",
+     "c": "Entra en la web de un museo, elige un objeto e imagina un día en la vida de quien lo usó."
+    },
+    "fr": {
+     "t": "Le musée, machine à remonter le temps",
+     "g": "Savoir visiter un musée sans se presser et vraiment profiter de ce que l'on voit.",
+     "p": [
+      "Inutile de tout voir : choisis une ou deux salles et prends ton temps.",
+      "Lis les cartels : ils disent où l'objet a été trouvé, son âge et à quoi il servait.",
+      "Imagine la personne qui a fabriqué ou utilisé l'objet : ses mains, sa maison, sa journée."
+     ],
+     "q": "Quel est l'objet le plus marquant que tu aies vu dans un musée ?",
+     "c": "Va sur le site d'un musée, choisis un objet et imagine une journée de la personne qui l'utilisait."
+    },
+    "it": {
+     "t": "Musei, macchine del tempo",
+     "g": "Scopri come visitare un museo con calma e goderti davvero ciò che vedi.",
+     "p": [
+      "Non serve vedere tutto: scegli una o due sale e prenditi il tuo tempo.",
+      "Leggi le didascalie: dicono dove è stato trovato l'oggetto, quanto è antico e a che cosa serviva.",
+      "Immagina la persona che ha creato o usato l'oggetto: le sue mani, la sua casa, la sua giornata."
+     ],
+     "q": "Qual è l'oggetto più memorabile che hai visto in un museo?",
+     "c": "Visita il sito di un museo, scegli un oggetto e immagina una giornata di chi lo usava."
+    },
+    "pt": {
+     "t": "Museus, máquinas do tempo",
+     "g": "Descobrir como visitar um museu com calma e aproveitar mesmo o que se vê.",
+     "p": [
+      "Não precisas de ver tudo: escolhe uma ou duas salas e vai com calma.",
+      "Lê as legendas: dizem onde o objeto foi encontrado, que idade tem e para que servia.",
+      "Imagina a pessoa que fez ou usou o objeto: as mãos, a casa, o dia a dia dela."
+     ],
+     "q": "Qual é o objeto mais marcante que já viste num museu?",
+     "c": "Visita o site de um museu, escolhe um objeto e imagina um dia na vida de quem o usava."
+    },
+    "pt_BR": {
+     "t": "Museus, máquinas do tempo",
+     "g": "Descobrir como visitar um museu com calma e aproveitar de verdade o que você vê.",
+     "p": [
+      "Você não precisa ver tudo: escolha uma ou duas salas e vá com calma.",
+      "Leia as legendas: elas dizem onde o objeto foi encontrado, que idade tem e para que servia.",
+      "Imagine a pessoa que fez ou usou o objeto: as mãos, a casa, o dia a dia dela."
+     ],
+     "q": "Qual é o objeto mais marcante que você já viu em um museu?",
+     "c": "Visite o site de um museu, escolha um objeto e imagine um dia na vida de quem o usava."
+    }
+   }
+  }
+ ]
+}

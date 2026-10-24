@@ -1,0 +1,835 @@
+{
+ "topic": "baking",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple fruit tart",
+     "g": "Assemble a fruit tart with a blind-baked shortcrust case, a quick creamy filling and neatly arranged fruit.",
+     "p": [
+      "Start with a fully baked and cooled tart case, so the filling never makes the pastry soggy.",
+      "A quick filling can be whipped cream folded with mascarpone or thick yoghurt and a little sugar.",
+      "Arrange fruit in circles from the outside in, and brush with warmed jam for a shiny glaze."
+     ],
+     "q": "Which fruits would you choose for your tart to make it colourful?",
+     "c": "Fill a small baked tart case with a creamy filling and arrange at least two kinds of fruit in neat circles."
+    },
+    "de": {
+     "t": "Eine einfache Obsttarte",
+     "g": "Bau eine Obsttarte aus blindgebackenem Mürbeteig, einer schnellen Cremefüllung und hübsch gelegtem Obst.",
+     "p": [
+      "Beginne mit einem fertig gebackenen, abgekühlten Tarteboden, damit die Füllung den Teig nicht aufweicht.",
+      "Eine schnelle Füllung: geschlagene Sahne mit Mascarpone oder dickem Joghurt und etwas Zucker.",
+      "Das Obst in Kreisen von außen nach innen legen und mit erwärmter Marmelade für Glanz bestreichen."
+     ],
+     "q": "Welche Früchte würdest du für eine farbenfrohe Tarte wählen?",
+     "c": "Füll einen kleinen gebackenen Tarteboden mit Creme und leg mindestens zwei Obstsorten in ordentlichen Kreisen darauf."
+    },
+    "es": {
+     "t": "Una tarta de fruta sencilla",
+     "g": "Monta una tarta de fruta con base quebrada horneada en blanco, un relleno cremoso rápido y fruta bien colocada.",
+     "p": [
+      "Empieza con una base totalmente horneada y fría, así el relleno nunca humedece la masa.",
+      "Un relleno rápido puede ser nata montada con mascarpone o yogur espeso y un poco de azúcar.",
+      "Coloca la fruta en círculos de fuera hacia dentro y píntala con mermelada tibia para darle brillo."
+     ],
+     "q": "¿Qué frutas elegirías para que tu tarta quede colorida?",
+     "c": "Rellena una base pequeña horneada con crema y coloca al menos dos tipos de fruta en círculos ordenados."
+    },
+    "fr": {
+     "t": "Une tarte aux fruits simple",
+     "g": "Monte une tarte aux fruits avec un fond cuit à blanc, une garniture crémeuse rapide et des fruits bien disposés.",
+     "p": [
+      "Commence avec un fond entièrement cuit et refroidi, pour que la garniture ne détrempe jamais la pâte.",
+      "Une garniture rapide : crème fouettée mélangée à du mascarpone ou un yaourt épais et un peu de sucre.",
+      "Dispose les fruits en cercles de l'extérieur vers le centre et nappe de confiture tiédie pour les faire briller."
+     ],
+     "q": "Quels fruits choisirais-tu pour une tarte bien colorée ?",
+     "c": "Garnis un petit fond cuit de crème et dispose au moins deux sortes de fruits en cercles réguliers."
+    },
+    "it": {
+     "t": "Una semplice crostata di frutta",
+     "g": "Componi una crostata di frutta con un guscio cotto in bianco, una crema veloce e frutta disposta con ordine.",
+     "p": [
+      "Parti da un guscio cotto del tutto e freddo, così la crema non inumidisce mai la pasta.",
+      "Una crema veloce può essere panna montata con mascarpone o yogurt denso e un po' di zucchero.",
+      "Disponi la frutta a cerchi dall'esterno verso l'interno e spennellala con confettura tiepida per lucidarla."
+     ],
+     "q": "Quali frutti sceglieresti per rendere colorata la tua crostata?",
+     "c": "Riempi un piccolo guscio cotto con la crema e disponi almeno due tipi di frutta in cerchi ordinati."
+    },
+    "pt": {
+     "t": "Uma tarte de fruta simples",
+     "g": "Monta uma tarte de fruta com base quebrada cozida em branco, um recheio cremoso rápido e fruta bem arrumada.",
+     "p": [
+      "Começa com uma base totalmente cozida e fria, para o recheio nunca encharcar a massa.",
+      "Um recheio rápido pode ser natas batidas com mascarpone ou iogurte espesso e um pouco de açúcar.",
+      "Arruma a fruta em círculos de fora para dentro e pincela com doce morno para dar brilho."
+     ],
+     "q": "Que frutas escolherias para a tua tarte ficar colorida?",
+     "c": "Recheia uma base pequena cozida com creme e arruma pelo menos dois tipos de fruta em círculos certinhos."
+    },
+    "pt_BR": {
+     "t": "Uma torta de frutas simples",
+     "g": "Monte uma torta de frutas com base de massa podre pré-assada, um recheio cremoso rápido e frutas bem arrumadas.",
+     "p": [
+      "Comece com uma base totalmente assada e fria, assim o recheio nunca encharca a massa.",
+      "Um recheio rápido pode ser chantilly misturado com mascarpone ou iogurte grosso e um pouco de açúcar.",
+      "Arrume as frutas em círculos de fora para dentro e pincele com geleia morna para dar brilho."
+     ],
+     "q": "Quais frutas você escolheria para deixar sua torta bem colorida?",
+     "c": "Recheie uma base pequena assada com creme e arrume pelo menos dois tipos de fruta em círculos certinhos."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sweet pastry: pâte sucrée",
+     "g": "Make pâte sucrée, a richer, sweeter dough for elegant French-style tarts with a crisp, biscuit-like bite.",
+     "p": [
+      "It is made with butter, icing sugar, egg yolk or whole egg and flour, often by creaming the butter and sugar first.",
+      "The sugar and egg make it more fragile than shortcrust, so chill it well and roll it between baking paper.",
+      "Patch small cracks with spare dough; it bakes up crisp and sweet, perfect for fruit and custard tarts."
+     ],
+     "q": "Have you ever tasted a French tart in a pâtisserie? What was on it?",
+     "c": "Make a small batch of pâte sucrée, chill it and roll it between two sheets of baking paper."
+    },
+    "de": {
+     "t": "Süßer Mürbeteig: Pâte sucrée",
+     "g": "Mach Pâte sucrée, einen reichhaltigeren, süßeren Teig für elegante französische Tartes mit keksartigem Biss.",
+     "p": [
+      "Er besteht aus Butter, Puderzucker, Eigelb oder ganzem Ei und Mehl, oft werden Butter und Zucker zuerst cremig gerührt.",
+      "Zucker und Ei machen ihn zerbrechlicher als Mürbeteig, also gut kühlen und zwischen Backpapier ausrollen.",
+      "Kleine Risse mit Teigresten flicken; er wird knusprig und süß, perfekt für Obst- und Cremetartes."
+     ],
+     "q": "Hast du schon mal eine französische Tarte in einer Pâtisserie probiert? Was war darauf?",
+     "c": "Mach eine kleine Portion Pâte sucrée, kühle sie und roll sie zwischen zwei Lagen Backpapier aus."
+    },
+    "es": {
+     "t": "Masa dulce: pâte sucrée",
+     "g": "Prepara pâte sucrée, una masa más rica y dulce para tartas elegantes de estilo francés con textura de galleta.",
+     "p": [
+      "Lleva mantequilla, azúcar glas, yema o huevo entero y harina, y a menudo se crema primero la mantequilla con el azúcar.",
+      "El azúcar y el huevo la hacen más frágil que la quebrada, así que enfríala bien y estírala entre papel de horno.",
+      "Repara las grietas con restos de masa; queda crujiente y dulce, perfecta para tartas de fruta y crema."
+     ],
+     "q": "¿Has probado alguna vez una tarta francesa en una pastelería? ¿Qué llevaba?",
+     "c": "Haz una tanda pequeña de pâte sucrée, enfríala y estírala entre dos hojas de papel de horno."
+    },
+    "fr": {
+     "t": "La pâte sucrée",
+     "g": "Réalise une pâte sucrée, plus riche et plus sucrée, pour des tartes élégantes à la française au croquant de biscuit.",
+     "p": [
+      "Elle se fait avec beurre, sucre glace, jaune ou œuf entier et farine, souvent en crémant d'abord beurre et sucre.",
+      "Sucre et œuf la rendent plus fragile que la brisée : mets-la bien au frais et étale-la entre deux papiers cuisson.",
+      "Répare les fissures avec des chutes de pâte ; elle cuit croustillante et sucrée, idéale pour fruits et crèmes."
+     ],
+     "q": "As-tu déjà goûté une tarte dans une pâtisserie française ? Qu'y avait-il dessus ?",
+     "c": "Prépare une petite pâte sucrée, mets-la au frais et étale-la entre deux feuilles de papier cuisson."
+    },
+    "it": {
+     "t": "Pasta dolce: pâte sucrée",
+     "g": "Prepara la pâte sucrée, un impasto più ricco e dolce per crostate eleganti alla francese, friabile come un biscotto.",
+     "p": [
+      "Si fa con burro, zucchero a velo, tuorlo o uovo intero e farina, spesso lavorando prima burro e zucchero a crema.",
+      "Zucchero e uovo la rendono più fragile della brisée: falla raffreddare bene e stendila tra due fogli di carta forno.",
+      "Ripara le crepe con ritagli di pasta; in cottura diventa croccante e dolce, perfetta per frutta e creme."
+     ],
+     "q": "Hai mai assaggiato una tarte in una pasticceria francese? Cosa c'era sopra?",
+     "c": "Prepara una piccola dose di pâte sucrée, falla raffreddare e stendila tra due fogli di carta forno."
+    },
+    "pt": {
+     "t": "Massa doce: pâte sucrée",
+     "g": "Faz pâte sucrée, uma massa mais rica e doce para tartes elegantes à francesa, estaladiça como uma bolacha.",
+     "p": [
+      "Leva manteiga, açúcar em pó, gema ou ovo inteiro e farinha, muitas vezes batendo primeiro a manteiga com o açúcar.",
+      "O açúcar e o ovo tornam-na mais frágil que a quebrada, por isso leva-a bem ao frio e estende entre papel vegetal.",
+      "Remenda pequenas fendas com restos de massa; fica estaladiça e doce, perfeita para tartes de fruta e creme."
+     ],
+     "q": "Já provaste uma tarte francesa numa pastelaria? O que tinha por cima?",
+     "c": "Faz uma pequena dose de pâte sucrée, leva ao frio e estende entre duas folhas de papel vegetal."
+    },
+    "pt_BR": {
+     "t": "Massa doce: pâte sucrée",
+     "g": "Faça pâte sucrée, uma massa mais rica e doce para tortas elegantes ao estilo francês, crocante como biscoito.",
+     "p": [
+      "Leva manteiga, açúcar de confeiteiro, gema ou ovo inteiro e farinha, muitas vezes batendo antes a manteiga com o açúcar.",
+      "O açúcar e o ovo deixam a massa mais frágil que a massa podre, então gele bem e abra entre papel-manteiga.",
+      "Remende pequenas rachaduras com sobras de massa; ela fica crocante e doce, perfeita para tortas de fruta e creme."
+     ],
+     "q": "Você já provou uma torta francesa numa confeitaria? O que tinha por cima?",
+     "c": "Faça uma pequena porção de pâte sucrée, gele e abra entre duas folhas de papel-manteiga."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classic apple pie",
+     "g": "Bake a classic double-crust apple pie, balancing apples with sugar and spice and venting the steam.",
+     "p": [
+      "Mix firm and soft apples: firm ones keep their shape, soft ones melt into a saucy filling.",
+      "Toss the slices with sugar, cinnamon, a squeeze of lemon and a little flour or cornflour to thicken the juices.",
+      "Cut steam vents in the top crust and bake on a tray to catch drips; let it cool so the filling sets."
+     ],
+     "q": "Do you like apple pie warm with ice cream, with custard, or just on its own?",
+     "c": "Bake a small apple pie with a top crust and cut at least three steam vents before it goes in the oven."
+    },
+    "de": {
+     "t": "Klassischer Apfelkuchen mit Deckel",
+     "g": "Back einen klassischen gedeckten Apple Pie, ausgewogen mit Zucker und Gewürz und mit Dampflöchern.",
+     "p": [
+      "Mische feste und weiche Äpfel: Feste behalten die Form, weiche schmelzen zu einer saftigen Füllung.",
+      "Die Scheiben mit Zucker, Zimt, etwas Zitrone und ein wenig Mehl oder Speisestärke mischen, um den Saft zu binden.",
+      "Dampflöcher in den Deckel schneiden und auf einem Blech backen, das Tropfen auffängt; abkühlen lassen, damit die Füllung fest wird."
+     ],
+     "q": "Magst du Apple Pie warm mit Eis, mit Vanillesoße oder einfach pur?",
+     "c": "Back einen kleinen Apple Pie mit Teigdeckel und schneide mindestens drei Dampflöcher hinein, bevor er in den Ofen kommt."
+    },
+    "es": {
+     "t": "Tarta de manzana clásica",
+     "g": "Hornea una tarta de manzana clásica de doble masa, equilibrando la fruta con azúcar y especias y dejando salir el vapor.",
+     "p": [
+      "Mezcla manzanas firmes y blandas: las firmes mantienen la forma y las blandas se funden en una salsa.",
+      "Mezcla las láminas con azúcar, canela, unas gotas de limón y un poco de harina o maicena para espesar el jugo.",
+      "Haz cortes para el vapor en la tapa y hornea sobre una bandeja que recoja el goteo; déjala enfriar para que cuaje."
+     ],
+     "q": "¿Te gusta la tarta de manzana caliente con helado, con natillas o sola?",
+     "c": "Hornea una tarta de manzana pequeña con tapa y haz al menos tres cortes para el vapor antes de meterla al horno."
+    },
+    "fr": {
+     "t": "L'apple pie classique",
+     "g": "Réalise un apple pie classique à double croûte, en équilibrant pommes, sucre et épices et en laissant sortir la vapeur.",
+     "p": [
+      "Mélange pommes fermes et fondantes : les fermes gardent leur forme, les fondantes deviennent une compote.",
+      "Mélange les tranches avec sucre, cannelle, un filet de citron et un peu de farine ou de fécule pour lier le jus.",
+      "Entaille le couvercle pour la vapeur et cuis sur une plaque qui récupère le jus ; laisse refroidir pour que la garniture prenne."
+     ],
+     "q": "Tu aimes l'apple pie tiède avec de la glace, avec une crème anglaise, ou nature ?",
+     "c": "Fais un petit apple pie avec couvercle et pratique au moins trois entailles avant de l'enfourner."
+    },
+    "it": {
+     "t": "La classica apple pie",
+     "g": "Prepara una classica apple pie a doppia pasta, bilanciando mele, zucchero e spezie e facendo uscire il vapore.",
+     "p": [
+      "Mescola mele sode e morbide: quelle sode mantengono la forma, quelle morbide si sciolgono in una salsa.",
+      "Condisci le fette con zucchero, cannella, un po' di limone e un po' di farina o amido per addensare il succo.",
+      "Fai dei tagli sul coperchio per il vapore e cuoci su una teglia che raccolga le gocce; lascia raffreddare perché si rassodi."
+     ],
+     "q": "Ti piace l'apple pie tiepida col gelato, con la crema inglese o da sola?",
+     "c": "Prepara una piccola apple pie con coperchio e fai almeno tre tagli per il vapore prima di infornarla."
+    },
+    "pt": {
+     "t": "Tarte de maçã clássica",
+     "g": "Faz uma tarte de maçã clássica com massa por cima e por baixo, equilibrando a fruta com açúcar e especiarias.",
+     "p": [
+      "Mistura maçãs firmes e macias: as firmes mantêm a forma, as macias desfazem-se num molho.",
+      "Envolve as fatias com açúcar, canela, um pouco de limão e um pouco de farinha ou amido para engrossar o suco.",
+      "Faz cortes na massa de cima para o vapor e coze sobre um tabuleiro que apanhe os pingos; deixa arrefecer para firmar."
+     ],
+     "q": "Gostas de tarte de maçã morna com gelado, com creme inglês ou simples?",
+     "c": "Faz uma tarte de maçã pequena com tampa e faz pelo menos três cortes para o vapor antes de ir ao forno."
+    },
+    "pt_BR": {
+     "t": "Torta de maçã clássica",
+     "g": "Asse uma torta de maçã clássica com massa por cima e por baixo, equilibrando a fruta com açúcar e especiarias.",
+     "p": [
+      "Misture maçãs firmes e macias: as firmes mantêm o formato, as macias derretem num molho.",
+      "Envolva as fatias em açúcar, canela, um pouco de limão e um pouco de farinha ou amido de milho para engrossar o caldo.",
+      "Faça cortes na massa de cima para o vapor e asse sobre uma assadeira que pegue os pingos; deixe esfriar para firmar."
+     ],
+     "q": "Você gosta de torta de maçã morna com sorvete, com creme ou pura?",
+     "c": "Asse uma torta de maçã pequena com tampa e faça pelo menos três cortes para o vapor antes de levar ao forno."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crimping and decorating pie edges",
+     "g": "Learn simple ways to finish pie edges: fluting, fork patterns, braids and a first easy lattice.",
+     "p": [
+      "Trim the overhang to about 2 cm, fold it under and press it so the edge sits on the rim of the tin.",
+      "Flute by pushing the dough between two fingers of one hand with a finger of the other, or press with a fork.",
+      "For a lattice, weave strips over and under; chill the pie before baking so the pattern stays sharp."
+     ],
+     "q": "Do you prefer a rustic, homemade look or a very neat, decorated finish?",
+     "c": "Practise three edge styles on a strip of leftover dough: fork, fluted and a simple three-strand braid."
+    },
+    "de": {
+     "t": "Teigränder verzieren",
+     "g": "Lerne einfache Arten, Pie-Ränder zu verzieren: Wellen, Gabelmuster, Zöpfe und ein erstes einfaches Gitter.",
+     "p": [
+      "Den Überstand auf etwa 2 cm kürzen, nach unten umschlagen und andrücken, sodass der Rand auf der Form liegt.",
+      "Für Wellen den Teig mit einem Finger zwischen zwei Finger der anderen Hand drücken, oder mit einer Gabel andrücken.",
+      "Für ein Gitter Streifen über und unter flechten; den Pie vor dem Backen kühlen, damit das Muster scharf bleibt."
+     ],
+     "q": "Magst du lieber einen rustikalen, hausgemachten Look oder ein sehr ordentliches, verziertes Finish?",
+     "c": "Übe drei Randmuster an einem Streifen Teigrest: Gabel, Wellen und ein einfacher Zopf aus drei Strängen."
+    },
+    "es": {
+     "t": "Rematar y decorar bordes de tarta",
+     "g": "Aprende formas sencillas de rematar los bordes: ondas, marcas de tenedor, trenzas y una primera rejilla fácil.",
+     "p": [
+      "Recorta el sobrante a unos 2 cm, dóblalo hacia abajo y presiónalo para que el borde quede sobre el molde.",
+      "Para ondas, empuja la masa entre dos dedos de una mano con un dedo de la otra, o presiona con un tenedor.",
+      "Para la rejilla, entrelaza tiras por encima y por debajo; enfría la tarta antes de hornear para que el dibujo no se deforme."
+     ],
+     "q": "¿Prefieres un aspecto rústico y casero o un acabado muy ordenado y decorado?",
+     "c": "Practica tres bordes con un trozo de masa sobrante: tenedor, ondas y una trenza sencilla de tres tiras."
+    },
+    "fr": {
+     "t": "Chiqueter et décorer les bords",
+     "g": "Apprends des façons simples de finir les bords : cannelures, motifs à la fourchette, tresses et un premier croisillon.",
+     "p": [
+      "Coupe l'excédent à environ 2 cm, replie-le dessous et presse pour que le bord repose sur le moule.",
+      "Pour des cannelures, pousse la pâte entre deux doigts d'une main avec un doigt de l'autre, ou presse à la fourchette.",
+      "Pour un croisillon, tisse des bandes dessus-dessous ; mets la tarte au frais avant cuisson pour un motif net."
+     ],
+     "q": "Tu préfères un look rustique et fait maison, ou une finition très soignée et décorée ?",
+     "c": "Entraîne-toi sur une chute de pâte avec trois bords : fourchette, cannelures et une tresse simple à trois brins."
+    },
+    "it": {
+     "t": "Rifinire e decorare i bordi",
+     "g": "Impara modi semplici per rifinire i bordi della torta: onde, segni di forchetta, trecce e una prima grata facile.",
+     "p": [
+      "Rifila l'eccesso a circa 2 cm, ripiegalo sotto e premilo perché il bordo poggi sullo stampo.",
+      "Per le onde spingi la pasta tra due dita di una mano con un dito dell'altra, oppure premi con una forchetta.",
+      "Per la grata intreccia strisce sopra e sotto; fai raffreddare la torta prima di cuocerla perché il disegno resti netto."
+     ],
+     "q": "Preferisci un aspetto rustico e casalingo o una rifinitura molto ordinata e decorata?",
+     "c": "Prova tre bordi su una striscia di pasta avanzata: forchetta, onde e una semplice treccia a tre capi."
+    },
+    "pt": {
+     "t": "Acabar e decorar as bordas",
+     "g": "Aprende formas simples de acabar as bordas da tarte: ondas, marcas de garfo, tranças e uma primeira grelha fácil.",
+     "p": [
+      "Apara o excesso a uns 2 cm, dobra-o para baixo e pressiona para a borda assentar na forma.",
+      "Para ondas, empurra a massa entre dois dedos de uma mão com um dedo da outra, ou pressiona com um garfo.",
+      "Para a grelha, entrelaça tiras por cima e por baixo; leva a tarte ao frio antes de cozer para o desenho ficar nítido."
+     ],
+     "q": "Preferes um aspeto rústico e caseiro ou um acabamento muito certinho e decorado?",
+     "c": "Treina três bordas numa tira de massa que sobrou: garfo, ondas e uma trança simples de três tiras."
+    },
+    "pt_BR": {
+     "t": "Finalizando e decorando bordas",
+     "g": "Aprenda jeitos simples de finalizar bordas de torta: ondas, marcas de garfo, tranças e uma primeira treliça fácil.",
+     "p": [
+      "Corte o excesso deixando uns 2 cm, dobre para baixo e pressione para a borda ficar sobre a forma.",
+      "Para ondas, empurre a massa entre dois dedos de uma mão com um dedo da outra, ou pressione com um garfo.",
+      "Para a treliça, entrelace tiras por cima e por baixo; gele a torta antes de assar para o desenho ficar nítido."
+     ],
+     "q": "Você prefere um visual rústico e caseiro ou um acabamento bem certinho e decorado?",
+     "c": "Treine três bordas numa tira de massa que sobrou: garfo, ondas e uma trança simples de três tiras."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silky lemon curd",
+     "g": "Cook eggs, sugar, butter and lemon gently into a bright, glossy curd that you can spread or use in tarts.",
+     "p": [
+      "Whisk eggs or yolks with sugar, lemon juice and zest, then cook over a gentle heat, stirring constantly.",
+      "It is ready when it coats the back of a spoon and a finger drawn through leaves a clear line, around 75 to 80 °C.",
+      "Strain it, stir in cold butter for gloss, then cool and keep it covered in the fridge for up to about a week."
+     ],
+     "q": "What would you spread lemon curd on: toast, scones, yoghurt or a tart?",
+     "c": "Make a small jar of lemon curd from one lemon and taste it on yesterday's pastry trimmings or a biscuit."
+    },
+    "de": {
+     "t": "Seidiges Lemon Curd",
+     "g": "Koche Eier, Zucker, Butter und Zitrone sanft zu einer leuchtenden, glänzenden Creme zum Streichen oder für Tartes.",
+     "p": [
+      "Eier oder Eigelb mit Zucker, Zitronensaft und Schale verquirlen und bei sanfter Hitze unter ständigem Rühren garen.",
+      "Fertig ist es, wenn es den Löffelrücken überzieht und ein Fingerstrich eine klare Linie hinterlässt, bei etwa 75 bis 80 °C.",
+      "Durch ein Sieb streichen, kalte Butter für Glanz einrühren, abkühlen und abgedeckt bis etwa eine Woche kühlen."
+     ],
+     "q": "Worauf würdest du Lemon Curd streichen: Toast, Scones, Joghurt oder eine Tarte?",
+     "c": "Mach aus einer Zitrone ein kleines Glas Lemon Curd und probiere es auf Teigresten oder einem Keks."
+    },
+    "es": {
+     "t": "Lemon curd sedoso",
+     "g": "Cuece huevos, azúcar, mantequilla y limón a fuego suave hasta lograr una crema brillante para untar o rellenar tartas.",
+     "p": [
+      "Bate huevos o yemas con azúcar, zumo y ralladura de limón y cocina a fuego suave sin dejar de remover.",
+      "Está lista cuando cubre el dorso de una cuchara y al pasar un dedo queda una línea limpia, hacia los 75 a 80 °C.",
+      "Cuélala, añade mantequilla fría para darle brillo, enfríala y guárdala tapada en la nevera hasta una semana."
+     ],
+     "q": "¿Sobre qué untarías lemon curd: tostadas, scones, yogur o una tarta?",
+     "c": "Haz un tarro pequeño de lemon curd con un limón y pruébalo sobre recortes de masa o una galleta."
+    },
+    "fr": {
+     "t": "Un lemon curd soyeux",
+     "g": "Fais cuire doucement œufs, sucre, beurre et citron pour obtenir une crème vive et brillante, à tartiner ou en tarte.",
+     "p": [
+      "Fouette œufs ou jaunes avec sucre, jus et zeste de citron, puis cuis à feu doux en remuant sans cesse.",
+      "C'est prêt quand la crème nappe le dos d'une cuillère et qu'un doigt y trace une ligne nette, vers 75 à 80 °C.",
+      "Passe-la au tamis, ajoute du beurre froid pour la brillance, refroidis et garde-la couverte au frais environ une semaine."
+     ],
+     "q": "Sur quoi tartinerais-tu du lemon curd : pain grillé, scones, yaourt ou tarte ?",
+     "c": "Prépare un petit pot de lemon curd avec un citron et goûte-le sur des chutes de pâte ou un biscuit."
+    },
+    "it": {
+     "t": "Lemon curd vellutato",
+     "g": "Cuoci con delicatezza uova, zucchero, burro e limone fino a una crema brillante da spalmare o per crostate.",
+     "p": [
+      "Sbatti uova o tuorli con zucchero, succo e scorza di limone, poi cuoci a fuoco dolce mescolando sempre.",
+      "È pronta quando vela il dorso di un cucchiaio e passandoci un dito resta una linea netta, intorno ai 75-80 °C.",
+      "Filtrala, aggiungi burro freddo per renderla lucida, falla raffreddare e conservala coperta in frigo fino a circa una settimana."
+     ],
+     "q": "Su cosa spalmeresti il lemon curd: pane tostato, scones, yogurt o una crostata?",
+     "c": "Prepara un vasetto di lemon curd con un limone e assaggialo su ritagli di pasta o su un biscotto."
+    },
+    "pt": {
+     "t": "Lemon curd sedoso",
+     "g": "Coze ovos, açúcar, manteiga e limão em lume brando até ter um creme vivo e brilhante para barrar ou usar em tartes.",
+     "p": [
+      "Bate ovos ou gemas com açúcar, sumo e raspa de limão e coze em lume brando sem parar de mexer.",
+      "Está pronto quando cobre as costas de uma colher e um dedo deixa uma linha nítida, por volta dos 75 a 80 °C.",
+      "Passa por um passador, junta manteiga fria para dar brilho, arrefece e guarda tapado no frigorífico até cerca de uma semana."
+     ],
+     "q": "Em que barrarias lemon curd: torradas, scones, iogurte ou uma tarte?",
+     "c": "Faz um frasco pequeno de lemon curd com um limão e prova-o em restos de massa ou numa bolacha."
+    },
+    "pt_BR": {
+     "t": "Lemon curd sedoso",
+     "g": "Cozinhe ovos, açúcar, manteiga e limão em fogo baixo até virar um creme vibrante e brilhante para passar ou rechear tortas.",
+     "p": [
+      "Bata ovos ou gemas com açúcar, suco e raspas de limão e cozinhe em fogo baixo mexendo sem parar.",
+      "Está pronto quando cobre as costas de uma colher e um dedo deixa uma linha nítida, por volta de 75 a 80 °C.",
+      "Coe, junte manteiga gelada para dar brilho, esfrie e guarde tampado na geladeira por até cerca de uma semana."
+     ],
+     "q": "Onde você passaria lemon curd: torrada, scones, iogurte ou uma torta?",
+     "c": "Faça um potinho de lemon curd com um limão e prove em sobras de massa ou num biscoito."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brownies: fudgy or cakey",
+     "g": "Learn how the balance of fat, chocolate and flour decides whether a brownie turns out fudgy or cakey.",
+     "p": [
+      "Fudgy brownies have more butter and chocolate and less flour, so they stay dense and moist.",
+      "Cakey brownies use more flour, sometimes a little baking powder, and often creamed butter for a lighter crumb.",
+      "Pull them out while a skewer still shows moist crumbs; brownies keep cooking in the hot tin."
+     ],
+     "q": "Team fudgy or team cakey: which brownie do you prefer?",
+     "c": "Bake a small tray of brownies and take them out when the skewer shows moist crumbs, then let them cool fully."
+    },
+    "de": {
+     "t": "Brownies: saftig oder kuchig",
+     "g": "Lerne, wie das Verhältnis von Fett, Schokolade und Mehl entscheidet, ob Brownies saftig-fudgy oder kuchig werden.",
+     "p": [
+      "Fudgy Brownies haben mehr Butter und Schokolade und weniger Mehl, deshalb bleiben sie dicht und saftig.",
+      "Kuchige Brownies haben mehr Mehl, manchmal etwas Backpulver und oft schaumig gerührte Butter für eine lockere Krume.",
+      "Herausnehmen, solange am Stäbchen noch feuchte Krümel hängen; in der heißen Form backen sie nach."
+     ],
+     "q": "Team fudgy oder Team kuchig: Welche Brownies magst du lieber?",
+     "c": "Back ein kleines Blech Brownies, nimm sie bei feuchten Krümeln am Stäbchen heraus und lass sie ganz abkühlen."
+    },
+    "es": {
+     "t": "Brownies: densos o esponjosos",
+     "g": "Aprende cómo el equilibrio entre grasa, chocolate y harina decide si un brownie sale denso y húmedo o esponjoso.",
+     "p": [
+      "Los brownies densos llevan más mantequilla y chocolate y menos harina, por eso quedan compactos y jugosos.",
+      "Los esponjosos llevan más harina, a veces algo de levadura química, y a menudo mantequilla cremada.",
+      "Sácalos cuando la brocheta aún salga con migas húmedas; siguen cociéndose en el molde caliente."
+     ],
+     "q": "¿Equipo denso o equipo esponjoso: qué brownie prefieres?",
+     "c": "Hornea una bandeja pequeña de brownies, sácalos cuando la brocheta salga con migas húmedas y déjalos enfriar del todo."
+    },
+    "fr": {
+     "t": "Brownies : fondants ou moelleux",
+     "g": "Apprends comment l'équilibre entre beurre, chocolat et farine rend un brownie fondant ou plutôt gâteau.",
+     "p": [
+      "Les brownies fondants ont plus de beurre et de chocolat et moins de farine : ils restent denses et humides.",
+      "Les brownies plus gâteau ont plus de farine, parfois un peu de levure, et souvent un beurre crémé.",
+      "Sors-les quand la pique ressort encore avec des miettes humides ; ils continuent de cuire dans le moule chaud."
+     ],
+     "q": "Plutôt team fondant ou team gâteau : quel brownie préfères-tu ?",
+     "c": "Fais un petit plat de brownies, sors-les quand la pique montre des miettes humides et laisse-les refroidir."
+    },
+    "it": {
+     "t": "Brownie: umidi o sofficiosi",
+     "g": "Impara come l'equilibrio tra grassi, cioccolato e farina decide se un brownie sarà umido e denso o soffice come una torta.",
+     "p": [
+      "I brownie densi hanno più burro e cioccolato e meno farina, così restano compatti e umidi.",
+      "Quelli più soffici usano più farina, a volte un po' di lievito, e spesso burro montato a crema.",
+      "Sfornali quando lo stecchino esce ancora con briciole umide; continuano a cuocere nella teglia calda."
+     ],
+     "q": "Squadra densi o squadra soffici: quale brownie preferisci?",
+     "c": "Cuoci una piccola teglia di brownie, sfornali quando lo stecchino ha briciole umide e lasciali raffreddare del tutto."
+    },
+    "pt": {
+     "t": "Brownies: húmidos ou fofos",
+     "g": "Aprende como o equilíbrio entre gordura, chocolate e farinha decide se um brownie fica húmido e denso ou fofo.",
+     "p": [
+      "Os brownies densos levam mais manteiga e chocolate e menos farinha, por isso ficam compactos e húmidos.",
+      "Os fofos levam mais farinha, às vezes um pouco de fermento, e muitas vezes manteiga batida em creme.",
+      "Tira-os quando o palito ainda sair com migalhas húmidas; continuam a cozer na forma quente."
+     ],
+     "q": "Equipa denso ou equipa fofo: que brownie preferes?",
+     "c": "Faz um tabuleiro pequeno de brownies, tira-os quando o palito tiver migalhas húmidas e deixa arrefecer totalmente."
+    },
+    "pt_BR": {
+     "t": "Brownies: molhadinhos ou fofos",
+     "g": "Aprenda como o equilíbrio entre gordura, chocolate e farinha decide se o brownie fica denso e molhadinho ou fofo.",
+     "p": [
+      "Brownies molhadinhos levam mais manteiga e chocolate e menos farinha, por isso ficam densos e úmidos.",
+      "Os fofos levam mais farinha, às vezes um pouco de fermento químico, e muitas vezes manteiga batida em creme.",
+      "Tire do forno quando o palito ainda sair com migalhas úmidas; eles continuam assando na forma quente."
+     ],
+     "q": "Time molhadinho ou time fofo: qual brownie você prefere?",
+     "c": "Asse uma forma pequena de brownies, tire quando o palito sair com migalhas úmidas e deixe esfriar totalmente."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Melting chocolate safely",
+     "g": "Melt chocolate smoothly with a bain-marie or microwave, without seizing or burning it.",
+     "p": [
+      "For a bain-marie, set a heatproof bowl over barely simmering water without letting the bowl touch the water.",
+      "In the microwave, heat in short bursts of 20 to 30 seconds at medium power, stirring well between each.",
+      "Even a drop of water or steam can make chocolate seize into a stiff paste; keep everything dry and the heat gentle."
+     ],
+     "q": "Do you prefer dark, milk or white chocolate for baking?",
+     "c": "Melt 50 g of chocolate using the bain-marie or the microwave method and stir it until completely smooth."
+    },
+    "de": {
+     "t": "Schokolade sicher schmelzen",
+     "g": "Schmilz Schokolade glatt im Wasserbad oder in der Mikrowelle, ohne dass sie stockt oder verbrennt.",
+     "p": [
+      "Für das Wasserbad eine hitzefeste Schüssel über leicht siedendes Wasser setzen, ohne dass sie das Wasser berührt.",
+      "In der Mikrowelle in kurzen Intervallen von 20 bis 30 Sekunden bei mittlerer Stufe erhitzen und dazwischen gut rühren.",
+      "Schon ein Tropfen Wasser oder Dampf lässt Schokolade zu einer festen Masse stocken; alles trocken halten, sanft erhitzen."
+     ],
+     "q": "Backst du lieber mit dunkler, Vollmilch- oder weißer Schokolade?",
+     "c": "Schmilz 50 g Schokolade im Wasserbad oder in der Mikrowelle und rühre, bis sie ganz glatt ist."
+    },
+    "es": {
+     "t": "Fundir chocolate con seguridad",
+     "g": "Funde chocolate sin grumos al baño maría o en el microondas, sin que se corte ni se queme.",
+     "p": [
+      "Para el baño maría, pon un bol resistente al calor sobre agua apenas hirviendo, sin que el bol toque el agua.",
+      "En el microondas, calienta en tandas cortas de 20 a 30 segundos a potencia media, removiendo bien entre cada una.",
+      "Una gota de agua o de vapor puede cortar el chocolate y volverlo una pasta dura; mantén todo seco y el calor suave."
+     ],
+     "q": "¿Prefieres chocolate negro, con leche o blanco para hornear?",
+     "c": "Funde 50 g de chocolate al baño maría o en el microondas y remueve hasta que quede totalmente liso."
+    },
+    "fr": {
+     "t": "Faire fondre le chocolat sans risque",
+     "g": "Fais fondre le chocolat en douceur au bain-marie ou au micro-ondes, sans qu'il graine ni ne brûle.",
+     "p": [
+      "Pour le bain-marie, pose un bol résistant à la chaleur sur une eau frémissante, sans que le bol touche l'eau.",
+      "Au micro-ondes, chauffe par courtes séries de 20 à 30 secondes à puissance moyenne, en remuant bien entre chaque.",
+      "Une goutte d'eau ou de vapeur peut faire masser le chocolat en une pâte épaisse ; garde tout sec et la chaleur douce."
+     ],
+     "q": "Tu préfères le chocolat noir, au lait ou blanc pour pâtisser ?",
+     "c": "Fais fondre 50 g de chocolat au bain-marie ou au micro-ondes et remue jusqu'à ce qu'il soit bien lisse."
+    },
+    "it": {
+     "t": "Sciogliere il cioccolato in sicurezza",
+     "g": "Sciogli il cioccolato in modo liscio a bagnomaria o nel microonde, senza che impazzisca o bruci.",
+     "p": [
+      "Per il bagnomaria, metti una ciotola resistente al calore sopra acqua appena sobbollente, senza che tocchi l'acqua.",
+      "Nel microonde scalda a brevi intervalli di 20-30 secondi a media potenza, mescolando bene tra uno e l'altro.",
+      "Anche una goccia d'acqua o vapore può far impazzire il cioccolato in una pasta dura; tieni tutto asciutto e il calore dolce."
+     ],
+     "q": "Per i dolci preferisci cioccolato fondente, al latte o bianco?",
+     "c": "Sciogli 50 g di cioccolato a bagnomaria o nel microonde e mescola finché è perfettamente liscio."
+    },
+    "pt": {
+     "t": "Derreter chocolate em segurança",
+     "g": "Derrete chocolate de forma lisa em banho-maria ou no micro-ondas, sem que talhe ou queime.",
+     "p": [
+      "Para o banho-maria, põe uma taça resistente ao calor sobre água a ferver muito suavemente, sem a taça tocar na água.",
+      "No micro-ondas, aquece em séries curtas de 20 a 30 segundos em potência média, mexendo bem entre cada uma.",
+      "Uma gota de água ou vapor pode fazer o chocolate talhar numa pasta rija; mantém tudo seco e o calor suave."
+     ],
+     "q": "Preferes chocolate negro, de leite ou branco para fazer bolos?",
+     "c": "Derrete 50 g de chocolate em banho-maria ou no micro-ondas e mexe até ficar completamente liso."
+    },
+    "pt_BR": {
+     "t": "Derretendo chocolate com segurança",
+     "g": "Derreta chocolate de forma lisa em banho-maria ou no micro-ondas, sem que ele talhe ou queime.",
+     "p": [
+      "Para o banho-maria, coloque uma tigela refratária sobre água quase fervendo, sem que a tigela encoste na água.",
+      "No micro-ondas, aqueça em intervalos curtos de 20 a 30 segundos em potência média, mexendo bem entre cada um.",
+      "Uma gota de água ou vapor pode talhar o chocolate e deixá-lo empelotado; mantenha tudo seco e o calor suave."
+     ],
+     "q": "Você prefere chocolate amargo, ao leite ou branco para confeitaria?",
+     "c": "Derreta 50 g de chocolate em banho-maria ou no micro-ondas e mexa até ficar completamente liso."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cocoa powder types",
+     "g": "Understand natural and Dutch-processed cocoa and how each one reacts with leaveners.",
+     "p": [
+      "Natural cocoa is acidic, light brown and fruity; it reacts with baking soda to make a cake rise.",
+      "Dutch-processed cocoa is treated with an alkali, so it is darker, milder and usually paired with baking powder.",
+      "If a recipe names one type, stick to it; swapping can change the rise, colour and flavour of your bake."
+     ],
+     "q": "Have you ever noticed why some chocolate cakes are almost black and others reddish brown?",
+     "c": "Check the cocoa you have: read the label and see if it says alkalised or Dutch-processed."
+    },
+    "de": {
+     "t": "Kakaopulver-Sorten",
+     "g": "Verstehe den Unterschied zwischen natürlichem und alkalisiertem Kakao und wie beide mit Triebmitteln reagieren.",
+     "p": [
+      "Natürlicher Kakao ist sauer, hellbraun und fruchtig; er reagiert mit Natron und lässt den Kuchen aufgehen.",
+      "Alkalisierter Kakao ist mit einer Lauge behandelt, dunkler, milder und wird meist mit Backpulver kombiniert.",
+      "Nennt ein Rezept eine Sorte, bleib dabei; ein Tausch kann Trieb, Farbe und Geschmack verändern."
+     ],
+     "q": "Ist dir schon aufgefallen, warum manche Schokokuchen fast schwarz und andere rötlich braun sind?",
+     "c": "Schau dir deinen Kakao an: Steht auf dem Etikett, dass er alkalisiert ist?"
+    },
+    "es": {
+     "t": "Tipos de cacao en polvo",
+     "g": "Entiende la diferencia entre cacao natural y alcalinizado y cómo reacciona cada uno con los gasificantes.",
+     "p": [
+      "El cacao natural es ácido, marrón claro y afrutado; reacciona con el bicarbonato y hace subir el bizcocho.",
+      "El cacao alcalinizado se trata con un álcali, así que es más oscuro, suave y suele ir con levadura química.",
+      "Si la receta indica un tipo, respétalo; cambiarlo puede alterar el volumen, el color y el sabor."
+     ],
+     "q": "¿Te has fijado en por qué unos bizcochos de chocolate son casi negros y otros marrón rojizo?",
+     "c": "Revisa el cacao que tienes: lee la etiqueta y mira si dice alcalinizado o procesado al estilo holandés."
+    },
+    "fr": {
+     "t": "Les types de cacao en poudre",
+     "g": "Comprends la différence entre cacao naturel et cacao alcalinisé, et comment chacun réagit avec les poudres levantes.",
+     "p": [
+      "Le cacao naturel est acide, brun clair et fruité ; il réagit avec le bicarbonate pour faire lever le gâteau.",
+      "Le cacao alcalinisé est traité avec un alcalin : plus foncé, plus doux, il s'associe surtout à la levure chimique.",
+      "Si une recette précise un type, respecte-le ; changer peut modifier la levée, la couleur et le goût."
+     ],
+     "q": "As-tu remarqué pourquoi certains gâteaux au chocolat sont presque noirs et d'autres brun rougeâtre ?",
+     "c": "Regarde ton cacao : lis l'étiquette et vérifie s'il est indiqué comme alcalinisé."
+    },
+    "it": {
+     "t": "Tipi di cacao in polvere",
+     "g": "Capisci la differenza tra cacao naturale e alcalinizzato e come ciascuno reagisce con i lieviti chimici.",
+     "p": [
+      "Il cacao naturale è acido, marrone chiaro e fruttato; reagisce col bicarbonato e fa crescere la torta.",
+      "Il cacao alcalinizzato è trattato con un alcale, quindi è più scuro, delicato e di solito si abbina al lievito per dolci.",
+      "Se la ricetta indica un tipo, rispettalo; cambiarlo può modificare crescita, colore e sapore."
+     ],
+     "q": "Hai notato perché alcune torte al cioccolato sono quasi nere e altre marrone rossiccio?",
+     "c": "Controlla il cacao che hai: leggi l'etichetta e guarda se è indicato come alcalinizzato."
+    },
+    "pt": {
+     "t": "Tipos de cacau em pó",
+     "g": "Percebe a diferença entre cacau natural e alcalinizado e como cada um reage com os levedantes químicos.",
+     "p": [
+      "O cacau natural é ácido, castanho-claro e frutado; reage com o bicarbonato e faz o bolo crescer.",
+      "O cacau alcalinizado é tratado com um alcalino, por isso é mais escuro, suave e costuma ir com fermento em pó.",
+      "Se a receita indica um tipo, respeita-o; trocar pode mudar o crescimento, a cor e o sabor."
+     ],
+     "q": "Já reparaste porque é que alguns bolos de chocolate são quase pretos e outros castanho-avermelhados?",
+     "c": "Vê o cacau que tens: lê o rótulo e confirma se diz alcalinizado."
+    },
+    "pt_BR": {
+     "t": "Tipos de cacau em pó",
+     "g": "Entenda a diferença entre cacau natural e alcalino e como cada um reage com os fermentos químicos.",
+     "p": [
+      "O cacau natural é ácido, marrom-claro e frutado; reage com o bicarbonato e faz o bolo crescer.",
+      "O cacau alcalino é tratado com um álcali, por isso é mais escuro, suave e costuma ir com fermento químico em pó.",
+      "Se a receita indica um tipo, siga; trocar pode mudar o crescimento, a cor e o sabor."
+     ],
+     "q": "Você já reparou por que alguns bolos de chocolate são quase pretos e outros marrom-avermelhados?",
+     "c": "Confira o cacau que você tem: leia o rótulo e veja se diz alcalino ou alcalinizado."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Oatmeal cookies",
+     "g": "Bake chewy oatmeal cookies with warm spices and your own fun mix of add-ins.",
+     "p": [
+      "Rolled oats give chew and a nutty taste; quick oats make a softer, more uniform cookie.",
+      "Brown sugar and a creamed butter base keep them moist; cinnamon or nutmeg add warmth.",
+      "Add-ins like raisins, chocolate chunks, nuts or dried fruit should total about a third of the flour and oats."
+     ],
+     "q": "Which add-ins would make your perfect oatmeal cookie?",
+     "c": "Bake a small batch of oatmeal cookies and invent your own add-in combination, then give it a name."
+    },
+    "de": {
+     "t": "Haferkekse",
+     "g": "Back saftige Haferkekse mit warmen Gewürzen und deiner eigenen lustigen Mischung an Zutaten.",
+     "p": [
+      "Großblättrige Haferflocken geben Biss und nussigen Geschmack; zarte Flocken machen den Keks weicher und gleichmäßiger.",
+      "Brauner Zucker und schaumig gerührte Butter halten sie saftig; Zimt oder Muskat geben Wärme.",
+      "Extras wie Rosinen, Schokostücke, Nüsse oder Trockenobst sollten etwa ein Drittel von Mehl und Hafer ausmachen."
+     ],
+     "q": "Welche Extras würden deinen perfekten Haferkeks ausmachen?",
+     "c": "Back eine kleine Portion Haferkekse, erfinde deine eigene Extra-Mischung und gib ihr einen Namen."
+    },
+    "es": {
+     "t": "Galletas de avena",
+     "g": "Hornea galletas de avena tiernas con especias cálidas y tu propia mezcla divertida de ingredientes extra.",
+     "p": [
+      "Los copos de avena enteros dan textura y sabor a nuez; los finos hacen una galleta más blanda y uniforme.",
+      "El azúcar moreno y una base de mantequilla cremada las mantienen jugosas; la canela o la nuez moscada dan calidez.",
+      "Los extras como pasas, chocolate, frutos secos o fruta deshidratada deben sumar un tercio de la harina y la avena."
+     ],
+     "q": "¿Qué extras tendría tu galleta de avena perfecta?",
+     "c": "Hornea una tanda pequeña de galletas de avena, inventa tu propia combinación de extras y ponle nombre."
+    },
+    "fr": {
+     "t": "Cookies aux flocons d'avoine",
+     "g": "Réalise des cookies moelleux aux flocons d'avoine, avec des épices chaudes et ton propre mélange d'ingrédients.",
+     "p": [
+      "Les gros flocons apportent mâche et goût de noisette ; les petits flocons donnent un biscuit plus tendre et régulier.",
+      "Le sucre brun et une base de beurre crémé les gardent moelleux ; cannelle ou muscade apportent de la chaleur.",
+      "Les extras, comme raisins secs, pépites de chocolat, noix ou fruits secs, font environ un tiers de la farine et de l'avoine."
+     ],
+     "q": "Quels extras mettrais-tu dans ton cookie à l'avoine idéal ?",
+     "c": "Fais une petite fournée de cookies à l'avoine, invente ta propre combinaison d'extras et donne-lui un nom."
+    },
+    "it": {
+     "t": "Biscotti all'avena",
+     "g": "Prepara biscotti all'avena morbidi con spezie calde e il tuo mix divertente di ingredienti extra.",
+     "p": [
+      "I fiocchi d'avena interi danno masticabilità e gusto di nocciola; quelli fini fanno un biscotto più morbido e uniforme.",
+      "Lo zucchero di canna e una base di burro montato a crema li mantengono umidi; cannella o noce moscata danno calore.",
+      "Gli extra come uvetta, cioccolato, frutta secca o disidratata devono essere circa un terzo di farina e avena."
+     ],
+     "q": "Quali extra renderebbero perfetto il tuo biscotto all'avena?",
+     "c": "Prepara una piccola dose di biscotti all'avena, inventa il tuo mix di extra e dagli un nome."
+    },
+    "pt": {
+     "t": "Bolachas de aveia",
+     "g": "Faz bolachas de aveia macias com especiarias quentes e a tua própria mistura divertida de extras.",
+     "p": [
+      "Os flocos de aveia grossos dão textura e sabor a noz; os finos fazem uma bolacha mais macia e uniforme.",
+      "O açúcar amarelo e uma base de manteiga batida em creme mantêm-nas húmidas; canela ou noz-moscada dão calor.",
+      "Os extras, como passas, pepitas de chocolate, frutos secos ou fruta desidratada, devem somar um terço da farinha e aveia."
+     ],
+     "q": "Que extras teria a tua bolacha de aveia perfeita?",
+     "c": "Faz uma pequena fornada de bolachas de aveia, inventa a tua combinação de extras e dá-lhe um nome."
+    },
+    "pt_BR": {
+     "t": "Cookies de aveia",
+     "g": "Asse cookies de aveia macios com especiarias aconchegantes e sua própria mistura divertida de extras.",
+     "p": [
+      "Aveia em flocos grossos dá textura e sabor de castanha; a aveia em flocos finos deixa o cookie mais macio e uniforme.",
+      "Açúcar mascavo e uma base de manteiga batida em creme deixam eles úmidos; canela ou noz-moscada dão aconchego.",
+      "Extras como uvas-passas, gotas de chocolate, castanhas ou frutas secas devem somar um terço da farinha e da aveia."
+     ],
+     "q": "Quais extras teria o seu cookie de aveia perfeito?",
+     "c": "Asse uma pequena fornada de cookies de aveia, invente sua combinação de extras e dê um nome a ela."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: breads, pastry and chocolate",
+     "g": "Revisit yeast, shortcrust and chocolate basics and bake one thing from each family to see your progress.",
+     "p": [
+      "Yeast doughs need kneading, a warm rise, careful shaping and the poke test before baking.",
+      "Pastry stays tender with cold fat, little water, minimal handling and good chilling before baking.",
+      "Chocolate needs gentle heat and no water, and the right cocoa type keeps a recipe balanced."
+     ],
+     "q": "Which family feels most natural to you so far: breads, pastry or chocolate bakes?",
+     "c": "Plan a bake from each family for the coming days, like rolls, a small tart and brownies, and start with one today."
+    },
+    "de": {
+     "t": "Rückblick: Brot, Teig und Schokolade",
+     "g": "Wiederhole die Grundlagen zu Hefe, Mürbeteig und Schokolade und back aus jeder Familie etwas, um deinen Fortschritt zu sehen.",
+     "p": [
+      "Hefeteige brauchen Kneten, eine warme Gare, sorgfältiges Formen und die Fingerprobe vor dem Backen.",
+      "Mürbeteig bleibt zart mit kaltem Fett, wenig Wasser, wenig Kneten und gutem Kühlen vor dem Backen.",
+      "Schokolade braucht sanfte Hitze und kein Wasser, und die richtige Kakaosorte hält ein Rezept im Gleichgewicht."
+     ],
+     "q": "Welche Familie liegt dir bisher am meisten: Brot, Teig oder Schokoladengebäck?",
+     "c": "Plane für die nächsten Tage je ein Gebäck aus jeder Familie, etwa Brötchen, eine kleine Tarte und Brownies, und beginne heute."
+    },
+    "es": {
+     "t": "Repaso: panes, masas y chocolate",
+     "g": "Repasa lo básico de levadura, masa quebrada y chocolate y hornea algo de cada familia para ver tu progreso.",
+     "p": [
+      "Las masas con levadura necesitan amasado, un levado templado, un formado cuidadoso y la prueba del dedo.",
+      "La masa quebrada queda tierna con grasa fría, poca agua, poco amasado y un buen reposo en frío.",
+      "El chocolate necesita calor suave y nada de agua, y el tipo de cacao correcto mantiene la receta equilibrada."
+     ],
+     "q": "¿Qué familia te resulta más natural por ahora: panes, masas o chocolate?",
+     "c": "Planea un horneado de cada familia para los próximos días, como panecillos, una tartaleta y brownies, y empieza hoy con uno."
+    },
+    "fr": {
+     "t": "Bilan : pains, pâtes et chocolat",
+     "g": "Révise les bases de la levure, de la pâte brisée et du chocolat, et réalise une recette de chaque famille pour mesurer tes progrès.",
+     "p": [
+      "Les pâtes levées demandent pétrissage, pousse au chaud, façonnage soigné et test du doigt avant d'enfourner.",
+      "La pâte reste tendre avec un beurre froid, peu d'eau, peu de manipulation et un bon repos au frais.",
+      "Le chocolat demande une chaleur douce et pas d'eau, et le bon cacao garde une recette équilibrée."
+     ],
+     "q": "Quelle famille te semble la plus naturelle pour l'instant : pains, pâtes ou chocolat ?",
+     "c": "Prévois une recette de chaque famille pour les prochains jours : petits pains, tartelette et brownies, et commence aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: pani, paste e cioccolato",
+     "g": "Ripassa le basi di lievito, pasta brisée e cioccolato e prepara qualcosa di ogni famiglia per vedere i tuoi progressi.",
+     "p": [
+      "Gli impasti lievitati richiedono impasto, lievitazione al caldo, formatura attenta e la prova del dito.",
+      "La pasta resta tenera con grassi freddi, poca acqua, poca lavorazione e un buon riposo in frigo.",
+      "Il cioccolato vuole calore dolce e niente acqua, e il cacao giusto mantiene la ricetta equilibrata."
+     ],
+     "q": "Quale famiglia ti viene più naturale finora: pani, paste o dolci al cioccolato?",
+     "c": "Pianifica un dolce di ogni famiglia per i prossimi giorni, come panini, una crostatina e brownie, e inizia oggi con uno."
+    },
+    "pt": {
+     "t": "Revisão: pães, massas e chocolate",
+     "g": "Revê o básico do fermento, da massa quebrada e do chocolate e faz uma receita de cada família para veres o teu progresso.",
+     "p": [
+      "As massas com fermento precisam de amassar, levedar num sítio ameno, moldagem cuidada e o teste do dedo.",
+      "A massa quebrada fica tenra com gordura fria, pouca água, pouco manuseamento e bom repouso no frio.",
+      "O chocolate pede calor suave e nada de água, e o cacau certo mantém a receita equilibrada."
+     ],
+     "q": "Que família te parece mais natural até agora: pães, massas ou chocolate?",
+     "c": "Planeia uma receita de cada família para os próximos dias, como pãezinhos, uma tartelete e brownies, e começa hoje com uma."
+    },
+    "pt_BR": {
+     "t": "Revisão: pães, massas e chocolate",
+     "g": "Revise o básico de fermento, massa podre e chocolate e asse algo de cada família para ver seu progresso.",
+     "p": [
+      "Massas com fermento precisam de sova, fermentação em lugar morno, modelagem cuidadosa e o teste do dedo.",
+      "A massa podre fica macia com gordura gelada, pouca água, pouco manuseio e um bom descanso na geladeira.",
+      "O chocolate pede calor suave e nada de água, e o cacau certo mantém a receita equilibrada."
+     ],
+     "q": "Qual família parece mais natural para você até agora: pães, massas ou chocolate?",
+     "c": "Planeje uma receita de cada família para os próximos dias, como pãezinhos, uma tortinha e brownies, e comece hoje com uma."
+    }
+   }
+  }
+ ]
+}

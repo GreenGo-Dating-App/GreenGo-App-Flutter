@@ -1,0 +1,835 @@
+{
+ "topic": "cycling",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riding in a straight line",
+     "g": "Hold a steady, predictable line by looking ahead and staying relaxed.",
+     "p": [
+      "The bike follows your eyes: look well ahead where you want to go, not at the ground just in front of the wheel.",
+      "Keep your arms slightly bent and your grip light; stiff arms turn every small movement into a wobble.",
+      "A little more speed makes balance easier, so pedal smoothly instead of crawling along."
+     ],
+     "q": "Where do your eyes usually go when you ride: far ahead or close to the wheel?",
+     "c": "Ride along a painted line in an empty car park or path and try to stay on it."
+    },
+    "de": {
+     "t": "Geradeaus fahren",
+     "g": "Halte eine ruhige, vorhersehbare Linie, indem du nach vorn schaust und locker bleibst.",
+     "p": [
+      "Das Rad folgt deinem Blick: Schau weit voraus, wohin du willst, nicht auf den Boden direkt vor dem Rad.",
+      "Halte die Arme leicht gebeugt und greif locker; steife Arme machen aus jeder kleinen Bewegung ein Wackeln.",
+      "Etwas mehr Tempo erleichtert das Gleichgewicht, also tritt gleichmäßig statt im Schneckentempo."
+     ],
+     "q": "Wohin schaust du beim Fahren meistens: weit voraus oder nah vors Rad?",
+     "c": "Fahr auf einem leeren Parkplatz oder Weg eine gemalte Linie entlang und bleib darauf."
+    },
+    "es": {
+     "t": "Ir en línea recta",
+     "g": "Mantén una trayectoria estable y predecible mirando lejos y yendo relajado.",
+     "p": [
+      "La bici sigue tu mirada: mira lejos hacia donde quieres ir, no al suelo justo delante de la rueda.",
+      "Lleva los brazos algo flexionados y agarra suave; los brazos rígidos convierten cada movimiento en un tambaleo.",
+      "Un poco más de velocidad facilita el equilibrio, así que pedalea con fluidez en lugar de ir muy lento."
+     ],
+     "q": "¿Hacia dónde miras normalmente al pedalear: lejos o cerca de la rueda?",
+     "c": "Sigue una línea pintada en un aparcamiento o camino vacío e intenta no salirte."
+    },
+    "fr": {
+     "t": "Rouler en ligne droite",
+     "g": "Garde une trajectoire stable et prévisible en regardant loin et en restant détendu.",
+     "p": [
+      "Le vélo suit ton regard : regarde loin là où tu veux aller, pas le sol juste devant la roue.",
+      "Garde les bras légèrement fléchis et une prise légère ; des bras raides transforment chaque mouvement en zigzag.",
+      "Un peu plus de vitesse aide l'équilibre : pédale souplement plutôt que d'avancer au ralenti."
+     ],
+     "q": "Où vont tes yeux d'habitude quand tu roules : loin devant ou près de la roue ?",
+     "c": "Suis une ligne peinte sur un parking ou un chemin vide en essayant de rester dessus."
+    },
+    "it": {
+     "t": "Pedalare in linea retta",
+     "g": "Mantieni una traiettoria stabile e prevedibile guardando lontano e restando rilassato.",
+     "p": [
+      "La bici segue lo sguardo: guarda lontano dove vuoi andare, non il terreno appena davanti alla ruota.",
+      "Tieni le braccia leggermente piegate e la presa leggera; braccia rigide trasformano ogni movimento in un ondeggiamento.",
+      "Un po' più di velocità rende l'equilibrio più facile, quindi pedala fluido invece di procedere piano piano."
+     ],
+     "q": "Dove guardi di solito quando pedali: lontano o vicino alla ruota?",
+     "c": "Segui una linea dipinta in un parcheggio o vialetto vuoto e cerca di restarci sopra."
+    },
+    "pt": {
+     "t": "Andar em linha reta",
+     "g": "Mantém uma trajetória estável e previsível a olhar em frente e relaxado.",
+     "p": [
+      "A bicicleta segue o teu olhar: olha bem à frente para onde queres ir, não para o chão junto à roda.",
+      "Mantém os braços ligeiramente dobrados e as mãos leves; braços rígidos transformam cada movimento numa oscilação.",
+      "Um pouco mais de velocidade facilita o equilíbrio, por isso pedala com fluidez em vez de ir muito devagar."
+     ],
+     "q": "Para onde costumas olhar quando pedalas: lá para a frente ou perto da roda?",
+     "c": "Segue uma linha pintada num parque de estacionamento ou caminho vazio e tenta não sair dela."
+    },
+    "pt_BR": {
+     "t": "Pedalando em linha reta",
+     "g": "Mantenha uma trajetória estável e previsível olhando à frente e relaxado.",
+     "p": [
+      "A bike segue seu olhar: olhe bem à frente para onde quer ir, não para o chão logo na frente da roda.",
+      "Mantenha os braços levemente dobrados e as mãos leves; braços duros transformam cada movimento num balanço.",
+      "Um pouco mais de velocidade facilita o equilíbrio, então pedale com fluidez em vez de ir muito devagar."
+     ],
+     "q": "Para onde você costuma olhar quando pedala: lá na frente ou perto da roda?",
+     "c": "Siga uma faixa pintada num estacionamento ou caminho vazio e tente não sair dela."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Looking over your shoulder",
+     "g": "Check behind you safely without drifting off your line.",
+     "p": [
+      "Before moving sideways, turning or passing, a quick look behind tells you what is coming.",
+      "Turn your head and shoulders a little, not your whole body, and keep your arms relaxed so the bars stay straight.",
+      "Practise with one hand on the bar centre if it helps, and look back only briefly before facing forward again."
+     ],
+     "q": "When during a ride do you think a shoulder check matters most?",
+     "c": "In a quiet area, practise ten shoulder checks while keeping a straight line."
+    },
+    "de": {
+     "t": "Der Schulterblick",
+     "g": "Schau sicher nach hinten, ohne von deiner Linie abzukommen.",
+     "p": [
+      "Vor jedem Seitenwechsel, Abbiegen oder Überholen zeigt dir ein kurzer Blick zurück, was kommt.",
+      "Dreh Kopf und Schultern nur ein wenig, nicht den ganzen Körper, und halte die Arme locker, damit der Lenker gerade bleibt.",
+      "Übe ruhig mit einer Hand nahe der Lenkermitte und schau nur kurz zurück, bevor du wieder nach vorn blickst."
+     ],
+     "q": "Wann ist ein Schulterblick beim Fahren deiner Meinung nach am wichtigsten?",
+     "c": "Übe an einem ruhigen Ort zehn Schulterblicke und halte dabei die Linie."
+    },
+    "es": {
+     "t": "Mirar por encima del hombro",
+     "g": "Comprueba lo que viene detrás sin desviarte de tu trayectoria.",
+     "p": [
+      "Antes de moverte a un lado, girar o adelantar, un vistazo atrás te dice qué se acerca.",
+      "Gira un poco la cabeza y los hombros, no todo el cuerpo, y relaja los brazos para que el manillar siga recto.",
+      "Si ayuda, practica con una mano cerca del centro del manillar y mira atrás solo un instante."
+     ],
+     "q": "¿En qué momentos de una salida crees que importa más mirar atrás?",
+     "c": "En una zona tranquila, practica diez miradas atrás manteniendo la línea recta."
+    },
+    "fr": {
+     "t": "Regarder par-dessus l'épaule",
+     "g": "Vérifie derrière toi en toute sécurité sans dévier de ta trajectoire.",
+     "p": [
+      "Avant de te décaler, de tourner ou de dépasser, un rapide coup d'œil en arrière te montre ce qui arrive.",
+      "Tourne un peu la tête et les épaules, pas tout le corps, et garde les bras souples pour que le guidon reste droit.",
+      "Entraîne-toi avec une main près du centre du guidon si ça aide, et regarde en arrière brièvement."
+     ],
+     "q": "À quels moments d'une sortie ce coup d'œil compte-t-il le plus, selon toi ?",
+     "c": "Dans un endroit calme, fais dix coups d'œil par-dessus l'épaule en gardant ta ligne."
+    },
+    "it": {
+     "t": "Guardare dietro le spalle",
+     "g": "Controlla cosa c'è dietro di te senza uscire dalla traiettoria.",
+     "p": [
+      "Prima di spostarti, svoltare o sorpassare, una rapida occhiata indietro ti dice cosa sta arrivando.",
+      "Ruota un po' testa e spalle, non tutto il corpo, e tieni le braccia morbide perché il manubrio resti dritto.",
+      "Se aiuta, esercitati con una mano vicino al centro del manubrio e guarda indietro solo per un attimo."
+     ],
+     "q": "In quali momenti di un'uscita pensi che conti di più guardarsi alle spalle?",
+     "c": "In una zona tranquilla, fai dieci controlli alle spalle mantenendo la linea dritta."
+    },
+    "pt": {
+     "t": "Olhar por cima do ombro",
+     "g": "Verifica o que vem atrás sem te desviares da tua trajetória.",
+     "p": [
+      "Antes de te desviares, virar ou ultrapassar, uma olhadela rápida para trás mostra-te o que se aproxima.",
+      "Roda um pouco a cabeça e os ombros, não o corpo todo, e mantém os braços soltos para o guiador ficar direito.",
+      "Se ajudar, treina com uma mão perto do centro do guiador e olha para trás só por um instante."
+     ],
+     "q": "Em que momentos de um passeio achas que olhar para trás importa mais?",
+     "c": "Numa zona calma, pratica dez olhadelas para trás mantendo a linha reta."
+    },
+    "pt_BR": {
+     "t": "Olhando por cima do ombro",
+     "g": "Confira o que vem atrás sem sair da sua trajetória.",
+     "p": [
+      "Antes de mudar de faixa, virar ou ultrapassar, uma olhada rápida para trás mostra o que está vindo.",
+      "Gire um pouco a cabeça e os ombros, não o corpo todo, e mantenha os braços soltos para o guidão ficar reto.",
+      "Se ajudar, treine com uma mão perto do centro do guidão e olhe para trás só por um instante."
+     ],
+     "q": "Em que momentos de um pedal você acha que olhar para trás é mais importante?",
+     "c": "Num lugar tranquilo, pratique dez olhadas para trás mantendo a linha reta."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signalling with your hands",
+     "g": "Use clear hand signals so others know what you are about to do.",
+     "p": [
+      "To turn, look behind first, then stretch your arm out straight on the side you are turning towards.",
+      "Hold the signal for a few seconds, then bring both hands back to the bars before you brake or turn.",
+      "Signals for stopping or slowing differ between countries, so learn the ones used where you ride."
+     ],
+     "q": "Do you feel confident riding with one hand off the bars?",
+     "c": "Practise signalling left and right while riding slowly in a quiet place."
+    },
+    "de": {
+     "t": "Handzeichen geben",
+     "g": "Gib klare Handzeichen, damit andere wissen, was du vorhast.",
+     "p": [
+      "Zum Abbiegen erst nach hinten schauen, dann den Arm auf der Abbiegeseite gerade ausstrecken.",
+      "Halte das Zeichen ein paar Sekunden und nimm beide Hände an den Lenker, bevor du bremst oder abbiegst.",
+      "Zeichen fürs Anhalten oder Langsamerwerden unterscheiden sich je nach Land; lerne die, die dort gelten, wo du fährst."
+     ],
+     "q": "Fühlst du dich sicher, wenn du mit einer Hand fährst?",
+     "c": "Übe langsam an einem ruhigen Ort Handzeichen nach links und rechts."
+    },
+    "es": {
+     "t": "Señalizar con las manos",
+     "g": "Usa señales claras con las manos para que los demás sepan qué vas a hacer.",
+     "p": [
+      "Para girar, mira primero atrás y luego extiende el brazo recto hacia el lado al que vas a girar.",
+      "Mantén la señal unos segundos y vuelve a poner ambas manos en el manillar antes de frenar o girar.",
+      "Las señales de parar o reducir varían según el país, así que aprende las que se usan donde pedaleas."
+     ],
+     "q": "¿Te sientes seguro pedaleando con una mano fuera del manillar?",
+     "c": "Practica señalizar a izquierda y derecha pedaleando despacio en un lugar tranquilo."
+    },
+    "fr": {
+     "t": "Signaler avec les mains",
+     "g": "Utilise des signes clairs pour que les autres sachent ce que tu vas faire.",
+     "p": [
+      "Pour tourner, regarde d'abord derrière toi, puis tends le bras bien droit du côté où tu tournes.",
+      "Garde le signe quelques secondes, puis remets les deux mains sur le guidon avant de freiner ou de tourner.",
+      "Les signes pour s'arrêter ou ralentir varient selon les pays : apprends ceux utilisés là où tu roules."
+     ],
+     "q": "Te sens-tu à l'aise en roulant avec une seule main sur le guidon ?",
+     "c": "Entraîne-toi à signaler à gauche et à droite en roulant lentement dans un endroit calme."
+    },
+    "it": {
+     "t": "Segnalare con le mani",
+     "g": "Usa segnali chiari con le mani perché gli altri sappiano cosa stai per fare.",
+     "p": [
+      "Per svoltare guarda prima dietro, poi stendi il braccio dritto dal lato verso cui giri.",
+      "Tieni il segnale qualche secondo, poi riporta entrambe le mani sul manubrio prima di frenare o svoltare.",
+      "I segnali per fermarsi o rallentare cambiano da paese a paese: impara quelli usati dove pedali."
+     ],
+     "q": "Ti senti sicuro a pedalare con una mano staccata dal manubrio?",
+     "c": "Esercitati a segnalare a sinistra e a destra pedalando piano in un posto tranquillo."
+    },
+    "pt": {
+     "t": "Sinalizar com as mãos",
+     "g": "Usa sinais claros com as mãos para que os outros saibam o que vais fazer.",
+     "p": [
+      "Para virar, olha primeiro para trás e depois estica o braço a direito para o lado para onde vais.",
+      "Mantém o sinal uns segundos e volta a pôr as duas mãos no guiador antes de travar ou virar.",
+      "Os sinais para parar ou abrandar variam de país para país, por isso aprende os usados onde pedalas."
+     ],
+     "q": "Sentes-te à vontade a pedalar com uma mão fora do guiador?",
+     "c": "Pratica sinalizar para a esquerda e para a direita a pedalar devagar num sítio calmo."
+    },
+    "pt_BR": {
+     "t": "Sinalizando com as mãos",
+     "g": "Use sinais claros com as mãos para que os outros saibam o que você vai fazer.",
+     "p": [
+      "Para virar, olhe primeiro para trás e depois estique o braço reto para o lado para onde vai virar.",
+      "Mantenha o sinal por alguns segundos e volte as duas mãos ao guidão antes de frear ou virar.",
+      "Os sinais de parar ou reduzir mudam de país para país, então aprenda os usados onde você pedala."
+     ],
+     "q": "Você se sente seguro pedalando com uma mão fora do guidão?",
+     "c": "Pratique sinalizar para a esquerda e para a direita pedalando devagar num lugar tranquilo."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cornering basics",
+     "g": "Take bends smoothly by slowing first, leaning the bike and looking through the turn.",
+     "p": [
+      "Do your braking before the corner while the bike is upright, then release the brakes as you turn.",
+      "Look towards the exit of the bend; your shoulders and the bike will follow your eyes.",
+      "Keep the inside pedal up and press gently on the outside pedal, leaning the bike more than your body."
+     ],
+     "q": "Do corners make you feel nervous or excited?",
+     "c": "In an empty space, ride slow figure-of-eight loops while looking through each turn."
+    },
+    "de": {
+     "t": "Kurven-Grundlagen",
+     "g": "Fahr Kurven ruhig: erst abbremsen, dann das Rad neigen und durch die Kurve schauen.",
+     "p": [
+      "Bremse vor der Kurve, solange das Rad aufrecht ist, und lös die Bremsen beim Einlenken.",
+      "Blick zum Kurvenausgang; Schultern und Rad folgen deinen Augen.",
+      "Halte das kurveninnere Pedal oben, drück leicht aufs äußere und neig eher das Rad als den Körper."
+     ],
+     "q": "Machen dich Kurven eher nervös oder begeistern sie dich?",
+     "c": "Fahr auf einer freien Fläche langsame Achten und schau dabei durch jede Kurve."
+    },
+    "es": {
+     "t": "Lo básico de las curvas",
+     "g": "Toma las curvas con suavidad: frena antes, inclina la bici y mira hacia la salida.",
+     "p": [
+      "Frena antes de la curva con la bici recta y suelta los frenos al empezar a girar.",
+      "Mira hacia la salida de la curva; los hombros y la bici seguirán tu mirada.",
+      "Lleva el pedal interior arriba, apoya suave en el exterior e inclina más la bici que el cuerpo."
+     ],
+     "q": "¿Las curvas te ponen nervioso o te emocionan?",
+     "c": "En un espacio vacío, haz ochos lentos mirando hacia la salida de cada giro."
+    },
+    "fr": {
+     "t": "Les bases du virage",
+     "g": "Négocie les virages en douceur : ralentis d'abord, incline le vélo et regarde la sortie.",
+     "p": [
+      "Freine avant le virage tant que le vélo est droit, puis relâche les freins en tournant.",
+      "Regarde vers la sortie du virage ; tes épaules et le vélo suivront ton regard.",
+      "Garde la pédale intérieure en haut, appuie doucement sur l'extérieure et incline le vélo plus que ton corps."
+     ],
+     "q": "Les virages te rendent-ils plutôt nerveux ou enthousiaste ?",
+     "c": "Dans un espace vide, fais des huit lents en regardant la sortie de chaque virage."
+    },
+    "it": {
+     "t": "Le basi delle curve",
+     "g": "Affronta le curve con fluidità: rallenta prima, inclina la bici e guarda l'uscita.",
+     "p": [
+      "Frena prima della curva con la bici dritta, poi rilascia i freni mentre giri.",
+      "Guarda verso l'uscita della curva; spalle e bici seguiranno il tuo sguardo.",
+      "Tieni il pedale interno in alto, premi leggermente su quello esterno e inclina la bici più del corpo."
+     ],
+     "q": "Le curve ti rendono nervoso o ti entusiasmano?",
+     "c": "In uno spazio vuoto, fai degli otto lenti guardando l'uscita di ogni curva."
+    },
+    "pt": {
+     "t": "O básico das curvas",
+     "g": "Faz as curvas com suavidade: abranda primeiro, inclina a bicicleta e olha para a saída.",
+     "p": [
+      "Trava antes da curva com a bicicleta direita e solta os travões ao começar a virar.",
+      "Olha para a saída da curva; os ombros e a bicicleta seguem o teu olhar.",
+      "Mantém o pedal de dentro em cima, apoia levemente no de fora e inclina mais a bicicleta do que o corpo."
+     ],
+     "q": "As curvas deixam-te nervoso ou entusiasmado?",
+     "c": "Num espaço vazio, faz oitos lentos a olhar para a saída de cada curva."
+    },
+    "pt_BR": {
+     "t": "O básico das curvas",
+     "g": "Faça as curvas com suavidade: reduza antes, incline a bike e olhe para a saída.",
+     "p": [
+      "Freie antes da curva com a bike reta e solte os freios ao começar a virar.",
+      "Olhe para a saída da curva; os ombros e a bike seguem seu olhar.",
+      "Mantenha o pedal de dentro em cima, apoie de leve no de fora e incline mais a bike do que o corpo."
+     ],
+     "q": "As curvas deixam você nervoso ou empolgado?",
+     "c": "Num espaço vazio, faça oitos devagar olhando para a saída de cada curva."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riding over bumps",
+     "g": "Let the bike move beneath you so bumps, kerbs and roots feel smooth.",
+     "p": [
+      "Stand up slightly with pedals level, knees and elbows bent, like a spring ready to absorb a hit.",
+      "Keep a light grip and let the bike rise and fall under you instead of fighting it with stiff arms.",
+      "Look past the bump, keep rolling at a steady speed and avoid braking hard on top of it."
+     ],
+     "q": "What kinds of bumps or rough patches do you meet on your usual routes?",
+     "c": "Practise rolling over a small bump or a line of tape in this ready position."
+    },
+    "de": {
+     "t": "Über Unebenheiten fahren",
+     "g": "Lass das Rad unter dir arbeiten, damit Bodenwellen, Kanten und Wurzeln sanft wirken.",
+     "p": [
+      "Steh leicht auf, Pedale waagerecht, Knie und Ellbogen gebeugt, wie eine Feder, die Stöße schluckt.",
+      "Greif locker und lass das Rad unter dir auf und ab gehen, statt mit steifen Armen dagegenzuhalten.",
+      "Schau über das Hindernis hinaus, roll gleichmäßig weiter und bremse nicht scharf darauf."
+     ],
+     "q": "Welche Unebenheiten triffst du auf deinen üblichen Strecken?",
+     "c": "Übe in dieser Bereitschaftsposition, über eine kleine Welle oder einen Klebestreifen zu rollen."
+    },
+    "es": {
+     "t": "Pasar por baches",
+     "g": "Deja que la bici se mueva bajo tu cuerpo para que baches, bordillos y raíces se sientan suaves.",
+     "p": [
+      "Levántate un poco con los pedales nivelados y rodillas y codos flexionados, como un muelle listo para absorber.",
+      "Agarra suave y deja que la bici suba y baje bajo ti en lugar de pelear con brazos rígidos.",
+      "Mira más allá del bache, sigue rodando a ritmo constante y evita frenar fuerte encima de él."
+     ],
+     "q": "¿Qué tipo de baches o tramos irregulares encuentras en tus rutas habituales?",
+     "c": "Practica pasar un pequeño bache o una línea de cinta en esta posición de alerta."
+    },
+    "fr": {
+     "t": "Passer les bosses",
+     "g": "Laisse le vélo bouger sous toi pour que bosses, bordures et racines passent en douceur.",
+     "p": [
+      "Lève-toi légèrement, pédales à l'horizontale, genoux et coudes fléchis, comme un ressort prêt à absorber.",
+      "Garde une prise légère et laisse le vélo monter et descendre sous toi au lieu de lutter avec des bras raides.",
+      "Regarde au-delà de la bosse, continue à rouler régulièrement et évite de freiner fort dessus."
+     ],
+     "q": "Quels types de bosses ou de passages abîmés rencontres-tu sur tes trajets habituels ?",
+     "c": "Entraîne-toi à passer une petite bosse ou une bande adhésive dans cette position prête."
+    },
+    "it": {
+     "t": "Superare le asperità",
+     "g": "Lascia muovere la bici sotto di te perché dossi, gradini e radici diventino morbidi.",
+     "p": [
+      "Alzati leggermente con i pedali in piano, ginocchia e gomiti piegati, come una molla pronta ad assorbire.",
+      "Tieni la presa leggera e lascia che la bici salga e scenda sotto di te invece di combatterla con braccia rigide.",
+      "Guarda oltre l'ostacolo, continua a scorrere a velocità costante ed evita di frenare forte sopra di esso."
+     ],
+     "q": "Che tipo di buche o tratti sconnessi incontri sui tuoi percorsi abituali?",
+     "c": "Esercitati a passare su un piccolo dosso o una striscia di nastro in questa posizione pronta."
+    },
+    "pt": {
+     "t": "Passar por lombas",
+     "g": "Deixa a bicicleta mexer-se debaixo de ti para que lombas, passeios e raízes pareçam suaves.",
+     "p": [
+      "Levanta-te um pouco com os pedais nivelados e joelhos e cotovelos dobrados, como uma mola pronta a absorver.",
+      "Agarra com leveza e deixa a bicicleta subir e descer debaixo de ti em vez de lutar com braços rígidos.",
+      "Olha para lá da lomba, continua a rolar a ritmo constante e evita travar com força em cima dela."
+     ],
+     "q": "Que tipo de lombas ou troços irregulares encontras nos teus percursos habituais?",
+     "c": "Pratica passar por uma pequena lomba ou uma linha de fita nesta posição de prontidão."
+    },
+    "pt_BR": {
+     "t": "Passando por desníveis",
+     "g": "Deixe a bike se mexer embaixo de você para que lombadas, meios-fios e raízes fiquem suaves.",
+     "p": [
+      "Fique um pouco em pé com os pedais nivelados e joelhos e cotovelos dobrados, como uma mola pronta para absorver.",
+      "Segure com leveza e deixe a bike subir e descer embaixo de você em vez de brigar com braços duros.",
+      "Olhe para além do desnível, continue rodando em ritmo constante e evite frear forte em cima dele."
+     ],
+     "q": "Que tipo de desníveis ou trechos irregulares você encontra nos seus caminhos de sempre?",
+     "c": "Pratique passar por uma pequena lombada ou uma faixa de fita nessa posição de prontidão."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting on a hill",
+     "g": "Get moving on a slope smoothly by choosing the right gear and pushing off well.",
+     "p": [
+      "Before you stop on a hill, shift into an easy gear so restarting does not feel like lifting a wall.",
+      "Hold the brakes, raise your strong pedal to about two o'clock, then release and push down firmly.",
+      "If it is very steep, start at a slight angle across the slope, but only where there is no traffic."
+     ],
+     "q": "Do you have a hill near you that makes starting tricky?",
+     "c": "Try three hill starts on a gentle, quiet slope using an easy gear."
+    },
+    "de": {
+     "t": "Am Berg anfahren",
+     "g": "Fahr an einer Steigung sanft los, indem du den richtigen Gang wählst und kräftig startest.",
+     "p": [
+      "Schalte vor dem Anhalten am Hang in einen leichten Gang, damit das Anfahren nicht wie Wandheben wirkt.",
+      "Halte die Bremsen, bring dein starkes Pedal auf etwa zwei Uhr, lös die Bremsen und tritt kräftig.",
+      "Ist es sehr steil, fahr leicht schräg zum Hang an, aber nur dort, wo kein Verkehr ist."
+     ],
+     "q": "Gibt es in deiner Nähe einen Hügel, an dem das Anfahren schwierig ist?",
+     "c": "Probier drei Anfahrten an einer sanften, ruhigen Steigung in einem leichten Gang."
+    },
+    "es": {
+     "t": "Arrancar en cuesta",
+     "g": "Arranca en una pendiente con suavidad eligiendo bien la marcha e impulsándote bien.",
+     "p": [
+      "Antes de parar en una cuesta, pon una marcha suave para que arrancar no sea como empujar una pared.",
+      "Sujeta los frenos, sube tu pedal fuerte a las dos en punto, suelta y empuja con decisión.",
+      "Si es muy empinada, arranca algo en diagonal a la pendiente, pero solo donde no haya tráfico."
+     ],
+     "q": "¿Tienes alguna cuesta cerca que complique arrancar?",
+     "c": "Prueba tres arranques en una cuesta suave y tranquila con una marcha corta."
+    },
+    "fr": {
+     "t": "Démarrer en côte",
+     "g": "Repars en montée en douceur en choisissant le bon braquet et en poussant bien.",
+     "p": [
+      "Avant de t'arrêter en côte, passe un braquet facile pour que redémarrer ne ressemble pas à soulever un mur.",
+      "Serre les freins, place ta pédale forte vers deux heures, puis relâche et appuie franchement.",
+      "Si c'est très raide, démarre légèrement en biais par rapport à la pente, mais seulement sans circulation."
+     ],
+     "q": "Y a-t-il une côte près de chez toi où démarrer est compliqué ?",
+     "c": "Essaie trois démarrages sur une pente douce et calme avec un braquet facile."
+    },
+    "it": {
+     "t": "Partire in salita",
+     "g": "Riparti su una pendenza con fluidità scegliendo il rapporto giusto e spingendo bene.",
+     "p": [
+      "Prima di fermarti in salita metti un rapporto agile, così ripartire non sembrerà sollevare un muro.",
+      "Tieni i freni, porta il pedale più forte verso le due, poi rilascia e spingi con decisione.",
+      "Se è molto ripida, parti leggermente in diagonale rispetto alla pendenza, ma solo dove non c'è traffico."
+     ],
+     "q": "C'è una salita vicino a te dove ripartire è complicato?",
+     "c": "Prova tre partenze su una salita dolce e tranquilla con un rapporto agile."
+    },
+    "pt": {
+     "t": "Arrancar numa subida",
+     "g": "Arranca numa inclinação com suavidade escolhendo a mudança certa e dando um bom impulso.",
+     "p": [
+      "Antes de parares numa subida, mete uma mudança leve para que arrancar não pareça empurrar uma parede.",
+      "Segura os travões, põe o teu pedal mais forte nas duas horas, solta e empurra com decisão.",
+      "Se for muito íngreme, arranca ligeiramente na diagonal, mas só onde não houver trânsito."
+     ],
+     "q": "Há alguma subida perto de ti onde arrancar seja difícil?",
+     "c": "Experimenta três arranques numa subida suave e calma com uma mudança leve."
+    },
+    "pt_BR": {
+     "t": "Arrancando na subida",
+     "g": "Arranque numa inclinação com suavidade escolhendo a marcha certa e dando um bom impulso.",
+     "p": [
+      "Antes de parar numa subida, passe para uma marcha leve para que arrancar não pareça empurrar uma parede.",
+      "Segure os freios, coloque seu pedal mais forte nas duas horas, solte e empurre com firmeza.",
+      "Se for muito íngreme, arranque levemente na diagonal, mas só onde não houver trânsito."
+     ],
+     "q": "Tem alguma subida perto de você onde arrancar é difícil?",
+     "c": "Teste três arrancadas numa subida suave e tranquila com uma marcha leve."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Climbing for beginners",
+     "g": "Enjoy climbs with easy gears, steady breathing and plenty of patience.",
+     "p": [
+      "Shift into an easy gear early and keep a pace you could hold while still saying a few words.",
+      "Stay seated on most climbs, sit a little forward and relax your shoulders and grip.",
+      "Breathe deeply and rhythmically; stopping for a short breather is perfectly fine."
+     ],
+     "q": "How do you feel when you see a hill ahead on a ride?",
+     "c": "Ride up a gentle hill today at a pace that lets you talk, using your easiest gears."
+    },
+    "de": {
+     "t": "Bergauf für Einsteiger",
+     "g": "Genieße Anstiege mit leichten Gängen, ruhigem Atem und viel Geduld.",
+     "p": [
+      "Schalte früh in einen leichten Gang und halte ein Tempo, bei dem du noch ein paar Worte sprechen kannst.",
+      "Bleib an den meisten Anstiegen sitzen, rutsch etwas nach vorn und lockere Schultern und Griff.",
+      "Atme tief und rhythmisch; eine kurze Verschnaufpause ist völlig in Ordnung."
+     ],
+     "q": "Wie fühlst du dich, wenn du auf einer Fahrt einen Hügel vor dir siehst?",
+     "c": "Fahr heute einen sanften Hügel hinauf, in einem Tempo, bei dem du reden kannst."
+    },
+    "es": {
+     "t": "Subidas para principiantes",
+     "g": "Disfruta las subidas con marchas suaves, respiración tranquila y mucha paciencia.",
+     "p": [
+      "Pon pronto una marcha suave y mantén un ritmo al que aún podrías decir unas palabras.",
+      "Quédate sentado en casi todas las subidas, adelántate un poco y relaja hombros y manos.",
+      "Respira profundo y con ritmo; parar a tomar aire un momento está perfectamente bien."
+     ],
+     "q": "¿Cómo te sientes cuando ves una cuesta por delante?",
+     "c": "Sube hoy una cuesta suave a un ritmo que te permita hablar, con tus marchas más cortas."
+    },
+    "fr": {
+     "t": "Grimper pour débutants",
+     "g": "Profite des montées avec des braquets faciles, une respiration calme et de la patience.",
+     "p": [
+      "Passe tôt un braquet facile et garde une allure à laquelle tu peux encore dire quelques mots.",
+      "Reste assis dans la plupart des montées, avance-toi un peu sur la selle et détends épaules et mains.",
+      "Respire profondément et en rythme ; faire une petite pause pour souffler est tout à fait normal."
+     ],
+     "q": "Que ressens-tu quand tu vois une côte arriver devant toi ?",
+     "c": "Monte aujourd'hui une côte douce à une allure qui te permet de parler, avec tes braquets les plus faciles."
+    },
+    "it": {
+     "t": "La salita per principianti",
+     "g": "Goditi le salite con rapporti agili, respiro tranquillo e tanta pazienza.",
+     "p": [
+      "Metti presto un rapporto agile e tieni un ritmo al quale riusciresti ancora a dire qualche parola.",
+      "Resta seduto nella maggior parte delle salite, spostati un po' in avanti e rilassa spalle e presa.",
+      "Respira profondo e con ritmo; fermarsi a riprendere fiato è del tutto normale."
+     ],
+     "q": "Come ti senti quando vedi una salita davanti a te?",
+     "c": "Sali oggi una salita dolce a un ritmo che ti permetta di parlare, con i rapporti più agili."
+    },
+    "pt": {
+     "t": "Subidas para principiantes",
+     "g": "Aproveita as subidas com mudanças leves, respiração calma e muita paciência.",
+     "p": [
+      "Mete cedo uma mudança leve e mantém um ritmo a que ainda consigas dizer algumas palavras.",
+      "Fica sentado na maioria das subidas, chega-te um pouco à frente e relaxa ombros e mãos.",
+      "Respira fundo e com ritmo; parar um pouco para recuperar o fôlego é perfeitamente normal."
+     ],
+     "q": "Como te sentes quando vês uma subida pela frente num passeio?",
+     "c": "Sobe hoje uma subida suave a um ritmo que te deixe falar, com as mudanças mais leves."
+    },
+    "pt_BR": {
+     "t": "Subidas para iniciantes",
+     "g": "Curta as subidas com marchas leves, respiração tranquila e muita paciência.",
+     "p": [
+      "Passe cedo para uma marcha leve e mantenha um ritmo em que você ainda consiga falar algumas palavras.",
+      "Fique sentado na maioria das subidas, vá um pouco para frente e relaxe ombros e mãos.",
+      "Respire fundo e com ritmo; parar um pouco para recuperar o fôlego é totalmente normal."
+     ],
+     "q": "Como você se sente quando vê uma subida pela frente num pedal?",
+     "c": "Suba hoje uma ladeira suave num ritmo que permita conversar, usando as marchas mais leves."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Descending for beginners",
+     "g": "Control your speed on the way down so descents feel calm and fun.",
+     "p": [
+      "Keep both hands on the bars with a finger or two resting on the brake levers, ready to slow down.",
+      "Brake gently and early in pulses rather than dragging the brakes all the way, and slow down before bends.",
+      "Stand slightly with pedals level and shift your weight back a little; look far ahead."
+     ],
+     "q": "Do you prefer going up hills or coming down them?",
+     "c": "Ride down a gentle, quiet slope while practising light, controlled braking."
+    },
+    "de": {
+     "t": "Bergab für Einsteiger",
+     "g": "Kontrolliere dein Tempo bergab, damit Abfahrten ruhig und spaßig sind.",
+     "p": [
+      "Halte beide Hände am Lenker, ein oder zwei Finger an den Bremshebeln, bereit zum Bremsen.",
+      "Bremse früh und sanft in Intervallen statt dauernd schleifen zu lassen, und werde vor Kurven langsamer.",
+      "Steh leicht mit waagerechten Pedalen, verlagere das Gewicht etwas nach hinten und schau weit voraus."
+     ],
+     "q": "Fährst du lieber bergauf oder bergab?",
+     "c": "Fahr einen sanften, ruhigen Hang hinunter und übe leichtes, kontrolliertes Bremsen."
+    },
+    "es": {
+     "t": "Bajadas para principiantes",
+     "g": "Controla la velocidad al bajar para que los descensos sean tranquilos y divertidos.",
+     "p": [
+      "Lleva ambas manos en el manillar con uno o dos dedos sobre las manetas, listo para frenar.",
+      "Frena suave y con antelación a toques en vez de arrastrar los frenos todo el rato, y reduce antes de las curvas.",
+      "Levántate un poco con los pedales nivelados, echa algo el peso atrás y mira lejos."
+     ],
+     "q": "¿Prefieres subir cuestas o bajarlas?",
+     "c": "Baja una pendiente suave y tranquila practicando una frenada ligera y controlada."
+    },
+    "fr": {
+     "t": "Descendre pour débutants",
+     "g": "Contrôle ta vitesse en descente pour qu'elle reste calme et amusante.",
+     "p": [
+      "Garde les deux mains sur le guidon, un ou deux doigts sur les leviers de frein, prêt à ralentir.",
+      "Freine tôt et doucement par petites pressions plutôt qu'en continu, et ralentis avant les virages.",
+      "Lève-toi légèrement, pédales à l'horizontale, recule un peu ton poids et regarde loin devant."
+     ],
+     "q": "Tu préfères monter les côtes ou les descendre ?",
+     "c": "Descends une pente douce et calme en t'entraînant à freiner légèrement et avec contrôle."
+    },
+    "it": {
+     "t": "La discesa per principianti",
+     "g": "Controlla la velocità in discesa perché sia tranquilla e divertente.",
+     "p": [
+      "Tieni entrambe le mani sul manubrio con uno o due dita sulle leve dei freni, pronto a rallentare.",
+      "Frena presto e dolcemente a impulsi invece di tenere i freni tirati, e rallenta prima delle curve.",
+      "Alzati leggermente con i pedali in piano, sposta un po' il peso indietro e guarda lontano."
+     ],
+     "q": "Preferisci andare in salita o in discesa?",
+     "c": "Scendi una pendenza dolce e tranquilla esercitandoti a frenare in modo leggero e controllato."
+    },
+    "pt": {
+     "t": "Descidas para principiantes",
+     "g": "Controla a velocidade a descer para que as descidas sejam calmas e divertidas.",
+     "p": [
+      "Mantém as duas mãos no guiador com um ou dois dedos nas manetes, pronto a abrandar.",
+      "Trava cedo e com suavidade, aos toques, em vez de manter os travões sempre presos, e abranda antes das curvas.",
+      "Levanta-te um pouco com os pedais nivelados, recua ligeiramente o peso e olha bem à frente."
+     ],
+     "q": "Preferes subir ou descer?",
+     "c": "Desce uma inclinação suave e calma a praticar uma travagem leve e controlada."
+    },
+    "pt_BR": {
+     "t": "Descidas para iniciantes",
+     "g": "Controle a velocidade na descida para que ela fique tranquila e divertida.",
+     "p": [
+      "Mantenha as duas mãos no guidão com um ou dois dedos nos manetes, pronto para reduzir.",
+      "Freie cedo e com suavidade, em toques, em vez de segurar os freios o tempo todo, e reduza antes das curvas.",
+      "Fique um pouco em pé com os pedais nivelados, jogue o peso levemente para trás e olhe bem à frente."
+     ],
+     "q": "Você prefere subir ou descer ladeiras?",
+     "c": "Desça uma ladeira suave e tranquila praticando uma frenagem leve e controlada."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riding in wind",
+     "g": "Handle headwinds and gusts by adjusting your position and effort.",
+     "p": [
+      "In a headwind, bend your elbows and lower your upper body a little to present a smaller shape to the wind.",
+      "Shift to an easier gear and accept a slower speed; judge your effort by feel, not by the numbers.",
+      "Side gusts can push you sideways, so keep a relaxed but firm grip and leave extra space from traffic."
+     ],
+     "q": "Have you ever ridden into a strong wind? How did it feel?",
+     "c": "Before your next ride, check the wind direction and plan to have it behind you on the way home."
+    },
+    "de": {
+     "t": "Bei Wind fahren",
+     "g": "Meistere Gegenwind und Böen, indem du Haltung und Kraft anpasst.",
+     "p": [
+      "Bei Gegenwind beugst du die Ellbogen und senkst den Oberkörper etwas, so bietest du weniger Angriffsfläche.",
+      "Schalte leichter und akzeptiere ein langsameres Tempo; richte dich nach deinem Gefühl, nicht nach Zahlen.",
+      "Seitenböen können dich versetzen, also greif locker, aber sicher, und halte mehr Abstand zum Verkehr."
+     ],
+     "q": "Bist du schon einmal gegen starken Wind gefahren? Wie hat es sich angefühlt?",
+     "c": "Prüf vor der nächsten Fahrt die Windrichtung und plane, sie auf dem Heimweg im Rücken zu haben."
+    },
+    "es": {
+     "t": "Pedalear con viento",
+     "g": "Afronta el viento en contra y las rachas ajustando tu postura y tu esfuerzo.",
+     "p": [
+      "Con viento de cara, flexiona los codos y baja un poco el torso para ofrecer menos superficie al aire.",
+      "Pon una marcha más suave y acepta ir más lento; mide el esfuerzo por sensaciones, no por los números.",
+      "Las rachas laterales pueden desplazarte, así que agarra relajado pero firme y deja más espacio al tráfico."
+     ],
+     "q": "¿Alguna vez pedaleaste contra un viento fuerte? ¿Qué sentiste?",
+     "c": "Antes de tu próxima salida, mira la dirección del viento y planea tenerlo a favor al volver."
+    },
+    "fr": {
+     "t": "Rouler dans le vent",
+     "g": "Gère le vent de face et les rafales en adaptant ta position et ton effort.",
+     "p": [
+      "Face au vent, plie les coudes et abaisse un peu le buste pour offrir moins de prise à l'air.",
+      "Passe un braquet plus facile et accepte de rouler moins vite ; dose ton effort aux sensations.",
+      "Les rafales latérales peuvent te déporter : garde une prise souple mais ferme et laisse plus d'espace avec la circulation."
+     ],
+     "q": "As-tu déjà roulé face à un vent fort ? Qu'as-tu ressenti ?",
+     "c": "Avant ta prochaine sortie, regarde d'où vient le vent et prévois de l'avoir dans le dos au retour."
+    },
+    "it": {
+     "t": "Pedalare con il vento",
+     "g": "Affronta vento contrario e raffiche adattando posizione e sforzo.",
+     "p": [
+      "Con il vento contro piega i gomiti e abbassa un po' il busto per offrire meno superficie all'aria.",
+      "Metti un rapporto più agile e accetta di andare più piano; regola lo sforzo a sensazione, non sui numeri.",
+      "Le raffiche laterali possono spostarti, quindi tieni una presa rilassata ma salda e lascia più spazio al traffico."
+     ],
+     "q": "Hai mai pedalato contro un vento forte? Come ti sei sentito?",
+     "c": "Prima della prossima uscita controlla la direzione del vento e organizzati per averlo alle spalle al ritorno."
+    },
+    "pt": {
+     "t": "Pedalar com vento",
+     "g": "Enfrenta o vento contra e as rajadas ajustando a posição e o esforço.",
+     "p": [
+      "Com vento de frente, dobra os cotovelos e baixa um pouco o tronco para ofereceres menos superfície ao ar.",
+      "Mete uma mudança mais leve e aceita ir mais devagar; mede o esforço pelas sensações, não pelos números.",
+      "As rajadas laterais podem empurrar-te, por isso agarra de forma solta mas firme e deixa mais espaço ao trânsito."
+     ],
+     "q": "Já pedalaste contra um vento forte? Como te sentiste?",
+     "c": "Antes do próximo passeio, vê a direção do vento e planeia tê-lo pelas costas no regresso."
+    },
+    "pt_BR": {
+     "t": "Pedalando com vento",
+     "g": "Enfrente o vento contra e as rajadas ajustando a posição e o esforço.",
+     "p": [
+      "Com vento de frente, dobre os cotovelos e abaixe um pouco o tronco para oferecer menos área ao vento.",
+      "Passe para uma marcha mais leve e aceite ir mais devagar; meça o esforço pela sensação, não pelos números.",
+      "Rajadas laterais podem empurrar você, então segure solto mas firme e deixe mais espaço do trânsito."
+     ],
+     "q": "Você já pedalou contra um vento forte? Como foi?",
+     "c": "Antes do próximo pedal, veja a direção do vento e planeje tê-lo a favor na volta para casa."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riding in the rain",
+     "g": "Stay safe and comfortable on wet days with good lights, grip and patience.",
+     "p": [
+      "Wet roads and rims mean longer braking distances, so slow down earlier and brake gently.",
+      "Painted lines, metal covers, leaves and tram tracks get slippery; ride straight over them, not while leaning.",
+      "Use lights even by day, wear a bright waterproof layer and lower tyre pressure slightly for grip."
+     ],
+     "q": "Do you enjoy riding in light rain, or do you prefer to wait for dry weather?",
+     "c": "Pack a light rain jacket in your bag and check that your lights are charged."
+    },
+    "de": {
+     "t": "Im Regen fahren",
+     "g": "Bleib an nassen Tagen sicher und bequem mit gutem Licht, Grip und Geduld.",
+     "p": [
+      "Nasse Straßen und Felgen bedeuten längere Bremswege, also bremse früher und sanfter.",
+      "Fahrbahnmarkierungen, Gullydeckel, Laub und Straßenbahnschienen werden glatt; überquere sie aufrecht, nicht in Schräglage.",
+      "Fahr auch tagsüber mit Licht, trag eine helle Regenjacke und senk den Reifendruck leicht für mehr Grip."
+     ],
+     "q": "Fährst du gern bei leichtem Regen, oder wartest du lieber auf trockenes Wetter?",
+     "c": "Pack eine leichte Regenjacke in die Tasche und prüf, ob deine Lichter geladen sind."
+    },
+    "es": {
+     "t": "Pedalear bajo la lluvia",
+     "g": "Ve seguro y cómodo en días mojados con buenas luces, agarre y paciencia.",
+     "p": [
+      "Con el suelo y las llantas mojadas la distancia de frenado es mayor, así que reduce antes y frena con suavidad.",
+      "Las líneas pintadas, tapas metálicas, hojas y vías de tranvía resbalan; crúzalas recto, no inclinado.",
+      "Usa luces incluso de día, lleva una capa impermeable de color vivo y baja un poco la presión para ganar agarre."
+     ],
+     "q": "¿Te gusta pedalear con lluvia ligera o prefieres esperar a que esté seco?",
+     "c": "Mete un chubasquero ligero en tu bolsa y comprueba que tus luces estén cargadas."
+    },
+    "fr": {
+     "t": "Rouler sous la pluie",
+     "g": "Reste en sécurité et à l'aise les jours de pluie avec un bon éclairage, de l'adhérence et de la patience.",
+     "p": [
+      "Route et jantes mouillées allongent les distances de freinage : ralentis plus tôt et freine en douceur.",
+      "Marquages, plaques métalliques, feuilles et rails de tram deviennent glissants ; passe-les bien droit, sans pencher.",
+      "Allume tes feux même le jour, porte une veste imperméable voyante et baisse un peu la pression pour l'adhérence."
+     ],
+     "q": "Aimes-tu rouler sous une pluie fine, ou préfères-tu attendre le temps sec ?",
+     "c": "Glisse une veste de pluie légère dans ton sac et vérifie que tes lumières sont chargées."
+    },
+    "it": {
+     "t": "Pedalare sotto la pioggia",
+     "g": "Resta sicuro e comodo nei giorni bagnati con buone luci, aderenza e pazienza.",
+     "p": [
+      "Con strada e cerchi bagnati lo spazio di frenata si allunga, quindi rallenta prima e frena dolcemente.",
+      "Strisce dipinte, tombini, foglie e binari del tram diventano scivolosi; passaci sopra dritto, non in piega.",
+      "Usa le luci anche di giorno, indossa una giacca impermeabile vivace e abbassa un po' la pressione per più aderenza."
+     ],
+     "q": "Ti piace pedalare con la pioggerella o preferisci aspettare il tempo asciutto?",
+     "c": "Metti una giacca antipioggia leggera nello zaino e controlla che le luci siano cariche."
+    },
+    "pt": {
+     "t": "Pedalar à chuva",
+     "g": "Mantém-te seguro e confortável em dias molhados com boas luzes, aderência e paciência.",
+     "p": [
+      "Estrada e aros molhados aumentam a distância de travagem, por isso abranda mais cedo e trava com suavidade.",
+      "Marcas pintadas, tampas metálicas, folhas e carris de elétrico escorregam; passa-os a direito, não inclinado.",
+      "Usa luzes mesmo de dia, veste um impermeável de cor viva e baixa um pouco a pressão dos pneus para aderência."
+     ],
+     "q": "Gostas de pedalar com chuva fraca ou preferes esperar pelo tempo seco?",
+     "c": "Põe um casaco impermeável leve na mochila e verifica se as luzes estão carregadas."
+    },
+    "pt_BR": {
+     "t": "Pedalando na chuva",
+     "g": "Fique seguro e confortável em dias molhados com boas luzes, aderência e paciência.",
+     "p": [
+      "Pista e aros molhados aumentam a distância de frenagem, então reduza antes e freie com suavidade.",
+      "Faixas pintadas, tampas de bueiro, folhas e trilhos ficam escorregadios; passe sobre eles reto, não inclinado.",
+      "Use luzes até de dia, vista uma capa de chuva de cor viva e baixe um pouco a pressão do pneu para ter aderência."
+     ],
+     "q": "Você curte pedalar com chuva fraca ou prefere esperar o tempo secar?",
+     "c": "Coloque uma capa de chuva leve na mochila e confira se as luzes estão carregadas."
+    }
+   }
+  }
+ ]
+}

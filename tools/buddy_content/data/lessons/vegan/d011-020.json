@@ -1,0 +1,835 @@
+{
+ "topic": "vegan",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the legumes",
+     "g": "Get to know beans, lentils, chickpeas and peas: affordable, filling and versatile.",
+     "p": [
+      "Legumes are seeds from pods, and they include beans, lentils, chickpeas, peas and soybeans.",
+      "They are filling, store for a long time when dried and work in soups, salads, spreads and stews.",
+      "Almost every cuisine has a legume classic, from Mexican black beans to Japanese edamame."
+     ],
+     "q": "Which legume do you eat most often, and which have you never tried?",
+     "c": "Buy or find one legume you rarely eat and decide on a dish to use it in this week."
+    },
+    "de": {
+     "t": "Hülsenfrüchte kennenlernen",
+     "g": "Lerne Bohnen, Linsen, Kichererbsen und Erbsen kennen: günstig, sättigend und vielseitig.",
+     "p": [
+      "Hülsenfrüchte sind Samen aus Hülsen, darunter Bohnen, Linsen, Kichererbsen, Erbsen und Sojabohnen.",
+      "Sie sättigen, sind getrocknet lange haltbar und passen in Suppen, Salate, Aufstriche und Eintöpfe.",
+      "Fast jede Küche hat einen Hülsenfrucht-Klassiker, von mexikanischen schwarzen Bohnen bis zu japanischem Edamame."
+     ],
+     "q": "Welche Hülsenfrucht isst du am häufigsten, und welche hast du noch nie probiert?",
+     "c": "Besorge eine Hülsenfrucht, die du selten isst, und überlege dir ein Gericht dafür für diese Woche."
+    },
+    "es": {
+     "t": "Conoce las legumbres",
+     "g": "Conocer alubias, lentejas, garbanzos y guisantes: económicos, saciantes y versátiles.",
+     "p": [
+      "Las legumbres son semillas que crecen en vainas: alubias, lentejas, garbanzos, guisantes y soja.",
+      "Sacian, secas duran mucho tiempo y sirven para sopas, ensaladas, cremas para untar y guisos.",
+      "Casi toda cocina tiene un clásico de legumbres, desde los frijoles negros mexicanos al edamame japonés."
+     ],
+     "q": "¿Qué legumbre comes más a menudo y cuál no has probado nunca?",
+     "c": "Consigue una legumbre que comas poco y decide en qué plato la usarás esta semana."
+    },
+    "fr": {
+     "t": "Découvrir les légumineuses",
+     "g": "Faire connaissance avec haricots, lentilles, pois chiches et pois : économiques, rassasiants et polyvalents.",
+     "p": [
+      "Les légumineuses sont des graines poussant en gousses : haricots, lentilles, pois chiches, pois et soja.",
+      "Elles rassasient, se conservent longtemps sèches et vont dans les soupes, salades, tartinades et ragoûts.",
+      "Presque chaque cuisine a son classique, des haricots noirs mexicains à l’edamame japonais."
+     ],
+     "q": "Quelle légumineuse manges-tu le plus souvent, et laquelle n’as-tu jamais goûtée ?",
+     "c": "Procure-toi une légumineuse que tu manges rarement et choisis un plat pour l’utiliser cette semaine."
+    },
+    "it": {
+     "t": "Conoscere i legumi",
+     "g": "Conoscere fagioli, lenticchie, ceci e piselli: economici, sazianti e versatili.",
+     "p": [
+      "I legumi sono semi che crescono nei baccelli: fagioli, lenticchie, ceci, piselli e soia.",
+      "Saziano, secchi si conservano a lungo e vanno bene in zuppe, insalate, creme spalmabili e stufati.",
+      "Quasi ogni cucina ha un classico di legumi, dai fagioli neri messicani all’edamame giapponese."
+     ],
+     "q": "Quale legume mangi più spesso e quale non hai mai provato?",
+     "c": "Procurati un legume che mangi di rado e scegli un piatto in cui usarlo questa settimana."
+    },
+    "pt": {
+     "t": "Conhecer as leguminosas",
+     "g": "Conhecer feijão, lentilhas, grão-de-bico e ervilhas: económicos, saciantes e versáteis.",
+     "p": [
+      "As leguminosas são sementes que crescem em vagens: feijão, lentilhas, grão-de-bico, ervilhas e soja.",
+      "Saciam, secas duram muito tempo e servem para sopas, saladas, pastas para barrar e guisados.",
+      "Quase todas as cozinhas têm um clássico, do feijão preto mexicano ao edamame japonês."
+     ],
+     "q": "Que leguminosa comes mais vezes e qual nunca provaste?",
+     "c": "Arranja uma leguminosa que comas pouco e decide em que prato a vais usar esta semana."
+    },
+    "pt_BR": {
+     "t": "Conheça as leguminosas",
+     "g": "Conhecer feijão, lentilha, grão-de-bico e ervilha: baratos, que sustentam e versáteis.",
+     "p": [
+      "Leguminosas são sementes que crescem em vagens: feijão, lentilha, grão-de-bico, ervilha e soja.",
+      "Sustentam bem, secas duram muito e vão em sopas, saladas, pastinhas e ensopados.",
+      "Quase toda cozinha tem um clássico, do feijão preto mexicano ao edamame japonês."
+     ],
+     "q": "Qual leguminosa você come mais e qual nunca provou?",
+     "c": "Arrume uma leguminosa que você come pouco e decida em qual prato vai usar nesta semana."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking dried beans",
+     "g": "Soak, simmer and season dried beans for the best texture.",
+     "p": [
+      "Soak most dried beans in plenty of cold water for about 8 hours or overnight, then drain and rinse.",
+      "Simmer them gently in fresh water until creamy inside; a fast boil can split the skins.",
+      "Add salt toward the end or once they soften, and try a bay leaf, garlic or onion in the pot for flavour."
+     ],
+     "q": "Have you ever cooked beans from dry, and how did they turn out?",
+     "c": "Soak a cup of dried beans tonight so you are ready to cook them tomorrow."
+    },
+    "de": {
+     "t": "Getrocknete Bohnen kochen",
+     "g": "Einweichen, köcheln und würzen für die beste Textur.",
+     "p": [
+      "Weiche die meisten getrockneten Bohnen etwa 8 Stunden oder über Nacht in viel kaltem Wasser ein, dann abspülen.",
+      "Lass sie in frischem Wasser sanft köcheln, bis sie innen cremig sind; starkes Kochen lässt die Haut platzen.",
+      "Salze gegen Ende oder sobald sie weich werden, und gib ein Lorbeerblatt, Knoblauch oder Zwiebel dazu."
+     ],
+     "q": "Hast du schon einmal Bohnen aus getrockneten gekocht, und wie wurden sie?",
+     "c": "Weiche heute Abend eine Tasse getrocknete Bohnen ein, damit du sie morgen kochen kannst."
+    },
+    "es": {
+     "t": "Cocinar legumbres secas",
+     "g": "Remojar, cocer a fuego suave y sazonar las legumbres secas para lograr la mejor textura.",
+     "p": [
+      "Remoja la mayoría de alubias en abundante agua fría unas 8 horas o toda la noche; luego escurre y enjuaga.",
+      "Cuécelas a fuego suave en agua nueva hasta que estén cremosas; un hervor fuerte rompe la piel.",
+      "Añade la sal al final o cuando se ablanden, y prueba con laurel, ajo o cebolla en la olla."
+     ],
+     "q": "¿Has cocinado alguna vez legumbres secas? ¿Cómo te salieron?",
+     "c": "Pon en remojo una taza de alubias esta noche para cocinarlas mañana."
+    },
+    "fr": {
+     "t": "Cuire des haricots secs",
+     "g": "Faire tremper, mijoter et assaisonner les haricots secs pour une texture parfaite.",
+     "p": [
+      "Fais tremper la plupart des haricots secs environ 8 heures ou une nuit dans beaucoup d’eau froide, puis rince.",
+      "Fais-les mijoter doucement dans une eau neuve jusqu’à ce qu’ils soient fondants ; une forte ébullition les fait éclater.",
+      "Sale vers la fin ou quand ils ramollissent, et ajoute laurier, ail ou oignon pour le goût."
+     ],
+     "q": "As-tu déjà cuit des haricots à partir de secs, et quel était le résultat ?",
+     "c": "Mets une tasse de haricots secs à tremper ce soir pour les cuire demain."
+    },
+    "it": {
+     "t": "Cuocere i legumi secchi",
+     "g": "Mettere in ammollo, cuocere piano e insaporire i legumi secchi per la consistenza migliore.",
+     "p": [
+      "Metti in ammollo la maggior parte dei fagioli secchi in tanta acqua fredda per circa 8 ore o una notte, poi sciacqua.",
+      "Cuocili a fuoco dolce in acqua nuova finché sono cremosi dentro; un bollore forte rompe la buccia.",
+      "Sala verso la fine o quando si ammorbidiscono, e prova alloro, aglio o cipolla nella pentola."
+     ],
+     "q": "Hai mai cucinato fagioli partendo da secchi? Com’è andata?",
+     "c": "Metti in ammollo una tazza di fagioli secchi stasera per cucinarli domani."
+    },
+    "pt": {
+     "t": "Cozinhar feijão seco",
+     "g": "Demolhar, cozer em lume brando e temperar o feijão seco para ter a melhor textura.",
+     "p": [
+      "Demolha a maior parte do feijão seco em muita água fria cerca de 8 horas ou de um dia para o outro, e passa por água.",
+      "Coze-o em lume brando em água nova até ficar cremoso por dentro; uma fervura forte rebenta a pele.",
+      "Junta o sal no fim ou quando amolecer, e experimenta louro, alho ou cebola no tacho."
+     ],
+     "q": "Já cozinhaste feijão a partir de seco? Como ficou?",
+     "c": "Põe uma chávena de feijão seco de molho esta noite para o cozinhares amanhã."
+    },
+    "pt_BR": {
+     "t": "Cozinhando feijão seco",
+     "g": "Deixar de molho, cozinhar em fogo baixo e temperar o feijão seco para a melhor textura.",
+     "p": [
+      "Deixe a maioria dos feijões secos de molho em bastante água fria por cerca de 8 horas ou a noite toda, depois escorra.",
+      "Cozinhe em fogo baixo em água nova até ficar cremoso por dentro; fervura forte faz a casca estourar.",
+      "Coloque o sal no fim ou quando amolecer, e experimente louro, alho ou cebola na panela."
+     ],
+     "q": "Você já cozinhou feijão a partir do seco? Como ficou?",
+     "c": "Deixe uma xícara de feijão seco de molho hoje à noite para cozinhar amanhã."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Canned beans, smartly used",
+     "g": "Rinse and season canned beans for fast weeknight meals.",
+     "p": [
+      "Drain and rinse canned beans to remove the starchy liquid and any tinny taste.",
+      "Warm them in a pan with oil, garlic and a spice for a few minutes so they soak up flavour.",
+      "Use them in tacos, salads, pasta, soups or mashed on toast for a meal in under fifteen minutes."
+     ],
+     "q": "What is your favourite quick dish that starts with a can of beans?",
+     "c": "Open a can of beans, rinse them and turn them into a quick warm topping with garlic and a spice."
+    },
+    "de": {
+     "t": "Dosenbohnen clever nutzen",
+     "g": "Spüle und würze Dosenbohnen für schnelle Feierabendgerichte.",
+     "p": [
+      "Gieße Dosenbohnen ab und spüle sie, um die stärkehaltige Flüssigkeit und den Dosengeschmack loszuwerden.",
+      "Erwärme sie ein paar Minuten in der Pfanne mit Öl, Knoblauch und einem Gewürz, damit sie Aroma aufnehmen.",
+      "Nutze sie für Tacos, Salate, Pasta, Suppen oder zerdrückt auf Brot, fertig in unter fünfzehn Minuten."
+     ],
+     "q": "Was ist dein liebstes schnelles Gericht, das mit einer Dose Bohnen beginnt?",
+     "c": "Öffne eine Dose Bohnen, spüle sie und mach daraus mit Knoblauch und einem Gewürz ein warmes Topping."
+    },
+    "es": {
+     "t": "Legumbres de bote, bien usadas",
+     "g": "Enjuagar y sazonar las legumbres de bote para cenas rápidas entre semana.",
+     "p": [
+      "Escurre y enjuaga las legumbres de bote para quitar el líquido espeso y el sabor a lata.",
+      "Caliéntalas unos minutos en la sartén con aceite, ajo y una especia para que cojan sabor.",
+      "Úsalas en tacos, ensaladas, pasta, sopas o aplastadas sobre pan: comida lista en menos de quince minutos."
+     ],
+     "q": "¿Cuál es tu plato rápido favorito que empieza con un bote de legumbres?",
+     "c": "Abre un bote de legumbres, enjuágalas y conviértelas en un topping caliente con ajo y una especia."
+    },
+    "fr": {
+     "t": "Les haricots en conserve, bien utilisés",
+     "g": "Rincer et assaisonner les légumineuses en conserve pour des dîners rapides en semaine.",
+     "p": [
+      "Égoutte et rince les légumineuses en conserve pour enlever le liquide amidonné et le goût de boîte.",
+      "Réchauffe-les quelques minutes à la poêle avec huile, ail et une épice pour qu’elles prennent du goût.",
+      "Utilise-les dans des tacos, salades, pâtes, soupes ou écrasées sur du pain : repas prêt en moins de quinze minutes."
+     ],
+     "q": "Quel est ton plat rapide préféré qui commence par une boîte de haricots ?",
+     "c": "Ouvre une boîte de haricots, rince-les et transforme-les en garniture chaude avec ail et une épice."
+    },
+    "it": {
+     "t": "Legumi in scatola, usati bene",
+     "g": "Sciacquare e insaporire i legumi in scatola per cene veloci in settimana.",
+     "p": [
+      "Scola e sciacqua i legumi in scatola per togliere il liquido amidaceo e il sapore di lattina.",
+      "Scaldali qualche minuto in padella con olio, aglio e una spezia perché prendano sapore.",
+      "Usali in tacos, insalate, pasta, zuppe o schiacciati sul pane: pasto pronto in meno di quindici minuti."
+     ],
+     "q": "Qual è il tuo piatto veloce preferito che comincia con una scatola di legumi?",
+     "c": "Apri una scatola di legumi, sciacquali e trasformali in un condimento caldo con aglio e una spezia."
+    },
+    "pt": {
+     "t": "Feijão de lata, bem usado",
+     "g": "Passar por água e temperar leguminosas de lata para jantares rápidos durante a semana.",
+     "p": [
+      "Escorre e passa por água as leguminosas de lata para tirar o líquido espesso e o sabor a lata.",
+      "Aquece-as uns minutos na frigideira com azeite, alho e uma especiaria para ganharem sabor.",
+      "Usa-as em tacos, saladas, massa, sopas ou esmagadas numa torrada: refeição pronta em menos de quinze minutos."
+     ],
+     "q": "Qual é o teu prato rápido preferido que começa com uma lata de feijão?",
+     "c": "Abre uma lata de feijão, passa-o por água e transforma-o numa cobertura quente com alho e uma especiaria."
+    },
+    "pt_BR": {
+     "t": "Feijão em lata, bem usado",
+     "g": "Lavar e temperar leguminosas em lata para jantares rápidos no meio da semana.",
+     "p": [
+      "Escorra e lave as leguminosas em lata para tirar o caldo grosso e o gosto de lata.",
+      "Aqueça alguns minutos na frigideira com azeite, alho e um tempero para pegarem sabor.",
+      "Use em tacos, saladas, macarrão, sopas ou amassadas no pão: refeição pronta em menos de quinze minutos."
+     ],
+     "q": "Qual seu prato rápido preferido que começa com uma lata de feijão?",
+     "c": "Abra uma lata de feijão, lave e transforme numa cobertura quentinha com alho e um tempero."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lentils made easy",
+     "g": "Learn how red, green, brown and black lentils behave when cooked.",
+     "p": [
+      "Red lentils cook fast and melt into a soft purée, perfect for dals and creamy soups.",
+      "Brown and green lentils keep their shape better and suit salads, stews and fillings.",
+      "Small black lentils stay firm and glossy; lentils need no soaking, just a quick rinse."
+     ],
+     "q": "Which type of lentil have you cooked before, and how did you use it?",
+     "c": "Rinse a handful of lentils and simmer them in water, tasting every few minutes to see how they soften."
+    },
+    "de": {
+     "t": "Linsen ganz einfach",
+     "g": "Lerne, wie rote, grüne, braune und schwarze Linsen sich beim Kochen verhalten.",
+     "p": [
+      "Rote Linsen garen schnell und zerfallen zu einem weichen Püree, ideal für Dal und cremige Suppen.",
+      "Braune und grüne Linsen behalten ihre Form besser und passen in Salate, Eintöpfe und Füllungen.",
+      "Kleine schwarze Linsen bleiben bissfest und glänzend; Linsen muss man nicht einweichen, nur abspülen."
+     ],
+     "q": "Welche Linsensorte hast du schon gekocht, und wofür hast du sie verwendet?",
+     "c": "Spüle eine Handvoll Linsen ab, koche sie in Wasser und probiere alle paar Minuten, wie sie weich werden."
+    },
+    "es": {
+     "t": "Lentejas fáciles",
+     "g": "Saber cómo se comportan las lentejas rojas, verdes, pardinas y negras al cocinarlas.",
+     "p": [
+      "Las rojas se cuecen rápido y se deshacen en un puré suave, ideales para dal y cremas.",
+      "Las pardinas y verdes mantienen mejor la forma y van bien en ensaladas, guisos y rellenos.",
+      "Las negras pequeñas quedan firmes y brillantes; las lentejas no necesitan remojo, solo un enjuague."
+     ],
+     "q": "¿Qué tipo de lenteja has cocinado ya y cómo la usaste?",
+     "c": "Enjuaga un puñado de lentejas, cuécelas en agua y pruébalas cada pocos minutos para ver cómo se ablandan."
+    },
+    "fr": {
+     "t": "Les lentilles en toute simplicité",
+     "g": "Apprendre comment se comportent les lentilles corail, vertes, brunes et noires à la cuisson.",
+     "p": [
+      "Les lentilles corail cuisent vite et fondent en purée douce, parfaites pour les dals et soupes veloutées.",
+      "Les brunes et vertes gardent mieux leur forme et conviennent aux salades, ragoûts et farces.",
+      "Les petites noires restent fermes et brillantes ; pas besoin de trempage, un simple rinçage suffit."
+     ],
+     "q": "Quel type de lentilles as-tu déjà cuisiné, et comment les as-tu utilisées ?",
+     "c": "Rince une poignée de lentilles, fais-les cuire dans l’eau et goûte toutes les quelques minutes."
+    },
+    "it": {
+     "t": "Lenticchie facili",
+     "g": "Capire come si comportano in cottura le lenticchie rosse, verdi, marroni e nere.",
+     "p": [
+      "Le rosse cuociono in fretta e si sciolgono in una purea morbida, perfette per dal e vellutate.",
+      "Le marroni e le verdi tengono meglio la forma e vanno bene in insalate, stufati e ripieni.",
+      "Le piccole nere restano sode e lucide; le lenticchie non richiedono ammollo, basta sciacquarle."
+     ],
+     "q": "Che tipo di lenticchie hai già cucinato e come le hai usate?",
+     "c": "Sciacqua una manciata di lenticchie, cuocile in acqua e assaggiale ogni pochi minuti per vedere come si ammorbidiscono."
+    },
+    "pt": {
+     "t": "Lentilhas fáceis",
+     "g": "Perceber como se comportam as lentilhas vermelhas, verdes, castanhas e pretas ao cozinhar.",
+     "p": [
+      "As vermelhas cozem depressa e desfazem-se num puré macio, perfeitas para dal e sopas cremosas.",
+      "As castanhas e verdes mantêm melhor a forma e ficam bem em saladas, guisados e recheios.",
+      "As pretas pequenas ficam firmes e brilhantes; as lentilhas não precisam de demolhar, só de passar por água."
+     ],
+     "q": "Que tipo de lentilha já cozinhaste e como a usaste?",
+     "c": "Passa por água uma mão-cheia de lentilhas, coze-as e prova de poucos em poucos minutos para ver como amolecem."
+    },
+    "pt_BR": {
+     "t": "Lentilha descomplicada",
+     "g": "Entender como as lentilhas vermelha, verde, marrom e preta se comportam ao cozinhar.",
+     "p": [
+      "A vermelha cozinha rápido e vira um purê macio, perfeita para dal e sopas cremosas.",
+      "A marrom e a verde seguram melhor o formato e combinam com saladas, ensopados e recheios.",
+      "A preta pequena fica firme e brilhante; lentilha não precisa de molho, só uma lavada."
+     ],
+     "q": "Qual tipo de lentilha você já cozinhou e como usou?",
+     "c": "Lave um punhado de lentilhas, cozinhe na água e prove a cada poucos minutos para ver como amolecem."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A first lentil soup",
+     "g": "Cook a warming, simple soup with onion, carrot, lentils and spices.",
+     "p": [
+      "Start by softening diced onion and carrot in oil, then add garlic and a spoon of cumin or paprika.",
+      "Stir in rinsed lentils and about four times their volume of water or stock, then simmer until tender.",
+      "Finish with salt, a squeeze of lemon and fresh herbs; blend half of it if you like it creamy."
+     ],
+     "q": "What would you add to make a lentil soup feel like your own recipe?",
+     "c": "Cook a small pot of lentil soup today using the onion skills from day 8 and the lentils from day 14."
+    },
+    "de": {
+     "t": "Eine erste Linsensuppe",
+     "g": "Koche eine wärmende, einfache Suppe mit Zwiebel, Karotte, Linsen und Gewürzen.",
+     "p": [
+      "Dünste zuerst gewürfelte Zwiebel und Karotte in Öl, dann Knoblauch und einen Löffel Kreuzkümmel oder Paprika.",
+      "Gib abgespülte Linsen und etwa die vierfache Menge Wasser oder Brühe dazu und köchle, bis sie weich sind.",
+      "Mit Salz, einem Spritzer Zitrone und frischen Kräutern abschmecken; die Hälfte pürieren, wenn du es cremig magst."
+     ],
+     "q": "Was würdest du hinzufügen, damit die Linsensuppe dein eigenes Rezept wird?",
+     "c": "Koche heute einen kleinen Topf Linsensuppe mit dem Zwiebel-Know-how von Tag 8 und den Linsen von Tag 14."
+    },
+    "es": {
+     "t": "Una primera sopa de lentejas",
+     "g": "Preparar una sopa sencilla y reconfortante con cebolla, zanahoria, lentejas y especias.",
+     "p": [
+      "Empieza pochando cebolla y zanahoria en dados con aceite, luego añade ajo y una cucharada de comino o pimentón.",
+      "Incorpora las lentejas enjuagadas y unas cuatro veces su volumen de agua o caldo, y cuece hasta que estén tiernas.",
+      "Termina con sal, un chorrito de limón y hierbas frescas; tritura la mitad si la quieres cremosa."
+     ],
+     "q": "¿Qué añadirías para que una sopa de lentejas sea tu propia receta?",
+     "c": "Cocina hoy una olla pequeña de sopa de lentejas usando la técnica de cebolla del día 8 y las lentejas del día 14."
+    },
+    "fr": {
+     "t": "Une première soupe de lentilles",
+     "g": "Cuisiner une soupe simple et réconfortante avec oignon, carotte, lentilles et épices.",
+     "p": [
+      "Fais d’abord revenir oignon et carotte en dés dans l’huile, puis ajoute l’ail et une cuillère de cumin ou de paprika.",
+      "Ajoute les lentilles rincées et environ quatre fois leur volume d’eau ou de bouillon, puis laisse mijoter.",
+      "Termine avec sel, un filet de citron et des herbes fraîches ; mixe la moitié si tu l’aimes veloutée."
+     ],
+     "q": "Qu’ajouterais-tu pour faire de la soupe de lentilles ta propre recette ?",
+     "c": "Cuisine aujourd’hui une petite casserole de soupe avec l’oignon du jour 8 et les lentilles du jour 14."
+    },
+    "it": {
+     "t": "Una prima zuppa di lenticchie",
+     "g": "Cucinare una zuppa semplice e calda con cipolla, carota, lenticchie e spezie.",
+     "p": [
+      "Inizia facendo appassire cipolla e carota a dadini nell’olio, poi aggiungi aglio e un cucchiaio di cumino o paprika.",
+      "Unisci le lenticchie sciacquate e circa quattro volte il loro volume di acqua o brodo, e cuoci finché sono tenere.",
+      "Completa con sale, una spruzzata di limone ed erbe fresche; frullane metà se la vuoi cremosa."
+     ],
+     "q": "Cosa aggiungeresti per rendere la zuppa di lenticchie la tua ricetta?",
+     "c": "Cucina oggi una piccola pentola di zuppa usando la cipolla del giorno 8 e le lenticchie del giorno 14."
+    },
+    "pt": {
+     "t": "Uma primeira sopa de lentilhas",
+     "g": "Fazer uma sopa simples e reconfortante com cebola, cenoura, lentilhas e especiarias.",
+     "p": [
+      "Começa por alourar cebola e cenoura em cubos no azeite, depois junta alho e uma colher de cominhos ou colorau.",
+      "Acrescenta as lentilhas passadas por água e cerca de quatro vezes o seu volume de água ou caldo, e coze até ficarem tenras.",
+      "Termina com sal, um pouco de limão e ervas frescas; tritura metade se gostares cremosa."
+     ],
+     "q": "O que acrescentarias para que uma sopa de lentilhas fosse a tua receita?",
+     "c": "Faz hoje um tachinho de sopa de lentilhas com a técnica da cebola do dia 8 e as lentilhas do dia 14."
+    },
+    "pt_BR": {
+     "t": "Uma primeira sopa de lentilha",
+     "g": "Fazer uma sopa simples e reconfortante com cebola, cenoura, lentilha e especiarias.",
+     "p": [
+      "Comece refogando cebola e cenoura em cubos no azeite, depois junte alho e uma colher de cominho ou páprica.",
+      "Acrescente a lentilha lavada e cerca de quatro vezes o volume dela em água ou caldo, e cozinhe até ficar macia.",
+      "Finalize com sal, um pouco de limão e ervas frescas; bata metade se gostar cremosa."
+     ],
+     "q": "O que você colocaria para a sopa de lentilha virar uma receita sua?",
+     "c": "Faça hoje uma panelinha de sopa de lentilha usando a cebola do dia 8 e a lentilha do dia 14."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chickpeas everywhere",
+     "g": "See why chickpeas, from hummus to curries, are a plant-based favourite.",
+     "p": [
+      "Chickpeas have a nutty taste and hold their shape, so they work roasted, stewed, mashed or blended.",
+      "They star in hummus, falafel, chana masala, Spanish stews and crunchy oven-roasted snacks.",
+      "The liquid from a can, called aquafaba, can even be whipped like egg white for baking."
+     ],
+     "q": "Which chickpea dish have you tried, and which would you like to try next?",
+     "c": "Roast rinsed, dried chickpeas with oil, salt and paprika in a hot oven until crunchy and taste them as a snack."
+    },
+    "de": {
+     "t": "Kichererbsen überall",
+     "g": "Sieh, warum Kichererbsen, von Hummus bis Curry, ein pflanzlicher Liebling sind.",
+     "p": [
+      "Kichererbsen schmecken nussig und behalten ihre Form, also passen sie geröstet, geschmort, zerdrückt oder püriert.",
+      "Sie glänzen in Hummus, Falafel, Chana Masala, spanischen Eintöpfen und knusprigen Ofensnacks.",
+      "Die Flüssigkeit aus der Dose, Aquafaba, lässt sich sogar wie Eiweiß zum Backen aufschlagen."
+     ],
+     "q": "Welches Kichererbsengericht hast du probiert, und welches möchtest du als Nächstes probieren?",
+     "c": "Röste abgespülte, trockene Kichererbsen mit Öl, Salz und Paprika im heißen Ofen knusprig und nasche sie."
+    },
+    "es": {
+     "t": "Garbanzos por todas partes",
+     "g": "Ver por qué los garbanzos, del hummus a los currys, son un favorito vegetal.",
+     "p": [
+      "Los garbanzos saben a fruto seco y mantienen la forma: van tostados, guisados, aplastados o triturados.",
+      "Son protagonistas en hummus, faláfel, chana masala, potajes españoles y snacks crujientes al horno.",
+      "El líquido del bote, llamado aquafaba, se puede montar como la clara de huevo para repostería."
+     ],
+     "q": "¿Qué plato de garbanzos has probado y cuál te gustaría probar después?",
+     "c": "Hornea garbanzos enjuagados y secos con aceite, sal y pimentón hasta que crujan y pruébalos como aperitivo."
+    },
+    "fr": {
+     "t": "Les pois chiches partout",
+     "g": "Comprendre pourquoi les pois chiches, du houmous aux currys, sont un favori végétal.",
+     "p": [
+      "Les pois chiches ont un goût de noisette et gardent leur forme : rôtis, mijotés, écrasés ou mixés.",
+      "Ils sont les vedettes du houmous, des falafels, du chana masala, des ragoûts espagnols et des snacks au four.",
+      "Le liquide de la boîte, l’aquafaba, se monte même comme un blanc d’œuf pour la pâtisserie."
+     ],
+     "q": "Quel plat de pois chiches as-tu goûté, et lequel aimerais-tu essayer ensuite ?",
+     "c": "Rôtis au four des pois chiches rincés et séchés avec huile, sel et paprika jusqu’à ce qu’ils croustillent."
+    },
+    "it": {
+     "t": "Ceci ovunque",
+     "g": "Capire perché i ceci, dall’hummus ai curry, sono un preferito della cucina vegetale.",
+     "p": [
+      "I ceci hanno un gusto di nocciola e tengono la forma: vanno arrostiti, in umido, schiacciati o frullati.",
+      "Sono protagonisti di hummus, falafel, chana masala, stufati spagnoli e snack croccanti al forno.",
+      "Il liquido della scatola, l’aquafaba, si può montare come l’albume per i dolci."
+     ],
+     "q": "Quale piatto di ceci hai provato e quale vorresti provare dopo?",
+     "c": "Arrostisci in forno ceci sciacquati e asciugati con olio, sale e paprika finché sono croccanti e assaggiali."
+    },
+    "pt": {
+     "t": "Grão-de-bico por todo o lado",
+     "g": "Perceber porque o grão-de-bico, do húmus aos caris, é um favorito da cozinha vegetal.",
+     "p": [
+      "O grão tem sabor a fruto seco e mantém a forma: fica bem assado, guisado, esmagado ou triturado.",
+      "É estrela no húmus, falafel, chana masala, cozidos espanhóis e petiscos estaladiços no forno.",
+      "O líquido da lata, chamado aquafaba, pode até ser batido como clara de ovo para doçaria."
+     ],
+     "q": "Que prato de grão-de-bico já provaste e qual gostavas de provar a seguir?",
+     "c": "Assa grão passado por água e seco com azeite, sal e colorau no forno quente até ficar crocante e petisca."
+    },
+    "pt_BR": {
+     "t": "Grão-de-bico em todo lugar",
+     "g": "Entender por que o grão-de-bico, do homus ao curry, é um queridinho da cozinha vegetal.",
+     "p": [
+      "O grão-de-bico tem sabor de castanha e segura o formato: vai assado, ensopado, amassado ou batido.",
+      "É estrela do homus, falafel, chana masala, cozidos espanhóis e petiscos crocantes de forno.",
+      "O líquido da lata, chamado aquafaba, dá até para bater como clara em neve para doces."
+     ],
+     "q": "Qual prato de grão-de-bico você já provou e qual quer provar depois?",
+     "c": "Asse grão-de-bico lavado e seco com azeite, sal e páprica no forno quente até ficar crocante e belisque."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homemade hummus",
+     "g": "Blend chickpeas, tahini, lemon and garlic into a smooth classic.",
+     "p": [
+      "Blend cooked chickpeas with tahini, lemon juice, a little garlic and salt until thick.",
+      "Add a few spoons of cold water while blending for a lighter, creamier, almost whipped texture.",
+      "Serve it with olive oil, paprika or cumin on top, and enjoy it with bread or raw vegetables."
+     ],
+     "q": "How do you like your hummus: classic, spicy, lemony or with a twist?",
+     "c": "Make a small bowl of hummus today and adjust lemon and salt by tasting it twice before serving."
+    },
+    "de": {
+     "t": "Hausgemachter Hummus",
+     "g": "Püriere Kichererbsen, Tahin, Zitrone und Knoblauch zu einem cremigen Klassiker.",
+     "p": [
+      "Püriere gekochte Kichererbsen mit Tahin, Zitronensaft, etwas Knoblauch und Salz, bis es dick ist.",
+      "Gib beim Mixen ein paar Löffel kaltes Wasser dazu, so wird er leichter, cremiger, fast luftig.",
+      "Serviere ihn mit Olivenöl, Paprika oder Kreuzkümmel obendrauf, dazu Brot oder rohes Gemüse."
+     ],
+     "q": "Wie magst du deinen Hummus: klassisch, scharf, zitronig oder mit einem Twist?",
+     "c": "Mach heute eine kleine Schüssel Hummus und schmecke Zitrone und Salz zweimal ab, bevor du ihn servierst."
+    },
+    "es": {
+     "t": "Hummus casero",
+     "g": "Triturar garbanzos, tahini, limón y ajo hasta lograr un clásico cremoso.",
+     "p": [
+      "Tritura garbanzos cocidos con tahini, zumo de limón, un poco de ajo y sal hasta que espese.",
+      "Añade unas cucharadas de agua fría mientras trituras para una textura más ligera y cremosa, casi montada.",
+      "Sírvelo con aceite de oliva, pimentón o comino por encima, y acompáñalo con pan o verduras crudas."
+     ],
+     "q": "¿Cómo te gusta el hummus: clásico, picante, con mucho limón o con un toque especial?",
+     "c": "Haz hoy un cuenco pequeño de hummus y ajusta limón y sal probándolo dos veces antes de servir."
+    },
+    "fr": {
+     "t": "Houmous maison",
+     "g": "Mixer pois chiches, tahini, citron et ail en un classique bien onctueux.",
+     "p": [
+      "Mixe des pois chiches cuits avec tahini, jus de citron, un peu d’ail et du sel jusqu’à obtenir une pâte épaisse.",
+      "Ajoute quelques cuillères d’eau froide en mixant pour une texture plus légère, crémeuse, presque fouettée.",
+      "Sers-le avec un filet d’huile d’olive, du paprika ou du cumin, avec du pain ou des légumes crus."
+     ],
+     "q": "Comment aimes-tu ton houmous : classique, épicé, citronné ou revisité ?",
+     "c": "Prépare aujourd’hui un petit bol de houmous et ajuste citron et sel en goûtant deux fois avant de servir."
+    },
+    "it": {
+     "t": "Hummus fatto in casa",
+     "g": "Frullare ceci, tahina, limone e aglio in un classico vellutato.",
+     "p": [
+      "Frulla ceci cotti con tahina, succo di limone, un po’ d’aglio e sale finché diventa denso.",
+      "Aggiungi qualche cucchiaio d’acqua fredda mentre frulli per una consistenza più leggera, cremosa, quasi montata.",
+      "Servilo con olio d’oliva, paprika o cumino sopra, con pane o verdure crude."
+     ],
+     "q": "Come ti piace l’hummus: classico, piccante, al limone o con un tocco diverso?",
+     "c": "Prepara oggi una ciotolina di hummus e regola limone e sale assaggiando due volte prima di servire."
+    },
+    "pt": {
+     "t": "Húmus caseiro",
+     "g": "Triturar grão-de-bico, tahini, limão e alho até obter um clássico cremoso.",
+     "p": [
+      "Tritura grão cozido com tahini, sumo de limão, um pouco de alho e sal até ficar espesso.",
+      "Junta umas colheres de água fria enquanto trituras para uma textura mais leve, cremosa, quase batida.",
+      "Serve com azeite, colorau ou cominhos por cima, com pão ou legumes crus."
+     ],
+     "q": "Como gostas do húmus: clássico, picante, bem alimonado ou com um toque diferente?",
+     "c": "Faz hoje uma taça pequena de húmus e acerta o limão e o sal provando duas vezes antes de servir."
+    },
+    "pt_BR": {
+     "t": "Homus caseiro",
+     "g": "Bater grão-de-bico, tahine, limão e alho até virar um clássico cremoso.",
+     "p": [
+      "Bata grão-de-bico cozido com tahine, suco de limão, um pouco de alho e sal até engrossar.",
+      "Junte algumas colheres de água gelada enquanto bate para uma textura mais leve, cremosa, quase aerada.",
+      "Sirva com azeite, páprica ou cominho por cima, com pão ou legumes crus."
+     ],
+     "q": "Como você gosta do homus: clássico, apimentado, bem limonado ou com um toque diferente?",
+     "c": "Faça hoje uma tigelinha de homus e acerte limão e sal provando duas vezes antes de servir."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grains 101",
+     "g": "Learn cooking ratios and textures for rice, oats, barley, millet and more.",
+     "p": [
+      "Most grains cook by absorption: a set amount of water is soaked up as they simmer with a lid on.",
+      "Rough guide: white rice about 1.5 to 2 parts water, millet about 2.5, pearl barley about 3; check the pack.",
+      "Whole grains like brown rice and barley take longer but give a chewier bite and nutty taste."
+     ],
+     "q": "Which grain besides rice would you like to cook more often?",
+     "c": "Cook a small portion of a grain you rarely use, following its ratio, and note how long it took."
+    },
+    "de": {
+     "t": "Getreide 101",
+     "g": "Lerne Garmengen und Texturen von Reis, Hafer, Gerste, Hirse und mehr.",
+     "p": [
+      "Die meisten Getreide garen durch Quellen: Sie nehmen beim Köcheln mit Deckel eine feste Wassermenge auf.",
+      "Faustregel: weißer Reis etwa 1,5 bis 2 Teile Wasser, Hirse etwa 2,5, Perlgraupen etwa 3; Packung prüfen.",
+      "Vollkorn wie Naturreis und Gerste brauchen länger, sind aber bissfester und nussiger."
+     ],
+     "q": "Welches Getreide außer Reis würdest du gern öfter kochen?",
+     "c": "Koche eine kleine Portion eines Getreides, das du selten nutzt, nach seinem Verhältnis und notiere die Garzeit."
+    },
+    "es": {
+     "t": "Cereales 101",
+     "g": "Conocer proporciones y texturas del arroz, la avena, la cebada, el mijo y más.",
+     "p": [
+      "La mayoría de cereales se cuecen por absorción: chupan una cantidad fija de agua al cocer tapados.",
+      "Guía aproximada: arroz blanco 1,5 a 2 partes de agua, mijo unas 2,5, cebada perlada unas 3; mira el paquete.",
+      "Los integrales como el arroz integral y la cebada tardan más, pero quedan más firmes y con sabor a nuez."
+     ],
+     "q": "¿Qué cereal, aparte del arroz, te gustaría cocinar más a menudo?",
+     "c": "Cocina una ración pequeña de un cereal que uses poco, con su proporción, y apunta cuánto tardó."
+    },
+    "fr": {
+     "t": "Les céréales 101",
+     "g": "Connaître les proportions et textures du riz, de l’avoine, de l’orge, du millet et d’autres.",
+     "p": [
+      "La plupart des céréales cuisent par absorption : elles boivent une quantité d’eau précise à couvert.",
+      "Repère : riz blanc 1,5 à 2 volumes d’eau, millet environ 2,5, orge perlé environ 3 ; vérifie le paquet.",
+      "Les céréales complètes comme le riz complet et l’orge cuisent plus longtemps mais sont plus fermes et goûteuses."
+     ],
+     "q": "Quelle céréale, à part le riz, aimerais-tu cuisiner plus souvent ?",
+     "c": "Cuis une petite portion d’une céréale que tu utilises peu, selon sa proportion, et note le temps de cuisson."
+    },
+    "it": {
+     "t": "Cereali 101",
+     "g": "Conoscere dosi e consistenze di riso, avena, orzo, miglio e altri cereali.",
+     "p": [
+      "Quasi tutti i cereali cuociono per assorbimento: assorbono una quantità fissa d’acqua cuocendo coperti.",
+      "Guida di massima: riso bianco 1,5-2 parti d’acqua, miglio circa 2,5, orzo perlato circa 3; controlla la confezione.",
+      "I cereali integrali come riso integrale e orzo richiedono più tempo ma sono più consistenti e saporiti."
+     ],
+     "q": "Quale cereale, oltre al riso, vorresti cucinare più spesso?",
+     "c": "Cuoci una piccola porzione di un cereale che usi poco, con le sue dosi, e annota quanto ci ha messo."
+    },
+    "pt": {
+     "t": "Cereais 101",
+     "g": "Conhecer proporções e texturas do arroz, aveia, cevada, milho-painço e outros.",
+     "p": [
+      "A maioria dos cereais coze por absorção: absorvem uma quantidade fixa de água a cozinhar tapados.",
+      "Guia aproximado: arroz branco 1,5 a 2 partes de água, milho-painço cerca de 2,5, cevada cerca de 3; vê a embalagem.",
+      "Os integrais, como arroz integral e cevada, demoram mais mas ficam mais firmes e com sabor a noz."
+     ],
+     "q": "Que cereal, além do arroz, gostavas de cozinhar mais vezes?",
+     "c": "Coze uma pequena porção de um cereal que uses pouco, com a sua proporção, e anota quanto tempo demorou."
+    },
+    "pt_BR": {
+     "t": "Grãos 101",
+     "g": "Conhecer proporções e texturas de arroz, aveia, cevada, painço e outros grãos.",
+     "p": [
+      "A maioria dos grãos cozinha por absorção: eles absorvem uma quantidade certa de água na panela tampada.",
+      "Guia geral: arroz branco 1,5 a 2 partes de água, painço cerca de 2,5, cevada cerca de 3; confira a embalagem.",
+      "Integrais como arroz integral e cevada demoram mais, mas ficam mais firmes e com sabor de castanha."
+     ],
+     "q": "Qual grão, além do arroz, você gostaria de cozinhar mais vezes?",
+     "c": "Cozinhe uma porção pequena de um grão que você usa pouco, com a proporção dele, e anote o tempo."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Perfect fluffy rice",
+     "g": "Rinse, measure water and rest rice for great results.",
+     "p": [
+      "Rinse rice in cold water until it runs almost clear, which removes surface starch and stops clumping.",
+      "Use the right ratio for your rice, bring it to a boil, then cover and cook on the lowest heat without stirring.",
+      "Turn off the heat and let it rest covered for about ten minutes before fluffing it with a fork."
+     ],
+     "q": "What kind of rice do you cook most, and what usually goes wrong?",
+     "c": "Cook rice today with rinsing, a lid and a ten-minute rest, and compare it with how you usually make it."
+    },
+    "de": {
+     "t": "Perfekter lockerer Reis",
+     "g": "Waschen, Wasser abmessen und ruhen lassen für tolle Ergebnisse.",
+     "p": [
+      "Spüle Reis in kaltem Wasser, bis es fast klar ist; das entfernt Stärke und verhindert Klumpen.",
+      "Nimm das richtige Verhältnis, bring alles zum Kochen, dann zugedeckt auf kleinster Stufe garen, ohne zu rühren.",
+      "Herd aus und Reis etwa zehn Minuten zugedeckt ruhen lassen, dann mit einer Gabel auflockern."
+     ],
+     "q": "Welchen Reis kochst du am meisten, und was geht dabei oft schief?",
+     "c": "Koche heute Reis mit Waschen, Deckel und zehn Minuten Ruhezeit und vergleiche mit deiner üblichen Methode."
+    },
+    "es": {
+     "t": "Arroz suelto perfecto",
+     "g": "Lavar, medir el agua y dejar reposar el arroz para un gran resultado.",
+     "p": [
+      "Lava el arroz en agua fría hasta que salga casi transparente; así quitas almidón y no se apelmaza.",
+      "Usa la proporción adecuada, lleva a ebullición, tapa y cocina a fuego mínimo sin remover.",
+      "Apaga el fuego y deja reposar tapado unos diez minutos antes de soltarlo con un tenedor."
+     ],
+     "q": "¿Qué arroz cocinas más y qué suele salirte mal?",
+     "c": "Cocina arroz hoy lavándolo, con tapa y diez minutos de reposo, y compáralo con tu forma habitual."
+    },
+    "fr": {
+     "t": "Un riz parfaitement léger",
+     "g": "Rincer, mesurer l’eau et laisser reposer le riz pour un résultat parfait.",
+     "p": [
+      "Rince le riz à l’eau froide jusqu’à ce qu’elle soit presque claire : moins d’amidon, des grains qui ne collent pas.",
+      "Utilise la bonne proportion, porte à ébullition, puis couvre et cuis à feu très doux sans remuer.",
+      "Éteins le feu et laisse reposer à couvert une dizaine de minutes avant d’égrainer à la fourchette."
+     ],
+     "q": "Quel riz cuisines-tu le plus, et qu’est-ce qui rate souvent ?",
+     "c": "Cuis du riz aujourd’hui en le rinçant, à couvert, avec dix minutes de repos, et compare avec ta méthode habituelle."
+    },
+    "it": {
+     "t": "Riso perfetto e sgranato",
+     "g": "Sciacquare, misurare l’acqua e far riposare il riso per un ottimo risultato.",
+     "p": [
+      "Sciacqua il riso in acqua fredda finché esce quasi limpida: togli amido e i chicchi non si attaccano.",
+      "Usa la giusta proporzione, porta a bollore, poi copri e cuoci a fuoco minimo senza mescolare.",
+      "Spegni e lascia riposare coperto una decina di minuti, poi sgranalo con una forchetta."
+     ],
+     "q": "Quale riso cucini di più e cosa va storto di solito?",
+     "c": "Cuoci il riso oggi sciacquandolo, con coperchio e dieci minuti di riposo, e confrontalo con il tuo solito metodo."
+    },
+    "pt": {
+     "t": "Arroz soltinho perfeito",
+     "g": "Lavar, medir a água e deixar repousar o arroz para um ótimo resultado.",
+     "p": [
+      "Lava o arroz em água fria até sair quase limpa; isso tira amido e evita que pegue.",
+      "Usa a proporção certa, leva a ferver, depois tapa e coze em lume mínimo sem mexer.",
+      "Desliga o lume e deixa repousar tapado uns dez minutos antes de soltar com um garfo."
+     ],
+     "q": "Que arroz cozinhas mais e o que costuma correr mal?",
+     "c": "Faz arroz hoje lavando-o, com tampa e dez minutos de repouso, e compara com a tua forma habitual."
+    },
+    "pt_BR": {
+     "t": "Arroz soltinho perfeito",
+     "g": "Lavar, medir a água e deixar o arroz descansar para um ótimo resultado.",
+     "p": [
+      "Lave o arroz em água fria até sair quase limpa; isso tira o amido e evita que grude.",
+      "Use a proporção certa, deixe ferver, depois tampe e cozinhe no fogo mínimo sem mexer.",
+      "Desligue o fogo e deixe descansar tampado uns dez minutos antes de soltar com um garfo."
+     ],
+     "q": "Qual arroz você mais cozinha e o que costuma dar errado?",
+     "c": "Faça arroz hoje lavando, com tampa e dez minutos de descanso, e compare com seu jeito de sempre."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quinoa and couscous",
+     "g": "Use quick-cooking grains in salads, bowls and side dishes.",
+     "p": [
+      "Rinse quinoa well, then simmer it in about twice its volume of water for around fifteen minutes.",
+      "Couscous is tiny pasta from North Africa: pour boiling water or stock over it, cover and wait five minutes.",
+      "Both soak up dressings beautifully, so mix them with herbs, beans and chopped vegetables."
+     ],
+     "q": "Would you rather have quinoa or couscous in a salad, and why?",
+     "c": "Make a quick couscous with boiling stock, then fluff it and mix in herbs, lemon and chickpeas."
+    },
+    "de": {
+     "t": "Quinoa und Couscous",
+     "g": "Nutze schnell garende Körner für Salate, Bowls und Beilagen.",
+     "p": [
+      "Spüle Quinoa gut ab und köchle sie in etwa der doppelten Menge Wasser rund fünfzehn Minuten.",
+      "Couscous sind winzige Nudeln aus Nordafrika: mit kochendem Wasser oder Brühe übergießen, zudecken, fünf Minuten warten.",
+      "Beide nehmen Dressings wunderbar auf, also mische sie mit Kräutern, Bohnen und Gemüsestückchen."
+     ],
+     "q": "Hättest du lieber Quinoa oder Couscous im Salat, und warum?",
+     "c": "Mach schnellen Couscous mit kochender Brühe, lockere ihn auf und mische Kräuter, Zitrone und Kichererbsen unter."
+    },
+    "es": {
+     "t": "Quinoa y cuscús",
+     "g": "Usar cereales de cocción rápida en ensaladas, bowls y guarniciones.",
+     "p": [
+      "Lava bien la quinoa y cuécela en el doble de su volumen de agua unos quince minutos.",
+      "El cuscús es pasta diminuta del norte de África: vierte agua o caldo hirviendo, tapa y espera cinco minutos.",
+      "Ambos absorben muy bien los aliños, así que mézclalos con hierbas, legumbres y verduras picadas."
+     ],
+     "q": "¿Prefieres quinoa o cuscús en una ensalada, y por qué?",
+     "c": "Prepara un cuscús rápido con caldo hirviendo, suéltalo y mézclalo con hierbas, limón y garbanzos."
+    },
+    "fr": {
+     "t": "Quinoa et couscous",
+     "g": "Utiliser des céréales à cuisson rapide dans les salades, bols et accompagnements.",
+     "p": [
+      "Rince bien le quinoa, puis fais-le cuire dans environ deux fois son volume d’eau une quinzaine de minutes.",
+      "Le couscous est une minuscule pâte d’Afrique du Nord : verse de l’eau ou du bouillon bouillant, couvre, attends cinq minutes.",
+      "Les deux absorbent très bien les sauces : mélange-les avec herbes, légumineuses et légumes hachés."
+     ],
+     "q": "Préfères-tu le quinoa ou le couscous dans une salade, et pourquoi ?",
+     "c": "Prépare un couscous rapide au bouillon bouillant, égraine-le et ajoute herbes, citron et pois chiches."
+    },
+    "it": {
+     "t": "Quinoa e cous cous",
+     "g": "Usare cereali a cottura rapida in insalate, bowl e contorni.",
+     "p": [
+      "Sciacqua bene la quinoa e cuocila in circa il doppio del suo volume d’acqua per una quindicina di minuti.",
+      "Il cous cous è pasta minuscola del Nord Africa: versaci acqua o brodo bollente, copri e aspetta cinque minuti.",
+      "Entrambi assorbono benissimo i condimenti: mescolali con erbe, legumi e verdure tritate."
+     ],
+     "q": "Preferisci quinoa o cous cous in un’insalata, e perché?",
+     "c": "Prepara un cous cous veloce con brodo bollente, sgranalo e unisci erbe, limone e ceci."
+    },
+    "pt": {
+     "t": "Quinoa e cuscuz",
+     "g": "Usar cereais de cozedura rápida em saladas, taças e acompanhamentos.",
+     "p": [
+      "Passa bem a quinoa por água e coze-a em cerca do dobro do seu volume de água uns quinze minutos.",
+      "O cuscuz é uma massa minúscula do Norte de África: deita água ou caldo a ferver, tapa e espera cinco minutos.",
+      "Ambos absorvem muito bem os temperos, por isso mistura-os com ervas, leguminosas e legumes picados."
+     ],
+     "q": "Preferes quinoa ou cuscuz numa salada, e porquê?",
+     "c": "Faz um cuscuz rápido com caldo a ferver, solta-o e mistura ervas, limão e grão-de-bico."
+    },
+    "pt_BR": {
+     "t": "Quinoa e cuscuz marroquino",
+     "g": "Usar grãos de cozimento rápido em saladas, bowls e acompanhamentos.",
+     "p": [
+      "Lave bem a quinoa e cozinhe em cerca do dobro do volume de água por uns quinze minutos.",
+      "O cuscuz marroquino é uma massinha do Norte da África: jogue água ou caldo fervendo, tampe e espere cinco minutos.",
+      "Os dois absorvem muito bem os molhos, então misture com ervas, leguminosas e legumes picados."
+     ],
+     "q": "Você prefere quinoa ou cuscuz marroquino na salada, e por quê?",
+     "c": "Faça um cuscuz marroquino rápido com caldo fervendo, solte e misture ervas, limão e grão-de-bico."
+    }
+   }
+  }
+ ]
+}

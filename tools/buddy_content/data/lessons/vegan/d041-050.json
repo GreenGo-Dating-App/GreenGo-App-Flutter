@@ -1,0 +1,835 @@
+{
+ "topic": "vegan",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Big salads that fill you up",
+     "g": "Combine grains, beans, roasted vegetables and crunchy toppings in one bowl.",
+     "p": [
+      "Start with a base of leaves or a cooked grain, then add a legume like chickpeas or lentils for staying power.",
+      "Warm roasted vegetables next to crisp raw ones make a salad feel like a real meal.",
+      "Finish with crunch, like toasted seeds, nuts or croutons, and a generous dressing."
+     ],
+     "q": "What makes a salad feel like a full meal to you?",
+     "c": "Build a big salad tonight with a grain, a legume, something roasted, something crunchy and your day 40 vinaigrette."
+    },
+    "de": {
+     "t": "Große Salate, die satt machen",
+     "g": "Kombiniere Getreide, Bohnen, Ofengemüse und knusprige Toppings in einer Schüssel.",
+     "p": [
+      "Beginne mit Blättern oder gekochtem Getreide und gib eine Hülsenfrucht wie Kichererbsen oder Linsen dazu.",
+      "Warmes Ofengemüse neben knackig rohem macht aus einem Salat eine echte Mahlzeit.",
+      "Zum Schluss Crunch wie geröstete Samen, Nüsse oder Croûtons und reichlich Dressing."
+     ],
+     "q": "Was macht einen Salat für dich zu einer vollen Mahlzeit?",
+     "c": "Bau heute einen großen Salat mit Getreide, Hülsenfrucht, etwas Geröstetem, etwas Knusprigem und deiner Vinaigrette von Tag 40."
+    },
+    "es": {
+     "t": "Ensaladas grandes que llenan",
+     "g": "Combinar cereales, legumbres, verduras asadas y toppings crujientes en un bol.",
+     "p": [
+      "Empieza con hojas o un cereal cocido y añade una legumbre como garbanzos o lentejas para que sacie.",
+      "Las verduras asadas templadas junto a otras crudas y crujientes convierten la ensalada en una comida de verdad.",
+      "Termina con algo crujiente, como semillas tostadas, frutos secos o picatostes, y un buen aliño."
+     ],
+     "q": "¿Qué hace que una ensalada te parezca una comida completa?",
+     "c": "Monta esta noche una ensalada grande con cereal, legumbre, algo asado, algo crujiente y tu vinagreta del día 40."
+    },
+    "fr": {
+     "t": "De grandes salades qui rassasient",
+     "g": "Associer céréales, légumineuses, légumes rôtis et garnitures croquantes dans un bol.",
+     "p": [
+      "Commence par des feuilles ou une céréale cuite, puis ajoute une légumineuse comme pois chiches ou lentilles.",
+      "Des légumes rôtis tièdes à côté de crudités croquantes font d’une salade un vrai repas.",
+      "Termine par du croquant, graines grillées, noix ou croûtons, et une sauce généreuse."
+     ],
+     "q": "Qu’est-ce qui fait d’une salade un repas complet pour toi ?",
+     "c": "Compose ce soir une grande salade avec céréale, légumineuse, un élément rôti, un croquant et ta vinaigrette du jour 40."
+    },
+    "it": {
+     "t": "Insalate ricche che saziano",
+     "g": "Unire cereali, legumi, verdure arrosto e condimenti croccanti in una ciotola.",
+     "p": [
+      "Parti da foglie o da un cereale cotto, poi aggiungi un legume come ceci o lenticchie per saziare.",
+      "Verdure arrosto tiepide accanto a verdure crude e croccanti rendono l’insalata un vero pasto.",
+      "Completa con qualcosa di croccante, come semi tostati, frutta secca o crostini, e un condimento generoso."
+     ],
+     "q": "Cosa rende un’insalata un pasto completo per te?",
+     "c": "Componi stasera un’insalata ricca con cereale, legume, qualcosa di arrosto, qualcosa di croccante e la vinaigrette del giorno 40."
+    },
+    "pt": {
+     "t": "Saladas grandes que saciam",
+     "g": "Juntar cereais, leguminosas, legumes assados e coberturas crocantes numa taça.",
+     "p": [
+      "Começa com folhas ou um cereal cozido e junta uma leguminosa como grão ou lentilhas para saciar.",
+      "Legumes assados mornos ao lado de legumes crus e estaladiços fazem da salada uma refeição a sério.",
+      "Termina com algo crocante, como sementes torradas, frutos secos ou croutons, e um bom tempero."
+     ],
+     "q": "O que faz uma salada parecer uma refeição completa para ti?",
+     "c": "Monta hoje uma salada grande com cereal, leguminosa, algo assado, algo crocante e o vinagrete do dia 40."
+    },
+    "pt_BR": {
+     "t": "Saladas grandes que sustentam",
+     "g": "Juntar grãos, leguminosas, legumes assados e coberturas crocantes numa tigela.",
+     "p": [
+      "Comece com folhas ou um grão cozido e junte uma leguminosa como grão-de-bico ou lentilha para sustentar.",
+      "Legumes assados mornos ao lado de crus e crocantes transformam a salada numa refeição de verdade.",
+      "Finalize com crocância, como sementes tostadas, castanhas ou croutons, e bastante molho."
+     ],
+     "q": "O que faz uma salada parecer uma refeição completa para você?",
+     "c": "Monte hoje uma salada grande com grão, leguminosa, algo assado, algo crocante e seu vinagrete do dia 40."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roasting vegetables",
+     "g": "Use high heat, space on the tray and good seasoning for caramelised edges.",
+     "p": [
+      "Roast at a high temperature, around 200 to 220 °C, so the outside browns before the inside turns mushy.",
+      "Spread pieces in one layer with space between them; a crowded tray steams instead of roasting.",
+      "Toss with oil and salt first and add delicate spices or herbs near the end so they do not burn."
+     ],
+     "q": "Which vegetable do you think tastes best roasted?",
+     "c": "Roast a tray of mixed vegetables in a single layer and check that each piece has golden edges."
+    },
+    "de": {
+     "t": "Gemüse rösten",
+     "g": "Nutze hohe Hitze, Platz auf dem Blech und gutes Würzen für karamellisierte Ränder.",
+     "p": [
+      "Röste bei hoher Temperatur, etwa 200 bis 220 °C, damit außen Bräune entsteht, bevor innen alles weich wird.",
+      "Verteile die Stücke in einer Lage mit Abstand; ein volles Blech dämpft statt zu rösten.",
+      "Erst mit Öl und Salz mischen, empfindliche Gewürze oder Kräuter erst gegen Ende, damit sie nicht verbrennen."
+     ],
+     "q": "Welches Gemüse schmeckt deiner Meinung nach geröstet am besten?",
+     "c": "Röste ein Blech gemischtes Gemüse in einer Lage und prüfe, ob jedes Stück goldene Ränder hat."
+    },
+    "es": {
+     "t": "Asar verduras",
+     "g": "Usar calor alto, espacio en la bandeja y buen sazonado para bordes caramelizados.",
+     "p": [
+      "Asa a temperatura alta, unos 200 a 220 °C, para que el exterior se dore antes de que el interior se ablande demasiado.",
+      "Reparte las piezas en una sola capa con espacio; una bandeja llena se cuece al vapor en vez de asarse.",
+      "Mézclalas antes con aceite y sal, y añade especias delicadas o hierbas al final para que no se quemen."
+     ],
+     "q": "¿Qué verdura crees que sabe mejor asada?",
+     "c": "Asa una bandeja de verduras variadas en una sola capa y comprueba que cada pieza tenga bordes dorados."
+    },
+    "fr": {
+     "t": "Rôtir les légumes",
+     "g": "Utiliser une forte chaleur, de l’espace sur la plaque et un bon assaisonnement pour des bords caramélisés.",
+     "p": [
+      "Rôtis à haute température, vers 200 à 220 °C, pour que l’extérieur dore avant que l’intérieur ne ramollisse trop.",
+      "Étale les morceaux en une seule couche, espacés ; une plaque surchargée cuit à la vapeur au lieu de rôtir.",
+      "Mélange d’abord avec huile et sel, et ajoute épices délicates ou herbes vers la fin pour qu’elles ne brûlent pas."
+     ],
+     "q": "Quel légume trouves-tu le meilleur rôti ?",
+     "c": "Rôtis une plaque de légumes variés en une seule couche et vérifie que chaque morceau a des bords dorés."
+    },
+    "it": {
+     "t": "Arrostire le verdure",
+     "g": "Usare calore alto, spazio sulla teglia e buon condimento per bordi caramellati.",
+     "p": [
+      "Arrostisci a temperatura alta, circa 200-220 °C, perché l’esterno si dori prima che l’interno diventi molle.",
+      "Disponi i pezzi in un solo strato e distanziati; una teglia troppo piena cuoce a vapore invece di arrostire.",
+      "Condisci prima con olio e sale e aggiungi spezie delicate o erbe verso la fine perché non brucino."
+     ],
+     "q": "Quale verdura secondo te è più buona arrosto?",
+     "c": "Arrostisci una teglia di verdure miste in un solo strato e controlla che ogni pezzo abbia i bordi dorati."
+    },
+    "pt": {
+     "t": "Assar legumes",
+     "g": "Usar calor alto, espaço no tabuleiro e bom tempero para bordas caramelizadas.",
+     "p": [
+      "Assa a temperatura alta, cerca de 200 a 220 °C, para o exterior alourar antes de o interior ficar mole.",
+      "Espalha os pedaços numa só camada e com espaço; um tabuleiro cheio coze a vapor em vez de assar.",
+      "Envolve primeiro em azeite e sal e junta especiarias delicadas ou ervas perto do fim para não queimarem."
+     ],
+     "q": "Que legume achas que fica melhor assado?",
+     "c": "Assa um tabuleiro de legumes variados numa só camada e confirma que cada pedaço tem bordas douradas."
+    },
+    "pt_BR": {
+     "t": "Assando legumes",
+     "g": "Usar forno alto, espaço na assadeira e bom tempero para bordas caramelizadas.",
+     "p": [
+      "Asse em temperatura alta, cerca de 200 a 220 °C, para dourar por fora antes de ficar mole por dentro.",
+      "Espalhe os pedaços numa camada só e com espaço; assadeira lotada cozinha no vapor em vez de assar.",
+      "Misture antes com azeite e sal e coloque temperos delicados ou ervas perto do fim para não queimar."
+     ],
+     "q": "Qual legume você acha que fica melhor assado?",
+     "c": "Asse uma assadeira de legumes variados numa camada só e confira se cada pedaço tem bordas douradas."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steaming and blanching",
+     "g": "Use gentle methods that keep vegetables bright and crisp.",
+     "p": [
+      "Steaming cooks vegetables over simmering water, keeping their colour, shape and fresh taste.",
+      "Blanching means a short dip in boiling salted water, then straight into cold water to stop the cooking.",
+      "Blanched green beans, broccoli or peas stay vivid green and crisp, perfect for salads and stir-fries."
+     ],
+     "q": "Do you like your vegetables soft and tender or bright and crunchy?",
+     "c": "Blanch a handful of green vegetables for one to two minutes, cool them in cold water and taste the crunch."
+    },
+    "de": {
+     "t": "Dämpfen und Blanchieren",
+     "g": "Nutze sanfte Methoden, die Gemüse leuchtend und knackig halten.",
+     "p": [
+      "Beim Dämpfen gart Gemüse über köchelndem Wasser und behält Farbe, Form und frischen Geschmack.",
+      "Blanchieren heißt, kurz in kochendes Salzwasser tauchen, dann sofort in kaltes Wasser, um das Garen zu stoppen.",
+      "Blanchierte grüne Bohnen, Brokkoli oder Erbsen bleiben leuchtend grün und knackig, ideal für Salate und Wok."
+     ],
+     "q": "Magst du Gemüse lieber weich und zart oder leuchtend und knackig?",
+     "c": "Blanchiere eine Handvoll grünes Gemüse ein bis zwei Minuten, kühle es in kaltem Wasser ab und probiere den Biss."
+    },
+    "es": {
+     "t": "Al vapor y escaldado",
+     "g": "Usar métodos suaves que mantienen las verduras brillantes y crujientes.",
+     "p": [
+      "Al vapor, las verduras se cocinan sobre agua hirviendo y conservan color, forma y sabor fresco.",
+      "Escaldar es sumergirlas poco tiempo en agua hirviendo con sal y pasarlas enseguida a agua fría para cortar la cocción.",
+      "Judías verdes, brócoli o guisantes escaldados quedan verdes y crujientes, perfectos para ensaladas y salteados."
+     ],
+     "q": "¿Te gustan las verduras blanditas o brillantes y crujientes?",
+     "c": "Escalda un puñado de verduras verdes uno o dos minutos, enfríalas en agua fría y prueba lo crujientes que quedan."
+    },
+    "fr": {
+     "t": "Vapeur et blanchiment",
+     "g": "Utiliser des méthodes douces qui gardent les légumes éclatants et croquants.",
+     "p": [
+      "La cuisson vapeur cuit les légumes au-dessus d’une eau frémissante et préserve couleur, forme et fraîcheur.",
+      "Blanchir, c’est plonger brièvement dans l’eau bouillante salée, puis aussitôt dans l’eau froide pour stopper la cuisson.",
+      "Haricots verts, brocoli ou petits pois blanchis restent bien verts et croquants, parfaits en salade ou au wok."
+     ],
+     "q": "Aimes-tu tes légumes fondants ou éclatants et croquants ?",
+     "c": "Blanchis une poignée de légumes verts une à deux minutes, refroidis-les à l’eau froide et goûte le croquant."
+    },
+    "it": {
+     "t": "Al vapore e sbollentati",
+     "g": "Usare metodi delicati che mantengono le verdure brillanti e croccanti.",
+     "p": [
+      "La cottura a vapore cuoce le verdure sopra l’acqua che bolle e ne conserva colore, forma e freschezza.",
+      "Sbollentare significa un breve tuffo in acqua bollente salata e poi subito in acqua fredda per fermare la cottura.",
+      "Fagiolini, broccoli o piselli sbollentati restano verde vivo e croccanti, perfetti per insalate e saltati."
+     ],
+     "q": "Ti piacciono le verdure morbide o brillanti e croccanti?",
+     "c": "Sbollenta una manciata di verdure verdi per uno o due minuti, raffreddale in acqua fredda e senti la croccantezza."
+    },
+    "pt": {
+     "t": "Cozer a vapor e branquear",
+     "g": "Usar métodos suaves que mantêm os legumes vivos e estaladiços.",
+     "p": [
+      "A vapor, os legumes cozem por cima de água a ferver e mantêm a cor, a forma e o sabor fresco.",
+      "Branquear é mergulhar pouco tempo em água a ferver com sal e passar logo para água fria para parar a cozedura.",
+      "Feijão-verde, brócolos ou ervilhas branqueados ficam verdes e estaladiços, perfeitos para saladas e salteados."
+     ],
+     "q": "Gostas de legumes macios ou vivos e estaladiços?",
+     "c": "Branqueia uma mão-cheia de legumes verdes um ou dois minutos, arrefece-os em água fria e prova a crocância."
+    },
+    "pt_BR": {
+     "t": "No vapor e branqueado",
+     "g": "Usar métodos suaves que deixam os legumes vivos e crocantes.",
+     "p": [
+      "No vapor, os legumes cozinham sobre a água fervendo e mantêm cor, formato e sabor fresco.",
+      "Branquear é dar um mergulho rápido em água fervente com sal e passar direto para água gelada para parar o cozimento.",
+      "Vagem, brócolis ou ervilha branqueados ficam bem verdes e crocantes, perfeitos para saladas e salteados."
+     ],
+     "q": "Você gosta de legumes macios ou vivos e crocantes?",
+     "c": "Branqueie um punhado de legumes verdes por um ou dois minutos, esfrie na água gelada e sinta a crocância."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stir-frying basics",
+     "g": "Cook colourful meals fast in a hot pan with small pieces.",
+     "p": [
+      "Cut everything into small, even pieces and prepare the sauce before you turn on the heat; stir-frying is fast.",
+      "Get the pan or wok very hot, add a little oil, then cook hard vegetables first and soft ones last.",
+      "Keep the food moving and do not overcrowd the pan, or the vegetables will stew instead of searing."
+     ],
+     "q": "What would be in your ideal stir-fry?",
+     "c": "Make a stir-fry with three vegetables and your crispy tofu from day 26, adding the sauce in the last minute."
+    },
+    "de": {
+     "t": "Grundlagen des Pfannenrührens",
+     "g": "Koche farbenfrohe Gerichte schnell in einer heißen Pfanne mit kleinen Stücken.",
+     "p": [
+      "Schneide alles klein und gleichmäßig und bereite die Sauce vor, bevor der Herd an ist; Pfannenrühren geht schnell.",
+      "Mach Pfanne oder Wok sehr heiß, etwas Öl hinein, dann hartes Gemüse zuerst und weiches zuletzt.",
+      "Halte alles in Bewegung und überfülle die Pfanne nicht, sonst schmort das Gemüse statt anzubraten."
+     ],
+     "q": "Was wäre in deinem idealen Wokgericht?",
+     "c": "Mach ein Wokgericht mit drei Gemüsen und deinem knusprigen Tofu von Tag 26, die Sauce kommt in der letzten Minute."
+    },
+    "es": {
+     "t": "Salteado básico",
+     "g": "Cocinar platos coloridos rápido en una sartén caliente con trozos pequeños.",
+     "p": [
+      "Corta todo en trozos pequeños e iguales y prepara la salsa antes de encender el fuego; el salteado va rápido.",
+      "Calienta mucho la sartén o el wok, añade poco aceite y cocina primero las verduras duras y al final las blandas.",
+      "Mantén la comida en movimiento y no llenes demasiado la sartén, o las verduras se cocerán en vez de dorarse."
+     ],
+     "q": "¿Qué llevaría tu salteado ideal?",
+     "c": "Haz un salteado con tres verduras y tu tofu crujiente del día 26, añadiendo la salsa en el último minuto."
+    },
+    "fr": {
+     "t": "Les bases du sauté au wok",
+     "g": "Cuisiner vite des plats colorés dans une poêle très chaude avec de petits morceaux.",
+     "p": [
+      "Coupe tout en petits morceaux réguliers et prépare la sauce avant d’allumer le feu : le sauté va très vite.",
+      "Fais bien chauffer la poêle ou le wok, un peu d’huile, puis les légumes durs d’abord et les tendres en dernier.",
+      "Remue sans cesse et ne surcharge pas la poêle, sinon les légumes mijotent au lieu de saisir."
+     ],
+     "q": "Que mettrais-tu dans ton sauté idéal ?",
+     "c": "Fais un sauté avec trois légumes et ton tofu croustillant du jour 26, en ajoutant la sauce à la dernière minute."
+    },
+    "it": {
+     "t": "Le basi del saltato",
+     "g": "Cucinare piatti colorati in fretta in una padella rovente con pezzi piccoli.",
+     "p": [
+      "Taglia tutto a pezzi piccoli e regolari e prepara la salsa prima di accendere il fuoco: il saltato è velocissimo.",
+      "Scalda molto la padella o il wok, un filo d’olio, poi prima le verdure dure e per ultime quelle tenere.",
+      "Tieni il cibo in movimento e non riempire troppo la padella, o le verdure stufano invece di rosolare."
+     ],
+     "q": "Cosa ci sarebbe nel tuo saltato ideale?",
+     "c": "Fai un saltato con tre verdure e il tofu croccante del giorno 26, aggiungendo la salsa nell’ultimo minuto."
+    },
+    "pt": {
+     "t": "O básico do salteado",
+     "g": "Cozinhar pratos coloridos depressa numa frigideira bem quente com pedaços pequenos.",
+     "p": [
+      "Corta tudo em pedaços pequenos e iguais e prepara o molho antes de ligar o lume; o salteado é rápido.",
+      "Aquece muito bem a frigideira ou wok, um pouco de óleo, e coze primeiro os legumes duros e por fim os macios.",
+      "Mantém tudo em movimento e não enchas demasiado a frigideira, ou os legumes estufam em vez de alourar."
+     ],
+     "q": "O que teria o teu salteado ideal?",
+     "c": "Faz um salteado com três legumes e o tofu estaladiço do dia 26, juntando o molho no último minuto."
+    },
+    "pt_BR": {
+     "t": "O básico do salteado",
+     "g": "Cozinhar pratos coloridos rapidinho numa frigideira bem quente com pedaços pequenos.",
+     "p": [
+      "Corte tudo em pedaços pequenos e iguais e prepare o molho antes de ligar o fogo; o salteado é rápido.",
+      "Esquente bem a frigideira ou wok, um pouco de óleo, e coloque primeiro os legumes duros e por último os macios.",
+      "Mantenha tudo em movimento e não lote a frigideira, senão os legumes cozinham em vez de dourar."
+     ],
+     "q": "O que teria no seu salteado ideal?",
+     "c": "Faça um salteado com três legumes e o tofu crocante do dia 26, colocando o molho no último minuto."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sautéing and simmering",
+     "g": "Use two everyday methods for soft, flavourful vegetables, sauces and stews.",
+     "p": [
+      "Sautéing cooks vegetables in a little oil over medium heat, stirring now and then, until soft and lightly golden.",
+      "Simmering means small, gentle bubbles below a boil, ideal for sauces, soups, beans and stews.",
+      "Most stews start with a sauté of onion, garlic and spices, then simmer slowly so flavours blend."
+     ],
+     "q": "Which slow-simmered dish reminds you of comfort food?",
+     "c": "Sauté onion, garlic and a spice, add canned tomatoes and simmer for twenty minutes into a simple sauce."
+    },
+    "de": {
+     "t": "Anbraten und Köcheln",
+     "g": "Nutze zwei Alltagsmethoden für weiches, aromatisches Gemüse, Saucen und Eintöpfe.",
+     "p": [
+      "Beim Anbraten gart Gemüse in wenig Öl bei mittlerer Hitze unter gelegentlichem Rühren, bis es weich und leicht golden ist.",
+      "Köcheln heißt kleine, sanfte Blasen unterhalb des Siedens, ideal für Saucen, Suppen, Bohnen und Eintöpfe.",
+      "Die meisten Eintöpfe beginnen mit angebratener Zwiebel, Knoblauch und Gewürzen und köcheln dann langsam."
+     ],
+     "q": "Welches langsam geköchelte Gericht ist für dich Wohlfühlessen?",
+     "c": "Brate Zwiebel, Knoblauch und ein Gewürz an, gib Dosentomaten dazu und köchle zwanzig Minuten zu einer Sauce."
+    },
+    "es": {
+     "t": "Saltear y cocer a fuego lento",
+     "g": "Dominar dos métodos diarios para verduras tiernas y sabrosas, salsas y guisos.",
+     "p": [
+      "Saltear es cocinar en poco aceite a fuego medio, removiendo de vez en cuando, hasta que se ablanden y se doren un poco.",
+      "Cocer a fuego lento es mantener burbujas pequeñas y suaves sin hervir fuerte, ideal para salsas, sopas y guisos.",
+      "La mayoría de guisos empiezan con un sofrito de cebolla, ajo y especias y luego se cuecen despacio."
+     ],
+     "q": "¿Qué guiso lento te recuerda a comida reconfortante?",
+     "c": "Sofríe cebolla, ajo y una especia, añade tomate en lata y cuece veinte minutos hasta tener una salsa sencilla."
+    },
+    "fr": {
+     "t": "Faire revenir et mijoter",
+     "g": "Maîtriser deux méthodes du quotidien pour des légumes fondants, des sauces et des ragoûts.",
+     "p": [
+      "Faire revenir, c’est cuire dans un peu d’huile à feu moyen, en remuant de temps en temps, jusqu’à ce que ce soit tendre et doré.",
+      "Mijoter, c’est garder de petites bulles douces sous l’ébullition : idéal pour sauces, soupes, légumineuses et ragoûts.",
+      "La plupart des ragoûts commencent par oignon, ail et épices revenus, puis mijotent lentement pour marier les saveurs."
+     ],
+     "q": "Quel plat mijoté te rappelle le réconfort ?",
+     "c": "Fais revenir oignon, ail et une épice, ajoute des tomates en boîte et laisse mijoter vingt minutes en sauce."
+    },
+    "it": {
+     "t": "Rosolare e sobbollire",
+     "g": "Usare due metodi quotidiani per verdure morbide e saporite, sughi e stufati.",
+     "p": [
+      "Rosolare significa cuocere in poco olio a fuoco medio, mescolando ogni tanto, finché è morbido e leggermente dorato.",
+      "Sobbollire significa bollicine piccole e lente sotto il bollore, ideale per sughi, zuppe, legumi e stufati.",
+      "Quasi tutti gli stufati partono da un soffritto di cipolla, aglio e spezie e poi cuociono lentamente."
+     ],
+     "q": "Quale piatto cotto a lungo ti ricorda il cibo che consola?",
+     "c": "Soffriggi cipolla, aglio e una spezia, aggiungi pomodori in scatola e sobbolli venti minuti per un sugo semplice."
+    },
+    "pt": {
+     "t": "Saltear e cozinhar em lume brando",
+     "g": "Dominar dois métodos diários para legumes macios e saborosos, molhos e guisados.",
+     "p": [
+      "Saltear é cozinhar em pouco azeite a lume médio, mexendo de vez em quando, até ficar macio e levemente dourado.",
+      "Cozinhar em lume brando é manter bolhinhas suaves sem ferver forte, ideal para molhos, sopas, feijão e guisados.",
+      "A maioria dos guisados começa com um refogado de cebola, alho e especiarias e depois coze devagar."
+     ],
+     "q": "Que guisado lento te lembra comida de conforto?",
+     "c": "Refoga cebola, alho e uma especiaria, junta tomate de lata e deixa em lume brando vinte minutos para um molho simples."
+    },
+    "pt_BR": {
+     "t": "Refogar e cozinhar em fogo baixo",
+     "g": "Dominar dois métodos do dia a dia para legumes macios e saborosos, molhos e ensopados.",
+     "p": [
+      "Refogar é cozinhar em pouco azeite no fogo médio, mexendo de vez em quando, até ficar macio e levemente dourado.",
+      "Cozinhar em fogo baixo é manter bolhinhas suaves sem ferver forte, ideal para molhos, sopas, feijão e ensopados.",
+      "A maioria dos ensopados começa com um refogado de cebola, alho e temperos e depois cozinha devagar."
+     ],
+     "q": "Qual prato de cozimento lento é comida afetiva para você?",
+     "c": "Refogue cebola, alho e um tempero, junte tomate em lata e cozinhe vinte minutos em fogo baixo até virar molho."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Oven-baked dishes",
+     "g": "Make casseroles, gratins and traybakes that cook while you relax.",
+     "p": [
+      "Traybakes put chopped vegetables, chickpeas or tofu and seasoning on one tray for a meal with little washing up.",
+      "Plant-based gratins use a creamy white sauce made with plant milk, flour and oil, topped with breadcrumbs.",
+      "Casseroles like a bean and vegetable bake can be made ahead and reheated for easy meals."
+     ],
+     "q": "What oven dish would you love to have waiting for you after a long day?",
+     "c": "Make a one-tray dinner with vegetables, chickpeas and spices, and relax while it bakes."
+    },
+    "de": {
+     "t": "Gerichte aus dem Ofen",
+     "g": "Mach Aufläufe, Gratins und Blechgerichte, die garen, während du entspannst.",
+     "p": [
+      "Blechgerichte bringen Gemüse, Kichererbsen oder Tofu und Gewürze auf ein Blech, mit wenig Abwasch.",
+      "Pflanzliche Gratins nutzen eine cremige helle Sauce aus Pflanzenmilch, Mehl und Öl, mit Semmelbröseln obenauf.",
+      "Aufläufe wie ein Bohnen-Gemüse-Auflauf lassen sich vorbereiten und für einfache Mahlzeiten aufwärmen."
+     ],
+     "q": "Welches Ofengericht hättest du gern nach einem langen Tag auf dich wartend?",
+     "c": "Mach ein Blechgericht mit Gemüse, Kichererbsen und Gewürzen und entspanne, während es backt."
+    },
+    "es": {
+     "t": "Platos al horno",
+     "g": "Preparar cazuelas, gratinados y bandejas al horno que se cocinan mientras descansas.",
+     "p": [
+      "Las bandejas al horno juntan verduras, garbanzos o tofu y especias en una sola bandeja, con poco que fregar.",
+      "Los gratinados vegetales usan una bechamel de bebida vegetal, harina y aceite, cubierta con pan rallado.",
+      "Las cazuelas, como un horneado de alubias y verduras, se preparan antes y se recalientan para comer fácil."
+     ],
+     "q": "¿Qué plato al horno te encantaría encontrar listo tras un día largo?",
+     "c": "Haz una cena en una bandeja con verduras, garbanzos y especias, y relájate mientras se hornea."
+    },
+    "fr": {
+     "t": "Les plats au four",
+     "g": "Préparer gratins, cocottes et plaques au four qui cuisent pendant que tu te détends.",
+     "p": [
+      "Les plats sur plaque réunissent légumes, pois chiches ou tofu et épices sur une seule plaque, avec peu de vaisselle.",
+      "Les gratins végétaux utilisent une béchamel à la boisson végétale, farine et huile, avec de la chapelure dessus.",
+      "Les plats mijotés au four, comme un gratin de haricots et légumes, se préparent à l’avance et se réchauffent facilement."
+     ],
+     "q": "Quel plat au four aimerais-tu trouver prêt après une longue journée ?",
+     "c": "Prépare un dîner sur une seule plaque avec légumes, pois chiches et épices, et détends-toi pendant la cuisson."
+    },
+    "it": {
+     "t": "Piatti al forno",
+     "g": "Preparare sformati, gratin e teglie che cuociono mentre ti rilassi.",
+     "p": [
+      "Le teglie uniche mettono verdure, ceci o tofu e spezie su una sola teglia, con pochi piatti da lavare.",
+      "I gratin vegetali usano una besciamella con bevanda vegetale, farina e olio, coperta di pangrattato.",
+      "Gli sformati, come un forno di fagioli e verdure, si preparano prima e si riscaldano per pasti facili."
+     ],
+     "q": "Quale piatto al forno ti piacerebbe trovare pronto dopo una lunga giornata?",
+     "c": "Prepara una cena in una sola teglia con verdure, ceci e spezie, e rilassati mentre cuoce."
+    },
+    "pt": {
+     "t": "Pratos no forno",
+     "g": "Fazer gratinados, empadões e tabuleiros que cozinham enquanto descansas.",
+     "p": [
+      "Os tabuleiros juntam legumes, grão ou tofu e especiarias numa só forma, com pouca loiça para lavar.",
+      "Os gratinados vegetais usam um bechamel de bebida vegetal, farinha e azeite, com pão ralado por cima.",
+      "Pratos de forno, como um assado de feijão e legumes, podem ser feitos antes e aquecidos para refeições fáceis."
+     ],
+     "q": "Que prato de forno adoravas ter à tua espera depois de um dia longo?",
+     "c": "Faz um jantar num só tabuleiro com legumes, grão e especiarias, e descansa enquanto vai ao forno."
+    },
+    "pt_BR": {
+     "t": "Pratos de forno",
+     "g": "Fazer gratinados, escondidinhos e assadeiras que cozinham enquanto você descansa.",
+     "p": [
+      "Assadeiras únicas juntam legumes, grão-de-bico ou tofu e temperos numa forma só, com pouca louça.",
+      "Gratinados vegetais usam um bechamel de bebida vegetal, farinha e azeite, coberto com farinha de rosca.",
+      "Pratos de forno, como um assado de feijão e legumes, podem ser feitos antes e reaquecidos para refeições fáceis."
+     ],
+     "q": "Qual prato de forno você adoraria encontrar pronto depois de um dia longo?",
+     "c": "Faça um jantar numa assadeira só com legumes, grão-de-bico e temperos, e descanse enquanto assa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: core techniques",
+     "g": "Recap tofu, tempeh, seasoning and cooking methods, then make a stir-fry.",
+     "p": [
+      "Tofu, tempeh and seitan are ready to soak up flavour once pressed, steamed or marinated.",
+      "Salt, acid, fat, heat, umami, spices and herbs are your tools for making any dish taste balanced.",
+      "Roasting, steaming, stir-frying, sautéing, simmering and baking now cover almost every recipe you will meet."
+     ],
+     "q": "Which technique from this stretch do you feel most confident with now?",
+     "c": "Cook a stir-fry using a pressed protein, bloomed spices or an umami sauce, and finish it with fresh herbs."
+    },
+    "de": {
+     "t": "Wiederholung: Kerntechniken",
+     "g": "Wiederhole Tofu, Tempeh, Würzen und Garmethoden und koche dann ein Wokgericht.",
+     "p": [
+      "Tofu, Tempeh und Seitan nehmen Aroma auf, sobald sie gepresst, gedämpft oder mariniert sind.",
+      "Salz, Säure, Fett, Hitze, Umami, Gewürze und Kräuter sind deine Werkzeuge für ausgewogenen Geschmack.",
+      "Rösten, Dämpfen, Pfannenrühren, Anbraten, Köcheln und Backen decken fast jedes Rezept ab."
+     ],
+     "q": "Bei welcher Technik dieser Etappe fühlst du dich jetzt am sichersten?",
+     "c": "Koche ein Wokgericht mit gepresstem Protein, angeschwitzten Gewürzen oder Umami-Sauce und frischen Kräutern zum Schluss."
+    },
+    "es": {
+     "t": "Repaso: técnicas clave",
+     "g": "Repasar tofu, tempeh, sazonado y métodos de cocción, y preparar un salteado.",
+     "p": [
+      "El tofu, el tempeh y el seitán absorben sabor una vez prensados, al vapor o marinados.",
+      "Sal, ácido, grasa, calor, umami, especias y hierbas son tus herramientas para equilibrar cualquier plato.",
+      "Asar, vapor, saltear, sofreír, cocer a fuego lento y hornear cubren ya casi cualquier receta."
+     ],
+     "q": "¿Con qué técnica de esta etapa te sientes más seguro ahora?",
+     "c": "Cocina un salteado con una proteína prensada, especias sofritas o una salsa umami, y termínalo con hierbas frescas."
+    },
+    "fr": {
+     "t": "Révision : techniques clés",
+     "g": "Revoir tofu, tempeh, assaisonnement et modes de cuisson, puis préparer un sauté.",
+     "p": [
+      "Tofu, tempeh et seitan absorbent les saveurs une fois pressés, cuits à la vapeur ou marinés.",
+      "Sel, acide, gras, chaleur, umami, épices et herbes sont tes outils pour équilibrer n’importe quel plat.",
+      "Rôtir, vapeur, sauter, faire revenir, mijoter et cuire au four couvrent presque toutes les recettes."
+     ],
+     "q": "Avec quelle technique de cette étape te sens-tu le plus à l’aise maintenant ?",
+     "c": "Cuisine un sauté avec une protéine pressée, des épices infusées ou une sauce umami, et finis avec des herbes fraîches."
+    },
+    "it": {
+     "t": "Ripasso: tecniche chiave",
+     "g": "Ripassare tofu, tempeh, condimento e metodi di cottura, poi preparare un saltato.",
+     "p": [
+      "Tofu, tempeh e seitan assorbono sapore una volta pressati, cotti al vapore o marinati.",
+      "Sale, acido, grasso, calore, umami, spezie ed erbe sono i tuoi strumenti per equilibrare ogni piatto.",
+      "Arrostire, vapore, saltare, rosolare, sobbollire e infornare coprono ormai quasi ogni ricetta."
+     ],
+     "q": "Con quale tecnica di questa tappa ti senti più sicuro ora?",
+     "c": "Cucina un saltato con una proteina pressata, spezie soffritte o una salsa umami, e completa con erbe fresche."
+    },
+    "pt": {
+     "t": "Revisão: técnicas essenciais",
+     "g": "Rever tofu, tempeh, tempero e métodos de cozinhar, e fazer um salteado.",
+     "p": [
+      "O tofu, o tempeh e o seitan absorvem sabor depois de prensados, cozidos a vapor ou marinados.",
+      "Sal, ácido, gordura, calor, umami, especiarias e ervas são as tuas ferramentas para equilibrar qualquer prato.",
+      "Assar, vapor, saltear, refogar, lume brando e forno cobrem já quase todas as receitas."
+     ],
+     "q": "Com que técnica desta etapa te sentes mais confiante agora?",
+     "c": "Faz um salteado com uma proteína prensada, especiarias fritas ou um molho umami, e termina com ervas frescas."
+    },
+    "pt_BR": {
+     "t": "Revisão: técnicas essenciais",
+     "g": "Revisar tofu, tempeh, tempero e métodos de cozimento, e fazer um salteado.",
+     "p": [
+      "Tofu, tempeh e seitan absorvem sabor depois de prensados, cozidos no vapor ou marinados.",
+      "Sal, acidez, gordura, calor, umami, especiarias e ervas são suas ferramentas para equilibrar qualquer prato.",
+      "Assar, vapor, saltear, refogar, fogo baixo e forno já cobrem quase toda receita."
+     ],
+     "q": "Com qual técnica desta etapa você se sente mais seguro agora?",
+     "c": "Faça um salteado com uma proteína prensada, especiarias fritas ou um molho umami, e finalize com ervas frescas."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A balanced plate, generally",
+     "g": "Use a simple visual guide with vegetables, whole grains, protein-rich foods and healthy fats.",
+     "p": [
+      "A common general guide fills about half the plate with vegetables and fruit, a quarter with grains, a quarter with protein-rich foods.",
+      "For plant-based meals, protein-rich foods include beans, lentils, tofu, tempeh and seitan; add a little healthy fat like nuts or olive oil.",
+      "This is general information only; a doctor or registered dietitian can advise on your individual needs."
+     ],
+     "q": "How close is a typical dinner of yours to this half, quarter, quarter idea?",
+     "c": "Arrange tonight's plate using the half vegetables, quarter grains, quarter protein-rich foods idea and notice how it looks."
+    },
+    "de": {
+     "t": "Ein ausgewogener Teller, allgemein",
+     "g": "Nutze einen einfachen Bildleitfaden mit Gemüse, Vollkorn, eiweißreichen Lebensmitteln und guten Fetten.",
+     "p": [
+      "Ein verbreiteter allgemeiner Leitfaden: etwa halb Gemüse und Obst, ein Viertel Getreide, ein Viertel eiweißreiche Lebensmittel.",
+      "Pflanzlich sind das etwa Bohnen, Linsen, Tofu, Tempeh und Seitan; dazu etwas gutes Fett wie Nüsse oder Olivenöl.",
+      "Das sind nur allgemeine Infos; eine Ärztin oder Ernährungsfachkraft berät dich zu deinem persönlichen Bedarf."
+     ],
+     "q": "Wie nah ist dein typisches Abendessen an dieser Idee von Hälfte, Viertel, Viertel?",
+     "c": "Richte heute deinen Teller nach halb Gemüse, ein Viertel Getreide, ein Viertel eiweißreiche Lebensmittel an."
+    },
+    "es": {
+     "t": "Un plato equilibrado, en general",
+     "g": "Usar una guía visual sencilla con verduras, cereales integrales, alimentos ricos en proteína y grasas saludables.",
+     "p": [
+      "Una guía general común llena medio plato de verduras y fruta, un cuarto de cereales y un cuarto de alimentos ricos en proteína.",
+      "En lo vegetal, son legumbres, lentejas, tofu, tempeh y seitán; suma algo de grasa saludable como frutos secos o aceite de oliva.",
+      "Es solo información general; un médico o dietista-nutricionista puede aconsejarte según tus necesidades."
+     ],
+     "q": "¿Cuánto se parece tu cena habitual a esta idea de mitad, cuarto y cuarto?",
+     "c": "Sirve el plato de esta noche con la idea de mitad verduras, cuarto cereales y cuarto alimentos ricos en proteína."
+    },
+    "fr": {
+     "t": "Une assiette équilibrée, en général",
+     "g": "Utiliser un repère visuel simple avec légumes, céréales complètes, aliments riches en protéines et bonnes graisses.",
+     "p": [
+      "Un repère général courant : moitié de l’assiette en légumes et fruits, un quart en céréales, un quart en aliments riches en protéines.",
+      "En végétal, ce sont légumineuses, lentilles, tofu, tempeh et seitan ; ajoute un peu de bonnes graisses comme noix ou huile d’olive.",
+      "Ce sont des infos générales ; un médecin ou un diététicien peut te conseiller selon tes besoins personnels."
+     ],
+     "q": "Ton dîner habituel ressemble-t-il à cette idée de moitié, quart, quart ?",
+     "c": "Compose ton assiette ce soir avec moitié légumes, un quart céréales et un quart aliments riches en protéines."
+    },
+    "it": {
+     "t": "Un piatto equilibrato, in generale",
+     "g": "Usare una semplice guida visiva con verdure, cereali integrali, alimenti ricchi di proteine e grassi buoni.",
+     "p": [
+      "Una guida generale diffusa riempie metà piatto con verdura e frutta, un quarto con cereali e un quarto con alimenti proteici.",
+      "In chiave vegetale sono legumi, lenticchie, tofu, tempeh e seitan; aggiungi un po’ di grassi buoni come frutta secca o olio d’oliva.",
+      "Sono solo informazioni generali; un medico o un dietista può consigliarti in base alle tue esigenze."
+     ],
+     "q": "Quanto somiglia la tua cena tipica a questa idea di metà, quarto e quarto?",
+     "c": "Componi il piatto di stasera con metà verdure, un quarto cereali e un quarto alimenti ricchi di proteine."
+    },
+    "pt": {
+     "t": "Um prato equilibrado, em geral",
+     "g": "Usar um guia visual simples com legumes, cereais integrais, alimentos ricos em proteína e gorduras saudáveis.",
+     "p": [
+      "Um guia geral comum enche metade do prato com legumes e fruta, um quarto com cereais e um quarto com alimentos ricos em proteína.",
+      "No vegetal, esses alimentos são feijão, lentilhas, tofu, tempeh e seitan; junta um pouco de gordura saudável, como frutos secos ou azeite.",
+      "É só informação geral; um médico ou nutricionista pode aconselhar-te sobre as tuas necessidades."
+     ],
+     "q": "Quão perto está o teu jantar habitual desta ideia de metade, quarto e quarto?",
+     "c": "Monta o prato de hoje com metade legumes, um quarto cereais e um quarto alimentos ricos em proteína."
+    },
+    "pt_BR": {
+     "t": "Um prato equilibrado, de forma geral",
+     "g": "Usar um guia visual simples com legumes, grãos integrais, alimentos ricos em proteína e gorduras boas.",
+     "p": [
+      "Um guia geral comum enche metade do prato com legumes e frutas, um quarto com grãos e um quarto com alimentos ricos em proteína.",
+      "No vegetal, esses alimentos são feijão, lentilha, tofu, tempeh e seitan; junte um pouco de gordura boa, como castanhas ou azeite.",
+      "É só informação geral; um médico ou nutricionista pode orientar você sobre suas necessidades."
+     ],
+     "q": "Quão perto seu jantar de sempre está dessa ideia de metade, um quarto e um quarto?",
+     "c": "Monte o prato de hoje com metade legumes, um quarto grãos e um quarto alimentos ricos em proteína."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Protein sources in plants",
+     "g": "Learn in general terms about legumes, soy, seitan, nuts and seeds as protein-rich foods.",
+     "p": [
+      "Beans, lentils, chickpeas and peas are well-known protein-rich plant foods and the base of many world dishes.",
+      "Soy foods like tofu, tempeh and edamame, plus seitan made from wheat, are also commonly used for protein.",
+      "Nuts and seeds add some protein too; for personal amounts, a doctor or registered dietitian is the right guide."
+     ],
+     "q": "Which protein-rich plant food do you enjoy eating most?",
+     "c": "Plan tomorrow's meals so each one includes at least one protein-rich plant food you enjoy."
+    },
+    "de": {
+     "t": "Eiweißquellen aus Pflanzen",
+     "g": "Lerne allgemein Hülsenfrüchte, Soja, Seitan, Nüsse und Samen als eiweißreiche Lebensmittel kennen.",
+     "p": [
+      "Bohnen, Linsen, Kichererbsen und Erbsen sind bekannte eiweißreiche Pflanzenlebensmittel und Basis vieler Gerichte weltweit.",
+      "Sojaprodukte wie Tofu, Tempeh und Edamame sowie Seitan aus Weizen werden ebenfalls häufig als Eiweißquelle genutzt.",
+      "Nüsse und Samen liefern auch etwas Eiweiß; für persönliche Mengen ist eine Ärztin oder Ernährungsfachkraft die richtige Adresse."
+     ],
+     "q": "Welches eiweißreiche pflanzliche Lebensmittel isst du am liebsten?",
+     "c": "Plane die Mahlzeiten für morgen so, dass jede mindestens ein eiweißreiches Pflanzenlebensmittel enthält, das du magst."
+    },
+    "es": {
+     "t": "Fuentes de proteína vegetal",
+     "g": "Conocer de forma general legumbres, soja, seitán, frutos secos y semillas como alimentos ricos en proteína.",
+     "p": [
+      "Alubias, lentejas, garbanzos y guisantes son alimentos vegetales ricos en proteína y base de muchos platos del mundo.",
+      "Los derivados de soja como tofu, tempeh y edamame, y el seitán de trigo, también se usan mucho por su proteína.",
+      "Los frutos secos y semillas aportan algo de proteína; para cantidades personales, consulta a un médico o dietista-nutricionista."
+     ],
+     "q": "¿Qué alimento vegetal rico en proteína es el que más disfrutas?",
+     "c": "Planifica las comidas de mañana para que cada una incluya al menos un alimento vegetal rico en proteína que te guste."
+    },
+    "fr": {
+     "t": "Les sources végétales de protéines",
+     "g": "Découvrir de façon générale légumineuses, soja, seitan, noix et graines comme aliments riches en protéines.",
+     "p": [
+      "Haricots, lentilles, pois chiches et pois sont des aliments végétaux riches en protéines, base de nombreux plats du monde.",
+      "Les produits de soja comme tofu, tempeh et edamame, et le seitan de blé, sont aussi souvent utilisés pour les protéines.",
+      "Noix et graines en apportent aussi un peu ; pour des quantités personnelles, un médecin ou diététicien est le bon interlocuteur."
+     ],
+     "q": "Quel aliment végétal riche en protéines préfères-tu manger ?",
+     "c": "Prévois les repas de demain pour que chacun contienne au moins un aliment végétal riche en protéines que tu aimes."
+    },
+    "it": {
+     "t": "Fonti vegetali di proteine",
+     "g": "Conoscere in generale legumi, soia, seitan, frutta secca e semi come alimenti ricchi di proteine.",
+     "p": [
+      "Fagioli, lenticchie, ceci e piselli sono alimenti vegetali ricchi di proteine e base di tanti piatti del mondo.",
+      "I derivati della soia come tofu, tempeh ed edamame, e il seitan di grano, sono anch’essi molto usati per le proteine.",
+      "Frutta secca e semi ne apportano un po’; per le quantità personali, la guida giusta è un medico o un dietista."
+     ],
+     "q": "Quale alimento vegetale ricco di proteine ti piace di più?",
+     "c": "Pianifica i pasti di domani in modo che ognuno contenga almeno un alimento vegetale proteico che ti piace."
+    },
+    "pt": {
+     "t": "Fontes vegetais de proteína",
+     "g": "Conhecer de forma geral leguminosas, soja, seitan, frutos secos e sementes como alimentos ricos em proteína.",
+     "p": [
+      "Feijão, lentilhas, grão e ervilhas são alimentos vegetais ricos em proteína e base de muitos pratos do mundo.",
+      "Os derivados de soja, como tofu, tempeh e edamame, e o seitan de trigo, também são muito usados pela proteína.",
+      "Frutos secos e sementes também dão alguma; para quantidades pessoais, fala com um médico ou nutricionista."
+     ],
+     "q": "Que alimento vegetal rico em proteína mais gostas de comer?",
+     "c": "Planeia as refeições de amanhã para que cada uma tenha pelo menos um alimento vegetal rico em proteína de que gostes."
+    },
+    "pt_BR": {
+     "t": "Fontes vegetais de proteína",
+     "g": "Conhecer de forma geral leguminosas, soja, seitan, castanhas e sementes como alimentos ricos em proteína.",
+     "p": [
+      "Feijão, lentilha, grão-de-bico e ervilha são alimentos vegetais ricos em proteína e base de muitos pratos do mundo.",
+      "Derivados de soja como tofu, tempeh e edamame, e o seitan de trigo, também são muito usados pela proteína.",
+      "Castanhas e sementes também têm um pouco; para quantidades pessoais, converse com um médico ou nutricionista."
+     ],
+     "q": "Qual alimento vegetal rico em proteína você mais gosta de comer?",
+     "c": "Planeje as refeições de amanhã para que cada uma tenha pelo menos um alimento vegetal rico em proteína que você curte."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Iron-rich plant foods",
+     "g": "Learn general facts on lentils, beans and greens and pairing them with vitamin C foods.",
+     "p": [
+      "Lentils, beans, tofu, dark leafy greens and pumpkin seeds are commonly listed as plant foods containing iron.",
+      "Plant iron is generally absorbed better alongside vitamin C foods like peppers, tomatoes, citrus or broccoli.",
+      "This is general information; for questions about your own iron levels, talk to a doctor or registered dietitian."
+     ],
+     "q": "Do you already pair beans or lentils with something fresh and tangy, like tomato or lemon?",
+     "c": "Cook a lentil or bean dish today and add a vitamin C partner like lemon juice, tomatoes or peppers."
+    },
+    "de": {
+     "t": "Eisenreiche Pflanzenlebensmittel",
+     "g": "Lerne allgemeine Fakten zu Linsen, Bohnen und Blattgrün und zur Kombination mit Vitamin-C-Lebensmitteln.",
+     "p": [
+      "Linsen, Bohnen, Tofu, dunkles Blattgemüse und Kürbiskerne werden oft als eisenhaltige Pflanzenlebensmittel genannt.",
+      "Pflanzliches Eisen wird allgemein besser aufgenommen zusammen mit Vitamin C, etwa aus Paprika, Tomaten, Zitrus oder Brokkoli.",
+      "Das sind allgemeine Infos; bei Fragen zu deinen eigenen Eisenwerten sprich mit einer Ärztin oder Ernährungsfachkraft."
+     ],
+     "q": "Kombinierst du Bohnen oder Linsen schon mit etwas Frischem und Säuerlichem wie Tomate oder Zitrone?",
+     "c": "Koche heute ein Linsen- oder Bohnengericht und gib einen Vitamin-C-Partner wie Zitronensaft, Tomaten oder Paprika dazu."
+    },
+    "es": {
+     "t": "Alimentos vegetales con hierro",
+     "g": "Conocer datos generales sobre lentejas, alubias y hojas verdes y combinarlos con alimentos con vitamina C.",
+     "p": [
+      "Lentejas, alubias, tofu, hojas verdes oscuras y pipas de calabaza suelen citarse como alimentos vegetales con hierro.",
+      "El hierro vegetal en general se absorbe mejor junto a alimentos con vitamina C como pimiento, tomate, cítricos o brócoli.",
+      "Es información general; si tienes dudas sobre tu propio hierro, habla con un médico o dietista-nutricionista."
+     ],
+     "q": "¿Ya combinas legumbres con algo fresco y ácido, como tomate o limón?",
+     "c": "Cocina hoy un plato de lentejas o alubias y añade un compañero con vitamina C, como limón, tomate o pimiento."
+    },
+    "fr": {
+     "t": "Les aliments végétaux riches en fer",
+     "g": "Connaître des faits généraux sur lentilles, haricots et légumes verts, et leur association avec la vitamine C.",
+     "p": [
+      "Lentilles, haricots, tofu, légumes à feuilles foncées et graines de courge sont souvent cités comme aliments végétaux contenant du fer.",
+      "Le fer végétal est en général mieux absorbé avec des aliments riches en vitamine C : poivron, tomate, agrumes ou brocoli.",
+      "Ce sont des infos générales ; pour tes propres taux de fer, parle à un médecin ou à un diététicien."
+     ],
+     "q": "Associes-tu déjà haricots ou lentilles à quelque chose de frais et acidulé, comme tomate ou citron ?",
+     "c": "Cuisine aujourd’hui un plat de lentilles ou de haricots avec un partenaire vitamine C : citron, tomates ou poivron."
+    },
+    "it": {
+     "t": "Alimenti vegetali ricchi di ferro",
+     "g": "Conoscere fatti generali su lenticchie, fagioli e verdure a foglia e sull’abbinamento con la vitamina C.",
+     "p": [
+      "Lenticchie, fagioli, tofu, verdure a foglia scura e semi di zucca sono spesso indicati come alimenti vegetali con ferro.",
+      "Il ferro vegetale in genere si assorbe meglio insieme ad alimenti con vitamina C come peperoni, pomodori, agrumi o broccoli.",
+      "Sono informazioni generali; per domande sui tuoi valori di ferro, parla con un medico o un dietista."
+     ],
+     "q": "Abbini già legumi a qualcosa di fresco e acidulo, come pomodoro o limone?",
+     "c": "Cucina oggi un piatto di lenticchie o fagioli e aggiungi un partner con vitamina C, come limone, pomodori o peperoni."
+    },
+    "pt": {
+     "t": "Alimentos vegetais com ferro",
+     "g": "Conhecer factos gerais sobre lentilhas, feijão e folhas verdes e combiná-los com alimentos com vitamina C.",
+     "p": [
+      "Lentilhas, feijão, tofu, folhas verde-escuras e sementes de abóbora são muitas vezes indicados como alimentos vegetais com ferro.",
+      "O ferro vegetal em geral absorve-se melhor com alimentos com vitamina C, como pimento, tomate, citrinos ou brócolos.",
+      "É informação geral; para dúvidas sobre o teu próprio ferro, fala com um médico ou nutricionista."
+     ],
+     "q": "Já combinas leguminosas com algo fresco e ácido, como tomate ou limão?",
+     "c": "Faz hoje um prato de lentilhas ou feijão e junta um parceiro com vitamina C, como limão, tomate ou pimento."
+    },
+    "pt_BR": {
+     "t": "Alimentos vegetais com ferro",
+     "g": "Conhecer fatos gerais sobre lentilha, feijão e folhas verdes e combinar com alimentos com vitamina C.",
+     "p": [
+      "Lentilha, feijão, tofu, folhas verde-escuras e sementes de abóbora costumam aparecer como alimentos vegetais com ferro.",
+      "O ferro vegetal em geral é melhor absorvido com alimentos com vitamina C, como pimentão, tomate, frutas cítricas ou brócolis.",
+      "É informação geral; para dúvidas sobre seu próprio ferro, converse com um médico ou nutricionista."
+     ],
+     "q": "Você já combina feijão ou lentilha com algo fresco e azedinho, tipo tomate ou limão?",
+     "c": "Faça hoje um prato de lentilha ou feijão e junte um parceiro com vitamina C, como limão, tomate ou pimentão."
+    }
+   }
+  }
+ ]
+}

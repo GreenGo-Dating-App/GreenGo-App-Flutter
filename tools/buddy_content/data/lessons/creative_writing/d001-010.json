@@ -1,0 +1,835 @@
+{
+ "topic": "creative_writing",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we tell stories",
+     "g": "Discover why stories matter and how they help us share, imagine and understand life.",
+     "p": [
+      "Stories let us share what we lived so others can feel it too.",
+      "Reading and writing stories lets us step into lives very different from ours.",
+      "Turning events into a story helps us find meaning and order in them."
+     ],
+     "q": "What story, from a book, film or your family, has stayed with you the longest?",
+     "c": "Write three sentences about a moment that made you smile this week, as if telling a friend."
+    },
+    "de": {
+     "t": "Warum wir Geschichten erzählen",
+     "g": "Entdecke, warum Geschichten wichtig sind und wie sie uns helfen, Leben zu teilen und zu verstehen.",
+     "p": [
+      "Geschichten lassen andere miterleben, was wir erlebt haben.",
+      "Beim Lesen und Schreiben schlüpfen wir in Leben, die ganz anders sind als unseres.",
+      "Wer Ereignisse erzählt, findet in ihnen Sinn und Ordnung."
+     ],
+     "q": "Welche Geschichte aus einem Buch, Film oder deiner Familie begleitet dich schon am längsten?",
+     "c": "Schreib drei Sätze über einen Moment dieser Woche, der dich zum Lächeln brachte, als würdest du ihn einem Freund erzählen."
+    },
+    "es": {
+     "t": "Por qué contamos historias",
+     "g": "Descubre por qué importan las historias y cómo nos ayudan a compartir, imaginar y entender la vida.",
+     "p": [
+      "Las historias permiten que otros sientan lo que hemos vivido.",
+      "Leer y escribir nos deja entrar en vidas muy distintas a la nuestra.",
+      "Convertir lo vivido en relato nos ayuda a darle sentido y orden."
+     ],
+     "q": "¿Qué historia, de un libro, una película o tu familia, te ha acompañado más tiempo?",
+     "c": "Escribe tres frases sobre un momento que te hizo sonreír esta semana, como si se lo contaras a un amigo."
+    },
+    "fr": {
+     "t": "Pourquoi nous racontons des histoires",
+     "g": "Découvre pourquoi les histoires comptent et comment elles nous aident à partager, imaginer et comprendre.",
+     "p": [
+      "Les histoires permettent aux autres de ressentir ce que nous avons vécu.",
+      "Lire et écrire nous fait entrer dans des vies très différentes de la nôtre.",
+      "Raconter un événement aide à lui donner du sens et de l'ordre."
+     ],
+     "q": "Quelle histoire, d'un livre, d'un film ou de ta famille, t'accompagne depuis le plus longtemps ?",
+     "c": "Écris trois phrases sur un moment qui t'a fait sourire cette semaine, comme si tu le racontais à un ami."
+    },
+    "it": {
+     "t": "Perché raccontiamo storie",
+     "g": "Scopri perché le storie contano e come ci aiutano a condividere, immaginare e capire la vita.",
+     "p": [
+      "Le storie permettono agli altri di sentire ciò che abbiamo vissuto.",
+      "Leggere e scrivere ci fa entrare in vite molto diverse dalla nostra.",
+      "Trasformare i fatti in racconto ci aiuta a dare loro senso e ordine."
+     ],
+     "q": "Quale storia, da un libro, un film o la tua famiglia, ti accompagna da più tempo?",
+     "c": "Scrivi tre frasi su un momento che ti ha fatto sorridere questa settimana, come se lo raccontassi a un amico."
+    },
+    "pt": {
+     "t": "Porque contamos histórias",
+     "g": "Descobre porque as histórias importam e como nos ajudam a partilhar, imaginar e compreender a vida.",
+     "p": [
+      "As histórias deixam os outros sentir aquilo que vivemos.",
+      "Ler e escrever leva-nos a vidas muito diferentes da nossa.",
+      "Transformar acontecimentos em narrativa ajuda a dar-lhes sentido e ordem."
+     ],
+     "q": "Que história, de um livro, de um filme ou da tua família, te acompanha há mais tempo?",
+     "c": "Escreve três frases sobre um momento que te fez sorrir esta semana, como se o contasses a um amigo."
+    },
+    "pt_BR": {
+     "t": "Por que contamos histórias",
+     "g": "Descubra por que as histórias importam e como elas ajudam a gente a compartilhar, imaginar e entender a vida.",
+     "p": [
+      "Histórias deixam os outros sentirem o que a gente viveu.",
+      "Ler e escrever nos leva para vidas bem diferentes da nossa.",
+      "Transformar acontecimentos em narrativa ajuda a dar sentido e ordem a eles."
+     ],
+     "q": "Qual história, de um livro, filme ou da sua família, acompanha você há mais tempo?",
+     "c": "Escreva três frases sobre um momento que fez você sorrir nesta semana, como se contasse para um amigo."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your writing toolkit",
+     "g": "Set up simple tools, a regular time and a cosy place so writing is easy to start.",
+     "p": [
+      "Pick one notebook or one app and keep all your writing there.",
+      "Choose a regular time, even fifteen minutes, so writing becomes a habit.",
+      "A cosy corner with good light and a warm drink invites you to sit down and begin."
+     ],
+     "q": "Do you prefer writing by hand or on a screen, and why?",
+     "c": "Choose your notebook or app, give it a name and write today's date and one sentence on the first page."
+    },
+    "de": {
+     "t": "Deine Schreibausrüstung",
+     "g": "Richte dir einfache Werkzeuge, eine feste Zeit und einen gemütlichen Ort ein, damit der Start leichtfällt.",
+     "p": [
+      "Wähle ein Notizbuch oder eine App und sammle alles Geschriebene dort.",
+      "Leg eine feste Zeit fest, schon fünfzehn Minuten machen Schreiben zur Gewohnheit.",
+      "Eine gemütliche Ecke mit gutem Licht und einem warmen Getränk lädt zum Anfangen ein."
+     ],
+     "q": "Schreibst du lieber mit der Hand oder am Bildschirm, und warum?",
+     "c": "Wähle dein Notizbuch oder deine App, gib ihm einen Namen und schreib das Datum und einen Satz auf die erste Seite."
+    },
+    "es": {
+     "t": "Tu kit de escritura",
+     "g": "Prepara herramientas sencillas, un horario fijo y un rincón acogedor para que escribir sea fácil de empezar.",
+     "p": [
+      "Elige un cuaderno o una app y guarda allí todo lo que escribas.",
+      "Fija un momento regular, aunque sean quince minutos, para crear el hábito.",
+      "Un rincón cómodo con buena luz y una bebida caliente te invita a sentarte y empezar."
+     ],
+     "q": "¿Prefieres escribir a mano o en pantalla? ¿Por qué?",
+     "c": "Elige tu cuaderno o app, ponle un nombre y escribe la fecha de hoy y una frase en la primera página."
+    },
+    "fr": {
+     "t": "Ta trousse d'écriture",
+     "g": "Prépare des outils simples, un moment régulier et un coin douillet pour commencer à écrire facilement.",
+     "p": [
+      "Choisis un carnet ou une appli et garde-y tout ce que tu écris.",
+      "Fixe un moment régulier, même quinze minutes, pour créer l'habitude.",
+      "Un coin confortable, bien éclairé, avec une boisson chaude, donne envie de s'y mettre."
+     ],
+     "q": "Préfères-tu écrire à la main ou sur un écran, et pourquoi ?",
+     "c": "Choisis ton carnet ou ton appli, donne-lui un nom et écris la date et une phrase sur la première page."
+    },
+    "it": {
+     "t": "Il tuo kit di scrittura",
+     "g": "Prepara strumenti semplici, un orario fisso e un angolo accogliente per iniziare a scrivere con facilità.",
+     "p": [
+      "Scegli un quaderno o un'app e conserva lì tutto ciò che scrivi.",
+      "Fissa un momento regolare, anche solo quindici minuti, per creare l'abitudine.",
+      "Un angolo comodo, ben illuminato, con una bevanda calda, invita a sedersi e cominciare."
+     ],
+     "q": "Preferisci scrivere a mano o su uno schermo, e perché?",
+     "c": "Scegli il tuo quaderno o app, dagli un nome e scrivi la data di oggi e una frase sulla prima pagina."
+    },
+    "pt": {
+     "t": "O teu kit de escrita",
+     "g": "Prepara ferramentas simples, um horário fixo e um canto acolhedor para que escrever seja fácil de começar.",
+     "p": [
+      "Escolhe um caderno ou uma app e guarda lá tudo o que escreves.",
+      "Define um momento regular, mesmo quinze minutos, para criar o hábito.",
+      "Um canto confortável, com boa luz e uma bebida quente, convida-te a sentar e começar."
+     ],
+     "q": "Preferes escrever à mão ou num ecrã? Porquê?",
+     "c": "Escolhe o teu caderno ou app, dá-lhe um nome e escreve a data de hoje e uma frase na primeira página."
+    },
+    "pt_BR": {
+     "t": "Seu kit de escrita",
+     "g": "Prepare ferramentas simples, um horário fixo e um cantinho aconchegante para começar a escrever com facilidade.",
+     "p": [
+      "Escolha um caderno ou um app e guarde ali tudo o que escrever.",
+      "Defina um horário regular, nem que sejam quinze minutos, para criar o hábito.",
+      "Um cantinho confortável, com boa luz e uma bebida quente, convida você a sentar e começar."
+     ],
+     "q": "Você prefere escrever à mão ou na tela? Por quê?",
+     "c": "Escolha seu caderno ou app, dê um nome a ele e escreva a data de hoje e uma frase na primeira página."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ten-minute freewrite",
+     "g": "Warm up and find surprising ideas by writing for ten minutes without stopping or judging.",
+     "p": [
+      "Set a timer for ten minutes and keep your pen moving the whole time.",
+      "If you get stuck, write 'I don't know what to write' until something new appears.",
+      "Don't fix spelling or cross out: the goal is flow, not perfect sentences."
+     ],
+     "q": "When was the last time you wrote something just for fun, without any goal?",
+     "c": "Freewrite for ten minutes starting with 'This morning I noticed...' then underline one surprising line."
+    },
+    "de": {
+     "t": "Das Zehn-Minuten-Freewriting",
+     "g": "Wärm dich auf und finde überraschende Ideen, indem du zehn Minuten ohne Pause und ohne Urteil schreibst.",
+     "p": [
+      "Stell einen Timer auf zehn Minuten und lass den Stift die ganze Zeit laufen.",
+      "Wenn du festhängst, schreib ‚Ich weiß nicht, was ich schreiben soll‘, bis etwas Neues kommt.",
+      "Korrigiere nichts und streich nichts durch: Es geht um Fluss, nicht um perfekte Sätze."
+     ],
+     "q": "Wann hast du zuletzt etwas nur aus Spaß geschrieben, ganz ohne Ziel?",
+     "c": "Schreib zehn Minuten frei mit dem Anfang ‚Heute Morgen ist mir aufgefallen …‘ und unterstreiche eine überraschende Zeile."
+    },
+    "es": {
+     "t": "La escritura libre de diez minutos",
+     "g": "Calienta motores y encuentra ideas sorprendentes escribiendo diez minutos sin parar ni juzgar.",
+     "p": [
+      "Pon un temporizador de diez minutos y no dejes de mover el bolígrafo.",
+      "Si te atascas, escribe «no sé qué escribir» hasta que aparezca algo nuevo.",
+      "No corrijas ni taches: lo importante es el flujo, no la frase perfecta."
+     ],
+     "q": "¿Cuándo fue la última vez que escribiste algo solo por diversión, sin ningún objetivo?",
+     "c": "Escribe libremente diez minutos empezando por «Esta mañana me fijé en...» y subraya una línea sorprendente."
+    },
+    "fr": {
+     "t": "L'écriture libre de dix minutes",
+     "g": "Échauffe-toi et trouve des idées surprenantes en écrivant dix minutes sans t'arrêter ni te juger.",
+     "p": [
+      "Règle un minuteur sur dix minutes et ne lève pas ton stylo.",
+      "Si tu bloques, écris « je ne sais pas quoi écrire » jusqu'à ce qu'autre chose arrive.",
+      "Ne corrige rien et ne rature pas : le but est le flux, pas la phrase parfaite."
+     ],
+     "q": "Quand as-tu écrit pour la dernière fois juste pour le plaisir, sans aucun but ?",
+     "c": "Écris librement dix minutes en commençant par « Ce matin, j'ai remarqué... » puis souligne une ligne surprenante."
+    },
+    "it": {
+     "t": "La scrittura libera di dieci minuti",
+     "g": "Scaldati e trova idee sorprendenti scrivendo per dieci minuti senza fermarti né giudicarti.",
+     "p": [
+      "Imposta un timer di dieci minuti e tieni la penna sempre in movimento.",
+      "Se ti blocchi, scrivi «non so cosa scrivere» finché non arriva qualcosa di nuovo.",
+      "Non correggere e non cancellare: conta il flusso, non la frase perfetta."
+     ],
+     "q": "Quando hai scritto l'ultima volta qualcosa solo per divertimento, senza uno scopo?",
+     "c": "Scrivi liberamente per dieci minuti iniziando con «Stamattina ho notato...» e sottolinea una riga sorprendente."
+    },
+    "pt": {
+     "t": "A escrita livre de dez minutos",
+     "g": "Aquece e descobre ideias surpreendentes escrevendo dez minutos sem parar nem julgar.",
+     "p": [
+      "Põe um temporizador de dez minutos e não pares de mexer a caneta.",
+      "Se encravares, escreve «não sei o que escrever» até surgir algo novo.",
+      "Não corrijas nem risques: o objetivo é o fluxo, não a frase perfeita."
+     ],
+     "q": "Quando foi a última vez que escreveste algo só por prazer, sem nenhum objetivo?",
+     "c": "Escreve livremente dez minutos a começar por «Esta manhã reparei que...» e sublinha uma linha surpreendente."
+    },
+    "pt_BR": {
+     "t": "A escrita livre de dez minutos",
+     "g": "Aqueça e encontre ideias surpreendentes escrevendo dez minutos sem parar nem julgar.",
+     "p": [
+      "Coloque um timer de dez minutos e não pare de mexer a caneta.",
+      "Se travar, escreva «não sei o que escrever» até surgir algo novo.",
+      "Não corrija nem risque: o objetivo é o fluxo, não a frase perfeita."
+     ],
+     "q": "Quando foi a última vez que você escreveu algo só por diversão, sem nenhum objetivo?",
+     "c": "Escreva livremente por dez minutos começando com «Hoje de manhã eu reparei que...» e sublinhe uma linha surpreendente."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where ideas come from",
+     "g": "Learn to collect story sparks from daily life, memories, dreams and 'what if' questions.",
+     "p": [
+      "Overheard phrases on a bus or in a café can start a whole story.",
+      "Memories and dreams are a private library of images only you own.",
+      "Asking 'what if' about ordinary things turns them into story ideas."
+     ],
+     "q": "Where do you usually get your best ideas: walking, showering, falling asleep?",
+     "c": "Write down five sparks from today: one sound, one phrase, one memory, one object and one 'what if'."
+    },
+    "de": {
+     "t": "Woher Ideen kommen",
+     "g": "Lerne, Funken für Geschichten im Alltag, in Erinnerungen, Träumen und ‚Was-wäre-wenn‘-Fragen zu sammeln.",
+     "p": [
+      "Ein aufgeschnappter Satz im Bus oder Café kann eine ganze Geschichte starten.",
+      "Erinnerungen und Träume sind eine private Bibliothek voller Bilder, die nur dir gehören.",
+      "Die Frage ‚Was wäre, wenn …?‘ macht Alltägliches zur Geschichtenidee."
+     ],
+     "q": "Wo kommen dir meist die besten Ideen: beim Gehen, unter der Dusche, beim Einschlafen?",
+     "c": "Notiere fünf Funken von heute: ein Geräusch, einen Satz, eine Erinnerung, einen Gegenstand und ein ‚Was wäre, wenn‘."
+    },
+    "es": {
+     "t": "De dónde vienen las ideas",
+     "g": "Aprende a recoger chispas para historias en la vida diaria, los recuerdos, los sueños y las preguntas «¿y si...?».",
+     "p": [
+      "Una frase oída en el autobús o en un café puede iniciar toda una historia.",
+      "Recuerdos y sueños son una biblioteca privada de imágenes que solo tú tienes.",
+      "Preguntar «¿y si...?» sobre cosas cotidianas las convierte en ideas."
+     ],
+     "q": "¿Dónde sueles tener tus mejores ideas: paseando, en la ducha, al dormirte?",
+     "c": "Anota cinco chispas de hoy: un sonido, una frase, un recuerdo, un objeto y un «¿y si...?»."
+    },
+    "fr": {
+     "t": "D'où viennent les idées",
+     "g": "Apprends à cueillir des étincelles dans le quotidien, les souvenirs, les rêves et les questions « et si... ? ».",
+     "p": [
+      "Une phrase entendue dans le bus ou au café peut lancer toute une histoire.",
+      "Souvenirs et rêves forment une bibliothèque d'images qui n'appartient qu'à toi.",
+      "Demander « et si... ? » transforme l'ordinaire en idée d'histoire."
+     ],
+     "q": "Où te viennent tes meilleures idées : en marchant, sous la douche, en t'endormant ?",
+     "c": "Note cinq étincelles d'aujourd'hui : un son, une phrase, un souvenir, un objet et un « et si... ? »."
+    },
+    "it": {
+     "t": "Da dove vengono le idee",
+     "g": "Impara a raccogliere scintille per storie dalla vita quotidiana, dai ricordi, dai sogni e dai «e se...?».",
+     "p": [
+      "Una frase sentita in autobus o al bar può far nascere un'intera storia.",
+      "Ricordi e sogni sono una biblioteca privata di immagini che possiedi solo tu.",
+      "Chiedersi «e se...?» sulle cose comuni le trasforma in idee per storie."
+     ],
+     "q": "Dove ti vengono di solito le idee migliori: camminando, sotto la doccia, prima di dormire?",
+     "c": "Annota cinque scintille di oggi: un suono, una frase, un ricordo, un oggetto e un «e se...?»."
+    },
+    "pt": {
+     "t": "De onde vêm as ideias",
+     "g": "Aprende a recolher faíscas de histórias no dia a dia, nas memórias, nos sonhos e nas perguntas «e se...?».",
+     "p": [
+      "Uma frase ouvida no autocarro ou no café pode dar início a uma história inteira.",
+      "Memórias e sonhos são uma biblioteca privada de imagens que só tu tens.",
+      "Perguntar «e se...?» sobre coisas banais transforma-as em ideias."
+     ],
+     "q": "Onde costumas ter as melhores ideias: a caminhar, no duche, a adormecer?",
+     "c": "Anota cinco faíscas de hoje: um som, uma frase, uma memória, um objeto e um «e se...?»."
+    },
+    "pt_BR": {
+     "t": "De onde vêm as ideias",
+     "g": "Aprenda a colher faíscas de histórias no dia a dia, nas memórias, nos sonhos e nas perguntas «e se...?».",
+     "p": [
+      "Uma frase ouvida no ônibus ou no café pode dar início a uma história inteira.",
+      "Memórias e sonhos são uma biblioteca particular de imagens que só você tem.",
+      "Perguntar «e se...?» sobre coisas comuns transforma tudo em ideia de história."
+     ],
+     "q": "Onde você costuma ter suas melhores ideias: caminhando, no banho, pegando no sono?",
+     "c": "Anote cinco faíscas de hoje: um som, uma frase, uma memória, um objeto e um «e se...?»."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping an idea journal",
+     "g": "Build a simple system to capture ideas, images and phrases before they slip away.",
+     "p": [
+      "Keep the journal or a notes app always within reach, even by your bed.",
+      "Write ideas fast and messy: a date, a few words and why it caught you.",
+      "Once a week, reread your notes and star the sparks that still glow."
+     ],
+     "q": "Have you ever lost a great idea because you didn't write it down?",
+     "c": "Start your idea journal with three entries from today, each with a date and one line on why it interests you."
+    },
+    "de": {
+     "t": "Ein Ideentagebuch führen",
+     "g": "Bau dir ein einfaches System, um Ideen, Bilder und Sätze festzuhalten, bevor sie verschwinden.",
+     "p": [
+      "Hab das Tagebuch oder eine Notiz-App immer griffbereit, auch neben dem Bett.",
+      "Notiere schnell und unordentlich: Datum, ein paar Wörter und warum es dich packte.",
+      "Lies einmal pro Woche alles durch und markiere die Funken, die noch leuchten."
+     ],
+     "q": "Ist dir schon einmal eine tolle Idee verloren gegangen, weil du sie nicht aufgeschrieben hast?",
+     "c": "Beginne dein Ideentagebuch mit drei Einträgen von heute, jeweils mit Datum und einer Zeile, warum es dich interessiert."
+    },
+    "es": {
+     "t": "Llevar un diario de ideas",
+     "g": "Crea un sistema sencillo para atrapar ideas, imágenes y frases antes de que se escapen.",
+     "p": [
+      "Ten el diario o una app de notas siempre a mano, incluso junto a la cama.",
+      "Anota rápido y sin orden: fecha, unas palabras y por qué te llamó la atención.",
+      "Una vez por semana, relee tus notas y marca las chispas que aún brillan."
+     ],
+     "q": "¿Alguna vez perdiste una gran idea por no apuntarla?",
+     "c": "Empieza tu diario de ideas con tres entradas de hoy, cada una con fecha y una línea sobre por qué te interesa."
+    },
+    "fr": {
+     "t": "Tenir un carnet d'idées",
+     "g": "Mets en place un système simple pour saisir idées, images et phrases avant qu'elles ne s'envolent.",
+     "p": [
+      "Garde le carnet ou une appli de notes toujours à portée, même près du lit.",
+      "Note vite et en vrac : la date, quelques mots et pourquoi cela t'a frappé.",
+      "Une fois par semaine, relis tes notes et marque d'une étoile celles qui brillent encore."
+     ],
+     "q": "As-tu déjà perdu une belle idée parce que tu ne l'avais pas notée ?",
+     "c": "Commence ton carnet d'idées avec trois entrées d'aujourd'hui, chacune datée, avec une ligne sur ce qui t'intéresse."
+    },
+    "it": {
+     "t": "Tenere un diario delle idee",
+     "g": "Crea un sistema semplice per catturare idee, immagini e frasi prima che svaniscano.",
+     "p": [
+      "Tieni il diario o un'app di note sempre a portata di mano, anche accanto al letto.",
+      "Scrivi in fretta e in disordine: data, poche parole e perché ti ha colpito.",
+      "Una volta a settimana rileggi gli appunti e segna con una stella le scintille ancora vive."
+     ],
+     "q": "Ti è mai capitato di perdere una bella idea perché non l'avevi scritta?",
+     "c": "Inizia il tuo diario delle idee con tre voci di oggi, ognuna con la data e una riga sul perché ti interessa."
+    },
+    "pt": {
+     "t": "Manter um diário de ideias",
+     "g": "Cria um sistema simples para apanhar ideias, imagens e frases antes que fujam.",
+     "p": [
+      "Tem o diário ou uma app de notas sempre à mão, até ao lado da cama.",
+      "Escreve depressa e sem arrumação: data, umas palavras e porque te chamou a atenção.",
+      "Uma vez por semana, relê as notas e marca com estrela as faíscas que ainda brilham."
+     ],
+     "q": "Já alguma vez perdeste uma grande ideia por não a teres anotado?",
+     "c": "Começa o teu diário de ideias com três entradas de hoje, cada uma com data e uma linha sobre porque te interessa."
+    },
+    "pt_BR": {
+     "t": "Manter um diário de ideias",
+     "g": "Crie um sistema simples para capturar ideias, imagens e frases antes que elas escapem.",
+     "p": [
+      "Deixe o diário ou um app de notas sempre à mão, até do lado da cama.",
+      "Anote rápido e sem capricho: data, algumas palavras e por que aquilo chamou sua atenção.",
+      "Uma vez por semana, releia as notas e marque com estrela as faíscas que ainda brilham."
+     ],
+     "q": "Você já perdeu uma ótima ideia por não ter anotado?",
+     "c": "Comece seu diário de ideias com três registros de hoje, cada um com data e uma linha sobre por que ele interessa a você."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing with sight",
+     "g": "Describe places and objects with precise colours, shapes and light so readers can see them.",
+     "p": [
+      "Name exact colours: not 'red' but 'tomato red' or 'brick red'.",
+      "Notice shapes and edges: round, jagged, curling, flat as a coin.",
+      "Light changes everything: write where it falls and how it moves."
+     ],
+     "q": "What is the most beautiful thing you saw in the last few days?",
+     "c": "Look at one object near you for two minutes, then describe it in five sentences using colour, shape and light."
+    },
+    "de": {
+     "t": "Schreiben mit dem Sehsinn",
+     "g": "Beschreibe Orte und Dinge mit genauen Farben, Formen und Licht, damit Lesende sie vor sich sehen.",
+     "p": [
+      "Nenne genaue Farben: nicht ‚rot‘, sondern ‚tomatenrot‘ oder ‚ziegelrot‘.",
+      "Achte auf Formen und Kanten: rund, gezackt, gewellt, flach wie eine Münze.",
+      "Licht verändert alles: Schreib, wohin es fällt und wie es sich bewegt."
+     ],
+     "q": "Was war das Schönste, das du in den letzten Tagen gesehen hast?",
+     "c": "Betrachte zwei Minuten lang einen Gegenstand in deiner Nähe und beschreib ihn in fünf Sätzen mit Farbe, Form und Licht."
+    },
+    "es": {
+     "t": "Escribir con la vista",
+     "g": "Describe lugares y objetos con colores, formas y luz precisos para que el lector los vea.",
+     "p": [
+      "Nombra colores exactos: no «rojo», sino «rojo tomate» o «rojo ladrillo».",
+      "Fíjate en formas y bordes: redondo, dentado, ondulado, plano como una moneda.",
+      "La luz lo cambia todo: escribe dónde cae y cómo se mueve."
+     ],
+     "q": "¿Qué es lo más bonito que has visto en los últimos días?",
+     "c": "Observa un objeto cercano durante dos minutos y descríbelo en cinco frases con color, forma y luz."
+    },
+    "fr": {
+     "t": "Écrire avec la vue",
+     "g": "Décris lieux et objets avec des couleurs, des formes et une lumière précises pour que le lecteur les voie.",
+     "p": [
+      "Nomme des couleurs exactes : pas « rouge », mais « rouge tomate » ou « rouge brique ».",
+      "Observe formes et contours : rond, dentelé, ondulé, plat comme une pièce.",
+      "La lumière change tout : écris où elle tombe et comment elle bouge."
+     ],
+     "q": "Quelle est la plus belle chose que tu aies vue ces derniers jours ?",
+     "c": "Observe un objet près de toi pendant deux minutes, puis décris-le en cinq phrases avec couleur, forme et lumière."
+    },
+    "it": {
+     "t": "Scrivere con la vista",
+     "g": "Descrivi luoghi e oggetti con colori, forme e luce precisi perché il lettore li veda.",
+     "p": [
+      "Usa colori esatti: non «rosso», ma «rosso pomodoro» o «rosso mattone».",
+      "Nota forme e contorni: tondo, frastagliato, arricciato, piatto come una moneta.",
+      "La luce cambia tutto: scrivi dove cade e come si muove."
+     ],
+     "q": "Qual è la cosa più bella che hai visto negli ultimi giorni?",
+     "c": "Osserva un oggetto vicino a te per due minuti, poi descrivilo in cinque frasi con colore, forma e luce."
+    },
+    "pt": {
+     "t": "Escrever com a visão",
+     "g": "Descreve lugares e objetos com cores, formas e luz precisas para que o leitor os veja.",
+     "p": [
+      "Usa cores exatas: não «vermelho», mas «vermelho-tomate» ou «cor de tijolo».",
+      "Repara em formas e contornos: redondo, recortado, enrolado, liso como uma moeda.",
+      "A luz muda tudo: escreve onde ela cai e como se move."
+     ],
+     "q": "Qual foi a coisa mais bonita que viste nos últimos dias?",
+     "c": "Observa um objeto perto de ti durante dois minutos e descreve-o em cinco frases com cor, forma e luz."
+    },
+    "pt_BR": {
+     "t": "Escrever com a visão",
+     "g": "Descreva lugares e objetos com cores, formas e luz precisas para que o leitor consiga vê-los.",
+     "p": [
+      "Use cores exatas: não «vermelho», mas «vermelho-tomate» ou «cor de tijolo».",
+      "Repare em formas e contornos: redondo, recortado, enrolado, liso como uma moeda.",
+      "A luz muda tudo: escreva onde ela bate e como se move."
+     ],
+     "q": "Qual foi a coisa mais bonita que você viu nos últimos dias?",
+     "c": "Observe um objeto perto de você por dois minutos e descreva-o em cinco frases usando cor, forma e luz."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing with sound",
+     "g": "Use noises, voices and silence to make a scene feel alive and present.",
+     "p": [
+      "Listen for layers: a near sound, a middle sound and a far one.",
+      "Choose sound words that fit: a kettle hisses, a door sighs, rain drums.",
+      "Silence is a sound too: a sudden quiet can be very powerful."
+     ],
+     "q": "Which sound makes you feel instantly at home?",
+     "c": "Close your eyes for one minute, list every sound you hear, then write a short paragraph with three of them."
+    },
+    "de": {
+     "t": "Schreiben mit dem Gehör",
+     "g": "Nutze Geräusche, Stimmen und Stille, damit eine Szene lebendig und gegenwärtig wirkt.",
+     "p": [
+      "Hör auf Schichten: ein nahes, ein mittleres und ein fernes Geräusch.",
+      "Wähle passende Klangwörter: Der Kessel zischt, die Tür seufzt, der Regen trommelt.",
+      "Auch Stille ist ein Klang: Plötzliche Ruhe kann sehr stark wirken."
+     ],
+     "q": "Welches Geräusch gibt dir sofort das Gefühl, zu Hause zu sein?",
+     "c": "Schließ eine Minute die Augen, notiere jedes Geräusch und schreib dann einen kurzen Absatz mit drei davon."
+    },
+    "es": {
+     "t": "Escribir con el oído",
+     "g": "Usa ruidos, voces y silencios para que una escena se sienta viva y presente.",
+     "p": [
+      "Escucha por capas: un sonido cercano, uno intermedio y uno lejano.",
+      "Elige palabras sonoras precisas: la tetera silba, la puerta suspira, la lluvia tamborilea.",
+      "El silencio también suena: una calma repentina puede ser muy poderosa."
+     ],
+     "q": "¿Qué sonido te hace sentir en casa al instante?",
+     "c": "Cierra los ojos un minuto, apunta todo lo que oigas y escribe un párrafo corto con tres de esos sonidos."
+    },
+    "fr": {
+     "t": "Écrire avec l'ouïe",
+     "g": "Utilise bruits, voix et silences pour rendre une scène vivante et présente.",
+     "p": [
+      "Écoute par couches : un son proche, un son moyen et un son lointain.",
+      "Choisis des mots sonores justes : la bouilloire siffle, la porte soupire, la pluie tambourine.",
+      "Le silence est aussi un son : un calme soudain peut être très fort."
+     ],
+     "q": "Quel son te donne immédiatement l'impression d'être chez toi ?",
+     "c": "Ferme les yeux une minute, note chaque son entendu, puis écris un court paragraphe avec trois d'entre eux."
+    },
+    "it": {
+     "t": "Scrivere con l'udito",
+     "g": "Usa rumori, voci e silenzi per rendere una scena viva e presente.",
+     "p": [
+      "Ascolta a strati: un suono vicino, uno intermedio e uno lontano.",
+      "Scegli parole sonore precise: il bollitore sibila, la porta sospira, la pioggia tamburella.",
+      "Anche il silenzio è un suono: una quiete improvvisa può essere fortissima."
+     ],
+     "q": "Quale suono ti fa sentire subito a casa?",
+     "c": "Chiudi gli occhi per un minuto, annota ogni suono e poi scrivi un breve paragrafo con tre di essi."
+    },
+    "pt": {
+     "t": "Escrever com a audição",
+     "g": "Usa ruídos, vozes e silêncios para que uma cena pareça viva e presente.",
+     "p": [
+      "Ouve por camadas: um som próximo, um intermédio e um distante.",
+      "Escolhe palavras sonoras certas: a chaleira assobia, a porta suspira, a chuva tamborila.",
+      "O silêncio também é som: uma calma repentina pode ser muito forte."
+     ],
+     "q": "Que som te faz sentir em casa de imediato?",
+     "c": "Fecha os olhos um minuto, anota todos os sons que ouves e escreve um parágrafo curto com três deles."
+    },
+    "pt_BR": {
+     "t": "Escrever com a audição",
+     "g": "Use ruídos, vozes e silêncios para que uma cena pareça viva e presente.",
+     "p": [
+      "Escute por camadas: um som perto, um no meio e um distante.",
+      "Escolha palavras sonoras certas: a chaleira apita, a porta range baixinho, a chuva tamborila.",
+      "O silêncio também é som: uma calma repentina pode ser muito forte."
+     ],
+     "q": "Que som faz você se sentir em casa na hora?",
+     "c": "Feche os olhos por um minuto, anote todos os sons que ouvir e escreva um parágrafo curto com três deles."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing with smell and taste",
+     "g": "Use scent and flavour to trigger memory and make descriptions vivid and personal.",
+     "p": [
+      "Smell is closely linked to memory, so one scent can open a whole scene.",
+      "Compare smells to things readers know: like warm bread, cut grass or a new book.",
+      "Taste adds closeness: describe sweet, salty, sour or bitter with a specific food."
+     ],
+     "q": "Which smell takes you straight back to your childhood?",
+     "c": "Write a short paragraph about a favourite meal, using at least two smells and two tastes."
+    },
+    "de": {
+     "t": "Schreiben mit Geruch und Geschmack",
+     "g": "Nutze Duft und Geschmack, um Erinnerungen zu wecken und Beschreibungen lebendig und persönlich zu machen.",
+     "p": [
+      "Gerüche sind eng mit Erinnerungen verbunden, ein Duft kann eine ganze Szene öffnen.",
+      "Vergleiche Gerüche mit Bekanntem: wie warmes Brot, frisch gemähtes Gras oder ein neues Buch.",
+      "Geschmack schafft Nähe: Beschreib süß, salzig, sauer oder bitter an einem konkreten Essen."
+     ],
+     "q": "Welcher Geruch bringt dich direkt in deine Kindheit zurück?",
+     "c": "Schreib einen kurzen Absatz über ein Lieblingsessen mit mindestens zwei Gerüchen und zwei Geschmäckern."
+    },
+    "es": {
+     "t": "Escribir con olfato y gusto",
+     "g": "Usa aromas y sabores para despertar recuerdos y hacer las descripciones vivas y personales.",
+     "p": [
+      "El olfato está muy unido a la memoria: un aroma puede abrir una escena entera.",
+      "Compara olores con cosas conocidas: pan caliente, césped recién cortado, un libro nuevo.",
+      "El gusto acerca al lector: describe lo dulce, salado, ácido o amargo con un alimento concreto."
+     ],
+     "q": "¿Qué olor te lleva directamente a tu infancia?",
+     "c": "Escribe un párrafo corto sobre tu comida favorita con al menos dos olores y dos sabores."
+    },
+    "fr": {
+     "t": "Écrire avec l'odorat et le goût",
+     "g": "Utilise odeurs et saveurs pour réveiller la mémoire et rendre tes descriptions vivantes et personnelles.",
+     "p": [
+      "L'odorat est très lié à la mémoire : une odeur peut ouvrir toute une scène.",
+      "Compare les odeurs à du connu : le pain chaud, l'herbe coupée, un livre neuf.",
+      "Le goût crée de la proximité : décris le sucré, le salé, l'acide ou l'amer avec un aliment précis."
+     ],
+     "q": "Quelle odeur te ramène directement à ton enfance ?",
+     "c": "Écris un court paragraphe sur ton plat préféré avec au moins deux odeurs et deux saveurs."
+    },
+    "it": {
+     "t": "Scrivere con olfatto e gusto",
+     "g": "Usa profumi e sapori per risvegliare la memoria e rendere le descrizioni vive e personali.",
+     "p": [
+      "L'olfatto è legato alla memoria: un profumo può aprire un'intera scena.",
+      "Paragona gli odori a cose note: pane caldo, erba appena tagliata, un libro nuovo.",
+      "Il gusto crea vicinanza: descrivi dolce, salato, aspro o amaro con un cibo preciso."
+     ],
+     "q": "Quale profumo ti riporta subito all'infanzia?",
+     "c": "Scrivi un breve paragrafo sul tuo piatto preferito con almeno due odori e due sapori."
+    },
+    "pt": {
+     "t": "Escrever com o olfato e o paladar",
+     "g": "Usa aromas e sabores para despertar memórias e tornar as descrições vivas e pessoais.",
+     "p": [
+      "O olfato está muito ligado à memória: um cheiro pode abrir uma cena inteira.",
+      "Compara cheiros com coisas conhecidas: pão quente, relva cortada, um livro novo.",
+      "O paladar aproxima: descreve o doce, o salgado, o ácido ou o amargo num alimento concreto."
+     ],
+     "q": "Que cheiro te leva diretamente à infância?",
+     "c": "Escreve um parágrafo curto sobre a tua comida preferida com pelo menos dois cheiros e dois sabores."
+    },
+    "pt_BR": {
+     "t": "Escrever com olfato e paladar",
+     "g": "Use cheiros e sabores para despertar memórias e deixar as descrições vivas e pessoais.",
+     "p": [
+      "O olfato é muito ligado à memória: um cheiro pode abrir uma cena inteira.",
+      "Compare cheiros com coisas conhecidas: pão quentinho, grama cortada, livro novo.",
+      "O paladar aproxima: descreva o doce, o salgado, o azedo ou o amargo em uma comida concreta."
+     ],
+     "q": "Que cheiro leva você direto para a infância?",
+     "c": "Escreva um parágrafo curto sobre sua comida favorita com pelo menos dois cheiros e dois sabores."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing with touch",
+     "g": "Use texture, temperature and weight to bring readers physically into a moment.",
+     "p": [
+      "Texture invites the hand: velvety, gritty, sticky, smooth as river stone.",
+      "Temperature sets the feeling: a warm mug in cold hands says comfort.",
+      "Weight makes objects real: a heavy key, a feather-light letter."
+     ],
+     "q": "What texture do you love to touch: sand, wool, a pet's fur, cool sheets?",
+     "c": "Pick three objects with different textures and write one vivid sentence about how each feels in your hand."
+    },
+    "de": {
+     "t": "Schreiben mit dem Tastsinn",
+     "g": "Nutze Oberfläche, Temperatur und Gewicht, um Lesende körperlich in einen Moment zu holen.",
+     "p": [
+      "Oberflächen laden die Hand ein: samtig, körnig, klebrig, glatt wie ein Flusskiesel.",
+      "Temperatur schafft Gefühl: Ein warmer Becher in kalten Händen bedeutet Geborgenheit.",
+      "Gewicht macht Dinge wirklich: ein schwerer Schlüssel, ein federleichter Brief."
+     ],
+     "q": "Welche Oberfläche berührst du gern: Sand, Wolle, Tierfell, kühle Bettwäsche?",
+     "c": "Nimm drei Gegenstände mit unterschiedlicher Oberfläche und schreib je einen lebendigen Satz, wie er sich anfühlt."
+    },
+    "es": {
+     "t": "Escribir con el tacto",
+     "g": "Usa textura, temperatura y peso para meter al lector físicamente en un momento.",
+     "p": [
+      "La textura invita a la mano: aterciopelado, arenoso, pegajoso, liso como piedra de río.",
+      "La temperatura crea emoción: una taza caliente en manos frías dice consuelo.",
+      "El peso vuelve real un objeto: una llave pesada, una carta ligera como una pluma."
+     ],
+     "q": "¿Qué textura te encanta tocar: arena, lana, el pelo de una mascota, sábanas frescas?",
+     "c": "Elige tres objetos de texturas distintas y escribe una frase viva sobre cómo se siente cada uno en tu mano."
+    },
+    "fr": {
+     "t": "Écrire avec le toucher",
+     "g": "Utilise texture, température et poids pour faire entrer physiquement le lecteur dans un moment.",
+     "p": [
+      "La texture appelle la main : velouté, granuleux, collant, lisse comme un galet.",
+      "La température crée l'émotion : une tasse chaude dans des mains froides dit le réconfort.",
+      "Le poids rend l'objet réel : une clé lourde, une lettre légère comme une plume."
+     ],
+     "q": "Quelle texture aimes-tu toucher : le sable, la laine, le pelage d'un animal, des draps frais ?",
+     "c": "Prends trois objets aux textures différentes et écris une phrase vivante sur la sensation de chacun dans ta main."
+    },
+    "it": {
+     "t": "Scrivere con il tatto",
+     "g": "Usa consistenza, temperatura e peso per portare fisicamente il lettore dentro un momento.",
+     "p": [
+      "La consistenza invita la mano: vellutato, granuloso, appiccicoso, liscio come un ciottolo.",
+      "La temperatura crea emozione: una tazza calda in mani fredde parla di conforto.",
+      "Il peso rende reale un oggetto: una chiave pesante, una lettera leggera come una piuma."
+     ],
+     "q": "Quale consistenza ami toccare: sabbia, lana, il pelo di un animale, lenzuola fresche?",
+     "c": "Scegli tre oggetti con consistenze diverse e scrivi una frase vivida su come si sente ognuno in mano."
+    },
+    "pt": {
+     "t": "Escrever com o tato",
+     "g": "Usa textura, temperatura e peso para levar o leitor fisicamente para dentro de um momento.",
+     "p": [
+      "A textura chama a mão: aveludado, áspero, pegajoso, liso como seixo de rio.",
+      "A temperatura cria emoção: uma caneca quente em mãos frias fala de conforto.",
+      "O peso torna o objeto real: uma chave pesada, uma carta leve como uma pena."
+     ],
+     "q": "Que textura adoras tocar: areia, lã, o pelo de um animal, lençóis frescos?",
+     "c": "Escolhe três objetos com texturas diferentes e escreve uma frase viva sobre como cada um se sente na mão."
+    },
+    "pt_BR": {
+     "t": "Escrever com o tato",
+     "g": "Use textura, temperatura e peso para levar o leitor fisicamente para dentro de um momento.",
+     "p": [
+      "A textura chama a mão: aveludado, áspero, grudento, liso como pedra de rio.",
+      "A temperatura cria emoção: uma caneca quente em mãos frias fala de aconchego.",
+      "O peso torna o objeto real: uma chave pesada, uma carta leve como uma pena."
+     ],
+     "q": "Que textura você adora tocar: areia, lã, o pelo de um bicho, lençol fresquinho?",
+     "c": "Escolha três objetos com texturas diferentes e escreva uma frase viva sobre como cada um parece na sua mão."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing the specific detail",
+     "g": "Learn why one exact detail, like a chipped blue mug, beats a list of general ones.",
+     "p": [
+      "General words blur; a specific detail makes the reader see one real thing.",
+      "One chosen detail can hint at a whole life: a chipped mug kept for years.",
+      "Ask 'which one exactly?' each time you write a general noun."
+     ],
+     "q": "What small object in your home has a story behind it?",
+     "c": "Rewrite 'There was food on the table' three times, each time with one more specific detail."
+    },
+    "de": {
+     "t": "Das genaue Detail wählen",
+     "g": "Lerne, warum ein genaues Detail wie ein angeschlagener blauer Becher mehr wirkt als eine Liste allgemeiner Dinge.",
+     "p": [
+      "Allgemeine Wörter verschwimmen, ein genaues Detail zeigt ein echtes Ding.",
+      "Ein gewähltes Detail kann ein ganzes Leben andeuten: ein seit Jahren behaltener Becher.",
+      "Frag dich bei jedem allgemeinen Wort: ‚Welches genau?‘"
+     ],
+     "q": "Welcher kleine Gegenstand bei dir zu Hause hat eine Geschichte?",
+     "c": "Schreib ‚Auf dem Tisch stand Essen‘ dreimal neu, jedes Mal mit einem genaueren Detail."
+    },
+    "es": {
+     "t": "Elegir el detalle concreto",
+     "g": "Aprende por qué un detalle exacto, como una taza azul desconchada, vale más que una lista de cosas generales.",
+     "p": [
+      "Las palabras generales se difuminan; un detalle concreto muestra algo real.",
+      "Un detalle bien elegido insinúa toda una vida: una taza desconchada guardada años.",
+      "Pregúntate «¿cuál exactamente?» cada vez que escribas un sustantivo general."
+     ],
+     "q": "¿Qué pequeño objeto de tu casa tiene una historia detrás?",
+     "c": "Reescribe «Había comida en la mesa» tres veces, cada vez con un detalle más concreto."
+    },
+    "fr": {
+     "t": "Choisir le détail précis",
+     "g": "Comprends pourquoi un détail exact, comme une tasse bleue ébréchée, vaut mieux qu'une liste de généralités.",
+     "p": [
+      "Les mots généraux restent flous ; un détail précis montre une chose réelle.",
+      "Un détail bien choisi suggère toute une vie : une tasse ébréchée gardée des années.",
+      "Demande-toi « lequel exactement ? » à chaque nom général."
+     ],
+     "q": "Quel petit objet de ta maison a une histoire ?",
+     "c": "Réécris « Il y avait à manger sur la table » trois fois, avec chaque fois un détail plus précis."
+    },
+    "it": {
+     "t": "Scegliere il dettaglio preciso",
+     "g": "Scopri perché un dettaglio esatto, come una tazza blu sbeccata, vale più di un elenco di cose generiche.",
+     "p": [
+      "Le parole generiche sfumano; un dettaglio preciso mostra una cosa vera.",
+      "Un dettaglio scelto bene suggerisce una vita intera: una tazza sbeccata tenuta per anni.",
+      "Chiediti «quale esattamente?» ogni volta che scrivi un nome generico."
+     ],
+     "q": "Quale piccolo oggetto di casa tua ha una storia?",
+     "c": "Riscrivi «C'era del cibo sul tavolo» tre volte, ogni volta con un dettaglio più preciso."
+    },
+    "pt": {
+     "t": "Escolher o detalhe concreto",
+     "g": "Percebe porque um detalhe exato, como uma caneca azul lascada, vale mais do que uma lista de generalidades.",
+     "p": [
+      "Palavras gerais ficam desfocadas; um detalhe concreto mostra algo real.",
+      "Um detalhe bem escolhido sugere uma vida inteira: uma caneca lascada guardada anos.",
+      "Pergunta «qual, exatamente?» sempre que escreveres um nome geral."
+     ],
+     "q": "Que pequeno objeto da tua casa tem uma história?",
+     "c": "Reescreve «Havia comida na mesa» três vezes, cada uma com um detalhe mais concreto."
+    },
+    "pt_BR": {
+     "t": "Escolher o detalhe concreto",
+     "g": "Entenda por que um detalhe exato, como uma caneca azul lascada, vale mais que uma lista de coisas gerais.",
+     "p": [
+      "Palavras gerais ficam embaçadas; um detalhe concreto mostra algo real.",
+      "Um detalhe bem escolhido sugere uma vida inteira: uma caneca lascada guardada há anos.",
+      "Pergunte «qual, exatamente?» sempre que escrever um substantivo geral."
+     ],
+     "q": "Que objeto pequeno da sua casa tem uma história?",
+     "c": "Reescreva «Tinha comida na mesa» três vezes, cada uma com um detalhe mais concreto."
+    }
+   }
+  }
+ ]
+}

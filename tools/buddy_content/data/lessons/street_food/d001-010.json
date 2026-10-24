@@ -1,0 +1,835 @@
+{
+ "topic": "street_food",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes food street food",
+     "g": "Understand what turns a simple dish into true street food.",
+     "p": [
+      "Street food is ready to eat and sold by vendors in public places like streets, squares and markets.",
+      "It is made fast, often right in front of you, and is easy to eat on the go.",
+      "It is meant for everyday people: workers, students, families and travellers alike."
+     ],
+     "q": "What is the first street food you remember eating, and where was it?",
+     "c": "Today, notice one food stall or cart near you and write down what it sells."
+    },
+    "de": {
+     "t": "Was Streetfood ausmacht",
+     "g": "Verstehen, was ein einfaches Gericht zu echtem Streetfood macht.",
+     "p": [
+      "Streetfood ist sofort essbar und wird von Händlern an Straßen, Plätzen und auf Märkten verkauft.",
+      "Es wird schnell zubereitet, oft direkt vor deinen Augen, und lässt sich gut unterwegs essen.",
+      "Es ist für alle gedacht: Arbeiter, Studierende, Familien und Reisende."
+     ],
+     "q": "Welches Streetfood hast du als Erstes gegessen, an das du dich erinnerst, und wo?",
+     "c": "Achte heute auf einen Imbissstand in deiner Nähe und notiere, was er verkauft."
+    },
+    "es": {
+     "t": "Qué hace que una comida sea callejera",
+     "g": "Entender qué convierte un plato sencillo en verdadera comida callejera.",
+     "p": [
+      "La comida callejera está lista para comer y la venden puestos en calles, plazas y mercados.",
+      "Se prepara rápido, a menudo delante de ti, y se come fácilmente de pie o caminando.",
+      "Está pensada para la gente común: trabajadores, estudiantes, familias y viajeros."
+     ],
+     "q": "¿Cuál es la primera comida callejera que recuerdas haber probado y dónde fue?",
+     "c": "Hoy fíjate en un puesto o carrito de comida cerca de ti y anota qué vende."
+    },
+    "fr": {
+     "t": "Ce qui fait la cuisine de rue",
+     "g": "Comprendre ce qui transforme un plat simple en vraie cuisine de rue.",
+     "p": [
+      "La cuisine de rue est prête à manger et vendue par des marchands dans les rues, places et marchés.",
+      "Elle se prépare vite, souvent sous tes yeux, et se mange facilement en marchant.",
+      "Elle s'adresse à tout le monde : travailleurs, étudiants, familles et voyageurs."
+     ],
+     "q": "Quel est le premier plat de rue dont tu te souviens, et où l'as-tu mangé ?",
+     "c": "Aujourd'hui, repère un stand ou un camion de nourriture près de chez toi et note ce qu'il vend."
+    },
+    "it": {
+     "t": "Cos'è davvero il cibo di strada",
+     "g": "Capire che cosa trasforma un piatto semplice in vero cibo di strada.",
+     "p": [
+      "Il cibo di strada è pronto da mangiare e viene venduto in strade, piazze e mercati.",
+      "Si prepara in fretta, spesso davanti a te, e si mangia facilmente camminando.",
+      "È pensato per tutti: lavoratori, studenti, famiglie e viaggiatori."
+     ],
+     "q": "Qual è il primo cibo di strada che ricordi di aver mangiato, e dove?",
+     "c": "Oggi osserva un chiosco o un furgoncino vicino a te e annota cosa vende."
+    },
+    "pt": {
+     "t": "O que faz da comida uma comida de rua",
+     "g": "Perceber o que transforma um prato simples em verdadeira comida de rua.",
+     "p": [
+      "A comida de rua está pronta a comer e é vendida em ruas, praças e mercados.",
+      "Faz-se depressa, muitas vezes à tua frente, e come-se facilmente a andar.",
+      "É pensada para toda a gente: trabalhadores, estudantes, famílias e viajantes."
+     ],
+     "q": "Qual é a primeira comida de rua de que te lembras e onde a comeste?",
+     "c": "Hoje, repara numa banca ou roulotte de comida perto de ti e aponta o que vende."
+    },
+    "pt_BR": {
+     "t": "O que faz uma comida ser de rua",
+     "g": "Entender o que transforma um prato simples em verdadeira comida de rua.",
+     "p": [
+      "A comida de rua já vem pronta para comer e é vendida em ruas, praças e feiras.",
+      "É feita rápido, muitas vezes na sua frente, e dá para comer andando.",
+      "É pensada para todo mundo: trabalhadores, estudantes, famílias e viajantes."
+     ],
+     "q": "Qual é a primeira comida de rua de que você se lembra e onde comeu?",
+     "c": "Hoje, repare numa barraca ou food truck perto de você e anote o que vende."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A very old tradition",
+     "g": "Discover that people have bought food in the street for thousands of years.",
+     "p": [
+      "In ancient Rome, many city flats had no kitchen, so people bought hot food from street counters.",
+      "In Pompeii you can still see stone food counters, called thermopolia, with built-in jars.",
+      "Old Chinese cities like Kaifeng had busy night markets with snacks, noodles and sweets."
+     ],
+     "q": "Which old food tradition from your own country would you love to taste?",
+     "c": "Look up a picture of a thermopolium from Pompeii and imagine what you would order there."
+    },
+    "de": {
+     "t": "Eine sehr alte Tradition",
+     "g": "Entdecken, dass Menschen seit Jahrtausenden Essen auf der Straße kaufen.",
+     "p": [
+      "Im alten Rom hatten viele Wohnungen keine Küche, also kaufte man warmes Essen an Straßentheken.",
+      "In Pompeji sieht man noch Steintheken, Thermopolien genannt, mit eingelassenen Gefäßen.",
+      "Alte chinesische Städte wie Kaifeng hatten belebte Nachtmärkte mit Snacks, Nudeln und Süßem."
+     ],
+     "q": "Welche alte Esstradition aus deinem Land würdest du gern probieren?",
+     "c": "Suche ein Bild eines Thermopoliums aus Pompeji und überlege, was du dort bestellen würdest."
+    },
+    "es": {
+     "t": "Una tradición muy antigua",
+     "g": "Descubrir que la gente compra comida en la calle desde hace miles de años.",
+     "p": [
+      "En la antigua Roma muchas viviendas no tenían cocina, así que se compraba comida caliente en mostradores.",
+      "En Pompeya aún se ven mostradores de piedra, los thermopolia, con tinajas incrustadas.",
+      "Ciudades chinas antiguas como Kaifeng tenían animados mercados nocturnos con fideos y dulces."
+     ],
+     "q": "¿Qué tradición culinaria antigua de tu país te encantaría probar?",
+     "c": "Busca una imagen de un thermopolium de Pompeya e imagina qué pedirías allí."
+    },
+    "fr": {
+     "t": "Une très vieille tradition",
+     "g": "Découvrir qu'on achète à manger dans la rue depuis des milliers d'années.",
+     "p": [
+      "Dans la Rome antique, beaucoup de logements n'avaient pas de cuisine : on achetait des plats chauds au comptoir.",
+      "À Pompéi, on voit encore des comptoirs en pierre, les thermopolia, avec des jarres encastrées.",
+      "D'anciennes villes chinoises comme Kaifeng avaient des marchés de nuit pleins de nouilles et douceurs."
+     ],
+     "q": "Quelle vieille tradition culinaire de ton pays aimerais-tu goûter ?",
+     "c": "Cherche une image d'un thermopolium de Pompéi et imagine ce que tu y commanderais."
+    },
+    "it": {
+     "t": "Una tradizione antichissima",
+     "g": "Scoprire che si compra cibo per strada da migliaia di anni.",
+     "p": [
+      "Nell'antica Roma molte case non avevano cucina, così si comprava cibo caldo ai banconi di strada.",
+      "A Pompei si vedono ancora i banconi in pietra, i thermopolia, con grandi vasi incassati.",
+      "Antiche città cinesi come Kaifeng avevano vivaci mercati notturni con spaghetti e dolci."
+     ],
+     "q": "Quale antica tradizione gastronomica del tuo paese ti piacerebbe assaggiare?",
+     "c": "Cerca un'immagine di un thermopolium di Pompei e immagina cosa ordineresti lì."
+    },
+    "pt": {
+     "t": "Uma tradição muito antiga",
+     "g": "Descobrir que se compra comida na rua há milhares de anos.",
+     "p": [
+      "Na Roma antiga, muitas casas não tinham cozinha, por isso comprava-se comida quente em balcões de rua.",
+      "Em Pompeia ainda se veem balcões de pedra, os thermopolia, com grandes jarros embutidos.",
+      "Cidades chinesas antigas como Kaifeng tinham mercados noturnos animados com massas e doces."
+     ],
+     "q": "Que tradição alimentar antiga do teu país gostarias de provar?",
+     "c": "Procura uma imagem de um thermopolium de Pompeia e imagina o que pedirias lá."
+    },
+    "pt_BR": {
+     "t": "Uma tradição muito antiga",
+     "g": "Descobrir que as pessoas compram comida na rua há milhares de anos.",
+     "p": [
+      "Na Roma antiga, muitas casas não tinham cozinha, então se comprava comida quente em balcões de rua.",
+      "Em Pompeia ainda dá para ver balcões de pedra, os thermopolia, com potes embutidos.",
+      "Cidades chinesas antigas como Kaifeng tinham mercados noturnos cheios de macarrão e doces."
+     ],
+     "q": "Que tradição culinária antiga do seu país você adoraria provar?",
+     "c": "Procure uma imagem de um thermopolium de Pompeia e imagine o que você pediria lá."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why cities love street food",
+     "g": "See how street stalls keep busy cities fed and connected.",
+     "p": [
+      "Speed matters: a worker on a short break can eat a hot meal in minutes.",
+      "Stalls offer affordable meals, so students and families can eat out often.",
+      "Stalls bring people together, from early commuters to night owls sharing a table."
+     ],
+     "q": "When in your day would a quick street snack help you the most?",
+     "c": "Eat one meal or snack today the street food way: standing, quick and with a smile."
+    },
+    "de": {
+     "t": "Warum Städte Streetfood lieben",
+     "g": "Sehen, wie Imbissstände belebte Städte satt machen und verbinden.",
+     "p": [
+      "Tempo zählt: In einer kurzen Pause bekommt man in Minuten eine warme Mahlzeit.",
+      "Stände bieten günstige Mahlzeiten, so können Studierende und Familien oft auswärts essen.",
+      "Sie bringen Menschen zusammen, von Frühpendlern bis zu Nachteulen am selben Tisch."
+     ],
+     "q": "Wann am Tag würde dir ein schneller Snack von der Straße am meisten helfen?",
+     "c": "Iss heute eine Mahlzeit nach Streetfood-Art: im Stehen, schnell und mit einem Lächeln."
+    },
+    "es": {
+     "t": "Por qué las ciudades aman la comida callejera",
+     "g": "Ver cómo los puestos alimentan y unen a las ciudades con prisa.",
+     "p": [
+      "La rapidez importa: en un descanso corto se come algo caliente en minutos.",
+      "Los puestos son asequibles, así que estudiantes y familias pueden comer fuera a menudo.",
+      "Reúnen a la gente, desde quien madruga hasta los noctámbulos en la misma mesa."
+     ],
+     "q": "¿En qué momento del día te vendría mejor un bocado rápido en la calle?",
+     "c": "Come hoy algo al estilo callejero: de pie, rápido y con una sonrisa."
+    },
+    "fr": {
+     "t": "Pourquoi les villes adorent la cuisine de rue",
+     "g": "Voir comment les stands nourrissent et relient les villes pressées.",
+     "p": [
+      "La vitesse compte : pendant une courte pause, on mange chaud en quelques minutes.",
+      "Les stands sont abordables, donc étudiants et familles peuvent manger dehors souvent.",
+      "Ils rassemblent les gens, des lève-tôt aux noctambules autour d'une même table."
+     ],
+     "q": "À quel moment de ta journée un en-cas de rue t'aiderait le plus ?",
+     "c": "Mange aujourd'hui un repas façon rue : debout, rapide et avec le sourire."
+    },
+    "it": {
+     "t": "Perché le città amano il cibo di strada",
+     "g": "Vedere come i chioschi sfamano e uniscono le città frenetiche.",
+     "p": [
+      "La velocità conta: in una breve pausa si mangia qualcosa di caldo in pochi minuti.",
+      "I chioschi sono accessibili, così studenti e famiglie possono mangiare fuori spesso.",
+      "Uniscono le persone, dai pendolari mattinieri ai nottambuli allo stesso tavolo."
+     ],
+     "q": "In quale momento della giornata ti servirebbe di più uno spuntino di strada?",
+     "c": "Oggi mangia qualcosa in stile street food: in piedi, veloce e con un sorriso."
+    },
+    "pt": {
+     "t": "Porque é que as cidades adoram comida de rua",
+     "g": "Ver como as bancas alimentam e unem as cidades apressadas.",
+     "p": [
+      "A rapidez conta: numa pausa curta come-se uma refeição quente em minutos.",
+      "As bancas são acessíveis, por isso estudantes e famílias podem comer fora muitas vezes.",
+      "Juntam as pessoas, dos madrugadores aos notívagos na mesma mesa."
+     ],
+     "q": "Em que altura do teu dia te dava mais jeito um petisco rápido de rua?",
+     "c": "Come hoje algo à moda da rua: de pé, depressa e com um sorriso."
+    },
+    "pt_BR": {
+     "t": "Por que as cidades amam comida de rua",
+     "g": "Ver como as barracas alimentam e unem as cidades apressadas.",
+     "p": [
+      "A rapidez conta: num intervalo curto dá para comer algo quente em minutos.",
+      "As barracas são acessíveis, então estudantes e famílias comem fora com frequência.",
+      "Elas unem as pessoas, de quem madruga aos notívagos na mesma mesa."
+     ],
+     "q": "Em que hora do seu dia um lanche rápido de rua ajudaria mais?",
+     "c": "Coma hoje algo no estilo de rua: em pé, rápido e com um sorriso."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting a great stall",
+     "g": "Learn the simple signs that point to a tasty and trustworthy stall.",
+     "p": [
+      "A long queue of locals is the best review: they know where the good food is.",
+      "High turnover means ingredients are fresh and food does not sit around for hours.",
+      "Look for food cooked to order and clean surfaces, utensils and hands."
+     ],
+     "q": "What do you look at first when you choose a place to eat?",
+     "c": "Walk past two food stalls today and rate them using the queue, freshness and cleanliness test."
+    },
+    "de": {
+     "t": "Einen tollen Stand erkennen",
+     "g": "Die einfachen Zeichen für einen leckeren und vertrauenswürdigen Stand kennenlernen.",
+     "p": [
+      "Eine lange Schlange von Einheimischen ist die beste Bewertung: Sie wissen, wo es gut ist.",
+      "Viel Umsatz heißt frische Zutaten, nichts liegt stundenlang herum.",
+      "Achte auf frisch zubereitetes Essen und saubere Flächen, Utensilien und Hände."
+     ],
+     "q": "Worauf achtest du zuerst, wenn du einen Ort zum Essen auswählst?",
+     "c": "Geh heute an zwei Ständen vorbei und bewerte sie nach Schlange, Frische und Sauberkeit."
+    },
+    "es": {
+     "t": "Cómo reconocer un buen puesto",
+     "g": "Aprender las señales sencillas de un puesto sabroso y de confianza.",
+     "p": [
+      "Una larga cola de gente local es la mejor reseña: saben dónde se come bien.",
+      "Mucha rotación significa ingredientes frescos y comida que no espera horas.",
+      "Busca comida hecha al momento y superficies, utensilios y manos limpios."
+     ],
+     "q": "¿En qué te fijas primero al elegir un sitio para comer?",
+     "c": "Pasa hoy por dos puestos y puntúalos según la cola, la frescura y la limpieza."
+    },
+    "fr": {
+     "t": "Repérer un bon stand",
+     "g": "Apprendre les signes simples d'un stand savoureux et fiable.",
+     "p": [
+      "Une longue file d'habitants est le meilleur avis : ils savent où l'on mange bien.",
+      "Beaucoup de passage signifie des produits frais qui n'attendent pas des heures.",
+      "Cherche des plats cuits à la demande et des surfaces, ustensiles et mains propres."
+     ],
+     "q": "Que regardes-tu en premier quand tu choisis où manger ?",
+     "c": "Passe aujourd'hui devant deux stands et note-les selon la file, la fraîcheur et la propreté."
+    },
+    "it": {
+     "t": "Riconoscere un ottimo chiosco",
+     "g": "Imparare i segnali semplici di un chiosco gustoso e affidabile.",
+     "p": [
+      "Una lunga fila di gente del posto è la migliore recensione: sanno dove si mangia bene.",
+      "Tanto ricambio significa ingredienti freschi e cibo che non resta lì per ore.",
+      "Cerca cibo cucinato al momento e superfici, utensili e mani pulite."
+     ],
+     "q": "A cosa guardi per prima cosa quando scegli dove mangiare?",
+     "c": "Oggi passa davanti a due chioschi e valutali per fila, freschezza e pulizia."
+    },
+    "pt": {
+     "t": "Reconhecer uma boa banca",
+     "g": "Aprender os sinais simples de uma banca saborosa e de confiança.",
+     "p": [
+      "Uma longa fila de gente local é a melhor crítica: eles sabem onde se come bem.",
+      "Muito movimento significa ingredientes frescos e comida que não fica horas parada.",
+      "Procura comida feita na hora e superfícies, utensílios e mãos limpos."
+     ],
+     "q": "Em que reparas primeiro quando escolhes onde comer?",
+     "c": "Passa hoje por duas bancas e avalia-as pela fila, frescura e limpeza."
+    },
+    "pt_BR": {
+     "t": "Como reconhecer uma boa barraca",
+     "g": "Aprender os sinais simples de uma barraca gostosa e confiável.",
+     "p": [
+      "Uma fila longa de moradores é a melhor avaliação: eles sabem onde a comida é boa.",
+      "Muito movimento significa ingredientes frescos e comida que não fica horas parada.",
+      "Procure comida feita na hora e superfícies, utensílios e mãos limpos."
+     ],
+     "q": "No que você repara primeiro quando escolhe onde comer?",
+     "c": "Passe hoje por duas barracas e avalie as duas pela fila, frescor e limpeza."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic food safety on the road",
+     "g": "Learn easy habits that keep your stomach happy while you travel.",
+     "p": [
+      "Choose food that is cooked hot in front of you and served right away.",
+      "Pick fruit you peel yourself, like bananas or oranges, and sealed bottled drinks.",
+      "Clean your hands before eating, so carry soap or hand gel with you."
+     ],
+     "q": "Which of these food safety habits do you already follow when you travel?",
+     "c": "Pack a tiny travel kit today: hand gel, tissues and a reusable spoon or fork."
+    },
+    "de": {
+     "t": "Grundlagen der Lebensmittelsicherheit unterwegs",
+     "g": "Einfache Gewohnheiten lernen, die deinen Magen auf Reisen glücklich halten.",
+     "p": [
+      "Wähle Essen, das vor dir heiß gegart und sofort serviert wird.",
+      "Nimm Obst, das du selbst schälst, wie Bananen oder Orangen, und verschlossene Getränke.",
+      "Reinige vor dem Essen die Hände, also hab Seife oder Handgel dabei."
+     ],
+     "q": "Welche dieser Gewohnheiten befolgst du auf Reisen schon?",
+     "c": "Pack heute ein kleines Reiseset: Handgel, Taschentücher und einen eigenen Löffel oder eine Gabel."
+    },
+    "es": {
+     "t": "Seguridad alimentaria básica de viaje",
+     "g": "Aprender hábitos fáciles para que tu estómago disfrute del viaje.",
+     "p": [
+      "Elige comida cocinada bien caliente delante de ti y servida al momento.",
+      "Escoge fruta que peles tú, como plátanos o naranjas, y bebidas embotelladas cerradas.",
+      "Lávate las manos antes de comer: lleva jabón o gel contigo."
+     ],
+     "q": "¿Cuáles de estos hábitos ya sigues cuando viajas?",
+     "c": "Prepara hoy un mini kit de viaje: gel de manos, pañuelos y una cuchara o tenedor propio."
+    },
+    "fr": {
+     "t": "Les bases de la sécurité alimentaire en voyage",
+     "g": "Apprendre des gestes simples pour garder un estomac heureux en voyage.",
+     "p": [
+      "Choisis des plats cuits bien chauds devant toi et servis tout de suite.",
+      "Prends des fruits à éplucher toi-même, comme bananes ou oranges, et des boissons scellées.",
+      "Lave-toi les mains avant de manger : garde du savon ou du gel sur toi."
+     ],
+     "q": "Lesquels de ces gestes suis-tu déjà en voyage ?",
+     "c": "Prépare aujourd'hui un mini kit : gel hydroalcoolique, mouchoirs et une cuillère ou fourchette à toi."
+    },
+    "it": {
+     "t": "Sicurezza alimentare di base in viaggio",
+     "g": "Imparare abitudini facili per tenere felice lo stomaco in viaggio.",
+     "p": [
+      "Scegli cibo cotto ben caldo davanti a te e servito subito.",
+      "Prendi frutta da sbucciare da solo, come banane o arance, e bevande sigillate.",
+      "Pulisci le mani prima di mangiare: porta con te sapone o gel."
+     ],
+     "q": "Quali di queste abitudini segui già quando viaggi?",
+     "c": "Prepara oggi un mini kit da viaggio: gel per le mani, fazzoletti e un cucchiaio o una forchetta tua."
+    },
+    "pt": {
+     "t": "Segurança alimentar básica em viagem",
+     "g": "Aprender hábitos simples para manter o estômago feliz em viagem.",
+     "p": [
+      "Escolhe comida cozinhada bem quente à tua frente e servida logo.",
+      "Prefere fruta que descascas tu, como bananas ou laranjas, e bebidas seladas.",
+      "Limpa as mãos antes de comer: leva sabão ou gel contigo."
+     ],
+     "q": "Quais destes hábitos já segues quando viajas?",
+     "c": "Prepara hoje um mini kit de viagem: gel desinfetante, lenços e uma colher ou garfo teu."
+    },
+    "pt_BR": {
+     "t": "Segurança alimentar básica na viagem",
+     "g": "Aprender hábitos simples para manter o estômago feliz na viagem.",
+     "p": [
+      "Escolha comida preparada bem quente na sua frente e servida na hora.",
+      "Prefira fruta que você mesmo descasca, como banana ou laranja, e bebidas lacradas.",
+      "Limpe as mãos antes de comer: leve sabonete ou álcool em gel."
+     ],
+     "q": "Quais desses hábitos você já segue quando viaja?",
+     "c": "Monte hoje um mini kit de viagem: álcool em gel, lenços e uma colher ou garfo seu."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food etiquette basics",
+     "g": "Learn the friendly manners that make ordering at a stall easy.",
+     "p": [
+      "Watch how locals queue: some stalls have a neat line, others a lively crowd.",
+      "Pointing at what you want with a smile works almost everywhere.",
+      "Notice whether people pay first or after eating, and return plates or skewers."
+     ],
+     "q": "Have you ever felt unsure how to order at a stall? What happened?",
+     "c": "At your next food stop, watch for one minute before ordering and copy the locals."
+    },
+    "de": {
+     "t": "Grundregeln der Streetfood-Etikette",
+     "g": "Die freundlichen Umgangsformen lernen, die das Bestellen am Stand leicht machen.",
+     "p": [
+      "Schau, wie Einheimische anstehen: mal ordentlich in der Reihe, mal in einer lebhaften Gruppe.",
+      "Mit einem Lächeln auf das Gewünschte zeigen klappt fast überall.",
+      "Achte, ob man vorher oder nachher zahlt, und bring Teller oder Spieße zurück."
+     ],
+     "q": "Warst du schon mal unsicher, wie man an einem Stand bestellt? Was ist passiert?",
+     "c": "Beobachte beim nächsten Imbiss eine Minute lang und mach es dann wie die Einheimischen."
+    },
+    "es": {
+     "t": "Normas básicas de etiqueta callejera",
+     "g": "Aprender los buenos modales que facilitan pedir en un puesto.",
+     "p": [
+      "Observa cómo hace cola la gente: a veces en fila ordenada, a veces en grupo animado.",
+      "Señalar lo que quieres con una sonrisa funciona casi en todas partes.",
+      "Fíjate si se paga antes o después y devuelve platos o brochetas."
+     ],
+     "q": "¿Alguna vez dudaste sobre cómo pedir en un puesto? ¿Qué pasó?",
+     "c": "En tu próxima parada, observa un minuto antes de pedir e imita a la gente local."
+    },
+    "fr": {
+     "t": "Les bases du savoir-vivre de rue",
+     "g": "Apprendre les bonnes manières qui facilitent la commande à un stand.",
+     "p": [
+      "Observe comment les gens font la queue : parfois en file, parfois en petit groupe animé.",
+      "Montrer du doigt ce que tu veux avec un sourire marche presque partout.",
+      "Regarde si l'on paie avant ou après, et rapporte assiettes ou brochettes."
+     ],
+     "q": "T'es-tu déjà senti perdu pour commander à un stand ? Que s'est-il passé ?",
+     "c": "Au prochain stand, observe une minute avant de commander et imite les habitués."
+    },
+    "it": {
+     "t": "Galateo di base del cibo di strada",
+     "g": "Imparare le buone maniere che rendono facile ordinare a un chiosco.",
+     "p": [
+      "Guarda come fa la fila la gente: a volte in ordine, a volte in un gruppo vivace.",
+      "Indicare ciò che vuoi con un sorriso funziona quasi ovunque.",
+      "Nota se si paga prima o dopo e riporta piatti o spiedini."
+     ],
+     "q": "Ti è mai capitato di non sapere come ordinare a un chiosco? Com'è andata?",
+     "c": "Alla prossima sosta, osserva per un minuto prima di ordinare e imita la gente del posto."
+    },
+    "pt": {
+     "t": "Regras básicas de etiqueta na rua",
+     "g": "Aprender as boas maneiras que facilitam pedir numa banca.",
+     "p": [
+      "Observa como as pessoas fazem fila: às vezes em linha, às vezes num grupo animado.",
+      "Apontar para o que queres com um sorriso funciona quase em todo o lado.",
+      "Repara se se paga antes ou depois e devolve pratos ou espetos."
+     ],
+     "q": "Já te sentiste sem saber como pedir numa banca? O que aconteceu?",
+     "c": "Na próxima paragem, observa um minuto antes de pedir e imita os locais."
+    },
+    "pt_BR": {
+     "t": "Etiqueta básica da comida de rua",
+     "g": "Aprender os bons modos que facilitam pedir numa barraca.",
+     "p": [
+      "Observe como as pessoas fazem fila: às vezes em linha, às vezes num grupo animado.",
+      "Apontar para o que você quer com um sorriso funciona em quase todo lugar.",
+      "Repare se se paga antes ou depois e devolva pratos ou espetinhos."
+     ],
+     "q": "Você já ficou sem saber como pedir numa barraca? O que aconteceu?",
+     "c": "Na próxima parada, observe um minuto antes de pedir e imite os moradores."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating with your hands",
+     "g": "Feel confident eating the many dishes meant for fingers, not forks.",
+     "p": [
+      "In parts of India, the Middle East and Africa, eating with the hands is normal and polite.",
+      "Where hands are the norm, use the right hand to eat, as the left is often avoided.",
+      "Tilt tacos, hold rolls in their paper and tear flatbread to scoop food neatly."
+     ],
+     "q": "Which food do you always prefer to eat with your hands?",
+     "c": "Eat one meal with your hands today and try the flatbread scoop or the taco tilt."
+    },
+    "de": {
+     "t": "Mit den Händen essen",
+     "g": "Sicher werden beim Essen der vielen Gerichte, die für Finger statt Gabeln gedacht sind.",
+     "p": [
+      "In Teilen Indiens, des Nahen Ostens und Afrikas ist Essen mit den Händen normal und höflich.",
+      "Wo man mit den Händen isst, nimmt man die rechte Hand, die linke wird oft gemieden.",
+      "Tacos leicht kippen, Rollen im Papier halten, Fladenbrot reißen und damit Essen aufnehmen."
+     ],
+     "q": "Welches Essen isst du immer am liebsten mit den Händen?",
+     "c": "Iss heute eine Mahlzeit mit den Händen und probier den Fladenbrot-Trick oder das Taco-Kippen."
+    },
+    "es": {
+     "t": "Comer con las manos",
+     "g": "Sentirte seguro con los muchos platos pensados para los dedos, no el tenedor.",
+     "p": [
+      "En partes de India, Oriente Medio y África, comer con las manos es normal y educado.",
+      "Donde se come con las manos, se usa la derecha; la izquierda se suele evitar.",
+      "Inclina el taco, sujeta los rollos en su papel y usa el pan plano para recoger la comida."
+     ],
+     "q": "¿Qué comida prefieres siempre comer con las manos?",
+     "c": "Come hoy algo con las manos y prueba el truco del pan plano o la inclinación del taco."
+    },
+    "fr": {
+     "t": "Manger avec les mains",
+     "g": "Être à l'aise avec les nombreux plats faits pour les doigts, pas la fourchette.",
+     "p": [
+      "En Inde, au Moyen-Orient et en Afrique, manger avec les mains est souvent normal et poli.",
+      "Là où l'on mange avec les mains, on utilise la droite ; la gauche est souvent évitée.",
+      "Penche le taco, tiens les wraps dans leur papier et déchire le pain plat pour saisir la garniture."
+     ],
+     "q": "Quel plat préfères-tu toujours manger avec les mains ?",
+     "c": "Mange un repas avec les mains aujourd'hui et essaie l'astuce du pain plat ou du taco penché."
+    },
+    "it": {
+     "t": "Mangiare con le mani",
+     "g": "Sentirti a tuo agio con i tanti piatti pensati per le dita, non per la forchetta.",
+     "p": [
+      "In parti dell'India, del Medio Oriente e dell'Africa mangiare con le mani è normale ed educato.",
+      "Dove si mangia con le mani si usa la destra; la sinistra spesso si evita.",
+      "Inclina il taco, tieni i panini nella carta e strappa il pane piatto per raccogliere il cibo."
+     ],
+     "q": "Quale cibo preferisci sempre mangiare con le mani?",
+     "c": "Oggi mangia un pasto con le mani e prova il trucco del pane piatto o del taco inclinato."
+    },
+    "pt": {
+     "t": "Comer com as mãos",
+     "g": "Sentir-te à vontade com os muitos pratos feitos para os dedos, não para o garfo.",
+     "p": [
+      "Em partes da Índia, do Médio Oriente e de África, comer com as mãos é normal e educado.",
+      "Onde se come com as mãos, usa-se a direita; a esquerda costuma evitar-se.",
+      "Inclina o taco, segura os rolos no papel e rasga o pão achatado para apanhar a comida."
+     ],
+     "q": "Que comida preferes sempre comer com as mãos?",
+     "c": "Come hoje uma refeição com as mãos e experimenta o truque do pão achatado ou do taco inclinado."
+    },
+    "pt_BR": {
+     "t": "Comer com as mãos",
+     "g": "Ficar à vontade com os muitos pratos feitos para os dedos, não para o garfo.",
+     "p": [
+      "Em partes da Índia, do Oriente Médio e da África, comer com as mãos é normal e educado.",
+      "Onde se come com as mãos, usa-se a direita; a esquerda costuma ser evitada.",
+      "Incline o taco, segure os wraps no papel e rasgue o pão sírio para pegar a comida."
+     ],
+     "q": "Que comida você sempre prefere comer com as mãos?",
+     "c": "Coma hoje uma refeição com as mãos e teste o truque do pão sírio ou do taco inclinado."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning ten food words",
+     "g": "Collect ten food words that help you order anywhere in the world.",
+     "p": [
+      "Cooking words: grilled, fried, steamed and boiled tell you how food is made.",
+      "Taste words: spicy, sweet, sour and salty help you choose what you like.",
+      "Need words: no meat and not spicy, please, are worth learning everywhere you go."
+     ],
+     "q": "Which food word would you most like to learn in another language?",
+     "c": "Pick a country you dream of visiting and learn how to say spicy and no meat there."
+    },
+    "de": {
+     "t": "Zehn Wörter rund ums Essen",
+     "g": "Zehn Wörter sammeln, mit denen du überall auf der Welt bestellen kannst.",
+     "p": [
+      "Garwörter: gegrillt, frittiert, gedämpft und gekocht verraten, wie das Essen gemacht ist.",
+      "Geschmackswörter: scharf, süß, sauer und salzig helfen dir bei der Wahl.",
+      "Wunschwörter: ohne Fleisch und bitte nicht scharf lohnen sich auf jeder Reise."
+     ],
+     "q": "Welches Essenswort würdest du am liebsten in einer anderen Sprache lernen?",
+     "c": "Wähle ein Traumreiseland und lerne, wie man dort scharf und ohne Fleisch sagt."
+    },
+    "es": {
+     "t": "Diez palabras de comida",
+     "g": "Reunir diez palabras para pedir comida en cualquier parte del mundo.",
+     "p": [
+      "Palabras de cocción: a la parrilla, frito, al vapor y hervido dicen cómo se hace.",
+      "Palabras de sabor: picante, dulce, ácido y salado te ayudan a elegir.",
+      "Palabras útiles: sin carne y no picante, por favor, valen en cualquier viaje."
+     ],
+     "q": "¿Qué palabra de comida te gustaría aprender en otro idioma?",
+     "c": "Elige un país que sueñas visitar y aprende a decir picante y sin carne en su idioma."
+    },
+    "fr": {
+     "t": "Dix mots pour manger partout",
+     "g": "Rassembler dix mots utiles pour commander partout dans le monde.",
+     "p": [
+      "Mots de cuisson : grillé, frit, vapeur et bouilli disent comment c'est préparé.",
+      "Mots de goût : épicé, sucré, acide et salé t'aident à choisir.",
+      "Mots pratiques : sans viande et pas épicé, s'il vous plaît, servent dans tout voyage."
+     ],
+     "q": "Quel mot culinaire aimerais-tu apprendre dans une autre langue ?",
+     "c": "Choisis un pays de rêve et apprends à y dire épicé et sans viande."
+    },
+    "it": {
+     "t": "Dieci parole sul cibo",
+     "g": "Raccogliere dieci parole utili per ordinare in ogni parte del mondo.",
+     "p": [
+      "Parole di cottura: alla griglia, fritto, al vapore e bollito dicono come è fatto.",
+      "Parole di gusto: piccante, dolce, aspro e salato ti aiutano a scegliere.",
+      "Parole utili: senza carne e non piccante, per favore, servono in ogni viaggio."
+     ],
+     "q": "Quale parola sul cibo vorresti imparare in un'altra lingua?",
+     "c": "Scegli un paese che sogni di visitare e impara a dire piccante e senza carne nella sua lingua."
+    },
+    "pt": {
+     "t": "Dez palavras de comida",
+     "g": "Juntar dez palavras para pedir comida em qualquer parte do mundo.",
+     "p": [
+      "Palavras de confeção: grelhado, frito, ao vapor e cozido dizem como se faz.",
+      "Palavras de sabor: picante, doce, ácido e salgado ajudam-te a escolher.",
+      "Palavras úteis: sem carne e sem picante, por favor, servem em qualquer viagem."
+     ],
+     "q": "Que palavra de comida gostavas de aprender noutra língua?",
+     "c": "Escolhe um país que sonhas visitar e aprende a dizer picante e sem carne na língua de lá."
+    },
+    "pt_BR": {
+     "t": "Dez palavras de comida",
+     "g": "Juntar dez palavras para pedir comida em qualquer lugar do mundo.",
+     "p": [
+      "Palavras de preparo: grelhado, frito, no vapor e cozido dizem como é feito.",
+      "Palavras de sabor: apimentado, doce, azedo e salgado ajudam você a escolher.",
+      "Palavras úteis: sem carne e sem pimenta, por favor, servem em qualquer viagem."
+     ],
+     "q": "Que palavra de comida você gostaria de aprender em outro idioma?",
+     "c": "Escolha um país que sonha visitar e aprenda a dizer apimentado e sem carne na língua de lá."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night markets explained",
+     "g": "Find out why many Asian cities come alive with food after dark.",
+     "p": [
+      "In hot climates, evenings are cooler and more comfortable for cooking and strolling.",
+      "Rows of stalls pop up in streets and car parks, often with shared tables in the middle.",
+      "Taipei, Bangkok and Penang are famous for night markets full of small dishes to share."
+     ],
+     "q": "Would you rather eat early in the evening or late at night? Why?",
+     "c": "Tonight, share a small snack with someone, night market style, and try a bite of each other's."
+    },
+    "de": {
+     "t": "Nachtmärkte erklärt",
+     "g": "Herausfinden, warum viele asiatische Städte nach Einbruch der Dunkelheit kulinarisch aufblühen.",
+     "p": [
+      "In heißen Ländern sind die Abende kühler und angenehmer zum Kochen und Bummeln.",
+      "Reihen von Ständen entstehen auf Straßen und Parkplätzen, oft mit gemeinsamen Tischen.",
+      "Taipeh, Bangkok und Penang sind für Nachtmärkte voller kleiner Gerichte zum Teilen bekannt."
+     ],
+     "q": "Isst du lieber früh am Abend oder spät in der Nacht? Warum?",
+     "c": "Teile heute Abend einen kleinen Snack mit jemandem, wie auf dem Nachtmarkt, und probiert gegenseitig."
+    },
+    "es": {
+     "t": "Los mercados nocturnos",
+     "g": "Descubrir por qué muchas ciudades asiáticas se llenan de comida al caer la noche.",
+     "p": [
+      "En climas cálidos, las noches son más frescas y agradables para cocinar y pasear.",
+      "Filas de puestos aparecen en calles y aparcamientos, a menudo con mesas compartidas.",
+      "Taipéi, Bangkok y Penang son famosas por mercados nocturnos llenos de platitos para compartir."
+     ],
+     "q": "¿Prefieres cenar temprano o comer tarde por la noche? ¿Por qué?",
+     "c": "Esta noche comparte un pequeño bocado con alguien, al estilo mercado nocturno, y probad lo del otro."
+    },
+    "fr": {
+     "t": "Les marchés de nuit expliqués",
+     "g": "Découvrir pourquoi tant de villes d'Asie s'animent autour de la nourriture à la nuit tombée.",
+     "p": [
+      "Sous les climats chauds, le soir est plus frais et agréable pour cuisiner et flâner.",
+      "Des rangées de stands surgissent dans les rues et parkings, souvent avec des tables partagées.",
+      "Taipei, Bangkok et Penang sont célèbres pour leurs marchés de nuit pleins de petits plats."
+     ],
+     "q": "Préfères-tu manger tôt le soir ou tard dans la nuit ? Pourquoi ?",
+     "c": "Ce soir, partage un petit en-cas avec quelqu'un, façon marché de nuit, et goûtez chacun celui de l'autre."
+    },
+    "it": {
+     "t": "I mercati notturni spiegati",
+     "g": "Scoprire perché tante città asiatiche si animano di cibo dopo il tramonto.",
+     "p": [
+      "Nei climi caldi la sera è più fresca e piacevole per cucinare e passeggiare.",
+      "File di bancarelle spuntano in strade e parcheggi, spesso con tavoli condivisi.",
+      "Taipei, Bangkok e Penang sono famose per mercati notturni pieni di piattini da condividere."
+     ],
+     "q": "Preferisci mangiare presto la sera o tardi di notte? Perché?",
+     "c": "Stasera condividi uno spuntino con qualcuno, in stile mercato notturno, e assaggiate quello dell'altro."
+    },
+    "pt": {
+     "t": "Os mercados noturnos",
+     "g": "Descobrir porque é que muitas cidades asiáticas ganham vida com comida depois de escurecer.",
+     "p": [
+      "Em climas quentes, a noite é mais fresca e agradável para cozinhar e passear.",
+      "Filas de bancas surgem em ruas e parques de estacionamento, muitas vezes com mesas partilhadas.",
+      "Taipé, Banguecoque e Penang são famosas por mercados noturnos cheios de pratinhos para partilhar."
+     ],
+     "q": "Preferes comer cedo ao fim do dia ou tarde à noite? Porquê?",
+     "c": "Hoje à noite partilha um petisco com alguém, à moda do mercado noturno, e provem o do outro."
+    },
+    "pt_BR": {
+     "t": "Os mercados noturnos",
+     "g": "Descobrir por que muitas cidades asiáticas ganham vida com comida depois que escurece.",
+     "p": [
+      "Em climas quentes, a noite é mais fresca e gostosa para cozinhar e passear.",
+      "Fileiras de barracas surgem em ruas e estacionamentos, muitas vezes com mesas compartilhadas.",
+      "Taipé, Bangkok e Penang são famosas por mercados noturnos cheios de pratinhos para dividir."
+     ],
+     "q": "Você prefere comer cedo à noite ou bem tarde? Por quê?",
+     "c": "Hoje à noite divida um petisco com alguém, no estilo mercado noturno, e provem o do outro."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your street food diary",
+     "g": "Start a simple diary that turns every bite into a memory.",
+     "p": [
+      "Write what you ate, where you found it and the exact name of the dish.",
+      "Add a few taste words, like crispy, smoky or tangy, and a score out of five.",
+      "A photo or a quick sketch helps you remember and share the dish later."
+     ],
+     "q": "What would be the very first entry in your street food diary?",
+     "c": "Start your diary today with one dish you have eaten recently, its name, place and taste."
+    },
+    "de": {
+     "t": "Dein Streetfood-Tagebuch",
+     "g": "Ein einfaches Tagebuch beginnen, das jeden Bissen zur Erinnerung macht.",
+     "p": [
+      "Schreib auf, was du gegessen hast, wo du es gefunden hast und wie das Gericht genau heißt.",
+      "Ergänze ein paar Geschmackswörter wie knusprig, rauchig oder würzig und eine Note von eins bis fünf.",
+      "Ein Foto oder eine kleine Skizze hilft beim Erinnern und Teilen."
+     ],
+     "q": "Was wäre der allererste Eintrag in deinem Streetfood-Tagebuch?",
+     "c": "Beginne heute dein Tagebuch mit einem Gericht, das du kürzlich gegessen hast: Name, Ort, Geschmack."
+    },
+    "es": {
+     "t": "Tu diario de comida callejera",
+     "g": "Empezar un diario sencillo que convierte cada bocado en un recuerdo.",
+     "p": [
+      "Apunta qué comiste, dónde lo encontraste y el nombre exacto del plato.",
+      "Añade palabras de sabor, como crujiente, ahumado o ácido, y una nota del uno al cinco.",
+      "Una foto o un dibujo rápido te ayuda a recordarlo y compartirlo."
+     ],
+     "q": "¿Cuál sería la primera entrada de tu diario de comida callejera?",
+     "c": "Empieza hoy tu diario con un plato que comiste hace poco: nombre, lugar y sabor."
+    },
+    "fr": {
+     "t": "Ton carnet de cuisine de rue",
+     "g": "Commencer un carnet simple qui transforme chaque bouchée en souvenir.",
+     "p": [
+      "Note ce que tu as mangé, où tu l'as trouvé et le nom exact du plat.",
+      "Ajoute quelques mots de goût, comme croustillant, fumé ou acidulé, et une note sur cinq.",
+      "Une photo ou un petit croquis t'aide à t'en souvenir et à le partager."
+     ],
+     "q": "Quelle serait la toute première entrée de ton carnet ?",
+     "c": "Commence ton carnet aujourd'hui avec un plat mangé récemment : nom, lieu et goût."
+    },
+    "it": {
+     "t": "Il tuo diario del cibo di strada",
+     "g": "Iniziare un diario semplice che trasforma ogni morso in un ricordo.",
+     "p": [
+      "Scrivi cosa hai mangiato, dove l'hai trovato e il nome esatto del piatto.",
+      "Aggiungi parole di gusto, come croccante, affumicato o aspro, e un voto da uno a cinque.",
+      "Una foto o un piccolo schizzo ti aiuta a ricordarlo e a condividerlo."
+     ],
+     "q": "Quale sarebbe la primissima voce del tuo diario del cibo di strada?",
+     "c": "Inizia oggi il diario con un piatto mangiato di recente: nome, luogo e sapore."
+    },
+    "pt": {
+     "t": "O teu diário de comida de rua",
+     "g": "Começar um diário simples que transforma cada dentada numa memória.",
+     "p": [
+      "Escreve o que comeste, onde o encontraste e o nome exato do prato.",
+      "Junta palavras de sabor, como estaladiço, fumado ou ácido, e uma nota de um a cinco.",
+      "Uma foto ou um esboço rápido ajuda-te a lembrar e a partilhar."
+     ],
+     "q": "Qual seria a primeira entrada do teu diário de comida de rua?",
+     "c": "Começa hoje o diário com um prato que comeste há pouco: nome, sítio e sabor."
+    },
+    "pt_BR": {
+     "t": "Seu diário de comida de rua",
+     "g": "Começar um diário simples que transforma cada mordida numa lembrança.",
+     "p": [
+      "Anote o que comeu, onde encontrou e o nome exato do prato.",
+      "Acrescente palavras de sabor, como crocante, defumado ou azedinho, e uma nota de um a cinco.",
+      "Uma foto ou um desenho rápido ajuda você a lembrar e compartilhar."
+     ],
+     "q": "Qual seria a primeira anotação do seu diário de comida de rua?",
+     "c": "Comece hoje o diário com um prato que comeu há pouco: nome, lugar e sabor."
+    }
+   }
+  }
+ ]
+}

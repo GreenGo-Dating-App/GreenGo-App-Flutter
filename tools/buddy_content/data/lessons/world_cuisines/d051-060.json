@@ -1,0 +1,835 @@
+{
+ "topic": "world_cuisines",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flatbreads everywhere",
+     "g": "Discover flatbreads, some of the oldest breads on earth, made across many cultures.",
+     "p": [
+      "Naan is a soft leavened bread traditionally baked on the hot inner wall of a tandoor oven.",
+      "Pita puffs into a pocket in a hot oven; lavash is a thin Armenian bread recognised by UNESCO.",
+      "Roti and chapati are unleavened wholewheat breads cooked quickly on a flat griddle."
+     ],
+     "q": "Which flatbread do you eat most often, and what do you like to eat it with?",
+     "c": "Mix flour, water and a pinch of salt, roll thin and cook a simple flatbread in a dry hot pan."
+    },
+    "de": {
+     "t": "Fladenbrote überall",
+     "g": "Entdecke Fladenbrote, einige der ältesten Brote der Welt, gebacken in vielen Kulturen.",
+     "p": [
+      "Naan ist ein weiches Hefebrot, traditionell an der heißen Innenwand eines Tandur-Ofens gebacken.",
+      "Pita bläht sich im heißen Ofen zur Tasche auf; Lavash ist ein dünnes armenisches Brot mit UNESCO-Anerkennung.",
+      "Roti und Chapati sind ungesäuerte Vollkornbrote, schnell auf einer flachen Platte gebacken."
+     ],
+     "q": "Welches Fladenbrot isst du am häufigsten, und wozu isst du es gern?",
+     "c": "Vermenge Mehl, Wasser und eine Prise Salz, rolle dünn aus und backe ein einfaches Fladenbrot in einer heißen trockenen Pfanne."
+    },
+    "es": {
+     "t": "Panes planos por todas partes",
+     "g": "Descubre los panes planos, de los panes más antiguos del mundo, presentes en muchas culturas.",
+     "p": [
+      "El naan es un pan tierno con levadura que se hornea sobre la pared caliente de un horno tandoor.",
+      "La pita se infla como un bolsillo en horno caliente; el lavash es un pan armenio fino reconocido por la UNESCO.",
+      "El roti y el chapati son panes integrales sin levadura que se cuecen rápido en una plancha."
+     ],
+     "q": "¿Qué pan plano comes más a menudo y con qué te gusta acompañarlo?",
+     "c": "Mezcla harina, agua y una pizca de sal, estira fino y cocina un pan plano en una sartén caliente sin aceite."
+    },
+    "fr": {
+     "t": "Des pains plats partout",
+     "g": "Découvre les pains plats, parmi les plus anciens pains du monde, présents dans de nombreuses cultures.",
+     "p": [
+      "Le naan est un pain levé moelleux, traditionnellement cuit contre la paroi brûlante d'un four tandoor.",
+      "La pita gonfle en poche dans un four chaud ; le lavash est un pain arménien fin reconnu par l'UNESCO.",
+      "Le roti et le chapati sont des pains complets sans levain, cuits rapidement sur une plaque plate."
+     ],
+     "q": "Quel pain plat manges-tu le plus souvent, et avec quoi aimes-tu le manger ?",
+     "c": "Mélange farine, eau et une pincée de sel, étale finement et cuis un pain plat dans une poêle chaude sans matière grasse."
+    },
+    "it": {
+     "t": "Pani piatti ovunque",
+     "g": "Scopri i pani piatti, tra i pani più antichi del mondo, presenti in tante culture.",
+     "p": [
+      "Il naan è un pane lievitato morbido, cotto tradizionalmente sulla parete rovente di un forno tandoor.",
+      "La pita si gonfia a tasca nel forno caldo; il lavash è un sottile pane armeno riconosciuto dall'UNESCO.",
+      "Roti e chapati sono pani integrali non lievitati cotti in fretta su una piastra piatta."
+     ],
+     "q": "Quale pane piatto mangi più spesso, e con cosa ti piace accompagnarlo?",
+     "c": "Impasta farina, acqua e un pizzico di sale, stendi sottile e cuoci un pane piatto in una padella calda e asciutta."
+    },
+    "pt": {
+     "t": "Pães achatados por todo o lado",
+     "g": "Descobre os pães achatados, alguns dos pães mais antigos do mundo, feitos em muitas culturas.",
+     "p": [
+      "O naan é um pão levedado e macio, tradicionalmente cozido na parede quente de um forno tandoor.",
+      "A pita incha como um bolso no forno quente; o lavash é um pão arménio fino reconhecido pela UNESCO.",
+      "O roti e o chapati são pães integrais sem fermento, cozidos depressa numa chapa."
+     ],
+     "q": "Que pão achatado comes mais vezes, e com o que gostas de o comer?",
+     "c": "Mistura farinha, água e uma pitada de sal, estende fino e coze um pão achatado numa frigideira quente e seca."
+    },
+    "pt_BR": {
+     "t": "Pães achatados por toda parte",
+     "g": "Descubra os pães achatados, alguns dos pães mais antigos do mundo, feitos em muitas culturas.",
+     "p": [
+      "O naan é um pão fermentado e macio, tradicionalmente assado na parede quente de um forno tandoor.",
+      "O pão sírio estufa como um bolso no forno quente; o lavash é um pão armênio fino reconhecido pela UNESCO.",
+      "O roti e o chapati são pães integrais sem fermento, feitos rapidinho numa chapa."
+     ],
+     "q": "Qual pão achatado você come com mais frequência, e com o que gosta de comer?",
+     "c": "Misture farinha, água e uma pitada de sal, abra fino e asse um pão achatado numa frigideira quente e seca."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rice dishes compared",
+     "g": "Compare five famous rice dishes and the very different methods behind them.",
+     "p": [
+      "Risotto uses short-grain rice stirred with hot broth until creamy; paella is left unstirred.",
+      "Biryani layers spiced rice with meat or vegetables and slow-cooks them together under a lid.",
+      "Pilaf toasts rice in fat before adding broth, keeping grains separate; fried rice loves day-old rice."
+     ],
+     "q": "Which of these rice dishes would you cook for friends, and why?",
+     "c": "Toast a handful of rice in a little butter or oil for two minutes before cooking it and compare the flavour."
+    },
+    "de": {
+     "t": "Reisgerichte im Vergleich",
+     "g": "Vergleiche fünf berühmte Reisgerichte und die sehr unterschiedlichen Methoden dahinter.",
+     "p": [
+      "Risotto nutzt Rundkornreis, mit heißer Brühe cremig gerührt; Paella wird nicht umgerührt.",
+      "Biryani schichtet gewürzten Reis mit Fleisch oder Gemüse und gart alles zusammen langsam unter dem Deckel.",
+      "Pilaw röstet Reis in Fett an, bevor Brühe dazukommt, sodass die Körner locker bleiben; gebratener Reis liebt Reis vom Vortag."
+     ],
+     "q": "Welches dieser Reisgerichte würdest du für Freunde kochen, und warum?",
+     "c": "Röste eine Handvoll Reis zwei Minuten in etwas Butter oder Öl, bevor du ihn garst, und vergleiche den Geschmack."
+    },
+    "es": {
+     "t": "Platos de arroz comparados",
+     "g": "Compara cinco arroces famosos y los métodos tan distintos que hay detrás.",
+     "p": [
+      "El risotto usa arroz de grano corto removido con caldo caliente hasta quedar cremoso; la paella no se remueve.",
+      "El biryani alterna capas de arroz especiado con carne o verduras y se cuece lento con tapa.",
+      "El pilaf tuesta el arroz en grasa antes del caldo para que quede suelto; el arroz frito prefiere arroz del día anterior."
+     ],
+     "q": "¿Cuál de estos arroces cocinarías para tus amigos y por qué?",
+     "c": "Tuesta un puñado de arroz en un poco de mantequilla o aceite dos minutos antes de cocerlo y compara el sabor."
+    },
+    "fr": {
+     "t": "Plats de riz comparés",
+     "g": "Compare cinq plats de riz célèbres et les méthodes très différentes qui les distinguent.",
+     "p": [
+      "Le risotto utilise un riz rond remué avec du bouillon chaud jusqu'à être crémeux ; la paella, elle, ne se remue pas.",
+      "Le biryani superpose riz épicé et viande ou légumes, puis tout cuit lentement à couvert.",
+      "Le pilaf fait nacrer le riz dans la graisse avant le bouillon, grains bien séparés ; le riz sauté préfère le riz de la veille."
+     ],
+     "q": "Lequel de ces plats de riz cuisinerais-tu pour des amis, et pourquoi ?",
+     "c": "Fais nacrer une poignée de riz deux minutes dans un peu de beurre ou d'huile avant cuisson et compare le goût."
+    },
+    "it": {
+     "t": "Piatti di riso a confronto",
+     "g": "Confronta cinque famosi piatti di riso e i metodi molto diversi che li distinguono.",
+     "p": [
+      "Il risotto usa riso a chicco tondo mescolato con brodo caldo fino a renderlo cremoso; la paella non si mescola.",
+      "Il biryani alterna strati di riso speziato e carne o verdure, cotti lentamente insieme con il coperchio.",
+      "Il pilaf tosta il riso nel grasso prima del brodo, a chicchi separati; il riso fritto ama il riso del giorno prima."
+     ],
+     "q": "Quale di questi piatti di riso cucineresti per gli amici, e perché?",
+     "c": "Tosta una manciata di riso in poco burro o olio per due minuti prima di cuocerlo e confronta il sapore."
+    },
+    "pt": {
+     "t": "Pratos de arroz comparados",
+     "g": "Compara cinco pratos de arroz famosos e os métodos muito diferentes por trás deles.",
+     "p": [
+      "O risotto usa arroz de grão curto mexido com caldo quente até ficar cremoso; a paella não se mexe.",
+      "O biryani alterna camadas de arroz condimentado com carne ou legumes, cozinhadas lentamente com tampa.",
+      "O pilaf tosta o arroz em gordura antes do caldo, com grãos soltos; o arroz frito prefere arroz da véspera."
+     ],
+     "q": "Qual destes pratos de arroz cozinharias para amigos, e porquê?",
+     "c": "Tosta um punhado de arroz num pouco de manteiga ou óleo durante dois minutos antes de o cozer e compara o sabor."
+    },
+    "pt_BR": {
+     "t": "Pratos de arroz comparados",
+     "g": "Compare cinco pratos de arroz famosos e os métodos bem diferentes por trás deles.",
+     "p": [
+      "O risoto usa arroz de grão curto mexido com caldo quente até ficar cremoso; a paella não é mexida.",
+      "O biryani alterna camadas de arroz temperado com carne ou legumes, cozidas devagar com tampa.",
+      "O pilaf doura o arroz na gordura antes do caldo, com grãos soltinhos; o arroz frito prefere arroz do dia anterior."
+     ],
+     "q": "Qual desses pratos de arroz você cozinharia para amigos, e por quê?",
+     "c": "Doure um punhado de arroz num pouco de manteiga ou óleo por dois minutos antes de cozinhar e compare o sabor."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noodle traditions",
+     "g": "Travel the continents through ramen, udon, soba, pho and spaghetti.",
+     "p": [
+      "Ramen uses springy wheat noodles made with alkaline water; udon are thick and chewy wheat noodles.",
+      "Soba are made from buckwheat, and pho uses flat rice noodles in a fragrant broth.",
+      "Italian spaghetti is made from durum wheat, and in Japan slurping noodles is perfectly normal."
+     ],
+     "q": "Which noodle would you choose for a cosy dinner: ramen, udon, soba, pho or spaghetti?",
+     "c": "Cook two kinds of noodles you have at home and compare their texture side by side."
+    },
+    "de": {
+     "t": "Nudeltraditionen",
+     "g": "Reise mit Ramen, Udon, Soba, Pho und Spaghetti über die Kontinente.",
+     "p": [
+      "Ramen nutzt federnde Weizennudeln mit alkalischem Wasser; Udon sind dicke, bissfeste Weizennudeln.",
+      "Soba werden aus Buchweizen gemacht, und Pho nutzt flache Reisnudeln in duftender Brühe.",
+      "Italienische Spaghetti bestehen aus Hartweizen, und in Japan ist Nudelschlürfen völlig normal."
+     ],
+     "q": "Welche Nudel würdest du für ein gemütliches Abendessen wählen: Ramen, Udon, Soba, Pho oder Spaghetti?",
+     "c": "Koche zwei Nudelsorten, die du zu Hause hast, und vergleiche ihre Textur direkt nebeneinander."
+    },
+    "es": {
+     "t": "Tradiciones de fideos",
+     "g": "Viaja por los continentes con ramen, udon, soba, pho y espaguetis.",
+     "p": [
+      "El ramen usa fideos de trigo elásticos hechos con agua alcalina; los udon son gruesos y masticables.",
+      "Los soba se hacen con trigo sarraceno, y el pho usa fideos planos de arroz en un caldo aromático.",
+      "Los espaguetis italianos son de trigo duro, y en Japón sorber los fideos es totalmente normal."
+     ],
+     "q": "¿Qué fideo elegirías para una cena acogedora: ramen, udon, soba, pho o espaguetis?",
+     "c": "Cocina dos tipos de fideos que tengas en casa y compara su textura uno al lado del otro."
+    },
+    "fr": {
+     "t": "Traditions de nouilles",
+     "g": "Voyage sur les continents avec ramen, udon, soba, phở et spaghetti.",
+     "p": [
+      "Les ramen sont des nouilles de blé élastiques faites avec une eau alcaline ; les udon, épaisses et moelleuses.",
+      "Les soba sont au sarrasin, et le phở utilise des nouilles de riz plates dans un bouillon parfumé.",
+      "Les spaghetti italiens sont au blé dur, et au Japon aspirer bruyamment ses nouilles est tout à fait normal."
+     ],
+     "q": "Quelles nouilles choisirais-tu pour un dîner douillet : ramen, udon, soba, phở ou spaghetti ?",
+     "c": "Fais cuire deux sortes de nouilles que tu as chez toi et compare leur texture côte à côte."
+    },
+    "it": {
+     "t": "Tradizioni di noodles",
+     "g": "Viaggia tra i continenti con ramen, udon, soba, pho e spaghetti.",
+     "p": [
+      "Il ramen usa noodles di frumento elastici fatti con acqua alcalina; gli udon sono spessi e gommosi.",
+      "I soba sono di grano saraceno, e il pho usa noodles piatti di riso in un brodo profumato.",
+      "Gli spaghetti italiani sono di grano duro, e in Giappone risucchiare i noodles è del tutto normale."
+     ],
+     "q": "Quali noodles sceglieresti per una cena accogliente: ramen, udon, soba, pho o spaghetti?",
+     "c": "Cuoci due tipi di pasta o noodles che hai in casa e confronta la consistenza fianco a fianco."
+    },
+    "pt": {
+     "t": "Tradições de massa",
+     "g": "Viaja pelos continentes com ramen, udon, soba, pho e esparguete.",
+     "p": [
+      "O ramen usa massa de trigo elástica feita com água alcalina; o udon é grosso e mastigável.",
+      "O soba é feito de trigo-sarraceno, e o pho usa massa de arroz achatada num caldo aromático.",
+      "O esparguete italiano é de trigo duro, e no Japão sorver a massa ruidosamente é perfeitamente normal."
+     ],
+     "q": "Que massa escolherias para um jantar aconchegante: ramen, udon, soba, pho ou esparguete?",
+     "c": "Coze dois tipos de massa que tenhas em casa e compara a textura lado a lado."
+    },
+    "pt_BR": {
+     "t": "Tradições de macarrão",
+     "g": "Viaje pelos continentes com lámen, udon, soba, pho e espaguete.",
+     "p": [
+      "O lámen usa macarrão de trigo elástico feito com água alcalina; o udon é grosso e macio.",
+      "O soba é feito de trigo-sarraceno, e o pho usa macarrão de arroz achatado num caldo aromático.",
+      "O espaguete italiano é de trigo duro, e no Japão sugar o macarrão fazendo barulho é perfeitamente normal."
+     ],
+     "q": "Qual macarrão você escolheria para um jantar aconchegante: lámen, udon, soba, pho ou espaguete?",
+     "c": "Cozinhe dois tipos de macarrão que você tem em casa e compare a textura lado a lado."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumplings of the world",
+     "g": "Explore the global art of wrapping tasty fillings in dough.",
+     "p": [
+      "Japanese gyoza are pan-fried until crisp underneath; Himalayan momo are usually steamed.",
+      "Italian ravioli and Polish pierogi are boiled pasta parcels with endless fillings.",
+      "Empanadas, found across Latin America and Spain, are pastry turnovers either baked or fried."
+     ],
+     "q": "If you could fill a dumpling with anything, what would your dream filling be?",
+     "c": "Fold two dumplings in different shapes, like a half-moon and a little purse, and cook them."
+    },
+    "de": {
+     "t": "Teigtaschen der Welt",
+     "g": "Entdecke die weltweite Kunst, leckere Füllungen in Teig zu hüllen.",
+     "p": [
+      "Japanische Gyoza werden gebraten, bis sie unten knusprig sind; Momo aus dem Himalaya meist gedämpft.",
+      "Italienische Ravioli und polnische Pierogi sind gekochte Teigtaschen mit endlosen Füllungen.",
+      "Empanadas, verbreitet in Lateinamerika und Spanien, sind Teigtaschen, gebacken oder frittiert."
+     ],
+     "q": "Wenn du eine Teigtasche mit allem füllen könntest, was wäre deine Traumfüllung?",
+     "c": "Falte zwei Teigtaschen in verschiedenen Formen, etwa Halbmond und Säckchen, und gare sie."
+    },
+    "es": {
+     "t": "Dumplings del mundo",
+     "g": "Explora el arte global de envolver rellenos sabrosos en masa.",
+     "p": [
+      "Las gyoza japonesas se doran en sartén hasta quedar crujientes por debajo; los momo del Himalaya suelen ir al vapor.",
+      "Los ravioli italianos y los pierogi polacos son paquetitos de pasta hervidos con rellenos infinitos.",
+      "Las empanadas, presentes en América Latina y España, son masas rellenas horneadas o fritas."
+     ],
+     "q": "Si pudieras rellenar un dumpling con lo que quisieras, ¿cuál sería tu relleno soñado?",
+     "c": "Cierra dos empanadillas con formas distintas, como media luna y saquito, y cocínalas."
+    },
+    "fr": {
+     "t": "Raviolis du monde",
+     "g": "Explore l'art universel d'envelopper de bonnes garnitures dans de la pâte.",
+     "p": [
+      "Les gyoza japonais sont poêlés jusqu'à être croustillants dessous ; les momo himalayens sont souvent cuits vapeur.",
+      "Les ravioli italiens et les pierogi polonais sont des chaussons de pâte bouillis aux garnitures infinies.",
+      "Les empanadas, présentes en Amérique latine et en Espagne, sont des chaussons cuits au four ou frits."
+     ],
+     "q": "Si tu pouvais garnir un ravioli de n'importe quoi, quelle serait ta garniture de rêve ?",
+     "c": "Façonne deux raviolis de formes différentes, une demi-lune et une petite bourse, puis fais-les cuire."
+    },
+    "it": {
+     "t": "Ravioli e fagottini del mondo",
+     "g": "Esplora l'arte globale di avvolgere ripieni gustosi nella pasta.",
+     "p": [
+      "I gyoza giapponesi si cuociono in padella finché sono croccanti sotto; i momo himalayani di solito al vapore.",
+      "I ravioli italiani e i pierogi polacchi sono fagottini di pasta bolliti con ripieni infiniti.",
+      "Le empanadas, diffuse in America Latina e Spagna, sono fagottini di pasta cotti al forno o fritti."
+     ],
+     "q": "Se potessi riempire un raviolo con qualsiasi cosa, quale sarebbe il tuo ripieno dei sogni?",
+     "c": "Chiudi due ravioli con forme diverse, come mezzaluna e fagottino, e cuocili."
+    },
+    "pt": {
+     "t": "Pastéis de massa do mundo",
+     "g": "Explora a arte global de embrulhar recheios saborosos em massa.",
+     "p": [
+      "As gyoza japonesas são fritas na frigideira até ficarem estaladiças por baixo; os momo dos Himalaias são cozidos a vapor.",
+      "Os ravioli italianos e os pierogi polacos são pastéis de massa cozidos com recheios infinitos.",
+      "As empanadas, presentes na América Latina e em Espanha, são pastéis de massa no forno ou fritos."
+     ],
+     "q": "Se pudesses rechear um pastel com qualquer coisa, qual seria o teu recheio de sonho?",
+     "c": "Fecha dois pastéis em formas diferentes, como meia-lua e trouxinha, e cozinha-os."
+    },
+    "pt_BR": {
+     "t": "Bolinhos recheados do mundo",
+     "g": "Explore a arte global de envolver recheios saborosos em massa.",
+     "p": [
+      "As guiozas japonesas são douradas na frigideira até ficarem crocantes embaixo; os momos do Himalaia vão ao vapor.",
+      "Os raviólis italianos e os pierogi poloneses são trouxinhas de massa cozidas com recheios infinitos.",
+      "As empanadas, presentes na América Latina e na Espanha, são pastéis de massa assados ou fritos."
+     ],
+     "q": "Se você pudesse rechear um bolinho com qualquer coisa, qual seria seu recheio dos sonhos?",
+     "c": "Feche dois bolinhos em formatos diferentes, como meia-lua e trouxinha, e cozinhe."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilling traditions",
+     "g": "Discover how fire and skewers bring people together around the world.",
+     "p": [
+      "Japanese yakitori are small chicken skewers grilled over charcoal, seasoned with salt or a sweet glaze.",
+      "Brazilian churrasco serves cuts like picanha, seasoned simply with coarse salt, sliced from the skewer.",
+      "Turkish kebabs and Southeast Asian satay show how many cultures love meat and vegetables on sticks."
+     ],
+     "q": "What is your favourite thing to put on a grill: meat, fish, vegetables or fruit?",
+     "c": "Thread vegetables or tofu onto a skewer, season with just salt and oil, and grill or roast them."
+    },
+    "de": {
+     "t": "Grilltraditionen",
+     "g": "Entdecke, wie Feuer und Spieße Menschen auf der ganzen Welt zusammenbringen.",
+     "p": [
+      "Japanische Yakitori sind kleine Hähnchenspieße vom Holzkohlegrill, mit Salz oder süßer Glasur gewürzt.",
+      "Brasilianisches Churrasco serviert Stücke wie Picanha, nur mit grobem Salz gewürzt, direkt vom Spieß geschnitten.",
+      "Türkische Kebabs und südostasiatische Satays zeigen, wie viele Kulturen Fleisch und Gemüse am Spieß lieben."
+     ],
+     "q": "Was legst du am liebsten auf den Grill: Fleisch, Fisch, Gemüse oder Obst?",
+     "c": "Stecke Gemüse oder Tofu auf einen Spieß, würze nur mit Salz und Öl, und grille oder röste ihn."
+    },
+    "es": {
+     "t": "Tradiciones de parrilla",
+     "g": "Descubre cómo el fuego y las brochetas reúnen a la gente en todo el mundo.",
+     "p": [
+      "El yakitori japonés son pequeñas brochetas de pollo al carbón, con sal o un glaseado dulce.",
+      "El churrasco brasileño sirve cortes como la picaña, solo con sal gruesa, cortados directamente del espetón.",
+      "Los kebabs turcos y el satay del sudeste asiático muestran cuántas culturas aman la comida en palitos."
+     ],
+     "q": "¿Qué es lo que más te gusta poner en la parrilla: carne, pescado, verduras o fruta?",
+     "c": "Ensarta verduras o tofu en una brocheta, sazona solo con sal y aceite, y ásalos a la plancha o al horno."
+    },
+    "fr": {
+     "t": "Traditions du gril",
+     "g": "Découvre comment le feu et les brochettes rassemblent les gens dans le monde entier.",
+     "p": [
+      "Les yakitori japonais sont de petites brochettes de poulet grillées au charbon, au sel ou nappées d'une sauce sucrée.",
+      "Le churrasco brésilien sert des pièces comme la picanha, assaisonnée au gros sel et tranchée depuis la broche.",
+      "Les kebabs turcs et le satay d'Asie du Sud-Est montrent combien de cultures adorent les brochettes."
+     ],
+     "q": "Qu'aimes-tu le plus mettre sur le gril : viande, poisson, légumes ou fruits ?",
+     "c": "Enfile des légumes ou du tofu sur une brochette, assaisonne juste de sel et d'huile, puis grille ou rôtis."
+    },
+    "it": {
+     "t": "Tradizioni della griglia",
+     "g": "Scopri come fuoco e spiedini riuniscono le persone in tutto il mondo.",
+     "p": [
+      "Gli yakitori giapponesi sono spiedini di pollo cotti sulla brace, conditi con sale o una glassa dolce.",
+      "Il churrasco brasiliano serve tagli come la picanha, condita solo con sale grosso e tagliata dallo spiedo.",
+      "I kebab turchi e il satay del Sud-est asiatico mostrano quante culture amano il cibo sugli spiedini."
+     ],
+     "q": "Cosa ami di più mettere sulla griglia: carne, pesce, verdure o frutta?",
+     "c": "Infilza verdure o tofu su uno spiedino, condisci solo con sale e olio, e grigliali o arrostiscili."
+    },
+    "pt": {
+     "t": "Tradições de grelha",
+     "g": "Descobre como o fogo e as espetadas juntam as pessoas pelo mundo fora.",
+     "p": [
+      "O yakitori japonês são pequenas espetadas de frango grelhadas no carvão, com sal ou um molho doce.",
+      "O churrasco brasileiro serve cortes como a picanha, temperada só com sal grosso e cortada do espeto.",
+      "Os kebabs turcos e o satay do Sudeste Asiático mostram quantas culturas adoram comida no espeto."
+     ],
+     "q": "O que mais gostas de pôr na grelha: carne, peixe, legumes ou fruta?",
+     "c": "Enfia legumes ou tofu numa espetada, tempera só com sal e azeite, e grelha ou assa no forno."
+    },
+    "pt_BR": {
+     "t": "Tradições de grelha",
+     "g": "Descubra como o fogo e os espetos reúnem as pessoas ao redor do mundo.",
+     "p": [
+      "O yakitori japonês são espetinhos de frango grelhados no carvão, com sal ou um molho adocicado.",
+      "O churrasco brasileiro serve cortes como a picanha, temperada só com sal grosso e fatiada direto do espeto.",
+      "Os kebabs turcos e o satay do Sudeste Asiático mostram quantas culturas amam comida no espetinho."
+     ],
+     "q": "O que você mais gosta de colocar na grelha: carne, peixe, legumes ou frutas?",
+     "c": "Coloque legumes ou tofu num espetinho, tempere só com sal e azeite, e grelhe ou asse."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stews and slow cooking",
+     "g": "Learn how patience in a pot turns simple ingredients into deep flavour.",
+     "p": [
+      "Hungarian goulash is a beef and onion dish rich with sweet paprika.",
+      "Moroccan tagines and Texan chili con carne both simmer slowly to develop flavour.",
+      "French coq au vin is chicken braised slowly in red wine with mushrooms and onions."
+     ],
+     "q": "What stew or slow-cooked dish reminds you of a cosy day at home?",
+     "c": "Simmer onions, a vegetable and a spoon of paprika slowly for at least 30 minutes and taste the depth."
+    },
+    "de": {
+     "t": "Eintöpfe und Schmorgerichte",
+     "g": "Lerne, wie Geduld im Topf aus einfachen Zutaten tiefen Geschmack macht.",
+     "p": [
+      "Ungarisches Gulasch ist ein Gericht aus Rind und Zwiebeln mit viel edelsüßem Paprika.",
+      "Marokkanische Tajines und texanisches Chili con Carne köcheln beide langsam für vollen Geschmack.",
+      "Französisches Coq au Vin ist Huhn, langsam in Rotwein mit Pilzen und Zwiebeln geschmort."
+     ],
+     "q": "Welcher Eintopf oder welches Schmorgericht erinnert dich an einen gemütlichen Tag zu Hause?",
+     "c": "Lass Zwiebeln, ein Gemüse und einen Löffel Paprika mindestens 30 Minuten köcheln und schmecke die Tiefe."
+    },
+    "es": {
+     "t": "Guisos y cocina lenta",
+     "g": "Aprende cómo la paciencia en la olla convierte ingredientes sencillos en sabor profundo.",
+     "p": [
+      "El gulash húngaro es un plato de ternera y cebolla con mucho pimentón dulce.",
+      "Los tajines marroquíes y el chili con carne texano se cuecen a fuego lento para desarrollar sabor.",
+      "El coq au vin francés es pollo guisado lentamente en vino tinto con champiñones y cebollas."
+     ],
+     "q": "¿Qué guiso o plato de cocción lenta te recuerda un día acogedor en casa?",
+     "c": "Cuece a fuego lento cebolla, una verdura y una cucharada de pimentón al menos 30 minutos y nota la profundidad."
+    },
+    "fr": {
+     "t": "Ragoûts et cuisson lente",
+     "g": "Découvre comment la patience dans une cocotte transforme des ingrédients simples en saveurs profondes.",
+     "p": [
+      "Le goulash hongrois est un plat de bœuf et d'oignons riche en paprika doux.",
+      "Les tajines marocains et le chili con carne texan mijotent lentement pour développer leurs saveurs.",
+      "Le coq au vin français est un poulet braisé lentement au vin rouge avec champignons et petits oignons."
+     ],
+     "q": "Quel ragoût ou plat mijoté te rappelle une journée douillette à la maison ?",
+     "c": "Fais mijoter oignons, un légume et une cuillère de paprika au moins 30 minutes et goûte la profondeur."
+    },
+    "it": {
+     "t": "Stufati e cotture lente",
+     "g": "Scopri come la pazienza in pentola trasforma ingredienti semplici in sapori profondi.",
+     "p": [
+      "Il gulasch ungherese è un piatto di manzo e cipolle ricco di paprica dolce.",
+      "Le tajine marocchine e il chili con carne texano cuociono piano per sviluppare il sapore.",
+      "Il coq au vin francese è pollo brasato lentamente nel vino rosso con funghi e cipolline."
+     ],
+     "q": "Quale stufato o piatto a cottura lenta ti ricorda una giornata accogliente a casa?",
+     "c": "Fai sobbollire cipolle, una verdura e un cucchiaio di paprica per almeno 30 minuti e senti la profondità."
+    },
+    "pt": {
+     "t": "Guisados e cozinha lenta",
+     "g": "Aprende como a paciência no tacho transforma ingredientes simples em sabor profundo.",
+     "p": [
+      "O goulash húngaro é um prato de vaca e cebola rico em pimentão-doce.",
+      "As tajines marroquinas e o chili con carne do Texas cozinham devagar para desenvolver sabor.",
+      "O coq au vin francês é frango estufado lentamente em vinho tinto com cogumelos e cebolinhas."
+     ],
+     "q": "Que guisado ou prato de cozedura lenta te lembra um dia aconchegante em casa?",
+     "c": "Deixa cebola, um legume e uma colher de pimentão-doce a apurar pelo menos 30 minutos e prova a profundidade."
+    },
+    "pt_BR": {
+     "t": "Ensopados e cozimento lento",
+     "g": "Aprenda como a paciência na panela transforma ingredientes simples em sabor profundo.",
+     "p": [
+      "O goulash húngaro é um prato de carne bovina e cebola rico em páprica doce.",
+      "Os tajines marroquinos e o chili com carne do Texas cozinham devagar para desenvolver sabor.",
+      "O coq au vin francês é frango cozido lentamente no vinho tinto com cogumelos e cebolinhas."
+     ],
+     "q": "Qual ensopado ou prato de cozimento lento lembra um dia aconchegante em casa?",
+     "c": "Cozinhe devagar cebola, um legume e uma colher de páprica por pelo menos 30 minutos e prove a profundidade."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salads beyond lettuce",
+     "g": "Discover salads full of personality, from pounded papaya to bread and potato.",
+     "p": [
+      "Som tam is a green papaya salad pounded in a mortar with lime, chili, fish sauce and peanuts.",
+      "Fattoush mixes fresh vegetables with crispy toasted pita and tangy red sumac.",
+      "Caprese layers tomato, mozzarella and basil; Olivier salad combines potato, peas, pickles and mayonnaise."
+     ],
+     "q": "Do you think a salad can be a full, satisfying meal? What would yours contain?",
+     "c": "Make a salad without lettuce today, using at least one crunchy and one tangy ingredient."
+    },
+    "de": {
+     "t": "Salate jenseits von Blattsalat",
+     "g": "Entdecke Salate voller Persönlichkeit, von gestampfter Papaya bis zu Brot und Kartoffeln.",
+     "p": [
+      "Som Tam ist ein Salat aus grüner Papaya, im Mörser gestampft mit Limette, Chili, Fischsauce und Erdnüssen.",
+      "Fattoush mischt frisches Gemüse mit knusprig geröstetem Pitabrot und säuerlichem Sumach.",
+      "Caprese schichtet Tomate, Mozzarella und Basilikum; Olivier-Salat vereint Kartoffeln, Erbsen, Gurken und Mayonnaise."
+     ],
+     "q": "Kann ein Salat für dich eine vollwertige, sättigende Mahlzeit sein? Was wäre in deinem?",
+     "c": "Mach heute einen Salat ohne Blattsalat, mit mindestens einer knackigen und einer säuerlichen Zutat."
+    },
+    "es": {
+     "t": "Ensaladas más allá de la lechuga",
+     "g": "Descubre ensaladas con mucha personalidad, de la papaya machacada al pan y la patata.",
+     "p": [
+      "El som tam es una ensalada de papaya verde machacada en mortero con lima, chile, salsa de pescado y cacahuetes.",
+      "El fattoush mezcla verduras frescas con pan de pita tostado y crujiente y zumaque ácido.",
+      "La caprese alterna tomate, mozzarella y albahaca; la ensalada Olivier une patata, guisantes, pepinillos y mayonesa."
+     ],
+     "q": "¿Crees que una ensalada puede ser una comida completa? ¿Qué llevaría la tuya?",
+     "c": "Haz hoy una ensalada sin lechuga, con al menos un ingrediente crujiente y uno ácido."
+    },
+    "fr": {
+     "t": "Des salades au-delà de la laitue",
+     "g": "Découvre des salades pleines de caractère, de la papaye pilée au pain et à la pomme de terre.",
+     "p": [
+      "Le som tam est une salade de papaye verte pilée au mortier avec citron vert, piment, sauce de poisson et cacahuètes.",
+      "Le fattouch mêle légumes frais, pain pita grillé croustillant et sumac acidulé.",
+      "La caprese alterne tomate, mozzarella et basilic ; la salade Olivier réunit pomme de terre, petits pois, cornichons et mayonnaise."
+     ],
+     "q": "Penses-tu qu'une salade puisse être un vrai repas complet ? Que mettrais-tu dans la tienne ?",
+     "c": "Prépare aujourd'hui une salade sans laitue, avec au moins un ingrédient croquant et un acidulé."
+    },
+    "it": {
+     "t": "Insalate oltre la lattuga",
+     "g": "Scopri insalate piene di personalità, dalla papaya pestata al pane e alle patate.",
+     "p": [
+      "Il som tam è un'insalata di papaya verde pestata nel mortaio con lime, peperoncino, salsa di pesce e arachidi.",
+      "Il fattoush unisce verdure fresche, pane pita tostato e croccante e sommacco acidulo.",
+      "La caprese alterna pomodoro, mozzarella e basilico; l'insalata Olivier unisce patate, piselli, cetriolini e maionese."
+     ],
+     "q": "Pensi che un'insalata possa essere un pasto completo? Cosa metteresti nella tua?",
+     "c": "Prepara oggi un'insalata senza lattuga, con almeno un ingrediente croccante e uno acidulo."
+    },
+    "pt": {
+     "t": "Saladas além da alface",
+     "g": "Descobre saladas cheias de personalidade, da papaia pisada ao pão e à batata.",
+     "p": [
+      "O som tam é uma salada de papaia verde pisada no almofariz com lima, malagueta, molho de peixe e amendoim.",
+      "O fattoush mistura legumes frescos com pão pita torrado e estaladiço e sumagre ácido.",
+      "A caprese alterna tomate, mozzarella e manjericão; a salada Olivier junta batata, ervilhas, pickles e maionese."
+     ],
+     "q": "Achas que uma salada pode ser uma refeição completa? O que levaria a tua?",
+     "c": "Faz hoje uma salada sem alface, com pelo menos um ingrediente estaladiço e um ácido."
+    },
+    "pt_BR": {
+     "t": "Saladas além da alface",
+     "g": "Descubra saladas cheias de personalidade, do mamão verde socado ao pão e à batata.",
+     "p": [
+      "O som tam é uma salada de mamão verde socado no pilão com limão, pimenta, molho de peixe e amendoim.",
+      "O fattoush mistura legumes frescos com pão sírio torrado e crocante e sumagre azedinho.",
+      "A caprese alterna tomate, muçarela e manjericão; a salada Olivier, nossa maionese de batata, junta batata, ervilha, picles e maionese."
+     ],
+     "q": "Você acha que uma salada pode ser uma refeição completa? O que a sua levaria?",
+     "c": "Faça hoje uma salada sem alface, com pelo menos um ingrediente crocante e um azedinho."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sweet treats worldwide",
+     "g": "Take a quick dessert tour of the world, one sweet bite at a time.",
+     "p": [
+      "Baklava layers thin filo pastry with chopped nuts and soaks it in syrup or honey.",
+      "Japanese mochi is made from pounded sticky rice, soft and chewy, often filled with sweet bean paste.",
+      "Spanish churros are fried dough often dipped in thick hot chocolate; Indian gulab jamun float in rose syrup."
+     ],
+     "q": "Which dessert from this tour would you choose to finish a meal?",
+     "c": "Treat yourself to a dessert from another culture this week, or make a simple version at home."
+    },
+    "de": {
+     "t": "Süßes aus aller Welt",
+     "g": "Mach eine kleine Dessert-Weltreise, Bissen für Bissen.",
+     "p": [
+      "Baklava schichtet dünnen Filoteig mit gehackten Nüssen und tränkt ihn in Sirup oder Honig.",
+      "Japanisches Mochi wird aus gestampftem Klebreis gemacht, weich und zäh, oft mit süßer Bohnenpaste gefüllt.",
+      "Spanische Churros sind frittierter Teig, oft in dicke heiße Schokolade getaucht; indische Gulab Jamun schwimmen in Rosensirup."
+     ],
+     "q": "Welches Dessert dieser Reise würdest du zum Abschluss eines Essens wählen?",
+     "c": "Gönn dir diese Woche ein Dessert aus einer anderen Kultur oder mach eine einfache Version zu Hause."
+    },
+    "es": {
+     "t": "Dulces del mundo",
+     "g": "Haz un rápido viaje de postres por el mundo, bocado a bocado.",
+     "p": [
+      "El baklava alterna finas capas de masa filo con frutos secos picados y se empapa en almíbar o miel.",
+      "El mochi japonés se hace con arroz glutinoso machacado, suave y elástico, a menudo relleno de pasta dulce de judías.",
+      "Los churros españoles son masa frita que suele mojarse en chocolate espeso; los gulab jamun indios flotan en almíbar de rosas."
+     ],
+     "q": "¿Qué postre de este viaje elegirías para terminar una comida?",
+     "c": "Date el gusto de un postre de otra cultura esta semana, o prepara una versión sencilla en casa."
+    },
+    "fr": {
+     "t": "Douceurs du monde",
+     "g": "Fais un petit tour du monde des desserts, une bouchée sucrée à la fois.",
+     "p": [
+      "Le baklava superpose une fine pâte filo et des noix concassées, puis s'imbibe de sirop ou de miel.",
+      "Le mochi japonais est fait de riz gluant pilé, doux et élastique, souvent fourré de pâte de haricots sucrée.",
+      "Les churros espagnols se trempent souvent dans un chocolat chaud épais ; les gulab jamun indiens baignent dans un sirop à la rose."
+     ],
+     "q": "Quel dessert de ce tour choisirais-tu pour finir un repas ?",
+     "c": "Offre-toi cette semaine un dessert d'une autre culture, ou prépares-en une version simple chez toi."
+    },
+    "it": {
+     "t": "Dolci dal mondo",
+     "g": "Fai un rapido giro del mondo dei dessert, un morso dolce alla volta.",
+     "p": [
+      "La baklava alterna sottile pasta fillo e frutta secca tritata, poi si imbeve di sciroppo o miele.",
+      "Il mochi giapponese si fa con riso glutinoso pestato, morbido ed elastico, spesso ripieno di pasta dolce di fagioli.",
+      "I churros spagnoli sono pasta fritta spesso intinta in una densa cioccolata calda; i gulab jamun indiani galleggiano in sciroppo di rose."
+     ],
+     "q": "Quale dolce di questo giro sceglieresti per chiudere un pasto?",
+     "c": "Concediti questa settimana un dolce di un'altra cultura, o preparane una versione semplice a casa."
+    },
+    "pt": {
+     "t": "Doces do mundo",
+     "g": "Faz uma rápida volta ao mundo das sobremesas, uma dentada doce de cada vez.",
+     "p": [
+      "A baklava alterna massa filo fina com frutos secos picados e é embebida em calda ou mel.",
+      "O mochi japonês é feito de arroz glutinoso pisado, macio e elástico, muitas vezes recheado com pasta doce de feijão.",
+      "Os churros espanhóis são massa frita muitas vezes molhada em chocolate quente espesso; os gulab jamun indianos flutuam em calda de rosas."
+     ],
+     "q": "Que sobremesa desta volta escolherias para terminar uma refeição?",
+     "c": "Oferece-te esta semana uma sobremesa de outra cultura, ou faz uma versão simples em casa."
+    },
+    "pt_BR": {
+     "t": "Doces do mundo",
+     "g": "Faça uma rápida volta ao mundo das sobremesas, uma mordida doce de cada vez.",
+     "p": [
+      "O baklava alterna massa filo fina com nozes picadas e é embebido em calda ou mel.",
+      "O mochi japonês é feito de arroz glutinoso socado, macio e elástico, muitas vezes recheado com pasta doce de feijão.",
+      "Os churros espanhóis são massa frita muitas vezes mergulhada em chocolate quente grosso; os gulab jamun indianos boiam em calda de rosas."
+     ],
+     "q": "Qual sobremesa desta volta você escolheria para terminar uma refeição?",
+     "c": "Presenteie-se esta semana com uma sobremesa de outra cultura, ou faça uma versão simples em casa."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drinks that go with meals",
+     "g": "Meet non-alcoholic drinks that truly belong to their cuisines.",
+     "p": [
+      "Tea began in China and became central in places from India's spiced chai to Britain's afternoon cuppa.",
+      "Mate is a herbal infusion shared from a gourd with a metal straw in Argentina, Uruguay and Paraguay.",
+      "Lassi is a yogurt drink from India, sweet or salty; horchata is made from tiger nuts in Spain and rice in Mexico."
+     ],
+     "q": "Which drink do you always want next to your favourite meal?",
+     "c": "Blend plain yogurt with water, a pinch of salt or a little sugar, and try a simple homemade lassi."
+    },
+    "de": {
+     "t": "Getränke zum Essen",
+     "g": "Lerne alkoholfreie Getränke kennen, die fest zu ihren Küchen gehören.",
+     "p": [
+      "Tee stammt aus China und wurde vielerorts zentral, vom indischen Gewürz-Chai bis zur britischen Teestunde.",
+      "Mate ist ein Kräuteraufguss, der in Argentinien, Uruguay und Paraguay aus einem Kürbisgefäß mit Metallhalm geteilt wird.",
+      "Lassi ist ein indisches Joghurtgetränk, süß oder salzig; Horchata wird in Spanien aus Erdmandeln, in Mexiko aus Reis gemacht."
+     ],
+     "q": "Welches Getränk möchtest du immer neben deinem Lieblingsessen haben?",
+     "c": "Mixe Naturjoghurt mit Wasser und einer Prise Salz oder etwas Zucker und probiere einen einfachen Lassi."
+    },
+    "es": {
+     "t": "Bebidas que acompañan comidas",
+     "g": "Conoce bebidas sin alcohol que forman parte de sus cocinas.",
+     "p": [
+      "El té nació en China y se volvió esencial en lugares como India con su chai especiado o Gran Bretaña con su taza de la tarde.",
+      "El mate es una infusión de hierba que se comparte en una calabaza con bombilla en Argentina, Uruguay y Paraguay.",
+      "El lassi es una bebida india de yogur, dulce o salada; la horchata se hace con chufa en España y con arroz en México."
+     ],
+     "q": "¿Qué bebida quieres siempre junto a tu comida favorita?",
+     "c": "Bate yogur natural con agua y una pizca de sal o un poco de azúcar, y prueba un lassi casero sencillo."
+    },
+    "fr": {
+     "t": "Boissons qui accompagnent les repas",
+     "g": "Découvre des boissons sans alcool qui font vraiment partie de leurs cuisines.",
+     "p": [
+      "Le thé est né en Chine et est devenu central ailleurs, du chai épicé indien au thé de l'après-midi britannique.",
+      "Le maté est une infusion d'herbe partagée dans une calebasse avec une paille en métal en Argentine, Uruguay et Paraguay.",
+      "Le lassi est une boisson indienne au yaourt, sucrée ou salée ; l'horchata se fait au souchet en Espagne, au riz au Mexique."
+     ],
+     "q": "Quelle boisson veux-tu toujours à côté de ton plat préféré ?",
+     "c": "Mixe du yaourt nature avec de l'eau et une pincée de sel ou un peu de sucre, et goûte un lassi maison."
+    },
+    "it": {
+     "t": "Bevande che accompagnano i pasti",
+     "g": "Conosci bevande analcoliche che appartengono davvero alle loro cucine.",
+     "p": [
+      "Il tè è nato in Cina ed è diventato centrale altrove, dal chai speziato indiano al tè del pomeriggio britannico.",
+      "Il mate è un infuso d'erba condiviso da una zucca con una cannuccia di metallo in Argentina, Uruguay e Paraguay.",
+      "Il lassi è una bevanda indiana allo yogurt, dolce o salata; l'horchata si fa con zigolo dolce in Spagna e con riso in Messico."
+     ],
+     "q": "Quale bevanda vuoi sempre accanto al tuo piatto preferito?",
+     "c": "Frulla yogurt bianco con acqua e un pizzico di sale o un po' di zucchero, e prova un lassi fatto in casa."
+    },
+    "pt": {
+     "t": "Bebidas que acompanham refeições",
+     "g": "Conhece bebidas sem álcool que pertencem verdadeiramente às suas cozinhas.",
+     "p": [
+      "O chá nasceu na China e tornou-se central noutros lugares, do chai condimentado indiano ao chá da tarde britânico.",
+      "O mate é uma infusão de erva partilhada numa cabaça com bomba de metal na Argentina, no Uruguai e no Paraguai.",
+      "O lassi é uma bebida indiana de iogurte, doce ou salgada; a horchata faz-se com junça em Espanha e com arroz no México."
+     ],
+     "q": "Que bebida queres sempre ao lado da tua refeição preferida?",
+     "c": "Bate iogurte natural com água e uma pitada de sal ou um pouco de açúcar, e prova um lassi caseiro simples."
+    },
+    "pt_BR": {
+     "t": "Bebidas que acompanham refeições",
+     "g": "Conheça bebidas sem álcool que realmente pertencem às suas culinárias.",
+     "p": [
+      "O chá nasceu na China e virou essencial em outros lugares, do chai indiano com especiarias ao chá da tarde britânico.",
+      "O chimarrão é uma infusão de erva-mate tomada na cuia com bomba, compartilhada no Sul do Brasil, Argentina, Uruguai e Paraguai.",
+      "O lassi é uma bebida indiana de iogurte, doce ou salgada; a horchata é feita de chufa na Espanha e de arroz no México."
+     ],
+     "q": "Qual bebida você sempre quer ao lado da sua refeição favorita?",
+     "c": "Bata iogurte natural com água e uma pitada de sal ou um pouco de açúcar, e prove um lassi caseiro simples."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: dishes by type",
+     "g": "Compare the soups, breads, rice and noodle dishes you met from day 31 to day 59.",
+     "p": [
+      "We tasted the Americas, Europe, Africa, Asia and Oceania, from ceviche to bobotie and pavlova.",
+      "Then we compared dishes by type: breakfasts, soups, flatbreads, rice, noodles, dumplings and stews.",
+      "The same idea, like wrapping dough or grilling on skewers, appears again and again across cultures."
+     ],
+     "q": "Which dish type do you love most: soups, breads, rice, noodles, dumplings or sweets?",
+     "c": "Cook one dish type in two styles this week, like two soups or two rice dishes, and compare them."
+    },
+    "de": {
+     "t": "Rückblick: Gerichte nach Art",
+     "g": "Vergleiche die Suppen, Brote, Reis- und Nudelgerichte, die du von Tag 31 bis Tag 59 kennengelernt hast.",
+     "p": [
+      "Wir probierten Amerika, Europa, Afrika, Asien und Ozeanien, von Ceviche bis Bobotie und Pavlova.",
+      "Dann verglichen wir Gerichte nach Art: Frühstück, Suppen, Fladenbrote, Reis, Nudeln, Teigtaschen und Eintöpfe.",
+      "Dieselbe Idee, etwa Teig füllen oder am Spieß grillen, taucht in vielen Kulturen immer wieder auf."
+     ],
+     "q": "Welche Gerichtsart liebst du am meisten: Suppen, Brote, Reis, Nudeln, Teigtaschen oder Süßes?",
+     "c": "Koche diese Woche eine Gerichtsart in zwei Stilen, etwa zwei Suppen oder zwei Reisgerichte, und vergleiche."
+    },
+    "es": {
+     "t": "Repaso: platos por tipo",
+     "g": "Compara las sopas, panes, arroces y fideos que conociste del día 31 al día 59.",
+     "p": [
+      "Probamos América, Europa, África, Asia y Oceanía, del ceviche al bobotie y la pavlova.",
+      "Luego comparamos platos por tipo: desayunos, sopas, panes planos, arroces, fideos, dumplings y guisos.",
+      "La misma idea, como envolver masa o asar en brochetas, aparece una y otra vez en muchas culturas."
+     ],
+     "q": "¿Qué tipo de plato te encanta más: sopas, panes, arroces, fideos, dumplings o dulces?",
+     "c": "Cocina esta semana un tipo de plato en dos estilos, como dos sopas o dos arroces, y compáralos."
+    },
+    "fr": {
+     "t": "Bilan : les plats par type",
+     "g": "Compare les soupes, pains, plats de riz et de nouilles rencontrés du jour 31 au jour 59.",
+     "p": [
+      "Nous avons goûté les Amériques, l'Europe, l'Afrique, l'Asie et l'Océanie, du ceviche au bobotie et à la pavlova.",
+      "Puis nous avons comparé les plats par type : petits-déjeuners, soupes, pains plats, riz, nouilles, raviolis et ragoûts.",
+      "La même idée, comme farcir une pâte ou griller en brochette, revient sans cesse d'une culture à l'autre."
+     ],
+     "q": "Quel type de plat préfères-tu : soupes, pains, riz, nouilles, raviolis ou desserts ?",
+     "c": "Cuisine cette semaine un type de plat de deux façons, comme deux soupes ou deux riz, et compare-les."
+    },
+    "it": {
+     "t": "Ripasso: piatti per tipo",
+     "g": "Confronta zuppe, pani, piatti di riso e noodles incontrati dal giorno 31 al giorno 59.",
+     "p": [
+      "Abbiamo assaggiato Americhe, Europa, Africa, Asia e Oceania, dal ceviche al bobotie e alla pavlova.",
+      "Poi abbiamo confrontato i piatti per tipo: colazioni, zuppe, pani piatti, riso, noodles, ravioli e stufati.",
+      "La stessa idea, come avvolgere la pasta o grigliare sugli spiedini, ritorna in tante culture."
+     ],
+     "q": "Quale tipo di piatto ami di più: zuppe, pani, riso, noodles, ravioli o dolci?",
+     "c": "Cucina questa settimana un tipo di piatto in due stili, come due zuppe o due risi, e confrontali."
+    },
+    "pt": {
+     "t": "Revisão: pratos por tipo",
+     "g": "Compara as sopas, pães, pratos de arroz e de massa que conheceste do dia 31 ao dia 59.",
+     "p": [
+      "Provámos as Américas, a Europa, a África, a Ásia e a Oceânia, do ceviche ao bobotie e à pavlova.",
+      "Depois comparámos pratos por tipo: pequenos-almoços, sopas, pães achatados, arroz, massas, pastéis e guisados.",
+      "A mesma ideia, como rechear massa ou grelhar em espetadas, aparece vezes sem conta em muitas culturas."
+     ],
+     "q": "Que tipo de prato adoras mais: sopas, pães, arroz, massas, pastéis ou doces?",
+     "c": "Cozinha esta semana um tipo de prato em dois estilos, como duas sopas ou dois arrozes, e compara-os."
+    },
+    "pt_BR": {
+     "t": "Revisão: pratos por tipo",
+     "g": "Compare as sopas, pães, pratos de arroz e de macarrão que você conheceu do dia 31 ao dia 59.",
+     "p": [
+      "Provamos as Américas, a Europa, a África, a Ásia e a Oceania, do ceviche ao bobotie e à pavlova.",
+      "Depois comparamos pratos por tipo: cafés da manhã, sopas, pães achatados, arroz, macarrão, bolinhos e ensopados.",
+      "A mesma ideia, como rechear massa ou grelhar no espeto, aparece de novo e de novo em muitas culturas."
+     ],
+     "q": "Qual tipo de prato você mais ama: sopas, pães, arroz, macarrão, bolinhos ou doces?",
+     "c": "Cozinhe esta semana um tipo de prato em dois estilos, como duas sopas ou dois arrozes, e compare."
+    }
+   }
+  }
+ ]
+}

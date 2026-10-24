@@ -1,0 +1,835 @@
+{
+ "topic": "creative_writing",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flaws make heroes human",
+     "g": "See why imperfect characters are easier to love and more interesting to follow.",
+     "p": [
+      "Perfect characters feel distant; small flaws make readers recognise themselves.",
+      "Choose flaws that cause problems in the story, like impatience or stubbornness.",
+      "Let the character grow a little, so the flaw becomes part of their journey."
+     ],
+     "q": "Which flawed character in a book or film did you love the most?",
+     "c": "Give a brave hero one gentle flaw and write a short scene where it gets them into a funny mess."
+    },
+    "de": {
+     "t": "Schwächen machen Helden menschlich",
+     "g": "Erkenne, warum unvollkommene Figuren liebenswerter und spannender zu begleiten sind.",
+     "p": [
+      "Perfekte Figuren wirken fern, kleine Schwächen lassen Lesende sich wiedererkennen.",
+      "Wähle Schwächen, die in der Geschichte Probleme machen, etwa Ungeduld oder Sturheit.",
+      "Lass die Figur ein wenig wachsen, damit die Schwäche Teil ihres Weges wird."
+     ],
+     "q": "Welche Figur mit Schwächen aus einem Buch oder Film hast du am meisten geliebt?",
+     "c": "Gib einer mutigen Heldin eine sanfte Schwäche und schreib eine kurze Szene, in der sie dadurch in ein lustiges Chaos gerät."
+    },
+    "es": {
+     "t": "Los defectos humanizan al héroe",
+     "g": "Descubre por qué los personajes imperfectos son más fáciles de querer y de seguir.",
+     "p": [
+      "Los personajes perfectos se sienten lejanos; los pequeños defectos permiten reconocerse.",
+      "Elige defectos que causen problemas en la historia, como la impaciencia o la terquedad.",
+      "Deja que el personaje crezca un poco y que el defecto forme parte de su camino."
+     ],
+     "q": "¿Qué personaje con defectos de un libro o película te gustó más?",
+     "c": "Dale a una heroína valiente un defecto suave y escribe una escena corta donde la meta en un lío divertido."
+    },
+    "fr": {
+     "t": "Les défauts rendent les héros humains",
+     "g": "Comprends pourquoi les personnages imparfaits sont plus attachants et plus intéressants à suivre.",
+     "p": [
+      "Les personnages parfaits semblent lointains ; de petits défauts permettent de s'y reconnaître.",
+      "Choisis des défauts qui créent des problèmes, comme l'impatience ou l'entêtement.",
+      "Laisse le personnage grandir un peu, pour que le défaut fasse partie de son chemin."
+     ],
+     "q": "Quel personnage imparfait d'un livre ou d'un film as-tu le plus aimé ?",
+     "c": "Donne à une héroïne courageuse un petit défaut et écris une courte scène où il la met dans un pétrin amusant."
+    },
+    "it": {
+     "t": "I difetti rendono umani gli eroi",
+     "g": "Scopri perché i personaggi imperfetti sono più facili da amare e più interessanti da seguire.",
+     "p": [
+      "I personaggi perfetti sembrano lontani; piccoli difetti permettono di riconoscersi.",
+      "Scegli difetti che creano problemi nella storia, come l'impazienza o la testardaggine.",
+      "Lascia crescere un po' il personaggio, così il difetto diventa parte del suo cammino."
+     ],
+     "q": "Quale personaggio imperfetto di un libro o di un film hai amato di più?",
+     "c": "Dai a un'eroina coraggiosa un piccolo difetto e scrivi una breve scena in cui la mette in un pasticcio divertente."
+    },
+    "pt": {
+     "t": "Os defeitos tornam os heróis humanos",
+     "g": "Percebe porque as personagens imperfeitas são mais fáceis de amar e mais interessantes de seguir.",
+     "p": [
+      "As personagens perfeitas parecem distantes; pequenos defeitos deixam o leitor reconhecer-se.",
+      "Escolhe defeitos que causem problemas na história, como impaciência ou teimosia.",
+      "Deixa a personagem crescer um pouco, para que o defeito faça parte do seu caminho."
+     ],
+     "q": "Que personagem com defeitos de um livro ou filme mais adoraste?",
+     "c": "Dá a uma heroína corajosa um defeito suave e escreve uma cena curta em que ele a mete numa trapalhada divertida."
+    },
+    "pt_BR": {
+     "t": "Defeitos deixam heróis humanos",
+     "g": "Entenda por que personagens imperfeitos são mais fáceis de amar e mais interessantes de acompanhar.",
+     "p": [
+      "Personagens perfeitos parecem distantes; pequenos defeitos deixam o leitor se reconhecer.",
+      "Escolha defeitos que causem problemas na história, como impaciência ou teimosia.",
+      "Deixe o personagem crescer um pouco, para que o defeito vire parte da jornada."
+     ],
+     "q": "Qual personagem cheio de defeitos de um livro ou filme você mais amou?",
+     "c": "Dê a uma heroína corajosa um defeito leve e escreva uma cena curta em que ele a coloca numa confusão engraçada."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The supporting cast",
+     "g": "Create friends, mentors and rivals who help or challenge the main character.",
+     "p": [
+      "A friend offers support and lets the hero show warmth and humour.",
+      "A mentor shares wisdom or skills, then often steps back so the hero can grow.",
+      "A friendly rival pushes the hero to try harder and reveals their strengths."
+     ],
+     "q": "Who has been a mentor or a helpful rival in your own life?",
+     "c": "Write three short lines introducing a best friend, a mentor and a rival for your main character."
+    },
+    "de": {
+     "t": "Die Nebenfiguren",
+     "g": "Erschaffe Freunde, Mentoren und Rivalen, die der Hauptfigur helfen oder sie herausfordern.",
+     "p": [
+      "Ein Freund gibt Halt und lässt die Hauptfigur Wärme und Humor zeigen.",
+      "Ein Mentor teilt Wissen oder Können und tritt dann oft zurück, damit die Figur wachsen kann.",
+      "Ein freundlicher Rivale spornt die Hauptfigur an und zeigt ihre Stärken."
+     ],
+     "q": "Wer war in deinem Leben ein Mentor oder ein hilfreicher Rivale?",
+     "c": "Schreib drei kurze Zeilen, die einen besten Freund, einen Mentor und einen Rivalen deiner Hauptfigur vorstellen."
+    },
+    "es": {
+     "t": "Los personajes secundarios",
+     "g": "Crea amigos, mentores y rivales que ayuden o desafíen al protagonista.",
+     "p": [
+      "Un amigo ofrece apoyo y deja que el protagonista muestre calidez y humor.",
+      "Un mentor comparte sabiduría o habilidades y luego se aparta para que el héroe crezca.",
+      "Un rival amistoso empuja al protagonista a esforzarse y revela sus fortalezas."
+     ],
+     "q": "¿Quién ha sido un mentor o un rival útil en tu propia vida?",
+     "c": "Escribe tres líneas breves que presenten a un mejor amigo, un mentor y un rival de tu protagonista."
+    },
+    "fr": {
+     "t": "Les personnages secondaires",
+     "g": "Crée des amis, des mentors et des rivaux qui aident ou défient le personnage principal.",
+     "p": [
+      "Un ami soutient le héros et lui permet de montrer chaleur et humour.",
+      "Un mentor transmet un savoir, puis s'efface souvent pour que le héros grandisse.",
+      "Un rival amical pousse le héros à se dépasser et révèle ses forces."
+     ],
+     "q": "Qui a été un mentor ou un rival utile dans ta propre vie ?",
+     "c": "Écris trois courtes lignes présentant un meilleur ami, un mentor et un rival pour ton personnage principal."
+    },
+    "it": {
+     "t": "I personaggi secondari",
+     "g": "Crea amici, mentori e rivali che aiutano o mettono alla prova il protagonista.",
+     "p": [
+      "Un amico offre sostegno e permette al protagonista di mostrare calore e umorismo.",
+      "Un mentore trasmette saggezza o abilità, poi spesso si fa da parte perché l'eroe cresca.",
+      "Un rivale amichevole spinge il protagonista a impegnarsi e ne rivela i punti di forza."
+     ],
+     "q": "Chi è stato un mentore o un rivale utile nella tua vita?",
+     "c": "Scrivi tre brevi righe che presentino un migliore amico, un mentore e un rivale del tuo protagonista."
+    },
+    "pt": {
+     "t": "As personagens secundárias",
+     "g": "Cria amigos, mentores e rivais que ajudam ou desafiam a personagem principal.",
+     "p": [
+      "Um amigo dá apoio e deixa o protagonista mostrar calor e humor.",
+      "Um mentor partilha sabedoria ou técnicas e depois afasta-se para o herói crescer.",
+      "Um rival amigável empurra o protagonista a esforçar-se e revela as suas forças."
+     ],
+     "q": "Quem foi um mentor ou um rival útil na tua vida?",
+     "c": "Escreve três linhas curtas a apresentar um melhor amigo, um mentor e um rival da tua personagem principal."
+    },
+    "pt_BR": {
+     "t": "Os personagens coadjuvantes",
+     "g": "Crie amigos, mentores e rivais que ajudam ou desafiam o personagem principal.",
+     "p": [
+      "Um amigo dá apoio e deixa o protagonista mostrar carinho e humor.",
+      "Um mentor compartilha sabedoria ou habilidades e depois se afasta para o herói crescer.",
+      "Um rival amigável empurra o protagonista a se esforçar e revela suas forças."
+     ],
+     "q": "Quem foi um mentor ou um rival útil na sua vida?",
+     "c": "Escreva três linhas curtas apresentando um melhor amigo, um mentor e um rival do seu protagonista."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing an animal character",
+     "g": "Create memorable animal characters, realistic or talking, with clear personalities.",
+     "p": [
+      "Decide early: a realistic animal seen by humans, or a talking one with human thoughts.",
+      "Base the personality on real behaviour: a curious cat, a loyal dog, a busy squirrel.",
+      "Give the animal a want, just like any other character."
+     ],
+     "q": "Which animal, real or from a story, do you find the most charming?",
+     "c": "Write a 150-word scene from the point of view of a curious cat exploring a new home."
+    },
+    "de": {
+     "t": "Eine Tierfigur schreiben",
+     "g": "Erschaffe unvergessliche Tierfiguren, realistisch oder sprechend, mit klarer Persönlichkeit.",
+     "p": [
+      "Entscheide früh: ein realistisches Tier aus Menschensicht oder ein sprechendes mit menschlichen Gedanken.",
+      "Gründe die Persönlichkeit auf echtes Verhalten: neugierige Katze, treuer Hund, fleißiges Eichhörnchen.",
+      "Gib dem Tier einen Wunsch, wie jeder anderen Figur auch."
+     ],
+     "q": "Welches Tier, echt oder aus einer Geschichte, findest du am charmantesten?",
+     "c": "Schreib eine Szene von 150 Wörtern aus der Sicht einer neugierigen Katze, die ein neues Zuhause erkundet."
+    },
+    "es": {
+     "t": "Escribir un personaje animal",
+     "g": "Crea personajes animales memorables, realistas o parlantes, con una personalidad clara.",
+     "p": [
+      "Decide pronto: un animal realista visto por humanos o uno que habla y piensa como persona.",
+      "Basa su personalidad en conductas reales: un gato curioso, un perro fiel, una ardilla atareada.",
+      "Dale al animal un deseo, igual que a cualquier otro personaje."
+     ],
+     "q": "¿Qué animal, real o de un cuento, te parece más encantador?",
+     "c": "Escribe una escena de 150 palabras desde el punto de vista de un gato curioso que explora su nueva casa."
+    },
+    "fr": {
+     "t": "Écrire un personnage animal",
+     "g": "Crée des personnages animaux mémorables, réalistes ou parlants, à la personnalité nette.",
+     "p": [
+      "Décide tôt : un animal réaliste vu par des humains, ou un animal qui parle et pense comme nous.",
+      "Fonde sa personnalité sur de vrais comportements : chat curieux, chien fidèle, écureuil affairé.",
+      "Donne à l'animal un désir, comme à n'importe quel personnage."
+     ],
+     "q": "Quel animal, réel ou tiré d'une histoire, trouves-tu le plus charmant ?",
+     "c": "Écris une scène de 150 mots du point de vue d'un chat curieux qui explore sa nouvelle maison."
+    },
+    "it": {
+     "t": "Scrivere un personaggio animale",
+     "g": "Crea personaggi animali memorabili, realistici o parlanti, con una personalità chiara.",
+     "p": [
+      "Decidi presto: un animale realistico visto dagli umani o uno che parla e pensa come noi.",
+      "Basa la personalità su comportamenti veri: un gatto curioso, un cane fedele, uno scoiattolo indaffarato.",
+      "Dai all'animale un desiderio, come a qualsiasi altro personaggio."
+     ],
+     "q": "Quale animale, vero o di una storia, trovi più affascinante?",
+     "c": "Scrivi una scena di 150 parole dal punto di vista di un gatto curioso che esplora la sua nuova casa."
+    },
+    "pt": {
+     "t": "Escrever uma personagem animal",
+     "g": "Cria personagens animais memoráveis, realistas ou falantes, com personalidade clara.",
+     "p": [
+      "Decide cedo: um animal realista visto por humanos ou um que fala e pensa como pessoa.",
+      "Baseia a personalidade em comportamentos reais: um gato curioso, um cão fiel, um esquilo atarefado.",
+      "Dá ao animal um desejo, como a qualquer outra personagem."
+     ],
+     "q": "Que animal, real ou de uma história, achas mais encantador?",
+     "c": "Escreve uma cena de 150 palavras do ponto de vista de um gato curioso a explorar a nova casa."
+    },
+    "pt_BR": {
+     "t": "Escrever um personagem animal",
+     "g": "Crie personagens animais marcantes, realistas ou falantes, com personalidade clara.",
+     "p": [
+      "Decida cedo: um animal realista visto por humanos ou um que fala e pensa como gente.",
+      "Baseie a personalidade em comportamentos reais: um gato curioso, um cachorro fiel, um esquilo agitado.",
+      "Dê ao animal um desejo, como a qualquer outro personagem."
+     ],
+     "q": "Que animal, real ou de uma história, você acha mais encantador?",
+     "c": "Escreva uma cena de 150 palavras do ponto de vista de um gato curioso explorando a casa nova."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Character interview",
+     "g": "Ask your character twenty questions to discover their voice and secrets.",
+     "p": [
+      "Interview your character as if they were sitting across from you with a cup of tea.",
+      "Mix easy questions with surprising ones: 'What do you keep under your bed?'",
+      "Let them answer in their own voice; you may discover a secret you didn't plan."
+     ],
+     "q": "What question would you most like a character to ask you?",
+     "c": "Interview one of your characters with twenty questions and write their answers in the first person."
+    },
+    "de": {
+     "t": "Interview mit der Figur",
+     "g": "Stell deiner Figur zwanzig Fragen, um ihre Stimme und ihre Geheimnisse zu entdecken.",
+     "p": [
+      "Befrag deine Figur, als säße sie dir mit einer Tasse Tee gegenüber.",
+      "Mische leichte und überraschende Fragen: ‚Was bewahrst du unter deinem Bett auf?‘",
+      "Lass sie mit eigener Stimme antworten, vielleicht entdeckst du ein ungeplantes Geheimnis."
+     ],
+     "q": "Welche Frage würdest du dir am liebsten von einer Figur stellen lassen?",
+     "c": "Befrag eine deiner Figuren mit zwanzig Fragen und schreib ihre Antworten in der Ich-Form."
+    },
+    "es": {
+     "t": "Entrevista al personaje",
+     "g": "Hazle veinte preguntas a tu personaje para descubrir su voz y sus secretos.",
+     "p": [
+      "Entrevista a tu personaje como si estuviera frente a ti con una taza de té.",
+      "Mezcla preguntas fáciles con otras sorprendentes: «¿Qué guardas debajo de la cama?».",
+      "Deja que responda con su propia voz; quizá descubras un secreto que no habías planeado."
+     ],
+     "q": "¿Qué pregunta te gustaría que te hiciera un personaje?",
+     "c": "Entrevista a uno de tus personajes con veinte preguntas y escribe sus respuestas en primera persona."
+    },
+    "fr": {
+     "t": "L'interview du personnage",
+     "g": "Pose vingt questions à ton personnage pour découvrir sa voix et ses secrets.",
+     "p": [
+      "Interroge ton personnage comme s'il était assis en face de toi, une tasse de thé à la main.",
+      "Mélange questions simples et surprenantes : « Que caches-tu sous ton lit ? »",
+      "Laisse-le répondre avec sa propre voix ; tu découvriras peut-être un secret imprévu."
+     ],
+     "q": "Quelle question aimerais-tu qu'un personnage te pose ?",
+     "c": "Interviewe un de tes personnages avec vingt questions et écris ses réponses à la première personne."
+    },
+    "it": {
+     "t": "Intervista al personaggio",
+     "g": "Fai venti domande al tuo personaggio per scoprire la sua voce e i suoi segreti.",
+     "p": [
+      "Intervista il personaggio come se fosse seduto di fronte a te con una tazza di tè.",
+      "Alterna domande facili e sorprendenti: «Cosa tieni sotto il letto?».",
+      "Lascialo rispondere con la sua voce: potresti scoprire un segreto che non avevi previsto."
+     ],
+     "q": "Quale domanda ti piacerebbe che un personaggio ti facesse?",
+     "c": "Intervista uno dei tuoi personaggi con venti domande e scrivi le risposte in prima persona."
+    },
+    "pt": {
+     "t": "Entrevista à personagem",
+     "g": "Faz vinte perguntas à tua personagem para descobrir a sua voz e os seus segredos.",
+     "p": [
+      "Entrevista a personagem como se estivesse à tua frente com uma chávena de chá.",
+      "Mistura perguntas fáceis com outras surpreendentes: «O que guardas debaixo da cama?».",
+      "Deixa-a responder com a sua voz; talvez descubras um segredo que não tinhas planeado."
+     ],
+     "q": "Que pergunta gostavas que uma personagem te fizesse?",
+     "c": "Entrevista uma das tuas personagens com vinte perguntas e escreve as respostas na primeira pessoa."
+    },
+    "pt_BR": {
+     "t": "Entrevista com o personagem",
+     "g": "Faça vinte perguntas ao seu personagem para descobrir a voz e os segredos dele.",
+     "p": [
+      "Entreviste o personagem como se ele estivesse na sua frente com uma xícara de chá.",
+      "Misture perguntas fáceis com outras surpreendentes: «O que você guarda debaixo da cama?».",
+      "Deixe ele responder com a própria voz; talvez você descubra um segredo que não planejou."
+     ],
+     "q": "Que pergunta você gostaria que um personagem fizesse a você?",
+     "c": "Entreviste um dos seus personagens com vinte perguntas e escreva as respostas em primeira pessoa."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dialogue basics",
+     "g": "Learn how characters speak, why dialogue moves stories and how to punctuate it simply.",
+     "p": [
+      "Dialogue is not real talk: it keeps the flavour but cuts the ums and repetition.",
+      "Good dialogue moves the story, reveals character or adds tension, ideally all three.",
+      "Start a new paragraph for each new speaker and follow your language's punctuation rules."
+     ],
+     "q": "Whose way of speaking, in your life or in films, do you find most memorable?",
+     "c": "Write a ten-line conversation between two friends planning a picnic, with a new paragraph per speaker."
+    },
+    "de": {
+     "t": "Dialog-Grundlagen",
+     "g": "Lerne, wie Figuren sprechen, warum Dialog Geschichten bewegt und wie man ihn einfach zeichensetzt.",
+     "p": [
+      "Dialog ist kein echtes Gespräch: Er behält den Ton, streicht aber Ähs und Wiederholungen.",
+      "Guter Dialog treibt die Handlung, zeigt Charakter oder schafft Spannung, am besten alles.",
+      "Beginne für jede neue Sprecherin einen neuen Absatz und halte dich an die Anführungszeichen deiner Sprache."
+     ],
+     "q": "Wessen Sprechweise, im Leben oder im Film, findest du am einprägsamsten?",
+     "c": "Schreib ein Gespräch von zehn Zeilen zwischen zwei Freunden, die ein Picknick planen, mit neuem Absatz je Sprecher."
+    },
+    "es": {
+     "t": "Lo básico del diálogo",
+     "g": "Aprende cómo hablan los personajes, por qué el diálogo mueve la historia y cómo puntuarlo con sencillez.",
+     "p": [
+      "El diálogo no es una charla real: conserva el sabor pero quita muletillas y repeticiones.",
+      "Un buen diálogo hace avanzar la historia, revela carácter o añade tensión, mejor los tres.",
+      "Cambia de párrafo con cada personaje y usa la raya o las comillas según tu idioma."
+     ],
+     "q": "¿Qué forma de hablar, de tu vida o del cine, te parece más memorable?",
+     "c": "Escribe una conversación de diez líneas entre dos amigos que planean un picnic, con un párrafo por cada intervención."
+    },
+    "fr": {
+     "t": "Les bases du dialogue",
+     "g": "Apprends comment parlent les personnages, pourquoi le dialogue fait avancer l'histoire et comment le ponctuer.",
+     "p": [
+      "Le dialogue n'est pas une vraie conversation : il garde le ton mais coupe les euh et les redites.",
+      "Un bon dialogue fait avancer l'histoire, révèle un caractère ou crée une tension, idéalement les trois.",
+      "Va à la ligne à chaque nouvel interlocuteur et utilise tirets et guillemets selon l'usage français."
+     ],
+     "q": "Quelle façon de parler, dans ta vie ou au cinéma, trouves-tu la plus mémorable ?",
+     "c": "Écris une conversation de dix lignes entre deux amis qui préparent un pique-nique, à la ligne à chaque réplique."
+    },
+    "it": {
+     "t": "Le basi del dialogo",
+     "g": "Impara come parlano i personaggi, perché il dialogo muove la storia e come punteggiarlo in modo semplice.",
+     "p": [
+      "Il dialogo non è una chiacchierata reale: ne tiene il sapore ma toglie esitazioni e ripetizioni.",
+      "Un buon dialogo fa avanzare la storia, rivela il carattere o crea tensione, meglio tutte e tre.",
+      "Vai a capo per ogni nuovo interlocutore e usa caporali o lineette secondo l'uso italiano."
+     ],
+     "q": "Quale modo di parlare, nella vita o nei film, trovi più memorabile?",
+     "c": "Scrivi una conversazione di dieci righe tra due amici che organizzano un picnic, andando a capo a ogni battuta."
+    },
+    "pt": {
+     "t": "O básico do diálogo",
+     "g": "Aprende como falam as personagens, porque o diálogo faz andar a história e como pontuá-lo de forma simples.",
+     "p": [
+      "O diálogo não é conversa real: guarda o sabor mas corta hesitações e repetições.",
+      "Um bom diálogo faz avançar a história, revela carácter ou cria tensão, idealmente os três.",
+      "Muda de parágrafo a cada nova personagem e usa o travessão como manda o português."
+     ],
+     "q": "Que maneira de falar, na tua vida ou nos filmes, achas mais memorável?",
+     "c": "Escreve uma conversa de dez linhas entre dois amigos a planear um piquenique, com um parágrafo por fala."
+    },
+    "pt_BR": {
+     "t": "O básico do diálogo",
+     "g": "Aprenda como os personagens falam, por que o diálogo move a história e como pontuar de forma simples.",
+     "p": [
+      "Diálogo não é conversa real: guarda o sabor, mas corta hesitações e repetições.",
+      "Um bom diálogo faz a história andar, revela caráter ou cria tensão, de preferência os três.",
+      "Mude de parágrafo a cada novo personagem e use o travessão, como manda o português."
+     ],
+     "q": "Que jeito de falar, na sua vida ou nos filmes, você acha mais marcante?",
+     "c": "Escreva uma conversa de dez linhas entre dois amigos planejando um piquenique, com um parágrafo por fala."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Said is your friend",
+     "g": "Use simple tags like 'said' so readers stay focused on the words, not the tag.",
+     "p": [
+      "'Said' is almost invisible, so the reader's attention stays on the dialogue.",
+      "Fancy tags like 'exclaimed' or 'retorted' draw attention away and can feel forced.",
+      "When it's clear who is speaking, you can drop the tag completely."
+     ],
+     "q": "Have you noticed which dialogue tags your favourite authors use?",
+     "c": "Rewrite yesterday's picnic conversation using only 'said' or no tag at all, and notice the difference."
+    },
+    "de": {
+     "t": "‚Sagte‘ ist dein Freund",
+     "g": "Nutze einfache Begleitsätze wie ‚sagte‘, damit Lesende bei den Worten bleiben und nicht beim Verb.",
+     "p": [
+      "‚Sagte‘ ist fast unsichtbar, so bleibt die Aufmerksamkeit beim Dialog.",
+      "Ausgefallene Verben wie ‚rief aus‘ oder ‚konterte‘ lenken ab und wirken schnell gezwungen.",
+      "Wenn klar ist, wer spricht, kannst du den Begleitsatz ganz weglassen."
+     ],
+     "q": "Ist dir aufgefallen, welche Redebegleitsätze deine Lieblingsautoren verwenden?",
+     "c": "Schreib das Picknick-Gespräch von gestern nur mit ‚sagte‘ oder ganz ohne Begleitsatz neu und spür den Unterschied."
+    },
+    "es": {
+     "t": "«Dijo» es tu amigo",
+     "g": "Usa acotaciones sencillas como «dijo» para que el lector se centre en las palabras y no en el verbo.",
+     "p": [
+      "«Dijo» es casi invisible, así la atención se queda en el diálogo.",
+      "Verbos rebuscados como «exclamó» o «replicó» distraen y pueden sonar forzados.",
+      "Cuando está claro quién habla, puedes quitar la acotación por completo."
+     ],
+     "q": "¿Te has fijado en qué verbos de diálogo usan tus autores favoritos?",
+     "c": "Reescribe la conversación del picnic de ayer usando solo «dijo» o sin acotación y nota la diferencia."
+    },
+    "fr": {
+     "t": "« Dit » est ton ami",
+     "g": "Utilise des incises simples comme « dit » pour que le lecteur reste concentré sur les paroles.",
+     "p": [
+      "« Dit » est presque invisible : l'attention reste sur le dialogue.",
+      "Des verbes recherchés comme « s'exclama » ou « rétorqua » détournent l'attention et sonnent forcés.",
+      "Quand on sait qui parle, tu peux supprimer l'incise."
+     ],
+     "q": "As-tu remarqué quels verbes de parole utilisent tes auteurs préférés ?",
+     "c": "Réécris la conversation du pique-nique d'hier avec seulement « dit » ou sans incise, et observe la différence."
+    },
+    "it": {
+     "t": "«Disse» è tuo amico",
+     "g": "Usa verbi semplici come «disse» perché il lettore resti concentrato sulle parole e non sul verbo.",
+     "p": [
+      "«Disse» è quasi invisibile, così l'attenzione resta sul dialogo.",
+      "Verbi ricercati come «esclamò» o «ribatté» distraggono e possono suonare forzati.",
+      "Quando è chiaro chi parla, puoi eliminare del tutto il verbo."
+     ],
+     "q": "Hai notato quali verbi del dire usano i tuoi autori preferiti?",
+     "c": "Riscrivi la conversazione del picnic di ieri usando solo «disse» o nessun verbo, e nota la differenza."
+    },
+    "pt": {
+     "t": "«Disse» é teu amigo",
+     "g": "Usa verbos simples como «disse» para que o leitor se concentre nas palavras e não no verbo.",
+     "p": [
+      "«Disse» é quase invisível, por isso a atenção fica no diálogo.",
+      "Verbos rebuscados como «exclamou» ou «retorquiu» distraem e podem soar forçados.",
+      "Quando está claro quem fala, podes tirar o verbo de todo."
+     ],
+     "q": "Já reparaste nos verbos de fala que os teus autores preferidos usam?",
+     "c": "Reescreve a conversa do piquenique de ontem só com «disse» ou sem verbo e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "«Disse» é seu amigo",
+     "g": "Use verbos simples como «disse» para o leitor focar nas palavras e não no verbo.",
+     "p": [
+      "«Disse» é quase invisível, então a atenção fica no diálogo.",
+      "Verbos rebuscados como «exclamou» ou «retrucou» distraem e podem soar forçados.",
+      "Quando está claro quem fala, você pode tirar o verbo de vez."
+     ],
+     "q": "Você já reparou nos verbos de fala que seus autores favoritos usam?",
+     "c": "Reescreva a conversa do piquenique de ontem só com «disse» ou sem verbo e repare na diferença."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Action beats in dialogue",
+     "g": "Mix small actions with speech to show emotion and keep scenes moving.",
+     "p": [
+      "An action beat is a small gesture next to a line: 'She set down her cup.'",
+      "Beats show feelings the words hide, like a smile while saying 'I'm fine'.",
+      "Beats can replace tags: if someone acts, the reader knows who is speaking."
+     ],
+     "q": "What gesture do you make without thinking when you are happy or excited?",
+     "c": "Write a short dialogue of eight lines where at least four lines carry an action beat instead of a tag."
+    },
+    "de": {
+     "t": "Handlungsbeats im Dialog",
+     "g": "Mische kleine Handlungen mit Rede, um Gefühle zu zeigen und Szenen in Bewegung zu halten.",
+     "p": [
+      "Ein Handlungsbeat ist eine kleine Geste neben einer Zeile: ‚Sie stellte ihre Tasse ab.‘",
+      "Beats zeigen Gefühle, die Worte verbergen, etwa ein Lächeln bei ‚Alles gut‘.",
+      "Beats können Begleitsätze ersetzen: Wer handelt, spricht, das versteht man sofort."
+     ],
+     "q": "Welche Geste machst du unbewusst, wenn du glücklich oder aufgeregt bist?",
+     "c": "Schreib einen Dialog von acht Zeilen, in dem mindestens vier Zeilen einen Handlungsbeat statt eines Begleitsatzes haben."
+    },
+    "es": {
+     "t": "Acciones dentro del diálogo",
+     "g": "Mezcla pequeñas acciones con lo que se dice para mostrar emociones y dar ritmo a la escena.",
+     "p": [
+      "Una acción breve acompaña la frase: «Dejó la taza sobre la mesa».",
+      "Las acciones muestran lo que las palabras esconden, como sonreír al decir «estoy bien».",
+      "Pueden sustituir la acotación: si alguien actúa, el lector sabe quién habla."
+     ],
+     "q": "¿Qué gesto haces sin pensar cuando estás feliz o emocionado?",
+     "c": "Escribe un diálogo de ocho líneas donde al menos cuatro lleven una acción en lugar de un verbo de habla."
+    },
+    "fr": {
+     "t": "Les gestes dans le dialogue",
+     "g": "Mêle de petits gestes aux paroles pour montrer l'émotion et faire avancer la scène.",
+     "p": [
+      "Un geste accompagne la réplique : « Elle reposa sa tasse. »",
+      "Les gestes montrent ce que les mots cachent, comme sourire en disant « ça va ».",
+      "Ils peuvent remplacer l'incise : si quelqu'un agit, le lecteur sait qui parle."
+     ],
+     "q": "Quel geste fais-tu sans y penser quand tu es heureux ou enthousiaste ?",
+     "c": "Écris un dialogue de huit lignes où au moins quatre répliques portent un geste au lieu d'une incise."
+    },
+    "it": {
+     "t": "Azioni nel dialogo",
+     "g": "Mescola piccole azioni alle battute per mostrare emozioni e far scorrere la scena.",
+     "p": [
+      "Un'azione breve accompagna la battuta: «Posò la tazza sul tavolo».",
+      "Le azioni mostrano ciò che le parole nascondono, come sorridere dicendo «sto bene».",
+      "Possono sostituire il verbo del dire: se qualcuno agisce, il lettore sa chi parla."
+     ],
+     "q": "Quale gesto fai senza pensarci quando sei felice o emozionato?",
+     "c": "Scrivi un dialogo di otto righe in cui almeno quattro battute abbiano un'azione invece del verbo del dire."
+    },
+    "pt": {
+     "t": "Ações dentro do diálogo",
+     "g": "Mistura pequenas ações com as falas para mostrar emoções e manter a cena em movimento.",
+     "p": [
+      "Uma pequena ação acompanha a fala: «Pousou a chávena na mesa».",
+      "As ações mostram o que as palavras escondem, como sorrir ao dizer «está tudo bem».",
+      "Podem substituir o verbo de fala: se alguém age, o leitor sabe quem fala."
+     ],
+     "q": "Que gesto fazes sem pensar quando estás feliz ou entusiasmado?",
+     "c": "Escreve um diálogo de oito linhas em que pelo menos quatro falas tenham uma ação em vez de um verbo de fala."
+    },
+    "pt_BR": {
+     "t": "Ações dentro do diálogo",
+     "g": "Misture pequenas ações com as falas para mostrar emoções e manter a cena andando.",
+     "p": [
+      "Uma pequena ação acompanha a fala: «Ela pousou a xícara na mesa».",
+      "As ações mostram o que as palavras escondem, como sorrir dizendo «tá tudo bem».",
+      "Elas podem substituir o verbo de fala: se alguém age, o leitor sabe quem fala."
+     ],
+     "q": "Que gesto você faz sem pensar quando está feliz ou empolgado?",
+     "c": "Escreva um diálogo de oito linhas em que pelo menos quatro falas tenham uma ação em vez de verbo de fala."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving each voice its own sound",
+     "g": "Use word choice, rhythm and habits to make characters sound different.",
+     "p": [
+      "Word choice shows background: a scientist and a child describe rain differently.",
+      "Rhythm matters: one character speaks in short bursts, another in long, winding sentences.",
+      "A verbal habit, like a favourite expression, makes a voice instantly recognisable."
+     ],
+     "q": "Is there a favourite expression you or a friend use all the time?",
+     "c": "Write one line about the weather spoken by three characters: a grandmother, a teenager and a sailor."
+    },
+    "de": {
+     "t": "Jeder Stimme ihren Klang",
+     "g": "Nutze Wortwahl, Rhythmus und Gewohnheiten, damit Figuren unterschiedlich klingen.",
+     "p": [
+      "Wortwahl verrät Herkunft: Eine Forscherin und ein Kind beschreiben Regen verschieden.",
+      "Rhythmus zählt: Eine Figur spricht in kurzen Stößen, eine andere in langen, verschlungenen Sätzen.",
+      "Eine sprachliche Gewohnheit, etwa ein Lieblingsausdruck, macht eine Stimme sofort erkennbar."
+     ],
+     "q": "Gibt es einen Lieblingsausdruck, den du oder ein Freund ständig benutzt?",
+     "c": "Schreib einen Satz übers Wetter, gesprochen von drei Figuren: einer Großmutter, einem Teenager und einem Seemann."
+    },
+    "es": {
+     "t": "Una voz propia para cada uno",
+     "g": "Usa vocabulario, ritmo y hábitos para que los personajes suenen distintos.",
+     "p": [
+      "El vocabulario revela origen: una científica y un niño describen la lluvia de forma distinta.",
+      "El ritmo importa: uno habla a ráfagas cortas, otro con frases largas y sinuosas.",
+      "Una muletilla o expresión favorita hace que una voz se reconozca al instante."
+     ],
+     "q": "¿Hay alguna expresión favorita que tú o un amigo uséis todo el tiempo?",
+     "c": "Escribe una frase sobre el tiempo dicha por tres personajes: una abuela, un adolescente y un marinero."
+    },
+    "fr": {
+     "t": "À chaque voix sa musique",
+     "g": "Utilise le vocabulaire, le rythme et les tics de langage pour que les personnages sonnent différemment.",
+     "p": [
+      "Le vocabulaire trahit le parcours : une scientifique et un enfant décrivent la pluie autrement.",
+      "Le rythme compte : l'un parle par petites rafales, l'autre en longues phrases sinueuses.",
+      "Un tic de langage, comme une expression fétiche, rend une voix reconnaissable aussitôt."
+     ],
+     "q": "Y a-t-il une expression fétiche que toi ou un ami utilisez tout le temps ?",
+     "c": "Écris une phrase sur la météo dite par trois personnages : une grand-mère, un ado et un marin."
+    },
+    "it": {
+     "t": "A ogni voce il suo suono",
+     "g": "Usa lessico, ritmo e abitudini per far suonare diversi i personaggi.",
+     "p": [
+      "Il lessico rivela la provenienza: una scienziata e un bambino descrivono la pioggia in modo diverso.",
+      "Il ritmo conta: uno parla a raffiche brevi, un altro con frasi lunghe e tortuose.",
+      "Un'abitudine verbale, come un'espressione preferita, rende una voce subito riconoscibile."
+     ],
+     "q": "C'è un'espressione preferita che tu o un amico usate sempre?",
+     "c": "Scrivi una frase sul tempo detta da tre personaggi: una nonna, un adolescente e un marinaio."
+    },
+    "pt": {
+     "t": "Uma voz própria para cada um",
+     "g": "Usa vocabulário, ritmo e hábitos para que as personagens soem diferentes.",
+     "p": [
+      "O vocabulário revela origem: uma cientista e uma criança descrevem a chuva de forma diferente.",
+      "O ritmo conta: uma fala aos solavancos curtos, outra em frases longas e sinuosas.",
+      "Um hábito de fala, como uma expressão preferida, torna uma voz reconhecível de imediato."
+     ],
+     "q": "Há alguma expressão preferida que tu ou um amigo usem a toda a hora?",
+     "c": "Escreve uma frase sobre o tempo dita por três personagens: uma avó, um adolescente e um marinheiro."
+    },
+    "pt_BR": {
+     "t": "Uma voz própria para cada um",
+     "g": "Use vocabulário, ritmo e hábitos para que os personagens soem diferentes.",
+     "p": [
+      "O vocabulário revela origem: uma cientista e uma criança descrevem a chuva de jeitos diferentes.",
+      "O ritmo conta: um fala em frases curtinhas, outro em frases longas e cheias de voltas.",
+      "Um hábito de fala, como uma expressão favorita, deixa uma voz reconhecível na hora."
+     ],
+     "q": "Tem alguma expressão favorita que você ou um amigo usam o tempo todo?",
+     "c": "Escreva uma frase sobre o tempo dita por três personagens: uma avó, um adolescente e um marinheiro."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dialogue that reveals",
+     "g": "Use conversation to show relationships, hidden feelings and information.",
+     "p": [
+      "How people talk shows their relationship: old friends finish each other's sentences.",
+      "Subtext is what lies under the words: 'Nice weather' can mean 'I missed you'.",
+      "Share information naturally, as part of a goal, never as a speech for the reader."
+     ],
+     "q": "Have you ever said one thing while meaning something completely different?",
+     "c": "Write a short dialogue where two old friends meet again and their joy shows without either saying it."
+    },
+    "de": {
+     "t": "Dialog, der etwas verrät",
+     "g": "Nutze Gespräche, um Beziehungen, verborgene Gefühle und Informationen zu zeigen.",
+     "p": [
+      "Wie Menschen reden, zeigt ihre Beziehung: Alte Freunde beenden einander die Sätze.",
+      "Subtext liegt unter den Worten: ‚Schönes Wetter‘ kann ‚Ich habe dich vermisst‘ heißen.",
+      "Gib Informationen natürlich weiter, als Teil eines Ziels, nie als Vortrag für die Lesenden."
+     ],
+     "q": "Hast du schon einmal etwas gesagt und etwas ganz anderes gemeint?",
+     "c": "Schreib einen kurzen Dialog, in dem zwei alte Freunde sich wiedersehen und ihre Freude zeigen, ohne sie auszusprechen."
+    },
+    "es": {
+     "t": "El diálogo que revela",
+     "g": "Usa la conversación para mostrar relaciones, sentimientos ocultos e información.",
+     "p": [
+      "Cómo habla la gente muestra su relación: los viejos amigos terminan las frases del otro.",
+      "El subtexto vive bajo las palabras: «Qué buen día» puede significar «te eché de menos».",
+      "Da la información con naturalidad, como parte de un objetivo, nunca como un discurso al lector."
+     ],
+     "q": "¿Alguna vez dijiste una cosa queriendo decir otra muy distinta?",
+     "c": "Escribe un diálogo corto en el que dos viejos amigos se reencuentran y su alegría se nota sin que la digan."
+    },
+    "fr": {
+     "t": "Le dialogue qui révèle",
+     "g": "Utilise la conversation pour montrer les relations, les sentiments cachés et l'information.",
+     "p": [
+      "La façon de parler montre la relation : de vieux amis finissent les phrases l'un de l'autre.",
+      "Le sous-texte est sous les mots : « Il fait beau » peut vouloir dire « tu m'as manqué ».",
+      "Fais passer l'information naturellement, au service d'un but, jamais comme un exposé."
+     ],
+     "q": "As-tu déjà dit une chose en pensant tout autre chose ?",
+     "c": "Écris un court dialogue où deux vieux amis se retrouvent et où leur joie se voit sans qu'ils la disent."
+    },
+    "it": {
+     "t": "Il dialogo che rivela",
+     "g": "Usa la conversazione per mostrare relazioni, sentimenti nascosti e informazioni.",
+     "p": [
+      "Il modo di parlare mostra il legame: i vecchi amici finiscono le frasi l'uno dell'altro.",
+      "Il sottotesto sta sotto le parole: «Che bella giornata» può voler dire «mi sei mancato».",
+      "Dai le informazioni in modo naturale, al servizio di uno scopo, mai come un discorso al lettore."
+     ],
+     "q": "Ti è mai capitato di dire una cosa intendendone un'altra?",
+     "c": "Scrivi un breve dialogo in cui due vecchi amici si ritrovano e la loro gioia si vede senza che la dicano."
+    },
+    "pt": {
+     "t": "O diálogo que revela",
+     "g": "Usa a conversa para mostrar relações, sentimentos escondidos e informação.",
+     "p": [
+      "A forma de falar mostra a relação: velhos amigos acabam as frases um do outro.",
+      "O subtexto está por baixo das palavras: «Está um dia bonito» pode querer dizer «tive saudades».",
+      "Dá a informação com naturalidade, ao serviço de um objetivo, nunca como discurso ao leitor."
+     ],
+     "q": "Já disseste uma coisa querendo dizer outra completamente diferente?",
+     "c": "Escreve um diálogo curto em que dois velhos amigos se reencontram e a alegria se nota sem que a digam."
+    },
+    "pt_BR": {
+     "t": "O diálogo que revela",
+     "g": "Use a conversa para mostrar relações, sentimentos escondidos e informação.",
+     "p": [
+      "O jeito de falar mostra a relação: velhos amigos completam as frases um do outro.",
+      "O subtexto fica embaixo das palavras: «Que dia bonito» pode querer dizer «senti saudade».",
+      "Passe a informação com naturalidade, a serviço de um objetivo, nunca como discurso para o leitor."
+     ],
+     "q": "Você já disse uma coisa querendo dizer outra totalmente diferente?",
+     "c": "Escreva um diálogo curto em que dois velhos amigos se reencontram e a alegria aparece sem que eles digam."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cutting small talk",
+     "g": "Trim hellos and filler so dialogue gets to the interesting part fast.",
+     "p": [
+      "Real conversations start with greetings; good scenes usually start after them.",
+      "Enter the conversation late and leave it early, just after the key moment.",
+      "If a line doesn't reveal, move or entertain, it can probably go."
+     ],
+     "q": "Do you enjoy small talk in real life, or do you prefer deep conversations?",
+     "c": "Take a dialogue you wrote this week and cut every greeting and filler line; then read both versions aloud."
+    },
+    "de": {
+     "t": "Smalltalk streichen",
+     "g": "Kürze Begrüßungen und Füllsätze, damit der Dialog schnell zum spannenden Teil kommt.",
+     "p": [
+      "Echte Gespräche beginnen mit Begrüßungen, gute Szenen meist erst danach.",
+      "Steig spät ins Gespräch ein und verlass es früh, direkt nach dem Schlüsselmoment.",
+      "Wenn eine Zeile nichts verrät, nichts bewegt und nicht unterhält, kann sie wahrscheinlich weg."
+     ],
+     "q": "Magst du Smalltalk im echten Leben oder lieber tiefe Gespräche?",
+     "c": "Nimm einen Dialog dieser Woche, streich jede Begrüßung und Füllzeile und lies dann beide Fassungen laut."
+    },
+    "es": {
+     "t": "Recortar la charla de relleno",
+     "g": "Elimina saludos y relleno para que el diálogo llegue rápido a lo interesante.",
+     "p": [
+      "Las conversaciones reales empiezan con saludos; las buenas escenas suelen empezar después.",
+      "Entra tarde en la conversación y sal pronto, justo tras el momento clave.",
+      "Si una línea no revela, no mueve ni entretiene, probablemente sobra."
+     ],
+     "q": "¿Disfrutas de la charla trivial en la vida real o prefieres las conversaciones profundas?",
+     "c": "Toma un diálogo de esta semana, quita cada saludo y línea de relleno y lee ambas versiones en voz alta."
+    },
+    "fr": {
+     "t": "Couper les banalités",
+     "g": "Supprime bonjours et remplissage pour que le dialogue arrive vite au cœur du sujet.",
+     "p": [
+      "Les vraies conversations commencent par des salutations ; les bonnes scènes, souvent après.",
+      "Entre tard dans la conversation et sors-en tôt, juste après le moment clé.",
+      "Si une réplique ne révèle rien, ne fait pas avancer et n'amuse pas, elle peut partir."
+     ],
+     "q": "Aimes-tu les conversations légères dans la vie, ou préfères-tu les échanges profonds ?",
+     "c": "Prends un dialogue de cette semaine, coupe chaque salutation et réplique de remplissage, puis lis les deux versions à voix haute."
+    },
+    "it": {
+     "t": "Tagliare i convenevoli",
+     "g": "Elimina saluti e riempitivi perché il dialogo arrivi presto alla parte interessante.",
+     "p": [
+      "Le conversazioni vere iniziano con i saluti; le buone scene di solito iniziano dopo.",
+      "Entra tardi nella conversazione ed esci presto, subito dopo il momento chiave.",
+      "Se una battuta non rivela, non fa avanzare e non diverte, probabilmente si può togliere."
+     ],
+     "q": "Ti piacciono le chiacchiere leggere nella vita o preferisci le conversazioni profonde?",
+     "c": "Prendi un dialogo di questa settimana, togli ogni saluto e riempitivo, poi leggi ad alta voce le due versioni."
+    },
+    "pt": {
+     "t": "Cortar a conversa de circunstância",
+     "g": "Corta cumprimentos e enchimento para que o diálogo chegue depressa à parte interessante.",
+     "p": [
+      "As conversas reais começam com cumprimentos; as boas cenas costumam começar depois.",
+      "Entra tarde na conversa e sai cedo, logo após o momento-chave.",
+      "Se uma fala não revela, não faz avançar nem diverte, provavelmente pode sair."
+     ],
+     "q": "Gostas de conversa de circunstância na vida real ou preferes conversas profundas?",
+     "c": "Pega num diálogo desta semana, corta todos os cumprimentos e falas de enchimento e lê as duas versões em voz alta."
+    },
+    "pt_BR": {
+     "t": "Cortar o papo furado",
+     "g": "Corte cumprimentos e enrolação para o diálogo chegar rápido à parte interessante.",
+     "p": [
+      "Conversas reais começam com cumprimentos; boas cenas costumam começar depois deles.",
+      "Entre tarde na conversa e saia cedo, logo depois do momento-chave.",
+      "Se uma fala não revela, não faz andar nem diverte, provavelmente pode sair."
+     ],
+     "q": "Você curte papo leve na vida real ou prefere conversas profundas?",
+     "c": "Pegue um diálogo desta semana, corte todo cumprimento e fala de enrolação e leia as duas versões em voz alta."
+    }
+   }
+  }
+ ]
+}

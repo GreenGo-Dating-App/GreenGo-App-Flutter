@@ -1,0 +1,835 @@
+{
+ "topic": "design",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Font pairing",
+     "g": "Combine two typefaces that contrast clearly while still feeling related.",
+     "p": [
+      "A classic pairing is a serif for headings with a sans serif for body text, or the reverse.",
+      "Pair fonts with clear contrast; two very similar fonts look like a mistake.",
+      "Look for shared traits, like similar proportions or x-height, so the pair feels like a team."
+     ],
+     "q": "Do you notice when a website or magazine uses more than two fonts?",
+     "c": "Pick one heading font and test it with three body fonts on the same short text; choose the best pair and say why."
+    },
+    "de": {
+     "t": "Schriften kombinieren",
+     "g": "Zwei Schriften verbinden, die klar kontrastieren und trotzdem zusammenpassen.",
+     "p": [
+      "Eine klassische Kombination ist eine Serifenschrift für Überschriften mit einer serifenlosen für Fließtext oder umgekehrt.",
+      "Kombiniere Schriften mit deutlichem Kontrast; zwei sehr ähnliche Schriften wirken wie ein Versehen.",
+      "Such gemeinsame Merkmale wie ähnliche Proportionen oder x-Höhe, damit das Paar wie ein Team wirkt."
+     ],
+     "q": "Bemerkst du, wenn eine Website oder Zeitschrift mehr als zwei Schriften nutzt?",
+     "c": "Teste eine Überschriftenschrift mit drei Textschriften am gleichen kurzen Text; wähl das beste Paar und begründe es."
+    },
+    "es": {
+     "t": "Combinar tipografías",
+     "g": "Unir dos tipografías que contrasten con claridad y a la vez se sientan relacionadas.",
+     "p": [
+      "Una combinación clásica es serifa para títulos y sin serifa para el texto, o al revés.",
+      "Combina fuentes con contraste claro; dos fuentes muy parecidas parecen un error.",
+      "Busca rasgos comunes, como proporciones o altura de x parecidas, para que formen equipo."
+     ],
+     "q": "¿Notas cuando una web o revista usa más de dos fuentes?",
+     "c": "Elige una fuente para títulos y pruébala con tres de texto sobre el mismo párrafo; elige el mejor par y explica por qué."
+    },
+    "fr": {
+     "t": "Associer des polices",
+     "g": "Combiner deux caractères nettement contrastés qui semblent pourtant liés.",
+     "p": [
+      "Une association classique : un caractère à empattements pour les titres et un sans empattements pour le texte, ou l'inverse.",
+      "Associe des polices bien contrastées ; deux polices trop proches ressemblent à une erreur.",
+      "Cherche des traits communs, comme des proportions ou une hauteur d'x proches, pour former une équipe."
+     ],
+     "q": "Remarques-tu quand un site ou un magazine utilise plus de deux polices ?",
+     "c": "Choisis une police de titre et teste-la avec trois polices de texte sur le même paragraphe ; garde la meilleure paire."
+    },
+    "it": {
+     "t": "Abbinare i caratteri",
+     "g": "Unire due caratteri che contrastano chiaramente ma sembrano comunque legati.",
+     "p": [
+      "Un abbinamento classico è un graziato per i titoli con un senza grazie per il testo, o viceversa.",
+      "Abbina caratteri con contrasto netto; due caratteri molto simili sembrano un errore.",
+      "Cerca tratti comuni, come proporzioni o altezza della x simili, perché la coppia sembri una squadra."
+     ],
+     "q": "Ti accorgi quando un sito o una rivista usa più di due caratteri?",
+     "c": "Scegli un carattere per i titoli e provalo con tre caratteri da testo sullo stesso paragrafo; scegli la coppia migliore e spiega perché."
+    },
+    "pt": {
+     "t": "Combinar tipos de letra",
+     "g": "Juntar dois tipos de letra com contraste claro que, ainda assim, pareçam ligados.",
+     "p": [
+      "Uma combinação clássica é uma letra com serifa nos títulos e sem serifa no texto, ou o contrário.",
+      "Combina letras com contraste claro; duas muito parecidas parecem um engano.",
+      "Procura traços comuns, como proporções ou altura de x semelhantes, para o par parecer uma equipa."
+     ],
+     "q": "Reparas quando um site ou revista usa mais de duas fontes?",
+     "c": "Escolhe uma letra para títulos e testa-a com três letras de texto no mesmo parágrafo; escolhe o melhor par e diz porquê."
+    },
+    "pt_BR": {
+     "t": "Combinação de fontes",
+     "g": "Juntar duas fontes com contraste claro que ainda pareçam da mesma turma.",
+     "p": [
+      "Uma combinação clássica é serifa nos títulos com sem serifa no texto, ou o contrário.",
+      "Combine fontes com contraste claro; duas muito parecidas parecem um erro.",
+      "Procure traços em comum, como proporções ou altura-x parecidas, para a dupla parecer um time."
+     ],
+     "q": "Você percebe quando um site ou revista usa mais de duas fontes?",
+     "c": "Escolha uma fonte de título e teste com três fontes de texto no mesmo parágrafo; escolha a melhor dupla e diga por quê."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Type hierarchy",
+     "g": "Use size, weight and style to show headings, subheadings and body text.",
+     "p": [
+      "Clear levels help readers scan: a big heading, a medium subheading, then comfortable body text.",
+      "You can build levels with size, weight, colour, capitals or space, but use only a few at once.",
+      "Two or three levels are usually enough; too many make the page feel noisy."
+     ],
+     "q": "When you skim a long article, what helps you find the part you need?",
+     "c": "Take a plain block of text, like a recipe, and style it with a title, two subheadings and body text."
+    },
+    "de": {
+     "t": "Typografische Hierarchie",
+     "g": "Mit Größe, Stärke und Stil Überschriften, Zwischentitel und Fließtext zeigen.",
+     "p": [
+      "Klare Ebenen helfen beim Überfliegen: große Überschrift, mittlerer Zwischentitel, dann angenehmer Fließtext.",
+      "Ebenen entstehen durch Größe, Stärke, Farbe, Versalien oder Abstand, nutze aber nur wenige gleichzeitig.",
+      "Zwei oder drei Ebenen reichen meist; zu viele lassen die Seite unruhig wirken."
+     ],
+     "q": "Was hilft dir beim Überfliegen eines langen Artikels, die richtige Stelle zu finden?",
+     "c": "Nimm einen schlichten Textblock, etwa ein Rezept, und gestalte ihn mit Titel, zwei Zwischentiteln und Fließtext."
+    },
+    "es": {
+     "t": "Jerarquía tipográfica",
+     "g": "Usar tamaño, grosor y estilo para distinguir títulos, subtítulos y texto.",
+     "p": [
+      "Niveles claros ayudan a escanear: título grande, subtítulo mediano y texto cómodo de leer.",
+      "Puedes crear niveles con tamaño, grosor, color, mayúsculas o espacio, pero usa pocos a la vez.",
+      "Dos o tres niveles suelen bastar; demasiados hacen que la página parezca ruidosa."
+     ],
+     "q": "Cuando hojeas un artículo largo, ¿qué te ayuda a encontrar la parte que buscas?",
+     "c": "Toma un bloque de texto simple, como una receta, y dale un título, dos subtítulos y texto normal."
+    },
+    "fr": {
+     "t": "Hiérarchie typographique",
+     "g": "Utiliser taille, graisse et style pour distinguer titres, intertitres et texte courant.",
+     "p": [
+      "Des niveaux nets aident à parcourir : grand titre, intertitre moyen, puis texte confortable.",
+      "On crée des niveaux par la taille, la graisse, la couleur, les capitales ou l'espace, mais peu à la fois.",
+      "Deux ou trois niveaux suffisent souvent ; trop de niveaux rendent la page bruyante."
+     ],
+     "q": "Quand tu survoles un long article, qu'est-ce qui t'aide à trouver le passage voulu ?",
+     "c": "Prends un bloc de texte brut, comme une recette, et mets-le en forme avec un titre, deux intertitres et du texte."
+    },
+    "it": {
+     "t": "Gerarchia tipografica",
+     "g": "Usare dimensione, peso e stile per distinguere titoli, sottotitoli e testo.",
+     "p": [
+      "Livelli chiari aiutano a scorrere: titolo grande, sottotitolo medio, poi testo comodo da leggere.",
+      "Puoi creare livelli con dimensione, peso, colore, maiuscole o spazio, ma usane pochi alla volta.",
+      "Due o tre livelli di solito bastano; troppi rendono la pagina rumorosa."
+     ],
+     "q": "Quando scorri un articolo lungo, cosa ti aiuta a trovare la parte che ti serve?",
+     "c": "Prendi un blocco di testo semplice, come una ricetta, e impaginalo con un titolo, due sottotitoli e il testo."
+    },
+    "pt": {
+     "t": "Hierarquia tipográfica",
+     "g": "Usar tamanho, peso e estilo para distinguir títulos, subtítulos e texto corrido.",
+     "p": [
+      "Níveis claros ajudam a percorrer: título grande, subtítulo médio e texto confortável de ler.",
+      "Podes criar níveis com tamanho, peso, cor, maiúsculas ou espaço, mas usa poucos de cada vez.",
+      "Dois ou três níveis costumam chegar; demasiados tornam a página ruidosa."
+     ],
+     "q": "Quando passas os olhos por um artigo longo, o que te ajuda a encontrar a parte que queres?",
+     "c": "Pega num bloco de texto simples, como uma receita, e formata-o com um título, dois subtítulos e texto."
+    },
+    "pt_BR": {
+     "t": "Hierarquia tipográfica",
+     "g": "Usar tamanho, peso e estilo para diferenciar títulos, subtítulos e texto corrido.",
+     "p": [
+      "Níveis claros ajudam a escanear: título grande, subtítulo médio e texto confortável de ler.",
+      "Você pode criar níveis com tamanho, peso, cor, maiúsculas ou espaço, mas use poucos de cada vez.",
+      "Dois ou três níveis costumam bastar; muitos deixam a página barulhenta."
+     ],
+     "q": "Quando você passa o olho por um artigo longo, o que ajuda a achar a parte que precisa?",
+     "c": "Pegue um bloco de texto simples, como uma receita, e formate com um título, dois subtítulos e texto."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Line length and readability",
+     "g": "Choose comfortable line lengths that make long texts easy to read.",
+     "p": [
+      "A common guide for body text is about 45 to 75 characters per line, including spaces.",
+      "Very long lines make the eye lose its place when jumping to the next line.",
+      "Very short lines break the reading rhythm and create choppy, tiring text."
+     ],
+     "q": "Do you find wide pages of text or narrow columns easier to read?",
+     "c": "Count the characters in one line of a book, a newspaper and a website, and compare which feels most comfortable."
+    },
+    "de": {
+     "t": "Zeilenlänge und Lesbarkeit",
+     "g": "Angenehme Zeilenlängen wählen, damit lange Texte leicht zu lesen sind.",
+     "p": [
+      "Eine verbreitete Richtlinie für Fließtext sind etwa 45 bis 75 Zeichen pro Zeile, Leerzeichen eingeschlossen.",
+      "Sehr lange Zeilen lassen das Auge beim Sprung zur nächsten Zeile den Anschluss verlieren.",
+      "Sehr kurze Zeilen brechen den Leserhythmus und machen den Text abgehackt und ermüdend."
+     ],
+     "q": "Liest du lieber breite Textseiten oder schmale Spalten?",
+     "c": "Zähl die Zeichen einer Zeile in einem Buch, einer Zeitung und auf einer Website und vergleiche, was am angenehmsten ist."
+    },
+    "es": {
+     "t": "Longitud de línea y lectura",
+     "g": "Elegir longitudes de línea cómodas para que los textos largos se lean con facilidad.",
+     "p": [
+      "Una guía común para el texto es de unos 45 a 75 caracteres por línea, espacios incluidos.",
+      "Las líneas muy largas hacen que la vista se pierda al saltar a la siguiente.",
+      "Las líneas muy cortas rompen el ritmo y crean un texto entrecortado y cansado."
+     ],
+     "q": "¿Te resulta más fácil leer páginas anchas o columnas estrechas?",
+     "c": "Cuenta los caracteres de una línea en un libro, un periódico y una web, y compara cuál resulta más cómoda."
+    },
+    "fr": {
+     "t": "Longueur de ligne et lisibilité",
+     "g": "Choisir des longueurs de ligne confortables pour lire facilement les longs textes.",
+     "p": [
+      "Un repère courant pour le texte courant est d'environ 45 à 75 signes par ligne, espaces compris.",
+      "Des lignes très longues font perdre la place à l'œil quand il saute à la ligne suivante.",
+      "Des lignes très courtes cassent le rythme et rendent le texte haché et fatigant."
+     ],
+     "q": "Trouves-tu plus facile de lire de larges pages de texte ou des colonnes étroites ?",
+     "c": "Compte les signes d'une ligne dans un livre, un journal et un site, et compare lequel est le plus confortable."
+    },
+    "it": {
+     "t": "Lunghezza della riga e lettura",
+     "g": "Scegliere lunghezze di riga comode perché i testi lunghi si leggano facilmente.",
+     "p": [
+      "Una guida comune per il testo è di circa 45-75 caratteri per riga, spazi inclusi.",
+      "Righe molto lunghe fanno perdere il segno all'occhio quando salta alla riga successiva.",
+      "Righe molto corte spezzano il ritmo e rendono il testo frammentato e faticoso."
+     ],
+     "q": "Trovi più facile leggere pagine larghe o colonne strette?",
+     "c": "Conta i caratteri di una riga in un libro, un giornale e un sito, e confronta quale risulta più comoda."
+    },
+    "pt": {
+     "t": "Comprimento de linha e leitura",
+     "g": "Escolher comprimentos de linha confortáveis para que textos longos se leiam com facilidade.",
+     "p": [
+      "Um guia comum para texto corrido é de cerca de 45 a 75 caracteres por linha, com espaços.",
+      "Linhas muito longas fazem o olhar perder-se ao saltar para a linha seguinte.",
+      "Linhas muito curtas quebram o ritmo e criam um texto aos solavancos e cansativo."
+     ],
+     "q": "Achas mais fácil ler páginas largas de texto ou colunas estreitas?",
+     "c": "Conta os caracteres de uma linha num livro, num jornal e num site, e compara qual é mais confortável."
+    },
+    "pt_BR": {
+     "t": "Comprimento de linha e leitura",
+     "g": "Escolher comprimentos de linha confortáveis para textos longos serem fáceis de ler.",
+     "p": [
+      "Um guia comum para texto corrido é de cerca de 45 a 75 caracteres por linha, contando espaços.",
+      "Linhas muito longas fazem o olho se perder ao pular para a linha seguinte.",
+      "Linhas muito curtas quebram o ritmo e deixam o texto picado e cansativo."
+     ],
+     "q": "Você acha mais fácil ler páginas largas de texto ou colunas estreitas?",
+     "c": "Conte os caracteres de uma linha em um livro, um jornal e um site, e compare qual é mais confortável."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Line spacing (leading)",
+     "g": "See how the space between lines affects comfort and density.",
+     "p": [
+      "Leading is the vertical distance from one baseline to the next; the name comes from strips of lead in old printing.",
+      "Body text often reads well with leading around 1.4 to 1.6 times the font size.",
+      "Headlines can be set tighter, while long lines and small text need more space."
+     ],
+     "q": "Does dense text make you want to skip it?",
+     "c": "Write the same paragraph three times with tight, medium and loose line spacing and pick the most comfortable."
+    },
+    "de": {
+     "t": "Zeilenabstand",
+     "g": "Verstehen, wie der Raum zwischen den Zeilen Komfort und Dichte beeinflusst.",
+     "p": [
+      "Der Zeilenabstand ist der Abstand von Grundlinie zu Grundlinie; im Englischen heißt er leading, nach Bleistreifen im alten Buchdruck.",
+      "Fließtext liest sich oft gut mit etwa dem 1,4- bis 1,6-Fachen der Schriftgröße.",
+      "Überschriften dürfen enger stehen, lange Zeilen und kleine Schrift brauchen mehr Raum."
+     ],
+     "q": "Hast du bei sehr dichtem Text Lust, ihn zu überspringen?",
+     "c": "Setz denselben Absatz dreimal, eng, mittel und weit, und wähl den angenehmsten."
+    },
+    "es": {
+     "t": "Interlineado",
+     "g": "Ver cómo el espacio entre líneas afecta a la comodidad y la densidad.",
+     "p": [
+      "El interlineado es la distancia entre una línea base y la siguiente; en inglés se llama leading por las tiras de plomo de la imprenta.",
+      "El texto suele leerse bien con un interlineado de 1,4 a 1,6 veces el tamaño de la letra.",
+      "Los titulares pueden ir más apretados; las líneas largas y la letra pequeña necesitan más aire."
+     ],
+     "q": "¿El texto muy denso te da ganas de saltártelo?",
+     "c": "Escribe el mismo párrafo tres veces con interlineado estrecho, medio y amplio y elige el más cómodo."
+    },
+    "fr": {
+     "t": "L'interlignage",
+     "g": "Voir comment l'espace entre les lignes influence le confort et la densité.",
+     "p": [
+      "L'interlignage est la distance d'une ligne de base à la suivante ; il vient des lamelles de plomb de l'imprimerie.",
+      "Le texte courant se lit souvent bien avec un interlignage d'environ 1,4 à 1,6 fois la taille du corps.",
+      "Les titres peuvent être plus serrés ; les longues lignes et les petits corps demandent plus d'air."
+     ],
+     "q": "Un texte très dense te donne-t-il envie de le sauter ?",
+     "c": "Compose le même paragraphe trois fois, interlignage serré, moyen et large, et choisis le plus confortable."
+    },
+    "it": {
+     "t": "L'interlinea",
+     "g": "Vedere come lo spazio tra le righe influisce su comfort e densità.",
+     "p": [
+      "L'interlinea è la distanza da una linea di base alla successiva; in inglese leading, dalle strisce di piombo della stampa antica.",
+      "Il testo si legge spesso bene con un'interlinea di circa 1,4-1,6 volte la dimensione del carattere.",
+      "I titoli possono essere più stretti; righe lunghe e testo piccolo chiedono più spazio."
+     ],
+     "q": "Un testo molto fitto ti fa venire voglia di saltarlo?",
+     "c": "Scrivi lo stesso paragrafo tre volte con interlinea stretta, media e ampia e scegli la più comoda."
+    },
+    "pt": {
+     "t": "Entrelinha",
+     "g": "Ver como o espaço entre linhas afeta o conforto e a densidade.",
+     "p": [
+      "A entrelinha é a distância de uma linha de base à seguinte; em inglês chama-se leading, das tiras de chumbo da tipografia antiga.",
+      "O texto corrido lê-se bem, muitas vezes, com uma entrelinha de 1,4 a 1,6 vezes o tamanho da letra.",
+      "Os títulos podem ser mais apertados; linhas longas e letra pequena precisam de mais espaço."
+     ],
+     "q": "Texto muito denso dá-te vontade de o saltar?",
+     "c": "Escreve o mesmo parágrafo três vezes com entrelinha apertada, média e larga e escolhe a mais confortável."
+    },
+    "pt_BR": {
+     "t": "Entrelinha",
+     "g": "Ver como o espaço entre as linhas afeta o conforto e a densidade.",
+     "p": [
+      "Entrelinha é a distância de uma linha de base até a próxima; em inglês é leading, por causa das tiras de chumbo da impressão antiga.",
+      "Texto corrido costuma ler bem com entrelinha de cerca de 1,4 a 1,6 vez o tamanho da fonte.",
+      "Títulos podem ficar mais apertados; linhas longas e letras pequenas pedem mais espaço."
+     ],
+     "q": "Texto muito denso te dá vontade de pular?",
+     "c": "Escreva o mesmo parágrafo três vezes com entrelinha apertada, média e larga e escolha a mais confortável."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Letter spacing and kerning",
+     "g": "Adjust the space between letters for balanced, professional type.",
+     "p": [
+      "Tracking changes the spacing evenly across a whole word or line; kerning adjusts single pairs of letters.",
+      "Pairs like AV, To or LT often need kerning so gaps look even.",
+      "Capitals and small labels usually benefit from a little extra tracking; body text rarely needs changes."
+     ],
+     "q": "Have you ever seen a sign where the letter gaps made a word look odd?",
+     "c": "Write the word WAVE in capitals, cut the letters apart and move them until the spaces look even."
+    },
+    "de": {
+     "t": "Laufweite und Unterschneidung",
+     "g": "Den Raum zwischen Buchstaben für ausgewogene, professionelle Schrift anpassen.",
+     "p": [
+      "Die Laufweite ändert den Abstand gleichmäßig über ein Wort oder eine Zeile; Unterschneidung passt einzelne Paare an.",
+      "Paare wie AV, To oder LT brauchen oft Unterschneidung, damit die Lücken gleichmäßig wirken.",
+      "Versalien und kleine Beschriftungen profitieren meist von etwas mehr Laufweite; Fließtext selten."
+     ],
+     "q": "Hast du schon ein Schild gesehen, bei dem die Buchstabenabstände ein Wort seltsam aussehen ließen?",
+     "c": "Schreib das Wort WAVE in Versalien, schneide die Buchstaben aus und schiebe sie, bis die Abstände gleich wirken."
+    },
+    "es": {
+     "t": "Espaciado y kerning",
+     "g": "Ajustar el espacio entre letras para una tipografía equilibrada y profesional.",
+     "p": [
+      "El tracking cambia el espacio por igual en una palabra o línea; el kerning ajusta pares concretos de letras.",
+      "Pares como AV, To o LT suelen necesitar kerning para que los huecos se vean iguales.",
+      "Las mayúsculas y etiquetas pequeñas suelen mejorar con algo más de espaciado; el texto rara vez lo necesita."
+     ],
+     "q": "¿Has visto un letrero donde el espacio entre letras hacía que una palabra pareciera rara?",
+     "c": "Escribe la palabra VAPOR en mayúsculas, recorta las letras y muévelas hasta que los espacios se vean iguales."
+    },
+    "fr": {
+     "t": "Interlettrage et crénage",
+     "g": "Ajuster l'espace entre les lettres pour une typographie équilibrée et professionnelle.",
+     "p": [
+      "L'interlettrage modifie l'espace sur tout un mot ou une ligne ; le crénage ajuste des paires de lettres précises.",
+      "Des paires comme AV, To ou LT demandent souvent un crénage pour que les vides paraissent égaux.",
+      "Les capitales et petites étiquettes gagnent souvent à être un peu espacées ; le texte courant rarement."
+     ],
+     "q": "As-tu déjà vu une enseigne où l'espacement des lettres rendait un mot bizarre ?",
+     "c": "Écris le mot AVATAR en capitales, découpe les lettres et déplace-les jusqu'à ce que les espaces paraissent égaux."
+    },
+    "it": {
+     "t": "Spaziatura e crenatura",
+     "g": "Regolare lo spazio tra le lettere per una tipografia equilibrata e professionale.",
+     "p": [
+      "Il tracking cambia la spaziatura in modo uniforme su parola o riga; la crenatura regola singole coppie di lettere.",
+      "Coppie come AV, To o LT spesso richiedono crenatura perché gli spazi sembrino uguali.",
+      "Maiuscole ed etichette piccole migliorano spesso con un po' più di spaziatura; il testo raramente."
+     ],
+     "q": "Hai mai visto un'insegna in cui gli spazi tra le lettere facevano sembrare strana una parola?",
+     "c": "Scrivi la parola AVVIO in maiuscolo, ritaglia le lettere e spostale finché gli spazi sembrano uguali."
+    },
+    "pt": {
+     "t": "Espaçamento e kerning",
+     "g": "Ajustar o espaço entre letras para uma tipografia equilibrada e profissional.",
+     "p": [
+      "O tracking muda o espaço de forma igual numa palavra ou linha; o kerning ajusta pares de letras concretos.",
+      "Pares como AV, To ou LT precisam muitas vezes de kerning para os espaços parecerem iguais.",
+      "Maiúsculas e rótulos pequenos ganham com um pouco mais de espaçamento; o texto corrido raramente."
+     ],
+     "q": "Já viste um letreiro em que o espaço entre letras fazia uma palavra parecer estranha?",
+     "c": "Escreve a palavra AVATAR em maiúsculas, recorta as letras e move-as até os espaços parecerem iguais."
+    },
+    "pt_BR": {
+     "t": "Espaçamento e kerning",
+     "g": "Ajustar o espaço entre letras para uma tipografia equilibrada e profissional.",
+     "p": [
+      "Tracking muda o espaço igualmente em uma palavra ou linha; kerning ajusta pares específicos de letras.",
+      "Pares como AV, To ou LT costumam precisar de kerning para os espaços parecerem iguais.",
+      "Maiúsculas e rótulos pequenos ganham com um pouco mais de espaçamento; texto corrido raramente."
+     ],
+     "q": "Você já viu uma placa em que o espaço entre letras deixou uma palavra estranha?",
+     "c": "Escreva a palavra AVATAR em maiúsculas, recorte as letras e mova até os espaços parecerem iguais."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alignment of text",
+     "g": "Know when to use left, centred, right and justified text.",
+     "p": [
+      "Left-aligned text is the easiest to read in most languages that read left to right, thanks to a steady starting edge.",
+      "Centred text suits short pieces like invitations or titles, but tires the eye in long paragraphs.",
+      "Justified text looks neat but can create uneven gaps; right-aligned text suits short labels or captions."
+     ],
+     "q": "Which alignment do you see most on posters around you?",
+     "c": "Set the same short poem four ways, left, centred, right and justified, and note which reads best."
+    },
+    "de": {
+     "t": "Textausrichtung",
+     "g": "Wissen, wann linksbündig, zentriert, rechtsbündig oder Blocksatz passt.",
+     "p": [
+      "Linksbündiger Text ist in den meisten von links gelesenen Sprachen am leichtesten lesbar, dank fester Anfangskante.",
+      "Zentrierter Text passt zu kurzen Stücken wie Einladungen oder Titeln, ermüdet aber in langen Absätzen.",
+      "Blocksatz wirkt ordentlich, kann aber Lücken erzeugen; rechtsbündig passt zu kurzen Beschriftungen."
+     ],
+     "q": "Welche Ausrichtung siehst du auf Plakaten in deiner Umgebung am häufigsten?",
+     "c": "Setz dasselbe kurze Gedicht auf vier Arten, links, zentriert, rechts und im Blocksatz, und notiere, was am besten liest."
+    },
+    "es": {
+     "t": "Alineación del texto",
+     "g": "Saber cuándo usar texto alineado a la izquierda, centrado, a la derecha o justificado.",
+     "p": [
+      "El texto a la izquierda es el más fácil de leer en idiomas que se leen de izquierda a derecha, por su borde de inicio fijo.",
+      "El centrado va bien en piezas cortas como invitaciones o títulos, pero cansa en párrafos largos.",
+      "El justificado se ve ordenado pero puede crear huecos desiguales; a la derecha sirve para etiquetas cortas."
+     ],
+     "q": "¿Qué alineación ves más en los carteles de tu zona?",
+     "c": "Compón el mismo poema corto de cuatro formas, izquierda, centrado, derecha y justificado, y anota cuál se lee mejor."
+    },
+    "fr": {
+     "t": "L'alignement du texte",
+     "g": "Savoir quand utiliser un texte aligné à gauche, centré, à droite ou justifié.",
+     "p": [
+      "Le texte aligné à gauche est le plus facile à lire dans les langues lues de gauche à droite, grâce à un bord de départ stable.",
+      "Le centré convient aux textes courts comme invitations ou titres, mais fatigue dans les longs paragraphes.",
+      "Le justifié paraît net mais peut créer des trous ; l'aligné à droite convient aux légendes courtes."
+     ],
+     "q": "Quel alignement vois-tu le plus sur les affiches autour de toi ?",
+     "c": "Compose le même court poème de quatre façons, gauche, centré, droite et justifié, et note lequel se lit le mieux."
+    },
+    "it": {
+     "t": "Allineamento del testo",
+     "g": "Sapere quando usare testo a sinistra, centrato, a destra o giustificato.",
+     "p": [
+      "Il testo a sinistra è il più facile da leggere nelle lingue lette da sinistra a destra, grazie al bordo d'inizio fisso.",
+      "Il centrato va bene per testi brevi come inviti o titoli, ma stanca nei paragrafi lunghi.",
+      "Il giustificato sembra ordinato ma può creare spazi irregolari; a destra va bene per brevi didascalie."
+     ],
+     "q": "Quale allineamento vedi più spesso nei manifesti intorno a te?",
+     "c": "Componi la stessa breve poesia in quattro modi, sinistra, centrato, destra e giustificato, e annota quale si legge meglio."
+    },
+    "pt": {
+     "t": "Alinhamento do texto",
+     "g": "Saber quando usar texto alinhado à esquerda, centrado, à direita ou justificado.",
+     "p": [
+      "O texto à esquerda é o mais fácil de ler nas línguas lidas da esquerda para a direita, graças a uma margem de início fixa.",
+      "O centrado serve para peças curtas como convites ou títulos, mas cansa em parágrafos longos.",
+      "O justificado parece arrumado mas pode criar espaços irregulares; à direita serve para legendas curtas."
+     ],
+     "q": "Que alinhamento vês mais nos cartazes à tua volta?",
+     "c": "Compõe o mesmo poema curto de quatro formas, esquerda, centrado, direita e justificado, e anota qual se lê melhor."
+    },
+    "pt_BR": {
+     "t": "Alinhamento do texto",
+     "g": "Saber quando usar texto alinhado à esquerda, centralizado, à direita ou justificado.",
+     "p": [
+      "Texto à esquerda é o mais fácil de ler em idiomas lidos da esquerda para a direita, graças à borda de início fixa.",
+      "Centralizado funciona em peças curtas como convites ou títulos, mas cansa em parágrafos longos.",
+      "Justificado parece arrumado, mas pode criar buracos; à direita serve para legendas curtas."
+     ],
+     "q": "Que alinhamento você mais vê nos cartazes ao seu redor?",
+     "c": "Monte o mesmo poema curto de quatro jeitos, esquerda, centralizado, direita e justificado, e anote qual lê melhor."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Type as image",
+     "g": "Use letters as visual shapes in posters and logos.",
+     "p": [
+      "Letters are shapes too: a big O can become a wheel, a sun or a face.",
+      "Playing with scale, cropping, overlap and colour turns a word into a picture.",
+      "Keep the message readable enough; the best type images work at a glance."
+     ],
+     "q": "Is there a logo you love that is made only of letters?",
+     "c": "Pick a word like jump or melt and draw it so the letters act out its meaning."
+    },
+    "de": {
+     "t": "Schrift als Bild",
+     "g": "Buchstaben als visuelle Formen in Plakaten und Logos einsetzen.",
+     "p": [
+      "Buchstaben sind auch Formen: Ein großes O kann ein Rad, eine Sonne oder ein Gesicht werden.",
+      "Spiel mit Größe, Anschnitt, Überlagerung und Farbe macht aus einem Wort ein Bild.",
+      "Die Botschaft muss lesbar genug bleiben; die besten Schriftbilder wirken auf einen Blick."
+     ],
+     "q": "Gibt es ein Logo, das du liebst und das nur aus Buchstaben besteht?",
+     "c": "Wähle ein Wort wie springen oder schmelzen und zeichne es so, dass die Buchstaben die Bedeutung darstellen."
+    },
+    "es": {
+     "t": "La letra como imagen",
+     "g": "Usar las letras como formas visuales en carteles y logotipos.",
+     "p": [
+      "Las letras también son formas: una O grande puede ser una rueda, un sol o una cara.",
+      "Jugar con escala, recorte, superposición y color convierte una palabra en una imagen.",
+      "Mantén el mensaje legible; las mejores imágenes tipográficas se entienden de un vistazo."
+     ],
+     "q": "¿Hay algún logo que te encante hecho solo con letras?",
+     "c": "Elige una palabra como saltar o derretir y dibújala para que las letras representen su significado."
+    },
+    "fr": {
+     "t": "La lettre comme image",
+     "g": "Utiliser les lettres comme formes visuelles dans les affiches et les logos.",
+     "p": [
+      "Les lettres sont aussi des formes : un grand O peut devenir une roue, un soleil ou un visage.",
+      "Jouer avec l'échelle, le recadrage, la superposition et la couleur transforme un mot en image.",
+      "Garde le message assez lisible ; les meilleures images typographiques se comprennent d'un coup d'œil."
+     ],
+     "q": "Y a-t-il un logo que tu adores composé uniquement de lettres ?",
+     "c": "Choisis un mot comme sauter ou fondre et dessine-le pour que les lettres miment son sens."
+    },
+    "it": {
+     "t": "La lettera come immagine",
+     "g": "Usare le lettere come forme visive in manifesti e loghi.",
+     "p": [
+      "Anche le lettere sono forme: una grande O può diventare una ruota, un sole o un volto.",
+      "Giocare con scala, taglio, sovrapposizione e colore trasforma una parola in immagine.",
+      "Mantieni il messaggio abbastanza leggibile; le migliori immagini tipografiche si capiscono al volo."
+     ],
+     "q": "C'è un logo che ami fatto solo di lettere?",
+     "c": "Scegli una parola come saltare o sciogliersi e disegnala in modo che le lettere ne mimino il significato."
+    },
+    "pt": {
+     "t": "A letra como imagem",
+     "g": "Usar as letras como formas visuais em cartazes e logótipos.",
+     "p": [
+      "As letras também são formas: um O grande pode tornar-se uma roda, um sol ou um rosto.",
+      "Brincar com escala, corte, sobreposição e cor transforma uma palavra numa imagem.",
+      "Mantém a mensagem legível; as melhores imagens tipográficas percebem-se num relance."
+     ],
+     "q": "Há algum logótipo de que gostes feito só de letras?",
+     "c": "Escolhe uma palavra como saltar ou derreter e desenha-a para que as letras representem o seu sentido."
+    },
+    "pt_BR": {
+     "t": "A letra como imagem",
+     "g": "Usar as letras como formas visuais em cartazes e logos.",
+     "p": [
+      "Letras também são formas: um O grande pode virar uma roda, um sol ou um rosto.",
+      "Brincar com escala, corte, sobreposição e cor transforma uma palavra em imagem.",
+      "Mantenha a mensagem legível; as melhores imagens tipográficas são entendidas num piscar de olhos."
+     ],
+     "q": "Existe algum logo que você ama feito só de letras?",
+     "c": "Escolha uma palavra como pular ou derreter e desenhe de um jeito que as letras representem o sentido dela."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Legibility versus readability",
+     "g": "Tell clear individual letters apart from comfortable reading of whole texts.",
+     "p": [
+      "Legibility is about the typeface: can you tell each letter apart, like I, l and 1?",
+      "Readability is about the setting: size, spacing, line length and contrast make long text easy or hard.",
+      "A very legible font can still be unreadable if it is set too small, too tight or in poor contrast."
+     ],
+     "q": "Which is harder for you: reading tiny print or reading text with poor spacing?",
+     "c": "Write Il1 O0 rn m in three fonts and check which keeps every character clearly distinct."
+    },
+    "de": {
+     "t": "Leserlichkeit und Lesbarkeit",
+     "g": "Klar erkennbare Einzelbuchstaben von angenehmem Lesen ganzer Texte unterscheiden.",
+     "p": [
+      "Leserlichkeit betrifft die Schrift: Kannst du jeden Buchstaben unterscheiden, etwa I, l und 1?",
+      "Lesbarkeit betrifft den Satz: Größe, Abstand, Zeilenlänge und Kontrast machen langen Text leicht oder schwer.",
+      "Eine sehr leserliche Schrift kann trotzdem schlecht lesbar sein, wenn sie zu klein, zu eng oder kontrastarm ist."
+     ],
+     "q": "Was fällt dir schwerer: winzige Schrift oder Text mit schlechten Abständen?",
+     "c": "Schreib Il1 O0 rn m in drei Schriften und prüfe, welche jedes Zeichen klar unterscheidbar hält."
+    },
+    "es": {
+     "t": "Legibilidad frente a lecturabilidad",
+     "g": "Distinguir letras claras una a una de una lectura cómoda de textos completos.",
+     "p": [
+      "La legibilidad depende de la letra: ¿distingues cada carácter, como I, l y 1?",
+      "La lecturabilidad depende de la composición: tamaño, espacio, longitud de línea y contraste.",
+      "Una fuente muy legible puede leerse mal si va demasiado pequeña, apretada o con poco contraste."
+     ],
+     "q": "¿Qué te cuesta más: leer letra diminuta o un texto mal espaciado?",
+     "c": "Escribe Il1 O0 rn m en tres fuentes y comprueba cuál mantiene cada carácter claramente distinto."
+    },
+    "fr": {
+     "t": "Lisibilité et confort de lecture",
+     "g": "Distinguer des lettres claires une à une d'une lecture confortable de textes entiers.",
+     "p": [
+      "La lisibilité concerne le caractère : distingues-tu chaque signe, comme I, l et 1 ?",
+      "Le confort de lecture concerne la composition : corps, espacement, longueur de ligne et contraste.",
+      "Une police très lisible peut devenir pénible si elle est trop petite, trop serrée ou peu contrastée."
+     ],
+     "q": "Qu'est-ce qui est le plus dur pour toi : un texte minuscule ou un texte mal espacé ?",
+     "c": "Écris Il1 O0 rn m dans trois polices et vérifie laquelle garde chaque signe bien distinct."
+    },
+    "it": {
+     "t": "Leggibilità e lettura scorrevole",
+     "g": "Distinguere lettere chiare una per una da una lettura comoda di testi interi.",
+     "p": [
+      "La leggibilità riguarda il carattere: riesci a distinguere ogni segno, come I, l e 1?",
+      "La scorrevolezza riguarda la composizione: corpo, spaziatura, lunghezza della riga e contrasto.",
+      "Un carattere molto leggibile può risultare faticoso se è troppo piccolo, stretto o poco contrastato."
+     ],
+     "q": "Cosa ti risulta più difficile: leggere caratteri minuscoli o testo spaziato male?",
+     "c": "Scrivi Il1 O0 rn m in tre caratteri e verifica quale mantiene ogni segno ben distinto."
+    },
+    "pt": {
+     "t": "Legibilidade e leiturabilidade",
+     "g": "Distinguir letras claras uma a uma de uma leitura confortável de textos inteiros.",
+     "p": [
+      "A legibilidade tem a ver com a letra: consegues distinguir cada carácter, como I, l e 1?",
+      "A leiturabilidade tem a ver com a composição: tamanho, espaço, comprimento de linha e contraste.",
+      "Uma letra muito legível pode ler-se mal se estiver pequena, apertada ou com pouco contraste."
+     ],
+     "q": "O que te custa mais: ler letra minúscula ou texto mal espaçado?",
+     "c": "Escreve Il1 O0 rn m em três fontes e verifica qual mantém cada carácter bem distinto."
+    },
+    "pt_BR": {
+     "t": "Legibilidade e leiturabilidade",
+     "g": "Diferenciar letras claras uma a uma de uma leitura confortável de textos inteiros.",
+     "p": [
+      "Legibilidade tem a ver com a fonte: dá para distinguir cada caractere, como I, l e 1?",
+      "Leiturabilidade tem a ver com a composição: tamanho, espaço, comprimento de linha e contraste.",
+      "Uma fonte muito legível pode ficar difícil de ler se estiver pequena, apertada ou com pouco contraste."
+     ],
+     "q": "O que é mais difícil para você: ler letra minúscula ou texto mal espaçado?",
+     "c": "Escreva Il1 O0 rn m em três fontes e veja qual mantém cada caractere bem distinto."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous typefaces and their stories",
+     "g": "Learn the background of classics like Helvetica, Garamond and Futura.",
+     "p": [
+      "Garamond is named after Claude Garamond, a French punchcutter of the 1500s; it feels elegant and bookish.",
+      "Futura, by Paul Renner in the 1920s, is built from circles, triangles and squares and feels modern.",
+      "Helvetica, designed in Switzerland in 1957, became famous for its neutral, clean look in signs and logos."
+     ],
+     "q": "Which of these three sounds most like your style?",
+     "c": "Spot Helvetica-like, Garamond-like and Futura-like letters around you and note where each was used."
+    },
+    "de": {
+     "t": "Berühmte Schriften und ihre Geschichte",
+     "g": "Den Hintergrund von Klassikern wie Helvetica, Garamond und Futura kennenlernen.",
+     "p": [
+      "Garamond ist nach Claude Garamond benannt, einem französischen Stempelschneider des 16. Jahrhunderts; sie wirkt elegant.",
+      "Futura von Paul Renner aus den 1920er-Jahren baut auf Kreis, Dreieck und Quadrat auf und wirkt modern.",
+      "Helvetica, 1957 in der Schweiz entworfen, wurde durch ihr neutrales, klares Bild auf Schildern und Logos berühmt."
+     ],
+     "q": "Welche der drei klingt am meisten nach deinem Stil?",
+     "c": "Such in deiner Umgebung Buchstaben im Stil von Helvetica, Garamond und Futura und notiere, wo sie genutzt wurden."
+    },
+    "es": {
+     "t": "Tipografías famosas y su historia",
+     "g": "Conocer el origen de clásicas como Helvetica, Garamond y Futura.",
+     "p": [
+      "Garamond debe su nombre a Claude Garamond, grabador francés de punzones del siglo XVI; se siente elegante y literaria.",
+      "Futura, de Paul Renner en los años veinte, se basa en círculos, triángulos y cuadrados y se siente moderna.",
+      "Helvetica, diseñada en Suiza en 1957, se hizo famosa por su aspecto neutro y limpio en señales y logotipos."
+     ],
+     "q": "¿Cuál de las tres se parece más a tu estilo?",
+     "c": "Busca a tu alrededor letras tipo Helvetica, Garamond y Futura y anota dónde se usa cada una."
+    },
+    "fr": {
+     "t": "Caractères célèbres et leur histoire",
+     "g": "Découvrir l'histoire de classiques comme Helvetica, Garamond et Futura.",
+     "p": [
+      "Garamond doit son nom à Claude Garamond, graveur de poinçons français du XVIe siècle ; il paraît élégant et littéraire.",
+      "Futura, de Paul Renner dans les années 1920, repose sur cercle, triangle et carré, et paraît moderne.",
+      "Helvetica, dessinée en Suisse en 1957, est devenue célèbre pour son allure neutre et nette sur panneaux et logos."
+     ],
+     "q": "Lequel des trois ressemble le plus à ton style ?",
+     "c": "Repère autour de toi des lettres de style Helvetica, Garamond et Futura, et note où chacune est utilisée."
+    },
+    "it": {
+     "t": "Caratteri famosi e la loro storia",
+     "g": "Conoscere la storia di classici come Helvetica, Garamond e Futura.",
+     "p": [
+      "Il Garamond prende il nome da Claude Garamond, incisore francese di punzoni del Cinquecento; è elegante e letterario.",
+      "Il Futura, di Paul Renner negli anni Venti, nasce da cerchi, triangoli e quadrati e appare moderno.",
+      "L'Helvetica, disegnato in Svizzera nel 1957, è diventato famoso per l'aspetto neutro e pulito su cartelli e loghi."
+     ],
+     "q": "Quale dei tre somiglia di più al tuo stile?",
+     "c": "Cerca intorno a te lettere in stile Helvetica, Garamond e Futura e annota dove viene usato ognuno."
+    },
+    "pt": {
+     "t": "Tipos de letra famosos e as suas histórias",
+     "g": "Conhecer a origem de clássicos como Helvetica, Garamond e Futura.",
+     "p": [
+      "A Garamond deve o nome a Claude Garamond, gravador de punções francês do século XVI; parece elegante e literária.",
+      "A Futura, de Paul Renner nos anos 1920, assenta em círculos, triângulos e quadrados e parece moderna.",
+      "A Helvetica, desenhada na Suíça em 1957, ficou famosa pelo aspeto neutro e limpo em sinais e logótipos."
+     ],
+     "q": "Qual das três tem mais a ver com o teu estilo?",
+     "c": "Procura à tua volta letras ao estilo Helvetica, Garamond e Futura e anota onde cada uma é usada."
+    },
+    "pt_BR": {
+     "t": "Fontes famosas e suas histórias",
+     "g": "Conhecer a origem de clássicos como Helvetica, Garamond e Futura.",
+     "p": [
+      "A Garamond leva o nome de Claude Garamond, gravador de punções francês do século XVI; ela parece elegante e literária.",
+      "A Futura, de Paul Renner nos anos 1920, nasce de círculos, triângulos e quadrados e parece moderna.",
+      "A Helvetica, criada na Suíça em 1957, ficou famosa pelo visual neutro e limpo em placas e logos."
+     ],
+     "q": "Qual das três tem mais a ver com o seu estilo?",
+     "c": "Procure ao seu redor letras no estilo Helvetica, Garamond e Futura e anote onde cada uma aparece."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lettering by hand",
+     "g": "Draw letters yourself to understand form, rhythm and spacing.",
+     "p": [
+      "Lettering means drawing letters as images, unlike handwriting, which is writing them quickly.",
+      "Start with a light pencil skeleton, then add weight to the downstrokes for contrast.",
+      "Drawing letters trains your eye for spacing and shape, which improves all your type choices."
+     ],
+     "q": "Would you rather letter something bold and blocky or flowing and curly?",
+     "c": "Hand-letter a short word like hello in pencil: sketch the skeleton, thicken the downstrokes, then ink it."
+    },
+    "de": {
+     "t": "Handlettering",
+     "g": "Buchstaben selbst zeichnen, um Form, Rhythmus und Abstände zu verstehen.",
+     "p": [
+      "Lettering heißt Buchstaben als Bilder zeichnen, anders als Handschrift, bei der man sie schnell schreibt.",
+      "Beginne mit einem leichten Bleistiftgerüst und gib dann den Abstrichen mehr Gewicht für Kontrast.",
+      "Buchstaben zu zeichnen schult das Auge für Abstand und Form und verbessert jede Schriftwahl."
+     ],
+     "q": "Würdest du lieber etwas kräftig und blockig oder fließend und verschnörkelt lettern?",
+     "c": "Lettere ein kurzes Wort wie Hallo mit Bleistift: Gerüst skizzieren, Abstriche verstärken, dann mit Tinte nachziehen."
+    },
+    "es": {
+     "t": "Lettering a mano",
+     "g": "Dibujar letras tú mismo para entender forma, ritmo y espaciado.",
+     "p": [
+      "El lettering es dibujar letras como imágenes, a diferencia de la caligrafía rápida del día a día.",
+      "Empieza con un esqueleto suave a lápiz y luego engrosa los trazos descendentes para crear contraste.",
+      "Dibujar letras entrena tu ojo para el espacio y la forma, y mejora todas tus elecciones tipográficas."
+     ],
+     "q": "¿Preferirías dibujar letras gruesas y rotundas o fluidas y con curvas?",
+     "c": "Dibuja a mano una palabra corta como hola: haz el esqueleto a lápiz, engrosa los descendentes y repásala con tinta."
+    },
+    "fr": {
+     "t": "Le lettrage à la main",
+     "g": "Dessiner soi-même des lettres pour comprendre la forme, le rythme et l'espacement.",
+     "p": [
+      "Le lettrage consiste à dessiner des lettres comme des images, contrairement à l'écriture rapide du quotidien.",
+      "Commence par un squelette léger au crayon, puis épaissis les pleins, les traits descendants, pour le contraste.",
+      "Dessiner des lettres entraîne l'œil à l'espacement et à la forme, ce qui améliore tous tes choix typographiques."
+     ],
+     "q": "Préférerais-tu dessiner des lettres épaisses et massives ou fluides et bouclées ?",
+     "c": "Dessine à la main un mot court comme salut : esquisse le squelette, épaissis les pleins, puis encre-le."
+    },
+    "it": {
+     "t": "Lettering a mano",
+     "g": "Disegnare le lettere da sé per capire forma, ritmo e spaziatura.",
+     "p": [
+      "Il lettering è disegnare lettere come immagini, a differenza della scrittura a mano veloce di tutti i giorni.",
+      "Parti da uno scheletro leggero a matita, poi ispessisci i tratti discendenti per creare contrasto.",
+      "Disegnare lettere allena l'occhio a spazi e forme, e migliora tutte le tue scelte tipografiche."
+     ],
+     "q": "Preferiresti disegnare lettere spesse e squadrate o fluide e ricciolute?",
+     "c": "Disegna a mano una parola breve come ciao: abbozza lo scheletro a matita, ispessisci i discendenti, poi ripassa a penna."
+    },
+    "pt": {
+     "t": "Lettering à mão",
+     "g": "Desenhar letras tu mesmo para perceber forma, ritmo e espaçamento.",
+     "p": [
+      "Lettering é desenhar letras como imagens, ao contrário da escrita à mão, que é escrevê-las depressa.",
+      "Começa por um esqueleto leve a lápis e depois engrossa os traços descendentes para criar contraste.",
+      "Desenhar letras treina o olhar para o espaço e a forma, o que melhora todas as tuas escolhas tipográficas."
+     ],
+     "q": "Preferias desenhar letras grossas e robustas ou fluidas e cheias de curvas?",
+     "c": "Desenha à mão uma palavra curta como olá: esboça o esqueleto a lápis, engrossa os descendentes e passa a tinta."
+    },
+    "pt_BR": {
+     "t": "Lettering à mão",
+     "g": "Desenhar letras você mesmo para entender forma, ritmo e espaçamento.",
+     "p": [
+      "Lettering é desenhar letras como imagens, diferente da letra cursiva, que é escrever rápido.",
+      "Comece com um esqueleto leve a lápis e depois engrosse os traços descendentes para criar contraste.",
+      "Desenhar letras treina o olho para espaço e forma, o que melhora todas as suas escolhas tipográficas."
+     ],
+     "q": "Você prefere desenhar letras grossas e robustas ou fluidas e cheias de curvas?",
+     "c": "Desenhe à mão uma palavra curta como oi: esboce o esqueleto a lápis, engrosse os descendentes e passe a tinta."
+    }
+   }
+  }
+ ]
+}

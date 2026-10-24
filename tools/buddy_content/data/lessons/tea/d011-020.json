@@ -1,0 +1,835 @@
+{
+ "topic": "tea",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning to taste",
+     "g": "Taste tea like a pro: slurp, breathe and notice aroma, body, sweetness, bitterness and aftertaste.",
+     "p": [
+      "Smell the tea first, then take a small sip and slurp gently so air carries the aroma to your nose.",
+      "Let the tea cover your whole tongue and notice sweetness, bitterness and how heavy or light it feels.",
+      "After swallowing, breathe out through your nose and wait: what stays in your mouth is the aftertaste."
+     ],
+     "q": "When you drink tea, do you usually notice its aroma, or just its warmth?",
+     "c": "Taste your next cup in four steps, smell, slurp, swallow, breathe out, and say one word for each step."
+    },
+    "de": {
+     "t": "Schmecken lernen",
+     "g": "Verkoste Tee wie ein Profi: schlürfen, atmen und auf Aroma, Körper, Süße, Bitterkeit und Nachklang achten.",
+     "p": [
+      "Riech zuerst am Tee, nimm dann einen kleinen Schluck und schlürfe leicht, damit Luft das Aroma zur Nase trägt.",
+      "Lass den Tee die ganze Zunge bedecken und achte auf Süße, Bitterkeit und wie schwer oder leicht er wirkt.",
+      "Atme nach dem Schlucken durch die Nase aus und warte: Was im Mund bleibt, ist der Nachklang."
+     ],
+     "q": "Achtest du beim Teetrinken meist auf das Aroma oder nur auf die Wärme?",
+     "c": "Verkoste deine nächste Tasse in vier Schritten, riechen, schlürfen, schlucken, ausatmen, mit je einem Wort."
+    },
+    "es": {
+     "t": "Aprender a catar",
+     "g": "Cata el té como un profesional: sorbe, respira y fíjate en aroma, cuerpo, dulzor, amargor y regusto.",
+     "p": [
+      "Huele primero el té, toma un sorbo pequeño y sorbe con suavidad para que el aire lleve el aroma a la nariz.",
+      "Deja que el té cubra toda la lengua y nota el dulzor, el amargor y si se siente ligero o pesado.",
+      "Tras tragar, suelta el aire por la nariz y espera: lo que queda en la boca es el regusto."
+     ],
+     "q": "Cuando bebes té, ¿sueles notar su aroma o solo su calor?",
+     "c": "Cata tu próxima taza en cuatro pasos, oler, sorber, tragar, espirar, y di una palabra para cada uno."
+    },
+    "fr": {
+     "t": "Apprendre à déguster",
+     "g": "Déguste le thé comme un pro : aspire, respire et note l'arôme, le corps, la douceur, l'amertume et l'arrière-goût.",
+     "p": [
+      "Sens d'abord le thé, puis prends une petite gorgée en l'aspirant doucement pour que l'air porte l'arôme au nez.",
+      "Laisse le thé couvrir toute la langue et remarque la douceur, l'amertume et sa légèreté ou sa densité.",
+      "Après avoir avalé, expire par le nez et attends : ce qui reste en bouche, c'est l'arrière-goût."
+     ],
+     "q": "Quand tu bois du thé, remarques-tu d'habitude son arôme ou seulement sa chaleur ?",
+     "c": "Déguste ta prochaine tasse en quatre étapes, sentir, aspirer, avaler, expirer, avec un mot pour chacune."
+    },
+    "it": {
+     "t": "Imparare ad assaggiare",
+     "g": "Assaggia il tè come un esperto: sorseggia rumorosamente, respira e nota aroma, corpo, dolcezza, amaro e retrogusto.",
+     "p": [
+      "Annusa prima il tè, poi prendi un piccolo sorso aspirandolo piano, così l'aria porta l'aroma al naso.",
+      "Lascia che il tè copra tutta la lingua e nota dolcezza, amaro e se ti sembra leggero o pieno.",
+      "Dopo aver deglutito, espira dal naso e aspetta: ciò che resta in bocca è il retrogusto."
+     ],
+     "q": "Quando bevi il tè, di solito noti il suo aroma o solo il calore?",
+     "c": "Assaggia la prossima tazza in quattro passi, annusa, aspira, deglutisci, espira, con una parola per ciascuno."
+    },
+    "pt": {
+     "t": "Aprender a provar",
+     "g": "Prova o chá como um profissional: sorve, respira e repara no aroma, corpo, doçura, amargor e final.",
+     "p": [
+      "Cheira primeiro o chá, depois toma um pequeno gole e sorve devagar para o ar levar o aroma ao nariz.",
+      "Deixa o chá cobrir toda a língua e repara na doçura, no amargor e se parece leve ou encorpado.",
+      "Depois de engolir, expira pelo nariz e espera: o que fica na boca é o final."
+     ],
+     "q": "Quando bebes chá, costumas reparar no aroma ou só no calor?",
+     "c": "Prova a próxima chávena em quatro passos, cheirar, sorver, engolir, expirar, com uma palavra para cada um."
+    },
+    "pt_BR": {
+     "t": "Aprendendo a degustar",
+     "g": "Deguste o chá como um profissional: sorva, respire e repare no aroma, corpo, doçura, amargor e final.",
+     "p": [
+      "Cheire primeiro o chá, depois tome um pequeno gole e sorva devagar para o ar levar o aroma ao nariz.",
+      "Deixe o chá cobrir toda a língua e repare na doçura, no amargor e se ele parece leve ou encorpado.",
+      "Depois de engolir, solte o ar pelo nariz e espere: o que fica na boca é o final."
+     ],
+     "q": "Quando você toma chá, costuma reparar no aroma ou só no calor?",
+     "c": "Deguste a próxima xícara em quatro passos, cheirar, sorver, engolir, expirar, com uma palavra para cada um."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tasting words you can use",
+     "g": "Build a starter tasting vocabulary: grassy, malty, floral, toasty, fruity, smooth and brisk.",
+     "p": [
+      "Grassy and vegetal often describe green teas; malty and honeyed often describe black teas such as Assam.",
+      "Floral fits many light oolongs and jasmine teas; toasty or roasted fits darker oolongs.",
+      "Smooth means soft and round; brisk means lively and slightly drying, a pleasant bite."
+     ],
+     "q": "Which tasting word would you use for the tea you drink most often?",
+     "c": "Brew any tea and pick at least three words from today's list to describe it."
+    },
+    "de": {
+     "t": "Geschmackswörter für dich",
+     "g": "Bau dir einen Start-Wortschatz auf: grasig, malzig, blumig, geröstet, fruchtig, weich und spritzig.",
+     "p": [
+      "Grasig und gemüsig beschreiben oft Grüntee; malzig und honigartig oft Schwarztee wie Assam.",
+      "Blumig passt zu vielen hellen Oolongs und Jasmintees; geröstet passt zu dunkleren Oolongs.",
+      "Weich heißt sanft und rund; spritzig heißt lebendig und leicht trocknend, ein angenehmer Biss."
+     ],
+     "q": "Welches Geschmackswort würdest du für deinen Lieblingstee benutzen?",
+     "c": "Brühe einen beliebigen Tee und beschreibe ihn mit mindestens drei Wörtern von heute."
+    },
+    "es": {
+     "t": "Palabras de cata para usar",
+     "g": "Crea un vocabulario de cata inicial: herbáceo, malteado, floral, tostado, afrutado, suave y vivo.",
+     "p": [
+      "Herbáceo y vegetal suelen describir tés verdes; malteado y meloso, tés negros como el Assam.",
+      "Floral encaja con muchos oolong ligeros y tés de jazmín; tostado, con los oolong más oscuros.",
+      "Suave es redondo y amable; vivo es enérgico y algo secante, un toque agradable."
+     ],
+     "q": "¿Qué palabra de cata usarías para el té que más bebes?",
+     "c": "Prepara cualquier té y elige al menos tres palabras de la lista de hoy para describirlo."
+    },
+    "fr": {
+     "t": "Des mots pour déguster",
+     "g": "Construis un premier vocabulaire de dégustation : herbacé, malté, floral, grillé, fruité, rond et vif.",
+     "p": [
+      "Herbacé et végétal décrivent souvent les thés verts ; malté et miellé, des thés noirs comme l'Assam.",
+      "Floral convient à beaucoup d'oolongs légers et aux thés au jasmin ; grillé, aux oolongs plus sombres.",
+      "Rond veut dire doux et souple ; vif veut dire tonique et un peu asséchant, un mordant agréable."
+     ],
+     "q": "Quel mot de dégustation choisirais-tu pour le thé que tu bois le plus ?",
+     "c": "Infuse n'importe quel thé et choisis au moins trois mots de la liste du jour pour le décrire."
+    },
+    "it": {
+     "t": "Parole per l'assaggio",
+     "g": "Costruisci un primo vocabolario di degustazione: erbaceo, maltato, floreale, tostato, fruttato, morbido e vivace.",
+     "p": [
+      "Erbaceo e vegetale descrivono spesso i tè verdi; maltato e mielato tè neri come l'Assam.",
+      "Floreale si addice a molti oolong leggeri e ai tè al gelsomino; tostato agli oolong più scuri.",
+      "Morbido significa rotondo e gentile; vivace significa brioso e un po' asciugante, un piacevole mordente."
+     ],
+     "q": "Quale parola useresti per il tè che bevi più spesso?",
+     "c": "Prepara un tè qualsiasi e scegli almeno tre parole della lista di oggi per descriverlo."
+    },
+    "pt": {
+     "t": "Palavras de prova para usar",
+     "g": "Cria um vocabulário inicial de prova: herbáceo, maltado, floral, tostado, frutado, suave e vivo.",
+     "p": [
+      "Herbáceo e vegetal descrevem muitas vezes chás verdes; maltado e meloso, chás pretos como o Assam.",
+      "Floral serve para muitos oolongs leves e chás de jasmim; tostado, para oolongs mais escuros.",
+      "Suave é redondo e macio; vivo é enérgico e um pouco secante, um toque agradável."
+     ],
+     "q": "Que palavra de prova usarias para o chá que bebes mais?",
+     "c": "Prepara um chá qualquer e escolhe pelo menos três palavras da lista de hoje para o descrever."
+    },
+    "pt_BR": {
+     "t": "Palavras de degustação",
+     "g": "Crie um vocabulário inicial de degustação: herbáceo, maltado, floral, tostado, frutado, suave e vivo.",
+     "p": [
+      "Herbáceo e vegetal costumam descrever chás verdes; maltado e meloso, chás pretos como o Assam.",
+      "Floral combina com muitos oolongs leves e chás de jasmim; tostado, com oolongs mais escuros.",
+      "Suave é redondo e macio; vivo é animado e um pouco secante, uma mordida agradável."
+     ],
+     "q": "Que palavra de degustação você usaria para o chá que mais toma?",
+     "c": "Prepare qualquer chá e escolha pelo menos três palavras da lista de hoje para descrevê-lo."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet green tea",
+     "g": "Get to know green tea: unoxidised leaves, fresh vegetal flavours and heat applied early to keep them green.",
+     "p": [
+      "Right after picking, the leaves are heated to stop oxidation, which keeps them green and fresh.",
+      "China often pan-fires its greens, giving toasty, nutty notes; Japan usually steams them, giving grassy, marine notes.",
+      "Famous examples include Longjing (Dragon Well) from China and sencha from Japan."
+     ],
+     "q": "Have you tried green tea before, and did you enjoy it?",
+     "c": "Look at a green tea leaf, dry and then wet, and notice its colour and its fresh smell."
+    },
+    "de": {
+     "t": "Grüntee kennenlernen",
+     "g": "Lerne Grüntee kennen: unoxidierte Blätter, frische, gemüsige Aromen und frühes Erhitzen, das sie grün hält.",
+     "p": [
+      "Gleich nach der Ernte werden die Blätter erhitzt, um die Oxidation zu stoppen; so bleiben sie grün und frisch.",
+      "China röstet Grüntee oft in der Pfanne, mit nussigen Noten; Japan dämpft ihn meist, mit grasigen, meerigen Noten.",
+      "Berühmte Beispiele sind Longjing (Drachenbrunnen) aus China und Sencha aus Japan."
+     ],
+     "q": "Hast du schon Grüntee probiert, und hat er dir geschmeckt?",
+     "c": "Betrachte ein Grünteeblatt trocken und dann nass und achte auf Farbe und frischen Duft."
+    },
+    "es": {
+     "t": "Conoce el té verde",
+     "g": "Conoce el té verde: hojas sin oxidar, sabores frescos y vegetales, y un calor temprano que las mantiene verdes.",
+     "p": [
+      "Justo tras la cosecha, las hojas se calientan para frenar la oxidación; así siguen verdes y frescas.",
+      "China suele tostar sus verdes en sartén, con notas a frutos secos; Japón suele cocerlos al vapor, con notas herbáceas y marinas.",
+      "Ejemplos famosos son el Longjing (Pozo del Dragón) de China y el sencha de Japón."
+     ],
+     "q": "¿Has probado antes el té verde? ¿Te gustó?",
+     "c": "Observa una hoja de té verde, seca y luego mojada, y fíjate en su color y su olor fresco."
+    },
+    "fr": {
+     "t": "Découvrir le thé vert",
+     "g": "Fais connaissance avec le thé vert : feuilles non oxydées, saveurs fraîches et végétales, chauffées tôt pour rester vertes.",
+     "p": [
+      "Juste après la cueillette, on chauffe les feuilles pour stopper l'oxydation ; elles restent vertes et fraîches.",
+      "La Chine torréfie souvent ses verts au wok, notes de noisette ; le Japon les étuve, notes herbacées et marines.",
+      "Exemples célèbres : le Longjing (Puits du Dragon) de Chine et le sencha du Japon."
+     ],
+     "q": "As-tu déjà goûté du thé vert, et l'as-tu aimé ?",
+     "c": "Observe une feuille de thé vert, sèche puis mouillée, et remarque sa couleur et son parfum frais."
+    },
+    "it": {
+     "t": "Conosci il tè verde",
+     "g": "Conosci il tè verde: foglie non ossidate, sapori freschi e vegetali, e un calore precoce che le mantiene verdi.",
+     "p": [
+      "Subito dopo la raccolta le foglie vengono scaldate per fermare l'ossidazione: così restano verdi e fresche.",
+      "La Cina spesso tosta i verdi in padella, con note di frutta secca; il Giappone li cuoce al vapore, note erbacee e marine.",
+      "Esempi famosi sono il Longjing (Pozzo del Drago) cinese e il sencha giapponese."
+     ],
+     "q": "Hai già provato il tè verde? Ti è piaciuto?",
+     "c": "Osserva una foglia di tè verde, secca e poi bagnata, e nota il colore e il profumo fresco."
+    },
+    "pt": {
+     "t": "Conhece o chá verde",
+     "g": "Conhece o chá verde: folhas não oxidadas, sabores frescos e vegetais, e calor aplicado cedo para as manter verdes.",
+     "p": [
+      "Logo após a colheita, as folhas são aquecidas para travar a oxidação; assim ficam verdes e frescas.",
+      "A China costuma torrar os verdes em wok, com notas de frutos secos; o Japão coze-os a vapor, com notas herbáceas e marinhas.",
+      "Exemplos famosos são o Longjing (Poço do Dragão) da China e o sencha do Japão."
+     ],
+     "q": "Já provaste chá verde? Gostaste?",
+     "c": "Observa uma folha de chá verde, seca e depois molhada, e repara na cor e no aroma fresco."
+    },
+    "pt_BR": {
+     "t": "Conheça o chá verde",
+     "g": "Conheça o chá verde: folhas não oxidadas, sabores frescos e vegetais, e calor aplicado cedo para mantê-las verdes.",
+     "p": [
+      "Logo depois da colheita, as folhas são aquecidas para parar a oxidação; assim continuam verdes e frescas.",
+      "A China costuma tostar os verdes na panela, com notas de castanhas; o Japão cozinha no vapor, com notas herbáceas e marinhas.",
+      "Exemplos famosos são o Longjing (Poço do Dragão) da China e o sencha do Japão."
+     ],
+     "q": "Você já provou chá verde? Gostou?",
+     "c": "Observe uma folha de chá verde, seca e depois molhada, e repare na cor e no aroma fresco."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brewing green tea gently",
+     "g": "Brew green tea with lower temperatures and short steeps so it stays sweet instead of sharp.",
+     "p": [
+      "Use water around 70 to 80 °C; boiling water scalds the leaves and pulls out bitterness.",
+      "Steep 1 to 2 minutes for the first cup, then re-steep the same leaves a second or third time.",
+      "Delicate Japanese greens like even cooler water and very short steeps, sometimes under a minute."
+     ],
+     "q": "Has green tea ever tasted bitter to you, and what do you think caused it?",
+     "c": "Brew a green tea at about 75 °C for 90 seconds, then re-steep the leaves and compare both cups."
+    },
+    "de": {
+     "t": "Grüntee sanft aufbrühen",
+     "g": "Brühe Grüntee mit niedrigerer Temperatur und kurz, damit er süß bleibt statt scharf.",
+     "p": [
+      "Nimm Wasser um 70 bis 80 °C; kochendes Wasser verbrüht die Blätter und zieht Bitterstoffe heraus.",
+      "Lass die erste Tasse 1 bis 2 Minuten ziehen und gieß dieselben Blätter ein zweites oder drittes Mal auf.",
+      "Zarte japanische Grüntees mögen noch kühleres Wasser und sehr kurze Zeiten, manchmal unter einer Minute."
+     ],
+     "q": "War Grüntee für dich schon einmal bitter, und woran lag es wohl?",
+     "c": "Brühe Grüntee bei etwa 75 °C für 90 Sekunden, gieß die Blätter erneut auf und vergleiche beide Tassen."
+    },
+    "es": {
+     "t": "Preparar el té verde con mimo",
+     "g": "Prepara el té verde con temperaturas más bajas e infusiones cortas para que quede dulce y no áspero.",
+     "p": [
+      "Usa agua a unos 70-80 °C; el agua hirviendo quema las hojas y saca amargor.",
+      "Infusiona 1 o 2 minutos la primera taza y vuelve a usar las mismas hojas una segunda o tercera vez.",
+      "Los verdes japoneses delicados prefieren agua aún más fresca y tiempos muy cortos, a veces menos de un minuto."
+     ],
+     "q": "¿Alguna vez el té verde te ha sabido amargo? ¿Qué crees que lo causó?",
+     "c": "Prepara un té verde a unos 75 °C durante 90 segundos, reinfusiona las hojas y compara ambas tazas."
+    },
+    "fr": {
+     "t": "Infuser le thé vert en douceur",
+     "g": "Infuse le thé vert avec une eau moins chaude et peu de temps pour qu'il reste doux plutôt qu'âpre.",
+     "p": [
+      "Utilise une eau vers 70 à 80 °C ; l'eau bouillante ébouillante les feuilles et libère l'amertume.",
+      "Infuse 1 à 2 minutes la première tasse, puis réinfuse les mêmes feuilles une deuxième ou troisième fois.",
+      "Les verts japonais délicats aiment une eau encore plus douce et des infusions très courtes, parfois moins d'une minute."
+     ],
+     "q": "Le thé vert t'a-t-il déjà semblé amer, et pourquoi selon toi ?",
+     "c": "Infuse un thé vert à environ 75 °C pendant 90 secondes, réinfuse les feuilles et compare les deux tasses."
+    },
+    "it": {
+     "t": "Preparare il tè verde con delicatezza",
+     "g": "Prepara il tè verde con temperature più basse e infusioni brevi, così resta dolce invece che aspro.",
+     "p": [
+      "Usa acqua a circa 70-80 °C; l'acqua bollente scotta le foglie e tira fuori l'amaro.",
+      "Lascia in infusione 1-2 minuti la prima tazza, poi riusa le stesse foglie una seconda o terza volta.",
+      "I verdi giapponesi delicati amano acqua ancora più fresca e tempi brevissimi, a volte meno di un minuto."
+     ],
+     "q": "Il tè verde ti è mai sembrato amaro? Secondo te perché?",
+     "c": "Prepara un tè verde a circa 75 °C per 90 secondi, rinfondi le foglie e confronta le due tazze."
+    },
+    "pt": {
+     "t": "Preparar o chá verde com cuidado",
+     "g": "Prepara o chá verde com temperaturas mais baixas e infusões curtas para ficar doce e não áspero.",
+     "p": [
+      "Usa água a cerca de 70 a 80 °C; a água a ferver queima as folhas e puxa o amargor.",
+      "Infunde 1 a 2 minutos a primeira chávena e volta a usar as mesmas folhas uma segunda ou terceira vez.",
+      "Os verdes japoneses delicados gostam de água ainda mais fresca e tempos muito curtos, às vezes menos de um minuto."
+     ],
+     "q": "O chá verde já te soube amargo? O que achas que causou isso?",
+     "c": "Prepara um chá verde a cerca de 75 °C durante 90 segundos, volta a infundir as folhas e compara as duas chávenas."
+    },
+    "pt_BR": {
+     "t": "Preparando o chá verde com carinho",
+     "g": "Prepare o chá verde com temperatura mais baixa e infusões curtas para ele ficar doce, não áspero.",
+     "p": [
+      "Use água a cerca de 70 a 80 °C; água fervendo queima as folhas e puxa o amargor.",
+      "Deixe 1 a 2 minutos na primeira xícara e reutilize as mesmas folhas uma segunda ou terceira vez.",
+      "Verdes japoneses delicados gostam de água ainda mais fria e tempos bem curtos, às vezes menos de um minuto."
+     ],
+     "q": "O chá verde já ficou amargo para você? O que acha que causou isso?",
+     "c": "Prepare um chá verde a cerca de 75 °C por 90 segundos, faça uma nova infusão e compare as duas xícaras."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet black tea",
+     "g": "Get to know black tea: fully oxidised leaves, rich malty flavours and the strong cups many countries love.",
+     "p": [
+      "The leaves are withered, rolled to break their cells, then left to oxidise fully until they turn dark.",
+      "In China it is called 'red tea', hong cha, after the reddish colour of the brewed liquor.",
+      "Famous origins include Assam and Darjeeling in India, Ceylon from Sri Lanka and Keemun from China."
+     ],
+     "q": "Is black tea your everyday tea, and how do you like to drink it?",
+     "c": "Brew a black tea and look at the colour of the liquor in a white cup: is it amber, copper or red?"
+    },
+    "de": {
+     "t": "Schwarztee kennenlernen",
+     "g": "Lerne Schwarztee kennen: voll oxidierte Blätter, kräftige malzige Aromen und die starken Tassen, die viele Länder lieben.",
+     "p": [
+      "Die Blätter werden gewelkt, gerollt, damit die Zellen aufbrechen, und dann voll oxidiert, bis sie dunkel sind.",
+      "In China heißt er roter Tee, Hong Cha, nach der rötlichen Farbe des Aufgusses.",
+      "Berühmte Herkünfte sind Assam und Darjeeling in Indien, Ceylon aus Sri Lanka und Keemun aus China."
+     ],
+     "q": "Ist Schwarztee dein Alltagstee, und wie trinkst du ihn am liebsten?",
+     "c": "Brühe einen Schwarztee und betrachte die Farbe in einer weißen Tasse: Bernstein, Kupfer oder Rot?"
+    },
+    "es": {
+     "t": "Conoce el té negro",
+     "g": "Conoce el té negro: hojas totalmente oxidadas, sabores ricos y malteados y las tazas intensas que adoran muchos países.",
+     "p": [
+      "Las hojas se marchitan, se enrollan para romper sus células y se dejan oxidar del todo hasta oscurecerse.",
+      "En China se llama 'té rojo', hong cha, por el color rojizo de la infusión.",
+      "Orígenes famosos son Assam y Darjeeling en la India, Ceilán en Sri Lanka y Keemun en China."
+     ],
+     "q": "¿Es el té negro tu té de cada día? ¿Cómo te gusta tomarlo?",
+     "c": "Prepara un té negro y mira el color de la infusión en una taza blanca: ¿ámbar, cobre o rojo?"
+    },
+    "fr": {
+     "t": "Découvrir le thé noir",
+     "g": "Fais connaissance avec le thé noir : feuilles entièrement oxydées, saveurs riches et maltées, des tasses corsées aimées partout.",
+     "p": [
+      "Les feuilles sont flétries, roulées pour briser leurs cellules, puis entièrement oxydées jusqu'à devenir sombres.",
+      "En Chine, on l'appelle « thé rouge », hong cha, à cause de la couleur rougeâtre de l'infusion.",
+      "Origines célèbres : Assam et Darjeeling en Inde, Ceylan au Sri Lanka et Keemun en Chine."
+     ],
+     "q": "Le thé noir est-il ton thé du quotidien, et comment aimes-tu le boire ?",
+     "c": "Infuse un thé noir et regarde la couleur de la liqueur dans une tasse blanche : ambre, cuivre ou rouge ?"
+    },
+    "it": {
+     "t": "Conosci il tè nero",
+     "g": "Conosci il tè nero: foglie completamente ossidate, sapori ricchi e maltati e le tazze forti amate da tanti Paesi.",
+     "p": [
+      "Le foglie vengono appassite, arrotolate per rompere le cellule e lasciate ossidare del tutto finché scuriscono.",
+      "In Cina si chiama 'tè rosso', hong cha, per il colore rossastro dell'infuso.",
+      "Origini famose sono Assam e Darjeeling in India, Ceylon in Sri Lanka e Keemun in Cina."
+     ],
+     "q": "Il tè nero è il tuo tè di tutti i giorni? Come ti piace berlo?",
+     "c": "Prepara un tè nero e guarda il colore dell'infuso in una tazza bianca: ambra, rame o rosso?"
+    },
+    "pt": {
+     "t": "Conhece o chá preto",
+     "g": "Conhece o chá preto: folhas totalmente oxidadas, sabores ricos e maltados e as chávenas fortes que muitos países adoram.",
+     "p": [
+      "As folhas são murchas, enroladas para romper as células e deixadas a oxidar por completo até escurecerem.",
+      "Na China chama-se 'chá vermelho', hong cha, pela cor avermelhada da infusão.",
+      "Origens famosas são Assam e Darjeeling na Índia, Ceilão no Sri Lanka e Keemun na China."
+     ],
+     "q": "O chá preto é o teu chá de todos os dias? Como gostas de o beber?",
+     "c": "Prepara um chá preto e olha para a cor da infusão numa chávena branca: âmbar, cobre ou vermelho?"
+    },
+    "pt_BR": {
+     "t": "Conheça o chá preto",
+     "g": "Conheça o chá preto: folhas totalmente oxidadas, sabores ricos e maltados e as xícaras fortes que muitos países amam.",
+     "p": [
+      "As folhas são murchadas, enroladas para romper as células e deixadas oxidar por completo até escurecerem.",
+      "Na China ele se chama 'chá vermelho', hong cha, pela cor avermelhada da infusão.",
+      "Origens famosas são Assam e Darjeeling na Índia, Ceilão no Sri Lanka e Keemun na China."
+     ],
+     "q": "O chá preto é o seu chá do dia a dia? Como você gosta de tomar?",
+     "c": "Prepare um chá preto e veja a cor da infusão numa xícara branca: âmbar, cobre ou vermelho?"
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brewing black tea well",
+     "g": "Brew black tea with near-boiling water and the right time, then decide on milk, lemon or nothing at all.",
+     "p": [
+      "Use water at about 90 to 100 °C and steep for 3 to 5 minutes, depending on the leaf size.",
+      "Small broken leaves brew fast and strong; whole leaves need the full time to open.",
+      "Strong teas like Assam welcome milk; lighter ones like Darjeeling are often best plain or with lemon."
+     ],
+     "q": "Do you take your black tea plain, with milk or with lemon?",
+     "c": "Brew one black tea and taste it plain first, then add a splash of milk or lemon and compare."
+    },
+    "de": {
+     "t": "Schwarztee richtig aufbrühen",
+     "g": "Brühe Schwarztee mit fast kochendem Wasser und passender Zeit und entscheide dann: Milch, Zitrone oder pur.",
+     "p": [
+      "Nimm Wasser mit etwa 90 bis 100 °C und lass ihn je nach Blattgröße 3 bis 5 Minuten ziehen.",
+      "Kleine Bruchblätter ziehen schnell und kräftig; ganze Blätter brauchen die volle Zeit, um sich zu öffnen.",
+      "Kräftige Tees wie Assam vertragen Milch; leichtere wie Darjeeling schmecken oft pur oder mit Zitrone am besten."
+     ],
+     "q": "Trinkst du Schwarztee pur, mit Milch oder mit Zitrone?",
+     "c": "Brühe einen Schwarztee, probiere ihn zuerst pur, gib dann etwas Milch oder Zitrone dazu und vergleiche."
+    },
+    "es": {
+     "t": "Preparar bien el té negro",
+     "g": "Prepara el té negro con agua casi hirviendo y el tiempo justo, y luego decide: leche, limón o nada.",
+     "p": [
+      "Usa agua a unos 90-100 °C e infusiona 3-5 minutos, según el tamaño de la hoja.",
+      "Las hojas rotas pequeñas infusionan rápido y fuerte; las enteras necesitan todo el tiempo para abrirse.",
+      "Los tés fuertes como el Assam admiten leche; los más ligeros, como el Darjeeling, suelen ir mejor solos o con limón."
+     ],
+     "q": "¿Tomas el té negro solo, con leche o con limón?",
+     "c": "Prepara un té negro, pruébalo solo primero, luego añade un chorrito de leche o limón y compara."
+    },
+    "fr": {
+     "t": "Bien infuser le thé noir",
+     "g": "Infuse le thé noir avec une eau presque bouillante et le bon temps, puis choisis : lait, citron ou rien du tout.",
+     "p": [
+      "Utilise une eau à environ 90 à 100 °C et infuse 3 à 5 minutes selon la taille des feuilles.",
+      "Les petites feuilles brisées infusent vite et fort ; les feuilles entières ont besoin de tout le temps pour s'ouvrir.",
+      "Les thés corsés comme l'Assam accueillent le lait ; les plus légers comme le Darjeeling se boivent souvent nature ou au citron."
+     ],
+     "q": "Prends-tu ton thé noir nature, au lait ou au citron ?",
+     "c": "Infuse un thé noir, goûte-le d'abord nature, puis ajoute un trait de lait ou de citron et compare."
+    },
+    "it": {
+     "t": "Preparare bene il tè nero",
+     "g": "Prepara il tè nero con acqua quasi bollente e il tempo giusto, poi decidi: latte, limone o niente.",
+     "p": [
+      "Usa acqua a circa 90-100 °C e lascia in infusione 3-5 minuti, secondo la dimensione delle foglie.",
+      "Le foglie spezzate piccole infondono in fretta e forte; quelle intere hanno bisogno di tutto il tempo per aprirsi.",
+      "I tè forti come l'Assam accolgono il latte; quelli più leggeri come il Darjeeling sono spesso migliori lisci o col limone."
+     ],
+     "q": "Bevi il tè nero liscio, con latte o con limone?",
+     "c": "Prepara un tè nero, assaggialo prima liscio, poi aggiungi un goccio di latte o limone e confronta."
+    },
+    "pt": {
+     "t": "Preparar bem o chá preto",
+     "g": "Prepara o chá preto com água quase a ferver e o tempo certo, e depois decide: leite, limão ou nada.",
+     "p": [
+      "Usa água a cerca de 90 a 100 °C e infunde 3 a 5 minutos, conforme o tamanho da folha.",
+      "As folhas partidas pequenas infundem depressa e forte; as inteiras precisam do tempo todo para abrir.",
+      "Chás fortes como o Assam aceitam bem leite; os mais leves, como o Darjeeling, ficam muitas vezes melhor simples ou com limão."
+     ],
+     "q": "Bebes o chá preto simples, com leite ou com limão?",
+     "c": "Prepara um chá preto, prova-o primeiro simples, depois junta um pouco de leite ou limão e compara."
+    },
+    "pt_BR": {
+     "t": "Preparando bem o chá preto",
+     "g": "Prepare o chá preto com água quase fervendo e o tempo certo, e depois decida: leite, limão ou nada.",
+     "p": [
+      "Use água a cerca de 90 a 100 °C e deixe 3 a 5 minutos, conforme o tamanho da folha.",
+      "Folhas quebradas pequenas infusionam rápido e forte; as inteiras precisam do tempo todo para abrir.",
+      "Chás fortes como o Assam combinam com leite; os mais leves, como o Darjeeling, costumam ficar melhores puros ou com limão."
+     ],
+     "q": "Você toma chá preto puro, com leite ou com limão?",
+     "c": "Prepare um chá preto, prove primeiro puro, depois coloque um pouco de leite ou limão e compare."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet oolong",
+     "g": "Discover oolong: partly oxidised tea that ranges from light and floral to dark and roasted.",
+     "p": [
+      "Oolong sits between green and black tea; its oxidation can be light, medium or heavy.",
+      "Leaves are often rolled into tight balls, as with Tieguanyin, or twisted into long strips, as with Wuyi rock teas.",
+      "Most famous oolongs come from Fujian in China and from Taiwan, known for its high-mountain teas."
+     ],
+     "q": "Have you ever tasted an oolong, and was it more floral or more roasted?",
+     "c": "Watch a rolled oolong leaf unfurl in hot water and notice how big it becomes."
+    },
+    "de": {
+     "t": "Oolong kennenlernen",
+     "g": "Entdecke Oolong: teilweise oxidierten Tee, der von hell und blumig bis dunkel und geröstet reicht.",
+     "p": [
+      "Oolong liegt zwischen Grün- und Schwarztee; seine Oxidation kann leicht, mittel oder stark sein.",
+      "Die Blätter werden oft zu festen Kugeln gerollt, wie bei Tieguanyin, oder zu langen Strängen gedreht, wie bei Wuyi-Felstees.",
+      "Die bekanntesten Oolongs stammen aus Fujian in China und aus Taiwan, berühmt für seine Hochlandtees."
+     ],
+     "q": "Hast du schon Oolong probiert, und war er eher blumig oder eher geröstet?",
+     "c": "Sieh zu, wie sich ein gerolltes Oolongblatt im heißen Wasser entfaltet, und staune, wie groß es wird."
+    },
+    "es": {
+     "t": "Conoce el oolong",
+     "g": "Descubre el oolong: un té parcialmente oxidado que va de ligero y floral a oscuro y tostado.",
+     "p": [
+      "El oolong está entre el té verde y el negro; su oxidación puede ser ligera, media o alta.",
+      "Las hojas suelen enrollarse en bolitas, como el Tieguanyin, o retorcerse en tiras largas, como los tés de roca de Wuyi.",
+      "Los oolong más famosos vienen de Fujian, en China, y de Taiwán, conocido por sus tés de alta montaña."
+     ],
+     "q": "¿Has probado alguna vez un oolong? ¿Era más floral o más tostado?",
+     "c": "Mira cómo se abre una hoja de oolong enrollada en agua caliente y fíjate en lo grande que se vuelve."
+    },
+    "fr": {
+     "t": "Découvrir l'oolong",
+     "g": "Découvre l'oolong : un thé partiellement oxydé, du léger et floral au sombre et torréfié.",
+     "p": [
+      "L'oolong se situe entre le thé vert et le noir ; son oxydation peut être légère, moyenne ou forte.",
+      "Les feuilles sont souvent roulées en perles, comme le Tieguanyin, ou torsadées en longs brins, comme les thés de roche de Wuyi.",
+      "Les oolongs les plus célèbres viennent du Fujian en Chine et de Taïwan, réputé pour ses thés de haute montagne."
+     ],
+     "q": "As-tu déjà goûté un oolong, et était-il plutôt floral ou torréfié ?",
+     "c": "Regarde une feuille d'oolong roulée se déplier dans l'eau chaude et remarque sa taille finale."
+    },
+    "it": {
+     "t": "Conosci l'oolong",
+     "g": "Scopri l'oolong: un tè parzialmente ossidato che va dal leggero e floreale allo scuro e tostato.",
+     "p": [
+      "L'oolong sta tra il tè verde e il nero; la sua ossidazione può essere leggera, media o forte.",
+      "Le foglie vengono spesso arrotolate in palline, come il Tieguanyin, o ritorte in lunghe strisce, come i tè di roccia del Wuyi.",
+      "Gli oolong più famosi vengono dal Fujian in Cina e da Taiwan, nota per i suoi tè d'alta montagna."
+     ],
+     "q": "Hai mai assaggiato un oolong? Era più floreale o più tostato?",
+     "c": "Guarda una foglia di oolong arrotolata aprirsi nell'acqua calda e nota quanto diventa grande."
+    },
+    "pt": {
+     "t": "Conhece o oolong",
+     "g": "Descobre o oolong: um chá parcialmente oxidado que vai do leve e floral ao escuro e tostado.",
+     "p": [
+      "O oolong fica entre o chá verde e o preto; a oxidação pode ser leve, média ou forte.",
+      "As folhas são muitas vezes enroladas em bolinhas, como o Tieguanyin, ou torcidas em tiras longas, como os chás de rocha de Wuyi.",
+      "Os oolongs mais famosos vêm de Fujian, na China, e de Taiwan, conhecida pelos chás de alta montanha."
+     ],
+     "q": "Já provaste um oolong? Era mais floral ou mais tostado?",
+     "c": "Vê uma folha de oolong enrolada abrir na água quente e repara no tamanho que ganha."
+    },
+    "pt_BR": {
+     "t": "Conheça o oolong",
+     "g": "Descubra o oolong: um chá parcialmente oxidado que vai do leve e floral ao escuro e tostado.",
+     "p": [
+      "O oolong fica entre o chá verde e o preto; a oxidação pode ser leve, média ou forte.",
+      "As folhas costumam ser enroladas em bolinhas, como o Tieguanyin, ou torcidas em tiras longas, como os chás de rocha de Wuyi.",
+      "Os oolongs mais famosos vêm de Fujian, na China, e de Taiwan, conhecida pelos chás de alta montanha."
+     ],
+     "q": "Você já provou um oolong? Era mais floral ou mais tostado?",
+     "c": "Veja uma folha de oolong enrolada se abrir na água quente e repare no tamanho que ela ganha."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet white tea",
+     "g": "Get to know white tea: minimal processing, silvery buds and soft, honeyed, delicate cups.",
+     "p": [
+      "White tea is simply withered and dried, with no rolling and no heat step to shape the leaf.",
+      "Silver Needle uses only downy buds; White Peony, Bai Mudan, mixes buds with young leaves.",
+      "The classic home of white tea is Fujian in China; its cups are pale, gentle and naturally sweet."
+     ],
+     "q": "Does a soft, delicate tea appeal to you, or do you prefer bold flavours?",
+     "c": "Brew a white tea at about 80 °C for 4 minutes and look for honey, hay or melon notes."
+    },
+    "de": {
+     "t": "Weißen Tee kennenlernen",
+     "g": "Lerne weißen Tee kennen: minimale Verarbeitung, silbrige Knospen und weiche, honigartige, zarte Tassen.",
+     "p": [
+      "Weißer Tee wird nur gewelkt und getrocknet, ohne Rollen und ohne Erhitzen zum Formen des Blattes.",
+      "Silver Needle besteht nur aus flaumigen Knospen; Weiße Pfingstrose, Bai Mudan, mischt Knospen und junge Blätter.",
+      "Die klassische Heimat des weißen Tees ist Fujian in China; seine Tassen sind hell, sanft und natürlich süß."
+     ],
+     "q": "Spricht dich ein weicher, zarter Tee an, oder magst du lieber kräftige Aromen?",
+     "c": "Brühe weißen Tee bei etwa 80 °C für 4 Minuten und suche nach Noten von Honig, Heu oder Melone."
+    },
+    "es": {
+     "t": "Conoce el té blanco",
+     "g": "Conoce el té blanco: procesado mínimo, brotes plateados y tazas suaves, melosas y delicadas.",
+     "p": [
+      "El té blanco solo se marchita y se seca, sin enrollar ni aplicar calor para dar forma a la hoja.",
+      "El Silver Needle usa solo brotes aterciopelados; la Peonía Blanca, Bai Mudan, mezcla brotes y hojas jóvenes.",
+      "Su hogar clásico es Fujian, en China; sus tazas son pálidas, suaves y dulces por naturaleza."
+     ],
+     "q": "¿Te atrae un té suave y delicado o prefieres sabores intensos?",
+     "c": "Prepara un té blanco a unos 80 °C durante 4 minutos y busca notas de miel, heno o melón."
+    },
+    "fr": {
+     "t": "Découvrir le thé blanc",
+     "g": "Fais connaissance avec le thé blanc : transformation minimale, bourgeons argentés, tasses douces, miellées et délicates.",
+     "p": [
+      "Le thé blanc est seulement flétri et séché, sans roulage ni chauffe pour façonner la feuille.",
+      "L'Aiguille d'argent n'utilise que des bourgeons duveteux ; la Pivoine blanche, Bai Mudan, mêle bourgeons et jeunes feuilles.",
+      "Son berceau classique est le Fujian en Chine ; ses tasses sont pâles, douces et naturellement sucrées."
+     ],
+     "q": "Un thé doux et délicat te tente-t-il, ou préfères-tu les saveurs franches ?",
+     "c": "Infuse un thé blanc à environ 80 °C pendant 4 minutes et cherche des notes de miel, de foin ou de melon."
+    },
+    "it": {
+     "t": "Conosci il tè bianco",
+     "g": "Conosci il tè bianco: lavorazione minima, germogli argentati e tazze morbide, mielate e delicate.",
+     "p": [
+      "Il tè bianco viene solo appassito ed essiccato, senza arrotolatura né calore per dare forma alla foglia.",
+      "Il Silver Needle usa solo germogli vellutati; la Peonia Bianca, Bai Mudan, unisce germogli e foglie giovani.",
+      "La sua patria classica è il Fujian in Cina; le sue tazze sono chiare, gentili e naturalmente dolci."
+     ],
+     "q": "Ti attira un tè morbido e delicato o preferisci sapori decisi?",
+     "c": "Prepara un tè bianco a circa 80 °C per 4 minuti e cerca note di miele, fieno o melone."
+    },
+    "pt": {
+     "t": "Conhece o chá branco",
+     "g": "Conhece o chá branco: processamento mínimo, rebentos prateados e chávenas suaves, melosas e delicadas.",
+     "p": [
+      "O chá branco é apenas murcho e seco, sem enrolar nem aquecer para dar forma à folha.",
+      "O Silver Needle usa só rebentos aveludados; a Peónia Branca, Bai Mudan, junta rebentos e folhas jovens.",
+      "A sua casa clássica é Fujian, na China; as chávenas são claras, suaves e naturalmente doces."
+     ],
+     "q": "Um chá suave e delicado atrai-te, ou preferes sabores intensos?",
+     "c": "Prepara um chá branco a cerca de 80 °C durante 4 minutos e procura notas de mel, feno ou melão."
+    },
+    "pt_BR": {
+     "t": "Conheça o chá branco",
+     "g": "Conheça o chá branco: processamento mínimo, brotos prateados e xícaras suaves, melosas e delicadas.",
+     "p": [
+      "O chá branco é apenas murchado e seco, sem enrolar nem aquecer para dar forma à folha.",
+      "O Silver Needle usa só brotos aveludados; a Peônia Branca, Bai Mudan, mistura brotos e folhas jovens.",
+      "Sua casa clássica é Fujian, na China; as xícaras são claras, suaves e naturalmente doces."
+     ],
+     "q": "Um chá suave e delicado te atrai, ou você prefere sabores intensos?",
+     "c": "Prepare um chá branco a cerca de 80 °C por 4 minutos e procure notas de mel, feno ou melão."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet yellow tea",
+     "g": "Discover yellow tea, a rare style with an extra gentle 'yellowing' step that gives a mellow, smooth taste.",
+     "p": [
+      "Yellow tea starts like green tea, but the warm leaves are then wrapped or piled so they slowly turn yellowish.",
+      "This step, called men huang or 'sealed yellowing', softens grassy notes and makes the cup rounder.",
+      "It is made in small amounts in China; Junshan Yinzhen and Huoshan Huangya are well-known examples."
+     ],
+     "q": "Had you ever heard of yellow tea before today?",
+     "c": "Compare the smell of a green tea with the description of yellow tea: which sounds more like your taste?"
+    },
+    "de": {
+     "t": "Gelben Tee kennenlernen",
+     "g": "Entdecke gelben Tee, einen seltenen Stil mit einem zusätzlichen sanften Gelbungsschritt für weichen, milden Geschmack.",
+     "p": [
+      "Gelber Tee beginnt wie Grüntee, doch die warmen Blätter werden dann eingehüllt oder gehäuft und werden langsam gelblich.",
+      "Dieser Schritt, Men Huang oder versiegeltes Gelben genannt, mildert grasige Noten und macht die Tasse runder.",
+      "Er wird in kleinen Mengen in China hergestellt; Junshan Yinzhen und Huoshan Huangya sind bekannte Beispiele."
+     ],
+     "q": "Hattest du vor heute schon einmal von gelbem Tee gehört?",
+     "c": "Vergleiche den Duft eines Grüntees mit der Beschreibung von gelbem Tee: Was passt eher zu deinem Geschmack?"
+    },
+    "es": {
+     "t": "Conoce el té amarillo",
+     "g": "Descubre el té amarillo, un estilo raro con un paso extra y suave de 'amarilleo' que da un sabor suave y redondo.",
+     "p": [
+      "Empieza como un té verde, pero luego las hojas tibias se envuelven o amontonan y amarillean poco a poco.",
+      "Este paso, llamado men huang o 'amarilleo sellado', suaviza las notas herbáceas y redondea la taza.",
+      "Se elabora en pequeñas cantidades en China; Junshan Yinzhen y Huoshan Huangya son ejemplos conocidos."
+     ],
+     "q": "¿Habías oído hablar del té amarillo antes de hoy?",
+     "c": "Compara el olor de un té verde con la descripción del té amarillo: ¿cuál suena más a tu gusto?"
+    },
+    "fr": {
+     "t": "Découvrir le thé jaune",
+     "g": "Découvre le thé jaune, un style rare avec une étape douce de « jaunissement » qui donne un goût rond et soyeux.",
+     "p": [
+      "Il commence comme un thé vert, puis les feuilles tièdes sont enveloppées ou mises en tas et jaunissent lentement.",
+      "Cette étape, appelée men huang ou « jaunissement à l'étouffée », adoucit les notes herbacées et arrondit la tasse.",
+      "Il est produit en petites quantités en Chine ; Junshan Yinzhen et Huoshan Huangya en sont des exemples connus."
+     ],
+     "q": "Avais-tu déjà entendu parler du thé jaune avant aujourd'hui ?",
+     "c": "Compare l'odeur d'un thé vert avec la description du thé jaune : lequel ressemble le plus à ton goût ?"
+    },
+    "it": {
+     "t": "Conosci il tè giallo",
+     "g": "Scopri il tè giallo, uno stile raro con un delicato passaggio di 'ingiallimento' che dà un gusto morbido e rotondo.",
+     "p": [
+      "Inizia come un tè verde, ma poi le foglie tiepide vengono avvolte o ammucchiate e ingialliscono lentamente.",
+      "Questo passaggio, chiamato men huang o 'ingiallimento sigillato', ammorbidisce le note erbacee e arrotonda la tazza.",
+      "Si produce in piccole quantità in Cina; Junshan Yinzhen e Huoshan Huangya sono esempi noti."
+     ],
+     "q": "Avevi mai sentito parlare del tè giallo prima di oggi?",
+     "c": "Confronta il profumo di un tè verde con la descrizione del tè giallo: quale ti sembra più adatto ai tuoi gusti?"
+    },
+    "pt": {
+     "t": "Conhece o chá amarelo",
+     "g": "Descobre o chá amarelo, um estilo raro com um passo extra e suave de 'amarelecimento' que dá um sabor macio e redondo.",
+     "p": [
+      "Começa como um chá verde, mas depois as folhas mornas são embrulhadas ou amontoadas e amarelecem devagar.",
+      "Este passo, chamado men huang ou 'amarelecimento abafado', suaviza as notas herbáceas e arredonda a chávena.",
+      "Faz-se em pequenas quantidades na China; Junshan Yinzhen e Huoshan Huangya são exemplos conhecidos."
+     ],
+     "q": "Já tinhas ouvido falar de chá amarelo antes de hoje?",
+     "c": "Compara o aroma de um chá verde com a descrição do chá amarelo: qual parece mais ao teu gosto?"
+    },
+    "pt_BR": {
+     "t": "Conheça o chá amarelo",
+     "g": "Descubra o chá amarelo, um estilo raro com uma etapa extra e suave de 'amarelamento' que dá um sabor macio e redondo.",
+     "p": [
+      "Começa como um chá verde, mas depois as folhas mornas são embrulhadas ou empilhadas e amarelam devagar.",
+      "Essa etapa, chamada men huang ou 'amarelamento abafado', suaviza as notas herbáceas e arredonda a xícara.",
+      "É feito em pequenas quantidades na China; Junshan Yinzhen e Huoshan Huangya são exemplos conhecidos."
+     ],
+     "q": "Você já tinha ouvido falar de chá amarelo antes de hoje?",
+     "c": "Compare o aroma de um chá verde com a descrição do chá amarelo: qual parece mais com o seu gosto?"
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet dark tea and pu-erh",
+     "g": "Explore dark tea: fermented teas from China with earthy flavours that can change as they age.",
+     "p": [
+      "Dark tea, hei cha, goes through a microbial fermentation after the leaf is made, unlike oxidation alone.",
+      "Pu-erh from Yunnan is the most famous; it is often pressed into cakes or bricks.",
+      "Raw pu-erh ages slowly over years; ripe pu-erh is fermented faster in piles and tastes earthy and smooth."
+     ],
+     "q": "Does the idea of a tea that changes with age sound interesting to you?",
+     "c": "If you can find a dark tea, rinse it briefly with hot water first, then brew and describe its aroma."
+    },
+    "de": {
+     "t": "Dunkler Tee und Pu-Erh",
+     "g": "Entdecke dunklen Tee: fermentierte Tees aus China mit erdigen Aromen, die sich mit dem Alter verändern können.",
+     "p": [
+      "Dunkler Tee, Hei Cha, durchläuft nach der Herstellung eine mikrobielle Fermentation, nicht nur eine Oxidation.",
+      "Pu-Erh aus Yunnan ist der bekannteste; er wird oft zu Fladen oder Ziegeln gepresst.",
+      "Roher Pu-Erh reift langsam über Jahre; reifer Pu-Erh wird in Haufen schneller fermentiert und schmeckt erdig und weich."
+     ],
+     "q": "Klingt ein Tee, der sich mit dem Alter verändert, spannend für dich?",
+     "c": "Falls du dunklen Tee findest, spüle ihn kurz mit heißem Wasser, brühe ihn dann auf und beschreibe den Duft."
+    },
+    "es": {
+     "t": "Conoce el té oscuro y el pu-erh",
+     "g": "Explora el té oscuro: tés fermentados de China con sabores terrosos que pueden cambiar con los años.",
+     "p": [
+      "El té oscuro, hei cha, pasa por una fermentación microbiana tras elaborar la hoja, no solo por oxidación.",
+      "El pu-erh de Yunnan es el más famoso; a menudo se prensa en tortas o ladrillos.",
+      "El pu-erh crudo envejece despacio durante años; el maduro se fermenta más rápido en pilas y sabe terroso y suave."
+     ],
+     "q": "¿Te parece interesante la idea de un té que cambia con la edad?",
+     "c": "Si encuentras un té oscuro, enjuágalo un momento con agua caliente, luego prepáralo y describe su aroma."
+    },
+    "fr": {
+     "t": "Le thé sombre et le pu-erh",
+     "g": "Explore le thé sombre : des thés fermentés de Chine aux saveurs terreuses, qui peuvent évoluer en vieillissant.",
+     "p": [
+      "Le thé sombre, hei cha, subit une fermentation microbienne après sa fabrication, au-delà de la simple oxydation.",
+      "Le pu-erh du Yunnan est le plus célèbre ; il est souvent pressé en galettes ou en briques.",
+      "Le pu-erh cru vieillit lentement pendant des années ; le pu-erh cuit fermente plus vite en tas et a un goût terreux et doux."
+     ],
+     "q": "L'idée d'un thé qui évolue avec l'âge t'intrigue-t-elle ?",
+     "c": "Si tu trouves un thé sombre, rince-le brièvement à l'eau chaude, puis infuse-le et décris son arôme."
+    },
+    "it": {
+     "t": "Il tè scuro e il pu-erh",
+     "g": "Esplora il tè scuro: tè fermentati cinesi dai sapori terrosi che possono cambiare con l'invecchiamento.",
+     "p": [
+      "Il tè scuro, hei cha, subisce una fermentazione microbica dopo la lavorazione, non solo un'ossidazione.",
+      "Il pu-erh dello Yunnan è il più famoso; spesso viene pressato in dischi o mattonelle.",
+      "Il pu-erh crudo invecchia lentamente negli anni; quello maturo fermenta più in fretta in cumuli e sa di terra, morbido."
+     ],
+     "q": "L'idea di un tè che cambia con l'età ti incuriosisce?",
+     "c": "Se trovi un tè scuro, sciacqualo brevemente con acqua calda, poi preparalo e descrivi il suo aroma."
+    },
+    "pt": {
+     "t": "Conhece o chá escuro e o pu-erh",
+     "g": "Explora o chá escuro: chás fermentados da China com sabores terrosos que podem mudar com o envelhecimento.",
+     "p": [
+      "O chá escuro, hei cha, passa por uma fermentação microbiana depois de feito, e não apenas por oxidação.",
+      "O pu-erh de Yunnan é o mais famoso; é muitas vezes prensado em bolos ou tijolos.",
+      "O pu-erh cru envelhece devagar ao longo de anos; o maduro fermenta mais depressa em pilhas e sabe a terra, macio."
+     ],
+     "q": "A ideia de um chá que muda com a idade parece-te interessante?",
+     "c": "Se encontrares um chá escuro, passa-o rapidamente por água quente, depois prepara-o e descreve o aroma."
+    },
+    "pt_BR": {
+     "t": "Conheça o chá escuro e o pu-erh",
+     "g": "Explore o chá escuro: chás fermentados da China com sabores terrosos que podem mudar com o envelhecimento.",
+     "p": [
+      "O chá escuro, hei cha, passa por uma fermentação microbiana depois de pronto, e não só por oxidação.",
+      "O pu-erh de Yunnan é o mais famoso; muitas vezes é prensado em discos ou tijolos.",
+      "O pu-erh cru envelhece devagar ao longo dos anos; o maduro fermenta mais rápido em pilhas e tem sabor terroso e macio."
+     ],
+     "q": "A ideia de um chá que muda com a idade parece interessante para você?",
+     "c": "Se encontrar um chá escuro, enxágue rapidamente com água quente, depois prepare e descreva o aroma."
+    }
+   }
+  }
+ ]
+}

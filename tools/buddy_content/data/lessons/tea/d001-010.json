@@ -1,0 +1,835 @@
+{
+ "topic": "tea",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What tea really is",
+     "g": "Discover that every true tea, from green to black, comes from a single plant: Camellia sinensis.",
+     "p": [
+      "True tea is made from the leaves and buds of Camellia sinensis, an evergreen shrub of the camellia family.",
+      "Two main varieties are grown: sinensis, with small leaves, and assamica, with larger leaves.",
+      "The same leaf becomes green, black or oolong tea depending on how it is processed after picking."
+     ],
+     "q": "What tea do you drink most often, and did you know it came from this one plant?",
+     "c": "Look at the tea you have at home today and find out whether it is true tea or something else."
+    },
+    "de": {
+     "t": "Was Tee wirklich ist",
+     "g": "Entdecke, dass jeder echte Tee, ob grün oder schwarz, von einer einzigen Pflanze stammt: Camellia sinensis.",
+     "p": [
+      "Echter Tee entsteht aus Blättern und Knospen von Camellia sinensis, einem immergrünen Kameliengewächs.",
+      "Angebaut werden zwei Hauptvarietäten: sinensis mit kleinen Blättern und assamica mit großen Blättern.",
+      "Aus demselben Blatt wird Grün-, Schwarz- oder Oolongtee, je nachdem, wie es nach der Ernte verarbeitet wird."
+     ],
+     "q": "Welchen Tee trinkst du am häufigsten, und wusstest du, dass er von dieser einen Pflanze stammt?",
+     "c": "Schau dir heute deinen Tee zu Hause an und finde heraus, ob es echter Tee ist oder etwas anderes."
+    },
+    "es": {
+     "t": "Qué es realmente el té",
+     "g": "Descubre que todo té verdadero, del verde al negro, procede de una sola planta: la Camellia sinensis.",
+     "p": [
+      "El té verdadero se hace con hojas y brotes de Camellia sinensis, un arbusto perenne de la familia de las camelias.",
+      "Se cultivan dos variedades principales: sinensis, de hoja pequeña, y assamica, de hoja más grande.",
+      "La misma hoja se convierte en té verde, negro u oolong según cómo se procese después de la cosecha."
+     ],
+     "q": "¿Qué té bebes más a menudo? ¿Sabías que viene de esta única planta?",
+     "c": "Mira hoy el té que tienes en casa y averigua si es té verdadero o algo distinto."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le thé",
+     "g": "Découvre que tout vrai thé, du vert au noir, vient d'une seule plante : le Camellia sinensis.",
+     "p": [
+      "Le vrai thé est fait des feuilles et bourgeons du Camellia sinensis, un arbuste persistant de la famille des camélias.",
+      "Deux variétés principales sont cultivées : sinensis, à petites feuilles, et assamica, à grandes feuilles.",
+      "La même feuille devient thé vert, noir ou oolong selon la façon dont on la transforme après la cueillette."
+     ],
+     "q": "Quel thé bois-tu le plus souvent, et savais-tu qu'il vient de cette seule plante ?",
+     "c": "Regarde aujourd'hui le thé que tu as chez toi et vérifie s'il s'agit d'un vrai thé ou d'autre chose."
+    },
+    "it": {
+     "t": "Che cos'è davvero il tè",
+     "g": "Scopri che ogni vero tè, dal verde al nero, nasce da una sola pianta: la Camellia sinensis.",
+     "p": [
+      "Il vero tè si ricava da foglie e germogli di Camellia sinensis, un arbusto sempreverde della famiglia delle camelie.",
+      "Si coltivano due varietà principali: sinensis, a foglia piccola, e assamica, a foglia più grande.",
+      "La stessa foglia diventa tè verde, nero o oolong a seconda di come viene lavorata dopo la raccolta."
+     ],
+     "q": "Quale tè bevi più spesso? Sapevi che viene da questa unica pianta?",
+     "c": "Guarda oggi il tè che hai in casa e scopri se è vero tè o qualcos'altro."
+    },
+    "pt": {
+     "t": "O que é realmente o chá",
+     "g": "Descobre que todo o chá verdadeiro, do verde ao preto, vem de uma só planta: a Camellia sinensis.",
+     "p": [
+      "O chá verdadeiro faz-se com folhas e rebentos da Camellia sinensis, um arbusto perene da família das camélias.",
+      "Cultivam-se duas variedades principais: sinensis, de folha pequena, e assamica, de folha maior.",
+      "A mesma folha torna-se chá verde, preto ou oolong conforme a forma como é processada depois da colheita."
+     ],
+     "q": "Que chá bebes mais vezes? Sabias que vem desta única planta?",
+     "c": "Olha hoje para o chá que tens em casa e descobre se é chá verdadeiro ou outra coisa."
+    },
+    "pt_BR": {
+     "t": "O que é o chá de verdade",
+     "g": "Descubra que todo chá verdadeiro, do verde ao preto, vem de uma única planta: a Camellia sinensis.",
+     "p": [
+      "O chá verdadeiro é feito com folhas e brotos da Camellia sinensis, um arbusto perene da família das camélias.",
+      "São cultivadas duas variedades principais: sinensis, de folha pequena, e assamica, de folha maior.",
+      "A mesma folha vira chá verde, preto ou oolong dependendo de como é processada depois da colheita."
+     ],
+     "q": "Qual chá você bebe com mais frequência? Sabia que ele vem dessa única planta?",
+     "c": "Olhe hoje o chá que você tem em casa e descubra se é chá de verdade ou outra coisa."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The six families of tea",
+     "g": "Learn the six tea families and the one idea that separates them: how the leaf is processed.",
+     "p": [
+      "The six families are white, green, yellow, oolong, black and dark tea.",
+      "Oxidation, the browning of the leaf in air, is the key: green is stopped early, black is fully oxidised.",
+      "White tea is barely handled, oolong is partly oxidised, and dark tea is aged or fermented."
+     ],
+     "q": "Which of the six families have you already tasted, and which sounds most curious to you?",
+     "c": "Sort the teas in your cupboard into the six families, even if you only have one or two."
+    },
+    "de": {
+     "t": "Die sechs Teefamilien",
+     "g": "Lerne die sechs Teefamilien kennen und die eine Idee, die sie trennt: die Verarbeitung des Blattes.",
+     "p": [
+      "Die sechs Familien sind weißer, grüner, gelber Tee, Oolong, schwarzer und dunkler Tee.",
+      "Entscheidend ist die Oxidation, das Bräunen an der Luft: Grüntee wird früh gestoppt, Schwarztee voll oxidiert.",
+      "Weißer Tee wird kaum bearbeitet, Oolong teilweise oxidiert, dunkler Tee gereift oder fermentiert."
+     ],
+     "q": "Welche der sechs Familien hast du schon probiert, und welche macht dich am neugierigsten?",
+     "c": "Sortiere die Tees in deinem Schrank nach den sechs Familien, auch wenn du nur einen oder zwei hast."
+    },
+    "es": {
+     "t": "Las seis familias del té",
+     "g": "Conoce las seis familias del té y la idea que las separa: cómo se procesa la hoja.",
+     "p": [
+      "Las seis familias son el té blanco, verde, amarillo, oolong, negro y oscuro.",
+      "La clave es la oxidación, el oscurecimiento de la hoja al aire: el verde se detiene pronto, el negro se oxida del todo.",
+      "El blanco apenas se manipula, el oolong se oxida en parte y el té oscuro se envejece o fermenta."
+     ],
+     "q": "¿Cuáles de las seis familias has probado ya y cuál te despierta más curiosidad?",
+     "c": "Clasifica los tés de tu armario en las seis familias, aunque solo tengas uno o dos."
+    },
+    "fr": {
+     "t": "Les six familles de thé",
+     "g": "Apprends les six familles de thé et l'idée qui les distingue : la manière de transformer la feuille.",
+     "p": [
+      "Les six familles sont le thé blanc, vert, jaune, oolong, noir et sombre.",
+      "La clé est l'oxydation, le brunissement à l'air : le vert est arrêté tôt, le noir est oxydé complètement.",
+      "Le blanc est à peine travaillé, l'oolong est partiellement oxydé et le thé sombre est vieilli ou fermenté."
+     ],
+     "q": "Lesquelles des six familles as-tu déjà goûtées, et laquelle t'intrigue le plus ?",
+     "c": "Classe les thés de ton placard dans les six familles, même si tu n'en as qu'un ou deux."
+    },
+    "it": {
+     "t": "Le sei famiglie del tè",
+     "g": "Impara le sei famiglie del tè e l'idea che le distingue: come viene lavorata la foglia.",
+     "p": [
+      "Le sei famiglie sono tè bianco, verde, giallo, oolong, nero e scuro.",
+      "La chiave è l'ossidazione, l'imbrunimento della foglia all'aria: il verde si ferma presto, il nero si ossida del tutto.",
+      "Il bianco è lavorato pochissimo, l'oolong è ossidato in parte e il tè scuro viene invecchiato o fermentato."
+     ],
+     "q": "Quali delle sei famiglie hai già assaggiato, e quale ti incuriosisce di più?",
+     "c": "Dividi i tè della tua dispensa nelle sei famiglie, anche se ne hai solo uno o due."
+    },
+    "pt": {
+     "t": "As seis famílias do chá",
+     "g": "Conhece as seis famílias do chá e a ideia que as separa: a forma como a folha é processada.",
+     "p": [
+      "As seis famílias são o chá branco, verde, amarelo, oolong, preto e escuro.",
+      "A chave é a oxidação, o escurecimento da folha ao ar: o verde é travado cedo, o preto oxida por completo.",
+      "O branco quase não é manuseado, o oolong é parcialmente oxidado e o chá escuro é envelhecido ou fermentado."
+     ],
+     "q": "Quais das seis famílias já provaste e qual te desperta mais curiosidade?",
+     "c": "Arruma os chás do teu armário pelas seis famílias, mesmo que só tenhas um ou dois."
+    },
+    "pt_BR": {
+     "t": "As seis famílias do chá",
+     "g": "Conheça as seis famílias do chá e a ideia que as separa: o jeito como a folha é processada.",
+     "p": [
+      "As seis famílias são o chá branco, verde, amarelo, oolong, preto e escuro.",
+      "A chave é a oxidação, o escurecimento da folha no ar: o verde é interrompido cedo, o preto oxida por completo.",
+      "O branco quase não é manipulado, o oolong é parcialmente oxidado e o chá escuro é envelhecido ou fermentado."
+     ],
+     "q": "Quais das seis famílias você já provou e qual te deixa mais curioso?",
+     "c": "Separe os chás do seu armário nas seis famílias, mesmo que você tenha só um ou dois."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea or herbal infusion?",
+     "g": "Understand why chamomile, mint and rooibos are tisanes, not tea, and why that changes the flavour.",
+     "p": [
+      "A tisane, or herbal infusion, is made from flowers, herbs, roots or fruit, not from Camellia sinensis.",
+      "Tisanes such as chamomile, mint and rooibos are naturally caffeine-free; true tea contains caffeine.",
+      "Tisanes often need boiling water and longer steeps, and they rarely turn bitter the way tea can."
+     ],
+     "q": "Do you have a favourite herbal infusion, and did you always call it tea?",
+     "c": "Read the ingredients of one 'tea' at home and decide: true tea, tisane or a blend of both?"
+    },
+    "de": {
+     "t": "Tee oder Kräuteraufguss?",
+     "g": "Verstehe, warum Kamille, Minze und Rooibos Kräuteraufgüsse sind und kein Tee, und was das für den Geschmack heißt.",
+     "p": [
+      "Ein Kräuteraufguss entsteht aus Blüten, Kräutern, Wurzeln oder Früchten, nicht aus Camellia sinensis.",
+      "Aufgüsse wie Kamille, Minze und Rooibos sind von Natur aus koffeinfrei, echter Tee enthält Koffein.",
+      "Kräuteraufgüsse vertragen meist kochendes Wasser und lange Ziehzeiten und werden selten bitter."
+     ],
+     "q": "Hast du einen Lieblings-Kräuteraufguss, und hast du ihn immer Tee genannt?",
+     "c": "Lies die Zutaten eines Tees bei dir zu Hause: echter Tee, Kräuteraufguss oder eine Mischung aus beidem?"
+    },
+    "es": {
+     "t": "¿Té o infusión de hierbas?",
+     "g": "Entiende por qué la manzanilla, la menta y el rooibos son infusiones y no té, y por qué cambia el sabor.",
+     "p": [
+      "Una infusión de hierbas se hace con flores, hierbas, raíces o frutas, no con Camellia sinensis.",
+      "Infusiones como manzanilla, menta y rooibos no tienen cafeína de forma natural; el té verdadero sí la tiene.",
+      "Suelen aguantar agua hirviendo e infusiones largas, y casi nunca amargan como puede hacerlo el té."
+     ],
+     "q": "¿Tienes una infusión favorita? ¿Siempre la has llamado té?",
+     "c": "Lee los ingredientes de un 'té' que tengas en casa y decide: ¿té verdadero, infusión o mezcla de ambos?"
+    },
+    "fr": {
+     "t": "Thé ou infusion ?",
+     "g": "Comprends pourquoi la camomille, la menthe et le rooibos sont des infusions et non du thé, et ce que ça change en tasse.",
+     "p": [
+      "Une infusion, ou tisane, se fait avec des fleurs, herbes, racines ou fruits, pas avec le Camellia sinensis.",
+      "Les tisanes comme la camomille, la menthe ou le rooibos sont naturellement sans caféine ; le vrai thé en contient.",
+      "Elles supportent souvent l'eau bouillante et une longue infusion, et deviennent rarement amères comme le thé."
+     ],
+     "q": "As-tu une tisane préférée, et l'as-tu toujours appelée thé ?",
+     "c": "Lis les ingrédients d'un « thé » chez toi et décide : vrai thé, tisane ou mélange des deux ?"
+    },
+    "it": {
+     "t": "Tè o tisana?",
+     "g": "Capisci perché camomilla, menta e rooibos sono tisane e non tè, e perché questo cambia il sapore.",
+     "p": [
+      "Una tisana si prepara con fiori, erbe, radici o frutta, non con la Camellia sinensis.",
+      "Tisane come camomilla, menta e rooibos sono naturalmente prive di caffeina; il vero tè invece la contiene.",
+      "Spesso vogliono acqua bollente e infusioni lunghe, e raramente diventano amare come può fare il tè."
+     ],
+     "q": "Hai una tisana preferita? L'hai sempre chiamata tè?",
+     "c": "Leggi gli ingredienti di un 'tè' che hai in casa e decidi: vero tè, tisana o un misto dei due?"
+    },
+    "pt": {
+     "t": "Chá ou infusão de ervas?",
+     "g": "Percebe porque a camomila, a hortelã e o rooibos são infusões e não chá, e porque isso muda o sabor.",
+     "p": [
+      "Uma infusão de ervas faz-se com flores, ervas, raízes ou frutos, não com Camellia sinensis.",
+      "Infusões como camomila, hortelã e rooibos não têm cafeína por natureza; o chá verdadeiro tem.",
+      "Costumam aguentar água a ferver e infusões longas, e raramente ficam amargas como o chá pode ficar."
+     ],
+     "q": "Tens uma infusão preferida? Sempre lhe chamaste chá?",
+     "c": "Lê os ingredientes de um 'chá' que tenhas em casa e decide: chá verdadeiro, infusão ou mistura dos dois?"
+    },
+    "pt_BR": {
+     "t": "Chá ou infusão de ervas?",
+     "g": "Entenda por que camomila, hortelã e rooibos são infusões e não chá, e por que isso muda o sabor.",
+     "p": [
+      "Uma infusão de ervas é feita com flores, ervas, raízes ou frutas, não com Camellia sinensis.",
+      "Infusões como camomila, hortelã e rooibos não têm cafeína naturalmente; o chá verdadeiro tem.",
+      "Elas costumam aguentar água fervente e infusões longas, e raramente amargam como o chá pode amargar."
+     ],
+     "q": "Você tem uma infusão favorita? Sempre chamou ela de chá?",
+     "c": "Leia os ingredientes de um 'chá' que você tem em casa e decida: chá verdadeiro, infusão ou mistura dos dois?"
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first proper cup",
+     "g": "Brew a really good cup with a simple method: good water, the right amount of leaf, a timer and a clean cup.",
+     "p": [
+      "Start with fresh water and heat it to suit your tea; boiling is fine for most black teas.",
+      "Use about 2 to 3 grams of leaf, roughly one teaspoon, for a cup of 200 to 250 ml.",
+      "Set a timer, then remove the leaves or the bag so the tea stops steeping at the right moment."
+     ],
+     "q": "How do you usually make your tea, and which step do you think you could improve?",
+     "c": "Brew one cup today with a timer and a measured spoon of leaf, and notice how it tastes."
+    },
+    "de": {
+     "t": "Deine erste richtige Tasse",
+     "g": "Brühe eine wirklich gute Tasse mit einer einfachen Methode: gutes Wasser, die richtige Blattmenge, ein Timer, eine saubere Tasse.",
+     "p": [
+      "Nimm frisches Wasser und erhitze es passend zum Tee; für die meisten Schwarztees ist kochendes Wasser gut.",
+      "Rechne mit etwa 2 bis 3 Gramm Blatt, ungefähr einem Teelöffel, für eine Tasse von 200 bis 250 ml.",
+      "Stell einen Timer und nimm dann Blätter oder Beutel heraus, damit der Tee im richtigen Moment aufhört zu ziehen."
+     ],
+     "q": "Wie bereitest du deinen Tee normalerweise zu, und welchen Schritt könntest du verbessern?",
+     "c": "Brühe heute eine Tasse mit Timer und abgemessenem Löffel Blatt und achte darauf, wie sie schmeckt."
+    },
+    "es": {
+     "t": "Tu primera taza bien hecha",
+     "g": "Prepara una taza realmente buena con un método sencillo: buena agua, la hoja justa, un temporizador y una taza limpia.",
+     "p": [
+      "Empieza con agua fresca y caliéntala según el té; para la mayoría de tés negros vale el agua hirviendo.",
+      "Usa unos 2 o 3 gramos de hoja, más o menos una cucharadita, para una taza de 200 a 250 ml.",
+      "Pon un temporizador y luego retira las hojas o la bolsita para que el té deje de infusionar a tiempo."
+     ],
+     "q": "¿Cómo sueles preparar tu té y qué paso crees que podrías mejorar?",
+     "c": "Prepara hoy una taza con temporizador y una cucharadita medida de hoja, y fíjate en su sabor."
+    },
+    "fr": {
+     "t": "Ta première vraie tasse",
+     "g": "Prépare une tasse vraiment bonne avec une méthode simple : une bonne eau, la bonne dose de feuilles, un minuteur, une tasse propre.",
+     "p": [
+      "Pars d'une eau fraîche chauffée selon le thé ; l'eau bouillante convient à la plupart des thés noirs.",
+      "Compte environ 2 à 3 grammes de feuilles, soit à peu près une cuillère à café, pour une tasse de 200 à 250 ml.",
+      "Lance un minuteur, puis retire les feuilles ou le sachet pour arrêter l'infusion au bon moment."
+     ],
+     "q": "Comment prépares-tu ton thé d'habitude, et quelle étape pourrais-tu améliorer ?",
+     "c": "Prépare aujourd'hui une tasse avec un minuteur et une cuillère de feuilles mesurée, et observe son goût."
+    },
+    "it": {
+     "t": "La tua prima tazza fatta bene",
+     "g": "Prepara una tazza davvero buona con un metodo semplice: buona acqua, la giusta dose di foglie, un timer e una tazza pulita.",
+     "p": [
+      "Parti da acqua fresca e scaldala in base al tè; per quasi tutti i tè neri va bene l'acqua bollente.",
+      "Usa circa 2-3 grammi di foglie, più o meno un cucchiaino, per una tazza da 200-250 ml.",
+      "Imposta un timer, poi togli le foglie o la bustina così il tè smette di infondere al momento giusto."
+     ],
+     "q": "Come prepari di solito il tuo tè, e quale passaggio pensi di poter migliorare?",
+     "c": "Prepara oggi una tazza con un timer e un cucchiaino di foglie misurato, e nota il sapore."
+    },
+    "pt": {
+     "t": "A tua primeira chávena a sério",
+     "g": "Prepara uma chávena mesmo boa com um método simples: boa água, a quantidade certa de folha, um temporizador e uma chávena limpa.",
+     "p": [
+      "Começa com água fresca e aquece-a conforme o chá; para a maioria dos chás pretos, água a ferver serve.",
+      "Usa cerca de 2 a 3 gramas de folha, mais ou menos uma colher de chá, para uma chávena de 200 a 250 ml.",
+      "Liga um temporizador e depois retira as folhas ou a saqueta para o chá parar de infundir no momento certo."
+     ],
+     "q": "Como costumas fazer o teu chá e que passo achas que podias melhorar?",
+     "c": "Prepara hoje uma chávena com temporizador e uma colher de folha medida, e repara no sabor."
+    },
+    "pt_BR": {
+     "t": "Sua primeira xícara bem feita",
+     "g": "Prepare uma xícara muito boa com um método simples: água boa, a quantidade certa de folha, um timer e uma xícara limpa.",
+     "p": [
+      "Comece com água fresca e aqueça conforme o chá; para a maioria dos chás pretos, água fervente funciona.",
+      "Use cerca de 2 a 3 gramas de folha, mais ou menos uma colher de chá, para uma xícara de 200 a 250 ml.",
+      "Ligue um timer e depois retire as folhas ou o sachê para o chá parar de infusionar na hora certa."
+     ],
+     "q": "Como você costuma fazer seu chá e qual etapa acha que poderia melhorar?",
+     "c": "Prepare hoje uma xícara com timer e uma colher de folha medida, e repare no sabor."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water matters more than you think",
+     "g": "See why fresh, filtered water makes better tea, and why reboiled or very hard water dulls the taste.",
+     "p": [
+      "A cup of tea is about 99 percent water, so its taste shapes everything you drink.",
+      "Fresh water holds more oxygen; water boiled again and again tastes flat and makes tea dull.",
+      "Very hard water can leave a film on the cup and mute aromas; filtered or soft water often tastes brighter."
+     ],
+     "q": "What is the water like where you live: hard, soft, or do you use a filter?",
+     "c": "Brew the same tea twice, once with tap water and once with filtered or bottled water, and compare."
+    },
+    "de": {
+     "t": "Wasser zählt mehr, als du denkst",
+     "g": "Sieh, warum frisches, gefiltertes Wasser besseren Tee ergibt und warum wieder aufgekochtes oder sehr hartes Wasser ihn stumpf macht.",
+     "p": [
+      "Eine Tasse Tee besteht zu etwa 99 Prozent aus Wasser, sein Geschmack prägt also alles.",
+      "Frisches Wasser enthält mehr Sauerstoff; immer wieder aufgekochtes Wasser schmeckt flach und macht Tee matt.",
+      "Sehr hartes Wasser bildet oft einen Film und dämpft Aromen; gefiltertes oder weiches Wasser wirkt frischer."
+     ],
+     "q": "Wie ist das Wasser bei dir: hart, weich, oder benutzt du einen Filter?",
+     "c": "Brühe denselben Tee zweimal, einmal mit Leitungswasser, einmal mit gefiltertem Wasser, und vergleiche."
+    },
+    "es": {
+     "t": "El agua importa más de lo que crees",
+     "g": "Descubre por qué el agua fresca y filtrada da mejor té y por qué el agua rehervida o muy dura apaga el sabor.",
+     "p": [
+      "Una taza de té es casi un 99 por ciento agua, así que su sabor lo marca todo.",
+      "El agua fresca tiene más oxígeno; la que hierve una y otra vez sabe plana y deja el té apagado.",
+      "El agua muy dura puede dejar una película en la taza y apagar aromas; la filtrada o blanda suele ser más viva."
+     ],
+     "q": "¿Cómo es el agua donde vives: dura, blanda, o usas un filtro?",
+     "c": "Prepara el mismo té dos veces, con agua del grifo y con agua filtrada o embotellada, y compara."
+    },
+    "fr": {
+     "t": "L'eau compte plus que tu ne crois",
+     "g": "Vois pourquoi une eau fraîche et filtrée donne un meilleur thé, et pourquoi une eau rebouillie ou très calcaire l'éteint.",
+     "p": [
+      "Une tasse de thé, c'est environ 99 % d'eau : son goût influence donc tout.",
+      "L'eau fraîche contient plus d'oxygène ; une eau bouillie encore et encore est plate et ternit le thé.",
+      "Une eau très calcaire laisse un film et étouffe les arômes ; une eau filtrée ou douce paraît plus vive."
+     ],
+     "q": "Comment est l'eau chez toi : calcaire, douce, ou utilises-tu un filtre ?",
+     "c": "Prépare le même thé deux fois, avec l'eau du robinet puis avec une eau filtrée ou en bouteille, et compare."
+    },
+    "it": {
+     "t": "L'acqua conta più di quanto pensi",
+     "g": "Scopri perché l'acqua fresca e filtrata dà un tè migliore e perché quella ribollita o molto dura spegne il gusto.",
+     "p": [
+      "Una tazza di tè è acqua per circa il 99 per cento, quindi il suo sapore influenza tutto.",
+      "L'acqua fresca contiene più ossigeno; quella bollita più volte sa di piatto e rende il tè spento.",
+      "L'acqua molto dura lascia una patina e smorza gli aromi; quella filtrata o dolce risulta più vivace."
+     ],
+     "q": "Com'è l'acqua dove vivi: dura, dolce, o usi un filtro?",
+     "c": "Prepara lo stesso tè due volte, con acqua del rubinetto e con acqua filtrata o in bottiglia, e confronta."
+    },
+    "pt": {
+     "t": "A água conta mais do que pensas",
+     "g": "Vê porque a água fresca e filtrada faz melhor chá e porque a água refervida ou muito dura apaga o sabor.",
+     "p": [
+      "Uma chávena de chá é cerca de 99 por cento água, por isso o sabor dela marca tudo.",
+      "A água fresca tem mais oxigénio; a que ferve vezes sem conta fica sem graça e deixa o chá baço.",
+      "A água muito dura pode deixar uma película e abafar aromas; a filtrada ou macia costuma ser mais viva."
+     ],
+     "q": "Como é a água onde vives: dura, macia, ou usas um filtro?",
+     "c": "Prepara o mesmo chá duas vezes, com água da torneira e com água filtrada ou engarrafada, e compara."
+    },
+    "pt_BR": {
+     "t": "A água importa mais do que você imagina",
+     "g": "Veja por que a água fresca e filtrada faz um chá melhor e por que a água refervida ou muito dura apaga o sabor.",
+     "p": [
+      "Uma xícara de chá é cerca de 99 por cento água, então o sabor dela define tudo.",
+      "A água fresca tem mais oxigênio; a que ferve várias vezes fica sem graça e deixa o chá apagado.",
+      "A água muito dura pode deixar uma película e abafar aromas; a filtrada ou leve costuma ser mais viva."
+     ],
+     "q": "Como é a água onde você mora: dura, leve, ou você usa filtro?",
+     "c": "Prepare o mesmo chá duas vezes, com água da torneira e com água filtrada ou mineral, e compare."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Temperature by tea type",
+     "g": "Match the water temperature to the tea: cooler for delicate greens and whites, hotter for black teas and many oolongs.",
+     "p": [
+      "Green teas usually like about 70 to 80 °C; whites often enjoy around 75 to 85 °C.",
+      "Many oolongs prefer 85 to 95 °C, and black teas taste best with water close to boiling.",
+      "No thermometer? Let boiled water rest a few minutes with the lid open before pouring on green tea."
+     ],
+     "q": "Have you ever poured boiling water on green tea, and how did it taste?",
+     "c": "Let boiled water cool for three minutes, brew a green or white tea with it and notice the sweetness."
+    },
+    "de": {
+     "t": "Temperatur je nach Teesorte",
+     "g": "Pass die Wassertemperatur dem Tee an: kühler für zarte Grün- und Weißtees, heißer für Schwarztee und viele Oolongs.",
+     "p": [
+      "Grüntee mag meist etwa 70 bis 80 °C, weißer Tee oft rund 75 bis 85 °C.",
+      "Viele Oolongs bevorzugen 85 bis 95 °C, Schwarztee schmeckt am besten mit fast kochendem Wasser.",
+      "Kein Thermometer? Lass gekochtes Wasser ein paar Minuten offen stehen, bevor du es auf Grüntee gießt."
+     ],
+     "q": "Hast du schon einmal kochendes Wasser auf Grüntee gegossen, und wie hat er geschmeckt?",
+     "c": "Lass gekochtes Wasser drei Minuten abkühlen, brühe damit Grün- oder Weißtee und achte auf die Süße."
+    },
+    "es": {
+     "t": "La temperatura según el té",
+     "g": "Ajusta la temperatura del agua al té: más fresca para verdes y blancos delicados, más caliente para negros y muchos oolong.",
+     "p": [
+      "Los tés verdes suelen ir bien a unos 70-80 °C; los blancos, a unos 75-85 °C.",
+      "Muchos oolong prefieren 85-95 °C, y los negros saben mejor con agua casi hirviendo.",
+      "¿Sin termómetro? Deja reposar el agua hervida unos minutos sin tapa antes de verterla sobre té verde."
+     ],
+     "q": "¿Alguna vez has echado agua hirviendo sobre té verde? ¿Qué tal sabía?",
+     "c": "Deja enfriar agua hervida tres minutos, prepara con ella un té verde o blanco y fíjate en su dulzor."
+    },
+    "fr": {
+     "t": "La température selon le thé",
+     "g": "Adapte la température de l'eau au thé : plus douce pour les verts et blancs délicats, plus chaude pour les noirs et de nombreux oolongs.",
+     "p": [
+      "Les thés verts aiment en général 70 à 80 °C ; les blancs, souvent 75 à 85 °C.",
+      "Beaucoup d'oolongs préfèrent 85 à 95 °C, et les thés noirs sont meilleurs avec une eau proche de l'ébullition.",
+      "Pas de thermomètre ? Laisse l'eau bouillie reposer quelques minutes sans couvercle avant de la verser sur un vert."
+     ],
+     "q": "As-tu déjà versé de l'eau bouillante sur du thé vert, et quel goût avait-il ?",
+     "c": "Laisse refroidir de l'eau bouillie trois minutes, infuse un thé vert ou blanc et remarque sa douceur."
+    },
+    "it": {
+     "t": "La temperatura giusta per ogni tè",
+     "g": "Abbina la temperatura dell'acqua al tè: più bassa per verdi e bianchi delicati, più alta per neri e molti oolong.",
+     "p": [
+      "I tè verdi di solito amano 70-80 °C; i bianchi spesso 75-85 °C.",
+      "Molti oolong preferiscono 85-95 °C, mentre i tè neri danno il meglio con acqua quasi bollente.",
+      "Niente termometro? Lascia riposare l'acqua bollita qualche minuto senza coperchio prima di versarla sul verde."
+     ],
+     "q": "Hai mai versato acqua bollente sul tè verde? Che sapore aveva?",
+     "c": "Lascia raffreddare l'acqua bollita tre minuti, prepara un tè verde o bianco e nota la dolcezza."
+    },
+    "pt": {
+     "t": "A temperatura para cada chá",
+     "g": "Ajusta a temperatura da água ao chá: mais fresca para verdes e brancos delicados, mais quente para pretos e muitos oolongs.",
+     "p": [
+      "Os chás verdes gostam em geral de 70 a 80 °C; os brancos, muitas vezes, de 75 a 85 °C.",
+      "Muitos oolongs preferem 85 a 95 °C, e os chás pretos ficam melhores com água quase a ferver.",
+      "Sem termómetro? Deixa a água fervida repousar uns minutos destapada antes de a deitar sobre chá verde."
+     ],
+     "q": "Já deitaste água a ferver em chá verde? Como ficou o sabor?",
+     "c": "Deixa a água fervida arrefecer três minutos, prepara um chá verde ou branco e repara na doçura."
+    },
+    "pt_BR": {
+     "t": "A temperatura de cada chá",
+     "g": "Ajuste a temperatura da água ao chá: mais baixa para verdes e brancos delicados, mais alta para pretos e muitos oolongs.",
+     "p": [
+      "Os chás verdes costumam gostar de 70 a 80 °C; os brancos, muitas vezes, de 75 a 85 °C.",
+      "Muitos oolongs preferem 85 a 95 °C, e os chás pretos ficam melhores com água quase fervendo.",
+      "Sem termômetro? Deixe a água fervida descansar alguns minutos destampada antes de jogar no chá verde."
+     ],
+     "q": "Você já colocou água fervendo no chá verde? Como ficou o sabor?",
+     "c": "Deixe a água fervida esfriar três minutos, prepare um chá verde ou branco e repare na doçura."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timing your steep",
+     "g": "Learn why over-steeping makes tea bitter and how short, careful timing brings out its sweetness.",
+     "p": [
+      "Sweet and aromatic compounds dissolve first; bitter, astringent tannins build up the longer you wait.",
+      "Typical starting points: green 1 to 3 minutes, black 3 to 5, oolong 2 to 4, white 3 to 5.",
+      "Taste a little before the timer ends: you can always steep longer, but you cannot undo bitterness."
+     ],
+     "q": "Do you usually leave the bag in your cup, and have you noticed how the taste changes?",
+     "c": "Brew one tea and taste a sip at 1, 3 and 5 minutes, noting when it tastes best to you."
+    },
+    "de": {
+     "t": "Die richtige Ziehzeit",
+     "g": "Lerne, warum zu langes Ziehen Tee bitter macht und wie kurze, genaue Zeiten seine Süße hervorholen.",
+     "p": [
+      "Süße und aromatische Stoffe lösen sich zuerst; bittere, herbe Gerbstoffe nehmen zu, je länger du wartest.",
+      "Gute Startwerte: Grüntee 1 bis 3 Minuten, Schwarztee 3 bis 5, Oolong 2 bis 4, weißer Tee 3 bis 5.",
+      "Probier kurz vor Ablauf des Timers: Länger ziehen geht immer, Bitterkeit lässt sich nicht rückgängig machen."
+     ],
+     "q": "Lässt du den Beutel meist in der Tasse, und hast du bemerkt, wie sich der Geschmack verändert?",
+     "c": "Brühe einen Tee und probiere nach 1, 3 und 5 Minuten einen Schluck; notiere, wann er dir am besten schmeckt."
+    },
+    "es": {
+     "t": "El tiempo de infusión",
+     "g": "Aprende por qué la infusión demasiado larga amarga el té y cómo un tiempo corto y cuidadoso saca su dulzor.",
+     "p": [
+      "Los compuestos dulces y aromáticos se disuelven primero; los taninos amargos y astringentes crecen con el tiempo.",
+      "Puntos de partida: verde 1-3 minutos, negro 3-5, oolong 2-4, blanco 3-5.",
+      "Prueba un poco antes de que suene el temporizador: siempre puedes alargar, pero no quitar el amargor."
+     ],
+     "q": "¿Sueles dejar la bolsita dentro de la taza? ¿Has notado cómo cambia el sabor?",
+     "c": "Prepara un té y prueba un sorbo al minuto 1, 3 y 5, anotando cuándo te gusta más."
+    },
+    "fr": {
+     "t": "Le temps d'infusion",
+     "g": "Apprends pourquoi une infusion trop longue rend le thé amer et comment un temps court et précis révèle sa douceur.",
+     "p": [
+      "Les composés doux et aromatiques se dissolvent d'abord ; les tanins amers et astringents augmentent avec le temps.",
+      "Repères de départ : vert 1 à 3 minutes, noir 3 à 5, oolong 2 à 4, blanc 3 à 5.",
+      "Goûte un peu avant la fin du minuteur : on peut toujours prolonger, mais pas effacer l'amertume."
+     ],
+     "q": "Laisses-tu souvent le sachet dans la tasse, et as-tu remarqué comment le goût change ?",
+     "c": "Infuse un thé et goûte une gorgée à 1, 3 et 5 minutes, en notant quand il te plaît le plus."
+    },
+    "it": {
+     "t": "I tempi di infusione",
+     "g": "Scopri perché un'infusione troppo lunga rende il tè amaro e come tempi brevi e precisi ne esaltano la dolcezza.",
+     "p": [
+      "I composti dolci e aromatici si sciolgono per primi; i tannini amari e astringenti aumentano col tempo.",
+      "Punti di partenza: verde 1-3 minuti, nero 3-5, oolong 2-4, bianco 3-5.",
+      "Assaggia un po' prima che suoni il timer: puoi sempre prolungare, ma non togliere l'amaro."
+     ],
+     "q": "Di solito lasci la bustina nella tazza? Hai notato come cambia il sapore?",
+     "c": "Prepara un tè e assaggia un sorso a 1, 3 e 5 minuti, annotando quando ti piace di più."
+    },
+    "pt": {
+     "t": "O tempo de infusão",
+     "g": "Aprende porque é que uma infusão longa demais amarga o chá e como um tempo curto e cuidadoso revela a doçura.",
+     "p": [
+      "Os compostos doces e aromáticos dissolvem-se primeiro; os taninos amargos e adstringentes crescem com o tempo.",
+      "Pontos de partida: verde 1 a 3 minutos, preto 3 a 5, oolong 2 a 4, branco 3 a 5.",
+      "Prova um pouco antes de o temporizador tocar: podes sempre prolongar, mas não tirar o amargor."
+     ],
+     "q": "Costumas deixar a saqueta na chávena? Já reparaste como o sabor muda?",
+     "c": "Prepara um chá e prova um gole ao minuto 1, 3 e 5, anotando quando te sabe melhor."
+    },
+    "pt_BR": {
+     "t": "O tempo de infusão",
+     "g": "Aprenda por que a infusão longa demais deixa o chá amargo e como um tempo curto e cuidadoso revela a doçura.",
+     "p": [
+      "Os compostos doces e aromáticos se dissolvem primeiro; os taninos amargos e adstringentes aumentam com o tempo.",
+      "Pontos de partida: verde 1 a 3 minutos, preto 3 a 5, oolong 2 a 4, branco 3 a 5.",
+      "Prove um pouco antes do timer tocar: dá para prolongar, mas não dá para tirar o amargor."
+     ],
+     "q": "Você costuma deixar o sachê na xícara? Já reparou como o sabor muda?",
+     "c": "Prepare um chá e prove um gole no minuto 1, 3 e 5, anotando quando ele fica mais gostoso para você."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How much leaf to use",
+     "g": "Use grams per cup as a starting point and learn to adjust the strength to your own taste.",
+     "p": [
+      "A good start is 2 to 3 grams of leaf per 200 to 250 ml of water.",
+      "Large, fluffy leaves such as white tea take more space, so a heaped spoon may weigh the same as a small one.",
+      "For a stronger cup, add more leaf rather than steeping longer, which mostly adds bitterness."
+     ],
+     "q": "Do you like your tea light and delicate or strong and bold?",
+     "c": "Weigh one teaspoon of two different teas on a kitchen scale and see how different they are."
+    },
+    "de": {
+     "t": "Wie viel Blatt du brauchst",
+     "g": "Nutze Gramm pro Tasse als Ausgangspunkt und lerne, die Stärke an deinen Geschmack anzupassen.",
+     "p": [
+      "Ein guter Start sind 2 bis 3 Gramm Blatt auf 200 bis 250 ml Wasser.",
+      "Große, lockere Blätter wie weißer Tee brauchen mehr Platz, ein gehäufter Löffel wiegt oft so viel wie ein kleiner.",
+      "Für eine stärkere Tasse nimm mehr Blatt statt länger ziehen zu lassen, das bringt vor allem Bitterkeit."
+     ],
+     "q": "Magst du deinen Tee leicht und zart oder kräftig und stark?",
+     "c": "Wiege je einen Teelöffel von zwei verschiedenen Tees mit der Küchenwaage und vergleiche die Gewichte."
+    },
+    "es": {
+     "t": "Cuánta hoja usar",
+     "g": "Usa los gramos por taza como punto de partida y aprende a ajustar la intensidad a tu gusto.",
+     "p": [
+      "Un buen comienzo son 2 o 3 gramos de hoja por cada 200-250 ml de agua.",
+      "Las hojas grandes y ligeras, como el té blanco, ocupan más, así que una cucharada colmada puede pesar como una pequeña.",
+      "Para una taza más intensa, añade más hoja en vez de infusionar más tiempo, que sobre todo añade amargor."
+     ],
+     "q": "¿Te gusta el té suave y delicado o fuerte e intenso?",
+     "c": "Pesa una cucharadita de dos tés distintos en una báscula de cocina y mira qué diferentes son."
+    },
+    "fr": {
+     "t": "Quelle quantité de feuilles",
+     "g": "Prends les grammes par tasse comme point de départ et apprends à ajuster la force à ton goût.",
+     "p": [
+      "Un bon départ : 2 à 3 grammes de feuilles pour 200 à 250 ml d'eau.",
+      "Les grandes feuilles légères, comme le thé blanc, prennent de la place : une cuillère bombée peut peser autant qu'une petite.",
+      "Pour une tasse plus corsée, ajoute des feuilles plutôt que d'infuser plus longtemps, ce qui ajoute surtout de l'amertume."
+     ],
+     "q": "Aimes-tu ton thé léger et délicat ou fort et corsé ?",
+     "c": "Pèse une cuillère à café de deux thés différents sur une balance de cuisine et compare."
+    },
+    "it": {
+     "t": "Quante foglie usare",
+     "g": "Usa i grammi per tazza come punto di partenza e impara a regolare l'intensità secondo il tuo gusto.",
+     "p": [
+      "Un buon inizio sono 2-3 grammi di foglie per 200-250 ml d'acqua.",
+      "Le foglie grandi e leggere, come il tè bianco, occupano più spazio: un cucchiaio colmo può pesare come uno piccolo.",
+      "Per una tazza più forte aggiungi foglie invece di prolungare l'infusione, che porta soprattutto amaro."
+     ],
+     "q": "Ti piace il tè leggero e delicato o forte e deciso?",
+     "c": "Pesa un cucchiaino di due tè diversi con una bilancia da cucina e guarda quanto cambiano."
+    },
+    "pt": {
+     "t": "Quanta folha usar",
+     "g": "Usa os gramas por chávena como ponto de partida e aprende a ajustar a intensidade ao teu gosto.",
+     "p": [
+      "Um bom começo são 2 a 3 gramas de folha para 200 a 250 ml de água.",
+      "Folhas grandes e leves, como o chá branco, ocupam mais espaço: uma colher cheia pode pesar o mesmo que uma pequena.",
+      "Para uma chávena mais forte, junta mais folha em vez de infundir mais tempo, que sobretudo traz amargor."
+     ],
+     "q": "Gostas do chá leve e delicado ou forte e intenso?",
+     "c": "Pesa uma colher de chá de dois chás diferentes numa balança de cozinha e vê como são diferentes."
+    },
+    "pt_BR": {
+     "t": "Quanta folha usar",
+     "g": "Use os gramas por xícara como ponto de partida e aprenda a ajustar a intensidade ao seu gosto.",
+     "p": [
+      "Um bom começo são 2 a 3 gramas de folha para 200 a 250 ml de água.",
+      "Folhas grandes e leves, como o chá branco, ocupam mais espaço: uma colher cheia pode pesar o mesmo que uma pequena.",
+      "Para uma xícara mais forte, coloque mais folha em vez de deixar mais tempo, o que traz principalmente amargor."
+     ],
+     "q": "Você gosta do chá leve e delicado ou forte e encorpado?",
+     "c": "Pese uma colher de chá de dois chás diferentes numa balança de cozinha e veja como são diferentes."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea bags versus loose leaf",
+     "g": "Understand what changes in the cup between broken leaf, whole leaf and pyramid bags, and when bags are perfectly fine.",
+     "p": [
+      "Classic flat bags usually hold small broken pieces that brew fast and strong but can turn bitter quickly.",
+      "Whole loose leaves need room to unfold and often give more layered flavour over several steeps.",
+      "Pyramid bags give leaves more space; bags are great for speed, work and travel."
+     ],
+     "q": "Are you more of a tea bag person or a loose leaf person, and why?",
+     "c": "Cut open a tea bag, look at the leaf pieces, and compare them with any loose tea you have."
+    },
+    "de": {
+     "t": "Teebeutel oder loser Tee",
+     "g": "Verstehe, was sich in der Tasse zwischen Bruchblatt, ganzem Blatt und Pyramidenbeuteln ändert und wann Beutel völlig okay sind.",
+     "p": [
+      "Klassische flache Beutel enthalten meist kleine Blattstücke, die schnell und kräftig ziehen, aber rasch bitter werden.",
+      "Ganze lose Blätter brauchen Platz zum Entfalten und schenken oft vielschichtigeren Geschmack über mehrere Aufgüsse.",
+      "Pyramidenbeutel geben den Blättern mehr Raum; Beutel sind super für Tempo, Büro und Reisen."
+     ],
+     "q": "Bist du eher Teebeutel- oder Losetee-Mensch, und warum?",
+     "c": "Schneide einen Teebeutel auf, schau dir die Blattstücke an und vergleiche sie mit losem Tee, falls du welchen hast."
+    },
+    "es": {
+     "t": "Bolsitas o té a granel",
+     "g": "Entiende qué cambia en la taza entre hoja rota, hoja entera y bolsitas pirámide, y cuándo las bolsitas están perfectamente bien.",
+     "p": [
+      "Las bolsitas planas clásicas suelen llevar trocitos de hoja que infusionan rápido y fuerte, pero amargan pronto.",
+      "Las hojas enteras a granel necesitan espacio para abrirse y suelen dar un sabor más complejo en varias infusiones.",
+      "Las bolsitas pirámide dan más espacio a la hoja; las bolsitas son geniales para ir rápido, en el trabajo o de viaje."
+     ],
+     "q": "¿Eres más de bolsitas o de té a granel? ¿Por qué?",
+     "c": "Abre una bolsita, mira los trozos de hoja y compáralos con algún té a granel que tengas."
+    },
+    "fr": {
+     "t": "Sachets ou thé en vrac",
+     "g": "Comprends ce qui change en tasse entre feuilles brisées, feuilles entières et sachets pyramide, et quand les sachets conviennent très bien.",
+     "p": [
+      "Les sachets plats classiques contiennent souvent de petits fragments qui infusent vite et fort mais deviennent vite amers.",
+      "Les feuilles entières en vrac ont besoin d'espace pour s'ouvrir et offrent souvent plus de nuances sur plusieurs infusions.",
+      "Les sachets pyramide laissent plus de place aux feuilles ; les sachets sont parfaits pour aller vite, au bureau ou en voyage."
+     ],
+     "q": "Es-tu plutôt sachet ou thé en vrac, et pourquoi ?",
+     "c": "Ouvre un sachet, observe les morceaux de feuille et compare-les avec du thé en vrac si tu en as."
+    },
+    "it": {
+     "t": "Bustine o tè sfuso",
+     "g": "Capisci cosa cambia nella tazza tra foglia spezzata, foglia intera e bustine a piramide, e quando le bustine vanno benissimo.",
+     "p": [
+      "Le classiche bustine piatte contengono spesso piccoli frammenti che infondono in fretta e forte, ma diventano presto amari.",
+      "Le foglie intere sfuse hanno bisogno di spazio per aprirsi e spesso danno un gusto più ricco in più infusioni.",
+      "Le bustine a piramide lasciano più spazio; le bustine sono ottime per la velocità, l'ufficio e i viaggi."
+     ],
+     "q": "Sei più tipo da bustina o da tè sfuso? Perché?",
+     "c": "Apri una bustina, osserva i pezzetti di foglia e confrontali con un tè sfuso, se ne hai."
+    },
+    "pt": {
+     "t": "Saquetas ou chá a granel",
+     "g": "Percebe o que muda na chávena entre folha partida, folha inteira e saquetas em pirâmide, e quando as saquetas estão ótimas.",
+     "p": [
+      "As saquetas planas clássicas têm geralmente pedacinhos de folha que infundem depressa e forte, mas amargam cedo.",
+      "As folhas inteiras a granel precisam de espaço para abrir e costumam dar um sabor mais rico em várias infusões.",
+      "As saquetas em pirâmide dão mais espaço à folha; as saquetas são ótimas para rapidez, trabalho e viagens."
+     ],
+     "q": "És mais de saquetas ou de chá a granel? Porquê?",
+     "c": "Abre uma saqueta, observa os pedaços de folha e compara-os com algum chá a granel que tenhas."
+    },
+    "pt_BR": {
+     "t": "Sachê ou chá a granel",
+     "g": "Entenda o que muda na xícara entre folha quebrada, folha inteira e sachês pirâmide, e quando o sachê é perfeitamente ok.",
+     "p": [
+      "Os sachês planos clássicos costumam ter pedacinhos de folha que infusionam rápido e forte, mas amargam logo.",
+      "As folhas inteiras a granel precisam de espaço para abrir e costumam dar um sabor mais rico em várias infusões.",
+      "Os sachês pirâmide dão mais espaço à folha; sachês são ótimos para rapidez, trabalho e viagens."
+     ],
+     "q": "Você é mais de sachê ou de chá a granel? Por quê?",
+     "c": "Abra um sachê, observe os pedaços de folha e compare com algum chá a granel que você tenha."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tools to start with",
+     "g": "Build a small, simple beginner kit: a kettle, a teapot or infuser, a strainer and a cup.",
+     "p": [
+      "A kettle is the heart of the kit; one with temperature settings is handy but not essential.",
+      "A teapot or a roomy infuser lets loose leaves open; a fine strainer catches small pieces.",
+      "Add a timer, a teaspoon or small scale, and a light-coloured cup so you can see the tea."
+     ],
+     "q": "Which tea tools do you already have in your kitchen?",
+     "c": "Gather your tea tools in one spot today and note the one thing you would add first."
+    },
+    "de": {
+     "t": "Werkzeuge für den Anfang",
+     "g": "Stell dir ein kleines, einfaches Einsteiger-Set zusammen: Wasserkocher, Teekanne oder Teesieb, Abseiher und Tasse.",
+     "p": [
+      "Der Wasserkocher ist das Herz des Sets; einer mit Temperaturwahl ist praktisch, aber kein Muss.",
+      "Eine Kanne oder ein geräumiges Sieb lässt lose Blätter aufgehen; ein feines Sieb fängt kleine Stücke ab.",
+      "Dazu ein Timer, ein Teelöffel oder eine kleine Waage und eine helle Tasse, damit du die Farbe siehst."
+     ],
+     "q": "Welche Teewerkzeuge hast du schon in deiner Küche?",
+     "c": "Leg heute alle deine Teewerkzeuge an einen Ort und notiere, was du als Erstes ergänzen würdest."
+    },
+    "es": {
+     "t": "Herramientas para empezar",
+     "g": "Arma un kit de principiante pequeño y sencillo: hervidor, tetera o infusor, colador y taza.",
+     "p": [
+      "El hervidor es el corazón del kit; uno con control de temperatura ayuda, pero no es imprescindible.",
+      "Una tetera o un infusor amplio deja abrirse la hoja suelta; un colador fino retiene los trocitos.",
+      "Añade un temporizador, una cucharita o una pequeña báscula y una taza clara para ver el color del té."
+     ],
+     "q": "¿Qué utensilios para el té tienes ya en tu cocina?",
+     "c": "Reúne hoy tus utensilios de té en un mismo sitio y anota lo primero que añadirías."
+    },
+    "fr": {
+     "t": "Les outils pour débuter",
+     "g": "Constitue un petit kit simple de débutant : bouilloire, théière ou infuseur, passoire et tasse.",
+     "p": [
+      "La bouilloire est le cœur du kit ; un modèle à température réglable est pratique mais pas indispensable.",
+      "Une théière ou un infuseur spacieux laisse les feuilles s'ouvrir ; une passoire fine retient les petits morceaux.",
+      "Ajoute un minuteur, une cuillère ou une petite balance et une tasse claire pour voir la couleur du thé."
+     ],
+     "q": "Quels outils à thé as-tu déjà dans ta cuisine ?",
+     "c": "Rassemble aujourd'hui tes outils à thé au même endroit et note le premier que tu ajouterais."
+    },
+    "it": {
+     "t": "Gli strumenti per iniziare",
+     "g": "Crea un piccolo kit semplice da principiante: bollitore, teiera o infusore, colino e tazza.",
+     "p": [
+      "Il bollitore è il cuore del kit; uno con la regolazione della temperatura è comodo ma non indispensabile.",
+      "Una teiera o un infusore capiente lascia aprire le foglie; un colino fine trattiene i pezzetti.",
+      "Aggiungi un timer, un cucchiaino o una piccola bilancia e una tazza chiara per vedere il colore."
+     ],
+     "q": "Quali strumenti per il tè hai già in cucina?",
+     "c": "Raccogli oggi i tuoi strumenti per il tè in un unico posto e annota la prima cosa che aggiungeresti."
+    },
+    "pt": {
+     "t": "Ferramentas para começar",
+     "g": "Monta um kit de principiante pequeno e simples: chaleira, bule ou infusor, coador e chávena.",
+     "p": [
+      "A chaleira é o coração do kit; uma com controlo de temperatura ajuda, mas não é essencial.",
+      "Um bule ou um infusor espaçoso deixa a folha abrir; um coador fino apanha os pedacinhos.",
+      "Junta um temporizador, uma colher ou pequena balança e uma chávena clara para veres a cor do chá."
+     ],
+     "q": "Que utensílios de chá já tens na tua cozinha?",
+     "c": "Junta hoje os teus utensílios de chá num só sítio e anota o primeiro que acrescentarias."
+    },
+    "pt_BR": {
+     "t": "Ferramentas para começar",
+     "g": "Monte um kit de iniciante pequeno e simples: chaleira, bule ou infusor, coador e xícara.",
+     "p": [
+      "A chaleira é o coração do kit; uma com controle de temperatura ajuda, mas não é essencial.",
+      "Um bule ou um infusor espaçoso deixa a folha abrir; um coador fino segura os pedacinhos.",
+      "Inclua um timer, uma colher ou balancinha e uma xícara clara para ver a cor do chá."
+     ],
+     "q": "Quais utensílios de chá você já tem na sua cozinha?",
+     "c": "Junte hoje seus utensílios de chá num só lugar e anote o primeiro que você acrescentaria."
+    }
+   }
+  }
+ ]
+}

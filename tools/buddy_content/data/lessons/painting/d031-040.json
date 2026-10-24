@@ -1,0 +1,835 @@
+{
+ "topic": "painting",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flat wash in watercolour",
+     "g": "Lay an even layer of colour across an area without streaks.",
+     "p": [
+      "Mix more paint than you think you need, tilt the board slightly and work from top to bottom.",
+      "Paint overlapping horizontal bands, always picking up the bead of wet paint that collects at the lower edge.",
+      "At the end, lift the last bead with a damp, squeezed brush and leave the wash alone to dry: no going back in."
+     ],
+     "q": "What do you think is harder: keeping the colour even or resisting the urge to touch it?",
+     "c": "Paint three flat washes in small rectangles. Let them dry flat and check which one is the most even."
+    },
+    "de": {
+     "t": "Flache Lasur im Aquarell",
+     "g": "Lege eine gleichmäßige Farbschicht über eine Fläche, ohne Streifen.",
+     "p": [
+      "Mische mehr Farbe, als du denkst, neige das Brett leicht und arbeite von oben nach unten.",
+      "Male überlappende waagrechte Bahnen und nimm dabei immer die nasse Farbwulst mit, die sich unten sammelt.",
+      "Am Ende nimmst du die letzte Wulst mit einem ausgedrückten Pinsel auf und lässt die Lasur in Ruhe trocknen."
+     ],
+     "q": "Was ist wohl schwerer: die Farbe gleichmäßig halten oder der Versuchung widerstehen, nachzubessern?",
+     "c": "Male drei flache Lasuren in kleine Rechtecke. Lass sie liegend trocknen und prüfe, welche am gleichmäßigsten ist."
+    },
+    "es": {
+     "t": "Aguada plana en acuarela",
+     "g": "Extiende una capa de color uniforme sobre una zona sin vetas.",
+     "p": [
+      "Prepara más mezcla de la que crees necesitar, inclina un poco el tablero y trabaja de arriba abajo.",
+      "Pinta franjas horizontales que se solapen, recogiendo siempre la gota húmeda que se acumula en el borde inferior.",
+      "Al final, recoge la última gota con un pincel húmedo escurrido y deja secar la aguada sin volver a tocarla."
+     ],
+     "q": "¿Qué crees que cuesta más: mantener el color parejo o resistir las ganas de retocar?",
+     "c": "Pinta tres aguadas planas en rectángulos pequeños. Déjalas secar en horizontal y mira cuál quedó más pareja."
+    },
+    "fr": {
+     "t": "Lavis uniforme à l'aquarelle",
+     "g": "Pose une couche de couleur régulière sur une zone, sans traînées.",
+     "p": [
+      "Prépare plus de mélange que prévu, incline légèrement la planche et travaille de haut en bas.",
+      "Peins des bandes horizontales qui se chevauchent en reprenant toujours le bourrelet humide qui se forme en bas.",
+      "À la fin, absorbe le dernier bourrelet avec un pinceau essoré et laisse sécher sans y retoucher."
+     ],
+     "q": "Qu'est-ce qui te paraît le plus dur : garder la couleur régulière ou résister à l'envie de retoucher ?",
+     "c": "Peins trois lavis uniformes dans de petits rectangles. Laisse-les sécher à plat et vois lequel est le plus régulier."
+    },
+    "it": {
+     "t": "Velatura piatta ad acquerello",
+     "g": "Stendi uno strato di colore uniforme su un'area senza striature.",
+     "p": [
+      "Prepara più colore di quanto pensi, inclina leggermente il supporto e lavora dall'alto verso il basso.",
+      "Dipingi fasce orizzontali sovrapposte, riprendendo sempre la goccia bagnata che si forma sul bordo inferiore.",
+      "Alla fine assorbi l'ultima goccia con un pennello umido strizzato e lascia asciugare senza ritoccare."
+     ],
+     "q": "Cosa pensi sia più difficile: tenere il colore uniforme o resistere alla voglia di ritoccare?",
+     "c": "Dipingi tre velature piatte in piccoli rettangoli. Lasciale asciugare in piano e guarda quale è più uniforme."
+    },
+    "pt": {
+     "t": "Aguada lisa em aguarela",
+     "g": "Espalha uma camada de cor uniforme sobre uma área sem riscas.",
+     "p": [
+      "Prepara mais mistura do que pensas precisar, inclina um pouco a prancha e trabalha de cima para baixo.",
+      "Pinta faixas horizontais sobrepostas, apanhando sempre a gota húmida que se acumula na borda de baixo.",
+      "No fim, recolhe a última gota com um pincel húmido espremido e deixa secar sem voltar a mexer."
+     ],
+     "q": "O que achas mais difícil: manter a cor uniforme ou resistir à vontade de retocar?",
+     "c": "Pinta três aguadas lisas em retângulos pequenos. Deixa secar na horizontal e vê qual ficou mais uniforme."
+    },
+    "pt_BR": {
+     "t": "Aguada lisa na aquarela",
+     "g": "Espalhe uma camada de cor uniforme sobre uma área sem listras.",
+     "p": [
+      "Prepare mais mistura do que acha que precisa, incline um pouco a prancha e trabalhe de cima para baixo.",
+      "Pinte faixas horizontais sobrepostas, sempre puxando a gota molhada que se acumula na borda de baixo.",
+      "No fim, recolha a última gota com um pincel úmido espremido e deixe secar sem mexer de novo."
+     ],
+     "q": "O que você acha mais difícil: manter a cor uniforme ou resistir à vontade de retocar?",
+     "c": "Pinte três aguadas lisas em retângulos pequenos. Deixe secar na horizontal e veja qual ficou mais uniforme."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Graded wash",
+     "g": "Create a smooth fade from strong colour to pale, adding more water stroke by stroke.",
+     "p": [
+      "Start at the top with a rich band of colour, then dip the brush in clean water before each new band.",
+      "Keep the bead moving down and the board tilted so each band blends softly into the one above.",
+      "Graded washes are perfect for skies that pale towards the horizon or for a calm background."
+     ],
+     "q": "Where in nature have you seen a colour fade smoothly from strong to soft?",
+     "c": "Paint a graded wash sky in a small rectangle, deep blue at the top fading to almost white at the bottom."
+    },
+    "de": {
+     "t": "Verlaufende Lasur",
+     "g": "Male einen weichen Verlauf von kräftiger Farbe zu blass, indem du Bahn für Bahn mehr Wasser zugibst.",
+     "p": [
+      "Beginne oben mit einer satten Farbbahn und tauche den Pinsel vor jeder neuen Bahn in sauberes Wasser.",
+      "Halte die Wulst in Bewegung und das Brett geneigt, damit jede Bahn sanft in die obere übergeht.",
+      "Verläufe sind perfekt für Himmel, die zum Horizont hin heller werden, oder für ruhige Hintergründe."
+     ],
+     "q": "Wo in der Natur hast du gesehen, wie eine Farbe weich von kräftig zu zart übergeht?",
+     "c": "Male einen Himmel als Verlauf in ein kleines Rechteck, oben tiefblau, unten fast weiß."
+    },
+    "es": {
+     "t": "Aguada degradada",
+     "g": "Crea un degradado suave de color intenso a pálido, añadiendo agua trazo a trazo.",
+     "p": [
+      "Empieza arriba con una franja de color intenso y moja el pincel en agua limpia antes de cada nueva franja.",
+      "Mantén la gota bajando y el tablero inclinado para que cada franja se funda con la de arriba.",
+      "Los degradados son perfectos para cielos que se aclaran hacia el horizonte o para fondos tranquilos."
+     ],
+     "q": "¿Dónde has visto en la naturaleza un color que pasa suavemente de intenso a suave?",
+     "c": "Pinta un cielo degradado en un rectángulo pequeño, azul intenso arriba y casi blanco abajo."
+    },
+    "fr": {
+     "t": "Lavis dégradé",
+     "g": "Crée un passage doux de la couleur intense au pâle en ajoutant de l'eau à chaque bande.",
+     "p": [
+      "Commence en haut par une bande riche, puis trempe le pinceau dans l'eau propre avant chaque nouvelle bande.",
+      "Fais descendre le bourrelet, planche inclinée, pour que chaque bande se fonde dans la précédente.",
+      "Les dégradés sont parfaits pour les ciels qui pâlissent vers l'horizon ou pour un fond paisible."
+     ],
+     "q": "Où as-tu vu dans la nature une couleur passer en douceur de l'intense au léger ?",
+     "c": "Peins un ciel en dégradé dans un petit rectangle, bleu profond en haut, presque blanc en bas."
+    },
+    "it": {
+     "t": "Velatura sfumata",
+     "g": "Crea un passaggio morbido dal colore intenso al pallido, aggiungendo acqua a ogni fascia.",
+     "p": [
+      "Inizia in alto con una fascia di colore pieno, poi intingi il pennello in acqua pulita prima di ogni nuova fascia.",
+      "Fai scendere la goccia con il supporto inclinato, così ogni fascia si fonde con quella sopra.",
+      "Le sfumature sono perfette per cieli che schiariscono verso l'orizzonte o per sfondi tranquilli."
+     ],
+     "q": "Dove hai visto in natura un colore passare dolcemente dall'intenso al tenue?",
+     "c": "Dipingi un cielo sfumato in un piccolo rettangolo, blu intenso in alto e quasi bianco in basso."
+    },
+    "pt": {
+     "t": "Aguada degradê",
+     "g": "Cria uma passagem suave de cor intensa a pálida, juntando água a cada faixa.",
+     "p": [
+      "Começa em cima com uma faixa de cor rica e molha o pincel em água limpa antes de cada faixa nova.",
+      "Mantém a gota a descer e a prancha inclinada para que cada faixa se funda na de cima.",
+      "Os degradês são perfeitos para céus que clareiam junto ao horizonte ou para fundos calmos."
+     ],
+     "q": "Onde viste na natureza uma cor passar suavemente de intensa a suave?",
+     "c": "Pinta um céu em degradê num retângulo pequeno, azul intenso em cima e quase branco em baixo."
+    },
+    "pt_BR": {
+     "t": "Aguada degradê",
+     "g": "Crie uma passagem suave de cor forte para clara, adicionando água a cada faixa.",
+     "p": [
+      "Comece no alto com uma faixa de cor forte e molhe o pincel em água limpa antes de cada nova faixa.",
+      "Mantenha a gota descendo e a prancha inclinada para cada faixa se fundir com a de cima.",
+      "Degradês são perfeitos para céus que clareiam perto do horizonte ou para fundos calmos."
+     ],
+     "q": "Onde você já viu na natureza uma cor passar suavemente de forte para suave?",
+     "c": "Pinte um céu degradê num retângulo pequeno, azul forte em cima e quase branco embaixo."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Variegated wash",
+     "g": "Let two or more colours melt into each other in one wet passage.",
+     "p": [
+      "Prepare each colour in its own puddle before you start, because there is no time to mix once the wash begins.",
+      "Lay the first colour, then touch the next one into its wet edge and let the paper do the blending.",
+      "Tilting the board guides the flow; resist brushing back and forth, which turns the mix muddy."
+     ],
+     "q": "Which colour pair would make your dream sunset sky?",
+     "c": "Paint a sunset strip that melts from yellow through orange to a soft violet in one wet pass."
+    },
+    "de": {
+     "t": "Mehrfarbige Lasur",
+     "g": "Lass zwei oder mehr Farben in einem nassen Durchgang ineinanderfließen.",
+     "p": [
+      "Mische jede Farbe vorher in einer eigenen Pfütze, denn während der Lasur bleibt keine Zeit zum Mischen.",
+      "Lege die erste Farbe an, setze die nächste in ihren nassen Rand und lass das Papier vermischen.",
+      "Neigen des Bretts lenkt das Fließen; vermeide Hin-und-her-Pinseln, das macht die Mischung schlammig."
+     ],
+     "q": "Welches Farbpaar würde deinen Traum-Sonnenuntergang malen?",
+     "c": "Male einen Sonnenuntergangsstreifen, der in einem nassen Durchgang von Gelb über Orange zu zartem Violett fließt."
+    },
+    "es": {
+     "t": "Aguada variada",
+     "g": "Deja que dos o más colores se fundan en una sola pasada húmeda.",
+     "p": [
+      "Prepara cada color en su charquito antes de empezar: una vez iniciada la aguada no hay tiempo para mezclar.",
+      "Pon el primer color, toca su borde húmedo con el siguiente y deja que el papel haga la fusión.",
+      "Inclinar el tablero guía el flujo; evita pasar el pincel adelante y atrás, que ensucia la mezcla."
+     ],
+     "q": "¿Qué pareja de colores pintaría tu atardecer soñado?",
+     "c": "Pinta una franja de atardecer que pase de amarillo a naranja y a un violeta suave en una sola pasada húmeda."
+    },
+    "fr": {
+     "t": "Lavis varié",
+     "g": "Laisse deux couleurs ou plus se fondre l'une dans l'autre en un seul passage humide.",
+     "p": [
+      "Prépare chaque couleur dans sa flaque avant de commencer : une fois le lavis lancé, pas le temps de mélanger.",
+      "Pose la première couleur, touche son bord humide avec la suivante et laisse le papier faire le mélange.",
+      "Incliner la planche guide l'écoulement ; évite les allers-retours de pinceau, qui salissent le mélange."
+     ],
+     "q": "Quelle paire de couleurs peindrait ton coucher de soleil idéal ?",
+     "c": "Peins une bande de coucher de soleil allant du jaune à l'orange puis à un violet doux, en un seul passage."
+    },
+    "it": {
+     "t": "Velatura variegata",
+     "g": "Lascia che due o più colori si fondano in un unico passaggio bagnato.",
+     "p": [
+      "Prepara ogni colore nella sua pozza prima di iniziare: a velatura avviata non c'è tempo per mescolare.",
+      "Stendi il primo colore, tocca il suo bordo bagnato con il successivo e lascia che la carta li fonda.",
+      "Inclinare il supporto guida il flusso; evita di ripassare avanti e indietro, che sporca l'impasto."
+     ],
+     "q": "Quale coppia di colori dipingerebbe il tuo tramonto ideale?",
+     "c": "Dipingi una striscia di tramonto che passa dal giallo all'arancio a un viola tenue in un solo passaggio."
+    },
+    "pt": {
+     "t": "Aguada variada",
+     "g": "Deixa duas ou mais cores fundirem-se numa só passagem húmida.",
+     "p": [
+      "Prepara cada cor na sua poça antes de começar: com a aguada a decorrer não há tempo para misturar.",
+      "Pousa a primeira cor, toca a sua borda húmida com a seguinte e deixa o papel fazer a fusão.",
+      "Inclinar a prancha guia o fluxo; evita passar o pincel para trás e para a frente, que suja a mistura."
+     ],
+     "q": "Que par de cores pintaria o teu pôr do sol de sonho?",
+     "c": "Pinta uma faixa de pôr do sol que passe do amarelo ao laranja e a um violeta suave numa só passagem."
+    },
+    "pt_BR": {
+     "t": "Aguada variada",
+     "g": "Deixe duas ou mais cores se fundirem numa única passada molhada.",
+     "p": [
+      "Prepare cada cor na sua poça antes de começar: com a aguada em andamento não dá tempo de misturar.",
+      "Aplique a primeira cor, toque a borda molhada com a seguinte e deixe o papel fazer a fusão.",
+      "Inclinar a prancha guia o fluxo; evite passar o pincel para lá e para cá, que suja a mistura."
+     ],
+     "q": "Qual par de cores pintaria o pôr do sol dos seus sonhos?",
+     "c": "Pinte uma faixa de pôr do sol que vá do amarelo ao laranja e a um violeta suave numa só passada."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wet-on-wet",
+     "g": "Paint into a damp surface for soft edges, blooms and dreamy effects.",
+     "p": [
+      "Wet the paper evenly with clean water, wait until the shine dulls slightly, then drop in colour.",
+      "The paint spreads and feathers by itself: perfect for misty skies, distant trees and soft backgrounds.",
+      "Paint that is wetter than the paper creates blooms or cauliflower shapes; use them on purpose or avoid them."
+     ],
+     "q": "Do you enjoy surprises in art, or do you prefer to control every detail?",
+     "c": "Wet a small square and drop in two colours. Watch for one minute without touching and describe what happens."
+    },
+    "de": {
+     "t": "Nass in Nass",
+     "g": "Male in einen feuchten Malgrund für weiche Kanten, Blüten und verträumte Effekte.",
+     "p": [
+      "Befeuchte das Papier gleichmäßig mit klarem Wasser, warte, bis der Glanz etwas nachlässt, und setze dann Farbe hinein.",
+      "Die Farbe breitet sich von selbst federnd aus: perfekt für neblige Himmel, ferne Bäume und weiche Hintergründe.",
+      "Farbe, die nasser ist als das Papier, bildet Blumenkohlränder; setze sie bewusst ein oder vermeide sie."
+     ],
+     "q": "Magst du Überraschungen in der Kunst oder kontrollierst du lieber jedes Detail?",
+     "c": "Befeuchte ein kleines Quadrat und tropfe zwei Farben hinein. Schau eine Minute zu, ohne zu berühren, und beschreibe es."
+    },
+    "es": {
+     "t": "Húmedo sobre húmedo",
+     "g": "Pinta sobre una superficie húmeda para bordes suaves, coliflores y efectos de ensueño.",
+     "p": [
+      "Moja el papel por igual con agua limpia, espera a que el brillo baje un poco y deja caer el color.",
+      "La pintura se expande y se difumina sola: perfecta para cielos brumosos, árboles lejanos y fondos suaves.",
+      "Si la pintura está más mojada que el papel, salen coliflores; úsalas a propósito o evítalas."
+     ],
+     "q": "¿Disfrutas de las sorpresas en el arte o prefieres controlar cada detalle?",
+     "c": "Moja un cuadrado pequeño y deja caer dos colores. Observa un minuto sin tocar y describe lo que pasa."
+    },
+    "fr": {
+     "t": "Mouillé sur mouillé",
+     "g": "Peins sur un papier humide pour des bords doux, des auréoles et des effets rêveurs.",
+     "p": [
+      "Mouille le papier uniformément à l'eau claire, attends que la brillance diminue un peu, puis dépose la couleur.",
+      "La peinture s'étale et se diffuse seule : parfait pour ciels brumeux, arbres lointains et fonds doux.",
+      "Une peinture plus mouillée que le papier crée des auréoles en chou-fleur ; utilise-les exprès ou évite-les."
+     ],
+     "q": "Aimes-tu les surprises en art, ou préfères-tu contrôler chaque détail ?",
+     "c": "Mouille un petit carré et dépose deux couleurs. Observe une minute sans toucher et décris ce qui se passe."
+    },
+    "it": {
+     "t": "Bagnato su bagnato",
+     "g": "Dipingi su una superficie umida per bordi morbidi, fioriture ed effetti sognanti.",
+     "p": [
+      "Bagna la carta in modo uniforme con acqua pulita, aspetta che la lucentezza cali un po' e lascia cadere il colore.",
+      "Il colore si espande e sfuma da solo: perfetto per cieli nebbiosi, alberi lontani e sfondi morbidi.",
+      "Se il colore è più bagnato della carta si formano fioriture a cavolfiore; usale di proposito o evitale."
+     ],
+     "q": "Ti piacciono le sorprese nell'arte o preferisci controllare ogni dettaglio?",
+     "c": "Bagna un piccolo quadrato e lascia cadere due colori. Osserva un minuto senza toccare e descrivi cosa succede."
+    },
+    "pt": {
+     "t": "Molhado sobre molhado",
+     "g": "Pinta sobre uma superfície húmida para bordas suaves, florescências e efeitos de sonho.",
+     "p": [
+      "Molha o papel por igual com água limpa, espera que o brilho diminua um pouco e deixa cair a cor.",
+      "A tinta espalha-se e esbate-se sozinha: perfeita para céus de névoa, árvores distantes e fundos suaves.",
+      "Tinta mais molhada do que o papel cria florescências tipo couve-flor; usa-as de propósito ou evita-as."
+     ],
+     "q": "Gostas de surpresas na arte ou preferes controlar cada detalhe?",
+     "c": "Molha um quadrado pequeno e deixa cair duas cores. Observa um minuto sem tocar e descreve o que acontece."
+    },
+    "pt_BR": {
+     "t": "Molhado sobre molhado",
+     "g": "Pinte sobre uma superfície úmida para bordas suaves, florações e efeitos de sonho.",
+     "p": [
+      "Molhe o papel por igual com água limpa, espere o brilho diminuir um pouco e pingue a cor.",
+      "A tinta se espalha e esfuma sozinha: perfeita para céus nebulosos, árvores distantes e fundos suaves.",
+      "Tinta mais molhada que o papel cria florações tipo couve-flor; use de propósito ou evite."
+     ],
+     "q": "Você curte surpresas na arte ou prefere controlar cada detalhe?",
+     "c": "Molhe um quadrado pequeno e pingue duas cores. Observe um minuto sem tocar e descreva o que acontece."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wet-on-dry",
+     "g": "Paint onto a dry surface for crisp edges and precise shapes.",
+     "p": [
+      "On dry paper the paint stays exactly where you put it, giving sharp, clean edges.",
+      "Use it for details, foreground shapes, windows, leaves and anything that needs to read clearly.",
+      "Layering wet-on-dry over a dry wash, called glazing, builds depth while the first layer still glows through."
+     ],
+     "q": "Which subjects in your surroundings need crisp edges, and which would look better soft?",
+     "c": "Paint a soft wet-on-wet background, let it dry fully, then add three crisp leaf shapes on top."
+    },
+    "de": {
+     "t": "Nass auf Trocken",
+     "g": "Male auf einen trockenen Malgrund für klare Kanten und präzise Formen.",
+     "p": [
+      "Auf trockenem Papier bleibt die Farbe genau dort, wo du sie setzt, mit scharfen, sauberen Rändern.",
+      "Nutze das für Details, Vordergrundformen, Fenster, Blätter und alles, was klar lesbar sein soll.",
+      "Schichtest du nass auf trocken über eine getrocknete Lasur, entsteht Tiefe, während die erste Schicht durchleuchtet."
+     ],
+     "q": "Welche Motive um dich brauchen scharfe Kanten und welche wirken weich besser?",
+     "c": "Male einen weichen Nass-in-Nass-Hintergrund, lass ihn ganz trocknen und setze dann drei klare Blattformen darauf."
+    },
+    "es": {
+     "t": "Húmedo sobre seco",
+     "g": "Pinta sobre una superficie seca para bordes nítidos y formas precisas.",
+     "p": [
+      "Sobre papel seco la pintura se queda justo donde la pones, con bordes limpios y definidos.",
+      "Úsalo para detalles, formas del primer plano, ventanas, hojas y todo lo que deba leerse con claridad.",
+      "Superponer capas sobre una aguada seca, la veladura, crea profundidad mientras la primera capa sigue brillando debajo."
+     ],
+     "q": "¿Qué cosas a tu alrededor necesitan bordes nítidos y cuáles quedarían mejor suaves?",
+     "c": "Pinta un fondo suave húmedo sobre húmedo, deja que seque del todo y añade tres hojas nítidas encima."
+    },
+    "fr": {
+     "t": "Mouillé sur sec",
+     "g": "Peins sur un papier sec pour des bords nets et des formes précises.",
+     "p": [
+      "Sur papier sec, la peinture reste exactement où tu la poses, avec des bords nets et propres.",
+      "Utilise-le pour les détails, les formes du premier plan, fenêtres, feuilles et tout ce qui doit se lire clairement.",
+      "Superposer des couches sur un lavis sec, le glacis, crée de la profondeur tout en laissant briller la première couche."
+     ],
+     "q": "Quels sujets autour de toi demandent des bords nets, et lesquels seraient plus beaux flous ?",
+     "c": "Peins un fond doux mouillé sur mouillé, laisse sécher complètement, puis ajoute trois feuilles nettes par-dessus."
+    },
+    "it": {
+     "t": "Bagnato su asciutto",
+     "g": "Dipingi su una superficie asciutta per bordi netti e forme precise.",
+     "p": [
+      "Sulla carta asciutta il colore resta esattamente dove lo metti, con bordi netti e puliti.",
+      "Usalo per dettagli, forme in primo piano, finestre, foglie e tutto ciò che deve leggersi con chiarezza.",
+      "Sovrapporre strati su una velatura asciutta crea profondità mentre il primo strato continua a brillare sotto."
+     ],
+     "q": "Quali soggetti intorno a te richiedono bordi netti e quali starebbero meglio morbidi?",
+     "c": "Dipingi uno sfondo morbido bagnato su bagnato, lascialo asciugare del tutto e aggiungi sopra tre foglie nitide."
+    },
+    "pt": {
+     "t": "Molhado sobre seco",
+     "g": "Pinta sobre uma superfície seca para bordas nítidas e formas precisas.",
+     "p": [
+      "Em papel seco a tinta fica exatamente onde a pões, com bordas limpas e definidas.",
+      "Usa-o para detalhes, formas em primeiro plano, janelas, folhas e tudo o que tenha de se ler com clareza.",
+      "Sobrepor camadas numa aguada seca, a velatura, cria profundidade enquanto a primeira camada continua a brilhar."
+     ],
+     "q": "Que coisas à tua volta precisam de bordas nítidas e quais ficariam melhor suaves?",
+     "c": "Pinta um fundo suave molhado sobre molhado, deixa secar bem e junta três folhas nítidas por cima."
+    },
+    "pt_BR": {
+     "t": "Molhado sobre seco",
+     "g": "Pinte sobre uma superfície seca para bordas nítidas e formas precisas.",
+     "p": [
+      "No papel seco a tinta fica exatamente onde você coloca, com bordas limpas e definidas.",
+      "Use para detalhes, formas em primeiro plano, janelas, folhas e tudo que precisa ser lido com clareza.",
+      "Sobrepor camadas numa aguada seca, a velatura, cria profundidade enquanto a primeira camada continua brilhando."
+     ],
+     "q": "Quais coisas ao seu redor pedem bordas nítidas e quais ficariam melhores suaves?",
+     "c": "Pinte um fundo suave molhado sobre molhado, deixe secar bem e adicione três folhas nítidas por cima."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Controlling water",
+     "g": "Learn to read the shine of the paper to know when it is wet, damp or dry.",
+     "p": [
+      "Glossy shine means very wet: paint will spread wildly. A satin sheen means damp: soft but controlled edges.",
+      "No shine and cool to the touch with the back of your hand means still slightly damp; warm and matt means dry.",
+      "Your brush should usually hold less water than the paper, or new paint will push back and form blooms."
+     ],
+     "q": "Have you noticed how weather or room temperature changes how fast your paint dries?",
+     "c": "Wet a strip of paper and drop colour into it every 30 seconds as it dries. Note how the edges change."
+    },
+    "de": {
+     "t": "Wasser kontrollieren",
+     "g": "Lerne am Glanz des Papiers zu erkennen, ob es nass, feucht oder trocken ist.",
+     "p": [
+      "Starker Glanz heißt sehr nass: Farbe läuft wild. Seidiger Schimmer heißt feucht: weiche, aber kontrollierte Kanten.",
+      "Kein Glanz, aber kühl beim Fühlen mit dem Handrücken heißt noch leicht feucht; warm und matt heißt trocken.",
+      "Dein Pinsel sollte meist weniger Wasser halten als das Papier, sonst drückt neue Farbe zurück und bildet Blüten."
+     ],
+     "q": "Hast du bemerkt, wie Wetter oder Raumtemperatur die Trockenzeit deiner Farbe verändern?",
+     "c": "Befeuchte einen Papierstreifen und setze beim Trocknen alle 30 Sekunden Farbe hinein. Notiere, wie sich die Ränder ändern."
+    },
+    "es": {
+     "t": "Controlar el agua",
+     "g": "Aprende a leer el brillo del papel para saber si está mojado, húmedo o seco.",
+     "p": [
+      "Brillo intenso significa muy mojado: la pintura se expande sin control. Brillo satinado, húmedo: bordes suaves pero controlados.",
+      "Sin brillo pero fresco al tocarlo con el dorso de la mano, aún algo húmedo; tibio y mate, seco.",
+      "El pincel suele necesitar menos agua que el papel; si no, la pintura nueva empuja y forma coliflores."
+     ],
+     "q": "¿Has notado cómo el clima o la temperatura de la habitación cambian lo rápido que seca tu pintura?",
+     "c": "Moja una tira de papel y añade color cada 30 segundos mientras se seca. Observa cómo cambian los bordes."
+    },
+    "fr": {
+     "t": "Maîtriser l'eau",
+     "g": "Apprends à lire la brillance du papier pour savoir s'il est mouillé, humide ou sec.",
+     "p": [
+      "Une forte brillance signifie très mouillé : la peinture fuse partout. Un reflet satiné, humide : bords doux mais contrôlés.",
+      "Sans brillance mais frais au dos de la main, encore un peu humide ; tiède et mat, sec.",
+      "Ton pinceau doit en général contenir moins d'eau que le papier, sinon la nouvelle couleur repousse et forme des auréoles."
+     ],
+     "q": "As-tu remarqué que la météo ou la température de la pièce change la vitesse de séchage ?",
+     "c": "Mouille une bande de papier et dépose de la couleur toutes les 30 secondes pendant qu'elle sèche. Note l'évolution des bords."
+    },
+    "it": {
+     "t": "Controllare l'acqua",
+     "g": "Impara a leggere la lucentezza della carta per capire se è bagnata, umida o asciutta.",
+     "p": [
+      "Lucida significa molto bagnata: il colore si espande senza controllo. Satinata significa umida: bordi morbidi ma controllati.",
+      "Opaca ma fresca al tocco col dorso della mano è ancora un po' umida; tiepida e opaca è asciutta.",
+      "Il pennello di solito deve avere meno acqua della carta, altrimenti il colore nuovo respinge e crea fioriture."
+     ],
+     "q": "Hai notato come il clima o la temperatura della stanza cambiano la velocità di asciugatura?",
+     "c": "Bagna una striscia di carta e aggiungi colore ogni 30 secondi mentre asciuga. Nota come cambiano i bordi."
+    },
+    "pt": {
+     "t": "Controlar a água",
+     "g": "Aprende a ler o brilho do papel para saber se está molhado, húmido ou seco.",
+     "p": [
+      "Brilho forte quer dizer muito molhado: a tinta espalha-se sem controlo. Brilho acetinado, húmido: bordas suaves mas controladas.",
+      "Sem brilho mas fresco ao toque com as costas da mão, ainda um pouco húmido; morno e mate, seco.",
+      "O pincel deve ter em geral menos água do que o papel, senão a tinta nova empurra e cria florescências."
+     ],
+     "q": "Já reparaste como o tempo ou a temperatura da sala mudam a rapidez com que a tinta seca?",
+     "c": "Molha uma tira de papel e junta cor a cada 30 segundos enquanto seca. Repara como mudam as bordas."
+    },
+    "pt_BR": {
+     "t": "Controlando a água",
+     "g": "Aprenda a ler o brilho do papel para saber se está molhado, úmido ou seco.",
+     "p": [
+      "Brilho forte significa muito molhado: a tinta se espalha sem controle. Brilho acetinado, úmido: bordas suaves mas controladas.",
+      "Sem brilho mas fresco ao toque com as costas da mão, ainda um pouco úmido; morno e fosco, seco.",
+      "O pincel geralmente deve ter menos água que o papel, senão a tinta nova empurra e cria florações."
+     ],
+     "q": "Você já reparou como o clima ou a temperatura do cômodo mudam a velocidade de secagem?",
+     "c": "Molhe uma tira de papel e coloque cor a cada 30 segundos enquanto seca. Observe como as bordas mudam."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lifting colour",
+     "g": "Remove paint with a clean damp brush or tissue to create highlights and clouds.",
+     "p": [
+      "While a wash is still wet, dab with a crumpled tissue to lift soft, fluffy clouds in a blue sky.",
+      "On dry paint, scrub gently with a damp synthetic brush, then blot, to soften edges or recover lights.",
+      "Staining pigments like phthalo blue lift poorly, while granulating ones like ultramarine lift easily."
+     ],
+     "q": "Have you ever turned a painting mistake into something good by accident?",
+     "c": "Paint a blue sky wash and lift three clouds with a tissue while it is still wet."
+    },
+    "de": {
+     "t": "Farbe abheben",
+     "g": "Nimm Farbe mit einem sauberen, feuchten Pinsel oder Tuch heraus, um Lichter und Wolken zu schaffen.",
+     "p": [
+      "Solange die Lasur nass ist, tupfst du mit zerknülltem Papiertuch weiche, flauschige Wolken in den blauen Himmel.",
+      "Auf trockener Farbe sanft mit einem feuchten Synthetikpinsel reiben und abtupfen, um Kanten zu mildern oder Lichter zurückzuholen.",
+      "Färbende Pigmente wie Phthaloblau lassen sich schlecht abheben, granulierende wie Ultramarin dagegen leicht."
+     ],
+     "q": "Hast du schon einmal zufällig einen Malfehler in etwas Schönes verwandelt?",
+     "c": "Male einen blauen Himmel und hebe mit einem Tuch drei Wolken heraus, solange er noch nass ist."
+    },
+    "es": {
+     "t": "Levantar color",
+     "g": "Retira pintura con un pincel limpio y húmedo o con papel para crear luces y nubes.",
+     "p": [
+      "Con la aguada aún húmeda, toca con un pañuelo de papel arrugado para levantar nubes suaves en un cielo azul.",
+      "Sobre pintura seca, frota con suavidad con un pincel sintético húmedo y seca con papel para suavizar bordes o recuperar luces.",
+      "Los pigmentos que tiñen, como el azul ftalo, se levantan mal; los granulantes, como el ultramar, se levantan fácil."
+     ],
+     "q": "¿Alguna vez convertiste sin querer un error en algo bonito?",
+     "c": "Pinta una aguada de cielo azul y levanta tres nubes con un pañuelo de papel mientras está húmeda."
+    },
+    "fr": {
+     "t": "Enlever la couleur",
+     "g": "Retire de la peinture avec un pinceau propre et humide ou un mouchoir pour créer lumières et nuages.",
+     "p": [
+      "Tant que le lavis est humide, tamponne avec un mouchoir froissé pour faire apparaître des nuages doux dans un ciel bleu.",
+      "Sur peinture sèche, frotte doucement avec un pinceau synthétique humide puis éponge pour adoucir un bord ou récupérer une lumière.",
+      "Les pigments tachants comme le bleu de phtalo s'enlèvent mal, les granulants comme l'outremer très bien."
+     ],
+     "q": "As-tu déjà transformé par hasard une erreur en quelque chose de beau ?",
+     "c": "Peins un ciel bleu et enlève trois nuages avec un mouchoir tant qu'il est encore humide."
+    },
+    "it": {
+     "t": "Sollevare il colore",
+     "g": "Togli colore con un pennello pulito e umido o un fazzoletto per creare luci e nuvole.",
+     "p": [
+      "Con la velatura ancora bagnata, tampona con un fazzoletto stropicciato per far apparire nuvole soffici in un cielo blu.",
+      "Sul colore asciutto strofina piano con un pennello sintetico umido e tampona, per ammorbidire bordi o recuperare luci.",
+      "I pigmenti tingenti come il blu ftalo si sollevano male, quelli granulosi come l'oltremare facilmente."
+     ],
+     "q": "Ti è mai capitato di trasformare per caso un errore in qualcosa di bello?",
+     "c": "Dipingi un cielo blu e solleva tre nuvole con un fazzoletto finché è ancora bagnato."
+    },
+    "pt": {
+     "t": "Levantar cor",
+     "g": "Retira tinta com um pincel limpo e húmido ou um lenço de papel para criar luzes e nuvens.",
+     "p": [
+      "Com a aguada ainda húmida, toca com um lenço de papel amarrotado para levantar nuvens fofas num céu azul.",
+      "Em tinta seca, esfrega com suavidade com um pincel sintético húmido e seca com papel para suavizar bordas ou recuperar luzes.",
+      "Pigmentos que mancham, como o azul ftalo, levantam mal; os granulosos, como o ultramarino, levantam bem."
+     ],
+     "q": "Já transformaste sem querer um erro em algo bonito?",
+     "c": "Pinta uma aguada de céu azul e levanta três nuvens com um lenço de papel enquanto está húmida."
+    },
+    "pt_BR": {
+     "t": "Levantando cor",
+     "g": "Retire tinta com um pincel limpo e úmido ou um lenço de papel para criar luzes e nuvens.",
+     "p": [
+      "Com a aguada ainda úmida, toque com um lenço de papel amassado para tirar nuvens fofas num céu azul.",
+      "Na tinta seca, esfregue de leve com um pincel sintético úmido e seque com papel para suavizar bordas ou recuperar luzes.",
+      "Pigmentos que mancham, como o azul ftalo, saem mal; os granulados, como o ultramar, saem fácil."
+     ],
+     "q": "Você já transformou sem querer um erro em algo bonito?",
+     "c": "Pinte uma aguada de céu azul e tire três nuvens com um lenço de papel enquanto ainda está úmida."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saving the whites",
+     "g": "Plan the white paper as your brightest light, a core idea of transparent watercolour.",
+     "p": [
+      "Transparent watercolour has no white paint in the traditional approach: the paper itself is the light.",
+      "Before painting, decide where the whites go and paint around them, or protect them with masking fluid.",
+      "Saved whites look fresh and sparkling; whites added later with opaque paint often look chalky by comparison."
+     ],
+     "q": "Where would the brightest whites be in a scene you love, like a beach or a snowy street?",
+     "c": "Draw a simple shape like a boat sail, then paint the sky and sea around it, keeping the sail pure white."
+    },
+    "de": {
+     "t": "Weiß aussparen",
+     "g": "Plane das weiße Papier als dein hellstes Licht, eine Kernidee des transparenten Aquarells.",
+     "p": [
+      "Im klassischen transparenten Aquarell gibt es kein Deckweiß: Das Papier selbst ist das Licht.",
+      "Lege vor dem Malen fest, wo die Weißflächen sind, und male um sie herum oder schütze sie mit Rubbelkrepp.",
+      "Ausgesparte Weißflächen wirken frisch und funkelnd; später deckend aufgesetztes Weiß wirkt dagegen oft kreidig."
+     ],
+     "q": "Wo wären die hellsten Weißtöne in einer Szene, die du liebst, etwa am Strand oder in einer verschneiten Straße?",
+     "c": "Zeichne eine einfache Form wie ein Segel, male Himmel und Meer drumherum und lass das Segel reinweiß."
+    },
+    "es": {
+     "t": "Reservar los blancos",
+     "g": "Planifica el blanco del papel como tu luz más brillante, idea clave de la acuarela transparente.",
+     "p": [
+      "En la acuarela transparente tradicional no hay pintura blanca: el propio papel es la luz.",
+      "Antes de pintar, decide dónde van los blancos y pinta alrededor, o protégelos con líquido de enmascarar.",
+      "Los blancos reservados se ven frescos y brillantes; los añadidos después con pintura opaca suelen verse yesosos."
+     ],
+     "q": "¿Dónde estarían los blancos más brillantes en una escena que te encanta, como una playa o una calle nevada?",
+     "c": "Dibuja una forma sencilla como la vela de un barco y pinta el cielo y el mar alrededor, dejando la vela blanca."
+    },
+    "fr": {
+     "t": "Réserver les blancs",
+     "g": "Prévois le blanc du papier comme ta lumière la plus vive, idée clé de l'aquarelle transparente.",
+     "p": [
+      "Dans l'aquarelle transparente traditionnelle, il n'y a pas de blanc en tube : le papier lui-même est la lumière.",
+      "Avant de peindre, décide où vont les blancs et peins autour, ou protège-les avec du drawing gum.",
+      "Les blancs réservés paraissent frais et étincelants ; un blanc couvrant ajouté après semble souvent crayeux."
+     ],
+     "q": "Où seraient les blancs les plus éclatants dans une scène que tu aimes, comme une plage ou une rue enneigée ?",
+     "c": "Dessine une forme simple comme une voile, puis peins le ciel et la mer autour en gardant la voile bien blanche."
+    },
+    "it": {
+     "t": "Risparmiare i bianchi",
+     "g": "Pianifica il bianco della carta come la tua luce più forte, idea chiave dell'acquerello trasparente.",
+     "p": [
+      "Nell'acquerello trasparente tradizionale non c'è il bianco in tubetto: la carta stessa è la luce.",
+      "Prima di dipingere decidi dove vanno i bianchi e dipingi intorno, oppure proteggili con il liquido da mascheratura.",
+      "I bianchi risparmiati appaiono freschi e scintillanti; quelli aggiunti dopo con colore coprente sembrano spesso gessosi."
+     ],
+     "q": "Dove sarebbero i bianchi più luminosi in una scena che ami, come una spiaggia o una strada innevata?",
+     "c": "Disegna una forma semplice come una vela, poi dipingi cielo e mare intorno lasciando la vela bianca."
+    },
+    "pt": {
+     "t": "Reservar os brancos",
+     "g": "Planeia o branco do papel como a tua luz mais forte, ideia central da aguarela transparente.",
+     "p": [
+      "Na aguarela transparente tradicional não há tinta branca: o próprio papel é a luz.",
+      "Antes de pintar, decide onde ficam os brancos e pinta à volta, ou protege-os com líquido de máscara.",
+      "Brancos reservados parecem frescos e cintilantes; brancos acrescentados depois com tinta opaca parecem muitas vezes calcários."
+     ],
+     "q": "Onde estariam os brancos mais brilhantes numa cena que adoras, como uma praia ou uma rua com neve?",
+     "c": "Desenha uma forma simples como a vela de um barco e pinta o céu e o mar à volta, deixando a vela branca."
+    },
+    "pt_BR": {
+     "t": "Reservando os brancos",
+     "g": "Planeje o branco do papel como sua luz mais forte, ideia central da aquarela transparente.",
+     "p": [
+      "Na aquarela transparente tradicional não existe tinta branca: o próprio papel é a luz.",
+      "Antes de pintar, decida onde ficam os brancos e pinte ao redor, ou proteja com líquido de máscara.",
+      "Brancos reservados parecem frescos e brilhantes; brancos colocados depois com tinta opaca costumam parecer calcários."
+     ],
+     "q": "Onde estariam os brancos mais brilhantes numa cena que você ama, como uma praia ou uma rua com neve?",
+     "c": "Desenhe uma forma simples como a vela de um barco e pinte céu e mar ao redor, deixando a vela branca."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First acrylic strokes",
+     "g": "Feel how acrylic handles, why it dries fast and how to keep it workable.",
+     "p": [
+      "Acrylic dries as water evaporates, often in minutes on the palette, and once dry it will not rewet.",
+      "Squeeze out small amounts, mist the palette with water or use a stay-wet palette to keep paint fresh.",
+      "Keep brushes wet while working and wash them right away, because dried acrylic ruins brush hairs."
+     ],
+     "q": "Does fast drying sound like a helpful feature or a stressful one to you?",
+     "c": "Paint a few strokes of acrylic, then time how long they take to dry. Try again with a misted palette."
+    },
+    "de": {
+     "t": "Erste Acrylstriche",
+     "g": "Spüre, wie sich Acryl verhält, warum es schnell trocknet und wie du es verarbeitbar hältst.",
+     "p": [
+      "Acryl trocknet, wenn das Wasser verdunstet, auf der Palette oft in Minuten, und ist trocken nicht mehr anlösbar.",
+      "Drücke kleine Mengen aus, besprühe die Palette mit Wasser oder nutze eine Nasspalette, damit die Farbe frisch bleibt.",
+      "Halte die Pinsel beim Malen feucht und wasche sie sofort aus, denn getrocknetes Acryl ruiniert die Haare."
+     ],
+     "q": "Klingt schnelles Trocknen für dich eher hilfreich oder stressig?",
+     "c": "Male ein paar Acrylstriche und stoppe, wie lange sie zum Trocknen brauchen. Versuch es noch mal mit besprühter Palette."
+    },
+    "es": {
+     "t": "Primeros trazos de acrílico",
+     "g": "Siente cómo se comporta el acrílico, por qué seca rápido y cómo mantenerlo trabajable.",
+     "p": [
+      "El acrílico seca al evaporarse el agua, a menudo en minutos en la paleta, y una vez seco no se puede reactivar.",
+      "Pon poca cantidad, pulveriza la paleta con agua o usa una paleta húmeda para mantener la pintura fresca.",
+      "Mantén los pinceles húmedos mientras pintas y lávalos enseguida: el acrílico seco arruina el pelo."
+     ],
+     "q": "¿El secado rápido te parece una ventaja o algo estresante?",
+     "c": "Pinta unos trazos de acrílico y cronometra cuánto tardan en secar. Repite con la paleta pulverizada."
+    },
+    "fr": {
+     "t": "Premières touches d'acrylique",
+     "g": "Ressens comment l'acrylique se comporte, pourquoi elle sèche vite et comment la garder travaillable.",
+     "p": [
+      "L'acrylique sèche quand l'eau s'évapore, souvent en quelques minutes sur la palette, et ne se réhumecte plus.",
+      "Sors de petites quantités, vaporise la palette ou utilise une palette humide pour garder la peinture fraîche.",
+      "Garde les pinceaux humides en travaillant et lave-les tout de suite : l'acrylique séchée abîme les poils."
+     ],
+     "q": "Un séchage rapide te semble-t-il un atout ou une source de stress ?",
+     "c": "Peins quelques touches d'acrylique et chronomètre leur séchage. Recommence avec une palette vaporisée."
+    },
+    "it": {
+     "t": "Prime pennellate acriliche",
+     "g": "Senti come si comporta l'acrilico, perché asciuga in fretta e come mantenerlo lavorabile.",
+     "p": [
+      "L'acrilico asciuga quando l'acqua evapora, spesso in pochi minuti sulla tavolozza, e da asciutto non si riattiva.",
+      "Spremi poco colore, nebulizza acqua sulla tavolozza o usa una tavolozza umida per mantenerlo fresco.",
+      "Tieni i pennelli bagnati mentre lavori e lavali subito: l'acrilico secco rovina i peli."
+     ],
+     "q": "L'asciugatura rapida ti sembra un vantaggio o una fonte di stress?",
+     "c": "Dipingi qualche pennellata di acrilico e cronometra quanto ci mette ad asciugare. Riprova con la tavolozza nebulizzata."
+    },
+    "pt": {
+     "t": "Primeiras pinceladas acrílicas",
+     "g": "Sente como o acrílico se comporta, porque seca depressa e como mantê-lo trabalhável.",
+     "p": [
+      "O acrílico seca quando a água evapora, muitas vezes em minutos na paleta, e depois de seco não volta a dissolver.",
+      "Põe pouca quantidade, borrifa a paleta com água ou usa uma paleta húmida para manter a tinta fresca.",
+      "Mantém os pincéis molhados enquanto pintas e lava-os logo: acrílico seco estraga os pelos."
+     ],
+     "q": "Secar depressa parece-te uma vantagem ou algo stressante?",
+     "c": "Pinta umas pinceladas de acrílico e cronometra quanto tempo demoram a secar. Repete com a paleta borrifada."
+    },
+    "pt_BR": {
+     "t": "Primeiras pinceladas de acrílica",
+     "g": "Sinta como a acrílica se comporta, por que seca rápido e como mantê-la trabalhável.",
+     "p": [
+      "A acrílica seca quando a água evapora, muitas vezes em minutos na paleta, e depois de seca não dissolve mais.",
+      "Coloque pouca tinta, borrife a paleta com água ou use uma paleta úmida para manter a tinta fresca.",
+      "Mantenha os pincéis molhados enquanto pinta e lave logo: acrílica seca estraga os pelos."
+     ],
+     "q": "Secar rápido parece uma vantagem ou algo estressante para você?",
+     "c": "Pinte algumas pinceladas de acrílica e cronometre quanto tempo levam para secar. Repita com a paleta borrifada."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opaque coverage",
+     "g": "Paint light over dark with acrylic and gouache, something transparent watercolour cannot do.",
+     "p": [
+      "Opaque paint hides what is underneath, so you can place light colours on top of dark ones and correct freely.",
+      "A common opaque approach is to block in darks and mid-tones first, then add lights and highlights last.",
+      "Pigments differ in hiding power: titanium white and cadmiums cover strongly, while some others stay semi-transparent."
+     ],
+     "q": "How does it feel to know you can paint over any mistake with opaque paint?",
+     "c": "Paint a dark square, let it dry, then paint a bright yellow star on top with acrylic or gouache."
+    },
+    "de": {
+     "t": "Deckender Farbauftrag",
+     "g": "Male mit Acryl und Gouache hell über dunkel, was transparentes Aquarell nicht kann.",
+     "p": [
+      "Deckende Farbe verbirgt, was darunter liegt: Du kannst helle Farben auf dunkle setzen und frei korrigieren.",
+      "Ein üblicher Weg: zuerst Dunkel und Mitteltöne anlegen, ganz zum Schluss Lichter und Glanzpunkte setzen.",
+      "Pigmente decken unterschiedlich: Titanweiß und Kadmiumfarben decken stark, andere bleiben halb durchscheinend."
+     ],
+     "q": "Wie fühlt es sich an zu wissen, dass du jeden Fehler mit deckender Farbe übermalen kannst?",
+     "c": "Male ein dunkles Quadrat, lass es trocknen und setze mit Acryl oder Gouache einen hellgelben Stern darauf."
+    },
+    "es": {
+     "t": "Cobertura opaca",
+     "g": "Pinta claro sobre oscuro con acrílico y gouache, algo que la acuarela transparente no puede hacer.",
+     "p": [
+      "La pintura opaca tapa lo de debajo, así que puedes poner colores claros sobre oscuros y corregir con libertad.",
+      "Un enfoque habitual es encajar primero oscuros y medios tonos y añadir luces y brillos al final.",
+      "Los pigmentos cubren distinto: el blanco de titanio y los cadmios tapan mucho, otros quedan semitransparentes."
+     ],
+     "q": "¿Qué se siente al saber que puedes tapar cualquier error con pintura opaca?",
+     "c": "Pinta un cuadrado oscuro, déjalo secar y pinta encima una estrella amarilla brillante con acrílico o gouache."
+    },
+    "fr": {
+     "t": "Couvrance opaque",
+     "g": "Peins du clair sur du foncé avec l'acrylique et la gouache, ce que l'aquarelle transparente ne permet pas.",
+     "p": [
+      "Une peinture couvrante cache ce qui est dessous : tu peux poser du clair sur du foncé et corriger librement.",
+      "Une méthode courante : poser d'abord les sombres et demi-teintes, puis les clairs et rehauts à la fin.",
+      "Les pigments couvrent plus ou moins : blanc de titane et cadmiums couvrent bien, d'autres restent semi-transparents."
+     ],
+     "q": "Que ressens-tu à l'idée de pouvoir recouvrir n'importe quelle erreur avec une peinture couvrante ?",
+     "c": "Peins un carré foncé, laisse sécher, puis peins dessus une étoile jaune vif à l'acrylique ou à la gouache."
+    },
+    "it": {
+     "t": "Copertura opaca",
+     "g": "Dipingi chiaro su scuro con acrilico e gouache, cosa che l'acquerello trasparente non permette.",
+     "p": [
+      "Il colore coprente nasconde ciò che sta sotto: puoi mettere colori chiari su quelli scuri e correggere liberamente.",
+      "Un approccio comune è impostare prima scuri e mezzi toni e aggiungere luci e lumi alla fine.",
+      "I pigmenti coprono in modo diverso: bianco di titanio e cadmi coprono molto, altri restano semitrasparenti."
+     ],
+     "q": "Che effetto ti fa sapere di poter coprire qualsiasi errore con un colore coprente?",
+     "c": "Dipingi un quadrato scuro, lascialo asciugare e dipingici sopra una stella giallo vivo con acrilico o gouache."
+    },
+    "pt": {
+     "t": "Cobertura opaca",
+     "g": "Pinta claro sobre escuro com acrílico e guache, algo que a aguarela transparente não consegue.",
+     "p": [
+      "A tinta opaca tapa o que está por baixo, por isso podes pôr cores claras sobre escuras e corrigir à vontade.",
+      "Uma abordagem comum é marcar primeiro os escuros e meios-tons e juntar as luzes e brilhos no fim.",
+      "Os pigmentos cobrem de forma diferente: branco de titânio e cádmios tapam muito, outros ficam semitransparentes."
+     ],
+     "q": "Como te sentes ao saber que podes tapar qualquer erro com tinta opaca?",
+     "c": "Pinta um quadrado escuro, deixa secar e pinta por cima uma estrela amarela viva com acrílico ou guache."
+    },
+    "pt_BR": {
+     "t": "Cobertura opaca",
+     "g": "Pinte claro sobre escuro com acrílica e guache, algo que a aquarela transparente não consegue.",
+     "p": [
+      "A tinta opaca cobre o que está embaixo, então você pode colocar cores claras sobre escuras e corrigir à vontade.",
+      "Uma abordagem comum é marcar primeiro os escuros e meios-tons e deixar luzes e brilhos para o final.",
+      "Os pigmentos cobrem de jeitos diferentes: branco de titânio e cádmios cobrem muito, outros ficam semitransparentes."
+     ],
+     "q": "Como é saber que você pode cobrir qualquer erro com tinta opaca?",
+     "c": "Pinte um quadrado escuro, deixe secar e pinte por cima uma estrela amarela viva com acrílica ou guache."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "meal_prep",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What meal prep really is",
+     "g": "Understand meal prep as preparing food ahead so your week feels calmer and easier.",
+     "p": [
+      "Meal prep simply means doing some cooking or chopping before you need it.",
+      "It saves time on busy days, cuts last-minute stress and helps you spend less.",
+      "There is no single right way: it can be one dish or a whole week of meals."
+     ],
+     "q": "What part of cooking during the week feels hardest for you right now?",
+     "c": "Write down three meals you ate this week and mark which one you could have prepared ahead."
+    },
+    "de": {
+     "t": "Was Meal Prep wirklich ist",
+     "g": "Verstehe Meal Prep als Vorkochen, damit deine Woche ruhiger und leichter wird.",
+     "p": [
+      "Meal Prep heißt einfach, etwas zu kochen oder zu schnippeln, bevor du es brauchst.",
+      "Es spart an vollen Tagen Zeit, senkt den Stress und hilft dir, weniger auszugeben.",
+      "Es gibt keinen einzig richtigen Weg: ein Gericht oder Essen für die ganze Woche."
+     ],
+     "q": "Was fällt dir unter der Woche beim Kochen gerade am schwersten?",
+     "c": "Notiere drei Mahlzeiten dieser Woche und markiere eine, die du hättest vorbereiten können."
+    },
+    "es": {
+     "t": "Qué es de verdad el meal prep",
+     "g": "Entender el meal prep como preparar comida con antelación para tener una semana más tranquila.",
+     "p": [
+      "Hacer meal prep es cocinar o picar algo antes de que lo necesites.",
+      "Ahorra tiempo en los días ajetreados, reduce el estrés y te ayuda a gastar menos.",
+      "No hay una única forma correcta: puede ser un plato o las comidas de toda la semana."
+     ],
+     "q": "¿Qué parte de cocinar entre semana te resulta más difícil ahora mismo?",
+     "c": "Apunta tres comidas de esta semana y marca una que podrías haber preparado antes."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le meal prep",
+     "g": "Comprendre le meal prep comme le fait de cuisiner à l'avance pour une semaine plus sereine.",
+     "p": [
+      "Le meal prep, c'est simplement cuisiner ou couper des aliments avant d'en avoir besoin.",
+      "On gagne du temps les jours chargés, on stresse moins et on dépense moins.",
+      "Il n'y a pas une seule bonne méthode : un seul plat ou les repas de toute la semaine."
+     ],
+     "q": "Qu'est-ce qui te semble le plus difficile quand tu cuisines en semaine ?",
+     "c": "Note trois repas de cette semaine et entoure celui que tu aurais pu préparer à l'avance."
+    },
+    "it": {
+     "t": "Cos'è davvero il meal prep",
+     "g": "Capire il meal prep come preparare il cibo in anticipo per vivere la settimana con più calma.",
+     "p": [
+      "Fare meal prep significa cucinare o tagliare qualcosa prima che ti serva.",
+      "Fa risparmiare tempo nei giorni pieni, riduce lo stress e aiuta a spendere meno.",
+      "Non esiste un solo modo giusto: può essere un piatto o i pasti di tutta la settimana."
+     ],
+     "q": "Quale parte del cucinare in settimana ti pesa di più in questo momento?",
+     "c": "Scrivi tre pasti di questa settimana e segna quello che avresti potuto preparare prima."
+    },
+    "pt": {
+     "t": "O que é realmente o meal prep",
+     "g": "Perceber o meal prep como preparar comida com antecedência para teres uma semana mais calma.",
+     "p": [
+      "Fazer meal prep é cozinhar ou cortar alimentos antes de precisares deles.",
+      "Poupa tempo nos dias cheios, reduz o stress e ajuda-te a gastar menos.",
+      "Não há uma única forma certa: pode ser um prato ou as refeições da semana inteira."
+     ],
+     "q": "Que parte de cozinhar durante a semana te custa mais neste momento?",
+     "c": "Escreve três refeições desta semana e assinala uma que podias ter preparado antes."
+    },
+    "pt_BR": {
+     "t": "O que é meal prep de verdade",
+     "g": "Entender o meal prep como preparar comida com antecedência para ter uma semana mais tranquila.",
+     "p": [
+      "Fazer meal prep é cozinhar ou picar alimentos antes de precisar deles.",
+      "Economiza tempo nos dias corridos, diminui o estresse e ajuda você a gastar menos.",
+      "Não existe um único jeito certo: pode ser um prato ou as refeições da semana toda."
+     ],
+     "q": "Qual parte de cozinhar durante a semana é mais difícil para você agora?",
+     "c": "Anote três refeições desta semana e marque uma que você poderia ter preparado antes."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Four styles of meal prep",
+     "g": "Get to know the four main styles of meal prep and picture how each one could fit your week.",
+     "p": [
+      "Full ready meals: complete portions in boxes, ready to heat and eat.",
+      "Batch cooking: one big recipe, like a stew, that you eat over several days.",
+      "Ingredient prep and freezer meals: chopped bases to mix later, or dishes saved for later weeks."
+     ],
+     "q": "Which of the four styles sounds most like something you would enjoy?",
+     "c": "Pick one style and write one dish you could make with it this week."
+    },
+    "de": {
+     "t": "Vier Arten von Meal Prep",
+     "g": "Lerne die vier Hauptarten von Meal Prep kennen und stell dir vor, wie jede in deine Woche passt.",
+     "p": [
+      "Fertige Mahlzeiten: komplette Portionen in Boxen, nur noch aufwärmen und essen.",
+      "Batch Cooking: ein großes Rezept, etwa ein Eintopf, das für mehrere Tage reicht.",
+      "Zutaten vorbereiten oder Gefriergerichte: Basics zum Kombinieren oder Essen für spätere Wochen."
+     ],
+     "q": "Welche der vier Arten klingt am meisten nach dir?",
+     "c": "Wähle eine Art und schreib ein Gericht auf, das du diese Woche damit machen könntest."
+    },
+    "es": {
+     "t": "Cuatro estilos de meal prep",
+     "g": "Conocer los cuatro estilos principales de meal prep e imaginar cómo encajaría cada uno en tu semana.",
+     "p": [
+      "Comidas completas: raciones listas en táper para calentar y comer.",
+      "Cocina por lotes: una receta grande, como un guiso, que comes durante varios días.",
+      "Ingredientes preparados y platos congelados: bases para combinar o comidas para otras semanas."
+     ],
+     "q": "¿Cuál de los cuatro estilos te parece más tu estilo?",
+     "c": "Elige un estilo y escribe un plato que podrías hacer con él esta semana."
+    },
+    "fr": {
+     "t": "Quatre styles de meal prep",
+     "g": "Découvrir les quatre grands styles de meal prep et imaginer comment chacun s'intègre à ta semaine.",
+     "p": [
+      "Repas complets : des portions prêtes en boîte, à réchauffer et à manger.",
+      "Cuisine en grande quantité : une grosse recette, comme un ragoût, pour plusieurs jours.",
+      "Ingrédients préparés et plats congelés : des bases à combiner ou des repas pour plus tard."
+     ],
+     "q": "Lequel de ces quatre styles te ressemble le plus ?",
+     "c": "Choisis un style et note un plat que tu pourrais préparer ainsi cette semaine."
+    },
+    "it": {
+     "t": "Quattro stili di meal prep",
+     "g": "Conoscere i quattro stili principali di meal prep e immaginare come ognuno si adatta alla tua settimana.",
+     "p": [
+      "Pasti completi: porzioni pronte nei contenitori, da scaldare e mangiare.",
+      "Cucina in grandi quantità: una ricetta grande, come uno stufato, per più giorni.",
+      "Ingredienti pronti e piatti surgelati: basi da combinare o pasti per le settimane dopo."
+     ],
+     "q": "Quale dei quattro stili ti somiglia di più?",
+     "c": "Scegli uno stile e scrivi un piatto che potresti preparare così questa settimana."
+    },
+    "pt": {
+     "t": "Quatro estilos de meal prep",
+     "g": "Conhecer os quatro estilos principais de meal prep e imaginar como cada um encaixa na tua semana.",
+     "p": [
+      "Refeições completas: porções prontas em caixas, só aquecer e comer.",
+      "Cozinhar em quantidade: uma receita grande, como um guisado, para vários dias.",
+      "Ingredientes preparados e pratos congelados: bases para combinar ou refeições para mais tarde."
+     ],
+     "q": "Qual dos quatro estilos tem mais a ver contigo?",
+     "c": "Escolhe um estilo e escreve um prato que podias fazer assim esta semana."
+    },
+    "pt_BR": {
+     "t": "Quatro estilos de meal prep",
+     "g": "Conhecer os quatro estilos principais de meal prep e imaginar como cada um cabe na sua semana.",
+     "p": [
+      "Marmitas completas: porções prontas em potes, é só esquentar e comer.",
+      "Cozinhar em lote: uma receita grande, como um ensopado, para vários dias.",
+      "Ingredientes pré-preparados e congelados: bases para combinar ou pratos para outras semanas."
+     ],
+     "q": "Qual dos quatro estilos tem mais a ver com você?",
+     "c": "Escolha um estilo e anote um prato que você poderia fazer assim nesta semana."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting your meal prep goal",
+     "g": "Choose one main reason for meal prepping so every decision becomes simpler.",
+     "p": [
+      "Common goals: saving time, eating more home food, spending less or wasting less.",
+      "One clear goal helps you pick recipes, containers and how much to cook.",
+      "Your goal can change later; start with what matters most this month."
+     ],
+     "q": "If meal prep could fix just one thing in your week, what would it be?",
+     "c": "Write your main meal prep goal in one short sentence and stick it on the fridge."
+    },
+    "de": {
+     "t": "Dein Meal-Prep-Ziel",
+     "g": "Wähle einen Hauptgrund fürs Vorkochen, damit jede Entscheidung leichter wird.",
+     "p": [
+      "Typische Ziele: Zeit sparen, öfter selbst kochen, weniger ausgeben oder weniger wegwerfen.",
+      "Ein klares Ziel hilft bei Rezepten, Behältern und der Menge, die du kochst.",
+      "Dein Ziel darf sich ändern; fang mit dem an, was dir gerade am wichtigsten ist."
+     ],
+     "q": "Wenn Meal Prep nur eine Sache in deiner Woche lösen könnte, welche wäre es?",
+     "c": "Schreib dein Hauptziel in einem kurzen Satz auf und häng es an den Kühlschrank."
+    },
+    "es": {
+     "t": "Define tu objetivo de meal prep",
+     "g": "Elegir un motivo principal para hacer meal prep y que cada decisión sea más sencilla.",
+     "p": [
+      "Objetivos habituales: ahorrar tiempo, comer más en casa, gastar menos o desperdiciar menos.",
+      "Un objetivo claro te ayuda a elegir recetas, recipientes y cantidades.",
+      "Puede cambiar más adelante; empieza por lo que más te importa este mes."
+     ],
+     "q": "Si el meal prep pudiera arreglar una sola cosa de tu semana, ¿cuál sería?",
+     "c": "Escribe tu objetivo en una frase corta y pégalo en la nevera."
+    },
+    "fr": {
+     "t": "Fixer ton objectif de meal prep",
+     "g": "Choisir une raison principale de cuisiner à l'avance pour simplifier chaque décision.",
+     "p": [
+      "Objectifs courants : gagner du temps, manger plus maison, dépenser moins ou moins gaspiller.",
+      "Un objectif clair aide à choisir les recettes, les boîtes et les quantités.",
+      "Il peut évoluer ; commence par ce qui compte le plus pour toi ce mois-ci."
+     ],
+     "q": "Si le meal prep pouvait régler une seule chose dans ta semaine, laquelle ?",
+     "c": "Écris ton objectif en une phrase courte et colle-le sur le frigo."
+    },
+    "it": {
+     "t": "Il tuo obiettivo di meal prep",
+     "g": "Scegliere un motivo principale per il meal prep così ogni decisione diventa più semplice.",
+     "p": [
+      "Obiettivi comuni: risparmiare tempo, mangiare più cibo fatto in casa, spendere o sprecare meno.",
+      "Un obiettivo chiaro ti aiuta a scegliere ricette, contenitori e quantità.",
+      "Può cambiare più avanti; parti da ciò che conta di più per te questo mese."
+     ],
+     "q": "Se il meal prep potesse risolvere una sola cosa della tua settimana, quale sarebbe?",
+     "c": "Scrivi il tuo obiettivo in una frase breve e attaccalo al frigorifero."
+    },
+    "pt": {
+     "t": "Definir o teu objetivo",
+     "g": "Escolher uma razão principal para fazer meal prep e tornar cada decisão mais simples.",
+     "p": [
+      "Objetivos comuns: poupar tempo, comer mais comida caseira, gastar menos ou desperdiçar menos.",
+      "Um objetivo claro ajuda-te a escolher receitas, caixas e quantidades.",
+      "Pode mudar mais tarde; começa pelo que mais te importa este mês."
+     ],
+     "q": "Se o meal prep resolvesse só uma coisa na tua semana, qual seria?",
+     "c": "Escreve o teu objetivo numa frase curta e cola-o no frigorífico."
+    },
+    "pt_BR": {
+     "t": "Definindo seu objetivo",
+     "g": "Escolher um motivo principal para fazer meal prep e deixar cada decisão mais simples.",
+     "p": [
+      "Objetivos comuns: ganhar tempo, comer mais comida caseira, gastar menos ou desperdiçar menos.",
+      "Um objetivo claro ajuda você a escolher receitas, potes e quantidades.",
+      "Ele pode mudar depois; comece pelo que mais importa para você este mês."
+     ],
+     "q": "Se o meal prep resolvesse só uma coisa na sua semana, qual seria?",
+     "c": "Escreva seu objetivo em uma frase curta e cole na geladeira."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting small: one meal a day",
+     "g": "See why prepping just one meal, like lunch or breakfast, is the easiest way to begin.",
+     "p": [
+      "Prepping one meal is quick and does not take over your whole weekend.",
+      "Lunches and breakfasts are great starters because they repeat well.",
+      "Small wins build the habit; you can add more meals once it feels easy."
+     ],
+     "q": "Which meal of the day would make the biggest difference if it were ready?",
+     "c": "Choose your one meal and plan a single simple dish for three days."
+    },
+    "de": {
+     "t": "Klein anfangen: eine Mahlzeit am Tag",
+     "g": "Erkenne, warum nur eine vorbereitete Mahlzeit, etwa Mittag oder Frühstück, der leichteste Start ist.",
+     "p": [
+      "Eine Mahlzeit vorzubereiten geht schnell und kostet nicht das ganze Wochenende.",
+      "Mittagessen und Frühstück eignen sich gut, weil sie sich gut wiederholen lassen.",
+      "Kleine Erfolge bauen die Gewohnheit auf; mehr Mahlzeiten kommen später dazu."
+     ],
+     "q": "Welche Mahlzeit würde den größten Unterschied machen, wenn sie schon fertig wäre?",
+     "c": "Wähle deine eine Mahlzeit und plane ein einfaches Gericht für drei Tage."
+    },
+    "es": {
+     "t": "Empezar poco a poco: una comida al día",
+     "g": "Ver por qué preparar solo una comida, como el almuerzo o el desayuno, es la forma más fácil de empezar.",
+     "p": [
+      "Preparar una sola comida es rápido y no te ocupa todo el fin de semana.",
+      "Almuerzos y desayunos son ideales para empezar porque se repiten bien.",
+      "Los pequeños logros crean el hábito; luego puedes sumar más comidas."
+     ],
+     "q": "¿Qué comida del día marcaría más diferencia si ya estuviera lista?",
+     "c": "Elige tu comida y planifica un plato sencillo para tres días."
+    },
+    "fr": {
+     "t": "Commencer petit : un repas par jour",
+     "g": "Comprendre pourquoi préparer un seul repas, comme le déjeuner ou le petit-déjeuner, est le plus simple.",
+     "p": [
+      "Préparer un seul repas est rapide et ne prend pas tout ton week-end.",
+      "Déjeuners et petits-déjeuners sont parfaits pour débuter car ils se répètent bien.",
+      "Les petites victoires créent l'habitude ; tu ajouteras d'autres repas ensuite."
+     ],
+     "q": "Quel repas changerait le plus ta journée s'il était déjà prêt ?",
+     "c": "Choisis ton repas et prévois un plat simple pour trois jours."
+    },
+    "it": {
+     "t": "Iniziare in piccolo: un pasto al giorno",
+     "g": "Capire perché preparare un solo pasto, come pranzo o colazione, è il modo più facile per iniziare.",
+     "p": [
+      "Preparare un solo pasto è veloce e non ti occupa tutto il fine settimana.",
+      "Pranzi e colazioni sono perfetti per iniziare perché si ripetono bene.",
+      "Le piccole vittorie creano l'abitudine; altri pasti si aggiungono dopo."
+     ],
+     "q": "Quale pasto della giornata farebbe più differenza se fosse già pronto?",
+     "c": "Scegli il tuo pasto e pianifica un piatto semplice per tre giorni."
+    },
+    "pt": {
+     "t": "Começar devagar: uma refeição por dia",
+     "g": "Perceber porque preparar só uma refeição, como o almoço ou o pequeno-almoço, é o início mais fácil.",
+     "p": [
+      "Preparar uma refeição é rápido e não ocupa o teu fim de semana todo.",
+      "Almoços e pequenos-almoços são ótimos para começar porque se repetem bem.",
+      "Pequenas vitórias criam o hábito; depois podes juntar mais refeições."
+     ],
+     "q": "Que refeição faria mais diferença se já estivesse pronta?",
+     "c": "Escolhe a tua refeição e planeia um prato simples para três dias."
+    },
+    "pt_BR": {
+     "t": "Começando pequeno: uma refeição por dia",
+     "g": "Entender por que preparar só uma refeição, como almoço ou café da manhã, é o jeito mais fácil de começar.",
+     "p": [
+      "Preparar uma refeição é rápido e não toma seu fim de semana inteiro.",
+      "Almoço e café da manhã são ótimos para começar porque se repetem bem.",
+      "Pequenas vitórias criam o hábito; depois você inclui outras refeições."
+     ],
+     "q": "Qual refeição faria mais diferença se já estivesse pronta?",
+     "c": "Escolha sua refeição e planeje um prato simples para três dias."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Looking at your weekly schedule",
+     "g": "Read your week to spot busy days, free moments and the best time for a prep session.",
+     "p": [
+      "Busy evenings are the days when ready food helps the most.",
+      "A free hour on a weekend or a quiet evening can become your prep slot.",
+      "Two short sessions often work better than one long, tiring one."
+     ],
+     "q": "Which day of your week is usually the most rushed for meals?",
+     "c": "Look at next week and circle one free hour you could use to prep."
+    },
+    "de": {
+     "t": "Deinen Wochenplan anschauen",
+     "g": "Lies deine Woche, um volle Tage, freie Momente und die beste Zeit zum Vorkochen zu finden.",
+     "p": [
+      "An vollen Abenden hilft fertiges Essen am meisten.",
+      "Eine freie Stunde am Wochenende oder ein ruhiger Abend wird zu deinem Prep-Termin.",
+      "Zwei kurze Einheiten klappen oft besser als eine lange, anstrengende."
+     ],
+     "q": "An welchem Tag ist es bei dir mit dem Essen meistens am hektischsten?",
+     "c": "Schau auf nächste Woche und markiere eine freie Stunde zum Vorbereiten."
+    },
+    "es": {
+     "t": "Mirar tu horario semanal",
+     "g": "Revisar tu semana para ver los días ocupados, los ratos libres y el mejor momento para preparar.",
+     "p": [
+      "Las noches ajetreadas son cuando más ayuda tener comida lista.",
+      "Una hora libre el fin de semana o una tarde tranquila puede ser tu momento de preparación.",
+      "Dos sesiones cortas suelen funcionar mejor que una larga y agotadora."
+     ],
+     "q": "¿Qué día de tu semana suele ser el más acelerado para comer?",
+     "c": "Mira la próxima semana y rodea una hora libre que podrías usar para preparar."
+    },
+    "fr": {
+     "t": "Regarder ton emploi du temps",
+     "g": "Lire ta semaine pour repérer les jours chargés, les moments libres et le meilleur créneau de préparation.",
+     "p": [
+      "Les soirs chargés sont ceux où un plat prêt aide le plus.",
+      "Une heure libre le week-end ou un soir calme peut devenir ton créneau de préparation.",
+      "Deux courtes séances marchent souvent mieux qu'une longue et fatigante."
+     ],
+     "q": "Quel jour de ta semaine est le plus pressé côté repas ?",
+     "c": "Regarde la semaine prochaine et entoure une heure libre pour cuisiner à l'avance."
+    },
+    "it": {
+     "t": "Guardare la tua settimana",
+     "g": "Leggere la tua settimana per trovare giorni pieni, momenti liberi e l'orario migliore per preparare.",
+     "p": [
+      "Le sere piene sono quelle in cui il cibo pronto aiuta di più.",
+      "Un'ora libera nel weekend o una sera tranquilla può diventare il tuo momento di prep.",
+      "Due sessioni brevi spesso funzionano meglio di una lunga e stancante."
+     ],
+     "q": "Quale giorno della settimana è di solito il più di corsa per i pasti?",
+     "c": "Guarda la prossima settimana e cerchia un'ora libera da usare per preparare."
+    },
+    "pt": {
+     "t": "Olhar para a tua semana",
+     "g": "Analisar a tua semana para ver dias cheios, momentos livres e a melhor altura para preparar comida.",
+     "p": [
+      "As noites cheias são quando a comida pronta mais ajuda.",
+      "Uma hora livre ao fim de semana ou uma noite calma pode ser o teu momento de preparação.",
+      "Duas sessões curtas costumam resultar melhor do que uma longa e cansativa."
+     ],
+     "q": "Que dia da tua semana costuma ser o mais apressado para as refeições?",
+     "c": "Olha para a próxima semana e marca uma hora livre para preparar comida."
+    },
+    "pt_BR": {
+     "t": "Olhando sua agenda da semana",
+     "g": "Analisar sua semana para achar dias corridos, horários livres e o melhor momento para preparar.",
+     "p": [
+      "As noites corridas são quando a comida pronta mais ajuda.",
+      "Uma hora livre no fim de semana ou uma noite tranquila pode virar seu horário de preparo.",
+      "Duas sessões curtas costumam funcionar melhor que uma longa e cansativa."
+     ],
+     "q": "Qual dia da sua semana costuma ser o mais corrido para as refeições?",
+     "c": "Olhe a próxima semana e marque uma hora livre para preparar comida."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing good containers",
+     "g": "Learn what makes a good meal prep container so your food stays fresh and safe.",
+     "p": [
+      "Glass is sturdy and does not stain; plastic is light and easy to carry.",
+      "Leak-proof lids and a few portion sizes make packing simple.",
+      "Check the symbols: only microwave or freeze containers marked as safe for it."
+     ],
+     "q": "Which containers do you already have at home, and do their lids still close well?",
+     "c": "Gather your containers, match every lid and set aside any that are cracked or lidless."
+    },
+    "de": {
+     "t": "Gute Behälter auswählen",
+     "g": "Erfahre, was einen guten Meal-Prep-Behälter ausmacht, damit dein Essen frisch und sicher bleibt.",
+     "p": [
+      "Glas ist robust und verfärbt sich nicht; Kunststoff ist leicht und gut zu tragen.",
+      "Auslaufsichere Deckel und ein paar Portionsgrößen machen das Packen einfach.",
+      "Achte auf die Symbole: nur geeignete Behälter in Mikrowelle oder Gefrierfach."
+     ],
+     "q": "Welche Behälter hast du schon, und schließen ihre Deckel noch gut?",
+     "c": "Sammle deine Behälter, ordne jedem einen Deckel zu und sortiere kaputte aus."
+    },
+    "es": {
+     "t": "Elegir buenos recipientes",
+     "g": "Saber qué hace bueno a un recipiente para que tu comida se mantenga fresca y segura.",
+     "p": [
+      "El vidrio es resistente y no se mancha; el plástico es ligero y fácil de llevar.",
+      "Tapas herméticas y algunos tamaños de ración facilitan organizarte.",
+      "Mira los símbolos: usa en microondas o congelador solo los aptos para ello."
+     ],
+     "q": "¿Qué recipientes tienes ya en casa y siguen cerrando bien sus tapas?",
+     "c": "Reúne tus recipientes, empareja cada tapa y aparta los rotos o sin tapa."
+    },
+    "fr": {
+     "t": "Bien choisir ses boîtes",
+     "g": "Savoir ce qui fait une bonne boîte de meal prep pour garder ta nourriture fraîche et sûre.",
+     "p": [
+      "Le verre est solide et ne tache pas ; le plastique est léger et facile à transporter.",
+      "Des couvercles étanches et quelques tailles de portions simplifient tout.",
+      "Vérifie les symboles : micro-ondes ou congélateur seulement si la boîte l'indique."
+     ],
+     "q": "Quelles boîtes as-tu déjà, et leurs couvercles ferment-ils encore bien ?",
+     "c": "Rassemble tes boîtes, associe chaque couvercle et mets de côté celles abîmées."
+    },
+    "it": {
+     "t": "Scegliere buoni contenitori",
+     "g": "Capire cosa rende buono un contenitore così il cibo resta fresco e sicuro.",
+     "p": [
+      "Il vetro è robusto e non si macchia; la plastica è leggera e facile da portare.",
+      "Coperchi a tenuta e qualche formato di porzione rendono tutto più semplice.",
+      "Guarda i simboli: microonde o freezer solo se il contenitore è adatto."
+     ],
+     "q": "Quali contenitori hai già in casa, e i coperchi chiudono ancora bene?",
+     "c": "Raduna i contenitori, abbina ogni coperchio e metti da parte quelli rovinati."
+    },
+    "pt": {
+     "t": "Escolher boas caixas",
+     "g": "Saber o que faz uma boa caixa de meal prep para manter a comida fresca e segura.",
+     "p": [
+      "O vidro é resistente e não mancha; o plástico é leve e fácil de levar.",
+      "Tampas estanques e alguns tamanhos de porção facilitam a organização.",
+      "Vê os símbolos: só uses no micro-ondas ou congelador caixas próprias para isso."
+     ],
+     "q": "Que caixas já tens em casa, e as tampas ainda fecham bem?",
+     "c": "Junta as tuas caixas, faz corresponder cada tampa e separa as estragadas."
+    },
+    "pt_BR": {
+     "t": "Escolhendo bons potes",
+     "g": "Saber o que faz um bom pote de marmita para manter a comida fresca e segura.",
+     "p": [
+      "Vidro é resistente e não mancha; plástico é leve e fácil de levar.",
+      "Tampas que não vazam e alguns tamanhos de porção facilitam tudo.",
+      "Veja os símbolos: use no micro-ondas ou freezer só potes indicados para isso."
+     ],
+     "q": "Quais potes você já tem em casa, e as tampas ainda fecham bem?",
+     "c": "Junte seus potes, encontre a tampa de cada um e separe os quebrados."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your basic meal prep toolkit",
+     "g": "Discover the few simple tools that make a prep session faster and more fun.",
+     "p": [
+      "Sheet pans and one big pot let you cook large amounts at once.",
+      "A sharp knife and two cutting boards make chopping safer and quicker.",
+      "Measuring cups and labels help you repeat recipes and track your food."
+     ],
+     "q": "Which kitchen tool do you use the most, and which one do you wish you had?",
+     "c": "Check your kitchen for these six tools and note anything missing."
+    },
+    "de": {
+     "t": "Deine Meal-Prep-Grundausstattung",
+     "g": "Entdecke die wenigen einfachen Werkzeuge, die das Vorkochen schneller und schöner machen.",
+     "p": [
+      "Backbleche und ein großer Topf erlauben große Mengen auf einmal.",
+      "Ein scharfes Messer und zwei Schneidebretter machen das Schneiden sicherer und schneller.",
+      "Messbecher und Etiketten helfen, Rezepte zu wiederholen und den Überblick zu behalten."
+     ],
+     "q": "Welches Küchenwerkzeug nutzt du am meisten, und welches fehlt dir?",
+     "c": "Prüfe deine Küche auf diese sechs Werkzeuge und notiere, was fehlt."
+    },
+    "es": {
+     "t": "Tu equipo básico de meal prep",
+     "g": "Descubrir las pocas herramientas sencillas que hacen la preparación más rápida y divertida.",
+     "p": [
+      "Bandejas de horno y una olla grande te dejan cocinar mucha cantidad a la vez.",
+      "Un cuchillo afilado y dos tablas hacen el picado más seguro y rápido.",
+      "Tazas medidoras y etiquetas te ayudan a repetir recetas y controlar tu comida."
+     ],
+     "q": "¿Qué utensilio usas más y cuál te gustaría tener?",
+     "c": "Revisa tu cocina buscando estas seis herramientas y anota lo que falta."
+    },
+    "fr": {
+     "t": "Ta boîte à outils de base",
+     "g": "Découvrir les quelques outils simples qui rendent la préparation plus rapide et agréable.",
+     "p": [
+      "Des plaques de cuisson et une grande marmite permettent de cuisiner beaucoup d'un coup.",
+      "Un bon couteau et deux planches rendent la découpe plus sûre et plus rapide.",
+      "Des verres doseurs et des étiquettes aident à refaire les recettes et à s'organiser."
+     ],
+     "q": "Quel ustensile utilises-tu le plus, et lequel aimerais-tu avoir ?",
+     "c": "Vérifie si ta cuisine a ces six outils et note ce qui manque."
+    },
+    "it": {
+     "t": "Il tuo kit base di meal prep",
+     "g": "Scoprire i pochi strumenti semplici che rendono la preparazione più veloce e piacevole.",
+     "p": [
+      "Teglie da forno e una pentola grande permettono di cucinare tanto in una volta.",
+      "Un buon coltello affilato e due taglieri rendono il taglio più sicuro e veloce.",
+      "Misurini ed etichette aiutano a ripetere le ricette e tenere tutto in ordine."
+     ],
+     "q": "Quale attrezzo da cucina usi di più, e quale ti piacerebbe avere?",
+     "c": "Controlla se in cucina hai questi sei strumenti e annota cosa manca."
+    },
+    "pt": {
+     "t": "O teu kit básico de meal prep",
+     "g": "Descobrir as poucas ferramentas simples que tornam a preparação mais rápida e agradável.",
+     "p": [
+      "Tabuleiros de forno e uma panela grande deixam-te cozinhar muito de uma vez.",
+      "Uma faca afiada e duas tábuas tornam o corte mais seguro e rápido.",
+      "Copos medidores e etiquetas ajudam a repetir receitas e a organizar a comida."
+     ],
+     "q": "Que utensílio usas mais, e qual gostavas de ter?",
+     "c": "Verifica se tens estes seis utensílios na cozinha e anota o que falta."
+    },
+    "pt_BR": {
+     "t": "Seu kit básico de meal prep",
+     "g": "Descobrir as poucas ferramentas simples que deixam o preparo mais rápido e gostoso.",
+     "p": [
+      "Assadeiras e uma panela grande deixam você cozinhar bastante de uma vez.",
+      "Uma faca afiada e duas tábuas deixam o corte mais seguro e rápido.",
+      "Xícaras medidoras e etiquetas ajudam a repetir receitas e organizar a comida."
+     ],
+     "q": "Qual utensílio você mais usa, e qual gostaria de ter?",
+     "c": "Confira se sua cozinha tem essas seis ferramentas e anote o que falta."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fridge basics for prepped food",
+     "g": "Learn simple fridge habits that keep your prepped meals fresh and safe.",
+     "p": [
+      "Keep the fridge at about 4 °C (40 °F) or a little below; a cheap thermometer helps.",
+      "Store ready meals on upper shelves and raw meat at the bottom to avoid drips.",
+      "Do not overpack: cold air needs room to flow around your containers."
+     ],
+     "q": "Do you know what temperature your fridge is set to right now?",
+     "c": "Clear one shelf in your fridge to be your dedicated meal prep shelf."
+    },
+    "de": {
+     "t": "Kühlschrank-Basics fürs Vorkochen",
+     "g": "Lerne einfache Kühlschrank-Gewohnheiten, die vorgekochtes Essen frisch und sicher halten.",
+     "p": [
+      "Halte den Kühlschrank bei etwa 4 °C oder etwas darunter; ein Thermometer hilft.",
+      "Fertiges Essen oben lagern, rohes Fleisch ganz unten, damit nichts tropft.",
+      "Nicht vollstopfen: Kalte Luft braucht Platz, um zu zirkulieren."
+     ],
+     "q": "Weißt du, auf welche Temperatur dein Kühlschrank gerade eingestellt ist?",
+     "c": "Räume ein Fach im Kühlschrank frei, das nur für dein Meal Prep ist."
+    },
+    "es": {
+     "t": "Nevera: lo básico para tu comida",
+     "g": "Aprender hábitos sencillos de nevera que mantienen tus comidas frescas y seguras.",
+     "p": [
+      "Mantén la nevera a unos 4 °C o un poco menos; un termómetro ayuda.",
+      "Guarda las comidas listas arriba y la carne cruda abajo para evitar goteos.",
+      "No la llenes de más: el aire frío necesita espacio para circular."
+     ],
+     "q": "¿Sabes a qué temperatura está tu nevera ahora mismo?",
+     "c": "Despeja un estante de la nevera para que sea solo de tu meal prep."
+    },
+    "fr": {
+     "t": "Les bases du frigo",
+     "g": "Adopter des habitudes simples au frigo pour garder tes plats préparés frais et sûrs.",
+     "p": [
+      "Garde le frigo autour de 4 °C ou un peu moins ; un petit thermomètre aide.",
+      "Range les plats prêts en haut et la viande crue en bas pour éviter les coulures.",
+      "Ne le surcharge pas : l'air froid doit circuler autour des boîtes."
+     ],
+     "q": "Sais-tu à quelle température ton frigo est réglé en ce moment ?",
+     "c": "Libère une étagère du frigo qui sera réservée à ton meal prep."
+    },
+    "it": {
+     "t": "Il frigo per il meal prep",
+     "g": "Imparare semplici abitudini in frigo che mantengono i pasti preparati freschi e sicuri.",
+     "p": [
+      "Tieni il frigo intorno ai 4 °C o poco meno; un termometro aiuta.",
+      "Metti i pasti pronti in alto e la carne cruda in basso per evitare gocciolamenti.",
+      "Non riempirlo troppo: l'aria fredda deve circolare tra i contenitori."
+     ],
+     "q": "Sai a che temperatura è impostato il tuo frigo adesso?",
+     "c": "Libera un ripiano del frigo da dedicare solo al tuo meal prep."
+    },
+    "pt": {
+     "t": "O frigorífico e a comida preparada",
+     "g": "Aprender hábitos simples no frigorífico que mantêm as refeições frescas e seguras.",
+     "p": [
+      "Mantém o frigorífico a cerca de 4 °C ou um pouco menos; um termómetro ajuda.",
+      "Guarda as refeições prontas em cima e a carne crua em baixo para evitar pingos.",
+      "Não o enchas demais: o ar frio precisa de espaço para circular."
+     ],
+     "q": "Sabes a que temperatura está o teu frigorífico neste momento?",
+     "c": "Liberta uma prateleira do frigorífico só para o teu meal prep."
+    },
+    "pt_BR": {
+     "t": "Geladeira: o básico para marmitas",
+     "g": "Aprender hábitos simples de geladeira que mantêm suas marmitas frescas e seguras.",
+     "p": [
+      "Mantenha a geladeira por volta de 4 °C ou um pouco menos; um termômetro ajuda.",
+      "Guarde as marmitas em cima e a carne crua embaixo para evitar pingos.",
+      "Não lote: o ar frio precisa de espaço para circular entre os potes."
+     ],
+     "q": "Você sabe em que temperatura sua geladeira está agora?",
+     "c": "Libere uma prateleira da geladeira só para suas marmitas."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How long prepped food keeps",
+     "g": "Know the general guideline for how many days cooked meals stay good in the fridge.",
+     "p": [
+      "Most cooked meals keep about 3 to 4 days in a cold fridge.",
+      "Plan to eat fish and rice dishes first, as they are best eaten sooner.",
+      "Freeze anything you will not eat in time, and when in doubt, throw it out."
+     ],
+     "q": "How many days ahead do you think you could realistically prep?",
+     "c": "Plan a 3-day prep and note which meal you will eat on which day."
+    },
+    "de": {
+     "t": "Wie lange Vorgekochtes hält",
+     "g": "Kenne die Faustregel, wie viele Tage gekochte Gerichte im Kühlschrank gut bleiben.",
+     "p": [
+      "Die meisten gekochten Gerichte halten im kalten Kühlschrank etwa 3 bis 4 Tage.",
+      "Fisch- und Reisgerichte zuerst essen, sie schmecken frisch am besten.",
+      "Friere ein, was du nicht rechtzeitig isst, und im Zweifel lieber wegwerfen."
+     ],
+     "q": "Für wie viele Tage könntest du realistisch vorkochen?",
+     "c": "Plane ein 3-Tage-Prep und notiere, welches Essen an welchem Tag dran ist."
+    },
+    "es": {
+     "t": "Cuánto dura la comida preparada",
+     "g": "Conocer la pauta general de cuántos días aguanta la comida cocinada en la nevera.",
+     "p": [
+      "La mayoría de los platos cocinados duran unos 3 o 4 días en una nevera fría.",
+      "Come primero los platos con pescado o arroz, mejor consumirlos pronto.",
+      "Congela lo que no vayas a comer a tiempo y, si dudas, tíralo."
+     ],
+     "q": "¿Para cuántos días crees que podrías preparar comida de forma realista?",
+     "c": "Planifica 3 días de comida y anota qué plato comerás cada día."
+    },
+    "fr": {
+     "t": "Combien de temps ça se garde",
+     "g": "Connaître le repère général du nombre de jours où un plat cuisiné reste bon au frigo.",
+     "p": [
+      "La plupart des plats cuisinés se gardent environ 3 à 4 jours au frigo bien froid.",
+      "Mange d'abord les plats à base de poisson ou de riz, meilleurs consommés vite.",
+      "Congèle ce que tu ne mangeras pas à temps et, dans le doute, jette."
+     ],
+     "q": "Pour combien de jours pourrais-tu préparer à l'avance de façon réaliste ?",
+     "c": "Prévois 3 jours de repas et note quel plat tu mangeras chaque jour."
+    },
+    "it": {
+     "t": "Quanto dura il cibo preparato",
+     "g": "Conoscere la regola generale su quanti giorni i piatti cotti restano buoni in frigo.",
+     "p": [
+      "La maggior parte dei piatti cotti dura circa 3 o 4 giorni in un frigo ben freddo.",
+      "Mangia per primi i piatti con pesce o riso, meglio consumarli presto.",
+      "Congela ciò che non mangerai in tempo e, nel dubbio, buttalo."
+     ],
+     "q": "Per quanti giorni pensi di poter preparare in modo realistico?",
+     "c": "Pianifica 3 giorni di pasti e segna quale piatto mangerai ogni giorno."
+    },
+    "pt": {
+     "t": "Quanto tempo dura a comida",
+     "g": "Conhecer a regra geral de quantos dias a comida cozinhada se mantém boa no frigorífico.",
+     "p": [
+      "A maioria dos pratos cozinhados dura cerca de 3 a 4 dias no frigorífico bem frio.",
+      "Come primeiro os pratos com peixe ou arroz, que são melhores mais cedo.",
+      "Congela o que não vais comer a tempo e, na dúvida, deita fora."
+     ],
+     "q": "Para quantos dias achas que conseguias preparar comida, de forma realista?",
+     "c": "Planeia 3 dias de refeições e anota que prato comes em cada dia."
+    },
+    "pt_BR": {
+     "t": "Quanto tempo a marmita dura",
+     "g": "Conhecer a regra geral de quantos dias a comida cozida fica boa na geladeira.",
+     "p": [
+      "A maioria dos pratos cozidos dura cerca de 3 a 4 dias na geladeira bem fria.",
+      "Coma primeiro os pratos com peixe ou arroz, que são melhores logo.",
+      "Congele o que não vai comer a tempo e, na dúvida, jogue fora."
+     ],
+     "q": "Para quantos dias você acha que conseguiria preparar comida, de forma realista?",
+     "c": "Planeje 3 dias de marmitas e anote qual prato vai comer em cada dia."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freezer basics",
+     "g": "Learn which foods freeze well and how to freeze them so they taste good later.",
+     "p": [
+      "Soups, stews, sauces, cooked grains and beans freeze very well.",
+      "Cool food first, then freeze it in shallow, airtight containers or bags.",
+      "Squeeze out air and wrap tightly to prevent freezer burn and dry spots."
+     ],
+     "q": "What food do you often throw away that could have been frozen instead?",
+     "c": "Freeze one portion of something you cooked this week, with as little air as possible."
+    },
+    "de": {
+     "t": "Gefrierfach-Basics",
+     "g": "Erfahre, welche Lebensmittel sich gut einfrieren lassen und wie sie später noch gut schmecken.",
+     "p": [
+      "Suppen, Eintöpfe, Soßen, gekochtes Getreide und Bohnen lassen sich prima einfrieren.",
+      "Erst abkühlen lassen, dann flach in luftdichten Dosen oder Beuteln einfrieren.",
+      "Luft herausdrücken und gut verpacken, damit kein Gefrierbrand entsteht."
+     ],
+     "q": "Was wirfst du oft weg, das du stattdessen hättest einfrieren können?",
+     "c": "Friere diese Woche eine Portion von etwas Gekochtem ein, mit möglichst wenig Luft."
+    },
+    "es": {
+     "t": "Lo básico del congelador",
+     "g": "Saber qué alimentos se congelan bien y cómo hacerlo para que luego sigan ricos.",
+     "p": [
+      "Sopas, guisos, salsas, cereales cocidos y legumbres se congelan muy bien.",
+      "Deja enfriar primero y congela en recipientes o bolsas planas y herméticas.",
+      "Saca el aire y envuelve bien para evitar las quemaduras de congelación."
+     ],
+     "q": "¿Qué comida tiras a menudo que podrías haber congelado?",
+     "c": "Congela una ración de algo que cocinaste esta semana, con el menor aire posible."
+    },
+    "fr": {
+     "t": "Les bases du congélateur",
+     "g": "Savoir quels aliments se congèlent bien et comment faire pour qu'ils restent bons.",
+     "p": [
+      "Soupes, ragoûts, sauces, céréales cuites et légumineuses se congèlent très bien.",
+      "Laisse refroidir, puis congèle à plat dans des boîtes ou sachets hermétiques.",
+      "Chasse l'air et emballe bien pour éviter les brûlures de congélation."
+     ],
+     "q": "Quel aliment jettes-tu souvent alors que tu aurais pu le congeler ?",
+     "c": "Congèle une portion d'un plat cuisiné cette semaine, avec le moins d'air possible."
+    },
+    "it": {
+     "t": "Le basi del congelatore",
+     "g": "Sapere quali cibi si congelano bene e come farlo perché restino buoni dopo.",
+     "p": [
+      "Zuppe, stufati, sughi, cereali cotti e legumi si congelano benissimo.",
+      "Lascia raffreddare, poi congela in contenitori o sacchetti piatti ed ermetici.",
+      "Togli l'aria e avvolgi bene per evitare le bruciature da freddo."
+     ],
+     "q": "Quale cibo butti spesso che avresti potuto congelare?",
+     "c": "Congela una porzione di qualcosa cucinato questa settimana, con meno aria possibile."
+    },
+    "pt": {
+     "t": "O básico do congelador",
+     "g": "Saber que alimentos congelam bem e como o fazer para continuarem saborosos.",
+     "p": [
+      "Sopas, guisados, molhos, cereais cozidos e leguminosas congelam muito bem.",
+      "Deixa arrefecer primeiro e congela em caixas ou sacos baixos e herméticos.",
+      "Tira o ar e embrulha bem para evitar queimaduras de congelação."
+     ],
+     "q": "Que comida deitas fora muitas vezes que podias ter congelado?",
+     "c": "Congela uma porção de algo que cozinhaste esta semana, com o mínimo de ar."
+    },
+    "pt_BR": {
+     "t": "O básico do freezer",
+     "g": "Saber quais alimentos congelam bem e como congelar para continuarem gostosos.",
+     "p": [
+      "Sopas, ensopados, molhos, grãos cozidos e feijões congelam muito bem.",
+      "Deixe esfriar antes e congele em potes ou sacos rasos e bem fechados.",
+      "Tire o ar e embale bem para evitar a queimadura do congelador."
+     ],
+     "q": "Que comida você costuma jogar fora que poderia ter congelado?",
+     "c": "Congele uma porção de algo que cozinhou nesta semana, com o mínimo de ar possível."
+    }
+   }
+  }
+ ]
+}

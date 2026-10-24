@@ -1,0 +1,835 @@
+{
+ "topic": "photography",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why composition matters",
+     "g": "See how arranging elements in the frame guides the viewer's eye and tells your story.",
+     "p": [
+      "Composition is the order you give to what is in the frame: where the subject sits and what surrounds it.",
+      "Eyes move to bright areas, sharp details, faces and strong lines, so you can lead them on purpose.",
+      "Good composition is often about what you leave out, not only what you put in."
+     ],
+     "q": "When you look at a photo you love, where does your eye go first?",
+     "c": "Photograph one subject five ways by changing only your position and framing, then pick the clearest image."
+    },
+    "de": {
+     "t": "Warum Komposition zählt",
+     "g": "Sieh, wie die Anordnung im Bild den Blick des Betrachters lenkt und deine Geschichte erzählt.",
+     "p": [
+      "Komposition ist die Ordnung im Bild: wo das Motiv sitzt und was es umgibt.",
+      "Der Blick wandert zu hellen Flächen, scharfen Details, Gesichtern und starken Linien, das kannst du gezielt nutzen.",
+      "Gute Komposition handelt oft davon, was du weglässt, nicht nur davon, was du zeigst."
+     ],
+     "q": "Wenn du ein Foto anschaust, das du liebst: Wohin wandert dein Blick zuerst?",
+     "c": "Fotografiere ein Motiv auf fünf Arten, indem du nur Standort und Ausschnitt änderst, und wähle das klarste Bild."
+    },
+    "es": {
+     "t": "Por qué importa la composición",
+     "g": "Descubre cómo la disposición de los elementos en el encuadre guía la mirada y cuenta tu historia.",
+     "p": [
+      "La composición es el orden que das a lo que hay en el encuadre: dónde está el sujeto y qué lo rodea.",
+      "La mirada va hacia zonas claras, detalles nítidos, caras y líneas fuertes, y puedes guiarla a propósito.",
+      "Una buena composición a menudo trata de lo que dejas fuera, no solo de lo que incluyes."
+     ],
+     "q": "Cuando miras una foto que te encanta, ¿adónde va primero tu mirada?",
+     "c": "Fotografía un sujeto de cinco maneras cambiando solo tu posición y el encuadre, y elige la imagen más clara."
+    },
+    "fr": {
+     "t": "Pourquoi la composition compte",
+     "g": "Vois comment l'agencement des éléments dans le cadre guide le regard et raconte ton histoire.",
+     "p": [
+      "La composition, c'est l'ordre que tu donnes au contenu du cadre : où se place le sujet et ce qui l'entoure.",
+      "Le regard va vers les zones claires, les détails nets, les visages et les lignes fortes : tu peux le guider exprès.",
+      "Une bonne composition dépend souvent de ce que tu laisses de côté, pas seulement de ce que tu montres."
+     ],
+     "q": "Quand tu regardes une photo que tu aimes, où va ton regard en premier ?",
+     "c": "Photographie un sujet de cinq façons en changeant seulement ta position et ton cadrage, puis choisis l'image la plus claire."
+    },
+    "it": {
+     "t": "Perché conta la composizione",
+     "g": "Scopri come la disposizione degli elementi nell'inquadratura guida lo sguardo e racconta la tua storia.",
+     "p": [
+      "La composizione è l'ordine che dai a ciò che c'è nell'inquadratura: dove sta il soggetto e cosa lo circonda.",
+      "Lo sguardo va verso zone chiare, dettagli nitidi, volti e linee forti, e puoi guidarlo di proposito.",
+      "Una buona composizione riguarda spesso ciò che lasci fuori, non solo ciò che metti dentro."
+     ],
+     "q": "Quando guardi una foto che ami, dove va prima il tuo sguardo?",
+     "c": "Fotografa un soggetto in cinque modi cambiando solo posizione e inquadratura, poi scegli l'immagine più chiara."
+    },
+    "pt": {
+     "t": "Porque a composição importa",
+     "g": "Vê como a disposição dos elementos no enquadramento guia o olhar e conta a tua história.",
+     "p": [
+      "A composição é a ordem que dás ao que está no enquadramento: onde fica o motivo e o que o rodeia.",
+      "O olhar vai para zonas claras, detalhes nítidos, rostos e linhas fortes, e podes guiá-lo de propósito.",
+      "Uma boa composição tem muitas vezes a ver com o que deixas de fora, não só com o que incluis."
+     ],
+     "q": "Quando olhas para uma foto de que gostas muito, para onde vai primeiro o teu olhar?",
+     "c": "Fotografa um motivo de cinco maneiras mudando só a tua posição e o enquadramento, e escolhe a imagem mais clara."
+    },
+    "pt_BR": {
+     "t": "Por que a composição importa",
+     "g": "Veja como a organização dos elementos no quadro guia o olhar e conta sua história.",
+     "p": [
+      "Composição é a ordem que você dá ao que está no quadro: onde o assunto fica e o que o cerca.",
+      "O olhar vai para áreas claras, detalhes nítidos, rostos e linhas fortes, e você pode guiá-lo de propósito.",
+      "Uma boa composição muitas vezes tem a ver com o que você deixa de fora, não só com o que inclui."
+     ],
+     "q": "Quando você olha uma foto que ama, para onde seu olhar vai primeiro?",
+     "c": "Fotografe um assunto de cinco jeitos mudando só sua posição e o enquadramento, e escolha a imagem mais clara."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rule of thirds",
+     "g": "Place your subject on grid lines and their crossings to create balanced, lively images.",
+     "p": [
+      "Imagine two horizontal and two vertical lines dividing the frame into nine equal parts.",
+      "Put your subject on one of the four crossing points, or along a line, instead of dead centre.",
+      "Place horizons on the upper or lower line, and leave space in the direction a person or animal is looking."
+     ],
+     "q": "Do you tend to put your subjects in the centre of your photos?",
+     "c": "Take five photos placing the subject on a different third each time, then compare them with one centred shot."
+    },
+    "de": {
+     "t": "Die Drittelregel",
+     "g": "Setz dein Motiv auf Gitterlinien und ihre Schnittpunkte, um ausgewogene, lebendige Bilder zu schaffen.",
+     "p": [
+      "Stell dir zwei waagerechte und zwei senkrechte Linien vor, die das Bild in neun gleiche Felder teilen.",
+      "Platziere dein Motiv auf einem der vier Schnittpunkte oder entlang einer Linie statt genau in der Mitte.",
+      "Leg den Horizont auf die obere oder untere Linie und lass Raum in Blickrichtung von Mensch oder Tier."
+     ],
+     "q": "Setzt du deine Motive meistens in die Bildmitte?",
+     "c": "Mach fünf Fotos mit dem Motiv jedes Mal auf einem anderen Drittel und vergleiche sie mit einem mittigen Bild."
+    },
+    "es": {
+     "t": "La regla de los tercios",
+     "g": "Coloca el sujeto sobre las líneas de la cuadrícula y sus cruces para crear imágenes equilibradas y vivas.",
+     "p": [
+      "Imagina dos líneas horizontales y dos verticales que dividen el encuadre en nueve partes iguales.",
+      "Sitúa el sujeto en uno de los cuatro puntos de cruce, o sobre una línea, en lugar de en el centro exacto.",
+      "Pon el horizonte en la línea superior o inferior y deja espacio hacia donde mira una persona o un animal."
+     ],
+     "q": "¿Sueles colocar a tus sujetos en el centro de la foto?",
+     "c": "Haz cinco fotos con el sujeto en un tercio distinto cada vez y compáralas con una foto centrada."
+    },
+    "fr": {
+     "t": "La règle des tiers",
+     "g": "Place ton sujet sur les lignes de la grille et leurs croisements pour des images équilibrées et vivantes.",
+     "p": [
+      "Imagine deux lignes horizontales et deux verticales qui divisent le cadre en neuf parts égales.",
+      "Mets ton sujet sur l'un des quatre points d'intersection, ou le long d'une ligne, plutôt qu'au centre exact.",
+      "Place l'horizon sur la ligne du haut ou du bas et laisse de l'espace dans la direction du regard."
+     ],
+     "q": "As-tu tendance à placer tes sujets au centre de tes photos ?",
+     "c": "Prends cinq photos avec le sujet sur un tiers différent à chaque fois, puis compare-les avec une photo centrée."
+    },
+    "it": {
+     "t": "La regola dei terzi",
+     "g": "Metti il soggetto sulle linee della griglia e sui loro incroci per creare immagini equilibrate e vivaci.",
+     "p": [
+      "Immagina due linee orizzontali e due verticali che dividono l'inquadratura in nove parti uguali.",
+      "Posiziona il soggetto su uno dei quattro punti di incrocio, o lungo una linea, invece che al centro esatto.",
+      "Metti l'orizzonte sulla linea alta o bassa e lascia spazio nella direzione in cui guarda una persona o un animale."
+     ],
+     "q": "Tendi a mettere i tuoi soggetti al centro della foto?",
+     "c": "Scatta cinque foto con il soggetto su un terzo diverso ogni volta, poi confrontale con uno scatto centrato."
+    },
+    "pt": {
+     "t": "A regra dos terços",
+     "g": "Coloca o motivo nas linhas da grelha e nos seus cruzamentos para criares imagens equilibradas e vivas.",
+     "p": [
+      "Imagina duas linhas horizontais e duas verticais que dividem o enquadramento em nove partes iguais.",
+      "Põe o motivo num dos quatro pontos de cruzamento, ou ao longo de uma linha, em vez de mesmo ao centro.",
+      "Coloca o horizonte na linha de cima ou de baixo e deixa espaço para onde uma pessoa ou um animal olha."
+     ],
+     "q": "Costumas pôr os teus motivos no centro da foto?",
+     "c": "Tira cinco fotos com o motivo num terço diferente de cada vez e compara-as com uma foto centrada."
+    },
+    "pt_BR": {
+     "t": "A regra dos terços",
+     "g": "Coloque o assunto nas linhas da grade e nos cruzamentos para criar imagens equilibradas e vivas.",
+     "p": [
+      "Imagine duas linhas horizontais e duas verticais dividindo o quadro em nove partes iguais.",
+      "Posicione o assunto num dos quatro pontos de cruzamento, ou ao longo de uma linha, em vez de bem no centro.",
+      "Coloque o horizonte na linha de cima ou de baixo e deixe espaço para onde uma pessoa ou um animal olha."
+     ],
+     "q": "Você costuma colocar seus assuntos no centro da foto?",
+     "c": "Tire cinco fotos com o assunto num terço diferente a cada vez e compare com uma foto centralizada."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning on the grid",
+     "g": "Use your camera or phone grid to compose with thirds and keep lines level.",
+     "p": [
+      "Most phones and cameras can show a grid overlay; look for it in the camera or display settings.",
+      "The grid makes rule-of-thirds placement easy and shows at once whether horizons and walls are straight.",
+      "Some devices also have a level indicator that tells you when the camera is perfectly horizontal."
+     ],
+     "q": "Have you ever used the grid on your device, or did you not know it was there?",
+     "c": "Turn on the grid, then take ten photos where you deliberately line up a subject or horizon with the lines."
+    },
+    "de": {
+     "t": "Das Gitter einschalten",
+     "g": "Nutze das Gitter deiner Kamera oder deines Handys, um nach Dritteln zu komponieren und Linien gerade zu halten.",
+     "p": [
+      "Fast alle Handys und Kameras können ein Gitter einblenden; such es in den Kamera- oder Anzeigeeinstellungen.",
+      "Das Gitter erleichtert die Drittelregel und zeigt sofort, ob Horizont und Wände gerade sind.",
+      "Manche Geräte haben auch eine Wasserwaage, die anzeigt, wann die Kamera genau waagerecht ist."
+     ],
+     "q": "Hast du das Gitter schon benutzt, oder wusstest du gar nicht, dass es das gibt?",
+     "c": "Schalte das Gitter ein und mach zehn Fotos, bei denen du Motiv oder Horizont bewusst an den Linien ausrichtest."
+    },
+    "es": {
+     "t": "Activa la cuadrícula",
+     "g": "Usa la cuadrícula de tu cámara o móvil para componer por tercios y mantener las líneas rectas.",
+     "p": [
+      "Casi todos los móviles y cámaras pueden mostrar una cuadrícula; búscala en los ajustes de cámara o de pantalla.",
+      "La cuadrícula facilita la regla de los tercios y muestra al instante si el horizonte y las paredes están rectos.",
+      "Algunos aparatos tienen también un nivel que indica cuándo la cámara está perfectamente horizontal."
+     ],
+     "q": "¿Has usado alguna vez la cuadrícula de tu aparato, o no sabías que existía?",
+     "c": "Activa la cuadrícula y haz diez fotos alineando a propósito un sujeto o el horizonte con sus líneas."
+    },
+    "fr": {
+     "t": "Activer la grille",
+     "g": "Utilise la grille de ton appareil ou smartphone pour composer en tiers et garder les lignes droites.",
+     "p": [
+      "Presque tous les smartphones et appareils peuvent afficher une grille ; cherche-la dans les réglages photo ou d'affichage.",
+      "La grille facilite la règle des tiers et montre aussitôt si l'horizon et les murs sont droits.",
+      "Certains appareils ont aussi un niveau électronique qui indique quand l'appareil est parfaitement horizontal."
+     ],
+     "q": "As-tu déjà utilisé la grille de ton appareil, ou ignorais-tu qu'elle existait ?",
+     "c": "Active la grille, puis prends dix photos en alignant volontairement un sujet ou l'horizon sur ses lignes."
+    },
+    "it": {
+     "t": "Attivare la griglia",
+     "g": "Usa la griglia della fotocamera o dello smartphone per comporre per terzi e tenere dritte le linee.",
+     "p": [
+      "Quasi tutti gli smartphone e le fotocamere mostrano una griglia: cercala nelle impostazioni della fotocamera o del display.",
+      "La griglia rende facile la regola dei terzi e mostra subito se orizzonte e pareti sono dritti.",
+      "Alcuni dispositivi hanno anche una livella che indica quando la fotocamera è perfettamente orizzontale."
+     ],
+     "q": "Hai mai usato la griglia del tuo dispositivo, o non sapevi che esistesse?",
+     "c": "Attiva la griglia e scatta dieci foto allineando di proposito un soggetto o l'orizzonte alle sue linee."
+    },
+    "pt": {
+     "t": "Ativar a grelha",
+     "g": "Usa a grelha da câmara ou do telemóvel para compor por terços e manter as linhas direitas.",
+     "p": [
+      "Quase todos os telemóveis e câmaras mostram uma grelha; procura-a nas definições da câmara ou do ecrã.",
+      "A grelha facilita a regra dos terços e mostra logo se o horizonte e as paredes estão direitos.",
+      "Alguns aparelhos têm também um nível que indica quando a câmara está perfeitamente na horizontal."
+     ],
+     "q": "Já usaste a grelha do teu aparelho, ou não sabias que existia?",
+     "c": "Ativa a grelha e tira dez fotos alinhando de propósito um motivo ou o horizonte com as linhas."
+    },
+    "pt_BR": {
+     "t": "Ativando a grade",
+     "g": "Use a grade da câmera ou do celular para compor por terços e manter as linhas retas.",
+     "p": [
+      "Quase todo celular e câmera mostra uma grade; procure nos ajustes da câmera ou da tela.",
+      "A grade facilita a regra dos terços e mostra na hora se o horizonte e as paredes estão retos.",
+      "Alguns aparelhos também têm um nível que avisa quando a câmera está perfeitamente na horizontal."
+     ],
+     "q": "Você já usou a grade do seu aparelho, ou nem sabia que ela existia?",
+     "c": "Ative a grade e tire dez fotos alinhando de propósito um assunto ou o horizonte com as linhas."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Straight horizons",
+     "g": "Learn why tilted horizons distract and how to keep them perfectly level.",
+     "p": [
+      "A slightly tilted horizon looks like a mistake and makes water seem to drain out of the frame.",
+      "Align the horizon with a grid line or use the level indicator before you press the shutter.",
+      "If a photo is tilted, straighten it in editing, leaving a little room around your subject for the crop."
+     ],
+     "q": "Have you ever noticed a crooked horizon in a photo after you shared it?",
+     "c": "Photograph a horizon, a lake or a long wall five times, keeping it perfectly level with the grid each time."
+    },
+    "de": {
+     "t": "Gerade Horizonte",
+     "g": "Lerne, warum schiefe Horizonte stören und wie du sie perfekt gerade hältst.",
+     "p": [
+      "Ein leicht schiefer Horizont wirkt wie ein Versehen, und Wasser scheint aus dem Bild zu laufen.",
+      "Richte den Horizont an einer Gitterlinie aus oder nutze die Wasserwaage, bevor du auslöst.",
+      "Ist ein Foto schief, richte es in der Bearbeitung gerade und lass dafür etwas Raum um dein Motiv."
+     ],
+     "q": "Ist dir schon einmal ein schiefer Horizont aufgefallen, nachdem du ein Foto geteilt hattest?",
+     "c": "Fotografiere einen Horizont, einen See oder eine lange Mauer fünfmal und halte sie mit dem Gitter genau gerade."
+    },
+    "es": {
+     "t": "Horizontes rectos",
+     "g": "Aprende por qué los horizontes torcidos distraen y cómo mantenerlos perfectamente nivelados.",
+     "p": [
+      "Un horizonte un poco torcido parece un error y hace que el agua parezca salirse de la foto.",
+      "Alinea el horizonte con una línea de la cuadrícula o usa el nivel antes de disparar.",
+      "Si una foto sale torcida, enderézala al editar, dejando algo de margen alrededor del sujeto para el recorte."
+     ],
+     "q": "¿Has notado alguna vez un horizonte torcido en una foto después de compartirla?",
+     "c": "Fotografía un horizonte, un lago o un muro largo cinco veces, manteniéndolo perfectamente recto con la cuadrícula."
+    },
+    "fr": {
+     "t": "Des horizons droits",
+     "g": "Apprends pourquoi un horizon penché distrait et comment le garder parfaitement droit.",
+     "p": [
+      "Un horizon légèrement penché ressemble à une erreur et donne l'impression que l'eau s'écoule hors du cadre.",
+      "Aligne l'horizon sur une ligne de la grille ou utilise le niveau avant de déclencher.",
+      "Si une photo penche, redresse-la à la retouche en gardant un peu de marge autour du sujet pour le recadrage."
+     ],
+     "q": "As-tu déjà remarqué un horizon penché sur une photo après l'avoir partagée ?",
+     "c": "Photographie un horizon, un lac ou un long mur cinq fois en le gardant parfaitement droit grâce à la grille."
+    },
+    "it": {
+     "t": "Orizzonti dritti",
+     "g": "Scopri perché gli orizzonti storti distraggono e come tenerli perfettamente in bolla.",
+     "p": [
+      "Un orizzonte leggermente storto sembra un errore e fa sembrare che l'acqua scivoli fuori dall'inquadratura.",
+      "Allinea l'orizzonte a una linea della griglia o usa la livella prima di scattare.",
+      "Se una foto è storta, raddrizzala in post-produzione lasciando un po' di margine intorno al soggetto per il ritaglio."
+     ],
+     "q": "Hai mai notato un orizzonte storto in una foto dopo averla condivisa?",
+     "c": "Fotografa un orizzonte, un lago o un lungo muro cinque volte, tenendolo perfettamente dritto con la griglia."
+    },
+    "pt": {
+     "t": "Horizontes direitos",
+     "g": "Aprende porque os horizontes tortos distraem e como mantê-los perfeitamente nivelados.",
+     "p": [
+      "Um horizonte ligeiramente torto parece um erro e faz a água parecer escorrer para fora da foto.",
+      "Alinha o horizonte com uma linha da grelha ou usa o nível antes de disparar.",
+      "Se uma foto ficar torta, endireita-a na edição, deixando alguma margem à volta do motivo para o corte."
+     ],
+     "q": "Já reparaste num horizonte torto numa foto depois de a partilhares?",
+     "c": "Fotografa um horizonte, um lago ou um muro comprido cinco vezes, mantendo-o perfeitamente direito com a grelha."
+    },
+    "pt_BR": {
+     "t": "Horizontes retos",
+     "g": "Aprenda por que horizontes tortos distraem e como mantê-los perfeitamente nivelados.",
+     "p": [
+      "Um horizonte levemente torto parece erro e faz a água parecer escorrer para fora da foto.",
+      "Alinhe o horizonte com uma linha da grade ou use o nível antes de disparar.",
+      "Se a foto sair torta, endireite na edição, deixando uma margem em volta do assunto para o corte."
+     ],
+     "q": "Você já notou um horizonte torto numa foto depois de compartilhar?",
+     "c": "Fotografe um horizonte, um lago ou um muro comprido cinco vezes, mantendo-o perfeitamente reto com a grade."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leading lines",
+     "g": "Use roads, rivers, fences and other lines to lead the viewer's eye into the picture.",
+     "p": [
+      "Lines pull the eye along them, so let them run from the edge or corner of the frame towards your subject.",
+      "Lines that start near the bottom of the frame create a strong feeling of depth.",
+      "Look for paths, rails, shadows, shorelines, rows of trees or even a table edge."
+     ],
+     "q": "What lines do you pass every day that could lead the eye in a photo?",
+     "c": "Find three different leading lines nearby and photograph each so it guides the eye to a clear subject."
+    },
+    "de": {
+     "t": "Führende Linien",
+     "g": "Nutze Straßen, Flüsse, Zäune und andere Linien, um den Blick ins Bild zu führen.",
+     "p": [
+      "Linien ziehen den Blick mit, also lass sie vom Bildrand oder einer Ecke zu deinem Motiv laufen.",
+      "Linien, die nahe am unteren Bildrand beginnen, erzeugen ein starkes Gefühl von Tiefe.",
+      "Such nach Wegen, Geländern, Schatten, Uferlinien, Baumreihen oder sogar einer Tischkante."
+     ],
+     "q": "An welchen Linien kommst du täglich vorbei, die in einem Foto den Blick führen könnten?",
+     "c": "Finde drei verschiedene führende Linien in der Nähe und fotografiere jede so, dass sie zu einem klaren Motiv führt."
+    },
+    "es": {
+     "t": "Líneas guía",
+     "g": "Usa caminos, ríos, vallas y otras líneas para llevar la mirada hacia el interior de la foto.",
+     "p": [
+      "Las líneas arrastran la mirada, así que haz que vayan desde el borde o una esquina del encuadre hacia tu sujeto.",
+      "Las líneas que nacen cerca de la parte inferior del encuadre crean una fuerte sensación de profundidad.",
+      "Busca senderos, barandillas, sombras, orillas, hileras de árboles o incluso el borde de una mesa."
+     ],
+     "q": "¿Qué líneas ves cada día que podrían guiar la mirada en una foto?",
+     "c": "Encuentra tres líneas guía distintas cerca de ti y fotografía cada una de modo que lleve la mirada a un sujeto claro."
+    },
+    "fr": {
+     "t": "Les lignes directrices",
+     "g": "Utilise routes, rivières, clôtures et autres lignes pour conduire le regard dans l'image.",
+     "p": [
+      "Les lignes entraînent le regard : fais-les partir du bord ou d'un coin du cadre vers ton sujet.",
+      "Les lignes qui commencent près du bas du cadre créent une forte sensation de profondeur.",
+      "Cherche des chemins, rambardes, ombres, rivages, rangées d'arbres ou même le bord d'une table."
+     ],
+     "q": "Quelles lignes croises-tu chaque jour qui pourraient guider le regard sur une photo ?",
+     "c": "Trouve trois lignes directrices différentes près de chez toi et photographie chacune pour qu'elle mène à un sujet clair."
+    },
+    "it": {
+     "t": "Linee guida",
+     "g": "Usa strade, fiumi, recinzioni e altre linee per condurre lo sguardo dentro la foto.",
+     "p": [
+      "Le linee trascinano lo sguardo, quindi falle partire dal bordo o da un angolo dell'inquadratura verso il soggetto.",
+      "Le linee che iniziano vicino al bordo inferiore creano una forte sensazione di profondità.",
+      "Cerca sentieri, ringhiere, ombre, rive, filari di alberi o anche il bordo di un tavolo."
+     ],
+     "q": "Quali linee incontri ogni giorno che potrebbero guidare lo sguardo in una foto?",
+     "c": "Trova tre linee guida diverse vicino a te e fotografa ciascuna in modo che conduca lo sguardo a un soggetto chiaro."
+    },
+    "pt": {
+     "t": "Linhas condutoras",
+     "g": "Usa estradas, rios, vedações e outras linhas para conduzir o olhar para dentro da foto.",
+     "p": [
+      "As linhas puxam o olhar, por isso fá-las partir da margem ou de um canto do enquadramento em direção ao motivo.",
+      "Linhas que começam perto da parte de baixo do enquadramento criam uma forte sensação de profundidade.",
+      "Procura caminhos, corrimãos, sombras, margens de rios, filas de árvores ou até a borda de uma mesa."
+     ],
+     "q": "Que linhas encontras todos os dias que podiam guiar o olhar numa foto?",
+     "c": "Encontra três linhas condutoras diferentes perto de ti e fotografa cada uma de forma a levar o olhar a um motivo claro."
+    },
+    "pt_BR": {
+     "t": "Linhas guia",
+     "g": "Use estradas, rios, cercas e outras linhas para conduzir o olhar para dentro da foto.",
+     "p": [
+      "Linhas puxam o olhar, então faça-as sair da borda ou de um canto do quadro em direção ao assunto.",
+      "Linhas que começam perto da parte de baixo do quadro criam uma forte sensação de profundidade.",
+      "Procure trilhas, corrimãos, sombras, beiras de rio, fileiras de árvores ou até a borda de uma mesa."
+     ],
+     "q": "Que linhas você encontra todo dia que poderiam guiar o olhar numa foto?",
+     "c": "Encontre três linhas guia diferentes perto de você e fotografe cada uma levando o olhar a um assunto claro."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Framing within the frame",
+     "g": "Use doorways, windows, arches and branches to frame your subject and add depth.",
+     "p": [
+      "A natural frame around the subject points the eye straight at it and hides distractions at the edges.",
+      "Frames add layers: something near, the subject further away, giving a sense of depth.",
+      "The frame does not need to be complete; overhanging leaves or a partial arch work beautifully."
+     ],
+     "q": "Can you think of a doorway, window or arch near you that would make a great frame?",
+     "c": "Find a natural frame, place a subject inside it, and take one photo with the frame and one without to compare."
+    },
+    "de": {
+     "t": "Rahmen im Rahmen",
+     "g": "Nutze Türen, Fenster, Bögen und Äste, um dein Motiv einzurahmen und Tiefe zu schaffen.",
+     "p": [
+      "Ein natürlicher Rahmen um das Motiv lenkt den Blick direkt darauf und verdeckt Störendes an den Rändern.",
+      "Rahmen schaffen Ebenen: etwas Nahes, das Motiv dahinter, und so entsteht Tiefe.",
+      "Der Rahmen muss nicht vollständig sein; überhängende Blätter oder ein halber Bogen wirken wunderbar."
+     ],
+     "q": "Fällt dir eine Tür, ein Fenster oder ein Bogen in deiner Nähe ein, der ein toller Rahmen wäre?",
+     "c": "Finde einen natürlichen Rahmen, setz ein Motiv hinein und mach je ein Foto mit und ohne Rahmen zum Vergleich."
+    },
+    "es": {
+     "t": "Un marco dentro del encuadre",
+     "g": "Usa puertas, ventanas, arcos y ramas para enmarcar tu sujeto y darle profundidad.",
+     "p": [
+      "Un marco natural alrededor del sujeto dirige la mirada hacia él y oculta distracciones en los bordes.",
+      "Los marcos añaden capas: algo cerca y el sujeto más lejos, lo que crea sensación de profundidad.",
+      "El marco no tiene que estar completo: unas hojas colgando o medio arco funcionan de maravilla."
+     ],
+     "q": "¿Se te ocurre una puerta, ventana o arco cerca de ti que sería un gran marco?",
+     "c": "Busca un marco natural, coloca un sujeto dentro y haz una foto con el marco y otra sin él para comparar."
+    },
+    "fr": {
+     "t": "Un cadre dans le cadre",
+     "g": "Utilise portes, fenêtres, arches et branches pour encadrer ton sujet et ajouter de la profondeur.",
+     "p": [
+      "Un cadre naturel autour du sujet dirige le regard vers lui et masque les distractions sur les bords.",
+      "Les cadres créent des plans : un élément proche, le sujet plus loin, d'où une impression de profondeur.",
+      "Le cadre n'a pas besoin d'être complet : des feuilles qui pendent ou une demi-arche fonctionnent très bien."
+     ],
+     "q": "Vois-tu une porte, une fenêtre ou une arche près de chez toi qui ferait un beau cadre ?",
+     "c": "Trouve un cadre naturel, place un sujet à l'intérieur et prends une photo avec et une sans le cadre pour comparer."
+    },
+    "it": {
+     "t": "Una cornice nella cornice",
+     "g": "Usa porte, finestre, archi e rami per incorniciare il soggetto e aggiungere profondità.",
+     "p": [
+      "Una cornice naturale intorno al soggetto porta lo sguardo dritto su di lui e nasconde le distrazioni ai bordi.",
+      "Le cornici creano piani: qualcosa di vicino e il soggetto più lontano, con un senso di profondità.",
+      "La cornice non deve essere completa: foglie che pendono o mezzo arco funzionano benissimo."
+     ],
+     "q": "Ti viene in mente una porta, una finestra o un arco vicino a te che sarebbe un'ottima cornice?",
+     "c": "Trova una cornice naturale, mettici dentro un soggetto e scatta una foto con la cornice e una senza per confrontarle."
+    },
+    "pt": {
+     "t": "Moldura dentro do enquadramento",
+     "g": "Usa portas, janelas, arcos e ramos para emoldurar o motivo e dar profundidade.",
+     "p": [
+      "Uma moldura natural à volta do motivo leva o olhar direto a ele e esconde distrações nas margens.",
+      "As molduras criam camadas: algo perto e o motivo mais longe, o que dá sensação de profundidade.",
+      "A moldura não precisa de estar completa: folhas a pender ou meio arco resultam lindamente."
+     ],
+     "q": "Lembras-te de uma porta, janela ou arco perto de ti que daria uma ótima moldura?",
+     "c": "Encontra uma moldura natural, põe um motivo dentro dela e tira uma foto com a moldura e outra sem, para comparar."
+    },
+    "pt_BR": {
+     "t": "Moldura dentro do quadro",
+     "g": "Use portas, janelas, arcos e galhos para emoldurar o assunto e dar profundidade.",
+     "p": [
+      "Uma moldura natural em volta do assunto leva o olhar direto a ele e esconde distrações nas bordas.",
+      "Molduras criam camadas: algo perto e o assunto mais longe, o que dá sensação de profundidade.",
+      "A moldura não precisa ser completa: folhas pendendo ou meio arco funcionam lindamente."
+     ],
+     "q": "Você lembra de uma porta, janela ou arco perto de você que daria uma ótima moldura?",
+     "c": "Encontre uma moldura natural, coloque um assunto dentro dela e tire uma foto com e outra sem a moldura para comparar."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Symmetry",
+     "g": "Use reflections, buildings and patterns to create calm, balanced images.",
+     "p": [
+      "Symmetry means one half of the frame mirrors the other, which feels orderly and peaceful.",
+      "For symmetry, centring is right: place the axis exactly in the middle and keep the camera straight.",
+      "Puddles, still lakes, bridges, corridors and building facades are great places to find it."
+     ],
+     "q": "Where near you could you find a symmetrical scene or a clear reflection?",
+     "c": "Find one symmetrical scene or reflection and photograph it perfectly centred and level, checking the edges match."
+    },
+    "de": {
+     "t": "Symmetrie",
+     "g": "Nutze Spiegelungen, Gebäude und Muster, um ruhige, ausgewogene Bilder zu gestalten.",
+     "p": [
+      "Symmetrie heißt, eine Bildhälfte spiegelt die andere, das wirkt geordnet und friedlich.",
+      "Bei Symmetrie ist die Mitte richtig: Setz die Achse genau in die Bildmitte und halte die Kamera gerade.",
+      "Pfützen, stille Seen, Brücken, Flure und Fassaden sind ideale Orte dafür."
+     ],
+     "q": "Wo in deiner Nähe findest du eine symmetrische Szene oder eine klare Spiegelung?",
+     "c": "Finde eine symmetrische Szene oder Spiegelung und fotografiere sie genau mittig und gerade, die Ränder gleich."
+    },
+    "es": {
+     "t": "Simetría",
+     "g": "Usa reflejos, edificios y patrones para crear imágenes tranquilas y equilibradas.",
+     "p": [
+      "La simetría significa que una mitad del encuadre refleja la otra, lo que transmite orden y calma.",
+      "Con simetría, centrar es lo correcto: coloca el eje justo en el medio y mantén la cámara recta.",
+      "Charcos, lagos en calma, puentes, pasillos y fachadas son lugares ideales para encontrarla."
+     ],
+     "q": "¿Dónde cerca de ti podrías encontrar una escena simétrica o un reflejo claro?",
+     "c": "Busca una escena simétrica o un reflejo y fotografíalo perfectamente centrado y recto, comprobando que los bordes coinciden."
+    },
+    "fr": {
+     "t": "La symétrie",
+     "g": "Utilise reflets, bâtiments et motifs pour créer des images calmes et équilibrées.",
+     "p": [
+      "La symétrie, c'est quand une moitié du cadre répond à l'autre comme un miroir : une sensation d'ordre et de paix.",
+      "Avec la symétrie, centrer est juste : place l'axe exactement au milieu et garde l'appareil bien droit.",
+      "Flaques, lacs calmes, ponts, couloirs et façades sont des endroits parfaits pour la trouver."
+     ],
+     "q": "Où près de chez toi pourrais-tu trouver une scène symétrique ou un reflet net ?",
+     "c": "Trouve une scène symétrique ou un reflet et photographie-le parfaitement centré et droit, en vérifiant que les bords se répondent."
+    },
+    "it": {
+     "t": "Simmetria",
+     "g": "Usa riflessi, edifici e motivi ripetuti per creare immagini calme ed equilibrate.",
+     "p": [
+      "Simmetria significa che una metà dell'inquadratura rispecchia l'altra, trasmettendo ordine e calma.",
+      "Con la simmetria centrare è giusto: metti l'asse esattamente al centro e tieni la fotocamera dritta.",
+      "Pozzanghere, laghi calmi, ponti, corridoi e facciate sono luoghi perfetti per trovarla."
+     ],
+     "q": "Dove vicino a te potresti trovare una scena simmetrica o un riflesso nitido?",
+     "c": "Trova una scena simmetrica o un riflesso e fotografalo perfettamente centrato e dritto, controllando che i bordi combacino."
+    },
+    "pt": {
+     "t": "Simetria",
+     "g": "Usa reflexos, edifícios e padrões para criar imagens calmas e equilibradas.",
+     "p": [
+      "Simetria significa que uma metade do enquadramento espelha a outra, o que transmite ordem e calma.",
+      "Com simetria, centrar é o certo: põe o eixo mesmo no meio e mantém a câmara direita.",
+      "Poças, lagos calmos, pontes, corredores e fachadas são ótimos sítios para a encontrar."
+     ],
+     "q": "Onde perto de ti podias encontrar uma cena simétrica ou um reflexo nítido?",
+     "c": "Encontra uma cena simétrica ou um reflexo e fotografa-o perfeitamente centrado e direito, confirmando que as margens coincidem."
+    },
+    "pt_BR": {
+     "t": "Simetria",
+     "g": "Use reflexos, prédios e padrões para criar imagens calmas e equilibradas.",
+     "p": [
+      "Simetria é quando uma metade do quadro espelha a outra, o que passa ordem e calma.",
+      "Com simetria, centralizar é o certo: coloque o eixo bem no meio e mantenha a câmera reta.",
+      "Poças, lagos calmos, pontes, corredores e fachadas são ótimos lugares para encontrá-la."
+     ],
+     "q": "Onde perto de você daria para achar uma cena simétrica ou um reflexo nítido?",
+     "c": "Encontre uma cena simétrica ou um reflexo e fotografe perfeitamente centralizado e reto, conferindo se as bordas batem."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaking symmetry on purpose",
+     "g": "Add one off-centre element to a symmetrical scene to make it more interesting.",
+     "p": [
+      "Perfect symmetry can feel static; one element that breaks it instantly becomes the centre of attention.",
+      "A person walking through, a single open window or a bird on a wall can be that disruptive detail.",
+      "Keep everything else as symmetrical as possible so the break looks intentional, not careless."
+     ],
+     "q": "Do you prefer perfectly calm, symmetrical photos or ones with a little surprise?",
+     "c": "Photograph a symmetrical scene, then wait for or include one element that breaks it, and compare both versions."
+    },
+    "de": {
+     "t": "Symmetrie bewusst brechen",
+     "g": "Füge einer symmetrischen Szene ein Element außerhalb der Mitte hinzu, um sie spannender zu machen.",
+     "p": [
+      "Perfekte Symmetrie kann starr wirken; ein Element, das sie bricht, zieht sofort alle Aufmerksamkeit auf sich.",
+      "Eine vorbeigehende Person, ein einzelnes offenes Fenster oder ein Vogel auf einer Mauer kann dieses Detail sein.",
+      "Halte alles andere so symmetrisch wie möglich, damit der Bruch gewollt und nicht nachlässig wirkt."
+     ],
+     "q": "Magst du lieber ruhige, symmetrische Fotos oder solche mit einer kleinen Überraschung?",
+     "c": "Fotografiere eine symmetrische Szene, warte dann auf ein Element, das sie bricht, oder füge es ein, und vergleiche beide."
+    },
+    "es": {
+     "t": "Romper la simetría a propósito",
+     "g": "Añade un elemento descentrado a una escena simétrica para hacerla más interesante.",
+     "p": [
+      "La simetría perfecta puede resultar estática; un elemento que la rompe se convierte al instante en el centro de atención.",
+      "Una persona que pasa, una sola ventana abierta o un pájaro en un muro pueden ser ese detalle.",
+      "Mantén todo lo demás lo más simétrico posible para que la ruptura parezca intencionada, no un descuido."
+     ],
+     "q": "¿Prefieres fotos tranquilas y simétricas o con una pequeña sorpresa?",
+     "c": "Fotografía una escena simétrica, luego espera o incluye un elemento que la rompa, y compara ambas versiones."
+    },
+    "fr": {
+     "t": "Briser la symétrie exprès",
+     "g": "Ajoute un élément décentré à une scène symétrique pour la rendre plus intéressante.",
+     "p": [
+      "La symétrie parfaite peut sembler figée ; un élément qui la brise devient aussitôt le centre d'attention.",
+      "Un passant, une seule fenêtre ouverte ou un oiseau sur un mur peuvent être ce détail perturbateur.",
+      "Garde tout le reste aussi symétrique que possible pour que la rupture paraisse voulue et non négligée."
+     ],
+     "q": "Préfères-tu les photos calmes et symétriques ou celles avec une petite surprise ?",
+     "c": "Photographie une scène symétrique, puis attends ou ajoute un élément qui la brise, et compare les deux versions."
+    },
+    "it": {
+     "t": "Rompere la simmetria di proposito",
+     "g": "Aggiungi un elemento fuori centro a una scena simmetrica per renderla più interessante.",
+     "p": [
+      "La simmetria perfetta può sembrare statica; un elemento che la rompe diventa subito il centro dell'attenzione.",
+      "Una persona che passa, una sola finestra aperta o un uccello su un muro possono essere quel dettaglio.",
+      "Mantieni tutto il resto il più simmetrico possibile, così la rottura sembra voluta e non casuale."
+     ],
+     "q": "Preferisci foto calme e simmetriche o con una piccola sorpresa?",
+     "c": "Fotografa una scena simmetrica, poi aspetta o includi un elemento che la rompa e confronta le due versioni."
+    },
+    "pt": {
+     "t": "Quebrar a simetria de propósito",
+     "g": "Junta um elemento descentrado a uma cena simétrica para a tornar mais interessante.",
+     "p": [
+      "A simetria perfeita pode parecer estática; um elemento que a quebra passa logo a ser o centro das atenções.",
+      "Uma pessoa a passar, uma única janela aberta ou um pássaro num muro podem ser esse detalhe.",
+      "Mantém tudo o resto o mais simétrico possível para que a quebra pareça intencional e não descuido."
+     ],
+     "q": "Preferes fotos calmas e simétricas ou com uma pequena surpresa?",
+     "c": "Fotografa uma cena simétrica, depois espera por ou inclui um elemento que a quebre, e compara as duas versões."
+    },
+    "pt_BR": {
+     "t": "Quebrando a simetria de propósito",
+     "g": "Adicione um elemento fora do centro a uma cena simétrica para deixá-la mais interessante.",
+     "p": [
+      "A simetria perfeita pode parecer parada; um elemento que a quebra vira na hora o centro das atenções.",
+      "Uma pessoa passando, uma única janela aberta ou um pássaro num muro podem ser esse detalhe.",
+      "Mantenha todo o resto o mais simétrico possível para a quebra parecer intencional, não descuido."
+     ],
+     "q": "Você prefere fotos calmas e simétricas ou com uma pequena surpresa?",
+     "c": "Fotografe uma cena simétrica, depois espere ou inclua um elemento que a quebre e compare as duas versões."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Patterns and repetition",
+     "g": "Learn to spot repeating shapes and colours in everyday places and turn them into strong photos.",
+     "p": [
+      "Repetition creates rhythm: rows of windows, stacked chairs, tiles, fruit at a market or leaves on a branch.",
+      "Fill the frame with the pattern so it seems to continue beyond the edges.",
+      "A pattern becomes even stronger when one element is different, giving the eye a place to rest."
+     ],
+     "q": "Where in your daily life do you see repeating shapes or colours?",
+     "c": "Find two patterns today, one that fills the whole frame and one where a single element breaks the repetition."
+    },
+    "de": {
+     "t": "Muster und Wiederholung",
+     "g": "Lerne, wiederkehrende Formen und Farben im Alltag zu entdecken und daraus starke Fotos zu machen.",
+     "p": [
+      "Wiederholung erzeugt Rhythmus: Fensterreihen, gestapelte Stühle, Fliesen, Obst am Markt oder Blätter am Zweig.",
+      "Füll das Bild mit dem Muster, damit es über die Ränder hinaus weiterzugehen scheint.",
+      "Ein Muster wird noch stärker, wenn ein Element anders ist und dem Blick einen Ruhepunkt gibt."
+     ],
+     "q": "Wo in deinem Alltag siehst du wiederkehrende Formen oder Farben?",
+     "c": "Finde heute zwei Muster: eines, das das ganze Bild füllt, und eines, bei dem ein einzelnes Element die Wiederholung bricht."
+    },
+    "es": {
+     "t": "Patrones y repetición",
+     "g": "Aprende a ver formas y colores que se repiten en lugares cotidianos y conviértelos en fotos potentes.",
+     "p": [
+      "La repetición crea ritmo: filas de ventanas, sillas apiladas, azulejos, fruta en un mercado u hojas en una rama.",
+      "Llena el encuadre con el patrón para que parezca continuar más allá de los bordes.",
+      "Un patrón gana fuerza cuando un elemento es distinto y da a la mirada un lugar donde descansar."
+     ],
+     "q": "¿Dónde ves en tu día a día formas o colores que se repiten?",
+     "c": "Encuentra hoy dos patrones: uno que llene todo el encuadre y otro en el que un único elemento rompa la repetición."
+    },
+    "fr": {
+     "t": "Motifs et répétition",
+     "g": "Apprends à repérer des formes et des couleurs qui se répètent au quotidien et à en faire des photos fortes.",
+     "p": [
+      "La répétition crée un rythme : rangées de fenêtres, chaises empilées, carrelage, fruits au marché ou feuilles sur une branche.",
+      "Remplis le cadre avec le motif pour qu'il semble continuer au-delà des bords.",
+      "Un motif devient encore plus fort quand un élément est différent et offre au regard un point de repos."
+     ],
+     "q": "Où vois-tu au quotidien des formes ou des couleurs qui se répètent ?",
+     "c": "Trouve aujourd'hui deux motifs : un qui remplit tout le cadre et un où un seul élément brise la répétition."
+    },
+    "it": {
+     "t": "Motivi e ripetizione",
+     "g": "Impara a notare forme e colori che si ripetono nei luoghi di tutti i giorni e trasformali in foto forti.",
+     "p": [
+      "La ripetizione crea ritmo: file di finestre, sedie impilate, piastrelle, frutta al mercato o foglie su un ramo.",
+      "Riempi l'inquadratura con il motivo perché sembri continuare oltre i bordi.",
+      "Un motivo diventa ancora più forte quando un elemento è diverso e offre allo sguardo un punto di riposo."
+     ],
+     "q": "Dove vedi nella tua vita quotidiana forme o colori che si ripetono?",
+     "c": "Trova oggi due motivi: uno che riempie tutta l'inquadratura e uno in cui un solo elemento rompe la ripetizione."
+    },
+    "pt": {
+     "t": "Padrões e repetição",
+     "g": "Aprende a ver formas e cores que se repetem no dia a dia e a transformá-las em fotos fortes.",
+     "p": [
+      "A repetição cria ritmo: filas de janelas, cadeiras empilhadas, azulejos, fruta num mercado ou folhas num ramo.",
+      "Enche o enquadramento com o padrão para que pareça continuar para lá das margens.",
+      "Um padrão fica ainda mais forte quando um elemento é diferente e dá ao olhar um sítio para descansar."
+     ],
+     "q": "Onde vês no teu dia a dia formas ou cores que se repetem?",
+     "c": "Encontra hoje dois padrões: um que encha todo o enquadramento e outro em que um só elemento quebre a repetição."
+    },
+    "pt_BR": {
+     "t": "Padrões e repetição",
+     "g": "Aprenda a notar formas e cores que se repetem no dia a dia e transforme isso em fotos fortes.",
+     "p": [
+      "A repetição cria ritmo: fileiras de janelas, cadeiras empilhadas, azulejos, frutas na feira ou folhas num galho.",
+      "Encha o quadro com o padrão para que ele pareça continuar além das bordas.",
+      "Um padrão fica ainda mais forte quando um elemento é diferente e dá ao olhar um lugar para descansar."
+     ],
+     "q": "Onde, no seu dia a dia, você vê formas ou cores que se repetem?",
+     "c": "Encontre hoje dois padrões: um que encha o quadro todo e outro em que um único elemento quebre a repetição."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Negative space",
+     "g": "Leave empty areas around your subject to create calm, focus and a sense of scale.",
+     "p": [
+      "Negative space is the empty area around a subject, such as plain sky, a wall, water or a field.",
+      "A small subject surrounded by space feels peaceful, lonely or free, and it stands out clearly.",
+      "Keep the space truly simple and place the subject on a third so the image feels balanced."
+     ],
+     "q": "Do you find empty, simple photos calming or do you prefer busy, detailed scenes?",
+     "c": "Photograph a small subject, like a single leaf or a bird, surrounded by plain sky, wall or water filling most of the frame."
+    },
+    "de": {
+     "t": "Negativer Raum",
+     "g": "Lass leere Flächen um dein Motiv, um Ruhe, Fokus und ein Gefühl für Größe zu schaffen.",
+     "p": [
+      "Negativer Raum ist die leere Fläche um ein Motiv, etwa schlichter Himmel, eine Wand, Wasser oder ein Feld.",
+      "Ein kleines Motiv mit viel Raum wirkt friedlich, einsam oder frei und hebt sich klar ab.",
+      "Halte den Raum wirklich schlicht und setz das Motiv auf ein Drittel, damit das Bild ausgewogen wirkt."
+     ],
+     "q": "Wirken leere, schlichte Fotos beruhigend auf dich, oder magst du lieber volle, detailreiche Szenen?",
+     "c": "Fotografiere ein kleines Motiv, etwa ein Blatt oder einen Vogel, mit schlichtem Himmel, Wand oder Wasser im größten Teil des Bildes."
+    },
+    "es": {
+     "t": "Espacio negativo",
+     "g": "Deja zonas vacías alrededor del sujeto para crear calma, foco y sensación de escala.",
+     "p": [
+      "El espacio negativo es la zona vacía alrededor del sujeto, como un cielo liso, una pared, agua o un campo.",
+      "Un sujeto pequeño rodeado de espacio transmite paz, soledad o libertad, y destaca con claridad.",
+      "Mantén el espacio realmente simple y coloca el sujeto en un tercio para que la imagen se vea equilibrada."
+     ],
+     "q": "¿Te calman las fotos vacías y sencillas, o prefieres escenas llenas de detalles?",
+     "c": "Fotografía un sujeto pequeño, como una hoja o un pájaro, rodeado de cielo, pared o agua que llenen casi todo el encuadre."
+    },
+    "fr": {
+     "t": "L'espace négatif",
+     "g": "Laisse des zones vides autour de ton sujet pour créer calme, attention et sens de l'échelle.",
+     "p": [
+      "L'espace négatif est la zone vide autour du sujet : ciel uni, mur, eau ou champ.",
+      "Un petit sujet entouré d'espace évoque la paix, la solitude ou la liberté, et ressort nettement.",
+      "Garde l'espace vraiment simple et place le sujet sur un tiers pour que l'image soit équilibrée."
+     ],
+     "q": "Les photos épurées te calment-elles, ou préfères-tu les scènes riches en détails ?",
+     "c": "Photographie un petit sujet, comme une feuille ou un oiseau, entouré de ciel, de mur ou d'eau qui remplissent presque tout le cadre."
+    },
+    "it": {
+     "t": "Spazio negativo",
+     "g": "Lascia zone vuote intorno al soggetto per creare calma, attenzione e senso della scala.",
+     "p": [
+      "Lo spazio negativo è l'area vuota intorno al soggetto, come un cielo uniforme, un muro, l'acqua o un campo.",
+      "Un soggetto piccolo circondato da spazio trasmette pace, solitudine o libertà e risalta con chiarezza.",
+      "Mantieni lo spazio davvero semplice e metti il soggetto su un terzo perché l'immagine sia equilibrata."
+     ],
+     "q": "Le foto vuote e semplici ti rilassano, o preferisci scene piene di dettagli?",
+     "c": "Fotografa un soggetto piccolo, come una foglia o un uccello, circondato da cielo, muro o acqua che riempiono quasi tutta l'inquadratura."
+    },
+    "pt": {
+     "t": "Espaço negativo",
+     "g": "Deixa zonas vazias à volta do motivo para criar calma, foco e sensação de escala.",
+     "p": [
+      "O espaço negativo é a área vazia à volta do motivo, como um céu liso, uma parede, água ou um campo.",
+      "Um motivo pequeno rodeado de espaço transmite paz, solidão ou liberdade, e destaca-se claramente.",
+      "Mantém o espaço mesmo simples e põe o motivo num terço para que a imagem pareça equilibrada."
+     ],
+     "q": "As fotos vazias e simples acalmam-te, ou preferes cenas cheias de detalhe?",
+     "c": "Fotografa um motivo pequeno, como uma folha ou um pássaro, rodeado de céu, parede ou água a encher quase todo o enquadramento."
+    },
+    "pt_BR": {
+     "t": "Espaço negativo",
+     "g": "Deixe áreas vazias em volta do assunto para criar calma, foco e sensação de escala.",
+     "p": [
+      "Espaço negativo é a área vazia em volta do assunto, como um céu liso, uma parede, água ou um campo.",
+      "Um assunto pequeno cercado de espaço passa paz, solidão ou liberdade, e se destaca claramente.",
+      "Mantenha o espaço bem simples e coloque o assunto num terço para a imagem ficar equilibrada."
+     ],
+     "q": "Fotos vazias e simples acalmam você, ou você prefere cenas cheias de detalhes?",
+     "c": "Fotografe um assunto pequeno, como uma folha ou um pássaro, cercado de céu, parede ou água ocupando quase todo o quadro."
+    }
+   }
+  }
+ ]
+}

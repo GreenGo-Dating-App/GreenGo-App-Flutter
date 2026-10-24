@@ -1,0 +1,835 @@
+{
+ "topic": "home_workouts",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A five-minute warm-up",
+     "g": "Learn an easy five-minute warm-up you can use before every session.",
+     "p": [
+      "March on the spot for a minute, lifting knees a little higher as you go.",
+      "Add slow arm circles forwards and backwards, then gentle hip circles.",
+      "Finish with a few easy, shallow squats to wake up the legs."
+     ],
+     "q": "Which part of this warm-up feels best for your body?",
+     "c": "Do the full five-minute warm-up once today, even if you do nothing else."
+    },
+    "de": {
+     "t": "Ein Fünf-Minuten-Aufwärmen",
+     "g": "Lerne ein einfaches Fünf-Minuten-Aufwärmen für jede Einheit.",
+     "p": [
+      "Geh eine Minute auf der Stelle und heb die Knie nach und nach etwas höher.",
+      "Mach langsame Armkreise vor und zurück, danach sanfte Hüftkreise.",
+      "Zum Schluss ein paar leichte, flache Kniebeugen, um die Beine zu wecken."
+     ],
+     "q": "Welcher Teil dieses Aufwärmens tut deinem Körper am besten?",
+     "c": "Mach heute einmal das komplette Fünf-Minuten-Aufwärmen, auch wenn sonst nichts folgt."
+    },
+    "es": {
+     "t": "Un calentamiento de cinco minutos",
+     "g": "Aprende un calentamiento fácil de cinco minutos para cada sesión.",
+     "p": [
+      "Marcha en el sitio un minuto, subiendo las rodillas un poco más cada vez.",
+      "Añade círculos lentos de brazos hacia delante y atrás, y luego círculos de cadera.",
+      "Termina con unas sentadillas suaves y poco profundas para activar las piernas."
+     ],
+     "q": "¿Qué parte de este calentamiento le sienta mejor a tu cuerpo?",
+     "c": "Haz hoy el calentamiento completo de cinco minutos, aunque no hagas nada más."
+    },
+    "fr": {
+     "t": "Un échauffement de cinq minutes",
+     "g": "Apprends un échauffement facile de cinq minutes à faire avant chaque séance.",
+     "p": [
+      "Marche sur place une minute en montant les genoux un peu plus au fil du temps.",
+      "Ajoute des cercles de bras lents vers l'avant et l'arrière, puis des cercles de hanches.",
+      "Termine par quelques squats faciles et peu profonds pour réveiller les jambes."
+     ],
+     "q": "Quelle partie de cet échauffement fait le plus de bien à ton corps ?",
+     "c": "Fais l'échauffement complet de cinq minutes aujourd'hui, même si tu ne fais rien d'autre."
+    },
+    "it": {
+     "t": "Un riscaldamento di cinque minuti",
+     "g": "Impara un riscaldamento facile di cinque minuti da fare prima di ogni sessione.",
+     "p": [
+      "Marcia sul posto per un minuto, alzando le ginocchia un po' di più man mano.",
+      "Aggiungi cerchi lenti con le braccia avanti e indietro, poi cerchi con il bacino.",
+      "Chiudi con qualche squat facile e poco profondo per svegliare le gambe."
+     ],
+     "q": "Quale parte di questo riscaldamento fa più bene al tuo corpo?",
+     "c": "Fai oggi il riscaldamento completo di cinque minuti, anche se non fai altro."
+    },
+    "pt": {
+     "t": "Um aquecimento de cinco minutos",
+     "g": "Aprende um aquecimento fácil de cinco minutos para usar antes de cada sessão.",
+     "p": [
+      "Marcha no lugar durante um minuto, subindo os joelhos um pouco mais aos poucos.",
+      "Junta círculos lentos com os braços para a frente e para trás, depois com a anca.",
+      "Acaba com uns agachamentos fáceis e pouco profundos para acordar as pernas."
+     ],
+     "q": "Que parte deste aquecimento sabe melhor ao teu corpo?",
+     "c": "Faz hoje o aquecimento completo de cinco minutos, mesmo que não faças mais nada."
+    },
+    "pt_BR": {
+     "t": "Um aquecimento de cinco minutos",
+     "g": "Aprenda um aquecimento fácil de cinco minutos para usar antes de cada treino.",
+     "p": [
+      "Marche no lugar por um minuto, subindo os joelhos um pouco mais aos poucos.",
+      "Faça círculos lentos com os braços para frente e para trás, depois com o quadril.",
+      "Termine com alguns agachamentos leves e rasos para acordar as pernas."
+     ],
+     "q": "Qual parte desse aquecimento faz melhor para o seu corpo?",
+     "c": "Faça hoje o aquecimento completo de cinco minutos, mesmo que não faça mais nada."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling down",
+     "g": "Learn how to end a workout calmly so your body can settle.",
+     "p": [
+      "Keep moving gently, like slow walking, for a minute or two.",
+      "Let your breathing slow down with long, relaxed exhales.",
+      "Finish with a few light stretches held comfortably, never forced."
+     ],
+     "q": "How do you like to relax after being active?",
+     "c": "After your next activity, walk slowly for two minutes and breathe out long and easy."
+    },
+    "de": {
+     "t": "Abwärmen",
+     "g": "Lerne, ein Training ruhig zu beenden, damit dein Körper runterkommt.",
+     "p": [
+      "Beweg dich ein bis zwei Minuten sanft weiter, zum Beispiel langsam gehen.",
+      "Lass deinen Atem mit langen, entspannten Ausatmungen ruhiger werden.",
+      "Zum Schluss ein paar leichte Dehnungen, angenehm gehalten und nie erzwungen."
+     ],
+     "q": "Wie entspannst du dich gern, nachdem du aktiv warst?",
+     "c": "Geh nach deiner nächsten Aktivität zwei Minuten langsam und atme lang und locker aus."
+    },
+    "es": {
+     "t": "La vuelta a la calma",
+     "g": "Aprende a terminar un entreno con calma para que tu cuerpo se relaje.",
+     "p": [
+      "Sigue moviéndote suave, como caminar despacio, uno o dos minutos.",
+      "Deja que la respiración se calme con exhalaciones largas y relajadas.",
+      "Termina con unos estiramientos ligeros, cómodos y nunca forzados."
+     ],
+     "q": "¿Cómo te gusta relajarte después de moverte?",
+     "c": "Tras tu próxima actividad, camina despacio dos minutos y suelta el aire largo y suave."
+    },
+    "fr": {
+     "t": "Le retour au calme",
+     "g": "Apprends à finir une séance en douceur pour que ton corps se pose.",
+     "p": [
+      "Continue à bouger doucement, comme marcher lentement, une ou deux minutes.",
+      "Laisse ta respiration ralentir avec de longues expirations détendues.",
+      "Termine par quelques étirements légers, tenus confortablement, jamais forcés."
+     ],
+     "q": "Comment aimes-tu te détendre après avoir bougé ?",
+     "c": "Après ta prochaine activité, marche lentement deux minutes en expirant longuement."
+    },
+    "it": {
+     "t": "Il defaticamento",
+     "g": "Impara a chiudere l'allenamento con calma per far rilassare il corpo.",
+     "p": [
+      "Continua a muoverti piano, come camminare lentamente, per uno o due minuti.",
+      "Lascia che il respiro rallenti con espirazioni lunghe e rilassate.",
+      "Finisci con qualche allungamento leggero, comodo e mai forzato."
+     ],
+     "q": "Come ti piace rilassarti dopo esserti mosso?",
+     "c": "Dopo la tua prossima attività, cammina piano per due minuti con espirazioni lunghe."
+    },
+    "pt": {
+     "t": "Retorno à calma",
+     "g": "Aprende a terminar um treino com calma para o corpo assentar.",
+     "p": [
+      "Continua a mexer-te suavemente, como caminhar devagar, um ou dois minutos.",
+      "Deixa a respiração abrandar com expirações longas e relaxadas.",
+      "Acaba com alguns alongamentos leves, confortáveis e nunca forçados."
+     ],
+     "q": "Como gostas de relaxar depois de te mexeres?",
+     "c": "Depois da tua próxima atividade, caminha devagar dois minutos e expira longamente."
+    },
+    "pt_BR": {
+     "t": "Desaquecimento",
+     "g": "Aprenda a terminar o treino com calma para o corpo se acalmar.",
+     "p": [
+      "Continue se movendo de leve, como caminhar devagar, por um ou dois minutos.",
+      "Deixe a respiração desacelerar com expirações longas e relaxadas.",
+      "Termine com alguns alongamentos leves, confortáveis e nunca forçados."
+     ],
+     "q": "Como você gosta de relaxar depois de se exercitar?",
+     "c": "Depois da sua próxima atividade, caminhe devagar por dois minutos soltando o ar com calma."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How hard is hard enough",
+     "g": "Use a simple 1 to 10 effort scale to guide your workouts.",
+     "p": [
+      "1 is resting and 10 is your absolute maximum effort.",
+      "For beginners, most work around 4 to 6 feels challenging but comfortable.",
+      "If you can still talk in short sentences, your effort is usually fine."
+     ],
+     "q": "What number would you give your effort when climbing a flight of stairs?",
+     "c": "Do ten squats or marches today and rate your effort on the 1 to 10 scale."
+    },
+    "de": {
+     "t": "Wie anstrengend ist genug",
+     "g": "Nutze eine einfache Skala von 1 bis 10, um dein Training zu steuern.",
+     "p": [
+      "1 ist Ruhe und 10 deine absolute Höchstleistung.",
+      "Für Einsteiger fühlt sich das meiste um 4 bis 6 fordernd, aber angenehm an.",
+      "Wenn du noch in kurzen Sätzen sprechen kannst, passt die Anstrengung meist."
+     ],
+     "q": "Welche Zahl gibst du deiner Anstrengung beim Treppensteigen?",
+     "c": "Mach heute zehn Kniebeugen oder Schritte auf der Stelle und bewerte sie von 1 bis 10."
+    },
+    "es": {
+     "t": "Cuánto esfuerzo es suficiente",
+     "g": "Usa una escala sencilla del 1 al 10 para guiar tus entrenos.",
+     "p": [
+      "El 1 es estar en reposo y el 10 tu esfuerzo máximo absoluto.",
+      "Al empezar, casi todo entre 4 y 6 se siente exigente pero cómodo.",
+      "Si aún puedes hablar con frases cortas, tu esfuerzo suele estar bien."
+     ],
+     "q": "¿Qué número le darías a tu esfuerzo al subir un tramo de escaleras?",
+     "c": "Haz hoy diez sentadillas o marchas y puntúa tu esfuerzo del 1 al 10."
+    },
+    "fr": {
+     "t": "Quel effort suffit",
+     "g": "Utilise une échelle simple de 1 à 10 pour guider tes séances.",
+     "p": [
+      "1, c'est le repos et 10, ton effort maximal absolu.",
+      "Pour débuter, la plupart du travail vers 4 à 6 est exigeant mais confortable.",
+      "Si tu peux encore parler en phrases courtes, ton effort est en général adapté."
+     ],
+     "q": "Quelle note donnerais-tu à ton effort en montant un étage à pied ?",
+     "c": "Fais dix squats ou marches aujourd'hui et note ton effort de 1 à 10."
+    },
+    "it": {
+     "t": "Quanto sforzo basta",
+     "g": "Usa una semplice scala da 1 a 10 per guidare i tuoi allenamenti.",
+     "p": [
+      "1 è il riposo e 10 il tuo sforzo massimo assoluto.",
+      "Per chi inizia, quasi tutto tra 4 e 6 è impegnativo ma confortevole.",
+      "Se riesci ancora a parlare con frasi brevi, lo sforzo di solito va bene."
+     ],
+     "q": "Che numero daresti al tuo sforzo salendo una rampa di scale?",
+     "c": "Fai oggi dieci squat o passi sul posto e dai al tuo sforzo un voto da 1 a 10."
+    },
+    "pt": {
+     "t": "Quanto esforço chega",
+     "g": "Usa uma escala simples de 1 a 10 para orientar os teus treinos.",
+     "p": [
+      "1 é estar em repouso e 10 o teu esforço máximo absoluto.",
+      "Para quem começa, quase tudo entre 4 e 6 é exigente mas confortável.",
+      "Se ainda consegues falar em frases curtas, o esforço costuma estar bem."
+     ],
+     "q": "Que número darias ao teu esforço ao subir um lanço de escadas?",
+     "c": "Faz hoje dez agachamentos ou marchas e dá ao esforço uma nota de 1 a 10."
+    },
+    "pt_BR": {
+     "t": "Quanto esforço é suficiente",
+     "g": "Use uma escala simples de 1 a 10 para guiar seus treinos.",
+     "p": [
+      "1 é ficar em repouso e 10 é o seu esforço máximo absoluto.",
+      "No começo, quase tudo entre 4 e 6 é desafiador, mas confortável.",
+      "Se você ainda consegue falar frases curtas, o esforço costuma estar bom."
+     ],
+     "q": "Que nota você daria ao seu esforço subindo um lance de escadas?",
+     "c": "Faça hoje dez agachamentos ou marchas e dê ao esforço uma nota de 1 a 10."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reps and sets explained",
+     "g": "Learn the basic language of workouts in a simple way.",
+     "p": [
+      "A rep is one complete movement, like one squat down and up.",
+      "A set is a group of reps done in a row, like 8 squats.",
+      "So 2 sets of 8 means 8 reps, a short rest, then 8 more."
+     ],
+     "q": "Have you heard workout words that confused you before?",
+     "c": "Do 2 sets of 5 slow sit-to-stands from a chair, with a short rest between."
+    },
+    "de": {
+     "t": "Wiederholungen und Sätze erklärt",
+     "g": "Lerne die Grundbegriffe des Trainings auf einfache Weise.",
+     "p": [
+      "Eine Wiederholung ist eine komplette Bewegung, etwa einmal runter und hoch.",
+      "Ein Satz ist eine Gruppe von Wiederholungen am Stück, zum Beispiel 8 Kniebeugen.",
+      "2 Sätze à 8 heißt also 8 Wiederholungen, kurze Pause, dann noch 8."
+     ],
+     "q": "Gab es Trainingsbegriffe, die dich früher verwirrt haben?",
+     "c": "Mach 2 Sätze à 5 langsames Aufstehen vom Stuhl mit einer kurzen Pause dazwischen."
+    },
+    "es": {
+     "t": "Repeticiones y series",
+     "g": "Aprende el lenguaje básico de los entrenos de forma sencilla.",
+     "p": [
+      "Una repetición es un movimiento completo, como bajar y subir en una sentadilla.",
+      "Una serie es un grupo de repeticiones seguidas, como 8 sentadillas.",
+      "Así, 2 series de 8 son 8 repeticiones, un descanso corto y 8 más."
+     ],
+     "q": "¿Alguna vez te confundieron palabras de entrenamiento?",
+     "c": "Haz 2 series de 5 levantadas lentas de una silla, con un descanso corto entre ellas."
+    },
+    "fr": {
+     "t": "Répétitions et séries",
+     "g": "Apprends le vocabulaire de base de l'entraînement, simplement.",
+     "p": [
+      "Une répétition est un mouvement complet, comme descendre et remonter un squat.",
+      "Une série est un groupe de répétitions enchaînées, par exemple 8 squats.",
+      "Donc 2 séries de 8, c'est 8 répétitions, une courte pause, puis 8 autres."
+     ],
+     "q": "Des mots du sport t'ont-ils déjà semblé flous ?",
+     "c": "Fais 2 séries de 5 levers de chaise lents, avec une courte pause entre les deux."
+    },
+    "it": {
+     "t": "Ripetizioni e serie",
+     "g": "Impara il linguaggio base dell'allenamento in modo semplice.",
+     "p": [
+      "Una ripetizione è un movimento completo, come scendere e risalire in uno squat.",
+      "Una serie è un gruppo di ripetizioni di fila, per esempio 8 squat.",
+      "Quindi 2 serie da 8 sono 8 ripetizioni, una breve pausa e altre 8."
+     ],
+     "q": "Ti è mai capitato di non capire qualche parola del fitness?",
+     "c": "Fai 2 serie da 5 alzate lente da una sedia, con una breve pausa tra le due."
+    },
+    "pt": {
+     "t": "Repetições e séries",
+     "g": "Aprende a linguagem básica do treino de forma simples.",
+     "p": [
+      "Uma repetição é um movimento completo, como descer e subir num agachamento.",
+      "Uma série é um grupo de repetições seguidas, por exemplo 8 agachamentos.",
+      "Assim, 2 séries de 8 são 8 repetições, uma pausa curta e mais 8."
+     ],
+     "q": "Já te baralharam palavras do mundo do treino?",
+     "c": "Faz 2 séries de 5 levantamentos lentos de uma cadeira, com uma pausa curta entre elas."
+    },
+    "pt_BR": {
+     "t": "Repetições e séries",
+     "g": "Aprenda a linguagem básica do treino de um jeito simples.",
+     "p": [
+      "Uma repetição é um movimento completo, como descer e subir em um agachamento.",
+      "Uma série é um grupo de repetições seguidas, por exemplo 8 agachamentos.",
+      "Então 2 séries de 8 são 8 repetições, uma pausa curta e mais 8."
+     ],
+     "q": "Alguma palavra de treino já deixou você confuso?",
+     "c": "Faça 2 séries de 5 levantadas lentas da cadeira, com uma pausa curta entre elas."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest between sets",
+     "g": "Understand why short and longer rests both have a place.",
+     "p": [
+      "Short rests of 30 to 60 seconds keep your heart rate up.",
+      "Longer rests of 1 to 2 minutes help you do each set with good form.",
+      "Rest until your breathing settles and you feel ready to move well."
+     ],
+     "q": "Do you tend to rush your rests or take your time?",
+     "c": "In your next workout, time your rests and notice when you feel ready again."
+    },
+    "de": {
+     "t": "Pausen zwischen den Sätzen",
+     "g": "Verstehe, warum kurze und längere Pausen beide ihren Platz haben.",
+     "p": [
+      "Kurze Pausen von 30 bis 60 Sekunden halten den Puls oben.",
+      "Längere Pausen von 1 bis 2 Minuten helfen, jeden Satz sauber auszuführen.",
+      "Pausiere, bis dein Atem ruhiger ist und du dich bereit für saubere Bewegung fühlst."
+     ],
+     "q": "Neigst du dazu, Pausen abzukürzen oder dir Zeit zu lassen?",
+     "c": "Stopp im nächsten Training deine Pausen und achte darauf, wann du wieder bereit bist."
+    },
+    "es": {
+     "t": "Descanso entre series",
+     "g": "Entiende por qué los descansos cortos y largos tienen su lugar.",
+     "p": [
+      "Descansos cortos de 30 a 60 segundos mantienen el pulso alto.",
+      "Descansos de 1 a 2 minutos te ayudan a hacer cada serie con buena técnica.",
+      "Descansa hasta que tu respiración se calme y te sientas listo para moverte bien."
+     ],
+     "q": "¿Sueles apresurar los descansos o te tomas tu tiempo?",
+     "c": "En tu próximo entreno, cronometra los descansos y nota cuándo vuelves a estar listo."
+    },
+    "fr": {
+     "t": "Le repos entre les séries",
+     "g": "Comprends pourquoi les repos courts et longs ont chacun leur place.",
+     "p": [
+      "Des repos courts de 30 à 60 secondes gardent le cœur actif.",
+      "Des repos de 1 à 2 minutes aident à bien exécuter chaque série.",
+      "Repose-toi jusqu'à ce que ta respiration se calme et que tu te sentes prêt."
+     ],
+     "q": "As-tu tendance à écourter tes repos ou à prendre ton temps ?",
+     "c": "À ta prochaine séance, chronomètre tes repos et repère quand tu te sens prêt."
+    },
+    "it": {
+     "t": "Il recupero tra le serie",
+     "g": "Capisci perché recuperi brevi e più lunghi hanno entrambi un ruolo.",
+     "p": [
+      "Recuperi brevi da 30 a 60 secondi mantengono alto il battito.",
+      "Recuperi da 1 a 2 minuti ti aiutano a fare ogni serie con una buona tecnica.",
+      "Recupera finché il respiro si calma e ti senti pronto a muoverti bene."
+     ],
+     "q": "Tendi a sbrigare i recuperi o a prenderti il tuo tempo?",
+     "c": "Nel prossimo allenamento cronometra i recuperi e nota quando ti senti di nuovo pronto."
+    },
+    "pt": {
+     "t": "Descanso entre séries",
+     "g": "Percebe porque é que descansos curtos e longos têm o seu lugar.",
+     "p": [
+      "Descansos curtos de 30 a 60 segundos mantêm o ritmo cardíaco alto.",
+      "Descansos de 1 a 2 minutos ajudam a fazer cada série com boa técnica.",
+      "Descansa até a respiração acalmar e te sentires pronto para te mexer bem."
+     ],
+     "q": "Costumas apressar os descansos ou dás-te tempo?",
+     "c": "No próximo treino, cronometra os descansos e repara quando te sentes pronto outra vez."
+    },
+    "pt_BR": {
+     "t": "Descanso entre séries",
+     "g": "Entenda por que descansos curtos e longos têm seu lugar.",
+     "p": [
+      "Descansos curtos de 30 a 60 segundos mantêm os batimentos altos.",
+      "Descansos de 1 a 2 minutos ajudam a fazer cada série com boa técnica.",
+      "Descanse até a respiração acalmar e você se sentir pronto para se mexer bem."
+     ],
+     "q": "Você costuma apressar os descansos ou dá tempo ao corpo?",
+     "c": "No próximo treino, cronometre os descansos e perceba quando se sente pronto de novo."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bodyweight squat",
+     "g": "Learn the basic squat pattern step by step.",
+     "p": [
+      "Stand with feet about hip to shoulder width apart, toes slightly out.",
+      "Push your hips back, let knees follow your toes and keep your chest proud.",
+      "Go only as low as feels comfortable, then stand up through your whole foot."
+     ],
+     "q": "What feels easiest and what feels trickiest about squatting for you?",
+     "c": "Do 2 sets of 6 slow squats today, focusing on knees following your toes."
+    },
+    "de": {
+     "t": "Die Kniebeuge",
+     "g": "Lerne die Grundbewegung der Kniebeuge Schritt für Schritt.",
+     "p": [
+      "Stell die Füße etwa hüft- bis schulterbreit, Zehen leicht nach außen.",
+      "Schieb die Hüfte nach hinten, Knie folgen den Zehen, Brust bleibt stolz aufrecht.",
+      "Geh nur so tief, wie es angenehm ist, und drück dich über den ganzen Fuß hoch."
+     ],
+     "q": "Was fällt dir bei der Kniebeuge leicht und was eher schwer?",
+     "c": "Mach heute 2 Sätze à 6 langsame Kniebeugen und achte darauf, dass die Knie den Zehen folgen."
+    },
+    "es": {
+     "t": "La sentadilla con peso corporal",
+     "g": "Aprende paso a paso el patrón básico de la sentadilla.",
+     "p": [
+      "Separa los pies entre el ancho de cadera y de hombros, puntas un poco hacia fuera.",
+      "Lleva la cadera atrás, las rodillas siguen a los pies y el pecho orgulloso.",
+      "Baja solo hasta donde te resulte cómodo y sube apoyando todo el pie."
+     ],
+     "q": "¿Qué te resulta más fácil y qué más difícil al hacer sentadillas?",
+     "c": "Haz hoy 2 series de 6 sentadillas lentas, cuidando que las rodillas sigan a los pies."
+    },
+    "fr": {
+     "t": "Le squat au poids du corps",
+     "g": "Apprends pas à pas le mouvement de base du squat.",
+     "p": [
+      "Pieds entre largeur de hanches et d'épaules, pointes légèrement vers l'extérieur.",
+      "Recule les hanches, genoux dans l'axe des pieds, poitrine fière.",
+      "Descends seulement jusqu'où c'est confortable, puis remonte en poussant sur tout le pied."
+     ],
+     "q": "Qu'est-ce qui te semble facile et qu'est-ce qui est délicat dans le squat ?",
+     "c": "Fais 2 séries de 6 squats lents aujourd'hui, genoux bien dans l'axe des pieds."
+    },
+    "it": {
+     "t": "Lo squat a corpo libero",
+     "g": "Impara passo dopo passo il movimento base dello squat.",
+     "p": [
+      "Piedi tra la larghezza delle anche e delle spalle, punte un po' in fuori.",
+      "Porta indietro il bacino, ginocchia in linea con i piedi e petto fiero.",
+      "Scendi solo fin dove è comodo, poi risali spingendo con tutto il piede."
+     ],
+     "q": "Cosa ti viene facile e cosa ti risulta difficile nello squat?",
+     "c": "Fai oggi 2 serie da 6 squat lenti, con le ginocchia in linea con i piedi."
+    },
+    "pt": {
+     "t": "O agachamento com o peso do corpo",
+     "g": "Aprende passo a passo o padrão básico do agachamento.",
+     "p": [
+      "Pés entre a largura da anca e dos ombros, pontas ligeiramente para fora.",
+      "Leva a anca para trás, joelhos a seguir os pés e peito orgulhoso.",
+      "Desce só até onde for confortável e sobe empurrando com o pé todo."
+     ],
+     "q": "O que achas mais fácil e mais difícil no agachamento?",
+     "c": "Faz hoje 2 séries de 6 agachamentos lentos, com os joelhos a seguir os pés."
+    },
+    "pt_BR": {
+     "t": "O agachamento livre",
+     "g": "Aprenda passo a passo o padrão básico do agachamento.",
+     "p": [
+      "Pés entre a largura do quadril e dos ombros, pontas um pouco para fora.",
+      "Leve o quadril para trás, joelhos acompanhando os pés e peito aberto.",
+      "Desça só até onde for confortável e suba empurrando com o pé inteiro."
+     ],
+     "q": "O que é mais fácil e o que é mais difícil no agachamento para você?",
+     "c": "Faça hoje 2 séries de 6 agachamentos lentos, com os joelhos acompanhando os pés."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Squat to a chair",
+     "g": "Use a chair to practise squat depth and control safely.",
+     "p": [
+      "Place a sturdy chair behind you that will not slide.",
+      "Sit back slowly until you lightly touch the seat, then stand up.",
+      "The chair gives you a target and confidence while you learn."
+     ],
+     "q": "Did the chair make squatting feel easier or different?",
+     "c": "Do 2 sets of 8 slow chair squats, touching the seat lightly without flopping down."
+    },
+    "de": {
+     "t": "Kniebeuge zum Stuhl",
+     "g": "Nutze einen Stuhl, um Tiefe und Kontrolle sicher zu üben.",
+     "p": [
+      "Stell einen stabilen Stuhl hinter dich, der nicht wegrutscht.",
+      "Setz dich langsam nach hinten, bis du die Sitzfläche leicht berührst, dann steh auf.",
+      "Der Stuhl gibt dir ein Ziel und Sicherheit, während du lernst."
+     ],
+     "q": "Hat der Stuhl die Kniebeuge leichter oder anders gemacht?",
+     "c": "Mach 2 Sätze à 8 langsame Stuhlkniebeugen und berühre den Sitz nur leicht, ohne dich fallen zu lassen."
+    },
+    "es": {
+     "t": "Sentadilla a la silla",
+     "g": "Usa una silla para practicar la profundidad y el control con seguridad.",
+     "p": [
+      "Coloca detrás una silla firme que no se deslice.",
+      "Siéntate atrás despacio hasta rozar el asiento y luego levántate.",
+      "La silla te da un objetivo y confianza mientras aprendes."
+     ],
+     "q": "¿La silla hizo la sentadilla más fácil o diferente?",
+     "c": "Haz 2 series de 8 sentadillas lentas a la silla, rozando el asiento sin dejarte caer."
+    },
+    "fr": {
+     "t": "Le squat vers une chaise",
+     "g": "Utilise une chaise pour travailler la profondeur et le contrôle en sécurité.",
+     "p": [
+      "Place derrière toi une chaise solide qui ne glisse pas.",
+      "Assieds-toi lentement jusqu'à effleurer l'assise, puis relève-toi.",
+      "La chaise te donne un repère et de la confiance pendant l'apprentissage."
+     ],
+     "q": "La chaise a-t-elle rendu le squat plus facile ou différent ?",
+     "c": "Fais 2 séries de 8 squats lents vers la chaise, en effleurant l'assise sans te laisser tomber."
+    },
+    "it": {
+     "t": "Squat alla sedia",
+     "g": "Usa una sedia per allenare profondità e controllo in sicurezza.",
+     "p": [
+      "Metti dietro di te una sedia stabile che non scivoli.",
+      "Siediti indietro lentamente fino a sfiorare la seduta, poi rialzati.",
+      "La sedia ti dà un riferimento e sicurezza mentre impari."
+     ],
+     "q": "La sedia ha reso lo squat più facile o diverso?",
+     "c": "Fai 2 serie da 8 squat lenti alla sedia, sfiorando la seduta senza lasciarti cadere."
+    },
+    "pt": {
+     "t": "Agachamento até à cadeira",
+     "g": "Usa uma cadeira para treinar a profundidade e o controlo em segurança.",
+     "p": [
+      "Põe atrás de ti uma cadeira firme que não deslize.",
+      "Senta-te para trás devagar até tocar levemente no assento e levanta-te.",
+      "A cadeira dá-te um alvo e confiança enquanto aprendes."
+     ],
+     "q": "A cadeira tornou o agachamento mais fácil ou diferente?",
+     "c": "Faz 2 séries de 8 agachamentos lentos até à cadeira, tocando no assento sem te deixares cair."
+    },
+    "pt_BR": {
+     "t": "Agachamento até a cadeira",
+     "g": "Use uma cadeira para treinar profundidade e controle com segurança.",
+     "p": [
+      "Coloque atrás de você uma cadeira firme que não escorregue.",
+      "Sente para trás devagar até encostar de leve no assento e levante.",
+      "A cadeira dá um alvo e confiança enquanto você aprende."
+     ],
+     "q": "A cadeira deixou o agachamento mais fácil ou diferente?",
+     "c": "Faça 2 séries de 8 agachamentos lentos até a cadeira, encostando no assento sem despencar."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The glute bridge",
+     "g": "Learn a floor exercise that wakes up the back of your body.",
+     "p": [
+      "Lie on your back, knees bent, feet flat and hip-width apart.",
+      "Press through your heels and lift your hips until body forms a gentle line.",
+      "Pause briefly at the top, then lower slowly without arching your lower back."
+     ],
+     "q": "Where do you feel the bridge working most?",
+     "c": "Do 2 sets of 10 glute bridges with a one-second pause at the top."
+    },
+    "de": {
+     "t": "Die Gesäßbrücke",
+     "g": "Lerne eine Bodenübung, die die Rückseite deines Körpers aufweckt.",
+     "p": [
+      "Leg dich auf den Rücken, Knie gebeugt, Füße flach und hüftbreit.",
+      "Drück über die Fersen und heb die Hüfte, bis dein Körper eine sanfte Linie bildet.",
+      "Halte oben kurz, dann senk langsam ab, ohne ins Hohlkreuz zu gehen."
+     ],
+     "q": "Wo spürst du die Brücke am meisten arbeiten?",
+     "c": "Mach 2 Sätze à 10 Gesäßbrücken mit einer Sekunde Pause oben."
+    },
+    "es": {
+     "t": "El puente de glúteos",
+     "g": "Aprende un ejercicio en el suelo que despierta la parte trasera del cuerpo.",
+     "p": [
+      "Túmbate boca arriba, rodillas dobladas, pies apoyados al ancho de cadera.",
+      "Empuja con los talones y sube la cadera hasta formar una línea suave.",
+      "Haz una pausa breve arriba y baja despacio sin arquear la zona lumbar."
+     ],
+     "q": "¿Dónde sientes que trabaja más el puente?",
+     "c": "Haz 2 series de 10 puentes de glúteos con una pausa de un segundo arriba."
+    },
+    "fr": {
+     "t": "Le pont fessier",
+     "g": "Apprends un exercice au sol qui réveille l'arrière du corps.",
+     "p": [
+      "Allonge-toi sur le dos, genoux pliés, pieds à plat écartés comme les hanches.",
+      "Pousse dans les talons et monte les hanches jusqu'à former une ligne douce.",
+      "Marque une courte pause en haut, puis redescends lentement sans cambrer le bas du dos."
+     ],
+     "q": "Où sens-tu le plus le pont travailler ?",
+     "c": "Fais 2 séries de 10 ponts fessiers avec une pause d'une seconde en haut."
+    },
+    "it": {
+     "t": "Il ponte glutei",
+     "g": "Impara un esercizio a terra che sveglia la parte posteriore del corpo.",
+     "p": [
+      "Sdraiati sulla schiena, ginocchia piegate, piedi a terra alla larghezza delle anche.",
+      "Spingi con i talloni e solleva il bacino fino a formare una linea morbida.",
+      "Fai una breve pausa in alto, poi scendi piano senza inarcare la zona lombare."
+     ],
+     "q": "Dove senti lavorare di più il ponte?",
+     "c": "Fai 2 serie da 10 ponti glutei con una pausa di un secondo in alto."
+    },
+    "pt": {
+     "t": "A ponte de glúteos",
+     "g": "Aprende um exercício no chão que acorda a parte de trás do corpo.",
+     "p": [
+      "Deita-te de costas, joelhos dobrados, pés no chão à largura da anca.",
+      "Empurra com os calcanhares e sobe a anca até formar uma linha suave.",
+      "Faz uma pausa breve em cima e desce devagar sem arquear a lombar."
+     ],
+     "q": "Onde sentes a ponte a trabalhar mais?",
+     "c": "Faz 2 séries de 10 pontes de glúteos com uma pausa de um segundo em cima."
+    },
+    "pt_BR": {
+     "t": "A ponte de glúteos",
+     "g": "Aprenda um exercício no chão que acorda a parte de trás do corpo.",
+     "p": [
+      "Deite de costas, joelhos dobrados, pés apoiados na largura do quadril.",
+      "Empurre com os calcanhares e suba o quadril até formar uma linha suave.",
+      "Faça uma pausa breve em cima e desça devagar sem arquear a lombar."
+     ],
+     "q": "Onde você sente a ponte trabalhar mais?",
+     "c": "Faça 2 séries de 10 pontes de glúteos com uma pausa de um segundo em cima."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wall push-ups",
+     "g": "Start pushing exercises in the friendliest possible way.",
+     "p": [
+      "Stand an arm's length from a wall and place hands at shoulder height.",
+      "Bend your elbows to bring your chest towards the wall, body in one line.",
+      "Push back to the start; stepping further away makes it harder."
+     ],
+     "q": "Have you ever tried push-ups, and how did they feel?",
+     "c": "Do 2 sets of 10 wall push-ups, keeping your body straight like a plank."
+    },
+    "de": {
+     "t": "Liegestütze an der Wand",
+     "g": "Starte mit Druckübungen auf die freundlichste Art.",
+     "p": [
+      "Stell dich eine Armlänge vor eine Wand, Hände auf Schulterhöhe.",
+      "Beug die Ellbogen und bring die Brust zur Wand, der Körper bleibt in einer Linie.",
+      "Drück dich zurück; je weiter du wegstehst, desto schwerer wird es."
+     ],
+     "q": "Hast du schon mal Liegestütze probiert, und wie war es?",
+     "c": "Mach 2 Sätze à 10 Wandliegestütze und halte deinen Körper gerade wie ein Brett."
+    },
+    "es": {
+     "t": "Flexiones en la pared",
+     "g": "Empieza con los ejercicios de empuje de la forma más amable.",
+     "p": [
+      "Ponte a un brazo de distancia de la pared, manos a la altura de los hombros.",
+      "Dobla los codos y acerca el pecho a la pared con el cuerpo en una línea.",
+      "Empuja para volver; si te alejas más, se vuelve más difícil."
+     ],
+     "q": "¿Has probado alguna vez las flexiones? ¿Qué tal te fue?",
+     "c": "Haz 2 series de 10 flexiones en la pared, con el cuerpo recto como una tabla."
+    },
+    "fr": {
+     "t": "Les pompes contre le mur",
+     "g": "Commence les exercices de poussée de la façon la plus douce.",
+     "p": [
+      "Place-toi à une longueur de bras d'un mur, mains à hauteur d'épaules.",
+      "Plie les coudes pour amener la poitrine vers le mur, corps bien aligné.",
+      "Repousse pour revenir ; plus tu recules les pieds, plus c'est dur."
+     ],
+     "q": "As-tu déjà essayé les pompes, et comment ça s'est passé ?",
+     "c": "Fais 2 séries de 10 pompes contre le mur en gardant le corps droit comme une planche."
+    },
+    "it": {
+     "t": "Piegamenti al muro",
+     "g": "Inizia gli esercizi di spinta nel modo più gentile.",
+     "p": [
+      "Mettiti a un braccio di distanza dal muro, mani all'altezza delle spalle.",
+      "Piega i gomiti e porta il petto verso il muro, con il corpo in linea.",
+      "Spingi per tornare; allontanando i piedi diventa più difficile."
+     ],
+     "q": "Hai mai provato i piegamenti? Com'è andata?",
+     "c": "Fai 2 serie da 10 piegamenti al muro, con il corpo dritto come una tavola."
+    },
+    "pt": {
+     "t": "Flexões na parede",
+     "g": "Começa os exercícios de empurrar da forma mais simpática.",
+     "p": [
+      "Fica a um braço de distância da parede, mãos à altura dos ombros.",
+      "Dobra os cotovelos e leva o peito à parede, com o corpo numa linha.",
+      "Empurra para voltar; afastar mais os pés torna tudo mais difícil."
+     ],
+     "q": "Já experimentaste fazer flexões? Como correu?",
+     "c": "Faz 2 séries de 10 flexões na parede, com o corpo direito como uma prancha."
+    },
+    "pt_BR": {
+     "t": "Flexão na parede",
+     "g": "Comece os exercícios de empurrar do jeito mais gentil.",
+     "p": [
+      "Fique a um braço de distância da parede, mãos na altura dos ombros.",
+      "Dobre os cotovelos e leve o peito até a parede, com o corpo alinhado.",
+      "Empurre para voltar; afastar mais os pés deixa o exercício mais difícil."
+     ],
+     "q": "Você já tentou fazer flexões? Como foi?",
+     "c": "Faça 2 séries de 10 flexões na parede, com o corpo reto como uma prancha."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Incline push-ups",
+     "g": "Progress your push-up using a table or sofa edge.",
+     "p": [
+      "Place hands on a stable, non-slip surface like a table or sofa arm.",
+      "Walk feet back until your body is a straight line from head to heels.",
+      "The lower the surface, the harder the push-up; progress slowly."
+     ],
+     "q": "What sturdy surface at home could you use for incline push-ups?",
+     "c": "Do 2 sets of 6 incline push-ups on a surface that will not move."
+    },
+    "de": {
+     "t": "Erhöhte Liegestütze",
+     "g": "Steigere deine Liegestütze mit einer Tischkante oder Sofalehne.",
+     "p": [
+      "Stütz die Hände auf eine stabile, rutschfeste Fläche wie Tisch oder Sofalehne.",
+      "Geh mit den Füßen zurück, bis dein Körper von Kopf bis Ferse eine Linie bildet.",
+      "Je niedriger die Fläche, desto schwerer; steigere dich langsam."
+     ],
+     "q": "Welche stabile Fläche zu Hause könntest du dafür nutzen?",
+     "c": "Mach 2 Sätze à 6 erhöhte Liegestütze an einer Fläche, die sich nicht bewegt."
+    },
+    "es": {
+     "t": "Flexiones inclinadas",
+     "g": "Progresa en tus flexiones usando una mesa o el borde del sofá.",
+     "p": [
+      "Apoya las manos en una superficie estable y antideslizante, como una mesa.",
+      "Lleva los pies atrás hasta que el cuerpo forme una línea de la cabeza a los talones.",
+      "Cuanto más baja la superficie, más difícil; avanza poco a poco."
+     ],
+     "q": "¿Qué superficie firme de tu casa podrías usar para flexiones inclinadas?",
+     "c": "Haz 2 series de 6 flexiones inclinadas sobre una superficie que no se mueva."
+    },
+    "fr": {
+     "t": "Les pompes inclinées",
+     "g": "Progresse dans tes pompes avec une table ou l'accoudoir du canapé.",
+     "p": [
+      "Pose les mains sur une surface stable et antidérapante, comme une table.",
+      "Recule les pieds jusqu'à ce que ton corps forme une ligne de la tête aux talons.",
+      "Plus la surface est basse, plus c'est dur ; progresse doucement."
+     ],
+     "q": "Quelle surface solide chez toi pourrais-tu utiliser pour des pompes inclinées ?",
+     "c": "Fais 2 séries de 6 pompes inclinées sur une surface qui ne bouge pas."
+    },
+    "it": {
+     "t": "Piegamenti inclinati",
+     "g": "Fai progredire i piegamenti usando un tavolo o il bracciolo del divano.",
+     "p": [
+      "Appoggia le mani su una superficie stabile e antiscivolo, come un tavolo.",
+      "Porta indietro i piedi finché il corpo forma una linea dalla testa ai talloni.",
+      "Più bassa è la superficie, più è difficile; progredisci con calma."
+     ],
+     "q": "Quale superficie stabile di casa potresti usare per i piegamenti inclinati?",
+     "c": "Fai 2 serie da 6 piegamenti inclinati su una superficie che non si muove."
+    },
+    "pt": {
+     "t": "Flexões inclinadas",
+     "g": "Evolui nas flexões usando uma mesa ou o braço do sofá.",
+     "p": [
+      "Apoia as mãos numa superfície estável e que não escorregue, como uma mesa.",
+      "Leva os pés para trás até o corpo formar uma linha da cabeça aos calcanhares.",
+      "Quanto mais baixa a superfície, mais difícil; evolui com calma."
+     ],
+     "q": "Que superfície firme em casa podias usar para flexões inclinadas?",
+     "c": "Faz 2 séries de 6 flexões inclinadas numa superfície que não se mexa."
+    },
+    "pt_BR": {
+     "t": "Flexão inclinada",
+     "g": "Evolua na flexão usando uma mesa ou o braço do sofá.",
+     "p": [
+      "Apoie as mãos em uma superfície estável e antiderrapante, como uma mesa.",
+      "Leve os pés para trás até o corpo formar uma linha da cabeça aos calcanhares.",
+      "Quanto mais baixa a superfície, mais difícil; evolua com calma."
+     ],
+     "q": "Qual superfície firme da sua casa você poderia usar para a flexão inclinada?",
+     "c": "Faça 2 séries de 6 flexões inclinadas em uma superfície que não se mexa."
+    }
+   }
+  }
+ ]
+}

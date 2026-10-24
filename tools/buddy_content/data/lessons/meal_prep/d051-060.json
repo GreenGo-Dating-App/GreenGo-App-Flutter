@@ -1,0 +1,835 @@
+{
+ "topic": "meal_prep",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sauces that change everything",
+     "g": "Use a few simple sauces to turn the same base into very different meals.",
+     "p": [
+      "Pesto blends herbs, nuts, cheese and oil for pasta, sandwiches and bowls.",
+      "Yoghurt sauce with garlic and lemon, or peanut sauce, adds creaminess and flavour.",
+      "Fresh salsa of tomato, onion and herbs brightens eggs, beans and rice."
+     ],
+     "q": "Which sauce would you love to add to your weekly rice or chicken?",
+     "c": "Make one new sauce and use it to give the same base two different flavours."
+    },
+    "de": {
+     "t": "Soßen, die alles verändern",
+     "g": "Nutze ein paar einfache Soßen, um aus derselben Basis ganz verschiedene Gerichte zu machen.",
+     "p": [
+      "Pesto aus Kräutern, Nüssen, Käse und Öl passt zu Pasta, Sandwiches und Bowls.",
+      "Joghurtsoße mit Knoblauch und Zitrone oder Erdnusssoße bringt Cremigkeit und Geschmack.",
+      "Frische Salsa aus Tomate, Zwiebel und Kräutern macht Eier, Bohnen und Reis lebendig."
+     ],
+     "q": "Welche Soße würdest du gern zu deinem Wochenreis oder Hähnchen geben?",
+     "c": "Mach eine neue Soße und gib derselben Basis damit zwei verschiedene Geschmäcker."
+    },
+    "es": {
+     "t": "Salsas que lo cambian todo",
+     "g": "Usar unas pocas salsas sencillas para convertir la misma base en comidas muy distintas.",
+     "p": [
+      "El pesto mezcla hierbas, frutos secos, queso y aceite para pasta, bocadillos y bowls.",
+      "La salsa de yogur con ajo y limón, o la de cacahuete, aportan cremosidad y sabor.",
+      "Una salsa fresca de tomate, cebolla y hierbas alegra huevos, legumbres y arroz."
+     ],
+     "q": "¿Qué salsa te encantaría añadir a tu arroz o pollo de la semana?",
+     "c": "Prepara una salsa nueva y úsala para dar dos sabores distintos a la misma base."
+    },
+    "fr": {
+     "t": "Des sauces qui changent tout",
+     "g": "Utiliser quelques sauces simples pour transformer une même base en repas très différents.",
+     "p": [
+      "Le pesto mêle herbes, noix, fromage et huile pour pâtes, sandwichs et bols.",
+      "Une sauce yaourt à l'ail et au citron, ou une sauce cacahuète, apporte onctuosité et goût.",
+      "Une salsa fraîche de tomate, oignon et herbes réveille œufs, haricots et riz."
+     ],
+     "q": "Quelle sauce aimerais-tu ajouter à ton riz ou ton poulet de la semaine ?",
+     "c": "Prépare une nouvelle sauce et donne deux saveurs différentes à une même base."
+    },
+    "it": {
+     "t": "Salse che cambiano tutto",
+     "g": "Usare poche salse semplici per trasformare la stessa base in pasti molto diversi.",
+     "p": [
+      "Il pesto unisce erbe, frutta secca, formaggio e olio per pasta, panini e bowl.",
+      "Salsa allo yogurt con aglio e limone, o salsa di arachidi, danno cremosità e sapore.",
+      "Una salsa fresca di pomodoro, cipolla ed erbe ravviva uova, legumi e riso."
+     ],
+     "q": "Quale salsa ti piacerebbe aggiungere al riso o al pollo della settimana?",
+     "c": "Prepara una salsa nuova e usala per dare due sapori diversi alla stessa base."
+    },
+    "pt": {
+     "t": "Molhos que mudam tudo",
+     "g": "Usar alguns molhos simples para transformar a mesma base em refeições muito diferentes.",
+     "p": [
+      "O pesto junta ervas, frutos secos, queijo e azeite para massa, sandes e taças.",
+      "Molho de iogurte com alho e limão, ou de amendoim, dá cremosidade e sabor.",
+      "Uma salsa fresca de tomate, cebola e ervas anima ovos, feijão e arroz."
+     ],
+     "q": "Que molho gostavas de juntar ao teu arroz ou frango da semana?",
+     "c": "Faz um molho novo e usa-o para dar dois sabores diferentes à mesma base."
+    },
+    "pt_BR": {
+     "t": "Molhos que mudam tudo",
+     "g": "Usar alguns molhos simples para transformar a mesma base em refeições bem diferentes.",
+     "p": [
+      "O pesto junta ervas, castanhas, queijo e azeite para macarrão, sanduíches e bowls.",
+      "Molho de iogurte com alho e limão, ou de amendoim, traz cremosidade e sabor.",
+      "Um vinagrete fresco de tomate, cebola e ervas anima ovos, feijão e arroz."
+     ],
+     "q": "Que molho você adoraria colocar no arroz ou frango da semana?",
+     "c": "Faça um molho novo e use para dar dois sabores diferentes à mesma base."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spice blends for quick flavour",
+     "g": "Mix your own spice blends, like taco seasoning and curry powder, for fast flavour.",
+     "p": [
+      "A taco blend can mix chilli, cumin, paprika, garlic powder, oregano and salt.",
+      "A simple curry-style blend can use turmeric, cumin, coriander, ginger and chilli.",
+      "Store blends in small labelled jars away from heat and light."
+     ],
+     "q": "Which spice do you use the most, and which one sits forgotten?",
+     "c": "Mix one spice blend in a small jar, label it and use it in a meal this week."
+    },
+    "de": {
+     "t": "Gewürzmischungen für schnellen Geschmack",
+     "g": "Misch eigene Gewürzmischungen wie Taco-Würze oder Currypulver für schnellen Geschmack.",
+     "p": [
+      "Taco-Würze kann Chili, Kreuzkümmel, Paprika, Knoblauchpulver, Oregano und Salz enthalten.",
+      "Eine einfache Currymischung kann Kurkuma, Kreuzkümmel, Koriander, Ingwer und Chili enthalten.",
+      "Mischungen in kleinen beschrifteten Gläsern, fern von Hitze und Licht lagern."
+     ],
+     "q": "Welches Gewürz nutzt du am meisten, und welches steht vergessen herum?",
+     "c": "Misch eine Gewürzmischung in einem kleinen Glas, beschrifte es und nutze es diese Woche."
+    },
+    "es": {
+     "t": "Mezclas de especias para dar sabor",
+     "g": "Mezclar tus propias especias, como sazonador para tacos o curry, para dar sabor rápido.",
+     "p": [
+      "Una mezcla para tacos puede llevar chile, comino, pimentón, ajo en polvo, orégano y sal.",
+      "Una mezcla tipo curry sencilla puede usar cúrcuma, comino, cilantro, jengibre y chile.",
+      "Guarda las mezclas en tarritos etiquetados, lejos del calor y la luz."
+     ],
+     "q": "¿Qué especia usas más y cuál tienes olvidada?",
+     "c": "Mezcla una combinación de especias en un tarrito, etiquétalo y úsalo en una comida."
+    },
+    "fr": {
+     "t": "Mélanges d'épices pour du goût vite fait",
+     "g": "Composer tes propres mélanges, comme l'assaisonnement à tacos ou le curry, pour du goût rapide.",
+     "p": [
+      "Un mélange tacos peut associer piment, cumin, paprika, ail en poudre, origan et sel.",
+      "Un mélange façon curry simple peut utiliser curcuma, cumin, coriandre, gingembre et piment.",
+      "Garde les mélanges dans de petits pots étiquetés, à l'abri de la chaleur et de la lumière."
+     ],
+     "q": "Quelle épice utilises-tu le plus, et laquelle dort au fond du placard ?",
+     "c": "Prépare un mélange d'épices dans un petit pot, étiquette-le et utilise-le cette semaine."
+    },
+    "it": {
+     "t": "Mix di spezie per un sapore veloce",
+     "g": "Preparare i tuoi mix di spezie, come quello per tacos o il curry, per dare sapore in fretta.",
+     "p": [
+      "Un mix per tacos può unire peperoncino, cumino, paprika, aglio in polvere, origano e sale.",
+      "Un semplice mix stile curry può usare curcuma, cumino, coriandolo, zenzero e peperoncino.",
+      "Conserva i mix in barattolini etichettati, lontano da calore e luce."
+     ],
+     "q": "Quale spezia usi di più, e quale resta dimenticata?",
+     "c": "Prepara un mix di spezie in un barattolino, etichettalo e usalo in un pasto questa settimana."
+    },
+    "pt": {
+     "t": "Misturas de especiarias",
+     "g": "Fazer as tuas misturas, como tempero para tacos ou caril, para dar sabor depressa.",
+     "p": [
+      "Uma mistura para tacos pode juntar malagueta, cominhos, paprika, alho em pó, orégãos e sal.",
+      "Uma mistura simples tipo caril pode usar curcuma, cominhos, coentros, gengibre e malagueta.",
+      "Guarda as misturas em frasquinhos etiquetados, longe do calor e da luz."
+     ],
+     "q": "Que especiaria usas mais, e qual está esquecida?",
+     "c": "Faz uma mistura de especiarias num frasquinho, etiqueta-o e usa-o numa refeição."
+    },
+    "pt_BR": {
+     "t": "Mix de temperos para dar sabor",
+     "g": "Fazer seus próprios mixes, como tempero para taco ou curry, para dar sabor rápido.",
+     "p": [
+      "Um mix para taco pode juntar pimenta, cominho, páprica, alho em pó, orégano e sal.",
+      "Um mix simples tipo curry pode usar cúrcuma, cominho, coentro em pó, gengibre e pimenta.",
+      "Guarde os mixes em potinhos etiquetados, longe do calor e da luz."
+     ],
+     "q": "Qual tempero você mais usa, e qual fica esquecido?",
+     "c": "Faça um mix de temperos num potinho, etiquete e use numa refeição nesta semana."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salads that last",
+     "g": "Build hearty salads with grains, beans and sturdy vegetables that stay fresh for days.",
+     "p": [
+      "Grains and beans soak up dressing and stay pleasant for several days.",
+      "Sturdy vegetables like cabbage, carrots, peppers and kale hold their crunch.",
+      "Add soft extras like avocado, tomato or fresh herbs just before eating."
+     ],
+     "q": "Which salad have you eaten that still tasted great the next day?",
+     "c": "Make one hearty grain or bean salad and eat it over the next three days."
+    },
+    "de": {
+     "t": "Salate, die halten",
+     "g": "Bau herzhafte Salate mit Getreide, Bohnen und festem Gemüse, die tagelang frisch bleiben.",
+     "p": [
+      "Getreide und Bohnen nehmen Dressing auf und bleiben mehrere Tage angenehm.",
+      "Festes Gemüse wie Kohl, Karotten, Paprika und Grünkohl bleibt knackig.",
+      "Weiches wie Avocado, Tomate oder frische Kräuter erst kurz vor dem Essen zugeben."
+     ],
+     "q": "Welchen Salat hast du gegessen, der am nächsten Tag noch toll schmeckte?",
+     "c": "Mach einen herzhaften Getreide- oder Bohnensalat und iss ihn über die nächsten drei Tage."
+    },
+    "es": {
+     "t": "Ensaladas que aguantan",
+     "g": "Preparar ensaladas contundentes con cereales, legumbres y verduras firmes que duran días.",
+     "p": [
+      "Los cereales y las legumbres absorben el aliño y siguen ricos varios días.",
+      "Verduras firmes como col, zanahoria, pimiento y kale mantienen lo crujiente.",
+      "Añade lo delicado, como aguacate, tomate o hierbas frescas, justo antes de comer."
+     ],
+     "q": "¿Qué ensalada has comido que al día siguiente seguía estando genial?",
+     "c": "Haz una ensalada contundente de cereal o legumbres y cómela en los próximos tres días."
+    },
+    "fr": {
+     "t": "Des salades qui tiennent",
+     "g": "Composer des salades copieuses avec céréales, légumineuses et légumes fermes qui restent fraîches.",
+     "p": [
+      "Céréales et légumineuses absorbent la sauce et restent bonnes plusieurs jours.",
+      "Les légumes fermes comme chou, carottes, poivrons et chou kale gardent leur croquant.",
+      "Ajoute les éléments fragiles, avocat, tomate ou herbes, juste avant de manger."
+     ],
+     "q": "Quelle salade as-tu mangée qui était encore délicieuse le lendemain ?",
+     "c": "Prépare une salade copieuse de céréales ou de légumineuses pour les trois prochains jours."
+    },
+    "it": {
+     "t": "Insalate che durano",
+     "g": "Preparare insalate sostanziose con cereali, legumi e verdure sode che restano fresche per giorni.",
+     "p": [
+      "Cereali e legumi assorbono il condimento e restano buoni per diversi giorni.",
+      "Verdure sode come cavolo, carote, peperoni e cavolo riccio restano croccanti.",
+      "Aggiungi gli ingredienti delicati, come avocado, pomodoro o erbe, poco prima di mangiare."
+     ],
+     "q": "Quale insalata hai mangiato che era ancora ottima il giorno dopo?",
+     "c": "Prepara un'insalata sostanziosa di cereali o legumi e mangiala nei prossimi tre giorni."
+    },
+    "pt": {
+     "t": "Saladas que aguentam",
+     "g": "Fazer saladas reconfortantes com cereais, leguminosas e legumes firmes que duram dias.",
+     "p": [
+      "Cereais e leguminosas absorvem o molho e continuam bons vários dias.",
+      "Legumes firmes como couve, cenoura, pimento e couve kale mantêm a crocância.",
+      "Junta o que é delicado, como abacate, tomate ou ervas frescas, só antes de comer."
+     ],
+     "q": "Que salada já comeste que no dia seguinte ainda estava ótima?",
+     "c": "Faz uma salada de cereais ou leguminosas e come-a nos próximos três dias."
+    },
+    "pt_BR": {
+     "t": "Saladas que duram",
+     "g": "Montar saladas caprichadas com grãos, feijões e legumes firmes que ficam frescas por dias.",
+     "p": [
+      "Grãos e feijões absorvem o molho e continuam gostosos por vários dias.",
+      "Legumes firmes como repolho, cenoura, pimentão e couve mantêm a crocância.",
+      "Coloque o que é delicado, como abacate, tomate ou ervas frescas, só na hora de comer."
+     ],
+     "q": "Que salada você já comeu que no dia seguinte ainda estava ótima?",
+     "c": "Faça uma salada de grãos ou feijão e coma nos próximos três dias."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mason jar salads",
+     "g": "Layer salads in jars so nothing gets soggy before you eat.",
+     "p": [
+      "Put dressing at the very bottom of the jar.",
+      "Next add hard vegetables, beans or grains, then protein.",
+      "Finish with leafy greens on top and shake into a bowl when ready to eat."
+     ],
+     "q": "What would you put in your ideal jar salad?",
+     "c": "Layer two jar salads tonight and see how fresh they look at lunchtime."
+    },
+    "de": {
+     "t": "Salat im Schraubglas",
+     "g": "Schichte Salate in Gläser, damit bis zum Essen nichts matschig wird.",
+     "p": [
+      "Das Dressing kommt ganz nach unten ins Glas.",
+      "Darauf festes Gemüse, Bohnen oder Getreide, dann das Eiweiß.",
+      "Oben Blattsalat, und zum Essen alles in eine Schüssel schütten."
+     ],
+     "q": "Was käme in deinen idealen Salat im Glas?",
+     "c": "Schichte heute Abend zwei Salate ins Glas und schau, wie frisch sie mittags sind."
+    },
+    "es": {
+     "t": "Ensaladas en tarro",
+     "g": "Montar ensaladas por capas en tarros para que nada se ablande antes de comer.",
+     "p": [
+      "Pon el aliño en el fondo del tarro.",
+      "Luego las verduras duras, legumbres o cereales, y después la proteína.",
+      "Termina con las hojas verdes arriba y vuélcalo en un plato al comer."
+     ],
+     "q": "¿Qué pondrías en tu ensalada en tarro ideal?",
+     "c": "Monta dos ensaladas en tarro esta noche y mira lo frescas que están al mediodía."
+    },
+    "fr": {
+     "t": "Salades en bocal",
+     "g": "Superposer les salades en bocal pour que rien ne ramollisse avant le repas.",
+     "p": [
+      "Verse la sauce tout au fond du bocal.",
+      "Ajoute ensuite les légumes durs, légumineuses ou céréales, puis les protéines.",
+      "Termine par les feuilles en haut et renverse dans un bol au moment de manger."
+     ],
+     "q": "Que mettrais-tu dans ta salade en bocal idéale ?",
+     "c": "Prépare deux salades en bocal ce soir et regarde leur fraîcheur au déjeuner."
+    },
+    "it": {
+     "t": "Insalate in barattolo",
+     "g": "Preparare insalate a strati nei barattoli perché nulla si ammolli prima di mangiare.",
+     "p": [
+      "Metti il condimento sul fondo del barattolo.",
+      "Poi le verdure dure, i legumi o i cereali, e dopo le proteine.",
+      "Finisci con le foglie in cima e rovescia in una ciotola quando mangi."
+     ],
+     "q": "Cosa metteresti nella tua insalata in barattolo ideale?",
+     "c": "Prepara due insalate in barattolo stasera e guarda quanto sono fresche a pranzo."
+    },
+    "pt": {
+     "t": "Saladas em frasco",
+     "g": "Montar saladas em camadas em frascos para nada ficar mole antes de comer.",
+     "p": [
+      "Põe o molho mesmo no fundo do frasco.",
+      "A seguir, os legumes rijos, leguminosas ou cereais, e depois a proteína.",
+      "Termina com as folhas no topo e despeja numa taça na hora de comer."
+     ],
+     "q": "O que punhas na tua salada em frasco ideal?",
+     "c": "Monta duas saladas em frasco hoje à noite e vê como estão frescas ao almoço."
+    },
+    "pt_BR": {
+     "t": "Salada no pote",
+     "g": "Montar saladas em camadas em potes de vidro para nada murchar antes de comer.",
+     "p": [
+      "Coloque o molho bem no fundo do pote.",
+      "Depois os legumes firmes, feijões ou grãos, e então a proteína.",
+      "Termine com as folhas por cima e vire num prato na hora de comer."
+     ],
+     "q": "O que você colocaria na sua salada no pote ideal?",
+     "c": "Monte duas saladas no pote hoje à noite e veja como estão frescas no almoço."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grain bowls",
+     "g": "Learn the simple bowl formula to build endless lunches from your prepped parts.",
+     "p": [
+      "Start with a grain, then add a protein and one or two vegetables.",
+      "Finish with a sauce and something crunchy, like seeds, nuts or toasted chickpeas.",
+      "Prep each part separately and mix them differently each day."
+     ],
+     "q": "What would be in your dream grain bowl?",
+     "c": "Build two different bowls from the same prepped grain using the formula."
+    },
+    "de": {
+     "t": "Getreide-Bowls",
+     "g": "Lerne die einfache Bowl-Formel, um aus vorbereiteten Teilen endlos viele Mittagessen zu bauen.",
+     "p": [
+      "Beginne mit Getreide, dann Eiweiß und ein oder zwei Gemüse.",
+      "Zum Schluss eine Soße und etwas Knuspriges wie Samen, Nüsse oder geröstete Kichererbsen.",
+      "Bereite jeden Teil getrennt vor und kombiniere jeden Tag anders."
+     ],
+     "q": "Was wäre in deiner Traum-Bowl?",
+     "c": "Bau mit der Formel zwei verschiedene Bowls aus demselben vorgekochten Getreide."
+    },
+    "es": {
+     "t": "Bowls de cereales",
+     "g": "Aprender la fórmula del bowl para crear almuerzos sin fin con lo que ya tienes preparado.",
+     "p": [
+      "Empieza con un cereal, luego añade una proteína y una o dos verduras.",
+      "Termina con una salsa y algo crujiente, como semillas, frutos secos o garbanzos tostados.",
+      "Prepara cada parte por separado y combínalas distinto cada día."
+     ],
+     "q": "¿Qué llevaría tu bowl de cereales soñado?",
+     "c": "Monta dos bowls distintos con el mismo cereal preparado siguiendo la fórmula."
+    },
+    "fr": {
+     "t": "Les bols de céréales",
+     "g": "Apprendre la formule du bol pour créer des déjeuners à l'infini avec tes préparations.",
+     "p": [
+      "Commence par une céréale, puis ajoute une protéine et un ou deux légumes.",
+      "Termine par une sauce et du croquant : graines, noix ou pois chiches grillés.",
+      "Prépare chaque élément à part et combine-les différemment chaque jour."
+     ],
+     "q": "Que mettrais-tu dans ton bol de rêve ?",
+     "c": "Compose deux bols différents avec la même céréale préparée en suivant la formule."
+    },
+    "it": {
+     "t": "Bowl di cereali",
+     "g": "Imparare la formula della bowl per creare pranzi infiniti con le basi già preparate.",
+     "p": [
+      "Parti da un cereale, poi aggiungi una proteina e una o due verdure.",
+      "Finisci con una salsa e qualcosa di croccante, come semi, frutta secca o ceci tostati.",
+      "Prepara ogni parte a sé e combinale in modo diverso ogni giorno."
+     ],
+     "q": "Cosa ci sarebbe nella tua bowl dei sogni?",
+     "c": "Componi due bowl diverse con lo stesso cereale preparato seguendo la formula."
+    },
+    "pt": {
+     "t": "Taças de cereais",
+     "g": "Aprender a fórmula da taça para criar almoços sem fim com o que já preparaste.",
+     "p": [
+      "Começa com um cereal, depois junta uma proteína e um ou dois legumes.",
+      "Termina com um molho e algo crocante, como sementes, frutos secos ou grão tostado.",
+      "Prepara cada parte em separado e combina-as de forma diferente cada dia."
+     ],
+     "q": "O que levaria a tua taça de sonho?",
+     "c": "Monta duas taças diferentes com o mesmo cereal preparado, seguindo a fórmula."
+    },
+    "pt_BR": {
+     "t": "Bowls de grãos",
+     "g": "Aprender a fórmula do bowl para montar almoços sem fim com o que já está preparado.",
+     "p": [
+      "Comece com um grão, depois junte uma proteína e um ou dois legumes.",
+      "Termine com um molho e algo crocante, como sementes, castanhas ou grão-de-bico assado.",
+      "Prepare cada parte separada e combine de um jeito diferente a cada dia."
+     ],
+     "q": "O que teria no bowl dos seus sonhos?",
+     "c": "Monte dois bowls diferentes com o mesmo grão preparado, seguindo a fórmula."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wraps and sandwiches ahead",
+     "g": "Keep wraps and sandwiches fresh for later with smart layering.",
+     "p": [
+      "Spread a thin layer of butter, hummus or cream cheese to protect the bread from moisture.",
+      "Keep wet fillings like tomato or dressing in the middle, away from the bread.",
+      "Wrap tightly and keep in the fridge; most are best eaten within a day."
+     ],
+     "q": "What is your favourite sandwich or wrap filling?",
+     "c": "Make tomorrow's wrap or sandwich tonight using the layering tips."
+    },
+    "de": {
+     "t": "Wraps und Sandwiches vorbereiten",
+     "g": "Halte Wraps und Sandwiches mit cleverem Schichten bis später frisch.",
+     "p": [
+      "Eine dünne Schicht Butter, Hummus oder Frischkäse schützt das Brot vor Feuchtigkeit.",
+      "Feuchte Zutaten wie Tomate oder Dressing in die Mitte, weg vom Brot.",
+      "Fest einwickeln und kühlen; die meisten schmecken am besten innerhalb eines Tages."
+     ],
+     "q": "Was ist deine liebste Sandwich- oder Wrap-Füllung?",
+     "c": "Mach heute Abend den Wrap oder das Sandwich für morgen mit diesen Schicht-Tipps."
+    },
+    "es": {
+     "t": "Wraps y bocadillos con antelación",
+     "g": "Mantener frescos wraps y bocadillos para más tarde con un buen orden de capas.",
+     "p": [
+      "Unta una capa fina de mantequilla, hummus o queso crema para proteger el pan de la humedad.",
+      "Pon lo húmedo, como tomate o aliño, en el centro, lejos del pan.",
+      "Envuélvelo bien y guárdalo en la nevera; la mayoría es mejor comerlos en un día."
+     ],
+     "q": "¿Cuál es tu relleno favorito de bocadillo o wrap?",
+     "c": "Prepara esta noche el wrap o bocadillo de mañana siguiendo los consejos de capas."
+    },
+    "fr": {
+     "t": "Wraps et sandwichs à l'avance",
+     "g": "Garder wraps et sandwichs frais pour plus tard grâce à un montage malin.",
+     "p": [
+      "Étale une fine couche de beurre, houmous ou fromage frais pour protéger le pain de l'humidité.",
+      "Place les garnitures humides, tomate ou sauce, au centre, loin du pain.",
+      "Emballe bien serré et garde au frigo ; la plupart sont meilleurs dans la journée."
+     ],
+     "q": "Quelle est ta garniture préférée de sandwich ou de wrap ?",
+     "c": "Prépare ce soir le wrap ou le sandwich de demain avec ces astuces de montage."
+    },
+    "it": {
+     "t": "Wrap e panini in anticipo",
+     "g": "Mantenere freschi wrap e panini per dopo grazie a strati ben pensati.",
+     "p": [
+      "Spalma uno strato sottile di burro, hummus o formaggio fresco per proteggere il pane dall'umidità.",
+      "Metti gli ingredienti umidi, come pomodoro o salse, al centro, lontano dal pane.",
+      "Avvolgi bene e tieni in frigo; la maggior parte è meglio mangiarla entro un giorno."
+     ],
+     "q": "Qual è il tuo ripieno preferito per panini o wrap?",
+     "c": "Prepara stasera il wrap o il panino di domani seguendo i consigli sugli strati."
+    },
+    "pt": {
+     "t": "Wraps e sandes com antecedência",
+     "g": "Manter wraps e sandes frescos para mais tarde com camadas bem pensadas.",
+     "p": [
+      "Barra uma camada fina de manteiga, húmus ou queijo creme para proteger o pão da humidade.",
+      "Põe o que é húmido, como tomate ou molho, no meio, longe do pão.",
+      "Embrulha bem e guarda no frigorífico; a maioria é melhor comida no próprio dia."
+     ],
+     "q": "Qual é o teu recheio preferido de sandes ou wrap?",
+     "c": "Prepara hoje à noite o wrap ou a sandes de amanhã com estas dicas de camadas."
+    },
+    "pt_BR": {
+     "t": "Wraps e sanduíches com antecedência",
+     "g": "Manter wraps e sanduíches frescos para mais tarde com camadas bem pensadas.",
+     "p": [
+      "Passe uma camada fina de manteiga, homus ou cream cheese para proteger o pão da umidade.",
+      "Coloque o que é úmido, como tomate ou molho, no meio, longe do pão.",
+      "Embrulhe bem e guarde na geladeira; a maioria é melhor comer em até um dia."
+     ],
+     "q": "Qual seu recheio favorito de sanduíche ou wrap?",
+     "c": "Prepare hoje à noite o wrap ou sanduíche de amanhã com essas dicas de camadas."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Overnight oats",
+     "g": "Mix and match overnight oats for quick breakfasts all week.",
+     "p": [
+      "The base is oats plus roughly the same amount of milk, plant milk or yoghurt.",
+      "Stir in extras like chia, cinnamon, fruit or nut butter, then refrigerate overnight.",
+      "Make several jars at once; they keep a few days in the fridge."
+     ],
+     "q": "Which flavour combination would make you excited for breakfast?",
+     "c": "Prepare three jars of overnight oats with three different toppings."
+    },
+    "de": {
+     "t": "Overnight Oats",
+     "g": "Kombiniere Overnight Oats nach Lust für schnelle Frühstücke die ganze Woche.",
+     "p": [
+      "Die Basis sind Haferflocken mit etwa gleich viel Milch, Pflanzendrink oder Joghurt.",
+      "Extras wie Chia, Zimt, Obst oder Nussmus einrühren, dann über Nacht kühlen.",
+      "Mach mehrere Gläser auf einmal; sie halten ein paar Tage im Kühlschrank."
+     ],
+     "q": "Welche Geschmackskombi würde dich aufs Frühstück freuen lassen?",
+     "c": "Bereite drei Gläser Overnight Oats mit drei verschiedenen Toppings vor."
+    },
+    "es": {
+     "t": "Avena nocturna",
+     "g": "Combinar la avena nocturna a tu gusto para desayunos rápidos toda la semana.",
+     "p": [
+      "La base es avena con más o menos la misma cantidad de leche, bebida vegetal o yogur.",
+      "Añade extras como chía, canela, fruta o crema de frutos secos y déjala en la nevera toda la noche.",
+      "Prepara varios tarros a la vez; aguantan unos días en la nevera."
+     ],
+     "q": "¿Qué combinación de sabores te haría ilusión para desayunar?",
+     "c": "Prepara tres tarros de avena nocturna con tres toppings diferentes."
+    },
+    "fr": {
+     "t": "Overnight oats",
+     "g": "Varier les overnight oats pour des petits-déjeuners rapides toute la semaine.",
+     "p": [
+      "La base : de l'avoine et à peu près autant de lait, de boisson végétale ou de yaourt.",
+      "Ajoute chia, cannelle, fruits ou purée d'oléagineux, puis laisse au frigo toute la nuit.",
+      "Prépare plusieurs bocaux d'un coup ; ils se gardent quelques jours au frigo."
+     ],
+     "q": "Quelle combinaison de saveurs te donnerait envie de te lever ?",
+     "c": "Prépare trois bocaux d'overnight oats avec trois garnitures différentes."
+    },
+    "it": {
+     "t": "Overnight oats",
+     "g": "Combinare gli overnight oats a piacere per colazioni veloci tutta la settimana.",
+     "p": [
+      "La base è avena con circa la stessa quantità di latte, bevanda vegetale o yogurt.",
+      "Aggiungi chia, cannella, frutta o crema di frutta secca e lascia in frigo tutta la notte.",
+      "Preparane diversi barattoli insieme; durano qualche giorno in frigo."
+     ],
+     "q": "Quale combinazione di sapori ti farebbe venire voglia di colazione?",
+     "c": "Prepara tre barattoli di overnight oats con tre guarnizioni diverse."
+    },
+    "pt": {
+     "t": "Aveia de véspera",
+     "g": "Combinar a aveia de véspera a teu gosto para pequenos-almoços rápidos toda a semana.",
+     "p": [
+      "A base é aveia com mais ou menos a mesma quantidade de leite, bebida vegetal ou iogurte.",
+      "Junta extras como chia, canela, fruta ou manteiga de frutos secos e deixa no frigorífico de um dia para o outro.",
+      "Faz vários frascos de uma vez; aguentam alguns dias no frigorífico."
+     ],
+     "q": "Que combinação de sabores te deixava com vontade de tomar o pequeno-almoço?",
+     "c": "Prepara três frascos de aveia de véspera com três coberturas diferentes."
+    },
+    "pt_BR": {
+     "t": "Aveia dormida",
+     "g": "Combinar a aveia dormida do seu jeito para cafés da manhã rápidos a semana toda.",
+     "p": [
+      "A base é aveia com mais ou menos a mesma quantidade de leite, bebida vegetal ou iogurte.",
+      "Junte extras como chia, canela, fruta ou pasta de amendoim e deixe na geladeira durante a noite.",
+      "Faça vários potes de uma vez; eles duram alguns dias na geladeira."
+     ],
+     "q": "Que combinação de sabores deixaria você animado para o café da manhã?",
+     "c": "Prepare três potes de aveia dormida com três coberturas diferentes."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chia puddings",
+     "g": "Make simple chia pudding with milk or plant milk and fruit for easy breakfasts or snacks.",
+     "p": [
+      "Use about 3 tablespoons of chia seeds per cup of milk or plant milk.",
+      "Stir well, wait a few minutes, stir again so no clumps form, then chill.",
+      "After a few hours it sets thick; top it with fruit, nuts or a little honey."
+     ],
+     "q": "Have you tried chia pudding, or does the texture sound new to you?",
+     "c": "Mix two small jars of chia pudding tonight and top them with fruit tomorrow."
+    },
+    "de": {
+     "t": "Chiapudding",
+     "g": "Mach einfachen Chiapudding mit Milch oder Pflanzendrink und Obst für Frühstück oder Snack.",
+     "p": [
+      "Nimm etwa 3 Esslöffel Chiasamen pro Tasse Milch oder Pflanzendrink.",
+      "Gut rühren, ein paar Minuten warten, nochmal rühren gegen Klümpchen, dann kühlen.",
+      "Nach ein paar Stunden wird er dick; mit Obst, Nüssen oder etwas Honig toppen."
+     ],
+     "q": "Hast du schon Chiapudding probiert, oder ist die Konsistenz neu für dich?",
+     "c": "Rühr heute Abend zwei kleine Gläser Chiapudding an und toppe sie morgen mit Obst."
+    },
+    "es": {
+     "t": "Pudin de chía",
+     "g": "Preparar un pudin de chía sencillo con leche o bebida vegetal y fruta para desayunos o meriendas.",
+     "p": [
+      "Usa unas 3 cucharadas de semillas de chía por taza de leche o bebida vegetal.",
+      "Remueve bien, espera unos minutos, vuelve a remover para evitar grumos y enfría.",
+      "En unas horas espesa; corónalo con fruta, frutos secos o un poco de miel."
+     ],
+     "q": "¿Has probado el pudin de chía o su textura te suena nueva?",
+     "c": "Mezcla dos tarritos de pudin de chía esta noche y ponles fruta mañana."
+    },
+    "fr": {
+     "t": "Pudding de chia",
+     "g": "Préparer un pudding de chia simple avec du lait ou une boisson végétale et des fruits.",
+     "p": [
+      "Compte environ 3 cuillères à soupe de graines de chia par tasse de lait ou boisson végétale.",
+      "Mélange bien, attends quelques minutes, remélange pour éviter les grumeaux, puis mets au frais.",
+      "En quelques heures il épaissit ; ajoute fruits, noix ou un peu de miel."
+     ],
+     "q": "As-tu déjà goûté le pudding de chia, ou sa texture est-elle nouvelle pour toi ?",
+     "c": "Prépare deux petits pots de pudding de chia ce soir et ajoute des fruits demain."
+    },
+    "it": {
+     "t": "Budino di chia",
+     "g": "Preparare un semplice budino di chia con latte o bevanda vegetale e frutta per colazione o merenda.",
+     "p": [
+      "Usa circa 3 cucchiai di semi di chia per tazza di latte o bevanda vegetale.",
+      "Mescola bene, aspetta qualche minuto, rimescola per evitare grumi, poi metti in frigo.",
+      "Dopo qualche ora si addensa; completa con frutta, frutta secca o un po' di miele."
+     ],
+     "q": "Hai mai provato il budino di chia, o la consistenza ti è nuova?",
+     "c": "Prepara due barattolini di budino di chia stasera e aggiungi la frutta domani."
+    },
+    "pt": {
+     "t": "Pudim de chia",
+     "g": "Fazer um pudim de chia simples com leite ou bebida vegetal e fruta para pequenos-almoços ou lanches.",
+     "p": [
+      "Usa cerca de 3 colheres de sopa de sementes de chia por chávena de leite ou bebida vegetal.",
+      "Mexe bem, espera uns minutos, volta a mexer para não fazer grumos e põe no frio.",
+      "Em algumas horas fica espesso; cobre com fruta, frutos secos ou um pouco de mel."
+     ],
+     "q": "Já provaste pudim de chia, ou a textura é novidade para ti?",
+     "c": "Mistura dois frasquinhos de pudim de chia hoje à noite e junta fruta amanhã."
+    },
+    "pt_BR": {
+     "t": "Pudim de chia",
+     "g": "Fazer um pudim de chia simples com leite ou bebida vegetal e fruta para café da manhã ou lanche.",
+     "p": [
+      "Use cerca de 3 colheres de sopa de chia por xícara de leite ou bebida vegetal.",
+      "Misture bem, espere alguns minutos, misture de novo para não empelotar e leve à geladeira.",
+      "Em algumas horas fica firme; cubra com fruta, castanhas ou um pouco de mel."
+     ],
+     "q": "Você já provou pudim de chia, ou a textura é novidade?",
+     "c": "Misture dois potinhos de pudim de chia hoje à noite e coloque fruta amanhã."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast burritos for the freezer",
+     "g": "Wrap eggs, beans and vegetables in tortillas to freeze and reheat on busy mornings.",
+     "p": [
+      "Cook scrambled eggs, beans and vegetables, then let the filling cool completely.",
+      "Keep fillings fairly dry so the tortilla does not go soggy.",
+      "Roll tightly, wrap each one, label and freeze; reheat until hot all the way through."
+     ],
+     "q": "What would you put in your perfect breakfast burrito?",
+     "c": "Make four breakfast burritos, wrap and label them, and freeze them for busy mornings."
+    },
+    "de": {
+     "t": "Frühstücks-Burritos für den Gefrierschrank",
+     "g": "Wickle Ei, Bohnen und Gemüse in Tortillas, um sie einzufrieren und an vollen Morgen aufzuwärmen.",
+     "p": [
+      "Rührei, Bohnen und Gemüse garen und die Füllung vollständig abkühlen lassen.",
+      "Die Füllung eher trocken halten, damit die Tortilla nicht matschig wird.",
+      "Fest rollen, einzeln einwickeln, beschriften, einfrieren; durch und durch heiß aufwärmen."
+     ],
+     "q": "Was käme in deinen perfekten Frühstücks-Burrito?",
+     "c": "Mach vier Frühstücks-Burritos, wickle und beschrifte sie und friere sie für volle Morgen ein."
+    },
+    "es": {
+     "t": "Burritos de desayuno para congelar",
+     "g": "Envolver huevo, legumbres y verduras en tortillas para congelar y calentar en mañanas con prisa.",
+     "p": [
+      "Cocina huevos revueltos, alubias y verduras y deja que el relleno se enfríe del todo.",
+      "Mantén el relleno más bien seco para que la tortilla no se ablande.",
+      "Enrolla bien, envuelve cada uno, etiqueta y congela; caliéntalos hasta que estén calientes por dentro."
+     ],
+     "q": "¿Qué pondrías en tu burrito de desayuno perfecto?",
+     "c": "Haz cuatro burritos de desayuno, envuélvelos, etiquétalos y congélalos para mañanas con prisa."
+    },
+    "fr": {
+     "t": "Burritos du matin pour le congélateur",
+     "g": "Rouler œufs, haricots et légumes dans des tortillas à congeler et réchauffer les matins pressés.",
+     "p": [
+      "Cuis des œufs brouillés, des haricots et des légumes, puis laisse la garniture refroidir.",
+      "Garde une garniture plutôt sèche pour que la tortilla ne ramollisse pas.",
+      "Roule serré, emballe chacun, étiquette et congèle ; réchauffe jusqu'à ce que ce soit chaud à cœur."
+     ],
+     "q": "Que mettrais-tu dans ton burrito du matin idéal ?",
+     "c": "Prépare quatre burritos, emballe-les, étiquette-les et congèle-les pour les matins pressés."
+    },
+    "it": {
+     "t": "Burrito da colazione per il freezer",
+     "g": "Avvolgere uova, fagioli e verdure nelle tortillas da congelare e scaldare nelle mattine di corsa.",
+     "p": [
+      "Cuoci uova strapazzate, fagioli e verdure e lascia raffreddare del tutto il ripieno.",
+      "Tieni il ripieno abbastanza asciutto perché la tortilla non si ammolli.",
+      "Arrotola stretto, avvolgi ognuno, etichetta e congela; riscalda finché è caldo anche al centro."
+     ],
+     "q": "Cosa metteresti nel tuo burrito da colazione perfetto?",
+     "c": "Prepara quattro burrito da colazione, avvolgili, etichettali e congelali per le mattine di corsa."
+    },
+    "pt": {
+     "t": "Burritos de pequeno-almoço",
+     "g": "Enrolar ovos, feijão e legumes em tortilhas para congelar e aquecer nas manhãs apressadas.",
+     "p": [
+      "Faz ovos mexidos, feijão e legumes e deixa o recheio arrefecer por completo.",
+      "Mantém o recheio mais seco para a tortilha não ficar mole.",
+      "Enrola bem, embrulha cada um, etiqueta e congela; aquece até estar bem quente por dentro."
+     ],
+     "q": "O que punhas no teu burrito de pequeno-almoço perfeito?",
+     "c": "Faz quatro burritos de pequeno-almoço, embrulha, etiqueta e congela para manhãs apressadas."
+    },
+    "pt_BR": {
+     "t": "Burritos de café da manhã congelados",
+     "g": "Enrolar ovos, feijão e legumes em tortilhas para congelar e esquentar nas manhãs corridas.",
+     "p": [
+      "Faça ovos mexidos, feijão e legumes e deixe o recheio esfriar totalmente.",
+      "Deixe o recheio mais sequinho para a tortilha não ficar mole.",
+      "Enrole bem, embale cada um, etiquete e congele; esquente até ficar bem quente por dentro."
+     ],
+     "q": "O que você colocaria no seu burrito de café da manhã perfeito?",
+     "c": "Faça quatro burritos de café da manhã, embale, etiquete e congele para manhãs corridas."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: proteins, vegetables and bases",
+     "g": "Look back on the recipes you have learned and see how much you can now prep.",
+     "p": [
+      "Eggs, chicken, mince, beans, lentils, tofu and fish give you many protein options.",
+      "Roasted and steamed vegetables, soups, stews and sauces fill your week with flavour.",
+      "Bowls, salads, wraps, oats and freezer burritos turn prepped parts into easy meals."
+     ],
+     "q": "Which recipe from the last month will you keep making?",
+     "c": "Plan next week using one protein, one vegetable method, one sauce and one breakfast you learned."
+    },
+    "de": {
+     "t": "Rückblick: Eiweiß, Gemüse und Basics",
+     "g": "Schau auf die gelernten Rezepte zurück und sieh, wie viel du jetzt vorbereiten kannst.",
+     "p": [
+      "Eier, Hähnchen, Hack, Bohnen, Linsen, Tofu und Fisch bieten dir viele Eiweißquellen.",
+      "Geröstetes und gedämpftes Gemüse, Suppen, Eintöpfe und Soßen bringen Geschmack in die Woche.",
+      "Bowls, Salate, Wraps, Hafer und Gefrier-Burritos machen aus Vorbereitetem leichte Gerichte."
+     ],
+     "q": "Welches Rezept aus dem letzten Monat wirst du weiter kochen?",
+     "c": "Plane nächste Woche mit einem Eiweiß, einer Gemüsemethode, einer Soße und einem Frühstück."
+    },
+    "es": {
+     "t": "Repaso: proteínas, verduras y bases",
+     "g": "Mirar atrás a las recetas aprendidas y ver todo lo que ya sabes preparar.",
+     "p": [
+      "Huevos, pollo, carne picada, legumbres, lentejas, tofu y pescado te dan muchas proteínas.",
+      "Verduras asadas y al vapor, sopas, guisos y salsas llenan tu semana de sabor.",
+      "Bowls, ensaladas, wraps, avena y burritos congelados convierten lo preparado en comidas fáciles."
+     ],
+     "q": "¿Qué receta del último mes vas a seguir haciendo?",
+     "c": "Planifica la próxima semana con una proteína, una técnica de verdura, una salsa y un desayuno."
+    },
+    "fr": {
+     "t": "Bilan : protéines, légumes et bases",
+     "g": "Revenir sur les recettes apprises et voir tout ce que tu sais préparer maintenant.",
+     "p": [
+      "Œufs, poulet, haché, haricots, lentilles, tofu et poisson t'offrent plein de protéines.",
+      "Légumes rôtis et vapeur, soupes, ragoûts et sauces remplissent ta semaine de saveurs.",
+      "Bols, salades, wraps, avoine et burritos congelés transforment tes préparations en repas faciles."
+     ],
+     "q": "Quelle recette du dernier mois vas-tu continuer à faire ?",
+     "c": "Planifie la semaine prochaine avec une protéine, une cuisson de légumes, une sauce et un petit-déjeuner."
+    },
+    "it": {
+     "t": "Ripasso: proteine, verdure e basi",
+     "g": "Guardare indietro alle ricette imparate e vedere quanto sai preparare ora.",
+     "p": [
+      "Uova, pollo, macinato, fagioli, lenticchie, tofu e pesce ti danno tante proteine.",
+      "Verdure arrosto e al vapore, zuppe, stufati e salse riempiono la settimana di sapore.",
+      "Bowl, insalate, wrap, avena e burrito surgelati trasformano le basi in pasti facili."
+     ],
+     "q": "Quale ricetta dell'ultimo mese continuerai a fare?",
+     "c": "Pianifica la prossima settimana con una proteina, una cottura di verdure, una salsa e una colazione."
+    },
+    "pt": {
+     "t": "Revisão: proteínas, legumes e bases",
+     "g": "Olhar para as receitas aprendidas e ver tudo o que já sabes preparar.",
+     "p": [
+      "Ovos, frango, carne picada, feijão, lentilhas, tofu e peixe dão-te muitas proteínas.",
+      "Legumes assados e a vapor, sopas, guisados e molhos enchem a tua semana de sabor.",
+      "Taças, saladas, wraps, aveia e burritos congelados tornam o preparado em refeições fáceis."
+     ],
+     "q": "Que receita do último mês vais continuar a fazer?",
+     "c": "Planeia a próxima semana com uma proteína, um método de legumes, um molho e um pequeno-almoço."
+    },
+    "pt_BR": {
+     "t": "Revisão: proteínas, legumes e bases",
+     "g": "Olhar para as receitas aprendidas e ver tudo o que você já sabe preparar.",
+     "p": [
+      "Ovos, frango, carne moída, feijão, lentilha, tofu e peixe dão muitas opções de proteína.",
+      "Legumes assados e no vapor, sopas, ensopados e molhos enchem sua semana de sabor.",
+      "Bowls, saladas, wraps, aveia e burritos congelados viram refeições fáceis com o que está pronto."
+     ],
+     "q": "Qual receita do último mês você vai continuar fazendo?",
+     "c": "Planeje a próxima semana com uma proteína, um preparo de legumes, um molho e um café da manhã."
+    }
+   }
+  }
+ ]
+}

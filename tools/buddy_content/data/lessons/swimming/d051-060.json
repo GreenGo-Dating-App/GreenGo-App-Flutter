@@ -1,0 +1,835 @@
+{
+ "topic": "swimming",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backstroke kick",
+     "g": "Kick steadily on your back with toes just breaking the surface.",
+     "p": [
+      "Kick from the hips with long legs and soft knees.",
+      "Aim for toes that just break the surface, making a small boil of water.",
+      "Knees should stay under the water, not pop up like bicycling."
+     ],
+     "q": "Do your knees stay under the water when you kick on your back?",
+     "c": "Kick two widths on your back, arms by your sides, watching for a small splash at your toes."
+    },
+    "de": {
+     "t": "Beinschlag beim Rückenschwimmen",
+     "g": "Kicke gleichmäßig auf dem Rücken, die Zehen brechen gerade die Oberfläche.",
+     "p": [
+      "Aus der Hüfte kicken, mit langen Beinen und lockeren Knien.",
+      "Die Zehen durchbrechen knapp die Oberfläche und lassen das Wasser leicht sprudeln.",
+      "Die Knie bleiben unter Wasser und tauchen nicht wie beim Radfahren auf."
+     ],
+     "q": "Bleiben deine Knie beim Rückenbeinschlag unter Wasser?",
+     "c": "Kicke zwei Breiten auf dem Rücken, Arme am Körper, und achte auf leichtes Sprudeln an den Zehen."
+    },
+    "es": {
+     "t": "Patada de espalda",
+     "g": "Patea de forma constante boca arriba, con los dedos rozando la superficie.",
+     "p": [
+      "Patea desde la cadera con las piernas largas y las rodillas blandas.",
+      "Busca que los dedos rompan justo la superficie, levantando un pequeño hervor de agua.",
+      "Las rodillas deben quedarse bajo el agua, sin asomar como al pedalear."
+     ],
+     "q": "¿Tus rodillas se quedan bajo el agua cuando pateas de espaldas?",
+     "c": "Patea dos anchos de espaldas con los brazos pegados, buscando una pequeña espuma en los pies."
+    },
+    "fr": {
+     "t": "Les battements en dos crawlé",
+     "g": "Bats des jambes régulièrement sur le dos, orteils effleurant la surface.",
+     "p": [
+      "Bats depuis les hanches, jambes longues et genoux souples.",
+      "Les orteils cassent à peine la surface en faisant bouillonner un peu l'eau.",
+      "Les genoux restent sous l'eau, sans sortir comme à vélo."
+     ],
+     "q": "Tes genoux restent-ils sous l'eau quand tu bats sur le dos ?",
+     "c": "Fais deux largeurs de battements sur le dos, bras le long du corps, avec un petit bouillon aux orteils."
+    },
+    "it": {
+     "t": "La battuta nel dorso",
+     "g": "Batti le gambe in modo costante sul dorso, con le punte che sfiorano la superficie.",
+     "p": [
+      "Batti dalle anche con gambe lunghe e ginocchia morbide.",
+      "Le punte rompono appena la superficie, facendo ribollire un po' l'acqua.",
+      "Le ginocchia restano sott'acqua, senza spuntare come in bicicletta."
+     ],
+     "q": "Le tue ginocchia restano sott'acqua quando batti le gambe sul dorso?",
+     "c": "Fai due vasche in larghezza di gambe sul dorso, braccia lungo i fianchi, con un piccolo ribollio alle punte."
+    },
+    "pt": {
+     "t": "Pernada de costas",
+     "g": "Bate pernas de forma constante de costas, com os dedos a romper a superfície.",
+     "p": [
+      "Bate pernas a partir da anca, com pernas compridas e joelhos soltos.",
+      "Os dedos dos pés rompem a superfície mesmo à justa, fazendo a água borbulhar.",
+      "Os joelhos ficam debaixo de água, sem aparecer como a pedalar."
+     ],
+     "q": "Os teus joelhos ficam debaixo de água quando bates pernas de costas?",
+     "c": "Faz duas larguras de pernada de costas com os braços junto ao corpo, com borbulhar nos pés."
+    },
+    "pt_BR": {
+     "t": "Pernada do nado costas",
+     "g": "Bata perna de forma constante de costas, com os dedos rompendo a superfície.",
+     "p": [
+      "Bata perna a partir do quadril, com as pernas longas e os joelhos soltos.",
+      "Os dedos dos pés rompem a superfície bem de leve, fazendo a água borbulhar.",
+      "Os joelhos ficam embaixo d'água, sem aparecer como numa pedalada."
+     ],
+     "q": "Seus joelhos ficam embaixo d'água quando você bate perna de costas?",
+     "c": "Faça duas larguras de pernada de costas, braços junto ao corpo, com um borbulhar nos pés."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shoulder roll in backstroke",
+     "g": "Rotate your shoulders to reach further and pull more water.",
+     "p": [
+      "As one arm enters, that shoulder dips while the other lifts out.",
+      "Keep your head still while the shoulders and hips roll together.",
+      "The roll gives the pull more power and makes recovery easier."
+     ],
+     "q": "Does your head stay still while your shoulders roll?",
+     "c": "Swim three widths of backstroke letting one shoulder lift out as each arm recovers."
+    },
+    "de": {
+     "t": "Schulterrollen beim Rückenschwimmen",
+     "g": "Dreh die Schultern, um weiter zu greifen und mehr Wasser zu ziehen.",
+     "p": [
+      "Taucht ein Arm ein, senkt sich diese Schulter, die andere hebt sich heraus.",
+      "Der Kopf bleibt ruhig, während Schultern und Hüfte gemeinsam rollen.",
+      "Das Rollen gibt dem Zug mehr Kraft und erleichtert das Vorholen."
+     ],
+     "q": "Bleibt dein Kopf ruhig, während die Schultern rollen?",
+     "c": "Schwimm drei Breiten Rücken und lass bei jedem Vorholen eine Schulter aus dem Wasser kommen."
+    },
+    "es": {
+     "t": "Rotación de hombros en espalda",
+     "g": "Rota los hombros para llegar más lejos y mover más agua.",
+     "p": [
+      "Al entrar un brazo, ese hombro baja mientras el otro sale del agua.",
+      "Mantén la cabeza quieta mientras hombros y cadera giran juntos.",
+      "La rotación da más fuerza a la tracción y facilita el recobro."
+     ],
+     "q": "¿Tu cabeza se queda quieta mientras giran los hombros?",
+     "c": "Nada tres anchos de espalda dejando que un hombro salga del agua en cada recobro."
+    },
+    "fr": {
+     "t": "Le roulis des épaules en dos",
+     "g": "Fais tourner les épaules pour aller chercher plus loin et tirer plus d'eau.",
+     "p": [
+      "Quand un bras entre, cette épaule s'enfonce et l'autre sort de l'eau.",
+      "Garde la tête immobile pendant que les épaules et les hanches roulent ensemble.",
+      "Le roulis donne plus de force à la traction et facilite le retour."
+     ],
+     "q": "Ta tête reste-t-elle immobile pendant que tes épaules roulent ?",
+     "c": "Nage trois largeurs de dos en laissant une épaule sortir à chaque retour de bras."
+    },
+    "it": {
+     "t": "Rollio delle spalle nel dorso",
+     "g": "Ruota le spalle per arrivare più lontano e tirare più acqua.",
+     "p": [
+      "Quando un braccio entra, quella spalla scende mentre l'altra esce dall'acqua.",
+      "Tieni la testa ferma mentre spalle e fianchi ruotano insieme.",
+      "Il rollio dà più forza alla trazione e rende più facile il recupero."
+     ],
+     "q": "La tua testa resta ferma mentre le spalle ruotano?",
+     "c": "Nuota tre vasche in larghezza a dorso lasciando uscire una spalla a ogni recupero."
+    },
+    "pt": {
+     "t": "Rotação dos ombros em costas",
+     "g": "Roda os ombros para chegares mais longe e puxares mais água.",
+     "p": [
+      "Quando um braço entra, esse ombro desce e o outro sai da água.",
+      "Mantém a cabeça quieta enquanto ombros e anca rodam juntos.",
+      "A rotação dá mais força à puxada e facilita a recuperação."
+     ],
+     "q": "A tua cabeça fica quieta enquanto os ombros rodam?",
+     "c": "Nada três larguras de costas deixando um ombro sair da água em cada recuperação."
+    },
+    "pt_BR": {
+     "t": "Rotação dos ombros no costas",
+     "g": "Gire os ombros para alcançar mais longe e puxar mais água.",
+     "p": [
+      "Quando um braço entra, aquele ombro desce e o outro sai da água.",
+      "Mantenha a cabeça parada enquanto ombros e quadril giram juntos.",
+      "A rotação dá mais força à puxada e facilita a recuperação."
+     ],
+     "q": "Sua cabeça fica parada enquanto os ombros giram?",
+     "c": "Nade três larguras de costas deixando um ombro sair da água a cada recuperação."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backstroke flags",
+     "g": "Use the flags above the pool to know when the wall is near.",
+     "p": [
+      "Flags are strung across the pool a few metres before each wall.",
+      "Count your strokes from the flags to the wall so you know when to slow down.",
+      "Until you know your count, glance back or reach one hand behind you gently."
+     ],
+     "q": "Have you noticed the flags hanging across the end of your pool?",
+     "c": "Swim backstroke to the flags and count the strokes from there to the wall, slowly."
+    },
+    "de": {
+     "t": "Die Rückenschwimm-Fahnen",
+     "g": "Nutze die Fahnen über dem Becken, um zu wissen, wann die Wand nah ist.",
+     "p": [
+      "Die Fahnenleinen hängen einige Meter vor jeder Wand quer über dem Becken.",
+      "Zähl deine Züge von den Fahnen bis zur Wand, dann weißt du, wann du langsamer wirst.",
+      "Solange du deine Zahl nicht kennst, schau kurz zurück oder streck sanft eine Hand nach hinten."
+     ],
+     "q": "Sind dir die Fahnen über dem Beckenende schon aufgefallen?",
+     "c": "Schwimm Rücken bis zu den Fahnen und zähl langsam die Züge bis zur Wand."
+    },
+    "es": {
+     "t": "Las banderas de espalda",
+     "g": "Usa las banderas sobre la piscina para saber cuándo se acerca la pared.",
+     "p": [
+      "Las banderas cruzan la piscina unos metros antes de cada pared.",
+      "Cuenta tus brazadas desde las banderas hasta la pared para saber cuándo frenar.",
+      "Hasta que sepas tu número, mira atrás o estira una mano hacia atrás con suavidad."
+     ],
+     "q": "¿Te has fijado en las banderas que cruzan el final de tu piscina?",
+     "c": "Nada espalda hasta las banderas y cuenta despacio las brazadas que hay hasta la pared."
+    },
+    "fr": {
+     "t": "Les fanions de dos",
+     "g": "Utilise les fanions au-dessus du bassin pour savoir quand le mur approche.",
+     "p": [
+      "Les fanions traversent le bassin quelques mètres avant chaque mur.",
+      "Compte tes mouvements des fanions jusqu'au mur pour savoir quand ralentir.",
+      "Tant que tu ne connais pas ton compte, jette un œil derrière ou tends doucement une main."
+     ],
+     "q": "As-tu remarqué les fanions tendus au bout de ta piscine ?",
+     "c": "Nage en dos jusqu'aux fanions et compte lentement tes mouvements jusqu'au mur."
+    },
+    "it": {
+     "t": "Le bandierine del dorso",
+     "g": "Usa le bandierine sopra la vasca per sapere quando il muro è vicino.",
+     "p": [
+      "Le bandierine attraversano la vasca qualche metro prima di ogni muro.",
+      "Conta le bracciate dalle bandierine al muro così sai quando rallentare.",
+      "Finché non conosci il tuo numero, guarda indietro o allunga piano una mano."
+     ],
+     "q": "Hai notato le bandierine appese in fondo alla tua piscina?",
+     "c": "Nuota a dorso fino alle bandierine e conta piano le bracciate fino al muro."
+    },
+    "pt": {
+     "t": "As bandeiras de costas",
+     "g": "Usa as bandeiras por cima da piscina para saberes quando a parede está perto.",
+     "p": [
+      "As bandeiras atravessam a piscina alguns metros antes de cada parede.",
+      "Conta as braçadas desde as bandeiras até à parede para saberes quando abrandar.",
+      "Enquanto não souberes o teu número, olha para trás ou estica uma mão com cuidado."
+     ],
+     "q": "Já reparaste nas bandeiras penduradas no fim da tua piscina?",
+     "c": "Nada costas até às bandeiras e conta devagar as braçadas até à parede."
+    },
+    "pt_BR": {
+     "t": "As bandeirinhas do costas",
+     "g": "Use as bandeirinhas sobre a piscina para saber quando a parede está perto.",
+     "p": [
+      "As bandeirinhas cruzam a piscina alguns metros antes de cada parede.",
+      "Conte as braçadas das bandeirinhas até a parede para saber quando diminuir.",
+      "Enquanto não souber seu número, olhe para trás ou estique uma mão com cuidado."
+     ],
+     "q": "Você já reparou nas bandeirinhas penduradas no fim da sua piscina?",
+     "c": "Nade costas até as bandeirinhas e conte devagar as braçadas até a parede."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing in backstroke",
+     "g": "Breathe freely but rhythmically: in on one arm, out on the other.",
+     "p": [
+      "Your face is out of the water, so breathing feels easier than freestyle.",
+      "Holding your breath makes you tense, so keep the air moving.",
+      "Try breathing in as one arm recovers and out as the other recovers."
+     ],
+     "q": "Do you catch yourself holding your breath when you swim on your back?",
+     "c": "Swim three widths of backstroke breathing in on the left arm and out on the right."
+    },
+    "de": {
+     "t": "Atmen beim Rückenschwimmen",
+     "g": "Atme frei, aber rhythmisch: ein beim einen Arm, aus beim anderen.",
+     "p": [
+      "Das Gesicht ist über Wasser, das Atmen fällt leichter als beim Kraulen.",
+      "Luft anhalten macht dich steif, also lass die Luft fließen.",
+      "Probier, beim Vorholen des einen Arms ein- und beim anderen auszuatmen."
+     ],
+     "q": "Ertappst du dich dabei, beim Rückenschwimmen die Luft anzuhalten?",
+     "c": "Schwimm drei Breiten Rücken: einatmen beim linken Arm, ausatmen beim rechten."
+    },
+    "es": {
+     "t": "Respirar en espalda",
+     "g": "Respira libremente pero con ritmo: tomas aire con un brazo y lo sueltas con el otro.",
+     "p": [
+      "La cara está fuera del agua, así que respirar resulta más fácil que en crol.",
+      "Aguantar la respiración te pone tenso; mantén el aire en movimiento.",
+      "Prueba a tomar aire en el recobro de un brazo y soltarlo en el del otro."
+     ],
+     "q": "¿Te pillas aguantando la respiración cuando nadas de espaldas?",
+     "c": "Nada tres anchos de espalda tomando aire con el brazo izquierdo y soltándolo con el derecho."
+    },
+    "fr": {
+     "t": "Respirer en dos crawlé",
+     "g": "Respire librement mais en rythme : inspiration sur un bras, expiration sur l'autre.",
+     "p": [
+      "Le visage est hors de l'eau, donc respirer est plus facile qu'en crawl.",
+      "Bloquer sa respiration crée des tensions : laisse l'air circuler.",
+      "Essaie d'inspirer au retour d'un bras et d'expirer au retour de l'autre."
+     ],
+     "q": "Te surprends-tu à bloquer ta respiration quand tu nages sur le dos ?",
+     "c": "Nage trois largeurs de dos en inspirant sur le bras gauche et en expirant sur le droit."
+    },
+    "it": {
+     "t": "Respirare nel dorso",
+     "g": "Respira liberamente ma con ritmo: inspira su un braccio, espira sull'altro.",
+     "p": [
+      "Il viso è fuori dall'acqua, quindi respirare è più facile che a stile libero.",
+      "Trattenere il fiato ti irrigidisce: lascia scorrere l'aria.",
+      "Prova a inspirare al recupero di un braccio ed espirare al recupero dell'altro."
+     ],
+     "q": "Ti capita di trattenere il fiato quando nuoti sul dorso?",
+     "c": "Nuota tre vasche in larghezza a dorso inspirando sul braccio sinistro ed espirando sul destro."
+    },
+    "pt": {
+     "t": "Respirar em costas",
+     "g": "Respira livremente mas com ritmo: inspiras num braço e expiras no outro.",
+     "p": [
+      "A cara está fora de água, por isso respirar é mais fácil do que no crol.",
+      "Suster a respiração deixa-te tenso, por isso mantém o ar a circular.",
+      "Experimenta inspirar na recuperação de um braço e expirar na do outro."
+     ],
+     "q": "Dás por ti a suster a respiração quando nadas de costas?",
+     "c": "Nada três larguras de costas a inspirar no braço esquerdo e a expirar no direito."
+    },
+    "pt_BR": {
+     "t": "Respirando no costas",
+     "g": "Respire livremente mas com ritmo: puxa o ar num braço e solta no outro.",
+     "p": [
+      "O rosto fica fora da água, então respirar é mais fácil do que no crawl.",
+      "Prender a respiração deixa você tenso, então mantenha o ar circulando.",
+      "Tente puxar o ar na recuperação de um braço e soltar na do outro."
+     ],
+     "q": "Você se pega prendendo a respiração quando nada de costas?",
+     "c": "Nade três larguras de costas puxando o ar no braço esquerdo e soltando no direito."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freestyle or backstroke first",
+     "g": "Compare the two strokes and discover which one suits you better right now.",
+     "p": [
+      "Freestyle is usually faster, but the breathing takes more practice.",
+      "Backstroke lets you breathe freely, though swimming straight can be tricky.",
+      "Practising both makes you a balanced swimmer and gives your shoulders variety."
+     ],
+     "q": "Which stroke feels more natural to you at the moment, and why?",
+     "c": "Swim one width of each stroke and give each a score from 1 to 5 for comfort."
+    },
+    "de": {
+     "t": "Kraulen oder Rücken zuerst",
+     "g": "Vergleiche beide Stile und finde heraus, welcher dir gerade besser liegt.",
+     "p": [
+      "Kraulen ist meist schneller, aber die Atmung braucht mehr Übung.",
+      "Beim Rückenschwimmen atmest du frei, nur das Geradeausschwimmen ist knifflig.",
+      "Beide zu üben macht dich vielseitig und bringt Abwechslung für die Schultern."
+     ],
+     "q": "Welcher Stil fühlt sich für dich gerade natürlicher an, und warum?",
+     "c": "Schwimm je eine Breite pro Stil und gib beiden eine Wohlfühlnote von 1 bis 5."
+    },
+    "es": {
+     "t": "Crol o espalda primero",
+     "g": "Compara los dos estilos y descubre cuál te va mejor ahora mismo.",
+     "p": [
+      "El crol suele ser más rápido, pero la respiración requiere más práctica.",
+      "La espalda te deja respirar libremente, aunque ir recto puede costar.",
+      "Practicar ambos te hace un nadador equilibrado y da variedad a tus hombros."
+     ],
+     "q": "¿Qué estilo te resulta más natural ahora mismo y por qué?",
+     "c": "Nada un ancho de cada estilo y ponle a cada uno una nota de comodidad del 1 al 5."
+    },
+    "fr": {
+     "t": "Crawl ou dos d'abord",
+     "g": "Compare les deux nages et découvre celle qui te convient le mieux pour l'instant.",
+     "p": [
+      "Le crawl est souvent plus rapide, mais la respiration demande plus de pratique.",
+      "Le dos permet de respirer librement, même si nager droit peut être délicat.",
+      "Pratiquer les deux fait de toi un nageur équilibré et varie le travail des épaules."
+     ],
+     "q": "Quelle nage te semble la plus naturelle en ce moment, et pourquoi ?",
+     "c": "Nage une largeur de chaque nage et donne à chacune une note de confort de 1 à 5."
+    },
+    "it": {
+     "t": "Prima stile libero o dorso",
+     "g": "Confronta i due stili e scopri quale ti si addice di più ora.",
+     "p": [
+      "Lo stile libero di solito è più veloce, ma la respirazione richiede più pratica.",
+      "Il dorso ti lascia respirare liberamente, anche se andare dritti può essere difficile.",
+      "Allenarli entrambi ti rende un nuotatore completo e varia il lavoro delle spalle."
+     ],
+     "q": "Quale stile ti sembra più naturale in questo momento, e perché?",
+     "c": "Nuota una vasca in larghezza per stile e dai a ciascuno un voto di comodità da 1 a 5."
+    },
+    "pt": {
+     "t": "Crol ou costas primeiro",
+     "g": "Compara os dois estilos e descobre qual te serve melhor neste momento.",
+     "p": [
+      "O crol costuma ser mais rápido, mas a respiração pede mais prática.",
+      "Em costas respiras livremente, embora nadar a direito possa ser complicado.",
+      "Treinar os dois torna-te um nadador equilibrado e dá variedade aos ombros."
+     ],
+     "q": "Que estilo te parece mais natural neste momento, e porquê?",
+     "c": "Nada uma largura de cada estilo e dá a cada um uma nota de conforto de 1 a 5."
+    },
+    "pt_BR": {
+     "t": "Crawl ou costas primeiro",
+     "g": "Compare os dois estilos e descubra qual combina mais com você agora.",
+     "p": [
+      "O crawl costuma ser mais rápido, mas a respiração pede mais prática.",
+      "No costas você respira livremente, embora nadar reto possa ser difícil.",
+      "Treinar os dois deixa você um nadador equilibrado e varia o trabalho dos ombros."
+     ],
+     "q": "Qual estilo parece mais natural para você agora, e por quê?",
+     "c": "Nade uma largura de cada estilo e dê a cada um uma nota de conforto de 1 a 5."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Swimming with a pull buoy",
+     "g": "Use a buoy between your legs to focus on arms and body position.",
+     "p": [
+      "Squeeze the buoy gently between your upper thighs and let your legs rest.",
+      "With legs afloat, you can feel the catch, pull and rotation more clearly.",
+      "Keep your core lightly engaged so your hips do not swing side to side."
+     ],
+     "q": "Have you ever tried a pull buoy? How did it feel?",
+     "c": "Swim four widths of freestyle with a pull buoy, focusing on a long, smooth pull."
+    },
+    "de": {
+     "t": "Schwimmen mit Pullbuoy",
+     "g": "Nutze einen Pullbuoy zwischen den Beinen, um dich auf Arme und Lage zu konzentrieren.",
+     "p": [
+      "Klemm den Pullbuoy sanft zwischen die Oberschenkel und lass die Beine ruhen.",
+      "Mit schwimmenden Beinen spürst du Fassen, Zug und Rotation deutlicher.",
+      "Halte die Körpermitte leicht gespannt, damit die Hüfte nicht seitlich schwingt."
+     ],
+     "q": "Hast du schon mal einen Pullbuoy ausprobiert? Wie war es?",
+     "c": "Schwimm vier Breiten Kraul mit Pullbuoy und achte auf einen langen, ruhigen Zug."
+    },
+    "es": {
+     "t": "Nadar con pull buoy",
+     "g": "Usa un pull buoy entre las piernas para centrarte en los brazos y la posición.",
+     "p": [
+      "Sujeta el pull buoy suavemente entre los muslos y deja descansar las piernas.",
+      "Con las piernas flotando notas mejor el agarre, la tracción y la rotación.",
+      "Mantén el abdomen un poco activo para que la cadera no se balancee."
+     ],
+     "q": "¿Has probado alguna vez un pull buoy? ¿Qué tal?",
+     "c": "Nada cuatro anchos de crol con pull buoy, centrado en una tracción larga y suave."
+    },
+    "fr": {
+     "t": "Nager avec un pull-buoy",
+     "g": "Utilise un pull-buoy entre les jambes pour te concentrer sur les bras et la position.",
+     "p": [
+      "Serre doucement le pull-buoy entre le haut des cuisses et laisse les jambes se reposer.",
+      "Jambes portées, tu sens plus clairement l'appui, la traction et la rotation.",
+      "Gaine légèrement le tronc pour que le bassin ne se balance pas."
+     ],
+     "q": "As-tu déjà essayé un pull-buoy ? Qu'en as-tu pensé ?",
+     "c": "Nage quatre largeurs de crawl avec pull-buoy, en pensant à une traction longue et fluide."
+    },
+    "it": {
+     "t": "Nuotare con il pull buoy",
+     "g": "Usa un pull buoy tra le gambe per concentrarti su braccia e posizione.",
+     "p": [
+      "Stringi dolcemente il pull buoy tra le cosce e lascia riposare le gambe.",
+      "Con le gambe che galleggiano senti meglio presa, trazione e rotazione.",
+      "Tieni il core un po' attivo così il bacino non oscilla di lato."
+     ],
+     "q": "Hai mai provato il pull buoy? Com'è stato?",
+     "c": "Nuota quattro vasche in larghezza a stile libero con pull buoy, pensando a una trazione lunga e fluida."
+    },
+    "pt": {
+     "t": "Nadar com pull buoy",
+     "g": "Usa um pull buoy entre as pernas para te concentrares nos braços e na posição.",
+     "p": [
+      "Aperta suavemente o pull buoy entre as coxas e deixa as pernas descansar.",
+      "Com as pernas a flutuar, sentes melhor a pegada, a puxada e a rotação.",
+      "Mantém o tronco ligeiramente ativo para a anca não balançar."
+     ],
+     "q": "Já experimentaste um pull buoy? Como foi?",
+     "c": "Nada quatro larguras de crol com pull buoy, focado numa puxada longa e suave."
+    },
+    "pt_BR": {
+     "t": "Nadando com pull buoy",
+     "g": "Use um pull buoy entre as pernas para focar nos braços e na posição.",
+     "p": [
+      "Aperte o pull buoy de leve entre as coxas e deixe as pernas descansarem.",
+      "Com as pernas boiando, você sente melhor a pegada, a puxada e a rotação.",
+      "Mantenha o abdômen levemente ativo para o quadril não balançar."
+     ],
+     "q": "Você já experimentou um pull buoy? Como foi?",
+     "c": "Nade quatro larguras de crawl com pull buoy, focando numa puxada longa e suave."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fins for learning",
+     "g": "See how short fins help beginners feel speed and a better body position.",
+     "p": [
+      "Short training fins add gentle propulsion without overloading the legs.",
+      "The extra speed lifts your hips and makes drills easier to feel.",
+      "Use them as a learning tool, not for every length, and check your pool's rules."
+     ],
+     "q": "Would you enjoy the feeling of extra speed with fins?",
+     "c": "If your pool allows fins, try two widths of kick with them and two without, and compare."
+    },
+    "de": {
+     "t": "Flossen zum Lernen",
+     "g": "Erfahre, wie kurze Flossen Anfängern Tempo und eine bessere Lage spüren lassen.",
+     "p": [
+      "Kurze Trainingsflossen geben sanften Vortrieb, ohne die Beine zu überlasten.",
+      "Das zusätzliche Tempo hebt die Hüfte und macht Übungen leichter spürbar.",
+      "Nutze sie als Lernhilfe, nicht für jede Bahn, und beachte die Regeln deines Bades."
+     ],
+     "q": "Würde dir das Gefühl von extra Tempo mit Flossen gefallen?",
+     "c": "Wenn erlaubt, kicke zwei Breiten mit Flossen und zwei ohne und vergleiche."
+    },
+    "es": {
+     "t": "Aletas para aprender",
+     "g": "Descubre cómo las aletas cortas ayudan a sentir velocidad y una mejor posición.",
+     "p": [
+      "Las aletas cortas de entrenamiento dan un empuje suave sin sobrecargar las piernas.",
+      "La velocidad extra eleva la cadera y hace que los ejercicios se sientan mejor.",
+      "Úsalas como herramienta de aprendizaje, no en cada largo, y revisa las normas de tu piscina."
+     ],
+     "q": "¿Te gustaría sentir la velocidad extra que dan las aletas?",
+     "c": "Si tu piscina lo permite, patea dos anchos con aletas y dos sin ellas, y compara."
+    },
+    "fr": {
+     "t": "Des palmes pour apprendre",
+     "g": "Découvre comment des palmes courtes aident à sentir la vitesse et une meilleure position.",
+     "p": [
+      "Les palmes courtes d'entraînement donnent une propulsion douce sans surcharger les jambes.",
+      "La vitesse en plus remonte le bassin et rend les éducatifs plus faciles à sentir.",
+      "Utilise-les comme outil d'apprentissage, pas à chaque longueur, et vérifie le règlement."
+     ],
+     "q": "Aimerais-tu sentir cette vitesse en plus avec des palmes ?",
+     "c": "Si ta piscine l'autorise, fais deux largeurs de battements avec palmes et deux sans, puis compare."
+    },
+    "it": {
+     "t": "Le pinne per imparare",
+     "g": "Scopri come le pinne corte aiutano a sentire velocità e una posizione migliore.",
+     "p": [
+      "Le pinne corte da allenamento danno una spinta dolce senza sovraccaricare le gambe.",
+      "La velocità in più solleva il bacino e rende gli esercizi più facili da sentire.",
+      "Usale come strumento per imparare, non in ogni vasca, e controlla le regole della piscina."
+     ],
+     "q": "Ti piacerebbe la sensazione di velocità in più con le pinne?",
+     "c": "Se la piscina lo consente, fai due vasche in larghezza di gambe con le pinne e due senza, e confronta."
+    },
+    "pt": {
+     "t": "Barbatanas para aprender",
+     "g": "Descobre como barbatanas curtas ajudam a sentir velocidade e uma melhor posição.",
+     "p": [
+      "As barbatanas curtas de treino dão uma propulsão suave sem sobrecarregar as pernas.",
+      "A velocidade extra levanta a anca e torna os exercícios mais fáceis de sentir.",
+      "Usa-as como ferramenta de aprendizagem, não em todas as piscinas, e vê as regras da tua piscina."
+     ],
+     "q": "Gostavas de sentir a velocidade extra das barbatanas?",
+     "c": "Se a piscina deixar, faz duas larguras de pernada com barbatanas e duas sem, e compara."
+    },
+    "pt_BR": {
+     "t": "Nadadeiras para aprender",
+     "g": "Descubra como nadadeiras curtas ajudam a sentir velocidade e uma posição melhor.",
+     "p": [
+      "Nadadeiras curtas de treino dão uma propulsão suave sem sobrecarregar as pernas.",
+      "A velocidade extra levanta o quadril e deixa os educativos mais fáceis de sentir.",
+      "Use como ferramenta de aprendizado, não em toda piscina, e confira as regras do local."
+     ],
+     "q": "Você curtiria a sensação de velocidade extra com nadadeiras?",
+     "c": "Se a piscina permitir, faça duas larguras de pernada com nadadeiras e duas sem, e compare."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pool clock",
+     "g": "Read the big pace clock to time your rests and simple swims.",
+     "p": [
+      "Most pace clocks have one big hand that circles once every 60 seconds.",
+      "Note where the hand is when you start and finish to see your time.",
+      "You can also use it for rests, for example leaving every time it hits the top."
+     ],
+     "q": "Does your pool have a pace clock on the wall?",
+     "c": "Swim one width, check the clock, and rest exactly 30 seconds before the next one."
+    },
+    "de": {
+     "t": "Die Beckenuhr",
+     "g": "Lies die große Taktuhr, um Pausen und einfache Strecken zu timen.",
+     "p": [
+      "Die meisten Taktuhren haben einen großen Zeiger, der alle 60 Sekunden eine Runde dreht.",
+      "Merk dir, wo der Zeiger beim Start und am Ende steht, dann kennst du deine Zeit.",
+      "Auch für Pausen ist sie praktisch, etwa immer losschwimmen, wenn der Zeiger oben steht."
+     ],
+     "q": "Hat dein Bad eine Taktuhr an der Wand?",
+     "c": "Schwimm eine Breite, schau auf die Uhr und ruh dich genau 30 Sekunden aus."
+    },
+    "es": {
+     "t": "El reloj de la piscina",
+     "g": "Lee el gran reloj de ritmo para medir tus descansos y nados sencillos.",
+     "p": [
+      "Casi todos tienen una aguja grande que da una vuelta cada 60 segundos.",
+      "Fíjate dónde está la aguja al salir y al llegar para saber tu tiempo.",
+      "También sirve para los descansos, por ejemplo salir cada vez que llega arriba."
+     ],
+     "q": "¿Tu piscina tiene un reloj de ritmo en la pared?",
+     "c": "Nada un ancho, mira el reloj y descansa exactamente 30 segundos antes del siguiente."
+    },
+    "fr": {
+     "t": "La pendule de la piscine",
+     "g": "Lis la grande pendule pour chronométrer tes pauses et nages simples.",
+     "p": [
+      "La plupart ont une grande aiguille qui fait un tour toutes les 60 secondes.",
+      "Repère la position de l'aiguille au départ et à l'arrivée pour connaître ton temps.",
+      "Elle sert aussi pour les pauses, par exemple repartir à chaque passage en haut."
+     ],
+     "q": "Ta piscine a-t-elle une pendule au mur ?",
+     "c": "Nage une largeur, regarde la pendule et repose-toi exactement 30 secondes avant la suivante."
+    },
+    "it": {
+     "t": "L'orologio della piscina",
+     "g": "Leggi il grande cronometro a parete per regolare pause e nuotate semplici.",
+     "p": [
+      "Quasi tutti hanno una grande lancetta che fa un giro ogni 60 secondi.",
+      "Guarda dove si trova la lancetta alla partenza e all'arrivo per sapere il tuo tempo.",
+      "Serve anche per le pause, per esempio ripartire ogni volta che arriva in alto."
+     ],
+     "q": "La tua piscina ha un orologio a parete?",
+     "c": "Nuota una vasca in larghezza, guarda l'orologio e riposa esattamente 30 secondi."
+    },
+    "pt": {
+     "t": "O relógio da piscina",
+     "g": "Lê o grande relógio de ritmo para controlar as pausas e nados simples.",
+     "p": [
+      "A maioria tem um ponteiro grande que dá uma volta a cada 60 segundos.",
+      "Repara onde está o ponteiro quando sais e quando chegas para saberes o teu tempo.",
+      "Também serve para as pausas, por exemplo sair sempre que o ponteiro chega ao topo."
+     ],
+     "q": "A tua piscina tem um relógio de ritmo na parede?",
+     "c": "Nada uma largura, vê o relógio e descansa exatamente 30 segundos antes da seguinte."
+    },
+    "pt_BR": {
+     "t": "O relógio da piscina",
+     "g": "Leia o grande relógio de ritmo para controlar pausas e nados simples.",
+     "p": [
+      "A maioria tem um ponteiro grande que dá uma volta a cada 60 segundos.",
+      "Veja onde está o ponteiro na saída e na chegada para saber seu tempo.",
+      "Também serve para as pausas, como sair toda vez que o ponteiro chega no topo."
+     ],
+     "q": "Sua piscina tem um relógio de ritmo na parede?",
+     "c": "Nade uma largura, olhe o relógio e descanse exatamente 30 segundos antes da próxima."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first simple workout",
+     "g": "Put warm-up, drills, easy swimming and cool-down together in one session.",
+     "p": [
+      "Warm-up: a few easy widths and some gentle kicking with a board.",
+      "Main part: short drills like catch-up and side kick, then a few easy lengths.",
+      "Cool-down: slow backstroke or easy swimming plus light stretching."
+     ],
+     "q": "Which part of a workout do you think you will enjoy most?",
+     "c": "Write a 30-minute workout on a card, put it in a plastic bag and take it to the pool."
+    },
+    "de": {
+     "t": "Dein erstes einfaches Training",
+     "g": "Füg Aufwärmen, Übungen, lockeres Schwimmen und Abwärmen zu einer Einheit zusammen.",
+     "p": [
+      "Aufwärmen: ein paar lockere Breiten und sanfter Beinschlag mit Brett.",
+      "Hauptteil: kurze Übungen wie Abschlag und Seitlage, dann ein paar lockere Bahnen.",
+      "Abwärmen: langsames Rückenschwimmen oder lockeres Schwimmen und leichtes Dehnen."
+     ],
+     "q": "Welcher Teil eines Trainings wird dir wohl am meisten Spaß machen?",
+     "c": "Schreib ein 30-Minuten-Training auf eine Karte, steck sie in eine Plastikhülle und nimm sie mit."
+    },
+    "es": {
+     "t": "Tu primer entrenamiento sencillo",
+     "g": "Junta calentamiento, ejercicios, nado suave y vuelta a la calma en una sesión.",
+     "p": [
+      "Calentamiento: unos anchos suaves y algo de patada con tabla.",
+      "Parte principal: ejercicios cortos como alcance y patada lateral, y luego unos largos suaves.",
+      "Vuelta a la calma: espalda lenta o nado suave y estiramientos ligeros."
+     ],
+     "q": "¿Qué parte del entrenamiento crees que vas a disfrutar más?",
+     "c": "Escribe un entreno de 30 minutos en una tarjeta, métela en una funda de plástico y llévala a la piscina."
+    },
+    "fr": {
+     "t": "Ta première séance simple",
+     "g": "Réunis échauffement, éducatifs, nage facile et récupération en une séance.",
+     "p": [
+      "Échauffement : quelques largeurs faciles et des battements doux avec planche.",
+      "Corps de séance : éducatifs courts comme le rattrapé et les battements sur le côté, puis quelques longueurs faciles.",
+      "Récupération : dos lent ou nage facile, puis quelques étirements."
+     ],
+     "q": "Quelle partie de la séance penses-tu préférer ?",
+     "c": "Écris une séance de 30 minutes sur une carte, glisse-la dans une pochette plastique et emporte-la."
+    },
+    "it": {
+     "t": "Il tuo primo allenamento semplice",
+     "g": "Metti insieme riscaldamento, esercizi, nuoto facile e defaticamento in una seduta.",
+     "p": [
+      "Riscaldamento: qualche vasca facile e un po' di gambe con la tavoletta.",
+      "Parte centrale: esercizi brevi come braccio teso e gambe sul fianco, poi qualche vasca facile.",
+      "Defaticamento: dorso lento o nuoto facile e un po' di stretching."
+     ],
+     "q": "Quale parte dell'allenamento pensi ti piacerà di più?",
+     "c": "Scrivi un allenamento di 30 minuti su un cartoncino, mettilo in una bustina di plastica e portalo in piscina."
+    },
+    "pt": {
+     "t": "O teu primeiro treino simples",
+     "g": "Junta aquecimento, exercícios, nado fácil e retorno à calma num só treino.",
+     "p": [
+      "Aquecimento: algumas larguras fáceis e um pouco de pernada com prancha.",
+      "Parte principal: exercícios curtos como alcance e pernada lateral e depois algumas piscinas fáceis.",
+      "Retorno à calma: costas lentas ou nado fácil e alongamentos suaves."
+     ],
+     "q": "Que parte do treino achas que vais gostar mais?",
+     "c": "Escreve um treino de 30 minutos num cartão, põe-no numa bolsa de plástico e leva-o para a piscina."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro treino simples",
+     "g": "Junte aquecimento, educativos, nado leve e desaquecimento num só treino.",
+     "p": [
+      "Aquecimento: algumas larguras leves e um pouco de pernada com prancha.",
+      "Parte principal: educativos curtos como alcance e pernada lateral, depois algumas piscinas leves.",
+      "Desaquecimento: costas lento ou nado leve e alongamentos suaves."
+     ],
+     "q": "Qual parte do treino você acha que vai curtir mais?",
+     "c": "Escreva um treino de 30 minutos num cartão, coloque num saquinho plástico e leve para a piscina."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: two months of swimming",
+     "g": "Celebrate your new skills and list the questions you still have.",
+     "p": [
+      "You built freestyle step by step: position, catch, pull, recovery and rotation.",
+      "You met backstroke, the pace clock and helpful tools like buoys and fins.",
+      "You know the safety basics: lifeguards, buddies and listening to your body."
+     ],
+     "q": "What has surprised you most about your swimming in these two months?",
+     "c": "Write down two things you do better now and one question about freestyle or backstroke."
+    },
+    "de": {
+     "t": "Rückblick: zwei Monate Schwimmen",
+     "g": "Feier deine neuen Fähigkeiten und notiere die Fragen, die du noch hast.",
+     "p": [
+      "Du hast das Kraulen Schritt für Schritt aufgebaut: Lage, Fassen, Zug, Vorholen, Rotation.",
+      "Du hast Rückenschwimmen, die Taktuhr und Hilfsmittel wie Pullbuoy und Flossen kennengelernt.",
+      "Du kennst die Sicherheitsbasics: Aufsicht, Begleitung und auf den Körper hören."
+     ],
+     "q": "Was hat dich in diesen zwei Monaten an deinem Schwimmen am meisten überrascht?",
+     "c": "Schreib zwei Dinge auf, die du jetzt besser kannst, und eine Frage zu Kraul oder Rücken."
+    },
+    "es": {
+     "t": "Repaso: dos meses de natación",
+     "g": "Celebra tus nuevas habilidades y apunta las preguntas que aún tienes.",
+     "p": [
+      "Construiste el crol paso a paso: posición, agarre, tracción, recobro y rotación.",
+      "Conociste la espalda, el reloj de ritmo y herramientas como el pull buoy y las aletas.",
+      "Sabes lo básico de seguridad: socorristas, ir acompañado y escuchar a tu cuerpo."
+     ],
+     "q": "¿Qué es lo que más te ha sorprendido de tu natación en estos dos meses?",
+     "c": "Escribe dos cosas que ahora haces mejor y una pregunta sobre crol o espalda."
+    },
+    "fr": {
+     "t": "Bilan : deux mois de natation",
+     "g": "Fête tes nouvelles compétences et note les questions qu'il te reste.",
+     "p": [
+      "Tu as construit ton crawl pas à pas : position, appui, traction, retour et rotation.",
+      "Tu as découvert le dos, la pendule et des outils comme le pull-buoy et les palmes.",
+      "Tu connais les bases de la sécurité : surveillants, nager accompagné et écouter ton corps."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris dans ta natation en deux mois ?",
+     "c": "Note deux choses que tu fais mieux maintenant et une question sur le crawl ou le dos."
+    },
+    "it": {
+     "t": "Ripasso: due mesi di nuoto",
+     "g": "Festeggia le nuove abilità e annota le domande che hai ancora.",
+     "p": [
+      "Hai costruito lo stile libero passo dopo passo: posizione, presa, trazione, recupero e rotazione.",
+      "Hai conosciuto il dorso, l'orologio a parete e attrezzi utili come pull buoy e pinne.",
+      "Conosci le basi della sicurezza: bagnini, nuotare in compagnia e ascoltare il corpo."
+     ],
+     "q": "Cosa ti ha sorpreso di più del tuo nuoto in questi due mesi?",
+     "c": "Scrivi due cose che ora fai meglio e una domanda su stile libero o dorso."
+    },
+    "pt": {
+     "t": "Revisão: dois meses de natação",
+     "g": "Celebra as tuas novas competências e anota as perguntas que ainda tens.",
+     "p": [
+      "Construíste o crol passo a passo: posição, pegada, puxada, recuperação e rotação.",
+      "Conheceste o costas, o relógio de ritmo e ferramentas como o pull buoy e as barbatanas.",
+      "Sabes o essencial da segurança: nadadores-salvadores, nadar acompanhado e ouvir o corpo."
+     ],
+     "q": "O que mais te surpreendeu na tua natação nestes dois meses?",
+     "c": "Escreve duas coisas que agora fazes melhor e uma pergunta sobre crol ou costas."
+    },
+    "pt_BR": {
+     "t": "Revisão: dois meses de natação",
+     "g": "Comemore suas novas habilidades e anote as dúvidas que ainda tem.",
+     "p": [
+      "Você construiu o crawl passo a passo: posição, pegada, puxada, recuperação e rotação.",
+      "Conheceu o costas, o relógio de ritmo e acessórios como pull buoy e nadadeiras.",
+      "Você sabe o básico de segurança: salva-vidas, nadar acompanhado e ouvir o corpo."
+     ],
+     "q": "O que mais surpreendeu você na sua natação nesses dois meses?",
+     "c": "Anote duas coisas que você faz melhor agora e uma dúvida sobre crawl ou costas."
+    }
+   }
+  }
+ ]
+}

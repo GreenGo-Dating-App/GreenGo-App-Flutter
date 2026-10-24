@@ -1,0 +1,835 @@
+{
+ "topic": "hiking",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting a good boot fit",
+     "g": "Learn how to try on hiking shoes so they feel great after many kilometres, not just in the shop.",
+     "p": [
+      "Try shoes in the afternoon, when feet are slightly larger, and wear the socks you will hike in.",
+      "Leave about a thumb's width in front of the toes so they do not hit the front on descents.",
+      "Your heel should stay put when you walk; walk on a slope or stairs in the shop if you can."
+     ],
+     "q": "Have you ever had shoes that felt fine at first but hurt later?",
+     "c": "Measure both feet at home today; many people have one slightly bigger foot."
+    },
+    "de": {
+     "t": "Die richtige Passform finden",
+     "g": "Lerne, Wanderschuhe so anzuprobieren, dass sie auch nach vielen Kilometern passen, nicht nur im Laden.",
+     "p": [
+      "Probier Schuhe am Nachmittag an, wenn die Füße etwas größer sind, und mit deinen Wandersocken.",
+      "Lass vorne etwa eine Daumenbreite Platz, damit die Zehen bergab nicht anstoßen.",
+      "Die Ferse sollte beim Gehen fest sitzen; geh im Laden möglichst über eine Schräge oder Treppe."
+     ],
+     "q": "Hattest du schon Schuhe, die erst bequem waren und später drückten?",
+     "c": "Miss heute beide Füße; viele Menschen haben einen etwas größeren Fuß."
+    },
+    "es": {
+     "t": "Conseguir un buen ajuste",
+     "g": "Aprende a probarte calzado de montaña para que vaya bien tras muchos kilómetros, no solo en la tienda.",
+     "p": [
+      "Pruébatelo por la tarde, cuando los pies están algo más hinchados, y con los calcetines de caminar.",
+      "Deja más o menos un dedo de espacio delante para que los dedos no choquen en las bajadas.",
+      "El talón no debe moverse al andar; si puedes, camina por una rampa o escalera en la tienda."
+     ],
+     "q": "¿Has tenido calzado que parecía cómodo al principio y luego te hacía daño?",
+     "c": "Mide hoy tus dos pies; mucha gente tiene un pie algo más grande."
+    },
+    "fr": {
+     "t": "Bien choisir sa pointure",
+     "g": "Apprends à essayer des chaussures de rando pour qu'elles restent agréables après des kilomètres.",
+     "p": [
+      "Essaie-les l'après-midi, quand les pieds ont un peu gonflé, avec tes chaussettes de randonnée.",
+      "Garde environ un pouce de place devant les orteils pour qu'ils ne butent pas en descente.",
+      "Le talon doit rester en place ; marche sur une pente ou un escalier dans le magasin si possible."
+     ],
+     "q": "As-tu déjà eu des chaussures agréables au début, puis douloureuses plus tard ?",
+     "c": "Mesure tes deux pieds aujourd'hui ; beaucoup de gens ont un pied un peu plus grand."
+    },
+    "it": {
+     "t": "La calzata giusta",
+     "g": "Impara a provare le scarpe da escursionismo perché vadano bene dopo tanti chilometri, non solo in negozio.",
+     "p": [
+      "Provale nel pomeriggio, quando i piedi sono un po' più gonfi, con le calze che userai in cammino.",
+      "Lascia circa un pollice di spazio davanti alle dita, così non sbattono in discesa.",
+      "Il tallone deve restare fermo; se puoi, cammina su una rampa o una scala nel negozio."
+     ],
+     "q": "Hai mai avuto scarpe comode all'inizio che poi facevano male?",
+     "c": "Misura oggi entrambi i piedi; molte persone hanno un piede leggermente più grande."
+    },
+    "pt": {
+     "t": "Acertar no tamanho do calçado",
+     "g": "Aprende a experimentar calçado de caminhada para que seja confortável após muitos quilómetros.",
+     "p": [
+      "Experimenta à tarde, quando os pés estão um pouco maiores, e com as meias que vais usar.",
+      "Deixa cerca de um dedo de espaço à frente para os dedos não baterem nas descidas.",
+      "O calcanhar deve ficar firme; se puderes, anda numa rampa ou escada na loja."
+     ],
+     "q": "Já tiveste calçado que parecia confortável e depois magoava?",
+     "c": "Mede hoje os dois pés; muitas pessoas têm um pé um pouco maior."
+    },
+    "pt_BR": {
+     "t": "Acertando o tamanho da bota",
+     "g": "Aprenda a provar calçados de trilha para que fiquem bons depois de muitos quilômetros, não só na loja.",
+     "p": [
+      "Prove à tarde, quando os pés estão um pouco maiores, e com as meias que você vai usar.",
+      "Deixe cerca de um dedo de espaço na frente para os dedos não baterem nas descidas.",
+      "O calcanhar deve ficar firme; se der, ande numa rampa ou escada dentro da loja."
+     ],
+     "q": "Você já teve um calçado que parecia confortável e depois machucou?",
+     "c": "Meça hoje os dois pés; muita gente tem um pé um pouco maior."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Socks matter more than you think",
+     "g": "Discover why good hiking socks keep your feet happy and why cotton is a poor choice.",
+     "p": [
+      "Wool, especially merino, and synthetic socks move moisture away and stay warmer when damp.",
+      "Cotton soaks up sweat and holds it against the skin, which raises the risk of blisters.",
+      "Choose socks with light cushioning, no thick seams and a snug fit with no wrinkles."
+     ],
+     "q": "What kind of socks do you usually wear for long walks?",
+     "c": "Check your sock drawer and set aside one pair that is not cotton for hiking."
+    },
+    "de": {
+     "t": "Socken sind wichtiger als gedacht",
+     "g": "Entdecke, warum gute Wandersocken deine Füße glücklich machen und Baumwolle eine schlechte Wahl ist.",
+     "p": [
+      "Wolle, vor allem Merino, und Kunstfaser leiten Feuchtigkeit ab und wärmen auch feucht noch.",
+      "Baumwolle saugt Schweiß auf und hält ihn auf der Haut, was Blasen wahrscheinlicher macht.",
+      "Wähle Socken mit leichter Polsterung, flachen Nähten und einem faltenfreien, engen Sitz."
+     ],
+     "q": "Welche Socken trägst du normalerweise für lange Spaziergänge?",
+     "c": "Schau in deine Sockenschublade und leg ein Paar ohne Baumwolle fürs Wandern beiseite."
+    },
+    "es": {
+     "t": "Los calcetines importan mucho",
+     "g": "Descubre por qué unos buenos calcetines de montaña cuidan tus pies y por qué el algodón no conviene.",
+     "p": [
+      "La lana, sobre todo la merino, y los sintéticos alejan la humedad y abrigan aunque estén húmedos.",
+      "El algodón absorbe el sudor y lo mantiene pegado a la piel, lo que favorece las ampollas.",
+      "Elige calcetines con algo de acolchado, sin costuras gruesas y bien ajustados, sin arrugas."
+     ],
+     "q": "¿Qué tipo de calcetines sueles usar para caminatas largas?",
+     "c": "Revisa tu cajón y aparta un par de calcetines que no sean de algodón para caminar."
+    },
+    "fr": {
+     "t": "Les chaussettes comptent beaucoup",
+     "g": "Découvre pourquoi de bonnes chaussettes de rando rendent tes pieds heureux et pourquoi éviter le coton.",
+     "p": [
+      "La laine, surtout le mérinos, et les synthétiques évacuent l'humidité et restent chauds même humides.",
+      "Le coton absorbe la sueur et la garde contre la peau, ce qui favorise les ampoules.",
+      "Choisis des chaussettes légèrement rembourrées, sans grosses coutures, bien ajustées et sans plis."
+     ],
+     "q": "Quel type de chaussettes portes-tu en général pour les longues marches ?",
+     "c": "Fouille ton tiroir et mets de côté une paire sans coton pour la randonnée."
+    },
+    "it": {
+     "t": "Le calze contano più di quanto pensi",
+     "g": "Scopri perché buone calze da escursionismo rendono felici i piedi e perché il cotone non va bene.",
+     "p": [
+      "La lana, soprattutto merino, e le fibre sintetiche allontanano l'umidità e scaldano anche da umide.",
+      "Il cotone assorbe il sudore e lo tiene sulla pelle, aumentando il rischio di vesciche.",
+      "Scegli calze con un'imbottitura leggera, senza cuciture spesse e aderenti, senza pieghe."
+     ],
+     "q": "Che tipo di calze usi di solito per le camminate lunghe?",
+     "c": "Controlla il cassetto e metti da parte un paio di calze non di cotone per camminare."
+    },
+    "pt": {
+     "t": "As meias importam muito",
+     "g": "Descobre porque boas meias de caminhada fazem os pés felizes e porque o algodão não é boa escolha.",
+     "p": [
+      "A lã, sobretudo merino, e as meias sintéticas afastam a humidade e aquecem mesmo húmidas.",
+      "O algodão absorve o suor e mantém-no junto à pele, o que aumenta o risco de bolhas.",
+      "Escolhe meias com algum acolchoado, sem costuras grossas e bem ajustadas, sem rugas."
+     ],
+     "q": "Que tipo de meias costumas usar em caminhadas longas?",
+     "c": "Vê a tua gaveta e separa um par de meias que não seja de algodão para caminhar."
+    },
+    "pt_BR": {
+     "t": "Meias importam mais do que parece",
+     "g": "Descubra por que boas meias de trilha deixam seus pés felizes e por que algodão não é boa escolha.",
+     "p": [
+      "Lã, principalmente merino, e meias sintéticas afastam a umidade e aquecem mesmo úmidas.",
+      "O algodão absorve o suor e o mantém na pele, o que aumenta o risco de bolhas.",
+      "Escolha meias com leve acolchoamento, sem costuras grossas e bem ajustadas, sem dobras."
+     ],
+     "q": "Que tipo de meia você costuma usar em caminhadas longas?",
+     "c": "Olhe sua gaveta e separe um par de meias que não seja de algodão para trilhas."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaking in new footwear",
+     "g": "Learn to get new shoes ready with short walks before a long day on the trail.",
+     "p": [
+      "Wear new shoes around the house first, then on short walks in town or the park.",
+      "Gradually go longer and try a small hill, noticing any spot that rubs or presses.",
+      "Never debut brand-new boots on a long hike; your feet will thank you for the patience."
+     ],
+     "q": "Do you remember a time new shoes surprised you, in a good or bad way?",
+     "c": "Plan three short walks this week to test or break in your hiking shoes."
+    },
+    "de": {
+     "t": "Neue Schuhe einlaufen",
+     "g": "Lerne, neue Schuhe mit kurzen Wegen vorzubereiten, bevor ein langer Wandertag ansteht.",
+     "p": [
+      "Trag neue Schuhe zuerst zu Hause, dann auf kurzen Wegen in der Stadt oder im Park.",
+      "Geh nach und nach länger und probier einen kleinen Hügel, achte auf Stellen, die reiben oder drücken.",
+      "Zieh brandneue Stiefel nie zum ersten Mal auf einer langen Tour an; deine Füße danken dir die Geduld."
+     ],
+     "q": "Erinnerst du dich, wie neue Schuhe dich einmal überrascht haben, positiv oder negativ?",
+     "c": "Plane diese Woche drei kurze Wege, um deine Wanderschuhe zu testen oder einzulaufen."
+    },
+    "es": {
+     "t": "Domar el calzado nuevo",
+     "g": "Aprende a preparar el calzado nuevo con paseos cortos antes de un día largo en el sendero.",
+     "p": [
+      "Úsalo primero por casa y luego en paseos cortos por la ciudad o el parque.",
+      "Alarga poco a poco y prueba alguna cuesta, fijándote en cualquier punto que roce o apriete.",
+      "Nunca estrenes botas en una ruta larga; tus pies agradecerán la paciencia."
+     ],
+     "q": "¿Recuerdas alguna vez en que un calzado nuevo te sorprendió, para bien o para mal?",
+     "c": "Planea tres paseos cortos esta semana para probar o domar tu calzado de montaña."
+    },
+    "fr": {
+     "t": "Faire ses chaussures neuves",
+     "g": "Apprends à préparer des chaussures neuves par de courtes sorties avant une longue journée de rando.",
+     "p": [
+      "Porte-les d'abord à la maison, puis lors de petites marches en ville ou au parc.",
+      "Allonge peu à peu et essaie une petite côte, en notant tout endroit qui frotte ou serre.",
+      "N'étrenne jamais des chaussures neuves sur une longue rando ; tes pieds te remercieront."
+     ],
+     "q": "Te souviens-tu d'une fois où des chaussures neuves t'ont surpris, en bien ou en mal ?",
+     "c": "Prévois trois petites marches cette semaine pour tester ou faire tes chaussures de rando."
+    },
+    "it": {
+     "t": "Rodare le scarpe nuove",
+     "g": "Impara a preparare le scarpe nuove con brevi camminate prima di una lunga giornata sul sentiero.",
+     "p": [
+      "Indossale prima in casa, poi in brevi passeggiate in città o al parco.",
+      "Allunga poco a poco e prova una piccola salita, notando ogni punto che sfrega o stringe.",
+      "Non inaugurare mai scarponi nuovi su un'escursione lunga; i tuoi piedi ringrazieranno."
+     ],
+     "q": "Ricordi una volta in cui scarpe nuove ti hanno sorpreso, in bene o in male?",
+     "c": "Programma tre brevi camminate questa settimana per provare o rodare le tue scarpe."
+    },
+    "pt": {
+     "t": "Amaciar calçado novo",
+     "g": "Aprende a preparar calçado novo com caminhadas curtas antes de um dia longo no trilho.",
+     "p": [
+      "Usa-o primeiro em casa e depois em passeios curtos na cidade ou no parque.",
+      "Aumenta aos poucos a distância e experimenta uma subida, reparando em zonas que roçam ou apertam.",
+      "Nunca estreies botas novas numa caminhada longa; os teus pés agradecem a paciência."
+     ],
+     "q": "Lembras-te de uma vez em que calçado novo te surpreendeu, para o bem ou para o mal?",
+     "c": "Planeia três caminhadas curtas esta semana para testar ou amaciar o teu calçado."
+    },
+    "pt_BR": {
+     "t": "Amaciando calçado novo",
+     "g": "Aprenda a preparar calçado novo com caminhadas curtas antes de um dia longo de trilha.",
+     "p": [
+      "Use primeiro em casa e depois em passeios curtos pela cidade ou pelo parque.",
+      "Aumente aos poucos e teste uma ladeira, prestando atenção em pontos que raspam ou apertam.",
+      "Nunca estreie botas novas numa trilha longa; seus pés vão agradecer a paciência."
+     ],
+     "q": "Você lembra de uma vez em que um calçado novo te surpreendeu, para o bem ou para o mal?",
+     "c": "Planeje três caminhadas curtas nesta semana para testar ou amaciar seu calçado."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dressing in layers",
+     "g": "Learn how a base layer, a warm mid layer and an outer shell work together to keep you comfortable.",
+     "p": [
+      "The base layer sits on your skin and moves sweat away, so you stay dry.",
+      "The mid layer, like fleece or a light insulated jacket, traps warm air.",
+      "The outer shell blocks wind and rain; add or remove layers as you warm up or cool down."
+     ],
+     "q": "Do you usually feel too hot or too cold when you walk outdoors?",
+     "c": "Lay out a base, mid and outer layer from your wardrobe and see what you already have."
+    },
+    "de": {
+     "t": "Das Zwiebelprinzip",
+     "g": "Lerne, wie Basisschicht, warme Mittelschicht und Außenschicht zusammen für Wohlbefinden sorgen.",
+     "p": [
+      "Die Basisschicht liegt auf der Haut und leitet Schweiß ab, damit du trocken bleibst.",
+      "Die Mittelschicht, etwa Fleece oder eine leichte Isolationsjacke, hält warme Luft fest.",
+      "Die Außenschicht hält Wind und Regen ab; zieh Schichten an oder aus, wenn dir warm oder kalt wird."
+     ],
+     "q": "Ist dir draußen beim Gehen meistens zu warm oder zu kalt?",
+     "c": "Leg aus deinem Schrank eine Basis-, Mittel- und Außenschicht bereit und schau, was du schon hast."
+    },
+    "es": {
+     "t": "Vestirse por capas",
+     "g": "Aprende cómo una capa base, una capa intermedia de abrigo y una capa exterior trabajan juntas.",
+     "p": [
+      "La capa base va pegada a la piel y aleja el sudor, para que te mantengas seco.",
+      "La capa intermedia, como un forro polar o una chaqueta ligera de relleno, retiene el aire caliente.",
+      "La capa exterior frena el viento y la lluvia; pon o quita capas según tengas calor o frío."
+     ],
+     "q": "¿Sueles pasar calor o frío cuando caminas al aire libre?",
+     "c": "Saca de tu armario una capa base, una intermedia y una exterior y mira qué tienes ya."
+    },
+    "fr": {
+     "t": "S'habiller en couches",
+     "g": "Apprends comment couche de base, couche chaude intermédiaire et veste extérieure travaillent ensemble.",
+     "p": [
+      "La première couche est contre la peau et évacue la transpiration pour que tu restes au sec.",
+      "La couche intermédiaire, comme une polaire ou une doudoune légère, retient l'air chaud.",
+      "La couche externe arrête le vent et la pluie ; ajoute ou retire des couches selon que tu as chaud ou froid."
+     ],
+     "q": "As-tu plutôt trop chaud ou trop froid quand tu marches dehors ?",
+     "c": "Sors de ton armoire une première couche, une intermédiaire et une externe, et vois ce que tu as déjà."
+    },
+    "it": {
+     "t": "Vestirsi a strati",
+     "g": "Impara come strato base, strato intermedio caldo e guscio esterno lavorano insieme per farti stare bene.",
+     "p": [
+      "Lo strato base sta sulla pelle e allontana il sudore, così resti asciutto.",
+      "Lo strato intermedio, come un pile o un piumino leggero, trattiene l'aria calda.",
+      "Il guscio esterno ferma vento e pioggia; aggiungi o togli strati quando ti scaldi o ti raffreddi."
+     ],
+     "q": "Quando cammini all'aperto di solito hai troppo caldo o troppo freddo?",
+     "c": "Prendi dall'armadio uno strato base, uno intermedio e uno esterno e guarda cosa hai già."
+    },
+    "pt": {
+     "t": "Vestir por camadas",
+     "g": "Aprende como uma camada base, uma camada intermédia quente e uma camada exterior trabalham juntas.",
+     "p": [
+      "A camada base fica junto à pele e afasta o suor, para te manteres seco.",
+      "A camada intermédia, como um polar ou um casaco leve acolchoado, retém o ar quente.",
+      "A camada exterior trava o vento e a chuva; põe ou tira camadas conforme aqueces ou arrefeces."
+     ],
+     "q": "Quando caminhas ao ar livre, costumas ter calor a mais ou frio?",
+     "c": "Tira do armário uma camada base, uma intermédia e uma exterior e vê o que já tens."
+    },
+    "pt_BR": {
+     "t": "Vestindo em camadas",
+     "g": "Aprenda como camada base, camada intermediária quente e camada externa trabalham juntas.",
+     "p": [
+      "A camada base fica na pele e afasta o suor, para você continuar seco.",
+      "A camada intermediária, como um fleece ou uma jaqueta leve de enchimento, segura o ar quente.",
+      "A camada externa barra vento e chuva; coloque ou tire camadas conforme esquenta ou esfria."
+     ],
+     "q": "Quando você caminha ao ar livre, costuma sentir calor demais ou frio?",
+     "c": "Separe do armário uma camada base, uma intermediária e uma externa e veja o que já tem."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why cotton is not your friend",
+     "g": "Understand why wet cotton keeps you cold and which fabrics dry much faster.",
+     "p": [
+      "Cotton holds lots of water and dries slowly, so sweat or rain stays against your body.",
+      "Wet clothing pulls heat away fast, which can leave you chilly when the wind picks up.",
+      "Merino wool, polyester and other synthetics dry quicker and stay warmer when damp."
+     ],
+     "q": "Is there a cotton favourite you always reach for, like jeans or a hoodie?",
+     "c": "Read the labels of the shirts you might hike in and sort them into cotton and not cotton."
+    },
+    "de": {
+     "t": "Warum Baumwolle kein Freund ist",
+     "g": "Verstehe, warum nasse Baumwolle dich auskühlt und welche Stoffe viel schneller trocknen.",
+     "p": [
+      "Baumwolle speichert viel Wasser und trocknet langsam, so bleiben Schweiß oder Regen am Körper.",
+      "Nasse Kleidung entzieht schnell Wärme, sodass dir bei Wind leicht kalt wird.",
+      "Merinowolle, Polyester und andere Kunstfasern trocknen schneller und wärmen feucht besser."
+     ],
+     "q": "Gibt es ein Lieblingsstück aus Baumwolle, zu dem du immer greifst, wie Jeans oder Hoodie?",
+     "c": "Lies die Etiketten deiner Shirts und sortiere sie in Baumwolle und Nicht-Baumwolle."
+    },
+    "es": {
+     "t": "Por qué el algodón no ayuda",
+     "g": "Entiende por qué el algodón mojado te enfría y qué tejidos se secan mucho más rápido.",
+     "p": [
+      "El algodón retiene mucha agua y se seca despacio, así que el sudor o la lluvia se quedan en tu cuerpo.",
+      "La ropa mojada roba calor rápidamente y puedes quedarte helado cuando sopla el viento.",
+      "La lana merino, el poliéster y otros sintéticos se secan antes y abrigan más estando húmedos."
+     ],
+     "q": "¿Tienes alguna prenda de algodón favorita que siempre eliges, como vaqueros o una sudadera?",
+     "c": "Lee las etiquetas de tus camisetas y sepáralas en algodón y no algodón."
+    },
+    "fr": {
+     "t": "Le coton, une fausse bonne idée",
+     "g": "Comprends pourquoi le coton mouillé te refroidit et quelles matières sèchent bien plus vite.",
+     "p": [
+      "Le coton retient beaucoup d'eau et sèche lentement, donc sueur ou pluie restent contre ton corps.",
+      "Un vêtement mouillé fait perdre vite de la chaleur, et tu peux avoir froid quand le vent se lève.",
+      "La laine mérinos, le polyester et d'autres synthétiques sèchent plus vite et restent chauds humides."
+     ],
+     "q": "As-tu un vêtement en coton chouchou, comme un jean ou un sweat à capuche ?",
+     "c": "Lis les étiquettes de tes t-shirts et trie-les entre coton et non coton."
+    },
+    "it": {
+     "t": "Perché il cotone non aiuta",
+     "g": "Capisci perché il cotone bagnato ti raffredda e quali tessuti asciugano molto più in fretta.",
+     "p": [
+      "Il cotone trattiene molta acqua e asciuga lentamente, così sudore o pioggia restano sul corpo.",
+      "I vestiti bagnati sottraggono calore in fretta e con il vento puoi sentire freddo.",
+      "Lana merino, poliestere e altre fibre sintetiche asciugano prima e scaldano di più da umide."
+     ],
+     "q": "Hai un capo di cotone preferito che scegli sempre, come jeans o una felpa?",
+     "c": "Leggi le etichette delle magliette e dividile tra cotone e non cotone."
+    },
+    "pt": {
+     "t": "Porque o algodão não ajuda",
+     "g": "Percebe porque o algodão molhado te arrefece e que tecidos secam muito mais depressa.",
+     "p": [
+      "O algodão retém muita água e seca devagar, por isso o suor ou a chuva ficam junto ao corpo.",
+      "A roupa molhada tira calor depressa e podes ficar gelado quando o vento aumenta.",
+      "A lã merino, o poliéster e outros sintéticos secam mais depressa e aquecem mais quando húmidos."
+     ],
+     "q": "Tens alguma peça de algodão favorita, como calças de ganga ou uma sweatshirt?",
+     "c": "Lê as etiquetas das tuas t-shirts e separa-as em algodão e não algodão."
+    },
+    "pt_BR": {
+     "t": "Por que algodão não ajuda",
+     "g": "Entenda por que o algodão molhado te deixa com frio e quais tecidos secam bem mais rápido.",
+     "p": [
+      "O algodão segura muita água e seca devagar, então suor ou chuva ficam junto ao corpo.",
+      "Roupa molhada rouba calor rápido, e você pode passar frio quando o vento aumenta.",
+      "Lã merino, poliéster e outros sintéticos secam mais rápido e aquecem mais mesmo úmidos."
+     ],
+     "q": "Você tem alguma peça de algodão favorita, como calça jeans ou moletom?",
+     "c": "Leia as etiquetas das suas camisetas e separe em algodão e não algodão."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The waterproof jacket",
+     "g": "Learn the difference between waterproof and water-resistant, and why a good hood matters.",
+     "p": [
+      "Water-resistant fabric handles light showers; waterproof fabric keeps out steady rain.",
+      "Breathable shells let some sweat vapour escape, and vents help you avoid getting damp inside.",
+      "A hood that adjusts and moves with your head keeps rain off your face and neck."
+     ],
+     "q": "Do you already own a jacket you trust in the rain?",
+     "c": "Check your rain jacket: does the hood fit well and do the zips still work smoothly?"
+    },
+    "de": {
+     "t": "Die Regenjacke",
+     "g": "Lerne den Unterschied zwischen wasserdicht und wasserabweisend und warum eine gute Kapuze zählt.",
+     "p": [
+      "Wasserabweisender Stoff hält leichte Schauer ab; wasserdichter Stoff hält auch Dauerregen draußen.",
+      "Atmungsaktive Jacken lassen Schweißdampf entweichen, und Belüftungen verhindern Nässe von innen.",
+      "Eine einstellbare Kapuze, die mit dem Kopf mitgeht, hält Regen von Gesicht und Nacken fern."
+     ],
+     "q": "Hast du schon eine Jacke, der du im Regen vertraust?",
+     "c": "Prüf deine Regenjacke: Sitzt die Kapuze gut, und laufen die Reißverschlüsse noch leicht?"
+    },
+    "es": {
+     "t": "La chaqueta impermeable",
+     "g": "Aprende la diferencia entre impermeable y repelente al agua, y por qué importa una buena capucha.",
+     "p": [
+      "Un tejido repelente aguanta chubascos ligeros; uno impermeable resiste lluvia constante.",
+      "Las chaquetas transpirables dejan salir parte del vapor del sudor, y las ventilaciones evitan mojarte por dentro.",
+      "Una capucha ajustable que gira con la cabeza protege la cara y el cuello de la lluvia."
+     ],
+     "q": "¿Ya tienes una chaqueta en la que confías cuando llueve?",
+     "c": "Revisa tu chaqueta de lluvia: ¿la capucha ajusta bien y las cremalleras van suaves?"
+    },
+    "fr": {
+     "t": "La veste imperméable",
+     "g": "Apprends la différence entre imperméable et déperlant, et pourquoi une bonne capuche compte.",
+     "p": [
+      "Un tissu déperlant résiste aux petites averses ; un tissu imperméable arrête une pluie continue.",
+      "Les vestes respirantes laissent sortir une partie de la vapeur, et les aérations évitent d'être mouillé dedans.",
+      "Une capuche réglable qui suit les mouvements de la tête protège le visage et la nuque."
+     ],
+     "q": "As-tu déjà une veste en laquelle tu as confiance sous la pluie ?",
+     "c": "Vérifie ta veste de pluie : la capuche est-elle bien ajustée et les fermetures glissent-elles bien ?"
+    },
+    "it": {
+     "t": "La giacca impermeabile",
+     "g": "Impara la differenza tra impermeabile e idrorepellente e perché un buon cappuccio è importante.",
+     "p": [
+      "Un tessuto idrorepellente regge piovaschi leggeri; uno impermeabile tiene fuori la pioggia continua.",
+      "I gusci traspiranti lasciano uscire parte del vapore del sudore, e le aperture evitano di bagnarti dentro.",
+      "Un cappuccio regolabile che segue la testa tiene la pioggia lontana da viso e collo."
+     ],
+     "q": "Hai già una giacca di cui ti fidi sotto la pioggia?",
+     "c": "Controlla la tua giacca: il cappuccio calza bene e le zip scorrono ancora?"
+    },
+    "pt": {
+     "t": "O casaco impermeável",
+     "g": "Aprende a diferença entre impermeável e repelente à água, e porque um bom capuz importa.",
+     "p": [
+      "Um tecido repelente aguenta aguaceiros leves; um impermeável trava chuva contínua.",
+      "Os casacos respiráveis deixam sair parte do vapor do suor, e as aberturas evitam que te molhes por dentro.",
+      "Um capuz ajustável que acompanha a cabeça protege a cara e o pescoço da chuva."
+     ],
+     "q": "Já tens um casaco em que confias quando chove?",
+     "c": "Verifica o teu casaco: o capuz ajusta bem e os fechos ainda correm bem?"
+    },
+    "pt_BR": {
+     "t": "A jaqueta impermeável",
+     "g": "Aprenda a diferença entre impermeável e repelente à água, e por que um bom capuz importa.",
+     "p": [
+      "Tecido repelente aguenta garoas leves; tecido impermeável segura chuva contínua.",
+      "Jaquetas respiráveis deixam sair parte do vapor do suor, e as aberturas evitam que você se molhe por dentro.",
+      "Um capuz ajustável que acompanha a cabeça protege rosto e pescoço da chuva."
+     ],
+     "q": "Você já tem uma jaqueta em que confia na chuva?",
+     "c": "Confira sua jaqueta: o capuz ajusta bem e os zíperes ainda correm direitinho?"
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hats, gloves and buffs",
+     "g": "See how small items protect you from sun, wind and cold and make a big difference.",
+     "p": [
+      "A sun hat shades your face and neck; a warm hat keeps heat in when it gets chilly.",
+      "Light gloves protect your hands from cold wind and rough rock, and they weigh almost nothing.",
+      "A buff or neck tube works as a scarf, headband, sun shield or dust mask."
+     ],
+     "q": "Which small item would make your walks more comfortable right away?",
+     "c": "Put a hat and a light pair of gloves in the bag you use for walks."
+    },
+    "de": {
+     "t": "Mützen, Handschuhe und Schlauchtücher",
+     "g": "Sieh, wie kleine Dinge vor Sonne, Wind und Kälte schützen und viel bewirken.",
+     "p": [
+      "Ein Sonnenhut schützt Gesicht und Nacken; eine warme Mütze hält Wärme, wenn es kühl wird.",
+      "Leichte Handschuhe schützen vor kaltem Wind und rauem Fels und wiegen fast nichts.",
+      "Ein Schlauchtuch dient als Schal, Stirnband, Sonnenschutz oder Staubschutz."
+     ],
+     "q": "Welches kleine Teil würde deine Touren sofort angenehmer machen?",
+     "c": "Pack eine Mütze und leichte Handschuhe in die Tasche, die du für Spaziergänge nutzt."
+    },
+    "es": {
+     "t": "Gorros, guantes y bragas de cuello",
+     "g": "Descubre cómo pequeños accesorios te protegen del sol, el viento y el frío y marcan la diferencia.",
+     "p": [
+      "Una gorra o sombrero da sombra a cara y cuello; un gorro de abrigo retiene el calor cuando refresca.",
+      "Unos guantes finos protegen las manos del viento frío y la roca áspera, y casi no pesan.",
+      "Una braga de cuello sirve de bufanda, cinta para el pelo, protector solar o mascarilla contra el polvo."
+     ],
+     "q": "¿Qué pequeño accesorio haría tus caminatas más cómodas desde ya?",
+     "c": "Mete un gorro y unos guantes finos en la mochila que usas para caminar."
+    },
+    "fr": {
+     "t": "Bonnets, gants et tours de cou",
+     "g": "Vois comment de petits accessoires te protègent du soleil, du vent et du froid.",
+     "p": [
+      "Un chapeau protège le visage et la nuque du soleil ; un bonnet garde la chaleur quand il fait frais.",
+      "Des gants légers protègent les mains du vent froid et de la roche rugueuse, pour presque aucun poids.",
+      "Un tour de cou sert d'écharpe, de bandeau, de protection solaire ou de masque contre la poussière."
+     ],
+     "q": "Quel petit accessoire rendrait tes balades plus agréables tout de suite ?",
+     "c": "Glisse un bonnet et une paire de gants légers dans le sac que tu prends pour marcher."
+    },
+    "it": {
+     "t": "Cappelli, guanti e scaldacollo",
+     "g": "Scopri come piccoli accessori proteggono da sole, vento e freddo e fanno una grande differenza.",
+     "p": [
+      "Un cappello da sole ripara viso e collo; un berretto caldo trattiene il calore quando fa fresco.",
+      "Guanti leggeri proteggono le mani dal vento freddo e dalla roccia ruvida, e non pesano quasi nulla.",
+      "Uno scaldacollo tubolare fa da sciarpa, fascia, protezione dal sole o maschera antipolvere."
+     ],
+     "q": "Quale piccolo accessorio renderebbe subito più comode le tue camminate?",
+     "c": "Metti un berretto e un paio di guanti leggeri nello zaino che usi per camminare."
+    },
+    "pt": {
+     "t": "Chapéus, luvas e golas",
+     "g": "Vê como pequenos acessórios te protegem do sol, do vento e do frio e fazem muita diferença.",
+     "p": [
+      "Um chapéu de sol protege a cara e o pescoço; um gorro quente guarda o calor quando arrefece.",
+      "Luvas leves protegem as mãos do vento frio e da rocha áspera, e quase não pesam.",
+      "Uma gola tubular serve de cachecol, fita, proteção solar ou máscara contra o pó."
+     ],
+     "q": "Que pequeno acessório tornaria as tuas caminhadas mais confortáveis já?",
+     "c": "Põe um gorro e umas luvas leves na mochila que usas para caminhar."
+    },
+    "pt_BR": {
+     "t": "Bonés, luvas e bandanas tubulares",
+     "g": "Veja como pequenos acessórios protegem do sol, do vento e do frio e fazem grande diferença.",
+     "p": [
+      "Um chapéu ou boné protege rosto e pescoço do sol; uma touca segura o calor quando esfria.",
+      "Luvas leves protegem as mãos do vento frio e da rocha áspera, e quase não pesam.",
+      "Uma bandana tubular vira cachecol, faixa de cabelo, proteção solar ou máscara contra poeira."
+     ],
+     "q": "Qual pequeno acessório deixaria suas caminhadas mais confortáveis agora?",
+     "c": "Coloque um boné ou touca e luvas leves na mochila que você usa para caminhar."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a daypack",
+     "g": "Learn what makes a good daypack: the right size, a hip belt, comfy straps and handy pockets.",
+     "p": [
+      "For most day hikes, a pack of about 15 to 30 litres holds layers, food, water and essentials.",
+      "A hip belt moves weight onto your hips, and padded straps should not dig into your shoulders.",
+      "Side pockets for bottles and a small top pocket keep snacks and a map easy to reach."
+     ],
+     "q": "What bag do you carry on walks now, and how does it feel after an hour?",
+     "c": "Pack your current bag with a jacket, water and snack and walk around to test the fit."
+    },
+    "de": {
+     "t": "Einen Tagesrucksack wählen",
+     "g": "Lerne, was einen guten Tagesrucksack ausmacht: richtige Größe, Hüftgurt, bequeme Träger, gute Fächer.",
+     "p": [
+      "Für die meisten Tagestouren reichen etwa 15 bis 30 Liter für Kleidung, Essen, Wasser und das Nötigste.",
+      "Ein Hüftgurt verlagert Gewicht auf die Hüfte, und gepolsterte Träger sollten nicht einschneiden.",
+      "Seitentaschen für Flaschen und ein kleines Deckelfach halten Snacks und Karte griffbereit."
+     ],
+     "q": "Welche Tasche trägst du jetzt beim Gehen, und wie fühlt sie sich nach einer Stunde an?",
+     "c": "Pack deine Tasche mit Jacke, Wasser und Snack und lauf herum, um den Sitz zu testen."
+    },
+    "es": {
+     "t": "Elegir una mochila de día",
+     "g": "Aprende qué hace buena una mochila de día: tamaño adecuado, cinturón, tirantes cómodos y bolsillos útiles.",
+     "p": [
+      "Para la mayoría de excursiones de un día bastan unos 15 a 30 litros para ropa, comida, agua y lo esencial.",
+      "El cinturón lleva el peso a las caderas, y los tirantes acolchados no deben clavarse en los hombros.",
+      "Los bolsillos laterales para botellas y uno pequeño arriba dejan a mano snacks y mapa."
+     ],
+     "q": "¿Qué bolsa llevas ahora al caminar y cómo se siente después de una hora?",
+     "c": "Llena tu mochila con chaqueta, agua y un snack y camina un rato para probar el ajuste."
+    },
+    "fr": {
+     "t": "Choisir un sac de journée",
+     "g": "Apprends ce qui fait un bon sac de journée : bon volume, ceinture, bretelles confortables et poches pratiques.",
+     "p": [
+      "Pour la plupart des randos d'un jour, 15 à 30 litres suffisent pour vêtements, repas, eau et essentiels.",
+      "La ceinture reporte le poids sur les hanches, et les bretelles rembourrées ne doivent pas cisailler.",
+      "Des poches latérales pour les gourdes et une petite poche haute gardent en-cas et carte à portée."
+     ],
+     "q": "Quel sac portes-tu en balade aujourd'hui, et comment le sens-tu après une heure ?",
+     "c": "Remplis ton sac avec une veste, de l'eau et un en-cas et marche un peu pour tester."
+    },
+    "it": {
+     "t": "Scegliere uno zaino da giornata",
+     "g": "Scopri cosa rende buono uno zaino da giornata: capienza giusta, cintura, spallacci comodi e tasche utili.",
+     "p": [
+      "Per la maggior parte delle escursioni giornaliere bastano circa 15-30 litri per strati, cibo, acqua ed essenziali.",
+      "La cintura sposta il peso sui fianchi, e gli spallacci imbottiti non devono segare le spalle.",
+      "Le tasche laterali per le borracce e una piccola tasca in alto tengono snack e mappa a portata."
+     ],
+     "q": "Che borsa usi ora per camminare e come la senti dopo un'ora?",
+     "c": "Riempi lo zaino con giacca, acqua e uno snack e cammina un po' per provare come calza."
+    },
+    "pt": {
+     "t": "Escolher uma mochila de dia",
+     "g": "Aprende o que faz uma boa mochila de dia: tamanho certo, cinto, alças confortáveis e bolsos práticos.",
+     "p": [
+      "Para a maioria das caminhadas de um dia chegam uns 15 a 30 litros para roupa, comida, água e o essencial.",
+      "O cinto leva o peso para as ancas, e as alças acolchoadas não devem enterrar-se nos ombros.",
+      "Bolsos laterais para garrafas e um pequeno bolso em cima deixam snacks e mapa à mão."
+     ],
+     "q": "Que mochila usas agora para caminhar e como a sentes ao fim de uma hora?",
+     "c": "Enche a tua mochila com casaco, água e um snack e anda um pouco para testar."
+    },
+    "pt_BR": {
+     "t": "Escolhendo uma mochila de ataque",
+     "g": "Aprenda o que faz uma boa mochila de dia: tamanho certo, barrigueira, alças confortáveis e bolsos práticos.",
+     "p": [
+      "Para a maioria das trilhas de um dia, uns 15 a 30 litros bastam para roupa, comida, água e o essencial.",
+      "A barrigueira leva o peso para o quadril, e alças acolchoadas não devem machucar os ombros.",
+      "Bolsos laterais para garrafas e um bolsinho em cima deixam lanche e mapa à mão."
+     ],
+     "q": "Que mochila você usa hoje para caminhar e como ela fica depois de uma hora?",
+     "c": "Encha sua mochila com jaqueta, água e lanche e ande um pouco para testar o ajuste."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing a daypack well",
+     "g": "Learn to pack so the bag sits comfortably and the things you need come out fast.",
+     "p": [
+      "Put heavier items like water and food close to your back and in the middle of the pack.",
+      "Keep a jacket, snacks, sun cream and map near the top or in outer pockets for quick access.",
+      "Pull the straps snug so nothing swings, and carry only what you will really use."
+     ],
+     "q": "Do you tend to overpack or forget things when you head out?",
+     "c": "Pack your daypack using today's tips and notice how it feels on your back."
+    },
+    "de": {
+     "t": "Den Tagesrucksack gut packen",
+     "g": "Lerne so zu packen, dass der Rucksack bequem sitzt und du Benötigtes schnell findest.",
+     "p": [
+      "Schweres wie Wasser und Essen gehört nah an den Rücken und in die Mitte des Rucksacks.",
+      "Jacke, Snacks, Sonnencreme und Karte kommen nach oben oder in Außentaschen, damit sie schnell greifbar sind.",
+      "Zieh die Riemen fest, damit nichts schaukelt, und nimm nur mit, was du wirklich brauchst."
+     ],
+     "q": "Packst du eher zu viel ein oder vergisst du Dinge?",
+     "c": "Pack deinen Rucksack nach den heutigen Tipps und achte darauf, wie er sich anfühlt."
+    },
+    "es": {
+     "t": "Llenar bien la mochila",
+     "g": "Aprende a llenar la mochila para que vaya cómoda y saques rápido lo que necesitas.",
+     "p": [
+      "Coloca lo más pesado, como agua y comida, pegado a la espalda y en el centro de la mochila.",
+      "Deja chaqueta, snacks, crema solar y mapa arriba o en bolsillos exteriores para tenerlos a mano.",
+      "Ajusta las correas para que nada se balancee, y lleva solo lo que de verdad vas a usar."
+     ],
+     "q": "¿Sueles llevar de más o te olvidas cosas al salir?",
+     "c": "Prepara tu mochila con los consejos de hoy y nota cómo se siente en la espalda."
+    },
+    "fr": {
+     "t": "Bien remplir son sac",
+     "g": "Apprends à remplir ton sac pour qu'il soit confortable et que tu trouves vite ce dont tu as besoin.",
+     "p": [
+      "Place les objets lourds, comme l'eau et le repas, contre le dos et au milieu du sac.",
+      "Garde veste, en-cas, crème solaire et carte en haut ou dans les poches extérieures, pour les attraper vite.",
+      "Serre les sangles pour que rien ne ballotte, et n'emporte que ce que tu utiliseras vraiment."
+     ],
+     "q": "As-tu tendance à trop charger ton sac ou à oublier des choses ?",
+     "c": "Prépare ton sac avec les conseils du jour et sens comment il se porte."
+    },
+    "it": {
+     "t": "Preparare bene lo zaino",
+     "g": "Impara a riempire lo zaino perché stia comodo e tu trovi subito ciò che ti serve.",
+     "p": [
+      "Metti le cose più pesanti, come acqua e cibo, vicino alla schiena e al centro dello zaino.",
+      "Tieni giacca, snack, crema solare e mappa in alto o nelle tasche esterne, così li prendi subito.",
+      "Stringi le cinghie perché niente oscilli, e porta solo ciò che userai davvero."
+     ],
+     "q": "Tendi a portare troppo o a dimenticare qualcosa quando esci?",
+     "c": "Prepara lo zaino con i consigli di oggi e senti come sta sulla schiena."
+    },
+    "pt": {
+     "t": "Arrumar bem a mochila",
+     "g": "Aprende a arrumar a mochila para que fique confortável e tires depressa o que precisas.",
+     "p": [
+      "Põe o mais pesado, como água e comida, junto às costas e no meio da mochila.",
+      "Deixa casaco, snacks, protetor solar e mapa em cima ou nos bolsos exteriores para os teres à mão.",
+      "Aperta as correias para nada balançar e leva só o que vais mesmo usar."
+     ],
+     "q": "Costumas levar coisas a mais ou esqueces-te de algo quando sais?",
+     "c": "Arruma a tua mochila com as dicas de hoje e repara como a sentes nas costas."
+    },
+    "pt_BR": {
+     "t": "Arrumando bem a mochila",
+     "g": "Aprenda a arrumar a mochila para ela ficar confortável e você pegar rápido o que precisa.",
+     "p": [
+      "Coloque o mais pesado, como água e comida, perto das costas e no meio da mochila.",
+      "Deixe jaqueta, lanches, protetor solar e mapa em cima ou nos bolsos externos para pegar fácil.",
+      "Aperte as fitas para nada balançar, e leve só o que você realmente vai usar."
+     ],
+     "q": "Você costuma levar coisa demais ou esquecer algo quando sai?",
+     "c": "Arrume sua mochila com as dicas de hoje e repare como ela fica nas costas."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ten essentials idea",
+     "g": "Get to know a classic checklist that helps you be ready for small surprises on any hike.",
+     "p": [
+      "Navigation, a headlamp, sun protection and a small first aid kit are the start of the list.",
+      "A knife or repair kit, a way to make fire and an emergency shelter like a foil blanket follow.",
+      "Extra food, extra water and extra clothes complete it; adapt the kit to each trip."
+     ],
+     "q": "Which of these ten items do you think people forget most often?",
+     "c": "Write your own ten essentials list and tick what you already own."
+    },
+    "de": {
+     "t": "Die Idee der zehn Essentials",
+     "g": "Lerne eine klassische Checkliste kennen, mit der du auf jeder Tour für kleine Überraschungen bereit bist.",
+     "p": [
+      "Navigation, Stirnlampe, Sonnenschutz und ein kleines Erste-Hilfe-Set stehen am Anfang der Liste.",
+      "Messer oder Reparaturset, Feuerzeug und ein Notbiwak wie eine Rettungsdecke folgen.",
+      "Extra Essen, extra Wasser und extra Kleidung vervollständigen sie; pass das Set jeder Tour an."
+     ],
+     "q": "Welches der zehn Dinge vergessen Menschen deiner Meinung nach am häufigsten?",
+     "c": "Schreib deine eigene Liste der zehn Essentials und hake ab, was du schon hast."
+    },
+    "es": {
+     "t": "La idea de los diez esenciales",
+     "g": "Conoce una lista clásica que te ayuda a estar preparado para pequeñas sorpresas en cualquier ruta.",
+     "p": [
+      "Orientación, frontal, protección solar y un pequeño botiquín abren la lista.",
+      "Siguen una navaja o kit de reparación, algo para encender fuego y un refugio de emergencia como una manta térmica.",
+      "Comida extra, agua extra y ropa extra la completan; adapta el equipo a cada salida."
+     ],
+     "q": "¿Cuál de estos diez elementos crees que la gente olvida más?",
+     "c": "Escribe tu propia lista de diez esenciales y marca lo que ya tienes."
+    },
+    "fr": {
+     "t": "L'idée des dix essentiels",
+     "g": "Découvre une liste classique qui t'aide à être prêt pour les petites surprises sur chaque randonnée.",
+     "p": [
+      "Orientation, lampe frontale, protection solaire et petite trousse de secours ouvrent la liste.",
+      "Viennent ensuite un couteau ou kit de réparation, de quoi faire du feu et un abri de secours comme une couverture de survie.",
+      "Nourriture, eau et vêtements en plus la complètent ; adapte le kit à chaque sortie."
+     ],
+     "q": "Selon toi, lequel de ces dix éléments est le plus souvent oublié ?",
+     "c": "Écris ta propre liste des dix essentiels et coche ce que tu possèdes déjà."
+    },
+    "it": {
+     "t": "L'idea dei dieci essenziali",
+     "g": "Conosci una lista classica che ti aiuta a essere pronto per piccole sorprese su ogni escursione.",
+     "p": [
+      "Orientamento, frontale, protezione solare e un piccolo kit di pronto soccorso aprono la lista.",
+      "Seguono un coltellino o kit riparazioni, qualcosa per accendere un fuoco e un riparo d'emergenza come un telo termico.",
+      "Cibo extra, acqua extra e vestiti extra la completano; adatta il kit a ogni uscita."
+     ],
+     "q": "Secondo te, quale di questi dieci elementi si dimentica più spesso?",
+     "c": "Scrivi la tua lista dei dieci essenziali e spunta ciò che hai già."
+    },
+    "pt": {
+     "t": "A ideia dos dez essenciais",
+     "g": "Conhece uma lista clássica que te ajuda a estar pronto para pequenas surpresas em qualquer caminhada.",
+     "p": [
+      "Orientação, lanterna frontal, proteção solar e um pequeno kit de primeiros socorros abrem a lista.",
+      "Seguem-se um canivete ou kit de reparação, algo para fazer fogo e um abrigo de emergência como uma manta térmica.",
+      "Comida extra, água extra e roupa extra completam-na; adapta o kit a cada saída."
+     ],
+     "q": "Qual destes dez itens achas que as pessoas esquecem mais vezes?",
+     "c": "Escreve a tua lista dos dez essenciais e assinala o que já tens."
+    },
+    "pt_BR": {
+     "t": "A ideia dos dez essenciais",
+     "g": "Conheça uma lista clássica que ajuda você a estar pronto para pequenas surpresas em qualquer trilha.",
+     "p": [
+      "Navegação, lanterna de cabeça, proteção solar e um pequeno kit de primeiros socorros abrem a lista.",
+      "Depois vêm canivete ou kit de reparo, algo para fazer fogo e um abrigo de emergência como uma manta térmica.",
+      "Comida extra, água extra e roupa extra completam a lista; adapte o kit a cada saída."
+     ],
+     "q": "Qual desses dez itens você acha que as pessoas mais esquecem?",
+     "c": "Escreva sua própria lista dos dez essenciais e marque o que você já tem."
+    }
+   }
+  }
+ ]
+}

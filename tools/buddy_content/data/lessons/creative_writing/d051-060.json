@@ -1,0 +1,835 @@
+{
+ "topic": "creative_writing",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a two-person scene",
+     "g": "Create a short scene where two characters want different things.",
+     "p": [
+      "Give each character a clear, simple want that clashes gently with the other's.",
+      "Let the wants show through dialogue, action beats and small choices.",
+      "End the scene with a change: a deal, a surprise or a new understanding."
+     ],
+     "q": "Can you remember a friendly disagreement that ended in a nice surprise?",
+     "c": "Write a 250-word scene: two siblings, one rainy Saturday, one wants to bake and the other wants to go outside."
+    },
+    "de": {
+     "t": "Eine Szene mit zwei Figuren",
+     "g": "Schreib eine kurze Szene, in der zwei Figuren unterschiedliche Dinge wollen.",
+     "p": [
+      "Gib jeder Figur einen klaren, einfachen Wunsch, der sanft mit dem der anderen kollidiert.",
+      "Lass die Wünsche durch Dialog, Handlungsbeats und kleine Entscheidungen sichtbar werden.",
+      "Beende die Szene mit einer Veränderung: einer Einigung, einer Überraschung, einem neuen Verständnis."
+     ],
+     "q": "Erinnerst du dich an eine freundliche Meinungsverschiedenheit, die schön überraschend endete?",
+     "c": "Schreib eine Szene von 250 Wörtern: zwei Geschwister, ein verregneter Samstag, eins will backen, das andere raus."
+    },
+    "es": {
+     "t": "Escribir una escena de dos",
+     "g": "Crea una escena corta en la que dos personajes quieren cosas distintas.",
+     "p": [
+      "Dale a cada personaje un deseo claro y sencillo que choque suavemente con el del otro.",
+      "Deja que los deseos se vean en el diálogo, las acciones y las pequeñas decisiones.",
+      "Termina la escena con un cambio: un acuerdo, una sorpresa o una nueva comprensión."
+     ],
+     "q": "¿Recuerdas un desacuerdo amistoso que acabó en una bonita sorpresa?",
+     "c": "Escribe una escena de 250 palabras: dos hermanos, un sábado lluvioso, uno quiere hornear y el otro salir."
+    },
+    "fr": {
+     "t": "Écrire une scène à deux",
+     "g": "Crée une courte scène où deux personnages veulent des choses différentes.",
+     "p": [
+      "Donne à chacun un désir clair et simple qui se heurte doucement à celui de l'autre.",
+      "Laisse ces désirs apparaître dans le dialogue, les gestes et les petits choix.",
+      "Termine sur un changement : un accord, une surprise ou une nouvelle compréhension."
+     ],
+     "q": "Te souviens-tu d'un désaccord amical qui s'est terminé par une jolie surprise ?",
+     "c": "Écris une scène de 250 mots : deux frère et sœur, un samedi pluvieux, l'un veut pâtisser, l'autre sortir."
+    },
+    "it": {
+     "t": "Scrivere una scena a due",
+     "g": "Crea una breve scena in cui due personaggi vogliono cose diverse.",
+     "p": [
+      "Dai a ciascuno un desiderio chiaro e semplice che si scontri dolcemente con quello dell'altro.",
+      "Lascia che i desideri emergano da dialogo, azioni e piccole scelte.",
+      "Chiudi la scena con un cambiamento: un accordo, una sorpresa o una nuova comprensione."
+     ],
+     "q": "Ricordi un disaccordo amichevole finito con una bella sorpresa?",
+     "c": "Scrivi una scena di 250 parole: due fratelli, un sabato di pioggia, uno vuole fare una torta e l'altro uscire."
+    },
+    "pt": {
+     "t": "Escrever uma cena a dois",
+     "g": "Cria uma cena curta em que duas personagens querem coisas diferentes.",
+     "p": [
+      "Dá a cada personagem um desejo claro e simples que choque suavemente com o da outra.",
+      "Deixa os desejos aparecerem no diálogo, nas ações e nas pequenas escolhas.",
+      "Termina a cena com uma mudança: um acordo, uma surpresa ou uma nova compreensão."
+     ],
+     "q": "Lembras-te de um desacordo amigável que acabou numa bela surpresa?",
+     "c": "Escreve uma cena de 250 palavras: dois irmãos, um sábado de chuva, um quer fazer um bolo e o outro quer sair."
+    },
+    "pt_BR": {
+     "t": "Escrever uma cena a dois",
+     "g": "Crie uma cena curta em que dois personagens querem coisas diferentes.",
+     "p": [
+      "Dê a cada personagem um desejo claro e simples que bata de leve com o do outro.",
+      "Deixe os desejos aparecerem no diálogo, nas ações e nas pequenas escolhas.",
+      "Termine a cena com uma mudança: um acordo, uma surpresa ou um novo entendimento."
+     ],
+     "q": "Você lembra de um desentendimento amigável que terminou numa surpresa boa?",
+     "c": "Escreva uma cena de 250 palavras: dois irmãos, um sábado chuvoso, um quer fazer bolo e o outro quer sair."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: characters and dialogue",
+     "g": "Lightly review building characters and writing natural dialogue.",
+     "p": [
+      "Characters need wants, obstacles, flaws and choices that show who they are.",
+      "Dialogue works best with simple tags, action beats and distinct voices.",
+      "Subtext and cutting small talk keep conversations lively and meaningful."
+     ],
+     "q": "Which character you created in the last weeks is your favourite, and why?",
+     "c": "Bring back your favourite character and write a 200-word scene with dialogue, one action beat and one choice."
+    },
+    "de": {
+     "t": "Rückblick: Figuren und Dialog",
+     "g": "Wiederhole locker, wie man Figuren aufbaut und natürliche Dialoge schreibt.",
+     "p": [
+      "Figuren brauchen Wünsche, Hindernisse, Schwächen und Entscheidungen, die zeigen, wer sie sind.",
+      "Dialog wirkt am besten mit einfachen Begleitsätzen, Handlungsbeats und eigenen Stimmen.",
+      "Subtext und gestrichener Smalltalk halten Gespräche lebendig und bedeutsam."
+     ],
+     "q": "Welche Figur der letzten Wochen ist deine liebste, und warum?",
+     "c": "Hol deine Lieblingsfigur zurück und schreib eine Szene von 200 Wörtern mit Dialog, einem Handlungsbeat und einer Entscheidung."
+    },
+    "es": {
+     "t": "Repaso: personajes y diálogo",
+     "g": "Repasa con calma cómo construir personajes y escribir diálogos naturales.",
+     "p": [
+      "Los personajes necesitan deseos, obstáculos, defectos y decisiones que muestren quiénes son.",
+      "El diálogo funciona mejor con acotaciones simples, acciones y voces propias.",
+      "El subtexto y quitar el relleno mantienen las conversaciones vivas y con sentido."
+     ],
+     "q": "¿Qué personaje que creaste en estas semanas es tu favorito y por qué?",
+     "c": "Recupera a tu personaje favorito y escribe una escena de 200 palabras con diálogo, una acción y una decisión."
+    },
+    "fr": {
+     "t": "Révision : personnages et dialogue",
+     "g": "Révise en douceur la construction des personnages et l'écriture de dialogues naturels.",
+     "p": [
+      "Les personnages ont besoin de désirs, d'obstacles, de défauts et de choix qui les révèlent.",
+      "Le dialogue fonctionne mieux avec des incises simples, des gestes et des voix distinctes.",
+      "Le sous-texte et la coupe des banalités gardent les échanges vivants et riches de sens."
+     ],
+     "q": "Quel personnage créé ces dernières semaines préfères-tu, et pourquoi ?",
+     "c": "Reprends ton personnage préféré et écris une scène de 200 mots avec dialogue, un geste et un choix."
+    },
+    "it": {
+     "t": "Ripasso: personaggi e dialogo",
+     "g": "Ripassa con leggerezza come costruire personaggi e scrivere dialoghi naturali.",
+     "p": [
+      "I personaggi hanno bisogno di desideri, ostacoli, difetti e scelte che mostrino chi sono.",
+      "Il dialogo funziona meglio con verbi semplici, azioni e voci distinte.",
+      "Sottotesto e tagli ai convenevoli rendono le conversazioni vive e significative."
+     ],
+     "q": "Quale personaggio creato in queste settimane è il tuo preferito, e perché?",
+     "c": "Riprendi il tuo personaggio preferito e scrivi una scena di 200 parole con dialogo, un'azione e una scelta."
+    },
+    "pt": {
+     "t": "Revisão: personagens e diálogo",
+     "g": "Revê com leveza como construir personagens e escrever diálogos naturais.",
+     "p": [
+      "As personagens precisam de desejos, obstáculos, defeitos e escolhas que mostrem quem são.",
+      "O diálogo funciona melhor com verbos simples, ações e vozes próprias.",
+      "O subtexto e o corte da conversa de circunstância mantêm as falas vivas e com sentido."
+     ],
+     "q": "Que personagem criada nestas semanas é a tua preferida, e porquê?",
+     "c": "Recupera a tua personagem preferida e escreve uma cena de 200 palavras com diálogo, uma ação e uma escolha."
+    },
+    "pt_BR": {
+     "t": "Revisão: personagens e diálogo",
+     "g": "Revise com leveza como construir personagens e escrever diálogos naturais.",
+     "p": [
+      "Personagens precisam de desejos, obstáculos, defeitos e escolhas que mostrem quem são.",
+      "O diálogo funciona melhor com verbos simples, ações e vozes próprias.",
+      "O subtexto e o corte do papo furado deixam as conversas vivas e cheias de sentido."
+     ],
+     "q": "Qual personagem que você criou nestas semanas é o seu favorito, e por quê?",
+     "c": "Traga de volta seu personagem favorito e escreva uma cena de 200 palavras com diálogo, uma ação e uma escolha."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is setting",
+     "g": "Understand time, place and atmosphere, and how they shape a story and its characters.",
+     "p": [
+      "Setting is where and when a story happens, plus the feeling of that place.",
+      "It shapes characters: a fisherman's day in a harbour differs from a baker's in a city.",
+      "A strong setting can feel almost like another character in the story."
+     ],
+     "q": "Which place from a book or film would you most love to visit?",
+     "c": "Write five sentences describing where and when a story of yours could happen, including one feeling it gives."
+    },
+    "de": {
+     "t": "Was ist Schauplatz",
+     "g": "Versteh Zeit, Ort und Atmosphäre und wie sie eine Geschichte und ihre Figuren prägen.",
+     "p": [
+      "Der Schauplatz ist Ort und Zeit einer Geschichte, dazu das Gefühl, das dieser Ort weckt.",
+      "Er prägt Figuren: Der Tag eines Fischers im Hafen ist anders als der eines Bäckers in der Stadt.",
+      "Ein starker Schauplatz kann fast wie eine weitere Figur wirken."
+     ],
+     "q": "Welchen Ort aus einem Buch oder Film würdest du am liebsten besuchen?",
+     "c": "Schreib fünf Sätze darüber, wo und wann eine deiner Geschichten spielen könnte, mit einem Gefühl, das der Ort weckt."
+    },
+    "es": {
+     "t": "Qué es el escenario",
+     "g": "Comprende el tiempo, el lugar y la atmósfera, y cómo moldean la historia y a sus personajes.",
+     "p": [
+      "El escenario es dónde y cuándo ocurre la historia, más la sensación que da ese lugar.",
+      "Moldea a los personajes: el día de un pescador en el puerto no es el de un panadero en la ciudad.",
+      "Un escenario fuerte puede sentirse casi como un personaje más."
+     ],
+     "q": "¿Qué lugar de un libro o una película te encantaría visitar?",
+     "c": "Escribe cinco frases sobre dónde y cuándo podría ocurrir una historia tuya, incluida una sensación que transmita."
+    },
+    "fr": {
+     "t": "Qu'est-ce que le décor",
+     "g": "Comprends le temps, le lieu et l'atmosphère, et comment ils façonnent l'histoire et les personnages.",
+     "p": [
+      "Le décor, c'est où et quand se passe l'histoire, plus l'atmosphère de ce lieu.",
+      "Il façonne les personnages : la journée d'un pêcheur au port n'est pas celle d'un boulanger en ville.",
+      "Un décor fort peut sembler presque être un personnage à part entière."
+     ],
+     "q": "Quel lieu d'un livre ou d'un film aimerais-tu le plus visiter ?",
+     "c": "Écris cinq phrases sur le lieu et l'époque d'une de tes histoires, avec une sensation que ce lieu procure."
+    },
+    "it": {
+     "t": "Cos'è l'ambientazione",
+     "g": "Capisci tempo, luogo e atmosfera, e come danno forma alla storia e ai personaggi.",
+     "p": [
+      "L'ambientazione è dove e quando accade la storia, più la sensazione che dà quel luogo.",
+      "Plasma i personaggi: la giornata di un pescatore al porto è diversa da quella di un fornaio in città.",
+      "Un'ambientazione forte può sembrare quasi un altro personaggio."
+     ],
+     "q": "Quale luogo di un libro o di un film ti piacerebbe di più visitare?",
+     "c": "Scrivi cinque frasi su dove e quando potrebbe svolgersi una tua storia, con una sensazione che trasmette."
+    },
+    "pt": {
+     "t": "O que é o cenário",
+     "g": "Compreende o tempo, o lugar e a atmosfera, e como moldam a história e as personagens.",
+     "p": [
+      "O cenário é onde e quando a história acontece, mais a sensação desse lugar.",
+      "Molda as personagens: o dia de um pescador no porto não é o de um padeiro na cidade.",
+      "Um cenário forte pode parecer quase mais uma personagem."
+     ],
+     "q": "Que lugar de um livro ou filme mais gostavas de visitar?",
+     "c": "Escreve cinco frases sobre onde e quando uma história tua podia acontecer, com uma sensação que esse lugar dá."
+    },
+    "pt_BR": {
+     "t": "O que é o cenário",
+     "g": "Entenda tempo, lugar e atmosfera, e como eles moldam a história e os personagens.",
+     "p": [
+      "O cenário é onde e quando a história acontece, mais a sensação daquele lugar.",
+      "Ele molda os personagens: o dia de um pescador no porto não é o de um padeiro na cidade.",
+      "Um cenário forte pode parecer quase mais um personagem."
+     ],
+     "q": "Que lugar de um livro ou filme você mais gostaria de visitar?",
+     "c": "Escreva cinco frases sobre onde e quando uma história sua poderia acontecer, com uma sensação que o lugar transmite."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting as mood",
+     "g": "Use weather, light and surroundings to create a cosy, tense or joyful feeling.",
+     "p": [
+      "Weather sets the tone: soft snow feels cosy, a gathering storm feels tense.",
+      "Light changes mood: golden evening light feels warm, flickering light feels uneasy.",
+      "Choose surroundings that echo the character's feelings, or contrast with them."
+     ],
+     "q": "What kind of weather makes you feel happiest?",
+     "c": "Describe the same café twice in 100 words each: once cosy on a snowy evening, once joyful on a sunny morning."
+    },
+    "de": {
+     "t": "Schauplatz als Stimmung",
+     "g": "Nutze Wetter, Licht und Umgebung, um ein gemütliches, gespanntes oder fröhliches Gefühl zu schaffen.",
+     "p": [
+      "Das Wetter gibt den Ton an: Leiser Schnee wirkt gemütlich, ein aufziehender Sturm spannend.",
+      "Licht verändert die Stimmung: Goldenes Abendlicht wirkt warm, flackerndes Licht unruhig.",
+      "Wähle eine Umgebung, die die Gefühle der Figur spiegelt oder einen Kontrast bildet."
+     ],
+     "q": "Bei welchem Wetter fühlst du dich am glücklichsten?",
+     "c": "Beschreib dasselbe Café zweimal in je 100 Wörtern: gemütlich an einem Schneeabend, fröhlich an einem Sonnenmorgen."
+    },
+    "es": {
+     "t": "El escenario como ambiente",
+     "g": "Usa el clima, la luz y el entorno para crear una sensación acogedora, tensa o alegre.",
+     "p": [
+      "El clima marca el tono: la nieve suave resulta acogedora; una tormenta que se acerca, tensa.",
+      "La luz cambia el ambiente: la luz dorada del atardecer es cálida; la que parpadea inquieta.",
+      "Elige un entorno que refleje los sentimientos del personaje o que contraste con ellos."
+     ],
+     "q": "¿Qué tipo de clima te hace sentir más feliz?",
+     "c": "Describe la misma cafetería dos veces en 100 palabras: acogedora en una tarde nevada y alegre en una mañana de sol."
+    },
+    "fr": {
+     "t": "Le décor comme ambiance",
+     "g": "Utilise la météo, la lumière et l'environnement pour créer une sensation douillette, tendue ou joyeuse.",
+     "p": [
+      "La météo donne le ton : une neige douce est douillette, un orage qui monte est tendu.",
+      "La lumière change l'ambiance : la lumière dorée du soir réchauffe, une lumière qui vacille inquiète.",
+      "Choisis un environnement qui fait écho aux émotions du personnage ou qui les contraste."
+     ],
+     "q": "Quel temps te rend le plus heureux ?",
+     "c": "Décris le même café deux fois en 100 mots : douillet un soir de neige, joyeux un matin ensoleillé."
+    },
+    "it": {
+     "t": "L'ambientazione come atmosfera",
+     "g": "Usa tempo atmosferico, luce e ambiente per creare una sensazione accogliente, tesa o allegra.",
+     "p": [
+      "Il tempo dà il tono: la neve leggera è accogliente, un temporale in arrivo crea tensione.",
+      "La luce cambia l'atmosfera: la luce dorata della sera scalda, quella tremolante inquieta.",
+      "Scegli un ambiente che rispecchi i sentimenti del personaggio o che li contrasti."
+     ],
+     "q": "Con quale tempo ti senti più felice?",
+     "c": "Descrivi lo stesso caffè due volte in 100 parole: accogliente in una sera di neve e allegro in una mattina di sole."
+    },
+    "pt": {
+     "t": "O cenário como ambiente",
+     "g": "Usa o tempo, a luz e o ambiente para criar uma sensação acolhedora, tensa ou alegre.",
+     "p": [
+      "O tempo dá o tom: neve suave é acolhedora, uma tempestade a chegar cria tensão.",
+      "A luz muda o ambiente: a luz dourada do fim de tarde aquece, uma luz trémula inquieta.",
+      "Escolhe um ambiente que reflita os sentimentos da personagem ou que contraste com eles."
+     ],
+     "q": "Que tipo de tempo te faz sentir mais feliz?",
+     "c": "Descreve o mesmo café duas vezes em 100 palavras: acolhedor numa noite de neve e alegre numa manhã de sol."
+    },
+    "pt_BR": {
+     "t": "O cenário como clima",
+     "g": "Use o tempo, a luz e o ambiente para criar uma sensação aconchegante, tensa ou alegre.",
+     "p": [
+      "O tempo dá o tom: neve suave é aconchegante, uma tempestade chegando cria tensão.",
+      "A luz muda o clima: a luz dourada do fim de tarde aquece, uma luz piscando inquieta.",
+      "Escolha um ambiente que reflita os sentimentos do personagem ou que contraste com eles."
+     ],
+     "q": "Que tipo de tempo deixa você mais feliz?",
+     "c": "Descreva o mesmo café duas vezes em 100 palavras: aconchegante numa noite de neve e alegre numa manhã de sol."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Real places as inspiration",
+     "g": "Turn cities, villages and landscapes you know into story settings.",
+     "p": [
+      "Places you know well give you true details: the bakery smell, the bus number, the hill.",
+      "You can change names and mix several real places into one new setting.",
+      "Visit or remember the place with all your senses before you start writing."
+     ],
+     "q": "Which place from your own life would make a wonderful story setting?",
+     "c": "Choose a street or square you know well and write a 200-word opening of a story set there."
+    },
+    "de": {
+     "t": "Echte Orte als Inspiration",
+     "g": "Mach aus Städten, Dörfern und Landschaften, die du kennst, Schauplätze für Geschichten.",
+     "p": [
+      "Vertraute Orte schenken dir echte Details: den Duft der Bäckerei, die Buslinie, den Hügel.",
+      "Du kannst Namen ändern und mehrere echte Orte zu einem neuen Schauplatz mischen.",
+      "Besuche den Ort oder erinnere dich mit allen Sinnen an ihn, bevor du schreibst."
+     ],
+     "q": "Welcher Ort aus deinem Leben wäre ein wunderbarer Schauplatz für eine Geschichte?",
+     "c": "Wähle eine Straße oder einen Platz, den du gut kennst, und schreib einen Geschichtenanfang von 200 Wörtern, der dort spielt."
+    },
+    "es": {
+     "t": "Lugares reales como inspiración",
+     "g": "Convierte ciudades, pueblos y paisajes que conoces en escenarios para tus historias.",
+     "p": [
+      "Los lugares que conoces bien te dan detalles ciertos: el olor de la panadería, el número del autobús, la colina.",
+      "Puedes cambiar los nombres y mezclar varios lugares reales en un escenario nuevo.",
+      "Visita o recuerda el lugar con todos los sentidos antes de empezar a escribir."
+     ],
+     "q": "¿Qué lugar de tu vida sería un escenario maravilloso para una historia?",
+     "c": "Elige una calle o plaza que conozcas bien y escribe un inicio de historia de 200 palabras ambientado allí."
+    },
+    "fr": {
+     "t": "Les vrais lieux comme inspiration",
+     "g": "Transforme villes, villages et paysages que tu connais en décors pour tes histoires.",
+     "p": [
+      "Les lieux familiers offrent des détails vrais : l'odeur de la boulangerie, le numéro du bus, la colline.",
+      "Tu peux changer les noms et mélanger plusieurs lieux réels en un nouveau décor.",
+      "Visite le lieu ou rappelle-le-toi avec tous tes sens avant d'écrire."
+     ],
+     "q": "Quel lieu de ta vie ferait un merveilleux décor d'histoire ?",
+     "c": "Choisis une rue ou une place que tu connais bien et écris un début d'histoire de 200 mots qui s'y déroule."
+    },
+    "it": {
+     "t": "Luoghi reali come ispirazione",
+     "g": "Trasforma città, paesi e paesaggi che conosci in ambientazioni per le tue storie.",
+     "p": [
+      "I luoghi che conosci bene ti danno dettagli veri: il profumo del forno, il numero dell'autobus, la collina.",
+      "Puoi cambiare i nomi e mescolare più luoghi reali in un'ambientazione nuova.",
+      "Visita il luogo o ricordalo con tutti i sensi prima di iniziare a scrivere."
+     ],
+     "q": "Quale luogo della tua vita sarebbe un'ambientazione meravigliosa per una storia?",
+     "c": "Scegli una via o una piazza che conosci bene e scrivi l'inizio di una storia di 200 parole ambientata lì."
+    },
+    "pt": {
+     "t": "Lugares reais como inspiração",
+     "g": "Transforma cidades, aldeias e paisagens que conheces em cenários para histórias.",
+     "p": [
+      "Os lugares que conheces bem dão-te detalhes verdadeiros: o cheiro da padaria, o número do autocarro, a colina.",
+      "Podes mudar os nomes e misturar vários lugares reais num cenário novo.",
+      "Visita o lugar ou recorda-o com todos os sentidos antes de começar a escrever."
+     ],
+     "q": "Que lugar da tua vida seria um cenário maravilhoso para uma história?",
+     "c": "Escolhe uma rua ou praça que conheças bem e escreve o início de uma história de 200 palavras passada lá."
+    },
+    "pt_BR": {
+     "t": "Lugares reais como inspiração",
+     "g": "Transforme cidades, vilarejos e paisagens que você conhece em cenários de histórias.",
+     "p": [
+      "Lugares que você conhece bem dão detalhes verdadeiros: o cheiro da padaria, a linha do ônibus, o morro.",
+      "Você pode mudar os nomes e misturar vários lugares reais num cenário novo.",
+      "Visite o lugar ou lembre dele com todos os sentidos antes de começar a escrever."
+     ],
+     "q": "Que lugar da sua vida seria um cenário maravilhoso para uma história?",
+     "c": "Escolha uma rua ou praça que você conhece bem e escreva o começo de uma história de 200 palavras que se passa lá."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A sense of time",
+     "g": "Show season, time of day and era through details rather than dates.",
+     "p": [
+      "Seasons have signs: falling leaves, first strawberries, frosted windows.",
+      "Time of day shows in light, sounds and routines: the first bus, the last café closing.",
+      "Era appears in objects and habits: letters and landlines, or phones and video calls."
+     ],
+     "q": "What is your favourite season, and what detail tells you it has arrived?",
+     "c": "Write a paragraph that shows it is a summer evening long ago, without naming the season or the year."
+    },
+    "de": {
+     "t": "Ein Gefühl für Zeit",
+     "g": "Zeig Jahreszeit, Tageszeit und Epoche durch Details statt durch Daten.",
+     "p": [
+      "Jahreszeiten haben Zeichen: fallendes Laub, erste Erdbeeren, beschlagene Fenster.",
+      "Die Tageszeit zeigt sich in Licht, Geräuschen und Abläufen: der erste Bus, das letzte Café, das schließt.",
+      "Die Epoche erscheint in Dingen und Gewohnheiten: Briefe und Festnetz oder Handys und Videoanrufe."
+     ],
+     "q": "Was ist deine liebste Jahreszeit, und an welchem Detail merkst du, dass sie da ist?",
+     "c": "Schreib einen Absatz, der zeigt, dass es ein Sommerabend vor langer Zeit ist, ohne Jahreszeit oder Jahr zu nennen."
+    },
+    "es": {
+     "t": "El sentido del tiempo",
+     "g": "Muestra la estación, la hora y la época con detalles en vez de fechas.",
+     "p": [
+      "Las estaciones tienen señales: hojas que caen, las primeras fresas, cristales escarchados.",
+      "La hora del día se nota en la luz, los sonidos y las rutinas: el primer autobús, el último café que cierra.",
+      "La época aparece en objetos y costumbres: cartas y teléfono fijo, o móviles y videollamadas."
+     ],
+     "q": "¿Cuál es tu estación favorita y qué detalle te dice que ha llegado?",
+     "c": "Escribe un párrafo que muestre que es una tarde de verano de hace mucho, sin nombrar la estación ni el año."
+    },
+    "fr": {
+     "t": "Le sens du temps",
+     "g": "Montre la saison, le moment de la journée et l'époque par des détails plutôt que par des dates.",
+     "p": [
+      "Les saisons ont leurs signes : feuilles qui tombent, premières fraises, vitres givrées.",
+      "L'heure se lit dans la lumière, les sons et les routines : le premier bus, le dernier café qui ferme.",
+      "L'époque se voit dans les objets et les habitudes : lettres et téléphone fixe, ou portables et visios."
+     ],
+     "q": "Quelle est ta saison préférée, et quel détail te dit qu'elle est arrivée ?",
+     "c": "Écris un paragraphe qui montre qu'on est un soir d'été d'autrefois, sans nommer la saison ni l'année."
+    },
+    "it": {
+     "t": "Il senso del tempo",
+     "g": "Mostra la stagione, l'ora del giorno e l'epoca con i dettagli invece che con le date.",
+     "p": [
+      "Le stagioni hanno i loro segni: foglie che cadono, le prime fragole, vetri appannati di brina.",
+      "L'ora si vede da luce, suoni e abitudini: il primo autobus, l'ultimo bar che chiude.",
+      "L'epoca emerge da oggetti e abitudini: lettere e telefono fisso, o cellulari e videochiamate."
+     ],
+     "q": "Qual è la tua stagione preferita, e quale dettaglio ti dice che è arrivata?",
+     "c": "Scrivi un paragrafo che mostri che è una sera d'estate di tanto tempo fa, senza nominare la stagione o l'anno."
+    },
+    "pt": {
+     "t": "O sentido do tempo",
+     "g": "Mostra a estação, a hora do dia e a época com detalhes em vez de datas.",
+     "p": [
+      "As estações têm sinais: folhas a cair, os primeiros morangos, vidros embaciados de geada.",
+      "A hora do dia nota-se na luz, nos sons e nas rotinas: o primeiro autocarro, o último café a fechar.",
+      "A época aparece nos objetos e hábitos: cartas e telefone fixo, ou telemóveis e videochamadas."
+     ],
+     "q": "Qual é a tua estação preferida, e que detalhe te diz que ela chegou?",
+     "c": "Escreve um parágrafo que mostre que é um fim de tarde de verão de há muito tempo, sem nomear a estação nem o ano."
+    },
+    "pt_BR": {
+     "t": "O sentido do tempo",
+     "g": "Mostre a estação, a hora do dia e a época com detalhes em vez de datas.",
+     "p": [
+      "As estações têm sinais: folhas caindo, os primeiros morangos, vidros embaçados de frio.",
+      "A hora do dia aparece na luz, nos sons e nas rotinas: o primeiro ônibus, o último café fechando.",
+      "A época aparece em objetos e hábitos: cartas e telefone fixo, ou celulares e videochamadas."
+     ],
+     "q": "Qual é a sua estação favorita, e que detalhe diz a você que ela chegou?",
+     "c": "Escreva um parágrafo que mostre que é um fim de tarde de verão de muito tempo atrás, sem dizer a estação nem o ano."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting through a character's eyes",
+     "g": "See how the same place feels different to a tourist, a local or a child.",
+     "p": [
+      "A tourist notices what is new: the colours, the signs, the unfamiliar food.",
+      "A local notices changes and memories: the shop that moved, a favourite bench.",
+      "A child notices size and wonder: giant steps, puddles, a pigeon to chase."
+     ],
+     "q": "How did your home town look to you as a child compared with now?",
+     "c": "Describe a busy market in three short paragraphs: through the eyes of a tourist, a local and a child."
+    },
+    "de": {
+     "t": "Schauplatz durch Figurenaugen",
+     "g": "Erkenne, wie derselbe Ort für eine Touristin, einen Einheimischen oder ein Kind anders wirkt.",
+     "p": [
+      "Eine Touristin bemerkt das Neue: Farben, Schilder, unbekanntes Essen.",
+      "Ein Einheimischer bemerkt Veränderungen und Erinnerungen: den umgezogenen Laden, die Lieblingsbank.",
+      "Ein Kind bemerkt Größe und Staunen: riesige Stufen, Pfützen, eine Taube zum Jagen."
+     ],
+     "q": "Wie sah deine Heimatstadt für dich als Kind aus, verglichen mit heute?",
+     "c": "Beschreib einen belebten Markt in drei kurzen Absätzen: mit den Augen einer Touristin, eines Einheimischen und eines Kindes."
+    },
+    "es": {
+     "t": "El escenario visto por el personaje",
+     "g": "Descubre cómo un mismo lugar se siente distinto para un turista, un vecino o un niño.",
+     "p": [
+      "Un turista se fija en lo nuevo: los colores, los carteles, la comida desconocida.",
+      "Un vecino nota cambios y recuerdos: la tienda que se mudó, su banco favorito.",
+      "Un niño ve tamaño y asombro: escalones gigantes, charcos, una paloma que perseguir."
+     ],
+     "q": "¿Cómo veías tu ciudad de niño comparado con ahora?",
+     "c": "Describe un mercado animado en tres párrafos cortos: con los ojos de un turista, de un vecino y de un niño."
+    },
+    "fr": {
+     "t": "Le décor vu par le personnage",
+     "g": "Vois comment un même lieu paraît différent à un touriste, à un habitant ou à un enfant.",
+     "p": [
+      "Un touriste remarque la nouveauté : les couleurs, les panneaux, la cuisine inconnue.",
+      "Un habitant remarque les changements et les souvenirs : la boutique qui a déménagé, son banc préféré.",
+      "Un enfant remarque la taille et l'émerveillement : marches géantes, flaques, un pigeon à poursuivre."
+     ],
+     "q": "Comment voyais-tu ta ville enfant, comparé à aujourd'hui ?",
+     "c": "Décris un marché animé en trois courts paragraphes : avec les yeux d'un touriste, d'un habitant et d'un enfant."
+    },
+    "it": {
+     "t": "L'ambientazione vista dal personaggio",
+     "g": "Scopri come lo stesso luogo appare diverso a un turista, a un abitante o a un bambino.",
+     "p": [
+      "Un turista nota il nuovo: i colori, le insegne, il cibo sconosciuto.",
+      "Un abitante nota cambiamenti e ricordi: il negozio che ha traslocato, la panchina preferita.",
+      "Un bambino nota grandezza e meraviglia: gradini giganti, pozzanghere, un piccione da rincorrere."
+     ],
+     "q": "Come vedevi la tua città da bambino rispetto a oggi?",
+     "c": "Descrivi un mercato affollato in tre brevi paragrafi: con gli occhi di un turista, di un abitante e di un bambino."
+    },
+    "pt": {
+     "t": "O cenário visto pela personagem",
+     "g": "Vê como o mesmo lugar parece diferente a um turista, a um morador ou a uma criança.",
+     "p": [
+      "Um turista repara no que é novo: as cores, as placas, a comida desconhecida.",
+      "Um morador repara em mudanças e memórias: a loja que mudou de sítio, o banco preferido.",
+      "Uma criança repara no tamanho e no encanto: degraus gigantes, poças, um pombo para perseguir."
+     ],
+     "q": "Como via a tua terra quando eras criança, comparado com agora?",
+     "c": "Descreve um mercado movimentado em três parágrafos curtos: pelos olhos de um turista, de um morador e de uma criança."
+    },
+    "pt_BR": {
+     "t": "O cenário pelos olhos do personagem",
+     "g": "Veja como o mesmo lugar parece diferente para um turista, um morador ou uma criança.",
+     "p": [
+      "Um turista repara no que é novo: as cores, as placas, a comida desconhecida.",
+      "Um morador repara em mudanças e memórias: a loja que mudou de lugar, o banco favorito.",
+      "Uma criança repara no tamanho e no encanto: degraus gigantes, poças, um pombo para correr atrás."
+     ],
+     "q": "Como você via sua cidade quando era criança, comparado com hoje?",
+     "c": "Descreva uma feira movimentada em três parágrafos curtos: pelos olhos de um turista, de um morador e de uma criança."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small worlds: a single location",
+     "g": "Explore stories set in one place, like a train carriage or a kitchen.",
+     "p": [
+      "One location keeps a story focused and lets you know every corner of it.",
+      "Characters can't easily leave, so their wants meet and spark more often.",
+      "Use the place's details as tools: the window, the timetable, the oven timer."
+     ],
+     "q": "Which small place, like a kitchen or a bus, holds good memories for you?",
+     "c": "Write a 250-word story set entirely in a kitchen during one afternoon, with two characters and one surprise."
+    },
+    "de": {
+     "t": "Kleine Welten: ein einziger Ort",
+     "g": "Entdecke Geschichten, die an einem Ort spielen, etwa in einem Zugabteil oder einer Küche.",
+     "p": [
+      "Ein einziger Ort hält die Geschichte fokussiert, und du kennst jede Ecke.",
+      "Figuren können nicht einfach gehen, also treffen ihre Wünsche öfter aufeinander.",
+      "Nutze die Details des Ortes als Werkzeuge: das Fenster, den Fahrplan, die Backofenuhr."
+     ],
+     "q": "Welcher kleine Ort, etwa eine Küche oder ein Bus, birgt schöne Erinnerungen für dich?",
+     "c": "Schreib eine Geschichte von 250 Wörtern, die an einem Nachmittag ganz in einer Küche spielt, mit zwei Figuren und einer Überraschung."
+    },
+    "es": {
+     "t": "Mundos pequeños: un solo lugar",
+     "g": "Explora historias que ocurren en un único sitio, como un vagón de tren o una cocina.",
+     "p": [
+      "Un solo lugar mantiene la historia centrada y te deja conocer cada rincón.",
+      "Los personajes no pueden irse fácilmente, así que sus deseos se cruzan más a menudo.",
+      "Usa los detalles del lugar como herramientas: la ventana, el horario, el temporizador del horno."
+     ],
+     "q": "¿Qué lugar pequeño, como una cocina o un autobús, guarda buenos recuerdos para ti?",
+     "c": "Escribe una historia de 250 palabras que ocurra toda en una cocina durante una tarde, con dos personajes y una sorpresa."
+    },
+    "fr": {
+     "t": "Petits mondes : un seul lieu",
+     "g": "Explore les histoires qui se passent en un seul endroit, comme un wagon de train ou une cuisine.",
+     "p": [
+      "Un lieu unique garde l'histoire concentrée et te permet d'en connaître chaque recoin.",
+      "Les personnages ne peuvent pas partir facilement, donc leurs désirs se croisent plus souvent.",
+      "Utilise les détails du lieu comme outils : la fenêtre, l'horaire, la minuterie du four."
+     ],
+     "q": "Quel petit lieu, comme une cuisine ou un bus, garde pour toi de beaux souvenirs ?",
+     "c": "Écris une histoire de 250 mots qui se passe entièrement dans une cuisine un après-midi, avec deux personnages et une surprise."
+    },
+    "it": {
+     "t": "Piccoli mondi: un solo luogo",
+     "g": "Esplora storie ambientate in un unico posto, come una carrozza del treno o una cucina.",
+     "p": [
+      "Un solo luogo tiene la storia concentrata e ti fa conoscere ogni angolo.",
+      "I personaggi non possono andarsene facilmente, quindi i loro desideri si scontrano più spesso.",
+      "Usa i dettagli del luogo come strumenti: il finestrino, l'orario, il timer del forno."
+     ],
+     "q": "Quale piccolo luogo, come una cucina o un autobus, custodisce bei ricordi per te?",
+     "c": "Scrivi una storia di 250 parole ambientata tutta in una cucina in un pomeriggio, con due personaggi e una sorpresa."
+    },
+    "pt": {
+     "t": "Pequenos mundos: um só lugar",
+     "g": "Explora histórias passadas num único sítio, como uma carruagem de comboio ou uma cozinha.",
+     "p": [
+      "Um só lugar mantém a história focada e deixa-te conhecer cada canto.",
+      "As personagens não podem sair facilmente, por isso os desejos cruzam-se mais vezes.",
+      "Usa os detalhes do lugar como ferramentas: a janela, o horário, o temporizador do forno."
+     ],
+     "q": "Que lugar pequeno, como uma cozinha ou um autocarro, guarda boas memórias para ti?",
+     "c": "Escreve uma história de 250 palavras passada toda numa cozinha durante uma tarde, com duas personagens e uma surpresa."
+    },
+    "pt_BR": {
+     "t": "Pequenos mundos: um só lugar",
+     "g": "Explore histórias que se passam num único lugar, como um vagão de trem ou uma cozinha.",
+     "p": [
+      "Um só lugar mantém a história focada e deixa você conhecer cada canto.",
+      "Os personagens não conseguem sair fácil, então os desejos se cruzam mais vezes.",
+      "Use os detalhes do lugar como ferramentas: a janela, o horário, o timer do forno."
+     ],
+     "q": "Que lugar pequeno, como uma cozinha ou um ônibus, guarda boas memórias para você?",
+     "c": "Escreva uma história de 250 palavras que se passa toda numa cozinha durante uma tarde, com dois personagens e uma surpresa."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The story spark",
+     "g": "Identify the moment of change that turns an idea into a real story.",
+     "p": [
+      "An idea is a situation; a story begins when something changes or breaks routine.",
+      "The spark can be small: a letter arrives, a stranger asks for help, a door is unlocked.",
+      "Ask: what is different today from every other day for my character?"
+     ],
+     "q": "What small change once started a new chapter in your life?",
+     "c": "Take three ideas from your journal and write the moment of change that could start a story for each."
+    },
+    "de": {
+     "t": "Der Funke der Geschichte",
+     "g": "Erkenne den Moment der Veränderung, der aus einer Idee eine echte Geschichte macht.",
+     "p": [
+      "Eine Idee ist eine Situation, eine Geschichte beginnt, wenn etwas den Alltag verändert.",
+      "Der Funke kann klein sein: Ein Brief kommt an, eine Fremde bittet um Hilfe, eine Tür ist offen.",
+      "Frag dich: Was ist heute für meine Figur anders als an allen anderen Tagen?"
+     ],
+     "q": "Welche kleine Veränderung hat einmal ein neues Kapitel in deinem Leben begonnen?",
+     "c": "Nimm drei Ideen aus deinem Tagebuch und schreib für jede den Moment der Veränderung, der eine Geschichte starten könnte."
+    },
+    "es": {
+     "t": "La chispa de la historia",
+     "g": "Identifica el momento de cambio que convierte una idea en una historia de verdad.",
+     "p": [
+      "Una idea es una situación; la historia empieza cuando algo cambia o rompe la rutina.",
+      "La chispa puede ser pequeña: llega una carta, alguien pide ayuda, una puerta se abre.",
+      "Pregúntate: ¿qué es distinto hoy para mi personaje respecto a todos los demás días?"
+     ],
+     "q": "¿Qué pequeño cambio empezó una vez un nuevo capítulo en tu vida?",
+     "c": "Toma tres ideas de tu diario y escribe para cada una el momento de cambio que podría iniciar una historia."
+    },
+    "fr": {
+     "t": "L'étincelle de l'histoire",
+     "g": "Repère le moment de changement qui transforme une idée en véritable histoire.",
+     "p": [
+      "Une idée est une situation ; l'histoire commence quand quelque chose change ou rompt la routine.",
+      "L'étincelle peut être petite : une lettre arrive, une inconnue demande de l'aide, une porte s'ouvre.",
+      "Demande-toi : qu'est-ce qui est différent aujourd'hui pour mon personnage ?"
+     ],
+     "q": "Quel petit changement a un jour ouvert un nouveau chapitre de ta vie ?",
+     "c": "Prends trois idées de ton carnet et écris pour chacune le moment de changement qui pourrait lancer une histoire."
+    },
+    "it": {
+     "t": "La scintilla della storia",
+     "g": "Riconosci il momento di cambiamento che trasforma un'idea in una vera storia.",
+     "p": [
+      "Un'idea è una situazione; la storia inizia quando qualcosa cambia o rompe la routine.",
+      "La scintilla può essere piccola: arriva una lettera, uno sconosciuto chiede aiuto, una porta si apre.",
+      "Chiediti: cosa c'è di diverso oggi per il mio personaggio rispetto a tutti gli altri giorni?"
+     ],
+     "q": "Quale piccolo cambiamento ha aperto un nuovo capitolo nella tua vita?",
+     "c": "Prendi tre idee dal tuo diario e scrivi per ciascuna il momento di cambiamento che potrebbe far partire una storia."
+    },
+    "pt": {
+     "t": "A faísca da história",
+     "g": "Identifica o momento de mudança que transforma uma ideia numa história a sério.",
+     "p": [
+      "Uma ideia é uma situação; a história começa quando algo muda ou quebra a rotina.",
+      "A faísca pode ser pequena: chega uma carta, um desconhecido pede ajuda, uma porta abre-se.",
+      "Pergunta: o que é diferente hoje para a minha personagem, em relação a todos os outros dias?"
+     ],
+     "q": "Que pequena mudança já deu início a um novo capítulo na tua vida?",
+     "c": "Pega em três ideias do teu diário e escreve para cada uma o momento de mudança que podia dar início a uma história."
+    },
+    "pt_BR": {
+     "t": "A faísca da história",
+     "g": "Identifique o momento de mudança que transforma uma ideia em uma história de verdade.",
+     "p": [
+      "Uma ideia é uma situação; a história começa quando algo muda ou quebra a rotina.",
+      "A faísca pode ser pequena: chega uma carta, um desconhecido pede ajuda, uma porta se abre.",
+      "Pergunte: o que está diferente hoje para meu personagem, em relação a todos os outros dias?"
+     ],
+     "q": "Que pequena mudança já deu início a um novo capítulo na sua vida?",
+     "c": "Pegue três ideias do seu diário e escreva para cada uma o momento de mudança que poderia começar uma história."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beginning, middle and end",
+     "g": "Learn the simplest story shape and what each part needs to do.",
+     "p": [
+      "The beginning shows the character, their world and the spark that changes things.",
+      "The middle is the journey: attempts, obstacles and rising stakes toward the goal.",
+      "The end resolves the want, shows what changed and leaves the reader satisfied."
+     ],
+     "q": "Which story ending has stayed with you because it felt just right?",
+     "c": "Plan a short story in three lines: one for the beginning, one for the middle and one for the end."
+    },
+    "de": {
+     "t": "Anfang, Mitte und Ende",
+     "g": "Lerne die einfachste Form einer Geschichte kennen und was jeder Teil leisten muss.",
+     "p": [
+      "Der Anfang zeigt die Figur, ihre Welt und den Funken, der alles verändert.",
+      "Die Mitte ist der Weg: Versuche, Hindernisse und wachsende Herausforderungen auf dem Weg zum Ziel.",
+      "Das Ende löst den Wunsch auf, zeigt, was sich verändert hat, und lässt Lesende zufrieden zurück."
+     ],
+     "q": "Welches Ende einer Geschichte ist dir geblieben, weil es sich genau richtig anfühlte?",
+     "c": "Plane eine kurze Geschichte in drei Zeilen: eine für den Anfang, eine für die Mitte und eine für das Ende."
+    },
+    "es": {
+     "t": "Principio, nudo y desenlace",
+     "g": "Aprende la forma más sencilla de una historia y lo que debe hacer cada parte.",
+     "p": [
+      "El principio presenta al personaje, su mundo y la chispa que lo cambia todo.",
+      "El nudo es el viaje: intentos, obstáculos y retos que crecen hacia la meta.",
+      "El desenlace resuelve el deseo, muestra qué cambió y deja satisfecho al lector."
+     ],
+     "q": "¿Qué final de una historia se te ha quedado porque te pareció perfecto?",
+     "c": "Planifica un cuento breve en tres líneas: una para el principio, otra para el nudo y otra para el desenlace."
+    },
+    "fr": {
+     "t": "Début, milieu et fin",
+     "g": "Découvre la forme d'histoire la plus simple et le rôle de chaque partie.",
+     "p": [
+      "Le début présente le personnage, son monde et l'étincelle qui change tout.",
+      "Le milieu est le voyage : tentatives, obstacles et enjeux qui montent vers le but.",
+      "La fin résout le désir, montre ce qui a changé et laisse le lecteur comblé."
+     ],
+     "q": "Quelle fin d'histoire t'est restée parce qu'elle semblait juste parfaite ?",
+     "c": "Planifie une courte histoire en trois lignes : une pour le début, une pour le milieu et une pour la fin."
+    },
+    "it": {
+     "t": "Inizio, svolgimento e fine",
+     "g": "Impara la forma più semplice di una storia e cosa deve fare ogni parte.",
+     "p": [
+      "L'inizio presenta il personaggio, il suo mondo e la scintilla che cambia tutto.",
+      "Lo svolgimento è il viaggio: tentativi, ostacoli e sfide crescenti verso l'obiettivo.",
+      "La fine risolve il desiderio, mostra cosa è cambiato e lascia il lettore soddisfatto."
+     ],
+     "q": "Quale finale di una storia ti è rimasto perché sembrava proprio giusto?",
+     "c": "Progetta un racconto breve in tre righe: una per l'inizio, una per lo svolgimento e una per la fine."
+    },
+    "pt": {
+     "t": "Início, meio e fim",
+     "g": "Aprende a forma mais simples de uma história e o que cada parte tem de fazer.",
+     "p": [
+      "O início mostra a personagem, o seu mundo e a faísca que muda tudo.",
+      "O meio é a viagem: tentativas, obstáculos e desafios crescentes rumo ao objetivo.",
+      "O fim resolve o desejo, mostra o que mudou e deixa o leitor satisfeito."
+     ],
+     "q": "Que final de história ficou contigo por te parecer mesmo certo?",
+     "c": "Planeia um conto curto em três linhas: uma para o início, uma para o meio e uma para o fim."
+    },
+    "pt_BR": {
+     "t": "Começo, meio e fim",
+     "g": "Aprenda a forma mais simples de uma história e o que cada parte precisa fazer.",
+     "p": [
+      "O começo mostra o personagem, o mundo dele e a faísca que muda tudo.",
+      "O meio é a jornada: tentativas, obstáculos e desafios crescentes rumo ao objetivo.",
+      "O fim resolve o desejo, mostra o que mudou e deixa o leitor satisfeito."
+     ],
+     "q": "Que final de história ficou com você porque pareceu simplesmente certo?",
+     "c": "Planeje um conto curto em três linhas: uma para o começo, uma para o meio e uma para o fim."
+    }
+   }
+  }
+ ]
+}

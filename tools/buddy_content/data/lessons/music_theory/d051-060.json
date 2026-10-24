@@ -1,0 +1,835 @@
+{
+ "topic": "music_theory",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tempo markings",
+     "g": "Learn Italian tempo words like adagio, andante and allegro.",
+     "p": [
+      "Composers often write tempo in Italian at the top of the music.",
+      "Largo and adagio are slow, andante is a walking pace, moderato is moderate.",
+      "Allegro is fast and lively, and presto is very fast."
+     ],
+     "q": "Which tempo word best describes your mood today?",
+     "c": "Walk around the room at an andante pace, then allegro, then adagio. Feel how each one changes you."
+    },
+    "de": {
+     "t": "Tempobezeichnungen",
+     "g": "Italienische Tempowörter wie Adagio, Andante und Allegro lernen.",
+     "p": [
+      "Komponisten schreiben das Tempo oft auf Italienisch über die Noten.",
+      "Largo und Adagio sind langsam, Andante ist gehend, Moderato mäßig.",
+      "Allegro ist schnell und munter, Presto sehr schnell."
+     ],
+     "q": "Welches Tempowort beschreibt deine heutige Stimmung am besten?",
+     "c": "Geh im Raum erst andante, dann allegro, dann adagio. Spür, wie jedes Tempo dich verändert."
+    },
+    "es": {
+     "t": "Indicaciones de tempo",
+     "g": "Aprender palabras italianas de tempo como adagio, andante y allegro.",
+     "p": [
+      "Los compositores suelen escribir el tempo en italiano al principio de la partitura.",
+      "Largo y adagio son lentos, andante es a paso de caminar, moderato es moderado.",
+      "Allegro es rápido y alegre, y presto es muy rápido."
+     ],
+     "q": "¿Qué palabra de tempo describe mejor tu ánimo de hoy?",
+     "c": "Camina por la habitación a paso andante, luego allegro y luego adagio. Nota cómo te cambia cada uno."
+    },
+    "fr": {
+     "t": "Les indications de tempo",
+     "g": "Apprendre des mots italiens de tempo comme adagio, andante et allegro.",
+     "p": [
+      "Les compositeurs écrivent souvent le tempo en italien en haut de la partition.",
+      "Largo et adagio sont lents, andante est une allure de marche, moderato est modéré.",
+      "Allegro est rapide et joyeux, presto très rapide."
+     ],
+     "q": "Quel mot de tempo décrit le mieux ton humeur aujourd'hui ?",
+     "c": "Marche dans la pièce andante, puis allegro, puis adagio. Sens comment chaque tempo te change."
+    },
+    "it": {
+     "t": "Le indicazioni di tempo",
+     "g": "Imparare parole di tempo come adagio, andante e allegro.",
+     "p": [
+      "I compositori scrivono spesso il tempo in italiano all'inizio dello spartito.",
+      "Largo e adagio sono lenti, andante è a passo d'uomo, moderato è moderato.",
+      "Allegro è veloce e vivace, presto è molto veloce."
+     ],
+     "q": "Quale parola di tempo descrive meglio il tuo umore di oggi?",
+     "c": "Cammina per la stanza andante, poi allegro, poi adagio. Senti come ognuno ti cambia."
+    },
+    "pt": {
+     "t": "Indicações de andamento",
+     "g": "Aprender palavras italianas de andamento como adagio, andante e allegro.",
+     "p": [
+      "Os compositores escrevem muitas vezes o andamento em italiano no início da partitura.",
+      "Largo e adagio são lentos, andante é ao passo de quem anda, moderato é moderado.",
+      "Allegro é rápido e alegre, e presto é muito rápido."
+     ],
+     "q": "Que palavra de andamento descreve melhor o teu humor hoje?",
+     "c": "Anda pela sala em andante, depois allegro e depois adagio. Sente como cada um te muda."
+    },
+    "pt_BR": {
+     "t": "Indicações de andamento",
+     "g": "Aprender palavras italianas de andamento como adagio, andante e allegro.",
+     "p": [
+      "Os compositores costumam escrever o andamento em italiano no começo da partitura.",
+      "Largo e adagio são lentos, andante é no passo de quem caminha, moderato é moderado.",
+      "Allegro é rápido e alegre, e presto é muito rápido."
+     ],
+     "q": "Qual palavra de andamento descreve melhor seu humor hoje?",
+     "c": "Caminhe pela sala em andante, depois allegro e depois adagio. Sinta como cada um muda você."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beats per minute",
+     "g": "Measure tempo in BPM with a metronome.",
+     "p": [
+      "BPM means beats per minute: 60 BPM is exactly one beat per second.",
+      "Slow ballads are often around 60 to 80 BPM, and many dance tracks around 120 to 130 BPM.",
+      "A metronome, or a free metronome app, clicks at any BPM you choose."
+     ],
+     "q": "What BPM do you think your favourite song has?",
+     "c": "Tap along to a song for 15 seconds, count the taps and multiply by 4 to estimate its BPM."
+    },
+    "de": {
+     "t": "Schläge pro Minute",
+     "g": "Das Tempo in BPM mit einem Metronom messen.",
+     "p": [
+      "BPM heißt Schläge pro Minute: 60 BPM ist genau ein Schlag pro Sekunde.",
+      "Langsame Balladen liegen oft bei 60 bis 80 BPM, viele Tanztracks bei 120 bis 130 BPM.",
+      "Ein Metronom oder eine kostenlose Metronom-App klickt in jedem gewünschten Tempo."
+     ],
+     "q": "Welche BPM hat wohl dein Lieblingslied?",
+     "c": "Tipp 15 Sekunden zu einem Lied mit, zähl die Schläge und nimm sie mal 4, um die BPM zu schätzen."
+    },
+    "es": {
+     "t": "Pulsos por minuto",
+     "g": "Medir el tempo en BPM con un metrónomo.",
+     "p": [
+      "BPM significa pulsos por minuto: 60 BPM es justo un pulso por segundo.",
+      "Las baladas lentas suelen ir a 60-80 BPM, y muchos temas de baile a 120-130 BPM.",
+      "Un metrónomo, o una app de metrónomo gratis, marca clics al BPM que elijas."
+     ],
+     "q": "¿Cuántos BPM crees que tiene tu canción favorita?",
+     "c": "Marca el pulso de una canción durante 15 segundos, cuenta los golpes y multiplica por 4 para estimar sus BPM."
+    },
+    "fr": {
+     "t": "Battements par minute",
+     "g": "Mesurer le tempo en BPM avec un métronome.",
+     "p": [
+      "BPM signifie battements par minute : 60 BPM, c'est exactement un temps par seconde.",
+      "Les ballades lentes tournent souvent autour de 60 à 80 BPM, beaucoup de titres dance vers 120 à 130.",
+      "Un métronome, ou une appli gratuite, fait des clics au BPM de ton choix."
+     ],
+     "q": "À ton avis, quel est le BPM de ta chanson préférée ?",
+     "c": "Tape la pulsation d'une chanson pendant 15 secondes, compte et multiplie par 4 pour estimer son BPM."
+    },
+    "it": {
+     "t": "Battiti al minuto",
+     "g": "Misurare il tempo in BPM con un metronomo.",
+     "p": [
+      "BPM vuol dire battiti al minuto: 60 BPM è esattamente un battito al secondo.",
+      "Le ballate lente sono spesso tra 60 e 80 BPM, molti brani dance tra 120 e 130 BPM.",
+      "Un metronomo, o un'app metronomo gratuita, fa clic al BPM che scegli."
+     ],
+     "q": "Secondo te quanti BPM ha la tua canzone preferita?",
+     "c": "Batti il tempo di una canzone per 15 secondi, conta i colpi e moltiplica per 4 per stimarne i BPM."
+    },
+    "pt": {
+     "t": "Batidas por minuto",
+     "g": "Medir o andamento em BPM com um metrónomo.",
+     "p": [
+      "BPM significa batidas por minuto: 60 BPM é exatamente uma batida por segundo.",
+      "Baladas lentas andam muitas vezes pelos 60 a 80 BPM, e muitas músicas de dança pelos 120 a 130.",
+      "Um metrónomo, ou uma aplicação de metrónomo gratuita, dá cliques ao BPM que escolheres."
+     ],
+     "q": "Quantos BPM achas que tem a tua música preferida?",
+     "c": "Marca a pulsação de uma música durante 15 segundos, conta as batidas e multiplica por 4 para estimar o BPM."
+    },
+    "pt_BR": {
+     "t": "Batidas por minuto",
+     "g": "Medir o andamento em BPM com um metrônomo.",
+     "p": [
+      "BPM significa batidas por minuto: 60 BPM é exatamente uma batida por segundo.",
+      "Baladas lentas costumam ficar entre 60 e 80 BPM, e muitas músicas de dança entre 120 e 130.",
+      "Um metrônomo, ou um app de metrônomo gratuito, faz cliques no BPM que você escolher."
+     ],
+     "q": "Quantos BPM você acha que sua música favorita tem?",
+     "c": "Marque a pulsação de uma música por 15 segundos, conte as batidas e multiplique por 4 para estimar o BPM."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising with a metronome",
+     "g": "Use a click to build steady timing.",
+     "p": [
+      "A metronome shows you honestly whether you rush or drag.",
+      "Start slower than you think you need, play it perfectly, then raise the BPM a little.",
+      "Try hearing the click on beats 2 and 4 only: it builds a strong inner groove."
+     ],
+     "q": "Do you tend to speed up or slow down when you play or sing?",
+     "c": "Set a metronome to 70 BPM and clap quarters, then eighths, for one minute each without drifting."
+    },
+    "de": {
+     "t": "Üben mit Metronom",
+     "g": "Mit einem Klick ein stabiles Timing aufbauen.",
+     "p": [
+      "Ein Metronom zeigt dir ehrlich, ob du eilst oder schleppst.",
+      "Fang langsamer an als nötig, spiel es fehlerfrei und erhöh dann die BPM ein wenig.",
+      "Lass den Klick nur auf 2 und 4 kommen: Das stärkt dein inneres Groovegefühl."
+     ],
+     "q": "Wirst du beim Spielen oder Singen eher schneller oder langsamer?",
+     "c": "Stell ein Metronom auf 70 BPM und klatsch je eine Minute Viertel und dann Achtel, ohne abzuweichen."
+    },
+    "es": {
+     "t": "Practicar con metrónomo",
+     "g": "Usar un clic para conseguir un ritmo estable.",
+     "p": [
+      "El metrónomo te muestra con sinceridad si te adelantas o te atrasas.",
+      "Empieza más lento de lo que crees necesario, tócalo perfecto y luego sube un poco el BPM.",
+      "Prueba a oír el clic solo en los pulsos 2 y 4: eso crea un buen groove interior."
+     ],
+     "q": "¿Tiendes a acelerarte o a frenarte al tocar o cantar?",
+     "c": "Pon un metrónomo a 70 BPM y aplaude negras y luego corcheas, un minuto cada una, sin desviarte."
+    },
+    "fr": {
+     "t": "Travailler avec un métronome",
+     "g": "Utiliser un clic pour construire un tempo stable.",
+     "p": [
+      "Le métronome te montre honnêtement si tu presses ou si tu traînes.",
+      "Commence plus lentement que nécessaire, joue parfaitement, puis monte un peu le BPM.",
+      "Essaie de n'entendre le clic que sur les temps 2 et 4 : cela muscle ton groove intérieur."
+     ],
+     "q": "As-tu tendance à accélérer ou ralentir quand tu joues ou chantes ?",
+     "c": "Règle un métronome à 70 BPM et frappe des noires puis des croches, une minute chacune, sans dériver."
+    },
+    "it": {
+     "t": "Studiare col metronomo",
+     "g": "Usare un clic per costruire un tempo stabile.",
+     "p": [
+      "Il metronomo ti mostra onestamente se corri o se rallenti.",
+      "Parti più lento di quanto pensi, suona perfettamente e poi alza un po' i BPM.",
+      "Prova a sentire il clic solo su 2 e 4: rafforza il tuo groove interiore."
+     ],
+     "q": "Tendi ad accelerare o a rallentare quando suoni o canti?",
+     "c": "Imposta il metronomo a 70 BPM e batti semiminime e poi crome, un minuto ciascuna, senza sbandare."
+    },
+    "pt": {
+     "t": "Praticar com metrónomo",
+     "g": "Usar um clique para ganhar um tempo estável.",
+     "p": [
+      "O metrónomo mostra-te com honestidade se estás a apressar ou a arrastar.",
+      "Começa mais devagar do que achas preciso, toca na perfeição e depois sobe um pouco o BPM.",
+      "Experimenta ouvir o clique só nos tempos 2 e 4: isso cria um bom groove interior."
+     ],
+     "q": "Tens tendência para acelerar ou abrandar quando tocas ou cantas?",
+     "c": "Põe um metrónomo a 70 BPM e bate semínimas e depois colcheias, um minuto cada, sem fugir do tempo."
+    },
+    "pt_BR": {
+     "t": "Praticando com metrônomo",
+     "g": "Usar um clique para ganhar um tempo firme.",
+     "p": [
+      "O metrônomo mostra com sinceridade se você está correndo ou atrasando.",
+      "Comece mais devagar do que acha necessário, toque perfeito e depois suba um pouco o BPM.",
+      "Experimente ouvir o clique só nos tempos 2 e 4: isso cria um ótimo groove interno."
+     ],
+     "q": "Você costuma acelerar ou atrasar quando toca ou canta?",
+     "c": "Coloque um metrônomo em 70 BPM e bata semínimas e depois colcheias, um minuto cada, sem sair do tempo."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slowing down and speeding up",
+     "g": "Use ritardando and accelerando for expression.",
+     "p": [
+      "Ritardando (rit.) means gradually slowing down, often at the end of a song.",
+      "Accelerando (accel.) means gradually speeding up, building excitement.",
+      "A tempo means go back to the original speed after a change."
+     ],
+     "q": "Can you remember a song that slows down beautifully at the end?",
+     "c": "Count 1 to 8 while clapping, start slowly and accelerate, then repeat with a gentle ritardando."
+    },
+    "de": {
+     "t": "Langsamer und schneller werden",
+     "g": "Ritardando und Accelerando ausdrucksvoll einsetzen.",
+     "p": [
+      "Ritardando (rit.) heißt allmählich langsamer werden, oft am Ende eines Liedes.",
+      "Accelerando (accel.) heißt allmählich schneller werden und Spannung aufbauen.",
+      "A tempo bedeutet: zurück zum ursprünglichen Tempo nach einer Änderung."
+     ],
+     "q": "Kennst du ein Lied, das am Ende schön langsamer wird?",
+     "c": "Zähl klatschend von 1 bis 8, langsam beginnend und immer schneller, dann noch einmal mit sanftem Ritardando."
+    },
+    "es": {
+     "t": "Frenar y acelerar",
+     "g": "Usar ritardando y accelerando para expresar.",
+     "p": [
+      "Ritardando (rit.) significa ir frenando poco a poco, a menudo al final de una canción.",
+      "Accelerando (accel.) significa ir acelerando poco a poco y crear emoción.",
+      "A tempo significa volver a la velocidad original después de un cambio."
+     ],
+     "q": "¿Recuerdas una canción que frena de forma bonita al final?",
+     "c": "Cuenta del 1 al 8 aplaudiendo, empieza despacio y acelera, luego repite con un ritardando suave."
+    },
+    "fr": {
+     "t": "Ralentir et accélérer",
+     "g": "Utiliser ritardando et accelerando pour l'expression.",
+     "p": [
+      "Ritardando (rit.) veut dire ralentir progressivement, souvent à la fin d'une chanson.",
+      "Accelerando (accel.) veut dire accélérer progressivement et faire monter l'excitation.",
+      "A tempo veut dire revenir à la vitesse de départ après un changement."
+     ],
+     "q": "Te souviens-tu d'une chanson qui ralentit joliment à la fin ?",
+     "c": "Compte de 1 à 8 en frappant, commence lentement et accélère, puis recommence avec un doux ritardando."
+    },
+    "it": {
+     "t": "Rallentare e accelerare",
+     "g": "Usare ritardando e accelerando per esprimersi.",
+     "p": [
+      "Ritardando (rit.) vuol dire rallentare gradualmente, spesso alla fine di un brano.",
+      "Accelerando (accel.) vuol dire accelerare gradualmente, creando entusiasmo.",
+      "A tempo vuol dire tornare alla velocità originale dopo un cambiamento."
+     ],
+     "q": "Ricordi una canzone che rallenta in modo bellissimo alla fine?",
+     "c": "Conta da 1 a 8 battendo le mani, parti piano e accelera, poi ripeti con un dolce ritardando."
+    },
+    "pt": {
+     "t": "Abrandar e acelerar",
+     "g": "Usar ritardando e accelerando para dar expressão.",
+     "p": [
+      "Ritardando (rit.) significa ir abrandando aos poucos, muitas vezes no fim de uma música.",
+      "Accelerando (accel.) significa ir acelerando aos poucos e criar entusiasmo.",
+      "A tempo significa voltar à velocidade original depois de uma mudança."
+     ],
+     "q": "Lembras-te de uma música que abranda de forma bonita no fim?",
+     "c": "Conta de 1 a 8 a bater palmas, começa devagar e acelera, depois repete com um ritardando suave."
+    },
+    "pt_BR": {
+     "t": "Desacelerar e acelerar",
+     "g": "Usar ritardando e accelerando para dar expressão.",
+     "p": [
+      "Ritardando (rit.) significa ir desacelerando aos poucos, muitas vezes no fim de uma música.",
+      "Accelerando (accel.) significa ir acelerando aos poucos e criar empolgação.",
+      "A tempo significa voltar à velocidade original depois de uma mudança."
+     ],
+     "q": "Você lembra de uma música que desacelera de um jeito lindo no final?",
+     "c": "Conte de 1 a 8 batendo palma, comece devagar e acelere, depois repita com um ritardando suave."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dynamic markings",
+     "g": "Read p, mf, f and other symbols for volume.",
+     "p": [
+      "Dynamic markings are short letters under the staff: p for piano (soft), f for forte (loud).",
+      "Adding m (mezzo, moderately) gives mp and mf; doubling gives pp and ff.",
+      "From softest to loudest: pp, p, mp, mf, f, ff."
+     ],
+     "q": "Which dynamic level do you usually sing or speak at?",
+     "c": "Say the alphabet from A to F, each letter one level louder: pp, p, mp, mf, f, ff."
+    },
+    "de": {
+     "t": "Dynamikzeichen",
+     "g": "p, mf, f und andere Lautstärkezeichen lesen.",
+     "p": [
+      "Dynamikzeichen sind kurze Buchstaben unter den Noten: p für piano (leise), f für forte (laut).",
+      "Mit m (mezzo, mäßig) entstehen mp und mf, verdoppelt ergeben sich pp und ff.",
+      "Von ganz leise bis ganz laut: pp, p, mp, mf, f, ff."
+     ],
+     "q": "In welcher Lautstärke singst oder sprichst du meistens?",
+     "c": "Sag A bis F, jeden Buchstaben eine Stufe lauter: pp, p, mp, mf, f, ff."
+    },
+    "es": {
+     "t": "Signos de dinámica",
+     "g": "Leer p, mf, f y otros símbolos de volumen.",
+     "p": [
+      "Los signos de dinámica son letras bajo el pentagrama: p de piano (suave), f de forte (fuerte).",
+      "Añadiendo m (mezzo, moderadamente) salen mp y mf; duplicando, pp y ff.",
+      "Del más suave al más fuerte: pp, p, mp, mf, f, ff."
+     ],
+     "q": "¿A qué nivel de dinámica sueles cantar o hablar?",
+     "c": "Di do re mi fa sol la, cada nota un nivel más fuerte: pp, p, mp, mf, f, ff."
+    },
+    "fr": {
+     "t": "Les signes de nuances",
+     "g": "Lire p, mf, f et les autres signes de volume.",
+     "p": [
+      "Les nuances sont de courtes lettres sous la portée : p pour piano (doux), f pour forte (fort).",
+      "Avec m (mezzo, moyennement) on obtient mp et mf ; en doublant, pp et ff.",
+      "Du plus doux au plus fort : pp, p, mp, mf, f, ff."
+     ],
+     "q": "À quel niveau de nuance chantes-tu ou parles-tu d'habitude ?",
+     "c": "Dis do ré mi fa sol la, chaque note un niveau plus fort : pp, p, mp, mf, f, ff."
+    },
+    "it": {
+     "t": "I segni dinamici",
+     "g": "Leggere p, mf, f e gli altri segni di intensità.",
+     "p": [
+      "I segni dinamici sono brevi lettere sotto il pentagramma: p per piano, f per forte.",
+      "Aggiungendo m (mezzo) si ottengono mp e mf; raddoppiando, pp e ff.",
+      "Dal più piano al più forte: pp, p, mp, mf, f, ff."
+     ],
+     "q": "A che livello dinamico canti o parli di solito?",
+     "c": "Di' do re mi fa sol la, ogni nota un livello più forte: pp, p, mp, mf, f, ff."
+    },
+    "pt": {
+     "t": "Sinais de dinâmica",
+     "g": "Ler p, mf, f e outros símbolos de volume.",
+     "p": [
+      "Os sinais de dinâmica são letras curtas sob a pauta: p de piano (suave), f de forte.",
+      "Juntando m (mezzo, moderadamente) temos mp e mf; duplicando, pp e ff.",
+      "Do mais suave ao mais forte: pp, p, mp, mf, f, ff."
+     ],
+     "q": "Em que nível de dinâmica costumas cantar ou falar?",
+     "c": "Diz dó ré mi fá sol lá, cada nota um nível mais forte: pp, p, mp, mf, f, ff."
+    },
+    "pt_BR": {
+     "t": "Sinais de dinâmica",
+     "g": "Ler p, mf, f e outros símbolos de volume.",
+     "p": [
+      "Os sinais de dinâmica são letras curtas abaixo do pentagrama: p de piano (suave), f de forte.",
+      "Somando m (mezzo, moderadamente) temos mp e mf; dobrando, pp e ff.",
+      "Do mais suave ao mais forte: pp, p, mp, mf, f, ff."
+     ],
+     "q": "Em que nível de dinâmica você costuma cantar ou falar?",
+     "c": "Diga dó ré mi fá sol lá, cada nota um nível mais forte: pp, p, mp, mf, f, ff."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crescendo and diminuendo",
+     "g": "Gradually get louder or softer.",
+     "p": [
+      "Crescendo (cresc.) means gradually getting louder; diminuendo (dim.) means gradually softer.",
+      "They are often drawn as long open wedges called hairpins: opening for louder, closing for softer.",
+      "A slow crescendo can build huge excitement before the chorus of a song."
+     ],
+     "q": "Can you think of a song that builds up louder and louder before a big moment?",
+     "c": "Hum one long note: start pp, crescendo to f over four beats, then diminuendo back to pp."
+    },
+    "de": {
+     "t": "Crescendo und Decrescendo",
+     "g": "Allmählich lauter oder leiser werden.",
+     "p": [
+      "Crescendo (cresc.) heißt allmählich lauter, Decrescendo oder Diminuendo (dim.) allmählich leiser.",
+      "Man zeichnet sie oft als lange Gabeln: sich öffnend für lauter, sich schließend für leiser.",
+      "Ein langsames Crescendo kann vor dem Refrain große Spannung aufbauen."
+     ],
+     "q": "Fällt dir ein Lied ein, das vor einem großen Moment immer lauter wird?",
+     "c": "Summ einen langen Ton: Beginn pp, Crescendo bis f über vier Schläge, dann Decrescendo zurück zu pp."
+    },
+    "es": {
+     "t": "Crescendo y diminuendo",
+     "g": "Ir subiendo o bajando el volumen poco a poco.",
+     "p": [
+      "Crescendo (cresc.) es ir aumentando el volumen; diminuendo (dim.) es ir bajándolo.",
+      "Se dibujan a menudo como reguladores en forma de cuña: abriéndose para subir, cerrándose para bajar.",
+      "Un crescendo lento puede crear mucha emoción antes del estribillo."
+     ],
+     "q": "¿Se te ocurre una canción que va subiendo y subiendo antes de un gran momento?",
+     "c": "Tararea una nota larga: empieza en pp, haz crescendo hasta f en cuatro pulsos y luego diminuendo hasta pp."
+    },
+    "fr": {
+     "t": "Crescendo et decrescendo",
+     "g": "Devenir progressivement plus fort ou plus doux.",
+     "p": [
+      "Crescendo (cresc.) veut dire de plus en plus fort ; decrescendo ou diminuendo (dim.), de plus en plus doux.",
+      "On les dessine souvent en soufflets : qui s'ouvre pour plus fort, qui se ferme pour plus doux.",
+      "Un crescendo lent peut créer une énorme tension avant le refrain."
+     ],
+     "q": "Connais-tu une chanson qui monte de plus en plus fort avant un grand moment ?",
+     "c": "Fredonne une note longue : pars de pp, crescendo jusqu'à f en quatre temps, puis decrescendo jusqu'à pp."
+    },
+    "it": {
+     "t": "Crescendo e diminuendo",
+     "g": "Diventare gradualmente più forte o più piano.",
+     "p": [
+      "Crescendo (cresc.) vuol dire aumentare gradualmente l'intensità; diminuendo (dim.) diminuirla.",
+      "Spesso si disegnano come forcelle: che si aprono per crescere, che si chiudono per diminuire.",
+      "Un crescendo lento può creare grande tensione prima del ritornello."
+     ],
+     "q": "Ti viene in mente una canzone che cresce sempre di più prima di un grande momento?",
+     "c": "Canticchia una nota lunga: parti pp, crescendo fino a f in quattro movimenti, poi diminuendo fino a pp."
+    },
+    "pt": {
+     "t": "Crescendo e diminuendo",
+     "g": "Ir ficando mais forte ou mais suave aos poucos.",
+     "p": [
+      "Crescendo (cresc.) significa ir aumentando o volume; diminuendo (dim.) significa ir diminuindo.",
+      "Desenham-se muitas vezes como forquilhas: a abrir para mais forte, a fechar para mais suave.",
+      "Um crescendo lento pode criar muita emoção antes do refrão."
+     ],
+     "q": "Lembras-te de uma música que vai ficando cada vez mais forte antes de um grande momento?",
+     "c": "Cantarola uma nota longa: começa em pp, faz crescendo até f em quatro tempos e depois diminuendo até pp."
+    },
+    "pt_BR": {
+     "t": "Crescendo e diminuendo",
+     "g": "Ir ficando mais forte ou mais suave aos poucos.",
+     "p": [
+      "Crescendo (cresc.) significa ir aumentando o volume; diminuendo (dim.) significa ir diminuindo.",
+      "Costumam ser desenhados como sinais em forma de cunha: abrindo para mais forte, fechando para mais suave.",
+      "Um crescendo lento pode criar muita emoção antes do refrão."
+     ],
+     "q": "Você lembra de uma música que vai ficando cada vez mais forte antes de um grande momento?",
+     "c": "Cantarole uma nota longa: comece em pp, faça crescendo até f em quatro tempos e depois diminuendo até pp."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Articulation",
+     "g": "Learn staccato, legato and accents.",
+     "p": [
+      "Staccato, shown by a dot above or below a note, means short and detached.",
+      "Legato, shown by a curved slur, means smooth and connected, with no gaps.",
+      "An accent (>) means play that note with extra emphasis."
+     ],
+     "q": "Which feels more like you: bouncy staccato or smooth legato?",
+     "c": "Sing do re mi fa sol twice: first staccato like raindrops, then legato like a flowing river."
+    },
+    "de": {
+     "t": "Artikulation",
+     "g": "Staccato, Legato und Akzente kennenlernen.",
+     "p": [
+      "Staccato, ein Punkt über oder unter der Note, heißt kurz und abgesetzt.",
+      "Legato, ein geschwungener Bogen, heißt gebunden und ohne Lücken.",
+      "Ein Akzent (>) bedeutet: diesen Ton besonders betonen."
+     ],
+     "q": "Was passt eher zu dir: hüpfendes Staccato oder fließendes Legato?",
+     "c": "Sing C D E F G zweimal: erst staccato wie Regentropfen, dann legato wie ein fließender Fluss."
+    },
+    "es": {
+     "t": "La articulación",
+     "g": "Aprender staccato, legato y acentos.",
+     "p": [
+      "El staccato, un punto encima o debajo de la nota, significa corto y separado.",
+      "El legato, una ligadura curva, significa suave y unido, sin huecos.",
+      "Un acento (>) significa tocar esa nota con más énfasis."
+     ],
+     "q": "¿Qué va más contigo: un staccato saltarín o un legato suave?",
+     "c": "Canta do re mi fa sol dos veces: primero staccato como gotas de lluvia, luego legato como un río."
+    },
+    "fr": {
+     "t": "L'articulation",
+     "g": "Apprendre le staccato, le legato et les accents.",
+     "p": [
+      "Le staccato, un point au-dessus ou en dessous de la note, veut dire court et détaché.",
+      "Le legato, indiqué par une liaison, veut dire lié et fluide, sans trous.",
+      "Un accent (>) veut dire jouer cette note avec plus d'appui."
+     ],
+     "q": "Qu'est-ce qui te ressemble le plus : un staccato sautillant ou un legato fluide ?",
+     "c": "Chante do ré mi fa sol deux fois : d'abord staccato comme des gouttes de pluie, puis legato comme une rivière."
+    },
+    "it": {
+     "t": "L'articolazione",
+     "g": "Imparare staccato, legato e accenti.",
+     "p": [
+      "Lo staccato, un punto sopra o sotto la nota, significa breve e separato.",
+      "Il legato, indicato da una legatura curva, significa fluido e unito, senza vuoti.",
+      "Un accento (>) significa suonare quella nota con più enfasi."
+     ],
+     "q": "Cosa ti somiglia di più: uno staccato saltellante o un legato fluido?",
+     "c": "Canta do re mi fa sol due volte: prima staccato come gocce di pioggia, poi legato come un fiume."
+    },
+    "pt": {
+     "t": "A articulação",
+     "g": "Aprender staccato, legato e acentos.",
+     "p": [
+      "O staccato, um ponto por cima ou por baixo da nota, significa curto e destacado.",
+      "O legato, indicado por uma ligadura curva, significa suave e ligado, sem espaços.",
+      "Um acento (>) significa tocar essa nota com mais ênfase."
+     ],
+     "q": "O que tem mais a ver contigo: um staccato saltitante ou um legato suave?",
+     "c": "Canta dó ré mi fá sol duas vezes: primeiro staccato como gotas de chuva, depois legato como um rio."
+    },
+    "pt_BR": {
+     "t": "Articulação",
+     "g": "Aprender staccato, legato e acentos.",
+     "p": [
+      "O staccato, um ponto acima ou abaixo da nota, significa curto e destacado.",
+      "O legato, indicado por uma ligadura curva, significa suave e ligado, sem espaços.",
+      "Um acento (>) significa tocar aquela nota com mais ênfase."
+     ],
+     "q": "O que tem mais a ver com você: um staccato saltitante ou um legato suave?",
+     "c": "Cante dó ré mi fá sol duas vezes: primeiro staccato como gotas de chuva, depois legato como um rio."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Repeat signs",
+     "g": "Understand repeat bars, first endings and second endings.",
+     "p": [
+      "A repeat sign is a double bar line with two dots: go back and play the section again.",
+      "If there is no opening repeat sign, you go back to the very beginning.",
+      "First and second endings: play ending 1 the first time, then skip to ending 2 after the repeat."
+     ],
+     "q": "Why do you think composers use repeat signs instead of writing everything out?",
+     "c": "Draw four bars with a repeat sign and two endings, then clap through them in the right order."
+    },
+    "de": {
+     "t": "Wiederholungszeichen",
+     "g": "Wiederholungen, erste und zweite Klammer verstehen.",
+     "p": [
+      "Ein Wiederholungszeichen ist ein Doppelstrich mit zwei Punkten: zurück und den Abschnitt nochmals spielen.",
+      "Gibt es kein öffnendes Zeichen, springst du ganz an den Anfang zurück.",
+      "Erste und zweite Klammer: beim ersten Mal Klammer 1, nach der Wiederholung direkt Klammer 2."
+     ],
+     "q": "Warum nutzen Komponisten wohl Wiederholungszeichen, statt alles auszuschreiben?",
+     "c": "Zeichne vier Takte mit Wiederholungszeichen und zwei Klammern und klatsch sie in der richtigen Reihenfolge."
+    },
+    "es": {
+     "t": "Signos de repetición",
+     "g": "Entender las barras de repetición y las casillas de primera y segunda vez.",
+     "p": [
+      "La barra de repetición es una doble barra con dos puntos: vuelve atrás y toca la sección otra vez.",
+      "Si no hay barra de inicio de repetición, vuelves al principio de todo.",
+      "Casillas de 1.ª y 2.ª vez: la primera vez tocas la 1, y tras repetir saltas a la 2."
+     ],
+     "q": "¿Por qué crees que los compositores usan repeticiones en vez de escribirlo todo?",
+     "c": "Dibuja cuatro compases con repetición y dos casillas, y aplaude siguiendo el orden correcto."
+    },
+    "fr": {
+     "t": "Les barres de reprise",
+     "g": "Comprendre les reprises, la première et la deuxième fin.",
+     "p": [
+      "Une barre de reprise est une double barre avec deux points : on revient en arrière pour rejouer la partie.",
+      "S'il n'y a pas de barre de reprise ouvrante, on revient tout au début.",
+      "Première et deuxième fin : joue la fin 1 la première fois, puis saute à la fin 2 après la reprise."
+     ],
+     "q": "Pourquoi les compositeurs utilisent-ils des reprises au lieu de tout écrire ?",
+     "c": "Dessine quatre mesures avec une reprise et deux fins, puis frappe-les dans le bon ordre."
+    },
+    "it": {
+     "t": "I segni di ritornello",
+     "g": "Capire i ritornelli, la prima e la seconda volta.",
+     "p": [
+      "Il segno di ritornello è una doppia stanghetta con due punti: torna indietro e risuona la sezione.",
+      "Se non c'è un segno di inizio ritornello, si torna proprio all'inizio.",
+      "Prima e seconda volta: la prima volta suoni la casella 1, dopo la ripetizione salti alla 2."
+     ],
+     "q": "Perché secondo te i compositori usano i ritornelli invece di scrivere tutto?",
+     "c": "Disegna quattro battute con ritornello e caselle di prima e seconda volta, poi battile nell'ordine giusto."
+    },
+    "pt": {
+     "t": "Sinais de repetição",
+     "g": "Perceber as barras de repetição e as casas de primeira e segunda vez.",
+     "p": [
+      "A barra de repetição é uma barra dupla com dois pontos: volta atrás e toca a secção outra vez.",
+      "Se não houver barra de início de repetição, voltas ao princípio de tudo.",
+      "Casas de 1.ª e 2.ª vez: na primeira vez tocas a casa 1, depois da repetição saltas para a 2."
+     ],
+     "q": "Porque achas que os compositores usam repetições em vez de escrever tudo?",
+     "c": "Desenha quatro compassos com repetição e duas casas, e bate palmas pela ordem certa."
+    },
+    "pt_BR": {
+     "t": "Sinais de repetição",
+     "g": "Entender barras de repetição e as casas de primeira e segunda vez.",
+     "p": [
+      "O ritornelo é uma barra dupla com dois pontos: volte e toque o trecho de novo.",
+      "Se não houver barra de início de repetição, você volta para o começo de tudo.",
+      "Casas de 1ª e 2ª vez: na primeira vez toque a casa 1, depois da repetição pule para a 2."
+     ],
+     "q": "Por que você acha que os compositores usam repetição em vez de escrever tudo?",
+     "c": "Desenhe quatro compassos com ritornelo e duas casas, e bata palmas na ordem certa."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Musical road map symbols",
+     "g": "Understand D.C., D.S., Coda and Fine explained simply.",
+     "p": [
+      "D.C. (da capo) means go back to the beginning; D.S. (dal segno) means go back to the sign 𝄋.",
+      "Fine means the end: D.C. al Fine says go back to the start and stop at Fine.",
+      "Coda is a closing section: al Coda means jump to the coda symbol when you reach it."
+     ],
+     "q": "Do you like puzzles where you follow directions to find the way?",
+     "c": "Write a mini road map, A B C, with D.C. al Fine and Fine after A, then say aloud the order you play."
+    },
+    "de": {
+     "t": "Musikalische Wegweiser",
+     "g": "D.C., D.S., Coda und Fine einfach erklärt verstehen.",
+     "p": [
+      "D.C. (da capo) heißt zurück zum Anfang, D.S. (dal segno) zurück zum Zeichen 𝄋.",
+      "Fine heißt Ende: D.C. al Fine bedeutet, von vorn spielen und bei Fine aufhören.",
+      "Die Coda ist ein Schlussteil: al Coda heißt, beim Zeichen zur Coda springen."
+     ],
+     "q": "Magst du Rätsel, bei denen du Hinweisen folgst, um den Weg zu finden?",
+     "c": "Schreib eine Mini-Landkarte A B C mit Fine nach A und D.C. al Fine am Ende und sag laut die Spielreihenfolge."
+    },
+    "es": {
+     "t": "Señales del mapa musical",
+     "g": "Entender D.C., D.S., Coda y Fine de forma sencilla.",
+     "p": [
+      "D.C. (da capo) significa volver al principio; D.S. (dal segno), volver al signo 𝄋.",
+      "Fine significa fin: D.C. al Fine indica volver al inicio y parar en Fine.",
+      "La coda es una sección final: al Coda significa saltar al símbolo de coda cuando llegues a él."
+     ],
+     "q": "¿Te gustan los acertijos en los que sigues pistas para encontrar el camino?",
+     "c": "Escribe un mini mapa A B C con Fine tras A y D.C. al Fine al final, y di en voz alta el orden en que tocas."
+    },
+    "fr": {
+     "t": "Les panneaux de la partition",
+     "g": "Comprendre simplement D.C., D.S., Coda et Fine.",
+     "p": [
+      "D.C. (da capo) veut dire revenir au début ; D.S. (dal segno), revenir au signe 𝄋.",
+      "Fine veut dire fin : D.C. al Fine signifie reprendre au début et s'arrêter à Fine.",
+      "La coda est une partie finale : al Coda veut dire sauter au symbole de coda quand on l'atteint."
+     ],
+     "q": "Aimes-tu les jeux de piste où l'on suit des indications pour trouver le chemin ?",
+     "c": "Écris un mini plan A B C avec Fine après A et D.C. al Fine à la fin, puis dis à voix haute l'ordre joué."
+    },
+    "it": {
+     "t": "I segnali di percorso",
+     "g": "Capire in modo semplice D.C., D.S., Coda e Fine.",
+     "p": [
+      "D.C. (da capo) significa tornare all'inizio; D.S. (dal segno), tornare al segno 𝄋.",
+      "Fine indica la fine: D.C. al Fine vuol dire tornare all'inizio e fermarsi a Fine.",
+      "La coda è una sezione finale: al Coda vuol dire saltare al simbolo di coda quando lo incontri."
+     ],
+     "q": "Ti piacciono i giochi in cui segui indicazioni per trovare la strada?",
+     "c": "Scrivi una mini mappa A B C con Fine dopo A e D.C. al Fine alla fine, poi di' ad alta voce l'ordine."
+    },
+    "pt": {
+     "t": "Os sinais do mapa musical",
+     "g": "Perceber de forma simples D.C., D.S., Coda e Fine.",
+     "p": [
+      "D.C. (da capo) significa voltar ao início; D.S. (dal segno), voltar ao sinal 𝄋.",
+      "Fine significa fim: D.C. al Fine indica voltar ao início e parar em Fine.",
+      "A coda é uma secção final: al Coda significa saltar para o símbolo de coda quando lá chegares."
+     ],
+     "q": "Gostas de jogos em que segues pistas para descobrir o caminho?",
+     "c": "Escreve um mini mapa A B C com Fine depois de A e D.C. al Fine no fim, e diz em voz alta a ordem que tocas."
+    },
+    "pt_BR": {
+     "t": "Os sinais do mapa musical",
+     "g": "Entender de um jeito simples D.C., D.S., Coda e Fine.",
+     "p": [
+      "D.C. (da capo) significa voltar ao início; D.S. (dal segno), voltar ao sinal 𝄋.",
+      "Fine significa fim: D.C. al Fine indica voltar ao começo e parar no Fine.",
+      "A coda é um trecho final: al Coda significa pular para o símbolo de coda quando chegar nele."
+     ],
+     "q": "Você curte jogos em que segue pistas para achar o caminho?",
+     "c": "Escreva um mini mapa A B C com Fine depois de A e D.C. al Fine no final, e diga em voz alta a ordem que você toca."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: rhythm and expression",
+     "g": "Recap note values, time and dynamics with a rhythm reading challenge.",
+     "p": [
+      "Note values and rests fill bars, and the time signature tells you how many beats each bar holds.",
+      "Tempo words and BPM set the speed, and rit. and accel. change it.",
+      "Dynamics, articulation and road map symbols tell you how and in what order to play."
+     ],
+     "q": "Which rhythm or expression idea from this month do you want to practise more?",
+     "c": "Clap in 4/4: quarter, two eighths, half note, then dotted half and quarter, mf then crescendo to f."
+    },
+    "de": {
+     "t": "Wiederholung: Rhythmus und Ausdruck",
+     "g": "Notenwerte, Takt und Dynamik mit einer Rhythmus-Lese-Challenge wiederholen.",
+     "p": [
+      "Notenwerte und Pausen füllen Takte, die Taktart sagt, wie viele Schläge ein Takt hat.",
+      "Tempowörter und BPM legen das Tempo fest, rit. und accel. verändern es.",
+      "Dynamik, Artikulation und Wegweiser zeigen, wie und in welcher Reihenfolge du spielst."
+     ],
+     "q": "Welche Rhythmus- oder Ausdrucksidee aus diesem Monat willst du weiter üben?",
+     "c": "Klatsch im 4/4: Viertel, zwei Achtel, Halbe, dann punktierte Halbe und Viertel, erst mf, dann Crescendo zu f."
+    },
+    "es": {
+     "t": "Repaso: ritmo y expresión",
+     "g": "Repasar figuras, compás y dinámica con un reto de lectura rítmica.",
+     "p": [
+      "Las figuras y silencios llenan los compases, y la indicación de compás dice cuántos pulsos caben.",
+      "Las palabras de tempo y los BPM fijan la velocidad, y rit. y accel. la cambian.",
+      "Dinámica, articulación y señales del mapa indican cómo y en qué orden tocar."
+     ],
+     "q": "¿Qué idea de ritmo o expresión de este mes quieres practicar más?",
+     "c": "Aplaude en 4/4: negra, dos corcheas, blanca, luego blanca con puntillo y negra, en mf y crescendo a f."
+    },
+    "fr": {
+     "t": "Révision : rythme et expression",
+     "g": "Revoir valeurs, mesure et nuances avec un défi de lecture rythmique.",
+     "p": [
+      "Valeurs et silences remplissent les mesures, et le chiffrage indique combien de temps chacune contient.",
+      "Les mots de tempo et le BPM fixent la vitesse, rit. et accel. la modifient.",
+      "Nuances, articulation et panneaux de la partition disent comment et dans quel ordre jouer."
+     ],
+     "q": "Quelle idée de rythme ou d'expression de ce mois veux-tu travailler davantage ?",
+     "c": "Frappe en 4/4 : noire, deux croches, blanche, puis blanche pointée et noire, en mf puis crescendo jusqu'à f."
+    },
+    "it": {
+     "t": "Ripasso: ritmo ed espressione",
+     "g": "Ripassare figure, tempo e dinamica con una sfida di lettura ritmica.",
+     "p": [
+      "Figure e pause riempiono le battute, e l'indicazione di tempo dice quanti movimenti contiene ognuna.",
+      "Le parole di tempo e i BPM fissano la velocità, rit. e accel. la cambiano.",
+      "Dinamica, articolazione e segnali di percorso dicono come e in che ordine suonare."
+     ],
+     "q": "Quale idea di ritmo o espressione di questo mese vuoi esercitare di più?",
+     "c": "Batti in 4/4: semiminima, due crome, minima, poi minima puntata e semiminima, in mf e crescendo fino a f."
+    },
+    "pt": {
+     "t": "Revisão: ritmo e expressão",
+     "g": "Rever figuras, compasso e dinâmica com um desafio de leitura rítmica.",
+     "p": [
+      "Figuras e pausas enchem os compassos, e a fórmula de compasso diz quantos tempos cabem em cada um.",
+      "As palavras de andamento e o BPM definem a velocidade, e rit. e accel. mudam-na.",
+      "Dinâmica, articulação e sinais do mapa dizem como e por que ordem tocar."
+     ],
+     "q": "Que ideia de ritmo ou expressão deste mês queres praticar mais?",
+     "c": "Bate em 4/4: semínima, duas colcheias, mínima, depois mínima com ponto e semínima, em mf e crescendo até f."
+    },
+    "pt_BR": {
+     "t": "Revisão: ritmo e expressão",
+     "g": "Revisar figuras, compasso e dinâmica com um desafio de leitura rítmica.",
+     "p": [
+      "Figuras e pausas preenchem os compassos, e a fórmula de compasso diz quantos tempos cabem em cada um.",
+      "Palavras de andamento e BPM definem a velocidade, e rit. e accel. mudam.",
+      "Dinâmica, articulação e sinais do mapa dizem como e em que ordem tocar."
+     ],
+     "q": "Qual ideia de ritmo ou expressão deste mês você quer praticar mais?",
+     "c": "Bata em 4/4: semínima, duas colcheias, mínima, depois mínima pontuada e semínima, em mf e crescendo até f."
+    }
+   }
+  }
+ ]
+}

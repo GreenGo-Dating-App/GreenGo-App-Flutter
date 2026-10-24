@@ -1,0 +1,835 @@
+{
+ "topic": "poetry",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first forms",
+     "g": "Lightly review haiku, acrostics, list poems, limericks and stanzas.",
+     "p": [
+      "Haiku and senryu catch one moment in three short lines.",
+      "Acrostics, list poems, cinquains and shape poems play with structure.",
+      "Couplets, tercets and quatrains are building blocks for longer poems."
+     ],
+     "q": "Which form felt most natural to you, and which was the biggest challenge?",
+     "c": "Choose your favourite form so far and write one new poem in it about today."
+    },
+    "de": {
+     "t": "Rückblick: erste Formen",
+     "g": "Wiederhole locker Haiku, Akrostichon, Listengedicht, Limerick und Strophen.",
+     "p": [
+      "Haiku und Senryu fangen einen Moment in drei kurzen Zeilen ein.",
+      "Akrostichon, Listengedicht, Cinquain und Figurengedicht spielen mit der Struktur.",
+      "Reimpaar, Dreizeiler und Vierzeiler sind Bausteine für längere Gedichte."
+     ],
+     "q": "Welche Form fühlte sich am natürlichsten an, und welche war die größte Herausforderung?",
+     "c": "Wähle deine bisherige Lieblingsform und schreibe darin ein neues Gedicht über heute."
+    },
+    "es": {
+     "t": "Repaso: primeras formas",
+     "g": "Repasa sin prisa el haiku, el acróstico, el poema lista, el limerick y las estrofas.",
+     "p": [
+      "El haiku y el senryu atrapan un instante en tres versos cortos.",
+      "Acróstico, poema lista, cinquain y caligrama juegan con la estructura.",
+      "Pareado, terceto y cuarteta son piezas para poemas más largos."
+     ],
+     "q": "¿Qué forma te resultó más natural y cuál fue tu mayor reto?",
+     "c": "Elige tu forma favorita hasta ahora y escribe en ella un poema nuevo sobre hoy."
+    },
+    "fr": {
+     "t": "Révision : premières formes",
+     "g": "Réviser en douceur haïku, acrostiche, poème-liste, limerick et strophes.",
+     "p": [
+      "Haïku et senryū saisissent un instant en trois vers courts.",
+      "Acrostiche, poème-liste, cinquain et calligramme jouent avec la structure.",
+      "Distique, tercet et quatrain sont les briques des poèmes plus longs."
+     ],
+     "q": "Quelle forme t'a semblé la plus naturelle, et laquelle le plus grand défi ?",
+     "c": "Choisis ta forme préférée jusqu'ici et écris-y un nouveau poème sur aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: prime forme",
+     "g": "Ripassa con calma haiku, acrostico, poesia elenco, limerick e strofe.",
+     "p": [
+      "Haiku e senryu colgono un istante in tre versi brevi.",
+      "Acrostico, poesia elenco, cinquain e calligramma giocano con la struttura.",
+      "Distico, terzina e quartina sono i mattoni delle poesie più lunghe."
+     ],
+     "q": "Quale forma ti è sembrata più naturale e quale la sfida più grande?",
+     "c": "Scegli la tua forma preferita finora e scrivi una nuova poesia su oggi."
+    },
+    "pt": {
+     "t": "Revisão: primeiras formas",
+     "g": "Revê com calma o haiku, o acróstico, o poema lista, o limerique e as estrofes.",
+     "p": [
+      "O haiku e o senryu captam um instante em três versos curtos.",
+      "Acróstico, poema lista, cinquain e caligrama brincam com a estrutura.",
+      "Dístico, terceto e quadra são peças para poemas mais longos."
+     ],
+     "q": "Que forma te pareceu mais natural e qual foi o maior desafio?",
+     "c": "Escolhe a tua forma preferida até agora e escreve nela um poema novo sobre hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiras formas",
+     "g": "Revise com calma o haicai, o acróstico, o poema lista, o limerique e as estrofes.",
+     "p": [
+      "O haicai e o senryu captam um instante em três versos curtos.",
+      "Acróstico, poema lista, cinquain e poema visual brincam com a estrutura.",
+      "Dístico, terceto e quadra são peças para poemas mais longos."
+     ],
+     "q": "Qual forma pareceu mais natural para você e qual foi o maior desafio?",
+     "c": "Escolha sua forma favorita até agora e escreva nela um poema novo sobre hoje."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about everyday objects",
+     "g": "Find wonder in a cup, a key or a pair of shoes.",
+     "p": [
+      "Ordinary objects hold stories: where they came from, who used them, what they have seen.",
+      "Describe the object closely first, using at least two senses.",
+      "Then let it open a door: a memory, a wish or a small truth."
+     ],
+     "q": "Which object in your home has the best story behind it?",
+     "c": "Write a short poem about your keys or your shoes: what they know about your days."
+    },
+    "de": {
+     "t": "Über Alltagsgegenstände schreiben",
+     "g": "Finde Staunen in einer Tasse, einem Schlüssel oder einem Paar Schuhe.",
+     "p": [
+      "Gewöhnliche Dinge tragen Geschichten: woher sie kommen, wer sie nutzte, was sie sahen.",
+      "Beschreibe den Gegenstand zuerst genau, mit mindestens zwei Sinnen.",
+      "Dann lass ihn eine Tür öffnen: zu einer Erinnerung, einem Wunsch, einer kleinen Wahrheit."
+     ],
+     "q": "Welcher Gegenstand bei dir zu Hause hat die schönste Geschichte?",
+     "c": "Schreibe ein kurzes Gedicht über deine Schlüssel oder Schuhe: was sie über deine Tage wissen."
+    },
+    "es": {
+     "t": "Escribir sobre objetos cotidianos",
+     "g": "Encuentra asombro en una taza, una llave o un par de zapatos.",
+     "p": [
+      "Los objetos comunes guardan historias: de dónde vienen, quién los usó, qué han visto.",
+      "Primero describe el objeto de cerca, con al menos dos sentidos.",
+      "Luego deja que abra una puerta: un recuerdo, un deseo o una pequeña verdad."
+     ],
+     "q": "¿Qué objeto de tu casa tiene la mejor historia detrás?",
+     "c": "Escribe un poema corto sobre tus llaves o tus zapatos: lo que saben de tus días."
+    },
+    "fr": {
+     "t": "Écrire sur les objets du quotidien",
+     "g": "Trouver l'émerveillement dans une tasse, une clé ou une paire de chaussures.",
+     "p": [
+      "Les objets ordinaires portent des histoires : d'où ils viennent, qui s'en servait, ce qu'ils ont vu.",
+      "Décris d'abord l'objet de près, avec au moins deux sens.",
+      "Puis laisse-le ouvrir une porte : un souvenir, un souhait, une petite vérité."
+     ],
+     "q": "Quel objet de ta maison a la plus belle histoire ?",
+     "c": "Écris un court poème sur tes clés ou tes chaussures : ce qu'elles savent de tes journées."
+    },
+    "it": {
+     "t": "Scrivere sugli oggetti quotidiani",
+     "g": "Trova meraviglia in una tazza, una chiave o un paio di scarpe.",
+     "p": [
+      "Gli oggetti comuni custodiscono storie: da dove vengono, chi li ha usati, che cosa hanno visto.",
+      "Prima descrivi da vicino l'oggetto, con almeno due sensi.",
+      "Poi lascia che apra una porta: un ricordo, un desiderio, una piccola verità."
+     ],
+     "q": "Quale oggetto di casa tua ha la storia più bella?",
+     "c": "Scrivi una breve poesia sulle tue chiavi o scarpe: che cosa sanno delle tue giornate."
+    },
+    "pt": {
+     "t": "Escrever sobre objetos do dia a dia",
+     "g": "Encontra encanto numa chávena, numa chave ou num par de sapatos.",
+     "p": [
+      "Os objetos comuns guardam histórias: de onde vêm, quem os usou, o que já viram.",
+      "Primeiro descreve o objeto de perto, com pelo menos dois sentidos.",
+      "Depois deixa-o abrir uma porta: uma memória, um desejo ou uma pequena verdade."
+     ],
+     "q": "Que objeto da tua casa tem a melhor história?",
+     "c": "Escreve um poema curto sobre as tuas chaves ou os teus sapatos: o que sabem dos teus dias."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre objetos do cotidiano",
+     "g": "Encontre encanto numa xícara, numa chave ou num par de sapatos.",
+     "p": [
+      "Objetos comuns guardam histórias: de onde vêm, quem os usou, o que já viram.",
+      "Primeiro descreva o objeto de perto, com pelo menos dois sentidos.",
+      "Depois deixe ele abrir uma porta: uma lembrança, um desejo ou uma pequena verdade."
+     ],
+     "q": "Que objeto da sua casa tem a melhor história?",
+     "c": "Escreva um poema curto sobre suas chaves ou seus sapatos: o que eles sabem dos seus dias."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pablo Neruda's odes",
+     "g": "See how Neruda praised simple things like tomatoes and socks in his odes.",
+     "p": [
+      "Pablo Neruda, the Chilean poet, won the Nobel Prize in Literature in 1971.",
+      "In his Odas elementales he wrote odes to everyday things: tomatoes, onions, socks.",
+      "His lines are very short, often one or two words, and full of joyful images."
+     ],
+     "q": "If you could praise one humble thing in a poem, what would it be?",
+     "c": "List ten everyday things you are grateful for and circle the one you would write an ode to."
+    },
+    "de": {
+     "t": "Pablo Nerudas Oden",
+     "g": "Sieh, wie Neruda in seinen Oden einfache Dinge wie Tomaten und Socken pries.",
+     "p": [
+      "Pablo Neruda, der chilenische Dichter, erhielt 1971 den Nobelpreis für Literatur.",
+      "In seinen Odas elementales schrieb er Oden an Alltagsdinge: Tomaten, Zwiebeln, Socken.",
+      "Seine Zeilen sind sehr kurz, oft ein oder zwei Wörter, und voller fröhlicher Bilder."
+     ],
+     "q": "Wenn du ein bescheidenes Ding in einem Gedicht preisen könntest, welches wäre es?",
+     "c": "Liste zehn Alltagsdinge auf, für die du dankbar bist, und kreise das ein, dem du eine Ode schreibst."
+    },
+    "es": {
+     "t": "Las odas de Pablo Neruda",
+     "g": "Descubre cómo Neruda elogió cosas sencillas como el tomate y los calcetines.",
+     "p": [
+      "Pablo Neruda, poeta chileno, recibió el Premio Nobel de Literatura en 1971.",
+      "En sus Odas elementales cantó a cosas cotidianas: el tomate, la cebolla, los calcetines.",
+      "Sus versos son muy cortos, a menudo de una o dos palabras, y llenos de imágenes alegres."
+     ],
+     "q": "Si pudieras elogiar una cosa humilde en un poema, ¿cuál sería?",
+     "c": "Haz una lista de diez cosas cotidianas que agradeces y marca la que merece tu oda."
+    },
+    "fr": {
+     "t": "Les odes de Pablo Neruda",
+     "g": "Voir comment Neruda a célébré des choses simples comme la tomate et les chaussettes.",
+     "p": [
+      "Pablo Neruda, poète chilien, a reçu le prix Nobel de littérature en 1971.",
+      "Dans ses Odes élémentaires, il chante des choses du quotidien : tomate, oignon, chaussettes.",
+      "Ses vers sont très courts, souvent d'un ou deux mots, et pleins d'images joyeuses."
+     ],
+     "q": "Si tu pouvais célébrer une chose modeste dans un poème, laquelle serait-ce ?",
+     "c": "Liste dix choses du quotidien qui te rendent reconnaissant et entoure celle qui mérite ton ode."
+    },
+    "it": {
+     "t": "Le odi di Pablo Neruda",
+     "g": "Scopri come Neruda celebrò cose semplici come il pomodoro e i calzini.",
+     "p": [
+      "Pablo Neruda, poeta cileno, ricevette il Premio Nobel per la letteratura nel 1971.",
+      "Nelle sue Odi elementari cantò cose quotidiane: il pomodoro, la cipolla, i calzini.",
+      "I suoi versi sono brevissimi, spesso di una o due parole, e pieni di immagini gioiose."
+     ],
+     "q": "Se potessi celebrare una cosa umile in una poesia, quale sarebbe?",
+     "c": "Elenca dieci cose quotidiane per cui sei grato e cerchia quella a cui dedicheresti un'ode."
+    },
+    "pt": {
+     "t": "As odes de Pablo Neruda",
+     "g": "Descobre como Neruda celebrou coisas simples como o tomate e as meias.",
+     "p": [
+      "Pablo Neruda, poeta chileno, recebeu o Prémio Nobel da Literatura em 1971.",
+      "Nas suas Odes elementares cantou coisas do dia a dia: o tomate, a cebola, as meias.",
+      "Os seus versos são muito curtos, muitas vezes de uma ou duas palavras, e cheios de imagens alegres."
+     ],
+     "q": "Se pudesses celebrar uma coisa humilde num poema, qual seria?",
+     "c": "Faz uma lista de dez coisas do dia a dia que agradeces e assinala a que merece a tua ode."
+    },
+    "pt_BR": {
+     "t": "As odes de Pablo Neruda",
+     "g": "Descubra como Neruda celebrou coisas simples como o tomate e as meias.",
+     "p": [
+      "Pablo Neruda, poeta chileno, recebeu o Prêmio Nobel de Literatura em 1971.",
+      "Nas Odes elementares ele cantou coisas do cotidiano: o tomate, a cebola, as meias.",
+      "Os versos dele são bem curtos, muitas vezes de uma ou duas palavras, e cheios de imagens alegres."
+     ],
+     "q": "Se você pudesse celebrar uma coisa humilde num poema, qual seria?",
+     "c": "Faça uma lista de dez coisas do dia a dia pelas quais você é grato e marque a que merece sua ode."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing an ode to something ordinary",
+     "g": "Celebrate an everyday object with joy and detail.",
+     "p": [
+      "Speak directly to your object: O spoon, O bicycle, O old umbrella.",
+      "Praise its look, its sounds, its uses and the moments it shares with you.",
+      "Try Neruda's very short lines to make each detail shine."
+     ],
+     "q": "What everyday thing would be grateful to finally receive a poem?",
+     "c": "Write an ode of 10 to 15 short lines to the object you circled yesterday."
+    },
+    "de": {
+     "t": "Eine Ode an etwas Gewöhnliches",
+     "g": "Feiere einen Alltagsgegenstand mit Freude und Detail.",
+     "p": [
+      "Sprich deinen Gegenstand direkt an: O Löffel, o Fahrrad, o alter Regenschirm.",
+      "Preise sein Aussehen, seine Klänge, seinen Nutzen und eure gemeinsamen Momente.",
+      "Probiere Nerudas sehr kurze Zeilen, damit jedes Detail leuchtet."
+     ],
+     "q": "Welches Alltagsding würde sich freuen, endlich ein Gedicht zu bekommen?",
+     "c": "Schreibe eine Ode aus 10 bis 15 kurzen Zeilen an den Gegenstand, den du gestern eingekreist hast."
+    },
+    "es": {
+     "t": "Escribir una oda a algo común",
+     "g": "Celebra un objeto cotidiano con alegría y detalle.",
+     "p": [
+      "Háblale directamente a tu objeto: oh cuchara, oh bicicleta, oh viejo paraguas.",
+      "Elogia su aspecto, sus sonidos, sus usos y los momentos que comparte contigo.",
+      "Prueba los versos muy cortos de Neruda para que cada detalle brille."
+     ],
+     "q": "¿Qué cosa cotidiana agradecería recibir por fin un poema?",
+     "c": "Escribe una oda de 10 a 15 versos cortos al objeto que marcaste ayer."
+    },
+    "fr": {
+     "t": "Écrire une ode à une chose ordinaire",
+     "g": "Célébrer un objet du quotidien avec joie et précision.",
+     "p": [
+      "Adresse-toi directement à ton objet : ô cuillère, ô vélo, ô vieux parapluie.",
+      "Loue son aspect, ses sons, ses usages et les moments qu'il partage avec toi.",
+      "Essaie les vers très courts de Neruda pour faire briller chaque détail."
+     ],
+     "q": "Quelle chose du quotidien serait heureuse de recevoir enfin un poème ?",
+     "c": "Écris une ode de 10 à 15 vers courts à l'objet entouré hier."
+    },
+    "it": {
+     "t": "Scrivere un'ode a qualcosa di comune",
+     "g": "Celebra un oggetto quotidiano con gioia e dettaglio.",
+     "p": [
+      "Parla direttamente al tuo oggetto: o cucchiaio, o bicicletta, o vecchio ombrello.",
+      "Loda il suo aspetto, i suoi suoni, i suoi usi e i momenti che condivide con te.",
+      "Prova i versi brevissimi di Neruda per far brillare ogni dettaglio."
+     ],
+     "q": "Quale cosa quotidiana sarebbe felice di ricevere finalmente una poesia?",
+     "c": "Scrivi un'ode di 10-15 versi brevi all'oggetto che hai cerchiato ieri."
+    },
+    "pt": {
+     "t": "Escrever uma ode a algo comum",
+     "g": "Celebra um objeto do dia a dia com alegria e pormenor.",
+     "p": [
+      "Fala diretamente com o teu objeto: ó colher, ó bicicleta, ó velho guarda-chuva.",
+      "Elogia o aspeto, os sons, os usos e os momentos que partilha contigo.",
+      "Experimenta os versos muito curtos de Neruda para fazer brilhar cada pormenor."
+     ],
+     "q": "Que coisa do dia a dia ficaria grata por receber finalmente um poema?",
+     "c": "Escreve uma ode de 10 a 15 versos curtos ao objeto que assinalaste ontem."
+    },
+    "pt_BR": {
+     "t": "Escrever uma ode a algo comum",
+     "g": "Celebre um objeto do cotidiano com alegria e detalhe.",
+     "p": [
+      "Fale diretamente com o seu objeto: ó colher, ó bicicleta, ó velho guarda-chuva.",
+      "Elogie a aparência, os sons, os usos e os momentos que ele compartilha com você.",
+      "Experimente os versos bem curtos de Neruda para fazer cada detalhe brilhar."
+     ],
+     "q": "Que coisa do dia a dia ficaria feliz de finalmente ganhar um poema?",
+     "c": "Escreva uma ode de 10 a 15 versos curtos ao objeto que você marcou ontem."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about weather",
+     "g": "Use rain, wind and sunlight as subjects and moods in short poems.",
+     "p": [
+      "Weather is a shared experience, so readers instantly connect with it.",
+      "Describe it with the senses: the smell before rain, the sting of cold wind.",
+      "Weather can mirror a mood: a bright morning for hope, soft fog for calm."
+     ],
+     "q": "What kind of weather makes you happiest, and why?",
+     "c": "Look outside and write a five-line poem about today's weather, using at least three senses."
+    },
+    "de": {
+     "t": "Über das Wetter schreiben",
+     "g": "Nutze Regen, Wind und Sonnenlicht als Themen und Stimmungen in kurzen Gedichten.",
+     "p": [
+      "Wetter erleben alle, deshalb verbinden sich Leser sofort damit.",
+      "Beschreibe es mit den Sinnen: den Geruch vor dem Regen, das Prickeln von kaltem Wind.",
+      "Wetter kann eine Stimmung spiegeln: ein heller Morgen für Hoffnung, sanfter Nebel für Ruhe."
+     ],
+     "q": "Bei welchem Wetter bist du am glücklichsten, und warum?",
+     "c": "Schau nach draußen und schreibe fünf Zeilen über das heutige Wetter, mit mindestens drei Sinnen."
+    },
+    "es": {
+     "t": "Escribir sobre el tiempo",
+     "g": "Usa la lluvia, el viento y el sol como temas y estados de ánimo en poemas breves.",
+     "p": [
+      "El tiempo es una experiencia compartida, así que el lector conecta al instante.",
+      "Descríbelo con los sentidos: el olor antes de la lluvia, el viento frío en la cara.",
+      "El tiempo puede reflejar un ánimo: una mañana clara para la esperanza, la niebla para la calma."
+     ],
+     "q": "¿Qué tiempo te hace más feliz y por qué?",
+     "c": "Mira afuera y escribe cinco versos sobre el tiempo de hoy con al menos tres sentidos."
+    },
+    "fr": {
+     "t": "Écrire sur la météo",
+     "g": "Utiliser pluie, vent et soleil comme sujets et humeurs de courts poèmes.",
+     "p": [
+      "La météo est une expérience partagée : le lecteur s'y relie aussitôt.",
+      "Décris-la par les sens : l'odeur avant la pluie, la morsure du vent froid.",
+      "Le temps peut refléter une humeur : un matin clair pour l'espoir, une brume douce pour le calme."
+     ],
+     "q": "Quel temps te rend le plus heureux, et pourquoi ?",
+     "c": "Regarde dehors et écris cinq vers sur le temps d'aujourd'hui, avec au moins trois sens."
+    },
+    "it": {
+     "t": "Scrivere sul tempo atmosferico",
+     "g": "Usa pioggia, vento e sole come soggetti e stati d'animo in brevi poesie.",
+     "p": [
+      "Il tempo è un'esperienza condivisa: il lettore si collega subito.",
+      "Descrivilo con i sensi: l'odore prima della pioggia, il pizzico del vento freddo.",
+      "Il tempo può riflettere un umore: un mattino limpido per la speranza, la nebbia per la calma."
+     ],
+     "q": "Quale tempo ti rende più felice e perché?",
+     "c": "Guarda fuori e scrivi cinque versi sul tempo di oggi, usando almeno tre sensi."
+    },
+    "pt": {
+     "t": "Escrever sobre o tempo",
+     "g": "Usa a chuva, o vento e o sol como temas e estados de espírito em poemas curtos.",
+     "p": [
+      "O tempo é uma experiência partilhada, por isso o leitor liga-se logo.",
+      "Descreve-o com os sentidos: o cheiro antes da chuva, o vento frio na cara.",
+      "O tempo pode espelhar um estado de espírito: manhã clara para a esperança, nevoeiro para a calma."
+     ],
+     "q": "Que tempo te deixa mais feliz e porquê?",
+     "c": "Olha lá para fora e escreve cinco versos sobre o tempo de hoje com pelo menos três sentidos."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre o clima",
+     "g": "Use a chuva, o vento e o sol como temas e estados de espírito em poemas curtos.",
+     "p": [
+      "O clima é uma experiência compartilhada, então o leitor se conecta na hora.",
+      "Descreva com os sentidos: o cheiro antes da chuva, o vento frio no rosto.",
+      "O clima pode espelhar um humor: manhã clara para a esperança, neblina para a calma."
+     ],
+     "q": "Que tipo de clima deixa você mais feliz e por quê?",
+     "c": "Olhe lá fora e escreva cinco versos sobre o clima de hoje com pelo menos três sentidos."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about the sea",
+     "g": "Find rich images and sounds in waves, tides and shores.",
+     "p": [
+      "The sea offers sound: the hush of waves, the rattle of pebbles, gulls calling.",
+      "Its movement suggests rhythm; long lines can rise and fall like tides.",
+      "Look for small details too: a shell, salt on skin, a line of foam."
+     ],
+     "q": "What is your favourite memory of the sea or a lake?",
+     "c": "Write a poem of six lines about the sea where the line lengths rise and fall like waves."
+    },
+    "de": {
+     "t": "Über das Meer schreiben",
+     "g": "Finde reiche Bilder und Klänge in Wellen, Gezeiten und Ufern.",
+     "p": [
+      "Das Meer bietet Klang: das Rauschen der Wellen, das Klackern der Kiesel, rufende Möwen.",
+      "Seine Bewegung legt Rhythmus nahe; lange Zeilen können steigen und fallen wie Gezeiten.",
+      "Achte auch auf kleine Details: eine Muschel, Salz auf der Haut, ein Schaumstreifen."
+     ],
+     "q": "Was ist deine liebste Erinnerung an das Meer oder einen See?",
+     "c": "Schreibe sechs Zeilen über das Meer, deren Länge wie Wellen steigt und fällt."
+    },
+    "es": {
+     "t": "Escribir sobre el mar",
+     "g": "Encuentra imágenes y sonidos ricos en olas, mareas y orillas.",
+     "p": [
+      "El mar ofrece sonido: el susurro de las olas, el roce de los guijarros, las gaviotas.",
+      "Su movimiento sugiere ritmo; los versos largos pueden subir y bajar como la marea.",
+      "Busca también detalles pequeños: una concha, sal en la piel, una línea de espuma."
+     ],
+     "q": "¿Cuál es tu recuerdo favorito del mar o de un lago?",
+     "c": "Escribe seis versos sobre el mar cuya longitud suba y baje como las olas."
+    },
+    "fr": {
+     "t": "Écrire sur la mer",
+     "g": "Trouver des images et des sons riches dans les vagues, les marées et les rivages.",
+     "p": [
+      "La mer offre des sons : le souffle des vagues, le roulement des galets, l'appel des mouettes.",
+      "Son mouvement suggère un rythme ; des vers longs peuvent monter et descendre comme la marée.",
+      "Cherche aussi les petits détails : un coquillage, le sel sur la peau, une ligne d'écume."
+     ],
+     "q": "Quel est ton plus beau souvenir de la mer ou d'un lac ?",
+     "c": "Écris six vers sur la mer dont la longueur monte et descend comme des vagues."
+    },
+    "it": {
+     "t": "Scrivere sul mare",
+     "g": "Trova immagini e suoni ricchi in onde, maree e rive.",
+     "p": [
+      "Il mare offre suoni: il fruscio delle onde, il rotolare dei sassi, i gabbiani.",
+      "Il suo movimento suggerisce un ritmo: versi lunghi possono salire e scendere come la marea.",
+      "Cerca anche piccoli dettagli: una conchiglia, sale sulla pelle, una riga di schiuma."
+     ],
+     "q": "Qual è il tuo ricordo più bello del mare o di un lago?",
+     "c": "Scrivi sei versi sul mare la cui lunghezza salga e scenda come le onde."
+    },
+    "pt": {
+     "t": "Escrever sobre o mar",
+     "g": "Encontra imagens e sons ricos em ondas, marés e margens.",
+     "p": [
+      "O mar oferece som: o sussurro das ondas, o rolar dos seixos, as gaivotas.",
+      "O seu movimento sugere ritmo; versos longos podem subir e descer como a maré.",
+      "Procura também pormenores: uma concha, sal na pele, uma linha de espuma."
+     ],
+     "q": "Qual é a tua memória preferida do mar ou de um lago?",
+     "c": "Escreve seis versos sobre o mar cujo comprimento sobe e desce como as ondas."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre o mar",
+     "g": "Encontre imagens e sons ricos em ondas, marés e praias.",
+     "p": [
+      "O mar oferece som: o sussurro das ondas, o rolar das pedrinhas, as gaivotas.",
+      "O movimento dele sugere ritmo; versos longos podem subir e descer como a maré.",
+      "Procure também detalhes: uma concha, sal na pele, uma linha de espuma."
+     ],
+     "q": "Qual é a sua lembrança favorita do mar ou de um lago?",
+     "c": "Escreva seis versos sobre o mar cujo tamanho sobe e desce como as ondas."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about trees and plants",
+     "g": "Use gardens, forests and a single leaf as subjects for poems.",
+     "p": [
+      "Zoom in or out: a whole forest, one tree, one leaf, one vein of a leaf.",
+      "Plants change slowly; poems can capture growth, blossom and seasons.",
+      "Name plants exactly: oak, basil, jasmine, fern, rather than just tree or flower."
+     ],
+     "q": "Is there a tree or plant that has been part of your life for years?",
+     "c": "Pick up or look closely at one leaf and write a short poem about everything you notice."
+    },
+    "de": {
+     "t": "Über Bäume und Pflanzen schreiben",
+     "g": "Nutze Gärten, Wälder und ein einzelnes Blatt als Themen für Gedichte.",
+     "p": [
+      "Zoome hinein oder heraus: ein Wald, ein Baum, ein Blatt, eine Blattader.",
+      "Pflanzen verändern sich langsam; Gedichte fangen Wachstum, Blüte und Jahreszeiten ein.",
+      "Nenne Pflanzen genau: Eiche, Basilikum, Jasmin, Farn statt nur Baum oder Blume."
+     ],
+     "q": "Gibt es einen Baum oder eine Pflanze, die seit Jahren zu deinem Leben gehört?",
+     "c": "Betrachte ein Blatt genau und schreibe ein kurzes Gedicht über alles, was du bemerkst."
+    },
+    "es": {
+     "t": "Escribir sobre árboles y plantas",
+     "g": "Usa jardines, bosques y una sola hoja como temas de poemas.",
+     "p": [
+      "Acerca o aleja la mirada: un bosque, un árbol, una hoja, una nervadura.",
+      "Las plantas cambian despacio; un poema puede captar crecimiento, flor y estaciones.",
+      "Nombra las plantas con precisión: roble, albahaca, jazmín, helecho, y no solo árbol o flor."
+     ],
+     "q": "¿Hay un árbol o planta que forme parte de tu vida desde hace años?",
+     "c": "Observa de cerca una hoja y escribe un poema corto sobre todo lo que notes."
+    },
+    "fr": {
+     "t": "Écrire sur les arbres et les plantes",
+     "g": "Prendre jardins, forêts et une seule feuille comme sujets de poèmes.",
+     "p": [
+      "Zoome ou dézoome : une forêt, un arbre, une feuille, une nervure.",
+      "Les plantes changent lentement ; un poème peut saisir croissance, floraison et saisons.",
+      "Nomme les plantes avec précision : chêne, basilic, jasmin, fougère, plutôt qu'arbre ou fleur."
+     ],
+     "q": "Y a-t-il un arbre ou une plante qui fait partie de ta vie depuis des années ?",
+     "c": "Observe de près une feuille et écris un court poème sur tout ce que tu remarques."
+    },
+    "it": {
+     "t": "Scrivere su alberi e piante",
+     "g": "Usa giardini, boschi e una sola foglia come soggetti di poesie.",
+     "p": [
+      "Avvicina o allontana lo sguardo: un bosco, un albero, una foglia, una nervatura.",
+      "Le piante cambiano piano; una poesia può cogliere crescita, fioritura e stagioni.",
+      "Nomina le piante con precisione: quercia, basilico, gelsomino, felce, non solo albero o fiore."
+     ],
+     "q": "C'è un albero o una pianta che fa parte della tua vita da anni?",
+     "c": "Osserva da vicino una foglia e scrivi una breve poesia su tutto ciò che noti."
+    },
+    "pt": {
+     "t": "Escrever sobre árvores e plantas",
+     "g": "Usa jardins, florestas e uma única folha como temas de poemas.",
+     "p": [
+      "Aproxima ou afasta o olhar: uma floresta, uma árvore, uma folha, uma nervura.",
+      "As plantas mudam devagar; um poema pode captar crescimento, flor e estações.",
+      "Nomeia as plantas com precisão: carvalho, manjericão, jasmim, feto, e não só árvore ou flor."
+     ],
+     "q": "Há uma árvore ou planta que faz parte da tua vida há anos?",
+     "c": "Observa de perto uma folha e escreve um poema curto sobre tudo o que notares."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre árvores e plantas",
+     "g": "Use jardins, florestas e uma única folha como temas de poemas.",
+     "p": [
+      "Aproxime ou afaste o olhar: uma floresta, uma árvore, uma folha, uma nervura.",
+      "Plantas mudam devagar; um poema pode captar crescimento, florada e estações.",
+      "Nomeie as plantas com precisão: ipê, manjericão, jasmim, samambaia, e não só árvore ou flor."
+     ],
+     "q": "Existe uma árvore ou planta que faz parte da sua vida há anos?",
+     "c": "Observe de perto uma folha e escreva um poema curto sobre tudo o que você notar."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about animals",
+     "g": "Observe an animal closely and capture its movement and spirit.",
+     "p": [
+      "Watch before you write: how the animal moves, rests, eats and listens.",
+      "Strong verbs catch movement: a cat pours off the sofa, a sparrow darts.",
+      "Try to show its character without making it a cartoon."
+     ],
+     "q": "Which animal do you enjoy watching the most?",
+     "c": "Watch an animal for a few minutes, even a pigeon or an ant, and write six lines about it."
+    },
+    "de": {
+     "t": "Über Tiere schreiben",
+     "g": "Beobachte ein Tier genau und fange seine Bewegung und sein Wesen ein.",
+     "p": [
+      "Schau zu, bevor du schreibst: wie das Tier sich bewegt, ruht, frisst und lauscht.",
+      "Starke Verben fangen Bewegung ein: Eine Katze fließt vom Sofa, ein Spatz flitzt.",
+      "Zeige seinen Charakter, ohne es zur Comicfigur zu machen."
+     ],
+     "q": "Welches Tier beobachtest du am liebsten?",
+     "c": "Beobachte ein paar Minuten ein Tier, auch eine Taube oder Ameise, und schreibe sechs Zeilen darüber."
+    },
+    "es": {
+     "t": "Escribir sobre animales",
+     "g": "Observa un animal de cerca y capta su movimiento y su carácter.",
+     "p": [
+      "Mira antes de escribir: cómo se mueve, descansa, come y escucha.",
+      "Los verbos fuertes atrapan el movimiento: el gato se derrama del sofá, el gorrión se lanza.",
+      "Intenta mostrar su carácter sin convertirlo en dibujo animado."
+     ],
+     "q": "¿Qué animal te gusta más observar?",
+     "c": "Observa un animal unos minutos, aunque sea una paloma o una hormiga, y escribe seis versos."
+    },
+    "fr": {
+     "t": "Écrire sur les animaux",
+     "g": "Observer un animal de près et saisir son mouvement et son caractère.",
+     "p": [
+      "Regarde avant d'écrire : comment l'animal bouge, se repose, mange et écoute.",
+      "Des verbes forts saisissent le mouvement : le chat coule du canapé, le moineau file.",
+      "Montre son caractère sans en faire un personnage de dessin animé."
+     ],
+     "q": "Quel animal aimes-tu le plus observer ?",
+     "c": "Observe un animal quelques minutes, même un pigeon ou une fourmi, et écris six vers sur lui."
+    },
+    "it": {
+     "t": "Scrivere sugli animali",
+     "g": "Osserva da vicino un animale e cogli il suo movimento e il suo carattere.",
+     "p": [
+      "Guarda prima di scrivere: come l'animale si muove, riposa, mangia e ascolta.",
+      "Verbi forti colgono il movimento: il gatto cola giù dal divano, il passero sfreccia.",
+      "Prova a mostrarne il carattere senza trasformarlo in un cartone animato."
+     ],
+     "q": "Quale animale ti piace di più osservare?",
+     "c": "Osserva un animale per qualche minuto, anche un piccione o una formica, e scrivi sei versi."
+    },
+    "pt": {
+     "t": "Escrever sobre animais",
+     "g": "Observa um animal de perto e capta o seu movimento e o seu feitio.",
+     "p": [
+      "Olha antes de escrever: como o animal se move, descansa, come e escuta.",
+      "Verbos fortes captam o movimento: o gato escorre do sofá, o pardal dispara.",
+      "Tenta mostrar o seu carácter sem o tornar um desenho animado."
+     ],
+     "q": "Que animal gostas mais de observar?",
+     "c": "Observa um animal durante alguns minutos, mesmo um pombo ou uma formiga, e escreve seis versos."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre animais",
+     "g": "Observe um animal de perto e capte o movimento e o jeito dele.",
+     "p": [
+      "Olhe antes de escrever: como o animal se move, descansa, come e escuta.",
+      "Verbos fortes captam o movimento: o gato escorre do sofá, o pardal dispara.",
+      "Tente mostrar o caráter dele sem transformá-lo em desenho animado."
+     ],
+     "q": "Que animal você mais gosta de observar?",
+     "c": "Observe um animal por alguns minutos, mesmo um pombo ou uma formiga, e escreva seis versos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about the sky",
+     "g": "Treat clouds, stars and sunsets as endlessly fresh subjects.",
+     "p": [
+      "The sky changes every minute, so no two sky poems need to be alike.",
+      "Avoid easy words like beautiful; describe exact colours, shapes and movement.",
+      "Compare clouds or stars to something from your own life for a fresh image."
+     ],
+     "q": "What is the most memorable sky you have ever seen?",
+     "c": "Look at the sky today and write a haiku or a five-line poem about exactly what you see."
+    },
+    "de": {
+     "t": "Über den Himmel schreiben",
+     "g": "Sieh Wolken, Sterne und Sonnenuntergänge als immer neue Themen.",
+     "p": [
+      "Der Himmel ändert sich jede Minute, kein Himmelsgedicht muss einem anderen gleichen.",
+      "Vermeide leichte Wörter wie schön; beschreibe genaue Farben, Formen und Bewegung.",
+      "Vergleiche Wolken oder Sterne mit etwas aus deinem Leben für ein frisches Bild."
+     ],
+     "q": "Was ist der eindrucksvollste Himmel, den du je gesehen hast?",
+     "c": "Schau heute in den Himmel und schreibe ein Haiku oder fünf Zeilen über genau das, was du siehst."
+    },
+    "es": {
+     "t": "Escribir sobre el cielo",
+     "g": "Trata nubes, estrellas y atardeceres como temas siempre nuevos.",
+     "p": [
+      "El cielo cambia cada minuto, así que ningún poema del cielo tiene que repetirse.",
+      "Evita palabras fáciles como bonito; describe colores, formas y movimientos exactos.",
+      "Compara nubes o estrellas con algo de tu vida para lograr una imagen fresca."
+     ],
+     "q": "¿Cuál es el cielo más memorable que has visto?",
+     "c": "Mira el cielo hoy y escribe un haiku o cinco versos sobre exactamente lo que ves."
+    },
+    "fr": {
+     "t": "Écrire sur le ciel",
+     "g": "Voir les nuages, les étoiles et les couchers de soleil comme des sujets toujours neufs.",
+     "p": [
+      "Le ciel change chaque minute : aucun poème du ciel n'a à ressembler à un autre.",
+      "Évite les mots faciles comme beau ; décris couleurs, formes et mouvements exacts.",
+      "Compare nuages ou étoiles à quelque chose de ta vie pour une image neuve."
+     ],
+     "q": "Quel est le ciel le plus mémorable que tu aies vu ?",
+     "c": "Regarde le ciel aujourd'hui et écris un haïku ou cinq vers sur exactement ce que tu vois."
+    },
+    "it": {
+     "t": "Scrivere sul cielo",
+     "g": "Tratta nuvole, stelle e tramonti come soggetti sempre nuovi.",
+     "p": [
+      "Il cielo cambia ogni minuto: nessuna poesia sul cielo deve somigliare a un'altra.",
+      "Evita parole facili come bello; descrivi colori, forme e movimenti esatti.",
+      "Paragona nuvole o stelle a qualcosa della tua vita per un'immagine fresca."
+     ],
+     "q": "Qual è il cielo più memorabile che tu abbia mai visto?",
+     "c": "Guarda il cielo oggi e scrivi un haiku o cinque versi esattamente su ciò che vedi."
+    },
+    "pt": {
+     "t": "Escrever sobre o céu",
+     "g": "Trata nuvens, estrelas e pores do sol como temas sempre novos.",
+     "p": [
+      "O céu muda a cada minuto, por isso nenhum poema do céu tem de se repetir.",
+      "Evita palavras fáceis como bonito; descreve cores, formas e movimentos exatos.",
+      "Compara nuvens ou estrelas com algo da tua vida para criar uma imagem fresca."
+     ],
+     "q": "Qual é o céu mais memorável que já viste?",
+     "c": "Olha hoje para o céu e escreve um haiku ou cinco versos sobre exatamente o que vês."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre o céu",
+     "g": "Trate nuvens, estrelas e pores do sol como temas sempre novos.",
+     "p": [
+      "O céu muda a cada minuto, então nenhum poema sobre o céu precisa se repetir.",
+      "Evite palavras fáceis como bonito; descreva cores, formas e movimentos exatos.",
+      "Compare nuvens ou estrelas com algo da sua vida para criar uma imagem fresca."
+     ],
+     "q": "Qual é o céu mais marcante que você já viu?",
+     "c": "Olhe hoje para o céu e escreva um haicai ou cinco versos sobre exatamente o que você vê."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing about a city",
+     "g": "Turn streets, markets and city sounds into material for poems.",
+     "p": [
+      "Cities are full of voices, smells and movement: perfect for sensory images.",
+      "Focus on one corner, one market stall or one bus ride rather than the whole city.",
+      "Overheard words and street signs can become lines in your poem."
+     ],
+     "q": "What city, big or small, do you love the most, and what does it sound like?",
+     "c": "Write a poem of eight lines about one street or market you know, using at least one overheard phrase."
+    },
+    "de": {
+     "t": "Über eine Stadt schreiben",
+     "g": "Mach Straßen, Märkte und Stadtgeräusche zu Material für Gedichte.",
+     "p": [
+      "Städte sind voller Stimmen, Gerüche und Bewegung: ideal für sinnliche Bilder.",
+      "Konzentriere dich auf eine Ecke, einen Marktstand oder eine Busfahrt statt auf die ganze Stadt.",
+      "Aufgeschnappte Wörter und Straßenschilder können zu Zeilen deines Gedichts werden."
+     ],
+     "q": "Welche Stadt, groß oder klein, liebst du am meisten, und wie klingt sie?",
+     "c": "Schreibe acht Zeilen über eine Straße oder einen Markt, den du kennst, mit einer aufgeschnappten Wendung."
+    },
+    "es": {
+     "t": "Escribir sobre una ciudad",
+     "g": "Convierte calles, mercados y sonidos urbanos en material para poemas.",
+     "p": [
+      "Las ciudades están llenas de voces, olores y movimiento: ideales para imágenes sensoriales.",
+      "Céntrate en una esquina, un puesto de mercado o un viaje en autobús, no en toda la ciudad.",
+      "Las palabras oídas al pasar y los letreros pueden volverse versos de tu poema."
+     ],
+     "q": "¿Qué ciudad, grande o pequeña, quieres más y cómo suena?",
+     "c": "Escribe ocho versos sobre una calle o mercado que conozcas, con al menos una frase oída al pasar."
+    },
+    "fr": {
+     "t": "Écrire sur une ville",
+     "g": "Faire des rues, des marchés et des bruits de la ville la matière de poèmes.",
+     "p": [
+      "Les villes sont pleines de voix, d'odeurs et de mouvement : idéal pour des images sensorielles.",
+      "Concentre-toi sur un coin de rue, un étal ou un trajet en bus plutôt que toute la ville.",
+      "Les mots entendus au vol et les panneaux peuvent devenir des vers de ton poème."
+     ],
+     "q": "Quelle ville, grande ou petite, aimes-tu le plus, et quel son a-t-elle ?",
+     "c": "Écris huit vers sur une rue ou un marché que tu connais, avec au moins une phrase entendue."
+    },
+    "it": {
+     "t": "Scrivere su una città",
+     "g": "Trasforma strade, mercati e suoni urbani in materiale per poesie.",
+     "p": [
+      "Le città sono piene di voci, odori e movimento: perfette per immagini sensoriali.",
+      "Concentrati su un angolo, una bancarella o un viaggio in autobus invece che sull'intera città.",
+      "Parole sentite per caso e insegne possono diventare versi della tua poesia."
+     ],
+     "q": "Quale città, grande o piccola, ami di più e che suono ha?",
+     "c": "Scrivi otto versi su una strada o un mercato che conosci, con almeno una frase sentita per caso."
+    },
+    "pt": {
+     "t": "Escrever sobre uma cidade",
+     "g": "Transforma ruas, mercados e sons da cidade em matéria para poemas.",
+     "p": [
+      "As cidades estão cheias de vozes, cheiros e movimento: ideais para imagens sensoriais.",
+      "Concentra-te numa esquina, numa banca do mercado ou numa viagem de autocarro, não na cidade toda.",
+      "Palavras ouvidas de passagem e letreiros podem tornar-se versos do teu poema."
+     ],
+     "q": "Que cidade, grande ou pequena, adoras mais e como soa?",
+     "c": "Escreve oito versos sobre uma rua ou mercado que conheças, com pelo menos uma frase ouvida."
+    },
+    "pt_BR": {
+     "t": "Escrever sobre uma cidade",
+     "g": "Transforme ruas, feiras e sons da cidade em matéria para poemas.",
+     "p": [
+      "As cidades estão cheias de vozes, cheiros e movimento: ideais para imagens sensoriais.",
+      "Concentre-se numa esquina, numa barraca de feira ou numa viagem de ônibus, não na cidade toda.",
+      "Palavras ouvidas de passagem e placas podem virar versos do seu poema."
+     ],
+     "q": "Que cidade, grande ou pequena, você mais ama e como ela soa?",
+     "c": "Escreva oito versos sobre uma rua ou feira que você conhece, com pelo menos uma frase ouvida."
+    }
+   }
+  }
+ ]
+}

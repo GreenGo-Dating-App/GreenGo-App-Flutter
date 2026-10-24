@@ -1,0 +1,835 @@
+{
+ "topic": "travel_phrases",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trying things on",
+     "g": "Ask for the fitting room, check sizes and say whether something fits.",
+     "p": [
+      "Spanish: «¿Dónde están los probadores?» (pro-ba-DO-res) = where are the fitting rooms? French: «Je peux l'essayer ?» = can I try it on?",
+      "Fit: Spanish «Me queda pequeño» (meh KEH-da peh-KEH-nyo) = it is too small, «Me queda grande» = too big, «Me queda bien» = it fits well.",
+      "Italian: «È troppo stretto» (STRET-to) = it is too tight. Sizes differ between countries, so ask «¿Qué talla es esta?» = what size is this?"
+     ],
+     "q": "What is your favourite kind of thing to shop for when you travel: clothes, shoes, books or something else?",
+     "c": "Look at a piece of clothing you own and describe in one language whether it fits well, is too big or too small."
+    },
+    "de": {
+     "t": "Anprobieren",
+     "g": "Frag nach der Umkleide, prüfe Größen und sag, ob etwas passt.",
+     "p": [
+      "Spanisch: «¿Dónde están los probadores?» = Wo sind die Umkleiden? Französisch: «Je peux l'essayer ?» = Darf ich es anprobieren?",
+      "Passform: Spanisch «Me queda pequeño» (me KE-da pe-KE-njo) = zu klein, «Me queda grande» = zu groß, «Me queda bien» = passt gut.",
+      "Italienisch: «È troppo stretto» = Es ist zu eng. Größen sind je nach Land anders, frag also «¿Qué talla es esta?» = Welche Größe ist das?"
+     ],
+     "q": "Was kaufst du auf Reisen am liebsten: Kleidung, Schuhe, Bücher oder etwas anderes?",
+     "c": "Nimm ein Kleidungsstück von dir und beschreibe in einer Sprache, ob es gut passt, zu groß oder zu klein ist."
+    },
+    "es": {
+     "t": "Probarse ropa",
+     "g": "Pregunta por el probador, comprueba tallas y di si algo te queda bien.",
+     "p": [
+      "Inglés: «Where are the fitting rooms?» (FI-ting rums) = ¿dónde están los probadores? Francés: «Je peux l'essayer ?» = ¿puedo probármelo?",
+      "Cómo queda: inglés «It's too small» (its tu SMOL) = me queda pequeño, «too big» = grande, «It fits well» (it fits UEL) = me queda bien.",
+      "Italiano: «È troppo stretto» (STRET-to) = está demasiado ajustado. Las tallas cambian según el país: pregunta «What size is this?»."
+     ],
+     "q": "¿Qué es lo que más te gusta comprar cuando viajas: ropa, zapatos, libros u otra cosa?",
+     "c": "Mira una prenda tuya y describe en un idioma si te queda bien, grande o pequeña."
+    },
+    "fr": {
+     "t": "Essayer des vêtements",
+     "g": "Demander la cabine d'essayage, vérifier les tailles et dire si ça va.",
+     "p": [
+      "Espagnol : «¿Dónde están los probadores?» (pro-ba-DO-rèss) = où sont les cabines ? Anglais : «Can I try it on?» = je peux l'essayer ?",
+      "Taille : espagnol «Me queda pequeño» (mé KÉ-da pé-KÉ-gno) = c'est trop petit, «Me queda grande» = trop grand, «Me queda bien» = ça me va.",
+      "Italien : «È troppo stretto» = c'est trop serré. Les tailles varient selon les pays, demande «¿Qué talla es esta?» = quelle taille ?"
+     ],
+     "q": "Qu'aimes-tu le plus acheter en voyage : des vêtements, des chaussures, des livres ou autre chose ?",
+     "c": "Regarde un de tes vêtements et dis dans une langue s'il te va bien, s'il est trop grand ou trop petit."
+    },
+    "it": {
+     "t": "Provare i vestiti",
+     "g": "Chiedere il camerino, controllare le taglie e dire se qualcosa ti sta bene.",
+     "p": [
+      "Spagnolo: «¿Dónde están los probadores?» (pro-ba-DO-res) = dove sono i camerini? Francese: «Je peux l'essayer ?» = posso provarlo?",
+      "Vestibilità: spagnolo «Me queda pequeño» (me KE-da pe-KE-gno) = è piccolo, «Me queda grande» = è grande, «Me queda bien» = mi sta bene.",
+      "Inglese: «It's too tight» = è troppo stretto. Le taglie cambiano da paese a paese: chiedi «¿Qué talla es esta?» = che taglia è?"
+     ],
+     "q": "Cosa ti piace di più comprare in viaggio: vestiti, scarpe, libri o altro?",
+     "c": "Guarda un tuo capo e descrivi in una lingua se ti sta bene, se è grande o piccolo."
+    },
+    "pt": {
+     "t": "Experimentar roupa",
+     "g": "Pedir o provador, verificar tamanhos e dizer se algo serve.",
+     "p": [
+      "Espanhol: «¿Dónde están los probadores?» (pro-ba-DÔ-res) = onde são os provadores? Francês: «Je peux l'essayer ?» = posso experimentar?",
+      "Tamanho: espanhol «Me queda pequeño» (me KÊ-da pe-KÊ-nho) = fica pequeno, «Me queda grande» = fica grande, «Me queda bien» = fica bem.",
+      "Italiano: «È troppo stretto» (STRÉT-to) = está muito apertado. Os tamanhos variam de país para país: pergunta «¿Qué talla es esta?»."
+     ],
+     "q": "O que mais gostas de comprar quando viajas: roupa, sapatos, livros ou outra coisa?",
+     "c": "Olha para uma peça de roupa tua e descreve numa língua se fica bem, grande ou pequena."
+    },
+    "pt_BR": {
+     "t": "Provar roupas",
+     "g": "Pedir o provador, conferir tamanhos e dizer se algo serve.",
+     "p": [
+      "Espanhol: «¿Dónde están los probadores?» (pro-ba-DÔ-res) = onde ficam os provadores? Francês: «Je peux l'essayer ?» = posso provar?",
+      "Tamanho: espanhol «Me queda pequeño» (me KÊ-da pe-KÊ-nho) = ficou pequeno, «Me queda grande» = ficou grande, «Me queda bien» = ficou bom.",
+      "Italiano: «È troppo stretto» (STRÉT-to) = está muito apertado. Os tamanhos mudam de país para país: pergunte «¿Qué talla es esta?»."
+     ],
+     "q": "O que você mais gosta de comprar quando viaja: roupas, sapatos, livros ou outra coisa?",
+     "c": "Olhe para uma roupa sua e descreva num idioma se ficou bem, grande ou pequena."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "At the market",
+     "g": "Ask for quantities and weights, and ask how fresh something is.",
+     "p": [
+      "Spanish: «Medio kilo de tomates, por favor» (MEH-dyo KEE-lo) = half a kilo of tomatoes. «¿Están frescos?» (FRES-kos) = are they fresh?",
+      "French: «Un kilo de pommes, s'il vous plaît» (pom). «Je peux goûter ?» = can I taste? Italian: «Due etti di formaggio» = 200 g of cheese.",
+      "In many European markets the seller picks the fruit for you, so ask before touching. Point and smile if words run out."
+     ],
+     "q": "What would you buy first at a local market abroad: fruit, cheese, bread or something you have never seen?",
+     "c": "Write a small shopping list with quantities and read it aloud in Spanish, French or Italian."
+    },
+    "de": {
+     "t": "Auf dem Markt",
+     "g": "Frag nach Mengen und Gewichten und wie frisch etwas ist.",
+     "p": [
+      "Spanisch: «Medio kilo de tomates, por favor» (ME-djo KI-lo) = ein halbes Kilo Tomaten. «¿Están frescos?» (FRES-kos) = Sind sie frisch?",
+      "Französisch: «Un kilo de pommes» = ein Kilo Äpfel. «Je peux goûter ?» = Probieren? Italienisch: «Due etti di formaggio» = 200 g Käse.",
+      "Auf vielen Märkten in Europa wählt der Verkäufer das Obst aus, frag also vor dem Anfassen. Fehlen Worte, zeig und lächle."
+     ],
+     "q": "Was würdest du auf einem Markt im Ausland zuerst kaufen: Obst, Käse, Brot oder etwas, das du noch nie gesehen hast?",
+     "c": "Schreib eine kleine Einkaufsliste mit Mengen und lies sie laut auf Spanisch, Französisch oder Italienisch vor."
+    },
+    "es": {
+     "t": "En el mercado",
+     "g": "Pide cantidades y pesos, y pregunta si algo está fresco.",
+     "p": [
+      "Inglés: «Half a kilo of tomatoes, please» (jaf a KI-lo) = medio kilo de tomates. «Are they fresh?» (ar dei FRESH) = ¿están frescos?",
+      "Francés: «Un kilo de pommes» = un kilo de manzanas. «Je peux goûter ?» = ¿puedo probar? Italiano: «Due etti di formaggio» = 200 g de queso.",
+      "En muchos mercados europeos el vendedor elige la fruta por ti, así que pregunta antes de tocar. Si faltan palabras, señala y sonríe."
+     ],
+     "q": "¿Qué comprarías primero en un mercado del extranjero: fruta, queso, pan o algo que nunca has visto?",
+     "c": "Escribe una pequeña lista de la compra con cantidades y léela en voz alta en inglés, francés o italiano."
+    },
+    "fr": {
+     "t": "Au marché",
+     "g": "Demander des quantités et des poids, et si c'est bien frais.",
+     "p": [
+      "Espagnol : «Medio kilo de tomates, por favor» (MÉ-dio KI-lo) = un demi-kilo de tomates. «¿Están frescos?» (FRÈSS-koss) = ils sont frais ?",
+      "Anglais : «A kilo of apples, please». «Can I taste?» = je peux goûter ? Italien : «Due etti di formaggio» = 200 g de fromage.",
+      "Dans beaucoup de marchés européens, c'est le vendeur qui choisit les fruits : demande avant de toucher. Sinon, montre et souris."
+     ],
+     "q": "Qu'achèterais-tu en premier sur un marché à l'étranger : des fruits, du fromage, du pain ou quelque chose d'inconnu ?",
+     "c": "Écris une petite liste de courses avec les quantités et lis-la à voix haute en espagnol, en anglais ou en italien."
+    },
+    "it": {
+     "t": "Al mercato",
+     "g": "Chiedere quantità e pesi, e domandare se qualcosa è fresco.",
+     "p": [
+      "Spagnolo: «Medio kilo de tomates, por favor» (ME-dio KI-lo) = mezzo chilo di pomodori. «¿Están frescos?» (FRES-kos) = sono freschi?",
+      "Francese: «Un kilo de pommes, s'il vous plaît» (pom) = un chilo di mele. «Je peux goûter ?» = posso assaggiare? Inglese: «Can I taste?».",
+      "In molti mercati europei è il venditore a scegliere la frutta, quindi chiedi prima di toccare. Se mancano le parole, indica e sorridi."
+     ],
+     "q": "Cosa compreresti per primo in un mercato all'estero: frutta, formaggio, pane o qualcosa che non hai mai visto?",
+     "c": "Scrivi una piccola lista della spesa con le quantità e leggila ad alta voce in spagnolo, francese o inglese."
+    },
+    "pt": {
+     "t": "No mercado",
+     "g": "Pedir quantidades e pesos, e perguntar se algo está fresco.",
+     "p": [
+      "Espanhol: «Medio kilo de tomates, por favor» (MÊ-dio KI-lo) = meio quilo de tomates. «¿Están frescos?» (FRÉS-kos) = estão frescos?",
+      "Francês: «Un kilo de pommes» = um quilo de maçãs. «Je peux goûter ?» = posso provar? Italiano: «Due etti di formaggio» = 200 g de queijo.",
+      "Em muitos mercados europeus é o vendedor que escolhe a fruta, por isso pergunta antes de tocar. Se faltarem palavras, aponta e sorri."
+     ],
+     "q": "O que comprarias primeiro num mercado no estrangeiro: fruta, queijo, pão ou algo que nunca viste?",
+     "c": "Escreve uma pequena lista de compras com quantidades e lê-a em voz alta em espanhol, francês ou italiano."
+    },
+    "pt_BR": {
+     "t": "Na feira",
+     "g": "Pedir quantidades e pesos, e perguntar se algo está fresco.",
+     "p": [
+      "Espanhol: «Medio kilo de tomates, por favor» (MÊ-dio KI-lo) = meio quilo de tomate. «¿Están frescos?» (FRÉS-kos) = estão frescos?",
+      "Francês: «Un kilo de pommes» = um quilo de maçã. «Je peux goûter ?» = posso provar? Italiano: «Due etti di formaggio» = 200 g de queijo.",
+      "Em muitas feiras europeias é o vendedor que escolhe as frutas, então pergunte antes de tocar. Se faltarem palavras, aponte e sorria."
+     ],
+     "q": "O que você compraria primeiro numa feira no exterior: frutas, queijo, pão ou algo que nunca viu?",
+     "c": "Escreva uma pequena lista de compras com quantidades e leia em voz alta em espanhol, francês ou italiano."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Friendly bargaining",
+     "g": "Know where haggling is normal and use polite phrases to ask for a better price.",
+     "p": [
+      "Haggling is common in many markets and bazaars, but not in supermarkets or fixed-price shops. Watch what locals do first.",
+      "Spanish: «¿Me hace un descuento?» (des-KWEN-to) = can you give me a discount? French: «Vous pouvez faire un petit prix ?» (puh-TEE PREE).",
+      "Stay friendly and know your top price. To walk away kindly: Spanish «Gracias, lo pienso» (lo PYEN-so) = thanks, I will think about it."
+     ],
+     "q": "Do you enjoy bargaining, or does it make you feel uncomfortable?",
+     "c": "Pick an imaginary souvenir and act out a friendly bargaining chat in one language, from first price to a happy deal."
+    },
+    "de": {
+     "t": "Freundlich handeln",
+     "g": "Wisse, wo Handeln üblich ist, und frag höflich nach einem besseren Preis.",
+     "p": [
+      "Auf vielen Märkten und Basaren wird gehandelt, aber nicht im Supermarkt oder in Läden mit Festpreisen. Schau zuerst, was Einheimische tun.",
+      "Spanisch: «¿Me hace un descuento?» (des-KUEN-to) = Geben Sie mir Rabatt? Französisch: «Vous pouvez faire un petit prix ?» (pö-TI PRI).",
+      "Bleib freundlich und kenne dein Limit. Nett gehen: Spanisch «Gracias, lo pienso» (lo PJEN-sso) = Danke, ich überlege es mir."
+     ],
+     "q": "Handelst du gern, oder ist es dir eher unangenehm?",
+     "c": "Nimm ein erfundenes Souvenir und spiel ein freundliches Handelsgespräch in einer Sprache durch, bis zum guten Deal."
+    },
+    "es": {
+     "t": "Regatear con simpatía",
+     "g": "Sabe dónde es normal regatear y usa frases educadas para pedir un precio mejor.",
+     "p": [
+      "Se regatea en muchos mercados y bazares, pero no en supermercados ni en tiendas de precio fijo. Observa primero qué hace la gente local.",
+      "Inglés: «Can you give me a discount?» (ken yu guiv mi a DIS-kaunt). Francés: «Vous pouvez faire un petit prix ?» = ¿me deja más barato?",
+      "Sé amable y ten claro tu precio máximo. Para irte con cortesía: inglés «Thanks, I'll think about it» (zenks, ail zink a-BAUT it)."
+     ],
+     "q": "¿Disfrutas regateando, o te resulta incómodo?",
+     "c": "Elige un recuerdo imaginario y representa un regateo amable en un idioma, del primer precio a un buen trato."
+    },
+    "fr": {
+     "t": "Marchander avec le sourire",
+     "g": "Savoir où l'on marchande et utiliser des phrases polies pour demander un meilleur prix.",
+     "p": [
+      "On marchande dans beaucoup de marchés et de bazars, mais pas au supermarché ni dans les boutiques à prix fixe. Observe d'abord les gens.",
+      "Espagnol : «¿Me hace un descuento?» (dèss-KOUÈNE-to) = vous me faites une réduction ? Anglais : «Can you do a better price?».",
+      "Reste aimable et connais ton prix maximum. Pour partir gentiment : espagnol «Gracias, lo pienso» (lo PIÈNE-sso) = merci, je vais réfléchir."
+     ],
+     "q": "Aimes-tu marchander, ou est-ce que ça te met mal à l'aise ?",
+     "c": "Choisis un souvenir imaginaire et joue un marchandage sympa dans une langue, du premier prix jusqu'à l'accord."
+    },
+    "it": {
+     "t": "Contrattare con simpatia",
+     "g": "Sapere dove si contratta e usare frasi gentili per chiedere un prezzo migliore.",
+     "p": [
+      "Si contratta in molti mercati e bazar, ma non al supermercato o nei negozi a prezzo fisso. Osserva prima cosa fa la gente del posto.",
+      "Spagnolo: «¿Me hace un descuento?» (des-KUEN-to) = mi fa uno sconto? Francese: «Vous pouvez faire un petit prix ?» (pö-TI PRI).",
+      "Resta gentile e sappi il tuo prezzo massimo. Per andare via con garbo: spagnolo «Gracias, lo pienso» (lo PIEN-so) = grazie, ci penso."
+     ],
+     "q": "Ti piace contrattare, o ti mette a disagio?",
+     "c": "Scegli un souvenir immaginario e recita una trattativa simpatica in una lingua, dal primo prezzo all'accordo."
+    },
+    "pt": {
+     "t": "Regatear com simpatia",
+     "g": "Saber onde é normal regatear e usar frases educadas para pedir um preço melhor.",
+     "p": [
+      "Regateia-se em muitos mercados e bazares, mas não em supermercados nem em lojas de preço fixo. Observa primeiro o que faz quem é de lá.",
+      "Espanhol: «¿Me hace un descuento?» (des-KUÉN-to) = faz-me um desconto? Francês: «Vous pouvez faire un petit prix ?» (pe-TI PRI).",
+      "Mantém a simpatia e sabe o teu preço máximo. Para sair com delicadeza: espanhol «Gracias, lo pienso» (lo PIÉN-sso) = obrigado, vou pensar."
+     ],
+     "q": "Gostas de regatear, ou deixa-te pouco à vontade?",
+     "c": "Escolhe uma lembrança imaginária e encena um regateio simpático numa língua, do primeiro preço ao acordo."
+    },
+    "pt_BR": {
+     "t": "Pechinchar com simpatia",
+     "g": "Saber onde é normal pechinchar e usar frases educadas para pedir um preço melhor.",
+     "p": [
+      "Pechincha-se em muitas feiras e bazares, mas não em supermercados nem em lojas de preço fixo. Observe primeiro o que o pessoal local faz.",
+      "Espanhol: «¿Me hace un descuento?» (des-KUÉN-to) = me faz um desconto? Francês: «Vous pouvez faire un petit prix ?» (pe-TI PRI).",
+      "Seja simpático e saiba seu preço máximo. Para sair com jeito: espanhol «Gracias, lo pienso» (lo PIÉN-sso) = obrigado, vou pensar."
+     ],
+     "q": "Você gosta de pechinchar, ou fica sem graça?",
+     "c": "Escolha uma lembrancinha imaginária e encene uma pechincha simpática num idioma, do primeiro preço ao acordo."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "At the supermarket",
+     "g": "Find products, ask for a bag and use self-checkout.",
+     "p": [
+      "Spanish: «¿Dónde está la leche?» (LEH-cheh) = where is the milk? Italian: «Dove trovo il pane?» = where do I find bread?",
+      "Bags: Spanish «¿Me da una bolsa?» (BOL-sa), French «Un sac, s'il vous plaît» (sak). In many countries bags cost a little extra.",
+      "Self-checkout: Spanish «caja de autopago», French «caisse automatique» (kess o-to-ma-TEEK), Italian «cassa automatica»."
+     ],
+     "q": "What do you love discovering in foreign supermarkets: snacks, drinks, sweets or everyday products?",
+     "c": "Make a list of five groceries and ask where each one is in a new language."
+    },
+    "de": {
+     "t": "Im Supermarkt",
+     "g": "Finde Produkte, frag nach einer Tüte und nutze die Selbstbedienungskasse.",
+     "p": [
+      "Spanisch: «¿Dónde está la leche?» (LE-tsche) = Wo ist die Milch? Italienisch: «Dove trovo il pane?» = Wo finde ich Brot?",
+      "Tüten: Spanisch «¿Me da una bolsa?» (BOL-ssa), Französisch «Un sac, s'il vous plaît» (ssak). In vielen Ländern kosten Tüten etwas extra.",
+      "Selbstbedienungskasse: Spanisch «caja de autopago», Französisch «caisse automatique» (käss o-to-ma-TIK), Italienisch «cassa automatica»."
+     ],
+     "q": "Was entdeckst du gern in Supermärkten im Ausland: Snacks, Getränke, Süßigkeiten oder Alltagsprodukte?",
+     "c": "Schreib fünf Lebensmittel auf und frag in einer neuen Sprache, wo jedes davon ist."
+    },
+    "es": {
+     "t": "En el supermercado",
+     "g": "Encuentra productos, pide una bolsa y usa la caja de autopago.",
+     "p": [
+      "Inglés: «Where is the milk?» (uer is de MILK) = ¿dónde está la leche? Italiano: «Dove trovo il pane?» = ¿dónde encuentro el pan?",
+      "Bolsas: inglés «Can I have a bag?» (ken ai jav a BAG), francés «Un sac, s'il vous plaît» (sak). En muchos países la bolsa se paga aparte.",
+      "Autopago: inglés «self-checkout» (self CHEK-aut), francés «caisse automatique» (kes o-to-ma-TIK), italiano «cassa automatica»."
+     ],
+     "q": "¿Qué te encanta descubrir en los supermercados extranjeros: aperitivos, bebidas, dulces o productos cotidianos?",
+     "c": "Haz una lista de cinco productos y pregunta dónde está cada uno en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Au supermarché",
+     "g": "Trouver des produits, demander un sac et utiliser la caisse automatique.",
+     "p": [
+      "Espagnol : «¿Dónde está la leche?» (LÉ-tché) = où est le lait ? Italien : «Dove trovo il pane?» = où je trouve le pain ?",
+      "Sacs : espagnol «¿Me da una bolsa?» (BOL-ssa), anglais «Can I have a bag?» (kène aï hav a BAG). Dans beaucoup de pays, le sac est payant.",
+      "Caisse automatique : espagnol «caja de autopago», anglais «self-checkout» (sèlf TCHÈK-aout), italien «cassa automatica»."
+     ],
+     "q": "Qu'aimes-tu découvrir dans les supermarchés à l'étranger : snacks, boissons, sucreries ou produits du quotidien ?",
+     "c": "Fais une liste de cinq courses et demande où se trouve chacune dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Al supermercato",
+     "g": "Trovare i prodotti, chiedere un sacchetto e usare la cassa automatica.",
+     "p": [
+      "Spagnolo: «¿Dónde está la leche?» (LE-ce) = dov'è il latte? Francese: «Où est le pain ?» (u è lö PẼ) = dov'è il pane?",
+      "Sacchetti: spagnolo «¿Me da una bolsa?» (BOL-sa), francese «Un sac, s'il vous plaît» (sak). In molti paesi il sacchetto si paga a parte.",
+      "Cassa automatica: spagnolo «caja de autopago», francese «caisse automatique» (kès o-to-ma-TIK), inglese «self-checkout»."
+     ],
+     "q": "Cosa ti piace scoprire nei supermercati all'estero: snack, bevande, dolci o prodotti di tutti i giorni?",
+     "c": "Fai una lista di cinque prodotti e chiedi dov'è ciascuno in una lingua nuova."
+    },
+    "pt": {
+     "t": "No supermercado",
+     "g": "Encontrar produtos, pedir um saco e usar a caixa self-service.",
+     "p": [
+      "Espanhol: «¿Dónde está la leche?» (LÊ-tche) = onde está o leite? Italiano: «Dove trovo il pane?» = onde encontro o pão?",
+      "Sacos: espanhol «¿Me da una bolsa?» (BÔL-ssa), francês «Un sac, s'il vous plaît» (sák). Em muitos países o saco paga-se à parte.",
+      "Caixa self-service: espanhol «caja de autopago», francês «caisse automatique» (késs ô-tô-ma-TIK), italiano «cassa automatica»."
+     ],
+     "q": "O que adoras descobrir nos supermercados lá fora: snacks, bebidas, doces ou produtos do dia a dia?",
+     "c": "Faz uma lista de cinco produtos e pergunta onde fica cada um numa língua nova."
+    },
+    "pt_BR": {
+     "t": "No supermercado",
+     "g": "Achar produtos, pedir uma sacola e usar o caixa de autoatendimento.",
+     "p": [
+      "Espanhol: «¿Dónde está la leche?» (LÊ-tche) = onde está o leite? Italiano: «Dove trovo il pane?» (DÔ-ve TRÔ-vo il PÁ-ne) = onde acho o pão?",
+      "Sacolas: espanhol «¿Me da una bolsa?» (BÔL-ssa), francês «Un sac, s'il vous plaît» (sák). Em muitos países a sacola é cobrada à parte.",
+      "Autoatendimento: espanhol «caja de autopago», francês «caisse automatique» (késs ô-tô-ma-TIK), italiano «cassa automatica»."
+     ],
+     "q": "O que você adora descobrir em supermercados no exterior: salgadinhos, bebidas, doces ou produtos do dia a dia?",
+     "c": "Faça uma lista de cinco produtos e pergunte onde fica cada um num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paying and getting change",
+     "g": "Pay by card or cash, ask for a receipt and check your change politely.",
+     "p": [
+      "Spanish: «¿Aceptan tarjeta?» (a-SEP-tan tar-HEH-ta) = do you take cards? Watch for signs like «Solo efectivo» = cash only.",
+      "Receipt: French «Je peux avoir le ticket ?» (luh tee-KEH) = can I have the receipt? Italian: «Lo scontrino, per favore» (skon-TREE-no).",
+      "Change: Spanish «Perdone, creo que falta cambio» (KREH-o keh FAL-ta KAM-byo) = sorry, I think some change is missing. Stay calm and kind."
+     ],
+     "q": "Do you prefer paying by card, phone or cash when you travel, and why?",
+     "c": "Practise asking if they take cards and for a receipt in two languages."
+    },
+    "de": {
+     "t": "Bezahlen und Wechselgeld",
+     "g": "Zahl mit Karte oder bar, bitte um einen Beleg und prüfe höflich dein Wechselgeld.",
+     "p": [
+      "Spanisch: «¿Aceptan tarjeta?» (a-SSEP-tan tar-CHE-ta) = Nehmen Sie Karte? Achte auf Schilder wie «Solo efectivo» = nur bar.",
+      "Beleg: Französisch «Je peux avoir le ticket ?» (lö ti-KÄ) = Kann ich den Beleg haben? Italienisch: «Lo scontrino, per favore» (skon-TRI-no).",
+      "Wechselgeld: Spanisch «Perdone, creo que falta cambio» (KRE-o ke FAL-ta KAM-bjo) = Entschuldigung, ich glaube, es fehlt Wechselgeld."
+     ],
+     "q": "Zahlst du auf Reisen lieber mit Karte, Handy oder bar, und warum?",
+     "c": "Übe in zwei Sprachen die Frage, ob Karten genommen werden, und die Bitte um einen Beleg."
+    },
+    "es": {
+     "t": "Pagar y recibir el cambio",
+     "g": "Paga con tarjeta o en efectivo, pide el tique y revisa el cambio con educación.",
+     "p": [
+      "Inglés: «Do you take cards?» (du yu teik KARDS) = ¿aceptan tarjeta? Fíjate en carteles como «Cash only» = solo efectivo.",
+      "Tique: francés «Je peux avoir le ticket ?» (le ti-KÉ) = ¿me da el tique? Italiano: «Lo scontrino, per favore» (skon-TRI-no).",
+      "Cambio: inglés «Sorry, I think the change is wrong» (ai zink de CHEINCH is rong) = perdone, creo que el cambio no está bien. Con calma."
+     ],
+     "q": "¿Prefieres pagar con tarjeta, con el móvil o en efectivo cuando viajas, y por qué?",
+     "c": "Practica preguntar si aceptan tarjeta y pedir el tique en dos idiomas."
+    },
+    "fr": {
+     "t": "Payer et rendre la monnaie",
+     "g": "Payer par carte ou en espèces, demander le ticket et vérifier poliment sa monnaie.",
+     "p": [
+      "Espagnol : «¿Aceptan tarjeta?» (a-SSÈP-tane tar-KHÉ-ta) = vous prenez la carte ? Repère les panneaux «Solo efectivo» = espèces seulement.",
+      "Ticket : anglais «Can I have a receipt?» (ri-SSIT) = je peux avoir le ticket ? Italien : «Lo scontrino, per favore» (skone-TRI-no).",
+      "Monnaie : espagnol «Perdone, creo que falta cambio» (KRÉ-o ké FAL-ta KAM-bio) = pardon, je crois qu'il manque de la monnaie. Reste calme."
+     ],
+     "q": "Préfères-tu payer par carte, téléphone ou en espèces en voyage, et pourquoi ?",
+     "c": "Entraîne-toi à demander si la carte est acceptée et à demander le ticket dans deux langues."
+    },
+    "it": {
+     "t": "Pagare e ricevere il resto",
+     "g": "Pagare con carta o contanti, chiedere lo scontrino e controllare il resto con garbo.",
+     "p": [
+      "Spagnolo: «¿Aceptan tarjeta?» (a-SEP-tan tar-HE-ta) = accettate la carta? Occhio ai cartelli «Solo efectivo» = solo contanti.",
+      "Scontrino: francese «Je peux avoir le ticket ?» (lö ti-KÈ) = posso avere lo scontrino? Inglese: «Can I have a receipt?» (ri-SIT).",
+      "Resto: spagnolo «Perdone, creo que falta cambio» (KRE-o ke FAL-ta KAM-bio) = scusi, credo che manchi del resto. Con calma e gentilezza."
+     ],
+     "q": "Preferisci pagare con carta, telefono o contanti quando viaggi, e perché?",
+     "c": "Esercitati a chiedere se accettano la carta e a chiedere lo scontrino in due lingue."
+    },
+    "pt": {
+     "t": "Pagar e receber o troco",
+     "g": "Pagar com cartão ou dinheiro, pedir o talão e conferir o troco com educação.",
+     "p": [
+      "Espanhol: «¿Aceptan tarjeta?» (a-SSÉP-tan tar-RRÊ-ta) = aceitam cartão? Atenção a avisos como «Solo efectivo» = só dinheiro.",
+      "Talão: francês «Je peux avoir le ticket ?» (le ti-KÉ) = pode dar-me o talão? Italiano: «Lo scontrino, per favore» (skon-TRI-no).",
+      "Troco: espanhol «Perdone, creo que falta cambio» (KRÊ-o ke FÁL-ta KÁM-bio) = desculpe, acho que falta troco. Com calma e simpatia."
+     ],
+     "q": "Preferes pagar com cartão, telemóvel ou dinheiro quando viajas, e porquê?",
+     "c": "Treina perguntar se aceitam cartão e pedir o talão em duas línguas."
+    },
+    "pt_BR": {
+     "t": "Pagar e receber o troco",
+     "g": "Pagar no cartão ou em dinheiro, pedir a nota e conferir o troco com educação.",
+     "p": [
+      "Espanhol: «¿Aceptan tarjeta?» (a-SSÉP-tan tar-RRÊ-ta) = aceitam cartão? Fique de olho em avisos como «Solo efectivo» = só dinheiro.",
+      "Nota: francês «Je peux avoir le ticket ?» (le ti-KÉ) = pode me dar a nota? Italiano: «Lo scontrino, per favore» (skon-TRI-no).",
+      "Troco: espanhol «Perdone, creo que falta cambio» (KRÊ-o ke FÁL-ta KÁM-bio) = desculpe, acho que falta troco. Com calma e simpatia."
+     ],
+     "q": "Você prefere pagar no cartão, pelo celular ou em dinheiro quando viaja, e por quê?",
+     "c": "Treine perguntar se aceitam cartão e pedir a nota em dois idiomas."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Returning or exchanging",
+     "g": "Explain that something is wrong and ask for an exchange.",
+     "p": [
+      "Spanish: «Quiero cambiar esto» (kam-BYAR) = I would like to exchange this. «Está roto» (RO-to) = it is broken. «Aquí está el tique».",
+      "French: «Je voudrais échanger cet article» (ay-shahn-ZHAY) = I would like to exchange this item. «Il y a un défaut» = there is a fault.",
+      "Italian: «Posso avere un rimborso?» (reem-BOR-so) = can I get a refund? Keep your receipt, as return rules differ from shop to shop."
+     ],
+     "q": "Have you ever had to return something you bought on a trip? How did it go?",
+     "c": "Practise explaining one problem with a product and asking for an exchange in a new language."
+    },
+    "de": {
+     "t": "Umtauschen oder zurückgeben",
+     "g": "Erkläre, dass etwas nicht stimmt, und bitte um einen Umtausch.",
+     "p": [
+      "Spanisch: «Quiero cambiar esto» = Ich möchte das umtauschen. «Está roto» = Es ist kaputt. «Aquí está el tique» = Hier ist der Bon.",
+      "Französisch: «Je voudrais échanger cet article» = Ich möchte diesen Artikel umtauschen. «Il y a un défaut» = Es hat einen Fehler.",
+      "Italienisch: «Posso avere un rimborso?» (rim-BOR-sso) = Bekomme ich mein Geld zurück? Heb den Bon auf, die Regeln sind je nach Laden anders."
+     ],
+     "q": "Musstest du schon einmal etwas zurückgeben, das du auf Reisen gekauft hast? Wie lief es?",
+     "c": "Übe, ein Problem mit einem Produkt zu erklären und um Umtausch zu bitten, in einer neuen Sprache."
+    },
+    "es": {
+     "t": "Devolver o cambiar",
+     "g": "Explica que algo está mal y pide un cambio.",
+     "p": [
+      "Inglés: «I'd like to exchange this» (aid laik tu ex-CHEINCH dis) = quiero cambiar esto. «It's broken» (its BROU-ken) = está roto.",
+      "Francés: «Je voudrais échanger cet article» (e-shan-YÉ) = quisiera cambiar este artículo. «Il y a un défaut» (de-FÓ) = tiene un defecto.",
+      "Italiano: «Posso avere un rimborso?» (rim-BOR-so) = ¿me pueden devolver el dinero? Guarda el tique: las normas cambian según la tienda."
+     ],
+     "q": "¿Alguna vez tuviste que devolver algo que compraste en un viaje? ¿Cómo fue?",
+     "c": "Practica explicar un problema con un producto y pedir un cambio en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Rendre ou échanger",
+     "g": "Expliquer qu'il y a un problème et demander un échange.",
+     "p": [
+      "Espagnol : «Quiero cambiar esto» (kam-BIAR) = je voudrais échanger ceci. «Está roto» = c'est cassé. «Aquí está el tique» = voici le ticket.",
+      "Anglais : «I'd like to exchange this» (aïd laïk tou ix-TCHÈÏNDJ ziss) = je voudrais échanger ceci. «It's broken» = c'est cassé.",
+      "Italien : «Posso avere un rimborso?» (rim-BOR-sso) = je peux être remboursé ? Garde ton ticket, les règles varient selon les magasins."
+     ],
+     "q": "As-tu déjà dû rendre un achat fait en voyage ? Comment ça s'est passé ?",
+     "c": "Entraîne-toi à expliquer un problème avec un produit et à demander un échange dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Restituire o cambiare",
+     "g": "Spiegare che qualcosa non va e chiedere un cambio.",
+     "p": [
+      "Spagnolo: «Quiero cambiar esto» (kam-BIAR) = vorrei cambiare questo. «Está roto» = è rotto. «Aquí está el tique» = ecco lo scontrino.",
+      "Francese: «Je voudrais échanger cet article» (e-scian-JÉ) = vorrei cambiare questo articolo. «Il y a un défaut» (de-FÓ) = ha un difetto.",
+      "Inglese: «Can I get a refund?» = posso avere un rimborso? Tieni lo scontrino: le regole cambiano da negozio a negozio."
+     ],
+     "q": "Ti è mai capitato di restituire qualcosa comprato in viaggio? Com'è andata?",
+     "c": "Esercitati a spiegare un problema con un prodotto e a chiedere un cambio in una lingua nuova."
+    },
+    "pt": {
+     "t": "Devolver ou trocar",
+     "g": "Explicar que algo está mal e pedir uma troca.",
+     "p": [
+      "Espanhol: «Quiero cambiar esto» (kam-BIÁR) = queria trocar isto. «Está roto» = está partido. «Aquí está el tique» = aqui está o talão.",
+      "Francês: «Je voudrais échanger cet article» (ê-chã-JÊ) = queria trocar este artigo. «Il y a un défaut» (dê-FÔ) = tem um defeito.",
+      "Italiano: «Posso avere un rimborso?» (rim-BÔR-so) = posso ter o reembolso? Guarda o talão: as regras mudam de loja para loja."
+     ],
+     "q": "Já tiveste de devolver algo que compraste numa viagem? Como correu?",
+     "c": "Treina explicar um problema com um produto e pedir uma troca numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Devolver ou trocar",
+     "g": "Explicar que algo está com problema e pedir uma troca.",
+     "p": [
+      "Espanhol: «Quiero cambiar esto» (kam-BIÁR) = queria trocar isto. «Está roto» = está quebrado. «Aquí está el tique» = aqui está a nota.",
+      "Francês: «Je voudrais échanger cet article» (ê-chã-JÊ) = queria trocar este artigo. «Il y a un défaut» (dê-FÔ) = tem um defeito.",
+      "Italiano: «Posso avere un rimborso?» (rim-BÔR-so) = posso ter o reembolso? Guarde a nota: as regras mudam de loja para loja."
+     ],
+     "q": "Você já teve que devolver algo que comprou numa viagem? Como foi?",
+     "c": "Treine explicar um problema com um produto e pedir uma troca num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buying souvenirs",
+     "g": "Ask where things are made and whether they can be gift-wrapped.",
+     "p": [
+      "Spanish: «¿Está hecho aquí?» (EH-cho a-KEE) = is it made here? «¿Es artesanal?» (ar-teh-sa-NAL) = is it handmade?",
+      "French: «C'est fait main ?» (say feh MAN) = is it handmade? «Vous pouvez faire un paquet cadeau ?» (pa-keh ka-DOH) = can you gift-wrap it?",
+      "Italian: «Me lo può incartare?» (een-kar-TA-reh) = can you wrap it? Local crafts make the most meaningful gifts."
+     ],
+     "q": "What kind of souvenir do you like to bring home: food, art, something useful or a tiny keepsake?",
+     "c": "Think of a friend and practise buying and gift-wrapping a souvenir for them in one language."
+    },
+    "de": {
+     "t": "Souvenirs kaufen",
+     "g": "Frag, wo etwas hergestellt wurde und ob es als Geschenk verpackt werden kann.",
+     "p": [
+      "Spanisch: «¿Está hecho aquí?» (E-tscho a-KI) = Ist es hier gemacht? «¿Es artesanal?» (ar-te-ssa-NAL) = Ist es Handarbeit?",
+      "Französisch: «C'est fait main ?» (ssä fä MÄN) = Ist es handgemacht? «Vous pouvez faire un paquet cadeau ?» = Als Geschenk verpacken?",
+      "Italienisch: «Me lo può incartare?» (in-kar-TA-re) = Können Sie es einpacken? Lokales Handwerk ergibt die schönsten Geschenke."
+     ],
+     "q": "Welche Art Souvenir bringst du gern mit: Essen, Kunst, etwas Nützliches oder ein kleines Andenken?",
+     "c": "Denk an einen Freund und übe in einer Sprache, ein Souvenir für ihn zu kaufen und einpacken zu lassen."
+    },
+    "es": {
+     "t": "Comprar recuerdos",
+     "g": "Pregunta dónde se hacen las cosas y si te las pueden envolver para regalo.",
+     "p": [
+      "Inglés: «Is it made here?» (is it meid JIR) = ¿está hecho aquí? «Is it handmade?» (is it jand-MEID) = ¿es artesanal?",
+      "Francés: «C'est fait main ?» (se fe MAN) = ¿está hecho a mano? «Vous pouvez faire un paquet cadeau ?» = ¿me lo envuelve para regalo?",
+      "Italiano: «Me lo può incartare?» (in-kar-TA-re) = ¿me lo puede envolver? La artesanía local es el regalo con más significado."
+     ],
+     "q": "¿Qué tipo de recuerdo te gusta traer a casa: comida, arte, algo útil o un pequeño detalle?",
+     "c": "Piensa en un amigo y practica comprarle un recuerdo y pedir que lo envuelvan, en un idioma."
+    },
+    "fr": {
+     "t": "Acheter des souvenirs",
+     "g": "Demander où les objets sont fabriqués et s'ils peuvent faire un paquet cadeau.",
+     "p": [
+      "Espagnol : «¿Está hecho aquí?» (É-tcho a-KI) = c'est fabriqué ici ? «¿Es artesanal?» (ar-té-ssa-NAL) = c'est artisanal ?",
+      "Anglais : «Is it handmade?» (iz it hand-MÈÏD) = c'est fait main ? «Could you gift-wrap it?» (koud you GUIFT-rap it) = un paquet cadeau ?",
+      "Italien : «Me lo può incartare?» (inn-kar-TA-ré) = vous pouvez l'emballer ? L'artisanat local fait les cadeaux les plus précieux."
+     ],
+     "q": "Quel genre de souvenir aimes-tu rapporter : de la nourriture, de l'art, un objet utile ou un petit porte-bonheur ?",
+     "c": "Pense à un ami et entraîne-toi à lui acheter un souvenir emballé en cadeau, dans une langue."
+    },
+    "it": {
+     "t": "Comprare souvenir",
+     "g": "Chiedere dove sono fatte le cose e se possono fare un pacchetto regalo.",
+     "p": [
+      "Spagnolo: «¿Está hecho aquí?» (E-cio a-KI) = è fatto qui? «¿Es artesanal?» (ar-te-sa-NAL) = è artigianale?",
+      "Francese: «C'est fait main ?» (se fè MẼ) = è fatto a mano? «Vous pouvez faire un paquet cadeau ?» (pa-kè ka-DÓ) = mi fa un pacchetto regalo?",
+      "Inglese: «Could you gift-wrap it?» (kud iu GHIFT-rep it) = me lo può incartare? L'artigianato locale fa i regali più significativi."
+     ],
+     "q": "Che tipo di souvenir ti piace portare a casa: cibo, arte, qualcosa di utile o un piccolo ricordo?",
+     "c": "Pensa a un amico ed esercitati a comprargli un souvenir con pacchetto regalo, in una lingua."
+    },
+    "pt": {
+     "t": "Comprar lembranças",
+     "g": "Perguntar onde as coisas são feitas e se podem embrulhar para oferta.",
+     "p": [
+      "Espanhol: «¿Está hecho aquí?» (É-tcho a-KI) = é feito aqui? «¿Es artesanal?» (ar-te-ssa-NÁL) = é artesanal?",
+      "Francês: «C'est fait main ?» (sé fé MÃ) = é feito à mão? «Vous pouvez faire un paquet cadeau ?» (pa-ké ka-DÔ) = pode embrulhar para oferta?",
+      "Italiano: «Me lo può incartare?» (in-kar-TÁ-re) = pode embrulhar? O artesanato local dá as prendas com mais significado."
+     ],
+     "q": "Que tipo de lembrança gostas de trazer: comida, arte, algo útil ou uma pequena recordação?",
+     "c": "Pensa num amigo e treina comprar-lhe uma lembrança embrulhada para oferta, numa língua."
+    },
+    "pt_BR": {
+     "t": "Comprar lembrancinhas",
+     "g": "Perguntar onde as coisas são feitas e se podem embrulhar para presente.",
+     "p": [
+      "Espanhol: «¿Está hecho aquí?» (É-tcho a-KI) = é feito aqui? «¿Es artesanal?» (ar-te-ssa-NÁL) = é artesanal?",
+      "Francês: «C'est fait main ?» (sé fé MÃ) = é feito à mão? «Vous pouvez faire un paquet cadeau ?» = pode embrulhar para presente?",
+      "Italiano: «Me lo può incartare?» (in-kar-TÁ-re) = pode embrulhar? O artesanato local rende os presentes mais especiais."
+     ],
+     "q": "Que tipo de lembrancinha você gosta de trazer: comida, arte, algo útil ou uma pequena recordação?",
+     "c": "Pense num amigo e treine comprar uma lembrancinha embrulhada para presente para ele, num idioma."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "At the pharmacy",
+     "g": "Ask for basic items like plasters, sunscreen or something for a cold.",
+     "p": [
+      "Spanish: «Necesito tiritas» (tee-REE-tas) = I need plasters. «Protector solar» = sunscreen. «Algo para el resfriado» = for a cold.",
+      "French: «des pansements» (pahns-MAHN) = plasters, «de la crème solaire» = sunscreen, «quelque chose contre le rhume» (REWM) = for a cold.",
+      "Pharmacists can help with simple everyday items; for anything serious or lasting, see a doctor. Italian plasters are «cerotti»."
+     ],
+     "q": "What small health items do you always pack before a trip?",
+     "c": "Write a mini pharmacy list in one language: plasters, sunscreen and something for a cold."
+    },
+    "de": {
+     "t": "In der Apotheke",
+     "g": "Frag nach einfachen Dingen wie Pflastern, Sonnencreme oder etwas gegen Erkältung.",
+     "p": [
+      "Spanisch: «Necesito tiritas» = Ich brauche Pflaster. «Protector solar» = Sonnencreme. «Algo para el resfriado» = gegen Erkältung.",
+      "Französisch: «des pansements» = Pflaster, «de la crème solaire» = Sonnencreme, «quelque chose contre le rhume» = gegen Schnupfen.",
+      "Apotheker helfen bei einfachen Alltagsdingen; bei Ernstem oder Anhaltendem geh zum Arzt. Pflaster heißen auf Italienisch «cerotti»."
+     ],
+     "q": "Welche kleinen Gesundheitsartikel packst du vor jeder Reise ein?",
+     "c": "Schreib eine Mini-Apothekenliste in einer Sprache: Pflaster, Sonnencreme und etwas gegen Erkältung."
+    },
+    "es": {
+     "t": "En la farmacia",
+     "g": "Pide cosas básicas como tiritas, protector solar o algo para el resfriado.",
+     "p": [
+      "Inglés: «I need some plasters» (PLAS-ters; en EE. UU. «band-aids») = necesito tiritas. «Sunscreen» (SAN-skrin) = protector solar.",
+      "Francés: «des pansements» = tiritas, «de la crème solaire» = protector solar, «quelque chose contre le rhume» = para el resfriado.",
+      "El farmacéutico ayuda con cosas sencillas del día a día; para algo serio o que dura, ve al médico. En italiano las tiritas son «cerotti»."
+     ],
+     "q": "¿Qué pequeños artículos de salud metes siempre en la maleta antes de un viaje?",
+     "c": "Escribe una mini lista de farmacia en un idioma: tiritas, protector solar y algo para el resfriado."
+    },
+    "fr": {
+     "t": "À la pharmacie",
+     "g": "Demander des produits de base comme des pansements, de la crème solaire ou un remède contre le rhume.",
+     "p": [
+      "Espagnol : «Necesito tiritas» = j'ai besoin de pansements. «Protector solar» = crème solaire. «Algo para el resfriado» = contre le rhume.",
+      "Anglais : «I need some plasters» (aux États-Unis «band-aids»), «sunscreen» = crème solaire, «something for a cold» = contre le rhume.",
+      "Le pharmacien aide pour les petits besoins ; pour quelque chose de sérieux ou qui dure, consulte un médecin. En italien : «cerotti»."
+     ],
+     "q": "Quels petits produits de santé glisses-tu toujours dans ta valise ?",
+     "c": "Écris une mini liste de pharmacie dans une langue : pansements, crème solaire et un remède contre le rhume."
+    },
+    "it": {
+     "t": "In farmacia",
+     "g": "Chiedere prodotti di base come cerotti, crema solare o qualcosa per il raffreddore.",
+     "p": [
+      "Spagnolo: «Necesito tiritas» = mi servono dei cerotti. «Protector solar» = crema solare. «Algo para el resfriado» = per il raffreddore.",
+      "Francese: «des pansements» (pans-MAN) = cerotti, «de la crème solaire» = crema solare, «quelque chose contre le rhume» = per il raffreddore.",
+      "Il farmacista aiuta con le piccole cose di tutti i giorni; per qualcosa di serio o che dura, rivolgiti a un medico. In inglese: «plasters»."
+     ],
+     "q": "Quali piccoli prodotti per la salute metti sempre in valigia prima di partire?",
+     "c": "Scrivi una mini lista per la farmacia in una lingua: cerotti, crema solare e qualcosa per il raffreddore."
+    },
+    "pt": {
+     "t": "Na farmácia",
+     "g": "Pedir coisas básicas como pensos rápidos, protetor solar ou algo para a constipação.",
+     "p": [
+      "Espanhol: «Necesito tiritas» = preciso de pensos rápidos. «Protector solar» = protetor solar. «Algo para el resfriado» = para a constipação.",
+      "Francês: «des pansements» (pãs-MÃ) = pensos, «de la crème solaire» = protetor solar, «quelque chose contre le rhume» = para a constipação.",
+      "O farmacêutico ajuda com coisas simples do dia a dia; para algo sério ou que dure, vai ao médico. Em italiano, pensos são «cerotti»."
+     ],
+     "q": "Que pequenos artigos de saúde levas sempre na mala antes de uma viagem?",
+     "c": "Escreve uma mini lista de farmácia numa língua: pensos rápidos, protetor solar e algo para a constipação."
+    },
+    "pt_BR": {
+     "t": "Na farmácia",
+     "g": "Pedir coisas básicas como curativos, protetor solar ou algo para resfriado.",
+     "p": [
+      "Espanhol: «Necesito tiritas» = preciso de curativos. «Protector solar» = protetor solar. «Algo para el resfriado» = para resfriado.",
+      "Francês: «des pansements» (pãs-MÃ) = curativos, «de la crème solaire» = protetor solar, «quelque chose contre le rhume» = para resfriado.",
+      "O farmacêutico ajuda com coisas simples do dia a dia; para algo sério ou que dure, procure um médico. Em italiano, curativos são «cerotti»."
+     ],
+     "q": "Que pequenos itens de saúde você sempre leva na mala antes de uma viagem?",
+     "c": "Escreva uma mini lista de farmácia num idioma: curativos, protetor solar e algo para resfriado."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing simple symptoms",
+     "g": "Say where it hurts and how you feel in short, clear phrases.",
+     "p": [
+      "Spanish: «Me duele la cabeza» (meh DWEH-leh la ka-BEH-sa) = my head hurts. Point and say «Me duele aquí» (a-KEE) = it hurts here.",
+      "French: «J'ai mal à la tête» (zhay mal a la TET) = I have a headache, «J'ai mal au ventre» (oh VAHNTR) = I have a stomach ache.",
+      "Italian: «Ho la febbre» (o la FEB-breh) = I have a fever, «Mi sento male» = I feel unwell. Then see a pharmacist or doctor."
+     ],
+     "q": "What helps you feel better quickly when you feel a bit under the weather on a trip?",
+     "c": "Point to your head, stomach and throat and name each one in Spanish, French or Italian."
+    },
+    "de": {
+     "t": "Einfache Beschwerden beschreiben",
+     "g": "Sag in kurzen, klaren Sätzen, wo es wehtut und wie du dich fühlst.",
+     "p": [
+      "Spanisch: «Me duele la cabeza» (me DUE-le la ka-BE-ssa) = Mir tut der Kopf weh. Zeig und sag «Me duele aquí» (a-KI) = Es tut hier weh.",
+      "Französisch: «J'ai mal à la tête» (sche mal a la TÄT) = Ich habe Kopfschmerzen, «J'ai mal au ventre» (o WANTR) = Ich habe Bauchweh.",
+      "Italienisch: «Ho la febbre» (o la FEB-bre) = Ich habe Fieber, «Mi sento male» = Mir geht es nicht gut. Dann zu Apotheke oder Arzt."
+     ],
+     "q": "Was hilft dir, dich schnell besser zu fühlen, wenn du auf Reisen etwas angeschlagen bist?",
+     "c": "Zeig auf Kopf, Bauch und Hals und benenne alles auf Spanisch, Französisch oder Italienisch."
+    },
+    "es": {
+     "t": "Describir síntomas sencillos",
+     "g": "Di dónde te duele y cómo te sientes con frases cortas y claras.",
+     "p": [
+      "Inglés: «I have a headache» (ai jav a JE-deik) = me duele la cabeza. Señala y di «It hurts here» (it jerts JIR) = me duele aquí.",
+      "Francés: «J'ai mal à la tête» (yé mal a la TET) = me duele la cabeza, «J'ai mal au ventre» (o VANTR) = me duele la barriga.",
+      "Italiano: «Ho la febbre» (o la FEB-bre) = tengo fiebre, «Mi sento male» = me encuentro mal. Luego ve a la farmacia o al médico."
+     ],
+     "q": "¿Qué te ayuda a sentirte mejor rápido cuando estás un poco pachucho de viaje?",
+     "c": "Señala tu cabeza, tu barriga y tu garganta y nombra cada una en inglés, francés o italiano."
+    },
+    "fr": {
+     "t": "Décrire des symptômes simples",
+     "g": "Dire où l'on a mal et comment on se sent, en phrases courtes et claires.",
+     "p": [
+      "Espagnol : «Me duele la cabeza» (mé DOUÉ-lé la ka-BÉ-ssa) = j'ai mal à la tête. Montre et dis «Me duele aquí» (a-KI) = j'ai mal ici.",
+      "Anglais : «I have a headache» (aï hav a HÈ-dèïk) = j'ai mal à la tête, «I have a stomach ache» (STO-meuk èïk) = j'ai mal au ventre.",
+      "Italien : «Ho la febbre» (o la FÈB-bré) = j'ai de la fièvre, «Mi sento male» = je ne me sens pas bien. Puis pharmacie ou médecin."
+     ],
+     "q": "Qu'est-ce qui t'aide à te sentir vite mieux quand tu es un peu patraque en voyage ?",
+     "c": "Montre ta tête, ton ventre et ta gorge et nomme-les en espagnol, en anglais ou en italien."
+    },
+    "it": {
+     "t": "Descrivere sintomi semplici",
+     "g": "Dire dove fa male e come ti senti con frasi brevi e chiare.",
+     "p": [
+      "Spagnolo: «Me duele la cabeza» (me DUE-le la ka-BE-sa) = mi fa male la testa. Indica e di' «Me duele aquí» (a-KI) = mi fa male qui.",
+      "Francese: «J'ai mal à la tête» (jé mal a la TÈT) = ho mal di testa, «J'ai mal au ventre» (o VANTR) = ho mal di pancia.",
+      "Inglese: «I have a fever» (ai hev a FI-ver) = ho la febbre, «I feel unwell» = mi sento male. Poi vai in farmacia o dal medico."
+     ],
+     "q": "Cosa ti aiuta a stare meglio in fretta quando non ti senti al top in viaggio?",
+     "c": "Indica testa, pancia e gola e nominale in spagnolo, francese o inglese."
+    },
+    "pt": {
+     "t": "Descrever sintomas simples",
+     "g": "Dizer onde dói e como te sentes com frases curtas e claras.",
+     "p": [
+      "Espanhol: «Me duele la cabeza» (me DUÉ-le la ka-BÊ-ssa) = dói-me a cabeça. Aponta e diz «Me duele aquí» (a-KI) = dói-me aqui.",
+      "Francês: «J'ai mal à la tête» (jé mal a la TÉT) = tenho dor de cabeça, «J'ai mal au ventre» (ô VÃTR) = tenho dor de barriga.",
+      "Italiano: «Ho la febbre» (ó la FÉB-bre) = tenho febre, «Mi sento male» (mi SÊN-to MÁ-le) = sinto-me mal. Depois vai à farmácia ou ao médico."
+     ],
+     "q": "O que te ajuda a sentir-te melhor depressa quando estás um pouco em baixo numa viagem?",
+     "c": "Aponta para a cabeça, a barriga e a garganta e diz cada uma em espanhol, francês ou italiano."
+    },
+    "pt_BR": {
+     "t": "Descrever sintomas simples",
+     "g": "Dizer onde dói e como você se sente com frases curtas e claras.",
+     "p": [
+      "Espanhol: «Me duele la cabeza» (me DUÉ-le la ka-BÊ-ssa) = minha cabeça dói. Aponte e diga «Me duele aquí» (a-KI) = dói aqui.",
+      "Francês: «J'ai mal à la tête» (jé mal a la TÉT) = estou com dor de cabeça, «J'ai mal au ventre» (ô VÃTR) = estou com dor de barriga.",
+      "Italiano: «Ho la febbre» (ó la FÉB-bre) = estou com febre, «Mi sento male» = não me sinto bem. Depois procure farmácia ou médico."
+     ],
+     "q": "O que te ajuda a se sentir melhor rápido quando você fica meio indisposto numa viagem?",
+     "c": "Aponte para a cabeça, a barriga e a garganta e diga cada uma em espanhol, francês ou italiano."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Emergency words",
+     "g": "Know help, ambulance, fire and police, just in case.",
+     "p": [
+      "Help: Spanish «¡Socorro!» (so-KO-rro) or «¡Ayuda!», French «Au secours !» (oh suh-KOOR), Italian «Aiuto!» (a-YOO-to).",
+      "Spanish «¡Llame a una ambulancia!» (YA-meh a oo-na am-boo-LAN-sya) = call an ambulance! French «Appelez la police !» = call the police!",
+      "Fire: Spanish «¡Fuego!», French «Au feu !», Italian «Al fuoco!». In the EU and many other countries, 112 reaches emergency services."
+     ],
+     "q": "Do you usually look up the local emergency number before a trip? Which other safety habits help you feel relaxed?",
+     "c": "Save the emergency number of your next destination in your phone and say help in three languages."
+    },
+    "de": {
+     "t": "Notfallwörter",
+     "g": "Kenne Hilfe, Krankenwagen, Feuer und Polizei, nur für alle Fälle.",
+     "p": [
+      "Hilfe: Spanisch «¡Socorro!» (sso-KO-rro) oder «¡Ayuda!», Französisch «Au secours !» (o ssö-KUR), Italienisch «Aiuto!» (a-JU-to).",
+      "Spanisch «¡Llame a una ambulancia!» = Rufen Sie einen Krankenwagen! Französisch «Appelez la police !» = Polizei rufen!",
+      "Feuer: Spanisch «¡Fuego!», Französisch «Au feu !», Italienisch «Al fuoco!». In der EU und vielen anderen Ländern erreicht 112 den Notruf."
+     ],
+     "q": "Schaust du vor einer Reise die örtliche Notrufnummer nach? Welche anderen Sicherheitsgewohnheiten geben dir Ruhe?",
+     "c": "Speichere die Notrufnummer deines nächsten Reiseziels im Handy und sag Hilfe in drei Sprachen."
+    },
+    "es": {
+     "t": "Palabras de emergencia",
+     "g": "Conoce ayuda, ambulancia, fuego y policía, por si acaso.",
+     "p": [
+      "Ayuda: inglés «Help!» (JELP), francés «Au secours !» (o se-KUR), italiano «Aiuto!» (a-IU-to).",
+      "Inglés «Call an ambulance!» (kol an AM-biu-lans) = ¡llame a una ambulancia! Francés «Appelez la police !» = ¡llame a la policía!",
+      "Fuego: inglés «Fire!» (FAI-er), francés «Au feu !» (o FÖ), italiano «Al fuoco!». En la UE y muchos otros países, el 112 llama a emergencias."
+     ],
+     "q": "¿Sueles buscar el número de emergencias local antes de viajar? ¿Qué otros hábitos de seguridad te dan tranquilidad?",
+     "c": "Guarda en el móvil el número de emergencias de tu próximo destino y di ayuda en tres idiomas."
+    },
+    "fr": {
+     "t": "Les mots d'urgence",
+     "g": "Connaître à l'aide, ambulance, au feu et police, juste au cas où.",
+     "p": [
+      "À l'aide : espagnol «¡Socorro!» (sso-KO-rro) ou «¡Ayuda!», anglais «Help!» (HÈLP), italien «Aiuto!» (a-YOU-to).",
+      "Espagnol «¡Llame a una ambulancia!» = appelez une ambulance ! Anglais «Call the police!» = appelez la police !",
+      "Feu : espagnol «¡Fuego!», anglais «Fire!» (FAÏ-eur), italien «Al fuoco!». Dans l'UE et de nombreux autres pays, le 112 joint les secours."
+     ],
+     "q": "Cherches-tu le numéro d'urgence local avant de partir ? Quelles autres habitudes de sécurité te rassurent ?",
+     "c": "Enregistre le numéro d'urgence de ta prochaine destination dans ton téléphone et dis à l'aide en trois langues."
+    },
+    "it": {
+     "t": "Parole di emergenza",
+     "g": "Conoscere aiuto, ambulanza, fuoco e polizia, per ogni evenienza.",
+     "p": [
+      "Aiuto: spagnolo «¡Socorro!» (so-KO-rro) o «¡Ayuda!», francese «Au secours !» (o sö-KUR), inglese «Help!» (HELP).",
+      "Spagnolo «¡Llame a una ambulancia!» (IA-me a u-na am-bu-LAN-sia) = chiami un'ambulanza! Francese «Appelez la police !» = chiami la polizia!",
+      "Fuoco: spagnolo «¡Fuego!», francese «Au feu !» (o FÖ), inglese «Fire!» (FAI-er). Nell'UE e in molti altri paesi il 112 contatta i soccorsi."
+     ],
+     "q": "Di solito cerchi il numero di emergenza locale prima di partire? Quali altre abitudini di sicurezza ti fanno stare tranquillo?",
+     "c": "Salva nel telefono il numero di emergenza della tua prossima meta e di' aiuto in tre lingue."
+    },
+    "pt": {
+     "t": "Palavras de emergência",
+     "g": "Saber socorro, ambulância, fogo e polícia, só por precaução.",
+     "p": [
+      "Socorro: espanhol «¡Socorro!» (so-KÔ-rro) ou «¡Ayuda!», francês «Au secours !» (ô se-KUR), italiano «Aiuto!» (a-IU-to).",
+      "Espanhol «¡Llame a una ambulancia!» (LHÁ-me a u-na am-bu-LÃN-ssia) = chame uma ambulância! Francês «Appelez la police !» = chame a polícia!",
+      "Fogo: espanhol «¡Fuego!», francês «Au feu !», italiano «Al fuoco!». Na UE e em muitos outros países, o 112 liga aos serviços de emergência."
+     ],
+     "q": "Costumas procurar o número de emergência local antes de viajar? Que outros hábitos de segurança te dão tranquilidade?",
+     "c": "Guarda no telemóvel o número de emergência do teu próximo destino e diz socorro em três línguas."
+    },
+    "pt_BR": {
+     "t": "Palavras de emergência",
+     "g": "Saber socorro, ambulância, fogo e polícia, só por precaução.",
+     "p": [
+      "Socorro: espanhol «¡Socorro!» (so-KÔ-rro) ou «¡Ayuda!», francês «Au secours !» (ô se-KUR), italiano «Aiuto!» (a-IU-to).",
+      "Espanhol «¡Llame a una ambulancia!» (JÁ-me a u-na am-bu-LÃN-ssia) = chame uma ambulância! Francês «Appelez la police !» = chame a polícia!",
+      "Fogo: espanhol «¡Fuego!», francês «Au feu !» (ô FÊ), italiano «Al fuoco!». Na UE e em muitos outros países, o 112 chama a emergência."
+     ],
+     "q": "Você costuma procurar o número de emergência local antes de viajar? Que outros hábitos de segurança te dão tranquilidade?",
+     "c": "Salve no celular o número de emergência do seu próximo destino e diga socorro em três idiomas."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "painting",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is value",
+     "g": "Understand value, the lightness or darkness of a colour, and why it matters most.",
+     "p": [
+      "Value means how light or dark a colour is, regardless of its hue: a pale yellow and a pale blue can share the same value.",
+      "A painting with correct values reads clearly even in black and white, while wrong values look flat or confusing.",
+      "Squinting your eyes blurs details and colour, so the big light and dark shapes become easy to see."
+     ],
+     "q": "Can you think of a painting or photo that feels dramatic because of strong lights and darks?",
+     "c": "Take a photo of your room, switch it to black and white and notice where the lightest and darkest areas are."
+    },
+    "de": {
+     "t": "Was ist Tonwert?",
+     "g": "Verstehe den Tonwert, also Helligkeit oder Dunkelheit einer Farbe, und warum er am wichtigsten ist.",
+     "p": [
+      "Tonwert heißt, wie hell oder dunkel eine Farbe ist, unabhängig vom Farbton: Blassgelb und Blassblau können gleich hell sein.",
+      "Ein Bild mit stimmigen Tonwerten wirkt auch in Schwarz-Weiß klar; falsche Tonwerte wirken flach oder verwirrend.",
+      "Kneif die Augen zusammen: Details und Farbe verschwimmen, die großen hellen und dunklen Formen werden sichtbar."
+     ],
+     "q": "Fällt dir ein Bild oder Foto ein, das durch starke Hell-Dunkel-Kontraste dramatisch wirkt?",
+     "c": "Fotografiere dein Zimmer, stell das Bild auf Schwarz-Weiß und finde die hellsten und dunkelsten Bereiche."
+    },
+    "es": {
+     "t": "Qué es el valor",
+     "g": "Entiende el valor, lo claro u oscuro de un color, y por qué es lo más importante.",
+     "p": [
+      "El valor indica lo claro u oscuro que es un color, sea cual sea su tono: un amarillo pálido y un azul pálido pueden tener el mismo.",
+      "Un cuadro con valores correctos se lee bien incluso en blanco y negro; con valores erróneos parece plano o confuso.",
+      "Entrecerrar los ojos difumina detalles y color, y así las grandes formas claras y oscuras se ven fácilmente."
+     ],
+     "q": "¿Recuerdas un cuadro o una foto que impresione por sus luces y sombras intensas?",
+     "c": "Haz una foto de tu habitación, pásala a blanco y negro y localiza las zonas más claras y más oscuras."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la valeur ?",
+     "g": "Comprends la valeur, la clarté ou l'obscurité d'une couleur, et pourquoi elle compte le plus.",
+     "p": [
+      "La valeur indique si une couleur est claire ou foncée, quelle que soit sa teinte : un jaune pâle et un bleu pâle peuvent l'avoir égale.",
+      "Un tableau aux valeurs justes se lit même en noir et blanc ; des valeurs fausses le rendent plat ou confus.",
+      "Plisser les yeux brouille détails et couleurs, et les grandes masses claires et sombres apparaissent clairement."
+     ],
+     "q": "Connais-tu un tableau ou une photo rendus dramatiques par de forts contrastes de clair et de sombre ?",
+     "c": "Photographie ta pièce, passe l'image en noir et blanc et repère les zones les plus claires et les plus sombres."
+    },
+    "it": {
+     "t": "Cos'è il valore",
+     "g": "Capisci il valore, cioè quanto un colore è chiaro o scuro, e perché conta più di tutto.",
+     "p": [
+      "Il valore indica quanto un colore è chiaro o scuro, a prescindere dalla tinta: un giallo pallido e un blu pallido possono averlo uguale.",
+      "Un dipinto con valori giusti si legge bene anche in bianco e nero; con valori sbagliati appare piatto o confuso.",
+      "Socchiudere gli occhi sfoca dettagli e colore, così le grandi masse chiare e scure diventano evidenti."
+     ],
+     "q": "Ti viene in mente un quadro o una foto resi drammatici da forti luci e ombre?",
+     "c": "Fotografa la tua stanza, mettila in bianco e nero e trova le zone più chiare e più scure."
+    },
+    "pt": {
+     "t": "O que é o valor",
+     "g": "Percebe o valor, quão claro ou escuro é uma cor, e porque é o mais importante.",
+     "p": [
+      "O valor indica quão clara ou escura é uma cor, seja qual for o tom: um amarelo pálido e um azul pálido podem ter o mesmo.",
+      "Um quadro com valores certos lê-se bem até a preto e branco; com valores errados parece plano ou confuso.",
+      "Semicerrar os olhos desfoca detalhes e cor, e as grandes formas claras e escuras tornam-se fáceis de ver."
+     ],
+     "q": "Lembras-te de um quadro ou foto que impressione pelas luzes e sombras fortes?",
+     "c": "Tira uma foto ao teu quarto, passa-a a preto e branco e encontra as zonas mais claras e mais escuras."
+    },
+    "pt_BR": {
+     "t": "O que é valor",
+     "g": "Entenda o valor, o quanto uma cor é clara ou escura, e por que ele é o mais importante.",
+     "p": [
+      "Valor é o quanto uma cor é clara ou escura, seja qual for o tom: um amarelo claro e um azul claro podem ter o mesmo valor.",
+      "Um quadro com valores certos funciona até em preto e branco; com valores errados ele parece chapado ou confuso.",
+      "Apertar os olhos borra detalhes e cor, e as grandes formas claras e escuras ficam fáceis de ver."
+     ],
+     "q": "Você lembra de um quadro ou foto que impressiona pelas luzes e sombras fortes?",
+     "c": "Tire uma foto do seu quarto, deixe em preto e branco e ache as áreas mais claras e mais escuras."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painting a value scale",
+     "g": "Make an even scale of value steps from light to dark with one colour.",
+     "p": [
+      "Draw a strip of five to nine boxes; leave the first one white or pale and make the last as dark as your paint allows.",
+      "With watercolour add more pigment or layers to darken; with opaque paint mix in white to lighten or a dark to deepen.",
+      "Aim for even jumps: each box should look clearly darker than the one before, with no two looking the same."
+     ],
+     "q": "What surprised you most when trying to make the steps look even?",
+     "c": "Paint a five-step value scale with one dark colour, like a blue or brown, and keep it as a reference card."
+    },
+    "de": {
+     "t": "Eine Tonwertskala malen",
+     "g": "Male mit einer Farbe eine gleichmäßige Skala von hell nach dunkel.",
+     "p": [
+      "Zeichne einen Streifen mit fünf bis neun Feldern; das erste bleibt weiß oder hell, das letzte so dunkel wie möglich.",
+      "Im Aquarell dunkelst du mit mehr Pigment oder Schichten ab; bei deckender Farbe hellst du mit Weiß auf.",
+      "Ziel sind gleiche Sprünge: Jedes Feld soll deutlich dunkler als das vorige sein, keine zwei gleich."
+     ],
+     "q": "Was hat dich beim Versuch, gleichmäßige Stufen zu malen, am meisten überrascht?",
+     "c": "Male eine fünfstufige Tonwertskala mit einer dunklen Farbe wie Blau oder Braun und behalte sie als Referenzkarte."
+    },
+    "es": {
+     "t": "Pintar una escala de valores",
+     "g": "Haz una escala pareja de valores de claro a oscuro con un solo color.",
+     "p": [
+      "Dibuja una tira de cinco a nueve casillas; deja la primera blanca o clara y haz la última tan oscura como permita la pintura.",
+      "En acuarela oscurece con más pigmento o capas; con pintura opaca aclara con blanco u oscurece con un tono oscuro.",
+      "Busca saltos iguales: cada casilla debe verse claramente más oscura que la anterior y ninguna igual a otra."
+     ],
+     "q": "¿Qué te sorprendió más al intentar que los pasos fueran parejos?",
+     "c": "Pinta una escala de cinco valores con un color oscuro, como un azul o un marrón, y guárdala como tarjeta de referencia."
+    },
+    "fr": {
+     "t": "Peindre une échelle de valeurs",
+     "g": "Réalise une échelle régulière de valeurs, du clair au foncé, avec une seule couleur.",
+     "p": [
+      "Trace une bande de cinq à neuf cases ; laisse la première blanche ou pâle et rends la dernière aussi foncée que possible.",
+      "À l'aquarelle, fonce avec plus de pigment ou de couches ; en peinture couvrante, éclaircis avec du blanc.",
+      "Vise des sauts égaux : chaque case doit être nettement plus foncée que la précédente, aucune identique."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris en essayant d'obtenir des paliers réguliers ?",
+     "c": "Peins une échelle de cinq valeurs avec une couleur foncée, comme un bleu ou un brun, et garde-la comme carte repère."
+    },
+    "it": {
+     "t": "Dipingere una scala di valori",
+     "g": "Realizza una scala regolare di valori dal chiaro allo scuro con un solo colore.",
+     "p": [
+      "Disegna una striscia da cinque a nove caselle; lascia la prima bianca o chiara e rendi l'ultima più scura possibile.",
+      "Con l'acquerello scurisci con più pigmento o strati; con colori coprenti schiarisci con il bianco.",
+      "Punta a salti uguali: ogni casella deve apparire chiaramente più scura della precedente, nessuna uguale."
+     ],
+     "q": "Cosa ti ha sorpreso di più nel cercare di rendere i passaggi regolari?",
+     "c": "Dipingi una scala di cinque valori con un colore scuro, come un blu o un marrone, e conservala come riferimento."
+    },
+    "pt": {
+     "t": "Pintar uma escala de valores",
+     "g": "Faz uma escala regular de valores, do claro ao escuro, com uma só cor.",
+     "p": [
+      "Desenha uma tira de cinco a nove quadrados; deixa o primeiro branco ou claro e faz o último tão escuro quanto possível.",
+      "Em aguarela escurece com mais pigmento ou camadas; com tinta opaca aclara com branco ou escurece com um tom escuro.",
+      "Procura saltos iguais: cada quadrado deve parecer claramente mais escuro do que o anterior, nenhum igual."
+     ],
+     "q": "O que mais te surpreendeu ao tentar que os passos ficassem regulares?",
+     "c": "Pinta uma escala de cinco valores com uma cor escura, como azul ou castanho, e guarda-a como cartão de referência."
+    },
+    "pt_BR": {
+     "t": "Pintando uma escala de valores",
+     "g": "Faça uma escala regular de valores, do claro ao escuro, com uma só cor.",
+     "p": [
+      "Desenhe uma tira de cinco a nove quadrados; deixe o primeiro branco ou claro e faça o último o mais escuro possível.",
+      "Na aquarela escureça com mais pigmento ou camadas; com tinta opaca clareie com branco ou escureça com um tom escuro.",
+      "Busque saltos iguais: cada quadrado deve parecer claramente mais escuro que o anterior, nenhum igual."
+     ],
+     "q": "O que mais te surpreendeu ao tentar deixar os passos regulares?",
+     "c": "Pinte uma escala de cinco valores com uma cor escura, como azul ou marrom, e guarde como cartão de referência."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hue, value and saturation",
+     "g": "Learn the three properties that describe any colour precisely.",
+     "p": [
+      "Hue is the colour family, like red or blue-green; value is how light or dark it is.",
+      "Saturation, also called chroma or intensity, is how pure and vivid a colour is compared with a dull, greyed version.",
+      "Describing a colour with all three, like a dark, muted blue-green, helps you mix exactly what you see."
+     ],
+     "q": "Pick an object near you: how would you describe its colour using hue, value and saturation?",
+     "c": "Choose three objects and write each colour as hue + value + saturation, for example light, dull yellow."
+    },
+    "de": {
+     "t": "Farbton, Tonwert und Sättigung",
+     "g": "Lerne die drei Eigenschaften, mit denen sich jede Farbe genau beschreiben lässt.",
+     "p": [
+      "Der Farbton ist die Farbfamilie, etwa Rot oder Blaugrün; der Tonwert sagt, wie hell oder dunkel sie ist.",
+      "Die Sättigung, auch Buntheit oder Intensität, beschreibt, wie rein und leuchtend eine Farbe im Vergleich zu einer vergrauten ist.",
+      "Beschreibst du eine Farbe mit allen dreien, etwa dunkles, gedämpftes Blaugrün, mischst du genau, was du siehst."
+     ],
+     "q": "Wähle einen Gegenstand neben dir: Wie beschreibst du seine Farbe mit Farbton, Tonwert und Sättigung?",
+     "c": "Notiere bei drei Gegenständen die Farbe als Farbton + Tonwert + Sättigung, etwa helles, stumpfes Gelb."
+    },
+    "es": {
+     "t": "Tono, valor y saturación",
+     "g": "Aprende las tres propiedades que describen cualquier color con precisión.",
+     "p": [
+      "El tono es la familia de color, como rojo o verde azulado; el valor indica lo claro u oscuro que es.",
+      "La saturación, o croma o intensidad, es lo puro y vivo que es un color frente a una versión apagada y agrisada.",
+      "Describir un color con las tres, como un verde azulado oscuro y apagado, te ayuda a mezclar justo lo que ves."
+     ],
+     "q": "Elige un objeto cercano: ¿cómo describirías su color con tono, valor y saturación?",
+     "c": "Elige tres objetos y escribe su color como tono + valor + saturación, por ejemplo amarillo claro y apagado."
+    },
+    "fr": {
+     "t": "Teinte, valeur et saturation",
+     "g": "Découvre les trois propriétés qui décrivent précisément n'importe quelle couleur.",
+     "p": [
+      "La teinte est la famille de couleur, comme rouge ou bleu-vert ; la valeur dit si elle est claire ou foncée.",
+      "La saturation, ou chroma ou intensité, indique si une couleur est pure et vive ou terne et grisée.",
+      "Décrire une couleur avec les trois, comme un bleu-vert foncé et rompu, t'aide à mélanger exactement ce que tu vois."
+     ],
+     "q": "Choisis un objet près de toi : comment décrirais-tu sa couleur avec teinte, valeur et saturation ?",
+     "c": "Choisis trois objets et note leur couleur en teinte + valeur + saturation, par exemple jaune clair et terne."
+    },
+    "it": {
+     "t": "Tinta, valore e saturazione",
+     "g": "Impara le tre proprietà che descrivono con precisione qualsiasi colore.",
+     "p": [
+      "La tinta è la famiglia di colore, come rosso o blu-verde; il valore dice quanto è chiaro o scuro.",
+      "La saturazione, o croma o intensità, indica quanto un colore è puro e vivo rispetto a una versione spenta e ingrigita.",
+      "Descrivere un colore con tutte e tre, come un blu-verde scuro e smorzato, ti aiuta a mescolare ciò che vedi."
+     ],
+     "q": "Scegli un oggetto vicino: come descriveresti il suo colore con tinta, valore e saturazione?",
+     "c": "Scegli tre oggetti e scrivi il loro colore come tinta + valore + saturazione, per esempio giallo chiaro e spento."
+    },
+    "pt": {
+     "t": "Tom, valor e saturação",
+     "g": "Aprende as três propriedades que descrevem qualquer cor com precisão.",
+     "p": [
+      "O tom é a família de cor, como vermelho ou azul-esverdeado; o valor indica quão claro ou escuro é.",
+      "A saturação, ou croma ou intensidade, é quão pura e viva é uma cor face a uma versão baça e acinzentada.",
+      "Descrever uma cor com as três, como um azul-esverdeado escuro e suave, ajuda-te a misturar o que vês."
+     ],
+     "q": "Escolhe um objeto perto de ti: como descreverias a sua cor com tom, valor e saturação?",
+     "c": "Escolhe três objetos e escreve a sua cor como tom + valor + saturação, por exemplo amarelo claro e baço."
+    },
+    "pt_BR": {
+     "t": "Matiz, valor e saturação",
+     "g": "Aprenda as três propriedades que descrevem qualquer cor com precisão.",
+     "p": [
+      "Matiz é a família da cor, como vermelho ou azul-esverdeado; valor é o quanto ela é clara ou escura.",
+      "Saturação, ou croma ou intensidade, é o quanto uma cor é pura e viva em comparação com uma versão apagada e acinzentada.",
+      "Descrever uma cor com as três, como um azul-esverdeado escuro e suave, ajuda você a misturar o que vê."
+     ],
+     "q": "Escolha um objeto perto de você: como descreveria a cor dele com matiz, valor e saturação?",
+     "c": "Escolha três objetos e escreva a cor de cada um como matiz + valor + saturação, por exemplo amarelo claro e apagado."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warm and cool colours",
+     "g": "Learn colour temperature and how warm colours advance while cool ones recede.",
+     "p": [
+      "Reds, oranges and yellows feel warm like fire and sun; blues, greens and violets feel cool like water and shade.",
+      "Warm colours tend to come forward and cool colours tend to sink back, which helps create depth.",
+      "Temperature is relative: a lemon yellow looks cool next to an orange-yellow, and a violet can look warm beside blue."
+     ],
+     "q": "Do you dress or decorate more with warm colours or cool colours?",
+     "c": "Sort ten objects at home into a warm group and a cool group. Which ones were hard to decide?"
+    },
+    "de": {
+     "t": "Warme und kalte Farben",
+     "g": "Lerne die Farbtemperatur kennen und wie warme Farben vortreten und kalte zurückweichen.",
+     "p": [
+      "Rot, Orange und Gelb wirken warm wie Feuer und Sonne; Blau, Grün und Violett kühl wie Wasser und Schatten.",
+      "Warme Farben treten eher nach vorn, kalte weichen zurück: Das hilft, Raumtiefe zu erzeugen.",
+      "Temperatur ist relativ: Zitronengelb wirkt neben Orangegelb kühl, und Violett kann neben Blau warm wirken."
+     ],
+     "q": "Kleidest oder dekorierst du dich eher mit warmen oder kalten Farben?",
+     "c": "Sortiere zehn Gegenstände in eine warme und eine kalte Gruppe. Bei welchen fiel es dir schwer?"
+    },
+    "es": {
+     "t": "Colores cálidos y fríos",
+     "g": "Aprende la temperatura del color y cómo los cálidos avanzan y los fríos retroceden.",
+     "p": [
+      "Rojos, naranjas y amarillos se sienten cálidos como el fuego y el sol; azules, verdes y violetas, frescos como el agua.",
+      "Los colores cálidos tienden a venir hacia delante y los fríos a alejarse, lo que ayuda a crear profundidad.",
+      "La temperatura es relativa: un amarillo limón parece frío junto a un amarillo anaranjado, y un violeta, cálido junto al azul."
+     ],
+     "q": "¿Te vistes o decoras más con colores cálidos o fríos?",
+     "c": "Clasifica diez objetos de casa en cálidos y fríos. ¿Cuáles te costó decidir?"
+    },
+    "fr": {
+     "t": "Couleurs chaudes et froides",
+     "g": "Découvre la température des couleurs : les chaudes avancent, les froides reculent.",
+     "p": [
+      "Rouges, orangés et jaunes semblent chauds comme le feu et le soleil ; bleus, verts et violets frais comme l'eau et l'ombre.",
+      "Les couleurs chaudes ont tendance à avancer et les froides à reculer, ce qui aide à créer de la profondeur.",
+      "La température est relative : un jaune citron paraît froid près d'un jaune orangé, un violet chaud près d'un bleu."
+     ],
+     "q": "T'habilles-tu ou décores-tu plutôt avec des couleurs chaudes ou froides ?",
+     "c": "Classe dix objets de chez toi en chauds et froids. Lesquels étaient difficiles à trancher ?"
+    },
+    "it": {
+     "t": "Colori caldi e freddi",
+     "g": "Scopri la temperatura del colore: i caldi avanzano, i freddi arretrano.",
+     "p": [
+      "Rossi, aranci e gialli sembrano caldi come fuoco e sole; blu, verdi e viola freschi come acqua e ombra.",
+      "I colori caldi tendono a venire avanti e i freddi ad allontanarsi, il che aiuta a creare profondità.",
+      "La temperatura è relativa: un giallo limone sembra freddo accanto a un giallo arancio, un viola caldo accanto al blu."
+     ],
+     "q": "Ti vesti o arredi di più con colori caldi o freddi?",
+     "c": "Dividi dieci oggetti di casa in caldi e freddi. Quali sono stati difficili da decidere?"
+    },
+    "pt": {
+     "t": "Cores quentes e frias",
+     "g": "Aprende a temperatura da cor: as quentes avançam e as frias recuam.",
+     "p": [
+      "Vermelhos, laranjas e amarelos parecem quentes como fogo e sol; azuis, verdes e violetas frescos como água e sombra.",
+      "As cores quentes tendem a vir para a frente e as frias a recuar, o que ajuda a criar profundidade.",
+      "A temperatura é relativa: um amarelo-limão parece frio ao lado de um amarelo-alaranjado, e um violeta quente junto ao azul."
+     ],
+     "q": "Vestes-te ou decoras mais com cores quentes ou frias?",
+     "c": "Separa dez objetos de casa em quentes e frios. Quais foram difíceis de decidir?"
+    },
+    "pt_BR": {
+     "t": "Cores quentes e frias",
+     "g": "Aprenda a temperatura da cor: as quentes avançam e as frias recuam.",
+     "p": [
+      "Vermelhos, laranjas e amarelos parecem quentes como fogo e sol; azuis, verdes e violetas frescos como água e sombra.",
+      "Cores quentes tendem a vir para frente e as frias a recuar, o que ajuda a criar profundidade.",
+      "A temperatura é relativa: um amarelo-limão parece frio ao lado de um amarelo-alaranjado, e um violeta, quente perto do azul."
+     ],
+     "q": "Você se veste ou decora mais com cores quentes ou frias?",
+     "c": "Separe dez objetos de casa em quentes e frios. Quais foram difíceis de decidir?"
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Complementary colours",
+     "g": "Discover how opposite colours make each other vibrate and neutralise when mixed.",
+     "p": [
+      "Complements sit opposite on the wheel: red and green, blue and orange, yellow and violet.",
+      "Side by side they intensify each other, which Van Gogh loved, for example blue skies against orange-yellow fields.",
+      "Mixed together they cancel out towards a neutral brown or grey, so a touch of the complement calms a loud colour."
+     ],
+     "q": "Which complementary pair do you find most beautiful together?",
+     "c": "Paint a small orange square next to a blue one, then mix a little of each into the other and watch them calm down."
+    },
+    "de": {
+     "t": "Komplementärfarben",
+     "g": "Entdecke, wie gegenüberliegende Farben einander zum Leuchten bringen und sich in der Mischung neutralisieren.",
+     "p": [
+      "Komplementärfarben liegen sich im Kreis gegenüber: Rot und Grün, Blau und Orange, Gelb und Violett.",
+      "Nebeneinander steigern sie sich, was Van Gogh liebte, etwa blaue Himmel über orangegelben Feldern.",
+      "Gemischt heben sie sich zu einem neutralen Braun oder Grau auf; ein Hauch der Gegenfarbe beruhigt eine grelle Farbe."
+     ],
+     "q": "Welches Komplementärpaar findest du zusammen am schönsten?",
+     "c": "Male ein kleines orangefarbenes Quadrat neben ein blaues, dann mische etwas von jedem ins andere und sieh, wie sie ruhiger werden."
+    },
+    "es": {
+     "t": "Colores complementarios",
+     "g": "Descubre cómo los colores opuestos se hacen vibrar y se neutralizan al mezclarse.",
+     "p": [
+      "Los complementarios están enfrentados en el círculo: rojo y verde, azul y naranja, amarillo y violeta.",
+      "Juntos se intensifican, algo que Van Gogh adoraba, por ejemplo cielos azules sobre campos amarillo anaranjados.",
+      "Mezclados se anulan hacia un marrón o gris neutro, así que una pizca del complementario calma un color chillón."
+     ],
+     "q": "¿Qué pareja de complementarios te parece más bonita junta?",
+     "c": "Pinta un cuadrado naranja junto a uno azul, luego mezcla un poco de cada uno en el otro y mira cómo se calman."
+    },
+    "fr": {
+     "t": "Les complémentaires",
+     "g": "Découvre comment les couleurs opposées se font vibrer et se neutralisent une fois mélangées.",
+     "p": [
+      "Les complémentaires sont face à face sur le cercle : rouge et vert, bleu et orange, jaune et violet.",
+      "Côte à côte, elles s'exaltent, ce que Van Gogh adorait, par exemple des ciels bleus sur des champs jaune orangé.",
+      "Mélangées, elles s'annulent vers un brun ou un gris neutre : une pointe de complémentaire calme une couleur criarde."
+     ],
+     "q": "Quelle paire de complémentaires trouves-tu la plus belle ensemble ?",
+     "c": "Peins un carré orange à côté d'un bleu, puis mélange un peu de chacun dans l'autre et regarde-les s'apaiser."
+    },
+    "it": {
+     "t": "I colori complementari",
+     "g": "Scopri come i colori opposti si fanno vibrare a vicenda e si neutralizzano mescolati.",
+     "p": [
+      "I complementari stanno opposti nel cerchio: rosso e verde, blu e arancio, giallo e viola.",
+      "Accostati si esaltano, cosa che Van Gogh amava, per esempio cieli blu su campi giallo-arancio.",
+      "Mescolati si annullano verso un marrone o grigio neutro: un tocco di complementare calma un colore troppo acceso."
+     ],
+     "q": "Quale coppia di complementari trovi più bella insieme?",
+     "c": "Dipingi un quadrato arancio accanto a uno blu, poi mescola un po' di ciascuno nell'altro e guarda come si calmano."
+    },
+    "pt": {
+     "t": "Cores complementares",
+     "g": "Descobre como as cores opostas se fazem vibrar e se neutralizam quando misturadas.",
+     "p": [
+      "As complementares estão opostas no círculo: vermelho e verde, azul e laranja, amarelo e violeta.",
+      "Lado a lado intensificam-se, algo que Van Gogh adorava, como céus azuis sobre campos amarelo-alaranjados.",
+      "Misturadas anulam-se num castanho ou cinzento neutro, por isso um toque da complementar acalma uma cor berrante."
+     ],
+     "q": "Que par de complementares achas mais bonito junto?",
+     "c": "Pinta um quadrado laranja ao lado de um azul, depois mistura um pouco de cada no outro e vê-os acalmar."
+    },
+    "pt_BR": {
+     "t": "Cores complementares",
+     "g": "Descubra como cores opostas fazem uma à outra vibrar e se neutralizam quando misturadas.",
+     "p": [
+      "As complementares ficam opostas no círculo: vermelho e verde, azul e laranja, amarelo e violeta.",
+      "Lado a lado elas se intensificam, algo que Van Gogh adorava, como céus azuis sobre campos amarelo-alaranjados.",
+      "Misturadas elas se anulam num marrom ou cinza neutro, então um toque da complementar acalma uma cor berrante."
+     ],
+     "q": "Qual par de complementares você acha mais bonito junto?",
+     "c": "Pinte um quadrado laranja ao lado de um azul, depois misture um pouco de cada no outro e veja como se acalmam."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mixing beautiful greys",
+     "g": "Create lively, coloured greys from complementary colours instead of plain black.",
+     "p": [
+      "Mixing two complements, like ultramarine and burnt sienna, gives rich greys that can lean warm or cool.",
+      "Add more of one side to tint the grey: more blue for a cool slate, more sienna for a warm stone colour.",
+      "Add white or water for lighter greys; these chromatic greys look alive, while black plus white can feel flat."
+     ],
+     "q": "Where do you see interesting greys around you: clouds, stone, city streets?",
+     "c": "Mix five different greys from one complementary pair, from warm to cool, and paint them as a strip."
+    },
+    "de": {
+     "t": "Schöne Grautöne mischen",
+     "g": "Mische lebendige, farbige Grautöne aus Komplementärfarben statt aus reinem Schwarz.",
+     "p": [
+      "Zwei Gegenfarben wie Ultramarin und Siena gebrannt ergeben satte Grautöne, die warm oder kalt wirken können.",
+      "Mehr von einer Seite färbt das Grau: mehr Blau für kühles Schiefergrau, mehr Siena für warmes Steingrau.",
+      "Mit Weiß oder Wasser wird es heller; solche Buntgraus wirken lebendig, Schwarz plus Weiß dagegen oft flach."
+     ],
+     "q": "Wo siehst du um dich herum interessante Grautöne: Wolken, Stein, Straßen?",
+     "c": "Mische fünf Grautöne aus einem Komplementärpaar, von warm bis kalt, und male sie als Streifen."
+    },
+    "es": {
+     "t": "Mezclar grises bonitos",
+     "g": "Crea grises vivos y coloreados con complementarios en vez de usar negro puro.",
+     "p": [
+      "Mezclar dos complementarios, como azul ultramar y siena tostada, da grises ricos que pueden tirar a cálidos o fríos.",
+      "Añade más de un lado para teñir el gris: más azul para un pizarra frío, más siena para un tono piedra cálido.",
+      "Añade blanco o agua para aclarar; estos grises cromáticos se ven vivos, mientras negro y blanco pueden quedar planos."
+     ],
+     "q": "¿Dónde ves grises interesantes a tu alrededor: nubes, piedra, calles?",
+     "c": "Mezcla cinco grises distintos con una pareja de complementarios, de cálido a frío, y píntalos en una tira."
+    },
+    "fr": {
+     "t": "Mélanger de beaux gris",
+     "g": "Crée des gris vivants et colorés avec des complémentaires plutôt qu'avec du noir.",
+     "p": [
+      "Mélanger deux complémentaires, comme outremer et terre de Sienne brûlée, donne des gris riches, chauds ou froids.",
+      "Ajoute plus d'un côté pour teinter le gris : plus de bleu pour un ardoise froid, plus de Sienne pour une pierre chaude.",
+      "Ajoute blanc ou eau pour éclaircir ; ces gris colorés vivent, alors que noir et blanc paraissent souvent plats."
+     ],
+     "q": "Où vois-tu des gris intéressants autour de toi : nuages, pierre, rues ?",
+     "c": "Mélange cinq gris différents avec une paire de complémentaires, du chaud au froid, et peins-les en bande."
+    },
+    "it": {
+     "t": "Mescolare grigi bellissimi",
+     "g": "Crea grigi vivi e colorati con i complementari invece del nero puro.",
+     "p": [
+      "Mescolando due complementari, come blu oltremare e terra di Siena bruciata, ottieni grigi ricchi, caldi o freddi.",
+      "Aggiungi più di un lato per colorare il grigio: più blu per un ardesia freddo, più Siena per un color pietra caldo.",
+      "Aggiungi bianco o acqua per schiarire; questi grigi cromatici sono vivi, mentre nero e bianco spesso appaiono piatti."
+     ],
+     "q": "Dove vedi grigi interessanti intorno a te: nuvole, pietra, strade?",
+     "c": "Mescola cinque grigi diversi con una coppia di complementari, dal caldo al freddo, e dipingili in una striscia."
+    },
+    "pt": {
+     "t": "Misturar cinzentos bonitos",
+     "g": "Cria cinzentos vivos e coloridos com complementares em vez de preto puro.",
+     "p": [
+      "Misturar duas complementares, como azul ultramarino e siena queimada, dá cinzentos ricos, quentes ou frios.",
+      "Junta mais de um lado para tingir o cinzento: mais azul para ardósia fria, mais siena para um tom pedra quente.",
+      "Junta branco ou água para aclarar; estes cinzentos cromáticos parecem vivos, enquanto preto e branco ficam muitas vezes planos."
+     ],
+     "q": "Onde vês cinzentos interessantes à tua volta: nuvens, pedra, ruas?",
+     "c": "Mistura cinco cinzentos diferentes com um par de complementares, do quente ao frio, e pinta-os numa tira."
+    },
+    "pt_BR": {
+     "t": "Misturando cinzas bonitos",
+     "g": "Crie cinzas vivos e coloridos com complementares em vez de preto puro.",
+     "p": [
+      "Misturar duas complementares, como azul ultramar e siena queimada, dá cinzas ricos, quentes ou frios.",
+      "Coloque mais de um lado para tingir o cinza: mais azul para um ardósia frio, mais siena para um tom pedra quente.",
+      "Adicione branco ou água para clarear; esses cinzas cromáticos parecem vivos, enquanto preto e branco muitas vezes ficam chapados."
+     ],
+     "q": "Onde você vê cinzas interessantes ao seu redor: nuvens, pedra, ruas?",
+     "c": "Misture cinco cinzas diferentes com um par de complementares, do quente ao frio, e pinte numa tira."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tints, tones and shades",
+     "g": "Learn how adding white, grey or a dark changes a colour and its mood.",
+     "p": [
+      "A tint adds white: it lightens a colour and makes it softer and airier, like pastel pinks and sky blues.",
+      "A tone adds grey and lowers saturation for calm, sophisticated colours; a shade adds a dark for depth and drama.",
+      "White also cools many colours, and black can turn yellow greenish, so many painters darken with complements instead."
+     ],
+     "q": "Which mood do you like more: soft tints, quiet tones or deep shades?",
+     "c": "Take one colour and paint a row with three tints, three tones and three shades of it."
+    },
+    "de": {
+     "t": "Aufhellen, Abtönen, Abdunkeln",
+     "g": "Lerne, wie Weiß, Grau oder Dunkel eine Farbe und ihre Stimmung verändern.",
+     "p": [
+      "Beim Aufhellen kommt Weiß hinzu: Die Farbe wird heller, weicher und luftiger, wie Pastellrosa oder Himmelblau.",
+      "Beim Abtönen kommt Grau hinzu für ruhige, edle Farben; beim Abdunkeln ein Dunkel für Tiefe und Dramatik.",
+      "Weiß kühlt viele Farben ab, und Schwarz macht Gelb grünlich; viele Maler dunkeln deshalb mit Komplementärfarben ab."
+     ],
+     "q": "Welche Stimmung magst du mehr: zarte, ruhige oder tiefe Farben?",
+     "c": "Male mit einer Farbe eine Reihe aus drei aufgehellten, drei abgetönten und drei abgedunkelten Versionen."
+    },
+    "es": {
+     "t": "Matices, tonos y sombras",
+     "g": "Aprende cómo añadir blanco, gris u oscuro cambia un color y su ambiente.",
+     "p": [
+      "Un matiz claro añade blanco: aclara el color y lo vuelve suave y aéreo, como los rosas pastel y el azul cielo.",
+      "Un tono añade gris y baja la saturación para colores serenos y elegantes; una sombra añade oscuro para dar drama.",
+      "El blanco enfría muchos colores y el negro vuelve verdoso el amarillo; por eso muchos oscurecen con complementarios."
+     ],
+     "q": "¿Qué ambiente te gusta más: matices suaves, tonos serenos o sombras profundas?",
+     "c": "Toma un color y pinta una fila con tres versiones claras, tres agrisadas y tres oscuras."
+    },
+    "fr": {
+     "t": "Teintes, tons rompus et ombres",
+     "g": "Apprends comment ajouter du blanc, du gris ou du foncé change une couleur et son ambiance.",
+     "p": [
+      "Ajouter du blanc éclaircit la couleur et la rend douce et aérienne, comme les roses pastel et le bleu ciel.",
+      "Ajouter du gris baisse la saturation pour des couleurs calmes et raffinées ; ajouter du foncé donne profondeur et drame.",
+      "Le blanc refroidit beaucoup de couleurs et le noir verdit le jaune : beaucoup de peintres foncent avec la complémentaire."
+     ],
+     "q": "Quelle ambiance préfères-tu : teintes douces, tons rompus ou ombres profondes ?",
+     "c": "Prends une couleur et peins une rangée avec trois versions éclaircies, trois rompues et trois foncées."
+    },
+    "it": {
+     "t": "Tinte, toni e ombre",
+     "g": "Scopri come aggiungere bianco, grigio o scuro cambia un colore e la sua atmosfera.",
+     "p": [
+      "Aggiungere bianco schiarisce il colore e lo rende morbido e arioso, come i rosa pastello e l'azzurro cielo.",
+      "Aggiungere grigio abbassa la saturazione per colori calmi ed eleganti; aggiungere scuro dà profondità e dramma.",
+      "Il bianco raffredda molti colori e il nero rende verdastro il giallo, perciò molti pittori scuriscono con i complementari."
+     ],
+     "q": "Quale atmosfera preferisci: tinte morbide, toni pacati o ombre profonde?",
+     "c": "Prendi un colore e dipingi una fila con tre versioni schiarite, tre ingrigite e tre scurite."
+    },
+    "pt": {
+     "t": "Tintas, tons e sombras",
+     "g": "Aprende como juntar branco, cinzento ou escuro muda uma cor e o seu ambiente.",
+     "p": [
+      "Juntar branco aclara a cor e torna-a suave e leve, como os rosas pastel e o azul-céu.",
+      "Juntar cinzento baixa a saturação para cores calmas e elegantes; juntar escuro dá profundidade e drama.",
+      "O branco arrefece muitas cores e o preto torna o amarelo esverdeado, por isso muitos pintores escurecem com complementares."
+     ],
+     "q": "Que ambiente preferes: tintas suaves, tons serenos ou sombras profundas?",
+     "c": "Pega numa cor e pinta uma fila com três versões aclaradas, três acinzentadas e três escurecidas."
+    },
+    "pt_BR": {
+     "t": "Tintas, tons e sombras",
+     "g": "Aprenda como adicionar branco, cinza ou escuro muda uma cor e o clima dela.",
+     "p": [
+      "Adicionar branco clareia a cor e deixa tudo suave e leve, como os rosas pastel e o azul-celeste.",
+      "Adicionar cinza baixa a saturação para cores calmas e elegantes; adicionar escuro dá profundidade e drama.",
+      "O branco esfria muitas cores e o preto deixa o amarelo esverdeado, por isso muitos pintores escurecem com complementares."
+     ],
+     "q": "Qual clima você prefere: tons suaves, acinzentados serenos ou escuros profundos?",
+     "c": "Pegue uma cor e pinte uma fileira com três versões clareadas, três acinzentadas e três escurecidas."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Earth colours",
+     "g": "Meet ochre, sienna and umber, pigments painters have loved for millennia.",
+     "p": [
+      "Earth pigments come from natural iron-oxide clays; red and yellow ochres were already used on cave walls like Lascaux.",
+      "Raw sienna and raw umber are the natural earths; heating them makes burnt sienna, a warm red-brown, and burnt umber, a deep brown.",
+      "They are cheap, lightfast and mix naturally harmonious skin tones, landscapes and warm greys."
+     ],
+     "q": "Which natural colours, like sand, soil or rock, catch your eye on walks?",
+     "c": "Find three earthy objects, like a stone, a leaf and wood, and decide which earth pigment each one resembles."
+    },
+    "de": {
+     "t": "Erdfarben",
+     "g": "Lerne Ocker, Siena und Umbra kennen, Pigmente, die Maler seit Jahrtausenden lieben.",
+     "p": [
+      "Erdpigmente stammen aus eisenoxidhaltigen Tonerden; roter und gelber Ocker wurden schon in Höhlen wie Lascaux genutzt.",
+      "Siena natur und Umbra natur sind die Naturerden; gebrannt werden sie zu warmem Rotbraun und tiefem Dunkelbraun.",
+      "Sie sind günstig, lichtecht und mischen ganz natürlich harmonische Hauttöne, Landschaften und warme Grautöne."
+     ],
+     "q": "Welche Naturfarben wie Sand, Erde oder Fels fallen dir bei Spaziergängen auf?",
+     "c": "Finde drei erdige Dinge wie Stein, Blatt und Holz und überlege, welchem Erdpigment jedes ähnelt."
+    },
+    "es": {
+     "t": "Colores tierra",
+     "g": "Conoce el ocre, la siena y la sombra, pigmentos que los pintores aman desde hace milenios.",
+     "p": [
+      "Los pigmentos tierra vienen de arcillas con óxido de hierro; ocres rojos y amarillos ya se usaron en cuevas como Lascaux.",
+      "Siena natural y sombra natural son las tierras naturales; al calcinarlas dan siena tostada, rojiza, y sombra tostada, marrón profundo.",
+      "Son baratos, resistentes a la luz y dan mezclas armoniosas para pieles, paisajes y grises cálidos."
+     ],
+     "q": "¿Qué colores naturales, como arena, tierra o roca, te llaman la atención al pasear?",
+     "c": "Busca tres objetos terrosos, como una piedra, una hoja y madera, y decide a qué pigmento tierra se parecen."
+    },
+    "fr": {
+     "t": "Les terres",
+     "g": "Découvre l'ocre, la terre de Sienne et l'ombre, des pigments aimés des peintres depuis des millénaires.",
+     "p": [
+      "Les terres viennent d'argiles riches en oxydes de fer ; ocres rouge et jaune ornaient déjà des grottes comme Lascaux.",
+      "Sienne naturelle et ombre naturelle sont les terres brutes ; calcinées, elles donnent un brun-rouge chaud et un brun profond.",
+      "Bon marché et résistantes à la lumière, elles donnent des mélanges harmonieux pour peaux, paysages et gris chauds."
+     ],
+     "q": "Quelles couleurs naturelles, comme sable, terre ou roche, attirent ton regard en promenade ?",
+     "c": "Trouve trois objets terreux, comme une pierre, une feuille et du bois, et dis à quelle terre chacun ressemble."
+    },
+    "it": {
+     "t": "Le terre",
+     "g": "Conosci ocra, terra di Siena e terra d'ombra, pigmenti amati dai pittori da millenni.",
+     "p": [
+      "Le terre vengono da argille ricche di ossidi di ferro; ocra rossa e gialla erano già usate in grotte come Lascaux.",
+      "Terra di Siena naturale e terra d'ombra naturale, calcinate, diventano un bruno-rosso caldo e un bruno profondo.",
+      "Sono economiche, resistenti alla luce e danno impasti armoniosi per incarnati, paesaggi e grigi caldi."
+     ],
+     "q": "Quali colori naturali, come sabbia, terra o roccia, ti colpiscono durante le passeggiate?",
+     "c": "Trova tre oggetti terrosi, come un sasso, una foglia e del legno, e decidi a quale terra somigliano."
+    },
+    "pt": {
+     "t": "Cores de terra",
+     "g": "Conhece o ocre, a siena e a sombra, pigmentos que os pintores amam há milénios.",
+     "p": [
+      "Os pigmentos de terra vêm de argilas com óxido de ferro; ocres vermelhos e amarelos já foram usados em grutas como Lascaux.",
+      "Siena natural e sombra natural são terras cruas; calcinadas dão siena queimada, castanho-avermelhado, e sombra queimada, castanho escuro.",
+      "São baratos, resistentes à luz e dão misturas harmoniosas para peles, paisagens e cinzentos quentes."
+     ],
+     "q": "Que cores naturais, como areia, terra ou rocha, te chamam a atenção nos passeios?",
+     "c": "Encontra três objetos terrosos, como uma pedra, uma folha e madeira, e decide a que pigmento de terra se parecem."
+    },
+    "pt_BR": {
+     "t": "Cores terrosas",
+     "g": "Conheça o ocre, a siena e a sombra, pigmentos que os pintores amam há milênios.",
+     "p": [
+      "Pigmentos terrosos vêm de argilas com óxido de ferro; ocres vermelhos e amarelos já eram usados em cavernas como Lascaux.",
+      "Siena natural e sombra natural são as terras cruas; calcinadas viram siena queimada, marrom-avermelhado, e sombra queimada, marrom profundo.",
+      "São baratos, resistentes à luz e dão misturas harmoniosas para peles, paisagens e cinzas quentes."
+     ],
+     "q": "Quais cores naturais, como areia, terra ou pedra, chamam sua atenção nos passeios?",
+     "c": "Ache três objetos terrosos, como uma pedra, uma folha e madeira, e decida com qual pigmento terroso cada um parece."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping colours clean",
+     "g": "Avoid muddy mixes by limiting how many pigments go into one mixture.",
+     "p": [
+      "Two pigments mix cleanly; three can still work; four or more usually turn dull brown or grey, the classic mud.",
+      "Rinse your brush between colours and change your water often, as dirty water greys every wash.",
+      "Mix on the palette with a few confident strokes rather than stirring endlessly or scrubbing on the paper."
+     ],
+     "q": "Have you ever ended up with a muddy colour? What do you think caused it?",
+     "c": "Mix one colour with two pigments and one with five. Compare them side by side and see the difference."
+    },
+    "de": {
+     "t": "Farben sauber halten",
+     "g": "Vermeide schlammige Mischungen, indem du die Zahl der Pigmente pro Mischung begrenzt.",
+     "p": [
+      "Zwei Pigmente mischen sauber, drei gehen noch; vier oder mehr werden meist trübes Braun oder Grau, der klassische Schlamm.",
+      "Spüle den Pinsel zwischen den Farben aus und wechsle oft das Wasser, denn schmutziges Wasser vergraut jede Lasur.",
+      "Mische auf der Palette mit wenigen sicheren Bewegungen statt endlos zu rühren oder auf dem Papier zu schrubben."
+     ],
+     "q": "Hast du schon einmal eine schlammige Farbe gemischt? Was war wohl die Ursache?",
+     "c": "Mische eine Farbe aus zwei Pigmenten und eine aus fünf. Vergleiche sie direkt nebeneinander."
+    },
+    "es": {
+     "t": "Mantener los colores limpios",
+     "g": "Evita mezclas sucias limitando cuántos pigmentos van en una misma mezcla.",
+     "p": [
+      "Dos pigmentos mezclan limpio; tres aún funcionan; cuatro o más suelen dar un marrón o gris apagado, el clásico barro.",
+      "Enjuaga el pincel entre colores y cambia el agua a menudo: el agua sucia agrisa cada aguada.",
+      "Mezcla en la paleta con pocos movimientos seguros en lugar de remover sin fin o frotar sobre el papel."
+     ],
+     "q": "¿Alguna vez te salió un color embarrado? ¿Qué crees que lo causó?",
+     "c": "Mezcla un color con dos pigmentos y otro con cinco. Compáralos uno al lado del otro."
+    },
+    "fr": {
+     "t": "Garder des couleurs propres",
+     "g": "Évite les mélanges boueux en limitant le nombre de pigments par mélange.",
+     "p": [
+      "Deux pigments se mélangent proprement, trois passent encore ; quatre ou plus donnent souvent un brun ou gris terne.",
+      "Rince ton pinceau entre les couleurs et change souvent l'eau : une eau sale grise chaque lavis.",
+      "Mélange sur la palette en quelques gestes assurés plutôt que de touiller sans fin ou de frotter le papier."
+     ],
+     "q": "As-tu déjà obtenu une couleur boueuse ? D'où venait le problème selon toi ?",
+     "c": "Mélange une couleur avec deux pigments et une avec cinq. Compare-les côte à côte."
+    },
+    "it": {
+     "t": "Colori puliti",
+     "g": "Evita impasti fangosi limitando il numero di pigmenti in ogni miscela.",
+     "p": [
+      "Due pigmenti si mescolano puliti, tre funzionano ancora; quattro o più danno spesso un marrone o grigio spento.",
+      "Sciacqua il pennello tra un colore e l'altro e cambia spesso l'acqua: quella sporca ingrigisce ogni velatura.",
+      "Mescola sulla tavolozza con pochi gesti sicuri invece di girare all'infinito o strofinare sulla carta."
+     ],
+     "q": "Ti è mai venuto un colore fangoso? Secondo te cosa l'ha causato?",
+     "c": "Mescola un colore con due pigmenti e uno con cinque. Confrontali uno accanto all'altro."
+    },
+    "pt": {
+     "t": "Manter as cores limpas",
+     "g": "Evita misturas sujas limitando quantos pigmentos entram numa mistura.",
+     "p": [
+      "Dois pigmentos misturam-se limpos, três ainda resultam; quatro ou mais dão quase sempre um castanho ou cinzento baço.",
+      "Enxagua o pincel entre cores e muda a água muitas vezes: água suja acinzenta cada aguada.",
+      "Mistura na paleta com poucos gestos seguros em vez de mexer sem fim ou esfregar no papel."
+     ],
+     "q": "Já te saiu uma cor suja? O que achas que a causou?",
+     "c": "Mistura uma cor com dois pigmentos e outra com cinco. Compara-as lado a lado."
+    },
+    "pt_BR": {
+     "t": "Mantendo as cores limpas",
+     "g": "Evite misturas sujas limitando quantos pigmentos entram numa mistura.",
+     "p": [
+      "Dois pigmentos misturam limpo, três ainda funcionam; quatro ou mais costumam virar marrom ou cinza sem vida.",
+      "Enxágue o pincel entre as cores e troque a água sempre: água suja deixa cada aguada acinzentada.",
+      "Misture na paleta com poucos movimentos seguros em vez de mexer sem parar ou esfregar no papel."
+     ],
+     "q": "Já saiu uma cor suja para você? O que acha que causou isso?",
+     "c": "Misture uma cor com dois pigmentos e outra com cinco. Compare lado a lado."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: tools and colour basics",
+     "g": "Look back at materials, brush marks and colour theory with a relaxed swatch exercise.",
+     "p": [
+      "You know the paint families, pigment plus binder, brush shapes and hairs, surfaces and how to care for your tools.",
+      "You can load and hold a brush, vary pressure and speed, and build a mark library.",
+      "Colour now has a vocabulary: wheel, primaries to tertiaries, value, saturation, temperature, complements and clean greys."
+     ],
+     "q": "Which lesson from this first month was the most useful or fun for you?",
+     "c": "Paint a small swatch sheet: a value scale, a warm and a cool colour, a complementary pair and one lively grey."
+    },
+    "de": {
+     "t": "Rückblick: Werkzeug und Farbe",
+     "g": "Schau entspannt auf Material, Pinselspuren und Farblehre zurück, mit einer kleinen Farbmusterübung.",
+     "p": [
+      "Du kennst Farbfamilien, Pigment und Bindemittel, Pinselformen und -haare, Malgründe und Werkzeugpflege.",
+      "Du kannst einen Pinsel halten und beladen, Druck und Tempo variieren und eine Spurensammlung anlegen.",
+      "Farbe hat jetzt Worte: Farbkreis, Grund- bis Tertiärfarben, Tonwert, Sättigung, Temperatur, Komplemente, Buntgrau."
+     ],
+     "q": "Welche Lektion dieses ersten Monats war für dich am nützlichsten oder lustigsten?",
+     "c": "Male ein kleines Musterblatt: Tonwertskala, eine warme und eine kalte Farbe, ein Komplementärpaar und ein lebendiges Grau."
+    },
+    "es": {
+     "t": "Repaso: materiales y color",
+     "g": "Repasa materiales, trazos y teoría del color con un ejercicio relajado de muestras.",
+     "p": [
+      "Ya conoces las familias de pintura, pigmento y aglutinante, formas y pelos de pincel, soportes y el cuidado de tus herramientas.",
+      "Sabes sujetar y cargar el pincel, variar presión y velocidad y crear tu muestrario de trazos.",
+      "El color ya tiene vocabulario: círculo, primarios a terciarios, valor, saturación, temperatura, complementarios y grises."
+     ],
+     "q": "¿Qué lección de este primer mes te resultó más útil o divertida?",
+     "c": "Pinta una hoja de muestras: escala de valores, un color cálido y uno frío, una pareja complementaria y un gris vivo."
+    },
+    "fr": {
+     "t": "Bilan : outils et couleur",
+     "g": "Revois matériel, traces et théorie des couleurs avec un petit exercice de nuancier détendu.",
+     "p": [
+      "Tu connais les familles de peinture, pigment et liant, formes et poils de pinceaux, supports et entretien des outils.",
+      "Tu sais tenir et charger un pinceau, varier pression et vitesse et créer ton répertoire de traces.",
+      "La couleur a son vocabulaire : cercle, primaires à tertiaires, valeur, saturation, température, complémentaires, gris colorés."
+     ],
+     "q": "Quelle leçon de ce premier mois t'a été la plus utile ou la plus amusante ?",
+     "c": "Peins un petit nuancier : échelle de valeurs, une couleur chaude et une froide, une paire complémentaire et un gris vivant."
+    },
+    "it": {
+     "t": "Ripasso: strumenti e colore",
+     "g": "Ripassa materiali, segni e teoria del colore con un rilassante esercizio di campioni.",
+     "p": [
+      "Conosci le famiglie di colori, pigmento e legante, forme e peli dei pennelli, supporti e cura degli strumenti.",
+      "Sai impugnare e caricare il pennello, variare pressione e velocità e creare il tuo campionario di segni.",
+      "Il colore ha ora un vocabolario: cerchio, primari e terziari, valore, saturazione, temperatura, complementari e grigi."
+     ],
+     "q": "Quale lezione di questo primo mese ti è stata più utile o divertente?",
+     "c": "Dipingi un foglio di campioni: scala di valori, un colore caldo e uno freddo, una coppia complementare e un grigio vivo."
+    },
+    "pt": {
+     "t": "Revisão: materiais e cor",
+     "g": "Revê materiais, marcas e teoria da cor com um exercício descontraído de amostras.",
+     "p": [
+      "Já conheces as famílias de tinta, pigmento e aglutinante, formas e pelos de pincel, suportes e o cuidado com as ferramentas.",
+      "Sabes segurar e carregar o pincel, variar pressão e velocidade e criar o teu mostruário de marcas.",
+      "A cor já tem vocabulário: círculo, primárias a terciárias, valor, saturação, temperatura, complementares e cinzentos."
+     ],
+     "q": "Que lição deste primeiro mês foi mais útil ou divertida para ti?",
+     "c": "Pinta uma folha de amostras: escala de valores, uma cor quente e uma fria, um par complementar e um cinzento vivo."
+    },
+    "pt_BR": {
+     "t": "Revisão: materiais e cor",
+     "g": "Relembre materiais, marcas e teoria da cor com um exercício tranquilo de amostras.",
+     "p": [
+      "Você já conhece as famílias de tinta, pigmento e aglutinante, formatos e pelos de pincel, superfícies e cuidados com as ferramentas.",
+      "Você sabe segurar e carregar o pincel, variar pressão e velocidade e criar seu mostruário de marcas.",
+      "A cor já tem vocabulário: círculo, primárias a terciárias, valor, saturação, temperatura, complementares e cinzas."
+     ],
+     "q": "Qual lição deste primeiro mês foi mais útil ou divertida para você?",
+     "c": "Pinte uma folha de amostras: escala de valores, uma cor quente e uma fria, um par complementar e um cinza vivo."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "hiking",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caring for your feet on the trail",
+     "g": "Learn simple habits that keep your feet fresh and happy during a long day outdoors.",
+     "p": [
+      "At longer breaks, take off shoes and socks for a few minutes to let your feet air and dry.",
+      "Trim toenails straight across a day or two before a hike so they do not press on descents.",
+      "Carry a spare pair of socks and swap them at lunch for a lovely fresh feeling."
+     ],
+     "q": "How do your feet usually feel at the end of a long walk?",
+     "c": "Trim your toenails today and pack a spare pair of hiking socks."
+    },
+    "de": {
+     "t": "Fußpflege unterwegs",
+     "g": "Lerne einfache Gewohnheiten, die deine Füße an einem langen Tag draußen frisch halten.",
+     "p": [
+      "Zieh bei längeren Pausen Schuhe und Socken für ein paar Minuten aus, damit die Füße lüften und trocknen.",
+      "Schneide die Zehennägel ein, zwei Tage vorher gerade ab, damit sie bergab nicht drücken.",
+      "Nimm ein Paar Ersatzsocken mit und wechsle sie mittags für ein herrlich frisches Gefühl."
+     ],
+     "q": "Wie fühlen sich deine Füße normalerweise am Ende einer langen Tour an?",
+     "c": "Schneide heute deine Zehennägel und pack ein Paar Ersatz-Wandersocken ein."
+    },
+    "es": {
+     "t": "Cuidar los pies en la ruta",
+     "g": "Aprende hábitos sencillos que mantienen tus pies frescos durante un largo día al aire libre.",
+     "p": [
+      "En las paradas largas, quítate calzado y calcetines unos minutos para que los pies se aireen y sequen.",
+      "Córtate las uñas rectas uno o dos días antes de la ruta para que no aprieten en las bajadas.",
+      "Lleva un par de calcetines de repuesto y cámbiatelos al comer: la sensación de frescor es genial."
+     ],
+     "q": "¿Cómo suelen estar tus pies al final de una caminata larga?",
+     "c": "Córtate hoy las uñas de los pies y mete en la mochila un par de calcetines de repuesto."
+    },
+    "fr": {
+     "t": "Prendre soin de ses pieds",
+     "g": "Apprends des gestes simples pour garder des pieds frais et heureux pendant une longue journée dehors.",
+     "p": [
+      "Aux longues pauses, retire chaussures et chaussettes quelques minutes pour aérer et sécher les pieds.",
+      "Coupe tes ongles droit un ou deux jours avant la rando pour qu'ils ne gênent pas en descente.",
+      "Emporte une paire de chaussettes de rechange et change-les au déjeuner : quel bonheur de fraîcheur."
+     ],
+     "q": "Comment se sentent tes pieds en général à la fin d'une longue marche ?",
+     "c": "Coupe tes ongles de pieds aujourd'hui et prépare une paire de chaussettes de rechange."
+    },
+    "it": {
+     "t": "Cura dei piedi sul sentiero",
+     "g": "Impara semplici abitudini che mantengono i piedi freschi e felici durante una lunga giornata all'aperto.",
+     "p": [
+      "Nelle pause lunghe togli scarpe e calze per qualche minuto, così i piedi prendono aria e si asciugano.",
+      "Taglia le unghie dritte un giorno o due prima dell'escursione, così non premono in discesa.",
+      "Porta un paio di calze di ricambio e cambiale a pranzo: la sensazione di freschezza è fantastica."
+     ],
+     "q": "Come stanno di solito i tuoi piedi alla fine di una lunga camminata?",
+     "c": "Taglia oggi le unghie dei piedi e prepara un paio di calze da escursione di ricambio."
+    },
+    "pt": {
+     "t": "Cuidar dos pés no trilho",
+     "g": "Aprende hábitos simples que mantêm os pés frescos e felizes durante um longo dia ao ar livre.",
+     "p": [
+      "Nas pausas longas, tira o calçado e as meias uns minutos para os pés arejarem e secarem.",
+      "Corta as unhas a direito um ou dois dias antes da caminhada para não apertarem nas descidas.",
+      "Leva um par de meias suplente e troca-as ao almoço: a sensação de frescura é ótima."
+     ],
+     "q": "Como costumam estar os teus pés no fim de uma caminhada longa?",
+     "c": "Corta hoje as unhas dos pés e põe na mochila um par de meias suplente."
+    },
+    "pt_BR": {
+     "t": "Cuidando dos pés na trilha",
+     "g": "Aprenda hábitos simples que mantêm os pés frescos e felizes durante um longo dia ao ar livre.",
+     "p": [
+      "Nas pausas longas, tire calçado e meias por alguns minutos para os pés respirarem e secarem.",
+      "Corte as unhas retas um ou dois dias antes da trilha para não apertarem nas descidas.",
+      "Leve um par de meias reserva e troque na hora do almoço: a sensação de frescor é ótima."
+     ],
+     "q": "Como seus pés costumam ficar no fim de uma caminhada longa?",
+     "c": "Corte hoje as unhas dos pés e coloque na mochila um par de meias reserva."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sun protection",
+     "g": "Learn how sunscreen, sunglasses and a hat protect you, and why the sun is stronger up high.",
+     "p": [
+      "UV rays increase with altitude, by roughly 10 percent for every 1,000 m, and snow or water reflect them.",
+      "Use sunscreen on all exposed skin, including ears, neck and the back of the hands, and reapply.",
+      "Sunglasses protect your eyes, and a hat with a brim shades face and neck; clouds do not block all UV."
+     ],
+     "q": "Do you tend to forget sun cream, or is it part of your routine?",
+     "c": "Put sunscreen, sunglasses and a sun hat by the door for your next outing."
+    },
+    "de": {
+     "t": "Sonnenschutz",
+     "g": "Lerne, wie Sonnencreme, Sonnenbrille und Hut schützen und warum die Sonne in der Höhe stärker ist.",
+     "p": [
+      "UV-Strahlung nimmt mit der Höhe zu, um grob 10 Prozent pro 1.000 m, und Schnee oder Wasser reflektieren sie.",
+      "Creme alle freien Hautstellen ein, auch Ohren, Nacken und Handrücken, und erneuere den Schutz.",
+      "Eine Sonnenbrille schützt die Augen, ein Hut mit Krempe Gesicht und Nacken; Wolken halten nicht alles UV ab."
+     ],
+     "q": "Vergisst du die Sonnencreme oft, oder gehört sie zu deiner Routine?",
+     "c": "Leg Sonnencreme, Sonnenbrille und Sonnenhut für deinen nächsten Ausflug an die Tür."
+    },
+    "es": {
+     "t": "Protección solar",
+     "g": "Aprende cómo la crema, las gafas de sol y un sombrero te protegen, y por qué el sol pega más en altura.",
+     "p": [
+      "La radiación UV aumenta con la altitud, más o menos un 10 por ciento cada 1.000 m, y la nieve o el agua la reflejan.",
+      "Ponte crema en toda la piel expuesta, también orejas, cuello y dorso de las manos, y renuévala.",
+      "Las gafas de sol protegen los ojos y un sombrero con ala da sombra a cara y cuello; las nubes no frenan todo el UV."
+     ],
+     "q": "¿Sueles olvidar la crema solar o ya es parte de tu rutina?",
+     "c": "Deja crema solar, gafas de sol y sombrero junto a la puerta para tu próxima salida."
+    },
+    "fr": {
+     "t": "Se protéger du soleil",
+     "g": "Apprends comment crème, lunettes et chapeau te protègent, et pourquoi le soleil tape plus fort en altitude.",
+     "p": [
+      "Les UV augmentent avec l'altitude, d'environ 10 pour cent tous les 1 000 m, et la neige ou l'eau les réfléchissent.",
+      "Mets de la crème sur toute la peau exposée, y compris oreilles, nuque et dos des mains, et renouvelle.",
+      "Les lunettes protègent les yeux, un chapeau à bord ombrage visage et nuque ; les nuages ne bloquent pas tous les UV."
+     ],
+     "q": "Oublies-tu souvent la crème solaire, ou fait-elle partie de ta routine ?",
+     "c": "Pose crème solaire, lunettes de soleil et chapeau près de la porte pour ta prochaine sortie."
+    },
+    "it": {
+     "t": "Protezione dal sole",
+     "g": "Impara come crema, occhiali da sole e cappello ti proteggono, e perché in quota il sole è più forte.",
+     "p": [
+      "I raggi UV aumentano con la quota, di circa il 10 per cento ogni 1.000 m, e neve o acqua li riflettono.",
+      "Metti la crema su tutta la pelle esposta, anche orecchie, collo e dorso delle mani, e rinnovala.",
+      "Gli occhiali proteggono gli occhi e un cappello con tesa ripara viso e collo; le nuvole non fermano tutti gli UV."
+     ],
+     "q": "Tendi a dimenticare la crema solare o fa parte della tua routine?",
+     "c": "Metti crema solare, occhiali e cappello vicino alla porta per la prossima uscita."
+    },
+    "pt": {
+     "t": "Proteção solar",
+     "g": "Aprende como protetor, óculos de sol e chapéu te protegem, e porque o sol é mais forte em altitude.",
+     "p": [
+      "A radiação UV aumenta com a altitude, cerca de 10 por cento por cada 1000 m, e a neve ou a água refletem-na.",
+      "Põe protetor em toda a pele exposta, incluindo orelhas, pescoço e costas das mãos, e volta a aplicar.",
+      "Os óculos protegem os olhos e um chapéu com aba dá sombra à cara e ao pescoço; as nuvens não travam todo o UV."
+     ],
+     "q": "Costumas esquecer o protetor solar ou já faz parte da tua rotina?",
+     "c": "Deixa protetor solar, óculos de sol e chapéu junto à porta para a próxima saída."
+    },
+    "pt_BR": {
+     "t": "Proteção solar",
+     "g": "Aprenda como protetor, óculos de sol e chapéu protegem você, e por que o sol é mais forte no alto.",
+     "p": [
+      "A radiação UV aumenta com a altitude, cerca de 10 por cento a cada 1.000 m, e neve ou água a refletem.",
+      "Passe protetor em toda a pele exposta, inclusive orelhas, pescoço e costas das mãos, e reaplique.",
+      "Óculos protegem os olhos e um chapéu com aba sombreia rosto e pescoço; nuvens não bloqueiam todo o UV."
+     ],
+     "q": "Você costuma esquecer o protetor solar ou ele já faz parte da rotina?",
+     "c": "Deixe protetor solar, óculos de sol e chapéu perto da porta para a próxima saída."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staying warm when you stop",
+     "g": "Learn to put on a warm layer before you get cold at a break.",
+     "p": [
+      "When you stop, your body makes much less heat, and sweat on your skin cools you fast.",
+      "Put on your warm layer as soon as you stop, not after you start to shiver.",
+      "Sit on your pack or a small foam pad, as cold ground pulls heat from your body."
+     ],
+     "q": "Do you usually feel cold at breaks, even on mild days?",
+     "c": "Keep your warm layer at the top of your pack for your next walk."
+    },
+    "de": {
+     "t": "Warm bleiben in der Pause",
+     "g": "Lerne, eine warme Schicht anzuziehen, bevor dir in der Pause kalt wird.",
+     "p": [
+      "In der Pause produziert dein Körper viel weniger Wärme, und Schweiß auf der Haut kühlt schnell aus.",
+      "Zieh die warme Schicht an, sobald du anhältst, nicht erst, wenn du zitterst.",
+      "Setz dich auf den Rucksack oder eine kleine Sitzmatte, denn kalter Boden entzieht dem Körper Wärme."
+     ],
+     "q": "Ist dir in Pausen meist kalt, selbst an milden Tagen?",
+     "c": "Pack deine warme Schicht beim nächsten Weg ganz oben in den Rucksack."
+    },
+    "es": {
+     "t": "No enfriarse al parar",
+     "g": "Aprende a ponerte una capa de abrigo antes de quedarte frío en un descanso.",
+     "p": [
+      "Al parar, el cuerpo produce mucho menos calor y el sudor en la piel te enfría rápido.",
+      "Ponte la capa de abrigo en cuanto pares, no cuando ya empieces a tiritar.",
+      "Siéntate sobre la mochila o una esterilla pequeña, porque el suelo frío te roba calor."
+     ],
+     "q": "¿Sueles pasar frío en los descansos, incluso en días templados?",
+     "c": "Lleva tu capa de abrigo arriba del todo en la mochila en tu próxima salida."
+    },
+    "fr": {
+     "t": "Rester au chaud à l'arrêt",
+     "g": "Apprends à enfiler une couche chaude avant d'avoir froid pendant une pause.",
+     "p": [
+      "À l'arrêt, ton corps produit beaucoup moins de chaleur et la sueur sur la peau te refroidit vite.",
+      "Enfile ta couche chaude dès que tu t'arrêtes, pas une fois que tu frissonnes.",
+      "Assieds-toi sur ton sac ou un petit tapis en mousse, car le sol froid aspire la chaleur du corps."
+     ],
+     "q": "As-tu souvent froid pendant les pauses, même par temps doux ?",
+     "c": "Range ta couche chaude tout en haut de ton sac pour ta prochaine sortie."
+    },
+    "it": {
+     "t": "Restare caldi durante le soste",
+     "g": "Impara a indossare uno strato caldo prima di sentire freddo durante una pausa.",
+     "p": [
+      "Quando ti fermi il corpo produce molto meno calore e il sudore sulla pelle ti raffredda in fretta.",
+      "Indossa lo strato caldo appena ti fermi, non quando inizi a tremare.",
+      "Siediti sullo zaino o su un piccolo materassino, perché il terreno freddo sottrae calore."
+     ],
+     "q": "Di solito senti freddo durante le pause, anche nelle giornate miti?",
+     "c": "Nella prossima uscita tieni lo strato caldo in cima allo zaino."
+    },
+    "pt": {
+     "t": "Não arrefecer nas pausas",
+     "g": "Aprende a vestir uma camada quente antes de ficares com frio numa pausa.",
+     "p": [
+      "Quando paras, o corpo produz muito menos calor e o suor na pele arrefece-te depressa.",
+      "Veste a camada quente logo que paras, não quando já começas a tremer.",
+      "Senta-te na mochila ou num pequeno tapete de espuma, porque o chão frio rouba calor."
+     ],
+     "q": "Costumas ter frio nas pausas, mesmo em dias amenos?",
+     "c": "Na próxima caminhada, leva a camada quente no topo da mochila."
+    },
+    "pt_BR": {
+     "t": "Ficando aquecido nas paradas",
+     "g": "Aprenda a vestir uma camada quente antes de sentir frio numa pausa.",
+     "p": [
+      "Quando você para, o corpo produz bem menos calor e o suor na pele esfria você rápido.",
+      "Vista a camada quente assim que parar, não quando já estiver tremendo.",
+      "Sente na mochila ou num isolante pequeno, porque o chão frio rouba calor do corpo."
+     ],
+     "q": "Você costuma sentir frio nas pausas, mesmo em dias amenos?",
+     "c": "Na próxima caminhada, leve a camada quente no topo da mochila."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hiking in the rain",
+     "g": "Learn to enjoy wet days with the right shell, a pack cover and a cheerful mindset.",
+     "p": [
+      "A good waterproof jacket and, if you like, waterproof trousers keep the worst of the rain off.",
+      "A pack cover or a liner bag inside keeps spare clothes and food dry.",
+      "Rain makes forests smell amazing and paths quieter; just take extra care on slippery rocks and roots."
+     ],
+     "q": "What is your best or funniest memory of being caught in the rain?",
+     "c": "Line your daypack with a large bag and pack a dry pair of socks inside."
+    },
+    "de": {
+     "t": "Wandern im Regen",
+     "g": "Lerne, nasse Tage mit der richtigen Jacke, einer Regenhülle und guter Laune zu genießen.",
+     "p": [
+      "Eine gute Regenjacke und, wenn du magst, eine Regenhose halten das Schlimmste ab.",
+      "Eine Regenhülle oder ein Packsack innen hält Ersatzkleidung und Essen trocken.",
+      "Regen lässt den Wald wunderbar duften und Wege ruhiger werden; Vorsicht nur auf rutschigen Steinen und Wurzeln."
+     ],
+     "q": "Was ist deine schönste oder lustigste Erinnerung an einen Regenguss unterwegs?",
+     "c": "Leg deinen Rucksack mit einem großen Beutel aus und pack ein trockenes Paar Socken hinein."
+    },
+    "es": {
+     "t": "Caminar bajo la lluvia",
+     "g": "Aprende a disfrutar de los días mojados con buena chaqueta, funda para la mochila y buena actitud.",
+     "p": [
+      "Una buena chaqueta impermeable y, si quieres, un pantalón impermeable te libran de lo peor de la lluvia.",
+      "Una funda para la mochila o una bolsa estanca dentro mantiene secas la ropa de repuesto y la comida.",
+      "La lluvia hace que el bosque huela de maravilla y los caminos estén tranquilos; cuidado con rocas y raíces resbaladizas."
+     ],
+     "q": "¿Cuál es tu mejor o más divertido recuerdo de una lluvia por sorpresa?",
+     "c": "Forra tu mochila por dentro con una bolsa grande y mete un par de calcetines secos."
+    },
+    "fr": {
+     "t": "Randonner sous la pluie",
+     "g": "Apprends à profiter des jours mouillés avec la bonne veste, une housse de sac et le bon état d'esprit.",
+     "p": [
+      "Une bonne veste imperméable et, si tu veux, un surpantalon t'évitent le plus gros de la pluie.",
+      "Une housse de sac ou un sac étanche à l'intérieur garde les vêtements de rechange et le repas au sec.",
+      "La pluie rend la forêt odorante et les sentiers calmes ; fais juste attention aux rochers et racines glissants."
+     ],
+     "q": "Quel est ton meilleur ou plus drôle souvenir d'une averse en balade ?",
+     "c": "Tapisse ton sac d'un grand sac poubelle et mets-y une paire de chaussettes sèches."
+    },
+    "it": {
+     "t": "Camminare sotto la pioggia",
+     "g": "Impara a goderti le giornate bagnate con il guscio giusto, un coprizaino e il giusto spirito.",
+     "p": [
+      "Una buona giacca impermeabile e, se vuoi, pantaloni impermeabili ti riparano dal grosso della pioggia.",
+      "Un coprizaino o una sacca stagna all'interno tiene asciutti i vestiti di ricambio e il cibo.",
+      "La pioggia fa profumare il bosco e rende i sentieri tranquilli; attenzione solo a rocce e radici scivolose."
+     ],
+     "q": "Qual è il tuo ricordo più bello o divertente di un acquazzone in cammino?",
+     "c": "Fodera lo zaino con un grande sacchetto e mettici dentro un paio di calze asciutte."
+    },
+    "pt": {
+     "t": "Caminhar à chuva",
+     "g": "Aprende a aproveitar os dias molhados com bom casaco, capa para a mochila e boa disposição.",
+     "p": [
+      "Um bom casaco impermeável e, se quiseres, calças impermeáveis livram-te do pior da chuva.",
+      "Uma capa para a mochila ou um saco estanque lá dentro mantém secas a roupa suplente e a comida.",
+      "A chuva faz a floresta cheirar lindamente e os trilhos ficarem calmos; cuidado só com rochas e raízes escorregadias."
+     ],
+     "q": "Qual é a tua melhor ou mais divertida memória de seres apanhado pela chuva?",
+     "c": "Forra a tua mochila com um saco grande e põe lá dentro um par de meias secas."
+    },
+    "pt_BR": {
+     "t": "Caminhando na chuva",
+     "g": "Aprenda a curtir dias molhados com a jaqueta certa, capa de mochila e bom humor.",
+     "p": [
+      "Uma boa jaqueta impermeável e, se quiser, uma calça impermeável seguram o pior da chuva.",
+      "Uma capa de mochila ou um saco estanque por dentro mantém secas a roupa reserva e a comida.",
+      "A chuva deixa a mata cheirosa e as trilhas tranquilas; só cuidado com pedras e raízes escorregadias."
+     ],
+     "q": "Qual é sua melhor ou mais engraçada lembrança de pegar chuva numa caminhada?",
+     "c": "Forre sua mochila por dentro com um saco grande e coloque nele um par de meias secas."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hiking in hot weather",
+     "g": "Learn how early starts, shade, water and a slower pace make warm-weather hikes safe and pleasant.",
+     "p": [
+      "Start early to walk in the cool morning hours, and rest in the shade during the hottest part of the day.",
+      "Drink regularly, eat salty snacks too, and wear light, loose, light-coloured clothing.",
+      "Slow down, and if you feel dizzy, sick or very tired, stop in the shade, cool off and turn back."
+     ],
+     "q": "Do you prefer hiking in cool or warm weather?",
+     "c": "Choose a shady forest or waterside trail for your next warm-day walk."
+    },
+    "de": {
+     "t": "Wandern bei Hitze",
+     "g": "Lerne, wie früher Start, Schatten, Wasser und langsames Tempo Touren bei Wärme sicher und angenehm machen.",
+     "p": [
+      "Starte früh, um in der kühlen Morgenluft zu gehen, und ruh dich in der größten Hitze im Schatten aus.",
+      "Trink regelmäßig, iss auch salzige Snacks und trag leichte, lockere, helle Kleidung.",
+      "Geh langsamer, und wenn dir schwindelig, übel oder sehr schlapp wird, raste im Schatten, kühl dich ab und kehr um."
+     ],
+     "q": "Wanderst du lieber bei kühlem oder warmem Wetter?",
+     "c": "Wähl für deinen nächsten warmen Tag einen schattigen Waldweg oder einen Weg am Wasser."
+    },
+    "es": {
+     "t": "Caminar con calor",
+     "g": "Aprende cómo salir temprano, buscar sombra, beber y bajar el ritmo hace seguras y agradables las rutas con calor.",
+     "p": [
+      "Sal temprano para caminar con el fresco de la mañana y descansa a la sombra en las horas de más calor.",
+      "Bebe con regularidad, toma también snacks salados y usa ropa ligera, holgada y de colores claros.",
+      "Ve más despacio, y si te mareas, sientes náuseas o mucho cansancio, para a la sombra, refréscate y vuelve."
+     ],
+     "q": "¿Prefieres caminar con fresco o con calor?",
+     "c": "Elige una ruta de bosque con sombra o junto al agua para tu próxima salida de calor."
+    },
+    "fr": {
+     "t": "Randonner par forte chaleur",
+     "g": "Apprends comment partir tôt, chercher l'ombre, boire et ralentir rendent les randos d'été sûres et agréables.",
+     "p": [
+      "Pars tôt pour marcher à la fraîche, et repose-toi à l'ombre aux heures les plus chaudes.",
+      "Bois régulièrement, mange aussi salé et porte des vêtements légers, amples et clairs.",
+      "Ralentis, et si tu as des vertiges, la nausée ou une grosse fatigue, arrête-toi à l'ombre, rafraîchis-toi et fais demi-tour."
+     ],
+     "q": "Préfères-tu randonner quand il fait frais ou quand il fait chaud ?",
+     "c": "Choisis un sentier forestier ombragé ou au bord de l'eau pour ta prochaine journée chaude."
+    },
+    "it": {
+     "t": "Camminare con il caldo",
+     "g": "Impara come partire presto, cercare ombra, bere e rallentare rendono sicure e piacevoli le escursioni estive.",
+     "p": [
+      "Parti presto per camminare col fresco del mattino e riposa all'ombra nelle ore più calde.",
+      "Bevi regolarmente, mangia anche snack salati e indossa abiti leggeri, larghi e chiari.",
+      "Rallenta, e se ti senti stordito, nauseato o molto stanco, fermati all'ombra, rinfrescati e torna indietro."
+     ],
+     "q": "Preferisci camminare col fresco o col caldo?",
+     "c": "Scegli un sentiero ombreggiato nel bosco o lungo l'acqua per la prossima giornata calda."
+    },
+    "pt": {
+     "t": "Caminhar com calor",
+     "g": "Aprende como sair cedo, procurar sombra, beber e abrandar tornam seguras e agradáveis as caminhadas com calor.",
+     "p": [
+      "Sai cedo para caminhar com o fresco da manhã e descansa à sombra nas horas de mais calor.",
+      "Bebe com regularidade, come também snacks salgados e usa roupa leve, larga e de cores claras.",
+      "Abranda, e se te sentires tonto, enjoado ou muito cansado, para à sombra, refresca-te e volta para trás."
+     ],
+     "q": "Preferes caminhar com fresco ou com calor?",
+     "c": "Escolhe um trilho com sombra na floresta ou junto à água para o próximo dia quente."
+    },
+    "pt_BR": {
+     "t": "Fazendo trilha no calor",
+     "g": "Aprenda como sair cedo, buscar sombra, beber água e ir devagar deixam trilhas no calor seguras e gostosas.",
+     "p": [
+      "Saia cedo para caminhar no frescor da manhã e descanse na sombra nas horas mais quentes.",
+      "Beba água com regularidade, coma também lanches salgados e use roupa leve, folgada e clara.",
+      "Vá devagar, e se sentir tontura, enjoo ou muito cansaço, pare na sombra, se refresque e volte."
+     ],
+     "q": "Você prefere fazer trilha no frio ou no calor?",
+     "c": "Escolha uma trilha com sombra na mata ou à beira d'água para o próximo dia quente."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introduction to maps",
+     "g": "Discover what a hiking map shows and why paper maps still matter in the digital age.",
+     "p": [
+      "A hiking map shows paths, terrain, water, forests, huts and viewpoints in much more detail than a road map.",
+      "Paper never runs out of battery, works without signal and shows the big picture at a glance.",
+      "Studying the map before you go helps you picture the route, the climbs and good places for a break."
+     ],
+     "q": "Have you ever used a paper map, for hiking or anything else?",
+     "c": "Find a hiking map of an area near you and spend ten minutes exploring it."
+    },
+    "de": {
+     "t": "Einführung in Karten",
+     "g": "Entdecke, was eine Wanderkarte zeigt und warum Papierkarten auch heute noch wichtig sind.",
+     "p": [
+      "Eine Wanderkarte zeigt Wege, Gelände, Wasser, Wald, Hütten und Aussichtspunkte viel genauer als eine Straßenkarte.",
+      "Papier hat nie einen leeren Akku, funktioniert ohne Netz und zeigt das große Ganze auf einen Blick.",
+      "Wenn du die Karte vorher studierst, kannst du dir Route, Anstiege und gute Pausenplätze vorstellen."
+     ],
+     "q": "Hast du schon einmal eine Papierkarte benutzt, beim Wandern oder anderswo?",
+     "c": "Such eine Wanderkarte für ein Gebiet in deiner Nähe und erkunde sie zehn Minuten lang."
+    },
+    "es": {
+     "t": "Introducción a los mapas",
+     "g": "Descubre qué muestra un mapa de senderismo y por qué el papel sigue importando en la era digital.",
+     "p": [
+      "Un mapa de senderismo muestra caminos, relieve, agua, bosques, refugios y miradores con mucho más detalle que uno de carreteras.",
+      "El papel nunca se queda sin batería, funciona sin cobertura y muestra la visión general de un vistazo.",
+      "Estudiar el mapa antes de salir te ayuda a imaginar la ruta, las subidas y buenos sitios para descansar."
+     ],
+     "q": "¿Has usado alguna vez un mapa de papel, para caminar o para otra cosa?",
+     "c": "Busca un mapa de senderismo de una zona cercana y explóralo durante diez minutos."
+    },
+    "fr": {
+     "t": "Découvrir les cartes",
+     "g": "Découvre ce que montre une carte de randonnée et pourquoi le papier compte encore à l'ère numérique.",
+     "p": [
+      "Une carte de rando montre sentiers, relief, eau, forêts, refuges et points de vue bien plus en détail qu'une carte routière.",
+      "Le papier ne tombe jamais en panne de batterie, marche sans réseau et donne une vue d'ensemble immédiate.",
+      "Étudier la carte avant de partir aide à imaginer l'itinéraire, les montées et les bons coins de pause."
+     ],
+     "q": "As-tu déjà utilisé une carte papier, en rando ou ailleurs ?",
+     "c": "Trouve une carte de randonnée d'un secteur proche et explore-la pendant dix minutes."
+    },
+    "it": {
+     "t": "Introduzione alle mappe",
+     "g": "Scopri cosa mostra una carta escursionistica e perché la carta conta ancora nell'era digitale.",
+     "p": [
+      "Una carta escursionistica mostra sentieri, rilievo, acqua, boschi, rifugi e punti panoramici molto più in dettaglio di una stradale.",
+      "La carta non si scarica mai, funziona senza campo e mostra il quadro generale a colpo d'occhio.",
+      "Studiare la carta prima di partire aiuta a immaginare il percorso, le salite e buoni posti per una pausa."
+     ],
+     "q": "Hai mai usato una carta di carta, per camminare o per altro?",
+     "c": "Trova una carta escursionistica di una zona vicina e esplorala per dieci minuti."
+    },
+    "pt": {
+     "t": "Introdução aos mapas",
+     "g": "Descobre o que mostra um mapa de caminhada e porque o papel ainda importa na era digital.",
+     "p": [
+      "Um mapa de caminhada mostra trilhos, relevo, água, florestas, refúgios e miradouros com muito mais detalhe do que um mapa de estradas.",
+      "O papel nunca fica sem bateria, funciona sem rede e mostra a visão geral num instante.",
+      "Estudar o mapa antes de sair ajuda-te a imaginar o percurso, as subidas e bons sítios para uma pausa."
+     ],
+     "q": "Já usaste um mapa de papel, para caminhar ou para outra coisa?",
+     "c": "Encontra um mapa de caminhada de uma zona perto de ti e explora-o durante dez minutos."
+    },
+    "pt_BR": {
+     "t": "Introdução aos mapas",
+     "g": "Descubra o que um mapa de trilha mostra e por que o papel ainda importa na era digital.",
+     "p": [
+      "Um mapa de trilha mostra caminhos, relevo, água, matas, abrigos e mirantes com bem mais detalhe que um mapa rodoviário.",
+      "O papel nunca fica sem bateria, funciona sem sinal e mostra o panorama geral num piscar de olhos.",
+      "Estudar o mapa antes de sair ajuda a imaginar a rota, as subidas e bons lugares para uma pausa."
+     ],
+     "q": "Você já usou um mapa de papel, para trilha ou para outra coisa?",
+     "c": "Encontre um mapa de trilha de uma região perto de você e explore por dez minutos."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Map scale explained",
+     "g": "Learn how map scale works and how 1:25,000 and 1:50,000 maps differ in detail.",
+     "p": [
+      "Scale compares map distance to real distance: on 1:25,000, 1 cm on the map is 250 m on the ground.",
+      "So on a 1:25,000 map, 4 cm is 1 km; on a 1:50,000 map, 2 cm is 1 km.",
+      "1:25,000 shows more detail like walls and small paths; 1:50,000 covers a bigger area on one sheet."
+     ],
+     "q": "Which would you choose for your first hike: more detail or a bigger area?",
+     "c": "On a map, measure a short route with a ruler or string and work out its real length."
+    },
+    "de": {
+     "t": "Der Kartenmaßstab",
+     "g": "Lerne, wie der Maßstab funktioniert und wie sich Karten im Maßstab 1:25.000 und 1:50.000 unterscheiden.",
+     "p": [
+      "Der Maßstab vergleicht Karten- mit echter Distanz: Bei 1:25.000 ist 1 cm auf der Karte 250 m im Gelände.",
+      "Auf einer 1:25.000-Karte sind also 4 cm ein Kilometer, auf einer 1:50.000-Karte sind es 2 cm.",
+      "1:25.000 zeigt mehr Details wie Mauern und kleine Pfade; 1:50.000 deckt eine größere Fläche ab."
+     ],
+     "q": "Was würdest du für deine erste Tour wählen: mehr Details oder eine größere Fläche?",
+     "c": "Miss auf einer Karte eine kurze Route mit Lineal oder Faden und berechne die echte Länge."
+    },
+    "es": {
+     "t": "La escala del mapa",
+     "g": "Aprende cómo funciona la escala y en qué se diferencian en detalle los mapas 1:25.000 y 1:50.000.",
+     "p": [
+      "La escala compara la distancia en el mapa con la real: en 1:25.000, 1 cm del mapa son 250 m en el terreno.",
+      "Así, en un mapa 1:25.000, 4 cm son 1 km; en uno 1:50.000, 2 cm son 1 km.",
+      "El 1:25.000 muestra más detalle, como muros y sendas pequeñas; el 1:50.000 abarca más zona en una hoja."
+     ],
+     "q": "¿Cuál elegirías para tu primera ruta: más detalle o más zona?",
+     "c": "Mide en un mapa una ruta corta con una regla o un hilo y calcula su longitud real."
+    },
+    "fr": {
+     "t": "L'échelle d'une carte",
+     "g": "Apprends comment fonctionne l'échelle et ce qui distingue une carte au 1:25 000 d'une carte au 1:50 000.",
+     "p": [
+      "L'échelle compare la distance sur la carte à la distance réelle : au 1:25 000, 1 cm sur la carte vaut 250 m sur le terrain.",
+      "Ainsi, au 1:25 000, 4 cm font 1 km ; au 1:50 000, 2 cm font 1 km.",
+      "Le 1:25 000 montre plus de détails, comme les murets et petits sentiers ; le 1:50 000 couvre une zone plus vaste."
+     ],
+     "q": "Que choisirais-tu pour ta première rando : plus de détails ou une zone plus grande ?",
+     "c": "Sur une carte, mesure un court itinéraire avec une règle ou une ficelle et calcule sa longueur réelle."
+    },
+    "it": {
+     "t": "La scala della mappa",
+     "g": "Impara come funziona la scala e in cosa differiscono nel dettaglio le carte 1:25.000 e 1:50.000.",
+     "p": [
+      "La scala confronta la distanza sulla carta con quella reale: a 1:25.000, 1 cm sulla carta sono 250 m sul terreno.",
+      "Quindi su una carta 1:25.000, 4 cm sono 1 km; su una 1:50.000, 2 cm sono 1 km.",
+      "La 1:25.000 mostra più dettagli, come muretti e piccoli sentieri; la 1:50.000 copre un'area più ampia."
+     ],
+     "q": "Cosa sceglieresti per la tua prima escursione: più dettaglio o un'area più grande?",
+     "c": "Su una carta misura un breve percorso con un righello o uno spago e calcola la lunghezza reale."
+    },
+    "pt": {
+     "t": "A escala do mapa",
+     "g": "Aprende como funciona a escala e em que diferem no detalhe os mapas 1:25 000 e 1:50 000.",
+     "p": [
+      "A escala compara a distância no mapa com a real: em 1:25 000, 1 cm no mapa são 250 m no terreno.",
+      "Assim, num mapa 1:25 000, 4 cm são 1 km; num 1:50 000, 2 cm são 1 km.",
+      "O 1:25 000 mostra mais detalhe, como muros e caminhos pequenos; o 1:50 000 cobre uma área maior numa folha."
+     ],
+     "q": "Qual escolherias para a tua primeira caminhada: mais detalhe ou uma área maior?",
+     "c": "Num mapa, mede um percurso curto com uma régua ou um fio e calcula o comprimento real."
+    },
+    "pt_BR": {
+     "t": "A escala do mapa",
+     "g": "Aprenda como funciona a escala e em que os mapas 1:25.000 e 1:50.000 diferem no detalhe.",
+     "p": [
+      "A escala compara a distância no mapa com a real: em 1:25.000, 1 cm no mapa equivale a 250 m no terreno.",
+      "Então, num mapa 1:25.000, 4 cm são 1 km; num 1:50.000, 2 cm são 1 km.",
+      "O 1:25.000 mostra mais detalhes, como muros e trilhas pequenas; o 1:50.000 cobre uma área maior numa folha."
+     ],
+     "q": "Qual você escolheria para sua primeira trilha: mais detalhe ou uma área maior?",
+     "c": "Num mapa, meça uma rota curta com régua ou barbante e calcule o comprimento real."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Map symbols and legends",
+     "g": "Learn to read the legend that explains a map's symbols, from paths and huts to water and forests.",
+     "p": [
+      "The legend, or key, is a small box listing every symbol and colour used on the map.",
+      "Lines show paths and tracks, blue shows water, green often shows forest, and small icons mark huts and viewpoints.",
+      "Symbols differ between map makers and countries, so always check the legend of the map you hold."
+     ],
+     "q": "Which map symbol would you be most excited to find on a route: a hut, a lake or a viewpoint?",
+     "c": "Pick five symbols from a map legend and find each one on the map."
+    },
+    "de": {
+     "t": "Kartenzeichen und Legende",
+     "g": "Lerne, die Legende zu lesen, die die Symbole einer Karte erklärt, von Wegen und Hütten bis zu Wasser und Wald.",
+     "p": [
+      "Die Legende ist ein kleines Feld, das alle Symbole und Farben der Karte auflistet.",
+      "Linien zeigen Wege, Blau zeigt Wasser, Grün oft Wald, und kleine Zeichen markieren Hütten und Aussichtspunkte.",
+      "Symbole unterscheiden sich je nach Verlag und Land, prüf also immer die Legende deiner Karte."
+     ],
+     "q": "Welches Kartenzeichen würdest du auf einer Route am liebsten finden: Hütte, See oder Aussichtspunkt?",
+     "c": "Wähl fünf Symbole aus einer Kartenlegende und such jedes davon auf der Karte."
+    },
+    "es": {
+     "t": "Símbolos y leyenda del mapa",
+     "g": "Aprende a leer la leyenda que explica los símbolos del mapa, de caminos y refugios a agua y bosques.",
+     "p": [
+      "La leyenda es un pequeño recuadro con todos los símbolos y colores que usa el mapa.",
+      "Las líneas marcan caminos y pistas, el azul el agua, el verde suele ser bosque, e iconos pequeños señalan refugios y miradores.",
+      "Los símbolos cambian según la editorial y el país, así que mira siempre la leyenda del mapa que tienes."
+     ],
+     "q": "¿Qué símbolo te haría más ilusión encontrar en una ruta: un refugio, un lago o un mirador?",
+     "c": "Elige cinco símbolos de la leyenda de un mapa y encuentra cada uno en el mapa."
+    },
+    "fr": {
+     "t": "Symboles et légende",
+     "g": "Apprends à lire la légende qui explique les symboles d'une carte, des sentiers et refuges à l'eau et aux forêts.",
+     "p": [
+      "La légende est un petit encadré qui liste tous les symboles et couleurs de la carte.",
+      "Les traits montrent sentiers et pistes, le bleu l'eau, le vert souvent la forêt, et de petites icônes les refuges et points de vue.",
+      "Les symboles varient selon l'éditeur et le pays, alors vérifie toujours la légende de ta carte."
+     ],
+     "q": "Quel symbole aimerais-tu le plus trouver sur un itinéraire : un refuge, un lac ou un point de vue ?",
+     "c": "Choisis cinq symboles dans la légende d'une carte et retrouve chacun sur la carte."
+    },
+    "it": {
+     "t": "Simboli e legenda",
+     "g": "Impara a leggere la legenda che spiega i simboli della carta, da sentieri e rifugi ad acqua e boschi.",
+     "p": [
+      "La legenda è un piccolo riquadro che elenca tutti i simboli e i colori usati sulla carta.",
+      "Le linee indicano sentieri e piste, il blu l'acqua, il verde spesso il bosco, e piccole icone rifugi e punti panoramici.",
+      "I simboli cambiano tra editori e paesi, quindi controlla sempre la legenda della carta che hai."
+     ],
+     "q": "Quale simbolo saresti più felice di trovare su un percorso: un rifugio, un lago o un panorama?",
+     "c": "Scegli cinque simboli dalla legenda di una carta e trova ciascuno sulla carta."
+    },
+    "pt": {
+     "t": "Símbolos e legenda do mapa",
+     "g": "Aprende a ler a legenda que explica os símbolos de um mapa, de trilhos e refúgios a água e florestas.",
+     "p": [
+      "A legenda é um pequeno quadro que lista todos os símbolos e cores usados no mapa.",
+      "As linhas mostram trilhos e caminhos, o azul a água, o verde muitas vezes floresta, e pequenos ícones refúgios e miradouros.",
+      "Os símbolos mudam conforme a editora e o país, por isso vê sempre a legenda do mapa que tens."
+     ],
+     "q": "Que símbolo gostarias mais de encontrar num percurso: um refúgio, um lago ou um miradouro?",
+     "c": "Escolhe cinco símbolos da legenda de um mapa e encontra cada um no mapa."
+    },
+    "pt_BR": {
+     "t": "Símbolos e legenda do mapa",
+     "g": "Aprenda a ler a legenda que explica os símbolos do mapa, de trilhas e abrigos a água e matas.",
+     "p": [
+      "A legenda é um quadrinho que lista todos os símbolos e cores usados no mapa.",
+      "Linhas mostram trilhas e estradas de terra, azul é água, verde costuma ser mata, e ícones marcam abrigos e mirantes.",
+      "Os símbolos mudam conforme a editora e o país, então sempre confira a legenda do mapa que você tem."
+     ],
+     "q": "Qual símbolo você mais gostaria de encontrar numa rota: um abrigo, um lago ou um mirante?",
+     "c": "Escolha cinco símbolos da legenda de um mapa e encontre cada um no mapa."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contour lines basics",
+     "g": "Learn how contour lines on a map show hills, valleys and how steep the ground is.",
+     "p": [
+      "Each contour line joins points at the same height, and numbers on some lines show the altitude.",
+      "Lines close together mean steep ground; lines far apart mean gentle slopes or flat land.",
+      "Small closed circles show hilltops, and V shapes pointing uphill usually show valleys or streams."
+     ],
+     "q": "Does reading the shape of the land from lines sound fun or tricky to you?",
+     "c": "Find a hilltop on a map and trace the steepest and gentlest way up."
+    },
+    "de": {
+     "t": "Höhenlinien-Grundlagen",
+     "g": "Lerne, wie Höhenlinien auf der Karte Hügel, Täler und die Steilheit des Geländes zeigen.",
+     "p": [
+      "Jede Höhenlinie verbindet Punkte gleicher Höhe, und Zahlen an manchen Linien nennen die Höhe.",
+      "Eng beieinander liegende Linien bedeuten steiles Gelände, weit auseinander liegende sanfte Hänge oder Ebene.",
+      "Kleine geschlossene Kreise zeigen Gipfel, und V-Formen, die bergauf zeigen, meist Täler oder Bäche."
+     ],
+     "q": "Klingt es für dich spannend oder knifflig, die Landschaft aus Linien zu lesen?",
+     "c": "Such auf einer Karte einen Gipfel und verfolge den steilsten und den sanftesten Weg hinauf."
+    },
+    "es": {
+     "t": "Curvas de nivel básicas",
+     "g": "Aprende cómo las curvas de nivel muestran en el mapa colinas, valles y lo empinado del terreno.",
+     "p": [
+      "Cada curva une puntos a la misma altura, y los números de algunas curvas indican la altitud.",
+      "Curvas muy juntas indican terreno empinado; curvas separadas, pendientes suaves o llano.",
+      "Pequeños círculos cerrados marcan cimas, y las formas en V que apuntan hacia arriba suelen ser valles o arroyos."
+     ],
+     "q": "¿Leer la forma del terreno a partir de líneas te parece divertido o complicado?",
+     "c": "Busca una cima en un mapa y sigue el camino más empinado y el más suave hasta arriba."
+    },
+    "fr": {
+     "t": "Les courbes de niveau",
+     "g": "Apprends comment les courbes de niveau montrent sur la carte collines, vallées et raideur du terrain.",
+     "p": [
+      "Chaque courbe relie des points de même altitude, et des chiffres sur certaines courbes indiquent la hauteur.",
+      "Des courbes serrées signifient un terrain raide ; des courbes espacées, une pente douce ou du plat.",
+      "De petits cercles fermés montrent des sommets, et des V pointant vers l'amont indiquent souvent vallons ou ruisseaux."
+     ],
+     "q": "Lire la forme du terrain avec des lignes, ça te paraît amusant ou difficile ?",
+     "c": "Trouve un sommet sur une carte et repère la montée la plus raide et la plus douce."
+    },
+    "it": {
+     "t": "Le curve di livello",
+     "g": "Impara come le curve di livello mostrano sulla carta colline, valli e quanto è ripido il terreno.",
+     "p": [
+      "Ogni curva unisce punti alla stessa quota, e i numeri su alcune curve indicano l'altitudine.",
+      "Curve fitte indicano terreno ripido; curve distanti, pendii dolci o pianura.",
+      "Piccoli cerchi chiusi mostrano le cime, e le V che puntano a monte di solito indicano valli o torrenti."
+     ],
+     "q": "Leggere la forma del terreno dalle linee ti sembra divertente o difficile?",
+     "c": "Trova una cima su una carta e segui la salita più ripida e quella più dolce."
+    },
+    "pt": {
+     "t": "Curvas de nível básicas",
+     "g": "Aprende como as curvas de nível mostram no mapa colinas, vales e a inclinação do terreno.",
+     "p": [
+      "Cada curva une pontos à mesma altitude, e os números em algumas curvas indicam a altura.",
+      "Curvas muito juntas indicam terreno íngreme; curvas afastadas, encostas suaves ou plano.",
+      "Pequenos círculos fechados mostram cumes, e formas em V a apontar para cima costumam ser vales ou ribeiros."
+     ],
+     "q": "Ler a forma do terreno a partir de linhas parece-te divertido ou difícil?",
+     "c": "Encontra um cume num mapa e segue a subida mais íngreme e a mais suave."
+    },
+    "pt_BR": {
+     "t": "Curvas de nível básicas",
+     "g": "Aprenda como as curvas de nível mostram no mapa morros, vales e o quanto o terreno é íngreme.",
+     "p": [
+      "Cada curva liga pontos na mesma altitude, e números em algumas curvas indicam a altura.",
+      "Curvas bem juntas indicam terreno íngreme; curvas afastadas, encostas suaves ou plano.",
+      "Pequenos círculos fechados mostram topos, e formas em V apontando para cima costumam ser vales ou riachos."
+     ],
+     "q": "Ler o formato do terreno pelas linhas parece divertido ou difícil para você?",
+     "c": "Encontre um topo num mapa e siga a subida mais íngreme e a mais suave."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Orienting the map",
+     "g": "Learn to turn the map so it matches the land around you, making navigation much easier.",
+     "p": [
+      "An oriented map lines up with the real world, so a path going left on the map goes left in front of you.",
+      "Match clear features: turn the map until a lake, road or hill sits in the right direction.",
+      "Keep the map oriented as you walk, turning it at each junction, even if the text ends up upside down."
+     ],
+     "q": "Have you ever turned a map around to make sense of where you were?",
+     "c": "In a park or street, orient a map by matching two features you can see."
+    },
+    "de": {
+     "t": "Die Karte einnorden",
+     "g": "Lerne, die Karte so zu drehen, dass sie zur Landschaft passt, damit die Orientierung viel leichter wird.",
+     "p": [
+      "Eine eingenordete Karte liegt passend zur Welt, ein Weg nach links auf der Karte geht auch vor dir nach links.",
+      "Gleiche klare Merkmale ab: Dreh die Karte, bis See, Straße oder Hügel in der richtigen Richtung liegen.",
+      "Halte die Karte beim Gehen ausgerichtet und dreh sie an jeder Abzweigung, auch wenn die Schrift Kopf steht."
+     ],
+     "q": "Hast du schon einmal eine Karte gedreht, um zu verstehen, wo du bist?",
+     "c": "Richte in einem Park oder einer Straße eine Karte nach zwei sichtbaren Merkmalen aus."
+    },
+    "es": {
+     "t": "Orientar el mapa",
+     "g": "Aprende a girar el mapa para que coincida con el terreno y orientarte sea mucho más fácil.",
+     "p": [
+      "Un mapa orientado coincide con la realidad: un camino que va a la izquierda en el mapa va a tu izquierda.",
+      "Busca elementos claros: gira el mapa hasta que un lago, carretera o colina queden en la dirección correcta.",
+      "Mantén el mapa orientado al caminar y gíralo en cada cruce, aunque el texto quede del revés."
+     ],
+     "q": "¿Alguna vez has girado un mapa para entender dónde estabas?",
+     "c": "En un parque o una calle, orienta un mapa haciendo coincidir dos elementos que veas."
+    },
+    "fr": {
+     "t": "Orienter la carte",
+     "g": "Apprends à tourner la carte pour qu'elle corresponde au terrain, ce qui facilite beaucoup l'orientation.",
+     "p": [
+      "Une carte orientée colle au paysage : un sentier qui part à gauche sur la carte part à gauche devant toi.",
+      "Repère des éléments clairs : tourne la carte jusqu'à ce qu'un lac, une route ou une colline soit dans la bonne direction.",
+      "Garde la carte orientée en marchant et tourne-la à chaque intersection, même si le texte est à l'envers."
+     ],
+     "q": "As-tu déjà tourné une carte dans tous les sens pour comprendre où tu étais ?",
+     "c": "Dans un parc ou une rue, oriente une carte en faisant correspondre deux éléments visibles."
+    },
+    "it": {
+     "t": "Orientare la carta",
+     "g": "Impara a girare la carta perché corrisponda al terreno intorno a te, così orientarsi è molto più facile.",
+     "p": [
+      "Una carta orientata combacia con la realtà: un sentiero che va a sinistra sulla carta va a sinistra davanti a te.",
+      "Usa elementi chiari: gira la carta finché un lago, una strada o una collina sono nella direzione giusta.",
+      "Tieni la carta orientata mentre cammini e girala a ogni bivio, anche se le scritte finiscono capovolte."
+     ],
+     "q": "Ti è mai capitato di girare una carta per capire dove ti trovavi?",
+     "c": "In un parco o in una via, orienta una carta facendo combaciare due elementi che vedi."
+    },
+    "pt": {
+     "t": "Orientar o mapa",
+     "g": "Aprende a rodar o mapa para coincidir com o terreno à tua volta, o que facilita muito a orientação.",
+     "p": [
+      "Um mapa orientado coincide com a realidade: um trilho que vai para a esquerda no mapa vai para a tua esquerda.",
+      "Usa elementos claros: roda o mapa até um lago, estrada ou colina ficar na direção certa.",
+      "Mantém o mapa orientado enquanto andas e roda-o em cada cruzamento, mesmo que o texto fique ao contrário."
+     ],
+     "q": "Já rodaste um mapa para perceber onde estavas?",
+     "c": "Num parque ou numa rua, orienta um mapa fazendo coincidir dois elementos que vês."
+    },
+    "pt_BR": {
+     "t": "Orientando o mapa",
+     "g": "Aprenda a girar o mapa para ele combinar com o terreno ao redor, deixando a navegação bem mais fácil.",
+     "p": [
+      "Um mapa orientado bate com a realidade: uma trilha que vai para a esquerda no mapa vai para sua esquerda.",
+      "Use referências claras: gire o mapa até um lago, estrada ou morro ficar na direção certa.",
+      "Mantenha o mapa orientado enquanto anda e gire em cada bifurcação, mesmo que o texto fique de ponta-cabeça."
+     ],
+     "q": "Você já girou um mapa para entender onde estava?",
+     "c": "Num parque ou numa rua, oriente um mapa combinando duas referências que você consegue ver."
+    }
+   }
+  }
+ ]
+}

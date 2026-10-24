@@ -1,0 +1,835 @@
+{
+ "topic": "travel_phrases",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: getting around",
+     "g": "Practise airport, train, bus, metro and taxi phrases in one mini trip.",
+     "p": [
+      "Airport: «Ventanilla, por favor» for a window seat, and if your bag is missing, «Ma valise n'est pas arrivée».",
+      "Rails: «Un aller-retour, s'il vous plaît. Quel quai ?», then in the metro «¿Dónde hago transbordo?» and «Quale uscita?».",
+      "Last stretch: «A esta dirección, por favor. ¿Cuánto tarda?» and at the end «¿Me da un recibo? ¡Gracias!»"
+     ],
+     "q": "Which kind of transport makes you most nervous abroad, and which phrase from this week would help most?",
+     "c": "Tell the story of an imaginary trip from plane to hotel door, using at least five phrases from days 21 to 30."
+    },
+    "de": {
+     "t": "Wiederholung: unterwegs",
+     "g": "Übe Sätze für Flughafen, Zug, Bus, U-Bahn und Taxi in einer Mini-Reise.",
+     "p": [
+      "Flughafen: «Ventanilla, por favor» für den Fensterplatz, und fehlt der Koffer: «Ma valise n'est pas arrivée».",
+      "Schiene: «Un aller-retour, s'il vous plaît. Quel quai ?», dann in der U-Bahn «¿Dónde hago transbordo?» und «Quale uscita?».",
+      "Letzte Etappe: «A esta dirección, por favor. ¿Cuánto tarda?» und am Ende «¿Me da un recibo? ¡Gracias!»"
+     ],
+     "q": "Welches Verkehrsmittel macht dich im Ausland am nervösesten, und welcher Satz dieser Woche hilft am meisten?",
+     "c": "Erzähl eine erfundene Reise vom Flugzeug bis zur Hoteltür mit mindestens fünf Sätzen aus den Tagen 21 bis 30."
+    },
+    "es": {
+     "t": "Repaso: moverse por ahí",
+     "g": "Practica frases de aeropuerto, tren, autobús, metro y taxi en un mini viaje.",
+     "p": [
+      "Aeropuerto: «Window seat, please» para la ventanilla y, si falta la maleta, «Ma valise n'est pas arrivée».",
+      "Raíles: «Un aller-retour, s'il vous plaît. Quel quai ?» y luego en el metro «Where do I change?» y «Quale uscita?».",
+      "Último tramo: «To this address, please. How long does it take?» y al final «Can I have a receipt? Thank you!»"
+     ],
+     "q": "¿Qué transporte te pone más nervioso en el extranjero, y qué frase de esta semana te ayudaría más?",
+     "c": "Cuenta un viaje imaginario del avión a la puerta del hotel con al menos cinco frases de los días 21 a 30."
+    },
+    "fr": {
+     "t": "Révision : se déplacer",
+     "g": "Pratiquer les phrases d'aéroport, de train, de bus, de métro et de taxi dans un mini voyage.",
+     "p": [
+      "Aéroport : «Ventanilla, por favor» pour une place côté hublot et, si la valise manque, «My bag didn't arrive».",
+      "Rails : «A return, please. Which platform?», puis dans le métro «¿Dónde hago transbordo?» et «Quale uscita?».",
+      "Dernière étape : «A esta dirección, por favor. ¿Cuánto tarda?» et à la fin «¿Me da un recibo? ¡Gracias!»"
+     ],
+     "q": "Quel moyen de transport te rend le plus nerveux à l'étranger, et quelle phrase de la semaine t'aiderait le plus ?",
+     "c": "Raconte un voyage imaginaire de l'avion à la porte de l'hôtel avec au moins cinq phrases des jours 21 à 30."
+    },
+    "it": {
+     "t": "Ripasso: spostarsi",
+     "g": "Esercitare le frasi di aeroporto, treno, autobus, metro e taxi in un mini viaggio.",
+     "p": [
+      "Aeroporto: «Ventanilla, por favor» per il finestrino e, se manca la valigia, «Ma valise n'est pas arrivée».",
+      "Binari: «Un aller-retour, s'il vous plaît. Quel quai ?», poi in metro «¿Dónde hago transbordo?» e «Which exit?».",
+      "Ultimo tratto: «A esta dirección, por favor. ¿Cuánto tarda?» e alla fine «¿Me da un recibo? ¡Gracias!»"
+     ],
+     "q": "Quale mezzo di trasporto ti rende più nervoso all'estero, e quale frase di questa settimana ti aiuterebbe di più?",
+     "c": "Racconta un viaggio immaginario dall'aereo alla porta dell'hotel con almeno cinque frasi dei giorni 21-30."
+    },
+    "pt": {
+     "t": "Revisão: andar por aí",
+     "g": "Praticar frases de aeroporto, comboio, autocarro, metro e táxi numa mini viagem.",
+     "p": [
+      "Aeroporto: «Ventanilla, por favor» para o lugar à janela e, se faltar a mala, «Ma valise n'est pas arrivée».",
+      "Carris: «Un aller-retour, s'il vous plaît. Quel quai ?», e depois no metro «¿Dónde hago transbordo?» e «Quale uscita?».",
+      "Última etapa: «A esta dirección, por favor. ¿Cuánto tarda?» e no fim «¿Me da un recibo? ¡Gracias!»"
+     ],
+     "q": "Que transporte te deixa mais nervoso no estrangeiro, e que frase desta semana te ajudaria mais?",
+     "c": "Conta uma viagem imaginária do avião à porta do hotel com pelo menos cinco frases dos dias 21 a 30."
+    },
+    "pt_BR": {
+     "t": "Revisão: se locomover",
+     "g": "Praticar frases de aeroporto, trem, ônibus, metrô e táxi numa mini viagem.",
+     "p": [
+      "Aeroporto: «Ventanilla, por favor» para a janela e, se a mala não chegar, «Ma valise n'est pas arrivée».",
+      "Trilhos: «Un aller-retour, s'il vous plaît. Quel quai ?», e depois no metrô «¿Dónde hago transbordo?» e «Quale uscita?».",
+      "Última etapa: «A esta dirección, por favor. ¿Cuánto tarda?» e no fim «¿Me da un recibo? ¡Gracias!»"
+     ],
+     "q": "Que transporte te deixa mais nervoso no exterior, e que frase desta semana mais ajudaria?",
+     "c": "Conte uma viagem imaginária do avião até a porta do hotel com pelo menos cinco frases dos dias 21 a 30."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking in at a hotel",
+     "g": "Give your name, confirm the booking and ask about breakfast.",
+     "p": [
+      "Spanish: «Tengo una reserva a nombre de Ana López» (TEN-go oo-na reh-SER-va a NOM-breh deh) = I have a booking under...",
+      "French: «J'ai une réservation au nom de Martin» (zhay ewn ray-zer-va-SYON oh NOM duh). Spell your name slowly if needed.",
+      "Breakfast: Spanish «¿El desayuno está incluido?» (deh-sa-YOO-no) = is breakfast included? Italian «A che ora è la colazione?»"
+     ],
+     "q": "What matters most to you in a hotel: location, breakfast, a quiet room or a friendly welcome?",
+     "c": "Practise saying and spelling your own name for a booking in one new language."
+    },
+    "de": {
+     "t": "Im Hotel einchecken",
+     "g": "Nenne deinen Namen, bestätige die Buchung und frag nach dem Frühstück.",
+     "p": [
+      "Spanisch: «Tengo una reserva a nombre de Ana López» (TEN-go u-na re-SSER-wa a NOM-bre de) = Ich habe eine Reservierung auf den Namen...",
+      "Französisch: «J'ai une réservation au nom de Martin» (sche ün re-ser-wa-SSJON o NOM dö). Buchstabiere deinen Namen notfalls langsam.",
+      "Frühstück: Spanisch «¿El desayuno está incluido?» (de-ssa-JU-no) = Ist das Frühstück inklusive? Italienisch «A che ora è la colazione?»"
+     ],
+     "q": "Was ist dir an einem Hotel am wichtigsten: Lage, Frühstück, ein ruhiges Zimmer oder ein herzlicher Empfang?",
+     "c": "Übe, deinen eigenen Namen für eine Buchung in einer neuen Sprache zu sagen und zu buchstabieren."
+    },
+    "es": {
+     "t": "Hacer el check-in en el hotel",
+     "g": "Da tu nombre, confirma la reserva y pregunta por el desayuno.",
+     "p": [
+      "Inglés: «I have a reservation under López» (ai jav a re-ser-VEI-shon AN-der) = tengo una reserva a nombre de López.",
+      "Francés: «J'ai une réservation au nom de López» (yé ün re-ser-va-SIÓN o NOM de). Deletrea tu apellido despacio si hace falta.",
+      "Desayuno: inglés «Is breakfast included?» (is BREK-fast in-KLU-ded) = ¿está incluido el desayuno? Italiano «A che ora è la colazione?»"
+     ],
+     "q": "¿Qué es lo que más te importa de un hotel: la ubicación, el desayuno, una habitación tranquila o un buen recibimiento?",
+     "c": "Practica decir y deletrear tu propio nombre para una reserva en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Arriver à l'hôtel",
+     "g": "Donner son nom, confirmer la réservation et se renseigner sur le petit-déjeuner.",
+     "p": [
+      "Espagnol : «Tengo una reserva a nombre de Martin» (TÈNE-go ou-na ré-SSÈR-va a NOM-bré dé) = j'ai une réservation au nom de...",
+      "Anglais : «I have a reservation under Martin» (aï hav a ré-zeur-VÈÏ-cheun EUN-deur). Épelle ton nom lentement si besoin.",
+      "Petit-déjeuner : espagnol «¿El desayuno está incluido?» (dé-ssa-YOU-no) = c'est compris ? Italien «A che ora è la colazione?»"
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un hôtel : l'emplacement, le petit-déjeuner, le calme ou l'accueil ?",
+     "c": "Entraîne-toi à dire et épeler ton propre nom pour une réservation dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Fare il check-in in hotel",
+     "g": "Dire il tuo nome, confermare la prenotazione e chiedere della colazione.",
+     "p": [
+      "Spagnolo: «Tengo una reserva a nombre de Rossi» (TEN-go u-na re-SER-va a NOM-bre de) = ho una prenotazione a nome di...",
+      "Francese: «J'ai une réservation au nom de Rossi» (jé ün re-ser-va-SION o NOM dö). Fai lo spelling del cognome piano, se serve.",
+      "Colazione: spagnolo «¿El desayuno está incluido?» (de-sa-IU-no) = la colazione è inclusa? Inglese «What time is breakfast?»"
+     ],
+     "q": "Cosa conta di più per te in un hotel: la posizione, la colazione, una camera tranquilla o un'accoglienza calorosa?",
+     "c": "Esercitati a dire e fare lo spelling del tuo nome per una prenotazione in una lingua nuova."
+    },
+    "pt": {
+     "t": "Fazer o check-in no hotel",
+     "g": "Dizer o teu nome, confirmar a reserva e perguntar pelo pequeno-almoço.",
+     "p": [
+      "Espanhol: «Tengo una reserva a nombre de Silva» (TÊN-go u-na re-SSÉR-va a NÔM-bre de) = tenho uma reserva em nome de...",
+      "Francês: «J'ai une réservation au nom de Silva» (jé ün re-zer-va-SSIÕ ô NÕ de). Soletra o teu nome devagar, se for preciso.",
+      "Pequeno-almoço: espanhol «¿El desayuno está incluido?» (de-ssa-IU-no) = o pequeno-almoço está incluído? Italiano «A che ora è la colazione?»"
+     ],
+     "q": "O que mais importa para ti num hotel: a localização, o pequeno-almoço, um quarto sossegado ou uma boa receção?",
+     "c": "Treina dizer e soletrar o teu próprio nome para uma reserva numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Fazer o check-in no hotel",
+     "g": "Dizer seu nome, confirmar a reserva e perguntar sobre o café da manhã.",
+     "p": [
+      "Espanhol: «Tengo una reserva a nombre de Silva» (TÊN-go u-na re-SSÉR-va a NÔM-bre de) = tenho uma reserva no nome de...",
+      "Francês: «J'ai une réservation au nom de Silva» (jé ün re-zer-va-SSIÕ ô NÕ de). Soletre seu nome devagar, se precisar.",
+      "Café da manhã: espanhol «¿El desayuno está incluido?» (de-ssa-IU-no) = o café da manhã está incluído? Italiano «A che ora è la colazione?»"
+     ],
+     "q": "O que mais importa para você num hotel: localização, café da manhã, um quarto silencioso ou uma boa recepção?",
+     "c": "Treine dizer e soletrar seu próprio nome para uma reserva num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking about the room",
+     "g": "Ask about the Wi-Fi password, towels, air conditioning and checkout time.",
+     "p": [
+      "Wi-Fi: Spanish «¿Cuál es la contraseña del wifi?» (kon-tra-SEH-nya). Towels: French «Je pourrais avoir des serviettes ?» (sehr-VYET).",
+      "Air conditioning: Spanish «el aire acondicionado», French «la climatisation», Italian «l'aria condizionata». Ask «¿Cómo funciona?».",
+      "Checkout: Spanish «¿A qué hora es la salida?» (sa-LEE-da), Italian «A che ora si lascia la camera?» (LA-sha la KA-meh-ra)."
+     ],
+     "q": "Which small thing in a hotel room makes you happiest: good Wi-Fi, soft towels, a great view or a quiet night?",
+     "c": "Ask for the Wi-Fi password in two languages next time you visit a café, or practise it at home."
+    },
+    "de": {
+     "t": "Fragen zum Zimmer",
+     "g": "Frag nach WLAN-Passwort, Handtüchern, Klimaanlage und Check-out-Zeit.",
+     "p": [
+      "WLAN: Spanisch «¿Cuál es la contraseña del wifi?» Handtücher: Französisch «Je pourrais avoir des serviettes ?» (sser-WJÄT).",
+      "Klimaanlage: Spanisch «el aire acondicionado», Französisch «la climatisation», Italienisch «l'aria condizionata». Frag «¿Cómo funciona?».",
+      "Check-out: Spanisch «¿A qué hora es la salida?» (ssa-LI-da), Italienisch «A che ora si lascia la camera?» (LA-scha la KA-me-ra)."
+     ],
+     "q": "Welche Kleinigkeit im Hotelzimmer macht dich am glücklichsten: gutes WLAN, weiche Handtücher, tolle Aussicht oder eine ruhige Nacht?",
+     "c": "Frag beim nächsten Cafébesuch in zwei Sprachen nach dem WLAN-Passwort, oder übe es zu Hause."
+    },
+    "es": {
+     "t": "Preguntar por la habitación",
+     "g": "Pregunta por la contraseña del wifi, las toallas, el aire acondicionado y la hora de salida.",
+     "p": [
+      "Wifi: inglés «What's the Wi-Fi password?» (uots de UAI-fai PAS-uord). Toallas: francés «Je pourrais avoir des serviettes ?» (ser-VIET).",
+      "Aire acondicionado: inglés «air conditioning», francés «la climatisation», italiano «l'aria condizionata». Pregunta «How does it work?».",
+      "Salida: inglés «What time is checkout?» (uot taim is CHEK-aut), italiano «A che ora si lascia la camera?» (LA-sha la KA-me-ra)."
+     ],
+     "q": "¿Qué detalle de una habitación te hace más feliz: buen wifi, toallas suaves, unas vistas bonitas o una noche tranquila?",
+     "c": "Pide la contraseña del wifi en dos idiomas la próxima vez que vayas a un café, o practícalo en casa."
+    },
+    "fr": {
+     "t": "Questions sur la chambre",
+     "g": "Demander le mot de passe Wi-Fi, des serviettes, la climatisation et l'heure de départ.",
+     "p": [
+      "Wi-Fi : espagnol «¿Cuál es la contraseña del wifi?» Serviettes : anglais «Could I have some towels?» (koud aï hav som TAOU-eulz).",
+      "Climatisation : espagnol «el aire acondicionado», anglais «air conditioning», italien «l'aria condizionata». Demande «¿Cómo funciona?».",
+      "Départ : espagnol «¿A qué hora es la salida?» (sa-LI-da), italien «A che ora si lascia la camera?» (LA-cha la KA-mé-ra)."
+     ],
+     "q": "Quel petit détail dans une chambre te rend le plus heureux : bon Wi-Fi, serviettes douces, belle vue ou nuit calme ?",
+     "c": "Demande le mot de passe Wi-Fi en deux langues la prochaine fois que tu vas au café, ou entraîne-toi chez toi."
+    },
+    "it": {
+     "t": "Domande sulla camera",
+     "g": "Chiedere la password del Wi-Fi, gli asciugamani, l'aria condizionata e l'orario di check-out.",
+     "p": [
+      "Wi-Fi: spagnolo «¿Cuál es la contraseña del wifi?» (kon-tra-SE-gna). Asciugamani: francese «Je pourrais avoir des serviettes ?» (ser-VIÈT).",
+      "Aria condizionata: spagnolo «el aire acondicionado», francese «la climatisation», inglese «air conditioning». Chiedi «¿Cómo funciona?».",
+      "Check-out: spagnolo «¿A qué hora es la salida?» (sa-LI-da), inglese «What time is checkout?» (uot taim is CEK-aut)."
+     ],
+     "q": "Quale piccolo dettaglio in camera ti rende più felice: buon Wi-Fi, asciugamani morbidi, una bella vista o una notte tranquilla?",
+     "c": "Chiedi la password del Wi-Fi in due lingue la prossima volta che vai al bar, o esercitati a casa."
+    },
+    "pt": {
+     "t": "Perguntar sobre o quarto",
+     "g": "Perguntar pela palavra-passe do Wi-Fi, toalhas, ar condicionado e hora de saída.",
+     "p": [
+      "Wi-Fi: espanhol «¿Cuál es la contraseña del wifi?» (kon-tra-SSÊ-nha). Toalhas: francês «Je pourrais avoir des serviettes ?» (ser-VIÉT).",
+      "Ar condicionado: espanhol «el aire acondicionado», francês «la climatisation», italiano «l'aria condizionata». Pergunta «¿Cómo funciona?».",
+      "Saída: espanhol «¿A qué hora es la salida?» (sa-LI-da), italiano «A che ora si lascia la camera?» (LÁ-cha la KÁ-me-ra)."
+     ],
+     "q": "Que pormenor num quarto te deixa mais feliz: bom Wi-Fi, toalhas macias, uma bela vista ou uma noite sossegada?",
+     "c": "Pede a palavra-passe do Wi-Fi em duas línguas da próxima vez que fores a um café, ou treina em casa."
+    },
+    "pt_BR": {
+     "t": "Perguntar sobre o quarto",
+     "g": "Perguntar a senha do Wi-Fi, toalhas, ar-condicionado e horário de check-out.",
+     "p": [
+      "Wi-Fi: espanhol «¿Cuál es la contraseña del wifi?» (kon-tra-SSÊ-nha). Toalhas: francês «Je pourrais avoir des serviettes ?» (ser-VIÉT).",
+      "Ar-condicionado: espanhol «el aire acondicionado», francês «la climatisation», italiano «l'aria condizionata». Pergunte «¿Cómo funciona?».",
+      "Check-out: espanhol «¿A qué hora es la salida?» (sa-LI-da), italiano «A che ora si lascia la camera?» (LÁ-cha la KÁ-me-ra)."
+     ],
+     "q": "Que detalhe num quarto te deixa mais feliz: Wi-Fi bom, toalhas macias, uma vista bonita ou uma noite tranquila?",
+     "c": "Peça a senha do Wi-Fi em dois idiomas na próxima vez que for a um café, ou treine em casa."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostel and guesthouse talk",
+     "g": "Talk about dorm beds, lockers, shared kitchens and meeting other travellers.",
+     "p": [
+      "Spanish: «Una cama en el dormitorio compartido» (kom-par-TEE-do) = a bed in the shared dorm. «¿Hay taquillas?» (ta-KEE-yas) = lockers?",
+      "Kitchen: Spanish «¿Puedo usar la cocina?» (KO-see-na). French: «Il y a des casiers ?» (ka-ZYAY) = are there lockers?",
+      "Meet people: Spanish «¿De dónde eres?» (deh DON-deh EH-res), Italian «Di dove sei?» (dee DO-veh say) = where are you from?"
+     ],
+     "q": "Have you ever stayed in a hostel or guesthouse? What was the best part of sharing space with other travellers?",
+     "c": "Practise asking where someone is from and answering it yourself in two languages."
+    },
+    "de": {
+     "t": "Hostel- und Pensionsgespräche",
+     "g": "Sprich über Schlafsaalbetten, Schließfächer, Gemeinschaftsküchen und andere Reisende.",
+     "p": [
+      "Spanisch: «Una cama en el dormitorio compartido» (kom-par-TI-do) = ein Bett im Schlafsaal. «¿Hay taquillas?» (ta-KI-jas) = Schließfächer?",
+      "Küche: Spanisch «¿Puedo usar la cocina?» (KO-ssi-na). Französisch: «Il y a des casiers ?» (ka-SJE) = Gibt es Schließfächer?",
+      "Leute kennenlernen: Spanisch «¿De dónde eres?» (de DON-de E-res), Italienisch «Di dove sei?» (di DO-we ssei) = Woher kommst du?"
+     ],
+     "q": "Hast du schon einmal in einem Hostel oder einer Pension übernachtet? Was war das Schönste am Teilen mit anderen Reisenden?",
+     "c": "Übe die Frage, woher jemand kommt, und beantworte sie selbst in zwei Sprachen."
+    },
+    "es": {
+     "t": "Charlas de hostal y casa de huéspedes",
+     "g": "Habla de camas en dormitorio, taquillas, cocinas compartidas y de conocer a otros viajeros.",
+     "p": [
+      "Inglés: «A bed in the shared dorm, please» = una cama en el dormitorio. «Are there lockers?» (LO-kers) = ¿hay taquillas?",
+      "Cocina: inglés «Can I use the kitchen?» (ken ai ius de KI-chen). Francés: «Il y a des casiers ?» (ka-SIÉ) = ¿hay taquillas?",
+      "Conocer gente: inglés «Where are you from?» (uer ar yu FROM), italiano «Di dove sei?» (di DO-ve sei) = ¿de dónde eres?"
+     ],
+     "q": "¿Te has alojado alguna vez en un hostal o casa de huéspedes? ¿Qué fue lo mejor de compartir espacio con otros viajeros?",
+     "c": "Practica preguntar de dónde es alguien y respóndelo tú en dos idiomas."
+    },
+    "fr": {
+     "t": "Parler en auberge et maison d'hôtes",
+     "g": "Parler de lits en dortoir, casiers, cuisine partagée et rencontres entre voyageurs.",
+     "p": [
+      "Espagnol : «Una cama en el dormitorio compartido» (kom-par-TI-do) = un lit en dortoir. «¿Hay taquillas?» (ta-KI-yass) = il y a des casiers ?",
+      "Cuisine : espagnol «¿Puedo usar la cocina?» (KO-ssi-na). Anglais : «Can I use the kitchen?» (kène aï youz ze KI-tcheun).",
+      "Rencontres : espagnol «¿De dónde eres?» (dé DONE-dé É-rèss), italien «Di dove sei?» (di DO-vé sseï) = tu viens d'où ?"
+     ],
+     "q": "As-tu déjà dormi en auberge ou en maison d'hôtes ? Qu'as-tu le plus aimé dans le partage avec d'autres voyageurs ?",
+     "c": "Entraîne-toi à demander d'où vient quelqu'un et à répondre toi-même dans deux langues."
+    },
+    "it": {
+     "t": "Chiacchiere in ostello e guesthouse",
+     "g": "Parlare di letti in camerata, armadietti, cucine comuni e di incontrare altri viaggiatori.",
+     "p": [
+      "Spagnolo: «Una cama en el dormitorio compartido» (kom-par-TI-do) = un letto in camerata. «¿Hay taquillas?» (ta-KI-ias) = ci sono armadietti?",
+      "Cucina: spagnolo «¿Puedo usar la cocina?» (KO-si-na). Francese: «Il y a des casiers ?» (ka-SIÉ) = ci sono armadietti?",
+      "Conoscere gente: spagnolo «¿De dónde eres?» (de DON-de E-res), inglese «Where are you from?» (uer ar iu FROM) = di dove sei?"
+     ],
+     "q": "Hai mai dormito in un ostello o in una guesthouse? Qual è stata la cosa più bella del condividere spazi con altri viaggiatori?",
+     "c": "Esercitati a chiedere di dove è qualcuno e a rispondere tu stesso in due lingue."
+    },
+    "pt": {
+     "t": "Conversas de hostel e guesthouse",
+     "g": "Falar de camas em dormitório, cacifos, cozinhas partilhadas e conhecer outros viajantes.",
+     "p": [
+      "Espanhol: «Una cama en el dormitorio compartido» (kom-par-TI-do) = uma cama no dormitório. «¿Hay taquillas?» (ta-KI-lhas) = há cacifos?",
+      "Cozinha: espanhol «¿Puedo usar la cocina?» (KÔ-ssi-na). Francês: «Il y a des casiers ?» (ka-ZIÊ) = há cacifos?",
+      "Conhecer pessoas: espanhol «¿De dónde eres?» (de DÔN-de É-res), italiano «Di dove sei?» (di DÔ-ve sei) = de onde és?"
+     ],
+     "q": "Já ficaste num hostel ou guesthouse? O que foi melhor em partilhar espaço com outros viajantes?",
+     "c": "Treina perguntar de onde alguém é e responde tu mesmo em duas línguas."
+    },
+    "pt_BR": {
+     "t": "Conversas de hostel e pousada",
+     "g": "Falar de camas em dormitório, armários, cozinhas compartilhadas e conhecer outros viajantes.",
+     "p": [
+      "Espanhol: «Una cama en el dormitorio compartido» (kom-par-TI-do) = uma cama no dormitório. «¿Hay taquillas?» (ta-KI-jas) = tem armários?",
+      "Cozinha: espanhol «¿Puedo usar la cocina?» (KÔ-ssi-na). Francês: «Il y a des casiers ?» (ka-ZIÊ) = tem armários?",
+      "Conhecer gente: espanhol «¿De dónde eres?» (de DÔN-de É-res), italiano «Di dove sei?» (di DÔ-ve sei) = de onde você é?"
+     ],
+     "q": "Você já ficou num hostel ou pousada? O que foi melhor em dividir espaço com outros viajantes?",
+     "c": "Treine perguntar de onde alguém é e responda você mesmo em dois idiomas."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holiday rental check-in",
+     "g": "Get the keys, ask about house rules and know how to contact your host.",
+     "p": [
+      "Keys: Spanish «¿Dónde recojo las llaves?» (reh-KO-ho las YA-ves) = where do I pick up the keys? French «Où sont les clés ?» (lay KLAY).",
+      "Rules: Spanish «¿Hay normas de la casa?» = any house rules? Italian «Dove si butta la spazzatura?» = where does the rubbish go?",
+      "Contact: Spanish «¿Cómo le contacto si hay un problema?» = how do I reach you if there is a problem? Save the host's number at once."
+     ],
+     "q": "Do you prefer a hotel or a holiday rental where you can cook and live like a local?",
+     "c": "Write a short, friendly message to an imaginary host saying you have arrived and asking where the keys are."
+    },
+    "de": {
+     "t": "Check-in in der Ferienwohnung",
+     "g": "Hol die Schlüssel ab, frag nach Hausregeln und wisse, wie du den Gastgeber erreichst.",
+     "p": [
+      "Schlüssel: Spanisch «¿Dónde recojo las llaves?» (re-KO-cho las JA-wes) = Wo hole ich die Schlüssel? Französisch «Où sont les clés ?».",
+      "Regeln und Müll: Spanisch «¿Hay normas de la casa?» = Gibt es Hausregeln? Italienisch «Dove si butta la spazzatura?» = Wohin mit dem Müll?",
+      "Kontakt: Spanisch «¿Cómo le contacto si hay un problema?» = Wie erreiche ich Sie bei einem Problem? Speichere die Nummer sofort."
+     ],
+     "q": "Magst du lieber ein Hotel oder eine Ferienwohnung, in der du kochen und wie Einheimische leben kannst?",
+     "c": "Schreib einem erfundenen Gastgeber eine kurze, freundliche Nachricht: Du bist angekommen und fragst nach den Schlüsseln."
+    },
+    "es": {
+     "t": "Llegada al apartamento turístico",
+     "g": "Recoge las llaves, pregunta por las normas de la casa y sabe cómo contactar con el anfitrión.",
+     "p": [
+      "Llaves: inglés «Where do I pick up the keys?» (uer du ai pik ap de KIS). Francés: «Où sont les clés ?» (u son le KLÉ).",
+      "Normas y basura: inglés «Are there any house rules?» (jaus RULS). Italiano «Dove si butta la spazzatura?» = ¿dónde se tira la basura?",
+      "Contacto: inglés «How can I reach you if there's a problem?» = ¿cómo te contacto si hay un problema? Guarda el número del anfitrión."
+     ],
+     "q": "¿Prefieres un hotel o un apartamento donde puedas cocinar y vivir como alguien del lugar?",
+     "c": "Escribe un mensaje corto y amable a un anfitrión imaginario diciendo que has llegado y preguntando por las llaves."
+    },
+    "fr": {
+     "t": "Arrivée en location de vacances",
+     "g": "Récupérer les clés, demander les règles de la maison et savoir joindre son hôte.",
+     "p": [
+      "Clés : espagnol «¿Dónde recojo las llaves?» (ré-KO-kho lass YA-vèss) = où je récupère les clés ? Anglais «Where are the keys?».",
+      "Règles : espagnol «¿Hay normas de la casa?» = il y a des règles ? Italien «Dove si butta la spazzatura?» = où vont les déchets ?",
+      "Contact : espagnol «¿Cómo le contacto si hay un problema?» = comment vous joindre en cas de problème ? Enregistre vite le numéro."
+     ],
+     "q": "Préfères-tu un hôtel ou une location où tu peux cuisiner et vivre comme un habitant ?",
+     "c": "Écris un court message aimable à un hôte imaginaire pour dire que tu es arrivé et demander où sont les clés."
+    },
+    "it": {
+     "t": "Check-in nella casa vacanze",
+     "g": "Ritirare le chiavi, chiedere le regole della casa e sapere come contattare l'host.",
+     "p": [
+      "Chiavi: spagnolo «¿Dónde recojo las llaves?» (re-KO-ho las IA-ves) = dove ritiro le chiavi? Francese «Où sont les clés ?» (le KLÉ).",
+      "Regole e rifiuti: spagnolo «¿Hay normas de la casa?» = ci sono regole? Inglese «Where does the rubbish go?» = dove va la spazzatura?",
+      "Contatto: spagnolo «¿Cómo le contacto si hay un problema?» = come la contatto se c'è un problema? Salva subito il numero dell'host."
+     ],
+     "q": "Preferisci un hotel o una casa vacanze dove puoi cucinare e vivere come la gente del posto?",
+     "c": "Scrivi un breve messaggio gentile a un host immaginario per dire che sei arrivato e chiedere delle chiavi."
+    },
+    "pt": {
+     "t": "Check-in no alojamento local",
+     "g": "Levantar as chaves, perguntar pelas regras da casa e saber como contactar o anfitrião.",
+     "p": [
+      "Chaves: espanhol «¿Dónde recojo las llaves?» (rre-KÔ-rro las LHÁ-ves) = onde levanto as chaves? Francês «Où sont les clés ?» (lê KLÊ).",
+      "Regras e lixo: espanhol «¿Hay normas de la casa?» = há regras da casa? Italiano «Dove si butta la spazzatura?» = onde se deita o lixo?",
+      "Contacto: espanhol «¿Cómo le contacto si hay un problema?» = como o contacto se houver um problema? Guarda logo o número."
+     ],
+     "q": "Preferes um hotel ou um alojamento local onde possas cozinhar e viver como alguém da terra?",
+     "c": "Escreve uma mensagem curta e simpática a um anfitrião imaginário a dizer que chegaste e a perguntar pelas chaves."
+    },
+    "pt_BR": {
+     "t": "Check-in no aluguel de temporada",
+     "g": "Pegar as chaves, perguntar sobre as regras da casa e saber como falar com o anfitrião.",
+     "p": [
+      "Chaves: espanhol «¿Dónde recojo las llaves?» (rre-KÔ-rro las JÁ-ves) = onde pego as chaves? Francês «Où sont les clés ?» (lê KLÊ).",
+      "Regras e lixo: espanhol «¿Hay normas de la casa?» = tem regras da casa? Italiano «Dove si butta la spazzatura?» = onde jogo o lixo?",
+      "Contato: espanhol «¿Cómo le contacto si hay un problema?» = como falo com você se tiver um problema? Salve logo o número."
+     ],
+     "q": "Você prefere um hotel ou um aluguel de temporada onde possa cozinhar e viver como alguém do lugar?",
+     "c": "Escreva uma mensagem curta e simpática a um anfitrião imaginário dizendo que chegou e perguntando pelas chaves."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reporting a room problem",
+     "g": "Say politely that something is broken, noisy or missing.",
+     "p": [
+      "Open softly: Spanish «Perdone, hay un pequeño problema» (peh-KEH-nyo pro-BLEH-ma) = sorry, there is a small problem.",
+      "Broken: Spanish «El aire acondicionado no funciona»; French «Il n'y a pas d'eau chaude» (pa doh SHOHD) = no hot water.",
+      "Noise: Italian «La camera è un po' rumorosa» (roo-mo-RO-za) = the room is a bit noisy. Then «Posso cambiare camera?» = can I change rooms?"
+     ],
+     "q": "How do you usually complain about something: directly, very politely, or do you prefer not to say anything?",
+     "c": "Practise one polite complaint in a new language, starting with a soft opener and ending with thanks."
+    },
+    "de": {
+     "t": "Ein Problem im Zimmer melden",
+     "g": "Sag höflich, dass etwas kaputt, laut oder nicht da ist.",
+     "p": [
+      "Sanft beginnen: Spanisch «Perdone, hay un pequeño problema» (pe-KE-njo pro-BLE-ma) = Entschuldigung, es gibt ein kleines Problem.",
+      "Kaputt: Spanisch «El aire acondicionado no funciona»; Französisch «Il n'y a pas d'eau chaude» (pa do SCHOD) = kein Warmwasser.",
+      "Lärm: Italienisch «La camera è un po' rumorosa» (ru-mo-RO-sa) = Das Zimmer ist etwas laut. Dann «Posso cambiare camera?» = Zimmerwechsel?"
+     ],
+     "q": "Wie beschwerst du dich normalerweise: direkt, sehr höflich, oder sagst du lieber gar nichts?",
+     "c": "Übe eine höfliche Beschwerde in einer neuen Sprache, mit sanftem Einstieg und Dank am Ende."
+    },
+    "es": {
+     "t": "Avisar de un problema en la habitación",
+     "g": "Di con educación que algo está roto, hay ruido o falta algo.",
+     "p": [
+      "Empieza suave: inglés «Sorry, there's a small problem» (SO-ri, ders a smol PRO-blem) = perdone, hay un pequeño problema.",
+      "Roto o falta: inglés «The air conditioning doesn't work»; francés «Il n'y a pas d'eau chaude» (pa do SHOD) = no hay agua caliente.",
+      "Ruido: italiano «La camera è un po' rumorosa» (ru-mo-RO-sa) = la habitación es ruidosa. Luego «Posso cambiare camera?» = ¿puedo cambiar?"
+     ],
+     "q": "¿Cómo sueles quejarte de algo: directamente, con mucha educación, o prefieres no decir nada?",
+     "c": "Practica una queja educada en un idioma nuevo, empezando con suavidad y terminando con un gracias."
+    },
+    "fr": {
+     "t": "Signaler un problème dans la chambre",
+     "g": "Dire poliment que quelque chose est cassé, bruyant ou manquant.",
+     "p": [
+      "Commencer en douceur : espagnol «Perdone, hay un pequeño problema» (pé-KÉ-gno pro-BLÉ-ma) = excusez-moi, il y a un petit problème.",
+      "Cassé ou manquant : espagnol «El aire acondicionado no funciona» ; anglais «There's no hot water» = pas d'eau chaude.",
+      "Bruit : italien «La camera è un po' rumorosa» (rou-mo-RO-za) = la chambre est bruyante. Puis «Posso cambiare camera?» = je peux changer ?"
+     ],
+     "q": "Comment te plains-tu d'habitude : directement, très poliment, ou préfères-tu ne rien dire ?",
+     "c": "Entraîne-toi à une réclamation polie dans une nouvelle langue, avec une entrée en douceur et un merci final."
+    },
+    "it": {
+     "t": "Segnalare un problema in camera",
+     "g": "Dire con garbo che qualcosa è rotto, rumoroso o manca.",
+     "p": [
+      "Inizia con dolcezza: spagnolo «Perdone, hay un pequeño problema» (pe-KE-gno pro-BLE-ma) = scusi, c'è un piccolo problema.",
+      "Rotto: spagnolo «El aire acondicionado no funciona»; francese «Il n'y a pas d'eau chaude» (pa do SCIOD) = niente acqua calda.",
+      "Rumore: inglese «The room is a bit noisy» = la camera è un po' rumorosa. Poi «Can I change rooms?» = posso cambiare?"
+     ],
+     "q": "Come ti lamenti di solito: in modo diretto, con molta cortesia, o preferisci non dire niente?",
+     "c": "Esercitati con un reclamo gentile in una lingua nuova, iniziando con dolcezza e chiudendo con un grazie."
+    },
+    "pt": {
+     "t": "Comunicar um problema no quarto",
+     "g": "Dizer com educação que algo está avariado, faz barulho ou falta.",
+     "p": [
+      "Começa com suavidade: espanhol «Perdone, hay un pequeño problema» (pe-KÊ-nho pro-BLÊ-ma) = desculpe, há um pequeno problema.",
+      "Avariado: espanhol «El aire acondicionado no funciona»; francês «Il n'y a pas d'eau chaude» (pa dô CHÔD) = não há água quente.",
+      "Barulho: italiano «La camera è un po' rumorosa» (ru-mo-RÔ-za) = o quarto é barulhento. Depois «Posso cambiare camera?» = posso mudar?"
+     ],
+     "q": "Como costumas reclamar: diretamente, com muita educação, ou preferes não dizer nada?",
+     "c": "Treina uma reclamação educada numa língua nova, começando com suavidade e terminando com um obrigado."
+    },
+    "pt_BR": {
+     "t": "Avisar sobre um problema no quarto",
+     "g": "Dizer com educação que algo está quebrado, barulhento ou faltando.",
+     "p": [
+      "Comece com suavidade: espanhol «Perdone, hay un pequeño problema» (pe-KÊ-nho pro-BLÊ-ma) = desculpe, tem um probleminha.",
+      "Quebrado: espanhol «El aire acondicionado no funciona»; francês «Il n'y a pas d'eau chaude» (pa dô CHÔD) = sem água quente.",
+      "Barulho: italiano «La camera è un po' rumorosa» (ru-mo-RÔ-za) = o quarto é meio barulhento. Depois «Posso cambiare camera?» = posso trocar?"
+     ],
+     "q": "Como você costuma reclamar: direto, com muita educação, ou prefere não dizer nada?",
+     "c": "Treine uma reclamação educada num idioma novo, começando com suavidade e terminando com um obrigado."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking out",
+     "g": "Settle the bill, leave your luggage for a few hours and ask for a taxi.",
+     "p": [
+      "Bill: French «Je voudrais régler la note» (ray-GLAY la NOT) = I would like to settle the bill; Spanish «¿Me prepara la factura?».",
+      "Luggage: Spanish «¿Puedo dejar las maletas unas horas?» (deh-HAR) = can I leave my bags for a few hours? Many hotels say yes for free.",
+      "Taxi: Italian «Mi può chiamare un taxi?» (kya-MA-reh) = can you call me a taxi? Finish with «Grazie di tutto!» = thanks for everything!"
+     ],
+     "q": "What do you like to do on your last day of a trip when your room is already checked out?",
+     "c": "Say the three checkout phrases in a row in one language, then add a warm goodbye."
+    },
+    "de": {
+     "t": "Auschecken",
+     "g": "Begleiche die Rechnung, lass dein Gepäck ein paar Stunden da und bestell ein Taxi.",
+     "p": [
+      "Rechnung: Französisch «Je voudrais régler la note» (re-GLE la NOT) = Ich möchte die Rechnung begleichen; Spanisch «¿Me prepara la factura?».",
+      "Gepäck: Spanisch «¿Puedo dejar las maletas unas horas?» (de-CHAR) = Kann ich die Koffer ein paar Stunden lassen? Oft geht das kostenlos.",
+      "Taxi: Italienisch «Mi può chiamare un taxi?» (kja-MA-re) = Können Sie mir ein Taxi rufen? Zum Schluss «Grazie di tutto!» = Danke für alles!"
+     ],
+     "q": "Was machst du am letzten Reisetag gern, wenn du schon ausgecheckt hast?",
+     "c": "Sag die drei Check-out-Sätze hintereinander in einer Sprache und füge einen herzlichen Abschied hinzu."
+    },
+    "es": {
+     "t": "Hacer el check-out",
+     "g": "Paga la cuenta, deja el equipaje unas horas y pide un taxi.",
+     "p": [
+      "Cuenta: francés «Je voudrais régler la note» (re-GLÉ la NOT) = quisiera pagar la cuenta; inglés «Can I check out, please?» (chek AUT).",
+      "Equipaje: inglés «Can I leave my bags for a few hours?» (liv mai BAGS) = ¿puedo dejar las maletas unas horas? Suele ser gratis.",
+      "Taxi: italiano «Mi può chiamare un taxi?» (kia-MA-re) = ¿me puede llamar un taxi? Termina con «Grazie di tutto!» = ¡gracias por todo!"
+     ],
+     "q": "¿Qué te gusta hacer el último día del viaje cuando ya has dejado la habitación?",
+     "c": "Di las tres frases de salida seguidas en un idioma y añade una despedida cálida."
+    },
+    "fr": {
+     "t": "Quitter l'hôtel",
+     "g": "Régler la note, laisser ses bagages quelques heures et demander un taxi.",
+     "p": [
+      "Note : espagnol «¿Me prepara la factura?» (mé pré-PA-ra la fak-TOU-ra) = vous me préparez la facture ? Anglais «Can I check out, please?».",
+      "Bagages : espagnol «¿Puedo dejar las maletas unas horas?» (dé-KHAR) = je peux laisser mes valises quelques heures ? Souvent gratuit.",
+      "Taxi : italien «Mi può chiamare un taxi?» (kia-MA-ré) = vous pouvez m'appeler un taxi ? Termine par «Grazie di tutto!» = merci pour tout !"
+     ],
+     "q": "Qu'aimes-tu faire le dernier jour d'un voyage quand tu as déjà rendu ta chambre ?",
+     "c": "Dis les trois phrases de départ d'affilée dans une langue, puis ajoute un au revoir chaleureux."
+    },
+    "it": {
+     "t": "Fare il check-out",
+     "g": "Saldare il conto, lasciare i bagagli per qualche ora e chiedere un taxi.",
+     "p": [
+      "Conto: francese «Je voudrais régler la note» (re-GLÉ la NOT) = vorrei saldare il conto; spagnolo «¿Me prepara la factura?» (fak-TU-ra).",
+      "Bagagli: spagnolo «¿Puedo dejar las maletas unas horas?» (de-HAR) = posso lasciare le valigie qualche ora? Spesso è gratis.",
+      "Taxi: inglese «Could you call me a taxi?» (kud iu kol mi a TAK-si) = mi può chiamare un taxi? Chiudi con «Thank you for everything!»."
+     ],
+     "q": "Cosa ti piace fare l'ultimo giorno di viaggio quando hai già lasciato la camera?",
+     "c": "Di' le tre frasi del check-out di fila in una lingua e aggiungi un saluto caloroso."
+    },
+    "pt": {
+     "t": "Fazer o check-out",
+     "g": "Pagar a conta, deixar a bagagem umas horas e pedir um táxi.",
+     "p": [
+      "Conta: francês «Je voudrais régler la note» (re-GLÊ la NÓT) = queria pagar a conta; espanhol «¿Me prepara la factura?» (fak-TU-ra).",
+      "Bagagem: espanhol «¿Puedo dejar las maletas unas horas?» (de-RRÁR) = posso deixar as malas umas horas? Muitos hotéis fazem isso de graça.",
+      "Táxi: italiano «Mi può chiamare un taxi?» (kia-MÁ-re) = pode chamar-me um táxi? Acaba com «Grazie di tutto!» = obrigado por tudo!"
+     ],
+     "q": "O que gostas de fazer no último dia de viagem quando já deixaste o quarto?",
+     "c": "Diz as três frases de saída de seguida numa língua e junta uma despedida calorosa."
+    },
+    "pt_BR": {
+     "t": "Fazer o check-out",
+     "g": "Pagar a conta, deixar a bagagem por algumas horas e pedir um táxi.",
+     "p": [
+      "Conta: francês «Je voudrais régler la note» (re-GLÊ la NÓT) = queria fechar a conta; espanhol «¿Me prepara la factura?» (fak-TU-ra).",
+      "Bagagem: espanhol «¿Puedo dejar las maletas unas horas?» (de-RRÁR) = posso deixar as malas umas horas? Muitos hotéis fazem isso de graça.",
+      "Táxi: italiano «Mi può chiamare un taxi?» (kia-MÁ-re) = pode me chamar um táxi? Termine com «Grazie di tutto!» = obrigado por tudo!"
+     ],
+     "q": "O que você gosta de fazer no último dia de viagem quando já deixou o quarto?",
+     "c": "Diga as três frases de saída em sequência num idioma e acrescente uma despedida calorosa."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for a table",
+     "g": "Say how many people you are and ask for inside or outside seats.",
+     "p": [
+      "Spanish: «Una mesa para dos, por favor» (MEH-sa PA-ra dos). French: «Une table pour quatre, s'il vous plaît» (ewn TABL poor KATR).",
+      "Outside: French «En terrasse, si possible» (ahn teh-RAS), Italian «Avete un tavolo fuori?» (TA-vo-lo FWO-ree) = do you have a table outside?",
+      "Booked ahead? Spanish «Tenemos una reserva» (teh-NEH-mos), French «Nous avons réservé» (noo za-von ray-zer-VAY)."
+     ],
+     "q": "Do you prefer eating outside on a terrace or inside where it is cosy and quiet?",
+     "c": "Imagine arriving at a restaurant with friends and ask for a table in two languages."
+    },
+    "de": {
+     "t": "Nach einem Tisch fragen",
+     "g": "Sag, wie viele ihr seid, und frag nach Plätzen drinnen oder draußen.",
+     "p": [
+      "Spanisch: «Una mesa para dos, por favor» (ME-ssa PA-ra doss). Französisch: «Une table pour quatre, s'il vous plaît» (ün TABL pur KATR).",
+      "Draußen: Französisch «En terrasse, si possible» (an te-RASS), Italienisch «Avete un tavolo fuori?» = Tisch draußen?",
+      "Reserviert? Spanisch «Tenemos una reserva» (te-NE-mos), Französisch «Nous avons réservé» (nu sa-won re-ser-WE)."
+     ],
+     "q": "Isst du lieber draußen auf der Terrasse oder drinnen, wo es gemütlich und ruhig ist?",
+     "c": "Stell dir vor, du kommst mit Freunden in ein Restaurant, und frag in zwei Sprachen nach einem Tisch."
+    },
+    "es": {
+     "t": "Pedir una mesa",
+     "g": "Di cuántas personas sois y pide sitio dentro o fuera.",
+     "p": [
+      "Inglés: «A table for two, please» (a TEI-bel for tu). Francés: «Une table pour quatre, s'il vous plaît» (ün TABL pur KATR).",
+      "Fuera: francés «En terrasse, si possible» (an te-RAS), italiano «Avete un tavolo fuori?» (TA-vo-lo FUO-ri) = ¿tienen una mesa fuera?",
+      "¿Con reserva? Inglés «We have a reservation» (ui jav a re-ser-VEI-shon), francés «Nous avons réservé» (nu sa-von re-ser-VÉ)."
+     ],
+     "q": "¿Prefieres comer fuera en una terraza o dentro, donde es acogedor y tranquilo?",
+     "c": "Imagina que llegas a un restaurante con amigos y pide una mesa en dos idiomas."
+    },
+    "fr": {
+     "t": "Demander une table",
+     "g": "Dire combien vous êtes et demander une place à l'intérieur ou en terrasse.",
+     "p": [
+      "Espagnol : «Una mesa para dos, por favor» (MÉ-ssa PA-ra doss). Anglais : «A table for four, please» (a TÈÏ-beul for FOR).",
+      "Dehors : espagnol «¿Tienen mesa en la terraza?» (té-RRA-ssa), italien «Avete un tavolo fuori?» (TA-vo-lo FOUO-ri) = une table dehors ?",
+      "Réservé ? Espagnol «Tenemos una reserva» (té-NÉ-moss), anglais «We have a reservation» (oui hav a ré-zeur-VÈÏ-cheun)."
+     ],
+     "q": "Préfères-tu manger dehors en terrasse ou à l'intérieur, au calme et au chaud ?",
+     "c": "Imagine que tu arrives au restaurant avec des amis et demande une table dans deux langues."
+    },
+    "it": {
+     "t": "Chiedere un tavolo",
+     "g": "Dire quanti siete e chiedere un posto dentro o fuori.",
+     "p": [
+      "Spagnolo: «Una mesa para dos, por favor» (ME-sa PA-ra dos). Francese: «Une table pour quatre, s'il vous plaît» (ün TABL pur KATR).",
+      "Fuori: francese «En terrasse, si possible» (an te-RAS), spagnolo «¿Tienen mesa en la terraza?» (te-RRA-sa) = avete un tavolo fuori?",
+      "Prenotato? Spagnolo «Tenemos una reserva» (te-NE-mos), francese «Nous avons réservé» (nu sa-von re-ser-VÉ)."
+     ],
+     "q": "Preferisci mangiare fuori in terrazza o dentro, dove è accogliente e tranquillo?",
+     "c": "Immagina di arrivare al ristorante con gli amici e chiedi un tavolo in due lingue."
+    },
+    "pt": {
+     "t": "Pedir uma mesa",
+     "g": "Dizer quantas pessoas são e pedir lugar dentro ou fora.",
+     "p": [
+      "Espanhol: «Una mesa para dos, por favor» (MÊ-ssa PA-ra dos). Francês: «Une table pour quatre, s'il vous plaît» (ün TABL pur KATR).",
+      "Fora: francês «En terrasse, si possible» (ã te-RÁS), italiano «Avete un tavolo fuori?» (TÁ-vo-lo FUÔ-ri) = têm uma mesa lá fora?",
+      "Reservaram? Espanhol «Tenemos una reserva» (te-NÊ-mos), francês «Nous avons réservé» (nu za-võ re-zer-VÊ)."
+     ],
+     "q": "Preferes comer lá fora numa esplanada ou dentro, onde é acolhedor e sossegado?",
+     "c": "Imagina que chegas a um restaurante com amigos e pede uma mesa em duas línguas."
+    },
+    "pt_BR": {
+     "t": "Pedir uma mesa",
+     "g": "Dizer quantas pessoas são e pedir lugar dentro ou fora.",
+     "p": [
+      "Espanhol: «Una mesa para dos, por favor» (MÊ-ssa PA-ra dos). Francês: «Une table pour quatre, s'il vous plaît» (ün TABL pur KATR).",
+      "Fora: francês «En terrasse, si possible» (ã te-RÁS), italiano «Avete un tavolo fuori?» (TÁ-vo-lo FUÔ-ri) = tem uma mesa do lado de fora?",
+      "Reservaram? Espanhol «Tenemos una reserva» (te-NÊ-mos), francês «Nous avons réservé» (nu za-võ re-zer-VÊ)."
+     ],
+     "q": "Você prefere comer do lado de fora, numa varanda, ou dentro, onde é aconchegante e tranquilo?",
+     "c": "Imagine que chega a um restaurante com amigos e peça uma mesa em dois idiomas."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading the menu",
+     "g": "Learn common menu words for starters, mains, desserts and drinks.",
+     "p": [
+      "Spanish: «entrantes» = starters, «segundo plato» = main, «postre» (POS-treh) = dessert, «bebidas» = drinks. Look for the «menú del día».",
+      "French: «entrée» = starter (not the main course!), «plat» (pla) = main, «dessert», «boissons» (bwa-SON) = drinks.",
+      "Italian: «antipasti» = starters, «primi» = pasta or rice, «secondi» = meat or fish, «dolci» (DOL-chee) = desserts, «bevande» = drinks."
+     ],
+     "q": "Which part of the menu do you always read first: the starters, the mains or the desserts?",
+     "c": "Find a menu online from a restaurant abroad and spot one word for each section."
+    },
+    "de": {
+     "t": "Die Speisekarte lesen",
+     "g": "Lerne gängige Wörter für Vorspeisen, Hauptgerichte, Desserts und Getränke.",
+     "p": [
+      "Spanisch: «entrantes» = Vorspeisen, «segundo plato» = Hauptgericht, «postre» = Dessert, «bebidas» = Getränke. Tipp: «menú del día».",
+      "Französisch: «entrée» = Vorspeise (nicht Hauptgang!), «plat» (pla) = Hauptgericht, «dessert», «boissons» (bua-SSON) = Getränke.",
+      "Italienisch: «antipasti» = Vorspeisen, «primi» = Pasta oder Reis, «secondi» = Fleisch oder Fisch, «dolci» = Desserts, «bevande» = Getränke."
+     ],
+     "q": "Welchen Teil der Speisekarte liest du immer zuerst: Vorspeisen, Hauptgerichte oder Desserts?",
+     "c": "Such online die Speisekarte eines Restaurants im Ausland und finde ein Wort für jeden Abschnitt."
+    },
+    "es": {
+     "t": "Leer la carta",
+     "g": "Aprende palabras habituales de la carta para entrantes, principales, postres y bebidas.",
+     "p": [
+      "Inglés: «starters» = entrantes, «mains» = principales, «desserts» = postres, «drinks» = bebidas. En EE. UU., «entrée» es el plato principal.",
+      "Francés: «entrée» = entrante (¡no el principal!), «plat» (pla) = principal, «dessert» = postre, «boissons» (bua-SON) = bebidas.",
+      "Italiano: «antipasti» = entrantes, «primi» = pasta o arroz, «secondi» = carne o pescado, «dolci» (DOL-chi) = postres, «bevande» = bebidas."
+     ],
+     "q": "¿Qué parte de la carta lees siempre primero: los entrantes, los principales o los postres?",
+     "c": "Busca en internet la carta de un restaurante extranjero y encuentra una palabra de cada sección."
+    },
+    "fr": {
+     "t": "Lire le menu",
+     "g": "Apprendre les mots courants du menu pour les entrées, plats, desserts et boissons.",
+     "p": [
+      "Espagnol : «entrantes» = entrées, «segundo plato» = plat, «postre» (POSS-tré) = dessert, «bebidas» = boissons. Cherche le «menú del día».",
+      "Anglais : «starters» = entrées, «mains» = plats, «desserts», «drinks» = boissons. Attention : aux États-Unis, «entrée» = plat principal.",
+      "Italien : «antipasti» = entrées, «primi» = pâtes ou riz, «secondi» = viande ou poisson, «dolci» (DOL-tchi) = desserts, «bevande» = boissons."
+     ],
+     "q": "Quelle partie du menu lis-tu toujours en premier : les entrées, les plats ou les desserts ?",
+     "c": "Trouve en ligne le menu d'un restaurant à l'étranger et repère un mot pour chaque rubrique."
+    },
+    "it": {
+     "t": "Leggere il menù",
+     "g": "Imparare le parole comuni del menù per antipasti, piatti principali, dolci e bevande.",
+     "p": [
+      "Spagnolo: «entrantes» = antipasti, «segundo plato» = secondo, «postre» (POS-tre) = dolce, «bebidas» = bevande. Cerca il «menú del día».",
+      "Francese: «entrée» = antipasto (non il piatto principale!), «plat» (pla) = secondo, «dessert» = dolce, «boissons» (bua-SON) = bevande.",
+      "Inglese: «starters» = antipasti, «mains» = piatti principali, «desserts» = dolci, «drinks» = bevande. Negli USA «entrée» è il secondo."
+     ],
+     "q": "Quale parte del menù leggi sempre per prima: gli antipasti, i piatti principali o i dolci?",
+     "c": "Trova online il menù di un ristorante all'estero e individua una parola per ogni sezione."
+    },
+    "pt": {
+     "t": "Ler a ementa",
+     "g": "Aprender palavras comuns da ementa para entradas, pratos principais, sobremesas e bebidas.",
+     "p": [
+      "Espanhol: «entrantes» = entradas, «segundo plato» = prato principal, «postre» (PÔS-tre) = sobremesa, «bebidas». Procura o «menú del día».",
+      "Francês: «entrée» = entrada (não o prato principal!), «plat» (plá) = prato principal, «dessert» = sobremesa, «boissons» (buá-SSÕ) = bebidas.",
+      "Italiano: «antipasti» = entradas, «primi» = massa ou arroz, «secondi» = carne ou peixe, «dolci» = sobremesas, «bevande» = bebidas."
+     ],
+     "q": "Que parte da ementa lês sempre primeiro: as entradas, os pratos principais ou as sobremesas?",
+     "c": "Procura online a ementa de um restaurante no estrangeiro e encontra uma palavra de cada secção."
+    },
+    "pt_BR": {
+     "t": "Ler o cardápio",
+     "g": "Aprender palavras comuns do cardápio para entradas, pratos principais, sobremesas e bebidas.",
+     "p": [
+      "Espanhol: «entrantes» = entradas, «segundo plato» = prato principal, «postre» (PÔS-tre) = sobremesa, «bebidas». Procure o «menú del día».",
+      "Francês: «entrée» = entrada (não o prato principal!), «plat» (plá) = prato principal, «dessert» = sobremesa, «boissons» (buá-SSÕ) = bebidas.",
+      "Italiano: «antipasti» = entradas, «primi» = massa ou arroz, «secondi» = carne ou peixe, «dolci» = sobremesas, «bevande» = bebidas."
+     ],
+     "q": "Que parte do cardápio você sempre lê primeiro: as entradas, os pratos principais ou as sobremesas?",
+     "c": "Procure na internet o cardápio de um restaurante no exterior e encontre uma palavra de cada seção."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ordering food",
+     "g": "Use simple patterns to order what you want, one dish at a time.",
+     "p": [
+      "Spanish: «Para mí, la paella, por favor» (PA-ra MEE) = for me, the paella. Or «Quisiera...» (kee-SYEH-ra) = I would like...",
+      "French: «Je vais prendre le poulet» (zhuh vay PRAHNDR luh poo-LEH) = I will have the chicken. Italian: «Vorrei la pasta» (vor-RAY).",
+      "Call the waiter with «¡Disculpe!» or a raised hand and eye contact, never by snapping fingers. Then «Y de postre...» for dessert."
+     ],
+     "q": "What dish would you order first on a trip to Spain, France or Italy?",
+     "c": "Order an imaginary three-course meal out loud, one dish at a time, in one language."
+    },
+    "de": {
+     "t": "Essen bestellen",
+     "g": "Nutze einfache Muster, um Gericht für Gericht zu bestellen, was du möchtest.",
+     "p": [
+      "Spanisch: «Para mí, la paella, por favor» (PA-ra MI) = Für mich die Paella. Oder «Quisiera...» (ki-SSJE-ra) = Ich hätte gern...",
+      "Französisch: «Je vais prendre le poulet» (schö wä PRANDR lö pu-LÄ) = Ich nehme das Hähnchen. Italienisch: «Vorrei la pasta» (wor-REI).",
+      "Ruf den Kellner mit «¡Disculpe!» oder erhobener Hand und Blickkontakt, nie mit Fingerschnippen. Dann «Y de postre...» fürs Dessert."
+     ],
+     "q": "Welches Gericht würdest du auf einer Reise nach Spanien, Frankreich oder Italien als Erstes bestellen?",
+     "c": "Bestell laut ein erfundenes Drei-Gänge-Menü, Gericht für Gericht, in einer Sprache."
+    },
+    "es": {
+     "t": "Pedir la comida",
+     "g": "Usa patrones sencillos para pedir lo que quieres, plato a plato.",
+     "p": [
+      "Inglés: «I'll have the fish, please» (ail jav de FISH) = para mí, el pescado. O «I'd like...» (aid LAIK) = quisiera...",
+      "Francés: «Je vais prendre le poulet» (yə ve PRANDR le pu-LÉ) = tomaré el pollo. Italiano: «Vorrei la pasta» (vo-RREI).",
+      "Llama al camarero con «Excuse me!» o con la mano levantada y contacto visual, nunca chasqueando los dedos. Luego pide el postre."
+     ],
+     "q": "¿Qué plato pedirías primero en un viaje a Inglaterra, Francia o Italia?",
+     "c": "Pide en voz alta una comida imaginaria de tres platos, uno a uno, en un idioma."
+    },
+    "fr": {
+     "t": "Commander à manger",
+     "g": "Utiliser des tournures simples pour commander ce que tu veux, un plat à la fois.",
+     "p": [
+      "Espagnol : «Para mí, la paella, por favor» (PA-ra MI) = pour moi, la paella. Ou «Quisiera...» (ki-SSIÉ-ra) = je voudrais...",
+      "Anglais : «I'll have the fish, please» (aïl hav ze FICH) = je prends le poisson. Italien : «Vorrei la pasta» (vor-RÈÏ).",
+      "Appelle le serveur avec «¡Disculpe!» ou la main levée et un regard, jamais en claquant des doigts. Puis «Y de postre...» pour le dessert."
+     ],
+     "q": "Quel plat commanderais-tu en premier lors d'un voyage en Espagne, en Angleterre ou en Italie ?",
+     "c": "Commande à voix haute un repas imaginaire en trois plats, un par un, dans une langue."
+    },
+    "it": {
+     "t": "Ordinare da mangiare",
+     "g": "Usare schemi semplici per ordinare ciò che vuoi, un piatto alla volta.",
+     "p": [
+      "Spagnolo: «Para mí, la paella, por favor» (PA-ra MI) = per me la paella. Oppure «Quisiera...» (ki-SIE-ra) = vorrei...",
+      "Francese: «Je vais prendre le poulet» (jə vè PRANDR lö pu-LÈ) = prendo il pollo. Inglese: «I'll have the fish» = prendo il pesce.",
+      "Chiama il cameriere con «¡Disculpe!» o con la mano alzata e uno sguardo, mai schioccando le dita. Poi «Y de postre...» per il dolce."
+     ],
+     "q": "Quale piatto ordineresti per primo in un viaggio in Spagna, Francia o Inghilterra?",
+     "c": "Ordina ad alta voce un pasto immaginario di tre portate, una alla volta, in una lingua."
+    },
+    "pt": {
+     "t": "Pedir a comida",
+     "g": "Usar padrões simples para pedir o que queres, um prato de cada vez.",
+     "p": [
+      "Espanhol: «Para mí, la paella, por favor» (PA-ra MI) = para mim, a paella. Ou «Quisiera...» (ki-SSIÉ-ra) = queria...",
+      "Francês: «Je vais prendre le poulet» (je vé PRÃDR le pu-LÉ) = vou querer o frango. Italiano: «Vorrei la pasta» (vor-RÊI) = queria a massa.",
+      "Chama o empregado com «¡Disculpe!» ou com a mão levantada e um olhar, nunca a estalar os dedos. Depois «Y de postre...» para a sobremesa."
+     ],
+     "q": "Que prato pedirias primeiro numa viagem a Espanha, França ou Itália?",
+     "c": "Pede em voz alta uma refeição imaginária de três pratos, um de cada vez, numa língua."
+    },
+    "pt_BR": {
+     "t": "Pedir a comida",
+     "g": "Usar padrões simples para pedir o que você quer, um prato de cada vez.",
+     "p": [
+      "Espanhol: «Para mí, la paella, por favor» (PA-ra MI) = para mim, a paella. Ou «Quisiera...» (ki-SSIÉ-ra) = eu queria...",
+      "Francês: «Je vais prendre le poulet» (je vé PRÃDR le pu-LÉ) = vou querer o frango. Italiano: «Vorrei la pasta» (vor-RÊI) = queria a massa.",
+      "Chame o garçom com «¡Disculpe!» ou com a mão levantada e um olhar, nunca estalando os dedos. Depois «Y de postre...» para a sobremesa."
+     ],
+     "q": "Que prato você pediria primeiro numa viagem à Espanha, França ou Itália?",
+     "c": "Peça em voz alta uma refeição imaginária de três pratos, um de cada vez, num idioma."
+    }
+   }
+  }
+ ]
+}

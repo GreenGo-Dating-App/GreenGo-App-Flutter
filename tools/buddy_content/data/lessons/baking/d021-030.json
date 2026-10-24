@@ -1,0 +1,835 @@
+{
+ "topic": "baking",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Preparing tins properly",
+     "g": "Learn to grease, flour and line tins so your bakes release cleanly and keep their shape.",
+     "p": [
+      "Brush soft butter or oil into every corner, then dust with flour and tap out the excess.",
+      "For most cakes, a disc of baking paper on the base is the safest way to a clean release.",
+      "Delicate whisked sponges, like angel food cake, are baked in ungreased tins so the batter can climb."
+     ],
+     "q": "Has a cake ever stuck to the tin on you? How did you rescue it?",
+     "c": "Trace your round tin on baking paper, cut out the disc and line the base ready for your next cake."
+    },
+    "de": {
+     "t": "Backformen richtig vorbereiten",
+     "g": "Lerne, Formen zu fetten, zu mehlen und auszulegen, damit sich Gebäck sauber löst und in Form bleibt.",
+     "p": [
+      "Weiche Butter oder Öl in jede Ecke pinseln, dann mit Mehl bestäuben und den Überschuss abklopfen.",
+      "Bei den meisten Kuchen ist ein Kreis Backpapier am Boden der sicherste Weg zum sauberen Lösen.",
+      "Zarte Schaummassen wie Angel Food Cake backt man in ungefetteten Formen, damit der Teig hochklettern kann."
+     ],
+     "q": "Ist dir schon mal ein Kuchen in der Form kleben geblieben? Wie hast du ihn gerettet?",
+     "c": "Zeichne deine runde Form auf Backpapier nach, schneide den Kreis aus und lege den Boden für den nächsten Kuchen aus."
+    },
+    "es": {
+     "t": "Preparar bien los moldes",
+     "g": "Aprende a engrasar, enharinar y forrar moldes para que todo se desmolde limpio y mantenga la forma.",
+     "p": [
+      "Pincela mantequilla blanda o aceite en cada rincón, espolvorea harina y sacude el exceso.",
+      "En la mayoría de bizcochos, un círculo de papel en la base es la forma más segura de desmoldar bien.",
+      "Los bizcochos batidos muy delicados, como el angel food cake, van en molde sin engrasar para poder trepar."
+     ],
+     "q": "¿Alguna vez se te pegó un bizcocho al molde? ¿Cómo lo salvaste?",
+     "c": "Dibuja tu molde redondo sobre papel de horno, recorta el círculo y forra la base para tu próximo bizcocho."
+    },
+    "fr": {
+     "t": "Bien préparer ses moules",
+     "g": "Apprends à beurrer, fariner et chemiser tes moules pour un démoulage net et une forme parfaite.",
+     "p": [
+      "Badigeonne beurre mou ou huile dans chaque recoin, saupoudre de farine et tapote pour retirer l'excès.",
+      "Pour la plupart des gâteaux, un disque de papier cuisson au fond est le plus sûr pour bien démouler.",
+      "Les biscuits très délicats, comme l'angel food cake, cuisent dans un moule non graissé pour s'y accrocher."
+     ],
+     "q": "Un gâteau t'est-il déjà resté collé au moule ? Comment l'as-tu sauvé ?",
+     "c": "Trace ton moule rond sur du papier cuisson, découpe le disque et chemise le fond pour ton prochain gâteau."
+    },
+    "it": {
+     "t": "Preparare bene gli stampi",
+     "g": "Impara a imburrare, infarinare e foderare gli stampi perché i dolci si stacchino puliti e restino in forma.",
+     "p": [
+      "Spennella burro morbido o olio in ogni angolo, poi spolvera di farina e batti via l'eccesso.",
+      "Per quasi tutte le torte, un disco di carta forno sul fondo è il modo più sicuro per sformarle bene.",
+      "I dolci montati delicati, come l'angel food cake, si cuociono in stampi non unti per poter salire."
+     ],
+     "q": "Ti è mai rimasta attaccata una torta allo stampo? Come l'hai salvata?",
+     "c": "Disegna lo stampo tondo sulla carta forno, ritaglia il disco e fodera il fondo per la prossima torta."
+    },
+    "pt": {
+     "t": "Preparar bem as formas",
+     "g": "Aprende a untar, polvilhar e forrar formas para os bolos saírem inteiros e manterem a forma.",
+     "p": [
+      "Pincela manteiga mole ou óleo em todos os cantos, polvilha com farinha e sacode o excesso.",
+      "Na maioria dos bolos, um disco de papel vegetal no fundo é a forma mais segura de desenformar bem.",
+      "Bolos batidos muito delicados, como o angel food cake, vão em formas sem untar para poderem subir."
+     ],
+     "q": "Já te ficou algum bolo agarrado à forma? Como o salvaste?",
+     "c": "Desenha a tua forma redonda em papel vegetal, recorta o disco e forra o fundo para o próximo bolo."
+    },
+    "pt_BR": {
+     "t": "Preparando bem as formas",
+     "g": "Aprenda a untar, enfarinhar e forrar formas para os bolos desenformarem inteiros e manterem o formato.",
+     "p": [
+      "Passe manteiga macia ou óleo em todos os cantos, polvilhe farinha e bata para tirar o excesso.",
+      "Na maioria dos bolos, um disco de papel-manteiga no fundo é o jeito mais seguro de desenformar bem.",
+      "Bolos batidos bem delicados, como o angel food cake, vão em forma sem untar para a massa conseguir subir."
+     ],
+     "q": "Algum bolo já grudou na forma? Como você salvou?",
+     "c": "Desenhe sua forma redonda no papel-manteiga, recorte o disco e forre o fundo para o próximo bolo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The simple sponge cake",
+     "g": "Bake a light sponge by whisking eggs and sugar to the ribbon stage and folding in flour gently.",
+     "p": [
+      "Whisk eggs and sugar until pale, thick and tripled, so a trail of batter sits on the surface for a few seconds.",
+      "Sift the flour over and fold it in with a spatula in slow figure-of-eight strokes to keep the air.",
+      "Bake straight away in a preheated oven and keep the door closed for the first two thirds of the time."
+     ],
+     "q": "Have you ever eaten a sponge so light it felt like a cloud? Where was it?",
+     "c": "Whisk two eggs with 60 g of sugar until you reach the ribbon stage, and time how long it takes."
+    },
+    "de": {
+     "t": "Der einfache Biskuit",
+     "g": "Back einen lockeren Biskuit: Eier und Zucker bis zur Bandprobe schlagen und das Mehl sanft unterheben.",
+     "p": [
+      "Eier und Zucker schlagen, bis die Masse hell, dick und dreifach ist und ein Teigband kurz auf der Oberfläche liegt.",
+      "Mehl darübersieben und mit dem Spatel in langsamen Achterbewegungen unterheben, um die Luft zu halten.",
+      "Sofort in den vorgeheizten Ofen geben und die Tür in den ersten zwei Dritteln der Zeit geschlossen lassen."
+     ],
+     "q": "Hast du schon mal einen Biskuit gegessen, der so leicht war wie eine Wolke? Wo war das?",
+     "c": "Schlag zwei Eier mit 60 g Zucker bis zur Bandprobe und miss, wie lange es dauert."
+    },
+    "es": {
+     "t": "El bizcocho sencillo",
+     "g": "Hornea un bizcocho ligero batiendo huevos y azúcar hasta punto de cinta e incorporando la harina con suavidad.",
+     "p": [
+      "Bate huevos y azúcar hasta que blanqueen, espesen y tripliquen, y un hilo de masa quede unos segundos encima.",
+      "Tamiza la harina encima e incorpórala con espátula en movimientos lentos y envolventes para no perder aire.",
+      "Hornea enseguida en horno precalentado y no abras la puerta durante los primeros dos tercios del tiempo."
+     ],
+     "q": "¿Has probado alguna vez un bizcocho tan ligero que parecía una nube? ¿Dónde fue?",
+     "c": "Bate dos huevos con 60 g de azúcar hasta el punto de cinta y cronometra cuánto tardas."
+    },
+    "fr": {
+     "t": "La génoise simple",
+     "g": "Réussis une génoise légère en fouettant œufs et sucre jusqu'au ruban et en incorporant la farine délicatement.",
+     "p": [
+      "Fouette œufs et sucre jusqu'à ce qu'ils blanchissent, épaississent et triplent, et que le ruban tienne en surface.",
+      "Tamise la farine dessus et incorpore-la à la maryse en mouvements lents et enveloppants pour garder l'air.",
+      "Enfourne aussitôt dans un four préchauffé et garde la porte fermée pendant les deux premiers tiers de la cuisson."
+     ],
+     "q": "As-tu déjà mangé un gâteau si léger qu'on aurait dit un nuage ? C'était où ?",
+     "c": "Fouette deux œufs avec 60 g de sucre jusqu'au ruban et chronomètre le temps nécessaire."
+    },
+    "it": {
+     "t": "Il pan di Spagna semplice",
+     "g": "Prepara un pan di Spagna leggero montando uova e zucchero a nastro e incorporando la farina con delicatezza.",
+     "p": [
+      "Monta uova e zucchero finché sono chiari, densi e triplicati, e un filo di impasto resta in superficie qualche secondo.",
+      "Setaccia la farina sopra e incorporala con la spatola dal basso verso l'alto, lentamente, per non smontare.",
+      "Inforna subito in forno caldo e non aprire lo sportello per i primi due terzi della cottura."
+     ],
+     "q": "Hai mai mangiato un pan di Spagna così leggero da sembrare una nuvola? Dov'era?",
+     "c": "Monta due uova con 60 g di zucchero fino al nastro e cronometra quanto tempo ci vuole."
+    },
+    "pt": {
+     "t": "O pão de ló simples",
+     "g": "Faz um pão de ló leve batendo ovos e açúcar até ao ponto de fita e envolvendo a farinha com cuidado.",
+     "p": [
+      "Bate ovos e açúcar até ficarem claros, espessos e triplicarem, e um fio de massa fique uns segundos à superfície.",
+      "Peneira a farinha por cima e envolve com uma espátula em movimentos lentos, de baixo para cima, para manter o ar.",
+      "Leva logo ao forno pré-aquecido e não abras a porta nos primeiros dois terços do tempo."
+     ],
+     "q": "Já comeste um pão de ló tão leve que parecia uma nuvem? Onde foi?",
+     "c": "Bate dois ovos com 60 g de açúcar até ao ponto de fita e cronometra quanto tempo demora."
+    },
+    "pt_BR": {
+     "t": "O pão de ló simples",
+     "g": "Asse um pão de ló leve batendo ovos e açúcar até o ponto de fita e incorporando a farinha com cuidado.",
+     "p": [
+      "Bata ovos e açúcar até clarear, engrossar e triplicar, e um fio de massa ficar alguns segundos na superfície.",
+      "Peneire a farinha por cima e incorpore com espátula em movimentos lentos, de baixo para cima, para manter o ar.",
+      "Leve logo ao forno preaquecido e não abra a porta nos primeiros dois terços do tempo."
+     ],
+     "q": "Você já comeu um pão de ló tão leve que parecia uma nuvem? Onde foi?",
+     "c": "Bata dois ovos com 60 g de açúcar até o ponto de fita e cronometre quanto tempo leva."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Victoria sponge",
+     "g": "Bake a Victoria sponge, the British classic: two creamed butter cakes filled with jam and cream.",
+     "p": [
+      "The traditional recipe uses equal weights of butter, sugar, eggs and self-raising flour.",
+      "Cream well, add eggs gradually, then fold in the flour and divide the batter evenly between two tins.",
+      "Fill only when fully cool, or the cream will melt; finish with a light dusting of caster sugar."
+     ],
+     "q": "What is your favourite combination of jam and cream, or another filling you would try?",
+     "c": "Weigh two eggs in their shells and use that same weight of butter, sugar and flour for a mini Victoria sponge."
+    },
+    "de": {
+     "t": "Victoria Sponge",
+     "g": "Back die britische Klassikerin: zwei Rührkuchenböden, gefüllt mit Marmelade und Sahne.",
+     "p": [
+      "Das traditionelle Rezept nimmt gleiche Gewichte an Butter, Zucker, Eiern und Mehl mit Backpulver.",
+      "Gut schaumig rühren, Eier nach und nach zugeben, Mehl unterheben und den Teig gleichmäßig auf zwei Formen verteilen.",
+      "Erst ganz abgekühlt füllen, sonst schmilzt die Sahne; zum Schluss leicht mit feinem Zucker bestäuben."
+     ],
+     "q": "Welche Kombination aus Marmelade und Sahne magst du am liebsten, oder welche Füllung würdest du probieren?",
+     "c": "Wiege zwei Eier mit Schale und nimm dasselbe Gewicht an Butter, Zucker und Mehl für eine Mini-Victoria-Sponge."
+    },
+    "es": {
+     "t": "Victoria sponge",
+     "g": "Hornea la Victoria sponge, clásico británico: dos bizcochos de mantequilla rellenos de mermelada y nata.",
+     "p": [
+      "La receta tradicional usa el mismo peso de mantequilla, azúcar, huevos y harina con levadura.",
+      "Crema bien, añade los huevos poco a poco, incorpora la harina y reparte la masa por igual en dos moldes.",
+      "Rellena solo cuando esté totalmente frío o la nata se derretirá; termina con un poco de azúcar glas por encima."
+     ],
+     "q": "¿Cuál es tu combinación favorita de mermelada y nata, u otro relleno que probarías?",
+     "c": "Pesa dos huevos con cáscara y usa ese mismo peso de mantequilla, azúcar y harina para una mini Victoria sponge."
+    },
+    "fr": {
+     "t": "Le Victoria sponge",
+     "g": "Réalise le Victoria sponge, classique britannique : deux gâteaux au beurre garnis de confiture et de crème.",
+     "p": [
+      "La recette traditionnelle utilise le même poids de beurre, de sucre, d'œufs et de farine avec levure.",
+      "Crème bien, ajoute les œufs peu à peu, incorpore la farine et répartis la pâte également dans deux moules.",
+      "Garnis seulement une fois bien refroidi, sinon la crème fond ; finis avec un voile de sucre semoule."
+     ],
+     "q": "Quelle est ta combinaison préférée de confiture et de crème, ou quelle garniture essaierais-tu ?",
+     "c": "Pèse deux œufs avec leur coquille et prends le même poids de beurre, sucre et farine pour un mini Victoria sponge."
+    },
+    "it": {
+     "t": "Victoria sponge",
+     "g": "Prepara la Victoria sponge, classico britannico: due torte al burro farcite con marmellata e panna.",
+     "p": [
+      "La ricetta tradizionale usa lo stesso peso di burro, zucchero, uova e farina con lievito.",
+      "Monta bene a crema, aggiungi le uova poco alla volta, incorpora la farina e dividi l'impasto in due stampi.",
+      "Farcisci solo quando è del tutto fredda, o la panna si scioglie; finisci con una spolverata di zucchero semolato."
+     ],
+     "q": "Qual è la tua combinazione preferita di marmellata e panna, o quale altro ripieno proveresti?",
+     "c": "Pesa due uova col guscio e usa lo stesso peso di burro, zucchero e farina per una mini Victoria sponge."
+    },
+    "pt": {
+     "t": "Victoria sponge",
+     "g": "Faz o Victoria sponge, clássico britânico: dois bolos de manteiga recheados com doce e natas.",
+     "p": [
+      "A receita tradicional usa o mesmo peso de manteiga, açúcar, ovos e farinha com fermento.",
+      "Bate bem em creme, junta os ovos aos poucos, envolve a farinha e divide a massa por igual em duas formas.",
+      "Recheia só quando estiver totalmente frio, senão as natas derretem; termina com um pouco de açúcar por cima."
+     ],
+     "q": "Qual é a tua combinação preferida de doce e natas, ou que outro recheio experimentarias?",
+     "c": "Pesa dois ovos com casca e usa esse mesmo peso de manteiga, açúcar e farinha para um mini Victoria sponge."
+    },
+    "pt_BR": {
+     "t": "Victoria sponge",
+     "g": "Asse o Victoria sponge, clássico britânico: dois bolos amanteigados recheados com geleia e chantilly.",
+     "p": [
+      "A receita tradicional usa o mesmo peso de manteiga, açúcar, ovos e farinha com fermento.",
+      "Bata bem em creme, junte os ovos aos poucos, incorpore a farinha e divida a massa igualmente em duas formas.",
+      "Recheie só quando estiver totalmente frio, senão o chantilly derrete; finalize com um pouco de açúcar por cima."
+     ],
+     "q": "Qual é sua combinação favorita de geleia e creme, ou que outro recheio você testaria?",
+     "c": "Pese dois ovos com casca e use o mesmo peso de manteiga, açúcar e farinha para um mini Victoria sponge."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling and unmoulding cakes",
+     "g": "Learn when and how to turn a cake out so it stays whole, level and never soggy.",
+     "p": [
+      "Most butter cakes rest in the tin for about 10 minutes, so they firm up enough to handle.",
+      "Run a thin knife around the edge, turn out onto a wire rack and peel off the paper; air must circulate underneath.",
+      "Leaving a cake in the tin too long traps steam and makes the base damp; always use dry oven gloves for hot tins."
+     ],
+     "q": "Do you have the patience to let a cake cool, or do you always taste it warm?",
+     "c": "After your next cake, set a timer for 10 minutes before turning it out onto a rack."
+    },
+    "de": {
+     "t": "Kuchen abkühlen und stürzen",
+     "g": "Lerne, wann und wie du einen Kuchen stürzt, damit er ganz, eben und nie matschig bleibt.",
+     "p": [
+      "Die meisten Rührkuchen ruhen etwa 10 Minuten in der Form, damit sie fest genug zum Anfassen sind.",
+      "Mit einem dünnen Messer am Rand entlangfahren, auf ein Kuchengitter stürzen, Papier abziehen: Luft muss darunter zirkulieren.",
+      "Zu lange in der Form staut sich Dampf und der Boden wird feucht; heiße Formen nur mit trockenen Handschuhen anfassen."
+     ],
+     "q": "Hast du die Geduld, einen Kuchen abkühlen zu lassen, oder probierst du immer warm?",
+     "c": "Stell nach deinem nächsten Kuchen einen Timer auf 10 Minuten, bevor du ihn auf ein Gitter stürzt."
+    },
+    "es": {
+     "t": "Enfriar y desmoldar bizcochos",
+     "g": "Aprende cuándo y cómo desmoldar para que el bizcocho quede entero, plano y nunca húmedo.",
+     "p": [
+      "La mayoría de bizcochos de mantequilla reposan unos 10 minutos en el molde para poder manipularlos.",
+      "Pasa un cuchillo fino por el borde, vuelca sobre una rejilla y retira el papel: el aire debe circular por debajo.",
+      "Dejarlo demasiado en el molde atrapa vapor y humedece la base; usa siempre manoplas secas con moldes calientes."
+     ],
+     "q": "¿Tienes paciencia para dejar enfriar un bizcocho, o siempre lo pruebas caliente?",
+     "c": "Tras tu próximo bizcocho, pon un temporizador de 10 minutos antes de desmoldarlo sobre una rejilla."
+    },
+    "fr": {
+     "t": "Refroidir et démouler un gâteau",
+     "g": "Apprends quand et comment démouler pour que ton gâteau reste entier, plat et jamais détrempé.",
+     "p": [
+      "La plupart des gâteaux au beurre reposent environ 10 minutes dans le moule pour se raffermir.",
+      "Passe une lame fine sur le bord, retourne sur une grille et retire le papier : l'air doit circuler dessous.",
+      "Trop longtemps dans le moule, la vapeur humidifie la base ; manipule toujours les moules chauds avec des maniques sèches."
+     ],
+     "q": "As-tu la patience de laisser refroidir un gâteau, ou le goûtes-tu toujours tiède ?",
+     "c": "Après ton prochain gâteau, mets un minuteur de 10 minutes avant de le démouler sur une grille."
+    },
+    "it": {
+     "t": "Raffreddare e sformare le torte",
+     "g": "Impara quando e come sformare una torta perché resti intera, piatta e mai umida.",
+     "p": [
+      "La maggior parte delle torte al burro riposa circa 10 minuti nello stampo per rassodarsi.",
+      "Passa un coltello sottile lungo il bordo, capovolgi su una gratella e togli la carta: l'aria deve circolare sotto.",
+      "Lasciarla troppo nello stampo trattiene vapore e inumidisce la base; tocca gli stampi caldi solo con presine asciutte."
+     ],
+     "q": "Hai la pazienza di far raffreddare una torta, o l'assaggi sempre tiepida?",
+     "c": "Dopo la prossima torta, imposta un timer di 10 minuti prima di sformarla sulla gratella."
+    },
+    "pt": {
+     "t": "Arrefecer e desenformar bolos",
+     "g": "Aprende quando e como desenformar para o bolo ficar inteiro, direito e nunca encharcado.",
+     "p": [
+      "A maioria dos bolos de manteiga repousa uns 10 minutos na forma para firmar.",
+      "Passa uma faca fina à volta, vira sobre uma grelha e retira o papel: o ar tem de circular por baixo.",
+      "Deixá-lo demasiado na forma prende vapor e humedece a base; pega sempre em formas quentes com luvas secas."
+     ],
+     "q": "Tens paciência para deixar o bolo arrefecer, ou provas sempre ainda morno?",
+     "c": "Depois do próximo bolo, põe um temporizador de 10 minutos antes de o desenformar para a grelha."
+    },
+    "pt_BR": {
+     "t": "Esfriando e desenformando bolos",
+     "g": "Aprenda quando e como desenformar para o bolo ficar inteiro, reto e nunca encharcado.",
+     "p": [
+      "A maioria dos bolos amanteigados descansa uns 10 minutos na forma para firmar.",
+      "Passe uma faca fina pela borda, vire sobre uma grade e tire o papel: o ar precisa circular por baixo.",
+      "Deixar demais na forma prende vapor e umedece a base; pegue formas quentes sempre com luvas secas."
+     ],
+     "q": "Você tem paciência para esperar o bolo esfriar, ou sempre prova ainda morno?",
+     "c": "Depois do próximo bolo, coloque um timer de 10 minutos antes de desenformar na grade."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic buttercream",
+     "g": "Whip a smooth, spreadable buttercream from butter, icing sugar and simple flavourings.",
+     "p": [
+      "Beat soft butter alone until pale, then add sifted icing sugar gradually, roughly twice the butter's weight.",
+      "A splash of milk loosens it, a pinch of salt balances the sweetness, and vanilla adds warmth.",
+      "Too runny? Chill it briefly. Too stiff? Beat in a little milk. Always frost a completely cool cake."
+     ],
+     "q": "Which buttercream flavour would you make first: vanilla, chocolate, lemon or something unusual?",
+     "c": "Whip 50 g butter with 100 g icing sugar and a drop of vanilla, and taste it with and without a pinch of salt."
+    },
+    "de": {
+     "t": "Einfache Buttercreme",
+     "g": "Schlag eine glatte, streichfähige Buttercreme aus Butter, Puderzucker und einfachen Aromen auf.",
+     "p": [
+      "Weiche Butter allein hell schlagen, dann gesiebten Puderzucker nach und nach zugeben, etwa doppelt so viel wie Butter.",
+      "Ein Schuss Milch lockert sie, eine Prise Salz gleicht die Süße aus, Vanille gibt Wärme.",
+      "Zu weich? Kurz kühlen. Zu fest? Etwas Milch einschlagen. Immer nur vollständig abgekühlte Kuchen einstreichen."
+     ],
+     "q": "Welche Buttercreme würdest du zuerst machen: Vanille, Schokolade, Zitrone oder etwas Ausgefallenes?",
+     "c": "Schlag 50 g Butter mit 100 g Puderzucker und einem Tropfen Vanille auf und probiere mit und ohne Prise Salz."
+    },
+    "es": {
+     "t": "Buttercream básica",
+     "g": "Bate una crema de mantequilla lisa y fácil de untar con mantequilla, azúcar glas y aromas sencillos.",
+     "p": [
+      "Bate la mantequilla blanda sola hasta que blanquee y añade azúcar glas tamizado poco a poco, el doble de su peso.",
+      "Un chorrito de leche la afloja, una pizca de sal equilibra el dulzor y la vainilla aporta calidez.",
+      "¿Muy blanda? Enfríala un rato. ¿Muy firme? Añade un poco de leche. Cubre siempre un bizcocho totalmente frío."
+     ],
+     "q": "¿Qué sabor de buttercream harías primero: vainilla, chocolate, limón o algo original?",
+     "c": "Bate 50 g de mantequilla con 100 g de azúcar glas y una gota de vainilla, y pruébala con y sin pizca de sal."
+    },
+    "fr": {
+     "t": "La crème au beurre simple",
+     "g": "Fouette une crème au beurre lisse et facile à étaler avec beurre, sucre glace et arômes simples.",
+     "p": [
+      "Bats le beurre mou seul jusqu'à blanchir, puis ajoute le sucre glace tamisé peu à peu, environ deux fois son poids.",
+      "Un trait de lait l'assouplit, une pincée de sel équilibre le sucre et la vanille apporte de la rondeur.",
+      "Trop molle ? Mets-la au frais. Trop ferme ? Ajoute un peu de lait. Glace toujours un gâteau bien refroidi."
+     ],
+     "q": "Quel parfum de crème au beurre ferais-tu en premier : vanille, chocolat, citron ou plus original ?",
+     "c": "Fouette 50 g de beurre avec 100 g de sucre glace et une goutte de vanille, puis goûte avec et sans pincée de sel."
+    },
+    "it": {
+     "t": "Crema al burro base",
+     "g": "Monta una crema al burro liscia e spalmabile con burro, zucchero a velo e aromi semplici.",
+     "p": [
+      "Monta il burro morbido da solo finché schiarisce, poi aggiungi zucchero a velo setacciato, circa il doppio del suo peso.",
+      "Un goccio di latte la ammorbidisce, un pizzico di sale bilancia la dolcezza e la vaniglia dà calore.",
+      "Troppo molle? Mettila in frigo un attimo. Troppo dura? Aggiungi un po' di latte. Copri sempre torte ben fredde."
+     ],
+     "q": "Quale gusto di crema al burro faresti per primo: vaniglia, cioccolato, limone o qualcosa di insolito?",
+     "c": "Monta 50 g di burro con 100 g di zucchero a velo e una goccia di vaniglia, e assaggia con e senza un pizzico di sale."
+    },
+    "pt": {
+     "t": "Creme de manteiga básico",
+     "g": "Bate um creme de manteiga liso e fácil de espalhar com manteiga, açúcar em pó e aromas simples.",
+     "p": [
+      "Bate a manteiga mole sozinha até clarear e junta açúcar em pó peneirado aos poucos, cerca do dobro do seu peso.",
+      "Um pouco de leite solta-o, uma pitada de sal equilibra o doce e a baunilha dá calor.",
+      "Muito mole? Leva ao frio um pouco. Muito firme? Junta um pouco de leite. Cobre sempre um bolo totalmente frio."
+     ],
+     "q": "Que sabor de creme de manteiga farias primeiro: baunilha, chocolate, limão ou algo diferente?",
+     "c": "Bate 50 g de manteiga com 100 g de açúcar em pó e uma gota de baunilha, e prova com e sem uma pitada de sal."
+    },
+    "pt_BR": {
+     "t": "Buttercream básico",
+     "g": "Bata um buttercream liso e fácil de espalhar com manteiga, açúcar de confeiteiro e aromas simples.",
+     "p": [
+      "Bata a manteiga macia sozinha até clarear e junte o açúcar de confeiteiro peneirado aos poucos, cerca do dobro do peso.",
+      "Um pouco de leite deixa mais solto, uma pitada de sal equilibra o doce e a baunilha dá um toque aconchegante.",
+      "Mole demais? Leve à geladeira um pouco. Firme demais? Junte um pouco de leite. Cubra sempre bolo totalmente frio."
+     ],
+     "q": "Qual sabor de buttercream você faria primeiro: baunilha, chocolate, limão ou algo diferente?",
+     "c": "Bata 50 g de manteiga com 100 g de açúcar de confeiteiro e uma gota de baunilha, e prove com e sem pitada de sal."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crumb coating a cake",
+     "g": "Learn the crumb coat: a thin first layer of frosting that traps crumbs for a clean final finish.",
+     "p": [
+      "Level and brush off loose crumbs, then spread a very thin layer of buttercream over the top and sides.",
+      "It does not need to look pretty: its only job is to glue down crumbs and fill small gaps.",
+      "Chill the cake for 20 to 30 minutes until the coat is firm, then add the final, thicker layer."
+     ],
+     "q": "Do you prefer naked cakes with visible layers or smooth, fully covered ones?",
+     "c": "Crumb coat a small cake or even a few muffins, chill them, and see how much cleaner the final layer goes on."
+    },
+    "de": {
+     "t": "Einen Kuchen einstreichen",
+     "g": "Lerne die Krümelschicht kennen: eine dünne erste Schicht Creme, die Krümel bindet und ein sauberes Finish ermöglicht.",
+     "p": [
+      "Kuchen begradigen, lose Krümel abpinseln, dann eine sehr dünne Schicht Buttercreme auf Oberseite und Rand streichen.",
+      "Sie muss nicht schön aussehen: Sie soll nur Krümel festkleben und kleine Lücken füllen.",
+      "Den Kuchen 20 bis 30 Minuten kühlen, bis die Schicht fest ist, dann die dickere Endschicht auftragen."
+     ],
+     "q": "Magst du lieber Naked Cakes mit sichtbaren Schichten oder glatte, ganz überzogene Torten?",
+     "c": "Streiche einen kleinen Kuchen oder ein paar Muffins dünn ein, kühle sie und sieh, wie sauber die Endschicht wird."
+    },
+    "es": {
+     "t": "La capa de migas",
+     "g": "Aprende la capa de migas: una primera capa fina de crema que atrapa las migas para un acabado limpio.",
+     "p": [
+      "Nivela y retira las migas sueltas, luego extiende una capa muy fina de buttercream por arriba y los lados.",
+      "No tiene que quedar bonita: su única función es pegar las migas y rellenar pequeños huecos.",
+      "Enfría el pastel de 20 a 30 minutos hasta que la capa esté firme y luego aplica la capa final, más gruesa."
+     ],
+     "q": "¿Prefieres tartas desnudas con capas a la vista o lisas y totalmente cubiertas?",
+     "c": "Aplica la capa de migas a un pastel pequeño o a unos muffins, enfríalos y mira qué limpia queda la capa final."
+    },
+    "fr": {
+     "t": "Le masquage fin, ou crumb coat",
+     "g": "Découvre le crumb coat : une fine première couche de crème qui emprisonne les miettes pour une finition nette.",
+     "p": [
+      "Égalise le gâteau, retire les miettes, puis étale une très fine couche de crème au beurre sur le dessus et les côtés.",
+      "Elle n'a pas besoin d'être jolie : son seul rôle est de coller les miettes et combler les petits trous.",
+      "Mets le gâteau au frais 20 à 30 minutes jusqu'à ce que la couche soit ferme, puis applique la couche finale."
+     ],
+     "q": "Tu préfères les naked cakes aux couches visibles, ou les gâteaux lisses et entièrement couverts ?",
+     "c": "Fais un crumb coat sur un petit gâteau ou quelques muffins, mets au frais et vois à quel point la finition est nette."
+    },
+    "it": {
+     "t": "La prima copertura sulle briciole",
+     "g": "Impara la crumb coat: un primo strato sottile di crema che blocca le briciole per una finitura pulita.",
+     "p": [
+      "Livella la torta, togli le briciole e stendi uno strato molto sottile di crema al burro sopra e sui lati.",
+      "Non deve essere bello: serve solo a incollare le briciole e riempire piccoli buchi.",
+      "Metti la torta in frigo 20-30 minuti finché lo strato è sodo, poi aggiungi lo strato finale più spesso."
+     ],
+     "q": "Preferisci le naked cake con gli strati in vista o le torte lisce e del tutto coperte?",
+     "c": "Fai la crumb coat su una piccola torta o su qualche muffin, raffredda e guarda quanto è pulito lo strato finale."
+    },
+    "pt": {
+     "t": "A camada de migalhas",
+     "g": "Aprende a camada de migalhas: uma primeira camada fina de creme que prende as migalhas para um acabamento limpo.",
+     "p": [
+      "Nivela o bolo, tira as migalhas soltas e espalha uma camada muito fina de creme de manteiga no topo e nos lados.",
+      "Não precisa de ficar bonita: só serve para colar as migalhas e tapar pequenos buracos.",
+      "Leva o bolo ao frio 20 a 30 minutos até a camada firmar e depois aplica a camada final, mais grossa."
+     ],
+     "q": "Preferes bolos nus com as camadas à vista ou lisos e totalmente cobertos?",
+     "c": "Faz a camada de migalhas num bolo pequeno ou nuns muffins, leva ao frio e vê como a camada final fica limpa."
+    },
+    "pt_BR": {
+     "t": "Camada de migalhas no bolo",
+     "g": "Aprenda a camada de migalhas: uma primeira cobertura fina que prende as migalhas para um acabamento limpo.",
+     "p": [
+      "Nivele o bolo, tire as migalhas soltas e espalhe uma camada bem fina de buttercream no topo e nas laterais.",
+      "Ela não precisa ficar bonita: só serve para grudar as migalhas e tapar pequenos buracos.",
+      "Leve o bolo à geladeira de 20 a 30 minutos até firmar e depois aplique a camada final, mais grossa."
+     ],
+     "q": "Você prefere naked cakes com as camadas à mostra ou bolos lisos e totalmente cobertos?",
+     "c": "Faça a camada de migalhas em um bolo pequeno ou em alguns muffins, gele e veja como a camada final fica limpa."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scones made easy",
+     "g": "Bake tall, tender scones by rubbing fat into flour, handling the dough lightly and cutting straight down.",
+     "p": [
+      "Rub cold butter into self-raising flour until it looks like breadcrumbs, then add milk and mix briefly.",
+      "Pat the dough to about 3 cm thick instead of rolling, and handle it as little as possible.",
+      "Press the cutter straight down without twisting, so the sides stay open and the scones rise evenly."
+     ],
+     "q": "How would you eat a scone: with jam first, cream first, or just with butter?",
+     "c": "Bake four scones, cutting two with a twist and two straight down, and compare how tall they rise."
+    },
+    "de": {
+     "t": "Scones ganz einfach",
+     "g": "Back hohe, zarte Scones: Fett ins Mehl reiben, den Teig sanft behandeln und gerade ausstechen.",
+     "p": [
+      "Kalte Butter ins Mehl mit Backpulver reiben, bis es wie Semmelbrösel aussieht, dann Milch zugeben und kurz mischen.",
+      "Den Teig etwa 3 cm dick andrücken statt ausrollen und so wenig wie möglich anfassen.",
+      "Den Ausstecher gerade nach unten drücken, ohne zu drehen, damit die Ränder offen bleiben und die Scones gleichmäßig aufgehen."
+     ],
+     "q": "Wie würdest du einen Scone essen: zuerst Marmelade, zuerst Sahne oder einfach mit Butter?",
+     "c": "Back vier Scones, steche zwei mit Drehung und zwei gerade aus, und vergleiche, wie hoch sie aufgehen."
+    },
+    "es": {
+     "t": "Scones fáciles",
+     "g": "Hornea scones altos y tiernos arenando la grasa en la harina, tratando la masa con suavidad y cortando recto.",
+     "p": [
+      "Frota la mantequilla fría con la harina con levadura hasta que parezca pan rallado, añade leche y mezcla poco.",
+      "Aplana la masa a unos 3 cm con las manos en lugar de estirarla, y tócala lo menos posible.",
+      "Presiona el cortador recto hacia abajo sin girarlo, así los bordes quedan abiertos y suben parejos."
+     ],
+     "q": "¿Cómo comerías un scone: primero mermelada, primero nata o solo con mantequilla?",
+     "c": "Hornea cuatro scones, corta dos girando y dos rectos, y compara cuánto suben."
+    },
+    "fr": {
+     "t": "Les scones en toute simplicité",
+     "g": "Réussis des scones hauts et tendres en sablant le beurre, en manipulant peu la pâte et en coupant bien droit.",
+     "p": [
+      "Sable le beurre froid avec la farine à levure jusqu'à obtenir une chapelure, ajoute le lait et mélange brièvement.",
+      "Aplatis la pâte à la main sur 3 cm environ au lieu de l'étaler, et touche-la le moins possible.",
+      "Enfonce l'emporte-pièce bien droit sans tourner, pour que les bords restent ouverts et que les scones lèvent droit."
+     ],
+     "q": "Comment mangerais-tu un scone : confiture d'abord, crème d'abord, ou simplement avec du beurre ?",
+     "c": "Cuis quatre scones, coupes-en deux en tournant et deux bien droit, et compare leur hauteur."
+    },
+    "it": {
+     "t": "Scones facili",
+     "g": "Sforna scones alti e teneri sabbiando il burro nella farina, toccando poco l'impasto e tagliando dritto.",
+     "p": [
+      "Sabbia il burro freddo con la farina e il lievito finché sembra pangrattato, poi aggiungi il latte e mescola poco.",
+      "Schiaccia l'impasto con le mani a circa 3 cm invece di stenderlo, e toccalo il meno possibile.",
+      "Premi il coppapasta dritto verso il basso senza ruotarlo, così i bordi restano aperti e crescono in modo uniforme."
+     ],
+     "q": "Come mangeresti uno scone: prima marmellata, prima panna o solo con burro?",
+     "c": "Cuoci quattro scones, tagliane due ruotando e due dritti, e confronta quanto crescono."
+    },
+    "pt": {
+     "t": "Scones fáceis",
+     "g": "Faz scones altos e tenros esfarelando a gordura na farinha, mexendo pouco na massa e cortando a direito.",
+     "p": [
+      "Esfrega a manteiga fria na farinha com fermento até parecer pão ralado, junta o leite e mistura pouco.",
+      "Achata a massa à mão com cerca de 3 cm em vez de a estender, e mexe-lhe o menos possível.",
+      "Pressiona o cortador a direito, sem rodar, para as laterais ficarem abertas e os scones crescerem por igual."
+     ],
+     "q": "Como comerias um scone: primeiro doce, primeiro natas ou só com manteiga?",
+     "c": "Faz quatro scones, corta dois a rodar e dois a direito, e compara quanto crescem."
+    },
+    "pt_BR": {
+     "t": "Scones fáceis",
+     "g": "Asse scones altos e macios esfarelando a gordura na farinha, mexendo pouco na massa e cortando reto.",
+     "p": [
+      "Esfregue a manteiga gelada na farinha com fermento até parecer farofa, junte o leite e misture pouco.",
+      "Achate a massa com as mãos até uns 3 cm em vez de abrir com rolo, e mexa o mínimo possível.",
+      "Pressione o cortador reto para baixo, sem girar, para as laterais ficarem abertas e os scones crescerem por igual."
+     ],
+     "q": "Como você comeria um scone: primeiro geleia, primeiro creme ou só com manteiga?",
+     "c": "Asse quatro scones, corte dois girando e dois retos, e compare quanto eles crescem."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rubbing-in method",
+     "g": "Master rubbing cold fat into flour with your fingertips, the base of crumbles, scones and shortcrust.",
+     "p": [
+      "Use cold, cubed butter and lift the flour as you rub, letting it fall back into the bowl to stay cool and airy.",
+      "Work with fingertips only, since palms are warm; stop when the mix looks like fine breadcrumbs.",
+      "Small flakes of fat left in the flour melt in the oven and create steam pockets and a tender texture."
+     ],
+     "q": "Do you enjoy hands-on techniques, or do you prefer using a food processor?",
+     "c": "Rub 50 g cold butter into 100 g flour by hand and time how long it takes to reach breadcrumbs."
+    },
+    "de": {
+     "t": "Die Krümelmethode",
+     "g": "Lerne, kaltes Fett mit den Fingerspitzen ins Mehl zu reiben: die Basis für Streusel, Scones und Mürbeteig.",
+     "p": [
+      "Kalte Butterwürfel nehmen und beim Reiben das Mehl anheben und zurückrieseln lassen, damit es kühl und luftig bleibt.",
+      "Nur mit den Fingerspitzen arbeiten, die Handflächen sind zu warm; aufhören, wenn es wie feine Brösel aussieht.",
+      "Kleine Fettflocken im Mehl schmelzen im Ofen, bilden Dampftaschen und eine zarte Textur."
+     ],
+     "q": "Arbeitest du gern mit den Händen, oder nimmst du lieber eine Küchenmaschine?",
+     "c": "Reib 50 g kalte Butter von Hand in 100 g Mehl und miss, wie lange es bis zu feinen Bröseln dauert."
+    },
+    "es": {
+     "t": "El método de arenado",
+     "g": "Domina el arenado con la punta de los dedos: grasa fría en la harina, la base de crumbles, scones y masa quebrada.",
+     "p": [
+      "Usa mantequilla fría en dados y levanta la harina al frotar, dejándola caer para que siga fresca y aireada.",
+      "Trabaja solo con las yemas de los dedos, las palmas están calientes; para cuando parezca pan rallado fino.",
+      "Los trocitos de grasa que quedan se funden en el horno, crean bolsas de vapor y una textura tierna."
+     ],
+     "q": "¿Disfrutas las técnicas con las manos o prefieres usar un robot de cocina?",
+     "c": "Arena a mano 50 g de mantequilla fría con 100 g de harina y cronometra cuánto tardas en lograr el pan rallado."
+    },
+    "fr": {
+     "t": "La méthode du sablage",
+     "g": "Maîtrise le sablage du beurre froid dans la farine du bout des doigts, base des crumbles, scones et pâtes brisées.",
+     "p": [
+      "Prends du beurre froid en dés et soulève la farine en frottant, laisse-la retomber pour qu'elle reste fraîche et aérée.",
+      "Travaille seulement du bout des doigts, les paumes sont trop chaudes ; arrête-toi au stade de la chapelure fine.",
+      "Les petits éclats de beurre restants fondent au four, créent de la vapeur et une texture tendre."
+     ],
+     "q": "Tu aimes les techniques à la main, ou tu préfères un robot ?",
+     "c": "Sable à la main 50 g de beurre froid avec 100 g de farine et chronomètre le temps pour obtenir une chapelure."
+    },
+    "it": {
+     "t": "Il metodo della sabbiatura",
+     "g": "Impara a sabbiare il burro freddo nella farina con la punta delle dita, base di crumble, scones e frolla.",
+     "p": [
+      "Usa burro freddo a cubetti e solleva la farina mentre strofini, lasciandola ricadere perché resti fresca e ariosa.",
+      "Lavora solo con i polpastrelli, i palmi sono caldi; fermati quando sembra pangrattato fine.",
+      "I piccoli pezzi di burro rimasti si sciolgono in forno, creano vapore e una consistenza tenera."
+     ],
+     "q": "Ti piacciono le tecniche manuali o preferisci usare un robot da cucina?",
+     "c": "Sabbia a mano 50 g di burro freddo con 100 g di farina e cronometra quanto ci metti a ottenere il pangrattato."
+    },
+    "pt": {
+     "t": "O método de esfarelar",
+     "g": "Domina a técnica de esfregar gordura fria na farinha com as pontas dos dedos, base de crumbles, scones e massa quebrada.",
+     "p": [
+      "Usa manteiga fria em cubos e levanta a farinha ao esfregar, deixando-a cair para se manter fresca e arejada.",
+      "Trabalha só com as pontas dos dedos, as palmas são quentes; para quando parecer pão ralado fino.",
+      "Os pedacinhos de gordura que ficam derretem no forno, criam vapor e uma textura tenra."
+     ],
+     "q": "Gostas de técnicas feitas à mão ou preferes usar um robot de cozinha?",
+     "c": "Esfrega à mão 50 g de manteiga fria em 100 g de farinha e cronometra quanto demoras a chegar ao pão ralado."
+    },
+    "pt_BR": {
+     "t": "O método de esfarelar",
+     "g": "Domine a técnica de esfregar gordura gelada na farinha com a ponta dos dedos, base de crumbles, scones e massa podre.",
+     "p": [
+      "Use manteiga gelada em cubos e levante a farinha ao esfregar, deixando cair para continuar fria e aerada.",
+      "Trabalhe só com a ponta dos dedos, as palmas são quentes; pare quando parecer uma farofa fina.",
+      "Os pedacinhos de gordura que sobram derretem no forno, criam vapor e uma textura macia."
+     ],
+     "q": "Você gosta de técnicas feitas à mão ou prefere usar processador?",
+     "c": "Esfarele à mão 50 g de manteiga gelada em 100 g de farinha e cronometre quanto leva para virar farofa."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seasonal fruit crumble",
+     "g": "Make a forgiving fruit crumble with whatever fruit is in season under a buttery, crunchy topping.",
+     "p": [
+      "Apples, pears, plums, rhubarb or berries all work; taste the fruit and add sugar only as needed.",
+      "Use yesterday's rubbing-in method for the topping, and add oats or chopped nuts for extra crunch.",
+      "Bake around 180 °C until the fruit bubbles at the edges; let it rest a few minutes, as the juices are very hot."
+     ],
+     "q": "Which fruit is in season where you live right now?",
+     "c": "Make a small crumble with one seasonal fruit and add one extra to the topping, like oats, nuts or cinnamon."
+    },
+    "de": {
+     "t": "Obst-Crumble der Saison",
+     "g": "Back einen gutmütigen Crumble mit Obst der Saison unter einer buttrigen, knusprigen Streuseldecke.",
+     "p": [
+      "Äpfel, Birnen, Pflaumen, Rhabarber oder Beeren passen; probiere das Obst und süße nur nach Bedarf.",
+      "Für die Streusel die Krümelmethode von gestern nutzen und für mehr Biss Haferflocken oder Nüsse zugeben.",
+      "Bei etwa 180 °C backen, bis das Obst am Rand blubbert; kurz ruhen lassen, der Saft ist sehr heiß."
+     ],
+     "q": "Welches Obst hat bei dir gerade Saison?",
+     "c": "Mach einen kleinen Crumble mit einem Saisonobst und gib eine Extrazutat in die Streusel, etwa Hafer, Nüsse oder Zimt."
+    },
+    "es": {
+     "t": "Crumble de fruta de temporada",
+     "g": "Prepara un crumble agradecido con la fruta de temporada bajo una cobertura mantecosa y crujiente.",
+     "p": [
+      "Manzanas, peras, ciruelas, ruibarbo o frutos rojos sirven; prueba la fruta y añade azúcar solo si hace falta.",
+      "Usa el arenado de ayer para la cobertura y añade avena o frutos secos picados para más crujiente.",
+      "Hornea a unos 180 °C hasta que la fruta burbujee en los bordes; deja reposar, los jugos queman mucho."
+     ],
+     "q": "¿Qué fruta está de temporada ahora donde vives?",
+     "c": "Haz un crumble pequeño con una fruta de temporada y añade un extra a la cobertura, como avena, nueces o canela."
+    },
+    "fr": {
+     "t": "Crumble aux fruits de saison",
+     "g": "Prépare un crumble indulgent avec les fruits de saison sous une couche beurrée et croustillante.",
+     "p": [
+      "Pommes, poires, prunes, rhubarbe ou fruits rouges conviennent ; goûte les fruits et sucre seulement si besoin.",
+      "Utilise le sablage d'hier pour la pâte à crumble et ajoute flocons d'avoine ou noix hachées pour le croquant.",
+      "Cuis vers 180 °C jusqu'à ce que les fruits bouillonnent sur les bords ; laisse reposer, le jus est brûlant."
+     ],
+     "q": "Quels fruits sont de saison chez toi en ce moment ?",
+     "c": "Fais un petit crumble avec un fruit de saison et ajoute un extra à la pâte : avoine, noix ou cannelle."
+    },
+    "it": {
+     "t": "Crumble di frutta di stagione",
+     "g": "Prepara un crumble facile con la frutta di stagione sotto una copertura burrosa e croccante.",
+     "p": [
+      "Mele, pere, prugne, rabarbaro o frutti di bosco vanno bene; assaggia la frutta e zucchera solo se serve.",
+      "Usa la sabbiatura di ieri per la copertura e aggiungi fiocchi d'avena o frutta secca tritata per più croccantezza.",
+      "Cuoci a circa 180 °C finché la frutta sobbolle ai bordi; lascia riposare, il succo è caldissimo."
+     ],
+     "q": "Quale frutta è di stagione adesso dove vivi?",
+     "c": "Prepara un piccolo crumble con un frutto di stagione e aggiungi un extra alla copertura, come avena, noci o cannella."
+    },
+    "pt": {
+     "t": "Crumble de fruta da época",
+     "g": "Faz um crumble fácil com a fruta da época debaixo de uma cobertura amanteigada e estaladiça.",
+     "p": [
+      "Maçãs, peras, ameixas, ruibarbo ou frutos vermelhos servem; prova a fruta e junta açúcar só se for preciso.",
+      "Usa o método de esfarelar de ontem para a cobertura e junta aveia ou frutos secos picados para estalar mais.",
+      "Coze a cerca de 180 °C até a fruta borbulhar nas bordas; deixa repousar, os sucos estão muito quentes."
+     ],
+     "q": "Que fruta está na época onde vives neste momento?",
+     "c": "Faz um crumble pequeno com uma fruta da época e junta um extra à cobertura, como aveia, nozes ou canela."
+    },
+    "pt_BR": {
+     "t": "Crumble de fruta da estação",
+     "g": "Faça um crumble fácil com a fruta da estação sob uma cobertura amanteigada e crocante.",
+     "p": [
+      "Maçã, pera, ameixa, ruibarbo ou frutas vermelhas funcionam; prove a fruta e coloque açúcar só se precisar.",
+      "Use o método de esfarelar de ontem na cobertura e junte aveia ou castanhas picadas para mais crocância.",
+      "Asse a cerca de 180 °C até a fruta borbulhar nas bordas; deixe descansar, o caldo fica muito quente."
+     ],
+     "q": "Qual fruta está na estação onde você mora agora?",
+     "c": "Faça um crumble pequeno com uma fruta da estação e junte um extra na cobertura, como aveia, castanhas ou canela."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month of bakes",
+     "g": "Look back at your first month, see how much you have learned, and choose one bake to repeat and improve.",
+     "p": [
+      "You now know the key ingredients, how to measure, how your oven behaves and how to test doneness.",
+      "You have used four methods: creaming, whisking, the muffin method and rubbing in.",
+      "Repeating a bake is how bakers improve: change one thing at a time and note what happens."
+     ],
+     "q": "Which bake from this month are you proudest of, and what would you change next time?",
+     "c": "Choose your favourite bake from this month, bake it again with one improvement, and write down the result."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Backmonat",
+     "g": "Schau auf deinen ersten Monat zurück, sieh, wie viel du gelernt hast, und wähle ein Gebäck zum Verbessern.",
+     "p": [
+      "Du kennst jetzt die wichtigsten Zutaten, weißt, wie man abmisst, wie dein Ofen tickt und wie die Garprobe geht.",
+      "Du hast vier Methoden genutzt: Schaumigrühren, Aufschlagen, die Muffin-Methode und das Krümeln.",
+      "Durch Wiederholen werden Bäcker besser: immer nur eine Sache ändern und notieren, was passiert."
+     ],
+     "q": "Auf welches Gebäck dieses Monats bist du am stolzesten, und was würdest du nächstes Mal ändern?",
+     "c": "Wähle dein Lieblingsgebäck dieses Monats, back es mit einer Verbesserung noch einmal und notiere das Ergebnis."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes horneando",
+     "g": "Mira atrás, comprueba cuánto has aprendido en tu primer mes y elige un horneado para repetir y mejorar.",
+     "p": [
+      "Ya conoces los ingredientes clave, cómo medir, cómo se comporta tu horno y cómo saber si algo está hecho.",
+      "Has usado cuatro métodos: cremado, batido, método muffin y arenado.",
+      "Repetir es como mejoran los reposteros: cambia una sola cosa cada vez y apunta qué pasa."
+     ],
+     "q": "¿De qué horneado de este mes estás más orgulloso, y qué cambiarías la próxima vez?",
+     "c": "Elige tu horneado favorito del mes, repítelo con una mejora y apunta el resultado."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois en cuisine",
+     "g": "Fais le bilan de ton premier mois, vois tout ce que tu as appris et choisis une recette à refaire en mieux.",
+     "p": [
+      "Tu connais les ingrédients clés, la mesure précise, le comportement de ton four et les tests de cuisson.",
+      "Tu as utilisé quatre méthodes : le crémage, le fouettage, la méthode muffin et le sablage.",
+      "C'est en refaisant qu'on progresse : change une seule chose à la fois et note le résultat."
+     ],
+     "q": "De quelle pâtisserie de ce mois es-tu le plus fier, et que changerais-tu la prochaine fois ?",
+     "c": "Choisis ta recette préférée du mois, refais-la avec une amélioration et note le résultat."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di dolci",
+     "g": "Guarda indietro al primo mese, scopri quanto hai imparato e scegli un dolce da rifare e migliorare.",
+     "p": [
+      "Ora conosci gli ingredienti chiave, come misurare, come si comporta il tuo forno e come verificare la cottura.",
+      "Hai usato quattro metodi: a crema, montato, metodo muffin e sabbiatura.",
+      "Ripetere è il modo in cui i pasticceri migliorano: cambia una cosa alla volta e annota cosa succede."
+     ],
+     "q": "Di quale dolce di questo mese sei più orgoglioso, e cosa cambieresti la prossima volta?",
+     "c": "Scegli il tuo dolce preferito del mese, rifallo con un miglioramento e annota il risultato."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de fornadas",
+     "g": "Olha para trás, vê quanto aprendeste no primeiro mês e escolhe uma receita para repetir e melhorar.",
+     "p": [
+      "Já conheces os ingredientes principais, como medir, como o teu forno se comporta e como testar a cozedura.",
+      "Usaste quatro métodos: cremoso, batido, método dos muffins e esfarelar.",
+      "Repetir é a forma de os pasteleiros evoluírem: muda uma coisa de cada vez e anota o que acontece."
+     ],
+     "q": "De que receita deste mês tens mais orgulho, e o que mudarias da próxima vez?",
+     "c": "Escolhe a tua receita preferida do mês, repete-a com uma melhoria e anota o resultado."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de fornadas",
+     "g": "Olhe para trás, veja quanto você aprendeu no primeiro mês e escolha uma receita para repetir e melhorar.",
+     "p": [
+      "Agora você conhece os ingredientes principais, como medir, como seu forno se comporta e como testar o ponto.",
+      "Você usou quatro métodos: cremoso, batido, método dos muffins e esfarelar.",
+      "Repetir é como confeiteiros evoluem: mude uma coisa por vez e anote o que acontece."
+     ],
+     "q": "De qual receita deste mês você mais se orgulha, e o que mudaria na próxima vez?",
+     "c": "Escolha sua receita favorita do mês, repita com uma melhoria e anote o resultado."
+    }
+   }
+  }
+ ]
+}

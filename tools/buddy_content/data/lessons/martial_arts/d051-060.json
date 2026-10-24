@@ -1,0 +1,835 @@
+{
+ "topic": "martial_arts",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic blocks as movement",
+     "g": "Explore rising, lowering and outward blocking movements as they appear in forms.",
+     "p": [
+      "A rising block lifts the forearm above the head, and a lowering block sweeps down past the front leg.",
+      "An outward block moves the forearm across the body in a smooth arc at chest height.",
+      "In forms these movements train coordination, timing and the link between hips and arms."
+     ],
+     "q": "Which of the three movements looks most elegant to you?",
+     "c": "In the air, practise each of the three blocking movements slowly five times per arm."
+    },
+    "de": {
+     "t": "Grundabwehr als Bewegung",
+     "g": "Erkunde Aufwärts-, Abwärts- und Außenabwehr als Bewegungen, wie sie in Formen vorkommen.",
+     "p": [
+      "Bei der Aufwärtsabwehr hebt sich der Unterarm über den Kopf, die Abwärtsabwehr fegt am vorderen Bein vorbei.",
+      "Die Außenabwehr führt den Unterarm in einem weichen Bogen auf Brusthöhe quer vor dem Körper.",
+      "In Formen schulen diese Bewegungen Koordination, Timing und die Verbindung von Hüfte und Armen."
+     ],
+     "q": "Welche der drei Bewegungen findest du am elegantesten?",
+     "c": "Übe jede der drei Abwehrbewegungen langsam in der Luft, fünfmal pro Arm."
+    },
+    "es": {
+     "t": "Bloqueos básicos como movimiento",
+     "g": "Explora los bloqueos alto, bajo y hacia fuera tal como aparecen en las formas.",
+     "p": [
+      "El bloqueo alto sube el antebrazo por encima de la cabeza y el bajo barre hacia abajo junto a la pierna delantera.",
+      "El bloqueo hacia fuera mueve el antebrazo a través del cuerpo en un arco suave a la altura del pecho.",
+      "En las formas, estos movimientos entrenan coordinación, sincronía y la unión entre cadera y brazos."
+     ],
+     "q": "¿Cuál de los tres movimientos te parece más elegante?",
+     "c": "Practica en el aire cada uno de los tres bloqueos despacio, cinco veces con cada brazo."
+    },
+    "fr": {
+     "t": "Les blocages de base comme mouvement",
+     "g": "Explore les blocages montant, descendant et vers l'extérieur tels qu'on les voit dans les formes.",
+     "p": [
+      "Le blocage montant lève l'avant-bras au-dessus de la tête ; le descendant balaie vers le bas devant la jambe avant.",
+      "Le blocage vers l'extérieur fait passer l'avant-bras devant le corps en un arc fluide à hauteur de poitrine.",
+      "Dans les formes, ces mouvements travaillent coordination, timing et lien entre hanches et bras."
+     ],
+     "q": "Lequel de ces trois mouvements te semble le plus élégant ?",
+     "c": "Entraîne-toi dans le vide à chacun des trois blocages lentement, cinq fois par bras."
+    },
+    "it": {
+     "t": "Le parate di base come movimento",
+     "g": "Esplora le parate alta, bassa e verso l'esterno così come compaiono nelle forme.",
+     "p": [
+      "La parata alta solleva l'avambraccio sopra la testa, quella bassa scende accanto alla gamba anteriore.",
+      "La parata verso l'esterno porta l'avambraccio davanti al corpo con un arco morbido all'altezza del petto.",
+      "Nelle forme questi movimenti allenano coordinazione, tempismo e legame tra anche e braccia."
+     ],
+     "q": "Quale dei tre movimenti ti sembra più elegante?",
+     "c": "Prova nell'aria ciascuna delle tre parate lentamente, cinque volte per braccio."
+    },
+    "pt": {
+     "t": "Defesas básicas como movimento",
+     "g": "Explora as defesas alta, baixa e para fora tal como aparecem nas formas.",
+     "p": [
+      "A defesa alta sobe o antebraço acima da cabeça e a baixa varre para baixo junto à perna da frente.",
+      "A defesa para fora leva o antebraço à frente do corpo num arco suave à altura do peito.",
+      "Nas formas, estes movimentos treinam coordenação, sincronia e a ligação entre anca e braços."
+     ],
+     "q": "Qual dos três movimentos te parece mais elegante?",
+     "c": "Pratica no ar cada uma das três defesas devagar, cinco vezes com cada braço."
+    },
+    "pt_BR": {
+     "t": "Defesas básicas como movimento",
+     "g": "Explore as defesas alta, baixa e para fora como aparecem nas formas.",
+     "p": [
+      "A defesa alta sobe o antebraço acima da cabeça e a baixa varre para baixo junto à perna da frente.",
+      "A defesa para fora leva o antebraço à frente do corpo num arco suave na altura do peito.",
+      "Nas formas, esses movimentos treinam coordenação, sincronia e a ligação entre quadril e braços."
+     ],
+     "q": "Qual dos três movimentos parece mais elegante para você?",
+     "c": "Pratique no ar cada uma das três defesas devagar, cinco vezes com cada braço."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic kicks as exercise",
+     "g": "Practise the front, side and roundhouse kick in the air or on pads.",
+     "p": [
+      "The front kick lifts the knee and extends the foot forward; it is called mae-geri in karate.",
+      "The side kick extends sideways with the edge of the foot; the roundhouse swings in an arc from the hip.",
+      "Start low and slow: control and balance matter far more than height."
+     ],
+     "q": "Which kick do you think would be the most fun to learn first?",
+     "c": "Holding a chair for balance, do five slow, low front kicks per leg, returning the knee each time."
+    },
+    "de": {
+     "t": "Grundtritte als Übung",
+     "g": "Übe Vorwärts-, Seit- und Halbkreistritt in der Luft oder an Pratzen.",
+     "p": [
+      "Beim Vorwärtstritt hebt sich das Knie und der Fuß streckt sich nach vorn; im Karate heißt er Mae-geri.",
+      "Der Seittritt streckt sich mit der Fußkante zur Seite, der Halbkreistritt schwingt im Bogen aus der Hüfte.",
+      "Fang tief und langsam an: Kontrolle und Gleichgewicht zählen viel mehr als Höhe."
+     ],
+     "q": "Welcher Tritt würde dir wohl am meisten Spaß machen, ihn zuerst zu lernen?",
+     "c": "Halte dich an einem Stuhl fest und mach pro Bein fünf langsame, tiefe Vorwärtstritte, das Knie jedes Mal zurück."
+    },
+    "es": {
+     "t": "Patadas básicas como ejercicio",
+     "g": "Practica la patada frontal, la lateral y la circular al aire o sobre paos.",
+     "p": [
+      "La patada frontal sube la rodilla y extiende el pie al frente; en kárate se llama mae-geri.",
+      "La lateral se extiende de lado con el canto del pie; la circular describe un arco desde la cadera.",
+      "Empieza bajo y despacio: el control y el equilibrio importan mucho más que la altura."
+     ],
+     "q": "¿Qué patada crees que sería la más divertida de aprender primero?",
+     "c": "Apoyado en una silla, haz cinco patadas frontales lentas y bajas por pierna, recogiendo la rodilla cada vez."
+    },
+    "fr": {
+     "t": "Les coups de pied de base en exercice",
+     "g": "Pratique le coup de pied de face, de côté et circulaire dans le vide ou sur des cibles.",
+     "p": [
+      "Le coup de pied de face lève le genou puis tend le pied vers l'avant ; en karaté, c'est mae-geri.",
+      "Le coup de pied de côté se tend avec le tranchant du pied ; le circulaire décrit un arc depuis la hanche.",
+      "Commence bas et lentement : le contrôle et l'équilibre comptent bien plus que la hauteur."
+     ],
+     "q": "Quel coup de pied serait le plus amusant à apprendre en premier, selon toi ?",
+     "c": "En te tenant à une chaise, fais cinq coups de pied de face lents et bas par jambe, en ramenant le genou à chaque fois."
+    },
+    "it": {
+     "t": "I calci di base come esercizio",
+     "g": "Pratica il calcio frontale, laterale e circolare nell'aria o sui colpitori.",
+     "p": [
+      "Il calcio frontale solleva il ginocchio e distende il piede in avanti; nel karate si chiama mae-geri.",
+      "Il laterale si distende di lato con il taglio del piede; il circolare descrive un arco partendo dall'anca.",
+      "Inizia basso e lento: controllo ed equilibrio contano molto più dell'altezza."
+     ],
+     "q": "Quale calcio pensi sarebbe il più divertente da imparare per primo?",
+     "c": "Tenendoti a una sedia, fai cinque calci frontali lenti e bassi per gamba, richiamando il ginocchio ogni volta."
+    },
+    "pt": {
+     "t": "Pontapés básicos como exercício",
+     "g": "Pratica o pontapé frontal, lateral e circular no ar ou em aparadores.",
+     "p": [
+      "O pontapé frontal sobe o joelho e estende o pé para a frente; no karaté chama-se mae-geri.",
+      "O lateral estende-se de lado com a faca do pé; o circular descreve um arco a partir da anca.",
+      "Começa baixo e devagar: o controlo e o equilíbrio contam muito mais do que a altura."
+     ],
+     "q": "Que pontapé achas que seria o mais divertido de aprender primeiro?",
+     "c": "Apoiado numa cadeira, faz cinco pontapés frontais lentos e baixos com cada perna, recolhendo o joelho de cada vez."
+    },
+    "pt_BR": {
+     "t": "Chutes básicos como exercício",
+     "g": "Pratique o chute frontal, lateral e circular no ar ou em aparadores.",
+     "p": [
+      "O chute frontal sobe o joelho e estende o pé para a frente; no caratê se chama mae-geri.",
+      "O lateral se estende de lado com a faca do pé; o circular faz um arco a partir do quadril.",
+      "Comece baixo e devagar: controle e equilíbrio importam muito mais que altura."
+     ],
+     "q": "Qual chute você acha que seria o mais divertido de aprender primeiro?",
+     "c": "Apoiado numa cadeira, faça cinco chutes frontais lentos e baixos com cada perna, recolhendo o joelho a cada vez."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising against air",
+     "g": "Discover shadow practice and why it builds technique and focus.",
+     "p": [
+      "Practising techniques in the air lets you concentrate fully on form, balance and breathing.",
+      "Moving slowly reveals small mistakes that disappear from view at full speed.",
+      "Shadow practice needs no partner and little space, so you can do it almost anywhere."
+     ],
+     "q": "Where at home could you find a small, safe space to practise movements?",
+     "c": "Do three minutes of slow shadow practice with stances, steps and blocks, checking each movement."
+    },
+    "de": {
+     "t": "Üben gegen die Luft",
+     "g": "Entdecke das Schattentraining und warum es Technik und Konzentration aufbaut.",
+     "p": [
+      "Techniken in der Luft zu üben erlaubt volle Konzentration auf Form, Gleichgewicht und Atmung.",
+      "Langsame Bewegung zeigt kleine Fehler, die bei vollem Tempo unsichtbar bleiben.",
+      "Schattentraining braucht keinen Partner und wenig Platz, du kannst es fast überall machen."
+     ],
+     "q": "Wo zu Hause findest du einen kleinen, sicheren Platz zum Üben von Bewegungen?",
+     "c": "Mach drei Minuten langsames Schattentraining mit Ständen, Schritten und Abwehr und prüf jede Bewegung."
+    },
+    "es": {
+     "t": "Practicar contra el aire",
+     "g": "Descubre la práctica en sombra y por qué mejora la técnica y la concentración.",
+     "p": [
+      "Practicar técnicas al aire te permite centrarte del todo en la forma, el equilibrio y la respiración.",
+      "Moverse despacio revela pequeños errores que a toda velocidad pasan desapercibidos.",
+      "La práctica en sombra no necesita compañero y apenas espacio, así que puedes hacerla casi en cualquier sitio."
+     ],
+     "q": "¿Dónde en casa podrías encontrar un pequeño espacio seguro para practicar movimientos?",
+     "c": "Haz tres minutos de práctica en sombra lenta con posiciones, pasos y bloqueos, revisando cada movimiento."
+    },
+    "fr": {
+     "t": "S'entraîner dans le vide",
+     "g": "Découvre le travail dans le vide et pourquoi il construit la technique et la concentration.",
+     "p": [
+      "Travailler les techniques dans le vide permet de se concentrer pleinement sur la forme, l'équilibre et le souffle.",
+      "Bouger lentement révèle de petites erreurs qui disparaissent à pleine vitesse.",
+      "Ce travail ne demande ni partenaire ni beaucoup de place : on peut le faire presque partout."
+     ],
+     "q": "Où pourrais-tu trouver chez toi un petit espace sûr pour pratiquer des mouvements ?",
+     "c": "Fais trois minutes de travail lent dans le vide avec positions, pas et blocages, en vérifiant chaque geste."
+    },
+    "it": {
+     "t": "Allenarsi contro l'aria",
+     "g": "Scopri la pratica a vuoto e perché costruisce tecnica e concentrazione.",
+     "p": [
+      "Provare le tecniche nell'aria permette di concentrarsi del tutto su forma, equilibrio e respiro.",
+      "Muoversi lentamente rivela piccoli errori che a piena velocità non si vedono.",
+      "La pratica a vuoto non richiede partner e poco spazio, quindi puoi farla quasi ovunque."
+     ],
+     "q": "Dove a casa potresti trovare un piccolo spazio sicuro per provare i movimenti?",
+     "c": "Fai tre minuti di pratica lenta a vuoto con posizioni, passi e parate, controllando ogni movimento."
+    },
+    "pt": {
+     "t": "Praticar contra o ar",
+     "g": "Descobre o treino de sombra e porque constrói técnica e concentração.",
+     "p": [
+      "Praticar técnicas no ar permite concentrares-te totalmente na forma, no equilíbrio e na respiração.",
+      "Mover-se devagar revela pequenos erros que desaparecem de vista a toda a velocidade.",
+      "O treino de sombra não precisa de parceiro e pouco espaço, por isso podes fazê-lo quase em qualquer lado."
+     ],
+     "q": "Onde em casa poderias encontrar um pequeno espaço seguro para praticar movimentos?",
+     "c": "Faz três minutos de treino de sombra lento com posições, passos e defesas, verificando cada movimento."
+    },
+    "pt_BR": {
+     "t": "Praticando contra o ar",
+     "g": "Descubra o treino de sombra e por que ele constrói técnica e foco.",
+     "p": [
+      "Praticar técnicas no ar permite focar totalmente na forma, no equilíbrio e na respiração.",
+      "Mover-se devagar revela pequenos erros que somem de vista em velocidade total.",
+      "O treino de sombra não precisa de parceiro e pede pouco espaço, então dá para fazer quase em qualquer lugar."
+     ],
+     "q": "Onde na sua casa você poderia encontrar um pequeno espaço seguro para praticar movimentos?",
+     "c": "Faça três minutos de treino de sombra lento com bases, passos e defesas, conferindo cada movimento."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pads and targets",
+     "g": "Learn how partners hold pads for controlled, careful practice.",
+     "p": [
+      "Pad work lets you practise distance and accuracy with a partner who guides the pace.",
+      "The holder keeps arms firm but relaxed, holds the pad close to the body and calls the technique.",
+      "Good practice is cooperative: light contact, clear communication and turns for both partners."
+     ],
+     "q": "What do you think makes someone a great pad holder for a partner?",
+     "c": "Ask a friend to hold up a cushion and take turns touching it lightly with a palm, focusing on accuracy."
+    },
+    "de": {
+     "t": "Pratzen und Ziele",
+     "g": "Lerne, wie Partner Pratzen für kontrolliertes, sorgfältiges Üben halten.",
+     "p": [
+      "Pratzenarbeit trainiert Distanz und Genauigkeit mit einem Partner, der das Tempo vorgibt.",
+      "Der Haltende hält die Arme fest, aber locker, die Pratze nah am Körper und nennt die Technik.",
+      "Gutes Üben ist kooperativ: leichter Kontakt, klare Absprachen und Wechsel für beide Partner."
+     ],
+     "q": "Was macht deiner Meinung nach einen guten Pratzenhalter für den Partner aus?",
+     "c": "Bitte jemanden, ein Kissen hochzuhalten, und berührt es abwechselnd leicht mit der Handfläche, mit Fokus auf Genauigkeit."
+    },
+    "es": {
+     "t": "Paos y objetivos",
+     "g": "Aprende cómo los compañeros sujetan los paos para practicar con control y cuidado.",
+     "p": [
+      "El trabajo con paos entrena distancia y precisión con un compañero que marca el ritmo.",
+      "Quien sujeta mantiene los brazos firmes pero relajados, el pao cerca del cuerpo y anuncia la técnica.",
+      "La buena práctica es cooperativa: contacto ligero, comunicación clara y turnos para ambos."
+     ],
+     "q": "¿Qué crees que hace que alguien sujete bien los paos para su compañero?",
+     "c": "Pide a alguien que sujete un cojín y tocadlo por turnos con la palma, suavemente, buscando precisión."
+    },
+    "fr": {
+     "t": "Cibles et pattes d'ours",
+     "g": "Apprends comment les partenaires tiennent les cibles pour une pratique contrôlée et attentive.",
+     "p": [
+      "Le travail aux cibles entraîne distance et précision avec un partenaire qui règle le rythme.",
+      "Celui qui tient garde les bras fermes mais détendus, la cible près du corps, et annonce la technique.",
+      "Une bonne pratique est coopérative : contact léger, communication claire et rôles échangés."
+     ],
+     "q": "Selon toi, qu'est-ce qui fait un bon teneur de cibles pour son partenaire ?",
+     "c": "Demande à quelqu'un de tenir un coussin et touchez-le à tour de rôle légèrement de la paume, en visant la précision."
+    },
+    "it": {
+     "t": "Colpitori e bersagli",
+     "g": "Impara come i partner tengono i colpitori per una pratica controllata e attenta.",
+     "p": [
+      "Il lavoro ai colpitori allena distanza e precisione con un partner che guida il ritmo.",
+      "Chi tiene ha braccia salde ma rilassate, il colpitore vicino al corpo e annuncia la tecnica.",
+      "Una buona pratica è cooperativa: contatto leggero, comunicazione chiara e turni per entrambi."
+     ],
+     "q": "Secondo te, cosa rende qualcuno bravo a tenere i colpitori per un partner?",
+     "c": "Chiedi a qualcuno di tenere un cuscino e toccatelo a turno leggermente con il palmo, puntando alla precisione."
+    },
+    "pt": {
+     "t": "Aparadores e alvos",
+     "g": "Aprende como os parceiros seguram os aparadores para uma prática controlada e cuidadosa.",
+     "p": [
+      "O trabalho com aparadores treina distância e precisão com um parceiro que define o ritmo.",
+      "Quem segura mantém os braços firmes mas relaxados, o aparador perto do corpo e anuncia a técnica.",
+      "A boa prática é cooperativa: contacto leve, comunicação clara e vez para os dois parceiros."
+     ],
+     "q": "O que achas que faz de alguém um bom segurador de aparadores para o parceiro?",
+     "c": "Pede a alguém para segurar uma almofada e toquem-lhe à vez levemente com a palma, com foco na precisão."
+    },
+    "pt_BR": {
+     "t": "Aparadores e alvos",
+     "g": "Aprenda como os parceiros seguram os aparadores para uma prática controlada e cuidadosa.",
+     "p": [
+      "O trabalho com aparadores treina distância e precisão com um parceiro que define o ritmo.",
+      "Quem segura mantém os braços firmes mas relaxados, o aparador perto do corpo e anuncia a técnica.",
+      "A boa prática é cooperativa: contato leve, comunicação clara e revezamento entre os dois."
+     ],
+     "q": "O que você acha que faz alguém segurar bem os aparadores para o parceiro?",
+     "c": "Peça a alguém para segurar uma almofada e revezem tocando de leve com a palma, com foco na precisão."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Partner work with control",
+     "g": "Learn to work with a partner at a gentle pace, with safety and trust first.",
+     "p": [
+      "Partner drills are cooperative: you help each other learn, not try to win.",
+      "Start slowly, agree on the technique and speed, and always stop at once if a partner taps or says stop.",
+      "Thank your partner with a bow before and after; trust grows when both feel safe."
+     ],
+     "q": "What qualities would you look for in a good training partner?",
+     "c": "Think of someone you trust and write down what makes working with them feel safe and easy."
+    },
+    "de": {
+     "t": "Partnerübungen mit Kontrolle",
+     "g": "Lerne, mit einem Partner in ruhigem Tempo zu üben, Sicherheit und Vertrauen zuerst.",
+     "p": [
+      "Partnerübungen sind kooperativ: Ihr helft einander beim Lernen, statt gewinnen zu wollen.",
+      "Fangt langsam an, sprecht Technik und Tempo ab und hört sofort auf, wenn der Partner abklopft oder Stopp sagt.",
+      "Dankt einander mit einer Verbeugung vorher und nachher; Vertrauen wächst, wenn sich beide sicher fühlen."
+     ],
+     "q": "Welche Eigenschaften würdest du dir bei einem guten Trainingspartner wünschen?",
+     "c": "Denk an jemanden, dem du vertraust, und schreib auf, warum sich die Zusammenarbeit mit ihm sicher und leicht anfühlt."
+    },
+    "es": {
+     "t": "Trabajo en pareja con control",
+     "g": "Aprende a trabajar con un compañero a un ritmo suave, con la seguridad y la confianza primero.",
+     "p": [
+      "Los ejercicios en pareja son cooperativos: os ayudáis a aprender, no intentáis ganar.",
+      "Empezad despacio, acordad técnica y velocidad, y parad al instante si el compañero palmea o dice basta.",
+      "Agradece al compañero con un saludo antes y después; la confianza crece cuando ambos se sienten seguros."
+     ],
+     "q": "¿Qué cualidades buscarías en un buen compañero de entrenamiento?",
+     "c": "Piensa en alguien de confianza y escribe qué hace que trabajar con esa persona sea seguro y fácil."
+    },
+    "fr": {
+     "t": "Le travail à deux avec contrôle",
+     "g": "Apprends à travailler avec un partenaire à rythme doux, la sécurité et la confiance d'abord.",
+     "p": [
+      "Les exercices à deux sont coopératifs : on s'aide à apprendre, on ne cherche pas à gagner.",
+      "Commencez lentement, convenez de la technique et de la vitesse, et arrêtez aussitôt si le partenaire tape ou dit stop.",
+      "Remercie ton partenaire d'un salut avant et après ; la confiance grandit quand chacun se sent en sécurité."
+     ],
+     "q": "Quelles qualités chercherais-tu chez un bon partenaire d'entraînement ?",
+     "c": "Pense à quelqu'un en qui tu as confiance et note ce qui rend le travail avec cette personne sûr et facile."
+    },
+    "it": {
+     "t": "Lavoro in coppia con controllo",
+     "g": "Impara a lavorare con un partner a ritmo tranquillo, con sicurezza e fiducia prima di tutto.",
+     "p": [
+      "Gli esercizi in coppia sono cooperativi: vi aiutate a imparare, non cercate di vincere.",
+      "Iniziate piano, concordate tecnica e velocità e fermatevi subito se il partner batte la mano o dice stop.",
+      "Ringrazia il partner con un saluto prima e dopo; la fiducia cresce quando entrambi si sentono al sicuro."
+     ],
+     "q": "Quali qualità cercheresti in un buon compagno di allenamento?",
+     "c": "Pensa a una persona di cui ti fidi e scrivi cosa rende lavorare con lei sicuro e facile."
+    },
+    "pt": {
+     "t": "Trabalho a pares com controlo",
+     "g": "Aprende a trabalhar com um parceiro a um ritmo suave, com a segurança e a confiança em primeiro lugar.",
+     "p": [
+      "Os exercícios a pares são cooperativos: ajudam-se a aprender, não tentam ganhar.",
+      "Comecem devagar, combinem a técnica e a velocidade e parem logo se o parceiro bater no tapete ou disser pára.",
+      "Agradece ao parceiro com uma vénia antes e depois; a confiança cresce quando os dois se sentem seguros."
+     ],
+     "q": "Que qualidades procurarias num bom parceiro de treino?",
+     "c": "Pensa em alguém de confiança e escreve o que torna trabalhar com essa pessoa seguro e fácil."
+    },
+    "pt_BR": {
+     "t": "Trabalho em dupla com controle",
+     "g": "Aprenda a treinar com um parceiro num ritmo suave, com segurança e confiança em primeiro lugar.",
+     "p": [
+      "Os exercícios em dupla são cooperativos: vocês se ajudam a aprender, não tentam vencer.",
+      "Comecem devagar, combinem técnica e velocidade e parem na hora se o parceiro bater ou disser para.",
+      "Agradeça ao parceiro com uma reverência antes e depois; a confiança cresce quando os dois se sentem seguros."
+     ],
+     "q": "Que qualidades você buscaria num bom parceiro de treino?",
+     "c": "Pense em alguém de confiança e anote o que faz o trabalho com essa pessoa ser seguro e fácil."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Falling safely",
+     "g": "Discover breakfalls, called ukemi in Japanese arts, that protect the body.",
+     "p": [
+      "Ukemi teaches you to fall softly by spreading the impact across a wide area of the body.",
+      "Key points: tuck your chin to protect the head, breathe out and let your arms meet the mat.",
+      "Breakfalls are learned step by step on proper mats with a qualified teacher."
+     ],
+     "q": "How could knowing how to fall softly help you in everyday life, like on ice or stairs?",
+     "c": "On a soft bed or carpet, sit and rock gently onto your back with your chin tucked, five times."
+    },
+    "de": {
+     "t": "Sicher fallen",
+     "g": "Entdecke Fallübungen, in japanischen Künsten Ukemi genannt, die den Körper schützen.",
+     "p": [
+      "Ukemi lehrt, weich zu fallen, indem der Aufprall auf eine große Körperfläche verteilt wird.",
+      "Wichtig: Kinn zur Brust, um den Kopf zu schützen, ausatmen und die Arme auf die Matte schlagen lassen.",
+      "Fallschule lernt man Schritt für Schritt auf guten Matten mit einem qualifizierten Lehrer."
+     ],
+     "q": "Wie könnte dir weiches Fallen im Alltag helfen, etwa auf Glatteis oder Treppen?",
+     "c": "Setz dich auf ein weiches Bett oder einen Teppich und roll fünfmal sanft mit eingezogenem Kinn auf den Rücken."
+    },
+    "es": {
+     "t": "Caer con seguridad",
+     "g": "Descubre las caídas, llamadas ukemi en las artes japonesas, que protegen el cuerpo.",
+     "p": [
+      "El ukemi enseña a caer con suavidad repartiendo el impacto por una zona amplia del cuerpo.",
+      "Claves: barbilla al pecho para proteger la cabeza, soltar el aire y dejar que los brazos lleguen al tatami.",
+      "Las caídas se aprenden paso a paso sobre tatamis adecuados y con un maestro cualificado."
+     ],
+     "q": "¿Cómo podría ayudarte saber caer con suavidad en tu día a día, por ejemplo en hielo o escaleras?",
+     "c": "Sobre una cama blanda o una alfombra, siéntate y rueda suavemente hacia atrás con la barbilla recogida, cinco veces."
+    },
+    "fr": {
+     "t": "Chuter en sécurité",
+     "g": "Découvre les brise-chutes, appelés ukemi dans les arts japonais, qui protègent le corps.",
+     "p": [
+      "L'ukemi apprend à tomber en douceur en répartissant l'impact sur une large surface du corps.",
+      "Points clés : menton rentré pour protéger la tête, expirer et laisser les bras frapper le tapis.",
+      "Les chutes s'apprennent pas à pas sur de vrais tapis avec un enseignant qualifié."
+     ],
+     "q": "En quoi savoir tomber en douceur pourrait-il t'aider au quotidien, sur le verglas ou dans l'escalier ?",
+     "c": "Sur un lit moelleux ou un tapis, assieds-toi et bascule doucement sur le dos, menton rentré, cinq fois."
+    },
+    "it": {
+     "t": "Cadere in sicurezza",
+     "g": "Scopri le cadute, chiamate ukemi nelle arti giapponesi, che proteggono il corpo.",
+     "p": [
+      "L'ukemi insegna a cadere morbidamente distribuendo l'impatto su un'ampia zona del corpo.",
+      "Punti chiave: mento al petto per proteggere la testa, espirare e lasciare che le braccia battano sul tatami.",
+      "Le cadute si imparano passo dopo passo su tatami adatti e con un insegnante qualificato."
+     ],
+     "q": "Come potrebbe aiutarti saper cadere morbidamente nella vita quotidiana, sul ghiaccio o sulle scale?",
+     "c": "Su un letto morbido o un tappeto, siediti e rotola dolcemente all'indietro con il mento al petto, cinque volte."
+    },
+    "pt": {
+     "t": "Cair em segurança",
+     "g": "Descobre as quedas, chamadas ukemi nas artes japonesas, que protegem o corpo.",
+     "p": [
+      "O ukemi ensina a cair com suavidade, distribuindo o impacto por uma área grande do corpo.",
+      "Pontos-chave: queixo ao peito para proteger a cabeça, expirar e deixar os braços bater no tapete.",
+      "As quedas aprendem-se passo a passo em tapetes próprios e com um professor qualificado."
+     ],
+     "q": "Como poderia saber cair com suavidade ajudar-te no dia a dia, por exemplo no gelo ou nas escadas?",
+     "c": "Numa cama macia ou num tapete, senta-te e rola suavemente para trás com o queixo recolhido, cinco vezes."
+    },
+    "pt_BR": {
+     "t": "Caindo com segurança",
+     "g": "Descubra as quedas, chamadas ukemi nas artes japonesas, que protegem o corpo.",
+     "p": [
+      "O ukemi ensina a cair com suavidade, distribuindo o impacto por uma área grande do corpo.",
+      "Pontos-chave: queixo no peito para proteger a cabeça, soltar o ar e deixar os braços baterem no tatame.",
+      "As quedas são aprendidas passo a passo em tatames adequados e com um professor qualificado."
+     ],
+     "q": "Como saber cair com suavidade poderia ajudar você no dia a dia, por exemplo num piso molhado ou na escada?",
+     "c": "Numa cama macia ou num tapete, sente e role suavemente para trás com o queixo recolhido, cinco vezes."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rolling forward and backward",
+     "g": "Learn how soft rolls build confidence on the mat.",
+     "p": [
+      "Rolls move diagonally across the back, from one shoulder to the opposite hip, never over the neck.",
+      "Keeping the body round, like a wheel, lets the roll flow smoothly and softly.",
+      "Teachers start with tiny rocking movements and build up only when students feel ready."
+     ],
+     "q": "Did you roll or tumble as a child? How do you feel about rolling now?",
+     "c": "Lying on a soft carpet, hug your knees and rock gently back and forth ten times with your chin tucked."
+    },
+    "de": {
+     "t": "Vorwärts und rückwärts rollen",
+     "g": "Lerne, wie weiche Rollen Vertrauen auf der Matte aufbauen.",
+     "p": [
+      "Rollen verlaufen schräg über den Rücken, von einer Schulter zur gegenüberliegenden Hüfte, nie über den Nacken.",
+      "Bleibt der Körper rund wie ein Rad, fließt die Rolle weich und gleichmäßig.",
+      "Lehrer beginnen mit kleinen Schaukelbewegungen und steigern nur, wenn sich die Schüler bereit fühlen."
+     ],
+     "q": "Hast du als Kind Purzelbäume geschlagen? Wie fühlst du dich heute beim Gedanken ans Rollen?",
+     "c": "Leg dich auf einen weichen Teppich, umarme die Knie und schaukle zehnmal sanft vor und zurück, Kinn eingezogen."
+    },
+    "es": {
+     "t": "Rodar hacia delante y hacia atrás",
+     "g": "Aprende cómo las volteretas suaves dan confianza sobre el tatami.",
+     "p": [
+      "Las rodadas cruzan la espalda en diagonal, de un hombro a la cadera contraria, nunca sobre el cuello.",
+      "Mantener el cuerpo redondo, como una rueda, hace que la rodada fluya con suavidad.",
+      "Los maestros empiezan con pequeños balanceos y avanzan solo cuando el alumno se siente preparado."
+     ],
+     "q": "¿De niño dabas volteretas? ¿Qué sientes ahora al pensar en rodar?",
+     "c": "Tumbado en una alfombra blanda, abrázate las rodillas y balancéate suavemente diez veces con la barbilla recogida."
+    },
+    "fr": {
+     "t": "Rouler en avant et en arrière",
+     "g": "Apprends comment des roulades douces donnent confiance sur le tapis.",
+     "p": [
+      "Les roulades traversent le dos en diagonale, d'une épaule à la hanche opposée, jamais sur la nuque.",
+      "Garder le corps rond, comme une roue, permet à la roulade de rester fluide et douce.",
+      "Les enseignants commencent par de petits balancements et progressent quand l'élève se sent prêt."
+     ],
+     "q": "Faisais-tu des roulades enfant ? Que ressens-tu aujourd'hui à l'idée de rouler ?",
+     "c": "Allongé sur un tapis moelleux, serre tes genoux et balance-toi doucement dix fois, menton rentré."
+    },
+    "it": {
+     "t": "Rotolare avanti e indietro",
+     "g": "Impara come le capriole morbide danno sicurezza sul tatami.",
+     "p": [
+      "Le rotolate attraversano la schiena in diagonale, da una spalla all'anca opposta, mai sul collo.",
+      "Tenere il corpo rotondo, come una ruota, rende la rotolata fluida e morbida.",
+      "Gli insegnanti partono da piccoli dondolii e avanzano solo quando l'allievo si sente pronto."
+     ],
+     "q": "Da bambino facevi le capriole? Come ti senti oggi all'idea di rotolare?",
+     "c": "Sdraiato su un tappeto morbido, abbraccia le ginocchia e dondola dolcemente dieci volte con il mento al petto."
+    },
+    "pt": {
+     "t": "Rolar para a frente e para trás",
+     "g": "Aprende como os rolamentos suaves dão confiança no tapete.",
+     "p": [
+      "Os rolamentos atravessam as costas na diagonal, de um ombro para a anca oposta, nunca pelo pescoço.",
+      "Manter o corpo redondo, como uma roda, deixa o rolamento fluir com suavidade.",
+      "Os professores começam com pequenos balanços e só avançam quando o aluno se sente pronto."
+     ],
+     "q": "Davas cambalhotas em criança? O que sentes agora ao pensar em rolar?",
+     "c": "Deitado num tapete macio, abraça os joelhos e balança suavemente dez vezes com o queixo recolhido."
+    },
+    "pt_BR": {
+     "t": "Rolando para a frente e para trás",
+     "g": "Aprenda como os rolamentos suaves trazem confiança no tatame.",
+     "p": [
+      "Os rolamentos cruzam as costas na diagonal, de um ombro ao quadril oposto, nunca pelo pescoço.",
+      "Manter o corpo redondo, como uma roda, deixa o rolamento fluir com suavidade.",
+      "Os professores começam com pequenos balanços e só avançam quando o aluno se sente pronto."
+     ],
+     "q": "Você dava cambalhotas quando criança? O que sente agora ao pensar em rolar?",
+     "c": "Deitado num tapete macio, abrace os joelhos e balance suavemente dez vezes com o queixo recolhido."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hygiene in martial arts",
+     "g": "Understand why clean habits matter so much on shared mats.",
+     "p": [
+      "A freshly washed uniform and clean body show respect for everyone you train with.",
+      "Short, clean fingernails and toenails prevent scratches during partner work.",
+      "Wear sandals off the mat, wash your feet and stay home if you feel unwell or have a skin problem."
+     ],
+     "q": "Which of these hygiene habits do you think people forget most often?",
+     "c": "Check your nails today and prepare a small training bag with a towel, water bottle and sandals."
+    },
+    "de": {
+     "t": "Hygiene in der Kampfkunst",
+     "g": "Verstehe, warum saubere Gewohnheiten auf gemeinsamen Matten so wichtig sind.",
+     "p": [
+      "Ein frisch gewaschener Anzug und ein sauberer Körper zeigen Respekt vor allen Trainingspartnern.",
+      "Kurze, saubere Finger- und Fußnägel verhindern Kratzer bei Partnerübungen.",
+      "Trag neben der Matte Schlappen, wasch dir die Füße und bleib zu Hause, wenn du krank bist oder ein Hautproblem hast."
+     ],
+     "q": "Welche dieser Hygienegewohnheiten vergessen Menschen deiner Meinung nach am häufigsten?",
+     "c": "Prüf heute deine Nägel und pack eine kleine Trainingstasche mit Handtuch, Wasserflasche und Schlappen."
+    },
+    "es": {
+     "t": "Higiene en las artes marciales",
+     "g": "Entiende por qué los hábitos de limpieza importan tanto en un tatami compartido.",
+     "p": [
+      "Un uniforme recién lavado y un cuerpo limpio muestran respeto por todos tus compañeros.",
+      "Las uñas de manos y pies cortas y limpias evitan arañazos en el trabajo en pareja.",
+      "Usa chanclas fuera del tatami, lávate los pies y quédate en casa si te encuentras mal o tienes un problema de piel."
+     ],
+     "q": "¿Cuál de estos hábitos de higiene crees que la gente olvida más a menudo?",
+     "c": "Revisa hoy tus uñas y prepara una pequeña bolsa de entrenamiento con toalla, botella de agua y chanclas."
+    },
+    "fr": {
+     "t": "L'hygiène dans les arts martiaux",
+     "g": "Comprends pourquoi les bonnes habitudes d'hygiène comptent tant sur des tapis partagés.",
+     "p": [
+      "Une tenue fraîchement lavée et un corps propre montrent du respect pour tous tes partenaires.",
+      "Des ongles des mains et des pieds courts et propres évitent les griffures dans le travail à deux.",
+      "Porte des sandales hors du tapis, lave-toi les pieds et reste chez toi si tu es malade ou as un souci de peau."
+     ],
+     "q": "Selon toi, laquelle de ces habitudes d'hygiène est le plus souvent oubliée ?",
+     "c": "Vérifie tes ongles aujourd'hui et prépare un petit sac avec serviette, gourde et sandales."
+    },
+    "it": {
+     "t": "L'igiene nelle arti marziali",
+     "g": "Capisci perché le buone abitudini igieniche contano tanto su un tatami condiviso.",
+     "p": [
+      "Una divisa appena lavata e un corpo pulito mostrano rispetto per tutti i compagni.",
+      "Unghie di mani e piedi corte e pulite evitano graffi nel lavoro in coppia.",
+      "Usa le ciabatte fuori dal tatami, lavati i piedi e resta a casa se non stai bene o hai un problema alla pelle."
+     ],
+     "q": "Quale di queste abitudini igieniche secondo te viene dimenticata più spesso?",
+     "c": "Controlla le unghie oggi e prepara una piccola borsa con asciugamano, borraccia e ciabatte."
+    },
+    "pt": {
+     "t": "Higiene nas artes marciais",
+     "g": "Percebe porque os hábitos de higiene contam tanto num tapete partilhado.",
+     "p": [
+      "Um uniforme acabado de lavar e um corpo limpo mostram respeito por todos os parceiros.",
+      "Unhas das mãos e dos pés curtas e limpas evitam arranhões no trabalho a pares.",
+      "Usa chinelos fora do tapete, lava os pés e fica em casa se estiveres doente ou tiveres um problema de pele."
+     ],
+     "q": "Qual destes hábitos de higiene achas que as pessoas esquecem mais vezes?",
+     "c": "Verifica hoje as unhas e prepara um pequeno saco de treino com toalha, garrafa de água e chinelos."
+    },
+    "pt_BR": {
+     "t": "Higiene nas artes marciais",
+     "g": "Entenda por que os hábitos de higiene importam tanto num tatame compartilhado.",
+     "p": [
+      "Um uniforme recém-lavado e um corpo limpo mostram respeito por todos os parceiros.",
+      "Unhas das mãos e dos pés curtas e limpas evitam arranhões no trabalho em dupla.",
+      "Use chinelos fora do tatame, lave os pés e fique em casa se estiver doente ou com algum problema de pele."
+     ],
+     "q": "Qual desses hábitos de higiene você acha que as pessoas mais esquecem?",
+     "c": "Confira suas unhas hoje e monte uma pequena bolsa de treino com toalha, garrafa de água e chinelos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: two months of basics",
+     "g": "Look back at stances, movement, falls and etiquette and choose a focus.",
+     "p": [
+      "You learned posture, the ready, natural, front, back and horse stances, and how to move between them.",
+      "You explored warm-ups, breathing, balance, flexibility, core strength, blocks and kicks as exercise.",
+      "You discovered safe falls, controlled partner work and the hygiene that keeps mats healthy."
+     ],
+     "q": "Which basic skill from these two months would you most like to keep improving?",
+     "c": "Choose one basic to practise for five minutes a day this week and note how it feels each day."
+    },
+    "de": {
+     "t": "Rückblick: zwei Monate Grundlagen",
+     "g": "Blick auf Stände, Bewegung, Fallen und Etikette zurück und wähl einen Schwerpunkt.",
+     "p": [
+      "Du hast Haltung, Bereitschafts-, natürlichen, Vorwärts-, Rückwärts- und Reiterstand und die Übergänge gelernt.",
+      "Du hast Aufwärmen, Atmung, Gleichgewicht, Beweglichkeit, Rumpfkraft, Abwehr und Tritte als Übung erkundet.",
+      "Du kennst sicheres Fallen, kontrollierte Partnerarbeit und die Hygiene, die Matten gesund hält."
+     ],
+     "q": "Welche Grundfertigkeit aus diesen zwei Monaten möchtest du am liebsten weiter verbessern?",
+     "c": "Wähl eine Grundlage, die du diese Woche täglich fünf Minuten übst, und notier, wie es sich jeden Tag anfühlt."
+    },
+    "es": {
+     "t": "Repaso: dos meses de bases",
+     "g": "Repasa posiciones, movimiento, caídas y etiqueta y elige un objetivo.",
+     "p": [
+      "Aprendiste la postura, las posiciones de preparado, natural, adelantada, atrasada y del jinete, y a moverte entre ellas.",
+      "Exploraste calentamiento, respiración, equilibrio, flexibilidad, core, bloqueos y patadas como ejercicio.",
+      "Descubriste las caídas seguras, el trabajo controlado en pareja y la higiene que cuida el tatami."
+     ],
+     "q": "¿Qué habilidad básica de estos dos meses te gustaría seguir mejorando?",
+     "c": "Elige una base para practicar cinco minutos al día esta semana y anota cómo te sientes cada día."
+    },
+    "fr": {
+     "t": "Bilan : deux mois de bases",
+     "g": "Repense aux positions, aux déplacements, aux chutes et à l'étiquette, et choisis un axe de travail.",
+     "p": [
+      "Tu as appris la posture, les positions de préparation, naturelle, avant, arrière et du cavalier, et à passer de l'une à l'autre.",
+      "Tu as exploré échauffement, respiration, équilibre, souplesse, gainage, blocages et coups de pied en exercice.",
+      "Tu as découvert les chutes en sécurité, le travail à deux contrôlé et l'hygiène qui garde les tapis sains."
+     ],
+     "q": "Quelle compétence de base de ces deux mois aimerais-tu le plus continuer à améliorer ?",
+     "c": "Choisis une base à pratiquer cinq minutes par jour cette semaine et note ton ressenti chaque jour."
+    },
+    "it": {
+     "t": "Ripasso: due mesi di basi",
+     "g": "Ripensa a posizioni, movimento, cadute ed etichetta e scegli un obiettivo.",
+     "p": [
+      "Hai imparato la postura, le posizioni di pronti, naturale, frontale, arretrata e del cavaliere, e come passare dall'una all'altra.",
+      "Hai esplorato riscaldamento, respiro, equilibrio, flessibilità, core, parate e calci come esercizio.",
+      "Hai scoperto le cadute sicure, il lavoro in coppia controllato e l'igiene che mantiene sano il tatami."
+     ],
+     "q": "Quale abilità di base di questi due mesi vorresti continuare a migliorare?",
+     "c": "Scegli una base da praticare cinque minuti al giorno questa settimana e annota come ti senti ogni giorno."
+    },
+    "pt": {
+     "t": "Revisão: dois meses de bases",
+     "g": "Revê posições, movimento, quedas e etiqueta e escolhe um foco.",
+     "p": [
+      "Aprendeste a postura, as posições de pronto, natural, avançada, recuada e do cavaleiro, e a passar de uma para outra.",
+      "Exploraste aquecimento, respiração, equilíbrio, flexibilidade, core, defesas e pontapés como exercício.",
+      "Descobriste as quedas seguras, o trabalho a pares controlado e a higiene que mantém o tapete saudável."
+     ],
+     "q": "Que competência básica destes dois meses gostarias mais de continuar a melhorar?",
+     "c": "Escolhe uma base para praticar cinco minutos por dia esta semana e anota como te sentes em cada dia."
+    },
+    "pt_BR": {
+     "t": "Revisão: dois meses de base",
+     "g": "Revise bases, movimento, quedas e etiqueta e escolha um foco.",
+     "p": [
+      "Você aprendeu a postura, as bases de pronto, natural, avançada, recuada e do cavaleiro, e a passar de uma para outra.",
+      "Explorou aquecimento, respiração, equilíbrio, flexibilidade, core, defesas e chutes como exercício.",
+      "Descobriu as quedas seguras, o trabalho em dupla controlado e a higiene que mantém o tatame saudável."
+     ],
+     "q": "Qual habilidade básica destes dois meses você mais gostaria de continuar melhorando?",
+     "c": "Escolha um fundamento para praticar cinco minutos por dia esta semana e anote como se sente a cada dia."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a kata is",
+     "g": "Discover kata, pre-arranged sequences that preserve and teach a style.",
+     "p": [
+      "A kata is a set pattern of movements performed solo, a kind of living textbook of a style.",
+      "Korean arts call them poomsae or hyung, and Chinese arts call them taolu.",
+      "Practising forms trains memory, rhythm, balance and focus, and connects you to generations of students."
+     ],
+     "q": "Why do you think traditions chose movement sequences to pass on their knowledge?",
+     "c": "Create a tiny form of your own: four steps and two blocks in a fixed order, and repeat it three times."
+    },
+    "de": {
+     "t": "Was eine Kata ist",
+     "g": "Entdecke die Kata, festgelegte Abläufe, die einen Stil bewahren und lehren.",
+     "p": [
+      "Eine Kata ist eine feste Bewegungsfolge, die man allein ausführt, eine Art lebendiges Lehrbuch eines Stils.",
+      "Koreanische Künste nennen sie Poomsae oder Hyung, chinesische Künste Taolu.",
+      "Formen schulen Gedächtnis, Rhythmus, Gleichgewicht und Konzentration und verbinden dich mit Generationen von Schülern."
+     ],
+     "q": "Warum haben Traditionen wohl Bewegungsfolgen gewählt, um ihr Wissen weiterzugeben?",
+     "c": "Erfinde eine kleine eigene Form: vier Schritte und zwei Abwehrbewegungen in fester Folge, dreimal wiederholt."
+    },
+    "es": {
+     "t": "Qué es un kata",
+     "g": "Descubre el kata, secuencias prefijadas que conservan y enseñan un estilo.",
+     "p": [
+      "Un kata es una serie fija de movimientos que se hace en solitario, como un libro de texto vivo de un estilo.",
+      "Las artes coreanas las llaman poomsae o hyung, y las chinas, taolu.",
+      "Practicar formas entrena memoria, ritmo, equilibrio y concentración, y te une a generaciones de alumnos."
+     ],
+     "q": "¿Por qué crees que las tradiciones eligieron secuencias de movimiento para transmitir su saber?",
+     "c": "Crea una forma propia muy corta: cuatro pasos y dos bloqueos en un orden fijo, y repítela tres veces."
+    },
+    "fr": {
+     "t": "Ce qu'est un kata",
+     "g": "Découvre le kata, des enchaînements prédéfinis qui préservent et transmettent un style.",
+     "p": [
+      "Un kata est une suite fixe de mouvements exécutée seul, une sorte de manuel vivant d'un style.",
+      "Les arts coréens les appellent poomsae ou hyung, les arts chinois taolu.",
+      "Pratiquer les formes entraîne mémoire, rythme, équilibre et concentration, et te relie à des générations d'élèves."
+     ],
+     "q": "Pourquoi, selon toi, les traditions ont-elles choisi des enchaînements pour transmettre leur savoir ?",
+     "c": "Crée ta propre petite forme : quatre pas et deux blocages dans un ordre fixe, et répète-la trois fois."
+    },
+    "it": {
+     "t": "Cos'è un kata",
+     "g": "Scopri il kata, sequenze prestabilite che conservano e insegnano uno stile.",
+     "p": [
+      "Un kata è una serie fissa di movimenti eseguita da soli, una specie di libro di testo vivente di uno stile.",
+      "Le arti coreane le chiamano poomsae o hyung, quelle cinesi taolu.",
+      "Praticare le forme allena memoria, ritmo, equilibrio e concentrazione, e ti lega a generazioni di allievi."
+     ],
+     "q": "Perché secondo te le tradizioni hanno scelto sequenze di movimento per tramandare il loro sapere?",
+     "c": "Crea una tua piccola forma: quattro passi e due parate in ordine fisso, e ripetila tre volte."
+    },
+    "pt": {
+     "t": "O que é um kata",
+     "g": "Descobre o kata, sequências pré-definidas que preservam e ensinam um estilo.",
+     "p": [
+      "Um kata é uma série fixa de movimentos feita a solo, uma espécie de manual vivo de um estilo.",
+      "As artes coreanas chamam-lhes poomsae ou hyung, e as chinesas, taolu.",
+      "Praticar formas treina memória, ritmo, equilíbrio e concentração, e liga-te a gerações de alunos."
+     ],
+     "q": "Porque achas que as tradições escolheram sequências de movimento para passar o seu saber?",
+     "c": "Cria uma pequena forma tua: quatro passos e duas defesas numa ordem fixa, e repete-a três vezes."
+    },
+    "pt_BR": {
+     "t": "O que é um kata",
+     "g": "Descubra o kata, sequências pré-definidas que preservam e ensinam um estilo.",
+     "p": [
+      "Um kata é uma série fixa de movimentos feita sozinho, uma espécie de livro didático vivo de um estilo.",
+      "As artes coreanas chamam de poomsae ou hyung, e as chinesas, de taolu.",
+      "Praticar formas treina memória, ritmo, equilíbrio e foco, e conecta você a gerações de alunos."
+     ],
+     "q": "Por que você acha que as tradições escolheram sequências de movimento para passar seu conhecimento?",
+     "c": "Crie uma pequena forma sua: quatro passos e duas defesas numa ordem fixa, e repita três vezes."
+    }
+   }
+  }
+ ]
+}

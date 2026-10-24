@@ -1,0 +1,835 @@
+{
+ "topic": "cycling",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Road rules for cyclists",
+     "g": "Learn the general traffic principles cyclists share and why local rules differ.",
+     "p": [
+      "In most places a bike counts as a vehicle: ride with the flow of traffic and obey lights, signs and right of way.",
+      "Countries drive on different sides of the road and differ on helmets, pavements, lights and riding side by side.",
+      "Before riding somewhere new, check the official local cycling rules, often published by the transport authority."
+     ],
+     "q": "Do you know any cycling rule that surprised you, at home or abroad?",
+     "c": "Look up three official cycling rules for the place where you live or ride."
+    },
+    "de": {
+     "t": "Verkehrsregeln für Radfahrende",
+     "g": "Lerne die allgemeinen Verkehrsgrundsätze kennen und warum lokale Regeln sich unterscheiden.",
+     "p": [
+      "Meist gilt das Rad als Fahrzeug: Fahr in Verkehrsrichtung und beachte Ampeln, Schilder und Vorfahrt.",
+      "Länder fahren auf verschiedenen Straßenseiten und regeln Helm, Gehwege, Licht und Nebeneinanderfahren unterschiedlich.",
+      "Prüf vor Fahrten an neuen Orten die offiziellen Radregeln, oft veröffentlicht von der Verkehrsbehörde."
+     ],
+     "q": "Kennst du eine Radregel, die dich überrascht hat, zu Hause oder im Ausland?",
+     "c": "Such drei offizielle Radregeln für den Ort heraus, an dem du wohnst oder fährst."
+    },
+    "es": {
+     "t": "Normas de circulación para ciclistas",
+     "g": "Aprende los principios generales de tráfico para ciclistas y por qué las normas locales varían.",
+     "p": [
+      "En casi todas partes la bici es un vehículo: circula en el sentido del tráfico y respeta semáforos, señales y preferencias.",
+      "Los países circulan por lados distintos y regulan de forma diferente casco, aceras, luces y circular en paralelo.",
+      "Antes de pedalear en un lugar nuevo, consulta las normas oficiales, a menudo publicadas por la autoridad de tráfico."
+     ],
+     "q": "¿Conoces alguna norma ciclista que te sorprendiera, en casa o en el extranjero?",
+     "c": "Busca tres normas oficiales para ciclistas del lugar donde vives o pedaleas."
+    },
+    "fr": {
+     "t": "Code de la route pour cyclistes",
+     "g": "Apprends les grands principes de circulation à vélo et pourquoi les règles locales varient.",
+     "p": [
+      "Presque partout, le vélo est un véhicule : roule dans le sens de la circulation et respecte feux, panneaux et priorités.",
+      "Les pays roulent de côtés différents et ont des règles variées sur casque, trottoirs, éclairage et circulation à deux de front.",
+      "Avant de rouler dans un nouvel endroit, consulte les règles officielles, souvent publiées par l'autorité des transports."
+     ],
+     "q": "Connais-tu une règle vélo qui t'a surpris, chez toi ou à l'étranger ?",
+     "c": "Cherche trois règles officielles pour les cyclistes là où tu vis ou roules."
+    },
+    "it": {
+     "t": "Le regole della strada per ciclisti",
+     "g": "Impara i principi generali del traffico per chi pedala e perché le regole locali cambiano.",
+     "p": [
+      "Quasi ovunque la bici è un veicolo: viaggia nel senso di marcia e rispetta semafori, segnali e precedenze.",
+      "I paesi guidano su lati diversi e regolano in modo diverso casco, marciapiedi, luci e marcia affiancata.",
+      "Prima di pedalare in un posto nuovo, consulta le regole ufficiali, spesso pubblicate dall'autorità dei trasporti."
+     ],
+     "q": "Conosci una regola per ciclisti che ti ha sorpreso, a casa o all'estero?",
+     "c": "Cerca tre regole ufficiali per ciclisti del luogo in cui vivi o pedali."
+    },
+    "pt": {
+     "t": "Regras de trânsito para ciclistas",
+     "g": "Aprende os princípios gerais de trânsito para ciclistas e porque é que as regras locais variam.",
+     "p": [
+      "Na maioria dos sítios a bicicleta é um veículo: circula no sentido do trânsito e respeita semáforos, sinais e prioridades.",
+      "Os países circulam em lados diferentes e têm regras distintas sobre capacete, passeios, luzes e circular lado a lado.",
+      "Antes de pedalar num sítio novo, consulta as regras oficiais, muitas vezes publicadas pela autoridade de trânsito."
+     ],
+     "q": "Conheces alguma regra para ciclistas que te tenha surpreendido, cá ou no estrangeiro?",
+     "c": "Procura três regras oficiais para ciclistas do sítio onde vives ou pedalas."
+    },
+    "pt_BR": {
+     "t": "Regras de trânsito para ciclistas",
+     "g": "Aprenda os princípios gerais de trânsito para ciclistas e por que as regras locais variam.",
+     "p": [
+      "Na maioria dos lugares a bike é um veículo: pedale no sentido do trânsito e respeite semáforos, placas e preferências.",
+      "Os países dirigem em lados diferentes e têm regras distintas sobre capacete, calçadas, luzes e pedalar lado a lado.",
+      "Antes de pedalar num lugar novo, confira as regras oficiais, muitas vezes publicadas pelo órgão de trânsito local."
+     ],
+     "q": "Você conhece alguma regra para ciclistas que surpreendeu você, aqui ou no exterior?",
+     "c": "Pesquise três regras oficiais para ciclistas do lugar onde você mora ou pedala."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bike lanes and paths",
+     "g": "Get to know the different kinds of cycling infrastructure and how to use them well.",
+     "p": [
+      "Painted lanes share the road with cars, while protected lanes have a kerb, posts or parking between you and traffic.",
+      "Off-road paths and greenways separate bikes from cars entirely; some are shared with people walking.",
+      "Watch for markings and signs that show where bikes go, and stay alert where lanes end or cross side roads."
+     ],
+     "q": "What kind of bike lanes or paths exist where you live?",
+     "c": "Find the nearest bike lane or path on a map and plan a short ride along it."
+    },
+    "de": {
+     "t": "Radwege und Radspuren",
+     "g": "Lerne die verschiedenen Arten von Radinfrastruktur kennen und wie du sie gut nutzt.",
+     "p": [
+      "Markierte Radspuren teilen sich die Fahrbahn mit Autos, geschützte Radwege haben Bordstein, Poller oder Parkplätze dazwischen.",
+      "Separate Radwege und Grünzüge trennen Rad und Auto komplett; manche teilst du mit Fußgängern.",
+      "Achte auf Markierungen und Schilder, wo Räder fahren, und bleib aufmerksam, wo Radwege enden oder Einfahrten kreuzen."
+     ],
+     "q": "Welche Radwege oder Radspuren gibt es dort, wo du wohnst?",
+     "c": "Such auf einer Karte den nächsten Radweg und plane eine kurze Fahrt darauf."
+    },
+    "es": {
+     "t": "Carriles y vías ciclistas",
+     "g": "Conoce los distintos tipos de infraestructura ciclista y cómo usarlos bien.",
+     "p": [
+      "Los carriles pintados comparten calzada con los coches; los protegidos tienen bordillo, bolardos o aparcamiento de por medio.",
+      "Las vías verdes y caminos separados apartan por completo la bici del coche; algunos se comparten con peatones.",
+      "Fíjate en marcas y señales que indican por dónde van las bicis y presta atención donde el carril acaba o cruza calles."
+     ],
+     "q": "¿Qué tipo de carriles o vías ciclistas hay donde vives?",
+     "c": "Busca en un mapa el carril bici más cercano y planea un paseo corto por él."
+    },
+    "fr": {
+     "t": "Pistes et bandes cyclables",
+     "g": "Découvre les différents types d'aménagements cyclables et comment bien les utiliser.",
+     "p": [
+      "Les bandes peintes partagent la chaussée avec les voitures ; les pistes protégées ont une bordure ou des potelets en plus.",
+      "Les voies vertes séparent totalement vélos et voitures ; certaines sont partagées avec les piétons.",
+      "Repère marquages et panneaux qui indiquent où passent les vélos, et reste attentif là où les pistes s'arrêtent ou croisent des rues."
+     ],
+     "q": "Quels types de pistes ou bandes cyclables existent là où tu vis ?",
+     "c": "Trouve sur une carte la piste cyclable la plus proche et prévois une petite balade dessus."
+    },
+    "it": {
+     "t": "Piste e corsie ciclabili",
+     "g": "Conosci i diversi tipi di infrastrutture ciclabili e come usarli bene.",
+     "p": [
+      "Le corsie dipinte condividono la strada con le auto; quelle protette hanno un cordolo, paletti o parcheggi in mezzo.",
+      "Le ciclovie e le greenway separano del tutto bici e auto; alcune sono condivise con i pedoni.",
+      "Fai attenzione a segnaletica e simboli che indicano dove passano le bici, e resta attento dove le piste finiscono o incrociano strade."
+     ],
+     "q": "Che tipo di piste o corsie ciclabili ci sono dove vivi?",
+     "c": "Trova su una mappa la pista ciclabile più vicina e pianifica un breve giro lungo di essa."
+    },
+    "pt": {
+     "t": "Ciclovias e pistas cicláveis",
+     "g": "Conhece os vários tipos de infraestrutura para bicicletas e como os usar bem.",
+     "p": [
+      "As faixas pintadas partilham a estrada com os carros; as protegidas têm lancil, pilaretes ou estacionamento pelo meio.",
+      "As ecopistas e caminhos segregados separam totalmente bicicletas e carros; alguns são partilhados com peões.",
+      "Repara nas marcas e sinais que mostram por onde vão as bicicletas e fica atento onde a ciclovia acaba ou cruza ruas."
+     ],
+     "q": "Que tipo de ciclovias ou pistas existem onde vives?",
+     "c": "Encontra num mapa a ciclovia mais próxima e planeia um passeio curto por ela."
+    },
+    "pt_BR": {
+     "t": "Ciclovias e ciclofaixas",
+     "g": "Conheça os diferentes tipos de estrutura cicloviária e como usá-los bem.",
+     "p": [
+      "As ciclofaixas pintadas dividem a rua com os carros; as ciclovias protegidas têm meio-fio, balizadores ou vagas no meio.",
+      "Parques lineares e caminhos segregados separam totalmente bike e carro; alguns são compartilhados com pedestres.",
+      "Repare nas marcas e placas que mostram por onde as bikes vão e fique atento onde a ciclovia acaba ou cruza ruas."
+     ],
+     "q": "Que tipo de ciclovias ou ciclofaixas existem onde você mora?",
+     "c": "Encontre num mapa a ciclovia mais próxima e planeje um pedal curto por ela."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riding with traffic",
+     "g": "Ride predictably and confidently so drivers understand your next move.",
+     "p": [
+      "Ride in a straight, steady line and avoid weaving in and out between parked cars.",
+      "Keep a clear distance from parked car doors and take a more central position where the road is too narrow to pass safely.",
+      "Make eye contact with drivers at junctions and driveways, and never assume they have seen you."
+     ],
+     "q": "What feels hardest for you about riding near cars?",
+     "c": "On a quiet street, practise holding a steady line about a door's width away from parked cars."
+    },
+    "de": {
+     "t": "Im Verkehr mitfahren",
+     "g": "Fahr vorhersehbar und selbstbewusst, damit Autofahrer deinen nächsten Schritt verstehen.",
+     "p": [
+      "Fahr in einer geraden, ruhigen Linie und schlängel dich nicht zwischen parkenden Autos hin und her.",
+      "Halte Abstand zu Autotüren und fahr weiter mittig, wo die Straße zum sicheren Überholen zu eng ist.",
+      "Such an Kreuzungen und Einfahrten Blickkontakt und geh nie davon aus, dass man dich gesehen hat."
+     ],
+     "q": "Was fällt dir beim Fahren neben Autos am schwersten?",
+     "c": "Übe in einer ruhigen Straße, eine gerade Linie etwa eine Türbreite neben parkenden Autos zu halten."
+    },
+    "es": {
+     "t": "Circular con el tráfico",
+     "g": "Pedalea de forma predecible y segura para que los conductores entiendan tu siguiente movimiento.",
+     "p": [
+      "Mantén una línea recta y estable y evita zigzaguear entre coches aparcados.",
+      "Deja distancia con las puertas de los coches aparcados y ocupa una posición más central donde no quepa un adelantamiento seguro.",
+      "Busca el contacto visual con los conductores en cruces y salidas, y nunca des por hecho que te han visto."
+     ],
+     "q": "¿Qué te resulta más difícil al pedalear cerca de coches?",
+     "c": "En una calle tranquila, practica mantener una línea recta a una puerta de distancia de los coches aparcados."
+    },
+    "fr": {
+     "t": "Rouler dans la circulation",
+     "g": "Roule de façon prévisible et assurée pour que les conducteurs comprennent ta prochaine action.",
+     "p": [
+      "Garde une trajectoire droite et régulière et évite de zigzaguer entre les voitures garées.",
+      "Reste à distance des portières et prends une position plus centrale là où la route est trop étroite pour un dépassement sûr.",
+      "Cherche le regard des conducteurs aux carrefours et sorties, et ne suppose jamais qu'ils t'ont vu."
+     ],
+     "q": "Qu'est-ce qui te paraît le plus difficile quand tu roules près des voitures ?",
+     "c": "Dans une rue calme, entraîne-toi à garder une ligne droite à une largeur de portière des voitures garées."
+    },
+    "it": {
+     "t": "Pedalare nel traffico",
+     "g": "Pedala in modo prevedibile e sicuro perché chi guida capisca la tua prossima mossa.",
+     "p": [
+      "Mantieni una linea dritta e costante ed evita di zigzagare tra le auto parcheggiate.",
+      "Stai a distanza dalle portiere delle auto in sosta e stai più al centro dove la strada è troppo stretta per un sorpasso sicuro.",
+      "Cerca il contatto visivo con chi guida a incroci e passi carrabili, e non dare mai per scontato che ti abbiano visto."
+     ],
+     "q": "Cosa trovi più difficile pedalando vicino alle auto?",
+     "c": "In una strada tranquilla, esercitati a tenere una linea dritta a una portiera di distanza dalle auto parcheggiate."
+    },
+    "pt": {
+     "t": "Pedalar no trânsito",
+     "g": "Pedala de forma previsível e confiante para que os condutores percebam o teu próximo movimento.",
+     "p": [
+      "Mantém uma linha reta e estável e evita ziguezaguear entre carros estacionados.",
+      "Afasta-te das portas dos carros estacionados e vai mais ao centro onde a estrada for estreita demais para ultrapassar em segurança.",
+      "Procura o contacto visual com os condutores em cruzamentos e saídas e nunca assumas que te viram."
+     ],
+     "q": "O que te custa mais quando pedalas perto de carros?",
+     "c": "Numa rua calma, pratica manter uma linha reta a uma porta de distância dos carros estacionados."
+    },
+    "pt_BR": {
+     "t": "Pedalando no trânsito",
+     "g": "Pedale de forma previsível e confiante para que os motoristas entendam seu próximo movimento.",
+     "p": [
+      "Mantenha uma linha reta e estável e evite ziguezaguear entre carros estacionados.",
+      "Fique longe das portas dos carros estacionados e vá mais ao centro onde a rua for estreita demais para uma ultrapassagem segura.",
+      "Busque contato visual com os motoristas em cruzamentos e garagens e nunca assuma que eles viram você."
+     ],
+     "q": "O que é mais difícil para você ao pedalar perto de carros?",
+     "c": "Numa rua tranquila, pratique manter uma linha reta a uma porta de distância dos carros estacionados."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Junctions and roundabouts",
+     "g": "Approach intersections calmly, clearly and with a plan.",
+     "p": [
+      "Slow down early, look in every direction and choose your position before you reach the junction.",
+      "Watch especially for vehicles turning across your path, and stay out of large vehicles' blind spots.",
+      "At roundabouts, ride predictably, signal your exit and follow local guidance; if unsure, use a crossing on foot."
+     ],
+     "q": "Is there a junction on your usual routes that makes you nervous?",
+     "c": "Watch a busy junction for five minutes and notice how bikes and cars move through it."
+    },
+    "de": {
+     "t": "Kreuzungen und Kreisverkehre",
+     "g": "Fahr ruhig, klar und mit Plan an Kreuzungen heran.",
+     "p": [
+      "Werde früh langsamer, schau in alle Richtungen und wähle deine Position, bevor du die Kreuzung erreichst.",
+      "Achte besonders auf abbiegende Fahrzeuge, die deinen Weg kreuzen, und meide den toten Winkel großer Fahrzeuge.",
+      "Im Kreisverkehr fährst du vorhersehbar, zeigst die Ausfahrt an und folgst den lokalen Regeln; im Zweifel schieben."
+     ],
+     "q": "Gibt es auf deinen üblichen Wegen eine Kreuzung, die dich nervös macht?",
+     "c": "Beobachte fünf Minuten lang eine belebte Kreuzung und achte darauf, wie Räder und Autos sie passieren."
+    },
+    "es": {
+     "t": "Cruces y rotondas",
+     "g": "Acércate a las intersecciones con calma, claridad y un plan.",
+     "p": [
+      "Reduce pronto, mira en todas direcciones y elige tu posición antes de llegar al cruce.",
+      "Vigila sobre todo a los vehículos que giran cruzando tu camino y evita los ángulos muertos de los vehículos grandes.",
+      "En las rotondas, circula de forma predecible, señaliza la salida y sigue las normas locales; si dudas, cruza a pie."
+     ],
+     "q": "¿Hay algún cruce en tus rutas habituales que te ponga nervioso?",
+     "c": "Observa un cruce concurrido durante cinco minutos y fíjate en cómo lo atraviesan bicis y coches."
+    },
+    "fr": {
+     "t": "Carrefours et ronds-points",
+     "g": "Aborde les intersections calmement, clairement et avec un plan.",
+     "p": [
+      "Ralentis tôt, regarde dans toutes les directions et choisis ta position avant d'arriver au carrefour.",
+      "Surveille surtout les véhicules qui tournent en coupant ta route, et évite les angles morts des gros véhicules.",
+      "Dans les ronds-points, roule de façon prévisible, signale ta sortie et suis les règles locales ; en cas de doute, traverse à pied."
+     ],
+     "q": "Y a-t-il un carrefour sur tes trajets qui te rend nerveux ?",
+     "c": "Observe un carrefour animé pendant cinq minutes et regarde comment vélos et voitures le traversent."
+    },
+    "it": {
+     "t": "Incroci e rotatorie",
+     "g": "Avvicinati agli incroci con calma, chiarezza e un piano.",
+     "p": [
+      "Rallenta presto, guarda in ogni direzione e scegli la tua posizione prima di arrivare all'incrocio.",
+      "Fai attenzione soprattutto ai veicoli che svoltano tagliandoti la strada e resta fuori dagli angoli ciechi dei mezzi grandi.",
+      "Nelle rotatorie procedi in modo prevedibile, segnala l'uscita e segui le regole locali; se hai dubbi, attraversa a piedi."
+     ],
+     "q": "C'è un incrocio sui tuoi percorsi abituali che ti rende nervoso?",
+     "c": "Osserva un incrocio trafficato per cinque minuti e nota come lo attraversano bici e auto."
+    },
+    "pt": {
+     "t": "Cruzamentos e rotundas",
+     "g": "Aproxima-te dos cruzamentos com calma, clareza e um plano.",
+     "p": [
+      "Abranda cedo, olha em todas as direções e escolhe a tua posição antes de chegares ao cruzamento.",
+      "Atenção sobretudo aos veículos que viram e cortam o teu caminho, e fica fora dos ângulos mortos dos veículos grandes.",
+      "Nas rotundas, circula de forma previsível, sinaliza a saída e segue as regras locais; se tiveres dúvidas, atravessa a pé."
+     ],
+     "q": "Há algum cruzamento nos teus percursos habituais que te deixe nervoso?",
+     "c": "Observa um cruzamento movimentado durante cinco minutos e repara como bicicletas e carros o atravessam."
+    },
+    "pt_BR": {
+     "t": "Cruzamentos e rotatórias",
+     "g": "Chegue aos cruzamentos com calma, clareza e um plano.",
+     "p": [
+      "Reduza cedo, olhe em todas as direções e escolha sua posição antes de chegar ao cruzamento.",
+      "Fique de olho principalmente nos veículos que viram cortando seu caminho e evite os pontos cegos de veículos grandes.",
+      "Nas rotatórias, pedale de forma previsível, sinalize a saída e siga as regras locais; na dúvida, atravesse a pé."
+     ],
+     "q": "Tem algum cruzamento nos seus trajetos que deixa você nervoso?",
+     "c": "Observe um cruzamento movimentado por cinco minutos e repare como bikes e carros passam por ele."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being visible",
+     "g": "Make yourself easy to spot with lights, bright colours and smart positioning.",
+     "p": [
+      "Bright, fluorescent colours stand out by day, while reflective details shine in headlights at night.",
+      "Reflective bits on moving parts like ankles, pedals and wheels catch the eye of drivers especially well.",
+      "Position matters too: ride where drivers naturally look, not hidden in the gutter or behind parked cars."
+     ],
+     "q": "What could you add to your bike or clothes to be seen more easily?",
+     "c": "Ask a friend to look at you on your bike from a distance and tell you how visible you are."
+    },
+    "de": {
+     "t": "Sichtbar sein",
+     "g": "Mach dich mit Licht, hellen Farben und kluger Position gut erkennbar.",
+     "p": [
+      "Leuchtende Neonfarben fallen tagsüber auf, reflektierende Details leuchten nachts im Scheinwerferlicht.",
+      "Reflektoren an bewegten Stellen wie Knöcheln, Pedalen und Rädern fallen Autofahrern besonders gut auf.",
+      "Auch die Position zählt: Fahr dort, wohin Autofahrer natürlich schauen, nicht versteckt am Rand oder hinter Autos."
+     ],
+     "q": "Was könntest du an Rad oder Kleidung ergänzen, um besser gesehen zu werden?",
+     "c": "Bitte jemanden, dich auf dem Rad aus der Ferne anzuschauen und zu sagen, wie gut man dich sieht."
+    },
+    "es": {
+     "t": "Ser visible",
+     "g": "Hazte fácil de ver con luces, colores vivos y una buena posición.",
+     "p": [
+      "Los colores vivos y fluorescentes destacan de día, y los detalles reflectantes brillan con los faros de noche.",
+      "Los reflectantes en partes que se mueven, como tobillos, pedales y ruedas, llaman mucho la atención de los conductores.",
+      "La posición también cuenta: circula donde los conductores miran de forma natural, no escondido en la cuneta o tras coches."
+     ],
+     "q": "¿Qué podrías añadir a tu bici o tu ropa para que te vean mejor?",
+     "c": "Pide a alguien que te mire en la bici desde lejos y te diga lo visible que eres."
+    },
+    "fr": {
+     "t": "Être visible",
+     "g": "Rends-toi facile à repérer avec de l'éclairage, des couleurs vives et un bon placement.",
+     "p": [
+      "Les couleurs vives et fluo ressortent le jour, et les détails réfléchissants brillent dans les phares la nuit.",
+      "Les éléments réfléchissants sur les parties en mouvement, chevilles, pédales et roues, attirent particulièrement l'œil.",
+      "Le placement compte aussi : roule là où les conducteurs regardent naturellement, pas caché au bord ou derrière des voitures."
+     ],
+     "q": "Que pourrais-tu ajouter à ton vélo ou à ta tenue pour être mieux vu ?",
+     "c": "Demande à quelqu'un de te regarder à vélo de loin et de te dire à quel point tu es visible."
+    },
+    "it": {
+     "t": "Essere visibili",
+     "g": "Fatti notare facilmente con luci, colori vivaci e una posizione intelligente.",
+     "p": [
+      "I colori vivaci e fluorescenti spiccano di giorno, mentre i dettagli riflettenti brillano nei fari di notte.",
+      "I riflettenti sulle parti in movimento, come caviglie, pedali e ruote, attirano particolarmente lo sguardo di chi guida.",
+      "Anche la posizione conta: pedala dove chi guida guarda naturalmente, non nascosto sul bordo o dietro le auto."
+     ],
+     "q": "Cosa potresti aggiungere alla bici o ai vestiti per farti vedere meglio?",
+     "c": "Chiedi a qualcuno di guardarti in bici da lontano e di dirti quanto sei visibile."
+    },
+    "pt": {
+     "t": "Ser visível",
+     "g": "Torna-te fácil de ver com luzes, cores vivas e um bom posicionamento.",
+     "p": [
+      "Cores vivas e fluorescentes destacam-se de dia, e os detalhes refletores brilham com os faróis à noite.",
+      "Refletores em partes que se mexem, como tornozelos, pedais e rodas, chamam muito a atenção dos condutores.",
+      "A posição também conta: pedala onde os condutores olham naturalmente, não escondido na berma ou atrás de carros."
+     ],
+     "q": "O que poderias acrescentar à bicicleta ou à roupa para seres mais visto?",
+     "c": "Pede a alguém que te veja de bicicleta à distância e te diga se és bem visível."
+    },
+    "pt_BR": {
+     "t": "Sendo visível",
+     "g": "Fique fácil de ver com luzes, cores vivas e um bom posicionamento.",
+     "p": [
+      "Cores vivas e fluorescentes se destacam de dia, e detalhes refletivos brilham com os faróis à noite.",
+      "Refletivos em partes que se mexem, como tornozelos, pedais e rodas, chamam muito a atenção dos motoristas.",
+      "A posição também conta: pedale onde os motoristas olham naturalmente, não escondido na sarjeta ou atrás de carros."
+     ],
+     "q": "O que você poderia acrescentar à bike ou à roupa para ser visto mais facilmente?",
+     "c": "Peça a alguém para observar você na bike de longe e dizer o quanto você aparece."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing paths with walkers",
+     "g": "Pass people walking kindly and safely so shared paths stay pleasant for everyone.",
+     "p": [
+      "On shared paths, people walking usually have priority, so ride at a gentle speed you can stop from easily.",
+      "Use a friendly ring of the bell or a cheerful hello well in advance; not everyone can hear or see you.",
+      "Give plenty of space, slow right down near children and dogs, and say thanks when people make room."
+     ],
+     "q": "How do you like cyclists to pass you when you are walking?",
+     "c": "On your next shared path, greet every person you pass with a friendly word."
+    },
+    "de": {
+     "t": "Wege mit Fußgängern teilen",
+     "g": "Überhole Fußgänger freundlich und sicher, damit gemeinsame Wege für alle angenehm bleiben.",
+     "p": [
+      "Auf gemeinsamen Wegen haben Fußgänger meist Vorrang, also fahr so gemächlich, dass du leicht anhalten kannst.",
+      "Klingel freundlich oder grüß fröhlich und frühzeitig; nicht jeder kann dich hören oder sehen.",
+      "Lass viel Platz, werde bei Kindern und Hunden ganz langsam und bedank dich, wenn jemand Platz macht."
+     ],
+     "q": "Wie möchtest du von Radfahrenden überholt werden, wenn du zu Fuß gehst?",
+     "c": "Grüß auf dem nächsten gemeinsamen Weg jede Person, die du überholst, mit einem freundlichen Wort."
+    },
+    "es": {
+     "t": "Compartir caminos con peatones",
+     "g": "Adelanta a los peatones con amabilidad y seguridad para que los caminos compartidos sean agradables.",
+     "p": [
+      "En caminos compartidos los peatones suelen tener prioridad, así que ve a una velocidad suave desde la que puedas parar fácilmente.",
+      "Avisa con un toque amable de timbre o un saludo alegre con antelación; no todo el mundo te oye o te ve.",
+      "Deja mucho espacio, reduce mucho cerca de niños y perros, y da las gracias cuando te hagan sitio."
+     ],
+     "q": "¿Cómo te gusta que te adelanten los ciclistas cuando vas andando?",
+     "c": "En tu próximo camino compartido, saluda con amabilidad a cada persona que adelantes."
+    },
+    "fr": {
+     "t": "Partager les chemins avec les piétons",
+     "g": "Dépasse les piétons gentiment et prudemment pour que les voies partagées restent agréables.",
+     "p": [
+      "Sur les voies partagées, les piétons sont généralement prioritaires : roule à une allure douce qui te permet de t'arrêter facilement.",
+      "Préviens bien à l'avance avec un coup de sonnette aimable ou un bonjour joyeux ; tout le monde ne t'entend pas.",
+      "Laisse beaucoup d'espace, ralentis fortement près des enfants et des chiens, et remercie quand on te laisse passer."
+     ],
+     "q": "Comment aimes-tu que les cyclistes te dépassent quand tu marches ?",
+     "c": "Sur ta prochaine voie partagée, salue chaque personne que tu dépasses d'un mot sympa."
+    },
+    "it": {
+     "t": "Condividere i percorsi con i pedoni",
+     "g": "Supera chi cammina con gentilezza e sicurezza perché i percorsi condivisi restino piacevoli.",
+     "p": [
+      "Sui percorsi condivisi i pedoni di solito hanno la precedenza, quindi pedala piano, a una velocità da cui fermarti facilmente.",
+      "Avvisa per tempo con un colpo di campanello gentile o un saluto allegro; non tutti ti sentono o ti vedono.",
+      "Lascia molto spazio, rallenta molto vicino a bambini e cani e ringrazia quando ti fanno passare."
+     ],
+     "q": "Come ti piace essere superato dai ciclisti quando cammini?",
+     "c": "Sul prossimo percorso condiviso, saluta con una parola gentile ogni persona che superi."
+    },
+    "pt": {
+     "t": "Partilhar caminhos com peões",
+     "g": "Ultrapassa quem anda a pé com simpatia e segurança para que os caminhos partilhados sejam agradáveis.",
+     "p": [
+      "Nos caminhos partilhados os peões costumam ter prioridade, por isso pedala devagar, a uma velocidade em que pares facilmente.",
+      "Avisa com antecedência com um toque simpático de campainha ou um olá alegre; nem todos te ouvem ou veem.",
+      "Dá bastante espaço, abranda muito perto de crianças e cães e agradece quando te dão passagem."
+     ],
+     "q": "Como gostas que os ciclistas te ultrapassem quando vais a pé?",
+     "c": "No próximo caminho partilhado, cumprimenta com simpatia cada pessoa que ultrapassares."
+    },
+    "pt_BR": {
+     "t": "Dividindo caminhos com pedestres",
+     "g": "Ultrapasse quem está a pé com gentileza e segurança para que os caminhos compartilhados sejam agradáveis.",
+     "p": [
+      "Em caminhos compartilhados os pedestres costumam ter preferência, então pedale devagar, numa velocidade em que você pare fácil.",
+      "Avise com antecedência com um toque gentil de campainha ou um oi animado; nem todo mundo ouve ou vê você.",
+      "Dê bastante espaço, reduza muito perto de crianças e cachorros e agradeça quando abrirem passagem."
+     ],
+     "q": "Como você gosta que os ciclistas ultrapassem você quando está caminhando?",
+     "c": "No próximo caminho compartilhado, cumprimente com gentileza cada pessoa que você ultrapassar."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night riding",
+     "g": "Enjoy evening and night rides with strong lights, reflective details and familiar routes.",
+     "p": [
+      "Use a bright front light that lights the road ahead, not just one that makes you visible, plus a solid rear light.",
+      "Angle the front beam slightly down so it does not dazzle others, and carry a backup light or a charged battery.",
+      "Pick routes you already know by day; it is easier to spot potholes and turns when the road is familiar."
+     ],
+     "q": "Have you ever ridden at night? What did you notice that was different?",
+     "c": "Ride a short, familiar route at dusk with your lights on and note what you can and cannot see."
+    },
+    "de": {
+     "t": "Nachts fahren",
+     "g": "Genieße Abend- und Nachtfahrten mit starkem Licht, Reflektoren und bekannten Strecken.",
+     "p": [
+      "Nutze vorn ein helles Licht, das die Straße ausleuchtet, nicht nur eins zum Gesehenwerden, dazu ein kräftiges Rücklicht.",
+      "Richte den Lichtkegel leicht nach unten, um niemanden zu blenden, und nimm ein Ersatzlicht oder einen geladenen Akku mit.",
+      "Wähle Strecken, die du bei Tag kennst; auf bekannten Wegen erkennst du Schlaglöcher und Abzweige leichter."
+     ],
+     "q": "Bist du schon einmal nachts gefahren? Was war anders?",
+     "c": "Fahr in der Dämmerung mit Licht eine kurze, bekannte Runde und notiere, was du siehst und was nicht."
+    },
+    "es": {
+     "t": "Pedalear de noche",
+     "g": "Disfruta salidas al anochecer y de noche con luces potentes, reflectantes y rutas conocidas.",
+     "p": [
+      "Usa una luz delantera potente que ilumine la carretera, no solo una para ser visto, y una buena luz trasera.",
+      "Inclina un poco el haz hacia abajo para no deslumbrar y lleva una luz de repuesto o una batería cargada.",
+      "Elige rutas que ya conozcas de día; es más fácil ver baches y desvíos cuando el camino te resulta familiar."
+     ],
+     "q": "¿Alguna vez pedaleaste de noche? ¿Qué notaste diferente?",
+     "c": "Haz al atardecer una ruta corta y conocida con luces y apunta lo que ves y lo que no."
+    },
+    "fr": {
+     "t": "Rouler la nuit",
+     "g": "Profite des sorties du soir et de nuit avec un bon éclairage, des détails réfléchissants et des itinéraires connus.",
+     "p": [
+      "Utilise un phare avant qui éclaire vraiment la route, pas seulement pour être vu, et un feu arrière puissant.",
+      "Oriente le faisceau un peu vers le bas pour ne pas éblouir et emporte une lampe de secours ou une batterie chargée.",
+      "Choisis des parcours que tu connais de jour : trous et virages se repèrent plus facilement sur une route familière."
+     ],
+     "q": "As-tu déjà roulé de nuit ? Qu'as-tu remarqué de différent ?",
+     "c": "Fais au crépuscule un court trajet connu avec tes feux allumés et note ce que tu vois ou non."
+    },
+    "it": {
+     "t": "Pedalare di notte",
+     "g": "Goditi le uscite serali e notturne con luci potenti, dettagli riflettenti e percorsi conosciuti.",
+     "p": [
+      "Usa una luce anteriore potente che illumini la strada, non solo per farti vedere, e una luce posteriore decisa.",
+      "Inclina un po' il fascio verso il basso per non abbagliare e porta una luce di scorta o una batteria carica.",
+      "Scegli percorsi che conosci di giorno: buche e svolte si vedono meglio quando la strada è familiare."
+     ],
+     "q": "Hai mai pedalato di notte? Cosa hai notato di diverso?",
+     "c": "Fai al tramonto un percorso breve e conosciuto con le luci accese e annota cosa vedi e cosa no."
+    },
+    "pt": {
+     "t": "Pedalar à noite",
+     "g": "Aproveita passeios ao fim do dia e à noite com luzes fortes, refletores e percursos conhecidos.",
+     "p": [
+      "Usa uma luz da frente potente que ilumine a estrada, não só para seres visto, e uma boa luz traseira.",
+      "Inclina o feixe um pouco para baixo para não encandear e leva uma luz de reserva ou uma bateria carregada.",
+      "Escolhe percursos que já conheces de dia; é mais fácil ver buracos e cruzamentos num caminho familiar."
+     ],
+     "q": "Já pedalaste à noite? O que notaste de diferente?",
+     "c": "Faz ao anoitecer um percurso curto e conhecido com as luzes ligadas e anota o que vês e não vês."
+    },
+    "pt_BR": {
+     "t": "Pedalando à noite",
+     "g": "Curta pedais no fim do dia e à noite com luzes fortes, refletivos e caminhos conhecidos.",
+     "p": [
+      "Use um farol dianteiro forte que ilumine a pista, não só para ser visto, e uma boa luz traseira.",
+      "Incline o facho um pouco para baixo para não ofuscar ninguém e leve uma luz reserva ou uma bateria carregada.",
+      "Escolha caminhos que você já conhece de dia; é mais fácil ver buracos e entradas num trajeto familiar."
+     ],
+     "q": "Você já pedalou à noite? O que achou diferente?",
+     "c": "Faça no fim da tarde um trajeto curto e conhecido com as luzes acesas e anote o que dá e o que não dá para ver."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riding in a group",
+     "g": "Learn simple etiquette for riding with others so group rides feel smooth and friendly.",
+     "p": [
+      "Ride steadily and predictably, without sudden braking or swerving, so the rider behind can follow safely.",
+      "Call out or point to hazards like potholes and glass, and say clearly when you are slowing or stopping.",
+      "Agree on the pace and route before you start, and ride at the speed of the slowest person; nobody gets dropped."
+     ],
+     "q": "Would you rather ride alone or with friends?",
+     "c": "Invite a friend or two for a short, easy ride and agree on two simple signals beforehand."
+    },
+    "de": {
+     "t": "In der Gruppe fahren",
+     "g": "Lerne einfache Regeln für das gemeinsame Fahren, damit Gruppenausfahrten ruhig und freundlich sind.",
+     "p": [
+      "Fahr gleichmäßig und vorhersehbar, ohne plötzliches Bremsen oder Ausscheren, damit dir andere sicher folgen können.",
+      "Ruf oder zeig Gefahren wie Schlaglöcher und Scherben an und sag deutlich, wenn du langsamer wirst oder hältst.",
+      "Vereinbart vorher Tempo und Strecke und fahrt im Tempo der langsamsten Person; niemand wird abgehängt."
+     ],
+     "q": "Fährst du lieber allein oder mit Freunden?",
+     "c": "Lade ein, zwei Freunde zu einer kurzen, lockeren Fahrt ein und vereinbart vorher zwei einfache Zeichen."
+    },
+    "es": {
+     "t": "Pedalear en grupo",
+     "g": "Aprende normas sencillas para salir con otros y que las rutas en grupo sean fluidas y amables.",
+     "p": [
+      "Pedalea de forma constante y predecible, sin frenazos ni giros bruscos, para que quien va detrás te siga seguro.",
+      "Avisa en voz alta o señala peligros como baches y cristales, y di claramente cuándo reduces o paras.",
+      "Acordad el ritmo y la ruta antes de salir e id a la velocidad de la persona más lenta; nadie se queda atrás."
+     ],
+     "q": "¿Prefieres pedalear solo o con amigos?",
+     "c": "Invita a uno o dos amigos a un paseo corto y fácil y acordad antes dos señales sencillas."
+    },
+    "fr": {
+     "t": "Rouler en groupe",
+     "g": "Apprends quelques règles simples pour rouler à plusieurs dans une ambiance fluide et conviviale.",
+     "p": [
+      "Roule de façon régulière et prévisible, sans freinage brusque ni écart, pour que celui de derrière te suive sans risque.",
+      "Annonce ou montre du doigt les dangers comme les trous et le verre, et dis clairement quand tu ralentis ou t'arrêtes.",
+      "Mettez-vous d'accord sur l'allure et le parcours avant de partir, et roulez au rythme du plus lent : personne n'est lâché."
+     ],
+     "q": "Tu préfères rouler seul ou avec des amis ?",
+     "c": "Invite un ou deux amis pour une courte sortie facile et convenez de deux signes simples avant de partir."
+    },
+    "it": {
+     "t": "Pedalare in gruppo",
+     "g": "Impara semplici regole per pedalare con altri, così le uscite di gruppo saranno fluide e piacevoli.",
+     "p": [
+      "Pedala in modo costante e prevedibile, senza frenate o scarti improvvisi, perché chi è dietro possa seguirti sicuro.",
+      "Segnala a voce o con la mano pericoli come buche e vetri, e di' chiaramente quando rallenti o ti fermi.",
+      "Concordate ritmo e percorso prima di partire e andate alla velocità della persona più lenta: nessuno resta indietro."
+     ],
+     "q": "Preferisci pedalare da solo o con gli amici?",
+     "c": "Invita uno o due amici a un giro breve e facile e concordate prima due segnali semplici."
+    },
+    "pt": {
+     "t": "Pedalar em grupo",
+     "g": "Aprende regras simples para pedalar com outros e tornar os passeios em grupo fluidos e simpáticos.",
+     "p": [
+      "Pedala de forma constante e previsível, sem travagens nem desvios bruscos, para quem vem atrás te seguir em segurança.",
+      "Avisa em voz alta ou aponta perigos como buracos e vidros, e diz claramente quando abrandas ou paras.",
+      "Combinem o ritmo e o percurso antes de sair e vão à velocidade da pessoa mais lenta; ninguém fica para trás."
+     ],
+     "q": "Preferes pedalar sozinho ou com amigos?",
+     "c": "Convida um ou dois amigos para um passeio curto e fácil e combinem antes dois sinais simples."
+    },
+    "pt_BR": {
+     "t": "Pedalando em grupo",
+     "g": "Aprenda regras simples para pedalar com outras pessoas e deixar os pedais em grupo fluidos e gostosos.",
+     "p": [
+      "Pedale de forma constante e previsível, sem freadas nem desvios bruscos, para quem vem atrás seguir com segurança.",
+      "Avise em voz alta ou aponte perigos como buracos e cacos de vidro, e diga claramente quando for reduzir ou parar.",
+      "Combinem o ritmo e o trajeto antes de sair e pedalem na velocidade da pessoa mais lenta; ninguém fica para trás."
+     ],
+     "q": "Você prefere pedalar sozinho ou com amigos?",
+     "c": "Convide um ou dois amigos para um pedal curto e fácil e combinem antes dois sinais simples."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cycling with children",
+     "g": "Discover safe and joyful ways to share cycling with kids of different ages.",
+     "p": [
+      "Small children can ride along in a properly fitted child seat or a trailer, always wearing a helmet.",
+      "Balance bikes without pedals help young kids learn to steer and balance before they ever pedal.",
+      "Teach new riders in traffic-free spaces, keep sessions short and playful, and praise every little success."
+     ],
+     "q": "Do you remember how you learned to ride a bike?",
+     "c": "Think of a safe, traffic-free spot near you where a child could practise riding."
+    },
+    "de": {
+     "t": "Radfahren mit Kindern",
+     "g": "Entdecke sichere und fröhliche Wege, das Radfahren mit Kindern verschiedenen Alters zu teilen.",
+     "p": [
+      "Kleine Kinder fahren in einem passend montierten Kindersitz oder Anhänger mit, immer mit Helm.",
+      "Laufräder ohne Pedale helfen kleinen Kindern, Lenken und Gleichgewicht zu lernen, bevor sie treten.",
+      "Üb mit neuen Fahrern an verkehrsfreien Orten, halte die Einheiten kurz und spielerisch und lobe jeden kleinen Erfolg."
+     ],
+     "q": "Weißt du noch, wie du Radfahren gelernt hast?",
+     "c": "Überleg dir einen sicheren, verkehrsfreien Ort in deiner Nähe, wo ein Kind üben könnte."
+    },
+    "es": {
+     "t": "Pedalear con niños",
+     "g": "Descubre formas seguras y alegres de compartir la bici con niños de distintas edades.",
+     "p": [
+      "Los más pequeños pueden ir en una sillita bien instalada o en un remolque, siempre con casco.",
+      "Las bicis sin pedales ayudan a los peques a aprender a dirigir y equilibrarse antes de pedalear.",
+      "Enseña en espacios sin tráfico, haz sesiones cortas y divertidas, y celebra cada pequeño logro."
+     ],
+     "q": "¿Recuerdas cómo aprendiste a montar en bici?",
+     "c": "Piensa en un lugar seguro y sin tráfico cerca de ti donde un niño podría practicar."
+    },
+    "fr": {
+     "t": "Faire du vélo avec des enfants",
+     "g": "Découvre des façons sûres et joyeuses de partager le vélo avec des enfants de tous âges.",
+     "p": [
+      "Les tout-petits peuvent voyager dans un siège enfant bien installé ou une remorque, toujours avec un casque.",
+      "La draisienne, sans pédales, aide les jeunes enfants à apprendre à diriger et à garder l'équilibre avant de pédaler.",
+      "Apprends-leur dans des lieux sans circulation, garde des séances courtes et ludiques, et félicite chaque petit progrès."
+     ],
+     "q": "Te souviens-tu de comment tu as appris à faire du vélo ?",
+     "c": "Pense à un endroit sûr et sans voitures près de chez toi où un enfant pourrait s'entraîner."
+    },
+    "it": {
+     "t": "Pedalare con i bambini",
+     "g": "Scopri modi sicuri e allegri per condividere la bici con bambini di età diverse.",
+     "p": [
+      "I più piccoli possono viaggiare su un seggiolino montato correttamente o in un carrellino, sempre con il casco.",
+      "Le bici senza pedali aiutano i bimbi a imparare a sterzare e a stare in equilibrio prima di pedalare.",
+      "Insegna in spazi senza traffico, fai sessioni brevi e giocose e festeggia ogni piccolo progresso."
+     ],
+     "q": "Ti ricordi come hai imparato ad andare in bici?",
+     "c": "Pensa a un posto sicuro e senza traffico vicino a te dove un bambino potrebbe esercitarsi."
+    },
+    "pt": {
+     "t": "Pedalar com crianças",
+     "g": "Descobre formas seguras e alegres de partilhar a bicicleta com crianças de várias idades.",
+     "p": [
+      "As crianças pequenas podem ir numa cadeirinha bem instalada ou num atrelado, sempre de capacete.",
+      "As bicicletas sem pedais ajudam os mais novos a aprender a guiar e a equilibrar-se antes de pedalar.",
+      "Ensina em espaços sem trânsito, faz sessões curtas e divertidas e elogia cada pequena conquista."
+     ],
+     "q": "Lembras-te de como aprendeste a andar de bicicleta?",
+     "c": "Pensa num sítio seguro e sem trânsito perto de ti onde uma criança pudesse praticar."
+    },
+    "pt_BR": {
+     "t": "Pedalando com crianças",
+     "g": "Descubra jeitos seguros e alegres de compartilhar a bike com crianças de várias idades.",
+     "p": [
+      "As crianças pequenas podem ir numa cadeirinha bem instalada ou num reboque, sempre de capacete.",
+      "As bikes de equilíbrio, sem pedais, ajudam os pequenos a aprender a guiar e a se equilibrar antes de pedalar.",
+      "Ensine em espaços sem trânsito, faça sessões curtas e divertidas e comemore cada pequena conquista."
+     ],
+     "q": "Você se lembra de como aprendeu a andar de bike?",
+     "c": "Pense num lugar seguro e sem trânsito perto de você onde uma criança poderia praticar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: skills and safety",
+     "g": "Recap the handling skills and road awareness you built over the last twenty days.",
+     "p": [
+      "You practised straight lines, shoulder checks, hand signals, cornering, bumps, hills, wind and rain.",
+      "You learned how road rules work, how to use bike lanes, junctions and shared paths, and to check local rules.",
+      "You know how to stay visible day and night and how to ride kindly with groups, walkers and children."
+     ],
+     "q": "Which skill from these twenty days do you want to practise more?",
+     "c": "Choose your weakest skill from this block and practise it for ten minutes in a safe place."
+    },
+    "de": {
+     "t": "Rückblick: Technik und Sicherheit",
+     "g": "Wiederhole Fahrtechnik und Verkehrsbewusstsein, die du in den letzten zwanzig Tagen aufgebaut hast.",
+     "p": [
+      "Du hast Geradeausfahren, Schulterblick, Handzeichen, Kurven, Unebenheiten, Berge, Wind und Regen geübt.",
+      "Du weißt, wie Verkehrsregeln, Radwege, Kreuzungen und gemeinsame Wege funktionieren und dass lokale Regeln zählen.",
+      "Du weißt, wie du tags und nachts sichtbar bleibst und rücksichtsvoll mit Gruppen, Fußgängern und Kindern fährst."
+     ],
+     "q": "Welche Fähigkeit aus diesen zwanzig Tagen möchtest du noch mehr üben?",
+     "c": "Wähl deine schwächste Fähigkeit aus diesem Block und üb sie zehn Minuten an einem sicheren Ort."
+    },
+    "es": {
+     "t": "Repaso: habilidades y seguridad",
+     "g": "Repasa las habilidades de manejo y la atención al tráfico que ganaste en los últimos veinte días.",
+     "p": [
+      "Practicaste la línea recta, mirar atrás, las señales, las curvas, los baches, las cuestas, el viento y la lluvia.",
+      "Aprendiste cómo funcionan las normas, los carriles bici, los cruces y los caminos compartidos, y a consultar las normas locales.",
+      "Sabes ser visible de día y de noche y pedalear con respeto junto a grupos, peatones y niños."
+     ],
+     "q": "¿Qué habilidad de estos veinte días quieres practicar más?",
+     "c": "Elige tu habilidad más floja de este bloque y practícala diez minutos en un lugar seguro."
+    },
+    "fr": {
+     "t": "Bilan : technique et sécurité",
+     "g": "Revois les techniques de pilotage et la vigilance routière acquises ces vingt derniers jours.",
+     "p": [
+      "Tu t'es entraîné à la ligne droite, au coup d'œil arrière, aux signes, aux virages, aux bosses, aux côtes, au vent et à la pluie.",
+      "Tu sais comment marchent le code de la route, les pistes, les carrefours et les voies partagées, et qu'il faut vérifier les règles locales.",
+      "Tu sais rester visible de jour comme de nuit et rouler avec respect en groupe, près des piétons et avec des enfants."
+     ],
+     "q": "Quelle compétence de ces vingt jours veux-tu travailler davantage ?",
+     "c": "Choisis ta compétence la plus fragile de ce bloc et entraîne-toi dix minutes dans un endroit sûr."
+    },
+    "it": {
+     "t": "Ripasso: abilità e sicurezza",
+     "g": "Ripassa le abilità di guida e l'attenzione alla strada costruite negli ultimi venti giorni.",
+     "p": [
+      "Hai praticato linea retta, sguardo indietro, segnali, curve, asperità, salite, vento e pioggia.",
+      "Hai imparato come funzionano regole, piste ciclabili, incroci e percorsi condivisi, e a verificare le regole locali.",
+      "Sai restare visibile di giorno e di notte e pedalare con rispetto in gruppo, vicino ai pedoni e con i bambini."
+     ],
+     "q": "Quale abilità di questi venti giorni vuoi allenare di più?",
+     "c": "Scegli l'abilità più debole di questo blocco ed esercitala per dieci minuti in un posto sicuro."
+    },
+    "pt": {
+     "t": "Revisão: técnica e segurança",
+     "g": "Revê as técnicas de condução e a atenção ao trânsito que ganhaste nos últimos vinte dias.",
+     "p": [
+      "Praticaste a linha reta, olhar para trás, sinais, curvas, lombas, subidas, vento e chuva.",
+      "Aprendeste como funcionam as regras, as ciclovias, os cruzamentos e os caminhos partilhados, e a confirmar as regras locais.",
+      "Sabes manter-te visível de dia e de noite e pedalar com respeito em grupo, perto de peões e com crianças."
+     ],
+     "q": "Que técnica destes vinte dias queres praticar mais?",
+     "c": "Escolhe a tua técnica mais fraca deste bloco e pratica-a dez minutos num sítio seguro."
+    },
+    "pt_BR": {
+     "t": "Revisão: habilidades e segurança",
+     "g": "Relembre as habilidades de pilotagem e a atenção ao trânsito que você ganhou nos últimos vinte dias.",
+     "p": [
+      "Você praticou linha reta, olhar para trás, sinais, curvas, desníveis, subidas, vento e chuva.",
+      "Você aprendeu como funcionam as regras, ciclovias, cruzamentos e caminhos compartilhados, e a conferir as regras locais.",
+      "Você sabe ficar visível de dia e de noite e pedalar com respeito em grupo, perto de pedestres e com crianças."
+     ],
+     "q": "Qual habilidade destes vinte dias você quer treinar mais?",
+     "c": "Escolha sua habilidade mais fraca deste bloco e pratique por dez minutos num lugar seguro."
+    }
+   }
+  }
+ ]
+}

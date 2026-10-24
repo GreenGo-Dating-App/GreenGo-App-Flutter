@@ -1,0 +1,835 @@
+{
+ "topic": "cooking",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Garlic and fresh herbs",
+     "g": "Learn to peel, crush and chop garlic, and to wash and handle fresh herbs.",
+     "p": [
+      "Press a clove under the flat of your knife to loosen the skin, then peel it off easily.",
+      "Chop garlic finely or crush it with salt into a paste; it burns fast, so add it to the pan near the end.",
+      "Rinse herbs gently, dry them well and chop with a sharp knife so they stay green and do not bruise."
+     ],
+     "q": "Which fresh herb do you use most, or would like to try?",
+     "c": "Peel and mince two garlic cloves and finely chop a handful of parsley or another herb."
+    },
+    "de": {
+     "t": "Knoblauch und frische Kräuter",
+     "g": "Lerne Knoblauch zu schälen, zu zerdrücken und zu hacken und frische Kräuter richtig zu behandeln.",
+     "p": [
+      "Drück eine Zehe mit der flachen Klinge an, dann löst sich die Schale ganz leicht.",
+      "Hack Knoblauch fein oder zerreib ihn mit Salz zur Paste; er verbrennt schnell, also kommt er spät in die Pfanne.",
+      "Spül Kräuter sanft ab, trockne sie gut und schneide sie mit scharfem Messer, damit sie grün bleiben."
+     ],
+     "q": "Welches frische Kraut nutzt du am meisten, oder möchtest du probieren?",
+     "c": "Schäle und hacke zwei Knoblauchzehen und schneide eine Handvoll Petersilie oder ein anderes Kraut fein."
+    },
+    "es": {
+     "t": "Ajo y hierbas frescas",
+     "g": "Aprende a pelar, machacar y picar ajo, y a lavar y manejar hierbas frescas.",
+     "p": [
+      "Aplasta un diente con la hoja plana del cuchillo para soltar la piel y pélalo con facilidad.",
+      "Pica el ajo fino o macháchalo con sal hasta hacer pasta; se quema rápido, así que añádelo al final.",
+      "Enjuaga las hierbas con suavidad, sécalas bien y córtalas con cuchillo afilado para que no se oscurezcan."
+     ],
+     "q": "¿Qué hierba fresca usas más o te gustaría probar?",
+     "c": "Pela y pica fino dos dientes de ajo y un puñado de perejil u otra hierba."
+    },
+    "fr": {
+     "t": "Ail et herbes fraîches",
+     "g": "Apprends à peler, écraser et hacher l'ail, et à laver et manipuler les herbes fraîches.",
+     "p": [
+      "Écrase une gousse sous le plat de la lame pour décoller la peau, puis pèle-la facilement.",
+      "Hache l'ail finement ou écrase-le avec du sel en pâte ; il brûle vite, ajoute-le en fin de cuisson.",
+      "Rince les herbes doucement, sèche-les bien et coupe-les avec un couteau aiguisé pour qu'elles restent vertes."
+     ],
+     "q": "Quelle herbe fraîche utilises-tu le plus, ou aimerais-tu essayer ?",
+     "c": "Pèle et hache deux gousses d'ail, puis cisèle une poignée de persil ou d'une autre herbe."
+    },
+    "it": {
+     "t": "Aglio ed erbe fresche",
+     "g": "Impara a sbucciare, schiacciare e tritare l'aglio, e a lavare e trattare le erbe fresche.",
+     "p": [
+      "Schiaccia uno spicchio con il piatto della lama per staccare la buccia e sbuccialo facilmente.",
+      "Trita l'aglio fine o schiaccialo con il sale in una crema; brucia in fretta, quindi aggiungilo verso la fine.",
+      "Sciacqua le erbe con delicatezza, asciugale bene e tagliale con un coltello affilato perché restino verdi."
+     ],
+     "q": "Quale erba fresca usi di più o vorresti provare?",
+     "c": "Sbuccia e trita due spicchi d'aglio e trita finemente un mazzetto di prezzemolo o un'altra erba."
+    },
+    "pt": {
+     "t": "Alho e ervas frescas",
+     "g": "Aprende a descascar, esmagar e picar alho, e a lavar e tratar ervas frescas.",
+     "p": [
+      "Esmaga um dente com o lado da faca para soltar a pele e descasca-o com facilidade.",
+      "Pica o alho fino ou esmaga-o com sal até fazer pasta; queima depressa, por isso junta-o no fim.",
+      "Passa as ervas por água com cuidado, seca-as bem e corta-as com faca afiada para ficarem verdes."
+     ],
+     "q": "Que erva fresca usas mais ou gostavas de experimentar?",
+     "c": "Descasca e pica dois dentes de alho e pica fino um punhado de salsa ou outra erva."
+    },
+    "pt_BR": {
+     "t": "Alho e ervas frescas",
+     "g": "Aprenda a descascar, amassar e picar alho, e a lavar e lidar com ervas frescas.",
+     "p": [
+      "Amasse um dente com a lateral da faca para soltar a casca e descasque fácil.",
+      "Pique o alho fino ou amasse com sal até virar pasta; ele queima rápido, então coloque perto do fim.",
+      "Lave as ervas com delicadeza, seque bem e corte com faca afiada para elas ficarem verdinhas."
+     ],
+     "q": "Qual erva fresca você mais usa ou gostaria de experimentar?",
+     "c": "Descasque e pique dois dentes de alho e pique fino um punhado de salsinha ou outra erva."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding heat",
+     "g": "Learn what low, medium and high heat on the stove do to food.",
+     "p": [
+      "Low heat melts, warms and cooks gently, perfect for eggs, sauces and softening onions slowly.",
+      "Medium heat is the everyday setting for most cooking, giving steady cooking without burning.",
+      "High heat browns and sears quickly, but needs your attention so food does not scorch."
+     ],
+     "q": "Do you tend to cook too hot, too low, or just right?",
+     "c": "Soften a sliced onion on low heat for ten minutes and notice how its colour and smell change."
+    },
+    "de": {
+     "t": "Hitze verstehen",
+     "g": "Lerne, was niedrige, mittlere und hohe Hitze auf dem Herd mit Essen macht.",
+     "p": [
+      "Niedrige Hitze schmilzt, wärmt und gart sanft, ideal für Eier, Saucen und langsam weiche Zwiebeln.",
+      "Mittlere Hitze ist die Alltagsstufe für das meiste Kochen: gleichmäßig und ohne Anbrennen.",
+      "Hohe Hitze bräunt und brät schnell an, braucht aber deine Aufmerksamkeit, damit nichts verbrennt."
+     ],
+     "q": "Kochst du eher zu heiß, zu niedrig oder genau richtig?",
+     "c": "Dünste eine Zwiebel zehn Minuten bei niedriger Hitze und beobachte, wie sich Farbe und Duft ändern."
+    },
+    "es": {
+     "t": "Entender el fuego",
+     "g": "Aprende qué hacen el fuego bajo, medio y alto con los alimentos.",
+     "p": [
+      "El fuego bajo derrite, calienta y cocina despacio, ideal para huevos, salsas y pochar cebolla.",
+      "El fuego medio es el de cada día para casi todo: cocción constante sin quemar.",
+      "El fuego alto dora y sella rápido, pero exige atención para que nada se queme."
+     ],
+     "q": "¿Sueles cocinar demasiado fuerte, demasiado suave o en su punto?",
+     "c": "Pocha una cebolla en láminas a fuego bajo diez minutos y observa cómo cambian su color y su aroma."
+    },
+    "fr": {
+     "t": "Comprendre la chaleur",
+     "g": "Apprends ce que font les feux doux, moyen et vif aux aliments.",
+     "p": [
+      "Le feu doux fait fondre, réchauffe et cuit délicatement : idéal pour œufs, sauces et oignons fondants.",
+      "Le feu moyen est le réglage du quotidien : une cuisson régulière sans brûler.",
+      "Le feu vif dore et saisit vite, mais demande ton attention pour que rien n'attache."
+     ],
+     "q": "As-tu tendance à cuisiner trop fort, trop doux ou juste comme il faut ?",
+     "c": "Fais fondre un oignon émincé à feu doux dix minutes et observe sa couleur et son parfum changer."
+    },
+    "it": {
+     "t": "Capire il calore",
+     "g": "Impara cosa fanno al cibo la fiamma bassa, media e alta.",
+     "p": [
+      "La fiamma bassa scioglie, scalda e cuoce piano, perfetta per uova, salse e cipolle appassite.",
+      "La fiamma media è quella di tutti i giorni: cottura costante senza bruciare.",
+      "La fiamma alta rosola e sigilla in fretta, ma richiede attenzione perché nulla si bruci."
+     ],
+     "q": "Tendi a cucinare troppo forte, troppo piano o giusto?",
+     "c": "Fai appassire una cipolla a fettine a fiamma bassa per dieci minuti e nota colore e profumo."
+    },
+    "pt": {
+     "t": "Perceber o lume",
+     "g": "Aprende o que o lume brando, médio e forte fazem aos alimentos.",
+     "p": [
+      "O lume brando derrete, aquece e cozinha devagar, ideal para ovos, molhos e alourar cebola.",
+      "O lume médio é o do dia a dia: cozedura constante sem queimar.",
+      "O lume forte aloura e sela depressa, mas pede atenção para nada queimar."
+     ],
+     "q": "Costumas cozinhar com lume demasiado forte, fraco ou no ponto?",
+     "c": "Aloura uma cebola às rodelas em lume brando dez minutos e repara na mudança de cor e aroma."
+    },
+    "pt_BR": {
+     "t": "Entendendo o fogo",
+     "g": "Aprenda o que o fogo baixo, médio e alto fazem com os alimentos.",
+     "p": [
+      "O fogo baixo derrete, aquece e cozinha devagar, ideal para ovos, molhos e cebola bem macia.",
+      "O fogo médio é o do dia a dia para quase tudo: cozimento constante sem queimar.",
+      "O fogo alto doura e sela rápido, mas exige atenção para nada queimar."
+     ],
+     "q": "Você costuma cozinhar com fogo forte demais, fraco demais ou no ponto?",
+     "c": "Refogue uma cebola em fatias no fogo baixo por dez minutos e note como mudam cor e aroma."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Boiling and simmering",
+     "g": "Learn the difference between a rolling boil and a gentle simmer, and when to use each.",
+     "p": [
+      "A rolling boil has big, fast bubbles that keep moving even when stirred, ideal for pasta and blanching.",
+      "A simmer shows small, lazy bubbles, perfect for soups, stews, sauces and beans.",
+      "Bring liquids to a boil to save time, then lower the heat to a simmer so food cooks evenly."
+     ],
+     "q": "Which dishes do you make that need a gentle simmer?",
+     "c": "Heat a pot of water and watch it go from simmer to rolling boil, adjusting the heat back down."
+    },
+    "de": {
+     "t": "Kochen und Köcheln",
+     "g": "Lerne den Unterschied zwischen sprudelndem Kochen und sanftem Köcheln und wann du was brauchst.",
+     "p": [
+      "Sprudelndes Kochen hat große, schnelle Blasen, auch beim Umrühren, ideal für Pasta und Blanchieren.",
+      "Beim Köcheln steigen kleine, träge Blasen auf, perfekt für Suppen, Eintöpfe, Saucen und Bohnen.",
+      "Bring Flüssigkeit zum Kochen, um Zeit zu sparen, und reduziere dann auf Köcheln für gleichmäßiges Garen."
+     ],
+     "q": "Welche deiner Gerichte brauchen sanftes Köcheln?",
+     "c": "Erhitze Wasser, beobachte den Weg vom Köcheln zum Sprudeln und regle die Hitze wieder herunter."
+    },
+    "es": {
+     "t": "Hervir y cocer a fuego lento",
+     "g": "Aprende la diferencia entre un hervor fuerte y un hervor suave, y cuándo usar cada uno.",
+     "p": [
+      "El hervor fuerte tiene burbujas grandes y rápidas que no paran al remover, ideal para pasta y escaldar.",
+      "El hervor suave muestra burbujas pequeñas y lentas, perfecto para sopas, guisos, salsas y legumbres.",
+      "Lleva el líquido a ebullición para ganar tiempo y luego baja a fuego suave para cocinar parejo."
+     ],
+     "q": "¿Qué platos preparas que necesitan un hervor suave?",
+     "c": "Calienta agua, mira cómo pasa de hervor suave a fuerte y vuelve a bajar el fuego."
+    },
+    "fr": {
+     "t": "Bouillir et mijoter",
+     "g": "Apprends la différence entre une ébullition franche et un frémissement, et quand utiliser chacun.",
+     "p": [
+      "L'ébullition franche fait de grosses bulles rapides, même en remuant : idéale pour les pâtes et blanchir.",
+      "Le frémissement montre de petites bulles paresseuses, parfait pour soupes, ragoûts, sauces et légumineuses.",
+      "Porte à ébullition pour gagner du temps, puis baisse à frémissement pour une cuisson homogène."
+     ],
+     "q": "Quels plats prépares-tu qui demandent de mijoter doucement ?",
+     "c": "Chauffe une casserole d'eau, observe le passage du frémissement à l'ébullition, puis baisse le feu."
+    },
+    "it": {
+     "t": "Bollire e sobbollire",
+     "g": "Impara la differenza tra bollore pieno e sobbollire, e quando usare ciascuno.",
+     "p": [
+      "Il bollore pieno ha bolle grandi e veloci anche mescolando, ideale per pasta e sbollentare.",
+      "Il sobbollire mostra bollicine piccole e lente, perfetto per zuppe, stufati, sughi e legumi.",
+      "Porta il liquido a bollore per fare prima, poi abbassa a fuoco lento per cuocere in modo uniforme."
+     ],
+     "q": "Quali piatti prepari che richiedono una cottura lenta?",
+     "c": "Scalda una pentola d'acqua, guarda il passaggio dal sobbollire al bollore e poi abbassa la fiamma."
+    },
+    "pt": {
+     "t": "Ferver e cozinhar em lume brando",
+     "g": "Aprende a diferença entre fervura forte e fervura suave, e quando usar cada uma.",
+     "p": [
+      "A fervura forte tem bolhas grandes e rápidas mesmo ao mexer, ideal para massa e branquear.",
+      "A fervura suave mostra bolhas pequenas e lentas, perfeita para sopas, estufados, molhos e leguminosas.",
+      "Leva o líquido a ferver para ganhar tempo e depois baixa para fervura suave para cozinhar por igual."
+     ],
+     "q": "Que pratos fazes que precisam de fervura suave?",
+     "c": "Aquece um tacho com água, vê-a passar de fervura suave a forte e volta a baixar o lume."
+    },
+    "pt_BR": {
+     "t": "Fervura forte e fervura branda",
+     "g": "Aprenda a diferença entre fervura forte e fogo brando, e quando usar cada uma.",
+     "p": [
+      "A fervura forte tem bolhas grandes e rápidas mesmo mexendo, ideal para macarrão e branquear.",
+      "O fogo brando mostra bolhas pequenas e lentas, perfeito para sopas, ensopados, molhos e feijão.",
+      "Leve o líquido à fervura para ganhar tempo e depois abaixe para cozinhar por igual."
+     ],
+     "q": "Quais pratos você faz que pedem fogo brando?",
+     "c": "Aqueça uma panela de água, veja passar de fervura leve a forte e abaixe o fogo de novo."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking perfect pasta",
+     "g": "Learn to salt the water, time pasta right and save starchy pasta water.",
+     "p": [
+      "Use plenty of water and salt it well once boiling, so the pasta itself is seasoned.",
+      "Start tasting a minute or two before the packet time; al dente means tender with a slight bite.",
+      "Save a cup of cooking water before draining; its starch helps sauce cling and turn silky."
+     ],
+     "q": "What is your favourite pasta shape and sauce?",
+     "c": "Cook pasta, taste it from two minutes early, and finish it in the pan with butter and pasta water."
+    },
+    "de": {
+     "t": "Perfekte Pasta kochen",
+     "g": "Lerne Nudelwasser richtig zu salzen, die Garzeit zu treffen und stärkehaltiges Wasser aufzuheben.",
+     "p": [
+      "Nimm reichlich Wasser und salze es gut, sobald es kocht, damit die Pasta selbst gewürzt ist.",
+      "Probier ein bis zwei Minuten vor der Packungszeit; al dente heißt weich mit leichtem Biss.",
+      "Heb vor dem Abgießen eine Tasse Kochwasser auf; die Stärke macht die Sauce sämig und haftend."
+     ],
+     "q": "Was ist deine Lieblingsnudel und deine Lieblingssauce?",
+     "c": "Koch Pasta, probier zwei Minuten früher und vollende sie in der Pfanne mit Butter und Nudelwasser."
+    },
+    "es": {
+     "t": "Pasta perfecta",
+     "g": "Aprende a salar el agua, calcular el tiempo y guardar el agua de cocción con almidón.",
+     "p": [
+      "Usa mucha agua y sálala bien cuando hierva, para que la pasta quede sazonada por dentro.",
+      "Prueba uno o dos minutos antes del tiempo del paquete; al dente es tierna con un leve mordisco.",
+      "Guarda una taza del agua antes de escurrir; su almidón hace que la salsa se adhiera y quede sedosa."
+     ],
+     "q": "¿Cuál es tu forma de pasta y tu salsa favorita?",
+     "c": "Cuece pasta, pruébala desde dos minutos antes y termínala en la sartén con mantequilla y su agua."
+    },
+    "fr": {
+     "t": "Des pâtes parfaites",
+     "g": "Apprends à saler l'eau, minuter la cuisson et garder l'eau de cuisson riche en amidon.",
+     "p": [
+      "Prends beaucoup d'eau et sale-la bien une fois qu'elle bout, pour assaisonner les pâtes elles-mêmes.",
+      "Goûte une à deux minutes avant le temps indiqué ; al dente veut dire tendre avec une légère résistance.",
+      "Garde une tasse d'eau de cuisson avant d'égoutter : son amidon rend la sauce nappante et soyeuse."
+     ],
+     "q": "Quelle est ta forme de pâtes et ta sauce préférées ?",
+     "c": "Fais cuire des pâtes, goûte deux minutes avant et termine-les à la poêle avec beurre et eau de cuisson."
+    },
+    "it": {
+     "t": "La pasta perfetta",
+     "g": "Impara a salare l'acqua, a calcolare i tempi e a tenere da parte l'acqua di cottura.",
+     "p": [
+      "Usa tanta acqua e salala bene quando bolle, così la pasta stessa è saporita.",
+      "Assaggia uno o due minuti prima del tempo indicato; al dente vuol dire tenera ma con un leggero morso.",
+      "Tieni una tazza d'acqua di cottura prima di scolare: il suo amido aiuta il sugo a legare e a mantecare."
+     ],
+     "q": "Qual è il tuo formato di pasta e sugo preferito?",
+     "c": "Cuoci la pasta, assaggia due minuti prima e mantecala in padella con burro e acqua di cottura."
+    },
+    "pt": {
+     "t": "Massa perfeita",
+     "g": "Aprende a salgar a água, acertar o tempo e guardar a água da cozedura com amido.",
+     "p": [
+      "Usa muita água e salga-a bem quando ferver, para a própria massa ficar temperada.",
+      "Prova um ou dois minutos antes do tempo da embalagem; al dente é macia mas com ligeira resistência.",
+      "Guarda uma chávena da água antes de escorrer; o amido ajuda o molho a ligar e ficar sedoso."
+     ],
+     "q": "Qual é o teu formato de massa e molho preferidos?",
+     "c": "Coze massa, prova dois minutos antes e termina-a na frigideira com manteiga e água da cozedura."
+    },
+    "pt_BR": {
+     "t": "Macarrão perfeito",
+     "g": "Aprenda a salgar a água, acertar o tempo e guardar a água do cozimento com amido.",
+     "p": [
+      "Use bastante água e salgue bem quando ferver, para o próprio macarrão ficar temperado.",
+      "Prove um ou dois minutos antes do tempo da embalagem; al dente é macio mas ainda firme na mordida.",
+      "Guarde uma xícara da água antes de escorrer; o amido ajuda o molho a grudar e ficar sedoso."
+     ],
+     "q": "Qual é seu formato de macarrão e molho favoritos?",
+     "c": "Cozinhe macarrão, prove dois minutos antes e finalize na frigideira com manteiga e água do cozimento."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking rice",
+     "g": "Learn the absorption and boiling methods, rinsing rice and letting it rest.",
+     "p": [
+      "Rinse white rice until the water runs clearer to remove surface starch and avoid gumminess.",
+      "Absorption: a measured amount of water, a lid and low heat; boiling: lots of water, then drain.",
+      "Rest cooked rice with the lid on for about ten minutes, then fluff it gently with a fork."
+     ],
+     "q": "Which rice dish do you love most?",
+     "c": "Cook rice by the absorption method, rest it ten minutes and fluff it with a fork."
+    },
+    "de": {
+     "t": "Reis kochen",
+     "g": "Lerne Quell- und Kochmethode, das Waschen von Reis und warum er ruhen sollte.",
+     "p": [
+      "Spül weißen Reis, bis das Wasser klarer wird, so entfernst du Stärke und er klebt weniger.",
+      "Quellmethode: abgemessenes Wasser, Deckel und kleine Hitze; Kochmethode: viel Wasser, dann abgießen.",
+      "Lass gegarten Reis zugedeckt etwa zehn Minuten ruhen und lockere ihn dann mit einer Gabel auf."
+     ],
+     "q": "Welches Reisgericht magst du am liebsten?",
+     "c": "Koch Reis nach der Quellmethode, lass ihn zehn Minuten ruhen und lockere ihn mit der Gabel."
+    },
+    "es": {
+     "t": "Cocinar arroz",
+     "g": "Aprende los métodos de absorción y de hervido, a lavar el arroz y a dejarlo reposar.",
+     "p": [
+      "Lava el arroz blanco hasta que el agua salga más clara para quitar almidón y que no se apelmace.",
+      "Absorción: agua medida, tapa y fuego bajo; hervido: mucha agua y luego escurrir.",
+      "Deja reposar el arroz tapado unos diez minutos y luego suéltalo con un tenedor."
+     ],
+     "q": "¿Cuál es tu plato de arroz favorito?",
+     "c": "Cocina arroz por absorción, déjalo reposar diez minutos y suéltalo con un tenedor."
+    },
+    "fr": {
+     "t": "Cuire le riz",
+     "g": "Apprends les méthodes par absorption et à l'eau, le rinçage et le repos du riz.",
+     "p": [
+      "Rince le riz blanc jusqu'à ce que l'eau soit plus claire, pour enlever l'amidon et éviter qu'il colle.",
+      "Absorption : eau mesurée, couvercle et feu doux ; à l'eau : beaucoup d'eau, puis on égoutte.",
+      "Laisse reposer le riz cuit à couvert une dizaine de minutes, puis égrène-le à la fourchette."
+     ],
+     "q": "Quel plat de riz préfères-tu ?",
+     "c": "Cuis du riz par absorption, laisse-le reposer dix minutes et égrène-le à la fourchette."
+    },
+    "it": {
+     "t": "Cuocere il riso",
+     "g": "Impara il metodo ad assorbimento e quello bollito, a sciacquare il riso e a farlo riposare.",
+     "p": [
+      "Sciacqua il riso bianco finché l'acqua è più limpida, per togliere amido e non farlo impastare.",
+      "Assorbimento: acqua misurata, coperchio e fuoco basso; bollito: tanta acqua, poi si scola.",
+      "Lascia riposare il riso coperto una decina di minuti, poi sgranalo con una forchetta."
+     ],
+     "q": "Qual è il tuo piatto di riso preferito?",
+     "c": "Cuoci il riso ad assorbimento, fallo riposare dieci minuti e sgranalo con la forchetta."
+    },
+    "pt": {
+     "t": "Cozinhar arroz",
+     "g": "Aprende os métodos por absorção e cozido em muita água, lavar o arroz e deixá-lo repousar.",
+     "p": [
+      "Lava o arroz branco até a água sair mais clara, para tirar amido e não ficar empapado.",
+      "Absorção: água medida, tampa e lume brando; cozido: muita água e depois escorrer.",
+      "Deixa o arroz repousar tapado uns dez minutos e depois solta-o com um garfo."
+     ],
+     "q": "Qual é o teu prato de arroz preferido?",
+     "c": "Coze arroz por absorção, deixa repousar dez minutos e solta-o com um garfo."
+    },
+    "pt_BR": {
+     "t": "Fazendo arroz",
+     "g": "Aprenda os métodos por absorção e cozido em muita água, lavar o arroz e deixar descansar.",
+     "p": [
+      "Lave o arroz branco até a água sair mais clara, para tirar amido e ele não ficar empapado.",
+      "Absorção: água medida, tampa e fogo baixo; cozido: bastante água e depois escorrer.",
+      "Deixe o arroz descansar tampado uns dez minutos e depois solte com um garfo."
+     ],
+     "q": "Qual é seu prato de arroz favorito?",
+     "c": "Faça arroz por absorção, deixe descansar dez minutos e solte com um garfo."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Boiling eggs",
+     "g": "Learn soft, jammy and hard-boiled eggs with simple timings and easy peeling.",
+     "p": [
+      "Lower eggs into simmering water: about 6 minutes for soft, 7 for jammy, 10 to 12 for hard.",
+      "Move them straight into cold water to stop cooking and make the shell easier to remove.",
+      "Crack the shell all over and peel under running water, starting from the wide end with the air pocket."
+     ],
+     "q": "How do you like your boiled eggs best?",
+     "c": "Boil two eggs for different times and compare the yolks side by side."
+    },
+    "de": {
+     "t": "Eier kochen",
+     "g": "Lerne weiche, wachsweiche und harte Eier mit einfachen Zeiten und leichtem Schälen.",
+     "p": [
+      "Leg die Eier in siedendes Wasser: etwa 6 Minuten weich, 7 wachsweich, 10 bis 12 hart.",
+      "Schreck sie sofort in kaltem Wasser ab, das stoppt das Garen und erleichtert das Schälen.",
+      "Klopf die Schale rundum an und schäl unter fließendem Wasser, am breiten Ende mit der Luftblase beginnend."
+     ],
+     "q": "Wie magst du gekochte Eier am liebsten?",
+     "c": "Koch zwei Eier unterschiedlich lange und vergleiche die Dotter nebeneinander."
+    },
+    "es": {
+     "t": "Huevos cocidos",
+     "g": "Aprende huevos pasados por agua, mollets y duros con tiempos sencillos y pelado fácil.",
+     "p": [
+      "Mete los huevos en agua hirviendo suave: unos 6 minutos pasados, 7 mollets, de 10 a 12 duros.",
+      "Pásalos enseguida a agua fría para cortar la cocción y que la cáscara salga mejor.",
+      "Casca la cáscara por todas partes y pela bajo el grifo, empezando por la parte ancha con la cámara de aire."
+     ],
+     "q": "¿Cómo te gustan más los huevos cocidos?",
+     "c": "Cuece dos huevos con tiempos distintos y compara las yemas una al lado de la otra."
+    },
+    "fr": {
+     "t": "Les œufs à la coque et durs",
+     "g": "Apprends œufs à la coque, mollets et durs, avec des temps simples et un écalage facile.",
+     "p": [
+      "Plonge les œufs dans l'eau frémissante : environ 6 minutes à la coque, 7 mollets, 10 à 12 durs.",
+      "Passe-les tout de suite à l'eau froide pour stopper la cuisson et faciliter l'écalage.",
+      "Fêle la coquille partout et écale sous l'eau, en commençant par le gros bout où se trouve la poche d'air."
+     ],
+     "q": "Comment préfères-tu tes œufs cuits ?",
+     "c": "Fais cuire deux œufs avec des temps différents et compare les jaunes côte à côte."
+    },
+    "it": {
+     "t": "Uova sode e alla coque",
+     "g": "Impara uova alla coque, barzotte e sode con tempi semplici e una sbucciatura facile.",
+     "p": [
+      "Metti le uova nell'acqua che sobbolle: circa 6 minuti alla coque, 7 barzotte, da 10 a 12 sode.",
+      "Passale subito in acqua fredda per fermare la cottura e sgusciarle meglio.",
+      "Incrina il guscio ovunque e sbuccia sotto l'acqua, partendo dalla parte larga con la camera d'aria."
+     ],
+     "q": "Come preferisci le uova cotte?",
+     "c": "Cuoci due uova con tempi diversi e confronta i tuorli uno accanto all'altro."
+    },
+    "pt": {
+     "t": "Ovos cozidos",
+     "g": "Aprende ovos quentes, de gema mole e cozidos, com tempos simples e fáceis de descascar.",
+     "p": [
+      "Mergulha os ovos em água a ferver suave: cerca de 6 minutos quentes, 7 gema mole, 10 a 12 cozidos.",
+      "Passa-os logo para água fria para parar a cozedura e descascar melhor.",
+      "Parte a casca toda e descasca debaixo de água, começando pela parte larga com a câmara de ar."
+     ],
+     "q": "Como gostas mais dos ovos cozidos?",
+     "c": "Coze dois ovos com tempos diferentes e compara as gemas lado a lado."
+    },
+    "pt_BR": {
+     "t": "Ovos cozidos",
+     "g": "Aprenda ovos quentes, de gema mole e cozidos, com tempos simples e casca fácil de tirar.",
+     "p": [
+      "Coloque os ovos em água fervendo de leve: uns 6 minutos quentes, 7 gema mole, de 10 a 12 cozidos.",
+      "Passe logo para água fria para parar o cozimento e a casca sair melhor.",
+      "Quebre a casca toda e descasque sob água corrente, começando pela parte larga com a bolha de ar."
+     ],
+     "q": "Como você gosta mais dos ovos cozidos?",
+     "c": "Cozinhe dois ovos com tempos diferentes e compare as gemas lado a lado."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scrambled eggs and omelettes",
+     "g": "Learn low heat, a little butter and how to fold a tender omelette.",
+     "p": [
+      "Beat eggs with a pinch of salt and cook them over low to medium heat in a little butter.",
+      "For soft scrambled eggs, stir slowly and take the pan off the heat while they still look a bit wet.",
+      "For an omelette, let the eggs set lightly, add a filling to one half and fold it over gently."
+     ],
+     "q": "Do you prefer scrambled eggs or an omelette, and with what?",
+     "c": "Make soft scrambled eggs, pulling the pan off the heat early, and taste the difference."
+    },
+    "de": {
+     "t": "Rührei und Omelett",
+     "g": "Lerne niedrige Hitze, etwas Butter und wie du ein zartes Omelett faltest.",
+     "p": [
+      "Verquirl Eier mit einer Prise Salz und gare sie bei niedriger bis mittlerer Hitze in etwas Butter.",
+      "Für cremiges Rührei langsam rühren und die Pfanne vom Herd nehmen, solange es noch leicht feucht ist.",
+      "Fürs Omelett die Eier leicht stocken lassen, Füllung auf eine Hälfte geben und sanft zusammenklappen."
+     ],
+     "q": "Magst du lieber Rührei oder Omelett, und womit?",
+     "c": "Mach cremiges Rührei, nimm die Pfanne früh vom Herd und schmeck den Unterschied."
+    },
+    "es": {
+     "t": "Huevos revueltos y tortillas",
+     "g": "Aprende a usar fuego bajo, un poco de mantequilla y a doblar una tortilla francesa tierna.",
+     "p": [
+      "Bate los huevos con una pizca de sal y cocínalos a fuego medio-bajo con un poco de mantequilla.",
+      "Para un revuelto cremoso, remueve despacio y retira del fuego cuando aún se vea algo húmedo.",
+      "Para la tortilla francesa, deja cuajar un poco, pon el relleno en una mitad y dóblala con suavidad."
+     ],
+     "q": "¿Prefieres huevos revueltos o tortilla, y con qué?",
+     "c": "Haz un revuelto cremoso retirándolo pronto del fuego y nota la diferencia."
+    },
+    "fr": {
+     "t": "Œufs brouillés et omelette",
+     "g": "Apprends le feu doux, un peu de beurre et comment plier une omelette tendre.",
+     "p": [
+      "Bats les œufs avec une pincée de sel et cuis-les à feu doux à moyen dans un peu de beurre.",
+      "Pour des œufs brouillés crémeux, remue lentement et retire du feu quand ils semblent encore un peu baveux.",
+      "Pour l'omelette, laisse prendre légèrement, garnis une moitié et replie-la doucement."
+     ],
+     "q": "Préfères-tu les œufs brouillés ou l'omelette, et avec quoi ?",
+     "c": "Fais des œufs brouillés crémeux en retirant la poêle tôt, et goûte la différence."
+    },
+    "it": {
+     "t": "Uova strapazzate e frittata",
+     "g": "Impara la fiamma bassa, un po' di burro e come piegare un'omelette morbida.",
+     "p": [
+      "Sbatti le uova con un pizzico di sale e cuocile a fuoco medio-basso con un po' di burro.",
+      "Per strapazzate cremose mescola piano e togli dal fuoco quando sembrano ancora un po' umide.",
+      "Per l'omelette lasciala rapprendere appena, metti il ripieno su metà e ripiegala con delicatezza."
+     ],
+     "q": "Preferisci le uova strapazzate o l'omelette, e con cosa?",
+     "c": "Prepara uova strapazzate cremose togliendo presto la padella dal fuoco e senti la differenza."
+    },
+    "pt": {
+     "t": "Ovos mexidos e omeletes",
+     "g": "Aprende o lume brando, um pouco de manteiga e como dobrar uma omelete macia.",
+     "p": [
+      "Bate os ovos com uma pitada de sal e cozinha-os em lume médio-brando com um pouco de manteiga.",
+      "Para ovos mexidos cremosos, mexe devagar e tira do lume quando ainda parecem um pouco húmidos.",
+      "Para a omelete, deixa prender um pouco, põe o recheio numa metade e dobra com cuidado."
+     ],
+     "q": "Preferes ovos mexidos ou omelete, e com quê?",
+     "c": "Faz ovos mexidos cremosos tirando a frigideira cedo do lume e prova a diferença."
+    },
+    "pt_BR": {
+     "t": "Ovos mexidos e omeletes",
+     "g": "Aprenda o fogo baixo, um pouco de manteiga e como dobrar uma omelete macia.",
+     "p": [
+      "Bata os ovos com uma pitada de sal e cozinhe em fogo médio-baixo com um pouco de manteiga.",
+      "Para ovos mexidos cremosos, mexa devagar e tire do fogo quando ainda parecerem um pouco úmidos.",
+      "Para a omelete, deixe firmar um pouco, coloque o recheio numa metade e dobre com cuidado."
+     ],
+     "q": "Você prefere ovos mexidos ou omelete, e com quê?",
+     "c": "Faça ovos mexidos cremosos tirando a frigideira cedo do fogo e sinta a diferença."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Frying an egg",
+     "g": "Learn sunny side up, over easy and crispy-edged fried eggs in a hot pan.",
+     "p": [
+      "Heat a little oil or butter until it shimmers, then crack the egg into a small bowl first and slide it in.",
+      "Sunny side up cooks on one side only; over easy is flipped briefly so the yolk stays runny.",
+      "For crispy, lacy edges, use more oil on higher heat and spoon hot oil over the white."
+     ],
+     "q": "Which style of fried egg is your favourite?",
+     "c": "Fry one egg sunny side up and one over easy, and decide which you prefer."
+    },
+    "de": {
+     "t": "Ein Spiegelei braten",
+     "g": "Lerne Spiegelei, gewendetes Ei und knusprige Ränder in der heißen Pfanne.",
+     "p": [
+      "Erhitze etwas Öl oder Butter, schlag das Ei zuerst in eine kleine Schale und lass es in die Pfanne gleiten.",
+      "Das klassische Spiegelei gart nur einseitig; beim gewendeten Ei bleibt der Dotter nach kurzem Wenden flüssig.",
+      "Für knusprige Spitzenränder mehr Öl bei höherer Hitze nehmen und heißes Öl über das Eiweiß löffeln."
+     ],
+     "q": "Welche Art Spiegelei magst du am liebsten?",
+     "c": "Brate ein Ei klassisch und eins kurz gewendet und entscheide, was dir besser schmeckt."
+    },
+    "es": {
+     "t": "Freír un huevo",
+     "g": "Aprende el huevo a la plancha, vuelta y vuelta y con puntilla crujiente.",
+     "p": [
+      "Calienta un poco de aceite o mantequilla, casca el huevo antes en un cuenco y deslízalo a la sartén.",
+      "A la plancha se hace solo por un lado; vuelta y vuelta se gira un momento y la yema queda líquida.",
+      "Para una puntilla crujiente, usa más aceite a fuego más alto y riega la clara con aceite caliente."
+     ],
+     "q": "¿Cuál es tu forma favorita de huevo frito?",
+     "c": "Fríe un huevo solo por un lado y otro vuelta y vuelta, y decide cuál prefieres."
+    },
+    "fr": {
+     "t": "Cuire un œuf au plat",
+     "g": "Apprends l'œuf au plat, l'œuf retourné et les bords croustillants dans une poêle chaude.",
+     "p": [
+      "Chauffe un peu d'huile ou de beurre, casse l'œuf d'abord dans un bol puis fais-le glisser dans la poêle.",
+      "L'œuf au plat cuit d'un seul côté ; retourné brièvement, il garde un jaune coulant.",
+      "Pour des bords dentelés et croustillants, plus d'huile, feu plus vif, et arrose le blanc d'huile chaude."
+     ],
+     "q": "Quelle façon de cuire l'œuf au plat préfères-tu ?",
+     "c": "Cuis un œuf au plat classique et un œuf retourné, puis choisis ton préféré."
+    },
+    "it": {
+     "t": "L'uovo al tegamino",
+     "g": "Impara l'uovo al tegamino, girato e con i bordi croccanti in padella calda.",
+     "p": [
+      "Scalda un filo d'olio o burro, rompi prima l'uovo in una ciotolina e fallo scivolare in padella.",
+      "Il tegamino classico cuoce da un lato solo; girato per un attimo, il tuorlo resta morbido.",
+      "Per bordi croccanti e merlettati usa più olio a fuoco più alto e versa olio caldo sull'albume."
+     ],
+     "q": "Qual è il tuo modo preferito di cuocere l'uovo in padella?",
+     "c": "Cuoci un uovo al tegamino classico e uno girato, e scegli il tuo preferito."
+    },
+    "pt": {
+     "t": "Estrelar um ovo",
+     "g": "Aprende o ovo estrelado, virado e com bordas estaladiças numa frigideira quente.",
+     "p": [
+      "Aquece um pouco de azeite ou manteiga, parte o ovo primeiro numa taça e desliza-o para a frigideira.",
+      "O estrelado clássico cozinha só de um lado; virado por instantes, a gema fica mole.",
+      "Para bordas rendadas e estaladiças, mais óleo em lume mais forte e rega a clara com óleo quente."
+     ],
+     "q": "Qual é a tua forma preferida de ovo estrelado?",
+     "c": "Estrela um ovo clássico e outro virado, e decide qual preferes."
+    },
+    "pt_BR": {
+     "t": "Fritando um ovo",
+     "g": "Aprenda o ovo frito com gema para cima, virado e com bordas crocantes na frigideira quente.",
+     "p": [
+      "Aqueça um pouco de óleo ou manteiga, quebre o ovo antes numa tigelinha e deslize na frigideira.",
+      "Gema para cima cozinha só de um lado; virado rapidinho, a gema continua mole.",
+      "Para bordas rendadas e crocantes, mais óleo em fogo mais alto e regue a clara com óleo quente."
+     ],
+     "q": "Qual é seu jeito favorito de ovo frito?",
+     "c": "Frite um ovo com gema para cima e outro virado, e decida qual prefere."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salt, the key seasoning",
+     "g": "Learn the types of salt and why you season step by step, not only at the end.",
+     "p": [
+      "Fine salt dissolves fast; flaky salt adds crunch on top; coarse salt is great for pasta water.",
+      "Season in layers: a little at each stage brings out flavour better than a big pinch at the end.",
+      "Taste as you go and remember you can always add salt, but taking it away is hard."
+     ],
+     "q": "Do you think you usually use too much salt, too little or just enough?",
+     "c": "Cook something simple and taste it three times, adding small pinches of salt as you go."
+    },
+    "de": {
+     "t": "Salz, das wichtigste Gewürz",
+     "g": "Lerne die Salzsorten kennen und warum du schrittweise würzt, nicht nur am Ende.",
+     "p": [
+      "Feines Salz löst sich schnell, Flockensalz gibt Biss obenauf, grobes Salz passt gut ins Nudelwasser.",
+      "Würz in Schichten: in jeder Phase ein wenig bringt mehr Geschmack als eine große Prise am Schluss.",
+      "Probier zwischendurch: Salz kannst du immer nachgeben, aber kaum wieder herausholen."
+     ],
+     "q": "Salzt du meist zu viel, zu wenig oder genau richtig?",
+     "c": "Koch etwas Einfaches, probier dreimal und gib dabei jeweils eine kleine Prise Salz dazu."
+    },
+    "es": {
+     "t": "La sal, el condimento clave",
+     "g": "Aprende los tipos de sal y por qué se sazona poco a poco, no solo al final.",
+     "p": [
+      "La sal fina se disuelve rápido, la sal en escamas da crujiente al final y la gruesa va bien en el agua de la pasta.",
+      "Sazona por capas: un poco en cada etapa realza el sabor mejor que un gran pellizco al final.",
+      "Prueba mientras cocinas: siempre puedes añadir sal, pero quitarla es muy difícil."
+     ],
+     "q": "¿Crees que sueles usar demasiada sal, poca o la justa?",
+     "c": "Cocina algo sencillo, pruébalo tres veces y añade pequeñas pizcas de sal en cada paso."
+    },
+    "fr": {
+     "t": "Le sel, assaisonnement clé",
+     "g": "Apprends les types de sel et pourquoi on assaisonne par étapes, pas seulement à la fin.",
+     "p": [
+      "Le sel fin se dissout vite, la fleur de sel croque en finition, le gros sel est parfait pour l'eau des pâtes.",
+      "Assaisonne par couches : un peu à chaque étape révèle mieux les saveurs qu'une grosse pincée à la fin.",
+      "Goûte au fur et à mesure : on peut toujours rajouter du sel, mais l'enlever est difficile."
+     ],
+     "q": "Penses-tu saler en général trop, pas assez ou juste ce qu'il faut ?",
+     "c": "Cuisine un plat simple et goûte-le trois fois, en ajoutant une petite pincée de sel à chaque fois."
+    },
+    "it": {
+     "t": "Il sale, condimento chiave",
+     "g": "Impara i tipi di sale e perché si sala per gradi, non solo alla fine.",
+     "p": [
+      "Il sale fino si scioglie in fretta, quello in fiocchi dà croccantezza, il grosso è ideale per l'acqua della pasta.",
+      "Sala a strati: un po' in ogni fase esalta il sapore meglio di una grossa presa alla fine.",
+      "Assaggia mentre cucini: il sale si può sempre aggiungere, ma toglierlo è difficile."
+     ],
+     "q": "Pensi di usare di solito troppo sale, poco o il giusto?",
+     "c": "Cucina qualcosa di semplice e assaggia tre volte, aggiungendo piccoli pizzichi di sale."
+    },
+    "pt": {
+     "t": "O sal, o tempero-chave",
+     "g": "Aprende os tipos de sal e porque se tempera aos poucos, não só no fim.",
+     "p": [
+      "O sal fino dissolve depressa, a flor de sal dá crocância no fim e o sal grosso é ótimo para a água da massa.",
+      "Tempera por camadas: um pouco em cada fase realça mais o sabor do que uma grande pitada no fim.",
+      "Prova enquanto cozinhas: podes sempre juntar sal, mas tirá-lo é difícil."
+     ],
+     "q": "Achas que costumas pôr sal a mais, a menos ou na medida certa?",
+     "c": "Cozinha algo simples, prova três vezes e junta pequenas pitadas de sal pelo caminho."
+    },
+    "pt_BR": {
+     "t": "Sal, o tempero principal",
+     "g": "Aprenda os tipos de sal e por que temperar aos poucos, não só no final.",
+     "p": [
+      "O sal fino dissolve rápido, o sal em flocos dá crocância por cima e o grosso é ótimo para a água do macarrão.",
+      "Tempere em camadas: um pouco em cada etapa realça mais o sabor do que uma pitada grande no fim.",
+      "Prove enquanto cozinha: dá sempre para pôr mais sal, mas tirar é difícil."
+     ],
+     "q": "Você acha que costuma pôr sal demais, de menos ou na medida?",
+     "c": "Cozinhe algo simples, prove três vezes e acrescente pitadinhas de sal no caminho."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pepper, acid and balance",
+     "g": "Learn how black pepper, lemon juice and vinegar brighten and balance a dish.",
+     "p": [
+      "Freshly ground black pepper has more aroma than pre-ground; add it near the end for the best flavour.",
+      "A squeeze of lemon or a splash of vinegar lifts heavy or flat dishes and makes flavours pop.",
+      "If a dish tastes dull, ask: does it need salt, acid, or both? Adjust a little at a time."
+     ],
+     "q": "Which dish of yours could use a touch of lemon or vinegar?",
+     "c": "Taste a soup or sauce, then add a few drops of lemon juice and notice how it changes."
+    },
+    "de": {
+     "t": "Pfeffer, Säure und Balance",
+     "g": "Lerne, wie schwarzer Pfeffer, Zitronensaft und Essig ein Gericht frischer und runder machen.",
+     "p": [
+      "Frisch gemahlener Pfeffer duftet stärker als fertig gemahlener; gib ihn gegen Ende dazu.",
+      "Ein Spritzer Zitrone oder Essig hebt schwere oder flache Gerichte und lässt Aromen leuchten.",
+      "Schmeckt etwas fad, frag dich: fehlt Salz, Säure oder beides? Passe in kleinen Schritten an."
+     ],
+     "q": "Welches deiner Gerichte könnte etwas Zitrone oder Essig vertragen?",
+     "c": "Probier eine Suppe oder Sauce, gib ein paar Tropfen Zitrone dazu und spür den Unterschied."
+    },
+    "es": {
+     "t": "Pimienta, acidez y equilibrio",
+     "g": "Aprende cómo la pimienta negra, el limón y el vinagre avivan y equilibran un plato.",
+     "p": [
+      "La pimienta recién molida tiene más aroma que la ya molida; añádela hacia el final.",
+      "Un chorrito de limón o vinagre aligera platos pesados o planos y hace que los sabores brillen.",
+      "Si un plato sabe soso, pregúntate: ¿falta sal, acidez o ambas? Ajusta poco a poco."
+     ],
+     "q": "¿Qué plato tuyo mejoraría con un toque de limón o vinagre?",
+     "c": "Prueba una sopa o salsa, añade unas gotas de limón y nota cómo cambia."
+    },
+    "fr": {
+     "t": "Poivre, acidité et équilibre",
+     "g": "Apprends comment le poivre, le citron et le vinaigre réveillent et équilibrent un plat.",
+     "p": [
+      "Le poivre fraîchement moulu est bien plus parfumé ; ajoute-le plutôt en fin de cuisson.",
+      "Un trait de citron ou de vinaigre allège un plat lourd ou plat et fait ressortir les saveurs.",
+      "Si un plat manque de goût, demande-toi : sel, acidité ou les deux ? Ajuste petit à petit."
+     ],
+     "q": "Lequel de tes plats gagnerait à un trait de citron ou de vinaigre ?",
+     "c": "Goûte une soupe ou une sauce, ajoute quelques gouttes de citron et observe le changement."
+    },
+    "it": {
+     "t": "Pepe, acidità ed equilibrio",
+     "g": "Impara come pepe nero, limone e aceto ravvivano ed equilibrano un piatto.",
+     "p": [
+      "Il pepe macinato al momento è molto più profumato; aggiungilo verso la fine.",
+      "Una spruzzata di limone o aceto alleggerisce i piatti pesanti o piatti e fa risaltare i sapori.",
+      "Se un piatto sa di poco, chiediti: manca sale, acidità o entrambi? Correggi poco alla volta."
+     ],
+     "q": "Quale tuo piatto starebbe meglio con un tocco di limone o aceto?",
+     "c": "Assaggia una zuppa o un sugo, aggiungi qualche goccia di limone e nota come cambia."
+    },
+    "pt": {
+     "t": "Pimenta, acidez e equilíbrio",
+     "g": "Aprende como a pimenta preta, o limão e o vinagre avivam e equilibram um prato.",
+     "p": [
+      "A pimenta moída na hora tem mais aroma do que a já moída; junta-a perto do fim.",
+      "Um pouco de limão ou vinagre alivia pratos pesados ou sem graça e faz os sabores sobressair.",
+      "Se um prato parece sem sabor, pergunta: falta sal, acidez ou ambos? Ajusta aos poucos."
+     ],
+     "q": "Que prato teu ficaria melhor com um toque de limão ou vinagre?",
+     "c": "Prova uma sopa ou molho, junta umas gotas de limão e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Pimenta, acidez e equilíbrio",
+     "g": "Aprenda como pimenta-do-reino, limão e vinagre dão vida e equilíbrio a um prato.",
+     "p": [
+      "A pimenta moída na hora tem mais aroma do que a já moída; coloque perto do fim.",
+      "Um pouco de limão ou vinagre deixa pratos pesados ou sem graça mais leves e com sabor marcante.",
+      "Se o prato está sem graça, pergunte: falta sal, acidez ou os dois? Ajuste aos poucos."
+     ],
+     "q": "Qual prato seu ficaria melhor com um toque de limão ou vinagre?",
+     "c": "Prove uma sopa ou molho, coloque umas gotas de limão e perceba a diferença."
+    }
+   }
+  }
+ ]
+}

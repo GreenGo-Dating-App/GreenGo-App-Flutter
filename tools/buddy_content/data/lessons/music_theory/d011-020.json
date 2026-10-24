@@ -1,0 +1,835 @@
+{
+ "topic": "music_theory",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The musical alphabet",
+     "g": "Learn the seven note names A B C D E F G that repeat in cycles.",
+     "p": [
+      "Music uses only seven letter names: A B C D E F G.",
+      "After G the alphabet starts again at A, just a little higher.",
+      "Many songs and scales start on C, so you will often see C D E F G A B."
+     ],
+     "q": "Can you say the musical alphabet backwards from G to A?",
+     "c": "Say the letters C D E F G A B C out loud while walking up a staircase, one step per note."
+    },
+    "de": {
+     "t": "Das musikalische Alphabet",
+     "g": "Die sieben Tonnamen kennenlernen, die sich immer wiederholen: C D E F G A H.",
+     "p": [
+      "Im Deutschen heißen die Stammtöne C D E F G A H, also H statt B.",
+      "Nach H beginnt die Reihe wieder bei C, nur etwas höher.",
+      "Das B bezeichnet im Deutschen den Ton zwischen A und H, den man im Englischen B flat nennt."
+     ],
+     "q": "Kannst du die Reihe rückwärts von H bis C aufsagen?",
+     "c": "Sag C D E F G A H C laut, während du eine Treppe hochgehst, eine Stufe pro Ton."
+    },
+    "es": {
+     "t": "El alfabeto musical",
+     "g": "Aprender los siete nombres de nota que se repiten en ciclos: do re mi fa sol la si.",
+     "p": [
+      "En español las notas se llaman do, re, mi, fa, sol, la y si.",
+      "Después de si la serie vuelve a empezar en do, solo que más aguda.",
+      "En inglés usan letras: C es do, D es re, E es mi, y así hasta B, que es si."
+     ],
+     "q": "¿Puedes decir las notas al revés, de si a do?",
+     "c": "Di do re mi fa sol la si do en voz alta mientras subes una escalera, un peldaño por nota."
+    },
+    "fr": {
+     "t": "L'alphabet musical",
+     "g": "Apprendre les sept noms de notes qui reviennent en boucle : do ré mi fa sol la si.",
+     "p": [
+      "En français, les notes s'appellent do, ré, mi, fa, sol, la et si.",
+      "Après si, la série recommence à do, juste un peu plus aigu.",
+      "En anglais on utilise des lettres : C pour do, D pour ré, E pour mi, jusqu'à B pour si."
+     ],
+     "q": "Sais-tu dire les notes à l'envers, de si à do ?",
+     "c": "Dis do ré mi fa sol la si do à voix haute en montant un escalier, une marche par note."
+    },
+    "it": {
+     "t": "L'alfabeto musicale",
+     "g": "Imparare i sette nomi delle note che si ripetono a ciclo: do re mi fa sol la si.",
+     "p": [
+      "In italiano le note si chiamano do, re, mi, fa, sol, la e si.",
+      "Dopo il si la serie ricomincia dal do, solo un po' più in alto.",
+      "In inglese si usano lettere: C è do, D è re, E è mi, e così via fino a B, che è si."
+     ],
+     "q": "Riesci a dire le note al contrario, dal si al do?",
+     "c": "Di' do re mi fa sol la si do ad alta voce mentre sali una scala, un gradino per nota."
+    },
+    "pt": {
+     "t": "O alfabeto musical",
+     "g": "Aprender os sete nomes das notas que se repetem em ciclo: dó ré mi fá sol lá si.",
+     "p": [
+      "Em português as notas chamam-se dó, ré, mi, fá, sol, lá e si.",
+      "Depois do si a série recomeça no dó, só que mais aguda.",
+      "Em inglês usam-se letras: C é dó, D é ré, E é mi, e assim até B, que é si."
+     ],
+     "q": "Consegues dizer as notas ao contrário, de si a dó?",
+     "c": "Diz dó ré mi fá sol lá si dó em voz alta enquanto sobes uma escada, um degrau por nota."
+    },
+    "pt_BR": {
+     "t": "O alfabeto musical",
+     "g": "Aprender os sete nomes de nota que se repetem em ciclo: dó ré mi fá sol lá si.",
+     "p": [
+      "Em português as notas se chamam dó, ré, mi, fá, sol, lá e si.",
+      "Depois do si a sequência recomeça no dó, só que mais aguda.",
+      "Em cifras usamos letras: C é dó, D é ré, E é mi, e assim até B, que é si."
+     ],
+     "q": "Você consegue falar as notas de trás para frente, de si até dó?",
+     "c": "Fale dó ré mi fá sol lá si dó em voz alta enquanto sobe uma escada, um degrau por nota."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Octaves",
+     "g": "Understand why notes with the same name sound alike at different heights.",
+     "p": [
+      "An octave is the distance from one note to the next note with the same name, like C to the next C.",
+      "The higher note vibrates exactly twice as fast: A at 440 Hz and A at 880 Hz.",
+      "Because of this simple ratio, the two notes blend so well they feel like the same note."
+     ],
+     "q": "Have you noticed men and women singing the same tune an octave apart?",
+     "c": "Sing a low note, then try the same note an octave higher. Notice how similar they feel."
+    },
+    "de": {
+     "t": "Oktaven",
+     "g": "Verstehen, warum Töne mit gleichem Namen in verschiedener Höhe ähnlich klingen.",
+     "p": [
+      "Eine Oktave ist der Abstand von einem Ton zum nächsten mit gleichem Namen, etwa von c zum nächsten c.",
+      "Der höhere Ton schwingt genau doppelt so schnell: a mit 440 Hz und a mit 880 Hz.",
+      "Wegen dieses einfachen Verhältnisses verschmelzen beide Töne fast wie ein einziger."
+     ],
+     "q": "Ist dir aufgefallen, dass Männer und Frauen dieselbe Melodie oft eine Oktave versetzt singen?",
+     "c": "Sing einen tiefen Ton und dann denselben eine Oktave höher. Spür, wie ähnlich sie sind."
+    },
+    "es": {
+     "t": "Las octavas",
+     "g": "Entender por qué las notas con el mismo nombre suenan parecidas a distintas alturas.",
+     "p": [
+      "Una octava es la distancia de una nota a la siguiente con el mismo nombre, como de do al siguiente do.",
+      "La nota aguda vibra justo el doble de rápido: un la a 440 Hz y otro a 880 Hz.",
+      "Por esa relación tan simple, las dos notas se funden y parecen la misma."
+     ],
+     "q": "¿Has notado que hombres y mujeres cantan la misma melodía a una octava de distancia?",
+     "c": "Canta una nota grave y luego la misma una octava más aguda. Nota lo parecidas que suenan."
+    },
+    "fr": {
+     "t": "Les octaves",
+     "g": "Comprendre pourquoi des notes de même nom se ressemblent à des hauteurs différentes.",
+     "p": [
+      "Une octave est la distance d'une note à la suivante de même nom, comme d'un do au do suivant.",
+      "La note aiguë vibre exactement deux fois plus vite : un la à 440 Hz et un la à 880 Hz.",
+      "Grâce à ce rapport simple, les deux notes se fondent au point de sembler identiques."
+     ],
+     "q": "As-tu remarqué que des hommes et des femmes chantent souvent le même air à l'octave ?",
+     "c": "Chante une note grave puis la même une octave plus haut. Remarque leur ressemblance."
+    },
+    "it": {
+     "t": "Le ottave",
+     "g": "Capire perché note con lo stesso nome si somigliano ad altezze diverse.",
+     "p": [
+      "Un'ottava è la distanza da una nota alla successiva con lo stesso nome, come da do al do seguente.",
+      "La nota più acuta vibra esattamente al doppio: un la a 440 Hz e un la a 880 Hz.",
+      "Grazie a questo rapporto semplice, le due note si fondono e sembrano la stessa."
+     ],
+     "q": "Hai notato che uomini e donne cantano spesso la stessa melodia a un'ottava di distanza?",
+     "c": "Canta una nota grave e poi la stessa un'ottava sopra. Nota quanto si somigliano."
+    },
+    "pt": {
+     "t": "As oitavas",
+     "g": "Perceber porque notas com o mesmo nome soam parecidas em alturas diferentes.",
+     "p": [
+      "Uma oitava é a distância de uma nota até à seguinte com o mesmo nome, como de dó ao dó seguinte.",
+      "A nota mais aguda vibra exatamente ao dobro: um lá a 440 Hz e outro a 880 Hz.",
+      "Por causa desta relação simples, as duas notas fundem-se e parecem a mesma."
+     ],
+     "q": "Já reparaste que homens e mulheres cantam a mesma melodia a uma oitava de distância?",
+     "c": "Canta uma nota grave e depois a mesma uma oitava acima. Repara como se parecem."
+    },
+    "pt_BR": {
+     "t": "Oitavas",
+     "g": "Entender por que notas com o mesmo nome soam parecidas em alturas diferentes.",
+     "p": [
+      "Oitava é a distância de uma nota até a próxima com o mesmo nome, como de dó até o dó seguinte.",
+      "A nota mais aguda vibra exatamente o dobro: um lá em 440 Hz e outro em 880 Hz.",
+      "Por causa dessa relação simples, as duas notas se fundem e parecem a mesma."
+     ],
+     "q": "Você já reparou que homens e mulheres cantam a mesma melodia a uma oitava de distância?",
+     "c": "Cante uma nota grave e depois a mesma uma oitava acima. Repare como são parecidas."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Do re mi",
+     "g": "Discover solfège syllables and how singers use them around the world.",
+     "p": [
+      "Solfège gives each note a singable syllable: do re mi fa sol la ti (or si).",
+      "The idea goes back to the medieval teacher Guido d'Arezzo, who first used ut re mi fa sol la.",
+      "Syllables are easy to sing, so choirs and singers use them to learn melodies."
+     ],
+     "q": "Do you know a song that uses do re mi?",
+     "c": "Sing do re mi fa sol la ti do slowly going up, then come back down."
+    },
+    "de": {
+     "t": "Do re mi",
+     "g": "Solmisationssilben kennenlernen und wie Sänger sie weltweit nutzen.",
+     "p": [
+      "Die Solmisation gibt jedem Ton eine singbare Silbe: do re mi fa so la ti.",
+      "Die Idee geht auf den mittelalterlichen Lehrer Guido von Arezzo zurück, der ut re mi fa sol la nutzte.",
+      "Silben lassen sich leicht singen, deshalb lernen Chöre damit Melodien."
+     ],
+     "q": "Kennst du ein Lied, in dem do re mi vorkommt?",
+     "c": "Sing do re mi fa so la ti do langsam aufwärts und dann wieder abwärts."
+    },
+    "es": {
+     "t": "Do re mi",
+     "g": "Conocer las sílabas del solfeo y cómo las usan los cantantes en todo el mundo.",
+     "p": [
+      "En español las sílabas del solfeo son además los nombres de las notas: do re mi fa sol la si.",
+      "La idea viene del maestro medieval Guido d'Arezzo, que usó ut re mi fa sol la. Luego ut pasó a ser do.",
+      "Las sílabas se cantan con facilidad, por eso los coros aprenden melodías con ellas."
+     ],
+     "q": "¿Conoces alguna canción que use do re mi?",
+     "c": "Canta do re mi fa sol la si do despacio subiendo y luego baja otra vez."
+    },
+    "fr": {
+     "t": "Do ré mi",
+     "g": "Découvrir les syllabes du solfège et leur usage par les chanteurs du monde entier.",
+     "p": [
+      "En français, les syllabes du solfège sont aussi les noms des notes : do ré mi fa sol la si.",
+      "L'idée vient du maître médiéval Guido d'Arezzo, qui chantait ut ré mi fa sol la. Ut est devenu do.",
+      "Les syllabes se chantent facilement, alors les chorales apprennent les mélodies avec elles."
+     ],
+     "q": "Connais-tu une chanson qui utilise do ré mi ?",
+     "c": "Chante do ré mi fa sol la si do lentement en montant, puis redescends."
+    },
+    "it": {
+     "t": "Do re mi",
+     "g": "Scoprire le sillabe del solfeggio e come le usano i cantanti nel mondo.",
+     "p": [
+      "In italiano le sillabe del solfeggio sono anche i nomi delle note: do re mi fa sol la si.",
+      "L'idea risale al maestro medievale Guido d'Arezzo, che usava ut re mi fa sol la. Poi ut divenne do.",
+      "Le sillabe si cantano facilmente, per questo i cori imparano le melodie con esse."
+     ],
+     "q": "Conosci una canzone che usa do re mi?",
+     "c": "Canta do re mi fa sol la si do lentamente salendo e poi ridiscendi."
+    },
+    "pt": {
+     "t": "Dó ré mi",
+     "g": "Conhecer as sílabas do solfejo e como os cantores as usam pelo mundo.",
+     "p": [
+      "Em português, as sílabas do solfejo são também os nomes das notas: dó ré mi fá sol lá si.",
+      "A ideia vem do mestre medieval Guido d'Arezzo, que usava ut ré mi fá sol lá. Depois ut passou a dó.",
+      "As sílabas cantam-se com facilidade, por isso os coros aprendem melodias com elas."
+     ],
+     "q": "Conheces alguma música que use dó ré mi?",
+     "c": "Canta dó ré mi fá sol lá si dó devagar a subir e depois volta a descer."
+    },
+    "pt_BR": {
+     "t": "Dó ré mi",
+     "g": "Conhecer as sílabas do solfejo e como cantores do mundo todo as usam.",
+     "p": [
+      "Em português, as sílabas do solfejo também são os nomes das notas: dó ré mi fá sol lá si.",
+      "A ideia vem do mestre medieval Guido d'Arezzo, que usava ut ré mi fá sol lá. Depois ut virou dó.",
+      "As sílabas são fáceis de cantar, por isso os corais aprendem melodias com elas."
+     ],
+     "q": "Você conhece alguma música que usa dó ré mi?",
+     "c": "Cante dó ré mi fá sol lá si dó devagar subindo e depois desça de novo."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The piano keyboard map",
+     "g": "Find your way on the keyboard and spot C next to the group of two black keys.",
+     "p": [
+      "Black keys come in groups of two and three, and this pattern repeats all along the keyboard.",
+      "C is the white key just left of each group of two black keys.",
+      "From C, the white keys go C D E F G A B, then the pattern starts again."
+     ],
+     "q": "Do you have a keyboard at home, or could you use a free piano app?",
+     "c": "On a real or app keyboard, find and play every C you can see, from lowest to highest."
+    },
+    "de": {
+     "t": "Die Klaviertastatur",
+     "g": "Dich auf der Tastatur zurechtfinden und das C neben der Zweiergruppe schwarzer Tasten entdecken.",
+     "p": [
+      "Die schwarzen Tasten kommen in Zweier- und Dreiergruppen, und dieses Muster wiederholt sich.",
+      "Das C ist die weiße Taste direkt links von jeder Zweiergruppe schwarzer Tasten.",
+      "Ab C heißen die weißen Tasten C D E F G A H, dann beginnt das Muster von vorn."
+     ],
+     "q": "Hast du ein Keyboard zu Hause oder könntest du eine kostenlose Klavier-App nutzen?",
+     "c": "Finde auf einem echten oder App-Klavier jedes C und spiel sie von tief nach hoch."
+    },
+    "es": {
+     "t": "El mapa del teclado",
+     "g": "Orientarte en el teclado y encontrar el do junto al grupo de dos teclas negras.",
+     "p": [
+      "Las teclas negras van en grupos de dos y de tres, y ese patrón se repite en todo el teclado.",
+      "El do es la tecla blanca justo a la izquierda de cada grupo de dos teclas negras.",
+      "Desde do, las blancas son do re mi fa sol la si, y luego el patrón se repite."
+     ],
+     "q": "¿Tienes un teclado en casa o podrías usar una app de piano gratis?",
+     "c": "En un teclado real o en una app, busca y toca todos los do que veas, del más grave al más agudo."
+    },
+    "fr": {
+     "t": "La carte du clavier",
+     "g": "Te repérer sur le clavier et trouver le do à côté du groupe de deux touches noires.",
+     "p": [
+      "Les touches noires vont par groupes de deux et de trois, et ce motif se répète sur tout le clavier.",
+      "Le do est la touche blanche juste à gauche de chaque groupe de deux touches noires.",
+      "À partir de do, les blanches sont do ré mi fa sol la si, puis le motif recommence."
+     ],
+     "q": "As-tu un clavier chez toi, ou pourrais-tu utiliser une appli de piano gratuite ?",
+     "c": "Sur un vrai clavier ou une appli, trouve et joue tous les do, du plus grave au plus aigu."
+    },
+    "it": {
+     "t": "La mappa della tastiera",
+     "g": "Orientarti sulla tastiera e trovare il do accanto al gruppo di due tasti neri.",
+     "p": [
+      "I tasti neri sono in gruppi da due e da tre, e lo schema si ripete su tutta la tastiera.",
+      "Il do è il tasto bianco subito a sinistra di ogni gruppo di due tasti neri.",
+      "Dal do i tasti bianchi sono do re mi fa sol la si, poi lo schema ricomincia."
+     ],
+     "q": "Hai una tastiera a casa o potresti usare un'app di pianoforte gratuita?",
+     "c": "Su una tastiera vera o in un'app, trova e suona ogni do, dal più grave al più acuto."
+    },
+    "pt": {
+     "t": "O mapa do teclado",
+     "g": "Orientares-te no teclado e encontrares o dó junto ao grupo de duas teclas pretas.",
+     "p": [
+      "As teclas pretas vêm em grupos de duas e de três, e esse padrão repete-se ao longo do teclado.",
+      "O dó é a tecla branca logo à esquerda de cada grupo de duas teclas pretas.",
+      "A partir do dó, as brancas são dó ré mi fá sol lá si, e depois o padrão recomeça."
+     ],
+     "q": "Tens um teclado em casa ou podias usar uma aplicação de piano gratuita?",
+     "c": "Num teclado real ou numa aplicação, encontra e toca todos os dós, do mais grave ao mais agudo."
+    },
+    "pt_BR": {
+     "t": "O mapa do teclado",
+     "g": "Se localizar no teclado e achar o dó ao lado do grupo de duas teclas pretas.",
+     "p": [
+      "As teclas pretas vêm em grupos de duas e de três, e esse padrão se repete pelo teclado todo.",
+      "O dó é a tecla branca logo à esquerda de cada grupo de duas teclas pretas.",
+      "A partir do dó, as brancas são dó ré mi fá sol lá si, e aí o padrão recomeça."
+     ],
+     "q": "Você tem um teclado em casa ou poderia usar um app de piano gratuito?",
+     "c": "Num teclado real ou num app, encontre e toque todos os dós, do mais grave ao mais agudo."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharps and flats",
+     "g": "Learn how sharp and flat signs raise or lower a note.",
+     "p": [
+      "A sharp (♯) raises a note by the smallest step, usually to the black key just to its right.",
+      "A flat (♭) lowers a note by the smallest step, usually to the black key just to its left.",
+      "A natural sign (♮) cancels a sharp or flat and brings the note back to normal."
+     ],
+     "q": "Have you seen the ♯ and ♭ symbols before, maybe on sheet music or a tuner app?",
+     "c": "On a keyboard, play C then C sharp, then E then E flat. Hear the tiny step each time."
+    },
+    "de": {
+     "t": "Kreuz und b",
+     "g": "Lernen, wie Kreuz und b einen Ton erhöhen oder erniedrigen.",
+     "p": [
+      "Ein Kreuz (♯) erhöht einen Ton um einen Halbton, aus C wird Cis, meist die schwarze Taste rechts daneben.",
+      "Ein b (♭) erniedrigt um einen Halbton, aus E wird Es, meist die schwarze Taste links daneben.",
+      "Ein Auflösungszeichen (♮) hebt Kreuz oder b auf und bringt den Stammton zurück."
+     ],
+     "q": "Hast du die Zeichen ♯ und ♭ schon einmal gesehen, etwa in Noten oder einer Stimm-App?",
+     "c": "Spiel auf einer Tastatur C und dann Cis, danach E und dann Es. Hör jedes Mal den kleinen Schritt."
+    },
+    "es": {
+     "t": "Sostenidos y bemoles",
+     "g": "Aprender cómo el sostenido y el bemol suben o bajan una nota.",
+     "p": [
+      "El sostenido (♯) sube una nota un semitono, normalmente a la tecla negra de su derecha.",
+      "El bemol (♭) baja una nota un semitono, normalmente a la tecla negra de su izquierda.",
+      "El becuadro (♮) anula el sostenido o el bemol y devuelve la nota a su estado natural."
+     ],
+     "q": "¿Habías visto los signos ♯ y ♭, quizá en partituras o en una app afinadora?",
+     "c": "En un teclado toca do y luego do sostenido, después mi y luego mi bemol. Escucha el pequeño paso."
+    },
+    "fr": {
+     "t": "Dièses et bémols",
+     "g": "Apprendre comment le dièse et le bémol montent ou baissent une note.",
+     "p": [
+      "Le dièse (♯) monte une note d'un demi-ton, souvent jusqu'à la touche noire juste à droite.",
+      "Le bémol (♭) baisse une note d'un demi-ton, souvent jusqu'à la touche noire juste à gauche.",
+      "Le bécarre (♮) annule un dièse ou un bémol et ramène la note à son état naturel."
+     ],
+     "q": "As-tu déjà vu les signes ♯ et ♭, sur une partition ou une appli d'accordeur ?",
+     "c": "Sur un clavier, joue do puis do dièse, ensuite mi puis mi bémol. Écoute le petit pas à chaque fois."
+    },
+    "it": {
+     "t": "Diesis e bemolle",
+     "g": "Imparare come diesis e bemolle alzano o abbassano una nota.",
+     "p": [
+      "Il diesis (♯) alza una nota di un semitono, di solito al tasto nero subito a destra.",
+      "Il bemolle (♭) abbassa una nota di un semitono, di solito al tasto nero subito a sinistra.",
+      "Il bequadro (♮) annulla diesis o bemolle e riporta la nota al suo stato naturale."
+     ],
+     "q": "Hai già visto i simboli ♯ e ♭, magari su uno spartito o un'app accordatore?",
+     "c": "Su una tastiera suona do e poi do diesis, poi mi e mi bemolle. Ascolta ogni volta il piccolo passo."
+    },
+    "pt": {
+     "t": "Sustenidos e bemóis",
+     "g": "Aprender como o sustenido e o bemol sobem ou descem uma nota.",
+     "p": [
+      "O sustenido (♯) sobe uma nota meio-tom, normalmente para a tecla preta logo à direita.",
+      "O bemol (♭) desce uma nota meio-tom, normalmente para a tecla preta logo à esquerda.",
+      "O bequadro (♮) anula o sustenido ou o bemol e devolve a nota ao estado natural."
+     ],
+     "q": "Já tinhas visto os sinais ♯ e ♭, talvez numa partitura ou numa aplicação de afinador?",
+     "c": "Num teclado toca dó e depois dó sustenido, a seguir mi e mi bemol. Ouve o pequeno passo de cada vez."
+    },
+    "pt_BR": {
+     "t": "Sustenidos e bemóis",
+     "g": "Aprender como o sustenido e o bemol sobem ou descem uma nota.",
+     "p": [
+      "O sustenido (♯) sobe uma nota meio-tom, geralmente para a tecla preta logo à direita.",
+      "O bemol (♭) desce uma nota meio-tom, geralmente para a tecla preta logo à esquerda.",
+      "O bequadro (♮) cancela o sustenido ou o bemol e devolve a nota ao natural."
+     ],
+     "q": "Você já tinha visto os sinais ♯ e ♭, talvez numa partitura ou num app afinador?",
+     "c": "Num teclado toque dó e depois dó sustenido, depois mi e mi bemol. Ouça o passinho a cada vez."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Half steps and whole steps",
+     "g": "Measure the smallest distances between notes on the keyboard.",
+     "p": [
+      "A half step (semitone) goes from one key to the very next key, black or white.",
+      "A whole step (tone) is two half steps, like C to D with C sharp in between.",
+      "E to F and B to C are half steps, because there is no black key between them."
+     ],
+     "q": "Why do you think E and F have no black key between them?",
+     "c": "On a keyboard, play C D E F G A B C and say whole or half for each step."
+    },
+    "de": {
+     "t": "Halbtöne und Ganztöne",
+     "g": "Die kleinsten Abstände zwischen Tönen auf der Tastatur messen.",
+     "p": [
+      "Ein Halbton geht von einer Taste zur direkt benachbarten, ob schwarz oder weiß.",
+      "Ein Ganzton besteht aus zwei Halbtönen, etwa C nach D mit Cis dazwischen.",
+      "E–F und H–C sind Halbtöne, weil dort keine schwarze Taste dazwischen liegt."
+     ],
+     "q": "Warum liegt deiner Meinung nach zwischen E und F keine schwarze Taste?",
+     "c": "Spiel C D E F G A H C und sag bei jedem Schritt ganz oder halb."
+    },
+    "es": {
+     "t": "Semitonos y tonos",
+     "g": "Medir las distancias más pequeñas entre notas en el teclado.",
+     "p": [
+      "Un semitono va de una tecla a la inmediatamente siguiente, sea negra o blanca.",
+      "Un tono son dos semitonos, como de do a re con do sostenido en medio.",
+      "Mi–fa y si–do son semitonos, porque entre ellas no hay tecla negra."
+     ],
+     "q": "¿Por qué crees que entre mi y fa no hay tecla negra?",
+     "c": "En un teclado toca do re mi fa sol la si do y di tono o semitono en cada paso."
+    },
+    "fr": {
+     "t": "Demi-tons et tons",
+     "g": "Mesurer les plus petites distances entre les notes sur le clavier.",
+     "p": [
+      "Un demi-ton va d'une touche à la touche juste à côté, noire ou blanche.",
+      "Un ton vaut deux demi-tons, comme de do à ré avec do dièse au milieu.",
+      "Mi–fa et si–do sont des demi-tons, car il n'y a pas de touche noire entre eux."
+     ],
+     "q": "D'après toi, pourquoi n'y a-t-il pas de touche noire entre mi et fa ?",
+     "c": "Sur un clavier, joue do ré mi fa sol la si do et dis ton ou demi-ton à chaque pas."
+    },
+    "it": {
+     "t": "Semitoni e toni",
+     "g": "Misurare le distanze più piccole tra le note sulla tastiera.",
+     "p": [
+      "Un semitono va da un tasto a quello immediatamente vicino, nero o bianco.",
+      "Un tono è fatto di due semitoni, come da do a re con do diesis in mezzo.",
+      "Mi–fa e si–do sono semitoni, perché tra loro non c'è un tasto nero."
+     ],
+     "q": "Secondo te perché tra mi e fa non c'è un tasto nero?",
+     "c": "Sulla tastiera suona do re mi fa sol la si do e di' tono o semitono a ogni passo."
+    },
+    "pt": {
+     "t": "Meios-tons e tons",
+     "g": "Medir as distâncias mais pequenas entre notas no teclado.",
+     "p": [
+      "Um meio-tom vai de uma tecla à tecla imediatamente ao lado, preta ou branca.",
+      "Um tom são dois meios-tons, como de dó a ré com dó sustenido no meio.",
+      "Mi–fá e si–dó são meios-tons, porque não há tecla preta entre elas."
+     ],
+     "q": "Porque achas que não há tecla preta entre mi e fá?",
+     "c": "Num teclado toca dó ré mi fá sol lá si dó e diz tom ou meio-tom em cada passo."
+    },
+    "pt_BR": {
+     "t": "Semitons e tons",
+     "g": "Medir as menores distâncias entre notas no teclado.",
+     "p": [
+      "Um semitom vai de uma tecla até a tecla vizinha, preta ou branca.",
+      "Um tom são dois semitons, como de dó a ré com dó sustenido no meio.",
+      "Mi–fá e si–dó são semitons, porque não há tecla preta entre elas."
+     ],
+     "q": "Por que você acha que não tem tecla preta entre mi e fá?",
+     "c": "Num teclado toque dó ré mi fá sol lá si dó e diga tom ou semitom a cada passo."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Enharmonic notes",
+     "g": "Understand why C sharp and D flat are the same key on a piano.",
+     "p": [
+      "Enharmonic notes sound the same but have different names, like C♯ and D♭.",
+      "Each black key has two names: raised from the note below or lowered from the note above.",
+      "The name used depends on the musical context, which you will learn with scales and keys."
+     ],
+     "q": "Can you find another black key and give both of its names?",
+     "c": "Pick three black keys on a keyboard and say both names for each one."
+    },
+    "de": {
+     "t": "Enharmonische Töne",
+     "g": "Verstehen, warum Cis und Des auf dem Klavier dieselbe Taste sind.",
+     "p": [
+      "Enharmonische Töne klingen gleich, heißen aber verschieden, etwa Cis und Des.",
+      "Jede schwarze Taste hat zwei Namen: erhöht vom Ton darunter oder erniedrigt vom Ton darüber.",
+      "Welcher Name passt, hängt vom Zusammenhang ab, das lernst du später mit Tonarten."
+     ],
+     "q": "Findest du eine andere schwarze Taste und kannst ihre beiden Namen nennen?",
+     "c": "Wähle drei schwarze Tasten und nenne für jede beide Namen, zum Beispiel Fis und Ges."
+    },
+    "es": {
+     "t": "Notas enarmónicas",
+     "g": "Entender por qué do sostenido y re bemol son la misma tecla del piano.",
+     "p": [
+      "Las notas enarmónicas suenan igual pero tienen nombres distintos, como do♯ y re♭.",
+      "Cada tecla negra tiene dos nombres: subida desde la nota de abajo o bajada desde la de arriba.",
+      "El nombre depende del contexto musical, que aprenderás con las escalas y tonalidades."
+     ],
+     "q": "¿Puedes encontrar otra tecla negra y decir sus dos nombres?",
+     "c": "Elige tres teclas negras y di los dos nombres de cada una, por ejemplo fa♯ y sol♭."
+    },
+    "fr": {
+     "t": "Les notes enharmoniques",
+     "g": "Comprendre pourquoi do dièse et ré bémol sont la même touche au piano.",
+     "p": [
+      "Des notes enharmoniques sonnent pareil mais portent des noms différents, comme do♯ et ré♭.",
+      "Chaque touche noire a deux noms : montée depuis la note du dessous ou baissée depuis celle du dessus.",
+      "Le nom choisi dépend du contexte musical, que tu verras avec les gammes et tonalités."
+     ],
+     "q": "Peux-tu trouver une autre touche noire et donner ses deux noms ?",
+     "c": "Choisis trois touches noires et dis les deux noms de chacune, par exemple fa♯ et sol♭."
+    },
+    "it": {
+     "t": "Note enarmoniche",
+     "g": "Capire perché do diesis e re bemolle sono lo stesso tasto del pianoforte.",
+     "p": [
+      "Le note enarmoniche suonano uguali ma hanno nomi diversi, come do♯ e re♭.",
+      "Ogni tasto nero ha due nomi: alzato dalla nota sotto o abbassato dalla nota sopra.",
+      "Il nome dipende dal contesto musicale, che vedrai con scale e tonalità."
+     ],
+     "q": "Riesci a trovare un altro tasto nero e dire i suoi due nomi?",
+     "c": "Scegli tre tasti neri e di' i due nomi di ciascuno, per esempio fa♯ e sol♭."
+    },
+    "pt": {
+     "t": "Notas enarmónicas",
+     "g": "Perceber porque dó sustenido e ré bemol são a mesma tecla do piano.",
+     "p": [
+      "Notas enarmónicas soam igual mas têm nomes diferentes, como dó♯ e ré♭.",
+      "Cada tecla preta tem dois nomes: subida a partir da nota de baixo ou descida a partir da de cima.",
+      "O nome usado depende do contexto musical, que vais aprender com escalas e tonalidades."
+     ],
+     "q": "Consegues encontrar outra tecla preta e dizer os seus dois nomes?",
+     "c": "Escolhe três teclas pretas e diz os dois nomes de cada uma, por exemplo fá♯ e sol♭."
+    },
+    "pt_BR": {
+     "t": "Notas enarmônicas",
+     "g": "Entender por que dó sustenido e ré bemol são a mesma tecla no piano.",
+     "p": [
+      "Notas enarmônicas soam igual mas têm nomes diferentes, como dó♯ e ré♭.",
+      "Cada tecla preta tem dois nomes: subida a partir da nota de baixo ou descida a partir da de cima.",
+      "O nome usado depende do contexto musical, que você vai aprender com escalas e tonalidades."
+     ],
+     "q": "Você consegue achar outra tecla preta e dizer os dois nomes dela?",
+     "c": "Escolha três teclas pretas e diga os dois nomes de cada uma, por exemplo fá♯ e sol♭."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The staff",
+     "g": "Meet the staff: five lines and four spaces where notes are written.",
+     "p": [
+      "The staff is a set of five horizontal lines with four spaces between them.",
+      "Notes sit on a line or in a space, and higher positions mean higher pitches.",
+      "Lines and spaces are counted from the bottom up: line 1 is the lowest."
+     ],
+     "q": "Have you ever tried to read sheet music, even a little?",
+     "c": "Draw a staff with five lines and place one note on each line and in each space, going upward."
+    },
+    "de": {
+     "t": "Das Notensystem",
+     "g": "Das Notensystem kennenlernen: fünf Linien und vier Zwischenräume für die Noten.",
+     "p": [
+      "Das Notensystem besteht aus fünf waagerechten Linien mit vier Zwischenräumen.",
+      "Noten sitzen auf einer Linie oder in einem Zwischenraum, und je höher, desto höher der Ton.",
+      "Linien und Zwischenräume zählt man von unten: Linie 1 ist die tiefste."
+     ],
+     "q": "Hast du schon einmal versucht, Noten zu lesen, wenigstens ein bisschen?",
+     "c": "Zeichne fünf Linien und setz von unten nach oben je eine Note auf jede Linie und in jeden Zwischenraum."
+    },
+    "es": {
+     "t": "El pentagrama",
+     "g": "Conocer el pentagrama: cinco líneas y cuatro espacios donde se escriben las notas.",
+     "p": [
+      "El pentagrama es un conjunto de cinco líneas horizontales con cuatro espacios entre ellas.",
+      "Las notas van en una línea o en un espacio, y cuanto más arriba, más aguda es la nota.",
+      "Líneas y espacios se cuentan de abajo arriba: la línea 1 es la más grave."
+     ],
+     "q": "¿Alguna vez has intentado leer partituras, aunque sea un poco?",
+     "c": "Dibuja un pentagrama y pon una nota en cada línea y en cada espacio, de abajo arriba."
+    },
+    "fr": {
+     "t": "La portée",
+     "g": "Découvrir la portée : cinq lignes et quatre interlignes où l'on écrit les notes.",
+     "p": [
+      "La portée est formée de cinq lignes horizontales avec quatre interlignes entre elles.",
+      "Une note se place sur une ligne ou dans un interligne, et plus elle est haute, plus elle est aiguë.",
+      "On compte lignes et interlignes de bas en haut : la ligne 1 est la plus basse."
+     ],
+     "q": "As-tu déjà essayé de lire une partition, même un peu ?",
+     "c": "Dessine une portée et place une note sur chaque ligne et dans chaque interligne, en montant."
+    },
+    "it": {
+     "t": "Il pentagramma",
+     "g": "Conoscere il pentagramma: cinque linee e quattro spazi dove si scrivono le note.",
+     "p": [
+      "Il pentagramma è formato da cinque linee orizzontali con quattro spazi tra loro.",
+      "Le note stanno su una linea o in uno spazio, e più sono in alto più sono acute.",
+      "Linee e spazi si contano dal basso: la prima linea è la più bassa."
+     ],
+     "q": "Hai mai provato a leggere uno spartito, anche solo un po'?",
+     "c": "Disegna un pentagramma e metti una nota su ogni linea e in ogni spazio, salendo."
+    },
+    "pt": {
+     "t": "A pauta",
+     "g": "Conhecer a pauta: cinco linhas e quatro espaços onde se escrevem as notas.",
+     "p": [
+      "A pauta é um conjunto de cinco linhas horizontais com quatro espaços entre elas.",
+      "As notas ficam numa linha ou num espaço, e quanto mais acima, mais aguda é a nota.",
+      "Linhas e espaços contam-se de baixo para cima: a linha 1 é a mais baixa."
+     ],
+     "q": "Já tentaste ler uma partitura, nem que fosse um bocadinho?",
+     "c": "Desenha uma pauta e põe uma nota em cada linha e em cada espaço, a subir."
+    },
+    "pt_BR": {
+     "t": "O pentagrama",
+     "g": "Conhecer o pentagrama: cinco linhas e quatro espaços onde as notas são escritas.",
+     "p": [
+      "O pentagrama é um conjunto de cinco linhas horizontais com quatro espaços entre elas.",
+      "As notas ficam numa linha ou num espaço, e quanto mais acima, mais aguda a nota.",
+      "Linhas e espaços são contados de baixo para cima: a linha 1 é a mais baixa."
+     ],
+     "q": "Você já tentou ler partitura, nem que seja um pouquinho?",
+     "c": "Desenhe um pentagrama e coloque uma nota em cada linha e em cada espaço, subindo."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The treble clef",
+     "g": "Read higher notes with the treble clef, also called the G clef.",
+     "p": [
+      "The treble clef curls around the second line from the bottom, marking it as G.",
+      "Lines from bottom to top are E G B D F, and the spaces spell F A C E.",
+      "It is used for higher sounds: voices, flute, violin and the right hand on piano."
+     ],
+     "q": "Which instrument would you like to read in treble clef?",
+     "c": "Draw a treble clef and write the notes of the word FACE in the spaces."
+    },
+    "de": {
+     "t": "Der Violinschlüssel",
+     "g": "Höhere Töne mit dem Violinschlüssel, auch G-Schlüssel genannt, lesen.",
+     "p": [
+      "Der Violinschlüssel kringelt sich um die zweite Linie von unten und legt dort das g fest.",
+      "Die Linien von unten heißen e g h d f, die Zwischenräume f a c e.",
+      "Er dient für höhere Klänge: Stimmen, Flöte, Geige und die rechte Hand am Klavier."
+     ],
+     "q": "Welches Instrument würdest du gern im Violinschlüssel lesen?",
+     "c": "Zeichne einen Violinschlüssel und schreib die Töne f a c e in die Zwischenräume."
+    },
+    "es": {
+     "t": "La clave de sol",
+     "g": "Leer las notas agudas con la clave de sol.",
+     "p": [
+      "La clave de sol se enrosca en la segunda línea desde abajo y marca allí la nota sol.",
+      "Las líneas de abajo arriba son mi sol si re fa, y los espacios fa la do mi.",
+      "Se usa para sonidos agudos: voces, flauta, violín y la mano derecha del piano."
+     ],
+     "q": "¿Qué instrumento te gustaría leer en clave de sol?",
+     "c": "Dibuja una clave de sol y escribe fa la do mi en los espacios del pentagrama."
+    },
+    "fr": {
+     "t": "La clé de sol",
+     "g": "Lire les notes aiguës avec la clé de sol.",
+     "p": [
+      "La clé de sol s'enroule autour de la deuxième ligne en partant du bas et y place le sol.",
+      "De bas en haut, les lignes sont mi sol si ré fa, et les interlignes fa la do mi.",
+      "On l'utilise pour les sons aigus : voix, flûte, violon et main droite au piano."
+     ],
+     "q": "Quel instrument aimerais-tu lire en clé de sol ?",
+     "c": "Dessine une clé de sol et écris fa la do mi dans les interlignes de la portée."
+    },
+    "it": {
+     "t": "La chiave di violino",
+     "g": "Leggere le note acute con la chiave di violino, o chiave di sol.",
+     "p": [
+      "La chiave di violino si avvolge attorno alla seconda linea dal basso e lì fissa il sol.",
+      "Le linee dal basso sono mi sol si re fa, e gli spazi fa la do mi.",
+      "Si usa per i suoni acuti: voci, flauto, violino e mano destra del pianoforte."
+     ],
+     "q": "Quale strumento ti piacerebbe leggere in chiave di violino?",
+     "c": "Disegna una chiave di violino e scrivi fa la do mi negli spazi del pentagramma."
+    },
+    "pt": {
+     "t": "A clave de sol",
+     "g": "Ler as notas agudas com a clave de sol.",
+     "p": [
+      "A clave de sol enrola-se à volta da segunda linha a contar de baixo e marca aí a nota sol.",
+      "As linhas de baixo para cima são mi sol si ré fá, e os espaços fá lá dó mi.",
+      "Usa-se para sons agudos: vozes, flauta, violino e a mão direita do piano."
+     ],
+     "q": "Que instrumento gostavas de ler em clave de sol?",
+     "c": "Desenha uma clave de sol e escreve fá lá dó mi nos espaços da pauta."
+    },
+    "pt_BR": {
+     "t": "A clave de sol",
+     "g": "Ler as notas agudas com a clave de sol.",
+     "p": [
+      "A clave de sol se enrola na segunda linha de baixo para cima e marca ali a nota sol.",
+      "As linhas de baixo para cima são mi sol si ré fá, e os espaços fá lá dó mi.",
+      "Ela é usada para sons agudos: vozes, flauta, violino e a mão direita do piano."
+     ],
+     "q": "Qual instrumento você gostaria de ler na clave de sol?",
+     "c": "Desenhe uma clave de sol e escreva fá lá dó mi nos espaços do pentagrama."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bass clef",
+     "g": "Read lower notes with the bass clef, also called the F clef.",
+     "p": [
+      "The two dots of the bass clef surround the fourth line from the bottom, marking it as F.",
+      "Lines from bottom to top are G B D F A, and the spaces are A C E G.",
+      "It is used for lower sounds: bass guitar, cello, tuba and the left hand on piano."
+     ],
+     "q": "Do you enjoy deep, low sounds like a bass line?",
+     "c": "Draw a bass clef and write the notes A C E G in its spaces."
+    },
+    "de": {
+     "t": "Der Bassschlüssel",
+     "g": "Tiefere Töne mit dem Bassschlüssel, auch F-Schlüssel genannt, lesen.",
+     "p": [
+      "Die zwei Punkte des Bassschlüssels umrahmen die vierte Linie von unten und legen dort das f fest.",
+      "Die Linien von unten heißen G H D F A, die Zwischenräume A C E G.",
+      "Er dient für tiefere Klänge: E-Bass, Cello, Tuba und die linke Hand am Klavier."
+     ],
+     "q": "Magst du tiefe Klänge wie eine Basslinie?",
+     "c": "Zeichne einen Bassschlüssel und schreib A C E G in seine Zwischenräume."
+    },
+    "es": {
+     "t": "La clave de fa",
+     "g": "Leer las notas graves con la clave de fa.",
+     "p": [
+      "Los dos puntos de la clave de fa rodean la cuarta línea desde abajo y marcan allí la nota fa.",
+      "Las líneas de abajo arriba son sol si re fa la, y los espacios la do mi sol.",
+      "Se usa para sonidos graves: bajo, violonchelo, tuba y la mano izquierda del piano."
+     ],
+     "q": "¿Te gustan los sonidos graves, como una línea de bajo?",
+     "c": "Dibuja una clave de fa y escribe la do mi sol en sus espacios."
+    },
+    "fr": {
+     "t": "La clé de fa",
+     "g": "Lire les notes graves avec la clé de fa.",
+     "p": [
+      "Les deux points de la clé de fa encadrent la quatrième ligne en partant du bas et y placent le fa.",
+      "De bas en haut, les lignes sont sol si ré fa la, et les interlignes la do mi sol.",
+      "On l'utilise pour les sons graves : basse, violoncelle, tuba et main gauche au piano."
+     ],
+     "q": "Aimes-tu les sons graves, comme une ligne de basse ?",
+     "c": "Dessine une clé de fa et écris la do mi sol dans ses interlignes."
+    },
+    "it": {
+     "t": "La chiave di basso",
+     "g": "Leggere le note gravi con la chiave di basso, o chiave di fa.",
+     "p": [
+      "I due punti della chiave di basso circondano la quarta linea dal basso e lì fissano il fa.",
+      "Le linee dal basso sono sol si re fa la, e gli spazi la do mi sol.",
+      "Si usa per i suoni gravi: basso elettrico, violoncello, tuba e mano sinistra del pianoforte."
+     ],
+     "q": "Ti piacciono i suoni gravi, come una linea di basso?",
+     "c": "Disegna una chiave di basso e scrivi la do mi sol nei suoi spazi."
+    },
+    "pt": {
+     "t": "A clave de fá",
+     "g": "Ler as notas graves com a clave de fá.",
+     "p": [
+      "Os dois pontos da clave de fá rodeiam a quarta linha a contar de baixo e marcam aí a nota fá.",
+      "As linhas de baixo para cima são sol si ré fá lá, e os espaços lá dó mi sol.",
+      "Usa-se para sons graves: baixo, violoncelo, tuba e a mão esquerda do piano."
+     ],
+     "q": "Gostas de sons graves, como uma linha de baixo?",
+     "c": "Desenha uma clave de fá e escreve lá dó mi sol nos seus espaços."
+    },
+    "pt_BR": {
+     "t": "A clave de fá",
+     "g": "Ler as notas graves com a clave de fá.",
+     "p": [
+      "Os dois pontos da clave de fá cercam a quarta linha de baixo para cima e marcam ali a nota fá.",
+      "As linhas de baixo para cima são sol si ré fá lá, e os espaços lá dó mi sol.",
+      "Ela é usada para sons graves: baixo, violoncelo, tuba e a mão esquerda do piano."
+     ],
+     "q": "Você curte sons graves, como uma linha de baixo?",
+     "c": "Desenhe uma clave de fá e escreva lá dó mi sol nos espaços dela."
+    }
+   }
+  }
+ ]
+}

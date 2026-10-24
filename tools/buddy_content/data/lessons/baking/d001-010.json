@@ -1,0 +1,835 @@
+{
+ "topic": "baking",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the home bakery",
+     "g": "Discover what baking really is: heat and simple chemistry turning a few ingredients into something delicious.",
+     "p": [
+      "Baking uses dry, surrounding oven heat to set proteins, gelatinise starch and brown sugars into new flavours.",
+      "Most bakes start from the same few ingredients: flour, sugar, fat, eggs, liquid, salt and a raising agent.",
+      "Patience is an ingredient too: preheating, resting and cooling all change the final result."
+     ],
+     "q": "What is the first bake you remember eating, or making, and why did it stick with you?",
+     "c": "Look in your kitchen and list which basic baking ingredients you already have at home."
+    },
+    "de": {
+     "t": "Willkommen in der Heimbäckerei",
+     "g": "Entdecke, was Backen wirklich ist: Hitze und einfache Chemie machen aus wenigen Zutaten etwas Köstliches.",
+     "p": [
+      "Beim Backen lässt die trockene Ofenhitze Eiweiß stocken, Stärke verkleistern und Zucker zu Aromen bräunen.",
+      "Fast alles beginnt mit denselben Zutaten: Mehl, Zucker, Fett, Eier, Flüssigkeit, Salz und Triebmittel.",
+      "Auch Geduld ist eine Zutat: Vorheizen, Ruhen und Abkühlen verändern das Ergebnis spürbar."
+     ],
+     "q": "Welches Gebäck hast du als Erstes gegessen oder gebacken, an das du dich erinnerst, und warum?",
+     "c": "Schau in deine Küche und notiere, welche Grundzutaten zum Backen du schon zu Hause hast."
+    },
+    "es": {
+     "t": "Bienvenido a la repostería casera",
+     "g": "Descubre qué es hornear de verdad: calor y química sencilla que convierten pocos ingredientes en algo delicioso.",
+     "p": [
+      "El calor seco del horno cuaja las proteínas, gelatiniza el almidón y dora los azúcares creando sabores nuevos.",
+      "Casi todo parte de lo mismo: harina, azúcar, grasa, huevos, líquido, sal y un gasificante.",
+      "La paciencia también es un ingrediente: precalentar, reposar y enfriar cambian el resultado."
+     ],
+     "q": "¿Cuál es el primer dulce u horneado que recuerdas haber comido o hecho, y por qué se te quedó grabado?",
+     "c": "Revisa tu cocina y apunta qué ingredientes básicos de repostería ya tienes en casa."
+    },
+    "fr": {
+     "t": "Bienvenue dans la pâtisserie maison",
+     "g": "Découvre ce qu'est vraiment la pâtisserie : la chaleur et un peu de chimie transforment quelques ingrédients.",
+     "p": [
+      "La chaleur sèche du four fait coaguler les protéines, gélifier l'amidon et dorer les sucres en arômes nouveaux.",
+      "Presque tout part des mêmes bases : farine, sucre, matière grasse, œufs, liquide, sel et levure.",
+      "La patience est aussi un ingrédient : préchauffer, laisser reposer et refroidir change tout."
+     ],
+     "q": "Quelle est la première pâtisserie dont tu te souviens, mangée ou faite, et pourquoi t'a-t-elle marqué ?",
+     "c": "Fais le tour de ta cuisine et note les ingrédients de base pour pâtisser que tu as déjà."
+    },
+    "it": {
+     "t": "Benvenuto nella pasticceria di casa",
+     "g": "Scopri cosa significa davvero cuocere al forno: calore e un po' di chimica trasformano pochi ingredienti.",
+     "p": [
+      "Il calore secco del forno rapprende le proteine, gelatinizza l'amido e fa dorare gli zuccheri creando aromi.",
+      "Quasi tutto nasce dagli stessi ingredienti: farina, zucchero, grassi, uova, liquidi, sale e lievito.",
+      "Anche la pazienza è un ingrediente: preriscaldare, far riposare e raffreddare cambia il risultato."
+     ],
+     "q": "Qual è il primo dolce o prodotto da forno che ricordi di aver mangiato o fatto, e perché ti è rimasto?",
+     "c": "Guarda in cucina e scrivi quali ingredienti base per i dolci hai già in casa."
+    },
+    "pt": {
+     "t": "Bem-vindo à pastelaria caseira",
+     "g": "Descobre o que é realmente ir ao forno: calor e química simples transformam poucos ingredientes em algo delicioso.",
+     "p": [
+      "O calor seco do forno coagula as proteínas, gelatiniza o amido e doura os açúcares, criando novos sabores.",
+      "Quase tudo parte dos mesmos ingredientes: farinha, açúcar, gordura, ovos, líquido, sal e fermento.",
+      "A paciência também é um ingrediente: pré-aquecer, repousar e arrefecer mudam o resultado."
+     ],
+     "q": "Qual é o primeiro bolo ou pão de que te lembras de comer ou fazer, e porque ficou na memória?",
+     "c": "Espreita a tua cozinha e anota que ingredientes básicos de pastelaria já tens em casa."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à confeitaria caseira",
+     "g": "Descubra o que é assar de verdade: calor e química simples transformam poucos ingredientes em algo delicioso.",
+     "p": [
+      "O calor seco do forno coagula as proteínas, gelatiniza o amido e doura os açúcares, criando novos sabores.",
+      "Quase tudo começa com os mesmos ingredientes: farinha, açúcar, gordura, ovos, líquido, sal e fermento.",
+      "Paciência também é ingrediente: preaquecer, descansar e esfriar mudam o resultado final."
+     ],
+     "q": "Qual é o primeiro bolo ou pão que você lembra de ter comido ou feito, e por que ele marcou você?",
+     "c": "Dê uma olhada na sua cozinha e anote quais ingredientes básicos de confeitaria você já tem."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your essential baking toolkit",
+     "g": "Learn which few tools cover most recipes, so you can start baking without filling your cupboards.",
+     "p": [
+      "Two bowls, a balloon whisk, a silicone spatula and a wooden spoon handle nearly all mixing jobs.",
+      "A digital scale, an oven thermometer and a timer give you control and repeatable results.",
+      "Start with a baking tray, a loaf tin, a round cake tin, a wire rack and a pair of dry oven gloves."
+     ],
+     "q": "Which kitchen tool do you already own and use the most, and which one do you feel is missing?",
+     "c": "Gather your baking tools in one place and check that your oven gloves are dry and free of holes."
+    },
+    "de": {
+     "t": "Deine Grundausstattung zum Backen",
+     "g": "Lerne die wenigen Werkzeuge kennen, mit denen du fast jedes Rezept schaffst, ohne die Schränke zu füllen.",
+     "p": [
+      "Zwei Schüsseln, ein Schneebesen, ein Silikonspatel und ein Holzlöffel erledigen fast alle Rührarbeiten.",
+      "Eine Digitalwaage, ein Ofenthermometer und ein Timer sorgen für Kontrolle und gleichbleibende Ergebnisse.",
+      "Für den Anfang: Backblech, Kastenform, runde Springform, Kuchengitter und trockene Ofenhandschuhe."
+     ],
+     "q": "Welches Küchenwerkzeug benutzt du am meisten, und welches fehlt dir deiner Meinung nach noch?",
+     "c": "Leg deine Backutensilien an einem Ort zusammen und prüfe, ob die Ofenhandschuhe trocken und heil sind."
+    },
+    "es": {
+     "t": "Tu equipo básico de repostería",
+     "g": "Aprende qué pocas herramientas cubren casi todas las recetas, para empezar sin llenar los armarios.",
+     "p": [
+      "Dos boles, unas varillas, una espátula de silicona y una cuchara de madera sirven para casi todo.",
+      "Una báscula digital, un termómetro de horno y un temporizador te dan control y resultados repetibles.",
+      "Para empezar: bandeja, molde de plum cake, molde redondo, rejilla y unas manoplas de horno secas."
+     ],
+     "q": "¿Qué utensilio de cocina usas más y cuál sientes que te falta todavía?",
+     "c": "Reúne tus utensilios de repostería en un sitio y comprueba que tus manoplas estén secas y sin agujeros."
+    },
+    "fr": {
+     "t": "Ta boîte à outils de pâtissier",
+     "g": "Découvre les quelques outils qui couvrent la plupart des recettes, sans remplir tes placards.",
+     "p": [
+      "Deux saladiers, un fouet, une maryse en silicone et une cuillère en bois suffisent pour presque tout mélanger.",
+      "Une balance numérique, un thermomètre de four et un minuteur te donnent contrôle et régularité.",
+      "Pour commencer : une plaque, un moule à cake, un moule rond, une grille et des maniques bien sèches."
+     ],
+     "q": "Quel ustensile de cuisine utilises-tu le plus, et lequel te manque encore à ton avis ?",
+     "c": "Rassemble tes ustensiles au même endroit et vérifie que tes maniques sont sèches et sans trous."
+    },
+    "it": {
+     "t": "La tua attrezzatura base",
+     "g": "Scopri i pochi strumenti che bastano per quasi tutte le ricette, senza riempire gli armadi.",
+     "p": [
+      "Due ciotole, una frusta, una spatola in silicone e un cucchiaio di legno coprono quasi tutti gli impasti.",
+      "Una bilancia digitale, un termometro da forno e un timer ti danno controllo e risultati ripetibili.",
+      "Per iniziare: una teglia, uno stampo da plumcake, uno tondo, una gratella e presine asciutte."
+     ],
+     "q": "Quale strumento da cucina usi di più e quale senti che ti manca ancora?",
+     "c": "Raccogli i tuoi attrezzi in un unico posto e controlla che le presine siano asciutte e senza buchi."
+    },
+    "pt": {
+     "t": "O teu kit essencial de pastelaria",
+     "g": "Aprende que poucas ferramentas chegam para quase todas as receitas, sem encher os armários.",
+     "p": [
+      "Duas taças, uma vara de arames, uma espátula de silicone e uma colher de pau servem para quase tudo.",
+      "Uma balança digital, um termómetro de forno e um temporizador dão-te controlo e resultados repetíveis.",
+      "Para começar: tabuleiro, forma de bolo inglês, forma redonda, grelha e luvas de forno secas."
+     ],
+     "q": "Que utensílio de cozinha usas mais e qual sentes que ainda te falta?",
+     "c": "Junta os teus utensílios num só sítio e confirma que as luvas de forno estão secas e sem furos."
+    },
+    "pt_BR": {
+     "t": "Seu kit essencial de confeitaria",
+     "g": "Aprenda quais poucas ferramentas dão conta de quase todas as receitas, sem lotar os armários.",
+     "p": [
+      "Duas tigelas, um fouet, uma espátula de silicone e uma colher de pau resolvem quase toda mistura.",
+      "Uma balança digital, um termômetro de forno e um timer dão controle e resultados repetíveis.",
+      "Para começar: assadeira, forma de bolo inglês, forma redonda, grade e luvas de forno secas."
+     ],
+     "q": "Qual utensílio de cozinha você mais usa e qual sente que ainda está faltando?",
+     "c": "Junte seus utensílios em um só lugar e confira se as luvas de forno estão secas e sem furos."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why bakers weigh ingredients",
+     "g": "Understand why weighing in grams beats cups and spoons for consistent, reliable bakes.",
+     "p": [
+      "A cup of flour can weigh very different amounts depending on how it is scooped or packed.",
+      "Grams measure the same every time, so the recipe behaves the same way in your kitchen as in the author's.",
+      "Weighing also means fewer dishes: tare the bowl and add each ingredient straight into it."
+     ],
+     "q": "Have you ever had a recipe fail without knowing why, and could measuring have been the reason?",
+     "c": "Scoop one cup of flour three times, weigh each one, and compare how much the results differ."
+    },
+    "de": {
+     "t": "Warum Bäcker Zutaten wiegen",
+     "g": "Verstehe, warum Wiegen in Gramm zuverlässiger ist als Tassen und Löffel.",
+     "p": [
+      "Eine Tasse Mehl kann sehr unterschiedlich viel wiegen, je nachdem, wie man sie füllt oder andrückt.",
+      "Gramm sind immer gleich, also verhält sich das Rezept bei dir genauso wie bei der Person, die es schrieb.",
+      "Wiegen spart Abwasch: Schüssel tarieren und jede Zutat direkt hineingeben."
+     ],
+     "q": "Ist dir schon mal ein Rezept misslungen, ohne dass du wusstest, warum? Könnte es am Abmessen gelegen haben?",
+     "c": "Fülle dreimal eine Tasse Mehl, wiege jede und vergleiche, wie stark die Werte abweichen."
+    },
+    "es": {
+     "t": "Por qué los reposteros pesan",
+     "g": "Entiende por qué pesar en gramos es mejor que usar tazas y cucharas para lograr resultados constantes.",
+     "p": [
+      "Una taza de harina puede pesar cantidades muy distintas según cómo la llenes o la aprietes.",
+      "Los gramos son siempre iguales, así la receta se comporta en tu cocina igual que en la del autor.",
+      "Pesar también ensucia menos: tara el bol y añade cada ingrediente directamente."
+     ],
+     "q": "¿Alguna vez te falló una receta sin saber por qué? ¿Pudo ser por la forma de medir?",
+     "c": "Llena tres veces una taza de harina, pésala cada vez y compara cuánto cambian los resultados."
+    },
+    "fr": {
+     "t": "Pourquoi les pâtissiers pèsent",
+     "g": "Comprends pourquoi peser en grammes est plus fiable que les tasses et les cuillères.",
+     "p": [
+      "Une tasse de farine peut peser des quantités très différentes selon la façon de la remplir ou de la tasser.",
+      "Les grammes sont toujours les mêmes : la recette se comporte chez toi comme chez son auteur.",
+      "Peser fait aussi moins de vaisselle : tare le bol et ajoute chaque ingrédient directement."
+     ],
+     "q": "Une recette t'a-t-elle déjà raté sans raison apparente ? La mesure pourrait-elle en être la cause ?",
+     "c": "Remplis trois fois une tasse de farine, pèse chacune et compare les écarts."
+    },
+    "it": {
+     "t": "Perché i pasticceri pesano",
+     "g": "Capisci perché pesare in grammi è meglio di tazze e cucchiai per avere risultati costanti.",
+     "p": [
+      "Una tazza di farina può pesare quantità molto diverse a seconda di come la riempi o la premi.",
+      "I grammi sono sempre uguali, così la ricetta funziona da te come nella cucina di chi l'ha scritta.",
+      "Pesare sporca anche meno: fai la tara della ciotola e aggiungi ogni ingrediente direttamente."
+     ],
+     "q": "Ti è mai fallita una ricetta senza capire perché? Potrebbe dipendere da come hai misurato?",
+     "c": "Riempi tre volte una tazza di farina, pesala ogni volta e confronta quanto cambiano i valori."
+    },
+    "pt": {
+     "t": "Porque é que os pasteleiros pesam",
+     "g": "Percebe porque pesar em gramas é melhor do que chávenas e colheres para resultados constantes.",
+     "p": [
+      "Uma chávena de farinha pode pesar quantidades muito diferentes consoante a forma como a enches.",
+      "Os gramas são sempre iguais, por isso a receita comporta-se em tua casa como na de quem a escreveu.",
+      "Pesar também suja menos loiça: tara a taça e junta cada ingrediente diretamente."
+     ],
+     "q": "Já te falhou uma receita sem perceberes porquê? Poderá ter sido a forma de medir?",
+     "c": "Enche três vezes uma chávena de farinha, pesa cada uma e compara a diferença entre elas."
+    },
+    "pt_BR": {
+     "t": "Por que confeiteiros pesam tudo",
+     "g": "Entenda por que pesar em gramas é melhor que xícaras e colheres para ter resultados constantes.",
+     "p": [
+      "Uma xícara de farinha pode pesar quantidades bem diferentes, dependendo de como você enche ou aperta.",
+      "Grama é sempre grama, então a receita se comporta na sua cozinha igual à de quem a escreveu.",
+      "Pesar também suja menos louça: zere a balança com a tigela e coloque cada ingrediente direto nela."
+     ],
+     "q": "Alguma receita já deu errado sem você saber por quê? Será que foi a forma de medir?",
+     "c": "Encha uma xícara de farinha três vezes, pese cada uma e compare quanto os valores mudam."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting to know your oven",
+     "g": "Learn how your oven really behaves, so you can preheat properly and bake evenly and safely.",
+     "p": [
+      "Most ovens run hotter or cooler than the dial says; an oven thermometer shows the real temperature.",
+      "Preheat fully, usually 15 to 20 minutes, and bake on the middle rack unless the recipe says otherwise.",
+      "Keep the oven door closed early on, pull racks out with dry gloves and keep tea towels away from the heat."
+     ],
+     "q": "Is your oven fan-assisted or conventional, and have you noticed any spots where things brown faster?",
+     "c": "Preheat to 180 °C, check with an oven thermometer after 20 minutes and note the difference."
+    },
+    "de": {
+     "t": "Lerne deinen Ofen kennen",
+     "g": "Erfahre, wie dein Ofen wirklich arbeitet, damit du richtig vorheizt und gleichmäßig und sicher backst.",
+     "p": [
+      "Viele Öfen heizen heißer oder kühler als angezeigt; ein Ofenthermometer zeigt die echte Temperatur.",
+      "Heize vollständig vor, meist 15 bis 20 Minuten, und backe auf mittlerer Schiene, wenn nichts anderes steht.",
+      "Lass die Tür anfangs zu, zieh Bleche nur mit trockenen Handschuhen heraus und halte Tücher fern."
+     ],
+     "q": "Hast du Umluft oder Ober- und Unterhitze, und gibt es Stellen, an denen Gebäck schneller bräunt?",
+     "c": "Heize auf 180 °C vor, miss nach 20 Minuten mit einem Ofenthermometer und notiere die Abweichung."
+    },
+    "es": {
+     "t": "Conoce tu horno",
+     "g": "Aprende cómo se comporta tu horno de verdad para precalentar bien y hornear de forma uniforme y segura.",
+     "p": [
+      "Muchos hornos calientan más o menos de lo que marca el mando; un termómetro de horno da la cifra real.",
+      "Precalienta del todo, unos 15 a 20 minutos, y hornea a media altura salvo que la receta diga otra cosa.",
+      "No abras la puerta al principio, saca las bandejas con manoplas secas y aleja los trapos del calor."
+     ],
+     "q": "¿Tu horno tiene ventilador o es convencional? ¿Has notado zonas donde todo se dora antes?",
+     "c": "Precalienta a 180 °C, mide con un termómetro de horno a los 20 minutos y anota la diferencia."
+    },
+    "fr": {
+     "t": "Apprivoiser ton four",
+     "g": "Apprends comment ton four se comporte vraiment pour bien préchauffer et cuire de façon homogène et sûre.",
+     "p": [
+      "Beaucoup de fours chauffent plus ou moins que l'indication ; un thermomètre de four donne la vraie valeur.",
+      "Préchauffe complètement, 15 à 20 minutes, et enfourne à mi-hauteur sauf indication contraire.",
+      "Garde la porte fermée au début, sors les plaques avec des maniques sèches et éloigne les torchons."
+     ],
+     "q": "Ton four est-il à chaleur tournante ou traditionnel, et as-tu repéré des zones qui dorent plus vite ?",
+     "c": "Préchauffe à 180 °C, vérifie avec un thermomètre de four après 20 minutes et note l'écart."
+    },
+    "it": {
+     "t": "Conoscere il tuo forno",
+     "g": "Impara come si comporta davvero il tuo forno per preriscaldare bene e cuocere in modo uniforme e sicuro.",
+     "p": [
+      "Molti forni scaldano più o meno di quanto indica la manopola; un termometro da forno dice il valore reale.",
+      "Preriscalda completamente, di solito 15-20 minuti, e cuoci a metà altezza salvo indicazioni diverse.",
+      "Non aprire lo sportello all'inizio, estrai le teglie con presine asciutte e tieni lontani gli strofinacci."
+     ],
+     "q": "Il tuo forno è ventilato o statico, e hai notato zone dove le cose dorano prima?",
+     "c": "Preriscalda a 180 °C, controlla con un termometro da forno dopo 20 minuti e annota la differenza."
+    },
+    "pt": {
+     "t": "Conhecer o teu forno",
+     "g": "Aprende como o teu forno se comporta realmente, para pré-aquecer bem e cozer de forma uniforme e segura.",
+     "p": [
+      "Muitos fornos aquecem mais ou menos do que o botão indica; um termómetro de forno mostra o valor real.",
+      "Pré-aquece totalmente, 15 a 20 minutos, e coze a meia altura, salvo indicação em contrário.",
+      "Não abras a porta no início, tira os tabuleiros com luvas secas e afasta os panos do calor."
+     ],
+     "q": "O teu forno é ventilado ou convencional, e já notaste zonas onde tudo aloura mais depressa?",
+     "c": "Pré-aquece a 180 °C, verifica com um termómetro de forno após 20 minutos e anota a diferença."
+    },
+    "pt_BR": {
+     "t": "Conhecendo seu forno",
+     "g": "Aprenda como seu forno se comporta de verdade, para preaquecer direito e assar de forma uniforme e segura.",
+     "p": [
+      "Muitos fornos esquentam mais ou menos do que o botão indica; um termômetro de forno mostra o valor real.",
+      "Preaqueça totalmente, de 15 a 20 minutos, e asse na grade do meio, a menos que a receita diga outra coisa.",
+      "Não abra a porta no começo, tire as assadeiras com luvas secas e mantenha panos longe do calor."
+     ],
+     "q": "Seu forno é com ventilação ou convencional, e você já notou cantos onde tudo doura mais rápido?",
+     "c": "Preaqueça a 180 °C, confira com um termômetro de forno depois de 20 minutos e anote a diferença."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flour 101",
+     "g": "Learn how the protein in different flours changes the texture of what you bake.",
+     "p": [
+      "Bread flour has more protein, which builds strong gluten for chewy, well-risen loaves.",
+      "Cake flour is low in protein for soft, tender crumbs; all-purpose sits in the middle for everyday use.",
+      "Wholemeal flour keeps the bran and germ, so it absorbs more water and gives a denser, nuttier bake."
+     ],
+     "q": "Which flours can you find where you live, and do you know their protein content from the label?",
+     "c": "Read the labels of the flours you have and write down the protein per 100 g for each one."
+    },
+    "de": {
+     "t": "Mehl-Grundkurs",
+     "g": "Lerne, wie der Eiweißgehalt verschiedener Mehle die Textur deines Gebäcks verändert.",
+     "p": [
+      "Brotmehl hat mehr Eiweiß und bildet starkes Gluten für kräftige, gut aufgegangene Laibe.",
+      "Feines Kuchenmehl hat wenig Eiweiß für zarte Krume; Allzweckmehl wie Type 405 oder 550 liegt dazwischen.",
+      "Vollkornmehl enthält Schale und Keim, nimmt mehr Wasser auf und macht Gebäck dichter und nussiger."
+     ],
+     "q": "Welche Mehlsorten bekommst du bei dir, und kennst du ihren Eiweißgehalt vom Etikett?",
+     "c": "Lies die Etiketten deiner Mehle und notiere für jedes den Eiweißgehalt pro 100 g."
+    },
+    "es": {
+     "t": "Harina 101",
+     "g": "Aprende cómo la proteína de cada harina cambia la textura de lo que horneas.",
+     "p": [
+      "La harina de fuerza tiene más proteína y forma un gluten fuerte para panes con miga elástica y buen volumen.",
+      "La harina floja tiene poca proteína para migas tiernas; la de todo uso queda en medio para el día a día.",
+      "La integral conserva salvado y germen, absorbe más agua y da un resultado más denso y con sabor a nuez."
+     ],
+     "q": "¿Qué harinas encuentras donde vives y conoces su contenido de proteína por la etiqueta?",
+     "c": "Lee las etiquetas de tus harinas y apunta la proteína por cada 100 g de cada una."
+    },
+    "fr": {
+     "t": "Les farines, l'essentiel",
+     "g": "Apprends comment la teneur en protéines des farines change la texture de tes pâtisseries.",
+     "p": [
+      "La farine de force est riche en protéines et forme un gluten solide pour des pains bien levés.",
+      "Les farines faibles, comme la T45, donnent une mie tendre ; la T55 est la farine polyvalente du quotidien.",
+      "La farine complète garde son et germe, absorbe plus d'eau et donne un résultat plus dense et rustique."
+     ],
+     "q": "Quelles farines trouves-tu près de chez toi, et connais-tu leur taux de protéines grâce à l'étiquette ?",
+     "c": "Lis les étiquettes de tes farines et note la quantité de protéines pour 100 g de chacune."
+    },
+    "it": {
+     "t": "Farine, le basi",
+     "g": "Impara come le proteine delle diverse farine cambiano la consistenza di ciò che cuoci.",
+     "p": [
+      "Le farine forti, come la Manitoba, hanno più proteine e formano un glutine robusto per pani ben lievitati.",
+      "Le farine deboli danno una mollica tenera ai dolci; la 00 o la 0 comuni sono la scelta di tutti i giorni.",
+      "La farina integrale conserva crusca e germe, assorbe più acqua e dà un risultato più denso e rustico."
+     ],
+     "q": "Quali farine trovi dove vivi e conosci il loro contenuto proteico leggendo l'etichetta?",
+     "c": "Leggi le etichette delle tue farine e annota le proteine per 100 g di ciascuna."
+    },
+    "pt": {
+     "t": "Farinha, o essencial",
+     "g": "Aprende como a proteína das diferentes farinhas muda a textura do que fazes no forno.",
+     "p": [
+      "A farinha para pão tem mais proteína e forma um glúten forte para pães elásticos e bem crescidos.",
+      "A farinha fraca, para bolos, tem pouca proteína e dá migalha tenra; a farinha comum fica a meio termo.",
+      "A farinha integral mantém o farelo e o gérmen, absorve mais água e dá um resultado mais denso."
+     ],
+     "q": "Que farinhas encontras onde vives e sabes o teor de proteína delas pelo rótulo?",
+     "c": "Lê os rótulos das tuas farinhas e anota a proteína por 100 g de cada uma."
+    },
+    "pt_BR": {
+     "t": "Farinha, o básico",
+     "g": "Aprenda como a proteína das diferentes farinhas muda a textura do que você assa.",
+     "p": [
+      "A farinha para pão tem mais proteína e forma um glúten forte para pães elásticos e bem crescidos.",
+      "A farinha para bolo tem pouca proteína e dá miolo macio; a farinha de trigo comum fica no meio-termo.",
+      "A farinha integral mantém o farelo e o gérmen, absorve mais água e deixa tudo mais denso e saboroso."
+     ],
+     "q": "Quais farinhas você encontra onde mora e sabe o teor de proteína delas pelo rótulo?",
+     "c": "Leia os rótulos das suas farinhas e anote a proteína por 100 g de cada uma."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What sugar really does",
+     "g": "See how sugar does far more than sweeten: it keeps bakes moist, tender and beautifully browned.",
+     "p": [
+      "Sugar attracts and holds water, so cakes stay moist and soft for longer.",
+      "It slows gluten and egg proteins from setting too firmly, which keeps the crumb tender.",
+      "In the oven it caramelises and joins the Maillard reaction, giving golden colour and deep flavour."
+     ],
+     "q": "Do you prefer your bakes very sweet or lightly sweet, and why?",
+     "c": "Compare white and brown sugar side by side: smell, colour and how they feel between your fingers."
+    },
+    "de": {
+     "t": "Was Zucker wirklich macht",
+     "g": "Sieh, dass Zucker viel mehr kann als süßen: Er hält Gebäck saftig, zart und schön gebräunt.",
+     "p": [
+      "Zucker bindet Wasser, deshalb bleiben Kuchen länger saftig und weich.",
+      "Er bremst Gluten und Eiweiß beim Festwerden und hält die Krume so zart.",
+      "Im Ofen karamellisiert er und wirkt bei der Maillard-Reaktion mit: goldene Farbe und tiefes Aroma."
+     ],
+     "q": "Magst du dein Gebäck eher sehr süß oder nur leicht süß, und warum?",
+     "c": "Vergleiche weißen und braunen Zucker: Geruch, Farbe und wie er sich zwischen den Fingern anfühlt."
+    },
+    "es": {
+     "t": "Lo que hace de verdad el azúcar",
+     "g": "Descubre que el azúcar hace mucho más que endulzar: mantiene jugoso, tierno y bien dorado lo que horneas.",
+     "p": [
+      "El azúcar atrae y retiene agua, por eso los bizcochos se mantienen húmedos y suaves más tiempo.",
+      "Frena el endurecimiento del gluten y de las proteínas del huevo, y así la miga queda tierna.",
+      "En el horno se carameliza y participa en la reacción de Maillard: color dorado y sabor profundo."
+     ],
+     "q": "¿Prefieres tus horneados muy dulces o poco dulces, y por qué?",
+     "c": "Compara azúcar blanco y moreno: olor, color y cómo se sienten entre los dedos."
+    },
+    "fr": {
+     "t": "Le vrai rôle du sucre",
+     "g": "Vois que le sucre fait bien plus que sucrer : il garde tes gâteaux moelleux, tendres et bien dorés.",
+     "p": [
+      "Le sucre retient l'eau, donc les gâteaux restent moelleux plus longtemps.",
+      "Il freine la prise du gluten et des protéines de l'œuf, ce qui garde la mie tendre.",
+      "Au four, il caramélise et participe à la réaction de Maillard : belle couleur dorée et goût profond."
+     ],
+     "q": "Préfères-tu tes pâtisseries très sucrées ou peu sucrées, et pourquoi ?",
+     "c": "Compare sucre blanc et sucre roux : odeur, couleur et texture entre tes doigts."
+    },
+    "it": {
+     "t": "Cosa fa davvero lo zucchero",
+     "g": "Scopri che lo zucchero fa molto più che addolcire: mantiene i dolci umidi, teneri e ben dorati.",
+     "p": [
+      "Lo zucchero trattiene l'acqua, così le torte restano morbide e umide più a lungo.",
+      "Rallenta l'indurimento di glutine e proteine dell'uovo, mantenendo la mollica tenera.",
+      "In forno caramellizza e partecipa alla reazione di Maillard: colore dorato e sapore profondo."
+     ],
+     "q": "Preferisci i dolci molto dolci o poco dolci, e perché?",
+     "c": "Confronta zucchero bianco e di canna: profumo, colore e consistenza tra le dita."
+    },
+    "pt": {
+     "t": "O que o açúcar faz realmente",
+     "g": "Descobre que o açúcar faz muito mais do que adoçar: mantém os bolos húmidos, tenros e bem dourados.",
+     "p": [
+      "O açúcar atrai e retém água, por isso os bolos ficam húmidos e macios durante mais tempo.",
+      "Trava o endurecimento do glúten e das proteínas do ovo, deixando o miolo tenro.",
+      "No forno carameliza e participa na reação de Maillard: cor dourada e sabor profundo."
+     ],
+     "q": "Preferes os teus bolos muito doces ou pouco doces, e porquê?",
+     "c": "Compara açúcar branco e amarelo: cheiro, cor e textura entre os dedos."
+    },
+    "pt_BR": {
+     "t": "O que o açúcar faz de verdade",
+     "g": "Descubra que o açúcar faz muito mais que adoçar: deixa bolos úmidos, macios e bem dourados.",
+     "p": [
+      "O açúcar atrai e segura água, por isso os bolos ficam úmidos e fofos por mais tempo.",
+      "Ele freia o endurecimento do glúten e das proteínas do ovo, deixando o miolo macio.",
+      "No forno ele carameliza e participa da reação de Maillard: cor dourada e sabor profundo."
+     ],
+     "q": "Você prefere seus doces bem doces ou pouco doces, e por quê?",
+     "c": "Compare açúcar refinado e mascavo: cheiro, cor e textura entre os dedos."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Butter, oil and other fats",
+     "g": "Learn how fats tenderise, carry flavour and decide whether a bake turns out flaky or soft.",
+     "p": [
+      "Fat coats flour proteins and limits gluten, which is why rich doughs feel short and tender.",
+      "Solid fat kept cold creates flaky layers; melted fat or oil gives soft, moist cakes.",
+      "Butter adds flavour and helps aeration, while neutral oil keeps cakes moist even when cold."
+     ],
+     "q": "Do you usually bake with butter, oil or something else, and what do you like about it?",
+     "c": "Taste a little unsalted butter and a neutral oil, and note how each would change a cake."
+    },
+    "de": {
+     "t": "Butter, Öl und andere Fette",
+     "g": "Erfahre, wie Fette zart machen, Aroma tragen und entscheiden, ob Gebäck blättrig oder weich wird.",
+     "p": [
+      "Fett umhüllt die Mehleiweiße und bremst das Gluten, daher sind fettreiche Teige mürbe und zart.",
+      "Kaltes, festes Fett ergibt blättrige Schichten; geschmolzenes Fett oder Öl macht Kuchen weich und saftig.",
+      "Butter bringt Geschmack und hilft beim Aufschlagen, neutrales Öl hält Kuchen auch kalt saftig."
+     ],
+     "q": "Backst du meist mit Butter, Öl oder etwas anderem, und was gefällt dir daran?",
+     "c": "Probiere etwas ungesalzene Butter und neutrales Öl und notiere, wie jedes einen Kuchen verändern würde."
+    },
+    "es": {
+     "t": "Mantequilla, aceite y otras grasas",
+     "g": "Aprende cómo las grasas ablandan, llevan sabor y deciden si un horneado queda hojaldrado o tierno.",
+     "p": [
+      "La grasa recubre las proteínas de la harina y limita el gluten; por eso las masas grasas son tiernas.",
+      "La grasa sólida y fría crea capas hojaldradas; la grasa fundida o el aceite dan bizcochos jugosos.",
+      "La mantequilla aporta sabor y ayuda a airear; el aceite neutro mantiene el bizcocho jugoso incluso frío."
+     ],
+     "q": "¿Sueles hornear con mantequilla, aceite u otra grasa, y qué te gusta de ella?",
+     "c": "Prueba un poco de mantequilla sin sal y de aceite neutro, y anota cómo cambiaría cada uno un bizcocho."
+    },
+    "fr": {
+     "t": "Beurre, huile et autres graisses",
+     "g": "Apprends comment les matières grasses attendrissent, portent les arômes et rendent une pâte feuilletée ou moelleuse.",
+     "p": [
+      "La matière grasse enrobe les protéines de la farine et limite le gluten : la pâte devient sablée et tendre.",
+      "Une graisse solide et froide crée des feuillets ; fondue, ou sous forme d'huile, elle donne du moelleux.",
+      "Le beurre apporte du goût et aide à incorporer de l'air ; l'huile neutre garde le gâteau moelleux au froid."
+     ],
+     "q": "Pâtisses-tu plutôt au beurre, à l'huile ou avec autre chose, et qu'aimes-tu dans ce choix ?",
+     "c": "Goûte un peu de beurre doux et d'huile neutre, et note comment chacun changerait un gâteau."
+    },
+    "it": {
+     "t": "Burro, olio e altri grassi",
+     "g": "Impara come i grassi rendono teneri, portano sapore e decidono se un impasto sarà sfogliato o soffice.",
+     "p": [
+      "Il grasso avvolge le proteine della farina e limita il glutine: per questo gli impasti grassi sono friabili.",
+      "Un grasso solido e freddo crea strati sfogliati; burro fuso o olio danno torte morbide e umide.",
+      "Il burro dà sapore e aiuta a montare, l'olio neutro mantiene la torta morbida anche da fredda."
+     ],
+     "q": "Di solito cucini dolci con burro, olio o altro, e cosa ti piace di questa scelta?",
+     "c": "Assaggia un po' di burro non salato e di olio neutro e annota come ciascuno cambierebbe una torta."
+    },
+    "pt": {
+     "t": "Manteiga, óleo e outras gorduras",
+     "g": "Aprende como as gorduras amaciam, transportam sabor e decidem se algo fica folhado ou macio.",
+     "p": [
+      "A gordura envolve as proteínas da farinha e limita o glúten, por isso as massas gordas ficam tenras.",
+      "Gordura sólida e fria cria camadas folhadas; gordura derretida ou óleo dá bolos macios e húmidos.",
+      "A manteiga dá sabor e ajuda a arejar; o óleo neutro mantém o bolo húmido mesmo frio."
+     ],
+     "q": "Costumas usar manteiga, óleo ou outra gordura nos bolos, e o que gostas nisso?",
+     "c": "Prova um pouco de manteiga sem sal e de óleo neutro e anota como cada um mudaria um bolo."
+    },
+    "pt_BR": {
+     "t": "Manteiga, óleo e outras gorduras",
+     "g": "Aprenda como as gorduras amaciam, levam sabor e decidem se algo fica folhado ou fofinho.",
+     "p": [
+      "A gordura envolve as proteínas da farinha e limita o glúten, por isso massas com gordura ficam macias.",
+      "Gordura sólida e gelada cria camadas folhadas; gordura derretida ou óleo deixa bolos fofos e úmidos.",
+      "A manteiga dá sabor e ajuda a aerar; o óleo neutro mantém o bolo úmido mesmo gelado."
+     ],
+     "q": "Você costuma usar manteiga, óleo ou outra gordura, e o que gosta nessa escolha?",
+     "c": "Prove um pouco de manteiga sem sal e de óleo neutro e anote como cada um mudaria um bolo."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eggs as builders",
+     "g": "Discover how eggs give structure, richness, lift and smoothness to your bakes.",
+     "p": [
+      "Egg proteins set with heat and hold a bake together, like scaffolding inside the crumb.",
+      "Whipped eggs trap air that expands in the oven, giving lift to sponges and meringues.",
+      "Yolks add fat and lecithin, which enriches dough and helps fat and water blend smoothly."
+     ],
+     "q": "Do you have a favourite bake where eggs are the star, like a sponge, custard or meringue?",
+     "c": "Crack an egg into a bowl and separate the white from the yolk without any yolk in the white."
+    },
+    "de": {
+     "t": "Eier als Baumeister",
+     "g": "Entdecke, wie Eier Gebäck Struktur, Reichhaltigkeit, Lockerheit und Geschmeidigkeit geben.",
+     "p": [
+      "Eiweiße stocken bei Hitze und halten Gebäck zusammen, wie ein Gerüst in der Krume.",
+      "Aufgeschlagene Eier schließen Luft ein, die sich im Ofen ausdehnt und Biskuit und Baiser hebt.",
+      "Eigelb bringt Fett und Lecithin, macht Teige reichhaltiger und verbindet Fett und Wasser."
+     ],
+     "q": "Hast du ein Lieblingsgebäck, in dem Eier die Hauptrolle spielen, etwa Biskuit, Pudding oder Baiser?",
+     "c": "Schlag ein Ei auf und trenne Eiweiß und Eigelb, ohne dass Eigelb ins Eiweiß gelangt."
+    },
+    "es": {
+     "t": "Los huevos como constructores",
+     "g": "Descubre cómo los huevos dan estructura, riqueza, volumen y suavidad a lo que horneas.",
+     "p": [
+      "Las proteínas del huevo cuajan con el calor y sostienen la masa, como un andamio dentro de la miga.",
+      "El huevo batido atrapa aire que se expande en el horno y eleva bizcochos y merengues.",
+      "La yema aporta grasa y lecitina, enriquece la masa y ayuda a unir grasa y agua."
+     ],
+     "q": "¿Tienes algún horneado favorito donde el huevo sea protagonista, como un bizcocho, un flan o un merengue?",
+     "c": "Casca un huevo y separa la clara de la yema sin que caiga nada de yema en la clara."
+    },
+    "fr": {
+     "t": "Les œufs, bâtisseurs",
+     "g": "Découvre comment les œufs apportent structure, richesse, légèreté et onctuosité à tes pâtisseries.",
+     "p": [
+      "Les protéines de l'œuf coagulent à la chaleur et tiennent la pâte, comme un échafaudage dans la mie.",
+      "Les œufs battus emprisonnent de l'air qui se dilate au four et fait lever génoises et meringues.",
+      "Le jaune apporte gras et lécithine : il enrichit la pâte et aide à lier matière grasse et eau."
+     ],
+     "q": "As-tu une pâtisserie préférée où l'œuf est la vedette, comme une génoise, une crème ou une meringue ?",
+     "c": "Casse un œuf et sépare le blanc du jaune sans laisser une trace de jaune dans le blanc."
+    },
+    "it": {
+     "t": "Le uova come costruttrici",
+     "g": "Scopri come le uova danno struttura, ricchezza, volume e morbidezza ai tuoi dolci.",
+     "p": [
+      "Le proteine dell'uovo si rapprendono col calore e sostengono l'impasto come un'impalcatura.",
+      "Le uova montate intrappolano aria che si espande in forno e solleva pan di Spagna e meringhe.",
+      "Il tuorlo porta grassi e lecitina, arricchisce l'impasto e aiuta a legare grassi e acqua."
+     ],
+     "q": "Hai un dolce preferito dove l'uovo è protagonista, come pan di Spagna, crema o meringa?",
+     "c": "Rompi un uovo e separa l'albume dal tuorlo senza far cadere tuorlo nell'albume."
+    },
+    "pt": {
+     "t": "Os ovos como construtores",
+     "g": "Descobre como os ovos dão estrutura, riqueza, volume e suavidade ao que fazes no forno.",
+     "p": [
+      "As proteínas do ovo coagulam com o calor e seguram a massa, como um andaime dentro do miolo.",
+      "Os ovos batidos prendem ar que se expande no forno e faz crescer pão de ló e suspiros.",
+      "A gema traz gordura e lecitina, enriquece a massa e ajuda a unir gordura e água."
+     ],
+     "q": "Tens algum doce preferido em que o ovo é a estrela, como pão de ló, leite-creme ou suspiro?",
+     "c": "Parte um ovo e separa a clara da gema sem deixar cair gema na clara."
+    },
+    "pt_BR": {
+     "t": "Ovos como construtores",
+     "g": "Descubra como os ovos dão estrutura, riqueza, volume e maciez ao que você assa.",
+     "p": [
+      "As proteínas do ovo coagulam com o calor e seguram a massa, como um andaime dentro do miolo.",
+      "Ovos batidos prendem ar que se expande no forno e faz crescer pão de ló e suspiros.",
+      "A gema traz gordura e lecitina, enriquece a massa e ajuda a unir gordura e água."
+     ],
+     "q": "Você tem um doce favorito em que o ovo é a estrela, como pão de ló, pudim ou suspiro?",
+     "c": "Quebre um ovo e separe a clara da gema sem deixar cair nada de gema na clara."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baking soda vs baking powder",
+     "g": "Understand how chemical leaveners make gas, and why recipes use one, the other or both.",
+     "p": [
+      "Baking soda is an alkali that needs an acid, such as yoghurt, buttermilk or brown sugar, to release gas.",
+      "Baking powder already contains soda plus a dry acid, so it only needs moisture and heat to work.",
+      "Too much soda tastes soapy and over-browns; using both lets a recipe rise well and taste balanced."
+     ],
+     "q": "Have you ever confused baking soda and baking powder in a recipe? What happened?",
+     "c": "Stir a pinch of baking soda into a spoon of vinegar, then baking powder into water, and watch the fizz."
+    },
+    "de": {
+     "t": "Natron oder Backpulver",
+     "g": "Verstehe, wie chemische Triebmittel Gas bilden und warum Rezepte das eine, das andere oder beide nutzen.",
+     "p": [
+      "Natron ist basisch und braucht eine Säure wie Joghurt, Buttermilch oder braunen Zucker, um Gas zu bilden.",
+      "Backpulver enthält schon Natron plus eine trockene Säure und braucht nur Feuchtigkeit und Hitze.",
+      "Zu viel Natron schmeckt seifig und bräunt stark; beide zusammen geben guten Trieb und runden Geschmack."
+     ],
+     "q": "Hast du schon mal Natron und Backpulver verwechselt? Was ist passiert?",
+     "c": "Rühr eine Prise Natron in einen Löffel Essig, dann Backpulver in Wasser, und beobachte das Sprudeln."
+    },
+    "es": {
+     "t": "Bicarbonato o levadura química",
+     "g": "Entiende cómo los gasificantes químicos producen gas y por qué las recetas usan uno, otro o ambos.",
+     "p": [
+      "El bicarbonato es alcalino y necesita un ácido, como yogur, suero de leche o azúcar moreno, para liberar gas.",
+      "La levadura química ya trae bicarbonato y un ácido seco: solo necesita humedad y calor.",
+      "Demasiado bicarbonato sabe a jabón y dora en exceso; usar ambos da buen volumen y sabor equilibrado."
+     ],
+     "q": "¿Alguna vez confundiste bicarbonato y levadura química en una receta? ¿Qué pasó?",
+     "c": "Mezcla una pizca de bicarbonato con una cucharada de vinagre, luego levadura química con agua, y mira las burbujas."
+    },
+    "fr": {
+     "t": "Bicarbonate ou levure chimique",
+     "g": "Comprends comment les poudres levantes produisent du gaz et pourquoi on utilise l'une, l'autre ou les deux.",
+     "p": [
+      "Le bicarbonate est basique : il lui faut un acide, comme yaourt, babeurre ou sucre brun, pour dégager du gaz.",
+      "La levure chimique contient déjà du bicarbonate et un acide sec : humidité et chaleur suffisent.",
+      "Trop de bicarbonate donne un goût savonneux et trop de couleur ; les deux ensemble équilibrent tout."
+     ],
+     "q": "As-tu déjà confondu bicarbonate et levure chimique dans une recette ? Que s'est-il passé ?",
+     "c": "Mets une pincée de bicarbonate dans une cuillère de vinaigre, puis de la levure dans de l'eau, et observe."
+    },
+    "it": {
+     "t": "Bicarbonato o lievito per dolci",
+     "g": "Capisci come i lieviti chimici producono gas e perché le ricette usano l'uno, l'altro o entrambi.",
+     "p": [
+      "Il bicarbonato è alcalino e ha bisogno di un acido, come yogurt, latticello o zucchero di canna.",
+      "Il lievito per dolci contiene già bicarbonato e un acido secco: bastano umidità e calore.",
+      "Troppo bicarbonato sa di sapone e scurisce troppo; usarli insieme dà volume e sapore equilibrato."
+     ],
+     "q": "Ti è mai capitato di confondere bicarbonato e lievito in una ricetta? Cos'è successo?",
+     "c": "Metti un pizzico di bicarbonato in un cucchiaio di aceto, poi lievito per dolci in acqua, e guarda le bolle."
+    },
+    "pt": {
+     "t": "Bicarbonato ou fermento em pó",
+     "g": "Percebe como os levedantes químicos libertam gás e porque as receitas usam um, outro ou ambos.",
+     "p": [
+      "O bicarbonato é alcalino e precisa de um ácido, como iogurte, leitelho ou açúcar amarelo, para libertar gás.",
+      "O fermento em pó já tem bicarbonato e um ácido seco: só precisa de humidade e calor.",
+      "Bicarbonato a mais sabe a sabão e escurece demasiado; usar os dois dá bom volume e sabor equilibrado."
+     ],
+     "q": "Já trocaste bicarbonato por fermento em pó numa receita? O que aconteceu?",
+     "c": "Junta uma pitada de bicarbonato a uma colher de vinagre, depois fermento em pó a água, e observa a efervescência."
+    },
+    "pt_BR": {
+     "t": "Bicarbonato ou fermento químico",
+     "g": "Entenda como os fermentos químicos liberam gás e por que as receitas usam um, outro ou os dois.",
+     "p": [
+      "O bicarbonato é alcalino e precisa de um ácido, como iogurte, leitelho ou açúcar mascavo, para liberar gás.",
+      "O fermento químico em pó já tem bicarbonato e um ácido seco: só precisa de umidade e calor.",
+      "Bicarbonato demais deixa gosto de sabão e escurece; usar os dois dá bom crescimento e sabor equilibrado."
+     ],
+     "q": "Você já confundiu bicarbonato com fermento químico numa receita? O que aconteceu?",
+     "c": "Misture uma pitada de bicarbonato com uma colher de vinagre, depois fermento com água, e veja a efervescência."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salt in sweet baking",
+     "g": "Learn why a small pinch of salt makes sweet bakes taste fuller, rounder and less flat.",
+     "p": [
+      "Salt sharpens sweetness and brings out butter, chocolate and vanilla flavours.",
+      "In bread it also tightens gluten and slows yeast, so it controls the rise.",
+      "Use fine salt so it dissolves evenly, and weigh it: a few grams make a real difference."
+     ],
+     "q": "Have you ever tasted salted caramel or salty chocolate, and did you enjoy the contrast?",
+     "c": "Taste a square of chocolate, then another with a few flakes of salt, and describe the difference."
+    },
+    "de": {
+     "t": "Salz im süßen Gebäck",
+     "g": "Lerne, warum eine kleine Prise Salz süßes Gebäck voller, runder und weniger flach schmecken lässt.",
+     "p": [
+      "Salz hebt die Süße und bringt Butter, Schokolade und Vanille zur Geltung.",
+      "Im Brot strafft es außerdem das Gluten und bremst die Hefe, so steuert es das Aufgehen.",
+      "Nimm feines Salz, damit es sich gleichmäßig löst, und wiege es: Wenige Gramm machen viel aus."
+     ],
+     "q": "Hast du schon gesalzenes Karamell oder Schokolade mit Salz probiert? Mochtest du den Kontrast?",
+     "c": "Probiere ein Stück Schokolade, dann eins mit ein paar Salzflocken, und beschreibe den Unterschied."
+    },
+    "es": {
+     "t": "La sal en la repostería dulce",
+     "g": "Aprende por qué una pizca de sal hace que lo dulce sepa más lleno, redondo y menos plano.",
+     "p": [
+      "La sal realza el dulzor y resalta la mantequilla, el chocolate y la vainilla.",
+      "En el pan además tensa el gluten y frena la levadura, así controla el levado.",
+      "Usa sal fina para que se disuelva bien y pésala: unos pocos gramos marcan la diferencia."
+     ],
+     "q": "¿Has probado caramelo salado o chocolate con sal? ¿Te gustó el contraste?",
+     "c": "Prueba un trozo de chocolate y luego otro con unas escamas de sal, y describe la diferencia."
+    },
+    "fr": {
+     "t": "Le sel dans les douceurs",
+     "g": "Apprends pourquoi une pincée de sel rend les pâtisseries plus rondes, plus pleines et moins fades.",
+     "p": [
+      "Le sel exalte le sucré et fait ressortir le beurre, le chocolat et la vanille.",
+      "Dans le pain, il resserre aussi le gluten et ralentit la levure : il contrôle la pousse.",
+      "Prends du sel fin pour qu'il se dissolve bien et pèse-le : quelques grammes font la différence."
+     ],
+     "q": "As-tu déjà goûté du caramel au beurre salé ou du chocolat au sel ? As-tu aimé ce contraste ?",
+     "c": "Goûte un carré de chocolat, puis un autre avec quelques flocons de sel, et décris la différence."
+    },
+    "it": {
+     "t": "Il sale nei dolci",
+     "g": "Impara perché un pizzico di sale rende i dolci più pieni, rotondi e meno piatti.",
+     "p": [
+      "Il sale esalta la dolcezza e fa risaltare burro, cioccolato e vaniglia.",
+      "Nel pane rinforza anche il glutine e rallenta il lievito, controllando la lievitazione.",
+      "Usa sale fino perché si sciolga bene e pesalo: pochi grammi fanno una vera differenza."
+     ],
+     "q": "Hai mai assaggiato caramello salato o cioccolato con sale? Ti è piaciuto il contrasto?",
+     "c": "Assaggia un quadratino di cioccolato, poi un altro con qualche fiocco di sale, e descrivi la differenza."
+    },
+    "pt": {
+     "t": "O sal na pastelaria doce",
+     "g": "Aprende porque uma pitada de sal faz os doces saberem mais cheios, redondos e menos sem graça.",
+     "p": [
+      "O sal realça o doce e faz sobressair a manteiga, o chocolate e a baunilha.",
+      "No pão também fortalece o glúten e abranda o fermento, controlando a levedação.",
+      "Usa sal fino para se dissolver bem e pesa-o: poucos gramas fazem a diferença."
+     ],
+     "q": "Já provaste caramelo salgado ou chocolate com sal? Gostaste do contraste?",
+     "c": "Prova um quadrado de chocolate, depois outro com uns flocos de sal, e descreve a diferença."
+    },
+    "pt_BR": {
+     "t": "Sal na confeitaria doce",
+     "g": "Aprenda por que uma pitada de sal deixa os doces mais saborosos, redondos e menos sem graça.",
+     "p": [
+      "O sal realça o doce e destaca a manteiga, o chocolate e a baunilha.",
+      "No pão ele também fortalece o glúten e segura o fermento, controlando a fermentação.",
+      "Use sal refinado para dissolver bem e pese: poucos gramas fazem diferença de verdade."
+     ],
+     "q": "Você já provou caramelo salgado ou chocolate com sal? Gostou do contraste?",
+     "c": "Prove um quadradinho de chocolate, depois outro com uns flocos de sal, e descreva a diferença."
+    }
+   }
+  }
+ ]
+}

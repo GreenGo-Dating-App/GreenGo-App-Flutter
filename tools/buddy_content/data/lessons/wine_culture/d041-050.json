@@ -1,0 +1,835 @@
+{
+ "topic": "wine_culture",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three layers of aroma",
+     "g": "Learn to sort wine aromas into primary, secondary and tertiary layers.",
+     "p": [
+      "Primary aromas come from the grape itself: fruit, flowers and herbs, like cherry, lemon or violet.",
+      "Secondary aromas come from winemaking, such as bread or yogurt notes from yeast and vanilla from oak.",
+      "Tertiary aromas develop with age, like dried fruit, leather, mushroom, nuts or honey."
+     ],
+     "q": "Which of these three layers sounds most interesting to you, and why?",
+     "c": "Smell a fresh fruit, a slice of toast and a handful of nuts and match each to one aroma layer."
+    },
+    "de": {
+     "t": "Drei Ebenen der Aromen",
+     "g": "Lerne, Weinaromen in primäre, sekundäre und tertiäre Ebenen zu ordnen.",
+     "p": [
+      "Primäre Aromen stammen aus der Traube selbst: Frucht, Blüten und Kräuter wie Kirsche, Zitrone oder Veilchen.",
+      "Sekundäre Aromen entstehen im Keller, etwa Brot- oder Joghurtnoten der Hefe und Vanille aus dem Holz.",
+      "Tertiäre Aromen entwickeln sich mit dem Alter, etwa Trockenfrüchte, Leder, Pilze, Nüsse oder Honig."
+     ],
+     "q": "Welche dieser drei Ebenen findest du am spannendsten, und warum?",
+     "c": "Riech an einer frischen Frucht, einer Scheibe Toast und ein paar Nüssen und ordne jedem eine Aromaebene zu."
+    },
+    "es": {
+     "t": "Tres capas de aroma",
+     "g": "Aprende a ordenar los aromas del vino en primarios, secundarios y terciarios.",
+     "p": [
+      "Los primarios vienen de la propia uva: fruta, flores y hierbas, como cereza, limón o violeta.",
+      "Los secundarios vienen de la elaboración, como notas de pan o yogur de la levadura y vainilla del roble.",
+      "Los terciarios aparecen con la edad, como fruta seca, cuero, setas, frutos secos o miel."
+     ],
+     "q": "¿Cuál de estas tres capas te parece más interesante, y por qué?",
+     "c": "Huele una fruta fresca, una tostada y unos frutos secos y relaciona cada uno con una capa de aroma."
+    },
+    "fr": {
+     "t": "Trois familles d'arômes",
+     "g": "Apprends à classer les arômes du vin en primaires, secondaires et tertiaires.",
+     "p": [
+      "Les primaires viennent du raisin : fruits, fleurs et herbes, comme la cerise, le citron ou la violette.",
+      "Les secondaires viennent de la vinification, comme les notes de pain ou de yaourt des levures et la vanille du fût.",
+      "Les tertiaires naissent avec l'âge : fruits secs, cuir, champignon, noix ou miel."
+     ],
+     "q": "Laquelle de ces trois familles te semble la plus intéressante, et pourquoi ?",
+     "c": "Sens un fruit frais, une tranche de pain grillé et quelques noix, et associe chacun à une famille d'arômes."
+    },
+    "it": {
+     "t": "Tre livelli di profumi",
+     "g": "Impara a ordinare i profumi del vino in primari, secondari e terziari.",
+     "p": [
+      "I primari vengono dall'uva: frutta, fiori ed erbe, come ciliegia, limone o violetta.",
+      "I secondari nascono in cantina, come note di pane o yogurt dai lieviti e vaniglia dal legno.",
+      "I terziari si sviluppano con l'età, come frutta secca, cuoio, funghi, noci o miele."
+     ],
+     "q": "Quale di questi tre livelli ti sembra più interessante, e perché?",
+     "c": "Annusa un frutto fresco, una fetta di pane tostato e qualche noce e abbina ciascuno a un livello di profumi."
+    },
+    "pt": {
+     "t": "Três camadas de aroma",
+     "g": "Aprende a organizar os aromas do vinho em primários, secundários e terciários.",
+     "p": [
+      "Os primários vêm da própria uva: fruta, flores e ervas, como cereja, limão ou violeta.",
+      "Os secundários vêm da vinificação, como notas de pão ou iogurte das leveduras e baunilha da madeira.",
+      "Os terciários surgem com a idade, como frutos secos, couro, cogumelos, nozes ou mel."
+     ],
+     "q": "Qual destas três camadas te parece mais interessante, e porquê?",
+     "c": "Cheira uma fruta fresca, uma torrada e umas nozes e associa cada uma a uma camada de aroma."
+    },
+    "pt_BR": {
+     "t": "Três camadas de aroma",
+     "g": "Aprenda a organizar os aromas do vinho em primários, secundários e terciários.",
+     "p": [
+      "Os primários vêm da própria uva: frutas, flores e ervas, como cereja, limão ou violeta.",
+      "Os secundários vêm da vinificação, como notas de pão ou iogurte das leveduras e baunilha da madeira.",
+      "Os terciários surgem com a idade, como frutas secas, couro, cogumelos, nozes ou mel."
+     ],
+     "q": "Qual dessas três camadas parece mais interessante para você, e por quê?",
+     "c": "Cheire uma fruta fresca, uma torrada e algumas nozes e associe cada uma a uma camada de aroma."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tasting on the palate",
+     "g": "Get to know the main sensations in the mouth: sweetness, acidity, tannin and body.",
+     "p": [
+      "Sweetness is felt mostly at the tip of the tongue; most wines are dry, with little or no sugar.",
+      "Acidity makes your mouth water, while tannin leaves a drying, grippy feeling on the gums.",
+      "Body is the sense of weight, from light like skimmed milk to full like cream."
+     ],
+     "q": "When you eat, which sensation do you notice first: sweet, sour, salty or bitter?",
+     "c": "Taste water, then lemon water, then strong black tea and describe how each feels in your mouth."
+    },
+    "de": {
+     "t": "Am Gaumen verkosten",
+     "g": "Lerne die wichtigsten Empfindungen im Mund kennen: Süße, Säure, Tannin und Körper.",
+     "p": [
+      "Süße spürst du vor allem an der Zungenspitze; die meisten Weine sind trocken, mit wenig oder keinem Zucker.",
+      "Säure lässt das Wasser im Mund zusammenlaufen, Tannin hinterlässt ein trockenes, raues Gefühl am Zahnfleisch.",
+      "Körper ist das Gefühl von Gewicht, von leicht wie Magermilch bis voll wie Sahne."
+     ],
+     "q": "Welche Empfindung bemerkst du beim Essen zuerst: süß, sauer, salzig oder bitter?",
+     "c": "Probiere Wasser, dann Zitronenwasser, dann starken schwarzen Tee und beschreibe, wie sich jedes im Mund anfühlt."
+    },
+    "es": {
+     "t": "La cata en boca",
+     "g": "Conoce las principales sensaciones en boca: dulzor, acidez, tanino y cuerpo.",
+     "p": [
+      "El dulzor se nota sobre todo en la punta de la lengua; la mayoría de los vinos son secos, con poco o ningún azúcar.",
+      "La acidez te hace salivar, y el tanino deja una sensación seca y áspera en las encías.",
+      "El cuerpo es la sensación de peso, de ligero como la leche desnatada a lleno como la nata."
+     ],
+     "q": "Al comer, ¿qué sensación notas primero: dulce, ácido, salado o amargo?",
+     "c": "Prueba agua, luego agua con limón y luego té negro fuerte y describe cómo se siente cada uno en la boca."
+    },
+    "fr": {
+     "t": "La dégustation en bouche",
+     "g": "Découvre les principales sensations en bouche : sucre, acidité, tanins et corps.",
+     "p": [
+      "Le sucre se perçoit surtout sur le bout de la langue ; la plupart des vins sont secs, avec peu ou pas de sucre.",
+      "L'acidité fait saliver, tandis que les tanins laissent une sensation sèche et râpeuse sur les gencives.",
+      "Le corps est la sensation de poids, de léger comme du lait écrémé à ample comme de la crème."
+     ],
+     "q": "Quand tu manges, quelle sensation remarques-tu en premier : sucré, acide, salé ou amer ?",
+     "c": "Goûte de l'eau, puis de l'eau citronnée, puis un thé noir fort, et décris la sensation de chacun en bouche."
+    },
+    "it": {
+     "t": "La degustazione in bocca",
+     "g": "Conosci le principali sensazioni in bocca: dolcezza, acidità, tannino e corpo.",
+     "p": [
+      "La dolcezza si sente soprattutto sulla punta della lingua; la maggior parte dei vini è secca, con poco o niente zucchero.",
+      "L'acidità fa salivare, mentre il tannino lascia una sensazione asciutta e ruvida sulle gengive.",
+      "Il corpo è la sensazione di peso, da leggero come il latte scremato a pieno come la panna."
+     ],
+     "q": "Quando mangi, quale sensazione noti per prima: dolce, acido, salato o amaro?",
+     "c": "Assaggia acqua, poi acqua e limone, poi un tè nero forte e descrivi come si sente ciascuno in bocca."
+    },
+    "pt": {
+     "t": "A prova na boca",
+     "g": "Conhece as principais sensações na boca: doçura, acidez, tanino e corpo.",
+     "p": [
+      "A doçura sente-se sobretudo na ponta da língua; a maioria dos vinhos é seca, com pouco ou nenhum açúcar.",
+      "A acidez faz salivar, e o tanino deixa uma sensação seca e áspera nas gengivas.",
+      "O corpo é a sensação de peso, de leve como leite magro a cheio como natas."
+     ],
+     "q": "Quando comes, que sensação notas primeiro: doce, ácido, salgado ou amargo?",
+     "c": "Prova água, depois água com limão e depois chá preto forte, e descreve como cada um se sente na boca."
+    },
+    "pt_BR": {
+     "t": "A degustação na boca",
+     "g": "Conheça as principais sensações na boca: doçura, acidez, tanino e corpo.",
+     "p": [
+      "A doçura é sentida mais na ponta da língua; a maioria dos vinhos é seca, com pouco ou nenhum açúcar.",
+      "A acidez faz salivar, e o tanino deixa uma sensação seca e áspera nas gengivas.",
+      "O corpo é a sensação de peso, de leve como leite desnatado a cheio como creme de leite."
+     ],
+     "q": "Quando você come, que sensação percebe primeiro: doce, azedo, salgado ou amargo?",
+     "c": "Prove água, depois água com limão e depois chá preto forte, e descreva como cada um fica na boca."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acidity explained",
+     "g": "Understand acidity, the freshness that makes wine lively and food-friendly.",
+     "p": [
+      "Acidity is what makes a wine taste crisp and refreshing, like a squeeze of lemon in a dish.",
+      "Grapes from cool climates usually keep more acidity than grapes from hot regions.",
+      "High-acid wines pair well with food because they cut through richness and refresh the palate."
+     ],
+     "q": "Do you enjoy sour flavours like lemon, green apple or yogurt?",
+     "c": "Notice how long your mouth keeps watering after a bite of green apple: that is how tasters judge acidity."
+    },
+    "de": {
+     "t": "Säure erklärt",
+     "g": "Verstehe die Säure, die Frische, die Wein lebendig und speisefreundlich macht.",
+     "p": [
+      "Säure lässt einen Wein knackig und erfrischend schmecken, wie ein Spritzer Zitrone im Essen.",
+      "Trauben aus kühlem Klima behalten meist mehr Säure als Trauben aus heißen Regionen.",
+      "Weine mit viel Säure passen gut zum Essen, weil sie Fülle durchschneiden und den Gaumen erfrischen."
+     ],
+     "q": "Magst du saure Aromen wie Zitrone, grünen Apfel oder Joghurt?",
+     "c": "Achte darauf, wie lange dir nach einem Bissen grünen Apfels das Wasser im Mund zusammenläuft: So beurteilt man Säure."
+    },
+    "es": {
+     "t": "La acidez",
+     "g": "Entiende la acidez, la frescura que hace que el vino sea vivo y amigo de la comida.",
+     "p": [
+      "La acidez hace que un vino sepa fresco y vivo, como un chorrito de limón en un plato.",
+      "Las uvas de climas frescos suelen conservar más acidez que las de zonas cálidas.",
+      "Los vinos con acidez alta maridan bien porque cortan la grasa y refrescan el paladar."
+     ],
+     "q": "¿Te gustan los sabores ácidos como el limón, la manzana verde o el yogur?",
+     "c": "Fíjate en cuánto tiempo salivas tras morder una manzana verde: así valoran los catadores la acidez."
+    },
+    "fr": {
+     "t": "L'acidité expliquée",
+     "g": "Comprends l'acidité, la fraîcheur qui rend le vin vivant et facile à marier aux plats.",
+     "p": [
+      "L'acidité rend un vin vif et rafraîchissant, comme un filet de citron sur un plat.",
+      "Les raisins des climats frais gardent en général plus d'acidité que ceux des régions chaudes.",
+      "Les vins acides s'accordent bien aux plats car ils équilibrent le gras et rafraîchissent la bouche."
+     ],
+     "q": "Aimes-tu les saveurs acidulées comme le citron, la pomme verte ou le yaourt ?",
+     "c": "Remarque combien de temps tu salives après une bouchée de pomme verte : c'est ainsi qu'on juge l'acidité."
+    },
+    "it": {
+     "t": "L'acidità spiegata",
+     "g": "Capisci l'acidità, la freschezza che rende il vino vivace e amico della tavola.",
+     "p": [
+      "L'acidità fa sembrare un vino fresco e dissetante, come una spruzzata di limone su un piatto.",
+      "Le uve dei climi freschi di solito conservano più acidità di quelle delle zone calde.",
+      "I vini acidi si abbinano bene al cibo perché sgrassano e rinfrescano il palato."
+     ],
+     "q": "Ti piacciono i sapori aspri come limone, mela verde o yogurt?",
+     "c": "Nota quanto a lungo salivi dopo un morso di mela verde: è così che chi degusta valuta l'acidità."
+    },
+    "pt": {
+     "t": "A acidez explicada",
+     "g": "Percebe a acidez, a frescura que torna o vinho vivo e amigo da comida.",
+     "p": [
+      "A acidez faz um vinho parecer fresco e vibrante, como um pouco de limão num prato.",
+      "As uvas de climas frescos costumam manter mais acidez do que as de regiões quentes.",
+      "Vinhos com acidez alta ligam bem com comida porque cortam a gordura e refrescam a boca."
+     ],
+     "q": "Gostas de sabores ácidos como limão, maçã verde ou iogurte?",
+     "c": "Repara quanto tempo salivas depois de trincar uma maçã verde: é assim que os provadores avaliam a acidez."
+    },
+    "pt_BR": {
+     "t": "A acidez explicada",
+     "g": "Entenda a acidez, o frescor que deixa o vinho vivo e amigo da comida.",
+     "p": [
+      "A acidez faz um vinho parecer fresco e vibrante, como um pouco de limão em um prato.",
+      "As uvas de clima frio costumam manter mais acidez do que as de regiões quentes.",
+      "Vinhos com acidez alta harmonizam bem porque cortam a gordura e refrescam a boca."
+     ],
+     "q": "Você gosta de sabores ácidos como limão, maçã verde ou iogurte?",
+     "c": "Repare por quanto tempo você saliva depois de morder uma maçã verde: é assim que se avalia a acidez."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tannin explained",
+     "g": "Understand tannin, the drying, grippy feeling that comes from grape skins, seeds and oak.",
+     "p": [
+      "Tannins are natural compounds also found in strong black tea, walnuts and dark chocolate.",
+      "They are mostly found in red wines, because reds ferment in contact with skins and seeds.",
+      "Fatty or protein-rich foods, like cheese or grilled dishes, make tannic wines feel softer."
+     ],
+     "q": "Do you like strong black tea or dark chocolate, or do you find them too drying?",
+     "c": "Brew a cup of black tea for too long, sip it and feel the drying effect on your gums and tongue."
+    },
+    "de": {
+     "t": "Tannin erklärt",
+     "g": "Verstehe das Tannin, das trocknende, raue Gefühl aus Traubenschalen, Kernen und Holz.",
+     "p": [
+      "Tannine sind natürliche Stoffe, die es auch in starkem Schwarztee, Walnüssen und dunkler Schokolade gibt.",
+      "Sie finden sich vor allem in Rotweinen, weil diese mit Schalen und Kernen gären.",
+      "Fettreiche oder eiweißreiche Speisen wie Käse oder Gegrilltes lassen tanninreiche Weine weicher wirken."
+     ],
+     "q": "Magst du starken Schwarztee oder dunkle Schokolade, oder findest du sie zu herb?",
+     "c": "Lass eine Tasse Schwarztee zu lange ziehen, nimm einen Schluck und spüre die trocknende Wirkung."
+    },
+    "es": {
+     "t": "El tanino",
+     "g": "Entiende el tanino, la sensación seca y áspera que viene de hollejos, pepitas y roble.",
+     "p": [
+      "Los taninos son compuestos naturales que también están en el té negro fuerte, las nueces y el chocolate negro.",
+      "Se encuentran sobre todo en los tintos, porque fermentan en contacto con pieles y pepitas.",
+      "Los alimentos grasos o ricos en proteína, como el queso o la parrilla, hacen que el tanino se sienta más suave."
+     ],
+     "q": "¿Te gusta el té negro fuerte o el chocolate negro, o te parecen demasiado secos?",
+     "c": "Deja reposar un té negro demasiado tiempo, pruébalo y siente el efecto secante en encías y lengua."
+    },
+    "fr": {
+     "t": "Les tanins expliqués",
+     "g": "Comprends les tanins, cette sensation sèche et râpeuse issue des peaux, des pépins et du bois.",
+     "p": [
+      "Les tanins sont des composés naturels qu'on trouve aussi dans le thé noir fort, les noix et le chocolat noir.",
+      "On les trouve surtout dans les rouges, car ils fermentent au contact des peaux et des pépins.",
+      "Les plats gras ou riches en protéines, comme le fromage ou les grillades, assouplissent les vins tanniques."
+     ],
+     "q": "Aimes-tu le thé noir fort ou le chocolat noir, ou les trouves-tu trop asséchants ?",
+     "c": "Laisse infuser un thé noir trop longtemps, goûtes-en une gorgée et sens l'effet asséchant sur les gencives."
+    },
+    "it": {
+     "t": "Il tannino spiegato",
+     "g": "Capisci il tannino, la sensazione asciutta e ruvida che viene da bucce, vinaccioli e legno.",
+     "p": [
+      "I tannini sono sostanze naturali presenti anche nel tè nero forte, nelle noci e nel cioccolato fondente.",
+      "Si trovano soprattutto nei rossi, perché fermentano a contatto con bucce e vinaccioli.",
+      "Cibi grassi o ricchi di proteine, come formaggi o grigliate, fanno sembrare più morbidi i vini tannici."
+     ],
+     "q": "Ti piacciono il tè nero forte o il cioccolato fondente, o li trovi troppo asciuganti?",
+     "c": "Lascia in infusione un tè nero troppo a lungo, assaggialo e senti l'effetto asciugante su gengive e lingua."
+    },
+    "pt": {
+     "t": "O tanino explicado",
+     "g": "Percebe o tanino, a sensação seca e áspera que vem das películas, grainhas e madeira.",
+     "p": [
+      "Os taninos são compostos naturais que também existem no chá preto forte, nas nozes e no chocolate negro.",
+      "Encontram-se sobretudo nos tintos, porque fermentam em contacto com películas e grainhas.",
+      "Comidas gordas ou ricas em proteína, como queijo ou grelhados, tornam os vinhos tânicos mais macios."
+     ],
+     "q": "Gostas de chá preto forte ou chocolate negro, ou achas que secam demasiado a boca?",
+     "c": "Deixa um chá preto em infusão tempo demais, prova e sente o efeito seco nas gengivas e na língua."
+    },
+    "pt_BR": {
+     "t": "O tanino explicado",
+     "g": "Entenda o tanino, a sensação seca e áspera que vem das cascas, sementes e madeira.",
+     "p": [
+      "Os taninos são compostos naturais que também existem no chá preto forte, nas nozes e no chocolate amargo.",
+      "Eles aparecem sobretudo nos tintos, porque fermentam em contato com cascas e sementes.",
+      "Comidas gordurosas ou ricas em proteína, como queijo ou churrasco, deixam os vinhos tânicos mais macios."
+     ],
+     "q": "Você gosta de chá preto forte ou chocolate amargo, ou acha que secam demais a boca?",
+     "c": "Deixe um chá preto em infusão por tempo demais, prove e sinta o efeito seco nas gengivas e na língua."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body and alcohol",
+     "g": "Learn why some wines feel light, medium or full in the mouth.",
+     "p": [
+      "Body is the overall weight of a wine on your palate, shaped by alcohol, sugar, tannin and extract.",
+      "Higher alcohol usually makes a wine feel fuller and warmer; you can check it on the label.",
+      "Riesling from the Mosel can be light-bodied, while a warm-climate Shiraz is often full-bodied."
+     ],
+     "q": "Do you prefer light meals and drinks, or rich and full ones?",
+     "c": "Compare the feel of water, whole milk and a smoothie in your mouth and rank them light to full."
+    },
+    "de": {
+     "t": "Körper und Alkohol",
+     "g": "Erfahre, warum sich manche Weine im Mund leicht, mittel oder voll anfühlen.",
+     "p": [
+      "Körper ist das Gesamtgewicht eines Weins am Gaumen, geprägt von Alkohol, Zucker, Tannin und Extrakt.",
+      "Mehr Alkohol lässt einen Wein meist voller und wärmer wirken; du findest ihn auf dem Etikett.",
+      "Ein Riesling von der Mosel kann leicht sein, ein Shiraz aus warmem Klima ist oft vollmundig."
+     ],
+     "q": "Magst du lieber leichte Speisen und Getränke oder reichhaltige und volle?",
+     "c": "Vergleiche Wasser, Vollmilch und einen Smoothie im Mund und ordne sie von leicht bis voll."
+    },
+    "es": {
+     "t": "Cuerpo y alcohol",
+     "g": "Aprende por qué algunos vinos se sienten ligeros, medios o con mucho cuerpo en la boca.",
+     "p": [
+      "El cuerpo es el peso del vino en el paladar, marcado por el alcohol, el azúcar, el tanino y el extracto.",
+      "Más alcohol suele dar más cuerpo y sensación de calor; puedes verlo en la etiqueta.",
+      "Un Riesling del Mosela puede ser ligero, mientras que un Shiraz de clima cálido suele tener mucho cuerpo."
+     ],
+     "q": "¿Prefieres comidas y bebidas ligeras, o ricas y contundentes?",
+     "c": "Compara en la boca el agua, la leche entera y un batido y ordénalos de ligero a lleno."
+    },
+    "fr": {
+     "t": "Corps et alcool",
+     "g": "Découvre pourquoi certains vins semblent légers, moyens ou corsés en bouche.",
+     "p": [
+      "Le corps est le poids global du vin en bouche, façonné par l'alcool, le sucre, les tanins et l'extrait.",
+      "Plus d'alcool rend souvent un vin plus ample et plus chaleureux ; le degré figure sur l'étiquette.",
+      "Un riesling de Moselle peut être léger, alors qu'une shiraz de climat chaud est souvent corsée."
+     ],
+     "q": "Préfères-tu les plats et boissons légers, ou riches et amples ?",
+     "c": "Compare en bouche de l'eau, du lait entier et un smoothie, et classe-les du plus léger au plus ample."
+    },
+    "it": {
+     "t": "Corpo e alcol",
+     "g": "Scopri perché alcuni vini sembrano leggeri, medi o corposi in bocca.",
+     "p": [
+      "Il corpo è il peso complessivo del vino al palato, dato da alcol, zucchero, tannino ed estratto.",
+      "Più alcol di solito rende un vino più pieno e caldo; la gradazione è in etichetta.",
+      "Un Riesling della Mosella può essere leggero, mentre uno Shiraz di clima caldo è spesso corposo."
+     ],
+     "q": "Preferisci cibi e bevande leggeri, o ricchi e pieni?",
+     "c": "Confronta in bocca acqua, latte intero e un frullato e mettili in ordine da leggero a pieno."
+    },
+    "pt": {
+     "t": "Corpo e álcool",
+     "g": "Aprende porque alguns vinhos parecem leves, médios ou encorpados na boca.",
+     "p": [
+      "O corpo é o peso global do vinho na boca, moldado pelo álcool, açúcar, tanino e extrato.",
+      "Mais álcool costuma dar mais corpo e sensação de calor; podes vê-lo no rótulo.",
+      "Um Riesling do Mosela pode ser leve, enquanto um Shiraz de clima quente é muitas vezes encorpado."
+     ],
+     "q": "Preferes refeições e bebidas leves, ou ricas e cheias?",
+     "c": "Compara na boca água, leite gordo e um batido de fruta e ordena-os de leve a cheio."
+    },
+    "pt_BR": {
+     "t": "Corpo e álcool",
+     "g": "Aprenda por que alguns vinhos parecem leves, médios ou encorpados na boca.",
+     "p": [
+      "O corpo é o peso geral do vinho na boca, moldado por álcool, açúcar, tanino e extrato.",
+      "Mais álcool costuma dar mais corpo e sensação de calor; você pode ver no rótulo.",
+      "Um Riesling do Mosel pode ser leve, enquanto um Shiraz de clima quente costuma ser encorpado."
+     ],
+     "q": "Você prefere refeições e bebidas leves, ou ricas e encorpadas?",
+     "c": "Compare na boca água, leite integral e uma vitamina de frutas e ordene do mais leve ao mais cheio."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finish and length",
+     "g": "Discover why tasters pay attention to how long the flavour lingers after a sip.",
+     "p": [
+      "The finish is what stays in your mouth after you swallow or spit: flavours, texture and warmth.",
+      "A long finish, where pleasant flavours last many seconds, is often a sign of good quality.",
+      "Tasters sometimes count the seconds the flavour lasts to compare wines objectively."
+     ],
+     "q": "Which food leaves the longest pleasant aftertaste for you: chocolate, coffee, spices or something else?",
+     "c": "After a square of dark chocolate, count how many seconds the flavour stays in your mouth."
+    },
+    "de": {
+     "t": "Abgang und Länge",
+     "g": "Entdecke, warum Verkoster darauf achten, wie lange der Geschmack nach einem Schluck anhält.",
+     "p": [
+      "Der Abgang ist das, was nach dem Schlucken oder Ausspucken bleibt: Aromen, Textur und Wärme.",
+      "Ein langer Abgang, bei dem angenehme Aromen viele Sekunden bleiben, ist oft ein Zeichen von Qualität.",
+      "Verkoster zählen manchmal die Sekunden, um Weine sachlich zu vergleichen."
+     ],
+     "q": "Welches Essen hinterlässt bei dir den längsten angenehmen Nachgeschmack: Schokolade, Kaffee, Gewürze?",
+     "c": "Zähle nach einem Stück dunkler Schokolade, wie viele Sekunden der Geschmack im Mund bleibt."
+    },
+    "es": {
+     "t": "Final y persistencia",
+     "g": "Descubre por qué los catadores se fijan en cuánto dura el sabor después de un sorbo.",
+     "p": [
+      "El final es lo que queda en la boca tras tragar o escupir: sabores, textura y calidez.",
+      "Un final largo, con sabores agradables que duran muchos segundos, suele indicar buena calidad.",
+      "Los catadores a veces cuentan los segundos que dura el sabor para comparar vinos con objetividad."
+     ],
+     "q": "¿Qué alimento te deja el regusto agradable más largo: chocolate, café, especias u otro?",
+     "c": "Tras una onza de chocolate negro, cuenta cuántos segundos dura el sabor en tu boca."
+    },
+    "fr": {
+     "t": "Finale et longueur",
+     "g": "Découvre pourquoi les dégustateurs observent combien de temps la saveur persiste après une gorgée.",
+     "p": [
+      "La finale est ce qui reste en bouche après avoir avalé ou recraché : saveurs, texture et chaleur.",
+      "Une finale longue, où les saveurs agréables durent plusieurs secondes, signale souvent un vin de qualité.",
+      "Les dégustateurs comptent parfois ces secondes, appelées caudalies, pour comparer les vins."
+     ],
+     "q": "Quel aliment te laisse l'arrière-goût agréable le plus long : chocolat, café, épices ou autre ?",
+     "c": "Après un carré de chocolat noir, compte combien de secondes la saveur reste en bouche."
+    },
+    "it": {
+     "t": "Finale e persistenza",
+     "g": "Scopri perché chi degusta fa caso a quanto dura il sapore dopo un sorso.",
+     "p": [
+      "Il finale è ciò che resta in bocca dopo aver deglutito o sputato: sapori, consistenza e calore.",
+      "Un finale lungo, con sapori piacevoli che durano molti secondi, è spesso segno di qualità.",
+      "A volte si contano i secondi di persistenza, detti caudalie, per confrontare i vini in modo oggettivo."
+     ],
+     "q": "Quale cibo ti lascia il retrogusto piacevole più lungo: cioccolato, caffè, spezie o altro?",
+     "c": "Dopo un quadratino di cioccolato fondente, conta quanti secondi il sapore resta in bocca."
+    },
+    "pt": {
+     "t": "Final e persistência",
+     "g": "Descobre porque os provadores reparam em quanto tempo o sabor fica depois de um gole.",
+     "p": [
+      "O final é o que fica na boca depois de engolir ou cuspir: sabores, textura e calor.",
+      "Um final longo, com sabores agradáveis que duram muitos segundos, é muitas vezes sinal de qualidade.",
+      "Os provadores contam por vezes os segundos que o sabor dura para comparar vinhos com objetividade."
+     ],
+     "q": "Que alimento te deixa o sabor agradável mais duradouro: chocolate, café, especiarias ou outro?",
+     "c": "Depois de um quadrado de chocolate negro, conta quantos segundos o sabor fica na boca."
+    },
+    "pt_BR": {
+     "t": "Final e persistência",
+     "g": "Descubra por que os degustadores reparam em quanto tempo o sabor fica depois de um gole.",
+     "p": [
+      "O final é o que fica na boca depois de engolir ou cuspir: sabores, textura e calor.",
+      "Um final longo, com sabores agradáveis que duram muitos segundos, costuma ser sinal de qualidade.",
+      "Os degustadores às vezes contam os segundos que o sabor dura para comparar vinhos com objetividade."
+     ],
+     "q": "Que alimento deixa em você o sabor agradável mais duradouro: chocolate, café, especiarias ou outro?",
+     "c": "Depois de um quadradinho de chocolate amargo, conte quantos segundos o sabor fica na boca."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spitting is professional",
+     "g": "Learn why wine professionals spit and how it lets you taste many wines with a clear head.",
+     "p": [
+      "At tastings, professionals spit almost every sip so they stay sharp and can judge every wine fairly.",
+      "You can taste all the aroma and flavour without swallowing, since most of it comes through the nose.",
+      "Spittoons are normal at tastings and wineries, so spitting is polite, never rude."
+     ],
+     "q": "How would you feel about spitting at a tasting: comfortable, shy or curious to try?",
+     "c": "Practise a neat, discreet spit with water into a cup at the sink; it gets easy with practice."
+    },
+    "de": {
+     "t": "Ausspucken ist professionell",
+     "g": "Erfahre, warum Weinprofis ausspucken und so viele Weine mit klarem Kopf verkosten können.",
+     "p": [
+      "Bei Verkostungen spucken Profis fast jeden Schluck aus, um konzentriert zu bleiben und fair zu urteilen.",
+      "Du nimmst Duft und Geschmack ganz ohne Schlucken wahr, denn das meiste kommt über die Nase.",
+      "Spucknäpfe sind bei Verkostungen und auf Weingütern normal, Ausspucken ist also höflich."
+     ],
+     "q": "Wie fändest du es, bei einer Verkostung auszuspucken: entspannt, schüchtern oder neugierig?",
+     "c": "Übe am Waschbecken mit Wasser, sauber und diskret in einen Becher zu spucken; mit Übung wird es leicht."
+    },
+    "es": {
+     "t": "Escupir es profesional",
+     "g": "Aprende por qué los profesionales escupen y cómo eso permite catar muchos vinos con la mente clara.",
+     "p": [
+      "En las catas, los profesionales escupen casi cada sorbo para mantenerse atentos y juzgar con justicia.",
+      "Puedes percibir todo el aroma y el sabor sin tragar, porque la mayor parte llega por la nariz.",
+      "Las escupideras son normales en catas y bodegas, así que escupir es educado, nunca grosero."
+     ],
+     "q": "¿Cómo te sentirías al escupir en una cata: cómodo, con vergüenza o con curiosidad?",
+     "c": "Practica escupir agua de forma limpia y discreta en un vaso sobre el fregadero; con práctica es fácil."
+    },
+    "fr": {
+     "t": "Recracher, c'est professionnel",
+     "g": "Découvre pourquoi les professionnels recrachent et comment cela permet de goûter beaucoup de vins l'esprit clair.",
+     "p": [
+      "En dégustation, les pros recrachent presque chaque gorgée pour rester attentifs et juger chaque vin équitablement.",
+      "On perçoit tous les arômes et saveurs sans avaler, car l'essentiel passe par le nez.",
+      "Les crachoirs sont normaux en dégustation et dans les domaines : recracher est poli, jamais impoli."
+     ],
+     "q": "Comment te sentirais-tu à l'idée de recracher en dégustation : à l'aise, gêné ou curieux ?",
+     "c": "Entraîne-toi au-dessus de l'évier à recracher de l'eau proprement et discrètement dans un gobelet."
+    },
+    "it": {
+     "t": "Sputare è professionale",
+     "g": "Scopri perché i professionisti sputano e come questo permette di assaggiare molti vini restando lucidi.",
+     "p": [
+      "Nelle degustazioni i professionisti sputano quasi ogni sorso per restare attenti e giudicare ogni vino con equità.",
+      "Puoi cogliere profumi e sapori senza deglutire, perché gran parte arriva dal naso.",
+      "Le sputacchiere sono normali in degustazioni e cantine, quindi sputare è educato, mai scortese."
+     ],
+     "q": "Come ti sentiresti a sputare in una degustazione: a tuo agio, in imbarazzo o curioso?",
+     "c": "Esercitati al lavandino a sputare acqua in un bicchiere in modo pulito e discreto; con la pratica è facile."
+    },
+    "pt": {
+     "t": "Cuspir é profissional",
+     "g": "Aprende porque os profissionais cospem e como isso permite provar muitos vinhos com a cabeça limpa.",
+     "p": [
+      "Nas provas, os profissionais cospem quase todos os goles para se manterem atentos e avaliarem com justiça.",
+      "Consegues sentir todo o aroma e sabor sem engolir, porque a maior parte chega pelo nariz.",
+      "As escarradeiras são normais em provas e adegas, por isso cuspir é educado, nunca indelicado."
+     ],
+     "q": "Como te sentirias a cuspir numa prova: à vontade, envergonhado ou curioso?",
+     "c": "Treina no lava-loiça a cuspir água num copo de forma limpa e discreta; com prática fica fácil."
+    },
+    "pt_BR": {
+     "t": "Cuspir é profissional",
+     "g": "Aprenda por que os profissionais cospem e como isso permite provar muitos vinhos com a cabeça leve.",
+     "p": [
+      "Nas degustações, os profissionais cospem quase todo gole para ficarem atentos e avaliarem com justiça.",
+      "Dá para sentir todo o aroma e o sabor sem engolir, porque a maior parte chega pelo nariz.",
+      "As cuspideiras são normais em degustações e vinícolas, então cuspir é educado, nunca grosseiro."
+     ],
+     "q": "Como você se sentiria cuspindo em uma degustação: tranquilo, envergonhado ou curioso?",
+     "c": "Treine na pia a cuspir água em um copo de forma limpa e discreta; com prática fica fácil."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pacing with water and food",
+     "g": "Understand why water and food belong at every tasting and every table.",
+     "p": [
+      "Drinking a glass of water alongside any wine keeps you hydrated and helps you pace yourself.",
+      "Eating while tasting slows the effect of alcohol and shows how wine changes with food.",
+      "Plain bread or crackers also refresh your palate between different wines."
+     ],
+     "q": "What are your favourite simple snacks to share at a table with friends?",
+     "c": "At your next meal, keep a full glass of water in front of you and notice how often you reach for it."
+    },
+    "de": {
+     "t": "Tempo mit Wasser und Essen",
+     "g": "Verstehe, warum Wasser und Essen zu jeder Verkostung und an jeden Tisch gehören.",
+     "p": [
+      "Ein Glas Wasser neben jedem Wein hält dich hydriert und hilft dir, ein ruhiges Tempo zu halten.",
+      "Essen beim Verkosten verlangsamt die Wirkung des Alkohols und zeigt, wie sich Wein mit Speisen verändert.",
+      "Einfaches Brot oder Cracker neutralisieren den Gaumen zwischen verschiedenen Weinen."
+     ],
+     "q": "Was sind deine liebsten einfachen Snacks, die du mit Freunden am Tisch teilst?",
+     "c": "Stell beim nächsten Essen ein volles Glas Wasser vor dich und achte darauf, wie oft du danach greifst."
+    },
+    "es": {
+     "t": "Ritmo con agua y comida",
+     "g": "Entiende por qué el agua y la comida deben estar en cada cata y en cada mesa.",
+     "p": [
+      "Beber un vaso de agua junto a cualquier vino te mantiene hidratado y te ayuda a ir con calma.",
+      "Comer mientras catas frena el efecto del alcohol y muestra cómo cambia el vino con la comida.",
+      "El pan sencillo o unas galletas saladas también limpian el paladar entre vinos."
+     ],
+     "q": "¿Cuáles son tus picoteos sencillos favoritos para compartir en la mesa con amigos?",
+     "c": "En tu próxima comida, ten un vaso lleno de agua delante y fíjate en cuántas veces lo tomas."
+    },
+    "fr": {
+     "t": "Le rythme avec l'eau et les plats",
+     "g": "Comprends pourquoi l'eau et la nourriture ont leur place à chaque dégustation et à chaque table.",
+     "p": [
+      "Boire un verre d'eau à côté de chaque vin t'hydrate et t'aide à garder un rythme tranquille.",
+      "Manger en dégustant ralentit l'effet de l'alcool et montre comment le vin change avec les plats.",
+      "Du pain nature ou des crackers rafraîchissent aussi la bouche entre deux vins."
+     ],
+     "q": "Quels sont tes petits en-cas simples préférés à partager à table entre amis ?",
+     "c": "Au prochain repas, garde un verre d'eau plein devant toi et remarque combien de fois tu le prends."
+    },
+    "it": {
+     "t": "Ritmo con acqua e cibo",
+     "g": "Capisci perché acqua e cibo devono esserci a ogni degustazione e a ogni tavola.",
+     "p": [
+      "Bere un bicchiere d'acqua accanto a ogni vino ti mantiene idratato e ti aiuta a procedere con calma.",
+      "Mangiare mentre degusti rallenta l'effetto dell'alcol e mostra come il vino cambia con il cibo.",
+      "Pane semplice o grissini puliscono anche il palato tra un vino e l'altro."
+     ],
+     "q": "Quali sono i tuoi stuzzichini semplici preferiti da condividere a tavola con gli amici?",
+     "c": "Al prossimo pasto tieni davanti a te un bicchiere d'acqua pieno e nota quante volte lo prendi."
+    },
+    "pt": {
+     "t": "Ritmo com água e comida",
+     "g": "Percebe porque a água e a comida devem estar em todas as provas e em todas as mesas.",
+     "p": [
+      "Beber um copo de água ao lado de qualquer vinho mantém-te hidratado e ajuda-te a ir com calma.",
+      "Comer enquanto provas abranda o efeito do álcool e mostra como o vinho muda com a comida.",
+      "Pão simples ou tostinhas também refrescam a boca entre vinhos diferentes."
+     ],
+     "q": "Quais são os teus petiscos simples preferidos para partilhar à mesa com amigos?",
+     "c": "Na próxima refeição, mantém um copo de água cheio à tua frente e repara quantas vezes lhe pegas."
+    },
+    "pt_BR": {
+     "t": "Ritmo com água e comida",
+     "g": "Entenda por que água e comida devem estar em toda degustação e em toda mesa.",
+     "p": [
+      "Beber um copo de água junto de qualquer vinho mantém você hidratado e ajuda a ir com calma.",
+      "Comer enquanto degusta desacelera o efeito do álcool e mostra como o vinho muda com a comida.",
+      "Pão simples ou torradinhas também limpam o paladar entre vinhos diferentes."
+     ],
+     "q": "Quais são seus petiscos simples favoritos para dividir à mesa com amigos?",
+     "c": "Na próxima refeição, deixe um copo de água cheio à sua frente e repare quantas vezes você o pega."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple tasting notes",
+     "g": "Learn to write short, useful notes about colour, aroma and taste.",
+     "p": [
+      "A simple note has four parts: look, smell, taste and your overall impression.",
+      "Use concrete words, like lemon, cherry or toast, instead of vague ones like nice or good.",
+      "Add the name, region and date so you can remember the wine and compare later."
+     ],
+     "q": "Do you keep notes or photos of meals, places or experiences you want to remember?",
+     "c": "Write a four-line tasting note today for a tea, juice or coffee: look, smell, taste and impression."
+    },
+    "de": {
+     "t": "Einfache Verkostungsnotizen",
+     "g": "Lerne, kurze, nützliche Notizen zu Farbe, Duft und Geschmack zu schreiben.",
+     "p": [
+      "Eine einfache Notiz hat vier Teile: Aussehen, Duft, Geschmack und Gesamteindruck.",
+      "Nutze konkrete Wörter wie Zitrone, Kirsche oder Toast statt vager wie nett oder gut.",
+      "Ergänze Name, Region und Datum, damit du dich erinnerst und später vergleichen kannst."
+     ],
+     "q": "Machst du Notizen oder Fotos von Essen, Orten oder Erlebnissen, an die du dich erinnern willst?",
+     "c": "Schreib heute eine Notiz in vier Zeilen zu einem Tee, Saft oder Kaffee: Aussehen, Duft, Geschmack, Eindruck."
+    },
+    "es": {
+     "t": "Notas de cata sencillas",
+     "g": "Aprende a escribir notas breves y útiles sobre color, aroma y sabor.",
+     "p": [
+      "Una nota sencilla tiene cuatro partes: vista, nariz, boca e impresión general.",
+      "Usa palabras concretas, como limón, cereza o tostado, en lugar de vagas como bonito o bueno.",
+      "Añade el nombre, la región y la fecha para recordar el vino y compararlo después."
+     ],
+     "q": "¿Guardas notas o fotos de comidas, lugares o experiencias que quieres recordar?",
+     "c": "Escribe hoy una nota de cuatro líneas sobre un té, zumo o café: vista, nariz, boca e impresión."
+    },
+    "fr": {
+     "t": "Des notes de dégustation simples",
+     "g": "Apprends à écrire des notes courtes et utiles sur la couleur, les arômes et le goût.",
+     "p": [
+      "Une note simple a quatre parties : l'œil, le nez, la bouche et l'impression générale.",
+      "Utilise des mots concrets, comme citron, cerise ou pain grillé, plutôt que sympa ou bon.",
+      "Ajoute le nom, la région et la date pour te souvenir du vin et comparer plus tard."
+     ],
+     "q": "Gardes-tu des notes ou des photos de repas, de lieux ou d'expériences dont tu veux te souvenir ?",
+     "c": "Écris aujourd'hui une note de quatre lignes sur un thé, un jus ou un café : œil, nez, bouche, impression."
+    },
+    "it": {
+     "t": "Note di degustazione semplici",
+     "g": "Impara a scrivere note brevi e utili su colore, profumi e sapore.",
+     "p": [
+      "Una nota semplice ha quattro parti: vista, olfatto, gusto e impressione generale.",
+      "Usa parole concrete, come limone, ciliegia o pane tostato, invece di vaghe come carino o buono.",
+      "Aggiungi nome, zona e data per ricordare il vino e confrontarlo in seguito."
+     ],
+     "q": "Tieni note o foto di pasti, luoghi o esperienze che vuoi ricordare?",
+     "c": "Scrivi oggi una nota di quattro righe su un tè, un succo o un caffè: vista, olfatto, gusto e impressione."
+    },
+    "pt": {
+     "t": "Notas de prova simples",
+     "g": "Aprende a escrever notas curtas e úteis sobre cor, aroma e sabor.",
+     "p": [
+      "Uma nota simples tem quatro partes: aspeto, nariz, boca e impressão geral.",
+      "Usa palavras concretas, como limão, cereja ou tosta, em vez de vagas como giro ou bom.",
+      "Junta o nome, a região e a data para te lembrares do vinho e comparares mais tarde."
+     ],
+     "q": "Guardas notas ou fotografias de refeições, lugares ou experiências que queres lembrar?",
+     "c": "Escreve hoje uma nota de quatro linhas sobre um chá, sumo ou café: aspeto, nariz, boca e impressão."
+    },
+    "pt_BR": {
+     "t": "Notas de degustação simples",
+     "g": "Aprenda a escrever notas curtas e úteis sobre cor, aroma e sabor.",
+     "p": [
+      "Uma nota simples tem quatro partes: visual, nariz, boca e impressão geral.",
+      "Use palavras concretas, como limão, cereja ou tostado, em vez de vagas como legal ou bom.",
+      "Inclua o nome, a região e a data para lembrar do vinho e comparar depois."
+     ],
+     "q": "Você guarda notas ou fotos de refeições, lugares ou experiências que quer lembrar?",
+     "c": "Escreva hoje uma nota de quatro linhas sobre um chá, suco ou café: visual, nariz, boca e impressão."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cork taint",
+     "g": "Learn to recognise the musty smell of a corked wine and what causes it.",
+     "p": [
+      "A corked wine smells of wet cardboard, damp cellar or mouldy newspaper, and its fruit seems muted.",
+      "It is caused mainly by a compound called TCA, which can develop in natural corks.",
+      "It is not harmful, just unpleasant, and a restaurant or shop will usually replace a corked bottle."
+     ],
+     "q": "Have you ever opened a food or drink that smelled slightly wrong, and how did you notice?",
+     "c": "Smell a piece of damp cardboard today so you can remember what cork taint is like."
+    },
+    "de": {
+     "t": "Korkschmecker",
+     "g": "Lerne, den muffigen Geruch eines korkigen Weins zu erkennen und was ihn verursacht.",
+     "p": [
+      "Ein korkiger Wein riecht nach nasser Pappe, feuchtem Keller oder muffiger Zeitung, die Frucht wirkt gedämpft.",
+      "Ursache ist meist ein Stoff namens TCA, der sich in Naturkorken bilden kann.",
+      "Er ist nicht schädlich, nur unangenehm; Restaurant oder Händler ersetzen eine korkige Flasche meist."
+     ],
+     "q": "Hast du schon einmal ein Lebensmittel geöffnet, das etwas seltsam roch, und wie hast du es bemerkt?",
+     "c": "Riech heute an einem Stück feuchter Pappe, damit du dir den Korkgeruch merken kannst."
+    },
+    "es": {
+     "t": "Olor a corcho",
+     "g": "Aprende a reconocer el olor a moho de un vino con defecto de corcho y qué lo causa.",
+     "p": [
+      "Un vino acorchado huele a cartón mojado, bodega húmeda o periódico enmohecido, y su fruta parece apagada.",
+      "Lo causa sobre todo un compuesto llamado TCA, que puede desarrollarse en los corchos naturales.",
+      "No es dañino, solo desagradable, y un restaurante o tienda suele cambiar la botella."
+     ],
+     "q": "¿Alguna vez abriste un alimento o bebida que olía un poco raro, y cómo lo notaste?",
+     "c": "Huele hoy un trozo de cartón húmedo para recordar cómo es el olor a corcho."
+    },
+    "fr": {
+     "t": "Le goût de bouchon",
+     "g": "Apprends à reconnaître l'odeur de moisi d'un vin bouchonné et ce qui la provoque.",
+     "p": [
+      "Un vin bouchonné sent le carton mouillé, la cave humide ou le journal moisi, et son fruit paraît éteint.",
+      "Il est surtout dû à une molécule appelée TCA, qui peut se former dans les bouchons en liège.",
+      "Ce n'est pas nocif, juste désagréable, et un restaurant ou un caviste remplace en général la bouteille."
+     ],
+     "q": "As-tu déjà ouvert un aliment ou une boisson qui sentait un peu bizarre, et comment l'as-tu remarqué ?",
+     "c": "Sens aujourd'hui un morceau de carton humide pour retenir l'odeur du goût de bouchon."
+    },
+    "it": {
+     "t": "Il sentore di tappo",
+     "g": "Impara a riconoscere l'odore di muffa di un vino che sa di tappo e che cosa lo causa.",
+     "p": [
+      "Un vino che sa di tappo ricorda cartone bagnato, cantina umida o giornale ammuffito, e il frutto sembra spento.",
+      "La causa principale è una sostanza chiamata TCA, che può formarsi nei tappi di sughero naturale.",
+      "Non è dannoso, solo sgradevole, e un ristorante o un'enoteca di solito sostituisce la bottiglia."
+     ],
+     "q": "Ti è mai capitato di aprire un cibo o una bevanda che aveva un odore un po' strano, e come te ne sei accorto?",
+     "c": "Annusa oggi un pezzo di cartone umido per ricordare com'è il sentore di tappo."
+    },
+    "pt": {
+     "t": "Vinho com defeito de rolha",
+     "g": "Aprende a reconhecer o cheiro a mofo de um vinho com defeito de rolha e o que o causa.",
+     "p": [
+      "Um vinho com defeito de rolha cheira a cartão molhado, cave húmida ou jornal com bolor, e a fruta parece apagada.",
+      "É causado sobretudo por um composto chamado TCA, que se pode formar nas rolhas de cortiça natural.",
+      "Não faz mal, só é desagradável, e um restaurante ou loja costuma trocar a garrafa."
+     ],
+     "q": "Já abriste um alimento ou bebida com um cheiro um pouco estranho, e como reparaste?",
+     "c": "Cheira hoje um pedaço de cartão húmido para te lembrares de como é o defeito de rolha."
+    },
+    "pt_BR": {
+     "t": "Vinho bouchonné",
+     "g": "Aprenda a reconhecer o cheiro de mofo de um vinho com defeito de rolha e o que o causa.",
+     "p": [
+      "Um vinho bouchonné cheira a papelão molhado, porão úmido ou jornal mofado, e a fruta parece apagada.",
+      "A causa principal é um composto chamado TCA, que pode se formar nas rolhas de cortiça natural.",
+      "Não faz mal, só é desagradável, e um restaurante ou loja costuma trocar a garrafa."
+     ],
+     "q": "Você já abriu um alimento ou bebida com cheiro meio estranho, e como percebeu?",
+     "c": "Cheire hoje um pedaço de papelão úmido para lembrar como é o defeito de rolha."
+    }
+   }
+  }
+ ]
+}

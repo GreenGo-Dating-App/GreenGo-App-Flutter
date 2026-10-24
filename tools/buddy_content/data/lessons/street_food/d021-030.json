@@ -1,0 +1,835 @@
+{
+ "topic": "street_food",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pho on the pavement",
+     "g": "Get to know Vietnam's famous noodle soup, often eaten for breakfast.",
+     "p": [
+      "Pho has a clear, fragrant broth simmered for hours with bones, star anise, cinnamon and charred onion.",
+      "Flat rice noodles and thin slices of beef or chicken are added just before serving.",
+      "A plate of fresh herbs, bean sprouts, lime and chili lets you season your own bowl."
+     ],
+     "q": "Would you enjoy a hot soup for breakfast? Why or why not?",
+     "c": "Make a quick noodle soup today and finish it with fresh herbs and a squeeze of lime."
+    },
+    "de": {
+     "t": "Pho auf dem Gehweg",
+     "g": "Vietnams berühmte Nudelsuppe kennenlernen, die oft zum Frühstück gegessen wird.",
+     "p": [
+      "Pho hat eine klare, duftende Brühe, stundenlang mit Knochen, Sternanis, Zimt und gerösteter Zwiebel gekocht.",
+      "Flache Reisnudeln und dünne Scheiben Rind oder Huhn kommen kurz vor dem Servieren dazu.",
+      "Ein Teller mit Kräutern, Sprossen, Limette und Chili lässt dich deine Schüssel selbst würzen."
+     ],
+     "q": "Würdest du eine heiße Suppe zum Frühstück mögen? Warum oder warum nicht?",
+     "c": "Koch heute eine schnelle Nudelsuppe und vollende sie mit frischen Kräutern und Limette."
+    },
+    "es": {
+     "t": "Pho en la acera",
+     "g": "Conocer la famosa sopa de fideos de Vietnam, que se toma a menudo en el desayuno.",
+     "p": [
+      "El pho tiene un caldo claro y aromático, cocido durante horas con huesos, anís estrellado, canela y cebolla tostada.",
+      "Los fideos planos de arroz y finas láminas de ternera o pollo se añaden justo antes de servir.",
+      "Un plato de hierbas, brotes, lima y chile te deja aliñar tu propio cuenco."
+     ],
+     "q": "¿Te gustaría tomar una sopa caliente en el desayuno? ¿Por qué?",
+     "c": "Prepara hoy una sopa de fideos rápida y termínala con hierbas frescas y un chorrito de lima."
+    },
+    "fr": {
+     "t": "Le pho sur le trottoir",
+     "g": "Découvrir la célèbre soupe de nouilles du Vietnam, souvent mangée au petit-déjeuner.",
+     "p": [
+      "Le pho a un bouillon clair et parfumé, mijoté des heures avec os, anis étoilé, cannelle et oignon grillé.",
+      "Les nouilles de riz plates et de fines tranches de bœuf ou de poulet sont ajoutées juste avant de servir.",
+      "Une assiette d'herbes, de pousses de soja, de citron vert et de piment te laisse assaisonner ton bol."
+     ],
+     "q": "Aimerais-tu une soupe chaude au petit-déjeuner ? Pourquoi ?",
+     "c": "Prépare aujourd'hui une soupe de nouilles rapide et termine-la avec des herbes fraîches et du citron vert."
+    },
+    "it": {
+     "t": "Pho sul marciapiede",
+     "g": "Conoscere la famosa zuppa di spaghetti del Vietnam, spesso mangiata a colazione.",
+     "p": [
+      "Il pho ha un brodo limpido e profumato, cotto per ore con ossa, anice stellato, cannella e cipolla abbrustolita.",
+      "Spaghetti di riso piatti e fettine sottili di manzo o pollo si aggiungono poco prima di servire.",
+      "Un piatto di erbe, germogli, lime e peperoncino ti permette di condire la tua ciotola."
+     ],
+     "q": "Ti piacerebbe una zuppa calda a colazione? Perché sì o perché no?",
+     "c": "Prepara oggi una zuppa di spaghetti veloce e finiscila con erbe fresche e una spruzzata di lime."
+    },
+    "pt": {
+     "t": "Pho no passeio",
+     "g": "Conhecer a famosa sopa de massa do Vietname, muitas vezes comida ao pequeno-almoço.",
+     "p": [
+      "O pho tem um caldo claro e aromático, cozido horas com ossos, anis-estrelado, canela e cebola tostada.",
+      "A massa de arroz achatada e fatias finas de vaca ou frango juntam-se mesmo antes de servir.",
+      "Um prato de ervas, rebentos, lima e malagueta deixa-te temperar a tua tigela."
+     ],
+     "q": "Gostavas de comer uma sopa quente ao pequeno-almoço? Porquê?",
+     "c": "Faz hoje uma sopa de massa rápida e termina-a com ervas frescas e um pouco de lima."
+    },
+    "pt_BR": {
+     "t": "Pho na calçada",
+     "g": "Conhecer a famosa sopa de macarrão do Vietnã, muitas vezes tomada no café da manhã.",
+     "p": [
+      "O pho tem um caldo claro e perfumado, cozido por horas com ossos, anis-estrelado, canela e cebola tostada.",
+      "O macarrão de arroz achatado e fatias finas de carne ou frango entram logo antes de servir.",
+      "Um prato de ervas, broto de feijão, limão e pimenta deixa você temperar sua tigela."
+     ],
+     "q": "Você tomaria uma sopa quente no café da manhã? Por quê?",
+     "c": "Faça hoje uma sopa de macarrão rápida e finalize com ervas frescas e um pouco de limão."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Low stools and sidewalks",
+     "g": "Discover how Vietnam turns the pavement into a lively dining room.",
+     "p": [
+      "In Vietnamese cities, many vendors cook on the sidewalk and set out tiny plastic stools and low tables.",
+      "Sitting close to the ground, people chat, sip iced tea and share dishes with friends and strangers.",
+      "Many stalls serve just one dish, perfected over years, sometimes passed down in the family."
+     ],
+     "q": "Do you prefer eating at a busy shared table or a quiet private one?",
+     "c": "Eat your next snack sitting somewhere new, like a step or a bench, and watch the street life around you."
+    },
+    "de": {
+     "t": "Niedrige Hocker und Gehwege",
+     "g": "Entdecken, wie Vietnam den Gehweg in ein lebhaftes Esszimmer verwandelt.",
+     "p": [
+      "In vietnamesischen Städten kochen viele Händler auf dem Gehweg und stellen winzige Plastikhocker und niedrige Tische auf.",
+      "Nah am Boden plaudert man, trinkt Eistee und teilt Gerichte mit Freunden und Fremden.",
+      "Viele Stände bieten nur ein Gericht an, über Jahre perfektioniert und oft in der Familie weitergegeben."
+     ],
+     "q": "Isst du lieber an einem vollen Gemeinschaftstisch oder an einem ruhigen eigenen?",
+     "c": "Iss deinen nächsten Snack an einem neuen Ort, etwa auf einer Stufe oder Bank, und beobachte das Straßenleben."
+    },
+    "es": {
+     "t": "Taburetes bajos y aceras",
+     "g": "Descubrir cómo Vietnam convierte la acera en un comedor animado.",
+     "p": [
+      "En las ciudades vietnamitas muchos cocinan en la acera y colocan taburetes de plástico diminutos y mesas bajas.",
+      "Sentados cerca del suelo, la gente charla, bebe té helado y comparte platos con amigos y desconocidos.",
+      "Muchos puestos sirven un solo plato, perfeccionado durante años y a veces heredado en la familia."
+     ],
+     "q": "¿Prefieres comer en una mesa compartida y bulliciosa o en una tranquila?",
+     "c": "Come tu próximo bocado sentado en un sitio nuevo, como un escalón o un banco, y observa la vida de la calle."
+    },
+    "fr": {
+     "t": "Petits tabourets et trottoirs",
+     "g": "Découvrir comment le Vietnam transforme le trottoir en salle à manger animée.",
+     "p": [
+      "Dans les villes vietnamiennes, beaucoup cuisinent sur le trottoir et installent de minuscules tabourets en plastique.",
+      "Assis près du sol, on bavarde, on boit du thé glacé et on partage des plats avec amis et inconnus.",
+      "Beaucoup de stands ne servent qu'un plat, perfectionné pendant des années, parfois transmis en famille."
+     ],
+     "q": "Préfères-tu manger à une table partagée animée ou à une table calme ?",
+     "c": "Mange ton prochain en-cas assis dans un endroit nouveau, une marche ou un banc, et observe la vie de la rue."
+    },
+    "it": {
+     "t": "Sgabelli bassi e marciapiedi",
+     "g": "Scoprire come il Vietnam trasforma il marciapiede in una vivace sala da pranzo.",
+     "p": [
+      "Nelle città vietnamite molti cucinano sul marciapiede e sistemano minuscoli sgabelli di plastica e tavolini bassi.",
+      "Seduti vicino a terra, si chiacchiera, si beve tè freddo e si condividono piatti con amici e sconosciuti.",
+      "Molti chioschi servono un solo piatto, perfezionato negli anni e a volte tramandato in famiglia."
+     ],
+     "q": "Preferisci mangiare a un tavolo condiviso e vivace o a uno tranquillo?",
+     "c": "Mangia il prossimo spuntino seduto in un posto nuovo, come un gradino o una panchina, e osserva la vita di strada."
+    },
+    "pt": {
+     "t": "Bancos baixos e passeios",
+     "g": "Descobrir como o Vietname transforma o passeio numa sala de jantar animada.",
+     "p": [
+      "Nas cidades vietnamitas, muitos cozinham no passeio e põem minúsculos bancos de plástico e mesas baixas.",
+      "Sentados perto do chão, conversa-se, bebe-se chá gelado e partilham-se pratos com amigos e desconhecidos.",
+      "Muitas bancas servem um só prato, aperfeiçoado durante anos e às vezes passado na família."
+     ],
+     "q": "Preferes comer numa mesa partilhada e animada ou numa sossegada?",
+     "c": "Come o próximo petisco sentado num sítio novo, como um degrau ou um banco, e observa a vida da rua."
+    },
+    "pt_BR": {
+     "t": "Banquinhos baixos e calçadas",
+     "g": "Descobrir como o Vietnã transforma a calçada numa sala de jantar animada.",
+     "p": [
+      "Nas cidades vietnamitas, muitos cozinham na calçada e espalham banquinhos de plástico minúsculos e mesas baixas.",
+      "Sentados perto do chão, as pessoas conversam, tomam chá gelado e dividem pratos com amigos e desconhecidos.",
+      "Muitas barracas servem um único prato, aperfeiçoado por anos e às vezes passado de geração em geração."
+     ],
+     "q": "Você prefere comer numa mesa compartilhada e agitada ou numa tranquila?",
+     "c": "Coma seu próximo lanche sentado num lugar novo, como um degrau ou banco, e observe a vida da rua."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Samosas",
+     "g": "Meet the crispy, spiced pastry loved across India and far beyond.",
+     "p": [
+      "A samosa is a triangle of pastry filled with spiced potato and peas, then deep-fried until golden.",
+      "Cumin, coriander, ginger and green chili give the filling its warm flavour.",
+      "They are often served with green mint chutney and sweet tamarind chutney for dipping."
+     ],
+     "q": "Do you prefer your snacks crispy, soft or both at once?",
+     "c": "Try a samosa if you can, or fold a spiced potato filling into any pastry or wrap and bake it."
+    },
+    "de": {
+     "t": "Samosas",
+     "g": "Das knusprige, gewürzte Gebäck kennenlernen, das in Indien und weit darüber hinaus beliebt ist.",
+     "p": [
+      "Ein Samosa ist ein Teigdreieck mit gewürzten Kartoffeln und Erbsen, goldbraun frittiert.",
+      "Kreuzkümmel, Koriander, Ingwer und grüne Chili geben der Füllung ihr warmes Aroma.",
+      "Dazu gibt es oft grünes Minz-Chutney und süßes Tamarinden-Chutney zum Dippen."
+     ],
+     "q": "Magst du Snacks lieber knusprig, weich oder beides zugleich?",
+     "c": "Probier ein Samosa oder falte eine gewürzte Kartoffelfüllung in Teig oder einen Wrap und back sie."
+    },
+    "es": {
+     "t": "Samosas",
+     "g": "Conocer el crujiente pastelito especiado querido en India y mucho más allá.",
+     "p": [
+      "La samosa es un triángulo de masa relleno de patata y guisantes especiados, frito hasta dorarse.",
+      "Comino, cilantro, jengibre y chile verde dan al relleno su sabor cálido.",
+      "Suelen servirse con chutney verde de menta y chutney dulce de tamarindo para mojar."
+     ],
+     "q": "¿Prefieres tus bocados crujientes, blandos o las dos cosas a la vez?",
+     "c": "Prueba una samosa si puedes, o envuelve un relleno de patata especiada en masa o una tortilla y hornéalo."
+    },
+    "fr": {
+     "t": "Les samoussas",
+     "g": "Découvrir le chausson croustillant et épicé aimé en Inde et bien au-delà.",
+     "p": [
+      "Le samoussa est un triangle de pâte farci de pommes de terre et petits pois épicés, frit jusqu'à dorer.",
+      "Cumin, coriandre, gingembre et piment vert donnent à la farce son goût chaleureux.",
+      "On le sert souvent avec un chutney vert à la menthe et un chutney sucré au tamarin."
+     ],
+     "q": "Préfères-tu tes en-cas croustillants, moelleux ou les deux à la fois ?",
+     "c": "Goûte un samoussa si tu peux, ou plie une farce de pommes de terre épicées dans une pâte ou un wrap et fais-la cuire au four."
+    },
+    "it": {
+     "t": "Samosa",
+     "g": "Conoscere il fagottino croccante e speziato amato in India e ben oltre.",
+     "p": [
+      "Il samosa è un triangolo di pasta ripieno di patate e piselli speziati, fritto fino a dorarsi.",
+      "Cumino, coriandolo, zenzero e peperoncino verde danno al ripieno il suo sapore caldo.",
+      "Spesso si serve con chutney verde alla menta e chutney dolce di tamarindo da intingere."
+     ],
+     "q": "Preferisci gli spuntini croccanti, morbidi o entrambe le cose?",
+     "c": "Assaggia un samosa se puoi, oppure avvolgi un ripieno di patate speziate in pasta o in una piadina e cuocilo in forno."
+    },
+    "pt": {
+     "t": "Chamuças",
+     "g": "Conhecer o pastel estaladiço e condimentado adorado na Índia e muito mais além.",
+     "p": [
+      "A chamuça é um triângulo de massa recheado com batata e ervilhas condimentadas, frito até ficar dourado.",
+      "Cominhos, coentros, gengibre e malagueta verde dão ao recheio o seu sabor quente.",
+      "Costuma servir-se com chutney verde de hortelã e chutney doce de tamarindo para molhar."
+     ],
+     "q": "Preferes os petiscos estaladiços, macios ou as duas coisas ao mesmo tempo?",
+     "c": "Prova uma chamuça se puderes, ou embrulha um recheio de batata condimentada em massa ou numa tortilha e leva ao forno."
+    },
+    "pt_BR": {
+     "t": "Samosas",
+     "g": "Conhecer o pastelzinho crocante e temperado amado na Índia e muito além.",
+     "p": [
+      "A samosa é um triângulo de massa recheado com batata e ervilha temperadas, frito até dourar.",
+      "Cominho, coentro, gengibre e pimenta verde dão ao recheio seu sabor quentinho.",
+      "Costuma vir com chutney verde de hortelã e chutney doce de tamarindo para mergulhar."
+     ],
+     "q": "Você prefere petiscos crocantes, macios ou os dois ao mesmo tempo?",
+     "c": "Prove uma samosa se puder, ou enrole um recheio de batata temperada em massa ou tortilha e asse."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pani puri",
+     "g": "Discover the fun, one-bite snack that bursts with flavour.",
+     "p": [
+      "Pani puri are small, crisp, hollow puris filled with potato or chickpeas and tangy spiced water.",
+      "The vendor makes a hole, fills each puri and hands it over one by one: eat it whole in one bite.",
+      "It has different names: golgappa in much of the north and puchka in Kolkata."
+     ],
+     "q": "Have you ever eaten a snack in a single bite? What was it?",
+     "c": "Fill a few small crackers or crisp shells with a tangy topping today and eat each one in one bite."
+    },
+    "de": {
+     "t": "Pani Puri",
+     "g": "Den lustigen Ein-Bissen-Snack entdecken, der vor Geschmack platzt.",
+     "p": [
+      "Pani Puri sind kleine, knusprige, hohle Puris mit Kartoffeln oder Kichererbsen und würzigem, säuerlichem Wasser.",
+      "Der Händler bohrt ein Loch, füllt jedes Puri und reicht es einzeln: im Ganzen in einem Bissen essen.",
+      "Es hat viele Namen: Golgappa in weiten Teilen des Nordens und Puchka in Kolkata."
+     ],
+     "q": "Hast du schon einmal einen Snack in einem einzigen Bissen gegessen? Welchen?",
+     "c": "Fülle heute ein paar kleine Cracker oder knusprige Schalen mit etwas Würzigem und iss jedes in einem Bissen."
+    },
+    "es": {
+     "t": "Pani puri",
+     "g": "Descubrir el divertido bocado único que estalla de sabor.",
+     "p": [
+      "Los pani puri son puris pequeños, crujientes y huecos, rellenos de patata o garbanzos y agua especiada y ácida.",
+      "El vendedor abre un agujero, rellena cada puri y te lo da uno a uno: se come entero de un bocado.",
+      "Tiene varios nombres: golgappa en gran parte del norte y puchka en Calcuta."
+     ],
+     "q": "¿Alguna vez comiste un bocado de una sola vez? ¿Qué era?",
+     "c": "Rellena hoy unas galletitas o cáscaras crujientes con algo ácido y cómete cada una de un bocado."
+    },
+    "fr": {
+     "t": "Le pani puri",
+     "g": "Découvrir l'en-cas amusant à croquer d'une bouchée, qui explose de saveurs.",
+     "p": [
+      "Les pani puri sont de petites boules creuses et croustillantes garnies de pomme de terre ou pois chiches et d'eau épicée acidulée.",
+      "Le marchand perce, remplit chaque puri et te le tend un par un : on le mange entier, d'une bouchée.",
+      "Il change de nom : golgappa dans une grande partie du nord, puchka à Calcutta."
+     ],
+     "q": "As-tu déjà mangé un en-cas en une seule bouchée ? Lequel ?",
+     "c": "Garnis aujourd'hui quelques petits crackers ou coques croustillantes d'une garniture acidulée et mange chacun d'une bouchée."
+    },
+    "it": {
+     "t": "Pani puri",
+     "g": "Scoprire il divertente boccone unico che esplode di sapore.",
+     "p": [
+      "I pani puri sono piccole sfere croccanti e vuote, ripiene di patate o ceci e acqua speziata e aspra.",
+      "Il venditore buca, riempie ogni puri e te lo porge uno alla volta: si mangia intero in un boccone.",
+      "Ha vari nomi: golgappa in gran parte del nord e puchka a Calcutta."
+     ],
+     "q": "Hai mai mangiato uno spuntino in un solo boccone? Cos'era?",
+     "c": "Riempi oggi qualche cracker o guscio croccante con un condimento aspro e mangia ciascuno in un boccone."
+    },
+    "pt": {
+     "t": "Pani puri",
+     "g": "Descobrir o divertido petisco de uma só dentada que rebenta de sabor.",
+     "p": [
+      "Os pani puri são pequenas bolinhas estaladiças e ocas, recheadas com batata ou grão e água condimentada e ácida.",
+      "O vendedor fura, enche cada puri e entrega-o um a um: come-se inteiro de uma só vez.",
+      "Tem vários nomes: golgappa em grande parte do norte e puchka em Calcutá."
+     ],
+     "q": "Já comeste algum petisco de uma só dentada? Qual?",
+     "c": "Recheia hoje umas bolachinhas ou cascas estaladiças com algo ácido e come cada uma de uma só vez."
+    },
+    "pt_BR": {
+     "t": "Pani puri",
+     "g": "Descobrir o petisco divertido de uma mordida só que explode de sabor.",
+     "p": [
+      "Os pani puri são bolinhas crocantes e ocas, recheadas com batata ou grão-de-bico e uma água temperada e azedinha.",
+      "O vendedor fura, enche cada puri e entrega um por um: come-se inteiro, de uma mordida.",
+      "Tem vários nomes: golgappa em boa parte do norte e puchka em Calcutá."
+     ],
+     "q": "Você já comeu um petisco de uma mordida só? Qual?",
+     "c": "Recheie hoje uns biscoitinhos ou casquinhas crocantes com algo azedinho e coma cada um de uma mordida."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vada pav",
+     "g": "Meet Mumbai's favourite fast snack for busy workers.",
+     "p": [
+      "Vada pav is a spiced potato fritter, the vada, tucked into a soft bread roll called pav.",
+      "It is often credited to vendors near Mumbai's train stations in the 1960s, feeding commuters fast.",
+      "Garlic chutney, green chutney and a fried green chili on the side make it bold and tasty."
+     ],
+     "q": "What is the classic quick snack in your city?",
+     "c": "Make a mini burger today with a potato patty or fritter in a soft roll, plus a spicy or herby sauce."
+    },
+    "de": {
+     "t": "Vada Pav",
+     "g": "Mumbais liebsten Schnellsnack für eilige Arbeiter kennenlernen.",
+     "p": [
+      "Vada Pav ist ein gewürzter Kartoffelpuffer, der Vada, in einem weichen Brötchen namens Pav.",
+      "Er wird oft Händlern an Mumbais Bahnhöfen in den 1960er-Jahren zugeschrieben, die Pendler schnell versorgten.",
+      "Knoblauch-Chutney, grünes Chutney und eine frittierte grüne Chili dazu machen ihn kräftig und lecker."
+     ],
+     "q": "Was ist der klassische schnelle Snack in deiner Stadt?",
+     "c": "Mach heute einen Mini-Burger mit einem Kartoffelpuffer in einem weichen Brötchen und einer scharfen oder Kräutersoße."
+    },
+    "es": {
+     "t": "Vada pav",
+     "g": "Conocer el bocado rápido favorito de Mumbai para los trabajadores con prisa.",
+     "p": [
+      "El vada pav es una croqueta de patata especiada, el vada, dentro de un panecillo blando llamado pav.",
+      "Se suele atribuir a vendedores junto a las estaciones de tren de Mumbai en los años sesenta.",
+      "El chutney de ajo, el chutney verde y un chile verde frito al lado lo hacen intenso y sabroso."
+     ],
+     "q": "¿Cuál es el bocado rápido clásico de tu ciudad?",
+     "c": "Haz hoy una mini hamburguesa con una tortita de patata en un pan blando y una salsa picante o de hierbas."
+    },
+    "fr": {
+     "t": "Le vada pav",
+     "g": "Découvrir l'en-cas rapide préféré de Mumbai pour les travailleurs pressés.",
+     "p": [
+      "Le vada pav est un beignet de pomme de terre épicé, le vada, glissé dans un petit pain moelleux, le pav.",
+      "On l'attribue souvent à des marchands près des gares de Mumbai dans les années 1960, pour nourrir les navetteurs.",
+      "Chutney à l'ail, chutney vert et un piment vert frit à côté le rendent intense et savoureux."
+     ],
+     "q": "Quel est l'en-cas rapide classique de ta ville ?",
+     "c": "Fais aujourd'hui un mini burger avec une galette de pomme de terre dans un pain moelleux et une sauce relevée ou aux herbes."
+    },
+    "it": {
+     "t": "Vada pav",
+     "g": "Conoscere lo snack veloce preferito di Mumbai per i lavoratori di corsa.",
+     "p": [
+      "Il vada pav è una frittella di patate speziata, il vada, dentro un panino morbido chiamato pav.",
+      "Viene spesso attribuito ai venditori vicino alle stazioni di Mumbai negli anni Sessanta, per sfamare i pendolari.",
+      "Chutney all'aglio, chutney verde e un peperoncino verde fritto accanto lo rendono deciso e gustoso."
+     ],
+     "q": "Qual è lo spuntino veloce classico della tua città?",
+     "c": "Prepara oggi un mini burger con una frittella di patate in un panino morbido e una salsa piccante o alle erbe."
+    },
+    "pt": {
+     "t": "Vada pav",
+     "g": "Conhecer o petisco rápido favorito de Bombaim para trabalhadores apressados.",
+     "p": [
+      "O vada pav é um bolinho de batata condimentado, o vada, dentro de um pãozinho macio chamado pav.",
+      "É muitas vezes atribuído a vendedores junto às estações de comboio de Bombaim nos anos 60.",
+      "Chutney de alho, chutney verde e uma malagueta verde frita ao lado tornam-no intenso e saboroso."
+     ],
+     "q": "Qual é o petisco rápido clássico da tua cidade?",
+     "c": "Faz hoje um mini hambúrguer com um bolinho de batata num pão macio e um molho picante ou de ervas."
+    },
+    "pt_BR": {
+     "t": "Vada pav",
+     "g": "Conhecer o lanche rápido favorito de Mumbai para trabalhadores apressados.",
+     "p": [
+      "O vada pav é um bolinho de batata temperado, o vada, dentro de um pãozinho macio chamado pav.",
+      "Costuma ser atribuído a vendedores perto das estações de trem de Mumbai nos anos 1960.",
+      "Chutney de alho, chutney verde e uma pimenta verde frita ao lado deixam tudo intenso e gostoso."
+     ],
+     "q": "Qual é o lanche rápido clássico da sua cidade?",
+     "c": "Faça hoje um mini hambúrguer com um bolinho de batata num pão macio e um molho picante ou de ervas."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chaat culture",
+     "g": "Explore chaat, India's playful family of sweet, sour, spicy and crunchy snacks.",
+     "p": [
+      "Chaat mixes many textures in one bowl: crunchy, soft, creamy and juicy all at once.",
+      "Bhel puri combines puffed rice, sev, onion, tomato and tangy chutneys, mixed just before eating.",
+      "Papdi chaat layers crisp wafers with potato, chickpeas, yogurt and sweet and green chutneys."
+     ],
+     "q": "Which taste do you love most: sweet, sour, spicy or crunchy?",
+     "c": "Make a mini chaat today: mix something crunchy, something soft, a little yogurt and a tangy sauce."
+    },
+    "de": {
+     "t": "Chaat-Kultur",
+     "g": "Chaat erkunden, Indiens verspielte Familie süßer, saurer, scharfer und knuspriger Snacks.",
+     "p": [
+      "Chaat mischt viele Texturen in einer Schale: knusprig, weich, cremig und saftig zugleich.",
+      "Bhel Puri verbindet Puffreis, Sev, Zwiebel, Tomate und säuerliche Chutneys, kurz vor dem Essen gemischt.",
+      "Papdi Chaat schichtet knusprige Plättchen mit Kartoffel, Kichererbsen, Joghurt und Chutneys."
+     ],
+     "q": "Welchen Geschmack liebst du am meisten: süß, sauer, scharf oder knusprig?",
+     "c": "Mach heute ein Mini-Chaat: etwas Knuspriges, etwas Weiches, ein wenig Joghurt und eine säuerliche Soße."
+    },
+    "es": {
+     "t": "La cultura del chaat",
+     "g": "Explorar el chaat, la divertida familia india de bocados dulces, ácidos, picantes y crujientes.",
+     "p": [
+      "El chaat mezcla muchas texturas en un cuenco: crujiente, blando, cremoso y jugoso a la vez.",
+      "El bhel puri une arroz inflado, sev, cebolla, tomate y chutneys ácidos, mezclados justo antes de comer.",
+      "El papdi chaat alterna obleas crujientes con patata, garbanzos, yogur y chutneys dulce y verde."
+     ],
+     "q": "¿Qué sabor te encanta más: dulce, ácido, picante o crujiente?",
+     "c": "Haz hoy un mini chaat: mezcla algo crujiente, algo blando, un poco de yogur y una salsa ácida."
+    },
+    "fr": {
+     "t": "La culture du chaat",
+     "g": "Explorer le chaat, la joyeuse famille indienne d'en-cas sucrés, acides, épicés et croquants.",
+     "p": [
+      "Le chaat mêle plein de textures dans un bol : croquant, moelleux, crémeux et juteux à la fois.",
+      "Le bhel puri associe riz soufflé, sev, oignon, tomate et chutneys acidulés, mélangés juste avant de manger.",
+      "Le papdi chaat superpose galettes croustillantes, pomme de terre, pois chiches, yaourt et chutneys."
+     ],
+     "q": "Quel goût préfères-tu : sucré, acide, épicé ou croquant ?",
+     "c": "Fais aujourd'hui un mini chaat : un élément croquant, un moelleux, un peu de yaourt et une sauce acidulée."
+    },
+    "it": {
+     "t": "La cultura del chaat",
+     "g": "Esplorare il chaat, la giocosa famiglia indiana di snack dolci, aspri, piccanti e croccanti.",
+     "p": [
+      "Il chaat mescola tante consistenze in una ciotola: croccante, morbido, cremoso e succoso insieme.",
+      "Il bhel puri unisce riso soffiato, sev, cipolla, pomodoro e chutney aspri, mescolati poco prima di mangiare.",
+      "Il papdi chaat alterna cialde croccanti, patate, ceci, yogurt e chutney dolce e verde."
+     ],
+     "q": "Quale gusto ami di più: dolce, aspro, piccante o croccante?",
+     "c": "Prepara oggi un mini chaat: mescola qualcosa di croccante, qualcosa di morbido, un po' di yogurt e una salsa aspra."
+    },
+    "pt": {
+     "t": "A cultura do chaat",
+     "g": "Explorar o chaat, a divertida família indiana de petiscos doces, ácidos, picantes e estaladiços.",
+     "p": [
+      "O chaat mistura muitas texturas numa taça: estaladiço, macio, cremoso e suculento ao mesmo tempo.",
+      "O bhel puri junta arroz tufado, sev, cebola, tomate e chutneys ácidos, misturados logo antes de comer.",
+      "O papdi chaat alterna bolachinhas estaladiças com batata, grão, iogurte e chutneys doce e verde."
+     ],
+     "q": "Que sabor adoras mais: doce, ácido, picante ou estaladiço?",
+     "c": "Faz hoje um mini chaat: mistura algo estaladiço, algo macio, um pouco de iogurte e um molho ácido."
+    },
+    "pt_BR": {
+     "t": "A cultura do chaat",
+     "g": "Explorar o chaat, a divertida família indiana de petiscos doces, azedos, picantes e crocantes.",
+     "p": [
+      "O chaat mistura muitas texturas numa tigela: crocante, macio, cremoso e suculento ao mesmo tempo.",
+      "O bhel puri junta arroz tufado, sev, cebola, tomate e chutneys azedinhos, misturados na hora de comer.",
+      "O papdi chaat alterna biscoitinhos crocantes com batata, grão-de-bico, iogurte e chutneys doce e verde."
+     ],
+     "q": "Que sabor você ama mais: doce, azedo, picante ou crocante?",
+     "c": "Faça hoje um mini chaat: misture algo crocante, algo macio, um pouco de iogurte e um molho azedinho."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Masala chai on the street",
+     "g": "Meet the chai wallah and India's warming spiced tea.",
+     "p": [
+      "Masala chai is black tea boiled with milk, sugar and spices like cardamom, ginger and cinnamon.",
+      "Chai wallahs brew it all day at stalls and stations, often pouring from a height to make it frothy.",
+      "It comes in small glasses or in kulhad, simple clay cups that give the tea an earthy touch."
+     ],
+     "q": "What warm drink do you love on a busy day?",
+     "c": "Brew a cup of tea today with milk and one spice, like cardamom, ginger or cinnamon, and describe the taste."
+    },
+    "de": {
+     "t": "Masala Chai auf der Straße",
+     "g": "Den Chai Wallah und Indiens wärmenden Gewürztee kennenlernen.",
+     "p": [
+      "Masala Chai ist Schwarztee, mit Milch, Zucker und Gewürzen wie Kardamom, Ingwer und Zimt aufgekocht.",
+      "Chai Wallahs brühen ihn den ganzen Tag an Ständen und Bahnhöfen und gießen ihn oft aus der Höhe, damit er schäumt.",
+      "Er kommt in kleinen Gläsern oder in Kulhad, einfachen Tonbechern, die dem Tee eine erdige Note geben."
+     ],
+     "q": "Welches warme Getränk liebst du an einem vollen Tag?",
+     "c": "Brüh heute eine Tasse Tee mit Milch und einem Gewürz wie Kardamom, Ingwer oder Zimt und beschreibe den Geschmack."
+    },
+    "es": {
+     "t": "Masala chai en la calle",
+     "g": "Conocer al chai wallah y el reconfortante té especiado de la India.",
+     "p": [
+      "El masala chai es té negro hervido con leche, azúcar y especias como cardamomo, jengibre y canela.",
+      "Los chai wallahs lo preparan todo el día en puestos y estaciones, a menudo vertiéndolo desde lo alto para darle espuma.",
+      "Se sirve en vasitos o en kulhad, sencillas tazas de barro que dan al té un toque terroso."
+     ],
+     "q": "¿Qué bebida caliente te encanta en un día ajetreado?",
+     "c": "Prepara hoy un té con leche y una especia, como cardamomo, jengibre o canela, y describe su sabor."
+    },
+    "fr": {
+     "t": "Le masala chai dans la rue",
+     "g": "Rencontrer le chai wallah et le thé épicé réconfortant de l'Inde.",
+     "p": [
+      "Le masala chai est un thé noir bouilli avec du lait, du sucre et des épices comme cardamome, gingembre et cannelle.",
+      "Les chai wallahs le préparent toute la journée aux stands et gares, souvent versé de haut pour le faire mousser.",
+      "Il est servi en petits verres ou en kulhad, de simples tasses en terre cuite au goût légèrement terreux."
+     ],
+     "q": "Quelle boisson chaude adores-tu les jours chargés ?",
+     "c": "Prépare aujourd'hui un thé au lait avec une épice, cardamome, gingembre ou cannelle, et décris son goût."
+    },
+    "it": {
+     "t": "Masala chai per strada",
+     "g": "Conoscere il chai wallah e il caldo tè speziato dell'India.",
+     "p": [
+      "Il masala chai è tè nero bollito con latte, zucchero e spezie come cardamomo, zenzero e cannella.",
+      "I chai wallah lo preparano tutto il giorno a chioschi e stazioni, spesso versandolo dall'alto per farlo schiumare.",
+      "Si serve in bicchierini o nei kulhad, semplici tazze di terracotta che danno al tè una nota terrosa."
+     ],
+     "q": "Quale bevanda calda ami in una giornata piena?",
+     "c": "Prepara oggi un tè con latte e una spezia, come cardamomo, zenzero o cannella, e descrivine il sapore."
+    },
+    "pt": {
+     "t": "Masala chai na rua",
+     "g": "Conhecer o chai wallah e o reconfortante chá condimentado da Índia.",
+     "p": [
+      "O masala chai é chá preto fervido com leite, açúcar e especiarias como cardamomo, gengibre e canela.",
+      "Os chai wallahs fazem-no o dia todo em bancas e estações, muitas vezes deitando-o do alto para fazer espuma.",
+      "Serve-se em copinhos ou em kulhad, simples copos de barro que dão ao chá um toque terroso."
+     ],
+     "q": "Que bebida quente adoras num dia cheio?",
+     "c": "Faz hoje um chá com leite e uma especiaria, como cardamomo, gengibre ou canela, e descreve o sabor."
+    },
+    "pt_BR": {
+     "t": "Masala chai na rua",
+     "g": "Conhecer o chai wallah e o chá temperado e reconfortante da Índia.",
+     "p": [
+      "O masala chai é chá preto fervido com leite, açúcar e especiarias como cardamomo, gengibre e canela.",
+      "Os chai wallahs preparam o chá o dia todo em barracas e estações, muitas vezes servindo do alto para fazer espuma.",
+      "Ele vem em copinhos ou em kulhad, simples copos de barro que dão ao chá um toque terroso."
+     ],
+     "q": "Que bebida quente você adora num dia corrido?",
+     "c": "Prepare hoje um chá com leite e uma especiaria, como cardamomo, gengibre ou canela, e descreva o sabor."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doner kebab",
+     "g": "Follow the doner kebab from Turkey to the streets of Berlin.",
+     "p": [
+      "Doner means turning in Turkish: seasoned meat roasts slowly on a vertical rotating spit.",
+      "Thin slices are shaved off as they crisp, a style with deep roots in Ottoman and Turkish cooking.",
+      "In Berlin, Turkish immigrants made doner in bread with salad and sauces a beloved fast meal."
+     ],
+     "q": "Do you like your wraps and sandwiches loaded with salad or simple?",
+     "c": "Build a doner-style sandwich today with sliced grilled meat or vegetables, salad and a yogurt sauce."
+    },
+    "de": {
+     "t": "Döner Kebab",
+     "g": "Dem Döner von der Türkei bis auf die Straßen Berlins folgen.",
+     "p": [
+      "Döner heißt auf Türkisch sich drehend: Gewürztes Fleisch brät langsam an einem senkrechten Drehspieß.",
+      "Dünne Scheiben werden abgeschnitten, sobald sie knusprig sind, ein Stil mit tiefen Wurzeln in der türkischen Küche.",
+      "In Berlin machten türkische Einwanderer den Döner im Brot mit Salat und Soßen zu einem beliebten schnellen Essen."
+     ],
+     "q": "Magst du Wraps und Sandwiches lieber üppig mit Salat oder schlicht?",
+     "c": "Bau heute ein Sandwich im Döner-Stil mit gegrilltem Fleisch oder Gemüse, Salat und Joghurtsoße."
+    },
+    "es": {
+     "t": "Doner kebab",
+     "g": "Seguir el doner kebab desde Turquía hasta las calles de Berlín.",
+     "p": [
+      "Döner significa que gira en turco: la carne sazonada se asa despacio en un asador vertical giratorio.",
+      "Se cortan láminas finas a medida que se tuestan, un estilo con raíces profundas en la cocina otomana y turca.",
+      "En Berlín, inmigrantes turcos convirtieron el doner en pan con ensalada y salsas en una comida rápida muy querida."
+     ],
+     "q": "¿Te gustan los wraps y bocadillos cargados de ensalada o sencillos?",
+     "c": "Prepara hoy un bocadillo estilo doner con carne o verduras a la plancha en láminas, ensalada y salsa de yogur."
+    },
+    "fr": {
+     "t": "Le döner kebab",
+     "g": "Suivre le döner kebab de la Turquie jusqu'aux rues de Berlin.",
+     "p": [
+      "Döner veut dire qui tourne en turc : la viande assaisonnée rôtit lentement sur une broche verticale tournante.",
+      "On en tranche de fines lamelles à mesure qu'elles dorent, un style aux racines profondes dans la cuisine ottomane et turque.",
+      "À Berlin, des immigrés turcs ont fait du döner en pain avec salade et sauces un repas rapide adoré."
+     ],
+     "q": "Aimes-tu tes wraps et sandwichs bien garnis de crudités ou simples ?",
+     "c": "Compose aujourd'hui un sandwich façon döner avec viande ou légumes grillés émincés, salade et sauce au yaourt."
+    },
+    "it": {
+     "t": "Doner kebab",
+     "g": "Seguire il doner kebab dalla Turchia alle strade di Berlino.",
+     "p": [
+      "Döner in turco significa che gira: la carne speziata arrostisce lentamente su uno spiedo verticale rotante.",
+      "Si tagliano fettine sottili appena diventano croccanti, uno stile con radici profonde nella cucina ottomana e turca.",
+      "A Berlino gli immigrati turchi hanno reso il doner nel pane con insalata e salse un amato pasto veloce."
+     ],
+     "q": "Ti piacciono piadine e panini pieni di insalata o semplici?",
+     "c": "Prepara oggi un panino in stile doner con carne o verdure grigliate a fettine, insalata e salsa allo yogurt."
+    },
+    "pt": {
+     "t": "Doner kebab",
+     "g": "Seguir o doner kebab da Turquia até às ruas de Berlim.",
+     "p": [
+      "Döner significa a girar em turco: a carne temperada assa lentamente num espeto vertical rotativo.",
+      "Cortam-se fatias finas à medida que ficam estaladiças, um estilo com raízes profundas na cozinha otomana e turca.",
+      "Em Berlim, imigrantes turcos tornaram o doner no pão com salada e molhos uma refeição rápida adorada."
+     ],
+     "q": "Gostas de wraps e sanduíches cheios de salada ou simples?",
+     "c": "Faz hoje uma sanduíche estilo doner com carne ou legumes grelhados em fatias, salada e molho de iogurte."
+    },
+    "pt_BR": {
+     "t": "Doner kebab",
+     "g": "Seguir o doner kebab da Turquia até as ruas de Berlim.",
+     "p": [
+      "Döner quer dizer girando em turco: a carne temperada assa devagar num espeto vertical giratório.",
+      "Fatias finas são cortadas conforme douram, um estilo com raízes profundas na cozinha otomana e turca.",
+      "Em Berlim, imigrantes turcos transformaram o doner no pão com salada e molhos numa refeição rápida adorada."
+     ],
+     "q": "Você gosta de wraps e sanduíches cheios de salada ou simples?",
+     "c": "Monte hoje um sanduíche estilo doner com carne ou legumes grelhados fatiados, salada e molho de iogurte."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simit",
+     "g": "Meet Istanbul's sesame bread ring, sold from carts on almost every corner.",
+     "p": [
+      "Simit is a ring of dough dipped in grape molasses, then covered in sesame seeds and baked.",
+      "The molasses gives it a deep golden colour and a crunchy crust with a soft inside.",
+      "Vendors carry simit on trays or sell it from red carts, and many enjoy it with a glass of tea."
+     ],
+     "q": "What do you like to eat with your morning drink?",
+     "c": "Toast some bread with sesame seeds today, enjoy it with a cup of tea and note the nutty flavour."
+    },
+    "de": {
+     "t": "Simit",
+     "g": "Istanbuls Sesamkringel kennenlernen, den man an fast jeder Ecke von Wagen kauft.",
+     "p": [
+      "Simit ist ein Teigring, in Traubensirup getaucht, mit Sesam bedeckt und gebacken.",
+      "Der Sirup gibt ihm eine tief goldene Farbe und eine knusprige Kruste mit weichem Inneren.",
+      "Händler tragen Simit auf Tabletts oder verkaufen sie an roten Wagen, viele genießen sie mit einem Glas Tee."
+     ],
+     "q": "Was isst du gern zu deinem Morgengetränk?",
+     "c": "Röste heute Brot mit Sesam, genieß es mit einer Tasse Tee und achte auf das nussige Aroma."
+    },
+    "es": {
+     "t": "Simit",
+     "g": "Conocer el aro de pan con sésamo de Estambul, vendido en carritos en casi cada esquina.",
+     "p": [
+      "El simit es un aro de masa bañado en melaza de uva, cubierto de sésamo y horneado.",
+      "La melaza le da un color dorado intenso y una corteza crujiente con el interior tierno.",
+      "Los vendedores lo llevan en bandejas o carritos rojos, y muchos lo disfrutan con un vaso de té."
+     ],
+     "q": "¿Qué te gusta comer con tu bebida de la mañana?",
+     "c": "Tuesta hoy pan con sésamo, disfrútalo con una taza de té y fíjate en su sabor a frutos secos."
+    },
+    "fr": {
+     "t": "Le simit",
+     "g": "Découvrir l'anneau de pain au sésame d'Istanbul, vendu sur des charrettes à presque chaque coin de rue.",
+     "p": [
+      "Le simit est un anneau de pâte trempé dans de la mélasse de raisin, couvert de sésame puis cuit.",
+      "La mélasse lui donne une belle couleur dorée et une croûte croustillante au cœur moelleux.",
+      "Les vendeurs le portent sur des plateaux ou le vendent dans des chariots rouges, souvent avec un verre de thé."
+     ],
+     "q": "Qu'aimes-tu manger avec ta boisson du matin ?",
+     "c": "Fais griller du pain au sésame aujourd'hui, savoure-le avec une tasse de thé et note son goût de noisette."
+    },
+    "it": {
+     "t": "Simit",
+     "g": "Conoscere la ciambella di pane al sesamo di Istanbul, venduta dai carretti quasi a ogni angolo.",
+     "p": [
+      "Il simit è un anello di pasta immerso nella melassa d'uva, ricoperto di sesamo e cotto in forno.",
+      "La melassa gli dà un colore dorato intenso e una crosta croccante con l'interno morbido.",
+      "I venditori lo portano su vassoi o lo vendono da carretti rossi, e molti lo gustano con un bicchiere di tè."
+     ],
+     "q": "Cosa ti piace mangiare con la bevanda del mattino?",
+     "c": "Tosta oggi del pane con sesamo, gustalo con una tazza di tè e nota il suo sapore di frutta secca."
+    },
+    "pt": {
+     "t": "Simit",
+     "g": "Conhecer a rosca de pão com sésamo de Istambul, vendida em carrinhos em quase todas as esquinas.",
+     "p": [
+      "O simit é uma rosca de massa mergulhada em melaço de uva, coberta de sésamo e cozida no forno.",
+      "O melaço dá-lhe uma cor dourada intensa e uma crosta estaladiça com o interior macio.",
+      "Os vendedores levam-no em tabuleiros ou vendem-no em carrinhos vermelhos, e muitos comem-no com um copo de chá."
+     ],
+     "q": "O que gostas de comer com a tua bebida da manhã?",
+     "c": "Torra hoje pão com sésamo, come-o com uma chávena de chá e repara no sabor a frutos secos."
+    },
+    "pt_BR": {
+     "t": "Simit",
+     "g": "Conhecer a rosca de pão com gergelim de Istambul, vendida em carrinhos em quase toda esquina.",
+     "p": [
+      "O simit é uma rosca de massa mergulhada em melaço de uva, coberta de gergelim e assada.",
+      "O melaço dá uma cor dourada intensa e uma casca crocante com o miolo macio.",
+      "Os vendedores levam o simit em bandejas ou carrinhos vermelhos, e muita gente come com um copo de chá."
+     ],
+     "q": "O que você gosta de comer com a bebida da manhã?",
+     "c": "Torre hoje um pão com gergelim, coma com uma xícara de chá e repare no sabor de castanha."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first tastes",
+     "g": "Look back at your first month of street food and pick your favourites.",
+     "p": [
+      "You learned how to spot a great stall, stay safe and order politely with a few key words.",
+      "You travelled through Mexico, Thailand, Vietnam, India and Turkey, dish by dish.",
+      "Your street food diary now holds memories you can share with friends and fellow travellers."
+     ],
+     "q": "Which three dishes from this month would you most like to taste, and why?",
+     "c": "Write your top three dishes so far in your diary, with one sentence about what you liked in each."
+    },
+    "de": {
+     "t": "Rückblick: erste Kostproben",
+     "g": "Auf deinen ersten Streetfood-Monat zurückblicken und deine Favoriten wählen.",
+     "p": [
+      "Du hast gelernt, gute Stände zu erkennen, sicher zu essen und mit ein paar Wörtern höflich zu bestellen.",
+      "Du bist Gericht für Gericht durch Mexiko, Thailand, Vietnam, Indien und die Türkei gereist.",
+      "Dein Streetfood-Tagebuch hält jetzt Erinnerungen, die du mit Freunden und Reisenden teilen kannst."
+     ],
+     "q": "Welche drei Gerichte dieses Monats würdest du am liebsten probieren und warum?",
+     "c": "Schreib deine drei Lieblingsgerichte bisher ins Tagebuch, mit einem Satz, was dir an jedem gefällt."
+    },
+    "es": {
+     "t": "Repaso: primeros sabores",
+     "g": "Mirar atrás a tu primer mes de comida callejera y elegir tus favoritos.",
+     "p": [
+      "Aprendiste a reconocer un buen puesto, comer seguro y pedir con educación con unas pocas palabras.",
+      "Recorriste México, Tailandia, Vietnam, India y Turquía, plato a plato.",
+      "Tu diario ya guarda recuerdos que puedes compartir con amigos y otros viajeros."
+     ],
+     "q": "¿Qué tres platos de este mes te gustaría más probar y por qué?",
+     "c": "Escribe en tu diario tus tres platos favoritos hasta ahora, con una frase sobre lo que te gustó de cada uno."
+    },
+    "fr": {
+     "t": "Bilan : premières saveurs",
+     "g": "Revenir sur ton premier mois de cuisine de rue et choisir tes favoris.",
+     "p": [
+      "Tu as appris à repérer un bon stand, à manger sans risque et à commander poliment avec quelques mots.",
+      "Tu as voyagé au Mexique, en Thaïlande, au Vietnam, en Inde et en Turquie, plat après plat.",
+      "Ton carnet contient déjà des souvenirs à partager avec amis et voyageurs."
+     ],
+     "q": "Quels trois plats de ce mois aimerais-tu le plus goûter, et pourquoi ?",
+     "c": "Note dans ton carnet tes trois plats préférés jusqu'ici, avec une phrase sur ce qui t'a plu dans chacun."
+    },
+    "it": {
+     "t": "Ripasso: primi assaggi",
+     "g": "Ripercorrere il tuo primo mese di cibo di strada e scegliere i tuoi preferiti.",
+     "p": [
+      "Hai imparato a riconoscere un buon chiosco, a mangiare sicuro e a ordinare con gentilezza con poche parole.",
+      "Hai viaggiato in Messico, Thailandia, Vietnam, India e Turchia, piatto dopo piatto.",
+      "Il tuo diario custodisce già ricordi da condividere con amici e altri viaggiatori."
+     ],
+     "q": "Quali tre piatti di questo mese ti piacerebbe di più assaggiare, e perché?",
+     "c": "Scrivi nel diario i tuoi tre piatti preferiti finora, con una frase su cosa ti è piaciuto di ciascuno."
+    },
+    "pt": {
+     "t": "Revisão: primeiros sabores",
+     "g": "Olhar para o teu primeiro mês de comida de rua e escolher os teus favoritos.",
+     "p": [
+      "Aprendeste a reconhecer uma boa banca, a comer em segurança e a pedir com educação com poucas palavras.",
+      "Viajaste pelo México, Tailândia, Vietname, Índia e Turquia, prato a prato.",
+      "O teu diário já guarda memórias para partilhar com amigos e outros viajantes."
+     ],
+     "q": "Que três pratos deste mês mais gostavas de provar e porquê?",
+     "c": "Escreve no diário os teus três pratos favoritos até agora, com uma frase sobre o que gostaste em cada um."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros sabores",
+     "g": "Olhar para o seu primeiro mês de comida de rua e escolher seus favoritos.",
+     "p": [
+      "Você aprendeu a reconhecer uma boa barraca, comer com segurança e pedir com educação usando poucas palavras.",
+      "Você viajou pelo México, Tailândia, Vietnã, Índia e Turquia, prato a prato.",
+      "Seu diário já guarda lembranças para compartilhar com amigos e outros viajantes."
+     ],
+     "q": "Quais três pratos deste mês você mais gostaria de provar, e por quê?",
+     "c": "Anote no diário seus três pratos favoritos até agora, com uma frase sobre o que gostou em cada um."
+    }
+   }
+  }
+ ]
+}

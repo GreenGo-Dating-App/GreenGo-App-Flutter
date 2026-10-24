@@ -1,0 +1,835 @@
+{
+ "topic": "photography",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Point of view and story",
+     "g": "See how camera height and distance change what a photo says about its subject.",
+     "p": [
+      "Shooting from below can make a subject feel powerful; from above, small or vulnerable; at eye level, equal.",
+      "Distance tells a story too: far away shows context and place, close up shows emotion and detail.",
+      "Before shooting, decide what you want to say, then choose the height and distance that say it."
+     ],
+     "q": "What story would you like to tell about your street, home or favourite place?",
+     "c": "Photograph one subject three ways to tell three stories: powerful from below, small from above, intimate up close."
+    },
+    "de": {
+     "t": "Blickwinkel und Geschichte",
+     "g": "Sieh, wie Kamerahöhe und Abstand verändern, was ein Foto über sein Motiv erzählt.",
+     "p": [
+      "Von unten wirkt ein Motiv mächtig, von oben klein oder verletzlich, auf Augenhöhe ebenbürtig.",
+      "Auch Abstand erzählt: Aus der Ferne zeigst du Umgebung und Ort, aus der Nähe Gefühl und Details.",
+      "Entscheide vor dem Auslösen, was du sagen willst, und wähle dann Höhe und Abstand, die es sagen."
+     ],
+     "q": "Welche Geschichte würdest du gern über deine Straße, dein Zuhause oder deinen Lieblingsort erzählen?",
+     "c": "Fotografiere ein Motiv dreimal für drei Geschichten: mächtig von unten, klein von oben, nah und vertraut."
+    },
+    "es": {
+     "t": "Punto de vista e historia",
+     "g": "Descubre cómo la altura y la distancia de la cámara cambian lo que una foto dice de su sujeto.",
+     "p": [
+      "Desde abajo un sujeto parece poderoso; desde arriba, pequeño o vulnerable; a la altura de los ojos, un igual.",
+      "La distancia también cuenta: de lejos muestra contexto y lugar, de cerca emoción y detalle.",
+      "Antes de disparar, decide qué quieres decir y elige la altura y la distancia que lo cuenten."
+     ],
+     "q": "¿Qué historia te gustaría contar sobre tu calle, tu casa o tu lugar favorito?",
+     "c": "Fotografía un sujeto de tres maneras para contar tres historias: poderoso desde abajo, pequeño desde arriba, íntimo de cerca."
+    },
+    "fr": {
+     "t": "Point de vue et récit",
+     "g": "Vois comment la hauteur et la distance de l'appareil changent ce qu'une photo dit de son sujet.",
+     "p": [
+      "Vu d'en bas, un sujet paraît puissant ; d'en haut, petit ou fragile ; à hauteur des yeux, un égal.",
+      "La distance raconte aussi : de loin, elle montre le contexte et le lieu ; de près, l'émotion et le détail.",
+      "Avant de déclencher, décide ce que tu veux dire, puis choisis la hauteur et la distance qui le disent."
+     ],
+     "q": "Quelle histoire aimerais-tu raconter sur ta rue, ta maison ou ton lieu préféré ?",
+     "c": "Photographie un sujet de trois façons pour trois récits : puissant d'en bas, petit d'en haut, intime de près."
+    },
+    "it": {
+     "t": "Punto di vista e racconto",
+     "g": "Scopri come altezza e distanza della fotocamera cambiano ciò che una foto dice del soggetto.",
+     "p": [
+      "Dal basso un soggetto sembra potente; dall'alto piccolo o vulnerabile; all'altezza degli occhi un pari.",
+      "Anche la distanza racconta: da lontano mostra contesto e luogo, da vicino emozione e dettaglio.",
+      "Prima di scattare decidi cosa vuoi dire, poi scegli altezza e distanza che lo raccontino."
+     ],
+     "q": "Quale storia ti piacerebbe raccontare sulla tua strada, la tua casa o il tuo luogo preferito?",
+     "c": "Fotografa un soggetto in tre modi per tre storie: potente dal basso, piccolo dall'alto, intimo da vicino."
+    },
+    "pt": {
+     "t": "Ponto de vista e história",
+     "g": "Vê como a altura e a distância da câmara mudam o que uma foto diz sobre o motivo.",
+     "p": [
+      "De baixo, um motivo parece poderoso; de cima, pequeno ou vulnerável; à altura dos olhos, um igual.",
+      "A distância também conta: de longe mostra contexto e lugar, de perto emoção e detalhe.",
+      "Antes de disparar, decide o que queres dizer e escolhe a altura e a distância que o contam."
+     ],
+     "q": "Que história gostavas de contar sobre a tua rua, a tua casa ou o teu sítio favorito?",
+     "c": "Fotografa um motivo de três maneiras para contar três histórias: poderoso de baixo, pequeno de cima, íntimo de perto."
+    },
+    "pt_BR": {
+     "t": "Ponto de vista e história",
+     "g": "Veja como a altura e a distância da câmera mudam o que uma foto diz sobre o assunto.",
+     "p": [
+      "De baixo, o assunto parece poderoso; de cima, pequeno ou vulnerável; na altura dos olhos, um igual.",
+      "A distância também conta: de longe mostra contexto e lugar, de perto emoção e detalhe.",
+      "Antes de disparar, decida o que quer dizer e escolha a altura e a distância que contam isso."
+     ],
+     "q": "Que história você gostaria de contar sobre sua rua, sua casa ou seu lugar favorito?",
+     "c": "Fotografe um assunto de três jeitos para três histórias: poderoso de baixo, pequeno de cima, íntimo de perto."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scale and size",
+     "g": "Include a person or familiar object to show how big something really is.",
+     "p": [
+      "Without a reference, a mountain, tree or waterfall can look surprisingly small in a photo.",
+      "A small figure, a bicycle, a door or a car gives viewers an instant sense of real size.",
+      "For travel photos, ask a companion to stand in the scene, or wait for passers-by far enough away to stay anonymous."
+     ],
+     "q": "What huge or tiny thing have you seen that a photo never quite captured?",
+     "c": "Photograph a big object, like a tree or building, once alone and once with a person or familiar object for scale."
+    },
+    "de": {
+     "t": "Maßstab und Größe",
+     "g": "Bring eine Person oder einen vertrauten Gegenstand ins Bild, um echte Größe zu zeigen.",
+     "p": [
+      "Ohne Bezugspunkt wirken Berg, Baum oder Wasserfall auf Fotos oft überraschend klein.",
+      "Eine kleine Figur, ein Fahrrad, eine Tür oder ein Auto vermitteln sofort ein Gefühl für die wahre Größe.",
+      "Bitte auf Reisen eine Begleitung ins Bild oder warte auf Passanten, die weit genug weg und anonym bleiben."
+     ],
+     "q": "Welches riesige oder winzige Ding hast du gesehen, das ein Foto nie richtig eingefangen hat?",
+     "c": "Fotografiere etwas Großes, etwa einen Baum oder ein Gebäude, einmal allein und einmal mit Person oder Gegenstand als Maßstab."
+    },
+    "es": {
+     "t": "Escala y tamaño",
+     "g": "Incluye a una persona o un objeto conocido para mostrar lo grande que es algo en realidad.",
+     "p": [
+      "Sin una referencia, una montaña, un árbol o una cascada pueden parecer sorprendentemente pequeños en una foto.",
+      "Una figura pequeña, una bicicleta, una puerta o un coche dan al instante una idea del tamaño real.",
+      "De viaje, pide a un acompañante que se ponga en la escena o espera a transeúntes lo bastante lejos para ser anónimos."
+     ],
+     "q": "¿Qué cosa enorme o diminuta has visto que una foto nunca logró captar del todo?",
+     "c": "Fotografía algo grande, como un árbol o un edificio, una vez solo y otra con una persona u objeto conocido como escala."
+    },
+    "fr": {
+     "t": "Échelle et taille",
+     "g": "Inclue une personne ou un objet familier pour montrer la vraie taille d'une chose.",
+     "p": [
+      "Sans repère, une montagne, un arbre ou une cascade peuvent paraître étonnamment petits en photo.",
+      "Une petite silhouette, un vélo, une porte ou une voiture donnent aussitôt une idée de la taille réelle.",
+      "En voyage, demande à un proche de se placer dans la scène, ou attends des passants assez loin pour rester anonymes."
+     ],
+     "q": "Quelle chose immense ou minuscule as-tu vue sans jamais réussir à la rendre en photo ?",
+     "c": "Photographie un grand élément, comme un arbre ou un bâtiment, seul puis avec une personne ou un objet familier pour l'échelle."
+    },
+    "it": {
+     "t": "Scala e dimensioni",
+     "g": "Includi una persona o un oggetto familiare per mostrare quanto è grande davvero qualcosa.",
+     "p": [
+      "Senza un riferimento, una montagna, un albero o una cascata possono sembrare sorprendentemente piccoli in foto.",
+      "Una piccola figura, una bicicletta, una porta o un'auto danno subito un'idea della dimensione reale.",
+      "In viaggio chiedi a un compagno di entrare nella scena, o aspetta passanti abbastanza lontani da restare anonimi."
+     ],
+     "q": "Quale cosa enorme o minuscola hai visto che una foto non è mai riuscita a rendere?",
+     "c": "Fotografa qualcosa di grande, come un albero o un edificio, una volta da solo e una con una persona o un oggetto come scala."
+    },
+    "pt": {
+     "t": "Escala e tamanho",
+     "g": "Inclui uma pessoa ou um objeto conhecido para mostrar o tamanho real de algo.",
+     "p": [
+      "Sem uma referência, uma montanha, uma árvore ou uma cascata podem parecer surpreendentemente pequenas numa foto.",
+      "Uma figura pequena, uma bicicleta, uma porta ou um carro dão logo uma ideia do tamanho real.",
+      "Em viagem, pede a quem te acompanha que entre na cena, ou espera por pessoas longe o suficiente para ficarem anónimas."
+     ],
+     "q": "Que coisa enorme ou minúscula já viste que uma foto nunca conseguiu captar bem?",
+     "c": "Fotografa algo grande, como uma árvore ou um edifício, uma vez sozinho e outra com uma pessoa ou objeto como escala."
+    },
+    "pt_BR": {
+     "t": "Escala e tamanho",
+     "g": "Inclua uma pessoa ou um objeto conhecido para mostrar o tamanho real de algo.",
+     "p": [
+      "Sem referência, uma montanha, uma árvore ou uma cachoeira podem parecer surpreendentemente pequenas na foto.",
+      "Uma figura pequena, uma bicicleta, uma porta ou um carro dão na hora a noção do tamanho real.",
+      "Em viagem, peça a quem está com você para entrar na cena, ou espere pessoas longe o bastante para ficarem anônimas."
+     ],
+     "q": "Que coisa enorme ou minúscula você já viu que uma foto nunca conseguiu captar direito?",
+     "c": "Fotografe algo grande, como uma árvore ou um prédio, uma vez sozinho e outra com uma pessoa ou objeto como escala."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Texture",
+     "g": "Bring out rough, smooth and soft surfaces using light that comes from the side.",
+     "p": [
+      "Side light skims across a surface and creates tiny shadows that reveal its texture.",
+      "Front light, coming from behind you, flattens texture; low morning or evening sun is ideal for it.",
+      "Get close and fill the frame with bark, stone, fabric, sand or peeling paint."
+     ],
+     "q": "Which surface around you has a texture you would love to show in a photo?",
+     "c": "Photograph one textured surface with light from the front and from the side, and compare how much detail appears."
+    },
+    "de": {
+     "t": "Textur",
+     "g": "Bring raue, glatte und weiche Oberflächen mit seitlichem Licht zur Geltung.",
+     "p": [
+      "Seitenlicht streift über eine Oberfläche und erzeugt winzige Schatten, die ihre Struktur zeigen.",
+      "Frontlicht von hinten macht Texturen flach; tief stehende Morgen- oder Abendsonne ist ideal.",
+      "Geh nah heran und füll das Bild mit Rinde, Stein, Stoff, Sand oder abblätternder Farbe."
+     ],
+     "q": "Welche Oberfläche um dich herum hat eine Textur, die du gern im Foto zeigen würdest?",
+     "c": "Fotografiere eine strukturierte Oberfläche mit Licht von vorn und von der Seite und vergleiche, wie viele Details sichtbar werden."
+    },
+    "es": {
+     "t": "Textura",
+     "g": "Resalta superficies rugosas, lisas y suaves con luz que llegue de lado.",
+     "p": [
+      "La luz lateral roza la superficie y crea pequeñas sombras que revelan su textura.",
+      "La luz frontal, que viene de detrás de ti, aplana la textura; el sol bajo de la mañana o la tarde es ideal.",
+      "Acércate y llena el encuadre con corteza, piedra, tela, arena o pintura desconchada."
+     ],
+     "q": "¿Qué superficie a tu alrededor tiene una textura que te encantaría mostrar en una foto?",
+     "c": "Fotografía una superficie con textura con luz frontal y luego lateral, y compara cuánto detalle aparece."
+    },
+    "fr": {
+     "t": "La texture",
+     "g": "Fais ressortir les surfaces rugueuses, lisses et douces grâce à une lumière latérale.",
+     "p": [
+      "La lumière latérale rase la surface et crée de minuscules ombres qui révèlent sa texture.",
+      "La lumière de face, venant de derrière toi, écrase la texture ; le soleil bas du matin ou du soir est idéal.",
+      "Approche-toi et remplis le cadre d'écorce, de pierre, de tissu, de sable ou de peinture écaillée."
+     ],
+     "q": "Quelle surface autour de toi a une texture que tu aimerais montrer en photo ?",
+     "c": "Photographie une surface texturée avec une lumière de face puis de côté, et compare la quantité de détails."
+    },
+    "it": {
+     "t": "Texture",
+     "g": "Fai risaltare superfici ruvide, lisce e morbide con una luce che arriva di lato.",
+     "p": [
+      "La luce laterale sfiora la superficie e crea piccole ombre che ne rivelano la texture.",
+      "La luce frontale, che arriva da dietro di te, appiattisce la texture; il sole basso del mattino o della sera è ideale.",
+      "Avvicinati e riempi l'inquadratura con corteccia, pietra, tessuto, sabbia o vernice scrostata."
+     ],
+     "q": "Quale superficie intorno a te ha una texture che ti piacerebbe mostrare in una foto?",
+     "c": "Fotografa una superficie con texture con luce frontale e poi laterale, e confronta quanto dettaglio appare."
+    },
+    "pt": {
+     "t": "Textura",
+     "g": "Realça superfícies rugosas, lisas e macias com luz que venha de lado.",
+     "p": [
+      "A luz lateral desliza pela superfície e cria pequenas sombras que revelam a sua textura.",
+      "A luz frontal, vinda de trás de ti, achata a textura; o sol baixo da manhã ou do fim da tarde é ideal.",
+      "Aproxima-te e enche o enquadramento com casca de árvore, pedra, tecido, areia ou tinta a descascar."
+     ],
+     "q": "Que superfície à tua volta tem uma textura que gostavas de mostrar numa foto?",
+     "c": "Fotografa uma superfície com textura com luz de frente e depois de lado e compara quanto detalhe aparece."
+    },
+    "pt_BR": {
+     "t": "Textura",
+     "g": "Destaque superfícies ásperas, lisas e macias com luz vindo de lado.",
+     "p": [
+      "A luz lateral desliza pela superfície e cria pequenas sombras que revelam sua textura.",
+      "A luz frontal, vindo de trás de você, achata a textura; o sol baixo da manhã ou do fim da tarde é ideal.",
+      "Chegue perto e encha o quadro com casca de árvore, pedra, tecido, areia ou tinta descascando."
+     ],
+     "q": "Que superfície ao seu redor tem uma textura que você adoraria mostrar numa foto?",
+     "c": "Fotografe uma superfície com textura com luz de frente e depois de lado e compare quanto detalhe aparece."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shapes and forms",
+     "g": "Train your eye to see circles, triangles and squares hidden in everyday scenes.",
+     "p": [
+      "Simple geometric shapes are easy for the eye to read and make a composition feel strong and clear.",
+      "Look for circles in wheels, plates and windows, triangles in roofs and stairs, squares in tiles and doors.",
+      "Isolate one shape against a plain background, or combine several to build a graphic image."
+     ],
+     "q": "Which shape do you notice most often around your home or city?",
+     "c": "Go on a shape hunt and photograph one clear circle, one triangle and one square in your surroundings."
+    },
+    "de": {
+     "t": "Formen und Körper",
+     "g": "Schule dein Auge, Kreise, Dreiecke und Quadrate in Alltagsszenen zu entdecken.",
+     "p": [
+      "Einfache geometrische Formen sind für das Auge leicht lesbar und machen eine Komposition klar und stark.",
+      "Such Kreise in Rädern, Tellern und Fenstern, Dreiecke in Dächern und Treppen, Quadrate in Fliesen und Türen.",
+      "Isoliere eine Form vor schlichtem Hintergrund oder kombiniere mehrere zu einem grafischen Bild."
+     ],
+     "q": "Welche Form fällt dir in deinem Zuhause oder deiner Stadt am häufigsten auf?",
+     "c": "Geh auf Formenjagd und fotografiere einen klaren Kreis, ein Dreieck und ein Quadrat in deiner Umgebung."
+    },
+    "es": {
+     "t": "Formas y figuras",
+     "g": "Entrena tu ojo para ver círculos, triángulos y cuadrados escondidos en escenas cotidianas.",
+     "p": [
+      "Las formas geométricas simples se leen con facilidad y dan fuerza y claridad a la composición.",
+      "Busca círculos en ruedas, platos y ventanas, triángulos en tejados y escaleras, cuadrados en azulejos y puertas.",
+      "Aísla una forma sobre un fondo liso, o combina varias para crear una imagen gráfica."
+     ],
+     "q": "¿Qué forma ves con más frecuencia en tu casa o tu ciudad?",
+     "c": "Sal a cazar formas y fotografía un círculo, un triángulo y un cuadrado claros en tu entorno."
+    },
+    "fr": {
+     "t": "Formes et volumes",
+     "g": "Entraîne ton œil à voir les cercles, triangles et carrés cachés dans les scènes du quotidien.",
+     "p": [
+      "Les formes géométriques simples se lisent facilement et rendent une composition forte et claire.",
+      "Cherche des cercles dans les roues, assiettes et hublots, des triangles dans les toits et escaliers, des carrés dans les carreaux et portes.",
+      "Isole une forme sur un fond uni, ou combines-en plusieurs pour créer une image graphique."
+     ],
+     "q": "Quelle forme remarques-tu le plus souvent chez toi ou dans ta ville ?",
+     "c": "Pars à la chasse aux formes et photographie un cercle, un triangle et un carré bien nets autour de toi."
+    },
+    "it": {
+     "t": "Forme e volumi",
+     "g": "Allena l'occhio a vedere cerchi, triangoli e quadrati nascosti nelle scene di tutti i giorni.",
+     "p": [
+      "Le forme geometriche semplici si leggono facilmente e rendono la composizione forte e chiara.",
+      "Cerca cerchi in ruote, piatti e finestre, triangoli in tetti e scale, quadrati in piastrelle e porte.",
+      "Isola una forma su uno sfondo semplice, oppure combinane diverse per creare un'immagine grafica."
+     ],
+     "q": "Quale forma noti più spesso in casa tua o nella tua città?",
+     "c": "Vai a caccia di forme e fotografa un cerchio, un triangolo e un quadrato ben chiari intorno a te."
+    },
+    "pt": {
+     "t": "Formas e volumes",
+     "g": "Treina o olhar para veres círculos, triângulos e quadrados escondidos em cenas do dia a dia.",
+     "p": [
+      "As formas geométricas simples leem-se com facilidade e tornam a composição forte e clara.",
+      "Procura círculos em rodas, pratos e janelas, triângulos em telhados e escadas, quadrados em azulejos e portas.",
+      "Isola uma forma sobre um fundo simples, ou combina várias para criar uma imagem gráfica."
+     ],
+     "q": "Que forma notas mais vezes em casa ou na tua cidade?",
+     "c": "Vai à caça de formas e fotografa um círculo, um triângulo e um quadrado bem claros à tua volta."
+    },
+    "pt_BR": {
+     "t": "Formas e volumes",
+     "g": "Treine o olho para ver círculos, triângulos e quadrados escondidos em cenas do dia a dia.",
+     "p": [
+      "Formas geométricas simples são fáceis de ler e deixam a composição forte e clara.",
+      "Procure círculos em rodas, pratos e janelas, triângulos em telhados e escadas, quadrados em azulejos e portas.",
+      "Isole uma forma num fundo simples, ou combine várias para criar uma imagem gráfica."
+     ],
+     "q": "Que forma você nota com mais frequência na sua casa ou cidade?",
+     "c": "Saia à caça de formas e fotografe um círculo, um triângulo e um quadrado bem claros ao seu redor."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour as the subject",
+     "g": "Build a photo around one strong colour that carries the whole image.",
+     "p": [
+      "A single bold colour, like a red door or a yellow umbrella, can become the subject on its own.",
+      "Surround it with neutral tones such as grey, white or black so it stands out even more.",
+      "Slightly lower exposure often makes colours look richer and deeper than bright, washed-out ones."
+     ],
+     "q": "What colour do you love most, and where could you find it today?",
+     "c": "Choose one colour in the morning and photograph five different things in that colour by the end of the day."
+    },
+    "de": {
+     "t": "Farbe als Motiv",
+     "g": "Gestalte ein Foto rund um eine starke Farbe, die das ganze Bild trägt.",
+     "p": [
+      "Eine einzige kräftige Farbe, etwa eine rote Tür oder ein gelber Schirm, kann allein das Motiv sein.",
+      "Umgib sie mit neutralen Tönen wie Grau, Weiß oder Schwarz, damit sie noch stärker hervorsticht.",
+      "Etwas knappere Belichtung lässt Farben oft satter und tiefer wirken als helle, ausgewaschene."
+     ],
+     "q": "Welche Farbe liebst du am meisten, und wo könntest du sie heute finden?",
+     "c": "Wähle morgens eine Farbe und fotografiere bis zum Abend fünf verschiedene Dinge in dieser Farbe."
+    },
+    "es": {
+     "t": "El color como sujeto",
+     "g": "Construye una foto alrededor de un color fuerte que sostenga toda la imagen.",
+     "p": [
+      "Un solo color intenso, como una puerta roja o un paraguas amarillo, puede ser el sujeto por sí mismo.",
+      "Rodéalo de tonos neutros como gris, blanco o negro para que destaque todavía más.",
+      "Bajar un poco la exposición suele hacer los colores más ricos y profundos que si salen claros y lavados."
+     ],
+     "q": "¿Qué color te gusta más y dónde podrías encontrarlo hoy?",
+     "c": "Elige un color por la mañana y fotografía cinco cosas distintas de ese color antes de que acabe el día."
+    },
+    "fr": {
+     "t": "La couleur comme sujet",
+     "g": "Construis une photo autour d'une couleur forte qui porte toute l'image.",
+     "p": [
+      "Une seule couleur vive, comme une porte rouge ou un parapluie jaune, peut devenir le sujet à elle seule.",
+      "Entoure-la de tons neutres comme le gris, le blanc ou le noir pour qu'elle ressorte encore plus.",
+      "Une exposition un peu plus basse rend souvent les couleurs plus riches et profondes que délavées."
+     ],
+     "q": "Quelle couleur préfères-tu, et où pourrais-tu la trouver aujourd'hui ?",
+     "c": "Choisis une couleur le matin et photographie cinq choses différentes de cette couleur avant la fin de la journée."
+    },
+    "it": {
+     "t": "Il colore come soggetto",
+     "g": "Costruisci una foto intorno a un colore forte che regga tutta l'immagine.",
+     "p": [
+      "Un solo colore deciso, come una porta rossa o un ombrello giallo, può diventare da solo il soggetto.",
+      "Circondalo di toni neutri come grigio, bianco o nero perché risalti ancora di più.",
+      "Un'esposizione leggermente più bassa rende spesso i colori più ricchi e profondi che chiari e slavati."
+     ],
+     "q": "Qual è il colore che ami di più, e dove potresti trovarlo oggi?",
+     "c": "Scegli un colore al mattino e fotografa cinque cose diverse di quel colore entro sera."
+    },
+    "pt": {
+     "t": "A cor como motivo",
+     "g": "Constrói uma foto à volta de uma cor forte que sustente a imagem inteira.",
+     "p": [
+      "Uma só cor intensa, como uma porta vermelha ou um guarda-chuva amarelo, pode ser o motivo por si só.",
+      "Rodeia-a de tons neutros como cinzento, branco ou preto para que se destaque ainda mais.",
+      "Baixar um pouco a exposição costuma tornar as cores mais ricas e profundas do que claras e desbotadas."
+     ],
+     "q": "Qual é a cor de que mais gostas, e onde podias encontrá-la hoje?",
+     "c": "Escolhe uma cor de manhã e fotografa cinco coisas diferentes dessa cor até ao fim do dia."
+    },
+    "pt_BR": {
+     "t": "A cor como assunto",
+     "g": "Monte uma foto em torno de uma cor forte que sustente a imagem inteira.",
+     "p": [
+      "Uma única cor intensa, como uma porta vermelha ou um guarda-chuva amarelo, pode ser o assunto sozinha.",
+      "Cerque-a de tons neutros como cinza, branco ou preto para que ela se destaque ainda mais.",
+      "Baixar um pouco a exposição costuma deixar as cores mais ricas e profundas do que claras e lavadas."
+     ],
+     "q": "Qual é a cor que você mais ama, e onde poderia encontrá-la hoje?",
+     "c": "Escolha uma cor de manhã e fotografe cinco coisas diferentes dessa cor até o fim do dia."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Complementary colours",
+     "g": "Use colour pairs like blue and orange that make each other stand out.",
+     "p": [
+      "Complementary colours sit opposite each other on the colour wheel: blue and orange, red and green, yellow and purple.",
+      "Placed together, they create strong contrast and make both colours look more vivid.",
+      "Look for an orange boat on blue water, red flowers among green leaves or warm lights against a blue evening sky."
+     ],
+     "q": "Which colour combinations do you love in clothes, rooms or nature?",
+     "c": "Find and photograph one complementary colour pair today, letting the two colours fill most of the frame."
+    },
+    "de": {
+     "t": "Komplementärfarben",
+     "g": "Nutze Farbpaare wie Blau und Orange, die sich gegenseitig zum Leuchten bringen.",
+     "p": [
+      "Komplementärfarben liegen sich im Farbkreis gegenüber: Blau und Orange, Rot und Grün, Gelb und Violett.",
+      "Nebeneinander erzeugen sie starken Kontrast, und beide Farben wirken intensiver.",
+      "Such ein oranges Boot auf blauem Wasser, rote Blumen zwischen grünen Blättern oder warme Lichter vor blauem Abendhimmel."
+     ],
+     "q": "Welche Farbkombinationen magst du bei Kleidung, Räumen oder in der Natur?",
+     "c": "Finde und fotografiere heute ein Komplementärfarbenpaar, das den größten Teil des Bildes füllt."
+    },
+    "es": {
+     "t": "Colores complementarios",
+     "g": "Usa parejas de colores como azul y naranja, que se hacen destacar mutuamente.",
+     "p": [
+      "Los complementarios están enfrentados en el círculo cromático: azul y naranja, rojo y verde, amarillo y violeta.",
+      "Juntos crean un contraste fuerte y hacen que ambos colores parezcan más vivos.",
+      "Busca una barca naranja en agua azul, flores rojas entre hojas verdes o luces cálidas contra un cielo azul al anochecer."
+     ],
+     "q": "¿Qué combinaciones de colores te encantan en la ropa, las casas o la naturaleza?",
+     "c": "Encuentra y fotografía hoy una pareja de colores complementarios, dejando que ambos llenen casi todo el encuadre."
+    },
+    "fr": {
+     "t": "Les couleurs complémentaires",
+     "g": "Utilise des paires de couleurs comme le bleu et l'orange, qui se font ressortir mutuellement.",
+     "p": [
+      "Les complémentaires sont opposées sur le cercle chromatique : bleu et orange, rouge et vert, jaune et violet.",
+      "Côte à côte, elles créent un fort contraste et rendent les deux couleurs plus éclatantes.",
+      "Cherche un bateau orange sur l'eau bleue, des fleurs rouges dans le feuillage vert ou des lumières chaudes sur un ciel bleu du soir."
+     ],
+     "q": "Quelles associations de couleurs aimes-tu dans les vêtements, les intérieurs ou la nature ?",
+     "c": "Trouve et photographie aujourd'hui une paire de couleurs complémentaires qui remplit la majeure partie du cadre."
+    },
+    "it": {
+     "t": "Colori complementari",
+     "g": "Usa coppie di colori come blu e arancione, che si fanno risaltare a vicenda.",
+     "p": [
+      "I complementari stanno uno di fronte all'altro nel cerchio cromatico: blu e arancione, rosso e verde, giallo e viola.",
+      "Accostati creano un forte contrasto e rendono entrambi i colori più vivaci.",
+      "Cerca una barca arancione sull'acqua blu, fiori rossi tra foglie verdi o luci calde contro un cielo blu di sera."
+     ],
+     "q": "Quali combinazioni di colori ami nei vestiti, negli ambienti o nella natura?",
+     "c": "Trova e fotografa oggi una coppia di colori complementari, lasciando che riempiano quasi tutta l'inquadratura."
+    },
+    "pt": {
+     "t": "Cores complementares",
+     "g": "Usa pares de cores como azul e laranja, que se destacam um ao outro.",
+     "p": [
+      "As complementares estão em lados opostos do círculo cromático: azul e laranja, vermelho e verde, amarelo e roxo.",
+      "Juntas criam um contraste forte e fazem as duas cores parecer mais vivas.",
+      "Procura um barco cor de laranja na água azul, flores vermelhas entre folhas verdes ou luzes quentes num céu azul ao anoitecer."
+     ],
+     "q": "Que combinações de cores adoras na roupa, nas casas ou na natureza?",
+     "c": "Encontra e fotografa hoje um par de cores complementares, deixando que as duas encham quase todo o enquadramento."
+    },
+    "pt_BR": {
+     "t": "Cores complementares",
+     "g": "Use pares de cores como azul e laranja, que destacam uma à outra.",
+     "p": [
+      "As complementares ficam em lados opostos do círculo cromático: azul e laranja, vermelho e verde, amarelo e roxo.",
+      "Juntas, criam um contraste forte e deixam as duas cores mais vivas.",
+      "Procure um barco laranja na água azul, flores vermelhas entre folhas verdes ou luzes quentes contra o céu azul do anoitecer."
+     ],
+     "q": "Que combinações de cores você adora em roupas, ambientes ou na natureza?",
+     "c": "Encontre e fotografe hoje um par de cores complementares, deixando as duas ocuparem quase todo o quadro."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Minimalism",
+     "g": "Create photos with very few elements and lots of simplicity.",
+     "p": [
+      "Minimalism means one subject, a clean background and nothing extra competing for attention.",
+      "Plain skies, white walls, calm water, fog and snow are perfect backdrops for minimal images.",
+      "Ask yourself what you can remove from the frame, and keep removing until only the essential is left."
+     ],
+     "q": "Do you think a photo with almost nothing in it can still be powerful?",
+     "c": "Create three minimalist photos today, each with one subject and a plain background filling most of the frame."
+    },
+    "de": {
+     "t": "Minimalismus",
+     "g": "Gestalte Fotos mit sehr wenigen Elementen und viel Einfachheit.",
+     "p": [
+      "Minimalismus heißt ein Motiv, ein ruhiger Hintergrund und nichts, was zusätzlich um Aufmerksamkeit buhlt.",
+      "Schlichter Himmel, weiße Wände, ruhiges Wasser, Nebel und Schnee sind perfekte Kulissen dafür.",
+      "Frag dich, was du aus dem Bild entfernen kannst, und mach weiter, bis nur das Wesentliche bleibt."
+     ],
+     "q": "Glaubst du, dass ein Foto mit fast nichts darin trotzdem stark sein kann?",
+     "c": "Mach heute drei minimalistische Fotos, jedes mit einem Motiv und schlichtem Hintergrund im größten Teil des Bildes."
+    },
+    "es": {
+     "t": "Minimalismo",
+     "g": "Crea fotos con muy pocos elementos y mucha sencillez.",
+     "p": [
+      "El minimalismo es un sujeto, un fondo limpio y nada más compitiendo por la atención.",
+      "Cielos lisos, paredes blancas, agua en calma, niebla y nieve son fondos perfectos para imágenes minimalistas.",
+      "Pregúntate qué puedes quitar del encuadre y sigue quitando hasta que solo quede lo esencial."
+     ],
+     "q": "¿Crees que una foto casi vacía puede ser igual de potente?",
+     "c": "Haz hoy tres fotos minimalistas, cada una con un sujeto y un fondo liso que ocupe casi todo el encuadre."
+    },
+    "fr": {
+     "t": "Le minimalisme",
+     "g": "Crée des photos avec très peu d'éléments et beaucoup de simplicité.",
+     "p": [
+      "Le minimalisme, c'est un sujet, un fond épuré et rien d'autre qui dispute l'attention.",
+      "Ciels unis, murs blancs, eau calme, brouillard et neige sont des fonds parfaits pour des images minimalistes.",
+      "Demande-toi ce que tu peux retirer du cadre, et continue jusqu'à ne garder que l'essentiel."
+     ],
+     "q": "Penses-tu qu'une photo presque vide puisse quand même être forte ?",
+     "c": "Réalise aujourd'hui trois photos minimalistes, chacune avec un sujet et un fond uni qui remplit presque tout le cadre."
+    },
+    "it": {
+     "t": "Minimalismo",
+     "g": "Crea foto con pochissimi elementi e molta semplicità.",
+     "p": [
+      "Minimalismo significa un soggetto, uno sfondo pulito e nient'altro che compete per l'attenzione.",
+      "Cieli uniformi, muri bianchi, acqua calma, nebbia e neve sono sfondi perfetti per immagini minimaliste.",
+      "Chiediti cosa puoi togliere dall'inquadratura e continua finché resta solo l'essenziale."
+     ],
+     "q": "Pensi che una foto quasi vuota possa comunque essere potente?",
+     "c": "Crea oggi tre foto minimaliste, ognuna con un soggetto e uno sfondo semplice che riempie quasi tutta l'inquadratura."
+    },
+    "pt": {
+     "t": "Minimalismo",
+     "g": "Cria fotos com muito poucos elementos e muita simplicidade.",
+     "p": [
+      "Minimalismo é um motivo, um fundo limpo e mais nada a disputar a atenção.",
+      "Céus lisos, paredes brancas, água calma, nevoeiro e neve são fundos perfeitos para imagens minimalistas.",
+      "Pergunta-te o que podes tirar do enquadramento e continua até ficar só o essencial."
+     ],
+     "q": "Achas que uma foto quase vazia pode ser igualmente forte?",
+     "c": "Cria hoje três fotos minimalistas, cada uma com um motivo e um fundo simples a encher quase todo o enquadramento."
+    },
+    "pt_BR": {
+     "t": "Minimalismo",
+     "g": "Crie fotos com pouquíssimos elementos e muita simplicidade.",
+     "p": [
+      "Minimalismo é um assunto, um fundo limpo e nada mais disputando a atenção.",
+      "Céu liso, paredes brancas, água calma, neblina e neve são fundos perfeitos para imagens minimalistas.",
+      "Pergunte-se o que dá para tirar do quadro e continue tirando até sobrar só o essencial."
+     ],
+     "q": "Você acha que uma foto quase vazia pode ser tão forte quanto uma cheia?",
+     "c": "Crie hoje três fotos minimalistas, cada uma com um assunto e um fundo simples ocupando quase todo o quadro."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Layers in a scene",
+     "g": "Compose with a foreground, a middle ground and a background to create depth.",
+     "p": [
+      "Three layers turn a flat photo into a scene the viewer can step into.",
+      "For example: flowers in front, a person or house in the middle and hills or sky behind.",
+      "Each layer should add something; keep them clearly separated so they do not merge into clutter."
+     ],
+     "q": "What place near you naturally has something near, something middle and something far?",
+     "c": "Photograph a scene with three distinct layers and describe in one sentence what each layer adds."
+    },
+    "de": {
+     "t": "Ebenen in einer Szene",
+     "g": "Komponiere mit Vordergrund, Mittelgrund und Hintergrund, um Tiefe zu erzeugen.",
+     "p": [
+      "Drei Ebenen verwandeln ein flaches Foto in eine Szene, in die der Betrachter eintreten kann.",
+      "Zum Beispiel: Blumen vorn, eine Person oder ein Haus in der Mitte und Hügel oder Himmel dahinter.",
+      "Jede Ebene sollte etwas beitragen; halte sie klar getrennt, damit sie nicht zu Durcheinander verschmelzen."
+     ],
+     "q": "Welcher Ort in deiner Nähe hat ganz natürlich etwas Nahes, etwas in der Mitte und etwas Fernes?",
+     "c": "Fotografiere eine Szene mit drei klaren Ebenen und beschreibe in einem Satz, was jede Ebene beiträgt."
+    },
+    "es": {
+     "t": "Capas en una escena",
+     "g": "Compón con un primer plano, un plano medio y un fondo para crear profundidad.",
+     "p": [
+      "Tres capas convierten una foto plana en una escena en la que quien mira puede entrar.",
+      "Por ejemplo: flores delante, una persona o una casa en medio y colinas o cielo detrás.",
+      "Cada capa debe aportar algo; mantenlas bien separadas para que no se mezclen en un desorden."
+     ],
+     "q": "¿Qué lugar cerca de ti tiene de forma natural algo cerca, algo en medio y algo lejos?",
+     "c": "Fotografía una escena con tres capas claras y describe en una frase qué aporta cada una."
+    },
+    "fr": {
+     "t": "Les plans d'une scène",
+     "g": "Compose avec un premier plan, un plan intermédiaire et un arrière-plan pour créer de la profondeur.",
+     "p": [
+      "Trois plans transforment une photo plate en une scène dans laquelle le spectateur peut entrer.",
+      "Par exemple : des fleurs devant, une personne ou une maison au milieu, des collines ou le ciel derrière.",
+      "Chaque plan doit apporter quelque chose ; garde-les bien séparés pour éviter le fouillis."
+     ],
+     "q": "Quel lieu près de chez toi offre naturellement un élément proche, un intermédiaire et un lointain ?",
+     "c": "Photographie une scène avec trois plans distincts et décris en une phrase ce que chacun apporte."
+    },
+    "it": {
+     "t": "Piani in una scena",
+     "g": "Componi con primo piano, piano intermedio e sfondo per creare profondità.",
+     "p": [
+      "Tre piani trasformano una foto piatta in una scena in cui chi guarda può entrare.",
+      "Per esempio: fiori davanti, una persona o una casa nel mezzo e colline o cielo dietro.",
+      "Ogni piano deve aggiungere qualcosa; tienili ben separati perché non si confondano nel disordine."
+     ],
+     "q": "Quale luogo vicino a te ha naturalmente qualcosa di vicino, qualcosa nel mezzo e qualcosa di lontano?",
+     "c": "Fotografa una scena con tre piani distinti e descrivi in una frase cosa aggiunge ciascuno."
+    },
+    "pt": {
+     "t": "Camadas numa cena",
+     "g": "Compõe com um primeiro plano, um plano intermédio e um fundo para criar profundidade.",
+     "p": [
+      "Três camadas transformam uma foto plana numa cena onde quem vê pode entrar.",
+      "Por exemplo: flores à frente, uma pessoa ou uma casa a meio e colinas ou céu atrás.",
+      "Cada camada deve acrescentar algo; mantém-nas bem separadas para não se misturarem numa confusão."
+     ],
+     "q": "Que sítio perto de ti tem naturalmente algo perto, algo a meio e algo longe?",
+     "c": "Fotografa uma cena com três camadas distintas e descreve numa frase o que cada uma acrescenta."
+    },
+    "pt_BR": {
+     "t": "Camadas numa cena",
+     "g": "Componha com primeiro plano, plano intermediário e fundo para criar profundidade.",
+     "p": [
+      "Três camadas transformam uma foto chapada numa cena em que quem olha pode entrar.",
+      "Por exemplo: flores na frente, uma pessoa ou uma casa no meio e morros ou céu atrás.",
+      "Cada camada precisa somar algo; mantenha-as bem separadas para não virarem bagunça."
+     ],
+     "q": "Que lugar perto de você tem naturalmente algo perto, algo no meio e algo longe?",
+     "c": "Fotografe uma cena com três camadas distintas e descreva numa frase o que cada uma acrescenta."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rules can bend",
+     "g": "Learn when breaking a composition rule makes a stronger picture.",
+     "p": [
+      "Composition rules are tools, not laws: they explain why many images work, not how every image must look.",
+      "A centred subject can feel bold, a tilted frame can feel energetic, a cut-off face can feel intimate.",
+      "Break a rule on purpose and know why; a deliberate choice looks confident, an accident looks careless."
+     ],
+     "q": "Which composition rule would you most enjoy breaking, and why?",
+     "c": "Take one photo that follows a rule you have learned, then one that breaks it on purpose, and decide which is stronger."
+    },
+    "de": {
+     "t": "Regeln dürfen sich biegen",
+     "g": "Lerne, wann das Brechen einer Kompositionsregel ein stärkeres Bild ergibt.",
+     "p": [
+      "Kompositionsregeln sind Werkzeuge, keine Gesetze: Sie erklären, warum viele Bilder wirken, nicht wie jedes aussehen muss.",
+      "Ein mittiges Motiv kann kraftvoll, ein gekipptes Bild energisch, ein angeschnittenes Gesicht vertraut wirken.",
+      "Brich eine Regel bewusst und wisse warum; Absicht wirkt selbstbewusst, Zufall nachlässig."
+     ],
+     "q": "Welche Kompositionsregel würdest du am liebsten brechen, und warum?",
+     "c": "Mach ein Foto, das einer gelernten Regel folgt, und eines, das sie bewusst bricht, und entscheide, welches stärker ist."
+    },
+    "es": {
+     "t": "Las reglas se pueden doblar",
+     "g": "Aprende cuándo romper una regla de composición da una foto más fuerte.",
+     "p": [
+      "Las reglas de composición son herramientas, no leyes: explican por qué funcionan muchas imágenes, no cómo debe ser cada una.",
+      "Un sujeto centrado puede ser contundente, un encuadre inclinado enérgico y una cara cortada íntima.",
+      "Rompe una regla a propósito y sabiendo por qué; una decisión consciente transmite seguridad, un accidente descuido."
+     ],
+     "q": "¿Qué regla de composición te divertiría más romper, y por qué?",
+     "c": "Haz una foto que siga una regla aprendida y otra que la rompa a propósito, y decide cuál es más fuerte."
+    },
+    "fr": {
+     "t": "Les règles peuvent plier",
+     "g": "Apprends quand enfreindre une règle de composition donne une image plus forte.",
+     "p": [
+      "Ces règles sont des outils, pas des lois : elles expliquent pourquoi tant d'images marchent, pas à quoi chacune doit ressembler.",
+      "Un sujet centré peut sembler audacieux, un cadre penché énergique, un visage coupé intime.",
+      "Enfreins une règle exprès et sache pourquoi ; un choix délibéré paraît assuré, un accident négligé."
+     ],
+     "q": "Quelle règle de composition aimerais-tu le plus enfreindre, et pourquoi ?",
+     "c": "Prends une photo qui suit une règle apprise, puis une qui l'enfreint exprès, et décide laquelle est la plus forte."
+    },
+    "it": {
+     "t": "Le regole si possono piegare",
+     "g": "Impara quando infrangere una regola di composizione rende una foto più forte.",
+     "p": [
+      "Le regole di composizione sono strumenti, non leggi: spiegano perché molte immagini funzionano, non come deve essere ognuna.",
+      "Un soggetto centrato può sembrare deciso, un'inquadratura inclinata energica, un volto tagliato intimo.",
+      "Infrangi una regola di proposito e sapendo perché; una scelta voluta sembra sicura, un incidente sciatto."
+     ],
+     "q": "Quale regola di composizione ti divertirebbe di più infrangere, e perché?",
+     "c": "Scatta una foto che segue una regola imparata e una che la infrange di proposito, poi decidi quale è più forte."
+    },
+    "pt": {
+     "t": "As regras podem dobrar",
+     "g": "Aprende quando quebrar uma regra de composição dá uma foto mais forte.",
+     "p": [
+      "As regras de composição são ferramentas, não leis: explicam porque muitas imagens resultam, não como cada uma deve ser.",
+      "Um motivo centrado pode parecer ousado, um enquadramento inclinado enérgico, um rosto cortado íntimo.",
+      "Quebra uma regra de propósito e sabendo porquê; uma escolha consciente parece segura, um acidente descuidada."
+     ],
+     "q": "Que regra de composição mais gostarias de quebrar, e porquê?",
+     "c": "Tira uma foto que siga uma regra aprendida e outra que a quebre de propósito, e decide qual é mais forte."
+    },
+    "pt_BR": {
+     "t": "Regras podem dobrar",
+     "g": "Aprenda quando quebrar uma regra de composição gera uma foto mais forte.",
+     "p": [
+      "Regras de composição são ferramentas, não leis: explicam por que muitas imagens funcionam, não como cada uma deve ser.",
+      "Um assunto centralizado pode parecer ousado, um quadro inclinado enérgico, um rosto cortado íntimo.",
+      "Quebre uma regra de propósito e sabendo por quê; uma escolha consciente parece segura, um acidente parece descuido."
+     ],
+     "q": "Qual regra de composição você mais gostaria de quebrar, e por quê?",
+     "c": "Tire uma foto que siga uma regra aprendida e outra que a quebre de propósito, e decida qual é mais forte."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: composition toolbox",
+     "g": "Recap this month's composition tools with a ten-photo walk using a different technique each time.",
+     "p": [
+      "You learned thirds, the grid, level horizons, leading lines, frames, symmetry, patterns and negative space.",
+      "You explored angles, eye level, odd numbers, diagonals, curves, balance, edges and cropping in camera.",
+      "You saw how scale, texture, shapes, colour, minimalism and layers shape a story, and when rules can bend."
+     ],
+     "q": "Which composition tool from this month do you think you will use most often?",
+     "c": "Take a walk and make ten photos, each using a different composition technique from this month, then share your favourite."
+    },
+    "de": {
+     "t": "Rückblick: Kompositions-Werkzeugkasten",
+     "g": "Wiederhole die Kompositionswerkzeuge des Monats mit einem Spaziergang und zehn Fotos mit je einer anderen Technik.",
+     "p": [
+      "Du kennst Drittel, Gitter, gerade Horizonte, führende Linien, Rahmen, Symmetrie, Muster und negativen Raum.",
+      "Du hast Blickwinkel, Augenhöhe, ungerade Zahlen, Diagonalen, Kurven, Balance, Ränder und Zuschnitt erkundet.",
+      "Du hast gesehen, wie Maßstab, Textur, Formen, Farbe, Minimalismus und Ebenen erzählen und wann Regeln biegen dürfen."
+     ],
+     "q": "Welches Kompositionswerkzeug dieses Monats wirst du wohl am häufigsten nutzen?",
+     "c": "Mach einen Spaziergang mit zehn Fotos, jedes mit einer anderen Kompositionstechnik dieses Monats, und teile deinen Favoriten."
+    },
+    "es": {
+     "t": "Repaso: caja de herramientas",
+     "g": "Repasa las herramientas de composición del mes con un paseo de diez fotos, cada una con una técnica distinta.",
+     "p": [
+      "Aprendiste los tercios, la cuadrícula, horizontes rectos, líneas guía, marcos, simetría, patrones y espacio negativo.",
+      "Exploraste ángulos, la altura de los ojos, números impares, diagonales, curvas, equilibrio, bordes y el recorte en cámara.",
+      "Viste cómo escala, textura, formas, color, minimalismo y capas cuentan una historia, y cuándo doblar las reglas."
+     ],
+     "q": "¿Qué herramienta de composición de este mes crees que usarás más?",
+     "c": "Da un paseo y haz diez fotos, cada una con una técnica de composición distinta de este mes, y comparte tu favorita."
+    },
+    "fr": {
+     "t": "Bilan : boîte à outils de composition",
+     "g": "Révise les outils de composition du mois avec une balade de dix photos, chacune avec une technique différente.",
+     "p": [
+      "Tu as appris les tiers, la grille, l'horizon droit, les lignes directrices, les cadres, la symétrie, les motifs et l'espace négatif.",
+      "Tu as exploré les angles, la hauteur des yeux, les nombres impairs, diagonales, courbes, l'équilibre, les bords et le recadrage.",
+      "Tu as vu comment échelle, texture, formes, couleur, minimalisme et plans racontent, et quand plier les règles."
+     ],
+     "q": "Quel outil de composition de ce mois penses-tu utiliser le plus souvent ?",
+     "c": "Fais une balade et prends dix photos, chacune avec une technique de composition différente du mois, puis partage ta préférée."
+    },
+    "it": {
+     "t": "Ripasso: la cassetta degli attrezzi",
+     "g": "Ripassa gli strumenti di composizione del mese con una passeggiata di dieci foto, ognuna con una tecnica diversa.",
+     "p": [
+      "Hai imparato i terzi, la griglia, l'orizzonte dritto, le linee guida, le cornici, la simmetria, i motivi e lo spazio negativo.",
+      "Hai esplorato angolazioni, altezza degli occhi, numeri dispari, diagonali, curve, equilibrio, bordi e ritaglio in macchina.",
+      "Hai visto come scala, texture, forme, colore, minimalismo e piani raccontano, e quando piegare le regole."
+     ],
+     "q": "Quale strumento di composizione di questo mese pensi di usare più spesso?",
+     "c": "Fai una passeggiata e scatta dieci foto, ognuna con una tecnica di composizione diversa di questo mese, poi condividi la preferita."
+    },
+    "pt": {
+     "t": "Revisão: caixa de ferramentas",
+     "g": "Revê as ferramentas de composição do mês com um passeio de dez fotos, cada uma com uma técnica diferente.",
+     "p": [
+      "Aprendeste os terços, a grelha, horizontes direitos, linhas condutoras, molduras, simetria, padrões e espaço negativo.",
+      "Exploraste ângulos, altura dos olhos, números ímpares, diagonais, curvas, equilíbrio, margens e corte na câmara.",
+      "Viste como escala, textura, formas, cor, minimalismo e camadas contam uma história, e quando dobrar as regras."
+     ],
+     "q": "Que ferramenta de composição deste mês achas que vais usar mais vezes?",
+     "c": "Dá um passeio e tira dez fotos, cada uma com uma técnica de composição diferente deste mês, e partilha a tua favorita."
+    },
+    "pt_BR": {
+     "t": "Revisão: caixa de ferramentas",
+     "g": "Revise as ferramentas de composição do mês com uma caminhada de dez fotos, cada uma com uma técnica diferente.",
+     "p": [
+      "Você aprendeu terços, grade, horizontes retos, linhas guia, molduras, simetria, padrões e espaço negativo.",
+      "Explorou ângulos, altura dos olhos, números ímpares, diagonais, curvas, equilíbrio, bordas e corte na câmera.",
+      "Viu como escala, textura, formas, cor, minimalismo e camadas contam uma história, e quando dobrar as regras."
+     ],
+     "q": "Qual ferramenta de composição deste mês você acha que vai usar mais?",
+     "c": "Faça uma caminhada e tire dez fotos, cada uma com uma técnica de composição diferente deste mês, e compartilhe sua favorita."
+    }
+   }
+  }
+ ]
+}

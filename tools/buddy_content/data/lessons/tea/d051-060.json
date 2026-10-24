@@ -1,0 +1,835 @@
+{
+ "topic": "tea",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea and food basics",
+     "g": "Start pairing with one simple rule: light teas with light food, strong teas with rich food.",
+     "p": [
+      "Delicate greens and whites suit fresh salads, fish, steamed vegetables and mild cheeses.",
+      "Bold black teas and roasted oolongs stand up to rich, fatty or smoky dishes.",
+      "Tea can match a dish or contrast with it; a brisk tea can refresh the palate between bites."
+     ],
+     "q": "What is your favourite meal, and which tea do you think would go with it?",
+     "c": "Drink a cup of tea with your next meal and notice whether it matches, contrasts or clashes."
+    },
+    "de": {
+     "t": "Tee und Essen: Grundlagen",
+     "g": "Starte mit einer einfachen Regel: leichte Tees zu leichtem Essen, kräftige Tees zu reichhaltigem Essen.",
+     "p": [
+      "Zarte Grün- und Weißtees passen zu frischen Salaten, Fisch, gedämpftem Gemüse und mildem Käse.",
+      "Kräftige Schwarztees und geröstete Oolongs halten mit reichhaltigen, fettigen oder rauchigen Gerichten mit.",
+      "Tee kann zum Gericht passen oder einen Kontrast bilden; ein spritziger Tee erfrischt den Gaumen zwischen Bissen."
+     ],
+     "q": "Was ist dein Lieblingsessen, und welcher Tee würde wohl dazu passen?",
+     "c": "Trink zu deiner nächsten Mahlzeit eine Tasse Tee und achte darauf, ob er passt, kontrastiert oder stört."
+    },
+    "es": {
+     "t": "Té y comida: lo básico",
+     "g": "Empieza a maridar con una regla sencilla: tés ligeros con comida ligera, tés fuertes con comida contundente.",
+     "p": [
+      "Los verdes y blancos delicados van con ensaladas frescas, pescado, verduras al vapor y quesos suaves.",
+      "Los tés negros intensos y los oolong tostados aguantan platos ricos, grasos o ahumados.",
+      "El té puede acompañar un plato o contrastar con él; un té vivo refresca el paladar entre bocados."
+     ],
+     "q": "¿Cuál es tu comida favorita y qué té crees que le iría bien?",
+     "c": "Toma una taza de té con tu próxima comida y fíjate si combina, contrasta o choca."
+    },
+    "fr": {
+     "t": "Thé et cuisine : les bases",
+     "g": "Commence les accords avec une règle simple : thés légers avec plats légers, thés corsés avec plats riches.",
+     "p": [
+      "Les verts et blancs délicats accompagnent salades fraîches, poisson, légumes vapeur et fromages doux.",
+      "Les thés noirs corsés et les oolongs torréfiés tiennent tête aux plats riches, gras ou fumés.",
+      "Le thé peut s'accorder au plat ou créer un contraste ; un thé vif rafraîchit le palais entre deux bouchées."
+     ],
+     "q": "Quel est ton plat préféré, et quel thé irait bien avec selon toi ?",
+     "c": "Bois une tasse de thé avec ton prochain repas et observe s'il s'accorde, contraste ou détonne."
+    },
+    "it": {
+     "t": "Tè e cibo: le basi",
+     "g": "Inizia gli abbinamenti con una regola semplice: tè leggeri con cibi leggeri, tè forti con cibi ricchi.",
+     "p": [
+      "Verdi e bianchi delicati stanno bene con insalate fresche, pesce, verdure al vapore e formaggi dolci.",
+      "I tè neri decisi e gli oolong tostati reggono piatti ricchi, grassi o affumicati.",
+      "Il tè può accordarsi al piatto o fare contrasto; un tè vivace rinfresca il palato tra un boccone e l'altro."
+     ],
+     "q": "Qual è il tuo piatto preferito, e quale tè secondo te ci starebbe bene?",
+     "c": "Bevi una tazza di tè con il prossimo pasto e nota se si abbina, contrasta o stona."
+    },
+    "pt": {
+     "t": "Chá e comida: o básico",
+     "g": "Começa a harmonizar com uma regra simples: chás leves com comida leve, chás fortes com comida rica.",
+     "p": [
+      "Os verdes e brancos delicados combinam com saladas frescas, peixe, legumes a vapor e queijos suaves.",
+      "Os chás pretos intensos e os oolongs tostados aguentam pratos ricos, gordos ou fumados.",
+      "O chá pode acompanhar um prato ou contrastar com ele; um chá vivo refresca o paladar entre garfadas."
+     ],
+     "q": "Qual é a tua refeição preferida e que chá achas que combinaria com ela?",
+     "c": "Bebe uma chávena de chá com a próxima refeição e repara se combina, contrasta ou choca."
+    },
+    "pt_BR": {
+     "t": "Chá e comida: o básico",
+     "g": "Comece a harmonizar com uma regra simples: chás leves com comida leve, chás fortes com comida pesada.",
+     "p": [
+      "Verdes e brancos delicados combinam com saladas frescas, peixe, legumes no vapor e queijos suaves.",
+      "Chás pretos intensos e oolongs tostados encaram pratos ricos, gordurosos ou defumados.",
+      "O chá pode acompanhar um prato ou contrastar com ele; um chá vivo refresca o paladar entre as garfadas."
+     ],
+     "q": "Qual é sua comida favorita e qual chá você acha que combinaria com ela?",
+     "c": "Tome uma xícara de chá na próxima refeição e repare se combina, contrasta ou briga."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea with breakfast",
+     "g": "Match morning teas with toast, eggs, fruit and pastries for a better start to the day.",
+     "p": [
+      "Malty Assam or a breakfast blend with milk stands up to eggs, bacon and buttered toast.",
+      "Bright Ceylon or Darjeeling pairs nicely with fruit, yoghurt and lighter breakfasts.",
+      "With buttery pastries, a brisk black tea or a toasty oolong cuts through the richness."
+     ],
+     "q": "What does a typical breakfast look like for you?",
+     "c": "Choose one breakfast food tomorrow and try it with two different teas to find the better match."
+    },
+    "de": {
+     "t": "Tee zum Frühstück",
+     "g": "Kombiniere Morgentees mit Toast, Eiern, Obst und Gebäck für einen besseren Start in den Tag.",
+     "p": [
+      "Malziger Assam oder eine Frühstücksmischung mit Milch hält mit Eiern, Speck und Buttertoast mit.",
+      "Frischer Ceylon oder Darjeeling passt schön zu Obst, Joghurt und leichterem Frühstück.",
+      "Zu buttrigem Gebäck schneidet ein spritziger Schwarztee oder ein gerösteter Oolong durch die Fülle."
+     ],
+     "q": "Wie sieht ein typisches Frühstück bei dir aus?",
+     "c": "Wähle morgen ein Frühstücksgericht und probiere es mit zwei verschiedenen Tees, um die bessere Kombi zu finden."
+    },
+    "es": {
+     "t": "Té con el desayuno",
+     "g": "Combina tés matutinos con tostadas, huevos, fruta y bollería para empezar mejor el día.",
+     "p": [
+      "Un Assam malteado o una mezcla de desayuno con leche aguanta huevos, beicon y tostadas con mantequilla.",
+      "Un Ceilán vivo o un Darjeeling van bien con fruta, yogur y desayunos más ligeros.",
+      "Con bollería mantecosa, un té negro vivo o un oolong tostado equilibran la riqueza."
+     ],
+     "q": "¿Cómo es un desayuno típico para ti?",
+     "c": "Elige mañana un alimento del desayuno y pruébalo con dos tés distintos para encontrar la mejor pareja."
+    },
+    "fr": {
+     "t": "Le thé au petit-déjeuner",
+     "g": "Associe les thés du matin aux tartines, œufs, fruits et viennoiseries pour mieux commencer la journée.",
+     "p": [
+      "Un Assam malté ou un breakfast blend au lait tient tête aux œufs, au bacon et aux tartines beurrées.",
+      "Un Ceylan vif ou un Darjeeling s'accorde bien avec fruits, yaourt et petits-déjeuners légers.",
+      "Avec les viennoiseries beurrées, un thé noir vif ou un oolong torréfié tranche avec la richesse."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner habituel ?",
+     "c": "Choisis demain un aliment du petit-déjeuner et goûte-le avec deux thés différents pour trouver le meilleur accord."
+    },
+    "it": {
+     "t": "Il tè a colazione",
+     "g": "Abbina i tè del mattino a pane tostato, uova, frutta e brioche per iniziare meglio la giornata.",
+     "p": [
+      "Un Assam maltato o una miscela da colazione con latte regge uova, bacon e pane tostato col burro.",
+      "Un Ceylon vivace o un Darjeeling si abbinano bene a frutta, yogurt e colazioni più leggere.",
+      "Con brioche e cornetti al burro, un tè nero vivace o un oolong tostato bilanciano la ricchezza."
+     ],
+     "q": "Com'è la tua colazione tipica?",
+     "c": "Domani scegli un cibo della colazione e provalo con due tè diversi per trovare l'abbinamento migliore."
+    },
+    "pt": {
+     "t": "Chá ao pequeno-almoço",
+     "g": "Combina chás da manhã com torradas, ovos, fruta e pastelaria para começar melhor o dia.",
+     "p": [
+      "Um Assam maltado ou uma mistura de pequeno-almoço com leite aguenta ovos, bacon e torradas com manteiga.",
+      "Um Ceilão vivo ou um Darjeeling combinam bem com fruta, iogurte e pequenos-almoços mais leves.",
+      "Com pastelaria amanteigada, um chá preto vivo ou um oolong tostado cortam a riqueza."
+     ],
+     "q": "Como é o teu pequeno-almoço habitual?",
+     "c": "Escolhe amanhã um alimento do pequeno-almoço e prova-o com dois chás diferentes para encontrar o melhor par."
+    },
+    "pt_BR": {
+     "t": "Chá no café da manhã",
+     "g": "Combine chás da manhã com torradas, ovos, frutas e doces de padaria para começar melhor o dia.",
+     "p": [
+      "Um Assam maltado ou um blend de café da manhã com leite encara ovos, bacon e torrada com manteiga.",
+      "Um Ceilão vivo ou um Darjeeling combinam bem com frutas, iogurte e cafés da manhã mais leves.",
+      "Com massas amanteigadas, um chá preto vivo ou um oolong tostado equilibram a riqueza."
+     ],
+     "q": "Como é um café da manhã típico para você?",
+     "c": "Escolha amanhã um alimento do café da manhã e prove com dois chás diferentes para achar a melhor dupla."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea with sweets",
+     "g": "Find out which teas balance chocolate, cakes, fruit tarts and biscuits.",
+     "p": [
+      "Dark chocolate loves roasted oolong, malty Assam or earthy ripe pu-erh.",
+      "Fruit tarts and lemon cakes shine next to Darjeeling, Earl Grey or a floral oolong.",
+      "With creamy cakes and buttery biscuits, a brisk black tea refreshes your mouth between bites."
+     ],
+     "q": "What is your favourite sweet treat to enjoy with a hot drink?",
+     "c": "Taste a small piece of chocolate with two different teas and decide which one makes it shine."
+    },
+    "de": {
+     "t": "Tee zu Süßem",
+     "g": "Finde heraus, welche Tees Schokolade, Kuchen, Obsttörtchen und Kekse ausbalancieren.",
+     "p": [
+      "Dunkle Schokolade liebt gerösteten Oolong, malzigen Assam oder erdigen reifen Pu-Erh.",
+      "Obsttörtchen und Zitronenkuchen glänzen neben Darjeeling, Earl Grey oder einem blumigen Oolong.",
+      "Zu cremigem Kuchen und Butterkeksen erfrischt ein spritziger Schwarztee den Mund zwischen den Bissen."
+     ],
+     "q": "Was ist deine liebste Süßigkeit zu einem heißen Getränk?",
+     "c": "Probiere ein Stück Schokolade mit zwei verschiedenen Tees und entscheide, welcher sie besser zur Geltung bringt."
+    },
+    "es": {
+     "t": "Té con dulces",
+     "g": "Descubre qué tés equilibran el chocolate, los pasteles, las tartas de fruta y las galletas.",
+     "p": [
+      "El chocolate negro adora el oolong tostado, el Assam malteado o el terroso pu-erh maduro.",
+      "Las tartas de fruta y los bizcochos de limón brillan junto a un Darjeeling, un Earl Grey o un oolong floral.",
+      "Con pasteles cremosos y galletas de mantequilla, un té negro vivo refresca la boca entre bocados."
+     ],
+     "q": "¿Cuál es tu dulce favorito para acompañar una bebida caliente?",
+     "c": "Prueba un trocito de chocolate con dos tés distintos y decide cuál lo hace brillar más."
+    },
+    "fr": {
+     "t": "Le thé avec les douceurs",
+     "g": "Découvre quels thés équilibrent chocolat, gâteaux, tartes aux fruits et biscuits.",
+     "p": [
+      "Le chocolat noir adore l'oolong torréfié, l'Assam malté ou le pu-erh cuit aux notes terreuses.",
+      "Les tartes aux fruits et les gâteaux au citron brillent avec un Darjeeling, un Earl Grey ou un oolong floral.",
+      "Avec les gâteaux crémeux et les biscuits au beurre, un thé noir vif rafraîchit la bouche entre deux bouchées."
+     ],
+     "q": "Quelle est ta douceur préférée avec une boisson chaude ?",
+     "c": "Goûte un petit carré de chocolat avec deux thés différents et choisis celui qui le sublime."
+    },
+    "it": {
+     "t": "Il tè con i dolci",
+     "g": "Scopri quali tè bilanciano cioccolato, torte, crostate di frutta e biscotti.",
+     "p": [
+      "Il cioccolato fondente ama l'oolong tostato, l'Assam maltato o il terroso pu-erh maturo.",
+      "Crostate di frutta e torte al limone brillano accanto a un Darjeeling, un Earl Grey o un oolong floreale.",
+      "Con torte cremose e biscotti al burro, un tè nero vivace rinfresca la bocca tra un morso e l'altro."
+     ],
+     "q": "Qual è il tuo dolce preferito da gustare con una bevanda calda?",
+     "c": "Assaggia un pezzetto di cioccolato con due tè diversi e decidi quale lo valorizza di più."
+    },
+    "pt": {
+     "t": "Chá com doces",
+     "g": "Descobre que chás equilibram chocolate, bolos, tartes de fruta e bolachas.",
+     "p": [
+      "O chocolate negro adora oolong tostado, Assam maltado ou o terroso pu-erh maduro.",
+      "As tartes de fruta e os bolos de limão brilham ao lado de um Darjeeling, um Earl Grey ou um oolong floral.",
+      "Com bolos cremosos e bolachas de manteiga, um chá preto vivo refresca a boca entre dentadas."
+     ],
+     "q": "Qual é o teu doce preferido para acompanhar uma bebida quente?",
+     "c": "Prova um pedacinho de chocolate com dois chás diferentes e decide qual o faz brilhar mais."
+    },
+    "pt_BR": {
+     "t": "Chá com doces",
+     "g": "Descubra quais chás equilibram chocolate, bolos, tortas de frutas e biscoitos.",
+     "p": [
+      "O chocolate amargo adora oolong tostado, Assam maltado ou o terroso pu-erh maduro.",
+      "Tortas de frutas e bolos de limão brilham ao lado de um Darjeeling, um Earl Grey ou um oolong floral.",
+      "Com bolos cremosos e biscoitos amanteigados, um chá preto vivo refresca a boca entre as mordidas."
+     ],
+     "q": "Qual é seu doce favorito para acompanhar uma bebida quente?",
+     "c": "Prove um pedacinho de chocolate com dois chás diferentes e decida qual faz ele brilhar mais."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making tea for friends",
+     "g": "Brew a pot for several people and serve it warm and on time.",
+     "p": [
+      "Count about 2 to 3 grams of leaf per cup, and warm the teapot and cups first with a little hot water.",
+      "When the time is up, pour all the tea out or remove the leaves, so the last cup is not bitter.",
+      "Pour into cups in turns, a little each round, so everyone gets the same strength."
+     ],
+     "q": "Who would you most like to share a pot of tea with?",
+     "c": "Brew a pot today for at least two people, warm the cups first, and ask what they taste."
+    },
+    "de": {
+     "t": "Tee für Freunde zubereiten",
+     "g": "Brühe eine Kanne für mehrere Personen und serviere sie warm und pünktlich.",
+     "p": [
+      "Rechne mit etwa 2 bis 3 Gramm Blatt pro Tasse und wärme Kanne und Tassen vorher mit etwas heißem Wasser an.",
+      "Ist die Zeit um, gieß den ganzen Tee ab oder nimm die Blätter heraus, damit die letzte Tasse nicht bitter wird.",
+      "Schenk reihum ein, jedes Mal ein wenig, damit alle die gleiche Stärke bekommen."
+     ],
+     "q": "Mit wem würdest du am liebsten eine Kanne Tee teilen?",
+     "c": "Brühe heute eine Kanne für mindestens zwei Personen, wärme die Tassen vor und frag, was sie schmecken."
+    },
+    "es": {
+     "t": "Preparar té para amigos",
+     "g": "Prepara una tetera para varias personas y sírvela caliente y a tiempo.",
+     "p": [
+      "Cuenta unos 2-3 gramos de hoja por taza y calienta antes la tetera y las tazas con un poco de agua caliente.",
+      "Cuando acabe el tiempo, sirve todo el té o retira las hojas, para que la última taza no amargue.",
+      "Sirve por turnos, un poco en cada ronda, para que todos reciban la misma intensidad."
+     ],
+     "q": "¿Con quién te gustaría más compartir una tetera?",
+     "c": "Prepara hoy una tetera para al menos dos personas, calienta antes las tazas y pregúntales qué notan."
+    },
+    "fr": {
+     "t": "Préparer le thé pour des amis",
+     "g": "Prépare une théière pour plusieurs personnes et sers-la chaude et au bon moment.",
+     "p": [
+      "Compte environ 2 à 3 grammes de feuilles par tasse et réchauffe d'abord théière et tasses avec un peu d'eau chaude.",
+      "Une fois le temps écoulé, verse tout le thé ou retire les feuilles, pour que la dernière tasse ne soit pas amère.",
+      "Sers les tasses à tour de rôle, un peu à chaque passage, pour que chacun ait la même force."
+     ],
+     "q": "Avec qui aimerais-tu le plus partager une théière ?",
+     "c": "Prépare aujourd'hui une théière pour au moins deux personnes, chauffe les tasses et demande-leur ce qu'elles perçoivent."
+    },
+    "it": {
+     "t": "Preparare il tè per gli amici",
+     "g": "Prepara una teiera per più persone e servila calda e al momento giusto.",
+     "p": [
+      "Calcola circa 2-3 grammi di foglie per tazza e scalda prima teiera e tazze con un po' d'acqua calda.",
+      "Allo scadere del tempo, versa tutto il tè o togli le foglie, così l'ultima tazza non diventa amara.",
+      "Versa a turno, un po' per volta in ogni tazza, così tutti hanno la stessa intensità."
+     ],
+     "q": "Con chi ti piacerebbe di più condividere una teiera?",
+     "c": "Prepara oggi una teiera per almeno due persone, scalda prima le tazze e chiedi cosa sentono."
+    },
+    "pt": {
+     "t": "Fazer chá para amigos",
+     "g": "Prepara um bule para várias pessoas e serve-o quente e a tempo.",
+     "p": [
+      "Conta cerca de 2 a 3 gramas de folha por chávena e aquece antes o bule e as chávenas com um pouco de água quente.",
+      "Quando o tempo acabar, serve todo o chá ou tira as folhas, para a última chávena não amargar.",
+      "Serve às voltas, um pouco em cada chávena, para todos terem a mesma intensidade."
+     ],
+     "q": "Com quem mais gostarias de partilhar um bule de chá?",
+     "c": "Prepara hoje um bule para pelo menos duas pessoas, aquece antes as chávenas e pergunta o que sentem."
+    },
+    "pt_BR": {
+     "t": "Fazendo chá para os amigos",
+     "g": "Prepare um bule para várias pessoas e sirva quente e na hora certa.",
+     "p": [
+      "Calcule cerca de 2 a 3 gramas de folha por xícara e aqueça antes o bule e as xícaras com um pouco de água quente.",
+      "Quando o tempo acabar, sirva todo o chá ou retire as folhas, para a última xícara não amargar.",
+      "Sirva em rodadas, um pouco em cada xícara, para todo mundo ter a mesma intensidade."
+     ],
+     "q": "Com quem você mais gostaria de dividir um bule de chá?",
+     "c": "Prepare hoje um bule para pelo menos duas pessoas, aqueça antes as xícaras e pergunte o que elas sentem."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea at work",
+     "g": "Make good tea at the office with limited tools and a few simple habits.",
+     "p": [
+      "If the office kettle only boils, let the water rest a few minutes before brewing green or white tea.",
+      "A mug with a lid and a built-in infuser, or a good bag, makes loose leaf easy at your desk.",
+      "Set a phone timer so meetings and emails do not turn your cup bitter."
+     ],
+     "q": "What do people usually drink where you work or study?",
+     "c": "Bring one good tea to work or class tomorrow and brew it with a timer on your phone."
+    },
+    "de": {
+     "t": "Tee bei der Arbeit",
+     "g": "Mach im Büro guten Tee mit wenig Ausrüstung und ein paar einfachen Gewohnheiten.",
+     "p": [
+      "Wenn der Bürokocher nur kocht, lass das Wasser ein paar Minuten stehen, bevor du Grün- oder Weißtee aufgießt.",
+      "Ein Becher mit Deckel und eingebautem Sieb oder ein guter Beutel macht losen Tee am Schreibtisch einfach.",
+      "Stell einen Handy-Timer, damit Meetings und E-Mails deine Tasse nicht bitter werden lassen."
+     ],
+     "q": "Was trinken die Leute normalerweise dort, wo du arbeitest oder lernst?",
+     "c": "Nimm morgen einen guten Tee mit zur Arbeit oder zum Unterricht und brühe ihn mit Handy-Timer."
+    },
+    "es": {
+     "t": "Té en el trabajo",
+     "g": "Prepara buen té en la oficina con pocas herramientas y algunos hábitos sencillos.",
+     "p": [
+      "Si el hervidor de la oficina solo hierve, deja reposar el agua unos minutos antes de preparar té verde o blanco.",
+      "Una taza con tapa e infusor incorporado, o una buena bolsita, facilita el té a granel en tu mesa.",
+      "Pon un temporizador en el móvil para que reuniones y correos no amarguen tu taza."
+     ],
+     "q": "¿Qué suele beber la gente donde trabajas o estudias?",
+     "c": "Lleva mañana un buen té al trabajo o a clase y prepáralo con un temporizador en el móvil."
+    },
+    "fr": {
+     "t": "Le thé au travail",
+     "g": "Prépare un bon thé au bureau avec peu d'outils et quelques habitudes simples.",
+     "p": [
+      "Si la bouilloire du bureau ne fait que bouillir, laisse reposer l'eau quelques minutes avant un thé vert ou blanc.",
+      "Une tasse avec couvercle et infuseur intégré, ou un bon sachet, rend le vrac facile au bureau.",
+      "Règle un minuteur sur ton téléphone pour que réunions et mails ne rendent pas ta tasse amère."
+     ],
+     "q": "Que boivent d'habitude les gens là où tu travailles ou étudies ?",
+     "c": "Apporte demain un bon thé au travail ou en cours et infuse-le avec un minuteur sur ton téléphone."
+    },
+    "it": {
+     "t": "Il tè al lavoro",
+     "g": "Prepara un buon tè in ufficio con pochi strumenti e qualche semplice abitudine.",
+     "p": [
+      "Se il bollitore dell'ufficio arriva solo a ebollizione, lascia riposare l'acqua qualche minuto prima del tè verde o bianco.",
+      "Una tazza con coperchio e infusore integrato, o una buona bustina, rende facile lo sfuso alla scrivania.",
+      "Imposta un timer sul telefono, così riunioni ed e-mail non rendono amara la tua tazza."
+     ],
+     "q": "Cosa bevono di solito le persone dove lavori o studi?",
+     "c": "Domani porta un buon tè al lavoro o a lezione e preparalo con un timer sul telefono."
+    },
+    "pt": {
+     "t": "Chá no trabalho",
+     "g": "Faz bom chá no escritório com poucas ferramentas e alguns hábitos simples.",
+     "p": [
+      "Se a chaleira do escritório só ferve, deixa a água repousar uns minutos antes de preparar chá verde ou branco.",
+      "Uma caneca com tampa e infusor incorporado, ou uma boa saqueta, facilita o chá a granel na secretária.",
+      "Põe um temporizador no telemóvel para reuniões e e-mails não amargarem a tua chávena."
+     ],
+     "q": "O que costumam beber as pessoas onde trabalhas ou estudas?",
+     "c": "Leva amanhã um bom chá para o trabalho ou para as aulas e prepara-o com um temporizador no telemóvel."
+    },
+    "pt_BR": {
+     "t": "Chá no trabalho",
+     "g": "Faça um bom chá no escritório com poucas ferramentas e alguns hábitos simples.",
+     "p": [
+      "Se a chaleira do escritório só ferve, deixe a água descansar alguns minutos antes de preparar chá verde ou branco.",
+      "Uma caneca com tampa e infusor embutido, ou um bom sachê, facilita o chá a granel na sua mesa.",
+      "Coloque um timer no celular para reuniões e e-mails não deixarem sua xícara amarga."
+     ],
+     "q": "O que as pessoas costumam beber onde você trabalha ou estuda?",
+     "c": "Leve amanhã um bom chá para o trabalho ou a aula e prepare com um timer no celular."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel tea kit",
+     "g": "Pack a small tin, a folding infuser and a few favourite teas for the road.",
+     "p": [
+      "Choose small, airtight tins or resealable pouches and label each tea with its name and brewing time.",
+      "A foldable silicone infuser or a few empty fillable tea bags take almost no space.",
+      "Pick robust teas that forgive hotel kettles, such as black tea, rooibos or a roasted oolong."
+     ],
+     "q": "Where would you love to drink a cup of tea while travelling?",
+     "c": "Put together a mini travel kit today with two teas and a way to brew them anywhere."
+    },
+    "de": {
+     "t": "Tee-Reiseset",
+     "g": "Pack eine kleine Dose, ein faltbares Sieb und ein paar Lieblingstees für unterwegs ein.",
+     "p": [
+      "Wähle kleine, luftdichte Dosen oder wiederverschließbare Beutel und beschrifte jeden Tee mit Name und Ziehzeit.",
+      "Ein faltbares Silikonsieb oder ein paar leere, befüllbare Teebeutel brauchen kaum Platz.",
+      "Nimm robuste Tees, die Hotelwasserkocher verzeihen, etwa Schwarztee, Rooibos oder gerösteten Oolong."
+     ],
+     "q": "Wo würdest du auf Reisen am liebsten eine Tasse Tee trinken?",
+     "c": "Stell heute ein Mini-Reiseset mit zwei Tees und einer Möglichkeit zusammen, sie überall aufzubrühen."
+    },
+    "es": {
+     "t": "Kit de té para viajar",
+     "g": "Prepara una latita, un infusor plegable y algunos tés favoritos para el camino.",
+     "p": [
+      "Elige latas pequeñas y herméticas o bolsas con cierre, y etiqueta cada té con su nombre y tiempo.",
+      "Un infusor plegable de silicona o unas bolsitas vacías para rellenar casi no ocupan espacio.",
+      "Escoge tés resistentes que perdonen los hervidores de hotel, como té negro, rooibos o un oolong tostado."
+     ],
+     "q": "¿Dónde te encantaría tomar una taza de té durante un viaje?",
+     "c": "Monta hoy un mini kit de viaje con dos tés y una forma de prepararlos en cualquier sitio."
+    },
+    "fr": {
+     "t": "Le kit thé de voyage",
+     "g": "Emporte une petite boîte, un infuseur pliable et quelques thés préférés sur la route.",
+     "p": [
+      "Choisis de petites boîtes hermétiques ou des sachets refermables, et étiquette chaque thé avec son nom et son temps.",
+      "Un infuseur pliable en silicone ou quelques sachets vides à remplir ne prennent presque pas de place.",
+      "Prends des thés robustes qui pardonnent les bouilloires d'hôtel, comme un noir, un rooibos ou un oolong torréfié."
+     ],
+     "q": "Où aimerais-tu boire une tasse de thé en voyage ?",
+     "c": "Prépare aujourd'hui un mini kit de voyage avec deux thés et un moyen de les infuser partout."
+    },
+    "it": {
+     "t": "Kit del tè da viaggio",
+     "g": "Prepara una piccola latta, un infusore pieghevole e qualche tè preferito per il viaggio.",
+     "p": [
+      "Scegli piccole latte ermetiche o buste richiudibili ed etichetta ogni tè con nome e tempo di infusione.",
+      "Un infusore pieghevole in silicone o qualche filtro vuoto da riempire non occupano quasi spazio.",
+      "Scegli tè robusti che perdonano i bollitori d'albergo, come tè nero, rooibos o un oolong tostato."
+     ],
+     "q": "Dove ti piacerebbe bere una tazza di tè durante un viaggio?",
+     "c": "Prepara oggi un mini kit da viaggio con due tè e un modo per prepararli ovunque."
+    },
+    "pt": {
+     "t": "Kit de chá para viagem",
+     "g": "Leva uma pequena lata, um infusor dobrável e alguns chás preferidos para a estrada.",
+     "p": [
+      "Escolhe latas pequenas e herméticas ou sacos com fecho, e identifica cada chá com o nome e o tempo de infusão.",
+      "Um infusor dobrável de silicone ou umas saquetas vazias para encher quase não ocupam espaço.",
+      "Escolhe chás resistentes que perdoam as chaleiras de hotel, como chá preto, rooibos ou um oolong tostado."
+     ],
+     "q": "Onde adorarias beber uma chávena de chá durante uma viagem?",
+     "c": "Monta hoje um mini kit de viagem com dois chás e uma forma de os preparar em qualquer lado."
+    },
+    "pt_BR": {
+     "t": "Kit de chá para viagem",
+     "g": "Leve uma latinha, um infusor dobrável e alguns chás favoritos para a estrada.",
+     "p": [
+      "Escolha latas pequenas e herméticas ou pacotes com fecho, e identifique cada chá com o nome e o tempo de infusão.",
+      "Um infusor dobrável de silicone ou alguns sachês vazios para encher quase não ocupam espaço.",
+      "Escolha chás resistentes que perdoam as chaleiras de hotel, como chá preto, rooibos ou um oolong tostado."
+     ],
+     "q": "Onde você adoraria tomar uma xícara de chá durante uma viagem?",
+     "c": "Monte hoje um mini kit de viagem com dois chás e um jeito de prepará-los em qualquer lugar."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea in a thermos",
+     "g": "Brew tea for later without bitterness by removing the leaves before it goes in the flask.",
+     "p": [
+      "Leaves left in a hot thermos keep steeping for hours and the tea turns bitter and stewed.",
+      "Brew normally in a pot or mug, strain out all the leaves, then pour the tea into a pre-warmed thermos.",
+      "Robust teas like black tea, roasted oolong and rooibos hold their flavour best over time."
+     ],
+     "q": "Do you take hot drinks with you on walks, trips or long days out?",
+     "c": "Brew a strained tea into a warmed thermos this morning and taste it again a few hours later."
+    },
+    "de": {
+     "t": "Tee in der Thermoskanne",
+     "g": "Bereite Tee für später ohne Bitterkeit zu, indem du die Blätter entfernst, bevor er in die Flasche kommt.",
+     "p": [
+      "Blätter, die in einer heißen Thermoskanne bleiben, ziehen stundenlang weiter, und der Tee wird bitter.",
+      "Brühe normal in Kanne oder Becher, seihe alle Blätter ab und gieß den Tee in eine vorgewärmte Thermoskanne.",
+      "Robuste Tees wie Schwarztee, gerösteter Oolong und Rooibos halten ihr Aroma über Zeit am besten."
+     ],
+     "q": "Nimmst du heiße Getränke mit auf Spaziergänge, Ausflüge oder lange Tage unterwegs?",
+     "c": "Füll heute Morgen abgeseihten Tee in eine vorgewärmte Thermoskanne und probiere ihn ein paar Stunden später."
+    },
+    "es": {
+     "t": "Té en un termo",
+     "g": "Prepara té para más tarde sin amargor retirando las hojas antes de meterlo en el termo.",
+     "p": [
+      "Las hojas que se quedan en un termo caliente siguen infusionando durante horas y el té amarga.",
+      "Prepara el té como siempre en tetera o taza, cuela todas las hojas y vierte el té en un termo precalentado.",
+      "Los tés robustos como el negro, el oolong tostado y el rooibos mantienen mejor su sabor con el tiempo."
+     ],
+     "q": "¿Llevas bebidas calientes en paseos, excursiones o días largos fuera de casa?",
+     "c": "Esta mañana vierte un té colado en un termo precalentado y pruébalo de nuevo unas horas después."
+    },
+    "fr": {
+     "t": "Le thé en thermos",
+     "g": "Prépare du thé pour plus tard sans amertume en retirant les feuilles avant de le verser dans la bouteille.",
+     "p": [
+      "Les feuilles laissées dans un thermos chaud infusent encore des heures, et le thé devient amer.",
+      "Infuse normalement en théière ou en tasse, filtre toutes les feuilles, puis verse le thé dans un thermos préchauffé.",
+      "Les thés robustes comme le noir, l'oolong torréfié et le rooibos gardent le mieux leur goût au fil des heures."
+     ],
+     "q": "Emportes-tu des boissons chaudes en balade, en voyage ou lors de longues journées dehors ?",
+     "c": "Ce matin, verse un thé filtré dans un thermos préchauffé et goûte-le à nouveau quelques heures plus tard."
+    },
+    "it": {
+     "t": "Il tè nel thermos",
+     "g": "Prepara il tè per dopo senza amaro togliendo le foglie prima di versarlo nel thermos.",
+     "p": [
+      "Le foglie lasciate in un thermos caldo continuano a infondere per ore e il tè diventa amaro.",
+      "Prepara il tè come al solito in teiera o tazza, filtra tutte le foglie e versalo in un thermos già scaldato.",
+      "Tè robusti come il nero, l'oolong tostato e il rooibos mantengono meglio il sapore nel tempo."
+     ],
+     "q": "Porti bevande calde con te durante passeggiate, gite o lunghe giornate fuori?",
+     "c": "Stamattina versa un tè filtrato in un thermos scaldato e riassaggialo qualche ora dopo."
+    },
+    "pt": {
+     "t": "Chá no termo",
+     "g": "Prepara chá para mais tarde sem amargor tirando as folhas antes de o pôr no termo.",
+     "p": [
+      "As folhas deixadas num termo quente continuam a infundir durante horas e o chá amarga.",
+      "Prepara o chá como sempre no bule ou na caneca, coa todas as folhas e deita o chá num termo pré-aquecido.",
+      "Chás robustos como o preto, o oolong tostado e o rooibos mantêm melhor o sabor ao longo do tempo."
+     ],
+     "q": "Levas bebidas quentes em passeios, viagens ou dias longos fora de casa?",
+     "c": "Esta manhã deita um chá coado num termo aquecido e prova-o outra vez umas horas depois."
+    },
+    "pt_BR": {
+     "t": "Chá na garrafa térmica",
+     "g": "Prepare chá para mais tarde sem amargor tirando as folhas antes de colocar na garrafa térmica.",
+     "p": [
+      "Folhas deixadas numa garrafa térmica quente continuam infusionando por horas e o chá amarga.",
+      "Prepare o chá normalmente no bule ou na caneca, coe todas as folhas e despeje numa garrafa térmica pré-aquecida.",
+      "Chás resistentes como o preto, o oolong tostado e o rooibos mantêm melhor o sabor com o tempo."
+     ],
+     "q": "Você leva bebidas quentes em passeios, viagens ou dias longos fora de casa?",
+     "c": "Hoje de manhã coloque um chá coado numa garrafa térmica aquecida e prove de novo algumas horas depois."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common brewing mistakes",
+     "g": "Spot the classic mistakes, water too hot, steeping too long, stale leaf and dirty pots, and fix them.",
+     "p": [
+      "Water too hot and steeps too long are the top causes of bitter tea, especially with greens.",
+      "Old, badly stored leaf tastes flat and dusty; buy smaller amounts and keep them sealed.",
+      "Tea oils and stains build up in pots and infusers; rinse after every use and clean them regularly."
+     ],
+     "q": "Which of these mistakes have you made before?",
+     "c": "Check your tea routine against today's four mistakes and fix one of them in your next cup."
+    },
+    "de": {
+     "t": "Häufige Zubereitungsfehler",
+     "g": "Erkenne die klassischen Fehler, zu heißes Wasser, zu langes Ziehen, alter Tee und schmutzige Kannen, und behebe sie.",
+     "p": [
+      "Zu heißes Wasser und zu lange Ziehzeit sind die Hauptursachen für bitteren Tee, besonders bei Grüntee.",
+      "Alter, schlecht gelagerter Tee schmeckt flach und staubig; kauf kleinere Mengen und halte sie verschlossen.",
+      "Teeöle und Beläge sammeln sich in Kannen und Sieben; spüle nach jedem Gebrauch und reinige sie regelmäßig."
+     ],
+     "q": "Welche dieser Fehler hast du schon einmal gemacht?",
+     "c": "Prüfe deine Teeroutine auf die vier Fehler von heute und behebe einen davon bei deiner nächsten Tasse."
+    },
+    "es": {
+     "t": "Errores comunes al preparar té",
+     "g": "Detecta los errores clásicos, agua demasiado caliente, infusión larga, hoja vieja y teteras sucias, y corrígelos.",
+     "p": [
+      "El agua demasiado caliente y la infusión demasiado larga son las causas principales del té amargo, sobre todo en los verdes.",
+      "La hoja vieja y mal guardada sabe plana y a polvo; compra menos cantidad y mantenla cerrada.",
+      "Los aceites y manchas del té se acumulan en teteras e infusores; acláralos tras cada uso y límpialos a menudo."
+     ],
+     "q": "¿Cuál de estos errores has cometido alguna vez?",
+     "c": "Revisa tu rutina de té con los cuatro errores de hoy y corrige uno en tu próxima taza."
+    },
+    "fr": {
+     "t": "Les erreurs d'infusion courantes",
+     "g": "Repère les erreurs classiques, eau trop chaude, infusion trop longue, feuilles éventées et théière sale, et corrige-les.",
+     "p": [
+      "Une eau trop chaude et une infusion trop longue sont les premières causes d'un thé amer, surtout pour les verts.",
+      "Des feuilles vieilles et mal conservées ont un goût plat et poussiéreux ; achète de petites quantités, bien fermées.",
+      "Huiles et dépôts de thé s'accumulent dans théières et infuseurs ; rince après chaque usage et nettoie régulièrement."
+     ],
+     "q": "Laquelle de ces erreurs as-tu déjà commise ?",
+     "c": "Compare ta routine aux quatre erreurs du jour et corrige-en une dans ta prochaine tasse."
+    },
+    "it": {
+     "t": "Gli errori più comuni",
+     "g": "Riconosci gli errori classici, acqua troppo calda, infusione troppo lunga, foglie vecchie e teiere sporche, e correggili.",
+     "p": [
+      "Acqua troppo calda e infusioni troppo lunghe sono le cause principali del tè amaro, soprattutto con i verdi.",
+      "Le foglie vecchie e mal conservate sanno di piatto e di polvere; compra quantità piccole e tienile chiuse.",
+      "Oli e macchie del tè si accumulano in teiere e infusori; sciacquali dopo ogni uso e puliscili spesso."
+     ],
+     "q": "Quale di questi errori hai già fatto?",
+     "c": "Confronta la tua routine con i quattro errori di oggi e correggine uno nella prossima tazza."
+    },
+    "pt": {
+     "t": "Erros comuns na preparação",
+     "g": "Identifica os erros clássicos, água quente demais, infusão longa, folha velha e bules sujos, e corrige-os.",
+     "p": [
+      "Água quente demais e infusões longas demais são as principais causas de chá amargo, sobretudo nos verdes.",
+      "A folha velha e mal guardada sabe a pouco e a pó; compra quantidades menores e mantém-nas fechadas.",
+      "Os óleos e manchas do chá acumulam-se em bules e infusores; passa-os por água após cada uso e limpa-os com frequência."
+     ],
+     "q": "Qual destes erros já cometeste?",
+     "c": "Compara a tua rotina com os quatro erros de hoje e corrige um deles na próxima chávena."
+    },
+    "pt_BR": {
+     "t": "Erros comuns no preparo",
+     "g": "Identifique os erros clássicos, água quente demais, infusão longa, folha velha e bule sujo, e corrija cada um.",
+     "p": [
+      "Água quente demais e infusão longa demais são as principais causas de chá amargo, principalmente nos verdes.",
+      "Folha velha e mal guardada fica sem graça e com gosto de pó; compre quantidades menores e mantenha fechadas.",
+      "Óleos e manchas do chá se acumulam em bules e infusores; enxágue depois de cada uso e limpe com frequência."
+     ],
+     "q": "Qual desses erros você já cometeu?",
+     "c": "Compare sua rotina com os quatro erros de hoje e corrija um deles na próxima xícara."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rescuing a bitter cup",
+     "g": "Learn what to change next time when a cup tastes bitter: temperature, time, leaf amount or the tea itself.",
+     "p": [
+      "Change one thing at a time: first lower the temperature, then shorten the steep, then use less leaf.",
+      "If the cup is already bitter, a splash of milk or a little honey can soften it, or simply dilute it with hot water.",
+      "Some teas are naturally brisk or bitter; if nothing helps, the tea itself may not suit your taste."
+     ],
+     "q": "Have you ever had a cup so bitter that you could not finish it?",
+     "c": "Brew a tea you once found bitter, change only one factor, and see if the result improves."
+    },
+    "de": {
+     "t": "Eine bittere Tasse retten",
+     "g": "Lerne, was du beim nächsten Mal änderst, wenn Tee bitter schmeckt: Temperatur, Zeit, Blattmenge oder den Tee selbst.",
+     "p": [
+      "Ändere immer nur eine Sache: erst die Temperatur senken, dann die Ziehzeit kürzen, dann weniger Blatt nehmen.",
+      "Ist die Tasse schon bitter, mildern ein Schuss Milch, etwas Honig oder einfach heißes Wasser zum Verdünnen.",
+      "Manche Tees sind von Natur aus herb; wenn nichts hilft, passt der Tee vielleicht einfach nicht zu deinem Geschmack."
+     ],
+     "q": "Hattest du schon einmal eine Tasse, die so bitter war, dass du sie nicht austrinken konntest?",
+     "c": "Brühe einen Tee, der dir einmal bitter vorkam, ändere nur einen Faktor und schau, ob es besser wird."
+    },
+    "es": {
+     "t": "Salvar una taza amarga",
+     "g": "Aprende qué cambiar la próxima vez cuando una taza sabe amarga: temperatura, tiempo, cantidad de hoja o el propio té.",
+     "p": [
+      "Cambia una sola cosa cada vez: primero baja la temperatura, luego acorta la infusión y luego usa menos hoja.",
+      "Si la taza ya está amarga, un chorrito de leche o un poco de miel la suavizan, o rebájala con agua caliente.",
+      "Algunos tés son ásperos por naturaleza; si nada funciona, quizá ese té no vaya con tu gusto."
+     ],
+     "q": "¿Alguna vez una taza te ha sabido tan amarga que no pudiste terminarla?",
+     "c": "Prepara un té que una vez te pareció amargo, cambia solo un factor y mira si mejora."
+    },
+    "fr": {
+     "t": "Sauver une tasse amère",
+     "g": "Apprends quoi changer la prochaine fois qu'une tasse est amère : température, temps, quantité de feuilles ou le thé lui-même.",
+     "p": [
+      "Change une seule chose à la fois : baisse d'abord la température, puis raccourcis l'infusion, puis mets moins de feuilles.",
+      "Si la tasse est déjà amère, un trait de lait ou un peu de miel l'adoucit, ou allonge-la simplement d'eau chaude.",
+      "Certains thés sont naturellement vifs ou amers ; si rien n'aide, ce thé ne correspond peut-être pas à ton goût."
+     ],
+     "q": "As-tu déjà eu une tasse si amère que tu n'as pas pu la finir ?",
+     "c": "Infuse un thé que tu avais trouvé amer, change un seul facteur et vois si le résultat s'améliore."
+    },
+    "it": {
+     "t": "Salvare una tazza amara",
+     "g": "Scopri cosa cambiare la prossima volta quando una tazza è amara: temperatura, tempo, quantità di foglie o il tè stesso.",
+     "p": [
+      "Cambia una cosa per volta: prima abbassa la temperatura, poi accorcia l'infusione, poi usa meno foglie.",
+      "Se la tazza è già amara, un goccio di latte o un po' di miele la ammorbidiscono, oppure allungala con acqua calda.",
+      "Alcuni tè sono vivaci o amari per natura; se nulla aiuta, forse quel tè non fa per il tuo gusto."
+     ],
+     "q": "Ti è mai capitata una tazza così amara da non riuscire a finirla?",
+     "c": "Prepara un tè che una volta ti è sembrato amaro, cambia un solo fattore e guarda se migliora."
+    },
+    "pt": {
+     "t": "Salvar uma chávena amarga",
+     "g": "Aprende o que mudar da próxima vez que uma chávena saiba amarga: temperatura, tempo, quantidade de folha ou o próprio chá.",
+     "p": [
+      "Muda uma coisa de cada vez: primeiro baixa a temperatura, depois encurta a infusão e depois usa menos folha.",
+      "Se a chávena já está amarga, um pouco de leite ou de mel suaviza-a, ou dilui-a simplesmente com água quente.",
+      "Alguns chás são adstringentes por natureza; se nada ajudar, talvez esse chá não seja do teu gosto."
+     ],
+     "q": "Já te calhou uma chávena tão amarga que não a conseguiste acabar?",
+     "c": "Prepara um chá que já te pareceu amargo, muda só um fator e vê se o resultado melhora."
+    },
+    "pt_BR": {
+     "t": "Salvando uma xícara amarga",
+     "g": "Aprenda o que mudar da próxima vez que a xícara ficar amarga: temperatura, tempo, quantidade de folha ou o próprio chá.",
+     "p": [
+      "Mude uma coisa de cada vez: primeiro baixe a temperatura, depois encurte a infusão e depois use menos folha.",
+      "Se a xícara já está amarga, um pouco de leite ou de mel suaviza, ou simplesmente dilua com água quente.",
+      "Alguns chás são adstringentes por natureza; se nada ajudar, talvez esse chá não combine com seu gosto."
+     ],
+     "q": "Você já tomou uma xícara tão amarga que não conseguiu terminar?",
+     "c": "Prepare um chá que já pareceu amargo para você, mude só um fator e veja se o resultado melhora."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: brewing confidence",
+     "g": "Look back at tools, timing, tisanes and pairings, then brew a cup for someone else.",
+     "p": [
+      "Good tools give leaves room: a roomy infuser or pot, a strainer, a timer and a thermos for later.",
+      "You now know cold brew, multiple infusions, tisanes like mint, rooibos and hibiscus, and how to taste with all senses.",
+      "Pair light teas with light food and strong teas with rich food, and fix bitterness one step at a time."
+     ],
+     "q": "Which skill from the last month are you most proud of?",
+     "c": "Brew a cup for a friend or family member using what you learned and tell them one fact about that tea."
+    },
+    "de": {
+     "t": "Rückblick: sicher aufbrühen",
+     "g": "Blick zurück auf Werkzeuge, Zeiten, Kräuteraufgüsse und Kombinationen, und brühe dann eine Tasse für jemand anderen.",
+     "p": [
+      "Gute Werkzeuge geben den Blättern Raum: geräumiges Sieb oder Kanne, Abseiher, Timer und Thermoskanne für später.",
+      "Du kennst jetzt Cold Brew, mehrere Aufgüsse, Aufgüsse wie Minze, Rooibos und Hibiskus und Verkosten mit allen Sinnen.",
+      "Leichte Tees zu leichtem Essen, kräftige zu reichhaltigem, und Bitterkeit Schritt für Schritt beheben."
+     ],
+     "q": "Auf welche Fähigkeit aus dem letzten Monat bist du am stolzesten?",
+     "c": "Brühe einer Freundin, einem Freund oder Familienmitglied eine Tasse und erzähl ihnen eine Tatsache über diesen Tee."
+    },
+    "es": {
+     "t": "Repaso: preparar con confianza",
+     "g": "Repasa utensilios, tiempos, infusiones y maridajes, y luego prepara una taza para otra persona.",
+     "p": [
+      "Los buenos utensilios dan espacio a la hoja: infusor amplio o tetera, colador, temporizador y termo para después.",
+      "Ya conoces el cold brew, las infusiones múltiples, tisanas como menta, rooibos e hibisco y catar con todos los sentidos.",
+      "Tés ligeros con comida ligera, tés fuertes con comida contundente, y corrige el amargor paso a paso."
+     ],
+     "q": "¿De qué habilidad del último mes estás más orgulloso u orgullosa?",
+     "c": "Prepara una taza para un amigo o familiar con lo aprendido y cuéntale un dato sobre ese té."
+    },
+    "fr": {
+     "t": "Bilan : infuser avec assurance",
+     "g": "Reviens sur les outils, les temps, les tisanes et les accords, puis prépare une tasse pour quelqu'un d'autre.",
+     "p": [
+      "De bons outils laissent de la place aux feuilles : infuseur large ou théière, passoire, minuteur et thermos pour plus tard.",
+      "Tu connais l'infusion à froid, les infusions multiples, les tisanes comme menthe, rooibos et hibiscus, et la dégustation par tous les sens.",
+      "Thés légers avec plats légers, thés corsés avec plats riches, et corrige l'amertume une étape à la fois."
+     ],
+     "q": "De quelle compétence du mois dernier es-tu le plus fier ou la plus fière ?",
+     "c": "Prépare une tasse pour un ami ou un proche avec ce que tu as appris et partage un fait sur ce thé."
+    },
+    "it": {
+     "t": "Ripasso: preparare con sicurezza",
+     "g": "Ripercorri strumenti, tempi, tisane e abbinamenti, poi prepara una tazza per qualcun altro.",
+     "p": [
+      "I buoni strumenti danno spazio alle foglie: infusore ampio o teiera, colino, timer e thermos per dopo.",
+      "Ora conosci il cold brew, le infusioni multiple, tisane come menta, rooibos e ibisco e l'assaggio con tutti i sensi.",
+      "Tè leggeri con cibi leggeri, tè forti con cibi ricchi, e correggi l'amaro un passo alla volta."
+     ],
+     "q": "Di quale abilità dell'ultimo mese sei più orgoglioso o orgogliosa?",
+     "c": "Prepara una tazza per un amico o un familiare con ciò che hai imparato e raccontagli una curiosità su quel tè."
+    },
+    "pt": {
+     "t": "Revisão: preparar com confiança",
+     "g": "Revê utensílios, tempos, infusões e harmonizações, e depois prepara uma chávena para outra pessoa.",
+     "p": [
+      "Bons utensílios dão espaço à folha: infusor largo ou bule, coador, temporizador e termo para mais tarde.",
+      "Já conheces o cold brew, as infusões múltiplas, tisanas como hortelã, rooibos e hibisco, e a prova com todos os sentidos.",
+      "Chás leves com comida leve, chás fortes com comida rica, e corrige o amargor um passo de cada vez."
+     ],
+     "q": "De que competência do último mês te orgulhas mais?",
+     "c": "Prepara uma chávena para um amigo ou familiar com o que aprendeste e conta-lhe um facto sobre esse chá."
+    },
+    "pt_BR": {
+     "t": "Revisão: preparando com confiança",
+     "g": "Revise utensílios, tempos, infusões e harmonizações, e depois prepare uma xícara para outra pessoa.",
+     "p": [
+      "Bons utensílios dão espaço à folha: infusor largo ou bule, coador, timer e garrafa térmica para depois.",
+      "Você já conhece o cold brew, as infusões múltiplas, tisanas como hortelã, rooibos e hibisco, e a degustação com todos os sentidos.",
+      "Chás leves com comida leve, chás fortes com comida pesada, e corrija o amargor um passo de cada vez."
+     ],
+     "q": "De qual habilidade do último mês você mais se orgulha?",
+     "c": "Prepare uma xícara para um amigo ou familiar com o que aprendeu e conte um fato sobre esse chá."
+    }
+   }
+  }
+ ]
+}

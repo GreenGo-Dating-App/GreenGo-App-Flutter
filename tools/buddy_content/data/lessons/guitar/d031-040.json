@@ -1,0 +1,835 @@
+{
+ "topic": "guitar",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading guitar tablature",
+     "g": "Understand how tab lines show strings and numbers show frets.",
+     "p": [
+      "Tab has six lines, one per string. The top line is the thin high E, the bottom line is the thick low E.",
+      "A number on a line tells you which fret to play on that string; 0 means play the string open.",
+      "Read tab left to right like text. Numbers stacked on top of each other are played together, like a chord."
+     ],
+     "q": "Does tab look easier to you than chord diagrams, or harder?",
+     "c": "Write a tab line by line on paper for the open strings low to high: 0 on each line, one after another, then play it."
+    },
+    "de": {
+     "t": "Gitarrentabulatur lesen",
+     "g": "Verstehe, wie in Tabs Linien die Saiten und Zahlen die Bünde zeigen.",
+     "p": [
+      "Tabs haben sechs Linien, eine pro Saite. Oben ist die dünne hohe E-Saite, unten die dicke tiefe E-Saite.",
+      "Eine Zahl auf einer Linie sagt dir, welcher Bund auf dieser Saite gespielt wird; 0 heißt Leersaite.",
+      "Lies Tabs von links nach rechts wie Text. Übereinanderstehende Zahlen spielst du gleichzeitig, wie einen Akkord."
+     ],
+     "q": "Wirken Tabs auf dich leichter als Griffbilder oder schwerer?",
+     "c": "Schreib auf Papier einen Tab für die Leersaiten von tief nach hoch: auf jeder Linie eine 0 nacheinander, dann spiel ihn."
+    },
+    "es": {
+     "t": "Leer tablatura de guitarra",
+     "g": "Entender cómo las líneas de la tablatura son cuerdas y los números son trastes.",
+     "p": [
+      "La tablatura tiene seis líneas, una por cuerda. Arriba va el Mi agudo y fino; abajo, el Mi grave y grueso.",
+      "Un número sobre una línea indica qué traste pisar en esa cuerda; el 0 significa cuerda al aire.",
+      "Se lee de izquierda a derecha, como un texto. Los números apilados se tocan a la vez, como un acorde."
+     ],
+     "q": "¿La tablatura te parece más fácil que los diagramas de acordes, o más difícil?",
+     "c": "Escribe en papel una tablatura de las cuerdas al aire de grave a aguda: un 0 en cada línea, uno tras otro, y tócala."
+    },
+    "fr": {
+     "t": "Lire une tablature",
+     "g": "Comprendre comment, en tablature, les lignes sont des cordes et les chiffres des cases.",
+     "p": [
+      "La tablature a six lignes, une par corde. En haut le Mi aigu et fin, en bas le Mi grave et gros.",
+      "Un chiffre sur une ligne indique la case à jouer sur cette corde ; 0 signifie corde à vide.",
+      "On lit de gauche à droite comme un texte. Des chiffres empilés se jouent ensemble, comme un accord."
+     ],
+     "q": "La tablature te semble-t-elle plus facile que les diagrammes d'accords, ou plus difficile ?",
+     "c": "Écris sur papier une tablature des cordes à vide du grave à l'aigu : un 0 sur chaque ligne, l'un après l'autre, puis joue-la."
+    },
+    "it": {
+     "t": "Leggere l'intavolatura",
+     "g": "Capire come nella tablatura le linee sono corde e i numeri sono tasti.",
+     "p": [
+      "La tablatura ha sei linee, una per corda. In alto c'è il Mi cantino sottile, in basso il Mi basso spesso.",
+      "Un numero su una linea indica quale tasto suonare su quella corda; 0 significa corda a vuoto.",
+      "Si legge da sinistra a destra come un testo. Numeri impilati si suonano insieme, come un accordo."
+     ],
+     "q": "La tablatura ti sembra più facile dei diagrammi degli accordi, o più difficile?",
+     "c": "Scrivi su carta una tablatura delle corde a vuoto dal basso all'acuto: uno 0 su ogni linea, uno dopo l'altro, poi suonala."
+    },
+    "pt": {
+     "t": "Ler tablatura de guitarra",
+     "g": "Perceber como na tablatura as linhas são cordas e os números são casas.",
+     "p": [
+      "A tablatura tem seis linhas, uma por corda. Em cima está o Mi agudo e fino; em baixo, o Mi grave e grosso.",
+      "Um número numa linha diz que casa tocar nessa corda; 0 significa corda solta.",
+      "Lê-se da esquerda para a direita, como um texto. Números empilhados tocam-se juntos, como um acorde."
+     ],
+     "q": "A tablatura parece-te mais fácil do que os diagramas de acordes, ou mais difícil?",
+     "c": "Escreve em papel uma tablatura das cordas soltas da grave à aguda: um 0 em cada linha, um a seguir ao outro, e toca-a."
+    },
+    "pt_BR": {
+     "t": "Lendo tablatura",
+     "g": "Entender como na tablatura as linhas são cordas e os números são casas.",
+     "p": [
+      "A tablatura tem seis linhas, uma por corda. Em cima fica o Mi agudo e fino; embaixo, o Mi grave e grosso.",
+      "Um número numa linha diz qual casa tocar naquela corda; 0 quer dizer corda solta.",
+      "Lê-se da esquerda para a direita, como um texto. Números empilhados são tocados juntos, como um acorde."
+     ],
+     "q": "A tablatura parece mais fácil para você do que os diagramas de acordes, ou mais difícil?",
+     "c": "Escreva no papel uma tablatura das cordas soltas da grave à aguda: um 0 em cada linha, um depois do outro, e toque."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Playing a melody from tab",
+     "g": "Play a short, simple tune on the top strings read from tablature.",
+     "p": [
+      "Try the start of Ode to Joy. High E string: 0 0 1 3 3 1 0. B string: 3 1 1 3. High E: 0 0. B string: 3 3.",
+      "Use finger 1 for fret 1 and finger 3 for fret 3, keeping your hand in first position.",
+      "Play slowly with even downstrokes. Once the notes are right, sing or hum along to check the rhythm."
+     ],
+     "q": "Which melody would you love to learn from tab next?",
+     "c": "Play the Ode to Joy phrase 5 times in a row without stopping, then try it at a slightly faster tempo."
+    },
+    "de": {
+     "t": "Eine Melodie aus Tabs spielen",
+     "g": "Spiel eine kurze, einfache Melodie auf den hohen Saiten nach Tab.",
+     "p": [
+      "Probier den Anfang der Ode an die Freude. Hohe E-Saite: 0 0 1 3 3 1 0. H-Saite: 3 1 1 3. Hohe E: 0 0. H-Saite: 3 3.",
+      "Nimm Finger 1 für Bund 1 und Finger 3 für Bund 3 und bleib mit der Hand in der ersten Lage.",
+      "Spiel langsam mit gleichmäßigen Abschlägen. Sitzen die Töne, sing oder summ mit, um den Rhythmus zu prüfen."
+     ],
+     "q": "Welche Melodie würdest du als Nächstes gern nach Tab lernen?",
+     "c": "Spiel die Phrase der Ode an die Freude 5-mal ohne Pause, dann etwas schneller."
+    },
+    "es": {
+     "t": "Tocar una melodía con tablatura",
+     "g": "Tocar una melodía corta y sencilla en las cuerdas agudas leyendo tablatura.",
+     "p": [
+      "Prueba el inicio del Himno de la alegría. Mi agudo: 0 0 1 3 3 1 0. Cuerda Si: 3 1 1 3. Mi agudo: 0 0. Si: 3 3.",
+      "Usa el dedo 1 para el traste 1 y el dedo 3 para el traste 3, con la mano en primera posición.",
+      "Tócala despacio con púas hacia abajo parejas. Cuando las notas estén bien, cántala o taréala para comprobar el ritmo."
+     ],
+     "q": "¿Qué melodía te encantaría aprender con tablatura después?",
+     "c": "Toca la frase del Himno de la alegría 5 veces seguidas sin parar y luego un poco más rápido."
+    },
+    "fr": {
+     "t": "Jouer une mélodie en tablature",
+     "g": "Jouer un petit air simple sur les cordes aiguës en lisant une tablature.",
+     "p": [
+      "Essaie le début de l'Hymne à la joie. Mi aigu : 0 0 1 3 3 1 0. Corde de Si : 3 1 1 3. Mi aigu : 0 0. Si : 3 3.",
+      "Utilise le doigt 1 pour la case 1 et le doigt 3 pour la case 3, la main en première position.",
+      "Joue lentement avec des coups descendants réguliers. Une fois les notes justes, chante ou fredonne pour vérifier le rythme."
+     ],
+     "q": "Quelle mélodie aimerais-tu apprendre ensuite en tablature ?",
+     "c": "Joue la phrase de l'Hymne à la joie 5 fois de suite sans t'arrêter, puis un peu plus vite."
+    },
+    "it": {
+     "t": "Suonare una melodia dalla tablatura",
+     "g": "Suonare una melodia breve e semplice sulle corde acute leggendo la tablatura.",
+     "p": [
+      "Prova l'inizio dell'Inno alla gioia. Mi cantino: 0 0 1 3 3 1 0. Corda Si: 3 1 1 3. Mi cantino: 0 0. Si: 3 3.",
+      "Usa il dito 1 per il tasto 1 e il dito 3 per il tasto 3, con la mano in prima posizione.",
+      "Suona piano con pennate in giù regolari. Quando le note sono giuste, canta o canticchia per controllare il ritmo."
+     ],
+     "q": "Quale melodia ti piacerebbe imparare dalla tablatura la prossima volta?",
+     "c": "Suona la frase dell'Inno alla gioia 5 volte di fila senza fermarti, poi un po' più veloce."
+    },
+    "pt": {
+     "t": "Tocar uma melodia em tablatura",
+     "g": "Tocar uma melodia curta e simples nas cordas agudas lendo tablatura.",
+     "p": [
+      "Experimenta o início do Hino da Alegria. Mi agudo: 0 0 1 3 3 1 0. Corda Si: 3 1 1 3. Mi agudo: 0 0. Si: 3 3.",
+      "Usa o dedo 1 para a casa 1 e o dedo 3 para a casa 3, com a mão na primeira posição.",
+      "Toca devagar com palhetadas para baixo regulares. Com as notas certas, canta ou trauteia para confirmar o ritmo."
+     ],
+     "q": "Que melodia gostavas de aprender em tablatura a seguir?",
+     "c": "Toca a frase do Hino da Alegria 5 vezes seguidas sem parar, depois um pouco mais depressa."
+    },
+    "pt_BR": {
+     "t": "Tocando uma melodia pela tablatura",
+     "g": "Tocar uma melodia curta e simples nas cordas agudas lendo tablatura.",
+     "p": [
+      "Tente o começo do Hino à Alegria. Mi agudo: 0 0 1 3 3 1 0. Corda Si: 3 1 1 3. Mi agudo: 0 0. Si: 3 3.",
+      "Use o dedo 1 para a casa 1 e o dedo 3 para a casa 3, com a mão na primeira posição.",
+      "Toque devagar com palhetadas para baixo regulares. Com as notas certas, cante ou cantarole para conferir o ritmo."
+     ],
+     "q": "Qual melodia você adoraria aprender pela tablatura depois?",
+     "c": "Toque a frase do Hino à Alegria 5 vezes seguidas sem parar, depois um pouco mais rápido."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The D minor chord",
+     "g": "Play the sad-sounding Dm shape on the top four strings and compare it with D.",
+     "p": [
+      "Finger 1 on the high E, 1st fret; finger 2 on the G string, 2nd fret; finger 3 on the B string, 3rd fret.",
+      "Strum from the open D string down, just like the D major chord.",
+      "Compared with D, only the high E note drops one fret. That small change turns bright into melancholic."
+     ],
+     "q": "What kind of song or scene does D minor make you imagine?",
+     "c": "Alternate D and Dm, 4 strums each, for 2 minutes. Then try the loop Am, Dm, E, Am."
+    },
+    "de": {
+     "t": "Der d-Moll-Akkord",
+     "g": "Spiel die traurig klingende Dm-Form auf den oberen vier Saiten und vergleich sie mit D.",
+     "p": [
+      "Finger 1 auf der hohen E-Saite im 1. Bund, Finger 2 auf der G-Saite im 2. Bund, Finger 3 auf der H-Saite im 3. Bund.",
+      "Schlag ab der leeren D-Saite an, genau wie beim D-Dur-Akkord.",
+      "Im Vergleich zu D rutscht nur der Ton auf der hohen E-Saite einen Bund tiefer. Aus hell wird melancholisch."
+     ],
+     "q": "An welche Art Song oder Szene lässt dich d-Moll denken?",
+     "c": "Wechsle 2 Minuten lang zwischen D und Dm, je 4 Anschläge. Dann probier die Folge Am, Dm, E, Am."
+    },
+    "es": {
+     "t": "El acorde de Re menor",
+     "g": "Tocar la forma triste de Rem en las cuatro cuerdas agudas y compararla con Re.",
+     "p": [
+      "Dedo 1 en el Mi agudo, traste 1; dedo 2 en la cuerda Sol, traste 2; dedo 3 en la cuerda Si, traste 3.",
+      "Rasguea desde la cuerda Re al aire, igual que en Re mayor.",
+      "Comparado con Re, solo baja un traste la nota del Mi agudo. Ese pequeño cambio vuelve melancólico lo brillante."
+     ],
+     "q": "¿Qué tipo de canción o escena te hace imaginar Re menor?",
+     "c": "Alterna Re y Rem, 4 rasgueos cada uno, durante 2 minutos. Luego prueba Lam, Rem, Mi, Lam."
+    },
+    "fr": {
+     "t": "L'accord de Ré mineur",
+     "g": "Jouer la forme mélancolique de Rém sur les quatre cordes aiguës et la comparer à Ré.",
+     "p": [
+      "Doigt 1 sur le Mi aigu, case 1 ; doigt 2 sur la corde de Sol, case 2 ; doigt 3 sur la corde de Si, case 3.",
+      "Gratte depuis la corde de Ré à vide, comme pour Ré majeur.",
+      "Par rapport à Ré, seule la note du Mi aigu descend d'une case. Ce petit changement rend le son mélancolique."
+     ],
+     "q": "Quel genre de chanson ou de scène Ré mineur t'évoque-t-il ?",
+     "c": "Alterne Ré et Rém, 4 coups chacun, pendant 2 minutes. Puis essaie la boucle Lam, Rém, Mi, Lam."
+    },
+    "it": {
+     "t": "L'accordo di Re minore",
+     "g": "Suonare la forma malinconica di Rem sulle quattro corde acute e confrontarla con il Re.",
+     "p": [
+      "Dito 1 sul Mi cantino al 1° tasto, dito 2 sulla corda Sol al 2° tasto, dito 3 sulla corda Si al 3° tasto.",
+      "Pennella dalla corda Re a vuoto, proprio come per il Re maggiore.",
+      "Rispetto al Re, scende di un tasto solo la nota sul Mi cantino. Quel piccolo cambio rende il suono malinconico."
+     ],
+     "q": "Che tipo di canzone o di scena ti fa immaginare il Re minore?",
+     "c": "Alterna Re e Rem, 4 pennate ciascuno, per 2 minuti. Poi prova il giro Lam, Rem, Mi, Lam."
+    },
+    "pt": {
+     "t": "O acorde de Ré menor",
+     "g": "Tocar a forma melancólica de Ré menor nas quatro cordas agudas e compará-la com Ré.",
+     "p": [
+      "Dedo 1 no Mi agudo, 1.ª casa; dedo 2 na corda Sol, 2.ª casa; dedo 3 na corda Si, 3.ª casa.",
+      "Toca a partir da corda Ré solta, tal como no Ré maior.",
+      "Comparado com Ré, só a nota do Mi agudo desce uma casa. Essa pequena mudança torna o som melancólico."
+     ],
+     "q": "Que tipo de música ou cena te faz imaginar o Ré menor?",
+     "c": "Alterna Ré e Ré menor, 4 batidas cada, durante 2 minutos. Depois experimenta Lá menor, Ré menor, Mi, Lá menor."
+    },
+    "pt_BR": {
+     "t": "O acorde de Ré menor",
+     "g": "Tocar o desenho melancólico do Ré menor nas quatro cordas agudas e comparar com o Ré.",
+     "p": [
+      "Dedo 1 no Mi agudo, casa 1; dedo 2 na corda Sol, casa 2; dedo 3 na corda Si, casa 3.",
+      "Toque a partir da corda Ré solta, igual ao Ré maior.",
+      "Comparado ao Ré, só a nota do Mi agudo desce uma casa. Essa pequena mudança deixa o som melancólico."
+     ],
+     "q": "Que tipo de música ou cena o Ré menor faz você imaginar?",
+     "c": "Alterne Ré e Ré menor, 4 batidas cada, por 2 minutos. Depois tente Lá menor, Ré menor, Mi, Lá menor."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy sevenths: E7 and A7",
+     "g": "Play simple seventh chords that add a bluesy, unresolved flavour.",
+     "p": [
+      "E7: play E major and lift finger 3 off the D string, so it rings open. Fingers 2 and 1 stay on A and G.",
+      "A7: play A major and lift the finger off the G string, so it rings open; keep the D and B strings at fret 2.",
+      "Seventh chords sound like they want to move somewhere. That tension is what makes blues feel like blues."
+     ],
+     "q": "How would you describe the sound of a seventh chord in one word?",
+     "c": "Alternate A7 and E7, 4 strums each, with a swinging, relaxed feel for 2 minutes."
+    },
+    "de": {
+     "t": "Einfache Septakkorde: E7 und A7",
+     "g": "Spiel einfache Septakkorde mit bluesigem, offenem Klang.",
+     "p": [
+      "E7: Greif E-Dur und heb Finger 3 von der D-Saite, sodass sie leer klingt. Finger 2 und 1 bleiben auf A und G.",
+      "A7: Greif A-Dur und heb den Finger von der G-Saite, damit sie leer klingt; D- und H-Saite bleiben im 2. Bund.",
+      "Septakkorde klingen, als wollten sie weitergehen. Diese Spannung macht den Blues zum Blues."
+     ],
+     "q": "Wie würdest du den Klang eines Septakkords mit einem Wort beschreiben?",
+     "c": "Wechsle 2 Minuten lang zwischen A7 und E7, je 4 Anschläge, mit lockerem, swingendem Gefühl."
+    },
+    "es": {
+     "t": "Séptimas fáciles: E7 y A7",
+     "g": "Tocar acordes de séptima sencillos que añaden un sabor bluesero y sin resolver.",
+     "p": [
+      "E7: haz Mi mayor y levanta el dedo 3 de la cuerda Re para que suene al aire. Los dedos 2 y 1 siguen en La y Sol.",
+      "A7: haz La mayor y quita el dedo de la cuerda Sol para que suene al aire; deja Re y Si en el traste 2.",
+      "Las séptimas suenan como si quisieran ir a otro sitio. Esa tensión es lo que hace que el blues suene a blues."
+     ],
+     "q": "¿Cómo describirías con una palabra el sonido de un acorde de séptima?",
+     "c": "Alterna A7 y E7, 4 rasgueos cada uno, con un aire relajado y balanceado durante 2 minutos."
+    },
+    "fr": {
+     "t": "Septièmes faciles : E7 et A7",
+     "g": "Jouer des accords de septième simples au goût blues, comme en suspens.",
+     "p": [
+      "E7 : forme Mi majeur et lève le doigt 3 de la corde de Ré pour qu'elle sonne à vide. Doigts 2 et 1 restent sur La et Sol.",
+      "A7 : forme La majeur et retire le doigt de la corde de Sol pour qu'elle sonne à vide ; Ré et Si restent en case 2.",
+      "Les septièmes donnent envie d'aller ailleurs. Cette tension, c'est ce qui donne au blues son goût de blues."
+     ],
+     "q": "Comment décrirais-tu en un mot le son d'un accord de septième ?",
+     "c": "Alterne A7 et E7, 4 coups chacun, avec un groove détendu et balancé pendant 2 minutes."
+    },
+    "it": {
+     "t": "Settime facili: E7 e A7",
+     "g": "Suonare semplici accordi di settima che aggiungono un sapore blues, sospeso.",
+     "p": [
+      "E7: fai Mi maggiore e alza il dito 3 dalla corda Re, così suona a vuoto. Le dita 2 e 1 restano su La e Sol.",
+      "A7: fai La maggiore e togli il dito dalla corda Sol, così suona a vuoto; Re e Si restano al 2° tasto.",
+      "Le settime suonano come se volessero andare altrove. Quella tensione è ciò che rende il blues così blues."
+     ],
+     "q": "Come descriveresti con una parola il suono di un accordo di settima?",
+     "c": "Alterna A7 ed E7, 4 pennate ciascuno, con un feeling rilassato e dondolante per 2 minuti."
+    },
+    "pt": {
+     "t": "Sétimas fáceis: E7 e A7",
+     "g": "Tocar acordes de sétima simples que dão um sabor blues, em suspenso.",
+     "p": [
+      "E7: faz Mi maior e levanta o dedo 3 da corda Ré para soar solta. Os dedos 2 e 1 ficam no Lá e no Sol.",
+      "A7: faz Lá maior e tira o dedo da corda Sol para soar solta; o Ré e o Si ficam na 2.ª casa.",
+      "As sétimas soam como se quisessem ir para outro lado. Essa tensão é o que dá ao blues o seu sabor."
+     ],
+     "q": "Como descreverias numa palavra o som de um acorde de sétima?",
+     "c": "Alterna A7 e E7, 4 batidas cada, com um balanço descontraído durante 2 minutos."
+    },
+    "pt_BR": {
+     "t": "Sétimas fáceis: E7 e A7",
+     "g": "Tocar acordes de sétima simples que dão um tempero blues, em suspenso.",
+     "p": [
+      "E7: monte Mi maior e tire o dedo 3 da corda Ré para ela soar solta. Os dedos 2 e 1 ficam no Lá e no Sol.",
+      "A7: monte Lá maior e tire o dedo da corda Sol para ela soar solta; Ré e Si ficam na casa 2.",
+      "As sétimas soam como se quisessem ir para outro lugar. Essa tensão é o que dá ao blues seu sabor."
+     ],
+     "q": "Como você descreveria em uma palavra o som de um acorde de sétima?",
+     "c": "Alterne A7 e E7, 4 batidas cada, com um balanço relaxado por 2 minutos."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "D7, G7 and C7",
+     "g": "Learn three more seventh chords and where they show up in songs.",
+     "p": [
+      "D7: finger 1 on the B string, 1st fret; finger 2 on the G string, 2nd fret; finger 3 on the high E, 2nd fret.",
+      "G7: finger 3 on low E, 3rd fret; finger 2 on A, 2nd fret; finger 1 on high E, 1st fret. C7: C plus finger 4 on G, 3rd fret.",
+      "A seventh chord often leads to the next chord: G7 pulls to C, D7 pulls to G, C7 pulls to F. Common in blues, folk and country."
+     ],
+     "q": "Can you hear how G7 seems to ask a question that C answers?",
+     "c": "Play G7 to C, D7 to G and C7 to F (or C7 to Am) 10 times each and listen to the pull."
+    },
+    "de": {
+     "t": "D7, G7 und C7",
+     "g": "Lerne drei weitere Septakkorde und wo sie in Songs auftauchen.",
+     "p": [
+      "D7: Finger 1 auf der H-Saite im 1. Bund, Finger 2 auf der G-Saite im 2. Bund, Finger 3 auf der hohen E-Saite im 2. Bund.",
+      "G7: Finger 3 auf tiefem E im 3. Bund, Finger 2 auf A im 2. Bund, Finger 1 auf hohem E im 1. Bund. C7: C plus Finger 4 auf G im 3. Bund.",
+      "Ein Septakkord führt oft zum nächsten: G7 zieht zu C, D7 zu G, C7 zu F. Typisch für Blues, Folk und Country."
+     ],
+     "q": "Hörst du, wie G7 eine Frage zu stellen scheint, die C beantwortet?",
+     "c": "Spiel G7 zu C, D7 zu G und C7 zu F (oder C7 zu Am) je 10-mal und hör auf den Zug."
+    },
+    "es": {
+     "t": "D7, G7 y C7",
+     "g": "Aprender tres acordes de séptima más y dónde aparecen en las canciones.",
+     "p": [
+      "D7: dedo 1 en la cuerda Si, traste 1; dedo 2 en la cuerda Sol, traste 2; dedo 3 en el Mi agudo, traste 2.",
+      "G7: dedo 3 en Mi grave, traste 3; dedo 2 en La, traste 2; dedo 1 en Mi agudo, traste 1. C7: Do más el dedo 4 en Sol, traste 3.",
+      "La séptima suele llevar al siguiente acorde: G7 tira hacia Do, D7 hacia Sol y C7 hacia Fa. Típico del blues, el folk y el country."
+     ],
+     "q": "¿Oyes cómo G7 parece hacer una pregunta que Do responde?",
+     "c": "Toca G7 a Do, D7 a Sol y C7 a Fa (o C7 a Lam) 10 veces cada uno y escucha esa atracción."
+    },
+    "fr": {
+     "t": "D7, G7 et C7",
+     "g": "Apprendre trois autres accords de septième et voir où ils apparaissent.",
+     "p": [
+      "D7 : doigt 1 sur la corde de Si, case 1 ; doigt 2 sur la corde de Sol, case 2 ; doigt 3 sur le Mi aigu, case 2.",
+      "G7 : doigt 3 sur Mi grave, case 3 ; doigt 2 sur La, case 2 ; doigt 1 sur Mi aigu, case 1. C7 : Do plus le doigt 4 sur Sol, case 3.",
+      "Une septième mène souvent à l'accord suivant : G7 tire vers Do, D7 vers Sol, C7 vers Fa. Courant en blues, folk et country."
+     ],
+     "q": "Entends-tu comment G7 semble poser une question à laquelle Do répond ?",
+     "c": "Joue G7 vers Do, D7 vers Sol et C7 vers Fa (ou C7 vers Lam) 10 fois chacun et écoute l'attraction."
+    },
+    "it": {
+     "t": "D7, G7 e C7",
+     "g": "Imparare altri tre accordi di settima e dove compaiono nelle canzoni.",
+     "p": [
+      "D7: dito 1 sulla corda Si al 1° tasto, dito 2 sulla corda Sol al 2° tasto, dito 3 sul Mi cantino al 2° tasto.",
+      "G7: dito 3 sul Mi basso al 3° tasto, dito 2 sul La al 2°, dito 1 sul Mi cantino al 1°. C7: Do più il dito 4 sul Sol al 3° tasto.",
+      "La settima spesso porta all'accordo dopo: G7 tira verso Do, D7 verso Sol, C7 verso Fa. Tipico di blues, folk e country."
+     ],
+     "q": "Senti come G7 sembra fare una domanda a cui Do risponde?",
+     "c": "Suona G7-Do, D7-Sol e C7-Fa (o C7-Lam) 10 volte ciascuno e ascolta l'attrazione."
+    },
+    "pt": {
+     "t": "D7, G7 e C7",
+     "g": "Aprender mais três acordes de sétima e onde aparecem nas músicas.",
+     "p": [
+      "D7: dedo 1 na corda Si, 1.ª casa; dedo 2 na corda Sol, 2.ª casa; dedo 3 no Mi agudo, 2.ª casa.",
+      "G7: dedo 3 no Mi grave, 3.ª casa; dedo 2 no Lá, 2.ª casa; dedo 1 no Mi agudo, 1.ª casa. C7: Dó mais o dedo 4 no Sol, 3.ª casa.",
+      "A sétima costuma levar ao acorde seguinte: G7 puxa para Dó, D7 para Sol, C7 para Fá. Comum no blues, folk e country."
+     ],
+     "q": "Ouves como o G7 parece fazer uma pergunta a que o Dó responde?",
+     "c": "Toca G7-Dó, D7-Sol e C7-Fá (ou C7-Lá menor) 10 vezes cada e ouve essa atração."
+    },
+    "pt_BR": {
+     "t": "D7, G7 e C7",
+     "g": "Aprender mais três acordes de sétima e onde eles aparecem nas músicas.",
+     "p": [
+      "D7: dedo 1 na corda Si, casa 1; dedo 2 na corda Sol, casa 2; dedo 3 no Mi agudo, casa 2.",
+      "G7: dedo 3 no Mi grave, casa 3; dedo 2 no Lá, casa 2; dedo 1 no Mi agudo, casa 1. C7: Dó mais o dedo 4 no Sol, casa 3.",
+      "A sétima costuma levar ao próximo acorde: G7 puxa para Dó, D7 para Sol, C7 para Fá. Comum no blues, folk, country e no samba."
+     ],
+     "q": "Você ouve como o G7 parece fazer uma pergunta que o Dó responde?",
+     "c": "Toque G7-Dó, D7-Sol e C7-Fá (ou C7-Lá menor) 10 vezes cada e ouça essa atração."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strumming with accents",
+     "g": "Make some strums louder to give your rhythm shape and groove.",
+     "p": [
+      "An accent is simply a strum played a little stronger than the others, often marked with a > sign.",
+      "Accenting beats 2 and 4 gives a pop-rock backbeat; accenting beat 1 gives a strong, marching feel.",
+      "Keep the unaccented strums light and relaxed. The contrast creates the groove, not sheer volume."
+     ],
+     "q": "Which feels more fun to you: accents on 1 or accents on 2 and 4?",
+     "c": "Strum 8 down-up strokes per bar on G, accenting only beats 2 and 4, for 2 minutes. Then move the accent to beat 1."
+    },
+    "de": {
+     "t": "Schlagen mit Akzenten",
+     "g": "Spiel einige Anschläge lauter, um deinem Rhythmus Form und Groove zu geben.",
+     "p": [
+      "Ein Akzent ist einfach ein Anschlag, der etwas kräftiger ist als die anderen, oft mit dem Zeichen > notiert.",
+      "Akzente auf 2 und 4 ergeben den Pop-Rock-Backbeat, ein Akzent auf 1 klingt kräftig wie ein Marsch.",
+      "Halt die übrigen Anschläge leicht und locker. Der Kontrast macht den Groove, nicht pure Lautstärke."
+     ],
+     "q": "Was macht dir mehr Spaß: Akzente auf 1 oder auf 2 und 4?",
+     "c": "Schlag auf G 8 Ab-Auf-Schläge pro Takt und betone nur 2 und 4, 2 Minuten lang. Dann verschieb den Akzent auf 1."
+    },
+    "es": {
+     "t": "Rasguear con acentos",
+     "g": "Hacer algunos rasgueos más fuertes para dar forma y groove al ritmo.",
+     "p": [
+      "Un acento es simplemente un rasgueo un poco más fuerte que los demás, a menudo marcado con el signo >.",
+      "Acentuar los pulsos 2 y 4 da el backbeat del pop-rock; acentuar el 1 da un aire firme, de marcha.",
+      "Mantén ligeros y relajados los rasgueos sin acento. El contraste crea el groove, no el volumen."
+     ],
+     "q": "¿Qué te divierte más: acentos en el 1 o en el 2 y el 4?",
+     "c": "Rasguea Sol con 8 golpes abajo-arriba por compás acentuando solo el 2 y el 4 durante 2 minutos. Luego pasa el acento al 1."
+    },
+    "fr": {
+     "t": "Gratter avec des accents",
+     "g": "Jouer certains coups plus fort pour donner forme et groove à ton rythme.",
+     "p": [
+      "Un accent, c'est un coup joué un peu plus fort que les autres, souvent noté avec le signe >.",
+      "Accentuer les temps 2 et 4 donne le backbeat pop-rock ; accentuer le temps 1 donne un côté marche, appuyé.",
+      "Garde les coups non accentués légers et souples. C'est le contraste qui crée le groove, pas le volume."
+     ],
+     "q": "Qu'est-ce qui t'amuse le plus : des accents sur le 1, ou sur le 2 et le 4 ?",
+     "c": "Gratte Sol avec 8 coups bas-haut par mesure en accentuant seulement les temps 2 et 4, pendant 2 minutes. Puis mets l'accent sur le 1."
+    },
+    "it": {
+     "t": "Pennellare con gli accenti",
+     "g": "Rendere alcune pennate più forti per dare forma e groove al ritmo.",
+     "p": [
+      "Un accento è semplicemente una pennata un po' più forte delle altre, spesso segnata con il simbolo >.",
+      "Accentare i battiti 2 e 4 dà il backbeat pop-rock; accentare l'1 dà un andamento deciso, da marcia.",
+      "Tieni le pennate non accentate leggere e rilassate. È il contrasto a creare il groove, non il volume."
+     ],
+     "q": "Cosa ti diverte di più: accenti sull'1 o sul 2 e sul 4?",
+     "c": "Pennella Sol con 8 colpi giù-su per battuta accentando solo 2 e 4, per 2 minuti. Poi sposta l'accento sull'1."
+    },
+    "pt": {
+     "t": "Batidas com acentos",
+     "g": "Tocar algumas batidas mais fortes para dar forma e balanço ao ritmo.",
+     "p": [
+      "Um acento é só uma batida um pouco mais forte do que as outras, muitas vezes marcada com o sinal >.",
+      "Acentuar os tempos 2 e 4 dá o backbeat do pop-rock; acentuar o tempo 1 dá um ar firme, de marcha.",
+      "Mantém leves e soltas as batidas sem acento. É o contraste que cria o balanço, não o volume."
+     ],
+     "q": "O que achas mais divertido: acentos no 1 ou no 2 e no 4?",
+     "c": "Toca Sol com 8 batidas baixo-cima por compasso acentuando só o 2 e o 4, durante 2 minutos. Depois passa o acento para o 1."
+    },
+    "pt_BR": {
+     "t": "Batidas com acentos",
+     "g": "Tocar algumas batidas mais fortes para dar forma e balanço ao ritmo.",
+     "p": [
+      "Um acento é só uma batida um pouco mais forte que as outras, muitas vezes marcada com o sinal >.",
+      "Acentuar os tempos 2 e 4 dá o backbeat do pop-rock; acentuar o tempo 1 dá um clima firme, de marcha.",
+      "Deixe leves e soltas as batidas sem acento. O contraste é que cria o balanço, não o volume."
+     ],
+     "q": "O que é mais divertido para você: acentos no 1 ou no 2 e no 4?",
+     "c": "Toque Sol com 8 batidas baixo-cima por compasso acentuando só o 2 e o 4, por 2 minutos. Depois passe o acento para o 1."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Muting with the fretting hand",
+     "g": "Release finger pressure to create percussive, muted sounds.",
+     "p": [
+      "Hold a chord, then relax your fingers so they still touch the strings but no longer press them down.",
+      "Strumming now gives a short, scratchy click with no pitch. That is a fretting-hand mute.",
+      "Press, release, press: switching between ringing and muted strums creates rhythm without changing chords."
+     ],
+     "q": "Have you heard that scratchy muted sound in funk or pop songs before?",
+     "c": "Hold A and strum 4 ringing, 4 muted, over and over for 2 minutes, keeping your strumming hand moving evenly."
+    },
+    "de": {
+     "t": "Dämpfen mit der Greifhand",
+     "g": "Lass den Fingerdruck nach, um perkussive, gedämpfte Klänge zu erzeugen.",
+     "p": [
+      "Greif einen Akkord und entspann dann die Finger: Sie berühren die Saiten noch, drücken sie aber nicht mehr herunter.",
+      "Ein Anschlag ergibt jetzt einen kurzen, kratzigen Klick ohne Tonhöhe. Das ist eine Greifhand-Dämpfung.",
+      "Drücken, lösen, drücken: Der Wechsel zwischen klingenden und gedämpften Schlägen erzeugt Rhythmus ohne Akkordwechsel."
+     ],
+     "q": "Hast du diesen kratzigen, gedämpften Klang schon in Funk- oder Popsongs gehört?",
+     "c": "Greif A und schlag 2 Minuten lang 4-mal klingend, 4-mal gedämpft an, die Schlaghand bleibt gleichmäßig in Bewegung."
+    },
+    "es": {
+     "t": "Apagar con la mano que pisa",
+     "g": "Aflojar la presión de los dedos para crear sonidos apagados y percusivos.",
+     "p": [
+      "Haz un acorde y relaja los dedos para que sigan tocando las cuerdas pero sin apretarlas.",
+      "Al rasguear sale un clic corto y rasposo, sin nota. Eso es un apagado con la mano izquierda.",
+      "Apretar, soltar, apretar: alternar rasgueos que suenan y apagados crea ritmo sin cambiar de acorde."
+     ],
+     "q": "¿Has oído antes ese sonido rasposo apagado en canciones de funk o pop?",
+     "c": "Haz La y rasguea 4 veces sonando y 4 apagado, una y otra vez durante 2 minutos, con la mano derecha siempre pareja."
+    },
+    "fr": {
+     "t": "Étouffer avec la main gauche",
+     "g": "Relâcher la pression des doigts pour créer des sons étouffés et percussifs.",
+     "p": [
+      "Forme un accord, puis relâche les doigts : ils touchent encore les cordes mais ne les appuient plus.",
+      "En grattant, tu obtiens un clic court et rêche, sans note. C'est un étouffement de la main gauche.",
+      "Appuyer, relâcher, appuyer : alterner coups sonores et étouffés crée du rythme sans changer d'accord."
+     ],
+     "q": "As-tu déjà entendu ce son étouffé et rêche dans des morceaux funk ou pop ?",
+     "c": "Forme La et gratte 4 coups sonores, 4 étouffés, en boucle pendant 2 minutes, la main droite toujours régulière."
+    },
+    "it": {
+     "t": "Smorzare con la mano sinistra",
+     "g": "Rilasciare la pressione delle dita per creare suoni smorzati e percussivi.",
+     "p": [
+      "Tieni un accordo, poi rilassa le dita: toccano ancora le corde ma non le premono più.",
+      "Pennellando ottieni un clic corto e graffiante, senza nota. È lo smorzato con la mano sinistra.",
+      "Premi, rilascia, premi: alternare pennate che suonano e smorzate crea ritmo senza cambiare accordo."
+     ],
+     "q": "Hai già sentito quel suono smorzato e graffiante in brani funk o pop?",
+     "c": "Tieni il La e pennella 4 colpi pieni e 4 smorzati, in loop per 2 minuti, con la mano destra sempre regolare."
+    },
+    "pt": {
+     "t": "Abafar com a mão esquerda",
+     "g": "Aliviar a pressão dos dedos para criar sons abafados e percussivos.",
+     "p": [
+      "Faz um acorde e depois relaxa os dedos: continuam a tocar nas cordas, mas já não as pressionam.",
+      "Ao tocar sai um clique curto e arranhado, sem nota. É um abafado com a mão que pressiona.",
+      "Pressionar, aliviar, pressionar: alternar batidas a soar e abafadas cria ritmo sem mudar de acorde."
+     ],
+     "q": "Já ouviste esse som abafado e arranhado em músicas funk ou pop?",
+     "c": "Faz Lá e toca 4 batidas a soar e 4 abafadas, em ciclo durante 2 minutos, com a mão direita sempre regular."
+    },
+    "pt_BR": {
+     "t": "Abafando com a mão esquerda",
+     "g": "Aliviar a pressão dos dedos para criar sons abafados e percussivos.",
+     "p": [
+      "Monte um acorde e relaxe os dedos: eles continuam encostados nas cordas, mas sem apertar.",
+      "Ao tocar sai um clique curto e arranhado, sem nota. Isso é o abafado com a mão que aperta as cordas.",
+      "Apertar, soltar, apertar: alternar batidas soando e abafadas cria ritmo sem trocar de acorde."
+     ],
+     "q": "Você já ouviu esse som abafado e arranhado em músicas de funk, pop ou samba-rock?",
+     "c": "Monte Lá e toque 4 batidas soando e 4 abafadas, em ciclo por 2 minutos, com a mão direita sempre constante."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The strum chuck",
+     "g": "Add a muted hit on beats two and four for a driving feel.",
+     "p": [
+      "A chuck is a percussive down-strum where the strings are muted at the moment you hit them.",
+      "Easiest method: as you strum on beats 2 and 4, let the side of your strumming palm land on the strings.",
+      "Try: down (1), chuck (2), down-up (3 and), chuck (4). It sounds like a guitar and snare drum at once."
+     ],
+     "q": "Does the chuck make your playing sound more like a full band?",
+     "c": "Play G, C, D, Em with the pattern down, chuck, down-up, chuck, one bar per chord, for 3 minutes."
+    },
+    "de": {
+     "t": "Der Chuck beim Schlagen",
+     "g": "Füg auf Schlag zwei und vier einen gedämpften Schlag hinzu, für mehr Drive.",
+     "p": [
+      "Ein Chuck ist ein perkussiver Abschlag, bei dem die Saiten genau im Moment des Anschlags gedämpft werden.",
+      "Am einfachsten: Lass beim Abschlag auf 2 und 4 die Handkante der Schlaghand auf die Saiten fallen.",
+      "Probier: ab (1), Chuck (2), ab-auf (3 und), Chuck (4). Klingt wie Gitarre und Snaredrum zugleich."
+     ],
+     "q": "Klingt dein Spiel mit dem Chuck mehr nach einer ganzen Band?",
+     "c": "Spiel G, C, D, Em mit ab, Chuck, ab-auf, Chuck, einen Takt pro Akkord, 3 Minuten lang."
+    },
+    "es": {
+     "t": "El chasquido en el rasgueo",
+     "g": "Añadir un golpe apagado en los pulsos dos y cuatro para un ritmo con empuje.",
+     "p": [
+      "El chasquido (chuck) es un rasgueo percusivo hacia abajo en el que las cuerdas quedan apagadas al golpearlas.",
+      "Lo más fácil: al rasguear en los pulsos 2 y 4, deja caer el canto de la palma derecha sobre las cuerdas.",
+      "Prueba: abajo (1), chasquido (2), abajo-arriba (3 y), chasquido (4). Suena a guitarra y caja a la vez."
+     ],
+     "q": "¿Con el chasquido tu forma de tocar suena más como una banda entera?",
+     "c": "Toca Sol, Do, Re, Em con abajo, chasquido, abajo-arriba, chasquido, un compás por acorde, durante 3 minutos."
+    },
+    "fr": {
+     "t": "Le chuck en rythmique",
+     "g": "Ajouter un coup étouffé sur les temps deux et quatre pour plus d'élan.",
+     "p": [
+      "Le chuck est un coup descendant percussif où les cordes sont étouffées au moment où tu les frappes.",
+      "Le plus simple : en grattant sur les temps 2 et 4, laisse le tranchant de ta paume droite tomber sur les cordes.",
+      "Essaie : bas (1), chuck (2), bas-haut (3 et), chuck (4). On dirait une guitare et une caisse claire à la fois."
+     ],
+     "q": "Avec le chuck, ton jeu sonne-t-il davantage comme un groupe entier ?",
+     "c": "Joue Sol, Do, Ré, Em avec bas, chuck, bas-haut, chuck, une mesure par accord, pendant 3 minutes."
+    },
+    "it": {
+     "t": "Il chuck nella ritmica",
+     "g": "Aggiungere un colpo smorzato sui battiti due e quattro per più spinta.",
+     "p": [
+      "Il chuck è una pennata in giù percussiva in cui le corde vengono smorzate nell'istante in cui le colpisci.",
+      "Metodo più facile: pennellando sul 2 e sul 4, lascia cadere il taglio del palmo destro sulle corde.",
+      "Prova: giù (1), chuck (2), giù-su (3 e), chuck (4). Suona come chitarra e rullante insieme."
+     ],
+     "q": "Con il chuck il tuo modo di suonare sembra più una band intera?",
+     "c": "Suona Sol, Do, Re, Em con giù, chuck, giù-su, chuck, una battuta per accordo, per 3 minuti."
+    },
+    "pt": {
+     "t": "O chuck na batida",
+     "g": "Juntar um golpe abafado nos tempos dois e quatro para dar mais energia.",
+     "p": [
+      "O chuck é uma batida percussiva para baixo em que as cordas ficam abafadas no momento em que lhes bates.",
+      "O mais fácil: ao tocar nos tempos 2 e 4, deixa a lateral da palma direita cair sobre as cordas.",
+      "Experimenta: baixo (1), chuck (2), baixo-cima (3 e), chuck (4). Soa a guitarra e tarola ao mesmo tempo."
+     ],
+     "q": "Com o chuck, a tua forma de tocar soa mais a uma banda inteira?",
+     "c": "Toca Sol, Dó, Ré, Em com baixo, chuck, baixo-cima, chuck, um compasso por acorde, durante 3 minutos."
+    },
+    "pt_BR": {
+     "t": "O chuck na levada",
+     "g": "Colocar um golpe abafado nos tempos dois e quatro para uma levada com pegada.",
+     "p": [
+      "O chuck é uma batida percussiva para baixo em que as cordas ficam abafadas no momento do toque.",
+      "O jeito mais fácil: ao tocar nos tempos 2 e 4, deixe a lateral da palma direita cair sobre as cordas.",
+      "Tente: baixo (1), chuck (2), baixo-cima (3 e), chuck (4). Soa como violão e caixa da bateria juntos."
+     ],
+     "q": "Com o chuck, seu jeito de tocar soa mais como uma banda inteira?",
+     "c": "Toque Sol, Dó, Ré, Em com baixo, chuck, baixo-cima, chuck, um compasso por acorde, por 3 minutos."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Controlling string noise",
+     "g": "Stop unwanted ringing strings with both hands.",
+     "p": [
+      "Strings you are not playing can ring by sympathy or by accident. Controlling them makes you sound much cleaner.",
+      "Fretting hand: let spare fingertips or the underside of a finger lightly touch strings you do not want.",
+      "Picking hand: rest the palm lightly on the low strings when playing high notes, and lift it when you need them."
+     ],
+     "q": "Which strings tend to ring when you do not want them to?",
+     "c": "Play the Ode to Joy phrase again, muting the low E, A and D strings with your picking palm so only melody notes sound."
+    },
+    "de": {
+     "t": "Saitengeräusche kontrollieren",
+     "g": "Stopp ungewollt klingende Saiten mit beiden Händen.",
+     "p": [
+      "Saiten, die du nicht spielst, können mitschwingen oder versehentlich klingen. Wer sie kontrolliert, klingt viel sauberer.",
+      "Greifhand: Lass freie Fingerkuppen oder die Unterseite eines Fingers unerwünschte Saiten leicht berühren.",
+      "Schlaghand: Leg beim Spielen hoher Töne den Handballen leicht auf die tiefen Saiten und heb ihn, wenn du sie brauchst."
+     ],
+     "q": "Welche Saiten klingen bei dir oft, obwohl du es nicht willst?",
+     "c": "Spiel noch einmal die Ode an die Freude und dämpf tiefe E-, A- und D-Saite mit dem Handballen, sodass nur die Melodie klingt."
+    },
+    "es": {
+     "t": "Controlar el ruido de las cuerdas",
+     "g": "Detener las cuerdas que suenan sin querer usando las dos manos.",
+     "p": [
+      "Las cuerdas que no tocas pueden vibrar por simpatía o por accidente. Controlarlas te hace sonar mucho más limpio.",
+      "Mano que pisa: deja que yemas libres o la parte de abajo de un dedo rocen suavemente las cuerdas que no quieres.",
+      "Mano derecha: apoya ligeramente la palma en las graves al tocar notas agudas y levántala cuando las necesites."
+     ],
+     "q": "¿Qué cuerdas tienden a sonar cuando no quieres?",
+     "c": "Toca otra vez la frase del Himno de la alegría apagando Mi grave, La y Re con la palma derecha, para que solo suene la melodía."
+    },
+    "fr": {
+     "t": "Maîtriser les bruits de cordes",
+     "g": "Arrêter les cordes qui sonnent sans le vouloir, avec les deux mains.",
+     "p": [
+      "Les cordes que tu ne joues pas peuvent vibrer par sympathie ou par accident. Les maîtriser rend ton jeu bien plus propre.",
+      "Main gauche : laisse des bouts de doigts libres ou le dessous d'un doigt effleurer les cordes indésirables.",
+      "Main droite : pose légèrement la paume sur les cordes graves quand tu joues dans l'aigu, et lève-la quand il le faut."
+     ],
+     "q": "Quelles cordes ont tendance à sonner quand tu ne le veux pas ?",
+     "c": "Rejoue la phrase de l'Hymne à la joie en étouffant Mi grave, La et Ré avec la paume droite, pour que seule la mélodie sonne."
+    },
+    "it": {
+     "t": "Controllare i rumori delle corde",
+     "g": "Fermare le corde che suonano senza volerlo, usando entrambe le mani.",
+     "p": [
+      "Le corde che non suoni possono vibrare per simpatia o per sbaglio. Controllarle ti fa suonare molto più pulito.",
+      "Mano sinistra: lascia che polpastrelli liberi o la parte inferiore di un dito sfiorino le corde indesiderate.",
+      "Mano destra: appoggia leggermente il palmo sulle corde basse quando suoni note acute, e alzalo quando ti servono."
+     ],
+     "q": "Quali corde tendono a suonare quando non vuoi?",
+     "c": "Risuona la frase dell'Inno alla gioia smorzando Mi basso, La e Re con il palmo destro, così suona solo la melodia."
+    },
+    "pt": {
+     "t": "Controlar o ruído das cordas",
+     "g": "Parar cordas que soam sem querer, usando as duas mãos.",
+     "p": [
+      "As cordas que não tocas podem vibrar por simpatia ou por acidente. Controlá-las deixa o teu som muito mais limpo.",
+      "Mão esquerda: deixa pontas de dedos livres ou a parte de baixo de um dedo tocar levemente as cordas indesejadas.",
+      "Mão direita: pousa levemente a palma nas cordas graves ao tocar notas agudas e levanta-a quando precisares delas."
+     ],
+     "q": "Que cordas costumam soar quando não queres?",
+     "c": "Toca outra vez a frase do Hino da Alegria abafando Mi grave, Lá e Ré com a palma direita, para só soar a melodia."
+    },
+    "pt_BR": {
+     "t": "Controlando o ruído das cordas",
+     "g": "Parar cordas que soam sem querer, usando as duas mãos.",
+     "p": [
+      "Cordas que você não está tocando podem vibrar por simpatia ou por acidente. Controlá-las deixa seu som bem mais limpo.",
+      "Mão esquerda: deixe pontas de dedos livres ou a parte de baixo de um dedo encostar de leve nas cordas indesejadas.",
+      "Mão direita: apoie de leve a palma nas cordas graves ao tocar notas agudas e levante quando precisar delas."
+     ],
+     "q": "Quais cordas costumam soar quando você não quer?",
+     "c": "Toque de novo a frase do Hino à Alegria abafando Mi grave, Lá e Ré com a palma direita, para só a melodia soar."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Changing your strings",
+     "g": "Change a set of strings step by step, stretch them and retune.",
+     "p": [
+      "Change one string at a time so the neck tension stays balanced. Loosen fully, then remove the old string.",
+      "Fit the new string at the bridge, pull it to the tuner with some slack, and wind so it wraps neatly 2 to 3 times, going downward.",
+      "Gently pull each new string away from the fretboard to stretch it, retune, and repeat until it holds pitch."
+     ],
+     "q": "Have you ever changed strings, or does it feel a bit scary to try?",
+     "c": "Change one string today (or watch the process slowly on your own guitar), then stretch and retune it until it stays in tune."
+    },
+    "de": {
+     "t": "Saiten wechseln",
+     "g": "Wechsle einen Saitensatz Schritt für Schritt, dehne die Saiten und stimm nach.",
+     "p": [
+      "Wechsle eine Saite nach der anderen, damit die Halsspannung ausgeglichen bleibt. Ganz lockern, dann die alte Saite entfernen.",
+      "Befestige die neue Saite am Steg, führ sie mit etwas Spiel zur Mechanik und wickle sie 2- bis 3-mal sauber nach unten.",
+      "Zieh jede neue Saite sanft vom Griffbrett weg, um sie zu dehnen, stimm nach und wiederhol das, bis sie hält."
+     ],
+     "q": "Hast du schon mal Saiten gewechselt, oder wirkt das noch etwas abschreckend?",
+     "c": "Wechsle heute eine Saite (oder geh den Ablauf langsam an deiner Gitarre durch), dann dehnen und nachstimmen, bis sie hält."
+    },
+    "es": {
+     "t": "Cambiar las cuerdas",
+     "g": "Cambiar un juego de cuerdas paso a paso, estirarlas y volver a afinar.",
+     "p": [
+      "Cambia una cuerda cada vez para que la tensión del mástil quede equilibrada. Aflójala del todo y quita la vieja.",
+      "Coloca la nueva en el puente, llévala a la clavija con algo de holgura y enróllala de 2 a 3 vueltas ordenadas hacia abajo.",
+      "Tira suavemente de cada cuerda nueva hacia fuera del diapasón para estirarla, afina y repite hasta que aguante."
+     ],
+     "q": "¿Has cambiado cuerdas alguna vez o te da un poco de respeto intentarlo?",
+     "c": "Cambia hoy una cuerda (o repasa el proceso despacio en tu guitarra), y estírala y afínala hasta que se mantenga."
+    },
+    "fr": {
+     "t": "Changer tes cordes",
+     "g": "Changer un jeu de cordes étape par étape, les étirer et réaccorder.",
+     "p": [
+      "Change une corde à la fois pour garder une tension équilibrée sur le manche. Détends-la à fond, puis retire l'ancienne.",
+      "Fixe la nouvelle au chevalet, amène-la à la mécanique avec un peu de mou et enroule 2 à 3 tours bien rangés vers le bas.",
+      "Tire doucement chaque nouvelle corde loin de la touche pour l'étirer, réaccorde et recommence jusqu'à ce qu'elle tienne."
+     ],
+     "q": "As-tu déjà changé des cordes, ou est-ce que ça t'impressionne un peu ?",
+     "c": "Change une corde aujourd'hui (ou répète lentement les étapes sur ta guitare), puis étire et réaccorde jusqu'à ce qu'elle tienne."
+    },
+    "it": {
+     "t": "Cambiare le corde",
+     "g": "Cambiare una muta di corde passo dopo passo, tirarle e riaccordare.",
+     "p": [
+      "Cambia una corda alla volta così la tensione del manico resta equilibrata. Allentala del tutto, poi togli quella vecchia.",
+      "Fissa la nuova al ponte, portala alla meccanica lasciando un po' di gioco e avvolgila con 2 o 3 giri ordinati verso il basso.",
+      "Tira delicatamente ogni corda nuova lontano dalla tastiera per assestarla, riaccorda e ripeti finché tiene."
+     ],
+     "q": "Hai mai cambiato le corde, o ti mette un po' in soggezione provarci?",
+     "c": "Cambia oggi una corda (o ripassa piano i passaggi sulla tua chitarra), poi tirala e riaccordala finché resta intonata."
+    },
+    "pt": {
+     "t": "Trocar as cordas",
+     "g": "Trocar um jogo de cordas passo a passo, esticá-las e voltar a afinar.",
+     "p": [
+      "Troca uma corda de cada vez para a tensão do braço ficar equilibrada. Alivia-a por completo e tira a velha.",
+      "Prende a nova na ponte, leva-a à tarraxa com alguma folga e enrola 2 a 3 voltas arrumadas para baixo.",
+      "Puxa suavemente cada corda nova para fora da escala para a esticar, afina e repete até segurar a afinação."
+     ],
+     "q": "Já trocaste cordas alguma vez, ou ainda te parece um pouco assustador?",
+     "c": "Troca hoje uma corda (ou revê devagar o processo na tua guitarra), depois estica e afina até ela segurar."
+    },
+    "pt_BR": {
+     "t": "Trocando as cordas",
+     "g": "Trocar um jogo de cordas passo a passo, esticar e afinar de novo.",
+     "p": [
+      "Troque uma corda de cada vez para a tensão do braço ficar equilibrada. Afrouxe totalmente e tire a velha.",
+      "Prenda a nova no cavalete, leve até a tarraxa com uma folga e enrole 2 a 3 voltas organizadas para baixo.",
+      "Puxe com cuidado cada corda nova para longe da escala para esticar, afine e repita até ela segurar a afinação."
+     ],
+     "q": "Você já trocou cordas alguma vez, ou isso ainda dá um friozinho na barriga?",
+     "c": "Troque hoje uma corda (ou repasse devagar o processo no seu violão), depois estique e afine até ela segurar."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "photography",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to photography",
+     "g": "Discover the three things that make a photo memorable: a clear subject, good light and a simple composition.",
+     "p": [
+      "A strong photo is about one thing: the viewer should know at a glance what you wanted to show.",
+      "Light shapes everything: the same scene looks dull at noon and magical in soft evening light.",
+      "Simple wins: fewer elements in the frame usually means a stronger, calmer picture."
+     ],
+     "q": "Which photo that you have taken or seen stayed in your memory, and why do you think it did?",
+     "c": "Take three photos today of one thing you love, each time asking: what is my subject?"
+    },
+    "de": {
+     "t": "Willkommen in der Fotografie",
+     "g": "Entdecke die drei Zutaten eines einprägsamen Fotos: ein klares Motiv, gutes Licht und eine einfache Komposition.",
+     "p": [
+      "Ein starkes Foto handelt von einer Sache: Man sieht sofort, was du zeigen wolltest.",
+      "Licht formt alles: Dieselbe Szene wirkt mittags flach und im weichen Abendlicht zauberhaft.",
+      "Weniger ist mehr: Wenige Elemente im Bild ergeben meist ein stärkeres, ruhigeres Foto."
+     ],
+     "q": "Welches Foto, das du gemacht oder gesehen hast, ist dir im Gedächtnis geblieben, und warum?",
+     "c": "Mach heute drei Fotos von etwas, das du magst, und frag dich jedes Mal: Was ist mein Motiv?"
+    },
+    "es": {
+     "t": "Bienvenido a la fotografía",
+     "g": "Descubre las tres claves de una foto memorable: un sujeto claro, buena luz y una composición sencilla.",
+     "p": [
+      "Una foto potente trata de una sola cosa: quien la mira entiende al instante qué querías mostrar.",
+      "La luz lo cambia todo: la misma escena parece plana al mediodía y mágica con la luz suave de la tarde.",
+      "Lo simple gana: menos elementos en el encuadre suelen dar una imagen más fuerte y tranquila."
+     ],
+     "q": "¿Qué foto, tuya o ajena, se te ha quedado grabada y por qué crees que fue así?",
+     "c": "Haz hoy tres fotos de algo que te encante y pregúntate cada vez: ¿cuál es mi sujeto?"
+    },
+    "fr": {
+     "t": "Bienvenue en photographie",
+     "g": "Découvre les trois ingrédients d'une photo marquante : un sujet clair, une belle lumière et une composition simple.",
+     "p": [
+      "Une photo forte parle d'une seule chose : on comprend tout de suite ce que tu voulais montrer.",
+      "La lumière change tout : la même scène paraît fade à midi et magique dans la douce lumière du soir.",
+      "La simplicité gagne : moins d'éléments dans le cadre donne souvent une image plus forte et plus calme."
+     ],
+     "q": "Quelle photo, prise par toi ou vue ailleurs, t'est restée en mémoire, et pourquoi selon toi ?",
+     "c": "Prends aujourd'hui trois photos d'une chose que tu aimes en te demandant à chaque fois : quel est mon sujet ?"
+    },
+    "it": {
+     "t": "Benvenuto nella fotografia",
+     "g": "Scopri i tre ingredienti di una foto memorabile: un soggetto chiaro, una bella luce e una composizione semplice.",
+     "p": [
+      "Una foto forte parla di una cosa sola: chi guarda capisce subito cosa volevi mostrare.",
+      "La luce cambia tutto: la stessa scena sembra piatta a mezzogiorno e magica nella luce morbida della sera.",
+      "La semplicità vince: meno elementi nell'inquadratura di solito danno un'immagine più forte e calma."
+     ],
+     "q": "Quale foto, tua o di altri, ti è rimasta in mente e perché pensi che sia successo?",
+     "c": "Scatta oggi tre foto di qualcosa che ami e chiediti ogni volta: qual è il mio soggetto?"
+    },
+    "pt": {
+     "t": "Bem-vindo à fotografia",
+     "g": "Descobre os três ingredientes de uma foto memorável: um motivo claro, boa luz e uma composição simples.",
+     "p": [
+      "Uma foto forte fala de uma só coisa: quem a vê percebe logo o que querias mostrar.",
+      "A luz muda tudo: a mesma cena parece sem graça ao meio-dia e mágica na luz suave do fim da tarde.",
+      "O simples ganha: menos elementos no enquadramento costumam dar uma imagem mais forte e calma."
+     ],
+     "q": "Que foto, tua ou de outra pessoa, te ficou na memória, e porque achas que ficou?",
+     "c": "Tira hoje três fotos de algo de que gostes muito e pergunta-te sempre: qual é o meu motivo?"
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à fotografia",
+     "g": "Descubra os três ingredientes de uma foto marcante: um assunto claro, boa luz e uma composição simples.",
+     "p": [
+      "Uma foto forte fala de uma coisa só: quem olha entende na hora o que você quis mostrar.",
+      "A luz muda tudo: a mesma cena fica sem graça ao meio-dia e mágica na luz suave do fim de tarde.",
+      "O simples vence: menos elementos no quadro costumam render uma imagem mais forte e tranquila."
+     ],
+     "q": "Qual foto, sua ou de outra pessoa, ficou na sua memória, e por que você acha que ficou?",
+     "c": "Tire hoje três fotos de algo que você ama e pergunte a si mesmo toda vez: qual é o meu assunto?"
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting to know your camera",
+     "g": "Learn the main parts of any camera or phone camera and what each one does for your pictures.",
+     "p": [
+      "The lens gathers light and decides how wide or close the view is; the sensor records that light as the image.",
+      "The shutter button takes the picture; on many cameras a half-press focuses first and a full press shoots.",
+      "The screen or viewfinder shows your frame: look at its edges too, not only the centre."
+     ],
+     "q": "Do you mostly shoot with a phone or a camera, and which button or setting still puzzles you?",
+     "c": "Find the lens, shutter button and screen on your device and take one photo using a half-press first if it has one."
+    },
+    "de": {
+     "t": "Deine Kamera kennenlernen",
+     "g": "Lerne die wichtigsten Teile jeder Kamera oder Handykamera kennen und was sie für deine Bilder tun.",
+     "p": [
+      "Das Objektiv sammelt Licht und bestimmt den Bildausschnitt; der Sensor zeichnet dieses Licht als Bild auf.",
+      "Der Auslöser macht das Foto; bei vielen Kameras stellt halbes Drücken scharf, ganzes Drücken löst aus.",
+      "Display oder Sucher zeigen deinen Ausschnitt: Achte auch auf die Ränder, nicht nur auf die Mitte."
+     ],
+     "q": "Fotografierst du meist mit Handy oder Kamera, und welche Taste oder Einstellung ist dir noch ein Rätsel?",
+     "c": "Finde Objektiv, Auslöser und Display an deinem Gerät und mach ein Foto, wenn möglich mit halbem Drücken zuerst."
+    },
+    "es": {
+     "t": "Conoce tu cámara",
+     "g": "Aprende las partes principales de cualquier cámara o móvil y qué hace cada una por tus fotos.",
+     "p": [
+      "El objetivo recoge la luz y decide lo amplia o cercana que es la vista; el sensor registra esa luz como imagen.",
+      "El disparador toma la foto; en muchas cámaras, pulsar a medias enfoca y pulsar del todo dispara.",
+      "La pantalla o el visor muestran tu encuadre: mira también los bordes, no solo el centro."
+     ],
+     "q": "¿Sueles fotografiar con móvil o con cámara, y qué botón o ajuste todavía te desconcierta?",
+     "c": "Localiza el objetivo, el disparador y la pantalla de tu aparato y haz una foto pulsando a medias primero si se puede."
+    },
+    "fr": {
+     "t": "Découvrir ton appareil",
+     "g": "Apprends les éléments principaux de tout appareil photo ou smartphone et ce que chacun apporte à tes images.",
+     "p": [
+      "L'objectif capte la lumière et définit le champ de vision ; le capteur enregistre cette lumière pour créer l'image.",
+      "Le déclencheur prend la photo ; sur beaucoup d'appareils, une mi-course fait la mise au point, une pression complète déclenche.",
+      "L'écran ou le viseur montre ton cadrage : regarde aussi les bords, pas seulement le centre."
+     ],
+     "q": "Tu photographies plutôt au smartphone ou à l'appareil, et quel bouton ou réglage te reste mystérieux ?",
+     "c": "Repère l'objectif, le déclencheur et l'écran de ton appareil, puis prends une photo avec une mi-course d'abord si possible."
+    },
+    "it": {
+     "t": "Conoscere la tua fotocamera",
+     "g": "Impara le parti principali di ogni fotocamera o smartphone e cosa fa ciascuna per le tue foto.",
+     "p": [
+      "L'obiettivo raccoglie la luce e decide quanto è ampia o stretta la vista; il sensore registra quella luce come immagine.",
+      "Il pulsante di scatto fa la foto; su molte fotocamere premere a metà mette a fuoco e premere fino in fondo scatta.",
+      "Lo schermo o il mirino mostrano l'inquadratura: guarda anche i bordi, non solo il centro."
+     ],
+     "q": "Fotografi di più con lo smartphone o con la fotocamera, e quale tasto o impostazione ti confonde ancora?",
+     "c": "Trova obiettivo, pulsante di scatto e schermo sul tuo dispositivo e scatta una foto premendo prima a metà, se puoi."
+    },
+    "pt": {
+     "t": "Conhecer a tua câmara",
+     "g": "Aprende as partes principais de qualquer câmara ou telemóvel e o que cada uma faz pelas tuas fotos.",
+     "p": [
+      "A objetiva recolhe a luz e define a amplitude da vista; o sensor regista essa luz como imagem.",
+      "O botão do obturador tira a foto; em muitas câmaras, carregar a meio foca e carregar até ao fim dispara.",
+      "O ecrã ou o visor mostram o enquadramento: olha também para as margens, não só para o centro."
+     ],
+     "q": "Fotografas mais com telemóvel ou com câmara, e que botão ou definição ainda te confunde?",
+     "c": "Encontra a objetiva, o botão do obturador e o ecrã do teu aparelho e tira uma foto carregando primeiro a meio, se der."
+    },
+    "pt_BR": {
+     "t": "Conhecendo sua câmera",
+     "g": "Aprenda as partes principais de qualquer câmera ou celular e o que cada uma faz pelas suas fotos.",
+     "p": [
+      "A lente capta a luz e define se a vista é ampla ou próxima; o sensor registra essa luz como imagem.",
+      "O botão disparador tira a foto; em muitas câmeras, apertar até a metade foca e apertar até o fim dispara.",
+      "A tela ou o visor mostram seu enquadramento: olhe também as bordas, não só o centro."
+     ],
+     "q": "Você fotografa mais com celular ou câmera, e qual botão ou ajuste ainda te deixa confuso?",
+     "c": "Encontre a lente, o disparador e a tela do seu aparelho e tire uma foto apertando até a metade primeiro, se der."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holding the camera steady",
+     "g": "Learn a stable way to hold your camera or phone so your photos come out sharp instead of shaky.",
+     "p": [
+      "Use both hands, keep your elbows tucked against your body and stand with your feet shoulder-width apart.",
+      "Press the shutter gently; stabbing the button is one of the most common causes of blurry photos.",
+      "Breathe out slowly and shoot at the end of the breath, or lean on a wall or tree for extra support."
+     ],
+     "q": "Have you ever lost a great moment to a blurry photo, and what do you think caused it?",
+     "c": "Take five photos indoors in dim light using the steady grip and a gentle press, then zoom in to check sharpness."
+    },
+    "de": {
+     "t": "Die Kamera ruhig halten",
+     "g": "Lerne eine stabile Haltung für Kamera oder Handy, damit deine Fotos scharf statt verwackelt werden.",
+     "p": [
+      "Nimm beide Hände, drück die Ellbogen an den Körper und stell die Füße schulterbreit auseinander.",
+      "Drück den Auslöser sanft; hektisches Tippen ist eine der häufigsten Ursachen für unscharfe Bilder.",
+      "Atme langsam aus und löse am Ende des Atemzugs aus, oder lehn dich an eine Wand oder einen Baum."
+     ],
+     "q": "Hast du schon einen tollen Moment durch ein verwackeltes Foto verloren, und woran lag es wohl?",
+     "c": "Mach drinnen bei wenig Licht fünf Fotos mit ruhiger Haltung und sanftem Auslösen und prüfe die Schärfe vergrößert."
+    },
+    "es": {
+     "t": "Sujetar la cámara con firmeza",
+     "g": "Aprende a sujetar la cámara o el móvil de forma estable para que tus fotos salgan nítidas y no movidas.",
+     "p": [
+      "Usa las dos manos, pega los codos al cuerpo y separa los pies a la anchura de los hombros.",
+      "Pulsa el disparador con suavidad; apretarlo de golpe es una de las causas más comunes de fotos borrosas.",
+      "Suelta el aire despacio y dispara al final, o apóyate en una pared o un árbol para tener más estabilidad."
+     ],
+     "q": "¿Alguna vez perdiste un gran momento por una foto movida, y qué crees que la causó?",
+     "c": "Haz cinco fotos en interior con poca luz usando el agarre firme y un disparo suave, y amplía para revisar la nitidez."
+    },
+    "fr": {
+     "t": "Tenir l'appareil bien stable",
+     "g": "Apprends une prise stable de l'appareil ou du smartphone pour obtenir des photos nettes plutôt que floues.",
+     "p": [
+      "Tiens l'appareil à deux mains, coudes serrés contre le corps, pieds écartés à la largeur des épaules.",
+      "Appuie doucement sur le déclencheur : un geste brusque est l'une des causes les plus fréquentes de flou.",
+      "Expire lentement et déclenche en fin d'expiration, ou appuie-toi contre un mur ou un arbre."
+     ],
+     "q": "As-tu déjà raté un beau moment à cause d'une photo floue, et qu'est-ce qui l'a causé selon toi ?",
+     "c": "Prends cinq photos en intérieur peu éclairé avec une prise stable et un déclenchement doux, puis zoome pour vérifier la netteté."
+    },
+    "it": {
+     "t": "Tenere la fotocamera ferma",
+     "g": "Impara a tenere fotocamera o smartphone in modo stabile per avere foto nitide invece che mosse.",
+     "p": [
+      "Usa entrambe le mani, tieni i gomiti stretti al corpo e i piedi alla larghezza delle spalle.",
+      "Premi il pulsante con dolcezza: uno scatto brusco è una delle cause più comuni di foto mosse.",
+      "Espira lentamente e scatta alla fine del respiro, oppure appoggiati a un muro o a un albero."
+     ],
+     "q": "Ti è mai sfuggito un bel momento per una foto mossa, e secondo te cosa l'ha causata?",
+     "c": "Scatta cinque foto al chiuso con poca luce usando la presa stabile e uno scatto dolce, poi ingrandisci per controllare la nitidez."
+    },
+    "pt": {
+     "t": "Segurar a câmara com firmeza",
+     "g": "Aprende a segurar a câmara ou o telemóvel de forma estável para teres fotos nítidas e não tremidas.",
+     "p": [
+      "Usa as duas mãos, mantém os cotovelos junto ao corpo e os pés afastados à largura dos ombros.",
+      "Carrega no botão com suavidade; um toque brusco é uma das causas mais comuns de fotos desfocadas.",
+      "Expira devagar e dispara no fim da expiração, ou encosta-te a uma parede ou a uma árvore."
+     ],
+     "q": "Já perdeste um grande momento por causa de uma foto tremida, e o que achas que a causou?",
+     "c": "Tira cinco fotos num interior com pouca luz usando a pega firme e um toque suave, depois amplia para ver a nitidez."
+    },
+    "pt_BR": {
+     "t": "Segurando a câmera com firmeza",
+     "g": "Aprenda a segurar a câmera ou o celular de forma estável para ter fotos nítidas, não tremidas.",
+     "p": [
+      "Use as duas mãos, mantenha os cotovelos junto ao corpo e os pés afastados na largura dos ombros.",
+      "Aperte o botão com suavidade; um toque brusco é uma das causas mais comuns de fotos borradas.",
+      "Solte o ar devagar e dispare no fim da expiração, ou se apoie numa parede ou árvore."
+     ],
+     "q": "Você já perdeu um grande momento por causa de uma foto tremida, e o que acha que causou isso?",
+     "c": "Tire cinco fotos num ambiente interno com pouca luz usando a pegada firme e um toque suave, depois amplie para ver a nitidez."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone or camera: both work",
+     "g": "See what phones and dedicated cameras each do well, and why the person behind the device matters most.",
+     "p": [
+      "Phones are always with you, quick to use and great at processing tricky light automatically.",
+      "Dedicated cameras offer interchangeable lenses, physical controls and more freedom in very low light or fast action.",
+      "Seeing light, choosing a subject and composing well are skills that work on any device."
+     ],
+     "q": "What device do you have with you most often, and what would you love it to do better?",
+     "c": "Photograph the same scene with whatever devices you can borrow or own, or just one, and note what you like in each result."
+    },
+    "de": {
+     "t": "Handy oder Kamera: beides geht",
+     "g": "Sieh, was Handys und Kameras jeweils gut können und warum der Mensch hinter dem Gerät am wichtigsten ist.",
+     "p": [
+      "Handys sind immer dabei, schnell bereit und verarbeiten schwieriges Licht automatisch erstaunlich gut.",
+      "Kameras bieten Wechselobjektive, echte Tasten und mehr Spielraum bei sehr wenig Licht oder schneller Action.",
+      "Licht sehen, ein Motiv wählen und gut komponieren sind Fähigkeiten, die mit jedem Gerät funktionieren."
+     ],
+     "q": "Welches Gerät hast du am häufigsten dabei, und was soll es deiner Meinung nach besser können?",
+     "c": "Fotografiere dieselbe Szene mit allen Geräten, die du hast, oder nur mit einem, und notiere, was dir am Ergebnis gefällt."
+    },
+    "es": {
+     "t": "Móvil o cámara: ambos sirven",
+     "g": "Descubre en qué destacan el móvil y la cámara, y por qué lo más importante es quien está detrás.",
+     "p": [
+      "El móvil siempre va contigo, es rápido y procesa muy bien la luz difícil de forma automática.",
+      "La cámara ofrece objetivos intercambiables, mandos físicos y más margen con muy poca luz o acción rápida.",
+      "Ver la luz, elegir un sujeto y componer bien son habilidades que funcionan con cualquier aparato."
+     ],
+     "q": "¿Qué aparato llevas contigo más a menudo y qué te gustaría que hiciera mejor?",
+     "c": "Fotografía la misma escena con los aparatos que tengas, o solo con uno, y anota qué te gusta de cada resultado."
+    },
+    "fr": {
+     "t": "Smartphone ou appareil : les deux",
+     "g": "Vois ce que font bien le smartphone et l'appareil photo, et pourquoi la personne derrière compte le plus.",
+     "p": [
+      "Le smartphone est toujours sur toi, rapide, et gère très bien automatiquement les lumières difficiles.",
+      "L'appareil photo offre des objectifs interchangeables, des commandes physiques et plus de marge en faible lumière ou en action.",
+      "Voir la lumière, choisir un sujet et bien composer sont des savoir-faire valables sur tout appareil."
+     ],
+     "q": "Quel appareil as-tu le plus souvent sur toi, et qu'aimerais-tu qu'il fasse mieux ?",
+     "c": "Photographie la même scène avec les appareils que tu as, ou un seul, et note ce qui te plaît dans chaque résultat."
+    },
+    "it": {
+     "t": "Smartphone o fotocamera: vanno bene",
+     "g": "Scopri in cosa eccellono smartphone e fotocamera e perché conta soprattutto chi c'è dietro.",
+     "p": [
+      "Lo smartphone è sempre con te, è rapido ed elabora molto bene in automatico la luce difficile.",
+      "La fotocamera offre obiettivi intercambiabili, comandi fisici e più margine con poca luce o azione veloce.",
+      "Vedere la luce, scegliere un soggetto e comporre bene sono capacità che funzionano con qualsiasi dispositivo."
+     ],
+     "q": "Quale dispositivo porti con te più spesso e cosa vorresti che facesse meglio?",
+     "c": "Fotografa la stessa scena con i dispositivi che hai, o anche uno solo, e annota cosa ti piace di ogni risultato."
+    },
+    "pt": {
+     "t": "Telemóvel ou câmara: ambos servem",
+     "g": "Vê no que o telemóvel e a câmara se destacam e porque o que mais conta é quem está por trás.",
+     "p": [
+      "O telemóvel está sempre contigo, é rápido e trata muito bem a luz difícil de forma automática.",
+      "A câmara oferece objetivas intermutáveis, comandos físicos e mais margem com pouca luz ou ação rápida.",
+      "Ver a luz, escolher um motivo e compor bem são capacidades que funcionam em qualquer aparelho."
+     ],
+     "q": "Que aparelho tens contigo mais vezes e o que gostavas que fizesse melhor?",
+     "c": "Fotografa a mesma cena com os aparelhos que tiveres, ou só com um, e anota o que te agrada em cada resultado."
+    },
+    "pt_BR": {
+     "t": "Celular ou câmera: os dois servem",
+     "g": "Veja no que o celular e a câmera se destacam e por que o mais importante é quem está por trás.",
+     "p": [
+      "O celular está sempre com você, é rápido e trata muito bem a luz difícil de forma automática.",
+      "A câmera oferece lentes intercambiáveis, controles físicos e mais margem com pouca luz ou ação rápida.",
+      "Ver a luz, escolher um assunto e compor bem são habilidades que funcionam em qualquer aparelho."
+     ],
+     "q": "Qual aparelho você carrega com mais frequência e o que gostaria que ele fizesse melhor?",
+     "c": "Fotografe a mesma cena com os aparelhos que tiver, ou só com um, e anote o que você curte em cada resultado."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cleaning your lens",
+     "g": "Understand why a smudged lens ruins sharpness and learn to clean it safely in a few seconds.",
+     "p": [
+      "A fingerprint on the lens spreads light, giving hazy photos, soft details and glowing halos around lights.",
+      "Blow or brush away dust first, then wipe gently in small circles with a clean microfibre cloth.",
+      "Avoid paper towels, rough fabric and strong cleaners, which can scratch or damage lens coatings."
+     ],
+     "q": "How often do you check your lens before shooting, and have you ever noticed a hazy photo?",
+     "c": "Take a photo of a lamp, clean your lens properly, take it again and compare the two images."
+    },
+    "de": {
+     "t": "Das Objektiv reinigen",
+     "g": "Versteh, warum ein verschmiertes Objektiv die Schärfe ruiniert, und reinige es in Sekunden sicher.",
+     "p": [
+      "Ein Fingerabdruck streut das Licht: Fotos werden milchig, Details weich und Lichter bekommen Schleier.",
+      "Erst Staub wegpusten oder wegpinseln, dann mit einem sauberen Mikrofasertuch in kleinen Kreisen wischen.",
+      "Meide Küchenpapier, raue Stoffe und scharfe Reiniger, sie können die Vergütung zerkratzen."
+     ],
+     "q": "Wie oft prüfst du dein Objektiv vor dem Fotografieren, und hattest du schon milchige Fotos?",
+     "c": "Fotografiere eine Lampe, reinige dein Objektiv richtig, fotografiere sie erneut und vergleiche beide Bilder."
+    },
+    "es": {
+     "t": "Limpiar el objetivo",
+     "g": "Entiende por qué un objetivo sucio arruina la nitidez y aprende a limpiarlo con seguridad en segundos.",
+     "p": [
+      "Una huella en la lente dispersa la luz: fotos lechosas, detalles blandos y halos alrededor de las luces.",
+      "Primero sopla o cepilla el polvo y luego limpia con suavidad en pequeños círculos con un paño de microfibra.",
+      "Evita el papel de cocina, los tejidos ásperos y los limpiadores fuertes, que rayan el tratamiento de la lente."
+     ],
+     "q": "¿Con qué frecuencia revisas el objetivo antes de disparar, y has notado alguna vez una foto lechosa?",
+     "c": "Fotografía una lámpara, limpia bien tu objetivo, repite la foto y compara las dos imágenes."
+    },
+    "fr": {
+     "t": "Nettoyer ton objectif",
+     "g": "Comprends pourquoi un objectif sale ruine la netteté et apprends à le nettoyer en toute sécurité.",
+     "p": [
+      "Une trace de doigt diffuse la lumière : photos voilées, détails mous et halos autour des lumières.",
+      "Souffle ou brosse d'abord la poussière, puis essuie doucement en petits cercles avec un chiffon microfibre propre.",
+      "Évite l'essuie-tout, les tissus rugueux et les produits agressifs, qui peuvent rayer le traitement de la lentille."
+     ],
+     "q": "Vérifies-tu souvent ton objectif avant de photographier, et as-tu déjà remarqué une photo voilée ?",
+     "c": "Photographie une lampe, nettoie bien ton objectif, refais la photo et compare les deux images."
+    },
+    "it": {
+     "t": "Pulire l'obiettivo",
+     "g": "Capisci perché un obiettivo sporco rovina la nitidezza e impara a pulirlo in sicurezza in pochi secondi.",
+     "p": [
+      "Un'impronta sulla lente diffonde la luce: foto lattiginose, dettagli morbidi e aloni intorno alle luci.",
+      "Prima soffia o spazzola via la polvere, poi pulisci con delicatezza in piccoli cerchi con un panno in microfibra.",
+      "Evita carta da cucina, tessuti ruvidi e detergenti aggressivi, che possono graffiare il trattamento della lente."
+     ],
+     "q": "Quanto spesso controlli l'obiettivo prima di scattare, e hai mai notato una foto lattiginosa?",
+     "c": "Fotografa una lampada, pulisci bene l'obiettivo, rifai la foto e confronta le due immagini."
+    },
+    "pt": {
+     "t": "Limpar a objetiva",
+     "g": "Percebe porque uma objetiva suja estraga a nitidez e aprende a limpá-la em segurança em segundos.",
+     "p": [
+      "Uma dedada na lente espalha a luz: fotos leitosas, detalhes moles e halos à volta das luzes.",
+      "Primeiro sopra ou escova o pó, depois limpa com suavidade em pequenos círculos com um pano de microfibra limpo.",
+      "Evita papel de cozinha, tecidos ásperos e produtos fortes, que podem riscar o revestimento da lente."
+     ],
+     "q": "Com que frequência verificas a objetiva antes de fotografar, e já reparaste numa foto leitosa?",
+     "c": "Fotografa um candeeiro, limpa bem a objetiva, repete a foto e compara as duas imagens."
+    },
+    "pt_BR": {
+     "t": "Limpando a lente",
+     "g": "Entenda por que uma lente suja estraga a nitidez e aprenda a limpá-la com segurança em segundos.",
+     "p": [
+      "Uma marca de dedo na lente espalha a luz: fotos leitosas, detalhes moles e halos em volta das luzes.",
+      "Primeiro sopre ou escove a poeira, depois limpe com suavidade em pequenos círculos com um pano de microfibra limpo.",
+      "Evite papel-toalha, tecidos ásperos e produtos fortes, que podem riscar o revestimento da lente."
+     ],
+     "q": "Com que frequência você confere a lente antes de fotografar, e já reparou numa foto leitosa?",
+     "c": "Fotografe uma luminária, limpe bem a lente, repita a foto e compare as duas imagens."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Auto mode and its limits",
+     "g": "Learn what the camera decides for you in auto mode and spot the moments when those choices go wrong.",
+     "p": [
+      "In auto mode the camera picks brightness, focus and often colour, aiming for an average, safe result.",
+      "It is easily fooled by backlight, snow, dark rooms or several possible subjects in the frame.",
+      "Noticing when auto fails is the first step towards taking control of your own pictures."
+     ],
+     "q": "When has auto mode given you a photo that looked nothing like what you saw?",
+     "c": "Photograph a person or object standing in front of a bright window in auto mode and describe what went wrong."
+    },
+    "de": {
+     "t": "Automatik und ihre Grenzen",
+     "g": "Lerne, was die Kamera im Automatikmodus für dich entscheidet, und erkenne, wann sie danebenliegt.",
+     "p": [
+      "Im Automatikmodus wählt die Kamera Helligkeit, Fokus und oft Farbe, mit dem Ziel eines sicheren Durchschnitts.",
+      "Sie lässt sich leicht täuschen: Gegenlicht, Schnee, dunkle Räume oder mehrere mögliche Motive im Bild.",
+      "Zu merken, wann die Automatik versagt, ist der erste Schritt, die Kontrolle selbst zu übernehmen."
+     ],
+     "q": "Wann hat dir die Automatik ein Foto geliefert, das ganz anders aussah als das, was du gesehen hast?",
+     "c": "Fotografiere im Automatikmodus etwas vor einem hellen Fenster und beschreibe, was schiefgelaufen ist."
+    },
+    "es": {
+     "t": "El modo automático y sus límites",
+     "g": "Aprende qué decide la cámara por ti en modo automático y detecta cuándo esas decisiones fallan.",
+     "p": [
+      "En automático la cámara elige brillo, enfoque y a menudo color, buscando un resultado medio y seguro.",
+      "Se engaña fácilmente con contraluces, nieve, habitaciones oscuras o varios posibles sujetos en el encuadre.",
+      "Darte cuenta de cuándo falla el automático es el primer paso para tomar el control de tus fotos."
+     ],
+     "q": "¿Cuándo te ha dado el modo automático una foto que no se parecía nada a lo que veías?",
+     "c": "Fotografía en automático algo delante de una ventana luminosa y describe qué salió mal."
+    },
+    "fr": {
+     "t": "Le mode auto et ses limites",
+     "g": "Apprends ce que l'appareil décide pour toi en mode auto et repère quand ces choix tournent mal.",
+     "p": [
+      "En mode auto, l'appareil choisit la luminosité, la mise au point et souvent la couleur, pour un résultat moyen et sûr.",
+      "Il se laisse facilement piéger par le contre-jour, la neige, les pièces sombres ou plusieurs sujets possibles.",
+      "Remarquer quand l'auto échoue est le premier pas pour reprendre le contrôle de tes photos."
+     ],
+     "q": "Quand le mode auto t'a-t-il donné une photo très différente de ce que tu voyais ?",
+     "c": "Photographie en mode auto un objet devant une fenêtre lumineuse et décris ce qui n'a pas marché."
+    },
+    "it": {
+     "t": "La modalità auto e i suoi limiti",
+     "g": "Impara cosa decide la fotocamera al posto tuo in automatico e riconosci quando quelle scelte sbagliano.",
+     "p": [
+      "In automatico la fotocamera sceglie luminosità, messa a fuoco e spesso colore, cercando un risultato medio e sicuro.",
+      "Si lascia ingannare facilmente da controluce, neve, stanze buie o più soggetti possibili nell'inquadratura.",
+      "Accorgerti di quando l'automatico sbaglia è il primo passo per prendere il controllo delle tue foto."
+     ],
+     "q": "Quando la modalità automatica ti ha dato una foto molto diversa da ciò che vedevi?",
+     "c": "Fotografa in automatico un oggetto davanti a una finestra luminosa e descrivi cosa è andato storto."
+    },
+    "pt": {
+     "t": "O modo automático e os seus limites",
+     "g": "Aprende o que a câmara decide por ti no modo automático e repara quando essas escolhas falham.",
+     "p": [
+      "No automático a câmara escolhe brilho, foco e muitas vezes cor, procurando um resultado médio e seguro.",
+      "Engana-se facilmente com contraluz, neve, salas escuras ou vários motivos possíveis no enquadramento.",
+      "Perceber quando o automático falha é o primeiro passo para tomares o controlo das tuas fotos."
+     ],
+     "q": "Quando é que o modo automático te deu uma foto nada parecida com o que estavas a ver?",
+     "c": "Fotografa em automático algo em frente a uma janela clara e descreve o que correu mal."
+    },
+    "pt_BR": {
+     "t": "O modo automático e seus limites",
+     "g": "Aprenda o que a câmera decide por você no automático e perceba quando essas escolhas dão errado.",
+     "p": [
+      "No automático a câmera escolhe brilho, foco e muitas vezes cor, buscando um resultado médio e seguro.",
+      "Ela se engana fácil com contraluz, neve, ambientes escuros ou vários assuntos possíveis no quadro.",
+      "Perceber quando o automático falha é o primeiro passo para assumir o controle das suas fotos."
+     ],
+     "q": "Quando o modo automático te deu uma foto nada parecida com o que você estava vendo?",
+     "c": "Fotografe no automático algo na frente de uma janela clara e descreva o que deu errado."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tap to focus",
+     "g": "Choose exactly where your camera focuses and learn to check that your subject is truly sharp.",
+     "p": [
+      "On a phone, tap the subject on the screen; on a camera, place the focus point on it and half-press the shutter.",
+      "Many devices let you lock focus by holding your tap or keeping the half-press, then recompose without losing it.",
+      "Always zoom into the photo afterwards: a sharp-looking small preview can hide soft focus."
+     ],
+     "q": "What do you usually photograph where the camera focuses on the wrong thing?",
+     "c": "Place two objects at different distances, take one photo focused on each, and compare which part is sharp."
+    },
+    "de": {
+     "t": "Antippen zum Scharfstellen",
+     "g": "Wähle genau, wo deine Kamera scharfstellt, und prüfe, ob dein Motiv wirklich scharf ist.",
+     "p": [
+      "Am Handy tippst du das Motiv auf dem Display an; an der Kamera legst du den Fokuspunkt darauf und drückst halb.",
+      "Viele Geräte speichern den Fokus, wenn du gedrückt hältst; dann kannst du den Ausschnitt ändern.",
+      "Vergrößere das Foto danach immer: Eine kleine Vorschau wirkt scharf, auch wenn sie es nicht ist."
+     ],
+     "q": "Was fotografierst du oft, bei dem die Kamera auf das Falsche scharfstellt?",
+     "c": "Stell zwei Gegenstände in verschiedenen Abständen auf, fokussiere je einmal auf jeden und vergleiche die Schärfe."
+    },
+    "es": {
+     "t": "Toca para enfocar",
+     "g": "Elige exactamente dónde enfoca la cámara y aprende a comprobar que tu sujeto está realmente nítido.",
+     "p": [
+      "En el móvil toca el sujeto en la pantalla; en la cámara coloca el punto de enfoque sobre él y pulsa a medias.",
+      "Muchos aparatos bloquean el enfoque si mantienes el toque o la media pulsación, y así puedes reencuadrar.",
+      "Amplía siempre la foto después: una vista previa pequeña parece nítida aunque no lo esté."
+     ],
+     "q": "¿Qué sueles fotografiar en lo que la cámara enfoca lo que no es?",
+     "c": "Coloca dos objetos a distintas distancias, haz una foto enfocando cada uno y compara qué parte queda nítida."
+    },
+    "fr": {
+     "t": "Toucher pour faire la mise au point",
+     "g": "Choisis précisément où ton appareil fait la mise au point et vérifie que ton sujet est vraiment net.",
+     "p": [
+      "Sur smartphone, touche le sujet à l'écran ; sur appareil, place le collimateur dessus et appuie à mi-course.",
+      "Beaucoup d'appareils verrouillent la mise au point si tu maintiens l'appui, pour recadrer sans la perdre.",
+      "Zoome toujours sur la photo ensuite : un petit aperçu paraît net même quand il ne l'est pas."
+     ],
+     "q": "Que photographies-tu souvent où l'appareil fait le point sur la mauvaise chose ?",
+     "c": "Place deux objets à des distances différentes, fais une photo nette sur chacun et compare la zone de netteté."
+    },
+    "it": {
+     "t": "Tocca per mettere a fuoco",
+     "g": "Scegli esattamente dove mette a fuoco la fotocamera e impara a verificare che il soggetto sia davvero nitido.",
+     "p": [
+      "Sullo smartphone tocca il soggetto sullo schermo; sulla fotocamera metti il punto AF su di esso e premi a metà.",
+      "Molti dispositivi bloccano la messa a fuoco se tieni premuto, così puoi ricomporre senza perderla.",
+      "Ingrandisci sempre la foto dopo: un'anteprima piccola sembra nitida anche quando non lo è."
+     ],
+     "q": "Cosa fotografi spesso in cui la fotocamera mette a fuoco la cosa sbagliata?",
+     "c": "Metti due oggetti a distanze diverse, scatta una foto a fuoco su ciascuno e confronta quale parte è nitida."
+    },
+    "pt": {
+     "t": "Tocar para focar",
+     "g": "Escolhe exatamente onde a câmara foca e aprende a confirmar que o motivo está mesmo nítido.",
+     "p": [
+      "No telemóvel toca no motivo no ecrã; na câmara põe o ponto de focagem sobre ele e carrega a meio.",
+      "Muitos aparelhos bloqueiam o foco se mantiveres o toque, para poderes reenquadrar sem o perder.",
+      "Amplia sempre a foto depois: uma pré-visualização pequena parece nítida mesmo quando não está."
+     ],
+     "q": "O que costumas fotografar em que a câmara foca a coisa errada?",
+     "c": "Põe dois objetos a distâncias diferentes, tira uma foto focada em cada um e compara qual parte fica nítida."
+    },
+    "pt_BR": {
+     "t": "Toque para focar",
+     "g": "Escolha exatamente onde a câmera foca e aprenda a conferir se o assunto está mesmo nítido.",
+     "p": [
+      "No celular, toque no assunto na tela; na câmera, coloque o ponto de foco sobre ele e aperte até a metade.",
+      "Muitos aparelhos travam o foco se você segurar o toque, e aí dá para reenquadrar sem perdê-lo.",
+      "Sempre amplie a foto depois: uma prévia pequena parece nítida mesmo quando não está."
+     ],
+     "q": "O que você costuma fotografar em que a câmera foca a coisa errada?",
+     "c": "Coloque dois objetos a distâncias diferentes, tire uma foto focando cada um e compare qual parte fica nítida."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your subject",
+     "g": "Learn to decide what your photo is about before you press the shutter.",
+     "p": [
+      "Ask yourself one question first: what caught my eye, and what do I want people to notice?",
+      "Once you know the subject, make it the clearest, brightest or sharpest thing in the frame.",
+      "If you cannot name the subject in a few words, the viewer will not find it either."
+     ],
+     "q": "What kinds of subjects do you find yourself drawn to again and again?",
+     "c": "Go for a ten-minute walk and take only five photos, naming each subject out loud before you shoot."
+    },
+    "de": {
+     "t": "Dein Motiv finden",
+     "g": "Lerne, vor dem Auslösen zu entscheiden, worum es in deinem Foto geht.",
+     "p": [
+      "Stell dir zuerst eine Frage: Was hat meinen Blick gefangen, und was sollen andere bemerken?",
+      "Wenn du dein Motiv kennst, mach es zum klarsten, hellsten oder schärfsten Element im Bild.",
+      "Kannst du dein Motiv nicht in wenigen Worten benennen, findet es auch der Betrachter nicht."
+     ],
+     "q": "Welche Motive ziehen dich immer wieder an?",
+     "c": "Mach einen zehnminütigen Spaziergang mit nur fünf Fotos und benenne vor jedem Bild laut dein Motiv."
+    },
+    "es": {
+     "t": "Encontrar tu sujeto",
+     "g": "Aprende a decidir de qué trata tu foto antes de pulsar el disparador.",
+     "p": [
+      "Hazte primero una pregunta: ¿qué me llamó la atención y qué quiero que la gente vea?",
+      "Cuando sepas cuál es el sujeto, haz que sea lo más claro, luminoso o nítido del encuadre.",
+      "Si no puedes nombrar el sujeto en pocas palabras, quien mire tampoco lo encontrará."
+     ],
+     "q": "¿Qué tipo de sujetos te atraen una y otra vez?",
+     "c": "Da un paseo de diez minutos y haz solo cinco fotos, diciendo en voz alta el sujeto antes de cada disparo."
+    },
+    "fr": {
+     "t": "Trouver ton sujet",
+     "g": "Apprends à décider de quoi parle ta photo avant d'appuyer sur le déclencheur.",
+     "p": [
+      "Pose-toi d'abord une question : qu'est-ce qui a attiré mon regard, et que veux-je que l'on remarque ?",
+      "Une fois le sujet choisi, fais-en l'élément le plus clair, le plus lumineux ou le plus net du cadre.",
+      "Si tu ne peux pas nommer ton sujet en quelques mots, le spectateur ne le trouvera pas non plus."
+     ],
+     "q": "Quels sujets t'attirent encore et encore ?",
+     "c": "Fais une balade de dix minutes avec seulement cinq photos, en nommant ton sujet à voix haute avant chacune."
+    },
+    "it": {
+     "t": "Trovare il tuo soggetto",
+     "g": "Impara a decidere di cosa parla la tua foto prima di premere il pulsante di scatto.",
+     "p": [
+      "Fatti prima una domanda: cosa ha catturato il mio sguardo e cosa voglio che gli altri notino?",
+      "Quando conosci il soggetto, rendilo l'elemento più chiaro, luminoso o nitido dell'inquadratura.",
+      "Se non riesci a nominare il soggetto in poche parole, nemmeno chi guarda lo troverà."
+     ],
+     "q": "Quali soggetti ti attirano sempre di nuovo?",
+     "c": "Fai una passeggiata di dieci minuti con solo cinque scatti, dicendo ad alta voce il soggetto prima di ognuno."
+    },
+    "pt": {
+     "t": "Encontrar o teu motivo",
+     "g": "Aprende a decidir sobre o que é a tua foto antes de carregar no botão.",
+     "p": [
+      "Faz-te primeiro uma pergunta: o que me chamou a atenção e o que quero que as pessoas notem?",
+      "Quando souberes qual é o motivo, torna-o o elemento mais claro, luminoso ou nítido do enquadramento.",
+      "Se não consegues dizer o motivo em poucas palavras, quem vê também não o vai encontrar."
+     ],
+     "q": "Que tipo de motivos te atraem uma e outra vez?",
+     "c": "Dá um passeio de dez minutos e tira só cinco fotos, dizendo em voz alta o motivo antes de cada uma."
+    },
+    "pt_BR": {
+     "t": "Encontrando seu assunto",
+     "g": "Aprenda a decidir sobre o que é sua foto antes de apertar o botão.",
+     "p": [
+      "Faça primeiro uma pergunta: o que chamou minha atenção e o que eu quero que as pessoas notem?",
+      "Quando souber qual é o assunto, faça dele o elemento mais claro, iluminado ou nítido do quadro.",
+      "Se você não consegue dizer o assunto em poucas palavras, quem olha também não vai encontrá-lo."
+     ],
+     "q": "Que tipo de assunto atrai você de novo e de novo?",
+     "c": "Faça uma caminhada de dez minutos e tire só cinco fotos, dizendo em voz alta o assunto antes de cada uma."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Get closer",
+     "g": "Learn how filling the frame with your subject removes distractions and adds impact.",
+     "p": [
+      "Most beginner photos are taken too far away, so the subject becomes a small dot among clutter.",
+      "Walk closer rather than zooming when you can: moving your feet also changes the perspective.",
+      "Fill the frame until only the important parts remain, then try one step closer still."
+     ],
+     "q": "What subject would you like to photograph much closer than you normally do?",
+     "c": "Photograph one subject three times: from where you stand, two steps closer, and as close as your device allows."
+    },
+    "de": {
+     "t": "Geh näher ran",
+     "g": "Lerne, wie du mit einem formatfüllenden Motiv Ablenkungen entfernst und Wirkung erzeugst.",
+     "p": [
+      "Viele Anfängerfotos entstehen zu weit weg: Das Motiv wird ein kleiner Punkt im Durcheinander.",
+      "Geh lieber näher, statt zu zoomen: Mit den Füßen änderst du auch die Perspektive.",
+      "Füll das Bild, bis nur das Wichtige bleibt, und probier dann noch einen Schritt näher."
+     ],
+     "q": "Welches Motiv würdest du gern viel näher fotografieren als sonst?",
+     "c": "Fotografiere ein Motiv dreimal: von deinem Standort, zwei Schritte näher und so nah, wie dein Gerät es erlaubt."
+    },
+    "es": {
+     "t": "Acércate más",
+     "g": "Aprende cómo llenar el encuadre con tu sujeto elimina distracciones y da más fuerza a la foto.",
+     "p": [
+      "Muchas fotos de principiante se hacen desde muy lejos y el sujeto queda como un punto entre el desorden.",
+      "Acércate andando en lugar de usar el zoom cuando puedas: al moverte también cambia la perspectiva.",
+      "Llena el encuadre hasta que solo quede lo importante y luego prueba a dar un paso más."
+     ],
+     "q": "¿Qué sujeto te gustaría fotografiar mucho más de cerca de lo habitual?",
+     "c": "Fotografía un sujeto tres veces: desde donde estás, dos pasos más cerca y tan cerca como permita tu aparato."
+    },
+    "fr": {
+     "t": "Rapproche-toi",
+     "g": "Apprends comment remplir le cadre avec ton sujet élimine les distractions et donne de l'impact.",
+     "p": [
+      "Beaucoup de photos de débutant sont prises de trop loin : le sujet devient un petit point dans le désordre.",
+      "Avance plutôt que de zoomer quand c'est possible : en bougeant, tu changes aussi la perspective.",
+      "Remplis le cadre jusqu'à ne garder que l'essentiel, puis essaie encore un pas de plus."
+     ],
+     "q": "Quel sujet aimerais-tu photographier beaucoup plus près que d'habitude ?",
+     "c": "Photographie un sujet trois fois : de ta place, deux pas plus près et aussi près que ton appareil le permet."
+    },
+    "it": {
+     "t": "Avvicinati",
+     "g": "Impara come riempire l'inquadratura con il soggetto elimina le distrazioni e dà più forza alla foto.",
+     "p": [
+      "Molte foto da principiante sono scattate da troppo lontano e il soggetto diventa un puntino nel disordine.",
+      "Quando puoi, avvicinati camminando invece di zoomare: muovendoti cambia anche la prospettiva.",
+      "Riempi l'inquadratura finché resta solo l'essenziale, poi prova ancora un passo più vicino."
+     ],
+     "q": "Quale soggetto ti piacerebbe fotografare molto più da vicino del solito?",
+     "c": "Fotografa un soggetto tre volte: da dove sei, due passi più vicino e il più vicino che il tuo dispositivo permette."
+    },
+    "pt": {
+     "t": "Aproxima-te",
+     "g": "Aprende como encher o enquadramento com o motivo elimina distrações e dá mais impacto à foto.",
+     "p": [
+      "Muitas fotos de principiante são tiradas de longe e o motivo fica um pontinho no meio da confusão.",
+      "Quando puderes, aproxima-te a pé em vez de usar o zoom: ao mexeres-te também muda a perspetiva.",
+      "Enche o enquadramento até ficar só o essencial e depois experimenta ainda mais um passo."
+     ],
+     "q": "Que motivo gostavas de fotografar muito mais de perto do que o habitual?",
+     "c": "Fotografa um motivo três vezes: de onde estás, dois passos mais perto e o mais perto que o aparelho deixar."
+    },
+    "pt_BR": {
+     "t": "Chegue mais perto",
+     "g": "Aprenda como encher o quadro com o assunto elimina distrações e dá mais impacto à foto.",
+     "p": [
+      "Muitas fotos de iniciante são tiradas de longe, e o assunto vira um pontinho no meio da bagunça.",
+      "Quando puder, aproxime-se andando em vez de usar o zoom: ao se mover, a perspectiva também muda.",
+      "Encha o quadro até sobrar só o essencial e depois tente mais um passo."
+     ],
+     "q": "Que assunto você gostaria de fotografar bem mais de perto do que costuma?",
+     "c": "Fotografe um assunto três vezes: de onde está, dois passos mais perto e o mais perto que seu aparelho permitir."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Horizontal or vertical",
+     "g": "Learn when a horizontal or a vertical frame suits a scene better.",
+     "p": [
+      "Horizontal frames feel wide and calm, perfect for landscapes, groups and scenes that stretch sideways.",
+      "Vertical frames suit tall subjects: standing people, trees, towers, doorways and waterfalls.",
+      "Follow the main lines of your subject, and when unsure, simply take both versions."
+     ],
+     "q": "Do you usually hold your device upright or sideways, and why?",
+     "c": "Photograph three subjects both horizontally and vertically, then pick the stronger version of each."
+    },
+    "de": {
+     "t": "Querformat oder Hochformat",
+     "g": "Lerne, wann ein Quer- oder Hochformat besser zu einer Szene passt.",
+     "p": [
+      "Querformate wirken weit und ruhig, ideal für Landschaften, Gruppen und Szenen, die sich seitlich ausdehnen.",
+      "Hochformate passen zu hohen Motiven: stehende Menschen, Bäume, Türme, Türen und Wasserfälle.",
+      "Folge den Hauptlinien deines Motivs, und wenn du unsicher bist, mach einfach beide Versionen."
+     ],
+     "q": "Hältst du dein Gerät meistens hochkant oder quer, und warum?",
+     "c": "Fotografiere drei Motive je quer und hoch und wähle bei jedem die stärkere Version."
+    },
+    "es": {
+     "t": "Horizontal o vertical",
+     "g": "Aprende cuándo un encuadre horizontal o vertical encaja mejor con una escena.",
+     "p": [
+      "El encuadre horizontal transmite amplitud y calma: ideal para paisajes, grupos y escenas que se extienden a lo ancho.",
+      "El vertical va bien con sujetos altos: personas de pie, árboles, torres, puertas y cascadas.",
+      "Sigue las líneas principales del sujeto y, si dudas, haz simplemente las dos versiones."
+     ],
+     "q": "¿Sueles sujetar tu aparato en vertical o en horizontal, y por qué?",
+     "c": "Fotografía tres sujetos en horizontal y en vertical y elige la versión más fuerte de cada uno."
+    },
+    "fr": {
+     "t": "Horizontal ou vertical",
+     "g": "Apprends quand un cadrage horizontal ou vertical convient mieux à une scène.",
+     "p": [
+      "Le format horizontal évoque l'espace et le calme, idéal pour les paysages, les groupes et les scènes larges.",
+      "Le format vertical convient aux sujets hauts : personnes debout, arbres, tours, portes et cascades.",
+      "Suis les lignes principales de ton sujet et, en cas de doute, prends simplement les deux versions."
+     ],
+     "q": "Tiens-tu ton appareil plutôt à la verticale ou à l'horizontale, et pourquoi ?",
+     "c": "Photographie trois sujets en horizontal et en vertical, puis choisis la meilleure version de chacun."
+    },
+    "it": {
+     "t": "Orizzontale o verticale",
+     "g": "Impara quando un'inquadratura orizzontale o verticale si adatta meglio a una scena.",
+     "p": [
+      "L'orizzontale trasmette ampiezza e calma: perfetta per paesaggi, gruppi e scene che si estendono in larghezza.",
+      "La verticale si adatta ai soggetti alti: persone in piedi, alberi, torri, porte e cascate.",
+      "Segui le linee principali del soggetto e, se hai dubbi, scatta semplicemente entrambe le versioni."
+     ],
+     "q": "Di solito tieni il dispositivo in verticale o in orizzontale, e perché?",
+     "c": "Fotografa tre soggetti sia in orizzontale sia in verticale e scegli la versione migliore di ciascuno."
+    },
+    "pt": {
+     "t": "Horizontal ou vertical",
+     "g": "Aprende quando um enquadramento horizontal ou vertical se adapta melhor a uma cena.",
+     "p": [
+      "O horizontal transmite amplitude e calma: ideal para paisagens, grupos e cenas que se estendem para os lados.",
+      "O vertical serve motivos altos: pessoas de pé, árvores, torres, portas e cascatas.",
+      "Segue as linhas principais do motivo e, na dúvida, tira simplesmente as duas versões."
+     ],
+     "q": "Costumas segurar o aparelho na vertical ou na horizontal, e porquê?",
+     "c": "Fotografa três motivos na horizontal e na vertical e escolhe a versão mais forte de cada um."
+    },
+    "pt_BR": {
+     "t": "Horizontal ou vertical",
+     "g": "Aprenda quando um enquadramento horizontal ou vertical combina melhor com uma cena.",
+     "p": [
+      "O horizontal passa amplitude e calma: ideal para paisagens, grupos e cenas que se estendem para os lados.",
+      "O vertical combina com assuntos altos: pessoas em pé, árvores, torres, portas e cachoeiras.",
+      "Siga as linhas principais do assunto e, na dúvida, tire simplesmente as duas versões."
+     ],
+     "q": "Você costuma segurar o aparelho na vertical ou na horizontal, e por quê?",
+     "c": "Fotografe três assuntos na horizontal e na vertical e escolha a versão mais forte de cada um."
+    }
+   }
+  }
+ ]
+}

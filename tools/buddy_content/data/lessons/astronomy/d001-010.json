@@ -1,0 +1,835 @@
+{
+ "topic": "astronomy",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the night sky",
+     "g": "Discover what astronomy studies and see that you can start tonight with just your eyes.",
+     "p": [
+      "Astronomy studies everything beyond Earth: the Moon, planets, stars, galaxies and the universe itself.",
+      "You need no telescope to begin: thousands of stars, the Moon and several planets are visible to the naked eye.",
+      "It is one of the oldest sciences: people have watched the sky to keep time and find their way for millennia."
+     ],
+     "q": "What first made you curious about the sky?",
+     "c": "Step outside after dark for five minutes and count how many stars you can see."
+    },
+    "de": {
+     "t": "Willkommen am Nachthimmel",
+     "g": "Entdecke, womit sich die Astronomie beschäftigt, und starte noch heute Abend nur mit deinen Augen.",
+     "p": [
+      "Die Astronomie erforscht alles jenseits der Erde: Mond, Planeten, Sterne, Galaxien und das Universum selbst.",
+      "Ein Teleskop brauchst du nicht: Tausende Sterne, der Mond und mehrere Planeten sind mit bloßem Auge sichtbar.",
+      "Sie ist eine der ältesten Wissenschaften: Seit Jahrtausenden nutzen Menschen den Himmel als Uhr und Kompass."
+     ],
+     "q": "Was hat dich zum ersten Mal neugierig auf den Himmel gemacht?",
+     "c": "Geh heute nach Einbruch der Dunkelheit fünf Minuten hinaus und zähle, wie viele Sterne du siehst."
+    },
+    "es": {
+     "t": "Bienvenido al cielo nocturno",
+     "g": "Descubre qué estudia la astronomía y comprueba que puedes empezar esta noche solo con tus ojos.",
+     "p": [
+      "La astronomía estudia todo lo que hay más allá de la Tierra: Luna, planetas, estrellas, galaxias y el universo.",
+      "No necesitas telescopio: miles de estrellas, la Luna y varios planetas se ven a simple vista.",
+      "Es una de las ciencias más antiguas: durante milenios el cielo sirvió para medir el tiempo y orientarse."
+     ],
+     "q": "¿Qué fue lo primero que despertó tu curiosidad por el cielo?",
+     "c": "Sal cinco minutos después del anochecer y cuenta cuántas estrellas puedes ver."
+    },
+    "fr": {
+     "t": "Bienvenue sous le ciel nocturne",
+     "g": "Découvre ce qu’étudie l’astronomie et vois que tu peux commencer dès ce soir, avec tes seuls yeux.",
+     "p": [
+      "L’astronomie étudie tout ce qui se trouve au-delà de la Terre : Lune, planètes, étoiles, galaxies et l’univers.",
+      "Pas besoin de télescope : des milliers d’étoiles, la Lune et plusieurs planètes sont visibles à l’œil nu.",
+      "C’est l’une des plus anciennes sciences : depuis des millénaires, le ciel sert à mesurer le temps et à s’orienter."
+     ],
+     "q": "Qu’est-ce qui t’a rendu curieux du ciel pour la première fois ?",
+     "c": "Sors cinq minutes après la tombée de la nuit et compte combien d’étoiles tu vois."
+    },
+    "it": {
+     "t": "Benvenuto sotto il cielo notturno",
+     "g": "Scopri di cosa si occupa l’astronomia e scopri che puoi iniziare stasera con i soli occhi.",
+     "p": [
+      "L’astronomia studia tutto ciò che sta oltre la Terra: Luna, pianeti, stelle, galassie e l’universo stesso.",
+      "Non serve un telescopio: migliaia di stelle, la Luna e diversi pianeti si vedono a occhio nudo.",
+      "È una delle scienze più antiche: per millenni il cielo è servito a misurare il tempo e a orientarsi."
+     ],
+     "q": "Che cosa ti ha incuriosito del cielo la prima volta?",
+     "c": "Esci per cinque minuti dopo il tramonto e conta quante stelle riesci a vedere."
+    },
+    "pt": {
+     "t": "Bem-vindo ao céu noturno",
+     "g": "Descobre o que a astronomia estuda e percebe que podes começar esta noite só com os teus olhos.",
+     "p": [
+      "A astronomia estuda tudo o que está além da Terra: a Lua, os planetas, as estrelas, as galáxias e o universo.",
+      "Não precisas de telescópio: milhares de estrelas, a Lua e vários planetas veem-se a olho nu.",
+      "É uma das ciências mais antigas: há milénios que o céu serve para medir o tempo e orientar viajantes."
+     ],
+     "q": "O que te despertou a curiosidade pelo céu pela primeira vez?",
+     "c": "Sai cinco minutos depois de escurecer e conta quantas estrelas consegues ver."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao céu noturno",
+     "g": "Descubra o que a astronomia estuda e veja que você pode começar hoje à noite só com os olhos.",
+     "p": [
+      "A astronomia estuda tudo o que está além da Terra: a Lua, os planetas, as estrelas, as galáxias e o universo.",
+      "Você não precisa de telescópio: milhares de estrelas, a Lua e vários planetas são visíveis a olho nu.",
+      "É uma das ciências mais antigas: há milênios o céu serve para marcar o tempo e orientar viajantes."
+     ],
+     "q": "O que despertou sua curiosidade pelo céu pela primeira vez?",
+     "c": "Saia por cinco minutos depois que escurecer e conte quantas estrelas você consegue ver."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding a dark spot",
+     "g": "Learn why city lights hide the stars and how to choose a better place to observe.",
+     "p": [
+      "Light pollution is artificial light scattered in the air; it brightens the sky and drowns out faint stars.",
+      "From a big city you may see a few dozen stars; from a truly dark site, a few thousand.",
+      "A good spot is safe, away from direct lights, with an open view of the horizon, like a park or a field."
+     ],
+     "q": "Where near you could you find a darker patch of sky?",
+     "c": "Look for one spot near home where no lamp shines directly into your eyes."
+    },
+    "de": {
+     "t": "Einen dunklen Ort finden",
+     "g": "Erfahre, warum Stadtlicht die Sterne verdeckt und wie du einen besseren Beobachtungsplatz wählst.",
+     "p": [
+      "Lichtverschmutzung ist künstliches Licht, das in der Luft gestreut wird und schwache Sterne überstrahlt.",
+      "In einer Großstadt siehst du vielleicht ein paar Dutzend Sterne, an einem wirklich dunklen Ort einige Tausend.",
+      "Ein guter Platz ist sicher, ohne direkte Lampen und mit freiem Blick zum Horizont, etwa ein Park oder Feld."
+     ],
+     "q": "Wo in deiner Nähe könntest du einen dunkleren Himmel finden?",
+     "c": "Such dir in der Nähe deines Zuhauses einen Platz, an dem dir keine Lampe direkt in die Augen scheint."
+    },
+    "es": {
+     "t": "Encontrar un lugar oscuro",
+     "g": "Aprende por qué las luces de la ciudad ocultan las estrellas y cómo elegir un buen sitio para observar.",
+     "p": [
+      "La contaminación lumínica es luz artificial dispersada en el aire que aclara el cielo y apaga las estrellas débiles.",
+      "Desde una gran ciudad quizá veas unas decenas de estrellas; desde un lugar muy oscuro, varios miles.",
+      "Un buen sitio es seguro, sin luces directas y con el horizonte despejado, como un parque o un campo."
+     ],
+     "q": "¿Dónde cerca de ti podrías encontrar un cielo más oscuro?",
+     "c": "Busca cerca de casa un rincón donde ninguna farola te dé directamente en los ojos."
+    },
+    "fr": {
+     "t": "Trouver un coin sombre",
+     "g": "Comprends pourquoi les lumières de la ville cachent les étoiles et comment choisir un meilleur site.",
+     "p": [
+      "La pollution lumineuse est la lumière artificielle diffusée dans l’air : elle éclaircit le ciel et noie les étoiles.",
+      "Depuis une grande ville, on voit quelques dizaines d’étoiles ; depuis un site très sombre, plusieurs milliers.",
+      "Un bon site est sûr, loin des lampes directes, avec un horizon dégagé, comme un parc ou un champ."
+     ],
+     "q": "Où pourrais-tu trouver un ciel plus sombre près de chez toi ?",
+     "c": "Repère près de chez toi un endroit où aucune lampe ne t’éblouit directement."
+    },
+    "it": {
+     "t": "Trovare un luogo buio",
+     "g": "Scopri perché le luci della città nascondono le stelle e come scegliere un posto migliore per osservare.",
+     "p": [
+      "L’inquinamento luminoso è luce artificiale diffusa nell’aria: schiarisce il cielo e cancella le stelle deboli.",
+      "Da una grande città vedi forse qualche decina di stelle; da un luogo davvero buio, alcune migliaia.",
+      "Un buon posto è sicuro, lontano da luci dirette e con l’orizzonte libero, come un parco o un campo."
+     ],
+     "q": "Dove potresti trovare un cielo più buio vicino a te?",
+     "c": "Trova vicino a casa un punto dove nessun lampione ti illumina direttamente gli occhi."
+    },
+    "pt": {
+     "t": "Encontrar um local escuro",
+     "g": "Aprende porque é que as luzes da cidade escondem as estrelas e como escolher um bom local de observação.",
+     "p": [
+      "A poluição luminosa é luz artificial espalhada no ar: clareia o céu e apaga as estrelas mais fracas.",
+      "Numa grande cidade talvez vejas umas dezenas de estrelas; num local mesmo escuro, alguns milhares.",
+      "Um bom local é seguro, sem luzes diretas e com o horizonte desimpedido, como um parque ou um campo."
+     ],
+     "q": "Onde, perto de ti, poderias encontrar um céu mais escuro?",
+     "c": "Procura perto de casa um sítio onde nenhum candeeiro te bata diretamente nos olhos."
+    },
+    "pt_BR": {
+     "t": "Encontrando um lugar escuro",
+     "g": "Aprenda por que as luzes da cidade escondem as estrelas e como escolher um bom lugar para observar.",
+     "p": [
+      "A poluição luminosa é luz artificial espalhada no ar: ela clareia o céu e apaga as estrelas mais fracas.",
+      "Numa cidade grande você talvez veja algumas dezenas de estrelas; num lugar bem escuro, alguns milhares.",
+      "Um bom lugar é seguro, sem luzes diretas e com o horizonte livre, como um parque ou um campo."
+     ],
+     "q": "Onde, perto de você, daria para encontrar um céu mais escuro?",
+     "c": "Procure perto de casa um ponto onde nenhum poste ilumine diretamente seus olhos."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Letting your eyes adapt",
+     "g": "Understand dark adaptation and how to protect your night vision while observing.",
+     "p": [
+      "In the dark your pupils widen within seconds, but full dark adaptation takes about 20 to 30 minutes.",
+      "A single glance at a bright screen or torch can undo much of that progress in an instant.",
+      "Dim red light disturbs night vision far less, which is why astronomers use red torches."
+     ],
+     "q": "Have you ever noticed more stars appearing the longer you stayed outside?",
+     "c": "Tonight, stay in the dark for 20 minutes without your phone and notice how many more stars appear."
+    },
+    "de": {
+     "t": "Augen an die Dunkelheit gewöhnen",
+     "g": "Verstehe die Dunkeladaption und wie du deine Nachtsicht beim Beobachten schützt.",
+     "p": [
+      "Im Dunkeln weiten sich die Pupillen in Sekunden, doch die volle Anpassung dauert etwa 20 bis 30 Minuten.",
+      "Ein einziger Blick auf ein helles Display oder eine Lampe kann viel davon sofort zunichtemachen.",
+      "Schwaches Rotlicht stört die Nachtsicht viel weniger, deshalb nutzen Astronomen rote Taschenlampen."
+     ],
+     "q": "Hast du schon bemerkt, dass mehr Sterne auftauchen, je länger du draußen bist?",
+     "c": "Bleib heute Nacht 20 Minuten ohne Handy im Dunkeln und achte darauf, wie viele Sterne dazukommen."
+    },
+    "es": {
+     "t": "Dejar que tus ojos se adapten",
+     "g": "Entiende la adaptación a la oscuridad y cómo proteger tu visión nocturna al observar.",
+     "p": [
+      "En la oscuridad las pupilas se abren en segundos, pero la adaptación completa tarda unos 20 a 30 minutos.",
+      "Un solo vistazo a una pantalla o linterna brillante puede deshacer gran parte de ese avance al instante.",
+      "La luz roja tenue molesta mucho menos a la visión nocturna; por eso los astrónomos usan linternas rojas."
+     ],
+     "q": "¿Has notado que aparecen más estrellas cuanto más tiempo te quedas fuera?",
+     "c": "Esta noche quédate 20 minutos a oscuras sin el móvil y observa cuántas estrellas nuevas aparecen."
+    },
+    "fr": {
+     "t": "Laisser tes yeux s’adapter",
+     "g": "Comprends l’adaptation à l’obscurité et comment protéger ta vision nocturne pendant l’observation.",
+     "p": [
+      "Dans le noir, les pupilles s’ouvrent en quelques secondes, mais l’adaptation complète prend 20 à 30 minutes.",
+      "Un seul regard vers un écran ou une lampe vive peut effacer une grande partie de ce progrès.",
+      "Une faible lumière rouge gêne bien moins la vision nocturne : c’est pourquoi les astronomes l’utilisent."
+     ],
+     "q": "As-tu déjà remarqué que plus tu restes dehors, plus les étoiles apparaissent ?",
+     "c": "Ce soir, reste 20 minutes dans le noir sans téléphone et remarque combien d’étoiles s’ajoutent."
+    },
+    "it": {
+     "t": "Abituare gli occhi al buio",
+     "g": "Capisci l’adattamento al buio e come proteggere la tua visione notturna mentre osservi.",
+     "p": [
+      "Al buio le pupille si dilatano in pochi secondi, ma l’adattamento completo richiede circa 20-30 minuti.",
+      "Un solo sguardo a uno schermo o a una torcia luminosa può annullare gran parte di questo progresso.",
+      "Una luce rossa debole disturba molto meno la visione notturna: per questo gli astronomi usano torce rosse."
+     ],
+     "q": "Hai mai notato che compaiono più stelle quanto più resti fuori?",
+     "c": "Stasera resta 20 minuti al buio senza telefono e nota quante stelle in più compaiono."
+    },
+    "pt": {
+     "t": "Deixar os olhos adaptarem-se",
+     "g": "Percebe a adaptação ao escuro e como proteger a tua visão noturna durante a observação.",
+     "p": [
+      "No escuro, as pupilas dilatam em segundos, mas a adaptação completa demora cerca de 20 a 30 minutos.",
+      "Um único olhar para um ecrã ou lanterna forte pode desfazer grande parte desse progresso.",
+      "Uma luz vermelha fraca perturba muito menos a visão noturna; por isso os astrónomos usam lanternas vermelhas."
+     ],
+     "q": "Já reparaste que aparecem mais estrelas quanto mais tempo ficas lá fora?",
+     "c": "Esta noite fica 20 minutos no escuro sem telemóvel e repara quantas estrelas novas aparecem."
+    },
+    "pt_BR": {
+     "t": "Deixando os olhos se adaptarem",
+     "g": "Entenda a adaptação ao escuro e como proteger sua visão noturna durante a observação.",
+     "p": [
+      "No escuro, as pupilas dilatam em segundos, mas a adaptação completa leva cerca de 20 a 30 minutos.",
+      "Uma única olhada para uma tela ou lanterna forte pode desfazer boa parte desse progresso.",
+      "Uma luz vermelha fraca atrapalha bem menos a visão noturna; por isso os astrônomos usam lanternas vermelhas."
+     ],
+     "q": "Você já reparou que aparecem mais estrelas quanto mais tempo fica lá fora?",
+     "c": "Hoje à noite fique 20 minutos no escuro sem celular e repare quantas estrelas novas aparecem."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Day and night explained",
+     "g": "See how Earth’s daily spin makes the Sun and stars rise and set.",
+     "p": [
+      "Earth spins on its axis about once every 24 hours, carrying us from daylight into night and back.",
+      "The Sun and stars do not move across our sky by themselves; it is our planet turning beneath them.",
+      "Earth turns from west to east, which is why the Sun and stars rise in the east and set in the west."
+     ],
+     "q": "Before learning this, how did you picture the Sun moving across the sky?",
+     "c": "Note roughly where the Sun rises and sets from your home, without ever looking straight at it."
+    },
+    "de": {
+     "t": "Tag und Nacht erklärt",
+     "g": "Sieh, wie die tägliche Drehung der Erde Sonne und Sterne auf- und untergehen lässt.",
+     "p": [
+      "Die Erde dreht sich etwa alle 24 Stunden einmal um ihre Achse und trägt uns vom Tag in die Nacht und zurück.",
+      "Sonne und Sterne wandern nicht von selbst über den Himmel: Unser Planet dreht sich unter ihnen.",
+      "Die Erde dreht sich von West nach Ost, deshalb gehen Sonne und Sterne im Osten auf und im Westen unter."
+     ],
+     "q": "Wie hast du dir die Bewegung der Sonne vorgestellt, bevor du das wusstest?",
+     "c": "Merke dir grob, wo die Sonne bei dir auf- und untergeht, ohne je direkt hineinzuschauen."
+    },
+    "es": {
+     "t": "El día y la noche",
+     "g": "Descubre cómo el giro diario de la Tierra hace que el Sol y las estrellas salgan y se pongan.",
+     "p": [
+      "La Tierra gira sobre su eje una vez cada 24 horas aproximadamente y nos lleva del día a la noche.",
+      "El Sol y las estrellas no cruzan el cielo por sí mismos: es nuestro planeta el que gira bajo ellos.",
+      "La Tierra gira de oeste a este; por eso el Sol y las estrellas salen por el este y se ponen por el oeste."
+     ],
+     "q": "Antes de saber esto, ¿cómo imaginabas el movimiento del Sol?",
+     "c": "Fíjate más o menos por dónde sale y se pone el Sol desde tu casa, sin mirarlo nunca directamente."
+    },
+    "fr": {
+     "t": "Le jour et la nuit",
+     "g": "Vois comment la rotation quotidienne de la Terre fait se lever et se coucher le Soleil et les étoiles.",
+     "p": [
+      "La Terre tourne sur son axe environ une fois toutes les 24 heures, nous faisant passer du jour à la nuit.",
+      "Le Soleil et les étoiles ne traversent pas le ciel d’eux-mêmes : c’est notre planète qui tourne.",
+      "La Terre tourne d’ouest en est, d’où le lever des astres à l’est et leur coucher à l’ouest."
+     ],
+     "q": "Avant de le savoir, comment imaginais-tu le trajet du Soleil ?",
+     "c": "Repère à peu près où le Soleil se lève et se couche depuis chez toi, sans jamais le regarder en face."
+    },
+    "it": {
+     "t": "Il giorno e la notte",
+     "g": "Scopri come la rotazione quotidiana della Terra fa sorgere e tramontare il Sole e le stelle.",
+     "p": [
+      "La Terra ruota sul proprio asse circa una volta ogni 24 ore e ci porta dal giorno alla notte e ritorno.",
+      "Il Sole e le stelle non attraversano il cielo da soli: è il nostro pianeta che gira sotto di loro.",
+      "La Terra ruota da ovest a est: per questo il Sole e le stelle sorgono a est e tramontano a ovest."
+     ],
+     "q": "Prima di saperlo, come immaginavi il movimento del Sole?",
+     "c": "Nota più o meno dove sorge e tramonta il Sole da casa tua, senza mai guardarlo direttamente."
+    },
+    "pt": {
+     "t": "O dia e a noite",
+     "g": "Vê como a rotação diária da Terra faz o Sol e as estrelas nascerem e porem-se.",
+     "p": [
+      "A Terra roda sobre o seu eixo cerca de uma vez a cada 24 horas, levando-nos do dia para a noite.",
+      "O Sol e as estrelas não atravessam o céu sozinhos: é o nosso planeta que gira por baixo deles.",
+      "A Terra roda de oeste para este; por isso o Sol e as estrelas nascem a este e põem-se a oeste."
+     ],
+     "q": "Antes de saberes isto, como imaginavas o movimento do Sol?",
+     "c": "Repara mais ou menos onde o Sol nasce e se põe a partir de tua casa, sem nunca olhar diretamente para ele."
+    },
+    "pt_BR": {
+     "t": "O dia e a noite",
+     "g": "Veja como a rotação diária da Terra faz o Sol e as estrelas nascerem e se porem.",
+     "p": [
+      "A Terra gira em torno do próprio eixo cerca de uma vez a cada 24 horas, levando-nos do dia para a noite.",
+      "O Sol e as estrelas não cruzam o céu sozinhos: é o nosso planeta que gira debaixo deles.",
+      "A Terra gira de oeste para leste; por isso o Sol e as estrelas nascem no leste e se põem no oeste."
+     ],
+     "q": "Antes de saber disso, como você imaginava o movimento do Sol?",
+     "c": "Repare mais ou menos onde o Sol nasce e se põe a partir da sua casa, sem nunca olhar diretamente para ele."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why stars twinkle",
+     "g": "Learn why stars flicker and why planets usually shine more steadily.",
+     "p": [
+      "Starlight passes through layers of moving air that bend it slightly, making stars seem to flicker.",
+      "Twinkling is strongest near the horizon, where light crosses much more air than overhead.",
+      "Planets show tiny disks instead of points, so the flicker averages out and they shine more steadily."
+     ],
+     "q": "Have you ever seen a star near the horizon flash different colours?",
+     "c": "Compare a star high overhead with one low on the horizon: which twinkles more?"
+    },
+    "de": {
+     "t": "Warum Sterne funkeln",
+     "g": "Erfahre, warum Sterne flackern und Planeten meist ruhiger leuchten.",
+     "p": [
+      "Sternlicht durchquert bewegte Luftschichten, die es leicht ablenken, sodass Sterne zu flackern scheinen.",
+      "Am stärksten funkeln Sterne nahe dem Horizont, wo das Licht viel mehr Luft durchquert als im Zenit.",
+      "Planeten zeigen winzige Scheibchen statt Punkte, das Flackern mittelt sich aus und sie leuchten ruhiger."
+     ],
+     "q": "Hast du schon einmal einen Stern am Horizont in verschiedenen Farben blitzen sehen?",
+     "c": "Vergleiche einen Stern hoch oben mit einem tief am Horizont: Welcher funkelt stärker?"
+    },
+    "es": {
+     "t": "Por qué titilan las estrellas",
+     "g": "Aprende por qué las estrellas parpadean y por qué los planetas suelen brillar más fijos.",
+     "p": [
+      "La luz estelar atraviesa capas de aire en movimiento que la desvían un poco y la hacen parpadear.",
+      "El titileo es mayor cerca del horizonte, donde la luz cruza mucho más aire que en lo alto.",
+      "Los planetas muestran diminutos discos y no puntos, así que el parpadeo se compensa y brillan más fijos."
+     ],
+     "q": "¿Alguna vez viste una estrella cerca del horizonte destellar en varios colores?",
+     "c": "Compara una estrella alta con otra baja sobre el horizonte: ¿cuál titila más?"
+    },
+    "fr": {
+     "t": "Pourquoi les étoiles scintillent",
+     "g": "Apprends pourquoi les étoiles scintillent et pourquoi les planètes brillent souvent plus calmement.",
+     "p": [
+      "La lumière des étoiles traverse des couches d’air en mouvement qui la dévient un peu : elle scintille.",
+      "Le scintillement est plus fort près de l’horizon, où la lumière traverse bien plus d’air qu’au zénith.",
+      "Les planètes montrent de minuscules disques et non des points : le scintillement se compense."
+     ],
+     "q": "As-tu déjà vu une étoile basse sur l’horizon clignoter de plusieurs couleurs ?",
+     "c": "Compare une étoile haute dans le ciel avec une étoile basse sur l’horizon : laquelle scintille le plus ?"
+    },
+    "it": {
+     "t": "Perché le stelle brillano a scatti",
+     "g": "Scopri perché le stelle tremolano e perché i pianeti di solito brillano in modo più fermo.",
+     "p": [
+      "La luce delle stelle attraversa strati d’aria in movimento che la deviano un po’: così sembra tremolare.",
+      "Lo scintillio è più forte vicino all’orizzonte, dove la luce attraversa molta più aria che allo zenit.",
+      "I pianeti mostrano minuscoli dischi, non punti: il tremolio si compensa e la loro luce è più ferma."
+     ],
+     "q": "Hai mai visto una stella bassa sull’orizzonte lampeggiare di vari colori?",
+     "c": "Confronta una stella alta nel cielo con una bassa sull’orizzonte: quale scintilla di più?"
+    },
+    "pt": {
+     "t": "Porque cintilam as estrelas",
+     "g": "Aprende porque é que as estrelas cintilam e porque os planetas costumam brilhar de forma mais fixa.",
+     "p": [
+      "A luz das estrelas atravessa camadas de ar em movimento que a desviam um pouco e a fazem cintilar.",
+      "A cintilação é mais forte perto do horizonte, onde a luz atravessa muito mais ar do que no alto.",
+      "Os planetas mostram pequenos discos e não pontos, por isso a cintilação compensa-se e brilham mais fixos."
+     ],
+     "q": "Já viste uma estrela perto do horizonte a piscar em várias cores?",
+     "c": "Compara uma estrela bem alta com outra baixa no horizonte: qual cintila mais?"
+    },
+    "pt_BR": {
+     "t": "Por que as estrelas cintilam",
+     "g": "Aprenda por que as estrelas piscam e por que os planetas costumam brilhar de forma mais firme.",
+     "p": [
+      "A luz das estrelas atravessa camadas de ar em movimento que a desviam um pouco e a fazem piscar.",
+      "A cintilação é mais forte perto do horizonte, onde a luz atravessa muito mais ar do que no alto do céu.",
+      "Os planetas mostram pequenos discos e não pontos, então a cintilação se compensa e eles brilham mais firmes."
+     ],
+     "q": "Você já viu uma estrela perto do horizonte piscar em várias cores?",
+     "c": "Compare uma estrela bem alta com outra baixa no horizonte: qual cintila mais?"
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stars versus planets",
+     "g": "Learn simple clues to tell a planet from a star with the naked eye.",
+     "p": [
+      "Planets usually shine with a steady light, while stars tend to twinkle, especially when low.",
+      "Venus and Jupiter are often brighter than any star, so a very bright point may well be a planet.",
+      "Over days and weeks, planets drift slowly against the background stars; the word planet means wanderer."
+     ],
+     "q": "Have you ever spotted a bright point that did not twinkle?",
+     "c": "Find the brightest point in tonight’s sky and check whether it twinkles or shines steadily."
+    },
+    "de": {
+     "t": "Sterne oder Planeten",
+     "g": "Lerne einfache Merkmale, um mit bloßem Auge einen Planeten von einem Stern zu unterscheiden.",
+     "p": [
+      "Planeten leuchten meist ruhig, während Sterne eher funkeln, besonders tief am Himmel.",
+      "Venus und Jupiter sind oft heller als jeder Stern, ein sehr heller Punkt kann also gut ein Planet sein.",
+      "Über Tage und Wochen wandern Planeten langsam vor den Sternen; Planet bedeutet auf Griechisch Wanderer."
+     ],
+     "q": "Hast du schon einmal einen hellen Punkt gesehen, der nicht funkelte?",
+     "c": "Such den hellsten Punkt am heutigen Himmel und prüfe, ob er funkelt oder ruhig leuchtet."
+    },
+    "es": {
+     "t": "Estrellas o planetas",
+     "g": "Aprende pistas sencillas para distinguir a simple vista un planeta de una estrella.",
+     "p": [
+      "Los planetas suelen brillar con luz fija, mientras que las estrellas titilan, sobre todo cerca del horizonte.",
+      "Venus y Júpiter suelen ser más brillantes que cualquier estrella; un punto muy brillante puede ser un planeta.",
+      "Con los días y las semanas, los planetas se desplazan entre las estrellas; planeta significa errante."
+     ],
+     "q": "¿Alguna vez viste un punto brillante que no titilaba?",
+     "c": "Busca el punto más brillante del cielo de esta noche y comprueba si titila o brilla fijo."
+    },
+    "fr": {
+     "t": "Étoiles ou planètes",
+     "g": "Apprends des indices simples pour distinguer à l’œil nu une planète d’une étoile.",
+     "p": [
+      "Les planètes brillent souvent d’une lumière stable, alors que les étoiles scintillent, surtout basses.",
+      "Vénus et Jupiter sont souvent plus brillantes que toute étoile : un point très vif peut être une planète.",
+      "Au fil des jours, les planètes se déplacent lentement parmi les étoiles ; planète veut dire errante."
+     ],
+     "q": "As-tu déjà repéré un point brillant qui ne scintillait pas ?",
+     "c": "Trouve le point le plus brillant du ciel ce soir et vérifie s’il scintille ou brille de façon stable."
+    },
+    "it": {
+     "t": "Stelle o pianeti",
+     "g": "Impara indizi semplici per distinguere a occhio nudo un pianeta da una stella.",
+     "p": [
+      "I pianeti di solito brillano con luce ferma, mentre le stelle tremolano, soprattutto quando sono basse.",
+      "Venere e Giove sono spesso più luminosi di qualsiasi stella: un punto molto brillante può essere un pianeta.",
+      "Nel corso di giorni e settimane i pianeti si spostano tra le stelle; pianeta significa vagabondo."
+     ],
+     "q": "Hai mai notato un punto luminoso che non tremolava?",
+     "c": "Trova il punto più luminoso del cielo stasera e verifica se tremola o brilla fermo."
+    },
+    "pt": {
+     "t": "Estrelas ou planetas",
+     "g": "Aprende pistas simples para distinguir a olho nu um planeta de uma estrela.",
+     "p": [
+      "Os planetas costumam brilhar com luz fixa, enquanto as estrelas cintilam, sobretudo quando estão baixas.",
+      "Vénus e Júpiter são muitas vezes mais brilhantes do que qualquer estrela: um ponto muito vivo pode ser um planeta.",
+      "Ao longo de dias e semanas, os planetas deslocam-se entre as estrelas; planeta significa errante."
+     ],
+     "q": "Já reparaste num ponto brilhante que não cintilava?",
+     "c": "Procura o ponto mais brilhante do céu esta noite e vê se cintila ou brilha fixo."
+    },
+    "pt_BR": {
+     "t": "Estrelas ou planetas",
+     "g": "Aprenda pistas simples para diferenciar a olho nu um planeta de uma estrela.",
+     "p": [
+      "Os planetas costumam brilhar com luz firme, enquanto as estrelas piscam, principalmente quando estão baixas.",
+      "Vênus e Júpiter muitas vezes são mais brilhantes que qualquer estrela: um ponto muito forte pode ser um planeta.",
+      "Ao longo de dias e semanas, os planetas se deslocam entre as estrelas; planeta significa errante."
+     ],
+     "q": "Você já reparou num ponto brilhante que não piscava?",
+     "c": "Procure o ponto mais brilhante do céu hoje à noite e veja se ele pisca ou brilha firme."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Moon, our neighbour",
+     "g": "Get to know the Moon: its size, its distance and why it always shows us the same face.",
+     "p": [
+      "The Moon is about 3,474 km across, roughly a quarter of Earth’s width, and about 384,000 km away.",
+      "Light from the Moon reaches us in just over one second; it shines only by reflecting sunlight.",
+      "It spins once for each orbit around Earth, so the same side always faces us: this is called tidal locking."
+     ],
+     "q": "What do you usually notice first when you look at the Moon?",
+     "c": "Next time the Moon is up, sketch the dark and bright patches you see on its face."
+    },
+    "de": {
+     "t": "Der Mond, unser Nachbar",
+     "g": "Lerne den Mond kennen: seine Größe, seine Entfernung und warum er uns immer dieselbe Seite zeigt.",
+     "p": [
+      "Der Mond misst etwa 3474 km, rund ein Viertel des Erddurchmessers, und ist etwa 384.000 km entfernt.",
+      "Sein Licht erreicht uns in gut einer Sekunde; er leuchtet nur, weil er Sonnenlicht zurückwirft.",
+      "Er dreht sich einmal pro Erdumlauf, daher sehen wir immer dieselbe Seite: Das nennt man gebundene Rotation."
+     ],
+     "q": "Was fällt dir am Mond meistens zuerst auf?",
+     "c": "Wenn der Mond das nächste Mal am Himmel steht, skizziere die hellen und dunklen Flecken."
+    },
+    "es": {
+     "t": "La Luna, nuestra vecina",
+     "g": "Conoce la Luna: su tamaño, su distancia y por qué siempre nos muestra la misma cara.",
+     "p": [
+      "La Luna mide unos 3474 km de diámetro, cerca de un cuarto del de la Tierra, y está a unos 384.000 km.",
+      "Su luz nos llega en poco más de un segundo; solo brilla porque refleja la luz del Sol.",
+      "Gira una vez por cada órbita alrededor de la Tierra, así que siempre vemos la misma cara: rotación sincrónica."
+     ],
+     "q": "¿Qué es lo primero que sueles notar cuando miras la Luna?",
+     "c": "La próxima vez que veas la Luna, dibuja las manchas claras y oscuras de su cara."
+    },
+    "fr": {
+     "t": "La Lune, notre voisine",
+     "g": "Fais connaissance avec la Lune : sa taille, sa distance et pourquoi elle montre toujours la même face.",
+     "p": [
+      "La Lune mesure environ 3474 km, à peu près le quart de la Terre, et se trouve à environ 384 000 km.",
+      "Sa lumière nous parvient en un peu plus d’une seconde ; elle brille en renvoyant la lumière du Soleil.",
+      "Elle tourne sur elle-même une fois par orbite : nous voyons donc toujours la même face, c’est la rotation synchrone."
+     ],
+     "q": "Qu’est-ce que tu remarques d’abord quand tu regardes la Lune ?",
+     "c": "La prochaine fois que la Lune est visible, dessine les taches claires et sombres de sa surface."
+    },
+    "it": {
+     "t": "La Luna, la nostra vicina",
+     "g": "Conosci la Luna: le sue dimensioni, la sua distanza e perché ci mostra sempre la stessa faccia.",
+     "p": [
+      "La Luna misura circa 3474 km di diametro, circa un quarto della Terra, e dista circa 384.000 km.",
+      "La sua luce ci raggiunge in poco più di un secondo; brilla solo perché riflette la luce del Sole.",
+      "Ruota una volta per ogni orbita attorno alla Terra, quindi vediamo sempre la stessa faccia: rotazione sincrona."
+     ],
+     "q": "Che cosa noti per prima cosa quando guardi la Luna?",
+     "c": "La prossima volta che la Luna è in cielo, disegna le macchie chiare e scure che vedi."
+    },
+    "pt": {
+     "t": "A Lua, a nossa vizinha",
+     "g": "Conhece a Lua: o seu tamanho, a sua distância e porque nos mostra sempre a mesma face.",
+     "p": [
+      "A Lua tem cerca de 3474 km de diâmetro, quase um quarto da Terra, e está a cerca de 384 000 km.",
+      "A sua luz chega até nós em pouco mais de um segundo; brilha apenas porque reflete a luz do Sol.",
+      "Roda uma vez por cada órbita à volta da Terra, por isso vemos sempre a mesma face: é a rotação síncrona."
+     ],
+     "q": "O que costumas notar primeiro quando olhas para a Lua?",
+     "c": "Da próxima vez que a Lua estiver no céu, desenha as manchas claras e escuras que vês."
+    },
+    "pt_BR": {
+     "t": "A Lua, nossa vizinha",
+     "g": "Conheça a Lua: seu tamanho, sua distância e por que ela sempre mostra a mesma face.",
+     "p": [
+      "A Lua tem cerca de 3.474 km de diâmetro, quase um quarto da Terra, e fica a cerca de 384.000 km.",
+      "A luz dela chega até nós em pouco mais de um segundo; ela só brilha porque reflete a luz do Sol.",
+      "Ela gira uma vez a cada volta em torno da Terra, por isso vemos sempre a mesma face: é a rotação síncrona."
+     ],
+     "q": "O que você costuma notar primeiro quando olha para a Lua?",
+     "c": "Na próxima vez que a Lua estiver no céu, desenhe as manchas claras e escuras que você vê."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phases of the Moon",
+     "g": "Understand why the Moon changes shape over about a month.",
+     "p": [
+      "Half of the Moon is always lit by the Sun; the phase depends on how much of that half we see from Earth.",
+      "The cycle runs new, crescent, first quarter, gibbous, full, then back through gibbous and crescent.",
+      "A full cycle of phases takes about 29.5 days, which is where the idea of a month comes from."
+     ],
+     "q": "Which Moon phase do you find the most beautiful?",
+     "c": "Check the Moon tonight or tomorrow and name its phase; is it growing or shrinking?"
+    },
+    "de": {
+     "t": "Die Mondphasen",
+     "g": "Verstehe, warum der Mond innerhalb von etwa einem Monat seine Form ändert.",
+     "p": [
+      "Eine Hälfte des Mondes ist immer von der Sonne beleuchtet; die Phase hängt davon ab, wie viel wir davon sehen.",
+      "Der Zyklus: Neumond, Sichel, erstes Viertel, zunehmend, Vollmond, dann abnehmend zurück zur Sichel.",
+      "Ein voller Phasenzyklus dauert etwa 29,5 Tage, daher stammt die Idee des Monats."
+     ],
+     "q": "Welche Mondphase findest du am schönsten?",
+     "c": "Schau heute oder morgen zum Mond und benenne seine Phase: Nimmt er zu oder ab?"
+    },
+    "es": {
+     "t": "Las fases de la Luna",
+     "g": "Entiende por qué la Luna cambia de forma a lo largo de un mes aproximadamente.",
+     "p": [
+      "La mitad de la Luna siempre está iluminada por el Sol; la fase depende de cuánto de esa mitad vemos.",
+      "El ciclo es: nueva, creciente, cuarto creciente, gibosa, llena, y de vuelta por gibosa y menguante.",
+      "Un ciclo completo de fases dura unos 29,5 días; de ahí viene la idea del mes."
+     ],
+     "q": "¿Qué fase de la Luna te parece la más bonita?",
+     "c": "Mira la Luna esta noche o mañana y di en qué fase está: ¿crece o decrece?"
+    },
+    "fr": {
+     "t": "Les phases de la Lune",
+     "g": "Comprends pourquoi la Lune change de forme en un mois environ.",
+     "p": [
+      "Une moitié de la Lune est toujours éclairée par le Soleil ; la phase dépend de la part que nous en voyons.",
+      "Le cycle : nouvelle lune, croissant, premier quartier, gibbeuse, pleine lune, puis retour au croissant.",
+      "Un cycle complet dure environ 29,5 jours : c’est l’origine de l’idée de mois."
+     ],
+     "q": "Quelle phase de la Lune trouves-tu la plus belle ?",
+     "c": "Observe la Lune ce soir ou demain et nomme sa phase : croît-elle ou décroît-elle ?"
+    },
+    "it": {
+     "t": "Le fasi della Luna",
+     "g": "Capisci perché la Luna cambia forma nel giro di circa un mese.",
+     "p": [
+      "Metà della Luna è sempre illuminata dal Sole; la fase dipende da quanta parte di quella metà vediamo.",
+      "Il ciclo: luna nuova, falce, primo quarto, gibbosa, luna piena, poi di nuovo gibbosa e falce calante.",
+      "Un ciclo completo di fasi dura circa 29,5 giorni: da qui nasce l’idea di mese."
+     ],
+     "q": "Quale fase della Luna trovi più bella?",
+     "c": "Guarda la Luna stasera o domani e dai un nome alla sua fase: sta crescendo o calando?"
+    },
+    "pt": {
+     "t": "As fases da Lua",
+     "g": "Percebe porque é que a Lua muda de forma ao longo de cerca de um mês.",
+     "p": [
+      "Metade da Lua está sempre iluminada pelo Sol; a fase depende de quanto dessa metade vemos da Terra.",
+      "O ciclo é: nova, crescente, quarto crescente, gibosa, cheia e depois gibosa e minguante outra vez.",
+      "Um ciclo completo de fases dura cerca de 29,5 dias; daí vem a ideia de mês."
+     ],
+     "q": "Qual é a fase da Lua que achas mais bonita?",
+     "c": "Olha para a Lua esta noite ou amanhã e diz a sua fase: está a crescer ou a diminuir?"
+    },
+    "pt_BR": {
+     "t": "As fases da Lua",
+     "g": "Entenda por que a Lua muda de forma ao longo de cerca de um mês.",
+     "p": [
+      "Metade da Lua está sempre iluminada pelo Sol; a fase depende de quanto dessa metade vemos da Terra.",
+      "O ciclo é: nova, crescente, quarto crescente, gibosa, cheia e depois gibosa e minguante de novo.",
+      "Um ciclo completo de fases dura cerca de 29,5 dias; daí vem a ideia de mês."
+     ],
+     "q": "Qual fase da Lua você acha mais bonita?",
+     "c": "Olhe para a Lua hoje à noite ou amanhã e diga a fase dela: está crescendo ou diminuindo?"
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Earthshine on the crescent",
+     "g": "Discover the soft glow that lights the dark part of a young crescent Moon.",
+     "p": [
+      "Near a thin crescent, the dark part of the Moon often glows faintly: this is earthshine.",
+      "It is sunlight reflected by Earth’s clouds and oceans onto the Moon, then back to our eyes.",
+      "Leonardo da Vinci explained it correctly over 500 years ago in his notebooks."
+     ],
+     "q": "Have you ever seen the whole Moon faintly visible beside a thin crescent?",
+     "c": "When you next see a thin crescent after sunset, look for the faint grey glow on its dark side."
+    },
+    "de": {
+     "t": "Erdschein auf der Mondsichel",
+     "g": "Entdecke das sanfte Leuchten auf dem dunklen Teil einer jungen Mondsichel.",
+     "p": [
+      "Bei einer schmalen Sichel schimmert der dunkle Teil des Mondes oft schwach: Das ist der Erdschein.",
+      "Es ist Sonnenlicht, das Wolken und Meere der Erde zum Mond werfen und das von dort zu uns zurückkommt.",
+      "Leonardo da Vinci erklärte es schon vor über 500 Jahren richtig in seinen Notizbüchern."
+     ],
+     "q": "Hast du schon einmal neben einer schmalen Sichel den ganzen Mond schwach leuchten sehen?",
+     "c": "Wenn du nach Sonnenuntergang eine schmale Sichel siehst, achte auf das graue Leuchten der dunklen Seite."
+    },
+    "es": {
+     "t": "La luz cenicienta",
+     "g": "Descubre el suave brillo que ilumina la parte oscura de una Luna creciente joven.",
+     "p": [
+      "Junto a un creciente fino, la parte oscura de la Luna suele brillar débilmente: es la luz cenicienta.",
+      "Es luz solar que las nubes y océanos de la Tierra reflejan hacia la Luna y que vuelve a nuestros ojos.",
+      "Leonardo da Vinci la explicó correctamente hace más de 500 años en sus cuadernos."
+     ],
+     "q": "¿Alguna vez viste la Luna entera débilmente junto a un creciente fino?",
+     "c": "Cuando veas un creciente fino tras la puesta de Sol, busca el tenue brillo gris de su lado oscuro."
+    },
+    "fr": {
+     "t": "La lumière cendrée",
+     "g": "Découvre la douce lueur qui éclaire la partie sombre d’un jeune croissant de Lune.",
+     "p": [
+      "Près d’un fin croissant, la partie sombre de la Lune luit souvent faiblement : c’est la lumière cendrée.",
+      "C’est la lumière du Soleil renvoyée vers la Lune par les nuages et les océans terrestres, puis vers nous.",
+      "Léonard de Vinci l’a correctement expliquée il y a plus de 500 ans dans ses carnets."
+     ],
+     "q": "As-tu déjà vu la Lune entière faiblement visible à côté d’un fin croissant ?",
+     "c": "Au prochain fin croissant après le coucher du Soleil, cherche la faible lueur grise de sa partie sombre."
+    },
+    "it": {
+     "t": "La luce cinerea",
+     "g": "Scopri il tenue bagliore che illumina la parte scura di una giovane falce di Luna.",
+     "p": [
+      "Accanto a una falce sottile, la parte scura della Luna spesso brilla debolmente: è la luce cinerea.",
+      "È luce solare riflessa da nuvole e oceani della Terra verso la Luna, che poi torna ai nostri occhi.",
+      "Leonardo da Vinci la spiegò correttamente oltre 500 anni fa nei suoi taccuini."
+     ],
+     "q": "Hai mai visto l’intera Luna debolmente visibile accanto a una falce sottile?",
+     "c": "Alla prossima falce sottile dopo il tramonto, cerca il tenue bagliore grigio sulla parte scura."
+    },
+    "pt": {
+     "t": "A luz cinzenta da Lua",
+     "g": "Descobre o brilho suave que ilumina a parte escura de uma Lua crescente jovem.",
+     "p": [
+      "Junto a um crescente fino, a parte escura da Lua brilha muitas vezes de leve: é a luz cinzenta.",
+      "É luz do Sol refletida pelas nuvens e oceanos da Terra para a Lua, que depois volta aos nossos olhos.",
+      "Leonardo da Vinci explicou-a corretamente há mais de 500 anos nos seus cadernos."
+     ],
+     "q": "Já viste a Lua inteira a brilhar de leve ao lado de um crescente fino?",
+     "c": "No próximo crescente fino após o pôr do Sol, procura o brilho cinzento e ténue na parte escura."
+    },
+    "pt_BR": {
+     "t": "A luz cinérea na Lua",
+     "g": "Descubra o brilho suave que ilumina a parte escura de uma Lua crescente jovem.",
+     "p": [
+      "Ao lado de um crescente fino, a parte escura da Lua muitas vezes brilha de leve: é a luz cinérea.",
+      "É luz do Sol refletida pelas nuvens e oceanos da Terra até a Lua, que depois volta aos nossos olhos.",
+      "Leonardo da Vinci a explicou corretamente há mais de 500 anos em seus cadernos."
+     ],
+     "q": "Você já viu a Lua inteira brilhando de leve ao lado de um crescente fino?",
+     "c": "No próximo crescente fino depois do pôr do sol, procure o brilho cinza e fraco na parte escura."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Sun is a star",
+     "g": "See that our Sun is an ordinary star, simply much closer than all the others.",
+     "p": [
+      "The Sun is a huge ball of hot gas, about 109 times wider than Earth, powered by nuclear fusion in its core.",
+      "It is about 150 million km away; its light needs roughly 8 minutes and 20 seconds to reach us.",
+      "The stars at night are suns too, many larger or smaller, but so far away they look like points."
+     ],
+     "q": "How does it feel to know every star at night is a sun?",
+     "c": "At sunset, notice how the light and colours change, without ever looking directly at the Sun."
+    },
+    "de": {
+     "t": "Die Sonne ist ein Stern",
+     "g": "Erkenne, dass unsere Sonne ein ganz normaler Stern ist, nur viel näher als alle anderen.",
+     "p": [
+      "Die Sonne ist eine riesige Kugel aus heißem Gas, etwa 109-mal breiter als die Erde, angetrieben von Kernfusion.",
+      "Sie ist etwa 150 Millionen km entfernt; ihr Licht braucht rund 8 Minuten und 20 Sekunden bis zu uns.",
+      "Die Sterne der Nacht sind ebenfalls Sonnen, oft größer oder kleiner, doch so fern, dass sie Punkte sind."
+     ],
+     "q": "Wie fühlt es sich an zu wissen, dass jeder Stern eine Sonne ist?",
+     "c": "Achte bei Sonnenuntergang darauf, wie sich Licht und Farben ändern, ohne direkt in die Sonne zu schauen."
+    },
+    "es": {
+     "t": "El Sol es una estrella",
+     "g": "Descubre que nuestro Sol es una estrella corriente, solo que mucho más cercana que las demás.",
+     "p": [
+      "El Sol es una enorme esfera de gas caliente, unas 109 veces más ancha que la Tierra, con fusión nuclear en su núcleo.",
+      "Está a unos 150 millones de km; su luz tarda unos 8 minutos y 20 segundos en llegarnos.",
+      "Las estrellas de la noche también son soles, unos mayores y otros menores, pero tan lejanos que parecen puntos."
+     ],
+     "q": "¿Qué sientes al saber que cada estrella de la noche es un sol?",
+     "c": "Al atardecer, observa cómo cambian la luz y los colores, sin mirar nunca directamente al Sol."
+    },
+    "fr": {
+     "t": "Le Soleil est une étoile",
+     "g": "Découvre que notre Soleil est une étoile ordinaire, simplement bien plus proche que les autres.",
+     "p": [
+      "Le Soleil est une immense boule de gaz chaud, environ 109 fois plus large que la Terre, alimentée par la fusion.",
+      "Il est à environ 150 millions de km ; sa lumière met environ 8 minutes et 20 secondes à nous atteindre.",
+      "Les étoiles de la nuit sont aussi des soleils, plus grands ou plus petits, mais si lointains qu’ils sont des points."
+     ],
+     "q": "Que ressens-tu en sachant que chaque étoile de la nuit est un soleil ?",
+     "c": "Au coucher du Soleil, observe comment la lumière et les couleurs changent, sans jamais le regarder en face."
+    },
+    "it": {
+     "t": "Il Sole è una stella",
+     "g": "Scopri che il nostro Sole è una stella comune, solo molto più vicina di tutte le altre.",
+     "p": [
+      "Il Sole è un’enorme sfera di gas caldo, circa 109 volte più larga della Terra, alimentata dalla fusione nucleare.",
+      "Dista circa 150 milioni di km; la sua luce impiega circa 8 minuti e 20 secondi per raggiungerci.",
+      "Anche le stelle della notte sono soli, alcuni più grandi o più piccoli, ma così lontani da sembrare punti."
+     ],
+     "q": "Che effetto ti fa sapere che ogni stella della notte è un sole?",
+     "c": "Al tramonto osserva come cambiano luce e colori, senza mai guardare direttamente il Sole."
+    },
+    "pt": {
+     "t": "O Sol é uma estrela",
+     "g": "Descobre que o nosso Sol é uma estrela comum, apenas muito mais próxima do que as outras.",
+     "p": [
+      "O Sol é uma enorme bola de gás quente, cerca de 109 vezes mais larga do que a Terra, alimentada por fusão nuclear.",
+      "Está a cerca de 150 milhões de km; a sua luz demora uns 8 minutos e 20 segundos a chegar até nós.",
+      "As estrelas da noite também são sóis, maiores ou menores, mas tão distantes que parecem pontos."
+     ],
+     "q": "O que sentes ao saber que cada estrela da noite é um sol?",
+     "c": "Ao pôr do Sol, repara como mudam a luz e as cores, sem nunca olhar diretamente para o Sol."
+    },
+    "pt_BR": {
+     "t": "O Sol é uma estrela",
+     "g": "Descubra que o nosso Sol é uma estrela comum, só que muito mais próxima do que as outras.",
+     "p": [
+      "O Sol é uma enorme bola de gás quente, cerca de 109 vezes mais larga que a Terra, movida por fusão nuclear.",
+      "Ele fica a cerca de 150 milhões de km; sua luz leva uns 8 minutos e 20 segundos para chegar até nós.",
+      "As estrelas da noite também são sóis, maiores ou menores, mas tão distantes que parecem pontos."
+     ],
+     "q": "O que você sente ao saber que cada estrela da noite é um sol?",
+     "c": "No pôr do sol, repare como a luz e as cores mudam, sem nunca olhar diretamente para o Sol."
+    }
+   }
+  }
+ ]
+}

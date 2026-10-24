@@ -1,0 +1,835 @@
+{
+ "topic": "poetry",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Images from touch",
+     "g": "Use texture, temperature and weight as doorways into a poem.",
+     "p": [
+      "Texture words bring things close: rough bark, silky petals, gritty sand.",
+      "Temperature sets a mood: a warm mug, a cool tile, frosty glass.",
+      "Weight makes objects real: a heavy key, a feather-light scarf."
+     ],
+     "q": "What object do you love touching, and how does it feel?",
+     "c": "Hold something near you and write two lines about its texture and temperature."
+    },
+    "de": {
+     "t": "Bilder aus dem Tasten",
+     "g": "Nutze Oberfläche, Temperatur und Gewicht als Türen in ein Gedicht.",
+     "p": [
+      "Tastwörter bringen Dinge nah: raue Rinde, seidige Blüten, körniger Sand.",
+      "Temperatur schafft Stimmung: eine warme Tasse, eine kühle Fliese, frostiges Glas.",
+      "Gewicht macht Dinge wirklich: ein schwerer Schlüssel, ein federleichter Schal."
+     ],
+     "q": "Welchen Gegenstand fasst du gern an, und wie fühlt er sich an?",
+     "c": "Nimm etwas in die Hand und schreibe zwei Zeilen über Oberfläche und Temperatur."
+    },
+    "es": {
+     "t": "Imágenes del tacto",
+     "g": "Usa textura, temperatura y peso como puertas de entrada a un poema.",
+     "p": [
+      "Las texturas acercan las cosas: corteza áspera, pétalos sedosos, arena granulada.",
+      "La temperatura crea ambiente: una taza tibia, un azulejo fresco, un cristal helado.",
+      "El peso hace reales los objetos: una llave pesada, un pañuelo ligero como pluma."
+     ],
+     "q": "¿Qué objeto te encanta tocar y cómo se siente?",
+     "c": "Toma algo cercano y escribe dos versos sobre su textura y su temperatura."
+    },
+    "fr": {
+     "t": "Images du toucher",
+     "g": "Utiliser texture, température et poids comme portes d'entrée d'un poème.",
+     "p": [
+      "Les textures rapprochent les choses : écorce rugueuse, pétales soyeux, sable granuleux.",
+      "La température crée une ambiance : un bol tiède, un carreau frais, une vitre givrée.",
+      "Le poids rend les objets réels : une clé lourde, une écharpe légère comme une plume."
+     ],
+     "q": "Quel objet aimes-tu toucher, et quelle sensation donne-t-il ?",
+     "c": "Prends un objet près de toi et écris deux vers sur sa texture et sa température."
+    },
+    "it": {
+     "t": "Immagini dal tatto",
+     "g": "Usa consistenza, temperatura e peso come porte d'ingresso in una poesia.",
+     "p": [
+      "Le consistenze avvicinano le cose: corteccia ruvida, petali di seta, sabbia granulosa.",
+      "La temperatura crea atmosfera: una tazza tiepida, una piastrella fresca, un vetro gelato.",
+      "Il peso rende reali gli oggetti: una chiave pesante, una sciarpa leggera come una piuma."
+     ],
+     "q": "Quale oggetto ami toccare e che sensazione ti dà?",
+     "c": "Prendi un oggetto vicino e scrivi due versi sulla sua consistenza e temperatura."
+    },
+    "pt": {
+     "t": "Imagens do tato",
+     "g": "Usa textura, temperatura e peso como portas de entrada num poema.",
+     "p": [
+      "As texturas aproximam as coisas: casca áspera, pétalas sedosas, areia granulada.",
+      "A temperatura cria ambiente: uma chávena morna, um azulejo fresco, um vidro gelado.",
+      "O peso torna os objetos reais: uma chave pesada, um lenço leve como pena."
+     ],
+     "q": "Que objeto adoras tocar e qual é a sensação?",
+     "c": "Pega em algo perto de ti e escreve dois versos sobre a textura e a temperatura."
+    },
+    "pt_BR": {
+     "t": "Imagens do tato",
+     "g": "Use textura, temperatura e peso como portas de entrada num poema.",
+     "p": [
+      "Texturas aproximam as coisas: casca áspera, pétalas sedosas, areia granulada.",
+      "A temperatura cria clima: uma xícara morna, um azulejo fresco, um vidro gelado.",
+      "O peso torna os objetos reais: uma chave pesada, um lenço leve como pena."
+     ],
+     "q": "Que objeto você adora tocar e qual é a sensação?",
+     "c": "Pegue algo perto de você e escreva dois versos sobre a textura e a temperatura."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a five-senses poem",
+     "g": "Write a short poem where each line uses a different sense.",
+     "p": [
+      "Pick one place or moment, like a kitchen at breakfast or a park after rain.",
+      "Give each of five lines one sense: sight, sound, smell, taste, touch.",
+      "Order the lines so they flow, then end on the strongest image."
+     ],
+     "q": "Which place in your life is richest for all five senses?",
+     "c": "Write a five-line poem about one place, one sense per line."
+    },
+    "de": {
+     "t": "Ein Fünf-Sinne-Gedicht schreiben",
+     "g": "Schreibe ein kurzes Gedicht, in dem jede Zeile einen anderen Sinn nutzt.",
+     "p": [
+      "Wähle einen Ort oder Moment, etwa die Küche beim Frühstück oder einen Park nach Regen.",
+      "Gib jeder der fünf Zeilen einen Sinn: Sehen, Hören, Riechen, Schmecken, Tasten.",
+      "Ordne die Zeilen so, dass sie fließen, und ende mit dem stärksten Bild."
+     ],
+     "q": "Welcher Ort in deinem Leben ist für alle fünf Sinne am reichsten?",
+     "c": "Schreibe ein fünfzeiliges Gedicht über einen Ort, ein Sinn pro Zeile."
+    },
+    "es": {
+     "t": "Escribir un poema de los cinco sentidos",
+     "g": "Escribe un poema breve en el que cada verso use un sentido distinto.",
+     "p": [
+      "Elige un lugar o momento, como la cocina en el desayuno o un parque tras la lluvia.",
+      "Da a cada uno de los cinco versos un sentido: vista, oído, olfato, gusto, tacto.",
+      "Ordena los versos para que fluyan y termina con la imagen más fuerte."
+     ],
+     "q": "¿Qué lugar de tu vida es más rico para los cinco sentidos?",
+     "c": "Escribe un poema de cinco versos sobre un lugar, un sentido por verso."
+    },
+    "fr": {
+     "t": "Écrire un poème des cinq sens",
+     "g": "Écrire un court poème où chaque vers fait appel à un sens différent.",
+     "p": [
+      "Choisis un lieu ou un moment : la cuisine au petit-déjeuner, un parc après la pluie.",
+      "Donne à chacun des cinq vers un sens : vue, ouïe, odorat, goût, toucher.",
+      "Ordonne les vers pour qu'ils coulent et termine sur l'image la plus forte."
+     ],
+     "q": "Quel lieu de ta vie est le plus riche pour les cinq sens ?",
+     "c": "Écris un poème de cinq vers sur un lieu, un sens par vers."
+    },
+    "it": {
+     "t": "Scrivere una poesia dei cinque sensi",
+     "g": "Scrivi una breve poesia in cui ogni verso usa un senso diverso.",
+     "p": [
+      "Scegli un luogo o un momento, come la cucina a colazione o un parco dopo la pioggia.",
+      "Dai a ciascuno dei cinque versi un senso: vista, udito, olfatto, gusto, tatto.",
+      "Ordina i versi perché scorrano e chiudi con l'immagine più forte."
+     ],
+     "q": "Quale luogo della tua vita è più ricco per tutti e cinque i sensi?",
+     "c": "Scrivi una poesia di cinque versi su un luogo, un senso per verso."
+    },
+    "pt": {
+     "t": "Escrever um poema dos cinco sentidos",
+     "g": "Escreve um poema curto em que cada verso usa um sentido diferente.",
+     "p": [
+      "Escolhe um lugar ou momento, como a cozinha ao pequeno-almoço ou um jardim após a chuva.",
+      "Dá a cada um dos cinco versos um sentido: visão, audição, olfato, paladar, tato.",
+      "Ordena os versos para que fluam e termina com a imagem mais forte."
+     ],
+     "q": "Que lugar da tua vida é mais rico para os cinco sentidos?",
+     "c": "Escreve um poema de cinco versos sobre um lugar, um sentido por verso."
+    },
+    "pt_BR": {
+     "t": "Escrever um poema dos cinco sentidos",
+     "g": "Escreva um poema curto em que cada verso usa um sentido diferente.",
+     "p": [
+      "Escolha um lugar ou momento, como a cozinha no café da manhã ou um parque depois da chuva.",
+      "Dê a cada um dos cinco versos um sentido: visão, audição, olfato, paladar, tato.",
+      "Ordene os versos para que fluam e termine com a imagem mais forte."
+     ],
+     "q": "Que lugar da sua vida é mais rico para os cinco sentidos?",
+     "c": "Escreva um poema de cinco versos sobre um lugar, um sentido por verso."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The line",
+     "g": "Understand what a line of poetry is and how its length changes the reading.",
+     "p": [
+      "A line is the poem's basic unit, like a breath or a step.",
+      "Short lines feel quick, tense or bright; long lines feel calm and flowing.",
+      "Mixing lengths creates variety and draws attention to a single short line."
+     ],
+     "q": "Do you prefer poems with short lines or long ones?",
+     "c": "Write the same sentence twice: once as one long line, once split into four short lines."
+    },
+    "de": {
+     "t": "Die Zeile",
+     "g": "Verstehe, was eine Gedichtzeile ist und wie ihre Länge das Lesen verändert.",
+     "p": [
+      "Die Zeile ist die Grundeinheit des Gedichts, wie ein Atemzug oder ein Schritt.",
+      "Kurze Zeilen wirken schnell oder hell; lange Zeilen ruhig und fließend.",
+      "Gemischte Längen schaffen Abwechslung und heben eine einzelne kurze Zeile hervor."
+     ],
+     "q": "Magst du lieber Gedichte mit kurzen oder mit langen Zeilen?",
+     "c": "Schreibe einen Satz zweimal: einmal als lange Zeile, einmal in vier kurze Zeilen geteilt."
+    },
+    "es": {
+     "t": "El verso",
+     "g": "Entiende qué es un verso y cómo su longitud cambia la lectura.",
+     "p": [
+      "El verso es la unidad básica del poema, como una respiración o un paso.",
+      "Los versos cortos se sienten rápidos o vivos; los largos, tranquilos y fluidos.",
+      "Mezclar longitudes da variedad y resalta un solo verso corto."
+     ],
+     "q": "¿Prefieres poemas de versos cortos o largos?",
+     "c": "Escribe la misma frase dos veces: en un verso largo y dividida en cuatro versos cortos."
+    },
+    "fr": {
+     "t": "Le vers",
+     "g": "Comprendre ce qu'est un vers et comment sa longueur change la lecture.",
+     "p": [
+      "Le vers est l'unité de base du poème, comme un souffle ou un pas.",
+      "Les vers courts paraissent vifs ou tendus ; les longs, calmes et fluides.",
+      "Mélanger les longueurs crée de la variété et met en valeur un vers court."
+     ],
+     "q": "Préfères-tu les poèmes aux vers courts ou aux vers longs ?",
+     "c": "Écris la même phrase deux fois : en un long vers, puis coupée en quatre vers courts."
+    },
+    "it": {
+     "t": "Il verso",
+     "g": "Capisci che cos'è un verso e come la sua lunghezza cambia la lettura.",
+     "p": [
+      "Il verso è l'unità base della poesia, come un respiro o un passo.",
+      "I versi brevi sembrano rapidi o luminosi; quelli lunghi calmi e fluidi.",
+      "Alternare lunghezze crea varietà e mette in risalto un verso breve."
+     ],
+     "q": "Preferisci poesie con versi brevi o lunghi?",
+     "c": "Scrivi la stessa frase due volte: in un verso lungo e divisa in quattro versi brevi."
+    },
+    "pt": {
+     "t": "O verso",
+     "g": "Percebe o que é um verso e como o seu comprimento muda a leitura.",
+     "p": [
+      "O verso é a unidade básica do poema, como uma respiração ou um passo.",
+      "Versos curtos parecem rápidos ou vivos; versos longos, calmos e fluidos.",
+      "Misturar comprimentos dá variedade e destaca um único verso curto."
+     ],
+     "q": "Preferes poemas de versos curtos ou longos?",
+     "c": "Escreve a mesma frase duas vezes: num verso longo e dividida em quatro versos curtos."
+    },
+    "pt_BR": {
+     "t": "O verso",
+     "g": "Entenda o que é um verso e como o tamanho dele muda a leitura.",
+     "p": [
+      "O verso é a unidade básica do poema, como uma respiração ou um passo.",
+      "Versos curtos parecem rápidos ou vivos; versos longos, calmos e fluidos.",
+      "Misturar tamanhos dá variedade e destaca um único verso curto."
+     ],
+     "q": "Você prefere poemas de versos curtos ou longos?",
+     "c": "Escreva a mesma frase duas vezes: num verso longo e dividida em quatro versos curtos."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Line breaks",
+     "g": "Choose where to end a line for emphasis, surprise or a pause.",
+     "p": [
+      "The last word of a line gets extra weight, so end on strong words.",
+      "Breaking mid-sentence creates a small suspense before the next line.",
+      "Avoid ending lines on weak words like the, and or of, unless on purpose."
+     ],
+     "q": "Where would you break the sentence: the cat sleeps in the warm window light?",
+     "c": "Take a sentence from your notebook and try three different line-break versions."
+    },
+    "de": {
+     "t": "Zeilenumbrüche",
+     "g": "Wähle, wo eine Zeile endet, für Betonung, Überraschung oder Pause.",
+     "p": [
+      "Das letzte Wort einer Zeile hat besonderes Gewicht; ende auf starken Wörtern.",
+      "Ein Umbruch mitten im Satz erzeugt kleine Spannung vor der nächsten Zeile.",
+      "Vermeide Zeilenenden auf schwachen Wörtern wie der, und, von, außer mit Absicht."
+     ],
+     "q": "Wo würdest du umbrechen: die Katze schläft im warmen Licht am Fenster?",
+     "c": "Nimm einen Satz aus deinem Notizbuch und probiere drei Versionen mit Umbrüchen."
+    },
+    "es": {
+     "t": "Cortes de verso",
+     "g": "Elige dónde termina un verso para dar énfasis, sorpresa o una pausa.",
+     "p": [
+      "La última palabra del verso pesa más: termina en palabras fuertes.",
+      "Cortar a mitad de frase crea un pequeño suspense antes del siguiente verso.",
+      "Evita acabar en palabras débiles como el, y o de, salvo que sea a propósito."
+     ],
+     "q": "¿Dónde cortarías la frase: el gato duerme en la cálida luz de la ventana?",
+     "c": "Toma una frase de tu cuaderno y prueba tres versiones con cortes distintos."
+    },
+    "fr": {
+     "t": "Les retours à la ligne",
+     "g": "Choisir où finir un vers pour l'accent, la surprise ou une pause.",
+     "p": [
+      "Le dernier mot d'un vers pèse plus : termine sur des mots forts.",
+      "Couper au milieu d'une phrase crée un petit suspense avant le vers suivant.",
+      "Évite de finir sur des mots faibles comme le, et, de, sauf exprès."
+     ],
+     "q": "Où couperais-tu la phrase : le chat dort dans la lumière tiède de la fenêtre ?",
+     "c": "Prends une phrase de ton carnet et essaie trois versions avec des coupes différentes."
+    },
+    "it": {
+     "t": "Gli a capo",
+     "g": "Scegli dove finire un verso per dare enfasi, sorpresa o una pausa.",
+     "p": [
+      "L'ultima parola del verso pesa di più: chiudi su parole forti.",
+      "Andare a capo a metà frase crea una piccola attesa prima del verso dopo.",
+      "Evita di finire su parole deboli come il, e, di, a meno che non sia voluto."
+     ],
+     "q": "Dove andresti a capo nella frase: il gatto dorme nella luce calda della finestra?",
+     "c": "Prendi una frase dal quaderno e prova tre versioni con a capo diversi."
+    },
+    "pt": {
+     "t": "Quebras de verso",
+     "g": "Escolhe onde acaba um verso para dar ênfase, surpresa ou uma pausa.",
+     "p": [
+      "A última palavra do verso pesa mais: termina em palavras fortes.",
+      "Quebrar a meio da frase cria um pequeno suspense antes do verso seguinte.",
+      "Evita acabar em palavras fracas como o, e ou de, a não ser de propósito."
+     ],
+     "q": "Onde quebrarias a frase: o gato dorme na luz morna da janela?",
+     "c": "Pega numa frase do teu caderno e experimenta três versões com quebras diferentes."
+    },
+    "pt_BR": {
+     "t": "Quebras de verso",
+     "g": "Escolha onde um verso termina para dar ênfase, surpresa ou uma pausa.",
+     "p": [
+      "A última palavra do verso pesa mais: termine em palavras fortes.",
+      "Quebrar no meio da frase cria um pequeno suspense antes do próximo verso.",
+      "Evite terminar em palavras fracas como o, e ou de, a não ser de propósito."
+     ],
+     "q": "Onde você quebraria a frase: o gato dorme na luz morna da janela?",
+     "c": "Pegue uma frase do seu caderno e teste três versões com quebras diferentes."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The stanza",
+     "g": "Group lines into stanzas, the rooms of a poem.",
+     "p": [
+      "A stanza is a group of lines separated by a blank line.",
+      "Each stanza can hold one idea, image or moment, like a room holds furniture.",
+      "Moving to a new stanza signals a shift in time, place or feeling."
+     ],
+     "q": "If your day were a poem, what would its three stanzas be?",
+     "c": "Write a poem of three short stanzas: morning, afternoon, evening."
+    },
+    "de": {
+     "t": "Die Strophe",
+     "g": "Fasse Zeilen zu Strophen zusammen, den Räumen eines Gedichts.",
+     "p": [
+      "Eine Strophe ist eine Gruppe von Zeilen, getrennt durch eine Leerzeile.",
+      "Jede Strophe kann eine Idee, ein Bild oder einen Moment enthalten, wie ein Zimmer.",
+      "Eine neue Strophe zeigt einen Wechsel von Zeit, Ort oder Gefühl."
+     ],
+     "q": "Wenn dein Tag ein Gedicht wäre, welche drei Strophen hätte er?",
+     "c": "Schreibe ein Gedicht aus drei kurzen Strophen: Morgen, Nachmittag, Abend."
+    },
+    "es": {
+     "t": "La estrofa",
+     "g": "Agrupa versos en estrofas, las habitaciones de un poema.",
+     "p": [
+      "Una estrofa es un grupo de versos separado por una línea en blanco.",
+      "Cada estrofa puede guardar una idea, imagen o momento, como una habitación.",
+      "Pasar a otra estrofa indica un cambio de tiempo, lugar o sentimiento."
+     ],
+     "q": "Si tu día fuera un poema, ¿cuáles serían sus tres estrofas?",
+     "c": "Escribe un poema de tres estrofas cortas: mañana, tarde y noche."
+    },
+    "fr": {
+     "t": "La strophe",
+     "g": "Regrouper les vers en strophes, les pièces d'un poème.",
+     "p": [
+      "Une strophe est un groupe de vers séparé par une ligne blanche.",
+      "Chaque strophe peut contenir une idée, une image ou un instant, comme une pièce.",
+      "Passer à une nouvelle strophe signale un changement de temps, de lieu ou d'émotion."
+     ],
+     "q": "Si ta journée était un poème, quelles seraient ses trois strophes ?",
+     "c": "Écris un poème de trois courtes strophes : matin, après-midi, soir."
+    },
+    "it": {
+     "t": "La strofa",
+     "g": "Raggruppa i versi in strofe, le stanze di una poesia.",
+     "p": [
+      "Una strofa è un gruppo di versi separato da una riga vuota.",
+      "Ogni strofa può contenere un'idea, un'immagine o un momento, come una stanza.",
+      "Passare a una nuova strofa segnala un cambio di tempo, luogo o emozione."
+     ],
+     "q": "Se la tua giornata fosse una poesia, quali sarebbero le sue tre strofe?",
+     "c": "Scrivi una poesia di tre strofe brevi: mattina, pomeriggio, sera."
+    },
+    "pt": {
+     "t": "A estrofe",
+     "g": "Agrupa versos em estrofes, as divisões de um poema.",
+     "p": [
+      "Uma estrofe é um grupo de versos separado por uma linha em branco.",
+      "Cada estrofe pode guardar uma ideia, imagem ou momento, como uma sala.",
+      "Passar a nova estrofe sinaliza uma mudança de tempo, lugar ou sentimento."
+     ],
+     "q": "Se o teu dia fosse um poema, quais seriam as suas três estrofes?",
+     "c": "Escreve um poema de três estrofes curtas: manhã, tarde e noite."
+    },
+    "pt_BR": {
+     "t": "A estrofe",
+     "g": "Agrupe versos em estrofes, os cômodos de um poema.",
+     "p": [
+      "Uma estrofe é um grupo de versos separado por uma linha em branco.",
+      "Cada estrofe pode guardar uma ideia, imagem ou momento, como um cômodo.",
+      "Mudar de estrofe sinaliza uma mudança de tempo, lugar ou sentimento."
+     ],
+     "q": "Se o seu dia fosse um poema, quais seriam as três estrofes dele?",
+     "c": "Escreva um poema de três estrofes curtas: manhã, tarde e noite."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "White space",
+     "g": "See how blank space on the page gives a poem breath and silence.",
+     "p": [
+      "The empty space around a poem is part of the poem.",
+      "Blank lines and indents slow the reader and create silence.",
+      "A word alone on a line, surrounded by space, shines brightly."
+     ],
+     "q": "Do you like poems that look airy or poems that fill the page?",
+     "c": "Rewrite a short paragraph as a poem, adding space so one key word stands alone."
+    },
+    "de": {
+     "t": "Weißraum",
+     "g": "Sieh, wie leerer Raum auf der Seite einem Gedicht Atem und Stille gibt.",
+     "p": [
+      "Der leere Raum um ein Gedicht gehört zum Gedicht.",
+      "Leerzeilen und Einrückungen verlangsamen den Leser und schaffen Stille.",
+      "Ein Wort allein in einer Zeile, umgeben von Raum, leuchtet hell."
+     ],
+     "q": "Magst du luftig wirkende Gedichte oder solche, die die Seite füllen?",
+     "c": "Schreibe einen kurzen Absatz als Gedicht um, sodass ein Schlüsselwort allein steht."
+    },
+    "es": {
+     "t": "El espacio en blanco",
+     "g": "Mira cómo el espacio en blanco da respiración y silencio a un poema.",
+     "p": [
+      "El espacio vacío alrededor de un poema también forma parte de él.",
+      "Las líneas en blanco y las sangrías frenan al lector y crean silencio.",
+      "Una palabra sola en un verso, rodeada de espacio, brilla con fuerza."
+     ],
+     "q": "¿Te gustan los poemas aireados o los que llenan la página?",
+     "c": "Reescribe un párrafo corto como poema, dejando sola una palabra clave."
+    },
+    "fr": {
+     "t": "Le blanc",
+     "g": "Voir comment l'espace vide sur la page donne au poème souffle et silence.",
+     "p": [
+      "L'espace vide autour d'un poème fait partie du poème.",
+      "Lignes blanches et retraits ralentissent le lecteur et créent du silence.",
+      "Un mot seul sur une ligne, entouré de blanc, brille fortement."
+     ],
+     "q": "Aimes-tu les poèmes aérés ou ceux qui remplissent la page ?",
+     "c": "Réécris un court paragraphe en poème, en laissant un mot clé seul sur sa ligne."
+    },
+    "it": {
+     "t": "Lo spazio bianco",
+     "g": "Scopri come lo spazio vuoto sulla pagina dà respiro e silenzio a una poesia.",
+     "p": [
+      "Lo spazio vuoto attorno a una poesia fa parte della poesia.",
+      "Righe vuote e rientri rallentano il lettore e creano silenzio.",
+      "Una parola sola su un verso, circondata di spazio, brilla forte."
+     ],
+     "q": "Ti piacciono le poesie ariose o quelle che riempiono la pagina?",
+     "c": "Riscrivi un breve paragrafo come poesia, lasciando sola una parola chiave."
+    },
+    "pt": {
+     "t": "O espaço em branco",
+     "g": "Vê como o espaço em branco dá respiração e silêncio a um poema.",
+     "p": [
+      "O espaço vazio à volta de um poema também faz parte dele.",
+      "Linhas em branco e recuos abrandam o leitor e criam silêncio.",
+      "Uma palavra sozinha num verso, rodeada de espaço, brilha com força."
+     ],
+     "q": "Gostas de poemas arejados ou de poemas que enchem a página?",
+     "c": "Reescreve um parágrafo curto como poema, deixando sozinha uma palavra-chave."
+    },
+    "pt_BR": {
+     "t": "O espaço em branco",
+     "g": "Veja como o espaço em branco dá respiração e silêncio a um poema.",
+     "p": [
+      "O espaço vazio em volta de um poema também faz parte dele.",
+      "Linhas em branco e recuos fazem o leitor desacelerar e criam silêncio.",
+      "Uma palavra sozinha num verso, cercada de espaço, brilha forte."
+     ],
+     "q": "Você gosta de poemas arejados ou de poemas que enchem a página?",
+     "c": "Reescreva um parágrafo curto como poema, deixando uma palavra-chave sozinha."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free verse basics",
+     "g": "Discover poems without fixed rhyme or meter that still have shape and music.",
+     "p": [
+      "Free verse has no set rhyme scheme or beat, but it is not random.",
+      "Its music comes from natural speech, repetition and careful line breaks.",
+      "Walt Whitman made free verse famous with long, open lines."
+     ],
+     "q": "Does writing without rhyme feel freeing or harder to you?",
+     "c": "Write four unrhymed lines about your hands, letting each line end on a strong word."
+    },
+    "de": {
+     "t": "Grundlagen freier Verse",
+     "g": "Entdecke Gedichte ohne festen Reim oder Takt, die trotzdem Form und Musik haben.",
+     "p": [
+      "Freie Verse haben kein festes Reimschema oder Metrum, sind aber nicht beliebig.",
+      "Ihre Musik kommt aus natürlicher Sprache, Wiederholung und bewussten Umbrüchen.",
+      "Walt Whitman machte freie Verse mit langen, offenen Zeilen berühmt."
+     ],
+     "q": "Fühlt sich Schreiben ohne Reim für dich befreiend oder schwieriger an?",
+     "c": "Schreibe vier reimlose Zeilen über deine Hände, jede endet auf einem starken Wort."
+    },
+    "es": {
+     "t": "Lo básico del verso libre",
+     "g": "Descubre poemas sin rima ni métrica fija que aun así tienen forma y música.",
+     "p": [
+      "El verso libre no tiene rima ni metro fijos, pero no es azar.",
+      "Su música nace del habla natural, la repetición y cortes de verso cuidados.",
+      "Walt Whitman hizo famoso el verso libre con versos largos y abiertos."
+     ],
+     "q": "¿Escribir sin rima te parece liberador o más difícil?",
+     "c": "Escribe cuatro versos sin rima sobre tus manos, cada uno terminado en una palabra fuerte."
+    },
+    "fr": {
+     "t": "Les bases du vers libre",
+     "g": "Découvrir des poèmes sans rime ni mètre fixes qui ont pourtant forme et musique.",
+     "p": [
+      "Le vers libre n'a ni rime ni mètre imposés, mais il n'est pas fait au hasard.",
+      "Sa musique vient de la parole naturelle, des répétitions et des coupes choisies.",
+      "Walt Whitman a rendu le vers libre célèbre avec de longs vers ouverts."
+     ],
+     "q": "Écrire sans rime te semble-t-il libérateur ou plus difficile ?",
+     "c": "Écris quatre vers sans rime sur tes mains, chacun finissant sur un mot fort."
+    },
+    "it": {
+     "t": "Le basi del verso libero",
+     "g": "Scopri poesie senza rima o metro fissi che hanno comunque forma e musica.",
+     "p": [
+      "Il verso libero non ha rime né metro fissi, ma non è casuale.",
+      "La sua musica nasce dal parlato, dalla ripetizione e da a capo ben scelti.",
+      "Walt Whitman rese famoso il verso libero con versi lunghi e aperti."
+     ],
+     "q": "Scrivere senza rima ti sembra liberatorio o più difficile?",
+     "c": "Scrivi quattro versi senza rima sulle tue mani, ognuno chiuso da una parola forte."
+    },
+    "pt": {
+     "t": "Bases do verso livre",
+     "g": "Descobre poemas sem rima nem métrica fixas que ainda assim têm forma e música.",
+     "p": [
+      "O verso livre não tem rima nem métrica fixas, mas não é aleatório.",
+      "A sua música vem da fala natural, da repetição e de quebras bem pensadas.",
+      "Walt Whitman tornou o verso livre famoso com versos longos e abertos."
+     ],
+     "q": "Escrever sem rima parece-te libertador ou mais difícil?",
+     "c": "Escreve quatro versos sem rima sobre as tuas mãos, cada um a acabar numa palavra forte."
+    },
+    "pt_BR": {
+     "t": "Noções de verso livre",
+     "g": "Descubra poemas sem rima nem métrica fixas que mesmo assim têm forma e música.",
+     "p": [
+      "O verso livre não tem rima nem métrica fixas, mas não é aleatório.",
+      "A música dele vem da fala natural, da repetição e de quebras bem pensadas.",
+      "Walt Whitman tornou o verso livre famoso com versos longos e abertos."
+     ],
+     "q": "Escrever sem rima parece libertador ou mais difícil para você?",
+     "c": "Escreva quatro versos sem rima sobre as suas mãos, cada um terminando numa palavra forte."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing your first free verse poem",
+     "g": "Write a short free verse poem about something you see every day.",
+     "p": [
+      "Choose an everyday subject: your street, a mug, the bus stop.",
+      "Start with one clear image, then add sound, movement or a small surprise.",
+      "Read it aloud and move line breaks until it sounds right to you."
+     ],
+     "q": "What do you see every day that deserves a poem?",
+     "c": "Write a 6 to 8 line free verse poem about something you pass daily."
+    },
+    "de": {
+     "t": "Dein erstes Gedicht in freien Versen",
+     "g": "Schreibe ein kurzes Gedicht in freien Versen über etwas, das du täglich siehst.",
+     "p": [
+      "Wähle ein Alltagsthema: deine Straße, eine Tasse, die Bushaltestelle.",
+      "Beginne mit einem klaren Bild, füge Klang, Bewegung oder eine kleine Überraschung hinzu.",
+      "Lies es laut und verschiebe Umbrüche, bis es für dich richtig klingt."
+     ],
+     "q": "Was siehst du jeden Tag, das ein Gedicht verdient?",
+     "c": "Schreibe 6 bis 8 freie Verse über etwas, an dem du täglich vorbeigehst."
+    },
+    "es": {
+     "t": "Tu primer poema en verso libre",
+     "g": "Escribe un poema breve en verso libre sobre algo que ves cada día.",
+     "p": [
+      "Elige un tema cotidiano: tu calle, una taza, la parada del autobús.",
+      "Empieza con una imagen clara y añade sonido, movimiento o una pequeña sorpresa.",
+      "Léelo en voz alta y mueve los cortes hasta que te suene bien."
+     ],
+     "q": "¿Qué ves cada día que merece un poema?",
+     "c": "Escribe un poema de 6 a 8 versos libres sobre algo junto a lo que pasas a diario."
+    },
+    "fr": {
+     "t": "Ton premier poème en vers libres",
+     "g": "Écrire un court poème en vers libres sur une chose que tu vois chaque jour.",
+     "p": [
+      "Choisis un sujet du quotidien : ta rue, une tasse, l'arrêt de bus.",
+      "Commence par une image nette, puis ajoute un son, un mouvement ou une petite surprise.",
+      "Lis-le à voix haute et déplace les coupes jusqu'à ce qu'il sonne juste."
+     ],
+     "q": "Que vois-tu chaque jour qui mérite un poème ?",
+     "c": "Écris un poème de 6 à 8 vers libres sur une chose devant laquelle tu passes chaque jour."
+    },
+    "it": {
+     "t": "La tua prima poesia in versi liberi",
+     "g": "Scrivi una breve poesia in versi liberi su qualcosa che vedi ogni giorno.",
+     "p": [
+      "Scegli un tema quotidiano: la tua via, una tazza, la fermata dell'autobus.",
+      "Parti da un'immagine chiara, poi aggiungi suono, movimento o una piccola sorpresa.",
+      "Leggila ad alta voce e sposta gli a capo finché suona bene."
+     ],
+     "q": "Che cosa vedi ogni giorno che meriterebbe una poesia?",
+     "c": "Scrivi da 6 a 8 versi liberi su qualcosa davanti a cui passi ogni giorno."
+    },
+    "pt": {
+     "t": "O teu primeiro poema em verso livre",
+     "g": "Escreve um poema curto em verso livre sobre algo que vês todos os dias.",
+     "p": [
+      "Escolhe um tema do dia a dia: a tua rua, uma chávena, a paragem do autocarro.",
+      "Começa com uma imagem nítida e junta som, movimento ou uma pequena surpresa.",
+      "Lê-o em voz alta e muda as quebras até soar bem."
+     ],
+     "q": "O que vês todos os dias que merece um poema?",
+     "c": "Escreve um poema de 6 a 8 versos livres sobre algo por onde passas diariamente."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro poema em verso livre",
+     "g": "Escreva um poema curto em verso livre sobre algo que você vê todo dia.",
+     "p": [
+      "Escolha um tema do cotidiano: sua rua, uma xícara, o ponto de ônibus.",
+      "Comece com uma imagem nítida e acrescente som, movimento ou uma pequena surpresa.",
+      "Leia em voz alta e mude as quebras até soar bem."
+     ],
+     "q": "O que você vê todo dia que merece um poema?",
+     "c": "Escreva um poema de 6 a 8 versos livres sobre algo por onde você passa diariamente."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simile",
+     "g": "Compare with like or as to make readers see something anew.",
+     "p": [
+      "A simile links two different things with like or as.",
+      "The best similes are surprising yet instantly clear.",
+      "Base comparisons on a real shared quality: shape, sound, speed or mood."
+     ],
+     "q": "What would you compare a rainy afternoon to?",
+     "c": "Write three similes for the moon, each using a different everyday object."
+    },
+    "de": {
+     "t": "Der Vergleich",
+     "g": "Vergleiche mit wie, damit Leser etwas neu sehen.",
+     "p": [
+      "Ein Vergleich verbindet zwei verschiedene Dinge mit wie oder als ob.",
+      "Die besten Vergleiche überraschen und sind trotzdem sofort klar.",
+      "Baue Vergleiche auf echter Gemeinsamkeit auf: Form, Klang, Tempo oder Stimmung."
+     ],
+     "q": "Womit würdest du einen verregneten Nachmittag vergleichen?",
+     "c": "Schreibe drei Vergleiche für den Mond, jeder mit einem anderen Alltagsgegenstand."
+    },
+    "es": {
+     "t": "El símil",
+     "g": "Compara con como para que el lector vea algo de nuevo.",
+     "p": [
+      "El símil une dos cosas distintas con como o igual que.",
+      "Los mejores símiles sorprenden y aun así se entienden al instante.",
+      "Basa la comparación en algo compartido: forma, sonido, velocidad o ánimo."
+     ],
+     "q": "¿Con qué compararías una tarde de lluvia?",
+     "c": "Escribe tres símiles para la luna, cada uno con un objeto cotidiano distinto."
+    },
+    "fr": {
+     "t": "La comparaison",
+     "g": "Comparer avec comme pour faire voir une chose autrement.",
+     "p": [
+      "La comparaison relie deux choses différentes par comme ou tel.",
+      "Les meilleures comparaisons surprennent tout en restant claires.",
+      "Appuie-toi sur un point commun réel : forme, son, vitesse ou humeur."
+     ],
+     "q": "À quoi comparerais-tu un après-midi de pluie ?",
+     "c": "Écris trois comparaisons pour la lune, chacune avec un objet du quotidien différent."
+    },
+    "it": {
+     "t": "La similitudine",
+     "g": "Paragona con come per far vedere qualcosa in modo nuovo.",
+     "p": [
+      "La similitudine collega due cose diverse con come o simile a.",
+      "Le similitudini migliori sorprendono ma si capiscono subito.",
+      "Fondale su una qualità condivisa: forma, suono, velocità o stato d'animo."
+     ],
+     "q": "A che cosa paragoneresti un pomeriggio di pioggia?",
+     "c": "Scrivi tre similitudini per la luna, ognuna con un oggetto quotidiano diverso."
+    },
+    "pt": {
+     "t": "A comparação",
+     "g": "Compara com como para fazer o leitor ver algo de novo.",
+     "p": [
+      "A comparação liga duas coisas diferentes com como ou tal qual.",
+      "As melhores comparações surpreendem e mesmo assim são logo claras.",
+      "Baseia-a numa qualidade comum real: forma, som, rapidez ou estado de espírito."
+     ],
+     "q": "Com o que compararias uma tarde de chuva?",
+     "c": "Escreve três comparações para a lua, cada uma com um objeto do dia a dia diferente."
+    },
+    "pt_BR": {
+     "t": "A comparação",
+     "g": "Compare usando como para fazer o leitor ver algo de um jeito novo.",
+     "p": [
+      "A comparação liga duas coisas diferentes com como ou feito.",
+      "As melhores comparações surpreendem e mesmo assim são claras na hora.",
+      "Baseie-se numa qualidade em comum: forma, som, velocidade ou clima."
+     ],
+     "q": "Com o que você compararia uma tarde de chuva?",
+     "c": "Escreva três comparações para a lua, cada uma com um objeto do dia a dia diferente."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Metaphor",
+     "g": "Say one thing is another to reveal a hidden likeness.",
+     "p": [
+      "A metaphor drops like or as: the city is a beehive.",
+      "It invites the reader to discover the connection themselves.",
+      "Extend a good metaphor over a few lines to deepen it."
+     ],
+     "q": "If your week were a kind of weather, what would it be?",
+     "c": "Turn yesterday's simile into a metaphor and add one more line that extends it."
+    },
+    "de": {
+     "t": "Die Metapher",
+     "g": "Sag, dass eine Sache eine andere ist, um eine verborgene Ähnlichkeit zu zeigen.",
+     "p": [
+      "Die Metapher lässt das wie weg: Die Stadt ist ein Bienenstock.",
+      "Sie lädt den Leser ein, die Verbindung selbst zu entdecken.",
+      "Führe eine gute Metapher über mehrere Zeilen fort, um sie zu vertiefen."
+     ],
+     "q": "Wenn deine Woche ein Wetter wäre, welches wäre es?",
+     "c": "Mach aus deinem Vergleich von gestern eine Metapher und setze sie eine Zeile fort."
+    },
+    "es": {
+     "t": "La metáfora",
+     "g": "Di que una cosa es otra para revelar un parecido oculto.",
+     "p": [
+      "La metáfora quita el como: la ciudad es una colmena.",
+      "Invita al lector a descubrir la conexión por sí mismo.",
+      "Prolonga una buena metáfora durante varios versos para hacerla más honda."
+     ],
+     "q": "Si tu semana fuera un tipo de clima, ¿cuál sería?",
+     "c": "Convierte el símil de ayer en metáfora y añade un verso que la prolongue."
+    },
+    "fr": {
+     "t": "La métaphore",
+     "g": "Dire qu'une chose en est une autre pour révéler une ressemblance cachée.",
+     "p": [
+      "La métaphore supprime le comme : la ville est une ruche.",
+      "Elle invite le lecteur à découvrir lui-même le lien.",
+      "Prolonge une bonne métaphore sur quelques vers pour l'approfondir."
+     ],
+     "q": "Si ta semaine était une météo, laquelle serait-elle ?",
+     "c": "Transforme ta comparaison d'hier en métaphore et ajoute un vers qui la prolonge."
+    },
+    "it": {
+     "t": "La metafora",
+     "g": "Di' che una cosa è un'altra per svelare una somiglianza nascosta.",
+     "p": [
+      "La metafora toglie il come: la città è un alveare.",
+      "Invita il lettore a scoprire da solo il legame.",
+      "Prolunga una buona metafora per qualche verso per renderla più profonda."
+     ],
+     "q": "Se la tua settimana fosse un tipo di tempo atmosferico, quale sarebbe?",
+     "c": "Trasforma la similitudine di ieri in metafora e aggiungi un verso che la prolunghi."
+    },
+    "pt": {
+     "t": "A metáfora",
+     "g": "Diz que uma coisa é outra para revelar uma semelhança escondida.",
+     "p": [
+      "A metáfora tira o como: a cidade é uma colmeia.",
+      "Convida o leitor a descobrir a ligação sozinho.",
+      "Prolonga uma boa metáfora por alguns versos para a aprofundar."
+     ],
+     "q": "Se a tua semana fosse um tipo de tempo, qual seria?",
+     "c": "Transforma a comparação de ontem numa metáfora e junta um verso que a prolongue."
+    },
+    "pt_BR": {
+     "t": "A metáfora",
+     "g": "Diga que uma coisa é outra para revelar uma semelhança escondida.",
+     "p": [
+      "A metáfora tira o como: a cidade é uma colmeia.",
+      "Ela convida o leitor a descobrir a ligação sozinho.",
+      "Prolongue uma boa metáfora por alguns versos para aprofundá-la."
+     ],
+     "q": "Se a sua semana fosse um tipo de clima, qual seria?",
+     "c": "Transforme a comparação de ontem numa metáfora e acrescente um verso que a prolongue."
+    }
+   }
+  }
+ ]
+}

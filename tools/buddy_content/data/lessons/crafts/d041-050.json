@@ -1,0 +1,835 @@
+{
+ "topic": "crafts",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Double crochet",
+     "g": "Make taller stitches that grow fabric quickly and form the base of many patterns.",
+     "p": [
+      "Yarn over first, insert the hook, yarn over and pull up a loop: now there are three loops on the hook.",
+      "Yarn over and pull through two loops, then yarn over and pull through the last two: one double crochet done.",
+      "Start the first row in the fourth chain from the hook and use a turning chain of 3, which often counts as a stitch."
+     ],
+     "q": "Do you enjoy seeing fast progress, or do you like slow, dense work better?",
+     "c": "Work 4 rows of double crochet next to your single crochet piece and compare height and feel."
+    },
+    "de": {
+     "t": "Stäbchen",
+     "g": "Häkle höhere Maschen, die schnell wachsen und die Basis vieler Muster bilden.",
+     "p": [
+      "Erst den Faden umschlagen, einstechen, Faden holen und durchziehen: Jetzt liegen drei Schlaufen auf der Nadel.",
+      "Faden holen, durch zwei Schlaufen ziehen, dann noch einmal holen und durch die letzten zwei: ein Stäbchen.",
+      "Beginne die erste Reihe in der vierten Luftmasche ab der Nadel; 3 Wendeluftmaschen zählen oft als erstes Stäbchen."
+     ],
+     "q": "Siehst du gern schnellen Fortschritt, oder magst du langsames, dichtes Arbeiten lieber?",
+     "c": "Häkle 4 Reihen Stäbchen und vergleiche Höhe und Griff mit deinem Stück aus festen Maschen."
+    },
+    "es": {
+     "t": "Punto alto",
+     "g": "Haz puntos más altos que hacen crecer el tejido rápido y son la base de muchos patrones.",
+     "p": [
+      "Echa hebra primero, mete el ganchillo, echa hebra y saca un lazo: ahora hay tres lazos en el ganchillo.",
+      "Echa hebra y pasa por dos lazos, luego echa hebra y pasa por los dos últimos: un punto alto listo.",
+      "Empieza la primera fila en la cuarta cadeneta desde el ganchillo; 3 cadenetas de vuelta suelen contar como un punto."
+     ],
+     "q": "¿Te gusta ver avances rápidos o prefieres un trabajo lento y denso?",
+     "c": "Teje 4 filas de punto alto y compara su altura y tacto con tu pieza de punto bajo."
+    },
+    "fr": {
+     "t": "La bride",
+     "g": "Crochète des mailles plus hautes qui font vite grandir l'ouvrage et servent de base à beaucoup de motifs.",
+     "p": [
+      "Fais d'abord un jeté, pique, fais un jeté et tire une boucle : il y a maintenant trois boucles sur le crochet.",
+      "Jeté et passe dans deux boucles, puis jeté et passe dans les deux dernières : une bride est faite.",
+      "Commence le premier rang dans la quatrième maille depuis le crochet ; 3 mailles de tour comptent souvent pour une bride."
+     ],
+     "q": "Aimes-tu voir ton ouvrage avancer vite, ou préfères-tu un travail lent et dense ?",
+     "c": "Crochète 4 rangs de brides et compare hauteur et toucher avec ton morceau en mailles serrées."
+    },
+    "it": {
+     "t": "La maglia alta",
+     "g": "Lavora maglie più alte che fanno crescere in fretta il tessuto e sono la base di tanti schemi.",
+     "p": [
+      "Prima getta il filo, inserisci l'uncinetto, getta ed estrai un anello: ora ci sono tre anelli sull'uncinetto.",
+      "Getta e passa in due anelli, poi getta e passa negli ultimi due: una maglia alta è fatta.",
+      "Inizia la prima fila nella quarta catenella dall'uncinetto; 3 catenelle di voltatura spesso contano come una maglia."
+     ],
+     "q": "Ti piace vedere progressi rapidi o preferisci un lavoro lento e fitto?",
+     "c": "Lavora 4 file di maglia alta e confronta altezza e consistenza con il pezzo a punto basso."
+    },
+    "pt": {
+     "t": "O ponto alto",
+     "g": "Faz pontos mais altos que fazem o tecido crescer depressa e são a base de muitos padrões.",
+     "p": [
+      "Laça primeiro, enfia a agulha, laça e puxa uma laçada: agora há três laçadas na agulha.",
+      "Laça e puxa por duas laçadas, depois laça e puxa pelas duas últimas: um ponto alto está feito.",
+      "Começa a primeira carreira na quarta correntinha a contar da agulha; 3 correntinhas de volta contam muitas vezes como ponto."
+     ],
+     "q": "Gostas de ver progresso rápido ou preferes um trabalho lento e denso?",
+     "c": "Faz 4 carreiras de ponto alto e compara altura e toque com a tua peça de ponto baixo."
+    },
+    "pt_BR": {
+     "t": "O ponto alto",
+     "g": "Faça pontos mais altos que fazem o tecido crescer rápido e são a base de muitas receitas.",
+     "p": [
+      "Primeiro lace o fio, enfie a agulha, lace e puxe uma laçada: agora há três laçadas na agulha.",
+      "Lace e puxe por duas laçadas, depois lace e puxe pelas duas últimas: um ponto alto pronto.",
+      "Comece a primeira carreira na quarta correntinha a partir da agulha; 3 correntinhas de subida costumam contar como ponto."
+     ],
+     "q": "Você gosta de ver progresso rápido ou prefere um trabalho lento e denso?",
+     "c": "Faça 4 carreiras de ponto alto e compare altura e toque com sua peça de ponto baixo."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crochet abbreviations",
+     "g": "Read common crochet abbreviations and spot the difference between US and UK terms.",
+     "p": [
+      "Common shorthand: ch = chain, sl st = slip stitch, sc = single crochet, dc = double crochet, st = stitch.",
+      "Watch out: the UK calls single crochet double crochet (dc), and US double crochet is a UK treble (tr).",
+      "Check whether a pattern uses US or UK terms before starting; it is usually stated at the top."
+     ],
+     "q": "Do you like shortcuts like abbreviations, or do they feel like a secret code at first?",
+     "c": "Write a two-row mini pattern for your swatch using abbreviations, then crochet it."
+    },
+    "de": {
+     "t": "Häkelabkürzungen",
+     "g": "Lies gängige Häkelabkürzungen und erkenne den Unterschied zwischen US- und UK-Begriffen.",
+     "p": [
+      "Im Deutschen üblich: Lm = Luftmasche, Km = Kettmasche, fM = feste Masche, Stb = Stäbchen, M = Masche.",
+      "Englische Anleitungen: US sc ist die feste Masche, US dc das Stäbchen; im UK heißt die feste Masche aber dc.",
+      "Prüfe vor dem Start, ob eine englische Anleitung US- oder UK-Begriffe nutzt; meist steht es ganz oben."
+     ],
+     "q": "Magst du Abkürzungen, oder wirken sie anfangs wie ein Geheimcode?",
+     "c": "Schreib mit Abkürzungen ein Mini-Muster aus zwei Reihen für dein Probestück und häkle es."
+    },
+    "es": {
+     "t": "Abreviaturas de ganchillo",
+     "g": "Lee las abreviaturas más comunes y detecta la diferencia entre términos de EE. UU. y del Reino Unido.",
+     "p": [
+      "En español: cad = cadeneta, pd = punto deslizado, pb = punto bajo, pa = punto alto, p = punto.",
+      "En inglés, ojo: el punto bajo es sc en EE. UU. pero dc en Reino Unido, y el punto alto es dc (EE. UU.) o tr (R. U.).",
+      "Antes de empezar un patrón en inglés, mira si usa términos de EE. UU. o de Reino Unido; suele indicarse arriba."
+     ],
+     "q": "¿Te gustan los atajos como las abreviaturas o al principio te parecen un código secreto?",
+     "c": "Escribe un mini patrón de dos filas con abreviaturas para tu muestra y luego téjelo."
+    },
+    "fr": {
+     "t": "Les abréviations du crochet",
+     "g": "Lis les abréviations courantes et repère la différence entre les termes américains et britanniques.",
+     "p": [
+      "En français : ml = maille en l'air, mc = maille coulée, ms = maille serrée, br = bride, m = maille.",
+      "En anglais, attention : la maille serrée est sc aux États-Unis mais dc au Royaume-Uni, et la bride dc (US) ou tr (UK).",
+      "Avant un modèle en anglais, vérifie s'il utilise les termes US ou UK ; c'est souvent indiqué en haut."
+     ],
+     "q": "Aimes-tu les raccourcis comme les abréviations, ou ressemblent-ils d'abord à un code secret ?",
+     "c": "Écris un mini-modèle de deux rangs en abréviations pour ton échantillon, puis crochète-le."
+    },
+    "it": {
+     "t": "Le abbreviazioni dell'uncinetto",
+     "g": "Leggi le abbreviazioni più comuni e nota la differenza tra termini americani e inglesi.",
+     "p": [
+      "In italiano: cat = catenella, mbss = maglia bassissima, mb = maglia bassa, ma = maglia alta, m = maglia.",
+      "In inglese attenzione: la maglia bassa è sc negli USA ma dc nel Regno Unito, la maglia alta è dc (USA) o tr (UK).",
+      "Prima di uno schema in inglese controlla se usa termini USA o UK; di solito è scritto in alto."
+     ],
+     "q": "Ti piacciono le scorciatoie come le abbreviazioni o all'inizio sembrano un codice segreto?",
+     "c": "Scrivi con le abbreviazioni un mini schema di due file per il tuo campione, poi lavoralo."
+    },
+    "pt": {
+     "t": "Abreviaturas de croché",
+     "g": "Lê as abreviaturas mais comuns e repara na diferença entre termos americanos e britânicos.",
+     "p": [
+      "Em português: corr = correntinha, pbx = ponto baixíssimo, pb = ponto baixo, pa = ponto alto, p = ponto.",
+      "Em inglês, atenção: o ponto baixo é sc nos EUA mas dc no Reino Unido, e o ponto alto é dc (EUA) ou tr (RU).",
+      "Antes de uma receita em inglês, vê se usa termos dos EUA ou do Reino Unido; costuma vir indicado no topo."
+     ],
+     "q": "Gostas de atalhos como as abreviaturas, ou ao início parecem um código secreto?",
+     "c": "Escreve uma mini receita de duas carreiras com abreviaturas para a tua amostra e depois faz."
+    },
+    "pt_BR": {
+     "t": "Abreviações de crochê",
+     "g": "Leia as abreviações mais comuns e perceba a diferença entre termos americanos e britânicos.",
+     "p": [
+      "Em português: corr = correntinha, pbx = ponto baixíssimo, pb = ponto baixo, pa = ponto alto, p = ponto.",
+      "Em inglês, atenção: o ponto baixo é sc nos EUA mas dc no Reino Unido, e o ponto alto é dc (EUA) ou tr (RU).",
+      "Antes de uma receita em inglês, veja se ela usa termos dos EUA ou do Reino Unido; costuma estar no topo."
+     ],
+     "q": "Você gosta de atalhos como abreviações, ou no começo parecem um código secreto?",
+     "c": "Escreva uma mini receita de duas carreiras com abreviações para sua amostra e depois faça."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The granny square",
+     "g": "Crochet the classic granny square in rounds and see why makers everywhere love it.",
+     "p": [
+      "Start with a small ring of chains joined with a slip stitch, then work clusters of three double crochets into it.",
+      "Each corner gets two clusters with a chain-2 space between; along the sides, one cluster goes into each space.",
+      "Join every round with a slip stitch; changing colour each round gives the famous cheerful look."
+     ],
+     "q": "Which colours would you combine in your first granny square?",
+     "c": "Crochet a granny square of three rounds, using a new colour for each round if you have them."
+    },
+    "de": {
+     "t": "Das Granny Square",
+     "g": "Häkle das klassische Granny Square in Runden und entdecke, warum es weltweit beliebt ist.",
+     "p": [
+      "Beginne mit einem kleinen Luftmaschenring, mit einer Kettmasche geschlossen, und häkle Gruppen aus drei Stäbchen hinein.",
+      "Jede Ecke bekommt zwei Gruppen mit 2 Luftmaschen dazwischen; an den Seiten kommt eine Gruppe in jeden Zwischenraum.",
+      "Schließe jede Runde mit einer Kettmasche; ein Farbwechsel pro Runde ergibt den berühmten fröhlichen Look."
+     ],
+     "q": "Welche Farben würdest du in deinem ersten Granny Square kombinieren?",
+     "c": "Häkle ein Granny Square mit drei Runden, wenn möglich jede Runde in einer neuen Farbe."
+    },
+    "es": {
+     "t": "El granny square",
+     "g": "Teje en vueltas el clásico cuadrado de la abuela y descubre por qué gusta en todo el mundo.",
+     "p": [
+      "Empieza con un anillo de cadenetas cerrado con punto deslizado y teje grupos de tres puntos altos dentro.",
+      "Cada esquina lleva dos grupos con un espacio de 2 cadenetas; en los lados, un grupo en cada espacio.",
+      "Cierra cada vuelta con punto deslizado; cambiar de color en cada vuelta da su famoso aire alegre."
+     ],
+     "q": "¿Qué colores combinarías en tu primer granny square?",
+     "c": "Teje un granny square de tres vueltas, con un color nuevo en cada vuelta si los tienes."
+    },
+    "fr": {
+     "t": "Le granny square",
+     "g": "Crochète en rond le classique carré grand-mère et découvre pourquoi il plaît partout.",
+     "p": [
+      "Commence par un petit anneau de mailles en l'air fermé d'une maille coulée, puis crochète des groupes de trois brides dedans.",
+      "Chaque coin reçoit deux groupes séparés par 2 mailles en l'air ; sur les côtés, un groupe dans chaque espace.",
+      "Ferme chaque tour d'une maille coulée ; changer de couleur à chaque tour donne son célèbre air joyeux."
+     ],
+     "q": "Quelles couleurs associerais-tu dans ton premier granny square ?",
+     "c": "Crochète un granny square de trois tours, avec une couleur différente par tour si tu en as."
+    },
+    "it": {
+     "t": "La mattonella della nonna",
+     "g": "Lavora in giri la classica granny square e scopri perché piace in tutto il mondo.",
+     "p": [
+      "Parti da un anellino di catenelle chiuso con una maglia bassissima, poi lavora dentro gruppi di tre maglie alte.",
+      "Ogni angolo ha due gruppi separati da 2 catenelle; sui lati, un gruppo in ogni spazio.",
+      "Chiudi ogni giro con una maglia bassissima; cambiare colore a ogni giro dà il suo famoso aspetto allegro."
+     ],
+     "q": "Quali colori abbineresti nella tua prima granny square?",
+     "c": "Lavora una granny square di tre giri, con un colore nuovo per ogni giro se li hai."
+    },
+    "pt": {
+     "t": "O granny square",
+     "g": "Faz em voltas o clássico quadrado da avó e descobre porque é amado no mundo inteiro.",
+     "p": [
+      "Começa com um pequeno anel de correntinhas fechado com ponto baixíssimo e faz lá dentro grupos de três pontos altos.",
+      "Cada canto leva dois grupos com 2 correntinhas entre eles; nos lados, um grupo em cada espaço.",
+      "Fecha cada volta com ponto baixíssimo; mudar de cor a cada volta dá o famoso ar alegre."
+     ],
+     "q": "Que cores combinarias no teu primeiro granny square?",
+     "c": "Faz um granny square de três voltas, com uma cor nova em cada volta se as tiveres."
+    },
+    "pt_BR": {
+     "t": "O quadradinho da vovó",
+     "g": "Faça em voltas o clássico granny square e descubra por que ele é amado no mundo todo.",
+     "p": [
+      "Comece com um pequeno anel de correntinhas fechado com ponto baixíssimo e faça dentro grupos de três pontos altos.",
+      "Cada canto leva dois grupos com 2 correntinhas entre eles; nas laterais, um grupo em cada espaço.",
+      "Feche cada volta com ponto baixíssimo; trocar de cor a cada volta dá aquele famoso ar alegre."
+     ],
+     "q": "Que cores você combinaria no seu primeiro quadradinho da vovó?",
+     "c": "Faça um granny square de três voltas, com uma cor nova em cada volta se tiver."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Joining granny squares",
+     "g": "Join granny squares with slip stitch, whip stitch or join-as-you-go for blankets and bags.",
+     "p": [
+      "Slip stitch joining with a hook is quick and makes a firm visible ridge, nice as a design line.",
+      "Whip stitch with a tapestry needle through the back loops gives a flatter, softer seam.",
+      "Join-as-you-go links each new square to the last one during its final round, so there is no sewing at the end."
+     ],
+     "q": "Would you rather make a cosy blanket or a colourful bag from granny squares?",
+     "c": "Make a second small square and join it to yesterday's with the method you like best."
+    },
+    "de": {
+     "t": "Granny Squares verbinden",
+     "g": "Verbinde Granny Squares mit Kettmaschen, überwendlichen Stichen oder direkt beim Häkeln für Decken und Taschen.",
+     "p": [
+      "Mit Kettmaschen und Häkelnadel geht es schnell und ergibt eine feste, sichtbare Naht, schön als Gestaltungslinie.",
+      "Überwendlich mit der Wollnadel durch die hinteren Maschenglieder genäht wird die Naht flacher und weicher.",
+      "Beim Join-as-you-go verbindest du jedes neue Quadrat in der letzten Runde mit dem vorigen, ganz ohne Nähen."
+     ],
+     "q": "Würdest du aus Granny Squares lieber eine kuschelige Decke oder eine bunte Tasche machen?",
+     "c": "Häkle ein zweites kleines Quadrat und verbinde es mit dem von gestern nach deiner Lieblingsmethode."
+    },
+    "es": {
+     "t": "Unir granny squares",
+     "g": "Une cuadrados con punto deslizado, punto por encima o uniendo sobre la marcha para mantas y bolsos.",
+     "p": [
+      "Unir con punto deslizado y ganchillo es rápido y deja un relieve firme y visible, bonito como línea de diseño.",
+      "El punto por encima con aguja lanera por las hebras de atrás da una costura más plana y suave.",
+      "Unir sobre la marcha engancha cada cuadrado nuevo al anterior en su última vuelta, sin coser al final."
+     ],
+     "q": "¿Preferirías hacer una manta acogedora o un bolso colorido con granny squares?",
+     "c": "Haz un segundo cuadrado pequeño y únelo al de ayer con el método que más te guste."
+    },
+    "fr": {
+     "t": "Assembler des granny squares",
+     "g": "Assemble tes carrés en maille coulée, au point de surjet ou au fur et à mesure pour plaids et sacs.",
+     "p": [
+      "L'assemblage en mailles coulées au crochet est rapide et forme une côte ferme et visible, jolie comme ligne de design.",
+      "Le point de surjet à l'aiguille à laine dans les brins arrière donne une couture plus plate et plus douce.",
+      "L'assemblage au fur et à mesure relie chaque nouveau carré au précédent pendant son dernier tour, sans couture finale."
+     ],
+     "q": "Préférerais-tu faire un plaid douillet ou un sac coloré avec des granny squares ?",
+     "c": "Crochète un deuxième petit carré et assemble-le à celui d'hier avec la méthode que tu préfères."
+    },
+    "it": {
+     "t": "Unire le granny square",
+     "g": "Unisci le mattonelle a maglia bassissima, a sopraggitto o man mano, per coperte e borse.",
+     "p": [
+      "Unire a maglia bassissima con l'uncinetto è veloce e crea una costa evidente e solida, bella come linea decorativa.",
+      "Il sopraggitto con l'ago da lana nei fili posteriori dà una cucitura più piatta e morbida.",
+      "L'unione man mano collega ogni nuova mattonella alla precedente durante l'ultimo giro, senza cuciture finali."
+     ],
+     "q": "Preferiresti fare una coperta accogliente o una borsa colorata con le granny square?",
+     "c": "Lavora una seconda mattonella piccola e uniscila a quella di ieri con il metodo che preferisci."
+    },
+    "pt": {
+     "t": "Unir granny squares",
+     "g": "Une quadrados com ponto baixíssimo, ponto por cima ou unindo pelo caminho, para mantas e sacos.",
+     "p": [
+      "Unir com ponto baixíssimo e agulha é rápido e deixa um relevo firme e visível, bonito como linha de design.",
+      "O ponto por cima com agulha de tapeçaria pelas alças de trás dá uma costura mais plana e macia.",
+      "Unir pelo caminho prende cada quadrado novo ao anterior na última volta, sem costuras no fim."
+     ],
+     "q": "Preferias fazer uma manta aconchegante ou um saco colorido com granny squares?",
+     "c": "Faz um segundo quadrado pequeno e une-o ao de ontem com o método de que mais gostares."
+    },
+    "pt_BR": {
+     "t": "Unindo quadradinhos",
+     "g": "Una quadradinhos com ponto baixíssimo, ponto por cima ou unindo no caminho, para mantas e bolsas.",
+     "p": [
+      "Unir com ponto baixíssimo e agulha de crochê é rápido e deixa um relevo firme e visível, bonito como detalhe.",
+      "O ponto por cima com agulha de tapeçaria pelas alças de trás dá uma costura mais plana e macia.",
+      "Unir no caminho prende cada quadradinho novo ao anterior na última volta, sem costura no final."
+     ],
+     "q": "Você preferiria fazer uma manta aconchegante ou uma bolsa colorida com quadradinhos?",
+     "c": "Faça um segundo quadradinho pequeno e una ao de ontem com o método de que mais gostar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Threads and needles for embroidery",
+     "g": "Choose embroidery threads and needles and learn how many strands to stitch with.",
+     "p": [
+      "Stranded cotton has six thin strands you can separate; pearl cotton is a single twisted, shiny thread.",
+      "Embroidery needles have a sharp point and a long eye for the thread; tapestry needles are blunt for counted work.",
+      "Use two or three strands for most lines, one for fine details and all six for bold, chunky stitches."
+     ],
+     "q": "Have you ever seen embroidery that amazed you, on clothes, a cushion or in a museum?",
+     "c": "Cut 40 cm of stranded cotton, separate it into single strands and thread a needle with two."
+    },
+    "de": {
+     "t": "Garne und Nadeln zum Sticken",
+     "g": "Wähle Stickgarne und Nadeln und lerne, mit wie vielen Fäden du stickst.",
+     "p": [
+      "Sticktwist besteht aus sechs dünnen Fäden, die man teilen kann; Perlgarn ist ein einzelner, gedrehter, glänzender Faden.",
+      "Sticknadeln haben eine scharfe Spitze und ein langes Öhr; stumpfe Sticknadeln eignen sich für Zählmuster.",
+      "Nimm für die meisten Linien zwei oder drei Fäden, einen für feine Details und alle sechs für kräftige Stiche."
+     ],
+     "q": "Hast du schon einmal eine Stickerei gesehen, die dich begeistert hat, auf Kleidung, einem Kissen oder im Museum?",
+     "c": "Schneide 40 cm Sticktwist ab, teile ihn in einzelne Fäden und fädle zwei davon ein."
+    },
+    "es": {
+     "t": "Hilos y agujas para bordar",
+     "g": "Elige hilos y agujas de bordar y aprende con cuántas hebras bordar.",
+     "p": [
+      "El mouliné tiene seis hebras finas que puedes separar; el perlé es un solo hilo torcido y brillante.",
+      "Las agujas de bordar tienen punta afilada y ojo largo; las laneras de punta roma sirven para el punto contado.",
+      "Usa dos o tres hebras para la mayoría de líneas, una para detalles finos y las seis para puntadas gruesas."
+     ],
+     "q": "¿Has visto alguna vez un bordado que te encantó, en ropa, un cojín o un museo?",
+     "c": "Corta 40 cm de mouliné, sepáralo en hebras sueltas y enhebra una aguja con dos."
+    },
+    "fr": {
+     "t": "Fils et aiguilles à broder",
+     "g": "Choisis fils et aiguilles à broder et apprends avec combien de brins broder.",
+     "p": [
+      "Le mouliné a six brins fins que l'on peut séparer ; le coton perlé est un seul fil retors et brillant.",
+      "Les aiguilles à broder ont une pointe fine et un long chas ; les aiguilles à bout rond servent au point compté.",
+      "Utilise deux ou trois brins pour la plupart des lignes, un pour les détails fins et les six pour des points épais."
+     ],
+     "q": "As-tu déjà vu une broderie qui t'a émerveillé, sur un vêtement, un coussin ou dans un musée ?",
+     "c": "Coupe 40 cm de mouliné, sépare-le en brins et enfile deux brins sur une aiguille."
+    },
+    "it": {
+     "t": "Fili e aghi da ricamo",
+     "g": "Scegli fili e aghi da ricamo e impara con quanti capi ricamare.",
+     "p": [
+      "Il moulinè ha sei capi sottili separabili; il cotone perlé è un filo unico, ritorto e lucido.",
+      "Gli aghi da ricamo hanno punta fine e cruna lunga; quelli a punta arrotondata servono per il punto contato.",
+      "Usa due o tre capi per la maggior parte delle linee, uno per i dettagli fini e tutti e sei per punti corposi."
+     ],
+     "q": "Hai mai visto un ricamo che ti ha incantato, su un vestito, un cuscino o in un museo?",
+     "c": "Taglia 40 cm di moulinè, separalo in capi singoli e infila un ago con due capi."
+    },
+    "pt": {
+     "t": "Linhas e agulhas para bordar",
+     "g": "Escolhe linhas e agulhas de bordar e aprende com quantos fios bordar.",
+     "p": [
+      "A linha mouliné tem seis fios finos que se separam; a linha perlé é um só fio torcido e brilhante.",
+      "As agulhas de bordar têm ponta afiada e olho comprido; as de tapeçaria, rombas, servem para ponto contado.",
+      "Usa dois ou três fios na maioria das linhas, um para detalhes finos e os seis para pontos grossos."
+     ],
+     "q": "Já viste algum bordado que te encantou, numa roupa, numa almofada ou num museu?",
+     "c": "Corta 40 cm de mouliné, separa-o em fios soltos e enfia dois numa agulha."
+    },
+    "pt_BR": {
+     "t": "Linhas e agulhas para bordar",
+     "g": "Escolha linhas e agulhas de bordado e aprenda com quantos fios bordar.",
+     "p": [
+      "A linha meada tem seis fios finos que se separam; a linha perlé é um fio único, torcido e brilhante.",
+      "Agulhas de bordar têm ponta fina e olho comprido; as de tapeçaria, sem ponta, servem para ponto contado.",
+      "Use dois ou três fios na maioria das linhas, um para detalhes finos e os seis para pontos encorpados."
+     ],
+     "q": "Você já viu um bordado que te encantou, numa roupa, numa almofada ou num museu?",
+     "c": "Corte 40 cm de linha meada, separe em fios soltos e passe dois numa agulha."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using an embroidery hoop",
+     "g": "Mount fabric drum-tight in a hoop and choose a good fabric for stitching.",
+     "p": [
+      "A hoop has an inner and an outer ring; the fabric goes between them, then you tighten the screw.",
+      "Pull the fabric gently and evenly all round until it sounds like a drum when tapped, without distorting the weave.",
+      "Medium-weight cotton or linen with a firm, even weave is easiest; very stretchy fabrics pucker."
+     ],
+     "q": "Do you have any old cotton shirt or pillowcase that could become practice fabric?",
+     "c": "Mount a piece of cotton in a hoop and tap it: tighten until it sounds like a little drum."
+    },
+    "de": {
+     "t": "Den Stickrahmen benutzen",
+     "g": "Spann Stoff trommelfest in einen Stickrahmen und wähl einen guten Stoff zum Sticken.",
+     "p": [
+      "Ein Stickrahmen hat einen inneren und einen äußeren Ring; der Stoff kommt dazwischen, dann ziehst du die Schraube an.",
+      "Zieh den Stoff rundherum sanft und gleichmäßig, bis er beim Antippen wie eine Trommel klingt, ohne das Gewebe zu verziehen.",
+      "Mittelschwere Baumwolle oder Leinen mit festem, gleichmäßigem Gewebe ist am leichtesten; sehr dehnbare Stoffe kräuseln."
+     ],
+     "q": "Hast du ein altes Baumwollhemd oder einen Kissenbezug, der zum Übungsstoff werden könnte?",
+     "c": "Spann ein Stück Baumwolle in einen Rahmen und tippe darauf: Zieh nach, bis es wie eine kleine Trommel klingt."
+    },
+    "es": {
+     "t": "Usar un bastidor de bordado",
+     "g": "Monta la tela tensa como un tambor en un bastidor y elige una buena tela para bordar.",
+     "p": [
+      "Un bastidor tiene un aro interior y otro exterior; la tela va entre ambos y luego se aprieta el tornillo.",
+      "Tensa la tela con suavidad y por igual alrededor hasta que suene como un tambor al tocarla, sin deformar el tejido.",
+      "El algodón o el lino de grosor medio y tejido firme y regular es lo más fácil; las telas muy elásticas se fruncen."
+     ],
+     "q": "¿Tienes alguna camisa vieja de algodón o una funda de almohada que pueda servir de tela de práctica?",
+     "c": "Monta un trozo de algodón en un bastidor y dale toquecitos: tensa hasta que suene como un tamborcito."
+    },
+    "fr": {
+     "t": "Utiliser un tambour à broder",
+     "g": "Tends le tissu comme une peau de tambour dans un tambour à broder et choisis un bon tissu.",
+     "p": [
+      "Un tambour a un cercle intérieur et un extérieur ; le tissu se place entre les deux, puis on serre la vis.",
+      "Tire le tissu doucement et régulièrement tout autour jusqu'à ce qu'il sonne comme un tambour, sans déformer la trame.",
+      "Un coton ou un lin de poids moyen au tissage serré et régulier est le plus facile ; les tissus très extensibles froncent."
+     ],
+     "q": "As-tu une vieille chemise en coton ou une taie d'oreiller qui pourrait servir de tissu d'essai ?",
+     "c": "Tends un morceau de coton dans un tambour et tapote-le : serre jusqu'à ce qu'il sonne comme un petit tambour."
+    },
+    "it": {
+     "t": "Usare il telaio da ricamo",
+     "g": "Monta il tessuto teso come un tamburo nel telaio e scegli un buon tessuto per ricamare.",
+     "p": [
+      "Il telaio ha un cerchio interno e uno esterno; il tessuto va in mezzo, poi si stringe la vite.",
+      "Tira il tessuto piano e in modo uniforme tutto intorno finché, toccato, suona come un tamburo, senza deformare la trama.",
+      "Cotone o lino di peso medio con trama fitta e regolare sono i più facili; i tessuti molto elastici si arricciano."
+     ],
+     "q": "Hai una vecchia camicia di cotone o una federa che potrebbe diventare tessuto per esercitarti?",
+     "c": "Monta un pezzo di cotone nel telaio e picchiettalo: stringi finché suona come un piccolo tamburo."
+    },
+    "pt": {
+     "t": "Usar um bastidor de bordado",
+     "g": "Monta o tecido esticado como um tambor num bastidor e escolhe um bom tecido para bordar.",
+     "p": [
+      "Um bastidor tem um aro interior e outro exterior; o tecido fica entre os dois e depois aperta-se o parafuso.",
+      "Estica o tecido com suavidade e por igual à volta até soar como um tambor quando lhe tocas, sem deformar a trama.",
+      "Algodão ou linho de peso médio com trama firme e regular é o mais fácil; tecidos muito elásticos franzem."
+     ],
+     "q": "Tens alguma camisa velha de algodão ou fronha que possa virar tecido de treino?",
+     "c": "Monta um pedaço de algodão num bastidor e dá-lhe toques: aperta até soar como um pequeno tambor."
+    },
+    "pt_BR": {
+     "t": "Usando o bastidor de bordado",
+     "g": "Monte o tecido esticado como tambor num bastidor e escolha um bom tecido para bordar.",
+     "p": [
+      "O bastidor tem um aro interno e um externo; o tecido fica entre os dois e depois você aperta o parafuso.",
+      "Estique o tecido com suavidade e por igual em volta até soar como um tambor ao tocar, sem deformar a trama.",
+      "Algodão ou linho de peso médio com trama firme e regular é o mais fácil; tecidos muito elásticos franzem."
+     ],
+     "q": "Você tem alguma camisa velha de algodão ou fronha que possa virar tecido de treino?",
+     "c": "Monte um pedaço de algodão num bastidor e dê batidinhas: aperte até soar como um tamborzinho."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running stitch and backstitch",
+     "g": "Learn two foundational line stitches for outlines, lettering and simple designs.",
+     "p": [
+      "Running stitch goes up and down along a line, leaving even gaps: quick, light and great for dashed lines.",
+      "Backstitch makes a solid line: come up one stitch ahead, then go back down into the end of the previous stitch.",
+      "Keep stitches the same length, around 3 to 4 mm, and use shorter ones on tight curves."
+     ],
+     "q": "Which word or name would you most like to embroider one day?",
+     "c": "Stitch a straight line in running stitch and your first initial in backstitch on your hooped fabric."
+    },
+    "de": {
+     "t": "Vorstich und Rückstich",
+     "g": "Lerne zwei grundlegende Linienstiche für Umrisse, Schrift und einfache Motive.",
+     "p": [
+      "Der Vorstich geht entlang einer Linie auf und ab und lässt gleichmäßige Lücken: schnell, leicht, ideal für gestrichelte Linien.",
+      "Der Rückstich ergibt eine geschlossene Linie: einen Stich voraus herauskommen, dann zurück ins Ende des vorigen Stichs.",
+      "Halte alle Stiche gleich lang, etwa 3 bis 4 mm, und mach sie in engen Kurven kürzer."
+     ],
+     "q": "Welches Wort oder welchen Namen würdest du eines Tages am liebsten sticken?",
+     "c": "Stick auf deinen eingespannten Stoff eine gerade Linie im Vorstich und deinen Anfangsbuchstaben im Rückstich."
+    },
+    "es": {
+     "t": "Punto de hilván y pespunte",
+     "g": "Aprende dos puntadas de línea básicas para contornos, letras y diseños sencillos.",
+     "p": [
+      "El hilván sube y baja por una línea dejando huecos iguales: rápido, ligero e ideal para líneas discontinuas.",
+      "El pespunte forma una línea continua: sal una puntada por delante y vuelve a entrar al final de la anterior.",
+      "Mantén las puntadas del mismo largo, unos 3 a 4 mm, y hazlas más cortas en las curvas cerradas."
+     ],
+     "q": "¿Qué palabra o nombre te gustaría bordar algún día?",
+     "c": "Borda en tu bastidor una línea recta en hilván y tu inicial en pespunte."
+    },
+    "fr": {
+     "t": "Point avant et point arrière",
+     "g": "Apprends deux points de ligne de base pour les contours, les lettres et les motifs simples.",
+     "p": [
+      "Le point avant monte et descend le long d'une ligne en laissant des espaces égaux : rapide, léger, idéal en pointillés.",
+      "Le point arrière trace une ligne continue : ressors un point plus loin, puis repique au bout du point précédent.",
+      "Garde des points de même longueur, environ 3 à 4 mm, et raccourcis-les dans les courbes serrées."
+     ],
+     "q": "Quel mot ou quel prénom aimerais-tu broder un jour ?",
+     "c": "Brode sur ton tambour une ligne droite au point avant et ton initiale au point arrière."
+    },
+    "it": {
+     "t": "Punto filza e punto indietro",
+     "g": "Impara due punti lineari di base per contorni, scritte e disegni semplici.",
+     "p": [
+      "Il punto filza sale e scende lungo una linea lasciando spazi uguali: veloce, leggero, ideale per linee tratteggiate.",
+      "Il punto indietro crea una linea continua: esci un punto più avanti e rientra alla fine del punto precedente.",
+      "Tieni i punti della stessa lunghezza, circa 3-4 mm, e accorciali nelle curve strette."
+     ],
+     "q": "Quale parola o nome ti piacerebbe ricamare un giorno?",
+     "c": "Ricama sul telaio una linea dritta a punto filza e la tua iniziale a punto indietro."
+    },
+    "pt": {
+     "t": "Ponto alinhavo e ponto atrás",
+     "g": "Aprende dois pontos de linha básicos para contornos, letras e desenhos simples.",
+     "p": [
+      "O alinhavo sobe e desce ao longo de uma linha com espaços iguais: rápido, leve e ótimo para linhas tracejadas.",
+      "O ponto atrás faz uma linha contínua: sai um ponto à frente e volta a entrar no fim do ponto anterior.",
+      "Mantém os pontos do mesmo tamanho, cerca de 3 a 4 mm, e encurta-os nas curvas apertadas."
+     ],
+     "q": "Que palavra ou nome gostavas de bordar um dia?",
+     "c": "Borda no bastidor uma linha reta em alinhavo e a tua inicial em ponto atrás."
+    },
+    "pt_BR": {
+     "t": "Ponto alinhavo e ponto atrás",
+     "g": "Aprenda dois pontos de linha básicos para contornos, letras e desenhos simples.",
+     "p": [
+      "O alinhavo sobe e desce ao longo de uma linha com espaços iguais: rápido, leve e ótimo para linhas tracejadas.",
+      "O ponto atrás faz uma linha contínua: saia um ponto à frente e volte a entrar no fim do ponto anterior.",
+      "Mantenha os pontos do mesmo tamanho, uns 3 a 4 mm, e encurte nas curvas fechadas."
+     ],
+     "q": "Que palavra ou nome você gostaria de bordar um dia?",
+     "c": "Borde no bastidor uma linha reta em alinhavo e a sua inicial em ponto atrás."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stem and split stitch",
+     "g": "Stitch smooth curved lines for stems, vines and flowing outlines.",
+     "p": [
+      "Stem stitch: work forward along the line, coming up halfway along the previous stitch, always on the same side of it.",
+      "Keeping the thread on the same side gives a twisted, rope-like line that flows beautifully around curves.",
+      "Split stitch: come up through the middle of the previous stitch, splitting the strands, for a fine chain-like line."
+     ],
+     "q": "Do you prefer drawing straight geometric lines or soft, flowing curves?",
+     "c": "Draw a curvy vine on your fabric and stitch the stem in stem stitch and the tendrils in split stitch."
+    },
+    "de": {
+     "t": "Stielstich und Spaltstich",
+     "g": "Sticke weiche, geschwungene Linien für Stiele, Ranken und fließende Umrisse.",
+     "p": [
+      "Stielstich: entlang der Linie vorwärts arbeiten und auf halber Höhe des vorigen Stichs herauskommen, immer auf derselben Seite.",
+      "Bleibt der Faden auf derselben Seite, entsteht eine gedrehte, kordelartige Linie, die sich schön um Kurven schmiegt.",
+      "Spaltstich: in der Mitte des vorigen Stichs herauskommen und die Fäden teilen, für eine feine, kettenähnliche Linie."
+     ],
+     "q": "Zeichnest du lieber gerade, geometrische Linien oder weiche, fließende Kurven?",
+     "c": "Zeichne eine geschwungene Ranke auf den Stoff, sticke den Stiel im Stielstich und die Ranken im Spaltstich."
+    },
+    "es": {
+     "t": "Punto tallo y punto partido",
+     "g": "Borda líneas curvas suaves para tallos, enredaderas y contornos fluidos.",
+     "p": [
+      "Punto tallo: avanza por la línea saliendo a mitad de la puntada anterior, siempre por el mismo lado.",
+      "Mantener el hilo del mismo lado da una línea torcida, como un cordón, que fluye preciosa en las curvas.",
+      "Punto partido: sal por el centro de la puntada anterior, partiendo las hebras, para una línea fina como una cadenita."
+     ],
+     "q": "¿Prefieres dibujar líneas rectas y geométricas o curvas suaves y fluidas?",
+     "c": "Dibuja una enredadera curva en la tela y borda el tallo en punto tallo y los zarcillos en punto partido."
+    },
+    "fr": {
+     "t": "Point de tige et point fendu",
+     "g": "Brode des lignes courbes et souples pour tiges, vrilles et contours fluides.",
+     "p": [
+      "Point de tige : avance le long de la ligne en ressortant à mi-longueur du point précédent, toujours du même côté.",
+      "Garder le fil du même côté donne une ligne torsadée, comme une cordelette, qui épouse joliment les courbes.",
+      "Point fendu : ressors au milieu du point précédent en fendant les brins, pour une ligne fine comme une chaînette."
+     ],
+     "q": "Préfères-tu dessiner des lignes droites et géométriques ou des courbes douces et fluides ?",
+     "c": "Dessine une vrille sinueuse sur ton tissu et brode la tige au point de tige et les vrilles au point fendu."
+    },
+    "it": {
+     "t": "Punto erba e punto spaccato",
+     "g": "Ricama linee curve morbide per steli, tralci e contorni fluidi.",
+     "p": [
+      "Punto erba: avanza lungo la linea uscendo a metà del punto precedente, sempre dallo stesso lato.",
+      "Tenere il filo sempre dallo stesso lato dà una linea ritorta come un cordoncino, bellissima nelle curve.",
+      "Punto spaccato: esci al centro del punto precedente dividendo i capi, per una linea sottile simile a una catenella."
+     ],
+     "q": "Preferisci disegnare linee dritte e geometriche o curve morbide e fluide?",
+     "c": "Disegna un tralcio sinuoso sulla stoffa e ricama lo stelo a punto erba e i viticci a punto spaccato."
+    },
+    "pt": {
+     "t": "Ponto pé de flor e ponto rachado",
+     "g": "Borda linhas curvas suaves para caules, trepadeiras e contornos fluidos.",
+     "p": [
+      "Pé de flor: avança pela linha saindo a meio do ponto anterior, sempre do mesmo lado dele.",
+      "Manter a linha do mesmo lado dá um traço torcido, como um cordão, que flui lindamente nas curvas.",
+      "Ponto rachado: sai pelo meio do ponto anterior, dividindo os fios, para uma linha fina como uma correntinha."
+     ],
+     "q": "Preferes desenhar linhas retas e geométricas ou curvas suaves e fluidas?",
+     "c": "Desenha uma trepadeira curva no tecido e borda o caule em pé de flor e as gavinhas em ponto rachado."
+    },
+    "pt_BR": {
+     "t": "Ponto haste e ponto rachado",
+     "g": "Borde linhas curvas suaves para caules, ramos e contornos fluidos.",
+     "p": [
+      "Ponto haste: avance pela linha saindo na metade do ponto anterior, sempre do mesmo lado dele.",
+      "Manter a linha do mesmo lado dá um traço torcido, como um cordão, que flui lindamente nas curvas.",
+      "Ponto rachado: saia pelo meio do ponto anterior, dividindo os fios, para uma linha fina como uma correntinha."
+     ],
+     "q": "Você prefere desenhar linhas retas e geométricas ou curvas suaves e fluidas?",
+     "c": "Desenhe um ramo curvo no tecido e borde o caule em ponto haste e as gavinhas em ponto rachado."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Satin stitch",
+     "g": "Fill small shapes with smooth parallel stitches while keeping the edges crisp.",
+     "p": [
+      "Satin stitches lie side by side across a shape, edge to edge, close enough that no fabric shows between them.",
+      "Outline the shape first in split stitch, then stitch over it: the outline gives a raised, crisp edge.",
+      "Keep shapes small, under about 1.5 cm across, because long satin stitches snag and sag over time."
+     ],
+     "q": "What small shape would you fill first: a heart, a leaf, a dot or a letter?",
+     "c": "Fill a small leaf or heart in satin stitch, outlining it first in split stitch."
+    },
+    "de": {
+     "t": "Plattstich",
+     "g": "Fülle kleine Formen mit glatten, parallelen Stichen und halte die Ränder scharf.",
+     "p": [
+      "Plattstiche liegen dicht nebeneinander quer über der Form, von Rand zu Rand, sodass kein Stoff durchscheint.",
+      "Umrande die Form zuerst im Spaltstich und sticke dann darüber: So wird der Rand erhaben und scharf.",
+      "Halte die Formen klein, unter etwa 1,5 cm, denn lange Plattstiche verhaken sich und hängen mit der Zeit durch."
+     ],
+     "q": "Welche kleine Form würdest du zuerst füllen: ein Herz, ein Blatt, einen Punkt oder einen Buchstaben?",
+     "c": "Fülle ein kleines Blatt oder Herz im Plattstich und umrande es vorher im Spaltstich."
+    },
+    "es": {
+     "t": "Punto de relleno (satén)",
+     "g": "Rellena formas pequeñas con puntadas paralelas lisas manteniendo los bordes nítidos.",
+     "p": [
+      "Las puntadas de satén van una junto a otra de borde a borde, tan juntas que no se ve la tela entre ellas.",
+      "Primero perfila la forma en punto partido y luego borda por encima: el contorno da un borde nítido y en relieve.",
+      "Haz formas pequeñas, de menos de 1,5 cm, porque las puntadas largas se enganchan y se aflojan con el tiempo."
+     ],
+     "q": "¿Qué forma pequeña rellenarías primero: un corazón, una hoja, un punto o una letra?",
+     "c": "Rellena una hojita o un corazón en punto de satén, perfilándolo antes en punto partido."
+    },
+    "fr": {
+     "t": "Le passé plat",
+     "g": "Remplis de petites formes avec des points parallèles lisses tout en gardant des bords nets.",
+     "p": [
+      "Les points passés plats se posent côte à côte d'un bord à l'autre, assez serrés pour que le tissu ne se voie pas.",
+      "Souligne d'abord la forme au point fendu, puis brode par-dessus : le contour donne un bord net et en relief.",
+      "Garde des formes petites, moins de 1,5 cm environ, car les longs points s'accrochent et se relâchent avec le temps."
+     ],
+     "q": "Quelle petite forme remplirais-tu en premier : un cœur, une feuille, un point ou une lettre ?",
+     "c": "Remplis une petite feuille ou un cœur au passé plat, après l'avoir souligné au point fendu."
+    },
+    "it": {
+     "t": "Il punto pieno",
+     "g": "Riempi piccole forme con punti paralleli lisci mantenendo i bordi netti.",
+     "p": [
+      "I punti pieni si affiancano da un bordo all'altro della forma, così vicini che il tessuto non si vede.",
+      "Contorna prima la forma a punto spaccato e poi ricamaci sopra: il contorno crea un bordo netto e in rilievo.",
+      "Tieni le forme piccole, sotto 1,5 cm circa, perché i punti lunghi si impigliano e si allentano col tempo."
+     ],
+     "q": "Quale piccola forma riempiresti per prima: un cuore, una foglia, un pallino o una lettera?",
+     "c": "Riempi una fogliolina o un cuore a punto pieno, dopo averlo contornato a punto spaccato."
+    },
+    "pt": {
+     "t": "Ponto cheio",
+     "g": "Preenche formas pequenas com pontos paralelos lisos, mantendo as bordas nítidas.",
+     "p": [
+      "Os pontos cheios ficam lado a lado de borda a borda da forma, tão juntos que não se vê o tecido entre eles.",
+      "Contorna primeiro a forma em ponto rachado e depois borda por cima: o contorno dá uma borda nítida e em relevo.",
+      "Mantém as formas pequenas, abaixo de 1,5 cm, porque pontos compridos prendem e ficam frouxos com o tempo."
+     ],
+     "q": "Que forma pequena preencherias primeiro: um coração, uma folha, uma bolinha ou uma letra?",
+     "c": "Preenche uma folhinha ou um coração em ponto cheio, contornando-o antes em ponto rachado."
+    },
+    "pt_BR": {
+     "t": "Ponto cheio",
+     "g": "Preencha formas pequenas com pontos paralelos lisos, mantendo as bordas nítidas.",
+     "p": [
+      "Os pontos cheios ficam lado a lado de borda a borda da forma, tão juntos que não aparece tecido entre eles.",
+      "Contorne antes a forma em ponto rachado e depois borde por cima: o contorno dá uma borda nítida e em relevo.",
+      "Mantenha as formas pequenas, abaixo de 1,5 cm, porque pontos longos enroscam e afrouxam com o tempo."
+     ],
+     "q": "Que forma pequena você preencheria primeiro: um coração, uma folha, uma bolinha ou uma letra?",
+     "c": "Preencha uma folhinha ou um coração em ponto cheio, contornando antes em ponto rachado."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "French knots and lazy daisies",
+     "g": "Add tiny raised dots and petal loops that bring flowers and texture to embroidery.",
+     "p": [
+      "French knot: come up, wrap the thread twice around the needle, hold it taut and go back down right next to where you came up.",
+      "Lazy daisy: come up, go back down in the same hole to form a loop, then catch the loop's tip with a tiny stitch.",
+      "Five lazy daisy petals around a French knot make a perfect little flower."
+     ],
+     "q": "Which flower would you love to see stitched in thread?",
+     "c": "Stitch three little flowers using lazy daisy petals with a French knot centre."
+    },
+    "de": {
+     "t": "Knötchenstich und Margeritenstich",
+     "g": "Füge winzige erhabene Punkte und Blütenschlingen hinzu, die Blumen und Struktur in die Stickerei bringen.",
+     "p": [
+      "Knötchenstich: herauskommen, Faden zweimal um die Nadel wickeln, straff halten und direkt neben der Austrittsstelle einstechen.",
+      "Margeritenstich: herauskommen, ins selbe Loch einstechen, sodass eine Schlinge entsteht, deren Spitze du mit einem Ministich fixierst.",
+      "Fünf Margeritenblätter um einen Knötchenstich ergeben eine perfekte kleine Blume."
+     ],
+     "q": "Welche Blume würdest du gern mit Garn gestickt sehen?",
+     "c": "Sticke drei kleine Blumen aus Margeritenstichen mit einem Knötchenstich in der Mitte."
+    },
+    "es": {
+     "t": "Nudos franceses y margaritas",
+     "g": "Añade puntitos en relieve y pétalos de lazo que llenan de flores y textura el bordado.",
+     "p": [
+      "Nudo francés: sal, enrolla el hilo dos veces en la aguja, mantenlo tenso y entra justo al lado de donde saliste.",
+      "Margarita (punto de cadeneta suelto): sal, entra por el mismo agujero formando un lazo y sujeta su punta con una puntadita.",
+      "Cinco pétalos de margarita alrededor de un nudo francés forman una florecita perfecta."
+     ],
+     "q": "¿Qué flor te encantaría ver bordada con hilo?",
+     "c": "Borda tres florecitas con pétalos de margarita y un nudo francés en el centro."
+    },
+    "fr": {
+     "t": "Points de nœud et marguerites",
+     "g": "Ajoute de petits points en relief et des boucles en pétales qui apportent fleurs et texture.",
+     "p": [
+      "Point de nœud : ressors, enroule le fil deux fois autour de l'aiguille, garde-le tendu et repique juste à côté du point de sortie.",
+      "Point de marguerite : ressors, repique dans le même trou pour former une boucle, puis fixe sa pointe d'un tout petit point.",
+      "Cinq pétales en point de marguerite autour d'un point de nœud forment une petite fleur parfaite."
+     ],
+     "q": "Quelle fleur aimerais-tu voir brodée au fil ?",
+     "c": "Brode trois petites fleurs avec des pétales en marguerite et un point de nœud au centre."
+    },
+    "it": {
+     "t": "Nodi francesi e punto margherita",
+     "g": "Aggiungi puntini in rilievo e petali ad anello che portano fiori e texture nel ricamo.",
+     "p": [
+      "Nodo francese: esci, avvolgi il filo due volte sull'ago, tienilo teso e rientra proprio accanto al punto di uscita.",
+      "Punto margherita: esci, rientra nello stesso foro formando un anello, poi fissane la punta con un puntino.",
+      "Cinque petali a punto margherita intorno a un nodo francese formano un fiorellino perfetto."
+     ],
+     "q": "Quale fiore ti piacerebbe vedere ricamato col filo?",
+     "c": "Ricama tre fiorellini con petali a punto margherita e un nodo francese al centro."
+    },
+    "pt": {
+     "t": "Nós franceses e pontos margarida",
+     "g": "Junta pontinhos em relevo e pétalas em laçada que trazem flores e textura ao bordado.",
+     "p": [
+      "Nó francês: sai, enrola a linha duas vezes na agulha, mantém-na esticada e entra mesmo ao lado de onde saíste.",
+      "Ponto margarida: sai, entra no mesmo furo para formar uma laçada e prende a ponta dela com um pontinho.",
+      "Cinco pétalas em ponto margarida à volta de um nó francês formam uma florzinha perfeita."
+     ],
+     "q": "Que flor adorarias ver bordada a linha?",
+     "c": "Borda três florzinhas com pétalas em ponto margarida e um nó francês no centro."
+    },
+    "pt_BR": {
+     "t": "Nó francês e ponto margarida",
+     "g": "Acrescente pontinhos em relevo e pétalas em laçada que trazem flores e textura ao bordado.",
+     "p": [
+      "Nó francês: saia, enrole a linha duas vezes na agulha, mantenha esticada e entre bem ao lado de onde saiu.",
+      "Ponto margarida: saia, entre no mesmo furo formando uma laçada e prenda a ponta dela com um pontinho.",
+      "Cinco pétalas em ponto margarida em volta de um nó francês formam uma florzinha perfeita."
+     ],
+     "q": "Que flor você adoraria ver bordada com linha?",
+     "c": "Borde três florzinhas com pétalas em ponto margarida e um nó francês no centro."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "swimming",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Floppy ankles, better kick",
+     "g": "See why loose, pointed ankles help your kick push water backwards.",
+     "p": [
+      "Stiff, flexed feet push water down and can even move you backwards.",
+      "Relaxed, pointed toes act like flippers and send water behind you.",
+      "Let the feet flop gently, like loose socks, as the leg moves."
+     ],
+     "q": "Do your ankles feel stiff or loose when you kick?",
+     "c": "Sit on the floor and point and relax your feet 20 times, then kick with floppy ankles."
+    },
+    "de": {
+     "t": "Lockere Knöchel, besserer Beinschlag",
+     "g": "Erfahre, warum lockere, gestreckte Fußgelenke das Wasser nach hinten drücken.",
+     "p": [
+      "Steife, angezogene Füße drücken Wasser nach unten und bremsen dich sogar.",
+      "Lockere, gestreckte Zehen wirken wie Flossen und schieben Wasser nach hinten.",
+      "Lass die Füße wie lose Socken mitschwingen, während das Bein arbeitet."
+     ],
+     "q": "Fühlen sich deine Fußgelenke beim Beinschlag steif oder locker an?",
+     "c": "Streck und lockere im Sitzen 20-mal die Füße, dann kicke mit lockeren Knöcheln."
+    },
+    "es": {
+     "t": "Tobillos sueltos, mejor patada",
+     "g": "Descubre por qué unos tobillos sueltos y estirados empujan el agua hacia atrás.",
+     "p": [
+      "Los pies rígidos y flexionados empujan el agua hacia abajo y hasta te frenan.",
+      "Los dedos estirados y relajados funcionan como aletas y mandan el agua atrás.",
+      "Deja que los pies se muevan sueltos, como calcetines flojos."
+     ],
+     "q": "¿Notas los tobillos rígidos o sueltos cuando pateas?",
+     "c": "Sentado, estira y relaja los pies 20 veces y luego patea con tobillos sueltos."
+    },
+    "fr": {
+     "t": "Chevilles souples, meilleur battement",
+     "g": "Comprends pourquoi des chevilles souples et tendues poussent l'eau vers l'arrière.",
+     "p": [
+      "Des pieds raides et fléchis poussent l'eau vers le bas et peuvent même te freiner.",
+      "Des pointes de pied détendues agissent comme des palmes et envoient l'eau derrière toi.",
+      "Laisse les pieds onduler, comme des chaussettes trop grandes."
+     ],
+     "q": "Tes chevilles sont-elles raides ou souples quand tu bats des jambes ?",
+     "c": "Assis, tends et relâche les pieds 20 fois, puis bats des jambes chevilles souples."
+    },
+    "it": {
+     "t": "Caviglie morbide, gambe migliori",
+     "g": "Scopri perché caviglie morbide e distese spingono l'acqua all'indietro.",
+     "p": [
+      "Piedi rigidi e a martello spingono l'acqua in basso e possono perfino frenarti.",
+      "Punte rilassate funzionano come pinne e mandano l'acqua dietro di te.",
+      "Lascia i piedi morbidi, come calzini larghi, mentre la gamba si muove."
+     ],
+     "q": "Le tue caviglie sono rigide o morbide quando batti le gambe?",
+     "c": "Da seduto, distendi e rilassa i piedi 20 volte, poi batti le gambe a caviglie morbide."
+    },
+    "pt": {
+     "t": "Tornozelos soltos, melhor pernada",
+     "g": "Percebe porque tornozelos soltos e esticados empurram a água para trás.",
+     "p": [
+      "Pés rígidos e fletidos empurram a água para baixo e até te travam.",
+      "Pontas dos pés descontraídas funcionam como barbatanas e mandam a água para trás.",
+      "Deixa os pés abanar soltos, como meias largas, enquanto a perna se move."
+     ],
+     "q": "Sentes os tornozelos rígidos ou soltos quando bates as pernas?",
+     "c": "Sentado, estica e solta os pés 20 vezes e depois bate pernas com tornozelos soltos."
+    },
+    "pt_BR": {
+     "t": "Tornozelo solto, pernada melhor",
+     "g": "Entenda por que tornozelos soltos e esticados empurram a água para trás.",
+     "p": [
+      "Pés duros e flexionados empurram a água para baixo e até te freiam.",
+      "Pontas dos pés relaxadas funcionam como nadadeiras e jogam a água para trás.",
+      "Deixe os pés balançarem soltos, como meias folgadas."
+     ],
+     "q": "Seus tornozelos ficam duros ou soltos quando você bate perna?",
+     "c": "Sentado, estique e relaxe os pés 20 vezes e depois bata perna com tornozelos soltos."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kicking on your back",
+     "g": "Practise a gentle flutter kick while floating on your back.",
+     "p": [
+      "Start from your back float with ears in and eyes on the ceiling.",
+      "Kick from the hips with knees staying just under the surface.",
+      "Arms can rest by your sides or hold a board on your chest."
+     ],
+     "q": "Is kicking on your back easier or harder than on your front?",
+     "c": "Kick on your back for two widths, holding a board on your chest if you like."
+    },
+    "de": {
+     "t": "Beinschlag in Rückenlage",
+     "g": "Übe einen sanften Wechselbeinschlag, während du auf dem Rücken treibst.",
+     "p": [
+      "Starte aus der Rückenlage, Ohren im Wasser, Blick zur Decke.",
+      "Kick aus der Hüfte, die Knie bleiben knapp unter der Oberfläche.",
+      "Die Arme ruhen seitlich am Körper oder halten ein Brett auf der Brust."
+     ],
+     "q": "Ist der Beinschlag auf dem Rücken leichter oder schwerer als auf dem Bauch?",
+     "c": "Kicke zwei Breiten auf dem Rücken, gern mit Brett auf der Brust."
+    },
+    "es": {
+     "t": "Patada de espaldas",
+     "g": "Practica una patada suave mientras flotas boca arriba.",
+     "p": [
+      "Parte de la flotación de espaldas, con orejas dentro y mirada al techo.",
+      "Patea desde la cadera, con las rodillas justo bajo la superficie.",
+      "Los brazos pueden ir pegados al cuerpo o sujetar una tabla sobre el pecho."
+     ],
+     "q": "¿Patear de espaldas te resulta más fácil o más difícil que boca abajo?",
+     "c": "Patea dos anchos de espaldas, con una tabla sobre el pecho si quieres."
+    },
+    "fr": {
+     "t": "Battements sur le dos",
+     "g": "Travaille un battement doux en flottant sur le dos.",
+     "p": [
+      "Pars de la planche sur le dos, oreilles dans l'eau, regard au plafond.",
+      "Bats des jambes depuis les hanches, genoux juste sous la surface.",
+      "Les bras reposent le long du corps ou tiennent une planche sur la poitrine."
+     ],
+     "q": "Les battements sur le dos sont-ils plus faciles ou plus durs que sur le ventre ?",
+     "c": "Fais deux largeurs de battements sur le dos, avec une planche sur la poitrine si tu veux."
+    },
+    "it": {
+     "t": "Gambe sul dorso",
+     "g": "Allena una battuta dolce galleggiando sulla schiena.",
+     "p": [
+      "Parti dal galleggiamento supino, orecchie in acqua e sguardo al soffitto.",
+      "Batti dalle anche con le ginocchia appena sotto la superficie.",
+      "Le braccia possono stare lungo i fianchi o tenere una tavoletta sul petto."
+     ],
+     "q": "Battere le gambe sul dorso è più facile o più difficile che a pancia in giù?",
+     "c": "Fai due vasche in larghezza di gambe sul dorso, con la tavoletta sul petto se vuoi."
+    },
+    "pt": {
+     "t": "Pernada de costas",
+     "g": "Treina uma pernada suave enquanto flutuas de costas.",
+     "p": [
+      "Começa na flutuação de costas, orelhas na água e olhos no teto.",
+      "Bate pernas a partir da anca, com os joelhos logo abaixo da superfície.",
+      "Os braços descansam ao lado do corpo ou seguram uma prancha no peito."
+     ],
+     "q": "Bater pernas de costas é mais fácil ou mais difícil do que de barriga para baixo?",
+     "c": "Faz duas larguras de pernada de costas, com uma prancha no peito se quiseres."
+    },
+    "pt_BR": {
+     "t": "Pernada de costas",
+     "g": "Pratique uma pernada suave enquanto boia de costas.",
+     "p": [
+      "Comece boiando de costas, orelhas na água e olhos no teto.",
+      "Bata perna a partir do quadril, com os joelhos logo abaixo da superfície.",
+      "Os braços ficam ao lado do corpo ou seguram uma prancha no peito."
+     ],
+     "q": "Bater perna de costas é mais fácil ou mais difícil do que de bruços?",
+     "c": "Faça duas larguras de pernada de costas, com prancha no peito se quiser."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythmic breathing standing up",
+     "g": "Find a calm, repeating rhythm: in above water, out below.",
+     "p": [
+      "Breathe in through the mouth quickly above the water.",
+      "Put your face in and breathe out slowly with bubbles.",
+      "Repeat without pausing, like a gentle wave going in and out."
+     ],
+     "q": "Does counting help you keep a steady breathing rhythm?",
+     "c": "Do three sets of ten breaths in and out while standing in shallow water."
+    },
+    "de": {
+     "t": "Rhythmisch atmen im Stehen",
+     "g": "Finde einen ruhigen Rhythmus: über Wasser ein, unter Wasser aus.",
+     "p": [
+      "Über Wasser schnell durch den Mund einatmen.",
+      "Gesicht ins Wasser und langsam mit Blasen ausatmen.",
+      "Ohne Pause wiederholen, wie eine sanfte Welle, die kommt und geht."
+     ],
+     "q": "Hilft dir Zählen, einen gleichmäßigen Atemrhythmus zu halten?",
+     "c": "Mach im flachen Wasser stehend drei Runden mit je zehn Atemzügen."
+    },
+    "es": {
+     "t": "Respiración rítmica de pie",
+     "g": "Encuentra un ritmo tranquilo: tomas aire fuera y lo sueltas dentro.",
+     "p": [
+      "Toma aire rápido por la boca por encima del agua.",
+      "Mete la cara y suelta el aire despacio haciendo burbujas.",
+      "Repite sin pausas, como una ola suave que va y viene."
+     ],
+     "q": "¿Contar te ayuda a mantener un ritmo de respiración constante?",
+     "c": "Haz tres series de diez respiraciones de pie en agua poco profunda."
+    },
+    "fr": {
+     "t": "Respiration rythmée debout",
+     "g": "Trouve un rythme calme : inspiration hors de l'eau, expiration dedans.",
+     "p": [
+      "Inspire vite par la bouche au-dessus de l'eau.",
+      "Mets le visage dans l'eau et expire lentement en faisant des bulles.",
+      "Enchaîne sans pause, comme une vague douce qui va et vient."
+     ],
+     "q": "Compter t'aide-t-il à garder une respiration régulière ?",
+     "c": "Fais trois séries de dix respirations debout en petite profondeur."
+    },
+    "it": {
+     "t": "Respirazione ritmica in piedi",
+     "g": "Trova un ritmo calmo: inspiri fuori dall'acqua, espiri dentro.",
+     "p": [
+      "Inspira rapidamente con la bocca sopra l'acqua.",
+      "Metti il viso in acqua ed espira piano facendo bolle.",
+      "Ripeti senza pause, come un'onda dolce che va e viene."
+     ],
+     "q": "Contare ti aiuta a mantenere un respiro regolare?",
+     "c": "Fai tre serie da dieci respiri in piedi in acqua bassa."
+    },
+    "pt": {
+     "t": "Respiração rítmica de pé",
+     "g": "Encontra um ritmo calmo: inspiras fora de água e expiras lá dentro.",
+     "p": [
+      "Inspira rapidamente pela boca acima da água.",
+      "Põe a cara na água e expira devagar a fazer bolhas.",
+      "Repete sem pausas, como uma onda suave que vai e vem."
+     ],
+     "q": "Contar ajuda-te a manter um ritmo de respiração constante?",
+     "c": "Faz três séries de dez respirações de pé em água baixa."
+    },
+    "pt_BR": {
+     "t": "Respiração rítmica em pé",
+     "g": "Encontre um ritmo calmo: puxa o ar fora e solta dentro da água.",
+     "p": [
+      "Puxe o ar rápido pela boca acima da água.",
+      "Coloque o rosto na água e solte o ar devagar fazendo bolhas.",
+      "Repita sem pausa, como uma onda suave que vai e vem."
+     ],
+     "q": "Contar ajuda você a manter um ritmo de respiração constante?",
+     "c": "Faça três séries de dez respirações em pé na parte rasa."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bobbing in the shallow end",
+     "g": "Sink gently, breathe out and rise to breathe, building a steady rhythm.",
+     "p": [
+      "Stand where the water reaches about chest height, near a lifeguard.",
+      "Bend your knees to sink, hum out bubbles, then rise and breathe in.",
+      "Find a smooth rhythm, like a buoy rocking on calm water."
+     ],
+     "q": "How many relaxed bobs in a row do you think you can do?",
+     "c": "Do ten calm bobs in a row, then rest and do ten more."
+    },
+    "de": {
+     "t": "Wippen im flachen Wasser",
+     "g": "Sink sanft ab, atme aus und steig zum Einatmen auf, für einen ruhigen Rhythmus.",
+     "p": [
+      "Stell dich ins etwa brusttiefe Wasser, in der Nähe der Aufsicht.",
+      "Knie beugen zum Absinken, Blasen aussummen, dann hoch und einatmen.",
+      "Finde einen weichen Rhythmus, wie eine Boje auf ruhigem Wasser."
+     ],
+     "q": "Wie viele entspannte Wipper am Stück schaffst du wohl?",
+     "c": "Mach zehn ruhige Wipper am Stück, kurze Pause, dann noch zehn."
+    },
+    "es": {
+     "t": "Rebotes en la zona baja",
+     "g": "Húndete suavemente, suelta el aire y sube a respirar con un ritmo constante.",
+     "p": [
+      "Colócate donde el agua llegue más o menos al pecho, cerca del socorrista.",
+      "Dobla las rodillas para hundirte, haz burbujas y sube a tomar aire.",
+      "Busca un ritmo suave, como una boya meciéndose en agua tranquila."
+     ],
+     "q": "¿Cuántos rebotes tranquilos seguidos crees que puedes hacer?",
+     "c": "Haz diez rebotes tranquilos seguidos, descansa y haz diez más."
+    },
+    "fr": {
+     "t": "Rebonds dans le petit bain",
+     "g": "Descends doucement, expire et remonte respirer pour trouver un rythme régulier.",
+     "p": [
+      "Place-toi là où l'eau arrive à peu près à la poitrine, près du surveillant.",
+      "Plie les genoux pour descendre, fais des bulles, puis remonte inspirer.",
+      "Trouve un rythme fluide, comme une bouée qui se balance sur l'eau calme."
+     ],
+     "q": "Combien de rebonds tranquilles d'affilée penses-tu pouvoir faire ?",
+     "c": "Fais dix rebonds calmes d'affilée, repose-toi, puis dix de plus."
+    },
+    "it": {
+     "t": "Saltelli in acqua bassa",
+     "g": "Scendi piano, espira e risali a respirare, per un ritmo costante.",
+     "p": [
+      "Mettiti dove l'acqua arriva circa al petto, vicino al bagnino.",
+      "Piega le ginocchia per scendere, fai bolle, poi risali e inspira.",
+      "Trova un ritmo morbido, come una boa che dondola sull'acqua calma."
+     ],
+     "q": "Quanti saltelli rilassati di fila pensi di riuscire a fare?",
+     "c": "Fai dieci saltelli calmi di fila, riposa e fanne altri dieci."
+    },
+    "pt": {
+     "t": "Mergulhos ritmados na zona baixa",
+     "g": "Afunda devagar, expira e sobe para respirar, criando um ritmo constante.",
+     "p": [
+      "Fica onde a água chega mais ou menos ao peito, perto do nadador-salvador.",
+      "Dobra os joelhos para afundar, faz bolhas e sobe para inspirar.",
+      "Procura um ritmo suave, como uma boia a balançar em água calma."
+     ],
+     "q": "Quantos mergulhos ritmados seguidos achas que consegues fazer?",
+     "c": "Faz dez mergulhos calmos seguidos, descansa e faz mais dez."
+    },
+    "pt_BR": {
+     "t": "Sobe e desce na parte rasa",
+     "g": "Afunde de leve, solte o ar e suba para respirar, criando um ritmo constante.",
+     "p": [
+      "Fique onde a água chega mais ou menos no peito, perto do salva-vidas.",
+      "Dobre os joelhos para afundar, faça bolhas e suba para puxar o ar.",
+      "Busque um ritmo suave, como uma boia balançando em água calma."
+     ],
+     "q": "Quantos sobe e desce tranquilos seguidos você acha que consegue?",
+     "c": "Faça dez sobe e desce calmos seguidos, descanse e faça mais dez."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first freestyle arms",
+     "g": "Learn the basic arm circle of front crawl: reach, pull, push, recover.",
+     "p": [
+      "Reach forward in front of your shoulder, fingertips entering first.",
+      "Pull the water back under your body, then push it past your hip.",
+      "Lift the arm out and swing it forward relaxed to start again."
+     ],
+     "q": "Which phase feels most natural: reach, pull, push or recovery?",
+     "c": "Stand in the water, lean forward and do 20 slow freestyle arm circles."
+    },
+    "de": {
+     "t": "Deine ersten Kraularme",
+     "g": "Lerne den Grundkreis der Kraularme: strecken, ziehen, drücken, vorholen.",
+     "p": [
+      "Vor der Schulter nach vorn strecken, die Fingerspitzen tauchen zuerst ein.",
+      "Das Wasser unter dem Körper nach hinten ziehen und an der Hüfte vorbei drücken.",
+      "Arm herausheben und locker nach vorn schwingen, dann von vorn."
+     ],
+     "q": "Welche Phase fühlt sich am natürlichsten an: strecken, ziehen, drücken oder vorholen?",
+     "c": "Steh im Wasser, beug dich vor und mach 20 langsame Kraularmkreise."
+    },
+    "es": {
+     "t": "Tus primeros brazos de crol",
+     "g": "Aprende el círculo básico del brazo de crol: estirar, tirar, empujar y recobrar.",
+     "p": [
+      "Estira el brazo delante del hombro y entra con la punta de los dedos.",
+      "Tira del agua hacia atrás bajo el cuerpo y empújala más allá de la cadera.",
+      "Saca el brazo y llévalo relajado hacia delante para empezar de nuevo."
+     ],
+     "q": "¿Qué fase te sale más natural: estirar, tirar, empujar o recobrar?",
+     "c": "De pie en el agua, inclínate y haz 20 círculos lentos de brazos de crol."
+    },
+    "fr": {
+     "t": "Tes premiers bras de crawl",
+     "g": "Apprends le cercle de bras du crawl : allonger, tirer, pousser, revenir.",
+     "p": [
+      "Allonge le bras devant l'épaule, le bout des doigts entre en premier.",
+      "Tire l'eau vers l'arrière sous le corps, puis pousse-la au-delà de la hanche.",
+      "Sors le bras et ramène-le détendu vers l'avant pour recommencer."
+     ],
+     "q": "Quelle phase te semble la plus naturelle : allonger, tirer, pousser ou revenir ?",
+     "c": "Debout dans l'eau, penche-toi et fais 20 cercles de bras de crawl lents."
+    },
+    "it": {
+     "t": "Le prime bracciate a stile libero",
+     "g": "Impara il ciclo base del braccio a crawl: allungo, trazione, spinta e recupero.",
+     "p": [
+      "Allunga il braccio davanti alla spalla, entrano prima le dita.",
+      "Tira l'acqua indietro sotto il corpo e spingila oltre il fianco.",
+      "Esci con il braccio e riportalo avanti rilassato per ricominciare."
+     ],
+     "q": "Quale fase ti viene più naturale: allungo, trazione, spinta o recupero?",
+     "c": "In piedi in acqua, piegati in avanti e fai 20 bracciate lente a crawl."
+    },
+    "pt": {
+     "t": "Os teus primeiros braços de crol",
+     "g": "Aprende o ciclo básico do braço de crol: esticar, puxar, empurrar e recuperar.",
+     "p": [
+      "Estica o braço à frente do ombro, com as pontas dos dedos a entrar primeiro.",
+      "Puxa a água para trás por baixo do corpo e empurra-a para lá da anca.",
+      "Tira o braço da água e leva-o descontraído para a frente para recomeçar."
+     ],
+     "q": "Que fase te sai mais natural: esticar, puxar, empurrar ou recuperar?",
+     "c": "De pé na água, inclina-te e faz 20 ciclos lentos de braços de crol."
+    },
+    "pt_BR": {
+     "t": "Seus primeiros braços de crawl",
+     "g": "Aprenda o ciclo básico do braço no crawl: alcançar, puxar, empurrar e recuperar.",
+     "p": [
+      "Estique o braço à frente do ombro, com as pontas dos dedos entrando primeiro.",
+      "Puxe a água para trás embaixo do corpo e empurre até passar do quadril.",
+      "Tire o braço da água e leve relaxado para a frente para começar de novo."
+     ],
+     "q": "Qual fase sai mais natural: alcançar, puxar, empurrar ou recuperar?",
+     "c": "Em pé na água, incline o corpo e faça 20 braçadas lentas de crawl."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arm and kick together",
+     "g": "Combine a steady kick with slow freestyle arms over a short distance.",
+     "p": [
+      "Push off into streamline and start kicking before the first arm stroke.",
+      "Let the kick run on autopilot while the arms move slowly.",
+      "Swim only a few strokes, stand up, breathe and smile, then repeat."
+     ],
+     "q": "What is harder to keep going when combining: arms or legs?",
+     "c": "Swim five short stretches of four arm strokes with a steady kick."
+    },
+    "de": {
+     "t": "Arme und Beine zusammen",
+     "g": "Kombiniere einen gleichmäßigen Beinschlag mit langsamen Kraularmen auf kurzer Strecke.",
+     "p": [
+      "Abstoßen in die Stromlinie und vor dem ersten Armzug mit dem Kicken beginnen.",
+      "Den Beinschlag auf Autopilot laufen lassen, während die Arme langsam arbeiten.",
+      "Nur ein paar Züge schwimmen, aufstehen, atmen, lächeln und wiederholen."
+     ],
+     "q": "Was ist beim Kombinieren schwerer am Laufen zu halten: Arme oder Beine?",
+     "c": "Schwimm fünf kurze Strecken mit je vier Armzügen und ruhigem Beinschlag."
+    },
+    "es": {
+     "t": "Brazos y piernas a la vez",
+     "g": "Combina una patada constante con brazos de crol lentos en una distancia corta.",
+     "p": [
+      "Impúlsate en flecha y empieza a patear antes de la primera brazada.",
+      "Deja la patada en piloto automático mientras los brazos van despacio.",
+      "Nada solo unas brazadas, ponte de pie, respira, sonríe y repite."
+     ],
+     "q": "Al combinar, ¿qué te cuesta más mantener: brazos o piernas?",
+     "c": "Nada cinco tramos cortos de cuatro brazadas con una patada constante."
+    },
+    "fr": {
+     "t": "Bras et jambes ensemble",
+     "g": "Associe un battement régulier à des bras de crawl lents sur une courte distance.",
+     "p": [
+      "Pousse au mur en flèche et commence à battre avant le premier mouvement de bras.",
+      "Laisse les jambes en pilote automatique pendant que les bras bougent lentement.",
+      "Nage seulement quelques mouvements, redresse-toi, respire, souris et recommence."
+     ],
+     "q": "Qu'est-ce qui est le plus dur à maintenir en combinant : bras ou jambes ?",
+     "c": "Nage cinq petits trajets de quatre mouvements de bras avec un battement régulier."
+    },
+    "it": {
+     "t": "Braccia e gambe insieme",
+     "g": "Unisci una battuta costante a bracciate lente a crawl su una distanza breve.",
+     "p": [
+      "Spingi in freccia e inizia a battere le gambe prima della prima bracciata.",
+      "Lascia le gambe in automatico mentre le braccia si muovono piano.",
+      "Nuota solo qualche bracciata, alzati, respira, sorridi e ripeti."
+     ],
+     "q": "Quando combini, cosa è più difficile mantenere: braccia o gambe?",
+     "c": "Nuota cinque tratti brevi da quattro bracciate con gambe costanti."
+    },
+    "pt": {
+     "t": "Braços e pernas juntos",
+     "g": "Junta uma pernada constante a braços de crol lentos numa distância curta.",
+     "p": [
+      "Dá o impulso em flecha e começa a bater pernas antes da primeira braçada.",
+      "Deixa a pernada em piloto automático enquanto os braços se movem devagar.",
+      "Nada só algumas braçadas, põe-te de pé, respira, sorri e repete."
+     ],
+     "q": "Ao juntar tudo, o que custa mais manter: braços ou pernas?",
+     "c": "Nada cinco percursos curtos de quatro braçadas com pernada constante."
+    },
+    "pt_BR": {
+     "t": "Braços e pernas juntos",
+     "g": "Junte uma pernada constante com braços de crawl lentos numa distância curta.",
+     "p": [
+      "Dê o impulso em flecha e comece a bater perna antes da primeira braçada.",
+      "Deixe a pernada no piloto automático enquanto os braços vão devagar.",
+      "Nade só algumas braçadas, fique de pé, respire, sorria e repita."
+     ],
+     "q": "Ao juntar tudo, o que é mais difícil manter: braços ou pernas?",
+     "c": "Nade cinco trechos curtos de quatro braçadas com pernada constante."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning the head to breathe",
+     "g": "Roll your head to the side to breathe in, keeping one ear in the water.",
+     "p": [
+      "Turn the head with the body as your arm pulls back, not by lifting it.",
+      "Keep one goggle and one ear in the water while you breathe in.",
+      "Return your face to the water and breathe out slowly with bubbles."
+     ],
+     "q": "Which side feels more natural for you to breathe to?",
+     "c": "Holding the wall, practise ten side breaths to each side."
+    },
+    "de": {
+     "t": "Kopf drehen zum Atmen",
+     "g": "Dreh den Kopf zur Seite zum Einatmen, ein Ohr bleibt im Wasser.",
+     "p": [
+      "Dreh den Kopf mit dem Körper, während der Arm nach hinten zieht, statt ihn zu heben.",
+      "Ein Brillenglas und ein Ohr bleiben beim Einatmen im Wasser.",
+      "Gesicht zurück ins Wasser und langsam mit Blasen ausatmen."
+     ],
+     "q": "Zu welcher Seite atmest du lieber?",
+     "c": "Halt dich am Rand fest und übe zu jeder Seite zehn Seitatmungen."
+    },
+    "es": {
+     "t": "Girar la cabeza para respirar",
+     "g": "Gira la cabeza de lado para tomar aire, con una oreja dentro del agua.",
+     "p": [
+      "Gira la cabeza junto con el cuerpo mientras el brazo tira atrás, sin levantarla.",
+      "Deja una lente de las gafas y una oreja en el agua al tomar aire.",
+      "Vuelve a meter la cara y suelta el aire despacio con burbujas."
+     ],
+     "q": "¿Hacia qué lado te resulta más natural respirar?",
+     "c": "Agarrado al borde, practica diez respiraciones laterales a cada lado."
+    },
+    "fr": {
+     "t": "Tourner la tête pour respirer",
+     "g": "Tourne la tête sur le côté pour inspirer, une oreille restant dans l'eau.",
+     "p": [
+      "Tourne la tête avec le corps quand le bras tire en arrière, sans la relever.",
+      "Garde un verre de lunette et une oreille dans l'eau pendant l'inspiration.",
+      "Remets le visage dans l'eau et expire lentement en faisant des bulles."
+     ],
+     "q": "De quel côté respires-tu le plus naturellement ?",
+     "c": "En tenant le bord, fais dix respirations latérales de chaque côté."
+    },
+    "it": {
+     "t": "Girare la testa per respirare",
+     "g": "Ruota la testa di lato per inspirare, con un orecchio in acqua.",
+     "p": [
+      "Gira la testa insieme al corpo mentre il braccio tira indietro, senza sollevarla.",
+      "Tieni una lente degli occhialini e un orecchio in acqua mentre inspiri.",
+      "Rimetti il viso in acqua ed espira piano facendo bolle."
+     ],
+     "q": "Da quale lato ti viene più naturale respirare?",
+     "c": "Tenendoti al bordo, fai dieci respirazioni laterali per lato."
+    },
+    "pt": {
+     "t": "Rodar a cabeça para respirar",
+     "g": "Roda a cabeça para o lado para inspirar, com uma orelha dentro de água.",
+     "p": [
+      "Roda a cabeça com o corpo quando o braço puxa para trás, sem a levantar.",
+      "Mantém uma lente dos óculos e uma orelha na água enquanto inspiras.",
+      "Volta a pôr a cara na água e expira devagar com bolhas."
+     ],
+     "q": "Para que lado te é mais natural respirar?",
+     "c": "Agarrado à borda, treina dez respirações laterais para cada lado."
+    },
+    "pt_BR": {
+     "t": "Girando a cabeça para respirar",
+     "g": "Gire a cabeça para o lado para puxar o ar, com uma orelha na água.",
+     "p": [
+      "Gire a cabeça junto com o corpo enquanto o braço puxa, sem levantar.",
+      "Deixe uma lente dos óculos e uma orelha na água ao respirar.",
+      "Volte o rosto para a água e solte o ar devagar com bolhas."
+     ],
+     "q": "Para qual lado é mais natural você respirar?",
+     "c": "Segurando na borda, treine dez respirações laterais para cada lado."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing every two strokes",
+     "g": "Use a simple pattern to find a relaxed freestyle rhythm.",
+     "p": [
+      "Breathe every second arm stroke, always to your favourite side.",
+      "Breathe out steadily while your face is down so you are ready to inhale.",
+      "A regular rhythm keeps you calm and stops you running out of air."
+     ],
+     "q": "Does breathing every two strokes feel too often, too rare or just right?",
+     "c": "Swim three short stretches breathing every two strokes, resting in between."
+    },
+    "de": {
+     "t": "Atmen bei jedem zweiten Zug",
+     "g": "Mit einem einfachen Muster findest du einen entspannten Kraulrhythmus.",
+     "p": [
+      "Bei jedem zweiten Armzug atmen, immer zur Lieblingsseite.",
+      "Gleichmäßig ausatmen, solange das Gesicht unten ist, dann bist du bereit zum Einatmen.",
+      "Ein fester Rhythmus hält dich ruhig, und die Luft wird nicht knapp."
+     ],
+     "q": "Fühlt sich Atmen alle zwei Züge zu oft, zu selten oder genau richtig an?",
+     "c": "Schwimm drei kurze Strecken mit Atmung alle zwei Züge und Pausen dazwischen."
+    },
+    "es": {
+     "t": "Respirar cada dos brazadas",
+     "g": "Usa un patrón sencillo para encontrar un ritmo de crol relajado.",
+     "p": [
+      "Respira cada dos brazadas, siempre hacia tu lado favorito.",
+      "Suelta el aire de forma constante con la cara abajo para estar listo para inspirar.",
+      "Un ritmo regular te mantiene tranquilo y evita que te quedes sin aire."
+     ],
+     "q": "¿Respirar cada dos brazadas te parece demasiado, poco o justo?",
+     "c": "Nada tres tramos cortos respirando cada dos brazadas, con descansos entre ellos."
+    },
+    "fr": {
+     "t": "Respirer tous les deux temps",
+     "g": "Utilise un schéma simple pour trouver un rythme de crawl détendu.",
+     "p": [
+      "Respire tous les deux mouvements de bras, toujours du côté que tu préfères.",
+      "Expire régulièrement visage dans l'eau pour être prêt à inspirer.",
+      "Un rythme régulier te garde calme et t'évite d'être à court d'air."
+     ],
+     "q": "Respirer tous les deux temps, c'est trop souvent, pas assez ou parfait pour toi ?",
+     "c": "Nage trois petits trajets en respirant tous les deux temps, avec des pauses."
+    },
+    "it": {
+     "t": "Respirare ogni due bracciate",
+     "g": "Usa uno schema semplice per trovare un ritmo rilassato a stile libero.",
+     "p": [
+      "Respira ogni due bracciate, sempre dal tuo lato preferito.",
+      "Espira con costanza mentre il viso è in acqua, così sei pronto a inspirare.",
+      "Un ritmo regolare ti tiene calmo e non ti lascia senza fiato."
+     ],
+     "q": "Respirare ogni due bracciate ti sembra troppo spesso, troppo poco o giusto?",
+     "c": "Nuota tre tratti brevi respirando ogni due bracciate, con pause in mezzo."
+    },
+    "pt": {
+     "t": "Respirar a cada duas braçadas",
+     "g": "Usa um padrão simples para encontrar um ritmo de crol descontraído.",
+     "p": [
+      "Respira a cada duas braçadas, sempre para o teu lado preferido.",
+      "Expira de forma contínua com a cara na água para estares pronto a inspirar.",
+      "Um ritmo regular mantém-te calmo e evita que fiques sem ar."
+     ],
+     "q": "Respirar a cada duas braçadas parece-te demasiado, pouco ou o ideal?",
+     "c": "Nada três percursos curtos a respirar a cada duas braçadas, com pausas."
+    },
+    "pt_BR": {
+     "t": "Respirando a cada duas braçadas",
+     "g": "Use um padrão simples para achar um ritmo de crawl relaxado.",
+     "p": [
+      "Respire a cada duas braçadas, sempre para o seu lado favorito.",
+      "Solte o ar de forma contínua com o rosto na água para estar pronto para inspirar.",
+      "Um ritmo regular mantém você calmo e evita ficar sem fôlego."
+     ],
+     "q": "Respirar a cada duas braçadas parece demais, de menos ou na medida?",
+     "c": "Nade três trechos curtos respirando a cada duas braçadas, com pausas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Little goals for the first month",
+     "g": "Set friendly targets and notice your progress.",
+     "p": [
+      "Small goals, like one width without stopping, are easy to celebrate.",
+      "Write down what you can do today so you can see the change later.",
+      "Progress is not a straight line; good and slow days are both normal."
+     ],
+     "q": "What is one small swimming goal you would love to reach soon?",
+     "c": "Write three mini goals for the coming weeks and stick them on your fridge."
+    },
+    "de": {
+     "t": "Kleine Ziele für den ersten Monat",
+     "g": "Setz dir freundliche Ziele und bemerke deine Fortschritte.",
+     "p": [
+      "Kleine Ziele wie eine Breite ohne Pause lassen sich leicht feiern.",
+      "Notiere, was du heute kannst, damit du später die Veränderung siehst.",
+      "Fortschritt verläuft nicht gerade; gute und zähe Tage sind beide normal."
+     ],
+     "q": "Welches kleine Schwimmziel würdest du gern bald erreichen?",
+     "c": "Schreib drei Mini-Ziele für die nächsten Wochen auf und häng sie an den Kühlschrank."
+    },
+    "es": {
+     "t": "Pequeñas metas para el primer mes",
+     "g": "Ponte objetivos amables y fíjate en tus avances.",
+     "p": [
+      "Las metas pequeñas, como un ancho sin parar, son fáciles de celebrar.",
+      "Anota lo que sabes hacer hoy para ver el cambio más adelante.",
+      "El progreso no es una línea recta; los días buenos y los lentos son normales."
+     ],
+     "q": "¿Qué pequeña meta de natación te encantaría lograr pronto?",
+     "c": "Escribe tres minimetas para las próximas semanas y pégalas en la nevera."
+    },
+    "fr": {
+     "t": "Petits objectifs du premier mois",
+     "g": "Fixe-toi des objectifs bienveillants et remarque tes progrès.",
+     "p": [
+      "De petits objectifs, comme une largeur sans t'arrêter, se fêtent facilement.",
+      "Note ce que tu sais faire aujourd'hui pour voir le changement plus tard.",
+      "Le progrès n'est pas linéaire : les bons jours et les jours lents sont normaux."
+     ],
+     "q": "Quel petit objectif de natation aimerais-tu atteindre bientôt ?",
+     "c": "Écris trois mini-objectifs pour les semaines à venir et colle-les sur le frigo."
+    },
+    "it": {
+     "t": "Piccoli obiettivi per il primo mese",
+     "g": "Fissa traguardi gentili e accorgiti dei tuoi progressi.",
+     "p": [
+      "Obiettivi piccoli, come una vasca in larghezza senza fermarti, si festeggiano facilmente.",
+      "Scrivi cosa sai fare oggi per vedere il cambiamento più avanti.",
+      "Il progresso non è una linea retta: giorni buoni e giorni lenti sono normali."
+     ],
+     "q": "Quale piccolo obiettivo nel nuoto ti piacerebbe raggiungere presto?",
+     "c": "Scrivi tre mini obiettivi per le prossime settimane e attaccali al frigo."
+    },
+    "pt": {
+     "t": "Pequenas metas para o primeiro mês",
+     "g": "Define objetivos simpáticos e repara nos teus progressos.",
+     "p": [
+      "Metas pequenas, como uma largura sem parar, são fáceis de celebrar.",
+      "Escreve o que consegues fazer hoje para veres a mudança mais tarde.",
+      "O progresso não é uma linha reta; dias bons e dias lentos são normais."
+     ],
+     "q": "Que pequena meta de natação gostavas de alcançar em breve?",
+     "c": "Escreve três mini metas para as próximas semanas e cola-as no frigorífico."
+    },
+    "pt_BR": {
+     "t": "Pequenas metas para o primeiro mês",
+     "g": "Defina objetivos gentis e perceba seu progresso.",
+     "p": [
+      "Metas pequenas, como uma largura sem parar, são fáceis de comemorar.",
+      "Anote o que você consegue fazer hoje para ver a mudança depois.",
+      "Progresso não é linha reta; dias bons e dias lentos são normais."
+     ],
+     "q": "Qual pequena meta de natação você adoraria alcançar logo?",
+     "c": "Escreva três mini metas para as próximas semanas e cole na geladeira."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first weeks in water",
+     "g": "Look back at floating, gliding, kicking and breathing and pick what to practise.",
+     "p": [
+      "You learned to blow bubbles, float, stand up and glide from the wall.",
+      "You added the flutter kick, first freestyle arms and side breathing.",
+      "Choose one favourite skill and one tricky skill for the next weeks."
+     ],
+     "q": "Which skill from this month are you proudest of?",
+     "c": "In your next swim, do one round of every skill from this month, slowly."
+    },
+    "de": {
+     "t": "Rückblick: deine ersten Wochen",
+     "g": "Blick auf Treiben, Gleiten, Beinschlag und Atmen zurück und wähl, was du übst.",
+     "p": [
+      "Du hast geblubbert, getrieben, bist aufgestanden und vom Rand geglitten.",
+      "Dazu kamen Beinschlag, erste Kraularme und Seitatmung.",
+      "Wähl eine Lieblingsübung und eine knifflige für die nächsten Wochen."
+     ],
+     "q": "Auf welche Fähigkeit aus diesem Monat bist du am stolzesten?",
+     "c": "Mach beim nächsten Schwimmen jede Übung dieses Monats einmal, ganz langsam."
+    },
+    "es": {
+     "t": "Repaso: tus primeras semanas en el agua",
+     "g": "Repasa flotación, deslizamiento, patada y respiración y elige qué practicar.",
+     "p": [
+      "Aprendiste a hacer burbujas, flotar, ponerte de pie y deslizarte desde la pared.",
+      "Sumaste la patada, los primeros brazos de crol y la respiración lateral.",
+      "Elige una habilidad favorita y otra difícil para las próximas semanas."
+     ],
+     "q": "¿De qué habilidad de este mes estás más orgulloso?",
+     "c": "En tu próximo baño, haz una ronda lenta de cada habilidad de este mes."
+    },
+    "fr": {
+     "t": "Bilan : tes premières semaines dans l'eau",
+     "g": "Fais le point sur flottaison, glisse, battements et respiration, et choisis quoi travailler.",
+     "p": [
+      "Tu as appris à faire des bulles, flotter, te relever et glisser depuis le mur.",
+      "Tu as ajouté le battement, les premiers bras de crawl et la respiration latérale.",
+      "Choisis une compétence préférée et une plus délicate pour les semaines à venir."
+     ],
+     "q": "De quelle compétence de ce mois es-tu le plus fier ?",
+     "c": "À ta prochaine séance, refais lentement chaque compétence du mois une fois."
+    },
+    "it": {
+     "t": "Ripasso: le prime settimane in acqua",
+     "g": "Ripensa a galleggiamento, scivolata, gambe e respirazione e scegli cosa allenare.",
+     "p": [
+      "Hai imparato a fare bolle, galleggiare, rialzarti e scivolare dal bordo.",
+      "Hai aggiunto la battuta di gambe, le prime bracciate e la respirazione laterale.",
+      "Scegli un'abilità preferita e una più difficile per le prossime settimane."
+     ],
+     "q": "Di quale abilità di questo mese sei più orgoglioso?",
+     "c": "Alla prossima nuotata ripeti piano una volta ogni abilità del mese."
+    },
+    "pt": {
+     "t": "Revisão: as primeiras semanas na água",
+     "g": "Revê flutuação, deslize, pernada e respiração e escolhe o que treinar.",
+     "p": [
+      "Aprendeste a fazer bolhas, flutuar, pôr-te de pé e deslizar a partir da parede.",
+      "Juntaste a pernada, os primeiros braços de crol e a respiração lateral.",
+      "Escolhe uma competência preferida e outra difícil para as próximas semanas."
+     ],
+     "q": "De que competência deste mês te orgulhas mais?",
+     "c": "Na próxima ida à piscina, faz devagar uma ronda de cada competência do mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: suas primeiras semanas na água",
+     "g": "Revise flutuação, deslize, pernada e respiração e escolha o que praticar.",
+     "p": [
+      "Você aprendeu a fazer bolhas, boiar, ficar de pé e deslizar a partir da parede.",
+      "Somou a pernada, os primeiros braços de crawl e a respiração lateral.",
+      "Escolha uma habilidade favorita e uma difícil para as próximas semanas."
+     ],
+     "q": "De qual habilidade deste mês você mais se orgulha?",
+     "c": "No próximo treino, faça devagar uma rodada de cada habilidade do mês."
+    }
+   }
+  }
+ ]
+}

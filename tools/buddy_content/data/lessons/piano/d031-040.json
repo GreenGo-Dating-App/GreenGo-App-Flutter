@@ -1,0 +1,835 @@
+{
+ "topic": "piano",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharps and flats",
+     "g": "Understand black keys as raised or lowered versions of the white-key notes.",
+     "p": [
+      "A sharp (#) raises a note to the very next key on the right: C sharp is the black key just above C.",
+      "A flat (b) lowers a note to the very next key on the left: B flat is the black key just below B.",
+      "One black key has two names: C sharp and D flat are the same key, and the music decides which name is used."
+     ],
+     "q": "Did you know a black key could have two names?",
+     "c": "Play C, C sharp, D, D sharp, E naming each key, then go back down naming them as flats: E, E flat, D, D flat, C."
+    },
+    "de": {
+     "t": "Kreuze und Bs",
+     "g": "Schwarze Tasten als erhöhte oder erniedrigte Versionen der weißen Töne verstehen.",
+     "p": [
+      "Ein Kreuz (#) erhöht um die nächste Taste rechts und hängt -is an: Cis ist die schwarze Taste direkt über C.",
+      "Ein b erniedrigt um die nächste Taste links und hängt -es an: Des liegt direkt unter D, Es unter E, B unter H.",
+      "Eine schwarze Taste hat zwei Namen: Cis und Des sind dieselbe Taste, die Musik entscheidet, welcher gilt."
+     ],
+     "q": "Wusstest du, dass eine schwarze Taste zwei Namen haben kann?",
+     "c": "Spiel C, Cis, D, Dis, E und benenne jede Taste, dann abwärts mit b-Namen: E, Es, D, Des, C."
+    },
+    "es": {
+     "t": "Sostenidos y bemoles",
+     "g": "Entender las teclas negras como versiones elevadas o rebajadas de las notas blancas.",
+     "p": [
+      "Un sostenido (#) sube la nota a la tecla inmediata de la derecha: Do sostenido es la negra justo encima de Do.",
+      "Un bemol (b) baja la nota a la tecla inmediata de la izquierda: Si bemol es la negra justo debajo de Si.",
+      "Una tecla negra tiene dos nombres: Do sostenido y Re bemol son la misma, y la música decide cuál se usa."
+     ],
+     "q": "¿Sabías que una tecla negra puede tener dos nombres?",
+     "c": "Toca Do, Do#, Re, Re#, Mi diciendo cada nombre, y baja nombrándolas como bemoles: Mi, Mi bemol, Re, Re bemol, Do."
+    },
+    "fr": {
+     "t": "Dièses et bémols",
+     "g": "Comprendre les touches noires comme des notes blanches haussées ou baissées.",
+     "p": [
+      "Un dièse (#) hausse la note jusqu'à la touche voisine à droite : do dièse est la noire juste au-dessus de do.",
+      "Un bémol (b) baisse la note jusqu'à la touche voisine à gauche : si bémol est la noire juste en dessous de si.",
+      "Une touche noire a deux noms : do dièse et ré bémol sont la même touche, la musique décide lequel employer."
+     ],
+     "q": "Savais-tu qu'une touche noire pouvait avoir deux noms ?",
+     "c": "Joue do, do dièse, ré, ré dièse, mi en les nommant, puis redescends en bémols : mi, mi bémol, ré, ré bémol, do."
+    },
+    "it": {
+     "t": "Diesis e bemolle",
+     "g": "Capire i tasti neri come versioni alzate o abbassate delle note bianche.",
+     "p": [
+      "Il diesis (#) alza la nota fino al tasto subito a destra: Do diesis è il nero appena sopra il Do.",
+      "Il bemolle (b) abbassa la nota fino al tasto subito a sinistra: Si bemolle è il nero appena sotto il Si.",
+      "Un tasto nero ha due nomi: Do diesis e Re bemolle sono lo stesso tasto, decide la musica quale usare."
+     ],
+     "q": "Sapevi che un tasto nero può avere due nomi?",
+     "c": "Suona Do, Do diesis, Re, Re diesis, Mi dicendo i nomi, poi scendi chiamandoli bemolli: Mi, Mi bemolle, Re, Re bemolle, Do."
+    },
+    "pt": {
+     "t": "Sustenidos e bemóis",
+     "g": "Perceber as teclas pretas como versões subidas ou baixadas das notas brancas.",
+     "p": [
+      "Um sustenido (#) sobe a nota para a tecla logo à direita: dó sustenido é a preta logo acima do dó.",
+      "Um bemol (b) baixa a nota para a tecla logo à esquerda: si bemol é a preta logo abaixo do si.",
+      "Uma tecla preta tem dois nomes: dó sustenido e ré bemol são a mesma tecla, e a música decide qual se usa."
+     ],
+     "q": "Sabias que uma tecla preta pode ter dois nomes?",
+     "c": "Toca dó, dó#, ré, ré#, mi dizendo cada nome, e desce chamando-lhes bemóis: mi, mi bemol, ré, ré bemol, dó."
+    },
+    "pt_BR": {
+     "t": "Sustenidos e bemóis",
+     "g": "Entender as teclas pretas como versões elevadas ou abaixadas das notas brancas.",
+     "p": [
+      "Um sustenido (#) sobe a nota para a tecla logo à direita: dó sustenido é a preta logo acima do dó.",
+      "Um bemol (b) abaixa a nota para a tecla logo à esquerda: si bemol é a preta logo abaixo do si.",
+      "Uma tecla preta tem dois nomes: dó sustenido e ré bemol são a mesma tecla, e a música decide qual usar."
+     ],
+     "q": "Você sabia que uma tecla preta pode ter dois nomes?",
+     "c": "Toque dó, dó#, ré, ré#, mi dizendo cada nome, e desça chamando de bemóis: mi, mi bemol, ré, ré bemol, dó."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Half steps and whole steps",
+     "g": "Measure the distances between keys, the building blocks of scales and chords.",
+     "p": [
+      "A half step is the distance from one key to the very next key, black or white, with nothing in between.",
+      "A whole step is two half steps: there is exactly one key in between, like C to D.",
+      "E to F and B to C are half steps between white keys, because there is no black key between them."
+     ],
+     "q": "Can you hear the difference between a half step and a whole step?",
+     "c": "From middle C, play only half steps up to the next C (12 keys), then only whole steps, and count how many you need."
+    },
+    "de": {
+     "t": "Halbtöne und Ganztöne",
+     "g": "Die Abstände zwischen den Tasten messen, die Bausteine von Tonleitern und Akkorden.",
+     "p": [
+      "Ein Halbton ist der Abstand zur direkt benachbarten Taste, schwarz oder weiß, ohne Taste dazwischen.",
+      "Ein Ganzton sind zwei Halbtöne: Genau eine Taste liegt dazwischen, wie von C nach D.",
+      "E-F und H-C sind Halbtöne zwischen weißen Tasten, denn dort liegt keine schwarze Taste dazwischen."
+     ],
+     "q": "Hörst du den Unterschied zwischen Halbton und Ganzton?",
+     "c": "Spiel vom mittleren C nur Halbtöne bis zum nächsten C (12 Tasten), dann nur Ganztöne, und zähl, wie viele du brauchst."
+    },
+    "es": {
+     "t": "Semitonos y tonos",
+     "g": "Medir las distancias entre teclas, los ladrillos de las escalas y los acordes.",
+     "p": [
+      "Un semitono es la distancia de una tecla a la inmediata, negra o blanca, sin nada en medio.",
+      "Un tono son dos semitonos: hay exactamente una tecla en medio, como de Do a Re.",
+      "Mi-Fa y Si-Do son semitonos entre teclas blancas, porque no hay ninguna negra entre ellas."
+     ],
+     "q": "¿Oyes la diferencia entre un semitono y un tono?",
+     "c": "Desde el Do central, sube solo por semitonos hasta el siguiente Do (12 teclas) y luego solo por tonos; cuenta cuántos necesitas."
+    },
+    "fr": {
+     "t": "Demi-tons et tons",
+     "g": "Mesurer les distances entre les touches, les briques des gammes et des accords.",
+     "p": [
+      "Un demi-ton est la distance d'une touche à la touche voisine, noire ou blanche, sans rien entre les deux.",
+      "Un ton vaut deux demi-tons : il y a exactement une touche entre les deux, comme de do à ré.",
+      "Mi-fa et si-do sont des demi-tons entre touches blanches, car aucune noire ne les sépare."
+     ],
+     "q": "Entends-tu la différence entre un demi-ton et un ton ?",
+     "c": "Depuis le do central, monte seulement par demi-tons jusqu'au do suivant (12 touches), puis par tons ; compte combien il en faut."
+    },
+    "it": {
+     "t": "Semitoni e toni",
+     "g": "Misurare le distanze tra i tasti, i mattoni di scale e accordi.",
+     "p": [
+      "Un semitono è la distanza da un tasto a quello subito accanto, nero o bianco, senza nulla in mezzo.",
+      "Un tono vale due semitoni: c'è esattamente un tasto in mezzo, come da Do a Re.",
+      "Mi-Fa e Si-Do sono semitoni tra tasti bianchi, perché tra loro non c'è nessun tasto nero."
+     ],
+     "q": "Senti la differenza tra un semitono e un tono?",
+     "c": "Dal Do centrale sali solo per semitoni fino al Do successivo (12 tasti), poi solo per toni, e conta quanti ne servono."
+    },
+    "pt": {
+     "t": "Meios-tons e tons",
+     "g": "Medir as distâncias entre teclas, os tijolos das escalas e dos acordes.",
+     "p": [
+      "Um meio-tom é a distância de uma tecla para a tecla imediatamente ao lado, preta ou branca, sem nada no meio.",
+      "Um tom são dois meios-tons: há exatamente uma tecla no meio, como de dó para ré.",
+      "Mi-fá e si-dó são meios-tons entre teclas brancas, porque não há nenhuma preta entre elas."
+     ],
+     "q": "Consegues ouvir a diferença entre um meio-tom e um tom?",
+     "c": "A partir do dó central, sobe só por meios-tons até ao dó seguinte (12 teclas) e depois só por tons; conta quantos precisas."
+    },
+    "pt_BR": {
+     "t": "Semitons e tons",
+     "g": "Medir as distâncias entre as teclas, os tijolos das escalas e dos acordes.",
+     "p": [
+      "Um semitom é a distância de uma tecla até a vizinha imediata, preta ou branca, sem nada no meio.",
+      "Um tom são dois semitons: há exatamente uma tecla no meio, como de dó para ré.",
+      "Mi-fá e si-dó são semitons entre teclas brancas, porque não há nenhuma preta entre elas."
+     ],
+     "q": "Você consegue ouvir a diferença entre um semitom e um tom?",
+     "c": "A partir do dó central, suba só por semitons até o próximo dó (12 teclas) e depois só por tons; conte quantos precisa."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The G five-finger position",
+     "g": "Move both hands to G position and read pieces in a new place on the keyboard.",
+     "p": [
+      "Right hand: thumb on the G above middle C, fingers on G A B C D.",
+      "Left hand: finger 5 on the G below middle C, then A B C D, with the thumb on D.",
+      "New position, same shape: keep the hand rounded and let the notes on the staff guide your fingers."
+     ],
+     "q": "How does it feel to leave the safe C position for the first time?",
+     "c": "In G position play G A B C D and back with each hand, then Ode to Joy starting on B instead of E."
+    },
+    "de": {
+     "t": "Die G-Fünftonlage",
+     "g": "Beide Hände in die G-Lage bringen und Stücke an einer neuen Stelle der Tastatur lesen.",
+     "p": [
+      "Rechte Hand: Daumen auf das G über dem mittleren C, Finger auf G A H C D.",
+      "Linke Hand: Finger 5 auf das G unter dem mittleren C, dann A H C D, der Daumen auf D.",
+      "Neue Lage, gleiche Form: Halt die Hand rund und lass die Noten im System deine Finger führen."
+     ],
+     "q": "Wie fühlt es sich an, die sichere C-Lage zum ersten Mal zu verlassen?",
+     "c": "Spiel in der G-Lage mit jeder Hand G A H C D und zurück, dann die Ode an die Freude ab H statt ab E."
+    },
+    "es": {
+     "t": "La posición de cinco dedos en Sol",
+     "g": "Llevar las dos manos a la posición de Sol y leer piezas en otra zona del teclado.",
+     "p": [
+      "Mano derecha: pulgar en el Sol encima del Do central, dedos en Sol La Si Do Re.",
+      "Mano izquierda: dedo 5 en el Sol bajo el Do central, luego La Si Do Re, con el pulgar en Re.",
+      "Posición nueva, misma forma: mano redondeada y que las notas del pentagrama guíen tus dedos."
+     ],
+     "q": "¿Qué se siente al dejar por primera vez la cómoda posición de Do?",
+     "c": "En posición de Sol toca Sol La Si Do Re y vuelta con cada mano, y luego el Himno a la alegría empezando en Si."
+    },
+    "fr": {
+     "t": "La position de sol",
+     "g": "Placer les deux mains en position de sol et lire des pièces à un nouvel endroit du clavier.",
+     "p": [
+      "Main droite : pouce sur le sol au-dessus du do central, doigts sur sol la si do ré.",
+      "Main gauche : doigt 5 sur le sol sous le do central, puis la si do ré, le pouce sur ré.",
+      "Nouvelle position, même forme : main arrondie, et laisse les notes de la portée guider tes doigts."
+     ],
+     "q": "Qu'est-ce que ça fait de quitter pour la première fois la position de do ?",
+     "c": "En position de sol, joue sol la si do ré et retour à chaque main, puis l'Hymne à la joie en commençant sur si."
+    },
+    "it": {
+     "t": "La posizione di Sol",
+     "g": "Portare entrambe le mani in posizione di Sol e leggere brani in un nuovo punto della tastiera.",
+     "p": [
+      "Mano destra: pollice sul Sol sopra il Do centrale, dita su Sol La Si Do Re.",
+      "Mano sinistra: dito 5 sul Sol sotto il Do centrale, poi La Si Do Re, con il pollice sul Re.",
+      "Nuova posizione, stessa forma: mano rotonda, e lascia che le note sul pentagramma guidino le dita."
+     ],
+     "q": "Che effetto fa lasciare per la prima volta la comoda posizione di Do?",
+     "c": "In posizione di Sol suona Sol La Si Do Re e ritorno con ogni mano, poi l'Inno alla gioia partendo dal Si."
+    },
+    "pt": {
+     "t": "A posição de sol",
+     "g": "Levar as duas mãos para a posição de sol e ler peças noutra zona do teclado.",
+     "p": [
+      "Mão direita: polegar no sol acima do dó central, dedos em sol lá si dó ré.",
+      "Mão esquerda: dedo 5 no sol abaixo do dó central, depois lá si dó ré, com o polegar no ré.",
+      "Posição nova, mesma forma: mão arredondada, e deixa as notas da pauta guiar os dedos."
+     ],
+     "q": "Como é sair pela primeira vez da confortável posição de dó?",
+     "c": "Na posição de sol toca sol lá si dó ré e volta com cada mão, e depois o Hino da Alegria a começar no si."
+    },
+    "pt_BR": {
+     "t": "A posição de sol",
+     "g": "Levar as duas mãos para a posição de sol e ler peças em outra região do teclado.",
+     "p": [
+      "Mão direita: polegar no sol acima do dó central, dedos em sol lá si dó ré.",
+      "Mão esquerda: dedo 5 no sol abaixo do dó central, depois lá si dó ré, com o polegar no ré.",
+      "Posição nova, mesma forma: mão arredondada, e deixe as notas da pauta guiarem os dedos."
+     ],
+     "q": "Como é sair pela primeira vez da confortável posição de dó?",
+     "c": "Na posição de sol toque sol lá si dó ré e volte com cada mão, depois a Ode à Alegria começando no si."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eighth notes",
+     "g": "Count one-and and play two even notes on each beat.",
+     "p": [
+      "An eighth note has a flag, or is joined to others by a beam, and lasts half a beat.",
+      "Count 1 and 2 and 3 and 4 and: the numbers fall on the beat, the and falls exactly in between.",
+      "Keep the pairs even, like a clock ticking twice as fast, not long-short."
+     ],
+     "q": "Can you clap a steady pattern of two claps per beat?",
+     "c": "Count aloud 1 and 2 and and play C D on every beat, C D C D, for four bars without speeding up."
+    },
+    "de": {
+     "t": "Achtelnoten",
+     "g": "1-und zählen und auf jeden Schlag zwei gleichmäßige Töne spielen.",
+     "p": [
+      "Eine Achtelnote hat ein Fähnchen oder ist mit anderen durch einen Balken verbunden und dauert einen halben Schlag.",
+      "Zähl 1 und 2 und 3 und 4 und: Die Zahlen fallen auf den Schlag, das und genau in die Mitte.",
+      "Halt die Paare gleichmäßig, wie eine Uhr, die doppelt so schnell tickt, nicht lang-kurz."
+     ],
+     "q": "Kannst du gleichmäßig zweimal pro Schlag klatschen?",
+     "c": "Zähl laut 1 und 2 und und spiel auf jeden Schlag C D, C D C D, vier Takte lang ohne schneller zu werden."
+    },
+    "es": {
+     "t": "Corcheas",
+     "g": "Contar 1 y 2 y, y tocar dos notas iguales en cada pulso.",
+     "p": [
+      "La corchea tiene un corchete o va unida a otras por una barra, y dura medio pulso.",
+      "Cuenta 1 y 2 y 3 y 4 y: los números caen en el pulso y la y justo en medio.",
+      "Haz las parejas iguales, como un reloj que va el doble de rápido, no larga-corta."
+     ],
+     "q": "¿Puedes dar dos palmadas regulares por pulso?",
+     "c": "Cuenta en voz alta 1 y 2 y, y toca Do Re en cada pulso, Do Re Do Re, durante cuatro compases sin acelerar."
+    },
+    "fr": {
+     "t": "Les croches",
+     "g": "Compter 1 et 2 et, et jouer deux notes égales sur chaque temps.",
+     "p": [
+      "La croche a un crochet, ou est reliée à d'autres par une barre, et dure un demi-temps.",
+      "Compte 1 et 2 et 3 et 4 et : les chiffres tombent sur le temps, le et pile au milieu.",
+      "Garde les paires égales, comme une horloge qui battrait deux fois plus vite, pas longue-brève."
+     ],
+     "q": "Peux-tu frapper deux fois par temps de façon bien régulière ?",
+     "c": "Compte à voix haute 1 et 2 et, et joue do ré sur chaque temps, do ré do ré, pendant quatre mesures sans accélérer."
+    },
+    "it": {
+     "t": "Le crome",
+     "g": "Contare 1 e 2 e, e suonare due note uguali su ogni movimento.",
+     "p": [
+      "La croma ha una codetta, oppure è unita ad altre da una travatura, e dura mezzo movimento.",
+      "Conta 1 e 2 e 3 e 4 e: i numeri cadono sul movimento, la e esattamente a metà.",
+      "Tieni le coppie uguali, come un orologio che ticchetta il doppio più veloce, non lunga-breve."
+     ],
+     "q": "Riesci a battere le mani in modo regolare due volte per movimento?",
+     "c": "Conta ad alta voce 1 e 2 e, e suona Do Re su ogni movimento, Do Re Do Re, per quattro battute senza accelerare."
+    },
+    "pt": {
+     "t": "Colcheias",
+     "g": "Contar 1 e 2 e, e tocar duas notas iguais em cada tempo.",
+     "p": [
+      "A colcheia tem uma bandeirola, ou está unida a outras por uma barra, e dura meio tempo.",
+      "Conta 1 e 2 e 3 e 4 e: os números caem no tempo e o e fica mesmo a meio.",
+      "Mantém os pares iguais, como um relógio que bate duas vezes mais depressa, não longa-curta."
+     ],
+     "q": "Consegues bater palmas de forma regular duas vezes por tempo?",
+     "c": "Conta em voz alta 1 e 2 e, e toca dó ré em cada tempo, dó ré dó ré, durante quatro compassos sem acelerar."
+    },
+    "pt_BR": {
+     "t": "Colcheias",
+     "g": "Contar 1 e 2 e, e tocar duas notas iguais em cada tempo.",
+     "p": [
+      "A colcheia tem uma bandeirinha, ou fica unida a outras por uma barra, e dura meio tempo.",
+      "Conte 1 e 2 e 3 e 4 e: os números caem no tempo e o e fica bem no meio.",
+      "Mantenha os pares iguais, como um relógio batendo duas vezes mais rápido, não longa-curta."
+     ],
+     "q": "Você consegue bater palmas regulares duas vezes por tempo?",
+     "c": "Conte em voz alta 1 e 2 e, e toque dó ré em cada tempo, dó ré dó ré, por quatro compassos sem acelerar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dotted half notes",
+     "g": "Read and hold three-beat notes, the natural long note of 3/4 time.",
+     "p": [
+      "A dot after a note adds half of its value: a half note (2) plus a dot (1) equals 3 beats.",
+      "In 3/4 time a dotted half note fills the whole bar, so it often ends phrases in waltzes.",
+      "Keep counting 1 2 3 through the held note and release right as the next bar begins."
+     ],
+     "q": "Do you find it hard to hold long notes without letting go early?",
+     "c": "In 3/4, play C D E as quarters, then hold F as a dotted half; repeat four times, counting 1 2 3 aloud."
+    },
+    "de": {
+     "t": "Punktierte halbe Noten",
+     "g": "Noten mit drei Schlägen lesen und halten, die natürliche lange Note im 3/4-Takt.",
+     "p": [
+      "Ein Punkt hinter einer Note verlängert sie um die Hälfte: halbe Note (2) plus Punkt (1) ergibt 3 Schläge.",
+      "Im 3/4-Takt füllt die punktierte Halbe den ganzen Takt und beendet deshalb oft Phrasen in Walzern.",
+      "Zähl während der gehaltenen Note 1 2 3 weiter und lass genau zum neuen Takt los."
+     ],
+     "q": "Fällt es dir schwer, lange Noten zu halten, ohne zu früh loszulassen?",
+     "c": "Spiel im 3/4-Takt C D E als Viertel und halt F als punktierte Halbe; viermal, laut 1 2 3 zählend."
+    },
+    "es": {
+     "t": "Blancas con puntillo",
+     "g": "Leer y mantener notas de tres pulsos, la nota larga natural del compás de 3/4.",
+     "p": [
+      "El puntillo añade la mitad del valor: una blanca (2) más el puntillo (1) da 3 pulsos.",
+      "En 3/4 la blanca con puntillo llena todo el compás, por eso suele cerrar las frases de los valses.",
+      "Sigue contando 1 2 3 durante la nota larga y suéltala justo cuando empieza el compás siguiente."
+     ],
+     "q": "¿Te cuesta mantener las notas largas sin soltarlas antes de tiempo?",
+     "c": "En 3/4 toca Do Re Mi como negras y mantén Fa como blanca con puntillo; repite cuatro veces contando 1 2 3."
+    },
+    "fr": {
+     "t": "La blanche pointée",
+     "g": "Lire et tenir des notes de trois temps, la note longue naturelle de la mesure à 3/4.",
+     "p": [
+      "Un point après une note ajoute la moitié de sa valeur : blanche (2) plus point (1) égale 3 temps.",
+      "En 3/4, la blanche pointée remplit toute la mesure, c'est pourquoi elle termine souvent les phrases de valse.",
+      "Continue de compter 1 2 3 pendant la note tenue et relâche juste au début de la mesure suivante."
+     ],
+     "q": "As-tu du mal à tenir les notes longues sans les lâcher trop tôt ?",
+     "c": "En 3/4, joue do ré mi en noires puis tiens fa en blanche pointée ; recommence quatre fois en comptant 1 2 3."
+    },
+    "it": {
+     "t": "La minima puntata",
+     "g": "Leggere e tenere note di tre movimenti, la nota lunga naturale del tempo di 3/4.",
+     "p": [
+      "Il punto dopo una nota aggiunge metà del suo valore: minima (2) più punto (1) fa 3 movimenti.",
+      "In 3/4 la minima puntata riempie l'intera battuta, per questo spesso chiude le frasi dei valzer.",
+      "Continua a contare 1 2 3 durante la nota tenuta e rilasciala proprio all'inizio della battuta dopo."
+     ],
+     "q": "Ti è difficile tenere le note lunghe senza lasciarle troppo presto?",
+     "c": "In 3/4 suona Do Re Mi come semiminime, poi tieni il Fa come minima puntata; ripeti quattro volte contando 1 2 3."
+    },
+    "pt": {
+     "t": "Mínimas pontuadas",
+     "g": "Ler e segurar notas de três tempos, a nota longa natural do compasso 3/4.",
+     "p": [
+      "O ponto a seguir a uma nota acrescenta metade do valor: mínima (2) mais ponto (1) dá 3 tempos.",
+      "Em 3/4 a mínima pontuada enche o compasso todo, por isso fecha muitas vezes as frases das valsas.",
+      "Continua a contar 1 2 3 durante a nota longa e larga-a mesmo quando começa o compasso seguinte."
+     ],
+     "q": "Custa-te segurar as notas longas sem as largar antes do tempo?",
+     "c": "Em 3/4 toca dó ré mi como semínimas e segura o fá como mínima pontuada; repete quatro vezes contando 1 2 3."
+    },
+    "pt_BR": {
+     "t": "Mínimas pontuadas",
+     "g": "Ler e segurar notas de três tempos, a nota longa natural do compasso 3/4.",
+     "p": [
+      "O ponto depois de uma nota acrescenta metade do valor: mínima (2) mais ponto (1) dá 3 tempos.",
+      "Em 3/4 a mínima pontuada preenche o compasso inteiro, por isso costuma fechar as frases das valsas.",
+      "Continue contando 1 2 3 durante a nota longa e solte bem quando começar o próximo compasso."
+     ],
+     "q": "Você tem dificuldade de segurar notas longas sem soltar antes da hora?",
+     "c": "Em 3/4 toque dó ré mi como semínimas e segure o fá como mínima pontuada; repita quatro vezes contando 1 2 3."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ties and slurs",
+     "g": "Tell ties and slurs apart: one joins note lengths, the other shapes a phrase.",
+     "p": [
+      "A tie is a curved line joining two notes of the same pitch: play the first and hold it for both values.",
+      "A slur is a curved line over different notes: play them legato as one connected group.",
+      "At the end of a slur, lift the hand gently so the group ends softly, like the end of a word."
+     ],
+     "q": "Have you noticed curved lines in your music and wondered what they meant?",
+     "c": "Play C tied over two bars of 4/4 (hold 8 beats), then slur C D E F G legato and lift gently after G."
+    },
+    "de": {
+     "t": "Haltebögen und Bindebögen",
+     "g": "Haltebogen und Legatobogen unterscheiden: Einer verbindet Notenwerte, der andere formt eine Phrase.",
+     "p": [
+      "Ein Haltebogen verbindet zwei Noten gleicher Tonhöhe: Spiel die erste und halte sie für beide Werte.",
+      "Ein Bindebogen steht über verschiedenen Noten: Spiel sie legato als eine zusammenhängende Gruppe.",
+      "Am Ende eines Bindebogens hebst du die Hand sanft, damit die Gruppe leise endet, wie ein Wortende."
+     ],
+     "q": "Sind dir schon Bögen in deinen Noten aufgefallen, deren Sinn du nicht kanntest?",
+     "c": "Spiel ein C, über zwei 4/4-Takte gebunden (8 Schläge halten), dann C D E F G gebunden und heb nach G sanft ab."
+    },
+    "es": {
+     "t": "Ligaduras de prolongación y de expresión",
+     "g": "Distinguir las dos ligaduras: una une duraciones y la otra da forma a la frase.",
+     "p": [
+      "La ligadura de prolongación une dos notas iguales: tocas la primera y la mantienes la suma de ambas.",
+      "La ligadura de expresión abarca notas distintas: tócalas legato como un solo grupo unido.",
+      "Al final de la ligadura, levanta la mano con suavidad para que el grupo acabe suave, como el final de una palabra."
+     ],
+     "q": "¿Habías visto líneas curvas en la partitura sin saber qué significaban?",
+     "c": "Toca un Do ligado durante dos compases de 4/4 (8 pulsos) y luego Do Re Mi Fa Sol ligados, levantando suave tras Sol."
+    },
+    "fr": {
+     "t": "Liaisons de prolongation et d'expression",
+     "g": "Distinguer les deux liaisons : l'une additionne des durées, l'autre dessine une phrase.",
+     "p": [
+      "La liaison de prolongation relie deux notes de même hauteur : joue la première et tiens-la pour les deux durées.",
+      "La liaison d'expression couvre des notes différentes : joue-les legato, comme un seul groupe.",
+      "À la fin de la liaison, soulève doucement la main pour que le groupe finisse doucement, comme une fin de mot."
+     ],
+     "q": "As-tu remarqué des lignes courbes sur ta partition sans savoir ce qu'elles voulaient dire ?",
+     "c": "Joue un do lié sur deux mesures à 4/4 (8 temps), puis do ré mi fa sol liés, en soulevant doucement après sol."
+    },
+    "it": {
+     "t": "Legature di valore e di frase",
+     "g": "Distinguere le due legature: una somma le durate, l'altra dà forma alla frase.",
+     "p": [
+      "La legatura di valore unisce due note uguali: suoni la prima e la tieni per la somma dei due valori.",
+      "La legatura di frase copre note diverse: suonale legato come un unico gruppo.",
+      "Alla fine della legatura alza la mano dolcemente, così il gruppo finisce morbido, come la fine di una parola."
+     ],
+     "q": "Hai notato linee curve nei tuoi spartiti senza sapere cosa volessero dire?",
+     "c": "Suona un Do legato per due battute di 4/4 (8 movimenti), poi Do Re Mi Fa Sol legati, alzando piano dopo il Sol."
+    },
+    "pt": {
+     "t": "Ligaduras de prolongamento e de expressão",
+     "g": "Distinguir as duas ligaduras: uma soma durações e a outra dá forma à frase.",
+     "p": [
+      "A ligadura de prolongamento une duas notas iguais: tocas a primeira e seguras pela soma das duas.",
+      "A ligadura de expressão abrange notas diferentes: toca-as em legato, como um só grupo.",
+      "No fim da ligadura, levanta a mão suavemente para o grupo acabar suave, como o fim de uma palavra."
+     ],
+     "q": "Já reparaste em linhas curvas na partitura sem saber o que queriam dizer?",
+     "c": "Toca um dó ligado durante dois compassos de 4/4 (8 tempos) e depois dó ré mi fá sol ligados, levantando suave após o sol."
+    },
+    "pt_BR": {
+     "t": "Ligaduras de valor e de expressão",
+     "g": "Diferenciar as duas ligaduras: uma soma durações e a outra dá forma à frase.",
+     "p": [
+      "A ligadura de valor une duas notas iguais: você toca a primeira e segura pela soma das duas.",
+      "A ligadura de expressão abrange notas diferentes: toque-as em legato, como um só grupo.",
+      "No fim da ligadura, levante a mão com suavidade para o grupo terminar leve, como o fim de uma palavra."
+     ],
+     "q": "Você já viu linhas curvas na partitura sem saber o que significavam?",
+     "c": "Toque um dó ligado por dois compassos de 4/4 (8 tempos) e depois dó ré mi fá sol ligados, levantando suave após o sol."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phrasing like singing",
+     "g": "Shape music into phrases and breathe between them, as a singer would.",
+     "p": [
+      "A phrase is a musical sentence, often 2 or 4 bars long, usually marked by a slur.",
+      "Most phrases grow a little towards their high point and relax at the end.",
+      "Between phrases, take a tiny breath: lift the hand slightly without losing the beat."
+     ],
+     "q": "Do you ever sing along to the melodies you play?",
+     "c": "Sing the first line of Ode to Joy, notice where you breathe, then play it with a small lift at the same place."
+    },
+    "de": {
+     "t": "Phrasieren wie Singen",
+     "g": "Musik in Phrasen gliedern und dazwischen atmen, wie es ein Sänger tun würde.",
+     "p": [
+      "Eine Phrase ist ein musikalischer Satz, oft 2 oder 4 Takte lang, meist durch einen Bogen markiert.",
+      "Die meisten Phrasen wachsen etwas zu ihrem Höhepunkt hin und entspannen sich am Ende.",
+      "Zwischen Phrasen nimmst du einen kleinen Atemzug: Hand leicht heben, ohne den Puls zu verlieren."
+     ],
+     "q": "Singst du manchmal die Melodien mit, die du spielst?",
+     "c": "Sing die erste Zeile der Ode an die Freude, merk dir, wo du atmest, und spiel sie mit kleinem Absetzen an derselben Stelle."
+    },
+    "es": {
+     "t": "Fraseo como al cantar",
+     "g": "Dar forma a la música en frases y respirar entre ellas, como haría un cantante.",
+     "p": [
+      "Una frase es una oración musical, a menudo de 2 o 4 compases, y suele marcarse con una ligadura.",
+      "La mayoría de las frases crecen un poco hacia su punto más alto y se relajan al final.",
+      "Entre frases toma una pequeña respiración: levanta la mano un poco sin perder el pulso."
+     ],
+     "q": "¿Cantas a veces las melodías que tocas?",
+     "c": "Canta la primera frase del Himno a la alegría, fíjate dónde respiras y tócala levantando un poco la mano en ese punto."
+    },
+    "fr": {
+     "t": "Phraser comme on chante",
+     "g": "Organiser la musique en phrases et respirer entre elles, comme le ferait un chanteur.",
+     "p": [
+      "Une phrase est une sorte de phrase parlée en musique, souvent de 2 ou 4 mesures, en général sous une liaison.",
+      "La plupart des phrases grandissent un peu vers leur point culminant puis se détendent à la fin.",
+      "Entre deux phrases, prends une petite respiration : soulève légèrement la main sans perdre la pulsation."
+     ],
+     "q": "Chantes-tu parfois les mélodies que tu joues ?",
+     "c": "Chante la première ligne de l'Hymne à la joie, repère où tu respires, puis joue-la en soulevant la main au même endroit."
+    },
+    "it": {
+     "t": "Fraseggiare come cantando",
+     "g": "Dare forma alla musica in frasi e respirare tra l'una e l'altra, come farebbe un cantante.",
+     "p": [
+      "Una frase è una proposizione musicale, spesso di 2 o 4 battute, di solito sotto una legatura.",
+      "La maggior parte delle frasi cresce un po' verso il punto culminante e si rilassa alla fine.",
+      "Tra le frasi prendi un piccolo respiro: alza leggermente la mano senza perdere la pulsazione."
+     ],
+     "q": "Ti capita di cantare le melodie che suoni?",
+     "c": "Canta la prima riga dell'Inno alla gioia, nota dove respiri e suonala alzando un po' la mano nello stesso punto."
+    },
+    "pt": {
+     "t": "Fraseado como quem canta",
+     "g": "Organizar a música em frases e respirar entre elas, como faria um cantor.",
+     "p": [
+      "Uma frase é uma oração musical, muitas vezes de 2 ou 4 compassos, normalmente marcada por uma ligadura.",
+      "A maioria das frases cresce um pouco até ao seu ponto mais alto e relaxa no fim.",
+      "Entre frases faz uma pequena respiração: levanta ligeiramente a mão sem perder a pulsação."
+     ],
+     "q": "Costumas cantar as melodias que tocas?",
+     "c": "Canta a primeira frase do Hino da Alegria, repara onde respiras e toca-a levantando um pouco a mão nesse ponto."
+    },
+    "pt_BR": {
+     "t": "Fraseado como quem canta",
+     "g": "Organizar a música em frases e respirar entre elas, como um cantor faria.",
+     "p": [
+      "Uma frase é uma oração musical, muitas vezes de 2 ou 4 compassos, geralmente marcada por uma ligadura.",
+      "A maioria das frases cresce um pouco até o ponto mais alto e relaxa no final.",
+      "Entre as frases, faça uma pequena respiração: levante um pouco a mão sem perder a pulsação."
+     ],
+     "q": "Você costuma cantar as melodias que toca?",
+     "c": "Cante a primeira frase da Ode à Alegria, perceba onde respira e toque levantando um pouco a mão nesse ponto."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "C major scale, right hand",
+     "g": "Play a one-octave C major scale in the right hand with thumb-under fingering.",
+     "p": [
+      "Fingering up: 1 2 3, then the thumb passes under to F, then 1 2 3 4 5 to the top C.",
+      "Coming down: 5 4 3 2 1, then finger 3 crosses over the thumb onto E, then 3 2 1.",
+      "Start moving the thumb under early, while finger 3 plays E, so the wrist stays level and the sound smooth."
+     ],
+     "q": "Have you ever played a scale before, maybe on another instrument?",
+     "c": "Play the C scale up and down with the right hand 5 times slowly, saying the fingering aloud."
+    },
+    "de": {
+     "t": "C-Dur-Tonleiter, rechte Hand",
+     "g": "Eine C-Dur-Tonleiter über eine Oktave mit Daumenuntersatz rechts spielen.",
+     "p": [
+      "Fingersatz aufwärts: 1 2 3, dann geht der Daumen unter auf F, dann 1 2 3 4 5 bis zum oberen C.",
+      "Abwärts: 5 4 3 2 1, dann greift der 3. Finger über den Daumen auf E, dann 3 2 1.",
+      "Bring den Daumen früh unter, während der 3. Finger E spielt, damit das Handgelenk ruhig und der Klang weich bleibt."
+     ],
+     "q": "Hast du schon mal eine Tonleiter gespielt, vielleicht auf einem anderen Instrument?",
+     "c": "Spiel die C-Dur-Tonleiter rechts fünfmal langsam auf und ab und sag den Fingersatz laut."
+    },
+    "es": {
+     "t": "Escala de Do mayor, mano derecha",
+     "g": "Tocar una octava de la escala de Do mayor con la derecha, pasando el pulgar.",
+     "p": [
+      "Digitación subiendo: 1 2 3, el pulgar pasa por debajo hasta Fa y luego 1 2 3 4 5 hasta el Do de arriba.",
+      "Bajando: 5 4 3 2 1, luego el dedo 3 cruza por encima del pulgar hasta Mi, y 3 2 1.",
+      "Empieza a llevar el pulgar por debajo pronto, mientras el 3 toca Mi, para que la muñeca no salte y suene ligado."
+     ],
+     "q": "¿Habías tocado alguna escala antes, quizá en otro instrumento?",
+     "c": "Toca la escala de Do subiendo y bajando con la derecha 5 veces despacio, diciendo la digitación en voz alta."
+    },
+    "fr": {
+     "t": "Gamme de do majeur, main droite",
+     "g": "Jouer la gamme de do majeur sur une octave à la main droite avec le passage du pouce.",
+     "p": [
+      "Doigté en montant : 1 2 3, le pouce passe dessous sur fa, puis 1 2 3 4 5 jusqu'au do aigu.",
+      "En descendant : 5 4 3 2 1, puis le 3e doigt passe par-dessus le pouce sur mi, puis 3 2 1.",
+      "Prépare le passage du pouce tôt, pendant que le 3 joue mi, pour garder le poignet stable et le son lié."
+     ],
+     "q": "As-tu déjà joué une gamme, peut-être sur un autre instrument ?",
+     "c": "Joue la gamme de do en montant et en descendant à la main droite 5 fois lentement, en disant le doigté."
+    },
+    "it": {
+     "t": "Scala di Do maggiore, mano destra",
+     "g": "Suonare la scala di Do maggiore su un'ottava con la destra, con il passaggio del pollice.",
+     "p": [
+      "Diteggiatura in salita: 1 2 3, il pollice passa sotto sul Fa, poi 1 2 3 4 5 fino al Do acuto.",
+      "In discesa: 5 4 3 2 1, poi il 3 scavalca il pollice sul Mi, poi 3 2 1.",
+      "Prepara presto il passaggio del pollice, mentre il 3 suona il Mi, così il polso resta fermo e il suono legato."
+     ],
+     "q": "Hai mai suonato una scala, magari su un altro strumento?",
+     "c": "Suona la scala di Do in salita e discesa con la destra 5 volte lentamente, dicendo la diteggiatura ad alta voce."
+    },
+    "pt": {
+     "t": "Escala de dó maior, mão direita",
+     "g": "Tocar uma oitava da escala de dó maior com a mão direita, passando o polegar.",
+     "p": [
+      "Dedilhação a subir: 1 2 3, o polegar passa por baixo para o fá e depois 1 2 3 4 5 até ao dó de cima.",
+      "A descer: 5 4 3 2 1, depois o dedo 3 cruza por cima do polegar até ao mi, e 3 2 1.",
+      "Começa a levar o polegar por baixo cedo, enquanto o 3 toca o mi, para o pulso não saltar e soar ligado."
+     ],
+     "q": "Já alguma vez tocaste uma escala, talvez noutro instrumento?",
+     "c": "Toca a escala de dó a subir e a descer com a direita 5 vezes devagar, dizendo a dedilhação em voz alta."
+    },
+    "pt_BR": {
+     "t": "Escala de dó maior, mão direita",
+     "g": "Tocar uma oitava da escala de dó maior com a mão direita, passando o polegar.",
+     "p": [
+      "Dedilhado subindo: 1 2 3, o polegar passa por baixo até o fá e depois 1 2 3 4 5 até o dó de cima.",
+      "Descendo: 5 4 3 2 1, depois o dedo 3 cruza por cima do polegar até o mi, e 3 2 1.",
+      "Comece a levar o polegar por baixo cedo, enquanto o 3 toca o mi, para o punho não pular e soar ligado."
+     ],
+     "q": "Você já tocou alguma escala, talvez em outro instrumento?",
+     "c": "Toque a escala de dó subindo e descendo com a direita 5 vezes devagar, falando o dedilhado em voz alta."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "C major scale, left hand",
+     "g": "Play the C major scale in the left hand, crossing finger 3 over the thumb.",
+     "p": [
+      "Fingering up: 5 4 3 2 1 on C D E F G, then finger 3 crosses over the thumb onto A, then 2 1 on B and C.",
+      "Coming down: 1 2 on C and B, the thumb passes under to G, then 2 3 4 5 down to C.",
+      "Keep the crossing low and close to the keys, with no wrist twist and no accent on the thumb."
+     ],
+     "q": "Does the left-hand scale feel like a mirror image of the right-hand one?",
+     "c": "Play the C scale up and down with the left hand 5 times slowly, listening for an even, smooth line."
+    },
+    "de": {
+     "t": "C-Dur-Tonleiter, linke Hand",
+     "g": "Die C-Dur-Tonleiter links spielen und dabei den 3. Finger über den Daumen setzen.",
+     "p": [
+      "Aufwärts: 5 4 3 2 1 auf C D E F G, dann geht der 3. Finger über den Daumen auf A, dann 2 1 auf H und C.",
+      "Abwärts: 1 2 auf C und H, der Daumen geht unter auf G, dann 2 3 4 5 bis zum C.",
+      "Halt das Übersetzen flach und nah an den Tasten, ohne das Handgelenk zu drehen und ohne Daumenakzent."
+     ],
+     "q": "Fühlt sich die Tonleiter links wie ein Spiegelbild der rechten an?",
+     "c": "Spiel die C-Dur-Tonleiter links fünfmal langsam auf und ab und hör auf eine gleichmäßige, weiche Linie."
+    },
+    "es": {
+     "t": "Escala de Do mayor, mano izquierda",
+     "g": "Tocar la escala de Do mayor con la izquierda, cruzando el dedo 3 por encima del pulgar.",
+     "p": [
+      "Subiendo: 5 4 3 2 1 en Do Re Mi Fa Sol, el 3 cruza sobre el pulgar hasta La, y 2 1 en Si y Do.",
+      "Bajando: 1 2 en Do y Si, el pulgar pasa por debajo hasta Sol y luego 2 3 4 5 hasta Do.",
+      "Haz el cruce bajo y cerca de las teclas, sin girar la muñeca y sin acentuar el pulgar."
+     ],
+     "q": "¿Sientes la escala de la izquierda como un espejo de la derecha?",
+     "c": "Toca la escala de Do subiendo y bajando con la izquierda 5 veces despacio, buscando una línea pareja y ligada."
+    },
+    "fr": {
+     "t": "Gamme de do majeur, main gauche",
+     "g": "Jouer la gamme de do majeur à la main gauche en passant le 3e doigt par-dessus le pouce.",
+     "p": [
+      "En montant : 5 4 3 2 1 sur do ré mi fa sol, puis le 3 passe par-dessus le pouce sur la, puis 2 1 sur si et do.",
+      "En descendant : 1 2 sur do et si, le pouce passe dessous sur sol, puis 2 3 4 5 jusqu'à do.",
+      "Garde le passage bas et près des touches, sans tourner le poignet ni accentuer le pouce."
+     ],
+     "q": "La gamme à la main gauche te semble-t-elle le reflet de celle de droite ?",
+     "c": "Joue la gamme de do en montant et en descendant à la main gauche 5 fois lentement, pour une ligne égale et liée."
+    },
+    "it": {
+     "t": "Scala di Do maggiore, mano sinistra",
+     "g": "Suonare la scala di Do maggiore con la sinistra, passando il 3 sopra il pollice.",
+     "p": [
+      "In salita: 5 4 3 2 1 su Do Re Mi Fa Sol, poi il 3 scavalca il pollice sul La, poi 2 1 su Si e Do.",
+      "In discesa: 1 2 su Do e Si, il pollice passa sotto sul Sol, poi 2 3 4 5 fino al Do.",
+      "Tieni il passaggio basso e vicino ai tasti, senza ruotare il polso e senza accentare il pollice."
+     ],
+     "q": "La scala con la sinistra ti sembra lo specchio di quella con la destra?",
+     "c": "Suona la scala di Do in salita e discesa con la sinistra 5 volte lentamente, cercando una linea uniforme e legata."
+    },
+    "pt": {
+     "t": "Escala de dó maior, mão esquerda",
+     "g": "Tocar a escala de dó maior com a mão esquerda, cruzando o dedo 3 por cima do polegar.",
+     "p": [
+      "A subir: 5 4 3 2 1 em dó ré mi fá sol, o 3 cruza por cima do polegar até ao lá, e 2 1 no si e no dó.",
+      "A descer: 1 2 no dó e no si, o polegar passa por baixo até ao sol e depois 2 3 4 5 até ao dó.",
+      "Faz o cruzamento baixo e perto das teclas, sem rodar o pulso e sem acentuar o polegar."
+     ],
+     "q": "Sentes a escala da esquerda como um espelho da direita?",
+     "c": "Toca a escala de dó a subir e a descer com a esquerda 5 vezes devagar, procurando uma linha igual e ligada."
+    },
+    "pt_BR": {
+     "t": "Escala de dó maior, mão esquerda",
+     "g": "Tocar a escala de dó maior com a mão esquerda, cruzando o dedo 3 por cima do polegar.",
+     "p": [
+      "Subindo: 5 4 3 2 1 em dó ré mi fá sol, o 3 cruza por cima do polegar até o lá, e 2 1 no si e no dó.",
+      "Descendo: 1 2 no dó e no si, o polegar passa por baixo até o sol e depois 2 3 4 5 até o dó.",
+      "Faça o cruzamento baixo e perto das teclas, sem girar o punho e sem acentuar o polegar."
+     ],
+     "q": "Você sente a escala da esquerda como um espelho da direita?",
+     "c": "Toque a escala de dó subindo e descendo com a esquerda 5 vezes devagar, buscando uma linha uniforme e ligada."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "C major scale, hands together",
+     "g": "Coordinate the two different scale fingerings slowly, hands together.",
+     "p": [
+      "The hands cross at different moments: going up, the right thumb passes under at F, the left 3 crosses at A.",
+      "Going up, both hands share a finger, 3, only on E and A; elsewhere they differ.",
+      "Go very slowly, even one note per click at 50, and stop to check each crossing point."
+     ],
+     "q": "Which crossing feels the most awkward when both hands play?",
+     "c": "Play the C scale hands together, one octave up and down, three times at a slow tempo without stopping."
+    },
+    "de": {
+     "t": "C-Dur-Tonleiter beidhändig",
+     "g": "Die zwei unterschiedlichen Tonleiter-Fingersätze langsam beidhändig koordinieren.",
+     "p": [
+      "Die Hände wechseln zu verschiedenen Zeiten: aufwärts geht rechts der Daumen bei F unter, links setzt der 3. bei A über.",
+      "Aufwärts spielen beide Hände nur auf E und A denselben Finger, den 3., sonst sind sie verschieden.",
+      "Geh ganz langsam, ruhig ein Ton pro Klick bei 50, und halte an jedem Übergang an, um ihn zu prüfen."
+     ],
+     "q": "Welcher Übergang fühlt sich beidhändig am ungeschicktesten an?",
+     "c": "Spiel die C-Dur-Tonleiter beidhändig über eine Oktave auf und ab, dreimal langsam ohne anzuhalten."
+    },
+    "es": {
+     "t": "Escala de Do mayor, manos juntas",
+     "g": "Coordinar despacio las dos digitaciones distintas de la escala con las manos juntas.",
+     "p": [
+      "Las manos cruzan en momentos distintos: al subir, el pulgar derecho pasa en Fa y el 3 izquierdo cruza en La.",
+      "Al subir, las dos manos solo coinciden en el dedo 3, en Mi y en La; en el resto difieren.",
+      "Ve muy despacio, incluso una nota por clic a 50, y detente a revisar cada cruce."
+     ],
+     "q": "¿Qué cruce te resulta más incómodo cuando tocan las dos manos?",
+     "c": "Toca la escala de Do con las manos juntas, una octava arriba y abajo, tres veces lento y sin parar."
+    },
+    "fr": {
+     "t": "Gamme de do majeur, mains ensemble",
+     "g": "Coordonner lentement les deux doigtés différents de la gamme, mains ensemble.",
+     "p": [
+      "Les mains passent à des moments différents : en montant, le pouce droit passe sur fa, le 3 gauche sur la.",
+      "En montant, les deux mains n'ont le même doigt, le 3, que sur mi et la ; ailleurs elles diffèrent.",
+      "Va très lentement, même une note par clic à 50, et arrête-toi pour vérifier chaque passage."
+     ],
+     "q": "Quel passage te semble le plus maladroit quand les deux mains jouent ?",
+     "c": "Joue la gamme de do mains ensemble sur une octave, en montant et en descendant, trois fois lentement sans t'arrêter."
+    },
+    "it": {
+     "t": "Scala di Do maggiore a mani unite",
+     "g": "Coordinare lentamente le due diverse diteggiature della scala a mani unite.",
+     "p": [
+      "Le mani passano in momenti diversi: in salita il pollice destro passa sul Fa, il 3 sinistro scavalca sul La.",
+      "In salita le due mani usano lo stesso dito, il 3, solo su Mi e La; altrove sono diverse.",
+      "Vai molto piano, anche una nota per clic a 50, e fermati a controllare ogni passaggio."
+     ],
+     "q": "Quale passaggio ti sembra più scomodo quando suonano entrambe le mani?",
+     "c": "Suona la scala di Do a mani unite su un'ottava, in salita e discesa, tre volte lentamente senza fermarti."
+    },
+    "pt": {
+     "t": "Escala de dó maior, mãos juntas",
+     "g": "Coordenar devagar as duas dedilhações diferentes da escala com as mãos juntas.",
+     "p": [
+      "As mãos cruzam em momentos diferentes: a subir, o polegar direito passa no fá e o 3 esquerdo cruza no lá.",
+      "A subir, as duas mãos só coincidem no dedo 3, no mi e no lá; no resto são diferentes.",
+      "Vai muito devagar, até uma nota por clique a 50, e para para verificar cada cruzamento."
+     ],
+     "q": "Que cruzamento te parece mais desajeitado quando tocam as duas mãos?",
+     "c": "Toca a escala de dó com as mãos juntas, uma oitava a subir e a descer, três vezes devagar sem parar."
+    },
+    "pt_BR": {
+     "t": "Escala de dó maior, mãos juntas",
+     "g": "Coordenar devagar os dois dedilhados diferentes da escala com as mãos juntas.",
+     "p": [
+      "As mãos cruzam em momentos diferentes: subindo, o polegar direito passa no fá e o 3 esquerdo cruza no lá.",
+      "Subindo, as duas mãos só coincidem no dedo 3, no mi e no lá; no resto são diferentes.",
+      "Vá bem devagar, até uma nota por clique a 50, e pare para conferir cada cruzamento."
+     ],
+     "q": "Qual cruzamento parece mais desajeitado quando as duas mãos tocam?",
+     "c": "Toque a escala de dó com as mãos juntas, uma oitava subindo e descendo, três vezes devagar sem parar."
+    }
+   }
+  }
+ ]
+}

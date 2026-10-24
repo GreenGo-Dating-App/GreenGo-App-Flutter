@@ -1,0 +1,835 @@
+{
+ "topic": "coffee",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of coffee",
+     "g": "Follow the journey of coffee from a red cherry on a tree all the way to the cup in your hands.",
+     "p": [
+      "Coffee starts as the seed of a small fruit, the coffee cherry, grown on shrubs in warm countries.",
+      "The cherries are picked, processed and dried, and the green seeds travel the world before roasting.",
+      "Roasting, grinding and brewing then turn those seeds into the aromatic drink you know."
+     ],
+     "q": "How do you usually drink your coffee, and when in the day does it taste best to you?",
+     "c": "Before your next cup, smell the beans or grounds for ten seconds and name one thing they remind you of."
+    },
+    "de": {
+     "t": "Willkommen in der Welt des Kaffees",
+     "g": "Begleite den Kaffee auf seinem Weg von der roten Kirsche am Strauch bis in die Tasse in deinen Händen.",
+     "p": [
+      "Kaffee beginnt als Samen einer kleinen Frucht, der Kaffeekirsche, die an Sträuchern in warmen Ländern wächst.",
+      "Die Kirschen werden gepflückt, aufbereitet und getrocknet; die grünen Samen reisen dann um die Welt.",
+      "Rösten, Mahlen und Aufbrühen machen aus diesen Samen das aromatische Getränk, das du kennst."
+     ],
+     "q": "Wie trinkst du deinen Kaffee meistens, und zu welcher Tageszeit schmeckt er dir am besten?",
+     "c": "Riech vor deiner nächsten Tasse zehn Sekunden an Bohnen oder Pulver und nenne eine Sache, an die es dich erinnert."
+    },
+    "es": {
+     "t": "Bienvenido al mundo del café",
+     "g": "Sigue el viaje del café desde una cereza roja en el arbusto hasta la taza que tienes en las manos.",
+     "p": [
+      "El café empieza siendo la semilla de una pequeña fruta, la cereza de café, que crece en arbustos de países cálidos.",
+      "Las cerezas se recogen, se procesan y se secan, y las semillas verdes viajan por el mundo antes de tostarse.",
+      "Después, el tueste, la molienda y la preparación convierten esas semillas en la bebida aromática que conoces."
+     ],
+     "q": "¿Cómo sueles tomar tu café y en qué momento del día te sabe mejor?",
+     "c": "Antes de tu próxima taza, huele los granos o el café molido diez segundos y di a qué te recuerdan."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde du café",
+     "g": "Suis le voyage du café, d'une cerise rouge sur un arbuste jusqu'à la tasse que tu tiens entre tes mains.",
+     "p": [
+      "Le café commence comme la graine d'un petit fruit, la cerise de café, qui pousse sur des arbustes dans les pays chauds.",
+      "Les cerises sont cueillies, traitées et séchées, puis les graines vertes voyagent dans le monde entier.",
+      "La torréfaction, la mouture et l'infusion transforment ensuite ces graines en la boisson parfumée que tu connais."
+     ],
+     "q": "Comment bois-tu ton café d'habitude, et à quel moment de la journée te semble-t-il le meilleur ?",
+     "c": "Avant ta prochaine tasse, sens les grains ou la mouture dix secondes et dis à quoi cela te fait penser."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo del caffè",
+     "g": "Segui il viaggio del caffè da una ciliegia rossa sulla pianta fino alla tazzina che hai tra le mani.",
+     "p": [
+      "Il caffè nasce come seme di un piccolo frutto, la ciliegia del caffè, che cresce su arbusti nei paesi caldi.",
+      "Le ciliegie vengono raccolte, lavorate ed essiccate, poi i semi verdi viaggiano per il mondo prima della tostatura.",
+      "Tostatura, macinatura ed estrazione trasformano infine quei semi nella bevanda profumata che conosci."
+     ],
+     "q": "Come bevi di solito il caffè e in quale momento della giornata ti sembra più buono?",
+     "c": "Prima del prossimo caffè, annusa chicchi o polvere per dieci secondi e di' a cosa ti fanno pensare."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo do café",
+     "g": "Acompanha a viagem do café, desde uma cereja vermelha no arbusto até à chávena que tens nas mãos.",
+     "p": [
+      "O café começa como a semente de um pequeno fruto, a cereja do café, que cresce em arbustos de países quentes.",
+      "As cerejas são colhidas, processadas e secas, e as sementes verdes viajam pelo mundo antes da torra.",
+      "Depois, a torra, a moagem e a extração transformam essas sementes na bebida aromática que conheces."
+     ],
+     "q": "Como costumas beber o teu café e em que altura do dia te sabe melhor?",
+     "c": "Antes do próximo café, cheira os grãos ou o café moído durante dez segundos e diz a que te lembram."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo do café",
+     "g": "Acompanhe a viagem do café, de uma cereja vermelha no pé até a xícara que você tem nas mãos.",
+     "p": [
+      "O café começa como a semente de uma pequena fruta, a cereja do café, que cresce em arbustos de países quentes.",
+      "As cerejas são colhidas, processadas e secas, e as sementes verdes viajam pelo mundo antes da torra.",
+      "Depois, a torra, a moagem e o preparo transformam essas sementes na bebida aromática que você conhece."
+     ],
+     "q": "Como você costuma tomar seu café e em que hora do dia ele fica mais gostoso?",
+     "c": "Antes do próximo café, cheire os grãos ou o pó por dez segundos e diga do que eles te lembram."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The coffee plant",
+     "g": "Get to know the coffee plant: an evergreen shrub with glossy leaves, white flowers and red cherries.",
+     "p": [
+      "Coffee belongs to the genus Coffea, evergreen shrubs and small trees native to tropical Africa.",
+      "Its white flowers smell a bit like jasmine and last only a few days before small green cherries form.",
+      "A young plant usually needs three to four years to give its first real harvest of ripe red cherries."
+     ],
+     "q": "Have you ever seen a coffee plant, in a garden, a greenhouse or maybe on a trip?",
+     "c": "Look at a photo of a coffee branch and spot the leaves, flowers or cherries at different stages."
+    },
+    "de": {
+     "t": "Die Kaffeepflanze",
+     "g": "Lerne die Kaffeepflanze kennen: ein immergrüner Strauch mit glänzenden Blättern, weißen Blüten und roten Kirschen.",
+     "p": [
+      "Kaffee gehört zur Gattung Coffea, immergrüne Sträucher und kleine Bäume aus dem tropischen Afrika.",
+      "Die weißen Blüten duften ein wenig nach Jasmin und halten nur wenige Tage, dann bilden sich grüne Kirschen.",
+      "Eine junge Pflanze braucht meist drei bis vier Jahre bis zur ersten echten Ernte reifer roter Kirschen."
+     ],
+     "q": "Hast du schon einmal eine Kaffeepflanze gesehen, im Garten, im Gewächshaus oder auf einer Reise?",
+     "c": "Schau dir ein Foto eines Kaffeezweigs an und finde Blätter, Blüten oder Kirschen in verschiedenen Stadien."
+    },
+    "es": {
+     "t": "La planta del café",
+     "g": "Conoce la planta del café: un arbusto de hoja perenne con hojas brillantes, flores blancas y cerezas rojas.",
+     "p": [
+      "El café pertenece al género Coffea, arbustos y pequeños árboles de hoja perenne originarios del África tropical.",
+      "Sus flores blancas huelen un poco a jazmín y duran solo unos días antes de que aparezcan las cerezas verdes.",
+      "Una planta joven suele tardar de tres a cuatro años en dar su primera cosecha real de cerezas maduras."
+     ],
+     "q": "¿Has visto alguna vez una planta de café, en un jardín, un invernadero o en algún viaje?",
+     "c": "Mira una foto de una rama de café y localiza hojas, flores o cerezas en distintas fases."
+    },
+    "fr": {
+     "t": "Le caféier",
+     "g": "Découvre le caféier : un arbuste toujours vert aux feuilles brillantes, aux fleurs blanches et aux cerises rouges.",
+     "p": [
+      "Le café appartient au genre Coffea, des arbustes et petits arbres persistants originaires d'Afrique tropicale.",
+      "Ses fleurs blanches sentent un peu le jasmin et ne durent que quelques jours avant l'apparition des cerises vertes.",
+      "Un jeune plant met en général trois à quatre ans avant de donner sa première vraie récolte de cerises mûres."
+     ],
+     "q": "As-tu déjà vu un caféier, dans un jardin, une serre ou peut-être en voyage ?",
+     "c": "Regarde une photo de branche de caféier et repère les feuilles, les fleurs ou les cerises à différents stades."
+    },
+    "it": {
+     "t": "La pianta del caffè",
+     "g": "Scopri la pianta del caffè: un arbusto sempreverde con foglie lucide, fiori bianchi e ciliegie rosse.",
+     "p": [
+      "Il caffè appartiene al genere Coffea, arbusti e piccoli alberi sempreverdi originari dell'Africa tropicale.",
+      "I fiori bianchi profumano un po' di gelsomino e durano pochi giorni prima che si formino le ciliegie verdi.",
+      "Una pianta giovane impiega di solito tre o quattro anni per dare il primo vero raccolto di ciliegie mature."
+     ],
+     "q": "Hai mai visto una pianta di caffè, in un giardino, in una serra o magari in viaggio?",
+     "c": "Guarda la foto di un ramo di caffè e trova foglie, fiori o ciliegie in fasi diverse."
+    },
+    "pt": {
+     "t": "O cafeeiro",
+     "g": "Conhece o cafeeiro: um arbusto de folha perene com folhas brilhantes, flores brancas e cerejas vermelhas.",
+     "p": [
+      "O café pertence ao género Coffea, arbustos e pequenas árvores de folha perene nativos da África tropical.",
+      "As flores brancas cheiram um pouco a jasmim e duram só alguns dias antes de surgirem as cerejas verdes.",
+      "Uma planta jovem precisa normalmente de três a quatro anos para dar a primeira colheita a sério."
+     ],
+     "q": "Já alguma vez viste um cafeeiro, num jardim, numa estufa ou talvez numa viagem?",
+     "c": "Procura uma fotografia de um ramo de cafeeiro e identifica folhas, flores ou cerejas em fases diferentes."
+    },
+    "pt_BR": {
+     "t": "O pé de café",
+     "g": "Conheça o cafeeiro: um arbusto sempre verde com folhas brilhantes, flores brancas e cerejas vermelhas.",
+     "p": [
+      "O café pertence ao gênero Coffea, arbustos e pequenas árvores sempre verdes nativos da África tropical.",
+      "As flores brancas têm um perfume parecido com jasmim e duram só alguns dias antes de surgirem as cerejas verdes.",
+      "Uma planta jovem costuma levar de três a quatro anos para dar a primeira colheita de verdade."
+     ],
+     "q": "Você já viu um pé de café, num jardim, numa estufa ou talvez numa viagem?",
+     "c": "Procure uma foto de um galho de café e identifique folhas, flores ou cerejas em fases diferentes."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "From cherry to bean",
+     "g": "Discover what is inside a coffee cherry and which part becomes the bean we roast.",
+     "p": [
+      "Under the skin lie sweet pulp, a sticky layer called mucilage and a papery shell known as parchment.",
+      "Inside are usually two seeds facing each other, each wrapped in a thin silver skin: these are the beans.",
+      "Sometimes only one round seed grows, called a peaberry, and some roasters sell peaberries separately."
+     ],
+     "q": "Did you know a coffee bean is really a seed? What surprised you most about the cherry?",
+     "c": "Take one roasted bean and look for the flat side and the line down the middle: that is where it faced its twin."
+    },
+    "de": {
+     "t": "Von der Kirsche zur Bohne",
+     "g": "Entdecke, was in einer Kaffeekirsche steckt und welcher Teil zur Bohne wird, die wir rösten.",
+     "p": [
+      "Unter der Haut liegen süßes Fruchtfleisch, eine klebrige Schicht namens Mucilage und eine papierartige Pergamenthülle.",
+      "Darin sitzen meist zwei Samen, die sich gegenüberliegen, jeweils mit einem dünnen Silberhäutchen: die Bohnen.",
+      "Manchmal wächst nur ein runder Samen, die Perlbohne, und manche Röstereien verkaufen sie separat."
+     ],
+     "q": "Wusstest du, dass eine Kaffeebohne eigentlich ein Samen ist? Was hat dich an der Kirsche am meisten überrascht?",
+     "c": "Nimm eine geröstete Bohne und suche die flache Seite mit der Linie in der Mitte: dort lag sie an ihrem Zwilling."
+    },
+    "es": {
+     "t": "De la cereza al grano",
+     "g": "Descubre qué hay dentro de una cereza de café y qué parte se convierte en el grano que tostamos.",
+     "p": [
+      "Bajo la piel hay pulpa dulce, una capa pegajosa llamada mucílago y una cáscara fina como papel, el pergamino.",
+      "Dentro suele haber dos semillas enfrentadas, cada una con una fina piel plateada: esos son los granos.",
+      "A veces crece una sola semilla redonda, el caracolillo, y algunos tostadores lo venden por separado."
+     ],
+     "q": "¿Sabías que un grano de café es en realidad una semilla? ¿Qué te sorprendió más de la cereza?",
+     "c": "Toma un grano tostado y busca la cara plana con la línea central: ahí estaba pegado a su gemelo."
+    },
+    "fr": {
+     "t": "De la cerise au grain",
+     "g": "Découvre ce qu'il y a dans une cerise de café et quelle partie devient le grain que l'on torréfie.",
+     "p": [
+      "Sous la peau se trouvent une pulpe sucrée, une couche collante appelée mucilage et une fine coque, la parche.",
+      "À l'intérieur, deux graines se font face, chacune entourée d'une fine pellicule argentée : ce sont les grains.",
+      "Parfois une seule graine ronde se forme, le caracoli, et certains torréfacteurs le vendent à part."
+     ],
+     "q": "Savais-tu qu'un grain de café est en fait une graine ? Qu'est-ce qui t'a le plus surpris dans la cerise ?",
+     "c": "Prends un grain torréfié et repère la face plate avec la ligne au milieu : c'est là qu'il touchait son jumeau."
+    },
+    "it": {
+     "t": "Dalla ciliegia al chicco",
+     "g": "Scopri cosa c'è dentro una ciliegia di caffè e quale parte diventa il chicco che tostiamo.",
+     "p": [
+      "Sotto la buccia ci sono una polpa dolce, uno strato appiccicoso detto mucillagine e un guscio sottile, la pergamena.",
+      "Dentro di solito ci sono due semi affiancati, ognuno avvolto da una sottile pellicola argentata: sono i chicchi.",
+      "A volte cresce un solo seme rotondo, il caracolito, e alcuni torrefattori lo vendono a parte."
+     ],
+     "q": "Sapevi che un chicco di caffè è in realtà un seme? Che cosa ti ha sorpreso di più della ciliegia?",
+     "c": "Prendi un chicco tostato e cerca il lato piatto con la linea centrale: lì stava appoggiato al suo gemello."
+    },
+    "pt": {
+     "t": "Da cereja ao grão",
+     "g": "Descobre o que há dentro de uma cereja de café e que parte se torna o grão que torramos.",
+     "p": [
+      "Debaixo da casca há polpa doce, uma camada pegajosa chamada mucilagem e uma película fina, o pergaminho.",
+      "Lá dentro costumam estar duas sementes viradas uma para a outra, cada uma com uma pele prateada: são os grãos.",
+      "Às vezes cresce só uma semente redonda, o grão moca ou caracol, que alguns torrefatores vendem à parte."
+     ],
+     "q": "Sabias que um grão de café é na verdade uma semente? O que te surpreendeu mais na cereja?",
+     "c": "Pega num grão torrado e procura o lado plano com a linha no meio: era aí que encostava ao seu gémeo."
+    },
+    "pt_BR": {
+     "t": "Da cereja ao grão",
+     "g": "Descubra o que há dentro de uma cereja de café e qual parte vira o grão que torramos.",
+     "p": [
+      "Embaixo da casca há polpa doce, uma camada grudenta chamada mucilagem e uma película fina, o pergaminho.",
+      "Lá dentro costumam ficar duas sementes viradas uma para a outra, cada uma com uma película prateada: são os grãos.",
+      "Às vezes cresce só uma semente redonda, o café moca ou grão caracol, que alguns torrefadores vendem à parte."
+     ],
+     "q": "Você sabia que o grão de café é, na verdade, uma semente? O que mais te surpreendeu na cereja?",
+     "c": "Pegue um grão torrado e procure o lado plano com a linha no meio: era ali que ele encostava no irmão gêmeo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arabica and robusta",
+     "g": "Learn how the two main coffee species differ in taste, caffeine and where they grow.",
+     "p": [
+      "Arabica usually tastes sweeter and more aromatic, with brighter acidity, and grows best at higher altitudes.",
+      "Robusta is hardier, grows in hotter, lower places and has roughly twice the caffeine and a more bitter taste.",
+      "Most coffee drunk worldwide is arabica, while robusta is common in instant coffee and many espresso blends."
+     ],
+     "q": "Do you know if your favourite coffee is arabica, robusta or a blend of both?",
+     "c": "Check the label of a coffee you have or see in a shop and find out which species it contains."
+    },
+    "de": {
+     "t": "Arabica und Robusta",
+     "g": "Erfahre, wie sich die zwei wichtigsten Kaffeearten in Geschmack, Koffein und Anbaugebiet unterscheiden.",
+     "p": [
+      "Arabica schmeckt meist süßer und aromatischer, mit lebhafterer Säure, und wächst am besten in höheren Lagen.",
+      "Robusta ist robuster, wächst in heißeren, tieferen Lagen, hat etwa doppelt so viel Koffein und ist bitterer.",
+      "Der meiste Kaffee weltweit ist Arabica; Robusta steckt oft in Instantkaffee und vielen Espressomischungen."
+     ],
+     "q": "Weißt du, ob dein Lieblingskaffee Arabica, Robusta oder eine Mischung aus beiden ist?",
+     "c": "Lies das Etikett eines Kaffees zu Hause oder im Laden und finde heraus, welche Art er enthält."
+    },
+    "es": {
+     "t": "Arábica y robusta",
+     "g": "Aprende en qué se diferencian las dos especies principales de café en sabor, cafeína y lugar de cultivo.",
+     "p": [
+      "El arábica suele ser más dulce y aromático, con una acidez más viva, y crece mejor a mayor altitud.",
+      "El robusta es más resistente, crece en zonas más cálidas y bajas, tiene casi el doble de cafeína y es más amargo.",
+      "La mayor parte del café que se bebe es arábica; el robusta abunda en el café soluble y en muchas mezclas de espresso."
+     ],
+     "q": "¿Sabes si tu café favorito es arábica, robusta o una mezcla de ambos?",
+     "c": "Mira la etiqueta de un café que tengas o veas en una tienda y descubre qué especie contiene."
+    },
+    "fr": {
+     "t": "Arabica et robusta",
+     "g": "Apprends en quoi les deux principales espèces de café diffèrent par le goût, la caféine et leur lieu de culture.",
+     "p": [
+      "L'arabica est souvent plus doux et plus aromatique, avec une acidité vive, et pousse mieux en altitude.",
+      "Le robusta est plus résistant, pousse plus bas et au chaud, contient environ deux fois plus de caféine et est plus amer.",
+      "L'essentiel du café bu dans le monde est de l'arabica ; le robusta sert souvent au café soluble et aux mélanges espresso."
+     ],
+     "q": "Sais-tu si ton café préféré est un arabica, un robusta ou un mélange des deux ?",
+     "c": "Lis l'étiquette d'un café chez toi ou en magasin et trouve quelle espèce il contient."
+    },
+    "it": {
+     "t": "Arabica e robusta",
+     "g": "Scopri come le due principali specie di caffè si differenziano per gusto, caffeina e zone di coltivazione.",
+     "p": [
+      "L'arabica è di solito più dolce e aromatica, con un'acidità vivace, e cresce meglio ad alta quota.",
+      "La robusta è più resistente, cresce in zone più calde e basse, ha circa il doppio di caffeina ed è più amara.",
+      "La maggior parte del caffè bevuto nel mondo è arabica; la robusta è comune nel solubile e in molte miscele da bar."
+     ],
+     "q": "Sai se il tuo caffè preferito è arabica, robusta o una miscela di entrambe?",
+     "c": "Leggi l'etichetta di un caffè che hai in casa o vedi al supermercato e scopri quale specie contiene."
+    },
+    "pt": {
+     "t": "Arábica e robusta",
+     "g": "Aprende como as duas principais espécies de café diferem no sabor, na cafeína e no local onde crescem.",
+     "p": [
+      "O arábica costuma ser mais doce e aromático, com acidez mais viva, e cresce melhor em altitudes elevadas.",
+      "O robusta é mais resistente, cresce em zonas mais quentes e baixas, tem cerca do dobro da cafeína e é mais amargo.",
+      "A maior parte do café bebido no mundo é arábica; o robusta é comum no café solúvel e em muitos lotes de espresso."
+     ],
+     "q": "Sabes se o teu café preferido é arábica, robusta ou uma mistura dos dois?",
+     "c": "Lê o rótulo de um café que tenhas em casa ou vejas numa loja e descobre que espécie contém."
+    },
+    "pt_BR": {
+     "t": "Arábica e robusta",
+     "g": "Aprenda como as duas principais espécies de café diferem no sabor, na cafeína e no lugar onde crescem.",
+     "p": [
+      "O arábica costuma ser mais doce e aromático, com acidez mais viva, e cresce melhor em altitudes elevadas.",
+      "O robusta (o conilon no Brasil) é mais resistente, cresce em áreas quentes e baixas e tem cerca do dobro de cafeína.",
+      "A maior parte do café consumido no mundo é arábica; o robusta é comum no café solúvel e em muitos blends de espresso."
+     ],
+     "q": "Você sabe se o seu café favorito é arábica, robusta ou um blend dos dois?",
+     "c": "Leia o rótulo de um café que você tem em casa ou vê no mercado e descubra qual espécie ele contém."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The coffee belt",
+     "g": "See why coffee grows between the tropics and how altitude shapes its flavour.",
+     "p": [
+      "The coffee belt is the band around the Earth between the Tropic of Cancer and the Tropic of Capricorn.",
+      "Coffee needs warmth, steady rain and no frost, which is why it thrives in places like Brazil, Ethiopia and Colombia.",
+      "At higher altitudes cherries ripen more slowly, often giving denser beans with more acidity and complexity."
+     ],
+     "q": "Which coffee-growing country would you most like to visit, and why?",
+     "c": "Find three coffee-producing countries on a map and check that they all sit inside the coffee belt."
+    },
+    "de": {
+     "t": "Der Kaffeegürtel",
+     "g": "Verstehe, warum Kaffee zwischen den Wendekreisen wächst und wie die Höhenlage den Geschmack prägt.",
+     "p": [
+      "Der Kaffeegürtel ist das Band um die Erde zwischen dem nördlichen und dem südlichen Wendekreis.",
+      "Kaffee braucht Wärme, regelmäßigen Regen und keinen Frost; darum gedeiht er etwa in Brasilien, Äthiopien und Kolumbien.",
+      "In größerer Höhe reifen die Kirschen langsamer, was oft dichtere Bohnen mit mehr Säure und Komplexität ergibt."
+     ],
+     "q": "Welches Kaffeeanbauland würdest du am liebsten besuchen, und warum?",
+     "c": "Suche drei Kaffeeanbauländer auf einer Karte und prüfe, ob alle im Kaffeegürtel liegen."
+    },
+    "es": {
+     "t": "El cinturón del café",
+     "g": "Descubre por qué el café crece entre los trópicos y cómo la altitud influye en su sabor.",
+     "p": [
+      "El cinturón del café es la franja de la Tierra entre el trópico de Cáncer y el trópico de Capricornio.",
+      "El café necesita calor, lluvia regular y nada de heladas; por eso prospera en países como Brasil, Etiopía y Colombia.",
+      "A mayor altitud las cerezas maduran más despacio y suelen dar granos más densos, con más acidez y complejidad."
+     ],
+     "q": "¿Qué país productor de café te gustaría visitar y por qué?",
+     "c": "Busca tres países productores de café en un mapa y comprueba que todos están dentro del cinturón del café."
+    },
+    "fr": {
+     "t": "La ceinture du café",
+     "g": "Comprends pourquoi le café pousse entre les tropiques et comment l'altitude façonne sa saveur.",
+     "p": [
+      "La ceinture du café est la bande qui entoure la Terre entre le tropique du Cancer et celui du Capricorne.",
+      "Le café a besoin de chaleur, de pluies régulières et d'aucun gel : il prospère au Brésil, en Éthiopie ou en Colombie.",
+      "En altitude, les cerises mûrissent plus lentement et donnent souvent des grains plus denses, plus acidulés et complexes."
+     ],
+     "q": "Quel pays producteur de café aimerais-tu le plus visiter, et pourquoi ?",
+     "c": "Trouve trois pays producteurs de café sur une carte et vérifie qu'ils sont tous dans la ceinture du café."
+    },
+    "it": {
+     "t": "La fascia del caffè",
+     "g": "Scopri perché il caffè cresce tra i tropici e come l'altitudine ne influenza il sapore.",
+     "p": [
+      "La fascia del caffè è la striscia intorno alla Terra compresa tra il tropico del Cancro e quello del Capricorno.",
+      "Il caffè vuole caldo, piogge regolari e niente gelo: per questo prospera in paesi come Brasile, Etiopia e Colombia.",
+      "Ad alta quota le ciliegie maturano più lentamente e spesso danno chicchi più densi, con più acidità e complessità."
+     ],
+     "q": "Quale paese produttore di caffè ti piacerebbe di più visitare, e perché?",
+     "c": "Trova tre paesi produttori di caffè su una mappa e verifica che siano tutti dentro la fascia del caffè."
+    },
+    "pt": {
+     "t": "A cintura do café",
+     "g": "Percebe porque é que o café cresce entre os trópicos e como a altitude molda o seu sabor.",
+     "p": [
+      "A cintura do café é a faixa à volta da Terra entre o trópico de Câncer e o trópico de Capricórnio.",
+      "O café precisa de calor, chuva regular e nada de geada, por isso prospera em países como o Brasil, a Etiópia e a Colômbia.",
+      "Em altitude as cerejas amadurecem mais devagar e dão muitas vezes grãos mais densos, com mais acidez e complexidade."
+     ],
+     "q": "Que país produtor de café gostavas mais de visitar, e porquê?",
+     "c": "Procura três países produtores de café num mapa e confirma que estão todos dentro da cintura do café."
+    },
+    "pt_BR": {
+     "t": "O cinturão do café",
+     "g": "Entenda por que o café cresce entre os trópicos e como a altitude influencia o sabor.",
+     "p": [
+      "O cinturão do café é a faixa ao redor da Terra entre o trópico de Câncer e o trópico de Capricórnio.",
+      "O café precisa de calor, chuva regular e nada de geada, por isso vai tão bem em países como Brasil, Etiópia e Colômbia.",
+      "Em altitude as cerejas amadurecem mais devagar e costumam dar grãos mais densos, com mais acidez e complexidade."
+     ],
+     "q": "Qual país produtor de café você mais gostaria de visitar, e por quê?",
+     "c": "Procure três países produtores de café num mapa e confira se todos ficam dentro do cinturão do café."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The legend of Kaldi",
+     "g": "Enjoy the famous Ethiopian story of Kaldi the goatherd and his very lively goats.",
+     "p": [
+      "Legend says Kaldi noticed his goats dancing with energy after nibbling red berries from a certain shrub.",
+      "He shared the berries with a monk, who found they helped him stay awake during long evening prayers.",
+      "It is a charming tale written down centuries later, but it reminds us that coffee's home is Ethiopia."
+     ],
+     "q": "Do you know any other food or drink with a fun legend about how it was discovered?",
+     "c": "Retell the Kaldi story in three sentences to a friend, or write it down in your own words."
+    },
+    "de": {
+     "t": "Die Legende von Kaldi",
+     "g": "Lerne die berühmte äthiopische Geschichte vom Ziegenhirten Kaldi und seinen munteren Ziegen kennen.",
+     "p": [
+      "Der Legende nach sah Kaldi seine Ziegen voller Energie tanzen, nachdem sie rote Beeren eines Strauchs gefressen hatten.",
+      "Er brachte die Beeren einem Mönch, der damit bei langen abendlichen Gebeten wach bleiben konnte.",
+      "Die Geschichte wurde erst Jahrhunderte später aufgeschrieben, erinnert aber daran, dass Kaffee aus Äthiopien stammt."
+     ],
+     "q": "Kennst du ein anderes Essen oder Getränk mit einer lustigen Entdeckungslegende?",
+     "c": "Erzähle die Kaldi-Geschichte einer Freundin oder einem Freund in drei Sätzen oder schreib sie auf."
+    },
+    "es": {
+     "t": "La leyenda de Kaldi",
+     "g": "Disfruta de la famosa historia etíope de Kaldi, el pastor de cabras, y sus animales tan animados.",
+     "p": [
+      "Cuenta la leyenda que Kaldi vio a sus cabras saltar llenas de energía tras comer bayas rojas de cierto arbusto.",
+      "Llevó las bayas a un monje, que descubrió que le ayudaban a mantenerse despierto en las largas oraciones nocturnas.",
+      "Es un relato encantador escrito siglos después, pero nos recuerda que la cuna del café es Etiopía."
+     ],
+     "q": "¿Conoces otra comida o bebida con una leyenda divertida sobre su descubrimiento?",
+     "c": "Cuenta la historia de Kaldi en tres frases a alguien o escríbela con tus propias palabras."
+    },
+    "fr": {
+     "t": "La légende de Kaldi",
+     "g": "Découvre la célèbre histoire éthiopienne de Kaldi, le chevrier, et de ses chèvres pleines d'entrain.",
+     "p": [
+      "La légende dit que Kaldi vit ses chèvres danser d'énergie après avoir brouté des baies rouges d'un arbuste.",
+      "Il apporta les baies à un moine, qui constata qu'elles l'aidaient à rester éveillé pendant les longues prières du soir.",
+      "Ce joli conte a été écrit des siècles plus tard, mais il rappelle que le café est né en Éthiopie."
+     ],
+     "q": "Connais-tu un autre aliment ou une autre boisson avec une légende amusante sur sa découverte ?",
+     "c": "Raconte l'histoire de Kaldi en trois phrases à quelqu'un, ou écris-la avec tes propres mots."
+    },
+    "it": {
+     "t": "La leggenda di Kaldi",
+     "g": "Goditi la famosa storia etiope di Kaldi, il capraio, e delle sue capre piene di energia.",
+     "p": [
+      "Si racconta che Kaldi vide le sue capre saltellare vivaci dopo aver mangiato bacche rosse di un certo arbusto.",
+      "Portò le bacche a un monaco, che scoprì che lo aiutavano a restare sveglio durante le lunghe preghiere serali.",
+      "È un racconto delizioso scritto secoli dopo, ma ci ricorda che la patria del caffè è l'Etiopia."
+     ],
+     "q": "Conosci un altro cibo o bevanda con una leggenda divertente sulla sua scoperta?",
+     "c": "Racconta la storia di Kaldi in tre frasi a qualcuno, oppure scrivila con parole tue."
+    },
+    "pt": {
+     "t": "A lenda de Kaldi",
+     "g": "Conhece a famosa história etíope de Kaldi, o pastor de cabras, e dos seus animais cheios de energia.",
+     "p": [
+      "Diz a lenda que Kaldi viu as suas cabras a saltar cheias de energia depois de comerem bagas vermelhas de um arbusto.",
+      "Levou as bagas a um monge, que descobriu que o ajudavam a ficar acordado durante as longas orações da noite.",
+      "É um conto encantador escrito séculos depois, mas lembra-nos que a terra natal do café é a Etiópia."
+     ],
+     "q": "Conheces outra comida ou bebida com uma lenda divertida sobre a sua descoberta?",
+     "c": "Conta a história de Kaldi em três frases a alguém, ou escreve-a por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "A lenda de Kaldi",
+     "g": "Conheça a famosa história etíope de Kaldi, o pastor de cabras, e dos seus animais cheios de energia.",
+     "p": [
+      "Diz a lenda que Kaldi viu suas cabras pulando cheias de energia depois de comerem frutinhas vermelhas de um arbusto.",
+      "Ele levou as frutinhas a um monge, que descobriu que elas o ajudavam a ficar acordado nas longas orações da noite.",
+      "É um conto encantador escrito séculos depois, mas nos lembra que a terra natal do café é a Etiópia."
+     ],
+     "q": "Você conhece outra comida ou bebida com uma lenda divertida sobre como foi descoberta?",
+     "c": "Conte a história de Kaldi em três frases para alguém, ou escreva com suas próprias palavras."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How coffee spread worldwide",
+     "g": "Trace coffee's journey from Ethiopia and Yemen to Europe, the Americas and Asia.",
+     "p": [
+      "By the 15th century coffee was brewed in Yemen, and the port of Mocha shipped it across the Arab world.",
+      "Coffeehouses opened in cities like Cairo and Istanbul, and in the 1600s coffee reached Venice, London and Paris.",
+      "European traders later planted coffee in Java, the Caribbean and Brazil, while seeds also reached India."
+     ],
+     "q": "Where do you think coffee arrived in your own country, and how might it have got there?",
+     "c": "Look up when the first coffeehouse opened in a city you love and share the date you find."
+    },
+    "de": {
+     "t": "Wie sich Kaffee weltweit verbreitete",
+     "g": "Verfolge den Weg des Kaffees von Äthiopien und Jemen nach Europa, Amerika und Asien.",
+     "p": [
+      "Im 15. Jahrhundert wurde im Jemen Kaffee gebrüht, und der Hafen Mokka verschiffte ihn in die arabische Welt.",
+      "Kaffeehäuser entstanden in Kairo und Istanbul, und im 17. Jahrhundert erreichte Kaffee Venedig, London und Paris.",
+      "Europäische Händler pflanzten Kaffee später auf Java, in der Karibik und in Brasilien; Samen gelangten auch nach Indien."
+     ],
+     "q": "Wann und wie kam der Kaffee wohl in dein eigenes Land?",
+     "c": "Finde heraus, wann in einer Stadt, die du magst, das erste Kaffeehaus eröffnete, und teile das Jahr."
+    },
+    "es": {
+     "t": "Cómo se extendió el café por el mundo",
+     "g": "Sigue el viaje del café desde Etiopía y Yemen hasta Europa, América y Asia.",
+     "p": [
+      "En el siglo XV ya se preparaba café en Yemen, y el puerto de Moca lo enviaba a todo el mundo árabe.",
+      "Se abrieron cafés en ciudades como El Cairo y Estambul, y en el siglo XVII el café llegó a Venecia, Londres y París.",
+      "Más tarde, comerciantes europeos lo plantaron en Java, el Caribe y Brasil, y las semillas también llegaron a la India."
+     ],
+     "q": "¿Cuándo crees que llegó el café a tu país y cómo pudo llegar?",
+     "c": "Busca cuándo abrió el primer café en una ciudad que te encante y comparte la fecha."
+    },
+    "fr": {
+     "t": "Comment le café a conquis le monde",
+     "g": "Suis le voyage du café, de l'Éthiopie et du Yémen jusqu'en Europe, en Amérique et en Asie.",
+     "p": [
+      "Au XVe siècle, on préparait déjà du café au Yémen, et le port de Moka l'expédiait dans tout le monde arabe.",
+      "Des cafés ont ouvert au Caire et à Istanbul, puis au XVIIe siècle le café a atteint Venise, Londres et Paris.",
+      "Des marchands européens l'ont ensuite planté à Java, aux Caraïbes et au Brésil, et des graines ont gagné l'Inde."
+     ],
+     "q": "Quand penses-tu que le café est arrivé dans ton pays, et par quel chemin ?",
+     "c": "Cherche quand le premier café a ouvert dans une ville que tu aimes et partage la date."
+    },
+    "it": {
+     "t": "Come il caffè ha conquistato il mondo",
+     "g": "Segui il viaggio del caffè dall'Etiopia e dallo Yemen fino all'Europa, alle Americhe e all'Asia.",
+     "p": [
+      "Nel XV secolo il caffè si preparava già nello Yemen, e il porto di Moka lo spediva in tutto il mondo arabo.",
+      "Le botteghe del caffè aprirono al Cairo e a Istanbul, e nel Seicento il caffè arrivò a Venezia, Londra e Parigi.",
+      "Più tardi i mercanti europei lo piantarono a Giava, nei Caraibi e in Brasile, e i semi raggiunsero anche l'India."
+     ],
+     "q": "Quando pensi che il caffè sia arrivato nel tuo paese, e come?",
+     "c": "Cerca quando aprì la prima bottega del caffè in una città che ami e condividi la data."
+    },
+    "pt": {
+     "t": "Como o café se espalhou pelo mundo",
+     "g": "Segue a viagem do café desde a Etiópia e o Iémen até à Europa, às Américas e à Ásia.",
+     "p": [
+      "No século XV já se fazia café no Iémen, e o porto de Moca enviava-o para todo o mundo árabe.",
+      "Abriram cafés em cidades como o Cairo e Istambul, e no século XVII o café chegou a Veneza, Londres e Paris.",
+      "Mais tarde, comerciantes europeus plantaram-no em Java, nas Caraíbas e no Brasil, e as sementes chegaram à Índia."
+     ],
+     "q": "Quando achas que o café chegou ao teu país, e como terá chegado?",
+     "c": "Descobre quando abriu o primeiro café numa cidade de que gostes e partilha a data."
+    },
+    "pt_BR": {
+     "t": "Como o café se espalhou pelo mundo",
+     "g": "Acompanhe a viagem do café da Etiópia e do Iêmen até a Europa, as Américas e a Ásia.",
+     "p": [
+      "No século 15 já se preparava café no Iêmen, e o porto de Mocha o enviava para todo o mundo árabe.",
+      "Cafés abriram em cidades como Cairo e Istambul, e no século 17 a bebida chegou a Veneza, Londres e Paris.",
+      "Depois, comerciantes europeus plantaram café em Java, no Caribe e no Brasil, que o recebeu no século 18."
+     ],
+     "q": "Quando você acha que o café chegou à sua região, e como ele chegou lá?",
+     "c": "Pesquise quando abriu o primeiro café numa cidade que você ama e compartilhe a data."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Green coffee",
+     "g": "Find out what raw, unroasted coffee beans look like, smell like and how they are stored.",
+     "p": [
+      "Green coffee beans are pale green to greyish, hard as little pebbles and much denser than roasted beans.",
+      "They smell grassy, like hay or fresh peas, with none of the familiar coffee aroma yet.",
+      "Kept dry in jute sacks or sealed bags, green beans stay stable for months, unlike roasted coffee."
+     ],
+     "q": "Would you be curious to see or smell green coffee beans before they are roasted?",
+     "c": "Search for a photo of green and roasted beans side by side and list three differences you notice."
+    },
+    "de": {
+     "t": "Rohkaffee",
+     "g": "Erfahre, wie ungeröstete Kaffeebohnen aussehen, riechen und gelagert werden.",
+     "p": [
+      "Rohkaffeebohnen sind blassgrün bis gräulich, hart wie kleine Kiesel und viel dichter als geröstete Bohnen.",
+      "Sie riechen grasig, nach Heu oder frischen Erbsen, und noch gar nicht nach dem typischen Kaffeeduft.",
+      "Trocken in Jutesäcken oder dichten Beuteln gelagert, bleibt Rohkaffee monatelang stabil, anders als Röstkaffee."
+     ],
+     "q": "Wärst du neugierig, rohe Kaffeebohnen vor dem Rösten zu sehen oder zu riechen?",
+     "c": "Suche ein Foto von grünen und gerösteten Bohnen nebeneinander und nenne drei Unterschiede."
+    },
+    "es": {
+     "t": "El café verde",
+     "g": "Descubre cómo son, cómo huelen y cómo se guardan los granos de café crudos, sin tostar.",
+     "p": [
+      "Los granos verdes son de color verde pálido a grisáceo, duros como piedrecitas y mucho más densos que los tostados.",
+      "Huelen a hierba, a heno o a guisantes frescos, todavía sin nada del aroma típico del café.",
+      "Guardados secos en sacos de yute o bolsas cerradas, se conservan estables durante meses, a diferencia del tostado."
+     ],
+     "q": "¿Te daría curiosidad ver u oler granos de café verde antes de tostarlos?",
+     "c": "Busca una foto de granos verdes y tostados juntos y anota tres diferencias que veas."
+    },
+    "fr": {
+     "t": "Le café vert",
+     "g": "Découvre à quoi ressemblent les grains de café crus, leur odeur et la façon de les conserver.",
+     "p": [
+      "Les grains verts vont du vert pâle au grisâtre, durs comme de petits cailloux et bien plus denses que les grains torréfiés.",
+      "Ils sentent l'herbe, le foin ou les petits pois frais, sans rien encore de l'arôme familier du café.",
+      "Gardés au sec dans des sacs de jute ou des sacs étanches, ils restent stables des mois, contrairement au café torréfié."
+     ],
+     "q": "Serais-tu curieux de voir ou de sentir des grains de café vert avant torréfaction ?",
+     "c": "Cherche une photo de grains verts et torréfiés côte à côte et note trois différences."
+    },
+    "it": {
+     "t": "Il caffè verde",
+     "g": "Scopri come appaiono, che odore hanno e come si conservano i chicchi di caffè crudi, non tostati.",
+     "p": [
+      "I chicchi verdi vanno dal verde pallido al grigiastro, duri come sassolini e molto più densi di quelli tostati.",
+      "Profumano di erba, fieno o piselli freschi, senza ancora nulla del classico aroma di caffè.",
+      "Conservati all'asciutto in sacchi di juta o buste sigillate, restano stabili per mesi, a differenza del tostato."
+     ],
+     "q": "Saresti curioso di vedere o annusare chicchi di caffè verde prima della tostatura?",
+     "c": "Cerca una foto di chicchi verdi e tostati vicini ed elenca tre differenze che noti."
+    },
+    "pt": {
+     "t": "O café verde",
+     "g": "Descobre como são, a que cheiram e como se guardam os grãos de café crus, ainda por torrar.",
+     "p": [
+      "Os grãos verdes vão do verde pálido ao acinzentado, são duros como pedrinhas e muito mais densos do que os torrados.",
+      "Cheiram a erva, a feno ou a ervilhas frescas, ainda sem nada do aroma típico do café.",
+      "Guardados secos em sacos de juta ou embalagens fechadas, mantêm-se estáveis durante meses, ao contrário do torrado."
+     ],
+     "q": "Tinhas curiosidade em ver ou cheirar grãos de café verde antes da torra?",
+     "c": "Procura uma fotografia de grãos verdes e torrados lado a lado e aponta três diferenças."
+    },
+    "pt_BR": {
+     "t": "O café verde",
+     "g": "Descubra como são, que cheiro têm e como se guardam os grãos de café crus, antes da torra.",
+     "p": [
+      "Os grãos verdes vão do verde-claro ao acinzentado, são duros como pedrinhas e bem mais densos que os torrados.",
+      "Têm cheiro de mato, de feno ou de ervilha fresca, ainda sem nada do aroma típico de café.",
+      "Guardados secos em sacas de juta ou embalagens fechadas, ficam estáveis por meses, ao contrário do café torrado."
+     ],
+     "q": "Você teria curiosidade de ver ou cheirar grãos de café verde antes da torra?",
+     "c": "Procure uma foto de grãos verdes e torrados lado a lado e anote três diferenças."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roasting in a nutshell",
+     "g": "Understand how heat turns green beans brown and creates the aroma and flavour of coffee.",
+     "p": [
+      "As beans heat up they lose water, turn yellow, then brown, and swell in size while losing weight.",
+      "Browning reactions between sugars and amino acids, plus caramelisation, create hundreds of aroma compounds.",
+      "Around the middle of the roast the beans crack audibly, a bit like popcorn, a key signal for roasters."
+     ],
+     "q": "Have you ever smelled coffee being roasted, perhaps near a roastery or café?",
+     "c": "Smell your roasted beans and write down three aromas you find, such as nuts, caramel or chocolate."
+    },
+    "de": {
+     "t": "Rösten in Kürze",
+     "g": "Verstehe, wie Hitze grüne Bohnen braun macht und Aroma und Geschmack entstehen lässt.",
+     "p": [
+      "Beim Erhitzen verlieren die Bohnen Wasser, werden gelb, dann braun und quellen auf, während sie leichter werden.",
+      "Bräunungsreaktionen zwischen Zuckern und Aminosäuren sowie Karamellisierung bilden Hunderte Aromastoffe.",
+      "Etwa in der Mitte der Röstung knacken die Bohnen hörbar, ähnlich wie Popcorn, ein wichtiges Signal für Röster."
+     ],
+     "q": "Hast du schon einmal Kaffee beim Rösten gerochen, vielleicht in der Nähe einer Rösterei?",
+     "c": "Riech an deinen gerösteten Bohnen und schreib drei Aromen auf, die du entdeckst."
+    },
+    "es": {
+     "t": "El tueste en pocas palabras",
+     "g": "Entiende cómo el calor vuelve marrones los granos verdes y crea el aroma y el sabor del café.",
+     "p": [
+      "Al calentarse, los granos pierden agua, se vuelven amarillos y luego marrones, y crecen mientras pierden peso.",
+      "Las reacciones de pardeamiento entre azúcares y aminoácidos, junto con la caramelización, crean cientos de aromas.",
+      "Hacia mitad del tueste los granos crujen de forma audible, como palomitas, una señal clave para el tostador."
+     ],
+     "q": "¿Alguna vez has olido café mientras se tuesta, quizá cerca de un tostadero?",
+     "c": "Huele tus granos tostados y anota tres aromas que encuentres en ellos."
+    },
+    "fr": {
+     "t": "La torréfaction en bref",
+     "g": "Comprends comment la chaleur fait brunir les grains verts et crée l'arôme et la saveur du café.",
+     "p": [
+      "En chauffant, les grains perdent leur eau, jaunissent puis brunissent, et gonflent tout en perdant du poids.",
+      "Les réactions de brunissement entre sucres et acides aminés, avec la caramélisation, créent des centaines d'arômes.",
+      "Vers le milieu de la torréfaction, les grains craquent bruyamment, un peu comme du pop-corn : un repère clé."
+     ],
+     "q": "As-tu déjà senti l'odeur du café en train de torréfier, près d'une brûlerie par exemple ?",
+     "c": "Sens tes grains torréfiés et note trois arômes que tu y trouves."
+    },
+    "it": {
+     "t": "La tostatura in breve",
+     "g": "Capisci come il calore rende marroni i chicchi verdi e crea l'aroma e il sapore del caffè.",
+     "p": [
+      "Scaldandosi, i chicchi perdono acqua, diventano gialli e poi marroni, e si gonfiano mentre perdono peso.",
+      "Le reazioni di imbrunimento tra zuccheri e amminoacidi, insieme alla caramellizzazione, creano centinaia di aromi.",
+      "Verso metà tostatura i chicchi scoppiettano in modo udibile, come i popcorn: un segnale chiave per il tostatore."
+     ],
+     "q": "Hai mai sentito il profumo del caffè mentre viene tostato, magari vicino a una torrefazione?",
+     "c": "Annusa i tuoi chicchi tostati e scrivi tre aromi che riconosci."
+    },
+    "pt": {
+     "t": "A torra em poucas palavras",
+     "g": "Percebe como o calor torna castanhos os grãos verdes e cria o aroma e o sabor do café.",
+     "p": [
+      "Ao aquecer, os grãos perdem água, ficam amarelos e depois castanhos, e incham enquanto perdem peso.",
+      "As reações de escurecimento entre açúcares e aminoácidos, com a caramelização, criam centenas de aromas.",
+      "A meio da torra os grãos estalam de forma audível, um pouco como pipocas, um sinal importante para quem torra."
+     ],
+     "q": "Já alguma vez sentiste o cheiro de café a ser torrado, talvez perto de uma torrefação?",
+     "c": "Cheira os teus grãos torrados e aponta três aromas que encontres."
+    },
+    "pt_BR": {
+     "t": "A torra em poucas palavras",
+     "g": "Entenda como o calor deixa marrons os grãos verdes e cria o aroma e o sabor do café.",
+     "p": [
+      "Ao esquentar, os grãos perdem água, ficam amarelos e depois marrons, e incham enquanto ficam mais leves.",
+      "As reações de escurecimento entre açúcares e aminoácidos, junto com a caramelização, criam centenas de aromas.",
+      "No meio da torra os grãos estalam de um jeito audível, como pipoca, um sinal importante para o torrador."
+     ],
+     "q": "Você já sentiu o cheiro de café sendo torrado, talvez perto de uma torrefação?",
+     "c": "Cheire seus grãos torrados e anote três aromas que você encontrar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light, medium and dark roasts",
+     "g": "See how roast level changes acidity, body and bitterness in your cup.",
+     "p": [
+      "Light roasts keep more of the bean's origin character, with brighter acidity and fruity or floral notes.",
+      "Medium roasts balance sweetness and acidity, often with caramel, nut or chocolate flavours.",
+      "Dark roasts taste roasty and bitter-sweet with heavier body; the caffeine difference between levels is small."
+     ],
+     "q": "Do you prefer coffee that tastes bright and fruity or dark and chocolatey?",
+     "c": "Taste a light and a dark roast side by side, or compare your coffee with a friend's, and note which feels more acidic."
+    },
+    "de": {
+     "t": "Helle, mittlere und dunkle Röstung",
+     "g": "Sieh, wie der Röstgrad Säure, Körper und Bitterkeit in deiner Tasse verändert.",
+     "p": [
+      "Helle Röstungen bewahren mehr vom Charakter der Herkunft, mit lebhafter Säure und fruchtigen oder blumigen Noten.",
+      "Mittlere Röstungen balancieren Süße und Säure, oft mit Noten von Karamell, Nuss oder Schokolade.",
+      "Dunkle Röstungen schmecken röstig und bittersüß mit mehr Körper; beim Koffein ist der Unterschied gering."
+     ],
+     "q": "Magst du Kaffee lieber hell und fruchtig oder dunkel und schokoladig?",
+     "c": "Probiere eine helle und eine dunkle Röstung nebeneinander und notiere, welche saurer wirkt."
+    },
+    "es": {
+     "t": "Tuestes claro, medio y oscuro",
+     "g": "Descubre cómo el nivel de tueste cambia la acidez, el cuerpo y el amargor de tu taza.",
+     "p": [
+      "Los tuestes claros conservan más el carácter del origen, con acidez viva y notas frutales o florales.",
+      "Los tuestes medios equilibran dulzor y acidez, a menudo con sabores a caramelo, frutos secos o chocolate.",
+      "Los tuestes oscuros saben a tostado y agridulce, con más cuerpo; la diferencia de cafeína entre ellos es pequeña."
+     ],
+     "q": "¿Prefieres un café brillante y afrutado o uno oscuro y achocolatado?",
+     "c": "Prueba un tueste claro y uno oscuro uno al lado del otro y anota cuál te parece más ácido."
+    },
+    "fr": {
+     "t": "Torréfactions claire, moyenne et foncée",
+     "g": "Vois comment le degré de torréfaction change l'acidité, le corps et l'amertume dans ta tasse.",
+     "p": [
+      "Les torréfactions claires gardent davantage le caractère de l'origine, avec une acidité vive et des notes fruitées ou florales.",
+      "Les torréfactions moyennes équilibrent douceur et acidité, souvent avec des notes de caramel, de noisette ou de chocolat.",
+      "Les torréfactions foncées sont grillées, douces-amères et plus corsées ; l'écart de caféine reste faible."
+     ],
+     "q": "Préfères-tu un café vif et fruité ou sombre et chocolaté ?",
+     "c": "Goûte une torréfaction claire et une foncée côte à côte et note laquelle te paraît la plus acide."
+    },
+    "it": {
+     "t": "Tostature chiara, media e scura",
+     "g": "Scopri come il grado di tostatura cambia acidità, corpo e amarezza nella tazza.",
+     "p": [
+      "Le tostature chiare conservano di più il carattere dell'origine, con acidità vivace e note fruttate o floreali.",
+      "Le tostature medie bilanciano dolcezza e acidità, spesso con sentori di caramello, frutta secca o cioccolato.",
+      "Le tostature scure sanno di tostato e agrodolce, con più corpo; la differenza di caffeina tra i livelli è piccola."
+     ],
+     "q": "Preferisci un caffè vivace e fruttato o scuro e cioccolatoso?",
+     "c": "Assaggia una tostatura chiara e una scura una accanto all'altra e annota quale ti sembra più acida."
+    },
+    "pt": {
+     "t": "Torras clara, média e escura",
+     "g": "Vê como o grau de torra muda a acidez, o corpo e o amargor na tua chávena.",
+     "p": [
+      "As torras claras guardam mais o carácter da origem, com acidez viva e notas frutadas ou florais.",
+      "As torras médias equilibram doçura e acidez, muitas vezes com sabores a caramelo, frutos secos ou chocolate.",
+      "As torras escuras sabem a tostado e agridoce, com mais corpo; a diferença de cafeína entre elas é pequena."
+     ],
+     "q": "Preferes um café vivo e frutado ou escuro e achocolatado?",
+     "c": "Prova uma torra clara e uma escura lado a lado e aponta qual te parece mais ácida."
+    },
+    "pt_BR": {
+     "t": "Torras clara, média e escura",
+     "g": "Veja como o ponto de torra muda a acidez, o corpo e o amargor na sua xícara.",
+     "p": [
+      "As torras claras preservam mais o caráter da origem, com acidez viva e notas frutadas ou florais.",
+      "As torras médias equilibram doçura e acidez, muitas vezes com notas de caramelo, castanhas ou chocolate.",
+      "As torras escuras têm gosto tostado e agridoce, com mais corpo; a diferença de cafeína entre elas é pequena."
+     ],
+     "q": "Você prefere um café vivo e frutado ou escuro e achocolatado?",
+     "c": "Prove uma torra clara e uma escura lado a lado e anote qual parece mais ácida."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "world_cuisines",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a cuisine",
+     "g": "Discover the four building blocks behind every food culture on the planet.",
+     "p": [
+      "Ingredients come first: what grows, grazes or swims nearby shapes the menu.",
+      "Techniques like steaming, grilling or fermenting give each cuisine its own texture.",
+      "Climate and history matter too: trade routes and migrations carried flavours far."
+     ],
+     "q": "Which dish from your childhood tells the most about where you grew up?",
+     "c": "Pick one meal you ate this week and name its main ingredient and cooking technique."
+    },
+    "de": {
+     "t": "Was eine Küche ausmacht",
+     "g": "Lerne die vier Bausteine kennen, die hinter jeder Esskultur der Welt stehen.",
+     "p": [
+      "Zuerst die Zutaten: Was in der Nähe wächst, weidet oder schwimmt, prägt die Speisekarte.",
+      "Techniken wie Dämpfen, Grillen oder Fermentieren geben jeder Küche ihre eigene Textur.",
+      "Auch Klima und Geschichte zählen: Handelswege und Wanderungen trugen Aromen weit hinaus."
+     ],
+     "q": "Welches Gericht aus deiner Kindheit verrät am meisten darüber, wo du aufgewachsen bist?",
+     "c": "Nimm eine Mahlzeit dieser Woche und benenne ihre Hauptzutat und die Garmethode."
+    },
+    "es": {
+     "t": "Qué hace una cocina",
+     "g": "Descubre los cuatro pilares que hay detrás de cada cultura gastronómica del mundo.",
+     "p": [
+      "Primero los ingredientes: lo que crece, pasta o nada cerca define el menú.",
+      "Técnicas como el vapor, la parrilla o la fermentación dan a cada cocina su textura.",
+      "El clima y la historia también cuentan: rutas comerciales y migraciones llevaron sabores lejos."
+     ],
+     "q": "¿Qué plato de tu infancia cuenta más sobre el lugar donde creciste?",
+     "c": "Elige una comida de esta semana y nombra su ingrediente principal y su técnica de cocción."
+    },
+    "fr": {
+     "t": "Ce qui fait une cuisine",
+     "g": "Découvre les quatre piliers qui se cachent derrière chaque culture culinaire du monde.",
+     "p": [
+      "D'abord les ingrédients : ce qui pousse, broute ou nage tout près façonne le menu.",
+      "Des techniques comme la vapeur, le gril ou la fermentation donnent à chaque cuisine sa texture.",
+      "Le climat et l'histoire comptent aussi : routes commerciales et migrations ont porté les saveurs loin."
+     ],
+     "q": "Quel plat de ton enfance en dit le plus sur l'endroit où tu as grandi ?",
+     "c": "Choisis un repas de cette semaine et nomme son ingrédient principal et sa technique de cuisson."
+    },
+    "it": {
+     "t": "Cosa rende una cucina tale",
+     "g": "Scopri i quattro pilastri che stanno dietro a ogni cultura gastronomica del mondo.",
+     "p": [
+      "Prima gli ingredienti: ciò che cresce, pascola o nuota vicino plasma il menu.",
+      "Tecniche come vapore, griglia o fermentazione danno a ogni cucina la sua consistenza.",
+      "Contano anche clima e storia: rotte commerciali e migrazioni hanno portato i sapori lontano."
+     ],
+     "q": "Quale piatto della tua infanzia racconta di più sul luogo dove sei cresciuto?",
+     "c": "Scegli un pasto di questa settimana e indica l'ingrediente principale e la tecnica di cottura."
+    },
+    "pt": {
+     "t": "O que faz uma cozinha",
+     "g": "Descobre os quatro pilares que estão por trás de cada cultura gastronómica do mundo.",
+     "p": [
+      "Primeiro os ingredientes: o que cresce, pasta ou nada por perto define a ementa.",
+      "Técnicas como o vapor, a grelha ou a fermentação dão a cada cozinha a sua textura.",
+      "O clima e a história também contam: rotas comerciais e migrações levaram sabores para longe."
+     ],
+     "q": "Que prato da tua infância diz mais sobre o sítio onde cresceste?",
+     "c": "Escolhe uma refeição desta semana e diz qual o ingrediente principal e a técnica de cozedura."
+    },
+    "pt_BR": {
+     "t": "O que faz uma culinária",
+     "g": "Descubra os quatro pilares que estão por trás de cada cultura gastronômica do mundo.",
+     "p": [
+      "Primeiro os ingredientes: o que cresce, pasta ou nada por perto define o cardápio.",
+      "Técnicas como vapor, grelha ou fermentação dão a cada culinária sua textura própria.",
+      "Clima e história também contam: rotas comerciais e migrações levaram sabores para longe."
+     ],
+     "q": "Qual prato da sua infância conta mais sobre o lugar onde você cresceu?",
+     "c": "Escolha uma refeição desta semana e diga qual é o ingrediente principal e a técnica de preparo."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staple grains of the world",
+     "g": "See how rice, wheat and maize feed most of humanity and where each one rules.",
+     "p": [
+      "Rice dominates much of Asia, thriving in warm, wet fields and paddies.",
+      "Wheat rules in Europe, the Middle East and North India as bread, pasta and flatbread.",
+      "Maize, first domesticated in Mexico, is the heart of tortillas, polenta and arepas."
+     ],
+     "q": "Which grain shows up most often on your plate during a normal week?",
+     "c": "Cook or buy one dish made from a grain you rarely eat and notice its texture."
+    },
+    "de": {
+     "t": "Grundgetreide der Welt",
+     "g": "Sieh, wie Reis, Weizen und Mais den Großteil der Menschheit ernähren und wo sie regieren.",
+     "p": [
+      "Reis dominiert weite Teile Asiens und gedeiht auf warmen, nassen Feldern.",
+      "Weizen herrscht in Europa, Nahost und Nordindien als Brot, Pasta und Fladenbrot.",
+      "Mais, zuerst in Mexiko domestiziert, ist das Herz von Tortillas, Polenta und Arepas."
+     ],
+     "q": "Welches Getreide landet in einer normalen Woche am häufigsten auf deinem Teller?",
+     "c": "Koche oder kaufe ein Gericht aus einem Getreide, das du selten isst, und achte auf die Textur."
+    },
+    "es": {
+     "t": "Cereales básicos del mundo",
+     "g": "Mira cómo el arroz, el trigo y el maíz alimentan a gran parte de la humanidad.",
+     "p": [
+      "El arroz domina gran parte de Asia y prospera en campos cálidos e inundados.",
+      "El trigo reina en Europa, Oriente Medio y el norte de India como pan, pasta y pan plano.",
+      "El maíz, domesticado en México, es el corazón de tortillas, polenta y arepas."
+     ],
+     "q": "¿Qué cereal aparece más a menudo en tu plato durante una semana normal?",
+     "c": "Cocina o compra un plato hecho con un cereal que casi nunca comes y fíjate en su textura."
+    },
+    "fr": {
+     "t": "Les céréales de base du monde",
+     "g": "Vois comment le riz, le blé et le maïs nourrissent la majeure partie de l'humanité.",
+     "p": [
+      "Le riz domine une grande partie de l'Asie et prospère dans des rizières chaudes et humides.",
+      "Le blé règne en Europe, au Moyen-Orient et en Inde du Nord en pain, pâtes et galettes.",
+      "Le maïs, domestiqué au Mexique, est au cœur des tortillas, de la polenta et des arepas."
+     ],
+     "q": "Quelle céréale apparaît le plus souvent dans ton assiette pendant une semaine normale ?",
+     "c": "Cuisine ou achète un plat à base d'une céréale que tu manges rarement et observe sa texture."
+    },
+    "it": {
+     "t": "I cereali base del mondo",
+     "g": "Scopri come riso, grano e mais nutrono gran parte dell'umanità e dove regna ciascuno.",
+     "p": [
+      "Il riso domina gran parte dell'Asia e prospera in risaie calde e allagate.",
+      "Il grano regna in Europa, Medio Oriente e India del nord come pane, pasta e focacce.",
+      "Il mais, addomesticato in Messico, è il cuore di tortillas, polenta e arepas."
+     ],
+     "q": "Quale cereale compare più spesso nel tuo piatto durante una settimana normale?",
+     "c": "Cucina o compra un piatto fatto con un cereale che mangi di rado e osserva la sua consistenza."
+    },
+    "pt": {
+     "t": "Os cereais base do mundo",
+     "g": "Vê como o arroz, o trigo e o milho alimentam a maior parte da humanidade.",
+     "p": [
+      "O arroz domina grande parte da Ásia e prospera em campos quentes e alagados.",
+      "O trigo reina na Europa, no Médio Oriente e no norte da Índia como pão, massa e pão achatado.",
+      "O milho, domesticado no México, é o coração das tortilhas, da polenta e das arepas."
+     ],
+     "q": "Que cereal aparece mais vezes no teu prato numa semana normal?",
+     "c": "Cozinha ou compra um prato feito com um cereal que raramente comes e repara na textura."
+    },
+    "pt_BR": {
+     "t": "Os grãos básicos do mundo",
+     "g": "Veja como arroz, trigo e milho alimentam a maior parte da humanidade.",
+     "p": [
+      "O arroz domina grande parte da Ásia e prospera em campos quentes e alagados.",
+      "O trigo reina na Europa, no Oriente Médio e no norte da Índia como pão, massa e pão sírio.",
+      "O milho, domesticado no México, é o coração das tortilhas, da polenta e das arepas."
+     ],
+     "q": "Qual grão aparece com mais frequência no seu prato numa semana normal?",
+     "c": "Cozinhe ou compre um prato feito com um grão que você raramente come e repare na textura."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The magic of spices",
+     "g": "Learn how a handful of spices travelled the world and shaped regional flavours.",
+     "p": [
+      "Black pepper from southern India was once one of the most traded goods on earth.",
+      "Cinnamon and cumin moved along old land and sea routes between Asia, Africa and Europe.",
+      "Chili came from the Americas and, after 1492, spread fast into Asian and African cooking."
+     ],
+     "q": "Which spice could you never give up in your kitchen, and why?",
+     "c": "Smell three spices in your kitchen one by one and describe each in a single word."
+    },
+    "de": {
+     "t": "Die Magie der Gewürze",
+     "g": "Erfahre, wie eine Handvoll Gewürze um die Welt reiste und regionale Aromen prägte.",
+     "p": [
+      "Schwarzer Pfeffer aus Südindien war einst eine der meistgehandelten Waren der Welt.",
+      "Zimt und Kreuzkümmel reisten über alte Land- und Seewege zwischen Asien, Afrika und Europa.",
+      "Chili stammt aus Amerika und verbreitete sich nach 1492 schnell in Asien und Afrika."
+     ],
+     "q": "Auf welches Gewürz könntest du in deiner Küche nie verzichten, und warum?",
+     "c": "Rieche nacheinander an drei Gewürzen aus deiner Küche und beschreibe jedes mit einem Wort."
+    },
+    "es": {
+     "t": "La magia de las especias",
+     "g": "Aprende cómo unas pocas especias viajaron por el mundo y moldearon sabores regionales.",
+     "p": [
+      "La pimienta negra del sur de India fue uno de los bienes más comerciados del mundo.",
+      "La canela y el comino viajaron por antiguas rutas entre Asia, África y Europa.",
+      "El chile vino de América y, tras 1492, se extendió rápido por Asia y África."
+     ],
+     "q": "¿Qué especia nunca podrías quitar de tu cocina y por qué?",
+     "c": "Huele tres especias de tu cocina una por una y describe cada una con una sola palabra."
+    },
+    "fr": {
+     "t": "La magie des épices",
+     "g": "Découvre comment quelques épices ont voyagé autour du monde et façonné les saveurs.",
+     "p": [
+      "Le poivre noir du sud de l'Inde fut l'une des marchandises les plus échangées au monde.",
+      "La cannelle et le cumin ont circulé sur d'anciennes routes entre Asie, Afrique et Europe.",
+      "Le piment vient des Amériques et, après 1492, s'est vite répandu en Asie et en Afrique."
+     ],
+     "q": "De quelle épice ne pourrais-tu jamais te passer en cuisine, et pourquoi ?",
+     "c": "Sens trois épices de ta cuisine l'une après l'autre et décris chacune en un seul mot."
+    },
+    "it": {
+     "t": "La magia delle spezie",
+     "g": "Scopri come poche spezie hanno viaggiato per il mondo plasmando i sapori regionali.",
+     "p": [
+      "Il pepe nero dell'India del sud era tra le merci più scambiate al mondo.",
+      "Cannella e cumino hanno viaggiato su antiche rotte tra Asia, Africa ed Europa.",
+      "Il peperoncino viene dalle Americhe e dopo il 1492 si diffuse in fretta in Asia e Africa."
+     ],
+     "q": "A quale spezia non potresti mai rinunciare in cucina, e perché?",
+     "c": "Annusa tre spezie della tua cucina una alla volta e descrivi ciascuna con una sola parola."
+    },
+    "pt": {
+     "t": "A magia das especiarias",
+     "g": "Aprende como algumas especiarias viajaram pelo mundo e moldaram sabores regionais.",
+     "p": [
+      "A pimenta-preta do sul da Índia foi um dos bens mais comercializados do mundo.",
+      "A canela e os cominhos viajaram por antigas rotas entre a Ásia, a África e a Europa.",
+      "A malagueta veio das Américas e, depois de 1492, espalhou-se depressa pela Ásia e África."
+     ],
+     "q": "De que especiaria nunca abdicarias na tua cozinha, e porquê?",
+     "c": "Cheira três especiarias da tua cozinha, uma de cada vez, e descreve cada uma numa só palavra."
+    },
+    "pt_BR": {
+     "t": "A magia das especiarias",
+     "g": "Aprenda como algumas especiarias viajaram pelo mundo e moldaram sabores regionais.",
+     "p": [
+      "A pimenta-do-reino do sul da Índia foi um dos bens mais comercializados do mundo.",
+      "A canela e o cominho viajaram por antigas rotas entre Ásia, África e Europa.",
+      "A pimenta vermelha veio das Américas e, depois de 1492, se espalhou rápido pela Ásia e África."
+     ],
+     "q": "De qual especiaria você nunca abriria mão na cozinha, e por quê?",
+     "c": "Cheire três especiarias da sua cozinha, uma de cada vez, e descreva cada uma em uma só palavra."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Herbs across cultures",
+     "g": "Find out how fresh herbs reveal a region at the very first bite.",
+     "p": [
+      "Basil is central in Italian pesto and, as Thai basil, in many Southeast Asian dishes.",
+      "Coriander leaves brighten Mexican salsas, Indian chutneys and Vietnamese soups.",
+      "Mint and dill shine in the Middle East, Greece, Scandinavia and Eastern Europe."
+     ],
+     "q": "Do you love or dislike fresh coriander? Many people have strong feelings about it!",
+     "c": "Add a handful of one fresh herb to a simple dish today and taste the difference."
+    },
+    "de": {
+     "t": "Kräuter in vielen Kulturen",
+     "g": "Finde heraus, wie frische Kräuter eine Region schon beim ersten Bissen verraten.",
+     "p": [
+      "Basilikum steht im italienischen Pesto und als Thai-Basilikum in vielen Gerichten Südostasiens.",
+      "Korianderblätter beleben mexikanische Salsas, indische Chutneys und vietnamesische Suppen.",
+      "Minze und Dill glänzen in Nahost, Griechenland, Skandinavien und Osteuropa."
+     ],
+     "q": "Liebst du frischen Koriander oder magst du ihn gar nicht? Viele haben dazu eine klare Meinung!",
+     "c": "Gib heute eine Handvoll eines frischen Krauts in ein einfaches Gericht und schmecke den Unterschied."
+    },
+    "es": {
+     "t": "Hierbas en muchas culturas",
+     "g": "Descubre cómo las hierbas frescas revelan una región desde el primer bocado.",
+     "p": [
+      "La albahaca es clave en el pesto italiano y, como albahaca tailandesa, en el sudeste asiático.",
+      "El cilantro alegra las salsas mexicanas, los chutneys indios y las sopas vietnamitas.",
+      "La menta y el eneldo brillan en Oriente Medio, Grecia, Escandinavia y Europa del Este."
+     ],
+     "q": "¿Te encanta el cilantro fresco o no lo soportas? ¡Mucha gente tiene una opinión clara!",
+     "c": "Añade un puñado de una hierba fresca a un plato sencillo hoy y nota la diferencia."
+    },
+    "fr": {
+     "t": "Les herbes dans le monde",
+     "g": "Découvre comment les herbes fraîches révèlent une région dès la première bouchée.",
+     "p": [
+      "Le basilic est au cœur du pesto italien et, en basilic thaï, de plats d'Asie du Sud-Est.",
+      "La coriandre fraîche égaie les salsas mexicaines, les chutneys indiens et les soupes vietnamiennes.",
+      "La menthe et l'aneth brillent au Moyen-Orient, en Grèce, en Scandinavie et en Europe de l'Est."
+     ],
+     "q": "Tu adores la coriandre fraîche ou tu la détestes ? Beaucoup de gens ont un avis tranché !",
+     "c": "Ajoute une poignée d'une herbe fraîche à un plat simple aujourd'hui et goûte la différence."
+    },
+    "it": {
+     "t": "Le erbe nelle culture",
+     "g": "Scopri come le erbe fresche rivelano una regione già al primo morso.",
+     "p": [
+      "Il basilico è centrale nel pesto e, come basilico thai, in molti piatti del Sud-est asiatico.",
+      "Il coriandolo fresco ravviva salse messicane, chutney indiani e zuppe vietnamite.",
+      "Menta e aneto brillano in Medio Oriente, Grecia, Scandinavia ed Europa dell'Est."
+     ],
+     "q": "Adori il coriandolo fresco o non lo sopporti? Molte persone hanno un'opinione netta!",
+     "c": "Aggiungi oggi una manciata di un'erba fresca a un piatto semplice e senti la differenza."
+    },
+    "pt": {
+     "t": "Ervas em várias culturas",
+     "g": "Descobre como as ervas frescas revelam uma região logo à primeira dentada.",
+     "p": [
+      "O manjericão é central no pesto italiano e, como manjericão tailandês, no Sudeste Asiático.",
+      "Os coentros alegram salsas mexicanas, chutneys indianos e sopas vietnamitas, e muitos pratos portugueses.",
+      "A hortelã e o endro brilham no Médio Oriente, Grécia, Escandinávia e Europa de Leste."
+     ],
+     "q": "Adoras coentros ou não os suportas? Muita gente tem uma opinião bem firme!",
+     "c": "Junta hoje um punhado de uma erva fresca a um prato simples e prova a diferença."
+    },
+    "pt_BR": {
+     "t": "Ervas em várias culturas",
+     "g": "Descubra como as ervas frescas revelam uma região logo na primeira mordida.",
+     "p": [
+      "O manjericão é central no pesto italiano e, como manjericão tailandês, no Sudeste Asiático.",
+      "O coentro alegra salsas mexicanas, chutneys indianos, sopas vietnamitas e muitos pratos do Nordeste.",
+      "A hortelã e o endro brilham no Oriente Médio, Grécia, Escandinávia e Leste Europeu."
+     ],
+     "q": "Você ama coentro ou não suporta? Muita gente tem uma opinião bem firme!",
+     "c": "Coloque hoje um punhado de uma erva fresca em um prato simples e sinta a diferença."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five basic tastes",
+     "g": "Meet sweet, salty, sour, bitter and umami and see how cuisines balance them.",
+     "p": [
+      "Umami, the savoury taste, was named in 1908 by Japanese chemist Kikunae Ikeda.",
+      "Soy sauce, parmesan, tomatoes and mushrooms are all rich in umami.",
+      "Many cuisines aim for balance: a squeeze of lemon or pinch of salt can lift a whole dish."
+     ],
+     "q": "Which of the five tastes do you crave most when you are hungry?",
+     "c": "Taste a dish, then add a little salt or lemon and notice which taste it brings forward."
+    },
+    "de": {
+     "t": "Die fünf Grundgeschmäcker",
+     "g": "Lerne süß, salzig, sauer, bitter und umami kennen und wie Küchen sie ausbalancieren.",
+     "p": [
+      "Umami, der herzhafte Geschmack, wurde 1908 vom japanischen Chemiker Kikunae Ikeda benannt.",
+      "Sojasauce, Parmesan, Tomaten und Pilze sind reich an Umami.",
+      "Viele Küchen streben nach Balance: Ein Spritzer Zitrone oder eine Prise Salz hebt ein Gericht."
+     ],
+     "q": "Nach welchem der fünf Geschmäcker sehnst du dich am meisten, wenn du hungrig bist?",
+     "c": "Probiere ein Gericht, gib etwas Salz oder Zitrone dazu und achte, welcher Geschmack hervortritt."
+    },
+    "es": {
+     "t": "Los cinco sabores básicos",
+     "g": "Conoce el dulce, salado, ácido, amargo y umami, y cómo cada cocina los equilibra.",
+     "p": [
+      "El umami, el sabor sabroso, fue nombrado en 1908 por el químico japonés Kikunae Ikeda.",
+      "La salsa de soja, el parmesano, los tomates y las setas son ricos en umami.",
+      "Muchas cocinas buscan equilibrio: un chorrito de limón o una pizca de sal realzan un plato."
+     ],
+     "q": "¿Cuál de los cinco sabores te apetece más cuando tienes hambre?",
+     "c": "Prueba un plato, añade un poco de sal o limón y fíjate qué sabor se destaca."
+    },
+    "fr": {
+     "t": "Les cinq saveurs de base",
+     "g": "Découvre le sucré, le salé, l'acide, l'amer et l'umami, et comment les cuisines les équilibrent.",
+     "p": [
+      "L'umami, saveur savoureuse, a été nommé en 1908 par le chimiste japonais Kikunae Ikeda.",
+      "La sauce soja, le parmesan, la tomate et les champignons sont riches en umami.",
+      "Beaucoup de cuisines cherchent l'équilibre : un filet de citron ou une pincée de sel réveille un plat."
+     ],
+     "q": "Laquelle des cinq saveurs te fait le plus envie quand tu as faim ?",
+     "c": "Goûte un plat, ajoute un peu de sel ou de citron et observe quelle saveur ressort."
+    },
+    "it": {
+     "t": "I cinque gusti di base",
+     "g": "Conosci dolce, salato, acido, amaro e umami e scopri come le cucine li bilanciano.",
+     "p": [
+      "L'umami, il gusto sapido, fu chiamato così nel 1908 dal chimico giapponese Kikunae Ikeda.",
+      "Salsa di soia, parmigiano, pomodori e funghi sono ricchi di umami.",
+      "Molte cucine cercano l'equilibrio: un filo di limone o un pizzico di sale esaltano un piatto."
+     ],
+     "q": "Quale dei cinque gusti desideri di più quando hai fame?",
+     "c": "Assaggia un piatto, aggiungi un po' di sale o limone e nota quale gusto emerge."
+    },
+    "pt": {
+     "t": "Os cinco sabores básicos",
+     "g": "Conhece o doce, o salgado, o ácido, o amargo e o umami, e como as cozinhas os equilibram.",
+     "p": [
+      "O umami, o sabor saboroso, foi batizado em 1908 pelo químico japonês Kikunae Ikeda.",
+      "O molho de soja, o parmesão, o tomate e os cogumelos são ricos em umami.",
+      "Muitas cozinhas procuram equilíbrio: um pouco de limão ou uma pitada de sal realçam um prato."
+     ],
+     "q": "Qual dos cinco sabores te apetece mais quando tens fome?",
+     "c": "Prova um prato, junta um pouco de sal ou limão e repara que sabor fica em destaque."
+    },
+    "pt_BR": {
+     "t": "Os cinco sabores básicos",
+     "g": "Conheça o doce, o salgado, o azedo, o amargo e o umami, e como as culinárias os equilibram.",
+     "p": [
+      "O umami, o sabor saboroso, foi nomeado em 1908 pelo químico japonês Kikunae Ikeda.",
+      "Shoyu, parmesão, tomate e cogumelos são ricos em umami.",
+      "Muitas culinárias buscam equilíbrio: um pouco de limão ou uma pitada de sal realçam um prato."
+     ],
+     "q": "Qual dos cinco sabores você mais deseja quando está com fome?",
+     "c": "Prove um prato, acrescente um pouco de sal ou limão e repare qual sabor se destaca."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fats that define flavour",
+     "g": "See how the cooking fat used in a kitchen becomes a signature of the region.",
+     "p": [
+      "Olive oil defines the Mediterranean, while butter shapes much of northern French cooking.",
+      "Ghee, clarified butter, is prized in Indian cooking for its nutty aroma.",
+      "Coconut oil and milk flavour many dishes in South India, Southeast Asia and the Caribbean."
+     ],
+     "q": "Which cooking fat do you use most at home, and did your family use the same one?",
+     "c": "Fry the same simple ingredient in two different fats and compare the flavours."
+    },
+    "de": {
+     "t": "Fette, die Geschmack prägen",
+     "g": "Sieh, wie das Kochfett einer Küche zum Markenzeichen einer Region wird.",
+     "p": [
+      "Olivenöl prägt den Mittelmeerraum, Butter einen Großteil der nordfranzösischen Küche.",
+      "Ghee, geklärte Butter, wird in der indischen Küche für sein nussiges Aroma geschätzt.",
+      "Kokosöl und Kokosmilch würzen viele Gerichte in Südindien, Südostasien und der Karibik."
+     ],
+     "q": "Welches Kochfett verwendest du zu Hause am meisten, und war es in deiner Familie dasselbe?",
+     "c": "Brate dieselbe einfache Zutat in zwei verschiedenen Fetten an und vergleiche den Geschmack."
+    },
+    "es": {
+     "t": "Grasas que definen el sabor",
+     "g": "Mira cómo la grasa de cocina de un lugar se convierte en su firma regional.",
+     "p": [
+      "El aceite de oliva define el Mediterráneo; la mantequilla, gran parte de la cocina del norte de Francia.",
+      "El ghee, mantequilla clarificada, se aprecia en la cocina india por su aroma a nuez.",
+      "El aceite y la leche de coco dan sabor a platos del sur de India, el sudeste asiático y el Caribe."
+     ],
+     "q": "¿Qué grasa usas más en casa y era la misma que usaba tu familia?",
+     "c": "Fríe el mismo ingrediente sencillo en dos grasas distintas y compara los sabores."
+    },
+    "fr": {
+     "t": "Les graisses qui font le goût",
+     "g": "Vois comment la matière grasse d'une cuisine devient la signature d'une région.",
+     "p": [
+      "L'huile d'olive définit la Méditerranée, le beurre une grande partie de la cuisine du nord de la France.",
+      "Le ghee, beurre clarifié, est apprécié en cuisine indienne pour son arôme de noisette.",
+      "L'huile et le lait de coco parfument de nombreux plats d'Inde du Sud, d'Asie du Sud-Est et des Caraïbes."
+     ],
+     "q": "Quelle matière grasse utilises-tu le plus chez toi, et ta famille utilisait-elle la même ?",
+     "c": "Fais revenir le même ingrédient simple dans deux graisses différentes et compare les saveurs."
+    },
+    "it": {
+     "t": "Grassi che definiscono il gusto",
+     "g": "Scopri come il grasso usato in cucina diventa la firma di una regione.",
+     "p": [
+      "L'olio d'oliva definisce il Mediterraneo, il burro gran parte della cucina del nord della Francia.",
+      "Il ghee, burro chiarificato, è amato nella cucina indiana per il suo aroma di nocciola.",
+      "Olio e latte di cocco insaporiscono piatti dell'India del sud, del Sud-est asiatico e dei Caraibi."
+     ],
+     "q": "Quale grasso usi di più a casa, ed era lo stesso della tua famiglia?",
+     "c": "Rosola lo stesso ingrediente semplice in due grassi diversi e confronta i sapori."
+    },
+    "pt": {
+     "t": "Gorduras que definem o sabor",
+     "g": "Vê como a gordura usada numa cozinha se torna a assinatura de uma região.",
+     "p": [
+      "O azeite define o Mediterrâneo e Portugal, enquanto a manteiga marca a cozinha do norte de França.",
+      "O ghee, manteiga clarificada, é apreciado na cozinha indiana pelo seu aroma a noz.",
+      "O óleo e o leite de coco dão sabor a pratos do sul da Índia, do Sudeste Asiático e das Caraíbas."
+     ],
+     "q": "Que gordura usas mais em casa, e a tua família usava a mesma?",
+     "c": "Salteia o mesmo ingrediente simples em duas gorduras diferentes e compara os sabores."
+    },
+    "pt_BR": {
+     "t": "Gorduras que definem o sabor",
+     "g": "Veja como a gordura usada numa cozinha vira a assinatura de uma região.",
+     "p": [
+      "O azeite define o Mediterrâneo, enquanto a manteiga marca a cozinha do norte da França.",
+      "O ghee, manteiga clarificada, é valorizado na cozinha indiana pelo aroma de nozes.",
+      "O óleo e o leite de coco dão sabor a pratos do sul da Índia, do Sudeste Asiático e da Bahia."
+     ],
+     "q": "Qual gordura você mais usa em casa, e sua família usava a mesma?",
+     "c": "Refogue o mesmo ingrediente simples em duas gorduras diferentes e compare os sabores."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italy: pasta basics",
+     "g": "Understand dried versus fresh pasta and why shape and sauce are matched.",
+     "p": [
+      "Dried pasta is made from durum wheat semolina and water, common in southern Italy.",
+      "Fresh egg pasta, like tagliatelle, is a classic of regions such as Emilia-Romagna.",
+      "Ridged or hollow shapes hold chunky sauces; long thin strands suit smooth, light sauces."
+     ],
+     "q": "What is your favourite pasta shape, and what sauce do you like with it?",
+     "c": "Cook pasta today and save a splash of its starchy water to help the sauce cling."
+    },
+    "de": {
+     "t": "Italien: Pasta-Grundlagen",
+     "g": "Verstehe getrocknete und frische Pasta und warum Form und Sauce zusammenpassen.",
+     "p": [
+      "Getrocknete Pasta besteht aus Hartweizengrieß und Wasser und ist im Süden Italiens verbreitet.",
+      "Frische Eierpasta wie Tagliatelle ist ein Klassiker von Regionen wie der Emilia-Romagna.",
+      "Geriffelte oder hohle Formen halten stückige Saucen, lange dünne Nudeln passen zu glatten."
+     ],
+     "q": "Was ist deine liebste Pastaform, und welche Sauce isst du gern dazu?",
+     "c": "Koche heute Pasta und heb einen Schluck Nudelwasser auf, damit die Sauce besser haftet."
+    },
+    "es": {
+     "t": "Italia: la pasta básica",
+     "g": "Entiende la pasta seca frente a la fresca y por qué se combina forma y salsa.",
+     "p": [
+      "La pasta seca se hace con sémola de trigo duro y agua, típica del sur de Italia.",
+      "La pasta fresca al huevo, como los tagliatelle, es un clásico de regiones como Emilia-Romaña.",
+      "Las formas estriadas o huecas atrapan salsas con trozos; las largas y finas van con salsas lisas."
+     ],
+     "q": "¿Cuál es tu forma de pasta favorita y con qué salsa te gusta?",
+     "c": "Cocina pasta hoy y guarda un poco de su agua con almidón para que la salsa se adhiera mejor."
+    },
+    "fr": {
+     "t": "Italie : les bases des pâtes",
+     "g": "Comprends pâtes sèches et fraîches, et pourquoi on associe forme et sauce.",
+     "p": [
+      "Les pâtes sèches sont faites de semoule de blé dur et d'eau, courantes dans le sud de l'Italie.",
+      "Les pâtes fraîches aux œufs, comme les tagliatelles, sont un classique de l'Émilie-Romagne.",
+      "Les formes striées ou creuses retiennent les sauces épaisses, les pâtes longues et fines les sauces lisses."
+     ],
+     "q": "Quelle est ta forme de pâtes préférée, et avec quelle sauce l'aimes-tu ?",
+     "c": "Fais cuire des pâtes aujourd'hui et garde un peu d'eau de cuisson pour lier la sauce."
+    },
+    "it": {
+     "t": "Italia: le basi della pasta",
+     "g": "Capisci la differenza tra pasta secca e fresca e perché si abbinano formato e sugo.",
+     "p": [
+      "La pasta secca si fa con semola di grano duro e acqua ed è tipica del sud Italia.",
+      "La pasta fresca all'uovo, come le tagliatelle, è un classico di regioni come l'Emilia-Romagna.",
+      "I formati rigati o cavi trattengono sughi corposi; quelli lunghi e sottili amano sughi lisci."
+     ],
+     "q": "Qual è il tuo formato di pasta preferito e con quale sugo lo mangi?",
+     "c": "Cuoci la pasta oggi e tieni da parte un po' d'acqua di cottura per mantecare il sugo."
+    },
+    "pt": {
+     "t": "Itália: noções de massa",
+     "g": "Percebe a diferença entre massa seca e fresca e porque se combinam formato e molho.",
+     "p": [
+      "A massa seca é feita de sêmola de trigo duro e água, muito comum no sul de Itália.",
+      "A massa fresca com ovo, como o tagliatelle, é um clássico de regiões como a Emília-Romanha.",
+      "Formatos estriados ou ocos agarram molhos com pedaços; os longos e finos pedem molhos lisos."
+     ],
+     "q": "Qual é o teu formato de massa preferido e com que molho gostas de o comer?",
+     "c": "Coze massa hoje e guarda um pouco da água da cozedura para ligar o molho."
+    },
+    "pt_BR": {
+     "t": "Itália: o básico das massas",
+     "g": "Entenda a diferença entre massa seca e fresca e por que se combinam formato e molho.",
+     "p": [
+      "A massa seca é feita de sêmola de trigo duro e água, muito comum no sul da Itália.",
+      "A massa fresca com ovos, como o talharim, é um clássico de regiões como a Emília-Romanha.",
+      "Formatos com ranhuras ou ocos seguram molhos pedaçudos; os longos e finos pedem molhos lisos."
+     ],
+     "q": "Qual é o seu formato de massa favorito e com que molho você gosta dele?",
+     "c": "Cozinhe massa hoje e guarde um pouco da água do cozimento para encorpar o molho."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italy: Neapolitan pizza",
+     "g": "Get to know the soft, blistered pizza of Naples and its famous Margherita.",
+     "p": [
+      "Neapolitan pizza bakes in a very hot wood-fired oven for only about 60 to 90 seconds.",
+      "The Margherita uses tomato, mozzarella and basil, the colours of the Italian flag.",
+      "In 2017 UNESCO recognised the art of the Neapolitan pizzaiuolo as cultural heritage."
+     ],
+     "q": "What toppings make your perfect pizza, simple or loaded?",
+     "c": "Make a mini Margherita on bread or dough with just tomato, mozzarella and basil."
+    },
+    "de": {
+     "t": "Italien: Neapolitanische Pizza",
+     "g": "Lerne die weiche, blasige Pizza aus Neapel und ihre berühmte Margherita kennen.",
+     "p": [
+      "Neapolitanische Pizza backt im sehr heißen Holzofen nur etwa 60 bis 90 Sekunden.",
+      "Die Margherita trägt Tomate, Mozzarella und Basilikum, die Farben der italienischen Flagge.",
+      "2017 erkannte die UNESCO die Kunst der neapolitanischen Pizzaiuoli als Kulturerbe an."
+     ],
+     "q": "Welcher Belag macht deine perfekte Pizza aus, schlicht oder üppig?",
+     "c": "Mach eine Mini-Margherita auf Brot oder Teig, nur mit Tomate, Mozzarella und Basilikum."
+    },
+    "es": {
+     "t": "Italia: la pizza napolitana",
+     "g": "Conoce la pizza suave y con burbujas de Nápoles y su famosa Margarita.",
+     "p": [
+      "La pizza napolitana se hornea en un horno de leña muy caliente durante unos 60 a 90 segundos.",
+      "La Margarita lleva tomate, mozzarella y albahaca, los colores de la bandera italiana.",
+      "En 2017 la UNESCO reconoció el arte del pizzaiolo napolitano como patrimonio cultural."
+     ],
+     "q": "¿Qué ingredientes tiene tu pizza perfecta, sencilla o muy cargada?",
+     "c": "Prepara una mini Margarita sobre pan o masa solo con tomate, mozzarella y albahaca."
+    },
+    "fr": {
+     "t": "Italie : la pizza napolitaine",
+     "g": "Découvre la pizza moelleuse et boursouflée de Naples et sa célèbre Margherita.",
+     "p": [
+      "La pizza napolitaine cuit dans un four à bois très chaud pendant 60 à 90 secondes environ.",
+      "La Margherita réunit tomate, mozzarella et basilic, les couleurs du drapeau italien.",
+      "En 2017, l'UNESCO a reconnu l'art du pizzaiolo napolitain comme patrimoine culturel."
+     ],
+     "q": "Quelle garniture fait ta pizza parfaite, simple ou bien chargée ?",
+     "c": "Prépare une mini Margherita sur du pain ou de la pâte avec juste tomate, mozzarella et basilic."
+    },
+    "it": {
+     "t": "Italia: la pizza napoletana",
+     "g": "Conosci la pizza morbida e con il cornicione bruciacchiato di Napoli e la sua Margherita.",
+     "p": [
+      "La pizza napoletana cuoce in un forno a legna caldissimo per soli 60-90 secondi circa.",
+      "La Margherita unisce pomodoro, mozzarella e basilico, i colori della bandiera italiana.",
+      "Nel 2017 l'UNESCO ha riconosciuto l'arte del pizzaiuolo napoletano come patrimonio culturale."
+     ],
+     "q": "Quali condimenti rendono perfetta la tua pizza, semplice o ricca?",
+     "c": "Prepara una mini Margherita su pane o impasto solo con pomodoro, mozzarella e basilico."
+    },
+    "pt": {
+     "t": "Itália: a pizza napolitana",
+     "g": "Conhece a pizza macia e com bolhas de Nápoles e a sua famosa Margherita.",
+     "p": [
+      "A pizza napolitana coze num forno a lenha muito quente durante apenas 60 a 90 segundos.",
+      "A Margherita leva tomate, mozzarella e manjericão, as cores da bandeira italiana.",
+      "Em 2017 a UNESCO reconheceu a arte do pizzaiolo napolitano como património cultural."
+     ],
+     "q": "Que ingredientes tem a tua pizza perfeita, simples ou bem recheada?",
+     "c": "Faz uma mini Margherita em pão ou massa só com tomate, mozzarella e manjericão."
+    },
+    "pt_BR": {
+     "t": "Itália: a pizza napolitana",
+     "g": "Conheça a pizza macia e cheia de bolhas de Nápoles e sua famosa Margherita.",
+     "p": [
+      "A pizza napolitana assa em forno a lenha muito quente por apenas 60 a 90 segundos.",
+      "A Margherita leva tomate, muçarela e manjericão, as cores da bandeira italiana.",
+      "Em 2017 a UNESCO reconheceu a arte do pizzaiolo napolitano como patrimônio cultural."
+     ],
+     "q": "Quais coberturas fazem a sua pizza perfeita, simples ou bem recheada?",
+     "c": "Faça uma mini Margherita em pão ou massa só com tomate, muçarela e manjericão."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "France: the bistro table",
+     "g": "Step into a cosy French bistro and meet everyday comfort classics.",
+     "p": [
+      "French onion soup is topped with toasted bread and melted cheese, then browned.",
+      "Steak frites, a steak with crispy fries, is a true bistro favourite.",
+      "Quiche Lorraine is a savoury tart from eastern France with eggs, cream and bacon."
+     ],
+     "q": "If you sat in a bistro right now, which of these dishes would you order first?",
+     "c": "Caramelise one sliced onion slowly for 20 minutes and taste how sweet it becomes."
+    },
+    "de": {
+     "t": "Frankreich: Am Bistrotisch",
+     "g": "Tritt in ein gemütliches französisches Bistro und lerne Alltagsklassiker kennen.",
+     "p": [
+      "Französische Zwiebelsuppe wird mit geröstetem Brot und Käse bedeckt und überbacken.",
+      "Steak frites, ein Steak mit knusprigen Pommes, ist ein echter Bistro-Liebling.",
+      "Die Quiche Lorraine ist eine herzhafte Tarte aus Ostfrankreich mit Ei, Sahne und Speck."
+     ],
+     "q": "Wenn du jetzt in einem Bistro säßest, welches Gericht würdest du zuerst bestellen?",
+     "c": "Karamellisiere eine Zwiebel in Scheiben 20 Minuten langsam und schmecke, wie süß sie wird."
+    },
+    "es": {
+     "t": "Francia: la mesa del bistró",
+     "g": "Entra en un acogedor bistró francés y conoce clásicos reconfortantes del día a día.",
+     "p": [
+      "La sopa de cebolla francesa se cubre con pan tostado y queso fundido y se gratina.",
+      "El steak frites, un filete con patatas fritas crujientes, es un favorito del bistró.",
+      "La quiche lorraine es una tarta salada del este de Francia con huevo, nata y beicon."
+     ],
+     "q": "Si estuvieras ahora en un bistró, ¿cuál de estos platos pedirías primero?",
+     "c": "Carameliza una cebolla en rodajas a fuego lento durante 20 minutos y prueba lo dulce que queda."
+    },
+    "fr": {
+     "t": "France : la table du bistrot",
+     "g": "Entre dans un bistrot douillet et découvre les classiques réconfortants du quotidien.",
+     "p": [
+      "La soupe à l'oignon est couverte de pain grillé et de fromage, puis gratinée.",
+      "Le steak frites, avec ses frites croustillantes, est un grand favori des bistrots.",
+      "La quiche lorraine est une tarte salée de l'est de la France aux œufs, à la crème et aux lardons."
+     ],
+     "q": "Si tu étais au bistrot maintenant, quel plat commanderais-tu en premier ?",
+     "c": "Fais caraméliser doucement un oignon émincé pendant 20 minutes et goûte comme il devient sucré."
+    },
+    "it": {
+     "t": "Francia: la tavola del bistrot",
+     "g": "Entra in un accogliente bistrot francese e scopri i classici confortanti di tutti i giorni.",
+     "p": [
+      "La zuppa di cipolle francese si copre con pane tostato e formaggio e si gratina.",
+      "Lo steak frites, una bistecca con patatine croccanti, è un vero preferito del bistrot.",
+      "La quiche lorraine è una torta salata della Francia orientale con uova, panna e pancetta."
+     ],
+     "q": "Se fossi ora in un bistrot, quale di questi piatti ordineresti per primo?",
+     "c": "Fai caramellare lentamente una cipolla a fette per 20 minuti e senti quanto diventa dolce."
+    },
+    "pt": {
+     "t": "França: a mesa do bistrô",
+     "g": "Entra num acolhedor bistrô francês e conhece clássicos reconfortantes do dia a dia.",
+     "p": [
+      "A sopa de cebola francesa leva pão torrado e queijo derretido e vai ao forno a gratinar.",
+      "O steak frites, um bife com batatas fritas estaladiças, é um favorito dos bistrôs.",
+      "A quiche lorraine é uma tarte salgada do leste de França com ovos, natas e bacon."
+     ],
+     "q": "Se estivesses agora num bistrô, qual destes pratos pedirias primeiro?",
+     "c": "Carameliza lentamente uma cebola às rodelas durante 20 minutos e prova como fica doce."
+    },
+    "pt_BR": {
+     "t": "França: a mesa do bistrô",
+     "g": "Entre num aconchegante bistrô francês e conheça clássicos reconfortantes do dia a dia.",
+     "p": [
+      "A sopa de cebola francesa leva pão torrado e queijo derretido e vai ao forno para gratinar.",
+      "O steak frites, um bife com batatas fritas crocantes, é um favorito dos bistrôs.",
+      "A quiche lorraine é uma torta salgada do leste da França com ovos, creme de leite e bacon."
+     ],
+     "q": "Se você estivesse agora num bistrô, qual destes pratos pediria primeiro?",
+     "c": "Caramelize lentamente uma cebola em rodelas por 20 minutos e prove como ela fica doce."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "France: bread and cheese",
+     "g": "Explore the baguette, the croissant and a land of hundreds of cheeses.",
+     "p": [
+      "The baguette is so loved that UNESCO listed its craft and culture as heritage in 2022.",
+      "The croissant is made from laminated dough: thin layers of butter folded into the dough.",
+      "France has hundreds of cheeses, from soft Brie and Camembert to firm Comté."
+     ],
+     "q": "Do you prefer soft, creamy cheeses or firm, aged ones?",
+     "c": "Taste two different cheeses with plain bread and describe the texture of each."
+    },
+    "de": {
+     "t": "Frankreich: Brot und Käse",
+     "g": "Entdecke Baguette, Croissant und ein Land mit Hunderten von Käsesorten.",
+     "p": [
+      "Das Baguette ist so beliebt, dass die UNESCO sein Handwerk 2022 zum Kulturerbe erklärte.",
+      "Croissants bestehen aus Plunderteig: dünne Butterschichten werden in den Teig gefaltet.",
+      "Frankreich hat Hunderte Käse, vom weichen Brie und Camembert bis zum festen Comté."
+     ],
+     "q": "Magst du lieber weichen, cremigen Käse oder festen, gereiften?",
+     "c": "Probiere zwei verschiedene Käse mit einfachem Brot und beschreibe jeweils die Textur."
+    },
+    "es": {
+     "t": "Francia: pan y queso",
+     "g": "Explora la baguette, el cruasán y un país con cientos de quesos.",
+     "p": [
+      "La baguette es tan querida que la UNESCO declaró su saber hacer patrimonio en 2022.",
+      "El cruasán se hace con masa hojaldrada: finas capas de mantequilla dobladas en la masa.",
+      "Francia tiene cientos de quesos, desde el blando brie y camembert hasta el firme comté."
+     ],
+     "q": "¿Prefieres quesos blandos y cremosos o firmes y curados?",
+     "c": "Prueba dos quesos distintos con pan sencillo y describe la textura de cada uno."
+    },
+    "fr": {
+     "t": "France : pain et fromage",
+     "g": "Explore la baguette, le croissant et un pays aux centaines de fromages.",
+     "p": [
+      "La baguette est si aimée que l'UNESCO a inscrit son savoir-faire au patrimoine en 2022.",
+      "Le croissant est une pâte feuilletée levée : de fines couches de beurre pliées dans la pâte.",
+      "La France compte des centaines de fromages, du brie et du camembert moelleux au comté ferme."
+     ],
+     "q": "Tu préfères les fromages crémeux et coulants ou les fromages fermes et affinés ?",
+     "c": "Goûte deux fromages différents avec du pain nature et décris la texture de chacun."
+    },
+    "it": {
+     "t": "Francia: pane e formaggio",
+     "g": "Esplora la baguette, il croissant e un paese con centinaia di formaggi.",
+     "p": [
+      "La baguette è così amata che nel 2022 l'UNESCO ne ha riconosciuto il saper fare come patrimonio.",
+      "Il croissant nasce da una pasta sfogliata lievitata: sottili strati di burro piegati nell'impasto.",
+      "La Francia ha centinaia di formaggi, dai morbidi brie e camembert al compatto comté."
+     ],
+     "q": "Preferisci formaggi morbidi e cremosi o duri e stagionati?",
+     "c": "Assaggia due formaggi diversi con pane semplice e descrivi la consistenza di ciascuno."
+    },
+    "pt": {
+     "t": "França: pão e queijo",
+     "g": "Explora a baguete, o croissant e um país com centenas de queijos.",
+     "p": [
+      "A baguete é tão amada que a UNESCO a inscreveu como património cultural em 2022.",
+      "O croissant é feito de massa folhada levedada: finas camadas de manteiga dobradas na massa.",
+      "A França tem centenas de queijos, do brie e camembert cremosos ao firme comté."
+     ],
+     "q": "Preferes queijos moles e cremosos ou queijos firmes e curados?",
+     "c": "Prova dois queijos diferentes com pão simples e descreve a textura de cada um."
+    },
+    "pt_BR": {
+     "t": "França: pão e queijo",
+     "g": "Explore a baguete, o croissant e um país com centenas de queijos.",
+     "p": [
+      "A baguete é tão amada que a UNESCO a reconheceu como patrimônio cultural em 2022.",
+      "O croissant é feito de massa folhada fermentada: finas camadas de manteiga dobradas na massa.",
+      "A França tem centenas de queijos, do brie e camembert cremosos ao firme comté."
+     ],
+     "q": "Você prefere queijos macios e cremosos ou firmes e curados?",
+     "c": "Prove dois queijos diferentes com pão simples e descreva a textura de cada um."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "basketball",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Defensive stance",
+     "g": "Build the base of every good defender.",
+     "p": [
+      "Feet a bit wider than your shoulders, knees bent and hips low, like sitting in a chair.",
+      "Weight on the balls of your feet so you can move in any direction quickly.",
+      "Hands active: one up to bother passes and shots, one low to the side for the dribble."
+     ],
+     "q": "How long do you think you could hold a good defensive stance?",
+     "c": "Hold your defensive stance for 45 seconds, rest, and repeat three times."
+    },
+    "de": {
+     "t": "Die Verteidigungsstellung",
+     "g": "Bau die Grundlage jedes guten Verteidigers auf.",
+     "p": [
+      "Füße etwas breiter als die Schultern, Knie gebeugt, Hüfte tief, als würdest du auf einem Stuhl sitzen.",
+      "Gewicht auf den Fußballen, damit du schnell in jede Richtung kommst.",
+      "Aktive Hände: eine oben gegen Pässe und Würfe, eine tief seitlich gegen das Dribbling."
+     ],
+     "q": "Wie lange könntest du wohl eine gute Verteidigungsstellung halten?",
+     "c": "Halte 45 Sekunden die Verteidigungsstellung, ruh dich aus und wiederhole das dreimal."
+    },
+    "es": {
+     "t": "Posición defensiva",
+     "g": "Construye la base de todo buen defensor.",
+     "p": [
+      "Pies algo más abiertos que los hombros, rodillas flexionadas y cadera baja, como sentado en una silla.",
+      "Peso en la parte delantera de los pies para moverte rápido en cualquier dirección.",
+      "Manos activas: una arriba para molestar pases y tiros, otra baja al lado contra el bote."
+     ],
+     "q": "¿Cuánto tiempo crees que aguantarías en una buena posición defensiva?",
+     "c": "Mantén la posición defensiva 45 segundos, descansa y repite tres veces."
+    },
+    "fr": {
+     "t": "La position défensive",
+     "g": "Construire la base de tout bon défenseur.",
+     "p": [
+      "Pieds un peu plus écartés que les épaules, genoux fléchis, hanches basses, comme assis sur une chaise.",
+      "Poids sur l'avant des pieds pour bouger vite dans toutes les directions.",
+      "Mains actives : une haute pour gêner passes et tirs, une basse sur le côté contre le dribble."
+     ],
+     "q": "Combien de temps pourrais-tu tenir une bonne position défensive ?",
+     "c": "Tiens ta position défensive 45 secondes, repose-toi et recommence trois fois."
+    },
+    "it": {
+     "t": "La posizione difensiva",
+     "g": "Costruisci la base di ogni buon difensore.",
+     "p": [
+      "Piedi un po' più larghi delle spalle, ginocchia piegate e bacino basso, come seduto su una sedia.",
+      "Peso sugli avampiedi per muoverti veloce in ogni direzione.",
+      "Mani attive: una alta contro passaggi e tiri, una bassa di lato contro il palleggio."
+     ],
+     "q": "Per quanto tempo pensi di riuscire a tenere una buona posizione difensiva?",
+     "c": "Tieni la posizione difensiva per 45 secondi, riposa e ripeti tre volte."
+    },
+    "pt": {
+     "t": "A posição defensiva",
+     "g": "Constrói a base de qualquer bom defensor.",
+     "p": [
+      "Pés um pouco mais afastados do que os ombros, joelhos fletidos e anca baixa, como sentado numa cadeira.",
+      "Peso na parte da frente dos pés para te mexeres depressa em qualquer direção.",
+      "Mãos ativas: uma alta para incomodar passes e lançamentos, outra baixa ao lado contra o drible."
+     ],
+     "q": "Quanto tempo achas que aguentavas numa boa posição defensiva?",
+     "c": "Mantém a posição defensiva 45 segundos, descansa e repete três vezes."
+    },
+    "pt_BR": {
+     "t": "A posição de defesa",
+     "g": "Construa a base de todo bom marcador.",
+     "p": [
+      "Pés um pouco mais abertos que os ombros, joelhos dobrados e quadril baixo, como sentado numa cadeira.",
+      "Peso na ponta dos pés para se mover rápido em qualquer direção.",
+      "Mãos ativas: uma alta para atrapalhar passes e arremessos, outra baixa ao lado contra o drible."
+     ],
+     "q": "Quanto tempo você acha que aguentaria numa boa posição de defesa?",
+     "c": "Fique na posição de defesa por 45 segundos, descanse e repita três vezes."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Defensive slides",
+     "g": "Learn to move sideways and stay in front of your player.",
+     "p": [
+      "Push off your trail foot and step with your lead foot, without crossing your feet.",
+      "Stay low the whole time: popping up makes you slow and easy to beat.",
+      "If the dribbler gets ahead, turn and run, then sink back into your stance."
+     ],
+     "q": "Why is crossing your feet a problem on defense?",
+     "c": "Slide from one side of a room to the other ten times, staying low."
+    },
+    "de": {
+     "t": "Seitwärts verteidigen",
+     "g": "Lerne, dich seitlich zu bewegen und vor deinem Gegenspieler zu bleiben.",
+     "p": [
+      "Drück dich vom hinteren Fuß ab und schreite mit dem vorderen, ohne die Füße zu kreuzen.",
+      "Bleib die ganze Zeit tief: Wer sich aufrichtet, wird langsam und leicht überlaufen.",
+      "Ist der Dribbler vorbei, dreh dich und sprinte, dann geh wieder in die Stellung."
+     ],
+     "q": "Warum ist es in der Abwehr ein Problem, die Füße zu kreuzen?",
+     "c": "Bewege dich zehnmal seitlich von einer Zimmerseite zur anderen und bleib dabei tief."
+    },
+    "es": {
+     "t": "Desplazamientos defensivos",
+     "g": "Aprende a moverte de lado y seguir delante de tu jugador.",
+     "p": [
+      "Empuja con el pie de atrás y da el paso con el de delante, sin cruzar los pies.",
+      "Mantente bajo todo el tiempo: si te levantas, te vuelves lento y fácil de superar.",
+      "Si el botador te adelanta, gira y corre, y luego vuelve a tu posición."
+     ],
+     "q": "¿Por qué cruzar los pies es un problema en defensa?",
+     "c": "Desplázate de lado de un extremo a otro de una habitación diez veces, sin subir."
+    },
+    "fr": {
+     "t": "Les pas glissés défensifs",
+     "g": "Apprendre à te déplacer latéralement pour rester devant ton joueur.",
+     "p": [
+      "Pousse sur le pied arrière et avance le pied avant, sans croiser les pieds.",
+      "Reste bas tout le temps : te redresser te rend lent et facile à battre.",
+      "Si le dribbleur te dépasse, tourne-toi et cours, puis reprends ta position."
+     ],
+     "q": "Pourquoi croiser les pieds est-il un problème en défense ?",
+     "c": "Fais dix allers en pas glissés d'un bout à l'autre d'une pièce en restant bas."
+    },
+    "it": {
+     "t": "Gli scivolamenti difensivi",
+     "g": "Impara a muoverti di lato e restare davanti al tuo uomo.",
+     "p": [
+      "Spingi col piede dietro e fai il passo con quello avanti, senza incrociare i piedi.",
+      "Resta basso tutto il tempo: se ti alzi diventi lento e facile da battere.",
+      "Se chi palleggia ti supera, girati e corri, poi torna in posizione."
+     ],
+     "q": "Perché incrociare i piedi è un problema in difesa?",
+     "c": "Scivola di lato da una parte all'altra di una stanza dieci volte, restando basso."
+    },
+    "pt": {
+     "t": "Deslizamentos defensivos",
+     "g": "Aprende a mexer-te de lado e a ficar à frente do teu jogador.",
+     "p": [
+      "Empurra com o pé de trás e dá o passo com o da frente, sem cruzar os pés.",
+      "Fica baixo o tempo todo: se te levantas, ficas lento e fácil de passar.",
+      "Se o driblador te passar, roda e corre, e depois volta à posição."
+     ],
+     "q": "Porque é que cruzar os pés é um problema na defesa?",
+     "c": "Desliza de lado de uma ponta à outra de uma sala dez vezes, sempre baixo."
+    },
+    "pt_BR": {
+     "t": "Deslocamentos de defesa",
+     "g": "Aprenda a se mover de lado e ficar na frente do seu jogador.",
+     "p": [
+      "Empurre com o pé de trás e dê o passo com o da frente, sem cruzar os pés.",
+      "Fique baixo o tempo todo: se você se levanta, fica lento e fácil de passar.",
+      "Se o driblador passar, vire e corra, depois volte à posição."
+     ],
+     "q": "Por que cruzar os pés é um problema na defesa?",
+     "c": "Deslize de lado de um canto a outro de um cômodo dez vezes, sempre baixo."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Closing out",
+     "g": "Learn to rush to a shooter without getting beaten.",
+     "p": [
+      "When the ball swings to an open shooter, sprint toward them right away.",
+      "In the last few steps, chop your feet with short, quick steps and get low.",
+      "Arrive with a hand high to bother the shot, but balanced enough to stop a drive."
+     ],
+     "q": "What do you think happens if a defender flies at a shooter at full speed?",
+     "c": "Sprint five steps, then chop your feet and stop balanced with a hand up, five times."
+    },
+    "de": {
+     "t": "Das Closeout",
+     "g": "Lerne, zu einem Schützen zu sprinten, ohne überlaufen zu werden.",
+     "p": [
+      "Wenn der Ball zu einem freien Schützen geht, sprinte sofort zu ihm.",
+      "Auf den letzten Metern trippelst du mit kurzen, schnellen Schritten und gehst tief.",
+      "Komm mit hoher Hand an, um den Wurf zu stören, aber stabil genug, um einen Drive zu stoppen."
+     ],
+     "q": "Was passiert wohl, wenn ein Verteidiger mit vollem Tempo auf einen Schützen fliegt?",
+     "c": "Sprinte fünf Schritte, trippel dann und stopp stabil mit erhobener Hand, fünfmal."
+    },
+    "es": {
+     "t": "Salir al tirador",
+     "g": "Aprende a llegar rápido a un tirador sin que te supere.",
+     "p": [
+      "Cuando el balón llega a un tirador libre, sal corriendo hacia él de inmediato.",
+      "En los últimos pasos, frena con pasos cortos y rápidos y baja el cuerpo.",
+      "Llega con una mano arriba para molestar el tiro, pero equilibrado para frenar la penetración."
+     ],
+     "q": "¿Qué crees que pasa si un defensor sale hacia el tirador a toda velocidad?",
+     "c": "Corre cinco pasos, frena con pasitos y para equilibrado con la mano arriba, cinco veces."
+    },
+    "fr": {
+     "t": "La sortie sur le tireur",
+     "g": "Apprendre à sortir sur un tireur sans te faire déborder.",
+     "p": [
+      "Quand le ballon arrive à un tireur seul, sprinte vers lui tout de suite.",
+      "Sur les derniers pas, freine avec des petits pas rapides et baisse-toi.",
+      "Arrive avec une main haute pour gêner le tir, mais assez équilibré pour stopper la pénétration."
+     ],
+     "q": "Que se passe-t-il si un défenseur fonce sur un tireur à pleine vitesse, à ton avis ?",
+     "c": "Sprinte cinq pas, puis freine en petits pas et arrête-toi équilibré main levée, cinq fois."
+    },
+    "it": {
+     "t": "Il closeout",
+     "g": "Impara a uscire su un tiratore senza farti battere.",
+     "p": [
+      "Quando la palla arriva a un tiratore libero, scatta subito verso di lui.",
+      "Negli ultimi passi frena con passi corti e rapidi e abbassati.",
+      "Arriva con una mano alta per disturbare il tiro, ma in equilibrio per fermare la penetrazione."
+     ],
+     "q": "Cosa pensi succeda se un difensore vola sul tiratore a tutta velocità?",
+     "c": "Scatta per cinque passi, poi frena a passetti e fermati in equilibrio con la mano alta, cinque volte."
+    },
+    "pt": {
+     "t": "Sair ao lançador",
+     "g": "Aprende a chegar depressa a um lançador sem seres ultrapassado.",
+     "p": [
+      "Quando a bola chega a um lançador livre, corre logo na direção dele.",
+      "Nos últimos passos, trava com passos curtos e rápidos e baixa o corpo.",
+      "Chega com uma mão alta para incomodar o lançamento, mas equilibrado para travar a penetração."
+     ],
+     "q": "O que achas que acontece se um defensor voar sobre o lançador a toda a velocidade?",
+     "c": "Corre cinco passos, trava com passos curtos e para equilibrado de mão no ar, cinco vezes."
+    },
+    "pt_BR": {
+     "t": "Fechando no arremessador",
+     "g": "Aprenda a chegar rápido num arremessador sem ser batido.",
+     "p": [
+      "Quando a bola chega a um arremessador livre, corra na direção dele na hora.",
+      "Nos últimos passos, freie com passos curtos e rápidos e abaixe o corpo.",
+      "Chegue com a mão alta para atrapalhar o arremesso, mas equilibrado para segurar a infiltração."
+     ],
+     "q": "O que você acha que acontece se o marcador voar no arremessador a toda velocidade?",
+     "c": "Corra cinco passos, freie com passinhos e pare equilibrado de mão erguida, cinco vezes."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Help defense basics",
+     "g": "Learn how defenders support each other.",
+     "p": [
+      "Off the ball, stand where you can see both the ball and your player: ball, you, man.",
+      "When a teammate gets beaten, step in to stop the drive before it reaches the rim.",
+      "Then recover to your own player or rotate, so nobody is left wide open."
+     ],
+     "q": "Have you ever helped a teammate in any sport? What happened?",
+     "c": "Watch one possession and spot a defender who leaves their player to help."
+    },
+    "de": {
+     "t": "Grundlagen der Helferverteidigung",
+     "g": "Lerne, wie Verteidiger sich gegenseitig unterstützen.",
+     "p": [
+      "Ohne Ball stehst du so, dass du Ball und Gegenspieler siehst: Ball, du, Mann.",
+      "Wird ein Mitspieler überlaufen, springst du ein und stoppst den Drive vor dem Korb.",
+      "Danach gehst du zurück zu deinem Gegenspieler oder rotierst, damit niemand frei steht."
+     ],
+     "q": "Hast du in einem Sport schon einmal einem Mitspieler ausgeholfen? Was geschah?",
+     "c": "Schau einen Angriff und finde einen Verteidiger, der seinen Mann verlässt, um zu helfen."
+    },
+    "es": {
+     "t": "Ayudas defensivas: lo básico",
+     "g": "Aprende cómo se apoyan los defensores entre sí.",
+     "p": [
+      "Lejos del balón, colócate donde veas balón y jugador a la vez: balón, tú, hombre.",
+      "Si superan a un compañero, sal a frenar la penetración antes de que llegue al aro.",
+      "Luego recupera a tu jugador o rota, para que nadie quede totalmente solo."
+     ],
+     "q": "¿Has ayudado alguna vez a un compañero en algún deporte? ¿Qué pasó?",
+     "c": "Mira una posesión y localiza a un defensor que deja a su jugador para ayudar."
+    },
+    "fr": {
+     "t": "Les bases de l'aide défensive",
+     "g": "Apprendre comment les défenseurs s'entraident.",
+     "p": [
+      "Loin du ballon, place-toi pour voir le ballon et ton joueur : ballon, toi, adversaire.",
+      "Si un partenaire est battu, viens stopper la pénétration avant qu'elle n'arrive au cercle.",
+      "Puis reviens sur ton joueur ou fais une rotation, pour que personne ne reste seul."
+     ],
+     "q": "As-tu déjà aidé un partenaire dans un sport ? Que s'est-il passé ?",
+     "c": "Regarde une possession et repère un défenseur qui quitte son joueur pour aider."
+    },
+    "it": {
+     "t": "Le basi della difesa d'aiuto",
+     "g": "Impara come i difensori si aiutano a vicenda.",
+     "p": [
+      "Lontano dalla palla, mettiti dove vedi sia la palla sia il tuo uomo: palla, tu, uomo.",
+      "Se un compagno viene battuto, intervieni a fermare la penetrazione prima del ferro.",
+      "Poi recupera sul tuo uomo o ruota, così nessuno resta completamente libero."
+     ],
+     "q": "Hai mai aiutato un compagno in qualche sport? Cosa è successo?",
+     "c": "Guarda un'azione e trova un difensore che lascia il suo uomo per aiutare."
+    },
+    "pt": {
+     "t": "O básico da ajuda defensiva",
+     "g": "Aprende como os defensores se apoiam uns aos outros.",
+     "p": [
+      "Longe da bola, coloca-te onde vejas a bola e o teu jogador: bola, tu, adversário.",
+      "Se um colega for ultrapassado, entra para travar a penetração antes de chegar ao cesto.",
+      "Depois recupera o teu jogador ou roda, para ninguém ficar completamente livre."
+     ],
+     "q": "Já ajudaste um colega em algum desporto? O que aconteceu?",
+     "c": "Vê uma posse de bola e encontra um defensor que deixa o seu jogador para ajudar."
+    },
+    "pt_BR": {
+     "t": "O básico da ajuda defensiva",
+     "g": "Aprenda como os marcadores se apoiam.",
+     "p": [
+      "Longe da bola, fique onde você veja a bola e seu jogador ao mesmo tempo: bola, você, adversário.",
+      "Se um colega for batido, entre para parar a infiltração antes de chegar ao aro.",
+      "Depois volte para o seu jogador ou faça a rotação, para ninguém ficar livre."
+     ],
+     "q": "Você já ajudou um colega em algum esporte? O que aconteceu?",
+     "c": "Assista a uma posse e ache um marcador que deixa seu jogador para ajudar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blocking shots cleanly",
+     "g": "Learn to block shots without fouling.",
+     "p": [
+      "Timing beats height: jump as the shooter releases, not when they fake.",
+      "Verticality: jumping straight up with arms up is legal; leaning into the shooter is a foul.",
+      "Touching a ball on its way down to the rim is goaltending, and the basket counts."
+     ],
+     "q": "Who do you picture when you think of a great shot blocker?",
+     "c": "Practice jumping straight up with both arms high ten times, landing in the same spot."
+    },
+    "de": {
+     "t": "Sauber blocken",
+     "g": "Lerne, Würfe zu blocken, ohne zu foulen.",
+     "p": [
+      "Timing schlägt Größe: Spring, wenn der Schütze loslässt, nicht bei seiner Täuschung.",
+      "Vertikalität: Senkrecht mit erhobenen Armen springen ist erlaubt, in den Schützen hineinlehnen ist Foul.",
+      "Wer den Ball auf dem Weg nach unten zum Korb berührt, begeht Goaltending, und der Korb zählt."
+     ],
+     "q": "An wen denkst du bei einem großartigen Shotblocker?",
+     "c": "Spring zehnmal senkrecht mit beiden Armen hoch und lande auf derselben Stelle."
+    },
+    "es": {
+     "t": "Taponar sin falta",
+     "g": "Aprende a taponar sin cometer falta.",
+     "p": [
+      "El momento importa más que la altura: salta cuando el tirador suelta el balón, no en su finta.",
+      "Verticalidad: saltar recto con los brazos arriba es legal; echarse sobre el tirador es falta.",
+      "Tocar un balón que ya baja hacia el aro es interferencia, y la canasta vale."
+     ],
+     "q": "¿En quién piensas cuando imaginas a un gran taponador?",
+     "c": "Salta recto con los dos brazos arriba diez veces, cayendo en el mismo sitio."
+    },
+    "fr": {
+     "t": "Contrer proprement",
+     "g": "Apprendre à contrer sans faire faute.",
+     "p": [
+      "Le timing compte plus que la taille : saute quand le tireur lâche le ballon, pas sur sa feinte.",
+      "Verticalité : sauter droit bras levés est légal, se pencher sur le tireur est une faute.",
+      "Toucher un ballon qui redescend vers le cercle est un goaltending, et le panier compte."
+     ],
+     "q": "À qui penses-tu quand tu imagines un grand contreur ?",
+     "c": "Saute droit, les deux bras levés, dix fois en retombant au même endroit."
+    },
+    "it": {
+     "t": "Stoppare in modo pulito",
+     "g": "Impara a stoppare senza fare fallo.",
+     "p": [
+      "Il tempismo conta più dell'altezza: salta quando il tiratore rilascia, non sulla finta.",
+      "Verticalità: saltare dritto con le braccia alzate è regolare, buttarsi sul tiratore è fallo.",
+      "Toccare la palla mentre scende verso il ferro è interferenza, e il canestro vale."
+     ],
+     "q": "A chi pensi quando immagini un grande stoppatore?",
+     "c": "Salta dritto con entrambe le braccia alzate dieci volte, atterrando nello stesso punto."
+    },
+    "pt": {
+     "t": "Desarmar lançamentos sem falta",
+     "g": "Aprende a desarmar lançamentos sem fazer falta.",
+     "p": [
+      "O tempo conta mais do que a altura: salta quando o lançador solta a bola, não na finta.",
+      "Verticalidade: saltar a direito com os braços no ar é legal; inclinar-te sobre o lançador é falta.",
+      "Tocar na bola quando já desce para o aro é interferência, e o cesto conta."
+     ],
+     "q": "Em quem pensas quando imaginas um grande desarmador de lançamentos?",
+     "c": "Salta a direito com os dois braços no ar dez vezes, caindo no mesmo sítio."
+    },
+    "pt_BR": {
+     "t": "Dando tocos sem falta",
+     "g": "Aprenda a dar tocos sem cometer falta.",
+     "p": [
+      "O tempo vale mais que a altura: salte quando o arremessador solta a bola, não na finta.",
+      "Verticalidade: saltar reto com os braços erguidos é legal; se jogar no arremessador é falta.",
+      "Tocar na bola quando ela já desce para o aro é interferência, e a cesta vale."
+     ],
+     "q": "Em quem você pensa quando imagina um grande especialista em tocos?",
+     "c": "Salte reto com os dois braços erguidos dez vezes, caindo no mesmo lugar."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steals and deflections",
+     "g": "Learn to take the ball away smartly.",
+     "p": [
+      "Read the passer's eyes and body to guess where the ball will go.",
+      "Jump into passing lanes when you are sure, but do not gamble every time.",
+      "Poke the ball up from below on a dribble instead of reaching across and fouling."
+     ],
+     "q": "Do you think a deflection that does not become a steal still helps the team?",
+     "c": "Watch a game clip and count deflections, not just steals."
+    },
+    "de": {
+     "t": "Ballgewinne und Deflections",
+     "g": "Lerne, den Ball klug zu erobern.",
+     "p": [
+      "Lies Augen und Körper des Passgebers, um zu erraten, wohin der Ball geht.",
+      "Spring in Passwege, wenn du sicher bist, aber zock nicht jedes Mal.",
+      "Stoß den Ball beim Dribbling von unten weg, statt quer hinüberzugreifen und zu foulen."
+     ],
+     "q": "Hilft eine abgefälschte Kugel dem Team, auch wenn kein Ballgewinn daraus wird?",
+     "c": "Schau einen Spielclip und zähl abgefälschte Bälle, nicht nur Ballgewinne."
+    },
+    "es": {
+     "t": "Robos y desvíos",
+     "g": "Aprende a quitar el balón con inteligencia.",
+     "p": [
+      "Lee los ojos y el cuerpo del pasador para adivinar adónde irá el balón.",
+      "Métete en las líneas de pase cuando estés seguro, pero no te la juegues siempre.",
+      "Toca el balón desde abajo durante el bote en vez de cruzar el brazo y hacer falta."
+     ],
+     "q": "¿Crees que un desvío que no acaba en robo también ayuda al equipo?",
+     "c": "Mira un vídeo de un partido y cuenta los desvíos, no solo los robos."
+    },
+    "fr": {
+     "t": "Interceptions et déviations",
+     "g": "Apprendre à récupérer le ballon intelligemment.",
+     "p": [
+      "Lis les yeux et le corps du passeur pour deviner où ira le ballon.",
+      "Coupe les lignes de passe quand tu es sûr, mais ne prends pas de risque à chaque fois.",
+      "Touche le ballon par en dessous pendant le dribble au lieu de tendre le bras et faire faute."
+     ],
+     "q": "Une déviation qui ne devient pas une interception aide-t-elle quand même l'équipe ?",
+     "c": "Regarde un extrait de match et compte les déviations, pas seulement les interceptions."
+    },
+    "it": {
+     "t": "Palle rubate e deviazioni",
+     "g": "Impara a rubare palla con intelligenza.",
+     "p": [
+      "Leggi occhi e corpo di chi passa per capire dove andrà la palla.",
+      "Buttati sulle linee di passaggio quando sei sicuro, ma non rischiare ogni volta.",
+      "Tocca la palla dal basso durante il palleggio invece di allungarti e fare fallo."
+     ],
+     "q": "Pensi che una deviazione che non diventa palla rubata aiuti comunque la squadra?",
+     "c": "Guarda una clip di partita e conta le deviazioni, non solo le palle rubate."
+    },
+    "pt": {
+     "t": "Roubos e desvios",
+     "g": "Aprende a tirar a bola com inteligência.",
+     "p": [
+      "Lê os olhos e o corpo do passador para adivinhar para onde vai a bola.",
+      "Entra nas linhas de passe quando tiveres certeza, mas não arrisques sempre.",
+      "Toca na bola por baixo durante o drible em vez de esticar o braço e fazer falta."
+     ],
+     "q": "Achas que um desvio que não acaba em roubo também ajuda a equipa?",
+     "c": "Vê um vídeo de um jogo e conta os desvios, não só os roubos."
+    },
+    "pt_BR": {
+     "t": "Roubos e desvios",
+     "g": "Aprenda a tirar a bola com inteligência.",
+     "p": [
+      "Leia os olhos e o corpo de quem passa para adivinhar para onde a bola vai.",
+      "Entre na linha de passe quando tiver certeza, mas não arrisque toda hora.",
+      "Toque na bola por baixo durante o drible em vez de esticar o braço e fazer falta."
+     ],
+     "q": "Você acha que um desvio que não vira roubo também ajuda o time?",
+     "c": "Assista a um vídeo de jogo e conte os desvios, não só os roubos."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Boxing out",
+     "g": "Master the key habit for winning rebounds.",
+     "p": [
+      "When a shot goes up, find your player first instead of watching the ball.",
+      "Turn, make contact with your back and hips, and keep a wide, low base.",
+      "Seal them away from the rim, then go get the ball as it comes off."
+     ],
+     "q": "Why do you think short players can still win rebounds by boxing out?",
+     "c": "At home, practice turning and sitting into a wide stance on the count of three, ten times."
+    },
+    "de": {
+     "t": "Ausboxen",
+     "g": "Meistere die wichtigste Gewohnheit, um Rebounds zu gewinnen.",
+     "p": [
+      "Wenn ein Wurf fliegt, such zuerst deinen Gegenspieler, statt dem Ball nachzuschauen.",
+      "Dreh dich, nimm mit Rücken und Hüfte Kontakt auf und halte eine breite, tiefe Basis.",
+      "Schirm ihn vom Korb ab und hol dir dann den Ball, wenn er abprallt."
+     ],
+     "q": "Warum können wohl auch kleinere Spieler durch Ausboxen Rebounds holen?",
+     "c": "Üb zu Hause zehnmal: auf drei drehen und in eine breite, tiefe Stellung gehen."
+    },
+    "es": {
+     "t": "Bloquear el rebote",
+     "g": "Domina el hábito clave para ganar rebotes.",
+     "p": [
+      "Cuando sale un tiro, busca primero a tu jugador en vez de mirar el balón.",
+      "Gira, haz contacto con la espalda y la cadera y mantén una base ancha y baja.",
+      "Sepáralo del aro y luego ve a por el balón cuando rebote."
+     ],
+     "q": "¿Por qué crees que jugadores bajos pueden ganar rebotes bloqueando bien?",
+     "c": "En casa, practica diez veces girar y bajar a una postura ancha a la cuenta de tres."
+    },
+    "fr": {
+     "t": "Le box-out",
+     "g": "Maîtriser l'habitude clé pour gagner les rebonds.",
+     "p": [
+      "Quand un tir part, trouve d'abord ton joueur au lieu de regarder le ballon.",
+      "Pivote, prends contact avec le dos et les hanches, et garde des appuis larges et bas.",
+      "Écarte-le du cercle, puis va chercher le ballon quand il rebondit."
+     ],
+     "q": "Pourquoi des joueurs plus petits peuvent-ils gagner des rebonds grâce au box-out ?",
+     "c": "Chez toi, entraîne-toi dix fois à pivoter et descendre en appuis larges au compte de trois."
+    },
+    "it": {
+     "t": "Il tagliafuori",
+     "g": "Padroneggia l'abitudine chiave per vincere i rimbalzi.",
+     "p": [
+      "Quando parte un tiro, trova prima il tuo uomo invece di guardare la palla.",
+      "Girati, fai contatto con schiena e fianchi e tieni una base larga e bassa.",
+      "Tienilo lontano dal ferro, poi vai a prendere la palla quando rimbalza."
+     ],
+     "q": "Perché pensi che anche i giocatori bassi possano vincere rimbalzi col tagliafuori?",
+     "c": "A casa, prova dieci volte a girarti e abbassarti in posizione larga al tre."
+    },
+    "pt": {
+     "t": "O bloqueio de ressalto",
+     "g": "Domina o hábito-chave para ganhar ressaltos.",
+     "p": [
+      "Quando sai um lançamento, encontra primeiro o teu jogador em vez de olhar para a bola.",
+      "Roda, faz contacto com as costas e a anca e mantém uma base larga e baixa.",
+      "Afasta-o do cesto e depois vai buscar a bola quando ela sair."
+     ],
+     "q": "Porque achas que jogadores baixos conseguem ganhar ressaltos com um bom bloqueio?",
+     "c": "Em casa, treina dez vezes rodar e baixar para uma posição larga à contagem de três."
+    },
+    "pt_BR": {
+     "t": "O bloqueio de rebote",
+     "g": "Domine o hábito-chave para ganhar rebotes.",
+     "p": [
+      "Quando sai um arremesso, ache primeiro seu jogador em vez de olhar a bola.",
+      "Gire, faça contato com as costas e o quadril e mantenha uma base larga e baixa.",
+      "Afaste-o do aro e depois vá buscar a bola quando ela sair."
+     ],
+     "q": "Por que você acha que jogadores baixos conseguem ganhar rebotes bloqueando bem?",
+     "c": "Em casa, treine dez vezes girar e abaixar numa base larga na contagem de três."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking on defense",
+     "g": "Learn why a loud defense is a strong defense.",
+     "p": [
+      "Call out screens early, like screen left, so your teammate is not surprised.",
+      "Say switch when you swap players, and help when you are ready to step in.",
+      "Constant talk keeps five defenders connected, almost like one body."
+     ],
+     "q": "Are you more of a quiet player or a talker on a team?",
+     "c": "Teach a friend or family member three defensive calls: screen, switch and help."
+    },
+    "de": {
+     "t": "Reden in der Verteidigung",
+     "g": "Lerne, warum eine laute Abwehr eine starke Abwehr ist.",
+     "p": [
+      "Sag Blöcke früh an, etwa Block links, damit dein Mitspieler nicht überrascht wird.",
+      "Ruf Switch, wenn ihr Gegenspieler tauscht, und Hilfe, wenn du bereit bist einzuspringen.",
+      "Ständiges Reden verbindet fünf Verteidiger fast wie einen einzigen Körper."
+     ],
+     "q": "Bist du im Team eher ruhig oder einer, der viel redet?",
+     "c": "Bring jemandem drei Abwehr-Kommandos bei: Block, Switch und Hilfe."
+    },
+    "es": {
+     "t": "Hablar en defensa",
+     "g": "Aprende por qué una defensa que habla es una defensa fuerte.",
+     "p": [
+      "Avisa de los bloqueos pronto, como bloqueo a la izquierda, para que tu compañero no se sorprenda.",
+      "Di cambio cuando intercambiáis jugadores y ayuda cuando estés listo para entrar.",
+      "Hablar sin parar mantiene unidos a los cinco defensores, casi como un solo cuerpo."
+     ],
+     "q": "¿Eres más bien callado o de los que hablan mucho en un equipo?",
+     "c": "Enseña a un amigo o familiar tres avisos defensivos: bloqueo, cambio y ayuda."
+    },
+    "fr": {
+     "t": "Parler en défense",
+     "g": "Apprendre pourquoi une défense qui parle est une défense forte.",
+     "p": [
+      "Annonce les écrans tôt, comme écran à gauche, pour que ton partenaire ne soit pas surpris.",
+      "Dis switch quand vous échangez vos joueurs, et aide quand tu es prêt à intervenir.",
+      "Parler sans cesse relie les cinq défenseurs, presque comme un seul corps."
+     ],
+     "q": "Es-tu plutôt discret ou bavard dans une équipe ?",
+     "c": "Apprends à un proche trois annonces défensives : écran, switch et aide."
+    },
+    "it": {
+     "t": "Parlare in difesa",
+     "g": "Impara perché una difesa che parla è una difesa forte.",
+     "p": [
+      "Chiama i blocchi presto, come blocco a sinistra, così il compagno non viene sorpreso.",
+      "Di' cambio quando vi scambiate gli uomini, e aiuto quando sei pronto a intervenire.",
+      "Parlare di continuo tiene uniti i cinque difensori, quasi come un solo corpo."
+     ],
+     "q": "In squadra sei più tipo silenzioso o uno che parla tanto?",
+     "c": "Insegna a un amico o familiare tre chiamate difensive: blocco, cambio e aiuto."
+    },
+    "pt": {
+     "t": "Falar na defesa",
+     "g": "Aprende porque uma defesa que fala é uma defesa forte.",
+     "p": [
+      "Avisa os bloqueios cedo, como bloqueio à esquerda, para o teu colega não ser apanhado de surpresa.",
+      "Diz troca quando trocam de jogador e ajuda quando estiveres pronto a entrar.",
+      "Falar sem parar mantém os cinco defensores ligados, quase como um só corpo."
+     ],
+     "q": "Numa equipa, és mais calado ou dos que falam muito?",
+     "c": "Ensina a um amigo ou familiar três avisos defensivos: bloqueio, troca e ajuda."
+    },
+    "pt_BR": {
+     "t": "Falando na defesa",
+     "g": "Aprenda por que uma defesa que fala é uma defesa forte.",
+     "p": [
+      "Avise os corta-luzes cedo, como corta-luz na esquerda, para seu colega não ser pego de surpresa.",
+      "Diga troca quando trocarem de jogador e ajuda quando estiver pronto para entrar.",
+      "Falar o tempo todo mantém os cinco marcadores conectados, quase como um só corpo."
+     ],
+     "q": "Num time, você é mais quieto ou dos que falam muito?",
+     "c": "Ensine a um amigo ou familiar três avisos de defesa: corta-luz, troca e ajuda."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Transition defense",
+     "g": "Learn how to stop fast breaks.",
+     "p": [
+      "After a miss or turnover, sprint back right away: the first steps decide the play.",
+      "The first defender back stops the ball and slows it down before it reaches the paint.",
+      "Next, find open shooters and match up, even if it is not your usual player."
+     ],
+     "q": "Why do you think easy fast-break points hurt a team so much?",
+     "c": "Watch a fast break and count how many defenders get back in time."
+    },
+    "de": {
+     "t": "Rückzugsverteidigung",
+     "g": "Lerne, wie man Schnellangriffe stoppt.",
+     "p": [
+      "Nach einem Fehlwurf oder Ballverlust sofort zurücksprinten: Die ersten Schritte entscheiden.",
+      "Der erste Verteidiger hinten stoppt den Ball und bremst ihn vor der Zone.",
+      "Danach freie Schützen finden und übernehmen, auch wenn es nicht dein üblicher Gegenspieler ist."
+     ],
+     "q": "Warum tun leichte Punkte aus Schnellangriffen einem Team wohl so weh?",
+     "c": "Schau einen Schnellangriff und zähl, wie viele Verteidiger rechtzeitig zurück sind."
+    },
+    "es": {
+     "t": "Defensa de transición",
+     "g": "Aprende a frenar los contraataques.",
+     "p": [
+      "Tras un fallo o una pérdida, corre atrás de inmediato: los primeros pasos deciden la jugada.",
+      "El primer defensor en volver frena el balón y lo retrasa antes de que llegue a la zona.",
+      "Después busca a los tiradores libres y emparéjate, aunque no sea tu jugador habitual."
+     ],
+     "q": "¿Por qué crees que los puntos fáciles al contraataque hacen tanto daño?",
+     "c": "Mira un contraataque y cuenta cuántos defensores vuelven a tiempo."
+    },
+    "fr": {
+     "t": "Le repli défensif",
+     "g": "Apprendre à stopper les contre-attaques.",
+     "p": [
+      "Après un tir raté ou une perte de balle, sprinte en arrière tout de suite : les premiers pas décident.",
+      "Le premier défenseur replié stoppe le ballon et le ralentit avant la raquette.",
+      "Ensuite, trouve les tireurs seuls et prends-en un, même si ce n'est pas ton joueur habituel."
+     ],
+     "q": "Pourquoi les paniers faciles en contre-attaque font-ils si mal à une équipe ?",
+     "c": "Regarde une contre-attaque et compte combien de défenseurs se replient à temps."
+    },
+    "it": {
+     "t": "La difesa in transizione",
+     "g": "Impara a fermare i contropiedi.",
+     "p": [
+      "Dopo un errore o una palla persa, scatta subito indietro: i primi passi decidono l'azione.",
+      "Il primo difensore che rientra ferma la palla e la rallenta prima dell'area.",
+      "Poi trova i tiratori liberi e prendine uno, anche se non è il tuo solito uomo."
+     ],
+     "q": "Perché pensi che i punti facili in contropiede facciano così male?",
+     "c": "Guarda un contropiede e conta quanti difensori rientrano in tempo."
+    },
+    "pt": {
+     "t": "Defesa de transição",
+     "g": "Aprende a travar contra-ataques.",
+     "p": [
+      "Depois de um falhanço ou perda de bola, corre logo para trás: os primeiros passos decidem a jogada.",
+      "O primeiro defensor a chegar trava a bola e atrasa-a antes da área restritiva.",
+      "Depois encontra os lançadores livres e marca um, mesmo que não seja o teu jogador habitual."
+     ],
+     "q": "Porque achas que os pontos fáceis em contra-ataque fazem tanto mal?",
+     "c": "Vê um contra-ataque e conta quantos defensores recuperam a tempo."
+    },
+    "pt_BR": {
+     "t": "Defesa de transição",
+     "g": "Aprenda a parar contra-ataques.",
+     "p": [
+      "Depois de um erro ou perda de bola, corra para trás na hora: os primeiros passos decidem a jogada.",
+      "O primeiro marcador a voltar segura a bola e a atrasa antes do garrafão.",
+      "Depois ache os arremessadores livres e marque um, mesmo que não seja seu jogador de costume."
+     ],
+     "q": "Por que você acha que pontos fáceis de contra-ataque machucam tanto um time?",
+     "c": "Assista a um contra-ataque e conte quantos marcadores voltam a tempo."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: skills month",
+     "g": "Look back at the skills you learned this month.",
+     "p": [
+      "You met the crossover, between the legs, behind the back, pivots, triple threat and the jump stop.",
+      "Your shooting toolbox now has the jump shot, catch-and-shoot, a free-throw routine and the floater.",
+      "On defense you learned stance, slides, closeouts, help, blocks, steals, boxing out, talking and getting back."
+     ],
+     "q": "Which new skill would you most like to master first?",
+     "c": "Pick one dribble move, one shot and one defensive habit and practice each for five minutes."
+    },
+    "de": {
+     "t": "Rückblick: Technikmonat",
+     "g": "Schau zurück auf die Techniken dieses Monats.",
+     "p": [
+      "Du kennst Crossover, durch die Beine, hinter dem Rücken, Sternschritte, Triple Threat und Sprungstopp.",
+      "Dein Wurfrepertoire hat jetzt Sprungwurf, Wurf aus dem Fang, Freiwurf-Routine und Floater.",
+      "In der Abwehr: Stellung, Seitschritte, Closeouts, Hilfe, Blocks, Steals, Ausboxen, Reden und Rückzug."
+     ],
+     "q": "Welche neue Technik würdest du am liebsten zuerst meistern?",
+     "c": "Wähl einen Dribbel-Move, einen Wurf und eine Abwehrgewohnheit und übe jedes fünf Minuten."
+    },
+    "es": {
+     "t": "Repaso: mes de habilidades",
+     "g": "Repasa las habilidades que aprendiste este mes.",
+     "p": [
+      "Conociste el crossover, entre las piernas, por la espalda, los pivotes, la triple amenaza y la parada.",
+      "Tu repertorio de tiro tiene ya suspensión, tiro tras recepción, rutina de libres y bombita.",
+      "En defensa: posición, desplazamientos, salidas, ayudas, tapones, robos, rebote, hablar y volver."
+     ],
+     "q": "¿Qué nueva habilidad te gustaría dominar primero?",
+     "c": "Elige un movimiento de bote, un tiro y un hábito defensivo y practica cada uno cinco minutos."
+    },
+    "fr": {
+     "t": "Bilan : le mois des gestes",
+     "g": "Revoir les gestes appris ce mois-ci.",
+     "p": [
+      "Tu as découvert le crossover, entre les jambes, dans le dos, les pivots, la triple menace et l'arrêt simultané.",
+      "Ta palette de tirs compte le tir en suspension, le tir après réception, une routine de lancers et le floater.",
+      "En défense : position, pas glissés, sorties, aide, contres, interceptions, box-out, parole et repli."
+     ],
+     "q": "Quel nouveau geste aimerais-tu maîtriser en premier ?",
+     "c": "Choisis un dribble, un tir et une habitude défensive, et travaille chacun cinq minutes."
+    },
+    "it": {
+     "t": "Ripasso: il mese della tecnica",
+     "g": "Ripassa la tecnica imparata questo mese.",
+     "p": [
+      "Hai conosciuto crossover, tra le gambe, dietro la schiena, perni, triplice minaccia e arresto a un tempo.",
+      "Il tuo repertorio di tiro ora ha sospensione, tiro in ricezione, routine dei liberi e floater.",
+      "In difesa: posizione, scivolamenti, closeout, aiuti, stoppate, recuperi, tagliafuori, parlare e rientrare."
+     ],
+     "q": "Quale nuova abilità vorresti padroneggiare per prima?",
+     "c": "Scegli un palleggio, un tiro e un'abitudine difensiva e allena ciascuno per cinque minuti."
+    },
+    "pt": {
+     "t": "Revisão: mês da técnica",
+     "g": "Revê a técnica que aprendeste este mês.",
+     "p": [
+      "Conheceste o crossover, entre as pernas, pelas costas, os pivôs, a tripla ameaça e a paragem a um tempo.",
+      "O teu leque de lançamentos já tem suspensão, lançamento após receção, rotina de lance livre e floater.",
+      "Na defesa: posição, deslizamentos, saídas, ajudas, desarmes, roubos, ressalto, falar e recuar."
+     ],
+     "q": "Que nova habilidade gostavas de dominar primeiro?",
+     "c": "Escolhe um drible, um lançamento e um hábito defensivo e treina cada um cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Revisão: mês da técnica",
+     "g": "Reveja a técnica que você aprendeu neste mês.",
+     "p": [
+      "Você conheceu o crossover, entre as pernas, pelas costas, o pivô, a tripla ameaça e a parada em um tempo.",
+      "Seu repertório de arremessos já tem jump, arremesso após recepção, rotina de lance livre e floater.",
+      "Na defesa: posição, deslocamentos, fechamentos, ajudas, tocos, roubos, rebote, falar e voltar."
+     ],
+     "q": "Que nova habilidade você gostaria de dominar primeiro?",
+     "c": "Escolha um drible, um arremesso e um hábito de defesa e treine cada um por cinco minutos."
+    }
+   }
+  }
+ ]
+}

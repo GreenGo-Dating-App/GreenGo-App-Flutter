@@ -1,0 +1,835 @@
+{
+ "topic": "world_cuisines",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Indonesia: rice and sambal",
+     "g": "Discover Indonesian favourites: fried rice, satay and fiery sambal.",
+     "p": [
+      "Nasi goreng is fried rice seasoned with kecap manis, a thick sweet soy sauce, often topped with an egg.",
+      "Satay are small grilled skewers, often served with a rich peanut sauce.",
+      "Sambal is a family of chili pastes, with countless regional and home versions."
+     ],
+     "q": "How spicy do you like your food, on a scale from 1 to 10?",
+     "c": "Fry leftover rice with garlic, a splash of soy sauce and a pinch of sugar, then top with an egg."
+    },
+    "de": {
+     "t": "Indonesien: Reis und Sambal",
+     "g": "Entdecke indonesische Lieblinge: gebratenen Reis, Satay und feurigen Sambal.",
+     "p": [
+      "Nasi Goreng ist gebratener Reis mit Kecap Manis, einer dicken süßen Sojasauce, oft mit Spiegelei.",
+      "Satay sind kleine gegrillte Spieße, oft mit einer reichhaltigen Erdnusssauce serviert.",
+      "Sambal ist eine ganze Familie von Chilipasten mit unzähligen regionalen und hausgemachten Varianten."
+     ],
+     "q": "Wie scharf magst du dein Essen auf einer Skala von 1 bis 10?",
+     "c": "Brate Reis vom Vortag mit Knoblauch, etwas Sojasauce und einer Prise Zucker und gib ein Ei darauf."
+    },
+    "es": {
+     "t": "Indonesia: arroz y sambal",
+     "g": "Descubre los favoritos indonesios: arroz frito, satay y el ardiente sambal.",
+     "p": [
+      "El nasi goreng es arroz frito con kecap manis, una salsa de soja dulce y espesa, a menudo con huevo encima.",
+      "Los satay son pequeñas brochetas a la parrilla, a menudo con una rica salsa de cacahuete.",
+      "El sambal es una familia de pastas de chile, con innumerables versiones regionales y caseras."
+     ],
+     "q": "¿Cuánto picante te gusta en la comida, en una escala del 1 al 10?",
+     "c": "Saltea arroz del día anterior con ajo, un chorrito de soja y una pizca de azúcar, y ponle un huevo encima."
+    },
+    "fr": {
+     "t": "Indonésie : riz et sambal",
+     "g": "Découvre les favoris indonésiens : riz sauté, satay et sambal brûlant.",
+     "p": [
+      "Le nasi goreng est un riz sauté au kecap manis, sauce soja épaisse et sucrée, souvent garni d'un œuf.",
+      "Les satay sont de petites brochettes grillées, souvent servies avec une sauce riche aux cacahuètes.",
+      "Le sambal est une famille de pâtes de piment, aux innombrables versions régionales et maison."
+     ],
+     "q": "À quel point aimes-tu les plats épicés, sur une échelle de 1 à 10 ?",
+     "c": "Fais sauter du riz de la veille avec ail, un trait de sauce soja et une pincée de sucre, puis ajoute un œuf."
+    },
+    "it": {
+     "t": "Indonesia: riso e sambal",
+     "g": "Scopri i preferiti indonesiani: riso fritto, satay e il focoso sambal.",
+     "p": [
+      "Il nasi goreng è riso saltato con kecap manis, una salsa di soia densa e dolce, spesso con un uovo sopra.",
+      "I satay sono piccoli spiedini alla griglia, spesso serviti con una ricca salsa di arachidi.",
+      "Il sambal è una famiglia di paste di peperoncino, con innumerevoli versioni regionali e casalinghe."
+     ],
+     "q": "Quanto ti piace il piccante, su una scala da 1 a 10?",
+     "c": "Salta il riso avanzato con aglio, un goccio di salsa di soia e un pizzico di zucchero, poi aggiungi un uovo."
+    },
+    "pt": {
+     "t": "Indonésia: arroz e sambal",
+     "g": "Descobre os favoritos indonésios: arroz frito, satay e o ardente sambal.",
+     "p": [
+      "O nasi goreng é arroz frito com kecap manis, um molho de soja doce e espesso, muitas vezes com ovo por cima.",
+      "Os satay são pequenas espetadas grelhadas, muitas vezes servidas com um rico molho de amendoim.",
+      "O sambal é uma família de pastas de malagueta, com inúmeras versões regionais e caseiras."
+     ],
+     "q": "Quanto picante gostas na comida, numa escala de 1 a 10?",
+     "c": "Salteia arroz da véspera com alho, um pouco de molho de soja e uma pitada de açúcar, e põe um ovo por cima."
+    },
+    "pt_BR": {
+     "t": "Indonésia: arroz e sambal",
+     "g": "Descubra os favoritos indonésios: arroz frito, satay e o ardido sambal.",
+     "p": [
+      "O nasi goreng é arroz frito com kecap manis, um shoyu doce e espesso, muitas vezes com ovo por cima.",
+      "Os satay são espetinhos grelhados, muitas vezes servidos com um rico molho de amendoim.",
+      "O sambal é uma família de pastas de pimenta, com inúmeras versões regionais e caseiras."
+     ],
+     "q": "Quanta pimenta você gosta na comida, numa escala de 1 a 10?",
+     "c": "Salteie arroz do dia anterior com alho, um pouco de shoyu e uma pitada de açúcar, e coloque um ovo por cima."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Malaysia and Singapore",
+     "g": "Explore the hawker food where Malay, Chinese and Indian cooking meet.",
+     "p": [
+      "Laksa is a spicy noodle soup, either rich with coconut curry or sour with tamarind and fish.",
+      "Nasi lemak is rice cooked in coconut milk, served with sambal, anchovies, peanuts, egg and cucumber.",
+      "Hawker centres gather many food stalls under one roof; Singapore's hawker culture is UNESCO-listed."
+     ],
+     "q": "Would you enjoy picking dishes from many stalls for one shared meal?",
+     "c": "Cook rice with half coconut milk and half water and taste how fragrant it becomes."
+    },
+    "de": {
+     "t": "Malaysia und Singapur",
+     "g": "Entdecke das Hawker-Essen, bei dem sich malaiische, chinesische und indische Küche treffen.",
+     "p": [
+      "Laksa ist eine scharfe Nudelsuppe, entweder reich mit Kokoscurry oder sauer mit Tamarinde und Fisch.",
+      "Nasi Lemak ist in Kokosmilch gekochter Reis mit Sambal, Sardellen, Erdnüssen, Ei und Gurke.",
+      "Hawker-Center vereinen viele Essensstände unter einem Dach; Singapurs Hawker-Kultur ist UNESCO-Erbe."
+     ],
+     "q": "Würde es dir gefallen, für ein gemeinsames Essen Gerichte von vielen Ständen auszuwählen?",
+     "c": "Koche Reis mit halb Kokosmilch, halb Wasser und schmecke, wie duftend er wird."
+    },
+    "es": {
+     "t": "Malasia y Singapur",
+     "g": "Explora la comida de los hawkers, donde se encuentran las cocinas malaya, china e india.",
+     "p": [
+      "El laksa es una sopa de fideos picante, cremosa con curry de coco o ácida con tamarindo y pescado.",
+      "El nasi lemak es arroz cocido en leche de coco con sambal, anchoas, cacahuetes, huevo y pepino.",
+      "Los hawker centres reúnen muchos puestos bajo un techo; la cultura hawker de Singapur es patrimonio UNESCO."
+     ],
+     "q": "¿Te gustaría elegir platos de muchos puestos para una comida compartida?",
+     "c": "Cocina arroz con mitad leche de coco y mitad agua y nota lo aromático que queda."
+    },
+    "fr": {
+     "t": "Malaisie et Singapour",
+     "g": "Explore la cuisine des hawkers, où se rencontrent les cuisines malaise, chinoise et indienne.",
+     "p": [
+      "Le laksa est une soupe de nouilles épicée, riche au curry de coco ou acidulée au tamarin et au poisson.",
+      "Le nasi lemak est un riz cuit au lait de coco, servi avec sambal, anchois, cacahuètes, œuf et concombre.",
+      "Les hawker centres réunissent de nombreux stands sous un même toit ; la culture hawker de Singapour est inscrite à l'UNESCO."
+     ],
+     "q": "Aimerais-tu choisir des plats dans plusieurs stands pour un repas partagé ?",
+     "c": "Cuis du riz avec moitié lait de coco, moitié eau, et goûte comme il devient parfumé."
+    },
+    "it": {
+     "t": "Malesia e Singapore",
+     "g": "Esplora il cibo degli hawker, dove si incontrano cucina malese, cinese e indiana.",
+     "p": [
+      "Il laksa è una zuppa di noodles piccante, ricca con curry al cocco o acidula con tamarindo e pesce.",
+      "Il nasi lemak è riso cotto nel latte di cocco con sambal, acciughe, arachidi, uovo e cetriolo.",
+      "Gli hawker centre riuniscono tante bancarelle sotto un tetto; la cultura hawker di Singapore è patrimonio UNESCO."
+     ],
+     "q": "Ti piacerebbe scegliere piatti da tante bancarelle per un pasto condiviso?",
+     "c": "Cuoci il riso con metà latte di cocco e metà acqua e senti quanto diventa profumato."
+    },
+    "pt": {
+     "t": "Malásia e Singapura",
+     "g": "Explora a comida dos hawkers, onde se encontram as cozinhas malaia, chinesa e indiana.",
+     "p": [
+      "O laksa é uma sopa de massa picante, rica com caril de coco ou ácida com tamarindo e peixe.",
+      "O nasi lemak é arroz cozido em leite de coco, servido com sambal, anchovas, amendoim, ovo e pepino.",
+      "Os hawker centres juntam muitas bancas sob o mesmo teto; a cultura hawker de Singapura é património da UNESCO."
+     ],
+     "q": "Gostarias de escolher pratos de várias bancas para uma refeição partilhada?",
+     "c": "Coze arroz com metade leite de coco e metade água e repara como fica perfumado."
+    },
+    "pt_BR": {
+     "t": "Malásia e Singapura",
+     "g": "Explore a comida dos hawkers, onde se encontram as cozinhas malaia, chinesa e indiana.",
+     "p": [
+      "O laksa é uma sopa de macarrão picante, cremosa com curry de coco ou azedinha com tamarindo e peixe.",
+      "O nasi lemak é arroz cozido no leite de coco, servido com sambal, anchovas, amendoim, ovo e pepino.",
+      "Os hawker centres reúnem muitas barracas sob um teto; a cultura hawker de Singapura é patrimônio da UNESCO."
+     ],
+     "q": "Você gostaria de escolher pratos de várias barracas para uma refeição compartilhada?",
+     "c": "Cozinhe arroz com metade leite de coco e metade água e repare como fica perfumado."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Philippines: adobo and more",
+     "g": "Discover Filipino favourites: tangy adobo, sour sinigang and festive lechon.",
+     "p": [
+      "Adobo is meat or vegetables braised in vinegar, soy sauce, garlic, bay leaf and peppercorns.",
+      "Sinigang is a comforting sour soup, often soured with tamarind, full of vegetables.",
+      "Lechon, a whole roasted pig with crackling skin, is a star at big celebrations."
+     ],
+     "q": "Which do you prefer: tangy and sour flavours, or rich and savoury ones?",
+     "c": "Braise a few pieces of chicken, tofu or mushrooms in vinegar, soy sauce, garlic and a bay leaf."
+    },
+    "de": {
+     "t": "Philippinen: Adobo und mehr",
+     "g": "Entdecke philippinische Lieblinge: würziges Adobo, saures Sinigang und festliches Lechon.",
+     "p": [
+      "Adobo ist Fleisch oder Gemüse, geschmort in Essig, Sojasauce, Knoblauch, Lorbeer und Pfefferkörnern.",
+      "Sinigang ist eine wohltuende saure Suppe, oft mit Tamarinde gesäuert und voller Gemüse.",
+      "Lechon, ein ganzes gebratenes Schwein mit knuspriger Haut, ist der Star großer Feste."
+     ],
+     "q": "Was magst du lieber: säuerlich-frische Aromen oder reichhaltig-herzhafte?",
+     "c": "Schmore einige Stücke Huhn, Tofu oder Pilze in Essig, Sojasauce, Knoblauch und einem Lorbeerblatt."
+    },
+    "es": {
+     "t": "Filipinas: adobo y más",
+     "g": "Descubre favoritos filipinos: el adobo ácido, el sinigang agrio y el festivo lechón.",
+     "p": [
+      "El adobo es carne o verdura guisada en vinagre, salsa de soja, ajo, laurel y pimienta en grano.",
+      "El sinigang es una reconfortante sopa agria, a menudo con tamarindo y llena de verduras.",
+      "El lechón, un cerdo entero asado con piel crujiente, es la estrella de las grandes celebraciones."
+     ],
+     "q": "¿Qué prefieres: sabores ácidos y agrios o intensos y sabrosos?",
+     "c": "Guisa unos trozos de pollo, tofu o setas en vinagre, salsa de soja, ajo y una hoja de laurel."
+    },
+    "fr": {
+     "t": "Philippines : adobo et plus",
+     "g": "Découvre les favoris philippins : adobo acidulé, sinigang aigre et lechon festif.",
+     "p": [
+      "L'adobo, c'est de la viande ou des légumes braisés au vinaigre, sauce soja, ail, laurier et poivre en grains.",
+      "Le sinigang est une soupe aigre réconfortante, souvent au tamarin et pleine de légumes.",
+      "Le lechon, cochon entier rôti à la peau croustillante, est la vedette des grandes fêtes."
+     ],
+     "q": "Tu préfères les saveurs acidulées et aigres, ou riches et savoureuses ?",
+     "c": "Fais braiser quelques morceaux de poulet, tofu ou champignons au vinaigre, sauce soja, ail et laurier."
+    },
+    "it": {
+     "t": "Filippine: adobo e altro",
+     "g": "Scopri i preferiti filippini: l'adobo acidulo, il sinigang aspro e il festoso lechon.",
+     "p": [
+      "L'adobo è carne o verdura brasata in aceto, salsa di soia, aglio, alloro e pepe in grani.",
+      "Il sinigang è una confortante zuppa aspra, spesso al tamarindo e piena di verdure.",
+      "Il lechon, maialino intero arrosto con la cotenna croccante, è la star delle grandi feste."
+     ],
+     "q": "Cosa preferisci: sapori aciduli e aspri o ricchi e sapidi?",
+     "c": "Brasa qualche pezzo di pollo, tofu o funghi in aceto, salsa di soia, aglio e una foglia d'alloro."
+    },
+    "pt": {
+     "t": "Filipinas: adobo e mais",
+     "g": "Descobre os favoritos filipinos: o adobo ácido, o sinigang azedo e o festivo lechon.",
+     "p": [
+      "O adobo é carne ou legumes estufados em vinagre, molho de soja, alho, louro e pimenta em grão.",
+      "O sinigang é uma sopa azeda reconfortante, muitas vezes com tamarindo e cheia de legumes.",
+      "O lechon, um porco inteiro assado de pele estaladiça, é a estrela das grandes celebrações."
+     ],
+     "q": "O que preferes: sabores ácidos e azedos ou intensos e saborosos?",
+     "c": "Estufa uns pedaços de frango, tofu ou cogumelos em vinagre, molho de soja, alho e uma folha de louro."
+    },
+    "pt_BR": {
+     "t": "Filipinas: adobo e mais",
+     "g": "Descubra os favoritos filipinos: o adobo ácido, o sinigang azedinho e o festivo lechon.",
+     "p": [
+      "O adobo é carne ou legumes cozidos em vinagre, shoyu, alho, louro e pimenta em grão.",
+      "O sinigang é uma sopa azeda reconfortante, muitas vezes com tamarindo e cheia de legumes.",
+      "O lechon, um leitão inteiro assado de pele crocante, é a estrela das grandes festas."
+     ],
+     "q": "O que você prefere: sabores ácidos e azedos ou intensos e saborosos?",
+     "c": "Cozinhe alguns pedaços de frango, tofu ou cogumelos em vinagre, shoyu, alho e uma folha de louro."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "West Africa: jollof rice",
+     "g": "Discover jollof, the tomato-rich one-pot rice loved across West Africa.",
+     "p": [
+      "Jollof rice is cooked in a rich sauce of tomatoes, peppers, onions and spices in a single pot.",
+      "Its name links to the historic Wolof, or Jolof, people of the Senegambia region.",
+      "Nigeria and Ghana share a friendly, playful rivalry over whose jollof is the best."
+     ],
+     "q": "Is there a dish that your region proudly claims to cook better than its neighbours?",
+     "c": "Blend tomato, pepper and onion, fry the purée until thick, then cook a small pot of rice in it."
+    },
+    "de": {
+     "t": "Westafrika: Jollof-Reis",
+     "g": "Entdecke Jollof, den tomatenreichen Eintopf-Reis, der in ganz Westafrika geliebt wird.",
+     "p": [
+      "Jollof-Reis gart in einer kräftigen Sauce aus Tomaten, Paprika, Zwiebeln und Gewürzen in nur einem Topf.",
+      "Sein Name verweist auf das historische Volk der Wolof oder Jolof in der Region Senegambia.",
+      "Nigeria und Ghana pflegen eine freundliche, spielerische Rivalität darüber, wessen Jollof am besten ist."
+     ],
+     "q": "Gibt es ein Gericht, das deine Region stolz besser zu kochen behauptet als die Nachbarn?",
+     "c": "Püriere Tomate, Paprika und Zwiebel, brate das Püree dick ein und gare darin einen kleinen Topf Reis."
+    },
+    "es": {
+     "t": "África Occidental: arroz jollof",
+     "g": "Descubre el jollof, el arroz de una sola olla con mucho tomate querido en toda África Occidental.",
+     "p": [
+      "El arroz jollof se cocina en una salsa rica de tomate, pimientos, cebolla y especias en una sola olla.",
+      "Su nombre se relaciona con el histórico pueblo wolof, o jolof, de la región de Senegambia.",
+      "Nigeria y Ghana mantienen una rivalidad amistosa y divertida sobre qué jollof es el mejor."
+     ],
+     "q": "¿Hay algún plato que tu región presuma de cocinar mejor que sus vecinos?",
+     "c": "Tritura tomate, pimiento y cebolla, sofríe el puré hasta espesar y cuece en él un poco de arroz."
+    },
+    "fr": {
+     "t": "Afrique de l'Ouest : le riz jollof",
+     "g": "Découvre le jollof, riz cuit en une marmite riche en tomate, adoré dans toute l'Afrique de l'Ouest.",
+     "p": [
+      "Le riz jollof cuit dans une sauce riche de tomates, poivrons, oignons et épices, dans une seule marmite.",
+      "Son nom renvoie au peuple historique wolof, ou jolof, de la région sénégambienne.",
+      "Le Nigeria et le Ghana entretiennent une rivalité amicale et joyeuse sur le meilleur jollof."
+     ],
+     "q": "Y a-t-il un plat que ta région se vante de mieux cuisiner que ses voisins ?",
+     "c": "Mixe tomate, poivron et oignon, fais réduire la purée, puis cuis-y une petite casserole de riz."
+    },
+    "it": {
+     "t": "Africa occidentale: il riso jollof",
+     "g": "Scopri il jollof, il riso in un'unica pentola ricco di pomodoro amato in tutta l'Africa occidentale.",
+     "p": [
+      "Il riso jollof cuoce in un ricco sugo di pomodori, peperoni, cipolle e spezie in una sola pentola.",
+      "Il suo nome richiama lo storico popolo wolof, o jolof, della regione della Senegambia.",
+      "Nigeria e Ghana hanno una rivalità amichevole e scherzosa su quale jollof sia il migliore."
+     ],
+     "q": "C'è un piatto che la tua regione vanta di cucinare meglio dei vicini?",
+     "c": "Frulla pomodoro, peperone e cipolla, fai addensare la purea in padella e cuocici un po' di riso."
+    },
+    "pt": {
+     "t": "África Ocidental: arroz jollof",
+     "g": "Descobre o jollof, o arroz de tacho com muito tomate adorado em toda a África Ocidental.",
+     "p": [
+      "O arroz jollof coze num molho rico de tomate, pimentos, cebola e especiarias num único tacho.",
+      "O seu nome liga-se ao histórico povo wolof, ou jolof, da região da Senegâmbia.",
+      "A Nigéria e o Gana têm uma rivalidade amigável e divertida sobre qual jollof é o melhor."
+     ],
+     "q": "Há algum prato que a tua região se gabe de cozinhar melhor do que os vizinhos?",
+     "c": "Tritura tomate, pimento e cebola, refoga o puré até engrossar e coze nele um pouco de arroz."
+    },
+    "pt_BR": {
+     "t": "África Ocidental: arroz jollof",
+     "g": "Descubra o jollof, o arroz de panela única com muito tomate amado em toda a África Ocidental.",
+     "p": [
+      "O arroz jollof cozinha num molho rico de tomate, pimentão, cebola e especiarias numa só panela.",
+      "Seu nome se liga ao histórico povo wolof, ou jolof, da região da Senegâmbia.",
+      "Nigéria e Gana têm uma rivalidade amigável e divertida sobre qual jollof é o melhor."
+     ],
+     "q": "Existe algum prato que sua região se orgulha de fazer melhor que os vizinhos?",
+     "c": "Bata tomate, pimentão e cebola, refogue o purê até engrossar e cozinhe nele um pouco de arroz."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "East Africa: the Swahili coast",
+     "g": "Explore Swahili coastal cooking, shaped by centuries of Indian Ocean trade.",
+     "p": [
+      "Pilau is rice cooked with warm spices like cumin, cardamom, cinnamon and cloves.",
+      "Coconut curries, often with fish, reflect the coconut palms that line the coast.",
+      "Chapati, a soft layered flatbread, arrived through long links with the Indian subcontinent."
+     ],
+     "q": "Which spice smell instantly makes you feel at home or on holiday?",
+     "c": "Cook rice with a cinnamon stick, two cloves and a few cardamom pods and notice the aroma."
+    },
+    "de": {
+     "t": "Ostafrika: Die Swahili-Küste",
+     "g": "Entdecke die Küche der Swahili-Küste, geprägt von Jahrhunderten Handel im Indischen Ozean.",
+     "p": [
+      "Pilau ist Reis mit warmen Gewürzen wie Kreuzkümmel, Kardamom, Zimt und Nelken.",
+      "Kokoscurrys, oft mit Fisch, spiegeln die Kokospalmen wider, die die Küste säumen.",
+      "Chapati, ein weiches geschichtetes Fladenbrot, kam über lange Verbindungen zum indischen Subkontinent."
+     ],
+     "q": "Welcher Gewürzduft lässt dich sofort an Zuhause oder Urlaub denken?",
+     "c": "Koche Reis mit einer Zimtstange, zwei Nelken und ein paar Kardamomkapseln und achte auf das Aroma."
+    },
+    "es": {
+     "t": "África Oriental: la costa suajili",
+     "g": "Explora la cocina de la costa suajili, moldeada por siglos de comercio en el océano Índico.",
+     "p": [
+      "El pilau es arroz cocinado con especias cálidas como comino, cardamomo, canela y clavo.",
+      "Los currys de coco, a menudo con pescado, reflejan las palmeras que bordean la costa.",
+      "El chapati, un pan plano suave y en capas, llegó por los largos lazos con el subcontinente indio."
+     ],
+     "q": "¿Qué aroma de especia te hace sentir enseguida en casa o de vacaciones?",
+     "c": "Cocina arroz con una rama de canela, dos clavos y unas vainas de cardamomo y nota el aroma."
+    },
+    "fr": {
+     "t": "Afrique de l'Est : la côte swahilie",
+     "g": "Explore la cuisine de la côte swahilie, façonnée par des siècles de commerce dans l'océan Indien.",
+     "p": [
+      "Le pilau est un riz cuit avec des épices chaudes comme cumin, cardamome, cannelle et clous de girofle.",
+      "Les currys au coco, souvent de poisson, reflètent les cocotiers qui bordent la côte.",
+      "Le chapati, galette souple et feuilletée, est arrivé par des liens anciens avec le sous-continent indien."
+     ],
+     "q": "Quelle odeur d'épice te donne aussitôt l'impression d'être chez toi ou en vacances ?",
+     "c": "Cuis du riz avec un bâton de cannelle, deux clous de girofle et quelques gousses de cardamome, et sens l'arôme."
+    },
+    "it": {
+     "t": "Africa orientale: la costa swahili",
+     "g": "Esplora la cucina della costa swahili, plasmata da secoli di commerci nell'Oceano Indiano.",
+     "p": [
+      "Il pilau è riso cotto con spezie calde come cumino, cardamomo, cannella e chiodi di garofano.",
+      "I curry al cocco, spesso di pesce, riflettono le palme da cocco lungo la costa.",
+      "Il chapati, pane piatto morbido e sfogliato, è arrivato grazie ai lunghi legami con il subcontinente indiano."
+     ],
+     "q": "Quale profumo di spezia ti fa sentire subito a casa o in vacanza?",
+     "c": "Cuoci il riso con una stecca di cannella, due chiodi di garofano e qualche baccello di cardamomo."
+    },
+    "pt": {
+     "t": "África Oriental: a costa suaíli",
+     "g": "Explora a cozinha da costa suaíli, moldada por séculos de comércio no oceano Índico.",
+     "p": [
+      "O pilau é arroz cozinhado com especiarias quentes como cominhos, cardamomo, canela e cravinho.",
+      "Os caris de coco, muitas vezes de peixe, refletem os coqueiros que ladeiam a costa.",
+      "O chapati, um pão achatado macio e folhado, chegou pelas longas ligações ao subcontinente indiano."
+     ],
+     "q": "Que cheiro de especiaria te faz sentir logo em casa ou de férias?",
+     "c": "Coze arroz com um pau de canela, dois cravinhos e umas vagens de cardamomo e repara no aroma."
+    },
+    "pt_BR": {
+     "t": "África Oriental: a costa suaíli",
+     "g": "Explore a cozinha da costa suaíli, moldada por séculos de comércio no oceano Índico.",
+     "p": [
+      "O pilau é arroz cozido com especiarias quentes como cominho, cardamomo, canela e cravo.",
+      "Os curries de coco, muitas vezes de peixe, refletem os coqueiros que margeiam o litoral.",
+      "O chapati, um pão achatado macio e folhado, chegou pelos longos laços com o subcontinente indiano."
+     ],
+     "q": "Qual aroma de especiaria faz você se sentir logo em casa ou de férias?",
+     "c": "Cozinhe arroz com um pau de canela, dois cravos e algumas bagas de cardamomo e repare no aroma."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "South Africa: braai and bobotie",
+     "g": "Discover South Africa's grilling culture and a spiced dish with Cape Malay roots.",
+     "p": [
+      "A braai is a social barbecue over wood or charcoal, and boerewors is a classic coiled sausage.",
+      "Bobotie is spiced, gently curried minced meat baked under a golden egg custard topping.",
+      "It comes from Cape Malay cooking and is often served with yellow rice and fruit chutney."
+     ],
+     "q": "What food do you love to cook or eat outdoors with friends?",
+     "c": "Bake a small dish of spiced mince or lentils topped with beaten egg and milk until set and golden."
+    },
+    "de": {
+     "t": "Südafrika: Braai und Bobotie",
+     "g": "Entdecke Südafrikas Grillkultur und ein gewürztes Gericht mit kapmalaiischen Wurzeln.",
+     "p": [
+      "Ein Braai ist ein geselliges Grillen über Holz oder Kohle, Boerewors eine klassische Wurstschnecke.",
+      "Bobotie ist gewürztes, leicht curryartiges Hackfleisch, überbacken mit einer goldenen Eiermilch.",
+      "Es stammt aus der kapmalaiischen Küche und wird oft mit gelbem Reis und Fruchtchutney serviert."
+     ],
+     "q": "Welches Essen kochst oder isst du am liebsten draußen mit Freunden?",
+     "c": "Backe eine kleine Form gewürztes Hack oder Linsen mit verquirltem Ei und Milch, bis es fest und golden ist."
+    },
+    "es": {
+     "t": "Sudáfrica: braai y bobotie",
+     "g": "Descubre la cultura de la parrilla sudafricana y un plato especiado de raíces malayas del Cabo.",
+     "p": [
+      "El braai es una barbacoa social con leña o carbón, y la boerewors es una clásica salchicha en espiral.",
+      "El bobotie es carne picada especiada, con un toque de curry, horneada bajo una dorada capa de huevo.",
+      "Viene de la cocina malaya del Cabo y suele servirse con arroz amarillo y chutney de frutas."
+     ],
+     "q": "¿Qué comida te encanta cocinar o comer al aire libre con amigos?",
+     "c": "Hornea una fuente pequeña de carne picada o lentejas especiadas cubierta con huevo batido y leche hasta dorar."
+    },
+    "fr": {
+     "t": "Afrique du Sud : braai et bobotie",
+     "g": "Découvre la culture du gril sud-africaine et un plat épicé aux racines malaises du Cap.",
+     "p": [
+      "Le braai est un barbecue convivial au bois ou au charbon, et la boerewors une saucisse en spirale classique.",
+      "Le bobotie est une viande hachée épicée, légèrement currysée, cuite au four sous une crème aux œufs dorée.",
+      "Il vient de la cuisine malaise du Cap et se sert souvent avec du riz jaune et un chutney de fruits."
+     ],
+     "q": "Quel plat aimes-tu cuisiner ou manger dehors entre amis ?",
+     "c": "Fais cuire au four un petit plat de viande hachée ou de lentilles épicées nappé d'œuf battu et de lait."
+    },
+    "it": {
+     "t": "Sudafrica: braai e bobotie",
+     "g": "Scopri la cultura della griglia sudafricana e un piatto speziato con radici malesi del Capo.",
+     "p": [
+      "Il braai è un barbecue conviviale a legna o carbone, e la boerewors una classica salsiccia a spirale.",
+      "Il bobotie è carne macinata speziata e leggermente al curry, cotta in forno sotto una dorata crema d'uovo.",
+      "Viene dalla cucina malese del Capo e si serve spesso con riso giallo e chutney di frutta."
+     ],
+     "q": "Quale cibo ami cucinare o mangiare all'aperto con gli amici?",
+     "c": "Inforna una pirofila di macinato o lenticchie speziate coperta di uovo sbattuto e latte finché è dorata."
+    },
+    "pt": {
+     "t": "África do Sul: braai e bobotie",
+     "g": "Descobre a cultura do grelhado sul-africana e um prato condimentado de raízes malaias do Cabo.",
+     "p": [
+      "O braai é um churrasco convívio a lenha ou carvão, e a boerewors uma salsicha clássica em espiral.",
+      "O bobotie é carne picada condimentada, levemente com caril, levada ao forno sob um creme dourado de ovo.",
+      "Vem da cozinha malaia do Cabo e é muitas vezes servido com arroz amarelo e chutney de fruta."
+     ],
+     "q": "Que comida adoras cozinhar ou comer ao ar livre com amigos?",
+     "c": "Leva ao forno um pequeno pirex de carne picada ou lentilhas condimentadas coberto com ovo batido e leite."
+    },
+    "pt_BR": {
+     "t": "África do Sul: braai e bobotie",
+     "g": "Descubra a cultura do churrasco sul-africano e um prato temperado de raízes malaias do Cabo.",
+     "p": [
+      "O braai é um churrasco social na lenha ou carvão, e a boerewors uma linguiça clássica em espiral.",
+      "O bobotie é carne moída temperada, levemente com curry, assada sob uma cobertura dourada de ovo.",
+      "Vem da cozinha malaia do Cabo e costuma ser servido com arroz amarelo e chutney de frutas."
+     ],
+     "q": "Qual comida você adora preparar ou comer ao ar livre com amigos?",
+     "c": "Asse um refratário pequeno de carne moída ou lentilha temperada coberto com ovo batido e leite até dourar."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Australia and New Zealand",
+     "g": "Explore native ingredients, classic bakes and the lively café culture down under.",
+     "p": [
+      "Native foods include macadamia nuts, finger limes and wattleseed, long used by Aboriginal peoples.",
+      "Meat pies are a beloved hand-held snack, and pavlova is a meringue dessert topped with fruit.",
+      "Both countries proudly claim the pavlova, and both have a famous café and flat white culture."
+     ],
+     "q": "Which would you pick for an afternoon treat: a savoury pie or a sweet pavlova?",
+     "c": "Whisk an egg white with sugar until glossy peaks form, the first step of any meringue."
+    },
+    "de": {
+     "t": "Australien und Neuseeland",
+     "g": "Entdecke heimische Zutaten, klassisches Gebäck und die lebhafte Café-Kultur.",
+     "p": [
+      "Heimische Lebensmittel sind etwa Macadamianüsse, Fingerlimetten und Akaziensamen, die Aborigines seit Langem nutzen.",
+      "Meat Pies sind ein beliebter Snack für die Hand, Pavlova ein Baiser-Dessert mit Früchten.",
+      "Beide Länder beanspruchen stolz die Pavlova, und beide haben eine berühmte Café- und Flat-White-Kultur."
+     ],
+     "q": "Was würdest du als Nachmittagssnack wählen: eine herzhafte Pie oder eine süße Pavlova?",
+     "c": "Schlage ein Eiweiß mit Zucker zu glänzenden Spitzen, der erste Schritt jedes Baisers."
+    },
+    "es": {
+     "t": "Australia y Nueva Zelanda",
+     "g": "Explora ingredientes nativos, horneados clásicos y una animada cultura de cafeterías.",
+     "p": [
+      "Entre los alimentos nativos están la macadamia, la lima dedo y la semilla de acacia, usados por los pueblos aborígenes.",
+      "Las meat pies son un querido tentempié para comer con la mano, y la pavlova es un postre de merengue con fruta.",
+      "Ambos países reclaman con orgullo la pavlova, y los dos tienen una famosa cultura de café y flat white."
+     ],
+     "q": "¿Qué elegirías para merendar: una empanada salada o una dulce pavlova?",
+     "c": "Bate una clara con azúcar hasta formar picos brillantes, el primer paso de cualquier merengue."
+    },
+    "fr": {
+     "t": "Australie et Nouvelle-Zélande",
+     "g": "Explore les ingrédients indigènes, les pâtisseries classiques et la vivante culture des cafés.",
+     "p": [
+      "Parmi les aliments indigènes : noix de macadamia, citron caviar et graines d'acacia, utilisés de longue date par les Aborigènes.",
+      "Les meat pies sont un en-cas adoré qu'on mange à la main, et la pavlova un dessert meringué aux fruits.",
+      "Les deux pays revendiquent fièrement la pavlova, et tous deux ont une célèbre culture du café et du flat white."
+     ],
+     "q": "Pour le goûter, tu choisirais une tourte salée ou une pavlova sucrée ?",
+     "c": "Fouette un blanc d'œuf avec du sucre jusqu'à obtenir des pics brillants, la base de toute meringue."
+    },
+    "it": {
+     "t": "Australia e Nuova Zelanda",
+     "g": "Esplora ingredienti nativi, dolci classici e una vivace cultura dei caffè.",
+     "p": [
+      "Tra i cibi nativi ci sono noci di macadamia, finger lime e semi di acacia, usati da tempo dai popoli aborigeni.",
+      "Le meat pie sono uno snack amato da mangiare con le mani, la pavlova un dolce di meringa con frutta.",
+      "Entrambi i paesi rivendicano con orgoglio la pavlova, ed entrambi hanno una famosa cultura del caffè e del flat white."
+     ],
+     "q": "Cosa sceglieresti per merenda: una pie salata o una dolce pavlova?",
+     "c": "Monta un albume con lo zucchero fino a ottenere picchi lucidi, il primo passo di ogni meringa."
+    },
+    "pt": {
+     "t": "Austrália e Nova Zelândia",
+     "g": "Explora ingredientes nativos, bolos clássicos e uma animada cultura de cafés.",
+     "p": [
+      "Entre os alimentos nativos estão a noz de macadâmia, a lima-dedo e a semente de acácia, usados pelos povos aborígenes.",
+      "As meat pies são um petisco adorado para comer à mão, e a pavlova uma sobremesa de merengue com fruta.",
+      "Os dois países reclamam com orgulho a pavlova, e ambos têm uma famosa cultura de café e flat white."
+     ],
+     "q": "O que escolherias para o lanche: uma tarte salgada ou uma doce pavlova?",
+     "c": "Bate uma clara com açúcar até formar picos brilhantes, o primeiro passo de qualquer merengue."
+    },
+    "pt_BR": {
+     "t": "Austrália e Nova Zelândia",
+     "g": "Explore ingredientes nativos, assados clássicos e uma animada cultura de cafeterias.",
+     "p": [
+      "Entre os alimentos nativos estão a macadâmia, o limão-caviar e a semente de acácia, usados pelos povos aborígenes.",
+      "As meat pies são um lanche querido para comer com a mão, e a pavlova uma sobremesa de merengue com frutas.",
+      "Os dois países reivindicam com orgulho a pavlova, e ambos têm uma famosa cultura de café e flat white."
+     ],
+     "q": "O que você escolheria para o lanche da tarde: uma torta salgada ou uma doce pavlova?",
+     "c": "Bata uma clara com açúcar até formar picos brilhantes, o primeiro passo de qualquer merengue."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfasts around the world",
+     "g": "See how people in different places start their day at the table.",
+     "p": [
+      "Congee is a soothing rice porridge eaten across China and much of Asia, with savoury toppings.",
+      "A full English brings eggs, bacon, sausages, beans, tomatoes, mushrooms and toast.",
+      "Shakshuka is eggs poached in spiced tomato sauce; Brazil's pão de queijo is a chewy cheese bread."
+     ],
+     "q": "What does your ideal breakfast look like on a slow weekend morning?",
+     "c": "Try a breakfast from another culture this week, even a simple one like eggs in tomato sauce."
+    },
+    "de": {
+     "t": "Frühstück rund um die Welt",
+     "g": "Sieh, wie Menschen an verschiedenen Orten ihren Tag am Tisch beginnen.",
+     "p": [
+      "Congee ist ein sanfter Reisbrei, der in China und weiten Teilen Asiens mit herzhaften Toppings gegessen wird.",
+      "Ein Full English bringt Eier, Speck, Würstchen, Bohnen, Tomaten, Pilze und Toast.",
+      "Shakshuka sind in würziger Tomatensauce pochierte Eier; Brasiliens Pão de Queijo ist ein zähes Käsebrötchen."
+     ],
+     "q": "Wie sieht dein ideales Frühstück an einem ruhigen Wochenendmorgen aus?",
+     "c": "Probiere diese Woche ein Frühstück aus einer anderen Kultur, etwa einfach Eier in Tomatensauce."
+    },
+    "es": {
+     "t": "Desayunos del mundo",
+     "g": "Mira cómo empiezan el día en la mesa las personas de distintos lugares.",
+     "p": [
+      "El congee es una suave papilla de arroz que se come en China y gran parte de Asia, con toppings salados.",
+      "El desayuno inglés completo trae huevos, beicon, salchichas, alubias, tomate, champiñones y tostadas.",
+      "La shakshuka son huevos escalfados en salsa de tomate especiada; el pão de queijo brasileño, un pan de queso elástico."
+     ],
+     "q": "¿Cómo es tu desayuno ideal en una mañana tranquila de fin de semana?",
+     "c": "Prueba esta semana un desayuno de otra cultura, aunque sea sencillo, como huevos en salsa de tomate."
+    },
+    "fr": {
+     "t": "Petits-déjeuners du monde",
+     "g": "Vois comment les gens de différents pays commencent leur journée à table.",
+     "p": [
+      "Le congee est une douce bouillie de riz mangée en Chine et dans une grande partie de l'Asie, garnie de salé.",
+      "Le full English réunit œufs, bacon, saucisses, haricots, tomates, champignons et toasts.",
+      "La shakshuka, ce sont des œufs pochés dans une sauce tomate épicée ; le pão de queijo brésilien, un pain au fromage moelleux."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner idéal un matin tranquille de week-end ?",
+     "c": "Essaie cette semaine un petit-déjeuner d'une autre culture, même simple, comme des œufs à la sauce tomate."
+    },
+    "it": {
+     "t": "Colazioni nel mondo",
+     "g": "Scopri come le persone in luoghi diversi iniziano la giornata a tavola.",
+     "p": [
+      "Il congee è una delicata pappa di riso mangiata in Cina e in gran parte dell'Asia, con condimenti salati.",
+      "La full English porta uova, bacon, salsicce, fagioli, pomodori, funghi e pane tostato.",
+      "La shakshuka sono uova in camicia in salsa di pomodoro speziata; il pão de queijo brasiliano è un panino al formaggio elastico."
+     ],
+     "q": "Com'è la tua colazione ideale in una tranquilla mattina del weekend?",
+     "c": "Prova questa settimana una colazione di un'altra cultura, anche semplice, come uova al pomodoro."
+    },
+    "pt": {
+     "t": "Pequenos-almoços do mundo",
+     "g": "Vê como as pessoas em diferentes lugares começam o dia à mesa.",
+     "p": [
+      "O congee é uma papa de arroz suave comida na China e em grande parte da Ásia, com coberturas salgadas.",
+      "O full English traz ovos, bacon, salsichas, feijão, tomate, cogumelos e torradas.",
+      "A shakshuka são ovos escalfados em molho de tomate condimentado; o pão de queijo brasileiro é elástico e delicioso."
+     ],
+     "q": "Como é o teu pequeno-almoço ideal numa manhã calma de fim de semana?",
+     "c": "Experimenta esta semana um pequeno-almoço de outra cultura, mesmo simples, como ovos em molho de tomate."
+    },
+    "pt_BR": {
+     "t": "Cafés da manhã pelo mundo",
+     "g": "Veja como as pessoas em lugares diferentes começam o dia à mesa.",
+     "p": [
+      "O congee é um mingau de arroz suave comido na China e em grande parte da Ásia, com coberturas salgadas.",
+      "O café da manhã inglês completo traz ovos, bacon, salsichas, feijão, tomate, cogumelos e torradas.",
+      "A shakshuka são ovos pochê em molho de tomate temperado; o pão de queijo mineiro é feito com polvilho."
+     ],
+     "q": "Como é o seu café da manhã ideal numa manhã tranquila de fim de semana?",
+     "c": "Experimente esta semana um café da manhã de outra cultura, mesmo simples, como ovos no molho de tomate."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food basics",
+     "g": "Learn why street food is the quickest way into a culture and how to choose a good stall.",
+     "p": [
+      "Street food shows what locals really eat every day, cooked fast and full of flavour.",
+      "A long queue of locals and a busy stall usually mean fresh food and quick turnover.",
+      "Watch food being cooked hot in front of you, and choose stalls that look clean and organised."
+     ],
+     "q": "What is the best street food you have ever eaten, or the one you dream of trying?",
+     "c": "Next time you are out, pick a busy food stall or market and try one thing you have never had."
+    },
+    "de": {
+     "t": "Streetfood-Grundlagen",
+     "g": "Lerne, warum Streetfood der schnellste Weg in eine Kultur ist und wie du einen guten Stand findest.",
+     "p": [
+      "Streetfood zeigt, was Einheimische wirklich täglich essen, schnell gekocht und voller Geschmack.",
+      "Eine lange Schlange Einheimischer und ein belebter Stand bedeuten meist frisches Essen.",
+      "Schau zu, wie das Essen heiß vor dir zubereitet wird, und wähle Stände, die sauber und ordentlich wirken."
+     ],
+     "q": "Was war das beste Streetfood, das du je gegessen hast, oder welches möchtest du unbedingt probieren?",
+     "c": "Such dir beim nächsten Ausgehen einen belebten Stand oder Markt und probiere etwas völlig Neues."
+    },
+    "es": {
+     "t": "Lo básico de la comida callejera",
+     "g": "Aprende por qué la comida callejera es la vía más rápida a una cultura y cómo elegir un buen puesto.",
+     "p": [
+      "La comida callejera muestra lo que la gente local come de verdad, hecho rápido y lleno de sabor.",
+      "Una cola larga de locales y un puesto concurrido suelen indicar comida fresca y mucha rotación.",
+      "Mira cómo cocinan la comida caliente delante de ti y elige puestos limpios y ordenados."
+     ],
+     "q": "¿Cuál es la mejor comida callejera que has probado, o cuál sueñas con probar?",
+     "c": "La próxima vez que salgas, elige un puesto o mercado concurrido y prueba algo que nunca hayas comido."
+    },
+    "fr": {
+     "t": "Les bases de la street food",
+     "g": "Découvre pourquoi la street food est la voie la plus rapide vers une culture et comment bien choisir.",
+     "p": [
+      "La street food montre ce que les habitants mangent vraiment au quotidien, cuisiné vite et plein de saveurs.",
+      "Une longue file d'habitants et un stand animé signifient souvent des produits frais qui tournent vite.",
+      "Regarde la nourriture cuire bien chaude devant toi, et choisis des stands propres et bien tenus."
+     ],
+     "q": "Quelle est la meilleure street food que tu aies mangée, ou celle que tu rêves de goûter ?",
+     "c": "À ta prochaine sortie, choisis un stand ou un marché animé et goûte quelque chose de jamais essayé."
+    },
+    "it": {
+     "t": "Le basi dello street food",
+     "g": "Scopri perché lo street food è la via più rapida verso una cultura e come scegliere una buona bancarella.",
+     "p": [
+      "Lo street food mostra cosa mangia davvero la gente del posto ogni giorno, cucinato in fretta e pieno di gusto.",
+      "Una lunga fila di locali e una bancarella affollata di solito significano cibo fresco e ricambio veloce.",
+      "Guarda il cibo cotto caldo davanti a te e scegli bancarelle pulite e ordinate."
+     ],
+     "q": "Qual è il miglior street food che hai mai mangiato, o quale sogni di provare?",
+     "c": "La prossima volta che esci, scegli una bancarella o un mercato affollato e prova qualcosa di nuovo."
+    },
+    "pt": {
+     "t": "Noções de comida de rua",
+     "g": "Aprende porque a comida de rua é o caminho mais rápido para uma cultura e como escolher uma boa banca.",
+     "p": [
+      "A comida de rua mostra o que os locais comem mesmo todos os dias, feita depressa e cheia de sabor.",
+      "Uma fila longa de locais e uma banca movimentada costumam significar comida fresca e muita rotação.",
+      "Vê a comida a ser cozinhada bem quente à tua frente e escolhe bancas limpas e organizadas."
+     ],
+     "q": "Qual foi a melhor comida de rua que já comeste, ou qual sonhas provar?",
+     "c": "Da próxima vez que saíres, escolhe uma banca ou mercado movimentado e prova algo que nunca comeste."
+    },
+    "pt_BR": {
+     "t": "O básico da comida de rua",
+     "g": "Aprenda por que a comida de rua é o caminho mais rápido para uma cultura e como escolher uma boa barraca.",
+     "p": [
+      "A comida de rua mostra o que os moradores realmente comem todo dia, feita rápido e cheia de sabor.",
+      "Uma fila longa de moradores e uma barraca movimentada costumam indicar comida fresca e alta rotatividade.",
+      "Veja a comida sendo preparada bem quente na sua frente e escolha barracas limpas e organizadas."
+     ],
+     "q": "Qual foi a melhor comida de rua que você já comeu, ou qual sonha em provar?",
+     "c": "Na próxima vez que sair, escolha uma barraca ou feira movimentada e prove algo que nunca comeu."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soups of the world",
+     "g": "See how soup brings comfort in every climate, hot or cold.",
+     "p": [
+      "Japanese miso soup combines dashi broth and miso paste, often with tofu and seaweed.",
+      "Gazpacho from Andalusia is a refreshing cold soup of raw tomatoes, peppers, cucumber and olive oil.",
+      "Vietnam's pho and Morocco's harira, a hearty tomato, lentil and chickpea soup, warm many tables."
+     ],
+     "q": "Do you prefer hot soups in winter only, or would you try a cold soup in summer?",
+     "c": "Blend ripe tomatoes, cucumber, a little garlic, olive oil and salt, chill, and taste a quick gazpacho."
+    },
+    "de": {
+     "t": "Suppen der Welt",
+     "g": "Sieh, wie Suppe in jedem Klima Trost spendet, heiß oder kalt.",
+     "p": [
+      "Japanische Misosuppe verbindet Dashi-Brühe und Misopaste, oft mit Tofu und Algen.",
+      "Gazpacho aus Andalusien ist eine erfrischende kalte Suppe aus rohen Tomaten, Paprika, Gurke und Olivenöl.",
+      "Vietnams Pho und Marokkos Harira, eine kräftige Suppe aus Tomaten, Linsen und Kichererbsen, wärmen viele Tische."
+     ],
+     "q": "Isst du heiße Suppen nur im Winter, oder würdest du im Sommer eine kalte probieren?",
+     "c": "Püriere reife Tomaten, Gurke, etwas Knoblauch, Olivenöl und Salz, kühle es und probiere einen schnellen Gazpacho."
+    },
+    "es": {
+     "t": "Sopas del mundo",
+     "g": "Mira cómo la sopa reconforta en cualquier clima, caliente o fría.",
+     "p": [
+      "La sopa de miso japonesa une caldo dashi y pasta de miso, a menudo con tofu y algas.",
+      "El gazpacho andaluz es una sopa fría y refrescante de tomate, pimiento, pepino y aceite de oliva en crudo.",
+      "El pho vietnamita y la harira marroquí, sopa contundente de tomate, lentejas y garbanzos, calientan muchas mesas."
+     ],
+     "q": "¿Tomas sopas calientes solo en invierno, o probarías una sopa fría en verano?",
+     "c": "Tritura tomates maduros, pepino, un poco de ajo, aceite de oliva y sal, enfría y prueba un gazpacho rápido."
+    },
+    "fr": {
+     "t": "Soupes du monde",
+     "g": "Vois comment la soupe réconforte sous tous les climats, chaude ou froide.",
+     "p": [
+      "La soupe miso japonaise associe bouillon dashi et pâte de miso, souvent avec tofu et algues.",
+      "Le gaspacho andalou est une soupe froide rafraîchissante de tomates crues, poivron, concombre et huile d'olive.",
+      "Le phở vietnamien et la harira marocaine, soupe généreuse de tomate, lentilles et pois chiches, réchauffent bien des tables."
+     ],
+     "q": "Tu manges des soupes chaudes seulement l'hiver, ou tu essaierais une soupe froide en été ?",
+     "c": "Mixe des tomates mûres, du concombre, un peu d'ail, de l'huile d'olive et du sel, mets au frais et goûte un gaspacho express."
+    },
+    "it": {
+     "t": "Zuppe del mondo",
+     "g": "Scopri come la zuppa conforta in ogni clima, calda o fredda.",
+     "p": [
+      "La zuppa di miso giapponese unisce brodo dashi e pasta di miso, spesso con tofu e alghe.",
+      "Il gazpacho andaluso è una zuppa fredda e rinfrescante di pomodori crudi, peperoni, cetriolo e olio d'oliva.",
+      "Il pho vietnamita e l'harira marocchina, zuppa ricca di pomodoro, lenticchie e ceci, scaldano tante tavole."
+     ],
+     "q": "Mangi zuppe calde solo d'inverno, o proveresti una zuppa fredda d'estate?",
+     "c": "Frulla pomodori maturi, cetriolo, un po' d'aglio, olio d'oliva e sale, raffredda e assaggia un gazpacho veloce."
+    },
+    "pt": {
+     "t": "Sopas do mundo",
+     "g": "Vê como a sopa reconforta em qualquer clima, quente ou fria.",
+     "p": [
+      "A sopa miso japonesa junta caldo dashi e pasta de miso, muitas vezes com tofu e algas.",
+      "O gaspacho andaluz é uma sopa fria e refrescante de tomate cru, pimento, pepino e azeite.",
+      "O pho vietnamita e a harira marroquina, sopa rica de tomate, lentilhas e grão, aquecem muitas mesas."
+     ],
+     "q": "Comes sopas quentes só no inverno, ou provarias uma sopa fria no verão?",
+     "c": "Tritura tomate maduro, pepino, um pouco de alho, azeite e sal, põe a refrescar e prova um gaspacho rápido."
+    },
+    "pt_BR": {
+     "t": "Sopas do mundo",
+     "g": "Veja como a sopa conforta em qualquer clima, quente ou fria.",
+     "p": [
+      "A sopa de missô japonesa une caldo dashi e pasta de missô, muitas vezes com tofu e algas.",
+      "O gaspacho andaluz é uma sopa fria e refrescante de tomate cru, pimentão, pepino e azeite.",
+      "O pho vietnamita e a harira marroquina, sopa encorpada de tomate, lentilha e grão-de-bico, aquecem muitas mesas."
+     ],
+     "q": "Você toma sopa quente só no inverno, ou provaria uma sopa fria no verão?",
+     "c": "Bata tomate maduro, pepino, um pouco de alho, azeite e sal, gele e prove um gaspacho rápido."
+    }
+   }
+  }
+ ]
+}

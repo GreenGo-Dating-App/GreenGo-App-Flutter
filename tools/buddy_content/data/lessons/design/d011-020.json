@@ -1,0 +1,835 @@
+{
+ "topic": "design",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positive and negative space",
+     "g": "Learn to see the shapes between objects and use empty space as part of the design.",
+     "p": [
+      "Positive space is the object itself; negative space is the area around and between objects.",
+      "Negative space has its own shape, and clever designs use it to hide a second image.",
+      "When the gaps are planned, a layout looks intentional; when they are random, it looks messy."
+     ],
+     "q": "Have you ever spotted a hidden shape in a logo, like an arrow between two letters?",
+     "c": "Cut a simple shape from paper and look at the hole it leaves: sketch both and compare."
+    },
+    "de": {
+     "t": "Positiver und negativer Raum",
+     "g": "Die Formen zwischen Objekten sehen und leeren Raum als Teil der Gestaltung nutzen.",
+     "p": [
+      "Positiver Raum ist das Objekt selbst; negativer Raum ist die Fläche um und zwischen den Objekten.",
+      "Negativer Raum hat eine eigene Form, und clevere Entwürfe verstecken darin ein zweites Bild.",
+      "Geplante Lücken wirken absichtsvoll; zufällige Lücken lassen ein Layout unordentlich wirken."
+     ],
+     "q": "Hast du schon mal eine versteckte Form in einem Logo entdeckt, etwa einen Pfeil zwischen Buchstaben?",
+     "c": "Schneide eine einfache Form aus Papier und betrachte das Loch: Skizziere beides und vergleiche."
+    },
+    "es": {
+     "t": "Espacio positivo y negativo",
+     "g": "Aprender a ver las formas entre los objetos y usar el espacio vacío como parte del diseño.",
+     "p": [
+      "El espacio positivo es el objeto; el negativo es el área alrededor y entre los objetos.",
+      "El espacio negativo tiene su propia forma, y algunos diseños ingeniosos esconden ahí otra imagen.",
+      "Si los huecos se planifican, el diseño parece intencionado; si son al azar, parece desordenado."
+     ],
+     "q": "¿Alguna vez descubriste una forma oculta en un logo, como una flecha entre dos letras?",
+     "c": "Recorta una forma sencilla de papel y mira el hueco que deja: dibuja ambos y compáralos."
+    },
+    "fr": {
+     "t": "Espace positif et négatif",
+     "g": "Apprendre à voir les formes entre les objets et utiliser le vide comme partie du design.",
+     "p": [
+      "L'espace positif est l'objet lui-même ; l'espace négatif est la zone autour et entre les objets.",
+      "L'espace négatif a sa propre forme, et des designs malins y cachent une seconde image.",
+      "Des vides pensés rendent une mise en page voulue ; des vides au hasard la rendent brouillonne."
+     ],
+     "q": "As-tu déjà repéré une forme cachée dans un logo, comme une flèche entre deux lettres ?",
+     "c": "Découpe une forme simple dans du papier et regarde le trou laissé : dessine les deux et compare."
+    },
+    "it": {
+     "t": "Spazio positivo e negativo",
+     "g": "Imparare a vedere le forme tra gli oggetti e usare lo spazio vuoto come parte del progetto.",
+     "p": [
+      "Lo spazio positivo è l'oggetto; quello negativo è l'area intorno e tra gli oggetti.",
+      "Lo spazio negativo ha una sua forma, e alcuni progetti ingegnosi ci nascondono una seconda immagine.",
+      "Se i vuoti sono pensati il layout sembra voluto; se sono casuali sembra disordinato."
+     ],
+     "q": "Ti è mai capitato di scoprire una forma nascosta in un logo, come una freccia tra due lettere?",
+     "c": "Ritaglia una forma semplice dalla carta e guarda il buco che lascia: disegna entrambi e confrontali."
+    },
+    "pt": {
+     "t": "Espaço positivo e negativo",
+     "g": "Aprender a ver as formas entre os objetos e usar o espaço vazio como parte do design.",
+     "p": [
+      "O espaço positivo é o próprio objeto; o negativo é a área à volta e entre os objetos.",
+      "O espaço negativo tem forma própria, e alguns designs engenhosos escondem lá uma segunda imagem.",
+      "Quando os vazios são pensados, o layout parece intencional; ao acaso, parece desarrumado."
+     ],
+     "q": "Já descobriste uma forma escondida num logótipo, como uma seta entre duas letras?",
+     "c": "Recorta uma forma simples em papel e observa o buraco que fica: desenha os dois e compara."
+    },
+    "pt_BR": {
+     "t": "Espaço positivo e negativo",
+     "g": "Aprender a ver as formas entre os objetos e usar o espaço vazio como parte do design.",
+     "p": [
+      "Espaço positivo é o objeto em si; negativo é a área ao redor e entre os objetos.",
+      "O espaço negativo tem forma própria, e alguns designs espertos escondem ali uma segunda imagem.",
+      "Quando os vazios são planejados, o layout parece intencional; ao acaso, parece bagunçado."
+     ],
+     "q": "Você já descobriu uma forma escondida em um logo, como uma seta entre duas letras?",
+     "c": "Recorte uma forma simples de papel e observe o buraco que fica: desenhe os dois e compare."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of white space",
+     "g": "See why breathing room makes designs calmer, clearer and more elegant.",
+     "p": [
+      "White space is any empty area, whatever its colour; it gives each element room to be seen.",
+      "More space around an item makes it feel more important and more premium.",
+      "Crowded layouts tire the eye; generous margins and gaps make reading easier."
+     ],
+     "q": "Do you feel calmer in a tidy, spacious room or a full, cosy one?",
+     "c": "Take a crowded note or slide and remove or shrink items until each one has clear space around it."
+    },
+    "de": {
+     "t": "Die Kraft des Weißraums",
+     "g": "Verstehen, warum Luft ein Design ruhiger, klarer und eleganter macht.",
+     "p": [
+      "Weißraum ist jede leere Fläche, egal in welcher Farbe; er gibt jedem Element Raum, gesehen zu werden.",
+      "Mehr Raum um ein Element lässt es wichtiger und hochwertiger wirken.",
+      "Volle Layouts ermüden das Auge; großzügige Ränder und Abstände erleichtern das Lesen."
+     ],
+     "q": "Fühlst du dich in einem aufgeräumten, weiten Raum ruhiger oder in einem vollen, gemütlichen?",
+     "c": "Nimm eine volle Notiz oder Folie und entferne oder verkleinere Dinge, bis jedes klaren Raum hat."
+    },
+    "es": {
+     "t": "El poder del espacio en blanco",
+     "g": "Ver por qué el aire hace que un diseño sea más tranquilo, claro y elegante.",
+     "p": [
+      "El espacio en blanco es cualquier zona vacía, sea del color que sea; deja que cada elemento se vea.",
+      "Más espacio alrededor de algo lo hace parecer más importante y de más calidad.",
+      "Los diseños abarrotados cansan la vista; márgenes y huecos generosos facilitan la lectura."
+     ],
+     "q": "¿Te sientes más tranquilo en una habitación ordenada y amplia o en una llena y acogedora?",
+     "c": "Toma una nota o diapositiva abarrotada y quita o reduce cosas hasta que cada una tenga aire alrededor."
+    },
+    "fr": {
+     "t": "La force de l'espace blanc",
+     "g": "Comprendre pourquoi laisser respirer un design le rend plus calme, plus clair et plus élégant.",
+     "p": [
+      "L'espace blanc est toute zone vide, quelle que soit sa couleur ; il laisse chaque élément exister.",
+      "Plus d'espace autour d'un élément le rend plus important et plus haut de gamme.",
+      "Une page surchargée fatigue l'œil ; des marges et des espaces généreux facilitent la lecture."
+     ],
+     "q": "Te sens-tu plus calme dans une pièce rangée et spacieuse ou dans une pièce pleine et douillette ?",
+     "c": "Prends une note ou une diapo chargée et retire ou réduis des éléments jusqu'à ce que chacun respire."
+    },
+    "it": {
+     "t": "La forza dello spazio bianco",
+     "g": "Capire perché il respiro rende un progetto più calmo, chiaro ed elegante.",
+     "p": [
+      "Lo spazio bianco è ogni area vuota, di qualunque colore; dà a ogni elemento lo spazio per farsi vedere.",
+      "Più spazio intorno a un elemento lo fa sembrare più importante e più pregiato.",
+      "I layout affollati stancano l'occhio; margini e spazi generosi rendono la lettura più facile."
+     ],
+     "q": "Ti senti più tranquillo in una stanza ordinata e spaziosa o in una piena e accogliente?",
+     "c": "Prendi un appunto o una slide affollata e togli o riduci elementi finché ognuno ha spazio intorno."
+    },
+    "pt": {
+     "t": "O poder do espaço em branco",
+     "g": "Perceber porque é que dar espaço torna o design mais calmo, claro e elegante.",
+     "p": [
+      "Espaço em branco é qualquer área vazia, seja de que cor for; deixa cada elemento ser visto.",
+      "Mais espaço à volta de um elemento torna-o mais importante e mais requintado.",
+      "Layouts apinhados cansam o olhar; margens e espaços generosos facilitam a leitura."
+     ],
+     "q": "Sentes-te mais calmo numa sala arrumada e ampla ou numa cheia e acolhedora?",
+     "c": "Pega numa nota ou diapositivo cheio e tira ou reduz elementos até cada um ter espaço à volta."
+    },
+    "pt_BR": {
+     "t": "O poder do espaço em branco",
+     "g": "Entender por que dar respiro deixa o design mais calmo, claro e elegante.",
+     "p": [
+      "Espaço em branco é qualquer área vazia, de qualquer cor; ele deixa cada elemento ser visto.",
+      "Mais espaço em volta de um elemento faz ele parecer mais importante e mais sofisticado.",
+      "Layouts lotados cansam a vista; margens e espaços generosos facilitam a leitura."
+     ],
+     "q": "Você fica mais calmo em um quarto arrumado e amplo ou em um cheio e aconchegante?",
+     "c": "Pegue uma anotação ou slide lotado e tire ou diminua itens até cada um ter espaço ao redor."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Balance in a composition",
+     "g": "Understand symmetrical and asymmetrical balance and how visual weight works.",
+     "p": [
+      "Visual weight comes from size, darkness, colour and detail: big, dark or bright things feel heavier.",
+      "Symmetrical balance mirrors both sides and feels stable, formal and calm.",
+      "Asymmetrical balance offsets one big element with several small ones and feels lively and modern."
+     ],
+     "q": "Do you prefer symmetrical layouts or more dynamic asymmetrical ones?",
+     "c": "Arrange a few objects on a table, first symmetrically, then asymmetrically but still balanced; photograph both."
+    },
+    "de": {
+     "t": "Balance in einer Komposition",
+     "g": "Symmetrische und asymmetrische Balance verstehen und wie visuelles Gewicht wirkt.",
+     "p": [
+      "Visuelles Gewicht entsteht durch Größe, Dunkelheit, Farbe und Detail: Großes, Dunkles, Leuchtendes wirkt schwerer.",
+      "Symmetrische Balance spiegelt beide Seiten und wirkt stabil, förmlich und ruhig.",
+      "Asymmetrische Balance gleicht ein großes Element mit mehreren kleinen aus und wirkt lebendig und modern."
+     ],
+     "q": "Magst du lieber symmetrische Layouts oder dynamischere asymmetrische?",
+     "c": "Ordne ein paar Dinge auf dem Tisch erst symmetrisch, dann asymmetrisch, aber ausgewogen an; fotografiere beides."
+    },
+    "es": {
+     "t": "Equilibrio en una composición",
+     "g": "Entender el equilibrio simétrico y asimétrico y cómo funciona el peso visual.",
+     "p": [
+      "El peso visual viene del tamaño, la oscuridad, el color y el detalle: lo grande u oscuro pesa más.",
+      "El equilibrio simétrico refleja ambos lados y se siente estable, formal y tranquilo.",
+      "El asimétrico compensa un elemento grande con varios pequeños y se siente vivo y moderno."
+     ],
+     "q": "¿Prefieres composiciones simétricas o asimétricas más dinámicas?",
+     "c": "Coloca unos objetos en una mesa, primero en simetría y luego en asimetría equilibrada; fotografía ambas."
+    },
+    "fr": {
+     "t": "L'équilibre d'une composition",
+     "g": "Comprendre l'équilibre symétrique et asymétrique et le fonctionnement du poids visuel.",
+     "p": [
+      "Le poids visuel vient de la taille, du foncé, de la couleur et du détail : le grand ou le foncé pèse plus.",
+      "L'équilibre symétrique reflète les deux côtés et paraît stable, formel et calme.",
+      "L'équilibre asymétrique compense un grand élément par plusieurs petits et paraît vivant et moderne."
+     ],
+     "q": "Préfères-tu les compositions symétriques ou les asymétriques, plus dynamiques ?",
+     "c": "Dispose quelques objets sur une table, d'abord symétriquement, puis de façon asymétrique mais équilibrée ; photographie."
+    },
+    "it": {
+     "t": "Equilibrio in una composizione",
+     "g": "Capire l'equilibrio simmetrico e asimmetrico e come funziona il peso visivo.",
+     "p": [
+      "Il peso visivo nasce da dimensione, scurezza, colore e dettaglio: ciò che è grande o scuro pesa di più.",
+      "L'equilibrio simmetrico rispecchia i due lati e risulta stabile, formale e calmo.",
+      "Quello asimmetrico bilancia un elemento grande con vari piccoli e risulta vivace e moderno."
+     ],
+     "q": "Preferisci composizioni simmetriche o quelle asimmetriche, più dinamiche?",
+     "c": "Disponi alcuni oggetti su un tavolo, prima in simmetria e poi in asimmetria equilibrata; fotografa entrambe."
+    },
+    "pt": {
+     "t": "Equilíbrio numa composição",
+     "g": "Perceber o equilíbrio simétrico e assimétrico e como funciona o peso visual.",
+     "p": [
+      "O peso visual vem do tamanho, do escuro, da cor e do detalhe: o grande ou escuro pesa mais.",
+      "O equilíbrio simétrico espelha os dois lados e parece estável, formal e calmo.",
+      "O assimétrico compensa um elemento grande com vários pequenos e parece vivo e moderno."
+     ],
+     "q": "Preferes composições simétricas ou assimétricas, mais dinâmicas?",
+     "c": "Arruma alguns objetos numa mesa, primeiro em simetria e depois em assimetria equilibrada; fotografa as duas."
+    },
+    "pt_BR": {
+     "t": "Equilíbrio em uma composição",
+     "g": "Entender o equilíbrio simétrico e assimétrico e como funciona o peso visual.",
+     "p": [
+      "O peso visual vem de tamanho, escuridão, cor e detalhe: o que é grande ou escuro pesa mais.",
+      "O equilíbrio simétrico espelha os dois lados e passa estabilidade, formalidade e calma.",
+      "O assimétrico compensa um elemento grande com vários pequenos e passa energia e modernidade."
+     ],
+     "q": "Você prefere composições simétricas ou assimétricas, mais dinâmicas?",
+     "c": "Arrume alguns objetos numa mesa, primeiro em simetria e depois em assimetria equilibrada; fotografe as duas."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contrast creates interest",
+     "g": "Use differences in size, colour, shape and texture to grab attention.",
+     "p": [
+      "Contrast means clear difference; without it, everything looks equally important and dull.",
+      "Make contrast bold: a slightly bigger heading looks like a mistake, a much bigger one looks deliberate.",
+      "You can contrast size, colour, value, shape, texture or even direction."
+     ],
+     "q": "What is the most eye-catching sign or poster you remember, and what made it stand out?",
+     "c": "Write the word hello five times and make each version stand out using a different kind of contrast."
+    },
+    "de": {
+     "t": "Kontrast weckt Interesse",
+     "g": "Unterschiede in Größe, Farbe, Form und Textur nutzen, um Aufmerksamkeit zu wecken.",
+     "p": [
+      "Kontrast bedeutet klaren Unterschied; ohne ihn wirkt alles gleich wichtig und langweilig.",
+      "Setz Kontrast mutig: Eine etwas größere Überschrift wirkt wie ein Fehler, eine viel größere wie Absicht.",
+      "Du kannst Größe, Farbe, Helligkeit, Form, Textur oder sogar Richtung kontrastieren."
+     ],
+     "q": "An welches Schild oder Plakat erinnerst du dich am stärksten, und was ließ es herausstechen?",
+     "c": "Schreib das Wort Hallo fünfmal und lass jede Version durch eine andere Art von Kontrast hervortreten."
+    },
+    "es": {
+     "t": "El contraste crea interés",
+     "g": "Usar diferencias de tamaño, color, forma y textura para captar la atención.",
+     "p": [
+      "Contraste significa diferencia clara; sin él todo parece igual de importante y aburrido.",
+      "Haz el contraste decidido: un título algo mayor parece un error, uno mucho mayor parece intencionado.",
+      "Puedes contrastar tamaño, color, valor, forma, textura e incluso dirección."
+     ],
+     "q": "¿Qué cartel o letrero recuerdas como el más llamativo, y qué lo hacía destacar?",
+     "c": "Escribe la palabra hola cinco veces y haz que cada versión destaque con un tipo de contraste distinto."
+    },
+    "fr": {
+     "t": "Le contraste crée l'intérêt",
+     "g": "Utiliser les écarts de taille, de couleur, de forme et de texture pour capter l'attention.",
+     "p": [
+      "Le contraste, c'est une différence nette ; sans lui, tout semble aussi important et terne.",
+      "Ose un contraste franc : un titre un peu plus grand ressemble à une erreur, un titre bien plus grand à un choix.",
+      "On peut jouer sur la taille, la couleur, la valeur, la forme, la texture ou même la direction."
+     ],
+     "q": "Quelle affiche ou enseigne t'a le plus marqué, et qu'est-ce qui la faisait ressortir ?",
+     "c": "Écris le mot bonjour cinq fois et fais ressortir chaque version avec un type de contraste différent."
+    },
+    "it": {
+     "t": "Il contrasto crea interesse",
+     "g": "Usare differenze di dimensione, colore, forma e texture per catturare l'attenzione.",
+     "p": [
+      "Contrasto significa differenza netta; senza, tutto sembra ugualmente importante e piatto.",
+      "Rendi il contrasto deciso: un titolo poco più grande sembra un errore, uno molto più grande una scelta.",
+      "Puoi contrastare dimensione, colore, valore, forma, texture e perfino direzione."
+     ],
+     "q": "Qual è il cartello o manifesto più d'impatto che ricordi, e cosa lo faceva risaltare?",
+     "c": "Scrivi la parola ciao cinque volte e fai risaltare ogni versione con un tipo di contrasto diverso."
+    },
+    "pt": {
+     "t": "O contraste cria interesse",
+     "g": "Usar diferenças de tamanho, cor, forma e textura para captar a atenção.",
+     "p": [
+      "Contraste é diferença clara; sem ele, tudo parece igualmente importante e monótono.",
+      "Faz um contraste decidido: um título um pouco maior parece um erro, um muito maior parece intencional.",
+      "Podes contrastar tamanho, cor, valor, forma, textura e até direção."
+     ],
+     "q": "Qual é o cartaz ou letreiro mais marcante de que te lembras, e o que o fazia destacar-se?",
+     "c": "Escreve a palavra olá cinco vezes e faz cada versão destacar-se com um tipo de contraste diferente."
+    },
+    "pt_BR": {
+     "t": "O contraste cria interesse",
+     "g": "Usar diferenças de tamanho, cor, forma e textura para chamar a atenção.",
+     "p": [
+      "Contraste é diferença clara; sem ele, tudo parece igualmente importante e sem graça.",
+      "Faça um contraste decidido: um título só um pouco maior parece erro, um bem maior parece intenção.",
+      "Você pode contrastar tamanho, cor, valor, forma, textura e até direção."
+     ],
+     "q": "Qual é o cartaz ou letreiro mais marcante de que você lembra, e o que fazia ele se destacar?",
+     "c": "Escreva a palavra oi cinco vezes e faça cada versão se destacar com um tipo de contraste diferente."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alignment keeps things tidy",
+     "g": "Line elements up along invisible edges so a layout feels organised.",
+     "p": [
+      "Every element should be visually connected to something else on the page through a shared edge.",
+      "Pick one strong alignment, like a clean left edge, instead of mixing many directions.",
+      "Centred text everywhere often looks weak; a firm edge usually looks more confident."
+     ],
+     "q": "Have you noticed how a tidy shelf feels nicer when the books line up?",
+     "c": "Take a messy page of notes and redraw it so every item lines up on one left edge."
+    },
+    "de": {
+     "t": "Ausrichtung schafft Ordnung",
+     "g": "Elemente an unsichtbaren Kanten ausrichten, damit ein Layout geordnet wirkt.",
+     "p": [
+      "Jedes Element sollte über eine gemeinsame Kante mit etwas anderem auf der Seite verbunden sein.",
+      "Wähle eine starke Ausrichtung, etwa eine klare linke Kante, statt viele Richtungen zu mischen.",
+      "Überall zentrierter Text wirkt oft schwach; eine feste Kante wirkt meist selbstbewusster."
+     ],
+     "q": "Ist dir aufgefallen, dass ein Regal schöner wirkt, wenn die Bücher bündig stehen?",
+     "c": "Nimm eine unordentliche Notizseite und zeichne sie neu, sodass alles an einer linken Kante steht."
+    },
+    "es": {
+     "t": "La alineación pone orden",
+     "g": "Alinear los elementos con bordes invisibles para que el diseño se vea organizado.",
+     "p": [
+      "Cada elemento debería conectarse visualmente con otro de la página a través de un borde común.",
+      "Elige una alineación fuerte, como un borde izquierdo limpio, en vez de mezclar muchas direcciones.",
+      "El texto centrado en todas partes suele verse débil; un borde firme transmite más seguridad."
+     ],
+     "q": "¿Has notado que una estantería se ve mejor cuando los libros están alineados?",
+     "c": "Toma una página de notas desordenada y redibújala para que todo se alinee en un borde izquierdo."
+    },
+    "fr": {
+     "t": "L'alignement range tout",
+     "g": "Aligner les éléments sur des bords invisibles pour qu'une mise en page paraisse organisée.",
+     "p": [
+      "Chaque élément devrait être relié visuellement à un autre de la page par un bord commun.",
+      "Choisis un alignement fort, comme un bord gauche net, au lieu de mélanger les directions.",
+      "Du texte centré partout paraît souvent faible ; un bord ferme inspire plus d'assurance."
+     ],
+     "q": "As-tu remarqué qu'une étagère paraît plus belle quand les livres sont alignés ?",
+     "c": "Prends une page de notes en désordre et redessine-la pour tout aligner sur un seul bord gauche."
+    },
+    "it": {
+     "t": "L'allineamento mette ordine",
+     "g": "Allineare gli elementi lungo bordi invisibili perché il layout sembri organizzato.",
+     "p": [
+      "Ogni elemento dovrebbe collegarsi visivamente a un altro della pagina tramite un bordo comune.",
+      "Scegli un allineamento forte, come un bordo sinistro pulito, invece di mescolare tante direzioni.",
+      "Il testo centrato ovunque spesso sembra debole; un bordo deciso trasmette più sicurezza."
+     ],
+     "q": "Hai notato che uno scaffale sembra più bello quando i libri sono allineati?",
+     "c": "Prendi una pagina di appunti disordinata e ridisegnala allineando tutto su un unico bordo sinistro."
+    },
+    "pt": {
+     "t": "O alinhamento arruma tudo",
+     "g": "Alinhar os elementos por margens invisíveis para que o layout pareça organizado.",
+     "p": [
+      "Cada elemento deve ligar-se visualmente a outro da página através de uma margem comum.",
+      "Escolhe um alinhamento forte, como uma margem esquerda limpa, em vez de misturar direções.",
+      "Texto centrado em todo o lado parece muitas vezes fraco; uma margem firme transmite mais confiança."
+     ],
+     "q": "Já reparaste que uma estante fica mais bonita quando os livros estão alinhados?",
+     "c": "Pega numa página de notas desarrumada e redesenha-a para tudo alinhar numa margem esquerda."
+    },
+    "pt_BR": {
+     "t": "Alinhamento deixa tudo arrumado",
+     "g": "Alinhar os elementos por bordas invisíveis para o layout parecer organizado.",
+     "p": [
+      "Cada elemento deve se ligar visualmente a outro da página por uma borda em comum.",
+      "Escolha um alinhamento forte, como uma borda esquerda limpa, em vez de misturar direções.",
+      "Texto centralizado em tudo costuma parecer fraco; uma borda firme passa mais confiança."
+     ],
+     "q": "Já reparou que uma estante fica mais bonita quando os livros estão alinhados?",
+     "c": "Pegue uma página de anotações bagunçada e redesenhe para tudo alinhar em uma borda esquerda."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Proximity groups ideas",
+     "g": "Place related items close together so viewers understand what belongs together.",
+     "p": [
+      "The eye reads things that are close as one group, even without boxes or lines.",
+      "Put more space between groups than inside them; that gap does the explaining for you.",
+      "Good proximity often removes the need for extra dividers, borders and labels."
+     ],
+     "q": "Can you think of a form or menu where you could not tell which label belonged to which item?",
+     "c": "Lay out a business card with name, job, phone and email, grouping contact details apart from the name."
+    },
+    "de": {
+     "t": "Nähe gruppiert Inhalte",
+     "g": "Zusammengehöriges nah beieinander platzieren, damit Betrachter Gruppen sofort erkennen.",
+     "p": [
+      "Das Auge liest nahe Dinge als eine Gruppe, auch ohne Kästen oder Linien.",
+      "Lass zwischen Gruppen mehr Platz als innerhalb; diese Lücke erklärt alles für dich.",
+      "Gute Nähe macht oft zusätzliche Trennlinien, Rahmen und Beschriftungen überflüssig."
+     ],
+     "q": "Kennst du ein Formular oder Menü, bei dem unklar war, welches Label zu welchem Feld gehört?",
+     "c": "Gestalte eine Visitenkarte mit Name, Beruf, Telefon und E-Mail und setze die Kontaktdaten als Gruppe ab."
+    },
+    "es": {
+     "t": "La proximidad agrupa ideas",
+     "g": "Colocar juntos los elementos relacionados para que se entienda qué va con qué.",
+     "p": [
+      "La vista interpreta lo cercano como un grupo, incluso sin cajas ni líneas.",
+      "Deja más espacio entre grupos que dentro de ellos; ese hueco lo explica todo por ti.",
+      "Una buena proximidad suele evitar separadores, bordes y etiquetas de más."
+     ],
+     "q": "¿Recuerdas un formulario o menú donde no sabías qué etiqueta iba con cada campo?",
+     "c": "Diseña una tarjeta con nombre, cargo, teléfono y correo, agrupando los contactos aparte del nombre."
+    },
+    "fr": {
+     "t": "La proximité regroupe les idées",
+     "g": "Rapprocher les éléments liés pour que l'on comprenne ce qui va ensemble.",
+     "p": [
+      "L'œil lit les choses proches comme un groupe, même sans cadres ni traits.",
+      "Laisse plus d'espace entre les groupes qu'à l'intérieur ; cet écart explique tout à ta place.",
+      "Une bonne proximité évite souvent séparateurs, bordures et étiquettes en trop."
+     ],
+     "q": "Te souviens-tu d'un formulaire où l'on ne savait pas quelle étiquette allait avec quel champ ?",
+     "c": "Compose une carte de visite avec nom, métier, téléphone et e-mail, en groupant les coordonnées à part."
+    },
+    "it": {
+     "t": "La vicinanza raggruppa le idee",
+     "g": "Mettere vicini gli elementi correlati perché si capisca cosa va insieme.",
+     "p": [
+      "L'occhio legge le cose vicine come un gruppo, anche senza riquadri o linee.",
+      "Lascia più spazio tra i gruppi che al loro interno; quello spazio spiega tutto al posto tuo.",
+      "Una buona vicinanza spesso elimina separatori, bordi ed etichette superflui."
+     ],
+     "q": "Ricordi un modulo o un menu dove non capivi quale etichetta andava con quale campo?",
+     "c": "Impagina un biglietto da visita con nome, ruolo, telefono ed email, raggruppando i contatti a parte."
+    },
+    "pt": {
+     "t": "A proximidade agrupa ideias",
+     "g": "Colocar juntos os elementos relacionados para se perceber o que pertence a quê.",
+     "p": [
+      "O olhar lê o que está próximo como um grupo, mesmo sem caixas nem linhas.",
+      "Deixa mais espaço entre grupos do que dentro deles; esse intervalo explica tudo por ti.",
+      "Uma boa proximidade evita muitas vezes divisórias, molduras e rótulos a mais."
+     ],
+     "q": "Lembras-te de um formulário onde não se percebia que rótulo pertencia a que campo?",
+     "c": "Faz um cartão de visita com nome, profissão, telefone e email, agrupando os contactos à parte."
+    },
+    "pt_BR": {
+     "t": "Proximidade agrupa ideias",
+     "g": "Colocar juntos os elementos relacionados para que se entenda o que pertence a quê.",
+     "p": [
+      "O olho lê o que está perto como um grupo, mesmo sem caixas nem linhas.",
+      "Deixe mais espaço entre grupos do que dentro deles; esse respiro explica tudo por você.",
+      "Uma boa proximidade muitas vezes dispensa divisórias, bordas e rótulos extras."
+     ],
+     "q": "Lembra de um formulário em que não dava para saber qual rótulo era de qual campo?",
+     "c": "Monte um cartão de visita com nome, cargo, telefone e e-mail, agrupando os contatos separados do nome."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Repetition builds unity",
+     "g": "Repeat colours, shapes and styles so a design feels consistent.",
+     "p": [
+      "Repeating a colour, font or shape tells the viewer that these parts belong to one family.",
+      "Consistent styles for headings, buttons and icons make a design faster to understand.",
+      "Repetition is how brands become recognisable across posters, packaging and screens."
+     ],
+     "q": "Which brand can you recognise instantly just from its colours or shapes?",
+     "c": "Design three matching event tickets that share one colour, one font and one shape but show different dates."
+    },
+    "de": {
+     "t": "Wiederholung schafft Einheit",
+     "g": "Farben, Formen und Stile wiederholen, damit ein Design stimmig wirkt.",
+     "p": [
+      "Wiederholte Farben, Schriften oder Formen zeigen, dass diese Teile zu einer Familie gehören.",
+      "Einheitliche Stile für Überschriften, Buttons und Icons machen ein Design schneller verständlich.",
+      "Durch Wiederholung werden Marken auf Plakaten, Verpackungen und Bildschirmen wiedererkennbar."
+     ],
+     "q": "Welche Marke erkennst du sofort nur an ihren Farben oder Formen?",
+     "c": "Gestalte drei passende Eintrittskarten mit gleicher Farbe, Schrift und Form, aber verschiedenen Daten."
+    },
+    "es": {
+     "t": "La repetición crea unidad",
+     "g": "Repetir colores, formas y estilos para que un diseño se sienta coherente.",
+     "p": [
+      "Repetir un color, una tipografía o una forma indica que esas partes son de la misma familia.",
+      "Estilos constantes en títulos, botones e iconos hacen que un diseño se entienda más rápido.",
+      "La repetición es lo que hace reconocible una marca en carteles, envases y pantallas."
+     ],
+     "q": "¿Qué marca reconoces al instante solo por sus colores o formas?",
+     "c": "Diseña tres entradas a juego que compartan un color, una tipografía y una forma, con fechas distintas."
+    },
+    "fr": {
+     "t": "La répétition crée l'unité",
+     "g": "Répéter couleurs, formes et styles pour qu'un design paraisse cohérent.",
+     "p": [
+      "Répéter une couleur, une police ou une forme montre que ces éléments font partie d'une même famille.",
+      "Des styles constants pour titres, boutons et icônes rendent un design plus rapide à comprendre.",
+      "C'est la répétition qui rend une marque reconnaissable sur affiches, emballages et écrans."
+     ],
+     "q": "Quelle marque reconnais-tu immédiatement rien qu'à ses couleurs ou ses formes ?",
+     "c": "Crée trois billets assortis partageant une couleur, une police et une forme, avec des dates différentes."
+    },
+    "it": {
+     "t": "La ripetizione crea unità",
+     "g": "Ripetere colori, forme e stili perché un progetto risulti coerente.",
+     "p": [
+      "Ripetere un colore, un carattere o una forma dice che quelle parti appartengono a una stessa famiglia.",
+      "Stili costanti per titoli, pulsanti e icone rendono un progetto più veloce da capire.",
+      "La ripetizione è ciò che rende un marchio riconoscibile su manifesti, confezioni e schermi."
+     ],
+     "q": "Quale marchio riconosci subito solo dai suoi colori o dalle sue forme?",
+     "c": "Progetta tre biglietti coordinati con lo stesso colore, carattere e forma, ma date diverse."
+    },
+    "pt": {
+     "t": "A repetição cria unidade",
+     "g": "Repetir cores, formas e estilos para que o design pareça coerente.",
+     "p": [
+      "Repetir uma cor, letra ou forma mostra que essas partes pertencem à mesma família.",
+      "Estilos constantes em títulos, botões e ícones tornam o design mais rápido de perceber.",
+      "É a repetição que torna uma marca reconhecível em cartazes, embalagens e ecrãs."
+     ],
+     "q": "Que marca reconheces logo só pelas cores ou formas?",
+     "c": "Desenha três bilhetes a condizer com a mesma cor, letra e forma, mas datas diferentes."
+    },
+    "pt_BR": {
+     "t": "Repetição cria unidade",
+     "g": "Repetir cores, formas e estilos para o design parecer coerente.",
+     "p": [
+      "Repetir uma cor, fonte ou forma mostra que essas partes são da mesma família.",
+      "Estilos constantes em títulos, botões e ícones deixam o design mais rápido de entender.",
+      "É a repetição que torna uma marca reconhecível em cartazes, embalagens e telas."
+     ],
+     "q": "Qual marca você reconhece na hora só pelas cores ou formas?",
+     "c": "Crie três ingressos combinando, com a mesma cor, fonte e forma, mas datas diferentes."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visual hierarchy",
+     "g": "Guide the eye from the most important element to the least important.",
+     "p": [
+      "Decide what people must see first, second and third before you start arranging anything.",
+      "Size, weight, colour, position and space all signal importance; the top left and big items win.",
+      "If everything shouts, nothing is heard: only one or two elements should lead."
+     ],
+     "q": "When you open a news page, what do you read first, and why do you think that is?",
+     "c": "Rank the five pieces of info on a party invite by importance, then sketch it so the eye follows that order."
+    },
+    "de": {
+     "t": "Visuelle Hierarchie",
+     "g": "Den Blick vom wichtigsten zum unwichtigsten Element führen.",
+     "p": [
+      "Leg fest, was zuerst, als Zweites und als Drittes gesehen werden muss, bevor du irgendetwas anordnest.",
+      "Größe, Stärke, Farbe, Position und Raum zeigen Bedeutung; oben links und groß gewinnt meist.",
+      "Wenn alles schreit, hört man nichts: Nur ein oder zwei Elemente sollten führen."
+     ],
+     "q": "Was liest du auf einer Nachrichtenseite zuerst, und warum wohl?",
+     "c": "Ordne die fünf Infos einer Party-Einladung nach Wichtigkeit und skizziere sie so, dass der Blick dieser Reihenfolge folgt."
+    },
+    "es": {
+     "t": "Jerarquía visual",
+     "g": "Guiar la mirada desde el elemento más importante hasta el menos importante.",
+     "p": [
+      "Decide qué debe verse primero, segundo y tercero antes de empezar a colocar nada.",
+      "Tamaño, grosor, color, posición y espacio indican importancia; lo grande y arriba suele ganar.",
+      "Si todo grita, no se oye nada: solo uno o dos elementos deberían liderar."
+     ],
+     "q": "Al abrir una página de noticias, ¿qué lees primero y por qué crees que pasa?",
+     "c": "Ordena por importancia los cinco datos de una invitación a una fiesta y dibújala para que la vista siga ese orden."
+    },
+    "fr": {
+     "t": "La hiérarchie visuelle",
+     "g": "Guider le regard de l'élément le plus important au moins important.",
+     "p": [
+      "Décide ce qu'on doit voir en premier, deuxième et troisième avant de placer quoi que ce soit.",
+      "Taille, graisse, couleur, position et espace signalent l'importance ; le grand et le haut gagnent souvent.",
+      "Si tout crie, on n'entend rien : un ou deux éléments seulement doivent mener."
+     ],
+     "q": "Sur une page d'actualités, que lis-tu en premier, et pourquoi à ton avis ?",
+     "c": "Classe les cinq infos d'une invitation de fête par importance, puis esquisse-la pour que l'œil suive cet ordre."
+    },
+    "it": {
+     "t": "Gerarchia visiva",
+     "g": "Guidare lo sguardo dall'elemento più importante a quello meno importante.",
+     "p": [
+      "Decidi cosa si deve vedere per primo, secondo e terzo prima di disporre qualsiasi cosa.",
+      "Dimensione, peso, colore, posizione e spazio segnalano importanza; ciò che è grande e in alto vince.",
+      "Se tutto urla, non si sente niente: solo uno o due elementi dovrebbero guidare."
+     ],
+     "q": "Quando apri una pagina di notizie, cosa leggi per primo, e perché secondo te?",
+     "c": "Ordina per importanza le cinque informazioni di un invito a una festa e abbozzalo perché l'occhio segua quell'ordine."
+    },
+    "pt": {
+     "t": "Hierarquia visual",
+     "g": "Guiar o olhar do elemento mais importante para o menos importante.",
+     "p": [
+      "Decide o que tem de ser visto primeiro, segundo e terceiro antes de arrumar seja o que for.",
+      "Tamanho, peso, cor, posição e espaço indicam importância; o que é grande e está em cima ganha.",
+      "Se tudo grita, nada se ouve: só um ou dois elementos devem liderar."
+     ],
+     "q": "Quando abres uma página de notícias, o que lês primeiro, e porque achas que acontece?",
+     "c": "Ordena por importância as cinco informações de um convite de festa e esboça-o para o olhar seguir essa ordem."
+    },
+    "pt_BR": {
+     "t": "Hierarquia visual",
+     "g": "Guiar o olhar do elemento mais importante até o menos importante.",
+     "p": [
+      "Decida o que precisa ser visto primeiro, segundo e terceiro antes de posicionar qualquer coisa.",
+      "Tamanho, peso, cor, posição e espaço mostram importância; o que é grande e fica no topo ganha.",
+      "Se tudo grita, nada é ouvido: só um ou dois elementos devem liderar."
+     ],
+     "q": "Quando você abre um site de notícias, o que lê primeiro, e por que acha que isso acontece?",
+     "c": "Ordene por importância as cinco informações de um convite de festa e esboce para o olhar seguir essa ordem."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Emphasis and focal points",
+     "g": "Create one clear point of focus so a design is not fighting itself.",
+     "p": [
+      "A focal point is where the eye lands first; plan it on purpose instead of hoping for one.",
+      "Isolation, contrast, colour and direction lines all pull attention to one spot.",
+      "Two equally strong focal points compete and leave the viewer unsure where to look."
+     ],
+     "q": "In photos you love, where does your eye land first?",
+     "c": "Take a photo of a single object on a plain background, then one in a busy scene, and compare the focus."
+    },
+    "de": {
+     "t": "Betonung und Blickfang",
+     "g": "Einen klaren Blickfang schaffen, damit ein Design nicht mit sich selbst kämpft.",
+     "p": [
+      "Ein Blickfang ist der Ort, an dem das Auge zuerst landet; plane ihn bewusst statt auf Glück zu hoffen.",
+      "Freistellung, Kontrast, Farbe und Richtungslinien ziehen Aufmerksamkeit auf einen Punkt.",
+      "Zwei gleich starke Blickfänge konkurrieren und lassen offen, wohin man schauen soll."
+     ],
+     "q": "Wo landet dein Blick zuerst bei Fotos, die du liebst?",
+     "c": "Fotografiere einen Gegenstand vor schlichtem Hintergrund und einmal in einer vollen Szene; vergleiche den Fokus."
+    },
+    "es": {
+     "t": "Énfasis y puntos focales",
+     "g": "Crear un único punto de atención claro para que el diseño no luche contra sí mismo.",
+     "p": [
+      "Un punto focal es donde aterriza la vista primero; planéalo a propósito en vez de esperar que surja.",
+      "El aislamiento, el contraste, el color y las líneas de dirección atraen la atención a un punto.",
+      "Dos puntos focales igual de fuertes compiten y dejan al público sin saber dónde mirar."
+     ],
+     "q": "En las fotos que te encantan, ¿dónde se posa primero tu mirada?",
+     "c": "Fotografía un objeto sobre un fondo liso y luego en una escena recargada, y compara el foco."
+    },
+    "fr": {
+     "t": "Accent et point focal",
+     "g": "Créer un seul point d'attention clair pour que le design ne se batte pas contre lui-même.",
+     "p": [
+      "Le point focal est l'endroit où l'œil se pose d'abord ; prévois-le au lieu d'espérer qu'il apparaisse.",
+      "Isolement, contraste, couleur et lignes de direction attirent l'attention vers un seul endroit.",
+      "Deux points focaux aussi forts se concurrencent et laissent le regard hésiter."
+     ],
+     "q": "Dans les photos que tu aimes, où ton œil se pose-t-il en premier ?",
+     "c": "Photographie un objet sur un fond uni, puis dans une scène chargée, et compare le point focal."
+    },
+    "it": {
+     "t": "Enfasi e punto focale",
+     "g": "Creare un unico punto di attenzione chiaro perché il progetto non combatta con sé stesso.",
+     "p": [
+      "Il punto focale è dove l'occhio si posa per primo; pianificalo invece di sperare che appaia.",
+      "Isolamento, contrasto, colore e linee direzionali portano l'attenzione su un punto.",
+      "Due punti focali ugualmente forti si fanno concorrenza e lasciano lo sguardo incerto."
+     ],
+     "q": "Nelle foto che ami, dove si posa per primo il tuo sguardo?",
+     "c": "Fotografa un oggetto su uno sfondo neutro e poi in una scena affollata, e confronta il punto focale."
+    },
+    "pt": {
+     "t": "Ênfase e ponto focal",
+     "g": "Criar um único ponto de atenção claro para que o design não lute contra si próprio.",
+     "p": [
+      "O ponto focal é onde o olhar pousa primeiro; planeia-o em vez de esperar que apareça.",
+      "Isolamento, contraste, cor e linhas de direção levam a atenção para um só ponto.",
+      "Dois pontos focais igualmente fortes competem e deixam o olhar indeciso."
+     ],
+     "q": "Nas fotografias de que gostas, onde pousa primeiro o teu olhar?",
+     "c": "Fotografa um objeto num fundo liso e depois numa cena cheia, e compara o ponto focal."
+    },
+    "pt_BR": {
+     "t": "Ênfase e ponto focal",
+     "g": "Criar um único ponto de atenção claro para o design não brigar consigo mesmo.",
+     "p": [
+      "Ponto focal é onde o olhar pousa primeiro; planeje isso em vez de esperar que aconteça.",
+      "Isolamento, contraste, cor e linhas de direção levam a atenção para um só ponto.",
+      "Dois pontos focais igualmente fortes competem e deixam o olhar perdido."
+     ],
+     "q": "Nas fotos que você ama, onde seu olhar pousa primeiro?",
+     "c": "Fotografe um objeto em um fundo liso e depois em uma cena cheia, e compare o ponto focal."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scale and proportion",
+     "g": "See how the relative size of elements creates drama, calm or a sense of order.",
+     "p": [
+      "Scale is how big something is compared with its surroundings; proportion is how parts relate to each other.",
+      "A huge element next to tiny ones creates drama; similar sizes feel calm and even.",
+      "Unexpected scale, like a giant word or a tiny figure in a vast space, makes designs memorable."
+     ],
+     "q": "Can you remember an image where something tiny or huge surprised you?",
+     "c": "Make two versions of a poster for the word big: one with a giant word, one with a tiny word in empty space."
+    },
+    "de": {
+     "t": "Maßstab und Proportion",
+     "g": "Verstehen, wie die relative Größe von Elementen Dramatik, Ruhe oder Ordnung erzeugt.",
+     "p": [
+      "Maßstab ist die Größe im Vergleich zur Umgebung; Proportion ist das Verhältnis der Teile zueinander.",
+      "Ein riesiges Element neben winzigen erzeugt Dramatik; ähnliche Größen wirken ruhig und gleichmäßig.",
+      "Unerwarteter Maßstab, etwa ein Riesenwort oder eine winzige Figur im Raum, bleibt im Gedächtnis."
+     ],
+     "q": "Erinnerst du dich an ein Bild, bei dem dich etwas Winziges oder Riesiges überrascht hat?",
+     "c": "Mach zwei Plakate zum Wort groß: eins mit riesigem Wort, eins mit winzigem Wort in viel leerem Raum."
+    },
+    "es": {
+     "t": "Escala y proporción",
+     "g": "Ver cómo el tamaño relativo de los elementos crea drama, calma u orden.",
+     "p": [
+      "La escala es el tamaño de algo frente a su entorno; la proporción es la relación entre sus partes.",
+      "Un elemento enorme junto a otros diminutos crea drama; tamaños similares transmiten calma.",
+      "Una escala inesperada, como una palabra gigante o una figura diminuta, hace un diseño memorable."
+     ],
+     "q": "¿Recuerdas una imagen donde algo diminuto o enorme te sorprendiera?",
+     "c": "Haz dos carteles para la palabra grande: uno con la palabra gigante y otro con ella diminuta en espacio vacío."
+    },
+    "fr": {
+     "t": "Échelle et proportion",
+     "g": "Voir comment la taille relative des éléments crée du drame, du calme ou de l'ordre.",
+     "p": [
+      "L'échelle, c'est la taille d'une chose par rapport à son entourage ; la proportion, le rapport entre ses parties.",
+      "Un élément immense à côté de minuscules crée du drame ; des tailles proches paraissent calmes.",
+      "Une échelle inattendue, comme un mot géant ou une silhouette minuscule, rend un design mémorable."
+     ],
+     "q": "Te souviens-tu d'une image où quelque chose de minuscule ou d'immense t'a surpris ?",
+     "c": "Fais deux affiches pour le mot grand : une avec le mot géant, une avec le mot minuscule dans le vide."
+    },
+    "it": {
+     "t": "Scala e proporzione",
+     "g": "Vedere come la dimensione relativa degli elementi crea drammaticità, calma o ordine.",
+     "p": [
+      "La scala è quanto è grande qualcosa rispetto all'ambiente; la proporzione è il rapporto tra le parti.",
+      "Un elemento enorme accanto a elementi piccolissimi crea drammaticità; misure simili danno calma.",
+      "Una scala inattesa, come una parola gigante o una figura minuscola, rende un progetto memorabile."
+     ],
+     "q": "Ricordi un'immagine in cui qualcosa di minuscolo o enorme ti ha sorpreso?",
+     "c": "Crea due manifesti per la parola grande: uno con la parola gigante, uno con la parola minuscola nel vuoto."
+    },
+    "pt": {
+     "t": "Escala e proporção",
+     "g": "Ver como o tamanho relativo dos elementos cria drama, calma ou ordem.",
+     "p": [
+      "Escala é o tamanho de algo face ao que o rodeia; proporção é a relação entre as partes.",
+      "Um elemento enorme ao lado de outros minúsculos cria drama; tamanhos semelhantes dão calma.",
+      "Uma escala inesperada, como uma palavra gigante ou uma figura minúscula, torna um design memorável."
+     ],
+     "q": "Lembras-te de uma imagem em que algo minúsculo ou enorme te surpreendeu?",
+     "c": "Faz dois cartazes para a palavra grande: um com a palavra gigante e outro com ela minúscula no vazio."
+    },
+    "pt_BR": {
+     "t": "Escala e proporção",
+     "g": "Ver como o tamanho relativo dos elementos cria drama, calma ou ordem.",
+     "p": [
+      "Escala é o tamanho de algo em relação ao entorno; proporção é a relação entre as partes.",
+      "Um elemento enorme ao lado de outros minúsculos cria drama; tamanhos parecidos passam calma.",
+      "Uma escala inesperada, como uma palavra gigante ou uma figura minúscula, deixa o design memorável."
+     ],
+     "q": "Você lembra de uma imagem em que algo minúsculo ou enorme te surpreendeu?",
+     "c": "Faça dois cartazes para a palavra grande: um com a palavra gigante e outro com ela minúscula no vazio."
+    }
+   }
+  }
+ ]
+}

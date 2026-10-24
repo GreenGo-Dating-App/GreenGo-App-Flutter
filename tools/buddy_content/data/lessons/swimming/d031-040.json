@@ -1,0 +1,835 @@
+{
+ "topic": "swimming",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water safety basics",
+     "g": "Learn the golden rules that keep every swim safe and enjoyable.",
+     "p": [
+      "Swim where lifeguards are present and follow their advice.",
+      "Never swim alone outdoors; always go with a buddy who watches out for you.",
+      "Know your limits: stay where you feel comfortable and rest before you are tired."
+     ],
+     "q": "Which safety rule do you think matters most for beginners?",
+     "c": "Before your next swim, find where the lifeguard stands and where the shallow end is."
+    },
+    "de": {
+     "t": "Grundregeln der Wassersicherheit",
+     "g": "Lerne die goldenen Regeln, die jedes Schwimmen sicher und schön machen.",
+     "p": [
+      "Schwimm dort, wo eine Badeaufsicht ist, und folge ihren Hinweisen.",
+      "Schwimm draußen nie allein, geh immer mit jemandem, der auf dich achtet.",
+      "Kenne deine Grenzen: Bleib im Wohlfühlbereich und ruh dich aus, bevor du müde bist."
+     ],
+     "q": "Welche Sicherheitsregel ist für Anfänger wohl am wichtigsten?",
+     "c": "Schau vor dem nächsten Schwimmen, wo die Aufsicht steht und wo das flache Ende ist."
+    },
+    "es": {
+     "t": "Seguridad básica en el agua",
+     "g": "Aprende las reglas de oro para que cada baño sea seguro y agradable.",
+     "p": [
+      "Nada donde haya socorristas y sigue sus indicaciones.",
+      "Nunca nades solo al aire libre; ve siempre con alguien que esté pendiente de ti.",
+      "Conoce tus límites: quédate donde estés cómodo y descansa antes de cansarte."
+     ],
+     "q": "¿Qué regla de seguridad crees que es la más importante para principiantes?",
+     "c": "Antes de tu próximo baño, localiza al socorrista y la zona poco profunda."
+    },
+    "fr": {
+     "t": "Les bases de la sécurité aquatique",
+     "g": "Apprends les règles d'or qui rendent chaque baignade sûre et agréable.",
+     "p": [
+      "Nage là où des maîtres-nageurs surveillent et suis leurs conseils.",
+      "Ne nage jamais seul en extérieur ; sois toujours avec quelqu'un qui veille sur toi.",
+      "Connais tes limites : reste là où tu es à l'aise et repose-toi avant d'être fatigué."
+     ],
+     "q": "Quelle règle de sécurité te semble la plus importante pour un débutant ?",
+     "c": "Avant ta prochaine séance, repère le poste du surveillant et le petit bain."
+    },
+    "it": {
+     "t": "Sicurezza in acqua: le basi",
+     "g": "Impara le regole d'oro che rendono ogni nuotata sicura e piacevole.",
+     "p": [
+      "Nuota dove ci sono bagnini e segui le loro indicazioni.",
+      "Non nuotare mai da solo all'aperto; vai sempre con qualcuno che ti tenga d'occhio.",
+      "Conosci i tuoi limiti: resta dove ti senti a tuo agio e riposa prima di stancarti."
+     ],
+     "q": "Quale regola di sicurezza pensi sia la più importante per chi inizia?",
+     "c": "Prima della prossima nuotata, individua il bagnino e la zona di acqua bassa."
+    },
+    "pt": {
+     "t": "Segurança na água: o essencial",
+     "g": "Aprende as regras de ouro que tornam cada mergulho seguro e agradável.",
+     "p": [
+      "Nada onde houver nadadores-salvadores e segue as indicações deles.",
+      "Nunca nades sozinho ao ar livre; vai sempre com alguém que esteja atento a ti.",
+      "Conhece os teus limites: fica onde te sentes bem e descansa antes de ficares cansado."
+     ],
+     "q": "Que regra de segurança achas mais importante para quem está a começar?",
+     "c": "Antes da próxima ida à piscina, vê onde fica o nadador-salvador e a zona baixa."
+    },
+    "pt_BR": {
+     "t": "Segurança na água: o básico",
+     "g": "Aprenda as regras de ouro que deixam cada mergulho seguro e gostoso.",
+     "p": [
+      "Nade onde houver salva-vidas e siga as orientações deles.",
+      "Nunca nade sozinho ao ar livre; vá sempre com alguém que fique de olho em você.",
+      "Conheça seus limites: fique onde se sente bem e descanse antes de cansar."
+     ],
+     "q": "Qual regra de segurança você acha mais importante para iniciantes?",
+     "c": "Antes do próximo treino, veja onde fica o salva-vidas e a parte rasa."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading pool signs and depths",
+     "g": "Use depth markings, flags and signs to choose a safe, comfy area.",
+     "p": [
+      "Depth numbers on the pool edge show how deep the water is at that spot.",
+      "Signs tell you where diving is not allowed and which areas are for lessons.",
+      "Pick an area where you can stand easily until you feel very confident."
+     ],
+     "q": "Have you ever noticed the depth markings at your pool?",
+     "c": "At your next swim, read the depth signs and find the spot where you can stand comfortably."
+    },
+    "de": {
+     "t": "Schilder und Tiefen lesen",
+     "g": "Nutze Tiefenangaben, Flaggen und Schilder, um einen sicheren Bereich zu wählen.",
+     "p": [
+      "Zahlen am Beckenrand zeigen, wie tief das Wasser an dieser Stelle ist.",
+      "Schilder zeigen, wo Springen verboten ist und welche Bereiche für Kurse sind.",
+      "Wähl einen Bereich, in dem du locker stehen kannst, bis du dich sehr sicher fühlst."
+     ],
+     "q": "Sind dir die Tiefenangaben in deinem Bad schon aufgefallen?",
+     "c": "Lies beim nächsten Mal die Tiefenschilder und finde die Stelle, an der du bequem stehst."
+    },
+    "es": {
+     "t": "Leer señales y profundidades",
+     "g": "Usa marcas de profundidad, banderas y carteles para elegir una zona segura.",
+     "p": [
+      "Los números del borde indican la profundidad del agua en ese punto.",
+      "Los carteles avisan de dónde no se puede saltar y qué zonas son para clases.",
+      "Elige una zona donde hagas pie con facilidad hasta sentirte muy seguro."
+     ],
+     "q": "¿Te has fijado alguna vez en las marcas de profundidad de tu piscina?",
+     "c": "En tu próximo baño, lee las profundidades y busca dónde haces pie cómodamente."
+    },
+    "fr": {
+     "t": "Lire panneaux et profondeurs",
+     "g": "Utilise les profondeurs indiquées, drapeaux et panneaux pour choisir une zone sûre.",
+     "p": [
+      "Les chiffres sur le bord indiquent la profondeur de l'eau à cet endroit.",
+      "Les panneaux signalent où plonger est interdit et quelles zones sont réservées aux cours.",
+      "Choisis une zone où tu as pied facilement tant que tu n'es pas très à l'aise."
+     ],
+     "q": "As-tu déjà remarqué les profondeurs indiquées à ta piscine ?",
+     "c": "À ta prochaine séance, lis les profondeurs et trouve l'endroit où tu as pied confortablement."
+    },
+    "it": {
+     "t": "Leggere cartelli e profondità",
+     "g": "Usa segnali di profondità, bandierine e cartelli per scegliere una zona sicura.",
+     "p": [
+      "I numeri sul bordo indicano quanto è profonda l'acqua in quel punto.",
+      "I cartelli dicono dove è vietato tuffarsi e quali zone sono per i corsi.",
+      "Scegli una zona dove tocchi comodamente finché non ti senti molto sicuro."
+     ],
+     "q": "Hai mai notato i segnali di profondità nella tua piscina?",
+     "c": "Alla prossima nuotata leggi le profondità e trova il punto in cui tocchi comodo."
+    },
+    "pt": {
+     "t": "Ler sinais e profundidades",
+     "g": "Usa as marcas de profundidade, bandeiras e sinais para escolher uma zona segura.",
+     "p": [
+      "Os números na borda mostram a profundidade da água naquele ponto.",
+      "Os sinais indicam onde é proibido saltar e que zonas são para aulas.",
+      "Escolhe uma zona onde tenhas pé facilmente até te sentires muito confiante."
+     ],
+     "q": "Já reparaste nas marcas de profundidade da tua piscina?",
+     "c": "Na próxima ida, lê as profundidades e encontra o sítio onde tens pé à vontade."
+    },
+    "pt_BR": {
+     "t": "Lendo placas e profundidades",
+     "g": "Use as marcas de profundidade, bandeiras e placas para escolher uma área segura.",
+     "p": [
+      "Os números na borda mostram a profundidade da água naquele ponto.",
+      "As placas mostram onde é proibido pular e quais áreas são para aulas.",
+      "Escolha uma área onde você dá pé com folga até se sentir bem confiante."
+     ],
+     "q": "Você já reparou nas marcas de profundidade da sua piscina?",
+     "c": "No próximo treino, leia as profundidades e ache o ponto onde você dá pé tranquilo."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warming up before swimming",
+     "g": "Prepare your body with gentle movement before the main session.",
+     "p": [
+      "Easy arm circles and shoulder rolls on deck wake up the joints.",
+      "Start in the water with slow, relaxed lengths or widths.",
+      "A good warm-up makes technique feel smoother and the session more fun."
+     ],
+     "q": "How do you usually start your swim, slowly or straight into effort?",
+     "c": "Before your next swim, do one minute of arm circles and two easy widths."
+    },
+    "de": {
+     "t": "Aufwärmen vor dem Schwimmen",
+     "g": "Bereite deinen Körper mit sanfter Bewegung auf die Einheit vor.",
+     "p": [
+      "Lockere Armkreise und Schulterkreisen am Rand wecken die Gelenke.",
+      "Im Wasser mit langsamen, entspannten Bahnen oder Breiten beginnen.",
+      "Gutes Aufwärmen macht die Technik geschmeidiger und die Einheit schöner."
+     ],
+     "q": "Wie startest du meist ins Schwimmen: langsam oder gleich mit Tempo?",
+     "c": "Mach vor dem nächsten Schwimmen eine Minute Armkreise und zwei lockere Breiten."
+    },
+    "es": {
+     "t": "Calentar antes de nadar",
+     "g": "Prepara el cuerpo con movimientos suaves antes de la sesión principal.",
+     "p": [
+      "Círculos de brazos y giros de hombros fuera del agua despiertan las articulaciones.",
+      "Empieza en el agua con largos o anchos lentos y relajados.",
+      "Un buen calentamiento hace que la técnica fluya y la sesión sea más divertida."
+     ],
+     "q": "¿Cómo sueles empezar a nadar, despacio o directamente con esfuerzo?",
+     "c": "Antes de tu próximo baño, haz un minuto de círculos de brazos y dos anchos suaves."
+    },
+    "fr": {
+     "t": "S'échauffer avant de nager",
+     "g": "Prépare ton corps avec des mouvements doux avant la séance.",
+     "p": [
+      "Des moulinets de bras et rotations d'épaules au bord réveillent les articulations.",
+      "Commence dans l'eau par des longueurs ou largeurs lentes et détendues.",
+      "Un bon échauffement rend la technique plus fluide et la séance plus agréable."
+     ],
+     "q": "Comment commences-tu tes séances : doucement ou directement à fond ?",
+     "c": "Avant ta prochaine séance, fais une minute de moulinets et deux largeurs faciles."
+    },
+    "it": {
+     "t": "Riscaldarsi prima di nuotare",
+     "g": "Prepara il corpo con movimenti dolci prima della parte principale.",
+     "p": [
+      "Circonduzioni delle braccia e rotazioni delle spalle a bordo vasca svegliano le articolazioni.",
+      "In acqua inizia con vasche lente e rilassate.",
+      "Un buon riscaldamento rende la tecnica più fluida e l'allenamento più bello."
+     ],
+     "q": "Come inizi di solito a nuotare, piano o subito a tutta?",
+     "c": "Prima della prossima nuotata fai un minuto di circonduzioni e due vasche facili."
+    },
+    "pt": {
+     "t": "Aquecer antes de nadar",
+     "g": "Prepara o corpo com movimentos suaves antes da parte principal.",
+     "p": [
+      "Rodar os braços e os ombros fora de água acorda as articulações.",
+      "Começa na água com piscinas ou larguras lentas e descontraídas.",
+      "Um bom aquecimento torna a técnica mais fluida e o treino mais divertido."
+     ],
+     "q": "Como costumas começar a nadar: devagar ou logo a puxar?",
+     "c": "Antes da próxima ida, faz um minuto a rodar os braços e duas larguras fáceis."
+    },
+    "pt_BR": {
+     "t": "Aquecendo antes de nadar",
+     "g": "Prepare o corpo com movimentos suaves antes da parte principal.",
+     "p": [
+      "Girar braços e ombros fora da água desperta as articulações.",
+      "Comece na água com piscinas ou larguras lentas e relaxadas.",
+      "Um bom aquecimento deixa a técnica mais solta e o treino mais divertido."
+     ],
+     "q": "Como você costuma começar a nadar: devagar ou já forte?",
+     "c": "Antes do próximo treino, faça um minuto girando os braços e duas larguras leves."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling down after swimming",
+     "g": "Finish each session calmly with easy swimming and light stretching.",
+     "p": [
+      "Swim one or two very easy lengths to let your breathing settle.",
+      "Gentle stretches for shoulders, chest and legs feel great afterwards.",
+      "Drink some water; you sweat in the pool even if you do not notice it."
+     ],
+     "q": "How do you like to relax after a swim?",
+     "c": "End your next swim with two easy widths and one minute of gentle stretching."
+    },
+    "de": {
+     "t": "Abwärmen nach dem Schwimmen",
+     "g": "Beende jede Einheit ruhig mit lockerem Schwimmen und leichtem Dehnen.",
+     "p": [
+      "Schwimm ein bis zwei ganz lockere Bahnen, damit sich der Atem beruhigt.",
+      "Sanftes Dehnen für Schultern, Brust und Beine tut danach richtig gut.",
+      "Trink etwas Wasser; auch im Becken schwitzt du, ohne es zu merken."
+     ],
+     "q": "Wie entspannst du dich am liebsten nach dem Schwimmen?",
+     "c": "Beende das nächste Schwimmen mit zwei lockeren Breiten und einer Minute Dehnen."
+    },
+    "es": {
+     "t": "Vuelta a la calma después de nadar",
+     "g": "Termina cada sesión con calma, nado suave y estiramientos ligeros.",
+     "p": [
+      "Nada uno o dos largos muy suaves para que la respiración se calme.",
+      "Estiramientos suaves de hombros, pecho y piernas sientan genial.",
+      "Bebe agua; en la piscina también sudas aunque no lo notes."
+     ],
+     "q": "¿Cómo te gusta relajarte después de nadar?",
+     "c": "Termina tu próximo baño con dos anchos suaves y un minuto de estiramientos."
+    },
+    "fr": {
+     "t": "Récupérer après la nage",
+     "g": "Termine chaque séance au calme avec une nage facile et quelques étirements.",
+     "p": [
+      "Nage une ou deux longueurs très faciles pour laisser ton souffle se poser.",
+      "Des étirements doux des épaules, de la poitrine et des jambes font du bien.",
+      "Bois de l'eau : on transpire aussi dans l'eau, même sans s'en rendre compte."
+     ],
+     "q": "Comment aimes-tu te détendre après une séance ?",
+     "c": "Termine ta prochaine séance par deux largeurs faciles et une minute d'étirements."
+    },
+    "it": {
+     "t": "Defaticamento dopo il nuoto",
+     "g": "Chiudi ogni allenamento con calma, nuotando piano e con un po' di stretching.",
+     "p": [
+      "Fai una o due vasche molto facili per far calmare il respiro.",
+      "Allungamenti dolci per spalle, petto e gambe fanno un gran bene.",
+      "Bevi acqua: anche in piscina si suda, pur senza accorgersene."
+     ],
+     "q": "Come ti piace rilassarti dopo una nuotata?",
+     "c": "Chiudi la prossima nuotata con due vasche facili e un minuto di stretching."
+    },
+    "pt": {
+     "t": "Retorno à calma depois de nadar",
+     "g": "Termina cada treino com calma, nado leve e alongamentos suaves.",
+     "p": [
+      "Nada uma ou duas piscinas muito fáceis para a respiração acalmar.",
+      "Alongamentos suaves de ombros, peito e pernas sabem muito bem.",
+      "Bebe água; na piscina também se transpira, mesmo sem dar por isso."
+     ],
+     "q": "Como gostas de relaxar depois de nadar?",
+     "c": "Termina a próxima ida com duas larguras fáceis e um minuto de alongamentos."
+    },
+    "pt_BR": {
+     "t": "Desaquecendo depois de nadar",
+     "g": "Termine cada treino com calma, nado leve e alongamentos suaves.",
+     "p": [
+      "Nade uma ou duas piscinas bem leves para a respiração acalmar.",
+      "Alongamentos suaves de ombros, peito e pernas fazem muito bem.",
+      "Beba água; na piscina você também sua, mesmo sem perceber."
+     ],
+     "q": "Como você gosta de relaxar depois de nadar?",
+     "c": "Termine o próximo treino com duas larguras leves e um minuto de alongamento."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How long should a beginner swim",
+     "g": "See why short, frequent sessions beat long, tiring swims.",
+     "p": [
+      "Twenty to thirty minutes, including rests, is plenty at the start.",
+      "Two or three swims a week build skill faster than one long marathon.",
+      "Stop while technique still feels good; tired strokes become sloppy habits."
+     ],
+     "q": "How many times a week could you realistically fit in a swim?",
+     "c": "Plan your next two swims in your calendar, about 30 minutes each."
+    },
+    "de": {
+     "t": "Wie lange sollten Anfänger schwimmen",
+     "g": "Erfahre, warum kurze, häufige Einheiten besser sind als lange, ermüdende.",
+     "p": [
+      "Zwanzig bis dreißig Minuten inklusive Pausen reichen am Anfang völlig.",
+      "Zwei- bis dreimal pro Woche bringt mehr als ein langer Marathon.",
+      "Hör auf, solange die Technik noch gut ist; müde Züge werden zu schlampigen Gewohnheiten."
+     ],
+     "q": "Wie oft pro Woche könntest du realistisch schwimmen gehen?",
+     "c": "Trag deine nächsten zwei Schwimmtermine mit je etwa 30 Minuten in den Kalender ein."
+    },
+    "es": {
+     "t": "Cuánto debe nadar un principiante",
+     "g": "Descubre por qué sesiones cortas y frecuentes ganan a las largas y agotadoras.",
+     "p": [
+      "Al principio bastan de veinte a treinta minutos, contando los descansos.",
+      "Dos o tres sesiones por semana enseñan más que un maratón largo.",
+      "Para cuando la técnica aún se sienta bien; las brazadas cansadas crean malos hábitos."
+     ],
+     "q": "¿Cuántas veces por semana podrías nadar de forma realista?",
+     "c": "Apunta en tu agenda tus dos próximas sesiones, de unos 30 minutos cada una."
+    },
+    "fr": {
+     "t": "Combien de temps nager quand on débute",
+     "g": "Comprends pourquoi des séances courtes et fréquentes valent mieux que de longues séances épuisantes.",
+     "p": [
+      "Vingt à trente minutes, pauses comprises, c'est largement suffisant au début.",
+      "Deux ou trois séances par semaine font progresser plus vite qu'un long marathon.",
+      "Arrête-toi quand la technique est encore bonne : la fatigue crée de mauvaises habitudes."
+     ],
+     "q": "Combien de fois par semaine pourrais-tu nager, de façon réaliste ?",
+     "c": "Note tes deux prochaines séances dans ton agenda, environ 30 minutes chacune."
+    },
+    "it": {
+     "t": "Quanto deve nuotare un principiante",
+     "g": "Scopri perché sedute brevi e frequenti battono quelle lunghe e stancanti.",
+     "p": [
+      "All'inizio bastano venti o trenta minuti, pause comprese.",
+      "Due o tre nuotate a settimana fanno progredire più di una lunga maratona.",
+      "Fermati quando la tecnica è ancora buona: le bracciate stanche diventano cattive abitudini."
+     ],
+     "q": "Quante volte a settimana potresti nuotare in modo realistico?",
+     "c": "Segna in agenda le prossime due nuotate, di circa 30 minuti ciascuna."
+    },
+    "pt": {
+     "t": "Quanto tempo deve nadar um principiante",
+     "g": "Percebe porque treinos curtos e frequentes ganham aos longos e cansativos.",
+     "p": [
+      "No início, vinte a trinta minutos, com pausas incluídas, chegam bem.",
+      "Duas ou três idas por semana ensinam mais do que uma maratona longa.",
+      "Para enquanto a técnica ainda está boa; braçadas cansadas viram maus hábitos."
+     ],
+     "q": "Quantas vezes por semana conseguirias nadar, de forma realista?",
+     "c": "Marca na agenda as próximas duas idas à piscina, com cerca de 30 minutos cada."
+    },
+    "pt_BR": {
+     "t": "Quanto tempo um iniciante deve nadar",
+     "g": "Entenda por que treinos curtos e frequentes ganham dos longos e cansativos.",
+     "p": [
+      "No começo, vinte a trinta minutos, com pausas, já são suficientes.",
+      "Duas ou três vezes por semana ensinam mais do que uma maratona longa.",
+      "Pare enquanto a técnica ainda está boa; braçadas cansadas viram maus hábitos."
+     ],
+     "q": "Quantas vezes por semana você conseguiria nadar, sendo realista?",
+     "c": "Marque na agenda seus próximos dois treinos, com cerca de 30 minutos cada."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest at the wall",
+     "g": "Use rests wisely to recover your breath and reset your technique.",
+     "p": [
+      "Rest at the end of the lane, off to one side so others can turn.",
+      "Take a few slow breaths until talking would feel easy again.",
+      "Use the pause to pick one technique point for the next length."
+     ],
+     "q": "Do you usually rest too little, too much or just enough?",
+     "c": "In your next swim, rest 20 to 30 seconds after each width and choose one focus each time."
+    },
+    "de": {
+     "t": "Pausen am Beckenrand",
+     "g": "Nutze Pausen klug, um Atem zu holen und die Technik neu auszurichten.",
+     "p": [
+      "Ruh dich am Bahnende seitlich aus, damit andere wenden können.",
+      "Atme ein paarmal langsam, bis Reden wieder leichtfallen würde.",
+      "Nutze die Pause, um einen Technikpunkt für die nächste Bahn zu wählen."
+     ],
+     "q": "Machst du meist zu kurze, zu lange oder genau passende Pausen?",
+     "c": "Ruh dich beim nächsten Mal nach jeder Breite 20 bis 30 Sekunden aus und wähl je einen Fokus."
+    },
+    "es": {
+     "t": "Descansar en el borde",
+     "g": "Aprovecha los descansos para recuperar el aliento y ajustar la técnica.",
+     "p": [
+      "Descansa al final de la calle, a un lado para que los demás puedan girar.",
+      "Respira despacio unas veces hasta que hablar te resulte fácil otra vez.",
+      "Usa la pausa para elegir un punto técnico para el siguiente largo."
+     ],
+     "q": "¿Sueles descansar poco, demasiado o lo justo?",
+     "c": "En tu próximo baño, descansa de 20 a 30 segundos tras cada ancho y elige un objetivo cada vez."
+    },
+    "fr": {
+     "t": "Se reposer au mur",
+     "g": "Utilise les pauses pour récupérer ton souffle et recaler ta technique.",
+     "p": [
+      "Repose-toi au bout de la ligne, sur le côté pour laisser les autres tourner.",
+      "Prends quelques respirations lentes jusqu'à pouvoir parler facilement.",
+      "Profite de la pause pour choisir un point technique pour la longueur suivante."
+     ],
+     "q": "Te reposes-tu plutôt trop peu, trop ou juste ce qu'il faut ?",
+     "c": "À ta prochaine séance, repose-toi 20 à 30 secondes après chaque largeur avec un objectif à chaque fois."
+    },
+    "it": {
+     "t": "Riposare al bordo",
+     "g": "Sfrutta le pause per recuperare il fiato e sistemare la tecnica.",
+     "p": [
+      "Riposa a fine corsia, spostato di lato così gli altri possono girare.",
+      "Fai qualche respiro lento finché parlare non ti sembra di nuovo facile.",
+      "Usa la pausa per scegliere un punto tecnico per la vasca successiva."
+     ],
+     "q": "Di solito riposi troppo poco, troppo o il giusto?",
+     "c": "Alla prossima nuotata riposa 20-30 secondi dopo ogni vasca e scegli un obiettivo ogni volta."
+    },
+    "pt": {
+     "t": "Descansar na parede",
+     "g": "Aproveita as pausas para recuperar o fôlego e acertar a técnica.",
+     "p": [
+      "Descansa no fim da pista, encostado a um lado para os outros poderem virar.",
+      "Respira devagar algumas vezes até conseguires falar com facilidade.",
+      "Usa a pausa para escolher um ponto técnico para a piscina seguinte."
+     ],
+     "q": "Costumas descansar pouco, demais ou o suficiente?",
+     "c": "Na próxima ida, descansa 20 a 30 segundos após cada largura e escolhe um foco de cada vez."
+    },
+    "pt_BR": {
+     "t": "Descansando na borda",
+     "g": "Use as pausas para recuperar o fôlego e ajustar a técnica.",
+     "p": [
+      "Descanse no fim da raia, no cantinho para os outros poderem virar.",
+      "Respire devagar algumas vezes até falar ficar fácil de novo.",
+      "Use a pausa para escolher um ponto técnico para a próxima piscina."
+     ],
+     "q": "Você costuma descansar pouco, demais ou na medida?",
+     "c": "No próximo treino, descanse 20 a 30 segundos após cada largura e escolha um foco a cada vez."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body position in freestyle",
+     "g": "Keep your head neutral and hips high to slip through the water.",
+     "p": [
+      "A neutral head, in line with your spine, helps the hips float up.",
+      "Imagine a straight line from the top of your head to your heels.",
+      "Lifting the head to look forward drops the legs and adds drag."
+     ],
+     "q": "Do you feel your legs dragging behind you when you swim freestyle?",
+     "c": "Kick one width with your arms forward, focusing only on a long, level body."
+    },
+    "de": {
+     "t": "Körperlage beim Kraulen",
+     "g": "Halte den Kopf neutral und die Hüfte hoch, um durchs Wasser zu gleiten.",
+     "p": [
+      "Ein neutraler Kopf in Verlängerung der Wirbelsäule lässt die Hüfte aufsteigen.",
+      "Stell dir eine gerade Linie vom Scheitel bis zu den Fersen vor.",
+      "Den Kopf zum Vorausschauen zu heben, lässt die Beine sinken und bremst."
+     ],
+     "q": "Spürst du beim Kraulen, dass deine Beine hinterherhängen?",
+     "c": "Kicke eine Breite mit vorgestreckten Armen und achte nur auf eine lange, flache Lage."
+    },
+    "es": {
+     "t": "Posición del cuerpo en crol",
+     "g": "Mantén la cabeza neutra y la cadera alta para deslizarte por el agua.",
+     "p": [
+      "Una cabeza neutra, alineada con la columna, ayuda a que la cadera suba.",
+      "Imagina una línea recta desde la coronilla hasta los talones.",
+      "Levantar la cabeza para mirar al frente hunde las piernas y frena."
+     ],
+     "q": "¿Notas que las piernas se te quedan atrás cuando nadas crol?",
+     "c": "Patea un ancho con los brazos al frente, centrado solo en un cuerpo largo y plano."
+    },
+    "fr": {
+     "t": "La position du corps en crawl",
+     "g": "Garde la tête neutre et le bassin haut pour glisser dans l'eau.",
+     "p": [
+      "Une tête neutre, dans l'axe de la colonne, aide le bassin à remonter.",
+      "Imagine une ligne droite du sommet du crâne jusqu'aux talons.",
+      "Relever la tête pour regarder devant fait couler les jambes et freine."
+     ],
+     "q": "Sens-tu tes jambes traîner derrière toi quand tu nages le crawl ?",
+     "c": "Fais une largeur de battements bras devant, en pensant seulement à un corps long et plat."
+    },
+    "it": {
+     "t": "Posizione del corpo nello stile libero",
+     "g": "Tieni la testa neutra e il bacino alto per scivolare nell'acqua.",
+     "p": [
+      "Una testa neutra, in linea con la colonna, aiuta il bacino a salire.",
+      "Immagina una linea dritta dalla sommità della testa ai talloni.",
+      "Alzare la testa per guardare avanti fa scendere le gambe e frena."
+     ],
+     "q": "Senti le gambe che restano indietro quando nuoti a stile libero?",
+     "c": "Fai una vasca in larghezza di gambe a braccia avanti, pensando solo a un corpo lungo e piatto."
+    },
+    "pt": {
+     "t": "Posição do corpo no crol",
+     "g": "Mantém a cabeça neutra e a anca alta para deslizar pela água.",
+     "p": [
+      "Uma cabeça neutra, alinhada com a coluna, ajuda a anca a subir.",
+      "Imagina uma linha reta desde o topo da cabeça até aos calcanhares.",
+      "Levantar a cabeça para olhar em frente faz as pernas descer e trava."
+     ],
+     "q": "Sentes as pernas a arrastar atrás de ti quando nadas crol?",
+     "c": "Faz uma largura de pernada com os braços à frente, focado só num corpo comprido e plano."
+    },
+    "pt_BR": {
+     "t": "Posição do corpo no crawl",
+     "g": "Mantenha a cabeça neutra e o quadril alto para deslizar na água.",
+     "p": [
+      "Uma cabeça neutra, alinhada com a coluna, ajuda o quadril a subir.",
+      "Imagine uma linha reta do topo da cabeça até os calcanhares.",
+      "Levantar a cabeça para olhar para a frente afunda as pernas e freia."
+     ],
+     "q": "Você sente as pernas arrastando atrás quando nada crawl?",
+     "c": "Faça uma largura de pernada com os braços à frente, focando só num corpo longo e reto."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where to look while swimming",
+     "g": "Look down and slightly forward to keep your body long and level.",
+     "p": [
+      "Your eyes should see the pool floor just ahead of you.",
+      "The black line on the bottom is a great guide to stay straight.",
+      "Peek forward only now and then to check the wall or other swimmers."
+     ],
+     "q": "Where do your eyes usually wander while you swim?",
+     "c": "Swim two widths watching the floor just ahead and notice how your hips feel."
+    },
+    "de": {
+     "t": "Wohin beim Schwimmen schauen",
+     "g": "Schau nach unten und leicht nach vorn, damit der Körper lang und flach bleibt.",
+     "p": [
+      "Deine Augen sehen den Beckenboden knapp vor dir.",
+      "Die schwarze Linie am Boden hilft dir, geradeaus zu schwimmen.",
+      "Nur ab und zu kurz nach vorn spähen, um Wand oder andere zu sehen."
+     ],
+     "q": "Wohin wandern deine Augen beim Schwimmen meistens?",
+     "c": "Schwimm zwei Breiten mit Blick knapp vor dich auf den Boden und spür deine Hüfte."
+    },
+    "es": {
+     "t": "Hacia dónde mirar al nadar",
+     "g": "Mira hacia abajo y un poco al frente para mantener el cuerpo largo y plano.",
+     "p": [
+      "Tus ojos deberían ver el fondo de la piscina justo delante de ti.",
+      "La línea negra del fondo es una gran guía para ir recto.",
+      "Echa un vistazo al frente solo de vez en cuando para ver la pared o a otros."
+     ],
+     "q": "¿Hacia dónde se te va la mirada mientras nadas?",
+     "c": "Nada dos anchos mirando el fondo justo delante y fíjate en tu cadera."
+    },
+    "fr": {
+     "t": "Où regarder en nageant",
+     "g": "Regarde vers le bas et un peu devant pour garder un corps long et plat.",
+     "p": [
+      "Tes yeux voient le fond du bassin juste devant toi.",
+      "La ligne noire au fond est un super repère pour nager droit.",
+      "Jette un œil devant de temps en temps pour voir le mur ou les autres."
+     ],
+     "q": "Où ton regard se promène-t-il quand tu nages ?",
+     "c": "Nage deux largeurs en regardant le fond juste devant toi et observe ton bassin."
+    },
+    "it": {
+     "t": "Dove guardare mentre nuoti",
+     "g": "Guarda in basso e un po' avanti per tenere il corpo lungo e piatto.",
+     "p": [
+      "I tuoi occhi vedono il fondo della vasca appena davanti a te.",
+      "La linea nera sul fondo è un'ottima guida per andare dritto.",
+      "Sbircia avanti solo ogni tanto per controllare il muro o gli altri."
+     ],
+     "q": "Dove ti scappa lo sguardo mentre nuoti?",
+     "c": "Nuota due vasche in larghezza guardando il fondo appena davanti e senti il bacino."
+    },
+    "pt": {
+     "t": "Para onde olhar ao nadar",
+     "g": "Olha para baixo e um pouco à frente para manter o corpo comprido e plano.",
+     "p": [
+      "Os teus olhos devem ver o fundo da piscina logo à tua frente.",
+      "A linha preta no fundo é um ótimo guia para nadares a direito.",
+      "Espreita para a frente só de vez em quando para ver a parede ou os outros."
+     ],
+     "q": "Para onde costuma fugir o teu olhar quando nadas?",
+     "c": "Nada duas larguras a olhar para o fundo logo à frente e repara na tua anca."
+    },
+    "pt_BR": {
+     "t": "Para onde olhar ao nadar",
+     "g": "Olhe para baixo e um pouco à frente para manter o corpo longo e reto.",
+     "p": [
+      "Seus olhos devem ver o fundo da piscina logo à sua frente.",
+      "A linha preta no fundo é um ótimo guia para nadar reto.",
+      "Dê uma espiada para a frente só de vez em quando para ver a parede ou os outros."
+     ],
+     "q": "Para onde seu olhar costuma ir quando você nada?",
+     "c": "Nade duas larguras olhando o fundo logo à frente e repare no seu quadril."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The catch in freestyle",
+     "g": "Feel the moment your hand starts to hold the water at the front.",
+     "p": [
+      "After your hand enters and reaches, tilt the fingertips slightly down.",
+      "Feel pressure on the palm, as if grabbing a ladder rung underwater.",
+      "A calm, firm catch moves you forward better than a fast slap."
+     ],
+     "q": "Can you feel the water pressing on your palm when you pull?",
+     "c": "Swim four short stretches thinking only about feeling the water at the front."
+    },
+    "de": {
+     "t": "Das Wasserfassen beim Kraulen",
+     "g": "Spür den Moment, in dem die Hand vorn beginnt, das Wasser zu halten.",
+     "p": [
+      "Nach Eintauchen und Strecken die Fingerspitzen leicht nach unten neigen.",
+      "Spür Druck auf der Handfläche, als würdest du unter Wasser eine Leitersprosse greifen.",
+      "Ein ruhiges, festes Fassen bringt dich weiter als ein schneller Klatscher."
+     ],
+     "q": "Spürst du beim Ziehen, wie das Wasser gegen deine Handfläche drückt?",
+     "c": "Schwimm vier kurze Strecken und denk nur ans Wasserfassen vorn."
+    },
+    "es": {
+     "t": "El agarre en crol",
+     "g": "Siente el momento en que la mano empieza a sujetar el agua delante.",
+     "p": [
+      "Tras entrar y estirar, inclina un poco la punta de los dedos hacia abajo.",
+      "Nota presión en la palma, como si agarraras el peldaño de una escalera bajo el agua.",
+      "Un agarre tranquilo y firme te impulsa más que un golpe rápido."
+     ],
+     "q": "¿Notas el agua presionando la palma cuando tiras?",
+     "c": "Nada cuatro tramos cortos pensando solo en sentir el agua delante."
+    },
+    "fr": {
+     "t": "L'appui en crawl",
+     "g": "Sens le moment où la main commence à prendre appui sur l'eau à l'avant.",
+     "p": [
+      "Après l'entrée et l'allongement, incline légèrement le bout des doigts vers le bas.",
+      "Sens une pression sur la paume, comme si tu attrapais un barreau d'échelle sous l'eau.",
+      "Un appui calme et ferme fait avancer mieux qu'une tape rapide."
+     ],
+     "q": "Sens-tu l'eau appuyer sur ta paume quand tu tires ?",
+     "c": "Nage quatre petits trajets en pensant seulement à sentir l'eau à l'avant."
+    },
+    "it": {
+     "t": "La presa nello stile libero",
+     "g": "Senti il momento in cui la mano inizia a far presa sull'acqua davanti.",
+     "p": [
+      "Dopo l'entrata e l'allungo, inclina leggermente le dita verso il basso.",
+      "Senti pressione sul palmo, come se afferrassi il piolo di una scala sott'acqua.",
+      "Una presa calma e decisa ti porta avanti meglio di uno schiaffo veloce."
+     ],
+     "q": "Senti l'acqua che preme sul palmo quando tiri?",
+     "c": "Nuota quattro tratti brevi pensando solo a sentire l'acqua davanti."
+    },
+    "pt": {
+     "t": "A pegada no crol",
+     "g": "Sente o momento em que a mão começa a agarrar a água lá à frente.",
+     "p": [
+      "Depois de entrar e esticar, inclina ligeiramente as pontas dos dedos para baixo.",
+      "Sente pressão na palma, como se agarrasses o degrau de uma escada debaixo de água.",
+      "Uma pegada calma e firme leva-te mais longe do que uma palmada rápida."
+     ],
+     "q": "Sentes a água a pressionar a palma quando puxas?",
+     "c": "Nada quatro percursos curtos a pensar só em sentir a água à frente."
+    },
+    "pt_BR": {
+     "t": "A pegada no crawl",
+     "g": "Sinta o momento em que a mão começa a segurar a água lá na frente.",
+     "p": [
+      "Depois de entrar e alcançar, incline de leve as pontas dos dedos para baixo.",
+      "Sinta pressão na palma, como se pegasse o degrau de uma escada embaixo d'água.",
+      "Uma pegada calma e firme te leva mais longe do que um tapa rápido."
+     ],
+     "q": "Você sente a água pressionando a palma quando puxa?",
+     "c": "Nade quatro trechos curtos pensando só em sentir a água na frente."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "High elbow, simple version",
+     "g": "Bend the elbow early so your forearm can push water backwards.",
+     "p": [
+      "After the catch, let the elbow stay higher than the hand.",
+      "Your forearm and hand become one big paddle facing backwards.",
+      "Think of reaching over a barrel in front of you."
+     ],
+     "q": "Does the barrel picture help you imagine the pull?",
+     "c": "On land, lean forward and practise ten slow reach-over-a-barrel arm movements per side."
+    },
+    "de": {
+     "t": "Hoher Ellbogen, einfach erklärt",
+     "g": "Beug den Ellbogen früh, damit der Unterarm Wasser nach hinten drücken kann.",
+     "p": [
+      "Nach dem Fassen bleibt der Ellbogen höher als die Hand.",
+      "Unterarm und Hand werden zu einem großen Paddel, das nach hinten zeigt.",
+      "Stell dir vor, du greifst vor dir über ein Fass."
+     ],
+     "q": "Hilft dir das Bild vom Fass, dir den Zug vorzustellen?",
+     "c": "Beug dich an Land vor und übe pro Seite zehn langsame Fass-Bewegungen."
+    },
+    "es": {
+     "t": "Codo alto, versión sencilla",
+     "g": "Dobla pronto el codo para que el antebrazo empuje el agua hacia atrás.",
+     "p": [
+      "Tras el agarre, deja que el codo quede más alto que la mano.",
+      "Antebrazo y mano forman una gran pala que mira hacia atrás.",
+      "Imagina que abrazas un barril que tienes delante."
+     ],
+     "q": "¿La imagen del barril te ayuda a entender la tracción?",
+     "c": "Fuera del agua, inclínate y haz diez movimientos lentos de abrazar el barril por lado."
+    },
+    "fr": {
+     "t": "Coude haut, version simple",
+     "g": "Plie le coude tôt pour que l'avant-bras pousse l'eau vers l'arrière.",
+     "p": [
+      "Après l'appui, laisse le coude plus haut que la main.",
+      "Avant-bras et main forment une grande pagaie tournée vers l'arrière.",
+      "Imagine que tu passes le bras par-dessus un tonneau devant toi."
+     ],
+     "q": "L'image du tonneau t'aide-t-elle à visualiser la traction ?",
+     "c": "Hors de l'eau, penché en avant, fais dix mouvements lents du tonneau de chaque côté."
+    },
+    "it": {
+     "t": "Gomito alto, versione semplice",
+     "g": "Piega presto il gomito perché l'avambraccio spinga l'acqua indietro.",
+     "p": [
+      "Dopo la presa, lascia il gomito più alto della mano.",
+      "Avambraccio e mano diventano una grande pagaia rivolta all'indietro.",
+      "Immagina di abbracciare una botte davanti a te."
+     ],
+     "q": "L'immagine della botte ti aiuta a visualizzare la trazione?",
+     "c": "Fuori dall'acqua, piegato in avanti, fai dieci lenti movimenti della botte per lato."
+    },
+    "pt": {
+     "t": "Cotovelo alto, versão simples",
+     "g": "Dobra cedo o cotovelo para o antebraço empurrar a água para trás.",
+     "p": [
+      "Depois da pegada, deixa o cotovelo mais alto do que a mão.",
+      "Antebraço e mão formam uma grande pá virada para trás.",
+      "Imagina que passas o braço por cima de um barril à tua frente."
+     ],
+     "q": "A imagem do barril ajuda-te a visualizar a puxada?",
+     "c": "Fora de água, inclinado, faz dez movimentos lentos do barril para cada lado."
+    },
+    "pt_BR": {
+     "t": "Cotovelo alto, versão simples",
+     "g": "Dobre cedo o cotovelo para o antebraço empurrar a água para trás.",
+     "p": [
+      "Depois da pegada, deixe o cotovelo mais alto que a mão.",
+      "Antebraço e mão viram um grande remo virado para trás.",
+      "Imagine que você abraça um barril na sua frente."
+     ],
+     "q": "A imagem do barril ajuda você a visualizar a puxada?",
+     "c": "Fora da água, inclinado, faça dez movimentos lentos do barril para cada lado."
+    }
+   }
+  }
+ ]
+}

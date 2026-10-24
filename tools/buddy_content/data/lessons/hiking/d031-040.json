@@ -1,0 +1,835 @@
+{
+ "topic": "hiking",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who has right of way",
+     "g": "Learn the common right-of-way habits for hikers, cyclists and horses, and how to step aside politely.",
+     "p": [
+      "On steep narrow paths, hikers going uphill usually have priority, as stopping breaks their rhythm.",
+      "Cyclists are generally expected to give way to walkers, and both give way to horses.",
+      "For horses, step to the downhill side, stay calm and speak softly so the animal sees you are human."
+     ],
+     "q": "Have you ever shared a trail with bikes or horses, and how did it go?",
+     "c": "Learn the local trail rules for one park or area you like to visit."
+    },
+    "de": {
+     "t": "Wer hat Vorrang",
+     "g": "Lerne die üblichen Vorrangregeln für Wandernde, Radfahrende und Pferde und wie man höflich ausweicht.",
+     "p": [
+      "Auf steilen, schmalen Wegen haben Aufsteigende meist Vorrang, weil Anhalten ihren Rhythmus bricht.",
+      "Radfahrende sollen in der Regel Fußgängern Platz machen, und beide weichen Pferden aus.",
+      "Bei Pferden tritt man zur Talseite, bleibt ruhig und spricht leise, damit das Tier einen Menschen erkennt."
+     ],
+     "q": "Hast du schon einen Weg mit Rädern oder Pferden geteilt, und wie lief es?",
+     "c": "Informiere dich über die Wegregeln in einem Park oder Gebiet, das du gern besuchst."
+    },
+    "es": {
+     "t": "Quién tiene preferencia",
+     "g": "Aprende las costumbres habituales de paso entre senderistas, ciclistas y caballos, y cómo apartarte con educación.",
+     "p": [
+      "En caminos estrechos y empinados, quien sube suele tener preferencia, porque parar le rompe el ritmo.",
+      "En general se espera que los ciclistas cedan el paso a los caminantes, y ambos a los caballos.",
+      "Ante caballos, apártate hacia el lado de abajo, mantén la calma y habla suave para que el animal vea que eres una persona."
+     ],
+     "q": "¿Has compartido sendero con bicis o caballos? ¿Cómo fue?",
+     "c": "Infórmate de las normas del sendero de un parque o zona que te guste visitar."
+    },
+    "fr": {
+     "t": "Qui a la priorité",
+     "g": "Apprends les usages de priorité entre randonneurs, cyclistes et chevaux, et comment t'écarter poliment.",
+     "p": [
+      "Sur un sentier raide et étroit, celui qui monte a souvent la priorité, car s'arrêter casse son rythme.",
+      "On attend en général des cyclistes qu'ils cèdent le passage aux marcheurs, et tous laissent passer les chevaux.",
+      "Face à un cheval, mets-toi côté aval, reste calme et parle doucement pour qu'il comprenne que tu es humain."
+     ],
+     "q": "As-tu déjà partagé un sentier avec des vélos ou des chevaux, et comment ça s'est passé ?",
+     "c": "Renseigne-toi sur les règles d'un parc ou d'un site que tu aimes visiter."
+    },
+    "it": {
+     "t": "Chi ha la precedenza",
+     "g": "Impara le abitudini comuni di precedenza tra escursionisti, ciclisti e cavalli e come farti da parte con garbo.",
+     "p": [
+      "Sui sentieri ripidi e stretti di solito ha la precedenza chi sale, perché fermarsi rompe il suo ritmo.",
+      "In genere i ciclisti danno la precedenza a chi cammina, e tutti la danno ai cavalli.",
+      "Con i cavalli spostati dal lato a valle, resta calmo e parla piano, così l'animale capisce che sei una persona."
+     ],
+     "q": "Hai mai condiviso un sentiero con bici o cavalli? Com'è andata?",
+     "c": "Informati sulle regole dei sentieri di un parco o di una zona che ti piace visitare."
+    },
+    "pt": {
+     "t": "Quem tem prioridade",
+     "g": "Aprende os hábitos comuns de prioridade entre caminhantes, ciclistas e cavalos, e como dar passagem com educação.",
+     "p": [
+      "Em trilhos íngremes e estreitos, quem sobe costuma ter prioridade, porque parar quebra-lhe o ritmo.",
+      "Em geral espera-se que os ciclistas deem passagem aos caminhantes, e todos aos cavalos.",
+      "Perante cavalos, afasta-te para o lado de baixo, mantém a calma e fala baixo para o animal perceber que és uma pessoa."
+     ],
+     "q": "Já partilhaste um trilho com bicicletas ou cavalos? Como correu?",
+     "c": "Informa-te sobre as regras dos trilhos de um parque ou zona que gostes de visitar."
+    },
+    "pt_BR": {
+     "t": "Quem tem a preferência",
+     "g": "Aprenda os costumes comuns de preferência entre caminhantes, ciclistas e cavalos, e como dar passagem com educação.",
+     "p": [
+      "Em trilhas íngremes e estreitas, quem sobe costuma ter a preferência, porque parar quebra o ritmo.",
+      "Em geral, espera-se que ciclistas deem passagem a pedestres, e todos aos cavalos.",
+      "Diante de cavalos, vá para o lado de baixo, fique calmo e fale baixo para o animal perceber que você é uma pessoa."
+     ],
+     "q": "Você já dividiu uma trilha com bikes ou cavalos? Como foi?",
+     "c": "Pesquise as regras de trilha de um parque ou área que você gosta de visitar."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leave No Trace principles",
+     "g": "Meet seven simple ideas that help keep nature as beautiful as you found it.",
+     "p": [
+      "Plan ahead and prepare, stay on durable surfaces, and dispose of waste properly.",
+      "Leave what you find, keep campfire impact low, and respect wildlife from a distance.",
+      "Be considerate of other visitors, so everyone can enjoy peace and nature."
+     ],
+     "q": "Which of the seven principles feels easiest for you, and which the hardest?",
+     "c": "Write the seven principles on a card and keep it in your daypack."
+    },
+    "de": {
+     "t": "Die Leave-No-Trace-Prinzipien",
+     "g": "Lerne sieben einfache Ideen kennen, mit denen die Natur so schön bleibt, wie du sie vorgefunden hast.",
+     "p": [
+      "Vorausplanen und vorbereiten, auf festem Untergrund bleiben und Abfälle richtig entsorgen.",
+      "Lass, was du findest, halte die Folgen von Feuer gering und beobachte Tiere aus Abstand.",
+      "Nimm Rücksicht auf andere Besucher, damit alle Ruhe und Natur genießen können."
+     ],
+     "q": "Welches der sieben Prinzipien fällt dir leicht, welches schwer?",
+     "c": "Schreib die sieben Prinzipien auf eine Karte und steck sie in deinen Rucksack."
+    },
+    "es": {
+     "t": "Los principios de No Dejar Rastro",
+     "g": "Conoce siete ideas sencillas para mantener la naturaleza tan bonita como la encontraste.",
+     "p": [
+      "Planifica y prepárate, camina sobre superficies resistentes y gestiona bien los residuos.",
+      "Deja lo que encuentres, reduce el impacto de las hogueras y respeta la fauna a distancia.",
+      "Sé considerado con los demás visitantes, para que todos disfruten de la calma y la naturaleza."
+     ],
+     "q": "¿Cuál de los siete principios te resulta más fácil y cuál más difícil?",
+     "c": "Escribe los siete principios en una tarjeta y guárdala en tu mochila."
+    },
+    "fr": {
+     "t": "Les principes Sans Trace",
+     "g": "Découvre sept idées simples pour garder la nature aussi belle que tu l'as trouvée.",
+     "p": [
+      "Préparer et prévoir, rester sur des surfaces durables et gérer correctement ses déchets.",
+      "Laisser ce que l'on trouve, limiter l'impact des feux et respecter la faune à distance.",
+      "Respecter les autres visiteurs, pour que chacun profite du calme et de la nature."
+     ],
+     "q": "Lequel des sept principes te semble le plus facile, et lequel le plus difficile ?",
+     "c": "Écris les sept principes sur une carte et garde-la dans ton sac de rando."
+    },
+    "it": {
+     "t": "I principi Leave No Trace",
+     "g": "Conosci sette idee semplici per lasciare la natura bella come l'hai trovata.",
+     "p": [
+      "Pianificare e prepararsi, camminare su superfici resistenti e smaltire correttamente i rifiuti.",
+      "Lasciare ciò che si trova, ridurre l'impatto dei fuochi e rispettare la fauna a distanza.",
+      "Avere rispetto per gli altri visitatori, così tutti possono godersi pace e natura."
+     ],
+     "q": "Quale dei sette principi ti sembra più facile e quale più difficile?",
+     "c": "Scrivi i sette principi su un cartoncino e tienilo nello zaino."
+    },
+    "pt": {
+     "t": "Os princípios Não Deixar Rasto",
+     "g": "Conhece sete ideias simples para manter a natureza tão bonita como a encontraste.",
+     "p": [
+      "Planear e preparar, andar em superfícies resistentes e tratar bem dos resíduos.",
+      "Deixar o que encontras, reduzir o impacto das fogueiras e respeitar os animais à distância.",
+      "Ter consideração pelos outros visitantes, para todos aproveitarem a calma e a natureza."
+     ],
+     "q": "Qual dos sete princípios te parece mais fácil e qual o mais difícil?",
+     "c": "Escreve os sete princípios num cartão e guarda-o na tua mochila."
+    },
+    "pt_BR": {
+     "t": "Os princípios de Não Deixe Rastros",
+     "g": "Conheça sete ideias simples para manter a natureza tão bonita quanto você encontrou.",
+     "p": [
+      "Planejar e se preparar, andar em superfícies resistentes e descartar o lixo corretamente.",
+      "Deixar o que encontrar, reduzir o impacto de fogueiras e respeitar os animais à distância.",
+      "Ter consideração com os outros visitantes, para todos curtirem a calma e a natureza."
+     ],
+     "q": "Qual dos sete princípios parece mais fácil para você, e qual o mais difícil?",
+     "c": "Escreva os sete princípios num cartão e guarde na sua mochila."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing out what you pack in",
+     "g": "Learn to carry every bit of litter home, even the things that seem natural.",
+     "p": [
+      "Bring a small bag just for rubbish, and pack wrappers, tissues and bottle caps into it.",
+      "Fruit peels and nut shells take a long time to break down and do not belong to the local wildlife.",
+      "If you spot a little litter left by others and it is safe, picking it up is a kind bonus."
+     ],
+     "q": "Have you ever picked up litter on a walk, and how did it feel?",
+     "c": "Add a small, reusable rubbish bag to your daypack today."
+    },
+    "de": {
+     "t": "Mitnehmen, was du mitbringst",
+     "g": "Lerne, jeden Abfall wieder mit nach Hause zu nehmen, auch scheinbar natürliche Reste.",
+     "p": [
+      "Nimm einen kleinen Beutel nur für Müll mit, für Verpackungen, Taschentücher und Deckel.",
+      "Obstschalen und Nussschalen verrotten lange und gehören nicht zur Nahrung der Wildtiere.",
+      "Wenn du ein wenig Müll von anderen siehst und es sicher ist, ist Aufheben ein schöner Bonus."
+     ],
+     "q": "Hast du schon einmal unterwegs Müll aufgesammelt, und wie hat sich das angefühlt?",
+     "c": "Pack heute einen kleinen, wiederverwendbaren Müllbeutel in deinen Rucksack."
+    },
+    "es": {
+     "t": "Llevarte lo que traes",
+     "g": "Aprende a llevar a casa toda la basura, incluso lo que parece natural.",
+     "p": [
+      "Lleva una bolsita solo para residuos y mete en ella envoltorios, pañuelos y tapones.",
+      "Las cáscaras de fruta y de frutos secos tardan mucho en descomponerse y no son comida para la fauna local.",
+      "Si ves algo de basura de otros y es seguro, recogerla es un bonito extra."
+     ],
+     "q": "¿Alguna vez has recogido basura en un paseo? ¿Cómo te sentiste?",
+     "c": "Mete hoy una bolsa pequeña y reutilizable para basura en tu mochila."
+    },
+    "fr": {
+     "t": "Remporter ce qu'on apporte",
+     "g": "Apprends à rapporter tous tes déchets, même ceux qui semblent naturels.",
+     "p": [
+      "Prends un petit sac réservé aux déchets pour les emballages, mouchoirs et bouchons.",
+      "Les épluchures de fruits et les coquilles de noix mettent longtemps à disparaître et ne nourrissent pas la faune.",
+      "Si tu vois quelques déchets laissés par d'autres et que c'est sans risque, les ramasser est un joli geste."
+     ],
+     "q": "As-tu déjà ramassé des déchets en balade, et qu'as-tu ressenti ?",
+     "c": "Ajoute aujourd'hui un petit sac à déchets réutilisable dans ton sac de rando."
+    },
+    "it": {
+     "t": "Riportare a casa ciò che porti",
+     "g": "Impara a riportare a casa ogni rifiuto, anche quelli che sembrano naturali.",
+     "p": [
+      "Porta un sacchetto solo per i rifiuti e mettici involucri, fazzoletti e tappi.",
+      "Bucce di frutta e gusci di frutta secca impiegano molto a decomporsi e non sono cibo per la fauna.",
+      "Se vedi qualche rifiuto lasciato da altri ed è sicuro, raccoglierlo è un bel gesto in più."
+     ],
+     "q": "Hai mai raccolto rifiuti durante una camminata? Come ti sei sentito?",
+     "c": "Metti oggi nello zaino un piccolo sacchetto riutilizzabile per i rifiuti."
+    },
+    "pt": {
+     "t": "Levar de volta o que trazes",
+     "g": "Aprende a levar para casa todo o lixo, até o que parece natural.",
+     "p": [
+      "Leva um saquinho só para lixo e mete lá embalagens, lenços e tampas.",
+      "Cascas de fruta e de frutos secos demoram muito a decompor-se e não são comida para os animais.",
+      "Se vires algum lixo deixado por outros e for seguro, apanhá-lo é um gesto bonito."
+     ],
+     "q": "Já apanhaste lixo numa caminhada? Como te sentiste?",
+     "c": "Põe hoje na mochila um saquinho reutilizável para o lixo."
+    },
+    "pt_BR": {
+     "t": "Levando de volta o que trouxe",
+     "g": "Aprenda a levar todo o lixo para casa, até o que parece natural.",
+     "p": [
+      "Leve um saquinho só para lixo e coloque nele embalagens, lenços e tampinhas.",
+      "Cascas de fruta e de castanhas demoram muito para se decompor e não são comida para os bichos.",
+      "Se vir um pouco de lixo deixado por outros e for seguro, recolher é um gesto bacana."
+     ],
+     "q": "Você já recolheu lixo numa caminhada? Como se sentiu?",
+     "c": "Coloque hoje na mochila um saquinho reutilizável para lixo."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toilet breaks outdoors",
+     "g": "Learn clean, discreet habits for nature's call, with or without facilities nearby.",
+     "p": [
+      "Use toilets at the trailhead or huts whenever you can, even if you only think you might need to.",
+      "Otherwise, go at least about 60 m, roughly 70 big steps, from water, paths and campsites.",
+      "Dig a small hole 15 to 20 cm deep for solid waste, cover it well, and pack out used paper."
+     ],
+     "q": "Does this topic feel awkward, or are you glad someone explains it clearly?",
+     "c": "Add a small trowel or tent peg, tissues and a sealable bag to your kit."
+    },
+    "de": {
+     "t": "Toilettenpausen in der Natur",
+     "g": "Lerne saubere, diskrete Gewohnheiten für das stille Örtchen draußen, mit oder ohne Toilette.",
+     "p": [
+      "Nutze Toiletten am Startpunkt oder an Hütten, wann immer möglich, auch wenn du nur vielleicht musst.",
+      "Sonst geh mindestens etwa 60 m, rund 70 große Schritte, weg von Wasser, Wegen und Lagerplätzen.",
+      "Grab für das große Geschäft ein Loch von 15 bis 20 cm, deck es gut zu und nimm benutztes Papier mit."
+     ],
+     "q": "Ist das Thema unangenehm, oder bist du froh, dass es jemand klar erklärt?",
+     "c": "Pack eine kleine Schaufel oder einen Hering, Taschentücher und einen dichten Beutel ein."
+    },
+    "es": {
+     "t": "Ir al baño en la naturaleza",
+     "g": "Aprende hábitos limpios y discretos para las necesidades al aire libre, haya o no servicios.",
+     "p": [
+      "Usa los baños del inicio de la ruta o de los refugios siempre que puedas, aunque solo creas que quizá lo necesites.",
+      "Si no hay, aléjate al menos unos 60 m, unos 70 pasos largos, del agua, los caminos y las zonas de acampada.",
+      "Cava un hoyo de 15 a 20 cm para las heces, tápalo bien y llévate el papel usado."
+     ],
+     "q": "¿Este tema te resulta incómodo o te alegra que alguien lo explique claro?",
+     "c": "Añade a tu equipo una palita o piqueta, pañuelos y una bolsa con cierre."
+    },
+    "fr": {
+     "t": "Les pauses toilettes en nature",
+     "g": "Apprends des habitudes propres et discrètes pour les besoins en pleine nature, avec ou sans toilettes.",
+     "p": [
+      "Utilise les toilettes au départ ou dans les refuges dès que possible, même si tu n'es pas sûr d'en avoir besoin.",
+      "Sinon, éloigne-toi d'au moins 60 m environ, à peu près 70 grands pas, de l'eau, des sentiers et des bivouacs.",
+      "Creuse un petit trou de 15 à 20 cm pour les selles, rebouche bien et remporte le papier utilisé."
+     ],
+     "q": "Ce sujet te gêne-t-il, ou es-tu content qu'on l'explique clairement ?",
+     "c": "Ajoute à ton sac une petite pelle ou une sardine, des mouchoirs et un sachet refermable."
+    },
+    "it": {
+     "t": "Il bagno nella natura",
+     "g": "Impara abitudini pulite e discrete per i bisogni all'aperto, con o senza servizi vicino.",
+     "p": [
+      "Usa i bagni alla partenza o nei rifugi quando puoi, anche se pensi solo che potrebbe servirti.",
+      "Altrimenti allontanati almeno circa 60 m, più o meno 70 passi lunghi, da acqua, sentieri e campeggi.",
+      "Scava una buchetta di 15-20 cm per le feci, coprila bene e riporta via la carta usata."
+     ],
+     "q": "Questo argomento ti imbarazza o sei contento che qualcuno lo spieghi chiaramente?",
+     "c": "Aggiungi al kit una paletta o un picchetto, fazzoletti e un sacchetto richiudibile."
+    },
+    "pt": {
+     "t": "Ir à casa de banho na natureza",
+     "g": "Aprende hábitos limpos e discretos para as necessidades ao ar livre, com ou sem instalações.",
+     "p": [
+      "Usa as casas de banho no início do trilho ou nos refúgios sempre que puderes, mesmo que só aches que talvez precises.",
+      "Caso contrário, afasta-te pelo menos uns 60 m, cerca de 70 passos largos, da água, dos trilhos e dos acampamentos.",
+      "Cava um buraco de 15 a 20 cm para as fezes, tapa-o bem e leva contigo o papel usado."
+     ],
+     "q": "Este tema é constrangedor para ti, ou ficas contente por alguém o explicar com clareza?",
+     "c": "Junta ao teu kit uma pá pequena ou uma estaca, lenços e um saco com fecho."
+    },
+    "pt_BR": {
+     "t": "Ir ao banheiro na natureza",
+     "g": "Aprenda hábitos limpos e discretos para as necessidades ao ar livre, com ou sem banheiro por perto.",
+     "p": [
+      "Use os banheiros do início da trilha ou dos abrigos sempre que puder, mesmo que só ache que talvez precise.",
+      "Se não houver, afaste-se pelo menos uns 60 m, cerca de 70 passos largos, da água, das trilhas e dos acampamentos.",
+      "Cave um buraco de 15 a 20 cm para as fezes, cubra bem e leve embora o papel usado."
+     ],
+     "q": "Esse assunto é constrangedor para você, ou fica feliz que alguém explique com clareza?",
+     "c": "Inclua no seu kit uma pazinha ou estaca, lenços e um saco com fecho."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking uphill efficiently",
+     "g": "Learn simple techniques that make climbs feel easier and save energy for the whole day.",
+     "p": [
+      "Take shorter steps as the path gets steeper, keeping a steady rhythm instead of big strides.",
+      "Place your whole foot down when you can, which uses stronger muscles and reduces calf strain.",
+      "Slow your pace before you are out of breath; a gentle zigzag on wide slopes can ease the angle."
+     ],
+     "q": "How do climbs usually feel for you: a challenge you enjoy or the hardest part?",
+     "c": "Find a local hill or long staircase and practise short, steady steps on the way up."
+    },
+    "de": {
+     "t": "Effizient bergauf gehen",
+     "g": "Lerne einfache Techniken, mit denen Anstiege leichter werden und Kraft für den ganzen Tag bleibt.",
+     "p": [
+      "Mach kürzere Schritte, je steiler es wird, und halte einen gleichmäßigen Rhythmus statt großer Schritte.",
+      "Setz möglichst den ganzen Fuß auf; das nutzt stärkere Muskeln und schont die Waden.",
+      "Werd langsamer, bevor dir die Luft ausgeht; auf breiten Hängen kann ein sanfter Zickzack helfen."
+     ],
+     "q": "Wie fühlen sich Anstiege für dich an: eine schöne Herausforderung oder der härteste Teil?",
+     "c": "Such dir einen Hügel oder eine lange Treppe und übe kurze, gleichmäßige Schritte bergauf."
+    },
+    "es": {
+     "t": "Subir cuestas con eficacia",
+     "g": "Aprende técnicas sencillas para que las subidas cuesten menos y guardes energía para todo el día.",
+     "p": [
+      "Da pasos más cortos cuanto más empinado sea, con un ritmo constante en lugar de zancadas largas.",
+      "Apoya todo el pie cuando puedas: usa músculos más fuertes y cansa menos los gemelos.",
+      "Baja el ritmo antes de quedarte sin aliento; en laderas anchas, un zigzag suave reduce la pendiente."
+     ],
+     "q": "¿Cómo vives las subidas: un reto que disfrutas o la parte más dura?",
+     "c": "Busca una cuesta o una escalera larga cerca y practica pasos cortos y constantes al subir."
+    },
+    "fr": {
+     "t": "Monter efficacement",
+     "g": "Apprends des techniques simples pour que les montées paraissent plus faciles et économisent ton énergie.",
+     "p": [
+      "Raccourcis tes pas quand ça devient raide et garde un rythme régulier plutôt que de grandes enjambées.",
+      "Pose tout le pied quand c'est possible : tu utilises des muscles plus forts et soulages les mollets.",
+      "Ralentis avant d'être essoufflé ; sur une pente large, un léger zigzag adoucit l'inclinaison."
+     ],
+     "q": "Comment vis-tu les montées : un défi que tu aimes ou la partie la plus dure ?",
+     "c": "Trouve une côte ou un long escalier près de chez toi et entraîne-toi à petits pas réguliers."
+    },
+    "it": {
+     "t": "Salire in modo efficiente",
+     "g": "Impara tecniche semplici che rendono le salite più facili e ti fanno risparmiare energia.",
+     "p": [
+      "Accorcia i passi quando il sentiero si fa ripido, con un ritmo costante invece di falcate lunghe.",
+      "Appoggia tutto il piede quando puoi: usi muscoli più forti e affatichi meno i polpacci.",
+      "Rallenta prima di restare senza fiato; sui pendii larghi un leggero zigzag riduce la pendenza."
+     ],
+     "q": "Come vivi le salite: una sfida che ti piace o la parte più dura?",
+     "c": "Trova una salita o una lunga scalinata vicino a te e allenati a passi brevi e regolari."
+    },
+    "pt": {
+     "t": "Subir de forma eficiente",
+     "g": "Aprende técnicas simples que tornam as subidas mais fáceis e poupam energia para o dia todo.",
+     "p": [
+      "Dá passos mais curtos quando o caminho fica íngreme, com ritmo constante em vez de passadas largas.",
+      "Assenta o pé todo quando puderes: usas músculos mais fortes e cansas menos as barrigas das pernas.",
+      "Abranda antes de ficares sem fôlego; em encostas largas, um ziguezague suave reduz a inclinação."
+     ],
+     "q": "Como vives as subidas: um desafio de que gostas ou a parte mais difícil?",
+     "c": "Encontra uma subida ou escadaria longa perto de ti e pratica passos curtos e constantes."
+    },
+    "pt_BR": {
+     "t": "Subindo com eficiência",
+     "g": "Aprenda técnicas simples que deixam as subidas mais fáceis e poupam energia para o dia todo.",
+     "p": [
+      "Dê passos mais curtos quando ficar íngreme, com ritmo constante em vez de passadas longas.",
+      "Apoie o pé inteiro quando der: isso usa músculos mais fortes e cansa menos a panturrilha.",
+      "Diminua o ritmo antes de perder o fôlego; em encostas largas, um zigue-zague suave reduz a inclinação."
+     ],
+     "q": "Como são as subidas para você: um desafio gostoso ou a parte mais difícil?",
+     "c": "Encontre uma ladeira ou escadaria longa perto de você e pratique passos curtos e constantes."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking downhill safely",
+     "g": "Learn to descend with control, protecting your knees and keeping your balance.",
+     "p": [
+      "Keep your knees slightly bent and soft, like springs, rather than locking them straight.",
+      "Take small steps and keep your weight over your feet, not leaning back.",
+      "Control your speed, look a few steps ahead and slow down on loose stones or wet ground."
+     ],
+     "q": "Do you find going down easier or harder than going up?",
+     "c": "On your next descent, practise soft knees and small steps for five minutes."
+    },
+    "de": {
+     "t": "Sicher bergab gehen",
+     "g": "Lerne, kontrolliert abzusteigen, die Knie zu schonen und das Gleichgewicht zu halten.",
+     "p": [
+      "Halte die Knie leicht gebeugt und locker wie Federn, statt sie durchzustrecken.",
+      "Mach kleine Schritte und halte das Gewicht über den Füßen, ohne dich nach hinten zu lehnen.",
+      "Kontrolliere dein Tempo, schau ein paar Schritte voraus und werd auf losem Geröll oder Nässe langsamer."
+     ],
+     "q": "Findest du bergab leichter oder schwerer als bergauf?",
+     "c": "Übe beim nächsten Abstieg fünf Minuten lang lockere Knie und kleine Schritte."
+    },
+    "es": {
+     "t": "Bajar con seguridad",
+     "g": "Aprende a bajar con control, cuidando las rodillas y manteniendo el equilibrio.",
+     "p": [
+      "Mantén las rodillas un poco flexionadas y blandas, como muelles, en vez de bloquearlas rectas.",
+      "Da pasos cortos y mantén el peso sobre los pies, sin echarte hacia atrás.",
+      "Controla la velocidad, mira unos pasos por delante y frena en piedras sueltas o suelo mojado."
+     ],
+     "q": "¿Te resulta más fácil bajar o subir?",
+     "c": "En tu próxima bajada, practica rodillas flexibles y pasos cortos durante cinco minutos."
+    },
+    "fr": {
+     "t": "Descendre en sécurité",
+     "g": "Apprends à descendre avec maîtrise, en protégeant tes genoux et en gardant l'équilibre.",
+     "p": [
+      "Garde les genoux légèrement fléchis et souples, comme des ressorts, au lieu de les bloquer.",
+      "Fais de petits pas et garde ton poids au-dessus des pieds, sans te pencher en arrière.",
+      "Contrôle ta vitesse, regarde quelques pas devant et ralentis sur les cailloux roulants ou le sol mouillé."
+     ],
+     "q": "Trouves-tu la descente plus facile ou plus difficile que la montée ?",
+     "c": "Lors de ta prochaine descente, entraîne-toi cinq minutes aux genoux souples et petits pas."
+    },
+    "it": {
+     "t": "Scendere in sicurezza",
+     "g": "Impara a scendere con controllo, proteggendo le ginocchia e mantenendo l'equilibrio.",
+     "p": [
+      "Tieni le ginocchia leggermente piegate e morbide, come molle, invece di bloccarle dritte.",
+      "Fai passi piccoli e tieni il peso sopra i piedi, senza sbilanciarti indietro.",
+      "Controlla la velocità, guarda qualche passo avanti e rallenta su sassi mobili o terreno bagnato."
+     ],
+     "q": "Per te è più facile scendere o salire?",
+     "c": "Nella prossima discesa allenati per cinque minuti a ginocchia morbide e passi piccoli."
+    },
+    "pt": {
+     "t": "Descer em segurança",
+     "g": "Aprende a descer com controlo, protegendo os joelhos e mantendo o equilíbrio.",
+     "p": [
+      "Mantém os joelhos ligeiramente fletidos e soltos, como molas, em vez de os trancar esticados.",
+      "Dá passos pequenos e mantém o peso sobre os pés, sem te inclinares para trás.",
+      "Controla a velocidade, olha uns passos à frente e abranda em pedras soltas ou chão molhado."
+     ],
+     "q": "Achas mais fácil descer ou subir?",
+     "c": "Na tua próxima descida, pratica joelhos soltos e passos pequenos durante cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Descendo com segurança",
+     "g": "Aprenda a descer com controle, protegendo os joelhos e mantendo o equilíbrio.",
+     "p": [
+      "Mantenha os joelhos levemente dobrados e soltos, como molas, em vez de travá-los esticados.",
+      "Dê passos pequenos e mantenha o peso sobre os pés, sem jogar o corpo para trás.",
+      "Controle a velocidade, olhe alguns passos à frente e vá devagar em pedras soltas ou chão molhado."
+     ],
+     "q": "Para você é mais fácil descer ou subir?",
+     "c": "Na próxima descida, pratique joelhos soltos e passos pequenos por cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rest step",
+     "g": "Learn a classic mountaineering trick that saves energy on long, steep climbs.",
+     "p": [
+      "With each step, pause for a moment with your back leg straight, so your bones hold your weight.",
+      "In that brief pause your leg muscles relax before the next step, and you can take a breath.",
+      "It feels slow at first, but a steady rest step often gets you to the top fresher than rushing."
+     ],
+     "q": "Have you ever had to stop again and again on a steep climb?",
+     "c": "Try ten rest steps on a slope or staircase and notice how your legs feel."
+    },
+    "de": {
+     "t": "Der Rastschritt",
+     "g": "Lerne einen klassischen Bergsteigertrick, der an langen, steilen Anstiegen Kraft spart.",
+     "p": [
+      "Halte bei jedem Schritt kurz inne, mit gestrecktem hinteren Bein, sodass die Knochen dein Gewicht tragen.",
+      "In dieser kurzen Pause entspannen die Beinmuskeln vor dem nächsten Schritt, und du kannst atmen.",
+      "Anfangs wirkt es langsam, doch ein gleichmäßiger Rastschritt bringt dich oft frischer nach oben."
+     ],
+     "q": "Musstest du an einem steilen Anstieg schon immer wieder stehen bleiben?",
+     "c": "Probier zehn Rastschritte an einem Hang oder einer Treppe und spür, wie sich die Beine anfühlen."
+    },
+    "es": {
+     "t": "El paso de descanso",
+     "g": "Aprende un truco clásico de montañismo que ahorra energía en subidas largas y empinadas.",
+     "p": [
+      "En cada paso, para un instante con la pierna de atrás estirada, para que los huesos sostengan tu peso.",
+      "En esa breve pausa los músculos de la pierna se relajan antes del siguiente paso y puedes respirar.",
+      "Al principio parece lento, pero un paso de descanso constante suele llevarte arriba más fresco."
+     ],
+     "q": "¿Alguna vez has tenido que parar una y otra vez en una subida fuerte?",
+     "c": "Prueba diez pasos de descanso en una cuesta o escalera y nota cómo se sienten tus piernas."
+    },
+    "fr": {
+     "t": "Le pas de repos",
+     "g": "Apprends une astuce classique d'alpinisme qui économise l'énergie dans les longues montées raides.",
+     "p": [
+      "À chaque pas, marque une courte pause jambe arrière tendue, pour que tes os portent ton poids.",
+      "Pendant cette pause, les muscles de la jambe se relâchent avant le pas suivant, et tu respires.",
+      "Au début ça paraît lent, mais un pas de repos régulier t'amène souvent en haut plus frais."
+     ],
+     "q": "T'es-tu déjà arrêté encore et encore dans une montée raide ?",
+     "c": "Essaie dix pas de repos dans une côte ou un escalier et observe tes jambes."
+    },
+    "it": {
+     "t": "Il passo di riposo",
+     "g": "Impara un classico trucco dell'alpinismo che fa risparmiare energia sulle salite lunghe e ripide.",
+     "p": [
+      "A ogni passo fermati un attimo con la gamba dietro tesa, così sono le ossa a sostenere il peso.",
+      "In quella breve pausa i muscoli della gamba si rilassano prima del passo successivo e respiri.",
+      "All'inizio sembra lento, ma un passo di riposo regolare spesso ti porta in cima più fresco."
+     ],
+     "q": "Ti è mai capitato di doverti fermare di continuo su una salita ripida?",
+     "c": "Prova dieci passi di riposo su una salita o una scala e nota come stanno le gambe."
+    },
+    "pt": {
+     "t": "O passo de descanso",
+     "g": "Aprende um truque clássico de montanhismo que poupa energia em subidas longas e íngremes.",
+     "p": [
+      "Em cada passo, para um instante com a perna de trás esticada, para os ossos aguentarem o teu peso.",
+      "Nessa pausa breve, os músculos da perna relaxam antes do passo seguinte e podes respirar.",
+      "Ao início parece lento, mas um passo de descanso constante leva-te muitas vezes ao topo mais fresco."
+     ],
+     "q": "Já tiveste de parar vezes sem conta numa subida íngreme?",
+     "c": "Experimenta dez passos de descanso numa subida ou escada e repara nas tuas pernas."
+    },
+    "pt_BR": {
+     "t": "O passo de descanso",
+     "g": "Aprenda um truque clássico de montanhismo que poupa energia em subidas longas e íngremes.",
+     "p": [
+      "A cada passo, pare um instante com a perna de trás esticada, para os ossos sustentarem seu peso.",
+      "Nessa pausa curta, os músculos da perna relaxam antes do próximo passo e você respira.",
+      "No começo parece lento, mas um passo de descanso constante costuma levar você ao topo mais inteiro."
+     ],
+     "q": "Você já precisou parar várias vezes numa subida forte?",
+     "c": "Teste dez passos de descanso numa ladeira ou escada e repare como ficam suas pernas."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing on the climb",
+     "g": "Learn to match your breathing to your steps and slow down instead of stopping.",
+     "p": [
+      "Find a rhythm, such as one breath for every two steps, and adjust it as the slope changes.",
+      "Breathe deeply into your belly, and breathe out fully to make room for fresh air.",
+      "If you are gasping, shorten your steps and slow down until breathing feels steady again."
+     ],
+     "q": "Do you notice your breathing when you walk, or does it happen without thinking?",
+     "c": "On your next climb, count steps per breath and find a rhythm that feels calm."
+    },
+    "de": {
+     "t": "Atmen am Anstieg",
+     "g": "Lerne, deinen Atem an die Schritte anzupassen und lieber langsamer zu werden statt stehen zu bleiben.",
+     "p": [
+      "Finde einen Rhythmus, etwa ein Atemzug auf zwei Schritte, und pass ihn an die Steigung an.",
+      "Atme tief in den Bauch und atme ganz aus, damit Platz für frische Luft entsteht.",
+      "Wenn du nach Luft schnappst, verkürze die Schritte und werd langsamer, bis der Atem ruhig ist."
+     ],
+     "q": "Achtest du beim Gehen auf deinen Atem, oder läuft er einfach von selbst?",
+     "c": "Zähl beim nächsten Anstieg die Schritte pro Atemzug und finde einen ruhigen Rhythmus."
+    },
+    "es": {
+     "t": "Respirar en la subida",
+     "g": "Aprende a acompasar la respiración con los pasos y a ir más despacio en vez de parar.",
+     "p": [
+      "Busca un ritmo, por ejemplo una respiración cada dos pasos, y ajústalo cuando cambie la pendiente.",
+      "Respira hondo hacia la barriga y suelta todo el aire para dejar sitio al aire fresco.",
+      "Si jadeas, acorta el paso y baja el ritmo hasta que la respiración vuelva a ser estable."
+     ],
+     "q": "¿Te fijas en tu respiración al caminar o va sola sin pensar?",
+     "c": "En tu próxima subida, cuenta los pasos por respiración y busca un ritmo tranquilo."
+    },
+    "fr": {
+     "t": "Respirer dans la montée",
+     "g": "Apprends à caler ta respiration sur tes pas et à ralentir plutôt que t'arrêter.",
+     "p": [
+      "Trouve un rythme, par exemple une respiration pour deux pas, et adapte-le à la pente.",
+      "Respire profondément par le ventre et expire complètement pour laisser entrer l'air frais.",
+      "Si tu es à bout de souffle, raccourcis tes pas et ralentis jusqu'à retrouver une respiration régulière."
+     ],
+     "q": "Fais-tu attention à ta respiration en marchant, ou se fait-elle toute seule ?",
+     "c": "Dans ta prochaine montée, compte les pas par respiration et trouve un rythme calme."
+    },
+    "it": {
+     "t": "Respirare in salita",
+     "g": "Impara ad accordare il respiro ai passi e a rallentare invece di fermarti.",
+     "p": [
+      "Trova un ritmo, per esempio un respiro ogni due passi, e adattalo quando cambia la pendenza.",
+      "Respira a fondo con la pancia ed espira completamente per far spazio all'aria fresca.",
+      "Se ansimi, accorcia i passi e rallenta finché il respiro torna regolare."
+     ],
+     "q": "Fai caso al respiro quando cammini, o va da solo senza pensarci?",
+     "c": "Nella prossima salita conta i passi per ogni respiro e trova un ritmo tranquillo."
+    },
+    "pt": {
+     "t": "Respirar na subida",
+     "g": "Aprende a acertar a respiração com os passos e a abrandar em vez de parar.",
+     "p": [
+      "Encontra um ritmo, por exemplo uma respiração a cada dois passos, e ajusta-o quando a inclinação muda.",
+      "Respira fundo para a barriga e expira tudo, para dar espaço ao ar fresco.",
+      "Se estiveres ofegante, encurta os passos e abranda até a respiração voltar a estar estável."
+     ],
+     "q": "Prestas atenção à respiração quando caminhas, ou ela acontece sozinha?",
+     "c": "Na próxima subida, conta os passos por respiração e encontra um ritmo calmo."
+    },
+    "pt_BR": {
+     "t": "Respirando na subida",
+     "g": "Aprenda a combinar a respiração com os passos e a diminuir o ritmo em vez de parar.",
+     "p": [
+      "Ache um ritmo, como uma respiração a cada dois passos, e ajuste conforme a inclinação muda.",
+      "Respire fundo pela barriga e solte todo o ar, para dar espaço ao ar fresco.",
+      "Se estiver ofegante, encurte os passos e vá mais devagar até a respiração ficar estável."
+     ],
+     "q": "Você presta atenção na respiração quando caminha, ou ela vai sozinha?",
+     "c": "Na próxima subida, conte os passos por respiração e encontre um ritmo tranquilo."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking good breaks",
+     "g": "Learn to take short, regular breaks that keep your energy up and your day enjoyable.",
+     "p": [
+      "A few minutes every hour or so is better than one long stop when you are already exhausted.",
+      "Have a sip, a snack and put on a layer straight away, as you cool down quickly when you stop.",
+      "Pick a spot off the trail with a view, and enjoy the moment before you set off again."
+     ],
+     "q": "Where would your dream break spot be: a lake, a summit or a shady forest?",
+     "c": "On your next walk, take a five-minute break every hour and notice the difference."
+    },
+    "de": {
+     "t": "Gute Pausen machen",
+     "g": "Lerne, kurze, regelmäßige Pausen zu machen, die deine Energie und Freude erhalten.",
+     "p": [
+      "Ein paar Minuten etwa jede Stunde sind besser als eine lange Pause, wenn du schon erschöpft bist.",
+      "Trink, iss etwas und zieh gleich eine Schicht an, denn beim Anhalten kühlst du schnell aus.",
+      "Such dir einen Platz neben dem Weg mit Aussicht und genieß den Moment, bevor es weitergeht."
+     ],
+     "q": "Wo wäre dein Traum-Pausenplatz: am See, auf dem Gipfel oder im schattigen Wald?",
+     "c": "Mach beim nächsten Spaziergang jede Stunde fünf Minuten Pause und spür den Unterschied."
+    },
+    "es": {
+     "t": "Hacer buenos descansos",
+     "g": "Aprende a hacer paradas cortas y regulares que mantienen tu energía y tu buen humor.",
+     "p": [
+      "Unos minutos más o menos cada hora es mejor que una parada larga cuando ya estás agotado.",
+      "Bebe, come algo y ponte una capa enseguida, porque te enfrías rápido al parar.",
+      "Elige un sitio fuera del camino con vistas y disfruta del momento antes de seguir."
+     ],
+     "q": "¿Dónde sería tu lugar de descanso ideal: un lago, una cima o un bosque con sombra?",
+     "c": "En tu próximo paseo, descansa cinco minutos cada hora y nota la diferencia."
+    },
+    "fr": {
+     "t": "Bien faire ses pauses",
+     "g": "Apprends à faire des pauses courtes et régulières qui préservent ton énergie et ton plaisir.",
+     "p": [
+      "Quelques minutes environ toutes les heures valent mieux qu'un long arrêt quand tu es déjà épuisé.",
+      "Bois, mange un peu et enfile une couche tout de suite, car on se refroidit vite à l'arrêt.",
+      "Choisis un endroit hors du sentier avec une vue, et savoure le moment avant de repartir."
+     ],
+     "q": "Où serait ton coin de pause idéal : un lac, un sommet ou une forêt ombragée ?",
+     "c": "Lors de ta prochaine marche, fais une pause de cinq minutes chaque heure et sens la différence."
+    },
+    "it": {
+     "t": "Fare buone pause",
+     "g": "Impara a fare pause brevi e regolari che mantengono alta l'energia e piacevole la giornata.",
+     "p": [
+      "Qualche minuto circa ogni ora è meglio di una lunga sosta quando sei già sfinito.",
+      "Bevi, mangia qualcosa e indossa subito uno strato, perché da fermo ti raffreddi in fretta.",
+      "Scegli un posto fuori dal sentiero con vista e goditi il momento prima di ripartire."
+     ],
+     "q": "Dove sarebbe il tuo posto ideale per una pausa: un lago, una vetta o un bosco ombroso?",
+     "c": "Nella prossima camminata fai una pausa di cinque minuti ogni ora e nota la differenza."
+    },
+    "pt": {
+     "t": "Fazer boas pausas",
+     "g": "Aprende a fazer pausas curtas e regulares que mantêm a energia e tornam o dia agradável.",
+     "p": [
+      "Uns minutos mais ou menos de hora a hora é melhor do que uma paragem longa quando já estás esgotado.",
+      "Bebe, come algo e veste logo uma camada, porque arrefeces depressa quando paras.",
+      "Escolhe um sítio fora do trilho com vista e aproveita o momento antes de seguir."
+     ],
+     "q": "Onde seria o teu sítio de pausa ideal: um lago, um cume ou uma floresta com sombra?",
+     "c": "Na tua próxima caminhada, faz uma pausa de cinco minutos a cada hora e nota a diferença."
+    },
+    "pt_BR": {
+     "t": "Fazendo boas pausas",
+     "g": "Aprenda a fazer pausas curtas e regulares que mantêm a energia e deixam o dia gostoso.",
+     "p": [
+      "Alguns minutos mais ou menos a cada hora é melhor que uma parada longa quando você já está exausto.",
+      "Beba, coma algo e vista uma camada logo, porque você esfria rápido quando para.",
+      "Escolha um lugar fora da trilha com vista e curta o momento antes de seguir."
+     ],
+     "q": "Onde seria seu lugar ideal para uma pausa: um lago, um cume ou uma mata com sombra?",
+     "c": "Na próxima caminhada, faça uma pausa de cinco minutos a cada hora e sinta a diferença."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Preventing blisters",
+     "g": "Learn how good socks, dry feet and quick action on hot spots keep blisters away.",
+     "p": [
+      "Blisters come from friction, heat and moisture, so well-fitting shoes and good socks are step one.",
+      "Keep feet as dry as you can, and change into dry socks if they get wet or very sweaty.",
+      "Stop as soon as you feel a hot spot and cover it with tape or a blister plaster before it gets worse."
+     ],
+     "q": "Have blisters ever spoiled a walk for you?",
+     "c": "Put a small roll of tape and a few blister plasters into your first aid kit."
+    },
+    "de": {
+     "t": "Blasen vorbeugen",
+     "g": "Lerne, wie gute Socken, trockene Füße und schnelles Handeln bei Druckstellen Blasen verhindern.",
+     "p": [
+      "Blasen entstehen durch Reibung, Wärme und Feuchtigkeit, daher sind passende Schuhe und gute Socken Schritt eins.",
+      "Halte die Füße so trocken wie möglich und wechsle die Socken, wenn sie nass oder sehr verschwitzt sind.",
+      "Halt sofort an, wenn du eine Druckstelle spürst, und kleb Tape oder ein Blasenpflaster darauf."
+     ],
+     "q": "Haben dir Blasen schon einmal eine Tour verdorben?",
+     "c": "Pack eine kleine Rolle Tape und ein paar Blasenpflaster in dein Erste-Hilfe-Set."
+    },
+    "es": {
+     "t": "Prevenir ampollas",
+     "g": "Aprende cómo buenos calcetines, pies secos y actuar rápido ante una rozadura evitan las ampollas.",
+     "p": [
+      "Las ampollas salen por roce, calor y humedad, así que un calzado que ajuste y buenos calcetines son el primer paso.",
+      "Mantén los pies lo más secos posible y cámbiate de calcetines si se mojan o sudan mucho.",
+      "Para en cuanto notes una zona caliente y cúbrela con esparadrapo o un apósito antes de que empeore."
+     ],
+     "q": "¿Alguna vez las ampollas te han estropeado una caminata?",
+     "c": "Mete un rollito de esparadrapo y unos apósitos para ampollas en tu botiquín."
+    },
+    "fr": {
+     "t": "Prévenir les ampoules",
+     "g": "Apprends comment de bonnes chaussettes, des pieds secs et une réaction rapide évitent les ampoules.",
+     "p": [
+      "Les ampoules viennent du frottement, de la chaleur et de l'humidité : chaussures adaptées et bonnes chaussettes d'abord.",
+      "Garde les pieds aussi secs que possible et change de chaussettes si elles sont mouillées ou trempées de sueur.",
+      "Arrête-toi dès que tu sens un échauffement et couvre-le avec du strap ou un pansement spécial ampoules."
+     ],
+     "q": "Les ampoules t'ont-elles déjà gâché une balade ?",
+     "c": "Mets un petit rouleau de strap et quelques pansements ampoules dans ta trousse de secours."
+    },
+    "it": {
+     "t": "Prevenire le vesciche",
+     "g": "Impara come buone calze, piedi asciutti e un intervento rapido sui punti caldi tengono lontane le vesciche.",
+     "p": [
+      "Le vesciche nascono da attrito, calore e umidità, quindi scarpe giuste e buone calze sono il primo passo.",
+      "Tieni i piedi il più asciutti possibile e cambia calze se si bagnano o sono molto sudate.",
+      "Fermati appena senti un punto caldo e coprilo con un cerotto o del tape prima che peggiori."
+     ],
+     "q": "Le vesciche ti hanno mai rovinato una camminata?",
+     "c": "Metti un piccolo rotolo di tape e qualche cerotto per vesciche nel kit di pronto soccorso."
+    },
+    "pt": {
+     "t": "Prevenir bolhas",
+     "g": "Aprende como boas meias, pés secos e agir depressa em zonas de fricção evitam bolhas.",
+     "p": [
+      "As bolhas vêm da fricção, do calor e da humidade, por isso calçado que sirva bem e boas meias são o primeiro passo.",
+      "Mantém os pés o mais secos possível e troca de meias se ficarem molhadas ou muito suadas.",
+      "Para logo que sintas uma zona a aquecer e cobre-a com fita ou um penso para bolhas antes que piore."
+     ],
+     "q": "Alguma vez as bolhas te estragaram uma caminhada?",
+     "c": "Põe um rolo pequeno de fita e alguns pensos para bolhas no teu kit de primeiros socorros."
+    },
+    "pt_BR": {
+     "t": "Prevenindo bolhas",
+     "g": "Aprenda como boas meias, pés secos e agir rápido em pontos de atrito evitam bolhas.",
+     "p": [
+      "Bolhas vêm de atrito, calor e umidade, então calçado que sirva bem e boas meias são o primeiro passo.",
+      "Mantenha os pés o mais secos possível e troque de meia se ela molhar ou ficar muito suada.",
+      "Pare assim que sentir um ponto quente e cubra com esparadrapo ou curativo para bolhas antes que piore."
+     ],
+     "q": "As bolhas já estragaram uma caminhada sua?",
+     "c": "Coloque um rolinho de esparadrapo e alguns curativos para bolhas no seu kit de primeiros socorros."
+    }
+   }
+  }
+ ]
+}

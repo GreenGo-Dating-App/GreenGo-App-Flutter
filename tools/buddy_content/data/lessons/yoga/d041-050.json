@@ -1,0 +1,835 @@
+{
+ "topic": "yoga",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warrior I",
+     "g": "Learn Warrior I, a strong standing lunge with arms reaching up.",
+     "p": [
+      "Step one foot back, turn the back foot slightly out and bend the front knee over the ankle.",
+      "Point the hips forward as far as is comfortable and reach both arms up, shoulders relaxed.",
+      "A shorter stance or hands on the hips makes the pose easier while you learn it."
+     ],
+     "q": "Which feels stronger in you today: your legs or your arms?",
+     "c": "Hold Warrior I for three breaths on each side, then rest in mountain pose and notice your legs."
+    },
+    "de": {
+     "t": "Krieger I",
+     "g": "Lerne Krieger I, einen kraftvollen Ausfallschritt im Stand mit erhobenen Armen.",
+     "p": [
+      "Stell einen Fuß nach hinten, dreh ihn leicht nach außen und beug das vordere Knie über den Knöchel.",
+      "Richte die Hüften so weit wie angenehm nach vorn aus und streck beide Arme nach oben, Schultern locker.",
+      "Ein kürzerer Stand oder Hände an den Hüften erleichtern die Haltung, während du sie lernst."
+     ],
+     "q": "Was fühlt sich heute stärker an: deine Beine oder deine Arme?",
+     "c": "Halte Krieger I drei Atemzüge pro Seite, ruh dann in der Berghaltung und spür in deine Beine."
+    },
+    "es": {
+     "t": "Guerrero I",
+     "g": "Aprende el guerrero I, una zancada de pie potente con los brazos hacia arriba.",
+     "p": [
+      "Lleva un pie atrás, gíralo un poco hacia fuera y flexiona la rodilla delantera sobre el tobillo.",
+      "Orienta la cadera hacia delante hasta donde sea cómodo y estira los brazos hacia arriba con los hombros relajados.",
+      "Una postura más corta o las manos en la cadera lo hacen más fácil mientras aprendes."
+     ],
+     "q": "¿Qué sientes más fuerte hoy: las piernas o los brazos?",
+     "c": "Mantén el guerrero I tres respiraciones por lado, descansa en la montaña y observa tus piernas."
+    },
+    "fr": {
+     "t": "Le guerrier I",
+     "g": "Apprendre le guerrier I, une fente debout puissante, bras tendus vers le haut.",
+     "p": [
+      "Recule un pied, tourne-le légèrement vers l'extérieur et plie le genou avant au-dessus de la cheville.",
+      "Oriente les hanches vers l'avant autant que c'est confortable et lève les deux bras, épaules relâchées.",
+      "Un écart plus court ou les mains sur les hanches facilitent la posture pendant l'apprentissage."
+     ],
+     "q": "Qu'est-ce qui te semble le plus fort aujourd'hui : tes jambes ou tes bras ?",
+     "c": "Tiens le guerrier I trois respirations de chaque côté, puis repose-toi en montagne et sens tes jambes."
+    },
+    "it": {
+     "t": "Guerriero I",
+     "g": "Imparare il guerriero I, un affondo in piedi deciso con le braccia verso l'alto.",
+     "p": [
+      "Porta un piede indietro, ruotalo leggermente verso l'esterno e piega il ginocchio davanti sopra la caviglia.",
+      "Orienta il bacino in avanti quanto è comodo e allunga le braccia in alto, spalle rilassate.",
+      "Una posizione più corta o le mani sui fianchi la rendono più facile mentre la impari."
+     ],
+     "q": "Cosa senti più forte oggi: le gambe o le braccia?",
+     "c": "Tieni il guerriero I per tre respiri per lato, poi riposa nella montagna e ascolta le gambe."
+    },
+    "pt": {
+     "t": "Guerreiro I",
+     "g": "Aprender o guerreiro I, um afundo de pé forte com os braços para cima.",
+     "p": [
+      "Leva um pé atrás, roda-o ligeiramente para fora e dobra o joelho da frente por cima do tornozelo.",
+      "Orienta as ancas para a frente até onde for confortável e estica os braços para cima, ombros relaxados.",
+      "Uma base mais curta ou as mãos nas ancas tornam a postura mais fácil enquanto aprendes."
+     ],
+     "q": "O que sentes mais forte hoje: as pernas ou os braços?",
+     "c": "Fica no guerreiro I três respirações de cada lado, depois descansa na montanha e sente as pernas."
+    },
+    "pt_BR": {
+     "t": "Guerreiro I",
+     "g": "Aprender o guerreiro I, um avanço em pé forte com os braços para cima.",
+     "p": [
+      "Leve um pé para trás, gire-o um pouco para fora e dobre o joelho da frente sobre o tornozelo.",
+      "Direcione o quadril para a frente até onde for confortável e estique os braços para cima, ombros relaxados.",
+      "Uma base mais curta ou as mãos no quadril deixam a postura mais fácil enquanto você aprende."
+     ],
+     "q": "O que você sente mais forte hoje: as pernas ou os braços?",
+     "c": "Fique no guerreiro I por três respirações de cada lado, depois descanse na montanha e sinta as pernas."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warrior II",
+     "g": "Learn Warrior II, with open hips and arms stretched wide.",
+     "p": [
+      "Stand with feet wide, front foot pointing forward and back foot turned in, parallel to the back edge.",
+      "Bend the front knee over the ankle, open the hips to the side and stretch the arms out at shoulder height.",
+      "Look gently over the front hand and keep the shoulders soft and down."
+     ],
+     "q": "How did Warrior I feel yesterday, and what do you expect will change with open hips?",
+     "c": "Hold Warrior II for five breaths on each side and compare it with Warrior I."
+    },
+    "de": {
+     "t": "Krieger II",
+     "g": "Lerne Krieger II, mit geöffneten Hüften und weit ausgestreckten Armen.",
+     "p": [
+      "Stell dich breitbeinig hin, vorderer Fuß zeigt nach vorn, hinterer Fuß parallel zur hinteren Mattenkante.",
+      "Beug das vordere Knie über den Knöchel, öffne die Hüften zur Seite und streck die Arme auf Schulterhöhe aus.",
+      "Schau sanft über die vordere Hand und halte die Schultern weich und tief."
+     ],
+     "q": "Wie fühlte sich Krieger I gestern an, und was wird sich mit geöffneten Hüften wohl ändern?",
+     "c": "Halte Krieger II fünf Atemzüge pro Seite und vergleiche ihn mit Krieger I."
+    },
+    "es": {
+     "t": "Guerrero II",
+     "g": "Aprende el guerrero II, con la cadera abierta y los brazos bien extendidos.",
+     "p": [
+      "Separa bien los pies, el delantero apunta al frente y el trasero gira hacia dentro, paralelo al borde de atrás.",
+      "Flexiona la rodilla delantera sobre el tobillo, abre la cadera hacia el lado y estira los brazos a la altura de los hombros.",
+      "Mira suavemente por encima de la mano delantera y mantén los hombros relajados y bajos."
+     ],
+     "q": "¿Cómo te sentiste ayer en el guerrero I y qué crees que cambiará con la cadera abierta?",
+     "c": "Mantén el guerrero II cinco respiraciones por lado y compáralo con el guerrero I."
+    },
+    "fr": {
+     "t": "Le guerrier II",
+     "g": "Apprendre le guerrier II, hanches ouvertes et bras largement tendus.",
+     "p": [
+      "Pieds écartés, pied avant vers l'avant, pied arrière tourné vers l'intérieur, parallèle au bord arrière du tapis.",
+      "Plie le genou avant au-dessus de la cheville, ouvre les hanches sur le côté et tends les bras à hauteur d'épaules.",
+      "Regarde doucement au-dessus de la main avant et garde les épaules basses et détendues."
+     ],
+     "q": "Comment s'est passé le guerrier I hier, et qu'est-ce qui changera selon toi avec les hanches ouvertes ?",
+     "c": "Tiens le guerrier II cinq respirations de chaque côté et compare-le au guerrier I."
+    },
+    "it": {
+     "t": "Guerriero II",
+     "g": "Imparare il guerriero II, con le anche aperte e le braccia ben distese.",
+     "p": [
+      "Gambe divaricate, piede davanti rivolto in avanti e piede dietro ruotato, parallelo al bordo posteriore.",
+      "Piega il ginocchio davanti sopra la caviglia, apri il bacino di lato e distendi le braccia all'altezza delle spalle.",
+      "Guarda dolcemente oltre la mano davanti e tieni le spalle morbide e basse."
+     ],
+     "q": "Com'è andato ieri il guerriero I, e cosa pensi cambierà con le anche aperte?",
+     "c": "Tieni il guerriero II per cinque respiri per lato e confrontalo con il guerriero I."
+    },
+    "pt": {
+     "t": "Guerreiro II",
+     "g": "Aprender o guerreiro II, com as ancas abertas e os braços bem esticados.",
+     "p": [
+      "Afasta bem os pés, o da frente aponta para a frente e o de trás roda para dentro, paralelo à borda de trás.",
+      "Dobra o joelho da frente por cima do tornozelo, abre as ancas para o lado e estica os braços à altura dos ombros.",
+      "Olha suavemente por cima da mão da frente e mantém os ombros soltos e baixos."
+     ],
+     "q": "Como correu ontem o guerreiro I e o que achas que muda com as ancas abertas?",
+     "c": "Fica no guerreiro II cinco respirações de cada lado e compara-o com o guerreiro I."
+    },
+    "pt_BR": {
+     "t": "Guerreiro II",
+     "g": "Aprender o guerreiro II, com o quadril aberto e os braços bem esticados.",
+     "p": [
+      "Afaste bem os pés, o da frente aponta para a frente e o de trás gira para dentro, paralelo à borda de trás.",
+      "Dobre o joelho da frente sobre o tornozelo, abra o quadril para o lado e estique os braços na altura dos ombros.",
+      "Olhe suavemente por cima da mão da frente e mantenha os ombros soltos e baixos."
+     ],
+     "q": "Como foi o guerreiro I ontem e o que você acha que muda com o quadril aberto?",
+     "c": "Fique no guerreiro II por cinco respirações de cada lado e compare com o guerreiro I."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Triangle pose",
+     "g": "Learn triangle pose, with long legs, a long side body and one arm reaching up.",
+     "p": [
+      "From a Warrior II stance with straight legs, reach forward over the front leg, then tilt the torso down.",
+      "Rest the lower hand on the shin, a block or a chair, and reach the top arm toward the ceiling.",
+      "Keep both sides of the waist long rather than reaching the floor: a softer front knee is fine."
+     ],
+     "q": "Where do you feel the stretch most in triangle: legs, hips or side body?",
+     "c": "Practise triangle for three breaths on each side, using a block or a thick book under your lower hand."
+    },
+    "de": {
+     "t": "Dreieck",
+     "g": "Lerne das Dreieck, mit langen Beinen, langer Körperseite und einem Arm nach oben.",
+     "p": [
+      "Streck aus dem Stand von Krieger II die Beine, schieb dich über das vordere Bein nach vorn und kipp den Oberkörper.",
+      "Leg die untere Hand auf Schienbein, Block oder Stuhl und streck den oberen Arm zur Decke.",
+      "Halte beide Taillenseiten lang, statt den Boden erreichen zu wollen: Ein weiches vorderes Knie ist okay."
+     ],
+     "q": "Wo spürst du die Dehnung im Dreieck am meisten: Beine, Hüften oder Körperseite?",
+     "c": "Übe das Dreieck drei Atemzüge pro Seite, mit einem Block oder dicken Buch unter der unteren Hand."
+    },
+    "es": {
+     "t": "Postura del triángulo",
+     "g": "Aprende el triángulo, con las piernas largas, el costado estirado y un brazo hacia arriba.",
+     "p": [
+      "Desde la base del guerrero II con las piernas rectas, estírate hacia delante sobre la pierna delantera e inclina el torso.",
+      "Apoya la mano de abajo en la espinilla, un bloque o una silla, y estira el brazo de arriba hacia el techo.",
+      "Mantén largos ambos lados de la cintura en vez de buscar el suelo: una rodilla delantera suave está bien."
+     ],
+     "q": "¿Dónde notas más el estiramiento en el triángulo: piernas, caderas o costado?",
+     "c": "Practica el triángulo tres respiraciones por lado, con un bloque o un libro grueso bajo la mano de abajo."
+    },
+    "fr": {
+     "t": "La posture du triangle",
+     "g": "Apprendre le triangle : jambes longues, flanc étiré et un bras tendu vers le ciel.",
+     "p": [
+      "Depuis l'écart du guerrier II, jambes tendues, allonge-toi vers l'avant au-dessus de la jambe avant, puis bascule le buste.",
+      "Pose la main du bas sur le tibia, une brique ou une chaise, et tends le bras du haut vers le plafond.",
+      "Garde les deux côtés de la taille longs plutôt que de chercher le sol : un genou avant souple, c'est très bien."
+     ],
+     "q": "Où sens-tu le plus l'étirement dans le triangle : jambes, hanches ou flanc ?",
+     "c": "Pratique le triangle trois respirations de chaque côté, avec une brique ou un gros livre sous la main du bas."
+    },
+    "it": {
+     "t": "Posizione del triangolo",
+     "g": "Imparare il triangolo, con gambe lunghe, fianco allungato e un braccio verso l'alto.",
+     "p": [
+      "Dalla base del guerriero II a gambe tese, allungati in avanti sopra la gamba davanti e poi inclina il busto.",
+      "Appoggia la mano in basso sulla tibia, su un mattoncino o una sedia, e allunga il braccio in alto verso il soffitto.",
+      "Tieni lunghi entrambi i lati della vita invece di cercare il pavimento: un ginocchio davanti morbido va bene."
+     ],
+     "q": "Dove senti di più l'allungamento nel triangolo: gambe, anche o fianco?",
+     "c": "Pratica il triangolo per tre respiri per lato, con un mattoncino o un libro spesso sotto la mano."
+    },
+    "pt": {
+     "t": "Postura do triângulo",
+     "g": "Aprender o triângulo, com pernas longas, o lado do corpo alongado e um braço para cima.",
+     "p": [
+      "A partir da base do guerreiro II com as pernas esticadas, alonga-te para a frente sobre a perna da frente e inclina o tronco.",
+      "Apoia a mão de baixo na canela, num bloco ou numa cadeira, e estica o braço de cima em direção ao teto.",
+      "Mantém os dois lados da cintura longos em vez de procurar o chão: um joelho da frente solto está bem."
+     ],
+     "q": "Onde sentes mais o alongamento no triângulo: pernas, ancas ou lado do corpo?",
+     "c": "Pratica o triângulo três respirações de cada lado, com um bloco ou um livro grosso debaixo da mão."
+    },
+    "pt_BR": {
+     "t": "Postura do triângulo",
+     "g": "Aprender o triângulo, com pernas longas, a lateral do corpo alongada e um braço para cima.",
+     "p": [
+      "Da base do guerreiro II com as pernas esticadas, alongue-se para a frente sobre a perna da frente e incline o tronco.",
+      "Apoie a mão de baixo na canela, num bloco ou numa cadeira, e estique o braço de cima em direção ao teto.",
+      "Mantenha os dois lados da cintura longos em vez de buscar o chão: um joelho da frente solto está ótimo."
+     ],
+     "q": "Onde você sente mais o alongamento no triângulo: pernas, quadril ou lateral do corpo?",
+     "c": "Pratique o triângulo por três respirações de cada lado, com um bloco ou livro grosso embaixo da mão."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Extended side angle",
+     "g": "Learn extended side angle, a deep lunge with a long line from foot to fingertips.",
+     "p": [
+      "From Warrior II, rest your front forearm on your thigh or your hand on a block beside the front foot.",
+      "Reach the top arm overhead alongside the ear, making one long line from the back foot to the fingers.",
+      "Keep the front knee over the ankle and the chest gently turning toward the side."
+     ],
+     "q": "Do you prefer poses that feel strong, like warriors, or ones that feel more like a stretch?",
+     "c": "Hold extended side angle with your forearm on your thigh for three breaths on each side."
+    },
+    "de": {
+     "t": "Gestreckter seitlicher Winkel",
+     "g": "Lerne den gestreckten seitlichen Winkel, einen tiefen Ausfallschritt mit langer Linie vom Fuß bis zu den Fingern.",
+     "p": [
+      "Leg aus Krieger II den vorderen Unterarm auf den Oberschenkel oder die Hand auf einen Block neben dem Fuß.",
+      "Streck den oberen Arm neben dem Ohr über den Kopf: eine lange Linie vom hinteren Fuß bis zu den Fingern.",
+      "Halte das vordere Knie über dem Knöchel und dreh die Brust sanft zur Seite."
+     ],
+     "q": "Magst du lieber kraftvolle Haltungen wie die Krieger oder solche, die sich eher wie Dehnung anfühlen?",
+     "c": "Halte den gestreckten seitlichen Winkel mit dem Unterarm auf dem Oberschenkel drei Atemzüge pro Seite."
+    },
+    "es": {
+     "t": "Ángulo lateral extendido",
+     "g": "Aprende el ángulo lateral extendido, una zancada profunda con una línea larga del pie a los dedos.",
+     "p": [
+      "Desde el guerrero II, apoya el antebrazo delantero en el muslo o la mano en un bloque junto al pie delantero.",
+      "Lleva el brazo de arriba por encima de la cabeza junto a la oreja, en una línea larga desde el pie de atrás.",
+      "Mantén la rodilla delantera sobre el tobillo y gira el pecho suavemente hacia el lado."
+     ],
+     "q": "¿Prefieres posturas que se sienten fuertes, como los guerreros, o las que son más de estiramiento?",
+     "c": "Mantén el ángulo lateral extendido con el antebrazo en el muslo tres respiraciones por lado."
+    },
+    "fr": {
+     "t": "L'angle latéral étiré",
+     "g": "Apprendre l'angle latéral étiré, une fente profonde avec une longue ligne du pied aux doigts.",
+     "p": [
+      "Depuis le guerrier II, pose l'avant-bras avant sur la cuisse ou la main sur une brique près du pied avant.",
+      "Tends le bras du haut au-dessus de la tête, le long de l'oreille : une ligne continue du pied arrière aux doigts.",
+      "Garde le genou avant au-dessus de la cheville et ouvre doucement la poitrine sur le côté."
+     ],
+     "q": "Préfères-tu les postures de force comme les guerriers, ou celles qui ressemblent plus à un étirement ?",
+     "c": "Tiens l'angle latéral étiré, avant-bras sur la cuisse, trois respirations de chaque côté."
+    },
+    "it": {
+     "t": "Angolo laterale esteso",
+     "g": "Imparare l'angolo laterale esteso, un affondo profondo con una lunga linea dal piede alle dita.",
+     "p": [
+      "Dal guerriero II appoggia l'avambraccio davanti sulla coscia o la mano su un mattoncino vicino al piede.",
+      "Porta il braccio in alto sopra la testa accanto all'orecchio: una linea lunga dal piede dietro alle dita.",
+      "Tieni il ginocchio davanti sopra la caviglia e ruota dolcemente il petto di lato."
+     ],
+     "q": "Preferisci le posizioni di forza come i guerrieri o quelle che sembrano più un allungamento?",
+     "c": "Tieni l'angolo laterale esteso con l'avambraccio sulla coscia per tre respiri per lato."
+    },
+    "pt": {
+     "t": "Ângulo lateral estendido",
+     "g": "Aprender o ângulo lateral estendido, um afundo profundo com uma linha longa do pé aos dedos.",
+     "p": [
+      "A partir do guerreiro II, apoia o antebraço da frente na coxa ou a mão num bloco ao lado do pé da frente.",
+      "Leva o braço de cima por cima da cabeça, junto à orelha, numa linha longa desde o pé de trás.",
+      "Mantém o joelho da frente por cima do tornozelo e roda o peito suavemente para o lado."
+     ],
+     "q": "Preferes posturas que dão sensação de força, como os guerreiros, ou as que parecem mais um alongamento?",
+     "c": "Fica no ângulo lateral estendido com o antebraço na coxa três respirações de cada lado."
+    },
+    "pt_BR": {
+     "t": "Ângulo lateral estendido",
+     "g": "Aprender o ângulo lateral estendido, um avanço profundo com uma linha longa do pé até os dedos.",
+     "p": [
+      "Do guerreiro II, apoie o antebraço da frente na coxa ou a mão num bloco ao lado do pé da frente.",
+      "Leve o braço de cima por cima da cabeça, junto à orelha, numa linha longa desde o pé de trás.",
+      "Mantenha o joelho da frente sobre o tornozelo e gire o peito suavemente para o lado."
+     ],
+     "q": "Você prefere posturas de força, como os guerreiros, ou as que parecem mais um alongamento?",
+     "c": "Fique no ângulo lateral estendido com o antebraço na coxa por três respirações de cada lado."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tree pose",
+     "g": "Practise balancing on one leg in tree pose.",
+     "p": [
+      "Shift your weight to one foot and place the other foot on the ankle, calf or inner thigh, never on the knee.",
+      "Press foot and leg gently into each other and bring the hands to the chest or up overhead.",
+      "Fix your gaze on a still point in front of you; standing near a wall for support is a great option."
+     ],
+     "q": "Do you find balancing easy, or does your body like to wobble?",
+     "c": "Try tree pose near a wall for five breaths on each side, even while waiting for the kettle."
+    },
+    "de": {
+     "t": "Baum",
+     "g": "Übe im Baum das Gleichgewicht auf einem Bein.",
+     "p": [
+      "Verlagere das Gewicht auf einen Fuß und setz den anderen an Knöchel, Wade oder Innenschenkel, nie aufs Knie.",
+      "Drück Fuß und Bein sanft gegeneinander und bring die Hände vor die Brust oder über den Kopf.",
+      "Richte den Blick auf einen ruhigen Punkt vor dir; nah an einer Wand zu stehen ist eine tolle Stütze."
+     ],
+     "q": "Fällt dir Gleichgewicht leicht, oder wackelt dein Körper gern?",
+     "c": "Probier den Baum fünf Atemzüge pro Seite nah an einer Wand, gern auch, während das Wasser kocht."
+    },
+    "es": {
+     "t": "La postura del árbol",
+     "g": "Practica el equilibrio sobre una pierna en la postura del árbol.",
+     "p": [
+      "Pasa el peso a un pie y apoya el otro en el tobillo, la pantorrilla o la cara interna del muslo, nunca en la rodilla.",
+      "Presiona suavemente pie y pierna entre sí y lleva las manos al pecho o por encima de la cabeza.",
+      "Fija la mirada en un punto quieto delante de ti; ponerte cerca de una pared para apoyarte es una gran opción."
+     ],
+     "q": "¿Te resulta fácil mantener el equilibrio o tu cuerpo tiende a tambalearse?",
+     "c": "Prueba el árbol junto a una pared cinco respiraciones por lado, incluso mientras esperas a que hierva el agua."
+    },
+    "fr": {
+     "t": "La posture de l'arbre",
+     "g": "Travailler l'équilibre sur une jambe dans la posture de l'arbre.",
+     "p": [
+      "Transfère le poids sur un pied et pose l'autre sur la cheville, le mollet ou l'intérieur de la cuisse, jamais sur le genou.",
+      "Presse doucement pied et jambe l'un contre l'autre et amène les mains devant la poitrine ou au-dessus de la tête.",
+      "Fixe un point immobile devant toi ; te placer près d'un mur pour t'appuyer est une très bonne option."
+     ],
+     "q": "L'équilibre est-il facile pour toi, ou ton corps aime-t-il vaciller ?",
+     "c": "Essaie l'arbre près d'un mur cinq respirations de chaque côté, même en attendant que l'eau chauffe."
+    },
+    "it": {
+     "t": "La posizione dell'albero",
+     "g": "Esercitare l'equilibrio su una gamba nella posizione dell'albero.",
+     "p": [
+      "Sposta il peso su un piede e appoggia l'altro sulla caviglia, sul polpaccio o sull'interno coscia, mai sul ginocchio.",
+      "Premi dolcemente piede e gamba l'uno contro l'altra e porta le mani al petto o sopra la testa.",
+      "Fissa un punto fermo davanti a te; stare vicino a un muro per appoggiarti è un'ottima opzione."
+     ],
+     "q": "Per te l'equilibrio è facile, o il tuo corpo tende a oscillare?",
+     "c": "Prova l'albero vicino a un muro per cinque respiri per lato, anche mentre aspetti che bolla l'acqua."
+    },
+    "pt": {
+     "t": "A postura da árvore",
+     "g": "Praticar o equilíbrio numa perna na postura da árvore.",
+     "p": [
+      "Passa o peso para um pé e apoia o outro no tornozelo, na barriga da perna ou na parte interna da coxa, nunca no joelho.",
+      "Pressiona suavemente pé e perna um contra o outro e leva as mãos ao peito ou por cima da cabeça.",
+      "Fixa o olhar num ponto parado à tua frente; ficar perto de uma parede para apoio é ótima opção."
+     ],
+     "q": "O equilíbrio é fácil para ti, ou o teu corpo gosta de abanar?",
+     "c": "Experimenta a árvore junto a uma parede cinco respirações de cada lado, até enquanto a água aquece."
+    },
+    "pt_BR": {
+     "t": "Postura da árvore",
+     "g": "Praticar o equilíbrio numa perna só na postura da árvore.",
+     "p": [
+      "Passe o peso para um pé e apoie o outro no tornozelo, na panturrilha ou na parte interna da coxa, nunca no joelho.",
+      "Pressione suavemente pé e perna um contra o outro e leve as mãos ao peito ou acima da cabeça.",
+      "Fixe o olhar num ponto parado à sua frente; ficar perto de uma parede para apoio é uma ótima opção."
+     ],
+     "q": "Equilíbrio é fácil para você, ou seu corpo gosta de balançar?",
+     "c": "Experimente a árvore perto de uma parede por cinco respirações de cada lado, até enquanto a água esquenta."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chair pose",
+     "g": "Build heat and leg strength by sitting back into an imaginary chair.",
+     "p": [
+      "From mountain pose, bend the knees and send the hips back as if sitting on a chair behind you.",
+      "Keep the weight in the heels, so you could wiggle your toes, and reach the arms forward or up.",
+      "Start with a small bend and only a few breaths: strength builds over time."
+     ],
+     "q": "What everyday activities use your leg strength the most, like stairs, cycling or carrying things?",
+     "c": "Hold chair pose for three breaths, rest, and repeat three times, sinking only as low as feels good."
+    },
+    "de": {
+     "t": "Stuhlhaltung",
+     "g": "Bau Wärme und Beinkraft auf, indem du dich auf einen unsichtbaren Stuhl setzt.",
+     "p": [
+      "Beug aus der Berghaltung die Knie und schieb das Becken nach hinten, als würdest du dich auf einen Stuhl setzen.",
+      "Lass das Gewicht in den Fersen, sodass du die Zehen bewegen könntest, und streck die Arme nach vorn oder oben.",
+      "Beginne mit wenig Beugung und nur ein paar Atemzügen: Kraft wächst mit der Zeit."
+     ],
+     "q": "Welche Alltagsaktivitäten fordern deine Beinkraft am meisten, etwa Treppen, Radfahren oder Tragen?",
+     "c": "Halte die Stuhlhaltung drei Atemzüge, ruh dich aus und wiederhole das dreimal, nur so tief wie angenehm."
+    },
+    "es": {
+     "t": "La postura de la silla",
+     "g": "Genera calor y fuerza en las piernas sentándote en una silla imaginaria.",
+     "p": [
+      "Desde la montaña, flexiona las rodillas y lleva la cadera atrás como si te sentaras en una silla detrás de ti.",
+      "Mantén el peso en los talones, de modo que puedas mover los dedos, y lleva los brazos al frente o arriba.",
+      "Empieza con poca flexión y pocas respiraciones: la fuerza se construye con el tiempo."
+     ],
+     "q": "¿Qué actividades diarias usan más la fuerza de tus piernas, como subir escaleras, ir en bici o cargar cosas?",
+     "c": "Mantén la silla tres respiraciones, descansa y repite tres veces, bajando solo hasta donde te sientas bien."
+    },
+    "fr": {
+     "t": "La posture de la chaise",
+     "g": "Créer de la chaleur et de la force dans les jambes en s'asseyant sur une chaise imaginaire.",
+     "p": [
+      "Depuis la montagne, plie les genoux et recule les hanches comme pour t'asseoir sur une chaise derrière toi.",
+      "Garde le poids dans les talons, au point de pouvoir bouger les orteils, et tends les bras devant ou en haut.",
+      "Commence avec une petite flexion et peu de respirations : la force se construit avec le temps."
+     ],
+     "q": "Quelles activités du quotidien sollicitent le plus tes jambes : escaliers, vélo, porter des choses ?",
+     "c": "Tiens la chaise trois respirations, repose-toi et recommence trois fois, en descendant seulement selon ton confort."
+    },
+    "it": {
+     "t": "La posizione della sedia",
+     "g": "Creare calore e forza nelle gambe sedendosi su una sedia immaginaria.",
+     "p": [
+      "Dalla montagna piega le ginocchia e porta il bacino indietro come per sederti su una sedia alle tue spalle.",
+      "Tieni il peso sui talloni, tanto da poter muovere le dita dei piedi, e allunga le braccia avanti o in alto.",
+      "Inizia con un piccolo piegamento e pochi respiri: la forza cresce con il tempo."
+     ],
+     "q": "Quali attività quotidiane usano di più la forza delle gambe, come scale, bici o portare pesi?",
+     "c": "Tieni la sedia per tre respiri, riposa e ripeti tre volte, scendendo solo quanto ti fa stare bene."
+    },
+    "pt": {
+     "t": "A postura da cadeira",
+     "g": "Criar calor e força nas pernas sentando-te numa cadeira imaginária.",
+     "p": [
+      "A partir da montanha, dobra os joelhos e leva as ancas para trás como se te sentasses numa cadeira atrás de ti.",
+      "Mantém o peso nos calcanhares, de modo a conseguires mexer os dedos dos pés, e leva os braços à frente ou para cima.",
+      "Começa com pouca flexão e poucas respirações: a força constrói-se com o tempo."
+     ],
+     "q": "Que atividades do dia a dia usam mais a força das tuas pernas, como escadas, bicicleta ou carregar coisas?",
+     "c": "Fica na cadeira três respirações, descansa e repete três vezes, descendo só até onde te sentires bem."
+    },
+    "pt_BR": {
+     "t": "Postura da cadeira",
+     "g": "Gerar calor e força nas pernas sentando numa cadeira imaginária.",
+     "p": [
+      "Da montanha, dobre os joelhos e leve o quadril para trás como se fosse sentar numa cadeira atrás de você.",
+      "Mantenha o peso nos calcanhares, a ponto de conseguir mexer os dedos dos pés, e leve os braços à frente ou para cima.",
+      "Comece com pouca flexão e poucas respirações: a força vem com o tempo."
+     ],
+     "q": "Quais atividades do dia a dia usam mais a força das suas pernas, como escadas, bicicleta ou carregar coisas?",
+     "c": "Fique na cadeira por três respirações, descanse e repita três vezes, descendo só até onde for confortável."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goddess pose",
+     "g": "Learn goddess pose, a wide-legged squat with turned-out feet.",
+     "p": [
+      "Step the feet wide, turn the toes out and bend the knees so they point in the same direction as the toes.",
+      "Lower the hips only as far as is comfortable and keep the spine tall over the pelvis.",
+      "Arms can rest on the thighs, stretch wide or bend upward like a cactus shape."
+     ],
+     "q": "Which pose from this week has felt the most powerful for you so far?",
+     "c": "Hold goddess pose for five breaths, rest, and repeat once, checking that knees follow the toes."
+    },
+    "de": {
+     "t": "Göttinnenhaltung",
+     "g": "Lerne die Göttinnenhaltung, eine breitbeinige Hocke mit ausgedrehten Füßen.",
+     "p": [
+      "Stell die Füße weit auseinander, dreh die Zehen nach außen und beug die Knie in dieselbe Richtung wie die Zehen.",
+      "Senk das Becken nur so weit wie angenehm und halte die Wirbelsäule aufrecht über dem Becken.",
+      "Die Arme ruhen auf den Oberschenkeln, gehen weit zur Seite oder sind angewinkelt wie ein Kaktus."
+     ],
+     "q": "Welche Haltung dieser Woche hat sich für dich bisher am kraftvollsten angefühlt?",
+     "c": "Halte die Göttinnenhaltung fünf Atemzüge, ruh dich aus und wiederhole sie; die Knie folgen den Zehen."
+    },
+    "es": {
+     "t": "La postura de la diosa",
+     "g": "Aprende la postura de la diosa, una sentadilla amplia con los pies girados hacia fuera.",
+     "p": [
+      "Separa mucho los pies, gira las puntas hacia fuera y flexiona las rodillas en la misma dirección que los dedos.",
+      "Baja la cadera solo hasta donde sea cómodo y mantén la espalda erguida sobre la pelvis.",
+      "Los brazos pueden apoyarse en los muslos, abrirse o doblarse hacia arriba en forma de cactus."
+     ],
+     "q": "¿Qué postura de esta semana te ha hecho sentir con más fuerza hasta ahora?",
+     "c": "Mantén la diosa cinco respiraciones, descansa y repite una vez, comprobando que las rodillas siguen a los pies."
+    },
+    "fr": {
+     "t": "La posture de la déesse",
+     "g": "Apprendre la déesse, un squat jambes écartées, pieds ouverts.",
+     "p": [
+      "Écarte largement les pieds, tourne les orteils vers l'extérieur et plie les genoux dans la même direction.",
+      "Descends les hanches seulement selon ton confort et garde le dos droit au-dessus du bassin.",
+      "Les bras reposent sur les cuisses, s'ouvrent sur les côtés ou se plient vers le haut en cactus."
+     ],
+     "q": "Quelle posture de cette semaine t'a semblé la plus puissante jusqu'ici ?",
+     "c": "Tiens la déesse cinq respirations, repose-toi et recommence une fois, en vérifiant que les genoux suivent les orteils."
+    },
+    "it": {
+     "t": "La posizione della dea",
+     "g": "Imparare la posizione della dea, uno squat a gambe larghe con i piedi ruotati in fuori.",
+     "p": [
+      "Allarga molto i piedi, ruota le punte in fuori e piega le ginocchia nella stessa direzione delle dita.",
+      "Abbassa il bacino solo quanto è comodo e tieni la schiena dritta sopra il bacino.",
+      "Le braccia possono appoggiarsi sulle cosce, aprirsi di lato o piegarsi in alto a forma di cactus."
+     ],
+     "q": "Quale posizione di questa settimana ti ha fatto sentire più forte finora?",
+     "c": "Tieni la dea per cinque respiri, riposa e ripeti una volta, controllando che le ginocchia seguano le dita."
+    },
+    "pt": {
+     "t": "A postura da deusa",
+     "g": "Aprender a postura da deusa, um agachamento largo com os pés virados para fora.",
+     "p": [
+      "Afasta bem os pés, vira as pontas para fora e dobra os joelhos na mesma direção dos dedos.",
+      "Desce as ancas só até onde for confortável e mantém a coluna direita por cima da bacia.",
+      "Os braços podem apoiar-se nas coxas, abrir para os lados ou dobrar para cima em forma de cato."
+     ],
+     "q": "Que postura desta semana te fez sentir com mais força até agora?",
+     "c": "Fica na deusa cinco respirações, descansa e repete uma vez, confirmando que os joelhos seguem os dedos."
+    },
+    "pt_BR": {
+     "t": "Postura da deusa",
+     "g": "Aprender a postura da deusa, um agachamento amplo com os pés virados para fora.",
+     "p": [
+      "Afaste bem os pés, vire as pontas para fora e dobre os joelhos na mesma direção dos dedos.",
+      "Desça o quadril só até onde for confortável e mantenha a coluna ereta sobre a pelve.",
+      "Os braços podem apoiar nas coxas, abrir para os lados ou dobrar para cima em forma de cacto."
+     ],
+     "q": "Qual postura desta semana fez você se sentir mais forte até agora?",
+     "c": "Fique na deusa por cinco respirações, descanse e repita uma vez, conferindo se os joelhos seguem os dedos."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wide-legged forward fold",
+     "g": "Stretch the legs by folding forward with the feet wide apart.",
+     "p": [
+      "Step the feet wide, toes pointing forward, and place your hands on your hips.",
+      "Lengthen the spine, then fold from the hips, bringing the hands to the floor, blocks or a chair.",
+      "Bend the knees a little if the back of the legs feels tight, and come up slowly with a flat back."
+     ],
+     "q": "Do you notice a difference between folding with feet together and with feet wide?",
+     "c": "Hold a wide-legged fold for five breaths with hands on blocks or books, then rise up slowly."
+    },
+    "de": {
+     "t": "Breitbeinige Vorbeuge",
+     "g": "Dehne die Beine, indem du dich mit weit gegrätschten Füßen nach vorn beugst.",
+     "p": [
+      "Stell die Füße weit auseinander, Zehen zeigen nach vorn, und leg die Hände an die Hüften.",
+      "Mach die Wirbelsäule lang und beug dich aus der Hüfte, Hände zum Boden, auf Blöcke oder einen Stuhl.",
+      "Beug die Knie leicht, wenn die Beinrückseiten ziehen, und komm langsam mit flachem Rücken hoch."
+     ],
+     "q": "Merkst du einen Unterschied zwischen der Vorbeuge mit geschlossenen und mit weiten Füßen?",
+     "c": "Halte die breitbeinige Vorbeuge fünf Atemzüge mit den Händen auf Blöcken oder Büchern und richte dich langsam auf."
+    },
+    "es": {
+     "t": "Flexión con piernas abiertas",
+     "g": "Estira las piernas inclinándote hacia delante con los pies bien separados.",
+     "p": [
+      "Separa mucho los pies, con las puntas hacia delante, y lleva las manos a la cadera.",
+      "Alarga la columna y luego inclínate desde la cadera, llevando las manos al suelo, a bloques o a una silla.",
+      "Flexiona un poco las rodillas si notas tensión detrás de las piernas, y sube despacio con la espalda plana."
+     ],
+     "q": "¿Notas diferencia entre inclinarte con los pies juntos y con los pies separados?",
+     "c": "Mantén la flexión con piernas abiertas cinco respiraciones, manos en bloques o libros, y sube despacio."
+    },
+    "fr": {
+     "t": "La flexion avant jambes écartées",
+     "g": "Étirer les jambes en se penchant en avant, pieds largement écartés.",
+     "p": [
+      "Écarte largement les pieds, orteils vers l'avant, et pose les mains sur les hanches.",
+      "Allonge la colonne, puis penche-toi depuis les hanches, mains au sol, sur des briques ou une chaise.",
+      "Plie un peu les genoux si l'arrière des jambes tire, et remonte lentement, dos plat."
+     ],
+     "q": "Sens-tu une différence entre la flexion pieds joints et pieds écartés ?",
+     "c": "Tiens la flexion jambes écartées cinq respirations, mains sur des briques ou des livres, puis remonte lentement."
+    },
+    "it": {
+     "t": "Piegamento a gambe divaricate",
+     "g": "Allungare le gambe piegandosi in avanti con i piedi ben divaricati.",
+     "p": [
+      "Allarga molto i piedi, punte in avanti, e porta le mani sui fianchi.",
+      "Allunga la colonna, poi piegati dalle anche portando le mani a terra, su mattoncini o su una sedia.",
+      "Piega un po' le ginocchia se senti tirare dietro le gambe e risali lentamente a schiena piatta."
+     ],
+     "q": "Noti differenza tra piegarti a piedi uniti e a piedi divaricati?",
+     "c": "Tieni il piegamento a gambe divaricate cinque respiri, mani su mattoncini o libri, poi risali piano."
+    },
+    "pt": {
+     "t": "Flexão com pernas afastadas",
+     "g": "Alongar as pernas inclinando-te para a frente com os pés bem afastados.",
+     "p": [
+      "Afasta bem os pés, com as pontas para a frente, e leva as mãos às ancas.",
+      "Alonga a coluna e depois inclina-te a partir das ancas, levando as mãos ao chão, a blocos ou a uma cadeira.",
+      "Dobra um pouco os joelhos se a parte de trás das pernas puxar, e sobe devagar com as costas direitas."
+     ],
+     "q": "Notas diferença entre inclinar-te com os pés juntos e com os pés afastados?",
+     "c": "Fica na flexão com pernas afastadas cinco respirações, mãos em blocos ou livros, e sobe devagar."
+    },
+    "pt_BR": {
+     "t": "Flexão com pernas afastadas",
+     "g": "Alongar as pernas inclinando-se para a frente com os pés bem afastados.",
+     "p": [
+      "Afaste bem os pés, com as pontas para a frente, e leve as mãos ao quadril.",
+      "Alongue a coluna e depois incline-se a partir do quadril, levando as mãos ao chão, a blocos ou a uma cadeira.",
+      "Dobre um pouco os joelhos se a parte de trás das pernas puxar, e suba devagar com as costas retas."
+     ],
+     "q": "Você nota diferença entre se inclinar com os pés juntos e com os pés afastados?",
+     "c": "Fique na flexão com pernas afastadas por cinco respirações, mãos em blocos ou livros, e suba devagar."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pyramid pose",
+     "g": "Learn pyramid pose, a forward fold over a straight front leg with hips square.",
+     "p": [
+      "Step one foot back about a leg's length, both hips facing the front of the mat.",
+      "Lengthen the spine, then fold over the front leg with hands on blocks either side of the front foot.",
+      "Keep a micro-bend in the front knee and stay at a mild stretch rather than reaching deeper."
+     ],
+     "q": "After a week of standing poses, where do your legs feel more open than before?",
+     "c": "Practise pyramid pose with blocks or books under your hands for three breaths on each side."
+    },
+    "de": {
+     "t": "Pyramide",
+     "g": "Lerne die Pyramide, eine Vorbeuge über das gestreckte vordere Bein mit gerade ausgerichteten Hüften.",
+     "p": [
+      "Stell einen Fuß etwa eine Beinlänge nach hinten, beide Hüften zeigen zur Mattenvorderkante.",
+      "Mach die Wirbelsäule lang und beug dich über das vordere Bein, Hände auf Blöcken neben dem vorderen Fuß.",
+      "Lass das vordere Knie minimal gebeugt und bleib bei einer milden Dehnung, statt tiefer zu wollen."
+     ],
+     "q": "Wo fühlen sich deine Beine nach einer Woche Stehhaltungen offener an als vorher?",
+     "c": "Übe die Pyramide mit Blöcken oder Büchern unter den Händen drei Atemzüge pro Seite."
+    },
+    "es": {
+     "t": "La postura de la pirámide",
+     "g": "Aprende la pirámide, una flexión sobre la pierna delantera recta con la cadera mirando al frente.",
+     "p": [
+      "Lleva un pie atrás más o menos la longitud de una pierna, con ambas caderas hacia el frente de la esterilla.",
+      "Alarga la columna e inclínate sobre la pierna delantera con las manos en bloques a cada lado del pie.",
+      "Mantén una ligera flexión en la rodilla delantera y quédate en un estiramiento suave sin buscar más."
+     ],
+     "q": "Tras una semana de posturas de pie, ¿dónde notas las piernas más abiertas que antes?",
+     "c": "Practica la pirámide con bloques o libros bajo las manos tres respiraciones por lado."
+    },
+    "fr": {
+     "t": "La posture de la pyramide",
+     "g": "Apprendre la pyramide, une flexion au-dessus de la jambe avant tendue, hanches face à l'avant.",
+     "p": [
+      "Recule un pied d'environ une longueur de jambe, les deux hanches orientées vers l'avant du tapis.",
+      "Allonge la colonne, puis penche-toi au-dessus de la jambe avant, mains sur des briques de chaque côté du pied.",
+      "Garde une micro-flexion du genou avant et reste dans un étirement léger plutôt que d'aller plus loin."
+     ],
+     "q": "Après une semaine de postures debout, où tes jambes te semblent-elles plus ouvertes qu'avant ?",
+     "c": "Pratique la pyramide avec des briques ou des livres sous les mains, trois respirations de chaque côté."
+    },
+    "it": {
+     "t": "La posizione della piramide",
+     "g": "Imparare la piramide, un piegamento sopra la gamba davanti tesa con il bacino rivolto avanti.",
+     "p": [
+      "Porta un piede indietro di circa una lunghezza di gamba, con entrambe le anche rivolte verso il fronte.",
+      "Allunga la colonna, poi piegati sulla gamba davanti con le mani su mattoncini ai lati del piede.",
+      "Tieni una leggera flessione del ginocchio davanti e resta in un allungamento lieve senza andare oltre."
+     ],
+     "q": "Dopo una settimana di posizioni in piedi, dove senti le gambe più aperte di prima?",
+     "c": "Pratica la piramide con mattoncini o libri sotto le mani per tre respiri per lato."
+    },
+    "pt": {
+     "t": "A postura da pirâmide",
+     "g": "Aprender a pirâmide, uma flexão sobre a perna da frente esticada com as ancas viradas para a frente.",
+     "p": [
+      "Leva um pé atrás mais ou menos o comprimento de uma perna, com as duas ancas viradas para a frente do tapete.",
+      "Alonga a coluna e inclina-te sobre a perna da frente com as mãos em blocos de cada lado do pé.",
+      "Mantém uma ligeira flexão no joelho da frente e fica num alongamento suave, sem ir mais fundo."
+     ],
+     "q": "Depois de uma semana de posturas de pé, onde sentes as pernas mais abertas do que antes?",
+     "c": "Pratica a pirâmide com blocos ou livros debaixo das mãos três respirações de cada lado."
+    },
+    "pt_BR": {
+     "t": "Postura da pirâmide",
+     "g": "Aprender a pirâmide, uma flexão sobre a perna da frente esticada com o quadril voltado para a frente.",
+     "p": [
+      "Leve um pé para trás mais ou menos o comprimento de uma perna, com os dois lados do quadril voltados para a frente.",
+      "Alongue a coluna e incline-se sobre a perna da frente com as mãos em blocos dos dois lados do pé.",
+      "Mantenha uma leve flexão no joelho da frente e fique num alongamento suave, sem ir mais fundo."
+     ],
+     "q": "Depois de uma semana de posturas em pé, onde você sente as pernas mais abertas que antes?",
+     "c": "Pratique a pirâmide com blocos ou livros embaixo das mãos por três respirações de cada lado."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Standing poses review",
+     "g": "Put warriors, triangle and tree together in a short standing sequence.",
+     "p": [
+      "Start in mountain pose, step back into Warrior I, then open into Warrior II on the same side.",
+      "From Warrior II, straighten the front leg into triangle, then step forward and return to mountain.",
+      "Finish with tree pose on each side and a few breaths of stillness in mountain."
+     ],
+     "q": "Which standing pose from these ten days would you like to keep in your regular practice?",
+     "c": "Flow through the full standing sequence on both sides today, slowly and with steady breaths."
+    },
+    "de": {
+     "t": "Rückblick Stehhaltungen",
+     "g": "Verbinde Krieger, Dreieck und Baum zu einer kurzen Abfolge im Stehen.",
+     "p": [
+      "Beginne in der Berghaltung, tritt zurück in Krieger I und öffne dann auf derselben Seite in Krieger II.",
+      "Streck aus Krieger II das vordere Bein ins Dreieck, tritt dann nach vorn und kehr in den Berg zurück.",
+      "Schließ mit dem Baum auf beiden Seiten und ein paar ruhigen Atemzügen in der Berghaltung ab."
+     ],
+     "q": "Welche Stehhaltung aus diesen zehn Tagen möchtest du in deine regelmäßige Praxis aufnehmen?",
+     "c": "Fließ heute langsam und mit ruhigem Atem durch die ganze Abfolge auf beiden Seiten."
+    },
+    "es": {
+     "t": "Repaso de posturas de pie",
+     "g": "Une guerreros, triángulo y árbol en una breve secuencia de pie.",
+     "p": [
+      "Empieza en la montaña, da un paso atrás al guerrero I y abre al guerrero II del mismo lado.",
+      "Desde el guerrero II, estira la pierna delantera al triángulo, da un paso al frente y vuelve a la montaña.",
+      "Termina con el árbol a cada lado y unas respiraciones de quietud en la montaña."
+     ],
+     "q": "¿Qué postura de pie de estos diez días te gustaría mantener en tu práctica habitual?",
+     "c": "Recorre hoy la secuencia completa de pie por ambos lados, despacio y con respiraciones estables."
+    },
+    "fr": {
+     "t": "Bilan des postures debout",
+     "g": "Enchaîner guerriers, triangle et arbre en une courte séquence debout.",
+     "p": [
+      "Commence en montagne, recule dans le guerrier I, puis ouvre vers le guerrier II du même côté.",
+      "Depuis le guerrier II, tends la jambe avant pour le triangle, puis avance et reviens en montagne.",
+      "Termine par l'arbre de chaque côté et quelques respirations immobiles en montagne."
+     ],
+     "q": "Quelle posture debout de ces dix jours aimerais-tu garder dans ta pratique régulière ?",
+     "c": "Enchaîne aujourd'hui toute la séquence debout des deux côtés, lentement et avec un souffle régulier."
+    },
+    "it": {
+     "t": "Ripasso posizioni in piedi",
+     "g": "Unire guerrieri, triangolo e albero in una breve sequenza in piedi.",
+     "p": [
+      "Parti dalla montagna, fai un passo indietro nel guerriero I e poi apri nel guerriero II dallo stesso lato.",
+      "Dal guerriero II distendi la gamba davanti nel triangolo, poi torna avanti alla montagna.",
+      "Concludi con l'albero su ogni lato e qualche respiro immobile nella montagna."
+     ],
+     "q": "Quale posizione in piedi di questi dieci giorni vorresti tenere nella tua pratica abituale?",
+     "c": "Percorri oggi l'intera sequenza in piedi su entrambi i lati, lentamente e con respiro costante."
+    },
+    "pt": {
+     "t": "Revisão das posturas de pé",
+     "g": "Juntar guerreiros, triângulo e árvore numa sequência curta de pé.",
+     "p": [
+      "Começa na montanha, dá um passo atrás para o guerreiro I e abre para o guerreiro II do mesmo lado.",
+      "Do guerreiro II, estica a perna da frente para o triângulo, dá um passo à frente e volta à montanha.",
+      "Termina com a árvore de cada lado e algumas respirações de quietude na montanha."
+     ],
+     "q": "Que postura de pé destes dez dias gostavas de manter na tua prática habitual?",
+     "c": "Faz hoje a sequência completa de pé dos dois lados, devagar e com respirações estáveis."
+    },
+    "pt_BR": {
+     "t": "Revisão das posturas em pé",
+     "g": "Unir guerreiros, triângulo e árvore numa sequência curta em pé.",
+     "p": [
+      "Comece na montanha, dê um passo para trás no guerreiro I e abra para o guerreiro II do mesmo lado.",
+      "Do guerreiro II, estique a perna da frente para o triângulo, dê um passo à frente e volte à montanha.",
+      "Termine com a árvore de cada lado e algumas respirações paradas na montanha."
+     ],
+     "q": "Qual postura em pé destes dez dias você gostaria de manter na sua prática regular?",
+     "c": "Faça hoje a sequência completa em pé dos dois lados, devagar e com respirações estáveis."
+    }
+   }
+  }
+ ]
+}

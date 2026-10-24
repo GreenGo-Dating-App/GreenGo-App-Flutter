@@ -1,0 +1,835 @@
+{
+ "topic": "guitar",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tuning by ear: the fifth-fret method",
+     "g": "Tune strings relative to each other without a tuner.",
+     "p": [
+      "Assume the low E is right. Press it at the 5th fret: that note is A, so tune the open A string to match it.",
+      "Repeat: A string 5th fret gives D, D string 5th fret gives G. Exception: G string at the 4th fret gives B.",
+      "Then B string 5th fret gives the high E. Listen for the wobble between the two notes; it slows and stops when they match."
+     ],
+     "q": "Can you hear the wobbling beat when two notes are almost, but not quite, in tune?",
+     "c": "Detune your A string a little, retune it by ear with the 5th-fret method, then check yourself with a tuner."
+    },
+    "de": {
+     "t": "Stimmen nach Gehör: die Fünfter-Bund-Methode",
+     "g": "Stimm die Saiten ohne Stimmgerät relativ zueinander.",
+     "p": [
+      "Nimm an, die tiefe E-Saite stimmt. Greif sie im 5. Bund: Das ist ein A, also stimm die leere A-Saite darauf.",
+      "Weiter so: A-Saite im 5. Bund ergibt D, D-Saite im 5. Bund ergibt G. Ausnahme: G-Saite im 4. Bund ergibt H.",
+      "Dann ergibt die H-Saite im 5. Bund das hohe E. Hör auf das Schweben zwischen den Tönen; es wird langsamer und endet, wenn sie gleich sind."
+     ],
+     "q": "Hörst du das Schweben, wenn zwei Töne fast, aber noch nicht ganz gleich gestimmt sind?",
+     "c": "Verstimm deine A-Saite etwas, stimm sie mit der Fünfter-Bund-Methode nach Gehör und prüf dich dann mit dem Stimmgerät."
+    },
+    "es": {
+     "t": "Afinar de oído: el método del quinto traste",
+     "g": "Afinar las cuerdas entre sí sin afinador.",
+     "p": [
+      "Supón que el Mi grave está bien. Písalo en el traste 5: esa nota es La, así que afina la cuerda La al aire igual.",
+      "Repite: la cuerda La en el traste 5 da Re y la Re en el 5 da Sol. Excepción: la Sol en el traste 4 da Si.",
+      "Luego la Si en el traste 5 da el Mi agudo. Escucha la ondulación entre las dos notas: se frena y desaparece cuando coinciden."
+     ],
+     "q": "¿Oyes esa ondulación cuando dos notas están casi afinadas pero no del todo?",
+     "c": "Desafina un poco la cuerda La, afínala de oído con el método del quinto traste y comprueba con un afinador."
+    },
+    "fr": {
+     "t": "Accorder à l'oreille : la méthode de la 5e case",
+     "g": "Accorder les cordes les unes par rapport aux autres sans accordeur.",
+     "p": [
+      "Pars du principe que le Mi grave est juste. Appuie-le en case 5 : c'est un La, accorde donc la corde de La à vide dessus.",
+      "Recommence : La en case 5 donne Ré, Ré en case 5 donne Sol. Exception : Sol en case 4 donne Si.",
+      "Puis Si en case 5 donne le Mi aigu. Écoute le battement entre les deux notes : il ralentit et disparaît quand elles sont égales."
+     ],
+     "q": "Entends-tu ce battement quand deux notes sont presque, mais pas tout à fait, accordées ?",
+     "c": "Désaccorde un peu ta corde de La, réaccorde-la à l'oreille avec la méthode de la 5e case, puis vérifie avec un accordeur."
+    },
+    "it": {
+     "t": "Accordare a orecchio: il metodo del quinto tasto",
+     "g": "Accordare le corde tra loro senza accordatore.",
+     "p": [
+      "Considera giusto il Mi basso. Premilo al 5° tasto: quella nota è La, quindi accorda la corda La a vuoto su di essa.",
+      "Ripeti: corda La al 5° tasto dà Re, corda Re al 5° tasto dà Sol. Eccezione: corda Sol al 4° tasto dà Si.",
+      "Poi corda Si al 5° tasto dà il Mi cantino. Ascolta l'ondeggiamento tra le due note: rallenta e sparisce quando coincidono."
+     ],
+     "q": "Senti quell'ondeggiamento quando due note sono quasi, ma non del tutto, intonate?",
+     "c": "Scorda un po' la corda La, riaccordala a orecchio con il metodo del quinto tasto e poi controlla con l'accordatore."
+    },
+    "pt": {
+     "t": "Afinar de ouvido: o método da 5.ª casa",
+     "g": "Afinar as cordas umas pelas outras sem afinador.",
+     "p": [
+      "Parte do princípio de que o Mi grave está certo. Pressiona-o na 5.ª casa: essa nota é Lá, por isso afina a corda Lá solta por ela.",
+      "Repete: corda Lá na 5.ª casa dá Ré, corda Ré na 5.ª casa dá Sol. Exceção: corda Sol na 4.ª casa dá Si.",
+      "Depois a corda Si na 5.ª casa dá o Mi agudo. Ouve a ondulação entre as duas notas: abranda e para quando coincidem."
+     ],
+     "q": "Ouves essa ondulação quando duas notas estão quase, mas não totalmente, afinadas?",
+     "c": "Desafina um pouco a corda Lá, afina-a de ouvido com o método da 5.ª casa e depois confirma com um afinador."
+    },
+    "pt_BR": {
+     "t": "Afinando de ouvido: o método da quinta casa",
+     "g": "Afinar as cordas umas pelas outras sem afinador.",
+     "p": [
+      "Considere o Mi grave afinado. Aperte-o na casa 5: essa nota é Lá, então afine a corda Lá solta igual a ela.",
+      "Repita: corda Lá na casa 5 dá Ré, corda Ré na casa 5 dá Sol. Exceção: corda Sol na casa 4 dá Si.",
+      "Depois a corda Si na casa 5 dá o Mi agudo. Ouça a ondulação entre as duas notas: ela diminui e some quando elas batem."
+     ],
+     "q": "Você ouve essa ondulação quando duas notas estão quase, mas não totalmente, afinadas?",
+     "c": "Desafine um pouco a corda Lá, afine de ouvido com o método da quinta casa e depois confira com um afinador."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three-chord songs",
+     "g": "See how countless songs use chords I, IV and V, and try one yourself.",
+     "p": [
+      "In any major key, chords built on the 1st, 4th and 5th notes of the scale (I, IV, V) are the strongest family.",
+      "Key of G: G, C, D. Key of A: A, D, E. Key of C: C, F, G. Key of D: D, G, A. Key of E: E, A, B7.",
+      "Thousands of folk, rock, blues and pop songs use just these three. The V chord often becomes V7, like D7 or E7."
+     ],
+     "q": "Which key feels best for your hands so far: G, A or D?",
+     "c": "Play I-IV-V-I in A (A, D, E, A), 2 bars each, for 3 minutes, then try it in G and in D."
+    },
+    "de": {
+     "t": "Songs mit drei Akkorden",
+     "g": "Erfahre, wie unzählige Songs die Stufen I, IV und V nutzen, und probier es selbst.",
+     "p": [
+      "In jeder Dur-Tonart bilden die Akkorde auf dem 1., 4. und 5. Ton der Tonleiter (I, IV, V) die stärkste Familie.",
+      "G-Dur: G, C, D. A-Dur: A, D, E. C-Dur: C, F, G. D-Dur: D, G, A. E-Dur: E, A, H7.",
+      "Tausende Folk-, Rock-, Blues- und Popsongs kommen mit diesen drei aus. Die V wird oft zur V7, etwa D7 oder E7."
+     ],
+     "q": "Welche Tonart liegt deinen Händen bisher am besten: G, A oder D?",
+     "c": "Spiel I-IV-V-I in A (A, D, E, A), je 2 Takte, 3 Minuten lang, dann probier es in G und in D."
+    },
+    "es": {
+     "t": "Canciones de tres acordes",
+     "g": "Ver cómo infinidad de canciones usan los acordes I, IV y V, y probar una tú mismo.",
+     "p": [
+      "En cualquier tonalidad mayor, los acordes sobre la 1.ª, 4.ª y 5.ª nota de la escala (I, IV, V) son la familia más fuerte.",
+      "En Sol: Sol, Do, Re. En La: La, Re, Mi. En Do: Do, Fa, Sol. En Re: Re, Sol, La. En Mi: Mi, La, B7 (Si7).",
+      "Miles de canciones de folk, rock, blues y pop usan solo estos tres. El V suele convertirse en V7, como D7 o E7."
+     ],
+     "q": "¿Qué tonalidad le sienta mejor a tus manos por ahora: Sol, La o Re?",
+     "c": "Toca I-IV-V-I en La (La, Re, Mi, La), 2 compases cada uno, durante 3 minutos, y luego en Sol y en Re."
+    },
+    "fr": {
+     "t": "Les chansons à trois accords",
+     "g": "Voir comment d'innombrables chansons utilisent les degrés I, IV et V, et en essayer une.",
+     "p": [
+      "Dans toute tonalité majeure, les accords construits sur les 1re, 4e et 5e notes de la gamme (I, IV, V) forment la famille la plus forte.",
+      "En Sol : Sol, Do, Ré. En La : La, Ré, Mi. En Do : Do, Fa, Sol. En Ré : Ré, Sol, La. En Mi : Mi, La, B7 (Si7).",
+      "Des milliers de chansons folk, rock, blues et pop n'utilisent que ces trois-là. Le V devient souvent V7, comme D7 ou E7."
+     ],
+     "q": "Quelle tonalité convient le mieux à tes mains pour l'instant : Sol, La ou Ré ?",
+     "c": "Joue I-IV-V-I en La (La, Ré, Mi, La), 2 mesures chacun, pendant 3 minutes, puis en Sol et en Ré."
+    },
+    "it": {
+     "t": "Canzoni a tre accordi",
+     "g": "Vedere come innumerevoli canzoni usano i gradi I, IV e V, e provarne una.",
+     "p": [
+      "In ogni tonalità maggiore, gli accordi sulla 1ª, 4ª e 5ª nota della scala (I, IV, V) sono la famiglia più forte.",
+      "In Sol: Sol, Do, Re. In La: La, Re, Mi. In Do: Do, Fa, Sol. In Re: Re, Sol, La. In Mi: Mi, La, B7 (Si7).",
+      "Migliaia di brani folk, rock, blues e pop usano solo questi tre. Il V spesso diventa V7, come D7 o E7."
+     ],
+     "q": "Quale tonalità si adatta meglio alle tue mani per ora: Sol, La o Re?",
+     "c": "Suona I-IV-V-I in La (La, Re, Mi, La), 2 battute ciascuno, per 3 minuti, poi in Sol e in Re."
+    },
+    "pt": {
+     "t": "Músicas de três acordes",
+     "g": "Ver como inúmeras músicas usam os acordes I, IV e V, e experimentar uma.",
+     "p": [
+      "Em qualquer tom maior, os acordes construídos na 1.ª, 4.ª e 5.ª nota da escala (I, IV, V) são a família mais forte.",
+      "Em Sol: Sol, Dó, Ré. Em Lá: Lá, Ré, Mi. Em Dó: Dó, Fá, Sol. Em Ré: Ré, Sol, Lá. Em Mi: Mi, Lá, B7 (Si7).",
+      "Milhares de músicas folk, rock, blues e pop usam só estes três. O V passa muitas vezes a V7, como D7 ou E7."
+     ],
+     "q": "Que tom assenta melhor às tuas mãos por agora: Sol, Lá ou Ré?",
+     "c": "Toca I-IV-V-I em Lá (Lá, Ré, Mi, Lá), 2 compassos cada, durante 3 minutos, depois em Sol e em Ré."
+    },
+    "pt_BR": {
+     "t": "Músicas de três acordes",
+     "g": "Ver como inúmeras músicas usam os acordes I, IV e V, e tentar uma você mesmo.",
+     "p": [
+      "Em qualquer tom maior, os acordes montados na 1ª, 4ª e 5ª nota da escala (I, IV, V) são a família mais forte.",
+      "Em Sol: Sol, Dó, Ré. Em Lá: Lá, Ré, Mi. Em Dó: Dó, Fá, Sol. Em Ré: Ré, Sol, Lá. Em Mi: Mi, Lá, B7 (Si7).",
+      "Milhares de músicas folk, rock, blues, sertanejo e pop usam só esses três. O V muitas vezes vira V7, como D7 ou E7."
+     ],
+     "q": "Qual tom combina mais com suas mãos por enquanto: Sol, Lá ou Ré?",
+     "c": "Toque I-IV-V-I em Lá (Lá, Ré, Mi, Lá), 2 compassos cada, por 3 minutos, depois em Sol e em Ré."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm in 3/4 time",
+     "g": "Feel the waltz, count in three and play a simple 3/4 strum.",
+     "p": [
+      "In 3/4 time each bar has three beats: count 1, 2, 3, 1, 2, 3, with beat 1 the strongest.",
+      "A classic waltz strum: pick the bass note of the chord on 1, then strum the higher strings lightly on 2 and 3.",
+      "It sounds like boom, chick, chick. Many lullabies, folk songs and waltzes use this swaying feel."
+     ],
+     "q": "Can you think of a song that sways in three instead of marching in four?",
+     "c": "Play G, C, D, G in 3/4 with bass-strum-strum, 2 bars per chord, counting 1, 2, 3 out loud, for 3 minutes."
+    },
+    "de": {
+     "t": "Rhythmus im 3/4-Takt",
+     "g": "Spür den Walzer, zähl in drei und spiel einen einfachen 3/4-Schlag.",
+     "p": [
+      "Im 3/4-Takt hat jeder Takt drei Schläge: Zähl 1, 2, 3, 1, 2, 3, wobei die 1 am stärksten ist.",
+      "Ein klassischer Walzerschlag: Auf 1 den Basston des Akkords zupfen, auf 2 und 3 leicht die hohen Saiten anschlagen.",
+      "Das klingt wie Bum, tschak, tschak. Viele Wiegenlieder, Volkslieder und Walzer haben dieses wiegende Gefühl."
+     ],
+     "q": "Fällt dir ein Song ein, der in drei schwingt, statt in vier zu marschieren?",
+     "c": "Spiel G, C, D, G im 3/4-Takt mit Bass-Schlag-Schlag, 2 Takte pro Akkord, zähl laut 1, 2, 3, 3 Minuten lang."
+    },
+    "es": {
+     "t": "Ritmo en compás de 3/4",
+     "g": "Sentir el vals, contar en tres y tocar un rasgueo sencillo de 3/4.",
+     "p": [
+      "En 3/4 cada compás tiene tres pulsos: cuenta 1, 2, 3, 1, 2, 3, con el 1 como el más fuerte.",
+      "Un rasgueo de vals clásico: toca el bajo del acorde en el 1 y rasguea suave las cuerdas agudas en el 2 y el 3.",
+      "Suena como bum, chas, chas. Muchas nanas, canciones populares y valses tienen este balanceo."
+     ],
+     "q": "¿Se te ocurre una canción que se balancea en tres en lugar de marchar en cuatro?",
+     "c": "Toca Sol, Do, Re, Sol en 3/4 con bajo-rasgueo-rasgueo, 2 compases por acorde, contando 1, 2, 3 en voz alta, 3 minutos."
+    },
+    "fr": {
+     "t": "Le rythme à 3/4",
+     "g": "Sentir la valse, compter en trois et jouer une rythmique simple à 3/4.",
+     "p": [
+      "En 3/4, chaque mesure a trois temps : compte 1, 2, 3, 1, 2, 3, le temps 1 étant le plus fort.",
+      "Une rythmique de valse classique : joue la basse de l'accord sur le 1, puis gratte doucement les cordes aiguës sur 2 et 3.",
+      "Ça sonne boum, tchi, tchi. Beaucoup de berceuses, chansons folk et valses ont ce balancement."
+     ],
+     "q": "Connais-tu une chanson qui se balance en trois au lieu de marcher en quatre ?",
+     "c": "Joue Sol, Do, Ré, Sol à 3/4 en basse-coup-coup, 2 mesures par accord, en comptant 1, 2, 3 à voix haute, pendant 3 minutes."
+    },
+    "it": {
+     "t": "Il ritmo in 3/4",
+     "g": "Sentire il valzer, contare in tre e suonare una ritmica semplice in 3/4.",
+     "p": [
+      "In 3/4 ogni battuta ha tre battiti: conta 1, 2, 3, 1, 2, 3, con l'1 come battito più forte.",
+      "Una ritmica da valzer classica: suona il basso dell'accordo sull'1, poi pennella leggero le corde acute sul 2 e sul 3.",
+      "Suona come bum, cià, cià. Molte ninne nanne, canzoni popolari e valzer hanno questo dondolio."
+     ],
+     "q": "Ti viene in mente una canzone che dondola in tre invece di marciare in quattro?",
+     "c": "Suona Sol, Do, Re, Sol in 3/4 con basso-pennata-pennata, 2 battute per accordo, contando 1, 2, 3 ad alta voce, per 3 minuti."
+    },
+    "pt": {
+     "t": "Ritmo em compasso 3/4",
+     "g": "Sentir a valsa, contar em três e tocar uma batida simples em 3/4.",
+     "p": [
+      "Em 3/4 cada compasso tem três tempos: conta 1, 2, 3, 1, 2, 3, sendo o 1 o mais forte.",
+      "Uma batida de valsa clássica: toca o baixo do acorde no 1 e depois as cordas agudas suavemente no 2 e no 3.",
+      "Soa como bum, tchá, tchá. Muitas canções de embalar, músicas populares e valsas têm este balanço."
+     ],
+     "q": "Lembras-te de uma música que balança em três em vez de marchar em quatro?",
+     "c": "Toca Sol, Dó, Ré, Sol em 3/4 com baixo-batida-batida, 2 compassos por acorde, a contar 1, 2, 3 em voz alta, 3 minutos."
+    },
+    "pt_BR": {
+     "t": "Ritmo em compasso 3/4",
+     "g": "Sentir a valsa, contar em três e tocar uma levada simples em 3/4.",
+     "p": [
+      "Em 3/4 cada compasso tem três tempos: conte 1, 2, 3, 1, 2, 3, com o 1 sendo o mais forte.",
+      "Uma levada de valsa clássica: toque o baixo do acorde no 1 e depois as cordas agudas de leve no 2 e no 3.",
+      "Soa como tum, tchá, tchá. Muitas cantigas de ninar, toadas e valsas têm esse balanço."
+     ],
+     "q": "Você lembra de alguma música que balança em três em vez de marchar em quatro?",
+     "c": "Toque Sol, Dó, Ré, Sol em 3/4 com baixo-batida-batida, 2 compassos por acorde, contando 1, 2, 3 em voz alta, por 3 minutos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introduction to the capo",
+     "g": "Learn what a capo does and how it changes key without new shapes.",
+     "p": [
+      "A capo clamps across all strings at one fret, acting like a new nut and raising every string's pitch.",
+      "Each fret raises the key by a half step: a G shape with a capo at fret 2 sounds as A.",
+      "Place it just behind the fret, straight and snug, then quickly check tuning, as a capo can pull strings slightly sharp."
+     ],
+     "q": "Has a song ever felt too low or too high for your voice to sing along?",
+     "c": "Play G, C, D with a capo at fret 2, then at fret 4, and sing or hum along to find the most comfortable key."
+    },
+    "de": {
+     "t": "Einführung in den Kapodaster",
+     "g": "Lerne, was ein Kapodaster macht und wie er die Tonart ohne neue Griffe ändert.",
+     "p": [
+      "Ein Kapo klemmt in einem Bund über alle Saiten, wirkt wie ein neuer Sattel und erhöht jede Saite.",
+      "Jeder Bund erhöht die Tonart um einen Halbton: Ein G-Griff mit Kapo im 2. Bund klingt als A.",
+      "Setz ihn direkt hinter den Bundstab, gerade und fest, und prüf dann kurz die Stimmung: Ein Kapo kann Saiten etwas zu hoch ziehen."
+     ],
+     "q": "Lag dir ein Song schon mal zu tief oder zu hoch zum Mitsingen?",
+     "c": "Spiel G, C, D mit Kapo im 2. Bund, dann im 4. Bund, und sing oder summ mit, um die bequemste Tonart zu finden."
+    },
+    "es": {
+     "t": "Introducción a la cejilla",
+     "g": "Aprender qué hace la cejilla y cómo cambia la tonalidad sin formas nuevas.",
+     "p": [
+      "La cejilla (capo) aprieta todas las cuerdas en un traste, actúa como una nueva cejuela y sube el tono de cada cuerda.",
+      "Cada traste sube la tonalidad medio tono: una forma de Sol con cejilla en el traste 2 suena como La.",
+      "Colócala justo detrás del traste, recta y firme, y revisa la afinación: la cejilla puede subir un poco las cuerdas."
+     ],
+     "q": "¿Alguna canción te ha quedado demasiado grave o aguda para cantarla?",
+     "c": "Toca Sol, Do, Re con la cejilla en el traste 2 y luego en el 4, y canta o tararea para encontrar el tono más cómodo."
+    },
+    "fr": {
+     "t": "Découvrir le capodastre",
+     "g": "Comprendre ce que fait un capo et comment il change de tonalité sans nouvelles formes.",
+     "p": [
+      "Le capodastre serre toutes les cordes sur une case, joue le rôle d'un nouveau sillet et fait monter chaque corde.",
+      "Chaque case monte la tonalité d'un demi-ton : une forme de Sol avec capo en case 2 sonne en La.",
+      "Place-le juste derrière la frette, droit et bien serré, puis vérifie l'accordage : un capo peut faire monter un peu les cordes."
+     ],
+     "q": "Une chanson t'a-t-elle déjà semblé trop grave ou trop aiguë pour la chanter ?",
+     "c": "Joue Sol, Do, Ré avec le capo en case 2, puis en case 4, et chante ou fredonne pour trouver la tonalité la plus confortable."
+    },
+    "it": {
+     "t": "Introduzione al capotasto mobile",
+     "g": "Capire cosa fa il capotasto e come cambia tonalità senza nuove forme.",
+     "p": [
+      "Il capotasto mobile stringe tutte le corde su un tasto, fa da nuovo capotasto e alza l'intonazione di ogni corda.",
+      "Ogni tasto alza la tonalità di un semitono: una forma di Sol con capotasto al 2° tasto suona come La.",
+      "Mettilo appena dietro la barretta, dritto e ben fermo, poi ricontrolla l'accordatura: può alzare un po' le corde."
+     ],
+     "q": "Ti è mai capitata una canzone troppo bassa o troppo alta per cantarla?",
+     "c": "Suona Sol, Do, Re con il capotasto al 2° tasto, poi al 4°, e canta o canticchia per trovare la tonalità più comoda."
+    },
+    "pt": {
+     "t": "Introdução ao capotraste",
+     "g": "Perceber o que faz o capotraste e como muda o tom sem novas formas.",
+     "p": [
+      "O capotraste aperta todas as cordas numa casa, funciona como uma nova pestana e sobe a afinação de cada corda.",
+      "Cada casa sobe o tom meio-tom: uma forma de Sol com capotraste na 2.ª casa soa como Lá.",
+      "Põe-no logo atrás do traste, direito e firme, e confirma a afinação: o capotraste pode subir um pouco as cordas."
+     ],
+     "q": "Alguma música já te pareceu demasiado grave ou aguda para cantar?",
+     "c": "Toca Sol, Dó, Ré com o capotraste na 2.ª casa e depois na 4.ª, e canta ou trauteia para encontrar o tom mais confortável."
+    },
+    "pt_BR": {
+     "t": "Introdução ao capotraste",
+     "g": "Entender o que o capotraste faz e como ele muda o tom sem desenhos novos.",
+     "p": [
+      "O capotraste prende todas as cordas numa casa, funciona como uma nova pestana e deixa cada corda mais aguda.",
+      "Cada casa sobe o tom meio tom: um desenho de Sol com capotraste na casa 2 soa como Lá.",
+      "Coloque logo atrás do traste, reto e firme, e confira a afinação: o capotraste pode subir um pouco as cordas."
+     ],
+     "q": "Alguma música já ficou grave ou aguda demais para você cantar junto?",
+     "c": "Toque Sol, Dó, Ré com capotraste na casa 2 e depois na casa 4, e cante ou cantarole para achar o tom mais confortável."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Playing along with recordings",
+     "g": "Find the beat, start slow and keep going through mistakes.",
+     "p": [
+      "Before playing, listen once and tap the beat; notice where the chords change and how long each one lasts.",
+      "Use a slow-down feature in a music or practice app to play at a tempo you can manage, then speed up step by step.",
+      "If you miss a change, do not stop: skip a strum, catch the next beat 1 and rejoin. Real musicians do this all the time."
+     ],
+     "q": "Which song would you most love to play along with?",
+     "c": "Pick an easy song with chords you know and play along to it three times without stopping, even if it is not perfect."
+    },
+    "de": {
+     "t": "Zu Aufnahmen mitspielen",
+     "g": "Finde den Beat, fang langsam an und spiel bei Fehlern einfach weiter.",
+     "p": [
+      "Hör vor dem Spielen einmal zu und tipp den Beat mit; achte darauf, wo die Akkorde wechseln und wie lange sie dauern.",
+      "Nutz die Verlangsamungsfunktion einer Musik- oder Übe-App, spiel in machbarem Tempo und werde Schritt für Schritt schneller.",
+      "Verpasst du einen Wechsel, hör nicht auf: Lass einen Schlag aus, erwisch die nächste Eins und steig wieder ein. Profis machen das ständig."
+     ],
+     "q": "Zu welchem Song würdest du am liebsten mitspielen?",
+     "c": "Wähl einen leichten Song mit bekannten Akkorden und spiel dreimal ohne Pause mit, auch wenn es nicht perfekt ist."
+    },
+    "es": {
+     "t": "Tocar sobre grabaciones",
+     "g": "Encontrar el pulso, empezar despacio y seguir aunque te equivoques.",
+     "p": [
+      "Antes de tocar, escucha una vez marcando el pulso; fíjate dónde cambian los acordes y cuánto dura cada uno.",
+      "Usa la función de ralentizar de una app de música o de práctica para tocar a un tempo asequible y sube poco a poco.",
+      "Si fallas un cambio, no pares: sáltate un rasgueo, pilla el siguiente 1 y vuelve a entrar. Los músicos lo hacen siempre."
+     ],
+     "q": "¿Sobre qué canción te encantaría tocar?",
+     "c": "Elige una canción fácil con acordes que conozcas y tócala encima tres veces sin parar, aunque no salga perfecta."
+    },
+    "fr": {
+     "t": "Jouer sur des enregistrements",
+     "g": "Trouver le tempo, commencer lentement et continuer malgré les erreurs.",
+     "p": [
+      "Avant de jouer, écoute une fois en tapant le tempo ; repère où les accords changent et combien de temps chacun dure.",
+      "Utilise la fonction de ralenti d'une appli de musique ou d'entraînement pour jouer à un tempo gérable, puis accélère peu à peu.",
+      "Si tu rates un changement, ne t'arrête pas : saute un coup, attrape le prochain temps 1 et reprends. Les vrais musiciens le font sans cesse."
+     ],
+     "q": "Sur quelle chanson aimerais-tu le plus jouer ?",
+     "c": "Choisis une chanson facile avec des accords que tu connais et joue dessus trois fois sans t'arrêter, même si ce n'est pas parfait."
+    },
+    "it": {
+     "t": "Suonare sopra le registrazioni",
+     "g": "Trovare il battito, partire piano e andare avanti anche se sbagli.",
+     "p": [
+      "Prima di suonare, ascolta una volta battendo il tempo; nota dove cambiano gli accordi e quanto dura ciascuno.",
+      "Usa la funzione di rallentamento di un'app di musica o di studio per suonare a un tempo gestibile, poi accelera a poco a poco.",
+      "Se manchi un cambio, non fermarti: salta una pennata, prendi il prossimo 1 e rientra. I musicisti veri lo fanno sempre."
+     ],
+     "q": "Su quale canzone ti piacerebbe di più suonare?",
+     "c": "Scegli una canzone facile con accordi che conosci e suonaci sopra tre volte senza fermarti, anche se non è perfetta."
+    },
+    "pt": {
+     "t": "Tocar com gravações",
+     "g": "Encontrar o tempo, começar devagar e continuar apesar dos erros.",
+     "p": [
+      "Antes de tocar, ouve uma vez a marcar o tempo; repara onde os acordes mudam e quanto dura cada um.",
+      "Usa a função de abrandar de uma app de música ou de prática para tocar a um andamento possível e acelera aos poucos.",
+      "Se falhares uma mudança, não pares: salta uma batida, apanha o próximo 1 e volta a entrar. Os músicos fazem isto sempre."
+     ],
+     "q": "Com que música adorarias tocar?",
+     "c": "Escolhe uma música fácil com acordes que conheces e toca com ela três vezes sem parar, mesmo que não saia perfeito."
+    },
+    "pt_BR": {
+     "t": "Tocando junto com gravações",
+     "g": "Achar o tempo, começar devagar e seguir em frente mesmo errando.",
+     "p": [
+      "Antes de tocar, ouça uma vez marcando o tempo; repare onde os acordes mudam e quanto dura cada um.",
+      "Use a função de desacelerar de um app de música ou de estudo para tocar num andamento possível e acelere aos poucos.",
+      "Se perder uma troca, não pare: pule uma batida, pegue o próximo 1 e entre de novo. Músicos de verdade fazem isso o tempo todo."
+     ],
+     "q": "Com qual música você adoraria tocar junto?",
+     "c": "Escolha uma música fácil com acordes que você conhece e toque junto três vezes sem parar, mesmo que não saia perfeito."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "An easy F chord",
+     "g": "Play a small F shape on the top four strings as a step toward the barre chord.",
+     "p": [
+      "Finger 1 lies flat across the B and high E strings at the 1st fret. Finger 2 on G, 2nd fret; finger 3 on D, 3rd fret.",
+      "Strum only the top four strings, starting from the D string, just like the D chord.",
+      "Roll finger 1 slightly onto its bony side so both strings ring. This mini barre prepares you for full barre chords later."
+     ],
+     "q": "Is F the trickiest chord so far, or does the small version feel manageable?",
+     "c": "Play C, F, G, C with the easy F, 4 strums each, for 2 minutes, checking that the B and high E strings ring in F."
+    },
+    "de": {
+     "t": "Ein leichter F-Akkord",
+     "g": "Spiel eine kleine F-Form auf den oberen vier Saiten als Schritt zum Barréakkord.",
+     "p": [
+      "Finger 1 liegt flach über H- und hoher E-Saite im 1. Bund, Finger 2 auf G im 2. Bund, Finger 3 auf D im 3. Bund.",
+      "Schlag nur die oberen vier Saiten an, ab der D-Saite, genau wie beim D-Akkord.",
+      "Dreh Finger 1 leicht auf seine knochige Seite, damit beide Saiten klingen. Dieses Mini-Barré bereitet dich auf volle Barrés vor."
+     ],
+     "q": "Ist F bisher der kniffligste Akkord, oder ist die kleine Version machbar?",
+     "c": "Spiel C, F, G, C mit dem leichten F, je 4 Anschläge, 2 Minuten lang, und prüf, dass H- und hohe E-Saite im F klingen."
+    },
+    "es": {
+     "t": "Un acorde de Fa fácil",
+     "g": "Tocar una forma pequeña de Fa en las cuatro cuerdas agudas como paso hacia la cejilla.",
+     "p": [
+      "El dedo 1 va plano sobre las cuerdas Si y Mi agudo en el traste 1. Dedo 2 en Sol, traste 2; dedo 3 en Re, traste 3.",
+      "Rasguea solo las cuatro cuerdas agudas, desde la cuerda Re, igual que en el acorde de Re.",
+      "Gira un poco el dedo 1 hacia su lado más huesudo para que suenen las dos cuerdas. Esta mini cejilla te prepara para las completas."
+     ],
+     "q": "¿Fa es el acorde más difícil hasta ahora o la versión pequeña te resulta asequible?",
+     "c": "Toca Do, Fa, Sol, Do con el Fa fácil, 4 rasgueos cada uno, durante 2 minutos, comprobando que Si y Mi agudo suenan en Fa."
+    },
+    "fr": {
+     "t": "Un accord de Fa facile",
+     "g": "Jouer une petite forme de Fa sur les quatre cordes aiguës, en route vers le barré.",
+     "p": [
+      "Le doigt 1 est à plat sur les cordes de Si et de Mi aigu en case 1. Doigt 2 sur Sol, case 2 ; doigt 3 sur Ré, case 3.",
+      "Gratte seulement les quatre cordes aiguës, à partir de la corde de Ré, comme pour l'accord de Ré.",
+      "Fais rouler un peu le doigt 1 sur son côté osseux pour que les deux cordes sonnent. Ce mini barré prépare les barrés complets."
+     ],
+     "q": "Fa est-il l'accord le plus difficile jusqu'ici, ou la petite version te semble-t-elle faisable ?",
+     "c": "Joue Do, Fa, Sol, Do avec le Fa facile, 4 coups chacun, pendant 2 minutes, en vérifiant que Si et Mi aigu sonnent dans le Fa."
+    },
+    "it": {
+     "t": "Un accordo di Fa facile",
+     "g": "Suonare una piccola forma di Fa sulle quattro corde acute come passo verso il barrè.",
+     "p": [
+      "Il dito 1 sta disteso su Si e Mi cantino al 1° tasto. Dito 2 sul Sol al 2° tasto, dito 3 sul Re al 3° tasto.",
+      "Pennella solo le quattro corde acute, partendo dalla corda Re, proprio come per l'accordo di Re.",
+      "Ruota un po' il dito 1 sul lato più osseo così suonano entrambe le corde. Questo mini barrè ti prepara ai barrè completi."
+     ],
+     "q": "Il Fa è l'accordo più difficile finora, o la versione piccola ti sembra gestibile?",
+     "c": "Suona Do, Fa, Sol, Do con il Fa facile, 4 pennate ciascuno, per 2 minuti, controllando che Si e Mi cantino suonino nel Fa."
+    },
+    "pt": {
+     "t": "Um acorde de Fá fácil",
+     "g": "Tocar uma forma pequena de Fá nas quatro cordas agudas como passo para a pestana.",
+     "p": [
+      "O dedo 1 fica deitado sobre as cordas Si e Mi agudo na 1.ª casa. Dedo 2 no Sol, 2.ª casa; dedo 3 no Ré, 3.ª casa.",
+      "Toca só as quatro cordas agudas, a partir da corda Ré, tal como no acorde de Ré.",
+      "Roda um pouco o dedo 1 para o lado mais ossudo para as duas cordas soarem. Esta mini pestana prepara-te para as completas."
+     ],
+     "q": "O Fá é o acorde mais difícil até agora, ou a versão pequena parece-te possível?",
+     "c": "Toca Dó, Fá, Sol, Dó com o Fá fácil, 4 batidas cada, durante 2 minutos, confirmando que o Si e o Mi agudo soam no Fá."
+    },
+    "pt_BR": {
+     "t": "Um acorde de Fá fácil",
+     "g": "Tocar um desenho pequeno de Fá nas quatro cordas agudas como passo para a pestana.",
+     "p": [
+      "O dedo 1 fica deitado sobre as cordas Si e Mi agudo na casa 1. Dedo 2 no Sol, casa 2; dedo 3 no Ré, casa 3.",
+      "Toque só as quatro cordas agudas, a partir da corda Ré, igual ao acorde de Ré.",
+      "Gire um pouco o dedo 1 para o lado mais ossudo para as duas cordas soarem. Essa mini pestana prepara você para as completas."
+     ],
+     "q": "O Fá é o acorde mais difícil até agora, ou a versão pequena parece possível?",
+     "c": "Toque Dó, Fá, Sol, Dó com o Fá fácil, 4 batidas cada, por 2 minutos, conferindo se Si e Mi agudo soam no Fá."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power chords on the low E string",
+     "g": "Play two-note root and fifth shapes and move them along the neck.",
+     "p": [
+      "Finger 1 on the low E string is the root; finger 3 goes on the A string two frets higher. Play only those two strings.",
+      "The chord takes its name from the root: low E at fret 3 is G5, fret 5 is A5, fret 7 is B5. Open low E plus A at fret 2 is E5.",
+      "Power chords are neither major nor minor, so they fit almost anywhere. They sound great on electric with distortion, and fine on acoustic."
+     ],
+     "q": "Which rock songs have you heard that seem to use power chords?",
+     "c": "Slide the shape to G5, A5, C5 (fret 8) and back to G5, 4 strums each, keeping the shape locked as you move."
+    },
+    "de": {
+     "t": "Powerchords auf der tiefen E-Saite",
+     "g": "Spiel zweitönige Grundton-Quint-Formen und verschieb sie über den Hals.",
+     "p": [
+      "Finger 1 auf der tiefen E-Saite ist der Grundton, Finger 3 kommt zwei Bünde höher auf die A-Saite. Spiel nur diese zwei Saiten.",
+      "Der Akkord heißt nach dem Grundton: tiefes E im 3. Bund ist G5, im 5. Bund A5, im 7. Bund H5. Leeres E plus A im 2. Bund ist E5.",
+      "Powerchords sind weder Dur noch Moll und passen fast überall. Auf E-Gitarre mit Verzerrung klingen sie super, akustisch auch gut."
+     ],
+     "q": "Welche Rocksongs kennst du, die wohl Powerchords benutzen?",
+     "c": "Schieb die Form zu G5, A5, C5 (8. Bund) und zurück zu G5, je 4 Anschläge, und halt die Form beim Verschieben fest."
+    },
+    "es": {
+     "t": "Power chords en la cuerda Mi grave",
+     "g": "Tocar formas de dos notas, tónica y quinta, y moverlas por el mástil.",
+     "p": [
+      "El dedo 1 en el Mi grave es la tónica; el dedo 3 va en la cuerda La dos trastes más arriba. Toca solo esas dos cuerdas.",
+      "El acorde se llama como la tónica: Mi grave en el traste 3 es G5, en el 5 es A5 y en el 7 es B5. Mi al aire más La en el 2 es E5.",
+      "Los power chords no son mayores ni menores, así que encajan casi en todo. Suenan genial en eléctrica con distorsión y bien en acústica."
+     ],
+     "q": "¿Qué canciones de rock conoces que parecen usar power chords?",
+     "c": "Desliza la forma a G5, A5, C5 (traste 8) y vuelve a G5, 4 rasgueos cada uno, manteniendo la forma fija al moverte."
+    },
+    "fr": {
+     "t": "Power chords sur la corde de Mi grave",
+     "g": "Jouer des formes à deux notes, fondamentale et quinte, et les déplacer sur le manche.",
+     "p": [
+      "Le doigt 1 sur le Mi grave est la fondamentale ; le doigt 3 va sur la corde de La deux cases plus haut. Ne joue que ces deux cordes.",
+      "L'accord prend le nom de la fondamentale : Mi grave case 3 donne G5, case 5 A5, case 7 B5. Mi à vide plus La case 2 donne E5.",
+      "Les power chords ne sont ni majeurs ni mineurs, ils vont donc presque partout. Superbes à l'électrique avec saturation, bien aussi en folk."
+     ],
+     "q": "Quelles chansons rock connais-tu qui semblent utiliser des power chords ?",
+     "c": "Fais glisser la forme vers G5, A5, C5 (case 8) puis retour à G5, 4 coups chacun, en gardant la forme bien fixe."
+    },
+    "it": {
+     "t": "Power chord sulla corda di Mi basso",
+     "g": "Suonare forme di due note, tonica e quinta, e spostarle lungo il manico.",
+     "p": [
+      "Il dito 1 sul Mi basso è la tonica; il dito 3 va sulla corda La due tasti più su. Suona solo queste due corde.",
+      "L'accordo prende il nome dalla tonica: Mi basso al 3° tasto è G5, al 5° A5, al 7° B5. Mi a vuoto più La al 2° tasto è E5.",
+      "I power chord non sono né maggiori né minori, quindi stanno bene quasi ovunque. Ottimi sull'elettrica distorta, bene anche in acustico."
+     ],
+     "q": "Quali canzoni rock conosci che sembrano usare i power chord?",
+     "c": "Fai scorrere la forma su G5, A5, C5 (8° tasto) e torna a G5, 4 pennate ciascuno, tenendo la forma ben ferma."
+    },
+    "pt": {
+     "t": "Power chords na corda Mi grave",
+     "g": "Tocar formas de duas notas, tónica e quinta, e movê-las ao longo do braço.",
+     "p": [
+      "O dedo 1 no Mi grave é a tónica; o dedo 3 vai na corda Lá duas casas acima. Toca só essas duas cordas.",
+      "O acorde tem o nome da tónica: Mi grave na 3.ª casa é G5, na 5.ª é A5, na 7.ª é B5. Mi solto mais Lá na 2.ª casa é E5.",
+      "Os power chords não são maiores nem menores, por isso encaixam em quase tudo. Soam ótimos na elétrica com distorção e bem na acústica."
+     ],
+     "q": "Que músicas rock conheces que parecem usar power chords?",
+     "c": "Desliza a forma para G5, A5, C5 (8.ª casa) e volta a G5, 4 batidas cada, mantendo a forma fixa enquanto te moves."
+    },
+    "pt_BR": {
+     "t": "Power chords na corda Mi grave",
+     "g": "Tocar desenhos de duas notas, tônica e quinta, e movê-los pelo braço.",
+     "p": [
+      "O dedo 1 no Mi grave é a tônica; o dedo 3 vai na corda Lá duas casas acima. Toque só essas duas cordas.",
+      "O acorde leva o nome da tônica: Mi grave na casa 3 é G5, na casa 5 é A5, na 7 é B5. Mi solto mais Lá na casa 2 é E5.",
+      "Power chords não são maiores nem menores, então encaixam em quase tudo. Ficam ótimos na guitarra com distorção e bem no violão."
+     ],
+     "q": "Quais músicas de rock você conhece que parecem usar power chords?",
+     "c": "Deslize o desenho para G5, A5, C5 (casa 8) e volte para G5, 4 batidas cada, mantendo o desenho firme enquanto se move."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power chords on the A string",
+     "g": "Use the same shape on the A string and link positions across the neck.",
+     "p": [
+      "Finger 1 on the A string is now the root; finger 3 goes on the D string two frets higher. Mute the low E with the tip of finger 1.",
+      "A string at fret 3 is C5, fret 5 is D5, fret 7 is E5. Open A plus D string at fret 2 is A5.",
+      "Mixing both strings saves big jumps: G5 (low E, fret 3) to C5 (A string, fret 3) is just a move across, no slide needed."
+     ],
+     "q": "Does it feel easier to slide along one string or to hop across to the next?",
+     "c": "Play G5 (E string, fret 3), C5 (A string, fret 3), D5 (A string, fret 5), C5, 4 strums each, for 2 minutes."
+    },
+    "de": {
+     "t": "Powerchords auf der A-Saite",
+     "g": "Nutz dieselbe Form auf der A-Saite und verbinde Lagen über den Hals.",
+     "p": [
+      "Finger 1 auf der A-Saite ist der Grundton, Finger 3 zwei Bünde höher auf der D-Saite. Die Spitze von Finger 1 dämpft die tiefe E-Saite.",
+      "A-Saite im 3. Bund ist C5, im 5. Bund D5, im 7. Bund E5. Leere A-Saite plus D-Saite im 2. Bund ist A5.",
+      "Beide Saiten zu mischen spart große Sprünge: G5 (tiefes E, 3. Bund) zu C5 (A-Saite, 3. Bund) ist nur ein Wechsel quer, ohne Rutschen."
+     ],
+     "q": "Fällt dir Rutschen auf einer Saite leichter oder Springen auf die nächste?",
+     "c": "Spiel G5 (E-Saite, 3. Bund), C5 (A-Saite, 3. Bund), D5 (A-Saite, 5. Bund), C5, je 4 Anschläge, 2 Minuten lang."
+    },
+    "es": {
+     "t": "Power chords en la cuerda La",
+     "g": "Usar la misma forma en la cuerda La y enlazar posiciones por el mástil.",
+     "p": [
+      "Ahora el dedo 1 en la cuerda La es la tónica y el dedo 3 va en la Re dos trastes más arriba. Apaga el Mi grave con la punta del dedo 1.",
+      "Cuerda La en el traste 3 es C5, en el 5 es D5 y en el 7 es E5. La al aire más Re en el traste 2 es A5.",
+      "Combinar las dos cuerdas ahorra saltos: G5 (Mi grave, traste 3) a C5 (La, traste 3) es solo un paso de cuerda, sin deslizar."
+     ],
+     "q": "¿Te resulta más fácil deslizar por una cuerda o saltar a la de al lado?",
+     "c": "Toca G5 (Mi, traste 3), C5 (La, traste 3), D5 (La, traste 5), C5, 4 rasgueos cada uno, durante 2 minutos."
+    },
+    "fr": {
+     "t": "Power chords sur la corde de La",
+     "g": "Utiliser la même forme sur la corde de La et relier les positions sur le manche.",
+     "p": [
+      "Doigt 1 sur la corde de La : la fondamentale ; doigt 3 sur la corde de Ré, deux cases plus haut. Le bout du doigt 1 étouffe le Mi grave.",
+      "Corde de La case 3 donne C5, case 5 D5, case 7 E5. La à vide plus Ré case 2 donne A5.",
+      "Mélanger les deux cordes évite les grands sauts : G5 (Mi grave, case 3) vers C5 (La, case 3), c'est juste changer de corde."
+     ],
+     "q": "Est-ce plus facile pour toi de glisser sur une corde ou de passer à la corde voisine ?",
+     "c": "Joue G5 (Mi, case 3), C5 (La, case 3), D5 (La, case 5), C5, 4 coups chacun, pendant 2 minutes."
+    },
+    "it": {
+     "t": "Power chord sulla corda La",
+     "g": "Usare la stessa forma sulla corda La e collegare le posizioni sul manico.",
+     "p": [
+      "Ora il dito 1 sulla corda La è la tonica; il dito 3 va sulla corda Re due tasti più su. Smorza il Mi basso con la punta del dito 1.",
+      "Corda La al 3° tasto è C5, al 5° D5, al 7° E5. La a vuoto più Re al 2° tasto è A5.",
+      "Combinare le due corde evita grandi salti: da G5 (Mi basso, 3° tasto) a C5 (La, 3° tasto) basta cambiare corda."
+     ],
+     "q": "Ti viene più facile scivolare su una corda o saltare a quella accanto?",
+     "c": "Suona G5 (Mi, 3° tasto), C5 (La, 3° tasto), D5 (La, 5° tasto), C5, 4 pennate ciascuno, per 2 minuti."
+    },
+    "pt": {
+     "t": "Power chords na corda Lá",
+     "g": "Usar a mesma forma na corda Lá e ligar posições ao longo do braço.",
+     "p": [
+      "Agora o dedo 1 na corda Lá é a tónica e o dedo 3 vai na corda Ré duas casas acima. Abafa o Mi grave com a ponta do dedo 1.",
+      "Corda Lá na 3.ª casa é C5, na 5.ª é D5, na 7.ª é E5. Lá solto mais Ré na 2.ª casa é A5.",
+      "Misturar as duas cordas evita grandes saltos: G5 (Mi grave, 3.ª casa) para C5 (Lá, 3.ª casa) é só mudar de corda."
+     ],
+     "q": "É mais fácil para ti deslizar numa corda ou saltar para a corda ao lado?",
+     "c": "Toca G5 (Mi, 3.ª casa), C5 (Lá, 3.ª casa), D5 (Lá, 5.ª casa), C5, 4 batidas cada, durante 2 minutos."
+    },
+    "pt_BR": {
+     "t": "Power chords na corda Lá",
+     "g": "Usar o mesmo desenho na corda Lá e ligar posições pelo braço.",
+     "p": [
+      "Agora o dedo 1 na corda Lá é a tônica e o dedo 3 vai na corda Ré duas casas acima. Abafe o Mi grave com a ponta do dedo 1.",
+      "Corda Lá na casa 3 é C5, na casa 5 é D5, na casa 7 é E5. Lá solto mais Ré na casa 2 é A5.",
+      "Misturar as duas cordas evita grandes saltos: G5 (Mi grave, casa 3) para C5 (Lá, casa 3) é só trocar de corda."
+     ],
+     "q": "Para você é mais fácil deslizar numa corda ou pular para a corda do lado?",
+     "c": "Toque G5 (Mi, casa 3), C5 (Lá, casa 3), D5 (Lá, casa 5), C5, 4 batidas cada, por 2 minutos."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Palm muting",
+     "g": "Rest your picking hand on the bridge for a chugging rock sound.",
+     "p": [
+      "Lay the fleshy edge of your picking palm lightly on the strings, right where they leave the bridge saddles.",
+      "Too far from the bridge and the notes die completely; right on the edge, they stay thick but short. Find the sweet spot.",
+      "Use steady downstrokes on power chords. Palm muting works on acoustic too but shines on an electric guitar."
+     ],
+     "q": "Have you noticed that tight, chugging sound in rock or metal songs?",
+     "c": "Play E5 with 8 palm-muted downstrokes per bar for 2 minutes, moving your palm until the chug sounds tight but still has pitch."
+    },
+    "de": {
+     "t": "Palm Muting",
+     "g": "Leg die Schlaghand auf den Steg, für einen tuckernden Rocksound.",
+     "p": [
+      "Leg die weiche Handkante der Schlaghand leicht auf die Saiten, genau dort, wo sie aus den Stegreitern kommen.",
+      "Zu weit vom Steg weg sterben die Töne ganz ab; direkt an der Kante bleiben sie satt, aber kurz. Such den Sweet Spot.",
+      "Spiel gleichmäßige Abschläge auf Powerchords. Palm Muting klappt auch akustisch, glänzt aber auf der E-Gitarre."
+     ],
+     "q": "Ist dir dieser enge, tuckernde Klang in Rock- oder Metalsongs schon aufgefallen?",
+     "c": "Spiel E5 mit 8 gedämpften Abschlägen pro Takt, 2 Minuten lang, und verschieb den Handballen, bis es knackig klingt und trotzdem Ton hat."
+    },
+    "es": {
+     "t": "Palm mute",
+     "g": "Apoyar la mano derecha en el puente para conseguir un sonido rockero y compacto.",
+     "p": [
+      "Apoya suavemente el canto carnoso de la palma sobre las cuerdas, justo donde salen de las selletas del puente.",
+      "Muy lejos del puente las notas se mueren del todo; justo en el borde suenan gordas pero cortas. Busca el punto justo.",
+      "Usa púas hacia abajo constantes en power chords. El palm mute funciona en acústica, pero brilla en guitarra eléctrica."
+     ],
+     "q": "¿Te has fijado en ese sonido apretado y machacón en canciones de rock o metal?",
+     "c": "Toca E5 con 8 púas abajo apagadas por compás durante 2 minutos, moviendo la palma hasta que suene compacto pero con nota."
+    },
+    "fr": {
+     "t": "Le palm mute",
+     "g": "Poser la main droite sur le chevalet pour un son rock serré et percutant.",
+     "p": [
+      "Pose légèrement le bord charnu de ta paume sur les cordes, juste là où elles sortent des pontets du chevalet.",
+      "Trop loin du chevalet, les notes s'éteignent ; juste au bord, elles restent épaisses mais courtes. Trouve le bon point.",
+      "Joue des coups descendants réguliers sur des power chords. Le palm mute marche en folk mais brille sur une guitare électrique."
+     ],
+     "q": "As-tu remarqué ce son serré et martelé dans des morceaux rock ou metal ?",
+     "c": "Joue E5 avec 8 coups descendants étouffés par mesure pendant 2 minutes, en déplaçant la paume jusqu'à un son serré mais avec une note."
+    },
+    "it": {
+     "t": "Il palm muting",
+     "g": "Appoggiare la mano destra sul ponte per un suono rock compatto e martellante.",
+     "p": [
+      "Appoggia leggermente il bordo carnoso del palmo sulle corde, proprio dove escono dalle sellette del ponte.",
+      "Troppo lontano dal ponte le note muoiono del tutto; proprio sul bordo restano piene ma corte. Trova il punto giusto.",
+      "Usa pennate in giù regolari sui power chord. Il palm muting funziona anche in acustico, ma brilla sulla chitarra elettrica."
+     ],
+     "q": "Hai notato quel suono stretto e martellante nei brani rock o metal?",
+     "c": "Suona E5 con 8 pennate in giù stoppate per battuta per 2 minuti, spostando il palmo finché suona compatto ma con la nota."
+    },
+    "pt": {
+     "t": "Palm muting",
+     "g": "Pousar a mão direita na ponte para um som rock compacto e martelado.",
+     "p": [
+      "Pousa levemente a parte carnuda da palma sobre as cordas, mesmo onde saem dos carrinhos da ponte.",
+      "Longe demais da ponte, as notas morrem; mesmo na borda, ficam cheias mas curtas. Encontra o ponto certo.",
+      "Usa palhetadas para baixo regulares em power chords. O palm muting funciona na acústica, mas brilha na guitarra elétrica."
+     ],
+     "q": "Já reparaste nesse som apertado e martelado em músicas rock ou metal?",
+     "c": "Toca E5 com 8 palhetadas para baixo abafadas por compasso durante 2 minutos, ajustando a palma até soar compacto mas com nota."
+    },
+    "pt_BR": {
+     "t": "Palm mute",
+     "g": "Apoiar a mão direita no cavalete para um som de rock compacto e pesado.",
+     "p": [
+      "Apoie de leve a lateral carnuda da palma sobre as cordas, bem onde elas saem dos carrinhos do cavalete.",
+      "Longe demais do cavalete, as notas morrem; bem na beirada, ficam encorpadas mas curtas. Ache o ponto certo.",
+      "Use palhetadas para baixo constantes em power chords. O palm mute funciona no violão, mas brilha mesmo na guitarra."
+     ],
+     "q": "Você já reparou nesse som apertado e pesado em músicas de rock ou metal?",
+     "c": "Toque E5 com 8 palhetadas para baixo abafadas por compasso por 2 minutos, ajustando a palma até soar firme mas com nota."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple rock riff",
+     "g": "Combine power chords and palm muting in a classic rock pattern.",
+     "p": [
+      "Play open E5 as 8 palm-muted eighth notes (count 1 and 2 and 3 and 4 and), all downstrokes.",
+      "In the next bar, lift your palm and hit G5 (fret 3) and A5 (fret 5) loud and open, two beats each.",
+      "Loop the two bars. The contrast between tight chugs and big open chords is the heart of countless rock riffs."
+     ],
+     "q": "How does it feel to play your first rock riff: powerful, fun or a bit wild?",
+     "c": "Loop the riff for 3 minutes with a metronome at 70 BPM, then record it and listen back for even chugs."
+    },
+    "de": {
+     "t": "Ein einfaches Rockriff",
+     "g": "Kombiniere Powerchords und Palm Muting in einem klassischen Rockmuster.",
+     "p": [
+      "Spiel leeres E5 als 8 gedämpfte Achtel (zähl 1 und 2 und 3 und 4 und), alles Abschläge.",
+      "Im nächsten Takt heb den Handballen und schlag G5 (3. Bund) und A5 (5. Bund) laut und offen an, je zwei Schläge.",
+      "Wiederhol die zwei Takte. Der Kontrast aus engem Tuckern und großen offenen Akkorden ist das Herz unzähliger Rockriffs."
+     ],
+     "q": "Wie fühlt sich dein erstes Rockriff an: kraftvoll, lustig oder ein bisschen wild?",
+     "c": "Spiel das Riff 3 Minuten mit Metronom bei 70 BPM, nimm es dann auf und hör, ob das Tuckern gleichmäßig ist."
+    },
+    "es": {
+     "t": "Un riff de rock sencillo",
+     "g": "Combinar power chords y palm mute en un patrón de rock clásico.",
+     "p": [
+      "Toca E5 al aire como 8 corcheas apagadas con la palma (cuenta 1 y 2 y 3 y 4 y), todo púas hacia abajo.",
+      "En el siguiente compás levanta la palma y toca G5 (traste 3) y A5 (traste 5) fuertes y abiertos, dos pulsos cada uno.",
+      "Repite los dos compases. El contraste entre el machaque apagado y los acordes abiertos es el corazón de muchísimos riffs."
+     ],
+     "q": "¿Qué se siente al tocar tu primer riff de rock: poder, diversión o algo salvaje?",
+     "c": "Repite el riff 3 minutos con metrónomo a 70 BPM, grábalo y escucha si el machaque suena parejo."
+    },
+    "fr": {
+     "t": "Un riff rock simple",
+     "g": "Combiner power chords et palm mute dans un motif rock classique.",
+     "p": [
+      "Joue E5 à vide en 8 croches étouffées (compte 1 et 2 et 3 et 4 et), tout en coups descendants.",
+      "À la mesure suivante, lève la paume et frappe G5 (case 3) et A5 (case 5) fort et ouverts, deux temps chacun.",
+      "Boucle les deux mesures. Le contraste entre les coups serrés et les grands accords ouverts est au cœur d'innombrables riffs rock."
+     ],
+     "q": "Qu'est-ce que ça fait de jouer ton premier riff rock : puissant, amusant ou un peu sauvage ?",
+     "c": "Boucle le riff pendant 3 minutes au métronome à 70 BPM, puis enregistre-le et écoute si les coups étouffés sont réguliers."
+    },
+    "it": {
+     "t": "Un semplice riff rock",
+     "g": "Unire power chord e palm muting in uno schema rock classico.",
+     "p": [
+      "Suona E5 a vuoto come 8 crome stoppate col palmo (conta 1 e 2 e 3 e 4 e), tutte pennate in giù.",
+      "Nella battuta dopo alza il palmo e suona G5 (3° tasto) e A5 (5° tasto) forti e aperti, due battiti ciascuno.",
+      "Ripeti le due battute. Il contrasto tra colpi stoppati e grandi accordi aperti è il cuore di innumerevoli riff rock."
+     ],
+     "q": "Come ti senti a suonare il tuo primo riff rock: potente, divertito o un po' scatenato?",
+     "c": "Ripeti il riff per 3 minuti col metronomo a 70 BPM, poi registralo e ascolta se i colpi stoppati sono regolari."
+    },
+    "pt": {
+     "t": "Um riff rock simples",
+     "g": "Juntar power chords e palm muting num padrão rock clássico.",
+     "p": [
+      "Toca E5 solto como 8 colcheias abafadas com a palma (conta 1 e 2 e 3 e 4 e), tudo palhetadas para baixo.",
+      "No compasso seguinte levanta a palma e toca G5 (3.ª casa) e A5 (5.ª casa) fortes e abertos, dois tempos cada.",
+      "Repete os dois compassos. O contraste entre o som abafado e os acordes abertos é o coração de inúmeros riffs rock."
+     ],
+     "q": "Como é tocar o teu primeiro riff rock: poderoso, divertido ou um pouco selvagem?",
+     "c": "Repete o riff 3 minutos com metrónomo a 70 BPM, depois grava-o e ouve se o abafado está regular."
+    },
+    "pt_BR": {
+     "t": "Um riff de rock simples",
+     "g": "Juntar power chords e palm mute num padrão clássico de rock.",
+     "p": [
+      "Toque E5 solto como 8 colcheias abafadas com a palma (conte 1 e 2 e 3 e 4 e), tudo palhetada para baixo.",
+      "No compasso seguinte levante a palma e toque G5 (casa 3) e A5 (casa 5) fortes e abertos, dois tempos cada.",
+      "Repita os dois compassos. O contraste entre o som abafado e os acordes abertos é o coração de inúmeros riffs de rock."
+     ],
+     "q": "Como é tocar seu primeiro riff de rock: poderoso, divertido ou meio selvagem?",
+     "c": "Repita o riff por 3 minutos com metrônomo a 70 BPM, depois grave e ouça se o abafado está constante."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "guitar",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet your guitar",
+     "g": "Learn the main parts of the guitar and what each one does.",
+     "p": [
+      "The body amplifies or holds the sound, the neck carries the frets, and the headstock holds the tuners.",
+      "Frets are the metal strips on the neck: pressing behind one shortens the string and raises the pitch.",
+      "Tuners tighten or loosen each string, and the bridge anchors the strings on the body."
+     ],
+     "q": "Which part of the guitar caught your eye first, and why?",
+     "c": "Point to each part of your guitar and say its name out loud: body, neck, headstock, frets, strings, tuners."
+    },
+    "de": {
+     "t": "Lerne deine Gitarre kennen",
+     "g": "Lerne die wichtigsten Teile der Gitarre und ihre Aufgaben kennen.",
+     "p": [
+      "Der Korpus verstärkt oder trägt den Klang, der Hals trägt die Bünde, die Kopfplatte hält die Mechaniken.",
+      "Bünde sind die Metallstäbchen am Hals: Drückst du dahinter, wird die Saite kürzer und der Ton höher.",
+      "Die Mechaniken spannen oder lockern jede Saite, der Steg verankert die Saiten am Korpus."
+     ],
+     "q": "Welcher Teil der Gitarre ist dir zuerst aufgefallen und warum?",
+     "c": "Zeig auf jeden Teil deiner Gitarre und sag laut seinen Namen: Korpus, Hals, Kopfplatte, Bünde, Saiten, Mechaniken."
+    },
+    "es": {
+     "t": "Conoce tu guitarra",
+     "g": "Aprende las partes principales de la guitarra y para qué sirve cada una.",
+     "p": [
+      "La caja amplifica o sostiene el sonido, el mástil lleva los trastes y la pala sujeta las clavijas.",
+      "Los trastes son las barritas de metal del mástil: al pisar detrás de uno, la cuerda se acorta y suena más aguda.",
+      "Las clavijas tensan o aflojan cada cuerda, y el puente fija las cuerdas al cuerpo."
+     ],
+     "q": "¿Qué parte de la guitarra te llamó la atención primero y por qué?",
+     "c": "Señala cada parte de tu guitarra y di su nombre en voz alta: caja, mástil, pala, trastes, cuerdas, clavijas."
+    },
+    "fr": {
+     "t": "Découvre ta guitare",
+     "g": "Apprendre les parties principales de la guitare et le rôle de chacune.",
+     "p": [
+      "La caisse amplifie ou porte le son, le manche porte les frettes et la tête accueille les mécaniques.",
+      "Les frettes sont les barrettes métalliques du manche : appuyer derrière l'une raccourcit la corde et monte la note.",
+      "Les mécaniques tendent ou détendent chaque corde, et le chevalet ancre les cordes sur la caisse."
+     ],
+     "q": "Quelle partie de la guitare as-tu remarquée en premier, et pourquoi ?",
+     "c": "Montre chaque partie de ta guitare et dis son nom à voix haute : caisse, manche, tête, frettes, cordes, mécaniques."
+    },
+    "it": {
+     "t": "Conosci la tua chitarra",
+     "g": "Impara le parti principali della chitarra e a cosa serve ognuna.",
+     "p": [
+      "La cassa amplifica o sostiene il suono, il manico porta i tasti e la paletta regge le meccaniche.",
+      "I tasti sono le barrette di metallo sul manico: premendo dietro uno, la corda si accorcia e la nota sale.",
+      "Le meccaniche tendono o allentano ogni corda, e il ponte fissa le corde sul corpo."
+     ],
+     "q": "Quale parte della chitarra ti ha colpito per prima, e perché?",
+     "c": "Indica ogni parte della tua chitarra e di' il suo nome ad alta voce: cassa, manico, paletta, tasti, corde, meccaniche."
+    },
+    "pt": {
+     "t": "Conhece a tua guitarra",
+     "g": "Aprender as partes principais da guitarra e para que serve cada uma.",
+     "p": [
+      "O corpo amplifica ou sustenta o som, o braço tem os trastes e a cabeça segura as tarraxas.",
+      "Os trastes são as barrinhas de metal do braço: ao pressionar atrás de um, a corda encurta e a nota sobe.",
+      "As tarraxas apertam ou aliviam cada corda, e a ponte prende as cordas ao corpo."
+     ],
+     "q": "Que parte da guitarra te chamou a atenção primeiro, e porquê?",
+     "c": "Aponta para cada parte da tua guitarra e diz o nome em voz alta: corpo, braço, cabeça, trastes, cordas, tarraxas."
+    },
+    "pt_BR": {
+     "t": "Conheça seu violão",
+     "g": "Aprender as partes principais do violão e para que serve cada uma.",
+     "p": [
+      "O corpo amplifica ou sustenta o som, o braço tem os trastes e a mão (cabeça) segura as tarraxas.",
+      "Os trastes são as barrinhas de metal do braço: ao apertar atrás de um, a corda encurta e a nota fica mais aguda.",
+      "As tarraxas esticam ou afrouxam cada corda, e o cavalete prende as cordas no corpo."
+     ],
+     "q": "Qual parte do violão chamou sua atenção primeiro, e por quê?",
+     "c": "Aponte cada parte do seu violão ou guitarra e diga o nome em voz alta: corpo, braço, cabeça, trastes, cordas, tarraxas."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acoustic, electric or classical?",
+     "g": "Understand how the three main guitar types differ in sound, strings and feel.",
+     "p": [
+      "Acoustic guitars use steel strings and a hollow body for a bright, loud sound without an amp.",
+      "Electric guitars have a solid or thin body and pickups, so they need an amplifier to be heard well.",
+      "Classical guitars use soft nylon strings and a wider neck, gentle on beginner fingertips."
+     ],
+     "q": "Which type of guitar do you have or dream of, and what music do you want to play on it?",
+     "c": "Listen to one song played on each type and write one word that describes each sound."
+    },
+    "de": {
+     "t": "Akustik, E-Gitarre oder Konzertgitarre?",
+     "g": "Verstehe, wie sich die drei Gitarrentypen in Klang, Saiten und Spielgefühl unterscheiden.",
+     "p": [
+      "Westerngitarren haben Stahlsaiten und einen hohlen Korpus: hell und laut, ganz ohne Verstärker.",
+      "E-Gitarren haben einen massiven oder flachen Korpus mit Tonabnehmern und brauchen einen Verstärker.",
+      "Konzertgitarren haben weiche Nylonsaiten und einen breiteren Hals, sanft zu Anfängerfingern."
+     ],
+     "q": "Welchen Gitarrentyp hast du oder wünschst du dir, und welche Musik willst du darauf spielen?",
+     "c": "Hör dir je einen Song auf jedem Gitarrentyp an und notiere ein Wort, das jeden Klang beschreibt."
+    },
+    "es": {
+     "t": "¿Acústica, eléctrica o clásica?",
+     "g": "Entender en qué se diferencian los tres tipos de guitarra en sonido, cuerdas y tacto.",
+     "p": [
+      "La acústica usa cuerdas de acero y caja hueca: suena brillante y fuerte sin amplificador.",
+      "La eléctrica tiene cuerpo macizo o fino y pastillas, así que necesita un amplificador.",
+      "La clásica usa cuerdas suaves de nailon y un mástil más ancho, amable con los dedos que empiezan."
+     ],
+     "q": "¿Qué tipo de guitarra tienes o sueñas tener, y qué música quieres tocar con ella?",
+     "c": "Escucha una canción tocada con cada tipo y escribe una palabra que describa cada sonido."
+    },
+    "fr": {
+     "t": "Folk, électrique ou classique ?",
+     "g": "Comprendre ce qui distingue les trois grands types de guitare : son, cordes et sensation.",
+     "p": [
+      "La folk a des cordes en acier et une caisse creuse : un son brillant et fort, sans ampli.",
+      "L'électrique a un corps plein ou fin et des micros, elle a donc besoin d'un amplificateur.",
+      "La classique a des cordes souples en nylon et un manche plus large, doux pour les doigts débutants."
+     ],
+     "q": "Quel type de guitare as-tu ou rêves-tu d'avoir, et quelle musique veux-tu y jouer ?",
+     "c": "Écoute un morceau joué sur chaque type et note un mot qui décrit chaque son."
+    },
+    "it": {
+     "t": "Acustica, elettrica o classica?",
+     "g": "Capire come i tre tipi di chitarra cambiano per suono, corde e sensazione.",
+     "p": [
+      "L'acustica ha corde in acciaio e cassa vuota: suono brillante e forte anche senza amplificatore.",
+      "L'elettrica ha corpo pieno o sottile e pickup, quindi ha bisogno di un amplificatore.",
+      "La classica ha corde morbide in nylon e manico più largo, gentile con le dita di chi inizia."
+     ],
+     "q": "Che tipo di chitarra hai o sogni di avere, e che musica vuoi suonarci?",
+     "c": "Ascolta un brano suonato con ogni tipo e scrivi una parola che descriva ciascun suono."
+    },
+    "pt": {
+     "t": "Acústica, elétrica ou clássica?",
+     "g": "Perceber como os três tipos de guitarra diferem no som, nas cordas e no toque.",
+     "p": [
+      "A acústica tem cordas de aço e corpo oco: som brilhante e forte, sem amplificador.",
+      "A elétrica tem corpo maciço ou fino e captadores, por isso precisa de um amplificador.",
+      "A clássica tem cordas macias de nylon e braço mais largo, suave para dedos de principiante."
+     ],
+     "q": "Que tipo de guitarra tens ou sonhas ter, e que música queres tocar nela?",
+     "c": "Ouve uma música tocada em cada tipo e escreve uma palavra que descreva cada som."
+    },
+    "pt_BR": {
+     "t": "Violão de aço, guitarra ou violão de nylon?",
+     "g": "Entender como os três tipos principais diferem em som, cordas e sensação ao tocar.",
+     "p": [
+      "O violão de aço tem cordas de aço e corpo oco: som brilhante e alto, sem amplificador.",
+      "A guitarra elétrica tem corpo maciço ou fino e captadores, por isso precisa de amplificador.",
+      "O violão clássico usa cordas macias de nylon e braço mais largo, gentil com dedos iniciantes."
+     ],
+     "q": "Qual instrumento você tem ou sonha ter, e que música quer tocar nele?",
+     "c": "Ouça uma música tocada em cada tipo e escreva uma palavra que descreva cada som."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to sit and hold the guitar",
+     "g": "Find a relaxed posture so you can play longer without tension.",
+     "p": [
+      "Sit on a chair without armrests, back straight but relaxed, both feet flat on the floor.",
+      "Rest the guitar's waist on your right leg (left if you play left-handed) with the neck angled slightly up.",
+      "Your picking forearm rests on the top edge of the body; your fretting arm hangs loosely, elbow free."
+     ],
+     "q": "Where do you usually practise, and is your chair comfortable for playing?",
+     "c": "Sit with your guitar for two minutes, then check your shoulders: if they have crept up, drop them and breathe."
+    },
+    "de": {
+     "t": "Richtig sitzen und die Gitarre halten",
+     "g": "Finde eine entspannte Haltung, damit du länger ohne Verspannung spielen kannst.",
+     "p": [
+      "Setz dich auf einen Stuhl ohne Armlehnen, Rücken gerade, aber locker, beide Füße flach am Boden.",
+      "Leg die Taille der Gitarre auf dein rechtes Bein (links für Linkshänder), Hals leicht nach oben.",
+      "Der Anschlagsunterarm ruht auf der Zarge oben, der Greifarm hängt locker, der Ellbogen ist frei."
+     ],
+     "q": "Wo übst du meistens, und ist dein Stuhl bequem zum Spielen?",
+     "c": "Sitz zwei Minuten mit der Gitarre, dann prüf deine Schultern: Sind sie hochgezogen, lass sie sinken und atme."
+    },
+    "es": {
+     "t": "Cómo sentarse y sujetar la guitarra",
+     "g": "Encontrar una postura relajada para tocar más tiempo sin tensión.",
+     "p": [
+      "Siéntate en una silla sin brazos, espalda recta pero suelta y los dos pies apoyados en el suelo.",
+      "Apoya la cintura de la guitarra en la pierna derecha (izquierda si eres zurdo) con el mástil algo inclinado hacia arriba.",
+      "El antebrazo de la mano que rasguea descansa en el borde de la caja; el otro brazo cuelga suelto, con el codo libre."
+     ],
+     "q": "¿Dónde sueles practicar y es cómoda tu silla para tocar?",
+     "c": "Siéntate dos minutos con la guitarra y revisa tus hombros: si han subido, bájalos y respira."
+    },
+    "fr": {
+     "t": "Bien s'asseoir et tenir la guitare",
+     "g": "Trouver une posture détendue pour jouer plus longtemps sans tension.",
+     "p": [
+      "Assieds-toi sur une chaise sans accoudoirs, dos droit mais souple, les deux pieds à plat au sol.",
+      "Pose la taille de la guitare sur ta jambe droite (gauche si tu es gaucher), le manche légèrement relevé.",
+      "L'avant-bras qui gratte repose sur le bord de la caisse ; l'autre bras pend librement, coude dégagé."
+     ],
+     "q": "Où t'entraînes-tu d'habitude, et ta chaise est-elle confortable pour jouer ?",
+     "c": "Reste assis deux minutes avec ta guitare, puis vérifie tes épaules : si elles sont montées, relâche-les et respire."
+    },
+    "it": {
+     "t": "Come sedersi e tenere la chitarra",
+     "g": "Trovare una postura rilassata per suonare più a lungo senza tensioni.",
+     "p": [
+      "Siediti su una sedia senza braccioli, schiena dritta ma morbida, entrambi i piedi ben appoggiati.",
+      "Appoggia il punto vita della chitarra sulla gamba destra (sinistra se sei mancino), manico un po' verso l'alto.",
+      "L'avambraccio che pizzica poggia sul bordo della cassa; l'altro braccio pende sciolto, gomito libero."
+     ],
+     "q": "Dove ti eserciti di solito, e la tua sedia è comoda per suonare?",
+     "c": "Siediti due minuti con la chitarra, poi controlla le spalle: se si sono alzate, abbassale e respira."
+    },
+    "pt": {
+     "t": "Como sentar e segurar a guitarra",
+     "g": "Encontrar uma postura relaxada para tocar mais tempo sem tensão.",
+     "p": [
+      "Senta-te numa cadeira sem braços, costas direitas mas soltas, os dois pés bem assentes no chão.",
+      "Apoia a cintura da guitarra na perna direita (esquerda se fores canhoto), com o braço um pouco inclinado para cima.",
+      "O antebraço da mão que toca descansa na borda do corpo; o outro braço fica solto, cotovelo livre."
+     ],
+     "q": "Onde costumas praticar, e a tua cadeira é confortável para tocar?",
+     "c": "Senta-te dois minutos com a guitarra e verifica os ombros: se subiram, baixa-os e respira."
+    },
+    "pt_BR": {
+     "t": "Como sentar e segurar o violão",
+     "g": "Encontrar uma postura relaxada para tocar mais tempo sem tensão.",
+     "p": [
+      "Sente numa cadeira sem braços, costas retas mas soltas, os dois pés apoiados no chão.",
+      "Apoie a cintura do violão na perna direita (esquerda se for canhoto), com o braço levemente inclinado para cima.",
+      "O antebraço da mão que toca descansa na borda do corpo; o outro braço fica solto, cotovelo livre."
+     ],
+     "q": "Onde você costuma praticar, e sua cadeira é confortável para tocar?",
+     "c": "Sente dois minutos com o violão e confira os ombros: se subiram, solte-os e respire."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming the six strings",
+     "g": "Learn the names of the six strings from thickest to thinnest.",
+     "p": [
+      "In standard tuning the strings are E A D G B E, from the thickest (lowest) to the thinnest (highest).",
+      "Strings are also numbered: the thin high E is string 1 and the thick low E is string 6.",
+      "A memory trick: Eddie Ate Dynamite, Good Bye Eddie. Or invent your own silly sentence!"
+     ],
+     "q": "Can you make up your own funny sentence to remember E A D G B E?",
+     "c": "Pluck each open string from thick to thin and say its name and number out loud, then do it backwards."
+    },
+    "de": {
+     "t": "Die sechs Saiten benennen",
+     "g": "Lerne die Namen der sechs Saiten von der dicksten bis zur dünnsten.",
+     "p": [
+      "In Standardstimmung heißen die Saiten E A D G H E, von der dicksten (tiefsten) zur dünnsten (höchsten).",
+      "Die Saiten sind auch nummeriert: Die dünne hohe E-Saite ist Saite 1, die dicke tiefe E-Saite Saite 6.",
+      "Eine Eselsbrücke: Eine Alte Dame Geht Heute Einkaufen. Oder erfinde deinen eigenen lustigen Satz!"
+     ],
+     "q": "Fällt dir ein eigener lustiger Satz ein, um dir E A D G H E zu merken?",
+     "c": "Zupf jede Leersaite von dick nach dünn, sag laut Namen und Nummer, und dann alles rückwärts."
+    },
+    "es": {
+     "t": "Los nombres de las seis cuerdas",
+     "g": "Aprender los nombres de las seis cuerdas de la más gruesa a la más fina.",
+     "p": [
+      "En afinación estándar son Mi La Re Sol Si Mi (E A D G B E), de la más gruesa y grave a la más fina y aguda.",
+      "También se numeran: el Mi agudo y fino es la cuerda 1 y el Mi grave y grueso es la cuerda 6.",
+      "Un truco: Mi Lado Rebelde Sólo Sigue Mirando. ¡O inventa tu propia frase divertida!"
+     ],
+     "q": "¿Se te ocurre una frase divertida propia para recordar Mi La Re Sol Si Mi?",
+     "c": "Toca cada cuerda al aire de gruesa a fina diciendo su nombre y número en voz alta, y luego al revés."
+    },
+    "fr": {
+     "t": "Nommer les six cordes",
+     "g": "Apprendre le nom des six cordes, de la plus grosse à la plus fine.",
+     "p": [
+      "En accordage standard : Mi La Ré Sol Si Mi (E A D G B E), de la plus grosse (grave) à la plus fine (aiguë).",
+      "Les cordes sont aussi numérotées : le Mi aigu et fin est la corde 1, le Mi grave et gros la corde 6.",
+      "Une astuce : Mon Lapin Ronge Souvent Six Myrtilles. Ou invente ta propre phrase rigolote !"
+     ],
+     "q": "Peux-tu inventer ta propre phrase amusante pour retenir Mi La Ré Sol Si Mi ?",
+     "c": "Joue chaque corde à vide de la grosse à la fine en disant son nom et son numéro, puis à l'envers."
+    },
+    "it": {
+     "t": "I nomi delle sei corde",
+     "g": "Imparare i nomi delle sei corde dalla più spessa alla più sottile.",
+     "p": [
+      "Nell'accordatura standard sono Mi La Re Sol Si Mi (E A D G B E), dalla più spessa e grave alla più sottile e acuta.",
+      "Le corde hanno anche un numero: il Mi cantino sottile è la corda 1, il Mi basso spesso è la corda 6.",
+      "Un trucco: Mia Lucia Regala Sempre Simpatici Mirtilli. Oppure inventa la tua frase buffa!"
+     ],
+     "q": "Riesci a inventare una frase divertente tutta tua per ricordare Mi La Re Sol Si Mi?",
+     "c": "Pizzica ogni corda a vuoto dalla spessa alla sottile dicendo nome e numero ad alta voce, poi al contrario."
+    },
+    "pt": {
+     "t": "Os nomes das seis cordas",
+     "g": "Aprender os nomes das seis cordas, da mais grossa à mais fina.",
+     "p": [
+      "Na afinação padrão são Mi Lá Ré Sol Si Mi (E A D G B E), da mais grossa e grave à mais fina e aguda.",
+      "As cordas também têm número: o Mi agudo e fino é a corda 1 e o Mi grave e grosso é a corda 6.",
+      "Um truque: Meu Lindo Rato Salta Sempre Muito. Ou inventa a tua própria frase divertida!"
+     ],
+     "q": "Consegues inventar uma frase divertida tua para lembrar Mi Lá Ré Sol Si Mi?",
+     "c": "Toca cada corda solta da grossa para a fina dizendo nome e número em voz alta, depois ao contrário."
+    },
+    "pt_BR": {
+     "t": "Os nomes das seis cordas",
+     "g": "Aprender os nomes das seis cordas, da mais grossa à mais fina.",
+     "p": [
+      "Na afinação padrão são Mi Lá Ré Sol Si Mi (E A D G B E), da mais grossa e grave à mais fina e aguda.",
+      "As cordas também têm número: o Mi agudo e fino é a corda 1 e o Mi grave e grosso é a corda 6.",
+      "Um truque: Meu Lindo Rato Salta Sempre Muito. Ou invente sua própria frase divertida!"
+     ],
+     "q": "Você consegue inventar uma frase divertida sua para lembrar Mi Lá Ré Sol Si Mi?",
+     "c": "Toque cada corda solta da grossa para a fina dizendo nome e número em voz alta, depois ao contrário."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tuning with a tuner",
+     "g": "Use a clip-on or app tuner to bring each string to the right pitch.",
+     "p": [
+      "Clip the tuner on the headstock or open a tuner app, then pluck one open string and let it ring.",
+      "If the note shows flat (too low), tighten the tuner slowly; if sharp (too high), loosen it.",
+      "Tip: always tune up to the note. If you overshoot, go below and come back up so the string holds."
+     ],
+     "q": "Have you tried tuning before, and which string was the trickiest?",
+     "c": "Tune all six strings with a tuner, play a few strums, then check again and note which string drifted."
+    },
+    "de": {
+     "t": "Stimmen mit einem Stimmgerät",
+     "g": "Bring jede Saite mit einem Clip-Stimmgerät oder einer App auf die richtige Tonhöhe.",
+     "p": [
+      "Klemm das Stimmgerät an die Kopfplatte oder öffne eine Stimm-App, zupf eine Leersaite und lass sie klingen.",
+      "Ist der Ton zu tief (flat), dreh die Mechanik langsam fester; ist er zu hoch (sharp), lockere sie.",
+      "Tipp: Immer von unten zum Ton hin stimmen. Zu weit gedreht? Erst tiefer, dann wieder hoch, so hält die Saite."
+     ],
+     "q": "Hast du schon mal gestimmt, und welche Saite war am kniffligsten?",
+     "c": "Stimm alle sechs Saiten, schlag ein paar Akkorde an, prüf dann erneut und notiere, welche Saite sich verstimmt hat."
+    },
+    "es": {
+     "t": "Afinar con afinador",
+     "g": "Usar un afinador de pinza o una app para llevar cada cuerda a su nota correcta.",
+     "p": [
+      "Pon el afinador en la pala o abre una app, toca una cuerda al aire y déjala sonar.",
+      "Si la nota sale baja (bemol), tensa la clavija despacio; si sale alta (sostenido), aflójala.",
+      "Consejo: afina siempre subiendo hacia la nota. Si te pasas, baja un poco y vuelve a subir para que aguante."
+     ],
+     "q": "¿Has afinado alguna vez y qué cuerda te costó más?",
+     "c": "Afina las seis cuerdas, rasguea un poco, vuelve a comprobar y anota qué cuerda se desafinó."
+    },
+    "fr": {
+     "t": "S'accorder avec un accordeur",
+     "g": "Utiliser un accordeur à pince ou une appli pour mettre chaque corde à la bonne hauteur.",
+     "p": [
+      "Fixe l'accordeur sur la tête ou ouvre une appli, joue une corde à vide et laisse-la sonner.",
+      "Si la note est trop basse (bémol), tends doucement la mécanique ; trop haute (dièse), détends-la.",
+      "Astuce : monte toujours vers la note. Si tu dépasses, redescends puis remonte pour que la corde tienne."
+     ],
+     "q": "As-tu déjà accordé une guitare, et quelle corde était la plus difficile ?",
+     "c": "Accorde les six cordes, gratte un peu, revérifie et note quelle corde s'est désaccordée."
+    },
+    "it": {
+     "t": "Accordare con l'accordatore",
+     "g": "Usare un accordatore a clip o un'app per portare ogni corda alla nota giusta.",
+     "p": [
+      "Aggancia l'accordatore alla paletta o apri un'app, pizzica una corda a vuoto e lasciala suonare.",
+      "Se la nota è calante (troppo bassa), tendi piano la meccanica; se è crescente (troppo alta), allentala.",
+      "Consiglio: accorda sempre salendo verso la nota. Se superi, scendi un po' e risali, così la corda tiene."
+     ],
+     "q": "Hai già provato ad accordare, e quale corda è stata la più difficile?",
+     "c": "Accorda tutte e sei le corde, strimpella un po', ricontrolla e annota quale corda si è scordata."
+    },
+    "pt": {
+     "t": "Afinar com afinador",
+     "g": "Usar um afinador de mola ou uma app para pôr cada corda na nota certa.",
+     "p": [
+      "Prende o afinador na cabeça ou abre uma app, toca uma corda solta e deixa-a soar.",
+      "Se a nota estiver baixa (bemol), aperta a tarraxa devagar; se estiver alta (sustenido), alivia-a.",
+      "Dica: afina sempre a subir para a nota. Se passares, desce um pouco e volta a subir para a corda segurar."
+     ],
+     "q": "Já experimentaste afinar, e que corda foi a mais difícil?",
+     "c": "Afina as seis cordas, toca um pouco, volta a verificar e anota que corda desafinou."
+    },
+    "pt_BR": {
+     "t": "Afinando com afinador",
+     "g": "Usar um afinador de clipe ou um app para deixar cada corda na nota certa.",
+     "p": [
+      "Prenda o afinador na cabeça do violão ou abra um app, toque uma corda solta e deixe soar.",
+      "Se a nota estiver baixa (bemol), aperte a tarraxa devagar; se estiver alta (sustenido), afrouxe.",
+      "Dica: afine sempre subindo até a nota. Se passar, desça um pouco e suba de novo para a corda segurar."
+     ],
+     "q": "Você já tentou afinar, e qual corda foi a mais difícil?",
+     "c": "Afine as seis cordas, toque um pouco, confira de novo e anote qual corda desafinou."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holding a pick",
+     "g": "Learn a relaxed pick grip for clean, controlled strokes.",
+     "p": [
+      "Rest the pick on the side of your index finger and press it lightly with the pad of your thumb.",
+      "Let only a small tip show, about 2 to 3 mm, so the pick glides over strings instead of digging in.",
+      "Hold it firmly enough not to drop it, loosely enough to stay relaxed; a medium pick is a good start."
+     ],
+     "q": "Have you used a pick before, or do you prefer playing with your fingers so far?",
+     "c": "Hold the pick and strum the open strings slowly ten times, checking that the tip stays small and steady."
+    },
+    "de": {
+     "t": "Das Plektrum halten",
+     "g": "Lerne einen lockeren Plektrumgriff für saubere, kontrollierte Anschläge.",
+     "p": [
+      "Leg das Plektrum an die Seite des Zeigefingers und drück es leicht mit der Daumenkuppe fest.",
+      "Lass nur eine kleine Spitze herausschauen, etwa 2 bis 3 mm, damit es über die Saiten gleitet.",
+      "Halt es fest genug, damit es nicht fällt, und locker genug, um entspannt zu bleiben; mittlere Stärke passt gut."
+     ],
+     "q": "Hast du schon mal mit Plektrum gespielt, oder spielst du bisher lieber mit den Fingern?",
+     "c": "Halt das Plektrum und schlag die Leersaiten zehnmal langsam an; achte darauf, dass die Spitze klein und ruhig bleibt."
+    },
+    "es": {
+     "t": "Cómo sujetar la púa",
+     "g": "Aprender un agarre relajado de la púa para golpes limpios y controlados.",
+     "p": [
+      "Apoya la púa en el lateral del índice y presiónala suavemente con la yema del pulgar.",
+      "Deja asomar solo una puntita, de 2 a 3 mm, para que se deslice por las cuerdas sin engancharse.",
+      "Sujétala lo bastante firme para que no se caiga y lo bastante suelta para estar relajado; una púa media va bien."
+     ],
+     "q": "¿Has usado púa alguna vez o de momento prefieres tocar con los dedos?",
+     "c": "Coge la púa y rasguea las cuerdas al aire despacio diez veces, comprobando que la punta asoma poco y firme."
+    },
+    "fr": {
+     "t": "Tenir un médiator",
+     "g": "Apprendre une prise de médiator détendue pour des coups nets et maîtrisés.",
+     "p": [
+      "Pose le médiator sur le côté de l'index et presse-le légèrement avec la pulpe du pouce.",
+      "Ne laisse dépasser qu'une petite pointe, 2 à 3 mm, pour qu'il glisse sur les cordes sans accrocher.",
+      "Tiens-le assez fermement pour ne pas le lâcher, assez souplement pour rester détendu ; un médiator medium est idéal."
+     ],
+     "q": "As-tu déjà joué au médiator, ou préfères-tu les doigts pour l'instant ?",
+     "c": "Tiens le médiator et gratte lentement les cordes à vide dix fois en vérifiant que la pointe reste petite et stable."
+    },
+    "it": {
+     "t": "Come tenere il plettro",
+     "g": "Imparare una presa del plettro rilassata per colpi puliti e controllati.",
+     "p": [
+      "Appoggia il plettro sul lato dell'indice e premilo leggermente con il polpastrello del pollice.",
+      "Lascia sporgere solo una punta piccola, 2 o 3 mm, così scivola sulle corde senza impuntarsi.",
+      "Tienilo abbastanza saldo da non farlo cadere, abbastanza morbido da restare rilassato; un plettro medio va benissimo."
+     ],
+     "q": "Hai mai usato il plettro, o per ora preferisci suonare con le dita?",
+     "c": "Tieni il plettro e pennella lentamente le corde a vuoto dieci volte, controllando che la punta resti piccola e ferma."
+    },
+    "pt": {
+     "t": "Segurar a palheta",
+     "g": "Aprender uma pega relaxada da palheta para toques limpos e controlados.",
+     "p": [
+      "Apoia a palheta no lado do indicador e pressiona-a levemente com a ponta do polegar.",
+      "Deixa aparecer só uma pontinha, 2 a 3 mm, para deslizar nas cordas sem prender.",
+      "Segura com firmeza para não cair, mas solta o suficiente para estar relaxado; uma palheta média é boa para começar."
+     ],
+     "q": "Já usaste palheta, ou por agora preferes tocar com os dedos?",
+     "c": "Segura a palheta e toca as cordas soltas devagar dez vezes, confirmando que a ponta fica pequena e firme."
+    },
+    "pt_BR": {
+     "t": "Segurando a palheta",
+     "g": "Aprender uma pegada relaxada da palheta para toques limpos e controlados.",
+     "p": [
+      "Apoie a palheta na lateral do indicador e pressione de leve com a ponta do polegar.",
+      "Deixe aparecer só uma pontinha, 2 a 3 mm, para deslizar nas cordas sem enroscar.",
+      "Segure firme para não cair, mas solto o bastante para ficar relaxado; uma palheta média é ótima para começar."
+     ],
+     "q": "Você já usou palheta, ou por enquanto prefere tocar com os dedos?",
+     "c": "Segure a palheta e toque as cordas soltas devagar dez vezes, conferindo se a ponta fica pequena e firme."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first single-note picking",
+     "g": "Play even downstrokes on open strings with a relaxed motion.",
+     "p": [
+      "Pick one open string with a small downward stroke, moving from the wrist rather than the whole arm.",
+      "Keep each stroke short: the pick should finish just past the string, ready for the next note.",
+      "Aim for an even volume and steady timing, like a clock ticking, before you try to go faster."
+     ],
+     "q": "How does it feel to play single notes: easy, strange or fun?",
+     "c": "Play 8 downstrokes on each open string from low E to high E, keeping every note equally loud."
+    },
+    "de": {
+     "t": "Deine ersten Einzeltöne",
+     "g": "Spiele gleichmäßige Abschläge auf Leersaiten mit einer lockeren Bewegung.",
+     "p": [
+      "Schlag eine Leersaite mit einer kleinen Abwärtsbewegung an, aus dem Handgelenk statt aus dem ganzen Arm.",
+      "Halte jeden Anschlag kurz: Das Plektrum endet knapp hinter der Saite, bereit für den nächsten Ton.",
+      "Achte auf gleiche Lautstärke und ruhiges Timing, wie eine tickende Uhr, bevor du schneller wirst."
+     ],
+     "q": "Wie fühlt es sich an, Einzeltöne zu spielen: leicht, seltsam oder lustig?",
+     "c": "Spiel 8 Abschläge auf jeder Leersaite von tiefem bis hohem E, alle Töne gleich laut."
+    },
+    "es": {
+     "t": "Tus primeras notas sueltas",
+     "g": "Tocar púas hacia abajo uniformes en cuerdas al aire con un movimiento relajado.",
+     "p": [
+      "Pulsa una cuerda al aire con un golpe corto hacia abajo, moviendo la muñeca y no todo el brazo.",
+      "Haz cada golpe pequeño: la púa debe terminar justo después de la cuerda, lista para la siguiente nota.",
+      "Busca el mismo volumen y un ritmo constante, como un reloj, antes de intentar ir más rápido."
+     ],
+     "q": "¿Qué tal te sienta tocar notas sueltas: fácil, raro o divertido?",
+     "c": "Toca 8 púas hacia abajo en cada cuerda al aire, del Mi grave al Mi agudo, todas con el mismo volumen."
+    },
+    "fr": {
+     "t": "Tes premières notes au médiator",
+     "g": "Jouer des coups descendants réguliers sur les cordes à vide, avec un geste détendu.",
+     "p": [
+      "Joue une corde à vide d'un petit coup vers le bas, en bougeant le poignet plutôt que tout le bras.",
+      "Garde chaque coup court : le médiator s'arrête juste après la corde, prêt pour la note suivante.",
+      "Vise un volume égal et un tempo régulier, comme le tic-tac d'une horloge, avant d'accélérer."
+     ],
+     "q": "Comment te sens-tu en jouant des notes seules : facile, bizarre ou amusant ?",
+     "c": "Joue 8 coups descendants sur chaque corde à vide, du Mi grave au Mi aigu, toutes aussi fortes."
+    },
+    "it": {
+     "t": "Le tue prime note singole",
+     "g": "Suonare pennate in giù regolari sulle corde a vuoto con un movimento rilassato.",
+     "p": [
+      "Pizzica una corda a vuoto con una piccola pennata in giù, muovendo il polso e non tutto il braccio.",
+      "Tieni ogni pennata corta: il plettro si ferma appena oltre la corda, pronto per la nota dopo.",
+      "Punta a un volume uguale e a un tempo regolare, come il ticchettio di un orologio, prima di accelerare."
+     ],
+     "q": "Come ti senti a suonare note singole: facile, strano o divertente?",
+     "c": "Suona 8 pennate in giù su ogni corda a vuoto, dal Mi basso al Mi cantino, tutte allo stesso volume."
+    },
+    "pt": {
+     "t": "As tuas primeiras notas soltas",
+     "g": "Tocar palhetadas para baixo regulares em cordas soltas, com um movimento relaxado.",
+     "p": [
+      "Toca uma corda solta com uma pequena palhetada para baixo, movendo o pulso e não o braço todo.",
+      "Mantém cada palhetada curta: a palheta para logo depois da corda, pronta para a nota seguinte.",
+      "Procura o mesmo volume e um tempo certo, como o tique-taque de um relógio, antes de acelerar."
+     ],
+     "q": "Como te sentes a tocar notas soltas: fácil, estranho ou divertido?",
+     "c": "Toca 8 palhetadas para baixo em cada corda solta, do Mi grave ao Mi agudo, todas com o mesmo volume."
+    },
+    "pt_BR": {
+     "t": "Suas primeiras notas soltas",
+     "g": "Tocar palhetadas para baixo regulares nas cordas soltas, com movimento relaxado.",
+     "p": [
+      "Toque uma corda solta com uma pequena palhetada para baixo, mexendo o pulso e não o braço inteiro.",
+      "Deixe cada palhetada curta: a palheta para logo depois da corda, pronta para a próxima nota.",
+      "Busque o mesmo volume e um tempo constante, como o tique-taque de um relógio, antes de acelerar."
+     ],
+     "q": "Como é tocar notas soltas para você: fácil, estranho ou divertido?",
+     "c": "Toque 8 palhetadas para baixo em cada corda solta, do Mi grave ao Mi agudo, todas no mesmo volume."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fretting a note cleanly",
+     "g": "Press a string so the note rings clearly without buzzing.",
+     "p": [
+      "Use your fingertip and place it just behind the fret, not on top of it and not in the middle of the gap.",
+      "Keep your thumb roughly behind the neck, opposite your fingers, like a gentle clamp.",
+      "Press only as hard as needed: start light, add pressure until the buzz stops, then stop there."
+     ],
+     "q": "When you fret a note, does it buzz, sound muffled, or ring clearly?",
+     "c": "Fret each string at the 3rd fret with your ring finger and pick it; adjust until all six notes ring clean."
+    },
+    "de": {
+     "t": "Einen Ton sauber greifen",
+     "g": "Drück eine Saite so, dass der Ton klar klingt und nicht schnarrt.",
+     "p": [
+      "Benutz die Fingerkuppe und setz sie direkt hinter den Bundstab, nicht darauf und nicht in die Mitte des Feldes.",
+      "Der Daumen liegt etwa hinter dem Hals, gegenüber den Fingern, wie eine sanfte Klammer.",
+      "Drück nur so fest wie nötig: Beginn leicht, erhöh den Druck, bis das Schnarren weg ist, und bleib dabei."
+     ],
+     "q": "Wenn du einen Ton greifst: Schnarrt er, klingt er dumpf oder klingt er klar?",
+     "c": "Greif jede Saite im 3. Bund mit dem Ringfinger und schlag sie an; korrigiere, bis alle sechs Töne sauber klingen."
+    },
+    "es": {
+     "t": "Pisar una nota con limpieza",
+     "g": "Presionar una cuerda para que la nota suene clara y sin trastear.",
+     "p": [
+      "Usa la yema del dedo y colócala justo detrás del traste, no encima ni en medio del espacio.",
+      "Mantén el pulgar más o menos detrás del mástil, frente a los dedos, como una pinza suave.",
+      "Aprieta solo lo necesario: empieza suave y sube la presión hasta que deje de zumbar, y quédate ahí."
+     ],
+     "q": "Cuando pisas una nota, ¿zumba, suena apagada o suena clara?",
+     "c": "Pisa cada cuerda en el traste 3 con el anular y tócala; ajusta hasta que las seis notas suenen limpias."
+    },
+    "fr": {
+     "t": "Appuyer une note proprement",
+     "g": "Presser une corde pour que la note sonne clairement, sans frisement.",
+     "p": [
+      "Utilise le bout du doigt et place-le juste derrière la frette, ni dessus ni au milieu de la case.",
+      "Garde le pouce à peu près derrière le manche, face aux doigts, comme une pince douce.",
+      "N'appuie que ce qu'il faut : commence léger, augmente jusqu'à ce que ça ne frise plus, puis reste là."
+     ],
+     "q": "Quand tu appuies une note, est-ce qu'elle frise, sonne étouffée ou sonne clair ?",
+     "c": "Appuie chaque corde en case 3 avec l'annulaire et joue-la ; ajuste jusqu'à ce que les six notes sonnent net."
+    },
+    "it": {
+     "t": "Premere una nota in modo pulito",
+     "g": "Premere una corda così che la nota suoni chiara, senza ronzii.",
+     "p": [
+      "Usa il polpastrello e mettilo appena dietro la barretta del tasto, non sopra e non al centro dello spazio.",
+      "Tieni il pollice più o meno dietro al manico, di fronte alle dita, come una pinza leggera.",
+      "Premi solo quanto serve: parti leggero, aumenta finché il ronzio sparisce, poi fermati lì."
+     ],
+     "q": "Quando premi una nota, ronza, suona spenta o suona chiara?",
+     "c": "Premi ogni corda al 3° tasto con l'anulare e suonala; correggi finché tutte e sei le note suonano pulite."
+    },
+    "pt": {
+     "t": "Pressionar uma nota com limpeza",
+     "g": "Pressionar uma corda para a nota soar clara, sem trastejar.",
+     "p": [
+      "Usa a ponta do dedo e coloca-a logo atrás do traste, não em cima nem a meio da casa.",
+      "Mantém o polegar mais ou menos atrás do braço, em frente aos dedos, como uma pinça suave.",
+      "Aperta só o necessário: começa leve e aumenta até deixar de zumbir, e fica por aí."
+     ],
+     "q": "Quando pressionas uma nota, ela zumbe, soa abafada ou soa clara?",
+     "c": "Pressiona cada corda na 3.ª casa com o anelar e toca-a; ajusta até as seis notas soarem limpas."
+    },
+    "pt_BR": {
+     "t": "Apertando uma nota com limpeza",
+     "g": "Apertar uma corda para a nota soar clara, sem trastejar.",
+     "p": [
+      "Use a ponta do dedo e coloque logo atrás do traste, nem em cima dele nem no meio da casa.",
+      "Mantenha o polegar mais ou menos atrás do braço, na frente dos dedos, como uma pinça suave.",
+      "Aperte só o necessário: comece leve e aumente até parar de zumbir, e fique nessa força."
+     ],
+     "q": "Quando você aperta uma nota, ela zumbe, soa abafada ou soa limpa?",
+     "c": "Aperte cada corda na casa 3 com o anelar e toque; ajuste até as seis notas soarem limpas."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finger numbers and one finger per fret",
+     "g": "Number your fretting fingers and learn why each one covers its own fret.",
+     "p": [
+      "Fretting fingers are numbered: index 1, middle 2, ring 3, little finger 4. The thumb is usually T.",
+      "One finger per fret: in first position, finger 1 plays fret 1, finger 2 fret 2, and so on up to fret 4.",
+      "This keeps your hand still and your fingers ready, so you stretch less and play faster later on."
+     ],
+     "q": "Which finger feels weakest right now, and which feels strongest?",
+     "c": "On the low E string, play frets 1-2-3-4 with fingers 1-2-3-4, keeping each finger hovering close to its fret."
+    },
+    "de": {
+     "t": "Fingernummern und ein Finger pro Bund",
+     "g": "Nummeriere deine Greiffinger und lerne, warum jeder Finger seinen eigenen Bund hat.",
+     "p": [
+      "Die Greiffinger sind nummeriert: Zeigefinger 1, Mittelfinger 2, Ringfinger 3, kleiner Finger 4, Daumen T.",
+      "Ein Finger pro Bund: In der ersten Lage spielt Finger 1 den 1. Bund, Finger 2 den 2. Bund usw. bis Bund 4.",
+      "So bleibt die Hand ruhig und die Finger bereit; du dehnst weniger und spielst später schneller."
+     ],
+     "q": "Welcher Finger fühlt sich gerade am schwächsten an, welcher am stärksten?",
+     "c": "Spiel auf der tiefen E-Saite die Bünde 1-2-3-4 mit den Fingern 1-2-3-4, jeder Finger schwebt nah an seinem Bund."
+    },
+    "es": {
+     "t": "Números de dedos y un dedo por traste",
+     "g": "Numerar los dedos de la mano que pisa y entender por qué cada uno cubre su traste.",
+     "p": [
+      "Los dedos se numeran: índice 1, medio 2, anular 3, meñique 4. El pulgar suele ser P o T.",
+      "Un dedo por traste: en primera posición el dedo 1 toca el traste 1, el 2 el traste 2 y así hasta el 4.",
+      "Así la mano se queda quieta y los dedos listos: estiras menos y más adelante tocarás más rápido."
+     ],
+     "q": "¿Qué dedo sientes más débil ahora mismo y cuál más fuerte?",
+     "c": "En la cuerda Mi grave toca los trastes 1-2-3-4 con los dedos 1-2-3-4, cada dedo flotando cerca de su traste."
+    },
+    "fr": {
+     "t": "Numéros des doigts : un doigt par case",
+     "g": "Numéroter les doigts de la main gauche et comprendre pourquoi chacun garde sa case.",
+     "p": [
+      "Les doigts sont numérotés : index 1, majeur 2, annulaire 3, auriculaire 4. Le pouce est noté P ou T.",
+      "Un doigt par case : en première position, le doigt 1 joue la case 1, le doigt 2 la case 2, jusqu'à la case 4.",
+      "La main reste stable et les doigts prêts : tu t'étires moins et tu joueras plus vite plus tard."
+     ],
+     "q": "Quel doigt te semble le plus faible en ce moment, et lequel le plus fort ?",
+     "c": "Sur la corde de Mi grave, joue les cases 1-2-3-4 avec les doigts 1-2-3-4, chaque doigt flottant près de sa case."
+    },
+    "it": {
+     "t": "Numeri delle dita: un dito per tasto",
+     "g": "Numerare le dita della mano sinistra e capire perché ognuna copre il suo tasto.",
+     "p": [
+      "Le dita sono numerate: indice 1, medio 2, anulare 3, mignolo 4. Il pollice di solito è P o T.",
+      "Un dito per tasto: in prima posizione il dito 1 suona il tasto 1, il dito 2 il tasto 2 e così fino al 4.",
+      "Così la mano resta ferma e le dita pronte: ti allunghi meno e più avanti suonerai più veloce."
+     ],
+     "q": "Quale dito senti più debole adesso, e quale più forte?",
+     "c": "Sulla corda di Mi basso suona i tasti 1-2-3-4 con le dita 1-2-3-4, ogni dito sospeso vicino al suo tasto."
+    },
+    "pt": {
+     "t": "Números dos dedos: um dedo por casa",
+     "g": "Numerar os dedos da mão que pressiona e perceber porque cada um cobre a sua casa.",
+     "p": [
+      "Os dedos são numerados: indicador 1, médio 2, anelar 3, mindinho 4. O polegar costuma ser P ou T.",
+      "Um dedo por casa: na primeira posição o dedo 1 toca a casa 1, o dedo 2 a casa 2 e assim até à casa 4.",
+      "Assim a mão fica parada e os dedos prontos: esticas menos e mais tarde tocas mais depressa."
+     ],
+     "q": "Que dedo sentes mais fraco agora, e qual o mais forte?",
+     "c": "Na corda Mi grave toca as casas 1-2-3-4 com os dedos 1-2-3-4, cada dedo a pairar perto da sua casa."
+    },
+    "pt_BR": {
+     "t": "Números dos dedos: um dedo por casa",
+     "g": "Numerar os dedos da mão que aperta as cordas e entender por que cada um cuida da sua casa.",
+     "p": [
+      "Os dedos são numerados: indicador 1, médio 2, anelar 3, mindinho 4. O polegar costuma ser P ou T.",
+      "Um dedo por casa: na primeira posição o dedo 1 toca a casa 1, o dedo 2 a casa 2 e assim até a casa 4.",
+      "Assim a mão fica parada e os dedos prontos: você estica menos e depois toca mais rápido."
+     ],
+     "q": "Qual dedo parece mais fraco agora, e qual o mais forte?",
+     "c": "Na corda Mi grave toque as casas 1-2-3-4 com os dedos 1-2-3-4, cada dedo pairando perto da sua casa."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A warm-up for your fingers",
+     "g": "Learn the 1-2-3-4 chromatic exercise to build strength and coordination.",
+     "p": [
+      "Play frets 1-2-3-4 with fingers 1-2-3-4 on the low E string, then move to the A string and repeat on every string.",
+      "Leave each finger down until you need it elsewhere, and use alternate down and up picking if you can.",
+      "Go slowly and evenly; clean notes matter far more than speed. Stop and shake out your hand if it gets tense."
+     ],
+     "q": "How long can you play the warm-up before your hand asks for a break?",
+     "c": "Play the 1-2-3-4 exercise up all six strings and back down three times, as slowly and evenly as you can."
+    },
+    "de": {
+     "t": "Ein Aufwärmen für deine Finger",
+     "g": "Lerne die chromatische 1-2-3-4-Übung für Kraft und Koordination.",
+     "p": [
+      "Spiel die Bünde 1-2-3-4 mit den Fingern 1-2-3-4 auf der tiefen E-Saite, dann auf der A-Saite und so auf allen Saiten.",
+      "Lass jeden Finger liegen, bis du ihn woanders brauchst, und nutz wenn möglich Wechselschlag ab und auf.",
+      "Langsam und gleichmäßig: Saubere Töne zählen mehr als Tempo. Wird die Hand steif, Pause und ausschütteln."
+     ],
+     "q": "Wie lange kannst du das Aufwärmen spielen, bevor deine Hand eine Pause will?",
+     "c": "Spiel die 1-2-3-4-Übung dreimal über alle sechs Saiten hinauf und zurück, so langsam und gleichmäßig wie möglich."
+    },
+    "es": {
+     "t": "Un calentamiento para tus dedos",
+     "g": "Aprender el ejercicio cromático 1-2-3-4 para ganar fuerza y coordinación.",
+     "p": [
+      "Toca los trastes 1-2-3-4 con los dedos 1-2-3-4 en la cuerda Mi grave, luego en la La y así en todas.",
+      "Deja cada dedo apoyado hasta que lo necesites en otro sitio y, si puedes, alterna púa abajo y arriba.",
+      "Ve despacio y parejo: las notas limpias importan más que la velocidad. Si la mano se tensa, para y sacúdela."
+     ],
+     "q": "¿Cuánto tiempo aguantas el calentamiento antes de que tu mano pida descanso?",
+     "c": "Toca el 1-2-3-4 subiendo por las seis cuerdas y bajando, tres veces, lo más despacio y parejo que puedas."
+    },
+    "fr": {
+     "t": "Un échauffement pour tes doigts",
+     "g": "Apprendre l'exercice chromatique 1-2-3-4 pour gagner force et coordination.",
+     "p": [
+      "Joue les cases 1-2-3-4 avec les doigts 1-2-3-4 sur la corde de Mi grave, puis sur La, et ainsi sur toutes les cordes.",
+      "Laisse chaque doigt posé jusqu'à en avoir besoin ailleurs et, si tu peux, alterne coups bas et haut.",
+      "Va lentement et régulièrement : des notes nettes valent mieux que la vitesse. Main crispée ? Pause et secoue-la."
+     ],
+     "q": "Combien de temps tiens-tu l'échauffement avant que ta main réclame une pause ?",
+     "c": "Joue le 1-2-3-4 en montant sur les six cordes puis en redescendant, trois fois, le plus lentement et régulièrement possible."
+    },
+    "it": {
+     "t": "Un riscaldamento per le dita",
+     "g": "Imparare l'esercizio cromatico 1-2-3-4 per forza e coordinazione.",
+     "p": [
+      "Suona i tasti 1-2-3-4 con le dita 1-2-3-4 sul Mi basso, poi sulla corda La, e così su tutte le corde.",
+      "Lascia ogni dito giù finché non ti serve altrove e, se riesci, alterna pennata in giù e in su.",
+      "Vai piano e regolare: note pulite contano più della velocità. Se la mano si irrigidisce, fermati e scuotila."
+     ],
+     "q": "Per quanto tempo riesci a suonare il riscaldamento prima che la mano chieda una pausa?",
+     "c": "Suona l'1-2-3-4 salendo su tutte e sei le corde e scendendo, tre volte, il più lentamente e regolare possibile."
+    },
+    "pt": {
+     "t": "Um aquecimento para os dedos",
+     "g": "Aprender o exercício cromático 1-2-3-4 para ganhar força e coordenação.",
+     "p": [
+      "Toca as casas 1-2-3-4 com os dedos 1-2-3-4 na corda Mi grave, depois na corda Lá, e assim em todas.",
+      "Deixa cada dedo pousado até precisares dele noutro sítio e, se conseguires, alterna palhetada para baixo e para cima.",
+      "Vai devagar e certinho: notas limpas valem mais do que velocidade. Se a mão ficar tensa, para e sacode-a."
+     ],
+     "q": "Quanto tempo aguentas o aquecimento antes de a mão pedir uma pausa?",
+     "c": "Toca o 1-2-3-4 a subir pelas seis cordas e a descer, três vezes, o mais devagar e regular que conseguires."
+    },
+    "pt_BR": {
+     "t": "Um aquecimento para os dedos",
+     "g": "Aprender o exercício cromático 1-2-3-4 para ganhar força e coordenação.",
+     "p": [
+      "Toque as casas 1-2-3-4 com os dedos 1-2-3-4 na corda Mi grave, depois na corda Lá, e assim em todas.",
+      "Deixe cada dedo apoiado até precisar dele em outro lugar e, se conseguir, alterne palhetada para baixo e para cima.",
+      "Vá devagar e por igual: notas limpas valem mais que velocidade. Se a mão ficar tensa, pare e sacuda."
+     ],
+     "q": "Quanto tempo você aguenta o aquecimento antes da mão pedir uma pausa?",
+     "c": "Toque o 1-2-3-4 subindo pelas seis cordas e descendo, três vezes, o mais devagar e regular que conseguir."
+    }
+   }
+  }
+ ]
+}

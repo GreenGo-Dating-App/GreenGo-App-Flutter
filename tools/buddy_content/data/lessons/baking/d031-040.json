@@ -1,0 +1,835 @@
+{
+ "topic": "baking",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet yeast",
+     "g": "Get to know yeast, the tiny living fungus that feeds on sugars and makes bread dough rise.",
+     "p": [
+      "Yeast eats sugars from the flour and releases carbon dioxide gas and a little alcohol.",
+      "The gas gets trapped in the dough and inflates it; the alcohol bakes off and adds flavour.",
+      "Yeast loves warmth and moisture, slows down in the cold and is killed by high oven heat."
+     ],
+     "q": "Have you ever baked with yeast before, or does it feel a little mysterious?",
+     "c": "Mix a little yeast, a pinch of sugar and lukewarm water in a glass and watch it foam over 10 minutes."
+    },
+    "de": {
+     "t": "Lerne die Hefe kennen",
+     "g": "Lerne die Hefe kennen, einen winzigen lebenden Pilz, der Zucker frisst und Brotteig aufgehen lässt.",
+     "p": [
+      "Hefe verwertet Zucker aus dem Mehl und gibt dabei Kohlendioxid und etwas Alkohol ab.",
+      "Das Gas bleibt im Teig gefangen und bläht ihn auf; der Alkohol verdampft beim Backen und gibt Aroma.",
+      "Hefe liebt Wärme und Feuchtigkeit, wird in der Kälte langsam und stirbt in der Ofenhitze ab."
+     ],
+     "q": "Hast du schon mit Hefe gebacken, oder kommt sie dir noch etwas geheimnisvoll vor?",
+     "c": "Mische etwas Hefe, eine Prise Zucker und lauwarmes Wasser in einem Glas und beobachte 10 Minuten lang den Schaum."
+    },
+    "es": {
+     "t": "Conoce la levadura",
+     "g": "Conoce la levadura, un diminuto hongo vivo que se alimenta de azúcares y hace subir la masa de pan.",
+     "p": [
+      "La levadura come los azúcares de la harina y libera gas carbónico y un poco de alcohol.",
+      "El gas queda atrapado en la masa y la infla; el alcohol se evapora al hornear y aporta sabor.",
+      "A la levadura le gustan el calor y la humedad, se frena con el frío y muere con el calor del horno."
+     ],
+     "q": "¿Has horneado con levadura antes, o todavía te parece algo misterioso?",
+     "c": "Mezcla un poco de levadura, una pizca de azúcar y agua tibia en un vaso y observa la espuma durante 10 minutos."
+    },
+    "fr": {
+     "t": "Faire connaissance avec la levure",
+     "g": "Découvre la levure, un minuscule champignon vivant qui se nourrit de sucres et fait lever la pâte à pain.",
+     "p": [
+      "La levure consomme les sucres de la farine et libère du gaz carbonique et un peu d'alcool.",
+      "Le gaz reste piégé dans la pâte et la gonfle ; l'alcool s'évapore à la cuisson et apporte du goût.",
+      "La levure aime la chaleur et l'humidité, ralentit au froid et meurt sous la chaleur du four."
+     ],
+     "q": "As-tu déjà fait du pain avec de la levure, ou cela te semble-t-il encore un peu mystérieux ?",
+     "c": "Mélange un peu de levure, une pincée de sucre et de l'eau tiède dans un verre et observe la mousse 10 minutes."
+    },
+    "it": {
+     "t": "Conosci il lievito",
+     "g": "Conosci il lievito di birra, un minuscolo fungo vivo che si nutre di zuccheri e fa crescere l'impasto del pane.",
+     "p": [
+      "Il lievito mangia gli zuccheri della farina e libera anidride carbonica e un po' di alcol.",
+      "Il gas resta intrappolato nell'impasto e lo gonfia; l'alcol evapora in cottura e dà sapore.",
+      "Il lievito ama il tepore e l'umidità, rallenta al freddo e muore con il calore del forno."
+     ],
+     "q": "Hai mai fatto il pane con il lievito, o ti sembra ancora un po' misterioso?",
+     "c": "Mescola un po' di lievito, un pizzico di zucchero e acqua tiepida in un bicchiere e osserva la schiuma per 10 minuti."
+    },
+    "pt": {
+     "t": "Conhece o fermento de padeiro",
+     "g": "Conhece a levedura, um minúsculo fungo vivo que se alimenta de açúcares e faz crescer a massa do pão.",
+     "p": [
+      "A levedura come os açúcares da farinha e liberta dióxido de carbono e um pouco de álcool.",
+      "O gás fica preso na massa e fá-la crescer; o álcool evapora no forno e dá sabor.",
+      "A levedura gosta de calor e humidade, abranda com o frio e morre com o calor do forno."
+     ],
+     "q": "Já fizeste pão com fermento de padeiro, ou ainda te parece algo misterioso?",
+     "c": "Mistura um pouco de fermento, uma pitada de açúcar e água morna num copo e observa a espuma durante 10 minutos."
+    },
+    "pt_BR": {
+     "t": "Conheça o fermento biológico",
+     "g": "Conheça a levedura, um fungo vivo minúsculo que se alimenta de açúcares e faz a massa de pão crescer.",
+     "p": [
+      "A levedura come os açúcares da farinha e libera gás carbônico e um pouco de álcool.",
+      "O gás fica preso na massa e faz ela crescer; o álcool evapora no forno e dá sabor.",
+      "O fermento gosta de calor e umidade, fica lento no frio e morre com o calor do forno."
+     ],
+     "q": "Você já fez pão com fermento biológico, ou ele ainda parece meio misterioso?",
+     "c": "Misture um pouco de fermento, uma pitada de açúcar e água morna num copo e observe a espuma por 10 minutos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Instant, active dry and fresh yeast",
+     "g": "Learn the three common yeast types and how to swap one for another in a recipe.",
+     "p": [
+      "Instant yeast has fine granules you can mix straight into the flour; it is the easiest to use.",
+      "Active dry yeast has larger granules and is usually dissolved in lukewarm water first.",
+      "Fresh yeast is a soft block that spoils quickly; use about three times the weight of instant yeast."
+     ],
+     "q": "Which kind of yeast is easiest to find where you live?",
+     "c": "Check the yeast you have at home, read its expiry date and note the amount recommended per 500 g of flour."
+    },
+    "de": {
+     "t": "Trocken-, Instant- und Frischhefe",
+     "g": "Lerne die drei gängigen Hefearten kennen und wie man sie in Rezepten gegeneinander austauscht.",
+     "p": [
+      "Instanthefe hat feines Granulat, das direkt ins Mehl kommt; sie ist am einfachsten zu verwenden.",
+      "Aktive Trockenhefe hat gröbere Körnchen und wird meist zuerst in lauwarmem Wasser aufgelöst.",
+      "Frischhefe ist ein weicher Würfel, der schnell verdirbt; nimm etwa das Dreifache der Menge an Instanthefe."
+     ],
+     "q": "Welche Hefeart bekommst du bei dir am leichtesten?",
+     "c": "Schau dir deine Hefe an, prüfe das Haltbarkeitsdatum und notiere die empfohlene Menge pro 500 g Mehl."
+    },
+    "es": {
+     "t": "Levadura instantánea, seca y fresca",
+     "g": "Aprende los tres tipos comunes de levadura y cómo cambiar uno por otro en una receta.",
+     "p": [
+      "La levadura instantánea tiene gránulos finos que se mezclan directamente con la harina; es la más fácil.",
+      "La levadura seca activa tiene gránulos más grandes y suele disolverse antes en agua tibia.",
+      "La fresca es un bloque blando que se estropea pronto; usa unas tres veces el peso de la instantánea."
+     ],
+     "q": "¿Qué tipo de levadura encuentras con más facilidad donde vives?",
+     "c": "Revisa la levadura que tienes, mira su fecha de caducidad y apunta la cantidad recomendada por 500 g de harina."
+    },
+    "fr": {
+     "t": "Levure instantanée, sèche et fraîche",
+     "g": "Découvre les trois levures courantes et comment remplacer l'une par l'autre dans une recette.",
+     "p": [
+      "La levure instantanée a de fins granulés qu'on mélange directement à la farine ; c'est la plus simple.",
+      "La levure sèche active a de plus gros grains et se dissout d'abord dans de l'eau tiède.",
+      "La levure fraîche est un bloc tendre qui se garde peu ; compte environ trois fois le poids de levure instantanée."
+     ],
+     "q": "Quel type de levure trouves-tu le plus facilement près de chez toi ?",
+     "c": "Regarde la levure que tu as, vérifie sa date limite et note la quantité conseillée pour 500 g de farine."
+    },
+    "it": {
+     "t": "Lievito istantaneo, secco e fresco",
+     "g": "Impara i tre tipi di lievito più comuni e come sostituire l'uno con l'altro in una ricetta.",
+     "p": [
+      "Il lievito istantaneo ha granuli fini che si mescolano direttamente alla farina; è il più facile.",
+      "Il lievito secco attivo ha granuli più grossi e di solito si scioglie prima in acqua tiepida.",
+      "Il lievito fresco è un panetto morbido che si deteriora presto; usane circa tre volte il peso di quello istantaneo."
+     ],
+     "q": "Quale tipo di lievito trovi più facilmente dove vivi?",
+     "c": "Controlla il lievito che hai in casa, guarda la scadenza e annota la dose consigliata per 500 g di farina."
+    },
+    "pt": {
+     "t": "Fermento instantâneo, seco e fresco",
+     "g": "Aprende os três tipos comuns de fermento de padeiro e como trocar um pelo outro numa receita.",
+     "p": [
+      "O fermento instantâneo tem grânulos finos que se misturam logo na farinha; é o mais fácil de usar.",
+      "O fermento seco ativo tem grânulos maiores e costuma ser dissolvido primeiro em água morna.",
+      "O fermento fresco é um bloco mole que se estraga depressa; usa cerca de três vezes o peso do instantâneo."
+     ],
+     "q": "Que tipo de fermento encontras mais facilmente onde vives?",
+     "c": "Vê o fermento que tens em casa, confirma a validade e anota a quantidade recomendada por 500 g de farinha."
+    },
+    "pt_BR": {
+     "t": "Fermento instantâneo, seco e fresco",
+     "g": "Aprenda os três tipos comuns de fermento biológico e como trocar um pelo outro numa receita.",
+     "p": [
+      "O fermento biológico instantâneo tem grânulos finos que vão direto na farinha; é o mais fácil de usar.",
+      "O fermento seco ativo tem grânulos maiores e costuma ser dissolvido antes em água morna.",
+      "O fermento fresco é um tablete macio que estraga rápido; use cerca de três vezes o peso do instantâneo."
+     ],
+     "q": "Qual tipo de fermento você encontra com mais facilidade onde mora?",
+     "c": "Confira o fermento que você tem, veja a validade e anote a quantidade recomendada para 500 g de farinha."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water temperature for dough",
+     "g": "Learn why lukewarm water wakes yeast up gently and why very hot water can harm it.",
+     "p": [
+      "Lukewarm water, around 35 to 38 °C, feels barely warm on your wrist and is ideal for active dry yeast.",
+      "Above about 50 °C yeast starts to suffer, and around 60 °C it dies, so the dough will not rise.",
+      "Cold water works too, it just slows fermentation, which can give a longer rise and more flavour."
+     ],
+     "q": "Have you ever had dough that refused to rise? What do you think happened?",
+     "c": "Use a thermometer to make a glass of 37 °C water and feel it on your wrist so you remember the sensation."
+    },
+    "de": {
+     "t": "Wassertemperatur für Teig",
+     "g": "Lerne, warum lauwarmes Wasser Hefe sanft weckt und sehr heißes Wasser ihr schaden kann.",
+     "p": [
+      "Lauwarmes Wasser um 35 bis 38 °C fühlt sich am Handgelenk kaum warm an und ist ideal für Trockenhefe.",
+      "Ab etwa 50 °C leidet die Hefe, bei rund 60 °C stirbt sie, und der Teig geht nicht mehr auf.",
+      "Kaltes Wasser geht auch, es verlangsamt nur die Gärung; das kann zu längerer Gare und mehr Aroma führen."
+     ],
+     "q": "Hattest du schon mal einen Teig, der einfach nicht aufgehen wollte? Was ist wohl passiert?",
+     "c": "Mach mit einem Thermometer ein Glas Wasser mit 37 °C und fühle es am Handgelenk, um dir das Gefühl zu merken."
+    },
+    "es": {
+     "t": "La temperatura del agua para la masa",
+     "g": "Aprende por qué el agua tibia despierta suavemente a la levadura y el agua muy caliente puede dañarla.",
+     "p": [
+      "El agua tibia, a unos 35 a 38 °C, apenas se nota caliente en la muñeca y es ideal para la levadura seca.",
+      "Por encima de unos 50 °C la levadura sufre, y hacia los 60 °C muere, así que la masa no sube.",
+      "El agua fría también sirve, solo frena la fermentación y puede dar un levado más largo y más sabor."
+     ],
+     "q": "¿Alguna vez una masa se negó a subir? ¿Qué crees que pasó?",
+     "c": "Con un termómetro prepara un vaso de agua a 37 °C y siéntela en la muñeca para recordar la sensación."
+    },
+    "fr": {
+     "t": "La température de l'eau pour la pâte",
+     "g": "Apprends pourquoi l'eau tiède réveille doucement la levure et pourquoi l'eau très chaude peut l'abîmer.",
+     "p": [
+      "L'eau tiède, vers 35 à 38 °C, semble à peine chaude sur le poignet et convient parfaitement à la levure sèche.",
+      "Au-delà d'environ 50 °C la levure souffre, et vers 60 °C elle meurt : la pâte ne lèvera pas.",
+      "L'eau froide fonctionne aussi, elle ralentit seulement la fermentation et peut donner plus de goût."
+     ],
+     "q": "As-tu déjà eu une pâte qui refusait de lever ? Que s'est-il passé, selon toi ?",
+     "c": "Prépare au thermomètre un verre d'eau à 37 °C et sens-la sur ton poignet pour retenir la sensation."
+    },
+    "it": {
+     "t": "La temperatura dell'acqua per l'impasto",
+     "g": "Impara perché l'acqua tiepida sveglia il lievito con dolcezza e quella molto calda può danneggiarlo.",
+     "p": [
+      "L'acqua tiepida, intorno ai 35-38 °C, si sente appena calda sul polso ed è ideale per il lievito secco.",
+      "Sopra i 50 °C circa il lievito soffre e intorno ai 60 °C muore, così l'impasto non cresce.",
+      "Anche l'acqua fredda va bene, rallenta solo la fermentazione e può dare più sapore con una lievitazione lunga."
+     ],
+     "q": "Ti è mai capitato un impasto che non voleva lievitare? Cosa pensi sia successo?",
+     "c": "Con un termometro prepara un bicchiere d'acqua a 37 °C e sentila sul polso per ricordare la sensazione."
+    },
+    "pt": {
+     "t": "A temperatura da água para a massa",
+     "g": "Aprende porque a água morna acorda suavemente a levedura e porque a água muito quente a pode estragar.",
+     "p": [
+      "Água morna, a cerca de 35 a 38 °C, mal se sente quente no pulso e é ideal para o fermento seco ativo.",
+      "Acima de uns 50 °C a levedura começa a sofrer e por volta dos 60 °C morre, e a massa não cresce.",
+      "Água fria também serve, só abranda a fermentação e pode dar uma levedação mais longa e mais sabor."
+     ],
+     "q": "Já tiveste uma massa que não quis crescer? O que achas que aconteceu?",
+     "c": "Com um termómetro prepara um copo de água a 37 °C e sente-a no pulso para memorizar a sensação."
+    },
+    "pt_BR": {
+     "t": "Temperatura da água para a massa",
+     "g": "Aprenda por que água morna acorda o fermento com suavidade e por que água muito quente pode prejudicá-lo.",
+     "p": [
+      "Água morna, por volta de 35 a 38 °C, quase não parece quente no pulso e é ideal para o fermento seco.",
+      "Acima de uns 50 °C o fermento começa a sofrer e por volta de 60 °C ele morre, e a massa não cresce.",
+      "Água fria também funciona, só deixa a fermentação mais lenta, o que pode dar mais sabor."
+     ],
+     "q": "Alguma massa sua já se recusou a crescer? O que você acha que aconteceu?",
+     "c": "Com um termômetro, prepare um copo de água a 37 °C e sinta no pulso para memorizar a sensação."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What gluten does",
+     "g": "Understand how gluten forms a stretchy network that traps gas and gives bread its structure.",
+     "p": [
+      "When flour meets water, the proteins glutenin and gliadin link up to form gluten.",
+      "Mixing and kneading organise gluten into elastic strands that stretch like a balloon around gas bubbles.",
+      "For bread you want strong gluten; for cakes and pastry you mix less to keep things tender."
+     ],
+     "q": "Have you noticed how bread dough feels different from cake batter when you touch it?",
+     "c": "Mix a spoon of flour with a little water, knead it for two minutes and stretch it to feel the gluten forming."
+    },
+    "de": {
+     "t": "Was Gluten macht",
+     "g": "Verstehe, wie Gluten ein dehnbares Netz bildet, das Gas festhält und Brot seine Struktur gibt.",
+     "p": [
+      "Wenn Mehl auf Wasser trifft, verbinden sich die Eiweiße Glutenin und Gliadin zu Gluten.",
+      "Mischen und Kneten ordnen das Gluten zu elastischen Strängen, die sich wie ein Ballon um Gasbläschen dehnen.",
+      "Für Brot willst du starkes Gluten; für Kuchen und Mürbeteig rührst du weniger, damit alles zart bleibt."
+     ],
+     "q": "Hast du bemerkt, wie anders sich Brotteig anfühlt als Rührteig?",
+     "c": "Misch einen Löffel Mehl mit etwas Wasser, knete zwei Minuten und ziehe daran, um das Gluten zu spüren."
+    },
+    "es": {
+     "t": "Lo que hace el gluten",
+     "g": "Entiende cómo el gluten forma una red elástica que atrapa el gas y da estructura al pan.",
+     "p": [
+      "Cuando la harina se une al agua, las proteínas glutenina y gliadina se enlazan y forman el gluten.",
+      "Mezclar y amasar ordenan el gluten en hebras elásticas que se estiran como un globo alrededor del gas.",
+      "Para el pan quieres un gluten fuerte; para bizcochos y masas quebradas mezclas menos para que queden tiernos."
+     ],
+     "q": "¿Has notado lo distinta que se siente al tacto una masa de pan frente a una de bizcocho?",
+     "c": "Mezcla una cucharada de harina con un poco de agua, amásala dos minutos y estírala para sentir el gluten."
+    },
+    "fr": {
+     "t": "Le rôle du gluten",
+     "g": "Comprends comment le gluten forme un réseau élastique qui retient le gaz et donne sa structure au pain.",
+     "p": [
+      "Quand la farine rencontre l'eau, les protéines gluténine et gliadine s'associent pour former le gluten.",
+      "Le pétrissage organise le gluten en fils élastiques qui s'étirent comme un ballon autour des bulles de gaz.",
+      "Pour le pain on veut un gluten fort ; pour gâteaux et pâtes sablées on mélange peu pour rester tendre."
+     ],
+     "q": "As-tu remarqué combien une pâte à pain est différente au toucher d'une pâte à gâteau ?",
+     "c": "Mélange une cuillère de farine avec un peu d'eau, pétris deux minutes et étire pour sentir le gluten."
+    },
+    "it": {
+     "t": "Cosa fa il glutine",
+     "g": "Capisci come il glutine forma una rete elastica che trattiene il gas e dà struttura al pane.",
+     "p": [
+      "Quando la farina incontra l'acqua, le proteine glutenina e gliadina si legano e formano il glutine.",
+      "Mescolare e impastare organizzano il glutine in fili elastici che si allungano come un palloncino attorno al gas.",
+      "Per il pane vuoi un glutine forte; per torte e frolle mescoli meno perché restino tenere."
+     ],
+     "q": "Hai notato quanto è diverso al tatto un impasto di pane rispetto a quello di una torta?",
+     "c": "Mescola un cucchiaio di farina con un po' d'acqua, impasta due minuti e tira per sentire il glutine."
+    },
+    "pt": {
+     "t": "O que faz o glúten",
+     "g": "Percebe como o glúten forma uma rede elástica que prende o gás e dá estrutura ao pão.",
+     "p": [
+      "Quando a farinha encontra a água, as proteínas glutenina e gliadina ligam-se e formam o glúten.",
+      "Misturar e amassar organizam o glúten em fios elásticos que esticam como um balão à volta do gás.",
+      "No pão queres um glúten forte; em bolos e massas quebradas misturas menos para ficarem tenros."
+     ],
+     "q": "Já reparaste como a massa de pão é diferente ao toque da massa de bolo?",
+     "c": "Mistura uma colher de farinha com um pouco de água, amassa dois minutos e estica para sentir o glúten."
+    },
+    "pt_BR": {
+     "t": "O que o glúten faz",
+     "g": "Entenda como o glúten forma uma rede elástica que prende o gás e dá estrutura ao pão.",
+     "p": [
+      "Quando a farinha encontra a água, as proteínas glutenina e gliadina se ligam e formam o glúten.",
+      "Misturar e sovar organizam o glúten em fios elásticos que esticam como um balão em volta do gás.",
+      "No pão você quer glúten forte; em bolos e massas podres você mistura menos para ficarem macios."
+     ],
+     "q": "Você já reparou como a massa de pão é diferente ao toque da massa de bolo?",
+     "c": "Misture uma colher de farinha com um pouco de água, sove por dois minutos e estique para sentir o glúten."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kneading by hand",
+     "g": "Learn the push, fold and turn of hand kneading and how to feel when the dough is ready.",
+     "p": [
+      "Push the dough away with the heel of your hand, fold it back over itself, turn it a quarter and repeat.",
+      "Sticky at first is normal; add as little extra flour as possible, as too much makes bread dry.",
+      "After about 10 minutes the dough turns smooth, springy and slightly tacky instead of sticky."
+     ],
+     "q": "Does kneading sound relaxing to you, or more like a workout?",
+     "c": "Make a small dough of 250 g flour, knead it for 10 minutes and note how its feel changes every few minutes."
+    },
+    "de": {
+     "t": "Kneten von Hand",
+     "g": "Lerne das Drücken, Falten und Drehen beim Kneten und wie du spürst, wann der Teig fertig ist.",
+     "p": [
+      "Den Teig mit dem Handballen wegdrücken, zurückfalten, eine Vierteldrehung machen und wiederholen.",
+      "Anfangs klebrig ist normal; streu so wenig Mehl wie möglich dazu, zu viel macht Brot trocken.",
+      "Nach etwa 10 Minuten wird der Teig glatt, elastisch und nur noch leicht haftend statt klebrig."
+     ],
+     "q": "Klingt Kneten für dich entspannend oder eher nach Sport?",
+     "c": "Mach einen kleinen Teig aus 250 g Mehl, knete 10 Minuten und notiere, wie sich das Gefühl alle paar Minuten ändert."
+    },
+    "es": {
+     "t": "Amasar a mano",
+     "g": "Aprende a empujar, doblar y girar al amasar a mano y a sentir cuándo la masa está lista.",
+     "p": [
+      "Empuja la masa con la base de la mano, dóblala sobre sí misma, gírala un cuarto y repite.",
+      "Que al principio se pegue es normal; añade la menor harina posible, porque demasiada seca el pan.",
+      "Tras unos 10 minutos la masa queda lisa, elástica y algo pegajosa al tacto en vez de muy pegajosa."
+     ],
+     "q": "¿Amasar te suena relajante o más bien a ejercicio?",
+     "c": "Haz una masa pequeña con 250 g de harina, amásala 10 minutos y apunta cómo cambia al tacto cada pocos minutos."
+    },
+    "fr": {
+     "t": "Pétrir à la main",
+     "g": "Apprends le geste pousser, plier, tourner du pétrissage et à sentir quand la pâte est prête.",
+     "p": [
+      "Pousse la pâte avec la paume, replie-la sur elle-même, fais un quart de tour et recommence.",
+      "Collante au début, c'est normal ; ajoute le moins de farine possible, trop de farine dessèche le pain.",
+      "Après environ 10 minutes, la pâte devient lisse, souple et juste un peu collante au toucher."
+     ],
+     "q": "Pétrir, ça te semble relaxant ou plutôt sportif ?",
+     "c": "Fais une petite pâte avec 250 g de farine, pétris-la 10 minutes et note comment elle change toutes les quelques minutes."
+    },
+    "it": {
+     "t": "Impastare a mano",
+     "g": "Impara a spingere, piegare e girare l'impasto a mano e a capire al tatto quando è pronto.",
+     "p": [
+      "Spingi l'impasto col palmo della mano, ripiegalo su sé stesso, giralo di un quarto e ripeti.",
+      "All'inizio è normale che sia appiccicoso; aggiungi meno farina possibile, troppa rende il pane secco.",
+      "Dopo circa 10 minuti l'impasto diventa liscio, elastico e appena colloso invece che appiccicoso."
+     ],
+     "q": "Impastare ti sembra rilassante o più una palestra?",
+     "c": "Fai un piccolo impasto con 250 g di farina, lavoralo 10 minuti e annota come cambia al tatto ogni pochi minuti."
+    },
+    "pt": {
+     "t": "Amassar à mão",
+     "g": "Aprende o empurrar, dobrar e rodar da amassadura à mão e a sentir quando a massa está pronta.",
+     "p": [
+      "Empurra a massa com a base da mão, dobra-a sobre si mesma, roda um quarto de volta e repete.",
+      "É normal colar ao início; junta o mínimo de farinha possível, porque farinha a mais seca o pão.",
+      "Ao fim de uns 10 minutos a massa fica lisa, elástica e só ligeiramente pegajosa."
+     ],
+     "q": "Amassar parece-te relaxante ou mais um treino?",
+     "c": "Faz uma massa pequena com 250 g de farinha, amassa 10 minutos e anota como muda ao toque a cada poucos minutos."
+    },
+    "pt_BR": {
+     "t": "Sovando à mão",
+     "g": "Aprenda o empurrar, dobrar e girar da sova à mão e a sentir quando a massa está pronta.",
+     "p": [
+      "Empurre a massa com a base da mão, dobre sobre ela mesma, gire um quarto de volta e repita.",
+      "Grudar no começo é normal; coloque o mínimo de farinha extra, porque farinha demais resseca o pão.",
+      "Depois de uns 10 minutos a massa fica lisa, elástica e só levemente pegajosa."
+     ],
+     "q": "Sovar parece relaxante para você ou mais uma academia?",
+     "c": "Faça uma massa pequena com 250 g de farinha, sove por 10 minutos e anote como ela muda ao toque a cada poucos minutos."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The windowpane test",
+     "g": "Use the windowpane test to check whether your kneaded dough has enough gluten development.",
+     "p": [
+      "Pinch off a small piece of dough and gently stretch it between your fingers, turning it as you go.",
+      "If it stretches thin enough to let light through without tearing, the gluten is well developed.",
+      "If it tears early, knead a few minutes more and test again; rich doughs take longer to pass."
+     ],
+     "q": "Do you like tests that give you a clear yes or no, or do you prefer to bake by feel?",
+     "c": "Knead a dough and do the windowpane test every two minutes until it passes, noting the total time."
+    },
+    "de": {
+     "t": "Die Fenstertest-Probe",
+     "g": "Prüfe mit dem Fenstertest, ob dein gekneteter Teig genug Glutenstruktur entwickelt hat.",
+     "p": [
+      "Ein kleines Stück Teig abzupfen und zwischen den Fingern vorsichtig dehnen, dabei immer wieder drehen.",
+      "Lässt es sich so dünn ziehen, dass Licht durchscheint, ohne zu reißen, ist das Gluten gut entwickelt.",
+      "Reißt es früh, noch ein paar Minuten kneten und erneut testen; reichhaltige Teige brauchen länger."
+     ],
+     "q": "Magst du Tests mit einem klaren Ja oder Nein, oder backst du lieber nach Gefühl?",
+     "c": "Knete einen Teig und mach alle zwei Minuten den Fenstertest, bis er besteht; notiere die Gesamtzeit."
+    },
+    "es": {
+     "t": "La prueba de la membrana",
+     "g": "Usa la prueba de la membrana para saber si tu masa amasada tiene el gluten bien desarrollado.",
+     "p": [
+      "Toma un trocito de masa y estíralo con suavidad entre los dedos, girándolo mientras lo haces.",
+      "Si se estira tan fino que deja pasar la luz sin romperse, el gluten está bien desarrollado.",
+      "Si se rompe pronto, amasa unos minutos más y vuelve a probar; las masas enriquecidas tardan más."
+     ],
+     "q": "¿Te gustan las pruebas que dan un sí o un no claro, o prefieres hornear a ojo?",
+     "c": "Amasa una masa y haz la prueba de la membrana cada dos minutos hasta que la pase, anotando el tiempo total."
+    },
+    "fr": {
+     "t": "Le test de la fenêtre",
+     "g": "Utilise le test de la fenêtre pour vérifier si le gluten de ta pâte pétrie est bien développé.",
+     "p": [
+      "Prélève un petit morceau de pâte et étire-le doucement entre tes doigts en le faisant tourner.",
+      "S'il devient assez fin pour laisser passer la lumière sans se déchirer, le gluten est bien développé.",
+      "S'il se déchire vite, pétris encore quelques minutes et reteste ; les pâtes riches demandent plus de temps."
+     ],
+     "q": "Tu aimes les tests qui donnent un oui ou un non clair, ou tu préfères faire au feeling ?",
+     "c": "Pétris une pâte et fais le test de la fenêtre toutes les deux minutes jusqu'à réussite, en notant le temps total."
+    },
+    "it": {
+     "t": "La prova del velo",
+     "g": "Usa la prova del velo per capire se il glutine del tuo impasto è ben sviluppato.",
+     "p": [
+      "Stacca un pezzetto di impasto e allargalo piano tra le dita, ruotandolo mentre lo tiri.",
+      "Se si stende così sottile da far passare la luce senza strapparsi, il glutine è ben sviluppato.",
+      "Se si strappa presto, impasta ancora qualche minuto e riprova; gli impasti ricchi richiedono più tempo."
+     ],
+     "q": "Ti piacciono le prove che danno un sì o un no chiaro, o preferisci andare a sensazione?",
+     "c": "Impasta e fai la prova del velo ogni due minuti finché la supera, annotando il tempo totale."
+    },
+    "pt": {
+     "t": "O teste da membrana",
+     "g": "Usa o teste da membrana para saber se a tua massa amassada tem o glúten bem desenvolvido.",
+     "p": [
+      "Tira um pedacinho de massa e estica-o com cuidado entre os dedos, rodando-o enquanto estica.",
+      "Se ficar tão fino que deixa passar a luz sem rasgar, o glúten está bem desenvolvido.",
+      "Se rasgar cedo, amassa mais uns minutos e testa outra vez; massas enriquecidas demoram mais."
+     ],
+     "q": "Gostas de testes com um sim ou não claro, ou preferes fazer a olho?",
+     "c": "Amassa uma massa e faz o teste da membrana de dois em dois minutos até passar, anotando o tempo total."
+    },
+    "pt_BR": {
+     "t": "O teste do véu",
+     "g": "Use o teste do véu para saber se o glúten da sua massa sovada está bem desenvolvido.",
+     "p": [
+      "Pegue um pedacinho de massa e estique com cuidado entre os dedos, girando enquanto estica.",
+      "Se ficar tão fina que deixa passar luz sem rasgar, o glúten está bem desenvolvido.",
+      "Se rasgar cedo, sove mais alguns minutos e teste de novo; massas enriquecidas demoram mais."
+     ],
+     "q": "Você gosta de testes com um sim ou não claro, ou prefere fazer no olho?",
+     "c": "Sove uma massa e faça o teste do véu a cada dois minutos até passar, anotando o tempo total."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First rise and proofing",
+     "g": "Learn where to let dough rise, how long it takes and what doubled in size really means.",
+     "p": [
+      "Cover the dough and leave it somewhere draught-free and comfortably warm, around 24 to 27 °C.",
+      "At room temperature most simple doughs double in about 1 to 2 hours; cooler rooms just take longer.",
+      "Doubled means twice the volume; a straight-sided container with a mark makes it easy to see."
+     ],
+     "q": "Where in your home is the warmest, cosiest spot for dough to rise?",
+     "c": "Put your next dough in a clear container, mark its starting level and check when it has doubled."
+    },
+    "de": {
+     "t": "Erste Gare und Gehzeit",
+     "g": "Lerne, wo Teig am besten geht, wie lange es dauert und was verdoppelt wirklich bedeutet.",
+     "p": [
+      "Den Teig abdecken und an einen zugfreien, angenehm warmen Ort stellen, etwa 24 bis 27 °C.",
+      "Bei Zimmertemperatur verdoppeln sich einfache Teige in etwa 1 bis 2 Stunden; kühlere Räume brauchen länger.",
+      "Verdoppelt heißt doppeltes Volumen; ein gerader Behälter mit Markierung macht es leicht sichtbar."
+     ],
+     "q": "Wo ist bei dir zu Hause der wärmste, gemütlichste Platz für aufgehenden Teig?",
+     "c": "Gib deinen nächsten Teig in einen durchsichtigen Behälter, markiere den Startpunkt und prüfe, wann er sich verdoppelt."
+    },
+    "es": {
+     "t": "Primer levado y fermentación",
+     "g": "Aprende dónde dejar subir la masa, cuánto tarda y qué significa de verdad que doble su tamaño.",
+     "p": [
+      "Tapa la masa y déjala en un sitio sin corrientes y templado, entre unos 24 y 27 °C.",
+      "A temperatura ambiente, casi todas las masas sencillas doblan en 1 a 2 horas; con frío solo tardan más.",
+      "Doblar significa el doble de volumen; un recipiente de paredes rectas con una marca lo hace fácil de ver."
+     ],
+     "q": "¿Cuál es el rincón más cálido y acogedor de tu casa para que suba una masa?",
+     "c": "Pon tu próxima masa en un recipiente transparente, marca el nivel inicial y comprueba cuándo ha doblado."
+    },
+    "fr": {
+     "t": "Première pousse et pointage",
+     "g": "Apprends où laisser lever la pâte, combien de temps et ce que doubler de volume veut vraiment dire.",
+     "p": [
+      "Couvre la pâte et laisse-la à l'abri des courants d'air, dans un endroit tiède, vers 24 à 27 °C.",
+      "À température ambiante, la plupart des pâtes simples doublent en 1 à 2 heures ; au frais, c'est plus long.",
+      "Doubler signifie deux fois le volume ; un récipient à bords droits avec un repère permet de bien le voir."
+     ],
+     "q": "Quel est l'endroit le plus chaud et douillet de chez toi pour faire lever une pâte ?",
+     "c": "Mets ta prochaine pâte dans un récipient transparent, marque le niveau de départ et vérifie quand elle a doublé."
+    },
+    "it": {
+     "t": "Prima lievitazione",
+     "g": "Impara dove far lievitare l'impasto, quanto tempo serve e cosa significa davvero raddoppiare.",
+     "p": [
+      "Copri l'impasto e lascialo in un luogo senza correnti e tiepido, intorno ai 24-27 °C.",
+      "A temperatura ambiente la maggior parte degli impasti semplici raddoppia in 1-2 ore; al fresco serve più tempo.",
+      "Raddoppiare significa il doppio del volume; un contenitore a pareti dritte con un segno lo rende facile da vedere."
+     ],
+     "q": "Qual è il posto più caldo e accogliente di casa tua per far lievitare un impasto?",
+     "c": "Metti il prossimo impasto in un contenitore trasparente, segna il livello di partenza e controlla quando raddoppia."
+    },
+    "pt": {
+     "t": "Primeira levedação",
+     "g": "Aprende onde deixar a massa levedar, quanto tempo demora e o que significa realmente dobrar de volume.",
+     "p": [
+      "Tapa a massa e deixa-a num sítio sem correntes de ar e ameno, por volta dos 24 a 27 °C.",
+      "À temperatura ambiente, a maioria das massas simples dobra em 1 a 2 horas; com frio só demora mais.",
+      "Dobrar quer dizer o dobro do volume; um recipiente de paredes direitas com uma marca torna-o fácil de ver."
+     ],
+     "q": "Qual é o sítio mais quente e aconchegante da tua casa para a massa levedar?",
+     "c": "Põe a próxima massa num recipiente transparente, marca o nível inicial e vê quando dobrou."
+    },
+    "pt_BR": {
+     "t": "Primeira fermentação",
+     "g": "Aprenda onde deixar a massa crescer, quanto tempo leva e o que dobrar de tamanho significa de verdade.",
+     "p": [
+      "Cubra a massa e deixe em um lugar sem vento e morno, por volta de 24 a 27 °C.",
+      "Em temperatura ambiente, a maioria das massas simples dobra em 1 a 2 horas; no frio só demora mais.",
+      "Dobrar quer dizer o dobro do volume; um pote de paredes retas com uma marca facilita ver isso."
+     ],
+     "q": "Qual é o cantinho mais quente e aconchegante da sua casa para a massa crescer?",
+     "c": "Coloque sua próxima massa num pote transparente, marque o nível inicial e confira quando ela dobrar."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shaping a simple loaf",
+     "g": "Learn to degas dough gently and shape a sandwich loaf with good surface tension.",
+     "p": [
+      "Turn the risen dough out and press it gently into a rectangle, releasing large bubbles without crushing it.",
+      "Roll it up tightly from the short side, pinch the seam closed and tuck the ends under.",
+      "Surface tension acts like a skin that holds the shape; place the loaf seam side down in a greased tin."
+     ],
+     "q": "Do you like hands-on shaping tasks, like modelling clay or folding paper?",
+     "c": "Practise shaping with a ball of dough or even play dough: press, roll tightly and seal the seam three times."
+    },
+    "de": {
+     "t": "Einen einfachen Laib formen",
+     "g": "Lerne, Teig sanft zu entgasen und ein Kastenbrot mit guter Oberflächenspannung zu formen.",
+     "p": [
+      "Den gegangenen Teig herausnehmen und sanft zu einem Rechteck drücken; große Blasen entweichen lassen, ohne ihn zu zerquetschen.",
+      "Von der kurzen Seite her straff aufrollen, die Naht zusammendrücken und die Enden unterschlagen.",
+      "Oberflächenspannung wirkt wie eine Haut, die die Form hält; den Laib mit der Naht nach unten in die gefettete Form legen."
+     ],
+     "q": "Magst du Aufgaben mit den Händen, wie Modellieren oder Papierfalten?",
+     "c": "Übe das Formen mit Teig oder Knete: drücken, straff aufrollen, Naht verschließen, dreimal hintereinander."
+    },
+    "es": {
+     "t": "Formar una hogaza sencilla",
+     "g": "Aprende a desgasificar la masa con suavidad y a formar un pan de molde con buena tensión superficial.",
+     "p": [
+      "Vuelca la masa levada y presiónala suave en un rectángulo, soltando las burbujas grandes sin aplastarla.",
+      "Enróllala bien apretada desde el lado corto, pellizca la unión y mete los extremos por debajo.",
+      "La tensión superficial actúa como una piel que sostiene la forma; pon el pan con la unión abajo en un molde engrasado."
+     ],
+     "q": "¿Te gustan las tareas manuales como modelar arcilla o doblar papel?",
+     "c": "Practica el formado con masa o incluso plastilina: presiona, enrolla apretado y sella la unión tres veces."
+    },
+    "fr": {
+     "t": "Façonner un pain simple",
+     "g": "Apprends à dégazer la pâte en douceur et à façonner un pain de mie avec une bonne tension de surface.",
+     "p": [
+      "Démoule la pâte levée et presse-la doucement en rectangle, en chassant les grosses bulles sans l'écraser.",
+      "Roule-la bien serrée depuis le petit côté, pince la soudure et rentre les extrémités dessous.",
+      "La tension de surface agit comme une peau qui tient la forme ; pose le pain soudure dessous dans un moule graissé."
+     ],
+     "q": "Tu aimes les activités manuelles, comme modeler de l'argile ou plier du papier ?",
+     "c": "Entraîne-toi avec de la pâte ou de la pâte à modeler : presse, roule serré et soude, trois fois de suite."
+    },
+    "it": {
+     "t": "Formare una pagnotta semplice",
+     "g": "Impara a sgonfiare l'impasto con delicatezza e a formare un pan carrè con una buona tensione superficiale.",
+     "p": [
+      "Rovescia l'impasto lievitato e premilo piano a rettangolo, facendo uscire le bolle grandi senza schiacciarlo.",
+      "Arrotolalo stretto dal lato corto, pizzica la chiusura e ripiega le estremità sotto.",
+      "La tensione superficiale fa da pelle e tiene la forma; metti il pane con la chiusura sotto in uno stampo unto."
+     ],
+     "q": "Ti piacciono le attività manuali, come modellare l'argilla o piegare la carta?",
+     "c": "Esercitati con impasto o pongo: premi, arrotola stretto e sigilla la chiusura, per tre volte."
+    },
+    "pt": {
+     "t": "Moldar um pão simples",
+     "g": "Aprende a desgasificar a massa com cuidado e a moldar um pão de forma com boa tensão à superfície.",
+     "p": [
+      "Vira a massa levedada e pressiona-a com suavidade num retângulo, soltando as bolhas grandes sem a esmagar.",
+      "Enrola-a bem apertada a partir do lado curto, belisca a junta e dobra as pontas para baixo.",
+      "A tensão superficial funciona como uma pele que segura a forma; põe o pão com a junta para baixo numa forma untada."
+     ],
+     "q": "Gostas de tarefas manuais, como modelar barro ou dobrar papel?",
+     "c": "Treina a moldagem com massa ou plasticina: pressiona, enrola apertado e fecha a junta, três vezes seguidas."
+    },
+    "pt_BR": {
+     "t": "Modelando um pão simples",
+     "g": "Aprenda a tirar o gás da massa com cuidado e modelar um pão de forma com boa tensão na superfície.",
+     "p": [
+      "Vire a massa crescida e pressione com delicadeza formando um retângulo, soltando bolhas grandes sem esmagar.",
+      "Enrole bem apertado a partir do lado curto, belisque a emenda e dobre as pontas para baixo.",
+      "A tensão na superfície funciona como uma pele que segura o formato; coloque o pão com a emenda para baixo na forma untada."
+     ],
+     "q": "Você gosta de tarefas manuais, como modelar argila ou dobrar papel?",
+     "c": "Treine a modelagem com massa ou massinha: pressione, enrole apertado e feche a emenda, três vezes seguidas."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first white sandwich bread",
+     "g": "Bake a soft white tin loaf from start to finish, bringing together everything you learned this week.",
+     "p": [
+      "Mix flour, water, yeast, salt, a little sugar and butter; knead until it passes the windowpane test.",
+      "Let it double, shape it tightly into a loaf, then proof in the tin until it domes just above the rim.",
+      "Bake around 190 to 200 °C until deep golden and about 90 °C inside, then cool fully on a rack."
+     ],
+     "q": "What would you put on the first slice of your homemade bread?",
+     "c": "Bake your first sandwich loaf, take a photo of the first slice and note one thing to improve next time."
+    },
+    "de": {
+     "t": "Dein erstes weißes Kastenbrot",
+     "g": "Back ein weiches Kastenbrot von Anfang bis Ende und verbinde alles, was du diese Woche gelernt hast.",
+     "p": [
+      "Mehl, Wasser, Hefe, Salz, etwas Zucker und Butter mischen; kneten, bis der Fenstertest gelingt.",
+      "Gehen lassen, bis er sich verdoppelt, straff formen und in der Form gehen lassen, bis er knapp über den Rand wölbt.",
+      "Bei etwa 190 bis 200 °C tiefgolden backen, bis er innen rund 90 °C hat, dann ganz auf einem Gitter abkühlen."
+     ],
+     "q": "Was würdest du auf die erste Scheibe deines selbst gebackenen Brotes legen?",
+     "c": "Back dein erstes Kastenbrot, fotografiere die erste Scheibe und notiere eine Sache, die du verbessern willst."
+    },
+    "es": {
+     "t": "Tu primer pan de molde blanco",
+     "g": "Hornea un pan de molde blanco y tierno de principio a fin, uniendo todo lo aprendido esta semana.",
+     "p": [
+      "Mezcla harina, agua, levadura, sal, algo de azúcar y mantequilla; amasa hasta que pase la prueba de la membrana.",
+      "Deja que doble, fórmalo bien apretado y levalo en el molde hasta que asome justo por encima del borde.",
+      "Hornea a unos 190 a 200 °C hasta que esté bien dorado y a unos 90 °C por dentro, y enfríalo del todo en rejilla."
+     ],
+     "q": "¿Qué pondrías en la primera rebanada de tu pan casero?",
+     "c": "Hornea tu primer pan de molde, fotografía la primera rebanada y apunta una cosa a mejorar la próxima vez."
+    },
+    "fr": {
+     "t": "Ton premier pain de mie blanc",
+     "g": "Réalise un pain de mie moelleux du début à la fin, en réunissant tout ce que tu as appris cette semaine.",
+     "p": [
+      "Mélange farine, eau, levure, sel, un peu de sucre et de beurre ; pétris jusqu'à réussir le test de la fenêtre.",
+      "Laisse doubler, façonne serré, puis laisse pousser dans le moule jusqu'à ce qu'il bombe juste au-dessus du bord.",
+      "Cuis vers 190 à 200 °C jusqu'à une belle couleur dorée et environ 90 °C à cœur, puis laisse refroidir sur une grille."
+     ],
+     "q": "Que mettrais-tu sur la première tranche de ton pain maison ?",
+     "c": "Fais ton premier pain de mie, photographie la première tranche et note une chose à améliorer la prochaine fois."
+    },
+    "it": {
+     "t": "Il tuo primo pan carrè bianco",
+     "g": "Prepara un pan carrè morbido dall'inizio alla fine, mettendo insieme tutto ciò che hai imparato questa settimana.",
+     "p": [
+      "Mescola farina, acqua, lievito, sale, un po' di zucchero e burro; impasta finché supera la prova del velo.",
+      "Fai raddoppiare, forma stretto e fai lievitare nello stampo finché sporge appena oltre il bordo.",
+      "Cuoci a circa 190-200 °C finché è ben dorato e a circa 90 °C al cuore, poi fai raffreddare del tutto su una gratella."
+     ],
+     "q": "Cosa metteresti sulla prima fetta del tuo pane fatto in casa?",
+     "c": "Prepara il tuo primo pan carrè, fotografa la prima fetta e annota una cosa da migliorare la prossima volta."
+    },
+    "pt": {
+     "t": "O teu primeiro pão de forma branco",
+     "g": "Faz um pão de forma macio do início ao fim, juntando tudo o que aprendeste esta semana.",
+     "p": [
+      "Mistura farinha, água, fermento, sal, um pouco de açúcar e manteiga; amassa até passar no teste da membrana.",
+      "Deixa dobrar, molda bem apertado e deixa levedar na forma até abaular um pouco acima da borda.",
+      "Coze a cerca de 190 a 200 °C até ficar bem dourado e com uns 90 °C no interior, e arrefece totalmente numa grelha."
+     ],
+     "q": "O que porias na primeira fatia do teu pão caseiro?",
+     "c": "Faz o teu primeiro pão de forma, fotografa a primeira fatia e anota uma coisa a melhorar da próxima vez."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro pão de forma branco",
+     "g": "Asse um pão de forma macio do começo ao fim, juntando tudo o que você aprendeu nesta semana.",
+     "p": [
+      "Misture farinha, água, fermento, sal, um pouco de açúcar e manteiga; sove até passar no teste do véu.",
+      "Deixe dobrar, modele bem apertado e deixe crescer na forma até formar uma cúpula logo acima da borda.",
+      "Asse a cerca de 190 a 200 °C até dourar bem e chegar a uns 90 °C por dentro, depois esfrie totalmente na grade."
+     ],
+     "q": "O que você colocaria na primeira fatia do seu pão caseiro?",
+     "c": "Asse seu primeiro pão de forma, fotografe a primeira fatia e anote uma coisa para melhorar na próxima vez."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Overproofed or underproofed?",
+     "g": "Use the finger poke test to judge when shaped dough is ready to go into the oven.",
+     "p": [
+      "Lightly flour a finger and press about 1 cm into the dough, then watch how the dent behaves.",
+      "If it springs back fast, it needs more time; if it springs back slowly and leaves a small dent, bake it now.",
+      "If the dent stays and the dough sighs or collapses, it is overproofed; reshape it and proof again briefly."
+     ],
+     "q": "Have you ever baked bread that was dense and tight, or flat with big holes under the crust?",
+     "c": "Poke your next proofing loaf every 10 minutes and note the moment the dent springs back slowly."
+    },
+    "de": {
+     "t": "Übergare oder Untergare?",
+     "g": "Nutze die Fingerdruckprobe, um zu beurteilen, wann geformter Teig bereit für den Ofen ist.",
+     "p": [
+      "Einen Finger leicht bemehlen, etwa 1 cm tief in den Teig drücken und beobachten, wie sich die Delle verhält.",
+      "Springt sie schnell zurück, braucht er mehr Zeit; kommt sie langsam zurück und bleibt eine kleine Delle, jetzt backen.",
+      "Bleibt die Delle und der Teig fällt ein, ist er übergar; neu formen und kurz noch einmal gehen lassen."
+     ],
+     "q": "Hattest du schon mal ein Brot, das dicht und fest war oder flach mit großen Löchern unter der Kruste?",
+     "c": "Drück bei deinem nächsten Laib alle 10 Minuten hinein und notiere, wann die Delle langsam zurückkommt."
+    },
+    "es": {
+     "t": "¿Pasado o falto de levado?",
+     "g": "Usa la prueba del dedo para saber cuándo la masa formada está lista para entrar al horno.",
+     "p": [
+      "Enharina un dedo y presiona alrededor de 1 cm en la masa, luego observa cómo se comporta la marca.",
+      "Si vuelve rápido, necesita más tiempo; si vuelve despacio y deja una pequeña marca, hornea ya.",
+      "Si la marca no vuelve y la masa se desinfla, está pasada; vuelve a formarla y deja levar de nuevo un poco."
+     ],
+     "q": "¿Alguna vez horneaste un pan denso y apretado, o plano con grandes huecos bajo la corteza?",
+     "c": "Presiona tu próximo pan cada 10 minutos durante el levado y anota cuándo la marca vuelve despacio."
+    },
+    "fr": {
+     "t": "Trop poussé ou pas assez ?",
+     "g": "Utilise le test du doigt pour savoir quand la pâte façonnée est prête à enfourner.",
+     "p": [
+      "Farine légèrement un doigt et enfonce-le d'environ 1 cm dans la pâte, puis observe le creux.",
+      "S'il remonte vite, il faut attendre ; s'il remonte lentement en laissant une petite marque, enfourne.",
+      "Si le creux reste et que la pâte s'affaisse, elle a trop poussé : refaçonne-la et laisse pousser un peu."
+     ],
+     "q": "As-tu déjà cuit un pain dense et serré, ou plat avec de gros trous sous la croûte ?",
+     "c": "Pendant l'apprêt de ton prochain pain, teste au doigt toutes les 10 minutes et note quand le creux remonte lentement."
+    },
+    "it": {
+     "t": "Troppo lievitato o troppo poco?",
+     "g": "Usa la prova del dito per capire quando l'impasto formato è pronto per il forno.",
+     "p": [
+      "Infarina un dito e premi circa 1 cm nell'impasto, poi osserva come si comporta l'incavo.",
+      "Se torna su in fretta serve più tempo; se torna su piano lasciando un piccolo segno, inforna subito.",
+      "Se l'incavo resta e l'impasto si sgonfia, è troppo lievitato; riformalo e fallo lievitare ancora un po'."
+     ],
+     "q": "Hai mai sfornato un pane denso e compatto, o piatto con grandi buchi sotto la crosta?",
+     "c": "Durante la lievitazione del prossimo pane premi ogni 10 minuti e annota quando l'incavo torna su piano."
+    },
+    "pt": {
+     "t": "Levedação a mais ou a menos?",
+     "g": "Usa o teste do dedo para saber quando a massa moldada está pronta para o forno.",
+     "p": [
+      "Enfarinha um dedo e pressiona cerca de 1 cm na massa, depois observa como a marca se comporta.",
+      "Se voltar depressa, precisa de mais tempo; se voltar devagar e deixar uma pequena marca, vai ao forno.",
+      "Se a marca ficar e a massa abater, levedou demais; volta a moldar e deixa levedar de novo um pouco."
+     ],
+     "q": "Já fizeste um pão denso e fechado, ou achatado com buracos grandes debaixo da côdea?",
+     "c": "Pressiona o teu próximo pão de 10 em 10 minutos durante a levedação e anota quando a marca volta devagar."
+    },
+    "pt_BR": {
+     "t": "Fermentou demais ou de menos?",
+     "g": "Use o teste do dedo para saber quando a massa modelada está pronta para o forno.",
+     "p": [
+      "Enfarinhe um dedo e pressione cerca de 1 cm na massa, depois observe como a marca se comporta.",
+      "Se voltar rápido, precisa de mais tempo; se voltar devagar e deixar uma pequena marca, já pode assar.",
+      "Se a marca ficar e a massa murchar, fermentou demais; modele de novo e deixe crescer mais um pouco."
+     ],
+     "q": "Você já assou um pão denso e fechado, ou achatado com buracos grandes sob a casca?",
+     "c": "Pressione seu próximo pão a cada 10 minutos durante a fermentação e anote quando a marca volta devagar."
+    }
+   }
+  }
+ ]
+}

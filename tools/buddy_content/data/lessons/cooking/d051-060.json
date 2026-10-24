@@ -1,0 +1,835 @@
+{
+ "topic": "cooking",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homemade granola",
+     "g": "Learn to bake crunchy granola clusters with oats, nuts, seeds and a touch of honey.",
+     "p": [
+      "Mix oats, chopped nuts and seeds with a little oil, honey or maple syrup and a pinch of salt.",
+      "Spread it on a lined tray and bake at a low to medium heat, stirring once or twice so it browns evenly.",
+      "Let it cool completely without stirring to form clusters, then store it in an airtight jar."
+     ],
+     "q": "What would you add to your own granola mix?",
+     "c": "Bake a small tray of granola, let it cool untouched and break it into crunchy clusters."
+    },
+    "de": {
+     "t": "Selbst gemachtes Granola",
+     "g": "Lerne knuspriges Granola mit Haferflocken, Nüssen, Samen und etwas Honig zu backen.",
+     "p": [
+      "Misch Haferflocken, gehackte Nüsse und Samen mit etwas Öl, Honig oder Ahornsirup und einer Prise Salz.",
+      "Verteil alles auf einem Blech mit Backpapier und back es bei niedriger bis mittlerer Hitze, ein- bis zweimal umrühren.",
+      "Lass es ohne Rühren ganz abkühlen, damit Cluster entstehen, und bewahr es luftdicht auf."
+     ],
+     "q": "Was würdest du in deine eigene Granola-Mischung geben?",
+     "c": "Back ein kleines Blech Granola, lass es unberührt abkühlen und brich es in knusprige Stücke."
+    },
+    "es": {
+     "t": "Granola casera",
+     "g": "Aprende a hornear granola crujiente con avena, frutos secos, semillas y un toque de miel.",
+     "p": [
+      "Mezcla avena, frutos secos picados y semillas con un poco de aceite, miel o sirope de arce y una pizca de sal.",
+      "Extiéndela en una bandeja con papel y hornéala a temperatura baja o media, removiendo una o dos veces.",
+      "Déjala enfriar del todo sin remover para que se formen racimos, y guárdala en un tarro hermético."
+     ],
+     "q": "¿Qué añadirías a tu propia mezcla de granola?",
+     "c": "Hornea una bandeja pequeña de granola, déjala enfriar sin tocarla y rómpela en trozos crujientes."
+    },
+    "fr": {
+     "t": "Granola maison",
+     "g": "Apprends à cuire un granola croustillant avec avoine, noix, graines et une touche de miel.",
+     "p": [
+      "Mélange flocons d'avoine, noix concassées et graines avec un peu d'huile, de miel ou de sirop d'érable et une pincée de sel.",
+      "Étale sur une plaque recouverte de papier et cuis à four doux à moyen, en remuant une ou deux fois.",
+      "Laisse refroidir complètement sans toucher pour former des grappes, puis conserve dans un bocal hermétique."
+     ],
+     "q": "Que mettrais-tu dans ton propre mélange de granola ?",
+     "c": "Cuis une petite plaque de granola, laisse-la refroidir sans y toucher et casse-la en morceaux croustillants."
+    },
+    "it": {
+     "t": "Granola fatta in casa",
+     "g": "Impara a cuocere una granola croccante con avena, frutta secca, semi e un tocco di miele.",
+     "p": [
+      "Mescola fiocchi d'avena, frutta secca tritata e semi con un filo d'olio, miele o sciroppo d'acero e un pizzico di sale.",
+      "Stendila su una teglia con carta forno e cuocila a temperatura bassa o media, mescolando una o due volte.",
+      "Lasciala raffreddare del tutto senza toccarla per formare grappoli, poi conservala in un barattolo ermetico."
+     ],
+     "q": "Cosa metteresti nel tuo mix di granola?",
+     "c": "Cuoci una piccola teglia di granola, lasciala raffreddare senza toccarla e spezzala in grappoli croccanti."
+    },
+    "pt": {
+     "t": "Granola caseira",
+     "g": "Aprende a fazer granola estaladiça com aveia, frutos secos, sementes e um toque de mel.",
+     "p": [
+      "Mistura aveia, frutos secos picados e sementes com um pouco de óleo, mel ou xarope de ácer e uma pitada de sal.",
+      "Espalha num tabuleiro com papel vegetal e leva ao forno em temperatura baixa a média, mexendo uma ou duas vezes.",
+      "Deixa arrefecer por completo sem mexer para formar cachos, e guarda num frasco hermético."
+     ],
+     "q": "O que punhas na tua própria mistura de granola?",
+     "c": "Faz um pequeno tabuleiro de granola, deixa arrefecer sem mexer e parte em pedaços estaladiços."
+    },
+    "pt_BR": {
+     "t": "Granola caseira",
+     "g": "Aprenda a assar granola crocante com aveia, castanhas, sementes e um toque de mel.",
+     "p": [
+      "Misture aveia, castanhas picadas e sementes com um pouco de óleo, mel ou melado e uma pitada de sal.",
+      "Espalhe numa assadeira forrada e asse em temperatura baixa a média, mexendo uma ou duas vezes.",
+      "Deixe esfriar por completo sem mexer para formar pedacinhos, e guarde num pote bem fechado."
+     ],
+     "q": "O que você colocaria na sua própria granola?",
+     "c": "Asse uma assadeira pequena de granola, deixe esfriar sem mexer e quebre em pedaços crocantes."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smoothies",
+     "g": "Learn to balance fruit, liquid, greens and texture in the blender.",
+     "p": [
+      "Use about one cup of liquid such as milk, yogurt or water for every one to two cups of fruit.",
+      "Frozen fruit gives a thick, cold smoothie without ice; a banana adds natural creaminess.",
+      "Add a handful of spinach for colour, put liquids in first, then blend until smooth and taste."
+     ],
+     "q": "What is your dream smoothie combination?",
+     "c": "Blend a smoothie with frozen fruit, a liquid and a handful of spinach, and adjust the thickness."
+    },
+    "de": {
+     "t": "Smoothies",
+     "g": "Lerne Obst, Flüssigkeit, Grünes und Konsistenz im Mixer auszubalancieren.",
+     "p": [
+      "Nimm etwa eine Tasse Flüssigkeit wie Milch, Joghurt oder Wasser auf ein bis zwei Tassen Obst.",
+      "Gefrorenes Obst macht den Smoothie dick und kalt ohne Eis; eine Banane macht ihn cremig.",
+      "Gib eine Handvoll Spinat für Farbe dazu, Flüssigkeit zuerst in den Mixer, dann glatt mixen und abschmecken."
+     ],
+     "q": "Was ist deine Traum-Smoothie-Kombination?",
+     "c": "Mix einen Smoothie aus gefrorenem Obst, Flüssigkeit und einer Handvoll Spinat und pass die Dicke an."
+    },
+    "es": {
+     "t": "Batidos y smoothies",
+     "g": "Aprende a equilibrar fruta, líquido, verduras y textura en la batidora.",
+     "p": [
+      "Usa una taza de líquido como leche, yogur o agua por cada una o dos tazas de fruta.",
+      "La fruta congelada da un batido espeso y frío sin hielo; el plátano aporta cremosidad natural.",
+      "Añade un puñado de espinacas para dar color, pon primero el líquido, tritura hasta que quede liso y prueba."
+     ],
+     "q": "¿Cuál es tu combinación de batido soñada?",
+     "c": "Prepara un batido con fruta congelada, un líquido y un puñado de espinacas, y ajusta la textura."
+    },
+    "fr": {
+     "t": "Les smoothies",
+     "g": "Apprends à équilibrer fruits, liquide, verdure et texture dans le blender.",
+     "p": [
+      "Compte environ une tasse de liquide comme lait, yaourt ou eau pour une à deux tasses de fruits.",
+      "Les fruits surgelés donnent un smoothie épais et frais sans glaçons ; la banane apporte du crémeux.",
+      "Ajoute une poignée d'épinards pour la couleur, mets le liquide en premier, mixe bien et goûte."
+     ],
+     "q": "Quelle est ta combinaison de smoothie de rêve ?",
+     "c": "Mixe un smoothie avec fruits surgelés, un liquide et une poignée d'épinards, puis ajuste l'épaisseur."
+    },
+    "it": {
+     "t": "Frullati e smoothie",
+     "g": "Impara a bilanciare frutta, liquido, verdure e consistenza nel frullatore.",
+     "p": [
+      "Usa circa una tazza di liquido come latte, yogurt o acqua ogni una o due tazze di frutta.",
+      "La frutta surgelata dà un frullato denso e freddo senza ghiaccio; la banana aggiunge cremosità.",
+      "Aggiungi una manciata di spinaci per il colore, metti prima i liquidi, frulla bene e assaggia."
+     ],
+     "q": "Qual è la tua combinazione di frullato dei sogni?",
+     "c": "Frulla uno smoothie con frutta surgelata, un liquido e una manciata di spinaci, e regola la densità."
+    },
+    "pt": {
+     "t": "Batidos",
+     "g": "Aprende a equilibrar fruta, líquido, verduras e textura na liquidificadora.",
+     "p": [
+      "Usa cerca de uma chávena de líquido como leite, iogurte ou água para uma a duas chávenas de fruta.",
+      "A fruta congelada dá um batido espesso e fresco sem gelo; a banana dá cremosidade natural.",
+      "Junta uma mão-cheia de espinafres para dar cor, põe primeiro o líquido, tritura bem e prova."
+     ],
+     "q": "Qual é a tua combinação de batido de sonho?",
+     "c": "Faz um batido com fruta congelada, um líquido e uma mão-cheia de espinafres, e ajusta a textura."
+    },
+    "pt_BR": {
+     "t": "Vitaminas e smoothies",
+     "g": "Aprenda a equilibrar fruta, líquido, verduras e textura no liquidificador.",
+     "p": [
+      "Use cerca de uma xícara de líquido como leite, iogurte ou água para uma a duas xícaras de fruta.",
+      "Fruta congelada deixa a vitamina grossa e gelada sem gelo; a banana dá cremosidade natural.",
+      "Junte um punhado de espinafre para dar cor, coloque o líquido primeiro, bata bem e prove."
+     ],
+     "q": "Qual é sua combinação de vitamina dos sonhos?",
+     "c": "Bata uma vitamina com fruta congelada, um líquido e um punhado de espinafre, e ajuste a textura."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snacks and dips",
+     "g": "Learn to make hummus, guacamole and yogurt dips to share.",
+     "p": [
+      "Hummus: blend chickpeas with tahini, lemon, garlic, salt and a splash of cold water until smooth.",
+      "Guacamole: mash ripe avocado with lime, salt, onion and coriander; make it close to serving time.",
+      "Yogurt dip: stir thick yogurt with grated cucumber, garlic, lemon and herbs, and keep it chilled."
+     ],
+     "q": "Which dip would you bring to a get-together?",
+     "c": "Make one dip from today's lesson and serve it with vegetable sticks or flatbread."
+    },
+    "de": {
+     "t": "Snacks und Dips",
+     "g": "Lerne Hummus, Guacamole und Joghurtdips zum Teilen.",
+     "p": [
+      "Hummus: Kichererbsen mit Tahini, Zitrone, Knoblauch, Salz und etwas kaltem Wasser glatt pürieren.",
+      "Guacamole: reife Avocado mit Limette, Salz, Zwiebel und Koriander zerdrücken, kurz vor dem Servieren.",
+      "Joghurtdip: dicken Joghurt mit geriebener Gurke, Knoblauch, Zitrone und Kräutern verrühren und kühl halten."
+     ],
+     "q": "Welchen Dip würdest du zu einem Treffen mitbringen?",
+     "c": "Mach einen Dip aus der heutigen Lektion und serviere ihn mit Gemüsesticks oder Fladenbrot."
+    },
+    "es": {
+     "t": "Aperitivos y salsas para mojar",
+     "g": "Aprende a preparar hummus, guacamole y salsas de yogur para compartir.",
+     "p": [
+      "Hummus: tritura garbanzos con tahini, limón, ajo, sal y un chorrito de agua fría hasta que quede liso.",
+      "Guacamole: aplasta aguacate maduro con lima, sal, cebolla y cilantro; prepáralo justo antes de servir.",
+      "Salsa de yogur: mezcla yogur espeso con pepino rallado, ajo, limón y hierbas, y mantenla en frío."
+     ],
+     "q": "¿Qué salsa llevarías a una reunión con amigos?",
+     "c": "Prepara una de las salsas de hoy y sírvela con bastones de verdura o pan plano."
+    },
+    "fr": {
+     "t": "Snacks et sauces à tremper",
+     "g": "Apprends à préparer houmous, guacamole et sauces au yaourt à partager.",
+     "p": [
+      "Houmous : mixe pois chiches, tahini, citron, ail, sel et un filet d'eau froide jusqu'à ce que ce soit lisse.",
+      "Guacamole : écrase un avocat mûr avec citron vert, sel, oignon et coriandre, juste avant de servir.",
+      "Sauce au yaourt : mélange yaourt épais, concombre râpé, ail, citron et herbes, et garde-la au frais."
+     ],
+     "q": "Quelle sauce apporterais-tu à une soirée entre amis ?",
+     "c": "Prépare une sauce de la leçon du jour et sers-la avec des bâtonnets de légumes ou une galette."
+    },
+    "it": {
+     "t": "Snack e salse da intingere",
+     "g": "Impara a preparare hummus, guacamole e salse allo yogurt da condividere.",
+     "p": [
+      "Hummus: frulla ceci con tahina, limone, aglio, sale e un goccio d'acqua fredda fino a renderlo liscio.",
+      "Guacamole: schiaccia avocado maturo con lime, sale, cipolla e coriandolo, poco prima di servire.",
+      "Salsa allo yogurt: mescola yogurt denso con cetriolo grattugiato, aglio, limone ed erbe, e tienila in fresco."
+     ],
+     "q": "Quale salsa porteresti a una serata con amici?",
+     "c": "Prepara una salsa della lezione di oggi e servila con bastoncini di verdura o pane piatto."
+    },
+    "pt": {
+     "t": "Petiscos e molhos para mergulhar",
+     "g": "Aprende a fazer húmus, guacamole e molhos de iogurte para partilhar.",
+     "p": [
+      "Húmus: tritura grão com tahini, limão, alho, sal e um pouco de água fria até ficar liso.",
+      "Guacamole: esmaga abacate maduro com lima, sal, cebola e coentros; faz perto da hora de servir.",
+      "Molho de iogurte: mistura iogurte espesso com pepino ralado, alho, limão e ervas, e mantém no frio."
+     ],
+     "q": "Que molho levavas a um encontro com amigos?",
+     "c": "Faz um dos molhos de hoje e serve-o com palitos de legumes ou pão achatado."
+    },
+    "pt_BR": {
+     "t": "Petiscos e pastinhas",
+     "g": "Aprenda a fazer homus, guacamole e pastinhas de iogurte para compartilhar.",
+     "p": [
+      "Homus: bata grão-de-bico com tahine, limão, alho, sal e um pouco de água gelada até ficar liso.",
+      "Guacamole: amasse abacate maduro com limão, sal, cebola e coentro; faça perto da hora de servir.",
+      "Pastinha de iogurte: misture iogurte grosso com pepino ralado, alho, limão e ervas, e mantenha gelada."
+     ],
+     "q": "Qual pastinha você levaria para um encontro com amigos?",
+     "c": "Faça uma das pastinhas de hoje e sirva com palitos de legumes ou pão de frigideira."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking for one",
+     "g": "Learn to scale recipes down, choose smart portions and avoid waste.",
+     "p": [
+      "Halve or quarter recipes with simple maths, but keep seasoning flexible and taste as you go.",
+      "Cook a little extra on purpose and plan a second meal with it, rather than eating the same thing all week.",
+      "Freeze single portions of soups, sauces and cooked grains, labelled with the name and date."
+     ],
+     "q": "What is the hardest part about cooking just for yourself?",
+     "c": "Halve a favourite recipe, cook it for one, and freeze or plan a use for any extra portion."
+    },
+    "de": {
+     "t": "Kochen für eine Person",
+     "g": "Lerne Rezepte zu verkleinern, kluge Portionen zu wählen und Verschwendung zu vermeiden.",
+     "p": [
+      "Halbiere oder viertele Rezepte mit einfacher Rechnung, aber würz flexibel und probier zwischendurch.",
+      "Koch bewusst etwas mehr und plane damit eine zweite Mahlzeit, statt die ganze Woche dasselbe zu essen.",
+      "Friere Einzelportionen von Suppen, Saucen und gekochtem Getreide ein, beschriftet mit Name und Datum."
+     ],
+     "q": "Was ist am schwierigsten, wenn du nur für dich kochst?",
+     "c": "Halbiere ein Lieblingsrezept, koch es für dich allein und friere eine Extraportion ein oder plane sie ein."
+    },
+    "es": {
+     "t": "Cocinar para uno",
+     "g": "Aprende a reducir recetas, elegir porciones inteligentes y evitar desperdicios.",
+     "p": [
+      "Divide las recetas a la mitad o a un cuarto con cuentas sencillas, pero ajusta la sazón probando.",
+      "Cocina un poco de más a propósito y planea otra comida con ello, en vez de comer lo mismo toda la semana.",
+      "Congela porciones individuales de sopas, salsas y cereales cocidos, etiquetadas con nombre y fecha."
+     ],
+     "q": "¿Qué es lo más difícil de cocinar solo para ti?",
+     "c": "Reduce a la mitad una receta favorita, cocínala para ti y congela o planea un uso para lo que sobre."
+    },
+    "fr": {
+     "t": "Cuisiner pour une personne",
+     "g": "Apprends à réduire les recettes, choisir des portions malines et éviter le gaspillage.",
+     "p": [
+      "Divise les recettes par deux ou quatre avec un calcul simple, mais ajuste l'assaisonnement en goûtant.",
+      "Cuisine un peu plus exprès et prévois un deuxième repas avec, plutôt que de manger la même chose toute la semaine.",
+      "Congèle des portions individuelles de soupes, sauces et céréales cuites, étiquetées avec nom et date."
+     ],
+     "q": "Qu'est-ce qui est le plus difficile quand tu cuisines juste pour toi ?",
+     "c": "Divise une recette préférée par deux, cuisine-la pour toi et congèle ou planifie la portion en trop."
+    },
+    "it": {
+     "t": "Cucinare per uno",
+     "g": "Impara a ridurre le ricette, scegliere porzioni furbe ed evitare gli sprechi.",
+     "p": [
+      "Dimezza o riduci a un quarto le ricette con calcoli semplici, ma regola il condimento assaggiando.",
+      "Cucina apposta un po' di più e pianifica un secondo pasto, invece di mangiare la stessa cosa tutta la settimana.",
+      "Congela porzioni singole di zuppe, sughi e cereali cotti, con etichetta di nome e data."
+     ],
+     "q": "Qual è la parte più difficile del cucinare solo per te?",
+     "c": "Dimezza una ricetta preferita, cucinala per te e congela o pianifica l'uso della porzione in più."
+    },
+    "pt": {
+     "t": "Cozinhar para um",
+     "g": "Aprende a reduzir receitas, escolher porções inteligentes e evitar desperdício.",
+     "p": [
+      "Divide as receitas por dois ou quatro com contas simples, mas ajusta o tempero provando.",
+      "Cozinha um pouco a mais de propósito e planeia outra refeição com isso, em vez de comer o mesmo a semana toda.",
+      "Congela porções individuais de sopas, molhos e cereais cozidos, com etiqueta de nome e data."
+     ],
+     "q": "O que é mais difícil quando cozinhas só para ti?",
+     "c": "Reduz a metade uma receita preferida, cozinha-a para ti e congela ou planeia um uso para o que sobrar."
+    },
+    "pt_BR": {
+     "t": "Cozinhando para um",
+     "g": "Aprenda a reduzir receitas, escolher porções inteligentes e evitar desperdício.",
+     "p": [
+      "Divida as receitas por dois ou quatro com contas simples, mas ajuste o tempero provando.",
+      "Cozinhe um pouco a mais de propósito e planeje outra refeição com isso, em vez de comer o mesmo a semana toda.",
+      "Congele porções individuais de sopas, molhos e grãos cozidos, com etiqueta de nome e data."
+     ],
+     "q": "Qual é a parte mais difícil de cozinhar só para você?",
+     "c": "Corte pela metade uma receita favorita, cozinhe para você e congele ou planeje um uso para a sobra."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leftovers made new",
+     "g": "Learn to turn leftovers into different meals while keeping them safe.",
+     "p": [
+      "Roast vegetables become soup or a frittata; cooked rice becomes fried rice; chicken becomes wraps.",
+      "Refrigerate leftovers within about two hours and eat them within three to four days.",
+      "Reheat leftovers until steaming hot all the way through, and reheat each portion only once."
+     ],
+     "q": "What leftover do you most often have in your fridge?",
+     "c": "Turn one leftover from your fridge into a completely different dish, reheating it until piping hot."
+    },
+    "de": {
+     "t": "Aus Resten etwas Neues",
+     "g": "Lerne Reste in andere Gerichte zu verwandeln und dabei sicher zu bleiben.",
+     "p": [
+      "Ofengemüse wird zu Suppe oder Frittata, Reis zu gebratenem Reis, Hähnchen zu Wraps.",
+      "Stell Reste innerhalb von etwa zwei Stunden kalt und iss sie innerhalb von drei bis vier Tagen.",
+      "Erwärm Reste, bis sie durch und durch dampfend heiß sind, und jede Portion nur einmal."
+     ],
+     "q": "Welche Reste hast du am häufigsten im Kühlschrank?",
+     "c": "Verwandle einen Rest aus deinem Kühlschrank in ein ganz anderes Gericht und erhitze ihn gut durch."
+    },
+    "es": {
+     "t": "Sobras convertidas en platos nuevos",
+     "g": "Aprende a transformar las sobras en comidas distintas manteniéndolas seguras.",
+     "p": [
+      "Las verduras asadas se vuelven sopa o frittata; el arroz, arroz frito; el pollo, wraps.",
+      "Guarda las sobras en la nevera antes de unas dos horas y cómelas en tres o cuatro días.",
+      "Recalienta hasta que humeen por completo, y recalienta cada porción una sola vez."
+     ],
+     "q": "¿Qué sobra tienes más a menudo en la nevera?",
+     "c": "Convierte una sobra de tu nevera en un plato totalmente distinto, recalentándola hasta que esté bien caliente."
+    },
+    "fr": {
+     "t": "Des restes réinventés",
+     "g": "Apprends à transformer les restes en nouveaux plats tout en restant prudent.",
+     "p": [
+      "Les légumes rôtis deviennent soupe ou frittata, le riz devient riz sauté, le poulet finit en wraps.",
+      "Mets les restes au frigo dans les deux heures environ et mange-les sous trois à quatre jours.",
+      "Réchauffe-les jusqu'à ce qu'ils soient bien fumants à cœur, et une seule fois par portion."
+     ],
+     "q": "Quel reste as-tu le plus souvent dans ton frigo ?",
+     "c": "Transforme un reste de ton frigo en un plat complètement différent, réchauffé bien à cœur."
+    },
+    "it": {
+     "t": "Avanzi trasformati",
+     "g": "Impara a trasformare gli avanzi in piatti diversi mantenendoli sicuri.",
+     "p": [
+      "Le verdure arrosto diventano zuppa o frittata, il riso diventa riso saltato, il pollo finisce nei wrap.",
+      "Metti gli avanzi in frigo entro circa due ore e consumali entro tre o quattro giorni.",
+      "Riscaldali finché sono fumanti in ogni punto, e riscalda ogni porzione una sola volta."
+     ],
+     "q": "Quale avanzo hai più spesso in frigo?",
+     "c": "Trasforma un avanzo del tuo frigo in un piatto del tutto diverso, scaldandolo bene fino al cuore."
+    },
+    "pt": {
+     "t": "Restos com vida nova",
+     "g": "Aprende a transformar restos em refeições diferentes mantendo-os seguros.",
+     "p": [
+      "Legumes assados viram sopa ou frittata, arroz vira arroz frito, frango vira wraps.",
+      "Guarda os restos no frigorífico em cerca de duas horas e come-os em três a quatro dias.",
+      "Reaquece até estarem bem quentes por dentro, a fumegar, e reaquece cada porção só uma vez."
+     ],
+     "q": "Que resto tens mais vezes no frigorífico?",
+     "c": "Transforma um resto do teu frigorífico num prato totalmente diferente, reaquecendo-o bem."
+    },
+    "pt_BR": {
+     "t": "Sobras com cara nova",
+     "g": "Aprenda a transformar sobras em refeições diferentes mantendo tudo seguro.",
+     "p": [
+      "Legumes assados viram sopa ou fritada, arroz vira arroz frito, frango vira wrap.",
+      "Leve as sobras à geladeira em até duas horas e consuma em três a quatro dias.",
+      "Reaqueça até soltar vapor por inteiro, e reaqueça cada porção só uma vez."
+     ],
+     "q": "Qual sobra você mais tem na geladeira?",
+     "c": "Transforme uma sobra da sua geladeira num prato totalmente diferente, reaquecendo bem."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meal planning basics",
+     "g": "Learn to plan a week of meals and write a useful shopping list.",
+     "p": [
+      "Check what you already have, then plan meals around your week: quick dinners on busy days.",
+      "Reuse ingredients across meals, like one bunch of herbs or a big tray of roasted vegetables.",
+      "Write your list by store section, such as produce, dairy and pantry, so shopping is fast."
+     ],
+     "q": "Which day of your week is hardest for cooking?",
+     "c": "Plan five dinners for next week and write a shopping list grouped by store section."
+    },
+    "de": {
+     "t": "Grundlagen der Essensplanung",
+     "g": "Lerne eine Woche Mahlzeiten zu planen und eine nützliche Einkaufsliste zu schreiben.",
+     "p": [
+      "Schau, was du schon hast, und plane passend zur Woche: schnelle Abendessen an vollen Tagen.",
+      "Nutze Zutaten mehrfach, etwa einen Bund Kräuter oder ein großes Blech Ofengemüse.",
+      "Schreib die Liste nach Bereichen im Laden, etwa Obst und Gemüse, Milchprodukte und Vorrat."
+     ],
+     "q": "An welchem Wochentag fällt dir Kochen am schwersten?",
+     "c": "Plane fünf Abendessen für nächste Woche und schreib eine Einkaufsliste nach Ladenbereichen."
+    },
+    "es": {
+     "t": "Planificar comidas",
+     "g": "Aprende a planificar una semana de comidas y a escribir una lista de la compra útil.",
+     "p": [
+      "Revisa lo que ya tienes y planea según tu semana: cenas rápidas para los días ocupados.",
+      "Reutiliza ingredientes en varias comidas, como un manojo de hierbas o una bandeja grande de verduras asadas.",
+      "Escribe la lista por secciones de la tienda, como frutas y verduras, lácteos y despensa."
+     ],
+     "q": "¿Qué día de tu semana es el más difícil para cocinar?",
+     "c": "Planea cinco cenas para la próxima semana y escribe una lista de la compra por secciones."
+    },
+    "fr": {
+     "t": "Planifier ses repas",
+     "g": "Apprends à planifier une semaine de repas et à écrire une liste de courses utile.",
+     "p": [
+      "Regarde ce que tu as déjà, puis adapte les repas à ta semaine : dîners rapides les jours chargés.",
+      "Réutilise les ingrédients d'un repas à l'autre, comme un bouquet d'herbes ou une grande plaque de légumes rôtis.",
+      "Écris ta liste par rayon, par exemple fruits et légumes, produits laitiers et épicerie."
+     ],
+     "q": "Quel jour de ta semaine est le plus difficile pour cuisiner ?",
+     "c": "Planifie cinq dîners pour la semaine prochaine et écris une liste de courses classée par rayon."
+    },
+    "it": {
+     "t": "Pianificare i pasti",
+     "g": "Impara a pianificare una settimana di pasti e a scrivere una lista della spesa utile.",
+     "p": [
+      "Guarda cosa hai già, poi pianifica in base alla settimana: cene veloci nei giorni pieni.",
+      "Riutilizza gli ingredienti in più pasti, come un mazzetto di erbe o una grande teglia di verdure arrosto.",
+      "Scrivi la lista per reparto del negozio, come frutta e verdura, latticini e dispensa."
+     ],
+     "q": "Quale giorno della settimana è il più difficile per cucinare?",
+     "c": "Pianifica cinque cene per la prossima settimana e scrivi una lista della spesa divisa per reparto."
+    },
+    "pt": {
+     "t": "Planear refeições",
+     "g": "Aprende a planear uma semana de refeições e a escrever uma lista de compras útil.",
+     "p": [
+      "Vê o que já tens e planeia conforme a tua semana: jantares rápidos nos dias mais ocupados.",
+      "Reaproveita ingredientes em várias refeições, como um molho de ervas ou um tabuleiro grande de legumes assados.",
+      "Escreve a lista por secções da loja, como frutas e legumes, laticínios e despensa."
+     ],
+     "q": "Que dia da tua semana é mais difícil para cozinhar?",
+     "c": "Planeia cinco jantares para a próxima semana e escreve uma lista de compras por secções."
+    },
+    "pt_BR": {
+     "t": "Planejando refeições",
+     "g": "Aprenda a planejar uma semana de refeições e escrever uma lista de compras útil.",
+     "p": [
+      "Veja o que você já tem e planeje conforme sua semana: jantares rápidos nos dias corridos.",
+      "Reaproveite ingredientes em várias refeições, como um maço de ervas ou uma assadeira grande de legumes.",
+      "Escreva a lista por seções do mercado, como hortifrúti, laticínios e despensa."
+     ],
+     "q": "Qual dia da sua semana é o mais difícil para cozinhar?",
+     "c": "Planeje cinco jantares para a próxima semana e escreva uma lista de compras por seção."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smart grocery shopping",
+     "g": "Learn to choose seasonal produce, read labels and pick useful pantry staples.",
+     "p": [
+      "Seasonal fruit and vegetables usually taste better and are easier to find in good condition.",
+      "Read labels for the ingredient list and use-by or best-before dates; use-by matters most for safety.",
+      "Shop with your list, choose cold items last and take them home and into the fridge quickly."
+     ],
+     "q": "What do you always end up buying that is not on your list?",
+     "c": "On your next shop, pick one seasonal vegetable and check the dates on three products."
+    },
+    "de": {
+     "t": "Clever einkaufen",
+     "g": "Lerne saisonales Obst und Gemüse zu wählen, Etiketten zu lesen und nützliche Vorräte zu kaufen.",
+     "p": [
+      "Saisonales Obst und Gemüse schmeckt meist besser und ist leichter in guter Qualität zu finden.",
+      "Lies Zutatenliste und Datum: Das Verbrauchsdatum ist für die Sicherheit wichtiger als das Mindesthaltbarkeitsdatum.",
+      "Kauf mit Liste ein, nimm Gekühltes zuletzt und bring es schnell nach Hause in den Kühlschrank."
+     ],
+     "q": "Was kaufst du immer, obwohl es nicht auf der Liste steht?",
+     "c": "Wähl beim nächsten Einkauf ein Saisongemüse und prüf bei drei Produkten das Datum."
+    },
+    "es": {
+     "t": "Comprar con cabeza",
+     "g": "Aprende a elegir productos de temporada, leer etiquetas y escoger básicos útiles para la despensa.",
+     "p": [
+      "La fruta y la verdura de temporada suelen saber mejor y es más fácil encontrarlas en buen estado.",
+      "Lee la lista de ingredientes y las fechas: la de caducidad importa más para la seguridad que la de consumo preferente.",
+      "Compra con tu lista, coge lo refrigerado al final y llévalo pronto a casa y a la nevera."
+     ],
+     "q": "¿Qué acabas comprando siempre aunque no esté en tu lista?",
+     "c": "En tu próxima compra, elige una verdura de temporada y revisa las fechas de tres productos."
+    },
+    "fr": {
+     "t": "Faire ses courses malin",
+     "g": "Apprends à choisir des produits de saison, lire les étiquettes et prendre les bons basiques.",
+     "p": [
+      "Les fruits et légumes de saison ont souvent plus de goût et se trouvent plus facilement en bon état.",
+      "Lis la liste d'ingrédients et les dates : la date limite de consommation compte plus pour la sécurité que la DDM.",
+      "Fais tes courses avec ta liste, prends le frais en dernier et range-le vite au frigo en rentrant."
+     ],
+     "q": "Qu'achètes-tu toujours alors que ce n'est pas sur ta liste ?",
+     "c": "Lors de tes prochaines courses, choisis un légume de saison et vérifie les dates de trois produits."
+    },
+    "it": {
+     "t": "Fare la spesa con criterio",
+     "g": "Impara a scegliere prodotti di stagione, leggere le etichette e prendere basi utili per la dispensa.",
+     "p": [
+      "Frutta e verdura di stagione di solito hanno più sapore e si trovano più facilmente in buone condizioni.",
+      "Leggi ingredienti e date: la data di scadenza conta per la sicurezza più del da consumarsi preferibilmente entro.",
+      "Fai la spesa con la lista, prendi i prodotti freschi per ultimi e mettili presto in frigo a casa."
+     ],
+     "q": "Cosa finisci sempre per comprare anche se non è in lista?",
+     "c": "Alla prossima spesa scegli una verdura di stagione e controlla le date di tre prodotti."
+    },
+    "pt": {
+     "t": "Compras inteligentes",
+     "g": "Aprende a escolher produtos da época, ler rótulos e comprar básicos úteis para a despensa.",
+     "p": [
+      "A fruta e os legumes da época costumam saber melhor e encontram-se mais facilmente em bom estado.",
+      "Lê a lista de ingredientes e as datas: a data-limite de consumo conta mais para a segurança do que o consumir de preferência.",
+      "Faz compras com a lista, apanha os frescos no fim e leva-os depressa para casa e para o frigorífico."
+     ],
+     "q": "O que acabas sempre por comprar sem estar na lista?",
+     "c": "Na próxima ida às compras, escolhe um legume da época e verifica as datas de três produtos."
+    },
+    "pt_BR": {
+     "t": "Compras inteligentes",
+     "g": "Aprenda a escolher produtos da estação, ler rótulos e comprar básicos úteis para a despensa.",
+     "p": [
+      "Frutas e legumes da estação costumam ter mais sabor e são mais fáceis de achar em bom estado.",
+      "Leia a lista de ingredientes e as datas: a data de validade é a que importa para a segurança.",
+      "Compre com sua lista, pegue os refrigerados por último e leve logo para casa e para a geladeira."
+     ],
+     "q": "O que você sempre acaba comprando sem estar na lista?",
+     "c": "Na próxima compra, escolha um legume da estação e confira a validade de três produtos."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a pantry",
+     "g": "Learn the staples like grains, tins, oils and spices that make cooking possible any day.",
+     "p": [
+      "Keep dry basics: pasta, rice, oats, lentils and flour, stored in closed containers in a cool, dry place.",
+      "Add tins and jars such as tomatoes, beans, chickpeas, tuna and stock for quick meals.",
+      "Round it out with oils, vinegar, soy sauce, salt, pepper and a few spices, using older items first."
+     ],
+     "q": "Which pantry staple could you never live without?",
+     "c": "Check your pantry, list what you have and add two missing staples to your shopping list."
+    },
+    "de": {
+     "t": "Einen Vorrat anlegen",
+     "g": "Lerne die Grundvorräte wie Getreide, Konserven, Öle und Gewürze, die Kochen jeden Tag möglich machen.",
+     "p": [
+      "Halte trockene Basics bereit: Pasta, Reis, Haferflocken, Linsen und Mehl, verschlossen, kühl und trocken.",
+      "Dazu Dosen und Gläser wie Tomaten, Bohnen, Kichererbsen, Thunfisch und Brühe für schnelle Gerichte.",
+      "Ergänze mit Öl, Essig, Sojasauce, Salz, Pfeffer und ein paar Gewürzen, Älteres zuerst verbrauchen."
+     ],
+     "q": "Auf welchen Vorrat könntest du nie verzichten?",
+     "c": "Prüf deinen Vorrat, notiere, was da ist, und setz zwei fehlende Basics auf die Einkaufsliste."
+    },
+    "es": {
+     "t": "Montar una despensa",
+     "g": "Aprende los básicos como cereales, latas, aceites y especias que permiten cocinar cualquier día.",
+     "p": [
+      "Ten básicos secos: pasta, arroz, avena, lentejas y harina, en recipientes cerrados y en un lugar fresco y seco.",
+      "Suma latas y botes como tomate, alubias, garbanzos, atún y caldo para comidas rápidas.",
+      "Complétala con aceite, vinagre, salsa de soja, sal, pimienta y algunas especias, usando primero lo más antiguo."
+     ],
+     "q": "¿Sin qué básico de despensa no podrías vivir?",
+     "c": "Revisa tu despensa, apunta lo que tienes y añade dos básicos que falten a tu lista de la compra."
+    },
+    "fr": {
+     "t": "Constituer un placard",
+     "g": "Apprends les basiques comme céréales, conserves, huiles et épices qui permettent de cuisiner chaque jour.",
+     "p": [
+      "Garde des basiques secs : pâtes, riz, flocons d'avoine, lentilles et farine, en boîtes fermées au frais et au sec.",
+      "Ajoute des conserves et bocaux comme tomates, haricots, pois chiches, thon et bouillon pour des repas rapides.",
+      "Complète avec huile, vinaigre, sauce soja, sel, poivre et quelques épices, en utilisant d'abord les plus anciens."
+     ],
+     "q": "Sans quel basique de placard ne pourrais-tu jamais vivre ?",
+     "c": "Vérifie ton placard, note ce que tu as et ajoute deux basiques manquants à ta liste de courses."
+    },
+    "it": {
+     "t": "Costruire una dispensa",
+     "g": "Impara le basi come cereali, scatolame, oli e spezie che permettono di cucinare ogni giorno.",
+     "p": [
+      "Tieni basi secche: pasta, riso, avena, lenticchie e farina, in contenitori chiusi in un luogo fresco e asciutto.",
+      "Aggiungi scatole e barattoli come pelati, fagioli, ceci, tonno e brodo per pasti veloci.",
+      "Completa con olio, aceto, salsa di soia, sale, pepe e qualche spezia, usando prima ciò che è più vecchio."
+     ],
+     "q": "Senza quale base della dispensa non potresti mai vivere?",
+     "c": "Controlla la dispensa, annota cosa hai e aggiungi due basi mancanti alla lista della spesa."
+    },
+    "pt": {
+     "t": "Montar uma despensa",
+     "g": "Aprende os básicos como cereais, enlatados, óleos e especiarias que permitem cozinhar em qualquer dia.",
+     "p": [
+      "Tem básicos secos: massa, arroz, aveia, lentilhas e farinha, em recipientes fechados num sítio fresco e seco.",
+      "Junta latas e frascos como tomate, feijão, grão, atum e caldo para refeições rápidas.",
+      "Completa com azeite, vinagre, molho de soja, sal, pimenta e algumas especiarias, usando primeiro o mais antigo."
+     ],
+     "q": "Sem que básico da despensa nunca conseguias viver?",
+     "c": "Revê a tua despensa, aponta o que tens e junta dois básicos em falta à lista de compras."
+    },
+    "pt_BR": {
+     "t": "Montando uma despensa",
+     "g": "Aprenda os básicos como grãos, enlatados, óleos e temperos que tornam possível cozinhar qualquer dia.",
+     "p": [
+      "Tenha básicos secos: macarrão, arroz, aveia, lentilha e farinha, em potes fechados em lugar fresco e seco.",
+      "Junte latas e vidros como tomate, feijão, grão-de-bico, atum e caldo para refeições rápidas.",
+      "Complete com azeite, vinagre, shoyu, sal, pimenta e alguns temperos, usando primeiro o que é mais antigo."
+     ],
+     "q": "Sem qual item da despensa você nunca conseguiria viver?",
+     "c": "Confira sua despensa, anote o que tem e coloque dois básicos que faltam na lista de compras."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reducing food waste",
+     "g": "Learn to use stems, peels and leftovers creatively and store food well.",
+     "p": [
+      "Herb and broccoli stems can be chopped into sauces and stir-fries; clean vegetable scraps make stock.",
+      "Store food well: herbs in water like flowers, bread in the freezer, and ripe fruit for smoothies.",
+      "Use the oldest food first and keep a small eat-me-first box in the fridge for items to finish soon."
+     ],
+     "q": "Which food do you most often end up throwing away?",
+     "c": "Make a simple stock or a stir-fry using stems and scraps you would normally throw away."
+    },
+    "de": {
+     "t": "Lebensmittelverschwendung vermeiden",
+     "g": "Lerne Stiele, Schalen und Reste kreativ zu nutzen und Essen gut zu lagern.",
+     "p": [
+      "Kräuter- und Brokkolistiele passen gehackt in Saucen und Wokgerichte; saubere Gemüsereste ergeben Brühe.",
+      "Lagere gut: Kräuter wie Blumen ins Wasser, Brot in den Gefrierschrank, reifes Obst in Smoothies.",
+      "Verbrauch Älteres zuerst und richte im Kühlschrank eine Box für Dinge ein, die bald gegessen werden sollen."
+     ],
+     "q": "Welches Lebensmittel wirfst du am häufigsten weg?",
+     "c": "Koch eine einfache Brühe oder ein Wokgericht aus Stielen und Resten, die du sonst wegwerfen würdest."
+    },
+    "es": {
+     "t": "Reducir el desperdicio",
+     "g": "Aprende a usar tallos, pieles y sobras con creatividad y a conservar bien los alimentos.",
+     "p": [
+      "Los tallos de hierbas y brócoli se pican para salsas y salteados; los restos limpios de verdura dan un caldo.",
+      "Conserva bien: las hierbas en agua como flores, el pan en el congelador y la fruta madura para batidos.",
+      "Usa primero lo más antiguo y ten en la nevera una caja de cómeme primero con lo que hay que terminar."
+     ],
+     "q": "¿Qué alimento acabas tirando más a menudo?",
+     "c": "Haz un caldo sencillo o un salteado con tallos y restos que normalmente tirarías."
+    },
+    "fr": {
+     "t": "Réduire le gaspillage",
+     "g": "Apprends à utiliser tiges, épluchures et restes avec créativité et à bien conserver les aliments.",
+     "p": [
+      "Les tiges d'herbes et de brocoli se hachent dans les sauces et sautés ; les parures propres font un bouillon.",
+      "Conserve bien : les herbes dans l'eau comme des fleurs, le pain au congélateur, les fruits mûrs en smoothie.",
+      "Utilise d'abord le plus ancien et garde au frigo une boîte à manger en premier pour ce qui doit partir vite."
+     ],
+     "q": "Quel aliment finis-tu le plus souvent par jeter ?",
+     "c": "Prépare un bouillon simple ou un sauté avec des tiges et parures que tu jetterais d'habitude."
+    },
+    "it": {
+     "t": "Ridurre gli sprechi",
+     "g": "Impara a usare gambi, bucce e avanzi in modo creativo e a conservare bene il cibo.",
+     "p": [
+      "I gambi di erbe e broccoli si tritano in sughi e saltati; gli scarti puliti di verdura diventano brodo.",
+      "Conserva bene: le erbe in acqua come fiori, il pane in freezer e la frutta matura per i frullati.",
+      "Usa prima il cibo più vecchio e tieni in frigo una scatola mangiami prima per ciò che va finito presto."
+     ],
+     "q": "Quale cibo finisci più spesso per buttare?",
+     "c": "Prepara un brodo semplice o un saltato con gambi e scarti che di solito butteresti."
+    },
+    "pt": {
+     "t": "Reduzir o desperdício",
+     "g": "Aprende a usar talos, cascas e restos com criatividade e a guardar bem os alimentos.",
+     "p": [
+      "Os talos de ervas e brócolos picam-se para molhos e salteados; restos limpos de legumes fazem caldo.",
+      "Guarda bem: ervas em água como flores, pão no congelador e fruta madura para batidos.",
+      "Usa primeiro o mais antigo e tem no frigorífico uma caixa come-me primeiro para o que deve acabar logo."
+     ],
+     "q": "Que alimento acabas por deitar fora mais vezes?",
+     "c": "Faz um caldo simples ou um salteado com talos e restos que normalmente deitavas fora."
+    },
+    "pt_BR": {
+     "t": "Reduzindo o desperdício",
+     "g": "Aprenda a usar talos, cascas e sobras com criatividade e a guardar bem os alimentos.",
+     "p": [
+      "Talos de ervas e brócolis podem ir picados em molhos e refogados; aparas limpas de legumes viram caldo.",
+      "Guarde bem: ervas na água como flores, pão no freezer e fruta madura para vitaminas.",
+      "Use primeiro o mais antigo e tenha na geladeira uma caixa coma-me primeiro para o que precisa acabar logo."
+     ],
+     "q": "Qual alimento você mais acaba jogando fora?",
+     "c": "Faça um caldo simples ou um refogado com talos e aparas que você normalmente jogaria fora."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: building confidence",
+     "g": "Look back at proteins, grains and planning, then cook a meal straight from your pantry.",
+     "p": [
+      "You learned fats, pans, searing, safe temperatures, chicken, mince, fish, tofu and potatoes.",
+      "You also cooked grains, stir-fries, one-pan meals, breakfasts, dips and practised planning and storing.",
+      "Cooking from the pantry builds confidence: combine a grain, a protein, a vegetable and good seasoning."
+     ],
+     "q": "Which dish from the last month would you happily cook for a friend?",
+     "c": "Cook a meal using only what is already in your pantry and fridge: one grain, one protein, one vegetable."
+    },
+    "de": {
+     "t": "Rückblick: Selbstvertrauen aufbauen",
+     "g": "Blick auf Proteine, Getreide und Planung zurück und koch dann ein Essen direkt aus dem Vorrat.",
+     "p": [
+      "Du hast Fette, Pfannen, Anbraten, sichere Temperaturen, Hähnchen, Hack, Fisch, Tofu und Kartoffeln gelernt.",
+      "Dazu Getreide, Wokgerichte, Ein-Pfannen-Essen, Frühstück, Dips sowie Planen und Lagern.",
+      "Kochen aus dem Vorrat stärkt das Selbstvertrauen: Getreide, Protein, Gemüse und gutes Würzen kombinieren."
+     ],
+     "q": "Welches Gericht aus dem letzten Monat würdest du gern für Freunde kochen?",
+     "c": "Koch ein Essen nur aus Vorrat und Kühlschrank: ein Getreide, ein Protein, ein Gemüse."
+    },
+    "es": {
+     "t": "Repaso: ganar confianza",
+     "g": "Repasa proteínas, cereales y planificación, y luego cocina una comida directamente con tu despensa.",
+     "p": [
+      "Aprendiste grasas, sartenes, sellado, temperaturas seguras, pollo, carne picada, pescado, tofu y patatas.",
+      "También cocinaste cereales, salteados, platos en un recipiente, desayunos, salsas, y practicaste planificar y conservar.",
+      "Cocinar con la despensa da confianza: combina un cereal, una proteína, una verdura y buena sazón."
+     ],
+     "q": "¿Qué plato del último mes cocinarías con gusto para un amigo?",
+     "c": "Cocina una comida solo con lo que ya tienes en la despensa y la nevera: un cereal, una proteína y una verdura."
+    },
+    "fr": {
+     "t": "Bilan : prendre confiance",
+     "g": "Reviens sur protéines, céréales et organisation, puis cuisine un repas avec ton placard.",
+     "p": [
+      "Tu as appris matières grasses, poêles, saisie, températures sûres, poulet, haché, poisson, tofu et pommes de terre.",
+      "Tu as aussi cuisiné céréales, sautés, plats tout-en-un, petits-déjeuners, sauces, et pratiqué planification et conservation.",
+      "Cuisiner avec le placard donne confiance : associe une céréale, une protéine, un légume et un bon assaisonnement."
+     ],
+     "q": "Quel plat du dernier mois cuisinerais-tu volontiers pour un ami ?",
+     "c": "Cuisine un repas uniquement avec ton placard et ton frigo : une céréale, une protéine, un légume."
+    },
+    "it": {
+     "t": "Ripasso: acquistare sicurezza",
+     "g": "Ripassa proteine, cereali e pianificazione, poi cucina un pasto direttamente con la dispensa.",
+     "p": [
+      "Hai imparato grassi, padelle, rosolatura, temperature sicure, pollo, macinato, pesce, tofu e patate.",
+      "Hai anche cucinato cereali, saltati, piatti unici, colazioni, salse, e praticato pianificazione e conservazione.",
+      "Cucinare con la dispensa dà sicurezza: unisci un cereale, una proteina, una verdura e un buon condimento."
+     ],
+     "q": "Quale piatto dell'ultimo mese cucineresti volentieri per un amico?",
+     "c": "Cucina un pasto solo con ciò che hai in dispensa e in frigo: un cereale, una proteina, una verdura."
+    },
+    "pt": {
+     "t": "Revisão: ganhar confiança",
+     "g": "Revê proteínas, cereais e planeamento, e depois cozinha uma refeição só com a despensa.",
+     "p": [
+      "Aprendeste gorduras, frigideiras, selar, temperaturas seguras, frango, carne picada, peixe, tofu e batatas.",
+      "Também cozinhaste cereais, salteados, pratos num só tacho, pequenos-almoços, molhos, e praticaste planear e guardar.",
+      "Cozinhar com a despensa dá confiança: junta um cereal, uma proteína, um legume e bom tempero."
+     ],
+     "q": "Que prato do último mês cozinhavas com gosto para um amigo?",
+     "c": "Cozinha uma refeição só com o que já tens na despensa e no frigorífico: um cereal, uma proteína, um legume."
+    },
+    "pt_BR": {
+     "t": "Revisão: ganhando confiança",
+     "g": "Relembre proteínas, grãos e planejamento, e depois cozinhe uma refeição só com a despensa.",
+     "p": [
+      "Você aprendeu gorduras, frigideiras, selar, temperaturas seguras, frango, carne moída, peixe, tofu e batatas.",
+      "Também cozinhou grãos, stir-fry, pratos de uma panela só, cafés da manhã, pastinhas, e praticou planejar e guardar.",
+      "Cozinhar com a despensa dá confiança: junte um grão, uma proteína, um legume e um bom tempero."
+     ],
+     "q": "Qual prato do último mês você cozinharia com prazer para um amigo?",
+     "c": "Cozinhe uma refeição só com o que já tem na despensa e na geladeira: um grão, uma proteína, um legume."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "creative_writing",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Microfiction in 50 words",
+     "g": "Tell a complete tiny story with a beginning, a turn and an ending in exactly 50 words.",
+     "p": [
+      "Start in the middle of action: there is no room for warm-up.",
+      "Every story needs a turn: something changes, is found or is understood.",
+      "Count your words and cut until each one earns its place."
+     ],
+     "q": "Do you enjoy very short stories or do you prefer long ones?",
+     "c": "Write a 50-word story about a lost umbrella that finds a new owner. Count every word."
+    },
+    "de": {
+     "t": "Mikrofiktion in 50 Wörtern",
+     "g": "Erzähl eine vollständige Minigeschichte mit Anfang, Wendung und Ende in genau 50 Wörtern.",
+     "p": [
+      "Beginne mitten in der Handlung, für Anlauf ist kein Platz.",
+      "Jede Geschichte braucht eine Wendung: Etwas ändert sich, wird gefunden oder verstanden.",
+      "Zähl die Wörter und kürze, bis jedes seinen Platz verdient."
+     ],
+     "q": "Magst du sehr kurze Geschichten oder lieber lange?",
+     "c": "Schreib eine Geschichte in 50 Wörtern über einen verlorenen Regenschirm, der ein neues Zuhause findet."
+    },
+    "es": {
+     "t": "Microficción en 50 palabras",
+     "g": "Cuenta una historia diminuta completa, con inicio, giro y final, en exactamente 50 palabras.",
+     "p": [
+      "Empieza en plena acción: no hay espacio para calentar.",
+      "Toda historia necesita un giro: algo cambia, se encuentra o se comprende.",
+      "Cuenta las palabras y recorta hasta que cada una se gane su lugar."
+     ],
+     "q": "¿Te gustan las historias muy cortas o prefieres las largas?",
+     "c": "Escribe una historia de 50 palabras sobre un paraguas perdido que encuentra un nuevo dueño. Cuenta cada palabra."
+    },
+    "fr": {
+     "t": "La microfiction en 50 mots",
+     "g": "Raconte une histoire minuscule complète, avec début, tournant et fin, en exactement 50 mots.",
+     "p": [
+      "Commence en pleine action : il n'y a pas de place pour l'échauffement.",
+      "Toute histoire a besoin d'un tournant : quelque chose change, se trouve ou se comprend.",
+      "Compte tes mots et coupe jusqu'à ce que chacun mérite sa place."
+     ],
+     "q": "Aimes-tu les histoires très courtes ou préfères-tu les longues ?",
+     "c": "Écris une histoire de 50 mots sur un parapluie perdu qui trouve un nouveau propriétaire. Compte chaque mot."
+    },
+    "it": {
+     "t": "Microfiction in 50 parole",
+     "g": "Racconta una storia minuscola completa, con inizio, svolta e finale, in esattamente 50 parole.",
+     "p": [
+      "Comincia nel mezzo dell'azione: non c'è spazio per il riscaldamento.",
+      "Ogni storia ha bisogno di una svolta: qualcosa cambia, si trova o si capisce.",
+      "Conta le parole e taglia finché ognuna non si guadagna il suo posto."
+     ],
+     "q": "Ti piacciono le storie brevissime o preferisci quelle lunghe?",
+     "c": "Scrivi una storia di 50 parole su un ombrello perduto che trova un nuovo padrone. Conta ogni parola."
+    },
+    "pt": {
+     "t": "Microficção em 50 palavras",
+     "g": "Conta uma história minúscula completa, com início, viragem e final, em exatamente 50 palavras.",
+     "p": [
+      "Começa a meio da ação: não há espaço para aquecimento.",
+      "Toda a história precisa de uma viragem: algo muda, é encontrado ou compreendido.",
+      "Conta as palavras e corta até cada uma merecer o seu lugar."
+     ],
+     "q": "Gostas de histórias muito curtas ou preferes as longas?",
+     "c": "Escreve uma história de 50 palavras sobre um guarda-chuva perdido que encontra um novo dono. Conta cada palavra."
+    },
+    "pt_BR": {
+     "t": "Microficção em 50 palavras",
+     "g": "Conte uma história minúscula completa, com começo, virada e final, em exatamente 50 palavras.",
+     "p": [
+      "Comece no meio da ação: não tem espaço para aquecimento.",
+      "Toda história precisa de uma virada: algo muda, é encontrado ou compreendido.",
+      "Conte as palavras e corte até cada uma merecer seu lugar."
+     ],
+     "q": "Você gosta de histórias bem curtas ou prefere as longas?",
+     "c": "Escreva uma história de 50 palavras sobre um guarda-chuva perdido que encontra um novo dono. Conte cada palavra."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The six-word story",
+     "g": "Explore how much story can fit into just six carefully chosen words.",
+     "p": [
+      "Six words can suggest a past, a present and a hope for the future.",
+      "Choose words that open questions in the reader's mind.",
+      "Write ten versions quickly; the best one often comes late."
+     ],
+     "q": "If you had to describe your life so far in six words, what would they be?",
+     "c": "Write ten six-word stories about new beginnings and pick the one that makes you smile most."
+    },
+    "de": {
+     "t": "Die Sechs-Wörter-Geschichte",
+     "g": "Entdecke, wie viel Geschichte in nur sechs sorgfältig gewählte Wörter passt.",
+     "p": [
+      "Sechs Wörter können eine Vergangenheit, eine Gegenwart und eine Hoffnung andeuten.",
+      "Wähle Wörter, die im Kopf der Lesenden Fragen öffnen.",
+      "Schreib schnell zehn Versionen, die beste kommt oft erst spät."
+     ],
+     "q": "Wenn du dein bisheriges Leben in sechs Wörtern beschreiben müsstest, welche wären es?",
+     "c": "Schreib zehn Sechs-Wörter-Geschichten über Neuanfänge und wähle die, die dich am meisten lächeln lässt."
+    },
+    "es": {
+     "t": "La historia de seis palabras",
+     "g": "Explora cuánta historia cabe en solo seis palabras bien elegidas.",
+     "p": [
+      "Seis palabras pueden sugerir un pasado, un presente y una esperanza.",
+      "Elige palabras que abran preguntas en la mente del lector.",
+      "Escribe diez versiones rápido; la mejor suele llegar al final."
+     ],
+     "q": "Si tuvieras que describir tu vida hasta hoy en seis palabras, ¿cuáles serían?",
+     "c": "Escribe diez historias de seis palabras sobre nuevos comienzos y elige la que más te haga sonreír."
+    },
+    "fr": {
+     "t": "L'histoire en six mots",
+     "g": "Explore tout ce qu'une histoire peut contenir en six mots soigneusement choisis.",
+     "p": [
+      "Six mots peuvent suggérer un passé, un présent et un espoir.",
+      "Choisis des mots qui ouvrent des questions dans l'esprit du lecteur.",
+      "Écris vite dix versions ; la meilleure arrive souvent tard."
+     ],
+     "q": "Si tu devais décrire ta vie jusqu'ici en six mots, lesquels choisirais-tu ?",
+     "c": "Écris dix histoires en six mots sur les nouveaux départs et garde celle qui te fait le plus sourire."
+    },
+    "it": {
+     "t": "La storia in sei parole",
+     "g": "Scopri quanta storia può stare in sole sei parole scelte con cura.",
+     "p": [
+      "Sei parole possono suggerire un passato, un presente e una speranza.",
+      "Scegli parole che aprano domande nella mente del lettore.",
+      "Scrivi dieci versioni in fretta: la migliore arriva spesso alla fine."
+     ],
+     "q": "Se dovessi descrivere la tua vita finora in sei parole, quali sceglieresti?",
+     "c": "Scrivi dieci storie di sei parole sui nuovi inizi e scegli quella che ti fa sorridere di più."
+    },
+    "pt": {
+     "t": "A história de seis palavras",
+     "g": "Explora quanta história cabe em apenas seis palavras bem escolhidas.",
+     "p": [
+      "Seis palavras podem sugerir um passado, um presente e uma esperança.",
+      "Escolhe palavras que abram perguntas na cabeça do leitor.",
+      "Escreve dez versões depressa; a melhor costuma chegar no fim."
+     ],
+     "q": "Se tivesses de descrever a tua vida até hoje em seis palavras, quais seriam?",
+     "c": "Escreve dez histórias de seis palavras sobre recomeços e escolhe a que mais te faz sorrir."
+    },
+    "pt_BR": {
+     "t": "A história de seis palavras",
+     "g": "Explore quanta história cabe em apenas seis palavras bem escolhidas.",
+     "p": [
+      "Seis palavras podem sugerir um passado, um presente e uma esperança.",
+      "Escolha palavras que abram perguntas na cabeça do leitor.",
+      "Escreva dez versões rápido; a melhor costuma vir no final."
+     ],
+     "q": "Se você tivesse que descrever sua vida até hoje em seis palavras, quais seriam?",
+     "c": "Escreva dez histórias de seis palavras sobre recomeços e escolha a que mais faz você sorrir."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing from a photo",
+     "g": "Use an image as a prompt to invent who, where and what happens next.",
+     "p": [
+      "Study the photo for small clues: clothes, light, objects at the edges.",
+      "Ask who is there, what they want and what happened one minute before.",
+      "Write what happens next: the photo is just the first frame of your story."
+     ],
+     "q": "Is there a photo on your phone that you think hides a great story?",
+     "c": "Pick a photo of a street or a landscape and write 200 words about what happens there one hour later."
+    },
+    "de": {
+     "t": "Schreiben nach einem Foto",
+     "g": "Nutze ein Bild als Anstoß, um zu erfinden, wer, wo und was als Nächstes geschieht.",
+     "p": [
+      "Untersuche das Foto nach kleinen Hinweisen: Kleidung, Licht, Dinge am Rand.",
+      "Frag, wer da ist, was die Person will und was eine Minute vorher geschah.",
+      "Schreib, was danach passiert: Das Foto ist nur das erste Bild deiner Geschichte."
+     ],
+     "q": "Gibt es auf deinem Handy ein Foto, das deiner Meinung nach eine tolle Geschichte verbirgt?",
+     "c": "Wähle ein Foto einer Straße oder Landschaft und schreib 200 Wörter darüber, was dort eine Stunde später geschieht."
+    },
+    "es": {
+     "t": "Escribir a partir de una foto",
+     "g": "Usa una imagen como punto de partida para inventar quién, dónde y qué pasa después.",
+     "p": [
+      "Estudia la foto buscando pistas: ropa, luz, objetos en los bordes.",
+      "Pregúntate quién está ahí, qué quiere y qué pasó un minuto antes.",
+      "Escribe lo que ocurre después: la foto es solo el primer fotograma de tu historia."
+     ],
+     "q": "¿Hay alguna foto en tu móvil que creas que esconde una gran historia?",
+     "c": "Elige una foto de una calle o un paisaje y escribe 200 palabras sobre lo que pasa allí una hora después."
+    },
+    "fr": {
+     "t": "Écrire à partir d'une photo",
+     "g": "Utilise une image comme déclencheur pour inventer qui, où et ce qui se passe ensuite.",
+     "p": [
+      "Étudie la photo à la recherche d'indices : vêtements, lumière, objets dans les coins.",
+      "Demande-toi qui est là, ce qu'il veut et ce qui s'est passé une minute avant.",
+      "Écris la suite : la photo n'est que la première image de ton histoire."
+     ],
+     "q": "Y a-t-il sur ton téléphone une photo qui, selon toi, cache une belle histoire ?",
+     "c": "Choisis la photo d'une rue ou d'un paysage et écris 200 mots sur ce qui s'y passe une heure plus tard."
+    },
+    "it": {
+     "t": "Scrivere da una foto",
+     "g": "Usa un'immagine come spunto per inventare chi, dove e cosa succede dopo.",
+     "p": [
+      "Studia la foto in cerca di indizi: vestiti, luce, oggetti ai bordi.",
+      "Chiediti chi c'è, cosa vuole e cosa è successo un minuto prima.",
+      "Scrivi cosa succede dopo: la foto è solo il primo fotogramma della tua storia."
+     ],
+     "q": "C'è una foto sul tuo telefono che secondo te nasconde una bella storia?",
+     "c": "Scegli la foto di una strada o di un paesaggio e scrivi 200 parole su cosa succede lì un'ora dopo."
+    },
+    "pt": {
+     "t": "Escrever a partir de uma foto",
+     "g": "Usa uma imagem como ponto de partida para inventar quem, onde e o que acontece a seguir.",
+     "p": [
+      "Estuda a foto à procura de pistas: roupa, luz, objetos nas margens.",
+      "Pergunta quem está ali, o que quer e o que aconteceu um minuto antes.",
+      "Escreve o que acontece depois: a foto é só o primeiro fotograma da tua história."
+     ],
+     "q": "Há alguma foto no teu telemóvel que aches que esconde uma grande história?",
+     "c": "Escolhe uma foto de uma rua ou paisagem e escreve 200 palavras sobre o que lá acontece uma hora depois."
+    },
+    "pt_BR": {
+     "t": "Escrever a partir de uma foto",
+     "g": "Use uma imagem como ponto de partida para inventar quem, onde e o que acontece depois.",
+     "p": [
+      "Estude a foto atrás de pistas: roupas, luz, objetos nos cantos.",
+      "Pergunte quem está ali, o que quer e o que aconteceu um minuto antes.",
+      "Escreva o que acontece depois: a foto é só o primeiro quadro da sua história."
+     ],
+     "q": "Tem alguma foto no seu celular que você acha que esconde uma grande história?",
+     "c": "Escolha uma foto de uma rua ou paisagem e escreva 200 palavras sobre o que acontece ali uma hora depois."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing from a single word",
+     "g": "Build a short piece from one random word and every association it brings.",
+     "p": [
+      "Pick a word at random from a book or dictionary and write it in the centre of a page.",
+      "Around it, jot every memory, image and feeling it brings for three minutes.",
+      "Choose the most surprising association and start your piece there."
+     ],
+     "q": "What is a word you love just for its sound?",
+     "c": "Take the word 'window', map associations for three minutes, then write a 150-word piece from your favourite."
+    },
+    "de": {
+     "t": "Schreiben aus einem einzigen Wort",
+     "g": "Bau einen kurzen Text aus einem zufälligen Wort und allem, was es in dir auslöst.",
+     "p": [
+      "Wähle zufällig ein Wort aus einem Buch oder Wörterbuch und schreib es in die Seitenmitte.",
+      "Notiere drei Minuten lang ringsum jede Erinnerung, jedes Bild, jedes Gefühl dazu.",
+      "Nimm die überraschendste Verbindung und beginne dort deinen Text."
+     ],
+     "q": "Welches Wort liebst du allein wegen seines Klangs?",
+     "c": "Nimm das Wort ‚Fenster‘, sammle drei Minuten Assoziationen und schreib 150 Wörter aus deiner liebsten."
+    },
+    "es": {
+     "t": "Escribir a partir de una palabra",
+     "g": "Construye un texto breve con una palabra al azar y todas las asociaciones que despierta.",
+     "p": [
+      "Elige una palabra al azar de un libro o diccionario y escríbela en el centro de la hoja.",
+      "A su alrededor, apunta durante tres minutos cada recuerdo, imagen y emoción que traiga.",
+      "Escoge la asociación más sorprendente y empieza ahí tu texto."
+     ],
+     "q": "¿Qué palabra te encanta solo por cómo suena?",
+     "c": "Toma la palabra «ventana», haz un mapa de asociaciones tres minutos y escribe 150 palabras desde tu favorita."
+    },
+    "fr": {
+     "t": "Écrire à partir d'un seul mot",
+     "g": "Construis un court texte à partir d'un mot au hasard et de toutes ses associations.",
+     "p": [
+      "Choisis un mot au hasard dans un livre ou un dictionnaire et écris-le au centre d'une page.",
+      "Autour, note pendant trois minutes chaque souvenir, image et émotion qu'il éveille.",
+      "Prends l'association la plus surprenante et commence ton texte là."
+     ],
+     "q": "Quel mot aimes-tu rien que pour sa sonorité ?",
+     "c": "Prends le mot « fenêtre », fais trois minutes d'associations, puis écris 150 mots à partir de ta préférée."
+    },
+    "it": {
+     "t": "Scrivere da una sola parola",
+     "g": "Costruisci un breve testo da una parola casuale e da tutte le associazioni che porta.",
+     "p": [
+      "Scegli a caso una parola da un libro o un dizionario e scrivila al centro del foglio.",
+      "Intorno, annota per tre minuti ogni ricordo, immagine ed emozione che evoca.",
+      "Scegli l'associazione più sorprendente e comincia lì il tuo testo."
+     ],
+     "q": "Qual è una parola che ami solo per il suo suono?",
+     "c": "Prendi la parola «finestra», fai tre minuti di associazioni e scrivi 150 parole partendo dalla tua preferita."
+    },
+    "pt": {
+     "t": "Escrever a partir de uma palavra",
+     "g": "Constrói um texto curto a partir de uma palavra ao acaso e de todas as associações que traz.",
+     "p": [
+      "Escolhe uma palavra ao acaso num livro ou dicionário e escreve-a no centro da folha.",
+      "À volta, anota durante três minutos cada memória, imagem e emoção que ela traz.",
+      "Escolhe a associação mais surpreendente e começa aí o teu texto."
+     ],
+     "q": "Que palavra adoras só pelo som?",
+     "c": "Pega na palavra «janela», faz três minutos de associações e escreve 150 palavras a partir da tua preferida."
+    },
+    "pt_BR": {
+     "t": "Escrever a partir de uma palavra",
+     "g": "Construa um texto curto a partir de uma palavra aleatória e de todas as associações que ela traz.",
+     "p": [
+      "Escolha uma palavra ao acaso em um livro ou dicionário e escreva no centro da folha.",
+      "Em volta, anote por três minutos cada memória, imagem e emoção que ela traz.",
+      "Escolha a associação mais surpreendente e comece seu texto por ali."
+     ],
+     "q": "Que palavra você adora só pelo som?",
+     "c": "Pegue a palavra «janela», faça três minutos de associações e escreva 150 palavras a partir da sua favorita."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What-if questions",
+     "g": "Turn ordinary situations into story ideas by asking 'what if' again and again.",
+     "p": [
+      "Start with something normal: buying bread, catching a train, watering a plant.",
+      "Ask 'what if' and then ask it again about the answer, three or four times.",
+      "Keep the question playful; the fourth 'what if' is often the most original."
+     ],
+     "q": "What everyday moment from your week could become the start of a story?",
+     "c": "Pick an ordinary task and write a chain of five 'what if' questions, each building on the last."
+    },
+    "de": {
+     "t": "Was-wäre-wenn-Fragen",
+     "g": "Mach aus alltäglichen Situationen Geschichtenideen, indem du immer wieder ‚Was wäre, wenn?‘ fragst.",
+     "p": [
+      "Beginne mit etwas Normalem: Brot kaufen, den Zug nehmen, eine Pflanze gießen.",
+      "Frag ‚Was wäre, wenn?‘ und stell die Frage dann zur Antwort erneut, drei- oder viermal.",
+      "Bleib verspielt, das vierte ‚Was wäre, wenn‘ ist oft das originellste."
+     ],
+     "q": "Welcher Alltagsmoment deiner Woche könnte der Anfang einer Geschichte sein?",
+     "c": "Wähle eine alltägliche Aufgabe und schreib eine Kette aus fünf ‚Was wäre, wenn‘-Fragen, die aufeinander aufbauen."
+    },
+    "es": {
+     "t": "Preguntas «¿y si...?»",
+     "g": "Convierte situaciones cotidianas en ideas para historias preguntando «¿y si...?» una y otra vez.",
+     "p": [
+      "Empieza con algo normal: comprar pan, coger un tren, regar una planta.",
+      "Pregunta «¿y si...?» y vuelve a preguntarlo sobre la respuesta, tres o cuatro veces.",
+      "Mantén el juego: el cuarto «¿y si...?» suele ser el más original."
+     ],
+     "q": "¿Qué momento cotidiano de tu semana podría ser el inicio de una historia?",
+     "c": "Elige una tarea corriente y escribe una cadena de cinco preguntas «¿y si...?», cada una a partir de la anterior."
+    },
+    "fr": {
+     "t": "Les questions « et si... ? »",
+     "g": "Transforme des situations ordinaires en idées d'histoires en demandant « et si... ? » encore et encore.",
+     "p": [
+      "Pars de quelque chose de banal : acheter du pain, prendre un train, arroser une plante.",
+      "Demande « et si... ? », puis repose la question sur la réponse, trois ou quatre fois.",
+      "Reste joueur : le quatrième « et si » est souvent le plus original."
+     ],
+     "q": "Quel moment ordinaire de ta semaine pourrait devenir le début d'une histoire ?",
+     "c": "Choisis une tâche banale et écris une chaîne de cinq questions « et si... ? », chacune partant de la précédente."
+    },
+    "it": {
+     "t": "Le domande «e se...?»",
+     "g": "Trasforma situazioni comuni in idee per storie chiedendo «e se...?» ancora e ancora.",
+     "p": [
+      "Parti da qualcosa di normale: comprare il pane, prendere un treno, annaffiare una pianta.",
+      "Chiedi «e se...?» e poi richiedilo sulla risposta, tre o quattro volte.",
+      "Resta giocoso: il quarto «e se» è spesso il più originale."
+     ],
+     "q": "Quale momento quotidiano della tua settimana potrebbe diventare l'inizio di una storia?",
+     "c": "Scegli un compito comune e scrivi una catena di cinque domande «e se...?», ognuna basata sulla precedente."
+    },
+    "pt": {
+     "t": "Perguntas «e se...?»",
+     "g": "Transforma situações comuns em ideias para histórias perguntando «e se...?» vezes sem conta.",
+     "p": [
+      "Começa com algo normal: comprar pão, apanhar um comboio, regar uma planta.",
+      "Pergunta «e se...?» e volta a perguntar sobre a resposta, três ou quatro vezes.",
+      "Mantém o tom de brincadeira: o quarto «e se» é muitas vezes o mais original."
+     ],
+     "q": "Que momento banal da tua semana podia ser o início de uma história?",
+     "c": "Escolhe uma tarefa comum e escreve uma cadeia de cinco perguntas «e se...?», cada uma a partir da anterior."
+    },
+    "pt_BR": {
+     "t": "Perguntas «e se...?»",
+     "g": "Transforme situações comuns em ideias de histórias perguntando «e se...?» de novo e de novo.",
+     "p": [
+      "Comece com algo normal: comprar pão, pegar um trem, regar uma planta.",
+      "Pergunte «e se...?» e pergunte de novo sobre a resposta, três ou quatro vezes.",
+      "Mantenha o clima de brincadeira: o quarto «e se» costuma ser o mais original."
+     ],
+     "q": "Que momento comum da sua semana poderia ser o começo de uma história?",
+     "c": "Escolha uma tarefa comum e escreva uma cadeia de cinco perguntas «e se...?», cada uma partindo da anterior."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Combining two ideas",
+     "g": "Mix two unrelated sparks, like a lighthouse and a bakery, into one fresh story.",
+     "p": [
+      "Fresh ideas often come from joining two things that don't usually meet.",
+      "Look for what links them: a lighthouse keeper who bakes bread for passing ships.",
+      "Pull two sparks at random from your idea journal and see what grows."
+     ],
+     "q": "What two hobbies or interests of yours would make a fun story together?",
+     "c": "Choose two random entries from your idea journal and write a 150-word story that joins them."
+    },
+    "de": {
+     "t": "Zwei Ideen verbinden",
+     "g": "Verbinde zwei fremde Funken, etwa einen Leuchtturm und eine Bäckerei, zu einer frischen Geschichte.",
+     "p": [
+      "Frische Ideen entstehen oft, wenn sich zwei Dinge treffen, die sonst nichts miteinander zu tun haben.",
+      "Such die Verbindung: ein Leuchtturmwärter, der Brot für vorbeifahrende Schiffe backt.",
+      "Zieh zwei zufällige Funken aus deinem Ideentagebuch und schau, was daraus wächst."
+     ],
+     "q": "Welche zwei deiner Hobbys oder Interessen würden zusammen eine lustige Geschichte ergeben?",
+     "c": "Wähle zwei zufällige Einträge aus deinem Ideentagebuch und schreib eine Geschichte von 150 Wörtern, die sie verbindet."
+    },
+    "es": {
+     "t": "Combinar dos ideas",
+     "g": "Mezcla dos chispas sin relación, como un faro y una panadería, en una historia fresca.",
+     "p": [
+      "Las ideas frescas suelen nacer al unir dos cosas que normalmente no se encuentran.",
+      "Busca el vínculo: un farero que hornea pan para los barcos que pasan.",
+      "Saca dos chispas al azar de tu diario de ideas y mira qué crece."
+     ],
+     "q": "¿Qué dos aficiones o intereses tuyos darían juntos una historia divertida?",
+     "c": "Elige dos entradas al azar de tu diario de ideas y escribe una historia de 150 palabras que las una."
+    },
+    "fr": {
+     "t": "Combiner deux idées",
+     "g": "Mélange deux étincelles sans rapport, comme un phare et une boulangerie, en une histoire neuve.",
+     "p": [
+      "Les idées neuves naissent souvent de deux choses qui ne se rencontrent jamais.",
+      "Cherche le lien : un gardien de phare qui cuit du pain pour les bateaux qui passent.",
+      "Tire deux étincelles au hasard de ton carnet d'idées et vois ce qui pousse."
+     ],
+     "q": "Quels deux de tes loisirs ou centres d'intérêt feraient ensemble une histoire amusante ?",
+     "c": "Choisis deux entrées au hasard dans ton carnet d'idées et écris une histoire de 150 mots qui les réunit."
+    },
+    "it": {
+     "t": "Unire due idee",
+     "g": "Mescola due scintille senza legame, come un faro e una panetteria, in una storia nuova.",
+     "p": [
+      "Le idee fresche nascono spesso unendo due cose che di solito non si incontrano.",
+      "Cerca il collegamento: un guardiano del faro che sforna pane per le navi di passaggio.",
+      "Pesca due scintille a caso dal tuo diario delle idee e guarda cosa cresce."
+     ],
+     "q": "Quali due tuoi hobby o interessi insieme darebbero una storia divertente?",
+     "c": "Scegli due voci a caso dal tuo diario delle idee e scrivi una storia di 150 parole che le unisca."
+    },
+    "pt": {
+     "t": "Juntar duas ideias",
+     "g": "Mistura duas faíscas sem relação, como um farol e uma padaria, numa história fresca.",
+     "p": [
+      "As ideias frescas surgem muitas vezes ao juntar duas coisas que normalmente não se cruzam.",
+      "Procura a ligação: um faroleiro que coze pão para os barcos que passam.",
+      "Tira duas faíscas ao acaso do teu diário de ideias e vê o que cresce."
+     ],
+     "q": "Que dois passatempos ou interesses teus dariam juntos uma história divertida?",
+     "c": "Escolhe duas entradas ao acaso do teu diário de ideias e escreve uma história de 150 palavras que as una."
+    },
+    "pt_BR": {
+     "t": "Juntar duas ideias",
+     "g": "Misture duas faíscas sem relação, como um farol e uma padaria, em uma história fresca.",
+     "p": [
+      "Ideias frescas costumam surgir ao juntar duas coisas que normalmente não se encontram.",
+      "Procure a ligação: um faroleiro que assa pão para os barcos que passam.",
+      "Sorteie duas faíscas do seu diário de ideias e veja o que nasce."
+     ],
+     "q": "Quais dois hobbies ou interesses seus dariam juntos uma história divertida?",
+     "c": "Escolha duas anotações aleatórias do seu diário de ideias e escreva uma história de 150 palavras que una as duas."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing every day",
+     "g": "Build small daily writing habits that keep creativity flowing without pressure.",
+     "p": [
+      "A tiny daily goal, like 100 words or five minutes, is easier to keep than a big one.",
+      "Link writing to something you already do, like your morning coffee.",
+      "Track your days with a simple tick on a calendar and enjoy the growing chain."
+     ],
+     "q": "What time of day do you feel most creative?",
+     "c": "Choose your daily writing goal and time, write it down, and do today's session right now."
+    },
+    "de": {
+     "t": "Jeden Tag schreiben",
+     "g": "Entwickle kleine tägliche Schreibgewohnheiten, die Kreativität ohne Druck fließen lassen.",
+     "p": [
+      "Ein winziges Tagesziel wie 100 Wörter oder fünf Minuten hält man leichter als ein großes.",
+      "Verknüpfe das Schreiben mit etwas, das du ohnehin tust, etwa dem Morgenkaffee.",
+      "Mach für jeden Schreibtag ein Häkchen in den Kalender und freu dich über die wachsende Kette."
+     ],
+     "q": "Zu welcher Tageszeit fühlst du dich am kreativsten?",
+     "c": "Leg dein tägliches Schreibziel und deine Zeit fest, schreib sie auf und erledige die heutige Runde sofort."
+    },
+    "es": {
+     "t": "Escribir cada día",
+     "g": "Crea pequeños hábitos diarios que mantengan la creatividad fluyendo sin presión.",
+     "p": [
+      "Una meta diaria pequeña, como 100 palabras o cinco minutos, se cumple mejor que una grande.",
+      "Une la escritura a algo que ya haces, como tu café de la mañana.",
+      "Marca cada día en un calendario y disfruta de ver crecer la cadena."
+     ],
+     "q": "¿En qué momento del día te sientes más creativo?",
+     "c": "Elige tu meta diaria y tu horario, escríbelos y haz ahora mismo la sesión de hoy."
+    },
+    "fr": {
+     "t": "Écrire chaque jour",
+     "g": "Installe de petites habitudes d'écriture quotidiennes qui font couler la créativité sans pression.",
+     "p": [
+      "Un tout petit objectif quotidien, 100 mots ou cinq minutes, se tient mieux qu'un grand.",
+      "Associe l'écriture à un geste déjà ancré, comme ton café du matin.",
+      "Coche chaque jour sur un calendrier et savoure la chaîne qui s'allonge."
+     ],
+     "q": "À quel moment de la journée te sens-tu le plus créatif ?",
+     "c": "Choisis ton objectif quotidien et ton horaire, note-les et fais la séance d'aujourd'hui tout de suite."
+    },
+    "it": {
+     "t": "Scrivere ogni giorno",
+     "g": "Crea piccole abitudini quotidiane di scrittura che tengano viva la creatività senza pressione.",
+     "p": [
+      "Un piccolo obiettivo giornaliero, come 100 parole o cinque minuti, si mantiene meglio di uno grande.",
+      "Collega la scrittura a qualcosa che già fai, come il caffè del mattino.",
+      "Segna ogni giorno con una spunta sul calendario e goditi la catena che cresce."
+     ],
+     "q": "In quale momento della giornata ti senti più creativo?",
+     "c": "Scegli il tuo obiettivo quotidiano e l'orario, scrivili e fai subito la sessione di oggi."
+    },
+    "pt": {
+     "t": "Escrever todos os dias",
+     "g": "Cria pequenos hábitos diários de escrita que mantêm a criatividade a fluir sem pressão.",
+     "p": [
+      "Uma meta diária pequena, como 100 palavras ou cinco minutos, cumpre-se melhor do que uma grande.",
+      "Liga a escrita a algo que já fazes, como o café da manhã.",
+      "Marca cada dia num calendário e aproveita a corrente a crescer."
+     ],
+     "q": "Em que altura do dia te sentes mais criativo?",
+     "c": "Escolhe a tua meta diária e o teu horário, escreve-os e faz já a sessão de hoje."
+    },
+    "pt_BR": {
+     "t": "Escrever todo dia",
+     "g": "Crie pequenos hábitos diários de escrita que mantêm a criatividade fluindo sem pressão.",
+     "p": [
+      "Uma meta diária pequena, como 100 palavras ou cinco minutos, é mais fácil de manter que uma grande.",
+      "Ligue a escrita a algo que você já faz, como o café da manhã.",
+      "Marque cada dia no calendário e curta a sequência crescendo."
+     ],
+     "q": "Em que momento do dia você se sente mais criativo?",
+     "c": "Escolha sua meta diária e seu horário, anote e faça agora mesmo a sessão de hoje."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beating the blank page",
+     "g": "Use simple tricks, like starting mid-sentence or with dialogue, to get words moving.",
+     "p": [
+      "Start in the middle of a sentence: 'and that was when the cat...'",
+      "Open with a line of dialogue; voices pull the rest of the scene behind them.",
+      "Leave yesterday's session mid-sentence so today you know exactly how to begin."
+     ],
+     "q": "What do you usually do when you sit down and the words won't come?",
+     "c": "Start a new piece with a line of dialogue and keep writing for ten minutes without stopping."
+    },
+    "de": {
+     "t": "Die leere Seite besiegen",
+     "g": "Nutze einfache Tricks wie den Einstieg mitten im Satz oder mit Dialog, um ins Schreiben zu kommen.",
+     "p": [
+      "Beginne mitten im Satz: ‚… und genau da sprang die Katze …‘",
+      "Starte mit einer Dialogzeile, Stimmen ziehen den Rest der Szene hinter sich her.",
+      "Hör gestern mitten im Satz auf, dann weißt du heute genau, wie du anfängst."
+     ],
+     "q": "Was machst du meistens, wenn du dich hinsetzt und die Wörter nicht kommen?",
+     "c": "Beginne einen neuen Text mit einer Dialogzeile und schreib zehn Minuten ohne Pause weiter."
+    },
+    "es": {
+     "t": "Vencer la página en blanco",
+     "g": "Usa trucos sencillos, como empezar a mitad de frase o con un diálogo, para poner las palabras en marcha.",
+     "p": [
+      "Empieza a mitad de frase: «y fue entonces cuando el gato...».",
+      "Abre con una línea de diálogo; las voces arrastran el resto de la escena.",
+      "Deja la sesión de ayer a mitad de frase y hoy sabrás exactamente cómo empezar."
+     ],
+     "q": "¿Qué sueles hacer cuando te sientas y las palabras no llegan?",
+     "c": "Empieza un texto nuevo con una línea de diálogo y sigue escribiendo diez minutos sin parar."
+    },
+    "fr": {
+     "t": "Vaincre la page blanche",
+     "g": "Utilise des astuces simples, comme commencer en milieu de phrase ou par un dialogue, pour lancer les mots.",
+     "p": [
+      "Commence au milieu d'une phrase : « et c'est là que le chat... ».",
+      "Ouvre sur une réplique ; les voix entraînent le reste de la scène.",
+      "Arrête la séance d'hier en pleine phrase : aujourd'hui, tu sauras comment reprendre."
+     ],
+     "q": "Que fais-tu d'habitude quand tu t'assois et que les mots ne viennent pas ?",
+     "c": "Commence un nouveau texte par une réplique et continue d'écrire dix minutes sans t'arrêter."
+    },
+    "it": {
+     "t": "Sconfiggere la pagina bianca",
+     "g": "Usa trucchi semplici, come iniziare a metà frase o con un dialogo, per far partire le parole.",
+     "p": [
+      "Comincia a metà frase: «e fu proprio allora che il gatto...».",
+      "Apri con una battuta di dialogo: le voci si portano dietro il resto della scena.",
+      "Interrompi la sessione di ieri a metà frase: oggi saprai subito da dove ripartire."
+     ],
+     "q": "Cosa fai di solito quando ti siedi e le parole non arrivano?",
+     "c": "Inizia un nuovo testo con una battuta di dialogo e continua a scrivere per dieci minuti senza fermarti."
+    },
+    "pt": {
+     "t": "Vencer a página em branco",
+     "g": "Usa truques simples, como começar a meio de uma frase ou com diálogo, para pôr as palavras a andar.",
+     "p": [
+      "Começa a meio de uma frase: «e foi nesse momento que o gato...».",
+      "Abre com uma fala; as vozes puxam o resto da cena atrás delas.",
+      "Deixa a sessão de ontem a meio de uma frase e hoje sabes logo como começar."
+     ],
+     "q": "O que costumas fazer quando te sentas e as palavras não aparecem?",
+     "c": "Começa um texto novo com uma fala e continua a escrever dez minutos sem parar."
+    },
+    "pt_BR": {
+     "t": "Vencer a página em branco",
+     "g": "Use truques simples, como começar no meio da frase ou com diálogo, para fazer as palavras andarem.",
+     "p": [
+      "Comece no meio de uma frase: «e foi nessa hora que o gato...».",
+      "Abra com uma fala; as vozes puxam o resto da cena.",
+      "Pare a sessão de ontem no meio de uma frase e hoje você já sabe como começar."
+     ],
+     "q": "O que você costuma fazer quando senta para escrever e as palavras não vêm?",
+     "c": "Comece um texto novo com uma fala e continue escrevendo por dez minutos sem parar."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kind self-talk for writers",
+     "g": "Quiet the inner critic while drafting and save judgement for later.",
+     "p": [
+      "Drafting and editing are two different jobs: do them at different times.",
+      "When the critic speaks, answer kindly: 'Thanks, I'll check that later.'",
+      "Talk to yourself like a supportive friend: notice one thing you did well each day."
+     ],
+     "q": "What would a kind friend say about your writing so far?",
+     "c": "Write a short, warm letter to yourself as a writer, praising three things you have done in this path."
+    },
+    "de": {
+     "t": "Freundliche Selbstgespräche",
+     "g": "Bring den inneren Kritiker beim Entwerfen zum Schweigen und heb dir das Urteil für später auf.",
+     "p": [
+      "Entwerfen und Überarbeiten sind zwei verschiedene Aufgaben, mach sie zu verschiedenen Zeiten.",
+      "Wenn der Kritiker spricht, antworte freundlich: ‚Danke, ich schau später nach.‘",
+      "Sprich mit dir wie ein unterstützender Freund und notiere täglich eine Sache, die dir gelang."
+     ],
+     "q": "Was würde ein lieber Freund über dein bisheriges Schreiben sagen?",
+     "c": "Schreib dir als Schreibender einen kurzen, warmen Brief und lobe drei Dinge, die du auf diesem Weg geschafft hast."
+    },
+    "es": {
+     "t": "Hablarte con amabilidad",
+     "g": "Calla al crítico interior mientras escribes el borrador y deja el juicio para después.",
+     "p": [
+      "Escribir el borrador y corregir son dos tareas distintas: hazlas en momentos distintos.",
+      "Cuando hable el crítico, respóndele con amabilidad: «Gracias, lo reviso luego».",
+      "Háblate como un amigo que te apoya: anota cada día algo que hiciste bien."
+     ],
+     "q": "¿Qué diría un buen amigo sobre lo que has escrito hasta ahora?",
+     "c": "Escríbete una carta breve y cálida como escritor, elogiando tres cosas que has logrado en este camino."
+    },
+    "fr": {
+     "t": "Se parler avec bienveillance",
+     "g": "Fais taire le critique intérieur pendant le premier jet et garde le jugement pour plus tard.",
+     "p": [
+      "Écrire un premier jet et corriger sont deux métiers : fais-les à des moments différents.",
+      "Quand le critique parle, réponds gentiment : « Merci, je verrai ça plus tard. »",
+      "Parle-toi comme un ami qui te soutient : note chaque jour une chose réussie."
+     ],
+     "q": "Que dirait un ami bienveillant de ce que tu as écrit jusqu'ici ?",
+     "c": "Écris-toi une courte lettre chaleureuse d'écrivain, en saluant trois choses accomplies sur ce parcours."
+    },
+    "it": {
+     "t": "Parlarsi con gentilezza",
+     "g": "Zittisci il critico interiore mentre scrivi la bozza e rimanda il giudizio a dopo.",
+     "p": [
+      "Scrivere la bozza e correggere sono due lavori diversi: falli in momenti diversi.",
+      "Quando il critico parla, rispondi con gentilezza: «Grazie, ci penso dopo».",
+      "Parlati come un amico che ti sostiene: annota ogni giorno una cosa riuscita."
+     ],
+     "q": "Cosa direbbe un amico gentile di ciò che hai scritto finora?",
+     "c": "Scriviti una breve lettera affettuosa da scrittore, lodando tre cose che hai fatto in questo percorso."
+    },
+    "pt": {
+     "t": "Falar contigo com gentileza",
+     "g": "Cala o crítico interior enquanto escreves o rascunho e guarda o julgamento para depois.",
+     "p": [
+      "Escrever o rascunho e rever são tarefas diferentes: faz cada uma em momentos diferentes.",
+      "Quando o crítico falar, responde com gentileza: «Obrigado, vejo isso depois».",
+      "Fala contigo como um amigo que te apoia: anota todos os dias uma coisa que fizeste bem."
+     ],
+     "q": "O que diria um bom amigo sobre o que escreveste até agora?",
+     "c": "Escreve-te uma carta curta e calorosa como escritor, elogiando três coisas que fizeste neste percurso."
+    },
+    "pt_BR": {
+     "t": "Falar com você com gentileza",
+     "g": "Silencie o crítico interior enquanto escreve o rascunho e deixe o julgamento para depois.",
+     "p": [
+      "Escrever o rascunho e revisar são tarefas diferentes: faça cada uma em um momento.",
+      "Quando o crítico falar, responda com gentileza: «Valeu, vejo isso depois».",
+      "Fale com você como um amigo que apoia: anote todo dia uma coisa que fez bem."
+     ],
+     "q": "O que um bom amigo diria sobre o que você escreveu até agora?",
+     "c": "Escreva para você uma carta curta e carinhosa como escritor, elogiando três coisas que fez nesta jornada."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: senses and details",
+     "g": "Lightly review sensory writing, specific details and strong word choice.",
+     "p": [
+      "The five senses bring scenes to life; touch, smell and sound are often forgotten.",
+      "One specific detail beats a list, and concrete nouns help readers picture it.",
+      "Strong verbs, fresh comparisons and no clichés keep your prose alive."
+     ],
+     "q": "Which lesson of the last thirty days has helped your writing most?",
+     "c": "Write a 150-word scene in a market using all five senses, two strong verbs and one fresh simile."
+    },
+    "de": {
+     "t": "Rückblick: Sinne und Details",
+     "g": "Wiederhole locker sinnliches Schreiben, genaue Details und starke Wortwahl.",
+     "p": [
+      "Die fünf Sinne machen Szenen lebendig, Tasten, Riechen und Hören werden oft vergessen.",
+      "Ein genaues Detail schlägt jede Liste, und konkrete Substantive helfen beim Vorstellen.",
+      "Starke Verben, frische Vergleiche und keine Klischees halten deine Prosa lebendig."
+     ],
+     "q": "Welche Lektion der letzten dreißig Tage hat deinem Schreiben am meisten geholfen?",
+     "c": "Schreib eine Marktszene in 150 Wörtern mit allen fünf Sinnen, zwei starken Verben und einem frischen Vergleich."
+    },
+    "es": {
+     "t": "Repaso: sentidos y detalles",
+     "g": "Repasa con calma la escritura sensorial, los detalles concretos y la elección de palabras.",
+     "p": [
+      "Los cinco sentidos dan vida a las escenas; tacto, olfato y oído suelen olvidarse.",
+      "Un detalle concreto vale más que una lista, y los sustantivos concretos ayudan a imaginar.",
+      "Verbos fuertes, comparaciones frescas y cero clichés mantienen viva tu prosa."
+     ],
+     "q": "¿Qué lección de estos treinta días ha ayudado más a tu escritura?",
+     "c": "Escribe una escena de 150 palabras en un mercado con los cinco sentidos, dos verbos fuertes y un símil nuevo."
+    },
+    "fr": {
+     "t": "Révision : sens et détails",
+     "g": "Révise en douceur l'écriture sensorielle, les détails précis et le choix des mots.",
+     "p": [
+      "Les cinq sens donnent vie aux scènes ; le toucher, l'odorat et l'ouïe sont souvent oubliés.",
+      "Un détail précis vaut mieux qu'une liste, et les noms concrets aident à visualiser.",
+      "Verbes forts, comparaisons neuves et zéro cliché gardent ta prose vivante."
+     ],
+     "q": "Quelle leçon de ces trente jours a le plus aidé ton écriture ?",
+     "c": "Écris une scène de marché de 150 mots avec les cinq sens, deux verbes forts et une comparaison neuve."
+    },
+    "it": {
+     "t": "Ripasso: sensi e dettagli",
+     "g": "Ripassa con leggerezza la scrittura sensoriale, i dettagli precisi e la scelta delle parole.",
+     "p": [
+      "I cinque sensi danno vita alle scene; tatto, olfatto e udito spesso si dimenticano.",
+      "Un dettaglio preciso vale più di un elenco, e i nomi concreti aiutano a immaginare.",
+      "Verbi forti, similitudini fresche e niente cliché tengono viva la tua prosa."
+     ],
+     "q": "Quale lezione di questi trenta giorni ha aiutato di più la tua scrittura?",
+     "c": "Scrivi una scena di 150 parole in un mercato con tutti e cinque i sensi, due verbi forti e una similitudine nuova."
+    },
+    "pt": {
+     "t": "Revisão: sentidos e detalhes",
+     "g": "Revê com leveza a escrita sensorial, os detalhes concretos e a escolha das palavras.",
+     "p": [
+      "Os cinco sentidos dão vida às cenas; tato, olfato e audição são muitas vezes esquecidos.",
+      "Um detalhe concreto vale mais do que uma lista, e os substantivos concretos ajudam a imaginar.",
+      "Verbos fortes, comparações frescas e nenhum cliché mantêm a tua prosa viva."
+     ],
+     "q": "Que lição destes trinta dias mais ajudou a tua escrita?",
+     "c": "Escreve uma cena de 150 palavras num mercado com os cinco sentidos, dois verbos fortes e uma comparação nova."
+    },
+    "pt_BR": {
+     "t": "Revisão: sentidos e detalhes",
+     "g": "Revise com leveza a escrita sensorial, os detalhes concretos e a escolha das palavras.",
+     "p": [
+      "Os cinco sentidos dão vida às cenas; tato, olfato e audição costumam ser esquecidos.",
+      "Um detalhe concreto vale mais que uma lista, e substantivos concretos ajudam a imaginar.",
+      "Verbos fortes, comparações frescas e nenhum clichê mantêm sua prosa viva."
+     ],
+     "q": "Qual lição destes trinta dias mais ajudou a sua escrita?",
+     "c": "Escreva uma cena de 150 palavras em uma feira com os cinco sentidos, dois verbos fortes e uma comparação nova."
+    }
+   }
+  }
+ ]
+}

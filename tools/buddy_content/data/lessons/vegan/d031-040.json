@@ -1,0 +1,835 @@
+{
+ "topic": "vegan",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plant milks compared",
+     "g": "See how soy, oat, almond, rice and coconut milks behave in cooking.",
+     "p": [
+      "Soy and oat milks are creamy and fairly neutral, so they work well in sauces, baking and coffee.",
+      "Almond and rice milks are lighter and thinner; they suit cereals and smoothies more than rich sauces.",
+      "Canned coconut milk is thick and rich, perfect for curries; choose unsweetened versions for savoury food."
+     ],
+     "q": "Which plant milk do you like best, and what do you use it for?",
+     "c": "Taste two different plant milks side by side and decide which you would use in a sauce and which in a smoothie."
+    },
+    "de": {
+     "t": "Pflanzenmilch im Vergleich",
+     "g": "Sieh, wie sich Soja-, Hafer-, Mandel-, Reis- und Kokosmilch beim Kochen verhalten.",
+     "p": [
+      "Soja- und Hafermilch sind cremig und recht neutral, also gut für Saucen, Backen und Kaffee.",
+      "Mandel- und Reismilch sind leichter und dünner, eher für Müsli und Smoothies als für reichhaltige Saucen.",
+      "Kokosmilch aus der Dose ist dick und reichhaltig, perfekt für Currys; für Herzhaftes ungesüßt wählen."
+     ],
+     "q": "Welche Pflanzenmilch magst du am liebsten, und wofür nutzt du sie?",
+     "c": "Probiere zwei Pflanzenmilchsorten nebeneinander und entscheide, welche du für Sauce und welche für Smoothies nimmst."
+    },
+    "es": {
+     "t": "Bebidas vegetales comparadas",
+     "g": "Ver cómo se comportan en la cocina las bebidas de soja, avena, almendra, arroz y coco.",
+     "p": [
+      "Las de soja y avena son cremosas y bastante neutras, así que van bien en salsas, repostería y café.",
+      "Las de almendra y arroz son más ligeras; encajan mejor en cereales y batidos que en salsas densas.",
+      "La leche de coco en lata es espesa y rica, perfecta para currys; elige versiones sin azúcar para lo salado."
+     ],
+     "q": "¿Qué bebida vegetal te gusta más y para qué la usas?",
+     "c": "Prueba dos bebidas vegetales distintas lado a lado y decide cuál usarías en una salsa y cuál en un batido."
+    },
+    "fr": {
+     "t": "Les boissons végétales comparées",
+     "g": "Voir comment se comportent en cuisine les boissons au soja, à l’avoine, à l’amande, au riz et le lait de coco.",
+     "p": [
+      "Les boissons soja et avoine sont crémeuses et plutôt neutres : idéales pour sauces, pâtisserie et café.",
+      "Amande et riz sont plus légères et fluides ; elles vont mieux avec céréales et smoothies qu’en sauce riche.",
+      "Le lait de coco en boîte est épais et riche, parfait pour les currys ; prends-le non sucré pour le salé."
+     ],
+     "q": "Quelle boisson végétale préfères-tu, et à quoi l’utilises-tu ?",
+     "c": "Goûte deux boissons végétales côte à côte et décide laquelle irait dans une sauce et laquelle dans un smoothie."
+    },
+    "it": {
+     "t": "Bevande vegetali a confronto",
+     "g": "Vedere come si comportano in cucina le bevande di soia, avena, mandorla, riso e il latte di cocco.",
+     "p": [
+      "Le bevande di soia e avena sono cremose e abbastanza neutre, ottime per salse, dolci e caffè.",
+      "Quelle di mandorla e riso sono più leggere; stanno meglio con cereali e frullati che in salse ricche.",
+      "Il latte di cocco in lattina è denso e ricco, perfetto per i curry; per il salato scegli quello senza zucchero."
+     ],
+     "q": "Quale bevanda vegetale preferisci e per cosa la usi?",
+     "c": "Assaggia due bevande vegetali una accanto all’altra e decidi quale useresti in una salsa e quale in un frullato."
+    },
+    "pt": {
+     "t": "Bebidas vegetais comparadas",
+     "g": "Ver como se comportam na cozinha as bebidas de soja, aveia, amêndoa, arroz e o leite de coco.",
+     "p": [
+      "As de soja e aveia são cremosas e bastante neutras, por isso ficam bem em molhos, bolos e café.",
+      "As de amêndoa e arroz são mais leves; combinam melhor com cereais e batidos do que com molhos ricos.",
+      "O leite de coco em lata é espesso e rico, perfeito para caris; escolhe versões sem açúcar para pratos salgados."
+     ],
+     "q": "Que bebida vegetal preferes e para que a usas?",
+     "c": "Prova duas bebidas vegetais lado a lado e decide qual usarias num molho e qual num batido."
+    },
+    "pt_BR": {
+     "t": "Bebidas vegetais comparadas",
+     "g": "Ver como as bebidas de soja, aveia, amêndoa, arroz e o leite de coco se comportam na cozinha.",
+     "p": [
+      "As de soja e aveia são cremosas e bem neutras, então funcionam em molhos, bolos e café.",
+      "As de amêndoa e arroz são mais leves; combinam mais com cereais e vitaminas do que com molhos encorpados.",
+      "O leite de coco em lata é grosso e rico, perfeito para curries; prefira sem açúcar para pratos salgados."
+     ],
+     "q": "Qual bebida vegetal você mais gosta e para que usa?",
+     "c": "Prove duas bebidas vegetais lado a lado e decida qual usaria num molho e qual numa vitamina."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plant-based butter and oils",
+     "g": "Choose fats for frying, baking and finishing dishes.",
+     "p": [
+      "Neutral oils like sunflower or rapeseed handle high heat for frying and roasting without strong flavour.",
+      "Extra virgin olive oil is lovely for gentle cooking and for drizzling over finished dishes.",
+      "Plant-based butter or block margarine works in baking and on toast; toasted sesame oil is a finishing flavour."
+     ],
+     "q": "Which oil do you reach for most often, and why?",
+     "c": "Finish a simple dish with a drizzle of a flavourful oil like olive or toasted sesame and notice the difference."
+    },
+    "de": {
+     "t": "Pflanzliche Butter und Öle",
+     "g": "Wähle Fette zum Braten, Backen und Verfeinern.",
+     "p": [
+      "Neutrale Öle wie Sonnenblumen- oder Rapsöl vertragen hohe Hitze zum Braten und Rösten ohne starken Eigengeschmack.",
+      "Natives Olivenöl extra ist herrlich für sanftes Garen und zum Beträufeln fertiger Gerichte.",
+      "Pflanzliche Butter oder Blockmargarine eignet sich zum Backen und aufs Brot; geröstetes Sesamöl ist ein Würzöl zum Schluss."
+     ],
+     "q": "Zu welchem Öl greifst du am häufigsten, und warum?",
+     "c": "Verfeinere ein einfaches Gericht mit einem Schuss aromatischem Öl wie Olivenöl oder Sesamöl und achte auf den Unterschied."
+    },
+    "es": {
+     "t": "Mantequilla vegetal y aceites",
+     "g": "Elegir grasas para freír, hornear y terminar los platos.",
+     "p": [
+      "Los aceites neutros como el de girasol o colza aguantan el calor fuerte para freír y asar sin sabor intenso.",
+      "El aceite de oliva virgen extra es ideal para cocinar suave y para rociar los platos terminados.",
+      "La mantequilla vegetal o margarina en bloque sirve para repostería y tostadas; el aceite de sésamo tostado da el toque final."
+     ],
+     "q": "¿Qué aceite usas más a menudo y por qué?",
+     "c": "Termina un plato sencillo con un chorrito de un aceite con sabor, como oliva o sésamo tostado, y nota la diferencia."
+    },
+    "fr": {
+     "t": "Beurre végétal et huiles",
+     "g": "Choisir les matières grasses pour frire, pâtisser et finir un plat.",
+     "p": [
+      "Les huiles neutres comme tournesol ou colza supportent la forte chaleur pour frire et rôtir sans goût marqué.",
+      "L’huile d’olive vierge extra est parfaite pour une cuisson douce et pour arroser un plat fini.",
+      "Le beurre végétal ou la margarine en bloc va en pâtisserie et sur les tartines ; l’huile de sésame grillé sert à la finition."
+     ],
+     "q": "Quelle huile utilises-tu le plus souvent, et pourquoi ?",
+     "c": "Termine un plat simple avec un filet d’huile parfumée, olive ou sésame grillé, et remarque la différence."
+    },
+    "it": {
+     "t": "Burro vegetale e oli",
+     "g": "Scegliere i grassi per friggere, cuocere al forno e rifinire i piatti.",
+     "p": [
+      "Oli neutri come girasole o colza reggono il calore alto per friggere e arrostire senza sapore forte.",
+      "L’olio extravergine d’oliva è ottimo per cotture delicate e da versare a crudo sui piatti finiti.",
+      "Burro vegetale o margarina in panetto vanno bene nei dolci e sul pane; l’olio di sesamo tostato serve a rifinire."
+     ],
+     "q": "Quale olio usi più spesso e perché?",
+     "c": "Completa un piatto semplice con un filo di olio saporito, come extravergine o sesamo tostato, e nota la differenza."
+    },
+    "pt": {
+     "t": "Manteiga vegetal e óleos",
+     "g": "Escolher gorduras para fritar, fazer bolos e finalizar pratos.",
+     "p": [
+      "Óleos neutros como girassol ou colza aguentam calor forte para fritar e assar sem sabor marcado.",
+      "O azeite virgem extra é ótimo para cozinhar em lume brando e para regar pratos já prontos.",
+      "A manteiga vegetal ou margarina em bloco serve para bolos e torradas; o óleo de sésamo torrado é para finalizar."
+     ],
+     "q": "Que óleo usas mais vezes, e porquê?",
+     "c": "Termina um prato simples com um fio de um óleo saboroso, como azeite ou sésamo torrado, e nota a diferença."
+    },
+    "pt_BR": {
+     "t": "Manteiga vegetal e óleos",
+     "g": "Escolher gorduras para fritar, assar e finalizar pratos.",
+     "p": [
+      "Óleos neutros como girassol ou canola aguentam fogo alto para fritar e assar sem sabor forte.",
+      "O azeite extravirgem é ótimo para cozinhar em fogo baixo e para regar pratos prontos.",
+      "Manteiga vegetal ou margarina em barra serve para bolos e torradas; óleo de gergelim torrado é para finalizar."
+     ],
+     "q": "Qual óleo você usa mais, e por quê?",
+     "c": "Finalize um prato simples com um fio de óleo saboroso, como azeite ou gergelim torrado, e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coconut in the kitchen",
+     "g": "Use coconut milk, cream, oil and flakes in sweet and savoury cooking.",
+     "p": [
+      "Coconut milk gives body to Thai curries, Indian kormas, Caribbean rice and peas and creamy soups.",
+      "Chill a can of full-fat coconut milk and the thick cream on top can be whipped for desserts.",
+      "Coconut oil is solid when cool and works in baking; toasted coconut flakes add crunch to bowls."
+     ],
+     "q": "Which dish with coconut milk would you most like to cook?",
+     "c": "Simmer vegetables in half a can of coconut milk with curry paste or spices for a quick curry."
+    },
+    "de": {
+     "t": "Kokos in der Küche",
+     "g": "Nutze Kokosmilch, -creme, -öl und -flocken für Süßes und Herzhaftes.",
+     "p": [
+      "Kokosmilch gibt Thai-Currys, indischem Korma, karibischem Reis mit Bohnen und cremigen Suppen Fülle.",
+      "Kühle eine Dose vollfette Kokosmilch, dann lässt sich die dicke Creme oben für Desserts aufschlagen.",
+      "Kokosöl ist kühl fest und eignet sich zum Backen; geröstete Kokosflocken bringen Crunch in Bowls."
+     ],
+     "q": "Welches Gericht mit Kokosmilch würdest du am liebsten kochen?",
+     "c": "Köchle Gemüse in einer halben Dose Kokosmilch mit Currypaste oder Gewürzen für ein schnelles Curry."
+    },
+    "es": {
+     "t": "El coco en la cocina",
+     "g": "Usar leche, crema, aceite y copos de coco en platos dulces y salados.",
+     "p": [
+      "La leche de coco da cuerpo a currys tailandeses, kormas indios, el arroz con frijoles caribeño y cremas.",
+      "Enfría una lata de leche de coco entera y la crema espesa de arriba se puede montar para postres.",
+      "El aceite de coco es sólido en frío y sirve para repostería; los copos tostados añaden crujiente a los bowls."
+     ],
+     "q": "¿Qué plato con leche de coco te gustaría más cocinar?",
+     "c": "Cuece verduras en media lata de leche de coco con pasta de curry o especias para un curry rápido."
+    },
+    "fr": {
+     "t": "La noix de coco en cuisine",
+     "g": "Utiliser lait, crème, huile et copeaux de coco dans le sucré et le salé.",
+     "p": [
+      "Le lait de coco donne du corps aux currys thaïs, kormas indiens, riz aux haricots caribéen et veloutés.",
+      "Mets une boîte de lait de coco entier au frais : la crème épaisse du dessus se fouette pour les desserts.",
+      "L’huile de coco est solide au frais et va en pâtisserie ; les copeaux grillés ajoutent du croquant aux bols."
+     ],
+     "q": "Quel plat au lait de coco aimerais-tu le plus cuisiner ?",
+     "c": "Fais mijoter des légumes dans une demi-boîte de lait de coco avec pâte de curry ou épices pour un curry express."
+    },
+    "it": {
+     "t": "Il cocco in cucina",
+     "g": "Usare latte, panna, olio e scaglie di cocco nel dolce e nel salato.",
+     "p": [
+      "Il latte di cocco dà corpo ai curry thailandesi, ai korma indiani, al riso con fagioli caraibico e alle vellutate.",
+      "Raffredda una lattina di latte di cocco intero: la panna densa in superficie si monta per i dolci.",
+      "L’olio di cocco è solido a freddo e va bene nei dolci; le scaglie tostate danno croccantezza alle bowl."
+     ],
+     "q": "Quale piatto con latte di cocco ti piacerebbe di più cucinare?",
+     "c": "Cuoci verdure in mezza lattina di latte di cocco con pasta di curry o spezie per un curry veloce."
+    },
+    "pt": {
+     "t": "O coco na cozinha",
+     "g": "Usar leite, natas, óleo e lascas de coco em pratos doces e salgados.",
+     "p": [
+      "O leite de coco dá corpo a caris tailandeses, kormas indianos, arroz com feijão caribenho e sopas cremosas.",
+      "Arrefece uma lata de leite de coco gordo e as natas espessas de cima podem ser batidas para sobremesas.",
+      "O óleo de coco é sólido a frio e serve para bolos; as lascas torradas dão crocância às taças."
+     ],
+     "q": "Que prato com leite de coco mais gostavas de cozinhar?",
+     "c": "Coze legumes em meia lata de leite de coco com pasta de caril ou especiarias para um caril rápido."
+    },
+    "pt_BR": {
+     "t": "O coco na cozinha",
+     "g": "Usar leite, creme, óleo e lascas de coco em pratos doces e salgados.",
+     "p": [
+      "O leite de coco dá corpo a curries tailandeses, kormas indianos, arroz com feijão caribenho e à moqueca de banana.",
+      "Gele uma lata de leite de coco integral e o creme grosso de cima pode ser batido para sobremesas.",
+      "O óleo de coco fica sólido no frio e serve para bolos; lascas tostadas dão crocância aos bowls."
+     ],
+     "q": "Qual prato com leite de coco você mais gostaria de cozinhar?",
+     "c": "Cozinhe legumes em meia lata de leite de coco com pasta de curry ou temperos para um curry rápido."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building flavour with umami",
+     "g": "Use soy sauce, miso, mushrooms, tomatoes and seaweed for savoury depth.",
+     "p": [
+      "Umami is the savoury, mouth-filling taste, and many plant foods are naturally rich in it.",
+      "Soy sauce, miso, tomato paste and nutritional yeast add instant depth to soups, sauces and dressings.",
+      "Browned mushrooms, dried shiitake and seaweed like kombu make deep plant-based broths."
+     ],
+     "q": "Which umami ingredient do you already love, and what do you put it in?",
+     "c": "Add one umami booster, like miso, soy sauce or tomato paste, to a dish you often cook and taste the change."
+    },
+    "de": {
+     "t": "Geschmack mit Umami aufbauen",
+     "g": "Nutze Sojasauce, Miso, Pilze, Tomaten und Algen für herzhafte Tiefe.",
+     "p": [
+      "Umami ist der herzhafte, vollmundige Geschmack, und viele Pflanzen sind von Natur aus reich daran.",
+      "Sojasauce, Miso, Tomatenmark und Hefeflocken geben Suppen, Saucen und Dressings sofort Tiefe.",
+      "Angebratene Pilze, getrocknete Shiitake und Algen wie Kombu ergeben kräftige pflanzliche Brühen."
+     ],
+     "q": "Welche Umami-Zutat liebst du schon, und wofür nutzt du sie?",
+     "c": "Gib einem Gericht, das du oft kochst, einen Umami-Booster wie Miso, Sojasauce oder Tomatenmark und schmecke den Unterschied."
+    },
+    "es": {
+     "t": "Construir sabor con umami",
+     "g": "Usar salsa de soja, miso, setas, tomate y algas para dar profundidad salada.",
+     "p": [
+      "El umami es el sabor sabroso que llena la boca, y muchos alimentos vegetales lo tienen de forma natural.",
+      "Salsa de soja, miso, tomate concentrado y levadura nutricional dan profundidad al instante a sopas y salsas.",
+      "Las setas doradas, el shiitake seco y algas como el kombu crean caldos vegetales muy intensos."
+     ],
+     "q": "¿Qué ingrediente umami ya te encanta y en qué lo usas?",
+     "c": "Añade un potenciador umami, como miso, soja o tomate concentrado, a un plato que cocines a menudo y nota el cambio."
+    },
+    "fr": {
+     "t": "Construire la saveur avec l’umami",
+     "g": "Utiliser sauce soja, miso, champignons, tomates et algues pour une profondeur savoureuse.",
+     "p": [
+      "L’umami est le goût savoureux qui remplit la bouche, et beaucoup d’aliments végétaux en sont riches.",
+      "Sauce soja, miso, concentré de tomate et levure maltée donnent instantanément de la profondeur aux soupes et sauces.",
+      "Champignons dorés, shiitakés séchés et algues comme le kombu font des bouillons végétaux intenses."
+     ],
+     "q": "Quel ingrédient umami adores-tu déjà, et dans quoi le mets-tu ?",
+     "c": "Ajoute un booster d’umami, miso, sauce soja ou concentré de tomate, à un plat que tu cuisines souvent et goûte la différence."
+    },
+    "it": {
+     "t": "Costruire sapore con l’umami",
+     "g": "Usare salsa di soia, miso, funghi, pomodori e alghe per una profondità sapida.",
+     "p": [
+      "L’umami è il gusto sapido e avvolgente, e tanti alimenti vegetali ne sono naturalmente ricchi.",
+      "Salsa di soia, miso, concentrato di pomodoro e lievito alimentare danno subito profondità a zuppe e salse.",
+      "Funghi rosolati, shiitake secchi e alghe come il kombu creano brodi vegetali intensi."
+     ],
+     "q": "Quale ingrediente umami ami già e in cosa lo usi?",
+     "c": "Aggiungi un booster di umami, come miso, soia o concentrato di pomodoro, a un piatto che cucini spesso e senti la differenza."
+    },
+    "pt": {
+     "t": "Construir sabor com umami",
+     "g": "Usar molho de soja, miso, cogumelos, tomate e algas para dar profundidade.",
+     "p": [
+      "O umami é o sabor saboroso que enche a boca, e muitos alimentos vegetais são ricos nele.",
+      "Molho de soja, miso, concentrado de tomate e levedura nutricional dão logo profundidade a sopas e molhos.",
+      "Cogumelos alourados, shiitake seco e algas como o kombu fazem caldos vegetais intensos."
+     ],
+     "q": "Que ingrediente umami já adoras e onde o usas?",
+     "c": "Junta um reforço de umami, como miso, soja ou concentrado de tomate, a um prato que fazes muitas vezes e prova a diferença."
+    },
+    "pt_BR": {
+     "t": "Construindo sabor com umami",
+     "g": "Usar shoyu, missô, cogumelos, tomate e algas para dar profundidade ao sabor.",
+     "p": [
+      "Umami é aquele sabor saboroso que enche a boca, e muitos alimentos vegetais são ricos nele.",
+      "Shoyu, missô, extrato de tomate e levedura nutricional dão profundidade na hora a sopas e molhos.",
+      "Cogumelos dourados, shiitake seco e algas como kombu fazem caldos vegetais intensos."
+     ],
+     "q": "Qual ingrediente umami você já ama e onde usa?",
+     "c": "Coloque um reforço de umami, como missô, shoyu ou extrato de tomate, num prato que você faz sempre e sinta a diferença."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salt, acid, fat and heat",
+     "g": "Learn the four basics of seasoning that make any dish taste balanced.",
+     "p": [
+      "Salt lifts every flavour; add it in stages and taste as you go rather than all at the end.",
+      "Acid from lemon, lime or vinegar brightens heavy dishes, while fat carries flavour and adds richness.",
+      "Heat, from chilli or from cooking method, adds energy; balance means adjusting all four until it tastes right."
+     ],
+     "q": "When a dish tastes flat, what do you usually add first?",
+     "c": "Taste a soup or sauce, then fix it step by step: a pinch of salt, a squeeze of lemon, a drizzle of oil."
+    },
+    "de": {
+     "t": "Salz, Säure, Fett und Hitze",
+     "g": "Lerne die vier Grundlagen des Würzens, die jedes Gericht ausgewogen machen.",
+     "p": [
+      "Salz hebt jedes Aroma; gib es schrittweise zu und probiere zwischendurch statt alles am Ende.",
+      "Säure aus Zitrone, Limette oder Essig macht schwere Gerichte frisch, Fett trägt Aroma und gibt Fülle.",
+      "Hitze, durch Chili oder Garmethode, bringt Energie; Balance heißt, alle vier abzustimmen, bis es passt."
+     ],
+     "q": "Wenn ein Gericht fade schmeckt, was gibst du meist zuerst dazu?",
+     "c": "Probiere eine Suppe oder Sauce und verbessere sie Schritt für Schritt: Salz, Zitrone, ein Schuss Öl."
+    },
+    "es": {
+     "t": "Sal, ácido, grasa y calor",
+     "g": "Conocer los cuatro básicos del sazonado que equilibran cualquier plato.",
+     "p": [
+      "La sal realza todos los sabores; añádela por etapas y prueba mientras cocinas, no todo al final.",
+      "El ácido del limón, la lima o el vinagre aviva los platos pesados, y la grasa transporta el sabor y aporta cuerpo.",
+      "El calor, del chile o de la cocción, da energía; equilibrar es ajustar los cuatro hasta que sepa bien."
+     ],
+     "q": "Cuando un plato sabe plano, ¿qué sueles añadir primero?",
+     "c": "Prueba una sopa o salsa y arréglala paso a paso: una pizca de sal, un chorrito de limón, un hilo de aceite."
+    },
+    "fr": {
+     "t": "Sel, acide, gras et chaleur",
+     "g": "Apprendre les quatre bases de l’assaisonnement qui équilibrent n’importe quel plat.",
+     "p": [
+      "Le sel réveille toutes les saveurs ; ajoute-le par étapes en goûtant plutôt que tout à la fin.",
+      "L’acidité du citron ou du vinaigre égaye les plats lourds, et le gras porte les arômes et apporte de la rondeur.",
+      "La chaleur, du piment ou de la cuisson, donne du peps ; équilibrer, c’est ajuster les quatre jusqu’au bon goût."
+     ],
+     "q": "Quand un plat manque de goût, qu’ajoutes-tu en premier ?",
+     "c": "Goûte une soupe ou une sauce, puis corrige-la pas à pas : une pincée de sel, un trait de citron, un filet d’huile."
+    },
+    "it": {
+     "t": "Sale, acido, grasso e calore",
+     "g": "Imparare le quattro basi del condimento che rendono equilibrato ogni piatto.",
+     "p": [
+      "Il sale esalta tutti i sapori; aggiungilo poco alla volta assaggiando, non tutto alla fine.",
+      "L’acidità di limone, lime o aceto ravviva i piatti pesanti, mentre il grasso porta il sapore e dà rotondità.",
+      "Il calore, del peperoncino o della cottura, dà energia; equilibrare significa regolare tutti e quattro."
+     ],
+     "q": "Quando un piatto sa di poco, cosa aggiungi per primo di solito?",
+     "c": "Assaggia una zuppa o un sugo e sistemalo passo dopo passo: un pizzico di sale, una spruzzata di limone, un filo d’olio."
+    },
+    "pt": {
+     "t": "Sal, ácido, gordura e calor",
+     "g": "Aprender as quatro bases do tempero que equilibram qualquer prato.",
+     "p": [
+      "O sal realça todos os sabores; junta-o por etapas e prova enquanto cozinhas, não tudo no fim.",
+      "O ácido do limão, da lima ou do vinagre aviva pratos pesados, e a gordura transporta o sabor e dá corpo.",
+      "O calor, do picante ou da forma de cozinhar, dá energia; equilibrar é ajustar os quatro até ficar bom."
+     ],
+     "q": "Quando um prato sabe a pouco, o que costumas juntar primeiro?",
+     "c": "Prova uma sopa ou molho e corrige passo a passo: uma pitada de sal, um pouco de limão, um fio de azeite."
+    },
+    "pt_BR": {
+     "t": "Sal, acidez, gordura e calor",
+     "g": "Aprender as quatro bases do tempero que deixam qualquer prato equilibrado.",
+     "p": [
+      "O sal realça todos os sabores; coloque aos poucos e vá provando, em vez de tudo no fim.",
+      "A acidez do limão ou do vinagre deixa pratos pesados mais leves, e a gordura carrega o sabor e dá corpo.",
+      "O calor, da pimenta ou do jeito de cozinhar, traz energia; equilibrar é ajustar os quatro até ficar bom."
+     ],
+     "q": "Quando um prato fica sem graça, o que você costuma colocar primeiro?",
+     "c": "Prove uma sopa ou molho e ajuste passo a passo: uma pitada de sal, um pouco de limão, um fio de azeite."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spices for beginners",
+     "g": "Build a starter spice set with cumin, paprika, turmeric, coriander and cinnamon.",
+     "p": [
+      "Cumin is warm and earthy, key in Indian, Mexican and Middle Eastern cooking; paprika adds sweet or smoky colour.",
+      "Turmeric gives golden colour and a gentle earthy taste; ground coriander seed is citrusy and mild.",
+      "Cinnamon is not only for sweets: it adds warmth to Moroccan tagines and many curries."
+     ],
+     "q": "Which spice smells most like home to you?",
+     "c": "Smell each spice you own one by one and write down a dish you would use each in."
+    },
+    "de": {
+     "t": "Gewürze für Einsteiger",
+     "g": "Stell dir ein Starterset aus Kreuzkümmel, Paprika, Kurkuma, Koriander und Zimt zusammen.",
+     "p": [
+      "Kreuzkümmel ist warm und erdig, wichtig in indischer, mexikanischer und nahöstlicher Küche; Paprika gibt süße oder rauchige Farbe.",
+      "Kurkuma färbt golden und schmeckt mild erdig; gemahlener Koriandersamen ist zitronig und sanft.",
+      "Zimt ist nicht nur für Süßes: Er bringt Wärme in marokkanische Tajines und viele Currys."
+     ],
+     "q": "Welches Gewürz riecht für dich am meisten nach Zuhause?",
+     "c": "Rieche nacheinander an jedem Gewürz, das du hast, und notiere ein Gericht, in dem du es verwenden würdest."
+    },
+    "es": {
+     "t": "Especias para principiantes",
+     "g": "Montar un kit básico con comino, pimentón, cúrcuma, cilantro en grano y canela.",
+     "p": [
+      "El comino es cálido y terroso, clave en la cocina india, mexicana y de Oriente Medio; el pimentón da color dulce o ahumado.",
+      "La cúrcuma da color dorado y un sabor suave y terroso; el cilantro molido es cítrico y delicado.",
+      "La canela no es solo para dulces: da calidez a los tajines marroquíes y a muchos currys."
+     ],
+     "q": "¿Qué especia te huele más a casa?",
+     "c": "Huele una a una las especias que tienes y apunta un plato en el que usarías cada una."
+    },
+    "fr": {
+     "t": "Les épices pour débutants",
+     "g": "Composer un set de départ avec cumin, paprika, curcuma, coriandre et cannelle.",
+     "p": [
+      "Le cumin est chaud et terreux, clé des cuisines indienne, mexicaine et orientale ; le paprika colore, doux ou fumé.",
+      "Le curcuma donne une couleur dorée et un goût doux et terreux ; la coriandre en graines moulue est citronnée.",
+      "La cannelle n’est pas que pour le sucré : elle réchauffe les tajines marocains et beaucoup de currys."
+     ],
+     "q": "Quelle épice sent le plus la maison pour toi ?",
+     "c": "Sens une à une les épices que tu as et note un plat dans lequel tu utiliserais chacune."
+    },
+    "it": {
+     "t": "Spezie per principianti",
+     "g": "Creare un set base con cumino, paprika, curcuma, coriandolo e cannella.",
+     "p": [
+      "Il cumino è caldo e terroso, chiave nella cucina indiana, messicana e mediorientale; la paprika dà colore dolce o affumicato.",
+      "La curcuma dà colore dorato e un gusto terroso delicato; i semi di coriandolo macinati sono agrumati e lievi.",
+      "La cannella non è solo per i dolci: scalda i tajine marocchini e molti curry."
+     ],
+     "q": "Quale spezia per te profuma di più di casa?",
+     "c": "Annusa una per una le spezie che hai e annota un piatto in cui useresti ciascuna."
+    },
+    "pt": {
+     "t": "Especiarias para principiantes",
+     "g": "Montar um conjunto básico com cominhos, colorau, curcuma, coentros em grão e canela.",
+     "p": [
+      "Os cominhos são quentes e terrosos, essenciais nas cozinhas indiana, mexicana e do Médio Oriente; o colorau dá cor doce ou fumada.",
+      "A curcuma dá cor dourada e um sabor suave e terroso; os coentros em grão moídos são cítricos e delicados.",
+      "A canela não é só para doces: dá calor às tajines marroquinas e a muitos caris."
+     ],
+     "q": "Que especiaria te cheira mais a casa?",
+     "c": "Cheira uma a uma as especiarias que tens e anota um prato onde usarias cada uma."
+    },
+    "pt_BR": {
+     "t": "Especiarias para iniciantes",
+     "g": "Montar um kit básico com cominho, páprica, cúrcuma, semente de coentro e canela.",
+     "p": [
+      "O cominho é quente e terroso, essencial nas cozinhas indiana, mexicana e árabe; a páprica dá cor doce ou defumada.",
+      "A cúrcuma dá cor dourada e um sabor suave e terroso; a semente de coentro moída é cítrica e delicada.",
+      "Canela não é só para doce: ela aquece tajines marroquinos e muitos curries."
+     ],
+     "q": "Qual especiaria tem mais cheiro de casa para você?",
+     "c": "Cheire uma a uma as especiarias que você tem e anote um prato em que usaria cada uma."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toasting and blooming spices",
+     "g": "Warm spices in a dry pan or in oil to release more aroma.",
+     "p": [
+      "Toast whole seeds like cumin or coriander in a dry pan for a minute or two until fragrant, then grind them.",
+      "Blooming means frying spices briefly in hot oil, as in an Indian tadka, so the flavour spreads through the dish.",
+      "Watch closely and keep stirring: spices go from fragrant to burnt in seconds."
+     ],
+     "q": "Have you ever noticed the smell change when spices hit hot oil?",
+     "c": "Bloom a teaspoon of cumin in hot oil for a few seconds and pour it over lentils, rice or soup."
+    },
+    "de": {
+     "t": "Gewürze rösten und anschwitzen",
+     "g": "Erwärme Gewürze in trockener Pfanne oder in Öl, um mehr Aroma freizusetzen.",
+     "p": [
+      "Röste ganze Samen wie Kreuzkümmel oder Koriander ein bis zwei Minuten trocken, bis sie duften, dann mahlen.",
+      "Anschwitzen heißt, Gewürze kurz in heißem Öl zu braten, wie beim indischen Tadka, damit sich das Aroma verteilt.",
+      "Pass gut auf und rühre ständig: Gewürze werden in Sekunden von duftend zu verbrannt."
+     ],
+     "q": "Hast du schon bemerkt, wie sich der Duft ändert, wenn Gewürze in heißes Öl kommen?",
+     "c": "Schwitze einen Teelöffel Kreuzkümmel ein paar Sekunden in heißem Öl an und gieße ihn über Linsen, Reis oder Suppe."
+    },
+    "es": {
+     "t": "Tostar y sofreír especias",
+     "g": "Calentar especias en sartén seca o en aceite para liberar más aroma.",
+     "p": [
+      "Tuesta semillas enteras como comino o cilantro en sartén seca uno o dos minutos hasta que huelan, y luego muélelas.",
+      "Sofreír especias en aceite caliente, como en el tadka indio, reparte su sabor por todo el plato.",
+      "Vigila y remueve sin parar: las especias pasan de aromáticas a quemadas en segundos."
+     ],
+     "q": "¿Has notado cómo cambia el olor cuando las especias tocan el aceite caliente?",
+     "c": "Sofríe una cucharadita de comino en aceite caliente unos segundos y viértelo sobre lentejas, arroz o sopa."
+    },
+    "fr": {
+     "t": "Torréfier et infuser les épices",
+     "g": "Chauffer les épices à sec ou dans l’huile pour libérer plus d’arômes.",
+     "p": [
+      "Torréfie les graines entières comme cumin ou coriandre à sec une ou deux minutes jusqu’à ce qu’elles embaument, puis moud-les.",
+      "Infuser, c’est faire frire brièvement les épices dans l’huile chaude, comme le tadka indien, pour parfumer tout le plat.",
+      "Surveille et remue sans arrêt : les épices passent de parfumées à brûlées en quelques secondes."
+     ],
+     "q": "As-tu déjà remarqué comme l’odeur change quand les épices touchent l’huile chaude ?",
+     "c": "Fais grésiller une cuillère à café de cumin dans l’huile chaude quelques secondes et verse-la sur des lentilles ou du riz."
+    },
+    "it": {
+     "t": "Tostare e soffriggere le spezie",
+     "g": "Scaldare le spezie in padella asciutta o nell’olio per liberare più aroma.",
+     "p": [
+      "Tosta semi interi come cumino o coriandolo in padella asciutta per un paio di minuti finché profumano, poi macinali.",
+      "Soffriggere le spezie brevemente in olio caldo, come nel tadka indiano, diffonde il sapore in tutto il piatto.",
+      "Guarda bene e mescola sempre: le spezie passano da profumate a bruciate in pochi secondi."
+     ],
+     "q": "Hai mai notato come cambia il profumo quando le spezie toccano l’olio caldo?",
+     "c": "Soffriggi un cucchiaino di cumino in olio caldo per pochi secondi e versalo su lenticchie, riso o zuppa."
+    },
+    "pt": {
+     "t": "Tostar e fritar especiarias",
+     "g": "Aquecer especiarias numa frigideira seca ou em óleo para libertar mais aroma.",
+     "p": [
+      "Tosta sementes inteiras como cominhos ou coentros numa frigideira seca um ou dois minutos até cheirarem, e depois mói.",
+      "Fritar especiarias rapidamente em óleo quente, como no tadka indiano, espalha o sabor por todo o prato.",
+      "Vigia e mexe sempre: as especiarias passam de aromáticas a queimadas em segundos."
+     ],
+     "q": "Já reparaste como o cheiro muda quando as especiarias tocam no óleo quente?",
+     "c": "Frita uma colher de chá de cominhos em óleo quente uns segundos e deita sobre lentilhas, arroz ou sopa."
+    },
+    "pt_BR": {
+     "t": "Tostando e fritando especiarias",
+     "g": "Aquecer especiarias na frigideira seca ou no óleo para soltar mais aroma.",
+     "p": [
+      "Toste sementes inteiras como cominho ou coentro na frigideira seca por um ou dois minutos até perfumar, depois moa.",
+      "Fritar especiarias rapidinho no óleo quente, como no tadka indiano, espalha o sabor pelo prato todo.",
+      "Fique de olho e mexa sempre: especiarias passam de cheirosas a queimadas em segundos."
+     ],
+     "q": "Você já reparou como o cheiro muda quando as especiarias caem no óleo quente?",
+     "c": "Frite uma colher de chá de cominho no óleo quente por alguns segundos e jogue sobre lentilha, arroz ou sopa."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh herbs",
+     "g": "Learn when to add basil, coriander, parsley and mint for the best taste.",
+     "p": [
+      "Soft herbs like basil, coriander, parsley and mint are best added at the end or raw, as heat dulls them.",
+      "Hardy herbs like rosemary, thyme and bay can cook for longer and release flavour slowly.",
+      "Use the stems too: coriander and parsley stems are full of flavour in sauces, soups and pestos."
+     ],
+     "q": "Which fresh herb could you not live without in the kitchen?",
+     "c": "Finish today's meal with a handful of chopped fresh herbs added just before serving."
+    },
+    "de": {
+     "t": "Frische Kräuter",
+     "g": "Lerne, wann Basilikum, Koriander, Petersilie und Minze am besten schmecken.",
+     "p": [
+      "Weiche Kräuter wie Basilikum, Koriander, Petersilie und Minze kommen am besten am Ende oder roh dazu, Hitze dämpft sie.",
+      "Robuste Kräuter wie Rosmarin, Thymian und Lorbeer dürfen länger mitkochen und geben ihr Aroma langsam ab.",
+      "Nutze auch die Stiele: Koriander- und Petersilienstiele stecken voller Aroma für Saucen, Suppen und Pesto."
+     ],
+     "q": "Ohne welches frische Kraut könntest du in der Küche nicht leben?",
+     "c": "Gib heute kurz vor dem Servieren eine Handvoll gehackte frische Kräuter über dein Essen."
+    },
+    "es": {
+     "t": "Hierbas frescas",
+     "g": "Saber cuándo añadir albahaca, cilantro, perejil y menta para el mejor sabor.",
+     "p": [
+      "Las hierbas tiernas como albahaca, cilantro, perejil y menta se añaden al final o en crudo, el calor las apaga.",
+      "Las hierbas duras como romero, tomillo y laurel aguantan cocciones largas y sueltan sabor despacio.",
+      "Usa también los tallos: los de cilantro y perejil tienen mucho sabor en salsas, sopas y pestos."
+     ],
+     "q": "¿Sin qué hierba fresca no podrías vivir en la cocina?",
+     "c": "Termina la comida de hoy con un puñado de hierbas frescas picadas justo antes de servir."
+    },
+    "fr": {
+     "t": "Les herbes fraîches",
+     "g": "Savoir quand ajouter basilic, coriandre, persil et menthe pour le meilleur goût.",
+     "p": [
+      "Les herbes tendres comme basilic, coriandre, persil et menthe s’ajoutent à la fin ou crues : la chaleur les éteint.",
+      "Les herbes robustes comme romarin, thym et laurier supportent une longue cuisson et diffusent lentement.",
+      "Utilise aussi les tiges : celles de coriandre et de persil sont pleines de goût dans sauces, soupes et pestos."
+     ],
+     "q": "Sans quelle herbe fraîche ne pourrais-tu pas vivre en cuisine ?",
+     "c": "Termine ton repas du jour avec une poignée d’herbes fraîches hachées juste avant de servir."
+    },
+    "it": {
+     "t": "Erbe fresche",
+     "g": "Sapere quando aggiungere basilico, coriandolo, prezzemolo e menta per il gusto migliore.",
+     "p": [
+      "Le erbe tenere come basilico, coriandolo, prezzemolo e menta vanno aggiunte alla fine o a crudo: il calore le spegne.",
+      "Le erbe robuste come rosmarino, timo e alloro reggono cotture lunghe e rilasciano sapore lentamente.",
+      "Usa anche i gambi: quelli di coriandolo e prezzemolo sono pieni di sapore in salse, zuppe e pesti."
+     ],
+     "q": "Senza quale erba fresca non potresti vivere in cucina?",
+     "c": "Completa il pasto di oggi con una manciata di erbe fresche tritate subito prima di servire."
+    },
+    "pt": {
+     "t": "Ervas frescas",
+     "g": "Saber quando juntar manjericão, coentros, salsa e hortelã para o melhor sabor.",
+     "p": [
+      "As ervas tenras como manjericão, coentros, salsa e hortelã juntam-se no fim ou cruas, porque o calor as apaga.",
+      "As ervas rijas como alecrim, tomilho e louro aguentam cozeduras longas e libertam sabor devagar.",
+      "Usa também os pés: os de coentros e salsa têm muito sabor em molhos, sopas e pestos."
+     ],
+     "q": "Sem que erva fresca não conseguirias viver na cozinha?",
+     "c": "Termina a refeição de hoje com uma mão-cheia de ervas frescas picadas mesmo antes de servir."
+    },
+    "pt_BR": {
+     "t": "Ervas frescas",
+     "g": "Saber quando colocar manjericão, coentro, salsinha e hortelã para o melhor sabor.",
+     "p": [
+      "Ervas delicadas como manjericão, coentro, salsinha e hortelã entram no fim ou cruas, porque o calor apaga o sabor.",
+      "Ervas firmes como alecrim, tomilho e louro aguentam cozimento longo e soltam sabor aos poucos.",
+      "Use os talos também: os de coentro e salsinha têm muito sabor em molhos, sopas e pestos."
+     ],
+     "q": "Sem qual erva fresca você não viveria na cozinha?",
+     "c": "Finalize a refeição de hoje com um punhado de ervas frescas picadas logo antes de servir."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sauces that change everything",
+     "g": "Dress any meal with tahini sauce, peanut sauce and simple vinaigrettes.",
+     "p": [
+      "Tahini sauce is tahini, lemon, garlic and water whisked until creamy; it suits falafel, roasted vegetables and bowls.",
+      "Peanut sauce blends peanut butter, soy sauce, lime, a little sweetness and water, great with noodles and tofu.",
+      "Keep one sauce in a jar in the fridge and plain rice, beans or vegetables become a meal in minutes."
+     ],
+     "q": "Which sauce could you eat on almost anything?",
+     "c": "Whisk a small jar of tahini sauce or peanut sauce and use it on two different meals this week."
+    },
+    "de": {
+     "t": "Saucen, die alles verändern",
+     "g": "Verfeinere jedes Essen mit Tahinsauce, Erdnusssauce und einfachen Vinaigrettes.",
+     "p": [
+      "Tahinsauce ist Tahin, Zitrone, Knoblauch und Wasser, cremig verrührt; sie passt zu Falafel, Ofengemüse und Bowls.",
+      "Erdnusssauce mischt Erdnussbutter, Sojasauce, Limette, etwas Süße und Wasser, toll zu Nudeln und Tofu.",
+      "Hab eine Sauce im Glas im Kühlschrank, und schlichter Reis, Bohnen oder Gemüse werden in Minuten zur Mahlzeit."
+     ],
+     "q": "Welche Sauce könntest du auf fast alles geben?",
+     "c": "Rühre ein kleines Glas Tahin- oder Erdnusssauce an und nutze es diese Woche für zwei verschiedene Gerichte."
+    },
+    "es": {
+     "t": "Salsas que lo cambian todo",
+     "g": "Aliñar cualquier comida con salsa de tahini, salsa de cacahuete y vinagretas sencillas.",
+     "p": [
+      "La salsa de tahini es tahini, limón, ajo y agua batidos hasta quedar cremosa; va con faláfel, verduras asadas y bowls.",
+      "La de cacahuete mezcla crema de cacahuete, soja, lima, algo dulce y agua, genial con fideos y tofu.",
+      "Ten una salsa en un tarro en la nevera y el arroz, las legumbres o las verduras se vuelven comida en minutos."
+     ],
+     "q": "¿Qué salsa podrías comer con casi todo?",
+     "c": "Bate un tarrito de salsa de tahini o de cacahuete y úsala en dos comidas distintas esta semana."
+    },
+    "fr": {
+     "t": "Des sauces qui changent tout",
+     "g": "Napper n’importe quel repas de sauce tahini, sauce cacahuète et vinaigrettes simples.",
+     "p": [
+      "La sauce tahini, c’est tahini, citron, ail et eau fouettés jusqu’à crémeux ; parfaite avec falafels, légumes rôtis et bols.",
+      "La sauce cacahuète mêle beurre de cacahuète, sauce soja, citron vert, un peu de sucré et eau, top avec nouilles et tofu.",
+      "Garde une sauce en bocal au frigo et riz, haricots ou légumes nature deviennent un repas en quelques minutes."
+     ],
+     "q": "Quelle sauce pourrais-tu mettre sur presque tout ?",
+     "c": "Prépare un petit bocal de sauce tahini ou cacahuète et utilise-le dans deux repas différents cette semaine."
+    },
+    "it": {
+     "t": "Salse che cambiano tutto",
+     "g": "Condire qualsiasi pasto con salsa tahina, salsa di arachidi e vinaigrette semplici.",
+     "p": [
+      "La salsa tahina è tahina, limone, aglio e acqua sbattuti fino a crema; va con falafel, verdure arrosto e bowl.",
+      "La salsa di arachidi unisce burro d’arachidi, soia, lime, un tocco dolce e acqua, ottima con noodles e tofu.",
+      "Tieni una salsa in un barattolo in frigo e riso, legumi o verdure semplici diventano un pasto in pochi minuti."
+     ],
+     "q": "Quale salsa potresti mettere su quasi tutto?",
+     "c": "Prepara un vasetto di salsa tahina o di arachidi e usalo in due pasti diversi questa settimana."
+    },
+    "pt": {
+     "t": "Molhos que mudam tudo",
+     "g": "Temperar qualquer refeição com molho de tahini, molho de amendoim e vinagretes simples.",
+     "p": [
+      "O molho de tahini é tahini, limão, alho e água batidos até ficar cremoso; fica bem com falafel, legumes assados e taças.",
+      "O de amendoim junta manteiga de amendoim, soja, lima, um toque doce e água, ótimo com noodles e tofu.",
+      "Tem um molho num frasco no frigorífico e arroz, feijão ou legumes simples viram refeição em minutos."
+     ],
+     "q": "Que molho conseguias comer com quase tudo?",
+     "c": "Bate um frasquinho de molho de tahini ou de amendoim e usa-o em duas refeições diferentes esta semana."
+    },
+    "pt_BR": {
+     "t": "Molhos que mudam tudo",
+     "g": "Temperar qualquer refeição com molho de tahine, molho de amendoim e vinagretes simples.",
+     "p": [
+      "Molho de tahine é tahine, limão, alho e água batidos até ficar cremoso; combina com falafel, legumes assados e bowls.",
+      "O de amendoim mistura pasta de amendoim, shoyu, limão, um toque doce e água, ótimo com macarrão e tofu.",
+      "Deixe um molho num pote na geladeira e arroz, feijão ou legumes simples viram refeição em minutos."
+     ],
+     "q": "Qual molho você comeria com quase tudo?",
+     "c": "Faça um potinho de molho de tahine ou de amendoim e use em duas refeições diferentes nesta semana."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a basic vinaigrette",
+     "g": "Mix oil, acid, mustard and seasoning in the right ratio.",
+     "p": [
+      "A classic starting ratio is about three parts oil to one part vinegar or lemon juice.",
+      "A little mustard helps the oil and acid blend into a smooth, lasting emulsion; maple syrup can soften the sharpness.",
+      "Shake it in a jar with salt and pepper, taste on a leaf and adjust before dressing the salad."
+     ],
+     "q": "Do you prefer your dressings sharp and tangy or mild and sweet?",
+     "c": "Shake a vinaigrette in a jar using the 3 to 1 ratio, taste it on a leaf and adjust it once."
+    },
+    "de": {
+     "t": "Eine einfache Vinaigrette",
+     "g": "Mische Öl, Säure, Senf und Gewürze im richtigen Verhältnis.",
+     "p": [
+      "Ein klassisches Startverhältnis sind etwa drei Teile Öl auf einen Teil Essig oder Zitronensaft.",
+      "Etwas Senf verbindet Öl und Säure zu einer glatten, stabilen Emulsion; Ahornsirup mildert die Schärfe.",
+      "Schüttle alles mit Salz und Pfeffer in einem Glas, probiere an einem Blatt und schmecke ab, bevor du anmachst."
+     ],
+     "q": "Magst du Dressings lieber spritzig-sauer oder mild und süß?",
+     "c": "Schüttle eine Vinaigrette im Verhältnis 3 zu 1 in einem Glas, probiere an einem Blatt und korrigiere einmal."
+    },
+    "es": {
+     "t": "Hacer una vinagreta básica",
+     "g": "Mezclar aceite, ácido, mostaza y condimentos en la proporción adecuada.",
+     "p": [
+      "Una proporción clásica para empezar es unas tres partes de aceite por una de vinagre o zumo de limón.",
+      "Un poco de mostaza ayuda a unir aceite y ácido en una emulsión suave y estable; el sirope de arce suaviza la acidez.",
+      "Agítala en un tarro con sal y pimienta, pruébala en una hoja y ajusta antes de aliñar la ensalada."
+     ],
+     "q": "¿Prefieres los aliños ácidos e intensos o suaves y dulces?",
+     "c": "Agita una vinagreta en un tarro con la proporción 3 a 1, pruébala en una hoja y ajústala una vez."
+    },
+    "fr": {
+     "t": "Réussir une vinaigrette de base",
+     "g": "Mélanger huile, acide, moutarde et assaisonnement dans la bonne proportion.",
+     "p": [
+      "Une proportion classique de départ : environ trois parts d’huile pour une part de vinaigre ou de jus de citron.",
+      "Un peu de moutarde aide l’huile et l’acide à former une émulsion lisse et stable ; le sirop d’érable adoucit l’acidité.",
+      "Secoue-la dans un bocal avec sel et poivre, goûte sur une feuille et ajuste avant d’assaisonner la salade."
+     ],
+     "q": "Préfères-tu les vinaigrettes vives et acidulées ou douces et sucrées ?",
+     "c": "Secoue une vinaigrette en bocal selon la proportion 3 pour 1, goûte-la sur une feuille et ajuste une fois."
+    },
+    "it": {
+     "t": "Preparare una vinaigrette base",
+     "g": "Mescolare olio, acido, senape e condimenti nella giusta proporzione.",
+     "p": [
+      "Una proporzione classica di partenza è circa tre parti di olio per una di aceto o succo di limone.",
+      "Un po’ di senape aiuta olio e acido a formare un’emulsione liscia e stabile; lo sciroppo d’acero smorza l’acidità.",
+      "Agitala in un barattolo con sale e pepe, assaggiala su una foglia e regola prima di condire l’insalata."
+     ],
+     "q": "Preferisci condimenti aciduli e decisi o delicati e dolci?",
+     "c": "Agita una vinaigrette in barattolo con la proporzione 3 a 1, assaggiala su una foglia e correggila una volta."
+    },
+    "pt": {
+     "t": "Fazer um vinagrete básico",
+     "g": "Misturar azeite, ácido, mostarda e tempero na proporção certa.",
+     "p": [
+      "Uma proporção clássica para começar é cerca de três partes de azeite para uma de vinagre ou sumo de limão.",
+      "Um pouco de mostarda ajuda o azeite e o ácido a formar uma emulsão lisa e estável; o xarope de ácer suaviza a acidez.",
+      "Agita-o num frasco com sal e pimenta, prova numa folha e acerta antes de temperar a salada."
+     ],
+     "q": "Preferes temperos ácidos e intensos ou suaves e adocicados?",
+     "c": "Agita um vinagrete num frasco com a proporção 3 para 1, prova-o numa folha e acerta uma vez."
+    },
+    "pt_BR": {
+     "t": "Fazendo um molho vinagrete básico",
+     "g": "Misturar azeite, ácido, mostarda e tempero na proporção certa.",
+     "p": [
+      "Uma proporção clássica para começar é cerca de três partes de azeite para uma de vinagre ou suco de limão.",
+      "Um pouco de mostarda ajuda a unir azeite e ácido numa emulsão lisa e estável; melado suaviza a acidez.",
+      "Chacoalhe num pote com sal e pimenta, prove numa folha e ajuste antes de temperar a salada."
+     ],
+     "q": "Você prefere molhos azedinhos e intensos ou suaves e adocicados?",
+     "c": "Chacoalhe um vinagrete num pote na proporção 3 para 1, prove numa folha e ajuste uma vez."
+    }
+   }
+  }
+ ]
+}

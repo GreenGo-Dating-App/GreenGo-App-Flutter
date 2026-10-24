@@ -1,0 +1,835 @@
+{
+ "topic": "philosophy",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is philosophy?",
+     "g": "Discover that philosophy means love of wisdom and starts with careful, curious questions.",
+     "p": [
+      "The word comes from Greek: philo means love and sophia means wisdom.",
+      "Philosophers ask big questions about truth, goodness, knowledge and how to live.",
+      "You need no special tools, only curiosity, patience and an open mind."
+     ],
+     "q": "What is one big question you have wondered about since you were a child?",
+     "c": "Write down one question about life that you would love to explore this year."
+    },
+    "de": {
+     "t": "Was ist Philosophie?",
+     "g": "Entdecke, dass Philosophie Liebe zur Weisheit bedeutet und mit neugierigen Fragen beginnt.",
+     "p": [
+      "Das Wort ist griechisch: philo heißt Liebe, sophia heißt Weisheit.",
+      "Philosophen fragen nach Wahrheit, dem Guten, Wissen und dem richtigen Leben.",
+      "Du brauchst keine Werkzeuge, nur Neugier, Geduld und einen offenen Geist."
+     ],
+     "q": "Welche große Frage beschäftigt dich schon seit deiner Kindheit?",
+     "c": "Schreib eine Frage über das Leben auf, die du gern genauer erkunden möchtest."
+    },
+    "es": {
+     "t": "¿Qué es la filosofía?",
+     "g": "Descubre que filosofía significa amor a la sabiduría y nace de preguntas curiosas y cuidadosas.",
+     "p": [
+      "La palabra es griega: philo significa amor y sophia, sabiduría.",
+      "Los filósofos preguntan por la verdad, el bien, el conocimiento y cómo vivir.",
+      "No necesitas herramientas especiales, solo curiosidad, paciencia y mente abierta."
+     ],
+     "q": "¿Qué gran pregunta te ronda la cabeza desde que eras niño?",
+     "c": "Escribe una pregunta sobre la vida que te encantaría explorar con calma."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la philosophie ?",
+     "g": "Découvrir que la philosophie signifie amour de la sagesse et naît de questions curieuses.",
+     "p": [
+      "Le mot vient du grec : philo veut dire amour et sophia, sagesse.",
+      "Les philosophes s'interrogent sur la vérité, le bien, le savoir et l'art de vivre.",
+      "Pas besoin d'outils spéciaux : curiosité, patience et esprit ouvert suffisent."
+     ],
+     "q": "Quelle grande question te trotte dans la tête depuis l'enfance ?",
+     "c": "Note une question sur la vie que tu aimerais explorer tranquillement."
+    },
+    "it": {
+     "t": "Che cos'è la filosofia?",
+     "g": "Scoprire che filosofia significa amore per la saggezza e nasce da domande curiose e attente.",
+     "p": [
+      "La parola è greca: philo vuol dire amore e sophia saggezza.",
+      "I filosofi si chiedono cosa siano verità, bene, conoscenza e vita buona.",
+      "Non servono strumenti speciali: bastano curiosità, pazienza e mente aperta."
+     ],
+     "q": "Qual è una grande domanda che ti accompagna fin da bambino?",
+     "c": "Scrivi una domanda sulla vita che ti piacerebbe esplorare con calma."
+    },
+    "pt": {
+     "t": "O que é a filosofia?",
+     "g": "Descobrir que filosofia significa amor à sabedoria e nasce de perguntas curiosas e cuidadosas.",
+     "p": [
+      "A palavra é grega: philo quer dizer amor e sophia, sabedoria.",
+      "Os filósofos perguntam pela verdade, o bem, o conhecimento e a forma de viver.",
+      "Não precisas de ferramentas especiais, só curiosidade, paciência e mente aberta."
+     ],
+     "q": "Que grande pergunta te acompanha desde criança?",
+     "c": "Escreve uma pergunta sobre a vida que gostarias de explorar com calma."
+    },
+    "pt_BR": {
+     "t": "O que é filosofia?",
+     "g": "Descobrir que filosofia significa amor à sabedoria e nasce de perguntas curiosas e cuidadosas.",
+     "p": [
+      "A palavra é grega: philo quer dizer amor e sophia, sabedoria.",
+      "Filósofos perguntam sobre verdade, bem, conhecimento e como viver.",
+      "Você não precisa de ferramentas especiais, só curiosidade, paciência e mente aberta."
+     ],
+     "q": "Qual grande pergunta te acompanha desde criança?",
+     "c": "Anote uma pergunta sobre a vida que você adoraria explorar com calma."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of a good question",
+     "g": "Learn why open questions often teach us more than quick answers.",
+     "p": [
+      "A closed question ends with yes or no; an open one invites thinking.",
+      "A good question makes us notice what we usually take for granted.",
+      "Philosophers often value a well-posed question more than a fast reply."
+     ],
+     "q": "What question has changed the way you see something?",
+     "c": "Turn one yes-or-no question you ask today into an open why or how question."
+    },
+    "de": {
+     "t": "Die Kraft einer guten Frage",
+     "g": "Verstehe, warum offene Fragen oft mehr lehren als schnelle Antworten.",
+     "p": [
+      "Eine geschlossene Frage endet mit Ja oder Nein, eine offene lädt zum Denken ein.",
+      "Gute Fragen lassen uns bemerken, was wir sonst für selbstverständlich halten.",
+      "Philosophen schätzen eine gut gestellte Frage oft mehr als eine schnelle Antwort."
+     ],
+     "q": "Welche Frage hat deine Sicht auf etwas verändert?",
+     "c": "Mach heute aus einer Ja-Nein-Frage eine offene Warum- oder Wie-Frage."
+    },
+    "es": {
+     "t": "El poder de una buena pregunta",
+     "g": "Aprende por qué las preguntas abiertas enseñan más que las respuestas rápidas.",
+     "p": [
+      "Una pregunta cerrada acaba en sí o no; una abierta invita a pensar.",
+      "Una buena pregunta nos hace notar lo que solemos dar por sentado.",
+      "Los filósofos valoran una pregunta bien planteada más que una respuesta veloz."
+     ],
+     "q": "¿Qué pregunta cambió tu forma de ver algo?",
+     "c": "Convierte hoy una pregunta de sí o no en una pregunta abierta con por qué o cómo."
+    },
+    "fr": {
+     "t": "Le pouvoir d'une bonne question",
+     "g": "Comprendre pourquoi les questions ouvertes apprennent plus que les réponses rapides.",
+     "p": [
+      "Une question fermée finit par oui ou non ; une ouverte invite à réfléchir.",
+      "Une bonne question nous fait remarquer ce que l'on tient pour acquis.",
+      "Les philosophes préfèrent souvent une question bien posée à une réponse rapide."
+     ],
+     "q": "Quelle question a changé ta façon de voir quelque chose ?",
+     "c": "Transforme aujourd'hui une question fermée en question ouverte avec pourquoi ou comment."
+    },
+    "it": {
+     "t": "Il potere di una buona domanda",
+     "g": "Capire perché le domande aperte insegnano più delle risposte veloci.",
+     "p": [
+      "Una domanda chiusa finisce con sì o no; una aperta invita a pensare.",
+      "Una buona domanda ci fa notare ciò che diamo per scontato.",
+      "I filosofi apprezzano una domanda ben posta più di una risposta rapida."
+     ],
+     "q": "Quale domanda ha cambiato il tuo modo di vedere qualcosa?",
+     "c": "Trasforma oggi una domanda sì o no in una domanda aperta con perché o come."
+    },
+    "pt": {
+     "t": "O poder de uma boa pergunta",
+     "g": "Perceber porque as perguntas abertas ensinam mais do que as respostas rápidas.",
+     "p": [
+      "Uma pergunta fechada acaba em sim ou não; uma aberta convida a pensar.",
+      "Uma boa pergunta faz-nos reparar no que damos por garantido.",
+      "Os filósofos valorizam uma pergunta bem feita mais do que uma resposta rápida."
+     ],
+     "q": "Que pergunta mudou a tua maneira de ver alguma coisa?",
+     "c": "Transforma hoje uma pergunta de sim ou não numa pergunta aberta com porquê ou como."
+    },
+    "pt_BR": {
+     "t": "O poder de uma boa pergunta",
+     "g": "Entender por que perguntas abertas ensinam mais do que respostas rápidas.",
+     "p": [
+      "Uma pergunta fechada termina em sim ou não; uma aberta convida a pensar.",
+      "Uma boa pergunta faz a gente notar o que costuma dar como certo.",
+      "Filósofos valorizam uma pergunta bem feita mais do que uma resposta rápida."
+     ],
+     "q": "Que pergunta mudou o jeito como você vê alguma coisa?",
+     "c": "Transforme hoje uma pergunta de sim ou não em uma pergunta aberta com por que ou como."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wonder as a starting point",
+     "g": "See why Plato and Aristotle said philosophy begins with wonder at ordinary things.",
+     "p": [
+      "Plato wrote that wonder is where philosophy begins.",
+      "Aristotle agreed: people started thinking because they were amazed by the world.",
+      "Ordinary things, like rain, time or friendship, can spark deep questions."
+     ],
+     "q": "What everyday thing still amazes you when you stop and think about it?",
+     "c": "Pick one ordinary object near you and list three questions it makes you wonder about."
+    },
+    "de": {
+     "t": "Staunen als Anfang",
+     "g": "Erfahre, warum Platon und Aristoteles sagten, Philosophie beginne mit dem Staunen.",
+     "p": [
+      "Platon schrieb, das Staunen sei der Anfang der Philosophie.",
+      "Aristoteles stimmte zu: Menschen begannen zu denken, weil die Welt sie verblüffte.",
+      "Alltägliches wie Regen, Zeit oder Freundschaft kann tiefe Fragen wecken."
+     ],
+     "q": "Welche alltägliche Sache bringt dich noch zum Staunen, wenn du innehältst?",
+     "c": "Nimm einen Gegenstand in deiner Nähe und notiere drei Fragen, die er in dir weckt."
+    },
+    "es": {
+     "t": "El asombro como punto de partida",
+     "g": "Descubre por qué Platón y Aristóteles dijeron que la filosofía empieza con el asombro.",
+     "p": [
+      "Platón escribió que el asombro es el comienzo de la filosofía.",
+      "Aristóteles coincidía: la gente empezó a pensar porque el mundo la maravillaba.",
+      "Cosas comunes como la lluvia, el tiempo o la amistad despiertan grandes preguntas."
+     ],
+     "q": "¿Qué cosa cotidiana te sigue asombrando cuando te detienes a pensar?",
+     "c": "Elige un objeto cercano y escribe tres preguntas que te despierte."
+    },
+    "fr": {
+     "t": "L'étonnement comme point de départ",
+     "g": "Voir pourquoi Platon et Aristote disaient que la philosophie commence par l'étonnement.",
+     "p": [
+      "Platon a écrit que l'étonnement est le commencement de la philosophie.",
+      "Aristote était d'accord : on a commencé à penser parce que le monde émerveillait.",
+      "La pluie, le temps ou l'amitié peuvent éveiller de grandes questions."
+     ],
+     "q": "Quelle chose ordinaire t'étonne encore quand tu prends le temps d'y penser ?",
+     "c": "Choisis un objet près de toi et note trois questions qu'il fait naître."
+    },
+    "it": {
+     "t": "La meraviglia come inizio",
+     "g": "Scoprire perché Platone e Aristotele dicevano che la filosofia nasce dalla meraviglia.",
+     "p": [
+      "Platone scrisse che la meraviglia è il principio della filosofia.",
+      "Aristotele concordava: gli esseri umani iniziarono a pensare perché stupiti dal mondo.",
+      "Cose comuni come la pioggia, il tempo o l'amicizia accendono grandi domande."
+     ],
+     "q": "Quale cosa quotidiana ti stupisce ancora quando ti fermi a pensarci?",
+     "c": "Scegli un oggetto vicino a te e scrivi tre domande che ti fa nascere."
+    },
+    "pt": {
+     "t": "O espanto como ponto de partida",
+     "g": "Perceber porque Platão e Aristóteles diziam que a filosofia começa com o espanto.",
+     "p": [
+      "Platão escreveu que o espanto é o princípio da filosofia.",
+      "Aristóteles concordava: começámos a pensar porque o mundo nos maravilhava.",
+      "Coisas comuns como a chuva, o tempo ou a amizade despertam grandes perguntas."
+     ],
+     "q": "Que coisa do dia a dia ainda te espanta quando paras para pensar?",
+     "c": "Escolhe um objeto perto de ti e escreve três perguntas que ele te desperta."
+    },
+    "pt_BR": {
+     "t": "O espanto como ponto de partida",
+     "g": "Entender por que Platão e Aristóteles diziam que a filosofia começa com o espanto.",
+     "p": [
+      "Platão escreveu que o espanto é o começo da filosofia.",
+      "Aristóteles concordava: as pessoas começaram a pensar porque o mundo as maravilhava.",
+      "Coisas comuns como chuva, tempo ou amizade despertam grandes perguntas."
+     ],
+     "q": "Que coisa do dia a dia ainda te espanta quando você para para pensar?",
+     "c": "Escolha um objeto perto de você e escreva três perguntas que ele desperta."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thales and the first questions",
+     "g": "Meet the early Greek thinkers who asked what everything is ultimately made of.",
+     "p": [
+      "Thales of Miletus proposed that everything comes from water.",
+      "Others disagreed: Anaximenes said air, Heraclitus pointed to fire and change.",
+      "The big step was looking for natural explanations instead of only old stories."
+     ],
+     "q": "If you had to pick one basic ingredient of the world, what would you choose and why?",
+     "c": "Look around and guess what three different things might have in common underneath."
+    },
+    "de": {
+     "t": "Thales und die ersten Fragen",
+     "g": "Lerne die frühen Griechen kennen, die fragten, woraus alles letztlich besteht.",
+     "p": [
+      "Thales von Milet meinte, alles komme aus dem Wasser.",
+      "Andere widersprachen: Anaximenes nannte die Luft, Heraklit das Feuer und den Wandel.",
+      "Der große Schritt war, natürliche Erklärungen statt nur alter Geschichten zu suchen."
+     ],
+     "q": "Welchen Grundstoff der Welt würdest du wählen und warum?",
+     "c": "Schau dich um und rate, was drei verschiedene Dinge im Kern gemeinsam haben könnten."
+    },
+    "es": {
+     "t": "Tales y las primeras preguntas",
+     "g": "Conoce a los primeros pensadores griegos que preguntaron de qué está hecho todo.",
+     "p": [
+      "Tales de Mileto propuso que todo procede del agua.",
+      "Otros discreparon: Anaxímenes dijo el aire y Heráclito señaló el fuego y el cambio.",
+      "El gran paso fue buscar explicaciones naturales y no solo relatos antiguos."
+     ],
+     "q": "Si tuvieras que elegir un ingrediente básico del mundo, ¿cuál sería y por qué?",
+     "c": "Mira a tu alrededor y piensa qué podrían tener en común tres cosas muy distintas."
+    },
+    "fr": {
+     "t": "Thalès et les premières questions",
+     "g": "Rencontrer les premiers penseurs grecs qui se demandaient de quoi tout est fait.",
+     "p": [
+      "Thalès de Milet proposait que tout vient de l'eau.",
+      "D'autres n'étaient pas d'accord : Anaximène disait l'air, Héraclite le feu et le changement.",
+      "Le grand pas fut de chercher des explications naturelles, pas seulement des récits anciens."
+     ],
+     "q": "Si tu devais choisir un ingrédient de base du monde, lequel et pourquoi ?",
+     "c": "Regarde autour de toi et imagine ce que trois choses différentes ont en commun."
+    },
+    "it": {
+     "t": "Talete e le prime domande",
+     "g": "Conoscere i primi pensatori greci che si chiesero di cosa è fatto tutto.",
+     "p": [
+      "Talete di Mileto propose che tutto derivi dall'acqua.",
+      "Altri non erano d'accordo: Anassimene disse l'aria, Eraclito il fuoco e il cambiamento.",
+      "Il grande passo fu cercare spiegazioni naturali e non solo racconti antichi."
+     ],
+     "q": "Se dovessi scegliere un ingrediente base del mondo, quale sarebbe e perché?",
+     "c": "Guardati intorno e immagina cosa possano avere in comune tre cose diverse."
+    },
+    "pt": {
+     "t": "Tales e as primeiras perguntas",
+     "g": "Conhecer os primeiros pensadores gregos que perguntaram de que é feito tudo.",
+     "p": [
+      "Tales de Mileto propôs que tudo vem da água.",
+      "Outros discordaram: Anaxímenes disse o ar, Heraclito apontou o fogo e a mudança.",
+      "O grande passo foi procurar explicações naturais e não só histórias antigas."
+     ],
+     "q": "Se tivesses de escolher um ingrediente básico do mundo, qual seria e porquê?",
+     "c": "Olha à tua volta e imagina o que três coisas diferentes podem ter em comum."
+    },
+    "pt_BR": {
+     "t": "Tales e as primeiras perguntas",
+     "g": "Conhecer os primeiros pensadores gregos que perguntaram do que tudo é feito.",
+     "p": [
+      "Tales de Mileto propôs que tudo vem da água.",
+      "Outros discordaram: Anaxímenes disse o ar, Heráclito apontou o fogo e a mudança.",
+      "O grande passo foi buscar explicações naturais e não só histórias antigas."
+     ],
+     "q": "Se você tivesse que escolher um ingrediente básico do mundo, qual seria e por quê?",
+     "c": "Olhe ao redor e imagine o que três coisas bem diferentes podem ter em comum."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Socrates and asking why",
+     "g": "Meet Socrates, who questioned people in the Athenian marketplace to test beliefs.",
+     "p": [
+      "Socrates wrote nothing; we know him mostly through his student Plato.",
+      "He asked people to define words like courage or justice, then tested their answers.",
+      "He believed an unexamined life misses the chance to understand ourselves."
+     ],
+     "q": "Which belief of yours would you enjoy having someone question kindly?",
+     "c": "Ask a friend why they believe one small thing, and simply listen to the reasons."
+    },
+    "de": {
+     "t": "Sokrates und das Warum",
+     "g": "Lerne Sokrates kennen, der auf dem Marktplatz Athens Überzeugungen prüfte.",
+     "p": [
+      "Sokrates schrieb nichts auf; wir kennen ihn vor allem durch seinen Schüler Platon.",
+      "Er bat Menschen, Begriffe wie Mut oder Gerechtigkeit zu erklären, und prüfte die Antworten.",
+      "Er meinte, ein ungeprüftes Leben verpasse die Chance, sich selbst zu verstehen."
+     ],
+     "q": "Welche deiner Überzeugungen dürfte jemand freundlich hinterfragen?",
+     "c": "Frag eine Freundin oder einen Freund, warum sie etwas glauben, und hör einfach zu."
+    },
+    "es": {
+     "t": "Sócrates y el porqué",
+     "g": "Conoce a Sócrates, que interrogaba a la gente en el mercado de Atenas para examinar creencias.",
+     "p": [
+      "Sócrates no escribió nada; lo conocemos sobre todo por su alumno Platón.",
+      "Pedía definir palabras como valentía o justicia y luego examinaba las respuestas.",
+      "Creía que una vida sin examen pierde la ocasión de conocernos a nosotros mismos."
+     ],
+     "q": "¿Qué creencia tuya te gustaría que alguien cuestionara con amabilidad?",
+     "c": "Pregunta a un amigo por qué cree algo pequeño y escucha sus razones sin juzgar."
+    },
+    "fr": {
+     "t": "Socrate et le pourquoi",
+     "g": "Rencontrer Socrate, qui questionnait les gens sur l'agora d'Athènes pour éprouver leurs idées.",
+     "p": [
+      "Socrate n'a rien écrit ; on le connaît surtout par son élève Platon.",
+      "Il demandait de définir le courage ou la justice, puis examinait les réponses.",
+      "Pour lui, une vie sans examen manque l'occasion de se comprendre soi-même."
+     ],
+     "q": "Quelle croyance aimerais-tu voir questionnée avec bienveillance ?",
+     "c": "Demande à un ami pourquoi il croit une petite chose et écoute simplement ses raisons."
+    },
+    "it": {
+     "t": "Socrate e il perché",
+     "g": "Conoscere Socrate, che interrogava le persone nella piazza di Atene per mettere alla prova le idee.",
+     "p": [
+      "Socrate non scrisse nulla; lo conosciamo soprattutto grazie al suo allievo Platone.",
+      "Chiedeva di definire parole come coraggio o giustizia e poi esaminava le risposte.",
+      "Pensava che una vita senza ricerca perda l'occasione di conoscere sé stessi."
+     ],
+     "q": "Quale tua convinzione ti piacerebbe vedere messa in dubbio con gentilezza?",
+     "c": "Chiedi a un amico perché crede una piccola cosa e ascolta le sue ragioni."
+    },
+    "pt": {
+     "t": "Sócrates e o porquê",
+     "g": "Conhecer Sócrates, que interrogava as pessoas na praça de Atenas para testar crenças.",
+     "p": [
+      "Sócrates não escreveu nada; conhecemo-lo sobretudo pelo seu aluno Platão.",
+      "Pedia que definissem palavras como coragem ou justiça e depois examinava as respostas.",
+      "Acreditava que uma vida sem exame perde a ocasião de nos conhecermos."
+     ],
+     "q": "Que crença tua gostarias que alguém questionasse com gentileza?",
+     "c": "Pergunta a um amigo porque acredita numa coisa simples e ouve as razões dele."
+    },
+    "pt_BR": {
+     "t": "Sócrates e o porquê",
+     "g": "Conhecer Sócrates, que questionava as pessoas na praça de Atenas para testar crenças.",
+     "p": [
+      "Sócrates não escreveu nada; o conhecemos principalmente pelo aluno Platão.",
+      "Pedia que definissem palavras como coragem ou justiça e depois examinava as respostas.",
+      "Acreditava que uma vida sem exame perde a chance de nos conhecermos."
+     ],
+     "q": "Que crença sua você gostaria que alguém questionasse com gentileza?",
+     "c": "Pergunte a um amigo por que ele acredita em algo simples e só escute as razões."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Socratic method",
+     "g": "Learn how a chain of friendly questions can lead to clearer thinking.",
+     "p": [
+      "Start with a simple claim, then ask what it means and whether it always holds.",
+      "Look for an example that does not fit, then improve the idea together.",
+      "The goal is not to win, but for both people to understand better."
+     ],
+     "q": "Shall we try it: what do you think makes someone a good friend?",
+     "c": "Use three follow-up questions in one conversation today, gently and with curiosity."
+    },
+    "de": {
+     "t": "Die sokratische Methode",
+     "g": "Lerne, wie eine Kette freundlicher Fragen zu klarerem Denken führt.",
+     "p": [
+      "Beginne mit einer einfachen Aussage und frag, was sie bedeutet und ob sie immer gilt.",
+      "Such ein Beispiel, das nicht passt, und verbessert die Idee gemeinsam.",
+      "Es geht nicht ums Gewinnen, sondern darum, dass beide besser verstehen."
+     ],
+     "q": "Probieren wir es: Was macht für dich einen guten Freund aus?",
+     "c": "Stell heute in einem Gespräch drei freundliche, neugierige Nachfragen."
+    },
+    "es": {
+     "t": "El método socrático",
+     "g": "Aprende cómo una cadena de preguntas amables lleva a pensar con más claridad.",
+     "p": [
+      "Empieza con una afirmación sencilla y pregunta qué significa y si siempre se cumple.",
+      "Busca un ejemplo que no encaje y mejoren la idea juntos.",
+      "El objetivo no es ganar, sino que ambos entiendan mejor."
+     ],
+     "q": "¿Lo probamos? ¿Qué crees que hace que alguien sea un buen amigo?",
+     "c": "Haz hoy tres preguntas de seguimiento en una conversación, con calma y curiosidad."
+    },
+    "fr": {
+     "t": "La méthode socratique",
+     "g": "Apprendre comment une suite de questions amicales mène à une pensée plus claire.",
+     "p": [
+      "Pars d'une affirmation simple, puis demande ce qu'elle signifie et si elle vaut toujours.",
+      "Cherche un exemple qui ne colle pas, puis améliorez l'idée ensemble.",
+      "Le but n'est pas de gagner, mais que chacun comprenne mieux."
+     ],
+     "q": "On essaie ? Selon toi, qu'est-ce qui fait un bon ami ?",
+     "c": "Pose aujourd'hui trois questions de relance dans une conversation, avec douceur."
+    },
+    "it": {
+     "t": "Il metodo socratico",
+     "g": "Imparare come una catena di domande gentili porti a pensare con più chiarezza.",
+     "p": [
+      "Parti da un'affermazione semplice e chiedi cosa significa e se vale sempre.",
+      "Cerca un esempio che non torna e migliorate l'idea insieme.",
+      "Lo scopo non è vincere, ma capire meglio entrambi."
+     ],
+     "q": "Proviamo? Secondo te, cosa rende qualcuno un buon amico?",
+     "c": "Fai oggi tre domande di approfondimento in una conversazione, con curiosità."
+    },
+    "pt": {
+     "t": "O método socrático",
+     "g": "Aprender como uma cadeia de perguntas amáveis leva a pensar com mais clareza.",
+     "p": [
+      "Começa com uma afirmação simples e pergunta o que significa e se vale sempre.",
+      "Procura um exemplo que não encaixa e melhorem a ideia juntos.",
+      "O objetivo não é ganhar, mas que ambos compreendam melhor."
+     ],
+     "q": "Vamos experimentar: o que achas que faz de alguém um bom amigo?",
+     "c": "Faz hoje três perguntas de seguimento numa conversa, com calma e curiosidade."
+    },
+    "pt_BR": {
+     "t": "O método socrático",
+     "g": "Aprender como uma sequência de perguntas gentis leva a pensar com mais clareza.",
+     "p": [
+      "Comece com uma afirmação simples e pergunte o que significa e se vale sempre.",
+      "Procure um exemplo que não se encaixa e melhorem a ideia juntos.",
+      "O objetivo não é vencer, e sim que os dois entendam melhor."
+     ],
+     "q": "Vamos testar: o que você acha que faz de alguém um bom amigo?",
+     "c": "Faça hoje três perguntas de acompanhamento em uma conversa, com calma e curiosidade."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing that you don't know",
+     "g": "Understand Socratic wisdom: being aware of the limits of your own knowledge.",
+     "p": [
+      "A friend was told no one was wiser than Socrates, which puzzled him.",
+      "He concluded his only edge was that he knew he did not know.",
+      "Admitting what we do not know opens the door to real learning."
+     ],
+     "q": "What is something you once felt sure about and later saw differently?",
+     "c": "Say I am not sure, let me find out at least once today and notice how it feels."
+    },
+    "de": {
+     "t": "Wissen, dass man nichts weiß",
+     "g": "Verstehe die sokratische Weisheit: die Grenzen des eigenen Wissens zu kennen.",
+     "p": [
+      "Ein Freund hörte, niemand sei weiser als Sokrates, was diesen verwunderte.",
+      "Er schloss, sein Vorteil sei nur, dass er wusste, dass er nicht wusste.",
+      "Wer zugibt, etwas nicht zu wissen, öffnet die Tür zum echten Lernen."
+     ],
+     "q": "Wovon warst du einmal überzeugt und hast es später anders gesehen?",
+     "c": "Sag heute mindestens einmal: Ich weiß es nicht genau, ich finde es heraus."
+    },
+    "es": {
+     "t": "Saber que no sabes",
+     "g": "Comprende la sabiduría socrática: ser consciente de los límites de tu conocimiento.",
+     "p": [
+      "A un amigo le dijeron que nadie era más sabio que Sócrates, y eso lo desconcertó.",
+      "Concluyó que su única ventaja era saber que no sabía.",
+      "Admitir lo que no sabemos abre la puerta al aprendizaje real."
+     ],
+     "q": "¿De qué estabas seguro y luego viste de otra manera?",
+     "c": "Di hoy al menos una vez: no estoy seguro, voy a averiguarlo, y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Savoir qu'on ne sait pas",
+     "g": "Comprendre la sagesse socratique : être conscient des limites de son savoir.",
+     "p": [
+      "Un ami apprit que nul n'était plus sage que Socrate, ce qui étonna ce dernier.",
+      "Il conclut que son seul avantage était de savoir qu'il ne savait pas.",
+      "Reconnaître ce qu'on ignore ouvre la porte au vrai apprentissage."
+     ],
+     "q": "De quoi étais-tu sûr autrefois avant de voir les choses autrement ?",
+     "c": "Dis au moins une fois aujourd'hui : je ne suis pas sûr, je vais vérifier."
+    },
+    "it": {
+     "t": "Sapere di non sapere",
+     "g": "Capire la saggezza socratica: essere consapevoli dei limiti del proprio sapere.",
+     "p": [
+      "A un amico fu detto che nessuno era più saggio di Socrate, e questo lo stupì.",
+      "Concluse che il suo unico vantaggio era sapere di non sapere.",
+      "Ammettere ciò che non sappiamo apre la porta al vero apprendimento."
+     ],
+     "q": "Di cosa eri sicuro un tempo e poi hai visto in modo diverso?",
+     "c": "Di' almeno una volta oggi: non ne sono sicuro, lo verifico, e nota come ti senti."
+    },
+    "pt": {
+     "t": "Saber que não se sabe",
+     "g": "Compreender a sabedoria socrática: ter consciência dos limites do próprio saber.",
+     "p": [
+      "Disseram a um amigo que ninguém era mais sábio do que Sócrates, o que o intrigou.",
+      "Concluiu que a sua única vantagem era saber que não sabia.",
+      "Admitir o que não sabemos abre a porta à verdadeira aprendizagem."
+     ],
+     "q": "De que tinhas a certeza e mais tarde viste de outra forma?",
+     "c": "Diz hoje pelo menos uma vez: não tenho a certeza, vou descobrir."
+    },
+    "pt_BR": {
+     "t": "Saber que não se sabe",
+     "g": "Entender a sabedoria socrática: ter consciência dos limites do próprio saber.",
+     "p": [
+      "Disseram a um amigo que ninguém era mais sábio que Sócrates, o que o intrigou.",
+      "Ele concluiu que sua única vantagem era saber que não sabia.",
+      "Admitir o que não sabemos abre a porta para o aprendizado de verdade."
+     ],
+     "q": "Do que você tinha certeza e depois viu de outro jeito?",
+     "c": "Diga hoje pelo menos uma vez: não tenho certeza, vou descobrir."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Confucius and good character",
+     "g": "Learn how Confucius taught that learning, respect and kindness shape a good person.",
+     "p": [
+      "Confucius was a teacher in ancient China; his sayings are collected in the Analects.",
+      "Ren means humaneness: caring about others and treating them well.",
+      "He saw character as built daily through study, good manners and reflection."
+     ],
+     "q": "Who in your life shows good character, and what do they do?",
+     "c": "Do one small act of respect today, like thanking someone by name."
+    },
+    "de": {
+     "t": "Konfuzius und guter Charakter",
+     "g": "Erfahre, wie Konfuzius lehrte, dass Lernen, Respekt und Güte einen guten Menschen formen.",
+     "p": [
+      "Konfuzius war Lehrer im alten China; seine Sprüche stehen in den Gesprächen.",
+      "Ren bedeutet Menschlichkeit: sich um andere kümmern und sie gut behandeln.",
+      "Charakter entsteht für ihn täglich durch Lernen, gute Umgangsformen und Nachdenken."
+     ],
+     "q": "Wer in deinem Leben zeigt guten Charakter, und woran erkennst du es?",
+     "c": "Zeig heute eine kleine Geste des Respekts, etwa ein Danke mit Namen."
+    },
+    "es": {
+     "t": "Confucio y el buen carácter",
+     "g": "Descubre cómo Confucio enseñó que el estudio, el respeto y la bondad forman a una buena persona.",
+     "p": [
+      "Confucio fue maestro en la antigua China; sus dichos están en las Analectas.",
+      "Ren significa humanidad: preocuparse por los demás y tratarlos bien.",
+      "Para él, el carácter se construye cada día con estudio, buenos modales y reflexión."
+     ],
+     "q": "¿Quién en tu vida muestra buen carácter y qué hace?",
+     "c": "Haz hoy un pequeño gesto de respeto, como dar las gracias a alguien por su nombre."
+    },
+    "fr": {
+     "t": "Confucius et le bon caractère",
+     "g": "Voir comment Confucius enseignait que l'étude, le respect et la bonté forment une bonne personne.",
+     "p": [
+      "Confucius était un maître de la Chine ancienne ; ses paroles sont réunies dans les Entretiens.",
+      "Le ren, c'est l'humanité : prendre soin des autres et bien les traiter.",
+      "Pour lui, le caractère se forge chaque jour par l'étude, la politesse et la réflexion."
+     ],
+     "q": "Qui, autour de toi, montre un bon caractère, et comment ?",
+     "c": "Fais aujourd'hui un petit geste de respect, comme remercier quelqu'un par son prénom."
+    },
+    "it": {
+     "t": "Confucio e il buon carattere",
+     "g": "Scoprire come Confucio insegnava che studio, rispetto e gentilezza formano una brava persona.",
+     "p": [
+      "Confucio fu un maestro nell'antica Cina; i suoi detti sono raccolti nei Dialoghi.",
+      "Ren significa umanità: prendersi cura degli altri e trattarli bene.",
+      "Per lui il carattere si costruisce ogni giorno con studio, buone maniere e riflessione."
+     ],
+     "q": "Chi nella tua vita mostra un buon carattere, e cosa fa?",
+     "c": "Fai oggi un piccolo gesto di rispetto, come ringraziare qualcuno chiamandolo per nome."
+    },
+    "pt": {
+     "t": "Confúcio e o bom carácter",
+     "g": "Descobrir como Confúcio ensinou que o estudo, o respeito e a bondade formam uma boa pessoa.",
+     "p": [
+      "Confúcio foi mestre na China antiga; as suas máximas estão reunidas nos Analectos.",
+      "Ren significa humanidade: preocupar-se com os outros e tratá-los bem.",
+      "Para ele, o carácter constrói-se todos os dias com estudo, boas maneiras e reflexão."
+     ],
+     "q": "Quem na tua vida mostra bom carácter e o que faz?",
+     "c": "Faz hoje um pequeno gesto de respeito, como agradecer a alguém pelo nome."
+    },
+    "pt_BR": {
+     "t": "Confúcio e o bom caráter",
+     "g": "Descobrir como Confúcio ensinou que estudo, respeito e bondade formam uma boa pessoa.",
+     "p": [
+      "Confúcio foi mestre na China antiga; suas frases estão reunidas nos Analectos.",
+      "Ren significa humanidade: se importar com os outros e tratá-los bem.",
+      "Para ele, o caráter se constrói todo dia com estudo, boas maneiras e reflexão."
+     ],
+     "q": "Quem na sua vida mostra bom caráter e o que essa pessoa faz?",
+     "c": "Faça hoje um pequeno gesto de respeito, como agradecer alguém pelo nome."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Golden Rule across cultures",
+     "g": "See how treat others as you wish to be treated appears in many traditions.",
+     "p": [
+      "Confucius said: do not do to others what you would not want for yourself.",
+      "Similar ideas appear in ancient Greek, Indian, Persian and many other writings.",
+      "Its strength is simple empathy: imagine yourself in the other person's place."
+     ],
+     "q": "Can you think of a case where the Golden Rule is hard to apply?",
+     "c": "Before one reply today, pause and ask how you would feel receiving it."
+    },
+    "de": {
+     "t": "Die Goldene Regel in vielen Kulturen",
+     "g": "Sieh, wie Behandle andere, wie du behandelt werden willst in vielen Traditionen vorkommt.",
+     "p": [
+      "Konfuzius sagte: Was du nicht willst, das man dir tut, das füg auch keinem anderen zu.",
+      "Ähnliche Gedanken finden sich in griechischen, indischen, persischen und vielen anderen Texten.",
+      "Ihre Stärke ist einfache Empathie: sich an die Stelle des anderen versetzen."
+     ],
+     "q": "Fällt dir ein Fall ein, in dem die Goldene Regel schwer anzuwenden ist?",
+     "c": "Halte heute vor einer Antwort kurz inne und frag dich, wie sie bei dir ankäme."
+    },
+    "es": {
+     "t": "La regla de oro en muchas culturas",
+     "g": "Descubre cómo trata a los demás como quieres que te traten aparece en muchas tradiciones.",
+     "p": [
+      "Confucio dijo: no hagas a otros lo que no quieras para ti.",
+      "Ideas parecidas aparecen en textos griegos, indios, persas y de muchos otros pueblos.",
+      "Su fuerza es la empatía sencilla: ponerse en el lugar del otro."
+     ],
+     "q": "¿Se te ocurre un caso en que la regla de oro sea difícil de aplicar?",
+     "c": "Antes de responder a alguien hoy, para y piensa cómo te sentirías al recibirlo."
+    },
+    "fr": {
+     "t": "La règle d'or à travers les cultures",
+     "g": "Voir comment traiter les autres comme on voudrait être traité existe dans bien des traditions.",
+     "p": [
+      "Confucius disait : ne fais pas aux autres ce que tu ne voudrais pas pour toi.",
+      "Des idées proches figurent dans des textes grecs, indiens, persans et bien d'autres.",
+      "Sa force est une empathie simple : se mettre à la place de l'autre."
+     ],
+     "q": "Vois-tu un cas où la règle d'or est difficile à appliquer ?",
+     "c": "Avant une réponse aujourd'hui, demande-toi comment tu la recevrais."
+    },
+    "it": {
+     "t": "La regola d'oro nelle culture",
+     "g": "Vedere come tratta gli altri come vorresti essere trattato compaia in molte tradizioni.",
+     "p": [
+      "Confucio disse: non fare agli altri ciò che non vorresti per te.",
+      "Idee simili si trovano in testi greci, indiani, persiani e di molti altri popoli.",
+      "La sua forza è un'empatia semplice: mettersi nei panni dell'altro."
+     ],
+     "q": "Ti viene in mente un caso in cui la regola d'oro è difficile da applicare?",
+     "c": "Prima di una risposta oggi, fermati e chiediti come ti sentiresti a riceverla."
+    },
+    "pt": {
+     "t": "A regra de ouro em várias culturas",
+     "g": "Ver como trata os outros como gostarias de ser tratado surge em muitas tradições.",
+     "p": [
+      "Confúcio disse: não faças aos outros o que não queres para ti.",
+      "Ideias semelhantes aparecem em textos gregos, indianos, persas e de muitos outros povos.",
+      "A sua força é a empatia simples: pôr-se no lugar do outro."
+     ],
+     "q": "Consegues pensar num caso em que a regra de ouro é difícil de aplicar?",
+     "c": "Antes de uma resposta hoje, para e pensa como te sentirias ao recebê-la."
+    },
+    "pt_BR": {
+     "t": "A regra de ouro em várias culturas",
+     "g": "Ver como trate os outros como gostaria de ser tratado aparece em muitas tradições.",
+     "p": [
+      "Confúcio disse: não faça aos outros o que não quer para você.",
+      "Ideias parecidas aparecem em textos gregos, indianos, persas e de muitos outros povos.",
+      "Sua força é a empatia simples: se colocar no lugar do outro."
+     ],
+     "q": "Você consegue pensar em um caso em que a regra de ouro é difícil de aplicar?",
+     "c": "Antes de responder alguém hoje, pare e pense como você se sentiria ao receber isso."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laozi and the Dao",
+     "g": "Explore the Daodejing's idea of living in harmony with the natural way of things.",
+     "p": [
+      "Laozi is the traditional author of the Daodejing, a short classic from ancient China.",
+      "The Dao, or Way, is the natural flow of things that words can never fully capture.",
+      "Water is a favourite image: soft and yielding, yet it shapes even stone."
+     ],
+     "q": "When do you feel most in tune with the natural rhythm of your day?",
+     "c": "Spend five minutes watching something natural, like clouds or water, without a goal."
+    },
+    "de": {
+     "t": "Laozi und das Dao",
+     "g": "Entdecke die Idee des Daodejing, im Einklang mit dem natürlichen Lauf der Dinge zu leben.",
+     "p": [
+      "Laozi gilt als Verfasser des Daodejing, eines kurzen Klassikers aus dem alten China.",
+      "Das Dao, der Weg, ist der natürliche Fluss der Dinge, den Worte nie ganz fassen.",
+      "Ein Lieblingsbild ist Wasser: weich und nachgiebig, und doch formt es sogar Stein."
+     ],
+     "q": "Wann fühlst du dich im Einklang mit dem natürlichen Rhythmus deines Tages?",
+     "c": "Beobachte fünf Minuten lang etwas Natürliches, etwa Wolken oder Wasser, ohne Ziel."
+    },
+    "es": {
+     "t": "Laozi y el Dao",
+     "g": "Explora la idea del Daodejing de vivir en armonía con el curso natural de las cosas.",
+     "p": [
+      "Laozi es el autor tradicional del Daodejing, un breve clásico de la antigua China.",
+      "El Dao, o Camino, es el fluir natural de las cosas que las palabras nunca captan del todo.",
+      "Una imagen favorita es el agua: suave y flexible, pero capaz de moldear la piedra."
+     ],
+     "q": "¿Cuándo te sientes más en sintonía con el ritmo natural de tu día?",
+     "c": "Pasa cinco minutos mirando algo natural, como nubes o agua, sin ningún objetivo."
+    },
+    "fr": {
+     "t": "Laozi et le Dao",
+     "g": "Explorer l'idée du Daodejing : vivre en harmonie avec le cours naturel des choses.",
+     "p": [
+      "Laozi est l'auteur traditionnel du Daodejing, court classique de la Chine ancienne.",
+      "Le Dao, la Voie, est le flux naturel des choses que les mots ne saisissent jamais tout à fait.",
+      "L'eau est une image favorite : douce et souple, elle façonne pourtant la pierre."
+     ],
+     "q": "Quand te sens-tu le plus en accord avec le rythme naturel de ta journée ?",
+     "c": "Passe cinq minutes à observer quelque chose de naturel, nuages ou eau, sans but."
+    },
+    "it": {
+     "t": "Laozi e il Dao",
+     "g": "Esplorare l'idea del Daodejing di vivere in armonia con il corso naturale delle cose.",
+     "p": [
+      "Laozi è l'autore tradizionale del Daodejing, breve classico dell'antica Cina.",
+      "Il Dao, la Via, è il fluire naturale delle cose che le parole non colgono mai del tutto.",
+      "Un'immagine amata è l'acqua: morbida e cedevole, eppure modella perfino la pietra."
+     ],
+     "q": "Quando ti senti più in sintonia con il ritmo naturale della tua giornata?",
+     "c": "Passa cinque minuti a osservare qualcosa di naturale, nuvole o acqua, senza scopo."
+    },
+    "pt": {
+     "t": "Laozi e o Dao",
+     "g": "Explorar a ideia do Daodejing de viver em harmonia com o curso natural das coisas.",
+     "p": [
+      "Laozi é o autor tradicional do Daodejing, um breve clássico da China antiga.",
+      "O Dao, ou Caminho, é o fluir natural das coisas que as palavras nunca captam por inteiro.",
+      "Uma imagem preferida é a água: suave e flexível, mas capaz de moldar a pedra."
+     ],
+     "q": "Quando te sentes mais em sintonia com o ritmo natural do teu dia?",
+     "c": "Passa cinco minutos a observar algo natural, como nuvens ou água, sem objetivo."
+    },
+    "pt_BR": {
+     "t": "Laozi e o Dao",
+     "g": "Explorar a ideia do Daodejing de viver em harmonia com o curso natural das coisas.",
+     "p": [
+      "Laozi é o autor tradicional do Daodejing, um breve clássico da China antiga.",
+      "O Dao, ou Caminho, é o fluir natural das coisas que as palavras nunca captam por completo.",
+      "Uma imagem favorita é a água: suave e flexível, mas capaz de moldar a pedra."
+     ],
+     "q": "Quando você se sente mais em sintonia com o ritmo natural do seu dia?",
+     "c": "Passe cinco minutos observando algo natural, como nuvens ou água, sem objetivo."
+    }
+   }
+  }
+ ]
+}

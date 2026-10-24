@@ -1,0 +1,835 @@
+{
+ "topic": "wine_culture",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Other wine faults",
+     "g": "Learn the signs of oxidation and heat damage in a bottle that was not stored well.",
+     "p": [
+      "Oxidised wine has met too much air: whites turn deep gold or brown and smell of bruised apple.",
+      "Heat-damaged wine tastes flat and stewed, like cooked jam, and the cork may be pushed up or leaking.",
+      "Good storage from day 37, cool, dark and steady, is the best way to avoid both faults."
+     ],
+     "q": "Have you ever noticed how a cut apple turns brown, and do you know why it happens?",
+     "c": "Leave a slice of apple in the air for an hour and compare its smell and colour with a fresh slice."
+    },
+    "de": {
+     "t": "Weitere Weinfehler",
+     "g": "Lerne die Anzeichen von Oxidation und Hitzeschäden bei schlecht gelagerten Flaschen.",
+     "p": [
+      "Oxidierter Wein hatte zu viel Luft: Weiße werden tiefgold bis braun und riechen nach angestoßenem Apfel.",
+      "Hitzegeschädigter Wein schmeckt flach und gekocht wie Marmelade, und der Korken kann hochgedrückt sein.",
+      "Gute Lagerung wie an Tag 37, kühl, dunkel und gleichmäßig, beugt beiden Fehlern am besten vor."
+     ],
+     "q": "Hast du bemerkt, wie ein angeschnittener Apfel braun wird, und weißt du, warum?",
+     "c": "Lass eine Apfelscheibe eine Stunde an der Luft liegen und vergleiche Duft und Farbe mit einer frischen."
+    },
+    "es": {
+     "t": "Otros defectos del vino",
+     "g": "Aprende las señales de oxidación y daño por calor en una botella mal conservada.",
+     "p": [
+      "El vino oxidado ha tenido demasiado aire: los blancos se vuelven dorado oscuro o marrón y huelen a manzana pasada.",
+      "El vino dañado por calor sabe plano y cocido, como mermelada, y el corcho puede salirse o gotear.",
+      "Guardar bien, como vimos el día 37, en lugar fresco, oscuro y estable, evita ambos defectos."
+     ],
+     "q": "¿Te has fijado en cómo se oscurece una manzana cortada, y sabes por qué ocurre?",
+     "c": "Deja una rodaja de manzana al aire una hora y compara su olor y color con una rodaja recién cortada."
+    },
+    "fr": {
+     "t": "Autres défauts du vin",
+     "g": "Apprends les signes d'oxydation et de dommages dus à la chaleur dans une bouteille mal conservée.",
+     "p": [
+      "Un vin oxydé a pris trop d'air : les blancs deviennent or foncé ou bruns et sentent la pomme blette.",
+      "Un vin abîmé par la chaleur paraît plat et cuit, comme de la confiture, et le bouchon peut remonter ou fuir.",
+      "Bien conserver, comme au jour 37, au frais, à l'obscurité et sans écarts, évite ces deux défauts."
+     ],
+     "q": "As-tu déjà remarqué qu'une pomme coupée brunit, et sais-tu pourquoi ?",
+     "c": "Laisse une tranche de pomme à l'air une heure et compare son odeur et sa couleur à une tranche fraîche."
+    },
+    "it": {
+     "t": "Altri difetti del vino",
+     "g": "Impara i segnali di ossidazione e di danni da calore in una bottiglia conservata male.",
+     "p": [
+      "Il vino ossidato ha preso troppa aria: i bianchi diventano oro scuro o marroni e sanno di mela ammaccata.",
+      "Il vino rovinato dal calore sa di piatto e di cotto, come confettura, e il tappo può sollevarsi o perdere.",
+      "Conservare bene, come al giorno 37, al fresco, al buio e senza sbalzi, evita entrambi i difetti."
+     ],
+     "q": "Hai notato come una mela tagliata diventa scura, e sai perché succede?",
+     "c": "Lascia una fetta di mela all'aria per un'ora e confronta profumo e colore con una fetta appena tagliata."
+    },
+    "pt": {
+     "t": "Outros defeitos do vinho",
+     "g": "Aprende os sinais de oxidação e de danos pelo calor numa garrafa mal guardada.",
+     "p": [
+      "O vinho oxidado apanhou ar a mais: os brancos ficam dourado-escuros ou castanhos e cheiram a maçã pisada.",
+      "O vinho estragado pelo calor sabe a chato e cozido, como compota, e a rolha pode subir ou verter.",
+      "Guardar bem, como no dia 37, em sítio fresco, escuro e estável, evita os dois defeitos."
+     ],
+     "q": "Já reparaste como uma maçã cortada fica escura, e sabes porque acontece?",
+     "c": "Deixa uma fatia de maçã ao ar durante uma hora e compara o cheiro e a cor com uma fatia acabada de cortar."
+    },
+    "pt_BR": {
+     "t": "Outros defeitos do vinho",
+     "g": "Aprenda os sinais de oxidação e de danos pelo calor em uma garrafa mal guardada.",
+     "p": [
+      "O vinho oxidado pegou ar demais: os brancos ficam dourado-escuros ou marrons e cheiram a maçã passada.",
+      "O vinho estragado pelo calor fica sem graça e com gosto de cozido, como geleia, e a rolha pode subir ou vazar.",
+      "Guardar bem, como no dia 37, em lugar fresco, escuro e estável, evita os dois defeitos."
+     ],
+     "q": "Você já reparou como uma maçã cortada escurece, e sabe por que isso acontece?",
+     "c": "Deixe uma fatia de maçã no ar por uma hora e compare cheiro e cor com uma fatia recém-cortada."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The aroma wheel",
+     "g": "Discover the aroma wheel, a visual tool that helps you find words for what you smell.",
+     "p": [
+      "The aroma wheel was developed by Ann C. Noble at the University of California, Davis, in the 1980s.",
+      "It starts with broad groups in the centre, like fruity or spicy, and gets more specific towards the edge.",
+      "If you smell something fruity, move outward to citrus or berry, then to lemon or raspberry."
+     ],
+     "q": "Do you find it easy or hard to put a smell into words?",
+     "c": "Find an image of a wine aroma wheel and pick three aromas from the outer ring you already know well."
+    },
+    "de": {
+     "t": "Das Aromarad",
+     "g": "Entdecke das Aromarad, ein Bildwerkzeug, das dir hilft, Wörter für Gerüche zu finden.",
+     "p": [
+      "Das Aromarad entwickelte Ann C. Noble in den 1980er-Jahren an der University of California, Davis.",
+      "Es beginnt in der Mitte mit groben Gruppen wie fruchtig oder würzig und wird nach außen immer genauer.",
+      "Riechst du etwas Fruchtiges, gehst du nach außen zu Zitrus oder Beeren, dann zu Zitrone oder Himbeere."
+     ],
+     "q": "Fällt es dir leicht oder schwer, einen Geruch in Worte zu fassen?",
+     "c": "Such ein Bild eines Weinaromarads und wähle drei Aromen aus dem äußeren Ring, die du gut kennst."
+    },
+    "es": {
+     "t": "La rueda de aromas",
+     "g": "Descubre la rueda de aromas, una herramienta visual que te ayuda a poner palabras a lo que hueles.",
+     "p": [
+      "La rueda de aromas la creó Ann C. Noble en la Universidad de California en Davis, en los años ochenta.",
+      "Empieza con grupos amplios en el centro, como frutal o especiado, y se vuelve más concreta hacia el borde.",
+      "Si hueles algo frutal, avanza hacia cítricos o frutos rojos y luego a limón o frambuesa."
+     ],
+     "q": "¿Te resulta fácil o difícil describir un olor con palabras?",
+     "c": "Busca una imagen de la rueda de aromas del vino y elige tres aromas del anillo exterior que ya conozcas bien."
+    },
+    "fr": {
+     "t": "La roue des arômes",
+     "g": "Découvre la roue des arômes, un outil visuel qui t'aide à mettre des mots sur ce que tu sens.",
+     "p": [
+      "La roue des arômes a été créée par Ann C. Noble à l'Université de Californie à Davis, dans les années 1980.",
+      "Elle part de grandes familles au centre, comme fruité ou épicé, et devient plus précise vers le bord.",
+      "Si tu sens du fruité, va vers agrumes ou fruits rouges, puis vers citron ou framboise."
+     ],
+     "q": "Trouves-tu facile ou difficile de mettre une odeur en mots ?",
+     "c": "Cherche une image de roue des arômes du vin et choisis trois arômes du cercle extérieur que tu connais bien."
+    },
+    "it": {
+     "t": "La ruota degli aromi",
+     "g": "Scopri la ruota degli aromi, uno strumento visivo che ti aiuta a trovare le parole per ciò che senti.",
+     "p": [
+      "La ruota degli aromi fu ideata da Ann C. Noble all'Università della California a Davis, negli anni Ottanta.",
+      "Parte da grandi gruppi al centro, come fruttato o speziato, e diventa più precisa verso il bordo.",
+      "Se senti qualcosa di fruttato, vai verso agrumi o frutti rossi, poi verso limone o lampone."
+     ],
+     "q": "Ti viene facile o difficile descrivere un odore a parole?",
+     "c": "Cerca un'immagine della ruota degli aromi del vino e scegli tre profumi del cerchio esterno che conosci bene."
+    },
+    "pt": {
+     "t": "A roda dos aromas",
+     "g": "Descobre a roda dos aromas, uma ferramenta visual que te ajuda a pôr em palavras o que cheiras.",
+     "p": [
+      "A roda dos aromas foi criada por Ann C. Noble na Universidade da Califórnia em Davis, nos anos 80.",
+      "Começa com grupos amplos no centro, como frutado ou especiado, e fica mais precisa em direção à borda.",
+      "Se cheiras algo frutado, avança para citrinos ou frutos vermelhos e depois para limão ou framboesa."
+     ],
+     "q": "Achas fácil ou difícil descrever um cheiro com palavras?",
+     "c": "Procura uma imagem da roda dos aromas do vinho e escolhe três aromas do anel exterior que já conheces bem."
+    },
+    "pt_BR": {
+     "t": "A roda de aromas",
+     "g": "Descubra a roda de aromas, uma ferramenta visual que ajuda a colocar em palavras o que você sente.",
+     "p": [
+      "A roda de aromas foi criada por Ann C. Noble na Universidade da Califórnia em Davis, nos anos 1980.",
+      "Ela começa com grupos amplos no centro, como frutado ou especiado, e fica mais precisa em direção à borda.",
+      "Se sentir algo frutado, avance para cítricos ou frutas vermelhas e depois para limão ou framboesa."
+     ],
+     "q": "Você acha fácil ou difícil descrever um cheiro com palavras?",
+     "c": "Procure uma imagem da roda de aromas do vinho e escolha três aromas do anel externo que você já conhece."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Training your nose at home",
+     "g": "Practise recognising aromas with spices, fruits, herbs and flowers from your kitchen, no wine needed.",
+     "p": [
+      "Smell memory grows with practice: the more often you name a smell, the faster you recognise it.",
+      "Put small amounts of items like cinnamon, coffee, lemon peel and mint in cups and smell them one by one.",
+      "Try it blindfolded or with a friend choosing the cups, and say the first word that comes to mind."
+     ],
+     "q": "Which smell in your home do you think you would recognise instantly with your eyes closed?",
+     "c": "Set up five cups with kitchen aromas, close your eyes and see how many you can name correctly."
+    },
+    "de": {
+     "t": "Die Nase zu Hause trainieren",
+     "g": "Übe das Erkennen von Aromen mit Gewürzen, Früchten, Kräutern und Blüten aus der Küche, ganz ohne Wein.",
+     "p": [
+      "Das Geruchsgedächtnis wächst mit Übung: Je öfter du einen Duft benennst, desto schneller erkennst du ihn.",
+      "Gib kleine Mengen Zimt, Kaffee, Zitronenschale und Minze in Becher und riech nacheinander daran.",
+      "Probiere es mit verbundenen Augen oder lass eine Freundin die Becher wählen und sag das erste Wort, das dir einfällt."
+     ],
+     "q": "Welchen Duft in deiner Wohnung würdest du mit geschlossenen Augen sofort erkennen?",
+     "c": "Stell fünf Becher mit Küchenaromen auf, schließ die Augen und zähle, wie viele du richtig benennst."
+    },
+    "es": {
+     "t": "Entrenar la nariz en casa",
+     "g": "Practica reconocer aromas con especias, frutas, hierbas y flores de tu cocina, sin necesidad de vino.",
+     "p": [
+      "La memoria olfativa crece con la práctica: cuanto más nombras un olor, antes lo reconoces.",
+      "Pon un poco de canela, café, piel de limón y menta en vasitos y huélelos uno a uno.",
+      "Hazlo con los ojos vendados o con un amigo que elija los vasos, y di la primera palabra que te venga."
+     ],
+     "q": "¿Qué olor de tu casa crees que reconocerías al instante con los ojos cerrados?",
+     "c": "Prepara cinco vasitos con aromas de cocina, cierra los ojos y mira cuántos aciertas."
+    },
+    "fr": {
+     "t": "Entraîner son nez à la maison",
+     "g": "Entraîne-toi à reconnaître les arômes avec des épices, fruits, herbes et fleurs de ta cuisine, sans vin.",
+     "p": [
+      "La mémoire olfactive se développe avec la pratique : plus tu nommes une odeur, plus vite tu la reconnais.",
+      "Mets un peu de cannelle, de café, de zeste de citron et de menthe dans des tasses et sens-les une à une.",
+      "Essaie les yeux bandés ou avec un ami qui choisit les tasses, et dis le premier mot qui te vient."
+     ],
+     "q": "Quelle odeur de chez toi reconnaîtrais-tu aussitôt les yeux fermés ?",
+     "c": "Prépare cinq tasses d'arômes de cuisine, ferme les yeux et compte combien tu en reconnais."
+    },
+    "it": {
+     "t": "Allenare il naso a casa",
+     "g": "Esercitati a riconoscere i profumi con spezie, frutta, erbe e fiori della tua cucina, senza bisogno di vino.",
+     "p": [
+      "La memoria olfattiva cresce con la pratica: più spesso dai un nome a un odore, più in fretta lo riconosci.",
+      "Metti un po' di cannella, caffè, scorza di limone e menta in tazzine e annusale una alla volta.",
+      "Prova bendato o con un amico che sceglie le tazzine, e di' la prima parola che ti viene in mente."
+     ],
+     "q": "Quale odore di casa tua pensi di riconoscere subito a occhi chiusi?",
+     "c": "Prepara cinque tazzine con profumi di cucina, chiudi gli occhi e conta quanti ne indovini."
+    },
+    "pt": {
+     "t": "Treinar o nariz em casa",
+     "g": "Pratica reconhecer aromas com especiarias, frutas, ervas e flores da tua cozinha, sem precisar de vinho.",
+     "p": [
+      "A memória olfativa cresce com a prática: quanto mais vezes nomeias um cheiro, mais depressa o reconheces.",
+      "Põe um pouco de canela, café, casca de limão e hortelã em copinhos e cheira-os um a um.",
+      "Experimenta de olhos vendados ou com um amigo a escolher os copos, e diz a primeira palavra que te ocorrer."
+     ],
+     "q": "Que cheiro da tua casa achas que reconhecerias logo de olhos fechados?",
+     "c": "Prepara cinco copinhos com aromas de cozinha, fecha os olhos e vê quantos acertas."
+    },
+    "pt_BR": {
+     "t": "Treinando o nariz em casa",
+     "g": "Pratique reconhecer aromas com especiarias, frutas, ervas e flores da sua cozinha, sem precisar de vinho.",
+     "p": [
+      "A memória olfativa cresce com a prática: quanto mais você nomeia um cheiro, mais rápido o reconhece.",
+      "Coloque um pouco de canela, café, casca de limão e hortelã em copinhos e cheire um por um.",
+      "Tente de olhos vendados ou com um amigo escolhendo os copos, e diga a primeira palavra que vier."
+     ],
+     "q": "Que cheiro da sua casa você acha que reconheceria na hora de olhos fechados?",
+     "c": "Monte cinco copinhos com aromas da cozinha, feche os olhos e veja quantos você acerta."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wine vocabulary basics",
+     "g": "Decode common wine words like dry, crisp, oaky and jammy.",
+     "p": [
+      "Dry means not sweet, with little or no sugar left; crisp means fresh, with lively acidity.",
+      "Oaky describes vanilla, toast or spice from barrels; jammy means very ripe, cooked-fruit flavours.",
+      "Other handy words: fruity, earthy, smooth for soft tannins, and full-bodied for a heavier feel."
+     ],
+     "q": "Which of these words could you use to describe your favourite food or drink?",
+     "c": "Describe your breakfast today using at least three wine words, like crisp, smooth or fruity."
+    },
+    "de": {
+     "t": "Grundwortschatz Wein",
+     "g": "Entschlüssle häufige Weinwörter wie trocken, frisch, holzbetont und marmeladig.",
+     "p": [
+      "Trocken heißt nicht süß, mit wenig oder keinem Restzucker; frisch heißt knackig, mit lebendiger Säure.",
+      "Holzbetont meint Vanille, Toast oder Würze aus dem Fass; marmeladig steht für sehr reife, gekochte Frucht.",
+      "Weitere nützliche Wörter: fruchtig, erdig, samtig für weiches Tannin und vollmundig für mehr Gewicht."
+     ],
+     "q": "Mit welchen dieser Wörter könntest du dein Lieblingsessen oder -getränk beschreiben?",
+     "c": "Beschreibe heute dein Frühstück mit mindestens drei Weinwörtern, etwa frisch, samtig oder fruchtig."
+    },
+    "es": {
+     "t": "Vocabulario básico del vino",
+     "g": "Descifra palabras comunes del vino como seco, fresco, con roble y amermelado.",
+     "p": [
+      "Seco significa no dulce, con poco o ningún azúcar; fresco significa vivo, con acidez marcada.",
+      "Con roble describe vainilla, tostado o especias de la barrica; amermelado indica fruta muy madura y cocida.",
+      "Otras palabras útiles: afrutado, terroso, sedoso para taninos suaves y con cuerpo para una sensación más pesada."
+     ],
+     "q": "¿Con cuáles de estas palabras describirías tu comida o bebida favorita?",
+     "c": "Describe hoy tu desayuno con al menos tres palabras del vino, como fresco, sedoso o afrutado."
+    },
+    "fr": {
+     "t": "Vocabulaire de base du vin",
+     "g": "Décode des mots courants du vin comme sec, vif, boisé et confituré.",
+     "p": [
+      "Sec signifie non sucré, avec peu ou pas de sucre ; vif signifie frais, avec une acidité marquée.",
+      "Boisé évoque vanille, pain grillé ou épices du fût ; confituré désigne des fruits très mûrs, cuits.",
+      "Autres mots utiles : fruité, terreux, soyeux pour des tanins souples et corsé pour une sensation plus lourde."
+     ],
+     "q": "Lesquels de ces mots pourrais-tu utiliser pour décrire ton plat ou ta boisson préférés ?",
+     "c": "Décris ton petit-déjeuner aujourd'hui avec au moins trois mots du vin, comme vif, soyeux ou fruité."
+    },
+    "it": {
+     "t": "Vocabolario base del vino",
+     "g": "Decifra parole comuni del vino come secco, fresco, boisé e marmellatoso.",
+     "p": [
+      "Secco significa non dolce, con poco o niente zucchero; fresco significa vivace, con acidità marcata.",
+      "Boisé indica vaniglia, tostatura o spezie della botte; marmellatoso indica frutta molto matura e cotta.",
+      "Altre parole utili: fruttato, terroso, vellutato per tannini morbidi e corposo per una sensazione più piena."
+     ],
+     "q": "Con quali di queste parole descriveresti il tuo cibo o la tua bevanda preferita?",
+     "c": "Descrivi oggi la tua colazione con almeno tre parole del vino, come fresco, vellutato o fruttato."
+    },
+    "pt": {
+     "t": "Vocabulário básico do vinho",
+     "g": "Descodifica palavras comuns do vinho como seco, fresco, amadeirado e compotado.",
+     "p": [
+      "Seco significa não doce, com pouco ou nenhum açúcar; fresco significa vivo, com acidez marcada.",
+      "Amadeirado descreve baunilha, tosta ou especiarias da barrica; compotado indica fruta muito madura e cozida.",
+      "Outras palavras úteis: frutado, terroso, sedoso para taninos macios e encorpado para uma sensação mais pesada."
+     ],
+     "q": "Com quais destas palavras descreverias a tua comida ou bebida preferida?",
+     "c": "Descreve hoje o teu pequeno-almoço com pelo menos três palavras do vinho, como fresco, sedoso ou frutado."
+    },
+    "pt_BR": {
+     "t": "Vocabulário básico do vinho",
+     "g": "Decifre palavras comuns do vinho como seco, fresco, amadeirado e geleia.",
+     "p": [
+      "Seco significa não doce, com pouco ou nenhum açúcar; fresco significa vivo, com acidez marcada.",
+      "Amadeirado descreve baunilha, tostado ou especiarias da barrica; geleia indica fruta muito madura e cozida.",
+      "Outras palavras úteis: frutado, terroso, sedoso para taninos macios e encorpado para uma sensação mais pesada."
+     ],
+     "q": "Com quais dessas palavras você descreveria sua comida ou bebida favorita?",
+     "c": "Descreva hoje seu café da manhã com pelo menos três palavras do vinho, como fresco, sedoso ou frutado."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wine myths busted",
+     "g": "Find out why legs, colour and price do not tell you a wine's quality.",
+     "p": [
+      "Legs or tears, the drops running down the glass, show alcohol and sugar levels, not quality.",
+      "A darker colour reflects grape and style, not a better wine; many great wines are pale.",
+      "An expensive or famous label does not guarantee you will enjoy it; your own taste matters most."
+     ],
+     "q": "Which wine myth had you heard before, and where did you hear it?",
+     "c": "Swirl a glass of water and a glass of syrupy juice and compare how the drops run down the sides."
+    },
+    "de": {
+     "t": "Weinmythen entzaubert",
+     "g": "Finde heraus, warum Kirchenfenster, Farbe und Preis nichts über die Qualität eines Weins sagen.",
+     "p": [
+      "Kirchenfenster oder Tränen, die Tropfen am Glas, zeigen Alkohol und Zucker, nicht Qualität.",
+      "Eine dunklere Farbe spiegelt Sorte und Stil, nicht einen besseren Wein; viele große Weine sind hell.",
+      "Ein teures oder berühmtes Etikett garantiert nicht, dass er dir schmeckt; dein Geschmack zählt am meisten."
+     ],
+     "q": "Welchen Weinmythos kanntest du schon, und wo hast du ihn gehört?",
+     "c": "Schwenke ein Glas Wasser und ein Glas dickflüssigen Saft und vergleiche, wie die Tropfen herunterlaufen."
+    },
+    "es": {
+     "t": "Mitos del vino desmontados",
+     "g": "Descubre por qué las lágrimas, el color y el precio no indican la calidad de un vino.",
+     "p": [
+      "Las lágrimas o piernas, las gotas que caen por la copa, muestran alcohol y azúcar, no calidad.",
+      "Un color más oscuro refleja la uva y el estilo, no un vino mejor; muchos grandes vinos son pálidos.",
+      "Una etiqueta cara o famosa no garantiza que te guste; tu propio gusto es lo que más importa."
+     ],
+     "q": "¿Qué mito del vino habías oído antes, y dónde lo escuchaste?",
+     "c": "Gira un vaso de agua y otro de zumo espeso y compara cómo caen las gotas por las paredes."
+    },
+    "fr": {
+     "t": "Mythes du vin démontés",
+     "g": "Découvre pourquoi les larmes, la couleur et le prix ne disent rien de la qualité d'un vin.",
+     "p": [
+      "Les larmes ou jambes, ces gouttes qui coulent sur le verre, reflètent l'alcool et le sucre, pas la qualité.",
+      "Une couleur plus foncée reflète le cépage et le style, pas un meilleur vin ; beaucoup de grands vins sont pâles.",
+      "Une étiquette chère ou célèbre ne garantit pas que tu l'aimeras ; ton propre goût compte le plus."
+     ],
+     "q": "Quel mythe du vin connaissais-tu déjà, et où l'avais-tu entendu ?",
+     "c": "Fais tourner un verre d'eau et un verre de jus épais, et compare comment les gouttes coulent sur les parois."
+    },
+    "it": {
+     "t": "Miti del vino sfatati",
+     "g": "Scopri perché archetti, colore e prezzo non dicono la qualità di un vino.",
+     "p": [
+      "Gli archetti o lacrime, le gocce che scendono sul calice, indicano alcol e zuccheri, non qualità.",
+      "Un colore più scuro riflette vitigno e stile, non un vino migliore; molti grandi vini sono chiari.",
+      "Un'etichetta costosa o famosa non garantisce che ti piacerà; conta soprattutto il tuo gusto."
+     ],
+     "q": "Quale mito del vino avevi già sentito, e dove?",
+     "c": "Rotea un bicchiere d'acqua e uno di succo denso e confronta come scendono le gocce sulle pareti."
+    },
+    "pt": {
+     "t": "Mitos do vinho desfeitos",
+     "g": "Descobre porque as lágrimas, a cor e o preço não indicam a qualidade de um vinho.",
+     "p": [
+      "As lágrimas ou pernas, as gotas que escorrem no copo, mostram álcool e açúcar, não qualidade.",
+      "Uma cor mais escura reflete a casta e o estilo, não um vinho melhor; muitos grandes vinhos são claros.",
+      "Um rótulo caro ou famoso não garante que vás gostar; o teu próprio gosto é o que mais conta."
+     ],
+     "q": "Que mito do vinho já tinhas ouvido, e onde?",
+     "c": "Roda um copo de água e outro de sumo espesso e compara como as gotas escorrem pelas paredes."
+    },
+    "pt_BR": {
+     "t": "Mitos do vinho desfeitos",
+     "g": "Descubra por que as lágrimas, a cor e o preço não indicam a qualidade de um vinho.",
+     "p": [
+      "As lágrimas ou pernas, as gotas que escorrem na taça, mostram álcool e açúcar, não qualidade.",
+      "Uma cor mais escura reflete a uva e o estilo, não um vinho melhor; muitos grandes vinhos são claros.",
+      "Um rótulo caro ou famoso não garante que você vai gostar; seu próprio gosto é o que mais conta."
+     ],
+     "q": "Que mito do vinho você já tinha ouvido, e onde?",
+     "c": "Gire um copo de água e outro de suco grosso e compare como as gotas escorrem pelas paredes."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What vintage means",
+     "g": "Understand the vintage, the harvest year, and why weather makes each one different.",
+     "p": [
+      "The vintage on a label is the year the grapes were picked, not the year the wine was bottled.",
+      "Sun, rain, frost and heat during the growing season change ripeness, acidity and flavour.",
+      "In regions with variable weather, like Bordeaux or Burgundy, vintages can differ a lot."
+     ],
+     "q": "Do you remember a summer that was especially hot, rainy or perfect where you live?",
+     "c": "Find out what the weather was like in your area last summer and imagine how grapes would have ripened."
+    },
+    "de": {
+     "t": "Was Jahrgang bedeutet",
+     "g": "Verstehe den Jahrgang, das Lesejahr, und warum das Wetter jeden anders macht.",
+     "p": [
+      "Der Jahrgang auf dem Etikett ist das Jahr der Traubenlese, nicht das Jahr der Abfüllung.",
+      "Sonne, Regen, Frost und Hitze in der Vegetationszeit verändern Reife, Säure und Geschmack.",
+      "In Regionen mit wechselhaftem Wetter wie Bordeaux oder Burgund können sich Jahrgänge stark unterscheiden."
+     ],
+     "q": "Erinnerst du dich an einen Sommer, der bei dir besonders heiß, verregnet oder perfekt war?",
+     "c": "Finde heraus, wie das Wetter letzten Sommer bei dir war, und stell dir vor, wie die Trauben gereift wären."
+    },
+    "es": {
+     "t": "Qué significa la añada",
+     "g": "Entiende la añada, el año de la vendimia, y por qué el clima hace distinta cada una.",
+     "p": [
+      "La añada de la etiqueta es el año en que se vendimiaron las uvas, no el del embotellado.",
+      "El sol, la lluvia, las heladas y el calor durante el ciclo cambian la madurez, la acidez y el sabor.",
+      "En regiones de clima variable, como Burdeos o Borgoña, las añadas pueden ser muy diferentes."
+     ],
+     "q": "¿Recuerdas un verano especialmente caluroso, lluvioso o perfecto donde vives?",
+     "c": "Averigua cómo fue el tiempo en tu zona el verano pasado e imagina cómo habrían madurado las uvas."
+    },
+    "fr": {
+     "t": "Ce que signifie le millésime",
+     "g": "Comprends le millésime, l'année de la récolte, et pourquoi la météo rend chacun différent.",
+     "p": [
+      "Le millésime sur l'étiquette est l'année où le raisin a été cueilli, pas celle de la mise en bouteille.",
+      "Soleil, pluie, gel et chaleur pendant la saison changent la maturité, l'acidité et la saveur.",
+      "Dans les régions au climat variable, comme Bordeaux ou la Bourgogne, les millésimes peuvent beaucoup varier."
+     ],
+     "q": "Te souviens-tu d'un été particulièrement chaud, pluvieux ou parfait là où tu vis ?",
+     "c": "Renseigne-toi sur la météo de l'été dernier chez toi et imagine comment le raisin aurait mûri."
+    },
+    "it": {
+     "t": "Che cosa significa annata",
+     "g": "Capisci l'annata, l'anno della vendemmia, e perché il clima rende diversa ognuna.",
+     "p": [
+      "L'annata in etichetta è l'anno in cui l'uva è stata raccolta, non quello dell'imbottigliamento.",
+      "Sole, pioggia, gelate e caldo durante la stagione cambiano maturazione, acidità e sapore.",
+      "Nelle zone dal clima variabile, come Bordeaux o la Borgogna, le annate possono differire molto."
+     ],
+     "q": "Ricordi un'estate particolarmente calda, piovosa o perfetta dove vivi?",
+     "c": "Scopri com'è stato il tempo nella tua zona l'estate scorsa e immagina come sarebbe maturata l'uva."
+    },
+    "pt": {
+     "t": "O que significa colheita",
+     "g": "Percebe o ano de colheita e porque o tempo torna cada colheita diferente.",
+     "p": [
+      "O ano no rótulo é o ano em que as uvas foram vindimadas, não o do engarrafamento.",
+      "Sol, chuva, geada e calor durante o ciclo mudam a maturação, a acidez e o sabor.",
+      "Em regiões de clima variável, como Bordéus ou a Borgonha, as colheitas podem ser muito diferentes."
+     ],
+     "q": "Lembras-te de um verão especialmente quente, chuvoso ou perfeito onde vives?",
+     "c": "Descobre como esteve o tempo na tua zona no verão passado e imagina como as uvas teriam amadurecido."
+    },
+    "pt_BR": {
+     "t": "O que significa safra",
+     "g": "Entenda a safra, o ano da colheita, e por que o clima deixa cada uma diferente.",
+     "p": [
+      "A safra no rótulo é o ano em que as uvas foram colhidas, não o ano do engarrafamento.",
+      "Sol, chuva, geada e calor durante o ciclo mudam a maturação, a acidez e o sabor.",
+      "Em regiões de clima variável, como Bordeaux ou Borgonha, as safras podem ser bem diferentes."
+     ],
+     "q": "Você se lembra de um verão especialmente quente, chuvoso ou perfeito onde mora?",
+     "c": "Descubra como foi o tempo na sua região no último verão e imagine como as uvas teriam amadurecido."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Oak and ageing",
+     "g": "Learn how oak barrels add vanilla, spice and texture to wine.",
+     "p": [
+      "Oak barrels slowly let in tiny amounts of air, softening tannins and rounding out the wine.",
+      "New oak adds vanilla, toast, clove and coconut; older barrels add texture with less flavour.",
+      "French oak tends to give subtle spice, while American oak often gives sweeter vanilla and coconut."
+     ],
+     "q": "Do you enjoy vanilla, toasted or smoky flavours in food and desserts?",
+     "c": "Smell a vanilla pod or extract and a piece of toast today: two classic signs of oak ageing."
+    },
+    "de": {
+     "t": "Eiche und Reifung",
+     "g": "Erfahre, wie Eichenfässer dem Wein Vanille, Würze und Textur verleihen.",
+     "p": [
+      "Eichenfässer lassen langsam winzige Mengen Luft herein, die Tannin weicher und den Wein runder machen.",
+      "Neue Eiche bringt Vanille, Toast, Nelke und Kokos; ältere Fässer geben Textur mit weniger Aroma.",
+      "Französische Eiche gibt eher feine Würze, amerikanische Eiche oft süßere Vanille und Kokos."
+     ],
+     "q": "Magst du Vanille, geröstete oder rauchige Aromen in Speisen und Desserts?",
+     "c": "Riech heute an einer Vanilleschote oder Vanilleextrakt und einem Toast: zwei klassische Zeichen von Holzreife."
+    },
+    "es": {
+     "t": "Roble y crianza",
+     "g": "Aprende cómo las barricas de roble aportan vainilla, especias y textura al vino.",
+     "p": [
+      "Las barricas dejan pasar poco a poco pequeñas cantidades de aire, que suavizan el tanino y redondean el vino.",
+      "El roble nuevo aporta vainilla, tostado, clavo y coco; las barricas usadas dan textura con menos sabor.",
+      "El roble francés suele dar especias sutiles y el americano, vainilla y coco más dulces."
+     ],
+     "q": "¿Te gustan los sabores a vainilla, tostados o ahumados en comidas y postres?",
+     "c": "Huele hoy una vaina o extracto de vainilla y una tostada: dos señales clásicas de crianza en roble."
+    },
+    "fr": {
+     "t": "Le chêne et l'élevage",
+     "g": "Découvre comment les fûts de chêne apportent vanille, épices et texture au vin.",
+     "p": [
+      "Les fûts laissent entrer lentement de petites quantités d'air, qui assouplissent les tanins et arrondissent le vin.",
+      "Le chêne neuf apporte vanille, pain grillé, clou de girofle et coco ; les vieux fûts donnent de la texture.",
+      "Le chêne français donne des épices subtiles, le chêne américain une vanille et un coco plus sucrés."
+     ],
+     "q": "Aimes-tu les saveurs vanillées, grillées ou fumées dans les plats et desserts ?",
+     "c": "Sens aujourd'hui une gousse ou un extrait de vanille et du pain grillé : deux signes classiques de l'élevage en fût."
+    },
+    "it": {
+     "t": "Rovere e affinamento",
+     "g": "Scopri come le botti di rovere aggiungono vaniglia, spezie e consistenza al vino.",
+     "p": [
+      "Le botti lasciano entrare lentamente piccolissime quantità d'aria, che ammorbidiscono i tannini e arrotondano il vino.",
+      "Il rovere nuovo dà vaniglia, tostatura, chiodi di garofano e cocco; le botti usate danno struttura.",
+      "Il rovere francese dà spezie sottili, quello americano vaniglia e cocco più dolci."
+     ],
+     "q": "Ti piacciono i sapori di vaniglia, tostati o affumicati nei cibi e nei dolci?",
+     "c": "Annusa oggi un baccello o un estratto di vaniglia e una fetta di pane tostato: due segni classici del legno."
+    },
+    "pt": {
+     "t": "Carvalho e estágio",
+     "g": "Aprende como as barricas de carvalho dão baunilha, especiarias e textura ao vinho.",
+     "p": [
+      "As barricas deixam entrar devagar pequenas quantidades de ar, que suavizam os taninos e arredondam o vinho.",
+      "O carvalho novo traz baunilha, tosta, cravinho e coco; as barricas usadas dão textura com menos sabor.",
+      "O carvalho francês tende a dar especiarias subtis, e o americano, baunilha e coco mais doces."
+     ],
+     "q": "Gostas de sabores a baunilha, tostados ou fumados em pratos e sobremesas?",
+     "c": "Cheira hoje uma vagem ou extrato de baunilha e uma torrada: dois sinais clássicos do estágio em madeira."
+    },
+    "pt_BR": {
+     "t": "Carvalho e envelhecimento",
+     "g": "Aprenda como as barricas de carvalho dão baunilha, especiarias e textura ao vinho.",
+     "p": [
+      "As barricas deixam entrar devagar pequenas quantidades de ar, que suavizam os taninos e arredondam o vinho.",
+      "O carvalho novo traz baunilha, tostado, cravo e coco; barricas usadas dão textura com menos sabor.",
+      "O carvalho francês tende a dar especiarias sutis, e o americano, baunilha e coco mais doces."
+     ],
+     "q": "Você gosta de sabores de baunilha, tostados ou defumados em pratos e sobremesas?",
+     "c": "Cheire hoje uma fava ou essência de baunilha e uma torrada: dois sinais clássicos do envelhecimento em carvalho."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Which wines age well",
+     "g": "Understand why most wines are made to be enjoyed young and only a few improve for decades.",
+     "p": [
+      "Most wines are made to be enjoyed within a few years, while their fruit is fresh and lively.",
+      "Wines that age well need structure: high acidity, firm tannins or sweetness, plus concentrated fruit.",
+      "Classic examples include top Bordeaux, Barolo, vintage port and sweet Riesling."
+     ],
+     "q": "Do you prefer things fresh and new, or do you enjoy what develops slowly over time?",
+     "c": "Compare a fresh grape with a raisin today: the same fruit, transformed by time."
+    },
+    "de": {
+     "t": "Welche Weine gut reifen",
+     "g": "Verstehe, warum die meisten Weine jung getrunken werden sollen und nur wenige über Jahrzehnte besser werden.",
+     "p": [
+      "Die meisten Weine sind dafür gemacht, innerhalb weniger Jahre genossen zu werden, solange die Frucht frisch ist.",
+      "Lagerfähige Weine brauchen Struktur: hohe Säure, festes Tannin oder Süße, dazu konzentrierte Frucht.",
+      "Klassische Beispiele sind große Bordeaux, Barolo, Vintage Port und edelsüßer Riesling."
+     ],
+     "q": "Magst du lieber Frisches und Neues, oder schätzt du, was sich langsam entwickelt?",
+     "c": "Vergleiche heute eine frische Traube mit einer Rosine: dieselbe Frucht, verwandelt durch die Zeit."
+    },
+    "es": {
+     "t": "Qué vinos envejecen bien",
+     "g": "Entiende por qué la mayoría de los vinos se hacen para disfrutarse jóvenes y solo unos pocos mejoran durante décadas.",
+     "p": [
+      "La mayoría de los vinos están pensados para disfrutarse en pocos años, mientras su fruta está fresca.",
+      "Los vinos de guarda necesitan estructura: acidez alta, taninos firmes o dulzor, y fruta concentrada.",
+      "Ejemplos clásicos son los grandes Burdeos, el Barolo, el oporto vintage y el Riesling dulce."
+     ],
+     "q": "¿Prefieres lo fresco y nuevo, o disfrutas de lo que evoluciona despacio con el tiempo?",
+     "c": "Compara hoy una uva fresca con una pasa: la misma fruta, transformada por el tiempo."
+    },
+    "fr": {
+     "t": "Quels vins vieillissent bien",
+     "g": "Comprends pourquoi la plupart des vins se boivent jeunes et seuls quelques-uns s'améliorent pendant des décennies.",
+     "p": [
+      "La plupart des vins sont faits pour être appréciés en quelques années, tant que leur fruit est frais.",
+      "Les vins de garde ont besoin de structure : acidité élevée, tanins fermes ou sucre, et fruit concentré.",
+      "Exemples classiques : les grands bordeaux, le Barolo, le porto vintage et les rieslings liquoreux."
+     ],
+     "q": "Préfères-tu ce qui est frais et nouveau, ou ce qui évolue lentement avec le temps ?",
+     "c": "Compare aujourd'hui un raisin frais et un raisin sec : le même fruit, transformé par le temps."
+    },
+    "it": {
+     "t": "Quali vini invecchiano bene",
+     "g": "Capisci perché la maggior parte dei vini va goduta giovane e solo pochi migliorano per decenni.",
+     "p": [
+      "La maggior parte dei vini è fatta per essere goduta entro pochi anni, finché il frutto è fresco.",
+      "I vini da invecchiamento hanno bisogno di struttura: acidità alta, tannini decisi o dolcezza, e frutto concentrato.",
+      "Esempi classici sono i grandi Bordeaux, il Barolo, il porto vintage e il Riesling dolce."
+     ],
+     "q": "Preferisci le cose fresche e nuove, o ami ciò che si evolve lentamente nel tempo?",
+     "c": "Confronta oggi un acino fresco con un'uvetta: lo stesso frutto, trasformato dal tempo."
+    },
+    "pt": {
+     "t": "Que vinhos envelhecem bem",
+     "g": "Percebe porque a maioria dos vinhos é feita para ser apreciada jovem e só alguns melhoram durante décadas.",
+     "p": [
+      "A maioria dos vinhos é feita para ser apreciada em poucos anos, enquanto a fruta está fresca.",
+      "Os vinhos de guarda precisam de estrutura: acidez alta, taninos firmes ou doçura, e fruta concentrada.",
+      "Exemplos clássicos são os grandes Bordéus, o Barolo, o Porto Vintage e o Riesling doce."
+     ],
+     "q": "Preferes o que é fresco e novo, ou gostas do que evolui devagar com o tempo?",
+     "c": "Compara hoje uma uva fresca com uma passa: a mesma fruta, transformada pelo tempo."
+    },
+    "pt_BR": {
+     "t": "Quais vinhos envelhecem bem",
+     "g": "Entenda por que a maioria dos vinhos é feita para ser apreciada jovem e só alguns melhoram por décadas.",
+     "p": [
+      "A maioria dos vinhos é feita para ser apreciada em poucos anos, enquanto a fruta está fresca.",
+      "Os vinhos de guarda precisam de estrutura: acidez alta, taninos firmes ou doçura, e fruta concentrada.",
+      "Exemplos clássicos são os grandes Bordeaux, o Barolo, o Porto Vintage e o Riesling doce."
+     ],
+     "q": "Você prefere o que é fresco e novo, ou curte o que evolui devagar com o tempo?",
+     "c": "Compare hoje uma uva fresca com uma uva-passa: a mesma fruta, transformada pelo tempo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alcohol-free wines",
+     "g": "Explore dealcoholised wines and quality grape juices for anyone choosing not to drink.",
+     "p": [
+      "Dealcoholised wines are made as normal wine, then the alcohol is gently removed, often by vacuum distillation.",
+      "They keep many of the aromas, and you can taste them with the same five S's as any wine.",
+      "Quality grape juices, verjus spritzers and sparkling teas are also great choices at the table."
+     ],
+     "q": "Which alcohol-free drinks do you enjoy most at meals or celebrations?",
+     "c": "Taste an alcohol-free wine or a good grape juice today using the five S's and write a short note."
+    },
+    "de": {
+     "t": "Alkoholfreie Weine",
+     "g": "Entdecke entalkoholisierte Weine und hochwertige Traubensäfte für alle, die nicht trinken möchten.",
+     "p": [
+      "Entalkoholisierte Weine werden wie normaler Wein gemacht, dann wird der Alkohol schonend entzogen, oft per Vakuum.",
+      "Sie behalten viele Aromen, und du kannst sie mit denselben fünf S verkosten wie jeden Wein.",
+      "Hochwertige Traubensäfte, Verjus-Schorlen und prickelnde Tees sind ebenfalls tolle Begleiter am Tisch."
+     ],
+     "q": "Welche alkoholfreien Getränke genießt du am liebsten beim Essen oder bei Feiern?",
+     "c": "Verkoste heute einen alkoholfreien Wein oder guten Traubensaft mit den fünf S und schreib eine kurze Notiz."
+    },
+    "es": {
+     "t": "Vinos sin alcohol",
+     "g": "Explora los vinos desalcoholizados y los buenos mostos para quien elige no beber.",
+     "p": [
+      "Los vinos sin alcohol se elaboran como un vino normal y luego se les retira el alcohol con suavidad, a menudo al vacío.",
+      "Conservan muchos aromas, y puedes catarlos con los mismos cinco pasos que cualquier vino.",
+      "Los buenos mostos, los refrescos de agraz y los tés con burbujas también son grandes opciones en la mesa."
+     ],
+     "q": "¿Qué bebidas sin alcohol disfrutas más en comidas o celebraciones?",
+     "c": "Cata hoy un vino sin alcohol o un buen mosto con los cinco pasos y escribe una nota breve."
+    },
+    "fr": {
+     "t": "Les vins sans alcool",
+     "g": "Explore les vins désalcoolisés et les jus de raisin de qualité pour celles et ceux qui choisissent de ne pas boire.",
+     "p": [
+      "Les vins désalcoolisés sont faits comme un vin normal, puis l'alcool est retiré en douceur, souvent sous vide.",
+      "Ils gardent beaucoup d'arômes, et tu peux les déguster avec les mêmes cinq étapes que tout vin.",
+      "Les bons jus de raisin, les verjus allongés d'eau pétillante et les thés pétillants sont aussi parfaits à table."
+     ],
+     "q": "Quelles boissons sans alcool apprécies-tu le plus aux repas ou aux fêtes ?",
+     "c": "Déguste aujourd'hui un vin sans alcool ou un bon jus de raisin avec les cinq étapes et écris une courte note."
+    },
+    "it": {
+     "t": "Vini analcolici",
+     "g": "Esplora i vini dealcolati e i succhi d'uva di qualità per chi sceglie di non bere.",
+     "p": [
+      "I vini dealcolati si producono come un vino normale, poi l'alcol viene tolto delicatamente, spesso sottovuoto.",
+      "Conservano molti profumi, e puoi degustarli con le stesse cinque fasi di qualsiasi vino.",
+      "Succhi d'uva di qualità, spritz di agresto e tè frizzanti sono ottime scelte a tavola."
+     ],
+     "q": "Quali bevande analcoliche ti piacciono di più a pranzo, a cena o alle feste?",
+     "c": "Degusta oggi un vino analcolico o un buon succo d'uva con le cinque fasi e scrivi una breve nota."
+    },
+    "pt": {
+     "t": "Vinhos sem álcool",
+     "g": "Explora os vinhos desalcoolizados e os bons sumos de uva para quem escolhe não beber.",
+     "p": [
+      "Os vinhos sem álcool fazem-se como um vinho normal e depois o álcool é retirado com suavidade, muitas vezes a vácuo.",
+      "Mantêm muitos aromas, e podes prová-los com as mesmas cinco etapas de qualquer vinho.",
+      "Bons sumos de uva, refrescos de agraço e chás com gás também são ótimas escolhas à mesa."
+     ],
+     "q": "Que bebidas sem álcool aprecias mais em refeições ou celebrações?",
+     "c": "Prova hoje um vinho sem álcool ou um bom sumo de uva com as cinco etapas e escreve uma nota curta."
+    },
+    "pt_BR": {
+     "t": "Vinhos sem álcool",
+     "g": "Explore os vinhos desalcoolizados e os bons sucos de uva para quem escolhe não beber.",
+     "p": [
+      "Os vinhos sem álcool são feitos como um vinho normal e depois o álcool é retirado com cuidado, muitas vezes a vácuo.",
+      "Eles mantêm muitos aromas, e você pode degustá-los com as mesmas cinco etapas de qualquer vinho.",
+      "Bons sucos de uva integrais, drinks com agraço e chás com gás também são ótimas escolhas à mesa."
+     ],
+     "q": "Quais bebidas sem álcool você mais curte em refeições ou comemorações?",
+     "c": "Deguste hoje um vinho sem álcool ou um bom suco de uva integral com as cinco etapas e escreva uma nota curta."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: tasting skills",
+     "g": "Recap the tasting skills from days 31 to 59 and finish with a nose-training exercise.",
+     "p": [
+      "You learned to serve well: the right glass, temperature, opening, decanting and storage.",
+      "You learned to taste with attention: colour, aroma layers, acidity, tannin, body and finish.",
+      "You also learned to spot faults, debunk myths and taste responsibly with water, food and spitting."
+     ],
+     "q": "Which tasting skill from this month feels most natural to you, and which needs more practice?",
+     "c": "Blind-smell five kitchen aromas again and compare your score with your first try on day 53."
+    },
+    "de": {
+     "t": "Rückblick: Verkostung",
+     "g": "Wiederhole die Verkostungsfähigkeiten der Tage 31 bis 59 und schließ mit einem Nasentraining ab.",
+     "p": [
+      "Du hast gelernt, gut zu servieren: richtiges Glas, Temperatur, Öffnen, Dekantieren und Lagern.",
+      "Du hast gelernt, aufmerksam zu verkosten: Farbe, Aromaebenen, Säure, Tannin, Körper und Abgang.",
+      "Außerdem erkennst du Fehler, entlarvst Mythen und verkostest verantwortungsvoll mit Wasser, Essen und Spucknapf."
+     ],
+     "q": "Welche Verkostungsfähigkeit dieses Monats fällt dir am leichtesten, und welche braucht mehr Übung?",
+     "c": "Riech noch einmal blind an fünf Küchenaromen und vergleiche dein Ergebnis mit deinem ersten Versuch an Tag 53."
+    },
+    "es": {
+     "t": "Repaso: habilidades de cata",
+     "g": "Repasa las habilidades de cata de los días 31 a 59 y termina con un ejercicio de nariz.",
+     "p": [
+      "Aprendiste a servir bien: copa adecuada, temperatura, apertura, decantación y conservación.",
+      "Aprendiste a catar con atención: color, capas de aroma, acidez, tanino, cuerpo y final.",
+      "También aprendiste a detectar defectos, desmontar mitos y catar con responsabilidad, con agua, comida y escupidera."
+     ],
+     "q": "¿Qué habilidad de cata de este mes te resulta más natural, y cuál necesita más práctica?",
+     "c": "Huele otra vez a ciegas cinco aromas de cocina y compara tu resultado con tu primer intento del día 53."
+    },
+    "fr": {
+     "t": "Révision : dégustation",
+     "g": "Révise les compétences de dégustation des jours 31 à 59 et termine par un exercice olfactif.",
+     "p": [
+      "Tu as appris à bien servir : le bon verre, la température, l'ouverture, la carafe et la conservation.",
+      "Tu as appris à déguster avec attention : couleur, familles d'arômes, acidité, tanins, corps et finale.",
+      "Tu sais aussi repérer les défauts, démonter les mythes et déguster de façon responsable, avec eau, plats et crachoir."
+     ],
+     "q": "Quelle compétence de ce mois te semble la plus naturelle, et laquelle demande plus de pratique ?",
+     "c": "Sens à nouveau à l'aveugle cinq arômes de cuisine et compare ton score à ton premier essai du jour 53."
+    },
+    "it": {
+     "t": "Ripasso: degustazione",
+     "g": "Ripassa le abilità di degustazione dei giorni dal 31 al 59 e chiudi con un esercizio per il naso.",
+     "p": [
+      "Hai imparato a servire bene: calice giusto, temperatura, apertura, decantazione e conservazione.",
+      "Hai imparato a degustare con attenzione: colore, livelli di profumi, acidità, tannino, corpo e finale.",
+      "Sai anche riconoscere i difetti, sfatare i miti e degustare con responsabilità, con acqua, cibo e sputacchiera."
+     ],
+     "q": "Quale abilità di questo mese ti viene più naturale, e quale richiede più pratica?",
+     "c": "Annusa di nuovo alla cieca cinque profumi di cucina e confronta il risultato con il primo tentativo del giorno 53."
+    },
+    "pt": {
+     "t": "Revisão: técnicas de prova",
+     "g": "Revê as técnicas de prova dos dias 31 a 59 e termina com um exercício de treino do nariz.",
+     "p": [
+      "Aprendeste a servir bem: o copo certo, a temperatura, a abertura, a decantação e a conservação.",
+      "Aprendeste a provar com atenção: cor, camadas de aroma, acidez, tanino, corpo e final.",
+      "Também aprendeste a detetar defeitos, desfazer mitos e provar com responsabilidade, com água, comida e escarradeira."
+     ],
+     "q": "Que técnica deste mês te parece mais natural, e qual precisa de mais prática?",
+     "c": "Cheira outra vez às cegas cinco aromas de cozinha e compara o resultado com a tua primeira tentativa no dia 53."
+    },
+    "pt_BR": {
+     "t": "Revisão: técnicas de degustação",
+     "g": "Revise as técnicas de degustação dos dias 31 a 59 e termine com um exercício de treino do nariz.",
+     "p": [
+      "Você aprendeu a servir bem: a taça certa, a temperatura, a abertura, a decantação e o armazenamento.",
+      "Você aprendeu a degustar com atenção: cor, camadas de aroma, acidez, tanino, corpo e final.",
+      "Também aprendeu a notar defeitos, desfazer mitos e degustar com responsabilidade, com água, comida e cuspideira."
+     ],
+     "q": "Qual técnica deste mês parece mais natural para você, e qual precisa de mais prática?",
+     "c": "Cheire de novo às cegas cinco aromas da cozinha e compare o resultado com sua primeira tentativa no dia 53."
+    }
+   }
+  }
+ ]
+}

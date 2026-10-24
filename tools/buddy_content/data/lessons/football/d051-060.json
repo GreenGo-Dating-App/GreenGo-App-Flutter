@@ -1,0 +1,835 @@
+{
+ "topic": "football",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous stadiums",
+     "g": "Visit legendary grounds and see what makes each one special.",
+     "p": [
+      "Rio's Maracanã was built for the 1950 World Cup and is a symbol of Brazilian football.",
+      "Mexico City's Estadio Azteca hosted two World Cup finals, in 1970 and 1986.",
+      "Buenos Aires' La Bombonera, the chocolate box, is famous for steep stands that seem to shake."
+     ],
+     "q": "Which stadium in the world would you most love to visit?",
+     "c": "Look up a photo of one famous stadium and describe what you notice first."
+    },
+    "de": {
+     "t": "Berühmte Stadien",
+     "g": "Besuche legendäre Arenen und entdecke, was jede besonders macht.",
+     "p": [
+      "Das Maracanã in Rio wurde für die WM 1950 gebaut und ist ein Symbol des brasilianischen Fußballs.",
+      "Das Estadio Azteca in Mexiko-Stadt war Schauplatz zweier WM-Finals, 1970 und 1986.",
+      "La Bombonera in Buenos Aires, die Pralinenschachtel, ist für ihre steilen, bebenden Tribünen bekannt."
+     ],
+     "q": "Welches Stadion der Welt würdest du am liebsten besuchen?",
+     "c": "Schau dir ein Foto eines berühmten Stadions an und beschreibe, was dir zuerst auffällt."
+    },
+    "es": {
+     "t": "Estadios famosos",
+     "g": "Visita estadios legendarios y descubre qué hace especial a cada uno.",
+     "p": [
+      "El Maracaná de Río se construyó para el Mundial de 1950 y es un símbolo del fútbol brasileño.",
+      "El Estadio Azteca de Ciudad de México acogió dos finales del Mundial, en 1970 y 1986.",
+      "La Bombonera de Buenos Aires es famosa por sus gradas empinadas que parecen temblar."
+     ],
+     "q": "¿Qué estadio del mundo te encantaría visitar?",
+     "c": "Busca la foto de un estadio famoso y describe lo primero que te llama la atención."
+    },
+    "fr": {
+     "t": "Stades mythiques",
+     "g": "Visite des stades de légende et découvre ce qui rend chacun unique.",
+     "p": [
+      "Le Maracanã de Rio a été construit pour la Coupe du monde 1950 et symbolise le foot brésilien.",
+      "L'Estadio Azteca de Mexico a accueilli deux finales de Coupe du monde, en 1970 et 1986.",
+      "La Bombonera de Buenos Aires, la boîte de chocolats, est célèbre pour ses tribunes raides qui tremblent."
+     ],
+     "q": "Quel stade du monde aimerais-tu le plus visiter ?",
+     "c": "Cherche la photo d'un stade célèbre et décris ce que tu remarques en premier."
+    },
+    "it": {
+     "t": "Stadi leggendari",
+     "g": "Visita stadi leggendari e scopri cosa rende speciale ciascuno.",
+     "p": [
+      "Il Maracanã di Rio fu costruito per i Mondiali del 1950 ed è un simbolo del calcio brasiliano.",
+      "L'Estadio Azteca di Città del Messico ha ospitato due finali mondiali, nel 1970 e nel 1986.",
+      "La Bombonera di Buenos Aires, la scatola di cioccolatini, è famosa per le tribune ripide che sembrano tremare."
+     ],
+     "q": "Quale stadio al mondo ti piacerebbe di più visitare?",
+     "c": "Cerca la foto di uno stadio famoso e descrivi la prima cosa che noti."
+    },
+    "pt": {
+     "t": "Estádios famosos",
+     "g": "Visita estádios lendários e descobre o que torna cada um especial.",
+     "p": [
+      "O Maracanã, no Rio, foi construído para o Mundial de 1950 e é um símbolo do futebol brasileiro.",
+      "O Estádio Azteca, na Cidade do México, recebeu duas finais do Mundial, em 1970 e 1986.",
+      "La Bombonera, em Buenos Aires, é famosa pelas bancadas íngremes que parecem tremer."
+     ],
+     "q": "Que estádio do mundo mais gostavas de visitar?",
+     "c": "Procura a foto de um estádio famoso e descreve o que reparas primeiro."
+    },
+    "pt_BR": {
+     "t": "Estádios famosos",
+     "g": "Visite estádios lendários e descubra o que torna cada um especial.",
+     "p": [
+      "O Maracanã, no Rio, foi construído para a Copa de 1950 e é um símbolo do futebol brasileiro.",
+      "O Estádio Azteca, na Cidade do México, recebeu duas finais de Copa, em 1970 e 1986.",
+      "La Bombonera, em Buenos Aires, é famosa pelas arquibancadas íngremes que parecem tremer."
+     ],
+     "q": "Qual estádio do mundo você mais gostaria de visitar?",
+     "c": "Procure a foto de um estádio famoso e descreva o que você nota primeiro."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The matchday experience",
+     "g": "Imagine going to a stadium: the chants, the food and the atmosphere.",
+     "p": [
+      "Arriving early lets you soak up the build-up, find your seat and watch the warm-up.",
+      "Every country has its matchday snacks, from pies to grilled sausages to choripán.",
+      "Singing with thousands of fans when your team scores is a feeling people never forget."
+     ],
+     "q": "What would you most look forward to at a live match?",
+     "c": "Plan an imaginary matchday: which game, who you would go with and what you would eat."
+    },
+    "de": {
+     "t": "Das Stadionerlebnis",
+     "g": "Stell dir einen Stadionbesuch vor: Gesänge, Essen und Atmosphäre.",
+     "p": [
+      "Wer früh kommt, erlebt die Vorfreude, findet in Ruhe seinen Platz und sieht das Aufwärmen.",
+      "Jedes Land hat seine Stadionsnacks, von Pies über Bratwurst bis zum Choripán.",
+      "Mit Tausenden Fans beim Tor zu singen, ist ein Gefühl, das man nie vergisst."
+     ],
+     "q": "Worauf würdest du dich bei einem Stadionbesuch am meisten freuen?",
+     "c": "Plane einen Fantasie-Spieltag: welches Spiel, mit wem und was du essen würdest."
+    },
+    "es": {
+     "t": "La experiencia de ir al estadio",
+     "g": "Imagina ir a un estadio: los cánticos, la comida y el ambiente.",
+     "p": [
+      "Llegar pronto te deja disfrutar de la previa, encontrar tu asiento y ver el calentamiento.",
+      "Cada país tiene su comida de estadio, de los pies ingleses a las salchichas o el choripán.",
+      "Cantar con miles de aficionados cuando marca tu equipo es algo que no se olvida."
+     ],
+     "q": "¿Qué es lo que más ilusión te haría en un partido en directo?",
+     "c": "Planea un día de partido imaginario: qué partido, con quién irías y qué comerías."
+    },
+    "fr": {
+     "t": "L'expérience du jour de match",
+     "g": "Imagine une journée au stade : chants, nourriture et ambiance.",
+     "p": [
+      "Arriver tôt permet de vivre l'avant-match, trouver sa place et voir l'échauffement.",
+      "Chaque pays a ses snacks de stade, des tourtes anglaises aux saucisses grillées ou au choripán.",
+      "Chanter avec des milliers de supporters quand ton équipe marque, c'est inoubliable."
+     ],
+     "q": "Qu'est-ce qui te réjouirait le plus lors d'un match en direct ?",
+     "c": "Imagine un jour de match : quel match, avec qui tu irais et ce que tu mangerais."
+    },
+    "it": {
+     "t": "La giornata allo stadio",
+     "g": "Immagina una partita allo stadio: cori, cibo e atmosfera.",
+     "p": [
+      "Arrivare presto permette di godersi il pre-partita, trovare il posto e vedere il riscaldamento.",
+      "Ogni paese ha i suoi snack da stadio, dalle pie inglesi alle salsicce alla griglia al choripán.",
+      "Cantare con migliaia di tifosi quando la tua squadra segna è un'emozione indimenticabile."
+     ],
+     "q": "Cosa ti entusiasmerebbe di più in una partita dal vivo?",
+     "c": "Pianifica una giornata di partita immaginaria: quale gara, con chi e cosa mangeresti."
+    },
+    "pt": {
+     "t": "A experiência de dia de jogo",
+     "g": "Imagina ir a um estádio: os cânticos, a comida e o ambiente.",
+     "p": [
+      "Chegar cedo permite viver o pré-jogo, encontrar o lugar e ver o aquecimento.",
+      "Cada país tem a sua comida de estádio, das tartes inglesas às bifanas ou ao choripán.",
+      "Cantar com milhares de adeptos quando a tua equipa marca é algo que nunca se esquece."
+     ],
+     "q": "O que te deixaria mais entusiasmado num jogo ao vivo?",
+     "c": "Planeia um dia de jogo imaginário: que jogo, com quem irias e o que comerias."
+    },
+    "pt_BR": {
+     "t": "A experiência de dia de jogo",
+     "g": "Imagine ir a um estádio: os cantos, a comida e o clima.",
+     "p": [
+      "Chegar cedo deixa você curtir o pré-jogo, achar seu lugar e ver o aquecimento.",
+      "Cada país tem sua comida de estádio, das tortas inglesas ao choripán e ao tropeiro.",
+      "Cantar com milhares de torcedores quando seu time faz gol é algo que ninguém esquece."
+     ],
+     "q": "O que mais empolgaria você num jogo ao vivo?",
+     "c": "Planeje um dia de jogo imaginário: qual jogo, com quem iria e o que comeria."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching on TV",
+     "g": "Get more from commentary, replays and analysis shows.",
+     "p": [
+      "Commentators describe the action, while co-commentators explain tactics and decisions.",
+      "Slow-motion replays and different camera angles help you judge goals, fouls and offside.",
+      "The 1970 World Cup was the first broadcast in colour, a milestone for fans at home."
+     ],
+     "q": "Do you enjoy the commentary, or prefer to watch with the sound off?",
+     "c": "Watch a few minutes of a match and listen for one tactical point the commentator makes."
+    },
+    "de": {
+     "t": "Fußball im Fernsehen",
+     "g": "Hol mehr aus Kommentar, Wiederholungen und Analysesendungen heraus.",
+     "p": [
+      "Kommentatoren beschreiben das Geschehen, Experten erklären Taktik und Entscheidungen.",
+      "Zeitlupen und verschiedene Kamerawinkel helfen, Tore, Fouls und Abseits zu beurteilen.",
+      "Die WM 1970 war die erste in Farbe übertragene WM, ein Meilenstein für Fans daheim."
+     ],
+     "q": "Magst du den Kommentar, oder schaust du lieber ohne Ton?",
+     "c": "Schau ein paar Spielminuten und achte auf einen Taktikhinweis des Kommentators."
+    },
+    "es": {
+     "t": "Ver fútbol por la tele",
+     "g": "Saca más partido a la narración, las repeticiones y los programas de análisis.",
+     "p": [
+      "El narrador cuenta la acción y el comentarista explica la táctica y las decisiones.",
+      "La cámara lenta y los distintos ángulos ayudan a juzgar goles, faltas y fueras de juego.",
+      "El Mundial de 1970 fue el primero retransmitido en color, un hito para los aficionados."
+     ],
+     "q": "¿Te gusta la narración o prefieres ver el partido sin sonido?",
+     "c": "Mira unos minutos de un partido y escucha un apunte táctico del comentarista."
+    },
+    "fr": {
+     "t": "Regarder le foot à la télé",
+     "g": "Profite mieux des commentaires, des ralentis et des émissions d'analyse.",
+     "p": [
+      "Le commentateur décrit l'action, le consultant explique la tactique et les décisions.",
+      "Ralentis et angles de caméra variés aident à juger buts, fautes et hors-jeu.",
+      "La Coupe du monde 1970 fut la première diffusée en couleur, une étape pour les fans."
+     ],
+     "q": "Tu aimes les commentaires, ou tu préfères regarder sans le son ?",
+     "c": "Regarde quelques minutes d'un match et repère une remarque tactique du commentateur."
+    },
+    "it": {
+     "t": "Guardare il calcio in TV",
+     "g": "Goditi meglio telecronaca, replay e programmi di analisi.",
+     "p": [
+      "Il telecronista racconta l'azione, il commentatore tecnico spiega tattica e decisioni.",
+      "Rallenty e diverse inquadrature aiutano a giudicare gol, falli e fuorigioco.",
+      "I Mondiali del 1970 furono i primi trasmessi a colori, una svolta per i tifosi a casa."
+     ],
+     "q": "Ti piace la telecronaca o preferisci guardare senza audio?",
+     "c": "Guarda qualche minuto di partita e cogli un'osservazione tattica del commentatore."
+    },
+    "pt": {
+     "t": "Ver futebol na televisão",
+     "g": "Aproveita melhor os relatos, as repetições e os programas de análise.",
+     "p": [
+      "O narrador descreve a ação e o comentador explica a tática e as decisões.",
+      "A câmara lenta e os vários ângulos ajudam a avaliar golos, faltas e foras de jogo.",
+      "O Mundial de 1970 foi o primeiro transmitido a cores, um marco para os adeptos."
+     ],
+     "q": "Gostas dos relatos ou preferes ver o jogo sem som?",
+     "c": "Vê uns minutos de um jogo e repara num comentário tático do comentador."
+    },
+    "pt_BR": {
+     "t": "Assistir futebol na TV",
+     "g": "Aproveite melhor a narração, os replays e os programas de análise.",
+     "p": [
+      "O narrador descreve a jogada e o comentarista explica a tática e as decisões.",
+      "A câmera lenta e os vários ângulos ajudam a julgar gols, faltas e impedimentos.",
+      "A Copa de 1970 foi a primeira transmitida em cores, um marco para os torcedores."
+     ],
+     "q": "Você gosta da narração ou prefere assistir sem som?",
+     "c": "Assista a alguns minutos de jogo e repare num comentário tático do comentarista."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football chants and songs",
+     "g": "See how supporters create an unforgettable atmosphere.",
+     "p": [
+      "Chants are often simple and repetitive, so thousands of people can join in instantly.",
+      "Many use well-known tunes with new words about the club, the city or a favourite player.",
+      "You'll Never Walk Alone, from a 1945 musical, became the anthem of Liverpool fans in the 1960s."
+     ],
+     "q": "Do you know any football chant, from any club or country?",
+     "c": "Find and listen to one famous football anthem today."
+    },
+    "de": {
+     "t": "Fangesänge und Lieder",
+     "g": "Sieh, wie Fans eine unvergessliche Stimmung erzeugen.",
+     "p": [
+      "Gesänge sind oft einfach und wiederholen sich, damit Tausende sofort mitsingen können.",
+      "Viele nutzen bekannte Melodien mit neuem Text über Verein, Stadt oder Lieblingsspieler.",
+      "You'll Never Walk Alone aus einem Musical von 1945 wurde in den 1960ern zur Hymne der Liverpool-Fans."
+     ],
+     "q": "Kennst du einen Fangesang, egal von welchem Verein oder Land?",
+     "c": "Such dir heute eine berühmte Fußballhymne und hör sie dir an."
+    },
+    "es": {
+     "t": "Cánticos y canciones",
+     "g": "Descubre cómo los aficionados crean un ambiente inolvidable.",
+     "p": [
+      "Los cánticos suelen ser sencillos y repetitivos para que miles de personas se sumen al instante.",
+      "Muchos usan melodías conocidas con letras nuevas sobre el club, la ciudad o un ídolo.",
+      "You'll Never Walk Alone, de un musical de 1945, se convirtió en el himno de la afición del Liverpool en los 60."
+     ],
+     "q": "¿Conoces algún cántico de fútbol, de cualquier club o país?",
+     "c": "Busca y escucha hoy un himno futbolero famoso."
+    },
+    "fr": {
+     "t": "Chants et chansons de supporters",
+     "g": "Découvre comment les supporters créent une ambiance inoubliable.",
+     "p": [
+      "Les chants sont souvent simples et répétitifs pour que des milliers de gens suivent tout de suite.",
+      "Beaucoup reprennent des airs connus avec de nouvelles paroles sur le club, la ville ou un joueur.",
+      "You'll Never Walk Alone, tiré d'une comédie musicale de 1945, est devenu l'hymne des fans de Liverpool dans les années 1960."
+     ],
+     "q": "Connais-tu un chant de supporters, de n'importe quel club ou pays ?",
+     "c": "Cherche et écoute aujourd'hui un hymne de foot célèbre."
+    },
+    "it": {
+     "t": "Cori e canzoni",
+     "g": "Scopri come i tifosi creano un'atmosfera indimenticabile.",
+     "p": [
+      "I cori sono spesso semplici e ripetitivi, così migliaia di persone possono unirsi subito.",
+      "Molti usano melodie famose con parole nuove sul club, la città o un idolo.",
+      "You'll Never Walk Alone, da un musical del 1945, divenne l'inno dei tifosi del Liverpool negli anni Sessanta."
+     ],
+     "q": "Conosci qualche coro da stadio, di qualsiasi club o paese?",
+     "c": "Cerca e ascolta oggi un famoso inno calcistico."
+    },
+    "pt": {
+     "t": "Cânticos e canções",
+     "g": "Descobre como os adeptos criam um ambiente inesquecível.",
+     "p": [
+      "Os cânticos costumam ser simples e repetitivos, para milhares de pessoas se juntarem logo.",
+      "Muitos usam músicas conhecidas com letras novas sobre o clube, a cidade ou um ídolo.",
+      "You'll Never Walk Alone, de um musical de 1945, tornou-se o hino dos adeptos do Liverpool nos anos 60."
+     ],
+     "q": "Conheces algum cântico de futebol, de qualquer clube ou país?",
+     "c": "Procura e ouve hoje um hino de futebol famoso."
+    },
+    "pt_BR": {
+     "t": "Cantos da torcida",
+     "g": "Descubra como os torcedores criam um clima inesquecível.",
+     "p": [
+      "Os cantos costumam ser simples e repetitivos, para milhares de pessoas entrarem na hora.",
+      "Muitos usam músicas conhecidas com letras novas sobre o clube, a cidade ou um ídolo.",
+      "You'll Never Walk Alone, de um musical de 1945, virou o hino da torcida do Liverpool nos anos 1960."
+     ],
+     "q": "Você conhece algum canto de torcida, de qualquer clube ou país?",
+     "c": "Procure e ouça hoje um hino de futebol famoso."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rivalries and derbies",
+     "g": "Discover famous local and national rivalries in football.",
+     "p": [
+      "A derby is a match between rivals, often from the same city, like Inter and AC Milan.",
+      "El Clásico between Real Madrid and Barcelona is followed by millions around the world.",
+      "In Buenos Aires, Boca Juniors against River Plate is known as the Superclásico."
+     ],
+     "q": "Is there a big football rivalry where you live?",
+     "c": "Pick one famous derby and find out where the rivalry began."
+    },
+    "de": {
+     "t": "Rivalitäten und Derbys",
+     "g": "Entdecke berühmte lokale und nationale Rivalitäten im Fußball.",
+     "p": [
+      "Ein Derby ist ein Duell von Rivalen, oft aus derselben Stadt, wie Inter gegen AC Mailand.",
+      "El Clásico zwischen Real Madrid und Barcelona verfolgen Millionen weltweit.",
+      "In Buenos Aires heißt das Duell Boca Juniors gegen River Plate Superclásico."
+     ],
+     "q": "Gibt es dort, wo du lebst, eine große Fußballrivalität?",
+     "c": "Wähle ein berühmtes Derby und finde heraus, wie die Rivalität begann."
+    },
+    "es": {
+     "t": "Rivalidades y derbis",
+     "g": "Descubre famosas rivalidades locales y nacionales del fútbol.",
+     "p": [
+      "Un derbi es un partido entre rivales, a menudo de la misma ciudad, como Inter y AC Milan.",
+      "El Clásico entre Real Madrid y Barcelona lo siguen millones de personas en todo el mundo.",
+      "En Buenos Aires, Boca Juniors contra River Plate es el Superclásico."
+     ],
+     "q": "¿Hay una gran rivalidad futbolera donde vives?",
+     "c": "Elige un derbi famoso y averigua cómo empezó la rivalidad."
+    },
+    "fr": {
+     "t": "Rivalités et derbys",
+     "g": "Découvre de célèbres rivalités locales et nationales du foot.",
+     "p": [
+      "Un derby oppose des rivaux, souvent de la même ville, comme l'Inter et l'AC Milan.",
+      "El Clásico entre le Real Madrid et Barcelone est suivi par des millions de fans dans le monde.",
+      "À Buenos Aires, Boca Juniors contre River Plate s'appelle le Superclásico."
+     ],
+     "q": "Y a-t-il une grande rivalité de foot là où tu vis ?",
+     "c": "Choisis un derby célèbre et découvre comment la rivalité a commencé."
+    },
+    "it": {
+     "t": "Rivalità e derby",
+     "g": "Scopri famose rivalità calcistiche locali e nazionali.",
+     "p": [
+      "Un derby è una sfida tra rivali, spesso della stessa città, come Inter e Milan.",
+      "El Clásico tra Real Madrid e Barcellona è seguito da milioni di persone nel mondo.",
+      "A Buenos Aires, Boca Juniors contro River Plate è il Superclásico."
+     ],
+     "q": "C'è una grande rivalità calcistica dove vivi?",
+     "c": "Scegli un derby famoso e scopri come è nata la rivalità."
+    },
+    "pt": {
+     "t": "Rivalidades e dérbis",
+     "g": "Descobre rivalidades famosas, locais e nacionais, do futebol.",
+     "p": [
+      "Um dérbi é um jogo entre rivais, muitas vezes da mesma cidade, como Benfica e Sporting.",
+      "El Clásico, entre Real Madrid e Barcelona, é seguido por milhões em todo o mundo.",
+      "Em Buenos Aires, Boca Juniors contra River Plate é o Superclásico."
+     ],
+     "q": "Há uma grande rivalidade de futebol onde vives?",
+     "c": "Escolhe um dérbi famoso e descobre como começou a rivalidade."
+    },
+    "pt_BR": {
+     "t": "Rivalidades e clássicos",
+     "g": "Descubra rivalidades famosas, locais e nacionais, do futebol.",
+     "p": [
+      "Um clássico é um jogo entre rivais, muitas vezes da mesma cidade, como o Fla-Flu no Rio.",
+      "El Clásico, entre Real Madrid e Barcelona, é acompanhado por milhões no mundo todo.",
+      "Em Buenos Aires, Boca Juniors contra River Plate é o Superclásico."
+     ],
+     "q": "Existe uma grande rivalidade no futebol onde você mora?",
+     "c": "Escolha um clássico famoso e descubra como a rivalidade começou."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fan cultures worldwide",
+     "g": "See how supporters celebrate in different countries.",
+     "p": [
+      "In Italy, ultras in the curva create huge tifo displays with flags and banners.",
+      "Borussia Dortmund's south stand, the Yellow Wall, is one of Europe's biggest standing terraces.",
+      "At Euro 2016, Iceland's fans made their slow thunder clap famous around the world."
+     ],
+     "q": "Which fan tradition from another country would you love to experience?",
+     "c": "Watch a clip of a big tifo or fan display and describe it in three words."
+    },
+    "de": {
+     "t": "Fankulturen weltweit",
+     "g": "Sieh, wie Fans in verschiedenen Ländern feiern.",
+     "p": [
+      "In Italien gestalten Ultras in der Curva riesige Choreos mit Fahnen und Bannern.",
+      "Die Südtribüne von Borussia Dortmund, die Gelbe Wand, ist eine der größten Stehtribünen Europas.",
+      "Bei der EM 2016 machten Islands Fans ihren langsamen Klatsch-Ruf weltberühmt."
+     ],
+     "q": "Welche Fantradition aus einem anderen Land würdest du gern erleben?",
+     "c": "Schau dir eine große Choreo an und beschreib sie mit drei Wörtern."
+    },
+    "es": {
+     "t": "Culturas de afición en el mundo",
+     "g": "Descubre cómo celebran los aficionados en distintos países.",
+     "p": [
+      "En Italia, los ultras de la curva crean enormes tifos con banderas y pancartas.",
+      "La grada sur del Borussia Dortmund, el Muro Amarillo, es una de las mayores gradas de pie de Europa.",
+      "En la Eurocopa 2016, la afición de Islandia hizo famoso en todo el mundo su lento aplauso vikingo."
+     ],
+     "q": "¿Qué tradición de aficionados de otro país te gustaría vivir?",
+     "c": "Mira un vídeo de un gran tifo y descríbelo con tres palabras."
+    },
+    "fr": {
+     "t": "Cultures de supporters dans le monde",
+     "g": "Découvre comment les supporters célèbrent dans différents pays.",
+     "p": [
+      "En Italie, les ultras de la curva créent d'immenses tifos avec drapeaux et banderoles.",
+      "La tribune sud du Borussia Dortmund, le Mur jaune, est l'une des plus grandes tribunes debout d'Europe.",
+      "À l'Euro 2016, les fans islandais ont rendu célèbre leur lent clapping viking."
+     ],
+     "q": "Quelle tradition de supporters d'un autre pays aimerais-tu vivre ?",
+     "c": "Regarde la vidéo d'un grand tifo et décris-le en trois mots."
+    },
+    "it": {
+     "t": "Culture del tifo nel mondo",
+     "g": "Scopri come festeggiano i tifosi nei diversi paesi.",
+     "p": [
+      "In Italia, gli ultras in curva creano enormi coreografie con bandiere e striscioni.",
+      "La tribuna sud del Borussia Dortmund, il Muro Giallo, è una delle più grandi curve in piedi d'Europa.",
+      "A Euro 2016 i tifosi islandesi resero famoso nel mondo il loro lento applauso vichingo."
+     ],
+     "q": "Quale tradizione dei tifosi di un altro paese ti piacerebbe vivere?",
+     "c": "Guarda il video di una grande coreografia e descrivila in tre parole."
+    },
+    "pt": {
+     "t": "Culturas de adeptos no mundo",
+     "g": "Descobre como os adeptos celebram em diferentes países.",
+     "p": [
+      "Em Itália, os ultras da curva criam enormes coreografias com bandeiras e faixas.",
+      "A bancada sul do Borussia Dortmund, a Muralha Amarela, é uma das maiores bancadas de pé da Europa.",
+      "No Euro 2016, os adeptos da Islândia tornaram famoso no mundo o seu lento aplauso viking."
+     ],
+     "q": "Que tradição de adeptos de outro país gostavas de viver?",
+     "c": "Vê um vídeo de uma grande coreografia e descreve-a em três palavras."
+    },
+    "pt_BR": {
+     "t": "Culturas de torcida pelo mundo",
+     "g": "Descubra como os torcedores comemoram em diferentes países.",
+     "p": [
+      "Na Itália, os ultras da curva fazem enormes mosaicos com bandeiras e faixas.",
+      "A arquibancada sul do Borussia Dortmund, a Muralha Amarela, é uma das maiores áreas de torcida em pé da Europa.",
+      "Na Eurocopa 2016, a torcida da Islândia deixou famoso no mundo seu lento aplauso viking."
+     ],
+     "q": "Que tradição de torcida de outro país você gostaria de viver?",
+     "c": "Veja um vídeo de um grande mosaico da torcida e descreva em três palavras."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football and community",
+     "g": "Learn how clubs become part of local identity.",
+     "p": [
+      "Many clubs were founded by workers, students or neighbours, and still carry that story.",
+      "Barcelona's motto, more than a club, captures how deeply a team can belong to its city.",
+      "Clubs often run community programmes, from youth coaching to school visits."
+     ],
+     "q": "What role does football play in your town or city?",
+     "c": "Find out when and by whom a club near you was founded."
+    },
+    "de": {
+     "t": "Fußball und Gemeinschaft",
+     "g": "Lerne, wie Vereine Teil der lokalen Identität werden.",
+     "p": [
+      "Viele Vereine wurden von Arbeitern, Studenten oder Nachbarn gegründet und tragen diese Geschichte weiter.",
+      "Barcelonas Motto, mehr als ein Verein, zeigt, wie tief ein Team zu seiner Stadt gehören kann.",
+      "Vereine bieten oft Gemeinschaftsprojekte an, vom Jugendtraining bis zu Schulbesuchen."
+     ],
+     "q": "Welche Rolle spielt Fußball in deiner Stadt?",
+     "c": "Finde heraus, wann und von wem ein Verein in deiner Nähe gegründet wurde."
+    },
+    "es": {
+     "t": "Fútbol y comunidad",
+     "g": "Aprende cómo los clubes se vuelven parte de la identidad local.",
+     "p": [
+      "Muchos clubes los fundaron obreros, estudiantes o vecinos, y siguen llevando esa historia.",
+      "El lema del Barcelona, més que un club, muestra lo mucho que un equipo puede pertenecer a su ciudad.",
+      "Los clubes suelen tener programas sociales, desde escuelas de fútbol a visitas a colegios."
+     ],
+     "q": "¿Qué papel tiene el fútbol en tu pueblo o ciudad?",
+     "c": "Averigua cuándo y quién fundó un club cercano."
+    },
+    "fr": {
+     "t": "Football et communauté",
+     "g": "Découvre comment les clubs font partie de l'identité locale.",
+     "p": [
+      "Beaucoup de clubs ont été fondés par des ouvriers, des étudiants ou des voisins, et gardent cette histoire.",
+      "La devise du Barça, plus qu'un club, montre à quel point une équipe peut appartenir à sa ville.",
+      "Les clubs mènent souvent des actions locales, des écoles de foot aux visites d'écoles."
+     ],
+     "q": "Quel rôle joue le foot dans ta ville ?",
+     "c": "Découvre quand et par qui un club près de chez toi a été fondé."
+    },
+    "it": {
+     "t": "Calcio e comunità",
+     "g": "Scopri come i club diventano parte dell'identità locale.",
+     "p": [
+      "Molti club furono fondati da operai, studenti o vicini di casa, e ne portano ancora la storia.",
+      "Il motto del Barcellona, più di un club, mostra quanto una squadra possa appartenere alla sua città.",
+      "I club organizzano spesso progetti sociali, dalle scuole calcio alle visite nelle scuole."
+     ],
+     "q": "Che ruolo ha il calcio nella tua città?",
+     "c": "Scopri quando e da chi è stato fondato un club vicino a te."
+    },
+    "pt": {
+     "t": "Futebol e comunidade",
+     "g": "Aprende como os clubes se tornam parte da identidade local.",
+     "p": [
+      "Muitos clubes foram fundados por operários, estudantes ou vizinhos, e continuam a contar essa história.",
+      "O lema do Barcelona, mais que um clube, mostra o quanto uma equipa pode pertencer à sua cidade.",
+      "Os clubes têm muitas vezes projetos sociais, das escolas de futebol às visitas a escolas."
+     ],
+     "q": "Que papel tem o futebol na tua terra?",
+     "c": "Descobre quando e por quem foi fundado um clube perto de ti."
+    },
+    "pt_BR": {
+     "t": "Futebol e comunidade",
+     "g": "Aprenda como os clubes viram parte da identidade local.",
+     "p": [
+      "Muitos clubes foram fundados por operários, estudantes ou vizinhos, e ainda carregam essa história.",
+      "O lema do Barcelona, mais que um clube, mostra o quanto um time pode pertencer à sua cidade.",
+      "Os clubes costumam ter projetos sociais, das escolinhas de futebol às visitas a escolas."
+     ],
+     "q": "Que papel o futebol tem na sua cidade?",
+     "c": "Descubra quando e por quem foi fundado um clube perto de você."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grassroots football",
+     "g": "Celebrate the local, amateur and youth clubs found everywhere.",
+     "p": [
+      "Grassroots football is the base of the game: weekend leagues, school teams and local clubs.",
+      "It runs largely on volunteers: coaches, referees, parents and kit washers.",
+      "Every professional player started somewhere small, often at a local club."
+     ],
+     "q": "Have you ever played for, or helped, a local team?",
+     "c": "Find a local club or pitch near you and see when people play there."
+    },
+    "de": {
+     "t": "Breitenfußball",
+     "g": "Feiere die Amateur- und Jugendvereine, die es überall gibt.",
+     "p": [
+      "Der Breitenfußball ist die Basis: Wochenendligen, Schulteams und Vereine vor Ort.",
+      "Er lebt vor allem von Ehrenamtlichen: Trainern, Schiris, Eltern und Trikotwäschern.",
+      "Jeder Profi hat klein angefangen, oft in einem Verein vor Ort."
+     ],
+     "q": "Hast du schon mal für ein lokales Team gespielt oder ihm geholfen?",
+     "c": "Such einen Verein oder Platz in deiner Nähe und finde heraus, wann dort gespielt wird."
+    },
+    "es": {
+     "t": "Fútbol base y aficionado",
+     "g": "Celebra los clubes locales, aficionados y de jóvenes que hay en todas partes.",
+     "p": [
+      "El fútbol base es la raíz del juego: ligas de fin de semana, equipos escolares y clubes de barrio.",
+      "Vive sobre todo de voluntarios: entrenadores, árbitros, padres y quien lava las camisetas.",
+      "Todo profesional empezó en algo pequeño, a menudo en un club de su barrio."
+     ],
+     "q": "¿Has jugado alguna vez en un equipo local o lo has ayudado?",
+     "c": "Busca un club o campo cerca de ti y averigua cuándo se juega allí."
+    },
+    "fr": {
+     "t": "Le foot amateur",
+     "g": "Célèbre les clubs locaux, amateurs et de jeunes qu'on trouve partout.",
+     "p": [
+      "Le foot amateur est la base du jeu : championnats du week-end, équipes scolaires et clubs de quartier.",
+      "Il repose surtout sur des bénévoles : éducateurs, arbitres, parents et ceux qui lavent les maillots.",
+      "Chaque joueur pro a commencé petit, souvent dans un club local."
+     ],
+     "q": "As-tu déjà joué pour un club local, ou aidé l'un d'eux ?",
+     "c": "Trouve un club ou un terrain près de chez toi et vois quand on y joue."
+    },
+    "it": {
+     "t": "Il calcio di base",
+     "g": "Celebra i club locali, dilettantistici e giovanili presenti ovunque.",
+     "p": [
+      "Il calcio di base è la radice del gioco: campionati del weekend, squadre scolastiche e club di quartiere.",
+      "Vive soprattutto grazie ai volontari: allenatori, arbitri, genitori e chi lava le maglie.",
+      "Ogni professionista ha iniziato in piccolo, spesso in una squadra del quartiere."
+     ],
+     "q": "Hai mai giocato per una squadra locale, o l'hai aiutata?",
+     "c": "Trova un club o un campo vicino a te e scopri quando si gioca lì."
+    },
+    "pt": {
+     "t": "Futebol de formação e amador",
+     "g": "Celebra os clubes locais, amadores e de formação que existem em todo o lado.",
+     "p": [
+      "O futebol amador é a base do jogo: campeonatos de fim de semana, equipas da escola e clubes de bairro.",
+      "Vive sobretudo de voluntários: treinadores, árbitros, pais e quem lava os equipamentos.",
+      "Todos os profissionais começaram num sítio pequeno, muitas vezes num clube da terra."
+     ],
+     "q": "Já jogaste numa equipa local, ou ajudaste uma?",
+     "c": "Encontra um clube ou campo perto de ti e vê quando se joga lá."
+    },
+    "pt_BR": {
+     "t": "Futebol de várzea e de base",
+     "g": "Celebre os clubes locais, amadores e de base que existem em todo lugar.",
+     "p": [
+      "O futebol amador é a raiz do jogo: campeonatos de fim de semana, times da escola e de bairro.",
+      "Ele vive principalmente de voluntários: técnicos, árbitros, pais e quem lava os uniformes.",
+      "Todo profissional começou em algum lugar pequeno, muitas vezes num time do bairro."
+     ],
+     "q": "Você já jogou num time local, ou ajudou algum?",
+     "c": "Encontre um clube ou campo perto de você e veja quando tem jogo por lá."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rise of women's football",
+     "g": "Follow the growth of the women's game around the world.",
+     "p": [
+      "In 1920, a women's match in Liverpool drew a crowd of about 53,000 people.",
+      "The English FA then barred women's football from member grounds in 1921, a ban lifted only in 1971.",
+      "The first FIFA Women's World Cup was held in China in 1991, and the USA won it."
+     ],
+     "q": "Which women's football player or team do you admire?",
+     "c": "Watch a few highlights of a women's match and note one great moment."
+    },
+    "de": {
+     "t": "Der Aufstieg des Frauenfußballs",
+     "g": "Verfolge, wie der Frauenfußball weltweit gewachsen ist.",
+     "p": [
+      "1920 kamen zu einem Frauenspiel in Liverpool rund 53.000 Zuschauer.",
+      "Danach verbannte der englische Verband den Frauenfußball 1921 von Vereinsplätzen, erst 1971 fiel das Verbot.",
+      "Die erste FIFA-Frauen-WM fand 1991 in China statt, die USA gewannen sie."
+     ],
+     "q": "Welche Fußballerin oder welches Frauenteam bewunderst du?",
+     "c": "Schau Highlights eines Frauenspiels und notiere einen tollen Moment."
+    },
+    "es": {
+     "t": "El auge del fútbol femenino",
+     "g": "Sigue el crecimiento del fútbol femenino en todo el mundo.",
+     "p": [
+      "En 1920, un partido femenino en Liverpool reunió a unos 53.000 espectadores.",
+      "Después, la federación inglesa vetó el fútbol femenino en sus campos en 1921, hasta 1971.",
+      "El primer Mundial Femenino de la FIFA se jugó en China en 1991 y lo ganó Estados Unidos."
+     ],
+     "q": "¿Qué futbolista o equipo femenino admiras?",
+     "c": "Mira un resumen de un partido femenino y apunta un gran momento."
+    },
+    "fr": {
+     "t": "L'essor du foot féminin",
+     "g": "Suis la croissance du football féminin dans le monde.",
+     "p": [
+      "En 1920, un match féminin à Liverpool a attiré environ 53 000 spectateurs.",
+      "La fédération anglaise a ensuite banni le foot féminin de ses terrains en 1921, jusqu'en 1971.",
+      "La première Coupe du monde féminine de la FIFA a eu lieu en Chine en 1991, gagnée par les États-Unis."
+     ],
+     "q": "Quelle joueuse ou équipe féminine admires-tu ?",
+     "c": "Regarde le résumé d'un match féminin et note un grand moment."
+    },
+    "it": {
+     "t": "L'ascesa del calcio femminile",
+     "g": "Segui la crescita del calcio femminile nel mondo.",
+     "p": [
+      "Nel 1920 una partita femminile a Liverpool attirò circa 53.000 spettatori.",
+      "La federazione inglese poi vietò il calcio femminile sui campi affiliati nel 1921, fino al 1971.",
+      "Il primo Mondiale femminile FIFA si giocò in Cina nel 1991 e lo vinsero gli Stati Uniti."
+     ],
+     "q": "Quale calciatrice o squadra femminile ammiri?",
+     "c": "Guarda gli highlights di una partita femminile e annota un grande momento."
+    },
+    "pt": {
+     "t": "A ascensão do futebol feminino",
+     "g": "Acompanha o crescimento do futebol feminino no mundo.",
+     "p": [
+      "Em 1920, um jogo feminino em Liverpool juntou cerca de 53 mil espectadores.",
+      "A federação inglesa proibiu depois o futebol feminino nos seus campos em 1921, até 1971.",
+      "O primeiro Mundial Feminino da FIFA foi na China em 1991 e os Estados Unidos venceram."
+     ],
+     "q": "Que jogadora ou equipa feminina admiras?",
+     "c": "Vê um resumo de um jogo feminino e aponta um grande momento."
+    },
+    "pt_BR": {
+     "t": "A ascensão do futebol feminino",
+     "g": "Acompanhe o crescimento do futebol feminino no mundo.",
+     "p": [
+      "Em 1920, um jogo feminino em Liverpool reuniu cerca de 53 mil torcedores.",
+      "A federação inglesa depois proibiu o futebol feminino em seus campos em 1921, até 1971.",
+      "A primeira Copa do Mundo Feminina da FIFA foi na China em 1991, e os Estados Unidos venceram."
+     ],
+     "q": "Qual jogadora ou time feminino você admira?",
+     "c": "Assista aos melhores momentos de um jogo feminino e anote um grande lance."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: playing and watching",
+     "g": "Recap the skills, formats and fan culture of the second month.",
+     "p": [
+      "Passing, receiving, dribbling, shooting and goalkeeping are the core skills.",
+      "Futsal, beach soccer, street games and five-a-side all grow from the same love of the ball.",
+      "Stadiums, chants, rivalries and grassroots clubs show how football brings people together."
+     ],
+     "q": "Which topic from this month would you like to explore more?",
+     "c": "Try one skill from this month for five minutes, or share a fan story with someone."
+    },
+    "de": {
+     "t": "Rückblick: Spielen und Zuschauen",
+     "g": "Wiederhole Technik, Spielformen und Fankultur des zweiten Monats.",
+     "p": [
+      "Passen, Annehmen, Dribbeln, Schießen und Torwartspiel sind die Grundtechniken.",
+      "Futsal, Beachsoccer, Straßenfußball und Kleinfeld wachsen aus derselben Liebe zum Ball.",
+      "Stadien, Gesänge, Rivalitäten und Amateurvereine zeigen, wie Fußball Menschen verbindet."
+     ],
+     "q": "Welches Thema aus diesem Monat möchtest du vertiefen?",
+     "c": "Übe fünf Minuten eine Technik aus diesem Monat oder erzähl jemandem eine Fangeschichte."
+    },
+    "es": {
+     "t": "Repaso: jugar y ver fútbol",
+     "g": "Repasa la técnica, las modalidades y la cultura de afición del segundo mes.",
+     "p": [
+      "Pase, control, regate, disparo y portería son la técnica básica.",
+      "Fútbol sala, fútbol playa, fútbol callejero y partidos reducidos nacen del mismo amor por el balón.",
+      "Estadios, cánticos, rivalidades y clubes de barrio muestran cómo el fútbol une a la gente."
+     ],
+     "q": "¿Qué tema de este mes te gustaría explorar más?",
+     "c": "Practica cinco minutos una técnica de este mes o cuenta a alguien una historia de aficionado."
+    },
+    "fr": {
+     "t": "Révision : jouer et regarder",
+     "g": "Récapitule les gestes, les formats et la culture des supporters du deuxième mois.",
+     "p": [
+      "Passe, contrôle, dribble, frappe et jeu du gardien sont les gestes de base.",
+      "Futsal, beach soccer, foot de rue et foot à cinq naissent du même amour du ballon.",
+      "Stades, chants, rivalités et clubs amateurs montrent comment le foot rassemble les gens."
+     ],
+     "q": "Quel sujet de ce mois aimerais-tu approfondir ?",
+     "c": "Travaille cinq minutes un geste de ce mois ou raconte une histoire de supporter à quelqu'un."
+    },
+    "it": {
+     "t": "Ripasso: giocare e guardare",
+     "g": "Ripassa fondamentali, varianti e cultura del tifo del secondo mese.",
+     "p": [
+      "Passaggio, stop, dribbling, tiro e gioco del portiere sono i fondamentali.",
+      "Futsal, beach soccer, calcio di strada e calcetto nascono dallo stesso amore per il pallone.",
+      "Stadi, cori, rivalità e club di base mostrano come il calcio unisce le persone."
+     ],
+     "q": "Quale argomento di questo mese vorresti approfondire?",
+     "c": "Allena per cinque minuti un fondamentale di questo mese o racconta una storia da tifoso."
+    },
+    "pt": {
+     "t": "Revisão: jogar e ver",
+     "g": "Revê a técnica, as variantes e a cultura de adeptos do segundo mês.",
+     "p": [
+      "Passe, receção, drible, remate e jogo do guarda-redes são a técnica de base.",
+      "Futsal, futebol de praia, futebol de rua e jogos reduzidos nascem do mesmo amor pela bola.",
+      "Estádios, cânticos, rivalidades e clubes de bairro mostram como o futebol une as pessoas."
+     ],
+     "q": "Que tema deste mês gostavas de explorar mais?",
+     "c": "Treina cinco minutos uma técnica deste mês ou conta a alguém uma história de adepto."
+    },
+    "pt_BR": {
+     "t": "Revisão: jogar e assistir",
+     "g": "Revise os fundamentos, as modalidades e a cultura de torcida do segundo mês.",
+     "p": [
+      "Passe, domínio, drible, chute e jogo de goleiro são os fundamentos básicos.",
+      "Futsal, futebol de areia, futebol de rua e pelada nascem do mesmo amor pela bola.",
+      "Estádios, cantos, rivalidades e times de bairro mostram como o futebol une as pessoas."
+     ],
+     "q": "Qual tema deste mês você gostaria de explorar mais?",
+     "c": "Treine cinco minutos um fundamento deste mês ou conte a alguém uma história de torcedor."
+    }
+   }
+  }
+ ]
+}

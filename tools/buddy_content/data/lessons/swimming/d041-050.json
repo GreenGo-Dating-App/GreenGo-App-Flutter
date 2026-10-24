@@ -1,0 +1,835 @@
+{
+ "topic": "swimming",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finishing the push",
+     "g": "Push the water past your hips before the arm recovers, for a longer stroke.",
+     "p": [
+      "Keep pushing back until your thumb brushes your thigh.",
+      "Leaving the stroke early wastes the strongest part of the pull.",
+      "A full finish often means fewer strokes for the same distance."
+     ],
+     "q": "Do you feel your hand reach your thigh, or does it leave the water early?",
+     "c": "Swim four widths and touch your thigh lightly with your thumb on every stroke."
+    },
+    "de": {
+     "t": "Den Zug zu Ende führen",
+     "g": "Drück das Wasser an der Hüfte vorbei, bevor der Arm vorkommt, für einen längeren Zug.",
+     "p": [
+      "Drück weiter nach hinten, bis der Daumen den Oberschenkel streift.",
+      "Wer zu früh aussteigt, verschenkt den kräftigsten Teil des Zuges.",
+      "Ein vollständiges Ende bedeutet oft weniger Züge für dieselbe Strecke."
+     ],
+     "q": "Kommt deine Hand bis zum Oberschenkel, oder verlässt sie das Wasser zu früh?",
+     "c": "Schwimm vier Breiten und streif bei jedem Zug mit dem Daumen leicht den Oberschenkel."
+    },
+    "es": {
+     "t": "Terminar el empuje",
+     "g": "Empuja el agua más allá de la cadera antes del recobro, para una brazada más larga.",
+     "p": [
+      "Sigue empujando hacia atrás hasta que el pulgar roce el muslo.",
+      "Salir antes de tiempo desperdicia la parte más fuerte de la brazada.",
+      "Terminar bien suele significar menos brazadas para la misma distancia."
+     ],
+     "q": "¿Tu mano llega al muslo o sale antes del agua?",
+     "c": "Nada cuatro anchos rozando el muslo con el pulgar en cada brazada."
+    },
+    "fr": {
+     "t": "Finir la poussée",
+     "g": "Pousse l'eau au-delà des hanches avant le retour du bras, pour un mouvement plus long.",
+     "p": [
+      "Continue de pousser vers l'arrière jusqu'à ce que le pouce frôle la cuisse.",
+      "Sortir trop tôt gaspille la partie la plus puissante du mouvement.",
+      "Une fin complète signifie souvent moins de mouvements pour la même distance."
+     ],
+     "q": "Ta main va-t-elle jusqu'à la cuisse ou sort-elle trop tôt ?",
+     "c": "Nage quatre largeurs en frôlant ta cuisse avec le pouce à chaque mouvement."
+    },
+    "it": {
+     "t": "Completare la spinta",
+     "g": "Spingi l'acqua oltre il fianco prima del recupero, per una bracciata più lunga.",
+     "p": [
+      "Continua a spingere indietro finché il pollice sfiora la coscia.",
+      "Uscire troppo presto spreca la parte più forte della bracciata.",
+      "Una spinta completa spesso significa meno bracciate per la stessa distanza."
+     ],
+     "q": "La tua mano arriva alla coscia o esce prima dall'acqua?",
+     "c": "Nuota quattro vasche in larghezza sfiorando la coscia con il pollice a ogni bracciata."
+    },
+    "pt": {
+     "t": "Terminar o empurrão",
+     "g": "Empurra a água para lá da anca antes de recuperar o braço, para uma braçada mais longa.",
+     "p": [
+      "Continua a empurrar para trás até o polegar roçar a coxa.",
+      "Sair cedo desperdiça a parte mais forte da braçada.",
+      "Terminar bem costuma significar menos braçadas para a mesma distância."
+     ],
+     "q": "A tua mão chega à coxa ou sai da água mais cedo?",
+     "c": "Nada quatro larguras a roçar a coxa com o polegar em cada braçada."
+    },
+    "pt_BR": {
+     "t": "Terminando o empurrão",
+     "g": "Empurre a água até passar do quadril antes de recuperar o braço, para uma braçada mais longa.",
+     "p": [
+      "Continue empurrando para trás até o polegar encostar na coxa.",
+      "Sair cedo desperdiça a parte mais forte da braçada.",
+      "Terminar bem costuma significar menos braçadas para a mesma distância."
+     ],
+     "q": "Sua mão chega na coxa ou sai da água antes?",
+     "c": "Nade quatro larguras encostando o polegar na coxa a cada braçada."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Relaxed arm recovery",
+     "g": "Bring the arm forward over the water with a loose hand and soft elbow.",
+     "p": [
+      "The recovery is a mini rest: let the arm muscles relax.",
+      "Lead with a bent elbow and let the hand hang loosely below it.",
+      "Enter calmly in front of the shoulder, without slapping the water."
+     ],
+     "q": "Do your arms feel tense or relaxed when they come over the water?",
+     "c": "Swim three widths and say relax to yourself on every recovery."
+    },
+    "de": {
+     "t": "Lockeres Vorholen der Arme",
+     "g": "Führ den Arm mit lockerer Hand und weichem Ellbogen über Wasser nach vorn.",
+     "p": [
+      "Das Vorholen ist eine Mini-Pause: Lass die Armmuskeln locker.",
+      "Der gebeugte Ellbogen führt, die Hand hängt locker darunter.",
+      "Ruhig vor der Schulter eintauchen, ohne aufs Wasser zu klatschen."
+     ],
+     "q": "Fühlen sich deine Arme über Wasser angespannt oder locker an?",
+     "c": "Schwimm drei Breiten und sag dir bei jedem Vorholen leise: locker."
+    },
+    "es": {
+     "t": "Recobro relajado del brazo",
+     "g": "Lleva el brazo hacia delante por encima del agua con la mano suelta y el codo blando.",
+     "p": [
+      "El recobro es un minidescanso: deja que los músculos del brazo se relajen.",
+      "Guía con el codo doblado y deja la mano colgando suelta debajo.",
+      "Entra con calma delante del hombro, sin golpear el agua."
+     ],
+     "q": "¿Notas los brazos tensos o relajados cuando pasan por encima del agua?",
+     "c": "Nada tres anchos y dite relájate en cada recobro."
+    },
+    "fr": {
+     "t": "Un retour de bras détendu",
+     "g": "Ramène le bras au-dessus de l'eau, main relâchée et coude souple.",
+     "p": [
+      "Le retour est une mini-pause : laisse les muscles du bras se relâcher.",
+      "Le coude plié guide, la main pend mollement en dessous.",
+      "Entre dans l'eau calmement devant l'épaule, sans la frapper."
+     ],
+     "q": "Tes bras sont-ils tendus ou détendus quand ils passent au-dessus de l'eau ?",
+     "c": "Nage trois largeurs en te disant détente à chaque retour de bras."
+    },
+    "it": {
+     "t": "Recupero del braccio rilassato",
+     "g": "Riporta il braccio avanti sopra l'acqua con mano morbida e gomito sciolto.",
+     "p": [
+      "Il recupero è una mini pausa: lascia rilassare i muscoli del braccio.",
+      "Guida con il gomito piegato e lascia la mano penzolare sotto.",
+      "Entra con calma davanti alla spalla, senza schiaffeggiare l'acqua."
+     ],
+     "q": "Le tue braccia sono tese o rilassate quando passano sopra l'acqua?",
+     "c": "Nuota tre vasche in larghezza e ripetiti rilassa a ogni recupero."
+    },
+    "pt": {
+     "t": "Recuperação descontraída do braço",
+     "g": "Leva o braço à frente por cima da água com a mão solta e o cotovelo mole.",
+     "p": [
+      "A recuperação é uma mini pausa: deixa os músculos do braço descontrair.",
+      "Guia com o cotovelo dobrado e deixa a mão pendurada solta por baixo.",
+      "Entra com calma à frente do ombro, sem bater na água."
+     ],
+     "q": "Os teus braços vão tensos ou soltos quando passam por cima da água?",
+     "c": "Nada três larguras e diz relaxa para ti em cada recuperação."
+    },
+    "pt_BR": {
+     "t": "Recuperação relaxada do braço",
+     "g": "Leve o braço para a frente por cima da água com a mão solta e o cotovelo mole.",
+     "p": [
+      "A recuperação é uma minipausa: deixe os músculos do braço relaxarem.",
+      "Guie com o cotovelo dobrado e deixe a mão pendurada solta embaixo.",
+      "Entre com calma à frente do ombro, sem bater na água."
+     ],
+     "q": "Seus braços ficam tensos ou soltos quando passam por cima da água?",
+     "c": "Nade três larguras e diga relaxa para você mesmo em cada recuperação."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body rotation in freestyle",
+     "g": "Roll gently from side to side to help breathing and reach.",
+     "p": [
+      "The body rotates as one unit, from shoulders to hips, like a log.",
+      "Rotation lets you reach further and makes turning to breathe easier.",
+      "Aim for a gentle roll, not lying flat and not flipping onto your side."
+     ],
+     "q": "Do you swim flat like a board or roll from side to side?",
+     "c": "Swim three widths feeling your shoulder lift slightly as the other arm reaches."
+    },
+    "de": {
+     "t": "Körperrotation beim Kraulen",
+     "g": "Roll sanft von Seite zu Seite, das hilft beim Atmen und Strecken.",
+     "p": [
+      "Der Körper dreht sich als Einheit von Schultern bis Hüfte, wie ein Baumstamm.",
+      "Die Rotation verlängert die Reichweite und erleichtert das Atmen zur Seite.",
+      "Ziel ist ein sanftes Rollen, weder flach liegen noch ganz auf die Seite kippen."
+     ],
+     "q": "Schwimmst du flach wie ein Brett oder rollst du von Seite zu Seite?",
+     "c": "Schwimm drei Breiten und spür, wie sich eine Schulter hebt, während der andere Arm streckt."
+    },
+    "es": {
+     "t": "Rotación del cuerpo en crol",
+     "g": "Rueda suavemente de lado a lado para facilitar la respiración y el alcance.",
+     "p": [
+      "El cuerpo gira como una unidad, de hombros a cadera, como un tronco.",
+      "La rotación te deja llegar más lejos y hace más fácil girar para respirar.",
+      "Busca un giro suave, ni totalmente plano ni tumbado de lado."
+     ],
+     "q": "¿Nadas plano como una tabla o rotas de lado a lado?",
+     "c": "Nada tres anchos notando cómo sube un hombro mientras el otro brazo se estira."
+    },
+    "fr": {
+     "t": "La rotation du corps en crawl",
+     "g": "Roule doucement d'un côté à l'autre pour aider la respiration et l'allonge.",
+     "p": [
+      "Le corps tourne d'un bloc, des épaules aux hanches, comme un tronc.",
+      "La rotation allonge ton mouvement et facilite la respiration sur le côté.",
+      "Vise un roulis doux, ni à plat ni complètement sur le côté."
+     ],
+     "q": "Nages-tu à plat comme une planche ou roules-tu d'un côté à l'autre ?",
+     "c": "Nage trois largeurs en sentant une épaule monter pendant que l'autre bras s'allonge."
+    },
+    "it": {
+     "t": "Rotazione del corpo nello stile libero",
+     "g": "Ruota dolcemente da un lato all'altro per aiutare respiro e allungo.",
+     "p": [
+      "Il corpo ruota tutto insieme, dalle spalle ai fianchi, come un tronco.",
+      "La rotazione allunga la bracciata e rende più facile girarsi per respirare.",
+      "Cerca un rollio dolce, né piatto né girato del tutto su un fianco."
+     ],
+     "q": "Nuoti piatto come una tavola o ruoti da un lato all'altro?",
+     "c": "Nuota tre vasche in larghezza sentendo una spalla salire mentre l'altro braccio allunga."
+    },
+    "pt": {
+     "t": "Rotação do corpo no crol",
+     "g": "Roda suavemente de um lado para o outro para ajudar a respiração e o alcance.",
+     "p": [
+      "O corpo roda como um bloco, dos ombros à anca, como um tronco.",
+      "A rotação deixa-te chegar mais longe e facilita virar para respirar.",
+      "Procura um rolar suave, nem totalmente plano nem deitado de lado."
+     ],
+     "q": "Nadas plano como uma tábua ou rodas de um lado para o outro?",
+     "c": "Nada três larguras a sentir um ombro subir enquanto o outro braço estica."
+    },
+    "pt_BR": {
+     "t": "Rotação do corpo no crawl",
+     "g": "Gire suavemente de um lado para o outro para ajudar a respiração e o alcance.",
+     "p": [
+      "O corpo gira como um bloco, dos ombros ao quadril, como um tronco.",
+      "A rotação deixa você alcançar mais longe e facilita virar para respirar.",
+      "Busque um giro suave, nem totalmente reto nem deitado de lado."
+     ],
+     "q": "Você nada reto como uma tábua ou gira de um lado para o outro?",
+     "c": "Nade três larguras sentindo um ombro subir enquanto o outro braço se estica."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Side kicking drill",
+     "g": "Kick on your side with one arm forward to feel balance and rotation.",
+     "p": [
+      "Lie on your side, lower arm stretched forward, top arm resting on your hip.",
+      "Keep your head in line, face down, rolling up to breathe when needed.",
+      "Kick gently and feel how your body balances on its side."
+     ],
+     "q": "Which side feels more balanced when you side kick?",
+     "c": "Do two widths of side kick on each side, with fins if your pool allows them."
+    },
+    "de": {
+     "t": "Seitlage-Beinschlag",
+     "g": "Kicke in Seitlage mit einem Arm vorn, um Balance und Rotation zu spüren.",
+     "p": [
+      "Leg dich auf die Seite, unterer Arm vorgestreckt, oberer Arm auf der Hüfte.",
+      "Kopf in Linie, Gesicht nach unten, zum Atmen nach oben drehen.",
+      "Kicke sanft und spür, wie dein Körper auf der Seite balanciert."
+     ],
+     "q": "Auf welcher Seite fühlst du dich beim Seitlage-Kick stabiler?",
+     "c": "Mach je Seite zwei Breiten Seitlage-Kick, mit Flossen, wenn dein Bad sie erlaubt."
+    },
+    "es": {
+     "t": "Ejercicio de patada lateral",
+     "g": "Patea de lado con un brazo al frente para sentir el equilibrio y la rotación.",
+     "p": [
+      "Túmbate de lado, brazo inferior estirado delante y el superior sobre la cadera.",
+      "Mantén la cabeza alineada, mirando abajo, y gira para respirar cuando lo necesites.",
+      "Patea suave y siente cómo tu cuerpo se equilibra de lado."
+     ],
+     "q": "¿De qué lado te sientes más equilibrado en la patada lateral?",
+     "c": "Haz dos anchos de patada lateral por lado, con aletas si tu piscina lo permite."
+    },
+    "fr": {
+     "t": "L'éducatif battements sur le côté",
+     "g": "Bats des jambes sur le côté, un bras devant, pour sentir équilibre et rotation.",
+     "p": [
+      "Allonge-toi sur le côté, bras du bas tendu devant, bras du haut sur la hanche.",
+      "Garde la tête dans l'axe, visage vers le bas, et tourne-toi pour respirer.",
+      "Bats doucement et sens comment ton corps s'équilibre sur le côté."
+     ],
+     "q": "De quel côté te sens-tu le plus équilibré ?",
+     "c": "Fais deux largeurs sur chaque côté, avec palmes si ta piscine les autorise."
+    },
+    "it": {
+     "t": "Esercizio gambe sul fianco",
+     "g": "Batti le gambe sul fianco con un braccio avanti per sentire equilibrio e rotazione.",
+     "p": [
+      "Sdraiati su un fianco, braccio in basso disteso avanti, braccio in alto sul fianco.",
+      "Tieni la testa in linea, viso in giù, e ruota per respirare quando serve.",
+      "Batti dolcemente e senti come il corpo si equilibra sul fianco."
+     ],
+     "q": "Su quale lato ti senti più in equilibrio?",
+     "c": "Fai due vasche in larghezza per lato, con le pinne se la piscina le permette."
+    },
+    "pt": {
+     "t": "Exercício de pernada lateral",
+     "g": "Bate pernas de lado com um braço à frente para sentir equilíbrio e rotação.",
+     "p": [
+      "Deita-te de lado, braço de baixo esticado à frente e o de cima na anca.",
+      "Mantém a cabeça alinhada, cara para baixo, e roda para respirar quando precisares.",
+      "Bate pernas com suavidade e sente o corpo a equilibrar-se de lado."
+     ],
+     "q": "De que lado te sentes mais equilibrado na pernada lateral?",
+     "c": "Faz duas larguras de pernada lateral para cada lado, com barbatanas se a piscina deixar."
+    },
+    "pt_BR": {
+     "t": "Educativo de pernada lateral",
+     "g": "Bata perna de lado com um braço à frente para sentir equilíbrio e rotação.",
+     "p": [
+      "Deite de lado, braço de baixo esticado à frente e o de cima no quadril.",
+      "Mantenha a cabeça alinhada, rosto para baixo, e gire para respirar quando precisar.",
+      "Bata perna de leve e sinta o corpo se equilibrando de lado."
+     ],
+     "q": "De qual lado você se sente mais equilibrado na pernada lateral?",
+     "c": "Faça duas larguras de pernada lateral para cada lado, com nadadeiras se a piscina permitir."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Catch-up drill",
+     "g": "Let one hand wait at the front until the other arrives, for a long, calm stroke.",
+     "p": [
+      "Start with both arms forward in streamline and kick steadily.",
+      "Pull with one arm, recover it, and touch the waiting hand before the next pull.",
+      "This drill teaches patience at the front and a long body line."
+     ],
+     "q": "Does waiting at the front feel calming or awkward to you?",
+     "c": "Swim four widths of catch-up, breathing every two strokes."
+    },
+    "de": {
+     "t": "Abschlagschwimmen",
+     "g": "Eine Hand wartet vorn, bis die andere ankommt, für einen langen, ruhigen Zug.",
+     "p": [
+      "Beginne mit beiden Armen vorn in Stromlinie und gleichmäßigem Beinschlag.",
+      "Mit einem Arm ziehen, vorholen und die wartende Hand berühren, dann der andere.",
+      "Diese Übung lehrt Geduld vorn und eine lange Körperlinie."
+     ],
+     "q": "Fühlt sich das Warten vorn für dich beruhigend oder ungewohnt an?",
+     "c": "Schwimm vier Breiten Abschlag und atme bei jedem zweiten Zug."
+    },
+    "es": {
+     "t": "Ejercicio de alcance",
+     "g": "Una mano espera delante hasta que llega la otra, para una brazada larga y tranquila.",
+     "p": [
+      "Empieza con los dos brazos al frente en flecha y una patada constante.",
+      "Tira con un brazo, recóbralo y toca la mano que espera antes de la siguiente brazada.",
+      "Este ejercicio enseña paciencia delante y una línea corporal larga."
+     ],
+     "q": "¿Esperar delante te resulta relajante o raro?",
+     "c": "Nada cuatro anchos de alcance respirando cada dos brazadas."
+    },
+    "fr": {
+     "t": "L'éducatif rattrapé",
+     "g": "Une main attend devant que l'autre la rejoigne, pour un mouvement long et calme.",
+     "p": [
+      "Commence bras devant en flèche avec un battement régulier.",
+      "Tire avec un bras, ramène-le et touche la main qui attend avant le suivant.",
+      "Cet éducatif apprend la patience à l'avant et une ligne de corps longue."
+     ],
+     "q": "Attendre à l'avant te semble-t-il apaisant ou bizarre ?",
+     "c": "Nage quatre largeurs en rattrapé, en respirant tous les deux temps."
+    },
+    "it": {
+     "t": "Esercizio a braccio teso",
+     "g": "Una mano aspetta davanti finché arriva l'altra, per una bracciata lunga e calma.",
+     "p": [
+      "Inizia con le due braccia avanti in freccia e una battuta costante.",
+      "Tira con un braccio, recuperalo e tocca la mano che aspetta prima della bracciata successiva.",
+      "Questo esercizio insegna pazienza davanti e una linea del corpo lunga."
+     ],
+     "q": "Aspettare davanti ti sembra rilassante o strano?",
+     "c": "Nuota quattro vasche in larghezza a braccio teso respirando ogni due bracciate."
+    },
+    "pt": {
+     "t": "Exercício de alcance",
+     "g": "Uma mão espera à frente até a outra chegar, para uma braçada longa e calma.",
+     "p": [
+      "Começa com os dois braços à frente em flecha e uma pernada constante.",
+      "Puxa com um braço, recupera-o e toca na mão que espera antes da braçada seguinte.",
+      "Este exercício ensina paciência à frente e uma linha do corpo comprida."
+     ],
+     "q": "Esperar à frente parece-te tranquilo ou estranho?",
+     "c": "Nada quatro larguras de alcance a respirar a cada duas braçadas."
+    },
+    "pt_BR": {
+     "t": "Educativo de alcance",
+     "g": "Uma mão espera na frente até a outra chegar, para uma braçada longa e calma.",
+     "p": [
+      "Comece com os dois braços à frente em flecha e uma pernada constante.",
+      "Puxe com um braço, recupere e toque na mão que espera antes da próxima braçada.",
+      "Esse educativo ensina paciência na frente e uma linha do corpo longa."
+     ],
+     "q": "Esperar na frente parece tranquilo ou estranho para você?",
+     "c": "Nade quatro larguras de alcance respirando a cada duas braçadas."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fingertip drag drill",
+     "g": "Drag your fingertips along the surface during recovery to keep the elbow high.",
+     "p": [
+      "As the arm recovers, let the fingertips skim the water.",
+      "The elbow stays high and the hand passes close to your body.",
+      "It trains a relaxed, compact recovery that keeps you balanced."
+     ],
+     "q": "Can you keep your fingertips touching the water the whole recovery?",
+     "c": "Swim four widths dragging your fingertips, slowly and quietly."
+    },
+    "de": {
+     "t": "Fingerspitzen-Ziehen",
+     "g": "Zieh beim Vorholen die Fingerspitzen über die Oberfläche, damit der Ellbogen hoch bleibt.",
+     "p": [
+      "Während der Arm vorkommt, streifen die Fingerspitzen das Wasser.",
+      "Der Ellbogen bleibt hoch, die Hand führt nah am Körper vorbei.",
+      "So trainierst du ein lockeres, kompaktes Vorholen, das dich im Gleichgewicht hält."
+     ],
+     "q": "Schaffst du es, dass die Fingerspitzen das ganze Vorholen über das Wasser berühren?",
+     "c": "Schwimm vier Breiten mit Fingerspitzen-Ziehen, langsam und leise."
+    },
+    "es": {
+     "t": "Ejercicio de arrastrar los dedos",
+     "g": "Arrastra la punta de los dedos por la superficie en el recobro para mantener el codo alto.",
+     "p": [
+      "Mientras el brazo vuelve, deja que los dedos rocen el agua.",
+      "El codo se mantiene alto y la mano pasa cerca del cuerpo.",
+      "Entrena un recobro relajado y compacto que te mantiene equilibrado."
+     ],
+     "q": "¿Puedes mantener los dedos tocando el agua todo el recobro?",
+     "c": "Nada cuatro anchos arrastrando los dedos, despacio y sin ruido."
+    },
+    "fr": {
+     "t": "L'éducatif doigts qui traînent",
+     "g": "Fais traîner le bout des doigts à la surface pendant le retour pour garder le coude haut.",
+     "p": [
+      "Pendant le retour du bras, laisse les doigts effleurer l'eau.",
+      "Le coude reste haut et la main passe près du corps.",
+      "Cela entraîne un retour détendu et compact qui garde l'équilibre."
+     ],
+     "q": "Arrives-tu à garder les doigts sur l'eau pendant tout le retour ?",
+     "c": "Nage quatre largeurs doigts qui traînent, lentement et sans bruit."
+    },
+    "it": {
+     "t": "Esercizio dita che sfiorano",
+     "g": "Fai sfiorare la superficie alle dita durante il recupero per tenere il gomito alto.",
+     "p": [
+      "Mentre il braccio torna avanti, lascia che le dita sfiorino l'acqua.",
+      "Il gomito resta alto e la mano passa vicino al corpo.",
+      "Allena un recupero rilassato e compatto che ti tiene in equilibrio."
+     ],
+     "q": "Riesci a tenere le dita sull'acqua per tutto il recupero?",
+     "c": "Nuota quattro vasche in larghezza sfiorando l'acqua con le dita, piano e in silenzio."
+    },
+    "pt": {
+     "t": "Exercício dos dedos a arrastar",
+     "g": "Arrasta as pontas dos dedos pela superfície na recuperação para manter o cotovelo alto.",
+     "p": [
+      "Enquanto o braço recupera, deixa as pontas dos dedos roçar a água.",
+      "O cotovelo fica alto e a mão passa perto do corpo.",
+      "Treina uma recuperação descontraída e compacta que te mantém equilibrado."
+     ],
+     "q": "Consegues manter os dedos a tocar na água durante toda a recuperação?",
+     "c": "Nada quatro larguras a arrastar os dedos, devagar e sem barulho."
+    },
+    "pt_BR": {
+     "t": "Educativo de arrastar os dedos",
+     "g": "Arraste as pontas dos dedos na superfície durante a recuperação para manter o cotovelo alto.",
+     "p": [
+      "Enquanto o braço volta, deixe as pontas dos dedos rasparem na água.",
+      "O cotovelo fica alto e a mão passa perto do corpo.",
+      "Treina uma recuperação relaxada e compacta que mantém você equilibrado."
+     ],
+     "q": "Você consegue manter os dedos tocando a água durante toda a recuperação?",
+     "c": "Nade quatro larguras arrastando os dedos, devagar e sem barulho."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting your strokes",
+     "g": "Count strokes per length to notice how efficient you are.",
+     "p": [
+      "Count every hand entry from push-off to the far wall.",
+      "Fewer strokes at the same easy effort usually means better technique.",
+      "Compare only with yourself; height and arm length change the number."
+     ],
+     "q": "Have you ever counted your strokes? What number do you guess?",
+     "c": "Count your strokes on three widths and write down your lowest number."
+    },
+    "de": {
+     "t": "Züge zählen",
+     "g": "Zähl die Züge pro Bahn, um deine Effizienz zu bemerken.",
+     "p": [
+      "Zähl jedes Eintauchen der Hand vom Abstoß bis zur anderen Wand.",
+      "Weniger Züge bei gleicher lockerer Mühe bedeuten meist bessere Technik.",
+      "Vergleich dich nur mit dir selbst; Größe und Armlänge verändern die Zahl."
+     ],
+     "q": "Hast du schon mal deine Züge gezählt? Was schätzt du?",
+     "c": "Zähl deine Züge auf drei Breiten und notiere die niedrigste Zahl."
+    },
+    "es": {
+     "t": "Contar tus brazadas",
+     "g": "Cuenta las brazadas por largo para darte cuenta de tu eficiencia.",
+     "p": [
+      "Cuenta cada entrada de mano desde el impulso hasta la otra pared.",
+      "Menos brazadas con el mismo esfuerzo suave suele indicar mejor técnica.",
+      "Compárate solo contigo; la altura y la longitud de brazos cambian la cifra."
+     ],
+     "q": "¿Alguna vez has contado tus brazadas? ¿Qué número calculas?",
+     "c": "Cuenta tus brazadas en tres anchos y apunta el número más bajo."
+    },
+    "fr": {
+     "t": "Compter ses mouvements de bras",
+     "g": "Compte tes mouvements par longueur pour mesurer ton efficacité.",
+     "p": [
+      "Compte chaque entrée de main, de la poussée jusqu'au mur d'en face.",
+      "Moins de mouvements pour le même effort facile signifie souvent une meilleure technique.",
+      "Compare-toi seulement à toi-même : taille et longueur des bras changent le chiffre."
+     ],
+     "q": "As-tu déjà compté tes mouvements de bras ? Quel chiffre devines-tu ?",
+     "c": "Compte tes mouvements sur trois largeurs et note le chiffre le plus bas."
+    },
+    "it": {
+     "t": "Contare le bracciate",
+     "g": "Conta le bracciate per vasca per capire quanto sei efficiente.",
+     "p": [
+      "Conta ogni entrata della mano dalla spinta fino al muro opposto.",
+      "Meno bracciate con la stessa fatica leggera di solito significa tecnica migliore.",
+      "Confrontati solo con te stesso: altezza e lunghezza delle braccia cambiano il numero."
+     ],
+     "q": "Hai mai contato le tue bracciate? Che numero immagini?",
+     "c": "Conta le bracciate su tre vasche in larghezza e annota il numero più basso."
+    },
+    "pt": {
+     "t": "Contar as braçadas",
+     "g": "Conta as braçadas por piscina para perceberes a tua eficiência.",
+     "p": [
+      "Conta cada entrada da mão desde o impulso até à parede do outro lado.",
+      "Menos braçadas com o mesmo esforço leve costuma significar melhor técnica.",
+      "Compara-te só contigo; a altura e o comprimento dos braços mudam o número."
+     ],
+     "q": "Já alguma vez contaste as tuas braçadas? Que número imaginas?",
+     "c": "Conta as braçadas em três larguras e anota o número mais baixo."
+    },
+    "pt_BR": {
+     "t": "Contando as braçadas",
+     "g": "Conte as braçadas por piscina para perceber sua eficiência.",
+     "p": [
+      "Conte cada entrada da mão desde o impulso até a outra parede.",
+      "Menos braçadas com o mesmo esforço leve costuma significar técnica melhor.",
+      "Compare-se só com você; altura e comprimento dos braços mudam o número."
+     ],
+     "q": "Você já contou suas braçadas? Que número você imagina?",
+     "c": "Conte suas braçadas em três larguras e anote o menor número."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Swimming a full length",
+     "g": "Break a full pool length into calm parts and finish it relaxed.",
+     "p": [
+      "Mentally split the length into three parts: start, middle, finish.",
+      "Settle your breathing early and keep a gentle, even pace.",
+      "If you need it, stop safely at the lane rope or stand where it is shallow."
+     ],
+     "q": "How does swimming a full length feel compared with a width?",
+     "c": "Swim one full length at an easy pace, resting as long as you like after."
+    },
+    "de": {
+     "t": "Eine ganze Bahn schwimmen",
+     "g": "Teil eine ganze Bahn in ruhige Abschnitte und komm entspannt an.",
+     "p": [
+      "Teil die Bahn im Kopf in drei Teile: Start, Mitte, Ende.",
+      "Finde früh deinen Atemrhythmus und halte ein sanftes, gleichmäßiges Tempo.",
+      "Wenn nötig, halt sicher an der Leine an oder stell dich, wo es flach ist."
+     ],
+     "q": "Wie fühlt sich eine ganze Bahn im Vergleich zu einer Breite an?",
+     "c": "Schwimm eine ganze Bahn locker und ruh dich danach so lange aus, wie du magst."
+    },
+    "es": {
+     "t": "Nadar un largo completo",
+     "g": "Divide un largo completo en partes tranquilas y termínalo relajado.",
+     "p": [
+      "Divide mentalmente el largo en tres partes: salida, mitad y final.",
+      "Asienta pronto la respiración y mantén un ritmo suave y uniforme.",
+      "Si lo necesitas, para con seguridad en la corchera o ponte de pie donde haga pie."
+     ],
+     "q": "¿Qué se siente al nadar un largo completo frente a un ancho?",
+     "c": "Nada un largo completo a ritmo suave y descansa después todo lo que quieras."
+    },
+    "fr": {
+     "t": "Nager une longueur complète",
+     "g": "Découpe une longueur complète en parties calmes et termine-la détendu.",
+     "p": [
+      "Divise mentalement la longueur en trois : départ, milieu, arrivée.",
+      "Pose ta respiration tôt et garde une allure douce et régulière.",
+      "Si besoin, arrête-toi en sécurité à la ligne d'eau ou là où tu as pied."
+     ],
+     "q": "Que ressens-tu en nageant une longueur complète par rapport à une largeur ?",
+     "c": "Nage une longueur complète à allure facile et repose-toi ensuite autant que tu veux."
+    },
+    "it": {
+     "t": "Nuotare una vasca intera",
+     "g": "Dividi una vasca intera in parti tranquille e finiscila rilassato.",
+     "p": [
+      "Dividi mentalmente la vasca in tre parti: partenza, metà e arrivo.",
+      "Trova presto il ritmo del respiro e mantieni un'andatura dolce e regolare.",
+      "Se serve, fermati in sicurezza alla corsia galleggiante o dove tocchi."
+     ],
+     "q": "Com'è nuotare una vasca intera rispetto a una in larghezza?",
+     "c": "Nuota una vasca intera a ritmo facile e poi riposa quanto vuoi."
+    },
+    "pt": {
+     "t": "Nadar uma piscina inteira",
+     "g": "Divide uma piscina inteira em partes calmas e termina-a descontraído.",
+     "p": [
+      "Divide mentalmente a piscina em três partes: partida, meio e chegada.",
+      "Acerta cedo a respiração e mantém um ritmo suave e regular.",
+      "Se precisares, para em segurança na pista flutuante ou onde tiveres pé."
+     ],
+     "q": "Como é nadar uma piscina inteira em comparação com uma largura?",
+     "c": "Nada uma piscina inteira a ritmo fácil e descansa depois o tempo que quiseres."
+    },
+    "pt_BR": {
+     "t": "Nadando uma piscina inteira",
+     "g": "Divida uma piscina inteira em partes calmas e termine relaxado.",
+     "p": [
+      "Divida mentalmente a piscina em três partes: saída, meio e chegada.",
+      "Acerte cedo a respiração e mantenha um ritmo suave e regular.",
+      "Se precisar, pare com segurança na raia ou onde você der pé."
+     ],
+     "q": "Como é nadar uma piscina inteira comparado com uma largura?",
+     "c": "Nade uma piscina inteira em ritmo leve e descanse depois o quanto quiser."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backstroke body position",
+     "g": "Lie flat on your back with chin slightly tucked and hips up.",
+     "p": [
+      "Keep your head still, ears in the water, looking up at the ceiling or sky.",
+      "Tuck the chin just a little, as if holding a small orange.",
+      "Keep your hips near the surface by gently tightening your tummy."
+     ],
+     "q": "What do you enjoy about seeing the ceiling or sky while swimming?",
+     "c": "Kick one width on your back with arms at your sides, focusing on high hips."
+    },
+    "de": {
+     "t": "Körperlage beim Rückenschwimmen",
+     "g": "Lieg flach auf dem Rücken, Kinn leicht angezogen, Hüfte oben.",
+     "p": [
+      "Kopf ruhig, Ohren im Wasser, Blick zur Decke oder zum Himmel.",
+      "Kinn nur ein wenig anziehen, als hieltest du eine kleine Orange.",
+      "Hüfte durch leichtes Anspannen des Bauchs nahe der Oberfläche halten."
+     ],
+     "q": "Was gefällt dir daran, beim Schwimmen die Decke oder den Himmel zu sehen?",
+     "c": "Kicke eine Breite auf dem Rücken, Arme am Körper, und achte auf eine hohe Hüfte."
+    },
+    "es": {
+     "t": "Posición del cuerpo en espalda",
+     "g": "Túmbate plano boca arriba, con la barbilla un poco recogida y la cadera arriba.",
+     "p": [
+      "Cabeza quieta, orejas en el agua, mirando al techo o al cielo.",
+      "Recoge la barbilla solo un poco, como si sujetaras una naranja pequeña.",
+      "Mantén la cadera cerca de la superficie apretando suavemente el abdomen."
+     ],
+     "q": "¿Qué te gusta de ver el techo o el cielo mientras nadas?",
+     "c": "Patea un ancho de espaldas con los brazos pegados al cuerpo, cuidando la cadera alta."
+    },
+    "fr": {
+     "t": "La position du corps en dos crawlé",
+     "g": "Allonge-toi à plat sur le dos, menton légèrement rentré, bassin haut.",
+     "p": [
+      "Tête immobile, oreilles dans l'eau, regard vers le plafond ou le ciel.",
+      "Rentre un tout petit peu le menton, comme pour tenir une petite orange.",
+      "Garde le bassin près de la surface en gainant doucement le ventre."
+     ],
+     "q": "Qu'aimes-tu dans le fait de voir le plafond ou le ciel en nageant ?",
+     "c": "Fais une largeur de battements sur le dos, bras le long du corps, bassin haut."
+    },
+    "it": {
+     "t": "Posizione del corpo nel dorso",
+     "g": "Sdraiati piatto sulla schiena, mento appena rientrato e bacino alto.",
+     "p": [
+      "Testa ferma, orecchie in acqua, sguardo al soffitto o al cielo.",
+      "Rientra il mento solo un poco, come se tenessi una piccola arancia.",
+      "Tieni il bacino vicino alla superficie contraendo dolcemente la pancia."
+     ],
+     "q": "Cosa ti piace del vedere il soffitto o il cielo mentre nuoti?",
+     "c": "Fai una vasca in larghezza di gambe sul dorso, braccia lungo i fianchi, bacino alto."
+    },
+    "pt": {
+     "t": "Posição do corpo em costas",
+     "g": "Deita-te plano de costas, com o queixo ligeiramente recolhido e a anca em cima.",
+     "p": [
+      "Cabeça quieta, orelhas na água, a olhar para o teto ou para o céu.",
+      "Recolhe o queixo só um pouco, como se segurasses uma laranja pequena.",
+      "Mantém a anca perto da superfície contraindo suavemente a barriga."
+     ],
+     "q": "O que gostas em ver o teto ou o céu enquanto nadas?",
+     "c": "Faz uma largura de pernada de costas com os braços junto ao corpo, focado na anca alta."
+    },
+    "pt_BR": {
+     "t": "Posição do corpo no nado costas",
+     "g": "Deite reto de costas, com o queixo levemente recolhido e o quadril para cima.",
+     "p": [
+      "Cabeça parada, orelhas na água, olhando para o teto ou para o céu.",
+      "Recolha o queixo só um pouquinho, como se segurasse uma laranja pequena.",
+      "Mantenha o quadril perto da superfície contraindo a barriga de leve."
+     ],
+     "q": "O que você curte em ver o teto ou o céu enquanto nada?",
+     "c": "Faça uma largura de pernada de costas com os braços junto ao corpo, focando no quadril alto."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backstroke arms",
+     "g": "Learn the straight-arm recovery over the water and the bent-arm pull below.",
+     "p": [
+      "The arm recovers straight over the water, little finger entering first.",
+      "Underwater, bend the elbow and push the water towards your feet.",
+      "One arm pulls while the other recovers, like a slow windmill."
+     ],
+     "q": "Does the windmill picture help you with backstroke arms?",
+     "c": "Standing on land, do 20 slow backstroke arm circles, little finger leading."
+    },
+    "de": {
+     "t": "Arme beim Rückenschwimmen",
+     "g": "Lerne das gestreckte Vorholen über Wasser und den gebeugten Zug darunter.",
+     "p": [
+      "Der Arm kommt gestreckt über Wasser, der kleine Finger taucht zuerst ein.",
+      "Unter Wasser den Ellbogen beugen und das Wasser Richtung Füße drücken.",
+      "Ein Arm zieht, während der andere vorkommt, wie eine langsame Windmühle."
+     ],
+     "q": "Hilft dir das Bild der Windmühle bei den Rückenarmen?",
+     "c": "Mach an Land 20 langsame Rückenarmkreise, der kleine Finger führt."
+    },
+    "es": {
+     "t": "Brazos de espalda",
+     "g": "Aprende el recobro con el brazo recto fuera del agua y la tracción con el codo doblado.",
+     "p": [
+      "El brazo vuelve recto por encima del agua y entra primero el meñique.",
+      "Bajo el agua, dobla el codo y empuja el agua hacia los pies.",
+      "Un brazo tira mientras el otro vuelve, como un molino lento."
+     ],
+     "q": "¿La imagen del molino te ayuda con los brazos de espalda?",
+     "c": "De pie fuera del agua, haz 20 círculos lentos de brazos de espalda, meñique primero."
+    },
+    "fr": {
+     "t": "Les bras en dos crawlé",
+     "g": "Apprends le retour bras tendu au-dessus de l'eau et la traction bras fléchi dessous.",
+     "p": [
+      "Le bras revient tendu au-dessus de l'eau, le petit doigt entre en premier.",
+      "Sous l'eau, plie le coude et pousse l'eau vers tes pieds.",
+      "Un bras tire pendant que l'autre revient, comme un moulin lent."
+     ],
+     "q": "L'image du moulin t'aide-t-elle pour les bras en dos ?",
+     "c": "Debout hors de l'eau, fais 20 cercles lents de bras en dos, petit doigt devant."
+    },
+    "it": {
+     "t": "Le braccia nel dorso",
+     "g": "Impara il recupero a braccio teso sopra l'acqua e la trazione a gomito piegato sotto.",
+     "p": [
+      "Il braccio torna teso sopra l'acqua ed entra per primo il mignolo.",
+      "Sott'acqua piega il gomito e spingi l'acqua verso i piedi.",
+      "Un braccio tira mentre l'altro recupera, come un mulino lento."
+     ],
+     "q": "L'immagine del mulino ti aiuta con le braccia del dorso?",
+     "c": "In piedi fuori dall'acqua, fai 20 lente bracciate a dorso, mignolo per primo."
+    },
+    "pt": {
+     "t": "Braços de costas",
+     "g": "Aprende a recuperação de braço esticado por cima da água e a puxada de cotovelo dobrado.",
+     "p": [
+      "O braço volta esticado por cima da água e o dedo mindinho entra primeiro.",
+      "Debaixo de água, dobra o cotovelo e empurra a água em direção aos pés.",
+      "Um braço puxa enquanto o outro recupera, como um moinho lento."
+     ],
+     "q": "A imagem do moinho ajuda-te com os braços de costas?",
+     "c": "De pé fora de água, faz 20 círculos lentos de braços de costas, com o mindinho à frente."
+    },
+    "pt_BR": {
+     "t": "Braços do nado costas",
+     "g": "Aprenda a recuperação com o braço esticado por cima da água e a puxada com cotovelo dobrado.",
+     "p": [
+      "O braço volta esticado por cima da água e o dedinho entra primeiro.",
+      "Embaixo d'água, dobre o cotovelo e empurre a água em direção aos pés.",
+      "Um braço puxa enquanto o outro volta, como um moinho lento."
+     ],
+     "q": "A imagem do moinho ajuda você com os braços do costas?",
+     "c": "Em pé fora da água, faça 20 círculos lentos de braços de costas, com o dedinho na frente."
+    }
+   }
+  }
+ ]
+}
